@@ -56,13 +56,13 @@ Data {
             "masses": [[8, oz(8)], [16, lb(1)], [16, lb(1)], [8, oz(8)], [48, lb(3)], [16, lb(1)]],
             "targets": [[16, lb(1)], [64, lb(4)], [32, lb(2)],[80, lb(5)]],
             "rightDrop": false,
-            "message": qsTr('Remember, one pound ("lb") equals sixteen ounces ("oz"). \n Drop the weights on the left side of the scales to blance it.')
+            "message": qsTr('Remember, one pound ("lb") equals sixteen ounces ("oz"). \n Drop the weights on the left side of the scales to balance it.')
         },
         {
             "masses": [[32, oz(32)], [80, lb(5)], [16, oz(16)], [64, lb(4)], [32, lb(2)], [16, lb(1)]],
             "targets": [[96, lb(6)], [64, oz(64)], [32, lb(2)],[80, oz(80)],[128, lb(8)], [160, lb(10)]],
             "rightDrop": false,
-            "message": qsTr('Remember, one pound ("lb") equals sixteen ounces ("oz"). \n Drop the weights on the left side of the scales to blance it.')
+            "message": qsTr('Remember, one pound ("lb") equals sixteen ounces ("oz"). \n Drop the weights on the left side of the scales to balance it.')
         },
         {
             "masses": [[1, lb(1)], [2, lb(2)], [2, lb(2)], [1, lb(1)], [2, lb(2)], [1, lb(1)], [2, lb(2)]],
