@@ -60,6 +60,7 @@ Window {
     property bool wordSetDownloaded: true
     property bool musicDownloaded: true
     property bool welcomePlayed: false
+    property int lastGCVersionRanCopy: ApplicationInfo.GCVersionCode
 
     /**
      * type: bool
@@ -310,6 +311,7 @@ Window {
             checkWordset();
             checkBackgroundMusic();
             if(changelog.isNewerVersion(ApplicationSettings.lastGCVersionRan, ApplicationInfo.GCVersionCode)) {
+                lastGCVersionRanCopy = ApplicationSettings.lastGCVersionRan;
                 // display log between ApplicationSettings.lastGCVersionRan and ApplicationInfo.GCVersionCode
                 Core.showMessageDialog(
                 pageView,
@@ -318,10 +320,13 @@ Window {
                 "", null,
                 function() { pageView.currentItem.focus = true }
                 );
-                // Store new version
+                // Store new version after update
                 ApplicationSettings.lastGCVersionRan = ApplicationInfo.GCVersionCode;
             }
         }
+        //Store version on first run in any case
+        if(ApplicationSettings.lastGCVersionRan === 0)
+            ApplicationSettings.lastGCVersionRan = ApplicationInfo.GCVersionCode;
     }
 
     Loading {

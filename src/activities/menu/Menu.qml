@@ -528,7 +528,7 @@ ActivityBase {
                             left: parent.left
                             bottom: parent.bottom
                         }
-                        source: ActivityInfoTree.menuTree[index].createdInVersion == ApplicationInfo.GCVersionCode
+                        source: ActivityInfoTree.menuTree[index].createdInVersion > lastGCVersionRanCopy
                                 ? activity.url + "new.svg" : ""
                         sourceSize.width: 30 * ApplicationInfo.ratio
                     }
