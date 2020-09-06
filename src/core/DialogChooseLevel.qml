@@ -143,6 +143,13 @@ Rectangle {
         cancelButton.clicked();
     }
 
+    Keys.onReleased: {
+        if(event.key === Qt.Key_Back) {
+            cancelButton.clicked();
+            event.accepted = true;
+        }
+    }
+
     onClose: activity.forceActiveFocus();
 
     function initialize() {
