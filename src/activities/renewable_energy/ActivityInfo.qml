@@ -25,7 +25,7 @@ ActivityInfo {
     //: Activity title
     title: qsTr("Renewable Energy")
     //: Help title
-    description: qsTr("Tux has come back from fishing on his boat. Bring the electrical system back up so he can have light in his home. ")
+    description: qsTr("Tux has come back from fishing on his boat. Bring the electrical system back up so he can have light in his home.")
     //intro: "Click on the different stages that go to make up the power supply."
     //: Help goal
     goal: qsTr("Learn about an electrical system based on renewable energy.")
