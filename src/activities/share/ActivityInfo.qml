@@ -25,7 +25,7 @@ ActivityInfo {
   //: Activity title
   title: qsTr("Share pieces of candy")
   //: Help title
-  description: qsTr("Try to split the pieces of candy between a given number of children")
+  description: qsTr("Try to split the pieces of candy between a given number of children.")
   //intro: "Share the candies equally among the specified number of children and notice that there may be a rest left"
   //: Help goal
   goal: qsTr("Learn division of numbers.")
