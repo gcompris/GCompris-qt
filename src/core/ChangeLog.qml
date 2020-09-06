@@ -37,7 +37,9 @@ QtObject {
      *
      */
     property var changelog: [
-
+            { "versionCode": 10000, "content": [qsTr("Multiple dataset")
+                ]
+            },
             { "versionCode": 9700, "content": [qsTr("New sub-categories to organize activities"),
                 qsTr("Translation added for Macedonian."),
                 qsTr("New activities Programming Maze and Baby Tangram"),
