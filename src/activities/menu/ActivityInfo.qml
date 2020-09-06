@@ -49,7 +49,7 @@ At the bottom of the screen is the GCompris control bar. Notice that you can hid
     qsTr("<b>Keyboard shortcuts:</b>") + ("<ul><li>") +
     qsTr("Ctrl+B Show or Hide the control bar") + ("</li><li>") +
     qsTr("Ctrl+F Toggle full screen") + ("</li><li>") +
-    qsTr("Ctrl+S Toggle the activity selection bar") + ("</li></ul>")
+    qsTr("Ctrl+S Toggle the activity section bar") + ("</li></ul>")
   credit: ""
   section: "/"
   createdInVersion: 0
