@@ -303,6 +303,13 @@ Item {
         }
     }
 
+    Keys.onReleased: {
+        if(event.key === Qt.Key_Back) {
+            buttonCancel.close();
+            event.accepted = true;
+        }
+    }
+
     // The cancel button
     GCButtonCancel {
         id: buttonCancel
