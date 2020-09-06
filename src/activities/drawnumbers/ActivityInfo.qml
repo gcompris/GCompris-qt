@@ -25,7 +25,7 @@ ActivityInfo {
     //: Activity title
     title: qsTr("Draw Numbers")
     //: Help title
-    description: qsTr("Connect the dots to draw numbers from 0 to 9")
+    description: qsTr("Connect the dots to draw numbers from 0 to 9.")
     // intro: "Draw the numbers by connecting the dots in the correct order."
     //: Help goal
     goal: qsTr("Learning how to draw numbers in a funny way.")
