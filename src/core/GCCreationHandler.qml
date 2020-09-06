@@ -413,5 +413,9 @@ Rectangle {
                 loadButton.clicked();
             }
         }
+        else if(event.key === Qt.Key_Back) {
+            cancelButton.close();
+            event.accepted = true;
+        }
     }
 }
