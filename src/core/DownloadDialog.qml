@@ -356,6 +356,16 @@ Item {
         }
     }
 
+    Keys.onReleased: {
+        if(event.key === Qt.Key_Back) {
+            if(backgroundButtonVisible)
+                backgroundButton.clicked();
+            else if(abortButtonVisible)
+                abortButton.clicked();
+            event.accepted = true;
+        }
+    }
+
     Connections {
         target: DownloadManager
 
