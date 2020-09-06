@@ -36,51 +36,51 @@ Data {
             "rightDrop": false,
             "message": qsTr('The "kg" symbol at the end of a number means kilogram.') + " " +
                                        qsTr('The kilogram is a unit of mass, a property which corresponds to the ' +
-                                            'common perception of how "heavy" an object is. \n Drop weights on the left side to balance the scale.')
+                                            'common perception of how "heavy" an object is. \n Drop weights on the left side to balance the scales.')
         },
         {
             "masses": [[1, kg(1)], [2, kg(2)], [2, kg(2)], [1, kg(1)], [2, kg(2)], [1, kg(1)], [2, kg(2)]],
             "targets": [[2, kg(2)], [4, kg(4)], [5, kg(5)],[1, kg(1)]],
             "rightDrop": false,
-            "message": qsTr("Drop weights on the left side to balance the scale.")
+            "message": qsTr("Drop weights on the left side to balance the scales.")
         },
         {
             "masses": [[1, kg(1)], [2, kg(2)], [2, kg(2)], [1, kg(1)], [2, kg(2)], [1, kg(1)], [2, kg(2)]],
             "targets": [[3, kg(3)], [4, kg(4)], [5, kg(5)],[7, kg(7)],[2, kg(2)]],
             "rightDrop": false,
-            "message": qsTr("Drop weights on the left side to balance the scale.")
+            "message": qsTr("Drop weights on the left side to balance the scales.")
         },
         {
             "masses": [[1, kg(1)], [2, kg(2)], [3, kg(3)], [5, kg(5)], [2, kg(2)], [4, kg(4)], [2, kg(2)]],
             "targets": [[3, kg(3)], [4, kg(4)], [5, kg(5)],[7, kg(7)],[8, kg(8)], [10, kg(10)],[9, kg(9)]],
             "rightDrop": false,
-            "message": qsTr("Drop weights on the left side to balance the scale.")
+            "message": qsTr("Drop weights on the left side to balance the scales.")
         },
         {
             "masses": [[5, kg(5)], [7, kg(7)], [9, kg(9)], [6, kg(6)], [5, kg(5)], [4, kg(4)], [7, kg(7)]],
             "targets": [[2, kg(2)], [3, kg(3)],[1, kg(1)]],
             "rightDrop": true,
-            "message": qsTr("Take care, you can drop weights on both sides of the scale."),
+            "message": qsTr("Take care, you can drop weights on both sides of the scales."),
 
         },
         {
             "masses": [[5, kg(5)], [7, kg(7)], [9, kg(9)], [6, kg(6)], [5, kg(5)], [6, kg(6)], [7, kg(7)]],
             "targets": [[4, kg(4)], [3, kg(3)],[5, kg(5)]],
             "rightDrop": true,
-            "message": qsTr("Take care, you can drop weights on both sides of the scale."),
+            "message": qsTr("Take care, you can drop weights on both sides of the scales."),
 
         },
         {
             "masses": [[8, kg(8)], [11, kg(11)], [9, kg(9)], [10, kg(10)], [12, kg(12)], [4, kg(4)], [9, kg(9)]],
             "targets": [[2, kg(2)], [6, kg(6)],[7, kg(7)],[5, kg(5)]],
             "rightDrop": true,
-            "message": qsTr("Take care, you can drop weights on both sides of the scale."),
+            "message": qsTr("Take care, you can drop weights on both sides of the scales."),
 
         },
         {
             "masses": [[6, kg(6)], [9, kg(9)], [6, kg(6)], [5, kg(5)], [9, kg(9)], [7, kg(7)], [11, kg(11)]],
             "targets": [[3, kg(3)], [8, kg(8)], [7, kg(7)],[10, kg(10)]],
-            "message": qsTr("Take care, you can drop weights on both sides of the scale."),
+            "message": qsTr("Take care, you can drop weights on both sides of the scales."),
             "rightDrop": true
         },
         {

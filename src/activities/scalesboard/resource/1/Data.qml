@@ -28,13 +28,13 @@ Data {
             "masses": [[1, "1"], [1, "1"], [2, "2"], [1, "1"], [2, "2"], [1, "1"], [2, "2"]],
             "targets": [[3, "3"], [4, "4"], [5, "5"]],
             "rightDrop": false,
-            "message": qsTr("Drop weights on the left side to balance the scale.")
+            "message": qsTr("Drop weights on the left side to balance the scales.")
         },
         {
             "masses": [[6, "6"], [9, "9"], [2, "2"], [7, "7"], [6, "6"], [7, "7"], [8, "8"]],
             "targets": [[4, "4"], [3, "3"], [5, "5"]],
             "rightDrop": true,
-            "message": qsTr("Take care, you can drop weights on both sides of the scale."),
+            "message": qsTr("Take care, you can drop weights on both sides of the scales."),
         },
         {
             "masses": [[1, "1"], [1, "1"], [2, "2"], [1, "1"], [2, "2"], [1, "1"], [2, "2"]],
