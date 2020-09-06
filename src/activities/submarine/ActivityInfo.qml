@@ -39,7 +39,7 @@ ActivityInfo {
           qsTr("A or Left arrow: decrease the velocity") + ("</li></ul>") +
           qsTr("<b>Ballast tanks</b>") + ("<ul><li>") +
           qsTr("W or Up arrow: switch filling of the central ballast tank") + ("</li><li>") +
-          qsTr("S or Down arrom: switch flushing of the central ballast tank") + ("</li><li>") +
+          qsTr("S or Down arrow: switch flushing of the central ballast tank") + ("</li><li>") +
           qsTr("R: switch filling of the left ballast tank") + ("</li><li>") +
           qsTr("F: switch flushing of the left ballast tank") + ("</li><li>") +
           qsTr("T: switch filling of the right ballast tank") + ("</li><li>") +
