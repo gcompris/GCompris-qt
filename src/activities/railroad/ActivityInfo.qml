@@ -30,7 +30,7 @@ ActivityInfo {
   description: qsTr("Rebuild the train model at the top of the screen.")
   //intro: "Observe the train and then click on the items to set up a similar train"
   //: Help goal
-  goal: qsTr("Memory training")
+  goal: qsTr("Memory training.")
   //: Help prerequisite
   prerequisite: ""
   //: Help manual
