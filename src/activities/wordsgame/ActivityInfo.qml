@@ -32,7 +32,7 @@ ActivityInfo {
   //: Help prerequisite
   prerequisite: qsTr("Keyboard manipulation.")
   //: Help manual
-  manual: qsTr("Type the complete the word as it falls, before it reaches the ground")
+  manual: qsTr("Type the complete the word as it falls, before it reaches the ground.")
   credit: ""
   section: "computer keyboard reading words"
   createdInVersion: 0
