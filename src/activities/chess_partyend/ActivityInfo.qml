@@ -25,7 +25,7 @@ ActivityInfo {
   //: Activity title
   title: qsTr("End of chess game")
   //: Help title
-  description: qsTr("Play the end of the chess game against Tux")
+  description: qsTr("Play the end of the chess game against Tux.")
   //intro: "Click on a white chess piece and green boxes will appear to indicate all the movements that piece can make. Try and get the black king into checkmate."
   //: Help goal
   goal: ""
