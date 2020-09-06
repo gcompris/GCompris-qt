@@ -41,5 +41,5 @@ ActivityInfo {
           qsTr("Left and Right arrows: move the spaceship") + ("</li></ul>")
   credit: ""
   section: "sciences experiment"
-  createdInVersion: 9800
+  createdInVersion: 10000
 }

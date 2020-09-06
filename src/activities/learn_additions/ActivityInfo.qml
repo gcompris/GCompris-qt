@@ -39,6 +39,6 @@ ActivityInfo {
           qsTr("Enter: validate your answer") + ("</li></ul>")
   credit: ""
   section: "math arithmetic"
-  createdInVersion: 9800
+  createdInVersion: 10000
   levels: "1,2,3"
 }

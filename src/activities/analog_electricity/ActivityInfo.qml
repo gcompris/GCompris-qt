@@ -36,5 +36,5 @@ ActivityInfo {
   credit: qsTr("The electric simulation engine is from edX: ") +
             "&lt;https://github.com/edx/edx-platform/blob/master/common/lib/xmodule/xmodule/js/src/capa/schematic.js&gt;."
   section: "sciences experiment"
-  createdInVersion: 9800
+  createdInVersion: 10000
 }

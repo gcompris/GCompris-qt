@@ -39,5 +39,5 @@ ActivityInfo {
     ")
   credit: ""
   section: "computer keyboard letters numeration"
-  createdInVersion: 9800
+  createdInVersion: 10000
 }
