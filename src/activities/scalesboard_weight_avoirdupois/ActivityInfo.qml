@@ -28,7 +28,7 @@ ActivityInfo {
   description: qsTr("Drag and Drop some masses to balance the scales and calculate the weight.")
 //  intro: "Drag the weights up to balance the scales."
   //: Help goal
-  goal: qsTr("Mental calculation, arithmetic equality, unit conversion")
+  goal: qsTr("Mental calculation, arithmetic equality, unit conversion.")
   //: Help prerequisite
   prerequisite: ""
   //: Help manual
