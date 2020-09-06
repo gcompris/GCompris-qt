@@ -25,7 +25,7 @@ ActivityInfo {
   //: Activity title
   title: qsTr("Subtraction memory game against Tux")
   //: Help title
-  description: qsTr("Flip the cards to match a subtraction with its result, playing against Tux")
+  description: qsTr("Flip the cards to match a subtraction with its result, playing against Tux.")
 //  intro: "Turn over two cards to match the calculation with its answer."
   //: Help goal
   goal: qsTr("Practice subtractions.")
