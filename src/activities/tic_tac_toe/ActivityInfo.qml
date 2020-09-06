@@ -35,7 +35,7 @@ ActivityInfo {
   //: Help prerequisite
   prerequisite: ""
   //: Help manual
-  manual: qsTr("Play with the computer. Take turns to click on the square which you want to mark. The first player to create a line of 3 marks wins")
+  manual: qsTr("Play with the computer. Take turns to click on the square which you want to mark. The first player to create a line of 3 marks wins.")
   credit: ""
   section: "strategy"
   createdInVersion: 4000
