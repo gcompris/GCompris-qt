@@ -40,4 +40,5 @@ ActivityInfo {
     credit: ""
     section: "math arithmetic"
     createdInVersion: 8000
+    levels: "1,2,3,4"
 }

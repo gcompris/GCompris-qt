@@ -22,13 +22,11 @@
 
 import QtQuick 2.6
 import "../../core"
-import "guesscount.js" as Activity
 
 Row {
     id: admin
     spacing: 20
     property int level
-    property var levelOperators
     Rectangle {
         id: operator
         width: parent.width*0.23
@@ -44,6 +42,7 @@ Row {
         }
     }
     Repeater {
+        id: tileRepeater
         model: ['+','-','*','/']
         delegate: Rectangle {
             id: tile
@@ -51,7 +50,16 @@ Row {
             height: parent.height
             radius: 20
             opacity: 0.7
-            state: Activity.check(modelData, levelOperators[level]) ? "selected" : "notselected"
+            state: activityConfiguration.adminLevelArr[level].indexOf(modelData) != -1 ? "selected" : "notselected"
+
+            function refreshTile() {
+                if(activityConfiguration.adminLevelArr[level].indexOf(modelData) != -1) {
+                    state = "selected"
+                  }
+                else {
+                    state = "notselected"
+                }
+            }
             GCText {
                 anchors.horizontalCenter: parent.horizontalCenter
                 anchors.verticalCenter: parent.verticalCenter
@@ -62,14 +70,14 @@ Row {
                 anchors.fill: parent
                 onClicked: {
                     if(tile.state == "selected") {
-                        tile.state = "notselected"
-                        levelOperators[level].splice(levelOperators[level].indexOf(modelData), 1)
-                        Activity.sync(levelOperators, level)
+                        if(activityConfiguration.adminLevelArr[level].length > 1) {
+                            tile.state = "notselected"
+                            activityConfiguration.adminLevelArr[level].splice(activityConfiguration.adminLevelArr[level].indexOf(modelData), 1)
+                        }
                     }
-                    else{
+                    else {
                         tile.state = "selected"
-                        levelOperators[level].push(modelData)
-                        Activity.sync(levelOperators, level)
+                        activityConfiguration.adminLevelArr[level].push(modelData)
                     }
                 }
             }
@@ -85,18 +93,9 @@ Row {
             ]
         }
     }
-    Rectangle {
-        id: warning
-        visible: levelOperators[level].length == 0 ? true : false
-        width: parent.width*0.15
-        height: parent.height
-        radius: 20.0
-        color: "gray"
-        GCText {
-            anchors.horizontalCenter: parent.horizontalCenter
-            anchors.verticalCenter: parent.verticalCenter
-            fontSize: smallSize
-            text: qsTr("empty")
-        }
+    function refreshAllTiles() {
+       for(var i = 0; i < tileRepeater.count; i++) {
+           tileRepeater.itemAt(i).refreshTile()
+       }
     }
 }
