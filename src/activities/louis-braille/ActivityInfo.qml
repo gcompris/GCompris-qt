@@ -25,7 +25,7 @@ ActivityInfo {
   //: Activity title
   title: qsTr("The History of Louis Braille")
   //: Help title
-  description: qsTr("Review the major dates of the inventor of the braille System.")
+  description: qsTr("Review the major dates of the inventor of the braille system.")
   //intro: "Discover the history of Louis Braille."
   //: Help goal
   goal: ""
