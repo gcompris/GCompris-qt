@@ -28,7 +28,7 @@ ActivityInfo {
   description: qsTr("Tux is in trouble, and needs to take his boat through a lock. Help Tux and find out how a canal lock works.")
   //intro: "You are responsible for the lock and you must help Tux pass through. Click on the valves to cause either a drop or an increase in the water level, and click on the gates to open or close a path."
   //: Help goal
-  goal: "Understand how a canal lock works."
+  goal: qsTr("Understand how a canal lock works.")
   //: Help prerequisite
   prerequisite: ""
   //: Help manual
