@@ -32,7 +32,7 @@ ActivityInfo {
   description: qsTr("Learn about world animals, interesting facts and their location on a map.")
   // intro: "Learn about world animals and locate them on a map."
   //: Help goal
-  goal: "Learn about various wild animals from around the world and remember where they live."
+  goal: qsTr("Learn about various wild animals from around the world and remember where they live.")
   //: Help prerequisite
   prerequisite: ""
   //: Help manual
