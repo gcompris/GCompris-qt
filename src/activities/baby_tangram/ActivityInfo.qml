@@ -35,5 +35,5 @@ ActivityInfo {
   manual: qsTr("Move a piece by dragging it. Use the rotation button if necessary. More complicated levels can be found in tangram activity.")
   credit: ""
   section: "puzzle"
-  createdInVersion: 9800
+  createdInVersion: 9700
 }

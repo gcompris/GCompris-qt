@@ -53,5 +53,5 @@ ActivityInfo {
           qsTr("Press ENTER or RETURN.")+ "</li></ul>"
   credit: ""
   section: "fun"
-  createdInVersion: 9800
+  createdInVersion: 9700
 }
