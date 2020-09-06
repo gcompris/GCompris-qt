@@ -66,6 +66,13 @@ Rectangle {
         dialogBackground.close();
     }
 
+    Keys.onReleased: {
+        if(event.key === Qt.Key_Back) {
+            dialogBackground.close();
+            event.accepted = true;
+        }
+    }
+
     onClose: activity.forceActiveFocus();
 
     Row {
