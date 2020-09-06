@@ -31,7 +31,7 @@ ActivityInfo {
   description: qsTr("Place three marks in a row.")
 //  intro: "Click on the square which you wish to mark and try to mark 3 consecutive squares before Tux."
   //: Help goal
-  goal: qsTr("Place three marks in any horizontal, vertical, or diagonal row to win the game")
+  goal: qsTr("Place three marks in any horizontal, vertical, or diagonal row to win the game.")
   //: Help prerequisite
   prerequisite: ""
   //: Help manual
