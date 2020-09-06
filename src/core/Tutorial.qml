@@ -122,6 +122,13 @@ Item {
         skipButton.clicked();
     }
 
+    Keys.onReleased: {
+        if(event.key === Qt.Key_Back) {
+            skipButton.clicked();
+            event.accepted = true;
+        }
+    }
+
     // Tutorial instructions
     GCText {
         id: tutorialText
