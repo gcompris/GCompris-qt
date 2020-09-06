@@ -28,7 +28,7 @@ ActivityInfo {
   description: ""
   //intro: "Learn and practice roman to arabic numerals conversion"
   //: Help goal
-  goal: "Learn how to read roman numerals and do the conversion to and from arabic numerals."
+  goal: qsTr("Learn how to read roman numerals and do the conversion to and from arabic numerals.")
   //: Help prerequisite
   prerequisite: ""
   //: Help manual
