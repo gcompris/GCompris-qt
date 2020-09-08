@@ -74,13 +74,21 @@ ActivityBase {
         }
         onStop: { Activity.stop() }
 
-        Rectangle {
+        Item {
             id: layoutArea
-            visible: false
             anchors.top: background.top
             anchors.bottom: bar.top
             anchors.left: background.left
             anchors.right: background.right
+
+            MouseArea {
+                anchors.fill: parent
+                onClicked: {
+                    textinput.focus = false;
+                    textinput.focus = true;
+                    textinput.forceActiveFocus();
+                }
+            }
         }
 
         states: [
@@ -122,11 +130,11 @@ ActivityBase {
             styleColor: "white"
         }
 
-        TextInput {
+        TextEdit {
             id: textinput
             focus: true
             visible: false
-
+            inputMethodHints: Qt.ImhNoPredictiveText
             onTextChanged: {
                 if (text != "") {
                     Activity.processKeyPress(text);
