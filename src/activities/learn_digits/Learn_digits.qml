@@ -331,6 +331,7 @@ ActivityBase {
                     MouseArea {
                         id: circleInput
                         anchors.fill: parent
+                        enabled: !items.inputLocked
                         onClicked: parent.clickCircle();
                     }
                 }
