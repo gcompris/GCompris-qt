@@ -94,14 +94,9 @@ builddir=${buildprefix}-${QtTarget}
 mkdir -p ${builddir}
 cd ${builddir}
 
-f_cmake arm64 inapp OFF ON OFF
-make -j 4
-make BuildTranslations
-make apk_release && make apk_signed && make apk_signed_aligned
-
-
 f_cmake arm64 no OFF ON OFF
 make -j 4
+make BuildTranslations
 make apk_release && make apk_signed && make apk_signed_aligned
 
 
