@@ -150,12 +150,11 @@ ActivityBase {
             add: Transition {
                 PathAnimation {
                     path: Path {
-                        PathCurve { x: background.width / 3}
-                        PathCurve { y: background.height / 3}
+                        PathCurve { x: 0; y: 0}
                         PathCurve {}
                     }
                     easing.type: Easing.InOutQuad
-                    duration: 2000
+                    duration: 1000
                 }
             }
         }
