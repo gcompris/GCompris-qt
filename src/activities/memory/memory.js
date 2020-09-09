@@ -131,7 +131,7 @@ function getShownPair() {
     return
 }
 
-// Calc randomly is Tux is a good player
+// Calc randomly if Tux is a good player
 // Return true if Tux should play correctly
 function getRandomTuxIsGood() {
     return Math.random() * numberOfLevel < currentLevel

@@ -52,6 +52,7 @@ ActivityBase {
         property bool keyNavigationVisible: false
         // if audio is disabled, we display a dialog to tell users this activity requires audio anyway
         property bool audioDisabled: false
+        property bool horizontalLayout: layoutArea.width >= layoutArea.height
 
         Component.onCompleted: {
             dialogActivityConfig.initialize()
@@ -97,19 +98,25 @@ ActivityBase {
             id: containerModel
         }
 
+        Item {
+            id: layoutArea
+            anchors.top: background.top
+            anchors.bottom: bar.top
+            anchors.left: background.left
+            anchors.right: background.right
+            anchors.margins: items.spacing
+        }
 
         GridView {
             id: grid
-            width: background.width - (items.columns + 1) * items.spacing - anchors.margins
-            height: background.height - (items.rows + 1) * items.spacing - anchors.margins
-            cellWidth: (background.width - (items.columns + 1) * items.spacing) / items.columns - anchors.margins
-            cellHeight: (background.height - (items.rows + 1) * items.spacing) / (items.rows + 0.5) - anchors.margins
+            cellWidth: width / items.columns
+            cellHeight: height / items.rows
             anchors {
                 left: background.left
-                right: background.right
+                right: player.left
                 top: background.top
-                bottom: background.bottom
-                margins: 5 * ApplicationInfo.ratio
+                bottom: player.bottom
+                margins: items.spacing
             }
 
             model: containerModel
@@ -123,8 +130,8 @@ ActivityBase {
             delegate: CardItem {
                 pairData: pairData_
                 tuxTurn: background.items.tuxTurn
-                width: (background.width - (items.columns + 1) * items.spacing) / items.columns - 15 * ApplicationInfo.ratio
-                height: (background.height - (items.rows + 1) * items.spacing) / (items.rows + 0.5) - 15 * ApplicationInfo.ratio
+                width: grid.cellWidth - grid.anchors.margins
+                height: grid.cellHeight - grid.anchors.margins
                 audioVoices: activity.audioVoices
                 audioEffects: activity.audioEffects
                 onIsFoundChanged: background.keyNavigationVisible = false
@@ -191,54 +198,129 @@ ActivityBase {
             onHomeClicked: home()
         }
 
-        Image {
+        Rectangle {
             id: player
-            source: 'qrc:/gcompris/src/activities/memory/resource/children.svg'
+            color: "#B0ffffff"
+            width: bar.height
+            height: bar.height
+            radius: items.spacing
             anchors {
-                bottom: bar.bottom
-                right: parent.right
+                bottom: bar.top
+                right: background.right
                 rightMargin: 2 * ApplicationInfo.ratio
+                bottomMargin: items.spacing * 2
             }
-            width: height * 0.83
-            height: bar.height * 1.2
+
+            Image {
+                id: playerImage
+                source: 'qrc:/gcompris/src/activities/memory/resource/child.svg'
+                anchors {
+                    verticalCenter: parent.verticalCenter
+                    right: parent.right
+                }
+                width: parent.width * 0.5
+                height: parent.height
+                sourceSize.width: width
+                fillMode: Image.PreserveAspectFit
+            }
 
             GCText {
                 id: playerScore
-                anchors.centerIn: parent
-                anchors.verticalCenterOffset: parent.height / 6
-                color: "black"
+                width: playerImage.width
+                height: parent.height
+                anchors.verticalCenter: parent.verticalCenter
+                anchors.left: parent.left
+                horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
+                color: "#373737"
                 font.bold: true
-                fontSize: largeSize
+                font.pointSize: NaN  // need to clear font.pointSize explicitly
+                fontSizeMode: Text.Fit
+                minimumPixelSize: 10
+                font.pixelSize: width
                 style: Text.Outline
                 styleColor: "white"
                 text: items.playerScore
             }
         }
 
-        Image {
+        Rectangle {
             id: tux
             visible: activity.withTux
-            source: 'qrc:/gcompris/src/activities/memory/resource/tux-teacher.svg'
+            color: "#B0ffffff"
+            width: bar.height
+            height: bar.height
+            radius: items.spacing
             anchors {
-                bottom: bar.bottom
-                right: player.left
+                bottom: player.top
+                right: background.right
                 rightMargin: 2 * ApplicationInfo.ratio
+                bottomMargin: items.spacing * 2
             }
-            width: height * 0.83
-            height: bar.height * 1.2
+            Image {
+                id: tuxImage
+                source: 'qrc:/gcompris/src/activities/memory/resource/tux.svg'
+                anchors {
+                    verticalCenter: parent.verticalCenter
+                    right: parent.right
+                }
+                width: parent.width * 0.5
+                height: parent.height
+                sourceSize.width: width
+                fillMode: Image.PreserveAspectFit
+            }
 
             GCText {
                 id: tuxScore
-                anchors.centerIn: parent
-                anchors.verticalCenterOffset: parent.height / 6
-                color: "black"
+                width: tuxImage.width
+                height: parent.height
+                anchors.verticalCenter: parent.verticalCenter
+                anchors.left: parent.left
+                horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
+                color: "#373737"
                 font.bold: true
-                fontSize: largeSize
+                font.pointSize: NaN  // need to clear font.pointSize explicitly
+                fontSizeMode: Text.Fit
+                minimumPixelSize: 10
+                font.pixelSize: width
                 style: Text.Outline
                 styleColor: "white"
                 text: items.tuxScore
             }
         }
+
+        states: [
+            State {
+                name: "horizontalCards"
+                when: horizontalLayout
+                AnchorChanges {
+                    target: tux
+                    anchors.bottom: player.top
+                    anchors.right: background.right
+                }
+                AnchorChanges {
+                    target: grid
+                    anchors.bottom: player.bottom
+                    anchors.right: player.left
+                }
+
+            },
+            State {
+                name: "verticalCards"
+                when: !horizontalLayout
+                AnchorChanges {
+                    target: tux
+                    anchors.bottom: bar.top
+                    anchors.right: player.left
+                }
+                AnchorChanges {
+                    target: grid
+                    anchors.bottom: player.top
+                    anchors.right: background.right
+                }
+            }
+        ]
 
         Bonus {
             id: bonus
