@@ -62,7 +62,7 @@ ActivityBase {
         }
 
         property bool horizontalMode: height <= width
-
+        property bool isLoadingCreation: false
         QtObject {
             id: items
             property alias edit: edit
@@ -76,9 +76,11 @@ ActivityBase {
         GCCreationHandler {
             id: creationHandler
             onFileLoaded: {
+                isLoadingCreation = true
                 edit.clear()
                 edit.text = data["text"]
                 edit.cursorPosition = edit.length
+                isLoadingCreation = false
             }
             onClose: Activity.focusTextInput();
         }
@@ -232,7 +234,7 @@ ActivityBase {
                     var newText = getText(0, text.length)
                     // if more characters are present, we added a new one and
                     // and wants to play a voice if available
-                    if(previousText.length < newText.length) {
+                    if(previousText.length < newText.length && !isLoadingCreation) {
                         var letterTyped = getDiffBetweenTexts(previousText, newText)
                         if(letterTyped !== "") {
                             Activity.playLetter(letterTyped)
