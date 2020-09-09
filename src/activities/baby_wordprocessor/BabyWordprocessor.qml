@@ -217,8 +217,28 @@ ActivityBase {
                     }
                 }
 
-                Keys.onPressed: {
-                    Activity.playLetter(event.text)
+                property string previousText: text;
+                function getDiffBetweenTexts(previousText, newText) {
+                    var diff = "";
+                    newText.split('').forEach(function(val, i) {
+                        if(val != previousText.charAt(i) && diff === "") {
+                            diff = val;
+                        }
+                    });
+                    return diff;
+                }
+
+                onTextChanged: {
+                    var newText = getText(0, text.length)
+                    // if more characters are present, we added a new one and
+                    // and wants to play a voice if available
+                    if(previousText.length < newText.length) {
+                        var letterTyped = getDiffBetweenTexts(previousText, newText)
+                        if(letterTyped !== "") {
+                            Activity.playLetter(letterTyped)
+                        }
+                    }
+                    previousText = newText;
                 }
                 function insertText(text) {
                     edit.insert(cursorPosition, text)
@@ -307,7 +327,6 @@ ActivityBase {
                 }
                 else {
                     edit.insertText(text);
-                    Activity.playLetter(text);
                 }
             }
             shiftKey: true
