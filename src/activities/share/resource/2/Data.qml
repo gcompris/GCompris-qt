@@ -182,7 +182,7 @@ Data {
                 "placedInBoys": 0
             },
             {
-                "instruction": qsTr("Jon wants to share the rest of his pieces of candies with his brothers and his sisters. Can you split them equally, knowing that his brothers already has 2 pieces of candy?"),
+                "instruction": qsTr("Jon wants to share the rest of his pieces of candies with his brothers and his sisters. Can you split them equally, knowing that his brothers already have 2 pieces of candy?"),
                 "randomisedInputData": false,
                 "totalBoys": 2,
                 "totalGirls": 3,
