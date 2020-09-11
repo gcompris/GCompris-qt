@@ -50,18 +50,20 @@ Item {
             id: editorButton
             style:  GCButtonStyle {}
             height: levelsBox.height
-            text: dialogChooseLevel.inMenu ? qsTr("Start the activity to access the editor") : qsTr("Start the editor")
+            text: enabled ? qsTr("Start the editor") : qsTr("Start the activity to access the editor")
             visible: levelsBox.currentIndex == 1
-            onClicked: if(!dialogChooseLevel.inMenu) startEditor()
+            enabled: !dialogChooseLevel.inMenu
+            onClicked: startEditor()
         }
 
         Button {
             id: loadButton
             style:  GCButtonStyle {}
             height: levelsBox.height
-            text: dialogChooseLevel.inMenu ? qsTr("Start the activity to load your levels") : qsTr("Load saved levels")
+            text: enabled ? qsTr("Load saved levels") : qsTr("Start the activity to load your levels")
             visible: levelsBox.currentIndex == 1
-            onClicked: if(!dialogChooseLevel.inMenu) creationHandler.loadWindow()
+            enabled: !dialogChooseLevel.inMenu
+            onClicked: creationHandler.loadWindow()
         }
     }
 
