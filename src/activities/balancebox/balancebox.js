@@ -81,6 +81,7 @@ var contactIndex = -1;
 var pendingObjects = 0;
 var pendingReconfigure = false;
 var finishRunning = false;
+var createLevelsMsg = qsTr("Either create your levels by starting the level editor in the activity settings menu and then load your file, or choose the 'built-in' level set.")
 
 function start(items_) {
     items = items_;
@@ -113,7 +114,7 @@ function start(items_) {
             if(items.levelSet === "user") {
                 Core.showMessageDialog(items.background,
                                         // The argument represents the file path name to be loaded.
-                                       qsTr("The file '%1' is missing!<br>Falling back to builtin levels.").arg(items.filePath),
+                                       qsTr("The file '%1' is missing!<br>Falling back to builtin levels.").arg(items.filePath) + "<br>" + createLevelsMsg,
                                        "", null,
                                        "", null,
                                        null);
@@ -182,7 +183,7 @@ function moveBall()
 
     items.ball.body.linearVelocity.x += dvx * vFactor;
     items.ball.body.linearVelocity.y += dvy * vFactor;
-    
+
     checkBallContacts();
 }
 
@@ -368,7 +369,7 @@ function initMap()
                 items.ball.y = row * items.cellSize + items.wallSize;
                 items.ball.visible = true;
             }
-            
+
             if (currentCase & GOAL) {
                 var goalX = col * items.cellSize + items.wallSize/2;
                 var goalY = row * items.cellSize + items.wallSize/2;
@@ -390,7 +391,7 @@ function initMap()
                     goal.imageSource = baseUrl + "/door_closed.svg";
                 }
             }
-            
+
             if (currentCase & HOLE) {
                 var holeX = col * items.cellSize + items.wallSize;
                 var holeY = row * items.cellSize + items.wallSize;
@@ -406,7 +407,7 @@ function initMap()
                                    categories: items.holeType,
                                    sensor: true});
             }
-            
+
             if (orderNum > 0) {
                 var contactX = col * items.cellSize + items.wallSize/2;
                 var contactY = row * items.cellSize + items.wallSize/2;

@@ -39,7 +39,7 @@ ActivityBase {
     property string levelSet: "builtin"   // "builtin" or "user"
     // When the user launches the activity in "user" mode by default(due to previously save config mode) for the first time after updating GCompris, default user file must be loaded as they must be having created levels in it.
     // From next time onwards, the saved file path is loaded. Refer to line 567.
-    property string loadedFilePath: (levelSet == "builtin") ? Activity.builtinFile : Activity.userFile
+    property string loadedFilePath: Activity.builtinFile
     property var testLevel
     property bool inForeground: false   // to avoid unneeded reconfigurations
 
@@ -79,6 +79,15 @@ ActivityBase {
                 return false;
         }
 
+        function noUserLevelSelected() {
+            Core.showMessageDialog(activity,
+                                  qsTr("You selected the user-defined level set, but you have not yet loaded any user level!") + "<br/>" +
+                                  Activity.createLevelsMsg,
+                                  qsTr("Ok"), null,
+                                  "", null,
+                                  null);
+        }
+
         Keys.onEscapePressed: event.accepted = handleBackEvent();
 
         Keys.onReleased: {
@@ -87,18 +96,23 @@ ActivityBase {
         }
 
         Component.onCompleted: {
-            dialogActivityConfig.getInitialConfiguration()
+            dialogActivityConfig.initialize()
             activity.start.connect(start)
             activity.stop.connect(stop)
             items.dpi = Math.round(Screen.pixelDensity*25.4);
 
         }
 
-        onStart: if (activity.needRestart) {
-                     Activity.start(items);
-                     activity.needRestart = false;
-                 } else
-                     Activity.initLevel();
+        onStart: {
+            if (activity.needRestart) {
+                Activity.start(items);
+                activity.needRestart = false;
+            } else
+                Activity.initLevel();
+            if(activity.levelSet === "user" && activity.loadedFilePath === Activity.builtinFile) {
+                noUserLevelSelected();
+            }
+        }
 
         onStop: {
             Activity.stop();
@@ -191,7 +205,7 @@ ActivityBase {
                     angle: ApplicationInfo.isMobile ? 0 : items.tilt.yRotation
                 }
             ]
-            
+
             Timer {
                 id: resizeTimer
                 interval: 100
@@ -201,15 +215,15 @@ ActivityBase {
             // right:
             Wall {
                 id: rightWall
-                
+
                 width: items.wallSize
                 height: parent.height + items.wallSize
-                
+
                 anchors.left: mapWrapper.right
                 anchors.leftMargin: - items.wallSize/2
                 anchors.top: parent.top
                 anchors.topMargin: -items.wallSize/2
-                
+
                 shadow: false
                 shadowHorizontalOffset: Math.min(items.tilt.yRotation, items.wallSize)
                 shadowVerticalOffset: Math.min(items.tilt.xRotation, items.wallSize)
@@ -217,15 +231,15 @@ ActivityBase {
             // bottom:
             Wall {
                 id: bottomWall
-                
+
                 width: parent.width + items.wallSize
                 height: items.wallSize
-                
-                anchors.left: mapWrapper.left 
+
+                anchors.left: mapWrapper.left
                 anchors.leftMargin: - items.wallSize/2
                 anchors.top: parent.bottom
                 anchors.topMargin: -items.wallSize/2
-                
+
                 shadow: false
                 shadowHorizontalOffset: Math.min(items.tilt.yRotation, items.wallSize)
                 shadowVerticalOffset: Math.min(items.tilt.xRotation, items.wallSize)
@@ -233,11 +247,11 @@ ActivityBase {
             // top:
             Wall {
                 id: topWall
-                
+
                 width: parent.width + items.wallSize
                 height: items.wallSize
-                
-                anchors.left: mapWrapper.left 
+
+                anchors.left: mapWrapper.left
                 anchors.leftMargin: - items.wallSize/2
                 anchors.top: parent.top
                 anchors.topMargin: -items.wallSize/2
@@ -248,10 +262,10 @@ ActivityBase {
             // left:
             Wall {
                 id: leftWall
-                
+
                 width: items.wallSize
                 height: parent.height + items.wallSize
-                
+
                 anchors.left: mapWrapper.left
                 anchors.leftMargin: - items.wallSize/2
                 anchors.top: parent.top
@@ -260,7 +274,7 @@ ActivityBase {
                 shadowHorizontalOffset: Math.min(items.tilt.yRotation, items.wallSize)
                 shadowVerticalOffset: Math.min(items.tilt.xRotation, items.wallSize)
             }
-            
+
             BalanceItem {
                 id: ball
                 world: physicsWorld
@@ -271,7 +285,7 @@ ActivityBase {
                 height: items.ballSize
                 z: 3  // above other BalanceItems
                 categories: items.ballType
-                collidesWith: items.wallType | items.holeType | items.goalType 
+                collidesWith: items.wallType | items.holeType | items.goalType
                               | items.buttonType
                 density: 1
                 friction: Activity.friction
@@ -305,12 +319,12 @@ ActivityBase {
             }
             World {
                 id: physicsWorld
-                
+
                 gravity: Qt.point(0, 0)  // we calculate acceleration ourselves
-                
+
                 pixelsPerMeter: Activity.box2dPpm // default: 32
                 timeStep: Activity.step/1000  // default: 1/60
-                
+
             }
 
             DebugDraw {
@@ -318,8 +332,8 @@ ActivityBase {
                 world: physicsWorld
                 visible: Activity.debugDraw
                 z: 100
-            }            
-            
+            }
+
         }
 
         Timer {
@@ -339,7 +353,7 @@ ActivityBase {
             property bool swapAxes: false
             property bool invertX: false
             property bool invertY: false
-            
+
             onXRotationChanged: {
                 if (xRotation > 90)
                     xRotation = 90;
@@ -356,7 +370,7 @@ ActivityBase {
             TiltSensor {
                 id: tiltSensor
                 active: ApplicationInfo.isMobile ? true : false
-    
+
                 onReadingChanged: {
                     if (!tilt.swapAxes) {
                         tilt.xRotation = tilt.invertX ? -reading.xRotation : reading.xRotation;
@@ -373,7 +387,7 @@ ActivityBase {
             }
 
         }
-        
+
         Item {
             id: textWrapper
             anchors.left: parent.left
@@ -381,7 +395,7 @@ ActivityBase {
             width: parent.width
             height: parent.height / 3
             visible: Activity.debugDraw
-            
+
             Text {
                 id: tiltText
                 anchors.left: parent.left
@@ -389,7 +403,7 @@ ActivityBase {
                 text: "X/Y Rotation: " + tilt.xRotation + "/" + tilt.yRotation
                 font.pointSize: 12
             }
-        
+
             Text {
                 id: posText
                 anchors.left: parent.left
@@ -453,7 +467,7 @@ ActivityBase {
             id: bar
             content: BarEnumContent {
                 value: activity.mode == "play"
-                           ? (help | home | level | config )
+                           ? (help | home | level | activityConfig )
                            : ( help | home )
             }
             onHelpClicked: {
@@ -471,11 +485,8 @@ ActivityBase {
                 else
                     activity.home()
             }
-            onConfigClicked: {
+            onActivityConfigClicked: {
                 items.timer.stop();
-                dialogActivityConfig.active = true
-                // Set default values
-                dialogActivityConfig.setDefaultValues();
                 displayDialog(dialogActivityConfig)
             }
         }
@@ -489,7 +500,7 @@ ActivityBase {
                 loose.connect(Activity.initLevel);
             }
         }
-        
+
         Timer {
             id: keyboardTimer
             interval: Activity.keyboardTimeStep;
@@ -502,8 +513,9 @@ ActivityBase {
             id: creationHandler
             readonly property bool isEditorActive: editorLoader.active && editorLoader.item.visible
             onFileLoaded: {
-                if(!isEditorActive)
+                if(!isEditorActive) {
                     activity.loadedFilePath = filePath
+                }
                 else
                     editorLoader.item.filename = filePath
                 close()
@@ -515,100 +527,22 @@ ActivityBase {
             id: file
         }
 
-        DialogActivityConfig {
+        DialogChooseLevel {
             id: dialogActivityConfig
-            currentActivity: activity
-            content: Component {
-                Item {
-                    property alias levelsBox: levelsBox
-                    property var availableLevels: [
-                        { "text": qsTr("Built-in"), "value": "builtin" },
-                        { "text": qsTr("User"), "value": "user" },
-                    ]
-
-                    Flow {
-                        id: flow
-                        spacing: 5
-                        width: dialogActivityConfig.width
-                        GCComboBox {
-                            id: levelsBox
-                            model: availableLevels
-                            background: dialogActivityConfig
-                            label: qsTr("Select your level set")
-                        }
-
-                        Column {
-                            spacing: 5
-                            Button {
-                                id: editorButton
-                                style:  GCButtonStyle {}
-                                height: levelsBox.height
-                                text: qsTr("Start Editor")
-                                visible: levelsBox.currentIndex == 1
-                                onClicked: background.startEditor()
-                            }
-
-                            Button {
-                                id: loadButton
-                                style:  GCButtonStyle {}
-                                height: levelsBox.height
-                                text: qsTr("Load saved levels")
-                                visible: levelsBox.currentIndex == 1
-                                onClicked: creationHandler.loadWindow()
-                            }
-                        }
-                    }
-                }
+            currentActivity: activity.activityInfo
+            onClose: {
+                home()
             }
-
-            onClose: home();
-
             onLoadData: {
-                if(dataToSave && dataToSave["levels"]) {
-                    activity.levelSet = dataToSave["levels"];
-                    if(dataToSave['filePath'])
-                        activity.loadedFilePath = dataToSave["filePath"]
+                if(activityData && activityData["levels"]) {
+                    activity.levelSet = activityData["levels"];
+                    if(activityData['filePath'])
+                        activity.loadedFilePath = activityData["filePath"];
                 }
             }
-
-            onSaveData: {
-                var newLevels = dialogActivityConfig.configItem
-                    .availableLevels[dialogActivityConfig.configItem.levelsBox.currentIndex].value;
-                var initialFilePath = dataToSave['filePath'] ? dataToSave['filePath'] : ""
-                if(newLevels === "builtin")
-                    activity.loadedFilePath = Activity.builtinFile
-                if (newLevels !== activity.levelSet || initialFilePath != activity.loadedFilePath) {
-                    activity.levelSet = newLevels;
-                    dataToSave = {"levels": activity.levelSet, "filePath": activity.loadedFilePath};
-                    activity.needRestart = true;
-                }
-            }
-
-            dataValidationFunc: function() {
-                var newLevels = dialogActivityConfig.configItem
-                    .availableLevels[dialogActivityConfig.configItem.levelsBox.currentIndex].value
-                if (newLevels === "user" && activity.loadedFilePath === Activity.builtinFile) {
-                    Core.showMessageDialog(dialogActivityConfig,
-                                           qsTr("You selected the user-defined level set, but you have not yet defined any user levels!<br/> " +
-                                 "Either create your user levels by starting the level editor or choose the 'built-in' level set."),
-                                  qsTr("Ok"), null,
-                                  "", null,
-                                  null);
-                    return false;
-                }
-
-                return true;
-            }
-
-            function setDefaultValues() {
-                for(var i = 0 ;
-                    i < dialogActivityConfig.configItem.availableLevels.length;
-                    i ++) {
-                    if(dialogActivityConfig.configItem.availableLevels[i].value === activity.levelSet) {
-                        dialogActivityConfig.configItem.levelsBox.currentIndex = i;
-                        break;
-                    }
-                }
+            onStartActivity: {
+                background.stop();
+                background.start();
             }
         }
     }

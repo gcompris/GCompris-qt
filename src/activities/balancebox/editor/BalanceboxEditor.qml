@@ -410,7 +410,7 @@ Item {
 
             width: length
             height: length
-        
+
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.verticalCenter: parent.verticalCenter
 
@@ -592,38 +592,38 @@ Item {
             // right:
             Wall {
                 id: rightWall
-                
+
                 width: props.wallSize
                 height: parent.height + props.wallSize
-                
+
                 anchors.left: mapWrapper.right
                 anchors.leftMargin: - props.wallSize/2
                 anchors.top: parent.top
                 anchors.topMargin: -props.wallSize/2
-                
+
                 shadow: false
             }
             // bottom:
             Wall {
                 id: bottomWall
-                
+
                 width: parent.width + props.wallSize
                 height: props.wallSize
-                
+
                 anchors.left: mapWrapper.left 
                 anchors.leftMargin: - props.wallSize/2
                 anchors.top: parent.bottom
                 anchors.topMargin: -props.wallSize/2
-                
+
                 shadow: false
             }
             // top:
             Wall {
                 id: topWall
-                
+
                 width: parent.width + props.wallSize
                 height: props.wallSize
-                
+
                 anchors.left: mapWrapper.left 
                 anchors.leftMargin: - props.wallSize/2
                 anchors.top: parent.top
@@ -633,16 +633,16 @@ Item {
             // left:
             Wall {
                 id: leftWall
-                
+
                 width: props.wallSize
                 height: parent.height + props.wallSize
-                
+
                 anchors.left: mapWrapper.left
                 anchors.leftMargin: - props.wallSize/2
                 anchors.top: parent.top
                 anchors.topMargin: -props.wallSize/2
                 shadow: false
-            }            
+            }
         }
     }
 

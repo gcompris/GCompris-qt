@@ -60,8 +60,6 @@ var CONTACT = 0x0080;
 
 var baseUrl = "qrc:/gcompris/src/activities/balancebox/resource";
 var builtinFile = baseUrl + "/levels-default.json";
-var userFile = "file://" + GCompris.ApplicationSettings.userDataPath
-        + "/balancebox/" + "levels-user.json"
 
 function validateLevels(doc)
 {
