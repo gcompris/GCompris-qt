@@ -256,8 +256,7 @@ Item {
     }
 
     function populateKeyboard(a) {
-        if(activity.activityInfo.name != "menu/Menu.qml")
-            activity.loading.start();
+        activity.loading.start();
         // populate asynchronously in a worker thread:
         keyboardWorker.sendMessage({
                                        shiftKey: keyboard.shiftKey,
@@ -269,7 +268,7 @@ Item {
     }
 
     function handleVirtualKeyPress(virtualKey) {
-        if (virtualKey.specialKey == Qt.Key_Shift)
+        if (virtualKey.specialKey === Qt.Key_Shift)
             keyboard.modifiers ^= Qt.ShiftModifier;
 //      else if (virtualKey.specialKey == Qt.Key_Alt)
 //          keyboard.modifiers ^= Qt.AltModifier;

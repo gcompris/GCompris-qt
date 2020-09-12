@@ -50,7 +50,7 @@ ActivityBase {
     onBack: {
         pageView.pop(to);
         // Restore focus that has been taken by the loaded activity
-        if(pageView.currentItem == activity)
+        if(pageView.currentItem === activity)
             focus = true;
     }
 
@@ -61,7 +61,7 @@ ActivityBase {
         else {
             pageView.pop();
             // Restore focus that has been taken by the loaded activity
-            if(pageView.currentItem == activity)
+            if(pageView.currentItem === activity)
                 focus = true;
         }
     }
@@ -69,7 +69,7 @@ ActivityBase {
     onDisplayDialog: pageView.push(dialog)
 
     onDisplayDialogs: {
-        var toPush = new Array();
+        var toPush = [];
         for (var i = 0; i < dialogs.length; i++) {
             toPush.push({item: dialogs[i]});
         }
@@ -185,13 +185,6 @@ ActivityBase {
         height: main.height
         fillMode: Image.PreserveAspectCrop
 
-        Timer {
-            // triggered once at startup to populate the keyboard
-            id: keyboardFiller
-            interval: 1000; running: true;
-            onTriggered: { keyboard.populate(); }
-        }
-
         function loadActivity() {
             // @TODO init of item would be better in setsource but it crashes on Qt5.6
             // https://bugreports.qt.io/browse/QTBUG-49793
@@ -236,7 +229,7 @@ ActivityBase {
                 }
             } else if(currentTag === "search") {
                 // forward to the virtual keyboard the pressed keys
-                if(event.key == Qt.Key_Backspace)
+                if(event.key === Qt.Key_Backspace)
                     keyboard.keypress(keyboard.backspace);
                 else
                     keyboard.keypress(event.text);
@@ -710,6 +703,10 @@ ActivityBase {
                 target: activity
                 onCurrentTagChanged: {
                     if (activity.currentTag === 'search') {
+                        if(ApplicationSettings.isVirtualKeyboard && !keyboard.isPopulated) {
+                            keyboard.populate();
+                            keyboard.isPopulated = true;
+                        }
                         searchTextField.focus = true;
                     } else
                         activity.focus = true;
@@ -984,6 +981,7 @@ ActivityBase {
 
         VirtualKeyboard {
             id: keyboard
+            property bool isPopulated: false
             readonly property var letter: ActivityInfoTree.characters
             width: parent.width
             visible: activity.currentTag === "search" && ApplicationSettings.isVirtualKeyboard
@@ -1012,15 +1010,15 @@ ActivityBase {
                    else {
                        cols = background.horizontal ? (Math.ceil((letter.length-offset) / (15 - row)))
                                                        :(Math.ceil((letter.length-offset) / (22 - row)))
-                       if(row == 0) {
-                           tmplayout[row] = new Array();
+                       if(row === 0) {
+                           tmplayout[row] = [];
                            tmplayout[row].push({ label: keyboard.backspace });
                            tmplayout[row].push({ label: keyboard.space });
                            row ++;
                        }
                    }
 
-                   tmplayout[row] = new Array();
+                   tmplayout[row] = [];
                    for (var j = 0; j < cols; j++)
                        tmplayout[row][j] = { label: letter[j+offset] };
                    offset += j;
@@ -1108,7 +1106,7 @@ ActivityBase {
                 var backgroundMusicSource = String(backgroundMusic.source)
                 var backgroundMusicName = dialogActivityConfig.configItem.extractMusicNameFromPath(backgroundMusicSource) + backgroundMusicSource.slice(backgroundMusicSource.lastIndexOf('.'), backgroundMusicSource.length)
                 var nextMusicIndex = dialogActivityConfig.configItem.filteredBackgroundMusic.indexOf(backgroundMusicName)
-                if(nextMusicIndex != -1) {
+                if(nextMusicIndex !== -1) {
                     nextMusicIndex++
                     while(nextMusicIndex < dialogActivityConfig.configItem.filteredBackgroundMusic.length)
                         backgroundMusic.append(ApplicationInfo.getAudioFilePath("backgroundMusic/" + dialogActivityConfig.configItem.filteredBackgroundMusic[nextMusicIndex++]))
@@ -1116,7 +1114,7 @@ ActivityBase {
                 else {
                     nextMusicIndex = dialogActivityConfig.configItem.allBackgroundMusic.indexOf(backgroundMusicName) + 1
                     while(nextMusicIndex < dialogActivityConfig.configItem.allBackgroundMusic.length) {
-                        if(dialogActivityConfig.configItem.filteredBackgroundMusic.indexOf(dialogActivityConfig.configItem.allBackgroundMusic[nextMusicIndex]) != -1) {
+                        if(dialogActivityConfig.configItem.filteredBackgroundMusic.indexOf(dialogActivityConfig.configItem.allBackgroundMusic[nextMusicIndex]) !== -1) {
                             nextMusicIndex = dialogActivityConfig.configItem.filteredBackgroundMusic.indexOf(dialogActivityConfig.configItem.allBackgroundMusic[nextMusicIndex])
                             break
                         }
