@@ -117,6 +117,7 @@ void CoreActivityInfoTest::levelsTest()
 
     ActivityInfo activityinfo;
     activityinfo.setName(QStringLiteral("activityTest"));
+    QVERIFY(!activityinfo.hasDataset());
     activityinfo.setLevels({QStringLiteral("1,2,3,4,5,6")});
     QStringList expected;
     expected << "1" << "2" << "3" << "4" << "5" << "6";
@@ -132,6 +133,8 @@ void CoreActivityInfoTest::levelsTest()
     activityinfo.enableDatasetsBetweenDifficulties(3, 4);
     QCOMPARE(activityinfo.minimalDifficulty(), 3);
     QCOMPARE(activityinfo.maximalDifficulty(), 4);
+
+    QVERIFY(activityinfo.hasDataset());
 
     for(int i = 1 ; i < 7 ; ++ i) {
         QVERIFY(activityinfo.getDataset(QString::number(i))->enabled() == (i == 3 || i == 4));
