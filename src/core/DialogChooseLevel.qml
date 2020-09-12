@@ -405,8 +405,4 @@ Rectangle {
             }
         }
     }
-
-    File {
-        id: activityConfigFile
-    }
 }
