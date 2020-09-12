@@ -144,6 +144,16 @@ class ActivityInfo : public QObject
      */
     Q_PROPERTY(QStringList currentLevels READ currentLevels WRITE setCurrentLevels NOTIFY currentLevelsChanged)
 
+    /**
+     * True if the activity has a configuration
+     */
+    Q_PROPERTY(bool hasConfig READ hasConfig CONSTANT)
+
+    /**
+     * True if the activity has a dataset
+     */
+    Q_PROPERTY(bool hasDataset READ hasDataset CONSTANT)
+
 public:
     /// @cond INTERNAL_DOCS
     explicit ActivityInfo(QObject *parent = 0);
@@ -184,6 +194,8 @@ public:
     void setLevels(const QStringList&);
     QStringList currentLevels() const;
     void setCurrentLevels(const QStringList&);
+    bool hasConfig() const;
+    bool hasDataset() const;
     QQmlListProperty<Dataset> datasets();
     void fillDatasets(QQmlEngine *engine);
     void enableDatasetsBetweenDifficulties(quint32 levelMin, quint32 levelMax);

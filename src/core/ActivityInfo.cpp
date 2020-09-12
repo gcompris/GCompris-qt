@@ -20,6 +20,7 @@
  */
 #include "ActivityInfo.h"
 
+#include <QFile>
 #include <QtDebug>
 #include <QQmlProperty>
 #include <QQmlEngine>
@@ -317,3 +318,10 @@ Dataset *ActivityInfo::getDataset(const QString& name) const {
     return m_datasets[name];
 }
 
+bool ActivityInfo::hasConfig() const {
+    return QFile::exists(":/gcompris/src/activities/"+m_name.split('/')[0]+"/ActivityConfig.qml");
+}
+
+bool ActivityInfo::hasDataset() const {
+    return !m_levels.empty();
+}

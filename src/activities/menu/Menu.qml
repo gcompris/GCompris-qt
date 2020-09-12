@@ -314,7 +314,7 @@ ActivityBase {
                         section.currentIndex = index
                         activity.currentTag = modelData.tag
                         activity.currentTagCategories = modelData.categories
-                        if(modelData.categories != undefined) {
+                        if(modelData.categories !== undefined) {
                             currentCategory = Object.keys(modelData.categories[0])[0];
                         }
                         else {
@@ -479,7 +479,8 @@ ActivityBase {
                 id: delegateItem
                 width: activityCellWidth - activitiesGrid.spacing
                 height: activityCellHeight - activitiesGrid.spacing
-                enabled: clickMode === "play" || dialogChooseLevel.hasConfigOrDataset
+                enabled: clickMode === "play" || (activityInfoTreeItem.hasConfig || activityInfoTreeItem.hasDataset)
+                property var activityInfoTreeItem: ActivityInfoTree.menuTree[index]
                 Rectangle {
                     id: activityBackground
                     width: parent.width
@@ -503,21 +504,21 @@ ActivityBase {
                     Image {
                         id: minimalDifficultyIcon
                         source: "qrc:/gcompris/src/core/resource/difficulty" +
-                                ActivityInfoTree.menuTree[index].minimalDifficulty + ".svg"
+                                activityInfoTreeItem.minimalDifficulty + ".svg"
                         anchors.top: parent.top
                         sourceSize.width: iconWidth * 0.15
                     }
                     Image {
                         id: iconSeparator
                         source: "qrc:/gcompris/src/core/resource/separator.svg"
-                        visible: ActivityInfoTree.menuTree[index].minimalDifficulty !== ActivityInfoTree.menuTree[index].maximalDifficulty
+                        visible: activityInfoTreeItem.minimalDifficulty !== activityInfoTreeItem.maximalDifficulty
                         anchors.top: parent.top
                         anchors.left: minimalDifficultyIcon.right
                         sourceSize.height: minimalDifficultyIcon.height
                     }
                     Image {
                         source: "qrc:/gcompris/src/core/resource/difficulty" +
-                                ActivityInfoTree.menuTree[index].maximalDifficulty + ".svg"
+                                activityInfoTreeItem.maximalDifficulty + ".svg"
                         visible: iconSeparator.visible
                         anchors.top: parent.top
                         anchors.left: iconSeparator.right
@@ -528,7 +529,7 @@ ActivityBase {
                             left: parent.left
                             bottom: parent.bottom
                         }
-                        source: ActivityInfoTree.menuTree[index].createdInVersion > lastGCVersionRanCopy
+                        source: activityInfoTreeItem.createdInVersion > lastGCVersionRanCopy
                                 ? activity.url + "new.svg" : ""
                         sourceSize.width: 30 * ApplicationInfo.ratio
                     }
@@ -544,7 +545,7 @@ ActivityBase {
                         fontSize: regularSize
                         elide: Text.ElideRight
                         wrapMode: Text.WordWrap
-                        text: ActivityInfoTree.menuTree[index].title
+                        text: activityInfoTreeItem.title
                     }
                 }
                 ParticleSystemStarLoader {
@@ -571,26 +572,36 @@ ActivityBase {
                     }
                 }
 
-                DialogChooseLevel {
-                    id: dialogChooseLevel
-                    displayDatasetAtStart: hasDataset
-                    currentActivity: ActivityInfoTree.menuTree[index]
-                    inMenu: true
+                Loader {
+                    id: chooseLevelLoader
+                    active: false
+                    onStatusChanged: {
+                        if (status == Loader.Ready) {
+                            displayDialog(item);
+                        }
+                    }
 
-                    onClose: {
-                        home()
-                    }
-                    onSaveData: {
-                        currentLevels = dialogChooseLevel.chosenLevels
-                        ApplicationSettings.setCurrentLevels(name, currentLevels)
-                    }
-                    onStartActivity: {
-                        clickMode = "play"
-                        // immediately pop the Dialog to load the activity
-                        // if we don't do it immediately the page is busy
-                        // and it does not load the activity
-                        pageView.pop({immediate: true})
-                        selectCurrentItem()
+                    sourceComponent: DialogChooseLevel {
+                        id: dialogChooseLevel
+                        displayDatasetAtStart: hasDataset
+                        currentActivity: activityInfoTreeItem
+                        inMenu: true
+
+                        onClose: {
+                            home()
+                        }
+                        onSaveData: {
+                            currentLevels = dialogChooseLevel.chosenLevels
+                            ApplicationSettings.setCurrentLevels(name, currentLevels)
+                        }
+                        onStartActivity: {
+                            clickMode = "play"
+                            // immediately pop the Dialog to load the activity
+                            // if we don't do it immediately the page is busy
+                            // and it does not load the activity
+                            pageView.pop({immediate: true})
+                            selectCurrentItem()
+                        }
                     }
                 }
 
@@ -598,9 +609,9 @@ ActivityBase {
                     if(pageView.busy || !delegateItem.enabled)
                         return
 
-                    if(clickMode == "play") {
+                    if(clickMode === "play") {
                         particles.burst(50)
-                        ActivityInfoTree.currentActivity = ActivityInfoTree.menuTree[index]
+                        ActivityInfoTree.currentActivity = activityInfoTreeItem
                         activityLoader.setSource("qrc:/gcompris/src/activities/" + ActivityInfoTree.currentActivity.name,
                         {
                             'menu': activity,
@@ -610,7 +621,9 @@ ActivityBase {
                         if (activityLoader.status == Loader.Ready) loadActivity()
                     }
                     else {
-                        displayDialog(dialogChooseLevel);
+                        // Display configuration
+                        chooseLevelLoader.active = false;
+                        chooseLevelLoader.active = true;
                     }
                     activitiesGrid.currentIndex = index
                 }

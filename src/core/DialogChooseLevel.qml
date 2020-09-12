@@ -103,8 +103,8 @@ Rectangle {
 
     property bool datasetButtonVisible: true
     property bool hasConfigOrDataset: hasConfig || hasDataset
-    property bool hasConfig: activityConfigFile.exists("qrc:/gcompris/src/activities/"+activityName+"/ActivityConfig.qml")
-    property bool hasDataset: currentActivity && currentActivity.levels.length !== 0 && datasetButtonVisible
+    property bool hasConfig: currentActivity && currentActivity.hasConfig
+    property bool hasDataset: currentActivity && currentActivity.hasDataset && datasetButtonVisible
 
     color: "#696da3"
     border.color: "black"
