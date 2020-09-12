@@ -107,7 +107,7 @@ function initLevel() {
 
 function differentTargetH() {
     items.targetH = Math.floor(Math.random() * 12)
-    while(pastQuestionsH.includes(items.targetH)) {
+    while(pastQuestionsH.indexOf(items.targetH) != -1) {
         items.targetH = Math.floor(Math.random() * 12)
     }
     pastQuestionsH.push(items.targetH)
@@ -115,7 +115,7 @@ function differentTargetH() {
 
 function differentTargetM() {
     items.targetM = Math.floor(Math.random() * 60)
-    while(pastQuestionsM.includes(items.targetM)) {
+    while(pastQuestionsM.indexOf(items.targetM) != -1) {
         items.targetM = Math.floor(Math.random() * 60)
     }
     pastQuestionsM.push(items.targetM)
@@ -123,7 +123,7 @@ function differentTargetM() {
 
 function differentTargetS() {
     items.targetS = Math.floor(Math.random() * 60)
-    while(pastQuestionsS.includes(items.targetS)) {
+    while(pastQuestionsS.indexOf(items.targetS) != -1) {
         items.targetS = Math.floor(Math.random() * 60)
     }
     pastQuestionsS.push(items.targetS)
