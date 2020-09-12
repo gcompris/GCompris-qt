@@ -137,15 +137,13 @@ ActivityBase {
                 onIsFoundChanged: background.keyNavigationVisible = false
             }
             interactive: false
-            keyNavigationWraps: true
             highlightFollowsCurrentItem: true
+            highlightMoveDuration: 0
             highlight: Rectangle {
                 color: "#D0FFFFFF"
                 radius: 10
                 scale: 1.1
                 visible: background.keyNavigationVisible
-                Behavior on x { SpringAnimation { spring: 2; damping: 0.2 } }
-                Behavior on y { SpringAnimation { spring: 2; damping: 0.2 } }
             }
             add: Transition {
                 PathAnimation {
@@ -331,32 +329,48 @@ ActivityBase {
         Keys.onPressed: {
             background.keyNavigationVisible = true
             if(event.key === Qt.Key_Left) {
-                grid.moveCurrentIndexLeft()
-                // skip the highlight on the already found cards
-                while(grid.currentItem.isFound && !items.blockClicks) {
-                    grid.moveCurrentIndexLeft()
+                do {
+                    if(grid.currentIndex <= 0) {
+                        grid.currentIndex = grid.count - 1;
+                    } else {
+                        grid.currentIndex -= 1;
+                    }
                 }
+                while(grid.currentItem.isFound && !items.blockClicks)
             }
             else if(event.key === Qt.Key_Right) {
-                grid.moveCurrentIndexRight()
-                // skip the highlight on the already found cards
-                while(grid.currentItem.isFound && !items.blockClicks) {
-                    grid.moveCurrentIndexRight()
+                do {
+                    if(grid.currentIndex >= grid.count - 1) {
+                        grid.currentIndex = 0;
+                    } else {
+                        grid.currentIndex += 1
+                    }
                 }
+                while(grid.currentItem.isFound && !items.blockClicks)
             }
             else if(event.key === Qt.Key_Up) {
-                grid.moveCurrentIndexUp()
-                // skip the highlight on the already found cards
-                while(grid.currentItem.isFound && !items.blockClicks) {
-                    grid.moveCurrentIndexUp()
+                do {
+                    if(grid.currentIndex === 0) {
+                        grid.currentIndex = grid.count - 1
+                    } else {
+                        grid.currentIndex -= items.columns
+                        if(grid.currentIndex < 0)
+                            grid.currentIndex += grid.count - 1
+                    }
                 }
+                while(grid.currentItem.isFound && !items.blockClicks)
             }
             else if(event.key === Qt.Key_Down) {
-                grid.moveCurrentIndexDown()
-                // skip the highlight on the already found cards
-                while(grid.currentItem.isFound && !items.blockClicks) {
-                    grid.moveCurrentIndexDown()
+                do {
+                    if(grid.currentIndex === grid.count - 1) {
+                        grid.currentIndex = 0
+                    } else {
+                        grid.currentIndex += items.columns
+                        if(grid.currentIndex >= grid.count)
+                            grid.currentIndex -= grid.count - 1
+                    }
                 }
+                while(grid.currentItem.isFound && !items.blockClicks)
             }
             else if(event.key === Qt.Key_Space || event.key === Qt.Key_Enter || event.key === Qt.Key_Return)
                 if(grid.currentItem.isBack && !grid.currentItem.isFound && !grid.currentItem.tuxTurn && items.selectionCount < 2) grid.currentItem.selected()
