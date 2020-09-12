@@ -132,7 +132,7 @@ function getRandomLetters(lesson) {
             lettersInCurrentWord = word.split('')
 
         for(var l in lettersInCurrentWord) {
-            if(!letters.includes(lettersInCurrentWord[l])) {
+            if(letters.indexOf(lettersInCurrentWord[l]) === -1) {
                 letters.push(lettersInCurrentWord[l]);
             }
         }
@@ -166,7 +166,7 @@ function getRandomMaskedQuestion(clearQuestion, guessLetters, level) {
     var confusingLetters = []
     for(var i = 0; i < Math.min(level + 2, 6); i++) {
         var letter = guessLetters.shift()
-        if(!confusingLetters.includes(letter) && letter !== goodLetter) {
+        if(confusingLetters.indexOf(letter) === -1 && letter !== goodLetter) {
             confusingLetters.push(letter);
         }
         guessLetters.push(letter)
