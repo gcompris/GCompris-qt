@@ -23,7 +23,7 @@ ActivityInfo {
   icon: "baby_wordprocessor/baby_wordprocessor.svg"
   author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
   //: Activity title
-  title: qsTr("A baby wordprocessor")
+  title: qsTr("A baby word processor")
   //: Help title
   description: qsTr("A simplistic word processor to let the children play around with a keyboard and see letters.")
   //intro: "A simplistic word processor to play around with the keyboard"
@@ -32,7 +32,7 @@ ActivityInfo {
   //: Help prerequisite
   prerequisite: ""
   //: Help manual
-  manual: qsTr("Just type on the real or virtual keyboard like in a wordprocessor.
+  manual: qsTr("Just type on the real or virtual keyboard like in a word processor.
     Clicking on the 'Title' button will make the text bigger. Similarly, the 'subtitle' button will make the text slightly less bigger. Clicking on 'paragraph' will remove the formatting.")+ ("<br><br>") +
           qsTr("<b>Keyboard controls:</b>") + ("<ul><li>") +
           qsTr("Arrows: navigate inside the text") + ("</li><li>") +
