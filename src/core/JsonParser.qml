@@ -94,12 +94,12 @@ QtObject {
     function parseFromUrl(url, validateFunc)
     {
         var json = "'";
-        if (url.substring(0,3) == "qrc" || url.substring(0,4) == "file"
-            || url.substring(0,1) == ":") {
+        if (url.substring(0,3) === "qrc" || url.substring(0,4) === "file"
+            || url.substring(0,1) === ":") {
             json = jsonFile.read(url);
-            if (json != "")
+            if (json !== "")
                 return parseString(json, validateFunc);
-        } else if (url.substring(0,4) == "http")
+        } else if (url.substring(0,4) === "http")
             error("http:// scheme not yet implemented");
         else // unknown url scheme
             error("Unknown url scheme in url parameter: " + url);

@@ -183,7 +183,7 @@ Item {
 
                 MouseArea {
                     anchors.fill: parent
-                    enabled: (backgroundMusic.playbackState == Audio.PlayingState && !backgroundMusic.muted)
+                    enabled: (backgroundMusic.playbackState === Audio.PlayingState && !backgroundMusic.muted)
                     onClicked: backgroundMusic.nextAudio()
                 }
             }
@@ -563,16 +563,16 @@ Item {
         }
 
         // Set font
-        for(var i = 0 ; i < fonts.count ; i ++) {
-            if(fonts.get(i).text == ApplicationSettings.font) {
+        for(i = 0 ; i < fonts.count ; i ++) {
+            if(fonts.get(i).text === ApplicationSettings.font) {
                 fontBox.currentIndex = i;
                 break;
             }
         }
 
         // Set font capitalization
-        for(var i = 0 ; i < fontCapitalizationModel.length ; i ++) {
-            if(fontCapitalizationModel[i].value == ApplicationSettings.fontCapitalization) {
+        for(i = 0 ; i < fontCapitalizationModel.length ; i ++) {
+            if(fontCapitalizationModel[i].value === ApplicationSettings.fontCapitalization) {
                 fontCapitalizationBox.currentIndex = i;
                 break;
             }
@@ -594,8 +594,8 @@ Item {
         ApplicationSettings.font = fonts.get(fontBox.currentIndex).text
         ApplicationSettings.fontCapitalization = fontCapitalizationModel[fontCapitalizationBox.currentIndex].value
 
-        if(ApplicationSettings.filterLevelMin != filterRepeater.minFilter ||
-           ApplicationSettings.filterLevelMax != filterRepeater.maxFilter) {
+        if(ApplicationSettings.filterLevelMin !== filterRepeater.minFilter ||
+           ApplicationSettings.filterLevelMax !== filterRepeater.maxFilter) {
                ApplicationSettings.filterLevelMin = filterRepeater.minFilter
                ApplicationSettings.filterLevelMax = filterRepeater.maxFilter
                ActivityInfoTree.minMaxFiltersChanged(filterRepeater.minFilter, filterRepeater.maxFilter)
@@ -604,7 +604,7 @@ Item {
         ApplicationSettings.saveBaseFontSize();
         ApplicationSettings.notifyFontLetterSpacingChanged();
 
-        if (ApplicationSettings.locale != dialogConfig.languages[languageBox.currentIndex].locale) {
+        if (ApplicationSettings.locale !== dialogConfig.languages[languageBox.currentIndex].locale) {
             ApplicationSettings.locale = dialogConfig.languages[languageBox.currentIndex].locale
             if(ApplicationInfo.isDownloadAllowed && !DownloadManager.isDataRegistered(
                         "voices-" + ApplicationInfo.CompressedAudio + "/" +
@@ -638,20 +638,20 @@ Item {
                 fonts.append({ "text": rccFonts[i], "isLocalResource": true });
             }
 
-            for(var i = 0 ; i < systemFonts.length ; ++ i) {
+            for(i = 0 ; i < systemFonts.length ; ++ i) {
                 var isExcluded = false;
                 var systemFont = systemFonts[i].toLowerCase();
                 // Remove symbol fonts
                 for(var j = 0 ; j < excludedFonts.length ; ++ j) {
-                    if(systemFont.indexOf(excludedFonts[j].toLowerCase()) != -1) {
+                    if(systemFont.indexOf(excludedFonts[j].toLowerCase()) !== -1) {
                         isExcluded = true;
                         break;
                     }
                 }
 
                 // Remove fonts from rcc (if you have a default font from rcc, Qt will add it to systemFonts)
-                for(var j = 0 ; j < rccFonts.length ; ++ j) {
-                    if(rccFonts[j].toLowerCase().indexOf(systemFont) != -1) {
+                for(j = 0 ; j < rccFonts.length ; ++ j) {
+                    if(rccFonts[j].toLowerCase().indexOf(systemFont) !== -1) {
                         isExcluded = true;
                         break;
                     }
@@ -673,10 +673,10 @@ Item {
 
     function isFilteredBackgroundMusicChanged() {
         initialFilteredMusic = ApplicationSettings.filteredBackgroundMusic
-        if(initialFilteredMusic.length != filteredBackgroundMusic.length)
+        if(initialFilteredMusic.length !== filteredBackgroundMusic.length)
             return true
         for(var i = 0; i < initialFilteredMusic.length; i++)
-            if(filteredBackgroundMusic.indexOf(initialFilteredMusic[i]) == -1)
+            if(filteredBackgroundMusic.indexOf(initialFilteredMusic[i]) === -1)
                 return true
 
         return false
@@ -687,10 +687,10 @@ Item {
         (ApplicationSettings.sectionVisible != sectionVisible) ||
         (ApplicationSettings.wordset != wordset) ||
         (ApplicationSettings.useWordset != useWordset) ||
-        (ApplicationSettings.font != fonts.get(fontBox.currentIndex).text) ||
-        (ApplicationSettings.isEmbeddedFont != fonts.get(fontBox.currentIndex).isLocalResource) ||
-        (ApplicationSettings.isEmbeddedFont != fonts.get(fontBox.currentIndex).isLocalResource) ||
-        (ApplicationSettings.fontCapitalization != fontCapitalizationModel[(fontcapitalizationBox.currentIndex)].value) ||
+        (ApplicationSettings.font = fonts.get(fontBox.currentIndex).text) ||
+        (ApplicationSettings.isEmbeddedFont !== fonts.get(fontBox.currentIndex).isLocalResource) ||
+        (ApplicationSettings.isEmbeddedFont !== fonts.get(fontBox.currentIndex).isLocalResource) ||
+        (ApplicationSettings.fontCapitalization !== fontCapitalizationModel[(fontcapitalizationBox.currentIndex)].value) ||
         (ApplicationSettings.fontLetterSpacing != fontLetterSpacing) ||
         (ApplicationSettings.isAudioVoicesEnabled != isAudioVoicesEnabled) ||
         (ApplicationSettings.isAudioEffectsEnabled != isAudioEffectsEnabled) ||

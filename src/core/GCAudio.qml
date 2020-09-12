@@ -100,7 +100,7 @@ Item {
      *
      * Possible values taken from Audio.status
      */
-    property var playbackState: (audio.error == Audio.NoError) ?
+    property var playbackState: (audio.error === Audio.NoError) ?
                                     audio.playbackState : Audio.StoppedState;
 
     /**

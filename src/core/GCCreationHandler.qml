@@ -281,7 +281,7 @@ Rectangle {
                 enabled: !creationHandler.isSaveMode
                 onClicked: {
                     var itemIndex = creationsList.indexAt(mouseX, mouseY+creationsList.contentY)
-                    if(itemIndex == -1)
+                    if(itemIndex === -1)
                         viewContainer.selectedFileIndex = -1
                     else
                         viewContainer.selectedFileIndex = itemIndex

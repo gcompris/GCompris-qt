@@ -85,7 +85,7 @@ Window {
     }
 
     onApplicationStateChanged: {
-        if (ApplicationInfo.isMobile && applicationState != Qt.ApplicationActive) {
+        if (ApplicationInfo.isMobile && applicationState !== Qt.ApplicationActive) {
             audioVoices.stop();
             audioEffects.stop();
         }
@@ -177,7 +177,7 @@ Window {
 
     function checkWordset() {
         var wordset = ApplicationSettings.wordset
-        if(wordset == '')
+        if(wordset === '')
             // Maybe the wordset has been bundled or copied manually
             // we have to register it if we find it.
             wordset = 'data2/words/words.rcc'
@@ -204,10 +204,10 @@ Window {
 
     function checkBackgroundMusic() {
         var music = DownloadManager.getBackgroundMusicResources()
-        if(rccBackgroundMusic == '') {
+        if(rccBackgroundMusic === '') {
             rccBackgroundMusic = ApplicationInfo.getBackgroundMusicFromRcc()
         }
-        if(music == '') {
+        if(music === '') {
             music = DownloadManager.getBackgroundMusicResources()
         }
         // We have local music but it is not yet registered

@@ -83,7 +83,6 @@ QtObject {
         var activities = ActivityInfoTree.menuTree;
         // display for each version an optional text ("content") then the new activities
         filtered.map(function filter(obj) {
-            obj['versionCode'];
             var version = (obj['versionCode'] / 10000).toFixed(2);
             output += "<b>" + qsTr("Version %1:").arg(version) + "</b>";
             output += "<ul>";
@@ -91,9 +90,9 @@ QtObject {
             for(var i = 0; i < obj['content'].length; i++)
                 output += "<li>" + obj['content'][i] + "</li>";
             // display the activity titles
-            for(var i in activities) {
-                var activity = activities[i];
-                if(activity.createdInVersion == obj['versionCode'] && activity.enabled) {
+            for(var j in activities) {
+                var activity = activities[j];
+                if(activity.createdInVersion === obj['versionCode'] && activity.enabled) {
                     output += "<li>" + activity.title + "</li>";
                 }
             }

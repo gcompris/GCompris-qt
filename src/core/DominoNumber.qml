@@ -131,8 +131,8 @@ Item {
             if(value >= 8) visible = true
             break
         case 4:
-            if(value == 1 || value == 3 || value == 5 ||
-               value == 7 || value == 9) visible = true
+            if(value === 1 || value === 3 || value === 5 ||
+               value === 7 || value === 9) visible = true
             break
         case 5:
             if(value >= 8) visible = true
