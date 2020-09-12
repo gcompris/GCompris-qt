@@ -38,6 +38,7 @@ var lessons
 
 // Do not propose these letter in the choices
 var ignoreLetters = '[ ,;:\\-\u0027]'
+var re = new RegExp(ignoreLetters, 'g')
 
 function init(items_) {
     items = items_
@@ -120,23 +121,29 @@ function initDataset() {
 // Get all the letters for all the words in the lesson excluding ignoreLetters
 function getRandomLetters(lesson) {
     var letters = []
-    var re = new RegExp(ignoreLetters, 'g');
     for (var i in lesson) {
+        var word = lesson[i].translatedTxt.replace(re, '')
+        var lettersInCurrentWord;
         if(GCompris.ApplicationSettings.fontCapitalization === Quick.Font.AllUppercase)
-            letters = letters.concat(lesson[i].translatedTxt.replace(re, '').toLocaleUpperCase().split(''))
+            lettersInCurrentWord = word.toLocaleUpperCase().split('')
         else if(GCompris.ApplicationSettings.fontCapitalization === Quick.Font.AllLowercase)
-            letters = letters.concat(lesson[i].translatedTxt.replace(re, '').toLocaleLowerCase().split(''))
+            lettersInCurrentWord = word.toLocaleLowerCase().split('')
         else
-            letters = letters.concat(lesson[i].translatedTxt.replace(re, '').split(''))
+            lettersInCurrentWord = word.split('')
+
+        for(var l in lettersInCurrentWord) {
+            if(!letters.includes(lettersInCurrentWord[l])) {
+                letters.push(lettersInCurrentWord[l]);
+            }
+        }
     }
-    return sortUnique(letters)
+    return Core.shuffle(GCompris.ApplicationInfo.localeSort(letters, items.locale))
 }
 
 // Get a random letter in the given word excluding ignoreLetters
 function getRandomLetter(word) {
-    var re = new RegExp(ignoreLetters, 'g')
     var letters = word.replace(re, '').split('')
-    var letter = Core.shuffle(letters)[0]
+    var letter = letters[Math.floor(Math.random() * letters.length)]
     if(GCompris.ApplicationSettings.fontCapitalization === Quick.Font.AllUppercase)
         return letter.toLocaleUpperCase()
     else if(GCompris.ApplicationSettings.fontCapitalization === Quick.Font.AllLowercase)
@@ -159,24 +166,16 @@ function getRandomMaskedQuestion(clearQuestion, guessLetters, level) {
     var confusingLetters = []
     for(var i = 0; i < Math.min(level + 2, 6); i++) {
         var letter = guessLetters.shift()
-        confusingLetters.push(letter)
+        if(!confusingLetters.includes(letter) && letter !== goodLetter) {
+            confusingLetters.push(letter);
+        }
         guessLetters.push(letter)
     }
     confusingLetters.push(goodLetter)
 
-    return [maskedQuestion, goodLetter, Core.shuffle(sortUnique(confusingLetters))]
+    return [maskedQuestion, goodLetter, Core.shuffle(confusingLetters)]
 }
 
-function sortUnique(arr) {
-    arr = GCompris.ApplicationInfo.localeSort(arr, items.locale);
-    var ret = [arr[0]];
-    for (var i = 1; i < arr.length; i++) { // start loop at 1 as element 0 can never be a duplicate
-        if (arr[i-1] !== arr[i]) {
-            ret.push(arr[i]);
-        }
-    }
-    return ret;
-}
 function stop() {
 }
 
