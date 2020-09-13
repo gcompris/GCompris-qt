@@ -37,7 +37,10 @@ QtObject {
      *
      */
     property var changelog: [
-            { "versionCode": 10000, "content": [qsTr("Multiple dataset")
+            { "versionCode": 10000, "content": [qsTr("New Activity Settings menu, with dataset selection"),
+                qsTr("Many usability improvements"),
+                qsTr("Many new images"),
+                qsTr("Many bug fixes")
                 ]
             },
             { "versionCode": 9700, "content": [qsTr("New sub-categories to organize activities"),
