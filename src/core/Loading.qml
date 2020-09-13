@@ -100,9 +100,9 @@ Item {
         id: loadingImage
         source: "qrc:/gcompris/src/core/resource/loading.svg";
         anchors.centerIn: parent
-        sourceSize.width: 1024
-        width: 150
-        height: 150
+        sourceSize.width: 150
+        width: sourceSize.width
+        height: sourceSize.width
         opacity: 0.8
 
         RotationAnimation on rotation {
