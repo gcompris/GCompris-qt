@@ -34,7 +34,7 @@ ActivityBase {
     pageComponent: Image {
     id: background
         anchors.fill: parent
-        source: Activity.url + "background.svg"
+        source: "qrc:/gcompris/src/activities/tic_tac_toe/resource/background.svg"
         sourceSize.width: Math.max(parent.width, parent.height)
         fillMode: Image.PreserveAspectCrop
         signal start
