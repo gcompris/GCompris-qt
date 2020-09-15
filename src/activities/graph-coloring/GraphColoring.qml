@@ -146,7 +146,7 @@ ActivityBase {
                     id: line
                     opacity: 1
                     antialiasing: true
-                    color: highlight == true ? "red" : "black"
+                    color: highlight == true ? "red" : "#373737"
 
                     transformOrigin: Item.TopLeft
                     x: xp * graphRect.width

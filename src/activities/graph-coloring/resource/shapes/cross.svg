@@ -7,40 +7,17 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="42.74659mm"
-   height="42.74659mm"
-   viewBox="0 0 151.4643 151.46429"
-   id="svg6083"
+   width="128"
+   height="128"
+   viewBox="0 0 120 120"
+   id="svg8562"
    version="1.1"
-   inkscape:version="0.91 r13725"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
    sodipodi:docname="cross.svg">
   <defs
-     id="defs6085">
-    <linearGradient
-       inkscape:collect="always"
-       id="linearGradient4153">
-      <stop
-         style="stop-color:#a6985e;stop-opacity:1"
-         offset="0"
-         id="stop4155" />
-      <stop
-         style="stop-color:#e2d393;stop-opacity:1"
-         offset="1"
-         id="stop4157" />
-    </linearGradient>
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient4153"
-       id="linearGradient4159"
-       x1="-179.28575"
-       y1="96.375"
-       x2="-179.78574"
-       y2="-3.803571"
-       gradientUnits="userSpaceOnUse" />
-  </defs>
+     id="defs8564" />
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -48,46 +25,76 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="5.6"
-     inkscape:cx="144.08256"
-     inkscape:cy="46.665463"
+     inkscape:zoom="1.4"
+     inkscape:cx="126.72609"
+     inkscape:cy="59.34747"
      inkscape:document-units="px"
-     inkscape:current-layer="g1418"
-     showgrid="false"
+     inkscape:current-layer="layer1"
+     showgrid="true"
      fit-margin-top="0"
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:window-width="3200"
-     inkscape:window-height="1679"
+     inkscape:window-width="1884"
+     inkscape:window-height="1054"
      inkscape:window-x="0"
      inkscape:window-y="0"
-     inkscape:window-maximized="1" />
+     inkscape:window-maximized="1"
+     units="px">
+    <inkscape:grid
+       empspacing="4"
+       type="xygrid"
+       id="grid841" />
+  </sodipodi:namedview>
   <metadata
-     id="metadata6088">
+     id="metadata8567">
     <rdf:RDF>
       <cc:Work
          rdf:about="">
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
+        <dc:date>2020</dc:date>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Timothée Giet</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/by-sa/4.0/" />
       </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/by-sa/4.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Notice" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Attribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#ShareAlike" />
+      </cc:License>
     </rdf:RDF>
   </metadata>
   <g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-321.69498,-234.53777)">
-    <g
-       id="g1418"
-       transform="translate(577.945,272.28777)">
-      <path
-         inkscape:connector-curvature="0"
-         id="rect2209"
-         style="fill:#bbb082;fill-opacity:1;stroke:url(#linearGradient4159);stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         d="m -208.57524,-35.75 0,45.6747797 -45.67478,0 0,56.1147293 45.67478,0 0,45.674781 56.11473,0 0,-45.674781 45.67478,0 0,-56.1147293 -45.67478,0 0,-45.6747797 -56.11473,0 z" />
-    </g>
+     transform="translate(-241.7247,-597.44654)">
+    <path
+       style="opacity:1;vector-effect:none;fill:#877d54;fill-opacity:1;stroke:none;stroke-width:2.39999986;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 279.2247,597.44654 v 37.5 h -37.5 v 45 h 37.5 v 37.5 h 45 v -37.5 h 37.5 v -45 h -37.5 v -37.5 z"
+       id="rect942"
+       inkscape:connector-curvature="0" />
+    <path
+       style="opacity:1;vector-effect:none;fill:#bbb082;fill-opacity:1;stroke:none;stroke-width:2.39999986;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 286.7247,604.94654 v 37.5 h -37.5 v 30 h 37.5 v 37.5 h 30 v -37.5 h 37.5 v -30 h -37.5 v -37.5 z"
+       id="rect947"
+       inkscape:connector-curvature="0" />
   </g>
 </svg>
