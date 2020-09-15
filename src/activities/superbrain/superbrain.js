@@ -28,7 +28,7 @@ var maxLevel = 8;
 var currentSubLevel = 0;
 var maxSubLevel = 6;
 var items;
-var baseUrl = "qrc:/gcompris/src/activities/superbrain/resource/";
+var baseUrl = "qrc:/gcompris/src/activities/graph-coloring/resource/shapes/";
 
 var levels = [
             { numberOfPieces: 3, numberOfColors: 5, help: true,  uniqueColors: true  },
@@ -43,26 +43,26 @@ var levels = [
 var maxPieces = 5;
 var solution = new Array(maxPieces);
 var colors = [
-            "#FF0000FF",  // dark blue
-            "#FF00FF00",  // light green
-            "#FFFF0000",  // red
-            "#FF00FFFF",  // light blue
-            "#FFFF00FF",  // magenta
-            "#FFFFFF00",  // yellow
-            "#FF8e7016",  // brown
-            "#FF04611a",  // dark green
-            "#FFa0174b",   // dark magenta
+            "#387BE0",  // dark blue
+            "#8EEB76",  // light green
+            "#E65B48",  // red
+            "#E7F7FD",  // bluish white
+            "#E31BE3",  // magenta
+            "#E8EF48",  // yellow
+            "#BBB082",  // brown
+            "#49BBF0",  // light blue
+            "#D81965",   // dark magenta
         ];
 var symbols = [
-            baseUrl + "darkblue_star.svg",
-            baseUrl + "lightgreen_triangle.svg",
-            baseUrl + "red_heart.svg",
-            baseUrl + "lightblue_cloud.svg",
-            baseUrl + "magenta_diamond.svg",
-            baseUrl + "yellow_star.svg",
-            baseUrl + "brown_cross.svg",
-            baseUrl + "darkgreen_ring.svg",
-            baseUrl + "red_circle.svg",
+            baseUrl + "star.svg",
+            baseUrl + "triangle.svg",
+            baseUrl + "heart.svg",
+            baseUrl + "cloud.svg",
+            baseUrl + "diamond.svg",
+            baseUrl + "star_simple.svg",
+            baseUrl + "cross.svg",
+            baseUrl + "ring.svg",
+            baseUrl + "circle.svg",
         ];
 
 var ackColors = new Array();

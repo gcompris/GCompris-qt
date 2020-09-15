@@ -33,7 +33,7 @@ ActivityBase {
 
     pageComponent: Image {
         id: background
-        source: Activity.baseUrl + "background.svg"
+        source: "qrc:/gcompris/src/activities/family/resource/background.svg"
         sourceSize.width: Math.max(parent.width, parent.height)
         fillMode: Image.PreserveAspectCrop
         focus: true
@@ -99,7 +99,7 @@ ActivityBase {
                     width: 40 * ApplicationInfo.ratio
                     height: 40 * ApplicationInfo.ratio
                     border.width: 2
-                    border.color: "white"
+                    border.color: "#373737"
                     searchItemIndex: itemIndex
                 }
             }
@@ -289,7 +289,7 @@ if (targetY < 0) {
                         width: chooserGrid.cellWidth
                         height: chooserGrid.cellWidth
                         border.width: index == chooserGrid.colIndex ? 3 : 1
-                        border.color: index == chooserGrid.colIndex ? "white" : "darkgray"
+                        border.color: index == chooserGrid.colIndex ? "#373737" : "darkgray"
                         highlightSymbol: index == chooserGrid.colIndex
                         searchItemIndex: modelData
                         radius: 5
@@ -298,6 +298,7 @@ if (targetY < 0) {
                             id: chooserMouseArea
                             anchors.fill: parent
                             acceptedButtons: Qt.LeftButton
+                            enabled: chooser.scale !== 0
                             z: 11
                             hoverEnabled: ApplicationInfo.isMobile ? false : true
 
@@ -338,7 +339,7 @@ if (targetY < 0) {
                         width: guessColumn.guessSize * currentRow.factor
                         height: guessColumn.guessSize * currentRow.factor
                         border.width: 2 * currentRow.factor
-                        border.color: "lightgray"
+                        border.color: "#373737"
                         searchItemIndex: colIndex
                         opacity: 1.0
                         z: 2
@@ -512,7 +513,7 @@ if (targetY < 0) {
                             anchors.topMargin: guessColumn.statusMargin
 
                             border.width: 2
-                            border.color: "lightgray"
+                            border.color: "#373737"
                             searchItemIndex: colIndex
                             opacity: 1.0
                             z: 2
@@ -526,7 +527,7 @@ if (targetY < 0) {
 
                                 anchors.centerIn: parent
 
-                                source: Activity.baseUrl + "apply.svg"
+                                source: "qrc:/gcompris/src/core/resource/apply.svg"
                             }
 
                             MouseArea {
