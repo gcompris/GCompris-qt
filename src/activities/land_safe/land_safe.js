@@ -179,17 +179,20 @@ function processKeyPress(event)
 {
     var key = event.key;
     event.accepted = true;
-    if (!items.world.running) {
-        return;
+    if(!items.world.running) {
+        if(key === Qt.Key_Enter || key === Qt.Key_Return || key == Qt.Key_Space)
+            items.ok.clicked();
+        else
+            return;
     }
     var newAccel = 0;
-    if (key === Qt.Key_Up || key === Qt.Key_Down) {
+    if(key === Qt.Key_Up || key === Qt.Key_Down) {
         if (key === Qt.Key_Up) {
-            if (items.rocket.accel === 0)
+            if(items.rocket.accel === 0)
                 newAccel = dAccel;
             else
                 newAccel = items.rocket.accel + dAccel;
-        } else if (key === Qt.Key_Down)
+        } else if(key === Qt.Key_Down)
             newAccel = items.rocket.accel - dAccel;
 
         if (newAccel < 0)
@@ -197,21 +200,21 @@ function processKeyPress(event)
         if (newAccel > maxAccel)
             newAccel = maxAccel;
 
-        if (newAccel !== items.rocket.accel && currentFuel > 0)
+        if(newAccel !== items.rocket.accel && currentFuel > 0)
             items.rocket.accel = newAccel;
-    } else if (key === Qt.Key_Right || key === Qt.Key_Left) {
+    } else if(key === Qt.Key_Right || key === Qt.Key_Left) {
         if (items.mode === "simple") {
-            if (key === Qt.Key_Right && !event.isAutoRepeat && currentFuel > 0) {
+            if(key === Qt.Key_Right && !event.isAutoRepeat && currentFuel > 0) {
                 items.rocket.leftAccel = leftRightAccel;
                 items.rocket.rightAccel = 0.0;
-            } else if (key === Qt.Key_Left && !event.isAutoRepeat && currentFuel > 0) {
+            } else if(key === Qt.Key_Left && !event.isAutoRepeat && currentFuel > 0) {
                 items.rocket.rightAccel = leftRightAccel;
                 items.rocket.leftAccel = 0.0;
             }
         } else { // "rotation"
-            if (key === Qt.Key_Right)
+            if(key === Qt.Key_Right)
                 items.rocket.rotation += 10;
-            else if (key === Qt.Key_Left)
+            else if(key === Qt.Key_Left)
                 items.rocket.rotation -= 10;
             //console.log("XXX rotation=" + items.rocket.rotation + " bodyRot=" + items.rocket.body.rotation);
         }
