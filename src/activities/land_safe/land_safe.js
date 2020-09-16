@@ -253,3 +253,30 @@ function finishLevel(success)
 function degToRad(degrees) {
   return degrees * Math.PI / 180;
 }
+
+//note: using 0 with transparent font color instead of space to keep consistent spacing
+//simple function for the fuel and altitude values
+function minimum3Chars(number_) {
+    var numberTxt = number_.toString();
+    if(number_ < 100 && number_ >= 10)
+        numberTxt = "<font color=\"#00FFFFFF\">0</font>" + numberTxt;
+    else if(number_ < 10)
+        numberTxt = "<font color=\"#00FFFFFF\">00</font>" + numberTxt;
+    return numberTxt;
+}
+
+//function for the velocity and acceleration values
+function fixedSizeString(number_, multiplier_, chars_, emptyDecimal_) {
+    var numberRound = Math.round(number_ * multiplier_) / multiplier_;
+    var numberTxt = numberRound.toString();
+    if(numberRound % 1 === 0)
+        numberTxt = numberTxt + emptyDecimal_;
+    var charsToAdd = chars_ - numberTxt.length;
+    if(numberRound >= 0) {
+        numberTxt = "<font color=\"#00FFFFFF\">-</font>" + numberTxt;
+        charsToAdd--;
+    }
+    for(; charsToAdd > 0; charsToAdd--)
+        numberTxt = "<font color=\"#00FFFFFF\">0</font>" + numberTxt;
+    return numberTxt;
+}
