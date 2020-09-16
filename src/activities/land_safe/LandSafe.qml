@@ -110,14 +110,18 @@ ActivityBase {
             property alias leftRightControl: leftRightControl
             property alias upDownControl: upDownControl
             property alias accelerometer: accelerometer
+            property string accelerometerText: "<font color=\"#00FFFFFF\">-0</font>0.00"
             property var rocketCategory: Fixture.Category1
             property var groundCategory: Fixture.Category2
             property var landingCategory: Fixture.Category3
             property var levels: activity.datasetLoader.data
             property string mode: "rotate"  // "simple"
             property double velocity: 0.0
+            property string velocityText: "<font color=\"#00FFFFFF\">-0</font>0.0"
             property double altitude: 0.0
+            property string altitudeText: "<font color=\"#00FFFFFF\">00</font>0"
             property double fuel: 100
+            property string fuelText: "100"
             property double lastVelocity: 0.0
             property double gravity: 0.0
             property double scale: background.height / 400
@@ -140,6 +144,7 @@ ActivityBase {
                 if (Math.abs(rocket.body.linearVelocity.y) > 0.01)  // need to store velocity before it is aaaalmost 0 because of ground/landing contact
                     items.lastVelocity = items.velocity;
                 items.velocity = rocket.body.linearVelocity.y;
+                items.velocityText = Activity.fixedSizeString(items.velocity, 10, 5, ".0");
 
                 if (rocket.body.linearVelocity.y > Activity.maxLandingVelocity)
                     landing.overlayColor = "-r"  // redish
@@ -150,6 +155,7 @@ ActivityBase {
                 else
                     landing.overlayColor = "-g"  // greenish
                 items.altitude = Math.max(0, Math.round(Activity.getAltitudeReal()));
+                items.altitudeText = Activity.minimum3Chars(items.altitude);
 
                 if (Activity.maxFuel != -1) {
                     // update fuel:
@@ -162,7 +168,7 @@ ActivityBase {
                         items.rocket.accel = items.rocket.leftAccel = items.rocket.rightAccel = 0;
                 } else
                     items.fuel = 100;
-
+                items.fuelText = Activity.minimum3Chars(items.fuel);
                 if (items.rocket.x > background.width)
                     items.rocket.x = -items.rocket.width;
                 if (items.rocket.x < -items.rocket.width)
@@ -188,21 +194,21 @@ ActivityBase {
             property double leftAccel: 0.0
             property double rightAccel: 0.0
             property alias body: rocketBody
-            
+
             function show() {
                 opacity = 100;
             }
             function hide() {
                 opacity = 0;
             }
-            
+
             Behavior on opacity {
                 NumberAnimation {
                     duration: 500
                     easing.type: Easing.OutExpo
                 }
             }
-            
+
             //property float rotate
 
             rotation: 0
@@ -308,7 +314,7 @@ ActivityBase {
                 sourceSize.height: height
                 visible: ApplicationInfo.useOpenGL ? false : true
             }
-            
+
             ParticleSystem {
                 id: leftEngine
 
@@ -350,7 +356,7 @@ ActivityBase {
                 sourceSize.height: height
                 visible: ApplicationInfo.useOpenGL ? false : true
             }
-            
+
             ParticleSystem {
                 id: rightEngine
 
@@ -391,7 +397,7 @@ ActivityBase {
                 sourceSize.height: height
                 visible: ApplicationInfo.useOpenGL ? false : true
             }
-            
+
             ParticleSystem {
                 id: bottomEngine
                 anchors.top: parent.bottom
@@ -420,7 +426,7 @@ ActivityBase {
             }
 
          }
-        
+
         ParticleSystem {
             id: explosion
             anchors.centerIn: rocket
@@ -450,7 +456,7 @@ ActivityBase {
                 interval: 600; running: false; repeat: false
                 onTriggered: explosion.opacity = 0
             }
-                
+
             function show() {
                 visible = true;
                 opacity = 100
@@ -462,14 +468,14 @@ ActivityBase {
                 scale = 0;
                 timer0.running = false
             }
-                
+
             Behavior on opacity {
                 NumberAnimation {
                     duration: 300
                     easing.type: Easing.InExpo
                 }
             }
-                
+
         }
 
         Image {
@@ -573,7 +579,7 @@ ActivityBase {
                 color: "white"
                 fontSize: tinySize
                 horizontalAlignment: Text.AlignRight
-                text: qsTr("Fuel: %1").arg(items.fuel)
+                text: qsTr("Fuel: %1").arg(items.fuelText)
             }
             GCText {
                 id: altitudeText
@@ -583,18 +589,17 @@ ActivityBase {
                 color: "white"
                 fontSize: tinySize
                 horizontalAlignment: Text.AlignRight
-                text: qsTr("Altitude: %1").arg(items.altitude)
+                text: qsTr("Altitude: %1").arg(items.altitudeText)
             }
             GCText {
                 id: velocityText
                 anchors.right: parent.right
-//                anchors.rightMargin: 10 * ApplicationInfo.ratio
                 anchors.bottom: accelText.top
                 anchors.bottomMargin: 10
                 color: "white"
                 fontSize: tinySize
                 horizontalAlignment: Text.AlignRight
-                text: qsTr("Velocity: %1").arg(Math.round(items.velocity * 10) / 10)
+                text: qsTr("Velocity: %1").arg(items.velocityText)
             }
 
             GCText {
@@ -603,16 +608,13 @@ ActivityBase {
                 anchors.bottomMargin: 10 * ApplicationInfo.ratio
                 anchors.right: parent.right
                 fontSize: tinySize
-//                width: 50
-//                height: 50
                 color: "white"
                 horizontalAlignment: Text.AlignRight
-                text: qsTr("Acceleration: %1").arg(Math.round(accelerometer.current * 100) / 100)
+                text: qsTr("Acceleration: %1").arg(items.accelerometerText)
             }
 
             Accelerometer {
                 id: accelerometer
-
                 current: rocket.decomposeVector(rocket.accel, rocket.rotation).y * 10 - items.gravity
                 anchors.right: parent.right
                 anchors.bottom: gravityText.top
@@ -621,6 +623,9 @@ ActivityBase {
                 height: background.height / 2.5
                 z: 2 // on top of rocket and ground
                 opacity: 1
+                onCurrentChanged: {
+                    items.accelerometerText = Activity.fixedSizeString(accelerometer.current, 100, 6, ".00");
+                }
             }
 
             GCText {
