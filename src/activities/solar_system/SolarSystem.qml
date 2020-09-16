@@ -392,8 +392,8 @@ ActivityBase {
             onLoadData: {
                 if(activityData && activityData["mode"]) {
                     items.mode = activityData["mode"];
-                    Activity.numberOfLevel = items.assessmentMode ? 1 : 2
                 }
+                Activity.numberOfLevel = items.assessmentMode ? 1 : 2
             }
         }
 
