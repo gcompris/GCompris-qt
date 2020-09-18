@@ -750,7 +750,11 @@ ActivityBase {
             }
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
-            onHomeClicked: activity.home()
+            onHomeClicked: {
+                if(intro.visible)
+                    intro.visible = false;
+                activity.home();
+            }
             onActivityConfigClicked: {
                 displayDialog(dialogActivityConfig)
             }

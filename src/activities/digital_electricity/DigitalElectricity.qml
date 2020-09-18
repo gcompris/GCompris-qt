@@ -468,7 +468,11 @@ ActivityBase {
             onHelpClicked: {displayDialog(dialogHelp)}
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
-            onHomeClicked: activity.home()
+            onHomeClicked: {
+                if(tutorialInstruction.visible)
+                    tutorialInstruction.visible = false;
+                activity.home();
+            }
             onReloadClicked: Activity.reset()
             onActivityConfigClicked: {
                 displayDialog(dialogActivityConfig)

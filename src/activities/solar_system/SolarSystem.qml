@@ -423,11 +423,14 @@ ActivityBase {
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: {
-                mainQuizScreen.closenessMeter.stopAnimations()
-                if(items.solarSystemVisible || items.assessmentMode)
-                    activity.home()
+                mainQuizScreen.closenessMeter.stopAnimations();
+                if(items.solarSystemVisible || items.assessmentMode) {
+                    if(message.visible)
+                        message.visible = false;
+                    activity.home();
+                }
                 else
-                    Activity.showSolarModel()
+                    Activity.showSolarModel();
             }
             onHintClicked: {
                 if(items.assessmentMode)

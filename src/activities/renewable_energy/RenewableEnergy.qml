@@ -561,7 +561,11 @@ ActivityBase {
             onHelpClicked: displayDialog(dialogHelp)
             onPreviousLevelClicked: previousLevel()
             onNextLevelClicked: nextLevel()
-            onHomeClicked: activity.home()
+            onHomeClicked: {
+                if(message.visible)
+                    message.visible = false;
+                home();
+            }
             onReloadClicked: initLevel()
             level: items.currentLevel + 1
         }

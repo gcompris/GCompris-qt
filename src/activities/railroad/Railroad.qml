@@ -582,7 +582,11 @@ ActivityBase {
             z: introMessage.z
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
-            onHomeClicked: activity.home()
+            onHomeClicked: {
+                if(introMessage.visible)
+                    introMessage.visible = false;
+                home();
+            }
             onHintClicked: {
                 if(!introMessage.visible && items.mouseEnabled) {
                     if(items.memoryMode == false) {

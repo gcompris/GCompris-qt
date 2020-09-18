@@ -190,7 +190,11 @@ ActivityBase {
             }
             onPreviousLevelClicked: if(!bonus.isPlaying) Activity.previousLevel()
             onNextLevelClicked: if(!bonus.isPlaying) Activity.nextLevel()
-            onHomeClicked: activity.home()
+            onHomeClicked: {
+                if(message.visible)
+                    message.visible = false;
+                home();
+            }
         }
 
         Bonus {
