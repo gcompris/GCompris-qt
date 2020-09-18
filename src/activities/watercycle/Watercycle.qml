@@ -791,7 +791,11 @@ ActivityBase {
             onHelpClicked: {
                 displayDialog(dialogHelp)
             }
-            onHomeClicked: activity.home()
+            onHomeClicked: {
+                if(message.visible)
+                    message.visible = false;
+                home();
+            }
         }
 
         Bonus {

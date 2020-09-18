@@ -443,7 +443,11 @@ ActivityBase {
             }
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
-            onHomeClicked: activity.home()
+            onHomeClicked: {
+                if(introMessage.visible)
+                    introMessage.visible = false;
+                home();
+            }
             onActivityConfigClicked: {
                 multipleStaff.pauseNoteAnimation()
                 addNoteTimer.pause()

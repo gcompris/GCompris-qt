@@ -952,7 +952,11 @@ ActivityBase {
             }
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
-            onHomeClicked: activity.home()
+            onHomeClicked: {
+                if(tutorial.visible)
+                    tutorial.visible = false;
+                home();
+            }
         }
 
         Bonus {

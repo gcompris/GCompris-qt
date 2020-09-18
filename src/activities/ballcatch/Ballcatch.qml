@@ -92,7 +92,11 @@ ActivityBase {
             onHelpClicked: displayDialog(dialogHelpLeftRight);
             onPreviousLevelClicked: if(!bonus.isPlaying) Activity.previousLevel();
             onNextLevelClicked: if(!bonus.isPlaying) Activity.nextLevel();
-            onHomeClicked: home();
+            onHomeClicked: {
+                if(message.visible)
+                    message.visible = false;
+                home();
+            }
         }
 
         Bonus {
