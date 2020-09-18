@@ -187,7 +187,11 @@ ActivityBase {
             }
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
-            onHomeClicked: activity.home()
+            onHomeClicked: {
+                if(tutorialImage.visible)
+                    tutorialImage.visible = false;
+                activity.home();
+            }
         }
 
         Score {
