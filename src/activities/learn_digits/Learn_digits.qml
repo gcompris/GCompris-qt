@@ -82,8 +82,11 @@ ActivityBase {
         property bool isHorizontal: layoutArea.width >= layoutArea.height
 
         onStart: {
-            itemsHidden();
             Activity.start(items, operationMode);
+            if(activity.operationMode)
+                itemsVisible();
+            else
+                itemsHidden();
         }
         onStop: { Activity.stop() }
 
