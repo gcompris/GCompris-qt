@@ -84,7 +84,9 @@ Item {
 
     function restoreFocus() {
         message.focus = false;
-        delayTimer.start();
+        activity.forceActiveFocus();
+        activity.Keys.enabled = true;
+        background.Keys.enabled = true;
     }
 
     /**
@@ -118,10 +120,12 @@ Item {
                 skipButton.clicked();
             }
         }
+        event.accepted = true;
     }
 
     Keys.onEscapePressed: {
         skipButton.clicked();
+        event.accepted = true;
     }
 
     Keys.onReleased: {
@@ -215,18 +219,5 @@ Item {
             index = -1;
             message.introDone();
 	    }
-    }
-    //we need to give a little delay between closing the intro and giving back focus to the activity,
-    //to avoid duplicate keystroke
-    Timer {
-        id: delayTimer
-        interval: 100
-        running: false
-        repeat: false
-        onTriggered: {
-            activity.forceActiveFocus();
-            activity.Keys.enabled = true;
-            background.Keys.enabled = true;
-        }
     }
 }

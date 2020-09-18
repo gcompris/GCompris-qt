@@ -99,7 +99,9 @@ Item {
 
     function restoreFocus() {
         tutorialSection.focus = false;
-        delayTimer.start();
+        activity.forceActiveFocus();
+        activity.Keys.enabled = true;
+        background.Keys.enabled = true;
     }
 
     Keys.onPressed: {
@@ -116,10 +118,12 @@ Item {
                 skipButton.clicked();
             }
         }
+        event.accepted = true;
     }
 
     Keys.onEscapePressed: {
         skipButton.clicked();
+        event.accepted = true;
     }
 
     Keys.onReleased: {
@@ -250,19 +254,6 @@ Item {
             top: previousButton.bottom
             topMargin: 10
             horizontalCenter: parent.horizontalCenter
-        }
-    }
-    //we need to give a little delay between closing the intro and giving back focus to the activity,
-    //to avoid duplicate keystroke
-    Timer {
-        id: delayTimer
-        interval: 100
-        running: false
-        repeat: false
-        onTriggered: {
-            activity.forceActiveFocus();
-            activity.Keys.enabled = true;
-            background.Keys.enabled = true;
         }
     }
 }
