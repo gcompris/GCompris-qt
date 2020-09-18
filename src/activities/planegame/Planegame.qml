@@ -147,7 +147,11 @@ ActivityBase {
             onHelpClicked: displayDialog(dialogHelp)
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
-            onHomeClicked: activity.home()
+            onHomeClicked: {
+                if(showTutorial)
+                    showTutorial = false;
+                activity.home();
+            }
         }
 
         Bonus {
