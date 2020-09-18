@@ -322,7 +322,9 @@ ActivityBase {
         // Tutorial section starts
         Image {
             id: tutorialImage
-            source: Activity.url + "background.svg"
+            source: background.source
+            sourceSize.width: Math.max(parent.width, parent.height)
+            fillMode: Image.PreserveAspectCrop
             anchors.fill: parent
             z: 5
             visible: twoPlayer ? false : true
