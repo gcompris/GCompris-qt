@@ -517,9 +517,17 @@ ActivityBase {
                     var pos = state[i].pos
                     var pawnPiece = getPieceAt(pos)
                     if(pos != from && state[i].img === "" &&
-                        pawnPiece.img !== '') {
-                        toPiece = pawnPiece
-                        break
+                       pawnPiece && pawnPiece.img !== '') {
+                           items.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/smudge.wav')
+                           if(pawnPiece.isWhite) {
+                               whiteTakenPieces.takenPiecesModel.append(pawnPiece)
+                               whiteTakenPieces.pushedLast.push(movesCount)
+                           } else {
+                               blackTakenPieces.takenPiecesModel.append(pawnPiece)
+                               blackTakenPieces.pushedLast.push(movesCount)
+                           }
+                           pawnPiece.hide(pawnPiece.pos)
+                           break
                     }
                 }
 
