@@ -147,11 +147,9 @@ Item {
 
                 delegate: AnswerButton {
                     id: optionButton
-                    width: parent ? parent.width : 0
+                    width: optionListView.width
                     height: optionListView.buttonHeight
                     textLabel: optionValue
-                    anchors.right: parent ? parent.right : undefined
-                    anchors.left: parent ? parent.left : undefined
                     blockAllButtonClicks: optionListView.blockAnswerButtons
 
                     isCorrectAnswer: closeness === 100
