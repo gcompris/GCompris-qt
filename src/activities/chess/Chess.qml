@@ -517,7 +517,7 @@ ActivityBase {
                     var pos = state[i].pos
                     var pawnPiece = getPieceAt(pos)
                     if(pos != from && state[i].img === "" &&
-                       pawnPiece && pawnPiece.img !== '') {
+                       pawnPiece && pawnPiece.img[1] === 'p') {
                            items.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/smudge.wav')
                            if(pawnPiece.isWhite) {
                                whiteTakenPieces.takenPiecesModel.append(pawnPiece)
