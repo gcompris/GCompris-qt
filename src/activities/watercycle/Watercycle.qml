@@ -83,7 +83,7 @@ ActivityBase {
             sewageplant.running = false;
             tower.level = 0;
             info.visible = true;
-            info.setText('start');
+            info.setKey('start');
             timer.restart();
             items.restarted = false;
         }
@@ -196,7 +196,7 @@ ActivityBase {
                         boatparked.opacity = 1;
                         shower.stop();
                         if(!sun.hasRun && !items.restarted)
-                            info.setText('start');
+                            info.setKey('start');
                     } else {
                         items.audioEffects.play('qrc:/gcompris/src/activities/watercycle/resource/harbor1.wav');
                     }
@@ -242,7 +242,7 @@ ActivityBase {
             Behavior on anchors.topMargin { PropertyAnimation { easing.type: Easing.InOutQuad; duration: 5000 } }
             function up() {
                 items.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/bleep.wav');
-                info.setText('sun');
+                info.setKey('sun');
                 sun.hasRun = true;
                 sun.anchors.topMargin = parent.height * 0.05;
                 vapor.up();
@@ -296,7 +296,7 @@ ActivityBase {
                 }
                 onRunningChanged: {
                     if(!running && !items.restarted)
-                        info.setText('cloud');
+                        info.setKey('cloud');
                 }
             }
             function up() {
@@ -429,7 +429,7 @@ ActivityBase {
             }
             function up() {
                 items.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/water.wav');
-                info.setText('rain');
+                info.setKey('rain');
                 opacity = 1;
                 rainAnim.start();
             }
@@ -528,7 +528,7 @@ ActivityBase {
                 anchors.fill: parent
                 onClicked: {
                     items.audioEffects.play('qrc:/gcompris/src/activities/watercycle/resource/bubble.wav');
-                    info.setText('tower');
+                    info.setKey('tower');
                     waterplant.running = true;
                 }
             }
@@ -563,7 +563,7 @@ ActivityBase {
                 anchors.fill: parent
                 onClicked: {
                     items.audioEffects.play('qrc:/gcompris/src/activities/watercycle/resource/bubble.wav');
-                    info.setText('shower');
+                    info.setKey('shower');
                     sewageplant.running = true;
                 }
             }
@@ -646,7 +646,7 @@ ActivityBase {
                 tuxoff.visible = false;
 
                 if(!items.cycleDone) {
-                    info.setText('done');
+                    info.setKey('done');
                     bonus.good('smiley');
                     items.cycleDone = true;
                 }
@@ -793,7 +793,7 @@ ActivityBase {
                 }
             }
 
-            function setText(key) {
+            function setKey(key) {
                 if(newKey != key) {
                     newKey = key;
                     textanim.start();
