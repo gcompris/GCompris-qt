@@ -267,17 +267,13 @@ ActivityBase {
 
         Bar {
             id: bar
-            content: BarEnumContent { value: help | home | level | activityConfig | reload }
+            content: BarEnumContent { value: help | home | level | activityConfig }
             onHelpClicked: displayDialog(dialogHelp)
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: activity.home()
             onActivityConfigClicked: {
                 displayDialog(dialogActivityConfig)
-            }
-            onReloadClicked: {
-                multipleStaff.eraseAllNotes()
-                iAmReady.visible = true
             }
         }
 
