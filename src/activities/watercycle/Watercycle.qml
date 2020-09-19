@@ -50,12 +50,42 @@ ActivityBase {
         onStart: {
             barAtStart = ApplicationSettings.isBarHidden;
             ApplicationSettings.isBarHidden = true;
-            shower.hide()
-            river.level = 0
+            shower.hide();
+            river.level = 0;
         }
 
         onStop: {
             ApplicationSettings.isBarHidden = barAtStart;
+        }
+
+        function initLevel() {
+            if(message.visible)
+                return;
+            items.restarted = true;
+            timer.stop();
+            items.cycleDone = false;
+            river.level = 0;
+            sun_area.enabled = true;
+            sun.down();
+            sun.hasRun = false;
+            vaporAnim.stop();
+            vapor.opacity = 0;
+            vapor.y = background.height * 0.28
+            rainAnim.stop();
+            rain.down();
+            cloudanimOn.stop();
+            cloudanimOff.stop();
+            cloud.down();
+            tuxboat.opacity = 0;
+            boatparked.opacity = 1;
+            shower.stop();
+            waterplant.running = false;
+            sewageplant.running = false;
+            tower.level = 0;
+            info.visible = true;
+            info.setText('start');
+            timer.restart();
+            items.restarted = false;
         }
 
         QtObject {
@@ -72,6 +102,7 @@ ActivityBase {
                 "done":  qsTr("Fantastic, you have completed the water cycle. You can continue playing.")
             }
 
+            property bool restarted: false
             property bool cycleDone: false
             property GCSfx audioEffects: activity.audioEffects
         }
@@ -88,9 +119,9 @@ ActivityBase {
             }
             z: 100
             onIntroDone: {
-                anim.running = true
-                info.visible = true
-                sun_area.enabled = true
+                anim.running = true;
+                info.visible = true;
+                sun_area.enabled = true;
             }
             intro: [
                 qsTr("The water cycle (also known as the hydrologic cycle) is the journey water takes"
@@ -160,14 +191,14 @@ ActivityBase {
                 onRunningChanged: {
                     if(!anim.running)
                     {
-                        items.audioEffects.play('qrc:/gcompris/src/activities/watercycle/resource/harbor2.wav')
-                        tuxboat.opacity = 0
-                        boatparked.opacity = 1
-                        shower.stop()
-                        if(!sun.hasRun)
-                            info.setText('start')
+                        items.audioEffects.play('qrc:/gcompris/src/activities/watercycle/resource/harbor2.wav');
+                        tuxboat.opacity = 0;
+                        boatparked.opacity = 1;
+                        shower.stop();
+                        if(!sun.hasRun && !items.restarted)
+                            info.setText('start');
                     } else {
-                        items.audioEffects.play('qrc:/gcompris/src/activities/watercycle/resource/harbor1.wav')
+                        items.audioEffects.play('qrc:/gcompris/src/activities/watercycle/resource/harbor1.wav');
                     }
                 }
             }
@@ -205,19 +236,19 @@ ActivityBase {
                 anchors.fill: sun
                 onClicked: {
                     if(cloud.opacity == 0)
-                        sun.up()
+                        sun.up();
                 }
             }
             Behavior on anchors.topMargin { PropertyAnimation { easing.type: Easing.InOutQuad; duration: 5000 } }
             function up() {
-                items.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/bleep.wav')
-                info.setText('sun')
-                sun.hasRun = true
-                sun.anchors.topMargin = parent.height * 0.05
-                vapor.up()
+                items.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/bleep.wav');
+                info.setText('sun');
+                sun.hasRun = true;
+                sun.anchors.topMargin = parent.height * 0.05;
+                vapor.up();
             }
             function down() {
-                sun.anchors.topMargin = parent.height * 0.28
+                sun.anchors.topMargin = parent.height * 0.28;
             }
         }
 
@@ -264,15 +295,13 @@ ActivityBase {
                     to: background.height * 0.28
                 }
                 onRunningChanged: {
-                    if(!running)
-                        info.setText('cloud')
+                    if(!running && !items.restarted)
+                        info.setText('cloud');
                 }
             }
             function up() {
-                vaporAnim.start()
-                cloud.up()
-            }
-            function down() {
+                vaporAnim.start();
+                cloud.up();
             }
         }
 
@@ -293,9 +322,10 @@ ActivityBase {
             MouseArea {
                 id: cloud_area
                 anchors.fill: cloud
+                enabled: info.newKey === 'cloud'
                 onClicked: {
-                    sun.down()
-                    rain.up()
+                    sun.down();
+                    rain.up();
                 }
             }
             ParallelAnimation {
@@ -354,12 +384,12 @@ ActivityBase {
             }
 
             function up() {
-                cloudanimOn.start()
+                cloudanimOn.start();
             }
             function down() {
-                opacity = 0
-                width = 0
-                x = parent.width * 0.05
+                opacity = 0;
+                width = 0;
+                x = parent.width * 0.05;
             }
         }
 
@@ -392,19 +422,20 @@ ActivityBase {
                 }
                 onRunningChanged: {
                     if(!running) {
-                        rain.down()
-                        cloud.down()
+                        rain.down();
+                        cloud.down();
                     }
                 }
             }
             function up() {
-                items.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/water.wav')
-                info.setText('rain')
-                opacity = 1
-                rainAnim.start()
+                items.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/water.wav');
+                info.setText('rain');
+                opacity = 1;
+                rainAnim.start();
             }
             function down() {
-                opacity = 0
+                scale = 0;
+                opacity = 0;
             }
         }
 
@@ -496,9 +527,9 @@ ActivityBase {
                 enabled: river.level > 0.2
                 anchors.fill: parent
                 onClicked: {
-                    items.audioEffects.play('qrc:/gcompris/src/activities/watercycle/resource/bubble.wav')
-                    info.setText('tower')
-                    waterplant.running = true
+                    items.audioEffects.play('qrc:/gcompris/src/activities/watercycle/resource/bubble.wav');
+                    info.setText('tower');
+                    waterplant.running = true;
                 }
             }
         }
@@ -531,9 +562,9 @@ ActivityBase {
                 enabled: river.opacity == 1
                 anchors.fill: parent
                 onClicked: {
-                    items.audioEffects.play('qrc:/gcompris/src/activities/watercycle/resource/bubble.wav')
-                    info.setText('shower')
-                    sewageplant.running = true
+                    items.audioEffects.play('qrc:/gcompris/src/activities/watercycle/resource/bubble.wav');
+                    info.setText('shower');
+                    sewageplant.running = true;
                 }
             }
         }
@@ -600,43 +631,43 @@ ActivityBase {
                     if(!shower.on &&
                             river.opacity == 1 && wastepipe.opacity > 0.8 &&
                             fillpipe.opacity > 0.8 && tower.level > 0.5)
-                        shower.start()
+                        shower.start();
                     else
-                        shower.stop()
+                        shower.stop();
                 }
             }
 
             function start() {
-                shower.on = true
-                shower.visible = true
-                showerhot.visible = true
-                tuxbath.visible = true
-                showercold.visible = false
-                tuxoff.visible = false
+                shower.on = true;
+                shower.visible = true;
+                showerhot.visible = true;
+                tuxbath.visible = true;
+                showercold.visible = false;
+                tuxoff.visible = false;
 
                 if(!items.cycleDone) {
-                    info.setText('done')
-                    bonus.good('smiley')
-                    items.cycleDone = true
+                    info.setText('done');
+                    bonus.good('smiley');
+                    items.cycleDone = true;
                 }
-                items.audioEffects.play('qrc:/gcompris/src/activities/watercycle/resource/apert.wav')
+                items.audioEffects.play('qrc:/gcompris/src/activities/watercycle/resource/apert.wav');
             }
 
             function stop() {
-                shower.on = false
-                shower.visible = true
-                showerhot.visible = false
-                tuxbath.visible = false
-                showercold.visible = true
-                tuxoff.visible = true
+                shower.on = false;
+                shower.visible = true;
+                showerhot.visible = false;
+                tuxbath.visible = false;
+                showercold.visible = true;
+                tuxoff.visible = true;
             }
             function hide() {
-                shower.visible = false
-                shower.on = false
-                tuxoff.visible = false
-                showercold.visible = false
-                showerhot.visible = false
-                tuxbath.visible = false
+                shower.visible = false;
+                shower.on = false;
+                tuxoff.visible = false;
+                showercold.visible = false;
+                showerhot.visible = false;
+                tuxbath.visible = false;
             }
         }
 
@@ -704,17 +735,17 @@ ActivityBase {
             repeat: true
             onTriggered: {
                 if(rain.opacity > 0.9 && river.level < 1) {
-                    river.level += 0.01
+                    river.level += 0.01;
                 }
                 if(river.level > 0 && fillpipe.opacity > 0.9 && tower.level < 1 && !shower.on) {
-                    river.level -= 0.02
-                    tower.level += 0.05
+                    river.level -= 0.02;
+                    tower.level += 0.05;
                 }
                 if(tower.level > 0 && shower.on) {
-                    tower.level -= 0.02
+                    tower.level -= 0.02;
                 }
                 if(tower.level <= 0 && boatparked.opacity) {
-                    shower.stop()
+                    shower.stop();
                 }
             }
         }
@@ -736,7 +767,7 @@ ActivityBase {
             width: parent.width
             wrapMode: Text.WordWrap
             z: 100
-            onTextChanged: textanim.start()
+            onTextChanged: textanim.start();
             property string newKey
 
             SequentialAnimation {
@@ -764,8 +795,8 @@ ActivityBase {
 
             function setText(key) {
                 if(newKey != key) {
-                    newKey = key
-                    textanim.start()
+                    newKey = key;
+                    textanim.start();
                 }
             }
         }
@@ -782,20 +813,21 @@ ActivityBase {
 
         DialogHelp {
             id: dialogHelp
-            onClose: home()
+            onClose: home();
         }
 
         Bar {
             id: bar
-            content: BarEnumContent { value: help | home }
+            content: BarEnumContent { value: help | home | reload}
             onHelpClicked: {
-                displayDialog(dialogHelp)
+                displayDialog(dialogHelp);
             }
             onHomeClicked: {
                 if(message.visible)
                     message.visible = false;
                 home();
             }
+            onReloadClicked: initLevel();
         }
 
         Bonus {
