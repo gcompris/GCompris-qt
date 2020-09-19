@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=GCompris
+Name[br]=GCompris
 Name[ca]=GCompris
 Name[ca@valencia]=GCompris
 Name[cs]=GCompris
@@ -41,6 +42,7 @@ GenericName[fr]=Jeu éducatif pour les enfants
 GenericName[it]=Gioco didattico per bambini
 GenericName[nl]=Educatief spel voor kinderen
 GenericName[pt]=Jogo Educativo para Crianças
+GenericName[pt_BR]=Jogo educacional para crianças
 GenericName[sv]=Pedagogiskt spel för barn
 GenericName[uk]=Освітня гра для дітей
 GenericName[x-test]=xxEducational Game for Childrenxx
