@@ -946,10 +946,11 @@ ActivityBase {
 
         Bar {
             id: bar
-            content: BarEnumContent { value: help | home | level }
+            content: BarEnumContent { value: help | home | reload | level }
             onHelpClicked: {
                 displayDialog(dialogHelp)
             }
+            onReloadClicked: Activity.initLevel()
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: {
