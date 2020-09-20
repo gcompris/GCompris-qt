@@ -38,8 +38,8 @@ ActivityBase {
     }
     onStop: inForeground = false;
 
-    Keys.onPressed: Activity.processKeyPress(event)
-    Keys.onReleased: Activity.processKeyRelease(event)
+    Keys.onPressed: Activity.processKeyPress(event);
+    Keys.onReleased: Activity.processKeyRelease(event);
 
     onWidthChanged: if (inForeground)
                         Activity.initLevel();
@@ -78,7 +78,7 @@ ActivityBase {
                 ldx = -items.landing.width/dZoom;
             }
             items.rocket.y = Activity.pxAltitudeToY(altPx) + rdy;
-            items.rocket.x += rdx
+            items.rocket.x += rdx;
             items.landing.anchors.leftMargin += ldx;
             items.zoom = newZoom;
             if (dZoom < 1)
@@ -88,9 +88,9 @@ ActivityBase {
         }
 
         Component.onCompleted: {
-            dialogActivityConfig.initialize()
-            activity.start.connect(start)
-            activity.stop.connect(stop)
+            dialogActivityConfig.initialize();
+            activity.start.connect(start);
+            activity.stop.connect(stop);
         }
 
         // Add here the QML items you need to access in javascript
@@ -147,13 +147,13 @@ ActivityBase {
                 items.velocityText = Activity.fixedSizeString(items.velocity, 10, 5, ".0");
 
                 if (rocket.body.linearVelocity.y > Activity.maxLandingVelocity)
-                    landing.overlayColor = "-r"  // redish
+                    landing.overlayColor = "-r";  // redish
                 else if (explosion.visible == true)
-                    landing.overlayColor = "-r"
+                    landing.overlayColor = "-r";
                 else if (rocket.body.linearVelocity.y > Activity.maxLandingVelocity - 2)
-                    landing.overlayColor = "-y"  // yellowish
+                    landing.overlayColor = "-y";  // yellowish
                 else
-                    landing.overlayColor = "-g"  // greenish
+                    landing.overlayColor = "-g";  // greenish
                 items.altitude = Math.max(0, Math.round(Activity.getAltitudeReal()));
                 items.altitudeText = Activity.minimum3Chars(items.altitude);
 
@@ -235,7 +235,7 @@ ActivityBase {
             // map acceleration to box2d forces applying appropriate factors:
             function applyForces()
             {
-                var totForce = (accel / 0.5 * 5)
+                var totForce = (accel / 0.5 * 5);
                 var v;
 
                 if (items.mode === "simple")
@@ -565,17 +565,19 @@ ActivityBase {
 
             anchors.right: background.right
             anchors.rightMargin: 10 * ApplicationInfo.ratio
-            anchors.bottom: upDownControl.bottom
-            anchors.bottomMargin: -(planetText.height + gravityText.height + 20 * ApplicationInfo.ratio)
+            anchors.bottom: bar.top
+            anchors.bottomMargin: 20 * ApplicationInfo.ratio
+            anchors.top: background.top
             width: 200
             height: background.height
             z: 2
+            property int itemsMargin: 6 * ApplicationInfo.ratio
 
             GCText {
                 id: fuelText
                 anchors.right: parent.right
                 anchors.bottom: altitudeText.top
-                anchors.bottomMargin: 10
+                anchors.bottomMargin: osdWrapper.itemsMargin
                 color: "white"
                 fontSize: tinySize
                 horizontalAlignment: Text.AlignRight
@@ -585,7 +587,7 @@ ActivityBase {
                 id: altitudeText
                 anchors.right: parent.right
                 anchors.bottom: velocityText.top
-                anchors.bottomMargin: 10
+                anchors.bottomMargin: osdWrapper.itemsMargin
                 color: "white"
                 fontSize: tinySize
                 horizontalAlignment: Text.AlignRight
@@ -595,7 +597,7 @@ ActivityBase {
                 id: velocityText
                 anchors.right: parent.right
                 anchors.bottom: accelText.top
-                anchors.bottomMargin: 10
+                anchors.bottomMargin: osdWrapper.itemsMargin
                 color: "white"
                 fontSize: tinySize
                 horizontalAlignment: Text.AlignRight
@@ -605,7 +607,7 @@ ActivityBase {
             GCText {
                 id: accelText
                 anchors.bottom: accelerometer.top
-                anchors.bottomMargin: 10 * ApplicationInfo.ratio
+                anchors.bottomMargin: osdWrapper.itemsMargin
                 anchors.right: parent.right
                 fontSize: tinySize
                 color: "white"
@@ -617,36 +619,34 @@ ActivityBase {
                 id: accelerometer
                 current: rocket.decomposeVector(rocket.accel, rocket.rotation).y * 10 - items.gravity
                 anchors.right: parent.right
-                anchors.bottom: gravityText.top
-                anchors.bottomMargin: 10 * ApplicationInfo.ratio
+                anchors.bottom: planetText.top
+                anchors.bottomMargin: osdWrapper.itemsMargin
                 width: 15 + 3 * items.scale * ApplicationInfo.ratio
-                height: background.height / 2.5
+                height: upDownControl.height
                 z: 2 // on top of rocket and ground
                 opacity: 1
                 onCurrentChanged: {
                     items.accelerometerText = Activity.fixedSizeString(accelerometer.current, 100, 6, ".00");
                 }
             }
-
+            GCText {
+                id: planetText
+                anchors.right: parent.right
+                anchors.bottom: gravityText.top
+                anchors.bottomMargin: osdWrapper.itemsMargin
+                color: "white"
+                fontSize: tinySize
+                horizontalAlignment: Text.AlignRight
+                text: (items.levels && items.levels[bar.level-1]) ? items.levels[bar.level-1].planet : ""
+            }
             GCText {
                 id: gravityText
-                anchors.bottom: planetText.top
-                anchors.bottomMargin: 10 * ApplicationInfo.ratio
+                anchors.bottom: parent.bottom
                 anchors.right: parent.right
                 horizontalAlignment: Text.AlignRight
                 fontSize: tinySize
                 color: "white"
                 text: qsTr("Gravity: %1").arg(Math.round(items.gravity * 100) / 100);
-            }
-
-            GCText {
-                id: planetText
-                anchors.right: parent.right
-                anchors.bottom: parent.bottom
-                color: "white"
-                fontSize: tinySize
-                horizontalAlignment: Text.AlignRight
-                text: (items.levels && items.levels[bar.level-1]) ? items.levels[bar.level-1].planet : ""
             }
         }
 
@@ -655,7 +655,7 @@ ActivityBase {
             anchors.right: background.right
             anchors.rightMargin: accelerometer.width
             anchors.bottom: bar.top
-            anchors.bottomMargin: 20 * ApplicationInfo.ratio
+            anchors.bottomMargin: 32 * ApplicationInfo.ratio + gravityText.height + planetText.height
             width: upButton.width + 20 * ApplicationInfo.ratio
             height: upButton.height + downButton.height + 20 * ApplicationInfo.ratio
             visible: items.onScreenControls
@@ -683,8 +683,7 @@ ActivityBase {
             id: leftRightControl
             anchors.left: parent.left
             anchors.leftMargin: 10 * ApplicationInfo.ratio
-            anchors.bottom: bar.top
-            anchors.bottomMargin: 10 * ApplicationInfo.ratio
+            anchors.bottom: upDownControl.bottom
             width: leftButton.width + rightButton.width + 20 * ApplicationInfo.ratio
             height: leftButton.height + 10 * ApplicationInfo.ratio
             visible: items.onScreenControls
@@ -719,7 +718,7 @@ ActivityBase {
 
         DialogHelp {
             id: dialogHelp
-            onClose: home()
+            onClose: home();
         }
 
         DialogChooseLevel {
@@ -727,36 +726,37 @@ ActivityBase {
             currentActivity: activity.activityInfo
 
             onSaveData: {
-                levelFolder = dialogActivityConfig.chosenLevels
-                currentActivity.currentLevels = dialogActivityConfig.chosenLevels
-                ApplicationSettings.setCurrentLevels(currentActivity.name, dialogActivityConfig.chosenLevels)
+                levelFolder = dialogActivityConfig.chosenLevels;
+                currentActivity.currentLevels = dialogActivityConfig.chosenLevels;
+                ApplicationSettings.setCurrentLevels(currentActivity.name, dialogActivityConfig.chosenLevels);
             }
             onClose: {
-                home()
+                home();
             }
             onStartActivity: {
-                background.stop()
-                background.start()
+                background.stop();
+                background.start();
             }
         }
 
         Bar {
             id: bar
             z: 21
-            content: BarEnumContent { value: help | home | level | activityConfig }
+            content: BarEnumContent { value: help | home | level | reload | activityConfig }
             onHelpClicked: {
                 Activity.initLevel();
                 displayDialog(dialogHelp);
             }
-            onPreviousLevelClicked: Activity.previousLevel()
-            onNextLevelClicked: Activity.nextLevel()
+            onPreviousLevelClicked: Activity.previousLevel();
+            onNextLevelClicked: Activity.nextLevel();
             onHomeClicked: {
                 if(intro.visible)
                     intro.visible = false;
                 activity.home();
             }
+            onReloadClicked: Activity.initLevel();
             onActivityConfigClicked: {
-                displayDialog(dialogActivityConfig)
+                displayDialog(dialogActivityConfig);
             }
         }
 
@@ -764,7 +764,7 @@ ActivityBase {
             id: bonus
             Component.onCompleted: {
                 loose.connect(Activity.initLevel);
-                win.connect(Activity.nextLevel)
+                win.connect(Activity.nextLevel);
             }
         }
 
