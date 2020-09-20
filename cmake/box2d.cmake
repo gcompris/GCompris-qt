@@ -84,7 +84,7 @@ if(NOT ${QML_BOX2D_MODULE} STREQUAL "disabled")
       CONFIGURE_COMMAND ${_qmake_program} ${_qmake_options} ${_box2d_source_dir}/box2d.pro
       BUILD_COMMAND ${QMAKE_MAKE_PROGRAM}
       INSTALL_DIR ${_box2d_install_dir}
-      INSTALL_COMMAND cp ${_box2d_library_dir}${_box2d_library_file} ${_box2d_source_dir}/qmldir ${_box2d_install_dir}
+      INSTALL_COMMAND ${CMAKE_COMMAND} -E copy ${_box2d_library_dir}${_box2d_library_file} ${_box2d_source_dir}/qmldir ${_box2d_install_dir}
       )
 
     add_library(qml-box2d SHARED IMPORTED)
