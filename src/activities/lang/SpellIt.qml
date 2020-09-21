@@ -76,6 +76,7 @@ Item {
         source: "qrc:/gcompris/src/activities/lang/resource/imageid-bg.svg"
         fillMode: Image.PreserveAspectCrop
         sourceSize.width: Math.max(parent.width, parent.height)
+        width: parent.width
         height: parent.height
 
         property bool horizontalLayout: background.width >= background.height
