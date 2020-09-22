@@ -76,6 +76,7 @@ ActivityBase {
             radius : 30
 
             anchors.horizontalCenter: parent.horizontalCenter
+            //anchors.horizontalCenterOffset: 100 * parent.width/1080
             anchors.verticalCenter: parent.verticalCenter
 
             /*Display the number in letters*/
@@ -83,8 +84,10 @@ ActivityBase {
                 id: numberInLetters
 
                 color: "white"
+                style: Text.Outline
+                styleColor: "black"
 
-                font.pointSize: 36 * background.height / 1080
+                font.pointSize: 42 * background.height / 1080
 
                 anchors.horizontalCenter: parent.horizontalCenter
                 anchors.top: parent.top
@@ -95,7 +98,10 @@ ActivityBase {
             Text {
                 id: numericNumber
 
-                color: "white"
+                color: numberInLetters.color
+                style: numberInLetters.style
+                styleColor: numberInLetters.styleColor
+
                 font.pointSize: numberInLetters.font.pointSize
                 font.bold: true
 
@@ -120,12 +126,26 @@ ActivityBase {
                     id: tuxArea
 
                     anchors.fill: parent
+                    hoverEnabled: true
+
+                    onEntered: {
+                        parent.rotation = -3
+                        parent.height = workspace.height * 0.41
+                    }
+
+                    onExited: {
+                        parent.rotation = 0
+                        parent.height = workspace.height * 0.40
+                    }
 
                     onPressed: {
                         parent.source = Activity.url + "tux_clicked.svg"
+                        activity.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/smudge.wav")
                         Activity.clickCount++
                     }
                     onReleased: { parent.source = Activity.url + "tux.svg" }
+
+
                 }
             }
 
@@ -166,6 +186,7 @@ ActivityBase {
                     onExited: { parent.color = "#00A31B" }
                     onPressed: {
                         buttonTick.height = parent.height * 0.7
+                        activity.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/bleep.wav")
                         Activity.checkAnswer()
                     }
                     onReleased: { buttonTick.height = parent.height * 0.6 }

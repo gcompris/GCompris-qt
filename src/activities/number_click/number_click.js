@@ -47,7 +47,7 @@ function stop() {
 function initLevel() {
     items.bar.level = currentLevel + 1
 
-    /*Avoiding the recurrence between two levels*/
+    /*Avoiding recurrence between two levels*/
     while (oldRandomNumber === randomNumber) {
         randomNumber = Math.ceil(Math.random() * 10)
     }
@@ -76,12 +76,9 @@ function numericToLetters(number) {
 
     var result
 
-    /*case 0 must not be an option because we ceil the randomNumber
-    for example : 0.1 become 1*/
+    /*case 0 is not an option because we ceil the randomNumber
+    for example : 0.1 gives 1*/
     switch(number) {    
-        case 0:
-            result = qsTr("ZERO")
-            break
         case 1:
             result = qsTr("ONE")
             break
