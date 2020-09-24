@@ -120,6 +120,23 @@ Image {
     sourceSize.width: parent.width * 0.5
 
     /**
+     * type:bool
+     * used in animation onStopped to check if we need to trigger win-loose signals
+     */
+    property bool bonusStopped: false
+
+    /**
+     *  Use this when stopping manually the bonus, like when changing level manually
+     */
+    function haltBonus() {
+        bonusStopped = true;
+        timer.stop();
+        animation.stop();
+        bonus.opacity = 0;
+        bonusStopped = false;
+    }
+
+    /**
      * Triggers win feedback.
      *
      * Tries to play back a voice resource for winning, if not found fall back
@@ -131,7 +148,7 @@ Image {
     function good(name) {
         source = url + "bonus/" + name + "_good.svg"
         isWin = true
-        timer.start()
+        timer.restart()
     }
 
     /**
@@ -146,7 +163,7 @@ Image {
     function bad(name, audioIndex) {
         source = url + "bonus/" + name + "_bad.svg"
         isWin = false;
-        timer.start()
+        timer.restart()
         if(audioIndex) {
             nextAudioIndex = audioIndex
         }
@@ -204,8 +221,9 @@ Image {
             easing.type: Easing.InOutQuad
         }
         onStopped: {
-            bonus.stop()
-            isWin ? win() : loose()
+            bonus.stop();
+            if(!bonusStopped)
+                isWin ? win() : loose();
         }
     }
 

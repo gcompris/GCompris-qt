@@ -423,7 +423,11 @@ Item {
         BarButton {
             source: "qrc:/gcompris/src/core/resource/bar_previous.svg";
             sourceSize.width: halfButtonScaled
-            onClicked: bar.previousLevelClicked()
+            onClicked: {
+                if(bonus)
+                    bonus.haltBonus();
+                bar.previousLevelClicked();
+            }
         }
     }
     Component {
@@ -449,7 +453,11 @@ Item {
         BarButton {
             source: "qrc:/gcompris/src/core/resource/bar_next.svg";
             sourceSize.width: halfButtonScaled
-            onClicked: bar.nextLevelClicked()
+            onClicked: {
+                if(bonus)
+                    bonus.haltBonus();
+                bar.nextLevelClicked();
+            }
         }
     }
     Component {
