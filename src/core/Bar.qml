@@ -97,7 +97,7 @@ Item {
 
     readonly property int fullButton: 66
     readonly property int halfButton: 30
-    
+
     readonly property int fullButtonScaled: fullButton * barZoom
     readonly property int halfButtonScaled: halfButton * barZoom
 
@@ -505,7 +505,11 @@ Item {
         BarButton {
             source: "qrc:/gcompris/src/core/resource/bar_home.svg";
             sourceSize.width: fullButtonScaled
-            onClicked: bar.homeClicked()
+            onClicked: {
+                if(bonus)
+                    bonus.haltBonus();
+                bar.homeClicked();
+            }
         }
     }
     Component {
