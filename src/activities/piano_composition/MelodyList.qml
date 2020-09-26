@@ -24,7 +24,6 @@
 
 import QtQuick 2.6
 import GCompris 1.0
-import QtQuick.Controls 1.5
 
 import "../../core"
 import "piano_composition.js" as Activity
@@ -115,7 +114,7 @@ Rectangle {
                                 width: dialogBackground.horizontalLayout ? dialogBackground.width / 5 : dialogBackground.width / 4
                                 height: dialogBackground.height / 5
 
-                                Button {
+                                GCButton {
                                     text: title
                                     onClicked: {
                                         dialogBackground.selectedMelodyIndex = index
@@ -127,9 +126,7 @@ Rectangle {
                                     }
                                     width: parent.width
                                     height: parent.height * 0.8
-                                    style: GCButtonStyle {
-                                        theme: "dark"
-                                    }
+                                    theme: "dark"
 
                                     Image {
                                         source: "qrc:/gcompris/src/core/resource/apply.svg"

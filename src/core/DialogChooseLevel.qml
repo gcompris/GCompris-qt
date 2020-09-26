@@ -19,7 +19,6 @@
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
 import QtQuick 2.6
-import QtQuick.Controls 1.5
 import GCompris 1.0
 
 /**
@@ -212,33 +211,28 @@ Rectangle {
             height: dialogChooseLevel.height / 12
             width: titleRectangle.width
             spacing: titleRectangle.width * 0.1
-            Button {
+            GCButton {
                 id: datasetVisibleButton
                 text: qsTr("Dataset")
                 enabled: hasDataset
                 height: parent.height
                 width: titleRectangle.width * 0.45
                 opacity: enabled ? 1 : 0
-                property bool selected: true
-                style: GCButtonStyle {
-                    theme: "settingsButton"
-                    selected: datasetVisibleButton.selected
-                }
+                theme: "settingsButton"
+                selected: datasetVisibleButton.selected
                 onClicked: { selected = true; }
                 // reset the view to original position when changing tab
                 onSelectedChanged: { flick.contentY = 0; }
             }
-            Button {
+            GCButton {
                 id: optionsVisibleButton
                 text: qsTr("Options")
                 enabled: hasConfig
                 height: parent.height
                 width: titleRectangle.width * 0.45
                 opacity: enabled ? 1 : 0
-                style: GCButtonStyle {
-                    theme: "settingsButton"
-                    selected: !datasetVisibleButton.selected
-                }
+                theme: "settingsButton"
+                selected: !datasetVisibleButton.selected
                 onClicked: { datasetVisibleButton.selected = false; } //showOptions()
             }
         }
@@ -361,26 +355,20 @@ Rectangle {
             height: dialogChooseLevel.height / 12
             width: titleRectangle.width
             spacing: titleRectangle.width * 0.05
-            Button {
+            GCButton {
                 id: cancelButton
                 text: qsTr("Cancel")
                 height: parent.height
                 width: titleRectangle.width * 0.25
-                property bool selected: true
-                style: GCButtonStyle {
-                    theme: "settingsButton"
-                }
+                theme: "settingsButton"
                 onClicked: close();
             }
-            Button {
+            GCButton {
                 id: saveButton
                 text: qsTr("Save")
                 height: parent.height
                 width: titleRectangle.width * 0.25
-                property bool selected: true
-                style: GCButtonStyle {
-                    theme: "settingsButton"
-                }
+                theme: "settingsButton"
                 onClicked: {
                     saveData();
                     if (inMenu === false) {
@@ -389,15 +377,13 @@ Rectangle {
                     close();
                 }
             }
-            Button {
+            GCButton {
                 id: saveAndStartButton
                 text: qsTr("Save and start")
                 height: parent.height
                 width: titleRectangle.width * 0.4
                 visible: inMenu === true
-                style: GCButtonStyle {
-                    theme: "settingsButton"
-                }
+                theme: "settingsButton"
                 onClicked: {
                     saveData();
                     startActivity();

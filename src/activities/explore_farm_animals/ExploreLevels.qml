@@ -117,7 +117,7 @@ ActivityBase {
             }
         }
 
-        Loader{
+        Loader {
             id: dataset
             asynchronous: false
             onStatusChanged: {

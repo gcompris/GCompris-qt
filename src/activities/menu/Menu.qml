@@ -23,6 +23,8 @@ import "../../core"
 import GCompris 1.0
 import QtGraphicalEffects 1.0
 import "qrc:/gcompris/src/core/core.js" as Core
+
+// For TextField
 import QtQuick.Controls 1.5
 import QtQuick.Controls.Styles 1.4
 
@@ -398,14 +400,12 @@ ActivityBase {
             cellWidth: currentTagCategories ? categoriesGrid.width / currentTagCategories.length : 0
             cellHeight: height
 
-            delegate: Button {
+            delegate: GCButton {
                 id: button
-                style: GCButtonStyle {
-                    selected: currentCategory === button.category
-                    theme: "categories"
-                    textSize: "regular"
-                    haveIconRight: horizontal
-                }
+                selected: currentCategory === button.category
+                theme: "categories"
+                textSize: "regular"
+                haveIconRight: horizontal
                 width: categoriesGrid.width / (currentTagCategories.length + 1)
                 height: categoriesGrid.cellHeight
                 text: modelData[category]

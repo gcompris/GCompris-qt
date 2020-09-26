@@ -20,7 +20,6 @@
  */
 import QtQuick 2.6
 import GCompris 1.0
-import QtQuick.Controls 1.5
 
 import "../../core"
 
@@ -46,9 +45,8 @@ Item {
             label: qsTr("Select your level set")
         }
 
-        Button {
+        GCButton {
             id: editorButton
-            style:  GCButtonStyle {}
             height: levelsBox.height
             text: enabled ? qsTr("Start the editor") : qsTr("Start the activity to access the editor")
             visible: levelsBox.currentIndex == 1
@@ -56,9 +54,8 @@ Item {
             onClicked: startEditor()
         }
 
-        Button {
+        GCButton {
             id: loadButton
-            style:  GCButtonStyle {}
             height: levelsBox.height
             text: enabled ? qsTr("Load saved levels") : qsTr("Start the activity to load your levels")
             visible: levelsBox.currentIndex == 1

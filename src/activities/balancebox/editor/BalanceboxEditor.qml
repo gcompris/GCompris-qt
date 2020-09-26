@@ -144,27 +144,24 @@ Item {
             height: parent.height
 //            anchors.topMargin: 20
 
-            Button {
+            GCButton {
                 id: loadButton
                 width: parent.width
                 height: props.cellSize
-                style: GCButtonStyle {}
                 text: qsTr("Load")
                 onClicked: creationHandler.loadWindow()
             }
-            Button {
+            GCButton {
                 id: saveButton
                 width: parent.width
                 height: props.cellSize
-                style: GCButtonStyle {}
                 text: qsTr("Save")
                 onClicked: creationHandler.saveWindow(Activity.saveModel())
             }
-            Button {
+            GCButton {
                 id: testButton
                 width: parent.width
                 height: props.cellSize
-                style: GCButtonStyle {}
                 text: qsTr("Test")
                 onClicked: editor.startTesting();
             }

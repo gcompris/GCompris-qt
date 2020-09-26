@@ -20,7 +20,6 @@
  */
 
 import QtQuick 2.6
-import QtQuick.Controls 1.5
 import GCompris 1.0
 
 import "../../core"
@@ -105,7 +104,7 @@ Rectangle {
                                 width: (musicGrid.width - margin30)  * 0.33
                                 height: title.height * 2
 
-                                Button {
+                                GCButton {
                                     text: modelData.slice(0, modelData.lastIndexOf('.'))
                                     onClicked: {
                                         if(dialogActivityConfig.configItem.filteredBackgroundMusic.indexOf(modelData) == -1) {
@@ -138,9 +137,7 @@ Rectangle {
                                     }
                                     width: parent.width
                                     height: parent.height * 0.8
-                                    style: GCButtonStyle {
-                                        theme: "dark"
-                                    }
+                                    theme: "dark"
 
                                     Image {
                                         id: selectedIcon

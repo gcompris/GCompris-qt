@@ -19,7 +19,6 @@
  *   along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 import QtQuick 2.6
-import QtQuick.Controls 1.5
 import GCompris 1.0
 
 /**
@@ -131,7 +130,7 @@ Rectangle {
                     flickableDirection: Flickable.VerticalFlick
                     clip: true
 
-                    Button {
+                    GCButton {
                         id: button0
                         visible: text != ""
                         onClicked: { dialogBackground.button0Hit() }
@@ -142,9 +141,7 @@ Rectangle {
                             top: parent.top
                             topMargin: 8
                         }
-                        style: GCButtonStyle {
-                            theme: "highContrast"
-                        }
+                        theme: "highContrast"
                     }
 
                     Image {
