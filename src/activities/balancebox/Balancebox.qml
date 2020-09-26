@@ -24,7 +24,6 @@ import QtSensors 5.0
 import QtGraphicalEffects 1.0
 import GCompris 1.0
 import Box2D 2.0
-import QtQuick.Controls 1.5
 
 
 import "../../core"

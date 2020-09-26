@@ -19,7 +19,6 @@
  *   along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 import QtQuick 2.6
-import QtQuick.Controls 1.5
 import GCompris 1.0
 
 /**
@@ -203,7 +202,7 @@ Item {
             scale: 1.1
         }
 
-        Button {
+        GCButton {
             id: button1
             width: parent.width
             height: (visible ? 60 : 30) * ApplicationInfo.ratio
@@ -212,9 +211,7 @@ Item {
                 top: instructionTxtBg.bottom
                 topMargin: 10
             }
-            style: GCButtonStyle {
-                theme: "highContrast"
-            }
+            theme: "highContrast"
             visible: text != ""
             property bool selected: false;
             onClicked: {
@@ -223,7 +220,7 @@ Item {
             }
         }
 
-        Button {
+        GCButton {
             id: button2
             width: parent.width
             height: (visible ? 60 : 30) * ApplicationInfo.ratio
@@ -232,9 +229,7 @@ Item {
                 top: button1.bottom
                 topMargin: 10
             }
-            style: GCButtonStyle {
-                theme: "highContrast"
-            }
+            theme: "highContrast"
             visible: text != ""
             property bool selected: false;
             onClicked: {

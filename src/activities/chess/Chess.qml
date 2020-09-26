@@ -21,8 +21,6 @@
  *   along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 import QtQuick 2.6
-import QtQuick.Controls 1.5
-import QtQuick.Controls.Styles 1.4
 import GCompris 1.0
 
 import "../../core"
@@ -119,12 +117,12 @@ ActivityBase {
             verticalItemAlignment: Grid.AlignVCenter
             property int buttonSize: undo.width
 
-            Button {
+            GCButton {
                 id: undo
                 height: 30 * ApplicationInfo.ratio
                 width: height
                 text: "";
-                style: GCButtonStyle { theme: "noStyle" }
+                theme: "noStyle"
                 onClicked: {
                     Activity.undo()
                     if(whiteTakenPieces.pushedLast[whiteTakenPieces.pushedLast.length-1] == movesCount) {
@@ -157,12 +155,12 @@ ActivityBase {
                 }
             }
 
-            Button {
+            GCButton {
                 id: redo
                 height: undo.height
                 width: undo.height
                 text: "";
-                style: GCButtonStyle { theme: "noStyle" }
+                theme: "noStyle"
                 onClicked: {
                     if (!twoPlayers) {
                         acceptClick = false;
@@ -188,12 +186,12 @@ ActivityBase {
                 }
             }
 
-            Button {
+            GCButton {
                 id: drawerButton
                 height: 30 * ApplicationInfo.ratio
                 width: height
                 text: "";
-                style: GCButtonStyle { theme: "noStyle" }
+                theme: "noStyle"
 
                 onClicked: {
                     whiteTakenPieces.open = !whiteTakenPieces.open
@@ -217,11 +215,11 @@ ActivityBase {
                 }
             }
 
-            Button {
+            GCButton {
                 height: undo.height
                 width: undo.height
                 text: "";
-                style: GCButtonStyle { theme: "noStyle" }
+                theme: "noStyle"
                 enabled: items.twoPlayer
                 opacity: enabled
                 Image {

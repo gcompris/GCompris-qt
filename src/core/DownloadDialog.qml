@@ -251,7 +251,7 @@ Item {
             scale: 1.1
         }
 
-        Button {
+        GCButton {
             id: backgroundButton
             width: parent.width
             height: 60 * ApplicationInfo.ratio
@@ -262,16 +262,14 @@ Item {
             }
             //: Run this task in background
             text: qsTr("Background")
-            style: GCButtonStyle {
-                fixedFontSize: downloadDialog.fixedFontSize
-                theme: "highContrast"
-            }
+            fixedFontSize: downloadDialog.fixedFontSize
+            theme: "highContrast"
             visible: true
             property bool selected: false;
             onClicked: downloadDialog.shutdown();
         }
 
-        Button {
+        GCButton {
             id: abortButton
             width: parent.width
             height: 60 * ApplicationInfo.ratio
@@ -281,10 +279,9 @@ Item {
                 topMargin: 10
             }
             text: qsTr("Abort")
-            style: GCButtonStyle {
-                fixedFontSize: downloadDialog.fixedFontSize
-                theme: "highContrast"
-            }
+            fixedFontSize: downloadDialog.fixedFontSize
+            theme: "highContrast"
+
             visible: true
             property bool selected: false;
             onClicked: {

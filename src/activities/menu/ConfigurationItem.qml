@@ -20,8 +20,6 @@
  */
 
 import QtQuick 2.6
-import QtQuick.Controls 1.5
-import QtQuick.Controls.Styles 1.4
 import GCompris 1.0
 import QtMultimedia 5.0
 
@@ -93,13 +91,12 @@ Item {
                 "qrc:/gcompris/src/core/resource/cancel.svg"
             }
 
-            Button {
+            GCButton {
                 id: voicesButton
                 height: 30 * ApplicationInfo.ratio
                 visible: ApplicationInfo.isDownloadAllowed
                 text: voicesRow.haveLocalResource ? qsTr("Check for updates") :
                 qsTr("Download")
-                style: GCButtonStyle {}
 
                 onClicked: {
                     if (DownloadManager.downloadResource(
@@ -147,12 +144,11 @@ Item {
             scrollEnabled: false
         }
 
-        Button {
+        GCButton {
             id: backgroundMusicButton
             height: 30 * ApplicationInfo.ratio
             visible: ApplicationInfo.isDownloadAllowed
             text: qsTr("Download background music")
-            style: GCButtonStyle {}
 
             onClicked: {
                 if(DownloadManager.downloadResource(DownloadManager.getBackgroundMusicResources()))
@@ -189,7 +185,7 @@ Item {
             }
         }
 
-        Button {
+        GCButton {
             id: backgroundMusicName
             height: 30 * ApplicationInfo.ratio
             width: background.width * 0.8
@@ -203,7 +199,6 @@ Item {
                     return qsTr("Introduction music")
                 return ""
             }
-            style: GCButtonStyle {}
             onClicked: {
                 dialogConfig.visible = false
                 backgroundMusicList.visible = true
@@ -256,12 +251,11 @@ Item {
             }
         }
 
-        Button {
+        GCButton {
             id: wordsetButton
             height: 30 * ApplicationInfo.ratio
             visible: ApplicationInfo.isDownloadAllowed
             text: qsTr("Download full word image set")
-            style: GCButtonStyle {}
 
             onClicked: {
                 if(DownloadManager.downloadResource("data2/words/words.rcc"))
@@ -335,10 +329,9 @@ Item {
                 onValueChanged: ApplicationSettings.baseFontSize = value;
                 scrollEnabled: false
             }
-            Button {
+            GCButton {
                 height: 30 * ApplicationInfo.ratio
                 text: qsTr("Default");
-                style: GCButtonStyle {}
                 onClicked: baseFontSizeSlider.value = 0.0
             }
         }
@@ -370,10 +363,9 @@ Item {
                 onValueChanged: ApplicationSettings.fontLetterSpacing = value;
                 scrollEnabled: false
             }
-            Button {
+            GCButton {
                 height: 30 * ApplicationInfo.ratio
                 text: qsTr("Default");
-                style: GCButtonStyle {}
                 onClicked: fontLetterSpacingSlider.value = ApplicationSettings.fontLetterSpacingMin
             }
         }
