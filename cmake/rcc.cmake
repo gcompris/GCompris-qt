@@ -12,7 +12,7 @@ function(GCOMPRIS_ADD_RCC resource_path)
 
   get_filename_component(activity "${resource_path}" NAME)
 
-  if(Qt5Widgets_VERSION_STRING VERSION_LESS 5.4.2 OR WIN32)
+  if(WIN32)
     # (cannot create it in the build dir because rcc expect local files)
     # Create this QRC file
     set(CREATED_QRC "${CMAKE_CURRENT_SOURCE_DIR}/${activity}.qrc")
@@ -33,7 +33,7 @@ function(GCOMPRIS_ADD_RCC resource_path)
 
   set(CREATED_RCC ${GCOMPRIS_RCC_DIR}/${activity}.rcc)
 
-  if(Qt5Widgets_VERSION_STRING VERSION_LESS 5.4.2 OR WIN32)
+  if(WIN32)
     set(_RCC_COMMAND ${Qt5Core_RCC_EXECUTABLE} "-binary" -o ${CREATED_RCC} ${CREATED_QRC})
   else()
     set(_RCC_COMMAND ${Qt5Core_RCC_EXECUTABLE} "-binary" -o ${CREATED_RCC} - < ${CREATED_QRC})
