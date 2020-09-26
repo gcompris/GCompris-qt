@@ -306,10 +306,8 @@ inline QStringList DownloadManager::getSystemResourcePaths() const
             '/' + GCOMPRIS_APPLICATION_NAME
     });
 
-#if QT_VERSION >= 0x050400
     // Append standard application directories (like /usr/share/KDE/gcompris-qt)
     results += QStandardPaths::standardLocations(QStandardPaths::AppDataLocation);
-#endif
 
     return results;
 }
