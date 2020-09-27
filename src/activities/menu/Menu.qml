@@ -673,14 +673,13 @@ ActivityBase {
         Rectangle {
             id: searchBar
             visible: activity.currentTag === "search"
-            opacity: 0.5
-            radius: 10
+            radius: 5 * ApplicationInfo.ratio
             border.width: 2
-            border.color: "black"
+            border.color: "#80000000"
             gradient: Gradient {
-                GradientStop { position: 0.3; color: "#000" }
-                GradientStop { position: 0.9; color: "#666" }
-                GradientStop { position: 1.0; color: "#AAA" }
+                GradientStop { position: 0.3; color: "#A0CCCCCC" }
+                GradientStop { position: 0.9; color: "#A0EEEEEE" }
+                GradientStop { position: 1; color: "#A0FFFFFF" }
             }
 
             Connections {
@@ -718,8 +717,9 @@ ActivityBase {
                 width: parent.width
                 height: parent.height
                 textColor: "black"
-                font.pointSize: 32
+                font.pixelSize: height * 0.5
                 font.bold: true
+                opacity: 0.5
                 horizontalAlignment: TextInput.AlignHCenter
                 verticalAlignment: TextInput.AlignVCenter
                 font.family: GCSingletonFontLoader.fontLoader.name
@@ -744,6 +744,9 @@ ActivityBase {
 
                 style: TextFieldStyle {
                     placeholderTextColor: "black"
+                    background: Rectangle {
+                        opacity: 0
+                    }
                 }
 
                 placeholderText: qsTr("Search specific activities")
