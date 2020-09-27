@@ -17,6 +17,7 @@
   <name xml:lang="fr">GCompris</name>
   <name xml:lang="gl">GCompris</name>
   <name xml:lang="he">GCompris (ג'יקומפריס)</name>
+  <name xml:lang="hi">जीकोंप्रिस</name>
   <name xml:lang="ia">GCompris</name>
   <name xml:lang="id">GCompris</name>
   <name xml:lang="it">GCompris</name>
@@ -454,6 +455,7 @@
       <caption xml:lang="fr">Menu principal de GCompris</caption>
       <caption xml:lang="gl">Menú principal de GCompris</caption>
       <caption xml:lang="he">התפריט המרכזי של ג'יקומפריס</caption>
+      <caption xml:lang="hi">जीकोंप्रिस मुख्य मेनू </caption>
       <caption xml:lang="id">Menu utama GCompris</caption>
       <caption xml:lang="it">Menu principale di GCompris</caption>
       <caption xml:lang="ko">GCompris 주 메뉴</caption>
@@ -488,6 +490,7 @@
       <caption xml:lang="fr">L'activité « Trouver la lettre majuscule »</caption>
       <caption xml:lang="gl">Actividade de «Premer unha letra maiúscula»</caption>
       <caption xml:lang="he">פעילות "להקיש על האותיות הגדולות"</caption>
+      <caption xml:lang="hi">"अपरकेस अक्षर पर क्लिक करें" क्रिया</caption>
       <caption xml:lang="id">Aktivitas "Klik pada huruf kapital"</caption>
       <caption xml:lang="it">Attività «Fai clic su una lettera maiuscola»</caption>
       <caption xml:lang="ko">"대문자 누르기" 활동</caption>
@@ -791,6 +794,7 @@
       <caption xml:lang="fr">L'activité « Le jeu des échecs »</caption>
       <caption xml:lang="gl">Actividade de «Final dunha partida de xadrez»</caption>
       <caption xml:lang="he">פעילות "סוף משחק שחמט"</caption>
+      <caption xml:lang="hi">"शतरंज खेल की समाप्ति" क्रिया</caption>
       <caption xml:lang="id">Aktivitas "Akhir dari permainan catur"</caption>
       <caption xml:lang="it">Attività «Fine della partita a scacchi»</caption>
       <caption xml:lang="ko">"체스 게임" 활동</caption>
@@ -823,6 +827,7 @@
       <caption xml:lang="fr">L'activité « Sortir la voiture du parking »</caption>
       <caption xml:lang="gl">Actividade de «Un crebacabezas de bloques que se moven»</caption>
       <caption xml:lang="he">פעילות "משחק הרכבה של לבנים מחליקות"</caption>
+      <caption xml:lang="hi">"स्लाइडिंग-ब्लॉक पहेली खेल" क्रिया</caption>
       <caption xml:lang="id">Aktivitas "Permainan teka-teki menggeser balok"</caption>
       <caption xml:lang="it">Attività «Un rompicapo con blocchi scorrevoli»</caption>
       <caption xml:lang="ko">"블록 밀기 퍼즐 게임" 활동</caption>
