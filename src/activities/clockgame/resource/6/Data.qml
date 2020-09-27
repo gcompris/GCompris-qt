@@ -28,14 +28,8 @@ Data {
             "numberOfSubLevels": 5,
             "displayMinutesHand": true,
             "displaySecondsHand": true,
-            "hoursVisible": false
-        },
-        {
-            "numberOfSubLevels": 5,
-            "displayMinutesHand": true,
-            "displaySecondsHand": true,
             "hoursVisible": false,
-            "hoursMarksVisible": false
+            "noHint": true
         },
         {
             "numberOfSubLevels": 5,
@@ -43,7 +37,7 @@ Data {
             "displaySecondsHand": true,
             "hoursVisible": false,
             "hoursMarksVisible": false,
-            "zonesVisible": false
+            "noHint": true
         },
         {
             "numberOfSubLevels": 5,
@@ -52,7 +46,17 @@ Data {
             "hoursVisible": false,
             "hoursMarksVisible": false,
             "zonesVisible": false,
-            "minutesVisible": false
+            "noHint": true
+        },
+        {
+            "numberOfSubLevels": 5,
+            "displayMinutesHand": true,
+            "displaySecondsHand": true,
+            "hoursVisible": false,
+            "hoursMarksVisible": false,
+            "zonesVisible": false,
+            "minutesVisible": false,
+            "noHint": true
         }
     ]
 }

@@ -70,6 +70,7 @@ ActivityBase {
             property bool hoursMarksVisible
             property bool hoursVisible
             property bool minutesVisible
+            property bool noHint
         }
 
         onStart: {
@@ -285,6 +286,7 @@ ActivityBase {
                     verticalCenterOffset: clock.radius * 0.2
                 }
                 z: 4
+                opacity: items.noHint ? 0 : 1
                 color: "#2a2a2a"
                 visible: false
             }
@@ -502,9 +504,11 @@ ActivityBase {
 
         Bar {
             id: bar
-            content: BarEnumContent {
-                value: help | home | level | hint | activityConfig
-            }
+            content: items.noHint ? withoutHint : withHint
+
+            property BarEnumContent withHint: BarEnumContent { value: help | home | level | hint | activityConfig }
+            property BarEnumContent withoutHint: BarEnumContent { value: help | home | level | activityConfig }
+
             onHelpClicked: {
                 displayDialog(dialogHelp)
             }
