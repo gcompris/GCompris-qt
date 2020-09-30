@@ -23,113 +23,113 @@
 .import QtQuick 2.6 as Quick
 .import GCompris 1.0 as GCompris //for ApplicationInfo
 
-var useMultipleDataset
-var currentLevel = 1
-var currentSubLevel = 0
-var numberOfLevel
-var numberOfSubLevel
-var items
-var imagesUrl
-var soundsUrl
-var boardsUrl
-var glowEnabled
-var glowEnabledDefault
-var spots = []
-var showText = []
-var displayDropCircle
+var useMultipleDataset;
+var currentLevel = 1;
+var currentSubLevel = 0;
+var numberOfLevel;
+var numberOfSubLevel;
+var items;
+var imagesUrl;
+var soundsUrl;
+var boardsUrl;
+var glowEnabled;
+var glowEnabledDefault;
+var spots = [];
+var showText = [];
+var displayDropCircle;
 
 function start(items_, imagesUrl_, soundsUrl_, boardsUrl_, levelCount_, answerGlow_, displayDropCircle_, useMultipleDataset_) {
-    items = items_
-    imagesUrl = imagesUrl_
-    soundsUrl = soundsUrl_
-    boardsUrl = boardsUrl_
-    useMultipleDataset = useMultipleDataset_
-    numberOfLevel = useMultipleDataset ? items.levels.length : levelCount_
-    glowEnabledDefault = answerGlow_
-    displayDropCircle = displayDropCircle_
-    currentLevel = 1
-    currentSubLevel = 0
-    numberOfSubLevel = 0
-    resetData()
-    initLevel()
+    items = items_;
+    imagesUrl = imagesUrl_;
+    soundsUrl = soundsUrl_;
+    boardsUrl = boardsUrl_;
+    useMultipleDataset = useMultipleDataset_;
+    numberOfLevel = useMultipleDataset ? items.levels.length : levelCount_;
+    glowEnabledDefault = answerGlow_;
+    displayDropCircle = displayDropCircle_;
+    currentLevel = 1;
+    currentSubLevel = 0;
+    numberOfSubLevel = 0;
+    resetData();
+    initLevel();
 }
 
 function resetData() {
-    items.availablePieces.model.clear()
+    items.availablePieces.model.clear();
     for(var i = 0 ; i < spots.length ; ++ i) {
-        spots[i].destroy()
+        spots[i].destroy();
     }
-    spots = []
+    spots = [];
 
     for(var i = 0 ; i < showText.length ; ++ i)
-        showText[i].destroy()
-    showText = []
+        showText[i].destroy();
+    showText = [];
 
-    items.backgroundPiecesModel.clear()
-    items.backgroundImage.source = ""
+    items.backgroundPiecesModel.clear();
+    items.backgroundImage.source = "";
 }
 
 function stop() {
-    resetData()
+    resetData();
 }
 
 function initLevel() {
-    items.bar.level = currentLevel
+    items.bar.level = currentLevel;
     if(useMultipleDataset)
         items.dataset.source = items.levels[currentLevel-1][currentSubLevel];
     else
-        items.dataset.source = boardsUrl + "board" + "/" + "board" + currentLevel + "_" + currentSubLevel + ".qml"
-    var levelData = items.dataset.item
+        items.dataset.source = boardsUrl + "board" + "/" + "board" + currentLevel + "_" + currentSubLevel + ".qml";
+    var levelData = items.dataset.item;
     resetData();
-    items.availablePieces.view.currentDisplayedGroup = 0
-    items.availablePieces.view.previousNavigation = 1
-    items.availablePieces.view.nextNavigation = 1
-    items.availablePieces.view.okShowed = false
-    items.availablePieces.view.showGlow = false
-    items.availablePieces.view.ok.height = 0
+    items.availablePieces.view.currentDisplayedGroup = 0;
+    items.availablePieces.view.previousNavigation = 1;
+    items.availablePieces.view.nextNavigation = 1;
+    items.availablePieces.view.okShowed = false;
+    items.availablePieces.view.showGlow = false;
+    items.availablePieces.view.ok.height = 0;
 
-    var dropItemComponent = Qt.createComponent("qrc:/gcompris/src/activities/babymatch/DropAnswerItem.qml")
-    var textItemComponent = Qt.createComponent("qrc:/gcompris/src/activities/babymatch/TextItem.qml")
-    //print(dropItemComponent.errorString())
+    var dropItemComponent = Qt.createComponent("qrc:/gcompris/src/activities/babymatch/DropAnswerItem.qml");
+    var textItemComponent = Qt.createComponent("qrc:/gcompris/src/activities/babymatch/TextItem.qml");
 
     if(currentSubLevel == 0 && levelData.numberOfSubLevel != undefined)
-        numberOfSubLevel = levelData.numberOfSubLevel
-        
-    items.score.currentSubLevel = currentSubLevel + 1
-    items.score.numberOfSubLevels = numberOfSubLevel + 1
-    
-    if(levelData.glow === undefined)
-        glowEnabled = glowEnabledDefault
-    else 
-        glowEnabled = levelData.glow
+        numberOfSubLevel = levelData.numberOfSubLevel;
 
-    items.toolTip.show('')
+    items.score.currentSubLevel = currentSubLevel + 1;
+    items.score.numberOfSubLevels = numberOfSubLevel + 1;
+
+    if(levelData.glow === undefined)
+        glowEnabled = glowEnabledDefault;
+    else
+        glowEnabled = levelData.glow;
+
+    items.toolTip.show('');
 
     if(levelData.instruction === undefined) {
-        items.instruction.opacity = 0
-        items.instruction.text = ""
+        items.instruction.opacity = 0;
+        items.instruction.text = "";
     } else if(!displayDropCircle) {
-        items.instruction.opacity = 0
-        items.instruction.text = levelData.instruction
+        items.instruction.opacity = 0;
+        items.instruction.text = levelData.instruction;
     }
     else {
-        items.instruction.opacity = 1
-        items.instruction.text = levelData.instruction
+        items.instruction.opacity = 1;
+        items.instruction.text = levelData.instruction;
     }
 	
     // Fill available pieces
-    var arr=[], levelDataLength = levelData.levels.length
+    var arr = [];
+    var levelDataLength = levelData.levels.length;
     for(var i=0 ; i < levelDataLength ; i++)
-        arr[i] = i
-        
-    var i = 0, j = 0, k = 0, n = 0 
+        arr[i] = i;
+
+    var i = 0, j = 0, k = 0, n = 0;
     while(levelDataLength--) {
-        
-        //Randomize the order of pieces 
-        var rand = Math.floor(Math.random() * levelDataLength)
-        i = arr[rand]
-        arr.splice(rand,1)
-        
+
+        //Randomize the order of pieces
+        var rand = Math.floor(Math.random() * levelDataLength);
+        i = arr[rand];
+        arr.splice(rand,1);
+
         //Create answer pieces
         if(levelData.levels[i].type === undefined) {
             items.availablePieces.model.append( {
@@ -168,11 +168,11 @@ function initLevel() {
         //Create static background pieces
         else {
             if(levelData.levels[i].type === "SHAPE_BACKGROUND_IMAGE") {
-                items.backgroundImage.source = imagesUrl + levelData.levels[i].pixmapfile
+                items.backgroundImage.source = imagesUrl + levelData.levels[i].pixmapfile;
                 if(levelData.levels[i].width)
-                    items.backgroundImage.sourceSize.width = levelData.levels[i].width
+                    items.backgroundImage.sourceSize.width = levelData.levels[i].width;
                 if(levelData.levels[i].height)
-                    items.backgroundImage.sourceSize.height = levelData.levels[i].height
+                    items.backgroundImage.sourceSize.height = levelData.levels[i].height;
             }
             else {
                 items.backgroundPiecesModel.append( {
@@ -185,75 +185,76 @@ function initLevel() {
             }
         }
     }
-    
+
     //Initialize displayedGroup variable which is used for showing navigation bars
     for(var i=0;i<items.availablePieces.view.nbDisplayedGroup;++i)
-        items.availablePieces.view.displayedGroup[i] = true
+        items.availablePieces.view.displayedGroup[i] = true;
+    items.inputLocked = false;
 }
 
 function hideInstructions() {
-        items.instruction.opacity = 0
+        items.instruction.opacity = 0;
 }
 
 function nextSubLevel() {
 	if(numberOfSubLevel < ++currentSubLevel) {
-        currentSubLevel = 0
-        numberOfSubLevel = 0
-        nextLevel()
+        currentSubLevel = 0;
+        numberOfSubLevel = 0;
+        nextLevel();
     }
     else
-        initLevel()
+        initLevel();
 }
 
 function nextLevel() {
-    currentSubLevel = 0
-    numberOfSubLevel = 0
+    currentSubLevel = 0;
+    numberOfSubLevel = 0;
     if(numberOfLevel < ++currentLevel) {
-        currentLevel = 1
+        currentLevel = 1;
     }
-    initLevel()
+    initLevel();
 }
 
 function previousLevel() {
-    currentSubLevel = 0
-    numberOfSubLevel = 0
+    currentSubLevel = 0;
+    numberOfSubLevel = 0;
     if(--currentLevel < 1) {
-        currentLevel = numberOfLevel
+        currentLevel = numberOfLevel;
     }
     initLevel();
 }
 
 function win() {
-    items.bonus.good("flower")
+    items.bonus.good("flower");
 }
 
 function getClosestSpot(x, y) {
-    var minDist = 200 * GCompris.ApplicationInfo.ratio
-    var closestDist = Number.MAX_VALUE
-    var closestItem
+    var minDist = 200 * GCompris.ApplicationInfo.ratio;
+    var closestDist = Number.MAX_VALUE;
+    var closestItem;
     for(var i = 0 ; i < spots.length ; ++ i) {
         // Calc Distance
-        var spot = spots[i]
+        var spot = spots[i];
         var dist = Math.floor(Math.sqrt(Math.pow(x - spot.x, 2) +
-                                        Math.pow(y - spot.y, 2)))
+                                        Math.pow(y - spot.y, 2)));
         if(dist < closestDist) {
-            closestDist = dist
-            closestItem = spot
+            closestDist = dist;
+            closestItem = spot;
         }
     }
     if(closestDist < minDist) {
-        return closestItem
+        return closestItem;
     } else {
-        return null
+        return null;
     }
 }
 
 function highLightSpot(stopItem, tile) {
     for(var i = 0 ; i < spots.length ; ++ i) {
         if(spots[i] === stopItem) {
-            spots[i].show(tile)
+            spots[i].show(tile);
         } else {
-            spots[i].hide()
+            spots[i].hide();
         }
     }
 }

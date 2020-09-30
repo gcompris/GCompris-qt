@@ -55,13 +55,14 @@ Item {
             duration: 430
         }
         onStarted: {
-            tileImage.anchors.centerIn = undefined
-            view.showGlow = false
+            tileImage.anchors.centerIn = undefined;
+            view.showGlow = false;
         }
         onStopped: {
-            tileImage.parent = tileImage.tileImageParent
-            tileImage.anchors.centerIn = tileImage.currentTargetSpot == null ? tileImage.parent : tileImage.currentTargetSpot
-            updateOkButton()
+            tileImage.parent = tileImage.tileImageParent;
+            tileImage.anchors.centerIn = tileImage.currentTargetSpot == null ?
+                                        tileImage.parent : tileImage.currentTargetSpot;
+            updateOkButton();
         }
     }
 
@@ -102,45 +103,46 @@ Item {
             property bool pressedOnce
             property bool parentIsTile : parent == tile ? true : false
 
-            onFullWidthChanged: correctDroppedImageSize()
-            onFullHeightChanged: correctDroppedImageSize()
+            onFullWidthChanged: correctDroppedImageSize();
+            onFullHeightChanged: correctDroppedImageSize();
 
             function correctDroppedImageSize() {
                 if(tileImage.dropStatus == 0 || tileImage.dropStatus == 1) {
-                    tileImage.width = tileImage.fullWidth
-                    tileImage.height = tileImage.fullHeight
+                    tileImage.width = tileImage.fullWidth;
+                    tileImage.height = tileImage.fullHeight;
                 }
             }
 
             function imageRemove() {
-                dropStatus = -1
+                dropStatus = -1;
                 if(backgroundImage.source == "")
-                    leftWidget.z = 1
+                    leftWidget.z = 1;
 
                 var coord = tileImage.parent.mapFromItem(tile, tile.xCenter - tileImage.width/2,
-                            tile.yCenter - tileImage.height/2)
-                tileImage.moveImageX = coord.x
-                tileImage.moveImageY = coord.y
-                tileImage.currentTargetSpot = null
-                tileImage.tileImageParent = tile
-                toSmall()
-                tileImageAnimation.start()
+                            tile.yCenter - tileImage.height/2);
+                tileImage.moveImageX = coord.x;
+                tileImage.moveImageY = coord.y;
+                tileImage.currentTargetSpot = null;
+                tileImage.tileImageParent = tile;
+                toSmall();
+                tileImageAnimation.start();
             }
 
             function toSmall() {
-                width = smallWidth
-                height = smallHeight
-                small = true
+                width = smallWidth;
+                height = smallHeight;
+                small = true;
             }
 
             function toFull() {
-                width = fullWidth
-                height = fullHeight
-                small = false
+                width = fullWidth;
+                height = fullHeight;
+                small = false;
             }
 
             MultiPointTouchArea {
                 id: mouseArea
+                enabled: !items.inputLocked
                 touchPoints: [ TouchPoint { id: point1 } ]
                 property real startX
                 property real startY
@@ -148,67 +150,67 @@ Item {
                 anchors.fill: parent
 
                 onPressed: {
-                    Activity.hideInstructions()
-                    item.pressed()
-                    tileImage.toSmall()
-                    tileImage.anchors.centerIn = undefined
-                    tileImage.dropStatus = -1
-                    item.hideOkButton()
-                    startX = point1.x
-                    startY = point1.y
+                    Activity.hideInstructions();
+                    item.pressed();
+                    tileImage.toSmall();
+                    tileImage.anchors.centerIn = undefined;
+                    tileImage.dropStatus = -1;
+                    item.hideOkButton();
+                    startX = point1.x;
+                    startY = point1.y;
 
-                    toolTip.show(toolTipText)
+                    toolTip.show(toolTipText);
                     if(tileImage.parent == tile)
-                        leftWidget.z = 3
+                        leftWidget.z = 3;
                     else
-                        leftWidget.z = 1
+                        leftWidget.z = 1;
 
                     if(tileImage.currentTargetSpot) {
-                        tileImage.currentTargetSpot.currentTileImageItem = null
-                        tileImage.currentTargetSpot = null
+                        tileImage.currentTargetSpot.currentTileImageItem = null;
+                        tileImage.currentTargetSpot = null;
                     }
 
                     if(imgSound)
-                        activity.audioVoices.play(ApplicationInfo.getAudioFilePath(imgSound))
-                    tileImage.pressedOnce = true
+                        activity.audioVoices.play(ApplicationInfo.getAudioFilePath(imgSound));
+                    tileImage.pressedOnce = true;
                 }
 
                 onUpdated: {
-                    var moveX = point1.x - startX
-                    var moveY = point1.y - startY
-                    parent.x = parent.x + moveX
-                    parent.y = parent.y + moveY
-                    tileImage.opacity = 1
-                    Activity.highLightSpot(getClosestSpot(), tileImage)
+                    var moveX = point1.x - startX;
+                    var moveY = point1.y - startY;
+                    parent.x = parent.x + moveX;
+                    parent.y = parent.y + moveY;
+                    tileImage.opacity = 1;
+                    Activity.highLightSpot(getClosestSpot(), tileImage);
                 }
 
                 onReleased: {
-                    if (tileImage.pressedOnce) {
-                        tileImage.opacity = 1
-                        tileImage.pressedOnce = false
-                        Activity.highLightSpot(null, tileImage)
-                        var closestSpot = getClosestSpot()
-                        updateFoundStatus(closestSpot)
+                    if(tileImage.pressedOnce) {
+                        tileImage.opacity = 1;
+                        tileImage.pressedOnce = false;
+                        Activity.highLightSpot(null, tileImage);
+                        var closestSpot = getClosestSpot();
+                        updateFoundStatus(closestSpot);
                         if(closestSpot === null) {
                             if(tileImage.currentTargetSpot)
-                                tileImage.currentTargetSpot.imageRemove()
+                                tileImage.currentTargetSpot.imageRemove();
                             else
-                                tileImage.imageRemove()
+                                tileImage.imageRemove();
                         } else {
                             if(tileImage.currentTargetSpot !== closestSpot) {
-                                closestSpot.imageRemove()
-                                closestSpot.imageAdd(tileImage)
+                                closestSpot.imageRemove();
+                                closestSpot.imageAdd(tileImage);
                             }
-                            tileImage.currentTargetSpot = closestSpot
-                            tileImage.tileImageParent = backgroundImage
-                            tileImage.toFull()
+                            tileImage.currentTargetSpot = closestSpot;
+                            tileImage.tileImageParent = backgroundImage;
+                            tileImage.toFull();
                             var coord = tileImage.parent.mapFromItem(backgroundImage,
                                                                      closestSpot.xCenter - tileImage.fullWidth/2,
-                                                                     closestSpot.yCenter - tileImage.fullHeight/2)
-                            tileImage.moveImageX = coord.x
-                            tileImage.moveImageY = coord.y
-                            tileImage.z = 100
-                            tileImageAnimation.start()
+                                                                     closestSpot.yCenter - tileImage.fullHeight/2);
+                            tileImage.moveImageX = coord.x;
+                            tileImage.moveImageY = coord.y;
+                            tileImage.z = 100;
+                            tileImageAnimation.start();
                         }
                     }
                 }
@@ -216,19 +218,19 @@ Item {
                 function getClosestSpot() {
                     var coordImg = tileImage.parent.mapToItem(backgroundImage,
                                                               tileImage.x + tileImage.width/2,
-                                                              tileImage.y + tileImage.height/2)
-                    return Activity.getClosestSpot(coordImg.x, coordImg.y)
+                                                              tileImage.y + tileImage.height/2);
+                    return Activity.getClosestSpot(coordImg.x, coordImg.y);
                 }
 
                 function updateFoundStatus(closestSpot) {
                     if(!closestSpot) {
-                        tileImage.dropStatus = -1
-                        return
+                        tileImage.dropStatus = -1;
+                        return;
                     }
                     if(closestSpot.imgName === imgName)
-                           tileImage.dropStatus = 1
+                           tileImage.dropStatus = 1;
                     else
-                        tileImage.dropStatus = 0
+                        tileImage.dropStatus = 0;
                 }
             }
 
@@ -262,23 +264,23 @@ Item {
 
     function hideOkButton() {
         if(view.okShowed) {
-            hideOk.start()
-            view.okShowed = false
-            view.showGlow = false
+            hideOk.start();
+            view.okShowed = false;
+            view.showGlow = false;
         }
     }
 
     function updateOkButton() {
         if(view.areAllPlaced()) {
-            showOk.start()
-        } 
+            showOk.start();
+        }
         if(!view.okShowed && tileImage.dropStatus >= 0)
-            view.checkDisplayedGroup()
+            view.checkDisplayedGroup();
         if(!view.okShowed && tileImage.dropStatus == -1) {
-            view.displayedGroup[parseInt(index/view.nbItemsByGroup)] = true
-            view.setPreviousNavigation()
-            view.setNextNavigation()
-            view.checkDisplayedGroup()
+            view.displayedGroup[parseInt(index/view.nbItemsByGroup)] = true;
+            view.setPreviousNavigation();
+            view.setNextNavigation();
+            view.checkDisplayedGroup();
         }
     }
 }
