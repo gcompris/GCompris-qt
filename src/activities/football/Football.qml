@@ -91,22 +91,31 @@ ActivityBase {
                     id: ball
                     source: Activity.url + "ball.svg"
                     sourceSize.height: 50 * ApplicationInfo.ratio
-                    property real change
                     z: 10
+                    onXChanged: if(line.opacity === 1) ballTouchArea.updateLine();
+                    onYChanged: if(line.opacity === 1) ballTouchArea.updateLine();
+
+                    property int halfSize: width * 0.5
 
                     MultiPointTouchArea {
+                        id: ballTouchArea
                         anchors.fill: parent
                         touchPoints: [ TouchPoint { id: point1 }]
+                        property var pointPosition: Qt.point(0, 0)
                         onReleased: {
                             line.opacity = 0
-                            Activity.startMotion(point1.x - ball.width / 2,
-                                                 point1.y - ball.height / 2)
+                            Activity.startMotion(point1.x - ball.halfSize,
+                                                 point1.y - ball.halfSize)
                             activity.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/brick.wav")
                         }
                         onPressed: line.opacity = 1
                         onTouchUpdated: {
-                            var point = ball.mapToItem(border, point1.x, point1.y)
-                            Activity.drawLine(point.x, point.y, ball.x + ball.width/2, ball.y + ball.height/2)
+                            pointPosition = ball.mapToItem(border, point1.x, point1.y);
+                            updateLine();
+                        }
+
+                        function updateLine() {
+                            Activity.drawLine(pointPosition.x, pointPosition.y, ball.x + ball.halfSize, ball.y + ball.halfSize);
                         }
                     }
                 }
