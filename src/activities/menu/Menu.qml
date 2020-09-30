@@ -223,6 +223,9 @@ ActivityBase {
         property var currentActiveGrid: activitiesGrid
         property bool keyboardMode: false
         Keys.onPressed: {
+            if(loading.active) {
+                return;
+            }
             // Ctrl-modifiers should never be handled by the search-field
             if (event.modifiers === Qt.ControlModifier) {
                 if (event.key === Qt.Key_S) {
@@ -259,12 +262,12 @@ ActivityBase {
                 currentActiveGrid = section;
             }
         }
-        Keys.onEnterPressed: if(currentActiveGrid.currentItem) currentActiveGrid.currentItem.selectCurrentItem();
-        Keys.onReturnPressed: if(currentActiveGrid.currentItem) currentActiveGrid.currentItem.selectCurrentItem();
-        Keys.onRightPressed: if(currentActiveGrid.currentItem) currentActiveGrid.moveCurrentIndexRight();
-        Keys.onLeftPressed: if(currentActiveGrid.currentItem) currentActiveGrid.moveCurrentIndexLeft();
-        Keys.onDownPressed: if(currentActiveGrid.currentItem) currentActiveGrid.moveCurrentIndexDown();
-        Keys.onUpPressed: if(currentActiveGrid.currentItem) currentActiveGrid.moveCurrentIndexUp();
+        Keys.onEnterPressed: if(currentActiveGrid.currentItem && !loading.active) currentActiveGrid.currentItem.selectCurrentItem();
+        Keys.onReturnPressed: if(currentActiveGrid.currentItem && !loading.active) currentActiveGrid.currentItem.selectCurrentItem();
+        Keys.onRightPressed: if(currentActiveGrid.currentItem && !loading.active) currentActiveGrid.moveCurrentIndexRight();
+        Keys.onLeftPressed: if(currentActiveGrid.currentItem && !loading.active) currentActiveGrid.moveCurrentIndexLeft();
+        Keys.onDownPressed: if(currentActiveGrid.currentItem && !loading.active) currentActiveGrid.moveCurrentIndexDown();
+        Keys.onUpPressed: if(currentActiveGrid.currentItem && !loading.active) currentActiveGrid.moveCurrentIndexUp();
 
         GridView {
             id: section
