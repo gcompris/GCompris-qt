@@ -89,32 +89,18 @@ ActivityBase {
             property GCAudio audioVoices: activity.audioVoices
             property GCSfx audioEffects: activity.audioEffects
             property Item main: activity.main
-            property alias background: background
             property alias bar: bar
             property alias bonus: bonus
             property alias score: score
             property alias progressbar: progressbar
-            property alias ok: ok
             property alias dataModel: dataModel
             property alias dataset: dataset
             property alias instruction: instruction
-            property alias instructionText: instructionText
             property alias descriptionPanel: descriptionPanel
-            property alias nextQuestion: nextQuestion
             property bool hasAudioQuestions: activity.hasAudioQuestions
-            property string currentAudio
             property var questionOrder
             property var currentQuestion: items.dataset ? items.dataset.item.tab[items.questionOrder[progressbar.value]] : ""
             property bool bonusPlaying: false
-        }
-
-        Timer {
-            id: nextQuestion
-            repeat: false
-            interval: 2000
-            onTriggered: {
-                Activity.repeat();
-            }
         }
 
         Loader {
