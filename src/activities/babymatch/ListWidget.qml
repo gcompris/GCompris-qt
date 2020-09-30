@@ -49,7 +49,7 @@ Item {
         to: view.iconSize * 0.9
         duration: 300
         onStopped: {
-            view.okShowed = true
+            view.okShowed = true;
         }
     }
     PropertyAnimation {
@@ -59,7 +59,7 @@ Item {
         from: view.iconSize * 0.9
         to: 0
         duration: 200
-        onStopped: view.checkDisplayedGroup()
+        onStopped: view.checkDisplayedGroup();
     }
 
     Image {
@@ -71,7 +71,8 @@ Item {
 
         MouseArea {
             anchors.fill: parent
-            onClicked: view.checkAnswer()
+            enabled: !items.inputLocked
+            onClicked: view.checkAnswer();
         }
     }
 
@@ -99,98 +100,99 @@ Item {
         property var displayedGroup: []
         property alias ok: ok
 
-        onNbDisplayedGroupChanged: correctDisplayedGroup()
+        onNbDisplayedGroupChanged: correctDisplayedGroup();
 
         // For correcting values of Displayed Groups when height or width is changed
         function correctDisplayedGroup() {
-            if (nbDisplayedGroup > 0) {
+            if(nbDisplayedGroup > 0) {
                 for(var i = 0 ; i < nbDisplayedGroup ; i++) {
-                    var groupEmpty = true
+                    var groupEmpty = true;
                     for(var j = 0 ; j < nbItemsByGroup, i*nbItemsByGroup + j < model.count ; j++) {
-                        if (repeater.itemAt(i*nbItemsByGroup + j).dropStatus < 0) {
-                            groupEmpty = false
-                            break
+                        if(repeater.itemAt(i*nbItemsByGroup + j).dropStatus < 0) {
+                            groupEmpty = false;
+                            break;
                         }
                     }
-                    if (groupEmpty)
-                        displayedGroup[i] = false
+                    if(groupEmpty)
+                        displayedGroup[i] = false;
                     else
-                        displayedGroup[i] = true
+                        displayedGroup[i] = true;
                 }
-                view.refreshLeftWidget()
-                view.checkDisplayedGroup()
+                view.refreshLeftWidget();
+                view.checkDisplayedGroup();
             }
         }
 
         //For setting navigation buttons
         function setNextNavigation() {
-            nextNavigation = 0
+            nextNavigation = 0;
             for(var i = currentDisplayedGroup + 1 ; i < nbDisplayedGroup ; i++) {
                 if(displayedGroup[i]) {
-                    nextNavigation = i - currentDisplayedGroup
-                    break
+                    nextNavigation = i - currentDisplayedGroup;
+                    break;
                 }
             }
         }
-        
+
         function setPreviousNavigation() {
-            previousNavigation = 0
+            previousNavigation = 0;
             for(var i = currentDisplayedGroup - 1 ; i >= 0 ; i--) {
                 if(displayedGroup[i]) {
-                    previousNavigation = currentDisplayedGroup - i
-                    break
+                    previousNavigation = currentDisplayedGroup - i;
+                    break;
                 }
             }
         }
-        
+
         function checkDisplayedGroup() {
-            var i = currentDisplayedGroup * nbItemsByGroup 
-            var groupEmpty = true
+            var i = currentDisplayedGroup * nbItemsByGroup;
+            var groupEmpty = true;
             while(i < model.count && i < (currentDisplayedGroup + 1) * nbItemsByGroup) {
-                if (repeater.itemAt(i).dropStatus < 0) {
-                    groupEmpty = false
-                    break
+                if(repeater.itemAt(i).dropStatus < 0) {
+                    groupEmpty = false;
+                    break;
                 }
-                i++
+                i++;
             }
 
-            if (groupEmpty) {
-                displayedGroup[currentDisplayedGroup] = false
-                previousNavigation = 0
-                nextNavigation = 0
+            if(groupEmpty) {
+                displayedGroup[currentDisplayedGroup] = false;
+                previousNavigation = 0;
+                nextNavigation = 0;
                 for(var i = 0 ; i < nbDisplayedGroup ; ++i) {
                     if(displayedGroup[i]) {
-                        view.setCurrentDisplayedGroup = i
-                        view.refreshLeftWidget()
-                        break
+                        view.setCurrentDisplayedGroup = i;
+                        view.refreshLeftWidget();
+                        break;
                     }
                 }
             }
         }
 
         function refreshLeftWidget() {
-            availablePieces.view.currentDisplayedGroup = availablePieces.view.setCurrentDisplayedGroup
-            availablePieces.view.setNextNavigation()
-            availablePieces.view.setPreviousNavigation()
+            availablePieces.view.currentDisplayedGroup = availablePieces.view.setCurrentDisplayedGroup;
+            availablePieces.view.setNextNavigation();
+            availablePieces.view.setPreviousNavigation();
         }
 
         function areAllPlaced() {
             for(var i = 0 ; i < model.count ; ++i) {
                 if(repeater.itemAt(i).dropStatus < 0) {
-                    return false
+                    return false;
                 }
             }
-            return true
+            return true;
         }
 
         function checkAnswer() {
-            view.showGlow = true
+            view.showGlow = true;
             for(var i = 0 ; i < model.count ; ++i) {
                 if(repeater.itemAt(i).dropStatus !== 1) {
-                    return
+                    return;
                 }
             }
-            Activity.win()
+            items.inputLocked = true;
+            Activity.win();
         }
 
         Repeater {
@@ -199,12 +201,12 @@ Item {
             onCurrentIndexChanged: {
                 for(var i = 0; i < mymodel.count; i++) {
                     if(currentIndex != i)
-                        repeater.itemAt(i).selected = false
+                        repeater.itemAt(i).selected = false;
                     else
-                        repeater.itemAt(i).selected = true
+                        repeater.itemAt(i).selected = true;
                 }
                 if(currentIndex == -1)
-                    toolTip.opacity = 0
+                    toolTip.opacity = 0;
             }
             DragListItem {
                 id: contactsDelegate
@@ -213,13 +215,13 @@ Item {
                 visible: view.currentDisplayedGroup * view.nbItemsByGroup <= index &&
                          index <= (view.currentDisplayedGroup+1) * view.nbItemsByGroup-1
 
-                onPressed: repeater.currentIndex = index
+                onPressed: repeater.currentIndex = index;
             }
 
             clip: true
             model: mymodel
 
-            onModelChanged: repeater.currentIndex = -1
+            onModelChanged: repeater.currentIndex = -1;
         }
 
         Row {
@@ -234,11 +236,12 @@ Item {
                 fillMode: Image.PreserveAspectFit
                 MouseArea {
                     anchors.fill: parent
+                    enabled: !items.inputLocked
                     onClicked: {
-                        repeater.currentIndex = -1
+                        repeater.currentIndex = -1;
                         if(previous.opacity == 1) {
-                            view.setCurrentDisplayedGroup = view.currentDisplayedGroup - view.previousNavigation
-                            view.refreshLeftWidget()
+                            view.setCurrentDisplayedGroup = view.currentDisplayedGroup - view.previousNavigation;
+                            view.refreshLeftWidget();
                         }
                     }
                 }
@@ -246,17 +249,18 @@ Item {
 
             Image {
                 id: next
-                visible: model.count > view.nbItemsByGroup && view.nextNavigation != 0 && view.currentDisplayedGroup < 
-						 view.nbDisplayedGroup - 1
+                visible: model.count > view.nbItemsByGroup && view.nextNavigation != 0
+                            && view.currentDisplayedGroup < view.nbDisplayedGroup - 1
                 source:"qrc:/gcompris/src/core/resource/bar_next.svg"
                 sourceSize.width: view.iconSize * 0.35
                 fillMode: Image.PreserveAspectFit
                 MouseArea {
                     anchors.fill: parent
+                    enabled: !items.inputLocked
                     onClicked: {
-                        repeater.currentIndex = -1
-                        view.setCurrentDisplayedGroup = view.currentDisplayedGroup + view.nextNavigation
-                        view.refreshLeftWidget()
+                        repeater.currentIndex = -1;
+                        view.setCurrentDisplayedGroup = view.currentDisplayedGroup + view.nextNavigation;
+                        view.refreshLeftWidget();
                     }
                 }
             }

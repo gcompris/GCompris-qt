@@ -38,7 +38,7 @@ ActivityBase {
     property bool answerGlow: true	//For highlighting the answers
     property bool displayDropCircle: true	//For displaying drop circles
 
-    onStart: focus = true
+    onStart: focus = true;
     onStop: {}
 
     pageComponent: Image {
@@ -52,9 +52,9 @@ ActivityBase {
         property bool vert: background.width >= background.height
 
         Component.onCompleted: {
-            dialogActivityConfig.initialize()
-            activity.start.connect(start)
-            activity.stop.connect(stop)
+            dialogActivityConfig.initialize();
+            activity.start.connect(start);
+            activity.stop.connect(stop);
         }
 
         // Add here the QML items you need to access in javascript
@@ -74,6 +74,7 @@ ActivityBase {
             property alias score: score
             property var levels: activity.datasetLoader.data.length !== 0 ? activity.datasetLoader.data : null
             property alias dataset: dataset
+            property bool inputLocked: false
         }
 
         Loader {
@@ -81,27 +82,27 @@ ActivityBase {
             asynchronous: false
         }
 
-        onStart: { Activity.start(items, imagesUrl, soundsUrl, boardsUrl, levelCount, answerGlow, displayDropCircle, useMultipleDataset) }
-        onStop: { Activity.stop() }
+        onStart: { Activity.start(items, imagesUrl, soundsUrl, boardsUrl, levelCount, answerGlow, displayDropCircle, useMultipleDataset); }
+        onStop: { Activity.stop(); }
 
         DialogHelp {
             id: dialogHelp
-            onClose: home()
+            onClose: home();
         }
 
         Bar {
             id: bar
             content: BarEnumContent { value: useMultipleDataset ? (help | home | level | activityConfig) : (help | home | level) }
-            onHelpClicked: {displayDialog(dialogHelp)}
-            onPreviousLevelClicked: Activity.previousLevel()
-            onNextLevelClicked: Activity.nextLevel()
+            onHelpClicked: displayDialog(dialogHelp);
+            onPreviousLevelClicked: Activity.previousLevel();
+            onNextLevelClicked: Activity.nextLevel();
             onHomeClicked: {
                 Activity.resetData();
-                activity.home()
+                activity.home();
             }
             onActivityConfigClicked: {
-                Activity.initLevel()
-                displayDialog(dialogActivityConfig)
+                Activity.initLevel();
+                displayDialog(dialogActivityConfig);
              }
         }
 
@@ -109,21 +110,21 @@ ActivityBase {
             id: dialogActivityConfig
             currentActivity: activity.activityInfo
             onSaveData: {
-                levelFolder = dialogActivityConfig.chosenLevels
-                currentActivity.currentLevels = dialogActivityConfig.chosenLevels
-                ApplicationSettings.setCurrentLevels(currentActivity.name, dialogActivityConfig.chosenLevels)
-                activity.focus = true
+                levelFolder = dialogActivityConfig.chosenLevels;
+                currentActivity.currentLevels = dialogActivityConfig.chosenLevels;
+                ApplicationSettings.setCurrentLevels(currentActivity.name, dialogActivityConfig.chosenLevels);
+                activity.focus = true;
             }
             onLoadData: {
                 if(activityData) {
-                    Activity.initLevel()
+                    Activity.initLevel();
                 }
             }
             onClose: {
-                home()
+                home();
             }
             onStartActivity: {
-                background.start()
+                background.start();
             }
         }
 
@@ -137,7 +138,7 @@ ActivityBase {
 
         Bonus {
             id: bonus
-            Component.onCompleted: win.connect(Activity.nextSubLevel)
+            Component.onCompleted: win.connect(Activity.nextSubLevel);
         }
 
         File {
@@ -161,8 +162,8 @@ ActivityBase {
             }
             MouseArea {
                 anchors.fill: parent
-                onPressed: (instruction.opacity == 0 ?
-                                instruction.show() : instruction.hide())
+                enabled: !items.inputLocked
+                onPressed: instruction.opacity === 0 ? instruction.show() : instruction.hide();
             }
         }
 
@@ -185,10 +186,10 @@ ActivityBase {
 
             function show(newText) {
                 if(newText) {
-                    text = newText
-                    opacity = 0.8
+                    text = newText;
+                    opacity = 0.8;
                 } else {
-                    opacity = 0
+                    opacity = 0;
                 }
             }
 
@@ -286,8 +287,8 @@ ActivityBase {
 
                 MouseArea {
                     anchors.fill: parent
-                    onPressed: (instruction.opacity == 0 ?
-                                    instruction.show() : instruction.hide())
+                    enabled: !items.inputLocked
+                    onPressed: instruction.opacity === 0 ? instruction.show() : instruction.hide();
                 }
             }
         }
@@ -308,10 +309,10 @@ ActivityBase {
 
             function show() {
                 if(text)
-                    opacity = 1
+                    opacity = 1;
             }
             function hide() {
-                opacity = 0
+                opacity = 0;
             }
 
             Rectangle {
