@@ -49,7 +49,8 @@ ActivityBase {
         source: activity.dataSetUrl + "background.svg"
         fillMode: Image.PreserveAspectCrop
         anchors.fill: parent
-        sourceSize.width: Math.max(parent.width, parent.height)
+        sourceSize.width: width
+        sourceSize.height: height
 
         // system locale by default
         property string locale: "system"
@@ -151,8 +152,8 @@ ActivityBase {
             fontSize: smallSize
             color: "#FFFFFF"
             wrapMode: Text.WordWrap
+            width: guessedTextBg.width
             horizontalAlignment: Text.AlignHCenter
-            width: parent.width - 2.1 * clock.width
             anchors {
                 horizontalCenter: parent.horizontalCenter
             }
@@ -160,15 +161,13 @@ ActivityBase {
         }
 
         Rectangle {
-            width: guessedText.width
+            id: guessedTextBg
+            width: parent.width * 0.7
             height: guessedText.height
             radius: 10
+            border.color: "#121212"
             border.width: 1
-            gradient: Gradient {
-                GradientStop { position: 0.0; color: "#000" }
-                GradientStop { position: 0.9; color: "#666" }
-                GradientStop { position: 1.0; color: "#AAA" }
-            }
+            color: "#373737"
             anchors {
                 horizontalCenter: parent.horizontalCenter
             }
@@ -317,10 +316,10 @@ ActivityBase {
             height: 1.2 * internalTextComponent.height
             width: 1.3 * internalTextComponent.width
             anchors {
-                bottom: keyboard.enabled ? keyboard.top : parent.bottom
-                bottomMargin: keyboard.enabled ? 1.2 * bar.height : 0.55 * parent.height
+                top: guessedTextBg.bottom
+                bottom: undefined
                 right: parent.right
-                rightMargin: 0.025 * parent.width
+                margins: 0.025 * parent.width
             }
         }
 
@@ -330,9 +329,9 @@ ActivityBase {
             sourceSize.width: Math.min(score.width, clock.width)
             visible: false
             anchors {
-                bottom: score.top
+                top: score.bottom
                 horizontalCenter: score.horizontalCenter
-                bottomMargin: 5 * ApplicationInfo.ratio
+                topMargin: 5 * ApplicationInfo.ratio
             }
             onClicked: Activity.nextSubLevel()
         }
@@ -346,8 +345,8 @@ ActivityBase {
             id: clock
             anchors {
                 left: parent.left
-                top: parent.top
-                margins: 10
+                top: guessedTextBg.bottom
+                margins: 0.025 * parent.width
             }
             sourceSize.width: 66 * bar.barZoom
             property int remainingLife: items.remainingLife
