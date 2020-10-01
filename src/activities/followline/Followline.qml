@@ -35,7 +35,8 @@ ActivityBase {
         id: background
         source: Activity.url + "background.svg"
         fillMode: Image.PreserveAspectCrop
-        sourceSize.width: Math.max(parent.width, parent.height)
+        sourceSize.width: width
+        sourceSize.height: height
 
         signal start
         signal stop

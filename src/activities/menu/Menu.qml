@@ -183,7 +183,8 @@ ActivityBase {
     pageComponent: Image {
         id: background
         source: activity.url + "background.svg"
-        sourceSize.width: Math.max(parent.width, parent.height)
+        sourceSize.width: width
+        sourceSize.height: height
         height: main.height
         fillMode: Image.PreserveAspectCrop
 

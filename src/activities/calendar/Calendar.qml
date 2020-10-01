@@ -40,7 +40,8 @@ ActivityBase {
         signal stop
         fillMode: Image.PreserveAspectCrop
         source: "qrc:/gcompris/src/activities/fifteen/resource/background.svg"
-        sourceSize.width: Math.max(parent.width, parent.height)
+        sourceSize.width: width
+        sourceSize.height: height
 
         Component.onCompleted: {
             activity.start.connect(start)

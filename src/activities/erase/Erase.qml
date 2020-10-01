@@ -41,7 +41,8 @@ ActivityBase {
         focus: true
         fillMode: Image.PreserveAspectCrop
         source: Activity.url + Activity.getFirstImage()
-        sourceSize.width: Math.max(parent.width, parent.height)
+        sourceSize.width: width
+        sourceSize.height: height
 
         Component.onCompleted: {
             activity.start.connect(start)

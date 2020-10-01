@@ -53,7 +53,8 @@ ActivityBase {
         id: background
         source: "qrc:/gcompris/src/activities/programmingMaze/resource/background-pm.svg"
         fillMode: Image.PreserveAspectCrop
-        sourceSize.width: parent.width
+        sourceSize.width: width
+        sourceSize.height: height
 
         signal start
         signal stop
