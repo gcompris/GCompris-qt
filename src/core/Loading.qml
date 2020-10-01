@@ -61,7 +61,7 @@ Item {
      * type:bool
      * Whether the loading icon is active.
      */
-    property bool active: true
+    property bool active: false
 
     /**
      * Start the loading overlay.
