@@ -166,9 +166,9 @@ function moveSpaceship() {
     // calculate gravity
     if(planetsCounter > 0) {
         // calculate distance between planet center and spaceship center
-        var hypothenuse = Math.hypot(
-            Math.abs((currentPlanet.x + (currentPlanet.width * 0.5)) - items.spaceshipX),
-            Math.abs((currentPlanet.y + (currentPlanet.height * 0.5)) - items.spaceshipY));
+        var hypothenuse = Math.sqrt(
+            Math.pow((currentPlanet.x + (currentPlanet.width * 0.5)) - items.spaceshipX, 2) +
+            Math.pow((currentPlanet.y + (currentPlanet.height * 0.5)) - items.spaceshipY, 2));
         items.gravity = (planetGravity * (currentLevel * 0.33 + 1)) / Math.pow(hypothenuse, 2) * 100;
     } else {
         items.gravity = 0;
@@ -178,7 +178,7 @@ function moveSpaceship() {
 
     // Check for crash
     computeOverlap();
-    
+
     // Don't go out of the screen or stay stuck on the borders
     if(items.spaceshipX > items.background.width - items.borderMargin) {
         move = 0;
