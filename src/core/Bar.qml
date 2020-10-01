@@ -424,7 +424,7 @@ Item {
             source: "qrc:/gcompris/src/core/resource/bar_previous.svg";
             sourceSize.width: halfButtonScaled
             onClicked: {
-                if(bonus)
+                if(typeof bonus !== "undefined")
                     bonus.haltBonus();
                 bar.previousLevelClicked();
             }
@@ -454,7 +454,7 @@ Item {
             source: "qrc:/gcompris/src/core/resource/bar_next.svg";
             sourceSize.width: halfButtonScaled
             onClicked: {
-                if(bonus)
+                if(typeof bonus !== "undefined")
                     bonus.haltBonus();
                 bar.nextLevelClicked();
             }
@@ -506,7 +506,7 @@ Item {
             source: "qrc:/gcompris/src/core/resource/bar_home.svg";
             sourceSize.width: fullButtonScaled
             onClicked: {
-                if(bonus)
+                if(typeof bonus !== "undefined")
                     bonus.haltBonus();
                 bar.homeClicked();
             }
