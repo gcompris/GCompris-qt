@@ -115,22 +115,16 @@ Item {
 
         Rectangle {
             id: instructionBox
-            anchors.left: categoryBackground.left
-            anchors.right: categoryImage.left
-            anchors.leftMargin: 0.32 * parent.width
-            anchors.rightMargin: 0.03 * parent.width
-            color: "black"
-            opacity: items.instructionsVisible ? 0.85 : 0
+            anchors.left: middleScreen.left
+            anchors.right: middleScreen.right
+            anchors.verticalCenter: middleScreen.verticalCenter
+            color: "#373737"
+            opacity: items.instructionsVisible ? 1 : 0
             z: 3
             radius: 10
+            border.color: "#121212"
             border.width: 2
-            width: horizontalLayout ? parent.width/5 : parent.width/3
-            height: horizontalLayout ? parent.height/6 : parent.height * 0.09
-            gradient: Gradient {
-                GradientStop { position: 0.0; color: "#000" }
-                GradientStop { position: 0.9; color: "#666" }
-                GradientStop { position: 1.0; color: "#AAA" }
-            }
+            height: parent.height * 0.3
         }
 
         Zone {
@@ -147,7 +141,7 @@ Item {
             text: items.mode !== "expert" && items.details && items.details[bar.level-1] && items.details[bar.level - 1].instructions ? items.details[bar.level - 1].instructions : qsTr("Place the majority category images to the right and other images to the left")
             visible: items.instructionsVisible
             anchors.fill: instructionBox
-            anchors.bottom: instructionBox.bottom
+            anchors.centerIn: instructionBox
             fontSizeMode: Text.Fit
             wrapMode: Text.Wrap
             z: 3
