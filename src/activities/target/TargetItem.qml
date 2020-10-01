@@ -31,9 +31,10 @@ Image {
     source: Activity.url + "target_background.svg"
     width: parent.width * zoom
     height: parent.height * zoom
-    sourceSize.width: Math.max(parent.width, parent.height) * zoom
+    sourceSize.width: width
+    sourceSize.height: height
     anchors.centerIn: parent
-    
+
     property int zoom: 2
     property alias model: targetModel
     property bool stopMe: false

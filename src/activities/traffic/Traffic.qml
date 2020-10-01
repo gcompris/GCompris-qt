@@ -28,14 +28,15 @@ import "traffic.js" as Activity
 
 ActivityBase {
     id: activity
-    
+
     onStart: focus = true
     onStop: {}
-    
+
     pageComponent: Image {
         id: background
         source: "qrc:/gcompris/src/activities/traffic/resource/traffic_bg.svg"
-        sourceSize.width: Math.max(parent.width, parent.height)
+        sourceSize.width: width
+        sourceSize.height: height
         fillMode: Image.PreserveAspectCrop
 
         signal start
@@ -62,7 +63,7 @@ ActivityBase {
 
         onStart: { Activity.start(items, mode) }
         onStop: { Activity.stop() }
-        
+
         Image {
             id: jamBox
             source: "qrc:/gcompris/src/activities/traffic/resource/traffic_box.svg"
@@ -86,7 +87,7 @@ ActivityBase {
                 Repeater {
                     id: gridRepeater
                     model: jamGrid.columns * jamGrid.rows
-                    
+
                     delegate: Rectangle {
                         id: gridDelegate
                         height: jamGrid.height / jamGrid.rows
@@ -98,7 +99,7 @@ ActivityBase {
                 }
             }
         }
-        
+
         DialogHelp {
             id: dialogHelp
             onClose: home()
@@ -137,7 +138,7 @@ ActivityBase {
             id: bonus
             Component.onCompleted: win.connect(Activity.nextSubLevel)
         }
-        
+
         Score {
             id: score
             anchors.top: parent.top
@@ -146,6 +147,5 @@ ActivityBase {
             anchors.rightMargin: 10 * ApplicationInfo.ratio
             anchors.bottom: undefined
         }
-        
     }
 }

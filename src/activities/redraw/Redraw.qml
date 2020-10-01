@@ -39,7 +39,8 @@ ActivityBase {
         anchors.fill: parent
         source: Activity.url + "background.svg"
         fillMode: Image.PreserveAspectCrop
-        sourceSize.width: Math.max(parent.width, parent.height)
+        sourceSize.width: width
+        sourceSize.height: height
 
         property bool landscape: width >= height
         property int areaWidth: landscape ? (width - colorSelectorFlick.width) / 2 - 20 :

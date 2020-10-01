@@ -32,7 +32,8 @@ ActivityBase {
     pageComponent: Image {
         id: background
         source: "qrc:/gcompris/src/activities/leftright/resource/back.svg"
-        sourceSize.width: Math.max(parent.width, parent.height)
+        sourceSize.width: width
+        sourceSize.height: height
         focus: true
         signal start
         signal stop

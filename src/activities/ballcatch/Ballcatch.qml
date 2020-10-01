@@ -43,7 +43,8 @@ ActivityBase {
         focus: true
         fillMode: Image.PreserveAspectCrop
         source: "qrc:/gcompris/src/activities/ballcatch/resource/beach1.svg"
-        sourceSize.width: Math.max(parent.width, parent.height)
+        sourceSize.width: width
+        sourceSize.height: height
 
         property bool isVertical: background.width <= background.height     // To check if in Vertical mode
 

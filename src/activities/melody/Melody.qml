@@ -35,7 +35,8 @@ ActivityBase {
         id: background
         anchors.fill: parent
         source: items.url + 'xylofon_background.svg'
-        sourceSize.width: Math.max(parent.width, parent.height)
+        sourceSize.width: width
+        sourceSize.height: height
         fillMode: Image.PreserveAspectCrop
 
         // if audio is disabled, we display a dialog to tell users this activity requires audio anyway

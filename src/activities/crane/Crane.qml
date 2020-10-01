@@ -33,7 +33,7 @@ ActivityBase {
     // Overload this in your activity to change it
     // Put you default-<locale>.json files in it
     property string dataSetUrl: "qrc:/gcompris/src/activities/crane/resource/"
-    
+
     onStart: focus = true
     onStop: {}
 
@@ -42,8 +42,8 @@ ActivityBase {
         source: activity.dataSetUrl+"background.svg"
         fillMode: Image.PreserveAspectCrop
         anchors.fill: parent
-        sourceSize.width: Math.max(parent.width, parent.height)
-
+        sourceSize.width: width
+        sourceSize.height: height
 
         signal start
         signal stop
