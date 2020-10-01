@@ -60,7 +60,9 @@ ActivityBase {
         signal stop
         signal voiceDone
         source: Activity.url + "../algorithm/resource/desert_scene.svg"
-        sourceSize.width: parent.width
+        sourceSize.width: width
+        sourceSize.height: height
+        fillMode: Image.PreserveAspectCrop
 
         Component.onCompleted: {
                 activity.start.connect(start)
