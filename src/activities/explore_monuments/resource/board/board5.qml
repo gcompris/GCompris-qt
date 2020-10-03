@@ -38,7 +38,7 @@ QtObject {
         {
             "image": "qrc:/gcompris/src/activities/explore_monuments/resource/key.svg",
             "title": qsTr("Canyon de Chelly"),
-            "text": qsTr("The stoic red ruins of Canyon de Chelly in northeastern Arizona are at once part of the National Park Service and the Navajo Nation, having been established as a national monument in 1931. A number of important early Native American sites are preserved in the nearly 84,000 acres of parkland, and Canyon de Chelly also offers an array of Southwestern geological formations, including Spider Rock, an 800-foot-tall sandstone spire that rises eerily from the bottom of the canyon floor."),
+            "text": qsTr("The stoic red ruins of Canyon de Chelly in northeastern Arizona are at once part of the National Park Service and the Navajo Nation, having been established as a national monument in 1931. A number of important early Native American sites are preserved in the nearly 84000 acres of parkland, and Canyon de Chelly also offers an array of Southwestern geological formations, including Spider Rock, an 800-foot-tall sandstone spire that rises eerily from the bottom of the canyon floor."),
             "image2": "qrc:/gcompris/src/activities/explore_monuments/resource/usa/canyondeChelly.jpg",
             "text2": qsTr("Canyon de Chelly"),
             "x": "0.277",
