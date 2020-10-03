@@ -31,7 +31,7 @@ QtObject{
             "image": imagesPrefix + "others/color2.png",
             "content": [
                 {
-                    "instructions": qsTr("Place the objects matching GREEN color to right and others to the left"),
+                    "instructions": qsTr("Place the objects matching GREEN color to the right and others to the left"),
                     "image": imagesPrefix + "green.png",
                     "maxNumberOfGood": 5,
                     "maxNumberOfBad": 4,
@@ -40,7 +40,7 @@ QtObject{
                     "bad": ["left.png","lobster.png","mail.png","post.png"]
                 },
                 {
-                    "instructions": qsTr("Place the objects matching WHITE color to right and others to the left"),
+                    "instructions": qsTr("Place the objects matching WHITE color to the right and others to the left"),
                     "image": imagesPrefix + "white.png",
                     "maxNumberOfGood": 6,
                     "maxNumberOfBad": 6,
@@ -49,7 +49,7 @@ QtObject{
                     "bad": ["flash.png","plum.png","potato.png","pumpkin.png","rabbit.png","kiwi.png"]
                 },
                 {
-                    "instructions": qsTr("Place the objects matching PINK color to right and others to the left"),
+                    "instructions": qsTr("Place the objects matching PINK color to the right and others to the left"),
                     "image": imagesPrefix + "pink.png",
                     "maxNumberOfGood": 5,
                     "maxNumberOfBad": 4,
@@ -59,7 +59,7 @@ QtObject{
                 },
                 {
                     "tags": ["red"],
-                    "instructions": qsTr("Place the objects matching RED color to right and others to the left"),
+                    "instructions": qsTr("Place the objects matching RED color to the right and others to the left"),
                     "image": imagesPrefix + "red.png",
                     "maxNumberOfGood": 5,
                     "maxNumberOfBad": 4,
@@ -68,7 +68,7 @@ QtObject{
                     "bad": ["shapes/halforange.svg","radio.png","ramp.png","wheat.png"]
                 },
                 {
-                    "instructions": qsTr("Place the objects matching BROWN color to right and others to the left"),
+                    "instructions": qsTr("Place the objects matching BROWN color to the right and others to the left"),
                     "image": imagesPrefix + "brown.png",
                     "maxNumberOfGood": 6,
                     "maxNumberOfBad": 6,
@@ -77,7 +77,7 @@ QtObject{
                     "bad": ["cheese.png","bright.png","shapes/conehat.svg","dolphin.png","shapes/cd.svg","drip.png"]
                 },
                 {
-                    "instructions": qsTr("Place the objects matching PURPLE color to right and others to the left"),
+                    "instructions": qsTr("Place the objects matching PURPLE color to the right and others to the left"),
                     "categorise": "PURPLE",
                     "image": imagesPrefix + "others/purple.png",
                     "maxNumberOfGood": 6,
@@ -87,7 +87,7 @@ QtObject{
                     "bad": ["bulb.png","bell.png","blackbird.png","umbrella.png","pumpkin.png","shapes/halfmoon.svg"]
                 },
                 {
-                    "instructions": qsTr("Place the objects matching GREY color to right and others to the left"),
+                    "instructions": qsTr("Place the objects matching GREY color to the right and others to the left"),
                     "image": imagesPrefix + "gray.png",
                     "maxNumberOfGood": 6,
                     "maxNumberOfBad": 6,
@@ -96,7 +96,7 @@ QtObject{
                     "bad": ["shapes/backcard.svg","radio.png","clover.png","left.png","flash.png","ink.png"]
                 },
                 {
-                    "instructions": qsTr("Place the objects matching ORANGE color to right and others to the left"),
+                    "instructions": qsTr("Place the objects matching ORANGE color to the right and others to the left"),
                     "image": imagesPrefix + "orange-color.png",
                     "maxNumberOfGood": 3,
                     "maxNumberOfBad": 3,
@@ -105,7 +105,7 @@ QtObject{
                     "bad": ["plum.png","potato.png","post.png"]
                 },
                 {
-                    "instructions": qsTr("Place the objects matching YELLOW color to right and others to the left"),
+                    "instructions": qsTr("Place the objects matching YELLOW color to the right and others to the left"),
                     "categorise":"YELLOW",
                     "image": imagesPrefix + "yellow.png",
                     "maxNumberOfGood": 6,
