@@ -137,7 +137,7 @@ ActivityBase {
                 width: parent.width
                 text: qsTr("Load")
                 onClicked: {
-                    creationHandler.loadWindow()
+                    creationHandler.loadWindow();
                 }
             }
             GCButton {
@@ -146,9 +146,11 @@ ActivityBase {
                 width: parent.width
                 text: qsTr("Save")
                 onClicked: {
-                    var textToSave = {}
-                    textToSave["text"] = edit.getFormattedText(0, edit.length)
-                    creationHandler.saveWindow(textToSave)
+                    var textToSave = {};
+                    // Remove focus to force text storing within the TextEdit
+                    edit.focus = false;
+                    textToSave["text"] = edit.getFormattedText(0, edit.length);
+                    creationHandler.saveWindow(textToSave);
                 }
             }
         }
