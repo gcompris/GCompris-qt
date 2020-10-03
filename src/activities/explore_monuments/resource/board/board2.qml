@@ -71,7 +71,7 @@ QtObject {
         {
             "image": "qrc:/gcompris/src/activities/explore_monuments/resource/key.svg",
             "title": qsTr("Ajanta Caves"),
-            "text": qsTr("The Ajanta Caves are about 29 rock-cut Buddhist cave monuments which date from the 2nd century BCE to about 480 CE in Aurangabad district of Maharashtra state of India. The caves include paintings and rock cut sculptures described as among the finest surviving examples of ancient Indian art, particularly expressive paintings that present emotion through gesture, pose and form. Since 1983, the caves have been a UNESCO World Heritage Site"),
+            "text": qsTr("The Ajanta Caves are about 29 rock-cut Buddhist cave monuments which date from the 2nd century BCE to about 480 CE in Aurangabad district of Maharashtra state of India. The caves include paintings and rock cut sculptures described as among the finest surviving examples of ancient Indian art, particularly expressive paintings that present emotion through gesture, pose and form. Since 1983, the caves have been a UNESCO World Heritage Site."),
             "image2": "qrc:/gcompris/src/activities/explore_monuments/resource/india/ajantaCave.jpg",
             "text2": qsTr("Ajanta Caves"),
             "x": "0.250",
