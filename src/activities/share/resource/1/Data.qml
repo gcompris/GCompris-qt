@@ -202,7 +202,7 @@ Data {
                 "placedInBoys": 0
             },
             {
-                "instruction": qsTr("Michelle has 12 pieces of candy and wants to split them betweem 4 brothers and 1 sister. Help her share the pieces of candy."),
+                "instruction": qsTr("Michelle has 12 pieces of candy and wants to split them between 4 brothers and 1 sister. Help her share the pieces of candy."),
                 "randomisedInputData": false,
                 "totalBoys": 4,
                 "totalGirls": 1,
