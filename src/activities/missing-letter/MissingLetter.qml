@@ -71,6 +71,7 @@ ActivityBase {
             property alias score: score
             property alias questionImage: questionImage
             property alias questionText: questionText
+            property alias questionAnim: questionAnim
             property alias answers: answers
             property GCAudio audioVoices: activity.audioVoices
             property alias englishFallbackDialog: englishFallbackDialog
@@ -142,7 +143,7 @@ ActivityBase {
                     textLabel: modelData
                     blockAllButtonClicks: items.buttonsBlocked
                     isCorrectAnswer: modelData === items.answer
-                    onCorrectlyPressed: questionAnim.start()
+                    onCorrectlyPressed: questionAnim.restart()
                     onPressed: {
                         items.buttonsBlocked = true
                         if(!items.isGoodAnswer) {
