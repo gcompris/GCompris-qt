@@ -121,16 +121,15 @@ ActivityBase {
         Grid {
             id: controls
             z: 20
-            spacing: (boardBg.width - buttonSize * 4) * 0.25
+            spacing: (boardBg.width - items.cellSize * 4) * 0.25
             columns: items.isPortrait ? 4 : 1
             horizontalItemAlignment: Grid.AlignHCenter
             verticalItemAlignment: Grid.AlignVCenter
-            property int buttonSize: undo.width
 
             GCButton {
                 id: undo
-                height: 30 * ApplicationInfo.ratio
-                width: height
+                height: items.cellSize
+                width: items.cellSize
                 text: "";
                 theme: "noStyle"
                 onClicked: {
@@ -153,9 +152,9 @@ ActivityBase {
                 opacity: items.history.length > 0 ? 1 : 0
                 Image {
                     source: Activity.url + 'undo.svg'
-                    height: parent.height
-                    width: height
-                    sourceSize.height: height
+                    height: items.cellSize
+                    width: items.cellSize
+                    sourceSize.height: items.cellSize
                     fillMode: Image.PreserveAspectFit
                 }
                 Behavior on opacity {
@@ -168,8 +167,8 @@ ActivityBase {
 
             GCButton {
                 id: redo
-                height: undo.height
-                width: undo.height
+                height: items.cellSize
+                width: items.cellSize
                 text: "";
                 theme: "noStyle"
                 onClicked: {
@@ -185,9 +184,9 @@ ActivityBase {
                 opacity: items.redo_stack.length > 0 && acceptClick ? 1 : 0
                 Image {
                     source: Activity.url + 'redo.svg'
-                    height: parent.height
-                    width: height
-                    sourceSize.height: height
+                    height: items.cellSize
+                    width: items.cellSize
+                    sourceSize.height: items.cellSize
                     fillMode: Image.PreserveAspectFit
                 }
                 Behavior on opacity {
@@ -200,8 +199,8 @@ ActivityBase {
 
             GCButton {
                 id: drawerButton
-                height: 30 * ApplicationInfo.ratio
-                width: height
+                height: items.cellSize
+                width: items.cellSize
                 text: "";
                 theme: "noStyle"
 
@@ -214,9 +213,9 @@ ActivityBase {
                 opacity: displayTakenPiecesButton ? 1 : 0
                 Image {
                     source: Activity.url + 'captured.svg'
-                    height: parent.height
-                    width: height
-                    sourceSize.height: height
+                    height: items.cellSize
+                    width: items.cellSize
+                    sourceSize.height: items.cellSize
                     fillMode: Image.PreserveAspectFit
                 }
                 Behavior on opacity {
@@ -228,17 +227,17 @@ ActivityBase {
             }
 
             GCButton {
-                height: undo.height
-                width: undo.height
+                height: items.cellSize
+                width: items.cellSize
                 text: "";
                 theme: "noStyle"
                 enabled: !timerSwap.running && items.twoPlayer
                 opacity: items.twoPlayer
                 Image {
                     source: Activity.url + 'turn.svg'
-                    height: parent.height
-                    width: height
-                    sourceSize.height: height
+                    height: items.cellSize
+                    width: items.cellSize
+                    sourceSize.height: items.cellSize
                     fillMode: Image.PreserveAspectFit
                 }
                 onClicked: chessboard.swap()
@@ -268,15 +267,19 @@ ActivityBase {
                 PropertyChanges {
                     target: layoutArea
                     width: background.width * 0.86
-                    height: background.height - textMessage.height - bar.height * 1.1 - controls.height
+                    height: background.height - textMessage.height - bar.height * 1.1
                 }
                 PropertyChanges {
                     target: controls
                     width:layoutArea.width
-                    height: controls.buttonSize * 1.2
+                    height: items.cellSize * 1.2
                     anchors.leftMargin: controls.spacing * 0.5
                     anchors.topMargin: 0
                     anchors.horizontalCenterOffset: 0
+                }
+                PropertyChanges {
+                    target: boardBg
+                    anchors.verticalCenterOffset: items.cellSize * -0.6
                 }
                 AnchorChanges {
                     target: layoutArea
@@ -298,11 +301,15 @@ ActivityBase {
                 }
                 PropertyChanges {
                     target: controls
-                    width: controls.buttonSize * 1.2
+                    width: items.cellSize * 1.2
                     height: layoutArea.height
                     anchors.leftMargin: 0
                     anchors.topMargin: controls.spacing * 0.5
                     anchors.horizontalCenterOffset: items.cellSize * 0.8
+                }
+                PropertyChanges {
+                    target: boardBg
+                    anchors.verticalCenterOffset: 0
                 }
                 AnchorChanges {
                     target: layoutArea
