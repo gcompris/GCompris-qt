@@ -166,6 +166,7 @@ Rectangle {
                         wrapMode: TextEdit.Wrap
                         textFormat: TextEdit.RichText
                         property string style: "<HEAD><STYLE type='text/css'>A {color: black;}</STYLE></HEAD>"
+                        onLinkActivated: Qt.openUrlExternally(link)
                     }
                 }
                 // The scroll buttons
