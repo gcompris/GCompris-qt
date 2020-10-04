@@ -70,9 +70,16 @@ DialogBackground {
         qsTr("GCompris Home Page: https://gcompris.net") + "</a>" +
         "</b></center>" +
         "<center>" + gcVersionTxt + " " + qtVersionTxt + "</center>" + "<br/>" +
+        //: Replace the link with the page in your language if it exists, else keep the english page link
+        qsTr("You can provide financial support for the development of <b>GCompris</b>, please visit " +
+              "<a href='https://gcompris.net/donate-en.html'>https://gcompris.net/donate-en.html</a>.") +
 
-        "<img align='right' width='" + 320 * ApplicationInfo.ratio +
-        "' height='" + 114 * ApplicationInfo.ratio + "' src='qrc:/gcompris/src/core/resource/gcompris.png'/>" +
+        "<br />" +
+
+        "<center><img width='" + 320 * ApplicationInfo.ratio +
+        "' height='" + 114 * ApplicationInfo.ratio + "' src='qrc:/gcompris/src/core/resource/gcompris.png'/></center>" +
+
+        "<br />" +
 
         qsTr("<b>GCompris</b> is a Free Software developed within the KDE community.") +
 
