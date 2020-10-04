@@ -99,16 +99,15 @@ ActivityBase {
         Grid {
             id: controls
             z: 20
-            spacing: (boardBg.width - buttonSize * 3) / 3
+            spacing: (boardBg.width - items.cellSize * 3) / 3
             columns: items.isPortrait ? 3 : 1
             horizontalItemAlignment: Grid.AlignHCenter
             verticalItemAlignment: Grid.AlignVCenter
-            property int buttonSize: undo.width
 
             GCButton {
                 id: undo
-                height: 30 * ApplicationInfo.ratio
-                width: height
+                height: items.cellSize
+                width: items.cellSize
                 text: "";
                 theme: "noStyle"
                 onClicked: Activity.undo()
@@ -116,9 +115,9 @@ ActivityBase {
                 opacity: enabled ? 1 : 0
                 Image {
                     source: 'qrc:/gcompris/src/activities/chess/resource/undo.svg'
-                    height: parent.height
-                    width: height
-                    sourceSize.height: height
+                    height: items.cellSize
+                    width: items.cellSize
+                    sourceSize.height: items.cellSize
                     fillMode: Image.PreserveAspectFit
                 }
                 Behavior on opacity {
@@ -131,8 +130,8 @@ ActivityBase {
 
             GCButton {
                 id: redo
-                height: undo.height
-                width: undo.height
+                height: items.cellSize
+                width: items.cellSize
                 text: "";
                 theme: "noStyle"
                 onClicked: {
@@ -142,9 +141,9 @@ ActivityBase {
                 opacity: enabled
                 Image {
                     source: 'qrc:/gcompris/src/activities/chess/resource/redo.svg'
-                    height: parent.height
-                    width: height
-                    sourceSize.height: height
+                    height: items.cellSize
+                    width: items.cellSize
+                    sourceSize.height: items.cellSize
                     fillMode: Image.PreserveAspectFit
                 }
                 Behavior on opacity {
@@ -156,17 +155,17 @@ ActivityBase {
             }
 
             GCButton {
-                height: undo.height
-                width: undo.height
+                height: items.cellSize
+                width: items.cellSize
                 text: "";
                 theme: "noStyle"
                 enabled: items.twoPlayer
                 opacity: enabled
                 Image {
                     source: 'qrc:/gcompris/src/activities/chess/resource/turn.svg'
-                    height: parent.height
-                    width: height
-                    sourceSize.height: height
+                    height: items.cellSize
+                    width: items.cellSize
+                    sourceSize.height: items.cellSize
                     fillMode: Image.PreserveAspectFit
                 }
                 onClicked: chessboard.swap()
@@ -196,14 +195,18 @@ ActivityBase {
                 PropertyChanges {
                     target: layoutArea
                     width: background.width * 0.86
-                    height: background.height - textMessage.height - bar.height * 1.1 - controls.height
+                    height: background.height - textMessage.height - bar.height * 1.1
                 }
                 PropertyChanges {
                     target: controls
                     width:layoutArea.width
-                    height: controls.buttonSize * 1.2
+                    height: items.cellSize * 1.2
                     anchors.leftMargin: controls.spacing * 0.5
                     anchors.topMargin: 0
+                }
+                PropertyChanges {
+                    target: boardBg
+                    anchors.verticalCenterOffset: items.cellSize * -0.6
                 }
                 AnchorChanges {
                     target: layoutArea
@@ -225,10 +228,14 @@ ActivityBase {
                 }
                 PropertyChanges {
                     target: controls
-                    width: controls.buttonSize * 1.2
+                    width: items.cellSize * 1.2
                     height: layoutArea.height
                     anchors.leftMargin: 0
                     anchors.topMargin: controls.spacing * 0.5
+                }
+                PropertyChanges {
+                    target: boardBg
+                    anchors.verticalCenterOffset: 0
                 }
                 AnchorChanges {
                     target: layoutArea
