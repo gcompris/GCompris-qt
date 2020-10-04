@@ -133,7 +133,6 @@ ActivityBase {
                 text: "";
                 theme: "noStyle"
                 onClicked: {
-                    buttonsBlocked = true
                     Activity.undo()
                     if(whiteTakenPieces.pushedLast[whiteTakenPieces.pushedLast.length-1] == movesCount) {
                         whiteTakenPieces.pushedLast.pop()
