@@ -180,6 +180,7 @@ function stop() {
 }
 
 function initLevel() {
+    items.questionAnim.stop()
     items.bar.level = currentLevel + 1
     items.score.currentSubLevel = 1
     items.score.numberOfSubLevels = questions[currentLevel].length
