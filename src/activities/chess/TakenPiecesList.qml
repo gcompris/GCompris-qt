@@ -22,7 +22,7 @@ import QtQuick 2.6
 import "chess.js" as Activity
 
 Rectangle {
-
+    id: listBG
     property alias takenPiecesModel: pieceList
     property var pushedLast: []
     property double openWidth
@@ -32,16 +32,20 @@ Rectangle {
     property bool edge
 
     height: parent.height
-    width: open ? openWidth : 0
+    width: openWidth
     color: edge ? "#88EEEEEE" : "#88111111"
 
-    Behavior on width {
-        NumberAnimation { duration: 200 }
-    }
-
     anchors {
-        left: edge ? undefined : parent.left
-        right: edge ? parent.right : undefined
+        right: edge ? undefined : parent.left
+        left: edge ? parent.right : undefined
+        rightMargin: edge ? 0 : (open ? -openWidth : 0)
+        leftMargin: edge ? (open ? -openWidth : 0) : 0
+        Behavior on leftMargin {
+            NumberAnimation { duration: 200 }
+        }
+        Behavior on rightMargin {
+            NumberAnimation { duration: 200 }
+        }
     }
 
     Flow {
@@ -53,19 +57,15 @@ Rectangle {
             Piece {
                 id: piece
                 sourceSize.width: width
-                width: open ? piece.height : 0
-                height: parent.height / 18
+                width: Math.min(listBG.height / 18, listBG.openWidth)
+                height: width
                 source: img ? Activity.url + img + '.svg' : ''
                 img: model.img
                 newPos: model.pos
-
-                Behavior on width {
-                    NumberAnimation { duration: 200 }
-                }
             }
         }
     }
-    
+
     MouseArea {
         anchors.fill: parent
         onClicked: {
