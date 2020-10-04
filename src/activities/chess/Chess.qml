@@ -31,6 +31,16 @@ ActivityBase {
     id: activity
 
     property bool acceptClick: true
+    property bool buttonsBlocked: false
+    onButtonsBlockedChanged: if(buttonsBlocked) unlockButtonBlock.restart()
+    Timer {
+        id: unlockButtonBlock
+        interval: 400
+        running: false
+        repeat: false
+        onTriggered: buttonsBlocked = false
+    }
+
     property bool twoPlayers: false
     property bool displayTakenPiecesButton: true
     property int coordsOpacity: 1
@@ -124,6 +134,7 @@ ActivityBase {
                 text: "";
                 theme: "noStyle"
                 onClicked: {
+                    buttonsBlocked = true
                     Activity.undo()
                     if(whiteTakenPieces.pushedLast[whiteTakenPieces.pushedLast.length-1] == movesCount) {
                         whiteTakenPieces.pushedLast.pop()
@@ -138,8 +149,8 @@ ActivityBase {
                     }
                     movesCount--
                 }
-                enabled: items.history.length > 0 ? 1 : 0
-                opacity: enabled
+                enabled: !buttonsBlocked && opacity == 1
+                opacity: items.history.length > 0 ? 1 : 0
                 Image {
                     source: Activity.url + 'undo.svg'
                     height: parent.height
@@ -162,6 +173,7 @@ ActivityBase {
                 text: "";
                 theme: "noStyle"
                 onClicked: {
+                    buttonsBlocked = true
                     if (!twoPlayers) {
                         acceptClick = false;
                         Activity.redo()
@@ -169,8 +181,8 @@ ActivityBase {
                         Activity.redo()
                     }
                 }
-                enabled: items.redo_stack.length > 0 && acceptClick ? 1 : 0
-                opacity: enabled
+                enabled: !buttonsBlocked && opacity == 1
+                opacity: items.redo_stack.length > 0 && acceptClick ? 1 : 0
                 Image {
                     source: Activity.url + 'redo.svg'
                     height: parent.height
@@ -198,8 +210,8 @@ ActivityBase {
                     blackTakenPieces.open = !blackTakenPieces.open
                 }
 
-                enabled: displayTakenPiecesButton
-                opacity: enabled
+                enabled: !buttonsBlocked && displayTakenPiecesButton
+                opacity: displayTakenPiecesButton ? 1 : 0
                 Image {
                     source: Activity.url + 'captured.svg'
                     height: parent.height
@@ -220,8 +232,8 @@ ActivityBase {
                 width: undo.height
                 text: "";
                 theme: "noStyle"
-                enabled: items.twoPlayer
-                opacity: enabled
+                enabled: !timerSwap.running && items.twoPlayer
+                opacity: items.twoPlayer
                 Image {
                     source: Activity.url + 'turn.svg'
                     height: parent.height
