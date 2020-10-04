@@ -177,6 +177,8 @@ function getRandomMaskedQuestion(clearQuestion, guessLetters, level) {
 }
 
 function stop() {
+    items.questionAnim.stop();
+    items.audioVoices.clearQueue();
 }
 
 function initLevel() {
