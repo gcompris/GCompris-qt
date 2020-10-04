@@ -25,21 +25,19 @@ Rectangle {
     id: listBG
     property alias takenPiecesModel: pieceList
     property var pushedLast: []
-    property double openWidth
     property bool open: false
 
     // left = false, right = true
     property bool edge
 
     height: parent.height
-    width: openWidth
     color: edge ? "#88EEEEEE" : "#88111111"
 
     anchors {
         right: edge ? undefined : parent.left
         left: edge ? parent.right : undefined
-        rightMargin: edge ? 0 : (open ? -openWidth : 0)
-        leftMargin: edge ? (open ? -openWidth : 0) : 0
+        rightMargin: edge ? 0 : (open ? -listBG.width : 0)
+        leftMargin: edge ? (open ? -listBG.width : 0) : 0
         Behavior on leftMargin {
             NumberAnimation { duration: 200 }
         }
@@ -57,7 +55,7 @@ Rectangle {
             Piece {
                 id: piece
                 sourceSize.width: width
-                width: Math.min(listBG.height / 18, listBG.openWidth)
+                width: Math.min(listBG.height / 18, listBG.width)
                 height: width
                 source: img ? Activity.url + img + '.svg' : ''
                 img: model.img
