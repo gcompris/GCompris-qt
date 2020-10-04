@@ -94,6 +94,7 @@ ActivityBase {
             property alias playableChar: playableChar
             property alias score: score
             property bool brailleCodeSeen
+            property bool levelComplete: false
         }
 
         onStart: {
@@ -190,8 +191,8 @@ ActivityBase {
                 isLetter: true
                 onBrailleCharChanged: {
                     if(brailleChar === Activity.getCurrentLetter()) {
-                        particles.burst(40)
-                        Activity.nextQuestion()
+                        particles.burst(40);
+                        Activity.goodAnswer();
                     }
                 }
             }
@@ -267,10 +268,11 @@ ActivityBase {
             anchors {
                 top: instructionsArea.bottom
                 left: instructionsArea.horizontalCenter
-                bottom: braille_map.top 
+                bottom: braille_map.top
                 bottomMargin: 30 * ApplicationInfo.ratio
-            } 
+            }
             visible: !(dialogMap.visible || first_screen.visible)
+            onStop: if(!items.levelComplete) Activity.nextQuestion();
         }
 
         DialogHelp {

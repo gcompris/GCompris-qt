@@ -44,6 +44,7 @@ function stop() {
 }
 
 function initLevel() {
+    items.levelComplete = false
     items.bar.level = currentLevel + 1
     items.containerModel.clear()
     currentQuestion = 0
@@ -131,18 +132,19 @@ function previousLevel() {
     initLevel();
 }
 
-function nextQuestion() {
+function goodAnswer() {
+    items.score.currentSubLevel ++
+    items.score.playWinAnimation()
     if(currentDataSet.length <= ++currentQuestion) {
+        items.levelComplete = true
         items.bonus.good("flower")
-    } else {
-        // Let's not change the question immediately to let the
-        // children see his answer.
-        // We just set the opacity to 0, the questionItem will then grab
-        // the new question by itself
-        items.questionItem.opacity = 0.1
-        items.questionItem.opacity = 0
-        items.score.currentSubLevel ++
     }
+}
+
+function nextQuestion() {
+    // We just set the opacity to 0, the questionItem will then grab
+    // the new question by itself
+    items.questionItem.opacity = 0
 }
 
 function getCurrentTextQuestion() {
