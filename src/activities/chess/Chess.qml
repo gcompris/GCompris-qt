@@ -450,7 +450,7 @@ ActivityBase {
                     anchors.fill: parent
                     color: parent.containsDrag ? '#803ACAFF' : 'transparent'
                     border.width: parent.acceptMove ? 5 : 0
-                    border.color: '#FF808080'
+                    border.color: '#FF4EB271'
                     z: 1
                 }
             }
