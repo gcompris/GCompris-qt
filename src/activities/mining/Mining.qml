@@ -289,7 +289,8 @@ ActivityBase {
                         } else {
                             miningBg.anchors.horizontalCenterOffset = 0
                             miningBg.anchors.verticalCenterOffset = 0
-                            tuto.setState("Started")
+                            if(miningBg.subLevel != items.collectedNuggets)
+                                tuto.setState("Started")
                         }
                     }
                     if(previousScale != miningBg.scale) {
