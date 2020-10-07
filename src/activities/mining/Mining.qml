@@ -56,6 +56,7 @@ ActivityBase {
             property alias bonus: bonus
             property alias mineModel: mineObjects.model
             property Item nugget
+            property int collectedNuggets: 0
         }
 
         onStart: { Activity.start(items) }
@@ -173,6 +174,7 @@ ActivityBase {
                             onHit: {
                                 activity.audioEffects.play(Activity.url + "pickaxe.wav")
                                 background.gotIt = true
+                                items.collectedNuggets++
                                 tuto.setState("Unzoom")
                             }
 
@@ -354,7 +356,7 @@ ActivityBase {
                     verticalCenter: parent.verticalCenter
                     horizontalCenterOffset: parent.width / 10
                 }
-                text: miningBg.subLevel + "/" + miningBg.maxSubLevel
+                text: items.collectedNuggets + "/" + miningBg.maxSubLevel
                 color: "white"
                 font.bold: true
                 style: Text.Outline
