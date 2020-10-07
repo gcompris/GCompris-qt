@@ -72,6 +72,7 @@ function createLevel() {
 
 function initLevel() {
     items.bar.level = currentLevel + 1
+    items.collectedNuggets = 0
 
     createLevel()
 }
