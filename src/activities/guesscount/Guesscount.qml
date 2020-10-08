@@ -110,39 +110,45 @@ ActivityBase {
 
         Rectangle {
             id: top
-            width: parent.width
             height: parent.height/10
             anchors {
+                left: parent.left
+                right: parent.right
                 top: parent.top
-                topMargin: 20
+                margins: 20 * ApplicationInfo.ratio
             }
             color: "transparent"
             Rectangle {
                 id: questionNo
-                width: parent.width*0.2
+                width: parent.width * 0.2
                 height: parent.height
                 radius: 20
                 color: "steelblue"
-                anchors {
-                    right: guessLabel.left
-                    rightMargin: 20
-                }
+                anchors.left: parent.left
+
                 GCText {
                     color: "#E8E8E8"
                     anchors.horizontalCenter: parent.horizontalCenter
                     anchors.verticalCenter: parent.verticalCenter
+                    width: parent.width
+                    height: parent.height
+                    fontSizeMode: Text.Fit
+                    minimumPointSize: 7
                     fontSize: mediumSize
+                    verticalAlignment: Text.AlignVCenter
+                    horizontalAlignment: Text.AlignHCenter
                     text: qsTr("%1/%2").arg(items.sublevel).arg(items.data.length)
                 }
             }
             Rectangle {
                 id: guessLabel
-                width: parent.width*0.4
+                width: parent.width * 0.7
                 height: parent.height
                 radius: 20
                 color: "orange"
                 anchors {
-                    horizontalCenter: parent.horizontalCenter
+                    left: questionNo.right
+                    leftMargin: 20 * ApplicationInfo.ratio
                 }
                 Rectangle {
                     id: insideFill
@@ -158,7 +164,13 @@ ActivityBase {
                     id: guess
                     anchors.horizontalCenter: parent.horizontalCenter
                     anchors.verticalCenter: parent.verticalCenter
-                    fontSize: smallSize
+                    width: insideFill.width
+                    height: insideFill.height
+                    fontSizeMode: Text.Fit
+                    minimumPointSize: 7
+                    fontSize: mediumSize
+                    verticalAlignment: Text.AlignVCenter
+                    horizontalAlignment: Text.AlignHCenter
                     text: qsTr("Guesscount: %1").arg(items.result)
                 }
             }
@@ -285,12 +297,7 @@ ActivityBase {
             width: parent.width*0.49
             height: parent.height/6
             visible: false
-            color: "steelblue"
-            gradient: Gradient {
-                GradientStop { position: 0.0; color: "#000" }
-                GradientStop { position: 0.9; color: "#666" }
-                GradientStop { position: 1.0; color: "#AAA" }
-            }
+            color: "#373737"
             radius: 30
             property alias dialogText: dialogText
             anchors.centerIn: parent
@@ -304,8 +311,6 @@ ActivityBase {
                 z: warningDialog.z
                 fontSize: background.vert ? regularSize : smallSize
                 color: "white"
-                style: Text.Outline
-                styleColor: "black"
                 horizontalAlignment: Text.AlignHCenter
                 width: parent.width
                 wrapMode: TextEdit.WordWrap
