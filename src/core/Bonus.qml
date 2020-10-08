@@ -83,6 +83,11 @@ Image {
      */
     signal loose
 
+    Connections {
+        target: activity
+        onHome: haltBonus();
+    }
+
     /// @cond INTERNAL_DOCS
     property string url: "qrc:/gcompris/src/core/resource/"
     property bool isWin: false
