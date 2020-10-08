@@ -31,7 +31,7 @@ Rectangle {
     property var life: life
     property var bar: bar
 
-    width: gridPart.width
+    width: background.width
     height: background.height / 3
     anchors.right: parent.right
     anchors.bottom: parent.bottom
@@ -45,8 +45,8 @@ Rectangle {
 
     GCText {
         id: goalText
-        height: parent.height - bar.height
-        width: parent.width - parent.height*1.8
+        height: muncherLife.height
+        width: parent.width
 
         function setTextGoal(goal) {
             if (activity.type === "equality") {
@@ -69,7 +69,7 @@ Rectangle {
         maximumLineCount: 1
         verticalAlignment: Text.AlignTop
         horizontalAlignment: Text.AlignHCenter
-
+        anchors.top: parent.top
         anchors.horizontalCenter: parent.horizontalCenter
     }
 
@@ -77,9 +77,9 @@ Rectangle {
         id: muncherLife
 
         width: height
-        height: parent.height * 0.5
+        height: (parent.height - bar.height) * 0.4
         anchors.right: parent.right
-        anchors.verticalCenter: parent.verticalCenter
+        anchors.top: goalText.bottom
         anchors.rightMargin: 5 * ApplicationInfo.ratio
         border.width: 2
         radius: 5
@@ -92,6 +92,18 @@ Rectangle {
             height: parent.width
             frames: 1
         }
+    }
+
+    // Show an hint to show that can move by swiping anywhere
+    Image {
+        anchors {
+            left: parent.left
+            verticalCenter: muncherLife.verticalCenter
+            margins: 12
+        }
+        source: "qrc:/gcompris/src/core/resource/arrows_move.svg"
+        sourceSize.height: muncherLife.height
+        opacity: topPanel.bar.level == 1 && ApplicationInfo.isMobile ? 1 : 0
     }
 
     Bar {
