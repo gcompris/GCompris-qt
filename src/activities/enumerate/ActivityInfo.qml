@@ -26,7 +26,7 @@ ActivityInfo {
     title: qsTr("Count the items")
     //: Help title
     description: qsTr("Place the items in the best way to count them.")
-//  intro: "Count the elements by organising them then type the answer on your keyboard."
+//  intro: "Count the elements by organizing them then type the answer on your keyboard."
     //: Help goal
     goal: qsTr("Numeration training.")
     //: Help prerequisite
