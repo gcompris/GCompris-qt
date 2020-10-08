@@ -506,8 +506,6 @@ Item {
             source: "qrc:/gcompris/src/core/resource/bar_home.svg";
             sourceSize.width: fullButtonScaled
             onClicked: {
-                if(typeof bonus !== "undefined")
-                    bonus.haltBonus();
                 bar.homeClicked();
             }
         }
