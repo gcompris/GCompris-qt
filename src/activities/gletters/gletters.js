@@ -135,6 +135,7 @@ function start(items_, uppercaseOnly_,  _mode, speedSetting_) {
 }
 
 function stop() {
+    items.bonus.bonusStopped = true;
     deleteWords();
     wordComponent = null
     items.wordDropTimer.stop();
