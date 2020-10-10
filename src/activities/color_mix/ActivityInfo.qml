@@ -26,7 +26,7 @@ ActivityInfo {
   title: qsTr("Mixing paint colors")
   //: Help title
   description: qsTr("Discover paint color mixing.")
-//  intro: "Match the colour by moving the sliders on the tubes of paint"
+//  intro: "Match the color by moving the sliders on the tubes of paint"
   //: Help goal
   goal: qsTr("Mix primary colors to match the given color.")
   //: Help prerequisite

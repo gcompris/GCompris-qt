@@ -26,7 +26,7 @@ ActivityInfo {
   title: qsTr("Mixing light colors")
   //: Help title
   description: qsTr("Discover light color mixing.")
-//  intro: "Match the colour by moving the sliders on the torches"
+//  intro: "Match the color by moving the sliders on the torches"
   //: Help goal
   goal: qsTr("Mix primary colors to match the given color.")
   //: Help prerequisite
