@@ -62,9 +62,17 @@ Item {
                     target: rotate
                     angle: 0
                 }
+                PropertyChanges {
+                    target: baseRotAnim
+                    running: true
+                }
             },
             State {
                 name: "Rotated"
+                PropertyChanges {
+                    target: baseRotAnim
+                    running: false
+                }
                 PropertyChanges {
                     target: rotate
                     angle: -45
@@ -72,6 +80,10 @@ Item {
             },
             State {
                 name: "GuessNumber"
+                PropertyChanges {
+                    target: baseRotAnim
+                    running: false
+                }
                 PropertyChanges{
                     target: hatImg
                     source: Activity.url + "hat-point.svg"
@@ -96,12 +108,57 @@ Item {
                     }
     }
 
+    SequentialAnimation {
+          id: baseRotAnim
+          running: true
+          loops: Animation.Infinite
+          NumberAnimation {
+              target: hatImg
+              property: "rotation"
+              from: 0; to: 25
+              duration: 500
+          }
+          NumberAnimation {
+              target: hatImg
+              property: "rotation"
+              from: 25; to: 0
+              duration: 500
+          }
+          NumberAnimation {
+              target: hatImg
+              property: "rotation"
+              from: 0; to: 0
+              duration: 2000
+          }
+          NumberAnimation {
+              target: hatImg
+              property: "rotation"
+              from: 0; to: -25
+              duration: 500
+          }
+          NumberAnimation {
+              target: hatImg
+              property: "rotation"
+              from: -25; to: 0
+              duration: 500
+          }
+          NumberAnimation {
+              target: hatImg
+              property: "rotation"
+              from: 0; to: 0
+              duration: 2000
+          }
+    }
+
     MouseArea {
         id: hatMouseArea
         anchors.fill:hatImg
         onClicked: {
-            if(hatImg.state == "NormalPosition")
-                hatImg.state = "Rotated"
+            if(hatImg.state == "NormalPosition") {
+                baseRotAnim.running = false;
+                hatImg.rotation = 0;
+                hatImg.state = "Rotated";
+            }
         }
     }
 
