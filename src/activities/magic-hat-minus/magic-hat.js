@@ -82,7 +82,6 @@ function initLevel() {
         answerCoefficients[1] = maxValue / 20;
         answerCoefficients[2] = maxValue / 10;
         setCoefficientVisibility(true)
-        setWantedColor("1")
     }
     var subtractor = (mode === "minus") ? 0 : 1
     numberOfStars[0] = (items.levels[currentLevel].maxStars[0] > 0) ? getRandomInt(items.levels[currentLevel].minStars[0], (items.levels[currentLevel].maxStars[0] / questionCoefficients[0]) - subtractor) : 0
@@ -130,16 +129,6 @@ function setCoefficientVisibility(visibility) {
     for(var i = 0; i < 3; i++) {
         for(var j = 0; j < 3; j++) {
             items.repeatersList[j].itemAt(i).coefficientVisible = visibility
-        }
-    }
-}
-
-function setWantedColor(colorValue) {
-    if(colorValue != null) {
-        for(var i = 0; i < 3; i++) {
-            for(var j = 0; j < 3; j++) {
-                items.repeatersList[j].itemAt(i).starsColor = colorValue
-            }
         }
     }
 }

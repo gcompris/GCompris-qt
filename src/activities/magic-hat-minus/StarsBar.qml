@@ -67,7 +67,7 @@ Item {
                     barGroupIndex: item.barGroupIndex
                     barIndex: item.barIndex
                     backgroundColor: item.backgroundColor
-                    wantedColor: starsColor
+                    wantedColor: coefficientVisible ? "1" : starsColor
                     selected: index < nbStarsOn ? true : false
                     width: item.starsSize
                     height: item.starsSize
@@ -78,7 +78,7 @@ Item {
                     id: starToMove
                     barGroupIndex: item.barGroupIndex
                     backgroundColor: item.backgroundColor
-                    wantedColor: starsColor
+                    wantedColor: coefficientVisible ? "1" : starsColor
                     selected: index < nbStarsOn ? true : false
                     width: item.starsSize
                     height: item.starsSize
