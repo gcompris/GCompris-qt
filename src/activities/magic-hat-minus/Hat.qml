@@ -25,8 +25,6 @@ import "magic-hat.js" as Activity
 
 Item {
     id: hatItem
-    width: parent.width
-    height: parent.height
     property alias state: hatImg.state
     property alias target: offStar
     property int starsSize
@@ -38,8 +36,9 @@ Item {
 
     Image {
         id: hatImg
+        z: 100
         source: Activity.url + "hat.svg"
-        sourceSize.width: hatItem.width / 3
+        sourceSize.height: parent.height
         fillMode: Image.PreserveAspectFit
         anchors.centerIn: parent
         state: "NormalPosition"
