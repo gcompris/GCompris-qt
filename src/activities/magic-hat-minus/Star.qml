@@ -54,7 +54,7 @@ Item {
     Rectangle {
         id: contour
         anchors.fill: parent
-        border.color: "black"
+        border.color: "#373737"
         border.width: mouseArea.containsMouse ? 2 : 1
         opacity: displayBounds ? 1.0 : 0.0
         color: mainItem.backgroundColor
@@ -62,10 +62,11 @@ Item {
 
     Image {
         id: starImg
-        source: mainItem.selected ? 
+        source: mainItem.selected ?
                     Activity.url + "star-" + wantedColor + ".svg" : Activity.url + "star-0.svg"
-        sourceSize.width: contour.width - 4
-        sourceSize.height: contour.height - 4
+        width: contour.width - 4
+        height: width
+        sourceSize.width: width
         anchors.centerIn: contour
         fillMode: Image.PreserveAspectFit
         opacity: 1

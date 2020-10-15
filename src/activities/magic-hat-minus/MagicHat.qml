@@ -112,6 +112,8 @@ ActivityBase {
             anchors.right: operationLayout.left
             anchors.rightMargin: 10
             width: background.starSize
+            height: width
+            sourceSize.width: width
             y: operationLayout.y + secondRow.y - height * 0.5
         }
 
