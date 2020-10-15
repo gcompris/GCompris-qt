@@ -26,6 +26,7 @@
   <name xml:lang="ml">ജികോംപ്രി</name>
   <name xml:lang="nl">GCompris</name>
   <name xml:lang="nn">GCompris</name>
+  <name xml:lang="pa">ਜੀਕੋਮਪਰਿਸ</name>
   <name xml:lang="pl">GCompris</name>
   <name xml:lang="pt">GCompris</name>
   <name xml:lang="pt-BR">GCompris</name>
@@ -61,6 +62,7 @@
   <summary xml:lang="ml">2 മുതൽ 10 വയസ്സുവരെയുള്ള കുട്ടികൾക്ക് വിവിധ പ്രവർത്തനങ്ങളിലൂടെ പഠിക്കാനായുള്ള കളി</summary>
   <summary xml:lang="nl">Educatief spel met meerdere activiteiten voor kinderen van 2 tot 10</summary>
   <summary xml:lang="nn">Leik-og-lærspel med mange aktivitetar – for barn frå 2 til 10 år</summary>
+  <summary xml:lang="pa">2 ਤੋਂ 10 ਸਾਲਾਂ ਦੇ ਬੱਚਿਆਂ ਲਈ ਬਹੁ-ਸਰਗਰਮੀ ਸਿੱਖਿਅਕ ਖੇਡ</summary>
   <summary xml:lang="pl">Gra edukacyjna z wieloma aktywnościami dla dzieci w wieku od 2 do 10 lat</summary>
   <summary xml:lang="pt">Jogo Educativo Multi-Actividades para crianças dos 2 aos 10 anos</summary>
   <summary xml:lang="pt-BR">Jogo educacional com várias atividades para crianças de 2 a 10 anos</summary>
@@ -358,6 +360,7 @@
       <li xml:lang="ml">വായന: വായന പരിശീലനം, ...</li>
       <li xml:lang="nl">lezen: lees oefening, ...</li>
       <li xml:lang="nn">lesing: leseøvingar, …</li>
+      <li xml:lang="pa">ਪੜ੍ਹਨਾ: ਅਭਿਆਸ ਪੜ੍ਹਿਆ ਜਾ ਰਿਹਾ ਹੈ, ...</li>
       <li xml:lang="pl">czytanie: nauka czytania, ...</li>
       <li xml:lang="pt">leitura: exercícios de leitura, ...</li>
       <li xml:lang="pt-BR">leitura: prática de leitura, ...</li>
@@ -476,6 +479,7 @@
       <caption xml:lang="ml">ജികോംപ്രി പ്രധാന മെനു</caption>
       <caption xml:lang="nl">GCompris-hoofdmenu</caption>
       <caption xml:lang="nn">Hovudmenyen i GCompris</caption>
+      <caption xml:lang="pa">ਜੀਕੋਮਪਰਿਸ ਮੁੱਖ ਮੇਨੂ</caption>
       <caption xml:lang="pl">Główne menu GCompris</caption>
       <caption xml:lang="pt">Menu principal do GCompris</caption>
       <caption xml:lang="pt-BR">Menu principal do GCompris</caption>
@@ -617,6 +621,7 @@
       <caption xml:lang="ml">"നിറങ്ങൾ" പ്രവർത്തനം</caption>
       <caption xml:lang="nl">Activiteit "Kleuren"</caption>
       <caption xml:lang="nn">Aktiviteten «Fargar»</caption>
+      <caption xml:lang="pa">"ਰੰਗ" ਸਰਗਰਮੀ</caption>
       <caption xml:lang="pl">Aktywność "barw"</caption>
       <caption xml:lang="pt">Actividade de "Cores"</caption>
       <caption xml:lang="pt-BR">Atividade "Cores"</caption>
