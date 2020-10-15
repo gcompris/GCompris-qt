@@ -9,11 +9,11 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="134.01135"
-   height="232.85588"
+   width="128"
+   height="165"
    id="svg2"
    version="1.1"
-   inkscape:version="0.91 r13725"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
    sodipodi:docname="hat.svg">
   <defs
      id="defs4" />
@@ -25,15 +25,15 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.979899"
-     inkscape:cx="3.8398011"
+     inkscape:cx="10.405793"
      inkscape:cy="98.879542"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1366"
-     inkscape:window-height="744"
+     inkscape:window-width="1884"
+     inkscape:window-height="1054"
      inkscape:window-x="0"
-     inkscape:window-y="24"
+     inkscape:window-y="0"
      inkscape:window-maximized="1"
      fit-margin-top="0"
      fit-margin-left="0"
@@ -47,260 +47,105 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
+        <dc:date>2020</dc:date>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Timothée Giet</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/by-sa/4.0/" />
       </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/by-sa/4.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Notice" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Attribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#ShareAlike" />
+      </cc:License>
     </rdf:RDF>
   </metadata>
   <g
      inkscape:label="Calque 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-130.7287,-97.675417)">
+     transform="translate(-130.7287,-165.5313)">
     <path
-       style="fill:#804e83;fill-opacity:1;stroke:#000000;stroke-width:4.19999981;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-       d="m 196.47466,99.788328 -63.6524,228.634242 129.81741,0 z"
-       id="path4476"
+       style="fill:#7e27b2;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.83449578px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 189.6594,165.79919 c -22.24416,46.12323 -37.94266,98.66922 -58.9307,145.21564 11.6979,13.31468 28.5853,19.24858 58.1473,19.24858 29.562,0 56.19636,-8.26915 69.8527,-19.87317 -18.95685,-50.04317 -43.99442,-97.02022 -69.0693,-144.59105 z"
+       id="path10968-6"
        inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cccc" />
-    <g
-       transform="translate(-43.584058,81.284941)"
-       id="layer1-9"
-       inkscape:label="Calque 1">
-      <path
-         inkscape:export-ydpi="90"
-         inkscape:export-xdpi="90"
-         inkscape:export-filename="/home/bruno/Projets/gcomprixogoo/src/magic_hat_minus-activity/resources/magic_hat/star1.svg"
-         transform="matrix(0.1476277,0.04568402,-0.03900131,0.1347461,209.21159,211.39722)"
-         d="M 117.14286,115.21933 54.455112,95.377953 2.5716249,135.77024 2.0703121,70.01933 -52.377917,33.157106 10.000002,12.36218 28.232633,-50.812217 67.285619,2.0867234 133.00223,-0.09497663 94.760389,53.393293 Z"
-         inkscape:randomized="0"
-         inkscape:rounded="0"
-         inkscape:flatsided="false"
-         sodipodi:arg2="1.3933114"
-         sodipodi:arg1="0.76499283"
-         sodipodi:r2="49.507782"
-         sodipodi:r1="99.015564"
-         sodipodi:cy="46.647896"
-         sodipodi:cx="45.714287"
-         sodipodi:sides="5"
-         id="path4555"
-         style="fill:#dddf0e;fill-opacity:1;stroke:#000000;stroke-width:9.07392597;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-         sodipodi:type="star" />
-    </g>
-    <g
-       transform="matrix(0.57910299,0,0,0.63623997,81.590538,170.02204)"
-       id="layer1-9-3"
-       inkscape:label="Calque 1">
-      <path
-         inkscape:export-ydpi="90"
-         inkscape:export-xdpi="90"
-         inkscape:export-filename="/home/bruno/Projets/gcomprixogoo/src/magic_hat_minus-activity/resources/magic_hat/star1.svg"
-         transform="matrix(0.1476277,0.04568402,-0.03900131,0.1347461,209.21159,211.39722)"
-         d="M 117.14286,115.21933 54.455112,95.377953 2.5716249,135.77024 2.0703121,70.01933 -52.377917,33.157106 10.000002,12.36218 28.232633,-50.812217 67.285619,2.0867234 133.00223,-0.09497663 94.760389,53.393293 Z"
-         inkscape:randomized="0"
-         inkscape:rounded="0"
-         inkscape:flatsided="false"
-         sodipodi:arg2="1.3933114"
-         sodipodi:arg1="0.76499283"
-         sodipodi:r2="49.507782"
-         sodipodi:r1="99.015564"
-         sodipodi:cy="46.647896"
-         sodipodi:cx="45.714287"
-         sodipodi:sides="5"
-         id="path4555-9"
-         style="fill:#dddf0e;fill-opacity:1;stroke:#000000;stroke-width:9.07392597;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-         sodipodi:type="star" />
-    </g>
-    <g
-       transform="matrix(0.59593887,0,0,0.65442797,108.53605,163.25992)"
-       id="layer1-9-5"
-       inkscape:label="Calque 1">
-      <path
-         inkscape:export-ydpi="90"
-         inkscape:export-xdpi="90"
-         inkscape:export-filename="/home/bruno/Projets/gcomprixogoo/src/magic_hat_minus-activity/resources/magic_hat/star1.svg"
-         transform="matrix(0.1476277,0.04568402,-0.03900131,0.1347461,209.21159,211.39722)"
-         d="M 117.14286,115.21933 54.455112,95.377953 2.5716249,135.77024 2.0703121,70.01933 -52.377917,33.157106 10.000002,12.36218 28.232633,-50.812217 67.285619,2.0867234 133.00223,-0.09497663 94.760389,53.393293 Z"
-         inkscape:randomized="0"
-         inkscape:rounded="0"
-         inkscape:flatsided="false"
-         sodipodi:arg2="1.3933114"
-         sodipodi:arg1="0.76499283"
-         sodipodi:r2="49.507782"
-         sodipodi:r1="99.015564"
-         sodipodi:cy="46.647896"
-         sodipodi:cx="45.714287"
-         sodipodi:sides="5"
-         id="path4555-3"
-         style="fill:#dddf0e;fill-opacity:1;stroke:#000000;stroke-width:9.07392597;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-         sodipodi:type="star" />
-    </g>
-    <g
-       transform="matrix(0.83113927,0,0,0.89139331,23.23106,4.2747793)"
-       id="layer1-9-5-1"
-       inkscape:label="Calque 1">
-      <path
-         inkscape:export-ydpi="90"
-         inkscape:export-xdpi="90"
-         inkscape:export-filename="/home/bruno/Projets/gcomprixogoo/src/magic_hat_minus-activity/resources/magic_hat/star1.svg"
-         transform="matrix(0.1476277,0.04568402,-0.03900131,0.1347461,209.21159,211.39722)"
-         d="M 117.14286,115.21933 54.455112,95.377953 2.5716249,135.77024 2.0703121,70.01933 -52.377917,33.157106 10.000002,12.36218 28.232633,-50.812217 67.285619,2.0867234 133.00223,-0.09497663 94.760389,53.393293 Z"
-         inkscape:randomized="0"
-         inkscape:rounded="0"
-         inkscape:flatsided="false"
-         sodipodi:arg2="1.3933114"
-         sodipodi:arg1="0.76499283"
-         sodipodi:r2="49.507782"
-         sodipodi:r1="99.015564"
-         sodipodi:cy="46.647896"
-         sodipodi:cx="45.714287"
-         sodipodi:sides="5"
-         id="path4555-3-7"
-         style="fill:#dddf0e;fill-opacity:1;stroke:#000000;stroke-width:9.07392597;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-         sodipodi:type="star" />
-    </g>
-    <g
-       transform="matrix(0.47814557,0,0,0.5634668,116.37971,108.18178)"
-       id="layer1-9-5-1-5"
-       inkscape:label="Calque 1">
-      <path
-         inkscape:export-ydpi="90"
-         inkscape:export-xdpi="90"
-         inkscape:export-filename="/home/bruno/Projets/gcomprixogoo/src/magic_hat_minus-activity/resources/magic_hat/star1.svg"
-         transform="matrix(0.1476277,0.04568402,-0.03900131,0.1347461,209.21159,211.39722)"
-         d="M 117.14286,115.21933 54.455112,95.377953 2.5716249,135.77024 2.0703121,70.01933 -52.377917,33.157106 10.000002,12.36218 28.232633,-50.812217 67.285619,2.0867234 133.00223,-0.09497663 94.760389,53.393293 Z"
-         inkscape:randomized="0"
-         inkscape:rounded="0"
-         inkscape:flatsided="false"
-         sodipodi:arg2="1.3933114"
-         sodipodi:arg1="0.76499283"
-         sodipodi:r2="49.507782"
-         sodipodi:r1="99.015564"
-         sodipodi:cy="46.647896"
-         sodipodi:cx="45.714287"
-         sodipodi:sides="5"
-         id="path4555-3-7-8"
-         style="fill:#dddf0e;fill-opacity:1;stroke:#000000;stroke-width:9.07392597;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-         sodipodi:type="star" />
-    </g>
-    <g
-       transform="matrix(0.47814557,0,0,0.5634668,71.68046,143.03205)"
-       id="layer1-9-5-1-5-7"
-       inkscape:label="Calque 1">
-      <path
-         inkscape:export-ydpi="90"
-         inkscape:export-xdpi="90"
-         inkscape:export-filename="/home/bruno/Projets/gcomprixogoo/src/magic_hat_minus-activity/resources/magic_hat/star1.svg"
-         transform="matrix(0.1476277,0.04568402,-0.03900131,0.1347461,209.21159,211.39722)"
-         d="M 117.14286,115.21933 54.455112,95.377953 2.5716249,135.77024 2.0703121,70.01933 -52.377917,33.157106 10.000002,12.36218 28.232633,-50.812217 67.285619,2.0867234 133.00223,-0.09497663 94.760389,53.393293 Z"
-         inkscape:randomized="0"
-         inkscape:rounded="0"
-         inkscape:flatsided="false"
-         sodipodi:arg2="1.3933114"
-         sodipodi:arg1="0.76499283"
-         sodipodi:r2="49.507782"
-         sodipodi:r1="99.015564"
-         sodipodi:cy="46.647896"
-         sodipodi:cx="45.714287"
-         sodipodi:sides="5"
-         id="path4555-3-7-8-2"
-         style="fill:#dddf0e;fill-opacity:1;stroke:#000000;stroke-width:9.07392597;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-         sodipodi:type="star" />
-    </g>
-    <g
-       transform="matrix(0.74649725,0,0,0.72778182,55.530432,109.81558)"
-       id="layer1-9-5-1-5-6"
-       inkscape:label="Calque 1">
-      <path
-         inkscape:export-ydpi="90"
-         inkscape:export-xdpi="90"
-         inkscape:export-filename="/home/bruno/Projets/gcomprixogoo/src/magic_hat_minus-activity/resources/magic_hat/star1.svg"
-         transform="matrix(0.1476277,0.04568402,-0.03900131,0.1347461,209.21159,211.39722)"
-         d="M 117.14286,115.21933 54.455112,95.377953 2.5716249,135.77024 2.0703121,70.01933 -52.377917,33.157106 10.000002,12.36218 28.232633,-50.812217 67.285619,2.0867234 133.00223,-0.09497663 94.760389,53.393293 Z"
-         inkscape:randomized="0"
-         inkscape:rounded="0"
-         inkscape:flatsided="false"
-         sodipodi:arg2="1.3933114"
-         sodipodi:arg1="0.76499283"
-         sodipodi:r2="49.507782"
-         sodipodi:r1="99.015564"
-         sodipodi:cy="46.647896"
-         sodipodi:cx="45.714287"
-         sodipodi:sides="5"
-         id="path4555-3-7-8-1"
-         style="fill:#dddf0e;fill-opacity:1;stroke:#000000;stroke-width:9.07392597;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-         sodipodi:type="star" />
-    </g>
-    <g
-       transform="matrix(0.40959039,0,0,0.41877571,109.6203,57.802514)"
-       id="layer1-9-5-1-5-6-5"
-       inkscape:label="Calque 1">
-      <path
-         inkscape:export-ydpi="90"
-         inkscape:export-xdpi="90"
-         inkscape:export-filename="/home/bruno/Projets/gcomprixogoo/src/magic_hat_minus-activity/resources/magic_hat/star1.svg"
-         transform="matrix(0.1476277,0.04568402,-0.03900131,0.1347461,209.21159,211.39722)"
-         d="M 117.14286,115.21933 54.455112,95.377953 2.5716249,135.77024 2.0703121,70.01933 -52.377917,33.157106 10.000002,12.36218 28.232633,-50.812217 67.285619,2.0867234 133.00223,-0.09497663 94.760389,53.393293 Z"
-         inkscape:randomized="0"
-         inkscape:rounded="0"
-         inkscape:flatsided="false"
-         sodipodi:arg2="1.3933114"
-         sodipodi:arg1="0.76499283"
-         sodipodi:r2="49.507782"
-         sodipodi:r1="99.015564"
-         sodipodi:cy="46.647896"
-         sodipodi:cx="45.714287"
-         sodipodi:sides="5"
-         id="path4555-3-7-8-1-3"
-         style="fill:#dddf0e;fill-opacity:1;stroke:#000000;stroke-width:9.07392597;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-         sodipodi:type="star" />
-    </g>
-    <g
-       transform="matrix(0.40959039,0,0,0.45512937,90.427392,130.14611)"
-       id="layer1-9-5-1-5-6-2"
-       inkscape:label="Calque 1">
-      <path
-         inkscape:export-ydpi="90"
-         inkscape:export-xdpi="90"
-         inkscape:export-filename="/home/bruno/Projets/gcomprixogoo/src/magic_hat_minus-activity/resources/magic_hat/star1.svg"
-         transform="matrix(0.1476277,0.04568402,-0.03900131,0.1347461,209.21159,211.39722)"
-         d="M 117.14286,115.21933 54.455112,95.377953 2.5716249,135.77024 2.0703121,70.01933 -52.377917,33.157106 10.000002,12.36218 28.232633,-50.812217 67.285619,2.0867234 133.00223,-0.09497663 94.760389,53.393293 Z"
-         inkscape:randomized="0"
-         inkscape:rounded="0"
-         inkscape:flatsided="false"
-         sodipodi:arg2="1.3933114"
-         sodipodi:arg1="0.76499283"
-         sodipodi:r2="49.507782"
-         sodipodi:r1="99.015564"
-         sodipodi:cy="46.647896"
-         sodipodi:cx="45.714287"
-         sodipodi:sides="5"
-         id="path4555-3-7-8-1-2"
-         style="fill:#dddf0e;fill-opacity:1;stroke:#000000;stroke-width:9.07392597;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-         sodipodi:type="star" />
-    </g>
-    <g
-       transform="matrix(0.52715819,0,0,0.5645276,86.672719,124.61692)"
-       id="layer1-9-5-1-5-6-2-2"
-       inkscape:label="Calque 1">
-      <path
-         inkscape:export-ydpi="90"
-         inkscape:export-xdpi="90"
-         inkscape:export-filename="/home/bruno/Projets/gcomprixogoo/src/magic_hat_minus-activity/resources/magic_hat/star1.svg"
-         transform="matrix(0.1476277,0.04568402,-0.03900131,0.1347461,209.21159,211.39722)"
-         d="M 117.14286,115.21933 54.455112,95.377953 2.5716249,135.77024 2.0703121,70.01933 -52.377917,33.157106 10.000002,12.36218 28.232633,-50.812217 67.285619,2.0867234 133.00223,-0.09497663 94.760389,53.393293 Z"
-         inkscape:randomized="0"
-         inkscape:rounded="0"
-         inkscape:flatsided="false"
-         sodipodi:arg2="1.3933114"
-         sodipodi:arg1="0.76499283"
-         sodipodi:r2="49.507782"
-         sodipodi:r1="99.015564"
-         sodipodi:cy="46.647896"
-         sodipodi:cx="45.714287"
-         sodipodi:sides="5"
-         id="path4555-3-7-8-1-2-9"
-         style="fill:#dddf0e;fill-opacity:1;stroke:#000000;stroke-width:9.07392597;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-         sodipodi:type="star" />
-    </g>
+       sodipodi:nodetypes="cczcc" />
+    <path
+       style="fill:#b356ec;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.83449578px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 189.71488,170.51808 c -20.70654,43.55915 -35.3199,93.18404 -54.85715,137.14286 10.88929,12.57449 26.60936,18.17849 54.12792,18.17849 27.51853,0 52.31182,-7.80943 65.02416,-18.76836 -17.64648,-47.2612 -40.95334,-91.6267 -64.29493,-136.55299 z"
+       id="path10968"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cczcc" />
+    <path
+       sodipodi:type="star"
+       style="opacity:1;fill:#f6e18b;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="path11857-7"
+       sodipodi:sides="5"
+       sodipodi:cx="-8.8423195"
+       sodipodi:cy="38.10376"
+       sodipodi:r1="12.642655"
+       sodipodi:r2="6.3213272"
+       sodipodi:arg1="1.4432868"
+       sodipodi:arg2="2.0716053"
+       inkscape:flatsided="false"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="m -7.2346253,50.643778 -4.6427867,-6.994985 -8.394369,-0.140946 5.217927,-6.577122 -2.459955,-8.027074 7.8676423,2.9301 6.874033,-4.820058 -0.3554558,8.388023 6.7083408,5.048114 -8.0873261,2.253984 z"
+       transform="matrix(1.797403,0,0,1.8088997,213.12064,197.60801)" />
+    <path
+       sodipodi:type="star"
+       style="opacity:1;fill:#f3d351;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="path11857"
+       sodipodi:sides="5"
+       sodipodi:cx="-8.8423195"
+       sodipodi:cy="38.10376"
+       sodipodi:r1="12.642655"
+       sodipodi:r2="6.3213272"
+       sodipodi:arg1="1.4432868"
+       sodipodi:arg2="2.0716053"
+       inkscape:flatsided="false"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="m -7.2346253,50.643778 -4.6427867,-6.994985 -8.394369,-0.140946 5.217927,-6.577122 -2.459955,-8.027074 7.8676423,2.9301 6.874033,-4.820058 -0.3554558,8.388023 6.7083408,5.048114 -8.0873261,2.253984 z"
+       transform="matrix(1.5872021,0,0,1.5973542,211.3664,205.82206)" />
+    <path
+       style="opacity:1;fill:#f6e18b;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:4.58623934;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 196.09599,196.58322 7.94615,17.91736 -10.57471,12.89199 14.51492,-2.51228 10.8038,17.33101 0.22636,-14.21639 -11.8201,-23.56133 z"
+       id="path11864-35"
+       sodipodi:nodetypes="cccccccc"
+       inkscape:connector-curvature="0" />
+    <path
+       style="opacity:1;fill:#f3d351;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:4.58623934;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 199.11164,200.12239 6.508,14.67455 -8.66082,10.55874 11.8879,-2.05761 8.84847,14.19434 0.1854,-11.64342 -9.68084,-19.29704 z"
+       id="path11864"
+       sodipodi:nodetypes="cccccccc"
+       inkscape:connector-curvature="0" />
+    <path
+       inkscape:connector-curvature="0"
+       style="opacity:1;fill:#f6e18b;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:4.58623934;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 162.22353,262.20534 -7.84343,17.68573 10.43801,12.72533 -14.32727,-2.4798 -10.66414,17.10697 0.13208,-12.43309 10.06777,-24.14536 z"
+       id="path11864-3-5"
+       sodipodi:nodetypes="cccccccc" />
+    <path
+       inkscape:connector-curvature="0"
+       style="opacity:1;fill:#f3d351;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:4.58623934;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 159.5055,265.59705 -6.508,14.67455 8.66082,10.55874 -11.8879,-2.05761 -8.84847,14.19434 0.10952,-10.31624 8.35363,-20.03436 z"
+       id="path11864-3"
+       sodipodi:nodetypes="cccccccc" />
   </g>
 </svg>
