@@ -41,8 +41,9 @@ ActivityBase {
         sourceSize.width: width
         sourceSize.height: height
         fillMode: Image.PreserveAspectCrop
-        property int starSize: Math.min(rightLayout.width / 12,
-                                        background.height / 21)
+        property int starSize: Math.min((background.width - 10 * ApplicationInfo.ratio) / 14 ,
+                                        (operationLayout.height - 10 * ApplicationInfo.ratio) / 12)
+
         signal start
         signal stop
 
@@ -74,59 +75,56 @@ ActivityBase {
                 [repeaterFirstRow, repeaterSecondRow, repeaterAnswerRow]
         }
 
-        Item {
-            id: mainlayout
-            anchors.left: background.left
-            width: background.width * 0.4
-            height: background.height
-            z: 11
-            Hat {
-                id: theHat
-                starsSize: background.starSize
-                audioEffects: activity.audioEffects
-            }
+        Rectangle {
+            id: introTextBG
+            width: introText.width
+            height: introText.height
+            anchors.centerIn: introText
+            color: "#373737"
+            radius: 5 * ApplicationInfo.ratio
+            visible: introText.visible
+        }
 
-            GCText {
-                id: introText
-                anchors {
-                    horizontalCenter: parent.horizontalCenter
-                    top: parent.top
-                    topMargin: 20 * ApplicationInfo.ratio
-                }
-                width: parent.width - 5 * ApplicationInfo.ratio
-                fontSize: regularSize
-                font.bold: true
-                style: Text.Outline
-                styleColor: "black"
-                color: "white"
-                wrapMode: TextEdit.WordWrap
-                horizontalAlignment: TextEdit.AlignHCenter
-                text: qsTr("Click on the hat to begin the game")
+        GCText {
+            id: introText
+            anchors {
+                horizontalCenter: parent.horizontalCenter
+                top: parent.top
+                topMargin: 10 * ApplicationInfo.ratio
             }
+            width: parent.width - 10 * ApplicationInfo.ratio
+            height: (background.height - bar.height * 1.2) * 0.1
+            fontSizeMode: Text.Fit
+            minimumPointSize: 7
+            fontSize: hugeSize
+            font.bold: true
+            color: "white"
+            wrapMode: TextEdit.WordWrap
+            horizontalAlignment: TextEdit.AlignHCenter
+            text: qsTr("Click on the hat to begin the game")
+        }
 
-            GCText {
-                //: The math operation
-                text: mode == "minus" ? qsTr("−") : qsTr("+")
-                anchors.right: mainlayout.right
-                anchors.rightMargin: 10
-                y: secondRow.y
-                fontSize: 66
-                color: "white"
-                style: Text.Outline
-                styleColor: "black"
-            }
+        Image {
+            //: The math operation
+            id: operatorImage
+            source: mode == "minus" ? Activity.url + "minus.svg" :
+                                      Activity.url + "plus.svg"
+            anchors.right: operationLayout.left
+            anchors.rightMargin: 10
+            width: background.starSize
+            y: operationLayout.y + secondRow.y - height * 0.5
         }
 
         Grid {
-            id: rightLayout
+            id: operationLayout
             anchors {
-                left: mainlayout.right
-                right: background.vert ? okButton.left : background.right
-                rightMargin: background.vert ? 0 : 10
-                verticalCenter: background.verticalCenter
-                verticalCenterOffset: background.height/8
+                top: introTextBG.bottom
+                topMargin: 10
+                horizontalCenter: background.horizontalCenter
+                horizontalCenterOffset: operatorImage.width * 0.5
             }
-            height: background.height
+            width: background.starSize * 12
+            height: (background.height - bar.height * 1.2) * 0.7
             columns: 1
             Column {
                 id: firstRow
@@ -139,7 +137,7 @@ ActivityBase {
                     StarsBar {
                         barGroupIndex: 0
                         barIndex: index
-                        width: rightLayout.width
+                        width: operationLayout.width
                         backgroundColor: "grey"
                         starsColor: starColors[index]
                         theHat: items.hat
@@ -159,7 +157,7 @@ ActivityBase {
                     StarsBar {
                         barGroupIndex: 1
                         barIndex: index
-                        width: rightLayout.width
+                        width: operationLayout.width
                         backgroundColor: "grey"
                         starsColor: starColors[index]
                         theHat: items.hat
@@ -191,7 +189,7 @@ ActivityBase {
                     StarsBar {
                         barGroupIndex: 2
                         barIndex: index
-                        width: rightLayout.width
+                        width: operationLayout.width
                         backgroundColor: "#53b9c9"
                         starsColor: starColors[index]
                         authorizeClick: false
@@ -240,6 +238,19 @@ ActivityBase {
             onHomeClicked: activity.home()
         }
 
+        Hat {
+            id: theHat
+            anchors {
+                bottom: bar.top
+                margins: 20 * ApplicationInfo.ratio
+            }
+            x: Math.max(20 * ApplicationInfo.ratio, operationLayout.x * 0.5 - width * 0.5)
+            height: (background.height - bar.height * 1.2) * 0.2
+            width: height
+            starsSize: background.starSize
+            audioEffects: activity.audioEffects
+        }
+
         BarButton {
             id: okButton
             anchors {
@@ -249,8 +260,8 @@ ActivityBase {
                 bottomMargin: 10 * ApplicationInfo.ratio
             }
             source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
-            sourceSize.width: 60 * ApplicationInfo.ratio
-
+            width: (background.height - bar.height * 1.2) * 0.15
+            sourceSize.width: width
             onClicked: Activity.verifyAnswer()
         }
 
