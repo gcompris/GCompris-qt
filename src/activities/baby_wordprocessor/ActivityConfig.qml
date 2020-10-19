@@ -25,7 +25,7 @@ Item {
     id: activityConfiguration
     property Item background
     property bool audioMode: false
-    width: if(background) background.width
+    width: if(background) background.width*0.9
 
     Column {
         id: column
