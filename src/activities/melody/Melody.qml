@@ -211,10 +211,10 @@ ActivityBase {
         Bonus {
             id: bonus
             onWin: {
-                parent.nextSubLevel()
-                parent.repeat()
+                parent.nextSubLevel();
+                introDelay.restart();
             }
-            onLoose: parent.repeat()
+            onLoose: introDelay.restart();
         }
 
         Score {
