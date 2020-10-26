@@ -28,51 +28,43 @@ Item {
     property double posX
     property double posY
     property double textWidth
+    property double textHeight
     property string showText
 
     x: posX * parent.width
     y: posY * parent.height
+    width: 1
+    height: 1
 
     GCText {
         id: displayTxt
         anchors {
-            horizontalCenter: parent ? parent.horizontalCenter: null
+            horizontalCenter: displayText.horizontalCenter
+            verticalCenter: displayText.verticalCenter
         }
-        property bool firstTime: true
-        fontSize: Math.max(Math.min(displayText.parent.width / 20 , 12), 5)
+        fontSizeMode: Text.Fit
+        minimumPointSize: 7
+        fontSize: mediumSize
         color: "white"
-        style: Text.Outline
-        styleColor: "black"
         horizontalAlignment: Text.AlignHCenter
-        width: Math.min(implicitWidth, textWidth * displayText.parent.width)
+        verticalAlignment: Text.AlignVCenter
+        width: textWidth * displayText.parent.width
+        height: textHeight * displayText.parent.height
         wrapMode: TextEdit.WordWrap
         z: 2
         text: showText
-        onHeightChanged: {
-            if(firstTime) {
-                displayTxtContainer.height = displayTxt.height * Math.ceil(displayTxt.implicitWidth / displayTxt.width)
-                firstTime = false
-            }
-            else
-                displayTxtContainer.height = displayTxt.height
-        }
     }
 
     Rectangle {
         id: displayTxtContainer
-        anchors.top: displayTxt.top
-        anchors.horizontalCenter: displayTxt.horizontalCenter
-        width: displayTxt.width + 10
-        height: displayTxt.fontSize * 2.25 * Math.ceil(displayTxt.implicitWidth / displayTxt.width)
-        z: 1
-        opacity: 0.8
-        radius: 10
-        border.width: 2
-        border.color: "black"
-        gradient: Gradient {
-            GradientStop { position: 0.0; color: "#000" }
-            GradientStop { position: 0.9; color: "#666" }
-            GradientStop { position: 1.0; color: "#AAA" }
+        anchors {
+            horizontalCenter: displayText.horizontalCenter
+            verticalCenter: displayText.verticalCenter
         }
+        width: displayTxt.width + 10
+        height: displayTxt.height + 10
+        z: 1
+        radius: 10
+        color: "#373737"
     }
 }

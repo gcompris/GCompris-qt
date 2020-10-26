@@ -26,54 +26,66 @@ QtObject {
    property var levels: [
       {
           "pixmapfile": "images/4.png",
-          "x": "0.7",
-          "y": "0.7",
+          "x": "0.75",
+          "y": "0.65",
+          "width": 0.4,
+          "height": 0.25,
           "soundFile": "sound/2.$CA"
       },
       {
           "pixmapfile": "images/3.png",
-          "x": "0.3",
-          "y": "0.7",
+          "x": "0.25",
+          "y": "0.65",
+          "width": 0.4,
+          "height": 0.25,
           "soundFile": "sound/3.$CA"
       },
       {
           "pixmapfile": "images/2.png",
-          "x": "0.7",
-          "y": "0.25",
+          "x": "0.75",
+          "y": "0.2",
+          "width": 0.4,
+          "height": 0.25,
           "soundFile": "sound/2.$CA"
       },
       {
           "pixmapfile": "images/1.png",
-          "x": "0.3",
-          "y": "0.25",
+          "x": "0.25",
+          "y": "0.2",
+          "width": 0.4,
+          "height": 0.25,
           "soundFile": "sound/1.$CA"
       },
       {
 		  "text": qsTr("1"),
-		  "x": "0.3",
-		  "y": 0.25,
-		  "width": "0.2",
+		  "x": "0.25",
+		  "y": 0.4,
+		  "width": "0.1",
+          "height": 0.1,
 		  "type": "DisplayText"
       },
       {
 		  "text": qsTr("2"),
-		  "x": "0.7",
-		  "y": 0.25,
-		  "width": "0.2",
+		  "x": "0.75",
+		  "y": 0.4,
+		  "width": "0.1",
+          "height": 0.1,
 		  "type": "DisplayText"
       },
       {
 		  "text": qsTr("3"),
-		  "x": "0.3",
-		  "y": 0.7,
-		  "width": "0.2",
+		  "x": "0.25",
+		  "y": 0.85,
+		  "width": "0.1",
+          "height": 0.1,
 		  "type": "DisplayText"
       },
       {
 		  "text": qsTr("4"),
-		  "x": "0.7",
-		  "y": 0.7,
-		  "width": "0.2",
+		  "x": "0.75",
+		  "y": 0.85,
+		  "width": "0.1",
+          "height": 0.1,
 		  "type": "DisplayText"
       }
    ]

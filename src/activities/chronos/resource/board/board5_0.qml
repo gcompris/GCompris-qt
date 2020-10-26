@@ -27,37 +27,40 @@ QtObject {
    property var levels: [
       {
           "pixmapfile": "images/fardier.svg",
-          "x": 0.7,
-          "y": 0.8,
+          "x": 0.75,
+          "y": 0.2,
           "width": 0.4,
-          "height": 0.14
+          "height": 0.2
       },
       {
           "pixmapfile": "images/st_rocket.svg",
           "x": 0.25,
-          "y": 0.55,
+          "y": 0.2,
           "width": 0.4,
-          "height": 0.308
+          "height": 0.2
       },
       {
 		  "text": qsTr("1829 Stephenson's Rocket Steam locomotive"),
-          "x": 0.24,
-		  "y": 0.29,
+          "x": 0.25,
+		  "y": 0.4,
           "width": 0.4,
+          "height": 0.15,
 		  "type": "DisplayText"
       },
       {
 		  "text": qsTr("1769 Cugnot's fardier"),
           "x": 0.75,
-		  "y": 0.59,
+		  "y": 0.4,
           "width": 0.4,
+          "height": 0.15,
 		  "type": "DisplayText"
       },
       {
 		  "text": qsTr("Transportation"),
-          "x": 0.8,
-		  "y": 0.3,
+          "x": 0.5,
+		  "y": 0.85,
           "width": 0.3,
+          "height": 0.1,
 		  "type": "DisplayText"
       }
    ]

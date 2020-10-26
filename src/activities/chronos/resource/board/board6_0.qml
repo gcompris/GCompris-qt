@@ -27,44 +27,47 @@ QtObject {
    property var levels: [
       {
           "pixmapfile": "images/Eole.svg",
-          "x": "0.2",
-          "y": "0.55",
+          "x": "0.25",
+          "y": "0.2",
           "width": 0.4,
-          "height": 0.4
+          "height": 0.2
       },
       {
           "pixmapfile": "images/wright_flyer.svg",
           "x": 0.5,
-          "y": 0.9,
+          "y": 0.65,
           "width": 0.4,
-          "height": 0.216
+          "height": 0.2
       },
       {
           "pixmapfile": "images/bleriot.svg",
           "x": 0.75,
-          "y": 0.55,
+          "y": 0.2,
           "width": 0.4,
-          "height": 0.115
+          "height": 0.2
       },
       {
 		  "text": qsTr("1880 Clement Ader's Eole"),
 		  "x": "0.25",
-		  "y": 0.2,
+		  "y": 0.4,
 		  "width": "0.4",
+          "height": "0.15",
 		  "type": "DisplayText"
       },
       {
 		  "text": qsTr("1903 The Wright brothers' Flyer III"),
           "x": 0.5,
-		  "y": 0.75,
+		  "y": 0.85,
 		  "width": "0.4",
+          "height": "0.15",
 		  "type": "DisplayText"
       },
       {
 		  "text": qsTr("1909 Louis Bleriot crosses the English Channel"),
 		  "x": "0.75",
-		  "y": 0.21,
+		  "y": 0.4,
 		  "width": "0.4",
+          "height": "0.15",
 		  "type": "DisplayText"
       }
    ]

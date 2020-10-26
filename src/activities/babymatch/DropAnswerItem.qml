@@ -50,6 +50,7 @@ Rectangle {
     Image {
         id: targetImage
         fillMode: Image.PreserveAspectFit
+        sourceSize.width: width
         anchors.centerIn: parent
         z: -1
     }

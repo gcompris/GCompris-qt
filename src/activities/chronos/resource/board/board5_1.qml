@@ -27,43 +27,46 @@ QtObject {
       {
           "pixmapfile": "images/helico_cornu.svg",
           "x": 0.75,
-          "y": 0.55,
+          "y": 0.2,
           "width": 0.4,
-          "height": 0.16
+          "height": 0.2
       },
       {
           "pixmapfile": "images/Eole.svg",
           "x": "0.5",
-          "y": "0.9",
+          "y": "0.65",
           "width": 0.4,
           "height": 0.2
       },
       {
           "pixmapfile": "images/mongolfiere.svg",
-          "x": 0.2,
-          "y": 0.55,
+          "x": 0.25,
+          "y": 0.2,
           "width": 0.4,
-          "height": 0.522
+          "height": 0.2
       },
       {
 		  "text": qsTr("1783 Montgolfier brothers' hot air balloon"),
 		  "x": "0.25",
-		  "y": 0.2,
+		  "y": 0.4,
 		  "width": "0.4",
+          "height": 0.15,
 		  "type": "DisplayText"
       },
       {
 		  "text": qsTr("1880 Clement Ader's Eole"),
 		  "x": "0.5",
-		  "y": 0.75,
+		  "y": 0.85,
 		  "width": "0.4",
+          "height": 0.15,
 		  "type": "DisplayText"
       },
       {
 		  "text": qsTr("1906 Paul Cornu First helicopter flight"),
           "x": 0.75,
-		  "y": 0.21,
+		  "y": 0.4,
           "width": 0.4,
+          "height": 0.15,
 		  "type": "DisplayText"
       }
    ]

@@ -27,57 +27,61 @@ QtObject {
       {
           "pixmapfile": "images/autumn.svg",
           "x": 0.25,
-          "y": 0.7,
+          "y": 0.65,
           "width": 0.4,
-          "height": 0.319
+          "height": 0.25
       },
       {
           "pixmapfile": "images/summer.svg",
           "x": 0.75,
-          "y": 0.25,
+          "y": 0.2,
           "width": 0.4,
-          "height": 0.319
+          "height": 0.25
       },
       {
           "pixmapfile": "images/spring.svg",
           "x": 0.25,
-          "y": 0.25,
+          "y": 0.2,
           "width": 0.4,
-          "height": 0.319
+          "height": 0.25
       },
       {
           "pixmapfile": "images/winter.svg",
           "x": 0.75,
-          "y": 0.7,
+          "y": 0.65,
           "width": 0.4,
-          "height": 0.319
+          "height": 0.25
       },
       {
 		  "text": qsTr("Spring"),
 		  "x": "0.25",
-		  "y": 0.25,
+		  "y": 0.4,
 		  "width": "0.4",
+          "height": 0.1,
 		  "type": "DisplayText"
       },
       {
 		  "text": qsTr("Summer"),
 		  "x": "0.75",
-		  "y": 0.25,
+		  "y": 0.4,
 		  "width": "0.4",
+          "height": 0.1,
 		  "type": "DisplayText"
       },
       {
 		  "text": qsTr("Autumn"),
 		  "x": "0.25",
-		  "y": 0.7,
+		  "y": 0.85,
 		  "width": "0.4",
+          "height": 0.1,
 		  "type": "DisplayText"
       },
       {
 		  "text": qsTr("Winter"),
 		  "x": "0.75",
-		  "y": 0.7,
+		  "y": 0.85,
 		  "width": "0.4",
+          "height": 0.1,
 		  "type": "DisplayText"
       }
    ]
