@@ -138,6 +138,10 @@ Item {
                 width = fullWidth;
                 height = fullHeight;
                 small = false;
+                if(imgName.indexOf(".svg") != -1) {
+                    tileImage.sourceSize.width = tileImage.width
+                    tileImage.sourceSize.height= tileImage.height
+                }
             }
 
             MultiPointTouchArea {

@@ -27,57 +27,61 @@ QtObject {
       {
           "pixmapfile": "images/garden1.svg",
           "x": 0.25,
-          "y": 0.25,
+          "y": 0.2,
           "width": 0.4,
-          "height": 0.309
+          "height": 0.25
       },
       {
           "pixmapfile": "images/garden4.svg",
           "x": 0.75,
-          "y": 0.7,
+          "y": 0.65,
           "width": 0.4,
-          "height": 0.309
+          "height": 0.25
       },
       {
           "pixmapfile": "images/garden3.svg",
           "x": 0.25,
-          "y": 0.7,
+          "y": 0.65,
           "width": 0.4,
-          "height": 0.309
+          "height": 0.25
       },
       {
           "pixmapfile": "images/garden2.svg",
           "x": 0.75,
-          "y": 0.25,
+          "y": 0.2,
           "width": 0.4,
-          "height": 0.309
+          "height": 0.25
       },
       {
 		  "text": qsTr("1"),
 		  "x": "0.25",
-		  "y": 0.25,
-		  "width": "0.2",
+		  "y": 0.4,
+		  "width": "0.1",
+          "height": 0.1,
 		  "type": "DisplayText"
       },
       {
 		  "text": qsTr("2"),
 		  "x": "0.75",
-		  "y": 0.25,
-		  "width": "0.2",
+		  "y": 0.4,
+		  "width": "0.1",
+          "height": 0.1,
 		  "type": "DisplayText"
       },
       {
 		  "text": qsTr("3"),
 		  "x": "0.25",
-		  "y": 0.7,
-		  "width": "0.2",
+		  "y": 0.85,
+		  "width": "0.1",
+          "height": 0.1,
 		  "type": "DisplayText"
       },
       {
 		  "text": qsTr("4"),
 		  "x": "0.75",
-		  "y": 0.7,
-		  "width": "0.2",
+		  "y": 0.85,
+		  "width": "0.1",
+          "height": 0.1,
 		  "type": "DisplayText"
       }
    ]

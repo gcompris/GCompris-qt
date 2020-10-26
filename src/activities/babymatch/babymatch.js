@@ -162,6 +162,7 @@ function initLevel() {
                                 "posX": levelData.levels[i].x,
                                 "posY": levelData.levels[i].y,
                                 "textWidth": levelData.levels[i].width,
+                                "textHeight": levelData.levels[i].height,
                                 "showText" : levelData.levels[i].text
                             });
         }
