@@ -268,7 +268,7 @@ Data {
                 "randomisedInputData": false,
                 "totalBoys": 2,
                 "totalGirls": 2,
-                "totalCandies": 20,
+                "totalCandies": 14,
                 "forceShowBasket": false,
                 "placedInGirls": 0,
                 "placedInBoys": 0
