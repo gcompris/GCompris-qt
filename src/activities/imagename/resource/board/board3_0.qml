@@ -26,42 +26,42 @@ QtObject {
       {
           "pixmapfile": "images/fusee.svg",
           "x": "0.2",
-          "y": "0.25",
+          "y": 0.2,
           "height": 0.25,
           "width": 0.25
       },
       {
           "pixmapfile": "images/star.svg",
           "x": "0.5",
-          "y": "0.25",
+          "y": 0.2,
           "height": 0.25,
           "width": 0.25
       },
       {
           "pixmapfile": "images/sofa.svg",
           "x": "0.8",
-          "y": "0.25",
+          "y": 0.2,
           "height": 0.25,
           "width": 0.25
       },
       {
           "pixmapfile": "images/house.svg",
           "x": "0.2",
-          "y": "0.7",
+          "y": 0.65,
           "height": 0.25,
           "width": 0.25
       },
       {
           "pixmapfile": "images/lighthouse.svg",
           "x": "0.5",
-          "y": "0.7",
+          "y": 0.65,
           "height": 0.25,
           "width": 0.25
       },
       {
           "pixmapfile": "images/sailingboat.svg",
           "x": "0.8",
-          "y": "0.7",
+          "y": 0.65,
           "height": 0.25,
           "width": 0.25
       },
@@ -69,42 +69,48 @@ QtObject {
 		  "text": qsTr("rocket"),
 		  "x": "0.2",
 		  "y": "0.4",
-		  "width": "0.4",
+		  "width": "0.25",
+          "height": 0.1,
 		  "type": "DisplayText"
       },
       {
 		  "text": qsTr("star"),
 		  "x": "0.5",
 		  "y": "0.4",
-		  "width": "0.4",
+		  "width": "0.25",
+          "height": 0.1,
 		  "type": "DisplayText"
       },
       {
 		  "text": qsTr("sofa"),
 		  "x": "0.8",
 		  "y": "0.4",
-		  "width": "0.4",
+		  "width": "0.25",
+          "height": 0.1,
 		  "type": "DisplayText"
       },
       {
 		  "text": qsTr("house"),
 		  "x": "0.2",
 		  "y": "0.85",
-		  "width": "0.4",
+		  "width": "0.25",
+          "height": 0.1,
 		  "type": "DisplayText"
       },
       {
 		  "text": qsTr("light house"),
 		  "x": "0.5",
 		  "y": "0.85",
-		  "width": "0.4",
+		  "width": "0.25",
+          "height": 0.1,
 		  "type": "DisplayText"
       },
       {
 		  "text": qsTr("sailing boat"),
 		  "x": "0.8",
 		  "y": "0.85",
-		  "width": "0.4",
+		  "width": "0.25",
+          "height": 0.1,
 		  "type": "DisplayText"
       }
    ]
