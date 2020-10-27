@@ -91,27 +91,8 @@ ActivityBase {
             }
         }
 
-        states: [
-            State {
-                name: "baseLayout"
-                when: !ApplicationInfo.isMobile
-                AnchorChanges {
-                    target: typedText
-                    anchors.bottom: bar.top
-                }
-            },
-            State {
-                name: "mobileLayout"
-                when: ApplicationInfo.isMobile
-                AnchorChanges {
-                    target: typedText
-                    anchors.bottom: background.verticalCenter
-                }
-            }
-        ]
-
         Rectangle {
-            anchors.centerIn: typedText
+            id: textBG
             visible: typedText.text != ""
             color: "#80ffffff"
             width: typedText.contentWidth * 2
@@ -121,7 +102,7 @@ ActivityBase {
 
         GCText {
             id: typedText
-            anchors.centerIn: layoutArea
+            anchors.centerIn: textBG
             text: ""
             fontSize: 54
             font.bold: true
@@ -129,6 +110,29 @@ ActivityBase {
             style: Text.Outline
             styleColor: "white"
         }
+
+        states: [
+            State {
+                name: "regularKeyboard"
+                when: !Qt.inputMethod.visible
+                AnchorChanges {
+                    target: textBG
+                    anchors.top: undefined
+                    anchors.horizontalCenter: layoutArea.horizontalCenter
+                    anchors.verticalCenter: layoutArea.verticalCenter
+                }
+            },
+            State {
+                name: "mobileKeyboard"
+                when: Qt.inputMethod.visible
+                AnchorChanges {
+                    target: textBG
+                    anchors.top: layoutArea.top
+                    anchors.horizontalCenter: layoutArea.horizontalCenter
+                    anchors.verticalCenter: undefined
+                }
+            }
+        ]
 
         TextEdit {
             id: textinput
