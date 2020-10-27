@@ -43,6 +43,7 @@ Loader {
      */
     function burst(val) {
         if(active) {
+            item.opacity = 1
             item.start()
             item.emitter.burst(val)
             stopParticleSystem.restart()
@@ -53,7 +54,10 @@ Loader {
         id: stopParticleSystem
         interval: (item && item.emitter) ? item.emitter.lifeSpan + item.emitter.lifeSpanVariation : 0
         repeat: false
-        onTriggered: item.stop()
+        onTriggered: {
+            item.stop()
+            item.opacity = 0
+        }
     }
     onLoaded: item.clip = clip
     source: "ParticleSystemStar.qml"
