@@ -210,12 +210,15 @@ Rectangle {
                     id: title
                     text: dialogActivityContent.title
                     width: titleRectangle.width - 120 * ApplicationInfo.ratio //minus twice the apply button size
+                    height: 50 * ApplicationInfo.ratio
                     anchors.horizontalCenter: titleRectangle.horizontalCenter
                     anchors.verticalCenter: titleRectangle.verticalCenter
                     horizontalAlignment: Text.AlignHCenter
                     verticalAlignment: Text.AlignVCenter
                     color: "black"
-                    fontSize: 20
+                    fontSizeMode: Text.Fit
+                    minimumPointSize: 7
+                    fontSize: largeSize
                     font.weight: Font.DemiBold
                     wrapMode: Text.WordWrap
                 }
