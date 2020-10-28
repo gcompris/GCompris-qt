@@ -153,11 +153,12 @@ Item {
      * type:Item
      * Combobox display when active: header with the description and the gridview containing all the available choices.
      */
-    Item {
+    Rectangle {
         id: popup
         visible: false
         width: if(parent) parent.width
         height: if(parent) parent.height
+        color: "#696da3"
 
         parent: background
         z: 100
@@ -237,87 +238,111 @@ Item {
         }
 
         Rectangle {
-            id: listBackground
-            anchors.fill: parent
-            radius: 10
-            color: "grey"
+            id : headerDescription
+            z: 10
+            color: "#e6e6e6"
+            radius: 10 * ApplicationInfo.ratio
+            width: popup.width - 30
+            height: textDescription.height * 1.2
+            anchors.top: popup.top
+            anchors.horizontalCenter: popup.horizontalCenter
+            anchors.topMargin: 10 * ApplicationInfo.ratio
 
-            Rectangle {
-                id : headerDescription
-		        z: 10
-                width: gridview.width
-                height: gridview.elementHeight
-                GCText {
-                    text: label
-                    fontSize: mediumSize
-                    wrapMode: Text.WordWrap
-                    anchors.horizontalCenter: parent.horizontalCenter
+            GCText {
+                id: textDescription
+                text: label
+                width: headerDescription.width - 120 * ApplicationInfo.ratio //minus twice the discard button size
+                anchors.centerIn: headerDescription
+                horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
+                color: "black"
+                fontSize: 20
+                font.weight: Font.DemiBold
+                wrapMode: Text.WordWrap
+            }
+
+            GCButtonCancel {
+                id: discardIcon
+                anchors.verticalCenter: headerDescription.verticalCenter
+                anchors.margins: 2 * ApplicationInfo.ratio
+                MouseArea {
+                    anchors.fill: parent
+                    onClicked: {
+                        popup.acceptChange();
+                        popup.hidePopUpAndRestoreFocus();
+                    }
                 }
-                GCButtonCancel {
-                    id: discardIcon
-                    anchors.right: headerDescription.right
-                    anchors.top: headerDescription.top
+            }
+        }
+
+        GridView {
+            id: gridview
+            z: 4
+            readonly property int elementHeight: 40 * ApplicationInfo.ratio
+
+            // each element has a 300 width size minimum. If the screen is larger than it,
+            // we do a grid with cases with 300px for width at minimum.
+            // If you have a better idea/formula to have a different column number, don't hesitate, change it :).
+            readonly property int numberOfColumns: Math.max(1, Math.floor(width / (300 * ApplicationInfo.ratio)))
+            contentHeight: isModelArray ? elementHeight*model.count/numberOfColumns : elementHeight*model.length/numberOfColumns
+            width: headerDescription.width
+            height: popup.height - headerDescription.height - 20 * ApplicationInfo.ratio
+            currentIndex: gccombobox.currentIndex
+            flickableDirection: Flickable.VerticalFlick
+            clip: true
+            cellWidth: width / numberOfColumns
+            cellHeight: elementHeight
+            anchors.top: headerDescription.bottom
+            anchors.topMargin: 5 * ApplicationInfo.ratio
+            anchors.horizontalCenter: popup.horizontalCenter
+
+            delegate: Component {
+                Item {
+                    id: gridItem
+                    width: gridview.cellWidth
+                    height: gridview.elementHeight
+                    property bool itemSelected : GridView.isCurrentItem
+                    Rectangle {
+                        width: gridview.cellWidth - radius
+                        height: gridview.elementHeight - radius
+                        color: gridItem.itemSelected ? "#e6e6e6" : "#bdbed0"
+                        border.width: gridItem.itemSelected ? 3 : 1
+                        border.color: "white"
+                        radius: 5 * ApplicationInfo.ratio
+                        anchors.centerIn: parent
+                    }
+                    Image {
+                        id: isSelectedIcon
+                        visible: parent.GridView.isCurrentItem
+                        source: "qrc:/gcompris/src/core/resource/apply.svg"
+                        anchors.left: parent.left
+                        anchors.verticalCenter: parent.verticalCenter
+                        anchors.leftMargin: 10
+                        sourceSize.width: (gridview.elementHeight * 0.8)
+                    }
+                    GCText {
+                        id: textValue
+                        text: isModelArray ? modelData.text : model.text
+                        anchors.centerIn: parent
+                        height: parent.height
+                        width: parent.width - isSelectedIcon.width * 2 - 20
+                        fontSizeMode: Text.Fit
+                        minimumPointSize: 7
+                        fontSize: mediumSize
+                        verticalAlignment: Text.AlignVCenter
+                        horizontalAlignment: Text.AlignHCenter
+                    }
                     MouseArea {
                         anchors.fill: parent
                         onClicked: {
+                            currentIndex = index
                             popup.acceptChange();
                             popup.hidePopUpAndRestoreFocus();
                         }
                     }
                 }
             }
-
-            GridView {
-                id: gridview
-                z: 4
-                readonly property int elementHeight: 40 * ApplicationInfo.ratio
-
-                // each element has a 300 width size minimum. If the screen is larger than it,
-                // we do a grid with cases with 300px for width at minimum.
-                // If you have a better idea/formula to have a different column number, don't hesitate, change it :).
-                readonly property int numberOfColumns: Math.max(1, Math.floor(width / (300 * ApplicationInfo.ratio)))
-                contentHeight: isModelArray ? elementHeight*model.count/numberOfColumns : elementHeight*model.length/numberOfColumns
-                width: listBackground.width
-                height: listBackground.height-headerDescription.height
-                currentIndex: gccombobox.currentIndex
-                flickableDirection: Flickable.VerticalFlick
-                clip: true
-                anchors.top: headerDescription.bottom
-                cellWidth: width / numberOfColumns
-                cellHeight: elementHeight
-
-                delegate: Component {
-                    Rectangle {
-                        width: gridview.cellWidth
-                        height: gridview.elementHeight
-                        color: GridView.isCurrentItem ? "darkcyan" : "beige"
-                        border.width: GridView.isCurrentItem ? 3 : 2
-                        radius: 5
-                        Image {
-                            id: isSelectedIcon
-                            visible: parent.GridView.isCurrentItem
-                            source: "qrc:/gcompris/src/core/resource/apply.svg"
-                            anchors.left: parent.left
-                            anchors.verticalCenter: parent.verticalCenter
-                            anchors.leftMargin: 10
-                            sourceSize.width: (gridview.elementHeight * 0.8)
-                        }
-                        GCText {
-                            id: textValue
-                            text: isModelArray ? modelData.text : model.text
-                            anchors.centerIn: parent
-                        }
-                        MouseArea {
-                            anchors.fill: parent
-                            onClicked: {
-                                currentIndex = index
-                                popup.acceptChange();
-                                popup.hidePopUpAndRestoreFocus();
-                            }
-                        }
-                    }
-                }
-            }
         }
+
     }
 }
