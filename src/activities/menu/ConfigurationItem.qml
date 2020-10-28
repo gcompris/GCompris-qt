@@ -94,6 +94,7 @@ Item {
             GCButton {
                 id: voicesButton
                 height: 30 * ApplicationInfo.ratio
+                width: dialogConfig.contentWidth
                 visible: ApplicationInfo.isDownloadAllowed
                 text: voicesRow.haveLocalResource ? qsTr("Check for updates") :
                 qsTr("Download")
@@ -166,43 +167,47 @@ Item {
             }
         }
 
-        Flow {
-            spacing: 5 * ApplicationInfo.ratio
+        GCText {
+            id: musicText
+            text: qsTr("Background Music")
             width: dialogConfig.contentWidth
-            GCText {
-                text: qsTr("Background Music")
-                fontSize: mediumSize
+            fontSize: mediumSize
+            wrapMode: Text.WordWrap
+        }
+
+        Row {
+            height: 30 * ApplicationInfo.ratio
+            width: background.width * 0.8
+            spacing: 5 * ApplicationInfo.ratio
+            GCButton {
+                id: backgroundMusicName
+                height: parent.height
+                width: parent.width - 35 * ApplicationInfo.ratio
+                enabled: backgroundMusic.playbackState === Audio.PlayingState
+                text: {
+                    if(backgroundMusic.playbackState !== Audio.PlayingState)
+                        return qsTr("Not playing")
+                    else if (backgroundMusic.metaDataMusic[0] !== undefined)
+                        return (qsTr("Title: %1  Artist: %2").arg(backgroundMusic.metaDataMusic[0]).arg(backgroundMusic.metaDataMusic[1]))
+                    else if (String(backgroundMusic.source).slice(0, 37) === "qrc:/gcompris/src/core/resource/intro")
+                        return qsTr("Introduction music")
+                    return ""
+                }
+                onClicked: {
+                    dialogConfig.visible = false
+                    backgroundMusicList.visible = true
+                }
             }
             Image {
                 source: "qrc:/gcompris/src/core/resource/bar_next.svg"
-                height: parent.height
+                height: 30 * ApplicationInfo.ratio
                 sourceSize.width: height
-
+                visible: (backgroundMusic.playbackState === Audio.PlayingState && !backgroundMusic.muted)
                 MouseArea {
                     anchors.fill: parent
-                    enabled: (backgroundMusic.playbackState === Audio.PlayingState && !backgroundMusic.muted)
+                    enabled: parent.visible
                     onClicked: backgroundMusic.nextAudio()
                 }
-            }
-        }
-
-        GCButton {
-            id: backgroundMusicName
-            height: 30 * ApplicationInfo.ratio
-            width: background.width * 0.8
-            enabled: backgroundMusic.playbackState === Audio.PlayingState
-            text: {
-                if(backgroundMusic.playbackState !== Audio.PlayingState)
-                    return qsTr("Not playing")
-                else if (backgroundMusic.metaDataMusic[0] !== undefined)
-                    return (qsTr("Title: %1  Artist: %2").arg(backgroundMusic.metaDataMusic[0]).arg(backgroundMusic.metaDataMusic[1]))
-                else if (String(backgroundMusic.source).slice(0, 37) === "qrc:/gcompris/src/core/resource/intro")
-                    return qsTr("Introduction music")
-                return ""
-            }
-            onClicked: {
-                dialogConfig.visible = false
-                backgroundMusicList.visible = true
             }
         }
 
