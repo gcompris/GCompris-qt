@@ -47,9 +47,9 @@ At the bottom of the screen is the GCompris control bar. Notice that you can hid
     qsTr("1, 2 or 3 red stars - 7 years and up")+ ("</li></ul>") +
     qsTr("If there are two different star icons on an activity, the first one shows the minimum difficulty, and the second one the maximum difficulty.") + ("<br><br>") +
     qsTr("<b>Keyboard shortcuts:</b>") + ("<ul><li>") +
-    qsTr("Ctrl+B Show or Hide the control bar") + ("</li><li>") +
-    qsTr("Ctrl+F Toggle full screen") + ("</li><li>") +
-    qsTr("Ctrl+S Toggle the activity section bar") + ("</li></ul>")
+    qsTr("Ctrl+B: Show or Hide the control bar") + ("</li><li>") +
+    qsTr("Ctrl+F: Toggle full screen") + ("</li><li>") +
+    qsTr("Ctrl+S: Toggle the activity section bar") + ("</li></ul>")
   credit: ""
   section: "/"
   createdInVersion: 0
