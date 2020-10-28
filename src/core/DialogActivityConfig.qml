@@ -185,8 +185,6 @@ Rectangle {
                 radius: 10 * ApplicationInfo.ratio
                 width: dialogActivityContent.width - 30
                 height: title.height * 1.2
-                border.color: "black"
-                border.width: 0
 
                 // The apply button
                 GCButtonCancel {
@@ -213,6 +211,7 @@ Rectangle {
                     text: dialogActivityContent.title
                     width: titleRectangle.width - 120 * ApplicationInfo.ratio //minus twice the apply button size
                     anchors.horizontalCenter: titleRectangle.horizontalCenter
+                    anchors.verticalCenter: titleRectangle.verticalCenter
                     horizontalAlignment: Text.AlignHCenter
                     verticalAlignment: Text.AlignVCenter
                     color: "black"

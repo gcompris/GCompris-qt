@@ -147,6 +147,7 @@ Item {
         GCButton {
             id: backgroundMusicButton
             height: 30 * ApplicationInfo.ratio
+            width: dialogConfig.contentWidth
             visible: ApplicationInfo.isDownloadAllowed
             text: qsTr("Download background music")
 
@@ -209,6 +210,7 @@ Item {
             id: backgroundMusicVolumeText
             text: qsTr("Background music volume")
             fontSize: mediumSize
+            width: dialogConfig.contentWidth
             wrapMode: Text.WordWrap
         }
 
@@ -254,6 +256,7 @@ Item {
         GCButton {
             id: wordsetButton
             height: 30 * ApplicationInfo.ratio
+            width: dialogConfig.contentWidth
             visible: ApplicationInfo.isDownloadAllowed
             text: qsTr("Download full word image set")
 
