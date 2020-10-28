@@ -39,7 +39,7 @@ ActivityInfo {
   qsTr("Level 3: Option to choose between treble and bass clef, addition of black keys (sharp keys).") + ("</li><li>") +
   qsTr("Level 4: Flat notation used for black keys.") + ("</li><li>") +
   qsTr("Level 5: Option to select a note duration (whole, half, quarter, eighth notes).") + ("</li><li>") +
-  qsTr("Level 6: Addition of rests (whole, half, quarter, eighth rests)") + ("</li><li>") +
+  qsTr("Level 6: Addition of rests (whole, half, quarter, eighth rests).") + ("</li><li>") +
   qsTr("Level 7: Save your compositions and load pre-defined or saved melodies.") + ("</li></ul>") +
     qsTr("<b>Keyboard controls:</b>") + ("<ul><li>") +
     qsTr("Digits 1 to 7: white keys") + ("</li><li>") +
