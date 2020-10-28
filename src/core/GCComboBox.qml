@@ -252,11 +252,14 @@ Item {
                 id: textDescription
                 text: label
                 width: headerDescription.width - 120 * ApplicationInfo.ratio //minus twice the discard button size
+                height: 50 * ApplicationInfo.ratio
                 anchors.centerIn: headerDescription
                 horizontalAlignment: Text.AlignHCenter
                 verticalAlignment: Text.AlignVCenter
                 color: "black"
-                fontSize: 20
+                fontSizeMode: Text.Fit
+                minimumPointSize: 7
+                fontSize: largeSize
                 font.weight: Font.DemiBold
                 wrapMode: Text.WordWrap
             }
