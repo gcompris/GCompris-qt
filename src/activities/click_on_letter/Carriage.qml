@@ -78,8 +78,13 @@ Item {
                                         parent.verticalCenter
             z: 11
             text: letter
-            font.pointSize: NaN  // need to clear font.pointSize explicitly
-            font.pixelSize: parent.width * 0.65
+            width: parent.width * 0.9
+            height: parent.height * 0.9
+            horizontalAlignment: Text.AlignHCenter
+            verticalAlignment: Text.AlignVCenter
+            fontSizeMode: Text.Fit
+            minimumPointSize: 7
+            fontSize: largeSize
             font.bold: true
             style: Text.Outline
             styleColor: "#2a2a2a"
