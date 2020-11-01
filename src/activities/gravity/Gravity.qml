@@ -68,8 +68,8 @@ ActivityBase {
             property int planetFrequency: 0
             property int spaceSpeed: planetFrequency * 4
             property alias spaceship: spaceship
-            property alias shuttle: shuttle
-            property alias shuttleDown: shuttleDown
+            property alias station: station
+            property alias stationDown: stationDown
             // the center value for the spaceship
             property double spaceshipX
             property double spaceshipY: parent.height  * 0.5
@@ -106,8 +106,8 @@ ActivityBase {
             space2.startMoving()
             spaceRepeat.restart()
             rewindSpace1 = true
-            shuttle.width = background.width
-            shuttle.y = -shuttle.height
+            station.width = background.width
+            station.y = -station.height
         }
 
         Image {
@@ -252,8 +252,8 @@ ActivityBase {
         }
 
         Image {
-            id: shuttle
-            source: Activity.url + "space_shuttle.svg"
+            id: station
+            source: Activity.url + "space_station.svg"
             x: 0
             y: -height
             width: background.width
@@ -261,12 +261,12 @@ ActivityBase {
             fillMode: Image.PreserveAspectFit
         }
         NumberAnimation {
-            id: shuttleDown
-            target: shuttle
+            id: stationDown
+            target: station
             property: "y"
-            to: items.spaceshipY - (shuttle.height * 0.5)
+            to: items.spaceshipY - (station.height * 0.5)
             duration: items.planetFrequency / 4
-            onRunningChanged: if(shuttle.y > -shuttle.height) {
+            onRunningChanged: if(station.y > -station.height) {
                 Activity.stop();
                 items.bonus.good("lion");
             }

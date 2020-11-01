@@ -94,8 +94,8 @@ function initLevel() {
     items.explosion.hide();
     items.spaceship.opacity = 100;
     items.spaceshipX = items.background.width * 0.5;
-    items.shuttleDown.stop();
-    items.shuttle.y = -items.shuttle.height;
+    items.stationDown.stop();
+    items.station.y = -items.station.height;
     controlSpeed = 0.2 * (currentLevel * 0.25 + 1);
     if(!items.startMessage) {
         items.processTimer.start();
@@ -158,7 +158,7 @@ function createPlanet() {
         planetGravity = currentPlanet.leftSide ? -currentPlanet.width * 0.5: currentPlanet.width * 0.5;
         planetsCounter++;
     } else {
-        items.shuttleDown.restart();
+        items.stationDown.restart();
     }
 }
 
