@@ -74,7 +74,13 @@ Item {
                     //renderType: Text.NativeRendering
                     anchors.centerIn: parent
                     text: control.text
-                    fontSize: 20
+                    width: button.width
+                    height: button.height
+                    horizontalAlignment: Text.AlignHCenter
+                    verticalAlignment: Text.AlignVCenter
+                    fontSizeMode: Text.Fit
+                    minimumPointSize: 7
+                    fontSize: largeSize
                     font.bold: false
                     color: "black"
                     //antialiasing: true
