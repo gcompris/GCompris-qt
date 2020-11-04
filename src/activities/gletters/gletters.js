@@ -70,6 +70,8 @@ var wordComponent = null;
 
 var successRate // Falling speed depends on it
 
+var noShiftLocale = false // for specific locales that don't need shift key, set to true in start()
+
 function start(items_, uppercaseOnly_,  _mode, speedSetting_) {
     items = items_;
     uppercaseOnly = uppercaseOnly_;
@@ -98,6 +100,9 @@ function start(items_, uppercaseOnly_,  _mode, speedSetting_) {
     }
 
     var locale = items.locale == "system" ? "$LOCALE" : items.locale
+
+    if(locale === "ml_IN")
+        noShiftLocale = true;
 
     // register the voices for the locale
     GCompris.DownloadManager.updateResource(GCompris.DownloadManager.getVoicesResourceForLocale(GCompris.ApplicationInfo.getVoicesLocale(items.locale)));
@@ -191,9 +196,11 @@ function initLevel() {
                 var letter = levelData[i];
                 var isUpper = (letter == letter.toLocaleUpperCase());
                 var isDigit = (letter.toLocaleLowerCase() === letter.toLocaleUpperCase())
-                if (!isDigit && isUpper && letters.indexOf(letter.toLocaleLowerCase()) !== -1)
+                if (!isDigit && isUpper && letters.indexOf(letter.toLocaleLowerCase()) !== -1
+                    && !noShiftLocale)
                     items.keyboard.shiftKey = true;
-                else if (!isDigit && !isUpper && letters.indexOf(letter.toLocaleUpperCase()) !== -1)
+                else if (!isDigit && !isUpper && letters.indexOf(letter.toLocaleUpperCase()) !== -1
+                    && !noShiftLocale)
                     items.keyboard.shiftKey = true;
                 else if (letters.indexOf(letter) === -1)
                     letters.push(levelData[i]);
@@ -202,9 +209,11 @@ function initLevel() {
                 for (var j = 0; j < levelData[i].length; j++) {
                     var letter = levelData[i].charAt(j);
                     var isUpper = (letter == letter.toLocaleUpperCase());
-                    if (isUpper && letters.indexOf(letter.toLocaleLowerCase()) !== -1)
+                    if (isUpper && letters.indexOf(letter.toLocaleLowerCase()) !== -1
+                        && !noShiftLocale)
                         items.keyboard.shiftKey = true;
-                    else if (!isUpper && letters.indexOf(letter.toLocaleUpperCase()) !== -1)
+                    else if (!isUpper && letters.indexOf(letter.toLocaleUpperCase()) !== -1
+                        && !noShiftLocale)
                         items.keyboard.shiftKey = true;
                     else if (letters.indexOf(letter) === -1)
                         letters.push(levelData[i].charAt(j));
