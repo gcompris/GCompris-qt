@@ -103,6 +103,8 @@ function start(items_, uppercaseOnly_,  _mode, speedSetting_) {
 
     if(locale === "ml_IN")
         noShiftLocale = true;
+    else
+        noShiftLocale = false;
 
     // register the voices for the locale
     GCompris.DownloadManager.updateResource(GCompris.DownloadManager.getVoicesResourceForLocale(GCompris.ApplicationInfo.getVoicesLocale(items.locale)));
