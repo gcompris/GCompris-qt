@@ -480,6 +480,11 @@ Rectangle {
                 loadButton.clicked();
             }
         }
+        else if(event.key === Qt.Key_Delete) {
+            if(buttonRow.visible && viewContainer.selectedFileIndex != -1){
+                deleteButton.clicked();
+            }
+        }
         else if(event.key === Qt.Key_Back) {
             cancelButton.close();
             event.accepted = true;
