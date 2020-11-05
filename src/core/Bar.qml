@@ -339,6 +339,7 @@ Item {
         anchors.bottomMargin: 10
         anchors.left: openBar.right
         anchors.leftMargin: 10 * ApplicationInfo.ratio
+        property bool isHidden: false
         Repeater {
             model: buttonModel
             Loader {
@@ -370,7 +371,11 @@ Item {
         ]
 
         transitions: Transition {
-            AnchorAnimation { duration: 800; easing.type: Easing.OutBounce }
+            SequentialAnimation {
+                ScriptAction { script: if(barRow.state === "shown") barRow.isHidden = false }
+                AnchorAnimation { duration: 800; easing.type: Easing.OutBounce }
+                ScriptAction { script: if(barRow.state === "hidden") barRow.isHidden = true }
+            }
         }
         populate: Transition {
             NumberAnimation {
@@ -399,6 +404,7 @@ Item {
         BarButton {
             source: "qrc:/gcompris/src/core/resource/bar_exit.svg";
             sourceSize.width: fullButtonScaled
+            visible: barRow.isHidden === false
             onClicked: Core.quit(bar.parent.parent);
         }
     }
@@ -407,6 +413,7 @@ Item {
         BarButton {
             source: "qrc:/gcompris/src/core/resource/bar_about.svg";
             sourceSize.width: fullButtonScaled
+            visible: barRow.isHidden === false
             onClicked: bar.aboutClicked()
         }
     }
@@ -415,6 +422,7 @@ Item {
         BarButton {
             source: "qrc:/gcompris/src/core/resource/bar_help.svg";
             sourceSize.width: fullButtonScaled
+            visible: barRow.isHidden === false
             onClicked: bar.helpClicked()
         }
     }
@@ -423,6 +431,7 @@ Item {
         BarButton {
             source: "qrc:/gcompris/src/core/resource/bar_previous.svg";
             sourceSize.width: halfButtonScaled
+            visible: barRow.isHidden === false
             onClicked: {
                 if(typeof bonus !== "undefined")
                     bonus.haltBonus();
@@ -440,7 +449,7 @@ Item {
             style: Text.Outline
             styleColor: "black"
             color: "white"
-            visible: content.level & content.value
+            visible: content.level & content.value && barRow.isHidden === false
             onTextChanged: {
                 if (level>9)
                     textLength = fullButtonScaled
@@ -453,6 +462,7 @@ Item {
         BarButton {
             source: "qrc:/gcompris/src/core/resource/bar_next.svg";
             sourceSize.width: halfButtonScaled
+            visible: barRow.isHidden === false
             onClicked: {
                 if(typeof bonus !== "undefined")
                     bonus.haltBonus();
@@ -465,6 +475,7 @@ Item {
         BarButton {
             source: "qrc:/gcompris/src/core/resource/bar_repeat.svg";
             sourceSize.width: fullButtonScaled
+            visible: barRow.isHidden === false
             onClicked: bar.repeatClicked()
         }
     }
@@ -473,6 +484,7 @@ Item {
         BarButton {
             source: "qrc:/gcompris/src/core/resource/bar_hint.svg";
             sourceSize.width: fullButtonScaled
+            visible: barRow.isHidden === false
             onClicked: bar.hintClicked()
         }
     }
@@ -481,6 +493,7 @@ Item {
         BarButton {
             source: "qrc:/gcompris/src/core/resource/bar_activity_config.svg";
             sourceSize.width: fullButtonScaled
+            visible: barRow.isHidden === false
             onClicked: bar.activityConfigClicked()
         }
     }
@@ -489,6 +502,7 @@ Item {
         BarButton {
             source: "qrc:/gcompris/src/core/resource/bar_reload.svg";
             sourceSize.width: fullButtonScaled
+            visible: barRow.isHidden === false
             onClicked: bar.reloadClicked()
         }
     }
@@ -497,6 +511,7 @@ Item {
         BarButton {
             source: "qrc:/gcompris/src/core/resource/bar_config.svg";
             sourceSize.width: fullButtonScaled
+            visible: barRow.isHidden === false
             onClicked: bar.configClicked()
         }
     }
@@ -505,6 +520,7 @@ Item {
         BarButton {
             source: "qrc:/gcompris/src/core/resource/bar_home.svg";
             sourceSize.width: fullButtonScaled
+            visible: barRow.isHidden === false
             onClicked: {
                 bar.homeClicked();
             }
@@ -514,6 +530,7 @@ Item {
         id: downloadImage
         AnimatedImage {
             source: "qrc:/gcompris/src/core/resource/loader.gif"
+            visible: barRow.isHidden === false
             MouseArea {
                 id: mouseArea
                 anchors.fill: parent
