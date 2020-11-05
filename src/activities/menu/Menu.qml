@@ -995,15 +995,22 @@ ActivityBase {
             anchors.bottom: parent.bottom
             anchors.horizontalCenter: parent.horizontalCenter
             onKeypress: {
+                var textArray = searchTextField.text.split("");
+                var cursorPosition = searchTextField.cursorPosition
                 if(text == keyboard.backspace) {
-                    searchTextField.text = searchTextField.text.slice(0, -1);
+                    --cursorPosition;
+                    textArray.splice(cursorPosition, 1);
                 }
                 else if(text == keyboard.space) {
-                    searchTextField.text = searchTextField.text.concat(" ");
+                    textArray.splice(cursorPosition, 0, " ");
+                    ++cursorPosition;
                 }
                 else {
-                    searchTextField.text = searchTextField.text.concat(text);
+                    textArray.splice(cursorPosition, 0, text);
+                    ++cursorPosition;
                 }
+                searchTextField.text = textArray.join("");
+                searchTextField.cursorPosition = cursorPosition;
             }
             function populate() {
                var tmplayout = [];
