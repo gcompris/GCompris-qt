@@ -203,7 +203,7 @@ Rectangle {
         width: parent.width / 2
         font.pointSize: NaN
         font.pixelSize: height * 0.6
-        height: saveButton.height
+        height: cancelButton.height * 0.5
         anchors.verticalCenter: saveButton.verticalCenter
         anchors.left: parent.left
         anchors.leftMargin: 20
@@ -227,14 +227,14 @@ Rectangle {
 
     GCButton {
         id: saveButton
-        width: 70 * ApplicationInfo.ratio
-        height: Math.min(creationHandler.height / 15, cancelButton.height)
+        height: fileNameInput.height
         visible: creationHandler.isSaveMode
         text: qsTr("Save")
         theme: "highContrast"
         anchors.verticalCenter: cancelButton.verticalCenter
         anchors.left: fileNameInput.right
-        anchors.leftMargin: 20
+        anchors.right: cancelButton.left
+        anchors.margins: 20 * ApplicationInfo.ratio
         onClicked: saveFile()
     }
 
@@ -244,9 +244,8 @@ Rectangle {
     Rectangle {
         id: viewContainer
         anchors.top: cancelButton.bottom
-        anchors.topMargin: 10
         anchors.bottom: buttonRow.top
-        anchors.margins: 20
+        anchors.margins: 10 * ApplicationInfo.ratio
         border.color: "black"
         border.width: 2
         radius: 20
@@ -326,15 +325,15 @@ Rectangle {
 
     Row {
         id: buttonRow
-        x: parent.width / 20
-        spacing: 20
+        spacing: 20 * ApplicationInfo.ratio
+        anchors.horizontalCenter: viewContainer.horizontalCenter
         anchors.bottom: parent.bottom
-        anchors.bottomMargin: 10
+        anchors.bottomMargin: 10 * ApplicationInfo.ratio
         visible: !creationHandler.isSaveMode
         GCButton {
             id: loadButton
-            width: 70 * ApplicationInfo.ratio
-            height: creationHandler.height / 15
+            width: viewContainer.width * 0.5 - 20 * ApplicationInfo.ratio
+            height: saveButton.height
             text: qsTr("Load")
             enabled: viewContainer.selectedFileIndex != -1
             theme: "highContrast"
@@ -343,8 +342,8 @@ Rectangle {
 
         GCButton {
             id: deleteButton
-            width: 70 * ApplicationInfo.ratio
-            height: creationHandler.height / 15
+            width: loadButton.width
+            height: saveButton.height
             text: qsTr("Delete")
             enabled: viewContainer.selectedFileIndex != -1
             theme: "highContrast"
