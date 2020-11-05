@@ -379,13 +379,17 @@ Rectangle {
         visible: ApplicationSettings.isVirtualKeyboard && !ApplicationInfo.isMobile
         onKeypress: {
             var textArray = fileNameInput.text.split("");
+            var cursorPosition = fileNameInput.cursorPosition
             if(text == backspace) {
-                textArray.splice(fileNameInput.cursorPosition - 1, 1);
+                --cursorPosition;
+                textArray.splice(cursorPosition , 1);
             }
             else {
-                textArray.splice(fileNameInput.cursorPosition, 0, text);
+                textArray.splice(cursorPosition, 0, text);
+                ++cursorPosition;
             }
             fileNameInput.text = textArray.join("");
+            fileNameInput.cursorPosition = cursorPosition;
         }
         shiftKey: true
         onError: console.log("VirtualKeyboard error: " + msg);
