@@ -44,6 +44,7 @@ Rectangle {
             creationHandler.forceActiveFocus();
             parent.Keys.enabled = false;
             dialogOpened = false;
+            keyboardCreation.populate();
         } else {
             parent.Keys.enabled = true;
             parent.forceActiveFocus();
@@ -327,7 +328,7 @@ Rectangle {
         id: buttonRow
         spacing: 20 * ApplicationInfo.ratio
         anchors.horizontalCenter: viewContainer.horizontalCenter
-        anchors.bottom: parent.bottom
+        anchors.bottom: keyboardCreation.top
         anchors.bottomMargin: 10 * ApplicationInfo.ratio
         visible: !creationHandler.isSaveMode
         GCButton {
@@ -368,6 +369,78 @@ Rectangle {
         onDown: creationsList.flick(0, -1000)
         upVisible: creationsList.visibleArea.yPosition <= 0 ? false : true
         downVisible: creationsList.visibleArea.yPosition + creationsList.visibleArea.heightRatio >= 1 ? false : true
+    }
+
+    VirtualKeyboard {
+        id: keyboardCreation
+        anchors.bottom: parent.bottom
+        anchors.horizontalCenter: parent.horizontalCenter
+        width: parent.width
+        visible: ApplicationSettings.isVirtualKeyboard && !ApplicationInfo.isMobile
+        onKeypress: {
+            var textArray = fileNameInput.text.split("");
+            if(text == backspace) {
+                textArray.splice(fileNameInput.cursorPosition - 1, 1);
+            }
+            else {
+                textArray.splice(fileNameInput.cursorPosition, 0, text);
+            }
+            fileNameInput.text = textArray.join("");
+        }
+        shiftKey: true
+        onError: console.log("VirtualKeyboard error: " + msg);
+        readonly property string newline: "\u21B2"
+
+        function populate() {
+            layout = [
+            [
+                { label: "0" },
+                { label: "1" },
+                { label: "2" },
+                { label: "3" },
+                { label: "4" },
+                { label: "5" },
+                { label: "6" },
+                { label: "7" },
+                { label: "8" },
+                { label: "9" }
+            ],
+            [
+                { label: "A" },
+                { label: "B" },
+                { label: "C" },
+                { label: "D" },
+                { label: "E" },
+                { label: "F" },
+                { label: "G" },
+                { label: "H" },
+                { label: "I" }
+            ],
+            [
+                { label: "J" },
+                { label: "K" },
+                { label: "L" },
+                { label: "M" },
+                { label: "N" },
+                { label: "O" },
+                { label: "P" },
+                { label: "Q" },
+                { label: "R" }
+            ],
+            [
+                { label: "S" },
+                { label: "T" },
+                { label: "U" },
+                { label: "V" },
+                { label: "W" },
+                { label: "X" },
+                { label: "Y" },
+                { label: "Z" },
+                { label: " " },
+                { label: backspace }
+            ]
+        ]
+        }
     }
 
     Keys.onEscapePressed: {
