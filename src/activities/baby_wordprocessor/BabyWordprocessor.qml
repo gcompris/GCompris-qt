@@ -81,7 +81,10 @@ ActivityBase {
                 edit.cursorPosition = edit.length
                 isLoadingCreation = false
             }
-            onClose: Activity.focusTextInput();
+            onClose: {
+                Activity.focusTextInput();
+                keyboard.hide = false;
+            }
         }
 
         Column {
@@ -137,6 +140,7 @@ ActivityBase {
                 width: parent.width
                 text: qsTr("Load")
                 onClicked: {
+                    keyboard.hide = true;
                     creationHandler.loadWindow();
                 }
             }
@@ -146,6 +150,7 @@ ActivityBase {
                 width: parent.width
                 text: qsTr("Save")
                 onClicked: {
+                    keyboard.hide = true;
                     var textToSave = {};
                     // Remove focus to force text storing within the TextEdit
                     edit.focus = false;
@@ -320,7 +325,7 @@ ActivityBase {
             anchors.bottom: parent.bottom
             anchors.horizontalCenter: parent.horizontalCenter
             width: parent.width
-            visible: ApplicationSettings.isVirtualKeyboard && !ApplicationInfo.isMobile
+            visible: ApplicationSettings.isVirtualKeyboard && !ApplicationInfo.isMobile && !hide
             onKeypress: {
                 if(text == backspace) {
                     edit.backspace();
