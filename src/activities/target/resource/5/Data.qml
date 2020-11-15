@@ -24,15 +24,13 @@ Data {
     objective: qsTr("Maximum value: 500000.")
     difficulty: 6
     property var colors: [
-        "#ff1b00",
-        "#7edee2",
-        "#f1f500",
-        "#3dff00",
-        "#b7d2d4",
-        "#6db5ba",
-        "#ffffff"
+        "#ee7f7f",
+        "#eebf7f",
+        "#e0ee7f",
+        "#7fee8f",
+        "#7fcbee",
+        "#b8c8f6"
     ]
-
     data: [
         [
             {size: 50, color: colors[0], score: 100},
@@ -64,13 +62,13 @@ Data {
             {size: 250, color: colors[2], score: 4000},
             {size: 300, color: colors[3], score: 1000},
             {size: 350, color: colors[3], score: 300},
-            {size: 400, color: colors[4], score: 100},
+            {size: 400, color: colors[3], score: 100},
             {size: 450, color: colors[4], score: 30},
-            {size: 500, color: colors[5], score: 10},
-            {size: 550, color: colors[5], score: 8},
-            {size: 600, color: colors[6], score: 4},
-            {size: 650, color: colors[6], score: 2},
-            {size: 700, color: colors[6], score: 1},
+            {size: 500, color: colors[4], score: 10},
+            {size: 550, color: colors[4], score: 8},
+            {size: 600, color: colors[5], score: 4},
+            {size: 650, color: colors[5], score: 2},
+            {size: 700, color: colors[5], score: 1},
         ]
     ]
 }
