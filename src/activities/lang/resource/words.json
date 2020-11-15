@@ -5020,11 +5020,6 @@
                         "voice": "voices-$CA/$LOCALE/words/jewel.$CA"
                     },
                     {
-                        "description": "keel",
-                        "image": "words/keel.png",
-                        "voice": "voices-$CA/$LOCALE/words/keel.$CA"
-                    },
-                    {
                         "description": "keyboard",
                         "image": "words/keyboard.png",
                         "voice": "voices-$CA/$LOCALE/words/keyboard.$CA"
