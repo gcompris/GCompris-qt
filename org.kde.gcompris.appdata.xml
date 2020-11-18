@@ -58,7 +58,7 @@
   <summary xml:lang="he">משחק חינוך לפלטפורמות מרובות לילדים/ות בגילאי 2-10</summary>
   <summary xml:lang="hi">२ से १० वर्ष के बच्चों के लिए विभिन्न क्रियाओं वाला शैक्षणिक खेल</summary>
   <summary xml:lang="hu">Oktató játékcsopmag 2-10 éves gyerekek számára</summary>
-  <summary xml:lang="id">Permainan Pendidikan berisi berbagai kegiatan untuk anak-anak 2 hingga 10 tahun</summary>
+  <summary xml:lang="id">Permainan berisi berbagai kegiatan pendidikan untuk anak usia 2  sampai 10 tahun</summary>
   <summary xml:lang="it">Gioco didattico multi-attività per bambini da 2 a 10 anni</summary>
   <summary xml:lang="ko">2-10세 어린이용 다양한 활동이 있는 교육용 게임</summary>
   <summary xml:lang="mk">Едукативна игра со повеќе активности за деца од 2 до 10 години</summary>
@@ -98,7 +98,7 @@
     <p xml:lang="he">חבילת הלומדות האיכותיות Gcompris כוללת מספר גדול של פעילויות לילדים וילדות בגילאי 2 עד 10</p>
     <p xml:lang="hi">जीकॉम्परी एक शैक्षिक सॉफ्टवेयर सूट है जिसमें 2 से 10 वर्ष की आयु के बच्चों के लिए कई गतिविधियां शामिल हैं।</p>
     <p xml:lang="hu">A Gcompris egy minőségi oktató szoftvercsomag amely sokféle feladatot tartalmaz 2-10 éves gyermekek számára.</p>
-    <p xml:lang="id">GCompris adalah kumpulan permainan mendidik yang berisi berbagai kegiatan untuk anak umur 2 hingga 10 tahun.</p>
+    <p xml:lang="id">GCompris adalah kumpulan permainan berbagai kegiatan pendidikan untuk anak usia 2  sampai 10 tahun</p>
     <p xml:lang="it">GCompris è una raccolta di alta qualità di programmi didattici che comprende numerose attività per bambini da 2 a 10 anni.</p>
     <p xml:lang="ko">GCompris는 다양한 2세에서 10세 사이의 아동용 활동이 들어 있는 고품질의 교육용 소프트웨어 제품군입니다.</p>
     <p xml:lang="mk">Жикомпри е висококвалитетен образовен софтвер, кој вклучува голем број активности за деца на возраст од 2 до 10 години.</p>
@@ -174,7 +174,7 @@
     <p xml:lang="he">למטה אפשר למצוא רשימת נושאים והפעילויות שקיימות תחת כל נושא.</p>
     <p xml:lang="hi">नीचे आप उस श्रेणी में उपलब्ध कुछ गतिविधियों के साथ श्रेणियों की एक सूची पा सकते हैं।</p>
     <p xml:lang="hu">Lentebb néhány tevékenység listáját találod melyek egy-egy ilyen kategóriában elérhetőek.</p>
-    <p xml:lang="id">Di bawah ini kamu bisa menemukan daftar kategori dengan beberapa kegiatan yang tersedia di dalam setiap kategori tersebut.</p>
+    <p xml:lang="id">Di bawah ini kamu dapat menemukan daftar kategori dengan beberapa kegiatan yang tersedia di dalam setiap kategori tersebut.</p>
     <p xml:lang="it">Di seguito puoi trovare un elenco di categorie con alcune delle attività disponibili per categoria.</p>
     <p xml:lang="ko">아래에서 분류 목록과 해당 분류의 활동을 찾을 수 있습니다.</p>
     <p xml:lang="mk">Подолу можете да најдете список на категории со некои активности достапни во таа категорија.</p>
@@ -213,7 +213,7 @@
       <li xml:lang="he">לגלות את המחשב: מקלדת, עכבר, מחוות...</li>
       <li xml:lang="hi">कंप्यूटर की खोज: कीबोर्ड, माउस, अलग माउस इशारों, ...</li>
       <li xml:lang="hu">számítógép használat: billentyűzet, egér, az egér mozgás gyakorlása, ...</li>
-      <li xml:lang="id">Pengenalan komputer: keyboard, mouse, gestur mouse yang berbeda, ...</li>
+      <li xml:lang="id">Pengenalan komputer: keyboard, mouse, gerakan mouse yang berbeda, ...</li>
       <li xml:lang="it">scoperta del computer: tastiera, mouse, vari gesti con il mouse, ...</li>
       <li xml:lang="ko">컴퓨터와 친해지기: 키보드, 마우스, 마우스 제스처, ...</li>
       <li xml:lang="mk">откривање на компјутер: тастатура, глувче, различни гестови на глувчето, ...</li>
@@ -251,7 +251,7 @@
       <li xml:lang="he">חשבון: טבלת זכרון, מנייה, תמונות מראה, לאזן את המאזניים, להחזיר עודף...</li>
       <li xml:lang="hi">अंकगणितीय: तालिका मेमोरी, गणण, दर्पण छवि, पैमाने संतुलन, देय परिवर्तन, ...</li>
       <li xml:lang="hu">számtan: memória, számlálás, tükörkép, mérleg használat, mérleg egyensúly, visszajáró kiszámítása ...</li>
-      <li xml:lang="id">aritmatika: tabel ingatan, pencacahan, cerminan gambar, menyeimbangkan skala, ganti memberi, ..</li>
+      <li xml:lang="id">aritmatika: tabel ingatan, pencacahan, cerminkan gambar, menyeimbangkan skala, ganti memberi, ..</li>
       <li xml:lang="it">aritmetica: tabelline, enumerazione, immagine speculare, allineare la bilancia, dare il resto, ...</li>
       <li xml:lang="ko">산술 연산: 표 기억하기, 배열하기, 그림 뒤집기, 저울 맞추기, 거스름돈 계산하기, ...</li>
       <li xml:lang="mk">аритметика: меморија, набројување, отцртување слика, балансирање на вага, враќање кусур, ...</li>
@@ -326,7 +326,7 @@
       <li xml:lang="he">משחקים: זכרון, 4 בשורה, איקס-עיגול, סודוקו, מגדלי האנוי...</li>
       <li xml:lang="hi">खेल: स्मृति, कनेक्ट ४, टिक टैक टो , सुडोकू, हनोई टॉवर, ...</li>
       <li xml:lang="hu">játékok: memóriajáték, amőba. sudoku, hanoi tornyai, ...</li>
-      <li xml:lang="id">permainan: ingatan, menyambungkan 4, tic tac toe, sudoku, menara hanoi, ...</li>
+      <li xml:lang="id">permainan: ingatan, menyambung 4, tic tac toe, sudoku, menara hanoi, ...</li>
       <li xml:lang="it">giochi: memory, forza 4, filetto, sudoku, torre di hanoi, ...</li>
       <li xml:lang="ko">게임: 메모리 게임, 4개 연결하기, 삼목, 수도쿠, 하노이 탑, ...</li>
       <li xml:lang="mk">игри: меморија, поврзи 4, икс и точка, судоку, ханој кула, ...</li>
@@ -445,7 +445,7 @@
     <p xml:lang="he">כרגע מציעה חבילת ג'יקומפריס יותר מ100 פעילויות ונוספות נמצאות בפיתוח. ג'יקומפריס היא תוכנה חופשית, מה שאומר שאפשר לשנות אותה לפי הצרכים שלך, לשפר אותה והכי חשוב- לחלוק אותה עם ילדים בכל מקום.</p>
     <p xml:lang="hi">वर्तमान में जी कॉम्पप्रस १०० गतिविधियों से अधिक प्रदान करता है और अधिक विकसित किए जा रहे हैं। जी कॉम्पप्रस मुफ्त सॉफ्टवेयर है, इसका मतलब है कि आप इसे अपनी आवश्यकताओं के अनुसार अनुकूलित कर सकते हैं, इसमें सुधार कर सकते हैं, और सबसे महत्वपूर्ण बात, इसे हर जगह बच्चों के साथ साझा कर सकते हैं।</p>
     <p xml:lang="hu">Jelenleg a GCompris több mint 100 féle tevékenységet kínál és több is fejlesztés alatt áll. A Gcompris ingyenes szoftver, amely azt jelenti, kedvedre átalakíthatod, fejlesztheted, és a legfontosabb: megoszthatod bármely gyerekkel.</p>
-    <p xml:lang="id">Saat ini GCompris menawarkan lebih dari 100 aktivitas dan masih banyak lagi yang sedang dikembangkan. GCompris adalah perangkat lunak bebas, itu berarti kamu bisa menyesuaikannya dengan kebutuhanmu sendiri, memperbaikinya dan yang terpenting, bagikan dengan anak-anak di mana-mana.</p>
+    <p xml:lang="id">Saat ini GCompris menawarkan lebih dari 100 aktivitas dan masih banyak lagi yang sedang dikembangkan. GCompris adalah perangkat lunak bebas, itu berarti kamu dapat menyesuaikannya dengan kebutuhanmu sendiri, memperbaikinya dan yang terpenting, bagikan dengan anak-anak di mana-mana.</p>
     <p xml:lang="it">Attualmente GCompris offre più di 100 attività e altre sono in fase di sviluppo. GCompris è software libero, che significa che puoi adattarlo alle tue necessità, migliorarlo e, cosa più importante, condividerlo con tutti i bambini.</p>
     <p xml:lang="ko">GCompris에는 100개 이상의 활동이 들어 있으며 더 많은 활동을 개발하고 있습니다. GCompris는 자유 소프트웨어이며, 필요에 따라서 활동을 개선할 수 있으며 전 세계의 사람들과 공유할 수 있습니다.</p>
     <p xml:lang="mk">Во моментов, Жикомпри нуди повеќе од 100 активности и уште се развиваат. Жикомпри е слободен софтвер, тоа значи дека можете да го прилагодите на вашите сопствени потреби, да го подобрите и што е најважно, да го споделите со децата секаде.</p>
@@ -486,7 +486,7 @@
       <caption xml:lang="he">התפריט המרכזי של ג'יקומפריס</caption>
       <caption xml:lang="hi">जीकोंप्रिस मुख्य मेनू </caption>
       <caption xml:lang="hu">A GCompris főmenüje</caption>
-      <caption xml:lang="id">Menu utama GCompris</caption>
+      <caption xml:lang="id">Menu Utama GCompris</caption>
       <caption xml:lang="it">Menu principale di GCompris</caption>
       <caption xml:lang="ko">GCompris 주 메뉴</caption>
       <caption xml:lang="mk">Жикомпри главно мени</caption>
@@ -562,7 +562,7 @@
       <caption xml:lang="he">פעילות "ללמוד לקרוא שעון"</caption>
       <caption xml:lang="hi">घड़ी सीखें</caption>
       <caption xml:lang="hu">"Óratanulás" tevékenység</caption>
-      <caption xml:lang="id">Aktivitas "Mempelajari Jam"</caption>
+      <caption xml:lang="id">Aktivitas "Mengenal Jam"</caption>
       <caption xml:lang="it">Attività «Impara l'orologio»</caption>
       <caption xml:lang="ko">"시계 익히기" 활동</caption>
       <caption xml:lang="mk">"Учење на часовникот" активност</caption>
@@ -636,7 +636,7 @@
       <caption xml:lang="he">פעילות "צבעים"</caption>
       <caption xml:lang="hi">रंगों की गतिविधि</caption>
       <caption xml:lang="hu">"Színek" tevékenység</caption>
-      <caption xml:lang="id">Aktivitas "Mewarnai"</caption>
+      <caption xml:lang="id">Aktivitas "Mengenal warna"</caption>
       <caption xml:lang="it">Attività «Colori»</caption>
       <caption xml:lang="ko">"색깔" 활동</caption>
       <caption xml:lang="mk">"Бои" активност</caption>
@@ -783,7 +783,7 @@
       <caption xml:lang="he">פעילות "מתומן"</caption>
       <caption xml:lang="hi">षटकोण गतिविधि</caption>
       <caption xml:lang="hu">"Hexagon" tevékenység</caption>
-      <caption xml:lang="id">Aktivitas "Segi Enam"</caption>
+      <caption xml:lang="id">Aktivitas "Segi enam"</caption>
       <caption xml:lang="it">Attività «Esagono»</caption>
       <caption xml:lang="ko">"육각형" 활동</caption>
       <caption xml:lang="mk">"Шестаголник" активност</caption>
