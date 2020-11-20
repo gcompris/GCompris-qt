@@ -958,4 +958,7 @@
     <value key="KDE::google_play">https://play.google.com/store/apps/details?id=net.gcompris.full</value>
     <value key="KDE::windows_store">https://www.microsoft.com/store/apps/9pgxjtcxn8qm</value>
   </custom>
+  <releases>
+    <release version="1.0" date="2020-11-19"/>
+  </releases>
 </component>
