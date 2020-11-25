@@ -1,6 +1,6 @@
 /* GCompris - ActivityInfo.qml
  *
- * Copyright (C) 2015 JB BUTET <ashashiwa@mgail.com>
+ * Copyright (C) 2015 JB BUTET <ashashiwa@gmail.com>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by

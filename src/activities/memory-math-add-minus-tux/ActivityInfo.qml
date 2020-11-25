@@ -1,6 +1,6 @@
 /* GCompris - ActivityInfo.qml
  *
- * Copyright (C) 2015 JB BUTET <ashashiwa@mgail.com>
+ * Copyright (C) 2015 JB BUTET <ashashiwa@gmail.com>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -21,7 +21,7 @@ ActivityInfo {
   name: "memory-math-add-minus-tux/MemoryMathAddMinusTux.qml"
   difficulty: 4
   icon: "memory-math-add-minus-tux/memory-math-add-minus-tux.svg"
-  author: "JB BUTET &lt;ashashiwa@mgail.com&gt;"
+  author: "JB BUTET &lt;ashashiwa@gmail.com&gt;"
   //: Activity title
   title: qsTr("Addition and subtraction memory game against Tux")
   //: Help title
