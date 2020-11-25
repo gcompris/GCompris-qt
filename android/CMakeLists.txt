@@ -1,3 +1,8 @@
+#=============================================================================
+# SPDX-FileCopyrightText: 2014 Johnny Jazeix <jazeix@gmail.com>
+#
+# SPDX-License-Identifier: BSD-3-Clause
+#=============================================================================
 #android build
 # copied/inspired from stellarium project (http://www.stellarium.org/wiki/index.php/Building_for_Android)
 

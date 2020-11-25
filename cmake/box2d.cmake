@@ -1,3 +1,8 @@
+#=============================================================================
+# SPDX-FileCopyrightText: 2018 Johnny Jazeix <jazeix@gmail.com>
+#
+# SPDX-License-Identifier: BSD-3-Clause
+#=============================================================================
 
 set(QML_BOX2D_MODULE "auto" CACHE STRING "Policy for qml-box2d module [auto|submodule|system|disabled]")
 

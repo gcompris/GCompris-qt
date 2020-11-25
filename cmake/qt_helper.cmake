@@ -1,3 +1,8 @@
+#=============================================================================
+# SPDX-FileCopyrightText: 2014 Thibaut ROMAIN <thibrom@gmail.com>
+#
+# SPDX-License-Identifier: BSD-3-Clause
+#=============================================================================
 function(getQtPluginPaths _plugin_target _absolute_path _subdir _file)
   getQtPluginsPath(_qt_plugins_path)
   get_target_property(_plugin_path ${_plugin_target} LOCATION)

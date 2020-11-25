@@ -1,2 +1,7 @@
+#=============================================================================
+# SPDX-FileCopyrightText: 2014 Thibaut ROMAIN <thibrom@gmail.com>
+#
+# SPDX-License-Identifier: BSD-3-Clause
+#=============================================================================
 include(BundleUtilities)
 fixup_bundle("@GCOMPRIS_BUNDLE@" "@GCOMPRIS_OTHER_LIBS@" "@Qt5_DIR@/../..")

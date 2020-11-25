@@ -1,3 +1,8 @@
+#=============================================================================
+# SPDX-FileCopyrightText: 2018 Johnny Jazeix <jazeix@gmail.com>
+#
+# SPDX-License-Identifier: BSD-3-Clause
+#=============================================================================
 # These tools are run (for now) only if BUILD_TESTING is ON
 # Another useful tool could be clazy compiler too
 

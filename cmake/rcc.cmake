@@ -1,4 +1,8 @@
-
+#=============================================================================
+# SPDX-FileCopyrightText: 2016 Johnny Jazeix <jazeix@gmail.com>
+#
+# SPDX-License-Identifier: BSD-3-Clause
+#=============================================================================
 #
 # GCOMPRIS_ADD_RCC(resource_path <file list>)
 #
