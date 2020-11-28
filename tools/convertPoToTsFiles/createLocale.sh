@@ -1,5 +1,10 @@
 #!/bin/bash
 #
+#=============================================================================
+# SPDX-FileCopyrightText: 2014 Bruno Coudoin <bruno.coudoin@gcompris.net>
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
+#=============================================================================
 # This tool is used to create a new translation file with
 # all the strings taken from the Gtk+ version of GCompris.
 #

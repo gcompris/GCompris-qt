@@ -2,7 +2,11 @@
 #
 # move_translations.sh
 # 
-# Copyright (C) 2018 Johnny Jazeix
+#=============================================================================
+# SPDX-FileCopyrightText: 2018 Johnny Jazeix <jazeix@gmail.com>
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
+#=============================================================================
 # 
 # This is a (temporary) script to move translations retrieved by releaseme
 # fetchpo.rb script. The final aim is to have the po in the good arborescence

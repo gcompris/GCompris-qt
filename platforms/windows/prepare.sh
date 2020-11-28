@@ -1,4 +1,9 @@
 #!/bin/bash
+#=============================================================================
+# SPDX-FileCopyrightText: 2016 Bruno Coudoin <bruno.coudoin@gcompris.net>
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
+#=============================================================================
 #
 # Before making a Windows build we must provide the converted mp3
 # and the qm files because this is too annoying to create them on

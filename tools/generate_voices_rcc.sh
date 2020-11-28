@@ -2,7 +2,11 @@
 #
 # generate_voices_rcc.sh
 # 
-# Copyright (C) 2014 Holger Kaelberer
+#=============================================================================
+# SPDX-FileCopyrightText: 2014 Holger Kaelberer <holger.k@elberer.de>
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
+#=============================================================================
 # 
 # Generates Qt binary resource files (.rcc) for voices locales.
 #

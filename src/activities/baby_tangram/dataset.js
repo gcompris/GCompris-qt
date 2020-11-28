@@ -1,3 +1,12 @@
+/* GCompris - dataset.js
+ *
+ * SPDX-FileCopyrightText: 2016 Bruno Coudoin <bruno.coudoin@gcompris.net>
+ *
+ * Authors:
+ *   Bruno Coudoin <bruno.coudoin@gcompris.net>
+ *
+ *   SPDX-License-Identifier: GPL-3.0-or-later
+ */
 .pragma library
 
 /* dataset format

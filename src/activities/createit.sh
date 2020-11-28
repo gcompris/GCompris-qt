@@ -1,5 +1,10 @@
 #!/bin/bash
 #set -x
+#=============================================================================
+# SPDX-FileCopyrightText: 2014 Bruno Coudoin <bruno.coudoin@gcompris.net>
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
+#=============================================================================
 if [ -z $1 ]; then
   echo "Usage: createit.sh [new GCompris activity]"
   echo "   e.g.: createit.sh myactivity"

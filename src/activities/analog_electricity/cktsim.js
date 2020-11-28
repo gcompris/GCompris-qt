@@ -1,6 +1,6 @@
 /* cktsim.js
  *
- * Copyright (C) 2011 Massachusetts Institute of Technology
+ * SPDX-FileCopyrightText: 2011 Massachusetts Institute of Technology
  *
  * Authors:
  *   Massachusetts Institute of Technology (original engine)

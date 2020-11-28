@@ -1,4 +1,9 @@
 #!/usr/bin/env bash
+#=============================================================================
+# SPDX-FileCopyrightText: 2019 Johnny Jazeix <jazeix@gmail.com>
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
+#=============================================================================
 # Copied from https://cgit.kde.org/plasma-browser-integration.git/tree/StaticMessages.sh
 
 # We fill in the en "translations" manually. We extract this to the KDE system as pot as normal, then populate the other json files

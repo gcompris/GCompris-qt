@@ -1,5 +1,9 @@
 #!/bin/sh
-
+#=============================================================================
+# SPDX-FileCopyrightText: 2014 Bruno Coudoin <bruno.coudoin@gcompris.net>
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
+#=============================================================================
 # Extract strings from all source files.
 # EXTRACT_TR_STRINGS extracts strings with lupdate and convert them to .pot with
 # lconvert.

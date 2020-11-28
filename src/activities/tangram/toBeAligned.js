@@ -1,4 +1,13 @@
-
+/* GCompris - toBeAligned.js
+ *
+ * SPDX-FileCopyrightText: 2016 Bruno Coudoin <bruno.coudoin@gcompris.net>
+ *
+ * Authors:
+ *   Yves Combe / Philippe Banwarth (GTK+ version)
+ *   Bruno Coudoin <bruno.coudoin@gcompris.net> (Qt Quick port)
+ *
+ *   SPDX-License-Identifier: GPL-3.0-or-later
+ */
 
 // These levels where imported but must be aligned manually
 // Set the edition mode in Tangram.qml and click on the reload

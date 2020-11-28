@@ -1,4 +1,9 @@
 #!/bin/bash
+#=============================================================================
+# SPDX-FileCopyrightText: 2014 Bruno Coudoin <bruno.coudoin@gcompris.net>
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
+#=============================================================================
 
 locale=$1
 gcomprisGtkPoFile=$2

@@ -1,3 +1,8 @@
+#=============================================================================
+# SPDX-FileCopyrightText: 2015 Johnny Jazeix <jazeix@gmail.com>
+#
+# SPDX-License-Identifier: BSD-3-Clause
+#=============================================================================
 
 # Fill spec file with all the translation and rcc files
 foreach(QM_FILE ${QM_FILES})
