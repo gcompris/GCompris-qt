@@ -1,5 +1,9 @@
 /* p4wn, AKA 5k chess - by Douglas Bagnall <douglas@paradise.net.nz>
  *
+ * SPDX-FileCopyrightText: 2002 Douglas Bagnall <douglas@paradise.net.nz>
+ *
+ * SPDX-License-Identifier: Unlicense
+ *
  * This code is in the public domain, or as close to it as various
  * laws allow. No warranty; no restrictions.
  *

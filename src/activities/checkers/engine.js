@@ -1,3 +1,10 @@
+/* 
+ * SPDX-FileCopyrightText: 2016 Shubhendu Saurabh <me@shubhu.in>
+ * SPDX-License-Identifier: MPL-2.0
+ *
+ * Code comes from https://github.com/shubhendusaurabh/draughts.js
+ */
+
 /*
 ||==================================================================================
 || DESCRIPTION OF IMPLEMENTATION PRINCIPLES
