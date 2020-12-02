@@ -83,6 +83,9 @@ if(NOT ${QML_BOX2D_MODULE} STREQUAL "disabled")
         set(QMAKE_MAKE_PROGRAM "make")
       endif()
     endif()
+    if(UBUNTU_TOUCH)
+        set(_qmake_program ${QT_QMAKE_EXECUTABLE})
+    endif()
     ExternalProject_Add(qml_box2d
       DOWNLOAD_COMMAND ""
       SOURCE_DIR ${_box2d_source_dir}

@@ -291,8 +291,12 @@ inline QStringList DownloadManager::getSystemResourcePaths() const
 #if defined(Q_OS_ANDROID)
         "assets:",
 #endif
+#if defined(UBUNTUTOUCH)
+        QStandardPaths::writableLocation(QStandardPaths::AppDataLocation) + '/' + GCOMPRIS_APPLICATION_NAME
+#else
         QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) +
             '/' + GCOMPRIS_APPLICATION_NAME
+#endif
     });
 
     // Append standard application directories (like /usr/share/KDE/gcompris-qt)

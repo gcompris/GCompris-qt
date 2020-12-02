@@ -15,6 +15,10 @@ if(SAILFISHOS)
   add_definitions(-DSAILFISHOS)
 endif()
 
+if (UBUNTU_TOUCH)
+  add_definitions(-DUBUNTUTOUCH)
+endif()
+
 if(ANDROID)
   # needed since ECM 5.45 (https://bugs.kde.org/show_bug.cgi?id=394042)
   include_directories(SYSTEM
@@ -124,7 +128,7 @@ if(BUILD_STANDALONE)
     list(APPEND _qt_plugins Qt5::QTgaPlugin Qt5::QTiffPlugin Qt5::QCocoaIntegrationPlugin)
   elseif(WIN32)
     list(APPEND _qt_plugins Qt5::QWindowsIntegrationPlugin Qt5::QWindowsAudioPlugin Qt5::AudioCaptureServicePlugin Qt5::DSServicePlugin)
-  elseif(UNIX AND NOT ANDROID AND NOT SAILFISHOS)
+  elseif(UNIX AND NOT ANDROID AND NOT SAILFISHOS AND NOT UBUNTUTOUCH)
     list(APPEND _qt_plugins Qt5::QXcbIntegrationPlugin Qt5::QXcbEglIntegrationPlugin Qt5::QXcbGlxIntegrationPlugin Qt5::QAlsaPlugin Qt5::QPulseAudioPlugin)
   endif()
 
@@ -138,7 +142,7 @@ if(BUILD_STANDALONE)
   endif()
 
   set(_qt_plugins2 imageformats/${_lib_prefix}qsvg)
-  if(UNIX AND NOT ANDROID AND NOT APPLE AND NOT SAILFISHOS)
+  if(UNIX AND NOT ANDROID AND NOT APPLE AND NOT SAILFISHOS AND NOT UBUNTUTOUCH)
     list(APPEND _qt_plugins2 mediaservice/${_lib_prefix}gstaudiodecoder
       mediaservice/${_lib_prefix}gstcamerabin
       mediaservice/${_lib_prefix}gstmediacapture
@@ -159,7 +163,7 @@ if(BUILD_STANDALONE)
     QtMultimedia/${_lib_prefix}declarative_multimedia
     QtSensors/${_lib_prefix}declarative_sensors)
 
-  if(NOT SAILFISHOS)
+  if(NOT SAILFISHOS AND NOT UBUNTUTOUCH)
     list(APPEND _qml_plugins
       QtQuick/Controls/${_lib_prefix}qtquickcontrolsplugin
       QtQuick/Layouts/${_lib_prefix}qquicklayoutsplugin)
@@ -283,7 +287,7 @@ if(BUILD_STANDALONE AND NOT ANDROID)
   install(SCRIPT ${CMAKE_CURRENT_BINARY_DIR}/FixBundle.cmake)
 
   # install a startup script for linux bundle
-  if(UNIX AND NOT APPLE AND NOT SAILFISHOS)
+  if(UNIX AND NOT APPLE AND NOT SAILFISHOS AND NOT UBUNTUTOUCH)
     install(PROGRAMS ../../tools/gcompris-qt.sh DESTINATION bin)
   endif()
 endif()

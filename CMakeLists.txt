@@ -3,7 +3,7 @@
 #
 # SPDX-License-Identifier: BSD-3-Clause
 #=============================================================================
-cmake_minimum_required(VERSION 3.10)
+cmake_minimum_required(VERSION 3.3)
 
 project(gcompris-qt C CXX)
 
@@ -69,6 +69,12 @@ if(CMAKE_SYSTEM_NAME STREQUAL Android)
   if(ECM_VERSION VERSION_LESS "5.15.0")
     add_definitions(-DANDROID)
   endif()
+endif()
+
+if(UBUNTU_TOUCH)
+    #clickable will not find the correct qmake executable when building Box2D, lets define it here
+    unset(QT_QMAKE_EXECUTABLE CACHE)
+    find_program(QT_QMAKE_EXECUTABLE "qmake")
 endif()
 
 # Set executable filename
@@ -406,6 +412,10 @@ if(SAILFISHOS)
   # Need to be done at the end, after src
   add_subdirectory(platforms/sailfishOS)
 endif()
+
+if (UBUNTU_TOUCH)
+    add_subdirectory(platforms/ubuntutouch)
+endif ()
 
 # only enable unit tests for linux
 if(BUILD_TESTING)

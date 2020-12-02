@@ -154,10 +154,11 @@ public:
         Android,    /**< Android */
         Ios,        /**< IOS (not supported) */
         Blackberry, /**< Blackberry (not supported) */
-        SailfishOS  /**< SailfishOS */
+        SailfishOS,  /**< SailfishOS */
+        UbuntuTouchOS
     };
 
-    Q_ENUM(Platform)
+    Q_ENUMS(Platform)
 
     /**
      * Returns an absolute and platform independent path to the passed @p file

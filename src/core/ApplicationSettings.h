@@ -264,8 +264,13 @@ class ApplicationSettings : public QObject
 
 public:
 	/// @cond INTERNAL_DOCS
+#if defined(UBUNTUTOUCH)
+    explicit ApplicationSettings(const QString &configPath = QStandardPaths::writableLocation(QStandardPaths::AppConfigLocation)
+         + "/gcompris/" + GCOMPRIS_APPLICATION_NAME + ".conf", QObject *parent = 0);
+#else
     explicit ApplicationSettings(const QString &configPath = QStandardPaths::writableLocation(QStandardPaths::GenericConfigLocation)
          + "/gcompris/" + GCOMPRIS_APPLICATION_NAME + ".conf", QObject *parent = 0);
+#endif
     virtual ~ApplicationSettings();
     // It is not recommended to create a singleton of Qml Singleton registered
     // object but we could not found a better way to let us access ApplicationInfo
@@ -291,7 +296,14 @@ public:
         emit audioEffectsEnabledChanged();
     }
 
-    bool isBackgroundMusicEnabled() const { return m_isBackgroundMusicEnabled; }
+    bool isBackgroundMusicEnabled() const {
+#if defined (UBUNTUTOUCH)
+        // there is an issue with playing two audio stream on UT, disable background music for now
+        return false;
+#else
+        return m_isBackgroundMusicEnabled;
+#endif
+    }
     void setIsBackgroundMusicEnabled(const bool newMode) {
       m_isBackgroundMusicEnabled = newMode;
       emit backgroundMusicEnabledChanged();
