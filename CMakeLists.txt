@@ -1,4 +1,9 @@
-cmake_minimum_required(VERSION 3.3)
+#=============================================================================
+# SPDX-FileCopyrightText: 2014 Johnny Jazeix <jazeix@gmail.com>
+#
+# SPDX-License-Identifier: BSD-3-Clause
+#=============================================================================
+cmake_minimum_required(VERSION 3.5)
 
 project(gcompris-qt C CXX)
 
@@ -401,6 +406,10 @@ if(SAILFISHOS)
   # Need to be done at the end, after src
   add_subdirectory(platforms/sailfishOS)
 endif()
+
+if (UBUNTU_TOUCH)
+    add_subdirectory(platforms/ubuntutouch)
+endif ()
 
 # only enable unit tests for linux
 if(BUILD_TESTING)

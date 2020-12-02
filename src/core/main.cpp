@@ -106,7 +106,11 @@ int main(int argc, char *argv[])
     qunsetenv("QT_DEVICE_PIXEL_RATIO");
 
     QApplication app(argc, argv);
+#if defined(UBUNTUTOUCH)
+    app.setOrganizationName("org.kde.gcompris");
+#else
     app.setOrganizationName("KDE");
+#endif
     app.setApplicationName(GCOMPRIS_APPLICATION_NAME);
     app.setOrganizationDomain("kde.org");
     app.setApplicationVersion(ApplicationInfo::GCVersion());
@@ -127,9 +131,17 @@ int main(int argc, char *argv[])
 #endif
 
     // Local scope for config
-    QSettings config(QStandardPaths::writableLocation(QStandardPaths::GenericConfigLocation) +
+#if defined(UBUNTUTOUCH)
+    QSettings config(QStandardPaths::writableLocation(QStandardPaths::AppConfigLocation) +
                      "/gcompris/" + GCOMPRIS_APPLICATION_NAME + ".conf",
                      QSettings::IniFormat);
+#else
+        QSettings config(QStandardPaths::writableLocation(QStandardPaths::GenericConfigLocation) +
+                         "/gcompris/" + GCOMPRIS_APPLICATION_NAME + ".conf",
+                         QSettings::IniFormat);
+
+#endif
+
 
     // Load translations
     QTranslator translator;

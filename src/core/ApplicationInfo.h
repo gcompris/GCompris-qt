@@ -165,7 +165,8 @@ public:
         Android,    /**< Android */
         Ios,        /**< IOS (not supported) */
         Blackberry, /**< Blackberry (not supported) */
-        SailfishOS  /**< SailfishOS */
+        SailfishOS,  /**< SailfishOS */
+        UbuntuTouchOS /**< UbuntuTouch OS */
     };
 
     Q_ENUM(Platform)

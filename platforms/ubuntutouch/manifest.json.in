@@ -1,0 +1,15 @@
+{
+    "name": "org.kde.gcompris",
+    "description": "GCompris",
+    "architecture": "@CLICK_ARCH@",
+    "title": "gcompris",
+    "hooks": {
+        "gcompris": {
+            "apparmor": "gcompris.apparmor",
+            "desktop":  "gcompris.desktop"
+        }
+    },
+    "version": "1.0.1",
+    "maintainer": "lionel <lduboeuf@ouvaton.org>",
+    "framework" : "ubuntu-sdk-16.04"
+}
