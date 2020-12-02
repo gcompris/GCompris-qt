@@ -1,0 +1,4 @@
+{
+    "policy_groups": ["networking", "audio", "connectivity", "sensors"],
+    "policy_version": 16.04
+}

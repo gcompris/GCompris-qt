@@ -1,0 +1,18 @@
+{
+  "builder": "cmake",
+  "kill": "gcompris-qt",
+  "build_args": "-DUBUNTU_TOUCH=ON",
+  "dependencies_target": "qml-module-qtquick-controls",
+  "install_qml": [
+      "/usr/lib/${ARCH_TRIPLET}/qt5/qml/QtQuick/Controls"
+  ],
+  "libraries": {
+    "Box2D": {
+      "builder": "qmake",
+      "make_jobs": 1,
+      "src_dir" : "external/qml-box2d",
+      "prebuild": "git submodule update --init --recursive"
+    }
+  }
+}
+

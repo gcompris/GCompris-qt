@@ -36,7 +36,7 @@ ApplicationInfo *ApplicationInfo::m_instance = nullptr;
 ApplicationInfo::ApplicationInfo(QObject *parent): QObject(parent)
 {
 
-#if defined(Q_OS_ANDROID) || defined(Q_OS_IOS) || defined(Q_OS_BLACKBERRY) || defined(SAILFISHOS)
+#if defined(Q_OS_ANDROID) || defined(Q_OS_IOS) || defined(Q_OS_BLACKBERRY) || defined(SAILFISHOS) || defined(UBUNTUTOUCH)
     m_isMobile = true;
 #else
     m_isMobile = false;
@@ -45,6 +45,8 @@ ApplicationInfo::ApplicationInfo(QObject *parent): QObject(parent)
 #if defined(Q_OS_ANDROID)
     // Put android before checking linux/unix as it is also a linux
     m_platform = Android;
+#elif defined(UBUNTUTOUCH)
+    m_platform = UbuntuTouchOS;
 #elif defined(Q_OS_MAC)
     m_platform = MacOSX;
 #elif (defined(Q_OS_LINUX) || defined(Q_OS_UNIX))
@@ -73,7 +75,12 @@ ApplicationInfo::ApplicationInfo(QObject *parent): QObject(parent)
     qreal height = qMax(rect.width(), rect.height());
     qreal width = qMin(rect.width(), rect.height());
     qreal dpi = qApp->primaryScreen()->logicalDotsPerInch();
+
+#if defined(UBUNTUTOUCH)
+    m_fontRatio = floor(m_ratio*10) /10;
+#else
     m_fontRatio = qMax(qreal(1.0), qMin(height*refDpi/(dpi*refHeight), width*refDpi/(dpi*refWidth)));
+#endif
     m_isPortraitMode = m_isMobile ? rect.height() > rect.width() : false;
     m_applicationWidth = m_isMobile ? rect.width() : 1120;
 
@@ -137,7 +144,28 @@ QString ApplicationInfo::getFilePath(const QString &file)
 QString ApplicationInfo::getAudioFilePath(const QString &file)
 {
     QString localeName = getVoicesLocale(ApplicationSettings::getInstance()->locale());
-    return getAudioFilePathForLocale(file, localeName);
+    QString result = getAudioFilePathForLocale(file, localeName);
+#if defined(UBUNTUTOUCH)
+    // temporary fix, media player is not playing qrc file as it fails with permissions
+    // just extract the file from qrc and copy it to a directory
+    // see https://github.com/ubports/media-hub/issues/2
+    QString qrcFilePath(result);
+    if (qrcFilePath.startsWith("qrc")) {
+        qrcFilePath.remove(0, 3);
+        QString targetFile = QStandardPaths::writableLocation(QStandardPaths::CacheLocation) + "/extracted" + qrcFilePath.mid(1,-1);
+        QFileInfo targetFileInfo(targetFile);
+        if (!targetFileInfo.exists()) {
+            QDir toDir(targetFileInfo.dir());
+            toDir.mkpath(targetFileInfo.absolutePath());
+            QFile::copy(qrcFilePath, targetFileInfo.absoluteFilePath());
+        }
+        return "file://" + targetFileInfo.absoluteFilePath();
+    }
+    return result;
+
+#else
+    return result;
+#endif
 }
 
 QString ApplicationInfo::getAudioFilePathForLocale(const QString &file,
