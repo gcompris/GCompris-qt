@@ -14,10 +14,9 @@ import "crane.js" as Activity
 
 Image {
     property string command
-    sourceSize.width: background.portrait ? parent.width * 0.175 : parent.width * 0.17
-    sourceSize.height: background.portrait ? parent.height * 0.6 : parent.height * 0.48
-    width: background.portrait ? parent.width * 0.175 : parent.width * 0.17
-    height: background.portrait ? parent.height * 0.6 : parent.height * 0.48
+    height: parent.paintedHeight * 0.75
+    sourceSize.width: height
+    fillMode: Image.PreserveAspectFit
     anchors {
         verticalCenter: parent.verticalCenter
     }

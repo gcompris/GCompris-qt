@@ -1,10 +1,12 @@
 /* GCompris - Crane.qml
  *
  * SPDX-FileCopyrightText: 2016 Stefan Toncu <stefan.toncu29@gmail.com>
+ * SPDX-FileCopyrightText: 2020 Timothée Giet <animtim@gmail.com>
  *
  * Authors:
  *   <Marc BRUN> (GTK+ version)
  *   Stefan Toncu <stefan.toncu29@gmail.com> (Qt Quick port)
+ *   Timothée Giet <animtim@gmail.com> (layout refactoring)
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
@@ -51,7 +53,7 @@ ActivityBase {
             property alias bar: bar
             property alias bonus: bonus
             property alias board: board
-            property alias grid: grid
+            property alias grid: answerGrid
             property alias repeater: repeater
             property alias modelRepeater: modelRepeater
             property alias gridRepeater: gridRepeater
@@ -74,7 +76,7 @@ ActivityBase {
         property bool inLine: true
 
         Keys.onPressed: {
-            if (event.key === Qt.Key_Left){ 
+            if (event.key === Qt.Key_Left){
                 Activity.move("left")
                 left.opacity = 0.6
             }
@@ -96,17 +98,26 @@ ActivityBase {
                      event.key === Qt.Key_Return)
                 Activity.move("next")
         }
-        
+
         Keys.onReleased: {
             up.opacity = 1
             down.opacity = 1
             left.opacity = 1
-            right.opacity = 1            
+            right.opacity = 1
+        }
+
+        Item {
+            id: layoutArea
+            anchors.top: background.top
+            anchors.bottom: bar.top
+            anchors.left: background.left
+            anchors.right: background.right
+            anchors.bottomMargin: bar.height * 0.2
         }
 
         //implementation of Swipe effect
         MouseArea {
-            anchors.fill: parent
+            anchors.fill: layoutArea
             property int startX;
             property int startY;
 
@@ -127,15 +138,13 @@ ActivityBase {
             clip: true
 
             anchors {
-                verticalCenter: crane_vertical.verticalCenter
+                top: crane_top.bottom
+                bottom: crane_body.top
                 right: crane_vertical.left
-                margins: 15
+                margins: 5 * ApplicationInfo.ratio
             }
 
-            width: background.portrait ? parent.width * 0.65 : ((parent.width - anchors.margins * 3 - crane_vertical.width) / 2 ) * 0.9
-            height: background.portrait ? (parent.height - bar.height * 1.45 - crane_top.height - crane_body.height ) / 2 :
-                                          (parent.height - bar.height * 1.45 - crane_top.height - crane_body.height) * 0.9
-
+            width: background.portrait ? (layoutArea.width - crane_vertical.width) * 0.8 : ((layoutArea.width - anchors.margins * 2 - crane_vertical.width) * 0.5 ) * 0.9
         }
 
         Grid {
@@ -147,7 +156,7 @@ ActivityBase {
             layer.enabled: ApplicationInfo.useOpenGL
             layer.effect: OpacityMask {
                 maskSource: board
-            }  
+            }
             Repeater {
                 id: gridRepeater
 
@@ -163,7 +172,7 @@ ActivityBase {
 
 
         Grid {
-            id: grid
+            id: answerGrid
             columns: items.columns
             rows: items.rows
             z: 4
@@ -238,8 +247,8 @@ ActivityBase {
             height: board.height/items.rows
             opacity: 1
 
-            property var newCoord: items.selected == 0 ? grid :
-                                                         items.repeater.mapToItem(background,items.repeater.itemAt(items.selected).x,
+            property var newCoord: items.selected == 0 ? answerGrid :
+                                                         items.repeater.mapToItem(layoutArea,items.repeater.itemAt(items.selected).x,
                                                                                   items.repeater.itemAt(items.selected).y)
             x: newCoord.x
             y: newCoord.y
@@ -300,7 +309,7 @@ ActivityBase {
             layer.enabled: ApplicationInfo.useOpenGL
             layer.effect: OpacityMask {
                 maskSource: modelBoard
-            } 
+            }
             Repeater {
                 id: gridRepeater2
                 model: gridRepeater.model
@@ -319,12 +328,12 @@ ActivityBase {
         Image {
             id: crane_top
             source: activity.dataSetUrl+"crane_up.svg"
-            sourceSize.width: background.portrait ? background.width * 0.8 : background.width * 0.5
-            width: background.portrait ? background.width * 0.8 : background.width * 0.5
+            sourceSize.width: width
+            width: background.portrait ? layoutArea.width * 0.8: layoutArea.width * 0.5
             fillMode: Image.PreserveAspectFit
             z: 4
             anchors {
-                top: parent.top
+                top: layoutArea.top
                 right: crane_vertical.right
                 rightMargin: 0
                 margins: board.anchors.margins
@@ -334,12 +343,12 @@ ActivityBase {
         Image {
             id: crane_vertical
             source: activity.dataSetUrl+"crane_vertical.svg"
-            sourceSize.height: background.portrait ? background.height * 0.5 : background.height * 0.73
-            height: background.portrait ? background.height * 0.5 : background.height * 0.73
+            sourceSize.height: height
             fillMode: Image.PreserveAspectFit
             anchors {
                 top: crane_top.top
-                right: background.portrait ? parent.right : parent.horizontalCenter
+                bottom: crane_body.verticalCenter
+                right: background.portrait ? layoutArea.right : layoutArea.horizontalCenter
                 rightMargin: background.portrait ? width / 2 : - width / 2
                 topMargin: board.anchors.margins
             }
@@ -349,24 +358,19 @@ ActivityBase {
             id: crane_body
             source: activity.dataSetUrl+"crane_only.svg"
             z: 2
-            sourceSize.width: parent.width / 5
-            sourceSize.height: parent.height/ 3.6
+            height: bar.height
+            sourceSize.height: height
+            fillMode: Image.PreserveAspectFit
             mirror: background.portrait ? true : false
-            anchors {
-                top: crane_vertical.bottom
-                topMargin: - (height / 1.8)
-                right: crane_vertical.right
-                rightMargin: background.portrait ? board.anchors.margins : - crane_body.width + crane_vertical.width
-                margins: board.anchors.margins
-            }
+            anchors.verticalCenterOffset: crane_top.height * 0.5
         }
 
         Image {
             id: crane_wire
             source: activity.dataSetUrl+"crane-wire.svg"
             z: 1
-            sourceSize.width: parent.width / 22
-            sourceSize.height: parent.width / 17
+            sourceSize.width: layoutArea.width / 22
+            sourceSize.height: layoutArea.width / 17
             anchors {
                 right: crane_body.left
                 bottom: crane_command.verticalCenter
@@ -378,27 +382,15 @@ ActivityBase {
         Image {
             id: crane_command
             source: activity.dataSetUrl+"command.svg"
-            sourceSize.width: background.portrait ? parent.width / 2.7 : parent.width / 3.5
-            sourceSize.height: background.portrait ? parent.height / 3.5 :  parent.height / 4
-
-            width: background.portrait ? parent.width / 2.7 : parent.width / 3.5
-            height: background.portrait ? parent.height / 3.5 :  parent.height / 4
-
-            anchors {
-                top: crane_body.top
-                bottom: crane_body.bottom
-                right: crane_wire.left
-                rightMargin: 0
-                topMargin: background.portrait ? 0 : board.anchors.margins * 1.5
-                bottomMargin: background.portrait ? 0 : board.anchors.margins * 1.5
-            }
-
+            sourceSize.height: height
+            anchors.margins: 5 * ApplicationInfo.ratio
+            fillMode: Image.PreserveAspectFit
             Controls {
                 id: up
                 source: activity.dataSetUrl+"arrow_up.svg"
                 anchors {
-                    left: parent.left
-                    leftMargin: parent.width / 11
+                    right: parent.horizontalCenter
+                    rightMargin: width * 1.15
                 }
                 command: "up"
             }
@@ -407,8 +399,8 @@ ActivityBase {
                 id: down
                 source: activity.dataSetUrl+"arrow_down.svg"
                 anchors {
-                    left: up.right
-                    leftMargin: parent.width / 30
+                    right: parent.horizontalCenter
+                    rightMargin: width * 0.1
                 }
                 command: "down"
             }
@@ -417,8 +409,8 @@ ActivityBase {
                 id: left
                 source: activity.dataSetUrl+"arrow_left.svg"
                 anchors {
-                    right: right.left
-                    rightMargin: parent.width / 30
+                    left: parent.horizontalCenter
+                    leftMargin: width * 0.1
                 }
                 command: "left"
             }
@@ -427,8 +419,8 @@ ActivityBase {
                 id: right
                 source: activity.dataSetUrl+"arrow_right.svg"
                 anchors {
-                    right: parent.right
-                    rightMargin: parent.width / 11
+                    left: parent.horizontalCenter
+                    leftMargin: width * 1.15
                 }
                 command: "right"
             }
@@ -444,13 +436,76 @@ ActivityBase {
             anchors.top: crane_top.top
             anchors.topMargin: 10
 
-            property var convert: items.selected == 0 ? grid :
-                items.repeater.mapToItem(background,items.repeater.itemAt(items.selected).x,
+            property var convert: items.selected == 0 ? answerGrid :
+                items.repeater.mapToItem(layoutArea,items.repeater.itemAt(items.selected).x,
                                          items.repeater.itemAt(items.selected).y)
 
             Behavior on x { NumberAnimation { duration: 200 } }
             Behavior on height { NumberAnimation { duration: 200 } }
         }
+
+        states: [
+            State {
+                name: "horizontal"
+                when: !background.portrait
+                PropertyChanges{
+                    target: crane_command
+                    width: board.width
+                }
+                AnchorChanges{
+                    target: crane_body
+                    anchors.left: crane_vertical.left
+                    anchors.right: undefined
+                    anchors.bottom: layoutArea.bottom
+                    anchors.verticalCenter: undefined
+                }
+                AnchorChanges{
+                    target: score
+                    anchors.right: modelBoard.right
+                    anchors.bottom: undefined
+                    anchors.verticalCenter: crane_body.verticalCenter
+                    anchors.left: undefined
+                }
+                AnchorChanges{
+                    target:crane_command
+                    anchors.top: board.bottom
+                    anchors.bottom: crane_body.bottom
+                    anchors.right: undefined
+                    anchors.left: undefined
+                    anchors.horizontalCenter: board.horizontalCenter
+                }
+            },
+            State {
+                name: "vertical"
+                when: background.portrait
+                PropertyChanges{
+                    target: crane_command
+                    width: undefined
+                }
+                AnchorChanges{
+                    target: crane_body
+                    anchors.left: undefined
+                    anchors.right: crane_vertical.right
+                    anchors.bottom: undefined
+                    anchors.verticalCenter: layoutArea.verticalCenter
+                }
+                AnchorChanges{
+                    target: score
+                    anchors.right: undefined
+                    anchors.bottom: undefined
+                    anchors.verticalCenter: crane_body.verticalCenter
+                    anchors.left: layoutArea.left
+                }
+                AnchorChanges{
+                    target:crane_command
+                    anchors.top: board.bottom
+                    anchors.bottom: modelBoard.top
+                    anchors.right: crane_body.left
+                    anchors.left: score.right
+                    anchors.horizontalCenter: undefined
+                }
+            }
+        ]
 
 
         DialogHelp {
@@ -499,9 +554,8 @@ ActivityBase {
         Score {
             id: score
             visible: true
-            anchors.right: parent.right
-            anchors.rightMargin: 100 * ApplicationInfo.ratio
-            anchors.bottom: bar.top
+            anchors.right: modelBoard.right
+            anchors.margins: 5 * ApplicationInfo.ratio
         }
     }
 
