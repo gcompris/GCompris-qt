@@ -232,14 +232,14 @@ QObject *ActivityInfoTree::menuTreeProvider(QQmlEngine *engine, QJSEngine *scrip
                                             ApplicationInfo::getFilePath(line + ".rcc")))
                 qDebug() << "Failed to load the resource file " << line + ".rcc";
 
-            QQmlComponent componentRoot(engine, QUrl(url));
-            QObject *objectRoot = componentRoot.create();
-            if(objectRoot != nullptr) {
-                ActivityInfo* activityInfo = qobject_cast<ActivityInfo*>(objectRoot);
+            QQmlComponent activityComponentRoot(engine, QUrl(url));
+            QObject *activityObjectRoot = activityComponentRoot.create();
+            if(activityObjectRoot != nullptr) {
+                ActivityInfo* activityInfo = qobject_cast<ActivityInfo*>(activityObjectRoot);
                 activityInfo->fillDatasets(engine);
                 menuTree->menuTreeAppend(activityInfo);
             } else {
-                qDebug() << "ERROR: failed to load " << line << " " << componentRoot.errors();
+                qDebug() << "ERROR: failed to load " << line << " " << activityComponentRoot.errors();
             }
         }
     }
@@ -300,7 +300,7 @@ void ActivityInfoTree::filterBySearch(const QString& text)
     Q_EMIT menuTreeChanged();
 }
 
-void ActivityInfoTree::minMaxFiltersChanged(quint32 levelMin, quint32 levelMax, bool emit) {
+void ActivityInfoTree::minMaxFiltersChanged(quint32 levelMin, quint32 levelMax, bool emitChanged) {
     for(ActivityInfo *activity: m_menuTreeFull) {
         activity->enableDatasetsBetweenDifficulties(levelMin, levelMax);
     }

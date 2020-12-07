@@ -465,6 +465,9 @@ void DownloadManager::downloadInProgress(qint64 bytesReceived, qint64 bytesTotal
             break;
         }
     }
+    if(!job) {
+        return;
+    }
     job->bytesReceived = bytesReceived;
     job->bytesTotal = bytesTotal;
     qint64 allJobsBytesReceived = 0;
