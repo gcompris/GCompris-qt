@@ -1,3 +1,8 @@
+#=============================================================================
+# SPDX-FileCopyrightText: 2020 Lionel Duboeuf <lduboeuf@ouvaton.org>
+#
+# SPDX-License-Identifier: BSD-3-Clause
+#=============================================================================
 message("Building for Ubuntu Touch")
 add_definitions(-DUBUNTUTOUCH)
 

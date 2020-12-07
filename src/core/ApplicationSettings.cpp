@@ -92,13 +92,8 @@ ApplicationSettings::ApplicationSettings(const QString &configPath, QObject *par
     m_previousHeight = m_config.value(PREVIOUS_HEIGHT_KEY, screenSize.height()).toUInt();
     m_previousWidth = m_config.value(PREVIOUS_WIDTH_KEY, screenSize.width()).toUInt();
     m_isAudioVoicesEnabled = m_config.value(ENABLE_AUDIO_VOICES_KEY, true).toBool();
-#if defined(UBUNTUTOUCH)
-    //don't need of a virtual keyboard by default for UT
-    m_isVirtualKeyboard = m_config.value(VIRTUALKEYBOARD_KEY, false).toBool();
-#else
     m_isVirtualKeyboard = m_config.value(VIRTUALKEYBOARD_KEY,
             ApplicationInfo::getInstance()->isMobile()).toBool();
-#endif
     m_locale = m_config.value(LOCALE_KEY, GC_DEFAULT_LOCALE).toString();
     m_font = m_config.value(FONT_KEY, GC_DEFAULT_FONT).toString();
     if(m_font == QLatin1String("Andika-R.ttf"))

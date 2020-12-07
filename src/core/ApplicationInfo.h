@@ -155,10 +155,10 @@ public:
         Ios,        /**< IOS (not supported) */
         Blackberry, /**< Blackberry (not supported) */
         SailfishOS,  /**< SailfishOS */
-        UbuntuTouchOS
+        UbuntuTouchOS /**< UbuntuTouch OS */
     };
 
-    Q_ENUMS(Platform)
+    Q_ENUM(Platform)
 
     /**
      * Returns an absolute and platform independent path to the passed @p file
