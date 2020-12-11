@@ -102,20 +102,20 @@ function initSubLevel() {
 
     // set "initialIndex" to the position in the repeater
     for(var i = 0; i < names.length; i++) {
-        if (items.repeater.itemAt(i).source != "") {
-            items.repeater.itemAt(i).initialIndex = i
+        if (items.answerRepeater.itemAt(i).source != "") {
+            items.answerRepeater.itemAt(i).initialIndex = i
             good[i] = i
         }
         else {
             // set the initialIndex to -1 if there is no item inside (no source)
-            items.repeater.itemAt(i).initialIndex = -1
+            items.answerRepeater.itemAt(i).initialIndex = -1
             good[i] = -1
         }
     }
 
     // select the first item in the grid
-    for(i = 0; i < items.repeater.count; i++) {
-        if (items.repeater.itemAt(i).source != "") {
+    for(i = 0; i < items.answerRepeater.count; i++) {
+        if (items.answerRepeater.itemAt(i).source != "") {
             items.selected = i
             break
         }
@@ -187,13 +187,13 @@ function setModelWord() {
     Core.shuffle(names)
 
     // set model for repeaters
-    items.repeater.model = names.length
+    items.answerRepeater.model = names.length
     items.modelRepeater.model = names2.length
     items.gridRepeater.model = names.length
 
     // set the source of items inside repeaters to names and names2
     for (i = 0; i < names.length; i++) {
-        items.repeater.itemAt(i).source = names[i]
+        items.answerRepeater.itemAt(i).source = names[i]
         items.modelRepeater.itemAt(i).source = names2[i]
     }
 }
@@ -229,13 +229,13 @@ function setModelImage() {
         names2[numbers[i]] = imageList[i]
 
     // set model for repeaters
-    items.repeater.model = names.length
+    items.answerRepeater.model = names.length
     items.modelRepeater.model = names2.length
     items.gridRepeater.model = names.length
 
     // set the source of items inside repeaters to names and names2
     for (i = 0; i < names.length; i++) {
-        items.repeater.itemAt(i).source = names[i]
+        items.answerRepeater.itemAt(i).source = names[i]
         items.modelRepeater.itemAt(i).source = names2[i]
     }
 
@@ -249,15 +249,15 @@ function setModelImage() {
 // returns the next index needed for switching to another item
 function getNextIndex() {
     // get the initialIndex
-    var index = items.repeater.itemAt(items.selected).initialIndex
+    var index = items.answerRepeater.itemAt(items.selected).initialIndex
 
     var min = 100
     var min2 = 100
     var biggerIndex = -1
     var smallestIndex = -1
 
-    for (var i = 0; i < items.repeater.count; i++) {
-        var currentItemIndex = items.repeater.itemAt(i).initialIndex
+    for (var i = 0; i < items.answerRepeater.count; i++) {
+        var currentItemIndex = items.answerRepeater.itemAt(i).initialIndex
         // get the immediat bigger index
         if (index < currentItemIndex) {
             if (min > currentItemIndex) {
@@ -297,7 +297,7 @@ function gesture(deltax, deltay) {
 //depending on the command, make a move to left/right/up/down or select next item
 function move(command) {
     if (items.ok && !items.gameFinished && !items.pieceIsMoving) {
-        var item = items.repeater.itemAt(items.selected)
+        var item = items.answerRepeater.itemAt(items.selected)
         if (command === "left") {
             if (items.selected % items.columns != 0)
                 makeMove(item, -item.width, item.x, -1, "x")
@@ -308,7 +308,7 @@ function move(command) {
             if (items.selected > items.columns-1)
                 makeMove(item, -item.height, item.y, -items.columns, "y")
         } else if (command === "down") {
-            if (items.selected < (items.repeater.count-items.columns))
+            if (items.selected < (items.answerRepeater.count-items.columns))
                 makeMove(item, item.height, item.y, items.columns, "y")
         } else if (command === "next") {
             items.selected = getNextIndex()
@@ -318,7 +318,7 @@ function move(command) {
 
 //set the environment for making a move and start the animation
 function makeMove(item, distance, startPoint, add, animationProperty) {
-    if (items.repeater.itemAt(items.selected+add).source == "") {
+    if (items.answerRepeater.itemAt(items.selected+add).source == "") {
         items.pieceIsMoving = true
         //setup the animation
         item.distance = distance
@@ -337,8 +337,8 @@ function makeMove(item, distance, startPoint, add, animationProperty) {
 //check the answer; advance to next level if the answer is good
 function checkAnswer() {
     var hasWon = true
-    for (var i = 0; i < items.repeater.count && hasWon; i++) {
-        if (items.repeater.itemAt(i).source != items.modelRepeater.itemAt(i).source) {
+    for (var i = 0; i < items.answerRepeater.count && hasWon; i++) {
+        if (items.answerRepeater.itemAt(i).source != items.modelRepeater.itemAt(i).source) {
             hasWon = false
         }
     }
