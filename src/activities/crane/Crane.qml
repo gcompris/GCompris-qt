@@ -54,7 +54,7 @@ ActivityBase {
             property alias bonus: bonus
             property alias board: board
             property alias grid: answerGrid
-            property alias repeater: repeater
+            property alias answerRepeater: answerRepeater
             property alias modelRepeater: modelRepeater
             property alias gridRepeater: gridRepeater
             property alias showGrid1: showGrid1
@@ -67,6 +67,8 @@ ActivityBase {
             property bool gameFinished: false
             property bool pieceIsMoving: false
             property var levels: activity.datasetLoader.data
+            property double gridBaseWidth: items.board.width / items.columns
+            property double gridBaseHeight: items.board.height / items.rows
         }
 
         onStart: { Activity.start(items) }
@@ -129,8 +131,8 @@ ActivityBase {
         }
 
         Rectangle {
-            id: board
-            color: "#b9e2f0"
+            id: boardBg
+            color: "#77c0d9"
             radius: width * 0.03
             border.color: "#77c0d9"
             border.width: width * 0.02
@@ -147,12 +149,21 @@ ActivityBase {
             width: background.portrait ? (layoutArea.width - crane_vertical.width) * 0.8 : ((layoutArea.width - anchors.margins * 2 - crane_vertical.width) * 0.5 ) * 0.9
         }
 
+        Rectangle {
+            id: board
+            z: 1
+            color: "#b9e2f0"
+            anchors.centerIn: boardBg
+            width: boardBg.width - boardBg.border.width * 2
+            height: boardBg.height - boardBg.border.width * 2
+        }
+
         Grid {
             id: showGrid1
             columns: items.columns
             rows: items.rows
             z: 1
-            anchors.fill: board
+            anchors.centerIn: board
             layer.enabled: ApplicationInfo.useOpenGL
             layer.effect: OpacityMask {
                 maskSource: board
@@ -161,8 +172,8 @@ ActivityBase {
                 id: gridRepeater
 
                 Rectangle {
-                    width: board.width/items.columns
-                    height: board.height/items.rows
+                    width: items.gridBaseWidth
+                    height: items.gridBaseHeight
                     color: "transparent"
                     border.width: 2
                     border.color: "#77c0d9"
@@ -176,17 +187,18 @@ ActivityBase {
             columns: items.columns
             rows: items.rows
             z: 4
-            anchors.fill: board
+            anchors.centerIn: board
 
             Repeater {
-                id: repeater
+                id: answerRepeater
 
                 Image {
                     id: figure
-                    sourceSize.height: board.width/items.columns
-                    sourceSize.width: board.height/items.rows
-                    width: board.width/items.columns
-                    height: board.height/items.rows
+                    sourceSize.height: height
+                    sourceSize.width: width
+                    width: items.gridBaseWidth
+                    height: items.gridBaseHeight
+                    fillMode: Image.PreserveAspectFit
 
                     property int initialIndex: -1
 
@@ -204,8 +216,8 @@ ActivityBase {
                         PropertyAction { target: figure; property: "opacity"; value: 0 }
                         NumberAnimation { target: figure; property: figure.animationProperty; from: figure.startPoint + distance; to: figure.startPoint; duration: 0; }
                         PropertyAction { target: figure; property: "opacity"; value: 1 }
-                        PropertyAction { target: items.repeater.itemAt(items.selected + indexChange); property: "source"; value: figure.source }
-                        PropertyAction { target: items.repeater.itemAt(items.selected + indexChange); property: "initialIndex"; value: figure.initialIndex }
+                        PropertyAction { target: items.answerRepeater.itemAt(items.selected + indexChange); property: "source"; value: figure.source }
+                        PropertyAction { target: items.answerRepeater.itemAt(items.selected + indexChange); property: "initialIndex"; value: figure.initialIndex }
                         PropertyAction { target: figure; property: "initialIndex"; value: -1 }
                         PropertyAction { target: figure; property: "source"; value: "" }
                         PropertyAction { target: items; property: "ok"; value: "true"}
@@ -241,17 +253,15 @@ ActivityBase {
         Image {
             id: selected
             source: activity.dataSetUrl+"selected.svg"
-            sourceSize.width: board.width/items.columns
-            sourceSize.height: board.height/items.rows
-            width: board.width/items.columns
-            height: board.height/items.rows
+            sourceSize.width: width
+            sourceSize.height: height
+            width: items.gridBaseWidth
+            height: items.gridBaseHeight
             opacity: 1
 
-            property var newCoord: items.selected == 0 ? answerGrid :
-                                                         items.repeater.mapToItem(layoutArea,items.repeater.itemAt(items.selected).x,
-                                                                                  items.repeater.itemAt(items.selected).y)
-            x: newCoord.x
-            y: newCoord.y
+            property var newCoord: answerRepeater.itemAt(items.selected)
+            x: newCoord.x + board.x
+            y: newCoord.y + board.y
             z: 100
 
             Behavior on x { NumberAnimation { duration: 200 } }
@@ -260,21 +270,30 @@ ActivityBase {
         }
 
         Rectangle {
-            id: modelBoard
-            color: "#f0b9d2"
+            id: modelBoardBg
+            color: "#e294b7"
             radius: width * 0.03
             border.color: "#e294b7"
             border.width: width * 0.02
             z: 1
 
             anchors {
-                left: background.portrait ? board.left : crane_vertical.right
-                top: background.portrait ? crane_body.bottom : background.inLine ? board.top : parent.top
-                topMargin: background.portrait ? board.anchors.margins : background.inLine ? 0 : crane_top.height * 1.5
-                leftMargin: background.portrait ? 0 : board.anchors.margins * 1.2
-                margins: board.anchors.margins
+                left: background.portrait ? boardBg.left : crane_vertical.right
+                top: background.portrait ? crane_body.bottom : background.inLine ? boardBg.top : parent.top
+                topMargin: background.portrait ? boardBg.anchors.margins : background.inLine ? 0 : crane_top.height * 1.5
+                leftMargin: background.portrait ? 0 : boardBg.anchors.margins * 1.2
+                margins: boardBg.anchors.margins
             }
 
+            width: boardBg.width
+            height: boardBg.height
+        }
+
+        Rectangle {
+            id: modelBoard
+            z: 1
+            color: "#f0b9d2"
+            anchors.centerIn: modelBoardBg
             width: board.width
             height: board.height
         }
@@ -283,7 +302,7 @@ ActivityBase {
             id: modelGrid
             columns: items.columns
             rows: items.rows
-            anchors.fill: modelBoard
+            anchors.centerIn: modelBoard
             z: 4
 
             Repeater {
@@ -291,10 +310,11 @@ ActivityBase {
 
                 Image {
                     id: modelFigure
-                    sourceSize.height: board.height/items.rows
-                    sourceSize.width: board.width/items.columns
-                    width: board.width/items.columns
-                    height: board.height/items.rows
+                    sourceSize.height: height
+                    sourceSize.width: width
+                    width: items.gridBaseWidth
+                    height: items.gridBaseHeight
+                    fillMode: Image.PreserveAspectFit
                 }
             }
         }
@@ -305,7 +325,7 @@ ActivityBase {
             rows: items.rows
             z: 1
             opacity: showGrid1.opacity
-            anchors.fill: modelBoard
+            anchors.centerIn: modelBoard
             layer.enabled: ApplicationInfo.useOpenGL
             layer.effect: OpacityMask {
                 maskSource: modelBoard
@@ -315,8 +335,8 @@ ActivityBase {
                 model: gridRepeater.model
 
                 Rectangle {
-                    width: modelBoard.width/items.columns
-                    height: modelBoard.height/items.rows
+                    width: items.gridBaseWidth
+                    height: items.gridBaseHeight
                     color: "transparent"
                     border.width: 2
                     border.color: showGrid1.opacity == 1 ? "#e294b7" : "transparent"
@@ -336,7 +356,7 @@ ActivityBase {
                 top: layoutArea.top
                 right: crane_vertical.right
                 rightMargin: 0
-                margins: board.anchors.margins
+                margins: boardBg.anchors.margins
             }
         }
 
@@ -350,7 +370,7 @@ ActivityBase {
                 bottom: crane_body.verticalCenter
                 right: background.portrait ? layoutArea.right : layoutArea.horizontalCenter
                 rightMargin: background.portrait ? width / 2 : - width / 2
-                topMargin: board.anchors.margins
+                topMargin: boardBg.anchors.margins
             }
         }
 
@@ -363,20 +383,6 @@ ActivityBase {
             fillMode: Image.PreserveAspectFit
             mirror: background.portrait ? true : false
             anchors.verticalCenterOffset: crane_top.height * 0.5
-        }
-
-        Image {
-            id: crane_wire
-            source: activity.dataSetUrl+"crane-wire.svg"
-            z: 1
-            sourceSize.width: layoutArea.width / 22
-            sourceSize.height: layoutArea.width / 17
-            anchors {
-                right: crane_body.left
-                bottom: crane_command.verticalCenter
-                rightMargin: -10
-                bottomMargin: -10
-            }
         }
 
         Image {
@@ -430,15 +436,13 @@ ActivityBase {
             id: cable
             color: "#373737"
             width: 5
-            height: convert.y - crane_top.y
-            x: convert.x + board.width / items.columns / 2
+            height: convert.y + board.y - crane_top.y
+            x: convert.x + board.x + items.gridBaseWidth / 2
             z: 3
             anchors.top: crane_top.top
             anchors.topMargin: 10
 
-            property var convert: items.selected == 0 ? answerGrid :
-                items.repeater.mapToItem(layoutArea,items.repeater.itemAt(items.selected).x,
-                                         items.repeater.itemAt(items.selected).y)
+            property var convert: answerRepeater.itemAt(items.selected)
 
             Behavior on x { NumberAnimation { duration: 200 } }
             Behavior on height { NumberAnimation { duration: 200 } }
@@ -450,7 +454,7 @@ ActivityBase {
                 when: !background.portrait
                 PropertyChanges{
                     target: crane_command
-                    width: board.width
+                    width: boardBg.width
                 }
                 AnchorChanges{
                     target: crane_body
@@ -461,18 +465,18 @@ ActivityBase {
                 }
                 AnchorChanges{
                     target: score
-                    anchors.right: modelBoard.right
+                    anchors.right: modelBoardBg.right
                     anchors.bottom: undefined
                     anchors.verticalCenter: crane_body.verticalCenter
                     anchors.left: undefined
                 }
                 AnchorChanges{
                     target:crane_command
-                    anchors.top: board.bottom
+                    anchors.top: boardBg.bottom
                     anchors.bottom: crane_body.bottom
                     anchors.right: undefined
                     anchors.left: undefined
-                    anchors.horizontalCenter: board.horizontalCenter
+                    anchors.horizontalCenter: boardBg.horizontalCenter
                 }
             },
             State {
@@ -498,8 +502,8 @@ ActivityBase {
                 }
                 AnchorChanges{
                     target:crane_command
-                    anchors.top: board.bottom
-                    anchors.bottom: modelBoard.top
+                    anchors.top: boardBg.bottom
+                    anchors.bottom: modelBoardBg.top
                     anchors.right: crane_body.left
                     anchors.left: score.right
                     anchors.horizontalCenter: undefined
@@ -554,7 +558,7 @@ ActivityBase {
         Score {
             id: score
             visible: true
-            anchors.right: modelBoard.right
+            anchors.right: modelBoardBg.right
             anchors.margins: 5 * ApplicationInfo.ratio
         }
     }
