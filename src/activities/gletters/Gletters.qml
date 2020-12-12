@@ -195,8 +195,8 @@ ActivityBase {
             }
             onLoadData: {
                 if (activity.activityName === "gletters") {
-                    if(activityData && activityData["activityLocale"]) {
-                        background.locale = activityData["activityLocale"];
+                    if(activityData && activityData["locale"]) {
+                        background.locale = Core.resolveLocale(activityData["locale"]);
                         activity.uppercaseOnly = activityData["uppercaseMode"] === "true" ? true : false;
                     }
                     else {
