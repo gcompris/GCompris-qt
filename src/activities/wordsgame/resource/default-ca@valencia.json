@@ -283,7 +283,7 @@
          ]
       }
    ],
-   "name" : "default-ca@valencian",
-   "locale" : "ca@valencian",
+   "name" : "default-ca@valencia",
+   "locale" : "ca@valencia",
    "description" : "Valencian"
 }
