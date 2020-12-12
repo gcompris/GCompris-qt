@@ -184,11 +184,11 @@ ActivityBase {
                 ApplicationSettings.setCurrentLevels(currentActivity.name, dialogActivityConfig.chosenLevels);
             }
             onLoadData: {
-                if(activityData && activityData["activityLocale"]) {
-                    items.locale = activityData["activityLocale"];
+                if(activityData && activityData["locale"]) {
+                    background.locale = Core.resolveLocale(activityData["locale"]);
                 }
                 else {
-                    items.locale = Core.resolveLocale(items.locale);
+                    background.locale = Core.resolveLocale(background.locale);
                 }
             }
             onStartActivity: {
