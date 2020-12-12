@@ -6,7 +6,7 @@
 $EXTRACT_TR_STRINGS `find . -name \*.cpp -o -name \*.h -o -name \*.qml -o -name \*.js` -o $podir/gcompris_qt.pot
 
 # create a pot for the voices text to keep them up-to-date with the audio files
-find . -name ActivityInfo.qml -exec awk -f activityintro2msg.awk {} \; > rc.cpp
+find . -name ActivityInfo.qml -not -path "*template*" -exec awk -f activityintro2msg.awk {} \; > rc.cpp
 $XGETTEXT rc.cpp -o $podir/gcompris_voices.pot
 rm rc.cpp
 
