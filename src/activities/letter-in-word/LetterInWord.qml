@@ -93,10 +93,11 @@ ActivityBase {
                 home();
             }
             onLoadData: {
-                if(activityData && activityData["locale"]) {
+                 if(activityData && activityData["locale"] !== "system") {
                     background.locale = activityData["locale"];
-                } else {
-                    background.locale = Core.resolveLocale(background.locale);
+                }
+                else {
+                    background.locale = Core.resolveLocale(background.locale)
                 }
                 if(activityData && activityData["savedLetterCase"]) {
                     items.currentLetterCase = activityData["savedLetterCase"];
