@@ -268,11 +268,11 @@ ActivityBase {
                 ApplicationSettings.setCurrentLevels(currentActivity.name, dialogActivityConfig.chosenLevels)
             }
             onLoadData: {
-                if(activityData && activityData["activityLocale"]) {
-                    background.locale = activityData["activityLocale"];
+                if(activityData && activityData["locale"]) {
+                    background.locale = Core.resolveLocale(activityData["locale"]);
                 }
                 else {
-                    background.locale = Core.resolveLocale(background.locale)
+                    background.locale = Core.resolveLocale(background.locale);
                 }
                 if(activityData) {
                     if(activityData["easyModeImage"])
