@@ -138,7 +138,7 @@ function ballMotion() {
         velocityX *= 0
         velocityY *= 0
         items.ball.x = items.border.width// - items.ball.width
-        items.bonus.good("tux")
+        items.bonus.good("smiley")
     } else if(items.ball.x < 0) { // left
         velocityX *= -1
         items.ball.x = 0
