@@ -263,10 +263,10 @@ ActivityBase {
             interval: 1500
             onTriggered: {
                 if (ball.state == "FAIL" || ball.state == "INITIAL") {
-                    bonus.bad("tux")
+                    bonus.bad("smiley")
                     ball.state = "FAIL"
                 } else {
-                    bonus.good("tux")
+                    bonus.good("smiley")
                 }
             }
         }
