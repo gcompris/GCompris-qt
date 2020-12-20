@@ -116,12 +116,12 @@ AnimatedSprite {
                     y: -20
                     yVariation: 10
                 }
-                size: 12
+                size: 16
                 sizeVariation: 8
             }
 
             ImageParticle {
-                source: "qrc:/gcompris/src/activities/clickgame/resource/bubble.png"
+                source: "qrc:/gcompris/src/activities/clickgame/resource/bubble.svg"
             }
         }
     }
