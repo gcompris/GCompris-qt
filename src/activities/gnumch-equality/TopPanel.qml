@@ -13,7 +13,7 @@ import GCompris 1.0
 
 import "../../core"
 
-Rectangle {
+Item {
     property int goal
     property bool useMultipleDataset: activity.useMultipleDataset
     property var muncherLife: muncherLife
@@ -24,18 +24,28 @@ Rectangle {
     height: background.height / 3
     anchors.right: parent.right
     anchors.bottom: parent.bottom
-    border.color: "black"
-    border.width: 2
-    radius: 5
 
     onGoalChanged: {
         goalText.text = goalText.setTextGoal(goal)
     }
 
+    Rectangle {
+        id: goalBg
+        height: muncherLife.height
+        width: parent.width - muncherLife.width * 2 - muncherLife.anchors.rightMargin * 2
+        anchors.horizontalCenter: parent.horizontalCenter
+        radius: 10
+        color: "#373737"
+        border.width: 2
+        border.color: "#F2F2F2"
+    }
+
     GCText {
         id: goalText
-        height: muncherLife.height
+        parent: goalBg
+        height: parent.height
         width: parent.width
+        color: "white"
 
         function setTextGoal(goal) {
             if (activity.type === "equality") {
@@ -71,15 +81,17 @@ Rectangle {
         anchors.top: goalText.bottom
         anchors.rightMargin: 5 * ApplicationInfo.ratio
         border.width: 2
+        border.color: "#373737"
         radius: 5
+        color: "#80ffffff"
 
-        Creature {
+        Image {
             id: life
-
-            monsterType: "muncher"
-            width: parent.width
-            height: parent.width
-            frames: 1
+            anchors.centerIn: parent
+            source: "qrc:/gcompris/src/activities/gnumch-equality/resource/muncherIcon.svg"
+            width: parent.width * 0.9
+            height: width
+            sourceSize.width: width
         }
     }
 

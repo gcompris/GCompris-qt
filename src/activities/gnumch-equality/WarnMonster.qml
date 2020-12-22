@@ -20,6 +20,7 @@ Rectangle {
     height: warningText.height * 1.1
     opacity: 0
     border.width: 2
+    border.color: "#373737"
     radius: 5
 
     anchors.horizontalCenter: topPanel.horizontalCenter

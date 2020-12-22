@@ -106,7 +106,7 @@ Rectangle {
     border.width: 2
     radius: 5
     opacity: 0
-    color: "#00d635"
+    color: "#82E599"
 
     onOpacityChanged: {
         if (opacity == 0) {

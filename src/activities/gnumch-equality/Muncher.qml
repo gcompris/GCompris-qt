@@ -23,7 +23,7 @@ Creature {
 
         opacity = 0
         warningRect.setFault(index)
-        warningRect.opacity = 0.95
+        warningRect.opacity = 1
 
         if (topPanel.life.opacity == 1) {
             topPanel.life.opacity = 0
@@ -31,7 +31,7 @@ Creature {
             movable = false
             monsters.setMovable(false)
         } else {
-            bonus.bad("tux")
+            bonus.bad("gnu")
             monsters.destroyAll()
             spawningMonsters.restart()
             background.initLevel()
