@@ -30,7 +30,7 @@ Item {
 
     Component {
         id: cellDelegate
-        Rectangle {
+        Item {
             id: cellRectangle
 
             property string num1: number1
@@ -50,10 +50,6 @@ Item {
 
             width: grid.cellWidth
             height: grid.cellHeight
-            border.color: "black"
-            border.width: 2
-            radius: 5
-            color: "transparent"
             focus: false
             Component.onCompleted: setText()
 
@@ -68,6 +64,7 @@ Item {
                 style: Text.Outline
                 styleColor: "white"
                 visible: show
+                color: "#373737"
 
                 fontSizeMode: Text.Fit
                 minimumPointSize: 7
