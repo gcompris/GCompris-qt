@@ -19,79 +19,92 @@ QtObject {
       },
       {
          "pixmapfile" : "canada/yukon.png",
-         "toolTipText" : "Yukon",
+         //: District of Canada: Yukon
+         "toolTipText" : qsTr("Yukon"),
          "x" : "0.074",
          "y" : "0.372"
       },
       {
          "pixmapfile" : "canada/british_columbia.png",
-         "toolTipText" : "British Columbia",
+         //: District of Canada: British Columbia
+         "toolTipText" : qsTr("British Columbia"),
          "x" : "0.083",
          "y" : "0.597"
       },
       {
          "pixmapfile" : "canada/northwest_territories.png",
-         "toolTipText" : "Northwest Territories",
+         //: District of Canada: Northwest Territories
+         "toolTipText" : qsTr("Northwest Territories"),
          "x" : "0.243",
          "y" : "0.365"
       },
       {
          "pixmapfile" : "canada/nunavut.png",
-         "toolTipText" : "Nunavut",
+         //: District of Canada: Nunavut
+         "toolTipText" : qsTr("Nunavut"),
          "x" : "0.469",
          "y" : "0.306"
       },
       {
          "pixmapfile" : "canada/alberta.png",
-         "toolTipText" : "Alberta",
+         //: District of Canada: Alberta
+         "toolTipText" : qsTr("Alberta"),
          "x" : "0.204",
          "y" : "0.661"
       },
       {
          "pixmapfile" : "canada/saskatchewan.png",
-         "toolTipText" : "Saskatchewan",
+         //: District of Canada: Saskatchewan
+         "toolTipText" : qsTr("Saskatchewan"),
          "x" : "0.291",
          "y" : "0.688"
       },
       {
          "pixmapfile" : "canada/manitoba.png",
-         "toolTipText" : "Manitoba",
+         //: District of Canada: Manitoba
+         "toolTipText" : qsTr("Manitoba"),
          "x" : "0.417",
          "y" : "0.698"
       },
       {
          "pixmapfile" : "canada/ontario.png",
-         "toolTipText" : "Ontario",
+         //: District of Canada: Ontario
+         "toolTipText" : qsTr("Ontario"),
          "x" : "0.582",
          "y" : "0.805"
       },
       {
          "pixmapfile" : "canada/quebec.png",
-         "toolTipText" : "Quebec",
+         //: District of Canada: Quebec
+         "toolTipText" : qsTr("Quebec"),
          "x" : "0.742",
          "y" : "0.673"
       },
       {
          "pixmapfile" : "canada/newfoundland_labrador.png",
-         "toolTipText" : "Newfoundland and Labrador",
+         //: District of Canada: Newfoundland and Labrador
+         "toolTipText" : qsTr("Newfoundland and Labrador"),
          "x" : "0.87",
          "y" : "0.603"
       },
       {
          "pixmapfile" : "canada/new_brunswick.png",
-         "toolTipText" : "New Brunswick",
+         //: District of Canada: New Brunswick
+         "toolTipText" : qsTr("New Brunswick"),
          "x" : "0.834",
          "y" : "0.779"
       },
       {
          "pixmapfile" : "canada/nova_scotia.png",
-         "toolTipText" : "Nova Scotia",
+         //: District of Canada: Nova Scotia
+         "toolTipText" : qsTr("Nova Scotia"),
          "x" : "0.894",
          "y" : "0.782"
       },
       {
          "pixmapfile" : "canada/prince_edward_island.png",
-         "toolTipText" : "Prince Edward Island",
+         //: District of Canada: Prince Edward Island
+         "toolTipText" : qsTr("Prince Edward Island"),
          "x" : "0.878",
          "y" : "0.757"
       }

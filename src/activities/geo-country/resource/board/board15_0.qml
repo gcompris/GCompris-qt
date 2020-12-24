@@ -20,79 +20,92 @@ QtObject {
       },
       {
          "pixmapfile" : "scotland/n_aberdeenshire.png",
-         "toolTipText" : "Aberdeenshire",
+         //: District of Northern Scotland: Aberdeenshire
+         "toolTipText" : qsTr("Aberdeenshire"),
          "x" : "0.688",
          "y" : "0.804"
       },
       {
          "pixmapfile" : "scotland/n_aberdeen.png",
-         "toolTipText" : "Aberdeen",
+         //: District of Northern Scotland: Aberdeen
+         "toolTipText" : qsTr("Aberdeen"),
          "x" : "0.756",
          "y" : "0.818"
       },
       {
          "pixmapfile" : "scotland/n_moray.png",
-         "toolTipText" : "Moray",
+         //: District of Northern Scotland: Moray
+         "toolTipText" : qsTr("Moray"),
          "x" : "0.638",
          "y" : "0.768"
       },
       {
          "pixmapfile" : "scotland/n_eileanan_siar.png",
-         "toolTipText" : "Na h-Eileanan Siar",
+         //: District of Northern Scotland: Na h-Eileanan Siar
+         "toolTipText" : qsTr("Na h-Eileanan Siar"),
          "x" : "0.162",
          "y" : "0.722"
       },
       {
          "pixmapfile" : "scotland/n_orkney.png",
-         "toolTipText" : "Orkney",
+         //: District of Northern Scotland: Orkney
+         "toolTipText" : qsTr("Orkney"),
          "x" : "0.674",
          "y" : "0.448"
       },
       {
          "pixmapfile" : "scotland/n_shetland.png",
-         "toolTipText" : "Shetland",
+         //: District of Northern Scotland: Shetland
+         "toolTipText" : qsTr("Shetland"),
          "x" : "0.842",
          "y" : "0.23"
       },
       {
          "pixmapfile" : "scotland/n_hl_caithness.png",
-         "toolTipText" : "Caithness",
+         //: District of Northern Scotland: Caithness
+         "toolTipText" : qsTr("Caithness"),
          "x" : "0.612",
          "y" : "0.574"
       },
       {
          "pixmapfile" : "scotland/n_hl_sutherland.png",
-         "toolTipText" : "Sutherland",
+         //: District of Northern Scotland: Sutherland
+         "toolTipText" : qsTr("Sutherland"),
          "x" : "0.49",
          "y" : "0.61"
       },
       {
          "pixmapfile" : "scotland/n_hl_ross.png",
-         "toolTipText" : "Ross",
+         //: District of Northern Scotland: Ross
+         "toolTipText" : qsTr("Ross"),
          "x" : "0.456",
          "y" : "0.704"
       },
       {
          "pixmapfile" : "scotland/n_hl_inverness_nairn.png",
-         "toolTipText" : "Inverness and Nairn",
+         //: District of Northern Scotland: Inverness and Nairn
+         "toolTipText" : qsTr("Inverness and Nairn"),
          "x" : "0.564",
          "y" : "0.78"
       },
       {
          "pixmapfile" : "scotland/n_hl_lochalsh_badenoch_stra.png",
-         "toolTipText" : "Lochalsh, Badenoch, Cromarty and Strathspey",
+         //: District of Northern Scotland: Lochalsh, Badenoch, Cromarty and Strathspey
+         "toolTipText" : qsTr("Lochalsh, Badenoch, Cromarty and Strathspey"),
          "x" : "0.472",
          "y" : "0.802"
       },
       {
          "pixmapfile" : "scotland/n_hl_lochaber.png",
-         "toolTipText" : "Lochaber",
+         //: District of Northern Scotland: Lochaber
+         "toolTipText" : qsTr("Lochaber"),
          "x" : "0.372",
          "y" : "0.888"
       },
       {
          "pixmapfile" : "scotland/n_hl_skye.png",
-         "toolTipText" : "Skye",
+         //: District of Northern Scotland: Skye
+         "toolTipText" : qsTr("Skye"),
          "x" : "0.296",
          "y" : "0.776"
       }

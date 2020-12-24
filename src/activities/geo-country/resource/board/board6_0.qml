@@ -19,109 +19,127 @@ QtObject {
       },
       {
          "pixmapfile" : "norway/telemark.png",
-         "toolTipText" : "Telemark",
+         //: County of Norway: Telemark
+         "toolTipText" : qsTr("Telemark"),
          "x" : "0.208",
          "y" : "0.849"
       },
       {
          "pixmapfile" : "norway/ostfold.png",
-         "toolTipText" : "Østfold",
+         //: County of Norway: Østfold
+         "toolTipText" : qsTr("Østfold"),
          "x" : "0.319",
          "y" : "0.871"
       },
       {
          "pixmapfile" : "norway/nordland.png",
-         "toolTipText" : "Nordland",
+         //: County of Norway: Nordland
+         "toolTipText" : qsTr("Nordland"),
          "x" : "0.469",
          "y" : "0.352"
       },
       {
          "pixmapfile" : "norway/finnmark.png",
-         "toolTipText" : "Finnmark",
+         //: County of Norway: Finnmark
+         "toolTipText" : qsTr("Finnmark"),
          "x" : "0.787",
          "y" : "0.152"
       },
       {
          "pixmapfile" : "norway/vestfold.png",
-         "toolTipText" : "Vestfold",
+         //: County of Norway: Vestfold
+         "toolTipText" : qsTr("Vestfold"),
          "x" : "0.275",
          "y" : "0.862"
       },
       {
          "pixmapfile" : "norway/trondelag.png",
-         "toolTipText" : "Trøndelag",
+         //: County of Norway: Trøndelag
+         "toolTipText" : qsTr("Trøndelag"),
          "x" : "0.338",
          "y" : "0.58"
       },
       {
          "pixmapfile" : "norway/oslo.png",
-         "toolTipText" : "Oslo",
+         //: County of Norway: Oslo
+         "toolTipText" : qsTr("Oslo"),
          "x" : "0.304",
          "y" : "0.838"
       },
       {
          "pixmapfile" : "norway/more-og-romsdal.png",
-         "toolTipText" : "Møre og Romsdal",
+         //: County of Norway: Møre og Romsdal
+         "toolTipText" : qsTr("Møre og Romsdal"),
          "x" : "0.196",
          "y" : "0.632"
       },
       {
          "pixmapfile" : "norway/buskerud.png",
-         "toolTipText" : "Buskerud",
+         //: County of Norway: Buskerud
+         "toolTipText" : qsTr("Buskerud"),
          "x" : "0.234",
          "y" : "0.799"
       },
       {
          "pixmapfile" : "norway/vest-agder.png",
-         "toolTipText" : "Vest-Agder",
+         //: County of Norway: Vest-Agder
+         "toolTipText" : qsTr("Vest-Agder"),
          "x" : "0.15",
          "y" : "0.901"
       },
       {
          "pixmapfile" : "norway/sogn-og-fjordane.png",
-         "toolTipText" : "Sogn og Fjordane",
+         //: County of Norway: Sogn og Fjordane
+         "toolTipText" : qsTr("Sogn og Fjordane"),
          "x" : "0.15",
          "y" : "0.712"
       },
       {
          "pixmapfile" : "norway/oppland.png",
-         "toolTipText" : "Oppland",
+         //: County of Norway: Oppland
+         "toolTipText" : qsTr("Oppland"),
          "x" : "0.251",
          "y" : "0.734"
       },
       {
          "pixmapfile" : "norway/hordaland.png",
-         "toolTipText" : "Hordaland",
+         //: County of Norway: Hordaland
+         "toolTipText" : qsTr("Hordaland"),
          "x" : "0.13",
          "y" : "0.786"
       },
       {
          "pixmapfile" : "norway/aust-agder.png",
-         "toolTipText" : "Aust-Agder",
+         //: County of Norway: Aust-Agder
+         "toolTipText" : qsTr("Aust-Agder"),
          "x" : "0.186",
          "y" : "0.881"
       },
       {
          "pixmapfile" : "norway/troms.png",
-         "toolTipText" : "Troms",
+         //: County of Norway: Troms
+         "toolTipText" : qsTr("Troms"),
          "x" : "0.594",
          "y" : "0.201"
       },
       {
          "pixmapfile" : "norway/rogaland.png",
-         "toolTipText" : "Rogaland",
+         //: County of Norway: Rogaland
+         "toolTipText" : qsTr("Rogaland"),
          "x" : "0.114",
          "y" : "0.868"
       },
       {
          "pixmapfile" : "norway/hedmark.png",
-         "toolTipText" : "Hedmark",
+         //: County of Norway: Hedmark
+         "toolTipText" : qsTr("Hedmark"),
          "x" : "0.329",
          "y" : "0.737"
       },
       {
          "pixmapfile" : "norway/akershus.png",
-         "toolTipText" : "Akershus",
+         //: County of Norway: Akershus
+         "toolTipText" : qsTr("Akershus"),
          "x" : "0.319",
          "y" : "0.817"
       }

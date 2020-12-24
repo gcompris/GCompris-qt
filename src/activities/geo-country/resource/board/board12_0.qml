@@ -19,194 +19,226 @@ QtObject {
         },
         {
             "pixmapfile" : "india/jammu_and_kashmir.png",
-            "toolTipText" : "Jammu and Kashmir",
+            //: State of India: Jammu and Kashmir
+            "toolTipText" : qsTr("Jammu and Kashmir"),
             "x" : "0.313",
             "y" : "0.111"
         },
         {
             "pixmapfile" : "india/himachal_pradesh.png",
-            "toolTipText" : "Himachal Pradesh",
+            //: State of India: Himachal Pradesh
+            "toolTipText" : qsTr("Himachal Pradesh"),
             "x" : "0.337",
             "y" : "0.205"
         },
         {
             "pixmapfile" : "india/punjab.png",
-            "toolTipText" : "Punjab",
+            //: State of India: Punjab
+            "toolTipText" : qsTr("Punjab"),
             "x" : "0.278",
             "y" : "0.228"
         },
         {
             "pixmapfile" : "india/harayana.png",
-            "toolTipText" : "Harayana",
+            //: State of India: Harayana
+            "toolTipText" : qsTr("Harayana"),
             "x" : "0.296",
             "y" : "0.294"
         },
         {
             "pixmapfile" : "india/uttarakhand.png",
-            "toolTipText" : "Uttarakhand",
+            //: State of India: Uttarakhand
+            "toolTipText" : qsTr("Uttarakhand"),
             "x" : "0.403",
             "y" : "0.267"
         },
         {
             "pixmapfile" : "india/rajasthan.png",
-            "toolTipText" : "Rajasthan",
+            //: State of India: Rajasthan
+            "toolTipText" : qsTr("Rajasthan"),
             "x" : "0.216",
             "y" : "0.377"
         },
         {
             "pixmapfile" : "india/uttar_pradesh.png",
-            "toolTipText" : "Uttar Pradesh",
+            //: State of India: Uttar Pradesh
+            "toolTipText" : qsTr("Uttar Pradesh"),
             "x" : "0.459",
             "y" : "0.36"
         },
         {
             "pixmapfile" : "india/bihar.png",
-            "toolTipText" : "Bihar",
+            //: State of India: Bihar
+            "toolTipText" : qsTr("Bihar"),
             "x" : "0.623",
             "y" : "0.4"
         },
         {
             "pixmapfile" : "india/gujarat.png",
-            "toolTipText" : "Gujarat",
+            //: State of India: Gujarat
+            "toolTipText" : qsTr("Gujarat"),
             "x" : "0.124",
             "y" : "0.507"
         },
         {
             "pixmapfile" : "india/madhya_pradesh.png",
-            "toolTipText" : "Madhya Pradesh",
+            //: State of India: Madhya Pradesh
+            "toolTipText" : qsTr("Madhya Pradesh"),
             "x" : "0.375",
             "y" : "0.461"
         },
         {
             "pixmapfile" : "india/jharkhand.png",
-            "toolTipText" : "Jharkhand",
+            //: State of India: Jharkhand
+            "toolTipText" : qsTr("Jharkhand"),
             "x" : "0.621",
             "y" : "0.471"
         },
         {
             "pixmapfile" : "india/maharashtra.png",
-            "toolTipText" : "Maharashtra",
+            //: State of India: Maharashtra
+            "toolTipText" : qsTr("Maharashtra"),
             "x" : "0.314",
             "y" : "0.624"
         },
         {
             "pixmapfile" : "india/chhattisgarh.png",
-            "toolTipText" : "Chhattisgarh",
+            //: State of India: Chhattisgarh
+            "toolTipText" : qsTr("Chhattisgarh"),
             "x" : "0.511",
             "y" : "0.559"
         },
         {
             "pixmapfile" : "india/orrisa.png",
-            "toolTipText" : "Orrisa",
+            //: State of India: Orrisa
+            "toolTipText" : qsTr("Orrisa"),
             "x" : "0.591",
             "y" : "0.584"
         },
         {
             "pixmapfile" : "india/goa.png",
-            "toolTipText" : "Goa",
+            //: State of India: Goa
+            "toolTipText" : qsTr("Goa"),
             "x" : "0.208",
             "y" : "0.733"
         },
         {
             "pixmapfile" : "india/karnataka.png",
-            "toolTipText" : "Karnataka",
+            //: State of India: Karnataka
+            "toolTipText" : qsTr("Karnataka"),
             "x" : "0.295",
             "y" : "0.748"
         },
         {
             "pixmapfile" : "india/telangana.png",
-            "toolTipText" : "Telangana",
+            //: State of India: Telangana
+            "toolTipText" : qsTr("Telangana"),
             "x" : "0.405",
             "y" : "0.66"
         },
 
         {
             "pixmapfile" : "india/andhra_pradesh.png",
-            "toolTipText" : "Andhra Pradesh",
+            //: State of India: Andhra Pradesh
+            "toolTipText" : qsTr("Andhra Pradesh"),
             "x" : "0.454",
             "y" : "0.71"
         },
         {
             "pixmapfile" : "india/kerala.png",
-            "toolTipText" : "Kerala",
+            //: State of India: Kerala
+            "toolTipText" : qsTr("Kerala"),
             "x" : "0.286",
             "y" : "0.885"
         },
         {
             "pixmapfile" : "india/tamil_nadu.png",
-            "toolTipText" : "Tamil Nadu",
+            //: State of India: Tamil Nadu
+            "toolTipText" : qsTr("Tamil Nadu"),
             "x" : "0.371",
             "y" : "0.875"
         },
         {
             "pixmapfile" : "india/west_bengal.png",
-            "toolTipText" : "West Bengal",
+            //: State of India: West Bengal
+            "toolTipText" : qsTr("West Bengal"),
             "x" : "0.689",
             "y" : "0.445"
         },
         {
             "pixmapfile" : "india/sikkim.png",
-            "toolTipText" : "Sikkim",
+            //: State of India: Sikkim
+            "toolTipText" : qsTr("Sikkim"),
             "x" : "0.702",
             "y" : "0.344"
         },
         {
             "pixmapfile" : "india/assam.png",
-            "toolTipText" : "Assam",
+            //: State of India: Assam
+            "toolTipText" : qsTr("Assam"),
             "x" : "0.842",
             "y" : "0.37"
         },
         {
             "pixmapfile" : "india/arunachal_pradesh.png",
-            "toolTipText" : "Arunachal Pradesh",
+            //: State of India: Arunachal Pradesh
+            "toolTipText" : qsTr("Arunachal Pradesh"),
             "x" : "0.891",
             "y" : "0.305"
         },
         {
             "pixmapfile" : "india/nagaland.png",
-            "toolTipText" : "Nagaland",
+            //: State of India: Nagaland
+            "toolTipText" : qsTr("Nagaland"),
             "x" : "0.891",
             "y" : "0.37"
         },
         {
             "pixmapfile" : "india/manipur.png",
-            "toolTipText" : "Manipur",
+            //: State of India: Manipur
+            "toolTipText" : qsTr("Manipur"),
             "x" : "0.884",
             "y" : "0.416"
         },
         {
             "pixmapfile" : "india/mizoram.png",
-            "toolTipText" : "Mizoram",
+            //: State of India: Mizoram
+            "toolTipText" : qsTr("Mizoram"),
             "x" : "0.854",
             "y" : "0.473"
         },
         {
             "pixmapfile" : "india/tripura.png",
-            "toolTipText" : "Tripura",
+            //: State of India: Tripura
+            "toolTipText" : qsTr("Tripura"),
             "x" : "0.819",
             "y" : "0.457"
         },
         {
             "pixmapfile" : "india/meghalaya.png",
-            "toolTipText" : "Meghalaya",
+            //: State of India: Meghalaya
+            "toolTipText" : qsTr("Meghalaya"),
             "x" : "0.796",
             "y" : "0.395"
         },
         {
             "pixmapfile" : "india/lakshadweep_islands.png",
-            "toolTipText" : "Lakshadweep Islands",
+            //: State of India: Lakshadweep Islands
+            "toolTipText" : qsTr("Lakshadweep Islands"),
             "x" : "0.153",
             "y" : "0.888"
         },
         {
             "pixmapfile" : "india/andaman_and_nicobar_islands.png",
-            "toolTipText" : "Andaman and Nicobar Islands",
+            //: State of India: Andaman and Nicobar Islands
+            "toolTipText" : qsTr("Andaman and Nicobar Islands"),
             "x" : "0.909",
             "y" : "0.876"
         },
         {
             "pixmapfile" : "india/delhi.png",
-            "toolTipText" : "Delhi",
+            //: State of India: Delhi
+            "toolTipText" : qsTr("Delhi"),
             "x" : "0.336",
             "y" : "0.31"
         }

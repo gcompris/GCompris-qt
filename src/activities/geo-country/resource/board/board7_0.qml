@@ -19,163 +19,190 @@ QtObject {
       },
       {
          "pixmapfile" : "brazil/Amazonas.png",
-         "toolTipText" : "Amazonas",
+         //: County of Brazil: Amazonas
+         "toolTipText" : qsTr("Amazonas"),
          "x" : "0.269",
          "y" : "0.266"
       },
       {
          "pixmapfile" : "brazil/Para.png",
-         "toolTipText" : "Pará",
+         //: County of Brazil: Pará
+         "toolTipText" : qsTr("Pará"),
          "x" : "0.538",
          "y" : "0.259"
       },
       {
          "pixmapfile" : "brazil/Mato_Grosso.png",
-         "toolTipText" : "Mato Grosso",
+         //: County of Brazil: Mato Grosso
+         "toolTipText" : qsTr("Mato Grosso"),
          "x" : "0.467",
          "y" : "0.466"
       },
       {
          "pixmapfile" : "brazil/Minas_Gerais.png",
-         "toolTipText" : "Minas Gerais",
+         //: County of Brazil: Minas Gerais
+         "toolTipText" : qsTr("Minas Gerais"),
          "x" : "0.692",
          "y" : "0.597"
       },
       {
          "pixmapfile" : "brazil/Bahia.png",
-         "toolTipText" : "Bahia",
+         //: County of Brazil: Bahia
+         "toolTipText" : qsTr("Bahia"),
          "x" : "0.764",
          "y" : "0.481"
       },
       {
          "pixmapfile" : "brazil/Mato_Grosso_do_Sul.png",
-         "toolTipText" : "Mato Grosso do Sul",
+         //: County of Brazil: Mato Grosso do Sul
+         "toolTipText" : qsTr("Mato Grosso do Sul"),
          "x" : "0.497",
          "y" : "0.642"
       },
       {
          "pixmapfile" : "brazil/Goias.png",
-         "toolTipText" : "Goiás",
+         //: County of Brazil: Goiás
+         "toolTipText" : qsTr("Goiás"),
          "x" : "0.601",
          "y" : "0.539"
       },
       {
          "pixmapfile" : "brazil/Maranhao.png",
-         "toolTipText" : "Maranhão",
+         //: County of Brazil: Maranhão
+         "toolTipText" : qsTr("Maranhão"),
          "x" : "0.698",
          "y" : "0.305"
       },
       {
          "pixmapfile" : "brazil/Rio_Grande_do_Sul.png",
-         "toolTipText" : "Rio Grande do Sul",
+         //: County of Brazil: Rio Grande do Sul
+         "toolTipText" : qsTr("Rio Grande do Sul"),
          "x" : "0.519",
          "y" : "0.865"
       },
       {
          "pixmapfile" : "brazil/Tocantins.png",
-         "toolTipText" : "Tocantins",
+         //: County of Brazil: Tocantins
+         "toolTipText" : qsTr("Tocantins"),
          "x" : "0.63",
          "y" : "0.387"
       },
       {
          "pixmapfile" : "brazil/Piaui.png",
-         "toolTipText" : "Piauí",
+         //: County of Brazil: Piauí
+         "toolTipText" : qsTr("Piauí"),
          "x" : "0.74",
          "y" : "0.331"
       },
       {
          "pixmapfile" : "brazil/Sao_Paulo.png",
-         "toolTipText" : "São Paulo",
+         //: County of Brazil: São Paulo
+         "toolTipText" : qsTr("São Paulo"),
          "x" : "0.627",
          "y" : "0.685"
       },
       {
          "pixmapfile" : "brazil/Rondonia.png",
-         "toolTipText" : "Rondônia",
+         //: County of Brazil: Rondônia
+         "toolTipText" : qsTr("Rondônia"),
          "x" : "0.322",
          "y" : "0.422"
       },
       {
          "pixmapfile" : "brazil/Roraima.png",
-         "toolTipText" : "Roraima",
+         //: County of Brazil: Roraima
+         "toolTipText" : qsTr("Roraima"),
          "x" : "0.345",
          "y" : "0.133"
       },
       {
          "pixmapfile" : "brazil/Parana.png",
-         "toolTipText" : "Paraná",
+         //: County of Brazil: Paraná
+         "toolTipText" : qsTr("Paraná"),
          "x" : "0.565",
          "y" : "0.733"
       },
       {
          "pixmapfile" : "brazil/Acre.png",
-         "toolTipText" : "Acre",
+         //: County of Brazil: Acre
+         "toolTipText" : qsTr("Acre"),
          "x" : "0.159",
          "y" : "0.386"
       },
       {
          "pixmapfile" : "brazil/Ceara.png",
-         "toolTipText" : "Ceará",
+         //: County of Brazil: Ceará
+         "toolTipText" : qsTr("Ceará"),
          "x" : "0.82",
          "y" : "0.296"
       },
       {
          "pixmapfile" : "brazil/Amapa.png",
-         "toolTipText" : "Amapá",
+         //: County of Brazil: Amapá
+         "toolTipText" : qsTr("Amapá"),
          "x" : "0.546",
          "y" : "0.14"
       },
       {
          "pixmapfile" : "brazil/Pernambuco.png",
-         "toolTipText" : "Pernambuco",
+         //: County of Brazil: Pernambuco
+         "toolTipText" : qsTr("Pernambuco"),
          "x" : "0.853",
          "y" : "0.368"
       },
       {
          "pixmapfile" : "brazil/Santa_Catarina.png",
-         "toolTipText" : "Santa Catarina",
+         //: County of Brazil: Santa Catarina
+         "toolTipText" : qsTr("Santa Catarina"),
          "x" : "0.57",
          "y" : "0.8"
       },
       {
          "pixmapfile" : "brazil/Paraiba.png",
-         "toolTipText" : "Paraíba",
+         //: County of Brazil: Paraíba
+         "toolTipText" : qsTr("Paraíba"),
          "x" : "0.878",
          "y" : "0.34"
       },
       {
          "pixmapfile" : "brazil/Rio_Grande_do_Norte.png",
-         "toolTipText" : "Rio Grande do Norte",
+         //: County of Brazil: Rio Grande do Norte
+         "toolTipText" : qsTr("Rio Grande do Norte"),
          "x" : "0.883",
          "y" : "0.308"
       },
       {
          "pixmapfile" : "brazil/Espirito_Santo.png",
-         "toolTipText" : "Espírito Santo",
+         //: County of Brazil: Espírito Santo
+         "toolTipText" : qsTr("Espírito Santo"),
          "x" : "0.794",
          "y" : "0.619"
       },
       {
          "pixmapfile" : "brazil/Rio_de_Janeiro.png",
-         "toolTipText" : "Rio de Janeiro",
+         //: County of Brazil: Rio de Janeiro
+         "toolTipText" : qsTr("Rio de Janeiro"),
          "x" : "0.752",
          "y" : "0.673"
       },
       {
          "pixmapfile" : "brazil/Alagoas.png",
-         "toolTipText" : "Alagoas",
+         //: County of Brazil: Alagoas
+         "toolTipText" : qsTr("Alagoas"),
          "x" : "0.879",
          "y" : "0.395"
       },
       {
          "pixmapfile" : "brazil/Sergipe.png",
-         "toolTipText" : "Sergipe",
+         //: County of Brazil: Sergipe
+         "toolTipText" : qsTr("Sergipe"),
          "x" : "0.866",
          "y" : "0.418"
       },
       {
          "pixmapfile" : "brazil/Distrito_Federal.png",
-         "toolTipText" : "Distrito Federal",
+         //: County of Brazil: Distrito Federal
+         "toolTipText" : qsTr("Distrito Federal"),
          "x" : "0.641",
          "y" : "0.533"
       }

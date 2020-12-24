@@ -19,97 +19,113 @@ QtObject {
       },
       {
          "pixmapfile" : "poland/dolnoslaskie.png",
-         "toolTipText" : "Dolnoslaskie",
+         //: District of Poland: Dolnoslaskie
+         "toolTipText" : qsTr("Dolnoslaskie"),
          "x" : "0.202",
          "y" : "0.664"
       },
       {
          "pixmapfile" : "poland/zachodnio-pomorskie.png",
-         "toolTipText" : "Zachodnio Pomorskie",
+         //: District of Poland: Zachodnio Pomorskie
+         "toolTipText" : qsTr("Zachodnio Pomorskie"),
          "x" : "0.14",
          "y" : "0.203"
       },
       {
          "pixmapfile" : "poland/wielkopolskie.png",
-         "toolTipText" : "Wielkopolskie",
+         //: District of Poland: Wielkopolskie
+         "toolTipText" : qsTr("Wielkopolskie"),
          "x" : "0.32",
          "y" : "0.422"
       },
       {
          "pixmapfile" : "poland/warminsko-mazurskie.png",
-         "toolTipText" : "Warminsko-Mazurskie",
+         //: District of Poland: Warminsko-Mazurskie
+         "toolTipText" : qsTr("Warminsko-Mazurskie"),
          "x" : "0.66",
          "y" : "0.18"
       },
       {
          "pixmapfile" : "poland/swietokrzyskie.png",
-         "toolTipText" : "Swietokrzyskie",
+         //: District of Poland: Swietokrzyskie
+         "toolTipText" : qsTr("Swietokrzyskie"),
          "x" : "0.656",
          "y" : "0.702"
       },
       {
          "pixmapfile" : "poland/slaskie.png",
-         "toolTipText" : "Slaskie",
+         //: District of Poland: Slaskie
+         "toolTipText" : qsTr("Slaskie"),
          "x" : "0.47",
          "y" : "0.795"
       },
       {
          "pixmapfile" : "poland/pomorskie.png",
-         "toolTipText" : "Pomorskie",
+         //: District of Poland: Pomorskie
+         "toolTipText" : qsTr("Pomorskie"),
          "x" : "0.396",
          "y" : "0.113"
       },
       {
          "pixmapfile" : "poland/podlaskie.png",
-         "toolTipText" : "Podlaskie",
+         //: District of Poland: Podlaskie
+         "toolTipText" : qsTr("Podlaskie"),
          "x" : "0.842",
          "y" : "0.247"
       },
       {
          "pixmapfile" : "poland/podkarpackie.png",
-         "toolTipText" : "Podkarpackie",
+         //: District of Poland: Podkarpackie
+         "toolTipText" : qsTr("Podkarpackie"),
          "x" : "0.818",
          "y" : "0.841"
       },
       {
          "pixmapfile" : "poland/opolskie.png",
-         "toolTipText" : "Opolskie",
+         //: District of Poland: Opolskie
+         "toolTipText" : qsTr("Opolskie"),
          "x" : "0.35",
          "y" : "0.734"
       },
       {
          "pixmapfile" : "poland/mazowieckie.png",
-         "toolTipText" : "Mazowieckie",
+         //: District of Poland: Mazowieckie
+         "toolTipText" : qsTr("Mazowieckie"),
          "x" : "0.692",
          "y" : "0.447"
       },
       {
          "pixmapfile" : "poland/malopolskie.png",
-         "toolTipText" : "Malopolskie",
+         //: District of Poland: Malopolskie
+         "toolTipText" : qsTr("Malopolskie"),
          "x" : "0.604",
          "y" : "0.862"
       },
       {
          "pixmapfile" : "poland/lodzkie.png",
-         "toolTipText" : "Lódzkie",
+         //: District of Poland: Lódzkie
+         "toolTipText" : qsTr("Lódzkie"),
          "x" : "0.512",
          "y" : "0.557"
       },
       {
          "pixmapfile" : "poland/lubuskie.png",
-         "toolTipText" : "Lubuskie",
+         //: District of Poland: Lubuskie
+         "toolTipText" : qsTr("Lubuskie"),
          "x" : "0.124",
          "y" : "0.437"
       },
       {
          "pixmapfile" : "poland/lubelskie.png",
-         "toolTipText" : "Lubelskie",
+         //: District of Poland: Lubelskie
+         "toolTipText" : qsTr("Lubelskie"),
          "x" : "0.868",
          "y" : "0.605"
       },
       {
          "pixmapfile" : "poland/kujawsko-pomorskie.png",
-         "toolTipText" : "Kujawsko-Pomorskie",
+         //: District of Poland: Kujawsko-Pomorskie
+         "toolTipText" : qsTr("Kujawsko-Pomorskie"),
          "x" : "0.426",
          "y" : "0.308"
       }
