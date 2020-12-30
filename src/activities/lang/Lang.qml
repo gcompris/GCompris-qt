@@ -185,10 +185,10 @@ ActivityBase {
             }
             onLoadData: {
                 if(activityData && activityData["locale"]) {
-                    background.locale = Core.resolveLocale(activityData["locale"]);
+                    items.locale = Core.resolveLocale(activityData["locale"]);
                 }
                 else {
-                    background.locale = Core.resolveLocale(background.locale);
+                    items.locale = Core.resolveLocale(items.locale);
                 }
             }
             onStartActivity: {
