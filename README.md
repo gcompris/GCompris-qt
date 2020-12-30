@@ -44,6 +44,8 @@ You can help by:
 
 Get more information on our [developer's wiki](https://gcompris.net/wiki/Developer%27s_corner).
 
+Bug reports should be created in the [KDE bug tracker](https://bugs.kde.org/enter_bug.cgi?product=gcompris).
+
 ## Licence
 
 GCompris is free software released under the [GPL V3+](https://www.gnu.org/licenses/gpl-3.0.fr.html).
