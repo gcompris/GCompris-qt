@@ -1,6 +1,6 @@
 /* GCompris - ActivityInfo.qml
  *
- * SPDX-FileCopyrightText: 2018 Your Name <yy@zz.org>
+ * SPDX-FileCopyrightText: 2021 Your Name <yy@zz.org>
  *
  * SPDX-License-Identifier: GPL-3.0-or-later
  */

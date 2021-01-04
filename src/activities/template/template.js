@@ -1,6 +1,6 @@
 /* GCompris - template.js
  *
- * SPDX-FileCopyrightText: 2018 YOUR NAME <xx@yy.org>
+ * SPDX-FileCopyrightText: 2021 YOUR NAME <xx@yy.org>
  *
  * Authors:
  *   <THE GTK VERSION AUTHOR> (GTK+ version)
