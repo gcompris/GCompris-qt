@@ -280,6 +280,18 @@ void ActivityInfo::setCurrentLevels()
         }
         m_currentLevels = ApplicationSettings::getInstance()->currentLevels(m_name);
     }
+    // Remove levels that could have been added in the configuration but are not existing
+    // Either we rename a dataset, or after working in another branch to add dataset and switching to a branch without it
+    QStringList levelsToRemove;
+    for(const QString &level: m_currentLevels) {
+        if(!m_levels.contains(level)) {
+            qDebug() << QString("Invalid level %1 for activity %2, removing it").arg(level).arg(m_name);
+            levelsToRemove << level;
+        }
+    }
+    for(const QString &level: levelsToRemove) {
+        m_currentLevels.removeOne(level);
+    }
     computeMinMaxDifficulty();
 }
 
