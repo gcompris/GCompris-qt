@@ -168,13 +168,12 @@ function calculateTuxIceBlockNextPos() {
 
 var previousFishIndex = 0
 function calculateNextPlaceFishToReach() {
-    var newFishIndex
+    var index, newFishIndex
     do {
-        newFishIndex = Math.floor(Math.random() *
-                                  (items.levels[currentLevel].maxNumber * 2 -
-                                   items.levels[currentLevel].minNumber + 1)) +
-                items.levels[currentLevel].minNumber
-    } while((previousFishIndex === newFishIndex) || (newFishIndex >= iceBlocksLayout.length))
+        index = Math.floor(Math.random() * (items.levels[currentLevel].values.length))
+        newFishIndex = items.levels[currentLevel].values[index]
+    } while(items.levels[currentLevel].values.length > 2 &&     /* Allow repetition for array size 2 */
+        ((newFishIndex === previousFishIndex) || (newFishIndex >= iceBlocksLayout.length)))
     previousFishIndex = newFishIndex
 
     fishIndex = tuxIceBlockNumber + newFishIndex
