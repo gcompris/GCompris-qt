@@ -272,7 +272,6 @@ ActivityBase {
                 id: okButtonMouseArea
                 anchors.fill: parent
                 onClicked: {
-                    console.log("bar width is " + bar.width)
                     if(!bonus.isPlaying)
                         Activity.checkAnswer();
                 }
