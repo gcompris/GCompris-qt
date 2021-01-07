@@ -42,7 +42,7 @@ Item {
                 top: undefined
                 topMargin: undefined
             }
-
+            enabled: !items.tuxIsMoving && !clockAnim.running && !bonus.isPlaying
             onClicked: Activity.moveTux()
         }
 
