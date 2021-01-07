@@ -31,7 +31,6 @@ var iceBlocksLayout = [[0, 0],[1, 0],[2, 0],[3, 0],[4, 0],
 
 var tuxIceBlockNumber = 0
 var tuxIceBlockNumberGoal = 0
-var tuxIsMoving = false;
 var placeFishToReachBool = false
 
 var level = null;
@@ -104,7 +103,7 @@ function moveTux() {
 }
 
 function moveTuxToNextIceBlock() {
-    tuxIsMoving = false
+    items.tuxIsMoving = false
     tuxIceBlockNumber++
     tuxIceBlockNumber = tuxIceBlockNumber % iceBlocksLayout.length
 
@@ -122,7 +121,7 @@ function moveTuxToNextIceBlock() {
     var fishPos = fishIndex % iceBlocksLayout.length
     //if tux reaches its position + dice number
     if (tuxIceBlockNumber == fishPos) {
-        tuxIsMoving = false;
+        items.tuxIsMoving = false;
 
         // if last fish reached
         if (--numberOfFish == 0) {
@@ -146,10 +145,10 @@ function moveTuxToNextIceBlock() {
             lost()
             return
         }
-        tuxIsMoving = false;
+        items.tuxIsMoving = false;
         return
     }
-    tuxIsMoving = true
+    items.tuxIsMoving = true
 }
 
 function moveTuxToIceBlock() {
@@ -160,7 +159,7 @@ function moveTuxToIceBlock() {
 }
 
 function tuxRunningChanged() {
-    if (tuxIsMoving) {
+    if (items.tuxIsMoving) {
         moveTuxToNextIceBlock()
     } else {
         if (placeFishToReachBool == true) {
