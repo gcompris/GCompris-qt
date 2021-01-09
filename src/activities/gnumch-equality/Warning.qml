@@ -33,7 +33,6 @@ Rectangle {
                 spawningMonsters.start()
                 timerActivateWarn.start()
             }
-            muncher.movable = true
             monsters.setMovable(true)
         }
     }

@@ -39,7 +39,6 @@ Creature {
         if (topPanel.life.opacity == 1) {
             topPanel.life.opacity = 0
             spawningMonsters.stop()
-            movable = false
             monsters.setMovable(false)
         } else {
             bonus.bad("gnu")
@@ -56,6 +55,7 @@ Creature {
     Drag.active: ApplicationInfo.isMobile ? muncherArea.drag.active : false
     Drag.hotSpot.x: width / 2
     Drag.hotSpot.y: height / 2
+    movable: opacity == 1
 
     onMovingOnChanged: {
         if (movingOn == false && caughted) {
