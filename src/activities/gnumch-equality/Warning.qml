@@ -17,12 +17,12 @@ import "gnumch-equality.js" as Activity
 Rectangle {
     function hideWarning() {
         if (opacity > 0) {
-            opacity = 0
+            opacity = 0;
+            monsters.destroyAll();
             if (Activity._currentLevel % 6 != 0) {
-                spawningMonsters.start()
-                timerActivateWarn.start()
+                spawningMonsters.start();
+                timerActivateWarn.start();
             }
-            monsters.setMovable(true)
         }
     }
 
