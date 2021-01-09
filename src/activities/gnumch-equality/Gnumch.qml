@@ -115,8 +115,8 @@ ActivityBase {
             initLevel();
         }
         onStop: {
+            spawningMonsters.stop()
             monsters.destroyAll()
-            muncher.init()
             Activity.stop()
         }
 
