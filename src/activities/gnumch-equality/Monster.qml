@@ -30,7 +30,7 @@ Creature {
     property var player
 
     function checkCell() {
-        if (index === player.index) {
+        if (index === player.index && player.movable) {
             player.getCaught(-1)
             eating = true
         }
