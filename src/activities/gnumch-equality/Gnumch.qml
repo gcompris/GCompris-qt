@@ -29,6 +29,7 @@ ActivityBase {
         id: background
         anchors.fill: parent
         source: "qrc:/gcompris/src/activities/guesscount/resource/backgroundW01.svg"
+        property bool withMonsters: false
 
         function checkAnswer() {
             if (!muncher.movable)
@@ -71,11 +72,17 @@ ActivityBase {
             stopLevel();
 
             if(useMultipleDataset) {
-                if(items.levels[Activity._currentLevel].spawnMonsters)
+                if(items.levels[Activity._currentLevel].spawnMonsters) {
+                    withMonsters = true;
                     spawningMonsters.restart();
+                }
             }
             else if (Activity._currentLevel !== 0) {
+                withMonsters = true;
                 spawningMonsters.restart();
+            }
+            else {
+                withMonsters = false;
             }
         }
 

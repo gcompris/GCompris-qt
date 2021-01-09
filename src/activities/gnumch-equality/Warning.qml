@@ -19,10 +19,14 @@ Rectangle {
         if (opacity > 0) {
             opacity = 0;
             monsters.destroyAll();
-            if (Activity._currentLevel % 6 != 0) {
-                spawningMonsters.start();
-                timerActivateWarn.start();
+            if(topPanel.life.opacity == 1) {
+                topPanel.life.opacity = 0
+                if(background.withMonsters) {
+                    spawningMonsters.restart()
+                }
             }
+            else
+                background.initLevel()
         }
     }
 
