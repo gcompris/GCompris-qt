@@ -36,15 +36,10 @@ Creature {
         warningRect.setFault(index)
         warningRect.opacity = 1
 
-        if (topPanel.life.opacity == 1) {
-            topPanel.life.opacity = 0
-            spawningMonsters.stop()
-            monsters.setMovable(false)
-        } else {
+        spawningMonsters.stop()
+        monsters.setMovable(false)
+        if (topPanel.life.opacity != 1) {
             bonus.bad("gnu")
-            monsters.destroyAll()
-            spawningMonsters.restart()
-            background.initLevel()
         }
     }
 
