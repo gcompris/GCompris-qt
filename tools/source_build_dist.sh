@@ -20,6 +20,26 @@ mkdir -p build
 cd build
 cmake ..
 make getSvnTranslations
+
+# remove all translation files that should not be shipped
+# get all the locales to keep from LanguageList.qml
+languageListToKeep=`grep UTF-8\" ../src/core/LanguageList.qml | grep -v "//" | grep -o '[a-zA-Z_@]*.UTF-8' | cut -d'.' -f1`
+fullLanguageList=`echo $languageListToKeep | xargs`
+for f in $languageListToKeep; do
+    # append short locales to the list
+    fullLanguageList="$fullLanguageList `echo $f | cut -d'_' -f1`"
+done
+# remove each po file that is not within the previous list
+for f in ../po/gcompris_*.po; do
+    # get the locale from the filename
+    locale=`echo $f | cut -d'_' -f2- | cut -d'.' -f1`
+    echo $fullLanguageList | grep -q -w $locale
+    if [[ $? -ne 0 ]]; then
+        echo "Removing $locale as it is not shipped within gcompris"
+        rm -f $f
+    fi
+done
+
 git add -f ../po
 git commit -a -m "PO INTEGRATED / DO NOT PUSH ME"
 make dist
