@@ -59,6 +59,7 @@ function stop() {
 
 function initLevel() {
     items.bar.level = currentLevel + 1
+    items.tuxIsMoving = false;
 
     items.chooseDiceBar.value1 = 0
     items.chooseDiceBar.value2 = 0
