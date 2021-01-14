@@ -60,7 +60,6 @@ function stop() {
 function initLevel() {
     items.bar.level = currentLevel + 1
     items.tuxIsMoving = false;
-
     items.chooseDiceBar.value1 = 0
     items.chooseDiceBar.value2 = 0
     items.chooseDiceBar.valueMax = items.levels[currentLevel].maxNumber
@@ -76,8 +75,8 @@ function initLevel() {
     items.clockPosition = 4
 }
 
-function moveTux() {
-    calculateTuxIceBlockNextPos()
+function moveTux(numberOfMovesToDo) {
+    calculateTuxIceBlockNextPos(numberOfMovesToDo)
 
     if (tuxIceBlockNumberGoal > fishIndex)
     {
@@ -159,12 +158,10 @@ function tuxRunningChanged() {
     }
 }
 
-function calculateTuxIceBlockNextPos() {
-    tuxIceBlockNumberGoal = tuxIceBlockNumber +
-            items.chooseDiceBar.value1 + items.chooseDiceBar.value2
+function calculateTuxIceBlockNextPos(numberOfMovesToDo) {
+    tuxIceBlockNumberGoal = tuxIceBlockNumber + numberOfMovesToDo
     // Increase Tux's speed depending on the number of blocks to move
-    items.tux.duration = 1000 -
-            (items.chooseDiceBar.value1 + items.chooseDiceBar.value2) * 40
+    items.tux.duration = 1000 - numberOfMovesToDo * 40
 }
 
 var previousFishIndex = 0
