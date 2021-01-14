@@ -70,122 +70,122 @@ function start(items_, twoPlayer_) {
     // Creating drag points
     items.dragPointsModel.append({
         "posX": 0.05,
-        "posY": 0.948,
+        "posY": 0.95,
         "myIndex": 0
     })
     items.dragPointsModel.append({
-        "posX": 0.500,
-        "posY": 0.948,
+        "posX": 0.5,
+        "posY": 0.95,
         "myIndex": 1
     })
     items.dragPointsModel.append({
         "posX": 0.95,
-        "posY": 0.948,
+        "posY": 0.95,
         "myIndex": 2
     })
     items.dragPointsModel.append({
-        "posX": 0.19,
-        "posY": 0.814,
+        "posX": 0.2,
+        "posY": 0.8,
         "myIndex": 3
     })
     items.dragPointsModel.append({
-        "posX": 0.500,
-        "posY": 0.814,
+        "posX": 0.5,
+        "posY": 0.8,
         "myIndex": 4
     })
     items.dragPointsModel.append({
-        "posX": 0.81,
-        "posY": 0.814,
+        "posX": 0.8,
+        "posY": 0.8,
         "myIndex": 5
     })
     items.dragPointsModel.append({
-        "posX": 0.313,
-        "posY": 0.687,
+        "posX": 0.35,
+        "posY": 0.65,
         "myIndex": 6
     })
     items.dragPointsModel.append({
-        "posX": 0.500,
-        "posY": 0.687,
+        "posX": 0.5,
+        "posY": 0.65,
         "myIndex": 7
     })
     items.dragPointsModel.append({
-        "posX": 0.689,
-        "posY": 0.687,
+        "posX": 0.65,
+        "posY": 0.65,
         "myIndex": 8
     })
     items.dragPointsModel.append({
         "posX": 0.05,
-        "posY": 0.499,
+        "posY": 0.5,
         "myIndex": 9
     })
     items.dragPointsModel.append({
-        "posX": 0.19,
-        "posY": 0.499,
+        "posX": 0.2,
+        "posY": 0.5,
         "myIndex": 10
     })
     items.dragPointsModel.append({
-        "posX": 0.313,
-        "posY": 0.499,
+        "posX": 0.35,
+        "posY": 0.5,
         "myIndex": 11
     })
     items.dragPointsModel.append({
-        "posX": 0.689,
-        "posY": 0.499,
+        "posX": 0.65,
+        "posY": 0.5,
         "myIndex": 12
     })
     items.dragPointsModel.append({
-        "posX": 0.81,
-        "posY": 0.499,
+        "posX": 0.8,
+        "posY": 0.5,
         "myIndex": 13
     })
     items.dragPointsModel.append({
         "posX": 0.95,
-        "posY": 0.499,
+        "posY": 0.5,
         "myIndex": 14
     })
     items.dragPointsModel.append({
-        "posX": 0.313,
-        "posY": 0.311,
+        "posX": 0.35,
+        "posY": 0.35,
         "myIndex": 15
     })
     items.dragPointsModel.append({
-        "posX": 0.500,
-        "posY": 0.311,
+        "posX": 0.5,
+        "posY": 0.35,
         "myIndex": 16
     })
     items.dragPointsModel.append({
-        "posX": 0.689,
-        "posY": 0.311,
+        "posX": 0.65,
+        "posY": 0.35,
         "myIndex": 17
     })
     items.dragPointsModel.append({
-        "posX": 0.19,
-        "posY": 0.188,
+        "posX": 0.2,
+        "posY": 0.2,
         "myIndex": 18
     })
     items.dragPointsModel.append({
         "posX": 0.500,
-        "posY": 0.188,
+        "posY": 0.2,
         "myIndex": 19
     })
     items.dragPointsModel.append({
-        "posX": 0.81,
-        "posY": 0.188,
+        "posX": 0.8,
+        "posY": 0.2,
         "myIndex": 20
     })
     items.dragPointsModel.append({
         "posX": 0.05,
-        "posY": 0.054,
+        "posY": 0.05,
         "myIndex": 21
     })
     items.dragPointsModel.append({
-        "posX": 0.500,
-        "posY": 0.054,
+        "posX": 0.5,
+        "posY": 0.05,
         "myIndex": 22
     })
     items.dragPointsModel.append({
         "posX": 0.95,
-        "posY": 0.054,
+        "posY": 0.05,
         "myIndex": 23
     })
     // For assigning left and right point

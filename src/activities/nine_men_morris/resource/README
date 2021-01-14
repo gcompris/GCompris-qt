@@ -1,19 +1,15 @@
-Copyright: Timothée Giet, 2016
+Copyright: Timothée Giet, 2016-2021
 License: CC-BY-SA 4.0
-Files:
-KonqiWhite.svg
-score_1.svg
-score_2.svg
-TuxBlack.svg
-
-Copyright: Pulkit Gupta, 2016
-Licence: CC-BY-SA 4.0
 Files:
 black_piece.svg
 board.svg
+KonqiWhite.svg
+score_1.svg
+score_2.svg
 tutorial1.svg
 tutorial2.svg
 tutorial3.svg
 tutorial4.svg
 tutorial5.svg
+TuxBlack.svg
 white_piece.svg

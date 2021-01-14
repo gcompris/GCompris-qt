@@ -39,6 +39,8 @@ Image {
     property bool pieceBeingMoved
     property int chance
     opacity: 1.0
+    sourceSize.height: height
+    width: height
 
     ParallelAnimation {
         id: pieceAnimation
@@ -126,9 +128,9 @@ Image {
         height: width
         visible: ((piece.visible && area.enabled && firstPhase) || isSelected) || canBeRemoved
         opacity: 1
-        radius: width / 2
-        border.width: width / 10
-        border.color: canBeRemoved ? "red" : "green"
+        radius: width * 0.5
+        border.width: width * 0.1
+        border.color: canBeRemoved ? "#DC3D3D" : "#74F474" // red : green same as in DragPoint.qml
         color: "transparent"
         z: -1
     }
@@ -136,7 +138,7 @@ Image {
     function move(pieceChangeParent) {
         piece.pieceParent = pieceChangeParent
         piece.parentIndex = pieceChangeParent.index
-        piece.sourceSize.height = Qt.binding(function() { return pieceParent.width * 2.5 })
+        piece.height = Qt.binding(function() { return pieceParent.width * 2.5 })
         var coord = piece.parent.mapFromItem(pieceChangeParent.parent, pieceChangeParent.x + pieceChangeParent.width / 2 -
                     piece.width / 2, pieceChangeParent.y + pieceChangeParent.height / 2 - piece.height / 2)
         piece.moveX = coord.x
