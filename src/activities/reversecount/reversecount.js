@@ -170,7 +170,7 @@ function tuxRunningChanged() {
 }
 
 function calculateTuxIceBlockNextPos(numberOfMovesToDo) {
-    tuxIceBlockNumberGoal = tuxIceBlockNumber + numberOfMovesToDo
+    tuxIceBlockNumberGoal = (tuxIceBlockNumber + numberOfMovesToDo) % iceBlocksLayout.length
     // Increase Tux's speed depending on the number of blocks to move
     items.tux.duration = 1000 - numberOfMovesToDo * 40
 }
