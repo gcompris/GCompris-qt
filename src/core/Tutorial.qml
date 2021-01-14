@@ -234,7 +234,10 @@ Item {
         visible: useImage
         width: parent.width * 0.8
         height: (parent.height - nextButton.height) * 0.48
+        sourceSize.height: height
+        sourceSize.width: width
         fillMode: Image.PreserveAspectFit
+        mipmap: true
         source: tutorialDetails && useImage ? tutorialDetails[tutorialNumber].instructionImage : ""
         anchors {
             top: previousButton.bottom
