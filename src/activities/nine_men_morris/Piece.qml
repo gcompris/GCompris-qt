@@ -17,6 +17,7 @@ import GCompris 1.0
 Image {
     id: piece
     property QtObject pieceParent
+    property QtObject visualParent
     property double moveX
     property double moveY
     property int parentIndex: -1
@@ -52,10 +53,10 @@ Image {
             piece.anchors.centerIn = undefined
         }
         onStopped: {
-            piece.parent = pieceParent
-            piece.anchors.centerIn = pieceParent
-            piece.parent.state = piece.state
-            piece.parent.pieceIndex = index
+            piece.parent = visualParent
+            piece.anchors.centerIn = visualParent
+            piece.pieceParent.state = piece.state
+            piece.pieceParent.pieceIndex = index
             if (Activity.checkMill(piece.parentIndex,piece.state))
                 Activity.updateRemovablePiece()
             else if (firstPhase)
@@ -127,6 +128,7 @@ Image {
     function move(pieceChangeParent) {
         piece.pieceParent = pieceChangeParent
         piece.parentIndex = pieceChangeParent.index
+        piece.visualParent = items.piecesLayout.itemAt(piece.parentIndex)
         piece.height = Qt.binding(function() { return pieceParent.width * 2.5 })
         var coord = piece.parent.mapFromItem(pieceChangeParent.parent, pieceChangeParent.x + pieceChangeParent.width / 2 -
                     piece.width / 2, pieceChangeParent.y + pieceChangeParent.height / 2 - piece.height / 2)

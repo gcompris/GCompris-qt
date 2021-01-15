@@ -436,7 +436,7 @@ function pieceSelected(pieceIndex) {
 
 function movePiece(index) {
     items.pieceBeingMoved = true
-    currentPiece.parent.state = "EMPTY"
+    currentPiece.pieceParent.state = "EMPTY"
     currentPiece.isSelected = false
     for (var i = 0 ; i < numberOfDragPoints ; ++i) {
         if(items.dragPoints.itemAt(i).state != "1" && items.dragPoints.itemAt(i).state != "2")
@@ -1097,7 +1097,7 @@ function removePiece(index) {
 }
 
 function removePieceSelected(index) {
-    otherRepeater.itemAt(index).parent.state = items.firstPhase ? "AVAILABLE" : "EMPTY"
+    otherRepeater.itemAt(index).pieceParent.state = items.firstPhase ? "AVAILABLE" : "EMPTY"
     for(var i = 0 ; i < numberOfPieces ; ++i)
         otherRepeater.itemAt(i).canBeRemoved = false
 }
@@ -1108,10 +1108,10 @@ function checkGameWon() {
     for (var i = 0 ; i < numberOfPieces ; ++i) {
         var piece = otherRepeater.itemAt(i)
         if(piece.visible) {
-            if((piece.parent.leftPoint && piece.parent.leftPoint.state == "EMPTY") ||
-               (piece.parent.rightPoint && piece.parent.rightPoint.state == "EMPTY") ||
-               (piece.parent.upperPoint && piece.parent.upperPoint.state == "EMPTY") ||
-               (piece.parent.lowerPoint && piece.parent.lowerPoint.state == "EMPTY")) {
+            if((piece.pieceParent.leftPoint && piece.pieceParent.leftPoint.state == "EMPTY") ||
+               (piece.pieceParent.rightPoint && piece.pieceParent.rightPoint.state == "EMPTY") ||
+               (piece.pieceParent.upperPoint && piece.pieceParent.upperPoint.state == "EMPTY") ||
+               (piece.pieceParent.lowerPoint && piece.pieceParent.lowerPoint.state == "EMPTY")) {
                     flag = false
                     break
             }
