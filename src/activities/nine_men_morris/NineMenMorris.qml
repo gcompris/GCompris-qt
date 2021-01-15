@@ -52,6 +52,7 @@ ActivityBase {
             property Item main: activity.main
             property alias dragPointsModel: dragPointsModel
             property alias dragPoints: dragPoints
+            property alias piecesLayout: piecesLayout
 
             property alias firstInitial: firstInitial
             property alias firstPlayerPieces: firstPlayerPieces
@@ -118,6 +119,21 @@ ActivityBase {
                         index: myIndex
                         firstPhase: items.firstPhase
                         pieceBeingMoved: items.pieceBeingMoved
+                    }
+                }
+            }
+
+            Repeater {
+                id: piecesLayout
+                model: dragPointsModel
+                delegate: piecePoint
+                Component {
+                    id: piecePoint
+                    Item {
+                        width: parent.width * 0.05
+                        height: width
+                        x: posX * parent.width - width * 0.5
+                        y: posY * parent.height - height * 0.5
                     }
                 }
             }
