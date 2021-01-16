@@ -664,28 +664,28 @@ function checkMillPossible(index, state) {
         if(state == dragPoint.leftPoint.state && state == dragPoint.leftPoint.leftPoint.state) {
             if((dragPoint.upperPoint && state == dragPoint.upperPoint.state) ||
                (dragPoint.lowerPoint && state == dragPoint.lowerPoint.state) || thirdPhase)
-                return true
+                return true;
         }
     }
     if(dragPoint.upperPoint && dragPoint.upperPoint.upperPoint) {
         if(state == dragPoint.upperPoint.state && state == dragPoint.upperPoint.upperPoint.state) {
             if((dragPoint.leftPoint && state == dragPoint.leftPoint.state) ||
                (dragPoint.rightPoint && state == dragPoint.rightPoint.state) || thirdPhase)
-                return true
+                return true;
         }
     }
     if(dragPoint.rightPoint && dragPoint.rightPoint.rightPoint) {
         if(state == dragPoint.rightPoint.state && state == dragPoint.rightPoint.rightPoint.state) {
             if((dragPoint.upperPoint && state == dragPoint.upperPoint.state) ||
                (dragPoint.lowerPoint && state == dragPoint.lowerPoint.state) || thirdPhase)
-                return true
+                return true;
         }
     }
     if(dragPoint.lowerPoint && dragPoint.lowerPoint.lowerPoint) {
         if(state == dragPoint.lowerPoint.state && state == dragPoint.lowerPoint.lowerPoint.state) {
             if((dragPoint.leftPoint && state == dragPoint.leftPoint.state) ||
                (dragPoint.rightPoint && state == dragPoint.rightPoint.state) || thirdPhase)
-                return true
+                return true;
         }
     }
     if(dragPoint.lowerPoint && dragPoint.upperPoint) {
@@ -702,6 +702,7 @@ function checkMillPossible(index, state) {
                 return true;
         }
     }
+    return false;
 }
 
 function setThirdPhaseMove() {
@@ -899,6 +900,7 @@ function checkMill(index, state, position) {
         if(state == dragPoint.leftPoint.state && state == dragPoint.rightPoint.state)
             return true;
     }
+    return false;
 }
 
 //check movable pieces
@@ -916,6 +918,7 @@ function checkMovablePieces(index) {
     if(dragPoint.lowerPoint && dragPoint.lowerPoint.state == "EMPTY") {
         return true;
     }
+    return false;
 }
 
 // updateRemovablePiece called by Piece when its animation stops and checkMill(piece) is true
@@ -1662,28 +1665,28 @@ function checkMillBoardPossible(board, index, state, firstPhase, pieces) {
         if(state == board[point.leftPoint.index] && state == board[point.leftPoint.leftPoint.index]) {
             if((point.upperPoint && state == board[point.upperPoint.index]) ||
                (point.lowerPoint && state == board[point.lowerPoint.index]) || freeMove)
-                return true
+                return true;
         }
     }
     if(point.upperPoint && point.upperPoint.upperPoint) {
         if(state == board[point.upperPoint.index] && state == board[point.upperPoint.upperPoint.index]) {
             if((point.leftPoint && state == board[point.leftPoint.index]) ||
                (point.rightPoint && state == board[point.rightPoint.index]) || freeMove)
-                return true
+                return true;
         }
     }
     if(point.rightPoint && point.rightPoint.rightPoint) {
         if(state == board[point.rightPoint.index] && state == board[point.rightPoint.rightPoint.index]) {
             if((point.upperPoint && state == board[point.upperPoint.index]) ||
                (point.lowerPoint && state == board[point.lowerPoint.index]) || freeMove)
-                return true
+                return true;
         }
     }
     if(point.lowerPoint && point.lowerPoint.lowerPoint) {
         if(state == board[point.lowerPoint.index] && state == board[point.lowerPoint.lowerPoint.index]) {
             if((point.leftPoint && state == board[point.leftPoint.index]) ||
                (point.rightPoint && state == board[point.rightPoint.index]) || freeMove)
-                return true
+                return true;
         }
     }
     if(point.lowerPoint && point.upperPoint) {
@@ -1700,6 +1703,7 @@ function checkMillBoardPossible(board, index, state, firstPhase, pieces) {
                 return true;
         }
     }
+    return false;
 }
 
 function generateMove(board, state, index, firstPhase) {
