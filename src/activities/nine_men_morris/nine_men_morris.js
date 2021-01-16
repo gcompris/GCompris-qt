@@ -1136,7 +1136,8 @@ function checkGameWon() {
     }
 
     if(((numberOfSecondPieces < 3 && !items.playSecond) || (numberOfFirstPieces < 3 && items.playSecond)) ||
-       (flag && ((currentPiece.state == "1" && !items.playSecond) || (currentPiece.state == "2" && items.playSecond)))) {
+       (flag && ((currentPiece.state == "1" && !items.playSecond && numberOfSecondPieces > 3) ||
+       (currentPiece.state == "2" && items.playSecond && numberOfFirstPieces > 3)))) {
         items.gameDone = true
         items.player1score.win();
         items.player2score.endTurn();
@@ -1147,8 +1148,8 @@ function checkGameWon() {
         }
     }
     else if(((numberOfFirstPieces < 3 && !items.playSecond) || (numberOfSecondPieces < 3 && items.playSecond)) ||
-            (flag && ((currentPiece.state == "2" && !items.playSecond) ||
-            (currentPiece.state == "1" && items.playSecond)))) {
+            (flag && ((currentPiece.state == "2" && !items.playSecond && numberOfFirstPieces > 3) ||
+            (currentPiece.state == "1" && items.playSecond && numberOfSecondPieces > 3)))) {
         items.gameDone = true
         items.player2score.win();
         items.player1score.endTurn();
