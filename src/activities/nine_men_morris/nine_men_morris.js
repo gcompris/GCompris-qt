@@ -625,7 +625,7 @@ function setSecondPhaseMove() {
     var permittedPieceIndex = []
     for(var i = 0 ; i < numberOfPieces ; ++i) {
         if(currentRepeater.itemAt(i).visible) {
-            if(!checkMill(currentRepeater.itemAt(i).pieceParent.index, playerState))
+            if(checkMovablePieces(currentRepeater.itemAt(i).pieceParent.index))
                 permittedPieceIndex.push(i)
         }
     }
@@ -909,6 +909,23 @@ function checkMill(index, state, position) {
     if(dragPoint.leftPoint && dragPoint.rightPoint && position != "left" && position != "right") {
         if(state == dragPoint.leftPoint.state && state == dragPoint.rightPoint.state)
             return true;
+    }
+}
+
+//check movable pieces
+function checkMovablePieces(index) {
+    var dragPoint = items.dragPoints.itemAt(index)
+    if(dragPoint.leftPoint && dragPoint.leftPoint.state == "EMPTY") {
+        return true;
+    }
+    if(dragPoint.rightPoint && dragPoint.rightPoint.state == "EMPTY") {
+        return true;
+    }
+    if(dragPoint.upperPoint && dragPoint.upperPoint.state == "EMPTY") {
+        return true;
+    }
+    if(dragPoint.lowerPoint && dragPoint.lowerPoint.state == "EMPTY") {
+        return true;
     }
 }
 
