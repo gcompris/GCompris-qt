@@ -5,6 +5,7 @@
 * Authors:
 *   Bruno Coudoin <bruno.coudoin@gcompris.net> (GTK+ version)
 *   Stephane Mankowski <stephane@mankowski.fr> (Qt Quick port)
+*   Timothée Giet <animtim@gmail.com> (Layout and visual refactoring)
 *
 *   This program is free software; you can redistribute it and/or modify
 *   it under the terms of the GNU General Public License as published by
@@ -33,10 +34,14 @@ ActivityBase {
 
     }
 
-    pageComponent: Rectangle {
+    pageComponent: Image {
         id: background
-        color: "blue"
+        source: "qrc:/gcompris/src/activities/family/resource/background.svg"
         anchors.fill: parent
+        sourceSize.width: width
+        sourceSize.height: height
+        fillMode: Image.PreserveAspectCrop
+
         signal start
         signal stop
 
@@ -55,15 +60,17 @@ ActivityBase {
             property alias background: background
             property alias bar: bar
             property alias bonus: bonus
-            property alias skyColor: background.color
+            property bool isPortrait: (background.height >= background.width - tux.width)
+            property alias nightSky: nightSky.opacity
             property alias modelTable: modelTable
             property var levels: activity.datasetLoader.data
             property bool blockClicks: false
             property int nbCell: 5
-            property int cellSize: Math.min(
-                                       (parent.height - 200) / items.nbCell,
-                                       (parent.width - 40) / items.nbCell)
+            property int cellSize: isPortrait ? Math.min((parent.height - bar.height * 2.5) / items.nbCell,
+                                                         (parent.width - 40) / items.nbCell) :
+                                                (parent.height - bar.height * 1.5) / items.nbCell
             property int nbCelToWin: 0
+            property var lightRatio: items.nbCelToWin / (items.nbCell * items.nbCell)
         }
 
         onStart: {
@@ -88,87 +95,93 @@ ActivityBase {
                 Activity.windowPressed(grid.currentIndex)
         }
 
-        /* The background picture */
-        Image {
-            source: Activity.url + "back.svg"
-            anchors.bottom: parent.bottom
-            fillMode: Image.TileHorizontally
-            sourceSize.height: (parent.height - (gridarea.y + gridarea.height)) * 1.2
-            z: 2
-        }
-        Image {
-            source: Activity.url + "building.svg"
-            fillMode: Image.PreserveAspectFit
-            anchors.fill: gridarea
-            anchors.margins: -1 * Math.ceil(items.nbCell / 2) * items.cellSize
-            z: 2
-        }
-        Image {
-            source: Activity.url + "front.svg"
-            anchors.bottom: parent.bottom
-            fillMode: Image.TileHorizontally
-            sourceSize.height: 20 + tux.height * 0.5
-            z: 999
+        states: [
+            State {
+                id: verticalState
+                when: items.isPortrait
+                AnchorChanges {
+                    target: building
+                    anchors.bottom: tux.verticalCenter
+                }
+            },
+            State {
+                id: horizontalState
+                when: !items.isPortrait
+                AnchorChanges {
+                    target: building
+                    anchors.bottom: tux.bottom
+                }
+            }
+        ]
+
+        Rectangle {
+            id: nightSky
+            color: "#052e3c"
+            opacity: items.lightRatio
+            anchors.fill: background
         }
 
-        /* The sun */
         Image {
             id: sun
-            source: Activity.url + "sun.svg"
+            source: "qrc:/gcompris/src/activities/menu/resource/all.svg"
             sourceSize.height: items.cellSize * 2 * items.nbCell / 5
             anchors {
                 left: parent.left
-                leftMargin: 10
-                bottom: parent.bottom
-                bottomMargin: parent.height / 3 + 2 / 3 * parent.height
-                              * items.nbCelToWin / (items.nbCell * items.nbCell)
+                top: parent.top
+                topMargin: (parent.height - land.height) * items.lightRatio
             }
-            z: 1
-            Behavior on anchors.bottomMargin {
+            Behavior on anchors.topMargin {
                 PropertyAnimation {
                     duration: 1000
                 }
             }
         }
 
-        /* Tux */
-        BarButton {
-            id: tux
-            fillMode: Image.PreserveAspectFit
-            source: Activity.url + "tux.svg"
-            sourceSize.width: parent.width - grid.width < 200 ?
-                                  bar.height * 1.2 :
-                                  Math.min((parent.width - grid.width - 40) / 2, 150)
-            z: 3
-            visible: true
-            anchors {
-                right: parent.right
-                rightMargin: 20
-                bottom: parent.bottom
-                bottomMargin: 20
-            }
-            onClicked: Activity.solve()
+        Image {
+            id: land
+            source: Activity.url + "back.svg"
+            anchors.bottom: parent.bottom
+            anchors.top: tux.top
+            anchors.left: parent.left
+            anchors.right: parent.right
+            fillMode: Image.PreserveAspectCrop
+            sourceSize.height: height
+        }
+        Rectangle {
+            id: buildingBorders
+            color: "#808080"
+            width: building.width + 5 * ApplicationInfo.ratio
+            height: building.height + 2.5 * ApplicationInfo.ratio
+            anchors.horizontalCenter: building.horizontalCenter
+            anchors.bottom: building.bottom
+        }
+        Rectangle {
+            id: building
+            color: "#c8c8c8"
+            width: gridarea.width
+            anchors.top: grid.top
+            anchors.bottom: tux.bottom
+            anchors.horizontalCenter: parent.horizontalCenter
+            anchors.topMargin: items.cellSize * -0.5
         }
 
-        /* The grid */
         Rectangle {
             id: gridarea
-            anchors.fill: grid
-            anchors.margins: items.cellSize / -10
-            opacity: 0
-            z: 4
+            visible: false
+            width: items.cellSize * items.nbCell
+            anchors.top: parent.top
+            anchors.bottom: tux.bottom
+            anchors.horizontalCenter: parent.horizontalCenter
         }
 
         GridView {
             id: grid
-            anchors.top: parent.top
-            anchors.topMargin: (parent.height - height) / 6
+            anchors.verticalCenter: gridarea.verticalCenter
             anchors.horizontalCenter: parent.horizontalCenter
             width: items.nbCell * items.cellSize
             height: width
             cellWidth: items.cellSize
             cellHeight: items.cellSize
-            z: 5
 
             ListModel {
                 id: modelTable
@@ -177,51 +190,64 @@ ActivityBase {
             model: modelTable
 
             delegate: Rectangle {
-                color: "transparent"
+                color: soluce === 1 ? "#20df543d" : "transparent"
                 height: items.cellSize
                 width: items.cellSize
                 border {
-                    color: soluce === 1 ? "red" : "transparent"
-                    width: items.cellSize / 40
+                    color: soluce === 1 ? "#df543d" : "transparent"
+                    width: items.cellSize * 0.025
                 }
-                radius: items.cellSize / 10
+                radius: items.cellSize * 0.1
 
                 BarButton {
                     anchors.fill: parent
                     fillMode: Image.PreserveAspectFit
-                    source: Activity.url + "off.svg"
+                    source: lighton === 1 ? Activity.url + "on.svg" : Activity.url + "off.svg"
                     sourceSize.height: items.cellSize
                     mouseArea.hoverEnabled: !items.blockClicks
                     mouseArea.enabled: !items.blockClicks
                     onClicked: Activity.windowPressed(index)
                     visible: true
-                    Image {
-                        anchors.fill: parent
-                        fillMode: Image.PreserveAspectFit
-                        source: Activity.url + "on.svg"
-                        opacity: lighton === 1 ? 1 : 0
-                        sourceSize.height: items.cellSize
-                        Behavior on opacity {
-                            PropertyAnimation {
-                                duration: 200
-                            }
-                        }
-                    }
                 }
             }
-            
+
             interactive: false
             keyNavigationWraps: true
             highlightFollowsCurrentItem: true
             highlight: Rectangle {
                 width: items.cellSize
                 height: items.cellSize
-                color: "#AAFFFFFF"
-                radius: items.cellSize / 10
+                color: "#EEEEEE"
+                radius: items.cellSize * 0.1
                 visible: background.keyNavigationVisible
                 Behavior on x { SpringAnimation { spring: 2; damping: 0.2 } }
                 Behavior on y { SpringAnimation { spring: 2; damping: 0.2 } }
             }
+        }
+
+        Image {
+            source: Activity.url + "grass.svg"
+            anchors.verticalCenter: building.bottom
+            anchors.horizontalCenter: building.horizontalCenter
+            width: buildingBorders.width
+            sourceSize.height: height
+            fillMode: Image.TileHorizontally
+        }
+
+        BarButton {
+            id: tux
+            fillMode: Image.PreserveAspectFit
+            source: "qrc:/gcompris/src/activities/ballcatch/resource/tux.svg"
+            height: bar.height
+            sourceSize.height: height
+            visible: true
+            anchors {
+                right: parent.right
+                rightMargin: 20
+                bottom: bar.top
+                bottomMargin: 20
+            }
+            onClicked: Activity.solve()
         }
 
         DialogHelp {
