@@ -127,8 +127,6 @@ function checkResult() {
 
     /* Check the soluce */
     items.nbCelToWin = nb
-    items.skyColor = Qt.rgba(0, (127 - 127 * (size * size - nb) / (size * size)) / 255,
-                             (255 - 255 * (size * size - nb) / (size * size)) / 255, 1)
 }
 
 function solve() {
