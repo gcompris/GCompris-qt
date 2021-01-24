@@ -18,6 +18,9 @@ categories:
 softwareType: standalone/desktop
 maintenance:
   type: community
+  contacts:
+    - name: Timothée Giet
+    - name: Johnny Jazeix
 legal:
   license: GPL-3.0-or-later
 localisation:
