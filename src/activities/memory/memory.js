@@ -222,6 +222,9 @@ function youWon() {
 function youLoose(){
     items.blockClicks = true
     items.bonus.bad("flower")
+}
+
+function repeatCurrentLevel(){
     if (items.withTux) {
         initLevel()
     }

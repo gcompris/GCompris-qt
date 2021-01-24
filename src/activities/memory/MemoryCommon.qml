@@ -312,7 +312,10 @@ ActivityBase {
         Bonus {
             id: bonus
             interval: 2000
-            Component.onCompleted: win.connect(Activity.nextLevel)
+            Component.onCompleted: {
+                win.connect(Activity.nextLevel)
+                loose.connect(Activity.repeatCurrentLevel)
+            }
         }
 
         Keys.enabled: !items.blockClicks
