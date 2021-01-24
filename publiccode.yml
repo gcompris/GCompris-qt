@@ -13,6 +13,8 @@ platforms:
   - windows
   - android
   - mac
+categories:
+  - learning-management-system
 softwareType: standalone/desktop
 maintenance:
   type: community
