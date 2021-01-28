@@ -8,6 +8,9 @@ url: 'https://invent.kde.org/education/gcompris.git'
 releaseDate: '2020-11-19'
 softwareVersion: '1.0'
 developmentStatus: stable
+logo: >-
+  https://invent.kde.org/education/gcompris/-/raw/master/images/sc-apps-gcompris-qt.svg
+landingURL: 'https://www.gcompris.net/'
 platforms:
   - linux
   - windows
@@ -16,11 +19,16 @@ platforms:
 categories:
   - learning-management-system
 softwareType: standalone/desktop
+intendedAudience:
+  scope:
+    - education
 maintenance:
   type: community
   contacts:
     - name: Timothée Giet
+      email: support@gcompris.net
     - name: Johnny Jazeix
+      email: support@gcompris.net
 legal:
   license: GPL-3.0-or-later
 localisation:
@@ -98,3 +106,14 @@ description:
       - arithmetic
       - science
       - logic
+    screenshots:
+      - >-
+        https://gcompris.net/screenshots_qt/large/root.png
+      - >-
+        https://gcompris.net/screenshots_qt/large/gletters.png
+      - >-
+        https://gcompris.net/screenshots_qt/large/algebra_plus.png
+      - >-
+        https://gcompris.net/screenshots_qt/large/clockgame.png
+      - >-
+        https://gcompris.net/screenshots_qt/large/programmingMaze.png
