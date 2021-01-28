@@ -77,20 +77,20 @@ description:
       Here is the list of activity categories with some examples:
 
 
-      - computer discovery: keyboard, mouse, touchscreen ...
+      - computer discovery: keyboard, mouse, touchscreen...
 
-      - reading: letters, words, reading practice, typing text ...
+      - reading: letters, words, reading practice, typing text...
 
       - arithmetic: numbers, operations, table memory, enumeration, double entry
-      table ...
+      table...
 
-      - science: the canal lock, the water cycle, renewable energy ...
+      - science: the canal lock, the water cycle, renewable energy...
 
-      - geography: countries, regions, culture ...
+      - geography: countries, regions, culture...
 
-      - games: chess, memory, align 4, hangman, tic-tac-toe ...
+      - games: chess, memory, align 4, hangman, tic-tac-toe...
 
-      - other: colors, shapes, Braille, learn to tell time ...
+      - other: colors, shapes, Braille, learn to tell time...
 
 
       Currently GCompris offers more than 100 activities, and more are  being
@@ -117,3 +117,105 @@ description:
         https://gcompris.net/screenshots_qt/large/clockgame.png
       - >-
         https://gcompris.net/screenshots_qt/large/programmingMaze.png
+
+  it:
+    genericName: Software educativo
+    shortDescription: |-
+      GCompris è una collezione di giochi didattici di alta qualità che offre
+      differenti attività ai bambini dai 2 ai 10 anni.
+    longDescription: |
+      GCompris è una collezione di giochi didattici di alta qualità che offre
+      differenti attività ai bambini dai 2 ai 10 anni.
+
+
+      Alcune attività sono orientate al gioco, ma, in ogni caso,
+      hanno valore didattico.
+
+
+      Ecco l'elenco delle categorie di attività con alcuni esempi:
+
+      - scoperta del computer: tastiera, mouse, schermo tattile...
+
+      - lettura: lettere, parole, esercizi di lettura, digitazione di testo...
+
+      - aritmetica: numeri, operazioni, giochi di memoria con le tabelline,
+      enumerazioni, tabelle a doppia entrata...
+
+      - scienza: il funzionamento di una chiusa, il ciclo dell'acqua,
+      energie rinnovabili...
+
+      - geografia: nazioni, regioni, cultura...
+
+      - giochi: scacchi, memory, forza 4, gioco dell'impiccato, tris...
+
+      - altro: colori, forme, Braille, impara a dire l'ora...
+
+
+      Attualmente GCompris offre più di 100 attività, e molte altre sono in
+      fase di sviluppo. GCompris è un software libero, e questo significa
+      che si può adattare alle proprie esigenze, migliorare e, soprattutto,
+      condividere ovunque con i bambini.
+
+
+      Il progetto GCompris è ospitato e sviluppato dalla comunità di KDE.
+    features:
+      - scoperta del computer
+      - lettura
+      - aritmetica
+      - scienza
+      - logica
+    screenshots:
+      - >-
+        https://gcompris.net/screenshots_qt/large/root.png
+      - >-
+        https://gcompris.net/screenshots_qt/large/gletters.png
+      - >-
+        https://gcompris.net/screenshots_qt/large/algebra_plus.png
+      - >-
+        https://gcompris.net/screenshots_qt/large/clockgame.png
+      - >-
+        https://gcompris.net/screenshots_qt/large/programmingMaze.png
+
+  fr:
+    genericName: Logiciel éducatif
+    shortDescription: |-
+      GCompris est une suite logicielle éducative de grande qualité,
+      comprenant un grand nombre d'activités pour les enfants âgés
+      de 2 à 10 ans.
+    longDescription: |
+      GCompris est une suite logicielle éducative de grande qualité,
+      comprenant un grand nombre d'activités pour les enfants âgés
+      de 2 à 10 ans.
+
+
+      Les activités sont quelquefois ludiques, mais toujours pédagogiques.
+
+
+      Voici ici la liste des différents thèmes que nous couvrons avec
+      quelques exemples :
+
+
+      - découverte de l'ordinateur : clavier, souris, écrans tactiles...
+
+      - lecture : lettres, mots, entraînement à la lecture, à l'écriture...
+
+      - mathématiques : révision des tables, dénombrement, les tables à
+      double entrée...
+
+      - sciences : l'écluse, le cycle de l'eau, l'énergie renouvelable...
+
+      - géographie : pays, régions, culture...
+
+      - jeux : les échecs, jeux de mémoire, le puissance 4, le pendu,
+      le morpion...
+
+      - autres : couleurs, formes, le Braille, apprendre à dire l'heure...
+
+
+      En tout, GCompris propose plus de 100 activités et il continue à évoluer.
+      GCompris est un logiciel libre, il vous est donc possible de l'adapter
+      à votre besoin ou de l'améliorer, et pourquoi pas, d'en faire bénéficier
+      les enfants du monde entier.
+
+
+      Le projet GCompris est hébergé et développé par la communauté KDE.
