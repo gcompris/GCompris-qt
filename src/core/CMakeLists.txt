@@ -180,7 +180,7 @@ if(BUILD_STANDALONE)
       MACOSX_BUNDLE_BUNDLE_NAME "gcompris-qt"
       MACOSX_BUNDLE_SHORT_VERSION_STRING "${GCOMPRIS_VERSION}"
       MACOSX_BUNDLE_BUNDLE_VERSION "${GCOMPRIS_VERSION}"
-      MACOSX_BUNDLE_COPYRIGHT "GPL License, Copyright 2000-2019 Timothee Giet and Others.")
+      MACOSX_BUNDLE_COPYRIGHT "AGPL-3.0 License, SPDX-FileCopyrightText: 2000-2021 Timothee Giet and Others.")
     set_source_files_properties(${GCOMPRIS_RESOURCES}/${gcompris_icon} PROPERTIES MACOSX_PACKAGE_LOCATION "Resources")
   else()
     set(_qtconf_destdir bin)
@@ -353,7 +353,7 @@ elseif(SAILFISHOS)
   set(CPACK_RPM_PACKAGE_ARCHITECTURE "${BUILD_ARCH}")
   set(CPACK_RPM_PACKAGE_NAME "${GCOMPRIS_EXECUTABLE_NAME}")
   set(CPACK_RPM_PACKAGE_VERSION "${GCOMPRIS_VERSION}")
-  set(CPACK_RPM_PACKAGE_LICENSED "GPLv3")
+  set(CPACK_RPM_PACKAGE_LICENSE "GNU Affero General Public License v3.0")
   set(CPACK_RPM_PACKAGE_URL "https://www.gcompris.org")
   set(CPACK_RPM_PACKAGE_DESCRIPTION "GCompris is a high quality educational software suite comprising of numerous activities for children aged 2 to 10.")
   set(CPACK_RPM_USER_BINARY_SPECFILE "${CMAKE_BINARY_DIR}/harbour-gcompris-qt.spec")

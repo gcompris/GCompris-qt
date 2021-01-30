@@ -3,7 +3,7 @@ Summary:        gcompris-qt
 Name:           @GCOMPRIS_EXECUTABLE_NAME@
 Version:        @GCOMPRIS_MAJOR_VERSION@.@GCOMPRIS_MINOR_VERSION@
 Release:        1
-License:        GPLv3
+License:        AGPL-3.0
 Group:          GCompris
 Url: https://www.gcompris.org
 
