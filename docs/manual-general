@@ -21,7 +21,7 @@ In GCompris all the activities follow the same core values:
    
 ***Distribution
 
-The source code of GCompris is under GNU GPLv3, it is free software. It runs best on Free-Software operating systems like GNU/Linux.
+The source code of GCompris is under GNU GPLv3, except for the engine of analog electricity which is under GNU AGPLv3, causing the whole software to be licensed under GNU AGPLv3. It is free software. It runs best on Free-Software operating systems like GNU/Linux.
 
 We also support proprietary operating systems, OSX, Windows and Android. For Android, you can get it either from the F-Droid store or the Google Play Store.
 
