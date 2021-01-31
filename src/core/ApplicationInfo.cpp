@@ -123,9 +123,9 @@ void ApplicationInfo::setApplicationWidth(const int newWidth)
     }
 }
 
-QString ApplicationInfo::getResourceDataPath()
+QStringList ApplicationInfo::getResourceDataPaths()
 {
-    return QString("qrc:/gcompris/data");
+    return { ApplicationSettings::getInstance()->userDataPath(), "qrc:/gcompris/data" };
 }
 
 QString ApplicationInfo::getFilePath(const QString &file)
@@ -145,6 +145,7 @@ QString ApplicationInfo::getAudioFilePath(const QString &file)
 {
     QString localeName = getVoicesLocale(ApplicationSettings::getInstance()->locale());
     QString result = getAudioFilePathForLocale(file, localeName);
+
 #if defined(UBUNTUTOUCH)
     // temporary fix, media player is not playing qrc file as it fails with permissions
     // just extract the file from qrc and copy it to a directory
@@ -161,11 +162,8 @@ QString ApplicationInfo::getAudioFilePath(const QString &file)
         }
         return "file://" + targetFileInfo.absoluteFilePath();
     }
-    return result;
-
-#else
-    return result;
 #endif
+    return result;
 }
 
 QString ApplicationInfo::getAudioFilePathForLocale(const QString &file,
@@ -174,10 +172,22 @@ QString ApplicationInfo::getAudioFilePathForLocale(const QString &file,
     QString filename = file;
     filename.replace("$LOCALE", localeName);
     filename.replace("$CA", CompressedAudio());
-
+    // Absolute paths are returned as is
     if(file.startsWith('/') || file.startsWith(QLatin1String("qrc:")) || file.startsWith(':'))
         return filename;
-    return getResourceDataPath() + '/' + filename;
+
+    // For relative paths, look into resource folders if found
+    const QStringList dataPaths = getResourceDataPaths();
+    for(const QString &dataPath: dataPaths) {
+        if(QFile::exists(dataPath + '/' + filename)) {
+            if(dataPath.startsWith('/'))
+               return "file://" + dataPath + '/' + filename;
+            else
+                return dataPath + '/' + filename;
+        }
+    }
+    // If not found, return the default qrc:/gcompris/data path
+    return dataPaths.last() + '/' + filename;
 }
 
 QString ApplicationInfo::getLocaleFilePath(const QString &file)

@@ -347,9 +347,10 @@ public:
 
 public slots:
     /**
-     * Returns the resource root-path used for GCompris resources.
+     * Returns the resource root-paths used for GCompris resources.
+     * First look in a local folder if exists, else will look into the rcc files.
      */
-    QString getResourceDataPath();
+    QStringList getResourceDataPaths();
 
     /**
      * Returns an absolute path to a language specific sound/voices file. If
