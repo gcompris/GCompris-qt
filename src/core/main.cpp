@@ -11,6 +11,7 @@
 #include <QApplication>
 #include <QQuickWindow>
 #include <QQmlApplicationEngine>
+#include <QQmlComponent>
 #include <QStandardPaths>
 #include <QObject>
 #include <QTranslator>
@@ -47,12 +48,39 @@ bool loadAndroidTranslation(QTranslator &translator, const QString &locale)
     return true;
 }
 
+/**
+ * Checks if the locale is supported. Locale may have been removed because
+ * translation progress was not enough or invalid language put in configuration.
+*/
+bool isSupportedLocale(const QString &locale)
+{
+    bool isSupported = false;
+    QQmlEngine engine;
+    QQmlComponent component(&engine, QUrl("qrc:/gcompris/src/core/LanguageList.qml"));
+    QObject *object = component.create();
+    QVariant variant = object->property("languages");
+    QJSValue languagesList = variant.value<QJSValue>();
+    const int length = languagesList.property("length").toInt();
+    for (int i = 0; i < length; ++i) {
+        if(languagesList.property(i).property("locale").toString() == locale) {
+            isSupported = true;
+        }
+    }
+    delete object;
+    return isSupported;
+}
 // Return the locale
 QString loadTranslation(QSettings &config, QTranslator &translator)
 {
     QString locale;
     // Get locale
     locale = config.value("General/locale", GC_DEFAULT_LOCALE).toString();
+
+    if(!isSupportedLocale(locale)) {
+        qDebug() << "locale" << locale << "not supported, defaulting to" << GC_DEFAULT_LOCALE;
+        locale = GC_DEFAULT_LOCALE;
+        ApplicationSettings::getInstance()->setLocale(locale);
+    }
 
     if(locale == GC_DEFAULT_LOCALE)
         locale = QString(QLocale::system().name() + ".UTF-8");
@@ -131,13 +159,6 @@ int main(int argc, char *argv[])
 
 #endif
 
-
-    // Load translations
-    QTranslator translator;
-    loadTranslation(config, translator);
-    // Apply translation
-    app.installTranslator(&translator);
-
     QCommandLineParser parser;
     parser.setApplicationDescription("GCompris is an educational software for children 2 to 10");
     parser.addHelpOption();
@@ -181,6 +202,12 @@ int main(int argc, char *argv[])
     GComprisPlugin plugin;
     plugin.registerTypes("GCompris");
     ActivityInfoTree::registerResources();
+
+    // Load translations
+    QTranslator translator;
+    loadTranslation(config, translator);
+    // Apply translation
+    app.installTranslator(&translator);
 
     // Tell media players to stop playing, it's GCompris time
     ApplicationInfo::getInstance()->requestAudioFocus();
