@@ -108,15 +108,15 @@ description:
       - logic
     screenshots:
       - >-
-        https://gcompris.net/screenshots_qt/large/root.png
+        https://invent.kde.org/education/gcompris/-/raw/master/screenshots/root.png
       - >-
-        https://gcompris.net/screenshots_qt/large/gletters.png
+        https://invent.kde.org/education/gcompris/-/raw/master/screenshots/gletters.png
       - >-
-        https://gcompris.net/screenshots_qt/large/algebra_plus.png
+        https://invent.kde.org/education/gcompris/-/raw/master/screenshots/algebra_plus.png
       - >-
-        https://gcompris.net/screenshots_qt/large/clockgame.png
+        https://invent.kde.org/education/gcompris/-/raw/master/screenshots/clockgame.png
       - >-
-        https://gcompris.net/screenshots_qt/large/programmingMaze.png
+        https://invent.kde.org/education/gcompris/-/raw/master/screenshots/programmingMaze.png
 
   it:
     genericName: Software educativo
@@ -166,15 +166,15 @@ description:
       - logica
     screenshots:
       - >-
-        https://gcompris.net/screenshots_qt/large/root.png
+        https://invent.kde.org/education/gcompris/-/raw/master/screenshots/root.png
       - >-
-        https://gcompris.net/screenshots_qt/large/gletters.png
+        https://invent.kde.org/education/gcompris/-/raw/master/screenshots/gletters.png
       - >-
-        https://gcompris.net/screenshots_qt/large/algebra_plus.png
+        https://invent.kde.org/education/gcompris/-/raw/master/screenshots/algebra_plus.png
       - >-
-        https://gcompris.net/screenshots_qt/large/clockgame.png
+        https://invent.kde.org/education/gcompris/-/raw/master/screenshots/clockgame.png
       - >-
-        https://gcompris.net/screenshots_qt/large/programmingMaze.png
+        https://invent.kde.org/education/gcompris/-/raw/master/screenshots/programmingMaze.png
 
   fr:
     genericName: Logiciel éducatif
@@ -219,3 +219,21 @@ description:
 
 
       Le projet GCompris est hébergé et développé par la communauté KDE.
+    features:
+      - "découverte de l'ordinateur"
+      - "lecture"
+      - "arithmétique"
+      - "science"
+      - "logique"
+    screenshots:
+      - >-
+        https://invent.kde.org/education/gcompris/-/raw/master/screenshots/root.png
+      - >-
+        https://invent.kde.org/education/gcompris/-/raw/master/screenshots/gletters.png
+      - >-
+        https://invent.kde.org/education/gcompris/-/raw/master/screenshots/algebra_plus.png
+      - >-
+        https://invent.kde.org/education/gcompris/-/raw/master/screenshots/clockgame.png
+      - >-
+        https://invent.kde.org/education/gcompris/-/raw/master/screenshots/programmingMaze.png
+
