@@ -8,8 +8,7 @@ url: 'https://invent.kde.org/education/gcompris.git'
 releaseDate: '2020-11-19'
 softwareVersion: '1.0'
 developmentStatus: stable
-logo: >-
-  https://invent.kde.org/education/gcompris/-/raw/master/images/sc-apps-gcompris-qt.svg
+logo: https://invent.kde.org/education/gcompris/-/raw/master/images/sc-apps-gcompris-qt.svg
 landingURL: 'https://www.gcompris.net/'
 platforms:
   - linux
