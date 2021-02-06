@@ -500,12 +500,11 @@ function continueGame() {
                 items.player2score.win()
             }
             items.bonus.good("flower")
-            items.bonus.isWin = false
         }
         else if(items.counter == 9) {
             items.player1score.endTurn();
             items.player2score.endTurn();
-            items.bonus.bad("tux")
+            items.bonus.bad("flower")
         }
         else
             changeScale()
@@ -520,13 +519,13 @@ function continueGame() {
             } 
             else {
                 items.player2score.win()
-                items.bonus.bad("tux")
+                items.bonus.bad("flower")
             }
         }
         else if(items.counter == 9) {
             items.player1score.endTurn();
             items.player2score.endTurn();
-            items.bonus.bad("tux")
+            items.bonus.bad("flower")
         }
         else 
             changeScale()
