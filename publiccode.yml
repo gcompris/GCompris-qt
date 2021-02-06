@@ -107,16 +107,11 @@ description:
       - science
       - logic
     screenshots:
-      - >-
-        https://invent.kde.org/education/gcompris/-/raw/master/screenshots/root.png
-      - >-
-        https://invent.kde.org/education/gcompris/-/raw/master/screenshots/gletters.png
-      - >-
-        https://invent.kde.org/education/gcompris/-/raw/master/screenshots/algebra_plus.png
-      - >-
-        https://invent.kde.org/education/gcompris/-/raw/master/screenshots/clockgame.png
-      - >-
-        https://invent.kde.org/education/gcompris/-/raw/master/screenshots/programmingMaze.png
+      - https://invent.kde.org/education/gcompris/-/raw/master/screenshots/root.png
+      - https://invent.kde.org/education/gcompris/-/raw/master/screenshots/gletters.png
+      - https://invent.kde.org/education/gcompris/-/raw/master/screenshots/algebra_plus.png
+      - https://invent.kde.org/education/gcompris/-/raw/master/screenshots/clockgame.png
+      - https://invent.kde.org/education/gcompris/-/raw/master/screenshots/programmingMaze.png
 
   it:
     genericName: Software educativo
@@ -165,16 +160,11 @@ description:
       - scienza
       - logica
     screenshots:
-      - >-
-        https://invent.kde.org/education/gcompris/-/raw/master/screenshots/root.png
-      - >-
-        https://invent.kde.org/education/gcompris/-/raw/master/screenshots/gletters.png
-      - >-
-        https://invent.kde.org/education/gcompris/-/raw/master/screenshots/algebra_plus.png
-      - >-
-        https://invent.kde.org/education/gcompris/-/raw/master/screenshots/clockgame.png
-      - >-
-        https://invent.kde.org/education/gcompris/-/raw/master/screenshots/programmingMaze.png
+      - https://invent.kde.org/education/gcompris/-/raw/master/screenshots/root.png
+      - https://invent.kde.org/education/gcompris/-/raw/master/screenshots/gletters.png
+      - https://invent.kde.org/education/gcompris/-/raw/master/screenshots/algebra_plus.png
+      - https://invent.kde.org/education/gcompris/-/raw/master/screenshots/clockgame.png
+      - https://invent.kde.org/education/gcompris/-/raw/master/screenshots/programmingMaze.png
 
   fr:
     genericName: Logiciel éducatif
@@ -226,14 +216,9 @@ description:
       - "science"
       - "logique"
     screenshots:
-      - >-
-        https://invent.kde.org/education/gcompris/-/raw/master/screenshots/root.png
-      - >-
-        https://invent.kde.org/education/gcompris/-/raw/master/screenshots/gletters.png
-      - >-
-        https://invent.kde.org/education/gcompris/-/raw/master/screenshots/algebra_plus.png
-      - >-
-        https://invent.kde.org/education/gcompris/-/raw/master/screenshots/clockgame.png
-      - >-
-        https://invent.kde.org/education/gcompris/-/raw/master/screenshots/programmingMaze.png
+      - https://invent.kde.org/education/gcompris/-/raw/master/screenshots/root.png
+      - https://invent.kde.org/education/gcompris/-/raw/master/screenshots/gletters.png
+      - https://invent.kde.org/education/gcompris/-/raw/master/screenshots/algebra_plus.png
+      - https://invent.kde.org/education/gcompris/-/raw/master/screenshots/clockgame.png
+      - https://invent.kde.org/education/gcompris/-/raw/master/screenshots/programmingMaze.png
 
