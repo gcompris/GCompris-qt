@@ -360,8 +360,9 @@ ActivityBase {
                     drag.minimumY: - playArea.height * items.zoomLvl
                     drag.maximumY: background.hori ? 0 : items.toolsMargin
                     onClicked: {
-                        Activity.deselect()
-                        availablePieces.hideToolbar()
+                        Activity.disableToolDelete();
+                        Activity.deselect();
+                        availablePieces.hideToolbar();
                     }
                 }
             }

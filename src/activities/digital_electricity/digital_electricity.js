@@ -29,7 +29,6 @@ var numberOfLevel
 var items
 var url = "qrc:/gcompris/src/activities/digital_electricity/resource/"
 var toolDelete
-var toolDeleteSticky
 var selectedIndex
 var animationInProgress
 var selectedTerminal
@@ -91,8 +90,7 @@ function initLevel() {
     connected = []
     determiningComponents = []
     animationInProgress = false
-    toolDelete = false
-    toolDeleteSticky = false
+    disableToolDelete()
     deselect()
     updateToolTip("")
     items.availablePieces.hideToolbar()
@@ -457,7 +455,6 @@ function createComponent(x, y, componentIndex) {
                             "destructible": true
                         });
 
-    toolDeleteSticky = false
     deselect()
     componentSelected(index)
     updateComponent(index)
@@ -484,6 +481,7 @@ function terminalPointSelected(terminal) {
         selectedTerminal = terminal
         terminal.selected = true
     }
+    disableToolDelete();
 }
 
 function createWire(inTerminal, outTerminal, destructible) {
@@ -571,11 +569,14 @@ function updateWires(index) {
     }
 }
 
-function deselect() {
-    if(toolDeleteSticky == false) {
-        toolDelete = false
-        items.availablePieces.toolDelete.state = "notSelected"
+function disableToolDelete() {
+    if(toolDelete == true) {
+        toolDelete = false;
+        items.availablePieces.toolDelete.state = "notSelected";
     }
+}
+
+function deselect() {
     items.availablePieces.rotateLeft.state = "canNotBeSelected"
     items.availablePieces.rotateRight.state = "canNotBeSelected"
     items.availablePieces.info.state = "canNotBeSelected"
