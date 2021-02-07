@@ -39,6 +39,7 @@ function initLevel() {
     items.containerModel.clear()
     items.playQueue = []
     items.tuxTurn = false
+    items.player2Turn = false
     items.selectionCount = 0
     items.blockClicks = false
 
@@ -96,8 +97,16 @@ function initLevel() {
         items.containerModel.append( { pairData_: cardList[i] } )
     }
 
-    items.tuxScore = 0
-    items.playerScore = 0
+    if(items.withTux || items.playerCount === 2) {
+        items.player2Score.endTurn();
+        items.player1Score.beginTurn();
+    }
+    else {
+        items.player1Score.endTurn();
+    }
+
+    items.player1Score.playerScore = 0
+    items.player2Score.playerScore = 0
 }
 
 // Return a pair of cards that have already been shown
@@ -168,19 +177,31 @@ function reverseCardsIfNeeded() {
             item2.card.isFound = true
             cardLeft = cardLeft - 2
 
-            if (tuxTurn)
-                items.tuxScore++
-            else
-                items.playerScore++
+            if (tuxTurn) {
+                items.player2Score.playerScore++
+            }
+            else if(items.playerCount === 2) {
+                if(items.player2Turn) {
+                    items.player2Score.playerScore++
+                }
+                else {
+                    items.player1Score.playerScore++
+                }
+            }
+            else {
+                items.player1Score.playerScore++
+            }
 
             if(cardLeft === 0) { // no more cards in the level
                 if(items.withTux) {
-                    if (items.tuxScore < items.playerScore) {
+                    if (items.player2Score.playerScore < items.player1Score.playerScore) {
                         youWon()
-                    } else {
+                    }
+                    else {
                         youLoose()
                     }
-                } else {
+                }
+                else {
                     youWon()
                 }
             } else {
@@ -197,12 +218,30 @@ function reverseCardsIfNeeded() {
             item1.card.isBack = true
             item2.card.isBack = true
 
-            if(items.withTux)
+            if(items.withTux) {
                 items.tuxTurn = !items.tuxTurn
+                // The user lost, it's Tux turn
+                if(items.tuxTurn) {
+                    items.player2Score.beginTurn()
+                    items.player1Score.endTurn()
+                    tuxPlay()
+                }
+                else {
+                    items.player1Score.beginTurn()
+                    items.player2Score.endTurn()
+                }
+            }
 
-            // The user lost, it's Tux turn
-            if (items.withTux && items.tuxTurn) {
-                tuxPlay()
+            if(items.playerCount === 2) {
+                items.player2Turn = !items.player2Turn
+                if(items.player2Turn) {
+                    items.player2Score.beginTurn()
+                    items.player1Score.endTurn()
+                }
+                else {
+                    items.player1Score.beginTurn()
+                    items.player2Score.endTurn()
+                }
             }
         }
     }
@@ -219,12 +258,12 @@ function youWon() {
     items.bonus.good("flower")
 }
 
-function youLoose(){
+function youLoose() {
     items.blockClicks = true
     items.bonus.bad("flower")
 }
 
-function repeatCurrentLevel(){
+function repeatCurrentLevel() {
     if (items.withTux) {
         initLevel()
     }

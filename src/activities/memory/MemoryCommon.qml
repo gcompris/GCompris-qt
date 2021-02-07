@@ -56,11 +56,13 @@ ActivityBase {
             property alias bonus: bonus
             property GCSfx audioEffects: activity.audioEffects
             property bool withTux: activity.withTux
+            property int playerCount: 1
             property bool tuxTurn: false
+            property bool player2Turn: false
+            property alias player1Score: player1Score
+            property alias player2Score: player2Score
             property var playQueue
             property int selectionCount
-            property int tuxScore: tuxScore.text
-            property int playerScore: playerScore.text
             property var levels: activity.datasetLoader.data !=  0 ? activity.datasetLoader.data : activity.dataset
             property alias containerModel: containerModel
             property alias grid: grid
@@ -103,9 +105,9 @@ ActivityBase {
             cellHeight: height / items.rows
             anchors {
                 left: background.left
-                right: player.left
+                right: player1Score.left
                 top: background.top
-                bottom: player.bottom
+                bottom: player1Score.bottom
                 margins: items.spacing
             }
 
@@ -161,6 +163,13 @@ ActivityBase {
                 currentActivity.currentLevels = dialogActivityConfig.chosenLevels
                 ApplicationSettings.setCurrentLevels(currentActivity.name, dialogActivityConfig.chosenLevels)
             }
+
+            onLoadData: {
+                 if(activityData && activityData["mode"]) {
+                       items.playerCount = activityData["mode"];
+                  }
+            }
+
             onClose: {
                 home()
             }
@@ -173,7 +182,7 @@ ActivityBase {
 
         Bar {
             id: bar
-            content: BarEnumContent { value: items.isMultipleDatasetMode ? (help | home | level | activityConfig) : (help | home | level) }
+            content: BarEnumContent { value: (activity.activityInfo.hasConfig || items.isMultipleDatasetMode) ? (help | home | level | activityConfig ) : (help | home | level ) }
             onHelpClicked: {
                 displayDialog(dialogHelp)
             }
@@ -185,111 +194,49 @@ ActivityBase {
             onHomeClicked: home()
         }
 
-        Rectangle {
-            id: player
-            color: "#B0ffffff"
-            width: bar.height
-            height: bar.height
-            radius: items.spacing
+        ScoreItem {
+            id: player1Score
+            height: Math.min(background.height/7, Math.min(background.width/7, bar.height * 1.05))
+            width: height * 1.2
             anchors {
                 bottom: bar.top
                 right: background.right
-                rightMargin: 2 * ApplicationInfo.ratio
-                bottomMargin: items.spacing * 2
+                rightMargin: items.spacing * 8
+                bottomMargin: items.spacing * 6
             }
-
-            Image {
-                id: playerImage
-                source: 'qrc:/gcompris/src/activities/memory/resource/child.svg'
-                anchors {
-                    verticalCenter: parent.verticalCenter
-                    right: parent.right
-                }
-                width: parent.width * 0.5
-                height: parent.height
-                sourceSize.width: width
-                fillMode: Image.PreserveAspectFit
-            }
-
-            GCText {
-                id: playerScore
-                width: playerImage.width
-                height: parent.height
-                anchors.verticalCenter: parent.verticalCenter
-                anchors.left: parent.left
-                horizontalAlignment: Text.AlignHCenter
-                verticalAlignment: Text.AlignVCenter
-                color: "#373737"
-                font.bold: true
-                font.pointSize: NaN  // need to clear font.pointSize explicitly
-                fontSizeMode: Text.Fit
-                minimumPixelSize: 10
-                font.pixelSize: width
-                style: Text.Outline
-                styleColor: "white"
-                text: items.playerScore
-            }
+            playerImageSource: 'qrc:/gcompris/src/activities/memory/resource/child.svg'
+            backgroundImageSource: 'qrc:/gcompris/src/activities/bargame/resource/score_1.svg'
         }
 
-        Rectangle {
-            id: tux
-            visible: activity.withTux
-            color: "#B0ffffff"
-            width: bar.height
-            height: bar.height
-            radius: items.spacing
+        ScoreItem {
+            id: player2Score
+            height: Math.min(background.height/7, Math.min(background.width/7, bar.height * 1.05))
+            width: height * 1.2
+            visible: activity.withTux || items.playerCount == 2
             anchors {
-                bottom: player.top
+                bottom: player1Score.top
                 right: background.right
-                rightMargin: 2 * ApplicationInfo.ratio
-                bottomMargin: items.spacing * 2
+                rightMargin: items.spacing * 8
+                bottomMargin: items.spacing * 6
             }
-            Image {
-                id: tuxImage
-                source: 'qrc:/gcompris/src/activities/memory/resource/tux.svg'
-                anchors {
-                    verticalCenter: parent.verticalCenter
-                    right: parent.right
-                }
-                width: parent.width * 0.5
-                height: parent.height
-                sourceSize.width: width
-                fillMode: Image.PreserveAspectFit
-            }
-
-            GCText {
-                id: tuxScore
-                width: tuxImage.width
-                height: parent.height
-                anchors.verticalCenter: parent.verticalCenter
-                anchors.left: parent.left
-                horizontalAlignment: Text.AlignHCenter
-                verticalAlignment: Text.AlignVCenter
-                color: "#373737"
-                font.bold: true
-                font.pointSize: NaN  // need to clear font.pointSize explicitly
-                fontSizeMode: Text.Fit
-                minimumPixelSize: 10
-                font.pixelSize: width
-                style: Text.Outline
-                styleColor: "white"
-                text: items.tuxScore
-            }
+            playerImageSource: 'qrc:/gcompris/src/activities/memory/resource/tux.svg'
+            backgroundImageSource: 'qrc:/gcompris/src/activities/bargame/resource/score_2.svg'
         }
+
 
         states: [
             State {
                 name: "horizontalCards"
                 when: horizontalLayout
                 AnchorChanges {
-                    target: tux
-                    anchors.bottom: player.top
+                    target: player2Score
+                    anchors.bottom: player1Score.top
                     anchors.right: background.right
                 }
                 AnchorChanges {
                     target: grid
-                    anchors.bottom: player.bottom
-                    anchors.right: player.left
+                    anchors.bottom: player1Score.bottom
+                    anchors.right: player1Score.left
                 }
 
             },
@@ -297,13 +244,13 @@ ActivityBase {
                 name: "verticalCards"
                 when: !horizontalLayout
                 AnchorChanges {
-                    target: tux
+                    target: player2Score
                     anchors.bottom: bar.top
-                    anchors.right: player.left
+                    anchors.right: player1Score.left
                 }
                 AnchorChanges {
                     target: grid
-                    anchors.bottom: player.top
+                    anchors.bottom: player1Score.top
                     anchors.right: background.right
                 }
             }
