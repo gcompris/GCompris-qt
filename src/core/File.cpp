@@ -120,6 +120,8 @@ bool File::append(const QString& data, const QString& name)
     }
 
     QTextStream out(&file);
+    /* Force utf-8 : needed at least for Windows */
+    out.setCodec("UTF-8");
     out << data;
 
     file.close();
