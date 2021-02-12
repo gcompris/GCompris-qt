@@ -31,7 +31,7 @@ Item {
 
     property string source: imgName
     property double tileSize
-    property double imgSize: tileSize * 0.85
+    property int imgSize: Math.round(tileSize * 0.9)
     property QtObject answer: tileImage.parent
     property bool selected: false
     property alias dropStatus: tileImage.dropStatus
@@ -79,21 +79,27 @@ Item {
         property double yCenter: tile.y + tile.height / 2
 
         Image {
+            id: sourceImage
+            visible: false
+            source: Activity.imagesUrl + imgName
+        }
+
+        Image {
             id: tileImage
             anchors.centerIn: parent
-            width: smallWidth
-            height: smallHeight
+            sourceSize.width: width
+            sourceSize.height: height
+            width: imgSize
+            height: imgSize
             fillMode: Image.PreserveAspectFit
             source: Activity.imagesUrl + imgName
 
-            property double smallWidth: Activity.glowEnabled ? imgSize * 1.1 : imgSize
-            property double smallHeight: Activity.glowEnabled ? imgSize * 1.1 : imgSize
             property double fullWidth: imgWidth ? imgWidth * backgroundImage.width : (backgroundImage.source == "" ?
-                                           tileImage.sourceSize.width :
-                                           backgroundImage.width * tileImage.sourceSize.width/backgroundImage.sourceSize.width)
+                                           sourceImage.sourceSize.width :
+                                           backgroundImage.width * sourceImage.sourceSize.width/backgroundImage.sourceSize.width)
             property double fullHeight: imgHeight ? imgHeight * backgroundImage.height : (backgroundImage.source == "" ?
-                                           tileImage.sourceSize.height :
-                                           backgroundImage.height * tileImage.sourceSize.height/backgroundImage.sourceSize.height)
+                                           sourceImage.sourceSize.height :
+                                           backgroundImage.height * sourceImage.sourceSize.height/backgroundImage.sourceSize.height)
             property QtObject tileImageParent
             property double moveImageX
             property double moveImageY
@@ -129,8 +135,8 @@ Item {
             }
 
             function toSmall() {
-                width = smallWidth;
-                height = smallHeight;
+                width = imgSize;
+                height = imgSize;
                 small = true;
             }
 
@@ -138,10 +144,6 @@ Item {
                 width = fullWidth;
                 height = fullHeight;
                 small = false;
-                if(imgName.indexOf(".svg") != -1) {
-                    tileImage.sourceSize.width = tileImage.width
-                    tileImage.sourceSize.height= tileImage.height
-                }
             }
 
             MultiPointTouchArea {
