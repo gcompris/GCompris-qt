@@ -61,7 +61,7 @@ QtObject {
           "width" : 0.25
       },
       {
-          "pixmapfile" : "images/umbrella.svg",
+          "pixmapfile" : "images/sailingboat.svg",
           "x" : "0.8",
           "y" : "0.3",
           "type" : "SHAPE_BACKGROUND",
