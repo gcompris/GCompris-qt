@@ -1,72 +1,66 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Sodipodi ("http://www.sodipodi.com/") -->
-
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   id="svg774"
-   sodipodi:version="0.32"
-   width="97.046158"
-   height="94.093208"
-   xml:space="preserve"
-   sodipodi:docname="star.svg"
-   inkscape:version="0.91 r13725"
-   inkscape:output_extension="org.inkscape.output.svg.inkscape"
-   sodipodi:modified="true"
-   version="1.0"><metadata
-     id="metadata147"><rdf:RDF><cc:Work
-         rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title /></cc:Work></rdf:RDF></metadata><defs
-     id="defs776"><linearGradient
-       inkscape:collect="always"
-       id="linearGradient3689"><stop
-         style="stop-color:#ffde41;stop-opacity:1;"
-         offset="0"
-         id="stop3691" /><stop
-         style="stop-color:#ffde41;stop-opacity:0;"
-         offset="1"
-         id="stop3693" /></linearGradient><radialGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient3689"
-       id="radialGradient3695"
-       cx="129.17563"
-       cy="78.158661"
-       fx="129.17563"
-       fy="78.158661"
-       r="50.340446"
-       gradientTransform="matrix(0.7175119,-1.242766,1.7363542,1.0024845,-168.51613,151.07087)"
-       gradientUnits="userSpaceOnUse" /></defs><sodipodi:namedview
-     id="base"
-     inkscape:zoom="2.8811374"
-     inkscape:cx="108.99349"
-     inkscape:cy="36.280657"
-     inkscape:window-width="1256"
-     inkscape:window-height="719"
-     inkscape:window-x="3"
-     inkscape:window-y="25"
-     inkscape:current-layer="svg774"
-     showgrid="false"
-     units="px"
-     fit-margin-top="9"
-     fit-margin-left="9"
-     fit-margin-right="9"
-     fit-margin-bottom="9"
-     inkscape:window-maximized="0" /><path
-     id="path3697"
-     d="M 67.364485,83.8161 C 66.284953,83.32752 62.928596,80.75006 59.905898,78.08842 52.148787,71.25788 48.602967,68.9835 46.62747,69.57133 45.72615,69.83952 41.102415,72.97682 36.352465,76.5431 27.866839,82.91415 25.121191,84.33625 22.929788,83.49533 21.010733,82.75892 21.708519,79.58099 26.192033,68.63807 28.592339,62.77965 30.447172,57.23974 30.313891,56.32717 30.155267,55.24112 26.853978,52.34814 20.757117,47.95241 5.3945493,36.87624 5.5151664,35.09801 21.681472,34.32473 c 5.854857,-0.28005 11.362097,-0.9445 12.550847,-1.51424 1.696035,-0.81289 2.824449,-2.79833 5.661915,-9.96207 6.634657,-16.7504702 11.836919,-17.8451802 16.103341,-3.38861 3.249792,11.01176 4.355752,13.59474 6.153789,14.37232 0.924056,0.39963 6.495582,1.01329 12.381176,1.3637 8.193863,0.48784 10.999069,0.93512 11.972994,1.90904 2.856074,2.85607 0.506815,5.89036 -8.436948,10.89711 -8.874879,4.96819 -12.27433,7.47838 -12.27433,9.06353 0,0.67326 1.589857,5.93484 3.533015,11.6924 1.943166,5.75754 3.533015,11.16594 3.533015,12.01864 0,3.94321 -1.574759,4.81416 -5.495801,3.03955 z"
-     style="fill:#ffffff;fill-opacity:1;stroke:#ff970b;stroke-width:0.78511441;stroke-opacity:1"
-     inkscape:connector-curvature="0" /><path
-     id="path2899"
-     d="M 67.364485,83.8161 C 66.284953,83.32752 62.928588,80.75006 59.905898,78.08842 52.148787,71.25787 48.602959,68.9835 46.627462,69.57133 45.72615,69.83952 41.102407,72.97682 36.352465,76.5431 27.866839,82.91415 25.121191,84.33625 22.929788,83.49533 21.010733,82.75892 21.708519,79.58099 26.192033,68.63807 28.592339,62.77964 30.447172,57.23974 30.313883,56.32717 30.155259,55.24111 26.853978,52.34814 20.757117,47.9524 5.3945517,36.87624 5.5151688,35.09801 21.681472,34.32473 c 5.854857,-0.28006 11.362097,-0.9445 12.550839,-1.51425 1.696035,-0.81289 2.824449,-2.79832 5.661923,-9.96206 6.634649,-16.7504702 11.836919,-17.8451802 16.103341,-3.38861 3.249792,11.01175 4.355752,13.59474 6.153781,14.37232 0.924064,0.39962 6.49559,1.01329 12.381176,1.3637 8.193871,0.48784 10.999077,0.93511 11.972995,1.90903 2.856081,2.85608 0.506822,5.89036 -8.436941,10.89711 -8.874887,4.96819 -12.27433,7.47839 -12.27433,9.06353 0,0.67327 1.589857,5.93485 3.533015,11.6924 1.943158,5.75755 3.533015,11.16595 3.533015,12.01865 0,3.94321 -1.574759,4.81416 -5.495801,3.03955 z"
-     style="fill:url(#radialGradient3695);fill-opacity:1;stroke:#ff970b;stroke-width:0.78511441;stroke-opacity:1"
-     inkscape:connector-curvature="0" /><path
-     style="fill:#000000"
-     d=""
-     id="path2883"
-     inkscape:connector-curvature="0" /></svg>
+   version="1.1"
+   id="svg4437"
+   height="100"
+   width="100">
+  <defs
+     id="defs4439" />
+  <metadata
+     id="metadata4442">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+        <dc:date>2021</dc:date>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Timothée Giet</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/by-sa/4.0/" />
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/by-sa/4.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Notice" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Attribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#ShareAlike" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(-256.04925,-514.34852)"
+     id="layer1">
+    <g
+       id="DIFFICULTY1"
+       transform="matrix(2.0398078,0,0,2.0398078,256.98955,519.47268)"
+       style="display:inline">
+      <path
+         d="M 38.412318,43.12038 24.028942,35.891937 9.6286101,43.089455 12.395166,27.815262 0.76463099,16.983511 16.857835,14.771785 24.070097,0.87968674 31.249689,14.787151 47.337646,17.03323 35.681674,27.840122 Z"
+         id="star-6"
+         style="display:inline;fill:#f4ae20;fill-opacity:1;stroke:none;stroke-width:3.87044382;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         d="M 36.144763,39.785589 24.032447,33.698479 11.905851,39.759547 14.235583,26.897068 4.4414481,17.775594 17.99362,15.913088 24.067103,4.2144783 l 6.045972,11.7115497 13.547754,1.891435 -9.815555,9.10054 z"
+         id="star"
+         style="fill:#f2f20d;fill-opacity:1;stroke:none;stroke-width:3.25932097;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    </g>
+  </g>
+</svg>
