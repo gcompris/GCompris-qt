@@ -8,7 +8,7 @@ url: 'https://invent.kde.org/education/gcompris.git'
 releaseDate: '2020-11-19'
 softwareVersion: '1.0'
 developmentStatus: stable
-logo: https://invent.kde.org/education/gcompris/-/raw/master/images/sc-apps-gcompris-qt.svg
+logo: images/sc-apps-gcompris-qt.svg
 landingURL: 'https://www.gcompris.net/'
 platforms:
   - linux
@@ -106,11 +106,11 @@ description:
       - science
       - logic
     screenshots:
-      - https://invent.kde.org/education/gcompris/-/raw/master/screenshots/root.png
-      - https://invent.kde.org/education/gcompris/-/raw/master/screenshots/gletters.png
-      - https://invent.kde.org/education/gcompris/-/raw/master/screenshots/algebra_plus.png
-      - https://invent.kde.org/education/gcompris/-/raw/master/screenshots/clockgame.png
-      - https://invent.kde.org/education/gcompris/-/raw/master/screenshots/programmingMaze.png
+      - screenshots/root.png
+      - screenshots/gletters.png
+      - screenshots/algebra_plus.png
+      - screenshots/clockgame.png
+      - screenshots/programmingMaze.png
 
   it:
     genericName: Software educativo
