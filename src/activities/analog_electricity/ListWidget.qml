@@ -137,10 +137,6 @@ Item {
                                 toolDelete.state = (toolDelete.state == "selected") ? "notSelected" : "selected";
                                 Activity.toolDelete = !Activity.toolDelete;
                             }
-                            onDoubleClicked: {
-                                Activity.toolDelete = true;
-                                toolDelete.state = "selected";
-                            }
                         }
                         states: [
                             State {

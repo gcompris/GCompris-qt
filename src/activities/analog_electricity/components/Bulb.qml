@@ -29,6 +29,7 @@ ElectricalComponent {
     property double maxPower: 0.11
     property double bulbCurrent: 0
     property alias connectionPoints: connectionPoints
+    property alias lightBulb: lightBulb
     property bool isBroken: false
     property var connectionPointPosX: [0.1, 0.9]
     property string componentName: "Bulb"
@@ -138,7 +139,10 @@ ElectricalComponent {
             if(connectionPoints.itemAt(i).wires.length > 0)
                 terminalConnected += 1;
         }
-        if(terminalConnected >= 2 && !isBroken) {
+
+        if((terminalConnected >=2 && !isBroken && !Activity.items.isTutorialMode) ||
+            (terminalConnected >= 2 && !isBroken && Activity.items.isTutorialMode &&
+            Activity.currentLevel > 4)) {
             bulb.showLabel = true;
         } else {
             bulb.showLabel = false;
@@ -201,6 +205,20 @@ ElectricalComponent {
             netlistItem[3][1] = bulb.externalNetlistIndex[1];
             Activity.netlist.push(netlistItem);
         }
+    }
+
+    function checkComponentAnswer() {
+        if(Activity.currentLevel === 7 && componentVoltage > 0 && !isBroken)
+            return "bulbIn";
+
+        if(componentVoltage === 10) {
+            return "bulbGlows";
+        } else if(terminalConnected >= 2 && componentVoltage < 10 && bulbCurrent > 0) {
+            return "bulbGlowsLess"
+        } else if(terminalConnected >= 2 && isBroken) {
+            return "bulbBroken";
+        } else
+            return "";
     }
 }
 

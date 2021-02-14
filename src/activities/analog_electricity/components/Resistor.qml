@@ -161,5 +161,12 @@ ElectricalComponent {
         netlistItem[3][1] = resistor.externalNetlistIndex[1];
         Activity.netlist.push(netlistItem);
     }
+
+    function checkComponentAnswer() {
+        if(resistorCurrent > 0 && terminalConnected >= 2)
+            return "resistorIn";
+        else
+            return "";
+    }
 }
 

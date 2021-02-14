@@ -5,7 +5,7 @@
  * Authors:
  *   Bruno Coudoin <bruno.coudoin@gcompris.net> (Gtk+ version)
  *   Rudra Nil Basu <rudra.nil.basu.1996@gmail.com> (DigitalElectricity)
- *   Aiswarya Kaitheri Kandoth <aiswaryakk29@gmail.com> (AnalogElectricity activity)
+ *   Aiswarya Kaitheri Kandoth <aiswaryakk29@gmail.com> (AnalogElectricity)
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
@@ -90,15 +90,181 @@ QtObject {
     property var tutorialLevels: [
         // level 1
         {
-            inputComponentList: [battery, bulb, switch1]
+            inputComponentList: [],
+            playAreaComponentList: [bulb, battery],
+            determiningComponentsIndex: [0],
+            answerKey: ["bulbGlows"],
+            wires: [ [0, 1, 1, 0] ], // from component_index, from terminalNumber, to component_index, to terminalNumber
+            playAreaComponentPositionX: [0.3, 0.6],
+            playAreaComponentPositionY: [0.1, 0.3],
+            introMessage: [
+                qsTr("A bulb glows when current travels through it. If there is a gap in the path, the current cannot travel and the electrical devices will not work."),
+                qsTr("The travelling path is called a circuit. Electrical devices can work only in a closed circuit. Wires can be used to connect devices and create the circuit."),
+                qsTr("For a detailed description of battery and bulb, click on those and then click on the info button."),
+                qsTr("Turn on the bulb using the provided battery. To connect two terminals, click on a terminal, then on a second terminal.")
+            ]
         },
         // level 2
         {
-            inputComponentList: [battery, bulb, rheostat, switch1, switch2, connection]
+            inputComponentList: [],
+            playAreaComponentList: [bulb, battery, battery],
+            determiningComponentsIndex: [0, 1, 2],
+            answerKey: ["bulbBroken", "batteryIn", "batteryIn"],
+            wires: [],
+            playAreaComponentPositionX: [0.6, 0.3, 0.3],
+            playAreaComponentPositionY: [0.3, 0.55, 0.1],
+            introMessage: [
+                qsTr("Too much current in an electrical circuit can damage the connected devices."),
+                qsTr("To repair a broken bulb in this activity, click on it after disconnecting from the circuit. Don't forget to disable the delete button after removing the connected wires."),
+                qsTr("Break the bulb by connecting it with the two batteries.")
+            ]
         },
         // level 3
         {
-            inputComponentList: [battery, bulb, rheostat, resistor, switch1, connection, redLed]
+            inputComponentList: [battery],
+            playAreaComponentList: [switch1, bulb],
+            determiningComponentsIndex: [0, 1],
+            answerKey: ["switch1In", "bulbGlows"],
+            wires: [],
+            playAreaComponentPositionX: [0.7, 0.4],
+            playAreaComponentPositionY: [0.3, 0.35],
+            introMessage: [
+                qsTr("A switch can connect or disconnect the current travelling path or a circuit."),
+                qsTr("You can click on the switch to open and close it."),
+                qsTr("Create a circuit using the provided components so that the bulb glows only when the switch is on.")
+            ]
+        },
+        // level 4
+        {
+            inputComponentList: [connection],
+            playAreaComponentList: [switch1, bulb, bulb, battery],
+            determiningComponentsIndex: [0, 1, 2],
+            answerKey: ["switch1In", "bulbGlows", "bulbGlows"],
+            wires: [],
+            playAreaComponentPositionX: [0.4, 0.7, 0.4, 0.2],
+            playAreaComponentPositionY: [0.55, 0.3, 0.05, 0.3],
+            introMessage: [
+                qsTr("A simple connector can be used to connect several wires in an electrical circuit."),
+                qsTr("Create a circuit so that one bulb should be always lit and the other should be lit only when the switch is on.")
+            ]
+        },
+        // level 5
+        {
+            inputComponentList: [battery, switch1, connection],
+            playAreaComponentList: [bulb],
+            determiningComponentsIndex: [0],
+            answerKey: ["bulbGlows"],
+            wires: [],
+            playAreaComponentPositionX: [0.4],
+            playAreaComponentPositionY: [0.1],
+            introMessage: [
+                qsTr("Electric current intensity or simply current is a flow of electric charge. One can imagine like a flow of electrons."),
+                qsTr("The conventional symbol for current is I. The unit of current is ampere under the International System of Units, which is denoted as A."),
+                qsTr("Voltage or electric potential difference is what makes a current in a circuit. It is like a \"push\" or \"pull\" for electric charge."),
+                qsTr("The conventional symbol for voltage is V. The unit of measure of voltage is volt under the International System of Units, which is denoted as V."),
+                qsTr("Light the bulb and observe the displayed values.")
+            ]
+        },
+        // level 6
+        {
+            inputComponentList: [connection],
+            playAreaComponentList: [bulb, resistor, battery],
+            determiningComponentsIndex: [0, 1],
+            answerKey: ["bulbGlowsLess", "resistorIn"],
+            wires: [],
+            playAreaComponentPositionX: [0.3, 0.6, 0.4],
+            playAreaComponentPositionY: [0.4, 0.3, 0.05],
+            introMessage: [
+                qsTr("A resistor restricts the flow of current in an electrical circuit. The restriction of current is called resistance."),
+                qsTr("The conventional symbol for resistance is R. The unit of measure of resistance is ohm under the International System of Units, which is denoted as Ω."),
+                qsTr("Light the bulb so that the bulb glows with 5V using the provided components.")
+            ]
+        },
+        // level 7
+        {
+            inputComponentList: [],
+            playAreaComponentList: [rheostat, bulb, battery],
+            determiningComponentsIndex: [0, 1],
+            answerKey: ["rheostatIn", "bulbIn"],
+            wires: [],
+            playAreaComponentPositionX: [0.3, 0.6, 0.4],
+            playAreaComponentPositionY: [0.4, 0.3, 0.05],
+            introMessage: [
+                qsTr("A rheostat is used to vary resistance in an electrical circuit."),
+                qsTr("You can change the rheostat value by dragging its slider."),
+                qsTr("Connect the bulb to the appropriate terminals of the rheostat so that the light intensity of the bulb can be changed while dragging the slider.")
+            ]
+        },
+        // level 8
+        {
+            inputComponentList: [connection],
+            playAreaComponentList: [rheostat, bulb, battery],
+            determiningComponentsIndex: [0, 1],
+            answerKey: ["rheostatConst", "bulbGlowsLess"],
+            wires: [],
+            playAreaComponentPositionX: [0.3, 0.6, 0.4],
+            playAreaComponentPositionY: [0.4, 0.3, 0.05],
+            introMessage: [
+                qsTr("A rheostat can act as a simple resistor if the terminals of the extremities are connected in a circuit."),
+                qsTr("Connect the bulb to the appropriate terminals of the rheostat so that the slider cannot change the light intensity of the bulb.")
+            ]
+        },
+        // level 9
+        {
+            inputComponentList: [connection],
+            playAreaComponentList: [rheostat, bulb, battery],
+            determiningComponentsIndex: [0, 1],
+            answerKey: ["rheostatIn", "bulbGlows"],
+            wires: [],
+            playAreaComponentPositionX: [0.3, 0.6, 0.4],
+            playAreaComponentPositionY: [0.4, 0.3, 0.05],
+            introMessage: [
+                qsTr("Connect the bulb to the appropriate terminals of the rheostat and set the slider so that the voltage drop in the bulb should be 10V. Note that the bulb intensity should vary while dragging the slider.")
+            ]
+        },
+        // level 10
+        {
+            inputComponentList: [connection],
+            playAreaComponentList: [redLed, battery],
+            determiningComponentsIndex: [0],
+            answerKey: ["redLedBroken"],
+            wires: [],
+            playAreaComponentPositionX: [0.6, 0.3],
+            playAreaComponentPositionY: [0.2, 0.25],
+            introMessage: [
+                qsTr(" A red LED converts electrical energy into red light energy under particular conditions."),
+                qsTr("The first condition is current flow in it should be in the direction of the arrow. That means the positive terminal of the battery connected to the terminal at the tail of the arrow shown, and the negative terminal to the head side. This condition is called forward bias."),
+                qsTr("Electrical energy more than a certain limit can break an LED. In this activity, you can click on the broken red LED after disconnecting from the circuit to repair it."),
+                qsTr("Connect the provided red LED to the battery in forward bias. Don't worry about the broken LED for now.")
+            ]
+        },
+        // level 11
+        {
+            inputComponentList: [connection],
+            playAreaComponentList: [redLed, resistor, battery],
+            determiningComponentsIndex: [0, 1],
+            answerKey: ["redLedGlows", "resistorIn"],
+            wires: [],
+            playAreaComponentPositionX: [0.4, 0.4, 0.25],
+            playAreaComponentPositionY: [0.05, 0.4, 0.15],
+            introMessage: [
+                qsTr("The battery is providing too much energy to the LED."),
+                qsTr("One can limit the electrical energy by restricting the current flow in a circuit. That means using a resistor."),
+                qsTr("Light the red LED using the provided components.")
+            ]
+        },
+        // level 12
+        {
+            inputComponentList: [connection],
+            playAreaComponentList: [bulb, bulb, battery],
+            determiningComponentsIndex: [0, 1],
+            answerKey: ["bulbGlows", "bulbGlows"],
+            wires: [],
+            playAreaComponentPositionX: [0.2, 0.6, 0.45],
+            playAreaComponentPositionY: [0.15, 0.15, 0.4],
+            introMessage: [
+                qsTr("Create a circuit so that the voltage drop in both bulbs are equal to the voltage source (battery).")
+            ]
         }
     ]
 }
