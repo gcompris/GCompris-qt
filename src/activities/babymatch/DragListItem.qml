@@ -60,8 +60,11 @@ Item {
         }
         onStopped: {
             tileImage.parent = tileImage.tileImageParent;
-            tileImage.anchors.centerIn = tileImage.currentTargetSpot == null ?
-                                        tileImage.parent : tileImage.currentTargetSpot;
+            if(tileImage.currentTargetSpot == null) {
+                tileImage.centerInTile();
+            } else {
+                tileImage.anchors.centerIn = tileImage.currentTargetSpot;
+            }
             updateOkButton();
         }
     }
@@ -75,8 +78,8 @@ Item {
         border.width: 3
         radius: 2
 
-        property double xCenter: tile.x + tile.width / 2
-        property double yCenter: tile.y + tile.height / 2
+        property double xCenter: tile.x + tile.width * 0.5
+        property double yCenter: tile.y + tile.height * 0.5
 
         Image {
             id: sourceImage
@@ -86,11 +89,12 @@ Item {
 
         Image {
             id: tileImage
-            anchors.centerIn: parent
             sourceSize.width: width
             sourceSize.height: height
             width: imgSize
             height: imgSize
+            x: parent.xCenter - width * 0.5
+            y: parent.yCenter - height * 0.5
             fillMode: Image.PreserveAspectFit
             source: Activity.imagesUrl + imgName
 
@@ -119,18 +123,23 @@ Item {
                 }
             }
 
+            function centerInTile() {
+                x = tile.xCenter - tileImage.width * 0.5;
+                y = tile.yCenter - tileImage.height * 0.5;
+            }
+
             function imageRemove() {
                 dropStatus = -1;
                 if(backgroundImage.source == "")
                     leftWidget.z = 1;
 
-                var coord = tileImage.parent.mapFromItem(tile, tile.xCenter - tileImage.width/2,
-                            tile.yCenter - tileImage.height/2);
-                tileImage.moveImageX = coord.x;
-                tileImage.moveImageY = coord.y;
                 tileImage.currentTargetSpot = null;
                 tileImage.tileImageParent = tile;
                 toSmall();
+                var coord = tileImage.parent.mapFromItem(tile, tile.xCenter - tileImage.width * 0.5,
+                            tile.yCenter - tileImage.height * 0.5);
+                tileImage.moveImageX = coord.x;
+                tileImage.moveImageY = coord.y;
                 tileImageAnimation.start();
             }
 
