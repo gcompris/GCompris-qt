@@ -448,7 +448,7 @@ ActivityBase {
             }
             source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
             sourceSize.width: 60 * ApplicationInfo.ratio
-            enabled: !tutorialInstruction.visible
+            enabled: !tutorialInstruction.visible && !bonus.isPlaying
             onClicked: Activity.checkAnswer()
         }
 
