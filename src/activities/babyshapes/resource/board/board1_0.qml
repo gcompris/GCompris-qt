@@ -26,67 +26,67 @@ QtObject {
 
    property var levels: [
       {
-          "pixmapfile" : "food/baby_bottle.png",
+          "pixmapfile" : "food/baby_bottle.svg",
           "x" : "0.5",
           "y" : "0.25"
       },
       {
-          "pixmapfile" : "food/orange.png",
+          "pixmapfile" : "food/orange.svg",
           "x" : "0.2",
           "y" : "0.75"
       },
       {
-          "pixmapfile" : "food/cookie.png",
+          "pixmapfile" : "food/cookie.svg",
           "x" : "0.8",
           "y" : "0.75"
       },
       {
-          "pixmapfile" : "food/chocolate.png",
+          "pixmapfile" : "food/chocolate.svg",
           "x" : "0.5",
           "y" : "0.75"
       },
       {
-          "pixmapfile" : "food/marmelade.png",
+          "pixmapfile" : "food/marmelade.svg",
           "x" : "0.8",
           "y" : "0.25"
       },
       {
-          "pixmapfile" : "food/butter.png",
+          "pixmapfile" : "food/butter.svg",
           "x" : "0.2",
           "y" : "0.25"
       },
       {
-          "pixmapfile" : "shapeBackground/T_butter.png",
+          "pixmapfile" : "shapeBackground/T_butter.svg",
           "x" : "0.2",
           "y" : "0.25",
           "type" : "SHAPE_BACKGROUND"
       },
       {
-          "pixmapfile" : "shapeBackground/T_baby_bottle.png",
+          "pixmapfile" : "shapeBackground/T_baby_bottle.svg",
           "x" : "0.5",
           "y" : "0.25",
           "type" : "SHAPE_BACKGROUND"
       },
       {
-          "pixmapfile" : "shapeBackground/T_marmelade.png",
+          "pixmapfile" : "shapeBackground/T_marmelade.svg",
           "x" : "0.8",
           "y" : "0.25",
           "type" : "SHAPE_BACKGROUND"
       },
       {
-          "pixmapfile" : "shapeBackground/T_orange.png",
+          "pixmapfile" : "shapeBackground/T_orange.svg",
           "x" : "0.2",
           "y" : "0.75",
           "type" : "SHAPE_BACKGROUND"
       },
       {
-          "pixmapfile" : "shapeBackground/T_chocolate.png",
+          "pixmapfile" : "shapeBackground/T_chocolate.svg",
           "x" : "0.5",
           "y" : "0.75",
           "type" : "SHAPE_BACKGROUND"
       },
       {
-          "pixmapfile" : "shapeBackground/T_cookie.png",
+          "pixmapfile" : "shapeBackground/T_cookie.svg",
           "x" : "0.8",
           "y" : "0.75",
           "type" : "SHAPE_BACKGROUND"

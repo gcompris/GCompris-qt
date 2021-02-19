@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   id="svg2"
+   version="1.1"
+   width="100"
+   height="100">
+  <metadata
+     id="metadata8">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+        <dc:date>2021</dc:date>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Timothée Giet</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/by-sa/4.0/" />
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/by-sa/4.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Notice" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Attribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#ShareAlike" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs6" />
+  <path
+     style="color:#000000;display:inline;overflow:visible;visibility:visible;opacity:1;fill:#1a5194;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.16947562;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;enable-background:accumulate"
+     d="M 79.53586,83.776364 A 29.53586,9.0290685 0 0 1 50,92.80543 29.53586,9.0290685 0 0 1 20.46414,83.776364 29.53586,9.0290685 0 0 1 50,74.747295 29.53586,9.0290685 0 0 1 79.53586,83.776364 Z"
+     id="path4233-6-3-3-6" />
+  <path
+     style="color:#000000;display:inline;overflow:visible;visibility:visible;opacity:1;fill:#438be4;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.14532602;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;enable-background:accumulate"
+     d="M 76.839266,83.252026 A 26.839266,7.3062446 0 0 1 50,90.558269 26.839266,7.3062446 0 0 1 23.160734,83.252026 26.839266,7.3062446 0 0 1 50,75.945781 26.839266,7.3062446 0 0 1 76.839266,83.252026 Z"
+     id="path4233-6-3-3" />
+  <path
+     id="path4233"
+     d="m 50,20.986401 c -26.233063,0 -47.4993454,6.38688 -47.5,14.265625 0.088399,1.027569 0.084808,0.830432 0,0 0,26.233526 21.266474,47.5 47.5,47.5 26.233526,0 47.5,-21.266474 47.5,-47.5 -0.210462,1.595388 -0.147283,1.296117 0,0 C 97.499345,27.373281 76.233063,20.986401 50,20.986401 Z"
+     style="color:#000000;display:inline;overflow:visible;visibility:visible;opacity:1;fill:#1a5194;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.4929519;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;enable-background:accumulate" />
+  <path
+     id="path4233-3"
+     d="M 4.8808594,41.027417 C 8.4686542,63.083055 27.577008,79.292736 50.000788,79.302807 72.395307,79.276338 91.475853,63.093846 95.080078,41.070397 87.136554,46.451824 69.4828,49.919203 50.000788,49.924435 30.47058,49.916494 12.787879,46.429715 4.8808594,41.027417 Z"
+     style="color:#000000;display:inline;overflow:visible;visibility:visible;opacity:1;fill:#438be4;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.51470774;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;enable-background:accumulate" />
+  <path
+     style="color:#000000;display:inline;overflow:visible;visibility:visible;opacity:1;fill:#bdcee3;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.24366057;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;enable-background:accumulate"
+     d="m 95,35.252026 a 45,12.25 0 0 1 -45,12.25 45,12.25 0 0 1 -45,-12.25 45,12.25 0 0 1 45,-12.25 45,12.25 0 0 1 45,12.25 z"
+     id="path4233-6-3" />
+  <path
+     id="path4233-6-3-7"
+     d="M 50,37.002026 A 41.704163,12.25 0 0 0 14.59375,42.808667 45,12.25 0 0 0 50,47.502026 45,12.25 0 0 0 85.402344,42.791089 41.704163,12.25 0 0 0 50,37.002026 Z"
+     style="color:#000000;display:inline;overflow:visible;visibility:visible;opacity:1;fill:#eef2f8;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.23456797;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;enable-background:accumulate" />
+  <path
+     id="path915-3"
+     d="M 56.029223,43.143396 C 58.426195,34.604183 64.568437,9.435976 66.066545,8.0876792 67.564652,6.7393824 74.25128,6.6445377 73.10765,9.7355979 71.82913,13.191249 59.830174,40.982906 61.272601,43.143397 c 1.354135,2.028246 -5.992432,1.647918 -5.243378,-10e-7 z"
+     style="fill:#6b6767;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+  <path
+     id="path915"
+     d="m 56.778277,43.143396 c 2.396972,-8.539213 8.239592,-32.958366 9.7377,-34.3066629 1.498107,-1.3482968 6.686628,-1.4431415 5.542998,1.6479189 -1.27852,3.455651 -12.977855,30.498254 -11.535428,32.658745 1.354135,2.028246 -4.494324,1.647918 -3.74527,-10e-7 z"
+     style="fill:#969191;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+</svg>
