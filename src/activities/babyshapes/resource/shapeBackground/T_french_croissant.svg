@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   height="100"
+   width="100"
+   version="1.1"
+   id="svg2">
+  <metadata
+     id="metadata8">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+        <dc:date>2021</dc:date>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Timothée Giet</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/by-sa/4.0/" />
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/by-sa/4.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Notice" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Attribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#ShareAlike" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs6" />
+  <path
+     id="path987-2"
+     d="m 50.03125,23.496094 c -9.521687,0.13464 -21.925274,3.573531 -20.296875,6.11914 C 18.807351,33.938978 11.0038,41.145884 12.232422,45.095703 5.7239943,51.412537 -0.80654249,71.759198 4.3710938,76.152344 c 2.803645,2.21805 12.0501312,-6.330298 23.6562502,-15.19336 1.506987,0.738896 2.782192,1.000209 3.578125,0.455078 8.578586,-5.875423 31.066178,-5.092707 36.80664,-2.099609 0.544709,0.284013 1.773885,0.01346 3.341797,-0.621094 11.707714,8.92157 21.053956,17.593144 23.875,15.361329 4.965414,-4.213081 -0.838016,-23.099326 -7.0625,-30.212891 0.100255,-0.390735 0.171125,-0.777662 0.1875,-1.154297 C 88.957463,38.005709 80.10608,32.687081 68.808594,29.351562 70.547028,26.565995 59.698038,23.359402 50.03125,23.496094 Z"
+     style="fill:#3651e7;fill-opacity:1;stroke:#ffffff;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
+  <path
+     id="path987"
+     d="M 50.03125 23.496094 C 40.509563 23.630734 28.105976 27.069625 29.734375 29.615234 C 18.807351 33.938978 11.0038 41.145884 12.232422 45.095703 C 5.7239943 51.412537 -0.80654248 71.759198 4.3710938 76.152344 C 7.1747388 78.370394 16.421225 69.822046 28.027344 60.958984 C 29.534331 61.69788 30.809536 61.959193 31.605469 61.414062 C 40.184055 55.538639 62.671647 56.321355 68.412109 59.314453 C 68.956818 59.598466 70.185994 59.327914 71.753906 58.693359 C 83.46162 67.614929 92.807862 76.286503 95.628906 74.054688 C 100.59432 69.841607 94.79089 50.955362 88.566406 43.841797 C 88.666661 43.451062 88.737531 43.064135 88.753906 42.6875 C 88.957463 38.005709 80.10608 32.687081 68.808594 29.351562 C 70.547028 26.565995 59.698038 23.359402 50.03125 23.496094 z "
+     style="fill:#3651e7;fill-opacity:1;stroke:none;stroke-width:0.76196074px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+</svg>
