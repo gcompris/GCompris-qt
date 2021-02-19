@@ -266,13 +266,12 @@ Item {
             id: tileImageGlow
             parent: tileImage.parent
             anchors.fill: tileImage
-            radius: tileImage.dropStatus === 0 ? 9 : 0.7
-            samples: tileImage.dropStatus === 0 ? 18 : 2
+            radius: 8
+            samples: 17
             color: view.showGlow && Activity.glowEnabled ?
-                       (tileImage.dropStatus === 0 ? "red" : "black") :
+                       (tileImage.dropStatus === 0 ? "red" : "white") :
                        'transparent'
             source: tileImage
-            spread: tileImage.dropStatus === 0 ? 0.95 : 1
             opacity: tileImage.opacity
         }
     }
