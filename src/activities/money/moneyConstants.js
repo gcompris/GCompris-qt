@@ -20,27 +20,27 @@
  */
 
 var cheapObjects = [
-    "qrc:/gcompris/src/activities/money/resource/apple.svg",
-    "qrc:/gcompris/src/activities/money/resource/orange.svg",
-    "qrc:/gcompris/src/activities/money/resource/banane.svg",
-    "qrc:/gcompris/src/activities/money/resource/pamplemousse.svg",
-    "qrc:/gcompris/src/activities/money/resource/carot.svg",
-    "qrc:/gcompris/src/activities/money/resource/cerise.svg",
-    "qrc:/gcompris/src/activities/money/resource/cake.svg"
+    "qrc:/gcompris/src/activities/babymatch/resource/images/apple.svg",
+    "qrc:/gcompris/src/activities/babyshapes/resource/food/orange.svg",
+    "qrc:/gcompris/src/activities/babyshapes/resource/food/banana.svg",
+    "qrc:/gcompris/src/activities/babyshapes/resource/food/grapefruit.svg",
+    "qrc:/gcompris/src/activities/babymatch/resource/images/carrot.svg",
+    "qrc:/gcompris/src/activities/babymatch/resource/images/flower.svg",
+    "qrc:/gcompris/src/activities/babyshapes/resource/food/chocolate_cake.svg"
 ]
 
 var normalObjects = [
-    "qrc:/gcompris/src/activities/money/resource/umbrella.svg",
-    "qrc:/gcompris/src/activities/money/resource/pencil.svg",
-    "qrc:/gcompris/src/activities/money/resource/bottle.svg",
-    "qrc:/gcompris/src/activities/money/resource/light.svg",
-    "qrc:/gcompris/src/activities/money/resource/eggpot.svg"
+    "qrc:/gcompris/src/activities/babymatch/resource/images/flowerpot.svg",
+    "qrc:/gcompris/src/activities/babymatch/resource/images/pencil.svg",
+    "qrc:/gcompris/src/activities/babymatch/resource/images/bottle.svg",
+    "qrc:/gcompris/src/activities/babymatch/resource/images/light.svg",
+    "qrc:/gcompris/src/activities/babymatch/resource/images/eggpot.svg"
 ]
 
 var expensiveObjects = [
-    "qrc:/gcompris/src/activities/money/resource/lamp.svg",
-    "qrc:/gcompris/src/activities/money/resource/football.svg",
-    "qrc:/gcompris/src/activities/money/resource/bicycle.svg"
+    "qrc:/gcompris/src/activities/babymatch/resource/images/lamp.svg",
+    "qrc:/gcompris/src/activities/babymatch/resource/images/football.svg",
+    "qrc:/gcompris/src/activities/babymatch/resource/images/bicycle.svg"
 ]
 
 var moneyItems = {
