@@ -44,8 +44,7 @@ public:
     void menuTreeAppend(ActivityInfo *menu);
     void menuTreeAppend(QQmlEngine *engine,
                         const QDir &menuDir, const QString &menuFile);
-    void sortByDifficulty(bool emitChanged = true);
-    void sortByName(bool emitChanged = true);
+    void sortByDifficultyThenName(bool emitChanged = true);
     QVariantList allCharacters();
 
 protected Q_SLOTS:
@@ -73,22 +72,6 @@ private:
     QVariantList m_keyboardCharacters;
     static int menuTreeCount(QQmlListProperty<ActivityInfo> *property);
     static ActivityInfo *menuTreeAt(QQmlListProperty<ActivityInfo> *property, int index);
-
-    struct SortByDifficulty
-    {
-        bool operator()(const ActivityInfo *a, const ActivityInfo *b) const
-        {
-            return a->minimalDifficulty() < b->minimalDifficulty();
-        }
-    };
-
-	struct SortByName
-	{
-            bool operator()(const ActivityInfo *a, const ActivityInfo *b) const
-            {
-                return a->name() < b->name();
-            }
-	};
 
 public:
     static void registerResources();
