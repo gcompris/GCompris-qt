@@ -92,16 +92,13 @@ void ActivityInfoTree::menuTreeAppend(QQmlEngine *engine,
     }
 }
 
-void ActivityInfoTree::sortByDifficulty(bool emitChanged)
+void ActivityInfoTree::sortByDifficultyThenName(bool emitChanged)
 {
-    std::sort(m_menuTree.begin(), m_menuTree.end(), SortByDifficulty());
-    if (emitChanged)
-        Q_EMIT menuTreeChanged();
-}
-
-void ActivityInfoTree::sortByName(bool emitChanged)
-{
-    std::sort(m_menuTree.begin(), m_menuTree.end(), SortByName());
+    std::sort(m_menuTree.begin(), m_menuTree.end(),
+              [](const ActivityInfo *a, const ActivityInfo *b) {
+                  return (a->minimalDifficulty() < b->minimalDifficulty()) ||
+                         (a->minimalDifficulty() == b->minimalDifficulty() && (a->name() < b->name()));
+              });
     if (emitChanged)
         Q_EMIT menuTreeChanged();
 }
@@ -126,7 +123,7 @@ void ActivityInfoTree::filterByTag(const QString &tag, const QString &category, 
             m_menuTree.push_back(activity);
         }
     }
-    sortByDifficulty();
+    sortByDifficultyThenName();
     if (emitChanged)
         Q_EMIT menuTreeChanged();
 }
@@ -296,7 +293,7 @@ void ActivityInfoTree::filterBySearch(const QString& text)
 
     filterEnabledActivities(false);
     filterByDifficulty(ApplicationSettings::getInstance()->filterLevelMin(), ApplicationSettings::getInstance()->filterLevelMax());
-    sortByDifficulty(false);
+    sortByDifficultyThenName(false);
     Q_EMIT menuTreeChanged();
 }
 
