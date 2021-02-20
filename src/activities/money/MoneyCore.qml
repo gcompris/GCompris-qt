@@ -68,7 +68,6 @@ ActivityBase {
             property alias bonus: bonus
             property int itemIndex
             property int pocketRows
-            property bool verticalOrientation: background.height > background.width - bar.height
             property var selectedArea
             property alias pocket: pocketArea.answer
             property alias answer: answerArea.answer
@@ -85,7 +84,7 @@ ActivityBase {
             width: parent.width * 0.9
 
             property int nbColumns: 5
-            property int nbLines: (items.verticalOrientation) ? items.pocketRows + 1 : items.pocketRows
+            property int nbLines: items.pocketRows
             property int itemWidth:
                 Math.min(width / nbColumns - 10 - 10 / nbColumns,
                          parent.height * 0.4 / nbLines - 10 - 10 / nbLines)
@@ -105,7 +104,7 @@ ActivityBase {
             property int itemStoreWidth:
                 Math.min((columnLayout.width - storeAreaFlow.spacing * nbStoreColumns) / nbStoreColumns,
                          (parent.height - answerArea.height -
-                          pocketArea.height - bar.height) * 0.8) - tempSpace
+                          pocketArea.height - bar.height * 1.5) * 0.8) - tempSpace
             property int itemStoreHeight: itemStoreWidth
 
             Rectangle {
