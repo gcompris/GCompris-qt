@@ -266,8 +266,8 @@ ActivityBase {
             GCText {
                 id: helper
                 text:  Activity.get2CharValue(items.useTwelveHourFormat ? items.currentH : items.currentH+12) + ":" +
-                       Activity.get2CharValue(items.currentM) + ":"
-                       + Activity.get2CharValue(items.currentS)
+                       Activity.get2CharValue(items.currentM) + ":" +
+                       Activity.get2CharValue(items.currentS)
                 font.pointSize: NaN
                 font.pixelSize: Math.max(clock.radius / 30, 1)
                 anchors {
@@ -456,6 +456,7 @@ ActivityBase {
             anchors.bottomMargin: 20 * ApplicationInfo.ratio
             anchors.right: parent.right
             anchors.rightMargin: 10 * ApplicationInfo.ratio
+            enabled: !bonus.isPlaying
             ParticleSystemStarLoader {
                 id: okButtonParticles
                 clip: false
