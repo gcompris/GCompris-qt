@@ -20,8 +20,8 @@ Item {
     property alias modeBox: modeBox
     width: if(background) background.width
     property var availableModes: [
-        { "text": qsTr("12-hour clock"), "value": 1 },
-        { "text": qsTr("24-hour clock"), "value": 2 }
+        { "text": qsTr("12 hours"), "value": 1 },
+        { "text": qsTr("24 hours"), "value": 2 }
     ]
     Column {
         spacing: 10 * ApplicationInfo.ratio
