@@ -467,6 +467,7 @@ ActivityBase {
             anchors.bottomMargin: 20 * ApplicationInfo.ratio
             anchors.right: parent.right
             anchors.rightMargin: 10 * ApplicationInfo.ratio
+            enabled: !bonus.isPlaying
             ParticleSystemStarLoader {
                 id: okButtonParticles
                 clip: false
