@@ -34,6 +34,7 @@ ActivityBase {
         sourceSize.height: height
 
         Component.onCompleted: {
+            dialogActivityConfig.initialize()
             activity.start.connect(start)
             activity.stop.connect(stop)
         }
@@ -45,6 +46,7 @@ ActivityBase {
             property alias bonus: bonus
             property int nbSubLevel: 6
             property int currentSubLevel: 0
+            property int mode: 1 // default is automatic
         }
         onStart: Activity.start(main, items, type)
 
@@ -98,20 +100,46 @@ ActivityBase {
             onClose: home()
         }
 
+        DialogChooseLevel {
+            id: dialogActivityConfig
+            currentActivity: activity.activityInfo
+
+            onClose: home()
+
+            onLoadData: {
+                if(activityData && activityData["mode"]) {
+                    items.mode = activityData["mode"];
+                    okButton.show = false
+                }
+            }
+            onStartActivity: {
+                background.stop()
+                background.start()
+            }
+        }
+
         Bar {
             id: bar
-            content: BarEnumContent { value: help | home | level }
+            content: BarEnumContent { value: help | home | level | activityConfig }
             onHelpClicked: {
                 displayDialog(dialogHelpLeftRight)
             }
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: home()
+            onActivityConfigClicked: {
+                displayDialog(dialogActivityConfig)
+            }
         }
 
         Bonus {
             id: bonus
-            Component.onCompleted: win.connect(Activity.nextSubLevel)
+            onWin: {
+                if(items.mode === 1)
+                    Activity.nextSubLevel()
+                else
+                    okButton.levelFinished = true
+            }
         }
 
         Score {
@@ -126,6 +154,34 @@ ActivityBase {
             }
             numberOfSubLevels: items.nbSubLevel
             currentSubLevel: items.currentSubLevel + 1
+        }
+
+        // Next Level Button, if Manual is activated
+        BarButton {
+            id: okButton
+            property bool levelFinished: false
+            enabled: items.mode == 2 && levelFinished
+            visible: enabled
+
+            source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
+            height: width
+            width: score.width
+            sourceSize.width: width
+            sourceSize.height: height
+            z: score.z
+            anchors {
+                bottom: score.top
+                right: score.right
+                bottomMargin: 20
+            }
+            ParticleSystemStarLoader {
+                id: okButtonParticles
+                clip: false
+            }
+            onClicked: {
+                levelFinished = false
+                Activity.nextSubLevel()
+            }
         }
     }
 }
