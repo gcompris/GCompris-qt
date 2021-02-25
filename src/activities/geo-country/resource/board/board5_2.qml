@@ -153,7 +153,7 @@ QtObject {
       {
          "pixmapfile" : "turkey/gumushane.png",
          //: District of Turkey: gümüshane
-         "toolTipText" : qsTr("gümüshane"),
+         "toolTipText" : qsTr("Gümüshane"),
          "x" : "0.664",
          "y" : "0.323"
       },
