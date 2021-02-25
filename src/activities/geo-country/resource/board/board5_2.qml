@@ -144,7 +144,7 @@ QtObject {
       },
       {
          "pixmapfile" : "turkey/gumushane.png",
-         "toolTipText" : "gümüshane",
+         "toolTipText" : "Gümüshane",
          "x" : "0.664",
          "y" : "0.323"
       },
