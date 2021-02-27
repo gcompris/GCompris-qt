@@ -54,8 +54,8 @@ QtObject {
       },
       {
          "pixmapfile" : "turkey/sirnak.png",
-         //: District of Turkey: Sirnak
-         "toolTipText" : qsTr("Sirnak"),
+         //: District of Turkey: Şırnak
+         "toolTipText" : qsTr("Şırnak"),
          "x" : "0.803",
          "y" : "0.631"
       },
@@ -68,8 +68,8 @@ QtObject {
       },
       {
          "pixmapfile" : "turkey/sanliurfa.png",
-         //: District of Turkey: Sanliurfa
-         "toolTipText" : qsTr("Sanliurfa"),
+         //: District of Turkey: Şanlıurfa
+         "toolTipText" : qsTr("Şanlıurfa"),
          "x" : "0.659",
          "y" : "0.654"
       },
@@ -89,8 +89,8 @@ QtObject {
       },
       {
          "pixmapfile" : "turkey/mus.png",
-         //: District of Turkey: Mus
-         "toolTipText" : qsTr("Mus"),
+         //: District of Turkey: Muş
+         "toolTipText" : qsTr("Muş"),
          "x" : "0.778",
          "y" : "0.456"
       },
@@ -124,15 +124,15 @@ QtObject {
       },
       {
          "pixmapfile" : "turkey/kahramanmaras.png",
-         //: District of Turkey: Kahramanmaras
-         "toolTipText" : qsTr("Kahramanmaras"),
+         //: District of Turkey: Kahramanmaraş
+         "toolTipText" : qsTr("Kahramanmaraş"),
          "x" : "0.569",
          "y" : "0.597"
       },
       {
          "pixmapfile" : "turkey/igdir.png",
-         //: District of Turkey: Igdir
-         "toolTipText" : qsTr("Igdir"),
+         //: District of Turkey: Iğdır
+         "toolTipText" : qsTr("Iğdır"),
          "x" : "0.86",
          "y" : "0.338"
       },
@@ -152,8 +152,8 @@ QtObject {
       },
       {
          "pixmapfile" : "turkey/gumushane.png",
-         //: District of Turkey: gümüshane
-         "toolTipText" : qsTr("Gümüshane"),
+         //: District of Turkey: Gümüşhane
+         "toolTipText" : qsTr("Gümüşhane"),
          "x" : "0.664",
          "y" : "0.323"
       },
@@ -187,15 +187,15 @@ QtObject {
       },
       {
          "pixmapfile" : "turkey/elazig.png",
-         //: District of Turkey: Elazig
-         "toolTipText" : qsTr("Elazig"),
+         //: District of Turkey: Elazığ
+         "toolTipText" : qsTr("Elazığ"),
          "x" : "0.667",
          "y" : "0.492"
       },
       {
          "pixmapfile" : "turkey/diyarbakir.png",
-         //: District of Turkey: Diyarbakir
-         "toolTipText" : qsTr("Diyarbakir"),
+         //: District of Turkey: Diyarbakır
+         "toolTipText" : qsTr("Diyarbakır"),
          "x" : "0.708",
          "y" : "0.564"
       },
@@ -243,15 +243,15 @@ QtObject {
       },
       {
          "pixmapfile" : "turkey/agri.png",
-         //: District of Turkey: Agri
-         "toolTipText" : qsTr("Agri"),
+         //: District of Turkey: Ağrı
+         "toolTipText" : qsTr("Ağrı"),
          "x" : "0.836",
          "y" : "0.397"
       },
       {
          "pixmapfile" : "turkey/adiyaman.png",
-         //: District of Turkey: Adiyaman
-         "toolTipText" : qsTr("Adiyaman"),
+         //: District of Turkey: Adıyaman
+         "toolTipText" : qsTr("Adıyaman"),
          "x" : "0.628",
          "y" : "0.603"
       },
@@ -278,15 +278,15 @@ QtObject {
       },
       {
          "pixmapfile" : "turkey/usak.png",
-         //: District of Turkey: Usak
-         "toolTipText" : qsTr("Usak"),
+         //: District of Turkey: Uşak
+         "toolTipText" : qsTr("Uşak"),
          "x" : "0.244",
          "y" : "0.513"
       },
       {
          "pixmapfile" : "turkey/tekirdag.png",
-         //: District of Turkey: Tekirdag
-         "toolTipText" : qsTr("Tekirdag"),
+         //: District of Turkey: Tekirdağ
+         "toolTipText" : qsTr("Tekirdağ"),
          "x" : "0.18",
          "y" : "0.226"
       },
@@ -320,22 +320,22 @@ QtObject {
       },
       {
          "pixmapfile" : "turkey/nigde.png",
-         //: District of Turkey: Nigde
-         "toolTipText" : qsTr("Nigde"),
+         //: District of Turkey: Niğde
+         "toolTipText" : qsTr("Niğde"),
          "x" : "0.469",
          "y" : "0.613"
       },
       {
          "pixmapfile" : "turkey/nevsehir.png",
-         //: District of Turkey: Nevsehir
-         "toolTipText" : qsTr("Nevsehir"),
+         //: District of Turkey: Nevşehir
+         "toolTipText" : qsTr("Nevşehir"),
          "x" : "0.469",
          "y" : "0.503"
       },
       {
          "pixmapfile" : "turkey/mugla.png",
-         //: District of Turkey: Mugla
-         "toolTipText" : qsTr("Mugla"),
+         //: District of Turkey: Muğla
+         "toolTipText" : qsTr("Muğla"),
          "x" : "0.198",
          "y" : "0.687"
       },
@@ -376,22 +376,22 @@ QtObject {
       },
       {
          "pixmapfile" : "turkey/kirsehir.png",
-         //: District of Turkey: Kirsehir
-         "toolTipText" : qsTr("Kirsehir"),
+         //: District of Turkey: Kırşehir
+         "toolTipText" : qsTr("Kırşehir"),
          "x" : "0.446",
          "y" : "0.446"
       },
       {
          "pixmapfile" : "turkey/kirklareli.png",
-         //: District of Turkey: Kirklareli
-         "toolTipText" : qsTr("Kirklareli"),
+         //: District of Turkey: Kırklareli
+         "toolTipText" : qsTr("Kırklareli"),
          "x" : "0.185",
          "y" : "0.156"
       },
       {
          "pixmapfile" : "turkey/kirikkale.png",
-         //: District of Turkey: Kirikkale
-         "toolTipText" : qsTr("Kirikkale"),
+         //: District of Turkey: Kırıkkale
+         "toolTipText" : qsTr("Kırıkkale"),
          "x" : "0.43",
          "y" : "0.39"
       },
@@ -425,15 +425,15 @@ QtObject {
       },
       {
          "pixmapfile" : "turkey/izmir.png",
-         //: District of Turkey: Izmir
-         "toolTipText" : qsTr("Izmir"),
+         //: District of Turkey: İzmir
+         "toolTipText" : qsTr("İzmir"),
          "x" : "0.161",
          "y" : "0.49"
       },
       {
          "pixmapfile" : "turkey/istanbul.png",
-         //: District of Turkey: Istanbul
-         "toolTipText" : qsTr("Istanbul"),
+         //: District of Turkey: İstanbul
+         "toolTipText" : qsTr("İstanbul"),
          "x" : "0.24",
          "y" : "0.226"
       },
@@ -446,8 +446,8 @@ QtObject {
       },
       {
          "pixmapfile" : "turkey/eskisehir.png",
-         //: District of Turkey: Eskisehir
-         "toolTipText" : qsTr("Eskisehir"),
+         //: District of Turkey: Eskişehir
+         "toolTipText" : qsTr("Eskişehir"),
          "x" : "0.32",
          "y" : "0.405"
       },
@@ -481,8 +481,8 @@ QtObject {
       },
       {
          "pixmapfile" : "turkey/cankiri.png",
-         //: District of Turkey: Çankiri
-         "toolTipText" : qsTr("Çankiri"),
+         //: District of Turkey: Çankırı
+         "toolTipText" : qsTr("Çankırı"),
          "x" : "0.42",
          "y" : "0.297"
       },
@@ -523,22 +523,22 @@ QtObject {
       },
       {
          "pixmapfile" : "turkey/bartin.png",
-         //: District of Turkey: Bartin
-         "toolTipText" : qsTr("Bartin"),
+         //: District of Turkey: Bartın
+         "toolTipText" : qsTr("Bartın"),
          "x" : "0.385",
          "y" : "0.192"
       },
       {
          "pixmapfile" : "turkey/balikesir.png",
-         //: District of Turkey: Balikesir
-         "toolTipText" : qsTr("Balikesir"),
+         //: District of Turkey: Balıkesir
+         "toolTipText" : qsTr("Balıkesir"),
          "x" : "0.186",
          "y" : "0.359"
       },
       {
          "pixmapfile" : "turkey/aydin.png",
-         //: District of Turkey: Aydin
-         "toolTipText" : qsTr("Aydin"),
+         //: District of Turkey: Aydın
+         "toolTipText" : qsTr("Aydın"),
          "x" : "0.182",
          "y" : "0.59"
       },
