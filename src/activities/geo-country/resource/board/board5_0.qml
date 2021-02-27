@@ -49,13 +49,13 @@ QtObject {
       },
       {
          "pixmapfile" : "turkey/usak.png",
-         "toolTipText" : "Usak",
+         "toolTipText" : "Uşak",
          "x" : "0.3",
          "y" : "0.515"
       },
       {
          "pixmapfile" : "turkey/tekirdag.png",
-         "toolTipText" : "Tekirdag",
+         "toolTipText" : "Tekirdağ",
          "x" : "0.167",
          "y" : "0.155"
       },
@@ -85,19 +85,19 @@ QtObject {
       },
       {
          "pixmapfile" : "turkey/nigde.png",
-         "toolTipText" : "Nigde",
+         "toolTipText" : "Niğde",
          "x" : "0.765",
          "y" : "0.638"
       },
       {
          "pixmapfile" : "turkey/nevsehir.png",
-         "toolTipText" : "Nevsehir",
+         "toolTipText" : "Nevşehir",
          "x" : "0.765",
          "y" : "0.5"
       },
       {
          "pixmapfile" : "turkey/mugla.png",
-         "toolTipText" : "Mugla",
+         "toolTipText" : "Muğla",
          "x" : "0.206",
          "y" : "0.733"
       },
@@ -139,13 +139,13 @@ QtObject {
       },
       {
          "pixmapfile" : "turkey/kirklareli.png",
-         "toolTipText" : "Kirklareli",
+         "toolTipText" : "Kırklareli",
          "x" : "0.178",
          "y" : "0.07"
       },
       {
          "pixmapfile" : "turkey/kirikkale.png",
-         "toolTipText" : "Kirikkale",
+         "toolTipText" : "Kırıkkale",
          "x" : "0.686",
          "y" : "0.362"
       },
@@ -175,13 +175,13 @@ QtObject {
       },
       {
          "pixmapfile" : "turkey/izmir.png",
-         "toolTipText" : "Izmir",
+         "toolTipText" : "İzmir",
          "x" : "0.129",
          "y" : "0.485"
       },
       {
          "pixmapfile" : "turkey/istanbul.png",
-         "toolTipText" : "Istanbul",
+         "toolTipText" : "İstanbul",
          "x" : "0.292",
          "y" : "0.157"
       },
@@ -199,7 +199,7 @@ QtObject {
       },
       {
          "pixmapfile" : "turkey/eskisehir.png",
-         "toolTipText" : "Eskisehir",
+         "toolTipText" : "Eskişehir",
          "x" : "0.457",
          "y" : "0.38"
       },
@@ -229,7 +229,7 @@ QtObject {
       },
       {
          "pixmapfile" : "turkey/cankiri.png",
-         "toolTipText" : "Çankiri",
+         "toolTipText" : "Çankırı",
          "x" : "0.665",
          "y" : "0.244"
       },
@@ -265,19 +265,19 @@ QtObject {
       },
       {
          "pixmapfile" : "turkey/bartin.png",
-         "toolTipText" : "Bartin",
+         "toolTipText" : "Bartın",
          "x" : "0.594",
          "y" : "0.114"
       },
       {
          "pixmapfile" : "turkey/balikesir.png",
-         "toolTipText" : "Balikesir",
+         "toolTipText" : "Balıkesir",
          "x" : "0.18",
          "y" : "0.321"
       },
       {
          "pixmapfile" : "turkey/aydin.png",
-         "toolTipText" : "Aydin",
+         "toolTipText" : "Aydın",
          "x" : "0.171",
          "y" : "0.61"
       },

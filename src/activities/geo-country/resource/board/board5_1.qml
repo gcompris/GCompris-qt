@@ -60,7 +60,7 @@ QtObject {
       },
       {
          "pixmapfile" : "turkey/sirnak.png",
-         "toolTipText" : "Sirnak",
+         "toolTipText" : "Şırnak",
          "x" : "0.733",
          "y" : "0.662"
       },
@@ -72,7 +72,7 @@ QtObject {
       },
       {
          "pixmapfile" : "turkey/sanliurfa.png",
-         "toolTipText" : "Sanliurfa",
+         "toolTipText" : "Şanlıurfa",
          "x" : "0.368",
          "y" : "0.69"
       },
@@ -96,7 +96,7 @@ QtObject {
       },
       {
          "pixmapfile" : "turkey/mus.png",
-         "toolTipText" : "Mus",
+         "toolTipText" : "Muş",
          "x" : "0.67",
          "y" : "0.444"
       },
@@ -126,13 +126,13 @@ QtObject {
       },
       {
          "pixmapfile" : "turkey/kahramanmaras.png",
-         "toolTipText" : "Kahramanmaras",
+         "toolTipText" : "Kahramanmaraş",
          "x" : "0.14",
          "y" : "0.621"
       },
       {
          "pixmapfile" : "turkey/igdir.png",
-         "toolTipText" : "Igdir",
+         "toolTipText" : "Iğdır",
          "x" : "0.875",
          "y" : "0.297"
       },
@@ -150,7 +150,7 @@ QtObject {
       },
       {
          "pixmapfile" : "turkey/gumushane.png",
-         "toolTipText" : "Gümüshane",
+         "toolTipText" : "Gümüşhane",
          "x" : "0.38",
          "y" : "0.277"
       },
@@ -180,13 +180,13 @@ QtObject {
       },
       {
          "pixmapfile" : "turkey/elazig.png",
-         "toolTipText" : "Elazig",
+         "toolTipText" : "Elazığ",
          "x" : "0.39",
          "y" : "0.49"
       },
       {
          "pixmapfile" : "turkey/diyarbakir.png",
-         "toolTipText" : "Diyarbakir",
+         "toolTipText" : "Diyarbakır",
          "x" : "0.493",
          "y" : "0.577"
       },
@@ -228,13 +228,13 @@ QtObject {
       },
       {
          "pixmapfile" : "turkey/agri.png",
-         "toolTipText" : "Agri",
+         "toolTipText" : "Ağrı",
          "x" : "0.818",
          "y" : "0.369"
       },
       {
          "pixmapfile" : "turkey/adiyaman.png",
-         "toolTipText" : "Adiyaman",
+         "toolTipText" : "Adıyaman",
          "x" : "0.288",
          "y" : "0.626"
       }
