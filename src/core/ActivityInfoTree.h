@@ -17,9 +17,9 @@
 class ActivityInfoTree : public QObject
 {
     Q_OBJECT
-    Q_PROPERTY(ActivityInfo* rootMenu READ getRootMenu CONSTANT)
+    Q_PROPERTY(ActivityInfo *rootMenu READ getRootMenu CONSTANT)
     Q_PROPERTY(QQmlListProperty<ActivityInfo> menuTree READ menuTree NOTIFY menuTreeChanged)
-    Q_PROPERTY(ActivityInfo* currentActivity READ getCurrentActivity WRITE setCurrentActivity NOTIFY currentActivityChanged)
+    Q_PROPERTY(ActivityInfo *currentActivity READ getCurrentActivity WRITE setCurrentActivity NOTIFY currentActivityChanged)
     Q_PROPERTY(QVariantList characters READ allCharacters CONSTANT)
 
 public:
@@ -42,7 +42,7 @@ protected Q_SLOTS:
     // create a tree from the whole list of activities with the activities created between the two versions
     Q_INVOKABLE void filterCreatedWithinVersions(int firstVersion, int lastVersion,
                                                  bool emitChanged = true);
-    Q_INVOKABLE void filterBySearch(const QString& text);
+    Q_INVOKABLE void filterBySearch(const QString &text);
     Q_INVOKABLE void filterByDifficulty(quint32 levelMin, quint32 levelMax);
     Q_INVOKABLE void minMaxFiltersChanged(quint32 levelMin, quint32 levelMax, bool emitChanged = true);
 

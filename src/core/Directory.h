@@ -39,7 +39,7 @@ public:
       * @returns list of the names of all the files and directories
       *          in the directory.
       */
-    Q_INVOKABLE QStringList getFiles(const QString& location, const QStringList &nameFilters = QStringList());
+    Q_INVOKABLE QStringList getFiles(const QString &location, const QStringList &nameFilters = QStringList());
 };
 
 #endif

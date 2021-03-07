@@ -15,7 +15,8 @@
 #include <QString>
 #include <QTextStream>
 
-File::File(QObject *parent) : QObject(parent)
+File::File(QObject *parent) :
+    QObject(parent)
 {
 }
 
@@ -47,19 +48,19 @@ void File::setName(const QString &str)
     }
 }
 
-QString File::read(const QString& name)
+QString File::read(const QString &name)
 {
     if (!name.isEmpty())
         setName(name);
 
-    if (m_name.isEmpty()){
+    if (m_name.isEmpty()) {
         emit error("source is empty");
         return QString();
     }
 
     QFile file(m_name);
     QString fileContent;
-    if (file.open(QIODevice::ReadOnly) ) {
+    if (file.open(QIODevice::ReadOnly)) {
         QString line;
         QTextStream t(&file);
         /* Force utf-8 : for some languages, it seems to be loaded in other
@@ -69,17 +70,18 @@ QString File::read(const QString& name)
         do {
             line = t.readLine();
             fileContent += line;
-         } while (!line.isNull());
+        } while (!line.isNull());
 
         file.close();
-    } else {
+    }
+    else {
         emit error("Unable to open the file");
         return QString();
     }
     return fileContent;
 }
 
-bool File::write(const QString& data, const QString& name)
+bool File::write(const QString &data, const QString &name)
 {
     if (!name.isEmpty())
         setName(name);
@@ -103,7 +105,7 @@ bool File::write(const QString& data, const QString& name)
     return true;
 }
 
-bool File::append(const QString& data, const QString& name)
+bool File::append(const QString &data, const QString &name)
 {
     if (!name.isEmpty())
         setName(name);
@@ -129,18 +131,18 @@ bool File::append(const QString& data, const QString& name)
     return true;
 }
 
-bool File::exists(const QString& path)
+bool File::exists(const QString &path)
 {
     return QFile::exists(sanitizeUrl(path));
 }
 
-bool File::mkpath(const QString& path)
+bool File::mkpath(const QString &path)
 {
     QDir dir;
     return dir.mkpath(dir.filePath(sanitizeUrl(path)));
 }
 
-bool File::rmpath(const QString& path)
+bool File::rmpath(const QString &path)
 {
     return QFile::remove(sanitizeUrl(path));
 }

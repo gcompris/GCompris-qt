@@ -14,7 +14,7 @@
 
 bool ApplicationInfo::requestAudioFocus() const
 {
-  return true;
+    return true;
 }
 
 void ApplicationInfo::abandonAudioFocus() const
@@ -36,17 +36,17 @@ void ApplicationInfo::setKeepScreenOn(bool value)
     Q_UNUSED(value);
 }
 
-int ApplicationInfo::localeCompare(const QString& a, const QString& b,
-                                   const QString& locale) const
+int ApplicationInfo::localeCompare(const QString &a, const QString &b,
+                                   const QString &locale) const
 {
-    QString _locale = locale.isEmpty() ? \
-                          ApplicationSettings::getInstance()->locale() \
-                        : locale;
-    QLocale l = (_locale == GC_DEFAULT_LOCALE) ? QLocale::system() \
+    QString _locale = locale.isEmpty() ? ApplicationSettings::getInstance()->locale()
+                                       : locale;
+    QLocale l = (_locale == GC_DEFAULT_LOCALE) ? QLocale::system()
                                                : QLocale(_locale);
     return QCollator(l).compare(a, b);
 }
 
-bool ApplicationInfo::checkPermissions() const {
+bool ApplicationInfo::checkPermissions() const
+{
     return true;
 }

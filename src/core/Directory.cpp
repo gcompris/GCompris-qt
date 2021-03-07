@@ -11,11 +11,12 @@
 #include "Directory.h"
 #include <QDir>
 
-Directory::Directory(QObject *parent) : QObject(parent)
+Directory::Directory(QObject *parent) :
+    QObject(parent)
 {
 }
 
-QStringList Directory::getFiles(const QString& location, const QStringList &nameFilters)
+QStringList Directory::getFiles(const QString &location, const QStringList &nameFilters)
 {
     QDir dir(location);
     return dir.entryList(nameFilters, (QDir::NoDotAndDotDot | QDir::AllEntries));

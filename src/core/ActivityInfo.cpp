@@ -17,8 +17,8 @@
 
 #include "ApplicationSettings.h"
 
-ActivityInfo::ActivityInfo(QObject *parent):
-	QObject(parent),
+ActivityInfo::ActivityInfo(QObject *parent) :
+    QObject(parent),
     m_difficulty(0),
     m_minimalDifficulty(0),
     m_maximalDifficulty(0),
@@ -215,22 +215,23 @@ void ActivityInfo::fillDatasets(QQmlEngine *engine)
 {
     quint32 levelMin = ApplicationSettings::getInstance()->filterLevelMin();
     quint32 levelMax = ApplicationSettings::getInstance()->filterLevelMax();
-    for(const QString &level: m_levels) {
+    for (const QString &level: m_levels) {
         QString url = QString("qrc:/gcompris/src/activities/%1/resource/%2/Data.qml").arg(m_name.split('/')[0]).arg(level);
         QQmlComponent componentRoot(engine, QUrl(url));
         QObject *objectRoot = componentRoot.create();
-        if(objectRoot != nullptr) {
-            Dataset *dataset = qobject_cast<Dataset*>(objectRoot);
-            if(levelMin > dataset->difficulty() || levelMax < dataset->difficulty()) {
+        if (objectRoot != nullptr) {
+            Dataset *dataset = qobject_cast<Dataset *>(objectRoot);
+            if (levelMin > dataset->difficulty() || levelMax < dataset->difficulty()) {
                 dataset->setEnabled(false);
             }
 
             addDataset(level, dataset);
-        } else {
+        }
+        else {
             qDebug() << "ERROR: failed to load " << m_name << " " << componentRoot.errors();
         }
     }
-    if(m_levels.empty()) {
+    if (m_levels.empty()) {
         setMinimalDifficulty(m_difficulty);
         setMaximalDifficulty(m_difficulty);
     }
@@ -246,17 +247,17 @@ QStringList ActivityInfo::currentLevels() const
 
 void ActivityInfo::computeMinMaxDifficulty()
 {
-    if(m_currentLevels.empty() || m_datasets.empty()) {
+    if (m_currentLevels.empty() || m_datasets.empty()) {
         return;
     }
     quint32 minimalDifficultyFound = 100;
     quint32 maximalDifficultyFound = 0;
-    for(const QString &datasetName: m_currentLevels) {
+    for (const QString &datasetName: m_currentLevels) {
         Dataset *data = getDataset(datasetName);
-        if(minimalDifficultyFound > data->difficulty()) {
+        if (minimalDifficultyFound > data->difficulty()) {
             minimalDifficultyFound = data->difficulty();
         }
-        if(maximalDifficultyFound < data->difficulty()) {
+        if (maximalDifficultyFound < data->difficulty()) {
             maximalDifficultyFound = data->difficulty();
         }
     }
@@ -273,9 +274,9 @@ void ActivityInfo::setCurrentLevels(const QStringList &currentLevels)
 
 void ActivityInfo::setCurrentLevels()
 {
-    if(!m_name.isEmpty()) {
+    if (!m_name.isEmpty()) {
         // by default, activate all existing levels
-        if(!m_levels.empty() && ApplicationSettings::getInstance()->currentLevels(m_name).empty()) {
+        if (!m_levels.empty() && ApplicationSettings::getInstance()->currentLevels(m_name).empty()) {
             ApplicationSettings::getInstance()->setCurrentLevels(m_name, m_levels);
         }
         m_currentLevels = ApplicationSettings::getInstance()->currentLevels(m_name);
@@ -283,23 +284,24 @@ void ActivityInfo::setCurrentLevels()
     // Remove levels that could have been added in the configuration but are not existing
     // Either we rename a dataset, or after working in another branch to add dataset and switching to a branch without it
     QStringList levelsToRemove;
-    for(const QString &level: m_currentLevels) {
-        if(!m_levels.contains(level)) {
+    for (const QString &level: m_currentLevels) {
+        if (!m_levels.contains(level)) {
             qDebug() << QString("Invalid level %1 for activity %2, removing it").arg(level).arg(m_name);
             levelsToRemove << level;
         }
     }
-    for(const QString &level: levelsToRemove) {
+    for (const QString &level: levelsToRemove) {
         m_currentLevels.removeOne(level);
     }
     computeMinMaxDifficulty();
 }
 
-void ActivityInfo::enableDatasetsBetweenDifficulties(quint32 levelMin, quint32 levelMax) {
+void ActivityInfo::enableDatasetsBetweenDifficulties(quint32 levelMin, quint32 levelMax)
+{
     QStringList newLevels;
-    for(auto it = m_datasets.begin(); it != m_datasets.end(); ++ it) {
+    for (auto it = m_datasets.begin(); it != m_datasets.end(); ++it) {
         Dataset *dataset = it.value();
-        if(levelMin <= dataset->difficulty() && dataset->difficulty() <= levelMax) {
+        if (levelMin <= dataset->difficulty() && dataset->difficulty() <= levelMax) {
             newLevels << it.key();
             dataset->setEnabled(true);
         }
@@ -311,18 +313,22 @@ void ActivityInfo::enableDatasetsBetweenDifficulties(quint32 levelMin, quint32 l
     ApplicationSettings::getInstance()->setCurrentLevels(m_name, m_currentLevels, false);
 }
 
-void ActivityInfo::addDataset(const QString& name, Dataset *dataset) {
+void ActivityInfo::addDataset(const QString &name, Dataset *dataset)
+{
     m_datasets[name] = dataset;
 }
 
-Dataset *ActivityInfo::getDataset(const QString& name) const {
+Dataset *ActivityInfo::getDataset(const QString &name) const
+{
     return m_datasets[name];
 }
 
-bool ActivityInfo::hasConfig() const {
-    return QFile::exists(":/gcompris/src/activities/"+m_name.split('/')[0]+"/ActivityConfig.qml");
+bool ActivityInfo::hasConfig() const
+{
+    return QFile::exists(":/gcompris/src/activities/" + m_name.split('/')[0] + "/ActivityConfig.qml");
 }
 
-bool ActivityInfo::hasDataset() const {
+bool ActivityInfo::hasDataset() const
+{
     return !m_levels.empty();
 }

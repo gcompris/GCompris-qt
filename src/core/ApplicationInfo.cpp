@@ -33,7 +33,8 @@
 QQuickWindow *ApplicationInfo::m_window = nullptr;
 ApplicationInfo *ApplicationInfo::m_instance = nullptr;
 
-ApplicationInfo::ApplicationInfo(QObject *parent): QObject(parent)
+ApplicationInfo::ApplicationInfo(QObject *parent) :
+    QObject(parent)
 {
 
 #if defined(Q_OS_ANDROID) || defined(Q_OS_IOS) || defined(Q_OS_BLACKBERRY) || defined(SAILFISHOS) || defined(UBUNTUTOUCH)
@@ -66,7 +67,7 @@ ApplicationInfo::ApplicationInfo(QObject *parent): QObject(parent)
     m_isBox2DInstalled = false;
 
     QRect rect = qApp->primaryScreen()->geometry();
-    m_ratio = qMin(qMax(rect.width(), rect.height())/800. , qMin(rect.width(), rect.height())/520.);
+    m_ratio = qMin(qMax(rect.width(), rect.height()) / 800., qMin(rect.width(), rect.height()) / 520.);
     // calculate a factor for font-scaling, cf.
     // https://doc.qt.io/qt-5/scalability.html#calculating-scaling-ratio
     qreal refDpi = 216.;
@@ -77,9 +78,9 @@ ApplicationInfo::ApplicationInfo(QObject *parent): QObject(parent)
     qreal dpi = qApp->primaryScreen()->logicalDotsPerInch();
 
 #if defined(UBUNTUTOUCH)
-    m_fontRatio = floor(m_ratio*10) /10;
+    m_fontRatio = floor(m_ratio * 10) / 10;
 #else
-    m_fontRatio = qMax(qreal(1.0), qMin(height*refDpi/(dpi*refHeight), width*refDpi/(dpi*refWidth)));
+    m_fontRatio = qMax(qreal(1.0), qMin(height * refDpi / (dpi * refHeight), width * refDpi / (dpi * refWidth)));
 #endif
     m_isPortraitMode = m_isMobile ? rect.height() > rect.width() : false;
     m_applicationWidth = m_isMobile ? rect.width() : 1120;
@@ -96,7 +97,7 @@ ApplicationInfo::ApplicationInfo(QObject *parent): QObject(parent)
     m_excludedFonts = database.families(QFontDatabase::Symbol);
 #endif
     // Get fonts from rcc
-    const QStringList fontFilters = {"*.otf", "*.ttf"};
+    const QStringList fontFilters = { "*.otf", "*.ttf" };
     m_fontsFromRcc = QDir(":/gcompris/src/core/resource/fonts").entryList(fontFilters);
 }
 
@@ -105,7 +106,7 @@ ApplicationInfo::~ApplicationInfo()
     m_instance = nullptr;
 }
 
-bool ApplicationInfo::sensorIsSupported(const QString& sensorType)
+bool ApplicationInfo::sensorIsSupported(const QString &sensorType)
 {
     return QSensor::sensorTypes().contains(sensorType.toUtf8());
 }
@@ -153,7 +154,7 @@ QString ApplicationInfo::getAudioFilePath(const QString &file)
     QString qrcFilePath(result);
     if (qrcFilePath.startsWith("qrc")) {
         qrcFilePath.remove(0, 3);
-        QString targetFile = QStandardPaths::writableLocation(QStandardPaths::CacheLocation) + "/extracted" + qrcFilePath.mid(1,-1);
+        QString targetFile = QStandardPaths::writableLocation(QStandardPaths::CacheLocation) + "/extracted" + qrcFilePath.mid(1, -1);
         QFileInfo targetFileInfo(targetFile);
         if (!targetFileInfo.exists()) {
             QDir toDir(targetFileInfo.dir());
@@ -173,15 +174,15 @@ QString ApplicationInfo::getAudioFilePathForLocale(const QString &file,
     filename.replace("$LOCALE", localeName);
     filename.replace("$CA", CompressedAudio());
     // Absolute paths are returned as is
-    if(file.startsWith('/') || file.startsWith(QLatin1String("qrc:")) || file.startsWith(':'))
+    if (file.startsWith('/') || file.startsWith(QLatin1String("qrc:")) || file.startsWith(':'))
         return filename;
 
     // For relative paths, look into resource folders if found
     const QStringList dataPaths = getResourceDataPaths();
-    for(const QString &dataPath: dataPaths) {
-        if(QFile::exists(dataPath + '/' + filename)) {
-            if(dataPath.startsWith('/'))
-               return "file://" + dataPath + '/' + filename;
+    for (const QString &dataPath: dataPaths) {
+        if (QFile::exists(dataPath + '/' + filename)) {
+            if (dataPath.startsWith('/'))
+                return "file://" + dataPath + '/' + filename;
             else
                 return dataPath + '/' + filename;
         }
@@ -244,14 +245,15 @@ void ApplicationInfo::screenshot(const QString &file)
 
 void ApplicationInfo::notifyFullscreenChanged()
 {
-    if(ApplicationSettings::getInstance()->isFullscreen())
+    if (ApplicationSettings::getInstance()->isFullscreen())
         m_window->showFullScreen();
     else
         m_window->showNormal();
 }
 
 // Would be better to create a component importing Box2D 2.0 using QQmlContext and test if it exists but it does not work.
-void ApplicationInfo::setBox2DInstalled(const QQmlEngine &engine) {
+void ApplicationInfo::setBox2DInstalled(const QQmlEngine &engine)
+{
     /*
       QQmlContext *context = new QQmlContext(engine.rootContext());
       context->setContextObject(&myDataSet);
@@ -262,9 +264,9 @@ void ApplicationInfo::setBox2DInstalled(const QQmlEngine &engine) {
       box2dInstalled = (component != nullptr);
     */
     bool box2dInstalled = false;
-    for(const QString &folder: engine.importPathList()) {
-        if(QDir(folder).entryList().contains(QStringLiteral("Box2D.2.0"))) {
-            if(QDir(folder+"/Box2D.2.0").entryList().contains("qmldir")) {
+    for (const QString &folder: engine.importPathList()) {
+        if (QDir(folder).entryList().contains(QStringLiteral("Box2D.2.0"))) {
+            if (QDir(folder + "/Box2D.2.0").entryList().contains("qmldir")) {
                 qDebug() << "Found box2d in " << folder;
                 box2dInstalled = true;
                 break;
@@ -280,34 +282,38 @@ void ApplicationInfo::setBox2DInstalled(const QQmlEngine &engine) {
 QString ApplicationInfo::getVoicesLocale(const QString &locale)
 {
     QString _locale = locale;
-    if(_locale == GC_DEFAULT_LOCALE) {
+    if (_locale == GC_DEFAULT_LOCALE) {
         _locale = QLocale::system().name();
-        if(_locale == "C")
+        if (_locale == "C")
             _locale = "en_US";
     }
     // locales we have country-specific voices for:
+    /* clang-format off */
     if (_locale.startsWith(QLatin1String("en_GB")) ||
         _locale.startsWith(QLatin1String("en_US")) ||
         _locale.startsWith(QLatin1String("pt_BR")) ||
         _locale.startsWith(QLatin1String("zh_CN")) ||
-        _locale.startsWith(QLatin1String("zh_TW")))
+        _locale.startsWith(QLatin1String("zh_TW"))) {
         return QLocale(_locale).name();
+    }
+    /* clang-format on */
+
     // short locale for all the rest:
     return localeShort(_locale);
 }
 
 QVariantList ApplicationInfo::localeSort(QVariantList list,
-                                         const QString& locale) const
+                                         const QString &locale) const
 {
     std::sort(list.begin(), list.end(),
-              [&locale,this](const QVariant& a, const QVariant& b) {
-        return (localeCompare(a.toString(), b.toString(), locale) < 0);
-    });
+              [&locale, this](const QVariant &a, const QVariant &b) {
+                  return (localeCompare(a.toString(), b.toString(), locale) < 0);
+              });
     return list;
 }
 
 QObject *ApplicationInfo::applicationInfoProvider(QQmlEngine *engine,
-                                             QJSEngine *scriptEngine)
+                                                  QJSEngine *scriptEngine)
 {
     Q_UNUSED(engine)
     Q_UNUSED(scriptEngine)
@@ -315,7 +321,7 @@ QObject *ApplicationInfo::applicationInfoProvider(QQmlEngine *engine,
      * Connect the fullscreen change signal to applicationInfo in order to change
      * the QQuickWindow value
      */
-    ApplicationInfo* appInfo = getInstance();
+    ApplicationInfo *appInfo = getInstance();
     connect(ApplicationSettings::getInstance(), &ApplicationSettings::fullscreenChanged, appInfo,
             &ApplicationInfo::notifyFullscreenChanged);
 

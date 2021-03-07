@@ -23,12 +23,12 @@
 #include <QtQml>
 
 const QString DownloadManager::contentsFilename = QStringLiteral("Contents");
-DownloadManager* DownloadManager::_instance = nullptr;
+DownloadManager *DownloadManager::_instance = nullptr;
 
 /* Public interface: */
 
-DownloadManager::DownloadManager()
-  : accessManager(this), serverUrl(ApplicationSettings::getInstance()->downloadServerUrl())
+DownloadManager::DownloadManager() :
+    accessManager(this), serverUrl(ApplicationSettings::getInstance()->downloadServerUrl())
 {
 }
 
@@ -48,7 +48,7 @@ void DownloadManager::shutdown()
 // object but we could not found a better way to let us access DownloadManager
 // on the C++ side. All our test shows that it works.
 // Using the singleton after the QmlEngine has been destroyed is forbidden!
-DownloadManager* DownloadManager::getInstance()
+DownloadManager *DownloadManager::getInstance()
 {
     if (_instance == nullptr)
         _instance = new DownloadManager;
@@ -56,7 +56,7 @@ DownloadManager* DownloadManager::getInstance()
 }
 
 QObject *DownloadManager::downloadManagerProvider(QQmlEngine *engine,
-        QJSEngine *scriptEngine)
+                                                  QJSEngine *scriptEngine)
 {
     Q_UNUSED(engine)
     Q_UNUSED(scriptEngine)
@@ -73,13 +73,13 @@ void DownloadManager::abortDownloads()
 {
     if (downloadIsRunning()) {
         QMutexLocker locker(&jobsMutex);
-        QMutableListIterator<DownloadJob*> iter(activeJobs);
+        QMutableListIterator<DownloadJob *> iter(activeJobs);
         while (iter.hasNext()) {
             DownloadJob *job = iter.next();
             if (!job->downloadFinished && job->reply != nullptr) {
                 disconnect(job->reply, SIGNAL(finished()), this, SLOT(downloadFinished()));
                 disconnect(job->reply, SIGNAL(error(QNetworkReply::NetworkError)),
-                        this, SLOT(handleError(QNetworkReply::NetworkError)));
+                           this, SLOT(handleError(QNetworkReply::NetworkError)));
                 if (job->reply->isRunning()) {
                     qDebug() << "Aborting download job:" << job->url;
                     job->reply->abort();
@@ -96,10 +96,10 @@ void DownloadManager::abortDownloads()
     }
 }
 
-QString DownloadManager::getVoicesResourceForLocale(const QString& locale) const
+QString DownloadManager::getVoicesResourceForLocale(const QString &locale) const
 {
     return QString("data2/voices-" COMPRESSED_AUDIO "/voices-%1.rcc")
-            .arg(ApplicationInfo::getInstance()->getVoicesLocale(locale));
+        .arg(ApplicationInfo::getInstance()->getVoicesLocale(locale));
 }
 
 QString DownloadManager::getBackgroundMusicResources() const
@@ -107,9 +107,9 @@ QString DownloadManager::getBackgroundMusicResources() const
     return QString("data2/backgroundMusic/backgroundMusic-" COMPRESSED_AUDIO ".rcc");
 }
 
-inline QString DownloadManager::getAbsoluteResourcePath(const QString& path) const
+inline QString DownloadManager::getAbsoluteResourcePath(const QString &path) const
 {
-    for (const QString &base : getSystemResourcePaths()) {
+    for (const QString &base: getSystemResourcePaths()) {
         if (QFile::exists(base + '/' + path))
             return QString(base + '/' + path);
     }
@@ -117,7 +117,7 @@ inline QString DownloadManager::getAbsoluteResourcePath(const QString& path) con
 }
 
 // @FIXME should support a variable subpath length like data2/full.rcc"
-inline QString DownloadManager::getRelativeResourcePath(const QString& path) const
+inline QString DownloadManager::getRelativeResourcePath(const QString &path) const
 {
 #if QT_VERSION >= QT_VERSION_CHECK(5, 15, 0)
     QStringList parts = path.split('/', Qt::SkipEmptyParts);
@@ -126,19 +126,19 @@ inline QString DownloadManager::getRelativeResourcePath(const QString& path) con
 #endif
     if (parts.size() < 3)
         return QString();
-    return QString(parts[parts.size()-3] + '/' + parts[parts.size()-2]
-                   + '/' + parts[parts.size()-1]);
+    return QString(parts[parts.size() - 3] + '/' + parts[parts.size() - 2]
+                   + '/' + parts[parts.size() - 1]);
 }
 
-bool DownloadManager::haveLocalResource(const QString& path) const
+bool DownloadManager::haveLocalResource(const QString &path) const
 {
     return (!getAbsoluteResourcePath(path).isEmpty());
 }
 
-bool DownloadManager::updateResource(const QString& path)
+bool DownloadManager::updateResource(const QString &path)
 {
     if (checkDownloadRestriction())
-        return downloadResource(path);  // check for updates and register
+        return downloadResource(path); // check for updates and register
 
     QString absPath = getAbsoluteResourcePath(path);
     // automatic download prohibited -> register if available
@@ -150,9 +150,9 @@ bool DownloadManager::updateResource(const QString& path)
     return false;
 }
 
-bool DownloadManager::downloadResource(const QString& path)
+bool DownloadManager::downloadResource(const QString &path)
 {
-    DownloadJob* job = nullptr;
+    DownloadJob *job = nullptr;
     {
         QMutexLocker locker(&jobsMutex);
         QUrl url(serverUrl.toString() + '/' + path);
@@ -187,7 +187,7 @@ inline QString DownloadManager::filenameForTempFilename(const QString &tempFilen
     return tempFilename;
 }
 
-bool DownloadManager::download(DownloadJob* job)
+bool DownloadManager::download(DownloadJob *job)
 {
     QNetworkRequest request;
 
@@ -195,7 +195,7 @@ bool DownloadManager::download(DownloadJob* job)
     if (!job->contents.contains(job->url.fileName())) {
         int len = job->url.fileName().length();
         QUrl contentsUrl = QUrl(job->url.toString().remove(job->url.toString().length() - len, len)
-                + contentsFilename);
+                                + contentsFilename);
         if (!job->knownContentsUrls.contains(contentsUrl)) {
             // Note: need to track already tried Contents files or we can end
             // up in an infinite loop if corresponding Contents file does not
@@ -219,7 +219,7 @@ bool DownloadManager::download(DownloadJob* job)
     job->file.setFileName(tempFilenameForFilename(fi.filePath()));
     if (!job->file.open(QIODevice::WriteOnly)) {
         emit error(QNetworkReply::ProtocolUnknownError,
-                QObject::tr("Could not open target file %1").arg(job->file.fileName()));
+                   QObject::tr("Could not open target file %1").arg(job->file.fileName()));
         return false;
     }
 
@@ -241,37 +241,37 @@ bool DownloadManager::download(DownloadJob* job)
     return true;
 }
 
-inline DownloadManager::DownloadJob* DownloadManager::getJobByUrl_locked(const QUrl& url) const
+inline DownloadManager::DownloadJob *DownloadManager::getJobByUrl_locked(const QUrl &url) const
 {
-    for (auto activeJob : activeJobs)
+    for (auto activeJob: activeJobs)
         if (activeJob->url == url || activeJob->queue.indexOf(url) != -1)
             return activeJob;
     return nullptr;
 }
 
-inline DownloadManager::DownloadJob* DownloadManager::getJobByReply(QNetworkReply *r)
+inline DownloadManager::DownloadJob *DownloadManager::getJobByReply(QNetworkReply *r)
 {
     QMutexLocker locker(&jobsMutex);
-    for (auto activeJob : activeJobs)
+    for (auto activeJob: activeJobs)
         if (activeJob->reply == r)
             return activeJob;
-    return nullptr;  // should never happen!
+    return nullptr; // should never happen!
 }
 
 void DownloadManager::downloadReadyRead()
 {
-    QNetworkReply *reply = dynamic_cast<QNetworkReply*>(sender());
+    QNetworkReply *reply = dynamic_cast<QNetworkReply *>(sender());
     DownloadJob *job = getJobByReply(reply);
     job->file.write(reply->readAll());
 }
 
-inline QString DownloadManager::getFilenameForUrl(const QUrl& url) const
+inline QString DownloadManager::getFilenameForUrl(const QUrl &url) const
 {
     QString relPart = url.toString().remove(0, serverUrl.toString().length());
     return QString(getSystemDownloadPath() + relPart);
 }
 
-inline QUrl DownloadManager::getUrlForFilename(const QString& filename) const
+inline QUrl DownloadManager::getUrlForFilename(const QString &filename) const
 {
     return QUrl(serverUrl.toString() + '/' + getRelativeResourcePath(filename));
 }
@@ -286,16 +286,15 @@ inline QStringList DownloadManager::getSystemResourcePaths() const
 
     QStringList results({
         QCoreApplication::applicationDirPath() + '/' + QString(GCOMPRIS_DATA_FOLDER) + "/rcc/",
-        getSystemDownloadPath(),
-        QStandardPaths::writableLocation(QStandardPaths::CacheLocation),
+            getSystemDownloadPath(),
+            QStandardPaths::writableLocation(QStandardPaths::CacheLocation),
 #if defined(Q_OS_ANDROID)
-        "assets:",
+            "assets:",
 #endif
 #if defined(UBUNTUTOUCH)
-        QStandardPaths::writableLocation(QStandardPaths::AppDataLocation) + '/' + GCOMPRIS_APPLICATION_NAME
+            QStandardPaths::writableLocation(QStandardPaths::AppDataLocation) + '/' + GCOMPRIS_APPLICATION_NAME
 #else
-        QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) +
-            '/' + GCOMPRIS_APPLICATION_NAME
+            QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + '/' + GCOMPRIS_APPLICATION_NAME
 #endif
     });
 
@@ -318,14 +317,13 @@ bool DownloadManager::checkDownloadRestriction() const
         return false;
     return true;
 #endif
-    return ApplicationSettings::getInstance()->isAutomaticDownloadsEnabled() &&
-            ApplicationInfo::getInstance()->isDownloadAllowed();
+    return ApplicationSettings::getInstance()->isAutomaticDownloadsEnabled() && ApplicationInfo::getInstance()->isDownloadAllowed();
 }
 
 void DownloadManager::handleError(QNetworkReply::NetworkError code)
 {
     Q_UNUSED(code);
-    QNetworkReply *reply = dynamic_cast<QNetworkReply*>(sender());
+    QNetworkReply *reply = dynamic_cast<QNetworkReply *>(sender());
     qDebug() << reply->errorString() << " " << reply->error();
     emit error(reply->error(), reply->errorString());
 }
@@ -364,7 +362,7 @@ bool DownloadManager::parseContents(DownloadJob *job)
     return true;
 }
 
-bool DownloadManager::checksumMatches(DownloadJob *job, const QString& filename) const
+bool DownloadManager::checksumMatches(DownloadJob *job, const QString &filename) const
 {
     Q_ASSERT(!job->contents.empty());
 
@@ -389,17 +387,17 @@ bool DownloadManager::checksumMatches(DownloadJob *job, const QString& filename)
     return (fileHash == job->contents[basename]);
 }
 
-void DownloadManager::unregisterResource_locked(const QString& filename)
+void DownloadManager::unregisterResource_locked(const QString &filename)
 {
     if (!QResource::unregisterResource(filename))
-            qDebug() << "Error unregistering resource file" << filename;
+        qDebug() << "Error unregistering resource file" << filename;
     else {
         qDebug() << "Successfully unregistered resource file" << filename;
         registeredResources.removeOne(filename);
     }
 }
 
-inline bool DownloadManager::isRegistered(const QString& filename) const
+inline bool DownloadManager::isRegistered(const QString &filename) const
 {
     return (registeredResources.indexOf(filename) != -1);
 }
@@ -407,7 +405,7 @@ inline bool DownloadManager::isRegistered(const QString& filename) const
 /*
  * Registers an rcc file given by absolute path
  */
-bool DownloadManager::registerResourceAbsolute(const QString& filename)
+bool DownloadManager::registerResourceAbsolute(const QString &filename)
 {
     QMutexLocker locker(&rcMutex);
     if (isRegistered(filename))
@@ -428,12 +426,12 @@ bool DownloadManager::registerResourceAbsolute(const QString& filename)
     emit resourceRegistered(getRelativeResourcePath(filename));
 
     QString v = getVoicesResourceForLocale(
-                ApplicationSettings::getInstance()->locale());
+        ApplicationSettings::getInstance()->locale());
     QString musicPath = getBackgroundMusicResources();
 
     if (v == getRelativeResourcePath(filename))
         emit voicesRegistered();
-    else if(musicPath == getRelativeResourcePath(filename))
+    else if (musicPath == getRelativeResourcePath(filename))
         emit backgroundMusicRegistered();
     return true;
 }
@@ -441,12 +439,12 @@ bool DownloadManager::registerResourceAbsolute(const QString& filename)
 /*
  * Registers an rcc file given by a relative resource path
  */
-bool DownloadManager::registerResource(const QString& filename)
+bool DownloadManager::registerResource(const QString &filename)
 {
     return registerResourceAbsolute(getAbsoluteResourcePath(filename));
 }
 
-bool DownloadManager::isDataRegistered(const QString& data) const
+bool DownloadManager::isDataRegistered(const QString &data) const
 {
     QString res = QString(":/gcompris/data/%1").arg(data);
     return !QDir(res).entryList().empty();
@@ -454,29 +452,29 @@ bool DownloadManager::isDataRegistered(const QString& data) const
 
 bool DownloadManager::areVoicesRegistered() const
 {
-    QString resource = QString("voices-" COMPRESSED_AUDIO "/%1").
-            arg(ApplicationInfo::getInstance()->getVoicesLocale(ApplicationSettings::getInstance()->locale()));
+    QString resource = QString("voices-" COMPRESSED_AUDIO "/%1").arg(ApplicationInfo::getInstance()->getVoicesLocale(ApplicationSettings::getInstance()->locale()));
     return isDataRegistered(resource);
 }
 
-void DownloadManager::downloadInProgress(qint64 bytesReceived, qint64 bytesTotal) {
-    QNetworkReply *reply = dynamic_cast<QNetworkReply*>(sender());
+void DownloadManager::downloadInProgress(qint64 bytesReceived, qint64 bytesTotal)
+{
+    QNetworkReply *reply = dynamic_cast<QNetworkReply *>(sender());
     DownloadJob *job = nullptr;
     // don't call getJobByReply to not cause deadlock with mutex
-    for (auto activeJob : activeJobs) {
+    for (auto activeJob: activeJobs) {
         if (activeJob->reply == reply) {
             job = activeJob;
             break;
         }
     }
-    if(!job) {
+    if (!job) {
         return;
     }
     job->bytesReceived = bytesReceived;
     job->bytesTotal = bytesTotal;
     qint64 allJobsBytesReceived = 0;
     qint64 allJobsBytesTotal = 0;
-    for (auto activeJob : activeJobs) {
+    for (auto activeJob: activeJobs) {
         allJobsBytesReceived += activeJob->bytesReceived;
         allJobsBytesTotal += activeJob->bytesTotal;
     }
@@ -485,12 +483,12 @@ void DownloadManager::downloadInProgress(qint64 bytesReceived, qint64 bytesTotal
 
 void DownloadManager::downloadFinished()
 {
-    QNetworkReply* reply = dynamic_cast<QNetworkReply*>(sender());
+    QNetworkReply *reply = dynamic_cast<QNetworkReply *>(sender());
     DownloadFinishedCode code = Success;
     DownloadJob *job = getJobByReply(reply);
     bool allFinished = false;
     if (job->file.isOpen()) {
-        job->file.flush();  // note: important, or checksums might be wrong!
+        job->file.flush(); // note: important, or checksums might be wrong!
         job->file.close();
     }
 
@@ -513,7 +511,7 @@ void DownloadManager::downloadFinished()
         // Contents
         if (reply->error() != 0) {
             qWarning() << "Error downloading Contents from" << job->url
-                    << ":" << reply->error() << ":" << reply->errorString();
+                       << ":" << reply->error() << ":" << reply->errorString();
             // note: errorHandler() emit's error!
             goto outError;
         }
@@ -523,12 +521,13 @@ void DownloadManager::downloadFinished()
             emit error(QNetworkReply::UnknownContentError, QObject::tr("Invalid format of Contents file"));
             goto outError;
         }
-    } else {
+    }
+    else {
         QUrl redirect = reply->attribute(QNetworkRequest::RedirectionTargetAttribute).toUrl();
         // RCC file
         if (reply->error() != 0) {
             qWarning() << "Error downloading RCC file from " << job->url
-                << ":" << reply->error() << ":" << reply->errorString();
+                       << ":" << reply->error() << ":" << reply->errorString();
             // note: errorHandler() emit's error!
             code = Error;
             // register already existing files (if not yet done):
@@ -542,7 +541,7 @@ void DownloadManager::downloadFinished()
             qWarning() << QString("The url %1 does not exist.").arg(job->url.toString());
             emit error(QNetworkReply::UnknownContentError,
                        QObject::tr("The url %1 does not exist.")
-                       .arg(job->url.toString()));
+                           .arg(job->url.toString()));
             code = Error;
             if (QFile::exists(targetFilename)) {
                 QFile::remove(targetFilename);
@@ -552,12 +551,13 @@ void DownloadManager::downloadFinished()
             qDebug() << "Download of RCC file finished successfully: " << job->url;
             if (!checksumMatches(job, targetFilename)) {
                 qWarning() << "Checksum of downloaded file does not match: "
-                        << targetFilename;
+                           << targetFilename;
                 emit error(QNetworkReply::UnknownContentError,
-                        QObject::tr("Checksum of downloaded file does not match: %1")
-                            .arg(targetFilename));
+                           QObject::tr("Checksum of downloaded file does not match: %1")
+                               .arg(targetFilename));
                 code = Error;
-            } else
+            }
+            else
                 registerResourceAbsolute(targetFilename);
         }
     }
@@ -567,24 +567,23 @@ void DownloadManager::downloadFinished()
         job->url = job->queue.takeFirst();
         QString relPath = getRelativeResourcePath(getFilenameForUrl(job->url));
         // check in each resource-path for an up2date rcc file:
-        for (const QString &base : getSystemResourcePaths()) {
+        for (const QString &base: getSystemResourcePaths()) {
             QString filename = base + '/' + relPath;
             if (QFile::exists(filename)
-                && checksumMatches(job, filename))
-            {
+                && checksumMatches(job, filename)) {
                 // file is up2date, register! necessary:
                 qDebug() << "Local resource is up-to-date:"
-                        << QFileInfo(filename).fileName();
-                if (!isRegistered(filename))  // no update and already registered -> noop
+                         << QFileInfo(filename).fileName();
+                if (!isRegistered(filename)) // no update and already registered -> noop
                     registerResourceAbsolute(filename);
                 code = NoChange;
                 break;
             }
         }
-        if (code != NoChange)  // nothing is up2date locally -> download it
+        if (code != NoChange) // nothing is up2date locally -> download it
             if (download(job))
                 goto outNext;
-        }
+    }
 
     // none left, DownloadJob finished
     job->downloadFinished = true;
@@ -595,13 +594,13 @@ void DownloadManager::downloadFinished()
     reply->deleteLater();
 
     allFinished = std::all_of(activeJobs.constBegin(), activeJobs.constEnd(),
-                              [](const DownloadJob* job) { return job->downloadFinished;});
-    if(allFinished) {
+                              [](const DownloadJob *job) { return job->downloadFinished; });
+    if (allFinished) {
         QMutexLocker locker(&jobsMutex);
         DownloadFinishedCode allCode = Success;
         std::for_each(activeJobs.constBegin(), activeJobs.constEnd(),
-                      [&allCode] (const DownloadJob *job) {
-                          if(job->downloadResult == Error)
+                      [&allCode](const DownloadJob *job) {
+                          if (job->downloadResult == Error)
                               allCode = Error;
                           delete job;
                       });
@@ -610,7 +609,7 @@ void DownloadManager::downloadFinished()
     }
     return;
 
-  outError:
+outError:
     if (job->url.fileName() == contentsFilename) {
         // if we could not download the contents file register local existing
         // files for outstanding jobs:
@@ -622,7 +621,7 @@ void DownloadManager::downloadFinished()
                 QString filename = base + '/' + relPath;
                 if (QFile::exists(filename))
                     registerResourceAbsolute(filename);
-                }
+            }
         }
     }
 
@@ -638,7 +637,7 @@ void DownloadManager::downloadFinished()
     delete job;
     return;
 
-  outNext:
+outNext:
     // next sub-job started
     reply->deleteLater();
     return;

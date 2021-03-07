@@ -73,39 +73,40 @@ class DownloadManager : public QObject
     Q_OBJECT
 
 private:
-    DownloadManager();  // prohibit external creation, we are a singleton!
-    static DownloadManager* _instance;  // singleton instance
+    DownloadManager(); // prohibit external creation, we are a singleton!
+    static DownloadManager *_instance; // singleton instance
 
     /** Container for a full download job */
     typedef struct DownloadJob
     {
-        QUrl url;              ///< url of the currently running sub-job
-        QFile file;            ///< target file for the currently running sub-job
-        QNetworkReply *reply;  ///< reply object for the currently running sub-job
-        QList<QUrl> queue;     ///< q of remaining sub jobs (QList for convenience)
-        QMap<QString,QString> contents;  ///< checksum map for download verification
-        QList<QUrl> knownContentsUrls;   ///< store already tried upstream Contents files (for infinite loop protection)
+        QUrl url; ///< url of the currently running sub-job
+        QFile file; ///< target file for the currently running sub-job
+        QNetworkReply *reply; ///< reply object for the currently running sub-job
+        QList<QUrl> queue; ///< q of remaining sub jobs (QList for convenience)
+        QMap<QString, QString> contents; ///< checksum map for download verification
+        QList<QUrl> knownContentsUrls; ///< store already tried upstream Contents files (for infinite loop protection)
 
         qint64 bytesReceived;
         qint64 bytesTotal;
         bool downloadFinished;
         int downloadResult;
-        DownloadJob(const QUrl &u = QUrl()) : url(u), file(), reply(0),
-                                              queue(QList<QUrl>()),
-                                              bytesReceived(0),
-                                              bytesTotal(0),
-                                              downloadFinished(false),
-                                              downloadResult(0) {}
+        DownloadJob(const QUrl &u = QUrl()) :
+            url(u), file(), reply(0),
+            queue(QList<QUrl>()),
+            bytesReceived(0),
+            bytesTotal(0),
+            downloadFinished(false),
+            downloadResult(0) { }
     } DownloadJob;
 
-    QList<DownloadJob*> activeJobs;  ///< track active jobs to allow for parallel downloads
-    QMutex jobsMutex;       ///< not sure if we need to expect concurrent access, better lockit!
+    QList<DownloadJob *> activeJobs; ///< track active jobs to allow for parallel downloads
+    QMutex jobsMutex; ///< not sure if we need to expect concurrent access, better lockit!
 
     static const QString contentsFilename;
     static const QCryptographicHash::Algorithm hashMethod = QCryptographicHash::Md5;
 
     QList<QString> registeredResources;
-    QMutex rcMutex;        ///< not sure if we need to expect concurrent access, better lockit!
+    QMutex rcMutex; ///< not sure if we need to expect concurrent access, better lockit!
 
     QNetworkAccessManager accessManager;
     QUrl serverUrl;
@@ -143,9 +144,9 @@ private:
      *             - /usr/share/KDE/gcompris-qt
      */
     QStringList getSystemResourcePaths() const;
-    QString getResourceRootForFilename(const QString& filename) const;
-    QString getFilenameForUrl(const QUrl& url) const;
-    QUrl getUrlForFilename(const QString& filename) const;
+    QString getResourceRootForFilename(const QString &filename) const;
+    QString getFilenameForUrl(const QUrl &url) const;
+    QUrl getUrlForFilename(const QString &filename) const;
 
     /**
      * Transforms the passed relative path to an absolute resource path of an
@@ -154,7 +155,7 @@ private:
      * @returns The absolute path of the .rcc file if it exists, QString()
      *          otherwise
      */
-    QString getAbsoluteResourcePath(const QString& path) const;
+    QString getAbsoluteResourcePath(const QString &path) const;
 
     /**
      * Transforms the passed absolute path to a relative resource path if
@@ -162,32 +163,32 @@ private:
      *
      * @returns The relative path if it could be generated, QString() otherwise.
      */
-    QString getRelativeResourcePath(const QString& path) const;
+    QString getRelativeResourcePath(const QString &path) const;
     QString tempFilenameForFilename(const QString &filename) const;
     QString filenameForTempFilename(const QString &tempFilename) const;
 
     bool checkDownloadRestriction() const;
-    DownloadJob* getJobByReply(QNetworkReply *r);
-    DownloadJob* getJobByUrl_locked(const QUrl& url) const;
+    DownloadJob *getJobByReply(QNetworkReply *r);
+    DownloadJob *getJobByUrl_locked(const QUrl &url) const;
 
     /** Start a new download specified by the passed DownloadJob */
-    bool download(DownloadJob* job);
+    bool download(DownloadJob *job);
 
     /** Parses upstream Contents file and build checksum map. */
     bool parseContents(DownloadJob *job);
 
     /** Compares the checksum of the file in filename with the contents map in
      * the passed DownloadJob */
-    bool checksumMatches(DownloadJob *job, const QString& filename) const;
+    bool checksumMatches(DownloadJob *job, const QString &filename) const;
 
-    bool registerResourceAbsolute(const QString& filename);
+    bool registerResourceAbsolute(const QString &filename);
 
     /** Unregisters the passed resource
      *
      * Caller must lock rcMutex.
      */
-    void unregisterResource_locked(const QString& filename);
-    bool isRegistered(const QString& filename) const;
+    void unregisterResource_locked(const QString &filename);
+    bool isRegistered(const QString &filename) const;
 
 #if 0
     QStringList getLocalResources();
@@ -211,9 +212,9 @@ public:
      * Possible return codes of a finished download
      */
     enum DownloadFinishedCode {
-        Success = 0,  /**< Download finished successfully */
-        Error   = 1,  /**< Download error */
-        NoChange = 2  /**< Local files are up-to-date, no download was needed */
+        Success = 0, /**< Download finished successfully */
+        Error = 1, /**< Download error */
+        NoChange = 2 /**< Local files are up-to-date, no download was needed */
     };
 
     virtual ~DownloadManager();
@@ -223,7 +224,7 @@ public:
      */
     static QObject *downloadManagerProvider(QQmlEngine *engine,
                                             QJSEngine *scriptEngine);
-    static DownloadManager* getInstance();
+    static DownloadManager *getInstance();
 
     /**
      * Generates a relative voices resources file-path for a given @p locale.
@@ -232,7 +233,7 @@ public:
      *
      * @returns A relative voices resource path.
      */
-    Q_INVOKABLE QString getVoicesResourceForLocale(const QString& locale) const;
+    Q_INVOKABLE QString getVoicesResourceForLocale(const QString &locale) const;
 
     // @returns A relative background music resource path.
     Q_INVOKABLE QString getBackgroundMusicResources() const;
@@ -241,7 +242,7 @@ public:
      *
      * @param path A relative resource path.
      */
-    Q_INVOKABLE bool haveLocalResource(const QString& path) const;
+    Q_INVOKABLE bool haveLocalResource(const QString &path) const;
 
     /**
      * Whether any download is currently running.
@@ -259,8 +260,7 @@ public:
      *
      * @sa areVoicesRegistered
      */
-    Q_INVOKABLE bool isDataRegistered(const QString& data) const;
-
+    Q_INVOKABLE bool isDataRegistered(const QString &data) const;
 
     /**
      * Whether voices for the currently active locale are registered.
@@ -274,7 +274,7 @@ public:
      *
      * @param filename  Relative resource path.
      */
-    Q_INVOKABLE bool registerResource(const QString& filename);
+    Q_INVOKABLE bool registerResource(const QString &filename);
 
 public slots:
 
@@ -303,7 +303,7 @@ public slots:
      *
      * @returns success
      */
-    Q_INVOKABLE bool updateResource(const QString& path);
+    Q_INVOKABLE bool updateResource(const QString &path);
 
     /**
      * Download a resource specified by the relative resource @p path and
@@ -317,7 +317,7 @@ public slots:
      *
      * @returns success
      */
-    Q_INVOKABLE bool downloadResource(const QString& path);
+    Q_INVOKABLE bool downloadResource(const QString &path);
 
     /**
      * Shutdown DownloadManager instance.
@@ -343,13 +343,13 @@ signals:
      * @param code enum NetworkError code.
      * @param msg Error string.
      */
-    void error(int code, const QString& msg);
+    void error(int code, const QString &msg);
 
     /** Emitted when a download has started.
      *
      * @param resource Relative resource path of the started download.
      */
-    void downloadStarted(const QString& resource);
+    void downloadStarted(const QString &resource);
 
     /** Emitted during a running download.
      *
@@ -383,7 +383,7 @@ signals:
      *
      * @sa voicesRegistered
      */
-    void resourceRegistered(const QString& resource);
+    void resourceRegistered(const QString &resource);
 
     /** Emitted when voices resources for current locale have been registered.
      *

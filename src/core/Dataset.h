@@ -27,7 +27,8 @@
  *
  * @sa ActivityInfo
  */
-class Dataset : public QObject {
+class Dataset : public QObject
+{
     Q_OBJECT
 
     /**
