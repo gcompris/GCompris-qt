@@ -268,10 +268,10 @@ Data {
                 "randomisedInputData": false,
                 "totalBoys": 2,
                 "totalGirls": 2,
-                "totalCandies": 14,
+                "totalCandies": 16,
                 "forceShowBasket": false,
                 "placedInGirls": 0,
-                "placedInBoys": 0
+                "placedInBoys": 2
             },
             {
                 "instruction": qsTr("Maria wants to equally share 25 pieces of candy between 5 of her friends: 3 girls and 2 boys. Can she equally split the pieces of candy? First, place the children in the center, then drag the pieces of candy to each of them."),
