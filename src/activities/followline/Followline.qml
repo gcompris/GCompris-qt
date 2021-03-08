@@ -49,6 +49,7 @@ ActivityBase {
         }
 
         onHeightChanged: Activity.initLevel()
+        onWidthChanged: Activity.initLevel()
 
         onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
