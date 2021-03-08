@@ -67,7 +67,7 @@ function initLevel() {
             direction = - directionStep
         else if(angle < - Math.PI / 4)
             direction = directionStep
-        if(y > items.fire.y-items.fire.height/2)
+        if(y > items.fire.y-items.fire.height)
             direction = - directionStep
         else if(y < items.background.height * 0.3)
             direction = directionStep
