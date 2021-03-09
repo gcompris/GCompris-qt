@@ -20,12 +20,14 @@
  */
 import QtQuick 2.6
 import "../../core"
+import "followline.js" as Activity
 
 Item {
     id: part
     property QtObject items
-    property int index
+    property int index: 0
     property GCSfx audioEffects
+    property bool isPart: true
 
     Rectangle {
         anchors.horizontalCenter: parent.horizontalCenter
@@ -57,14 +59,17 @@ Item {
             anchors.fill: parent
             hoverEnabled: true
             onEntered: {
-                if(part.items.currentLock == part.index) {
-                    part.items.currentLock++
+                if(part.items.currentLock <= part.index && !Activity.movedOut) {
+                    part.items.currentLock = part.index
                     if(part.items.currentLock >= part.items.lastLock) {
                         audioEffects.play("qrc:/gcompris/src/core/resource/sounds/water.wav")
                         items.background.win()
                     } else {
-                        audioEffects.play("qrc:/gcompris/src/core/resource/sounds/darken.wav")
+                        Activity.playAudioFx();
                     }
+                } else if(part.items.currentLock >= part.index && Activity.movedOut) {
+                    items.lineBrokenTimer.stop();
+                    Activity.movedOut = false;
                 }
             }
         }
