@@ -23,12 +23,14 @@ import GCompris 1.0
 Data {
     objective: qsTr("Maximum 30 candies and 6 kids, possible rest.")
     difficulty: 5
+    // NOTE: don't put maxBoys or maxGirls less than 1,
+    // and don't make maxBoys + maxGirls more than maximum kids (6 here)
     data:  [
         [
             {
                 "randomisedInputData": true,
-                "maxBoys": 0,
-                "maxGirls": 4,
+                "maxBoys": 1,
+                "maxGirls": 3,
                 "maxCandies": 6,
                 "alreadyPlaced": false
             },
@@ -64,8 +66,8 @@ Data {
         [
             {
                 "randomisedInputData": true,
-                "maxBoys": 0,
-                "maxGirls": 4,
+                "maxBoys": 1,
+                "maxGirls": 3,
                 "maxCandies": 6,
                 "alreadyPlaced": false
             },
@@ -101,46 +103,46 @@ Data {
         [
             {
                 "randomisedInputData": true,
-                "maxBoys": 0,
-                "maxGirls": 5,
-                "maxCandies": 10,
-                "alreadyPlaced": false
-            },
-            {
-                "randomisedInputData": true,
-                "maxBoys": 2,
-                "maxGirls": 3,
-                "maxCandies": 14,
-                "alreadyPlaced": false
-            },
-            {
-                "randomisedInputData": true,
-                "maxBoys": 3,
-                "maxGirls": 2,
-                "maxCandies": 18,
-                "alreadyPlaced": false
-            },
-            {
-                "randomisedInputData": true,
-                "maxBoys": 2,
-                "maxGirls": 3,
-                "maxCandies": 22,
-                "alreadyPlaced": false
-            },
-            {
-                "randomisedInputData": true,
-                "maxBoys": 2,
-                "maxGirls": 2,
-                "maxCandies": 26,
-                "alreadyPlaced": false
-            }
-        ],
-        [
-            {
-                "randomisedInputData": true,
-                "maxBoys": 0,
+                "maxBoys": 1,
                 "maxGirls": 4,
                 "maxCandies": 10,
+                "alreadyPlaced": false
+            },
+            {
+                "randomisedInputData": true,
+                "maxBoys": 2,
+                "maxGirls": 3,
+                "maxCandies": 14,
+                "alreadyPlaced": false
+            },
+            {
+                "randomisedInputData": true,
+                "maxBoys": 3,
+                "maxGirls": 2,
+                "maxCandies": 18,
+                "alreadyPlaced": false
+            },
+            {
+                "randomisedInputData": true,
+                "maxBoys": 2,
+                "maxGirls": 3,
+                "maxCandies": 22,
+                "alreadyPlaced": false
+            },
+            {
+                "randomisedInputData": true,
+                "maxBoys": 2,
+                "maxGirls": 2,
+                "maxCandies": 26,
+                "alreadyPlaced": false
+            }
+        ],
+        [
+            {
+                "randomisedInputData": true,
+                "maxBoys": 1,
+                "maxGirls": 3,
+                "maxCandies": 10,
                 "alreadyPlaced": true
             },
             {
@@ -175,8 +177,8 @@ Data {
         [
             {
                 "randomisedInputData": true,
-                "maxBoys": 0,
-                "maxGirls": 6,
+                "maxBoys": 1,
+                "maxGirls": 5,
                 "maxCandies": 12,
                 "alreadyPlaced": true
             },
