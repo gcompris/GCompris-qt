@@ -55,7 +55,7 @@ ActivityBase {
             property int barHeightAddon: ApplicationSettings.isBarHidden ? 1 : 3
             property int cellSize: Math.round(Math.min(background.width / 12, background.height / (11 + barHeightAddon)))
             property alias repeaterDropAreas: repeaterDropAreas
-            property int maxNumberOfCandiesPerWidget: 8
+            property int maxNumberOfCandiesPerWidget: 6
         }
 
         onStart: { Activity.start(items) }
