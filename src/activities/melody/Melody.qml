@@ -31,13 +31,10 @@ ActivityBase {
     onStop: {}
     isMusicalActivity: true
 
-    pageComponent: Image {
+    pageComponent: Rectangle {
         id: background
         anchors.fill: parent
-        source: items.url + 'xylofon_background.svg'
-        sourceSize.width: width
-        sourceSize.height: height
-        fillMode: Image.PreserveAspectCrop
+        color: "#ABCDEF"
 
         // if audio is disabled, we display a dialog to tell users this activity requires audio anyway
         property bool audioDisabled: false
@@ -81,14 +78,23 @@ ActivityBase {
             items.running = false
         }
 
+        Item {
+            id: layoutArea
+            width: parent.width
+            height: parent.height - bar.height * 1.5 - score.height * 1.3
+            anchors.top: score.bottom
+            anchors.left: parent.left
+        }
+
         Image {
             id: xylofon
             anchors {
-                fill: parent
+                fill: layoutArea
                 margins: 10 * ApplicationInfo.ratio
             }
             source: items.url + 'xylofon.svg'
-            sourceSize.width: parent.width * 0.7
+            sourceSize.width: width
+            sourceSize.height: height
             fillMode: Image.PreserveAspectFit
         }
 
@@ -128,7 +134,8 @@ ActivityBase {
 
                 MouseArea {
                     anchors.fill: parent
-                    enabled: !questionPlayer.running
+                    enabled: !questionPlayer.running && !knock.running && !introDelay.running
+                              && !anim.running && !bonus.isPlaying
                     onClicked: {
                         anim.start()
                         background.playNote(index)
@@ -275,9 +282,9 @@ ActivityBase {
 
         function checkAnswer() {
             if(items.answer.join() == items.question.join())
-                bonus.good('lion')
+                bonus.good('note')
             else if(items.answer.length >= items.question.length)
-                bonus.bad('lion')
+                bonus.bad('note')
         }
 
         Loader {
