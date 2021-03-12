@@ -46,6 +46,10 @@ Data {
         [
             //Romania
             "qrc:/gcompris/src/activities/geo-country/resource/board/board16_0.qml"
+        ],
+        [
+            //Lithuania
+            "qrc:/gcompris/src/activities/geo-country/resource/board/board17_0.qml"
         ]
     ]
 }
