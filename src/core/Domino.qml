@@ -52,12 +52,12 @@ Flipable {
     property int valueMax: 9
 
     // Domino style
-    property color color: "white"
-    property color borderColor: "black"
+    property color color: "#f8f8f8"
+    property color borderColor: "#373737"
     property int borderWidth: 2
     property int radius: width * 0.05
-    property color backColor: "white"
-    property color pointColor: "black"
+    property color backColor: "#f8f8f8"
+    property color pointColor: "#373737"
 
     // Define the mode/representation of domino
     property string mode: "dot"
@@ -90,7 +90,7 @@ Flipable {
         anchors.fill: parent
         smooth: true;
         color: flipable.color
-        border.color: "black"
+        border.color: flipable.borderColor
         border.width: flipable.borderWidth
         radius: flipable.radius
 
@@ -100,7 +100,7 @@ Flipable {
             width: parent.width / 2
             height: parent.height
             color: flipable.pointColor
-            borderColor: "black"
+            borderColor: flipable.borderColor
             borderWidth: 0
             radius: parent.height * 0.25
             valueMax: flipable.valueMax
@@ -126,7 +126,7 @@ Flipable {
             width: parent.width / 2
             height: parent.height
             color: flipable.pointColor
-            borderColor: "black"
+            borderColor: flipable.borderColor
             borderWidth: 0
             radius: parent.height * 0.25
             valueMax: flipable.valueMax
