@@ -72,7 +72,7 @@ QtObject {
             { "text": "Македонски", "locale": "mk_MK.UTF-8" },
             { "text": "മലയാളം", "locale": "ml_IN.UTF-8" },
             { "text": "Nederlands", "locale": "nl_NL.UTF-8" },
-            //{ "text": "Norsk (nynorsk)", "locale": "nn_NO.UTF-8" },
+            { "text": "Norsk (nynorsk)", "locale": "nn_NO.UTF-8" },
             { "text": "Polski", "locale": "pl_PL.UTF-8" },
             { "text": "Português", "locale": "pt_PT.UTF-8" },
             { "text": "Português do Brasil", "locale": "pt_BR.UTF-8" },
