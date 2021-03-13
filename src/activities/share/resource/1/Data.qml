@@ -15,7 +15,7 @@ Data {
     data:  [
         [
             {
-                "instruction": qsTr("Paul wants to equally share 2 pieces of candy between 2 of his girl friends. Can you help him? First, place the children in the center, then drag the pieces of candy to each of them."),
+                "instruction": qsTr("Paul wants to share 2 pieces of candy equally between 2 of his girl friends. Can you help him? First, place the children in the center, then drag the pieces of candy to each of them."),
                 "randomisedInputData": false,
                 "totalBoys": 0,
                 "totalGirls": 2,
@@ -25,7 +25,7 @@ Data {
                 "placedInBoys": 0
             },
             {
-                "instruction": qsTr("Now he wants to give 4 pieces of candy to his friends."),
+                "instruction": qsTr("Now he wants to share 4 pieces of candy equally among his friends."),
                 "randomisedInputData": false,
                 "totalBoys": 1,
                 "totalGirls": 1,
@@ -35,7 +35,7 @@ Data {
                 "placedInBoys": 0
             },
             {
-                "instruction": qsTr("Can you now give 6 of Paul's pieces of candy to his friends?"),
+                "instruction": qsTr("Can you now share 6 of Paul's pieces of candy equally among his friends?"),
                 "randomisedInputData": false,
                 "totalBoys": 1,
                 "totalGirls": 1,
@@ -45,7 +45,7 @@ Data {
                 "placedInBoys": 0
             },
             {
-                "instruction": qsTr("He wants to give 7 more pieces of candy to his friends."),
+                "instruction": qsTr("Some of his friends already have candies. He wants to give them 7 more pieces so that they all have the same amount."),
                 "randomisedInputData": false,
                 "totalBoys": 1,
                 "totalGirls": 1,
@@ -67,7 +67,7 @@ Data {
         ],
         [
             {
-                "instruction": qsTr("George wants to equally share 3 pieces of candy between 3 of his girl friends. Can he equally split the pieces of candy? First, place the children in the center, then drag the pieces of candy to each of them."),
+                "instruction": qsTr("George wants to share 3 pieces of candy equally between 3 of his girl friends. Can he split the pieces of candy equally?"),
                 "randomisedInputData": false,
                 "totalBoys": 0,
                 "totalGirls": 3,
@@ -77,7 +77,7 @@ Data {
                 "placedInBoys": 0
             },
             {
-                "instruction": qsTr("Maria wants to equally share 6 pieces of candy between 3 of her friends: 1 girl and 2 boys. Can she equally split the pieces of candy? First, place the children in the center, then drag the pieces of candy to each of them."),
+                "instruction": qsTr("Maria wants to share 6 pieces of candy equally between 3 of her friends: 1 girl and 2 boys. Can she split the pieces of candy equally?"),
                 "randomisedInputData": false,
                 "totalBoys": 2,
                 "totalGirls": 1,
@@ -87,7 +87,7 @@ Data {
                 "placedInBoys": 0
             },
             {
-                "instruction": qsTr("John wants to equally share 8 pieces of candy between 3 of his friends: 1 boy and 2 girls. Can he equally split the pieces of candy? First, place the children in the center, then drag the pieces of candy to each of them."),
+                "instruction": qsTr("John wants to share 8 pieces of candy equally between 3 of his friends: 1 boy and 2 girls. The boy already has one. Can he make sure that they all have the same amount?"),
                 "randomisedInputData": false,
                 "totalBoys": 1,
                 "totalGirls": 2,
@@ -97,7 +97,7 @@ Data {
                 "placedInBoys": 1
             },
             {
-                "instruction": qsTr("Paul wants to equally share 12 pieces of candy between 3 of his friends: 2 boys and 1 girl. Can he equally split the pieces of candy? First, place the children in the center, then drag the pieces of candy to each of them."),
+                "instruction": qsTr("Paul wants to share 12 pieces of candy equally between 3 of his friends: 2 boys and 1 girl. Can he split the pieces of candy equally?"),
                 "randomisedInputData": false,
                 "totalBoys": 2,
                 "totalGirls": 1,
@@ -107,7 +107,7 @@ Data {
                 "placedInBoys": 0
             },
             {
-                "instruction": qsTr("Maria wants to equally share 11 pieces of candy between 3 of her friends: 1 boy and 2 girls. Can she equally split the pieces of candy? First, place the children in the center, then drag the pieces of candy to each of them."),
+                "instruction": qsTr("Maria wants to share 11 pieces of candy between 3 of her friends: 1 boy and 2 girls. The girls already have some candies. Can she split the pieces of candy so that they all have the same amount?"),
                 "randomisedInputData": false,
                 "totalBoys": 1,
                 "totalGirls": 2,
@@ -119,7 +119,7 @@ Data {
         ],
         [
             {
-                "instruction": qsTr("Alice wants to equally share 4 pieces of candy between 4 of her girl friends. Can you help her? First, place the children in the center, then drag the pieces of candy to each of them."),
+                "instruction": qsTr("Alice wants to share 4 pieces of candy equally between 4 of her girl friends. Can you help her?"),
                 "randomisedInputData": false,
                 "totalBoys": 0,
                 "totalGirls": 4,
@@ -139,7 +139,7 @@ Data {
                 "placedInBoys": 0
             },
             {
-                "instruction": qsTr("Can you help Alice give 10 pieces of candy to her friends, 1 girl and 3 boys?"),
+                "instruction": qsTr("Alice wants to give 10 pieces of candy to her friends, 1 girl and 3 boys, so that they all have the same amount. The girls already have some candies."),
                 "randomisedInputData": false,
                 "totalBoys": 3,
                 "totalGirls": 1,
@@ -159,7 +159,7 @@ Data {
                 "placedInBoys": 0
             },
             {
-                "instruction": qsTr("Alice has 14 pieces of candy left. She wants to give them all to her friends. Can you help her split the pieces of candy equally?"),
+                "instruction": qsTr("Alice wants to give candies to 4 friends. Some of them already have some candies. Can you help her split 14 pieces so that all her friends have the same amount?"),
                 "randomisedInputData": false,
                 "totalBoys": 2,
                 "totalGirls": 2,
@@ -171,7 +171,7 @@ Data {
         ],
         [
             {
-                "instruction": qsTr("Michael wants to equally share 5 pieces of candy between 5 of his girl friends. Can you help him? First, place the children in the center, then drag the pieces of candy to each of them."),
+                "instruction": qsTr("Michael wants to share 5 pieces of candy equally between 5 of his girl friends. Can you help him?"),
                 "randomisedInputData": false,
                 "totalBoys": 0,
                 "totalGirls": 5,
@@ -191,7 +191,7 @@ Data {
                 "placedInBoys": 0
             },
             {
-                "instruction": qsTr("Michelle has 12 pieces of candy and wants to split them between 4 brothers and 1 sister. Help her share the pieces of candy."),
+                "instruction": qsTr("Michelle wants to share 12 pieces of candy equally between her 4 brothers and 1 sister, so that they all have the same amount. Her sister already has some candies."),
                 "randomisedInputData": false,
                 "totalBoys": 4,
                 "totalGirls": 1,
@@ -211,7 +211,7 @@ Data {
                 "placedInBoys": 0
             },
             {
-                "instruction": qsTr("Paul wants to equally share 20 pieces of candy between 5 of his friends: 2 girls and 3 boys. Can you help him? First, place the children in the center, then drag the pieces of candy to each of them."),
+                "instruction": qsTr("Paul wants to share 20 pieces of candy equally between 5 of his friends. Each of them already has one piece. Can you help him?"),
                 "randomisedInputData": false,
                 "totalBoys": 3,
                 "totalGirls": 2,
@@ -223,37 +223,37 @@ Data {
         ],
         [
             {
-                "instruction": qsTr("Charles wants to share his 6 pieces of candy with 2 of his girl friends. Can he split the pieces of candy equally?"),
+                "instruction": qsTr("Charles wants to share his 6 pieces of candy equally with 2 of his girl friends. Can he split the pieces of candy equally?"),
                 "randomisedInputData": false,
                 "totalBoys": 0,
                 "totalGirls": 2,
                 "totalCandies": 6,
-                "forceShowBasket": true,
+                "forceShowBasket": false,
                 "placedInGirls": 0,
                 "placedInBoys": 0
             },
             {
-                "instruction": qsTr("For her birthday, Elizabeth has 8 pieces of candy to share with 3 of her friends: 2 girls and 1 boy. How should she split the pieces of candy?"),
+                "instruction": qsTr("For her birthday, Elizabeth has 8 pieces of candy to share with 3 of her friends: 2 girls and 1 boy. The girls already have some. How should she split the pieces of candy so that they all have the same amount?"),
                 "randomisedInputData": false,
                 "totalBoys": 1,
                 "totalGirls": 2,
                 "totalCandies": 12,
-                "forceShowBasket": true,
+                "forceShowBasket": false,
                 "placedInGirls": 2,
                 "placedInBoys": 0
             },
             {
-                "instruction": qsTr("Jason's father gave him 16 pieces of candy to share with his friends: 2 boys and 2 girls. Help him give the pieces of candy to his friends."),
+                "instruction": qsTr("Jason's father gave him 16 pieces of candy to share equally with his friends: 2 boys and 2 girls. Help him give the pieces of candy to his friends."),
                 "randomisedInputData": false,
                 "totalBoys": 2,
                 "totalGirls": 2,
                 "totalCandies": 16,
-                "forceShowBasket": true,
+                "forceShowBasket": false,
                 "placedInGirls": 0,
                 "placedInBoys": 0
             },
             {
-                "instruction": qsTr("George wants to equally share 14 pieces of candy between 4 of his friends: 2 girls and 2 boys. Can he equally split the pieces of candy? First, place the children in the center, then drag the pieces of candy to each of them."),
+                "instruction": qsTr("George wants to share 14 pieces of candy between 4 of his friends: 2 girls and 2 boys. The boys already have one piece. He wants all of them to have the same amount."),
                 "randomisedInputData": false,
                 "totalBoys": 2,
                 "totalGirls": 2,
@@ -263,7 +263,7 @@ Data {
                 "placedInBoys": 1
             },
             {
-                "instruction": qsTr("Maria wants to equally share 25 pieces of candy between 5 of her friends: 3 girls and 2 boys. Can she equally split the pieces of candy? First, place the children in the center, then drag the pieces of candy to each of them."),
+                "instruction": qsTr("Maria wants to share 25 pieces of candy equally between 5 of her friends: 3 girls and 2 boys. Can she equally split the pieces of candy?"),
                 "randomisedInputData": false,
                 "totalBoys": 2,
                 "totalGirls": 3,
