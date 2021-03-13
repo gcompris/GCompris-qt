@@ -239,7 +239,7 @@ Data {
                 "totalBoys": 0,
                 "totalGirls": 2,
                 "totalCandies": 6,
-                "forceShowBasket": true,
+                "forceShowBasket": false,
                 "placedInGirls": 0,
                 "placedInBoys": 0
             },
@@ -249,7 +249,7 @@ Data {
                 "totalBoys": 1,
                 "totalGirls": 2,
                 "totalCandies": 12,
-                "forceShowBasket": true,
+                "forceShowBasket": false,
                 "placedInGirls": 2,
                 "placedInBoys": 0
             },
@@ -259,7 +259,7 @@ Data {
                 "totalBoys": 2,
                 "totalGirls": 2,
                 "totalCandies": 16,
-                "forceShowBasket": true,
+                "forceShowBasket": false,
                 "placedInGirls": 0,
                 "placedInBoys": 0
             },
