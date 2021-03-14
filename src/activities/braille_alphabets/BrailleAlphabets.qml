@@ -37,6 +37,9 @@ ActivityBase {
         }
 
         Keys.onPressed: {
+            if(bonus.isPlaying || score.isWinAnimationPlaying) {
+                return
+            }
             if(first_screen.visible) {
                 // If return, we hide the screen
                 first_screen.visible = false;
