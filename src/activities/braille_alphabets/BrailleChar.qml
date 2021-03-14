@@ -167,7 +167,7 @@ Item {
 
                 MouseArea {
                     id : mouse1
-                    enabled: clickable ? true : false
+                    enabled: clickable && !(bonus.isPlaying || score.isWinAnimationPlaying) ? true : false
                     anchors.fill: parent
                     hoverEnabled: true
                     onEntered: incircle1.border.width = 4 * ApplicationInfo.ratio
