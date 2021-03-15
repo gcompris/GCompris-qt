@@ -85,7 +85,7 @@ Image {
 
     Connections {
         target: activity
-        onHome: haltBonus();
+        onStop: haltBonus();
     }
 
     /// @cond INTERNAL_DOCS
