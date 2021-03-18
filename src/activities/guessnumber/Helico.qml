@@ -23,7 +23,7 @@ import GCompris 1.0
 
 Image {
     id: helico
-    source: "resource/tuxhelico.svg"
+    source: "qrc:/gcompris/src/activities/planegame/resource/tuxhelico.svg"
     sourceSize.height: 120 * ApplicationInfo.ratio
 
     function init() {

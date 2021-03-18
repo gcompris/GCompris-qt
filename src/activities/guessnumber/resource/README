@@ -1,8 +1,9 @@
-helicopter.wav: https://www.freesound.org/people/fridobeck/sounds/194250/
-	This work is licensed under the Attribution License.
-
-Copyright: 2000, 2008 Bruno Coudoin and others
-License: GPLv3
+Copyright: Timothée Giet, 2021
+License: CC-BY-SA 4.0
 Files:
 cave.svg
-tuxhelico.svg
+
+Copyright: fridobeck (original source from https://www.freesound.org/people/fridobeck/sounds/194250/ )
+License: CC-BY
+Files:
+helicopter.wav
