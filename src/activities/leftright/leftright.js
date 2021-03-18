@@ -140,7 +140,7 @@ function displayNextHand() {
     items.score.playWinAnimation();
     if(currentHands.length <= ++currentImageId ) {
         items.bonus.good("flower")
-        nextLevel()
+        return
     }
     displayHand()
 }

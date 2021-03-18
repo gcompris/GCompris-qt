@@ -196,7 +196,10 @@ ActivityBase {
         Bonus {
             id: bonus
             onStart: items.buttonsBlocked = true
-            onStop: items.buttonsBlocked = false
+            onStop: {
+                Activity.nextLevel();
+                items.buttonsBlocked = false;
+            }
         }
 
         Score {
