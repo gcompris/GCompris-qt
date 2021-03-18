@@ -65,7 +65,7 @@ var items
 function start(items_) {
     items = items_
     currentLevel = 0
-    items.score.currentSubLevel = 1
+    items.score.currentSubLevel = 0
     initLevel()
 }
 
@@ -97,7 +97,7 @@ function nextLevel() {
     if(levels.length <= ++currentLevel ) {
         currentLevel = 0
     }
-    items.score.currentSubLevel = 1
+    items.score.currentSubLevel = 0
     initLevel();
 }
 
@@ -105,7 +105,7 @@ function previousLevel() {
     if(--currentLevel < 0) {
         currentLevel = levels.length - 1
     }
-    items.score.currentSubLevel = 1
+    items.score.currentSubLevel = 0
     initLevel();
 }
 
