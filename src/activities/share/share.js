@@ -100,8 +100,8 @@ function setUp() {
         //~ plural and %n girls in the center.
         items.instruction.text += qsTr("and %n girl(s) in the center. ", "Second part of Place %n boy(s) and %n girl(s) in the center. Then split %n pieces of candy equally between them.", items.totalGirls);
 
-        //~ singular Then equally split %n candy between them.
-        //~ plural Then equally split %n candies between them.
+        //~ singular Then split %n candy equally between them.
+        //~ plural Then split %n candies equally between them.
         items.instruction.text += qsTr("Then split %n pieces of candy equally between them.", "Third part of Place %n boy(s) and %n girl(s) in the center. Then split %n pieces of candy equally between them.", items.totalCandies - items.background.currentCandies);
 
 
