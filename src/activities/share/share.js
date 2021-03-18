@@ -94,15 +94,15 @@ function setUp() {
         }
         //~ singular Place %n boy
         //~ plural Place %n boys
-        items.instruction.text = qsTr("Place %n boy(s) ", "First part of Place %n boy(s) and %n girl(s) in the center. Then equally split %n pieces of candy between them.", items.totalBoys);
+        items.instruction.text = qsTr("Place %n boy(s) ", "First part of Place %n boy(s) and %n girl(s) in the center. Then split %n pieces of candy equally between them.", items.totalBoys);
 
         //~ singular and %n girl in the center.
         //~ plural and %n girls in the center.
-        items.instruction.text += qsTr("and %n girl(s) in the center. ", "Second part of Place %n boy(s) and %n girl(s) in the center. Then equally split %n pieces of candy between them.", items.totalGirls);
+        items.instruction.text += qsTr("and %n girl(s) in the center. ", "Second part of Place %n boy(s) and %n girl(s) in the center. Then split %n pieces of candy equally between them.", items.totalGirls);
 
         //~ singular Then equally split %n candy between them.
         //~ plural Then equally split %n candies between them.
-        items.instruction.text += qsTr("Then equally split %n pieces of candy between them.", "Third part of Place %n boy(s) and %n girl(s) in the center. Then equally split %n pieces of candy between them.", items.totalCandies - items.background.currentCandies);
+        items.instruction.text += qsTr("Then split %n pieces of candy equally between them.", "Third part of Place %n boy(s) and %n girl(s) in the center. Then split %n pieces of candy equally between them.", items.totalCandies - items.background.currentCandies);
 
 
         items.background.rest = items.totalCandies -
