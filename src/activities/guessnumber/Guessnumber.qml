@@ -22,11 +22,9 @@ ActivityBase {
 
     property alias currentActivity: activity.activityInfo
 
-    pageComponent: Image {
+    pageComponent: Rectangle {
         id: background
-        fillMode: Image.PreserveAspectCrop
-        source: "resource/cave.svg"
-        anchors.fill: parent
+        color: "#5a3820"
 
         signal start
         signal stop
@@ -54,23 +52,27 @@ ActivityBase {
             property var levels: activity.datasetLoader.data.length !== 0 ? activity.datasetLoader.data : null
             property int currentMax: 0
             property alias numpad: numpad
-            property int maxSize: 120
-            property int minSize: 80
+            property int maxSize: background.height * 0.16
+            property int size: 70 * ApplicationInfo.ratio
             property int barHeightAddon: ApplicationSettings.isBarHidden ? 1 : 3
-            property int size: Math.min(background.width / 9, background.height / (8 + barHeightAddon))
         }
 
         onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
 
+        // the cave image needs to be aligned on the right to always see the exit
+        Image {
+            source: "resource/cave.svg"
+            height: parent.height
+            sourceSize.height: height
+            anchors.right: parent.right
+        }
+
         Helico {
             id: helico
             fillMode: "PreserveAspectFit"
-            sourceSize.height: items.maxSize * ApplicationInfo.ratio
-            height: (items.size>items.minSize) ?
-                                   (items.size<items.maxSize) ? items.size * ApplicationInfo.ratio :
-                                                                items.maxSize * ApplicationInfo.ratio :
-                                   items.minSize * ApplicationInfo.ratio
+            sourceSize.height: height
+            height: (items.size>items.maxSize) ? items.maxSize : items.size
         }
 
         GCText {
