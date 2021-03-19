@@ -10,7 +10,7 @@
 import GCompris 1.0
 
 Data {
-    objective: qsTr("Maximum 30 candies and 6 kids, possible rest.")
+    objective: qsTr("Maximum 30 pieces of candy and 6 kids, possible rest.")
     difficulty: 5
     // NOTE: don't put maxBoys or maxGirls less than 1,
     // and don't make maxBoys + maxGirls more than maximum kids (6 here)
