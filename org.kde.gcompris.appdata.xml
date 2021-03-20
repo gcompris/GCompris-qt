@@ -982,6 +982,6 @@
     <value key="KDE::windows_store">https://www.microsoft.com/store/apps/9pgxjtcxn8qm</value>
   </custom>
   <releases>
-    <release version="1.0" date="2020-11-19"/>
+    <release version="1.1" date="2021-03-20"/>
   </releases>
 </component>
