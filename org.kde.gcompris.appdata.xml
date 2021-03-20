@@ -983,5 +983,6 @@
   </custom>
   <releases>
     <release version="1.1" date="2021-03-20"/>
+    <release version="1.0" date="2020-11-19"/>
   </releases>
 </component>
