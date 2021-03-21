@@ -22,7 +22,6 @@
 import QtQuick 2.6
 
 QtObject {
-   property int numberOfSubLevel: 1
    property string instruction: qsTr("Pierre-Auguste Renoir, Girls At The Piano - 1892")
    property var levels : [
       {
