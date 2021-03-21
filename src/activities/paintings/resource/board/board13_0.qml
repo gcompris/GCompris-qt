@@ -11,7 +11,6 @@
 import QtQuick 2.6
 
 QtObject {
-   property int numberOfSubLevel: 4
    property string instruction: qsTr("Michelangelo, Pieta - 1499")
    property var levels : [
       {
