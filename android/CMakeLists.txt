@@ -177,8 +177,8 @@ ExternalProject_Add(
   ext_openssl
   DOWNLOAD_DIR ${CMAKE_BINARY_DIR}
   SOURCE_DIR ${OPENSSL_DIR}
-  URL https://www.openssl.org/source/openssl-1.1.1c.tar.gz
-  URL_HASH SHA256=f6fb3079ad15076154eda9413fed42877d668e7069d9b87396d0804fdb3f4c90
+  URL https://www.openssl.org/source/openssl-1.1.1j.tar.gz
+  URL_HASH SHA256=aaf2fcb575cdf6491b98ab4829abf78a3dec8402b8b81efc8f23c00d443981bf
   CONFIGURE_COMMAND echo "Configuration not needed"
   BUILD_COMMAND sh "${CMAKE_CURRENT_BINARY_DIR}/build_openssl.sh" <SOURCE_DIR>
   INSTALL_COMMAND ""
