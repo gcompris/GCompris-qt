@@ -1,6 +1,7 @@
 [Desktop Entry]
 Name=GCompris Educational Game
 Name[ar]=لعبة «فهمت» التعليميّة
+Name[az]=GCompris öyrədici oyunu
 Name[br]=C'hoari kelennadel GCompris
 Name[ca]=Joc educatiu GCompris
 Name[ca@valencia]=Joc educatiu GCompris
@@ -43,6 +44,7 @@ Name[zh_CN]=GCompris 教育游戏
 Name[zh_TW]=GCompris 教育遊戲
 GenericName=Educational game
 GenericName[ar]=لعبة تعليميّة
+GenericName[az]=Öyrədici oyun
 GenericName[br]=C'hoari kelennadel
 GenericName[ca]=Joc educatiu
 GenericName[ca@valencia]=Joc educatiu
@@ -86,6 +88,7 @@ GenericName[zh_CN]=教育游戏
 GenericName[zh_TW]=教育遊戲
 Comment=Multi-Activity Educational game for children 2 to 10
 Comment[ar]=لعبة تعليميّة متعدّدة الأنشطة للأطفال من سنتين إلى ١٠ سنوات
+Comment[az]=2 - 10 yaş arası uşaqlar üçün çoxfəaliyyətli öyrədici oyun
 Comment[br]=C'hoari kelennadel gant oberezhioù a bep seurt evit ar vugale etre 2 ha 10 vloaz
 Comment[ca]=Joc educatiu amb múltiples activitats per a infants de 2 a 10 anys
 Comment[ca@valencia]=Joc educatiu amb múltiples activitats per a infants de 2 a 10 anys

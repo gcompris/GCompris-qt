@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=GCompris
+Name[az]=GCompris
 Name[br]=GCompris
 Name[ca]=GCompris
 Name[ca@valencia]=GCompris
@@ -39,6 +40,7 @@ Name[uk]=GCompris
 Name[x-test]=xxGComprisxx
 Name[zh_CN]=GCompris
 GenericName=Educational Game for Children
+GenericName[az]=Uşaqlar üçün öyrədici oyun
 GenericName[br]=C'hoari kelennadel evit ar vugale
 GenericName[ca]=Joc educatiu per a infants
 GenericName[ca@valencia]=Joc educatiu per a infants
@@ -74,6 +76,7 @@ GenericName[x-test]=xxEducational Game for Childrenxx
 GenericName[zh_CN]=儿童教育游戏
 Comment=Multi-Activity Educational game for children 2 to 10
 Comment[ar]=لعبة تعليميّة متعدّدة الأنشطة للأطفال من سنتين إلى ١٠ سنوات
+Comment[az]=2 - 10 yaş arası uşaqlar üçün çoxfəaliyyətli öyrədici oyun
 Comment[br]=C'hoari kelennadel gant oberezhioù a bep seurt evit ar vugale etre 2 ha 10 vloaz
 Comment[ca]=Joc educatiu amb múltiples activitats per a infants de 2 a 10 anys
 Comment[ca@valencia]=Joc educatiu amb múltiples activitats per a infants de 2 a 10 anys
