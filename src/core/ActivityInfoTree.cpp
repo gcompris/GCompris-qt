@@ -40,7 +40,11 @@ QQmlListProperty<ActivityInfo> ActivityInfoTree::menuTree()
     return { this, nullptr, &menuTreeCount, &menuTreeAt };
 }
 
+#if QT_VERSION >= QT_VERSION_CHECK(6, 0, 0)
+qsizetype ActivityInfoTree::menuTreeCount(QQmlListProperty<ActivityInfo> *property)
+#else
 int ActivityInfoTree::menuTreeCount(QQmlListProperty<ActivityInfo> *property)
+#endif
 {
     ActivityInfoTree *obj = qobject_cast<ActivityInfoTree *>(property->object);
     if (obj != nullptr)
@@ -49,7 +53,11 @@ int ActivityInfoTree::menuTreeCount(QQmlListProperty<ActivityInfo> *property)
     return 0;
 }
 
+#if QT_VERSION >= QT_VERSION_CHECK(6, 0, 0)
+ActivityInfo *ActivityInfoTree::menuTreeAt(QQmlListProperty<ActivityInfo> *property, qsizetype index)
+#else
 ActivityInfo *ActivityInfoTree::menuTreeAt(QQmlListProperty<ActivityInfo> *property, int index)
+#endif
 {
     ActivityInfoTree *obj = qobject_cast<ActivityInfoTree *>(property->object);
     if (obj != nullptr)
@@ -325,7 +333,7 @@ QVariantList ActivityInfoTree::allCharacters()
     for (const QChar &letters: keyboardChars) {
         m_keyboardCharacters.push_back(letters);
     }
-    std::sort(m_keyboardCharacters.begin(), m_keyboardCharacters.end());
+    std::sort(m_keyboardCharacters.begin(), m_keyboardCharacters.end(), [](const QVariant &v1, const QVariant &v2) { return v1.toChar() < v2.toChar(); });
 
     return m_keyboardCharacters;
 }

@@ -59,8 +59,13 @@ private:
     ActivityInfo *m_rootMenu;
     ActivityInfo *m_currentActivity;
     QVariantList m_keyboardCharacters;
+#if QT_VERSION >= QT_VERSION_CHECK(6, 0, 0)
+    static qsizetype menuTreeCount(QQmlListProperty<ActivityInfo> *property);
+    static ActivityInfo *menuTreeAt(QQmlListProperty<ActivityInfo> *property, qsizetype index);
+#else
     static int menuTreeCount(QQmlListProperty<ActivityInfo> *property);
     static ActivityInfo *menuTreeAt(QQmlListProperty<ActivityInfo> *property, int index);
+#endif
 
 public:
     static void registerResources();

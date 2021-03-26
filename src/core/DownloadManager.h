@@ -16,7 +16,6 @@
 #include <QNetworkAccessManager>
 #include <QNetworkReply>
 #include <QMutex>
-#include <QNetworkConfiguration>
 #include <QString>
 #include <QUrl>
 #include <QVariant>

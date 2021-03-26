@@ -275,10 +275,20 @@ int main(int argc, char *argv[])
     ApplicationInfo::getInstance()->setUseOpenGL(renderer != QLatin1String("software"));
 
 #if QT_VERSION >= QT_VERSION_CHECK(5, 8, 0)
-    if (renderer == QLatin1String("software"))
+    if (renderer == QLatin1String("software")) {
+#if QT_VERSION >= QT_VERSION_CHECK(6, 0, 0)
+        QQuickWindow::setGraphicsApi(QSGRendererInterface::Software);
+#else
         QQuickWindow::setSceneGraphBackend(QSGRendererInterface::Software);
-    else if (renderer == QLatin1String("opengl"))
+#endif
+    }
+    else if (renderer == QLatin1String("opengl")) {
+#if QT_VERSION >= QT_VERSION_CHECK(6, 0, 0)
+        QQuickWindow::setGraphicsApi(QSGRendererInterface::OpenGL);
+#else
         QQuickWindow::setSceneGraphBackend(QSGRendererInterface::OpenGL);
+#endif
+    }
 #endif
 
     QQmlApplicationEngine engine(QUrl("qrc:/gcompris/src/core/main.qml"));
