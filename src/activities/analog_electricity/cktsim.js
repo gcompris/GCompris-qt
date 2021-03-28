@@ -67,7 +67,7 @@ var cktsim = (function() {
 	}
 	
     // alert managed in GCompris
-    // (note: all alert function calls have been changed to this.alert...)
+    // (note: all alert function calls have been changed to this.alert... + added qsTr() for translation)
 	Circuit.prototype.alert = function(message_) {
         if(this.GCWarning === "") {
             this.GCWarning = message_;
@@ -135,8 +135,8 @@ var cktsim = (function() {
 		    }
 		    var rGV = mat_rank(GV);
 		    if (rGV < n_vsrc) {
-			this.alert('Warning!!! Circuit has a voltage source loop or a source shorted by a wire, please remove the source or the wire causing the short.');
-			this.alert('Warning!!! Simulator might produce meaningless results or no result with this circuit.');
+			this.alert(qsTr('Warning! Circuit has a voltage source loop or a source shorted by a wire, please remove the source or the wire causing the short.'));
+			this.alert(qsTr('Warning! Simulator might produce meaningless results or no result with this circuit.'));
 			return false;
 		    }
 		}
