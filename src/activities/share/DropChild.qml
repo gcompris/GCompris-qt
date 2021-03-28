@@ -85,6 +85,9 @@ Rectangle {
                                     candyWidget.element.opacity = 0.6
                                 }
                             }
+                            else {
+                                background.wrongMove.visible = true
+                            }
                         }
                         else {
                             background.resetCandy()
