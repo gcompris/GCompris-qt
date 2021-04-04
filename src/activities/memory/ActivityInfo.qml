@@ -12,7 +12,7 @@ ActivityInfo {
   icon: "memory/memory.svg"
   author: "JB BUTET &lt;ashashiwa@gmail.com&gt;"
   //: Activity title
-  title: qsTr("Memory Game with images")
+  title: qsTr("Memory game with images")
   //: Help title
   description: qsTr("Flip the cards to find the matching pairs.")
 //  intro: "Click on a card and find its double."
