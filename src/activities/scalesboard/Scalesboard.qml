@@ -274,18 +274,14 @@ ActivityBase {
             id: okButton
             source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
             sourceSize.width: 60 * ApplicationInfo.ratio
+            enabled: !bonus.isPlaying
             visible: (!question.text || items.question.userEntry) ? true : false
             ParticleSystemStarLoader {
                 id: okButtonParticles
                 clip: false
             }
-            MouseArea {
-                id: okButtonMouseArea
-                anchors.fill: parent
-                onClicked: {
-                    if(!bonus.isPlaying)
-                        Activity.checkAnswer();
-                }
+            onClicked: {
+                Activity.checkAnswer();
             }
         }
 
@@ -370,11 +366,12 @@ ActivityBase {
             enableInput: !bonus.isPlaying
         }
 
+        Keys.enabled: !bonus.isPlaying
         Keys.onPressed: {
-            if(okButton.visible && !bonus.isPlaying && (event.key === Qt.Key_Enter || event.key === Qt.Key_Return)) {
+            if(okButton.visible && (event.key === Qt.Key_Enter || event.key === Qt.Key_Return)) {
                     Activity.checkAnswer()
-                }
-            else if(question.visible && !bonus.isPlaying) {
+            }
+            else if(question.visible) {
                     numpad.updateAnswer(event.key, true);
             }
         }
