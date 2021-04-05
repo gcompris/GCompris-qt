@@ -288,7 +288,7 @@ if (targetY < 0) {
                             id: chooserMouseArea
                             anchors.fill: parent
                             acceptedButtons: Qt.LeftButton
-                            enabled: chooser.scale !== 0
+                            enabled: chooser.scale !== 0 && !bonus.isPlaying
                             z: 11
                             hoverEnabled: ApplicationInfo.isMobile ? false : true
 
@@ -338,7 +338,7 @@ if (targetY < 0) {
                             id: mouseArea
                             anchors.fill: parent
                             acceptedButtons: Qt.LeftButton | Qt.RightButton
-                            enabled: true
+                            enabled: !bonus.isPlaying
                             z: 3
                             hoverEnabled: ApplicationInfo.isMobile ? false : true
 
@@ -375,6 +375,7 @@ if (targetY < 0) {
 
                 BarButton {
                     id: okButton
+                    enabled: !bonus.isPlaying
                     source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
                     sourceSize.width: 66 * bar.barZoom
                     width: guessColumn.guessSize * currentRow.factor
@@ -467,7 +468,7 @@ if (targetY < 0) {
                                 id: mouseAreaRect
                                 anchors.fill: parent
                                 acceptedButtons: Qt.LeftButton
-                                enabled: guessRow.rowIndex > 0
+                                enabled: guessRow.rowIndex > 0 && !bonus.isPlaying
                                 z: 4
                                 hoverEnabled: ApplicationInfo.isMobile ? false : true
 
@@ -524,7 +525,7 @@ if (targetY < 0) {
                                 id: ackMouseArea
                                 anchors.fill: parent
                                 acceptedButtons: Qt.LeftButton
-                                enabled: status == Activity.STATUS_UNKNOWN
+                                enabled: status == Activity.STATUS_UNKNOWN && !bonus.isPlaying
                                 visible: status == Activity.STATUS_UNKNOWN
                                 z: 3
                                 hoverEnabled: ApplicationInfo.isMobile ? false : true
