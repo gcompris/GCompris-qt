@@ -130,6 +130,7 @@ ActivityBase {
             }
             maxDigit: ("" + items.currentMax).length
             columnWidth: 60 * ApplicationInfo.ratio
+            enableInput: !bonus.isPlaying
         }
 
         Keys.onPressed: {
