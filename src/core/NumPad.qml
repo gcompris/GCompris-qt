@@ -34,7 +34,6 @@ import GCompris 1.0
 * @inherit QtQuick.Item
 */
 Item {
-
     id: containerPanel
     anchors.top: parent.top
     anchors.bottom: bar.top
@@ -242,7 +241,8 @@ Item {
             MouseArea {
                 anchors.fill: parent
                 enabled: ApplicationSettings.isVirtualKeyboard &&
-                         containerPanel.opacity > 0
+                         containerPanel.opacity > 0 &&
+                         containerPanel.enableInput
 
                 onClicked: {
                     answer = answer.substring(0,answer.length - 1)
@@ -265,6 +265,9 @@ Item {
     }
 
     function updateAnswer(key, isKeyPressed) {
+        if(!containerPanel.enableInput)
+            return;
+
         var keyValue;
 
         switch(key)
