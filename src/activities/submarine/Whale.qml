@@ -109,7 +109,7 @@ Image {
             }
 
             ImageParticle {
-                source: "qrc:/gcompris/src/activities/clickgame/resource/bubble.png"
+                source: "qrc:/gcompris/src/activities/clickgame/resource/bubble.svg"
             }
         }
     }
