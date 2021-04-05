@@ -6,6 +6,10 @@ call-procedure.svg
 move-forward.svg
 turn-left.svg
 turn-right.svg
-tutorial1.png
-tutorial2.png
-tutorial3.png
+
+Copyright: Timothée Giet, 2021
+License: GPL-3.0-or-later
+TutorialBase.qml
+tutorial1.qml
+tutorial2.qml
+tutorial3.qml
