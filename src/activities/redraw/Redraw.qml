@@ -78,6 +78,7 @@ ActivityBase {
         onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
 
+        Keys.enabled: !bonus.isPlaying
         Keys.onPressed: {
             if(event.key >= Qt.Key_0 && event.key < Qt.Key_0 + items.numberOfColor)
                 items.colorSelector = event.key - Qt.Key_0
@@ -384,6 +385,7 @@ ActivityBase {
             height: drawingArea.height
             onPressed: checkTouchPoint(touchPoints)
             onTouchUpdated: checkTouchPoint(touchPoints)
+            enabled: !bonus.isPlaying
 
             function checkTouchPoint(touchPoints) {
                 for(var i in touchPoints) {
