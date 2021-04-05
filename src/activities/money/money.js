@@ -72,7 +72,7 @@ function initLevel() {
     var data = dataset[currentLevel]
     var pocket = Core.shuffle(data.pocket)
     var coinCount = getCoinCount(pocket)
-    items.pocketRows = (((data.pocket.length - coinCount / 2) > 9) ? 3 : 2)
+    items.moneyCount = data.pocket.length
 
     for(var i = 0; i < pocket.length; i++)
         items.pocketModel.append(pocket[i])

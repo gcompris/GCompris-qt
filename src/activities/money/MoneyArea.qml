@@ -14,7 +14,7 @@ import "money.js" as Activity
 
 Rectangle {
     id: moneyAreaBody
-    height: (columnLayout.itemHeight + 10) * columnLayout.nbLines
+    height: columnLayout.storeHeight
     width: columnLayout.width
     color: "#55333333"
     border.color: "black"
@@ -26,12 +26,12 @@ Rectangle {
     signal transaction(int index)
 
     Flow {
-        anchors.topMargin: 4
-        anchors.bottomMargin: 4
-        anchors.leftMargin: 10
-        anchors.rightMargin: 10
+        anchors.topMargin: 5
+        anchors.bottomMargin: 5
+        anchors.leftMargin: 5
+        anchors.rightMargin: 5
         anchors.fill: parent
-        spacing: 10
+        spacing: 5
 
         add: Transition {
             NumberAnimation {
@@ -53,8 +53,11 @@ Rectangle {
             model: ListModel { id: pocketModel }
             Image {
                 source: img
-                sourceSize.height: columnLayout.itemHeight
-                height: columnLayout.itemHeight
+                height: columnLayout.itemSize
+                width: columnLayout.itemSize
+                sourceSize.height: height
+                sourceSize.width: width
+                fillMode: Image.PreserveAspectFit
 
                 property bool selected: false
 

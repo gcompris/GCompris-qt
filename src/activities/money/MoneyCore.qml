@@ -13,6 +13,7 @@ import GCompris 1.0
 
 import "../../core"
 import "money.js" as Activity
+import "qrc:/gcompris/src/core/core.js" as Core
 
 ActivityBase {
     id: activity
@@ -56,7 +57,7 @@ ActivityBase {
             property alias bar: bar
             property alias bonus: bonus
             property int itemIndex
-            property int pocketRows
+            property int moneyCount
             property var selectedArea
             property alias pocket: pocketArea.answer
             property alias answer: answerArea.answer
@@ -72,13 +73,6 @@ ActivityBase {
             y: parent.height * 0.05
             width: parent.width * 0.9
 
-            property int nbColumns: 5
-            property int nbLines: items.pocketRows
-            property int itemWidth:
-                Math.min(width / nbColumns - 10 - 10 / nbColumns,
-                         parent.height * 0.4 / nbLines - 10 - 10 / nbLines)
-            property int itemHeight: itemWidth * 0.59
-
             // === The Answer Area ===
             MoneyArea {
                 id: answerArea
@@ -90,15 +84,14 @@ ActivityBase {
                                          activity.dataset === "BACK_WITH_CENTS" ? store.model.length + 1 : store.model.length
             //tempSpace is a workaround to replace instructionsArea.realHeight that is freezing with Qt-5.9.1
             property int tempSpace: bar.level === 1 ? 140 + columnLayout.spacing : 0
-            property int itemStoreWidth:
-                Math.min((columnLayout.width - storeAreaFlow.spacing * nbStoreColumns) / nbStoreColumns,
-                         (parent.height - answerArea.height -
-                          pocketArea.height - bar.height * 1.5) * 0.8) - tempSpace
-            property int itemStoreHeight: itemStoreWidth
+            property int storeHeight: Math.min(1000, ((parent.height * 0.95 - columnLayout.spacing * 3 - bar.height * 1.5) - tempSpace) / 3)
+            property int itemStoreSize: Core.fitItems(columnLayout.width - 20, storeHeight - 20 , nbStoreColumns) - 20
+
+            property int itemSize: Math.min(Core.fitItems(columnLayout.width - 10, storeHeight - 10, items.moneyCount) - 5, storeHeight * 0.5)
 
             Rectangle {
                 id: storeArea
-                height: columnLayout.itemStoreHeight + 10
+                height: columnLayout.storeHeight
                 width: columnLayout.width
                 color: "#55333333"
                 border.color: "black"
@@ -106,12 +99,12 @@ ActivityBase {
                 radius: 5
                 Flow {
                     id: storeAreaFlow
-                    anchors.topMargin: 4
-                    anchors.bottomMargin: 4
-                    anchors.leftMargin: 20
-                    anchors.rightMargin: 20
+                    anchors.topMargin: 10
+                    anchors.bottomMargin: 10
+                    anchors.leftMargin: 10
+                    anchors.rightMargin: 10
                     anchors.fill: parent
-                    spacing: 40
+                    spacing: 20
 
                     add: Transition {
                         NumberAnimation {
@@ -126,13 +119,14 @@ ActivityBase {
                         visible: activity.dataset === "BACK_WITHOUT_CENTS" ||
                                  activity.dataset === "BACK_WITH_CENTS"
                         source: "qrc:/gcompris/src/activities/mosaic/resource/tux.svg"
-                        sourceSize.height:  columnLayout.itemStoreHeight
-                        sourceSize.width:  columnLayout.itemStoreHeight
+                        sourceSize.height: columnLayout.itemStoreSize
+                        sourceSize.width: columnLayout.itemStoreSize
+
                         Repeater {
                             id: tuxMoney
                             Image {
                                 source: modelData.img
-                                sourceSize.height:  columnLayout.itemStoreHeight * 0.3
+                                sourceSize.height: columnLayout.itemStoreSize * 0.3
                                 x: tux.x + index * 50
                                 y: tux.y + tux.height / 2 + index * 20
                             }
@@ -143,8 +137,8 @@ ActivityBase {
                         id: store
                         Image {
                             source: modelData.img
-                            sourceSize.height: columnLayout.itemStoreHeight
-                            sourceSize.width: columnLayout.itemStoreHeight
+                            sourceSize.height: columnLayout.itemStoreSize
+                            sourceSize.width: columnLayout.itemStoreSize
                             GCText {
                                 text: modelData.price
                                 height: parent.height
