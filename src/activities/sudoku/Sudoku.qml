@@ -113,6 +113,7 @@ ActivityBase {
             anchors.bottomMargin: 10 * ApplicationInfo.ratio
         }
 
+        Keys.enabled: !bonus.isPlaying
         Keys.onPressed: {
             Activity.onKeyPressed(event);
         }
@@ -164,7 +165,7 @@ ActivityBase {
         MouseArea {
             id: dynamic
             anchors.fill: sudoColumn
-
+            enabled: !bonus.isPlaying
             hoverEnabled: true
 
             property int previousHoveredCase: -1
