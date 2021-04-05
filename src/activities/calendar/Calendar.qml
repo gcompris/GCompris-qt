@@ -78,7 +78,6 @@ ActivityBase {
             onTriggered: {
                 Activity.initQuestion()
             }
-            onRunningChanged: okButtonMouseArea.enabled = !okButtonMouseArea.enabled
         }
 
         Rectangle {
@@ -381,6 +380,7 @@ ActivityBase {
             width: okButton.height
             sourceSize.width: okButton.width
             sourceSize.height: okButton.height
+            enabled: !bonus.isPlaying && !questionDelay.running
             z: 10
             anchors.top: calendarBox.bottom
             anchors.right: calendarBox.right
