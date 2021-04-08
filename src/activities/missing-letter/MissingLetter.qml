@@ -81,7 +81,6 @@ ActivityBase {
             property alias textinput: textinput
             property bool isGoodAnswer: false
             property bool buttonsBlocked: false
-            property bool isHorizontal: background.width * 0.75 > background.height
         }
 
         onStart: {
@@ -124,20 +123,28 @@ ActivityBase {
         }
 
         Item {
-            id: verticalLayoutArea
+            id: layoutArea
             anchors.top: score.bottom
             anchors.bottom: bar.top
-            anchors.bottomMargin: bar.height * 0.5
+            anchors.bottomMargin: bar.height * 0.4
             anchors.left: background.left
             anchors.right: background.right
+            anchors.margins: 10 * ApplicationInfo.ratio
+        }
+
+        Item {
+            id: questionArea
+            width: Math.min(layoutArea.width, layoutArea.height)
+            height: width
+            anchors.centerIn: layoutArea
         }
 
         // Buttons with possible answers shown on the left of screen
         Column {
             id: buttonHolder
             spacing: 10 * ApplicationInfo.ratio
-            x: holder.x - width - 10 * ApplicationInfo.ratio
-            y: holder.y
+            anchors.left: questionArea.left
+            anchors.top: questionArea.top
 
             add: Transition {
                 NumberAnimation { properties: "y"; from: holder.y; duration: 500 }
@@ -147,7 +154,7 @@ ActivityBase {
                 id: answers
 
                 AnswerButton {
-                    width: 120 * ApplicationInfo.ratio
+                    width: questionArea.width - holder.width - 10 * ApplicationInfo.ratio
                     height: (holder.height
                              - buttonHolder.spacing * answers.model.length) / answers.model.length
                     textLabel: modelData
@@ -168,11 +175,10 @@ ActivityBase {
         // Picture holder for different images being shown
         Rectangle {
             id: holder
-            width: Math.max(questionImage.width * 1.1, questionImage.height * 1.1)
-            height: questionTextBg.y + questionTextBg.height
-            x: (background.width - width - 130 * ApplicationInfo.ratio) / 2 +
-               130 * ApplicationInfo.ratio
-            anchors.topMargin: 20
+            width: questionArea.width * 0.7
+            height: questionArea.height
+            anchors.top: questionArea.top
+            anchors.right: questionArea.right
             color: "white"
             radius: 10
             border.width: 2
@@ -183,24 +189,19 @@ ActivityBase {
                 GradientStop { position: 1.0; color: "#80AAAAAA" }
             }
 
-            Item {
-                id: spacer
-                height: 20
-            }
-
             Image {
                 id: questionImage
                 anchors.horizontalCenter: holder.horizontalCenter
-                anchors.top: spacer.bottom
-                width: Math.min((background.width - 120 * ApplicationInfo.ratio) * 0.7,
-                                (background.height - 100 * ApplicationInfo.ratio) * 0.7)
+                anchors.top: holder.top
+                width: holder.width
                 height: width
+                fillMode: Image.PreserveAspectFit
             }
 
             Rectangle {
                 id: questionTextBg
                 width: holder.width
-                height: questionText.height * 1.1
+                height: holder.height - questionImage.height
                 anchors.horizontalCenter: holder.horizontalCenter
                 anchors.top: questionImage.bottom
                 radius: 10
@@ -211,9 +212,13 @@ ActivityBase {
                     horizontalAlignment: Text.AlignHCenter
                     verticalAlignment: Text.AlignVCenter
                     color: "#f2f2f2"
-                    fontSize: largeSize
-                    wrapMode: Text.WordWrap
-                    width: holder.width
+                    anchors.centerIn: parent
+                    width: parent.width * 0.9
+                    height: parent.height * 0.9
+                    font.pointSize: NaN  // need to clear font.pointSize explicitly
+                    fontSizeMode: Text.Fit
+                    minimumPixelSize: 10
+                    font.pixelSize: width * 0.2
 
                     SequentialAnimation {
                         id: questionAnim
@@ -245,37 +250,6 @@ ActivityBase {
                 }
             }
         }
-
-        states: [
-            State {
-                name: "horizontalLayout"
-                when: items.isHorizontal
-                AnchorChanges {
-                    target: holder
-                    anchors.top: background.top
-                    anchors.verticalCenter: undefined
-                }
-                PropertyChanges {
-                    target: questionImage
-                    width: Math.min((background.width - 120 * ApplicationInfo.ratio) * 0.7,
-                                (background.height - 100 * ApplicationInfo.ratio) * 0.7)
-                }
-            },
-            State {
-                name: "verticalLayout"
-                when: !items.isHorizontal
-                AnchorChanges {
-                    target: holder
-                    anchors.top: undefined
-                    anchors.verticalCenter: verticalLayoutArea.verticalCenter
-                }
-                PropertyChanges {
-                    target: questionImage
-                    width: Math.min((background.width - 120 * ApplicationInfo.ratio) * 0.7,
-                                (background.height - bar.height - 100 * ApplicationInfo.ratio) * 0.7)
-                }
-            }
-        ]
 
         Score {
             id: score
