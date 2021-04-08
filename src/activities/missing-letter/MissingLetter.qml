@@ -81,6 +81,7 @@ ActivityBase {
             property alias textinput: textinput
             property bool isGoodAnswer: false
             property bool buttonsBlocked: false
+            property bool isHorizontal: background.width * 0.75 > background.height
         }
 
         onStart: {
@@ -120,6 +121,15 @@ ActivityBase {
             }
 
             Keys.onTabPressed: bar.repeatClicked();
+        }
+
+        Item {
+            id: verticalLayoutArea
+            anchors.top: score.bottom
+            anchors.bottom: bar.top
+            anchors.bottomMargin: bar.height * 0.5
+            anchors.left: background.left
+            anchors.right: background.right
         }
 
         // Buttons with possible answers shown on the left of screen
@@ -162,11 +172,11 @@ ActivityBase {
             height: questionTextBg.y + questionTextBg.height
             x: (background.width - width - 130 * ApplicationInfo.ratio) / 2 +
                130 * ApplicationInfo.ratio
-            y: 20
-            color: "black"
+            anchors.topMargin: 20
+            color: "white"
             radius: 10
             border.width: 2
-            border.color: "black"
+            border.color: "#373737"
             gradient: Gradient {
                 GradientStop { position: 0.0; color: "#80FFFFFF" }
                 GradientStop { position: 0.9; color: "#80EEEEEE" }
@@ -194,21 +204,13 @@ ActivityBase {
                 anchors.horizontalCenter: holder.horizontalCenter
                 anchors.top: questionImage.bottom
                 radius: 10
-                border.width: 2
-                border.color: "black"
-                gradient: Gradient {
-                    GradientStop { position: 0.0; color: "#000" }
-                    GradientStop { position: 0.9; color: "#666" }
-                    GradientStop { position: 1.0; color: "#AAA" }
-                }
+                color: "#373737"
 
                 GCText {
                     id: questionText
                     horizontalAlignment: Text.AlignHCenter
                     verticalAlignment: Text.AlignVCenter
-                    style: Text.Outline
-                    styleColor: "black"
-                    color: "white"
+                    color: "#f2f2f2"
                     fontSize: largeSize
                     wrapMode: Text.WordWrap
                     width: holder.width
@@ -242,9 +244,38 @@ ActivityBase {
                     }
                 }
             }
-
-
         }
+
+        states: [
+            State {
+                name: "horizontalLayout"
+                when: items.isHorizontal
+                AnchorChanges {
+                    target: holder
+                    anchors.top: background.top
+                    anchors.verticalCenter: undefined
+                }
+                PropertyChanges {
+                    target: questionImage
+                    width: Math.min((background.width - 120 * ApplicationInfo.ratio) * 0.7,
+                                (background.height - 100 * ApplicationInfo.ratio) * 0.7)
+                }
+            },
+            State {
+                name: "verticalLayout"
+                when: !items.isHorizontal
+                AnchorChanges {
+                    target: holder
+                    anchors.top: undefined
+                    anchors.verticalCenter: verticalLayoutArea.verticalCenter
+                }
+                PropertyChanges {
+                    target: questionImage
+                    width: Math.min((background.width - 120 * ApplicationInfo.ratio) * 0.7,
+                                (background.height - bar.height - 100 * ApplicationInfo.ratio) * 0.7)
+                }
+            }
+        ]
 
         Score {
             id: score
