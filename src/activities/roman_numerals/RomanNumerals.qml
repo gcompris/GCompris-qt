@@ -87,37 +87,37 @@ ActivityBase {
                 },
                 {
                     values: ['II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX'],
-                    instruction: qsTr("All the units except 4 and 9 are built using sums of I and V:\nI, II, III, V, VI, VII, VIII.\n The 4 and the 9 units are built using differences:\nIV (5 – 1) and IX (10 – 1)"),
+                    instruction: qsTr("All the units except 4 and 9 are built using sums of I and V:\nI, II, III, V, VI, VII, VIII.\n The 4 and the 9 units are built using differences:\nIV (5 – 1) and IX (10 – 1)."),
                     question: qsTr("Convert the roman number %1 to arabic."),
                     toArabic: true
                 },
                 {
                     values: [2, 3, 4, 5, 6, 7, 8, 9],
-                    instruction: qsTr("All the units except 4 and 9 are built using sums of I and V:\nI, II, III, V, VI, VII, VIII.\n The 4 and the 9 units are built using differences:\nIV (5 – 1) and IX (10 – 1)"),
+                    instruction: qsTr("All the units except 4 and 9 are built using sums of I and V:\nI, II, III, V, VI, VII, VIII.\n The 4 and the 9 units are built using differences:\nIV (5 – 1) and IX (10 – 1)."),
                     question: qsTr("Convert the arabic number %1 to roman."),
                     toArabic: false
                 },
                 {
                     values: ['XX', 'XXX', 'XL', 'LX', 'LXX', 'LXXX', 'XC'],
-                    instruction: qsTr("All the tens except 40 and 90 are built using sums of X and L:\nX, XX, XXX, L, LX, LXX, LXXX.\nThe 40 and the 90 tens are built using differences:\nXL (10 taken from 50) and XC (10 taken from 100)"),
+                    instruction: qsTr("All the tens except 40 and 90 are built using sums of X and L:\nX, XX, XXX, L, LX, LXX, LXXX.\nThe 40 and the 90 tens are built using differences:\nXL (10 taken from 50) and XC (10 taken from 100)."),
                     question: qsTr("Convert the roman number %1 to arabic."),
                     toArabic: true
                 },
                 {
                     values: [20, 30, 40, 60, 70, 80, 90],
-                    instruction: qsTr("All the tens except 40 and 90 are built using sums of X and L:\nX, XX, XXX, L, LX, LXX, LXXX.\nThe 40 and the 90 tens are built using differences:\nXL (10 taken from 50) and XC (10 taken from 100)"),
+                    instruction: qsTr("All the tens except 40 and 90 are built using sums of X and L:\nX, XX, XXX, L, LX, LXX, LXXX.\nThe 40 and the 90 tens are built using differences:\nXL (10 taken from 50) and XC (10 taken from 100)."),
                     question: qsTr("Convert the arabic number %1 to roman."),
                     toArabic: false
                 },
                 {
                     values: ['CC', 'CCC', 'CD', 'DC', 'DCC', 'DCCC', 'CM', ],
-                    instruction: qsTr("All the hundreds except 400 and 900 are built using sums of C and D:\nC, CC, CCC, D, DC, DCC, DCCC.\nThe 400 and the 900 hundreds are built using differences:\nCD (100 taken from 500) and CM (100 taken from 1000)"),
+                    instruction: qsTr("All the hundreds except 400 and 900 are built using sums of C and D:\nC, CC, CCC, D, DC, DCC, DCCC.\nThe 400 and the 900 hundreds are built using differences:\nCD (100 taken from 500) and CM (100 taken from 1000)."),
                     question: qsTr("Convert the roman number %1 to arabic."),
                     toArabic: true
                 },
                 {
                     values: [200, 300, 400, 600, 700, 800, 900],
-                    instruction: qsTr("All the hundreds except 400 and 900 are built using sums of C and D:\nC, CC, CCC, D, DC, DCC, DCCC.\nThe 400 and the 900 hundreds are built using differences:\nCD (100 taken from 500) and CM (100 taken from 1000)"),
+                    instruction: qsTr("All the hundreds except 400 and 900 are built using sums of C and D:\nC, CC, CCC, D, DC, DCC, DCCC.\nThe 400 and the 900 hundreds are built using differences:\nCD (100 taken from 500) and CM (100 taken from 1000)."),
                     question: qsTr("Convert the arabic number %1 to roman."),
                     toArabic: false
                 },
