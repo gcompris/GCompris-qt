@@ -99,13 +99,13 @@ ActivityBase {
                 },
                 {
                     values: ['XX', 'XXX', 'XL', 'LX', 'LXX', 'LXXX', 'XC'],
-                    instruction: qsTr("All the tens except 40 and 90 are built using sums of X and L:\nX, XX, XXX, L, LX, LXX, LXXX.\nThe 40 and the 90 tens are built using differences:\nXL (10 taken from 50) and XC (10 taken from 100)\n "),
+                    instruction: qsTr("All the tens except 40 and 90 are built using sums of X and L:\nX, XX, XXX, L, LX, LXX, LXXX.\nThe 40 and the 90 tens are built using differences:\nXL (10 taken from 50) and XC (10 taken from 100)"),
                     question: qsTr("Convert the roman number %1 to arabic."),
                     toArabic: true
                 },
                 {
                     values: [20, 30, 40, 60, 70, 80, 90],
-                    instruction: qsTr("All the tens except 40 and 90 are built using sums of X and L:\nX, XX, XXX, L, LX, LXX, LXXX.\nThe 40 and the 90 tens are built using differences:\nXL (10 taken from 50) and XC (10 taken from 100)\n "),
+                    instruction: qsTr("All the tens except 40 and 90 are built using sums of X and L:\nX, XX, XXX, L, LX, LXX, LXXX.\nThe 40 and the 90 tens are built using differences:\nXL (10 taken from 50) and XC (10 taken from 100)"),
                     question: qsTr("Convert the arabic number %1 to roman."),
                     toArabic: false
                 },
@@ -123,13 +123,13 @@ ActivityBase {
                 },
                 {
                     values: ['MM', 'MMM'],
-                    instruction: qsTr("Sums of M are used for building thousands: M, MM, MMM.\nNotice that you cannot join more than three identical symbols. The first implication of this rule is that you cannot use just sums for building all possible units, tens or hundreds, you must use differences too. On the other hand, it limits the maximum roman number to 3999 (MMMCMXCIX).\n"),
+                    instruction: qsTr("Sums of M are used for building thousands: M, MM, MMM.\nNotice that you cannot join more than three identical symbols. The first implication of this rule is that you cannot use just sums for building all possible units, tens or hundreds, you must use differences too. On the other hand, it limits the maximum roman number to 3999 (MMMCMXCIX)."),
                     question: qsTr("Convert the roman number %1 to arabic."),
                     toArabic: true
                 },
                 {
                     values: [2000, 3000],
-                    instruction: qsTr("Sums of M are used for building thousands: M, MM, MMM.\nNotice that you cannot join more than three identical symbols. The first implication of this rule is that you cannot use just sums for building all possible units, tens or hundreds, you must use differences too. On the other hand, it limits the maximum roman number to 3999 (MMMCMXCIX).\n"),
+                    instruction: qsTr("Sums of M are used for building thousands: M, MM, MMM.\nNotice that you cannot join more than three identical symbols. The first implication of this rule is that you cannot use just sums for building all possible units, tens or hundreds, you must use differences too. On the other hand, it limits the maximum roman number to 3999 (MMMCMXCIX)."),
                     question: qsTr("Convert the arabic number %1 to roman."),
                     toArabic: false
                 },
