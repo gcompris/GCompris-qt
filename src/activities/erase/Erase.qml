@@ -109,7 +109,7 @@ ActivityBase {
             onLoadData: {
                 if(activityData && activityData["mode"]) {
                     items.mode = activityData["mode"];
-                    okButton.show = false
+                    okButton.levelFinished = false
                 }
             }
             onStartActivity: {
