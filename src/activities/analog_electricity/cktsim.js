@@ -135,7 +135,7 @@ var cktsim = (function() {
 		    }
 		    var rGV = mat_rank(GV);
 		    if (rGV < n_vsrc) {
-			this.alert(qsTr('Warning! Circuit has a voltage source loop or a source shorted by a wire, please remove the source or the wire causing the short.'));
+			this.alert(qsTr('Warning! Circuit has a voltage source loop or a source shorted by a wire, please remove the wire causing the short.'));
 			this.alert(qsTr('Warning! Simulator might produce meaningless results or no result with this circuit.'));
 			return false;
 		    }
