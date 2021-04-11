@@ -26,7 +26,7 @@ ActivityInfo {
   prerequisite: ""
   //: Help manual
   manual: qsTr("Drag and drop different regions of the country to their correct locations to complete the map.")
-  credit: ""
+  credit: qsTr("The map of the counties of Norway is © Kartverket (the Norwegian Mapping Authority) and is released under the CC BY 4.0 license. Download links can be found at &lt;https://www.kartverket.no/til-lands/kart/illustrasjonskart&gt;.")
   section: "sciences geography"
   createdInVersion: 4000
   levels: "1,2,3,4"

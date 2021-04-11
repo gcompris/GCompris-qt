@@ -6,6 +6,12 @@ Lithuanian map images
 Copyright: 2000, 2008 Bruno Coudoin and others
 License: GPLv3
 Files:
-all other map images except map of Germany.
+all other map images except map of Germany and Norway.
 
 The map of Germany comes from Wikipedia and is released under the GNU Free Documentation License. Olaf Ronneberger and his children Lina and Julia Ronneberger created the German level.
+
+The map of Norway comes from the Norwegian Mapping Authority:
+https://www.kartverket.no/til-lands/kart/illustrasjonskart
+It was converted to the GCompris map format by Karl Ove Hufthammer <karl@huftis.org>.
+License: CC-BY-4.0
+Attribution text: © Kartverket
