@@ -289,7 +289,7 @@ ActivityBase {
 
         HeaderArea {
             id: procedureHeader
-            property string procedureText: qsTr("Procedure")
+            property string procedureText: qsTr("Procedure") + " ( )"
             headerText: procedureText
             headerOpacity: !background.insertIntoMain ? 1 : 0.5
             visible: procedureCodeArea.visible
