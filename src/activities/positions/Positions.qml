@@ -108,6 +108,8 @@ ActivityBase {
                     id: currentPosition
                     anchors.centerIn: parent
                     checkState: items.checkState
+                    width: Math.min(parent.width, parent.height)
+                    height: width
                 }
 
                 states: [

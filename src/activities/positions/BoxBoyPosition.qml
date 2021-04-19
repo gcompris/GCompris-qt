@@ -12,225 +12,175 @@ import QtQuick 2.6
 import GCompris 1.0
 import "positions.js" as Activity
 
-Image {
-    id: backgroundScreen
+Item {
+    id: backgroundPosition
     property int checkState
+    property real boxSize: Math.min(backgroundPosition.width * 0.4, backgroundPosition.height * 0.4)
 
     Image {
         id: boy
+        z: 0
         source: "qrc:/gcompris/src/activities/positions/resource/boy.svg"
-        anchors.margins: 5 * ApplicationInfo.ratio
-        sourceSize.width: backgroundScreen.width * 0.2
-        sourceSize.height: backgroundScreen.height * 0.5
-        fillMode: Image.PreserveAspectCrop
+        height: backgroundPosition.boxSize * 0.75
+        width: height
+        sourceSize.height: height
+        sourceSize.width: height
+        fillMode: Image.PreserveAspectFit
+        anchors.verticalCenter: backSide.verticalCenter
+        anchors.horizontalCenter: backSide.horizontalCenter
+        anchors.horizontalCenterOffset: 0
+        anchors.verticalCenterOffset: 0
     }
 
     Image {
         id: backSide
+        z: 1
         source: "qrc:/gcompris/src/activities/positions/resource/back_side.svg"
         anchors.horizontalCenter: parent.horizontalCenter
         anchors.verticalCenter: parent.verticalCenter
-        sourceSize.width: backgroundScreen.width * 0.1
-        sourceSize.height: backgroundScreen.height * 0.4
-        fillMode: Image.PreserveAspectCrop
-    }
-
-    Image {
-        id: frontSide
-        source: "qrc:/gcompris/src/activities/positions/resource/front_side.svg"
-        anchors.centerIn: backSide
-        sourceSize.width: backgroundScreen.width * 0.1
-        sourceSize.height: backgroundScreen.height * 0.4
-        fillMode: Image.PreserveAspectCrop
-    }
-
-    Image {
-        id: leftSide
-        source: "qrc:/gcompris/src/activities/positions/resource/left_side.svg"
-        anchors.centerIn: frontSide
-        sourceSize.width: backgroundScreen.width * 0.09
-        sourceSize.height: backgroundScreen.height * 0.4
-        fillMode: Image.PreserveAspectCrop
+        sourceSize.width: backgroundPosition.boxSize
+        sourceSize.height: backgroundPosition.boxSize
+        fillMode: Image.PreserveAspectFit
     }
 
     Image {
         id: rightSide
+        z: 1
         source: "qrc:/gcompris/src/activities/positions/resource/right_side.svg"
         anchors.centerIn: backSide
-        sourceSize.width: backgroundScreen.width * 0.09
-        sourceSize.height: backgroundScreen.height * 0.4
-        fillMode: Image.PreserveAspectCrop
+        sourceSize.width: backgroundPosition.boxSize
+        sourceSize.height: backgroundPosition.boxSize
+        fillMode: Image.PreserveAspectFit
+    }
+
+    Image {
+        id: leftSide
+        z: 10
+        source: "qrc:/gcompris/src/activities/positions/resource/left_side.svg"
+        anchors.centerIn: backSide
+        sourceSize.width: backgroundPosition.boxSize
+        sourceSize.height: backgroundPosition.boxSize
+        fillMode: Image.PreserveAspectFit
+    }
+
+    Image {
+        id: frontSide
+        z: 10
+        source: "qrc:/gcompris/src/activities/positions/resource/front_side.svg"
+        anchors.centerIn: backSide
+        sourceSize.width: backgroundPosition.boxSize
+        sourceSize.height: backgroundPosition.boxSize
+        fillMode: Image.PreserveAspectFit
     }
 
     Image {
         id: topSide
+        z: 10
         source: "qrc:/gcompris/src/activities/positions/resource/top_side.svg"
         anchors.centerIn: backSide
-        sourceSize.width: backgroundScreen.width * 0.3
-        sourceSize.height: backgroundScreen.height * 0.4
-        fillMode: Image.PreserveAspectCrop
+        sourceSize.width: backgroundPosition.boxSize
+        sourceSize.height: backgroundPosition.boxSize
+        fillMode: Image.PreserveAspectFit
+        visible: true
     }
 
     states: [
         State {
             name: "underPosition"
             when: checkState === Activity.underPosition
-            AnchorChanges {
-                target: boy
-                anchors.horizontalCenter: frontSide.horizontalCenter
-                anchors.top: topSide.verticalCenter
-                anchors.bottom: undefined
-                anchors.left: undefined
-                anchors.right: undefined
-            }
             PropertyChanges {
                 target: boy
-                z: 1
-                y: 0.01 * ApplicationInfo.ratio
+                z: 0
+                anchors.horizontalCenterOffset: 0
+                anchors.verticalCenterOffset: backgroundPosition.boxSize * 0.75
             }
             PropertyChanges {
-                target: frontSide
-                z: 2
-            }
-            PropertyChanges {
-                target: leftSide
-                z: 2
+                target: topSide
+                visible: true
             }
         },
         State {
             name: "rightPosition"
             when: checkState === Activity.rightPosition
-            AnchorChanges {
+            PropertyChanges {
                 target: boy
-                anchors.verticalCenter: frontSide.verticalCenter
-                anchors.left: frontSide.right
-                anchors.bottom: undefined
-                anchors.top: undefined
-                anchors.right: undefined
+                z: 0
+                anchors.horizontalCenterOffset: backgroundPosition.boxSize * 0.75
+                anchors.verticalCenterOffset: backgroundPosition.boxSize * 0.05
+            }
+            PropertyChanges {
+                target: topSide
+                visible: true
             }
         },
         State {
             name: "leftPosition"
             when: checkState === Activity.leftPosition
-            AnchorChanges {
+            PropertyChanges {
                 target: boy
-                anchors.verticalCenter: frontSide.verticalCenter
-                anchors.right: frontSide.left
-                anchors.left: undefined
-                anchors.top: undefined
-                anchors.bottom: undefined
+                z: 15
+                anchors.horizontalCenterOffset: backgroundPosition.boxSize * -0.7
+                anchors.verticalCenterOffset: backgroundPosition.boxSize * 0.05
+            }
+            PropertyChanges {
+                target: topSide
+                visible: true
             }
         },
         State {
             name: "abovePosition"
             when: checkState === Activity.abovePosition
-            AnchorChanges {
-                target: boy
-                anchors.bottom: topSide.verticalCenter
-                anchors.horizontalCenter: frontSide.horizontalCenter
-                anchors.top: undefined
-                anchors.left: undefined
-                anchors.right: undefined
-            }
             PropertyChanges {
                 target: boy
-                z: 1
+                z: 15
+                anchors.horizontalCenterOffset: backgroundPosition.boxSize * -0.05
+                anchors.verticalCenterOffset: backgroundPosition.boxSize * -0.7
             }
             PropertyChanges {
-                target: frontSide
-                z: 2
-            }
-            PropertyChanges {
-                target: leftSide
-                z: 2
+                target: topSide
+                visible: true
             }
         },
         State {
             name: "insidePosition"
             when: checkState === Activity.insidePosition
-            AnchorChanges {
-                target: boy
-                anchors.horizontalCenter: backgroundScreen.horizontalCenter
-                anchors.bottom: backSide.bottom
-                anchors.top: undefined
-                anchors.left: undefined
-                anchors.right: undefined
-            }
             PropertyChanges {
                 target: boy
-                z: 1
+                z: 5
+                anchors.horizontalCenterOffset: backgroundPosition.boxSize * -0.05
+                anchors.verticalCenterOffset: backgroundPosition.boxSize * -0.25
             }
             PropertyChanges {
-                target: frontSide
-                z: 2
-            }
-            PropertyChanges {
-                target: leftSide
-                z: 2
+                target: topSide
+                visible: false
             }
         },
         State {
             name: "behindPosition"
             when: checkState === Activity.behindPosition
-            AnchorChanges {
-                target: boy
-                anchors.horizontalCenter: backgroundScreen.horizontalCenter
-                anchors.bottom: backSide.verticalCenter
-                anchors.top: undefined
-                anchors.left: undefined
-                anchors.right: undefined
-            }
             PropertyChanges {
                 target: boy
                 z: 0
+                anchors.horizontalCenterOffset: backgroundPosition.boxSize * -0.15
+                anchors.verticalCenterOffset: backgroundPosition.boxSize * -0.5
             }
             PropertyChanges {
-                target: backSide
-                z: 1
-            }
-            PropertyChanges {
-                target: rightSide
-                z: 1
-            }
-            PropertyChanges {
-                target: leftSide
-                z: 1
-            }
-            PropertyChanges {
-                target: frontSide
-                z: 1
+                target: topSide
+                visible: true
             }
         },
         State {
             name: "inFrontOfPosition"
             when: checkState === Activity.inFrontOfPosition
-            AnchorChanges {
-                target: boy
-                anchors.horizontalCenter: backgroundScreen.horizontalCenter
-                anchors.top: frontSide.verticalCenter
-                anchors.bottom: undefined
-                anchors.left: undefined
-                anchors.right: undefined
-            }
             PropertyChanges {
                 target: boy
-                z: 1
+                z: 15
+                anchors.horizontalCenterOffset: backgroundPosition.boxSize * 0.15
+                anchors.verticalCenterOffset: backgroundPosition.boxSize * 0.25
             }
             PropertyChanges {
-                target: frontSide
-                z: 0
-            }
-            PropertyChanges {
-                target: leftSide
-                z: 0
-            }
-            PropertyChanges {
-                target: backSide
-                z: 0
-            }
-            PropertyChanges {
-                target: rightSide
-                z: 0
+                target: topSide
+                visible: true
             }
         }
     ]
