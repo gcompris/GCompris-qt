@@ -19,7 +19,7 @@ ActivityBase {
     onStart: focus = true;
     pageComponent: Image {
         id: background
-        source: "qrc:/gcompris/src/activities/colors/resource/background.svg"
+        source: "qrc:/gcompris/src/activities/family/resource/background.svg"
         sourceSize.width: width
         sourceSize.height: height
         focus: true
