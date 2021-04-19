@@ -14,14 +14,14 @@ ActivityInfo {
   //: Activity title
   title: qsTr("Positions")
   //: Help title
-  description: qsTr("Find the boy's position relative to the box.")
+  description: qsTr("Find the boy's position in relation to the box.")
   //intro: "Find the correct position"
   //: Help goal
   goal: qsTr("Describe the relative position of an object.")
   //: Help prerequisite
   prerequisite:qsTr("Can read.")
   //: Help manual
-  manual: qsTr("You will see different images representing a boy and a box, you have to find out the position of the boy in respect to the box and select the correct answer.") + ("<br><br>") +
+  manual: qsTr("You will see different images representing a boy and a box, you have to find out the position of the boy in relation to the box and select the correct answer.") + ("<br><br>") +
           qsTr("<b>Keyboard controls:</b>") + ("<ul><li>") +
           qsTr("Arrows: navigate") + ("</li><li>") +
           qsTr("Space or Enter: validate selected answer") + ("</li></ul>")
