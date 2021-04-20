@@ -141,10 +141,12 @@ ActivityBase {
 
                 delegate: Rectangle {
                     id: answer
-                    color: "lightblue"
+                    color: index == answerViews.currentIndex ? "#FFFFFFFF" : "#80FFFFFF"
                     radius: 15
                     width: answerViews.cellWidth - 2 * ApplicationInfo.ratio
                     height: answerViews.cellHeight - 2 * ApplicationInfo.ratio
+                    border.width: index == answerViews.currentIndex ? 3 : 0
+                    border.color: "#373737"
 
                     property alias text: answerText.text
                     GCText {
@@ -170,14 +172,6 @@ ActivityBase {
                         answerViews.currentIndex = index
                         items.selectedPosition = stateId
                     }
-                }
-
-                highlight: Rectangle {
-                    width: answerViews.cellWidth
-                    height: answerViews.cellHeight
-                    color: "black"
-                    border.width: 3
-                    border.color: "black"
                 }
 
                 states: [
@@ -239,9 +233,10 @@ ActivityBase {
                 highlight: Rectangle {
                     width: positionViews.itemWidth
                     height: positionViews.itemWidth
-                    color: "#AAFFFFFF"
+                    radius: 15
+                    color: "#C0FFFFFF"
                     border.width: 3
-                    border.color: "black"
+                    border.color: "#373737"
                     Behavior on x { SpringAnimation { spring: 2; damping: 0.2 } }
                     Behavior on y { SpringAnimation { spring: 2; damping: 0.2 } }
                  }
