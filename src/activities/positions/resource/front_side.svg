@@ -5,11 +5,11 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
-   id="svg8"
-   version="1.1"
-   viewBox="0 0 67.733332 67.733333"
+   width="256"
    height="256"
-   width="256">
+   viewBox="0 0 67.733332 67.733333"
+   version="1.1"
+   id="svg8">
   <defs
      id="defs2" />
   <metadata
@@ -48,18 +48,16 @@
     </rdf:RDF>
   </metadata>
   <g
-     transform="translate(-64.261019,-40.720703)"
-     id="layer1">
-    <rect
-       y="57.654034"
-       x="81.194351"
-       height="50.800003"
-       width="50.800003"
-       id="rect867-2"
-       style="opacity:1;vector-effect:none;fill:#855823;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.29338482;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+     id="layer1"
+     transform="translate(-64.261019,-40.720703)">
     <path
-       id="rect867-2-9"
+       id="rect867-2"
+       transform="matrix(0.26458333,0,0,0.26458333,64.261019,40.720703)"
+       d="m 60,60 v 192 l 4,4 H 256 V 64 H 64 Z"
+       style="opacity:1;vector-effect:none;fill:#855823;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.10885608;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <path
+       style="opacity:1;vector-effect:none;fill:#d89d56;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.28116041;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        d="M 82.252686,58.712372 H 129.87769 V 106.33737 H 82.252686 Z"
-       style="opacity:1;vector-effect:none;fill:#d89d56;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.28116041;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+       id="rect867-2-9" />
   </g>
 </svg>

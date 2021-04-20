@@ -5,11 +5,11 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
-   id="svg8"
-   version="1.1"
-   viewBox="0 0 67.733332 67.733333"
+   width="256"
    height="256"
-   width="256">
+   viewBox="0 0 67.733332 67.733333"
+   version="1.1"
+   id="svg8">
   <defs
      id="defs2" />
   <metadata
@@ -48,15 +48,16 @@
     </rdf:RDF>
   </metadata>
   <g
-     transform="translate(-64.261019,-40.720703)"
-     id="layer1">
+     id="layer1"
+     transform="translate(-64.261019,-40.720703)">
     <path
        id="path826-6"
-       d="m 115.06102,91.520702 16.93333,16.933338 V 57.654036 L 115.06102,40.720703 Z"
-       style="fill:#855823;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+       transform="matrix(0.26458333,0,0,0.26458333,64.261019,40.720703)"
+       d="m 188,0 v 192 h 4 l 64,64 V 64 L 192,0 Z"
+       style="fill:#855823;fill-opacity:1;stroke:none;stroke-width:0.99999994px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
     <path
-       id="path826-6-7"
+       style="fill:#ca8636;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="M 116.11935,89.404036 130.93602,104.2207 V 59.770703 L 116.11935,44.954036 Z"
-       style="fill:#ca8636;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+       id="path826-6-7" />
   </g>
 </svg>
