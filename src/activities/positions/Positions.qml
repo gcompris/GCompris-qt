@@ -198,7 +198,7 @@ ActivityBase {
 
             GridView {
                 id: positionViews
-                anchors.top: questionItem.bottom
+                anchors.top: questionArea.bottom
                 anchors.horizontalCenter: mainScreen.horizontalCenter
                 visible: items.currentLevel % 2 === 0 ? true : false
                 width: mainScreen.width * 0.9
@@ -247,21 +247,29 @@ ActivityBase {
                  }
             }
 
+            Rectangle {
+                id: questionArea
+                anchors.centerIn: questionItem
+                width: questionItem.paintedWidth * 1.1
+                height: questionItem.paintedHeight * 1.1
+                radius: 10
+                color: "#373737"
+                border.width: 2
+                border.color: "#F2F2F2"
+                visible: questionItem.visible
+            }
+
             GCText {
                 id: questionItem
                 visible: items.currentLevel % 2 === 0 ? true : false
                 anchors.horizontalCenter: mainScreen.horizontalCenter
                 anchors.top: mainScreen.top
-                anchors.topMargin: 2 * ApplicationInfo.ratio
-                anchors.bottomMargin: 2 * ApplicationInfo.ratio
+                anchors.topMargin: background.height * 0.02
                 text: items.questionText
                 fontSize: smallSize
-                width: parent.width * 0.9
+                width: parent.width * 0.8
                 horizontalAlignment: Text.AlignHCenter
                 wrapMode: Text.WordWrap
-                font.weight: Font.DemiBold
-                style: Text.Outline
-                styleColor: "black"
                 color: "white"
             }
         }
