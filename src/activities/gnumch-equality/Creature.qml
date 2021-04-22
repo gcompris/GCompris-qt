@@ -21,7 +21,7 @@ Item {
     property bool movingOn: false
     property bool eating: false
     property int frames
-    property int frameSize: 80
+    property int frameSize: 320
     property int animCount: 0
     property GCSfx audioEffects
     readonly property int moveRight: 0
@@ -76,14 +76,14 @@ Item {
         var sign = Math.pow(-1, (direction))
         index += sign * (1 + 5 * vertical)
         var restIndex = index % 6
-        y = ((index - restIndex) / 6) * grid.cellHeight
-        x = restIndex * grid.cellWidth
+        y = Math.floor(((index - restIndex) / 6) * grid.cellHeight)
+        x = Math.floor(restIndex * grid.cellWidth)
     }
 
     function updatePosition() {
         var restIndex = index % 6
-        y = ((index - restIndex) / 6) * grid.cellHeight
-        x = restIndex * grid.cellWidth
+        y = Math.floor(((index - restIndex) / 6) * grid.cellHeight)
+        x = Math.floor(restIndex * grid.cellWidth)
     }
 
     index: 0
@@ -110,7 +110,7 @@ Item {
         width: Math.min(parent.width, parent.height)
         height: width
         source: "qrc:/gcompris/src/activities/gnumch-equality/resource/"
-                + monsterType + ".png"
+                + monsterType + ".svg"
 
         frameCount: creature.frames
         frameWidth: creature.frameSize
@@ -118,6 +118,7 @@ Item {
         frameDuration: 50
         currentFrame: 0
         running: false
+        interpolate: false
 
         onCurrentFrameChanged: {
             creature.animCount++

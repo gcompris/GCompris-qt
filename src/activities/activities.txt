@@ -132,6 +132,7 @@ piano_composition
 planegame
 play_piano
 play_rhythm
+positions
 programmingMaze
 railroad
 readingh

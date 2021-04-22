@@ -76,10 +76,11 @@ static const char *DEFAULT_DOWNLOAD_SERVER = "https://cdn.kde.org/gcompris";
 
 ApplicationSettings *ApplicationSettings::m_instance = nullptr;
 
-ApplicationSettings::ApplicationSettings(const QString &configPath, QObject *parent): QObject(parent),
-     m_baseFontSizeMin(-7), m_baseFontSizeMax(7),
-     m_fontLetterSpacingMin(0.0), m_fontLetterSpacingMax(8.0),
-     m_config(configPath, QSettings::IniFormat)
+ApplicationSettings::ApplicationSettings(const QString &configPath, QObject *parent) :
+    QObject(parent),
+    m_baseFontSizeMin(-7), m_baseFontSizeMax(7),
+    m_fontLetterSpacingMin(0.0), m_fontLetterSpacingMax(8.0),
+    m_config(configPath, QSettings::IniFormat)
 {
     const QRect &screenSize = QGuiApplication::screens().at(0)->availableGeometry();
     // initialize from settings file or default
@@ -93,10 +94,11 @@ ApplicationSettings::ApplicationSettings(const QString &configPath, QObject *par
     m_previousWidth = m_config.value(PREVIOUS_WIDTH_KEY, screenSize.width()).toUInt();
     m_isAudioVoicesEnabled = m_config.value(ENABLE_AUDIO_VOICES_KEY, true).toBool();
     m_isVirtualKeyboard = m_config.value(VIRTUALKEYBOARD_KEY,
-            ApplicationInfo::getInstance()->isMobile()).toBool();
+                                         ApplicationInfo::getInstance()->isMobile())
+                              .toBool();
     m_locale = m_config.value(LOCALE_KEY, GC_DEFAULT_LOCALE).toString();
     m_font = m_config.value(FONT_KEY, GC_DEFAULT_FONT).toString();
-    if(m_font == QLatin1String("Andika-R.ttf"))
+    if (m_font == QLatin1String("Andika-R.ttf"))
         m_font = "Andika-R.otf";
     m_fontCapitalization = m_config.value(FONT_CAPITALIZATION, GC_DEFAULT_FONT_CAPITALIZATION).toUInt();
     m_fontLetterSpacing = m_config.value(FONT_LETTER_SPACING, GC_DEFAULT_FONT_LETTER_SPACING).toReal();
@@ -115,20 +117,21 @@ ApplicationSettings::ApplicationSettings(const QString &configPath, QObject *par
     m_wordset = m_config.value(WORDSET, "").toString();
     m_useWordset = m_config.value(USE_WORDSET, true).toBool();
     m_isAutomaticDownloadsEnabled = m_config.value(ENABLE_AUTOMATIC_DOWNLOADS,
-            !ApplicationInfo::getInstance()->isMobile() && ApplicationInfo::isDownloadAllowed()).toBool();
+                                                   !ApplicationInfo::getInstance()->isMobile() && ApplicationInfo::isDownloadAllowed())
+                                        .toBool();
     m_filterLevelMin = m_config.value(FILTER_LEVEL_MIN, 1).toUInt();
     m_filterLevelMax = m_config.value(FILTER_LEVEL_MAX, 6).toUInt();
     m_defaultCursor = m_config.value(DEFAULT_CURSOR, false).toBool();
     m_noCursor = m_config.value(NO_CURSOR, false).toBool();
     m_baseFontSize = m_config.value(BASE_FONT_SIZE_KEY, 0).toInt();
 
-    m_config.sync();  // make sure all defaults are written back
+    m_config.sync(); // make sure all defaults are written back
     m_config.endGroup();
 
     // admin group
     m_config.beginGroup(ADMIN_GROUP_KEY);
     m_downloadServerUrl = m_config.value(DOWNLOAD_SERVER_URL_KEY, QLatin1String(DEFAULT_DOWNLOAD_SERVER)).toString();
-    if(m_downloadServerUrl == "http://gcompris.net") {
+    if (m_downloadServerUrl == "http://gcompris.net") {
         setDownloadServerUrl(DEFAULT_DOWNLOAD_SERVER);
     }
     m_cachePath = m_config.value(CACHE_PATH_KEY, QStandardPaths::writableLocation(QStandardPaths::CacheLocation)).toString();
@@ -230,13 +233,13 @@ ApplicationSettings::~ApplicationSettings()
 void ApplicationSettings::notifyAudioVoicesEnabledChanged()
 {
     updateValueInConfig(GENERAL_GROUP_KEY, ENABLE_AUDIO_VOICES_KEY, m_isAudioVoicesEnabled);
-	qDebug() << "notifyAudioVoices: " << m_isAudioVoicesEnabled;
+    qDebug() << "notifyAudioVoices: " << m_isAudioVoicesEnabled;
 }
 
 void ApplicationSettings::notifyAudioEffectsEnabledChanged()
 {
     updateValueInConfig(GENERAL_GROUP_KEY, ENABLE_AUDIO_EFFECTS_KEY, m_isAudioEffectsEnabled);
-	qDebug() << "notifyAudioEffects: " << m_isAudioEffectsEnabled;
+    qDebug() << "notifyAudioEffects: " << m_isAudioEffectsEnabled;
 }
 
 void ApplicationSettings::notifyBackgroundMusicEnabledChanged()
@@ -248,19 +251,19 @@ void ApplicationSettings::notifyBackgroundMusicEnabledChanged()
 void ApplicationSettings::notifyFilteredBackgroundMusicChanged()
 {
     updateValueInConfig(GENERAL_GROUP_KEY, FILTERED_BACKGROUND_MUSIC_KEY, m_filteredBackgroundMusic);
-    qDebug()<<"filteredBackgroundMusic: " << m_filteredBackgroundMusic;
+    qDebug() << "filteredBackgroundMusic: " << m_filteredBackgroundMusic;
 }
 
 void ApplicationSettings::notifyBackgroundMusicVolumeChanged()
 {
     updateValueInConfig(GENERAL_GROUP_KEY, BACKGROUND_MUSIC_VOLUME_KEY, m_backgroundMusicVolume);
-    qDebug()<<"backgroundMusicVolume: " << m_backgroundMusicVolume;
+    qDebug() << "backgroundMusicVolume: " << m_backgroundMusicVolume;
 }
 
 void ApplicationSettings::notifyAudioEffectsVolumeChanged()
 {
     updateValueInConfig(GENERAL_GROUP_KEY, AUDIO_EFFECTS_VOLUME_KEY, m_audioEffectsVolume);
-    qDebug()<<"audioEffectsVolume: " << m_audioEffectsVolume;
+    qDebug() << "audioEffectsVolume: " << m_audioEffectsVolume;
 }
 
 void ApplicationSettings::notifyLocaleChanged()
@@ -317,11 +320,13 @@ void ApplicationSettings::notifyVirtualKeyboardChanged()
     qDebug() << "virtualkeyboard set to: " << m_isVirtualKeyboard;
 }
 
-bool ApplicationSettings::isAutomaticDownloadsEnabled() const {
+bool ApplicationSettings::isAutomaticDownloadsEnabled() const
+{
     return m_isAutomaticDownloadsEnabled && ApplicationInfo::isDownloadAllowed();
 }
-void ApplicationSettings::setIsAutomaticDownloadsEnabled(const bool newIsAutomaticDownloadsEnabled) {
-    if(ApplicationInfo::isDownloadAllowed()) {
+void ApplicationSettings::setIsAutomaticDownloadsEnabled(const bool newIsAutomaticDownloadsEnabled)
+{
+    if (ApplicationInfo::isDownloadAllowed()) {
         m_isAutomaticDownloadsEnabled = newIsAutomaticDownloadsEnabled;
         emit automaticDownloadsEnabledChanged();
     }
@@ -358,9 +363,7 @@ void ApplicationSettings::notifySectionVisibleChanged()
 
 void ApplicationSettings::notifyWordsetChanged()
 {
-    if(!m_wordset.isEmpty() &&
-       DownloadManager::getInstance()->haveLocalResource(m_wordset) &&
-       !DownloadManager::getInstance()->isDataRegistered("words")) {
+    if (!m_wordset.isEmpty() && DownloadManager::getInstance()->haveLocalResource(m_wordset) && !DownloadManager::getInstance()->isDataRegistered("words")) {
         // words.rcc is there -> register old file first
         // then try to update in the background
         DownloadManager::getInstance()->updateResource(m_wordset);
@@ -439,7 +442,7 @@ QVariantMap ApplicationSettings::loadActivityConfiguration(const QString &activi
     m_config.beginGroup(activity);
     QStringList keys = m_config.childKeys();
     QVariantMap data;
-    for(const QString &key : keys) {
+    for (const QString &key: keys) {
         data[key] = m_config.value(key);
     }
     m_config.endGroup();
@@ -472,18 +475,20 @@ QStringList ApplicationSettings::currentLevels(const QString &activity)
     return level;
 }
 
-template<class T> void ApplicationSettings::updateValueInConfig(const QString& group,
-                                              const QString& key, const T& value, bool sync)
+template <class T>
+void ApplicationSettings::updateValueInConfig(const QString &group,
+                                              const QString &key, const T &value, bool sync)
 {
     m_config.beginGroup(group);
     m_config.setValue(key, value);
     m_config.endGroup();
-    if(sync) {
+    if (sync) {
         m_config.sync();
     }
 }
 
-void ApplicationSettings::sync() {
+void ApplicationSettings::sync()
+{
     m_config.sync();
 }
 
@@ -502,7 +507,6 @@ void ApplicationSettings::saveActivityProgress(const QString &activity, int prog
     updateValueInConfig(activity, PROGRESS_KEY, progress);
 }
 
-
 bool ApplicationSettings::useExternalWordset()
 {
     return !m_wordset.isEmpty() && DownloadManager::getInstance()->isDataRegistered("words");
@@ -514,6 +518,6 @@ QObject *ApplicationSettings::applicationSettingsProvider(QQmlEngine *engine,
     Q_UNUSED(engine)
     Q_UNUSED(scriptEngine)
 
-    ApplicationSettings* appSettings = getInstance();
+    ApplicationSettings *appSettings = getInstance();
     return appSettings;
 }

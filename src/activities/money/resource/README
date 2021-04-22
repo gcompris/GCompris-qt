@@ -6,10 +6,6 @@ money1.wav: florian_reinke https://www.freesound.org/people/florian_reinke/sound
 Copyright: 2000, 2008 Bruno Coudoin and others
 License: GPLv3
 Files:
-apple.svg
-banane.svg
-bicycle.svg
-bottle.svg
 c1c.svg
 c1e.svg
 c2c.svg
@@ -18,31 +14,10 @@ c5c.svg
 c10c.svg
 c20c.svg
 c50c.svg
-cake.svg
-carot.svg
-cerise.svg
-eggpot.svg
-football.svg
-lamp.svg
-light.svg
 n5e.svg
 n10e.svg
 n20e.svg
 n50e.svg
-orange.svg
-pamplemousse.svg
-pencil.svg
-umbrella.svg
-
-Copyright: Wildchief, 2010
-License: Public domain
-Files:
-background.svg          
-
-Copyright: mairin, 2011
-License: Public domain
-Files:
-tux.svg
 
 License: Public domain
 n100e.png: https://commons.wikimedia.org/wiki/Category:100_euro_banknotes#/media/File:100-Euro.svg

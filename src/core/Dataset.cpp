@@ -9,7 +9,7 @@
  */
 #include "Dataset.h"
 
-Dataset::Dataset(QObject *parent):
+Dataset::Dataset(QObject *parent) :
     QObject(parent),
     m_objective(""),
     m_difficulty(0),

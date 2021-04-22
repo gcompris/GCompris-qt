@@ -28,15 +28,16 @@ WidgetOption {
                     var currentChild = repeaterDropAreas.itemAt(i)
                     var childCoordinate = dropAreas.mapToItem(background, currentChild.x, currentChild.y)
                     //coordinates of "boy/girl rectangle" in background coordinates
-                    if ((listModel.get(i).countS + 1) > items.maxNumberOfCandiesPerWidget) {
-                        continue
-                    }
 
                     var currentElement = element.parent.mapToItem(background, element.x, element.y)
 
                     if (currentElement.x > childCoordinate.x && currentElement.x < childCoordinate.x + currentChild.area.width &&
                     currentElement.y > childCoordinate.y + currentChild.childImage.height &&
                     currentElement.y < childCoordinate.y + currentChild.childImage.height + currentChild.area.height) {
+                        if ((listModel.get(i).countS + 1) > items.maxNumberOfCandiesPerWidget) {
+                            background.wrongMove.visible = true
+                            continue
+                        }
                         repeaterDropAreas.itemAt(i).candyCount.text = listModel.get(i).countS + 1
                         listModel.setProperty(i, "countS", listModel.get(i).countS + 1)
                         background.currentCandies ++

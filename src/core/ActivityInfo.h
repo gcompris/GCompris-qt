@@ -180,17 +180,17 @@ public:
     int createdInVersion() const;
     void setCreatedInVersion(const int);
     QStringList levels() const;
-    void setLevels(const QStringList&);
+    void setLevels(const QStringList &);
     QStringList currentLevels() const;
-    void setCurrentLevels(const QStringList&);
+    void setCurrentLevels(const QStringList &);
     bool hasConfig() const;
     bool hasDataset() const;
     QQmlListProperty<Dataset> datasets();
     void fillDatasets(QQmlEngine *engine);
     void enableDatasetsBetweenDifficulties(quint32 levelMin, quint32 levelMax);
 
-    void addDataset(const QString& name, Dataset *dataset);
-    Q_INVOKABLE Dataset *getDataset(const QString& name) const;
+    void addDataset(const QString &name, Dataset *dataset);
+    Q_INVOKABLE Dataset *getDataset(const QString &name) const;
 
 signals:
     void nameChanged();

@@ -86,14 +86,14 @@ var mainTutorialInstructions = [
                                     qsTr("<b>1. Move forward:</b> Moves Tux one step forward in the direction it is facing.") + "</li><li>" +
                                     qsTr("<b>2. Turn left:</b> Turns Tux to the left.") + "</li><li>" +
                                     qsTr("<b>3. Turn right:</b> Turns Tux to the right.") + "</li>",
-                "instructionImage": "qrc:/gcompris/src/activities/programmingMaze/resource/tutorial1.png"
+                "instructionQml": "qrc:/gcompris/src/activities/programmingMaze/resource/tutorial1.qml"
             },
             {
                 "instruction": "<b><h7>" + qsTr("Main Function:") + "</h7></b>" +
                                     qsTr("The execution of the code starts here.") + "<li>" +
                                     qsTr("-Click on any instruction in the <b>instruction area</b> to add it to the <b>Main Function</b>.") + "</li><li>" +
                                     qsTr("-The instructions will execute in order until there's none left, or until a dead-end, or when Tux reaches the fish.") + "</li>",
-                "instructionImage": "qrc:/gcompris/src/activities/programmingMaze/resource/tutorial2.png"
+                "instructionQml": "qrc:/gcompris/src/activities/programmingMaze/resource/tutorial2.qml"
             },
         ]
 
@@ -102,7 +102,7 @@ var procedureTutorialInstructions = [
                 "instruction": "<b><h7>" + qsTr("Procedure:") + "</h7></b>" +
                                     qsTr("<b>Procedure</b> is a reusable set of instructions which can be <b>used in the code by calling it where needed</b>.") + "<li>" +
                                     qsTr("-To <b>switch</b> between the <b>Procedure area</b> and the <b>Main Function area</b> to add your code, click on the <b>Procedure</b> or <b>Main Function</b> label.") + "</li>",
-                "instructionImage": "qrc:/gcompris/src/activities/programmingMaze/resource/tutorial3.png"
+                "instructionQml": "qrc:/gcompris/src/activities/programmingMaze/resource/tutorial3.qml"
             },
         ]
 

@@ -31,7 +31,7 @@ void GComprisPlugin::registerTypes(const char *uri)
                           "File");
     qmlRegisterType<Directory>(uri, versionMajor, versionMinor,
                                "Directory");
-    
+
     qmlRegisterSingletonType<ApplicationInfo>(uri, versionMajor, versionMinor,
                                               "ApplicationInfo", ApplicationInfo::applicationInfoProvider);
 
@@ -46,5 +46,4 @@ void GComprisPlugin::registerTypes(const char *uri)
 
     qmlRegisterSingletonType<GSynth>(uri, versionMajor, versionMinor,
                                      "GSynth", GSynth::synthProvider);
-
 }

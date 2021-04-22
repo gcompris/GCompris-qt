@@ -59,122 +59,122 @@ function start(items_, twoPlayer_) {
     // Creating drag points
     items.dragPointsModel.append({
         "posX": 0.05,
-        "posY": 0.948,
+        "posY": 0.95,
         "myIndex": 0
     })
     items.dragPointsModel.append({
-        "posX": 0.500,
-        "posY": 0.948,
+        "posX": 0.5,
+        "posY": 0.95,
         "myIndex": 1
     })
     items.dragPointsModel.append({
         "posX": 0.95,
-        "posY": 0.948,
+        "posY": 0.95,
         "myIndex": 2
     })
     items.dragPointsModel.append({
-        "posX": 0.19,
-        "posY": 0.814,
+        "posX": 0.2,
+        "posY": 0.8,
         "myIndex": 3
     })
     items.dragPointsModel.append({
-        "posX": 0.500,
-        "posY": 0.814,
+        "posX": 0.5,
+        "posY": 0.8,
         "myIndex": 4
     })
     items.dragPointsModel.append({
-        "posX": 0.81,
-        "posY": 0.814,
+        "posX": 0.8,
+        "posY": 0.8,
         "myIndex": 5
     })
     items.dragPointsModel.append({
-        "posX": 0.313,
-        "posY": 0.687,
+        "posX": 0.35,
+        "posY": 0.65,
         "myIndex": 6
     })
     items.dragPointsModel.append({
-        "posX": 0.500,
-        "posY": 0.687,
+        "posX": 0.5,
+        "posY": 0.65,
         "myIndex": 7
     })
     items.dragPointsModel.append({
-        "posX": 0.689,
-        "posY": 0.687,
+        "posX": 0.65,
+        "posY": 0.65,
         "myIndex": 8
     })
     items.dragPointsModel.append({
         "posX": 0.05,
-        "posY": 0.499,
+        "posY": 0.5,
         "myIndex": 9
     })
     items.dragPointsModel.append({
-        "posX": 0.19,
-        "posY": 0.499,
+        "posX": 0.2,
+        "posY": 0.5,
         "myIndex": 10
     })
     items.dragPointsModel.append({
-        "posX": 0.313,
-        "posY": 0.499,
+        "posX": 0.35,
+        "posY": 0.5,
         "myIndex": 11
     })
     items.dragPointsModel.append({
-        "posX": 0.689,
-        "posY": 0.499,
+        "posX": 0.65,
+        "posY": 0.5,
         "myIndex": 12
     })
     items.dragPointsModel.append({
-        "posX": 0.81,
-        "posY": 0.499,
+        "posX": 0.8,
+        "posY": 0.5,
         "myIndex": 13
     })
     items.dragPointsModel.append({
         "posX": 0.95,
-        "posY": 0.499,
+        "posY": 0.5,
         "myIndex": 14
     })
     items.dragPointsModel.append({
-        "posX": 0.313,
-        "posY": 0.311,
+        "posX": 0.35,
+        "posY": 0.35,
         "myIndex": 15
     })
     items.dragPointsModel.append({
-        "posX": 0.500,
-        "posY": 0.311,
+        "posX": 0.5,
+        "posY": 0.35,
         "myIndex": 16
     })
     items.dragPointsModel.append({
-        "posX": 0.689,
-        "posY": 0.311,
+        "posX": 0.65,
+        "posY": 0.35,
         "myIndex": 17
     })
     items.dragPointsModel.append({
-        "posX": 0.19,
-        "posY": 0.188,
+        "posX": 0.2,
+        "posY": 0.2,
         "myIndex": 18
     })
     items.dragPointsModel.append({
         "posX": 0.500,
-        "posY": 0.188,
+        "posY": 0.2,
         "myIndex": 19
     })
     items.dragPointsModel.append({
-        "posX": 0.81,
-        "posY": 0.188,
+        "posX": 0.8,
+        "posY": 0.2,
         "myIndex": 20
     })
     items.dragPointsModel.append({
         "posX": 0.05,
-        "posY": 0.054,
+        "posY": 0.05,
         "myIndex": 21
     })
     items.dragPointsModel.append({
-        "posX": 0.500,
-        "posY": 0.054,
+        "posX": 0.5,
+        "posY": 0.05,
         "myIndex": 22
     })
     items.dragPointsModel.append({
         "posX": 0.95,
-        "posY": 0.054,
+        "posY": 0.05,
         "myIndex": 23
     })
     // For assigning left and right point
@@ -436,7 +436,7 @@ function pieceSelected(pieceIndex) {
 
 function movePiece(index) {
     items.pieceBeingMoved = true
-    currentPiece.parent.state = "EMPTY"
+    currentPiece.pieceParent.state = "EMPTY"
     currentPiece.isSelected = false
     for (var i = 0 ; i < numberOfDragPoints ; ++i) {
         if(items.dragPoints.itemAt(i).state != "1" && items.dragPoints.itemAt(i).state != "2")
@@ -614,7 +614,7 @@ function setSecondPhaseMove() {
     var permittedPieceIndex = []
     for(var i = 0 ; i < numberOfPieces ; ++i) {
         if(currentRepeater.itemAt(i).visible) {
-            if(!checkMill(currentRepeater.itemAt(i).pieceParent.index, playerState))
+            if(checkMovablePieces(currentRepeater.itemAt(i).pieceParent.index))
                 permittedPieceIndex.push(i)
         }
     }
@@ -664,28 +664,28 @@ function checkMillPossible(index, state) {
         if(state == dragPoint.leftPoint.state && state == dragPoint.leftPoint.leftPoint.state) {
             if((dragPoint.upperPoint && state == dragPoint.upperPoint.state) ||
                (dragPoint.lowerPoint && state == dragPoint.lowerPoint.state) || thirdPhase)
-                return true
+                return true;
         }
     }
     if(dragPoint.upperPoint && dragPoint.upperPoint.upperPoint) {
         if(state == dragPoint.upperPoint.state && state == dragPoint.upperPoint.upperPoint.state) {
             if((dragPoint.leftPoint && state == dragPoint.leftPoint.state) ||
                (dragPoint.rightPoint && state == dragPoint.rightPoint.state) || thirdPhase)
-                return true
+                return true;
         }
     }
     if(dragPoint.rightPoint && dragPoint.rightPoint.rightPoint) {
         if(state == dragPoint.rightPoint.state && state == dragPoint.rightPoint.rightPoint.state) {
             if((dragPoint.upperPoint && state == dragPoint.upperPoint.state) ||
                (dragPoint.lowerPoint && state == dragPoint.lowerPoint.state) || thirdPhase)
-                return true
+                return true;
         }
     }
     if(dragPoint.lowerPoint && dragPoint.lowerPoint.lowerPoint) {
         if(state == dragPoint.lowerPoint.state && state == dragPoint.lowerPoint.lowerPoint.state) {
             if((dragPoint.leftPoint && state == dragPoint.leftPoint.state) ||
                (dragPoint.rightPoint && state == dragPoint.rightPoint.state) || thirdPhase)
-                return true
+                return true;
         }
     }
     if(dragPoint.lowerPoint && dragPoint.upperPoint) {
@@ -702,6 +702,7 @@ function checkMillPossible(index, state) {
                 return true;
         }
     }
+    return false;
 }
 
 function setThirdPhaseMove() {
@@ -899,6 +900,25 @@ function checkMill(index, state, position) {
         if(state == dragPoint.leftPoint.state && state == dragPoint.rightPoint.state)
             return true;
     }
+    return false;
+}
+
+//check movable pieces
+function checkMovablePieces(index) {
+    var dragPoint = items.dragPoints.itemAt(index)
+    if(dragPoint.leftPoint && dragPoint.leftPoint.state == "EMPTY") {
+        return true;
+    }
+    if(dragPoint.rightPoint && dragPoint.rightPoint.state == "EMPTY") {
+        return true;
+    }
+    if(dragPoint.upperPoint && dragPoint.upperPoint.state == "EMPTY") {
+        return true;
+    }
+    if(dragPoint.lowerPoint && dragPoint.lowerPoint.state == "EMPTY") {
+        return true;
+    }
+    return false;
 }
 
 // updateRemovablePiece called by Piece when its animation stops and checkMill(piece) is true
@@ -1097,7 +1117,7 @@ function removePiece(index) {
 }
 
 function removePieceSelected(index) {
-    otherRepeater.itemAt(index).parent.state = items.firstPhase ? "AVAILABLE" : "EMPTY"
+    otherRepeater.itemAt(index).pieceParent.state = items.firstPhase ? "AVAILABLE" : "EMPTY"
     for(var i = 0 ; i < numberOfPieces ; ++i)
         otherRepeater.itemAt(i).canBeRemoved = false
 }
@@ -1108,10 +1128,10 @@ function checkGameWon() {
     for (var i = 0 ; i < numberOfPieces ; ++i) {
         var piece = otherRepeater.itemAt(i)
         if(piece.visible) {
-            if((piece.parent.leftPoint && piece.parent.leftPoint.state == "EMPTY") ||
-               (piece.parent.rightPoint && piece.parent.rightPoint.state == "EMPTY") ||
-               (piece.parent.upperPoint && piece.parent.upperPoint.state == "EMPTY") ||
-               (piece.parent.lowerPoint && piece.parent.lowerPoint.state == "EMPTY")) {
+            if((piece.pieceParent.leftPoint && piece.pieceParent.leftPoint.state == "EMPTY") ||
+               (piece.pieceParent.rightPoint && piece.pieceParent.rightPoint.state == "EMPTY") ||
+               (piece.pieceParent.upperPoint && piece.pieceParent.upperPoint.state == "EMPTY") ||
+               (piece.pieceParent.lowerPoint && piece.pieceParent.lowerPoint.state == "EMPTY")) {
                     flag = false
                     break
             }
@@ -1119,7 +1139,8 @@ function checkGameWon() {
     }
 
     if(((numberOfSecondPieces < 3 && !items.playSecond) || (numberOfFirstPieces < 3 && items.playSecond)) ||
-       (flag && ((currentPiece.state == "1" && !items.playSecond) || (currentPiece.state == "2" && items.playSecond)))) {
+       (flag && ((currentPiece.state == "1" && !items.playSecond && numberOfSecondPieces > 3) ||
+       (currentPiece.state == "2" && items.playSecond && numberOfFirstPieces > 3)))) {
         items.gameDone = true
         items.player1score.win();
         items.player2score.endTurn();
@@ -1130,8 +1151,8 @@ function checkGameWon() {
         }
     }
     else if(((numberOfFirstPieces < 3 && !items.playSecond) || (numberOfSecondPieces < 3 && items.playSecond)) ||
-            (flag && ((currentPiece.state == "2" && !items.playSecond) ||
-            (currentPiece.state == "1" && items.playSecond)))) {
+            (flag && ((currentPiece.state == "2" && !items.playSecond && numberOfFirstPieces > 3) ||
+            (currentPiece.state == "1" && items.playSecond && numberOfSecondPieces > 3)))) {
         items.gameDone = true
         items.player2score.win();
         items.player1score.endTurn();
@@ -1644,28 +1665,28 @@ function checkMillBoardPossible(board, index, state, firstPhase, pieces) {
         if(state == board[point.leftPoint.index] && state == board[point.leftPoint.leftPoint.index]) {
             if((point.upperPoint && state == board[point.upperPoint.index]) ||
                (point.lowerPoint && state == board[point.lowerPoint.index]) || freeMove)
-                return true
+                return true;
         }
     }
     if(point.upperPoint && point.upperPoint.upperPoint) {
         if(state == board[point.upperPoint.index] && state == board[point.upperPoint.upperPoint.index]) {
             if((point.leftPoint && state == board[point.leftPoint.index]) ||
                (point.rightPoint && state == board[point.rightPoint.index]) || freeMove)
-                return true
+                return true;
         }
     }
     if(point.rightPoint && point.rightPoint.rightPoint) {
         if(state == board[point.rightPoint.index] && state == board[point.rightPoint.rightPoint.index]) {
             if((point.upperPoint && state == board[point.upperPoint.index]) ||
                (point.lowerPoint && state == board[point.lowerPoint.index]) || freeMove)
-                return true
+                return true;
         }
     }
     if(point.lowerPoint && point.lowerPoint.lowerPoint) {
         if(state == board[point.lowerPoint.index] && state == board[point.lowerPoint.lowerPoint.index]) {
             if((point.leftPoint && state == board[point.leftPoint.index]) ||
                (point.rightPoint && state == board[point.rightPoint.index]) || freeMove)
-                return true
+                return true;
         }
     }
     if(point.lowerPoint && point.upperPoint) {
@@ -1682,6 +1703,7 @@ function checkMillBoardPossible(board, index, state, firstPhase, pieces) {
                 return true;
         }
     }
+    return false;
 }
 
 function generateMove(board, state, index, firstPhase) {

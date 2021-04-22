@@ -18,6 +18,7 @@ var currentLevel = 0
 var numberOfLevel = 8
 var items
 var createdLineParts
+var movedOut = true
 
 function start(items_) {
     items = items_
@@ -38,35 +39,63 @@ function initLevel() {
 
     items.bar.level = currentLevel + 1
     items.currentLock = 0
+    movedOut = true
     destroyLineParts()
     createdLineParts = new Array()
     var width = 40 * GCompris.ApplicationInfo.ratio
+    var nextWidth = Math.max(items.verticalLayout ? items.lineArea.height / 30 : items.lineArea.width / 40,
+                              5 * GCompris.ApplicationInfo.ratio)
     var height = 60 * GCompris.ApplicationInfo.ratio
     var index = 0
-    var y = items.fireman.y
-    var x = items.fireman.x + items.fireman.width
+    var y = 0
+    var x = 0
     var angle = 0
-    var directionStep = 0.01 * (currentLevel + 1)
+    var directionStep = items.verticalLayout ? 0.02 * (currentLevel + 1) * 0.5 : 0.01 * (currentLevel + 1)
     var direction = directionStep
-    do {
-        var newy = y + Math.sin(angle) * width * 0.5
-        var newx = x + Math.cos(angle) * width * 0.5
-        angle += direction
-        if(angle > Math.PI / 4)
-            direction = - directionStep
-        else if(angle < - Math.PI / 4)
-            direction = directionStep
-        if(y > items.fire.y-items.fire.height/2)
-            direction = - directionStep
-        else if(y < items.background.height * 0.3)
-            direction = directionStep
-        createdLineParts[index] =
-                createLinePart(index, x, y, width, height,
-                               getAngleOfLineBetweenTwoPoints(x, y, newx, newy) * (180 / Math.PI))
-        x = newx
-        y = newy
-        index++
-    } while(x < (items.fire.x - 10))
+    if(!items.verticalLayout) {
+        do {
+            if(index != 0) {
+                width = nextWidth
+            }
+            var newy = y + Math.sin(angle) * width * 0.5
+            var newx = x + Math.cos(angle) * width * 0.5
+            angle += direction
+            if(angle > Math.PI / 4)
+                direction = - directionStep
+            else if(angle < - Math.PI / 4)
+                direction = directionStep
+            if(y > items.lineArea.height * 0.5)
+                direction = - directionStep
+            else if(y < 0)
+                direction = directionStep
+            createdLineParts[index] =
+                            createLinePart(index, x, y, width, height,
+                                           getAngleOfLineBetweenTwoPoints(x, y, newx, newy) * (180 / Math.PI))
+            x = newx
+            y = newy
+            index++
+        } while(x < (items.lineArea.width - 10))
+    } else {
+        do {
+            if(index != 0) {
+                width = nextWidth
+            }
+            var newy = y + Math.sin(angle) * width * 0.5
+            var newx = x + Math.cos(angle) * width * 0.5
+            angle += direction
+            if(angle > Math.PI / 2)
+                direction = - directionStep
+            else if(angle < - Math.PI / 4)
+                direction = directionStep
+            createdLineParts[index] =
+                            createLinePart(index, x, y, width, height,
+                                           getAngleOfLineBetweenTwoPoints(x, y, newx, newy) * (180 / Math.PI))
+            x = newx
+            y = newy
+            index++
+        } while(x < (items.lineArea.width - 10))
+
+    }
     items.lastLock = index - 1
 }
 
@@ -87,7 +116,7 @@ function previousLevel() {
 function createLinePart(index, x, y, width, height, rotation) {
     var component = Qt.createComponent("qrc:/gcompris/src/activities/followline/LinePart.qml");
     var part = component.createObject(
-                items.background,
+                items.lineArea,
                 {
                     "audioEffects": items.audioEffects,
                     "x": x,
@@ -124,4 +153,15 @@ function destroyLineParts() {
         }
         createdLineParts.length = 0
     }
+}
+
+function cursorMovedOut() {
+    movedOut = true;
+    if(items.currentLock > 0)
+        items.currentLock--;
+}
+
+function playAudioFx() {
+    if(!items.audioEffects.playing)
+        items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/darken.wav");
 }

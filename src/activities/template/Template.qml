@@ -1,12 +1,7 @@
 /* GCompris - template.qml
  *
- * SPDX-FileCopyrightText: 2018 YOUR NAME <xx@yy.org>
- *
- * Authors:
- *   <THE GTK VERSION AUTHOR> (GTK+ version)
- *   YOUR NAME <YOUR EMAIL> (Qt Quick port)
- *
- *   SPDX-License-Identifier: GPL-3.0-or-later
+ * SPDX-FileCopyrightText: YEAR NAME <EMAIL>
+ * SPDX-License-Identifier: GPL-3.0-or-later
  */
 import QtQuick 2.6
 

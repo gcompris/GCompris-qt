@@ -19,43 +19,50 @@ QtObject {
       },
       {
          "pixmapfile" : "australia/western_australia.png",
-         "toolTipText" : "Western Australia",
+         //: District of Australia: Western Australia
+         "toolTipText" : qsTr("Western Australia"),
          "x" : "0.217",
          "y" : "0.402"
       },
       {
          "pixmapfile" : "australia/northern_territory.png",
-         "toolTipText" : "Northern Territory",
+         //: District of Australia: Northern Territory
+         "toolTipText" : qsTr("Northern Territory"),
          "x" : "0.496",
          "y" : "0.246"
       },
       {
          "pixmapfile" : "australia/south_australia.png",
-         "toolTipText" : "South Australia",
+         //: District of Australia: South Australia
+         "toolTipText" : qsTr("South Australia"),
          "x" : "0.533",
          "y" : "0.622"
       },
       {
          "pixmapfile" : "australia/queensland.png",
-         "toolTipText" : "Queensland",
+         //: District of Australia: Queensland
+         "toolTipText" : qsTr("Queensland"),
          "x" : "0.779",
          "y" : "0.275"
       },
       {
          "pixmapfile" : "australia/new_south_wales.png",
-         "toolTipText" : "New South Wales",
+         //: District of Australia: New South Wales
+         "toolTipText" : qsTr("New South Wales"),
          "x" : "0.817",
          "y" : "0.637"
       },
       {
          "pixmapfile" : "australia/victoria.png",
-         "toolTipText" : "Victoria",
+         //: District of Australia: Victoria
+         "toolTipText" : qsTr("Victoria"),
          "x" : "0.772",
          "y" : "0.753"
       },
       {
          "pixmapfile" : "australia/tasmania.png",
-         "toolTipText" : "Tasmania",
+         //: District of Australia: Tasmania
+         "toolTipText" : qsTr("Tasmania"),
          "x" : "0.798",
          "y" : "0.933"
       }

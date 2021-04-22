@@ -2,7 +2,7 @@
 <component type="desktop">
   <id>org.kde.gcompris.desktop</id>
   <metadata_license>CC0-1.0</metadata_license>
-  <project_license>GPL-3.0+</project_license>
+  <project_license>AGPL-3.0</project_license>
   <name>GCompris</name>
   <name xml:lang="br">GCompris</name>
   <name xml:lang="ca">GCompris</name>
@@ -23,6 +23,7 @@
   <name xml:lang="id">GCompris</name>
   <name xml:lang="it">GCompris</name>
   <name xml:lang="ko">GCompris</name>
+  <name xml:lang="lt">GCompris žaidimai</name>
   <name xml:lang="mk">Жикомпри</name>
   <name xml:lang="ml">ജികോംപ്രി</name>
   <name xml:lang="nl">GCompris</name>
@@ -35,6 +36,7 @@
   <name xml:lang="ru">GCompris</name>
   <name xml:lang="sk">GCompris</name>
   <name xml:lang="sl">GCompris</name>
+  <name xml:lang="sq">GCompris</name>
   <name xml:lang="sv">GCompris</name>
   <name xml:lang="tr">GCompris</name>
   <name xml:lang="uk">GCompris</name>
@@ -57,10 +59,11 @@
   <summary xml:lang="gl">Xogo educativo con varias actividades para nenos de entre 2 e 10 anos</summary>
   <summary xml:lang="he">משחק חינוך לפלטפורמות מרובות לילדים/ות בגילאי 2-10</summary>
   <summary xml:lang="hi">२ से १० वर्ष के बच्चों के लिए विभिन्न क्रियाओं वाला शैक्षणिक खेल</summary>
-  <summary xml:lang="hu">Oktató játékcsopmag 2-10 éves gyerekek számára</summary>
+  <summary xml:lang="hu">Oktató játékcsomag 2-10 éves gyerekek számára</summary>
   <summary xml:lang="id">Permainan berisi berbagai kegiatan pendidikan untuk anak usia 2  sampai 10 tahun</summary>
   <summary xml:lang="it">Gioco didattico multi-attività per bambini da 2 a 10 anni</summary>
   <summary xml:lang="ko">2-10세 어린이용 다양한 활동이 있는 교육용 게임</summary>
+  <summary xml:lang="lt">Lavinamųjų pamokėlių bei žaidimų rinkinys vaikams nuo 3 iki 12</summary>
   <summary xml:lang="mk">Едукативна игра со повеќе активности за деца од 2 до 10 години</summary>
   <summary xml:lang="ml">2 മുതൽ 10 വയസ്സുവരെയുള്ള കുട്ടികൾക്ക് വിവിധ പ്രവർത്തനങ്ങളിലൂടെ പഠിക്കാനായുള്ള കളി</summary>
   <summary xml:lang="nl">Educatief spel met meerdere activiteiten voor kinderen van 2 tot 10</summary>
@@ -73,6 +76,7 @@
   <summary xml:lang="ru">Интерактивные обучающие игры для детей от 2 до 10 лет</summary>
   <summary xml:lang="sk">Viac-aktivitová výuková hra pre deti od 2 do 10 rokov</summary>
   <summary xml:lang="sl">Izobraževalna igra z več dejavnostmi za otroke med drugim in desetim letom starosti</summary>
+  <summary xml:lang="sq">Lojë Edukative me Shumë Veprimtari për fëmijë nga 2 deri në 10 vjeç</summary>
   <summary xml:lang="sv">Pedagogiskt multiaktivitetsspel för barn från 2 till 10 år</summary>
   <summary xml:lang="tr">2 ile 10 yaş arasındaki çocuklar için çok Etkinlikli oyun</summary>
   <summary xml:lang="uk">Набір освітніх ігор для дітей від 2 до 10 років</summary>
@@ -101,6 +105,7 @@
     <p xml:lang="id">GCompris adalah kumpulan permainan berbagai kegiatan pendidikan untuk anak usia 2  sampai 10 tahun</p>
     <p xml:lang="it">GCompris è una raccolta di alta qualità di programmi didattici che comprende numerose attività per bambini da 2 a 10 anni.</p>
     <p xml:lang="ko">GCompris는 다양한 2세에서 10세 사이의 아동용 활동이 들어 있는 고품질의 교육용 소프트웨어 제품군입니다.</p>
+    <p xml:lang="lt">Gcompris yra kokybiškas mokomųjų (edukacinių) programų rinkinys turintis daugybę pamokėlių 3 - 12 metų vaikams.</p>
     <p xml:lang="mk">Жикомпри е висококвалитетен образовен софтвер, кој вклучува голем број активности за деца на возраст од 2 до 10 години.</p>
     <p xml:lang="ml">2 മുതൽ 10 വയസ്സുവരെയുള്ള കുട്ടികൾക്ക് വേണ്ടിയുള്ള വിവിധ പ്രവർത്തനങ്ങൾ അടങ്ങിയിട്ടുള്ള വളരെ ഗുണനിലവാരമുള്ള ഒരു വിദ്യാഭ്യാസ സോഫ്റ്റ്‍വെയർ ആണ് ജികോംപ്രി.</p>
     <p xml:lang="nl">GCompris is een educatief softwarepakket van hoge kwaliteit, inclusief een groot aantal activiteiten voor kinderen van 2 tot 10 jaar.</p>
@@ -112,6 +117,7 @@
     <p xml:lang="ru">GCompris — большая коллекция обучающих игр и упражнений для детей от 2 до 10 лет.</p>
     <p xml:lang="sk">GCompris je balík výukového softvéru zložený z rôznych aktivít pre deti od 2 do 10 rokov.</p>
     <p xml:lang="sl">Program GCompris je visokokakovostna izobraževalna zbirka, sestavljena iz velikega števila dejavnosti, ki so namenjena otrokom med drugim in desetim letom starosti.</p>
+    <p xml:lang="sq">GCompris- është një suitë software-i edukativ i cilësisë së lartë, që përfshin një numër të madh veprimtarish për fëmijë të moshës nga 2 deri në 10 vjeç.</p>
     <p xml:lang="sv">GCompris är en högkvalitativ pedagogisk programvarusvit som innehåller ett stort antal aktiviteter för barn mellan 2 och 10 år.</p>
     <p xml:lang="tr">GCompris, 2 ile 10 yaş arasındaki çocuklar için çok sayıda etkinlik içeren bir eğitim yazılımı paketidir.</p>
     <p xml:lang="uk">GCompris — високоякісний комплекс навчального програмного забезпечення, що складається з багатьох вправ для дітей від 2 до 10 років.</p>
@@ -139,6 +145,7 @@
     <p xml:lang="id">Beberapa kegiatan berorientasi pada permainan, tetapi masih memiliki nilai pendidikan.</p>
     <p xml:lang="it">Alcune delle attività sono orientate al gioco, ma comunque didattiche.</p>
     <p xml:lang="ko">일부 활동은 기능성 게임을 지향합니다.</p>
+    <p xml:lang="lt">Kai kurios pamokėlės yra kaip lavinamieji žaidimai.</p>
     <p xml:lang="mk">Некои од активностите се ориентирани кон игри, но сепак се едукативни.</p>
     <p xml:lang="ml">ചില പ്രവർത്തനങ്ങൾ കളിയെ അടിസ്ഥാനമാക്കിയാണ്, എന്നിരുന്നാലും വിദ്യാഭ്യാസപരമാണ്.</p>
     <p xml:lang="nl">Sommige activiteiten zijn spelletjes, maar toch leerzaam.</p>
@@ -150,6 +157,7 @@
     <p xml:lang="ru">Некоторые из заданий представлены в игровой форме, но и они являются обучающими.</p>
     <p xml:lang="sk">Niektoré z aktivít sú herne orientované, ale stále výukové.</p>
     <p xml:lang="sl">Nekatere dejavnosti so bolj podobne igram, vendar še vedno poučne.</p>
+    <p xml:lang="sq">Disa nga veprimtaritë shkojnë drejt lojës, por megjithatë prapë edukative.</p>
     <p xml:lang="sv">Vissa av aktiviteterna är spelorienterade, men trots det ändå pedagogiska.</p>
     <p xml:lang="tr">Bazı etkinlikler oyun odaklıdır, ancak yine de eğiticidir.</p>
     <p xml:lang="uk">Деякі із вправ є суто ігровими, але містять і елементи навчання.</p>
@@ -162,6 +170,7 @@
     <p xml:lang="br">Amañ dindan e kaver ur roll eus ar rummadoù gant un toullad eus an oberezhioù kinniget e pep rummad.</p>
     <p xml:lang="ca">A continuació trobareu una llista de les categories amb algunes de les activitats disponibles en cadascuna.</p>
     <p xml:lang="ca-valencia">A continuació trobareu una llista de les categories amb algunes de les activitats disponibles en cadascuna.</p>
+    <p xml:lang="cs">Níže naleznete seznam kategorií s některými aktivitami k dispozici v této kategorii.</p>
     <p xml:lang="de">Sie können Aktivitäten aus folgenden Bereichen in GCompris finden:</p>
     <p xml:lang="el">Παρακάτω θα βρείτε μια λίστα με κατηγορίες που περιέχουν ορισμένες από το σύνολο των δραστηριοτήτων σε κάθε κατηγορία.</p>
     <p xml:lang="en-GB">Below you can find a list of categories with some of the activities available in that category.</p>
@@ -177,6 +186,7 @@
     <p xml:lang="id">Di bawah ini kamu dapat menemukan daftar kategori dengan beberapa kegiatan yang tersedia di dalam setiap kategori tersebut.</p>
     <p xml:lang="it">Di seguito puoi trovare un elenco di categorie con alcune delle attività disponibili per categoria.</p>
     <p xml:lang="ko">아래에서 분류 목록과 해당 분류의 활동을 찾을 수 있습니다.</p>
+    <p xml:lang="lt">Žemiau rasite pamokėlių kategorijų sąrašą bei kelių pamokėlių pavadinimus.</p>
     <p xml:lang="mk">Подолу можете да најдете список на категории со некои активности достапни во таа категорија.</p>
     <p xml:lang="ml">ലഭ്യമായ കുറച്ചു പ്രവർത്തനങ്ങളോടുകൂടിയുള്ള വിഭാഗങ്ങളുടെ ഒരു പട്ടിക താഴെ കൊടുത്തിരിക്കുന്നു.</p>
     <p xml:lang="nl">Hieronder vindt u een lijst met categorieën met enige van de activiteiten beschikbaar in die categorie.</p>
@@ -188,6 +198,7 @@
     <p xml:lang="ru">Ниже представлен список категорий с доступными в этих категориях заданиями.</p>
     <p xml:lang="sk">Tu môžete nájsť zoznam kategórií s niektorými aktivitami dostupnými v kategórii.</p>
     <p xml:lang="sl">Spodaj lahko najdete seznam kategorij in nekaj dejavnosti, ki so na voljo v tisti kategoriji.</p>
+    <p xml:lang="sq">Më poshtë mund të gjeni një listë të kategorive, me disa nga veprimtaritë e gatshme nën atë kategori.</p>
     <p xml:lang="sv">Nedan finns en lista över kategorier med några av aktiviteterna tillgängliga i varje kategori.</p>
     <p xml:lang="tr">Aşağıda, bazı etkinliklerin bulunduğu kategorilerin bir listesini bulabilirsiniz.</p>
     <p xml:lang="uk">Нижче наведено список категорій із деякими вправами у цих категоріях.</p>
@@ -216,6 +227,7 @@
       <li xml:lang="id">Pengenalan komputer: keyboard, mouse, gerakan mouse yang berbeda, ...</li>
       <li xml:lang="it">scoperta del computer: tastiera, mouse, vari gesti con il mouse, ...</li>
       <li xml:lang="ko">컴퓨터와 친해지기: 키보드, 마우스, 마우스 제스처, ...</li>
+      <li xml:lang="lt">pažink kompiuterį: klaviatūra, pelė, įvairūs pelės gestai, ...</li>
       <li xml:lang="mk">откривање на компјутер: тастатура, глувче, различни гестови на глувчето, ...</li>
       <li xml:lang="ml">കമ്പ്യൂട്ടർ പഠിക്കാം: കീബോർഡ്, മൗസ്, മൗസ് കൊണ്ടുള്ള വ്യത്യസ്ത ചലനങ്ങൾ, ...</li>
       <li xml:lang="nl">ontdekken van de computer: toetsenbord, muis, verschillende muisbewegingen, ...</li>
@@ -227,6 +239,7 @@
       <li xml:lang="ru">знакомство с компьютером: клавиатура, мышь, различные жесты мышью, ...</li>
       <li xml:lang="sk">objavovanie počítača: klávesnica, myš, rôzne gestá myši...</li>
       <li xml:lang="sl">delo z računalnikom: tipkovnica, miška, kretnje miške, ...</li>
+      <li xml:lang="sq">njohje me kompjuterin: tastierë, mi, gjeste të ndryshme të miut, …</li>
       <li xml:lang="sv">upptäcka datorn: tangentbord, mus, olika musgester, ...</li>
       <li xml:lang="tr">bilgisayarı keşfetme: klavye, fare, farklı fare hareketleri, ...</li>
       <li xml:lang="uk">Знайомство з комп’ютером: клавіатура, миша, керування мишею…</li>
@@ -239,6 +252,7 @@
       <li xml:lang="br">Jediñ : deskiñ an taolennoù-jediñ, niveriñ eeun, simetriezh ar skeudenn, kempouezañ ar bouezerez, distreiñ ar moneiz, ...</li>
       <li xml:lang="ca">aritmètica: memoritzar la taula, enumeració, imatge al mirall, equilibrar la balança, donar el canvi...</li>
       <li xml:lang="ca-valencia">aritmètica: memoritzar la taula, enumeració, imatge al mirall, equilibrar la balança, donar el canvi...</li>
+      <li xml:lang="cs">aritmetika: tabulková paměť, výčet, zrcadlový obraz, vyvážení měřítka, dávání drobných, ...</li>
       <li xml:lang="de">Arithmetik: Kombitabellen, Aufzählungen, Bilder spiegeln, Gewichte ausgleichen, Wechselgeld geben...</li>
       <li xml:lang="el">αριθμητική: παιχνίδια memory, απαρίθμηση, κάτοπτρο, ισορροπώ τη ζυγαριά, δίνω ρέστα, ...</li>
       <li xml:lang="en-GB">arithmetic: table memory, enumeration, mirror image, balance the scale, change giving, ...</li>
@@ -254,6 +268,7 @@
       <li xml:lang="id">aritmatika: tabel ingatan, pencacahan, cerminkan gambar, menyeimbangkan skala, ganti memberi, ..</li>
       <li xml:lang="it">aritmetica: tabelline, enumerazione, immagine speculare, allineare la bilancia, dare il resto, ...</li>
       <li xml:lang="ko">산술 연산: 표 기억하기, 배열하기, 그림 뒤집기, 저울 맞추기, 거스름돈 계산하기, ...</li>
+      <li xml:lang="lt">aritmetika: daugybos lentelė, skaičiavimas iš eilės, sudėtis ir atimtis, subalansuok svarstykles, suskaičiuok grąžą, ...</li>
       <li xml:lang="mk">аритметика: меморија, набројување, отцртување слика, балансирање на вага, враќање кусур, ...</li>
       <li xml:lang="ml">ഗണിതശാസ്ത്രം: പട്ടിക ഓർക്കാം, എണ്ണൽ, പ്രതിബിംബം, തൂക്കമൊപ്പിക്കാം, ബാക്കി കൊടുക്കാം, ...</li>
       <li xml:lang="nl">rekenen: tafels oefenen, reeksen, afbeelding spiegelen, de schaal in evenwicht brengen, wisselgeld geven, ...</li>
@@ -265,6 +280,7 @@
       <li xml:lang="ru">арифметика: игра «память» с подсчётом, счёт, отражение рисунка, уравновешивание весов, подсчёт сдачи, ...</li>
       <li xml:lang="sk">aritmetické: tabuľková pamäť, výpočet, zrkalový obrázok, vyváženie mierky, zmena dávky...</li>
       <li xml:lang="sl">računstvo: spomin z računi, štetje, uravnoteži tehtnico, vračanje drobiža, ...</li>
+      <li xml:lang="sq">aritmetikë: kujtesë tabelash, numërim, pasqyrim figurash, baraspeshim peshoreje, dhënie kusuri, …</li>
       <li xml:lang="sv">aritmetik: tabellminne, uppräkning, spegelbild, balansera vågen, ge växel, ...</li>
       <li xml:lang="tr">aritmetik: tablo belleği, numaralandırma, ayna görüntüsü, ölçeği dengelemek, para üstü, ...</li>
       <li xml:lang="uk">Арифметика: запам’ятовування таблиць, нумерація, віддзеркалення, балансування масштабу, обчислення решти…</li>
@@ -292,6 +308,7 @@
       <li xml:lang="id">ilmu pengetahuan: kunci kanal, pencampuran warna, konsep gravitasi, ...</li>
       <li xml:lang="it">scienza: la chiusa del canale, miscelazione dei colori, il concetto di gravità, ...</li>
       <li xml:lang="ko">과학: 운하 갑문, 색 섞기, 중력, ...</li>
+      <li xml:lang="lt">mokslas: kanalų šliuzai, spalvų maišymas, elektros grandinė, gravitacija, ...</li>
       <li xml:lang="mk">наука: заклучување на каналот, мешање на бои, концепт на гравитација, ...</li>
       <li xml:lang="ml">ശാസ്ത്രം: കനാലിന്റെ പൂട്ട്, നിറം ചേർക്കാം, ഗുരുത്വം എന്ന ആശയം, ...</li>
       <li xml:lang="nl">natuurkunde: de sluizen bedienen, mengen van kleuren, concept van zwaartekracht, ...</li>
@@ -303,6 +320,7 @@
       <li xml:lang="ru">наука: работа судоходного шлюза, смешивание цветов, представление о гравитации, ...</li>
       <li xml:lang="sk">veda: zamknutý kanál, miešanie farieb, koncept grvitácie...</li>
       <li xml:lang="sl">znanost: zapornica kanala, mešanje barv, koncept težnosti ...</li>
+      <li xml:lang="sq">shkencë: bllokim kanali, përzierje ngjyra, koncepti i rëndesës, …</li>
       <li xml:lang="sv">vetenskap: kanalslussen, färgblandning, gravitationskonceptet, ...</li>
       <li xml:lang="tr">bilim: kanal kilidi, renk karışımı, yerçekimi kavramı, ...</li>
       <li xml:lang="uk">Наука: шлюзування, змішування кольорів, поняття тяжіння…</li>
@@ -314,6 +332,7 @@
       <li xml:lang="br">C'hoarioù : memor, pevar a-steud, tri merk a-steud, sudoku, tour Hanoi,…</li>
       <li xml:lang="ca">jocs: memòria, connecta 4, tres en ratlla, sudoku, torre de Hanoi...</li>
       <li xml:lang="ca-valencia">jocs: memòria, connecta 4, tres en ratlla, sudoku, torre de Hanoi...</li>
+      <li xml:lang="cs">hry: pexeso, spoj 4, piškvorky, sudoku, hanojská věž, ...</li>
       <li xml:lang="de">Spiele: Memory, Vier gewinnt, Tic-Tac-Toe, Sudoku, Türme von Hanoi,...</li>
       <li xml:lang="el">παιχνίδια: μνήμη, τετράδες, τρίλιζα, σουντόκου, πύργος του Ανόι, ...</li>
       <li xml:lang="en-GB">games: memory, connect 4, tic tac toe, sudoku, hanoi tower, ...</li>
@@ -329,6 +348,7 @@
       <li xml:lang="id">permainan: ingatan, menyambung 4, tic tac toe, sudoku, menara hanoi, ...</li>
       <li xml:lang="it">giochi: memory, forza 4, filetto, sudoku, torre di hanoi, ...</li>
       <li xml:lang="ko">게임: 메모리 게임, 4개 연결하기, 삼목, 수도쿠, 하노이 탑, ...</li>
+      <li xml:lang="lt">žaidimai: šachmatai, atminties lavinimas, sujunk 4, tic tac toe, Sudoku, ...</li>
       <li xml:lang="mk">игри: меморија, поврзи 4, икс и точка, судоку, ханој кула, ...</li>
       <li xml:lang="ml">കളികൾ: ഓർമ്മ, 4 എണ്ണം ബന്ധിപ്പിക്കുക, ടിക് ടാക് ടോ, ഹാനോയിയുടെ ഗോപുരം, ...</li>
       <li xml:lang="nl">spellen: geheugenspel, vier op een rij, boter kaas en eieren, sudoku, torens van hanoi, ...</li>
@@ -340,6 +360,7 @@
       <li xml:lang="ru">игры: память, соедини 4, крестики-нолики, судоку, Ханойская башня, ...</li>
       <li xml:lang="sk">hry: pamäť, spojenie 4, tic tac toe, sudoku, hanojská veža...</li>
       <li xml:lang="sl">igre: spomin, štiri v vrsto, križci in krožci, sudoku, Hanojski stolpi, ...</li>
+      <li xml:lang="sq">lojëra: kujtesë, lidhni 4, tik tak to, sudoku, kullë Hanoi, …</li>
       <li xml:lang="sv">spel: memory, koppla 4, tre-i-rad, sudoku, tornen i Hanoi, ...</li>
       <li xml:lang="tr">oyunlar: hafıza, dörtleme, üç taş, sudoku, hanoi kulesi, ...</li>
       <li xml:lang="uk">Ігри: запам’ятовування, чотири-у-рядок, хрестики-нулики, судоку, ханойські вежі…</li>
@@ -367,6 +388,7 @@
       <li xml:lang="id">membaca: latihan membaca, ...</li>
       <li xml:lang="it">lettura: esercitare la lettura, ...</li>
       <li xml:lang="ko">읽기: 읽기 연습, ...</li>
+      <li xml:lang="lt">skaitymas: mokymasis skaityti, ...</li>
       <li xml:lang="mk">читање: пракса за читање, ...</li>
       <li xml:lang="ml">വായന: വായന പരിശീലനം, ...</li>
       <li xml:lang="nl">lezen: lees oefening, ...</li>
@@ -379,6 +401,7 @@
       <li xml:lang="ru">чтение: упражнение в чтении, ...</li>
       <li xml:lang="sk">čítanie: precvičovanie čítania...</li>
       <li xml:lang="sl">branje: bralna vaja, ...</li>
+      <li xml:lang="sq">lexim: ushtrim të lexuari, …</li>
       <li xml:lang="sv">läsning: läsningsövning, ...</li>
       <li xml:lang="tr">okuma: okuma egzersizi, ...</li>
       <li xml:lang="uk">Читання: вправи із читання…</li>
@@ -391,6 +414,7 @@
       <li xml:lang="br">A bep seurt : deskiñ reiñ an eur, meizad Braille, milendall, benvegoù sonerezh, ...</li>
       <li xml:lang="ca">altres: aprendre a dir l'hora, el sistema braille, laberints, instruments musicals...</li>
       <li xml:lang="ca-valencia">altres: aprendre a dir l'hora, el sistema braille, laberints, instruments musicals...</li>
+      <li xml:lang="cs">ostatní: nauč se čas, Braillovo písmo, bludiště, hudební nástroje, ...</li>
       <li xml:lang="de">Sonstiges: Uhrzeit, Braille-System, Labyrinthe, Musikinstrumente ...</li>
       <li xml:lang="el">άλλα: μαθαίνω να λέω την ώρα, το σύστημα μπράιγ, λαβύρινθος, μουσικά όργανα, ...</li>
       <li xml:lang="en-GB">other: learn to tell time, the braille system, maze, music instruments, ...</li>
@@ -406,6 +430,7 @@
       <li xml:lang="id">lainnya: belajar menceritakan waktu, sistem braille, labirin, alat musik, ...</li>
       <li xml:lang="it">altro: impara a leggere l'ora, il sistema braille, labirinto, strumenti musicali, ...</li>
       <li xml:lang="ko">기타: 시간 읽기, 점자, 미로, 악기, ...</li>
+      <li xml:lang="lt">kita: laikrodžio bei laiko pažinimas, Brailio raštas, labirintas, muzikos instrumentai, ...</li>
       <li xml:lang="mk">друго: учење на часовник, учење на брајовиот систем, лавиринт, музички инструменти, ...</li>
       <li xml:lang="ml">മറ്റുള്ളവ: സമയം പറയാൻ പഠിക്കാം, ബ്രായി ലിപി, കുടുക്കുവഴി, സംഗീതോപകരണങ്ങൾ, ...</li>
       <li xml:lang="nl">overig: leren klokkijken, het braille-systeem, doolhof, muziekinstrumenten, ...</li>
@@ -417,6 +442,7 @@
       <li xml:lang="ru">другое: определение времени по часам, шрифт Брайля, лабиринт, музыкальные инструменты, ...</li>
       <li xml:lang="sk">iné: ako povedať čas, braillov systém, bludisko, hudobná nástroje...</li>
       <li xml:lang="sl">ostalo: prepoznavanje časa, brajica, blodnjak, glasbila, ...</li>
+      <li xml:lang="sq">të tjera: mësoni si të tregoni orën, sistemi Braj, maze, vegla muzikore, …</li>
       <li xml:lang="sv">annat: lära sig klockan, punktskrift, labyrint, musikinstrument, ...</li>
       <li xml:lang="tr">diğer: saati söylemeyi öğrenme, braille sistemi, labirent, müzik, enstrümanlar, ...</li>
       <li xml:lang="uk">Інше: навчання позначенням часу, система Брайля, лабіринти, музичні інструменти…</li>
@@ -448,6 +474,7 @@
     <p xml:lang="id">Saat ini GCompris menawarkan lebih dari 100 aktivitas dan masih banyak lagi yang sedang dikembangkan. GCompris adalah perangkat lunak bebas, itu berarti kamu dapat menyesuaikannya dengan kebutuhanmu sendiri, memperbaikinya dan yang terpenting, bagikan dengan anak-anak di mana-mana.</p>
     <p xml:lang="it">Attualmente GCompris offre più di 100 attività e altre sono in fase di sviluppo. GCompris è software libero, che significa che puoi adattarlo alle tue necessità, migliorarlo e, cosa più importante, condividerlo con tutti i bambini.</p>
     <p xml:lang="ko">GCompris에는 100개 이상의 활동이 들어 있으며 더 많은 활동을 개발하고 있습니다. GCompris는 자유 소프트웨어이며, 필요에 따라서 활동을 개선할 수 있으며 전 세계의 사람들과 공유할 수 있습니다.</p>
+    <p xml:lang="lt">Šiuo metu „GCompris“ siūlo daugiau nei 140 pamokėlių, o dar daugiau yra kuriama. „GCompris“ yra laisva programinė įranga, tai reiškia, kad jūs galite pritaikyti jį savo poreikiams, tobulinti ir, svarbiausia, visada nemokamai dalintis šiomis programomis su vaikais.</p>
     <p xml:lang="mk">Во моментов, Жикомпри нуди повеќе од 100 активности и уште се развиваат. Жикомпри е слободен софтвер, тоа значи дека можете да го прилагодите на вашите сопствени потреби, да го подобрите и што е најважно, да го споделите со децата секаде.</p>
     <p xml:lang="ml">ജികോംപ്രിയിൽ ഇപ്പോൾ 100-ലധികം പ്രവർത്തനങ്ങൾ ഉണ്ട്, കൂടുതൽ ഡെവലപ്പു ചെയ്തുകൊണ്ടിരിക്കുന്നുമുണ്ട്. ജികോംപ്രി ഒരു സ്വതന്ത്ര സോഫ്റ്റ്‍വെയർ ആണ്, അതായത് താങ്കൾക്ക് അതിനെ താങ്കളുടെ ആവശ്യങ്ങൾക്കനുസരിച്ച് രൂപപ്പെടുത്താം, മെച്ചപ്പെടുത്താം, ഏറ്റവും പ്രധാനമായി, ലോകമെമ്പാടുമുള്ള കുട്ടികളുമായും അതു പങ്കുവെയ്ക്കാം.</p>
     <p xml:lang="nl">Op dit moment biedt GCompris meer dan 100 activiteiten en meer zijn er in ontwikkeling. GCompris is vrije software, dat betekent dat u het kunt aanpassen aan uw eigen behoeften, het verbeteren en, meest belangrijk, het met kinderen overal kun delen.</p>
@@ -459,6 +486,7 @@
     <p xml:lang="ru">В настоящее время GCompris содержит более 100 упражнений, и новые находятся в  разработке. GCompris — свободное ПО, и это значит, что вы можете приспособить его для своих нужд, улучшить, а самое главное — поделиться им с детьми во всём мире.</p>
     <p xml:lang="sk">Aktuálne GCompris ponúka vyše 100 aktivít a ďalšie sa vyvíjajú. GCompris je slobodný softvér, čo znamená, že si ho môžete prispôsobiť na vlastné potreby, zlepšiť, a hlavne zdieľať s deťmi všade.</p>
     <p xml:lang="sl">GCompris trenutno ponuja več kot 100 dejavnosti, še več pa jih je v razvoju. GCompris je prosta programska oprema, kar pomeni, da jo lahko prilagodite po svoje, še pomembneje pa je, da jo lahko delite z otroki po vsem svetu.</p>
+    <p xml:lang="sq">Aktualisht GCompris-i ofron më shumë se 100 veprimtari dhe po zhvillohen dhe të tjera. GCompris-i është “software” i lirë, që do të thotë se mund t’ia përshtatni nevojave tuaja, ta përmirësoni, dhe, më e rëndësishmja, t’ua jepni fëmijëve kudo.</p>
     <p xml:lang="sv">För närvarande erbjuder GCompris över 100 aktiviteter och ännu fler håller på att utvecklas. GCompris är fri programvara, vilket betyder att man kan anpassa det till sina egna behov, och viktigast av allt, dela det med barn överallt.</p>
     <p xml:lang="tr">Şu anda GCompris 100'den fazla etkinlik sunuyor ve daha fazlasını geliştiriliyor. GCompris bir özgür yazılımdır; bu, onu kendi ihtiyaçlarınıza uyarlayabilir, geliştirebilir ve en önemlisi, her yerde çocuklarla paylaşabileceğiniz anlamına gelir.</p>
     <p xml:lang="uk">У поточній версії GCompris понад 100 вправ. Розробники постійно працюють над новими вправами. GCompris є вільним програмним забезпеченням, це означає, що ви можете адаптувати програму до власних потреб, покращувати її і, що найважливіше, ділитися вашими творіннями із усіма дітьми.</p>
@@ -489,6 +517,7 @@
       <caption xml:lang="id">Menu Utama GCompris</caption>
       <caption xml:lang="it">Menu principale di GCompris</caption>
       <caption xml:lang="ko">GCompris 주 메뉴</caption>
+      <caption xml:lang="lt">GCompris pagrindinis meniu</caption>
       <caption xml:lang="mk">Жикомпри главно мени</caption>
       <caption xml:lang="ml">ജികോംപ്രി പ്രധാന മെനു</caption>
       <caption xml:lang="nl">GCompris-hoofdmenu</caption>
@@ -501,6 +530,7 @@
       <caption xml:lang="ru">Главное меню GCompris</caption>
       <caption xml:lang="sk">Hlavná ponuka GCompris</caption>
       <caption xml:lang="sl">GCompris glavni meni</caption>
+      <caption xml:lang="sq">Menuja kryesore e GCompris-it</caption>
       <caption xml:lang="sv">GCompris-huvudmeny</caption>
       <caption xml:lang="tr">GCompris ana menü</caption>
       <caption xml:lang="uk">Головне меню GCompris</caption>
@@ -528,6 +558,7 @@
       <caption xml:lang="id">Aktivitas "Klik pada huruf kapital"</caption>
       <caption xml:lang="it">Attività «Fai clic su una lettera maiuscola»</caption>
       <caption xml:lang="ko">"대문자 누르기" 활동</caption>
+      <caption xml:lang="lt">Pamokėlė „SPUSTELK IŠGIRSTĄ RAIDĘ“</caption>
       <caption xml:lang="mk">"Кликнете на голема буква" активност</caption>
       <caption xml:lang="ml">"ഒരു വലിയ അക്ഷരത്തിൽ ക്ലിക്ക് ചെയ്യുക" പ്രവർത്തനം</caption>
       <caption xml:lang="nl">"Click op een hoofdletter" activiteit</caption>
@@ -536,8 +567,10 @@
       <caption xml:lang="pt">Actividade para "Carregar numa letra maiúscula"</caption>
       <caption xml:lang="pt-BR">Atividade "Clique em uma letra maiúscula"</caption>
       <caption xml:lang="ro">Activitatea "Clic pe o literă mare"</caption>
+      <caption xml:lang="ru">Упражнение «Щёлкни по прописной букве»</caption>
       <caption xml:lang="sk">Aktivita "Kliknúť na veľké písmeno"</caption>
       <caption xml:lang="sl">Dejavnost "Kliknite na veliko črko"</caption>
+      <caption xml:lang="sq">Veprimtaria ”Klikoni mbi një shkronjë të madhe”</caption>
       <caption xml:lang="sv">Aktiviteten "Klicka på en stor bokstav"</caption>
       <caption xml:lang="tr">"Büyük bir harfe tıkla" aktivite</caption>
       <caption xml:lang="uk">Вправа «Клацніть на великій літері»</caption>
@@ -565,6 +598,7 @@
       <caption xml:lang="id">Aktivitas "Mengenal Jam"</caption>
       <caption xml:lang="it">Attività «Impara l'orologio»</caption>
       <caption xml:lang="ko">"시계 익히기" 활동</caption>
+      <caption xml:lang="lt">Pamokėlė „Pažink laikrodį“</caption>
       <caption xml:lang="mk">"Учење на часовникот" активност</caption>
       <caption xml:lang="ml">"ക്ലോക്ക് പഠനം" പ്രവർത്തനം</caption>
       <caption xml:lang="nl">Activiteit "Leren klok kijken</caption>
@@ -573,8 +607,10 @@
       <caption xml:lang="pt">Actividade para "Descobrir o Relógio"</caption>
       <caption xml:lang="pt-BR">Atividade "O Relógio"</caption>
       <caption xml:lang="ro">Activitatea de "Învățarea ceasului clasic"</caption>
+      <caption xml:lang="ru">Упражнение «Изучение часов»</caption>
       <caption xml:lang="sk">Aktivita "Učenie hodín"</caption>
       <caption xml:lang="sl">Dejavnost "Učimo se poznati na uro"</caption>
+      <caption xml:lang="sq">Veprimtaria “Mësoni Sahatin”</caption>
       <caption xml:lang="sv">Aktiviteten "Lära sig klockan"</caption>
       <caption xml:lang="tr">"Saatleri öğrenme" aktivite</caption>
       <caption xml:lang="uk">Вправа «Вивчення годинника»</caption>
@@ -602,6 +638,7 @@
       <caption xml:lang="id">Aktivitas "Mencampur warna cat"</caption>
       <caption xml:lang="it">Attività «Miscela la vernice colorata»</caption>
       <caption xml:lang="ko">"물감 색 섞기" 활동</caption>
+      <caption xml:lang="lt">Pamokėlė „Dažų spalvų maišymas“</caption>
       <caption xml:lang="mk">"Мешање на бои" активност</caption>
       <caption xml:lang="ml">"ചായത്തിന്റെ നിറങ്ങൾ കൂട്ടിക്കലർത്താം" പ്രവർത്തനം</caption>
       <caption xml:lang="nl">Activiteit "Verfkleuren mengen"</caption>
@@ -610,8 +647,10 @@
       <caption xml:lang="pt">Actividade para "Misturar a cor das tintas"</caption>
       <caption xml:lang="pt-BR">Atividade "Mistura de tintas coloridas"</caption>
       <caption xml:lang="ro">Activitatea "Amestecul culorilor din vopsea"</caption>
+      <caption xml:lang="ru">Упражнение «Смешение цветов краски»</caption>
       <caption xml:lang="sk">Aktivita "Miešanie farieb maľby"</caption>
       <caption xml:lang="sl">Dejavnost "Mešanje barv"</caption>
+      <caption xml:lang="sq">Veprimtaria Zgjidhni ngjyrë veprimtarie skede</caption>
       <caption xml:lang="sv">Aktiviteten "Blanda målarfärger"</caption>
       <caption xml:lang="tr">"Renkli boya karışımı" aktivite</caption>
       <caption xml:lang="uk">Вправа «Змішування кольорів малюнка»</caption>
@@ -639,6 +678,7 @@
       <caption xml:lang="id">Aktivitas "Mengenal warna"</caption>
       <caption xml:lang="it">Attività «Colori»</caption>
       <caption xml:lang="ko">"색깔" 활동</caption>
+      <caption xml:lang="lt">Pamokėlė „Spalvos“</caption>
       <caption xml:lang="mk">"Бои" активност</caption>
       <caption xml:lang="ml">"നിറങ്ങൾ" പ്രവർത്തനം</caption>
       <caption xml:lang="nl">Activiteit "Kleuren"</caption>
@@ -648,8 +688,10 @@
       <caption xml:lang="pt">Actividade de "Cores"</caption>
       <caption xml:lang="pt-BR">Atividade "Cores"</caption>
       <caption xml:lang="ro">Activitatea "Culorile"</caption>
+      <caption xml:lang="ru">Упражнение «Цвета»</caption>
       <caption xml:lang="sk">Aktivita "Farby"</caption>
       <caption xml:lang="sl">Dejavnost "Barve"</caption>
+      <caption xml:lang="sq">Veprimtaria “Ngjyra”</caption>
       <caption xml:lang="sv">Aktiviteten "Färger"</caption>
       <caption xml:lang="tr">"Renkler" aktivite</caption>
       <caption xml:lang="uk">Вправа з кольорами</caption>
@@ -677,6 +719,7 @@
       <caption xml:lang="id">Aktivitas "Bangun model yang sama"</caption>
       <caption xml:lang="it">Attività «Costruisci lo stesso modello»</caption>
       <caption xml:lang="ko">"같은 모델 만들기" 활동</caption>
+      <caption xml:lang="lt">Pamokėlė „Sudėliok tokį patį modelį“</caption>
       <caption xml:lang="mk">"Изградете го истиот модел" активност</caption>
       <caption xml:lang="ml">"മാതൃക പോലെ നിർമ്മിക്കുക" പ്രവർത്തനം</caption>
       <caption xml:lang="nl">Activiteit "Bouw hetzelfde model"</caption>
@@ -685,8 +728,10 @@
       <caption xml:lang="pt">Actividade para "Construir o mesmo modelo"</caption>
       <caption xml:lang="pt-BR">Atividade "Construa o mesmo modelo"</caption>
       <caption xml:lang="ro">Activitatea "Construiește același model"</caption>
+      <caption xml:lang="ru">Упражнение «Построй такую же модель»</caption>
       <caption xml:lang="sk">Aktivita "Postaviť rovnaký model"</caption>
       <caption xml:lang="sl">Dejavnost "Izgradi enak model"</caption>
+      <caption xml:lang="sq">Veprimtaria “Ndërtoni të njëjtin model”</caption>
       <caption xml:lang="sv">Aktiviteten "Bygg samma modell"</caption>
       <caption xml:lang="tr">"Aynı modeli inşa et" aktivite</caption>
       <caption xml:lang="uk">Вправа «Відтворіть модель»</caption>
@@ -714,6 +759,7 @@
       <caption xml:lang="id">Aktivitas "Menghitung benda"</caption>
       <caption xml:lang="it">Attività «Conta gli oggetti»</caption>
       <caption xml:lang="ko">"물건 개수 세기" 활동</caption>
+      <caption xml:lang="lt">Pamokėlė „Suskaičiuok elementus“</caption>
       <caption xml:lang="mk">"Изброј ги предметите" активност</caption>
       <caption xml:lang="ml">"എത്രയെണ്ണം?" പ്രവർത്തനം</caption>
       <caption xml:lang="nl">Activiteit "Tel het aantal items"</caption>
@@ -722,8 +768,10 @@
       <caption xml:lang="pt">Actividade para "Contar os itens"</caption>
       <caption xml:lang="pt-BR">Atividade "Contagem de itens"</caption>
       <caption xml:lang="ro">Activitatea "Numără elementele"</caption>
+      <caption xml:lang="ru">Упражнение «Счёт предметов»</caption>
       <caption xml:lang="sk">Aktivita "Počítať položky"</caption>
       <caption xml:lang="sl">Dejavnost "Preštej predmete"</caption>
+      <caption xml:lang="sq">Veprimtaria “Numëroni objektet”</caption>
       <caption xml:lang="sv">Aktiviteten "Räkna sakerna"</caption>
       <caption xml:lang="tr">"Nesneleri say" aktivite</caption>
       <caption xml:lang="uk">Вправа «Порахувати предмети»</caption>
@@ -750,6 +798,7 @@
       <caption xml:lang="id">Aktivitas "Permainan lima belas"</caption>
       <caption xml:lang="it">Attività «Il gioco del quindici»</caption>
       <caption xml:lang="ko">"15 게임" 활동</caption>
+      <caption xml:lang="lt">Žaidimas „Penkiolika“</caption>
       <caption xml:lang="mk">"Петнаесеттата игра" активност</caption>
       <caption xml:lang="ml">"പതിനഞ്ചിന്റെ കളി" പ്രവർത്തനം</caption>
       <caption xml:lang="nl">Activiteit "Het vijftien-spel"</caption>
@@ -758,8 +807,10 @@
       <caption xml:lang="pt">Actividade do "Jogo dos quinze"</caption>
       <caption xml:lang="pt-BR">Atividade "O jogo do quinze"</caption>
       <caption xml:lang="ro">Activitatea "Jocul de cincisprezece"</caption>
+      <caption xml:lang="ru">Упражнение «Пятнашки»</caption>
       <caption xml:lang="sk">Aktivita "Hra pätnásť"</caption>
       <caption xml:lang="sl">Dejavnost "Igra petnajst"</caption>
+      <caption xml:lang="sq">Veprimtaria “Loja e pesëmbëdhjetëshes”</caption>
       <caption xml:lang="sv">Aktiviteten "Femtonspel"</caption>
       <caption xml:lang="tr">"On beş oyun" aktivite</caption>
       <caption xml:lang="uk">Вправа «Гра „П'ятнадцять“»</caption>
@@ -786,6 +837,7 @@
       <caption xml:lang="id">Aktivitas "Segi enam"</caption>
       <caption xml:lang="it">Attività «Esagono»</caption>
       <caption xml:lang="ko">"육각형" 활동</caption>
+      <caption xml:lang="lt">Pamokėlė „Šešiakampis“</caption>
       <caption xml:lang="mk">"Шестаголник" активност</caption>
       <caption xml:lang="ml">"ഷഡ്ഭുജം" പ്രവർത്തനം</caption>
       <caption xml:lang="nl">Activiteit "Hexagon"</caption>
@@ -794,8 +846,10 @@
       <caption xml:lang="pt">Actividade de "Hexágono"</caption>
       <caption xml:lang="pt-BR">Atividade "Hexágono"</caption>
       <caption xml:lang="ro">Activitatea "Hexagonul"</caption>
+      <caption xml:lang="ru">Упражнение «Шестиугольники»</caption>
       <caption xml:lang="sk">Aktivita "Hexagón"</caption>
       <caption xml:lang="sl">Dejavnost "Šesterokotnik"</caption>
+      <caption xml:lang="sq">Veprimtaria “Gjashtëkëndëshi”</caption>
       <caption xml:lang="sv">Aktiviteten "Hexagon"</caption>
       <caption xml:lang="tr">"Altıgen" aktivite</caption>
       <caption xml:lang="uk">Вправа «Шестикутник»</caption>
@@ -823,6 +877,7 @@
       <caption xml:lang="id">Aktivitas "Seimbangkan timbangan"</caption>
       <caption xml:lang="it">Attività «Allinea correttamente i piatti della bilancia»</caption>
       <caption xml:lang="ko">"저울 균형 맞추기" 활동</caption>
+      <caption xml:lang="lt">Pamokėlė „Subalansuok svarstykles“</caption>
       <caption xml:lang="mk">"Мерење со вага" активност</caption>
       <caption xml:lang="ml">"തട്ടുകളിലെ തൂക്കമൊപ്പിക്കൂ" പ്രവർത്തനം</caption>
       <caption xml:lang="nl">Activiteit "Breng de weegschaal in evenwicht"</caption>
@@ -831,8 +886,10 @@
       <caption xml:lang="pt">Actividade para "Equilibrar as balanças adequadamente"</caption>
       <caption xml:lang="pt-BR">Atividade "Equilibre a balança"</caption>
       <caption xml:lang="ro">Activitatea "Echilibrează balanța"</caption>
+      <caption xml:lang="ru">Упражнение «Равновесие на весах»</caption>
       <caption xml:lang="sk">Aktivita "Vyvážiť správne váhy"</caption>
       <caption xml:lang="sl">Dejavnost "Pravilno uravnoteži tehtnice"</caption>
+      <caption xml:lang="sq">Veprimtaria “Baraspeshoni peshoret si duhet”</caption>
       <caption xml:lang="sv">Aktiviteten "Balansera vågen rätt"</caption>
       <caption xml:lang="tr">"Teraziyi doğru şekilde dengele" aktivite</caption>
       <caption xml:lang="uk">Вправа «Рівновага на вагах»</caption>
@@ -860,6 +917,7 @@
       <caption xml:lang="id">Aktivitas "Akhir dari permainan catur"</caption>
       <caption xml:lang="it">Attività «Fine della partita a scacchi»</caption>
       <caption xml:lang="ko">"체스 게임" 활동</caption>
+      <caption xml:lang="lt">Šachmatų žaidimo pabaiga (Endšpilis)</caption>
       <caption xml:lang="mk">"Крај на шаховска игра" активност</caption>
       <caption xml:lang="ml">"ചെസ്സു കളിയുടെ അവസാനം" പ്രവർത്തനം</caption>
       <caption xml:lang="nl">Activiteit "Eindspel van schaken"</caption>
@@ -868,8 +926,10 @@
       <caption xml:lang="pt">Actividade de "Fim de jogo de xadrez"</caption>
       <caption xml:lang="pt-BR">Atividade "Finalize o jogo de xadrez"</caption>
       <caption xml:lang="ro">Activitatea "Sfârșitul jocului de șah"</caption>
+      <caption xml:lang="ru">Упражнение «Эндшпиль»</caption>
       <caption xml:lang="sk">Aktivita "Koniec šachovej hry"</caption>
       <caption xml:lang="sl">Dejavnost "Šahovska končnica"</caption>
+      <caption xml:lang="sq">Veprimtari “Lojë fundi shahu”</caption>
       <caption xml:lang="sv">Aktiviteten "Slutspel i schack"</caption>
       <caption xml:lang="tr">"Santranç oyunu sona erdi" aktivite</caption>
       <caption xml:lang="uk">Вправа «Завершення гри у шахи»</caption>
@@ -896,6 +956,7 @@
       <caption xml:lang="id">Aktivitas "Permainan teka-teki menggeser balok"</caption>
       <caption xml:lang="it">Attività «Un rompicapo con blocchi scorrevoli»</caption>
       <caption xml:lang="ko">"블록 밀기 퍼즐 게임" 활동</caption>
+      <caption xml:lang="lt">Stumdomų blokų dėlionė</caption>
       <caption xml:lang="mk">"Сложувалка со лизгачки блокови" активност</caption>
       <caption xml:lang="ml">"വഴി കണ്ടെത്തൽ" പ്രവർത്തനം</caption>
       <caption xml:lang="nl">Activiteit "Een puzzel met schuivende blokken"</caption>
@@ -904,8 +965,10 @@
       <caption xml:lang="pt">Actividade de "Puzzle de blocos deslizantes"</caption>
       <caption xml:lang="pt-BR">Atividade "Quebra-cabeça com peças deslizantes"</caption>
       <caption xml:lang="ro">Activitatea "Un joc de puzzle cu blocuri glisante"</caption>
+      <caption xml:lang="ru">Упражнение «Головоломка с подвижными блоками»</caption>
       <caption xml:lang="sk">Aktivita "Posuvné puzzle"</caption>
       <caption xml:lang="sl">Dejavnost "Sestavljanke drsečih blokov"</caption>
+      <caption xml:lang="sq">Veprimtari “Lojë puzzle me blloqe të lëvizshëm”</caption>
       <caption xml:lang="sv">Aktiviteten "Pusselspel med glidande block"</caption>
       <caption xml:lang="tr">"Kayan blok yap boz oyunu" aktivite</caption>
       <caption xml:lang="uk">Вправа «Головоломка з пересувними блоками»</caption>
@@ -959,6 +1022,7 @@
     <value key="KDE::windows_store">https://www.microsoft.com/store/apps/9pgxjtcxn8qm</value>
   </custom>
   <releases>
+    <release version="1.1" date="2021-03-21"/>
     <release version="1.0" date="2020-11-19"/>
   </releases>
 </component>

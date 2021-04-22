@@ -187,4 +187,15 @@ ElectricalComponent {
             Activity.netlist.push(netlistItem);
         }
     }
+
+    function checkComponentAnswer() {
+        if(ledLight.opacity === 1) {
+            return "redLedGlows";
+        } else if(terminalConnected >= 2 && isBroken) {
+            return "redLedBroken";
+        } else if(terminalConnected >= 2)
+            return "redLedIn";
+        else
+            return "";
+    }
 }

@@ -17,11 +17,11 @@
 #include "ApplicationSettings.h"
 
 #include <QObject>
+#include <QLocale>
 #include <QQmlEngine>
 #include <QtGlobal>
 
 class QQuickWindow;
-
 
 /**
  * @class ApplicationInfo
@@ -31,7 +31,7 @@ class QQuickWindow;
  */
 class ApplicationInfo : public QObject
 {
-	Q_OBJECT
+    Q_OBJECT
 
     /**
      * Width of the application viewport.
@@ -141,20 +141,19 @@ class ApplicationInfo : public QObject
      * Use to disable activities that use Box2D when it's not installed.
      */
     Q_PROPERTY(bool isBox2DInstalled READ isBox2DInstalled NOTIFY isBox2DInstalledChanged)
-        
-public:
 
-	/**
+public:
+    /**
 	 * Known host platforms.
 	 */
     enum Platform {
-        Linux,      /**< Linux (except Android) */
-        Windows,    /**< Windows */
-        MacOSX,     /**< MacOSX */
-        Android,    /**< Android */
-        Ios,        /**< IOS (not supported) */
+        Linux, /**< Linux (except Android) */
+        Windows, /**< Windows */
+        MacOSX, /**< MacOSX */
+        Android, /**< Android */
+        Ios, /**< IOS (not supported) */
         Blackberry, /**< Blackberry (not supported) */
-        SailfishOS,  /**< SailfishOS */
+        SailfishOS, /**< SailfishOS */
         UbuntuTouchOS /**< UbuntuTouch OS */
     };
 
@@ -177,12 +176,13 @@ public:
      * @param locale A locale string of the form \<language\>_\<country\>
      * @returns A short locale string of the form \<language\>
      */
-    static QString localeShort(const QString &locale) {
+    static QString localeShort(const QString &locale)
+    {
         QString _locale = locale;
-        if(_locale == GC_DEFAULT_LOCALE) {
+        if (_locale == GC_DEFAULT_LOCALE) {
             _locale = QLocale::system().name();
-        } 
-        if(_locale == "C") {
+        }
+        if (_locale == "C") {
             _locale = "en_US";
         }
         // Can't use left(2) because of Asturian where there are 3 chars
@@ -221,7 +221,7 @@ public:
      *                  set language from global configuration.
      * @returns         -1, 0 or 1 if a is less than, equal to or greater than b
      */
-    Q_INVOKABLE int localeCompare(const QString& a, const QString& b, const QString& locale = "") const;
+    Q_INVOKABLE int localeCompare(const QString &a, const QString &b, const QString &locale = "") const;
 
     /**
      * Sort a list of strings respecting locale specific sort order.
@@ -235,12 +235,13 @@ public:
      *                  used in GCompris xx[_XX][.codeset].
      * @returns         List sorted by the sort order of the passed locale.
      */
-    Q_INVOKABLE QVariantList localeSort(QVariantList list, const QString& locale = "") const;
+    Q_INVOKABLE QVariantList localeSort(QVariantList list, const QString &locale = "") const;
 
     /// @cond INTERNAL_DOCS
 
-    static ApplicationInfo *getInstance() {
-        if(!m_instance) {
+    static ApplicationInfo *getInstance()
+    {
+        if (!m_instance) {
             m_instance = new ApplicationInfo();
         }
         return m_instance;
@@ -256,7 +257,8 @@ public:
     bool isPortraitMode() const { return m_isPortraitMode; }
     void setIsPortraitMode(const bool newMode);
     bool isMobile() const { return m_isMobile; }
-    bool hasShader() const {
+    bool hasShader() const
+    {
 #if defined(Q_OS_ANDROID)
         return false;
 #else
@@ -265,8 +267,9 @@ public:
     }
     qreal ratio() const { return m_ratio; }
     qreal fontRatio() const { return m_fontRatio; }
-    QString localeShort() const {
-        return localeShort( ApplicationSettings::getInstance()->locale() );
+    QString localeShort() const
+    {
+        return localeShort(ApplicationSettings::getInstance()->locale());
     }
     static QString GCVersion() { return VERSION; }
     static int GCVersionCode() { return VERSION_CODE; }
@@ -323,7 +326,7 @@ public:
      * @param sensorType  Classname of a sensor from the QtSensor module
      *                    to be checked (e.g. "QTiltSensor").
      */
-    Q_INVOKABLE bool sensorIsSupported(const QString& sensorType);
+    Q_INVOKABLE bool sensorIsSupported(const QString &sensorType);
 
     /**
      * Toggles activation of screensaver on android
@@ -347,9 +350,10 @@ public:
 
 public slots:
     /**
-     * Returns the resource root-path used for GCompris resources.
+     * Returns the resource root-paths used for GCompris resources.
+     * First look in a local folder if exists, else will look into the rcc files.
      */
-    QString getResourceDataPath();
+    QStringList getResourceDataPaths();
 
     /**
      * Returns an absolute path to a language specific sound/voices file. If

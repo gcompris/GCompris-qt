@@ -38,7 +38,7 @@ Item {
         "+": [3, 4, 6], "-": [3, 6], "*": [1, 6], "/": [3, 4],
         "#": [3, 4, 5, 6], "1": [1], "2" :[1, 2], "3": [1, 4], "4": [1, 4, 5],
         "5": [1, 5], "6": [1, 2, 4], "7": [1, 2, 4, 5], "8": [1, 2, 5],
-        "9": [2, 4], "0" :[3, 5, 6]
+        "9": [2, 4], "0" :[2, 4, 5]
     }
     property var brailleCodes: isLetter ? brailleCodesLetter : brailleCodesNumber
 
@@ -156,7 +156,7 @@ Item {
 
                 MouseArea {
                     id : mouse1
-                    enabled: clickable ? true : false
+                    enabled: clickable && !(bonus.isPlaying || score.isWinAnimationPlaying) ? true : false
                     anchors.fill: parent
                     hoverEnabled: true
                     onEntered: incircle1.border.width = 4 * ApplicationInfo.ratio

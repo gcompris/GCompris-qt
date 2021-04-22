@@ -1,0 +1,223 @@
+# This repository adheres to the publiccode.yml standard by including this 
+# metadata file that makes public software easily discoverable.
+# More info at https://github.com/italia/publiccode.yml
+
+publiccodeYmlVersion: '0.2'
+name: GCompris
+url: 'https://invent.kde.org/education/gcompris.git'
+releaseDate: '2021-03-21'
+softwareVersion: '1.1'
+developmentStatus: stable
+logo: images/sc-apps-gcompris-qt.svg
+landingURL: 'https://www.gcompris.net/'
+platforms:
+  - linux
+  - windows
+  - android
+  - mac
+categories:
+  - learning-management-system
+softwareType: standalone/desktop
+intendedAudience:
+  scope:
+    - education
+maintenance:
+  type: community
+  contacts:
+    - name: Timothée Giet
+      email: support@gcompris.net
+    - name: Johnny Jazeix
+      email: support@gcompris.net
+legal:
+  license: AGPL-3.0
+localisation:
+  localisationReady: true
+  availableLanguages:
+    - en_GB
+    - en_US
+    - br_FR
+    - be_BY
+    - ca_ES
+    - ca-valencia
+    - de_DE
+    - el_GR
+    - es_ES
+    - fr_FR
+    - he_IL
+    - hu_HU
+    - id_ID
+    - it_IT
+    - lt_LT
+    - ml_IN
+    - nl_NL
+    - pl_PL
+    - pt_PT
+    - pt_BR
+    - ro_RO
+    - sl_SI
+    - sv_FI
+    - tr_TR
+    - uk_UA
+    - zh_TW
+description:
+  en:
+    genericName: Educational software
+    shortDescription: |-
+      GCompris is a high quality educational software suite, including a large
+      number of activities for children aged 2 to 10.
+    longDescription: |
+      GCompris is a high quality educational software suite, including a large
+      number of activities for children aged 2 to 10.
+
+
+      Some of the activities are game orientated, but still educational.
+
+
+      Here is the list of activity categories with some examples:
+
+
+      - computer discovery: keyboard, mouse, touchscreen...
+
+      - reading: letters, words, reading practice, typing text...
+
+      - arithmetic: numbers, operations, table memory, enumeration, double entry
+      table...
+
+      - science: the canal lock, the water cycle, renewable energy...
+
+      - geography: countries, regions, culture...
+
+      - games: chess, memory, align 4, hangman, tic-tac-toe...
+
+      - other: colors, shapes, Braille, learn to tell time...
+
+
+      Currently GCompris offers more than 100 activities, and more are  being
+      developed. GCompris is free software, it means that you can adapt  it to
+      your own needs, improve it, and most importantly share it with  children
+      everywhere.
+
+
+      The GCompris project is hosted and developed by the KDE community.
+    features:
+      - computer discovery
+      - reading
+      - arithmetic
+      - science
+      - logic
+    screenshots:
+      - screenshots/root.png
+      - screenshots/gletters.png
+      - screenshots/algebra_plus.png
+      - screenshots/clockgame.png
+      - screenshots/programmingMaze.png
+
+  it:
+    genericName: Software educativo
+    shortDescription: |-
+      GCompris è una collezione di giochi didattici di alta qualità che offre
+      differenti attività ai bambini dai 2 ai 10 anni.
+    longDescription: |
+      GCompris è una collezione di giochi didattici di alta qualità che offre
+      differenti attività ai bambini dai 2 ai 10 anni.
+
+
+      Alcune attività sono orientate al gioco, ma, in ogni caso,
+      hanno valore didattico.
+
+
+      Ecco l'elenco delle categorie di attività con alcuni esempi:
+
+      - scoperta del computer: tastiera, mouse, schermo tattile...
+
+      - lettura: lettere, parole, esercizi di lettura, digitazione di testo...
+
+      - aritmetica: numeri, operazioni, giochi di memoria con le tabelline,
+      enumerazioni, tabelle a doppia entrata...
+
+      - scienza: il funzionamento di una chiusa, il ciclo dell'acqua,
+      energie rinnovabili...
+
+      - geografia: nazioni, regioni, cultura...
+
+      - giochi: scacchi, memory, forza 4, gioco dell'impiccato, tris...
+
+      - altro: colori, forme, Braille, impara a dire l'ora...
+
+
+      Attualmente GCompris offre più di 100 attività, e molte altre sono in
+      fase di sviluppo. GCompris è un software libero, e questo significa
+      che si può adattare alle proprie esigenze, migliorare e, soprattutto,
+      condividere ovunque con i bambini.
+
+
+      Il progetto GCompris è ospitato e sviluppato dalla comunità di KDE.
+    features:
+      - scoperta del computer
+      - lettura
+      - aritmetica
+      - scienza
+      - logica
+    screenshots:
+      - screenshots/root.png
+      - screenshots/gletters.png
+      - screenshots/algebra_plus.png
+      - screenshots/clockgame.png
+      - screenshots/programmingMaze.png
+
+  fr:
+    genericName: Logiciel éducatif
+    shortDescription: |-
+      GCompris est une suite logicielle éducative de grande qualité,
+      comprenant un grand nombre d'activités pour les enfants âgés
+      de 2 à 10 ans.
+    longDescription: |
+      GCompris est une suite logicielle éducative de grande qualité,
+      comprenant un grand nombre d'activités pour les enfants âgés
+      de 2 à 10 ans.
+
+
+      Les activités sont quelquefois ludiques, mais toujours pédagogiques.
+
+
+      Voici ici la liste des différents thèmes que nous couvrons avec
+      quelques exemples :
+
+
+      - découverte de l'ordinateur : clavier, souris, écrans tactiles...
+
+      - lecture : lettres, mots, entraînement à la lecture, à l'écriture...
+
+      - mathématiques : révision des tables, dénombrement, les tables à
+      double entrée...
+
+      - sciences : l'écluse, le cycle de l'eau, l'énergie renouvelable...
+
+      - géographie : pays, régions, culture...
+
+      - jeux : les échecs, jeux de mémoire, le puissance 4, le pendu,
+      le morpion...
+
+      - autres : couleurs, formes, le Braille, apprendre à dire l'heure...
+
+
+      En tout, GCompris propose plus de 100 activités et il continue à évoluer.
+      GCompris est un logiciel libre, il vous est donc possible de l'adapter
+      à votre besoin ou de l'améliorer, et pourquoi pas, d'en faire bénéficier
+      les enfants du monde entier.
+
+
+      Le projet GCompris est hébergé et développé par la communauté KDE.
+    features:
+      - "découverte de l'ordinateur"
+      - "lecture"
+      - "arithmétique"
+      - "science"
+      - "logique"
+    screenshots:
+      - screenshots/root.png
+      - screenshots/gletters.png
+      - screenshots/algebra_plus.png
+      - screenshots/clockgame.png
+      - screenshots/programmingMaze.png
+

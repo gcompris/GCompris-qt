@@ -111,12 +111,29 @@ ActivityBase {
             Keys.onTabPressed: bar.repeatClicked();
         }
 
+        Item {
+            id: layoutArea
+            anchors.top: score.bottom
+            anchors.bottom: bar.top
+            anchors.bottomMargin: bar.height * 0.4
+            anchors.left: background.left
+            anchors.right: background.right
+            anchors.margins: 10 * ApplicationInfo.ratio
+        }
+
+        Item {
+            id: questionArea
+            width: Math.min(layoutArea.width, layoutArea.height)
+            height: width
+            anchors.centerIn: layoutArea
+        }
+
         // Buttons with possible answers shown on the left of screen
         Column {
             id: buttonHolder
             spacing: 10 * ApplicationInfo.ratio
-            x: holder.x - width - 10 * ApplicationInfo.ratio
-            y: holder.y
+            anchors.left: questionArea.left
+            anchors.top: questionArea.top
 
             add: Transition {
                 NumberAnimation { properties: "y"; from: holder.y; duration: 500 }
@@ -126,7 +143,7 @@ ActivityBase {
                 id: answers
 
                 AnswerButton {
-                    width: 120 * ApplicationInfo.ratio
+                    width: questionArea.width - holder.width - 10 * ApplicationInfo.ratio
                     height: (holder.height
                              - buttonHolder.spacing * answers.model.length) / answers.model.length
                     textLabel: modelData
@@ -147,60 +164,50 @@ ActivityBase {
         // Picture holder for different images being shown
         Rectangle {
             id: holder
-            width: Math.max(questionImage.width * 1.1, questionImage.height * 1.1)
-            height: questionTextBg.y + questionTextBg.height
-            x: (background.width - width - 130 * ApplicationInfo.ratio) / 2 +
-               130 * ApplicationInfo.ratio
-            y: 20
-            color: "black"
+            width: questionArea.width * 0.7
+            height: questionArea.height
+            anchors.top: questionArea.top
+            anchors.right: questionArea.right
+            color: "white"
             radius: 10
             border.width: 2
-            border.color: "black"
+            border.color: "#373737"
             gradient: Gradient {
                 GradientStop { position: 0.0; color: "#80FFFFFF" }
                 GradientStop { position: 0.9; color: "#80EEEEEE" }
                 GradientStop { position: 1.0; color: "#80AAAAAA" }
             }
 
-            Item {
-                id: spacer
-                height: 20
-            }
-
             Image {
                 id: questionImage
                 anchors.horizontalCenter: holder.horizontalCenter
-                anchors.top: spacer.bottom
-                width: Math.min((background.width - 120 * ApplicationInfo.ratio) * 0.7,
-                                (background.height - 100 * ApplicationInfo.ratio) * 0.7)
+                anchors.top: holder.top
+                width: holder.width
                 height: width
+                fillMode: Image.PreserveAspectFit
             }
 
             Rectangle {
                 id: questionTextBg
                 width: holder.width
-                height: questionText.height * 1.1
+                height: holder.height - questionImage.height
                 anchors.horizontalCenter: holder.horizontalCenter
                 anchors.top: questionImage.bottom
                 radius: 10
-                border.width: 2
-                border.color: "black"
-                gradient: Gradient {
-                    GradientStop { position: 0.0; color: "#000" }
-                    GradientStop { position: 0.9; color: "#666" }
-                    GradientStop { position: 1.0; color: "#AAA" }
-                }
+                color: "#373737"
 
                 GCText {
                     id: questionText
                     horizontalAlignment: Text.AlignHCenter
                     verticalAlignment: Text.AlignVCenter
-                    style: Text.Outline
-                    styleColor: "black"
-                    color: "white"
-                    fontSize: largeSize
-                    wrapMode: Text.WordWrap
-                    width: holder.width
+                    color: "#f2f2f2"
+                    anchors.centerIn: parent
+                    width: parent.width * 0.9
+                    height: parent.height * 0.9
+                    font.pointSize: NaN  // need to clear font.pointSize explicitly
+                    fontSizeMode: Text.Fit
+                    minimumPixelSize: 10
+                    font.pixelSize: width * 0.2
 
                     SequentialAnimation {
                         id: questionAnim
@@ -231,8 +238,6 @@ ActivityBase {
                     }
                 }
             }
-
-
         }
 
         Score {
@@ -256,11 +261,11 @@ ActivityBase {
                 ApplicationSettings.setCurrentLevels(currentActivity.name, dialogActivityConfig.chosenLevels)
             }
             onLoadData: {
-                if(activityData && activityData["activityLocale"]) {
-                    background.locale = activityData["activityLocale"];
+                if(activityData && activityData["locale"]) {
+                    background.locale = Core.resolveLocale(activityData["locale"]);
                 }
                 else {
-                    background.locale = Core.resolveLocale(background.locale)
+                    background.locale = Core.resolveLocale(background.locale);
                 }
             }
             onStartActivity: {

@@ -42,15 +42,15 @@ Item {
                 top: undefined
                 topMargin: undefined
             }
-
-            onClicked: Activity.moveTux()
+            enabled: !items.tuxIsMoving && !clockAnim.running && !bonus.isPlaying
+            onClicked: Activity.moveTux(domino.value1 + domino.value2)
         }
 
         Domino {
             id: domino
             height: ok.height
             width: height * 2
-            isClickable: true
+            isClickable: ok.enabled
             audioEffects: activity.audioEffects
         }
     }

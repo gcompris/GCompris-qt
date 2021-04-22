@@ -240,7 +240,7 @@ Generator::generateData(qint64 len) {
 }
 
 void
-Generator::setEnvelope(ADSREnvelope &env) {
+Generator::setEnvelope(const ADSREnvelope &env) {
     defaultEnv = env;
 }
 

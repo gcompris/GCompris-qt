@@ -25,6 +25,8 @@ GridView {
     anchors.top: mazeModel.bottom
     anchors.topMargin: background.height * 0.4
 
+    property string instructionText: qsTr("Choose the instructions")
+
     interactive: false
     model: instructionModel
 
@@ -32,7 +34,7 @@ GridView {
         width: instructionArea.width
         height: background.height / 11
         headerOpacity: 1
-        headerText: qsTr("Choose the instructions")
+        headerText: instructionText
     }
 
     property string instructionToInsert

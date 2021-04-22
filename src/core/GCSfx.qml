@@ -50,6 +50,12 @@ Item {
     property alias status: sfx.status
 
     /**
+     * type:bool
+     * Status of the fx player.
+     */
+    property alias playing: sfx.playing
+
+    /**
      * Emitted when playback of sound has finished.
      */
     signal done

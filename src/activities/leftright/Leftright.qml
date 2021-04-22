@@ -18,15 +18,12 @@ ActivityBase {
 
     onStart: focus = true;
 
-    pageComponent: Image {
+    pageComponent: Rectangle {
         id: background
-        source: "qrc:/gcompris/src/activities/leftright/resource/back.svg"
-        sourceSize.width: width
-        sourceSize.height: height
+        color: "#abcdef"
         focus: true
         signal start
         signal stop
-        fillMode: Image.PreserveAspectCrop
 
         QtObject {
             id: items
@@ -51,32 +48,44 @@ ActivityBase {
         onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
 
+        Item {
+            id: layoutArea
+            width: parent.width
+            height: parent.height - bar.height * 1.5 - score.height * 1.3
+            anchors.top: score.bottom
+            anchors.left: parent.left
+        }
+
         Image {
             id: blackBoard
-            anchors.horizontalCenter: parent.horizontalCenter
-            anchors.top: score.bottom
+            anchors.horizontalCenter: layoutArea.horizontalCenter
+            anchors.verticalCenter: layoutArea.verticalCenter
+            anchors.verticalCenterOffset: -leftButton.height * 0.5
             fillMode: Image.PreserveAspectFit
-            sourceSize.width: Math.min(background.width,
-                                       (background.height - leftButton.height - bar.height) * 1.3)
+            height: (layoutArea.height - 10) * 0.85
+            width: layoutArea.width
+            sourceSize.height: height
+            sourceSize.width: width
             source: "qrc:/gcompris/src/activities/leftright/resource/blackboard.svg"
+
+            Image {
+                id: lightImage
+                source: "qrc:/gcompris/src/activities/leftright/resource/light.svg"
+                fillMode: Image.PreserveAspectFit
+                sourceSize.width: parent.paintedWidth
+                sourceSize.height: parent.paintedHeight
+                anchors.centerIn: parent
+                anchors.topMargin: 40
+                opacity: 0
+            }
 
             Image {
                 id: handImage
                 anchors.horizontalCenter: parent.horizontalCenter
                 anchors.verticalCenter: parent.verticalCenter
                 fillMode: Image.PreserveAspectFit
-                scale: blackBoard.height / 300 * 0.8
-                opacity: 0
-            }
-
-            Image {
-                id: lightImage
-                source: "qrc:/gcompris/src/activities/leftright/resource/light.svg"
-                sourceSize.width: parent.width
-                sourceSize.height: parent.height
-                anchors.horizontalCenter: parent.horizontalCenter
-                anchors.top: parent.top
-                anchors.topMargin: 40
+                width: blackBoard.paintedHeight * 0.7
+                height: width
                 opacity: 0
             }
 
@@ -100,7 +109,7 @@ ActivityBase {
                 NumberAnimation {
                     target: lightImage
                     property: "opacity"
-                    from: 0.2; to: 0
+                    from: 1; to: 0
                     duration: 300
                     easing.type: Easing.InOutQuad
                 }
@@ -118,7 +127,7 @@ ActivityBase {
                 NumberAnimation {
                     target: lightImage
                     property: "opacity"
-                    from: 0; to: 0.2
+                    from: 0; to: 1
                     duration: 300
                     easing.type: Easing.InOutQuad
                 }
@@ -126,11 +135,12 @@ ActivityBase {
 
             AnswerButton {
                 id: leftButton
-                width: blackBoard.width * 0.45
-                height: background.height * 0.15
-                anchors.left: blackBoard.left
-                anchors.top: blackBoard.bottom
-                anchors.margins: 10
+                width: blackBoard.paintedWidth * 0.45
+                height: (layoutArea.height - 10) * 0.15
+                anchors.right: blackBoard.horizontalCenter
+                anchors.rightMargin: blackBoard.paintedWidth * 0.04
+                anchors.top: blackBoard.verticalCenter
+                anchors.topMargin: blackBoard.paintedHeight * 0.5 + 10
                 textLabel: qsTr("Left hand")
                 audioEffects: activity.audioEffects
                 onPressed: items.buttonsBlocked = true
@@ -141,11 +151,12 @@ ActivityBase {
 
             AnswerButton {
                 id: rightButton
-                width: blackBoard.width * 0.45
-                height: background.height * 0.15
-                anchors.right: blackBoard.right
-                anchors.top: blackBoard.bottom
-                anchors.margins: 10
+                width: leftButton.width
+                height: leftButton.height
+                anchors.left: blackBoard.horizontalCenter
+                anchors.leftMargin: leftButton.anchors.rightMargin
+                anchors.top: blackBoard.verticalCenter
+                anchors.topMargin: leftButton.anchors.topMargin
                 audioEffects: activity.audioEffects
                 textLabel: qsTr("Right hand")
                 onPressed: items.buttonsBlocked = true
@@ -174,7 +185,10 @@ ActivityBase {
         Bonus {
             id: bonus
             onStart: items.buttonsBlocked = true
-            onStop: items.buttonsBlocked = false
+            onStop: {
+                Activity.nextLevel();
+                items.buttonsBlocked = false;
+            }
         }
 
         Score {

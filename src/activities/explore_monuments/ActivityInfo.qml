@@ -23,6 +23,6 @@ ActivityInfo {
   //: Help manual
   manual: qsTr("Click on the spots to learn about the monuments and then locate them on the map.")
   credit: qsTr("Photos taken from Wikipedia.")
-  section: "discovery arts"
+  section: "sciences geography"
   createdInVersion: 6000
 }

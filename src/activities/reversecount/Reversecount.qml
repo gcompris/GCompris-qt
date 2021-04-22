@@ -54,6 +54,7 @@ ActivityBase {
             property string mode: "dot"
             property var heightBase: (background.height - bar.height * 1.5) / 5
             property var widthBase: background.width / 5
+            property bool tuxIsMoving: false
         }
 
         onStart: { Activity.start(items) }

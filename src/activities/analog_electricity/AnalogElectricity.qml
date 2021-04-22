@@ -55,14 +55,15 @@ ActivityBase {
         property bool hori: background.width >= background.height
 
         Component.onCompleted: {
+            dialogActivityConfig.initialize();
             activity.start.connect(start);
             activity.stop.connect(stop);
         }
 
         Keys.onPressed: {
-//             if ((event.key === Qt.Key_Return || event.key === Qt.Key_Enter) && okButton.enabled) {
-//                 Activity.checkAnswer()
-//             }
+            if ((event.key === Qt.Key_Return || event.key === Qt.Key_Enter) && okButton.enabled) {
+                Activity.checkAnswer()
+            }
             if (event.key === Qt.Key_Plus) {
                 Activity.zoomIn();
             }
@@ -113,6 +114,9 @@ ActivityBase {
             property alias netlistTimer: netlistTimer
             property real toolsMargin: 90 * ApplicationInfo.ratio
             property real zoomLvl: 0.25
+            property string mode: "tutorial"
+            property bool isTutorialMode: mode == "tutorial" ? true : false
+            property alias tutorialInstruction: tutorialInstruction
 
         }
 
@@ -123,6 +127,23 @@ ActivityBase {
 
         TutorialDataset {
             id: tutorialDataset
+        }
+
+        IntroMessage {
+            id: tutorialInstruction
+            intro: []
+            textContainerWidth: background.hori ? parent.width - inputComponentsContainer.width - items.toolsMargin : 0.9 * background.width
+            textContainerHeight: background.hori ? 0.5 * parent.height : parent.height - inputComponentsContainer.height - (bar.height * 2) - items.toolsMargin
+            anchors {
+                fill: undefined
+                top: background.hori ? parent.top : inputComponentsContainer.bottom
+                topMargin: 10
+                right: parent.right
+                rightMargin: 5
+                left: background.hori ? inputComponentsContainer.right : parent.left
+                leftMargin: 5
+            }
+            z: 5
         }
 
         onStart: Activity.start(items);
@@ -229,6 +250,7 @@ ActivityBase {
                     drag.minimumY: - playArea.height * items.zoomLvl
                     drag.maximumY: 0
                     onClicked: {
+                        Activity.disableToolDelete();
                         Activity.deselect();
                         availablePieces.hideToolbar();
                     }
@@ -295,19 +317,54 @@ ActivityBase {
             }
         }
 
+        DialogChooseLevel {
+            id: dialogActivityConfig
+            currentActivity: activity.activityInfo
+            onClose: {
+                home();
+            }
+            onLoadData: {
+                if(activityData && activityData["mode"]) {
+                    items.mode = activityData["mode"];
+                }
+            }
+        }
+
         DialogHelp {
             id: dialogHelp
             onClose: home();
         }
 
+        BarButton {
+            id: okButton
+            visible: items.isTutorialMode
+            anchors {
+                bottom: bar.top
+                right: parent.right
+                rightMargin: 10 * ApplicationInfo.ratio
+                bottomMargin: height * 0.5
+            }
+            source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
+            sourceSize.width: 60 * ApplicationInfo.ratio
+            enabled: !tutorialInstruction.visible && !bonus.isPlaying
+            onClicked: Activity.checkAnswer();
+        }
+
         Bar {
             id: bar
-            content: BarEnumContent { value: help | home | level | reload }
+            content: BarEnumContent { value: help | home | (items.isTutorialMode ? level : 0) | reload | activityConfig }
             onHelpClicked: displayDialog(dialogHelp);
             onPreviousLevelClicked: Activity.previousLevel();
             onNextLevelClicked: Activity.nextLevel();
-            onHomeClicked: activity.home();
-            onReloadClicked: Activity.initLevel();
+            onHomeClicked: {
+                if(tutorialInstruction.visible)
+                    tutorialInstruction.visible = false;
+                activity.home();
+            }
+            onReloadClicked: Activity.reset();
+            onActivityConfigClicked: {
+                displayDialog(dialogActivityConfig);
+            }
         }
 
         Bonus {

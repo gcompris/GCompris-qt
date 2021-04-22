@@ -25,8 +25,11 @@ ActivityBase {
     onStart: {}
     onStop: {}
 
-    pageComponent: Rectangle {
+    pageComponent: Image {
         id: background
+        anchors.fill: parent
+        source: "qrc:/gcompris/src/activities/guesscount/resource/backgroundW01.svg"
+        property bool withMonsters: false
 
         function checkAnswer() {
             if (!muncher.movable)
@@ -69,11 +72,17 @@ ActivityBase {
             stopLevel();
 
             if(useMultipleDataset) {
-                if(items.levels[Activity._currentLevel].spawnMonsters)
+                if(items.levels[Activity._currentLevel].spawnMonsters) {
+                    withMonsters = true;
                     spawningMonsters.restart();
+                }
             }
             else if (Activity._currentLevel !== 0) {
+                withMonsters = true;
                 spawningMonsters.restart();
+            }
+            else {
+                withMonsters = false;
             }
         }
 
@@ -83,8 +92,6 @@ ActivityBase {
             timerActivateWarn.stop();
         }
 
-        anchors.fill: parent
-        color: "#ABCDEF"
         signal start
         signal stop
 
@@ -108,8 +115,8 @@ ActivityBase {
             initLevel();
         }
         onStop: {
+            spawningMonsters.stop()
             monsters.destroyAll()
-            muncher.init()
             Activity.stop()
         }
 
@@ -154,17 +161,14 @@ ActivityBase {
             onClicked: warningRect.hideWarning()
         }
 
-        Rectangle {
+        Item {
             id: gridPart
 
             width: background.width
             height: background.height / 7 * 6
-            border.color: "black"
-            border.width: 2
             anchors.right: parent.right
             anchors.top: parent.top
             anchors.bottom: topPanel.top
-            radius: 5
 
             function isLevelDone() {
                 for (var it = 0; it < modelCells.count; it++) {
@@ -226,6 +230,26 @@ ActivityBase {
                             background.checkAnswer()
                     }
                     started = false
+                }
+            }
+
+            GridView {
+                id: gridBackground
+
+                anchors.fill: parent
+                cellHeight: (parent.height - 2) / 6
+                cellWidth: (parent.width - 2) / 6
+                interactive: false
+                focus: false
+
+                model: modelCells
+                delegate: Rectangle {
+                    width: gridBackground.cellWidth
+                    height: gridBackground.cellHeight
+                    border.color: "#373737"
+                    border.width: 2
+                    radius: 5
+                    color: "#80ffffff"
                 }
             }
 

@@ -257,19 +257,27 @@ ActivityBase {
                                 imgHeight ?
                                     imgHeight * backgroundImage.height :
                                     (backgroundImage.source == "" ?
-                                         backgroundImage.height * shapeBackground.sourceSize.height / backgroundImage.height :
-                                         backgroundImage.height * shapeBackground.sourceSize.height /
+                                         backgroundImage.height * sourceShape.sourceSize.height / backgroundImage.height :
+                                         backgroundImage.height * sourceShape.sourceSize.height /
                                          backgroundImage.sourceSize.height)
 
                             width:
                                 imgWidth ?
                                     imgWidth * backgroundImage.width :
                                     (backgroundImage.source == "" ?
-                                         backgroundImage.width * shapeBackground.sourceSize.width / backgroundImage.width :
-                                         backgroundImage.width * shapeBackground.sourceSize.width /
+                                         backgroundImage.width * sourceShape.sourceSize.width / backgroundImage.width :
+                                         backgroundImage.width * sourceShape.sourceSize.width /
                                          backgroundImage.sourceSize.width)
 
+                            sourceSize.width: width
+                            sourceSize.height: height
                             fillMode: Image.PreserveAspectFit
+                            Image {
+                                id: sourceShape
+                                anchors.centerIn: parent
+                                source: Activity.imagesUrl + imgName
+                                visible: false
+                            }
                         }
                     }
                 }

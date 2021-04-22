@@ -12,7 +12,7 @@ ActivityInfo {
   icon: "memory-tux/memory-tux.svg"
   author: "JB BUTET &lt;ashashiwa@gmail.com&gt;"
   //: Activity title
-  title: qsTr("Memory Game with images against Tux")
+  title: qsTr("Memory game with images against Tux")
   //: Help title
   description: qsTr("Flip the cards to find the matching pairs, playing against Tux.")
 //  intro: "Click on a card and find its double."

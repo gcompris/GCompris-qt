@@ -10,27 +10,15 @@
 import GCompris 1.0
 
 Data {
-    objective: qsTr("Numbers between 1 and 8.")
+    objective: qsTr("Numbers between %1 and %2.").arg(1).arg(2)
     difficulty: 1
     data: [
     {
-        "minNumber": 1,
         "maxNumber": 1, /* Max number on each domino side */
-        "numberOfFish": 3
-    },
-    {
-        "minNumber": 1,
-        "maxNumber": 2,
-        "numberOfFish": 4
-    },
-    {
-        "minNumber": 1,
-        "maxNumber": 3,
-        "numberOfFish": 5
-    },
-    {
-        "minNumber": 1,
-        "maxNumber": 4,
+        /* One of the values is picked from this array randomly
+         * increase the frequency of value that you want to be picked more frequently
+         */
+        "values" : [1,2],   /* Special case, size 2 */
         "numberOfFish": 5
     }
     ]

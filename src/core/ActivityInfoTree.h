@@ -17,9 +17,9 @@
 class ActivityInfoTree : public QObject
 {
     Q_OBJECT
-    Q_PROPERTY(ActivityInfo* rootMenu READ getRootMenu CONSTANT)
+    Q_PROPERTY(ActivityInfo *rootMenu READ getRootMenu CONSTANT)
     Q_PROPERTY(QQmlListProperty<ActivityInfo> menuTree READ menuTree NOTIFY menuTreeChanged)
-    Q_PROPERTY(ActivityInfo* currentActivity READ getCurrentActivity WRITE setCurrentActivity NOTIFY currentActivityChanged)
+    Q_PROPERTY(ActivityInfo *currentActivity READ getCurrentActivity WRITE setCurrentActivity NOTIFY currentActivityChanged)
     Q_PROPERTY(QVariantList characters READ allCharacters CONSTANT)
 
 public:
@@ -33,8 +33,7 @@ public:
     void menuTreeAppend(ActivityInfo *menu);
     void menuTreeAppend(QQmlEngine *engine,
                         const QDir &menuDir, const QString &menuFile);
-    void sortByDifficulty(bool emitChanged = true);
-    void sortByName(bool emitChanged = true);
+    void sortByDifficultyThenName(bool emitChanged = true);
     QVariantList allCharacters();
 
 protected Q_SLOTS:
@@ -43,7 +42,7 @@ protected Q_SLOTS:
     // create a tree from the whole list of activities with the activities created between the two versions
     Q_INVOKABLE void filterCreatedWithinVersions(int firstVersion, int lastVersion,
                                                  bool emitChanged = true);
-    Q_INVOKABLE void filterBySearch(const QString& text);
+    Q_INVOKABLE void filterBySearch(const QString &text);
     Q_INVOKABLE void filterByDifficulty(quint32 levelMin, quint32 levelMax);
     Q_INVOKABLE void minMaxFiltersChanged(quint32 levelMin, quint32 levelMax, bool emitChanged = true);
 
@@ -60,24 +59,13 @@ private:
     ActivityInfo *m_rootMenu;
     ActivityInfo *m_currentActivity;
     QVariantList m_keyboardCharacters;
+#if QT_VERSION >= QT_VERSION_CHECK(6, 0, 0)
+    static qsizetype menuTreeCount(QQmlListProperty<ActivityInfo> *property);
+    static ActivityInfo *menuTreeAt(QQmlListProperty<ActivityInfo> *property, qsizetype index);
+#else
     static int menuTreeCount(QQmlListProperty<ActivityInfo> *property);
     static ActivityInfo *menuTreeAt(QQmlListProperty<ActivityInfo> *property, int index);
-
-    struct SortByDifficulty
-    {
-        bool operator()(const ActivityInfo *a, const ActivityInfo *b) const
-        {
-            return a->minimalDifficulty() < b->minimalDifficulty();
-        }
-    };
-
-	struct SortByName
-	{
-            bool operator()(const ActivityInfo *a, const ActivityInfo *b) const
-            {
-                return a->name() < b->name();
-            }
-	};
+#endif
 
 public:
     static void registerResources();

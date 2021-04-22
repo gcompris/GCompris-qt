@@ -89,10 +89,13 @@ function initLevel() {
             items.repeatersList[0].itemAt(i).opacity = 1
             items.repeatersList[1].itemAt(i).opacity = 1
             items.repeatersList[2].itemAt(i).opacity = 1
-            if(mode === "minus")
+            if(mode === "minus") {
                 nbStarsToAddOrRemove[i] = getRandomInt(1, numberOfStars[i]-1)
-            else
-                nbStarsToAddOrRemove[i] = getRandomInt(1, 10-numberOfStars[i])
+            }
+            else {
+                // For first level, we have 5 stars max, we don't want to add up to 10 stars
+                nbStarsToAddOrRemove[i] = getRandomInt(1, Math.min(10, maxValue)-numberOfStars[i])
+            }
         }
         else {
             items.repeatersList[0].itemAt(i).opacity = 0

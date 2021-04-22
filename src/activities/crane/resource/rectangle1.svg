@@ -5,87 +5,46 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   version="1.1"
-   id="Layer_1"
-   x="0px"
-   y="0px"
-   viewBox="0 0 63.999999 63.999999"
-   enable-background="new 0 0 3508 2480"
-   xml:space="preserve"
-   inkscape:version="0.91 r13725"
-   sodipodi:docname="rectangle1.svg"
+   height="64"
    width="64"
-   height="64"><metadata
+   xml:space="preserve"
+   enable-background="new 0 0 3508 2480"
+   viewBox="0 0 63.999999 63.999999"
+   y="0px"
+   x="0px"
+   id="Layer_1"
+   version="1.1"><metadata
      id="metadata4083">
     <rdf:RDF>
       <cc:Work
-         rdf:about="">
+   rdf:about="">
         <dc:format>image/svg+xml</dc:format>
         <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+   rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
         <dc:title></dc:title>
-        <dc:date>2016</dc:date>
+        <dc:date>2020</dc:date>
         <dc:creator>
           <cc:Agent>
             <dc:title>Timothée Giet</dc:title>
           </cc:Agent>
         </dc:creator>
         <cc:license
-           rdf:resource="http://creativecommons.org/licenses/by-sa/4.0/" />
+   rdf:resource="http://creativecommons.org/licenses/by-sa/4.0/" />
       </cc:Work>
-      <cc:License
-         rdf:about="http://creativecommons.org/licenses/by-sa/4.0/">
-        <cc:permits
-           rdf:resource="http://creativecommons.org/ns#Reproduction" />
-        <cc:permits
-           rdf:resource="http://creativecommons.org/ns#Distribution" />
-        <cc:requires
-           rdf:resource="http://creativecommons.org/ns#Notice" />
-        <cc:requires
-           rdf:resource="http://creativecommons.org/ns#Attribution" />
-        <cc:permits
-           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
-        <cc:requires
-           rdf:resource="http://creativecommons.org/ns#ShareAlike" />
-      </cc:License>
-    </rdf:RDF>
+      
+    <cc:License
+   rdf:about="http://creativecommons.org/licenses/by-sa/4.0/"><cc:permits
+     rdf:resource="http://creativecommons.org/ns#Reproduction" /><cc:permits
+     rdf:resource="http://creativecommons.org/ns#Distribution" /><cc:requires
+     rdf:resource="http://creativecommons.org/ns#Notice" /><cc:requires
+     rdf:resource="http://creativecommons.org/ns#Attribution" /><cc:permits
+     rdf:resource="http://creativecommons.org/ns#DerivativeWorks" /><cc:requires
+     rdf:resource="http://creativecommons.org/ns#ShareAlike" /></cc:License></rdf:RDF>
         </metadata><defs
-     id="defs4081" /><sodipodi:namedview
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1"
-     objecttolerance="10"
-     gridtolerance="10"
-     guidetolerance="10"
-     inkscape:pageopacity="0"
-     inkscape:pageshadow="2"
-     inkscape:window-width="1884"
-     inkscape:window-height="1051"
-     id="namedview4079"
-     showgrid="false"
-     showguides="false"
-     inkscape:zoom="2.56"
-     inkscape:cx="28.937633"
-     inkscape:cy="24.873541"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="Layer_1"
-     fit-margin-top="0"
-     fit-margin-left="0"
-     fit-margin-right="0"
-     fit-margin-bottom="0"><inkscape:grid
-       type="xygrid"
-       id="grid4195" /></sodipodi:namedview><path
-     style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#267fb7;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
-     d="M 11,3 C 6.568,3 3,6.568 3,11 l 0,42 c 0,4.432 3.568,8 8,8 l 42,0 c 4.432,0 8,-3.568 8,-8 L 61,11 C 61,6.568 57.432,3 53,3 Z"
+     id="defs4081" /><path
      id="rect4193"
-     inkscape:connector-curvature="0"
-     sodipodi:nodetypes="sssssssss" /><path
-     style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#38a3e4;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
-     d="m 13,4.325385 c -4.432,0 -8,3.568 -8,7.999999 L 5,50.32538 c 0,4.432 3.568,8 8,8 l 38,0 c 4.432,0 8,-3.568 8,-8 L 59,12.325384 C 59,7.893385 55.432,4.325385 51,4.325385 Z"
+     d="M 10.275862,2 C 5.6910345,2 2,5.6910345 2,10.275862 V 53.724138 C 2,58.308966 5.6910345,62 10.275862,62 H 53.724138 C 58.308966,62 62,58.308966 62,53.724138 V 10.275862 C 62,5.6910345 58.308966,2 53.724138,2 Z"
+     style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#267fb7;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.03448272;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" /><path
      id="rect4193-3"
-     inkscape:connector-curvature="0"
-     sodipodi:nodetypes="sssssssss" /></svg>
+     d="m 12.344828,3.3710879 c -4.584828,0 -8.2758625,3.6910345 -8.2758625,8.2758611 V 50.95729 c 0,4.584827 3.6910345,8.275862 8.2758625,8.275862 h 39.310344 c 4.584828,0 8.275862,-3.691035 8.275862,-8.275862 V 11.646949 c 0,-4.5848266 -3.691034,-8.2758611 -8.275862,-8.2758611 z"
+     style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#38a3e4;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.03448272;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" /></svg>

@@ -16,7 +16,7 @@ ElectricalComponent {
     id: battery
     terminalSize: 0.2
     noOfConnectionPoints: 2
-    information: qsTr("Battery is used for powering up electrical devices. It can supply voltage in a closed circuit. Which means there should be a path for the current to flow from one terminal of the battery to the other.") + " " + qsTr("If the current in a circuit is too high then the battery can be damaged. Wires can be used to connect components and create the circuit.")
+    information: qsTr("Battery is used for powering up electrical devices. It can supply voltage in a closed circuit. Which means there should be a path for the current to flow from one terminal of the battery to the other.") + " " + qsTr("If the current in a circuit is too high then the battery can be damaged.")
     //: 1st V for Voltage, 2nd V for Volt
     labelText1: qsTr("V = %1V").arg(componentVoltage)
     //: I for current intensity, A for Ampere
@@ -67,7 +67,8 @@ ElectricalComponent {
             if(connectionPoints.itemAt(i).wires.length > 0)
                 terminalConnected += 1;
         }
-        if(terminalConnected >= 2) {
+
+        if(terminalConnected >= 2 && (!Activity.items.isTutorialMode || Activity.currentLevel > 4)) {
             battery.showLabel = true;
         } else {
             battery.showLabel = false;
@@ -103,5 +104,12 @@ ElectricalComponent {
         netlistItem[3][0] = battery.externalNetlistIndex[0];
         netlistItem[3][1] = battery.externalNetlistIndex[1];
         Activity.netlist.push(netlistItem);
+    }
+
+    function checkComponentAnswer() {
+        if(terminalConnected >= 2)
+            return "batteryIn";
+        else
+            return "";
     }
 }

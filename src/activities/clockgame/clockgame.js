@@ -15,6 +15,7 @@ var selectedArrow;
 var pastQuestionsH = [];
 var pastQuestionsM = [];
 var pastQuestionsS = [];
+var targetHour;
 
 function start(items_) {
     items = items_;
@@ -107,6 +108,11 @@ function differentTargetH() {
         items.targetH = Math.floor(Math.random() * 12);
     }
     pastQuestionsH.push(items.targetH);
+
+    // converting 12-hour system to 24-hour system
+    if(!items.useTwelveHourFormat) {
+        items.targetH += 12;
+    }
 }
 
 function differentTargetM() {
@@ -126,8 +132,9 @@ function differentTargetS() {
 }
 
 function differentCurrentH() {
+    targetHour = items.targetH % 12;
     items.currentH = Math.floor(Math.random() * 12);
-    while(items.currentH === items.targetH) {
+    while(items.currentH === targetHour) {
         items.currentH = Math.floor(Math.random() * 12);
     }
 }
@@ -156,7 +163,7 @@ function nextTry() {
 }
 
 function checkAnswer() {
-    if (items.currentH === items.targetH
+    if (items.currentH === targetHour
                     && items.currentM === items.targetM
                     && items.currentS === items.targetS) {
         items.bonus.good("gnu");

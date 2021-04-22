@@ -20,7 +20,6 @@ var iceBlocksLayout = [[0, 0],[1, 0],[2, 0],[3, 0],[4, 0],
 
 var tuxIceBlockNumber = 0
 var tuxIceBlockNumberGoal = 0
-var tuxIsMoving = false;
 var placeFishToReachBool = false
 
 var level = null;
@@ -60,7 +59,7 @@ function stop() {
 
 function initLevel() {
     items.bar.level = currentLevel + 1
-
+    items.tuxIsMoving = false;
     items.chooseDiceBar.value1 = 0
     items.chooseDiceBar.value2 = 0
     items.chooseDiceBar.valueMax = items.levels[currentLevel].maxNumber
@@ -76,8 +75,8 @@ function initLevel() {
     items.clockPosition = 4
 }
 
-function moveTux() {
-    calculateTuxIceBlockNextPos()
+function moveTux(numberOfMovesToDo) {
+    calculateTuxIceBlockNextPos(numberOfMovesToDo)
 
     if (tuxIceBlockNumberGoal > fishIndex)
     {
@@ -93,7 +92,7 @@ function moveTux() {
 }
 
 function moveTuxToNextIceBlock() {
-    tuxIsMoving = false
+    items.tuxIsMoving = false
     tuxIceBlockNumber++
     tuxIceBlockNumber = tuxIceBlockNumber % iceBlocksLayout.length
 
@@ -111,7 +110,7 @@ function moveTuxToNextIceBlock() {
     var fishPos = fishIndex % iceBlocksLayout.length
     //if tux reaches its position + dice number
     if (tuxIceBlockNumber == fishPos) {
-        tuxIsMoving = false;
+        items.tuxIsMoving = false;
 
         // if last fish reached
         if (--numberOfFish == 0) {
@@ -135,10 +134,10 @@ function moveTuxToNextIceBlock() {
             lost()
             return
         }
-        tuxIsMoving = false;
+        items.tuxIsMoving = false;
         return
     }
-    tuxIsMoving = true
+    items.tuxIsMoving = true
 }
 
 function moveTuxToIceBlock() {
@@ -149,7 +148,7 @@ function moveTuxToIceBlock() {
 }
 
 function tuxRunningChanged() {
-    if (tuxIsMoving) {
+    if (items.tuxIsMoving) {
         moveTuxToNextIceBlock()
     } else {
         if (placeFishToReachBool == true) {
@@ -159,23 +158,20 @@ function tuxRunningChanged() {
     }
 }
 
-function calculateTuxIceBlockNextPos() {
-    tuxIceBlockNumberGoal = tuxIceBlockNumber +
-            items.chooseDiceBar.value1 + items.chooseDiceBar.value2
+function calculateTuxIceBlockNextPos(numberOfMovesToDo) {
+    tuxIceBlockNumberGoal = (tuxIceBlockNumber + numberOfMovesToDo) % iceBlocksLayout.length
     // Increase Tux's speed depending on the number of blocks to move
-    items.tux.duration = 1000 -
-            (items.chooseDiceBar.value1 + items.chooseDiceBar.value2) * 40
+    items.tux.duration = 1000 - numberOfMovesToDo * 40
 }
 
 var previousFishIndex = 0
 function calculateNextPlaceFishToReach() {
-    var newFishIndex
+    var index, newFishIndex
     do {
-        newFishIndex = Math.floor(Math.random() *
-                                  (items.levels[currentLevel].maxNumber * 2 -
-                                   items.levels[currentLevel].minNumber + 1)) +
-                items.levels[currentLevel].minNumber
-    } while((previousFishIndex === newFishIndex) || (newFishIndex >= iceBlocksLayout.length))
+        index = Math.floor(Math.random() * (items.levels[currentLevel].values.length))
+        newFishIndex = items.levels[currentLevel].values[index]
+    } while(items.levels[currentLevel].values.length > 2 &&     /* Allow repetition for array size 2 */
+        ((newFishIndex === previousFishIndex) || (newFishIndex >= iceBlocksLayout.length)))
     previousFishIndex = newFishIndex
 
     fishIndex = tuxIceBlockNumber + newFishIndex

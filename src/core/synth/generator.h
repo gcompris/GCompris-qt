@@ -63,7 +63,7 @@ public slots:
     // Slots for manipulation of the current patch.
     void setMode      (unsigned int _mode);
     void setTimbre    (QVector<int> &amplitudes, QVector<int> &phases);
-    void setEnvelope  (ADSREnvelope &env);
+    void setEnvelope  (const ADSREnvelope &env);
     void setModulation(Modulation &modulation);
     void setPreset    (Preset &preset);
     

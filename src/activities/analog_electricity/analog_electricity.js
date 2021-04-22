@@ -16,15 +16,21 @@
 var url = "qrc:/gcompris/src/activities/analog_electricity/resource/";
 var urlDigital = "qrc:/gcompris/src/activities/digital_electricity/resource/";
 
-var currentLevel = 1;
-var numberOfLevel = 3;
+var currentLevel;
+var numberOfLevel;
 var items;
+var view;
 var toolDelete;
 var animationInProgress;
 var selectedIndex;
 var selectedTerminal;
 var components = [];
+var determiningComponents = [];
 var connectionCount = 0;
+var levelProperties;
+var invalidCircuit = false;
+var processingAnswer = false;
+var answerKeys = [];
 
 var uniqueID = 0;
 var netlistComponents = [];
@@ -77,9 +83,12 @@ function start(items_) {
     currentLevel = 1;
     numberOfLevel = items.tutorialDataset.tutorialLevels.length;
     initLevel();
-    connectionCount = 0;
-    netlistComponents = [];
-    netlist = [];
+}
+
+function reset() {
+    stop();
+    numberOfLevel = items.tutorialDataset.tutorialLevels.length;
+    initLevel();
 }
 
 function stop() {
@@ -91,27 +100,98 @@ function stop() {
 }
 
 function initLevel() {
+    connectionCount = 0;
+    netlistComponents = [];
+    netlist = [];
+    components = [];
+    items.availablePieces.model.clear();
     items.bar.level = currentLevel;
     items.availablePieces.view.currentDisplayedGroup = 0;
     items.availablePieces.view.previousNavigation = 1;
     items.availablePieces.view.nextNavigation = 1;
+    determiningComponents = [];
     colorIndex = 0;
-    stop();
     animationInProgress = false;
-    toolDelete = false;
+    disableToolDelete();
     deselect();
+    items.availablePieces.hideToolbar();
+
     currentZoom = defaultZoom;
     viewPort.leftEdge = 0;
     viewPort.topEdge = 0;
     items.playArea.x = items.mousePan.drag.maximumX;
     items.playArea.y = items.mousePan.drag.maximumY;
-    loadFreeMode();
     isStopped = false;
+
+
+    if (!items.isTutorialMode) {
+        items.tutorialInstruction.index = -1;
+        processingAnswer = false;
+        loadFreeMode();
+    } else {
+        processingAnswer = false;
+        levelProperties = items.tutorialDataset.tutorialLevels[currentLevel - 1];
+
+        for (var i = 0; i < levelProperties.inputComponentList.length; i++) {
+            var currentInputComponent = levelProperties.inputComponentList[i];
+            items.availablePieces.model.append( {
+                "imgName": currentInputComponent.imageName,
+                "componentSrc": currentInputComponent.componentSource,
+                "imgWidth": currentInputComponent.width,
+                "imgHeight": currentInputComponent.height,
+                "toolTipText": currentInputComponent.toolTipText
+            });
+        }
+
+        for (var i = 0; i < levelProperties.playAreaComponentList.length; i++) {
+            var index = components.length;
+
+            var currentPlayAreaComponent = levelProperties.playAreaComponentList[i];
+            var staticElectricalComponent = Qt.createComponent("qrc:/gcompris/src/activities/analog_electricity/components/" + currentPlayAreaComponent.componentSource);
+
+            components[index] = staticElectricalComponent.createObject(
+                        items.playArea, {
+                            "componentIndex": index,
+                            "posX": levelProperties.playAreaComponentPositionX[i] * currentZoom,
+                            "posY": levelProperties.playAreaComponentPositionY[i] * currentZoom,
+                            "imgWidth": currentPlayAreaComponent.width * currentZoom,
+                            "imgHeight": currentPlayAreaComponent.height * currentZoom,
+                            "destructible": false
+                        });
+            ++uniqueID;
+            components[index].componentName = components[index].componentName + uniqueID.toString();
+            components[index].initConnections();
+        }
+        deselect();
+
+        var _determiningComponentsIndex = levelProperties.determiningComponentsIndex
+        for (var i = 0; i < _determiningComponentsIndex.length; i++) {
+            determiningComponents[i] = components[_determiningComponentsIndex[i]];
+        }
+
+        //create wires
+        for (i = 0; i < levelProperties.wires.length; i++) {
+            var terminalNumber = levelProperties.wires[i][1];
+            var connectionPoint = components[levelProperties.wires[i][0]].connectionPoints.itemAt(terminalNumber);
+            terminalPointSelected(connectionPoint, false);
+
+            terminalNumber = levelProperties.wires[i][3];
+            var terminalToConnect = components[levelProperties.wires[i][2]].connectionPoints.itemAt(terminalNumber);
+            terminalPointSelected(terminalToConnect, false);
+        }
+
+        if (levelProperties.introMessage.length != 0) {
+            items.tutorialInstruction.index = 0;
+            items.tutorialInstruction.intro = levelProperties.introMessage;
+        } else {
+            items.tutorialInstruction.index = -1;
+        }
+    }
 }
 
 function loadFreeMode() {
-    items.availablePieces.model.clear();
-    var componentList = items.tutorialDataset.tutorialLevels[currentLevel - 1].inputComponentList;
+    var componentList = items.tutorialDataset.componentList;
+
     for (var i = 0; i < componentList.length; i++) {
         items.availablePieces.model.append( {
             "imgName": componentList[i].imageName,
@@ -120,6 +200,30 @@ function loadFreeMode() {
             "imgHeight": componentList[i].height,
             "toolTipText": componentList[i].toolTipText,
         });
+    }
+}
+
+function checkAnswer() {
+    answerKeys = [];
+
+    if(invalidCircuit){
+        items.bonus.bad('gnu', items.bonus.checkAnswer);
+        processingAnswer = false;
+        return;
+    }
+
+    for(var i = 0; i < determiningComponents.length; ++i) {
+        answerKeys[i] = determiningComponents[i].checkComponentAnswer();
+        processingAnswer = true;
+    }
+
+    for(var i in answerKeys) {
+        if(levelProperties.answerKey[i] === answerKeys[i] && processingAnswer && !invalidCircuit) {
+            items.bonus.good('gnu');
+        } else {
+            items.bonus.bad('gnu', items.bonus.checkAnswer);
+            processingAnswer = false;
+        }
     }
 }
 
@@ -177,14 +281,14 @@ function nextLevel() {
     if(numberOfLevel < ++currentLevel) {
         currentLevel = 1;
     }
-    initLevel();
+    reset();
 }
 
 function previousLevel() {
     if(--currentLevel < 1) {
         currentLevel = numberOfLevel;
     }
-    initLevel();
+    reset();
 }
 
 function createComponent(x, y, componentIndex) {
@@ -194,8 +298,7 @@ function createComponent(x, y, componentIndex) {
     var index = components.length;
 
     var component = items.availablePieces.repeater.itemAt(componentIndex);
-    var electricComponent = Qt.createComponent("qrc:/gcompris/src/activities/analog_electricity/components/" +
-                                               component.source);
+    var electricComponent = Qt.createComponent("qrc:/gcompris/src/activities/analog_electricity/components/" + component.source);
 
     components[index] = electricComponent.createObject(
                         items.playArea, {
@@ -214,12 +317,14 @@ function createComponent(x, y, componentIndex) {
 
 /* Creates wire between two points.
 */
-function terminalPointSelected(terminal) {
+function terminalPointSelected(terminal, destructible) {
+    if(destructible == undefined)
+        destructible = true;
     if(selectedTerminal == -1 || selectedTerminal == terminal)
         selectedTerminal = terminal;
     else if(selectedTerminal.parent != terminal.parent) {
         var connectionPoint = terminal;
-        createWire(connectionPoint, true);
+        createWire(connectionPoint, destructible);
         deselect();
     }
     else {
@@ -374,8 +479,10 @@ function removeComponent(index) {
             }
         }
     }
+
     components[index].destroy();
     components.splice(index, 1);
+
     for(var i = index; i < components.length; ++i) {
         --components[i].componentIndex;
     }
@@ -393,6 +500,7 @@ function removeWire(wire) {
 
     wire.destroy();
     deselect();
+
     if(connectionPoint1.wires.length === 0) {
         connectionPoint1.resetIndex();
     } else {
@@ -409,6 +517,7 @@ function removeWire(wire) {
     }
     connectionPoint1.parent.checkConnections();
     connectionPoint2.parent.checkConnections();
+
     if(!isStopped)
         restartTimer();
 }
@@ -472,6 +581,8 @@ function dcAnalysis() {
     if(ckt.GCWarning != "") {
         displayWarning(ckt.GCWarning);
         return;
+    } else {
+        invalidCircuit = false;
     }
 
     var currentResults = ckt.GCCurrentResults;
@@ -497,6 +608,8 @@ function dcAnalysis() {
 }
 
 function displayWarning(message_) {
+    items.availablePieces.hideToolbar();
     items.infoTxt.visible = true;
     items.infoTxt.text = message_;
+    invalidCircuit = true;
 }

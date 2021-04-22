@@ -38,9 +38,9 @@ function(GCOMPRIS_ADD_RCC resource_path)
   set(CREATED_RCC ${GCOMPRIS_RCC_DIR}/${activity}.rcc)
 
   if(WIN32)
-    set(_RCC_COMMAND ${Qt5Core_RCC_EXECUTABLE} "-binary" -o ${CREATED_RCC} ${CREATED_QRC})
+    set(_RCC_COMMAND Qt5::rcc "-binary" -o ${CREATED_RCC} ${CREATED_QRC})
   else()
-    set(_RCC_COMMAND ${Qt5Core_RCC_EXECUTABLE} "-binary" -o ${CREATED_RCC} - < ${CREATED_QRC})
+    set(_RCC_COMMAND Qt5::rcc "-binary" -o ${CREATED_RCC} - < ${CREATED_QRC})
   endif()
 
   add_custom_command(OUTPUT ${CREATED_RCC}

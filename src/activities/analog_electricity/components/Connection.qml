@@ -54,5 +54,4 @@ ElectricalComponent {
     function addToNetlist() {
         return;
     }
-
 }

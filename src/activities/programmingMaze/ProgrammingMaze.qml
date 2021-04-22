@@ -260,7 +260,8 @@ ActivityBase {
 
         HeaderArea {
             id: mainFunctionHeader
-            headerText: qsTr("Main function")
+            property string mainText: qsTr("Main function")
+            headerText: mainText
             headerOpacity: background.insertIntoMain ? 1 : 0.5
             onClicked: background.insertIntoMain = true
             anchors.top: parent.top
@@ -288,7 +289,8 @@ ActivityBase {
 
         HeaderArea {
             id: procedureHeader
-            headerText: qsTr("Procedure")
+            property string procedureText: qsTr("Procedure") + " ( )"
+            headerText: procedureText
             headerOpacity: !background.insertIntoMain ? 1 : 0.5
             visible: procedureCodeArea.visible
             onClicked: background.insertIntoMain = false
@@ -377,6 +379,7 @@ ActivityBase {
             Tutorial {
                 id:tutorialSection
                 tutorialDetails: bar.level <= 2 ? Activity.mainTutorialInstructions : Activity.procedureTutorialInstructions
+                useImage: false
                 onSkipPressed: {
                     Activity.initLevel()
                     tutorialImage.visible = false

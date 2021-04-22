@@ -365,7 +365,7 @@ Rectangle {
         anchors.bottom: parent.bottom
         anchors.horizontalCenter: parent.horizontalCenter
         width: parent.width
-        visible: ApplicationSettings.isVirtualKeyboard && !ApplicationInfo.isMobile
+        visible: ApplicationSettings.isVirtualKeyboard && !ApplicationInfo.isMobile && !dialogOpened
         onKeypress: {
             var textArray = fileNameInput.text.split("");
             var cursorPosition = fileNameInput.cursorPosition

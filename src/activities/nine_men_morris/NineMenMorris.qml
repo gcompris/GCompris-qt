@@ -41,6 +41,7 @@ ActivityBase {
             property Item main: activity.main
             property alias dragPointsModel: dragPointsModel
             property alias dragPoints: dragPoints
+            property alias piecesLayout: piecesLayout
 
             property alias firstInitial: firstInitial
             property alias firstPlayerPieces: firstPlayerPieces
@@ -110,6 +111,21 @@ ActivityBase {
                     }
                 }
             }
+
+            Repeater {
+                id: piecesLayout
+                model: dragPointsModel
+                delegate: piecePoint
+                Component {
+                    id: piecePoint
+                    Item {
+                        width: parent.width * 0.05
+                        height: width
+                        x: posX * parent.width - width * 0.5
+                        y: posY * parent.height - height * 0.5
+                    }
+                }
+            }
         }
 
         ListModel {
@@ -126,15 +142,11 @@ ActivityBase {
             width: player1score.width * 1.2
             height: player1score.height * 1.2
             visible: items.firstPhase
-            opacity: 0.8
+            opacity: 1.0
             radius: 10
             border.width: 2
-            border.color: "black"
-            gradient: Gradient {
-                GradientStop { position: 0.0; color: "#6b4723" }
-                GradientStop { position: 0.9; color: "#996633" }
-                GradientStop { position: 1.0; color: "#AAA" }
-            }
+            border.color: "white"
+            color: "#373737"
 
             Repeater {
                 id: firstPlayerPieces
@@ -166,11 +178,9 @@ ActivityBase {
                 }
                 fontSize: mediumSize
                 color: "white"
-                style: Text.Outline
-                styleColor: "black"
                 horizontalAlignment: Text.AlignHCenter
                 property int count: 9
-                text: "X%1".arg(count)
+                text: "×%1".arg(count)
             }
         }
 
@@ -188,15 +198,12 @@ ActivityBase {
             width: firstInitial.width
             height: firstInitial.height
             visible: items.firstPhase
-            opacity: 0.8
+            opacity: 1.0
             radius: 10
             border.width: 2
-            border.color: "black"
-            gradient: Gradient {
-                GradientStop { position: 0.0; color: "#6b4723" }
-                GradientStop { position: 0.9; color: "#996633" }
-                GradientStop { position: 1.0; color: "#AAA" }
-            }
+            border.color: "white"
+            color: "#373737"
+
             Repeater {
                 id: secondPlayerPieces
                 model: secondPlayerPiecesModel
@@ -227,11 +234,9 @@ ActivityBase {
                 }
                 fontSize: mediumSize
                 color: "white"
-                style: Text.Outline
-                styleColor: "black"
                 horizontalAlignment: Text.AlignHCenter
                 property int count: 9
-                text: "X%1".arg(count)
+                text: "×%1".arg(count)
             }
         }
 
@@ -250,8 +255,6 @@ ActivityBase {
             fontSizeMode: Text.Fit
             minimumPixelSize: 10
             color: "white"
-            style: Text.Outline
-            styleColor: "black"
             horizontalAlignment: Text.AlignHLeft
             width: implicitWidth
             height: implicitHeight
@@ -264,15 +267,11 @@ ActivityBase {
             anchors.horizontalCenter: parent.horizontalCenter
             width: instruction.width + 20
             height: instruction.height + 2
-            opacity: 0.8
+            opacity: 1.0
             radius: 10
             border.width: 2
-            border.color: "black"
-            gradient: Gradient {
-                GradientStop { position: 0.0; color: "#000" }
-                GradientStop { position: 0.9; color: "#666" }
-                GradientStop { position: 1.0; color: "#AAA" }
-            }
+            border.color: "white"
+            color: "#373737"
         }
         // Instruction section ends
 
@@ -313,7 +312,8 @@ ActivityBase {
         Image {
             id: tutorialImage
             source: background.source
-            sourceSize.width: Math.max(parent.width, parent.height)
+            sourceSize.width: width
+            sourceSize.height: height
             fillMode: Image.PreserveAspectCrop
             anchors.fill: parent
             z: 5

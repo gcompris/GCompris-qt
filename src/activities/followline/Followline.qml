@@ -5,6 +5,7 @@
  * Authors:
  *   Bruno Coudoin <bruno.coudoin@gcompris.net> (GTK+ version)
  *   Bruno Coudoin <bruno.coudoin@gcompris.net> (Qt Quick port)
+ *   Timothée Giet <animtim@gmail.com> (Gameplay refactoring and improvements)
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
@@ -41,14 +42,18 @@ ActivityBase {
             property alias background: background
             property GCSfx audioEffects: activity.audioEffects
             property alias fireman: fireman
+            property alias lineArea: lineArea
             property alias fire: fire
+            property alias lineBrokenTimer: lineBrokenTimer
             property alias bar: bar
             property alias bonus: bonus
             property int currentLock: 0
             property int lastLock: 0
+            property bool verticalLayout: lineArea.height > lineArea.width
         }
 
         onHeightChanged: Activity.initLevel()
+        onWidthChanged: Activity.initLevel()
 
         onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
@@ -109,29 +114,6 @@ ActivityBase {
             water.opacity = 1
         }
 
-        MultiPointTouchArea {
-            anchors.fill: parent
-            maximumTouchPoints: 1
-            z: 1000
-            onTouchUpdated: {
-                for(var i in touchPoints) {
-                    var touch = touchPoints[i]
-                    var part = background.childAt(touch.x, touch.y)
-                    if(part) {
-                        if(items.currentLock == part.index) {
-                            items.currentLock++
-                            if(items.currentLock == items.lastLock) {
-                                background.win()
-                                activity.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/water.wav")
-                            } else {
-                                activity.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/darken.wav")
-                            }
-                        }
-                    }
-                }
-            }
-        }
-
         Bar {
             id: bar
             content: BarEnumContent { value: help | home | level }
@@ -154,10 +136,58 @@ ActivityBase {
             anchors.fill: parent
             enabled: !ApplicationInfo.isMobile
             hoverEnabled: true
-            onPositionChanged: items.currentLock > 0 && fireflame.opacity == 1 ?
-                                   items.currentLock-- : false
+            onPositionChanged: items.currentLock > 0 && water.opacity === 0 ?
+                                   lineBrokenTimer.start() : false
         }
 
+        Item {
+            id: lineArea
+            anchors.top: fireman.top
+            anchors.left: fireman.right
+            anchors.bottom: fire.top
+            anchors.right: fire.left
+
+            MultiPointTouchArea {
+                anchors.fill: parent
+                maximumTouchPoints: 1
+                enabled: ApplicationInfo.isMobile && water.opacity === 0
+                z: 1000
+                onTouchUpdated: {
+                    for(var i in touchPoints) {
+                        var touch = touchPoints[i]
+                        var part = lineArea.childAt(touch.x, touch.y)
+                        if(part && part.isPart) {
+                            if(items.currentLock <= part.index && !Activity.movedOut) {
+                                items.currentLock = part.index
+                                if(items.currentLock >= items.lastLock) {
+                                    background.win()
+                                    activity.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/water.wav")
+                                } else {
+                                    Activity.playAudioFx()
+                                }
+                            } else if(items.currentLock >= part.index && Activity.movedOut) {
+                                lineBrokenTimer.stop();
+                                Activity.movedOut = false;
+                            }
+                        } else {
+                            lineBrokenTimer.start()
+                        }
+                    }
+                }
+                onReleased: if(water.opacity === 0) lineBrokenTimer.start()
+            }
+        }
+
+        Timer {
+            id: lineBrokenTimer
+            interval: 20
+            onTriggered: {
+                if(items.currentLock > 0 && water.opacity === 0) {
+                    Activity.cursorMovedOut();
+                    restart();
+                }
+            }
+        }
     }
 
 }

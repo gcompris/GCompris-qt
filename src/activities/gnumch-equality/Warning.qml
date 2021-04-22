@@ -17,13 +17,16 @@ import "gnumch-equality.js" as Activity
 Rectangle {
     function hideWarning() {
         if (opacity > 0) {
-            opacity = 0
-            if (Activity._currentLevel % 6 != 0) {
-                spawningMonsters.start()
-                timerActivateWarn.start()
+            opacity = 0;
+            monsters.destroyAll();
+            if(topPanel.life.opacity == 1) {
+                topPanel.life.opacity = 0
+                if(background.withMonsters) {
+                    spawningMonsters.restart()
+                }
             }
-            muncher.movable = true
-            monsters.setMovable(true)
+            else
+                background.initLevel()
         }
     }
 
@@ -106,7 +109,7 @@ Rectangle {
     border.width: 2
     radius: 5
     opacity: 0
-    color: "#00d635"
+    color: "#82E599"
 
     onOpacityChanged: {
         if (opacity == 0) {

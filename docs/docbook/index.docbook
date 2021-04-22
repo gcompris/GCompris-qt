@@ -72,7 +72,7 @@ for example 'xx.yy.zz'
 <para>&gcompris; is a rich educational software suite which contains a wide range of activities.</para>
 <para>It offers various activities aimed at covering a variety of fields. The topics include reading and typing, arithmetics, geography, sciences, and other topics. It is meant to be used both at home and at school.</para>
 <para>The purpose of &gcompris; is to provide playful activities but always educational.</para>
-<para>&gcompris; is part of &kde; project and is placed under the <ulink url="https://www.gnu.org/licenses/gpl.html">GPLv3 license</ulink>.</para>
+<para>&gcompris; is part of &kde; project and is placed under the <ulink url="https://www.gnu.org/licenses/agpl-3.0.html">AGPLv3 license</ulink>. All the code, except the engine for analog electricity activity is under <ulink url="https://www.gnu.org/licenses/gpl.html">GPLv3 license</ulink>.</para>
 <para>&gcompris; is available on the following operating systems: &GNU;/&Linux;, &BSD;, MacOSX, &Windows;, Android.
 It requires a 3D card with support of <emphasis>OpenGL 2.1</emphasis> or higher is required. 32 bits color depth mandatory</para>
 </sect1>

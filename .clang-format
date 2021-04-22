@@ -1,0 +1,15 @@
+---
+Language: Cpp
+BasedOnStyle: Webkit
+PointerAlignment: Right
+SpaceBeforeParens: ControlStatements
+SpaceBeforeRangeBasedForLoopColon: false
+SortIncludes: false
+AlignAfterOpenBracket: Align
+BreakBeforeBraces: Custom
+BraceWrapping:
+    BeforeElse: true
+    AfterFunction: true
+    AfterClass: true
+    AfterStruct: true
+BreakConstructorInitializers: AfterColon

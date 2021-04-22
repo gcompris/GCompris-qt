@@ -120,7 +120,7 @@ Item {
                         pressedOnce = false;
                         item.selected = false;
                         var coord = playArea.mapFromItem(tileImage.parent, parent.x, parent.y);
-                        if(coord.x > 0 && ((playArea.width/Activity.currentZoom) - coord.x > tileImage.fullWidth))
+                        if(coord.x > 0 && coord.y > 0 && ((playArea.width/Activity.currentZoom) - coord.x > tileImage.fullWidth))
                             Activity.createComponent(coord.x, coord.y, index);
                         tileImage.anchors.centerIn = tile;
                         tileImage.toSmall();

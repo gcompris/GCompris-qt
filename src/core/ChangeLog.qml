@@ -26,6 +26,11 @@ QtObject {
      *
      */
     property var changelog: [
+            { "versionCode": 10100, "content": [qsTr("Many usability improvements"),
+                qsTr("Many new images"),
+                qsTr("Many bug fixes")
+                ]
+            },
             { "versionCode": 10000, "content": [qsTr("New Activity Settings menu, with dataset selection"),
                 qsTr("Many usability improvements"),
                 qsTr("Many new images"),

@@ -14,43 +14,36 @@
    viewBox="0 0 63.999999 63.999999"
    enable-background="new 0 0 3508 2480"
    xml:space="preserve"
-   inkscape:version="0.91 r13725"
-   sodipodi:docname="w.svg"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
+   sodipodi:docname="v.svg"
    width="64"
    height="64"><metadata
      id="metadata4083">
     <rdf:RDF>
       <cc:Work
-         rdf:about="">
+   rdf:about="">
         <dc:format>image/svg+xml</dc:format>
         <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+   rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
         <dc:title></dc:title>
-        <dc:date>2016</dc:date>
+        <dc:date>2020</dc:date>
         <dc:creator>
           <cc:Agent>
             <dc:title>Timothée Giet</dc:title>
           </cc:Agent>
         </dc:creator>
         <cc:license
-           rdf:resource="http://creativecommons.org/licenses/by-sa/4.0/" />
+   rdf:resource="http://creativecommons.org/licenses/by-sa/4.0/" />
       </cc:Work>
-      <cc:License
-         rdf:about="http://creativecommons.org/licenses/by-sa/4.0/">
-        <cc:permits
-           rdf:resource="http://creativecommons.org/ns#Reproduction" />
-        <cc:permits
-           rdf:resource="http://creativecommons.org/ns#Distribution" />
-        <cc:requires
-           rdf:resource="http://creativecommons.org/ns#Notice" />
-        <cc:requires
-           rdf:resource="http://creativecommons.org/ns#Attribution" />
-        <cc:permits
-           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
-        <cc:requires
-           rdf:resource="http://creativecommons.org/ns#ShareAlike" />
-      </cc:License>
-    </rdf:RDF>
+      
+    <cc:License
+   rdf:about="http://creativecommons.org/licenses/by-sa/4.0/"><cc:permits
+     rdf:resource="http://creativecommons.org/ns#Reproduction" /><cc:permits
+     rdf:resource="http://creativecommons.org/ns#Distribution" /><cc:requires
+     rdf:resource="http://creativecommons.org/ns#Notice" /><cc:requires
+     rdf:resource="http://creativecommons.org/ns#Attribution" /><cc:permits
+     rdf:resource="http://creativecommons.org/ns#DerivativeWorks" /><cc:requires
+     rdf:resource="http://creativecommons.org/ns#ShareAlike" /></cc:License></rdf:RDF>
         </metadata><defs
      id="defs4081" /><sodipodi:namedview
      pagecolor="#ffffff"
@@ -61,31 +54,34 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1884"
-     inkscape:window-height="1051"
+     inkscape:window-width="938"
+     inkscape:window-height="1054"
      id="namedview4079"
      showgrid="true"
      showguides="false"
      inkscape:zoom="5.9293045"
-     inkscape:cx="10.214275"
+     inkscape:cx="19.152929"
      inkscape:cy="21.459119"
-     inkscape:window-x="0"
+     inkscape:window-x="942"
      inkscape:window-y="0"
-     inkscape:window-maximized="1"
+     inkscape:window-maximized="0"
      inkscape:current-layer="Layer_1"
      fit-margin-top="0"
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"><inkscape:grid
        type="xygrid"
-       id="grid4195" /></sodipodi:namedview><path
-     style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#e7bb36;fill-opacity:1;fill-rule:evenodd;stroke:#ae8d2a;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
-     d="M 9 1 C 4.568 1 1 4.568 1 9 L 1 55 C 1 59.432 4.568 63 9 63 L 55 63 C 59.432 63 63 59.432 63 55 L 63 9 C 63 4.568 59.432 1 55 1 L 9 1 z M 15 9 L 50 9 C 52.77 9 55 11.23 55 14 L 55 49 C 55 51.77 52.77 54 50 54 L 15 54 C 12.23 54 10 51.77 10 49 L 10 14 C 10 11.23 12.23 9 15 9 z "
-     id="rect4193" /><g
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:125%;font-family:Kabel;-inkscape-font-specification:Kabel;letter-spacing:0px;word-spacing:0px;fill:#e7bb36;fill-opacity:1;stroke:#ae8d2a;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-     id="text4261"
-     transform="translate(0.50080392,-0.08220509)"><path
-       d="m 32.058594,13.879883 8.125,16.630859 4.921875,-15.390625 8.193359,0.917969 -12.119141,34.082031 -9.355468,-19.082031 -9.521485,19.082031 -11.601562,-34.082031 8.359375,-1.005859 4.638672,15.644531 8.359375,-16.796875 z"
-       id="path6028"
-       inkscape:connector-curvature="0"
-       style="fill:#e7bb36;fill-opacity:1;stroke:#ae8d2a;stroke-opacity:1" /></g></svg>
+       id="grid4195" /></sodipodi:namedview><g
+     id="g1474"
+     transform="matrix(0.95238095,0,0,0.95238095,1.5238096,1.5238096)"><path
+       id="rect4193"
+       d="M 9,1 C 4.568,1 1,4.568 1,9 v 46 c 0,4.432 3.568,8 8,8 h 46 c 4.432,0 8,-3.568 8,-8 V 9 C 63,4.568 59.432,1 55,1 Z m 6,8 h 35 c 2.77,0 5,2.23 5,5 v 35 c 0,2.77 -2.23,5 -5,5 H 15 c -2.77,0 -5,-2.23 -5,-5 V 14 c 0,-2.77 2.23,-5 5,-5 z"
+       style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#e7bb36;fill-opacity:1;fill-rule:evenodd;stroke:#ae8d2a;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+       inkscape:connector-curvature="0" /><g
+       transform="translate(0.50080392,-0.08220509)"
+       id="text4261"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:125%;font-family:Kabel;-inkscape-font-specification:Kabel;letter-spacing:0px;word-spacing:0px;fill:#e7bb36;fill-opacity:1;stroke:#ae8d2a;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"><path
+         style="fill:#e7bb36;fill-opacity:1;stroke:#ae8d2a;stroke-opacity:1"
+         inkscape:connector-curvature="0"
+         id="path6028"
+         d="m 32.058594,13.879883 8.125,16.630859 4.921875,-15.390625 8.193359,0.917969 -12.119141,34.082031 -9.355468,-19.082031 -9.521485,19.082031 -11.601562,-34.082031 8.359375,-1.005859 4.638672,15.644531 z" /></g></g></svg>

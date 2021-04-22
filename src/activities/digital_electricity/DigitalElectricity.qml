@@ -349,8 +349,9 @@ ActivityBase {
                     drag.minimumY: - playArea.height * items.zoomLvl
                     drag.maximumY: background.hori ? 0 : items.toolsMargin
                     onClicked: {
-                        Activity.deselect()
-                        availablePieces.hideToolbar()
+                        Activity.disableToolDelete();
+                        Activity.deselect();
+                        availablePieces.hideToolbar();
                     }
                 }
             }
@@ -447,7 +448,7 @@ ActivityBase {
             }
             source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
             sourceSize.width: 60 * ApplicationInfo.ratio
-            enabled: !tutorialInstruction.visible
+            enabled: !tutorialInstruction.visible && !bonus.isPlaying
             onClicked: Activity.checkAnswer()
         }
 

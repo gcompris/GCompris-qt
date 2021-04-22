@@ -16,15 +16,15 @@
 
 bool ApplicationInfo::requestAudioFocus() const
 {
-  qDebug() << "requestAudioFocus";
-  return QAndroidJniObject::callStaticMethod<jboolean>("net/gcompris/GComprisActivity",
-						       "requestAudioFocus");
+    qDebug() << "requestAudioFocus";
+    return QAndroidJniObject::callStaticMethod<jboolean>("net/gcompris/GComprisActivity",
+                                                         "requestAudioFocus");
 }
 
 void ApplicationInfo::abandonAudioFocus() const
 {
-  QAndroidJniObject::callStaticMethod<void>("net/gcompris/GComprisActivity",
-                                            "abandonAudioFocus");
+    QAndroidJniObject::callStaticMethod<void>("net/gcompris/GComprisActivity",
+                                              "abandonAudioFocus");
 }
 
 jint JNICALL JNI_OnLoad(JavaVM *vm, void *)
@@ -55,12 +55,11 @@ void ApplicationInfo::setKeepScreenOn(bool value)
     activity.callMethod<void>("setKeepScreenOn", "(Z)V", value);
 }
 
-int ApplicationInfo::localeCompare(const QString& a, const QString& b,
-                                   const QString& locale) const
+int ApplicationInfo::localeCompare(const QString &a, const QString &b,
+                                   const QString &locale) const
 {
-    QString _locale = locale.isEmpty() ? \
-                          ApplicationSettings::getInstance()->locale() \
-                        : locale;
+    QString _locale = locale.isEmpty() ? ApplicationSettings::getInstance()->locale()
+                                       : locale;
     if (_locale == GC_DEFAULT_LOCALE)
         _locale = QLocale::system().name();
 
@@ -69,25 +68,28 @@ int ApplicationInfo::localeCompare(const QString& a, const QString& b,
     // cf. https://bugreports.qt.io/browse/QTBUG-43637
     // Therefore use native Collation via jni:
     jint res = QtAndroid::androidActivity().callMethod<jint>(
-                   "localeCompare",
-                   "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)I",
-                   QAndroidJniObject::fromString(a).object<jstring>(),
-                   QAndroidJniObject::fromString(b).object<jstring>(),
-                   QAndroidJniObject::fromString(_locale).object<jstring>());
+        "localeCompare",
+        "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)I",
+        QAndroidJniObject::fromString(a).object<jstring>(),
+        QAndroidJniObject::fromString(b).object<jstring>(),
+        QAndroidJniObject::fromString(_locale).object<jstring>());
     return res;
 }
 
 // Code adapted from https://bugreports.qt.io/browse/QTBUG-50759
-bool ApplicationInfo::checkPermissions() const {
+bool ApplicationInfo::checkPermissions() const
+{
 #if QT_VERSION >= QT_VERSION_CHECK(5, 10, 0)
     const QStringList permissionsRequest = QStringList(
-                                                { QString("android.permission.READ_EXTERNAL_STORAGE"),
-                                                  QString("android.permission.WRITE_EXTERNAL_STORAGE") });
-    if((QtAndroid::checkPermission(permissionsRequest[0]) == QtAndroid::PermissionResult::Denied) ||
-       (QtAndroid::checkPermission(permissionsRequest[1])) == QtAndroid::PermissionResult::Denied) {
+        { QString("android.permission.READ_EXTERNAL_STORAGE"),
+          QString("android.permission.WRITE_EXTERNAL_STORAGE") });
+    /* clang-format off */
+    if ((QtAndroid::checkPermission(permissionsRequest[0]) == QtAndroid::PermissionResult::Denied) ||
+        (QtAndroid::checkPermission(permissionsRequest[1])) == QtAndroid::PermissionResult::Denied) {
+        /* clang-format on */
         auto permissionResults = QtAndroid::requestPermissionsSync(permissionsRequest);
-        for(const QString &permission: permissionsRequest) {
-            if(permissionResults[permission] == QtAndroid::PermissionResult::Denied) {
+        for (const QString &permission: permissionsRequest) {
+            if (permissionResults[permission] == QtAndroid::PermissionResult::Denied) {
                 qDebug() << "Permission denied for" << permission;
                 return false;
             }

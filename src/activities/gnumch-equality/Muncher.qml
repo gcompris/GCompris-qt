@@ -23,18 +23,12 @@ Creature {
 
         opacity = 0
         warningRect.setFault(index)
-        warningRect.opacity = 0.95
+        warningRect.opacity = 1
 
-        if (topPanel.life.opacity == 1) {
-            topPanel.life.opacity = 0
-            spawningMonsters.stop()
-            movable = false
-            monsters.setMovable(false)
-        } else {
-            bonus.bad("tux")
-            monsters.destroyAll()
-            spawningMonsters.restart()
-            background.initLevel()
+        spawningMonsters.stop()
+        monsters.setMovable(false)
+        if (topPanel.life.opacity != 1) {
+            bonus.bad("gnu")
         }
     }
 
@@ -45,6 +39,7 @@ Creature {
     Drag.active: ApplicationInfo.isMobile ? muncherArea.drag.active : false
     Drag.hotSpot.x: width / 2
     Drag.hotSpot.y: height / 2
+    movable: opacity == 1
 
     onMovingOnChanged: {
         if (movingOn == false && caughted) {
@@ -55,7 +50,8 @@ Creature {
 
     onIndexChanged: {
         audioEffects.stop()
-        audioEffects.play("qrc:/gcompris/src/core/resource/sounds/smudge.wav")
+        if(opacity == 1)
+            audioEffects.play("qrc:/gcompris/src/core/resource/sounds/smudge.wav")
 
         if (monsters.isThereAMonster(index)) {
             getCaught(-1)

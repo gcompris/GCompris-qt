@@ -85,6 +85,9 @@ Rectangle {
                                     candyWidget.element.opacity = 0.6
                                 }
                             }
+                            else {
+                                background.wrongMove.visible = true
+                            }
                         }
                         else {
                             background.resetCandy()
@@ -185,17 +188,6 @@ Rectangle {
                                         listModel.setProperty(rect2.indexS, "countS", listModel.get(rect2.indexS).countS - 1);
                                         break;
                                     }
-                                }
-                                else if (childContainsCandy(currentChild, candyCoordinate)) {
-                                    //check if the user wants to put back the candy
-                                    repeaterDropAreas.itemAt(rect2.indexS).candyCount.text = listModel.get(rect2.indexS).countS - 1
-                                    //restore the candy to the leftWidget
-                                    background.currentCandies --
-                                    candyWidget.element.opacity = 1
-                                    items.candyWidget.canDrag = true
-                                    //remove the candy from current rectangle
-                                    listModel.setProperty(rect2.indexS, "countS", listModel.get(rect2.indexS).countS - 1);
-                                    break;
                                 }
                             }
 

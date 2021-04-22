@@ -11,6 +11,7 @@
 #include <QApplication>
 #include <QQuickWindow>
 #include <QQmlApplicationEngine>
+#include <QQmlComponent>
 #include <QStandardPaths>
 #include <QObject>
 #include <QTranslator>
@@ -30,16 +31,15 @@ bool loadAndroidTranslation(QTranslator &translator, const QString &locale)
 
     file.open(QIODevice::ReadOnly);
     QDataStream in(&file);
-    uchar *data = (uchar*)malloc(file.size());
+    uchar *data = (uchar *)malloc(file.size());
 
-    if(!file.exists())
+    if (!file.exists())
         qDebug() << "file assets:/share/GCompris/gcompris_" << locale << ".qm does not exist";
 
-    in.readRawData((char*)data, file.size());
+    in.readRawData((char *)data, file.size());
 
-    if(!translator.load(data, file.size())) {
-        qDebug() << "Unable to load translation for locale " <<
-                    locale << ", use en_US by default";
+    if (!translator.load(data, file.size())) {
+        qDebug() << "Unable to load translation for locale " << locale << ", use en_US by default";
         free(data);
         return false;
     }
@@ -47,6 +47,27 @@ bool loadAndroidTranslation(QTranslator &translator, const QString &locale)
     return true;
 }
 
+/**
+ * Checks if the locale is supported. Locale may have been removed because
+ * translation progress was not enough or invalid language put in configuration.
+*/
+bool isSupportedLocale(const QString &locale)
+{
+    bool isSupported = false;
+    QQmlEngine engine;
+    QQmlComponent component(&engine, QUrl("qrc:/gcompris/src/core/LanguageList.qml"));
+    QObject *object = component.create();
+    QVariant variant = object->property("languages");
+    QJSValue languagesList = variant.value<QJSValue>();
+    const int length = languagesList.property("length").toInt();
+    for (int i = 0; i < length; ++i) {
+        if (languagesList.property(i).property("locale").toString() == locale) {
+            isSupported = true;
+        }
+    }
+    delete object;
+    return isSupported;
+}
 // Return the locale
 QString loadTranslation(QSettings &config, QTranslator &translator)
 {
@@ -54,10 +75,16 @@ QString loadTranslation(QSettings &config, QTranslator &translator)
     // Get locale
     locale = config.value("General/locale", GC_DEFAULT_LOCALE).toString();
 
-    if(locale == GC_DEFAULT_LOCALE)
+    if (!isSupportedLocale(locale)) {
+        qDebug() << "locale" << locale << "not supported, defaulting to" << GC_DEFAULT_LOCALE;
+        locale = GC_DEFAULT_LOCALE;
+        ApplicationSettings::getInstance()->setLocale(locale);
+    }
+
+    if (locale == GC_DEFAULT_LOCALE)
         locale = QString(QLocale::system().name() + ".UTF-8");
 
-    if(locale == "C.UTF-8" || locale == "en_US.UTF-8")
+    if (locale == "C.UTF-8" || locale == "en_US.UTF-8")
         return "en_US";
 
     // Load translation
@@ -65,25 +92,22 @@ QString loadTranslation(QSettings &config, QTranslator &translator)
     locale.remove(".UTF-8");
 
 #if defined(Q_OS_ANDROID)
-    if(!loadAndroidTranslation(translator, locale))
+    if (!loadAndroidTranslation(translator, locale))
         loadAndroidTranslation(translator, ApplicationInfo::localeShort(locale));
 #else
 
 #if (defined(Q_OS_LINUX) || defined(Q_OS_UNIX))
     // only useful for translators: load from $application_dir/../share/... if exists as it is where kde scripts install translations
-    if(translator.load("gcompris_qt.qm", QString("%1/../share/locale/%2/LC_MESSAGES").arg(QCoreApplication::applicationDirPath(), locale))) {
-        qDebug() << "load translation for locale " << locale << " in " <<
-            QString("%1/../share/locale/%2/LC_MESSAGES").arg(QCoreApplication::applicationDirPath(), locale);
+    if (translator.load("gcompris_qt.qm", QString("%1/../share/locale/%2/LC_MESSAGES").arg(QCoreApplication::applicationDirPath(), locale))) {
+        qDebug() << "load translation for locale " << locale << " in " << QString("%1/../share/locale/%2/LC_MESSAGES").arg(QCoreApplication::applicationDirPath(), locale);
     }
-    else if(translator.load("gcompris_qt.qm", QString("%1/../share/locale/%2/LC_MESSAGES").arg(QCoreApplication::applicationDirPath(), locale.split('_')[0]))) {
-        qDebug() << "load translation for locale " << locale << " in " <<
-            QString("%1/../share/locale/%2/LC_MESSAGES").arg(QCoreApplication::applicationDirPath(), locale.split('_')[0]);
+    else if (translator.load("gcompris_qt.qm", QString("%1/../share/locale/%2/LC_MESSAGES").arg(QCoreApplication::applicationDirPath(), locale.split('_')[0]))) {
+        qDebug() << "load translation for locale " << locale << " in " << QString("%1/../share/locale/%2/LC_MESSAGES").arg(QCoreApplication::applicationDirPath(), locale.split('_')[0]);
     }
     else
 #endif
-    if(!translator.load("gcompris_" + locale, QString("%1/%2/translations").arg(QCoreApplication::applicationDirPath(), GCOMPRIS_DATA_FOLDER))) {
-        qDebug() << "Unable to load translation for locale " <<
-                    locale << ", use en_US by default";
+        if (!translator.load("gcompris_" + locale, QString("%1/%2/translations").arg(QCoreApplication::applicationDirPath(), GCOMPRIS_DATA_FOLDER))) {
+        qDebug() << "Unable to load translation for locale " << locale << ", use en_US by default";
     }
 #endif
     return locale;
@@ -108,7 +132,7 @@ int main(int argc, char *argv[])
     // the one we use (because appName is gcompris-qt, not gcompris)
     QGuiApplication::setDesktopFileName("org.kde.gcompris");
 #endif
-    
+
     //add a variable to disable default fullscreen on Mac, see below..
 #if defined(Q_OS_MAC)
     // Sandboxing on MacOSX as documented in:
@@ -121,22 +145,13 @@ int main(int argc, char *argv[])
 
     // Local scope for config
 #if defined(UBUNTUTOUCH)
-    QSettings config(QStandardPaths::writableLocation(QStandardPaths::AppConfigLocation) +
-                     "/gcompris/" + GCOMPRIS_APPLICATION_NAME + ".conf",
+    QSettings config(QStandardPaths::writableLocation(QStandardPaths::AppConfigLocation) + "/gcompris/" + GCOMPRIS_APPLICATION_NAME + ".conf",
                      QSettings::IniFormat);
 #else
-        QSettings config(QStandardPaths::writableLocation(QStandardPaths::GenericConfigLocation) +
-                         "/gcompris/" + GCOMPRIS_APPLICATION_NAME + ".conf",
-                         QSettings::IniFormat);
+    QSettings config(QStandardPaths::writableLocation(QStandardPaths::GenericConfigLocation) + "/gcompris/" + GCOMPRIS_APPLICATION_NAME + ".conf",
+                     QSettings::IniFormat);
 
 #endif
-
-
-    // Load translations
-    QTranslator translator;
-    loadTranslation(config, translator);
-    // Apply translation
-    app.installTranslator(&translator);
 
     QCommandLineParser parser;
     parser.setApplicationDescription("GCompris is an educational software for children 2 to 10");
@@ -144,36 +159,42 @@ int main(int argc, char *argv[])
     parser.addVersionOption();
     QCommandLineOption exportActivitiesAsSQL("export-activities-as-sql", "Export activities as SQL");
     parser.addOption(exportActivitiesAsSQL);
-    QCommandLineOption clDefaultCursor(QStringList() << "c" << "cursor",
+    QCommandLineOption clDefaultCursor(QStringList() << "c"
+                                                     << "cursor",
                                        QObject::tr("Run GCompris with the default system cursor."));
     parser.addOption(clDefaultCursor);
-    QCommandLineOption clNoCursor(QStringList() << "C" << "nocursor",
-                                       QObject::tr("Run GCompris without cursor (touch screen mode)."));
+    QCommandLineOption clNoCursor(QStringList() << "C"
+                                                << "nocursor",
+                                  QObject::tr("Run GCompris without cursor (touch screen mode)."));
     parser.addOption(clNoCursor);
-    QCommandLineOption clFullscreen(QStringList() << "f" << "fullscreen",
-                                       QObject::tr("Run GCompris in fullscreen mode."));
+    QCommandLineOption clFullscreen(QStringList() << "f"
+                                                  << "fullscreen",
+                                    QObject::tr("Run GCompris in fullscreen mode."));
     parser.addOption(clFullscreen);
-    QCommandLineOption clWindow(QStringList() << "w" << "window",
-                                       QObject::tr("Run GCompris in window mode."));
+    QCommandLineOption clWindow(QStringList() << "w"
+                                              << "window",
+                                QObject::tr("Run GCompris in window mode."));
     parser.addOption(clWindow);
-    QCommandLineOption clSound(QStringList() << "s" << "sound",
-                                       QObject::tr("Run GCompris with sound enabled."));
+    QCommandLineOption clSound(QStringList() << "s"
+                                             << "sound",
+                               QObject::tr("Run GCompris with sound enabled."));
     parser.addOption(clSound);
-    QCommandLineOption clMute(QStringList() << "m" << "mute",
-                                       QObject::tr("Run GCompris without sound."));
+    QCommandLineOption clMute(QStringList() << "m"
+                                            << "mute",
+                              QObject::tr("Run GCompris without sound."));
     parser.addOption(clMute);
     QCommandLineOption clWithoutKioskMode(QStringList() << "disable-kioskmode",
-                                       QObject::tr("Disable the kiosk mode (default)."));
+                                          QObject::tr("Disable the kiosk mode (default)."));
     parser.addOption(clWithoutKioskMode);
     QCommandLineOption clWithKioskMode(QStringList() << "enable-kioskmode",
                                        QObject::tr("Enable the kiosk mode."));
     parser.addOption(clWithKioskMode);
 
     QCommandLineOption clSoftwareRenderer(QStringList() << "software-renderer",
-                                       QObject::tr("Use software renderer instead of openGL (slower but should run with any graphical card, needs Qt 5.8 minimum)."));
+                                          QObject::tr("Use software renderer instead of openGL (slower but should run with any graphical card, needs Qt 5.8 minimum)."));
     parser.addOption(clSoftwareRenderer);
     QCommandLineOption clOpenGLRenderer(QStringList() << "opengl-renderer",
-                                       QObject::tr("Use openGL renderer instead of software (faster but crash potentially depending on your graphical card)."));
+                                        QObject::tr("Use openGL renderer instead of software (faster but crash potentially depending on your graphical card)."));
     parser.addOption(clOpenGLRenderer);
 
     parser.process(app);
@@ -181,6 +202,12 @@ int main(int argc, char *argv[])
     GComprisPlugin plugin;
     plugin.registerTypes("GCompris");
     ActivityInfoTree::registerResources();
+
+    // Load translations
+    QTranslator translator;
+    loadTranslation(config, translator);
+    // Apply translation
+    app.installTranslator(&translator);
 
     // Tell media players to stop playing, it's GCompris time
     ApplicationInfo::getInstance()->requestAudioFocus();
@@ -201,45 +228,45 @@ int main(int argc, char *argv[])
         // Set the cursor image
         bool defaultCursor = config.value("General/defaultCursor", false).toBool();
 
-        if(!defaultCursor && !parser.isSet(clDefaultCursor))
+        if (!defaultCursor && !parser.isSet(clDefaultCursor))
             QGuiApplication::setOverrideCursor(
-                                               QCursor(QPixmap(":/gcompris/src/core/resource/cursor.svg"),
-                                                       0, 0));
+                QCursor(QPixmap(":/gcompris/src/core/resource/cursor.svg"),
+                        0, 0));
 
         // Hide the cursor
         bool noCursor = config.value("General/noCursor", false).toBool();
 
-        if(noCursor || parser.isSet(clNoCursor))
+        if (noCursor || parser.isSet(clNoCursor))
             QGuiApplication::setOverrideCursor(QCursor(Qt::BlankCursor));
     }
 
     // Update execution counter
     ApplicationSettings::getInstance()->setExeCount(ApplicationSettings::getInstance()->exeCount() + 1);
 
-    if(parser.isSet(clFullscreen)) {
+    if (parser.isSet(clFullscreen)) {
         isFullscreen = true;
     }
-    if(parser.isSet(clWindow)) {
+    if (parser.isSet(clWindow)) {
         isFullscreen = false;
     }
-    if(parser.isSet(clMute)) {
+    if (parser.isSet(clMute)) {
         ApplicationSettings::getInstance()->setIsAudioEffectsEnabled(false);
         ApplicationSettings::getInstance()->setIsAudioVoicesEnabled(false);
     }
-    if(parser.isSet(clSound)) {
+    if (parser.isSet(clSound)) {
         ApplicationSettings::getInstance()->setIsAudioEffectsEnabled(true);
         ApplicationSettings::getInstance()->setIsAudioVoicesEnabled(true);
     }
-    if(parser.isSet(clWithoutKioskMode)) {
+    if (parser.isSet(clWithoutKioskMode)) {
         ApplicationSettings::getInstance()->setKioskMode(false);
     }
-    if(parser.isSet(clWithKioskMode)) {
+    if (parser.isSet(clWithKioskMode)) {
         ApplicationSettings::getInstance()->setKioskMode(true);
     }
-    if(parser.isSet(clSoftwareRenderer)) {
+    if (parser.isSet(clSoftwareRenderer)) {
         ApplicationSettings::getInstance()->setRenderer(QStringLiteral("software"));
     }
-    if(parser.isSet(clOpenGLRenderer)) {
+    if (parser.isSet(clOpenGLRenderer)) {
         ApplicationSettings::getInstance()->setRenderer(QStringLiteral("opengl"));
     }
 
@@ -248,10 +275,20 @@ int main(int argc, char *argv[])
     ApplicationInfo::getInstance()->setUseOpenGL(renderer != QLatin1String("software"));
 
 #if QT_VERSION >= QT_VERSION_CHECK(5, 8, 0)
-    if(renderer == QLatin1String("software"))
-       QQuickWindow::setSceneGraphBackend(QSGRendererInterface::Software);
-    else if(renderer == QLatin1String("opengl"))
-       QQuickWindow::setSceneGraphBackend(QSGRendererInterface::OpenGL);
+    if (renderer == QLatin1String("software")) {
+#if QT_VERSION >= QT_VERSION_CHECK(6, 0, 0)
+        QQuickWindow::setGraphicsApi(QSGRendererInterface::Software);
+#else
+        QQuickWindow::setSceneGraphBackend(QSGRendererInterface::Software);
+#endif
+    }
+    else if (renderer == QLatin1String("opengl")) {
+#if QT_VERSION >= QT_VERSION_CHECK(6, 0, 0)
+        QQuickWindow::setGraphicsApi(QSGRendererInterface::OpenGL);
+#else
+        QQuickWindow::setSceneGraphBackend(QSGRendererInterface::OpenGL);
+#endif
+    }
 #endif
 
     QQmlApplicationEngine engine(QUrl("qrc:/gcompris/src/core/main.qml"));
@@ -260,16 +297,17 @@ int main(int argc, char *argv[])
     // add import path for shipped qml modules:
 #ifdef SAILFISHOS
     engine.addImportPath(QStringLiteral("%1/../share/%2/lib/qml")
-                         .arg(QCoreApplication::applicationDirPath()).arg(GCOMPRIS_APPLICATION_NAME));
+                             .arg(QCoreApplication::applicationDirPath())
+                             .arg(GCOMPRIS_APPLICATION_NAME));
 #else
     engine.addImportPath(QStringLiteral("%1/../lib/qml")
-                         .arg(QCoreApplication::applicationDirPath()));
+                             .arg(QCoreApplication::applicationDirPath()));
 #endif
 
     ApplicationInfo::getInstance()->setBox2DInstalled(engine);
 
-    if(parser.isSet(exportActivitiesAsSQL)) {
-        ActivityInfoTree *menuTree(qobject_cast<ActivityInfoTree*>(ActivityInfoTree::menuTreeProvider(&engine, nullptr)));
+    if (parser.isSet(exportActivitiesAsSQL)) {
+        ActivityInfoTree *menuTree(qobject_cast<ActivityInfoTree *>(ActivityInfoTree::menuTreeProvider(&engine, nullptr)));
         menuTree->exportAsSQL();
         exit(0);
     }
@@ -285,7 +323,7 @@ int main(int argc, char *argv[])
 
     window->setIcon(QIcon(QPixmap(QString::fromUtf8(":/gcompris/src/core/resource/gcompris-icon.png"))));
 
-    if(isFullscreen) {
+    if (isFullscreen) {
         window->showFullScreen();
     }
     else {

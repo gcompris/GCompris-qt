@@ -56,6 +56,7 @@ ElectricalComponent {
     }
 
     MouseArea {
+        id: clickArea
         height: parent.height * 0.5
         width: parent.width * 0.25
         anchors.horizontalCenter: parent.horizontalCenter
@@ -73,7 +74,11 @@ ElectricalComponent {
     }
 
     function checkConnections() {
-        return;
+        terminalConnected = 0;
+        for(var i = 0; i < noOfConnectionPoints; i++) {
+            if(connectionPoints.itemAt(i).wires.length > 0)
+                terminalConnected += 1;
+        }
     }
 
     function updateValues() {
@@ -100,6 +105,20 @@ ElectricalComponent {
             netlistItem[3][1] = switch1.externalNetlistIndex[1];
             Activity.netlist.push(netlistItem);
         }
+    }
+
+    function checkComponentAnswer() {
+        if(switch1.source == Activity.url + "switch_off.svg" && terminalConnected >= 2) {
+            switch1.source = Activity.url + "switch_on.svg";
+            switchOn = true;
+            Activity.createNetlist();
+
+            if(current != 0)
+                return "switch1In";
+        } else if(switch1.source == Activity.url + "switch_on.svg" && terminalConnected >= 2 && current != 0) {
+            return "switch1In";
+        } else
+            return "";
     }
 }
 

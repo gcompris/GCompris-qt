@@ -10,6 +10,6 @@
         }
     },
     "version": "1.0.1",
-    "maintainer": "lionel <lionel.duboeuf@gmail.com>",
+    "maintainer": "lionel <lduboeuf@ouvaton.org>",
     "framework" : "ubuntu-sdk-16.04"
 }

@@ -1,10 +1,5 @@
-Copyright: Nicu Buculei 
-License: Public domain
-Files:
-fusee.svg
-
-Copyright: 2000, 2008 Bruno Coudoin and others
-License: GPLv3
+Copyright: Timothée Giet, 2015-2021
+License: CC-BY-SA 4.0
 Files:
 apple.svg
 bell.svg
@@ -20,6 +15,7 @@ fishingboat.svg
 flower.svg
 flowerpot.svg
 football.svg
+fusee.svg
 glass.svg
 house.svg
 lamp.svg
@@ -41,5 +37,4 @@ tree.svg
 truck.svg
 tuxhelico.svg
 tuxplane.svg
-umbrella.svg
 windflag5.svg

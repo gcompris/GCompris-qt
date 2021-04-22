@@ -20,7 +20,7 @@ Item {
 
     property string source: imgName
     property double tileSize
-    property double imgSize: tileSize * 0.85
+    property int imgSize: Math.round(tileSize * 0.9)
     property QtObject answer: tileImage.parent
     property bool selected: false
     property alias dropStatus: tileImage.dropStatus
@@ -49,8 +49,11 @@ Item {
         }
         onStopped: {
             tileImage.parent = tileImage.tileImageParent;
-            tileImage.anchors.centerIn = tileImage.currentTargetSpot == null ?
-                                        tileImage.parent : tileImage.currentTargetSpot;
+            if(tileImage.currentTargetSpot == null) {
+                tileImage.centerInTile();
+            } else {
+                tileImage.anchors.centerIn = tileImage.currentTargetSpot;
+            }
             updateOkButton();
         }
     }
@@ -64,25 +67,32 @@ Item {
         border.width: 3
         radius: 2
 
-        property double xCenter: tile.x + tile.width / 2
-        property double yCenter: tile.y + tile.height / 2
+        property double xCenter: tile.x + tile.width * 0.5
+        property double yCenter: tile.y + tile.height * 0.5
+
+        Image {
+            id: sourceImage
+            visible: false
+            source: Activity.imagesUrl + imgName
+        }
 
         Image {
             id: tileImage
-            anchors.centerIn: parent
-            width: smallWidth
-            height: smallHeight
+            sourceSize.width: width
+            sourceSize.height: height
+            width: imgSize
+            height: imgSize
+            x: parent.xCenter - width * 0.5
+            y: parent.yCenter - height * 0.5
             fillMode: Image.PreserveAspectFit
             source: Activity.imagesUrl + imgName
 
-            property double smallWidth: Activity.glowEnabled ? imgSize * 1.1 : imgSize
-            property double smallHeight: Activity.glowEnabled ? imgSize * 1.1 : imgSize
             property double fullWidth: imgWidth ? imgWidth * backgroundImage.width : (backgroundImage.source == "" ?
-                                           tileImage.sourceSize.width :
-                                           backgroundImage.width * tileImage.sourceSize.width/backgroundImage.sourceSize.width)
+                                           sourceImage.sourceSize.width :
+                                           backgroundImage.width * sourceImage.sourceSize.width/backgroundImage.sourceSize.width)
             property double fullHeight: imgHeight ? imgHeight * backgroundImage.height : (backgroundImage.source == "" ?
-                                           tileImage.sourceSize.height :
-                                           backgroundImage.height * tileImage.sourceSize.height/backgroundImage.sourceSize.height)
+                                           sourceImage.sourceSize.height :
+                                           backgroundImage.height * sourceImage.sourceSize.height/backgroundImage.sourceSize.height)
             property QtObject tileImageParent
             property double moveImageX
             property double moveImageY
@@ -102,24 +112,29 @@ Item {
                 }
             }
 
+            function centerInTile() {
+                x = tile.xCenter - tileImage.width * 0.5;
+                y = tile.yCenter - tileImage.height * 0.5;
+            }
+
             function imageRemove() {
                 dropStatus = -1;
                 if(backgroundImage.source == "")
                     leftWidget.z = 1;
 
-                var coord = tileImage.parent.mapFromItem(tile, tile.xCenter - tileImage.width/2,
-                            tile.yCenter - tileImage.height/2);
-                tileImage.moveImageX = coord.x;
-                tileImage.moveImageY = coord.y;
                 tileImage.currentTargetSpot = null;
                 tileImage.tileImageParent = tile;
                 toSmall();
+                var coord = tileImage.parent.mapFromItem(tile, tile.xCenter - tileImage.width * 0.5,
+                            tile.yCenter - tileImage.height * 0.5);
+                tileImage.moveImageX = coord.x;
+                tileImage.moveImageY = coord.y;
                 tileImageAnimation.start();
             }
 
             function toSmall() {
-                width = smallWidth;
-                height = smallHeight;
+                width = imgSize;
+                height = imgSize;
                 small = true;
             }
 
@@ -127,10 +142,6 @@ Item {
                 width = fullWidth;
                 height = fullHeight;
                 small = false;
-                if(imgName.indexOf(".svg") != -1) {
-                    tileImage.sourceSize.width = tileImage.width
-                    tileImage.sourceSize.height= tileImage.height
-                }
             }
 
             MultiPointTouchArea {
@@ -244,13 +255,12 @@ Item {
             id: tileImageGlow
             parent: tileImage.parent
             anchors.fill: tileImage
-            radius: tileImage.dropStatus === 0 ? 9 : 0.7
-            samples: tileImage.dropStatus === 0 ? 18 : 2
+            radius: 8
+            samples: 17
             color: view.showGlow && Activity.glowEnabled ?
-                       (tileImage.dropStatus === 0 ? "red" : "black") :
+                       (tileImage.dropStatus === 0 ? "red" : "white") :
                        'transparent'
             source: tileImage
-            spread: tileImage.dropStatus === 0 ? 0.95 : 1
             opacity: tileImage.opacity
         }
     }
