@@ -145,26 +145,7 @@ QString ApplicationInfo::getFilePath(const QString &file)
 QString ApplicationInfo::getAudioFilePath(const QString &file)
 {
     QString localeName = getVoicesLocale(ApplicationSettings::getInstance()->locale());
-    QString result = getAudioFilePathForLocale(file, localeName);
-
-#if defined(UBUNTUTOUCH)
-    // temporary fix, media player is not playing qrc file as it fails with permissions
-    // just extract the file from qrc and copy it to a directory
-    // see https://github.com/ubports/media-hub/issues/2
-    QString qrcFilePath(result);
-    if (qrcFilePath.startsWith("qrc")) {
-        qrcFilePath.remove(0, 3);
-        QString targetFile = QStandardPaths::writableLocation(QStandardPaths::CacheLocation) + "/extracted" + qrcFilePath.mid(1, -1);
-        QFileInfo targetFileInfo(targetFile);
-        if (!targetFileInfo.exists()) {
-            QDir toDir(targetFileInfo.dir());
-            toDir.mkpath(targetFileInfo.absolutePath());
-            QFile::copy(qrcFilePath, targetFileInfo.absoluteFilePath());
-        }
-        return "file://" + targetFileInfo.absoluteFilePath();
-    }
-#endif
-    return result;
+    return getAudioFilePathForLocale(file, localeName);
 }
 
 QString ApplicationInfo::getAudioFilePathForLocale(const QString &file,
