@@ -51,7 +51,7 @@ function get() {
                     "bodyName": qsTr("Mercury"),
                     "bodySize": 0.12,
                     "temperatureHint": qsTr("The maximum temperature on Earth is 58 °C."),
-                    "lengthOfYearHint": qsTr("The length of a year on Venus is 225 days."),
+                    "lengthOfYearHint": qsTr("The length of a year on Venus is 225 Earth days."),
                     "levels": [
                         { 	// sub-level 1
                             "question": qsTr("At which position is Mercury in the Solar System?"),
@@ -79,7 +79,7 @@ function get() {
                         },
                         { 	// sub-level 5
                             "question": qsTr("How long is a year on Mercury?"),
-                            "options": [qsTr("365 days"), qsTr("433 days"), qsTr("88 days"), qsTr("107 days")],
+                            "options": [qsTr("365 Earth days"), qsTr("433 Earth days"), qsTr("88 Earth days"), qsTr("107 Earth days")],
                             "closeness": [20.5, 1, 100, 94.5],
                             "hintProvided": true
                         },
@@ -118,14 +118,14 @@ function get() {
                         },
                         { 	// sub-level 4
                             "question": qsTr("How long is a year on Venus?"),
-                            "options": [qsTr("225 days"), qsTr("365 days"), qsTr("116 days"), qsTr("100 days")],
+                            "options": [qsTr("225 Earth days"), qsTr("365 Earth days"), qsTr("116 Earth days"), qsTr("100 Earth days")],
                             "closeness": [100, 1, 23, 11.6],
                             "hintProvided": true
                         },
                         { 	// sub-level 5
                             "question": qsTr("How long is one rotation on Venus?"),
-                            "options": [qsTr("117 Earth days"), qsTr("365 Earth days"), qsTr("88 Earth days"), qsTr("107 Earth days")],
-                            "closeness": [100, 1, 88.8, 96.4],
+                            "options": [qsTr("243 Earth days"), qsTr("365 Earth days"), qsTr("88 Earth days"), qsTr("107 Earth days")],
+                            "closeness": [100, 22, 1, 13],
                             "hintProvided": false
                         },
                         { 	// sub-level 6
@@ -147,7 +147,7 @@ function get() {
                     "bodyName": qsTr("Earth"),
                     "bodySize": 0.3,
                     "temperatureHint": qsTr("The maximum temperature on Mars is 20 °C."),
-                    "lengthOfYearHint": qsTr("The length of a year on Venus is 225 days."),
+                    "lengthOfYearHint": qsTr("The length of a year on Venus is 225 Earth days."),
                     "levels": [
                         { 	// sub-level 1
                             "question": qsTr("At which position is Earth in the Solar System?"),
@@ -232,7 +232,7 @@ function get() {
                         },
                         { 	// sub-level 6
                             "question": qsTr("How long does it take for Mars to make one revolution around the Sun?"),
-                            "options": [qsTr("687 days"), qsTr("30 days"), qsTr("7 days"), qsTr("365 days")],
+                            "options": [qsTr("687 Earth days"), qsTr("30 Earth days"), qsTr("7 Earth days"), qsTr("365 Earth days")],
                             "closeness": [100, 4.3, 1, 53],
                             "hintProvided": true
                         },
@@ -349,7 +349,7 @@ function get() {
                         },
                         { 	// sub-level 2
                             "question": qsTr("How many years does it take for Uranus to go once around the Sun?"),
-                            "options": [qsTr("1 year"), qsTr("24 years"), qsTr("68 years"), qsTr("84 years")],
+                            "options": [qsTr("1 Earth year"), qsTr("24 Earth years"), qsTr("68 Earth years"), qsTr("84 Earth years")],
                             "closeness": [1, 28.4, 81, 100],
                             "hintProvided": true
                         },
@@ -384,7 +384,7 @@ function get() {
                     "bodyName": qsTr("Neptune"),
                     "bodySize": 0.4,
                     "temperatureHint": qsTr("The maximum temperature on Saturn is -178 °C."),
-                    "lengthOfYearHint": qsTr("The length of a year on Uranus is 84 years."),
+                    "lengthOfYearHint": qsTr("The length of a year on Uranus is 84 Earth years."),
                     "levels": [
                         { 	// sub-level 1
                             "question": qsTr("At which position is Neptune in the Solar System?"),
@@ -394,7 +394,7 @@ function get() {
                         },
                         { 	// sub-level 2
                             "question": qsTr("How long does it take for Neptune to make one revolution around the Sun?"),
-                            "options": [qsTr("165 years"), qsTr("3 years"), qsTr("100 years"), qsTr("1 year")],
+                            "options": [qsTr("165 Earth years"), qsTr("3 Earth years"), qsTr("100 Earth years"), qsTr("1 Earth year")],
                             "closeness": [100, 2, 60.7, 1],
                             "hintProvided": true
                         },
