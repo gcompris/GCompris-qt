@@ -87,7 +87,7 @@ ActivityBase {
             GCText {
                 id: problemText
                 anchors.centerIn: parent
-                width: parent.width * 3 / 4
+                width: parent.width * 0.9
                 fontSize: mediumSize
                 wrapMode: Text.WordWrap
                 horizontalAlignment: Text.AlignHCenter
