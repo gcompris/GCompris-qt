@@ -22,10 +22,13 @@ ActivityBase {
     onStart: focus = true
     onStop: {}
 
-    pageComponent: Rectangle {
+    pageComponent: Image {
         id: background
         anchors.fill: parent
-        color: "white"
+        source: "qrc:/gcompris/src/activities/fifteen/resource/background.svg"
+        sourceSize.width: width
+        sourceSize.height: height
+        fillMode: Image.PreserveAspectCrop
         signal start
         signal stop
 
@@ -42,7 +45,7 @@ ActivityBase {
             property alias bar: bar
             property alias bonus: bonus
             property var model
-            property bool notShowed: true
+            property bool showProblem: true
             property alias img1: img1
             property alias img2: img2
             property int total
@@ -54,7 +57,7 @@ ActivityBase {
         onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
 
-        property bool vert: background.width <= background.height
+        property bool vert: frame.width <= frame.height
         property double barHeight: ApplicationSettings.isBarHidden ? bar.height / 2 : bar.height
         property bool startedHelp: false
 
@@ -63,28 +66,23 @@ ActivityBase {
                 bonus.good("flower")
 
                 // after completing a level, mark the problem as shown
-                if (items.notShowed) {
-                    items.notShowed = false
+                if (items.showProblem) {
+                    items.showProblem = false
                 }
-
-                //remove the problem from the board after first level
-                if (problem.z > 0)
-                    Activity.hideProblem()
             }
         }
 
         Rectangle {
             id: problem
-            width: parent.width
-            height: problemText.height
+            width: parent.width - score.width - 20 * ApplicationInfo.ratio
+            height:  hideProblem ? 0 : problemText.height
             anchors.top: parent.top
-            anchors.topMargin: 10
-            border.width: 2
-            border.color: "black"
-            color: "red"
-            z: 5
+            anchors.topMargin: hideProblem ? 0 : 10 * ApplicationInfo.ratio
+            anchors.left: parent.left
+            color: "#C0373737"
+            z: hideProblem ? -5 : 5
 
-            property alias problemText: problemText
+            property bool hideProblem: false
 
             GCText {
                 id: problemText
@@ -93,13 +91,10 @@ ActivityBase {
                 fontSize: mediumSize
                 wrapMode: Text.WordWrap
                 horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
                 text: background.startedHelp ? qsTr("Drag the slider to show the differences.") :
                                           qsTr("Click on the differences between the two images.")
                 color: "white"
-                onHeightChanged: {
-                    if (items.problem.z > 0)
-                        frame.problemTextHeight = problemText.height
-                }
             }
 
             MouseArea {
@@ -108,30 +103,46 @@ ActivityBase {
             }
         }
 
-        Rectangle {
+        states: [
+            State {
+                name: "anchorProblem"
+                when: problem.height >= score.height
+                AnchorChanges {
+                    target: frame
+                    anchors.top: problem.bottom
+                }
+                PropertyChanges {
+                    target: frame
+                    height: background.height - problem.height - bar.height * 1.5 - 10 * ApplicationInfo.ratio
+                }
+            },
+            State {
+                name: "anchorScore"
+                when: score.height > problem.height
+                AnchorChanges {
+                    target: frame
+                    anchors.top: score.bottom
+                }
+                PropertyChanges {
+                    target: frame
+                    height: background.height - score.height - bar.height * 1.5 - 10 * ApplicationInfo.ratio
+                }
+            }
+        ]
+
+        Item {
             id: frame
-            color: "transparent"
-            width: background.vert ? img1.width : parent.width - 20
-            height: parent.height - background.barHeight - 30
-
+            height: background.height - problem.height - bar.height * 1.5 - 10 * ApplicationInfo.ratio
             anchors.top: problem.bottom
-            anchors.horizontalCenter: parent.horizontalCenter
-            anchors.margins: 10
-
-            property real problemTextHeight: problemText.height
+            anchors.left: background.left
+            anchors.right: background.right
 
             //left/top image
             Observe {
                 id: img1
                 show: true
-                anchors {
-                    horizontalCenter: parent.horizontalCenter
-                    horizontalCenterOffset: background.startedHelp ? 0 : background.vert ? 0 : - img1.width / 2 - 5
-
-                    verticalCenter: parent.verticalCenter
-                    verticalCenterOffset: background.startedHelp ?  background.vert ? - frame.problemTextHeight * 0.8 : - frame.problemTextHeight * 1.01 :
-                                                                    background.vert ? - frame.problemTextHeight * 0.5 - img1.height * 0.5 - 5 : - frame.problemTextHeight * 0.5
-                }
+                anchors.horizontalCenter: parent.horizontalCenter
+                anchors.verticalCenter: parent.verticalCenter
             }
 
             //right/bottom image
@@ -139,20 +150,68 @@ ActivityBase {
                 id: img2
                 opacity: background.startedHelp ? 1 - slider.value : 1
                 show: false
-                anchors {
-                    horizontalCenter: parent.horizontalCenter
-                    horizontalCenterOffset: background.startedHelp ? 0 : background.vert ? 0 : img1.width / 2 + 5
-
-                    verticalCenter: parent.verticalCenter
-                    verticalCenterOffset: background.startedHelp ? background.vert ? - frame.problemTextHeight * 0.8 : - frame.problemTextHeight * 1.01 :
-                                                                   background.vert ? - frame.problemTextHeight * 0.5 + img1.height * 0.5 + 5 : - frame.problemTextHeight * 0.5
-                }
+                anchors.horizontalCenter: parent.horizontalCenter
+                anchors.verticalCenter: parent.verticalCenter
             }
+            states: [
+                State {
+                    name: "horizontalImages"
+                    when: !background.vert && !background.startedHelp
+                    PropertyChanges {
+                        target: img1
+                        anchors.horizontalCenterOffset: -img1.width * 0.5 - 5 * ApplicationInfo.ratio
+                        anchors.verticalCenterOffset: 0
+                    }
+                    PropertyChanges {
+                        target: img2
+                        anchors.horizontalCenterOffset: img1.width * 0.5 + 5 * ApplicationInfo.ratio
+                        anchors.verticalCenterOffset: 0
+                    }
+                },
+                State {
+                    name: "horizontalHelp"
+                    when: !background.vert && background.startedHelp
+                    PropertyChanges {
+                        target: img1
+                        anchors.horizontalCenterOffset: 0
+                        anchors.verticalCenterOffset: 0
+                    }
+                    PropertyChanges {
+                        target: img2
+                        anchors.horizontalCenterOffset: 0
+                        anchors.verticalCenterOffset: 0
+                    }
+                },
+                State {
+                    name: "verticalImages"
+                    when: background.vert && !background.startedHelp
+                    PropertyChanges {
+                        target: img1
+                        anchors.verticalCenterOffset: -img1.height * 0.5 - 5 * ApplicationInfo.ratio
+                    }
+                    PropertyChanges {
+                        target: img2
+                        anchors.verticalCenterOffset: img1.height * 0.5 + 5 * ApplicationInfo.ratio
+                    }
+                },
+                State {
+                    name: "verticallHelp"
+                    when: background.vert && background.startedHelp
+                    PropertyChanges {
+                        target: img1
+                        anchors.verticalCenterOffset: 0
+                    }
+                    PropertyChanges {
+                        target: img2
+                        anchors.verticalCenterOffset: 0
+                    }
+                }
+            ]
 
             Slider {
                 id: slider
                 value: 0
-                height: 50
+                height: background.startedHelp ? 50 : 0
                 width: img1.width * 0.9
                 z: background.startedHelp ? 5 : -5
                 opacity: background.startedHelp ? 1 : 0
@@ -218,13 +277,14 @@ ActivityBase {
         }
 
         Score {
+            id: score
             anchors {
-                bottom: parent.bottom
-                bottomMargin: 10 * ApplicationInfo.ratio
+                bottom: undefined
+                left: undefined
+                top: background.top
+                topMargin: 10 * ApplicationInfo.ratio
                 right: parent.right
                 rightMargin: 10 * ApplicationInfo.ratio
-                top: undefined
-                left: undefined
             }
             numberOfSubLevels: items.total
             currentSubLevel: items.totalFound

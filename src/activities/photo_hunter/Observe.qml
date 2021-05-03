@@ -17,10 +17,11 @@ import "photo_hunter.js" as Activity
 Image {
     id: card
 
-    sourceSize.width: background.vert ? background.width : (background.width - 30) / 2
-    sourceSize.height: background.startedHelp ? background.height - background.barHeight * 1.5 - frame.problemTextHeight - slider.height :
-                                                background.vert ? (background.height - background.barHeight - 40 - frame.problemTextHeight) / 2 :
-                                                                  background.height - background.barHeight - 30 - frame.problemTextHeight
+    width: background.vert ? Math.min((parent.height - 30 * ApplicationInfo.ratio - slider.height) * 0.5, parent.width - 20 * ApplicationInfo.ratio) :
+                            Math.min((parent.width - 30 * ApplicationInfo.ratio) * 0.5, parent.height - 20 * ApplicationInfo.ratio - slider.height)
+    height: width
+    sourceSize.width: width
+    sourceSize.height: width
 
     property GCSfx audioEffects: activity.audioEffects
     property alias repeater: repeater
