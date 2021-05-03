@@ -103,6 +103,8 @@ function initLevel() {
     items.bar.level = currentLevel + 1
     items.background.startedHelp = false
 
+    items.problem.hideProblem = !items.showProblem
+
     setUp()
 }
 
@@ -160,12 +162,6 @@ function photoClicked(item, index) {
         item.good++
         items.background.checkAnswer()
     }
-}
-
-function hideProblem() {
-    items.frame.anchors.top = items.background.top
-    items.frame.problemTextHeight = 0
-    items.problem.z = -5
 }
 
 function nextLevel() {
