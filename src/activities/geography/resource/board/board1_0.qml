@@ -14,50 +14,50 @@ QtObject {
     property string instruction: qsTr("Continents")
     property var levels: [
     {
-        "pixmapfile": "continents/back.png",
+        "pixmapfile": "continents/back.svg",
         "type": "SHAPE_BACKGROUND_IMAGE"
     },
     {
-        "pixmapfile": "continents/oceania.png",
+        "pixmapfile": "continents/oceania.svg",
         "soundFile": "voices-$CA/$LOCALE/geography/oceania.$CA",
         "toolTipText": qsTr("Oceania"),
-        "x": "0.892",
-        "y": "0.822"
+        "x": "0.8694",
+        "y": "0.6471"
     },
     {
-        "pixmapfile": "continents/europa.png",
+        "pixmapfile": "continents/europa.svg",
         "soundFile": "voices-$CA/$LOCALE/geography/europe.$CA",
         "toolTipText": qsTr("Europe"),
-        "x": "0.507",
-        "y": "0.257"
+        "x": "0.4851",
+        "y": "0.1488"
     },
     {
-        "pixmapfile": "continents/asia.png",
+        "pixmapfile": "continents/asia.svg",
         "soundFile": "voices-$CA/$LOCALE/geography/asia.$CA",
         "toolTipText": qsTr("Asia"),
-        "x": "0.747",
-        "y": "0.386"
+        "x": "0.6814",
+        "y": "0.2886"
     },
     {
-        "pixmapfile": "continents/antarctica.png",
+        "pixmapfile": "continents/antarctica.svg",
         "soundFile": "voices-$CA/$LOCALE/geography/antarctica.$CA",
         "toolTipText": qsTr("Antarctica"),
-        "x": "0.42",
-        "y": "0.979"
+        "x": "0.4647",
+        "y": "0.887"
     },
     {
-        "pixmapfile": "continents/america.png",
+        "pixmapfile": "continents/america.svg",
         "soundFile": "voices-$CA/$LOCALE/geography/america.$CA",
         "toolTipText": qsTr("America"),
-        "x": "0.22",
-        "y": "0.479"
+        "x": "0.219",
+        "y": "0.4216"
     },
     {
-        "pixmapfile": "continents/africa.png",
+        "pixmapfile": "continents/africa.svg",
         "soundFile": "voices-$CA/$LOCALE/geography/africa.$CA",
         "toolTipText": qsTr("Africa"),
-        "x": "0.512",
-        "y": "0.636"
+        "x": "0.4782",
+        "y": "0.4832"
     }
     ]
 }
