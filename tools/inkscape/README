@@ -1,0 +1,24 @@
+"export_layers_gcompris" is an Inkscape extension to help creating maps/puzzle content in SVG.
+(requires Inkscape 1.0 or above ;
+better use a distribution packages on GNU/Linux as it may not work with Appimages but YMMV..)
+
+Usage example:
+
+-Copy the two files (.inx and .py) in ~/.config/inkscape/extensions.
+
+-NOTE: to avoid issues, make sure to setup your inkscape document width "Display units" in px, and with scale value 1.0 for x and y
+ (in "Document Properties", sections "General" and "Scale")
+ 
+-Create an SVG file with a base shape, like a country, on the first layer, and give a proper name to the layer,
+ like the country's name.
+-Make the base shape fill color white, and the outline color dark blue or black, with a 1px width.
+-Create a new layer, and using the fill tool create a shape for a region. Name this layer with the region's name.
+-Repeat the previous line as needed to complete all the regions. Make each region with a different fill color,
+ and the outline color darker with a 0.5px width.
+
+-When all is ready and saved, go in the menu "Extensions" - "Export" - "Export layers GCompris..."
+-Leave all the default settings (all the checkboxes unchecked, "Fit document size to layer content" selected and "SVG" selected) and click on Apply.
+
+-The result files will be in ~/.config/inkscape/extensions/layers, unless you selected something in "Source file" in which case the layers folder will be next to this file.
+ 
+ 

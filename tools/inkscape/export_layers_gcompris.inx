@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
+    <_name>Export layers GCompris</_name>
+
+    <id>com.over9000.export-layers-gcompris</id>
+
+    <dependency type="executable" location="inx">export_layers_gcompris.py</dependency>
+
+    <param name="help" type="description">  Export layers in different files, and a text file with normalized coordinates   </param>
+    <param name="help" type="description">  of the center of each layer's content (one group per layer).</param>
+    <param name="help" type="description">  </param>
+    <param name="help" type="description">  Layers with a name starting with "[fixed]"  or "[f]" are always exported.   </param>
+    <param name="help" type="description">  All other layers are progressively exported in their respective order.   </param>
+    <param name="help" type="description">  </param>
+    <param name="help" type="description">  Output filename is of the form: </param>
+    <param name="help" type="description">    /path/to/output/directory/[subdirectory/][prefix_][number_]layer_name.ext  </param>
+    <param name="help" type="description">  with [subdirectory], [prefix] and [number] being optionnal </param>
+    <param name="help" type="description">  </param>
+    <param name="help" type="description">  If you pick a file below,     </param>
+    <param name="help" type="description">  - Its directory will be the '/path/to/output/directory/'.   </param>
+    <param name="help" type="description">  - Its filename will be the [prefix] (leave filename empty for no prefix)   </param>
+    <param name="help" type="description"> If you leave this box empty, default output directory will be '~/' with no prefix    </param>
+    <param name="output-source" type="path" _gui-text="Source file"></param>
+    <param name="help" type="description">     </param>
+    <param name="help" type="description"> Name of [subdirectory/] to export to (leave empty for no subdirectory)     </param>
+    <param name="output-subdir" type="string" _gui-text="Sub-directory">layers/</param>
+    <param name="help" type="description">     </param>
+    <param name="enumerate" type="boolean" _gui-text="Add layer {number} to filenames ('001', '002', etc.)">false</param>
+    <param name="help" type="description">     </param>
+
+    <param name="fit-contents" type="optiongroup"  _gui-text="Area to export">
+        <option value="true" selected="selected">Fit document size to layer content</option>
+        <option value="false">Use document boundaries</option>
+    </param>
+
+    <param name="help" type="description">     </param>
+    <param name="help" type="description"> Show all exported layers below the current layer.     </param>
+    <param name="show-layers-below" type="boolean" _gui-text="Progressively reveal elements of a figure">false</param>
+
+    <param name="help" type="description">     </param>
+    <param name="file-type" type="optiongroup"  _gui-text="Output file type">
+        <option value="svg">SVG</option>
+        <option value="png">PNG</option>
+    </param>
+
+    <param name="dpi" type="int" min="1" max="1024" _gui-text="Export DPI (for raster formats)">96</param>
+
+    <effect needs-live-preview="false">
+        <object-type>all</object-type>
+        <effects-menu>
+            <submenu _name="Export"/>
+        </effects-menu>
+    </effect>
+
+    <script>
+        <command location="inx" interpreter="python">export_layers.py</command>
+    </script>
+</inkscape-extension>
