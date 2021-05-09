@@ -273,7 +273,7 @@ class LayerExport(inkex.Effect):
         source_file_name = os.path.splitext(os.path.basename(svg_file))[0]
         output_file = os.path.join(output_dir, prefix+source_file_name + '.png')
         command = [
-            '/home/timo/Softs/bin/squashfs-root-RC1/AppRun',
+            'inkscape',
             svg_file.encode('utf-8'),
             '--batch-process',
             '--export-area-drawing' if self.options.fit_contents else 
@@ -298,7 +298,7 @@ class LayerExport(inkex.Effect):
         source_file_name = os.path.splitext(os.path.basename(svg_file))[0]
         output_file = os.path.join(output_dir, prefix+source_file_name + '.svg')
         command = [
-            '/home/timo/Softs/bin/squashfs-root-RC1/AppRun',
+            'inkscape',
             svg_file.encode('utf-8'),
             '--batch-process',
             '--export-area-drawing' if self.options.fit_contents else
