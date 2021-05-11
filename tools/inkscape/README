@@ -6,7 +6,7 @@ Usage example:
 
 -Copy the two files (.inx and .py) in ~/.config/inkscape/extensions.
 
--NOTE: to avoid issues, make sure to setup your inkscape document width "Display units" in px, and with scale value 1.0 for x and y
+-NOTE: to avoid issues, make sure to setup your inkscape document width "Display units" in px, and with scale value 1.0 for x and y, and Viewbox X and Y values of 0 !!!
  (in "Document Properties", sections "General" and "Scale")
  
 -Create an SVG file with a base layer containing all the regions, and give a proper name to the layer,
@@ -25,5 +25,4 @@ Usage example:
 -The result files will be in ~/.config/inkscape/extensions/layers, unless you selected something in "Source file" in which case the layers folder will be next to this file.
 
 -Don't forget to also put your source file with all the layers in the MapSources folder of the activity to keep it as reference in case some editing is needed in the future.
- 
  
