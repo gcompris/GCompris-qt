@@ -14,127 +14,127 @@ QtObject {
     property string instruction: qsTr("Western Europe")
     property var levels: [
     {
-        "pixmapfile": "europe/europe.png",
+        "pixmapfile": "europe/europe.svg",
         "type": "SHAPE_BACKGROUND_IMAGE"
     },
     {
-        "pixmapfile": "europe/united_kingdom.png",
+        "pixmapfile": "europe/united_kingdom.svg",
         "soundFile": "voices-$CA/$LOCALE/geography/united_kingdom.$CA",
         "toolTipText": qsTr("United Kingdom"),
-        "x": "0.215",
-        "y": "0.439"
+        "x": "0.3055",
+        "y": "0.4317"
     },
     {
-        "pixmapfile": "europe/switz.png",
+        "pixmapfile": "europe/switzerland.svg",
         "soundFile": "voices-$CA/$LOCALE/geography/switz.$CA",
         "toolTipText": qsTr("Switzerland"),
-        "x": "0.409",
-        "y": "0.644"
+        "x": "0.4653",
+        "y": "0.6595"
     },
     {
-        "pixmapfile": "europe/sweden.png",
+        "pixmapfile": "europe/sweden.svg",
         "soundFile": "voices-$CA/$LOCALE/geography/sweden.$CA",
         "toolTipText": qsTr("Sweden"),
-        "x": "0.523",
-        "y": "0.247"
+        "x": "0.5974",
+        "y": "0.253"
     },
     {
-        "pixmapfile": "europe/spain.png",
+        "pixmapfile": "europe/spain.svg",
         "soundFile": "voices-$CA/$LOCALE/geography/spain.$CA",
         "toolTipText": qsTr("Spain"),
-        "x": "0.23",
-        "y": "0.835"
+        "x": "0.3159",
+        "y": "0.842"
     },
     {
-        "pixmapfile": "europe/portugal.png",
+        "pixmapfile": "europe/portugal.svg",
         "soundFile": "voices-$CA/$LOCALE/geography/portugal.$CA",
         "toolTipText": qsTr("Portugal"),
-        "x": "0.134",
-        "y": "0.844"
+        "x": "0.2404",
+        "y": "0.8505"
     },
     {
-        "pixmapfile": "europe/norway.png",
+        "pixmapfile": "europe/norway.svg",
         "soundFile": "voices-$CA/$LOCALE/geography/norway.$CA",
         "toolTipText": qsTr("Norway"),
-        "x": "0.516",
-        "y": "0.188"
+        "x": "0.6006",
+        "y": "0.1899"
     },
     {
-        "pixmapfile": "europe/netherland.png",
+        "pixmapfile": "europe/netherlands.svg",
         "soundFile": "voices-$CA/$LOCALE/geography/netherland.$CA",
         "toolTipText": qsTr("The Netherlands"),
-        "x": "0.353",
-        "y": "0.502"
+        "x": "0.4241",
+        "y": "0.5172"
     },
     {
-        "pixmapfile": "europe/luxembourg.png",
+        "pixmapfile": "europe/luxembourg.svg",
         "soundFile": "voices-$CA/$LOCALE/geography/luxembourg.$CA",
         "type": "SHAPE_BACKGROUND",
-        "x": "0.369",
-        "y": "0.568"
+        "x": "0.4358",
+        "y": "0.5802"
     },
     {
-        "pixmapfile": "europe/italy.png",
+        "pixmapfile": "europe/italy.svg",
         "soundFile": "voices-$CA/$LOCALE/geography/italy.$CA",
         "toolTipText": qsTr("Italy"),
-        "x": "0.485",
-        "y": "0.78"
+        "x": "0.5261",
+        "y": "0.7894"
     },
     {
-        "pixmapfile": "europe/ireland.png",
+        "pixmapfile": "europe/ireland.svg",
         "soundFile": "voices-$CA/$LOCALE/geography/ireland.$CA",
         "toolTipText": qsTr("Ireland"),
-        "x": "0.14",
-        "y": "0.47"
+        "x": "0.2354",
+        "y": "0.4847"
     },
     {
-        "pixmapfile": "europe/iceland.png",
+        "pixmapfile": "europe/iceland.svg",
         "soundFile": "voices-$CA/$LOCALE/geography/iceland.$CA",
         "toolTipText": qsTr("Iceland"),
-        "x": "0.078",
-        "y": "0.133"
+        "x": "0.0841",
+        "y": "0.1797"
     },
     {
-        "pixmapfile": "europe/germany.png",
+        "pixmapfile": "europe/germany.svg",
         "soundFile": "voices-$CA/$LOCALE/geography/germany.$CA",
         "toolTipText": qsTr("Germany"),
-        "x": "0.439",
-        "y": "0.53"
+        "x": "0.4964",
+        "y": "0.5442"
     },
     {
-        "pixmapfile": "europe/france.png",
+        "pixmapfile": "europe/france.svg",
         "soundFile": "voices-$CA/$LOCALE/geography/france.$CA",
         "toolTipText": qsTr("France"),
-        "x": "0.312",
-        "y": "0.662"
+        "x": "0.3838",
+        "y": "0.6743"
     },
     {
-        "pixmapfile": "europe/finland.png",
+        "pixmapfile": "europe/finland.svg",
         "soundFile": "voices-$CA/$LOCALE/geography/finland.$CA",
         "toolTipText": qsTr("Finland"),
-        "x": "0.642",
-        "y": "0.17"
+        "x": "0.7154",
+        "y": "0.1804"
     },
     {
-        "pixmapfile": "europe/denmark.png",
+        "pixmapfile": "europe/denmark.svg",
         "soundFile": "voices-$CA/$LOCALE/geography/denmark.$CA",
         "toolTipText": qsTr("Denmark"),
-        "x": "0.43",
-        "y": "0.398"
+        "x": "0.5131",
+        "y": "0.4117"
     },
     {
-        "pixmapfile": "europe/belgium.png",
+        "pixmapfile": "europe/belgium.svg",
         "soundFile": "voices-$CA/$LOCALE/geography/belgium.$CA",
         "toolTipText": qsTr("Belgium"),
-        "x": "0.343",
-        "y": "0.546"
+        "x": "0.4125",
+        "y": "0.5618"
     },
     {
-        "pixmapfile": "europe/austria.png",
+        "pixmapfile": "europe/austria.svg",
         "soundFile": "voices-$CA/$LOCALE/geography/austria.$CA",
         "toolTipText": qsTr("Austria"),
-        "x": "0.49",
-        "y": "0.621"
+        "x": "0.537",
+        "y": "0.6358"
     }
     ]
 }
