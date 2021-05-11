@@ -9,16 +9,21 @@ Usage example:
 -NOTE: to avoid issues, make sure to setup your inkscape document width "Display units" in px, and with scale value 1.0 for x and y
  (in "Document Properties", sections "General" and "Scale")
  
--Create an SVG file with a base shape, like a country, on the first layer, and give a proper name to the layer,
- like the country's name.
--Make the base shape fill color white, and the outline color dark blue or black, with a 1px width.
--Create a new layer, and using the fill tool create a shape for a region. Name this layer with the region's name.
+-Create an SVG file with a base layer containing all the regions, and give a proper name to the layer,
+ like the country's name; also add [back] at the beginning of the layer's name, to get it exported at document's size unlike the other layers that need to be exported at content's boundaries.
+ 
+-Make the shapes fill color white, and outlines color dark grey (505050ff in inkscape), with a 0.5px width.
+
+-Create a new layer for one region, name it with the region's name. Copy the shape of it from the base layer and paste it on this layer.
+
 -Repeat the previous line as needed to complete all the regions. Make each region with a different fill color,
- and the outline color darker with a 0.5px width.
+ and the outline color dark grey (505050ff) and 0.5px width.
 
 -When all is ready and saved, go in the menu "Extensions" - "Export" - "Export layers GCompris..."
 -Leave all the default settings (all the checkboxes unchecked, "Fit document size to layer content" selected and "SVG" selected) and click on Apply.
 
 -The result files will be in ~/.config/inkscape/extensions/layers, unless you selected something in "Source file" in which case the layers folder will be next to this file.
+
+-Don't forget to also put your source file with all the layers in the MapSources folder of the activity to keep it as reference in case some editing is needed in the future.
  
  

@@ -9,7 +9,8 @@
     <param name="help" type="description">  Export layers in different files, and a text file with normalized coordinates   </param>
     <param name="help" type="description">  of the center of each layer's content (one group per layer).</param>
     <param name="help" type="description">  </param>
-    <param name="help" type="description">  Layers with a name starting with "[fixed]"  or "[f]" are always exported.   </param>
+    <param name="help" type="description">  Layers with a name starting with "[fixed]" or "[f]" are always exported.   </param>
+    <param name="help" type="description">  Layers with a name starting with "[back]" are always exported at document boundaries size.   </param>
     <param name="help" type="description">  All other layers are progressively exported in their respective order.   </param>
     <param name="help" type="description">  </param>
     <param name="help" type="description">  Output filename is of the form: </param>
@@ -39,7 +40,7 @@
 
     <param name="help" type="description">     </param>
     <param name="file-type" type="optiongroup"  _gui-text="Output file type">
-        <option value="svg">SVG</option>
+        <option value="svg" selected="selected">SVG</option>
         <option value="png">PNG</option>
     </param>
 
@@ -53,6 +54,6 @@
     </effect>
 
     <script>
-        <command location="inx" interpreter="python">export_layers.py</command>
+        <command location="inx" interpreter="python">export_layers_gcompris.py</command>
     </script>
 </inkscape-extension>

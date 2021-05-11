@@ -1,4 +1,5 @@
 #! /usr/bin/env python
+
 #
 # GCompris - export_layers_gcompris.py
 #
@@ -6,7 +7,7 @@
 #
 #   SPDX-License-Identifier: GPL-3.0-or-later
 #
-# A Inkscape extension to export svg maps with center coordinates in a text file,
+# An Inkscape extension to export svg maps with center coordinates in a text file,
 # to generate content for puzzle/maps activities
 # based on https://github.com/dja001/inkscape-export-layers
 
@@ -27,6 +28,9 @@ Export = collections.namedtuple('Export', ['visible_layers', 'file_name'])
 
 FIXED  = '[fixed]'
 F      = '[f]'
+EXPORT = ''
+E      = '[e]'
+BACK   = '[back]'
 
 SVG = 'svg'
 PNG = 'png'
@@ -74,13 +78,13 @@ class LayerExport(inkex.Effect):
                                      action='store',
                                      type=str,
                                      dest='enumerate',
-                                     default=False,
+                                     default=None,
                                      help="suffix of files exported")
         self.arg_parser.add_argument('--show-layers-below',
                                      action='store',
                                      type=str,
                                      dest='show_layers_below',
-                                     default=False,
+                                     default=None,
                                      help="Show exported layers below the current layer")
 
     def effect(self):
@@ -114,6 +118,7 @@ class LayerExport(inkex.Effect):
             os.makedirs(output_dir)
 
         layer_list = self.get_layer_list()
+        export_background = self.get_export_background(layer_list, self.options.show_layers_below)
         export_list = self.get_export_list(layer_list, self.options.show_layers_below)
 
         #get document infos
@@ -125,11 +130,27 @@ class LayerExport(inkex.Effect):
         DOCNAME = self.svg.get("sodipodi:docname")
 
         with _make_temp_directory() as tmp_dir:
+            for export in export_background:
+                svg_file = self.export_to_svg(export, tmp_dir)
+                isNotBackground = False
+
+                if self.options.file_type == PNG:
+                    if not self.convert_svg_to_png(svg_file, output_dir, prefix, isNotBackground):
+                        break
+                elif self.options.file_type == SVG:
+                    if not self.convert_svg_to_svg(svg_file, output_dir, prefix, isNotBackground):
+                        break
+
+        with _make_temp_directory() as tmp_dir:
             for export in export_list:
                 svg_file = self.export_to_svg(export, tmp_dir)
+                isNotBackground = True
 
-                if self.options.file_type == SVG:
-                    if not self.convert_svg_to_svg(svg_file, output_dir, prefix):
+                if self.options.file_type == PNG:
+                    if not self.convert_svg_to_png(svg_file, output_dir, prefix, isNotBackground):
+                        break
+                elif self.options.file_type == SVG:
+                    if not self.convert_svg_to_svg(svg_file, output_dir, prefix, isNotBackground):
                         break
 
         coords_text_file = os.path.join(output_dir, DOCNAME + '.txt')
@@ -137,10 +158,8 @@ class LayerExport(inkex.Effect):
             print("{}".format(coordinates_string), file=text_file)
 
     def get_layer_list(self):
-        """make a list od layers in source svg file
-            
-            Elements of the list are  of the form (id, label (layer name), tag ('[fixed]' or none)
-                                                        
+        """make a list of layers in source svg file
+            Elements of the list are  of the form (id, label (layer name), tag ('[fixed]' or '[back]' or '[export]')
         """
         svg_layers = self.document.xpath('//svg:g[@inkscape:groupmode="layer"]',
                                          namespaces=inkex.NSS)
@@ -160,8 +179,14 @@ class LayerExport(inkex.Effect):
             elif layer_label.lower().startswith(F):
                 layer_type = FIXED
                 layer_label = layer_label[len(F):].lstrip()
-            else:
+            elif layer_label.lower().startswith(BACK):
+                layer_type = BACK
+                layer_label = layer_label[len(BACK):].lstrip()
+            elif layer_label.lower().startswith(EXPORT):
                 layer_type = EXPORT
+                layer_label = layer_label[len(EXPORT):].lstrip()
+            else:
+                continue
 
             layer_list.append(Layer(layer_id, layer_label, layer_type))
 
@@ -207,6 +232,49 @@ class LayerExport(inkex.Effect):
                 export_list.append(Export(visible_layers, layer_name))
             else:
                 #layers not marked as FIXED of EXPORT are ignored
+                pass
+
+        return export_list
+
+    def get_export_background(self, layer_list, show_layers_below):
+        """selection of files with [back] tag,
+            to always render at document boundaries size
+        """
+        export_list = []
+
+        for counter, layer in enumerate(layer_list):
+            #each layer marked as '[export]' is the basis for making a figure that will be exported
+
+            if layer.tag == FIXED:
+                #Fixed layers are not the basis of exported figures
+                continue
+            elif layer.tag == BACK:
+
+                #determine which other layers should appear in this figure
+                visible_layers = set()
+                layer_is_below = True
+                for other_layer in layer_list:
+                    if other_layer.tag == FIXED:
+                        #fixed layers appear in all figures
+                        #irrespective of their position relative to other layers
+                        visible_layers.add(other_layer.id)
+                    else:
+                        if other_layer.id == layer.id:
+                            #the basis layer for this figure is always visible
+                            visible_layers.add(other_layer.id)
+                            #all subsequent layers will be above
+                            layer_is_below = False
+
+                        elif layer_is_below and show_layers_below:
+                            visible_layers.add(other_layer.id)
+
+                layer_name = layer.label
+                if self.options.enumerate:
+                    layer_name = '{:03d}_{}'.format(counter + 1, layer_name)
+
+                export_list.append(Export(visible_layers, layer_name))
+            else:
+                #layers not marked as FIXED of BACK are ignored
                 pass
 
         return export_list
@@ -263,7 +331,7 @@ class LayerExport(inkex.Effect):
 
         return output_file
 
-    def convert_svg_to_png(self, svg_file, output_dir, prefix):
+    def convert_svg_to_png(self, svg_file, output_dir, prefix, isNotBackground):
         """
         Convert an SVG file into a PNG file.
         :param str svg_file: Path an input SVG file.
@@ -276,7 +344,7 @@ class LayerExport(inkex.Effect):
             'inkscape',
             svg_file.encode('utf-8'),
             '--batch-process',
-            '--export-area-drawing' if self.options.fit_contents else 
+            '--export-area-drawing' if self.options.fit_contents and isNotBackground else
             '--export-area-page',
             '--export-dpi', str(self.options.dpi),
             '--export-type', 'png',
@@ -288,7 +356,7 @@ class LayerExport(inkex.Effect):
 
         return output_file
 
-    def convert_svg_to_svg(self, svg_file, output_dir, prefix):
+    def convert_svg_to_svg(self, svg_file, output_dir, prefix, isNotBackground):
         """
         Convert an [Inkscape] SVG file into a standard (plain) SVG file.
         :param str svg_file: Path an input SVG file.
@@ -301,7 +369,7 @@ class LayerExport(inkex.Effect):
             'inkscape',
             svg_file.encode('utf-8'),
             '--batch-process',
-            '--export-area-drawing' if self.options.fit_contents else
+            '--export-area-drawing' if self.options.fit_contents and isNotBackground else
             '--export-area-page',
             '--export-dpi', str(self.options.dpi),
             '--export-plain-svg',
