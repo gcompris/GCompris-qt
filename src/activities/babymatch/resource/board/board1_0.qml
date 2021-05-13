@@ -11,7 +11,7 @@
 import QtQuick 2.6
 
 QtObject {
-   property string instruction: qsTr("Drag and Drop the items to match them.")
+   property string instruction: qsTr("Drag and drop the items to match them.")
    property var levels : [
       {
           "pixmapfile" : "images/lamp.svg",

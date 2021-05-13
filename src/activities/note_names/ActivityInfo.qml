@@ -15,7 +15,7 @@ ActivityInfo {
   icon: "note_names/note_names.svg"
   author: "Aman Kumar Gupta &lt;gupta2140@gmail.com&gt;"
   //: Activity title
-  title: qsTr("Name that Note")
+  title: qsTr("Name that note")
   //: Help title
   description: qsTr("Learn the names of the notes, in bass and treble clef.")
   //intro: "Identify the note and press the correct piano key"

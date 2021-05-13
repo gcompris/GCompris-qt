@@ -12,7 +12,7 @@ ActivityInfo {
     icon: "numbers-odd-even/numbers-odd-even.svg"
     author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
     //: Activity title
-    title: qsTr("Even and Odd Numbers")
+    title: qsTr("Even and odd numbers")
     //: Help title
     description: qsTr("Move the helicopter to catch the clouds having even or odd numbers.")
 //  intro: "Move the helicopter to catch the clouds having even or odd numbers, in the shown order."

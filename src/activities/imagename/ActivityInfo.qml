@@ -15,7 +15,7 @@ ActivityInfo {
   icon: "imagename/imagename.svg"
   author: "Pulkit Gupta &lt;pulkitgenius@gmail.com&gt;"
   //: Activity title
-  title: qsTr("Image Name")
+  title: qsTr("Name the image")
   //: Help title
   description: qsTr("Drag and Drop each item above its name.")
 //  intro: "Drag and drop each item above its name."

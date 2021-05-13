@@ -12,7 +12,7 @@ ActivityInfo {
   icon: "braille_fun/braille_fun.svg"
   author: "Arkit Vora &lt;arkitvora123@gmail.com&gt;"
   //: Activity title
-  title: qsTr("Braille Fun")
+  title: qsTr("Braille fun")
   //: Help title
   description: qsTr("Practice braille letters.")
   //intro: "Create the Braille cell for the letter."

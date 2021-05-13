@@ -12,7 +12,7 @@ ActivityInfo {
     icon: "drawnumbers/drawnumbers.svg"
     author: "Nitish Chauhan &lt;nitish.nc18@gmail.com&gt;"
     //: Activity title
-    title: qsTr("Draw Numbers")
+    title: qsTr("Draw numbers")
     //: Help title
     description: qsTr("Connect the dots to draw numbers from 0 to 9.")
     // intro: "Draw the numbers by connecting the dots in the correct order."

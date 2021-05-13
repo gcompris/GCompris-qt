@@ -12,7 +12,7 @@ ActivityInfo {
   icon: "photo_hunter/photo_hunter.svg"
   author: "Stefan Toncu &lt;stefan.toncu29@gmail.com&gt;"
   //: Activity title
-  title: qsTr("Photo Hunter")
+  title: qsTr("Photo hunter")
   //: Help title
   description: qsTr("Find the differences between the two pictures.")
   //intro: "look at the two pictures carefully and click where you see a difference"

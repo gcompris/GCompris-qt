@@ -12,7 +12,7 @@ ActivityInfo {
     icon: "planegame/planegame.svg"
     author: "Johnny Jazeix &lt;jazeix@gmail.com&gt;"
     //: Activity title
-    title: qsTr("Numbers in Order")
+    title: qsTr("Numbers in order")
     //: Help title
     description: qsTr("Move the helicopter to catch the clouds in the correct order.")
 //  intro: "Move the helicopter with the arrow keys and catch the numbers in the clouds, in ascending order."

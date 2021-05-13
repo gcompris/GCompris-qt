@@ -12,7 +12,7 @@ ActivityInfo {
   icon: "superbrain/superbrain.svg"
   author: "Holger Kaelberer &lt;holger.k@elberer.de&gt;"
   //: Activity title
-  title: qsTr("Super Brain")
+  title: qsTr("Super brain")
   //: Help title
   description: qsTr("Tux has hidden several items. Find them in the correct order.")
   //intro: "Find out the right combination of colors. A dot framed in a black square means that you found the correct colour in the correct position, while a dot framed in a white square means it's the correct colour, but in the wrong position."

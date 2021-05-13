@@ -12,9 +12,9 @@ ActivityInfo {
   icon: "mazerelative/mazerelative.svg"
   author: "Stephane Mankowski &lt;stephane@mankowski.fr&gt;"
   //: Activity title
-  title: qsTr("Relative Maze")
+  title: qsTr("Relative maze")
   //: Help title
-  description: qsTr("Help Tux get out of this maze (Moves are relative).")
+  description: qsTr("Help Tux get out of this maze (moves are relative).")
 //  intro: "Help Tux find his way out. Left and right are used to turn and up to go forward."
   //: Help goal
   goal: ""

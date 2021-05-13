@@ -12,7 +12,7 @@ ActivityInfo {
   icon: "land_safe/land_safe.svg"
   author: "Matilda Bernard &lt;serah4291@gmail.com&gt; (Gtk+), Holger Kaelberer &lt;holger.k@elberer.de&gt; (Qt Quick)"
   //: Activity title
-  title: qsTr("Land Safe")
+  title: qsTr("Land safe")
   //: Help title
   description: qsTr("Pilot the spaceship towards the green landing area.")
   // intro: "Use the arrow keys to pilot your spaceship safely onto the landing pad."

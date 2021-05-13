@@ -15,7 +15,7 @@ ActivityInfo {
   icon: "balancebox/balancebox.svg"
   author: "Holger Kaelberer &lt;holger.k@elberer.de&gt;"
   //: Activity title
-  title: qsTr("Balance Box")
+  title: qsTr("Balance box")
   //: Help title
   description: qsTr("Navigate the ball to the door by tilting the box.")
 //  intro: "Tilt the box to navigate the ball to the door."

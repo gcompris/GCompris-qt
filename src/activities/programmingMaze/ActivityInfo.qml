@@ -13,7 +13,7 @@ ActivityInfo {
   icon: "programmingMaze/programmingMaze.svg"
   author: "Aman Kumar Gupta &lt;gupta2140@gmail.com&gt;"
   //: Activity title
-  title: qsTr("Programming Maze")
+  title: qsTr("Programming maze")
   //: Help title
   description: qsTr("This activity teaches to program Tux to reach its goal using simple instructions like move forward, turn left or right.")
   // intro: "Arrange the instructions and traverse the correct path to reach the fish."

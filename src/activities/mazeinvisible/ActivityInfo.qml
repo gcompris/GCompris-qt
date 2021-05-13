@@ -12,7 +12,7 @@ ActivityInfo {
   icon: "mazeinvisible/mazeinvisible.svg"
   author: "Stephane Mankowski &lt;stephane@mankowski.fr&gt;"
   //: Activity title
-  title: qsTr("Invisible Maze")
+  title: qsTr("Invisible maze")
   //: Help title
   description: qsTr("Guide Tux out of the invisible maze.")
 //  intro: "Use the arrow keys or swipe the touch screen to guide Tux out. Use the maze icon or the space key to see the map."

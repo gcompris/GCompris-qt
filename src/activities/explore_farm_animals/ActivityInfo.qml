@@ -12,7 +12,7 @@ ActivityInfo {
   icon: "explore_farm_animals/explore_farm_animals.svg"
   author: "Djalil Mesli &lt;djalilmesli@gmail.com&gt;"
   //: Activity title
-  title: qsTr("Explore Farm Animals")
+  title: qsTr("Explore farm animals")
   //: Help title
   description: qsTr("Learn about farm animals, what sounds they make, and interesting facts.")
   // intro: "Learn about farmyard animals and the noises that they make."

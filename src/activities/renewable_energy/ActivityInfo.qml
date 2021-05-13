@@ -12,7 +12,7 @@ ActivityInfo {
     icon: "renewable_energy/renewable_energy.svg"
     author: "Sagar Chand Agarwal &lt;atomsagar@gmail.com&gt;"
     //: Activity title
-    title: qsTr("Renewable Energy")
+    title: qsTr("Renewable energy")
     //: Help title
     description: qsTr("Tux has come back from fishing on his boat. Bring the electrical system back up so he can have light in his home.")
     //intro: "Click on the different stages that go to make up the power supply."

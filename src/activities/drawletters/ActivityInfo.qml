@@ -12,7 +12,7 @@ ActivityInfo {
     icon: "drawletters/drawletters.svg"
     author: "Nitish Chauhan &lt;nitish.nc18@gmail.com&gt;"
     //: Activity title
-    title: qsTr("Draw Letters")
+    title: qsTr("Draw letters")
     //: Help title
     description: qsTr("Connect the dots to draw the letters.")
     //  intro: "Click on the selected points and draw the letter"

@@ -12,7 +12,7 @@ ActivityInfo {
   icon: "lightsoff/lightsoff.svg"
   author: "Stephane Mankowski &lt;stephane@mankowski.fr&gt;"
   //: Activity title
-  title: qsTr("Lights Off")
+  title: qsTr("Lights off")
   //: Help title
   description: qsTr("The goal is to turn off all the lights.")
 //  intro: "Click on the lamps to turn them off."

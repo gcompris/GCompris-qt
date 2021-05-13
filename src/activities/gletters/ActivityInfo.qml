@@ -12,7 +12,7 @@ ActivityInfo {
   icon: "gletters/gletters.svg"
   author: "Holger Kaelberer &lt;holger.k@elberer.de&gt;"
   //: Activity title
-  title: qsTr("Simple Letters")
+  title: qsTr("Simple letters")
   //: Help title
   description: qsTr("Type the falling letters before they reach the ground.")
 //  intro: "Type the letters on your keyboard before they reach the ground."

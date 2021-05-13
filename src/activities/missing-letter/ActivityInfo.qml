@@ -13,7 +13,7 @@ ActivityInfo
   icon: "missing-letter/missing-letter.svg"
   author: "Amit Tomar &lt;a.tomar@outlook.com&gt;"
   //: Activity title
-  title: qsTr("Missing Letter")
+  title: qsTr("Missing letter")
   //: Help title
   description: qsTr("Find the missing letter to complete the word.")
 //  intro: "Find the missing letter and complete the word by clicking on one of the letters proposed on the side."

@@ -12,9 +12,9 @@ ActivityInfo {
   icon: "explore_monuments/explore_monuments.svg"
   author: "Ayush Agrawal &lt;ayushagrawal288@gmail.com&gt;"
   //: Activity title
-  title: qsTr("Explore Monuments")
+  title: qsTr("Explore monuments")
   //: Help title
-  description: qsTr("Explore Monuments around the world.")
+  description: qsTr("Explore monuments around the world.")
   //intro: "Explore Monuments around the world."
   //: Help goal
   goal: qsTr("Learn about various monuments from around the world and remember their location.")

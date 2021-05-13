@@ -13,7 +13,7 @@ ActivityInfo {
   icon: "gnumch-inequality/gnumch-inequality.svg"
   author: "Manuel Tondeur &lt;manueltondeur@gmail.com&gt;"
   //: Activity title
-  title: qsTr("Gnumch Inequality")
+  title: qsTr("Gnumch inequality")
   //: Help title
   description: qsTr("Guide the Number Muncher to all the expressions that do not equal the number at the bottom of the screen.")
 //  intro: "Guide the number eater with the arrow keys to the numbers that are different from the ones displayed and press the space bar to swallow them."

@@ -15,9 +15,9 @@ ActivityInfo {
   icon: "babymatch/babymatch.svg"
   author: "Pulkit Gupta &lt;pulkitgenius@gmail.com&gt;"
   //: Activity title
-  title: qsTr("Matching Items")
+  title: qsTr("Matching items")
   //: Help title
-  description: qsTr("Drag and Drop the items to match them.")
+  description: qsTr("Drag and drop the items to match them.")
 //  intro: "Drag and drop the objects matching the pictures"
   //: Help goal
   goal: qsTr("Motor coordination. Conceptual matching.")

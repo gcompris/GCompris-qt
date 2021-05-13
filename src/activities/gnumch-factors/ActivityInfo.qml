@@ -12,7 +12,7 @@ ActivityInfo {
   icon: "gnumch-factors/gnumch-factors.svg"
   author: "Manuel Tondeur &lt;manueltondeur@gmail.com&gt;"
   //: Activity title
-  title: qsTr("Gnumch Factors")
+  title: qsTr("Gnumch factors")
   //: Help title
   description: qsTr("Guide the Number Muncher to all the factors of the number at the bottom of the screen.")
 //  intro: "Guide the number eater with the arrow keys to the factors of the displayed number and press space to swallow them."

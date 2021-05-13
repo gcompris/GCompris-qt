@@ -16,7 +16,7 @@ ActivityInfo {
   icon: "explore_world_animals/explore_world_animals.svg"
   author: "Johnny Jazeix &lt;jazeix@gmail.com&gt;"
   //: Activity title
-  title: qsTr("Explore World Animals")
+  title: qsTr("Explore world animals")
   //: Help title
   description: qsTr("Learn about world animals, interesting facts and their location on a map.")
   // intro: "Learn about world animals and locate them on a map."

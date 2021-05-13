@@ -12,7 +12,7 @@ ActivityInfo {
   icon: "analog_electricity/analog_electricity.svg"
   author: "Aiswarya Kaitheri Kandoth &lt;aiswaryakk29@gmail.com&gt;"
   //: Activity title
-  title: qsTr("Analog Electricity")
+  title: qsTr("Analog electricity")
   //: Help title
   description: qsTr("Create and simulate an analog electric schema.")
   //intro: "Learn how analog electricity works and create your own circuit."

@@ -12,7 +12,7 @@ ActivityInfo {
   icon: "smallnumbers2/smallnumbers2.svg"
   author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
   //: Activity title
-  title: qsTr("Numbers with Dominoes")
+  title: qsTr("Numbers with dominoes")
   //: Help title
   description: qsTr("Count the number on the domino before it reaches the ground.")
 //  intro: "Count the numbers on the dominoes then type the result on your keyboard."

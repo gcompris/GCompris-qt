@@ -12,7 +12,7 @@ ActivityInfo {
   icon: "baby_tangram/baby_tangram.svg"
   author: "Johnny Jazeix &lt;jazeix@gmail.com&gt;"
   //: Activity title
-  title: qsTr("Baby Puzzle")
+  title: qsTr("Baby puzzle")
   //: Help title
   description: qsTr("The objective is to assemble the baby puzzle.")
   // intro: "Move each puzzle piece, to obtain the completed puzzle. You can change their orientation by clicking on the arrows."

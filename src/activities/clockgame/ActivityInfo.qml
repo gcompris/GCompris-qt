@@ -12,7 +12,7 @@ ActivityInfo {
   icon: "clockgame/clockgame.svg"
   author: "Stephane Mankowski &lt;stephane@mankowski.fr&gt;"
   //: Activity title
-  title: qsTr("Learning Clock")
+  title: qsTr("Learning clock")
   //: Help title
   description: qsTr("Learn how to tell the time on an analog clock.")
 //  intro: "Drag and drop the needles of the clock to display the required time"

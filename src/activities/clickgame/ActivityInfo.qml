@@ -12,7 +12,7 @@ ActivityInfo {
   icon: "clickgame/clickgame.svg"
   author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
   //: Activity title
-  title: qsTr("Click On Me")
+  title: qsTr("Click on me")
   //: Help title
   description: qsTr("Catch all the swimming fish before they leave the fish tank.")
 //  intro: "Catch the fish before they leave the aquarium."

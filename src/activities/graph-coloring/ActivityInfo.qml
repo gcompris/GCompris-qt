@@ -12,7 +12,7 @@ ActivityInfo {
   icon: "graph-coloring/graph-coloring.svg"
   author: "Akshat Tandon &lt;akshat.tandon@research.iiit.ac.in&gt;"
   //: Activity title
-  title: qsTr("Graph Coloring")
+  title: qsTr("Graph coloring")
   //: Help title
   description: qsTr("Color the graph so that no two adjacent nodes have the same color.")
   //intro: "Color the graph so that no two adjacent nodes have the same color."

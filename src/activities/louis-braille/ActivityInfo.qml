@@ -12,7 +12,7 @@ ActivityInfo {
   icon: "louis-braille/louis-braille.svg"
   author: "Arkit Vora &lt;arkitvora123@gmail.com&gt;"
   //: Activity title
-  title: qsTr("The History of Louis Braille")
+  title: qsTr("The history of Louis Braille")
   //: Help title
   description: qsTr("Review the major dates of the inventor of the braille system.")
   //intro: "Discover the history of Louis Braille."

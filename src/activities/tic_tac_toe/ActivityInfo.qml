@@ -15,7 +15,7 @@ ActivityInfo {
   icon: "tic_tac_toe/tic_tac_toe.svg"
   author: "Pulkit Gupta &lt;pulkitgenius@gmail.com&gt;"
   //: Activity title
-  title: qsTr("Tic Tac Toe (against Tux)")
+  title: qsTr("Tic tac toe (against Tux)")
   //: Help title
   description: qsTr("Place three marks in a row.")
 //  intro: "Click on the square which you wish to mark and try to mark 3 consecutive squares before Tux."

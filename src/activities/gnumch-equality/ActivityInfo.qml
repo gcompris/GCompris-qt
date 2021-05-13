@@ -12,7 +12,7 @@ ActivityInfo {
   icon: "gnumch-equality/gnumch-equality.svg"
   author: "Manuel Tondeur &lt;manueltondeur@gmail.com&gt;"
   //: Activity title
-  title: qsTr("Gnumch Equality")
+  title: qsTr("Gnumch equality")
   //: Help title
   description: qsTr("Guide the Number Muncher to the expressions that equal the number at the bottom of the screen.")
 //  intro: "Guide the number eater with the arrow keys to the required numbers and press the space bar to swallow them."

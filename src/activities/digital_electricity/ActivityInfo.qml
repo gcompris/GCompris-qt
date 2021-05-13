@@ -12,7 +12,7 @@ ActivityInfo {
   icon: "digital_electricity/digital_electricity.svg"
   author: "Pulkit Gupta &lt;pulkitnsit@gmail.com&gt;"
   //: Activity title
-  title: qsTr("Digital Electricity")
+  title: qsTr("Digital electricity")
   //: Help title
   description: qsTr("Create and simulate a digital electric schema.")
   //intro: "Learn how digital electronics work and create your own circuit."

@@ -15,7 +15,7 @@ ActivityInfo {
   icon: "solar_system/solar_system.svg"
   author: "Aman Kumar Gupta &lt;gupta2140@gmail.com&gt;"
   //: Activity title
-  title: qsTr("Solar System")
+  title: qsTr("Solar system")
   //: Help title
   description: qsTr("Answer the questions with a correctness of 100%.")
   //intro: "Answer the questions presented and get a 100% correctness among the options."

@@ -12,7 +12,7 @@ ActivityInfo {
   icon: "gnumch-primes/gnumch-primes.svg"
   author: "Manuel Tondeur &lt;manueltondeur@gmail.com&gt;"
   //: Activity title
-  title: qsTr("Gnumch Primes")
+  title: qsTr("Gnumch primes")
   //: Help title
   description: qsTr("Guide the Number Muncher to all the prime numbers.")
 //  intro: "Guide the number eater with the arrow keys to the prime numbers and press space to swallow them."

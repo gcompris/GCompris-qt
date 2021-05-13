@@ -12,7 +12,7 @@ ActivityInfo {
   icon: "submarine/submarine.svg"
   author: "Rudra Nil Basu &lt;rudra.nil.basu.1996@gmail.com&gt;"
   //: Activity title
-  title: qsTr("Pilot a Submarine")
+  title: qsTr("Pilot a submarine")
   //: Help title
   description: qsTr("Drive the submarine to the end point.")
   //intro: "Drive the submarine to the right end of the screen without colliding with any objects"

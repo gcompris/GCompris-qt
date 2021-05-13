@@ -12,7 +12,7 @@ ActivityInfo {
   icon: "wordsgame/wordsgame.svg"
   author: "Holger Kaelberer &lt;holger.k@elberer.de&gt;"
   //: Activity title
-  title: qsTr("Falling Words")
+  title: qsTr("Falling words")
   //: Help title
   description: qsTr("Type the falling words before they reach the ground.")
 //  intro: "Type the words on your keyboard before they reach the ground."

@@ -13,7 +13,7 @@ ActivityInfo {
   icon: "piano_composition/piano_composition.svg"
   author: "Aman Kumar Gupta &lt;gupta2140@gmail.com&gt;"
   //: Activity title
-  title: qsTr("Piano Composition")
+  title: qsTr("Piano composition")
   //: Help title
   description: qsTr("Learn how the piano keyboard works, and how notes are written on a musical staff.")
   //intro: "Learn to compose piano music using the octaves and the tools presented above the staff."

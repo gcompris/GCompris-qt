@@ -12,7 +12,7 @@ ActivityInfo {
   icon: "explore_world_music/explore_world_music.svg"
   author: "Johnny Jazeix &lt;jazeix@gmail.com&gt;"
   //: Activity title
-  title: qsTr("Explore World Music")
+  title: qsTr("Explore world music")
   //: Help title
   description: qsTr("Learn about the music of the world.")
   // intro: "Click on the suitcases to learn about music from around the world."

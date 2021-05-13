@@ -15,7 +15,7 @@ ActivityInfo {
   icon: "tic_tac_toe_2players/tic_tac_toe_2players.svg"
   author: "Pulkit Gupta &lt;pulkitgenius@gmail.com&gt;"
   //: Activity title
-  title: qsTr("Tic Tac Toe (with a friend)")
+  title: qsTr("Tic tac toe (with a friend)")
   //: Help title
   description: qsTr("Place three marks in a row.")
 //  intro: "Click on the square which you wish to mark and try to mark 3 consecutive squares before Tux."
