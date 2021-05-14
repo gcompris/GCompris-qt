@@ -207,9 +207,17 @@ function checkAnswer() {
     answerKeys = [];
 
     if(invalidCircuit){
-        items.bonus.bad('gnu', items.bonus.checkAnswer);
-        processingAnswer = false;
-        return;
+        if(currentLevel === 2) {
+        //special case for level 2 to teach voltage source loop
+            items.bonus.good('gnu');
+            processingAnswer = false;
+            return;
+        } else {
+        //default case for all other levels
+            items.bonus.bad('gnu', items.bonus.checkAnswer);
+            processingAnswer = false;
+            return;
+        }
     }
 
     for(var i = 0; i < determiningComponents.length; ++i) {
@@ -218,7 +226,7 @@ function checkAnswer() {
     }
 
     for(var i in answerKeys) {
-        if(levelProperties.answerKey[i] === answerKeys[i] && processingAnswer && !invalidCircuit) {
+        if(levelProperties.answerKey[i] === answerKeys[i] && processingAnswer) {
             items.bonus.good('gnu');
         } else {
             items.bonus.bad('gnu', items.bonus.checkAnswer);

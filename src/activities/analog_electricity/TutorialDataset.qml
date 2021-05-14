@@ -107,6 +107,22 @@ QtObject {
         // level 2
         {
             inputComponentList: [],
+            playAreaComponentList: [battery, battery],
+            determiningComponentsIndex: [0, 1],
+            answerKey: [],
+            wires: [],
+            playAreaComponentPositionX: [0.3, 0.5],
+            playAreaComponentPositionY: [0.3, 0.3],
+            introMessage: [
+                qsTr("When connecting two terminals which are not supposed to be connected, it creates a short circuit (also called short) in the electrical circuit."),
+                qsTr("If both terminals of some batteries are directly connected together or they are shorted, then those batteries create a voltage source loop and they cannot act as a voltage source for the circuit."),
+                qsTr("For example, if two terminals of one battery are directly connected together, it creates a voltage source loop.") + ("<br/><br/>") + qsTr("Or, if two batteries are forming a closed circuit together, it creates a voltage source loop."),
+                qsTr("Create a voltage source loop with the provided batteries. Then click on the warning box to make it disappear and click on the OK button.")
+            ]
+        },
+        // level 3
+        {
+            inputComponentList: [],
             playAreaComponentList: [bulb, battery, battery],
             determiningComponentsIndex: [0, 1, 2],
             answerKey: ["bulbBroken", "batteryIn", "batteryIn"],
@@ -115,11 +131,11 @@ QtObject {
             playAreaComponentPositionY: [0.3, 0.55, 0.1],
             introMessage: [
                 qsTr("Too much current in an electrical circuit can damage the connected devices."),
-                qsTr("To repair a broken bulb in this activity, click on it after disconnecting from the circuit. Don't forget to disable the delete button after removing the connected wires."),
+                qsTr("To repair a broken bulb in this activity, click on it after disconnecting it from the circuit. Don't forget to disable the delete button after removing the connected wires."),
                 qsTr("Break the bulb by connecting it with the two batteries.")
             ]
         },
-        // level 3
+        // level 4
         {
             inputComponentList: [battery],
             playAreaComponentList: [switch1, bulb],
@@ -134,7 +150,7 @@ QtObject {
                 qsTr("Create a circuit using the provided components so that the bulb glows only when the switch is on.")
             ]
         },
-        // level 4
+        // level 5
         {
             inputComponentList: [connection],
             playAreaComponentList: [switch1, bulb, bulb, battery],
@@ -148,7 +164,7 @@ QtObject {
                 qsTr("Create a circuit so that one bulb should be always lit and the other should be lit only when the switch is on.")
             ]
         },
-        // level 5
+        // level 6
         {
             inputComponentList: [battery, switch1, connection],
             playAreaComponentList: [bulb],
@@ -165,7 +181,7 @@ QtObject {
                 qsTr("Light the bulb and observe the displayed values.")
             ]
         },
-        // level 6
+        // level 7
         {
             inputComponentList: [connection],
             playAreaComponentList: [bulb, resistor, battery],
@@ -180,7 +196,7 @@ QtObject {
                 qsTr("Light the bulb so that the bulb glows with 5V using the provided components.")
             ]
         },
-        // level 7
+        // level 8
         {
             inputComponentList: [],
             playAreaComponentList: [rheostat, bulb, battery],
@@ -195,7 +211,7 @@ QtObject {
                 qsTr("Connect the bulb to the appropriate terminals of the rheostat so that the light intensity of the bulb can be changed while dragging the slider.")
             ]
         },
-        // level 8
+        // level 9
         {
             inputComponentList: [connection],
             playAreaComponentList: [rheostat, bulb, battery],
@@ -209,7 +225,7 @@ QtObject {
                 qsTr("Connect the bulb to the appropriate terminals of the rheostat so that the slider cannot change the light intensity of the bulb.")
             ]
         },
-        // level 9
+        // level 10
         {
             inputComponentList: [connection],
             playAreaComponentList: [rheostat, bulb, battery],
@@ -222,7 +238,7 @@ QtObject {
                 qsTr("Connect the bulb to the appropriate terminals of the rheostat and set the slider so that the voltage drop in the bulb should be 10V. Note that the bulb intensity should vary while dragging the slider.")
             ]
         },
-        // level 10
+        // level 11
         {
             inputComponentList: [connection],
             playAreaComponentList: [redLed, battery],
@@ -238,7 +254,7 @@ QtObject {
                 qsTr("Connect the provided red LED to the battery in forward bias. Don't worry about the broken LED for now.")
             ]
         },
-        // level 11
+        // level 12
         {
             inputComponentList: [connection],
             playAreaComponentList: [redLed, resistor, battery],
@@ -253,7 +269,7 @@ QtObject {
                 qsTr("Light the red LED using the provided components.")
             ]
         },
-        // level 12
+        // level 13
         {
             inputComponentList: [connection],
             playAreaComponentList: [bulb, bulb, battery],
