@@ -71,7 +71,6 @@ ActivityBase {
             property bool quizScreenVisible: false
             property string temperatureHint
             property string lengthOfYearHint
-            property string positionOfPlanetHint
             property bool hintProvided: true
         }
 
@@ -351,7 +350,7 @@ ActivityBase {
             readonly property string hint2: qsTr("2. The duration of a year on a planet <b>increases as we go away from the Sun</b>.<br><font color=\"#3bb0de\">%1</font>").arg(items.lengthOfYearHint)
             //: find an equivalent rhyme in your language where the first letter of each word corresponds to the first letter of the planet in proper sequence
             //~ try to make the rhyme as simple as possible
-            readonly property string hint3: qsTr("3. Always remember this rhyme to learn the position of planets, examine the first letter in each word - <b>M</b>y <b>V</b>ery <b>E</b>xcellent <b>M</b>other <b>J</b>ust <b>S</b>erved <b>U</b>s <b>N</b>oodles.<br><font color=\"#3bb0de\">%1</font>").arg(items.positionOfPlanetHint)
+            readonly property string hint3: qsTr("3. Always remember this rhyme to learn the position of planets, examine the first letter in each word - <b>M</b>y <b>V</b>ery <b>E</b>xcellent <b>M</b>other <b>J</b>ust <b>S</b>erved <b>U</b>s <b>N</b>oodles.<br>")
 
             title: qsTr("Hint")
             content: "%1<br>%2<br>%3".arg(hint1).arg(hint2).arg(hint3)
