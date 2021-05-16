@@ -5,116 +5,116 @@
  * Authors:
  *   Bruno Coudoin <bruno.coudoin@gcompris.net> (GTK+ version)
  *   Pulkit Gupta <pulkitgenius@gmail.com> (Qt Quick port)
+ *   Timothée Giet <animtim@gmail.com> (map update svg)
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
 import QtQuick 2.6
 
 QtObject {
-    property int numberOfSubLevel: 1
     property string instruction: qsTr("Central America")
     property var levels: [
     {
-        "pixmapfile": "centralamerica/bg_central_america.png",
+        "pixmapfile": "centralamerica/central_america.svg",
         "type": "SHAPE_BACKGROUND_IMAGE"
     },
     {
-        "pixmapfile": "centralamerica/puerto_rico.png",
+        "pixmapfile": "centralamerica/puerto_rico.svg",
         "soundFile": "voices-$CA/$LOCALE/geography/puerto_rico.$CA",
         "toolTipText": qsTr("Puerto Rico"),
-        "x": "0.828",
-        "y": "0.498"
+        "x": "0.8305",
+        "y": "0.4622"
     },
     {
-        "pixmapfile": "centralamerica/panama.png",
+        "pixmapfile": "centralamerica/panama.svg",
         "soundFile": "voices-$CA/$LOCALE/geography/panama.$CA",
         "toolTipText": qsTr("Panama"),
-        "x": "0.453",
+        "x": "0.5227",
         "y": "0.929"
     },
     {
-        "pixmapfile": "centralamerica/nicaragua.png",
+        "pixmapfile": "centralamerica/nicaragua.svg",
         "soundFile": "voices-$CA/$LOCALE/geography/nicaragua.$CA",
         "toolTipText": qsTr("Nicaragua"),
-        "x": "0.33",
-        "y": "0.736"
+        "x": "0.4018",
+        "y": "0.717"
     },
     {
-        "pixmapfile": "centralamerica/mexico.png",
+        "pixmapfile": "centralamerica/mexico.svg",
         "soundFile": "voices-$CA/$LOCALE/geography/mexico.$CA",
         "toolTipText": qsTr("Mexico"),
-        "x": "0.161",
-        "y": "0.329"
+        "x": "0.1863",
+        "y": "0.3187"
     },
     {
-        "pixmapfile": "centralamerica/jamaica.png",
+        "pixmapfile": "centralamerica/jamaica.svg",
         "soundFile": "voices-$CA/$LOCALE/geography/jamaica.$CA",
         "toolTipText": qsTr("Jamaica"),
-        "x": "0.552",
-        "y": "0.502"
+        "x": "0.5874",
+        "y": "0.4677"
     },
     {
-        "pixmapfile": "centralamerica/honduras.png",
+        "pixmapfile": "centralamerica/honduras.svg",
         "soundFile": "voices-$CA/$LOCALE/geography/honduras.$CA",
         "toolTipText": qsTr("Honduras"),
-        "x": "0.31",
-        "y": "0.665"
+        "x": "0.3825",
+        "y": "0.6279"
     },
     {
-        "pixmapfile": "centralamerica/haiti.png",
+        "pixmapfile": "centralamerica/haiti.svg",
         "soundFile": "voices-$CA/$LOCALE/geography/haiti.$CA",
         "toolTipText": qsTr("Haiti"),
-        "x": "0.662",
-        "y": "0.461"
+        "x": "0.6835",
+        "y": "0.4227"
     },
     {
-        "pixmapfile": "centralamerica/guatemala.png",
+        "pixmapfile": "centralamerica/guatemala.svg",
         "soundFile": "voices-$CA/$LOCALE/geography/guatemala.$CA",
         "toolTipText": qsTr("Guatemala"),
-        "x": "0.211",
-        "y": "0.604"
+        "x": "0.2919",
+        "y": "0.579"
     },
     {
-        "pixmapfile": "centralamerica/el_salvador.png",
+        "pixmapfile": "centralamerica/el_salvador.svg",
         "soundFile": "voices-$CA/$LOCALE/geography/salvador.$CA",
         "toolTipText": qsTr("El Salvador"),
-        "x": "0.242",
-        "y": "0.695"
+        "x": "0.322",
+        "y": "0.673"
     },
     {
-        "pixmapfile": "centralamerica/dominican_republic.png",
+        "pixmapfile": "centralamerica/dominican_republic.svg",
         "soundFile": "voices-$CA/$LOCALE/geography/dominican_republic.$CA",
         "toolTipText": qsTr("Dominican Republic"),
-        "x": "0.733",
-        "y": "0.474"
+        "x": "0.7494",
+        "y": "0.4366"
     },
     {
-        "pixmapfile": "centralamerica/cuba.png",
+        "pixmapfile": "centralamerica/cuba.svg",
         "soundFile": "voices-$CA/$LOCALE/geography/cuba.$CA",
         "toolTipText": qsTr("Cuba"),
-        "x": "0.507",
-        "y": "0.353"
+        "x": "0.5363",
+        "y": "0.306"
     },
     {
-        "pixmapfile": "centralamerica/costa_rica.png",
+        "pixmapfile": "centralamerica/costa_rica.svg",
         "soundFile": "voices-$CA/$LOCALE/geography/costa_rica.$CA",
         "toolTipText": qsTr("Costa Rica"),
-        "x": "0.353",
-        "y": "0.872"
+        "x": "0.4286",
+        "y": "0.871"
     },
     {
-        "pixmapfile": "centralamerica/belize.png",
+        "pixmapfile": "centralamerica/belize.svg",
         "soundFile": "voices-$CA/$LOCALE/geography/belize.$CA",
         "toolTipText": qsTr("Belize"),
-        "x": "0.26",
-        "y": "0.543"
+        "x": "0.3311",
+        "y": "0.5121"
     },
     {
-        "pixmapfile": "centralamerica/bahamas.png",
+        "pixmapfile": "centralamerica/bahamas.svg",
         "soundFile": "voices-$CA/$LOCALE/geography/bahamas.$CA",
         "toolTipText": qsTr("Bahamas"),
-        "x": "0.629",
-        "y": "0.245"
+        "x": "0.6195",
+        "y": "0.1912"
     }
     ]
 }
