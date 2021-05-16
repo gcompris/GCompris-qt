@@ -56,6 +56,7 @@ ActivityBase {
             property alias backgroundPiecesModel: backgroundPiecesModel
             property alias file: file
             property alias grid: grid
+            property alias backgroundImageSource: backgroundImageSource
             property alias backgroundImage: backgroundImage
             property alias leftWidget: leftWidget
             property alias instruction: instruction
@@ -225,18 +226,37 @@ ActivityBase {
                         background.height - (bar.height * 1.1) :
                         background.height - (bar.height * 1.1) - 90 * ApplicationInfo.ratio
 
+            // We need two items for the background image:
+            // - backgroundImageSource is needed to keep the original sourceSize info which is used
+            // in calculations, and to load quickly the image on startup;
+            // - backgroundImage is used for the "clean" render of the image,
+            // with its sourceSize linked to the actual size to get perfect svg rendering,
+            // but as it can be slow on heavy maps we load this one asynchronously.
+            Image {
+                id: backgroundImageSource
+                source: ""
+                fillMode: Image.PreserveAspectFit
+                anchors.centerIn: parent
+                property double ratio: sourceSize.width / sourceSize.height
+                property double gridRatio: grid.width / grid.height
+                // shrink size by 2 pixels to make sure it is always perfectly hidden by backgroundImage
+                width: (source == "" ? grid.width :
+                        (ratio > gridRatio ? grid.width : grid.height * ratio)) - 2
+                height: (source == "" ? grid.height :
+                        (ratio < gridRatio ? grid.height : grid.width / ratio)) - 2
+            }
+
             Image {
                 id: backgroundImage
                 fillMode: Image.PreserveAspectFit
-                property double ratio: sourceSize.width / sourceSize.height
-                property double gridRatio: grid.width / grid.height
-                property alias instruction: instruction
-                source: ""
+                source: backgroundImageSource.source
                 z: 2
-                width: source == "" ? grid.width : (ratio > gridRatio ? grid.width : grid.height * ratio)
-                height: source == "" ? grid.height : (ratio < gridRatio ? grid.height : grid.width / ratio)
-                anchors.topMargin: 10
+                width: backgroundImageSource.width + 2
+                height: backgroundImageSource.height + 2
+                sourceSize.width: width
+                sourceSize.height: height
                 anchors.centerIn: parent
+                asynchronous: true
 
                 //Inserting static background images
                 Repeater {
@@ -259,7 +279,7 @@ ActivityBase {
                                     (backgroundImage.source == "" ?
                                          backgroundImage.height * sourceShape.sourceSize.height / backgroundImage.height :
                                          backgroundImage.height * sourceShape.sourceSize.height /
-                                         backgroundImage.sourceSize.height)
+                                         backgroundImageSource.sourceSize.height)
 
                             width:
                                 imgWidth ?
@@ -267,7 +287,7 @@ ActivityBase {
                                     (backgroundImage.source == "" ?
                                          backgroundImage.width * sourceShape.sourceSize.width / backgroundImage.width :
                                          backgroundImage.width * sourceShape.sourceSize.width /
-                                         backgroundImage.sourceSize.width)
+                                         backgroundImageSource.sourceSize.width)
 
                             sourceSize.width: width
                             sourceSize.height: height

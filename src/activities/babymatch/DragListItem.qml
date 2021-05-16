@@ -89,10 +89,10 @@ Item {
 
             property double fullWidth: imgWidth ? imgWidth * backgroundImage.width : (backgroundImage.source == "" ?
                                            sourceImage.sourceSize.width :
-                                           backgroundImage.width * sourceImage.sourceSize.width/backgroundImage.sourceSize.width)
+                                           backgroundImage.width * sourceImage.sourceSize.width/backgroundImageSource.sourceSize.width)
             property double fullHeight: imgHeight ? imgHeight * backgroundImage.height : (backgroundImage.source == "" ?
                                            sourceImage.sourceSize.height :
-                                           backgroundImage.height * sourceImage.sourceSize.height/backgroundImage.sourceSize.height)
+                                           backgroundImage.height * sourceImage.sourceSize.height/backgroundImageSource.sourceSize.height)
             property QtObject tileImageParent
             property double moveImageX
             property double moveImageY

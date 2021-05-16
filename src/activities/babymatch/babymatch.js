@@ -55,7 +55,7 @@ function resetData() {
     showText = [];
 
     items.backgroundPiecesModel.clear();
-    items.backgroundImage.source = "";
+    items.backgroundImageSource.source = "";
 }
 
 function stop() {
@@ -158,11 +158,11 @@ function initLevel() {
         //Create static background pieces
         else {
             if(levelData.levels[i].type === "SHAPE_BACKGROUND_IMAGE") {
-                items.backgroundImage.source = imagesUrl + levelData.levels[i].pixmapfile;
+                items.backgroundImageSource.source = imagesUrl + levelData.levels[i].pixmapfile;
                 if(levelData.levels[i].width)
-                    items.backgroundImage.sourceSize.width = levelData.levels[i].width;
+                    items.backgroundImageSource.sourceSize.width = levelData.levels[i].width;
                 if(levelData.levels[i].height)
-                    items.backgroundImage.sourceSize.height = levelData.levels[i].height;
+                    items.backgroundImageSource.sourceSize.height = levelData.levels[i].height;
             }
             else {
                 items.backgroundPiecesModel.append( {
