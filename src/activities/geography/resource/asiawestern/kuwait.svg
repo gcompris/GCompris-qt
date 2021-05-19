@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="24.943993"
+   height="20.510071"
+   viewBox="0 0 24.943993 20.510072"
+   version="1.1"
+   id="svg1059"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs1053" />
+  <metadata
+     id="metadata1056">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer16"
+     style="display:inline"
+     transform="translate(-283.09157,-177.28034)">
+    <path
+       style="display:inline;fill:#36e7bd;fill-opacity:1;fill-rule:nonzero;stroke:#505050;stroke-width:0.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       class="polygon"
+       d="m 305.65788,183.69041 -0.73036,0.2814 -0.49373,-0.12791 -0.47455,-0.6907 -0.78152,-1.70887 0.42594,-0.63954 -0.0128,-0.26861 0.0895,-0.20466 0.24047,-0.12791 0.25198,-0.80582 0.33512,-0.24303 0.55001,0.55001 1.54143,1.96596 -0.0113,0.80583 -0.0895,0.31977 z m -1.78126,0.12791 0.0895,0.58838 -0.69071,-0.12791 -0.5257,-0.23023 -1.00665,-0.24303 -1.94613,1.65386 -1.17932,0.90816 -0.0384,0.30698 1.56893,0.34535 1.15118,-0.0115 0.80327,-0.24302 0.68175,0.38372 0.4464,1.02327 0.18035,0.83141 1.06677,2.95982 0.88385,0.99769 1.10385,1.76514 0.40931,0.90815 0.23535,0.76746 0.67536,1.13839 h -2.22216 -2.803 -2.27217 -2.56688 l -1.12816,-1.21514 -0.38245,-1.32514 -0.40803,-1.35967 -1.12687,-1.94038 -3.76603,-0.47326 -2.00241,-0.24303 -3.29263,-0.37093 -2.47325,-0.2814 2.07609,-2.09004 0.96699,-1.12559 1.74621,-2.43155 0.89664,-1.73061 0.86595,-1.92119 0.74699,-1.49526 0.15732,-0.26861 0.43362,-0.51164 0.95931,-0.51163 1.38283,-0.48606 2.347,-0.21744 1.64887,-0.0115 h 0.37094 l 1.03862,0.24302 2.87539,1.20235 -0.064,0.47326 0.40931,1.40828 0.91711,1.53747 z"
+       id="path2424-8" />
+  </g>
+</svg>
