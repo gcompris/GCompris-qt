@@ -1,0 +1,8 @@
+east_asia, X: 0.498, Y: 0.5004
+japan, X: 0.8317, Y: 0.5323
+china, X: 0.4211, Y: 0.5046
+mongolia, X: 0.4163, Y: 0.2109
+north_korea, X: 0.7345, Y: 0.3854
+south_korea, X: 0.7473, Y: 0.5047
+taiwan, X: 0.635, Y: 0.8353
+
