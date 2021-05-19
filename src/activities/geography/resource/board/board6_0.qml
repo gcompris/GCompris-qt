@@ -5,6 +5,7 @@
  * Authors:
  *   Bruno Coudoin <bruno.coudoin@gcompris.net> (GTK+ version)
  *   Pulkit Gupta <pulkitgenius@gmail.com> (Qt Quick port)
+ *   Timothée Giet <animtim@gmail.com> (map update svg)
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */

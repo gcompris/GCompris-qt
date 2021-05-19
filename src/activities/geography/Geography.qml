@@ -20,6 +20,6 @@ Babymatch {
 
     soundsUrl: ""
     boardsUrl: "qrc:/gcompris/src/activities/geography/resource/"
-    levelCount: 10
+    levelCount: 14
     answerGlow: false
 }
