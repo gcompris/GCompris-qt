@@ -83,9 +83,9 @@ QtObject {
         "y": "0.6012"
     },
     {
-        "pixmapfile": "asiasoutheast/timor-leste.svg",
-        "soundFile": "voices-$CA/$LOCALE/geography/timor-leste.$CA",
-        "toolTipText": qsTr("Timor-Leste"),
+        "pixmapfile": "asiasoutheast/east_timor.svg",
+        "soundFile": "voices-$CA/$LOCALE/geography/east_timor.$CA",
+        "toolTipText": qsTr("East Timor"),
         "x": "0.68",
         "y": "0.9263"
     },
