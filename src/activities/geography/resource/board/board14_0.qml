@@ -1,6 +1,6 @@
 /* GCompris
  *
- * SPDX-FileCopyrightText: 2021 Timothée Giet <animtim@gmail.com>
+ * SPDX-FileCopyrightText: 2015 Bruno Coudoin <bruno.coudoin@gcompris.net>
  *
  * Authors:
  *   Bruno Coudoin <bruno.coudoin@gcompris.net> (GTK+ version)
