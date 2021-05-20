@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="21.862158"
+   height="27.466599"
+   viewBox="0 0 21.862158 27.466599"
+   version="1.1"
+   id="svg1059"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs1053" />
+  <metadata
+     id="metadata1056">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:source />
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/by-sa/4.0/" />
+        <dc:date>2021</dc:date>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Timothée Giet</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:description>Derivative work based on https://upload.wikimedia.org/wikipedia/commons/3/3f/States_and_territories_of_Oceania.svg by Kaidor</dc:description>
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/by-sa/4.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Notice" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Attribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#ShareAlike" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer24"
+     style="display:inline"
+     transform="translate(-257.34105,-94.567222)">
+    <g
+       id="g3481"
+       transform="matrix(1.15556,0,0,1.15556,-3.86685,-43.79)"
+       style="stroke-width:0.865384">
+      <path
+         id="path3435-7"
+         d="m 228.78906,120.18359 c -4.52221,0.92281 -1.47687,7.27934 1.26563,7.76758 -0.57602,2.66845 2.99735,3.03937 3.95703,3.01758 0.45024,3.18387 4.33809,3.73322 5.72266,6.50781 -0.86955,0.34916 -3.23278,3.69784 -0.67383,5.05664 2.92916,2.12171 5.52449,-2.60698 3.49023,-4.25586 4.91477,-2.27462 -0.72444,-6.75815 -1.92773,-9.17578 0.35312,-3.06092 -4.23929,-3.656 -5.1836,-1.43945 -0.61634,-1.61951 2.33681,-4.74587 -1.15625,-5.85156 -2.14992,0.32457 -2.67022,-0.35155 -4.41211,-1.56055 -0.35336,-0.0831 -0.72124,-0.10651 -1.08203,-0.0664 z"
+         style="display:inline;fill:#c1ddf3;fill-opacity:1;stroke:#3dc11b;stroke-width:0.865384;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         id="path32151-2"
+         style="display:inline;opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#3dc11b;stroke-width:0.865384;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 239.31703,132.81729 c -0.0144,0.1457 3.5e-4,0.11094 0,0 z m -1.37156,-3.74562 c 0.0541,-3.5e-4 -0.23844,-0.26834 0,0 z m -8.82678,-6.27146 c -0.1152,-0.0253 0.11133,0.0639 0,0 z m 0.17765,0.12907 c 0.14723,0.18446 -0.0755,-0.18302 0,0 z m 0.66989,2.00183 c -0.0948,0.13393 0.0876,0.1116 0,0 z m 3.42294,-0.57962 c -0.10174,0.0833 0.16444,-0.007 0,0 z m 3.58569,6.46498 c 0.0952,-0.10174 0.102,-0.11814 0,0 z m -0.0259,0.0507 c -0.0587,0.0411 -0.10853,0.31058 0,0 z m -0.28382,0.009 c -0.0413,0.0169 0.0204,0.0411 0,0 z m -3.90826,-2.84443 c -0.0696,0.0475 0.0632,0.10427 0,0 z m 6.84354,4.5774 c 0.0303,-0.1136 0.0524,-0.44369 0,0 z m 0.96264,7.68563 c 0.0272,0.0389 0.0549,-0.0253 0,0 z m 1.33186,-4.64082 c 0.007,-0.19594 -0.016,-0.21593 0,0 z m -0.12706,-0.2759 c 0.10626,0.20813 0.086,-0.0224 0,0 z m -8.99884,-7.31675 c -0.007,0.0255 0.0575,0.0588 0,0 z m -0.0248,0.16971 c 0.13554,0.0179 0.0153,-0.0325 0,0 z m 4.31712,2.4822 c 0.0663,-0.0249 -2.6e-4,-0.12374 0,0 z" />
+    </g>
+  </g>
+</svg>

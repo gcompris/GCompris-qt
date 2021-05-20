@@ -1,0 +1,24 @@
+oceania, X: 0.4932, Y: 0.496
+australia, X: 0.248, Y: 0.6444
+new_zealand, X: 0.5416, Y: 0.7056
+papua_new_guinea, X: 0.3067, Y: 0.4013
+pitcairn_islands, X: 0.959, Y: 0.6008
+french_polynesia, X: 0.8278, Y: 0.529
+cook_islands, X: 0.6955, Y: 0.4998
+kiribati, X: 0.6275, Y: 0.3684
+hawaii, X: 0.6568, Y: 0.0715
+united_states_minor_outlying_islands, X: 0.578, Y: 0.177
+marshall_islands, X: 0.4474, Y: 0.2282
+micronesia, X: 0.3207, Y: 0.2725
+nauru, X: 0.4508, Y: 0.3376
+palau, X: 0.186, Y: 0.2731
+mariana_islands, X: 0.2826, Y: 0.1488
+samoan_islands, X: 0.6266, Y: 0.4696
+tonga, X: 0.5798, Y: 0.5471
+wallis_et_futuna, X: 0.5745, Y: 0.4802
+fiji, X: 0.5386, Y: 0.5179
+tuvalu, X: 0.5365, Y: 0.42
+solomon_islands, X: 0.4189, Y: 0.4286
+vanuatu, X: 0.4616, Y: 0.5123
+new_caledonia, X: 0.4469, Y: 0.5549
+

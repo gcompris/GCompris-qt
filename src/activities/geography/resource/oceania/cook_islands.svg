@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="40.149017"
+   height="60.087513"
+   viewBox="0 0 40.149017 60.087513"
+   version="1.1"
+   id="svg1059"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs1053" />
+  <metadata
+     id="metadata1056">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:source />
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/by-sa/4.0/" />
+        <dc:date>2021</dc:date>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Timothée Giet</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:description>Derivative work based on https://upload.wikimedia.org/wikipedia/commons/3/3f/States_and_territories_of_Oceania.svg by Kaidor</dc:description>
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/by-sa/4.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Notice" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Attribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#ShareAlike" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer10"
+     style="display:inline"
+     transform="translate(-327.67496,-107.37727)">
+    <g
+       id="g3082"
+       transform="matrix(1.15556,0,0,1.15556,-3.86685,-43.79)"
+       style="stroke-width:0.865384">
+      <path
+         id="path3643-4"
+         d="m 316.01367,131.25586 c -5.53979,0.75313 -0.45635,9.20815 2.92774,4.66211 1.48856,-2.03275 -0.6374,-4.81013 -2.92774,-4.66211 z m -10.33789,3.75586 c -5.08098,0.78023 -1.34357,9.90707 2.71289,5.92969 1.22594,-1.84012 0.29322,-6.58249 -2.71289,-5.92969 z m -15.8457,2.91601 c -3.4331,0.48774 -2.85805,4.25074 -0.99805,5.83594 1.90163,4.89729 8.10763,-0.98354 3.84375,-3.39062 -0.0138,-1.45765 -1.38775,-2.68889 -2.8457,-2.44532 z m 9.01562,8.00586 c -4.54878,0.49443 -2.11139,7.92465 1.82813,5.35743 2.72958,-1.59527 1.06572,-5.56546 -1.82813,-5.35743 z m -0.0918,16.69141 c -4.87377,0.66511 -1.48388,8.52011 2.21875,4.92969 1.93426,-1.77816 0.33598,-5.16107 -2.21875,-4.92969 z m 11.36328,2.96875 c -3.88217,0.26477 -3.01801,6.3841 0.73633,5.84961 2.31391,0.81519 2.94678,4.49388 5.8496,3.72266 3.51491,2.87648 6.6478,-3.47732 2.63868,-5.14063 -1.85267,-1.04083 -3.75669,-0.23039 -4.76953,-2.56641 -2.14295,0.1119 -2.2893,-2.08019 -4.45508,-1.86523 z m 7.39453,4.66211 c 0.36927,0.42178 -0.30815,-0.26214 0,0 z m -7.4043,3.82031 c -5.32011,0.90211 -0.91481,8.7454 2.55469,4.60742 1.53234,-1.84739 -0.17769,-4.94989 -2.55469,-4.60742 z m 6.05664,2.51172 c -4.64028,0.8399 -1.14053,8.2838 2.41602,4.94336 2.07457,-1.81234 0.20452,-5.38842 -2.41602,-4.94336 z"
+         style="display:inline;fill:#c1ddf3;fill-opacity:1;stroke:#e52222;stroke-width:0.865384;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         id="path42637-7"
+         style="display:inline;opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#e52222;stroke-width:0.865384;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 316.25649,134.28435 c -0.0427,-0.18322 -0.19853,-0.25578 0,0 z m 0.42279,-0.0755 c -0.0665,-0.102 -0.0835,-0.0589 0,0 z m -0.61134,38.28173 c -0.21476,-0.40814 -0.23798,0.32059 0,0 z m 0.12307,-38.48717 c 0.007,-0.0792 -0.0473,-0.012 0,0 z m 0.41285,0.10027 c -0.003,-0.0879 -0.0147,-0.0579 0,0 z m -0.16176,-0.13399 c 0.40608,0.0924 -0.36613,-0.1328 0,0 z m -5.92289,43.04859 c 0.008,-0.6007 -0.7704,0.12573 0,0 z m 5.87031,-42.65755 c -0.22331,-0.28219 0.25005,0.38368 0,0 z m 0.32654,-0.0299 c 0.0637,-0.0409 0,-0.0869 0,0 z m -26.77014,6.20099 c 0.0437,0.0453 0.0868,-0.0905 0,0 z m 9.05902,24.83469 c 0.004,-0.0771 -0.0895,0.008 0,0 z m -9.02129,-24.662 c -0.0632,0.046 -0.0196,0.0107 0,0 z m -0.0923,-0.0337 c -0.0305,-0.0471 -0.0904,0.0365 0,0 z m 16.26018,-1.64156 c 0,-0.1354 0.007,0.28535 0,0 z m 0.1032,-0.12707 c -0.1012,-0.0437 0.35898,0.39223 0,0 z m -0.3275,-1.18998 c -0.0687,0.0675 0.14939,-0.0221 0,0 z m 0.45155,1.44902 c 0.19335,-0.0913 -0.0491,-0.007 0,0 z m 4.1484,29.53108 c 0.0297,-0.1228 -0.0411,2.6e-4 0,0 z m 5.73433,-34.73562 c 0.0709,-0.0157 -0.18058,-0.0345 0,0 z m -5.74026,34.6453 c 0.0517,-0.009 -0.0365,-0.0684 0,0 z m 2.64682,1.33886 c 0.0649,0.007 -0.22744,-0.17324 0,0 z m 2.18438,1.87874 c 0.0781,0.0535 0.0491,-0.0603 0,0 z m 1.92533,0.20347 c 0.19291,0.3126 0.10173,-0.36419 0,0 z m -4.05215,-2.13879 c -0.003,10e-4 0.0599,-0.0283 0,0 z m -14.32989,-4.30337 c 0.0232,-0.0413 -0.0495,-0.0107 0,0 z m 0.24713,-0.0665 c 0.003,-0.0667 -0.0616,0.0135 0,0 z m 11.31087,2.90001 c -0.0405,0.0253 0.0435,0.0519 0,0 z m -11.51135,-2.73624 c 0.0308,-0.0481 -0.0393,-0.0301 0,0 z m 0.0527,0.0199 c 0.0497,-0.0373 -0.0741,-0.0412 0,0 z m -7.60311,-22.75644 c -0.0171,0.0691 0.0828,6.9e-4 0,0 z m 14.59516,-5.27799 c -0.0865,0.0248 -0.0901,-0.0456 0,0 z m 4.40842,30.62777 c -0.25523,0.48683 0.12453,-0.0249 0,0 z m 6.37664,11.17724 c -0.34711,-0.52794 -0.317,0.37071 0,0 z m 1.852,-6.35974 c -0.066,-0.56498 -0.23676,0.267 0,0 z" />
+    </g>
+  </g>
+</svg>

@@ -1,10 +1,11 @@
 /* GCompris
  *
- * SPDX-FileCopyrightText: 2015 Bruno Coudoin <bruno.coudoin@gcompris.net>
+ * SPDX-FileCopyrightText: 2021 Timothée Giet <animtim@gmail.com>
  *
  * Authors:
  *   Bruno Coudoin <bruno.coudoin@gcompris.net> (GTK+ version)
  *   Pulkit Gupta <pulkitgenius@gmail.com> (Qt Quick port)
+ *   Timothée Giet <animtim@gmail.com> (map update svg)
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
@@ -14,162 +15,164 @@ QtObject {
     property string instruction: qsTr("Oceania")
     property var levels: [
     {
-        "pixmapfile": "oceania/bg_oceania.png",
+        "pixmapfile": "oceania/oceania.svg",
         "type": "SHAPE_BACKGROUND_IMAGE"
     },
     {
-        "pixmapfile": "oceania/pitcairn_islands.png",
+        "pixmapfile": "oceania/pitcairn_islands.svg",
         "soundFile": "voices-$CA/$LOCALE/geography/pitcairn_islands.$CA",
         "toolTipText": qsTr("Pitcairn Islands"),
-        "x": "0.967",
-        "y": "0.722"
+        "x": "0.959",
+        "y": "0.6008"
     },
     {
-        "pixmapfile": "oceania/french_polynesia.png",
+        "pixmapfile": "oceania/french_polynesia.svg",
         "soundFile": "voices-$CA/$LOCALE/geography/french_polynesia.$CA",
         "toolTipText": qsTr("French Polynesia"),
-        "x": "0.875",
-        "y": "0.622"
+        "x": "0.8278",
+        "y": "0.529"
     },
     {
-        "pixmapfile": "oceania/papua_new_guinea.png",
+        "pixmapfile": "oceania/papua_new_guinea.svg",
         "soundFile": "voices-$CA/$LOCALE/geography/papua_new_guinea.$CA",
         "toolTipText": qsTr("Papua New Guinea"),
-        "x": "0.314",
-        "y": "0.476"
+        "x": "0.3067",
+        "y": "0.4013"
     },
     {
-        "pixmapfile": "oceania/east_timor.png",
-        "soundFile": "voices-$CA/$LOCALE/geography/east_timor.$CA",
-        "toolTipText": qsTr("East Timor"),
-        "x": "0.131",
-        "y": "0.516"
-    },
-    {
-        "pixmapfile": "oceania/indonesia.png",
-        "soundFile": "voices-$CA/$LOCALE/geography/indonesia.$CA",
-        "toolTipText": qsTr("Indonesia"),
-        "x": "0.128",
-        "y": "0.456"
-    },
-    {
-        "pixmapfile": "oceania/palau.png",
+        "pixmapfile": "oceania/palau.svg",
         "soundFile": "voices-$CA/$LOCALE/geography/palau.$CA",
         "toolTipText": qsTr("Palau"),
-        "x": "0.179",
-        "y": "0.35"
+        "x": "0.186",
+        "y": "0.2731"
     },
     {
-        "pixmapfile": "oceania/northern_mariana_islands.png",
-        "soundFile": "voices-$CA/$LOCALE/geography/northern_mariana_islands.$CA",
-        "toolTipText": qsTr("Northern Mariana Islands"),
-        "x": "0.288",
-        "y": "0.222"
+        "pixmapfile": "oceania/mariana_islands.svg",
+        "soundFile": "voices-$CA/$LOCALE/geography/mariana_islands.$CA",
+        "toolTipText": qsTr("Mariana Islands"),
+        "x": "0.2826",
+        "y": "0.1488"
     },
     {
-        "pixmapfile": "oceania/micronesia.png",
+        "pixmapfile": "oceania/micronesia.svg",
         "soundFile": "voices-$CA/$LOCALE/geography/micronesia.$CA",
         "toolTipText": qsTr("Micronesia"),
-        "x": "0.334",
-        "y": "0.324"
+        "x": "0.3207",
+        "y": "0.2725"
     },
     {
-        "pixmapfile": "oceania/vanuatu.png",
+        "pixmapfile": "oceania/nauru.svg",
+        "soundFile": "voices-$CA/$LOCALE/geography/nauru.$CA",
+        "toolTipText": qsTr("Nauru"),
+        "type": "SHAPE_BACKGROUND",
+        "x": "0.4508",
+        "y": "0.3376"
+    },
+    {
+        "pixmapfile": "oceania/vanuatu.svg",
         "soundFile": "voices-$CA/$LOCALE/geography/vanuatu.$CA",
         "toolTipText": qsTr("Vanuatu"),
-        "x": "0.487",
-        "y": "0.582"
+        "x": "0.4616",
+        "y": "0.5123"
     },
     {
-        "pixmapfile": "oceania/tuvalu.png",
+        "pixmapfile": "oceania/tuvalu.svg",
         "soundFile": "voices-$CA/$LOCALE/geography/tuvalu.$CA",
         "toolTipText": qsTr("Tuvalu"),
-        "x": "0.572",
-        "y": "0.484"
+        "x": "0.5365",
+        "y": "0.42"
     },
     {
-        "pixmapfile": "oceania/tonga.png",
+        "pixmapfile": "oceania/tonga.svg",
         "soundFile": "voices-$CA/$LOCALE/geography/tonga.$CA",
         "toolTipText": qsTr("Tonga"),
-        "x": "0.626",
-        "y": "0.608"
+        "x": "0.5798",
+        "y": "0.5471"
     },
     {
-        "pixmapfile": "oceania/new_caledonia.png",
+        "pixmapfile": "oceania/new_caledonia.svg",
         "soundFile": "voices-$CA/$LOCALE/geography/new_caledonia.$CA",
         "toolTipText": qsTr("New Caledonia"),
-        "x": "0.451",
-        "y": "0.628"
+        "x": "0.4469",
+        "y": "0.5549"
     },
     {
-        "pixmapfile": "oceania/marshall_islands.png",
+        "pixmapfile": "oceania/marshall_islands.svg",
         "soundFile": "voices-$CA/$LOCALE/geography/marshall_islands.$CA",
         "toolTipText": qsTr("Marshall Islands"),
-        "x": "0.49",
-        "y": "0.344"
+        "x": "0.4474",
+        "y": "0.2282"
     },
     {
-        "pixmapfile": "oceania/kiribati.png",
+        "pixmapfile": "oceania/kiribati.svg",
         "soundFile": "voices-$CA/$LOCALE/geography/kiribati.$CA",
         "toolTipText": qsTr("Kiribati"),
-        "x": "0.676",
-        "y": "0.448"
+        "x": "0.6275",
+        "y": "0.3684"
     },
     {
-        "pixmapfile": "oceania/fiji.png",
+        "pixmapfile": "oceania/fiji.svg",
         "soundFile": "voices-$CA/$LOCALE/geography/fiji.$CA",
         "toolTipText": qsTr("Fiji"),
-        "x": "0.569",
-        "y": "0.586"
+        "x": "0.5386",
+        "y": "0.5179"
     },
     {
-        "pixmapfile": "oceania/solomon_islands.png",
+        "pixmapfile": "oceania/solomon_islands.svg",
         "soundFile": "voices-$CA/$LOCALE/geography/solomon_islands.$CA",
         "toolTipText": qsTr("Solomon Islands"),
-        "x": "0.438",
-        "y": "0.506"
+        "x": "0.4189",
+        "y": "0.4286"
     },
     {
-        "pixmapfile": "oceania/new_zealand.png",
+        "pixmapfile": "oceania/new_zealand.svg",
         "soundFile": "voices-$CA/$LOCALE/geography/new_zealand.$CA",
         "toolTipText": qsTr("New Zealand"),
-        "x": "0.572",
-        "y": "0.726"
+        "x": "0.5416",
+        "y": "0.7056"
     },
     {
-        "pixmapfile": "oceania/cook_islands.png",
+        "pixmapfile": "oceania/cook_islands.svg",
         "soundFile": "voices-$CA/$LOCALE/geography/cook_islands.$CA",
         "toolTipText": qsTr("Cook Islands"),
-        "x": "0.745",
-        "y": "0.582"
+        "x": "0.6955",
+        "y": "0.4998"
     },
     {
-        "pixmapfile": "oceania/american_samoa.png",
-        "soundFile": "voices-$CA/$LOCALE/geography/american_samoa.$CA",
-        "toolTipText": qsTr("American Samoa"),
-        "x": "0.662",
-        "y": "0.544"
+        "pixmapfile": "oceania/samoan_islands.svg",
+        "soundFile": "voices-$CA/$LOCALE/geography/samoan_islands.$CA",
+        "toolTipText": qsTr("Samoan Islands"),
+        "x": "0.6266",
+        "y": "0.4696"
     },
     {
-        "pixmapfile": "oceania/australia.png",
+        "pixmapfile": "oceania/australia.svg",
         "soundFile": "voices-$CA/$LOCALE/geography/australia.$CA",
         "toolTipText": qsTr("Australia"),
-        "x": "0.273",
-        "y": "0.748"
+        "x": "0.248",
+        "y": "0.6444"
     },
     {
-        "pixmapfile": "oceania/us_minor.png",
+        "pixmapfile": "oceania/us_minor.svg",
         "soundFile": "voices-$CA/$LOCALE/geography/us_minor.$CA",
         "toolTipText": qsTr("United States Minor Outlying Islands"),
-        "x": "0.617",
-        "y": "0.258"
+        "x": "0.578",
+        "y": "0.177"
     },
     {
-        "pixmapfile": "oceania/hawaii.png",
+        "pixmapfile": "oceania/hawaii.svg",
         "soundFile": "voices-$CA/$LOCALE/geography/hawaii.$CA",
         "toolTipText": qsTr("Hawaii"),
-        "x": "0.722",
-        "y": "0.164"
+        "x": "0.6568",
+        "y": "0.0715"
+    },
+    {
+        "pixmapfile": "oceania/wallis_and_futuna.svg",
+        "soundFile": "voices-$CA/$LOCALE/geography/wallis_and_futuna.$CA",
+        "toolTipText": qsTr("Wallis and Futuna"),
+        "type": "SHAPE_BACKGROUND",
+        "x": "0.5745",
+        "y": "0.4802"
     }
     ]
 }

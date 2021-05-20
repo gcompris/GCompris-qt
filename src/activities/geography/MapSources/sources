@@ -1,10 +1,12 @@
 maps reference sources
 
-Continents is a mix of:
-https://commons.wikimedia.org/wiki/File:Continents.svg
-https://en.wikipedia.org/wiki/File:Continents_colour2.svg
-
-Single continents with countries are based on:
-https://milevski.co/geojson2svg/demo/lands.svg
+Continents.svg is a modified mix of:
+https://commons.wikimedia.org/wiki/File:Continents.svg (public domain)
+https://en.wikipedia.org/wiki/File:Continents_colour2.svg by Peterfitzgerald (CC-BY-SA 3.0 Unported)
 
 
+Single continents with countries are all based on:
+https://milevski.co/geojson2svg/demo/lands.svg (MIT license)
+
+Except oceania, based on:
+https://commons.wikimedia.org/wiki/File:States_and_territories_of_Oceania.svg by Kaidor (CC-BY-SA 4.0)

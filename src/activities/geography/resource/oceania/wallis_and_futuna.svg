@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="15.062093"
+   height="12.023536"
+   viewBox="0 0 15.062093 12.023536"
+   version="1.1"
+   id="svg1059"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs1053" />
+  <metadata
+     id="metadata1056">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:source />
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/by-sa/4.0/" />
+        <dc:date>2021</dc:date>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Timothée Giet</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:description>Derivative work based on https://upload.wikimedia.org/wikipedia/commons/3/3f/States_and_territories_of_Oceania.svg by Kaidor</dc:description>
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/by-sa/4.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Notice" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Attribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#ShareAlike" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer22"
+     style="display:inline"
+     transform="translate(-279.72784,-124.24833)">
+    <g
+       id="g3477"
+       transform="matrix(1.15556,0,0,1.15556,-3.86685,-43.79)"
+       style="stroke-width:0.865384">
+      <path
+         id="path3531-4"
+         d="m 254.86914,145.86719 c -4.8146,0.51018 -1.88174,8.59692 2.03906,5.42773 2.215,-1.7623 0.90998,-5.74464 -2.03906,-5.42773 z m -6.47266,3.66406 c -5.46583,0.53334 -0.95578,8.77727 2.64844,4.76563 1.91393,-1.98762 -0.31482,-4.87623 -2.64844,-4.76563 z"
+         style="display:inline;fill:#c1ddf3;fill-opacity:1;stroke:#2b6be1;stroke-width:0.865384;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         id="path42551-8"
+         style="display:inline;opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#2b6be1;stroke-width:0.865384;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 255.22589,148.88763 c -0.3295,-0.7684 -0.20267,0.91301 0,0 z m -0.13463,0.33545 c -0.0352,-0.14401 -0.0496,0.0343 0,0 z m 0.13696,0.0288 c 0.0376,-0.0555 -0.0556,-0.12333 0,0 z m -6.48064,3.18881 c 0.29827,-0.17472 -0.7432,-0.24158 0,0 z m 6.40821,-3.85776 c -0.0391,-0.0609 -0.0565,-0.0175 0,0 z m -6.25037,4.01252 c 0.51829,-0.0528 -0.30044,-0.18365 0,0 z" />
+    </g>
+  </g>
+</svg>
