@@ -127,6 +127,7 @@ number_sequence
 numbers-odd-even
 ordering_alphabets
 ordering_numbers
+ordering_sentences
 paintings
 penalty
 photo_hunter
