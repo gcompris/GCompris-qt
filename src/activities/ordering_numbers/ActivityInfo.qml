@@ -19,7 +19,7 @@ ActivityInfo {
     title: qsTr("Ordering numbers")
     //: Help title
     description: qsTr("Arrange the given numbers in ascending or descending order as instructed.")
-    //: intro: "Arrange the numbers in the correct order by placing a number in it's correct position"
+    //: intro: "Arrange the numbers in the correct order by placing a number in its correct position"
     //: Help goal
     goal: qsTr("Compare numbers.")
     //: Help prerequisite

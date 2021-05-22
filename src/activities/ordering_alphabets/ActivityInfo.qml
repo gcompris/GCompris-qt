@@ -26,7 +26,7 @@ ActivityInfo {
     //: Help prerequisite
     prerequisite: qsTr("Move, drag and drop using mouse.")
     //: Help manual
-    manual: qsTr("You are provided with few alphabets. Drag and drop the alphabets in their correct position to reorder the numbers in ascending or descending order as instructed.")
+    manual: qsTr("You are provided with few alphabets. Drag and drop the alphabets in their correct position to reorder the letters in ascending or descending order as instructed.")
     section: "reading"
     createdInVersion: 20000
     levels: "1,2,3,4,5,6"
