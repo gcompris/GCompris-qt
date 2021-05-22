@@ -84,6 +84,27 @@ Item {
     property var backspaceButtonComponent: backspaceButton
 
     /**
+     * type:var
+     *
+     * Button for displaying decimal point character.
+     */
+    property var decimalPointButton: decimalPointButton
+
+    /**
+    * type:bool
+    *
+    * Enable or disable the button for the decimal point character.
+    */
+    property bool displayDecimalButton: false
+
+    /**
+      * type:readonly string
+      *
+      * Stores the decimal point character of the current locale.
+      */
+    readonly property string decimalPoint: Qt.locale(ApplicationSettings.locale).decimalPoint
+
+    /**
      * type:int
      *
      * Stores the maximum length of the correct answer.
@@ -155,6 +176,44 @@ Item {
                         leftPanel.children[index].color = colours[index]
                         leftPanel.children[index].border.width = 2
                     }
+                }
+            }
+        }
+
+        Rectangle {
+            id: decimalPointButton
+            visible: containerPanel.displayDecimalButton
+            width: parent.width
+            height: containerPanel.height - leftPanel.height
+            color: "white"
+            border.color: "black"
+            border.width: 2
+
+            GCText {
+                id: decimalPointCharacter
+                anchors.horizontalCenter: parent.horizontalCenter
+                anchors.verticalCenter: parent.verticalCenter
+                text: containerPanel.decimalPoint
+                fontSize: 28
+                font.bold: true
+            }
+
+            MouseArea {
+                anchors.fill: parent
+                enabled: answer.length && answer.indexOf(containerPanel.decimalPoint) == -1
+
+                onClicked: {
+                    answer += containerPanel.decimalPoint
+                }
+
+                onPressed: {
+                    decimalPointButton.color = Qt.lighter("white")
+                    decimalPointButton.border.width = 5
+                }
+
+                onReleased: {
+                    decimalPointButton.color = "white"
+                    decimalPointButton.border.width = 2
                 }
             }
         }
@@ -261,7 +320,7 @@ Item {
 
         switch(key)
         {
-        case Qt.Key_0 :
+        case Qt.Key_0:
             keyValue = 0;
             break;
         case Qt.Key_1:
@@ -293,6 +352,10 @@ Item {
             break;
         case Qt.Key_Backspace:
             keyValue = 10;
+            break;
+        case Qt.Key_Period:
+        case Qt.Key_Comma:
+            keyValue = containerPanel.decimalPoint;
         }
 
         if(isKeyPressed && !answerFlag)
@@ -315,6 +378,17 @@ Item {
                 backspaceButton.color = Qt.lighter("white")
                 backspaceButton.border.width = 5
             }
+            //In case the button for the decimal point character is enabled, and
+            //In case the key entered by the user is a decimal point character, and
+            //In case the length of the answer is less than the maximum digits, and
+            //In case the answer isn't empty string (to avoid having decimal point as a first character in the answer), and
+            //In case the answer doesn't contain a decimal point (to avoid having 2 decimal point characters in the answer).
+            else if(containerPanel.displayDecimalButton && keyValue === containerPanel.decimalPoint && answer.length < maxDigit && answer.length != 0 && answer.indexOf(keyValue) == -1)
+            {
+                answer += keyValue;
+                decimalPointButton.color = Qt.lighter("white")
+                decimalPointButton.border.width = 5
+            }
         }
         else
         {
@@ -333,6 +407,11 @@ Item {
             {
                 backspaceButton.color = "white"
                 backspaceButton.border.width = 2
+            }
+            else if(keyValue === containerPanel.decimalPoint)
+            {
+                decimalPointButton.color = "white"
+                decimalPointButton.border.width = 2
             }
         }
     }
