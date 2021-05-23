@@ -11,7 +11,7 @@
 // Creates a active button for making a table of days of weeks.
 // Set different behaviours and animations on selecting a day from day table here.
 
-import QtQuick 2.6
+import QtQuick 2.9
 import GCompris 1.0
 import QtQuick.Controls 1.5
 import "../../core"

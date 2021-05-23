@@ -10,7 +10,7 @@
  */
 
 
-import QtQuick 2.6
+import QtQuick 2.9
 import "../../core"
 import "guesscount.js" as Activity
 

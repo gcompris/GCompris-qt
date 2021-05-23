@@ -8,7 +8,7 @@
 */
 
 .pragma library
-.import QtQuick 2.6 as Quick
+.import QtQuick 2.9 as Quick
 .import "qrc:/gcompris/src/core/core.js" as Core
 
 var currentLevel = 0

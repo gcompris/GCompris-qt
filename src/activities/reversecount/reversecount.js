@@ -10,7 +10,7 @@
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
 .pragma library
-.import QtQuick 2.6 as Quick
+.import QtQuick 2.9 as Quick
 .import GCompris 1.0 as GCompris //for ApplicationInfo
 
 var iceBlocksLayout = [[0, 0],[1, 0],[2, 0],[3, 0],[4, 0],

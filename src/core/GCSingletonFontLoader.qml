@@ -7,7 +7,7 @@
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
-import QtQuick 2.6
+import QtQuick 2.9
 import GCompris 1.0
 
 //QTBUG-34418, singletons require explicit import to load qmldir file

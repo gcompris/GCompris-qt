@@ -8,7 +8,7 @@
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
 .pragma library
-.import QtQuick 2.6 as Quick
+.import QtQuick 2.9 as Quick
 
 var currentLevel = 0
 var numberOfLevel = 6

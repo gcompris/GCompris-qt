@@ -8,7 +8,7 @@
 *
 *   SPDX-License-Identifier: GPL-3.0-or-later
 */
-import QtQuick 2.6
+import QtQuick 2.9
 
 // Fraidy is an afraid monster. He won't go in the center but he'll
 // stay close to the border.

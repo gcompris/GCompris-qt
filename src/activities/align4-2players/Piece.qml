@@ -8,7 +8,7 @@
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
-import QtQuick 2.6
+import QtQuick 2.9
 import "align4.js" as Activity
 
 import GCompris 1.0

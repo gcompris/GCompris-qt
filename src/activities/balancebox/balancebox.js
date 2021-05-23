@@ -16,7 +16,7 @@
     arbitrary order
 */
 .pragma library
-.import QtQuick 2.6 as Quick
+.import QtQuick 2.9 as Quick
 .import GCompris 1.0 as GCompris
 .import Box2D 2.0 as Box2D
 .import "qrc:/gcompris/src/core/core.js" as Core
@@ -307,7 +307,7 @@ function initMap()
             if (debugDraw) {
                 try {
                     var rect = Qt.createQmlObject(
-                                "import QtQuick 2.6;Rectangle{"
+                                "import QtQuick 2.9;Rectangle{"
                                 +"width:" + items.cellSize +";"
                                 +"height:" + items.cellSize+";"
                                 +"x:" + x + ";"

@@ -7,7 +7,7 @@
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
-import QtQuick 2.6
+import QtQuick 2.9
 
 QtObject {
     property string backgroundImage: "qrc:/gcompris/src/activities/explore_monuments/resource/egypt/egypt.svg"

@@ -84,7 +84,7 @@ function showMessageDialog(parent, informativeText,
                            closeCallback) {
     //console.debug("Core.showMessageDialog: parent=" + parent + " backtrace="); console.trace();
     var qmlStr =
-          'import QtQuick 2.6\n'
+          'import QtQuick 2.9\n'
         + 'GCDialog {\n'
         + '    message: "' + informativeText + '"\n'
         + '    button1Text: "' + button1Text + '"\n'
