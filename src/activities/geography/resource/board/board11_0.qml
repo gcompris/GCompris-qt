@@ -15,60 +15,60 @@ QtObject {
     property string instruction: qsTr("South Asia")
     property var levels: [
     {
-        "pixmapfile": "asiasouth/south_asia.svg",
+        "pixmapfile": "asiasouth/south_asia.svgz",
         "type": "SHAPE_BACKGROUND_IMAGE"
     },
     {
-        "pixmapfile": "asiasouth/india.svg",
+        "pixmapfile": "asiasouth/india.svgz",
         "soundFile": "voices-$CA/$LOCALE/geography/india.$CA",
         "toolTipText": qsTr("India"),
         "x": "0.6032",
         "y": "0.4832"
     },
     {
-        "pixmapfile": "asiasouth/sri_lanka.svg",
+        "pixmapfile": "asiasouth/sri_lanka.svgz",
         "soundFile": "voices-$CA/$LOCALE/geography/sri_lanka.$CA",
         "toolTipText": qsTr("Sri Lanka"),
         "x": "0.5512",
         "y": "0.8412"
     },
     {
-        "pixmapfile": "asiasouth/pakistan.svg",
+        "pixmapfile": "asiasouth/pakistan.svgz",
         "soundFile": "voices-$CA/$LOCALE/geography/pakistan.$CA",
         "toolTipText": qsTr("Pakistan"),
         "x": "0.2369",
         "y": "0.232"
     },
     {
-        "pixmapfile": "asiasouth/afghanistan.svg",
+        "pixmapfile": "asiasouth/afghanistan.svgz",
         "soundFile": "voices-$CA/$LOCALE/geography/afghanistan.$CA",
         "toolTipText": qsTr("Afghanistan"),
         "x": "0.2038",
         "y": "0.137"
     },
     {
-        "pixmapfile": "asiasouth/nepal.svg",
+        "pixmapfile": "asiasouth/nepal.svgz",
         "soundFile": "voices-$CA/$LOCALE/geography/nepal.$CA",
         "toolTipText": qsTr("Nepal"),
         "x": "0.6391",
         "y": "0.2876"
     },
     {
-        "pixmapfile": "asiasouth/bangladesh.svg",
+        "pixmapfile": "asiasouth/bangladesh.svgz",
         "soundFile": "voices-$CA/$LOCALE/geography/bangladesh.$CA",
         "toolTipText": qsTr("Bangladesh"),
         "x": "0.8041",
         "y": "0.4143"
     },
     {
-        "pixmapfile": "asiasouth/bhutan.svg",
+        "pixmapfile": "asiasouth/bhutan.svgz",
         "soundFile": "voices-$CA/$LOCALE/geography/bhutan.$CA",
         "toolTipText": qsTr("Bhutan"),
         "x": "0.8064",
         "y": "0.3113"
     },
     {
-        "pixmapfile": "asiasouth/maldives.svg",
+        "pixmapfile": "asiasouth/maldives.svgz",
         "soundFile": "voices-$CA/$LOCALE/geography/maldives.$CA",
         "toolTipText": qsTr("Maldives"),
         "x": "0.356",
