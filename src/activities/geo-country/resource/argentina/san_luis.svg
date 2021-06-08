@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 37.509549 60.502635"
+   version="1.2"
+   id="svg52"
+   width="37.509548"
+   height="60.502636"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <metadata
+     id="metadata58">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:date>2021</dc:date>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Timothée Giet</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/by-sa/4.0/" />
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/by-sa/4.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Notice" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Attribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#ShareAlike" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs56" />
+  <g
+     id="layer22"
+     style="display:inline"
+     transform="translate(-119.01098,-154.94188)">
+    <path
+       style="fill:#a07aef;fill-opacity:1;stroke:#505050;stroke-width:0.5;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 131.35417,214.82204 c -0.1266,-0.20485 0.15623,-1.98097 0.62852,-3.94692 0.93882,-3.90794 1.14184,-8.31264 0.50208,-10.89319 -0.22517,-0.90824 -0.95967,-2.45665 -1.63222,-3.44091 -0.67255,-0.98425 -1.45164,-2.75471 -1.73131,-3.93435 -0.44406,-1.87311 -0.42585,-2.23611 0.1438,-2.86557 0.35876,-0.39641 0.65228,-1.12826 0.65228,-1.62632 0,-0.49806 0.17861,-1.2393 0.39691,-1.6472 0.31933,-0.59667 0.18086,-0.87896 -0.70842,-1.44418 -2.50174,-1.59011 -5.1696,-5.27815 -5.94532,-8.21879 -0.29636,-1.12341 -0.4546,-2.1268 -0.35165,-2.22974 0.10294,-0.10295 -0.007,-1.23499 -0.24327,-2.51566 -0.31589,-1.7088 -0.30782,-2.47623 0.0303,-2.88367 0.34884,-0.42033 0.30949,-0.87226 -0.162,-1.86047 -1.48093,-3.10395 -1.61363,-3.52572 -1.38468,-4.40124 0.18264,-0.69838 -0.0785,-1.22149 -1.07423,-2.15186 -1.20765,-1.12838 -1.30315,-1.39792 -1.16463,-3.28697 l 0.15089,-2.0578 1.78714,-0.0843 c 0.98292,-0.0464 2.19701,-0.1081 2.69796,-0.13713 0.97924,-0.0568 4.69241,0.59466 8.58481,1.50607 1.43553,0.33613 2.58732,0.41866 2.84607,0.20391 0.23906,-0.1984 1.17584,-0.35049 2.08174,-0.33799 0.90589,0.0125 1.99332,-0.15311 2.41649,-0.36802 0.42317,-0.21492 2.04456,-0.35272 3.60309,-0.30623 2.25397,0.0672 3.34052,0.34038 5.31112,1.33516 2.49409,1.25904 2.96956,1.90906 2.982,4.07676 0.005,0.92104 0.0937,0.95128 2.02959,0.69448 1.8716,-0.24828 2.02406,-0.20447 2.02406,0.58168 0,0.46759 0.16723,1.16265 0.37163,1.54456 0.47918,0.89536 -1.58716,8.66044 -2.60343,9.7834 -0.67924,0.75055 -0.70957,2.0077 -0.5078,21.04161 l 0.2146,20.24336 h -10.85798 c -6.17303,0 -10.95729,-0.1607 -11.08816,-0.37245 z"
+       id="path2560" />
+  </g>
+</svg>
