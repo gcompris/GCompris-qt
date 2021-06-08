@@ -26,3 +26,4 @@ Usage example:
 
 -Don't forget to also put your source file with all the layers in the MapSources folder of the activity to keep it as reference in case some editing is needed in the future.
  
+-In the end also, please use the script convertSvgToSvgz.sh to convert all the svg output to svgz, it will save lot of space as maps are usually quite heavy svg.
