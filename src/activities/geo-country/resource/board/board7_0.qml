@@ -5,206 +5,207 @@
  * Authors:
  *   Bruno Coudoin <bruno.coudoin@gcompris.net> (GTK+ version)
  *   Pulkit Gupta <pulkitgenius@gmail.com> (Qt Quick port)
+ *   Timothée Giet <animtim@gmail.com> (new SVG map)
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
 import QtQuick 2.9
 
 QtObject {
-   property string instruction: qsTr("Counties of Brazil")
+   property string instruction: qsTr("Federative units of Brazil")
    property var levels: [
       {
-         "pixmapfile" : "brazil/background.png",
+         "pixmapfile" : "brazil/brazil.svgz",
          "type" : "SHAPE_BACKGROUND_IMAGE"
       },
       {
-         "pixmapfile" : "brazil/Amazonas.png",
-         //: County of Brazil: Amazonas
+         "pixmapfile" : "brazil/Amazonas.svgz",
+         //: Federative unit of Brazil: Amazonas
          "toolTipText" : qsTr("Amazonas"),
-         "x" : "0.269",
-         "y" : "0.266"
+         "x" : "0.2386",
+         "y" : "0.2446"
       },
       {
-         "pixmapfile" : "brazil/Para.png",
-         //: County of Brazil: Pará
+         "pixmapfile" : "brazil/Para.svgz",
+         //: Federative unit of Brazil: Pará
          "toolTipText" : qsTr("Pará"),
-         "x" : "0.538",
-         "y" : "0.259"
+         "x" : "0.5458",
+         "y" : "0.241"
       },
       {
-         "pixmapfile" : "brazil/Mato_Grosso.png",
-         //: County of Brazil: Mato Grosso
+         "pixmapfile" : "brazil/Mato_Grosso.svgz",
+         //: Federative unit of Brazil: Mato Grosso
          "toolTipText" : qsTr("Mato Grosso"),
-         "x" : "0.467",
-         "y" : "0.466"
+         "x" : "0.4626",
+         "y" : "0.4623"
       },
       {
-         "pixmapfile" : "brazil/Minas_Gerais.png",
-         //: County of Brazil: Minas Gerais
+         "pixmapfile" : "brazil/Minas_Gerais.svgz",
+         //: Federative unit of Brazil: Minas Gerais
          "toolTipText" : qsTr("Minas Gerais"),
-         "x" : "0.692",
-         "y" : "0.597"
+         "x" : "0.7197",
+         "y" : "0.6063"
       },
       {
-         "pixmapfile" : "brazil/Bahia.png",
-         //: County of Brazil: Bahia
+         "pixmapfile" : "brazil/Bahia.svgz",
+         //: Federative unit of Brazil: Bahia
          "toolTipText" : qsTr("Bahia"),
-         "x" : "0.764",
-         "y" : "0.481"
+         "x" : "0.8036",
+         "y" : "0.48"
       },
       {
-         "pixmapfile" : "brazil/Mato_Grosso_do_Sul.png",
-         //: County of Brazil: Mato Grosso do Sul
+         "pixmapfile" : "brazil/Mato_Grosso_do_Sul.svgz",
+         //: Federative unit of Brazil: Mato Grosso do Sul
          "toolTipText" : qsTr("Mato Grosso do Sul"),
-         "x" : "0.497",
-         "y" : "0.642"
+         "x" : "0.4966",
+         "y" : "0.6563"
       },
       {
-         "pixmapfile" : "brazil/Goias.png",
-         //: County of Brazil: Goiás
+         "pixmapfile" : "brazil/Goias.svgz",
+         //: Federative unit of Brazil: Goiás
          "toolTipText" : qsTr("Goiás"),
-         "x" : "0.601",
-         "y" : "0.539"
+         "x" : "0.6183",
+         "y" : "0.5428"
       },
       {
-         "pixmapfile" : "brazil/Maranhao.png",
-         //: County of Brazil: Maranhão
+         "pixmapfile" : "brazil/Maranhao.svgz",
+         //: Federative unit of Brazil: Maranhão
          "toolTipText" : qsTr("Maranhão"),
-         "x" : "0.698",
-         "y" : "0.305"
+         "x" : "0.7263",
+         "y" : "0.2908"
       },
       {
-         "pixmapfile" : "brazil/Rio_Grande_do_Sul.png",
-         //: County of Brazil: Rio Grande do Sul
+         "pixmapfile" : "brazil/Rio_Grande_do_Sul.svgz",
+         //: Federative unit of Brazil: Rio Grande do Sul
          "toolTipText" : qsTr("Rio Grande do Sul"),
          "x" : "0.519",
-         "y" : "0.865"
+         "y" : "0.8961"
       },
       {
-         "pixmapfile" : "brazil/Tocantins.png",
-         //: County of Brazil: Tocantins
+         "pixmapfile" : "brazil/Tocantins.svgz",
+         //: Federative unit of Brazil: Tocantins
          "toolTipText" : qsTr("Tocantins"),
-         "x" : "0.63",
-         "y" : "0.387"
+         "x" : "0.6506",
+         "y" : "0.3779"
       },
       {
-         "pixmapfile" : "brazil/Piaui.png",
-         //: County of Brazil: Piauí
+         "pixmapfile" : "brazil/Piaui.svgz",
+         //: Federative unit of Brazil: Piauí
          "toolTipText" : qsTr("Piauí"),
-         "x" : "0.74",
-         "y" : "0.331"
+         "x" : "0.7746",
+         "y" : "0.3186"
       },
       {
-         "pixmapfile" : "brazil/Sao_Paulo.png",
-         //: County of Brazil: São Paulo
+         "pixmapfile" : "brazil/Sao_Paulo.svgz",
+         //: Federative unit of Brazil: São Paulo
          "toolTipText" : qsTr("São Paulo"),
-         "x" : "0.627",
-         "y" : "0.685"
+         "x" : "0.6414",
+         "y" : "0.7033"
       },
       {
-         "pixmapfile" : "brazil/Rondonia.png",
-         //: County of Brazil: Rondônia
+         "pixmapfile" : "brazil/Rondonia.svgz",
+         //: Federative unit of Brazil: Rondônia
          "toolTipText" : qsTr("Rondônia"),
-         "x" : "0.322",
-         "y" : "0.422"
+         "x" : "0.2814",
+         "y" : "0.4173"
       },
       {
-         "pixmapfile" : "brazil/Roraima.png",
-         //: County of Brazil: Roraima
+         "pixmapfile" : "brazil/Roraima.svgz",
+         //: Federative unit of Brazil: Roraima
          "toolTipText" : qsTr("Roraima"),
-         "x" : "0.345",
-         "y" : "0.133"
+         "x" : "0.3182",
+         "y" : "0.1041"
       },
       {
-         "pixmapfile" : "brazil/Parana.png",
-         //: County of Brazil: Paraná
+         "pixmapfile" : "brazil/Parana.svgz",
+         //: Federative unit of Brazil: Paraná
          "toolTipText" : qsTr("Paraná"),
-         "x" : "0.565",
-         "y" : "0.733"
+         "x" : "0.5746",
+         "y" : "0.7541"
       },
       {
-         "pixmapfile" : "brazil/Acre.png",
-         //: County of Brazil: Acre
+         "pixmapfile" : "brazil/Acre.svgz",
+         //: Federative unit of Brazil: Acre
          "toolTipText" : qsTr("Acre"),
-         "x" : "0.159",
-         "y" : "0.386"
+         "x" : "0.1105",
+         "y" : "0.3753"
       },
       {
-         "pixmapfile" : "brazil/Ceara.png",
-         //: County of Brazil: Ceará
+         "pixmapfile" : "brazil/Ceara.svgz",
+         //: Federative unit of Brazil: Ceará
          "toolTipText" : qsTr("Ceará"),
-         "x" : "0.82",
-         "y" : "0.296"
+         "x" : "0.8682",
+         "y" : "0.2823"
       },
       {
-         "pixmapfile" : "brazil/Amapa.png",
-         //: County of Brazil: Amapá
+         "pixmapfile" : "brazil/Amapa.svgz",
+         //: Federative unit of Brazil: Amapá
          "toolTipText" : qsTr("Amapá"),
-         "x" : "0.546",
-         "y" : "0.14"
+         "x" : "0.5511",
+         "y" : "0.1119"
       },
       {
-         "pixmapfile" : "brazil/Pernambuco.png",
-         //: County of Brazil: Pernambuco
+         "pixmapfile" : "brazil/Pernambuco.svgz",
+         //: Federative unit of Brazil: Pernambuco
          "toolTipText" : qsTr("Pernambuco"),
-         "x" : "0.853",
-         "y" : "0.368"
+         "x" : "0.8994",
+         "y" : "0.3567"
       },
       {
-         "pixmapfile" : "brazil/Santa_Catarina.png",
-         //: County of Brazil: Santa Catarina
+         "pixmapfile" : "brazil/Santa_Catarina.svgz",
+         //: Federative unit of Brazil: Santa Catarina
          "toolTipText" : qsTr("Santa Catarina"),
-         "x" : "0.57",
-         "y" : "0.8"
+         "x" : "0.5811",
+         "y" : "0.8289"
       },
       {
-         "pixmapfile" : "brazil/Paraiba.png",
-         //: County of Brazil: Paraíba
+         "pixmapfile" : "brazil/Paraiba.svgz",
+         //: Federative unit of Brazil: Paraíba
          "toolTipText" : qsTr("Paraíba"),
-         "x" : "0.878",
-         "y" : "0.34"
+         "x" : "0.9316",
+         "y" : "0.3268"
       },
       {
-         "pixmapfile" : "brazil/Rio_Grande_do_Norte.png",
-         //: County of Brazil: Rio Grande do Norte
+         "pixmapfile" : "brazil/Rio_Grande_do_Norte.svgz",
+         //: Federative unit of Brazil: Rio Grande do Norte
          "toolTipText" : qsTr("Rio Grande do Norte"),
-         "x" : "0.883",
-         "y" : "0.308"
+         "x" : "0.9312",
+         "y" : "0.2963"
       },
       {
-         "pixmapfile" : "brazil/Espirito_Santo.png",
-         //: County of Brazil: Espírito Santo
+         "pixmapfile" : "brazil/Espirito_Santo.svgz",
+         //: Federative unit of Brazil: Espírito Santo
          "toolTipText" : qsTr("Espírito Santo"),
-         "x" : "0.794",
-         "y" : "0.619"
+         "x" : "0.8336",
+         "y" : "0.6308"
       },
       {
-         "pixmapfile" : "brazil/Rio_de_Janeiro.png",
-         //: County of Brazil: Rio de Janeiro
+         "pixmapfile" : "brazil/Rio_de_Janeiro.svgz",
+         //: Federative unit of Brazil: Rio de Janeiro
          "toolTipText" : qsTr("Rio de Janeiro"),
-         "x" : "0.752",
-         "y" : "0.673"
+         "x" : "0.7813",
+         "y" : "0.692"
       },
       {
-         "pixmapfile" : "brazil/Alagoas.png",
-         //: County of Brazil: Alagoas
+         "pixmapfile" : "brazil/Alagoas.svgz",
+         //: Federative unit of Brazil: Alagoas
          "toolTipText" : qsTr("Alagoas"),
-         "x" : "0.879",
-         "y" : "0.395"
+         "x" : "0.9334",
+         "y" : "0.3881"
       },
       {
-         "pixmapfile" : "brazil/Sergipe.png",
-         //: County of Brazil: Sergipe
+         "pixmapfile" : "brazil/Sergipe.svgz",
+         //: Federative unit of Brazil: Sergipe
          "toolTipText" : qsTr("Sergipe"),
-         "x" : "0.866",
-         "y" : "0.418"
+         "x" : "0.9183",
+         "y" : "0.4101"
       },
       {
-         "pixmapfile" : "brazil/Distrito_Federal.png",
-         //: County of Brazil: Distrito Federal
+         "pixmapfile" : "brazil/Distrito_Federal.svgz",
+         //: Federative unit of Brazil: Distrito Federal
          "toolTipText" : qsTr("Distrito Federal"),
-         "x" : "0.641",
-         "y" : "0.533"
+         "x" : "0.6619",
+         "y" : "0.5377"
       }
    ]
 }
