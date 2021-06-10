@@ -27,8 +27,7 @@ Data {
         ],
         [
             //USA
-            "qrc:/gcompris/src/activities/geo-country/resource/board/board10_0.qml",
-            "qrc:/gcompris/src/activities/geo-country/resource/board/board10_1.qml"
+            "qrc:/gcompris/src/activities/geo-country/resource/board/board10_0.qml"
         ],
         [
             //Mexico
