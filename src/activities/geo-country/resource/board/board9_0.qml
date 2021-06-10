@@ -5,241 +5,242 @@
  * Authors:
  *   Bruno Coudoin <bruno.coudoin@gcompris.net> (GTK+ version)
  *   Pulkit Gupta <pulkitgenius@gmail.com> (Qt Quick port)
+ *   Timothée Giet <animtim@gmail.com> (new SVG map)
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
 import QtQuick 2.9
 
 QtObject {
-   property string instruction: qsTr("Districts of Mexico")
+   property string instruction: qsTr("States of Mexico")
    property var levels: [
       {
-         "pixmapfile" : "mexico/background.png",
+         "pixmapfile" : "mexico/mexico.svgz",
          "type" : "SHAPE_BACKGROUND_IMAGE"
       },
       {
-         "pixmapfile" : "mexico/zacatecas.png",
-         //: District of Mexico: Zacatecas
+         "pixmapfile" : "mexico/zacatecas.svgz",
+         //: State of Mexico: Zacatecas
          "toolTipText" : qsTr("Zacatecas"),
-         "x" : "0.451",
-         "y" : "0.554"
+         "x" : "0.4807",
+         "y" : "0.5274"
       },
       {
-         "pixmapfile" : "mexico/yucatan.png",
-         //: District of Mexico: Yucatan
+         "pixmapfile" : "mexico/yucatan.svgz",
+         //: State of Mexico: Yucatan
          "toolTipText" : qsTr("Yucatan"),
-         "x" : "0.923",
-         "y" : "0.662"
+         "x" : "0.9099",
+         "y" : "0.6548"
       },
       {
-         "pixmapfile" : "mexico/veracruz.png",
-         //: District of Mexico: Veracruz
+         "pixmapfile" : "mexico/veracruz.svgz",
+         //: State of Mexico: Veracruz
          "toolTipText" : qsTr("Veracruz"),
-         "x" : "0.68",
-         "y" : "0.73"
+         "x" : "0.6832",
+         "y" : "0.6947"
       },
       {
-         "pixmapfile" : "mexico/tlaxcala.png",
-         //: District of Mexico: Tlaxcala
+         "pixmapfile" : "mexico/tlaxcala.svgz",
+         //: State of Mexico: Tlaxcala
          "toolTipText" : qsTr("Tlaxcala"),
-         "x" : "0.604",
-         "y" : "0.752"
+         "x" : "0.6191",
+         "y" : "0.7143"
       },
       {
-         "pixmapfile" : "mexico/tamaulipas.png",
-         //: District of Mexico: Tamaulipas
+         "pixmapfile" : "mexico/tamaulipas.svgz",
+         //: State of Mexico: Tamaulipas
          "toolTipText" : qsTr("Tamaulipas"),
-         "x" : "0.585",
-         "y" : "0.459"
+         "x" : "0.6038",
+         "y" : "0.4327"
       },
       {
-         "pixmapfile" : "mexico/tabasco.png",
-         //: District of Mexico: Tabasco
+         "pixmapfile" : "mexico/tabasco.svgz",
+         //: State of Mexico: Tabasco
          "toolTipText" : qsTr("Tabasco"),
-         "x" : "0.807",
-         "y" : "0.817"
+         "x" : "0.796",
+         "y" : "0.7891"
       },
       {
-         "pixmapfile" : "mexico/sonora.png",
-         //: District of Mexico: Sonora
+         "pixmapfile" : "mexico/sonora.svgz",
+         //: State of Mexico: Sonora
          "toolTipText" : qsTr("Sonora"),
-         "x" : "0.167",
-         "y" : "0.194"
+         "x" : "0.1897",
+         "y" : "0.2058"
       },
       {
-         "pixmapfile" : "mexico/sinaloa.png",
-         //: District of Mexico: Sinaloa
+         "pixmapfile" : "mexico/sinaloa.svgz",
+         //: State of Mexico: Sinaloa
          "toolTipText" : qsTr("Sinaloa"),
-         "x" : "0.288",
-         "y" : "0.461"
+         "x" : "0.3268",
+         "y" : "0.4421"
       },
       {
-         "pixmapfile" : "mexico/san_luis_potosi.png",
-         //: District of Mexico: San Luis Potosi
+         "pixmapfile" : "mexico/san_luis_potosi.svgz",
+         //: State of Mexico: San Luis Potosi
          "toolTipText" : qsTr("San Luis Potosi"),
-         "x" : "0.528",
-         "y" : "0.57"
+         "x" : "0.5512",
+         "y" : "0.5405"
       },
       {
-         "pixmapfile" : "mexico/quintana_roo.png",
-         //: District of Mexico: Quintana Roo
+         "pixmapfile" : "mexico/quintana_roo.svgz",
+         //: State of Mexico: Quintana Roo
          "toolTipText" : qsTr("Quintana Roo"),
-         "x" : "0.955",
-         "y" : "0.712"
+         "x" : "0.94",
+         "y" : "0.6975"
       },
       {
-         "pixmapfile" : "mexico/queretaro.png",
-         //: District of Mexico: Queretaro
+         "pixmapfile" : "mexico/queretaro.svgz",
+         //: State of Mexico: Queretaro
          "toolTipText" : qsTr("Queretaro"),
-         "x" : "0.547",
-         "y" : "0.677"
+         "x" : "0.5667",
+         "y" : "0.6413"
       },
       {
-         "pixmapfile" : "mexico/puebla.png",
-         //: District of Mexico: Puebla
+         "pixmapfile" : "mexico/puebla.svgz",
+         //: State of Mexico: Puebla
          "toolTipText" : qsTr("Puebla"),
-         "x" : "0.615",
-         "y" : "0.756"
+         "x" : "0.6251",
+         "y" : "0.7179"
       },
       {
-         "pixmapfile" : "mexico/oaxaca.png",
-         //: District of Mexico: Oaxaca
+         "pixmapfile" : "mexico/oaxaca.svgz",
+         //: State of Mexico: Oaxaca
          "toolTipText" : qsTr("Oaxaca"),
-         "x" : "0.677",
-         "y" : "0.871"
+         "x" : "0.6805",
+         "y" : "0.8292"
       },
       {
-         "pixmapfile" : "mexico/nuevo_leon.png",
-         //: District of Mexico: Nuevo Leon
+         "pixmapfile" : "mexico/nuevo_leon.svgz",
+         //: State of Mexico: Nuevo Leon
          "toolTipText" : qsTr("Nuevo Leon"),
-         "x" : "0.545",
-         "y" : "0.431"
+         "x" : "0.5671",
+         "y" : "0.4055"
       },
       {
-         "pixmapfile" : "mexico/nayarit.png",
-         //: District of Mexico: Nayarit
+         "pixmapfile" : "mexico/nayarit.svgz",
+         //: State of Mexico: Nayarit
          "toolTipText" : qsTr("Nayarit"),
-         "x" : "0.369",
-         "y" : "0.617"
+         "x" : "0.3962",
+         "y" : "0.5905"
       },
       {
-         "pixmapfile" : "mexico/morelos.png",
-         //: District of Mexico: Morelos
+         "pixmapfile" : "mexico/morelos.svgz",
+         //: State of Mexico: Morelos
          "toolTipText" : qsTr("Morelos"),
-         "x" : "0.573",
-         "y" : "0.792"
+         "x" : "0.5895",
+         "y" : "0.7484"
       },
       {
-         "pixmapfile" : "mexico/michoacan.png",
-         //: District of Mexico: Michoacan
+         "pixmapfile" : "mexico/michoacan.svgz",
+         //: State of Mexico: Michoacan
          "toolTipText" : qsTr("Michoacan"),
-         "x" : "0.472",
-         "y" : "0.768"
+         "x" : "0.5005",
+         "y" : "0.7276"
       },
       {
-         "pixmapfile" : "mexico/jalisco.png",
-         //: District of Mexico: Jalisco
+         "pixmapfile" : "mexico/jalisco.svgz",
+         //: State of Mexico: Jalisco
          "toolTipText" : qsTr("Jalisco"),
-         "x" : "0.413",
-         "y" : "0.674"
+         "x" : "0.4466",
+         "y" : "0.6422"
       },
       {
-         "pixmapfile" : "mexico/hidalgo.png",
-         //: District of Mexico: Hidalgo
+         "pixmapfile" : "mexico/hidalgo.svgz",
+         //: State of Mexico: Hidalgo
          "toolTipText" : qsTr("Hidalgo"),
-         "x" : "0.58",
-         "y" : "0.693"
+         "x" : "0.5952",
+         "y" : "0.6595"
       },
       {
-         "pixmapfile" : "mexico/guerrero.png",
-         //: District of Mexico: Guerrero
+         "pixmapfile" : "mexico/guerrero.svgz",
+         //: State of Mexico: Guerrero
          "toolTipText" : qsTr("Guerrero"),
-         "x" : "0.538",
-         "y" : "0.854"
+         "x" : "0.5582",
+         "y" : "0.8067"
       },
       {
-         "pixmapfile" : "mexico/guanajuato.png",
-         //: District of Mexico: Guanajuato
+         "pixmapfile" : "mexico/guanajuato.svgz",
+         //: State of Mexico: Guanajuato
          "toolTipText" : qsTr("Guanajuato"),
-         "x" : "0.507",
-         "y" : "0.675"
+         "x" : "0.5331",
+         "y" : "0.6401"
       },
       {
-         "pixmapfile" : "mexico/estado_de_mexico.png",
-         //: District of Mexico: Estado de Mexico
+         "pixmapfile" : "mexico/estado_de_mexico.svgz",
+         //: State of Mexico: Estado de Mexico
          "toolTipText" : qsTr("Estado de Mexico"),
-         "x" : "0.558",
-         "y" : "0.758"
+         "x" : "0.5733",
+         "y" : "0.7188"
       },
       {
-         "pixmapfile" : "mexico/durango.png",
-         //: District of Mexico: Durango
+         "pixmapfile" : "mexico/durango.svgz",
+         //: State of Mexico: Durango
          "toolTipText" : qsTr("Durango"),
-         "x" : "0.377",
-         "y" : "0.471"
+         "x" : "0.4082",
+         "y" : "0.4505"
       },
       {
-         "pixmapfile" : "mexico/distrito_federal.png",
-         //: District of Mexico: Distrito Federal
-         "toolTipText" : qsTr("Distrito Federal"),
-         "x" : "0.572",
-         "y" : "0.763"
+         "pixmapfile" : "mexico/districto_federal.svgz",
+         //: State of Mexico: Districto Federal
+         "toolTipText" : qsTr("Districto Federal"),
+         "x" : "0.5873",
+         "y" : "0.7192"
       },
       {
-         "pixmapfile" : "mexico/coahuila.png",
-         //: District of Mexico: Coahuila
+         "pixmapfile" : "mexico/coahuila.svgz",
+         //: State of Mexico: Coahuila
          "toolTipText" : qsTr("Coahuila"),
-         "x" : "0.477",
-         "y" : "0.34"
+         "x" : "0.5009",
+         "y" : "0.3171"
       },
       {
-         "pixmapfile" : "mexico/chiapas.png",
-         //: District of Mexico: Chiapas
+         "pixmapfile" : "mexico/chiapas.svgz",
+         //: State of Mexico: Chiapas
          "toolTipText" : qsTr("Chiapas"),
-         "x" : "0.822",
-         "y" : "0.91"
+         "x" : "0.8053",
+         "y" : "0.8759"
       },
       {
-         "pixmapfile" : "mexico/chihuahua.png",
-         //: District of Mexico: Chihuahua
+         "pixmapfile" : "mexico/chihuahua.svgz",
+         //: State of Mexico: Chihuahua
          "toolTipText" : qsTr("Chihuahua"),
-         "x" : "0.338",
-         "y" : "0.247"
+         "x" : "0.3653",
+         "y" : "0.2424"
       },
       {
-         "pixmapfile" : "mexico/campeche.png",
-         //: District of Mexico: Campeche
+         "pixmapfile" : "mexico/campeche.svgz",
+         //: State of Mexico: Campeche
          "toolTipText" : qsTr("Campeche"),
-         "x" : "0.862",
-         "y" : "0.749"
+         "x" : "0.8517",
+         "y" : "0.7186"
       },
       {
-         "pixmapfile" : "mexico/baja_california_norte.png",
-         //: District of Mexico: Baja California Norte
-         "toolTipText" : qsTr("Baja California Norte"),
-         "x" : "0.06",
-         "y" : "0.133"
+         "pixmapfile" : "mexico/baja_california.svgz",
+         //: State of Mexico: Baja California
+         "toolTipText" : qsTr("Baja California"),
+         "x" : "0.0884",
+         "y" : "0.1571"
       },
       {
-         "pixmapfile" : "mexico/baja_california_sur.png",
-         //: District of Mexico: Baja California Sur
+         "pixmapfile" : "mexico/baja_california_sur.svgz",
+         //: State of Mexico: Baja California Sur
          "toolTipText" : qsTr("Baja California Sur"),
-         "x" : "0.129",
-         "y" : "0.403"
+         "x" : "0.1741",
+         "y" : "0.4074"
       },
       {
-         "pixmapfile" : "mexico/colima.png",
-         //: District of Mexico: Colima
+         "pixmapfile" : "mexico/colima.svgz",
+         //: State of Mexico: Colima
          "toolTipText" : qsTr("Colima"),
-         "x" : "0.394",
-         "y" : "0.771"
+         "x" : "0.4336",
+         "y" : "0.7302"
       },
       {
-         "pixmapfile" : "mexico/aguascalientes.png",
-         //: District of Mexico: Aguascalientes
+         "pixmapfile" : "mexico/aguascalientes.svgz",
+         //: State of Mexico: Aguascalientes
          "toolTipText" : qsTr("Aguascalientes"),
-         "x" : "0.455",
-         "y" : "0.614"
+         "x" : "0.4867",
+         "y" : "0.5804"
       }
    ]
 }
