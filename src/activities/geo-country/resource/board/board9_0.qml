@@ -27,8 +27,8 @@ QtObject {
       },
       {
          "pixmapfile" : "mexico/yucatan.svgz",
-         //: State of Mexico: Yucatan
-         "toolTipText" : qsTr("Yucatan"),
+         //: State of Mexico: Yucatán
+         "toolTipText" : qsTr("Yucatán"),
          "x" : "0.9099",
          "y" : "0.6548"
       },
@@ -76,8 +76,8 @@ QtObject {
       },
       {
          "pixmapfile" : "mexico/san_luis_potosi.svgz",
-         //: State of Mexico: San Luis Potosi
-         "toolTipText" : qsTr("San Luis Potosi"),
+         //: State of Mexico: San Luis Potosí
+         "toolTipText" : qsTr("San Luis Potosí"),
          "x" : "0.5512",
          "y" : "0.5405"
       },
@@ -90,8 +90,8 @@ QtObject {
       },
       {
          "pixmapfile" : "mexico/queretaro.svgz",
-         //: State of Mexico: Queretaro
-         "toolTipText" : qsTr("Queretaro"),
+         //: State of Mexico: Querétaro
+         "toolTipText" : qsTr("Querétaro"),
          "x" : "0.5667",
          "y" : "0.6413"
       },
@@ -111,8 +111,8 @@ QtObject {
       },
       {
          "pixmapfile" : "mexico/nuevo_leon.svgz",
-         //: State of Mexico: Nuevo Leon
-         "toolTipText" : qsTr("Nuevo Leon"),
+         //: State of Mexico: Nuevo León
+         "toolTipText" : qsTr("Nuevo León"),
          "x" : "0.5671",
          "y" : "0.4055"
       },
@@ -132,8 +132,8 @@ QtObject {
       },
       {
          "pixmapfile" : "mexico/michoacan.svgz",
-         //: State of Mexico: Michoacan
-         "toolTipText" : qsTr("Michoacan"),
+         //: State of Mexico: Michoacán
+         "toolTipText" : qsTr("Michoacán"),
          "x" : "0.5005",
          "y" : "0.7276"
       },
@@ -167,8 +167,8 @@ QtObject {
       },
       {
          "pixmapfile" : "mexico/estado_de_mexico.svgz",
-         //: State of Mexico: Estado de Mexico
-         "toolTipText" : qsTr("Estado de Mexico"),
+         //: State of Mexico: Estado de México
+         "toolTipText" : qsTr("Estado de México"),
          "x" : "0.5733",
          "y" : "0.7188"
       },
