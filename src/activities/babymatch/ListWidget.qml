@@ -107,7 +107,7 @@ Item {
             if(nbDisplayedGroup > 0) {
                 for(var i = 0 ; i < nbDisplayedGroup ; i++) {
                     var groupEmpty = true;
-                    for(var j = 0 ; j < nbItemsByGroup, i*nbItemsByGroup + j < model.count ; j++) {
+                    for(var j = 0 ; j < nbItemsByGroup && i*nbItemsByGroup + j < model.count ; j++) {
                         if(repeater.itemAt(i*nbItemsByGroup + j).dropStatus < 0) {
                             groupEmpty = false;
                             break;
