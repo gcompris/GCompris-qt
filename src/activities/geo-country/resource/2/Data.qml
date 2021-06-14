@@ -20,8 +20,7 @@ Data {
         [
             //Turkey
             "qrc:/gcompris/src/activities/geo-country/resource/board/board5_0.qml",
-            "qrc:/gcompris/src/activities/geo-country/resource/board/board5_1.qml",
-            "qrc:/gcompris/src/activities/geo-country/resource/board/board5_2.qml"
+            "qrc:/gcompris/src/activities/geo-country/resource/board/board5_1.qml"
         ],
         [
             //China
