@@ -5,66 +5,74 @@
  * Authors:
  *   Bruno Coudoin <bruno.coudoin@gcompris.net> (GTK+ version)
  *   Pulkit Gupta <pulkitgenius@gmail.com> (Qt Quick port)
+ *   Timothée Giet <animtim@gmail.com> (new SVG map)
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
 import QtQuick 2.9
 
 QtObject {
-   property string instruction: qsTr("Districts of Australia")
+   property string instruction: qsTr("States and Territories of Australia")
    property var levels: [
       {
-         "pixmapfile" : "australia/background.png",
+         "pixmapfile" : "australia/australia.svgz",
          "type" : "SHAPE_BACKGROUND_IMAGE"
       },
       {
-         "pixmapfile" : "australia/western_australia.png",
-         //: District of Australia: Western Australia
+         "pixmapfile" : "australia/western_australia.svgz",
+         //: State of Australia: Western Australia
          "toolTipText" : qsTr("Western Australia"),
-         "x" : "0.217",
-         "y" : "0.402"
+         "x" : "0.2128",
+         "y" : "0.443"
       },
       {
-         "pixmapfile" : "australia/northern_territory.png",
-         //: District of Australia: Northern Territory
+         "pixmapfile" : "australia/northern_territory.svgz",
+         //: Territory of Australia: Northern Territory
          "toolTipText" : qsTr("Northern Territory"),
-         "x" : "0.496",
-         "y" : "0.246"
+         "x" : "0.505",
+         "y" : "0.2819"
       },
       {
-         "pixmapfile" : "australia/south_australia.png",
-         //: District of Australia: South Australia
+         "pixmapfile" : "australia/south_australia.svgz",
+         //: State of Australia: South Australia
          "toolTipText" : qsTr("South Australia"),
-         "x" : "0.533",
-         "y" : "0.622"
+         "x" : "0.5407",
+         "y" : "0.6515"
       },
       {
-         "pixmapfile" : "australia/queensland.png",
-         //: District of Australia: Queensland
+         "pixmapfile" : "australia/queensland.svgz",
+         //: State of Australia: Queensland
          "toolTipText" : qsTr("Queensland"),
-         "x" : "0.779",
-         "y" : "0.275"
+         "x" : "0.7947",
+         "y" : "0.3199"
       },
       {
-         "pixmapfile" : "australia/new_south_wales.png",
-         //: District of Australia: New South Wales
+         "pixmapfile" : "australia/new_south_wales.svgz",
+         //: State of Australia: New South Wales
          "toolTipText" : qsTr("New South Wales"),
-         "x" : "0.817",
-         "y" : "0.637"
+         "x" : "0.8305",
+         "y" : "0.6738"
       },
       {
-         "pixmapfile" : "australia/victoria.png",
-         //: District of Australia: Victoria
+         "pixmapfile" : "australia/victoria.svgz",
+         //: State of Australia: Victoria
          "toolTipText" : qsTr("Victoria"),
-         "x" : "0.772",
-         "y" : "0.753"
+         "x" : "0.787",
+         "y" : "0.7764"
       },
       {
-         "pixmapfile" : "australia/tasmania.png",
-         //: District of Australia: Tasmania
+         "pixmapfile" : "australia/tasmania.svgz",
+         //: State of Australia: Tasmania
          "toolTipText" : qsTr("Tasmania"),
-         "x" : "0.798",
-         "y" : "0.933"
+         "x" : "0.803",
+         "y" : "0.9146"
+      },
+      {
+         "pixmapfile" : "australia/capital.svgz",
+         //: Territory of Australia: Australian Capital Territory
+         "toolTipText" : qsTr("Australian Capital Territory"),
+         "x" : "0.8744",
+         "y" : "0.7478"
       }
    ]
 }
