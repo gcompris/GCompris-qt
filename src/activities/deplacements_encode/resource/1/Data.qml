@@ -14,7 +14,9 @@ Data {
     difficulty: 4
     data: [
         {
-            values : [1, 2, 3, 4]
+            rows: 10,
+            cols: 10,
+            path_length: 30
         }
     ]
 }

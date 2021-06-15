@@ -5,6 +5,7 @@
  */
 import QtQuick 2.9
 import GCompris 1.0
+import QtQml.Models 2.1
 
 import "../../core"
 import "deplacements.js" as Activity
@@ -20,10 +21,11 @@ ActivityBase {
     onStart: focus = true
     onStop: {}
 
-    pageComponent: Rectangle {
+    pageComponent: Image {
         id: background
         anchors.fill: parent
-        color: "#ABCDEF"
+        fillMode: Image.PreserveAspectCrop
+        source: "resource/maze_bg.svg"
         signal start
         signal stop
 
@@ -37,7 +39,12 @@ ActivityBase {
             id: items
             property Item main: activity.main
             readonly property string resourceUrl: activity.resourceUrl
+            property int rows
+            property int cols
             property var levels: activity.datasetLoader.data
+            property alias mapView : mapView
+            property alias mapListModel : mapListModel
+            property alias movesListModel : movesListModel
             property alias background: background
             property alias bar: bar
             property alias bonus: bonus
@@ -45,11 +52,53 @@ ActivityBase {
 
         onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
+        
+        ListModel {
+            id: mapListModel
+        }
+        
+        Item {
+            id: layoutArea
+            anchors.top: parent.top
+            anchors.bottom: bar.top
+            anchors.bottomMargin: bar.height * 0.2
+            anchors.left: parent.left
+            anchors.right: parent.right
+        }
 
-        GCText {
-            anchors.centerIn: parent
-            text: "Deplacements Encode activity"
-            fontSize: largeSize
+        MapView {
+            id: mapView
+            
+            anchors {
+                top: layoutArea.top
+                left: layoutArea.left
+                topMargin: 0.05 * parent.height
+                leftMargin: 0.10 * parent.height
+            }
+            
+            width: 0.9 * layoutArea.height
+            height: 0.9 * layoutArea.height
+            
+            rows: items.rows
+            cols: items.cols
+        }
+        
+        ListModel {
+            id: movesListModel
+        }
+        
+        MoveBar {
+            id: moveBar
+            
+            anchors {
+                top: layoutArea.top
+                left: mapView.right
+                topMargin: 0.05 * parent.height
+                leftMargin: 0.05 * parent.height
+            }
+            
+            width: parent.width - mapView.width - 2*mapView.anchors.leftMargin - anchors.leftMargin
+            height: 0.9 * layoutArea.height / 2
         }
         
         DialogChooseLevel {

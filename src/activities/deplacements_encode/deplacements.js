@@ -24,6 +24,29 @@ function stop() {
 
 function initLevel() {
     items.bar.level = currentLevel + 1
+    
+    items.rows = items.levels[currentLevel].rows
+    items.cols = items.levels[currentLevel].cols
+    
+    for(var i=0; i<items.rows; ++i)
+        for(var j=0; j<items.cols; ++j) {
+            let r = Math.floor(Math.random() * 2)
+            if(r == 0)
+                items.mapListModel.append({
+                    "path" : true,
+                    "player" : false
+                })
+            else
+                items.mapListModel.append({
+                    "path" : false,
+                    "player" : false
+                })
+        }
+        
+    for(var i=0; i<25; ++i)
+        items.movesListModel.append({
+            "direction" : "up"
+        })
 }
 
 function nextLevel() {
