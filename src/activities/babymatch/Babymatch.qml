@@ -148,7 +148,6 @@ ActivityBase {
             anchors.left: parent.left
             ListWidget {
                 id: availablePieces
-                vert: background.vert
             }
             MouseArea {
                 anchors.fill: parent

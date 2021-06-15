@@ -19,7 +19,6 @@ Item {
     anchors.leftMargin: 5 * ApplicationInfo.ratio
     z: 10
 
-    property bool vert
     property alias model: mymodel
     property alias view: view
     property alias showOk: showOk
@@ -67,18 +66,18 @@ Item {
 
     Grid {
         id: view
-        width: listWidget.vert ? leftWidget.width : 2 * bar.height
-        height: listWidget.vert ? background.height - 2 * bar.height : bar.height
+        width: leftWidget.width
+        height: background.vert ? background.height - bar.height * 2 : bar.height
         spacing: 10
         z: 20
-        columns: listWidget.vert ? 1 : nbItemsByGroup + 1
+        columns: background.vert ? 1 : nbItemsByGroup + 1
 
         property int currentDisplayedGroup: 0
         property int setCurrentDisplayedGroup
         property int nbItemsByGroup:
-            listWidget.vert ?
-                parent.height / iconSize - 2 :
-                parent.width / iconSize - 2
+            background.vert ?
+                view.height / iconSize - 1 :
+                view.width / iconSize - 2
 
         property int nbDisplayedGroup: nbItemsByGroup > 0 ? Math.ceil(model.count / nbItemsByGroup) : 0
         property int iconSize: 80 * ApplicationInfo.ratio
