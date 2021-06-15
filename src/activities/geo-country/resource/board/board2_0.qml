@@ -5,129 +5,130 @@
  * Authors:
  *   Bruno Coudoin <bruno.coudoin@gcompris.net> (GTK+ version)
  *   Pulkit Gupta <pulkitgenius@gmail.com> (Qt Quick port)
+ *   Timothée Giet <animtim@gmail.com> (new SVG map)
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
 import QtQuick 2.9
 
 QtObject {
-   property string instruction: qsTr("Districts of Germany")
+   property string instruction: qsTr("States of Germany")
    property var levels: [
       {
-         "pixmapfile" : "germany/back.png",
+         "pixmapfile" : "germany/germany.svgz",
          "type" : "SHAPE_BACKGROUND_IMAGE"
       },
       {
-         "pixmapfile" : "germany/thueringen.png",
-         //: District of Germany: Thüringen
-         "toolTipText" : qsTr("Thüringen"),
-         "x" : "0.584",
-         "y" : "0.536"
+         "pixmapfile" : "germany/thuringia.svgz",
+         //: State of Germany: Thuringia
+         "toolTipText" : qsTr("Thuringia"),
+         "x" : "0.5848",
+         "y" : "0.5289"
       },
       {
-         "pixmapfile" : "germany/schleswig_holstein.png",
-         //: District of Germany: Schleswig-Holstein
+         "pixmapfile" : "germany/schleswig-holstein.svgz",
+         //: State of Germany: Schleswig-Holstein
          "toolTipText" : qsTr("Schleswig-Holstein"),
-         "x" : "0.436",
-         "y" : "0.14"
+         "x" : "0.4092",
+         "y" : "0.1293"
       },
       {
-         "pixmapfile" : "germany/sachsen.png",
-         //: District of Germany: Sachsen
-         "toolTipText" : qsTr("Sachsen"),
-         "x" : "0.805",
-         "y" : "0.536"
+         "pixmapfile" : "germany/saxony.svgz",
+         //: State of Germany: Saxony
+         "toolTipText" : qsTr("Saxony"),
+         "x" : "0.8142",
+         "y" : "0.5287"
       },
       {
-         "pixmapfile" : "germany/sachsen-anhalt.png",
-         //: District of Germany: Sachsen-Anhalt
-         "toolTipText" : qsTr("Sachsen-Anhalt"),
-         "x" : "0.645",
-         "y" : "0.409"
+         "pixmapfile" : "germany/saxony-anhalt.svgz",
+         //: State of Germany: Saxony-Anhalt
+         "toolTipText" : qsTr("Saxony-Anhalt"),
+         "x" : "0.6485",
+         "y" : "0.3998"
       },
       {
-         "pixmapfile" : "germany/saarland.png",
-         //: District of Germany: Saarland
+         "pixmapfile" : "germany/saarland.svgz",
+         //: State of Germany: Saarland
          "toolTipText" : qsTr("Saarland"),
-         "x" : "0.13",
-         "y" : "0.729"
+         "x" : "0.1259",
+         "y" : "0.7177"
       },
       {
-         "pixmapfile" : "germany/rheinland-pfalz.png",
-         //: District of Germany: Rheinland-Pfalz
-         "toolTipText" : qsTr("Rheinland-Pfalz"),
-         "x" : "0.178",
-         "y" : "0.656"
+         "pixmapfile" : "germany/rhineland-palatinate.svgz",
+         //: State of Germany: Rhineland-Palatinate
+         "toolTipText" : qsTr("Rhineland-Palatinate"),
+         "x" : "0.171",
+         "y" : "0.6472"
       },
       {
-         "pixmapfile" : "germany/nordrhein-westfalen.png",
-         //: District of Germany: Nordrhein-Westfalen
-         "toolTipText" : qsTr("Nordrhein-Westfalen"),
-         "x" : "0.221",
-         "y" : "0.473"
+         "pixmapfile" : "germany/north_rhine-westphalia.svgz",
+         //: State of Germany: North Rhine-Westphalia
+         "toolTipText" : qsTr("North Rhine-Westphalia"),
+         "x" : "0.2079",
+         "y" : "0.468"
       },
       {
-         "pixmapfile" : "germany/niedersachsen.png",
-         //: District of Germany: Niedersachsen
-         "toolTipText" : qsTr("Niedersachsen"),
-         "x" : "0.371",
-         "y" : "0.292"
+         "pixmapfile" : "germany/lower_saxony.svgz",
+         //: State of Germany: Lower Saxony
+         "toolTipText" : qsTr("Lower Saxony"),
+         "x" : "0.3604",
+         "y" : "0.3261"
       },
       {
-         "pixmapfile" : "germany/mecklenburg-vorpommern.png",
-         //: District of Germany: Mecklenburg-Vorpommern
+         "pixmapfile" : "germany/mecklenburg-vorpommern.svgz",
+         //: State of Germany: Mecklenburg-Vorpommern
          "toolTipText" : qsTr("Mecklenburg-Vorpommern"),
-         "x" : "0.699",
-         "y" : "0.176"
+         "x" : "0.7143",
+         "y" : "0.1674"
       },
       {
-         "pixmapfile" : "germany/hessen.png",
-         //: District of Germany: Hessen
-         "toolTipText" : qsTr("Hessen"),
-         "x" : "0.356",
-         "y" : "0.587"
+         "pixmapfile" : "germany/hesse.svgz",
+         //: State of Germany: Hesse
+         "toolTipText" : qsTr("Hesse"),
+         "x" : "0.3483",
+         "y" : "0.5776"
       },
       {
-         "pixmapfile" : "germany/hamburg.png",
-         //: District of Germany: Hamburg
+         "pixmapfile" : "germany/hamburg.svgz",
+         //: State of Germany: Hamburg
          "toolTipText" : qsTr("Hamburg"),
-         "x" : "0.463",
-         "y" : "0.235"
+         "x" : "0.4553",
+         "y" : "0.2077"
       },
       {
-         "pixmapfile" : "germany/bremen.png",
-         //: District of Germany: Bremen
+         "pixmapfile" : "germany/bremen.svgz",
+         //: State of Germany: Bremen
          "toolTipText" : qsTr("Bremen"),
-         "x" : "0.289",
-         "y" : "0.252"
+         "x" : "0.3202",
+         "y" : "0.2387"
       },
       {
-         "pixmapfile" : "germany/brandenburg.png",
-         //: District of Germany: Brandenburg
+         "pixmapfile" : "germany/brandenburg.svgz",
+         //: State of Germany: Brandenburg
          "toolTipText" : qsTr("Brandenburg"),
-         "x" : "0.758",
-         "y" : "0.344"
+         "x" : "0.768",
+         "y" : "0.3425"
       },
       {
-         "pixmapfile" : "germany/berlin.png",
-         //: District of Germany: Berlin
+         "pixmapfile" : "germany/berlin.svgz",
+         //: State of Germany: Berlin
          "toolTipText" : qsTr("Berlin"),
-         "x" : "0.823",
-         "y" : "0.339"
+         "x" : "0.8108",
+         "y" : "0.3367"
       },
       {
-         "pixmapfile" : "germany/bayern.png",
-         //: District of Germany: Bayern
-         "toolTipText" : qsTr("Bayern"),
-         "x" : "0.605",
-         "y" : "0.786"
+         "pixmapfile" : "germany/bavaria.svgz",
+         //: State of Germany: Bavaria
+         "toolTipText" : qsTr("Bavaria"),
+         "x" : "0.5998",
+         "y" : "0.7735"
       },
       {
-         "pixmapfile" : "germany/baden-wuerttemberg.png",
-         //: District of Germany: Baden-Württemberg
+         "pixmapfile" : "germany/baden-wurttemberg.svgz",
+         //: State of Germany: Baden-Württemberg
          "toolTipText" : qsTr("Baden-Württemberg"),
-         "x" : "0.351",
-         "y" : "0.817"
+         "x" : "0.3482",
+         "y" : "0.8045"
       }
    ]
 }
