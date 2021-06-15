@@ -101,6 +101,20 @@ ActivityBase {
             height: 0.9 * layoutArea.height / 2
         }
         
+        MoveButtons {
+            id: moveButtons
+            
+            anchors {
+                top: moveBar.bottom
+                left: mapView.right
+                topMargin: 0.05 * parent.height
+                leftMargin: 0.05 * parent.height
+            }
+            
+            width: moveBar.width
+            height: mapView.height - moveBar.height - anchors.topMargin
+        }
+        
         DialogChooseLevel {
             id: dialogActivityConfig
             currentActivity: activity.activityInfo
