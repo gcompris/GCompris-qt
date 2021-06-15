@@ -5,158 +5,158 @@
  * Authors:
  *   Bruno Coudoin <bruno.coudoin@gcompris.net> (GTK+ version)
  *   Pulkit Gupta <pulkitgenius@gmail.com> (Qt Quick port)
+ *   Timothée Giet <animtim@gmail.com> (new SVG map)
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
 import QtQuick 2.9
 
 QtObject {
-   property int numberOfSubLevel: 3
-   property string instruction: qsTr("Districts of Italy")
+   property string instruction: qsTr("Regions of Italy")
    property var levels: [
       {
-         "pixmapfile" : "italy/backgrounditaly.png",
+         "pixmapfile" : "italy/italy.svgz",
          "type" : "SHAPE_BACKGROUND_IMAGE"
       },
       {
-         "pixmapfile" : "italy/liguria.png",
-         //: Districts of Italy: Liguria
+         "pixmapfile" : "italy/liguria.svgz",
+         //: Region of Italy: Liguria
          "toolTipText" : qsTr("Liguria"),
-         "x" : "0.181",
-         "y" : "0.267"
+         "x" : "0.1942",
+         "y" : "0.2583"
       },
       {
-         "pixmapfile" : "italy/piemonte.png",
-         //: Districts of Italy: Piemonte
-         "toolTipText" : qsTr("Piemonte"),
-         "x" : "0.108",
-         "y" : "0.169"
+         "pixmapfile" : "italy/piedmont.svgz",
+         //: Region of Italy: Piedmont
+         "toolTipText" : qsTr("Piedmont"),
+         "x" : "0.1244",
+         "y" : "0.173"
       },
       {
-         "pixmapfile" : "italy/valle_d_aosta.png",
-         //: Districts of Italy: Valle d'Aosta
-         "toolTipText" : qsTr("Valle d'Aosta"),
-         "x" : "0.063",
-         "y" : "0.13"
+         "pixmapfile" : "italy/aosta_valley.svgz",
+         //: Region of Italy: Aosta Valley
+         "toolTipText" : qsTr("Aosta Valley"),
+         "x" : "0.08",
+         "y" : "0.1346"
       },
       {
-         "pixmapfile" : "italy/lombardia.png",
-         //: Districts of Italy: Lombardia
-         "toolTipText" : qsTr("Lombardia"),
-         "x" : "0.276",
+         "pixmapfile" : "italy/lombardy.svgz",
+         //: Region of Italy: Lombardy
+         "toolTipText" : qsTr("Lombardy"),
+         "x" : "0.2893",
+         "y" : "0.1404"
+      },
+      {
+         "pixmapfile" : "italy/trentino-south_tyrol.svgz",
+         //: Region of Italy: Trentino-South Tyrol
+         "toolTipText" : qsTr("Trentino-South Tyrol"),
+         "x" : "0.4077",
+         "y" : "0.0807"
+      },
+      {
+         "pixmapfile" : "italy/veneto.svgz",
+         //: Region of Italy: Veneto
+         "toolTipText" : qsTr("Veneto"),
+         "x" : "0.4427",
          "y" : "0.134"
       },
       {
-         "pixmapfile" : "italy/trentino_alto_adige.png",
-         //: Districts of Italy: Trentino Alto Adige
-         "toolTipText" : qsTr("Trentino Alto Adige"),
-         "x" : "0.401",
-         "y" : "0.07"
-      },
-      {
-         "pixmapfile" : "italy/veneto.png",
-         //: Districts of Italy: Veneto
-         "toolTipText" : qsTr("Veneto"),
-         "x" : "0.438",
-         "y" : "0.127"
-      },
-      {
-         "pixmapfile" : "italy/friuli_venezia_giulia.png",
-         //: Districts of Italy: Friuli Venezia Giulia
+         "pixmapfile" : "italy/friuli_venezia_giulia.svgz",
+         //: Region of Italy: Friuli Venezia Giulia
          "toolTipText" : qsTr("Friuli Venezia Giulia"),
-         "x" : "0.547",
-         "y" : "0.093"
+         "x" : "0.5442",
+         "y" : "0.1028"
       },
       {
-         "pixmapfile" : "italy/emilia_romagna.png",
-         //: Districts of Italy: Emilia Romagna
-         "toolTipText" : qsTr("Emilia Romagna"),
-         "x" : "0.366",
-         "y" : "0.247"
+         "pixmapfile" : "italy/emilia-romagna.svgz",
+         //: Region of Italy: Emilia-Romagna
+         "toolTipText" : qsTr("Emilia-Romagna"),
+         "x" : "0.3712",
+         "y" : "0.2412"
       },
       {
-         "pixmapfile" : "italy/toscana.png",
-         //: Districts of Italy: Toscana
-         "toolTipText" : qsTr("Toscana"),
-         "x" : "0.371",
-         "y" : "0.341"
+         "pixmapfile" : "italy/tuscany.svgz",
+         //: Region of Italy: Tuscany
+         "toolTipText" : qsTr("Tuscany"),
+         "x" : "0.3754",
+         "y" : "0.3303"
       },
       {
-         "pixmapfile" : "italy/umbria.png",
-         //: Districts of Italy: Umbria
+         "pixmapfile" : "italy/umbria.svgz",
+         //: Region of Italy: Umbria
          "toolTipText" : qsTr("Umbria"),
-         "x" : "0.5",
-         "y" : "0.378"
+         "x" : "0.5004",
+         "y" : "0.3603"
       },
       {
-         "pixmapfile" : "italy/marche.png",
-         //: Districts of Italy: Marche
+         "pixmapfile" : "italy/marche.svgz",
+         //: Region of Italy: Marche
          "toolTipText" : qsTr("Marche"),
-         "x" : "0.539",
-         "y" : "0.346"
+         "x" : "0.5386",
+         "y" : "0.3322"
       },
       {
-         "pixmapfile" : "italy/lazio.png",
-         //: Districts of Italy: Lazio
+         "pixmapfile" : "italy/lazio.svgz",
+         //: Region of Italy: Lazio
          "toolTipText" : qsTr("Lazio"),
-         "x" : "0.513",
-         "y" : "0.461"
+         "x" : "0.5133",
+         "y" : "0.4572"
       },
       {
-         "pixmapfile" : "italy/abruzzo.png",
-         //: Districts of Italy: Abruzzo
+         "pixmapfile" : "italy/abruzzo.svgz",
+         //: Region of Italy: Abruzzo
          "toolTipText" : qsTr("Abruzzo"),
-         "x" : "0.612",
-         "y" : "0.437"
+         "x" : "0.6071",
+         "y" : "0.418"
       },
       {
-         "pixmapfile" : "italy/molise.png",
-         //: Districts of Italy: Molise
+         "pixmapfile" : "italy/molise.svgz",
+         //: Region of Italy: Molise
          "toolTipText" : qsTr("Molise"),
-         "x" : "0.668",
-         "y" : "0.487"
+         "x" : "0.6597",
+         "y" : "0.4651"
       },
       {
-         "pixmapfile" : "italy/campania.png",
-         //: Districts of Italy: Campania
+         "pixmapfile" : "italy/campania.svgz",
+         //: Region of Italy: Campania
          "toolTipText" : qsTr("Campania"),
-         "x" : "0.688",
-         "y" : "0.569"
+         "x" : "0.6785",
+         "y" : "0.5448"
       },
       {
-         "pixmapfile" : "italy/puglia.png",
-         //: Districts of Italy: Puglia
-         "toolTipText" : qsTr("Puglia"),
-         "x" : "0.849",
-         "y" : "0.558"
+         "pixmapfile" : "italy/apulia.svgz",
+         //: Region of Italy: Apulia
+         "toolTipText" : qsTr("Apulia"),
+         "x" : "0.8353",
+         "y" : "0.5235"
       },
       {
-         "pixmapfile" : "italy/basilicata.png",
-         //: Districts of Italy: Basilicata
+         "pixmapfile" : "italy/basilicata.svgz",
+         //: Region of Italy: Basilicata
          "toolTipText" : qsTr("Basilicata"),
-         "x" : "0.797",
-         "y" : "0.589"
+         "x" : "0.7848",
+         "y" : "0.5639"
       },
       {
-         "pixmapfile" : "italy/calabria.png",
-         //: Districts of Italy: Calabria
+         "pixmapfile" : "italy/calabria.svgz",
+         //: Region of Italy: Calabria
          "toolTipText" : qsTr("Calabria"),
-         "x" : "0.822",
-         "y" : "0.713"
+         "x" : "0.8104",
+         "y" : "0.686"
       },
       {
-         "pixmapfile" : "italy/sicilia.png",
-         //: Districts of Italy: Sicilia
-         "toolTipText" : qsTr("Sicilia"),
-         "x" : "0.598",
-         "y" : "0.819"
+         "pixmapfile" : "italy/sicily.svgz",
+         //: Region of Italy: Sicily
+         "toolTipText" : qsTr("Sicily"),
+         "x" : "0.5981",
+         "y" : "0.8408"
       },
       {
-         "pixmapfile" : "italy/sardegna.png",
-         //: Districts of Italy: Sardegna
-         "toolTipText" : qsTr("Sardegna"),
-         "x" : "0.198",
-         "y" : "0.625"
+         "pixmapfile" : "italy/sardinia.svgz",
+         //: Region of Italy: Sardinia
+         "toolTipText" : qsTr("Sardinia"),
+         "x" : "0.2099",
+         "y" : "0.5994"
       }
    ]
 }

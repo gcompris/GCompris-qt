@@ -31,10 +31,7 @@ Data {
         ],
         [
             //Italy
-            "qrc:/gcompris/src/activities/geo-country/resource/board/board11_0.qml",
-            "qrc:/gcompris/src/activities/geo-country/resource/board/board11_1.qml",
-            "qrc:/gcompris/src/activities/geo-country/resource/board/board11_2.qml",
-            "qrc:/gcompris/src/activities/geo-country/resource/board/board11_3.qml"
+            "qrc:/gcompris/src/activities/geo-country/resource/board/board11_0.qml"
         ],
         [
             //Scotland
