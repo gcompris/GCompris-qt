@@ -36,9 +36,7 @@ Data {
         [
             //Scotland
             "qrc:/gcompris/src/activities/geo-country/resource/board/board15_0.qml",
-            "qrc:/gcompris/src/activities/geo-country/resource/board/board15_1.qml",
-            "qrc:/gcompris/src/activities/geo-country/resource/board/board15_2.qml",
-            "qrc:/gcompris/src/activities/geo-country/resource/board/board15_3.qml"
+            "qrc:/gcompris/src/activities/geo-country/resource/board/board15_1.qml"
         ],
         [
             //Romania
