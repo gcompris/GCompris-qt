@@ -17,12 +17,11 @@ Item {
     // true if the path is going through this block
     // property bool path
     
-    // true if the player is currenty on this block
-    // property bool player
+    
     
     Rectangle {
         anchors.fill: parent
-        color: (path) ? "pink" : "yellow"
+        color: (path) ? "pink" : "white"
         border.color: "black"
         border.width: 1
         opacity: 0.5
@@ -31,8 +30,7 @@ Item {
             anchors.fill: parent
             
             onClicked: {
-                console.log(path, player)
-                console.log(parent.width, parent.height)
+                // send a response
             }
         }
     }

@@ -28,7 +28,18 @@ Rectangle {
             color: "pink"
             border.color: "black"
             border.width: 2
-            radius: width/2
+            radius: width / 2
+            
+            Image {
+                source: "resource/right-arrow-plain.png"
+                width: 0.6 * parent.width
+                height: width
+                anchors {
+                    horizontalCenter: parent.horizontalCenter
+                    verticalCenter: parent.verticalCenter
+                }
+                rotation: ["right", "bottom", "left", "up"].indexOf(direction) * 90
+            }
         }
     }
     

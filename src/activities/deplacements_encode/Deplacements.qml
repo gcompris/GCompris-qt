@@ -39,6 +39,7 @@ ActivityBase {
             id: items
             property Item main: activity.main
             readonly property string resourceUrl: activity.resourceUrl
+            readonly property string mode: activity.mode
             property int rows
             property int cols
             property var levels: activity.datasetLoader.data

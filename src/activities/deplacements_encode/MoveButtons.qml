@@ -8,7 +8,7 @@ import QtQuick 2.9
 import GCompris 1.0
 import QtQml.Models 2.1
 
-import "../../core" as Core
+import "../../core"
 import "deplacements.js" as Activity
 
 Item {
@@ -21,55 +21,46 @@ Item {
             verticalCenter: parent.verticalCenter
             horizontalCenter: parent.horizontalCenter
         }
-        spacing: 15 * ApplicationInfo.ratio        
+        spacing: 15 * ApplicationInfo.ratio
         
-        Rectangle {
+        BarButton {
             id: upButton
-            width: size
-            height: size
-            color: "pink"
-            border {
-                color: "white"
-                width: 3
-            }
-            radius: 0.5 * width
+            source: "resource/right-arrow.png"
+            rotation: -90
+            sourceSize.width: size
+            x: 10 * ApplicationInfo.ratio
+            y: 10 * ApplicationInfo.ratio
+//             onClicked: items.fastMode = !items.fastMode
         }
         
-        Rectangle {
+        BarButton {
             id: downButton
-            width: size
-            height: size
-            color: "pink"
-            border {
-                color: "white"
-                width: 3
-            }
-            radius: 0.5 * width
+            source: "resource/right-arrow.png"
+            rotation: 90
+            sourceSize.width: size
+            x: 10 * ApplicationInfo.ratio
+            y: 10 * ApplicationInfo.ratio
+//             onClicked: items.fastMode = !items.fastMode
         }
         
-        Rectangle {
+        BarButton {
             id: leftButton
-            width: size
-            height: size
-            color: "pink"
-            border {
-                color: "white"
-                width: 3
-            }
-            radius: 0.5 * width
+            source: "resource/right-arrow.png"
+            rotation: -180
+            sourceSize.width: size
+            x: 10 * ApplicationInfo.ratio
+            y: 10 * ApplicationInfo.ratio
+//             onClicked: items.fastMode = !items.fastMode
         }
         
-        Rectangle {
+        BarButton {
             id: rightButton
-            width: size
-            height: size
-            color: "pink"
-            border {
-                color: "white"
-                width: 3
-            }
-            radius: 0.5 * width
+            source: "resource/right-arrow.png"
+            rotation: 0
+            sourceSize.width: size
+            x: 10 * ApplicationInfo.ratio
+            y: 10 * ApplicationInfo.ratio
+//             onClicked: items.fastMode = !items.fastMode
         }
     }
-    
 }

@@ -11,11 +11,13 @@ var currentLevel = 0
 var numberOfLevel
 var items
 
+var path = []
+var position = [-1, -1]
+
 function start(items_) {
     items = items_
     currentLevel = 0
     numberOfLevel = items.levels.length
-    console.log(items.levels)
     initLevel()
 }
 
@@ -29,24 +31,70 @@ function initLevel() {
     items.cols = items.levels[currentLevel].cols
     
     for(var i=0; i<items.rows; ++i)
-        for(var j=0; j<items.cols; ++j) {
-            let r = Math.floor(Math.random() * 2)
-            if(r == 0)
-                items.mapListModel.append({
-                    "path" : true,
-                    "player" : false
-                })
-            else
-                items.mapListModel.append({
-                    "path" : false,
-                    "player" : false
-                })
-        }
+        for(var j=0; j<items.cols; ++j)
+            items.mapListModel.append({ "path": false })
+    
+    loadMap(items.levels[currentLevel].path)
+    
+    if(items.mode === "encode")
+        showPath();
         
-    for(var i=0; i<25; ++i)
-        items.movesListModel.append({
-            "direction" : "up"
-        })
+//     var list = ["right", "bottom", "left", "up"]
+//     for(var i=0; i<25; ++i) {
+//         let r = Math.floor(Math.random() * 4)
+//         items.movesListModel.append({
+//             "direction" : list[r]
+//         })
+//     }
+}
+
+function findStart(map) {
+    for(var i=0; i < map.length; ++i) {
+        for(var j=0; i < map[i].length; ++j)
+            if(map[i][j] === 's' || map[i][j] === 'S')
+                return [j, i];
+    }
+    return [-1, -1]
+}
+
+function isValidPos(map, x, y, prev_x, prev_y) {
+    if(prev_x === x && prev_y === y)
+        return false;
+    
+    if(y >= map.length || y < 0 || x >= map[0].length || x < 0)
+        return false;
+    
+    return map[y][x] === '*' || map[y][x] === 'S' || map [y][x] === 's';
+}
+
+function loadMap(map) {
+    path = []
+    var curr = findStart(map)
+    var prev = [-1, -1]
+    var next;
+    
+    while(isValidPos(map, curr[0], curr[1], prev[0], prev[1])) {
+        path.push(curr);
+        
+        next = [-1, -1]
+        if(isValidPos(map, curr[0], curr[1] - 1, prev[0], prev[1]))
+            next = [curr[0], curr[1] - 1]
+        else if(isValidPos(map, curr[0], curr[1] + 1, prev[0], prev[1]))
+            next = [curr[0], curr[1] + 1]
+        else if(isValidPos(map, curr[0] - 1, curr[1], prev[0], prev[1]))
+            next = [curr[0] - 1, curr[1]]
+        else if(isValidPos(map, curr[0] + 1, curr[1], prev[0], prev[1]))
+            next = [curr[0] + 1, curr[1]]
+            
+        prev = curr
+        curr = next
+    }
+}
+
+function showPath() {
+    for(var i=0; i < path.length; ++i) {
+        items.mapListModel.set(path[i][1] * items.cols + path[i][0], {"path" : true})
+    }
 }
 
 function nextLevel() {
