@@ -59,7 +59,7 @@ Steps to create country regions map:
 
 -Save the file as inkscape compressed svgz
 
--install the inksacpe extension "Export Layers GCompris", and use it to export all the layers to separated svg files and a text file with the coordinates for each region (they will be found after export in ~/.config/inkscape/extension/layers/ )
+-install the inkscape extension "Export Layers GCompris", and use it to export all the layers to separated svg files and a text file with the coordinates for each region (they will be found after export in ~/.config/inkscape/extension/layers/ )
 
 -copy the script convertSvgToSvgz.sh inside this layers folder and run it to convert all svg to svgz, then do rm -f *.svg to delete the svg and keep only the svgz files
 
