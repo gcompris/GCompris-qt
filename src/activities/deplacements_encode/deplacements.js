@@ -14,6 +14,17 @@ var items
 var path = []
 var position = 0
 
+const mapModel = {
+    "path": false,
+    "flag": false,
+    "invisible": false,
+    "stone": false,
+    "tree": false,
+    "bush": false,
+    "grass": false,
+    "water": false
+}
+
 function start(items_) {
     items = items_
     currentLevel = 0
@@ -35,7 +46,7 @@ function initLevel() {
     
     for(var i=0; i<items.rows; ++i)
         for(var j=0; j<items.cols; ++j)
-            items.mapListModel.append({ "path": false })
+            items.mapListModel.append(mapModel)
     
     loadMap(items.levels[currentLevel].path)
     
@@ -47,23 +58,32 @@ function initLevel() {
     
     // intialize tux position
     items.tux.init()
-        
-//     var list = ["right", "bottom", "left", "up"]
-//     for(var i=0; i<25; ++i) {
-//         let r = Math.floor(Math.random() * 4)
-//         items.movesListModel.append({
-//             "direction" : list[r]
-//         })
-//     }
 }
 
-function findStart(map) {
+function findStartAndLoadObstacles(map) {
+    var start = [-1, -1]
     for(var i=0; i < map.length; ++i) {
-        for(var j=0; i < map[i].length; ++j)
-            if(map[i][j] === 's' || map[i][j] === 'S')
-                return [j, i];
+        for(var j=0; j < map[i].length; ++j)
+            if(map[i][j].toUpperCase() === 'S')
+                start = [j, i];
+            else if(map[i][j].toUpperCase() === 'E')
+                items.mapListModel.set(positionToIndex([j, i]), {"flag": true})
+            else if(map[i][j].toUpperCase() === 'I')
+                items.mapListModel.set(positionToIndex([j, i]), {"invisible": true})
+            else if(map[i][j].toUpperCase() === 'S')
+                items.mapListModel.set(positionToIndex([j, i]), {"stone": true})
+            else if(map[i][j].toUpperCase() === 'T')
+                items.mapListModel.set(positionToIndex([j, i]), {"tree": true})
+            else if(map[i][j].toUpperCase() === 'B')
+                items.mapListModel.set(positionToIndex([j, i]), {"bush": true})
+            else if(map[i][j].toUpperCase() === 'B')
+                items.mapListModel.set(positionToIndex([j, i]), {"bush": true})
+            else if(map[i][j].toUpperCase() === 'G')
+                items.mapListModel.set(positionToIndex([j, i]), {"grass": true})
+            else if(map[i][j].toUpperCase() === 'W')
+                items.mapListModel.set(positionToIndex([j, i]), {"water": true})
     }
-    return [-1, -1]
+    return start
 }
 
 function isValidPos(map, x, y, prev_x, prev_y) {
@@ -73,16 +93,16 @@ function isValidPos(map, x, y, prev_x, prev_y) {
     if(y >= map.length || y < 0 || x >= map[0].length || x < 0)
         return false;
     
-    return map[y][x] === '*' || map[y][x] === 'S' || map [y][x] === 's';
+    return map[y][x] === '*' || map[y][x].toUpperCase() === 'S' || map[y][x].toUpperCase() === 'E';
 }
 
 function loadMap(map) {
     path = []
-    var curr = findStart(map)
+    var curr = findStartAndLoadObstacles(map)
     var prev = [-1, -1]
     var next;
     
-    while(isValidPos(map, curr[0], curr[1], prev[0], prev[1])) {
+    do {
         path.push(curr);
         
         next = [-1, -1]
@@ -98,6 +118,9 @@ function loadMap(map) {
         prev = curr
         curr = next
     }
+    while(map[prev[1]][prev[0]].toUpperCase() != 'E')
+    
+    items.mapListModel.set(positionToIndex(prev), {"flag": true})
 }
 
 function positionToIndex(posArray) {
@@ -131,6 +154,9 @@ function moveTuxToBlock() {
 function updateTux() {
     setTuxDirection()
     moveTuxToBlock()
+    
+    if(position == path.length - 1)
+        items.bonus.good ("tux")
 }
 
 function findDirectionChange(fromX, fromY, toX, toY) {
@@ -147,7 +173,10 @@ function findDirectionChange(fromX, fromY, toX, toY) {
     return direction
 }
 
-function moveTowards(direction) {    
+function moveTowards(direction) {
+    if(items.tux.isAnimationRunning)
+        return
+    
     var correctDirection = findDirectionChange(path[position][0], path[position][1], 
                                         path[position+1][0], path[position+1][1])
     if(correctDirection === direction) {
