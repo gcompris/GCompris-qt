@@ -30,7 +30,7 @@ Item {
             sourceSize.width: size
             x: 10 * ApplicationInfo.ratio
             y: 10 * ApplicationInfo.ratio
-//             onClicked: items.fastMode = !items.fastMode
+            onClicked: Activity.moveTowards('UP')
         }
         
         BarButton {
@@ -40,7 +40,7 @@ Item {
             sourceSize.width: size
             x: 10 * ApplicationInfo.ratio
             y: 10 * ApplicationInfo.ratio
-//             onClicked: items.fastMode = !items.fastMode
+            onClicked: Activity.moveTowards('DOWN')
         }
         
         BarButton {
@@ -50,7 +50,7 @@ Item {
             sourceSize.width: size
             x: 10 * ApplicationInfo.ratio
             y: 10 * ApplicationInfo.ratio
-//             onClicked: items.fastMode = !items.fastMode
+            onClicked: Activity.moveTowards('LEFT')
         }
         
         BarButton {
@@ -60,7 +60,7 @@ Item {
             sourceSize.width: size
             x: 10 * ApplicationInfo.ratio
             y: 10 * ApplicationInfo.ratio
-//             onClicked: items.fastMode = !items.fastMode
+            onClicked: Activity.moveTowards('RIGHT')
         }
     }
 }

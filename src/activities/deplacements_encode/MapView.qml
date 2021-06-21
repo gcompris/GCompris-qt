@@ -17,6 +17,9 @@ Rectangle {
     property int rows
     property int cols
     
+    property double cellWidth: width / cols
+    property double cellHeight: height / rows
+    
     DelegateModel {
         id: delegateModel
         model: mapListModel
@@ -31,8 +34,8 @@ Rectangle {
         anchors.fill: parent
         interactive: false
         
-        cellWidth: width / cols
-        cellHeight: height / rows
+        cellWidth: mapView.cellWidth 
+        cellHeight: mapView.cellHeight
         
         model: delegateModel
     }

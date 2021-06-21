@@ -12,7 +12,7 @@ var numberOfLevel
 var items
 
 var path = []
-var position = [-1, -1]
+var position = 0
 
 function start(items_) {
     items = items_
@@ -30,6 +30,9 @@ function initLevel() {
     items.rows = items.levels[currentLevel].rows
     items.cols = items.levels[currentLevel].cols
     
+    items.mapListModel.clear()
+    items.movesListModel.clear()
+    
     for(var i=0; i<items.rows; ++i)
         for(var j=0; j<items.cols; ++j)
             items.mapListModel.append({ "path": false })
@@ -38,6 +41,12 @@ function initLevel() {
     
     if(items.mode === "encode")
         showPath();
+    
+    // indicating we are at the starting of the path
+    position = 0
+    
+    // intialize tux position
+    items.tux.init()
         
 //     var list = ["right", "bottom", "left", "up"]
 //     for(var i=0; i<25; ++i) {
@@ -91,9 +100,64 @@ function loadMap(map) {
     }
 }
 
+function positionToIndex(posArray) {
+    return posArray[1] * items.cols + posArray[0];
+}
+
 function showPath() {
     for(var i=0; i < path.length; ++i) {
-        items.mapListModel.set(path[i][1] * items.cols + path[i][0], {"path" : true})
+        items.mapListModel.set(positionToIndex(path[i]), {"path" : true})
+    }
+}
+
+function setTuxDirection() {
+    var tuxDirection = items.tux.direction
+    var rotation = 0
+    if(tuxDirection === 'LEFT')
+        rotation = 90
+    else if(tuxDirection === 'UP')
+        rotation = 180
+    else if(tuxDirection === 'RIGHT')
+        rotation = 270
+    
+    items.tux.rotation = rotation
+}
+
+function moveTuxToBlock() {
+    items.tux.x = items.mapView.x + path[position][0] * items.mapView.cellWidth
+    items.tux.y = items.mapView.y + path[position][1] * items.mapView.cellHeight
+}
+
+function updateTux() {
+    setTuxDirection()
+    moveTuxToBlock()
+}
+
+function findDirectionChange(fromX, fromY, toX, toY) {
+    // find direction change in case of absolute movement
+    var direction = null
+    if(fromY + 1 === toY && fromX === toX)
+        direction = 'DOWN'
+    else if(fromY - 1 === toY && fromX === toX)
+        direction = 'UP'
+    else if(fromY === toY && fromX + 1 === toX)
+        direction = 'RIGHT'
+    else if(fromY === toY && fromX - 1 === toX)
+        direction = 'LEFT'
+    return direction
+}
+
+function moveTowards(direction) {    
+    var correctDirection = findDirectionChange(path[position][0], path[position][1], 
+                                        path[position+1][0], path[position+1][1])
+    if(correctDirection === direction) {
+        items.movesListModel.append({
+            "direction" : direction
+        })
+        
+        position = position + 1
+        items.tux.direction = direction
+        updateTux()
     }
 }
 

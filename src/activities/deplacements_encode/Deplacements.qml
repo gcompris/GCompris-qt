@@ -44,6 +44,7 @@ ActivityBase {
             property int cols
             property var levels: activity.datasetLoader.data
             property alias mapView : mapView
+            property alias tux : tux
             property alias mapListModel : mapListModel
             property alias movesListModel : movesListModel
             property alias background: background
@@ -116,6 +117,12 @@ ActivityBase {
             height: mapView.height - moveBar.height - anchors.topMargin
         }
         
+        Tux {
+            id: tux
+            width: mapView.cellWidth
+            height: mapView.cellHeight
+        }
+        
         DialogChooseLevel {
             id: dialogActivityConfig
             currentActivity: activity.activityInfo
@@ -159,5 +166,9 @@ ActivityBase {
             Component.onCompleted: win.connect(Activity.nextLevel)
         }
     }
-
+    
+    Keys.onLeftPressed: Activity.moveTowards('LEFT')
+    Keys.onRightPressed: Activity.moveTowards('RIGHT')
+    Keys.onUpPressed: Activity.moveTowards('UP')
+    Keys.onDownPressed: Activity.moveTowards('DOWN')
 }

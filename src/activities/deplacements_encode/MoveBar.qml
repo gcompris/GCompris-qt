@@ -38,7 +38,7 @@ Rectangle {
                     horizontalCenter: parent.horizontalCenter
                     verticalCenter: parent.verticalCenter
                 }
-                rotation: ["right", "bottom", "left", "up"].indexOf(direction) * 90
+                rotation: ["RIGHT", "DOWN", "LEFT", "UP"].indexOf(direction) * 90
             }
         }
     }
