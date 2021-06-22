@@ -9,7 +9,7 @@ import GCompris 1.0
 import QtQml.Models 2.1
 
 import "../../core" as Core
-import "deplacements.js" as Activity
+import "path.js" as Activity
 
 Rectangle {
     id: moveBar
@@ -31,7 +31,7 @@ Rectangle {
             radius: width / 2
             
             Image {
-                source: "resource/right-arrow-plain.png"
+                source: "qrc:/gcompris/src/activities/path_encoding/resource/right-arrow-plain.png"
                 width: 0.6 * parent.width
                 height: width
                 anchors {

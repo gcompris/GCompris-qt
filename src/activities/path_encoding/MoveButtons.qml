@@ -9,7 +9,7 @@ import GCompris 1.0
 import QtQml.Models 2.1
 
 import "../../core"
-import "deplacements.js" as Activity
+import "path.js" as Activity
 
 Item {
     id: moveButtons
@@ -25,7 +25,7 @@ Item {
         
         BarButton {
             id: upButton
-            source: "resource/right-arrow.png"
+            source: "qrc:/gcompris/src/activities/path_encoding/resource/right-arrow.png"
             rotation: -90
             sourceSize.width: size
             x: 10 * ApplicationInfo.ratio
@@ -35,7 +35,7 @@ Item {
         
         BarButton {
             id: downButton
-            source: "resource/right-arrow.png"
+            source: "qrc:/gcompris/src/activities/path_encoding/resource/right-arrow.png"
             rotation: 90
             sourceSize.width: size
             x: 10 * ApplicationInfo.ratio
@@ -45,7 +45,7 @@ Item {
         
         BarButton {
             id: leftButton
-            source: "resource/right-arrow.png"
+            source: "qrc:/gcompris/src/activities/path_encoding/resource/right-arrow.png"
             rotation: -180
             sourceSize.width: size
             x: 10 * ApplicationInfo.ratio
@@ -55,7 +55,7 @@ Item {
         
         BarButton {
             id: rightButton
-            source: "resource/right-arrow.png"
+            source: "qrc:/gcompris/src/activities/path_encoding/resource/right-arrow.png"
             rotation: 0
             sourceSize.width: size
             x: 10 * ApplicationInfo.ratio

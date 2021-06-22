@@ -40,7 +40,6 @@ color_mix
 color_mix_light
 colors
 crane
-deplacements_encode
 details
 digital_electricity
 drawletters
@@ -131,6 +130,7 @@ ordering_chronology
 ordering_numbers
 ordering_sentences
 paintings
+path_encoding
 penalty
 photo_hunter
 piano_composition

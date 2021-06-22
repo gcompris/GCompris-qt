@@ -1,4 +1,4 @@
-/* GCompris - deplacements.qml
+/* GCompris - Path.qml
  *
  * SPDX-FileCopyrightText: 2021 Harsh Kumar <hadron43@yahoo.com>
  * SPDX-License-Identifier: GPL-3.0-or-later
@@ -8,7 +8,7 @@ import GCompris 1.0
 import QtQml.Models 2.1
 
 import "../../core"
-import "deplacements.js" as Activity
+import "path.js" as Activity
 
 ActivityBase {
     id: activity
@@ -21,11 +21,10 @@ ActivityBase {
     onStart: focus = true
     onStop: {}
 
-    pageComponent: Image {
+    pageComponent: Rectangle {
         id: background
+        color: "#4DA849"
         anchors.fill: parent
-        fillMode: Image.PreserveAspectCrop
-        source: "resource/maze_bg.svg"
         signal start
         signal stop
 

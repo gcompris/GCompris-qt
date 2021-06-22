@@ -6,12 +6,12 @@
 import GCompris 1.0
 
 ActivityInfo {
-  name: "deplacements_encode/DeplacementsEncode.qml"
+  name: "path_encoding/PathEncoding.qml"
   difficulty: 1
-  icon: "deplacements_encode/deplacements_encode.svg"
+  icon: "path_encoding/path_encoding.svg"
   author: "Harsh Kumar &lt;hadron43@yahoo.com&gt;"
   //: Activity title
-  title: "Deplacements Encode"
+  title: "Path Encoding"
   //: Help title
   description: ""
   //intro: "put here in comment the text for the intro voice"

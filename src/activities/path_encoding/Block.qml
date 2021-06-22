@@ -9,21 +9,18 @@ import GCompris 1.0
 import QtQml.Models 2.1
 
 import "../../core"
-import "deplacements.js" as Activity
+import "path.js" as Activity
 
 Item {
     id: block
     visible: !invisible
     
-    // true if the path is going through this block
-    // property bool path    
-    
     Rectangle {
         anchors.fill: parent
-        color: (path) ? "pink" : "white"
+        color: "#4DA849"
         border.color: "black"
         border.width: 1
-        opacity: 0.5
+        //opacity: 0.5
         
         MouseArea {
             anchors.fill: parent
@@ -32,12 +29,6 @@ Item {
                 // send a response
             }
         }
-    }
-    
-    Image {
-        anchors.fill: parent
-        source: "qrc:/gcompris/src/activities/deplacements_encode/resource/blank.jpg"
-        fillMode: Image.PreserveAspectFit
     }
     
     Image {
@@ -50,12 +41,12 @@ Item {
             topMargin: 0.15 * parent.height
         }
         source:
-            (stone) ? "qrc:/gcompris/src/activities/deplacements_encode/resource/stone.png" :
-            (tree) ? "qrc:/gcompris/src/activities/deplacements_encode/resource/tree.png" :
-            (bush) ? "qrc:/gcompris/src/activities/deplacements_encode/resource/bush.png" :
-            (grass) ? "qrc:/gcompris/src/activities/deplacements_encode/resource/grass.png" :
-            (water) ? "qrc:/gcompris/src/activities/deplacements_encode/resource/pond.png" :
-            "qrc:/gcompris/src/activities/deplacements_encode/resource/blank.jpg"
+            (stone) ? "qrc:/gcompris/src/activities/path_encoding/resource/stone.png" :
+            (tree) ? "qrc:/gcompris/src/activities/path_encoding/resource/tree.png" :
+            (bush) ? "qrc:/gcompris/src/activities/path_encoding/resource/bush.png" :
+            (grass) ? "qrc:/gcompris/src/activities/path_encoding/resource/grass.png" :
+            (water) ? "qrc:/gcompris/src/activities/path_encoding/resource/pond.png" :
+            ""
         fillMode: Image.PreserveAspectFit
     }
     
@@ -64,7 +55,7 @@ Item {
         height: 0.7 * parent.height
         visible: path
         anchors.fill: parent
-        source:"qrc:/gcompris/src/activities/deplacements_encode/resource/mud.jpg"
+        source:"qrc:/gcompris/src/activities/path_encoding/resource/mud.jpg"
         fillMode: Image.PreserveAspectFit
     }
     
@@ -78,7 +69,7 @@ Item {
             leftMargin: 0.15 * parent.width
             topMargin: 0.15 * parent.height
         }
-        source:"qrc:/gcompris/src/activities/deplacements_encode/resource/finish.png"
+        source:"qrc:/gcompris/src/activities/path_encoding/resource/finish.png"
         fillMode: Image.PreserveAspectFit
     }
 }

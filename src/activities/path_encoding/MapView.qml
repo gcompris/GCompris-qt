@@ -9,7 +9,7 @@ import GCompris 1.0
 import QtQml.Models 2.1
 
 import "../../core"
-import "deplacements.js" as Activity
+import "path.js" as Activity
 
 Rectangle {
     id: mapView

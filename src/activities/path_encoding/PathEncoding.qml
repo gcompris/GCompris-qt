@@ -1,4 +1,4 @@
-/* GCompris - DeplacementsEncode.qml
+/* GCompris - PathEncoding.qml
  *
  * SPDX-FileCopyrightText: 2021 Harsh Kumar <hadron43@yahoo.com>
  * SPDX-License-Identifier: GPL-3.0-or-later
@@ -9,7 +9,7 @@ import GCompris 1.0
 
 import "../../core"
 
-Deplacements {
+Path_ {
     id: activity
     mode: "encode"
     movement: "absolute"
