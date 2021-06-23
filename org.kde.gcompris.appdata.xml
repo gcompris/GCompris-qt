@@ -28,7 +28,7 @@
   <name xml:lang="ml">ജികോംപ്രി</name>
   <name xml:lang="nl">GCompris</name>
   <name xml:lang="nn">GCompris</name>
-  <name xml:lang="pa">ਜੀਕੋਮਪਰਿਸ</name>
+  <name xml:lang="pa">ਜੀ-ਕੋਮਪਰਿਸ</name>
   <name xml:lang="pl">GCompris</name>
   <name xml:lang="pt">GCompris</name>
   <name xml:lang="pt-BR">GCompris</name>
@@ -111,6 +111,7 @@
     <p xml:lang="ml">2 മുതൽ 10 വയസ്സുവരെയുള്ള കുട്ടികൾക്ക് വേണ്ടിയുള്ള വിവിധ പ്രവർത്തനങ്ങൾ അടങ്ങിയിട്ടുള്ള വളരെ ഗുണനിലവാരമുള്ള ഒരു വിദ്യാഭ്യാസ സോഫ്റ്റ്‍വെയർ ആണ് ജികോംപ്രി.</p>
     <p xml:lang="nl">GCompris is een educatief softwarepakket van hoge kwaliteit, inclusief een groot aantal activiteiten voor kinderen van 2 tot 10 jaar.</p>
     <p xml:lang="nn">GCompris er eit leik og lær-spel med mange ulike aktivitetar for ungar frå 2 til 10 år.</p>
+    <p xml:lang="pa">ਕੋਮਪਰਿਸ ਉੱਚ ਕੁਆਲਟੀ ਦਾ ਸਾਫਟਵੇਅਰ ਸਮੂਹ ਹੈ, ਜਿਸ ਵਿੱਚ 2 ਤੋਂ 10 ਸਾਲਾਂ ਦੇ ਬੱਚਿਆਂ ਲਈ ਕਈ ਸਾਰੀਆਂ ਸਰਗਰਮੀਆਂ ਸ਼ਾਮਲ ਹਨ।</p>
     <p xml:lang="pl">GCompris to wysokiej jakości pakiet oprogramowania edukacyjnego z licznymi aktywnościami dla dzieci w wieku od 2 do 10 lat.</p>
     <p xml:lang="pt">O GCompris é um pacote aplicacional educativo de alta qualidade, composto por uma grande quantidade de actividades para crianças dos 2 aos 10 anos.</p>
     <p xml:lang="pt-BR">O GCompris é uma suíte de software educacional de alta qualidade que inclui um grande número de atividades para crianças com idade entre 2 e 10 anos.</p>
@@ -152,6 +153,7 @@
     <p xml:lang="ml">ചില പ്രവർത്തനങ്ങൾ കളിയെ അടിസ്ഥാനമാക്കിയാണ്, എന്നിരുന്നാലും വിദ്യാഭ്യാസപരമാണ്.</p>
     <p xml:lang="nl">Sommige activiteiten zijn spelletjes, maar toch leerzaam.</p>
     <p xml:lang="nn">Nokre av aktivitetane er mest som spel, men er likevel lærerike.</p>
+    <p xml:lang="pa">ਕੁਝ ਸਰਗਰਮੀਆਂ ਖੇਡਾਂ ਵਰਗੀਆਂ ਹਨ, ਪਰ ਫਿਰ ਵੀ ਸਿੱਖਿਆ ਦੇਣ ਵਾਲੀਆਂ ਹਨ।</p>
     <p xml:lang="pl">Niektóre z aktywności są bardziej grą, lecz nadal bardzo pouczającą.</p>
     <p xml:lang="pt">Algumas das actividades são apresentadas como jogos, mas são educativas à mesma.</p>
     <p xml:lang="pt-BR">Algumas das atividades são de orientação lúdica, mas mesmo assim ainda educacionais.</p>
@@ -193,6 +195,7 @@
     <p xml:lang="ml">ലഭ്യമായ കുറച്ചു പ്രവർത്തനങ്ങളോടുകൂടിയുള്ള വിഭാഗങ്ങളുടെ ഒരു പട്ടിക താഴെ കൊടുത്തിരിക്കുന്നു.</p>
     <p xml:lang="nl">Hieronder vindt u een lijst met categorieën met enige van de activiteiten beschikbaar in die categorie.</p>
     <p xml:lang="nn">Nedanfor finn du ei oversikt over kategoriar, saman med nokre av aktivitetane i kvar kategori.</p>
+    <p xml:lang="pa">ਹੇਠਾਂ ਤੁਸੀਂ ਕੈਟਾਗਰੀਆਂ ਦੀ ਸੂਚੀ ਵੇਖ ਸਕਦੇ ਹੋ, ਜਿਸ ਵਿੱਚ ਉਸ ਕੈਟਾਗਰੀ ਵਿੱਚ ਮੌਜੂਦ ਕੁਝ ਸਰਗਰਮੀਆਂ ਹਨ।</p>
     <p xml:lang="pl">Poniżej znajdziesz wykaz kategorii z niektórymi aktywnościami dostępnymi w tej kategorii.</p>
     <p xml:lang="pt">Em baixo, poderá encontrar uma lista de categorias, com algumas das actividades disponíveis para essa categoria.</p>
     <p xml:lang="pt-BR">Abaixo está relacionada uma lista de categorias com algumas das atividades disponíveis em cada uma delas.</p>
@@ -234,6 +237,7 @@
       <li xml:lang="ml">കമ്പ്യൂട്ടർ പഠിക്കാം: കീബോർഡ്, മൗസ്, മൗസ് കൊണ്ടുള്ള വ്യത്യസ്ത ചലനങ്ങൾ, ...</li>
       <li xml:lang="nl">ontdekken van de computer: toetsenbord, muis, verschillende muisbewegingen, ...</li>
       <li xml:lang="nn">datamaskin: tastatur, mus, ulike muserørsler, …</li>
+      <li xml:lang="pa">ਕੰਪਿਊਟਰ ਖੋਜ: ਕੀਬੋਰਡ, ਮਾਊਸ, ਵੱਖੋ-ਵੱਖ ਮਾਊਸ ਜੈਸਚਰ,...</li>
       <li xml:lang="pl">odkrywanie komputera: klawiatura, mysz, różne ruchy myszą, ...</li>
       <li xml:lang="pt">descoberta do computador: teclado, rato, os diferentes gestos com o rato, ...</li>
       <li xml:lang="pt-BR">conhecendo o computador: teclado, mouse, diferentes movimentações com o mouse, ...</li>
@@ -275,6 +279,7 @@
       <li xml:lang="ml">ഗണിതശാസ്ത്രം: പട്ടിക ഓർക്കാം, എണ്ണൽ, പ്രതിബിംബം, തൂക്കമൊപ്പിക്കാം, ബാക്കി കൊടുക്കാം, ...</li>
       <li xml:lang="nl">rekenen: tafels oefenen, reeksen, afbeelding spiegelen, de schaal in evenwicht brengen, wisselgeld geven, ...</li>
       <li xml:lang="nn">rekning: gongetabellen, teljing, spegelbilete, måling av vekt, vekslepengar, …</li>
+      <li xml:lang="pa">ਗਣਿਤ: ਸਾਰਣੀ ਯਾਦਦਾਸ਼ਤ, ਗਿਣਤੀ, ਮਿਰਰ ਚਿੱਤਰ, ਸਕੇਲ ਦੀ ਤੁਲਨਾ, ਜੋੜ ਘਟਾਓ,...</li>
       <li xml:lang="pl">arytmetyka: tablice pamięciowe, wyliczanie, obraz lustrzany, wyrównoważanie wagi, wydawanie reszty, ...</li>
       <li xml:lang="pt">aritmética: memória da tabuada, enumeração, imagem-espelho, equilíbrio de balanças, trocos, ...</li>
       <li xml:lang="pt-BR">matemática: memória matemática, enumeração, imagens espelhadas, balanceamento de escalas, moedas e troco, ...</li>
@@ -315,6 +320,7 @@
       <li xml:lang="ml">ശാസ്ത്രം: കനാലിന്റെ പൂട്ട്, നിറം ചേർക്കാം, ഗുരുത്വം എന്ന ആശയം, ...</li>
       <li xml:lang="nl">natuurkunde: de sluizen bedienen, mengen van kleuren, concept van zwaartekracht, ...</li>
       <li xml:lang="nn">vitskap: kanalsluse, blanding av fargar, tyngdekraft, …</li>
+      <li xml:lang="pa">ਵਿਗਿਆਨ: ਦਰਿਆ ਲਾਕ, ਰੰਗ ਮਿਲਾਉਣੇ, ਗੁਰੂਤਾ ਦਾ ਸਿਧਾਂਤ,...</li>
       <li xml:lang="pl">nauka: śluza na kanale, mieszanie barw, poczucie grawitacji, ...</li>
       <li xml:lang="pt">ciência: bloqueio de canais, misturas de cores, conceito de gravidade, ...</li>
       <li xml:lang="pt-BR">ciência: comporta de canal, mistura de cores, conceito de gravidade, ...</li>
@@ -355,6 +361,7 @@
       <li xml:lang="ml">കളികൾ: ഓർമ്മ, 4 എണ്ണം ബന്ധിപ്പിക്കുക, ടിക് ടാക് ടോ, ഹാനോയിയുടെ ഗോപുരം, ...</li>
       <li xml:lang="nl">spellen: geheugenspel, vier op een rij, boter kaas en eieren, sudoku, torens van hanoi, ...</li>
       <li xml:lang="nn">spel: hugsespel, fire på rad, bondesjakk, sudoku, tårnet i Hanoi, …</li>
+      <li xml:lang="pa">ਖੇਡਾਂ: ਮੈਮੋਰੀ, 4 ਜੋੜੋ, ਟਿਕ-ਟਾਕ ਟੋਏ, ਸਡੂਕੂ, ਹਨੋਈ ਦਾ ਮਿਨਾਰ,...</li>
       <li xml:lang="pl">gry: na pamięć, łączenie czwórek, tic tac toe, sudoku, wieża hanoi, ...</li>
       <li xml:lang="pt">jogos: memória, 4 em linha, jogo do galo, sudoku, torres de Hanói, ...</li>
       <li xml:lang="pt-BR">jogos: memória, ligue 4, jogo da velha, sudoku, torre de Hanói, ...</li>
@@ -395,7 +402,7 @@
       <li xml:lang="ml">വായന: വായന പരിശീലനം, ...</li>
       <li xml:lang="nl">lezen: lees oefening, ...</li>
       <li xml:lang="nn">lesing: leseøvingar, …</li>
-      <li xml:lang="pa">ਪੜ੍ਹਨਾ: ਅਭਿਆਸ ਪੜ੍ਹਿਆ ਜਾ ਰਿਹਾ ਹੈ, ...</li>
+      <li xml:lang="pa">ਪੜ੍ਹਨਾ: ਪੜ੍ਹਨ ਦਾ ਅਭਿਆਸ ...</li>
       <li xml:lang="pl">czytanie: nauka czytania, ...</li>
       <li xml:lang="pt">leitura: exercícios de leitura, ...</li>
       <li xml:lang="pt-BR">leitura: prática de leitura, ...</li>
@@ -437,6 +444,7 @@
       <li xml:lang="ml">മറ്റുള്ളവ: സമയം പറയാൻ പഠിക്കാം, ബ്രായി ലിപി, കുടുക്കുവഴി, സംഗീതോപകരണങ്ങൾ, ...</li>
       <li xml:lang="nl">overig: leren klokkijken, het braille-systeem, doolhof, muziekinstrumenten, ...</li>
       <li xml:lang="nn">anna: lær klokka, lær blindeskrift, labyrint, musikkinstrument, …</li>
+      <li xml:lang="pa">ਹੋਰ: ਮੈਨੂੰ ਵੇਲਾ ਦੱਸੋ, ਨੇਤਰਹੀਣਾਂ ਲਈ ਪ੍ਰਣਾਲੀ, ਬੁਝਾਰਤਾਂ, ਸੰਗੀਤ ਸਾਧਨ,...</li>
       <li xml:lang="pl">inne: naucz się godzin na zegarze, systemu brajla, labiryntów, instrumentów muzycznych, ...</li>
       <li xml:lang="pt">outros: aprender a dizer as horas, o sistema Braille, labirintos, instrumentos musicais, ...</li>
       <li xml:lang="pt-BR">outros: aprendendo a ver as horas, o sistema Braille, labirintos, instrumentos musicais, ...</li>
@@ -524,7 +532,7 @@
       <caption xml:lang="ml">ജികോംപ്രി പ്രധാന മെനു</caption>
       <caption xml:lang="nl">GCompris-hoofdmenu</caption>
       <caption xml:lang="nn">Hovudmenyen i GCompris</caption>
-      <caption xml:lang="pa">ਜੀਕੋਮਪਰਿਸ ਮੁੱਖ ਮੇਨੂ</caption>
+      <caption xml:lang="pa">ਜੀ-ਕੋਮਪਰਿਸ ਮੁੱਖ ਮੇਨੂ</caption>
       <caption xml:lang="pl">Główne menu GCompris</caption>
       <caption xml:lang="pt">Menu principal do GCompris</caption>
       <caption xml:lang="pt-BR">Menu principal do GCompris</caption>
