@@ -23,10 +23,11 @@ Image {
     // values: UP, DOWN, LEFT, RIGHT
     property string direction: 'DOWN'
 
-    signal init()
+    signal init(string initialDirection)
 
     onInit: {
         animationEnabled = false
+        direction = initialDirection
         Activity.setTuxDirection()
         Activity.moveTuxToBlock()
         animationEnabled = true

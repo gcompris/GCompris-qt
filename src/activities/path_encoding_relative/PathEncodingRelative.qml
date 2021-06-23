@@ -8,10 +8,10 @@ import QtQuick 2.9
 import GCompris 1.0
 
 import "../../core"
+import "../path_encoding"
 
 Path_ {
     id: activity
     mode: "encode"
-    movement: "absolute"
+    movement: "relative"
 }
-

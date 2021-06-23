@@ -57,7 +57,7 @@ function initLevel() {
     position = 0
     
     // intialize tux position
-    items.tux.init()
+    items.tux.init(findDirectionChangeAbsolute(path[0][0], path[0][1], path[1][0], path[1][1]))
 }
 
 function findStartAndLoadObstacles(map) {
@@ -159,33 +159,50 @@ function updateTux() {
         items.bonus.good ("tux")
 }
 
-function findDirectionChange(fromX, fromY, toX, toY) {
+function findDirectionChangeAbsolute(fromX, fromY, toX, toY) {
     // find direction change in case of absolute movement
-    var direction = null
+    var absoluteDirection = null
     if(fromY + 1 === toY && fromX === toX)
-        direction = 'DOWN'
+        absoluteDirection = 'DOWN'
     else if(fromY - 1 === toY && fromX === toX)
-        direction = 'UP'
+        absoluteDirection = 'UP'
     else if(fromY === toY && fromX + 1 === toX)
-        direction = 'RIGHT'
+        absoluteDirection = 'RIGHT'
     else if(fromY === toY && fromX - 1 === toX)
-        direction = 'LEFT'
-    return direction
+        absoluteDirection = 'LEFT'
+    return absoluteDirection
+}
+
+function findDirectionChangeRelative(rotation, absoluteDirection) {
+    // find direction change in case of relative movement
+    var directions = ['DOWN', 'LEFT', 'UP', 'RIGHT']
+    var newRotation = directions.indexOf(absoluteDirection) * 90
+    
+    var netRotationReq = newRotation - rotation
+
+    if(netRotationReq < 0)
+        netRotationReq += 360
+    
+    var keyboardDirections = ['UP', 'RIGHT', 'DOWN', 'LEFT']
+    
+    return keyboardDirections[netRotationReq / 90]    
 }
 
 function moveTowards(direction) {
     if(items.tux.isAnimationRunning)
         return
+        
+    var absoluteDirection = findDirectionChangeAbsolute(path[position][0], path[position][1], path[position+1][0], path[position+1][1])
+    var relativeDirection = findDirectionChangeRelative(items.tux.rotation, absoluteDirection)
     
-    var correctDirection = findDirectionChange(path[position][0], path[position][1], 
-                                        path[position+1][0], path[position+1][1])
-    if(correctDirection === direction) {
+    if((items.movement === 'absolute' && direction === absoluteDirection) || 
+     (items.movement === 'relative' && direction === relativeDirection)) {
         items.movesListModel.append({
             "direction" : direction
         })
         
         position = position + 1
-        items.tux.direction = direction
+        items.tux.direction = absoluteDirection
         updateTux()
     }
 }
