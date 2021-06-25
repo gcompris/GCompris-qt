@@ -21,14 +21,14 @@ Image {
     property bool isAnimationRunning: xAnimation.running || yAnimation.running || rAnimation.running
     
     // values: UP, DOWN, LEFT, RIGHT
-    property string direction: 'DOWN'
+    property string direction
+    rotation: ['DOWN', 'LEFT', 'UP', 'RIGHT'].indexOf(direction) * 90
 
     signal init(string initialDirection)
 
     onInit: {
         animationEnabled = false
         direction = initialDirection
-        Activity.setTuxDirection()
         Activity.moveTuxToBlock()
         animationEnabled = true
     }

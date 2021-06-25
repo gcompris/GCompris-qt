@@ -11,8 +11,9 @@ var currentLevel = 0
 var numberOfLevel
 var items
 
-var path = []
-var position = 0
+var currPos = [-1, -1]
+var prevPos = [-1, -1]
+var map
 
 const mapModel = {
     "path": false,
@@ -50,159 +51,147 @@ function initLevel() {
     
     loadMap(items.levels[currentLevel].path)
     
-    if(items.mode === "encode")
-        showPath();
-    
-    // indicating we are at the starting of the path
-    position = 0
-    
     // intialize tux position
-    items.tux.init(findDirectionChangeAbsolute(path[0][0], path[0][1], path[1][0], path[1][1]))
+    items.tux.init('DOWN')
+    
+    // find the initial direciton of tux
+    items.tux.init(findInitialDirection())
 }
 
-function findStartAndLoadObstacles(map) {
+function findInitialDirection() {
+    var fromX = currPos[0]
+    var fromY = currPos[1]
+    
+    if(isValidPos([fromX, fromY + 1]))
+        return 'DOWN'
+    else if(isValidPos([fromX + 1, fromY]))
+        return 'RIGHT'
+    else if(isValidPos([fromX - 1, fromY]))
+        return 'LEFT'
+    else if(isValidPos([fromX, fromY - 1]))
+        return 'UP'
+    return null
+}
+
+function findStartAndLoadObstacles() {
     var start = [-1, -1]
     for(var i=0; i < map.length; ++i) {
-        for(var j=0; j < map[i].length; ++j)
-            if(map[i][j].toUpperCase() === 'S')
+        for(var j=0; j < map[i].length; ++j) {
+            var c = map[i][j].toUpperCase()
+            var index = positionToIndex([j, i])
+            
+            if(items.mode === 'encode' && ['*', 'E'].indexOf(c) != -1 )
+                items.mapListModel.set(index, {"path": true})
+            
+            if(c === 'S') {
+                items.mapListModel.set(index, {"path": true})
                 start = [j, i];
-            else if(map[i][j].toUpperCase() === 'E')
-                items.mapListModel.set(positionToIndex([j, i]), {"flag": true})
-            else if(map[i][j].toUpperCase() === 'I')
-                items.mapListModel.set(positionToIndex([j, i]), {"invisible": true})
-            else if(map[i][j].toUpperCase() === 'S')
-                items.mapListModel.set(positionToIndex([j, i]), {"stone": true})
-            else if(map[i][j].toUpperCase() === 'T')
-                items.mapListModel.set(positionToIndex([j, i]), {"tree": true})
-            else if(map[i][j].toUpperCase() === 'B')
-                items.mapListModel.set(positionToIndex([j, i]), {"bush": true})
-            else if(map[i][j].toUpperCase() === 'B')
-                items.mapListModel.set(positionToIndex([j, i]), {"bush": true})
-            else if(map[i][j].toUpperCase() === 'G')
-                items.mapListModel.set(positionToIndex([j, i]), {"grass": true})
-            else if(map[i][j].toUpperCase() === 'W')
-                items.mapListModel.set(positionToIndex([j, i]), {"water": true})
+            }
+            else if(c === 'E')
+                items.mapListModel.set(index, {"flag": true})
+            else if(c === 'I')
+                items.mapListModel.set(index, {"invisible": true})
+            else if(c === 'S')
+                items.mapListModel.set(index, {"stone": true})
+            else if(c === 'T')
+                items.mapListModel.set(index, {"tree": true})
+            else if(c === 'B')
+                items.mapListModel.set(index, {"bush": true})
+            else if(c === 'B')
+                items.mapListModel.set(index, {"bush": true})
+            else if(c === 'G')
+                items.mapListModel.set(index, {"grass": true})
+            else if(c === 'W')
+                items.mapListModel.set(index, {"water": true})
+        }
     }
     return start
 }
 
-function isValidPos(map, x, y, prev_x, prev_y) {
-    if(prev_x === x && prev_y === y)
+function isValidPos(pos) {
+    if(prevPos[0] === pos[0] && prevPos[1] === pos[1])
         return false;
     
-    if(y >= map.length || y < 0 || x >= map[0].length || x < 0)
+    if(pos[1] >= map.length || pos[1] < 0 || pos[0] >= map[0].length || pos[0] < 0)
         return false;
     
-    return map[y][x] === '*' || map[y][x].toUpperCase() === 'S' || map[y][x].toUpperCase() === 'E';
+    return map[pos[1]][pos[0]] === '*' || map[pos[1]][pos[0]].toUpperCase() === 'S' || map[pos[1]][pos[0]].toUpperCase() === 'E';
 }
 
-function loadMap(map) {
-    path = []
-    var curr = findStartAndLoadObstacles(map)
-    var prev = [-1, -1]
-    var next;
-    
-    do {
-        path.push(curr);
-        
-        next = [-1, -1]
-        if(isValidPos(map, curr[0], curr[1] - 1, prev[0], prev[1]))
-            next = [curr[0], curr[1] - 1]
-        else if(isValidPos(map, curr[0], curr[1] + 1, prev[0], prev[1]))
-            next = [curr[0], curr[1] + 1]
-        else if(isValidPos(map, curr[0] - 1, curr[1], prev[0], prev[1]))
-            next = [curr[0] - 1, curr[1]]
-        else if(isValidPos(map, curr[0] + 1, curr[1], prev[0], prev[1]))
-            next = [curr[0] + 1, curr[1]]
-            
-        prev = curr
-        curr = next
-    }
-    while(map[prev[1]][prev[0]].toUpperCase() != 'E')
-    
-    items.mapListModel.set(positionToIndex(prev), {"flag": true})
+function loadMap(map_) {
+    map = map_
+    currPos = findStartAndLoadObstacles()
 }
 
 function positionToIndex(posArray) {
     return posArray[1] * items.cols + posArray[0];
 }
 
-function showPath() {
-    for(var i=0; i < path.length; ++i) {
-        items.mapListModel.set(positionToIndex(path[i]), {"path" : true})
-    }
-}
-
-function setTuxDirection() {
-    var tuxDirection = items.tux.direction
-    var rotation = 0
-    if(tuxDirection === 'LEFT')
-        rotation = 90
-    else if(tuxDirection === 'UP')
-        rotation = 180
-    else if(tuxDirection === 'RIGHT')
-        rotation = 270
-    
-    items.tux.rotation = rotation
-}
-
 function moveTuxToBlock() {
-    items.tux.x = items.mapView.x + path[position][0] * items.mapView.cellWidth
-    items.tux.y = items.mapView.y + path[position][1] * items.mapView.cellHeight
+    items.tux.x = items.mapView.x + currPos[0] * items.mapView.cellWidth
+    items.tux.y = items.mapView.y + currPos[1] * items.mapView.cellHeight
 }
 
 function updateTux() {
-    setTuxDirection()
     moveTuxToBlock()
     
-    if(position == path.length - 1)
+    if(map[currPos[1]][currPos[0]].toUpperCase() === 'E')
         items.bonus.good ("tux")
 }
 
-function findDirectionChangeAbsolute(fromX, fromY, toX, toY) {
+function findNextPositionAbsolute(fromX, fromY, direction) {
     // find direction change in case of absolute movement
-    var absoluteDirection = null
-    if(fromY + 1 === toY && fromX === toX)
-        absoluteDirection = 'DOWN'
-    else if(fromY - 1 === toY && fromX === toX)
-        absoluteDirection = 'UP'
-    else if(fromY === toY && fromX + 1 === toX)
-        absoluteDirection = 'RIGHT'
-    else if(fromY === toY && fromX - 1 === toX)
-        absoluteDirection = 'LEFT'
-    return absoluteDirection
+    if(direction === 'DOWN')
+        return  [fromX, fromY + 1]
+    else if(direction === 'UP')
+        return [fromX, fromY - 1]
+    else if(direction === 'RIGHT')
+        return [fromX + 1, fromY]
+    else if(direction === 'LEFT')
+        return [fromX - 1, fromY]
+    return [-1, -1]
 }
 
-function findDirectionChangeRelative(rotation, absoluteDirection) {
+function findNextDirectionRelative(fromX, fromY, direction) {
     // find direction change in case of relative movement
     var directions = ['DOWN', 'LEFT', 'UP', 'RIGHT']
-    var newRotation = directions.indexOf(absoluteDirection) * 90
-    
-    var netRotationReq = newRotation - rotation
-
-    if(netRotationReq < 0)
-        netRotationReq += 360
-    
     var keyboardDirections = ['UP', 'RIGHT', 'DOWN', 'LEFT']
+    var newRotation = items.tux.rotation + keyboardDirections.indexOf(direction) * 90
+
+    if(newRotation < 0)
+        newRotation += 360
     
-    return keyboardDirections[netRotationReq / 90]    
+    newRotation = newRotation % 360
+    
+    return directions[newRotation / 90]
 }
 
 function moveTowards(direction) {
     if(items.tux.isAnimationRunning)
         return
         
-    var absoluteDirection = findDirectionChangeAbsolute(path[position][0], path[position][1], path[position+1][0], path[position+1][1])
-    var relativeDirection = findDirectionChangeRelative(items.tux.rotation, absoluteDirection)
+    var absolutePosition = findNextPositionAbsolute(currPos[0], currPos[1], direction)
     
-    if((items.movement === 'absolute' && direction === absoluteDirection) || 
-     (items.movement === 'relative' && direction === relativeDirection)) {
+    var relativeDirection = findNextDirectionRelative(currPos[0], currPos[1], direction)
+    var relativePosition = findNextPositionAbsolute(currPos[0], currPos[1],  relativeDirection)
+    
+    if((items.movement === 'absolute' && isValidPos(absolutePosition)) || 
+     (items.movement === 'relative' && isValidPos(relativePosition))) {
         items.movesListModel.append({
             "direction" : direction
         })
         
-        position = position + 1
-        items.tux.direction = absoluteDirection
+        prevPos = currPos
+        
+        if(items.movement === 'absolute') {
+            currPos = absolutePosition
+            items.tux.direction = direction
+        }
+        else {
+            currPos = relativePosition
+            items.tux.direction = relativeDirection
+        }
+        
         updateTux()
     }
 }
