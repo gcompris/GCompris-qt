@@ -45,14 +45,10 @@ function initLevel() {
     items.mapListModel.clear()
     items.movesListModel.clear()
     
-    for(var i=0; i<items.rows; ++i)
-        for(var j=0; j<items.cols; ++j)
+    for(var i=0; i < items.rows * items.cols; ++i)
             items.mapListModel.append(mapModel)
     
     loadMap(items.levels[currentLevel].path)
-    
-    // intialize tux position
-    items.tux.init('DOWN')
     
     // find the initial direciton of tux
     items.tux.init(findInitialDirection())
@@ -95,8 +91,6 @@ function findStartAndLoadObstacles() {
                 items.mapListModel.set(index, {"stone": true})
             else if(c === 'T')
                 items.mapListModel.set(index, {"tree": true})
-            else if(c === 'B')
-                items.mapListModel.set(index, {"bush": true})
             else if(c === 'B')
                 items.mapListModel.set(index, {"bush": true})
             else if(c === 'G')
