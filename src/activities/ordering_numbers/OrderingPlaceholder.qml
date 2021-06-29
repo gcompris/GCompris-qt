@@ -5,6 +5,7 @@
  * Authors:
  *   Harsh Kumar <hadron43@yahoo.com>
  *   Emmanuel Charruau <echarruau@gmail.com>
+ *   Timothée Giet <animtim@gmail.com>
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
@@ -26,12 +27,12 @@ Rectangle {
 
     property string elementKey
     property string targetPlaceholderKey
-    
+
     property bool colorResetRequired: false
 
-    color: "lightyellow"
-    opacity: placeholderDropArea.containsDrag ? 0.5 : 
-        (mode === 'chronology') ? 0.85 : 0.7
+    border.color: placeholderDropArea.containsDrag ? "#FFFFFFFF" : "#00FFFFFF"
+    border.width:  4 * ApplicationInfo.ratio
+    color: placeholderDropArea.containsDrag ? "#B0FFFFFF" : "#80FFFFFF"
     width:  parent.width * 0.8
     height: 2.5 * 65 * ApplicationInfo.ratio    // Overridden by caller for responsiveness
     radius: 10
@@ -43,7 +44,6 @@ Rectangle {
 
         delegate: OrderingElement {
             id: orderingElement
-            
             mode: orderingPlaceholder.mode
             elementKey: orderingPlaceholder.elementKey
             index: DelegateModel.itemsIndex
@@ -77,7 +77,7 @@ Rectangle {
                 targetListModel.remove(drag.source.index)
             }
         }
-        
+
         Flickable {
             id: flick
             width: parent.width
@@ -86,10 +86,9 @@ Rectangle {
             flickableDirection: Flickable.VerticalFlick 
             contentWidth: originListView.width + 2*0.01 * placeholderDropArea.width
             contentHeight: originListView.height + 2*0.01 * placeholderDropArea.width
-            
+
             Flow {
                 id: originListView
-                
                 width: placeholderDropArea.width * 0.98
                 spacing: 0.01 * placeholderDropArea.width
                 anchors {
@@ -97,9 +96,9 @@ Rectangle {
                     left: flick.contentItem.left
                     margins: 0.01 * placeholderDropArea.width
                 }
-                
+
                 layoutDirection: (Core.isLeftToRightLocale(ApplicationSettings.locale)) ? Qt.LeftToRight : Qt.RightToLeft
-                
+
                 Repeater {
                     model: originPHDelegateModel
                 }
