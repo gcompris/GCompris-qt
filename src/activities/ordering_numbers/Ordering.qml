@@ -28,7 +28,9 @@ ActivityBase {
         id: background
         anchors.fill: parent
         fillMode: Image.PreserveAspectCrop
-        source: "resource/background.svg"
+        sourceSize.width: width
+        sourceSize.height: height
+        source: "qrc:/gcompris/src/activities/braille_fun/resource/hillside.svg"
         signal start
         signal stop
 
