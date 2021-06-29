@@ -5,6 +5,7 @@
  * Authors:
  *   Harsh Kumar <hadron43@yahoo.com>
  *   Emmanuel Charruau <echarruau@gmail.com>
+ *   Timothée Giet <animtim@gmail.com>
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
@@ -18,14 +19,14 @@ ActivityInfo {
     //: Activity title
     title: qsTr("Ordering numbers")
     //: Help title
-    description: qsTr("Arrange the given numbers in ascending or descending order as instructed.")
-    //: intro: "Arrange the numbers in the correct order by placing a number in its correct position"
+    description: qsTr("Arrange the given numbers in ascending or descending order as requested.")
+    //: intro: "Arrange the numbers in the correct order."
     //: Help goal
     goal: qsTr("Compare numbers.")
     //: Help prerequisite
-    prerequisite: qsTr("Move, drag and drop using mouse.")
+    prerequisite: qsTr("Counting")
     //: Help manual
-    manual: qsTr("You are provided with few numbers. Drag and drop the numbers in their correct position to reorder the numbers in ascending or descending order as instructed.")
+    manual: qsTr("You are provided with some numbers. Drag and drop them to the upper area in ascending or descending order as requested.")
     section: "math"
     createdInVersion: 20000
     levels: "1,2,3,4,5,6,7,8"

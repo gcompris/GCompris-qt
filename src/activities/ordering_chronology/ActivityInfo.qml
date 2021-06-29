@@ -5,6 +5,7 @@
  * Authors:
  *   Harsh Kumar <hadron43@yahoo.com>
  *   Emmanuel Charruau <echarruau@gmail.com>
+ *   Timothée Giet <animtim@gmail.com>
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
@@ -20,13 +21,13 @@ ActivityInfo {
     title: qsTr("Ordering chronology")
     //: Help title
     description: qsTr("Arrange the given events in their chronological order.")
-    //intro: "Arrange the given events in their chronological order"
+    //intro: "Arrange the given events in their chronological order."
     //: Help goal
     goal: qsTr("Can decide chronological order of events.")
     //: Help prerequisite
-    prerequisite: qsTr("Move, drag and drop using mouse.")
+    prerequisite: qsTr("Tell a short story.")
     //: Help manual
-    manual: qsTr("You are provided with few images in the bottom box. Drag and drop these images to the upper box in their correct chronological order.")
+    manual: qsTr("You are provided with some images. Drag and drop them to the upper area in their chronological order.")
     section: "reading"
     createdInVersion: 20000
     levels: "1,2,3"

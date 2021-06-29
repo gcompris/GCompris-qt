@@ -58,11 +58,11 @@ function stop() {
 }
 
 function initLevel() {
-    var numbers_asc = qsTr("Drag and drop the items in correct position in ascending order.");
-    var numbers_desc = qsTr("Drag and drop the items in correct position in descending order.");
-    var alphabets_asc = qsTr("Drag and drop the letters in correct position in ascending order.");
-    var alphabets_desc = qsTr("Drag and drop the letters in correct position in descending order.");
-    var chronology = qsTr("Drag and drop the items in correct position in chronological order.");
+    var numbers_asc = qsTr("Drag and drop the items in ascending order.");
+    var numbers_desc = qsTr("Drag and drop the items in descending order.");
+    var alphabets_asc = qsTr("Drag and drop the letters in alphabetical order.");
+    var alphabets_desc = qsTr("Drag and drop the letters in reverse alphabetical order.");
+    var chronology = qsTr("Drag and drop the items in chronological order.");
     var sentences = qsTr("Drag and drop the words to the upper box to form a meaningful sentence.");
 
     var display_instruction = "";

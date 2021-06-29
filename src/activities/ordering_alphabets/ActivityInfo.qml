@@ -5,6 +5,7 @@
  * Authors:
  *   Harsh Kumar <hadron43@yahoo.com>
  *   Emmanuel Charruau <echarruau@gmail.com>
+ *   Timothée Giet <animtim@gmail.com>
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
@@ -17,16 +18,16 @@ ActivityInfo {
     icon: "ordering_alphabets/alphabetical_order.svg"
     author: "Rudra Nil Basu &lt;rudra.nil.basu.1996@gmail.com&gt;, Harsh Kumar &lt;hadron43@yahoo.com&gt;"
     //: Activity title
-    title: qsTr("Ordering alphabets")
+    title: qsTr("Ordering letters")
     //: Help title
-    description: qsTr("Arrange the given alphabets in ascending or descending order as instructed.")
-    //intro: "Arrange the alphabets in the correct order by placing an alphabet in its correct position"
+    description: qsTr("Arrange the given letters in alphabetical order or in reverse alphabetical order as requested.")
+    //intro: "Arrange the letters in the correct order."
     //: Help goal
-    goal: qsTr("Compare alphabets.")
+    goal: qsTr("Learn the alphabetical order.")
     //: Help prerequisite
-    prerequisite: qsTr("Move, drag and drop using mouse.")
+    prerequisite: qsTr("Reading")
     //: Help manual
-    manual: qsTr("You are provided with few alphabets. Drag and drop the alphabets in their correct position to reorder the letters in ascending or descending order as instructed.")
+    manual: qsTr("You are provided with some letters. Drag and drop them to the upper area in alphabetical order or in reverse alphabetical order as requested.")
     section: "reading"
     createdInVersion: 20000
     levels: "1,2,3,4,5,6"
