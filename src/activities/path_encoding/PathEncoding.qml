@@ -9,9 +9,8 @@ import GCompris 1.0
 
 import "../../core"
 
-Path_ {
+GridPath {
     id: activity
     mode: "encode"
     movement: "absolute"
 }
-

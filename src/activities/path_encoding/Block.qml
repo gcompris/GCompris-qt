@@ -12,13 +12,12 @@ import "path.js" as Activity
 
 Item {
     id: block
-    visible: !invisible
     
     Rectangle {
         anchors.fill: parent
         color: "#4DA849"
         border.color: "black"
-        border.width: 1
+        border.width: (invisible) ? 0 : 1
         //opacity: 0.5
         
         MouseArea {

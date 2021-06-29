@@ -42,11 +42,12 @@ ActivityBase {
             readonly property string movement: activity.movement
             property int rows
             property int cols
+            property int errors
             property var levels: activity.datasetLoader.data
-            property alias mapView : mapView
-            property alias tux : tux
-            property alias mapListModel : mapListModel
-            property alias movesListModel : movesListModel
+            property alias mapView: mapView
+            property alias tux: tux
+            property alias mapListModel: mapListModel
+            property alias movesListModel: movesListModel
             property alias background: background
             property alias bar: bar
             property alias bonus: bonus
@@ -83,6 +84,18 @@ ActivityBase {
             
             rows: items.rows
             cols: items.cols
+        }
+        
+        GCText {
+            id: errorsText
+            fontSize: tinySize
+            color: 'red'
+            text: 'Errors ' + items.errors.toString()
+            
+            anchors {
+                bottom: mapView.top
+                left: mapView.left
+            }
         }
         
         ListModel {

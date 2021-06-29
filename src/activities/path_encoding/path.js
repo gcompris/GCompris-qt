@@ -46,12 +46,15 @@ function initLevel() {
     items.movesListModel.clear()
     
     for(var i=0; i < items.rows * items.cols; ++i)
-            items.mapListModel.append(mapModel)
+        items.mapListModel.append(mapModel)
     
     loadMap(items.levels[currentLevel].path)
     
     // find the initial direciton of tux
     items.tux.init(findInitialDirection())
+    
+    // reset the error counter
+    items.errors = 0
 }
 
 function findInitialDirection() {
@@ -150,14 +153,14 @@ function findNextDirectionRelative(fromX, fromY, direction) {
     // find direction change in case of relative movement
     var directions = ['DOWN', 'LEFT', 'UP', 'RIGHT']
     var keyboardDirections = ['UP', 'RIGHT', 'DOWN', 'LEFT']
-    var newRotation = items.tux.rotation + keyboardDirections.indexOf(direction) * 90
+    var newRelativeCardinalDirection = items.tux.rotation + keyboardDirections.indexOf(direction) * 90
 
-    if(newRotation < 0)
-        newRotation += 360
+    if(newRelativeCardinalDirection < 0)
+        newRelativeCardinalDirection += 360
     
-    newRotation = newRotation % 360
+    newRelativeCardinalDirection = newRelativeCardinalDirection % 360
     
-    return directions[newRotation / 90]
+    return directions[newRelativeCardinalDirection / 90]
 }
 
 function moveTowards(direction) {
@@ -188,6 +191,8 @@ function moveTowards(direction) {
         
         updateTux()
     }
+    else
+        items.errors ++
 }
 
 function nextLevel() {

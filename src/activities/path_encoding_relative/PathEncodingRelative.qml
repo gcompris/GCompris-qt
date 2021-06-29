@@ -10,7 +10,7 @@ import GCompris 1.0
 import "../../core"
 import "../path_encoding"
 
-Path_ {
+GridPath {
     id: activity
     mode: "encode"
     movement: "relative"
