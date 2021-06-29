@@ -5,6 +5,7 @@
  * Authors:
  *   Harsh Kumar <hadron43@yahoo.com>
  *   Emmanuel Charruau <echarruau@gmail.com>
+ *   Timothée Giet <animtim@gmail.com>
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
@@ -78,7 +79,7 @@ Item {
             draggable.Drag.drop()
             mouseHeld = false
             draggable.parent = orderingElementMouseArea
-            
+
             // The element may die on drop if removed, check if it exists
             if(draggable) {
                 draggable.x = beginDragPosition.x
@@ -98,23 +99,21 @@ Item {
 
             width: (mode === 'chronology') ? 100 * ApplicationInfo.ratio :
                 Math.max(elementCaption.width, 65 * ApplicationInfo.ratio)
-            
-            height: (mode === 'chronology') ? width : 
+
+            height: (mode === 'chronology') ? width :
             65 * ApplicationInfo.ratio / ((mode === 'sentences') ? 1.5 : 1)
-            
-            color: (orderingElementDropArea.containsDrag && isMoveAllowed) ? "lightblue" : "white"
-            opacity: (mode === 'chronology') ? 1 :
-            (orderingElementMouseArea.active ? 0.5 : 0.7)
+
+            color: "white"
+            opacity: 1
 
             Drag.keys: orderingElement.elementKey
             Drag.active: orderingElementMouseArea.drag.active
             Drag.hotSpot.x: width/2
             Drag.hotSpot.y: height/2
 
-            border {
-                color: borderColor
-                width: 3 * ApplicationInfo.ratio
-            }
+            border.color: borderColor
+            border.width: 3 * ApplicationInfo.ratio
+
             radius: 10
 
             GCText {
@@ -127,7 +126,7 @@ Item {
                 }
                 padding: 15 * ApplicationInfo.ratio
                 height: parent.height
-                color: "black"
+                color: "#373737"
                 verticalAlignment: Text.AlignVCenter
                 horizontalAlignment: Text.AlignHCenter
                 text: ([
@@ -138,10 +137,10 @@ Item {
             }
             Image {
                 source: (mode === 'chronology') ? elementValue : ""
-                
                 width: parent.width - 2 * parent.radius
                 height: parent.height - 2 * parent.radius
-                
+                fillMode: Image.PreserveAspectFit
+
                 anchors {
                     top: parent.top
                     left: parent.left
@@ -179,7 +178,7 @@ Item {
                 }
             }
         }
-        
+
         states: State {
             when: orderingElementMouseArea.mouseHeld
             ParentChange { target: draggable; parent: highestParent }

@@ -34,7 +34,6 @@ Rectangle {
     border.width:  4 * ApplicationInfo.ratio
     color: placeholderDropArea.containsDrag ? "#B0FFFFFF" : "#80FFFFFF"
     width:  parent.width * 0.8
-    height: 2.5 * 65 * ApplicationInfo.ratio    // Overridden by caller for responsiveness
     radius: 10
     anchors.horizontalCenter: parent.horizontalCenter
 
@@ -63,7 +62,7 @@ Rectangle {
             var element = drag.source
             var modelObj = {
                 "elementValue" : element.draggableText,
-                "borderColor" : "black"
+                "borderColor" : "#808080"
             }
             if (element.placeholderName === "origin" && placeholderName === "target") {
                 targetListModel.append(modelObj)

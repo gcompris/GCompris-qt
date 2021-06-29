@@ -26,7 +26,7 @@ var originalArrangement = []
 function start(items_, mode_) {
     items = items_
     mode = mode_
-    
+
     // For sentences mode, parse the sentences in the datasets
     if(mode === "sentences") {
         var datasets = []
@@ -41,14 +41,14 @@ function start(items_, mode_) {
         }
         items.levels = datasets
     }
-    
+
     // For defined letters in ordering_alphabets datasets, parse the string
     if(mode === "alphabets") {
         for(var level in items.levels) {
             items.levels[level].values = items.levels[level].string.split("|")
         }
     }
-    
+
     currentLevel = 0
     numberOfLevel = items.levels.length
     initLevel()
@@ -64,7 +64,7 @@ function initLevel() {
     var alphabets_desc = qsTr("Drag and drop the letters in correct position in descending order.");
     var chronology = qsTr("Drag and drop the items in correct position in chronological order.");
     var sentences = qsTr("Drag and drop the words to the upper box to form a meaningful sentence.");
-    
+
     var display_instruction = "";
     if(items.levels[currentLevel].instruction)
         display_instruction = items.levels[currentLevel].instruction;
@@ -76,7 +76,7 @@ function initLevel() {
         display_instruction = (items.levels[currentLevel].mode === 'ascending') ? alphabets_asc : alphabets_desc;
     else if(mode === "numbers")
         display_instruction = (items.levels[currentLevel].mode === 'ascending') ? numbers_asc : numbers_desc;
-    
+
     items.instruction.text = display_instruction;
     items.bar.level = currentLevel + 1
     initGrids()
@@ -100,7 +100,7 @@ function initGrids() {
     for(var i = 0;i < num.length; i++) {
         items.originListModel.append({
             "elementValue" : num[i].toString(),
-            "borderColor" : "black"
+            "borderColor" : "#808080"
         })
     }
 }
@@ -132,7 +132,7 @@ function generateNumbers() {
     }
     else
         num = [...items.levels[currentLevel].values]
-    
+
     if(items.levels[currentLevel].mode === "descending")
         num.reverse()
 
@@ -159,7 +159,7 @@ function targetColorReset() {
         return
 
     for(var i = 0 ; i < items.targetListModel.count; i++)
-        items.targetListModel.get(i).borderColor = "black"
+        items.targetListModel.get(i).borderColor = "#808080"
 
     items.targetPlaceholder.colorResetRequired = false
 }
@@ -167,18 +167,18 @@ function targetColorReset() {
 function checkOrder() {
     var success = true
     var values = originalArrangement
-        
+
     for(var i = 0 ; i < items.targetListModel.count; i++) {
         if(items.targetListModel.get(i).elementValue != values[i]) {
             success = false
-            items.targetListModel.get(i).borderColor = "red"
+            items.targetListModel.get(i).borderColor = "#D94444" //red
         }
         else
-            items.targetListModel.get(i).borderColor = "green"
+            items.targetListModel.get(i).borderColor = "#62BA62" //green
     }
-    
+
     items.targetPlaceholder.colorResetRequired = true
-    
+
     if(success)
         items.bonus.good("lion")
     else

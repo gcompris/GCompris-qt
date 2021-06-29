@@ -5,6 +5,7 @@
  * Authors:
  *   Harsh Kumar <hadron43@yahoo.com>
  *   Emmanuel Charruau <echarruau@gmail.com>
+ *   Timothée Giet <animtim@gmail.com>
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
@@ -17,7 +18,7 @@ import "ordering.js" as Activity
 
 ActivityBase {
     id: activity
-    
+
     // Mode : numbers | alphabets | sentences | chronology
     property string mode
 
@@ -60,32 +61,31 @@ ActivityBase {
 
         GCText {
             id: instruction
+            z: 5
             wrapMode: TextEdit.WordWrap
             fontSize: tinySize
             horizontalAlignment: Text.Center
-            anchors.horizontalCenter: parent.horizontalCenter
             width: parent.width * 0.9
             color: 'white'
-            Rectangle {
-                z: -1
-                opacity: 0.8
-                gradient: Gradient {
-                    GradientStop { position: 0.0; color: "#000" }
-                    GradientStop { position: 0.9; color: "#666" }
-                    GradientStop { position: 1.0; color: "#AAA" }
-                }
-                radius: 10
-                border.color: 'black'
-                border.width: 1
-                anchors.centerIn: parent
-                width: parent.width * 1.1
-                height: parent.contentHeight
-            }
+            anchors.centerIn: instructionArea
+        }
+
+        Rectangle {
+            id: instructionArea
+            opacity: 1
+            radius: 10
+            color: "#373737"
+            width: instruction.contentWidth * 1.1
+            height: instruction.contentHeight * 1.1
+            anchors.horizontalCenter: parent.horizontalCenter
+            anchors.top: parent.top
+            anchors.topMargin: 5 * ApplicationInfo.ratio
         }
 
         Item {
             id: layoutArea
-            anchors.top: instruction.bottom
+            anchors.top: instructionArea.bottom
+            anchors.topMargin: 10 * ApplicationInfo.ratio
             anchors.bottom: bar.top
             anchors.bottomMargin: bar.height * 0.2
             anchors.left: parent.left
@@ -99,17 +99,12 @@ ActivityBase {
         ListModel {
             id: targetListModel
         }
-        
+
         OrderingPlaceholder {
             id: targetPlaceholder
 
-            anchors {
-                top: instruction.bottom
-                topMargin: 20 * ApplicationInfo.ratio
-            }
-            
-            height: (layoutArea.height - instruction.height - 30 * ApplicationInfo.ratio) / 2
-            
+            anchors.top: layoutArea.top
+            height: (layoutArea.height - 10 * ApplicationInfo.ratio) / 2
             mode: activity.mode
             placeholderName: "target"
             highestParent: background
@@ -123,13 +118,9 @@ ActivityBase {
         OrderingPlaceholder {
             id: originPlaceholder
 
-            anchors {
-                top: targetPlaceholder.bottom
-                topMargin: 5 * ApplicationInfo.ratio
-            }
-            
-            height: (layoutArea.height - instruction.height - 30 * ApplicationInfo.ratio) / 2
-            
+            anchors.top: targetPlaceholder.bottom
+            anchors.topMargin: 5 * ApplicationInfo.ratio
+            height: targetPlaceholder.height
             mode: activity.mode
             placeholderName: "origin"
             highestParent: background
@@ -170,12 +161,8 @@ ActivityBase {
             sourceSize.width: 70 * ApplicationInfo.ratio
             enabled: !bonus.isPlaying && (originListModel.count === 0)
             visible: originListModel.count === 0
-            anchors {
-                right: parent.right
-                bottom: bar.top
-                bottomMargin: 10 * ApplicationInfo.ratio
-                rightMargin: 10 * ApplicationInfo.ratio
-            }
+            anchors.horizontalCenter: originPlaceholder.horizontalCenter
+            anchors.verticalCenter: originPlaceholder.verticalCenter
             onClicked: Activity.checkOrder()
         }
 
