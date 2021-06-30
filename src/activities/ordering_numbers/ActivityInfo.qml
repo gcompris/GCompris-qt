@@ -27,7 +27,7 @@ ActivityInfo {
     prerequisite: qsTr("Counting.")
     //: Help manual
     manual: qsTr("You are provided with some numbers. Drag and drop them to the upper area in ascending or descending order as requested.")
-    section: "math"
+    section: "math numeration"
     createdInVersion: 20000
     levels: "1,2,3,4,5,6,7,8"
 }
