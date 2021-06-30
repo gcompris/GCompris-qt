@@ -26,6 +26,7 @@ Rectangle {
         delegate: Block {
             width: gridview.cellWidth
             height: gridview.cellHeight
+            index: DelegateModel.itemsIndex
         }
     }
     

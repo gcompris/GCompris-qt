@@ -1,4 +1,4 @@
-/* GCompris - Path_.qml
+/* GCompris - GridPath.qml
  *
  * SPDX-FileCopyrightText: 2021 Harsh Kumar <hadron43@yahoo.com>
  * SPDX-License-Identifier: GPL-3.0-or-later
@@ -118,6 +118,7 @@ ActivityBase {
         
         MoveButtons {
             id: moveButtons
+            visible: items.mode === 'encode'
             
             anchors {
                 top: moveBar.bottom
@@ -178,10 +179,10 @@ ActivityBase {
             id: bonus
             Component.onCompleted: win.connect(Activity.nextLevel)
         }
+        
+        Keys.onLeftPressed: (items.mode === 'encode') ? Activity.moveTowards('LEFT') : null
+        Keys.onRightPressed: (items.mode === 'encode') ? Activity.moveTowards('RIGHT') : null
+        Keys.onUpPressed: (items.mode === 'encode') ? Activity.moveTowards('UP') : null
+        Keys.onDownPressed: (items.mode === 'encode') ? Activity.moveTowards('DOWN') : null
     }
-    
-    Keys.onLeftPressed: Activity.moveTowards('LEFT')
-    Keys.onRightPressed: Activity.moveTowards('RIGHT')
-    Keys.onUpPressed: Activity.moveTowards('UP')
-    Keys.onDownPressed: Activity.moveTowards('DOWN')
 }

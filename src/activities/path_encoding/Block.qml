@@ -12,6 +12,7 @@ import "path.js" as Activity
 
 Item {
     id: block
+    property int index
     
     Rectangle {
         anchors.fill: parent
@@ -24,7 +25,7 @@ Item {
             anchors.fill: parent
             
             onClicked: {
-                // send a response
+                Activity.processBlockClick(index)
             }
         }
     }

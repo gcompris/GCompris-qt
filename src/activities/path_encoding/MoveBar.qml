@@ -25,7 +25,7 @@ Rectangle {
             width: ApplicationInfo.ratio * 50
             height: width
             
-            color: "pink"
+            color: (active) ? "green" : (faded) ? "gray" : "pink"
             border.color: "black"
             border.width: 2
             radius: width / 2
