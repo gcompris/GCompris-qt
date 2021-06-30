@@ -25,7 +25,7 @@ ActivityInfo {
     //: Help goal
     goal: qsTr("Learn the alphabetical order.")
     //: Help prerequisite
-    prerequisite: qsTr("Reading")
+    prerequisite: qsTr("Reading.")
     //: Help manual
     manual: qsTr("You are provided with some letters. Drag and drop them to the upper area in alphabetical order or in reverse alphabetical order as requested.")
     section: "reading"

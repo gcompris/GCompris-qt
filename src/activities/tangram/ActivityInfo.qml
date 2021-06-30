@@ -26,7 +26,7 @@ ActivityInfo {
     1 parallelogram (sides of 1 and square root of 2)
     ")
   //: Help prerequisite
-  prerequisite: qsTr("Mouse-manipulation")
+  prerequisite: qsTr("Mouse-manipulation.")
   //: Help manual
   manual: qsTr("Move a piece by dragging it. The symmetrical button appears on items that supports it. Click on the rotation button or drag around it to rotate selected piece. Check the activity 'Baby Puzzle' for a simpler introduction to tangram.")
   credit: ""

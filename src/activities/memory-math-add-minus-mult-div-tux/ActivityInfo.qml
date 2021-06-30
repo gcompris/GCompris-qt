@@ -19,7 +19,7 @@ ActivityInfo {
   //: Help goal
   goal: qsTr("Practice additions, subtractions, multiplications, divisions.")
   //: Help prerequisite
-  prerequisite: qsTr("Additions, subtractions, multiplications, divisions")
+  prerequisite: qsTr("Additions, subtractions, multiplications, divisions.")
   //: Help manual
  manual: qsTr("Each card is hiding either an operation, or a result. You have to match the operations with their result.") + ("<br><br>") +
           qsTr("<b>Keyboard controls:</b>") + ("<ul><li>") +

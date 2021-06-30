@@ -19,7 +19,7 @@ ActivityInfo {
   //: Help goal
   goal: qsTr("Count a number in a limited time.")
   //: Help prerequisite
-  prerequisite: qsTr("Counting skills")
+  prerequisite: qsTr("Counting skills.")
   //: Help manual
   manual: qsTr("Type the number you see on each falling domino.") + ("<br><br>") +
           qsTr("<b>Keyboard controls:</b>") + ("<ul><li>") +

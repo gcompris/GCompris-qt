@@ -19,7 +19,7 @@ ActivityInfo {
   //: Help goal
   goal: qsTr("Throw darts at a target and count your score.")
   //: Help prerequisite
-  prerequisite: qsTr("Can move the mouse, can read numbers and count up to 15 for the first level")
+  prerequisite: qsTr("Can move the mouse, can read numbers and count up to 15 for the first level.")
   //: Help manual
   manual: qsTr("Check the speed and direction of the target, and then click on it to launch a dart. When all your darts are thrown, you are asked to count your score. Enter the score with the keyboard.")
   credit: ""

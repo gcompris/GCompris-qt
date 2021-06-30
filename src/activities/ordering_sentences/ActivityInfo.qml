@@ -24,7 +24,7 @@ ActivityInfo {
     //: Help goal
     goal: qsTr("Order words to form meaningful sentences.")
     //: Help prerequisite
-    prerequisite: qsTr("Reading")
+    prerequisite: qsTr("Reading.")
     //: Help manual
     manual: qsTr("You are provided with some words. Drag and drop them to the upper area to form a meaningful sentence.")
     section: "reading"

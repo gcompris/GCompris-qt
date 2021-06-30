@@ -24,7 +24,7 @@ ActivityInfo {
     //: Help goal
     goal: qsTr("Compare numbers.")
     //: Help prerequisite
-    prerequisite: qsTr("Counting")
+    prerequisite: qsTr("Counting.")
     //: Help manual
     manual: qsTr("You are provided with some numbers. Drag and drop them to the upper area in ascending or descending order as requested.")
     section: "math"

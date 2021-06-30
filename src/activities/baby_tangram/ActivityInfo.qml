@@ -19,7 +19,7 @@ ActivityInfo {
   //: Help goal
   goal: ""
   //: Help prerequisite
-  prerequisite: qsTr("Mouse-manipulation")
+  prerequisite: qsTr("Mouse-manipulation.")
   //: Help manual
   manual: qsTr("Move a piece by dragging it. Use the rotation button if necessary. More complicated levels can be found in tangram activity.")
   credit: ""

@@ -19,7 +19,7 @@ ActivityInfo {
   //: Help goal
   goal: qsTr("Learning lowercase and uppercase letters, memory.")
   //: Help prerequisite
-  prerequisite: qsTr("Knowing alphabets")
+  prerequisite: qsTr("Knowing alphabets.")
   //: Help manual
   manual: qsTr("Each card is hiding a letter, lowercase or uppercase. You have to match the lowercase and uppercase of the same letter.") + ("<br><br>") +
           qsTr("<b>Keyboard controls:</b>") + ("<ul><li>") +
