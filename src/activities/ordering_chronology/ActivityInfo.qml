@@ -28,7 +28,7 @@ ActivityInfo {
     prerequisite: qsTr("Tell a short story.")
     //: Help manual
     manual: qsTr("You are provided with some images. Drag and drop them to the upper area in their chronological order.")
-    section: "reading"
+    section: "discovery logic"
     createdInVersion: 20000
     levels: "1,2,3"
     enabled: false
