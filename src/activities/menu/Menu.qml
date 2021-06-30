@@ -512,12 +512,12 @@ ActivityBase {
                     }
                     Image {
                         anchors {
-                            left: parent.left
-                            bottom: parent.bottom
+                            horizontalCenter: parent.horizontalCenter
+                            top: parent.top
                         }
                         source: activityInfoTreeItem.createdInVersion > lastGCVersionRanCopy
                                 ? activity.url + "new.svg" : ""
-                        sourceSize.width: 30 * ApplicationInfo.ratio
+                        sourceSize.width: 25 * ApplicationInfo.ratio
                     }
                     GCText {
                         id: title
