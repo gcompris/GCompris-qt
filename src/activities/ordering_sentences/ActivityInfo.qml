@@ -27,7 +27,7 @@ ActivityInfo {
     prerequisite: qsTr("Reading.")
     //: Help manual
     manual: qsTr("You are provided with some words. Drag and drop them to the upper area to form a meaningful sentence.")
-    section: "reading"
+    section: "reading words"
     createdInVersion: 20000
     levels: "1,2"
 }
