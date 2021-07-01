@@ -16,6 +16,9 @@ var prevPos = [-1, -1]
 var map
 var decodeIndex
 
+const successSoundPath = 'qrc:/gcompris/src/core/resource/sounds/completetask.wav'
+const errorSoundPath = 'qrc:/gcompris/src/core/resource/sounds/crash.wav'
+
 const mapModel = {
     "path": false,
     "flag": false,
@@ -180,6 +183,8 @@ function moveTuxToBlock() {
 function updateTux() {
     moveTuxToBlock()
     
+    items.audioEffects.play(successSoundPath)
+    
     if(map[currPos[1]][currPos[0]].toUpperCase() === 'E')
         items.bonus.good ("tux")
 }
@@ -248,8 +253,10 @@ function moveTowards(direction) {
         
         updateTux()
     }
-    else
+    else {
+        items.audioEffects.play(errorSoundPath)
         items.errors ++
+    }
 }
 
 function processBlockClick(pos) {
@@ -273,6 +280,7 @@ function processBlockClick(pos) {
         items.mapListModel.set(positionToIndex(currPos), {"path": true})
     }
     else {
+        items.audioEffects.play(errorSoundPath)
         items.errors ++
     }
 }

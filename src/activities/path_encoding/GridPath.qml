@@ -37,6 +37,7 @@ ActivityBase {
         QtObject {
             id: items
             property Item main: activity.main
+            property GCSfx audioEffects: activity.audioEffects
             readonly property string resourceUrl: activity.resourceUrl
             readonly property string mode: activity.mode
             readonly property string movement: activity.movement
