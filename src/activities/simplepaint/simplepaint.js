@@ -110,7 +110,6 @@ var backgrounds = [
     'qrc:/gcompris/src/activities/fifteen/resource/background.svg'
 ]
 
-var main
 var items
 
 // The size of the array
@@ -122,9 +121,8 @@ var numberOfLevel = backgrounds.length
 
 var background
 
-function start(main_, items_, _background) {
+function start(items_, _background) {
     background=_background
-    main = main_
     items = items_
     currentLevel = 0
     initLevel()
@@ -140,7 +138,7 @@ function initLevel() {
     items.selectedColor = items.colors[1]
     items.colorSelector.positionViewAtBeginning()
     nbx = 20 + currentLevel
-    nby = Math.floor(nbx * (main.height / main.width))
+    nby = Math.floor(nbx * (items.gridLayout.height / items.gridLayout.width))
     background.refreshCursor()
 
     var model = []

@@ -166,6 +166,7 @@ ActivityBase {
             property alias bar: bar
             property alias paintModel: paintModel
             property alias colorSelector: colorSelector
+            property alias gridLayout: gridLayout
             property var colors: bar.level < 10 ? Activity.colorsSimple : Activity.colorsAdvanced
             property int current_color: 1
             property string selectedColor: colors[current_color]
@@ -173,7 +174,7 @@ ActivityBase {
             property bool keyboardControls: false
         }
 
-        onStart: Activity.start(main, items, background);
+        onStart: Activity.start(items, background);
         onStop: Activity.stop();
 
         MultiPointTouchArea {
@@ -201,6 +202,13 @@ ActivityBase {
         Item {
             id: rootItem
             anchors.fill: parent
+        }
+
+        Item {
+            id: gridLayout
+            anchors.fill: parent
+            anchors.bottomMargin: 1.4 * bar.height
+            anchors.leftMargin: colorSelector.width + 20 * ApplicationInfo.ratio
         }
 
         ListModel {
