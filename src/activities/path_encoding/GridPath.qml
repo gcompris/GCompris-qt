@@ -179,6 +179,7 @@ ActivityBase {
 
         Bonus {
             id: bonus
+            winSound: "qrc:/gcompris/src/activities/ballcatch/resource/tuxok.wav"
             Component.onCompleted: win.connect(Activity.nextLevel)
         }
         

@@ -57,6 +57,7 @@ Rectangle {
         }
         onTouchUpdated: checkTouchPoint(touchPoints);
         onReleased: {
+            checkTouchPoint(touchPoints)
             if(selectedOverlay.visible && touchEnabled && !items.tux.isAnimationRunning) {
                 var row = Math.floor(selectedOverlay.y / cellHeight)
                 var col = Math.floor(selectedOverlay.x / cellWidth)

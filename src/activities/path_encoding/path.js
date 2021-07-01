@@ -253,9 +253,6 @@ function moveTowards(direction) {
 }
 
 function processBlockClick(pos) {
-    if(items.mode !== 'decode' || items.tux.isAnimationRunning)
-        return
-    
     if(decodeIndex >= items.movesListModel.count)
         return
         
