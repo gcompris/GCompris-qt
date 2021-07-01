@@ -15,19 +15,11 @@ Item {
     property int index
     
     Rectangle {
+        id: rectangle
         anchors.fill: parent
         color: "#4DA849"
         border.color: "black"
         border.width: (invisible) ? 0 : 1
-        //opacity: 0.5
-        
-        MouseArea {
-            anchors.fill: parent
-            
-            onClicked: {
-                Activity.processBlockClick(index)
-            }
-        }
     }
     
     Image {

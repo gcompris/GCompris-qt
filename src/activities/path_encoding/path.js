@@ -57,6 +57,9 @@ function initLevel() {
     // find the initial direciton of tux
     items.tux.init(findCorrectDirectionAbsolute(currPos[0], currPos[1], -1, -1))
     
+    // reset mapView
+    items.mapView.init()
+    
     // reset the error counter
     items.errors = 0
     
@@ -249,11 +252,9 @@ function moveTowards(direction) {
         items.errors ++
 }
 
-function processBlockClick(itemsIndex) {
+function processBlockClick(pos) {
     if(items.mode !== 'decode' || items.tux.isAnimationRunning)
         return
-    
-    var pos = indexToPosition(itemsIndex)
     
     if(decodeIndex >= items.movesListModel.count)
         return

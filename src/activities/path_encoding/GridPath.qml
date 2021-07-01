@@ -72,6 +72,8 @@ ActivityBase {
         MapView {
             id: mapView
             
+            touchEnabled: mode === 'decode'
+            
             anchors {
                 top: layoutArea.top
                 left: layoutArea.left
