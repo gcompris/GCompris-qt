@@ -15,15 +15,15 @@ import GCompris 1.0
 
 Item {
     id: cursor
-    property double ix
-    property double iy
+    property int ix
+    property int iy
     property int nbx
     property int nby
     property int initialX
     // Warning testing parent here, just to avoid an error at deletion time
-    property double r: parent ? Math.min((parent.width - initialX) / nbx / 2, (parent.height - bar.height) / nby / 2) : 0
-    property double offsetX: parent ? (initialX + parent.width % (width * nbx)) / 2 : 0
-    property double offsetY: parent ? 10 : 0
+    property int r: parent ? Math.min(Math.floor((parent.width - initialX) / nbx / 2), Math.floor((parent.height - bar.height) / nby / 2)) : 0
+    property int offsetX: parent ? Math.floor((initialX + parent.width % (width * nbx)) / 2) : 0
+    property int offsetY: parent ? 10 : 0
     x: width * ix + offsetX
     y: height * iy + offsetY
     width: r * 2
