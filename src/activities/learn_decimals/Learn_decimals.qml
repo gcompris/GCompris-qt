@@ -83,19 +83,26 @@ ActivityBase {
         }
         // Tutorial section ends
 
-        GCText {
+        Item {
             id: decimalNumber
+            width: parent.width / 2.3
+            height: parent.height / 12
             anchors.horizontalCenter: background.horizontalCenter
             anchors.top: background.top
             anchors.topMargin: 2 * ApplicationInfo.ratio
-            text: isSubtractionMode ? qsTr("Display the result of: %1 - %2").arg(items.largestNumber).arg(items.smallestNumber) : isAdditionMode ? qsTr("Display the result of: %1 + %2").arg(items.largestNumber).arg(items.smallestNumber) : qsTr("Display the number: %1").arg(items.largestNumber)
-            fontSize: smallSize
-            horizontalAlignment: Text.AlignHCenter
-            wrapMode: Text.WordWrap
-            font.weight: Font.DemiBold
-            style: Text.Outline
-            styleColor: "black"
-            color: "white"
+
+            GCText {
+                anchors.fill: parent
+                text: isSubtractionMode ? qsTr("Display the result of: %1 - %2").arg(items.largestNumber).arg(items.smallestNumber) : isAdditionMode ? qsTr("Display the result of: %1 + %2").arg(items.largestNumber).arg(items.smallestNumber) : qsTr("Display the number: %1").arg(items.largestNumber)
+                fontSizeMode: Text.Fit
+                wrapMode: Text.WordWrap
+                horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
+                font.weight: Font.DemiBold
+                style: Text.Outline
+                styleColor: "black"
+                color: "white"
+            }
         }
 
         ListModel {
@@ -490,8 +497,9 @@ ActivityBase {
                 anchors.fill: parent
                 horizontalAlignment: Text.AlignHCenter
                 verticalAlignment: Text.AlignVCenter
+                fontSizeMode: Text.Fit
+                wrapMode: Text.WordWrap
                 color: "#373737"
-                fontSize: !background.scoreAtBottom ? smallSize : mediumSize
                 text: qsTr("Enter the result: %1").arg(answerBackground.userEntry)
             }
         }

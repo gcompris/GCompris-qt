@@ -107,7 +107,7 @@ function initLevel() {
         generateSecondNumber();
         var largestNumber = firstNum * squaresNumber;
         while(largestNumber > 0) {
-            if(largestNumber >= squaresNumber) {
+            if(largestNumber > squaresNumber) {
                 items.largestNumberRepresentation.append({"selectedSquareNumbers" : squaresNumber });
             }
             else {
