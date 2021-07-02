@@ -81,6 +81,7 @@ lang
 learn_additions
 learn_digits
 learn_decimals
+learn_decimals_additions
 learn_subtractions
 leftright
 letter-in-word
