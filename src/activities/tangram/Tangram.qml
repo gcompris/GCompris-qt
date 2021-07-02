@@ -5,6 +5,7 @@
  * Authors:
  *   Yves Combe /  Philippe Banwarth (GTK+ version)
  *   Bruno Coudoin <bruno.coudoin@gcompris.net> (Qt Quick port)
+ *   Timothée Giet <animtim@gmail.com> (layout improvements and cleaning)
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
@@ -27,38 +28,32 @@ ActivityBase {
 
     Keys.onPressed: Activity.processPressedKey(event)
 
-    pageComponent: Item {
+    pageComponent: Image {
         id: background
+        source: activity.resourceUrl + "tangram/background.svg"
         anchors.fill: parent
 
-        property bool horizontalLayout: background.width >= background.height
-        property int playX: (activity.width - playWidth) / 2
-        property int playY: (activity.height - playHeight) / 2
-        property int playWidth: horizontalLayout ? activity.height : activity.width
+        property bool horizontalLayout: background.width >= background.height - bar.height * 1.2
+        property int playX: playArea.x
+        property int playY: playArea.y
+        property int playWidth: horizontalLayout ? background.height - bar.height * 1.2 : background.width
         property int playHeight: playWidth
         property double playRatio: playWidth / 1000
 
         signal start
         signal stop
 
-        /* In order to accept any screen ratio the play area is always a 1000x1000
-         * square and is centered in a big background image that is 2000x2000
+        /* In order to accept any screen ratio the play area is always a 1000x1000 square * playRatio
+         * and is centered in the background with a vertical offset of -bar.height * 0.6
          */
 
-        Image {
-            id: bg
-            source: activity.resourceUrl + "tangram/background.svg"
-            sourceSize.width: 2000 * ApplicationInfo.ratio
-            sourceSize.height: 2000 * ApplicationInfo.ratio
-            width: 2000 * background.playRatio
-            height: width
-            anchors.centerIn: parent
-        }
-
         Rectangle {
+            id: playArea
             width: background.playWidth
             height: background.playHeight
-            anchors.centerIn: parent
+            anchors.verticalCenter: parent.verticalCenter
+            anchors.verticalCenterOffset: -bar.height * 0.6
+            anchors.horizontalCenter: parent.horizontalCenter
             border.width: 2
             border.color: "black"
             color: "transparent"
@@ -94,11 +89,11 @@ ActivityBase {
         Image {
             id: bgData
             source: items.currentTans.bg ? activity.resourceUrl + items.currentTans.bg : ''
-            sourceSize.width: 1000 * background.playRatio
-            sourceSize.height: 1000 * background.playRatio
-            width: 1000 * background.playRatio
+            sourceSize.width: width
+            sourceSize.height: width
+            width: playArea.width
             height: width
-            anchors.centerIn: parent
+            anchors.centerIn: playArea
         }
 
         RotateMouseArea {}
