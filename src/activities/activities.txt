@@ -80,6 +80,7 @@ land_safe
 lang
 learn_additions
 learn_digits
+learn_decimals
 learn_subtractions
 leftright
 letter-in-word
