@@ -22,7 +22,7 @@ Rectangle {
         id: delegateModel
         model: movesListModel
         delegate: Rectangle {
-            width: ApplicationInfo.ratio * 50
+            width: Math.min(ApplicationInfo.ratio * 50, moveBar.width / 4.5)
             height: width
             
             color: (active) ? "green" : (faded) ? "gray" : "pink"

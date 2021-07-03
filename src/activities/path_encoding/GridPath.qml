@@ -65,25 +65,18 @@ ActivityBase {
             id: layoutArea
             anchors.top: parent.top
             anchors.bottom: bar.top
-            anchors.bottomMargin: bar.height * 0.2
             anchors.left: parent.left
             anchors.right: parent.right
+            anchors.bottomMargin: Math.max(bar.height * 0.5, errorsText.height)
+            anchors.topMargin: anchors.bottomMargin
+            anchors.leftMargin: anchors.bottomMargin
+            anchors.rightMargin: anchors.bottomMargin
         }
 
         MapView {
             id: mapView
             
             touchEnabled: mode === 'decode'
-            
-            anchors {
-                top: layoutArea.top
-                left: layoutArea.left
-                topMargin: 0.05 * parent.height
-                leftMargin: 0.10 * parent.height
-            }
-            
-            width: 0.9 * layoutArea.height
-            height: 0.9 * layoutArea.height
             
             rows: items.rows
             cols: items.cols
@@ -107,38 +100,97 @@ ActivityBase {
         
         MoveBar {
             id: moveBar
-            
-            anchors {
-                top: layoutArea.top
-                left: mapView.right
-                topMargin: 0.05 * parent.height
-                leftMargin: 0.05 * parent.height
-            }
-            
-            width: parent.width - mapView.width - 2*mapView.anchors.leftMargin - anchors.leftMargin
-            height: 0.9 * layoutArea.height / 2
         }
         
         MoveButtons {
             id: moveButtons
             visible: items.mode === 'encode'
-            
-            anchors {
-                top: moveBar.bottom
-                left: mapView.right
-                topMargin: 0.05 * parent.height
-                leftMargin: 0.05 * parent.height
-            }
-            
-            width: moveBar.width
-            height: mapView.height - moveBar.height - anchors.topMargin
         }
         
         Tux {
             id: tux
-            width: mapView.cellWidth
-            height: mapView.cellHeight
+            width: mapView.cellSize
+            height: mapView.cellSize
         }
+        
+        property double maxAllowedHeight: layoutArea.height
+        property double maxAllowedWidth: (layoutArea.width - layoutArea.anchors.bottomMargin) / 2
+        property double size: Math.min(maxAllowedHeight / items.rows, maxAllowedWidth / items.cols)
+        
+        states: [
+            State {
+                id: horizontalLayout
+                when: layoutArea.width >= layoutArea.height
+                PropertyChanges {
+                    target: mapView
+                    cellSize: size
+                }
+                PropertyChanges {
+                    target: moveBar
+                    width: layoutArea.width - mapView.width - layoutArea.anchors.bottomMargin
+                    height: layoutArea.height / 2
+                    anchors.topMargin: 0
+                }
+                PropertyChanges {
+                    target: moveButtons
+                    width: moveBar.width
+                    height: layoutArea.height / 2
+                }
+                AnchorChanges {
+                    target: mapView
+                    anchors.verticalCenter: layoutArea.verticalCenter
+                    anchors.horizontalCenter: undefined
+                    anchors.top: undefined
+                    anchors.left: layoutArea.left
+                }
+                AnchorChanges {
+                    target: moveBar
+                    anchors.right: layoutArea.right
+                    anchors.top: layoutArea.top
+                }
+                AnchorChanges {
+                    target: moveButtons
+                    anchors.right: layoutArea.right
+                    anchors.top: moveBar.bottom
+                }
+            },
+            State {
+                id: verticalLayout
+                when: layoutArea.width < layoutArea.height
+                PropertyChanges {
+                    target: mapView
+                    cellSize: Math.min((layoutArea.height / 2) / items.rows, layoutArea.width / items.cols)
+                }
+                PropertyChanges {
+                    target: moveBar
+                    width: layoutArea.width
+                    height: (layoutArea.height - mapView.height - moveButtons.height - layoutArea.anchors.bottomMargin)
+                    anchors.topMargin: layoutArea.anchors.bottomMargin
+                }
+                PropertyChanges {
+                    target: moveButtons
+                    width: moveBar.width
+                    height: (moveButtons.visible) ? (layoutArea.height - mapView.height - layoutArea.anchors.bottomMargin) / 2 : 0
+                }
+                AnchorChanges {
+                    target: mapView
+                    anchors.verticalCenter: undefined
+                    anchors.horizontalCenter: layoutArea.horizontalCenter
+                    anchors.left: undefined
+                    anchors.top: layoutArea.top
+                }
+                AnchorChanges {
+                    target: moveBar
+                    anchors.right: layoutArea.right
+                    anchors.top: mapView.bottom
+                }
+                AnchorChanges {
+                    target: moveButtons
+                    anchors.right: layoutArea.right
+                    anchors.top: moveBar.bottom
+                }
+            }
+        ]
         
         DialogChooseLevel {
             id: dialogActivityConfig

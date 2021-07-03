@@ -14,13 +14,17 @@ import "path.js" as Activity
 Rectangle {
     id: mapView
     
+    color: 'transparent'
+    
     property int rows
     property int cols
     
-    property double cellWidth: width / cols
-    property double cellHeight: height / rows
+    property double cellSize
     
     property bool touchEnabled: true
+    
+    height: cellSize * rows
+    width: cellSize * cols
     
     signal init
     
@@ -32,8 +36,8 @@ Rectangle {
         id: delegateModel
         model: mapListModel
         delegate: Block {
-            width: gridview.cellWidth
-            height: gridview.cellHeight
+            width: mapView.cellSize
+            height: mapView.cellSize
             index: DelegateModel.itemsIndex
         }
     }
@@ -43,8 +47,8 @@ Rectangle {
         anchors.fill: parent
         interactive: false
         
-        cellWidth: mapView.cellWidth 
-        cellHeight: mapView.cellHeight
+        cellWidth: mapView.cellSize 
+        cellHeight: mapView.cellSize
         
         model: delegateModel
     }
@@ -59,8 +63,8 @@ Rectangle {
         onReleased: {
             checkTouchPoint(touchPoints)
             if(selectedOverlay.visible && touchEnabled && !items.tux.isAnimationRunning) {
-                var row = Math.floor(selectedOverlay.y / cellHeight)
-                var col = Math.floor(selectedOverlay.x / cellWidth)
+                var row = Math.floor(selectedOverlay.y / cellSize)
+                var col = Math.floor(selectedOverlay.x / cellSize)
                 Activity.processBlockClick([col, row])
             }
         }
@@ -70,8 +74,8 @@ Rectangle {
         id: selectedOverlay
         opacity: 0.35
         color: "pink"
-        width: cellWidth
-        height: cellHeight
+        width: cellSize
+        height: cellSize
         visible: false
     }
     
@@ -81,12 +85,12 @@ Rectangle {
         if(items.tux.isAnimationRunning || !touch || !touchEnabled)
             return
         
-        var row = Math.floor(touch.y / cellHeight)
-        var col = Math.floor(touch.x / cellWidth)
+        var row = Math.floor(touch.y / cellSize)
+        var col = Math.floor(touch.x / cellSize)
         
         if(row >= 0 && row < rows && col >= 0 && col < cols) {
-            selectedOverlay.x = col * cellWidth
-            selectedOverlay.y = row * cellHeight
+            selectedOverlay.x = col * cellSize
+            selectedOverlay.y = row * cellSize
             selectedOverlay.visible = true
         }
         else {

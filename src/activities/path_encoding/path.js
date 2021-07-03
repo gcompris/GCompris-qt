@@ -176,8 +176,8 @@ function indexToPosition(index) {
 }
 
 function moveTuxToBlock() {
-    items.tux.x = items.mapView.x + currPos[0] * items.mapView.cellWidth
-    items.tux.y = items.mapView.y + currPos[1] * items.mapView.cellHeight
+    items.tux.x = items.mapView.x + currPos[0] * items.mapView.cellSize
+    items.tux.y = items.mapView.y + currPos[1] * items.mapView.cellSize
 }
 
 function updateTux() {
