@@ -32,7 +32,7 @@ Item {
             topMargin: 0.15 * parent.height
         }
         source:
-            (stone) ? "qrc:/gcompris/src/activities/path_encoding/resource/stone.png" :
+            (rock) ? "qrc:/gcompris/src/activities/path_encoding/resource/stone.png" :
             (tree) ? "qrc:/gcompris/src/activities/path_encoding/resource/tree.png" :
             (bush) ? "qrc:/gcompris/src/activities/path_encoding/resource/bush.png" :
             (grass) ? "qrc:/gcompris/src/activities/path_encoding/resource/grass.png" :

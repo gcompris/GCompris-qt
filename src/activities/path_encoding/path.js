@@ -23,7 +23,7 @@ var mapModel = {
     "path": false,
     "flag": false,
     "invisible": false,
-    "stone": false,
+    "rock": false,
     "tree": false,
     "bush": false,
     "grass": false,
@@ -142,8 +142,8 @@ function findStartAndLoadObstacles() {
                 items.mapListModel.set(index, {"flag": true})
             else if(c === 'I')
                 items.mapListModel.set(index, {"invisible": true})
-            else if(c === 'S')
-                items.mapListModel.set(index, {"stone": true})
+            else if(c === 'R')
+                items.mapListModel.set(index, {"rock": true})
             else if(c === 'T')
                 items.mapListModel.set(index, {"tree": true})
             else if(c === 'B')
