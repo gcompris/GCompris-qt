@@ -16,10 +16,10 @@ var prevPos = [-1, -1]
 var map
 var decodeIndex
 
-const successSoundPath = 'qrc:/gcompris/src/core/resource/sounds/completetask.wav'
-const errorSoundPath = 'qrc:/gcompris/src/core/resource/sounds/crash.wav'
+var successSoundPath = 'qrc:/gcompris/src/core/resource/sounds/completetask.wav'
+var errorSoundPath = 'qrc:/gcompris/src/core/resource/sounds/crash.wav'
 
-const mapModel = {
+var mapModel = {
     "path": false,
     "flag": false,
     "invisible": false,
@@ -113,13 +113,13 @@ function absoluteDirectionToRelative(absoluteDirection, currentDirection) {
 }
 
 function findCorrectDirectionAbsolute(fromX, fromY, prevX, prevY) {    
-    if(isValidPos([fromX, fromY + 1]) && !(fromX === prevX && fromY + 1 == prevY))
+    if(isValidPos([fromX, fromY + 1]) && !(fromX === prevX && fromY + 1 === prevY))
         return 'DOWN'
-    else if(isValidPos([fromX + 1, fromY]) && !(fromX + 1 === prevX && fromY == prevY))
+    else if(isValidPos([fromX + 1, fromY]) && !(fromX + 1 === prevX && fromY === prevY))
         return 'RIGHT'
-    else if(isValidPos([fromX - 1, fromY]) && !(fromX - 1 === prevX && fromY == prevY))
+    else if(isValidPos([fromX - 1, fromY]) && !(fromX - 1 === prevX && fromY === prevY))
         return 'LEFT'
-    else if(isValidPos([fromX, fromY - 1]) && !(fromX === prevX && fromY - 1 == prevY))
+    else if(isValidPos([fromX, fromY - 1]) && !(fromX === prevX && fromY - 1 === prevY))
         return 'UP'
     return null
 }
