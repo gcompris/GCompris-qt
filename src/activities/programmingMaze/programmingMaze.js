@@ -19,6 +19,7 @@ var MOVE_FORWARD = "move-forward"
 var TURN_LEFT = "turn-left"
 var TURN_RIGHT = "turn-right"
 var CALL_PROCEDURE = "call-procedure"
+var EXECUTE_LOOPS = "execute-loops"
 
 var mazeBlocks
 
@@ -29,11 +30,12 @@ var stepX
 var stepY
 
 /**
- * Lookup tables of instruction objects for main and procedure areas which will be stored here on creation and can be
+ * Lookup tables of instruction objects for main, procedure and loop areas which will be stored here on creation and can be
  * accessed when required to execute.
  */
 var mainInstructionObjects = []
 var procedureInstructionObjects = []
+var loopInstructionObjects = []
 
 // New rotation of Tux on turning.
 var changedRotation
@@ -43,6 +45,9 @@ var deadEndPoint = false
 
 // Stores the index of mainInstructionObjects[] which is going to be processed
 var codeIterator = 0
+
+// Stores the number of loops needed
+var loopsNumber = -1
 
 /**
  * Stores if the reset is done only when Tux is clicked.
@@ -76,7 +81,8 @@ var instructionComponents = {
     "move-forward": Qt.createComponent(url + "instructions/MoveForward.qml"),
     "turn-left": Qt.createComponent(url + "instructions/TurnLeftOrRight.qml"),
     "turn-right": Qt.createComponent(url + "instructions/TurnLeftOrRight.qml"),
-    "call-procedure": Qt.createComponent(url + "instructions/Procedure.qml")
+    "call-procedure": Qt.createComponent(url + "instructions/Procedure.qml"),
+    "execute-loops": Qt.createComponent(url + "instructions/Loops.qml")
 }
 
 var mainTutorialInstructions = [
@@ -128,7 +134,7 @@ function stop() {
  * This function creates and populate instruction objects for main as well as procedure area.
  *
  * These are stored in the lookup table, provided in the parameter as "instructionObjects".
- * The instructions are then connected to the slots of their code area (main or procedure), provided as "instructionCodeArea" in the parameter.
+ * The instructions are then connected to the slots of their code area (main or procedure/loops), provided as "instructionCodeArea" in the parameter.
  *
  * The instructions can now be obtained from the look-up tables and executed when called.
  *
@@ -145,27 +151,42 @@ function createInstructionObjects(instructionObjects, instructionCodeArea) {
 }
 
 function createInstruction(instructionObjects, instructionName, instructionCodeArea) {
-	if(instructionName == TURN_LEFT || instructionName == TURN_RIGHT)
-	    instructionObjects[instructionName] = instructionComponents[instructionName].createObject(instructionCodeArea, { "turnDirection": instructionName })
-	else
-	    instructionObjects[instructionName] = instructionComponents[instructionName].createObject(instructionCodeArea)
+    if(instructionName === TURN_LEFT || instructionName === TURN_RIGHT) {
+        instructionObjects[instructionName] = instructionComponents[instructionName].createObject(instructionCodeArea, { "turnDirection": instructionName })
+    }
+    else if(instructionName === EXECUTE_LOOPS) {
+        instructionObjects[instructionName] = instructionComponents[instructionName].createObject(instructionCodeArea, { "counter": loopsNumber })
+    }
+    else {
+        instructionObjects[instructionName] = instructionComponents[instructionName].createObject(instructionCodeArea)
+    }
 
-	instructionObjects[instructionName].foundDeadEnd.connect(instructionCodeArea.deadEnd)
-	instructionObjects[instructionName].executionComplete.connect(instructionCodeArea.checkSuccessAndExecuteNextInstruction)
+    instructionObjects[instructionName].foundDeadEnd.connect(instructionCodeArea.deadEnd)
+    instructionObjects[instructionName].executionComplete.connect(instructionCodeArea.checkSuccessAndExecuteNextInstruction)
 }
 
 // Destroy instruction objects from the look-up tables
 function destroyInstructionObjects() {
+    var i
     var instructionList = Object.keys(mainInstructionObjects)
-    for(var i = 0; i < instructionList.length; i++)
+    for(i = 0; i < instructionList.length; i++) {
         mainInstructionObjects[instructionList[i]].destroy()
+    }
 
     instructionList = Object.keys(procedureInstructionObjects)
-    for(var i = 0; i < instructionList.length; i++)
+    for(i = 0; i < instructionList.length; i++) {
         procedureInstructionObjects[instructionList[i]].destroy()
+    }
+
+    instructionList = Object.keys(loopInstructionObjects)
+    for(i = 0; i < instructionList.length; i++) {
+        loopInstructionObjects[instructionList[i]].destroy()
+    }
+
 
     mainInstructionObjects = []
     procedureInstructionObjects = []
+    loopInstructionObjects = []
 }
 
 function initLevel() {
@@ -173,11 +194,12 @@ function initLevel() {
         return
 
     items.bar.level = currentLevel + 1
+    items.answerBackground.userEntry = "?"
     destroyInstructionObjects()
 
     var levelInstructions = mazeBlocks[currentLevel].instructions
 
-    if(levelInstructions.indexOf(CALL_PROCEDURE) != -1)
+    if(levelInstructions.indexOf(CALL_PROCEDURE) !== -1)
         items.currentLevelContainsProcedure = true
     else
         items.currentLevelContainsProcedure = false
@@ -191,11 +213,21 @@ function initLevel() {
             items.tutorialImage.visible = true
         }
 
-        // Create procedure object in the main look-up table ,if the level has procedure/loop, to execute it for procedure/loop calls from the main code area.
+        // Create procedure object in the main look-up table ,if the level has procedure, to execute it for procedure/loop calls from the main code area.
         createInstruction(mainInstructionObjects, CALL_PROCEDURE, items.background)
 
-        // Create, populate and connect signals of instructions for procedure code area if the level has procedure/loop.
+        // Create, populate and connect signals of instructions for procedure code area if the level has procedure.
         createInstructionObjects(procedureInstructionObjects, mainInstructionObjects[CALL_PROCEDURE])
+    }
+
+    if(activityMode === "loops") {
+        //TO DO: enable/disable loops tutorial
+
+        // Create loop object in the main look-up table ,if the activity mode is loops, to execute it loops from the main code area.
+        createInstruction(mainInstructionObjects, EXECUTE_LOOPS, items.background)
+
+        // Create, populate and connect signals of instructions for loop code area itself.
+        createInstructionObjects(loopInstructionObjects, mainInstructionObjects[EXECUTE_LOOPS])
     }
 
     // Stores the co-ordinates of the tile blocks in the current level
@@ -257,10 +289,16 @@ function runCode() {
 
     var instructionName
 
-    // Append all the procedure instructions to the procedure area object.
+    // Append all the procedure instructions to the procedure area object in basic mode.
+    // Append all the loop instructions to the loop area object in loops mode.
     for(var j = 0; j < items.procedureModel.count; j++) {
         instructionName = items.procedureModel.get(j).name
-        mainInstructionObjects[CALL_PROCEDURE].procedureCode.append({ "name" : instructionName })
+        if(activityMode === "basic") {
+            mainInstructionObjects[CALL_PROCEDURE].procedureCode.append({ "name" : instructionName })
+        }
+        else {
+            mainInstructionObjects[EXECUTE_LOOPS].loopCode.append({ "name" : instructionName })
+        }
     }
 
     items.isRunCodeEnabled = false

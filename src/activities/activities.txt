@@ -138,6 +138,7 @@ play_piano
 play_rhythm
 positions
 programmingMaze
+programmingMazeLoops
 railroad
 readingh
 readingv

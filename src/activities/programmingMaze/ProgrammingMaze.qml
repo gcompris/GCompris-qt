@@ -78,6 +78,7 @@ ActivityBase {
             property alias tutorialImage: tutorialImage
             property alias fish: fish
             property alias dataset: dataset
+            property alias answerBackground: answerBackground
             property bool isRunCodeEnabled: true
             property bool isTuxMouseAreaEnabled: false
             property bool currentLevelContainsProcedure
@@ -123,8 +124,14 @@ ActivityBase {
                 runCodeOrResetTux()
             if(event.key === Qt.Key_Tab)
                 areaWithKeyboardInput.tabKeyPressed()
-            if(event.key === Qt.Key_Delete && activeCodeAreaIndicator.top != instructionArea.top) {
+            if(event.key === Qt.Key_Delete && activeCodeAreaIndicator.top !== instructionArea.top) {
                 areaWithKeyboardInput.deleteKeyPressed()
+            }
+            if(mode == "loops") {
+                if(event.key === Qt.Key_Backspace) {
+                    backspace()
+                }
+                appendText(event.text)
             }
         }
 
@@ -135,6 +142,20 @@ ActivityBase {
                 Activity.initLevel()
         }
 
+        function backspace() {
+            answerBackground.userEntry = answerBackground.userEntry.slice(0, -1)
+            answerBackground.userEntry = "?"
+        }
+
+        function appendText(text) {
+            var number = parseInt(text)
+            if(isNaN(number))
+                return
+
+            answerBackground.userEntry = text
+            Activity.loopsNumber = number
+        }
+
         ListModel {
             id: instructionModel
         }
@@ -143,14 +164,44 @@ ActivityBase {
             id: mainFunctionModel
         }
 
+        //If mode is "basic", then this model will store instructions exist in the procedure area.
+        //If mode is "loops", then this model will store Instructions exist in the loop area.
         ListModel {
             id: procedureModel
         }
 
         Rectangle {
-            id: constraintInstruction
+            id: answerBackground
+            width: parent.width / 2.3
+            height: parent.height / 10
+            visible: (mode === "loops" && items.bar.level < 6) ? true : false
             anchors.left: parent.left
             anchors.top: instructionArea.bottom
+            anchors.topMargin: 3 * ApplicationInfo.ratio
+            color: "#E8E8E8"
+            border.width: 3 * ApplicationInfo.ratio
+            border.color: "#e77935"
+            radius: 10
+
+            property string userEntry
+
+            GCText {
+                id: userEntryText
+                anchors.fill: parent
+                anchors.margins: parent.border.width
+                horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
+                fontSizeMode: Text.Fit
+                wrapMode: Text.WordWrap
+                color: "#373737"
+                text: qsTr("Enter the number of loops: %1").arg(answerBackground.userEntry)
+            }
+        }
+
+        Rectangle {
+            id: constraintInstruction
+            anchors.left: parent.left
+            anchors.top: (mode === "loops" && items.bar.level < 6) ? answerBackground.bottom : instructionArea.bottom
             anchors.topMargin: 5 * ApplicationInfo.ratio
             width: parent.width / 2.3
             height: parent.height / 8.9
@@ -289,7 +340,7 @@ ActivityBase {
 
         HeaderArea {
             id: procedureHeader
-            property string procedureText: qsTr("Procedure") + " ( )"
+            property string procedureText: mode == "basic" ? qsTr("Procedure") + " ( )" : qsTr("Loops")
             headerText: procedureText
             headerOpacity: !background.insertIntoMain ? 1 : 0.5
             visible: procedureCodeArea.visible
@@ -303,7 +354,7 @@ ActivityBase {
             currentModel: procedureModel
             anchors.right: parent.right
             anchors.top: procedureHeader.bottom
-            visible: items.currentLevelContainsProcedure
+            visible: items.currentLevelContainsProcedure || mode == "loops" ? true : false
 
             property alias procedureIterator: procedureCodeArea.currentIndex
 
@@ -342,6 +393,13 @@ ActivityBase {
 
                     onEntered: runCode.scale = 1.1
                     onExecuteCode: {
+                        //In case user doesn't enter a loop number which is required in for loops.
+                        if(mode === "loops" && items.bar.level < 6) {
+                            if(answerBackground.userEntry === "?") {
+                                return;
+                            }
+                        }
+
                         if(mainFunctionModel.count)
                             startCodeExecution()
                     }
