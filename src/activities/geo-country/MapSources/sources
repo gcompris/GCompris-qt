@@ -16,7 +16,9 @@ Steps to create country regions map:
 
 -extract *.geojson.gz file to *.geojson
 
--convert .geojson file to EPSG:3857 with reproject
+-find the best projection available for your country in https://epsg.io , or if you really can't find one use EPSG:3857
+
+-convert .geojson file to the selected projection with reproject (replace EPSG:3857 by the one you selected)
 example:
 cat OSMB-myFile.geojson | reproject --use-epsg-io --from=EPSG:4326 --to=EPSG:3857 > countryName.geojson
 
