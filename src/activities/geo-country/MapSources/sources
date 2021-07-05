@@ -28,9 +28,9 @@ example:
 
 -open the svg file in inkscape
 
--as the document is insanely huge, first step is to change the document size to 500x500px, the Scale x and y are at 1.0, and the Viewbox X and Y are at 0.0.
+-First step is to change the document size to 500x500px, the Scale x and y to 1.0, and the Viewbox X and Y to 0.0.
 
--select everything (ctrl + a) , lock the size ratio and set the biggest side (width or height) to 480px
+-select everything (ctrl + a) , lock the size ratio in the top bar and set the biggest side (width or height) to 480px
 
 -as the converted svg appears to be upside down, press v key to mirror everything vertically
 
