@@ -13,13 +13,13 @@ Image {
 
     source: "qrc:/gcompris/src/activities/maze/resource/tux_top_south.svg"
     fillMode: Image.PreserveAspectFit
-    
+
     z: 10
 
     property int duration: 1000
     property bool animationEnabled: true
     property bool isAnimationRunning: xAnimation.running || yAnimation.running || rAnimation.running
-    
+
     // values: UP, DOWN, LEFT, RIGHT
     property string direction
     rotation: ['DOWN', 'LEFT', 'UP', 'RIGHT'].indexOf(direction) * 90

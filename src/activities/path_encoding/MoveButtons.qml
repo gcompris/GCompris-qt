@@ -12,10 +12,10 @@ import "path.js" as Activity
 
 Item {
     id: moveButtons
-    
+
     property double spacing: Math.min(0.05 * width, 15 * ApplicationInfo.ratio)
     property double size: Math.min((width - 3 * spacing)/4, 55 * ApplicationInfo.ratio)
-    
+
     Flow {
         id: flow
         anchors {
@@ -23,7 +23,7 @@ Item {
             horizontalCenter: parent.horizontalCenter
         }
         spacing: moveButtons.spacing
-        
+
         BarButton {
             id: upButton
             source: "qrc:/gcompris/src/activities/path_encoding/resource/right-arrow.png"
@@ -31,7 +31,7 @@ Item {
             sourceSize.width: size
             onClicked: Activity.moveTowards('UP')
         }
-        
+
         BarButton {
             id: downButton
             source: "qrc:/gcompris/src/activities/path_encoding/resource/right-arrow.png"
@@ -39,7 +39,7 @@ Item {
             sourceSize.width: size
             onClicked: Activity.moveTowards('DOWN')
         }
-        
+
         BarButton {
             id: leftButton
             source: "qrc:/gcompris/src/activities/path_encoding/resource/right-arrow.png"
@@ -47,7 +47,7 @@ Item {
             sourceSize.width: size
             onClicked: Activity.moveTowards('LEFT')
         }
-        
+
         BarButton {
             id: rightButton
             source: "qrc:/gcompris/src/activities/path_encoding/resource/right-arrow.png"

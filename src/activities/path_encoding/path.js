@@ -72,7 +72,7 @@ function initLevel() {
         decodeIndex = 0
         items.movesListModel.set(0, {"active": true})
     }
-    
+
     items.movesGridView.currentIndex = 0
 }
 
@@ -114,7 +114,7 @@ function absoluteDirectionToRelative(absoluteDirection, currentDirection) {
         return 'DOWN'
 }
 
-function findCorrectDirectionAbsolute(fromX, fromY, prevX, prevY) {    
+function findCorrectDirectionAbsolute(fromX, fromY, prevX, prevY) {
     if(isValidPos([fromX, fromY + 1]) && !(fromX === prevX && fromY + 1 === prevY))
         return 'DOWN'
     else if(isValidPos([fromX + 1, fromY]) && !(fromX + 1 === prevX && fromY === prevY))
@@ -132,10 +132,10 @@ function findStartAndLoadObstacles() {
         for(var j=0; j < map[i].length; ++j) {
             var c = map[i][j].toUpperCase()
             var index = positionToIndex([j, i])
-            
+
             if(items.mode === 'encode' && ['*', 'E'].indexOf(c) != -1 )
                 items.mapListModel.set(index, {"path": true})
-            
+
             if(c === 'S') {
                 items.mapListModel.set(index, {"path": true})
                 start = [j, i];
@@ -232,7 +232,7 @@ function moveTowards(direction) {
     var relativeDirection = findNextDirectionRelative(currPos[0], currPos[1], direction)
     var relativePosition = findNextPositionRelative(currPos[0], currPos[1],  direction)
 
-    if((items.movement === 'absolute' && isValidPos(absolutePosition)) || 
+    if((items.movement === 'absolute' && isValidPos(absolutePosition)) ||
      (items.movement === 'relative' && isValidPos(relativePosition))) {
 
         if(items.mode === 'encode') {
@@ -241,7 +241,7 @@ function moveTowards(direction) {
                 "active" : false,
                 "faded" : false
             })
-            
+
             items.movesGridView.currentIndex = items.movesListModel.count - 1
         }
 

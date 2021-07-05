@@ -75,7 +75,7 @@ ActivityBase {
 
         onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
-        
+
         ListModel {
             id: mapListModel
         }
@@ -94,9 +94,9 @@ ActivityBase {
 
         MapView {
             id: mapView
-            
+
             touchEnabled: mode === 'decode'
-            
+
             rows: items.rows
             cols: items.cols
         }
@@ -106,7 +106,7 @@ ActivityBase {
             fontSize: tinySize
             color: 'red'
             text: 'Errors ' + items.errors.toString()
-            
+
             anchors {
                 bottom: mapView.top
                 left: mapView.left

@@ -17,12 +17,12 @@ Rectangle {
     border.color: "white"
     border.width: 0.01 * width
     radius: ApplicationInfo.ratio * 10
-    
+
     property double buttonWidth: Math.min(ApplicationInfo.ratio * 50, width / 4.5)
     property int spacing: 0.15 * buttonWidth
-    
+
     property alias movesGridView: movesGridView
-    
+
     DelegateModel {
         id: movesDelegateModel
         model: movesListModel
@@ -40,7 +40,7 @@ Rectangle {
                 border.color: "black"
                 border.width: 2
                 radius: width / 2
-                
+
                 Image {
                     source: "qrc:/gcompris/src/activities/path_encoding/resource/right-arrow-plain.png"
                     width: 0.6 * parent.width
