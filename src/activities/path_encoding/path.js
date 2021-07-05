@@ -42,30 +42,30 @@ function stop() {
 
 function initLevel() {
     items.bar.level = currentLevel + 1
-    
+
     items.rows = items.levels[currentLevel].rows
     items.cols = items.levels[currentLevel].cols
-    
+
     items.mapListModel.clear()
     items.movesListModel.clear()
-    
+
     for(var i=0; i < items.rows * items.cols; ++i)
         items.mapListModel.append(mapModel)
-    
+
     map = items.levels[currentLevel].path
-    
+
     // intialize position of tux
     currPos = findStartAndLoadObstacles()
-    
+
     // find the initial direciton of tux
     items.tux.init(findCorrectDirectionAbsolute(currPos[0], currPos[1], -1, -1))
-    
+
     // reset mapView
     items.mapView.init()
-    
+
     // reset the error counter
     items.errors = 0
-    
+
     // load the moves if in decode mode
     if(items.mode === 'decode') {
         loadMoves()
@@ -78,30 +78,30 @@ function loadMoves() {
     var pos = [...currPos]
     prevPos = [-1, -1]
     var direction = items.tux.direction
-    
+
     while(map[pos[1]][pos[0]].toUpperCase() !== 'E') {
         var nextDirectionAbsolute = findCorrectDirectionAbsolute(pos[0], pos[1], prevPos[0], prevPos[1])
         var nextDirectionRelative = absoluteDirectionToRelative(nextDirectionAbsolute, direction)
-        
+
         items.movesListModel.append({
             "direction" : (items.movement === 'absolute' ? nextDirectionAbsolute : nextDirectionRelative),
             "faded" : false,
             "active" : false
         })
-        
+
         prevPos = pos
         pos = findNextPositionAbsolute(pos[0], pos[1], nextDirectionAbsolute)
         direction = nextDirectionAbsolute
     }
-    
+
     prevPos = [-1, -1]
 }
 
 function absoluteDirectionToRelative(absoluteDirection, currentDirection) {
     var directions = ['DOWN', 'LEFT', 'UP', 'RIGHT']
-    
+
     var diff = directions.indexOf(absoluteDirection) - directions.indexOf(currentDirection)
-    
+
     if(diff === -1 || diff === 3)
         return 'LEFT'
     else if(diff === 1 || diff === -3)
@@ -160,10 +160,10 @@ function findStartAndLoadObstacles() {
 function isValidPos(pos) {
     if(prevPos[0] === pos[0] && prevPos[1] === pos[1])
         return false;
-    
+
     if(pos[1] >= map.length || pos[1] < 0 || pos[0] >= map[0].length || pos[0] < 0)
         return false;
-    
+
     return map[pos[1]][pos[0]] === '*' || map[pos[1]][pos[0]].toUpperCase() === 'S' || map[pos[1]][pos[0]].toUpperCase() === 'E';
 }
 
@@ -182,9 +182,9 @@ function moveTuxToBlock() {
 
 function updateTux() {
     moveTuxToBlock()
-    
+
     items.audioEffects.play(successSoundPath)
-    
+
     if(map[currPos[1]][currPos[0]].toUpperCase() === 'E')
         items.bonus.good ("tux")
 }
@@ -210,9 +210,9 @@ function findNextDirectionRelative(fromX, fromY, direction) {
 
     if(newRelativeCardinalDirection < 0)
         newRelativeCardinalDirection += 360
-    
+
     newRelativeCardinalDirection = newRelativeCardinalDirection % 360
-    
+
     return directions[newRelativeCardinalDirection / 90]
 }
 
@@ -222,26 +222,26 @@ function findNextPositionRelative(fromX, fromY, direction) {
 }
 
 function moveTowards(direction) {
-    if(items.tux.isAnimationRunning)
+    if(items.tux.isAnimationRunning || items.bonus.isPlaying)
         return
-        
+
     var absolutePosition = findNextPositionAbsolute(currPos[0], currPos[1], direction)
-    
+
     var relativeDirection = findNextDirectionRelative(currPos[0], currPos[1], direction)
     var relativePosition = findNextPositionRelative(currPos[0], currPos[1],  direction)
-    
+
     if((items.movement === 'absolute' && isValidPos(absolutePosition)) || 
      (items.movement === 'relative' && isValidPos(relativePosition))) {
-        
+
         if(items.mode === 'encode')
             items.movesListModel.append({
                 "direction" : direction,
                 "active" : false,
                 "faded" : false
             })
-        
+
         prevPos = currPos
-        
+
         if(items.movement === 'absolute') {
             currPos = absolutePosition
             items.tux.direction = direction
@@ -250,7 +250,7 @@ function moveTowards(direction) {
             currPos = relativePosition
             items.tux.direction = relativeDirection
         }
-        
+
         updateTux()
     }
     else {
@@ -260,23 +260,23 @@ function moveTowards(direction) {
 }
 
 function processBlockClick(pos) {
-    if(decodeIndex >= items.movesListModel.count)
+    if(decodeIndex >= items.movesListModel.count || items.bonus.isPlaying)
         return
-        
+
     var correctPos
     if(items.movement === 'absolute')
         correctPos = findNextPositionAbsolute(currPos[0], currPos[1], items.movesListModel.get(decodeIndex).direction)
     else
         correctPos = findNextPositionRelative(currPos[0], currPos[1], items.movesListModel.get(decodeIndex).direction)
-        
+
     if(correctPos[0] === pos[0] && correctPos[1] === pos[1]) {
         moveTowards(items.movesListModel.get(decodeIndex).direction)
-        
+
         items.movesListModel.set(decodeIndex, {"active" : false, "faded" : true})
         decodeIndex++
         if(decodeIndex < items.movesListModel.count)
             items.movesListModel.set(decodeIndex, {"active" : true})
-            
+
         items.mapListModel.set(positionToIndex(currPos), {"path": true})
     }
     else {

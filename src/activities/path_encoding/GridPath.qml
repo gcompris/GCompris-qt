@@ -14,10 +14,10 @@ ActivityBase {
     id: activity
     // mode : encode | decode
     property string mode
-    
+
     // movement : absolute | relative
     property string movement
-    
+
     onStart: focus = true
     onStop: {}
 
@@ -54,13 +54,31 @@ ActivityBase {
             property alias bonus: bonus
         }
 
+        onWidthChanged: {
+            sizeChangedTimer.restart()
+        }
+
+        onHeightChanged: {
+            sizeChangedTimer.restart()
+        }
+
+        Timer {
+            id: sizeChangedTimer
+            interval: 100
+            onTriggered: {
+                tux.animationEnabled = false
+                Activity.moveTuxToBlock()
+                tux.animationEnabled = true
+            }
+        }
+
         onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
         
         ListModel {
             id: mapListModel
         }
-        
+
         Item {
             id: layoutArea
             anchors.top: parent.top
@@ -81,7 +99,7 @@ ActivityBase {
             rows: items.rows
             cols: items.cols
         }
-        
+
         GCText {
             id: errorsText
             fontSize: tinySize
@@ -93,30 +111,30 @@ ActivityBase {
                 left: mapView.left
             }
         }
-        
+
         ListModel {
             id: movesListModel
         }
-        
+
         MoveBar {
             id: moveBar
         }
-        
+
         MoveButtons {
             id: moveButtons
             visible: items.mode === 'encode'
         }
-        
+
         Tux {
             id: tux
             width: mapView.cellSize
             height: mapView.cellSize
         }
-        
+
         property double maxAllowedHeight: layoutArea.height
         property double maxAllowedWidth: (layoutArea.width - layoutArea.anchors.bottomMargin) / 2
         property double size: Math.min(maxAllowedHeight / items.rows, maxAllowedWidth / items.cols)
-        
+
         states: [
             State {
                 id: horizontalLayout
@@ -191,7 +209,7 @@ ActivityBase {
                 }
             }
         ]
-        
+
         DialogChooseLevel {
             id: dialogActivityConfig
             currentActivity: activity.activityInfo
@@ -210,7 +228,7 @@ ActivityBase {
                 background.start()
             }
         }
-        
+
         DialogHelp {
             id: dialogHelp
             onClose: home()
@@ -235,7 +253,7 @@ ActivityBase {
             winSound: "qrc:/gcompris/src/activities/ballcatch/resource/tuxok.wav"
             Component.onCompleted: win.connect(Activity.nextLevel)
         }
-        
+
         Keys.onLeftPressed: (items.mode === 'encode') ? Activity.moveTowards('LEFT') : null
         Keys.onRightPressed: (items.mode === 'encode') ? Activity.moveTowards('RIGHT') : null
         Keys.onUpPressed: (items.mode === 'encode') ? Activity.moveTowards('UP') : null

@@ -13,7 +13,7 @@ import "path.js" as Activity
 Item {
     id: block
     property int index
-    
+
     Rectangle {
         id: rectangle
         anchors.fill: parent
@@ -21,7 +21,7 @@ Item {
         border.color: "black"
         border.width: (invisible) ? 0 : 1
     }
-    
+
     Image {
         width: 0.7 * parent.width
         height: 0.7 * parent.height
@@ -40,7 +40,7 @@ Item {
             ""
         fillMode: Image.PreserveAspectFit
     }
-    
+
     Image {
         width: 0.7 * parent.width
         height: 0.7 * parent.height
@@ -49,7 +49,7 @@ Item {
         source:"qrc:/gcompris/src/activities/path_encoding/resource/mud.jpg"
         fillMode: Image.PreserveAspectFit
     }
-    
+
     Image {
         width: 0.7 * parent.width
         height: 0.7 * parent.height
