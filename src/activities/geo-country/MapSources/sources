@@ -1,6 +1,6 @@
 maps reference sources
 
-All the maps (except romania-historical and lithuania-cultural) were created based on data from OpenStreetMap (downloaded with https://osm-boundaries.com/), converted to svg with geojson-to-svg (https://www.npmjs.com/package/geojson-to-svg), and then heavily edited in Inkscape.
+All the maps (except romania-historical and lithuania-cultural) were created based on data from OpenStreetMap (downloaded with https://osm-boundaries.com/ in EPSG:4326 coordinates), converted to EPSG:3857 coordinates (Web Mercator Projection) with reproject (https://github.com/perliedman/reproject), converted to svg with geojson-to-svg (https://www.npmjs.com/package/geojson-to-svg), and then heavily edited in Inkscape.
 
 romania-historical map was based on a mix of OSM data and https://commons.wikimedia.org/wiki/File:Romania_historic_regions.svg , with heavy editing in Inkscape.
 
@@ -12,24 +12,27 @@ lithuania-cultural map was based on a mix of OSM data and https://commons.wikime
 Steps to create country regions map:
 
 -Get map of country data from https://osm-boundaries.com/
-(select country, admin level min and max 4, file format GeoJSON, Land only, Simplify: Some less (0.1), or Even less (0.01) if Some less is not detailed enough)
+(select country, admin level min and max 4, file format GeoJSON, SRID: 4326, Land only, Simplify: Some less (0.1), or Even less (0.01) if Some less is not detailed enough)
 
--extract *.kmz file to *.kmz.uncompressed
+-extract *.geojson.gz file to *.geojson
 
--convert kmz.uncompressed file to svg with https://www.npmjs.com/package/geojson-to-svg
-(example: ./geojson2svg --input OSMB-myFile.kmz.uncompressed > countryName.svg
+-convert .geojson file to EPSG:3857 with reproject
+example:
+cat OSMB-myFile.geojson | reproject --use-epsg-io --from=EPSG:4326 --to=EPSG:3857 > countryName.geojson
+
+-convert the resulting .geojson file to svg with https://www.npmjs.com/package/geojson-to-svg
+example:
+./geojson2svg --input countryName.geojson > countryName.svg
 
 -open the svg file in inkscape
 
--as the converted svg appears to be upside down, select everything, and press V key to mirror everything vertically
+-as the document is insanely huge, first step is to change the document size to 500x500px, the Scale x and y are at 1.0, and the Viewbox X and Y are at 0.0.
 
--in document properties, make sure that the Scale x and y are at 1.0, and the Viewbox X and Y are at 0.0.
+-select everything (ctrl + a) , lock the size ratio and set the biggest side (width or height) to 480px
 
--Set the document size to 500px per 500px
+-as the converted svg appears to be upside down, press v key to mirror everything vertically
 
--select everything, lock the size ratio and set the biggest side (width or height) to 480px
-
--set the document side again to adjust the width or height (example: if the content is 480px width and 203px height, set the document height to 203px, that is at least 20px more than the content height and rounded to the next tens.)
+-set the document size again to adjust the width or height (example: if the content is 480px width and 203px height, set the document height to 230px, that is at least 20px more than the content height and rounded to the next tens.)
 
 -with everything selected, center the content vertically and horizontally inside the document page.
 
@@ -37,7 +40,7 @@ Steps to create country regions map:
 
 -cut all the content, and paste it in place in the new layer
 
--set the contents style: fill color pure white (#ffffffff), and the outline 0.5px and color #505050ff
+-set the contents style: fill color pure white (#ffffffff), and the outline size 0.5px and color #505050ff
 
 -ungroup (shift+g) the content to get separate regions as single items
 
