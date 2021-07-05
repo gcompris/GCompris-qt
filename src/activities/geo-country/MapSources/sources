@@ -1,6 +1,6 @@
 maps reference sources
 
-All the maps (except romania-historical and lithuania-cultural) were created based on data from OpenStreetMap (downloaded with https://osm-boundaries.com/ in EPSG:4326 coordinates), converted to EPSG:3857 coordinates (Web Mercator Projection) with reproject (https://github.com/perliedman/reproject), converted to svg with geojson-to-svg (https://www.npmjs.com/package/geojson-to-svg), and then heavily edited in Inkscape.
+All the maps (except romania-historical and lithuania-cultural) were created based on data from OpenStreetMap (downloaded with https://osm-boundaries.com/ in EPSG:4326 coordinates), converted to different projection coordinates with reproject (https://github.com/perliedman/reproject), converted to svg with geojson-to-svg (https://www.npmjs.com/package/geojson-to-svg), and then heavily edited in Inkscape.
 
 romania-historical map was based on a mix of OSM data and https://commons.wikimedia.org/wiki/File:Romania_historic_regions.svg , with heavy editing in Inkscape.
 
