@@ -47,6 +47,7 @@ ActivityBase {
             property var levels: activity.datasetLoader.data
             property alias mapView: mapView
             property alias tux: tux
+            property alias movesGridView: moveBar.movesGridView
             property alias mapListModel: mapListModel
             property alias movesListModel: movesListModel
             property alias background: background

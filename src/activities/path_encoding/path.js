@@ -72,6 +72,8 @@ function initLevel() {
         decodeIndex = 0
         items.movesListModel.set(0, {"active": true})
     }
+    
+    items.movesGridView.currentIndex = 0
 }
 
 function loadMoves() {
@@ -233,12 +235,15 @@ function moveTowards(direction) {
     if((items.movement === 'absolute' && isValidPos(absolutePosition)) || 
      (items.movement === 'relative' && isValidPos(relativePosition))) {
 
-        if(items.mode === 'encode')
+        if(items.mode === 'encode') {
             items.movesListModel.append({
                 "direction" : direction,
                 "active" : false,
                 "faded" : false
             })
+            
+            items.movesGridView.currentIndex = items.movesListModel.count - 1
+        }
 
         prevPos = currPos
 
@@ -274,8 +279,10 @@ function processBlockClick(pos) {
 
         items.movesListModel.set(decodeIndex, {"active" : false, "faded" : true})
         decodeIndex++
-        if(decodeIndex < items.movesListModel.count)
+        if(decodeIndex < items.movesListModel.count) {
             items.movesListModel.set(decodeIndex, {"active" : true})
+            items.movesGridView.currentIndex = decodeIndex
+        }
 
         items.mapListModel.set(positionToIndex(currPos), {"path": true})
     }
