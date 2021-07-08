@@ -22,218 +22,218 @@ QtObject {
          "pixmapfile" : "china/xinjiang.svgz",
          //: Province of China: Xinjiang
          "toolTipText" : qsTr("Xinjiang"),
-         "x" : "0.2105",
-         "y" : "0.2893"
+         "x" : "0.2116",
+         "y" : "0.3143"
       },
       {
          "pixmapfile" : "china/gansu.svgz",
          //: Province of China: Gansu
          "toolTipText" : qsTr("Gansu"),
-         "x" : "0.4617",
-         "y" : "0.4496"
+         "x" : "0.4673",
+         "y" : "0.464"
       },
       {
          "pixmapfile" : "china/inner_mongolia.svgz",
          //: Province of China: Inner Mongolia
          "toolTipText" : qsTr("Inner Mongolia"),
-         "x" : "0.6288",
-         "y" : "0.2522"
+         "x" : "0.6282",
+         "y" : "0.2569"
       },
       {
          "pixmapfile" : "china/ningxia.svgz",
          //: Province of China: Ningxia
          "toolTipText" : qsTr("Ningxia"),
-         "x" : "0.551",
-         "y" : "0.4675"
+         "x" : "0.5582",
+         "y" : "0.4768"
       },
       {
          "pixmapfile" : "china/heilongjiang.svgz",
          //: Province of China: Heilongjiang
          "toolTipText" : qsTr("Heilongjiang"),
-         "x" : "0.8766",
-         "y" : "0.1547"
+         "x" : "0.8727",
+         "y" : "0.1435"
       },
       {
          "pixmapfile" : "china/jilin.svgz",
          //: Province of China: Jilin
          "toolTipText" : qsTr("Jilin"),
-         "x" : "0.873",
-         "y" : "0.2875"
+         "x" : "0.8762",
+         "y" : "0.2753"
       },
       {
          "pixmapfile" : "china/liaoning.svgz",
          //: Province of China: Liaoning
          "toolTipText" : qsTr("Liaoning"),
-         "x" : "0.819",
-         "y" : "0.355"
+         "x" : "0.8247",
+         "y" : "0.3473"
       },
       {
          "pixmapfile" : "china/tianjin.svgz",
          //: Province of China: Tianjin
          "toolTipText" : qsTr("Tianjin"),
-         "x" : "0.7414",
-         "y" : "0.409"
+         "x" : "0.7495",
+         "y" : "0.4068"
       },
       {
          "pixmapfile" : "china/beijing.svgz",
          //: Province of China: Beijing
          "toolTipText" : qsTr("Beijing"),
-         "x" : "0.7244",
-         "y" : "0.3894"
+         "x" : "0.7308",
+         "y" : "0.3868"
       },
       {
          "pixmapfile" : "china/shandong.svgz",
          //: Province of China: Shandong
          "toolTipText" : qsTr("Shandong"),
-         "x" : "0.7687",
-         "y" : "0.4815"
+         "x" : "0.7803",
+         "y" : "0.4864"
       },
       {
          "pixmapfile" : "china/shanxi.svgz",
          //: Province of China: Shanxi
          "toolTipText" : qsTr("Shanxi"),
-         "x" : "0.6579",
-         "y" : "0.4577"
+         "x" : "0.6678",
+         "y" : "0.4625"
       },
       {
          "pixmapfile" : "china/shaanxi.svgz",
          //: Province of China: Shaanxi
          "toolTipText" : qsTr("Shaanxi"),
-         "x" : "0.5865",
-         "y" : "0.5114"
+         "x" : "0.6004",
+         "y" : "0.5184"
       },
       {
          "pixmapfile" : "china/qinghai.svgz",
          //: Province of China: Qinghai
          "toolTipText" : qsTr("Qinghai"),
-         "x" : "0.3774",
-         "y" : "0.494"
+         "x" : "0.3864",
+         "y" : "0.5161"
       },
       {
          "pixmapfile" : "china/tibet.svgz",
          //: Province of China: Tibet
          "toolTipText" : qsTr("Tibet"),
-         "x" : "0.2318",
-         "y" : "0.5639"
+         "x" : "0.2439",
+         "y" : "0.5884"
       },
       {
          "pixmapfile" : "china/sichuan.svgz",
          //: Province of China: Sichuan
          "toolTipText" : qsTr("Sichuan"),
-         "x" : "0.4904",
-         "y" : "0.6441"
+         "x" : "0.5045",
+         "y" : "0.6627"
       },
       {
          "pixmapfile" : "china/chongqing.svgz",
          //: Province of China: Chongqing
          "toolTipText" : qsTr("Chongqing"),
-         "x" : "0.5746",
-         "y" : "0.6514"
+         "x" : "0.5924",
+         "y" : "0.6633"
       },
       {
          "pixmapfile" : "china/henan.svgz",
          //: Province of China: Henan
          "toolTipText" : qsTr("Henan"),
-         "x" : "0.6809",
-         "y" : "0.5547"
+         "x" : "0.6939",
+         "y" : "0.5579"
       },
       {
          "pixmapfile" : "china/jiangsu.svgz",
          //: Province of China: Jiangsu
          "toolTipText" : qsTr("Jiangsu"),
-         "x" : "0.7842",
-         "y" : "0.5697"
+         "x" : "0.7992",
+         "y" : "0.5674"
       },
       {
          "pixmapfile" : "china/anhui.svgz",
          //: Province of China: Anhui
          "toolTipText" : qsTr("Anhui"),
-         "x" : "0.7518",
-         "y" : "0.598"
+         "x" : "0.7676",
+         "y" : "0.5996"
       },
       {
          "pixmapfile" : "china/hubei.svgz",
          //: Province of China: Hubei
          "toolTipText" : qsTr("Hubei"),
-         "x" : "0.6614",
-         "y" : "0.6265"
+         "x" : "0.6785",
+         "y" : "0.6356"
       },
       {
          "pixmapfile" : "china/shanghai.svgz",
          //: Province of China: Shanghai
          "toolTipText" : qsTr("Shanghai"),
-         "x" : "0.8298",
-         "y" : "0.6086"
+         "x" : "0.8477",
+         "y" : "0.6062"
       },
       {
          "pixmapfile" : "china/zhejiang.svgz",
          //: Province of China: Zhejiang
          "toolTipText" : qsTr("Zhejiang"),
-         "x" : "0.8158",
-         "y" : "0.6608"
+         "x" : "0.8298",
+         "y" : "0.6647"
       },
       {
          "pixmapfile" : "china/fujian.svgz",
          //: Province of China: Fujian
          "toolTipText" : qsTr("Fujian"),
-         "x" : "0.7785",
-         "y" : "0.7593"
+         "x" : "0.7998",
+         "y" : "0.7563"
       },
       {
          "pixmapfile" : "china/jiangxi.svgz",
          //: Province of China: Jiangxi
          "toolTipText" : qsTr("Jiangxi"),
-         "x" : "0.7345",
-         "y" : "0.723"
+         "x" : "0.7542",
+         "y" : "0.7271"
       },
       {
          "pixmapfile" : "china/hunan.svgz",
          //: Province of China: Hunan
          "toolTipText" : qsTr("Hunan"),
-         "x" : "0.6479",
-         "y" : "0.7247"
+         "x" : "0.6696",
+         "y" : "0.7335"
       },
       {
          "pixmapfile" : "china/guizhou.svgz",
          //: Province of China: Guizhou
          "toolTipText" : qsTr("Guizhou"),
-         "x" : "0.5518",
-         "y" : "0.7354"
+         "x" : "0.5725",
+         "y" : "0.7496"
       },
       {
          "pixmapfile" : "china/yunnan.svgz",
          //: Province of China: Yunnan
          "toolTipText" : qsTr("Yunnan"),
-         "x" : "0.4546",
-         "y" : "0.771"
+         "x" : "0.478",
+         "y" : "0.7919"
       },
       {
          "pixmapfile" : "china/guangxi.svgz",
          //: Province of China: Guangxi
          "toolTipText" : qsTr("Guangxi"),
-         "x" : "0.5834",
-         "y" : "0.8159"
+         "x" : "0.6073",
+         "y" : "0.8254"
       },
       {
          "pixmapfile" : "china/guangdong.svgz",
          //: Province of China: Guangdong
          "toolTipText" : qsTr("Guangdong"),
-         "x" : "0.6866",
-         "y" : "0.8424"
+         "x" : "0.7137",
+         "y" : "0.8497"
       },
       {
          "pixmapfile" : "china/hainan.svgz",
          //: Province of China: Hainan
          "toolTipText" : qsTr("Hainan"),
-         "x" : "0.614",
-         "y" : "0.9403"
+         "x" : "0.6434",
+         "y" : "0.9463"
       },
       {
          "pixmapfile" : "china/hebei.svgz",
          //: Province of China: Hebei
          "toolTipText" : qsTr("Hebei"),
-         "x" : "0.7296",
-         "y" : "0.4118"
+         "x" : "0.7374",
+         "y" : "0.411"
       }
    ]
 }
