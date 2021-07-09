@@ -1,24 +1,24 @@
 maps reference sources
 
-All the maps (except romania-historical and lithuania-cultural) were created based on data from OpenStreetMap (downloaded with https://osm-boundaries.com/ in EPSG:4326 coordinates), converted to different projection coordinates with reproject (https://github.com/perliedman/reproject), converted to svg with geojson-to-svg (https://www.npmjs.com/package/geojson-to-svg), and then heavily edited in Inkscape.
+All the maps (except romania-historical and lithuania-cultural) were created based on data from OpenStreetMap (downloaded with https://osm-boundaries.com/ in EPSG:4326 coordinates), converted to country-specific projections using reproject (https://www.npmjs.com/package/reproject), converted to svg with geojson-to-svg (https://www.npmjs.com/package/geojson-to-svg), and then heavily edited in Inkscape.
 
-romania-historical map was based on a mix of OSM data and https://commons.wikimedia.org/wiki/File:Romania_historic_regions.svg , with heavy editing in Inkscape.
+romania-historical map was based on https://commons.wikimedia.org/wiki/File:Romania_historic_regions.svg (CC-BY-SA 3.0 Unported license, by Andein), with heavy editing in Inkscape.
 
-lithuania-cultural map was based on a mix of OSM data and https://commons.wikimedia.org/wiki/File:Liet-etno-regionai.png , with heavy editing in Inkscape.
+lithuania-cultural map was based on https://commons.wikimedia.org/wiki/File:Liet-etno-regionai.png (public domain license), with heavy editing in Inkscape.
 
 
 ***
 
 Steps to create country regions map:
 
--Get map of country data from https://osm-boundaries.com/
-(select country, admin level min and max 4, file format GeoJSON, SRID: 4326, Land only, Simplify: Some less (0.1), or Even less (0.01) if Some less is not detailed enough)
+-Get the map coordinates from https://osm-boundaries.com/
+(select country, admin level min and max 4, file format GeoJSON, SRID: 4326, Land only, Simplify: Even less (0.01))
 
--extract *.geojson.gz file to *.geojson
+-extract the *.geojson.gz file to *.geojson
 
--find the best projection available for your country in https://epsg.io , or if you really can't find one use EPSG:3857
+-find the best projection available for your country in https://epsg.io or https://spatialreference.org/
 
--convert .geojson file to the selected projection with reproject (replace EPSG:3857 by the one you selected)
+-convert the .geojson file to the selected projection with reproject (replace EPSG:3857 by the code of the projection you selected; check the manual of reproject for more details)
 example:
 cat OSMB-myFile.geojson | reproject --use-epsg-io --from=EPSG:4326 --to=EPSG:3857 > countryName.geojson
 
@@ -28,15 +28,19 @@ example:
 
 -open the svg file in inkscape
 
--First step is to change the document size to 500x500px, the Scale x and y to 1.0, and the Viewbox X and Y to 0.0.
+-first step is to change the document Width and Height to 500 px, the Scale X and X to 1.0, the Viewbox X and Y to 0.0 and the Viewbox Width and Height to 500px
 
 -select everything (ctrl + a) , lock the size ratio in the top bar and set the biggest side (width or height) to 480px
+
+-use the menu View - Zoom - Zoom Selection
 
 -as the converted svg appears to be upside down, press v key to mirror everything vertically
 
 -set the document size again to adjust the width or height (example: if the content is 480px width and 203px height, set the document height to 230px, that is at least 20px more than the content height and rounded to the next tens.)
 
--with everything selected, center the content vertically and horizontally inside the document page.
+-with everything selected, center the content vertically and horizontally inside the document page
+
+-if needed, use again the menu View - Zoom - Zoom Selection
 
 -create a new layer named [back]country_name
 
@@ -50,7 +54,7 @@ example:
 
 -select all the objects, and remove their outline
 
--hide all the layers, and then for each layer, make it visible, and at zoom level between 200% and 300% (adapt to get the level of detail you want, but most importantly use the same zoom level for all the regions, and don't use a zoom level higher than 300% to keep the result small enough) use the fill tool on the region's shape to create a new shape for it, more simplified (this is needed as the imported shapes are often too heavy and not very optimized; the fill tool helps here to create a new shape more optimized while keeping the shape similar enough). NOTE: if a region is made of several shapes, fill them all, then select them all and join the shapes (with ctrl++). Fill Tool tips: first in the document settings, set the background color to a dark grey; then when using the fill tool, set its settings to Fill by: Alpha, Threshold: 50, Grow/shrink by:0, Close gaps: None.
+-hide all the layers, and then for each layer, make it visible, and at zoom level between 200% and 300% (adapt to get the level of detail you want, but most importantly use the same zoom level for all the regions, and don't use a zoom level higher than 300% to keep the result small enough) use the fill tool on the region's shape to create a new shape for it, more simplified (this is needed as the imported shapes are often too heavy and not very optimized; the fill tool helps here to create a new shape more optimized while keeping the shape similar enough). NOTE: if a region is made of several shapes, fill them all, then select them all and join the shapes (with ctrl++). Fill Tool tips: first in the document settings, set the background color to a dark grey; then when using the fill tool, set its settings to Fill by: Alpha, Threshold: 50, Grow/shrink by:0, Close gaps: None
 
 -delete all the original imported shapes (tip: select the newly created shape, move it down with the button "Lower selection to bottom (End)", select the original shape that is now on top and delete it.)
 
@@ -68,7 +72,7 @@ example:
 
 -copy the script convertSvgToSvgz.sh inside this layers folder and run it to convert all svg to svgz, then do rm -f *.svg to delete the svg and keep only the svgz files
 
--copy the source svgz file (with all the map and regions) in MapSources in geo-country, and copy the exported separated layer svgz files to a folder with the country name in resources.
+-copy the source svgz file (with all the map and regions) in MapSources in geo-country, and copy the exported separated layer svgz files to a folder with the country name in resources
 
 -create a board file for the country (look at other board files to copy the structure), and use the coordinates from the text file for each region
 
