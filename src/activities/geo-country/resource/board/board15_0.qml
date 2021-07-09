@@ -23,92 +23,50 @@ QtObject {
          "pixmapfile" : "scotland/aberdeenshire.svgz",
          //: Council area of Scotland: Aberdeenshire
          "toolTipText" : qsTr("Aberdeenshire"),
-         "x" : "0.6993",
-         "y" : "0.578"
+         "x" : "0.7071",
+         "y" : "0.8299"
       },
       {
          "pixmapfile" : "scotland/aberdeen.svgz",
          //: Council area of Scotland: Aberdeen
          "toolTipText" : qsTr("Aberdeen"),
-         "x" : "0.7793",
-         "y" : "0.5884"
+         "x" : "0.788",
+         "y" : "0.8454"
       },
       {
          "pixmapfile" : "scotland/moray.svgz",
          //: Council area of Scotland: Moray
          "toolTipText" : qsTr("Moray"),
-         "x" : "0.6411",
-         "y" : "0.5514"
+         "x" : "0.6522",
+         "y" : "0.7892"
       },
       {
          "pixmapfile" : "scotland/na_h-eileanan_siar.svgz",
          //: Council area of Scotland: Na h-Eileanan Siar
          "toolTipText" : qsTr("Na h-Eileanan Siar"),
-         "x" : "0.132",
-         "y" : "0.512"
+         "x" : "0.146",
+         "y" : "0.7138"
       },
       {
          "pixmapfile" : "scotland/orkney_islands.svgz",
          //: Council area of Scotland: Orkney Islands
          "toolTipText" : qsTr("Orkney Islands"),
-         "x" : "0.6829",
-         "y" : "0.2968"
+         "x" : "0.6982",
+         "y" : "0.4188"
       },
       {
          "pixmapfile" : "scotland/shetland_islands.svgz",
          //: Council area of Scotland: Shetland Islands
          "toolTipText" : qsTr("Shetland Islands"),
-         "x" : "0.882",
-         "y" : "0.1293"
+         "x" : "0.8868",
+         "y" : "0.1689"
       },
       {
          "pixmapfile" : "scotland/highland.svgz",
          //: Council area of Scotland: Highland
          "toolTipText" : qsTr("Highland"),
-         "x" : "0.4069",
-         "y" : "0.523"
-      },
-      {
-         "pixmapfile" : "scotland/angus.svgz",
-         //: Council area of Scotland: Angus
-         "toolTipText" : qsTr("Angus"),
-         "x" : "0.6811",
-         "y" : "0.6544"
-      },
-      {
-         "pixmapfile" : "scotland/dundee.svgz",
-         //: Council area of Scotland: Dundee
-         "toolTipText" : qsTr("Dundee"),
-         "x" : "0.6742",
-         "y" : "0.6925"
-      },
-      {
-         "pixmapfile" : "scotland/perth_and_kinross.svgz",
-         //: Council area of Scotland: Perth and Kinross
-         "toolTipText" : qsTr("Perth and Kinross"),
-         "x" : "0.5477",
-         "y" : "0.6827"
-      },
-      {
-         "pixmapfile" : "scotland/stirling.svgz",
-         //: Council area of Scotland: Stirling
-         "toolTipText" : qsTr("Stirling"),
-         "x" : "0.4868",
-         "y" : "0.7269"
-      },
-      {
-         "pixmapfile" : "scotland/argyll_and_bute.svgz",
-         //: Council area of Scotland: Argyll and Bute
-         "toolTipText" : qsTr("Argyll and Bute"),
-         "x" : "0.2863",
-         "y" : "0.767"
-      },
-      {
-         "pixmapfile" : "scotland/fife.svgz",
-         //: Council area of Scotland: Fife
-         "toolTipText" : qsTr("Fife"),
-         "x" : "0.647",
-         "y" : "0.7304"
+         "x" : "0.4206",
+         "y" : "0.7425"
       }
    ]
 }
