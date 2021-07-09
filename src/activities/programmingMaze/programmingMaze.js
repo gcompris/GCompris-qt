@@ -47,7 +47,7 @@ var deadEndPoint = false
 var codeIterator = 0
 
 // Stores the number of loops needed
-var loopsNumber = -1
+var loopsNumber
 
 /**
  * Stores if the reset is done only when Tux is clicked.
@@ -215,6 +215,11 @@ function initLevel() {
 
         // Create, populate and connect signals of instructions for procedure code area if the level has procedure.
         createInstructionObjects(procedureInstructionObjects, mainInstructionObjects[CALL_PROCEDURE])
+    }
+
+    if(activityMode === "loops" && items.bar.level > 5) {
+        loopsNumber = -1
+        createLoopObjectAndInstructions()
     }
 
     // Stores the co-ordinates of the tile blocks in the current level
