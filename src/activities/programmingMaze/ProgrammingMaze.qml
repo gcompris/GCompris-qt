@@ -143,17 +143,19 @@ ActivityBase {
         }
 
         function backspace() {
+            if(!items.isRunCodeEnabled) return
             answerBackground.userEntry = answerBackground.userEntry.slice(0, -1)
             answerBackground.userEntry = "?"
         }
 
         function appendText(text) {
             var number = parseInt(text)
-            if(isNaN(number))
+            if(isNaN(number) || !items.isRunCodeEnabled)
                 return
 
             answerBackground.userEntry = text
             Activity.loopsNumber = number
+            Activity.createLoopObjectAndInstructions()
         }
 
         ListModel {

@@ -154,9 +154,6 @@ function createInstruction(instructionObjects, instructionName, instructionCodeA
     if(instructionName === TURN_LEFT || instructionName === TURN_RIGHT) {
         instructionObjects[instructionName] = instructionComponents[instructionName].createObject(instructionCodeArea, { "turnDirection": instructionName })
     }
-    else if(instructionName === EXECUTE_LOOPS) {
-        instructionObjects[instructionName] = instructionComponents[instructionName].createObject(instructionCodeArea, { "counter": loopsNumber })
-    }
     else {
         instructionObjects[instructionName] = instructionComponents[instructionName].createObject(instructionCodeArea)
     }
@@ -220,16 +217,6 @@ function initLevel() {
         createInstructionObjects(procedureInstructionObjects, mainInstructionObjects[CALL_PROCEDURE])
     }
 
-    if(activityMode === "loops") {
-        //TO DO: enable/disable loops tutorial
-
-        // Create loop object in the main look-up table ,if the activity mode is loops, to execute it loops from the main code area.
-        createInstruction(mainInstructionObjects, EXECUTE_LOOPS, items.background)
-
-        // Create, populate and connect signals of instructions for loop code area itself.
-        createInstructionObjects(loopInstructionObjects, mainInstructionObjects[EXECUTE_LOOPS])
-    }
-
     // Stores the co-ordinates of the tile blocks in the current level
     var currentLevelBlocksCoordinates = mazeBlocks[currentLevel].map
 
@@ -270,6 +257,14 @@ function initLevel() {
     resetCodeAreasIndices()
     resetTux = false
     codeIterator = 0
+}
+
+function createLoopObjectAndInstructions() {
+    // Create loop object in the main look-up table ,if the activity mode is loops, to execute it loops from the main code area.
+    createInstruction(mainInstructionObjects, EXECUTE_LOOPS, items.background)
+
+    // Create, populate and connect signals of instructions for loop code area itself.
+    createInstructionObjects(loopInstructionObjects, mainInstructionObjects[EXECUTE_LOOPS])
 }
 
 function resetCodeAreasIndices() {

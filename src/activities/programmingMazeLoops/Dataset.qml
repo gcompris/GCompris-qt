@@ -10,29 +10,9 @@ QtObject {
         // Level one
         {
             "map": [
-                {'x': 1, 'y': 1},
-                {'x': 2, 'y': 1},
-                {'x': 3, 'y': 1},
-                {'x': 3, 'y': 2},
-                {'x': 3, 'y': 3},
-                {'x': 2, 'y': 3},
-                {'x': 1, 'y': 3}
-            ],
-            "fish": {'x': 1, 'y': 3},
-            "instructions": [
-                "move-forward",
-                "turn-left",
-                "turn-right",
-                "execute-loops"
-            ],
-            "maxNumberOfInstructions": 5
-        },
-        // Level two
-        {
-            "map": [
                 {'x': 1, 'y': 3},
-                {'x': 2, 'y': 3},
-                {'x': 2, 'y': 2},
+                {'x': 1, 'y': 2},
+                {'x': 1, 'y': 1},
                 {'x': 2, 'y': 1},
                 {'x': 3, 'y': 1}
             ],
@@ -43,9 +23,9 @@ QtObject {
                 "turn-right",
                 "execute-loops"
             ],
-            "maxNumberOfInstructions": 10
+            "maxNumberOfInstructions": 8
         },
-        // Level three
+        // Level two
         {
             "map": [
                 {'x': 0, 'y': 3},
@@ -57,29 +37,29 @@ QtObject {
                 {'x': 3, 'y': 0},
                 {'x': 3, 'y': 1},
                 {'x': 3, 'y': 2},
-                {'x': 3, 'y': 3},
-                {'x': 2, 'y': 3}
+                {'x': 3, 'y': 3}
             ],
-            "fish": {'x': 2, 'y': 3},
+            "fish": {'x': 3, 'y': 3},
             "instructions": [
                 "move-forward",
                 "turn-left",
                 "turn-right",
                 "execute-loops"
             ],
-            "maxNumberOfInstructions": 6
+            "maxNumberOfInstructions": 14
         },
-        // Level four
+        // Level three
         {
             "map": [
-                {'x': 0, 'y': 0},
-                {'x': 0, 'y': 1},
-                {'x': 1, 'y': 1},
-                {'x': 1, 'y': 2},
-                {'x': 2, 'y': 2},
+                {'x': 0, 'y': 3},
+                {'x': 1, 'y': 3},
                 {'x': 2, 'y': 3},
-                {'x': 3, 'y': 3},
-                {'x': 4, 'y': 3},
+                {'x': 2, 'y': 2},
+                {'x': 2, 'y': 1},
+                {'x': 3, 'y': 1},
+                {'x': 4, 'y': 1},
+                {'x': 4, 'y': 2},
+                {'x': 4, 'y': 3}
             ],
             "fish": {'x': 4, 'y': 3},
             "instructions": [
@@ -88,9 +68,9 @@ QtObject {
                 "turn-right",
                 "execute-loops"
             ],
-            "maxNumberOfInstructions": 4
+            "maxNumberOfInstructions": 15
         },
-        // Level five
+        // Level four
         {
             "map": [
                 {'x': 0, 'y': 1},
@@ -107,9 +87,36 @@ QtObject {
                 {'x': 4, 'y': 3},
                 {'x': 2, 'y': 1},
                 {'x': 2, 'y': 2},
-                {'x': 4, 'y': 2},
+                {'x': 4, 'y': 2}
             ],
             "fish": {'x': 4, 'y': 2},
+            "instructions": [
+                "move-forward",
+                "turn-left",
+                "turn-right",
+                "execute-loops"
+            ],
+            "maxNumberOfInstructions": 15
+        },
+        // Level five
+        {
+            "map": [
+                {'x': 0, 'y': 3},
+                {'x': 0, 'y': 2},
+                {'x': 0, 'y': 1},
+                {'x': 0, 'y': 0},
+                {'x': 1, 'y': 0},
+                {'x': 2, 'y': 0},
+                {'x': 2, 'y': 1},
+                {'x': 2, 'y': 2},
+                {'x': 2, 'y': 3},
+                {'x': 3, 'y': 3},
+                {'x': 4, 'y': 3},
+                {'x': 4, 'y': 2},
+                {'x': 4, 'y': 1},
+                {'x': 4, 'y': 0}
+            ],
+            "fish": {'x': 4, 'y': 0},
             "instructions": [
                 "move-forward",
                 "turn-left",
@@ -132,22 +139,43 @@ QtObject {
                 "turn-right",
                 "execute-loops"
             ],
-            "maxNumberOfInstructions": 1
+            "maxNumberOfInstructions": 5
         },
         // Level seven
         {
             "map": [
-                {'x': 0, 'y': 3},
-                {'x': 1, 'y': 3},
-                {'x': 2, 'y': 3},
+                {'x': 0, 'y': 1},
+                {'x': 1, 'y': 1},
+                {'x': 1, 'y': 0},
+                {'x': 2, 'y': 0},
+                {'x': 3, 'y': 0},
+                {'x': 4, 'y': 0},
+                {'x': 1, 'y': 2},
                 {'x': 2, 'y': 2},
+                {'x': 3, 'y': 2},
+                {'x': 4, 'y': 2}
+            ],
+            "fish": {'x': 4, 'y': 2},
+            "instructions": [
+                "move-forward",
+                "turn-left",
+                "turn-right",
+                "execute-loops"
+            ],
+            "maxNumberOfInstructions": 14
+        },
+        // Level eight
+        {
+            "map": [
+                {'x': 1, 'y': 1},
                 {'x': 2, 'y': 1},
                 {'x': 3, 'y': 1},
-                {'x': 4, 'y': 1},
-                {'x': 4, 'y': 2},
-                {'x': 4, 'y': 3}
+                {'x': 3, 'y': 2},
+                {'x': 3, 'y': 3},
+                {'x': 2, 'y': 3},
+                {'x': 1, 'y': 3}
             ],
-            "fish": {'x': 4, 'y': 3},
+            "fish": {'x': 1, 'y': 3},
             "instructions": [
                 "move-forward",
                 "turn-left",
@@ -156,19 +184,22 @@ QtObject {
             ],
             "maxNumberOfInstructions": 10
         },
-        // Level eight
+        // Level nine
         {
             "map": [
+                {'x': 0, 'y': 0},
+                {'x': 0, 'y': 1},
+                {'x': 0, 'y': 2},
                 {'x': 0, 'y': 3},
                 {'x': 1, 'y': 3},
-                {'x': 1, 'y': 2},
-                {'x': 2, 'y': 2},
-                {'x': 2, 'y': 1},
+                {'x': 2, 'y': 3},
+                {'x': 3, 'y': 3},
+                {'x': 3, 'y': 2},
                 {'x': 3, 'y': 1},
                 {'x': 3, 'y': 0},
-                {'x': 4, 'y': 0}
+                {'x': 2, 'y': 0}
             ],
-            "fish": {'x': 4, 'y': 0},
+            "fish": {'x': 2, 'y': 0},
             "instructions": [
                 "move-forward",
                 "turn-left",
@@ -177,12 +208,12 @@ QtObject {
             ],
             "maxNumberOfInstructions": 12
         },
-        // Level nine
+        // Level ten
         {
             "map": [
+                {'x': 1, 'y': 0},
                 {'x': 1, 'y': 1},
                 {'x': 0, 'y': 0},
-                {'x': 1, 'y': 0},
                 {'x': 2, 'y': 0},
                 {'x': 2, 'y': 1},
                 {'x': 3, 'y': 0},
@@ -192,11 +223,9 @@ QtObject {
                 {'x': 4, 'y': 3},
                 {'x': 3, 'y': 3},
                 {'x': 2, 'y': 3},
-                {'x': 1, 'y': 3},
-                {'x': 0, 'y': 3},
-                {'x': 0, 'y': 2}
+                {'x': 1, 'y': 3}
             ],
-            "fish": {'x': 0, 'y': 2},
+            "fish": {'x': 1, 'y': 3},
             "instructions": [
                 "move-forward",
                 "turn-left",
@@ -204,33 +233,6 @@ QtObject {
                 "execute-loops"
             ],
             "maxNumberOfInstructions": 14
-        },
-        // Level ten
-        {
-            "map": [
-                {'x': 0, 'y': 3},
-                {'x': 0, 'y': 2},
-                {'x': 0, 'y': 1},
-                {'x': 0, 'y': 0},
-                {'x': 1, 'y': 0},
-                {'x': 2, 'y': 0},
-                {'x': 2, 'y': 1},
-                {'x': 2, 'y': 2},
-                {'x': 2, 'y': 3},
-                {'x': 3, 'y': 3},
-                {'x': 4, 'y': 3},
-                {'x': 4, 'y': 2},
-                {'x': 4, 'y': 1},
-                {'x': 4, 'y': 0}
-            ],
-            "fish": {'x': 4, 'y': 0},
-            "instructions": [
-                "move-forward",
-                "turn-left",
-                "turn-right",
-                "execute-loops"
-            ],
-            "maxNumberOfInstructions": 15
         }
     ]
 }

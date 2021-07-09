@@ -15,7 +15,7 @@ Instruction {
 
     //In case of while loops, counter is set to -1
     //In case of for loops, counter is set to the number of loops entered by the user.
-    property int counter
+    property int counter: Activity.loopsNumber
     property alias loopCode: loopCode
 
     //Stores the list of instructions to be executed in loop code area.
