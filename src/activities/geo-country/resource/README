@@ -480,6 +480,6 @@ wyoming.svgz
 
 Notes: All the maps (except romania-historical and lithuania-cultural) were created based on data from OpenStreetMap (downloaded with https://osm-boundaries.com/), converted to svg with geojson-to-svg (https://www.npmjs.com/package/geojson-to-svg), and then heavily edited in Inkscape.
 
-romania-historical map was based on a mix of OSM data and https://commons.wikimedia.org/wiki/File:Romania_historic_regions.svg , with heavy editing in Inkscape.
+romania-historical map was based on https://commons.wikimedia.org/wiki/File:Romania_historic_regions.svg (CC-BY-SA 3.0 Unported license, by Andein), with heavy editing in Inkscape.
 
 lithuania-cultural map was based on https://commons.wikimedia.org/wiki/File:Liet-etno-regionai.png (public domain license), with heavy editing in Inkscape.
