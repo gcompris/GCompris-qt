@@ -217,11 +217,6 @@ function initLevel() {
         createInstructionObjects(procedureInstructionObjects, mainInstructionObjects[CALL_PROCEDURE])
     }
 
-    if(activityMode === "loops" && items.bar.level > 5) {
-        loopsNumber = -1
-        createLoopObjectAndInstructions()
-    }
-
     // Stores the co-ordinates of the tile blocks in the current level
     var currentLevelBlocksCoordinates = mazeBlocks[currentLevel].map
 

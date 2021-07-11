@@ -176,7 +176,7 @@ ActivityBase {
             id: answerBackground
             width: parent.width / 2.3
             height: parent.height / 10
-            visible: (mode === "loops" && items.bar.level < 6) ? true : false
+            visible: mode === "loops" ? true : false
             anchors.left: parent.left
             anchors.top: instructionArea.bottom
             anchors.topMargin: 3 * ApplicationInfo.ratio
@@ -203,7 +203,7 @@ ActivityBase {
         Rectangle {
             id: constraintInstruction
             anchors.left: parent.left
-            anchors.top: (mode === "loops" && items.bar.level < 6) ? answerBackground.bottom : instructionArea.bottom
+            anchors.top: mode === "loops" ? answerBackground.bottom : instructionArea.bottom
             anchors.topMargin: 5 * ApplicationInfo.ratio
             width: parent.width / 2.3
             height: parent.height / 8.9
@@ -396,7 +396,7 @@ ActivityBase {
                     onEntered: runCode.scale = 1.1
                     onExecuteCode: {
                         //In case user doesn't enter a loop number which is required in for loops.
-                        if(mode === "loops" && items.bar.level < 6) {
+                        if(mode === "loops") {
                             if(answerBackground.userEntry === "?") {
                                 return;
                             }
