@@ -78,7 +78,7 @@ ActivityBase {
             property alias tutorialImage: tutorialImage
             property alias fish: fish
             property alias dataset: dataset
-            property alias answerBackground: answerBackground
+            property alias loopCounterSelection: loopCounterSelection
             property bool isRunCodeEnabled: true
             property bool isTuxMouseAreaEnabled: false
             property bool currentLevelContainsProcedure
@@ -127,12 +127,6 @@ ActivityBase {
             if(event.key === Qt.Key_Delete && activeCodeAreaIndicator.top !== instructionArea.top) {
                 areaWithKeyboardInput.deleteKeyPressed()
             }
-            if(mode == "loops") {
-                if(event.key === Qt.Key_Backspace) {
-                    backspace()
-                }
-                appendText(event.text)
-            }
         }
 
         function runCodeOrResetTux() {
@@ -140,22 +134,6 @@ ActivityBase {
                 runCodeMouseArea.executeCode()
             else
                 Activity.initLevel()
-        }
-
-        function backspace() {
-            if(!items.isRunCodeEnabled) return
-            answerBackground.userEntry = answerBackground.userEntry.slice(0, -1)
-            answerBackground.userEntry = "?"
-        }
-
-        function appendText(text) {
-            var number = parseInt(text)
-            if(isNaN(number) || !items.isRunCodeEnabled)
-                return
-
-            answerBackground.userEntry = text
-            Activity.loopsNumber = number
-            Activity.createLoopObjectAndInstructions()
         }
 
         ListModel {
@@ -173,37 +151,9 @@ ActivityBase {
         }
 
         Rectangle {
-            id: answerBackground
-            width: parent.width / 2.3
-            height: parent.height / 10
-            visible: mode === "loops" ? true : false
-            anchors.left: parent.left
-            anchors.top: instructionArea.bottom
-            anchors.topMargin: 3 * ApplicationInfo.ratio
-            color: "#E8E8E8"
-            border.width: 3 * ApplicationInfo.ratio
-            border.color: "#e77935"
-            radius: 10
-
-            property string userEntry
-
-            GCText {
-                id: userEntryText
-                anchors.fill: parent
-                anchors.margins: parent.border.width
-                horizontalAlignment: Text.AlignHCenter
-                verticalAlignment: Text.AlignVCenter
-                fontSizeMode: Text.Fit
-                wrapMode: Text.WordWrap
-                color: "#373737"
-                text: qsTr("Enter the number of loops: %1").arg(answerBackground.userEntry)
-            }
-        }
-
-        Rectangle {
             id: constraintInstruction
             anchors.left: parent.left
-            anchors.top: mode === "loops" ? answerBackground.bottom : instructionArea.bottom
+            anchors.top: instructionArea.bottom
             anchors.topMargin: 5 * ApplicationInfo.ratio
             width: parent.width / 2.3
             height: parent.height / 8.9
@@ -351,11 +301,126 @@ ActivityBase {
             anchors.right: parent.right
         }
 
+        Item {
+            id: loopCounterSelection
+            visible: mode == "loops" ? true : false
+            width: background.buttonWidth * 3
+            height: background.buttonHeight
+            anchors.top: procedureHeader.bottom
+            anchors.horizontalCenter: procedureHeader.horizontalCenter
+
+            signal setLoopNumber()
+            onSetLoopNumber: {
+                Activity.loopsNumber = loopCounterSelection.loopNumber
+                Activity.createLoopObjectAndInstructions()
+            }
+
+            readonly property int minLoopNumber: 1
+            readonly property int maxLoopNumber: 9
+
+            property int loopNumber: minLoopNumber
+
+            Rectangle {
+                id: decreaseButton
+                width: parent.width * 0.3
+                height: parent.height
+                anchors.left: parent.left
+                anchors.leftMargin: 1.2 * ApplicationInfo.ratio
+                border.width: 1.2 * ApplicationInfo.ratio
+                border.color: "grey"
+                radius: decreaseButton.width * 0.1
+
+                GCText {
+                    id: decreaseSign
+                    anchors.fill: parent
+                    horizontalAlignment: Text.AlignHCenter
+                    verticalAlignment: Text.AlignVCenter
+                    fontSizeMode: Text.Fit
+                    wrapMode: Text.WordWrap
+                    color: "#373737"
+                    text: qsTr("-")
+                }
+
+                MouseArea {
+                    id: decreaseButtonArea
+                    anchors.fill: parent
+                    onClicked: {
+                        if(loopCounterSelection.loopNumber == loopCounterSelection.minLoopNumber) {
+                            loopCounterSelection.loopNumber = loopCounterSelection.maxLoopNumber
+                        }
+                        else {
+                            loopCounterSelection.loopNumber--
+                        }
+                        loopCounterSelection.setLoopNumber()
+                    }
+                }
+            }
+
+            Rectangle {
+                id: loopCounter
+                width: parent.width * 0.3
+                height: parent.height
+                anchors.left: decreaseButton.right
+                anchors.leftMargin: 1.2 * ApplicationInfo.ratio
+                border.width: 1.2 * ApplicationInfo.ratio
+                border.color: "grey"
+                radius: loopCounter.width * 0.1
+
+                GCText {
+                    id: loopCounterText
+                    anchors.fill: parent
+                    horizontalAlignment: Text.AlignHCenter
+                    verticalAlignment: Text.AlignVCenter
+                    fontSizeMode: Text.Fit
+                    wrapMode: Text.WordWrap
+                    color: "#373737"
+                    text: loopCounterSelection.loopNumber
+                }
+            }
+
+            Rectangle {
+                id: increaseButton
+                width: parent.width * 0.3
+                height: parent.height
+                anchors.left: loopCounter.right
+                anchors.leftMargin: 1.2 * ApplicationInfo.ratio
+                border.width: 1.2 * ApplicationInfo.ratio
+                border.color: "grey"
+                radius: increaseButton.width * 0.1
+
+                GCText {
+                    id: increaseSign
+                    anchors.fill: parent
+                    horizontalAlignment: Text.AlignHCenter
+                    verticalAlignment: Text.AlignVCenter
+                    fontSizeMode: Text.Fit
+                    wrapMode: Text.WordWrap
+                    color: "#373737"
+                    text: qsTr("+")
+                }
+
+                MouseArea {
+                    id: increaseButtonArea
+                    anchors.fill: parent
+                    onClicked: {
+                        if(loopCounterSelection.loopNumber == loopCounterSelection.maxLoopNumber) {
+                            loopCounterSelection.loopNumber = loopCounterSelection.minLoopNumber
+                        }
+                        else {
+                            loopCounterSelection.loopNumber++
+                        }
+                        loopCounterSelection.setLoopNumber()
+                    }
+                }
+            }
+        }
+
         CodeArea {
             id: procedureCodeArea
+            height: mode === "loops" ? background.height * 0.29 - loopCounterSelection.height : background.height * 0.29
             currentModel: procedureModel
             anchors.right: parent.right
-            anchors.top: procedureHeader.bottom
+            anchors.top: mode == "loops" ? loopCounterSelection.bottom : procedureHeader.bottom
             visible: items.currentLevelContainsProcedure || mode == "loops" ? true : false
 
             property alias procedureIterator: procedureCodeArea.currentIndex
@@ -395,13 +460,6 @@ ActivityBase {
 
                     onEntered: runCode.scale = 1.1
                     onExecuteCode: {
-                        //In case user doesn't enter a loop number which is required in for loops.
-                        if(mode === "loops") {
-                            if(answerBackground.userEntry === "?") {
-                                return;
-                            }
-                        }
-
                         if(mainFunctionModel.count)
                             startCodeExecution()
                     }

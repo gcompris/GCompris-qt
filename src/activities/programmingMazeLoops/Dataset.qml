@@ -10,6 +10,22 @@ QtObject {
         // Level one
         {
             "map": [
+                {'x': 1, 'y': 2},
+                {'x': 2, 'y': 2},
+                {'x': 3, 'y': 2}
+            ],
+            "fish": {'x': 3, 'y': 2},
+            "instructions": [
+                "move-forward",
+                "turn-left",
+                "turn-right",
+                "execute-loops"
+            ],
+            "maxNumberOfInstructions": 2
+        },
+        // Level two
+        {
+            "map": [
                 {'x': 1, 'y': 3},
                 {'x': 1, 'y': 2},
                 {'x': 1, 'y': 1},
@@ -17,22 +33,6 @@ QtObject {
                 {'x': 3, 'y': 1}
             ],
             "fish": {'x': 3, 'y': 1},
-            "instructions": [
-                "move-forward",
-                "turn-left",
-                "turn-right",
-                "execute-loops"
-            ],
-            "maxNumberOfInstructions": 8
-        },
-        // Level two
-        {
-            "map": [
-                {'x': 1, 'y': 2},
-                {'x': 2, 'y': 2},
-                {'x': 3, 'y': 2}
-            ],
-            "fish": {'x': 3, 'y': 2},
             "instructions": [
                 "move-forward",
                 "turn-left",
@@ -59,7 +59,7 @@ QtObject {
                 "turn-right",
                 "execute-loops"
             ],
-            "maxNumberOfInstructions": 10
+            "maxNumberOfInstructions": 4
         },
         // Level four
         {
@@ -82,7 +82,7 @@ QtObject {
                 "turn-right",
                 "execute-loops"
             ],
-            "maxNumberOfInstructions": 14
+            "maxNumberOfInstructions": 6
         },
         // Level five
         {
@@ -104,7 +104,7 @@ QtObject {
                 "turn-right",
                 "execute-loops"
             ],
-            "maxNumberOfInstructions": 15
+            "maxNumberOfInstructions": 8
         },
         // Level six
         {
@@ -132,7 +132,7 @@ QtObject {
                 "turn-right",
                 "execute-loops"
             ],
-            "maxNumberOfInstructions": 15
+            "maxNumberOfInstructions": 8
         },
         // Level seven
         {
@@ -182,7 +182,7 @@ QtObject {
                 "turn-right",
                 "execute-loops"
             ],
-            "maxNumberOfInstructions": 14
+            "maxNumberOfInstructions": 6
         },
         // Level nine
         {
@@ -206,7 +206,7 @@ QtObject {
                 "turn-right",
                 "execute-loops"
             ],
-            "maxNumberOfInstructions": 12
+            "maxNumberOfInstructions": 7
         },
         // Level ten
         {
@@ -232,7 +232,7 @@ QtObject {
                 "turn-right",
                 "execute-loops"
             ],
-            "maxNumberOfInstructions": 14
+            "maxNumberOfInstructions": 5
         }
     ]
 }

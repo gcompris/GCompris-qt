@@ -24,6 +24,11 @@ Instruction {
     }
 
     function checkAndExecuteMovement() {
+        if(parent.items.procedureModel.count === 0) {
+            executionComplete()
+            return;
+        }
+
         parent.items.procedureCodeArea.procedureIterator++
         var currentInstruction = loopCode.get(parent.items.procedureCodeArea.procedureIterator).name
         Activity.loopInstructionObjects[currentInstruction].checkAndExecuteMovement()

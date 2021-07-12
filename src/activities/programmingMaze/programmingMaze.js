@@ -191,7 +191,8 @@ function initLevel() {
         return
 
     items.bar.level = currentLevel + 1
-    items.answerBackground.userEntry = "?"
+    loopsNumber = 1
+    items.loopCounterSelection.loopNumber = loopsNumber
     destroyInstructionObjects()
 
     var levelInstructions = mazeBlocks[currentLevel].instructions
@@ -215,6 +216,10 @@ function initLevel() {
 
         // Create, populate and connect signals of instructions for procedure code area if the level has procedure.
         createInstructionObjects(procedureInstructionObjects, mainInstructionObjects[CALL_PROCEDURE])
+    }
+
+    if(activityMode === "loops") {
+        createLoopObjectAndInstructions()
     }
 
     // Stores the co-ordinates of the tile blocks in the current level
