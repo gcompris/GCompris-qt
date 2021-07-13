@@ -5,9 +5,9 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
-   width="32"
-   height="32"
-   viewBox="0 0 30 30"
+   width="64"
+   height="64"
+   viewBox="0 0 60 60"
    id="svg8562"
    version="1.1">
   <defs
@@ -49,10 +49,14 @@
   </metadata>
   <g
      id="layer1"
-     transform="translate(-262.46444,-487.99359)">
+     transform="translate(-262.46444,-457.99359)">
     <path
-       style="fill:#959595;fill-opacity:1;stroke:#373737;stroke-width:0.9375;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 269.6523,488.93109 -6.25036,6.25036 7.81268,7.81214 -7.81268,7.81268 6.25036,6.24982 7.81214,-7.81214 7.81268,7.81214 6.24982,-6.24982 -7.81214,-7.81268 7.81214,-7.81214 -6.24982,-6.25036 -7.81268,7.81268 z"
-       id="rect814" />
+       style="fill:#633e0c;fill-opacity:1;stroke:none;stroke-width:0.9375px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 262.46444,517.99359 h 60 l -30,-60 z"
+       id="path814" />
+    <path
+       style="fill:#e99e33;stroke:none;stroke-width:0.9375px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
+       d="m 292.46444,465.49359 -22.5,48.75 h 45 z"
+       id="path816" />
   </g>
 </svg>

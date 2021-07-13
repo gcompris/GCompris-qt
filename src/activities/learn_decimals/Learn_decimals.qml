@@ -1,6 +1,11 @@
 /* GCompris - learn_decimals.qml
  *
  * SPDX-FileCopyrightText: 2021 Mariam Fahmy <mariamfahmy66@gmail.com>
+ *
+ * Authors:
+ *   Mariam Fahmy <mariamfahmy66@gmail.com>
+ *   Timothée Giet <animtim@gmail.com>
+ *
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 import QtQuick 2.9
@@ -27,7 +32,7 @@ ActivityBase {
         fillMode: Image.PreserveAspectCrop
 
         property bool horizontalLayout: background.width >= background.height
-        property bool scoreAtBottom: (bar.width * 6 + okButton.width * 1.5 + score.width) < background.width
+        property bool scoreAtBottom: bar.width * 9 < background.width
 
         signal start
         signal stop
@@ -61,7 +66,10 @@ ActivityBase {
             property bool typeResult: false
         }
 
-        onStart: { Activity.start(items) }
+        onStart: {
+            tutorialImage.visible = true
+            Activity.start(items)
+        }
         onStop: { Activity.stop() }
 
         // Tutorial section starts
@@ -69,7 +77,7 @@ ActivityBase {
             id: tutorialImage
             source: "qrc:/gcompris/src/activities/guesscount/resource/backgroundW01.svg"
             anchors.fill: parent
-            visible: true
+            visible: false
             z: 5
             Tutorial {
                 id: tutorialSection
@@ -83,24 +91,26 @@ ActivityBase {
         }
         // Tutorial section ends
 
-        Item {
+        Rectangle {
             id: decimalNumber
-            width: parent.width / 2.3
+            width: background.width * 0.6
             height: parent.height / 12
+            radius: 10
+            color: "#373737"
             anchors.horizontalCenter: background.horizontalCenter
             anchors.top: background.top
-            anchors.topMargin: 2 * ApplicationInfo.ratio
+            anchors.topMargin: 5 * ApplicationInfo.ratio
 
             GCText {
-                anchors.fill: parent
+                anchors.centerIn: parent
+                width: parent.width - 10 * ApplicationInfo.ratio
+                height: parent.height
                 text: isSubtractionMode ? qsTr("Display the result of: %1 - %2").arg(items.largestNumber).arg(items.smallestNumber) : isAdditionMode ? qsTr("Display the result of: %1 + %2").arg(items.largestNumber).arg(items.smallestNumber) : qsTr("Display the number: %1").arg(items.largestNumber)
                 fontSizeMode: Text.Fit
                 wrapMode: Text.WordWrap
                 horizontalAlignment: Text.AlignHCenter
                 verticalAlignment: Text.AlignVCenter
                 font.weight: Font.DemiBold
-                style: Text.Outline
-                styleColor: "black"
                 color: "white"
             }
         }
@@ -109,35 +119,47 @@ ActivityBase {
             id: droppedItems
         }
 
-        Rectangle {
-            id: topRectangle
-            visible: !isSubtractionMode
+        Item {
+            id: layoutArea
             anchors.top: decimalNumber.bottom
             anchors.topMargin: 5 * ApplicationInfo.ratio
-            color: "#55333333"
-            border.color: "black"
+            anchors.bottom: okButton.top
+            anchors.bottomMargin: background.scoreAtBottom ? bar.height * 0.5 : anchors.topMargin
+            anchors.horizontalCenter: background.horizontalCenter
+            width: background.horizontalLayout ? background.width * 0.7 : background.width * 0.95
+        }
+
+        Rectangle {
+            id: topRectangle
+            visible: !isSubtractionMode && !tutorialImage.visible
+            anchors.top: layoutArea.top
+            color: "#F2F2F2"
+            border.color: "#373737"
             border.width: 2
             radius: 10
+            z: 10
 
             states: [
                 State {
                     when: background.horizontalLayout
                     PropertyChanges {
                         target: topRectangle
-                        width: background.width * 0.7
-                        height: background.height * 0.35
+                        width: layoutArea.width
+                        // 7/11 of layoutArea
+                        height: layoutArea.height * 0.636
                     }
                     AnchorChanges {
                         target: topRectangle
-                        anchors.horizontalCenter: background.horizontalCenter
+                        anchors.right: undefined
+                        anchors.horizontalCenter: layoutArea.horizontalCenter
                     }
                 },
                 State {
                     when: !background.horizontalLayout && !items.typeResult
                     PropertyChanges {
                         target: topRectangle
-                        width: background.width * 0.6
-                        height: background.height * 0.6
+                        width: layoutArea.width * 0.636
+                        height: layoutArea.height
                         anchors.rightMargin: 10 * ApplicationInfo.ratio
                     }
                     AnchorChanges {
@@ -150,11 +172,12 @@ ActivityBase {
                     when: !background.horizontalLayout && items.typeResult
                     PropertyChanges {
                         target: topRectangle
-                        width: background.width * 0.7
-                        height: background.height * 0.6
+                        width: layoutArea.width * 0.636
+                        height: layoutArea.height
                     }
                     AnchorChanges {
                         target: topRectangle
+                        anchors.right: undefined
                         anchors.horizontalCenter: background.horizontalCenter
                     }
                 }
@@ -183,19 +206,40 @@ ActivityBase {
 
             SingleBar {
                 id: answerZone
-                width: background.horizontalLayout ? topRectangle.width * 0.5 : topRectangle.width * 0.85
-                height: topRectangle.height
-                anchors.horizontalCenter: topRectangle.horizontalCenter
-                anchors.top: topRectangle.top
-                anchors.topMargin: background.horizontalLayout ? topRectangle.height * 0.1 : topRectangle.height * 0.125
-                anchors.bottom: topRectangle.bottom
-                anchors.bottomMargin: background.horizontalLayout ? topRectangle.height * 0.1 : topRectangle.height * 0.125
-                cellWidth: background.horizontalLayout ? answerZone.width : answerZone.width * 0.16
-                cellHeight: background.horizontalLayout ? answerZone.height * 0.16 : answerZone.height
-                flow: background.horizontalLayout? GridView.LeftToRight : GridView.TopToBottom
+                anchors.centerIn: topRectangle
                 selectedModel: droppedItems
                 isAnswerRepresentation: true
                 isUnselectedBar: false
+                states: [
+                    State {
+                        when: background.horizontalLayout
+                        PropertyChanges {
+                            target: answerZone
+                            cellSize: Math.min(topRectangle.height / 7, topRectangle.width / 11)
+                            cellHeight: cellSize * 1.125
+                            cellWidth: cellSize
+                            width: cellSize * 10
+                            height: topRectangle.height
+                            anchors.verticalCenterOffset: cellSize * 0.125
+                            anchors.horizontalCenterOffset: 0
+                            flow: GridView.FlowTopToBottom
+                        }
+                    },
+                    State {
+                        when: !background.horizontalLayout
+                        PropertyChanges {
+                            target: answerZone
+                            cellSize: Math.min(topRectangle.width / 7, topRectangle.height / 11)
+                            cellHeight: cellSize
+                            cellWidth: cellSize * 1.125
+                            width: cellSize * 6.875
+                            height: cellSize * 10
+                            anchors.verticalCenterOffset: 0
+                            anchors.horizontalCenterOffset: cellSize * 0.125
+                            flow: GridView.FlowLeftToRight
+                        }
+                    }
+                ]
             }
         }
 
@@ -206,8 +250,8 @@ ActivityBase {
         Rectangle {
             id: bottomRectangle
             visible: !isSubtractionMode && !items.typeResult
-            color: "#55333333"
-            border.color: "black"
+            color: "#F2F2F2"
+            border.color: "#373737"
             border.width: 2
             radius: 10
 
@@ -218,29 +262,102 @@ ActivityBase {
                     when: background.horizontalLayout
                     PropertyChanges {
                         target: bottomRectangle
-                        width: background.width * 0.7
-                        height: background.height * 0.2
-                        anchors.topMargin: 10 * ApplicationInfo.ratio
+                        width: layoutArea.width
+                        // 3/11 of layoutArea
+                        height: layoutArea.height * 0.273
+                        anchors.rightMargin: 0
+                        // 0.5/11 of layoutArea
+                        anchors.topMargin: layoutArea.height * 0.045
                     }
                     AnchorChanges {
                         target: bottomRectangle
                         anchors.top: topRectangle.bottom
                         anchors.horizontalCenter: background.horizontalCenter
+                        anchors.right: undefined
+                    }
+                    PropertyChanges {
+                        target: unselectedBar
+                        anchors.verticalCenterOffset: -height * 0.5
+                        anchors.horizontalCenterOffset: 0
+                    }
+                    PropertyChanges {
+                        target: selectedBar
+                        anchors.verticalCenterOffset: -height * 0.5
+                        anchors.horizontalCenterOffset: 0
+                    }
+                    PropertyChanges {
+                        target: scrollBar
+                        width: unselectedBar.width
+                        height: bottomRectangle.height * 0.5
+                        x: unselectedBar.x
+                        y: unselectedBar.y + unselectedBar.height
+                    }
+                    PropertyChanges {
+                        target: arrow
+                        rotation: 0
+                        x: 0
+                    }
+                    AnchorChanges {
+                        target: arrow
+                        anchors.top: parent.top
+                        anchors.right: undefined
+                    }
+                    AnchorChanges {
+                        target: hintArea
+                        anchors.top: arrow.bottom
+                        anchors.horizontalCenter: arrow.horizontalCenter
+                        anchors.right: undefined
+                        anchors.verticalCenter: undefined
                     }
                 },
                 State {
                     when: !background.horizontalLayout
                     PropertyChanges {
                         target: bottomRectangle
-                        width: background.width * 0.3
-                        height: background.height * 0.6
-                        anchors.topMargin: 5 * ApplicationInfo.ratio
-                        anchors.rightMargin: 10 * ApplicationInfo.ratio
+                        width: layoutArea.width * 0.273
+                        height: layoutArea.height
+                        anchors.rightMargin: layoutArea.width * 0.045
+                        anchors.topMargin: 0
                     }
                     AnchorChanges {
                         target: bottomRectangle
+                        anchors.top: layoutArea.top
+                        anchors.horizontalCenter: undefined
                         anchors.right: topRectangle.left
-                        anchors.top: decimalNumber.bottom
+                    }
+                    PropertyChanges {
+                        target: unselectedBar
+                        anchors.verticalCenterOffset: 0
+                        anchors.horizontalCenterOffset: width * 0.5
+                    }
+                    PropertyChanges {
+                        target: selectedBar
+                        anchors.verticalCenterOffset: 0
+                        anchors.horizontalCenterOffset: width * 0.5
+                    }
+                    PropertyChanges {
+                        target: scrollBar
+                        width: bottomRectangle.width * 0.5
+                        height: unselectedBar.height
+                        x: unselectedBar.x - width
+                        y: unselectedBar.y
+                    }
+                    PropertyChanges {
+                        target: arrow
+                        rotation: 90
+                        y: 0
+                    }
+                    AnchorChanges {
+                        target: arrow
+                        anchors.top: undefined
+                        anchors.right: parent.right
+                    }
+                    AnchorChanges {
+                        target: hintArea
+                        anchors.top: undefined
+                        anchors.horizontalCenter: undefined
+                        anchors.right: arrow.left
+                        anchors.verticalCenter: arrow.verticalCenter
                     }
                 }
             ]
@@ -248,15 +365,25 @@ ActivityBase {
             property int currentStep: scrollBar.currentStep
 
             SingleBar {
+                id: unselectedBar
+                opacity: 0.5
+                cellSize: background.horizontalLayout ? Math.min(bottomRectangle.height / 3, bottomRectangle.width / 11) : Math.min(bottomRectangle.width / 3, bottomRectangle.height / 11)
+                width: background.horizontalLayout ? cellSize * 10 : cellSize
+                height: background.horizontalLayout ? cellSize : cellSize * 10
+                anchors.centerIn: bottomRectangle
+
+                selectedModel: draggedItems
+                isAnswerRepresentation: false
+                isUnselectedBar: true
+            }
+
+            SingleBar {
                 id: selectedBar
-                width: bottomRectangle.width * 0.5
-                height: background.horizontalLayout ? bottomRectangle.height * 0.5 : bottomRectangle.height * 0.75
-                anchors.horizontalCenter: background.horizontalLayout ? bottomRectangle.horizontalCenter : undefined
-                anchors.verticalCenter: bottomRectangle.verticalCenter
-                anchors.right: background.horizontalLayout ? undefined : bottomRectangle.right
-                anchors.rightMargin: 7 * ApplicationInfo.ratio
-                cellWidth: background.horizontalLayout ? selectedBar.width * 0.1 : selectedBar.width * 0.55
-                cellHeight: background.horizontalLayout ? selectedBar.height * 0.5 : selectedBar.height * 0.1
+                cellSize: unselectedBar.cellSize
+                width: unselectedBar.width
+                height: unselectedBar.height
+                anchors.centerIn: bottomRectangle
+
                 selectedModel: draggedItems
                 isAnswerRepresentation: false
                 isUnselectedBar: false
@@ -274,22 +401,6 @@ ActivityBase {
                 ]
             }
 
-            SingleBar {
-                id: unselectedBar
-                width: bottomRectangle.width * 0.5
-                height: background.horizontalLayout ? bottomRectangle.height * 0.5 : bottomRectangle.height * 0.75
-                anchors.horizontalCenter: background.horizontalLayout ? bottomRectangle.horizontalCenter : undefined
-                anchors.verticalCenter: bottomRectangle.verticalCenter
-                anchors.right: background.horizontalLayout ? undefined : bottomRectangle.right
-                anchors.rightMargin: 7 * ApplicationInfo.ratio
-                cellWidth: background.horizontalLayout ? selectedBar.width * 0.1 : selectedBar.width * 0.55
-                cellHeight: background.horizontalLayout ? selectedBar.height * 0.5 : selectedBar.height * 0.1
-                selectedModel: draggedItems
-                isAnswerRepresentation: false
-                isUnselectedBar: true
-                z: -10
-            }
-
             MouseArea {
                 id: dragArea
                 width: selectedBar.width
@@ -305,151 +416,101 @@ ActivityBase {
             }
 
             Item {
-               id: scrollBar
+                id: scrollBar
 
-               states: [
-                   State {
-                       when: background.horizontalLayout
-                       PropertyChanges {
-                           target: scrollBar
-                           width: unselectedBar.width
-                           height: unselectedBar.height * 0.5
-                           x: unselectedBar.x
-                           y: unselectedBar.y + 35 * ApplicationInfo.ratio
-                       }
-                       AnchorChanges {
-                           target: scrollBar
-                           anchors.horizontalCenter: parent.horizontalCenter
-                       }
-                   },
-                   State {
-                       when: !background.horizontalLayout
-                       PropertyChanges {
-                           target: scrollBar
-                           width: unselectedBar.width * 0.5
-                           height: unselectedBar.height
-                           x: unselectedBar.x - 40 * ApplicationInfo.ratio
-                           y: unselectedBar.y
-                       }
-                       AnchorChanges {
-                           target: scrollBar
-                           anchors.verticalCenter: parent.verticalCenter
-                       }
-                   }
-               ]
+                property double horizontalBarLimit: scrollBar.width - arrow.width / 2
+                property double verticalBarLimit: scrollBar.height - arrow.width / 2
+                property double arrowOrigin: unselectedBar.cellSize * 0.5
+                property alias arrowX: arrow.x
+                property alias arrowY: arrow.y
+                property int currentStep: 0
 
-               property double horizontalBarLimit: unselectedBar.x + scrollBar.width * 0.5 - arrow.width / 2
-               property double verticalBarLimit: unselectedBar.y + scrollBar.height * 0.8 - arrow.height / 2
-               property alias arrowX: arrow.x
-               property alias arrowY: arrow.y
-               property int currentStep: 0
+                Image {
+                    id: arrow
+                    source: "qrc:/gcompris/src/activities/learn_decimals/resource/arrow.svg"
+                    sourceSize.width: width
+                    width: unselectedBar.cellSize
+                    height: width
 
-               Image {
-                   id: arrow
-                   source: "qrc:/gcompris/src/core/resource/bar_down.svg"
-                   sourceSize.width: background.horizontalLayout ? scrollBar.width * 0.22 : scrollBar.width
-                   sourceSize.height: background.horizontalLayout ? scrollBar.height : scrollBar.width
+                    MouseArea {
+                        id: arrowMouseArea
+                        width: parent.width * 2
+                        height: parent.height * 1.5
+                        anchors.centerIn: parent
+                        anchors.verticalCenterOffset: parent.height * 0.25
+                        drag.target: arrow
+                        onPositionChanged: {
+                            if(background.horizontalLayout) {
+                                //range of the horizontal scrolling
+                                if(arrow.x < scrollBar.arrowOrigin) {
+                                    arrow.x = scrollBar.arrowOrigin
+                                }
+                                else if(arrow.x > scrollBar.horizontalBarLimit) {
+                                    arrow.x = scrollBar.horizontalBarLimit
+                                }
 
-                   states: [
-                       State {
-                           when: background.horizontalLayout
-                           PropertyChanges {
-                               target: arrow
-                               rotation: 180
-                               x: 0
-                           }
-                           AnchorChanges {
-                               target: arrow
-                               anchors.verticalCenter: parent.verticalCenter
-                               anchors.horizontalCenter: undefined
-                           }
-                       },
-                       State {
-                           when: !background.horizontalLayout
-                           PropertyChanges {
-                               target: arrow
-                               rotation: -90
-                               y: 0
-                           }
-                           AnchorChanges {
-                               target: arrow
-                               anchors.verticalCenter: undefined
-                               anchors.horizontalCenter: parent.horizontalCenter
-                           }
-                       }
-                   ]
+                                scrollBar.currentStep = Math.round((arrow.x - scrollBar.arrowOrigin) / unselectedBar.cellSize) ;
+                                arrow.x = (scrollBar.currentStep + 0.5) * unselectedBar.cellSize
+                            }
+                            else {
+                                // range of the vertical scrolling
+                                if(arrow.y < scrollBar.arrowOrigin) {
+                                    arrow.y = scrollBar.arrowOrigin
+                                }
+                                else if(arrow.y > scrollBar.verticalBarLimit) {
+                                    arrow.y = scrollBar.verticalBarLimit
+                                }
 
-                   MouseArea {
-                       width: parent.width * 1.5
-                       height: parent.height * 1.5
-                       anchors.centerIn: parent
-                       drag.target: arrow
-                       onPositionChanged: {
-                           if(background.horizontalLayout) {
-                               //range of the horizontal scrolling
-                               if(arrow.x < 0) {
-                                   arrow.x = 0
-                               }
-                               else if(arrow.x > scrollBar.horizontalBarLimit) {
-                                   arrow.x = scrollBar.horizontalBarLimit
-                               }
+                                scrollBar.currentStep = Math.round((arrow.y - scrollBar.arrowOrigin) / unselectedBar.cellSize);
+                                arrow.y = (scrollBar.currentStep + 0.5) * unselectedBar.cellSize
+                            }
 
-                               scrollBar.currentStep = Math.round(arrow.x / scrollBar.horizontalBarLimit * (Activity.squaresNumber - 1));
-                               arrow.x = (scrollBar.currentStep * scrollBar.horizontalBarLimit) / (Activity.squaresNumber - 1);
-                           }
-                           else {
-                               // range of the vertical scrolling
-                               if(arrow.y < 0) {
-                                   arrow.y = 0
-                               }
-                               else if(arrow.y > scrollBar.verticalBarLimit) {
-                                   arrow.y = scrollBar.verticalBarLimit
-                               }
+                            Activity.changeSingleBarVisibility(scrollBar.currentStep + 1)
+                        }
+                    }
+                }
+                Rectangle {
+                    id: hintArea
+                    visible: items.helper
+                    width: unselectedBar.cellSize * 1.1
+                    height: width
+                    color: "#FFFFFF"
+                    radius: 5 * ApplicationInfo.ratio
+                    border.color: "#808080"
+                    border.width: 2
+                    GCText {
+                        id: text
+                        fontSize: regularSize
+                        text: Activity.toDecimalLocaleNumber((scrollBar.currentStep + 1) / Activity.squaresNumber)
+                        font.bold: true
+                        color: "#373737"
+                        fontSizeMode: Text.Fit
+                        verticalAlignment: Text.AlignVCenter
+                        horizontalAlignment: Text.AlignHCenter
+                        anchors.centerIn: parent
+                        width: parent.width - 4
+                        height: width
+                    }
+                }
 
-                               scrollBar.currentStep = Math.round(arrow.y / scrollBar.verticalBarLimit * (Activity.squaresNumber - 1));
-                               arrow.y = (scrollBar.currentStep * scrollBar.verticalBarLimit) / (Activity.squaresNumber - 1);
-                           }
-
-                           Activity.changeSingleBarVisibility(scrollBar.currentStep + 1)
-                       }
-                   }
-
-                   GCText {
-                       id: text
-                       visible: items.helper
-                       fontSize: regularSize
-                       text: Activity.toDecimalLocaleNumber((scrollBar.currentStep + 1) / Activity.squaresNumber)
-                       font.bold: true
-                       style: Text.Outline
-                       styleColor: "white"
-                       color: "black"
-                       wrapMode: Text.WordWrap
-                       fontSizeMode: Text.Fit
-                       verticalAlignment: Text.AlignVCenter
-                       horizontalAlignment: Text.AlignHCenter
-                       anchors.fill: parent
-                       rotation: background.horizontalLayout ? 180 : 90
-                   }
-               }
-
-               onWidthChanged: {
-                   if(items.draggedItems.count != 0) {
-                       bottomRectangle.resetArrowPosition()
-                   }
-               }
-               onHeightChanged: {
-                   if(items.draggedItems.count != 0) {
-                       bottomRectangle.resetArrowPosition()
-                   }
-               }
+                onWidthChanged: {
+                    if(items.draggedItems.count != 0) {
+                        bottomRectangle.resetArrowPosition()
+                    }
+                }
+                onHeightChanged: {
+                    if(items.draggedItems.count != 0) {
+                        bottomRectangle.resetArrowPosition()
+                    }
+                }
             }
 
             function resetArrowPosition() {
                 if(background.horizontalLayout) {
-                    scrollBar.arrowX = 0
+                    scrollBar.arrowX = scrollBar.arrowOrigin
                 }
                 else {
-                    scrollBar.arrowY = 0
+                    scrollBar.arrowY = scrollBar.arrowOrigin
                 }
                 Activity.changeSingleBarVisibility(1)
                 scrollBar.currentStep = 0
@@ -463,13 +524,12 @@ ActivityBase {
         Rectangle {
             id: mainRectangle
             visible: isSubtractionMode
-            width: background.width * 0.7
-            height: background.height * 0.6
-            anchors.top: decimalNumber.bottom
-            anchors.topMargin: 5 * ApplicationInfo.ratio
+            width: topRectangle.width
+            height: background.scoreAtBottom ? layoutArea.height - okButton.height : layoutArea.height
+            anchors.top: layoutArea.top
             anchors.horizontalCenter: background.horizontalCenter
-            color: "#55333333"
-            border.color: "black"
+            color: "#F2F2F2"
+            border.color: "#373737"
             border.width: 2
             radius: 10
 
@@ -481,10 +541,7 @@ ActivityBase {
         Rectangle {
             id: answerBackground
             visible: items.typeResult
-            width: mainRectangle.width * 0.7
-            height: mainRectangle.height * 0.13
-            anchors.top: mainRectangle.bottom
-            anchors.topMargin: ApplicationInfo.ratio
+            height: okButton.height
             color: "#f2f2f2"
             border.color: "black"
             border.width: 2
@@ -494,9 +551,12 @@ ActivityBase {
 
             GCText {
                 id: userEntryText
-                anchors.fill: parent
+                anchors.centerIn: parent
+                width: parent.width - 10 * ApplicationInfo.ratio
+                height: parent.height
                 horizontalAlignment: Text.AlignHCenter
                 verticalAlignment: Text.AlignVCenter
+                fontSize: smallSize
                 fontSizeMode: Text.Fit
                 wrapMode: Text.WordWrap
                 color: "#373737"
@@ -544,6 +604,13 @@ ActivityBase {
                     target: answerBackground
                     anchors.left: undefined
                     anchors.horizontalCenter: parent.horizontalCenter
+                    anchors.top: mainRectangle.bottom
+                    anchors.verticalCenter: undefined
+                }
+                PropertyChanges {
+                    target: answerBackground
+                    width: mainRectangle.width
+                    anchors.topMargin: 5 * ApplicationInfo.ratio
                 }
                 AnchorChanges {
                     target: okButton
@@ -564,8 +631,15 @@ ActivityBase {
                 when: !background.scoreAtBottom
                 AnchorChanges {
                     target: answerBackground
-                    anchors.left: mainRectangle.left
+                    anchors.left: topRectangle.left
                     anchors.horizontalCenter: undefined
+                    anchors.top: undefined
+                    anchors.verticalCenter: okButton.verticalCenter
+                }
+                PropertyChanges {
+                    target: answerBackground
+                    width: mainRectangle.width - okButton.width * 1.2
+                    anchors.topMargin: 0
                 }
                 AnchorChanges {
                     target: okButton
@@ -577,7 +651,7 @@ ActivityBase {
                 }
                 PropertyChanges {
                     target: okButton
-                    anchors.bottomMargin: okButton.height * 0.2
+                    anchors.bottomMargin: okButton.height * 0.5
                     anchors.rightMargin: 0
                     anchors.verticalCenterOffset: 0
                 }
@@ -589,7 +663,6 @@ ActivityBase {
             source:"qrc:/gcompris/src/core/resource/bar_hint.svg"
             visible: !isSubtractionMode && !items.typeResult
             sourceSize.width: okButton.width
-            sourceSize.height: okButton.height
             fillMode: Image.PreserveAspectFit
             anchors.right: okButton.left
             anchors.rightMargin: okButton.width * 0.3
@@ -667,7 +740,7 @@ ActivityBase {
         BarButton {
             id: okButton
             source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
-            width: (background.height - bar.height * 1.2) * 0.15
+            width: 60 * ApplicationInfo.ratio
             sourceSize.width: width
             onClicked: items.typeResult? Activity.verifyNumberTyping(answerBackground.userEntry) : Activity.verifyNumberRepresentation()
             mouseArea.enabled: !bonus.isPlaying

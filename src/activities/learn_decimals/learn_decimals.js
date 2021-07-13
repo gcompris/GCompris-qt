@@ -96,10 +96,10 @@ function initLevel() {
         items.draggedItems.append({"selectedSquareNumbers" : 1 });
 
         if(items.background.horizontalLayout) {
-            items.scrollBar.arrowX = 0;
+            items.scrollBar.arrowX = items.scrollBar.arrowOrigin;
         }
         else {
-            items.scrollBar.arrowY = 0;
+            items.scrollBar.arrowY = items.scrollBar.arrowOrigin;
         }
         items.scrollBar.currentStep = 0;
     }

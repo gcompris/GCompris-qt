@@ -1,6 +1,11 @@
 /* GCompris - learn_decimals.qml
  *
  * SPDX-FileCopyrightText: 2021 Mariam Fahmy <mariamfahmy66@gmail.com>
+ *
+ * Authors:
+ *   Mariam Fahmy <mariamfahmy66@gmail.com>
+ *   Timothée Giet <animtim@gmail.com>
+ *
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 import QtQuick 2.9
@@ -15,6 +20,7 @@ GridView {
     property bool isAnswerRepresentation: false
     property bool isUnselectedBar: false
     property ListModel selectedModel
+    property int cellSize: 10
 
     model: selectedModel
 
@@ -23,9 +29,9 @@ GridView {
     Component {
         id: delegateUnit
         Item {
-            id: squareItem
-            width: singleBar.cellWidth
-            height: singleBar.cellHeight
+            id: barItem
+            width: background.horizontalLayout ? cellSize * 10 : cellSize
+            height: background.horizontalLayout ? cellSize : cellSize * 10
 
             Grid {
                 id: gridLayout
@@ -53,54 +59,25 @@ GridView {
                 Repeater {
                     id: rowsRepeater
                     model: isAnswerRepresentation ? selectedSquareNumbers : 10
-                    Rectangle {
-                        id: square
-                        opacity: setSquareOpacity()
-                        color: "#87cefa"
-                        border.color: "black"
-                        border.width: 2
+                    // There can be random glitches happening on the squares borders if using Rectangle
+                    // items in this code when using OpenGL, so using Images instead of Rectangles
+                    // helps to avoid it in most cases.
+                    Image {
+                        id: squareContainer
+                        source: "qrc:/gcompris/src/activities/learn_decimals/resource/rectDark.svg"
+                        visible: singleBar.Drag.active && index >= selectedSquareNumbers ? false : true
+                        width: singleBar.cellSize
+                        height: width
+                        sourceSize.width: width
 
-                        function setSquareOpacity() {
-                            if(!isAnswerRepresentation && !isUnselectedBar)
-                            {
-                                if(!isUnselectedBar) {
-                                    if(index < selectedSquareNumbers) return 1
-                                    else return 0
-                                }
-                                else {
-                                    if(index > selectedSquareNumbers) return 0.3
-                                    else return 0
-                                }
-                            }
-                            else return 1
+                        Image {
+                            id: square
+                            source: index < selectedSquareNumbers ? "qrc:/gcompris/src/activities/learn_decimals/resource/rectFill.svg" : "qrc:/gcompris/src/activities/learn_decimals/resource/rectWhite.svg"
+                            width: singleBar.cellSize - 6
+                            height: width
+                            sourceSize.width: width
+                            anchors.centerIn: parent
                         }
-
-                        states: [
-                            State {
-                                when: background.horizontalLayout && isAnswerRepresentation
-                                PropertyChanges {
-                                    target: square
-                                    width: squareItem.width * 0.1
-                                    height: squareItem.height
-                                }
-                            },
-                            State {
-                                when: !background.horizontalLayout && isAnswerRepresentation
-                                PropertyChanges {
-                                    target: square
-                                    width: squareItem.width
-                                    height: squareItem.height * 0.1
-                                }
-                            },
-                            State {
-                                when: !isAnswerRepresentation
-                                PropertyChanges {
-                                    target: square
-                                    width: squareItem.width
-                                    height: squareItem.height
-                                }
-                            }
-                        ]
                     }
                 }
             }
