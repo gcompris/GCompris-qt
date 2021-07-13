@@ -35,6 +35,14 @@ Image {
 
     states: [
         State {
+            name: "reset"
+            when: !mouseArea.enabled
+            PropertyChanges {
+                target: button
+                scale: 1.0
+            }
+        },
+        State {
             name: "notclicked"
             PropertyChanges {
                 target: button
