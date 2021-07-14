@@ -268,7 +268,8 @@ Image {
                     fontSizeMode: Text.Fit
                     wrapMode: Text.WordWrap
                     color: "#373737"
-                    text: qsTr("-")
+                    //: it refers to the miuns operator.
+                    text: qsTr(Activity.LoopEnumValues.MINUS_SIGN)
                 }
             }
 
@@ -290,7 +291,7 @@ Image {
                     fontSizeMode: Text.Fit
                     wrapMode: Text.WordWrap
                     color: "#373737"
-                    text: qsTr("1")
+                    text: qsTr(Activity.LoopEnumValues.ONE_VALUE)
                 }
             }
 
@@ -312,7 +313,8 @@ Image {
                     fontSizeMode: Text.Fit
                     wrapMode: Text.WordWrap
                     color: "#373737"
-                    text: qsTr("+")
+                    //: it refers to the plus operator.
+                    text: qsTr(Activity.LoopEnumValues.PLUS_SIGN)
                 }
             }
         }

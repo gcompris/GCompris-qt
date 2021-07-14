@@ -337,7 +337,8 @@ ActivityBase {
                     fontSizeMode: Text.Fit
                     wrapMode: Text.WordWrap
                     color: "#373737"
-                    text: qsTr("-")
+                    //: it refers to the minus operator.
+                    text: qsTr(Activity.LoopEnumValues.MINUS_SIGN)
                 }
 
                 MouseArea {
@@ -395,7 +396,8 @@ ActivityBase {
                     fontSizeMode: Text.Fit
                     wrapMode: Text.WordWrap
                     color: "#373737"
-                    text: qsTr("+")
+                    //: it refers to the plus operator.
+                    text: qsTr(Activity.LoopEnumValues.PLUS_SIGN)
                 }
 
                 MouseArea {
