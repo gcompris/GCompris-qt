@@ -277,12 +277,12 @@ ActivityBase {
                     }
                     PropertyChanges {
                         target: unselectedBar
-                        anchors.verticalCenterOffset: -height * 0.5
+                        anchors.verticalCenterOffset: -unselectedBar.height * 0.5
                         anchors.horizontalCenterOffset: 0
                     }
                     PropertyChanges {
                         target: selectedBar
-                        anchors.verticalCenterOffset: -height * 0.5
+                        anchors.verticalCenterOffset: -selectedBar.height * 0.5
                         anchors.horizontalCenterOffset: 0
                     }
                     PropertyChanges {
@@ -328,12 +328,12 @@ ActivityBase {
                     PropertyChanges {
                         target: unselectedBar
                         anchors.verticalCenterOffset: 0
-                        anchors.horizontalCenterOffset: width * 0.5
+                        anchors.horizontalCenterOffset: unselectedBar.width * 0.5
                     }
                     PropertyChanges {
                         target: selectedBar
                         anchors.verticalCenterOffset: 0
-                        anchors.horizontalCenterOffset: width * 0.5
+                        anchors.horizontalCenterOffset: selectedBar.width * 0.5
                     }
                     PropertyChanges {
                         target: scrollBar
