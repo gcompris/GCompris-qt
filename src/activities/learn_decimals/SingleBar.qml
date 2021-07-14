@@ -23,7 +23,7 @@ GridView {
     property int cellSize: 10
 
     model: selectedModel
-
+    interactive: false
     delegate: delegateUnit
 
     Component {
