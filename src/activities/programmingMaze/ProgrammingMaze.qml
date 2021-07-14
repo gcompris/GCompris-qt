@@ -35,8 +35,6 @@ ActivityBase {
     }
 
     property bool keyboardNavigationVisible: false
-    property string mode: "basic"
-    property string datasetUrl: "qrc:/gcompris/src/activities/programmingMaze/Dataset.qml"
 
     pageComponent: Image {
         id: background
@@ -66,6 +64,7 @@ ActivityBase {
             property alias bar: bar
             property alias bonus: bonus
             property GCSfx audioEffects: activity.audioEffects
+            property var levels: activity.datasetLoader.data
             property alias mazeModel: mazeModel
             property alias instructionModel: instructionModel
             property alias mainFunctionModel: mainFunctionModel
@@ -77,11 +76,11 @@ ActivityBase {
             property alias constraintInstruction: constraintInstruction
             property alias tutorialImage: tutorialImage
             property alias fish: fish
-            property alias dataset: dataset
             property alias loopCounterSelection: loopCounterSelection
             property bool isRunCodeEnabled: true
             property bool isTuxMouseAreaEnabled: false
             property bool currentLevelContainsProcedure
+            property bool currentLevelContainsLoop
             property int maxNumberOfInstructionsAllowed
             property int numberOfInstructionsAdded
         }
@@ -100,7 +99,7 @@ ActivityBase {
             id: dataset
         }
 
-        onStart: { Activity.start(items, mode, datasetUrl) }
+        onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
 
         property var areaWithKeyboardInput: instructionArea
@@ -292,7 +291,7 @@ ActivityBase {
 
         HeaderArea {
             id: procedureHeader
-            property string procedureText: mode == "basic" ? qsTr("Procedure") + " ( )" : qsTr("Loops")
+            property string procedureText: items.currentLevelContainsProcedure ? qsTr("Procedure") + " ( )" : qsTr("Loops")
             headerText: procedureText
             headerOpacity: !background.insertIntoMain ? 1 : 0.5
             visible: procedureCodeArea.visible
@@ -303,7 +302,7 @@ ActivityBase {
 
         Item {
             id: loopCounterSelection
-            visible: mode == "loops" ? true : false
+            visible: items.currentLevelContainsLoop ? true : false
             width: background.buttonWidth * 3
             height: background.buttonHeight
             anchors.top: procedureHeader.bottom
@@ -417,11 +416,11 @@ ActivityBase {
 
         CodeArea {
             id: procedureCodeArea
-            height: mode === "loops" ? background.height * 0.29 - loopCounterSelection.height : background.height * 0.29
+            height: items.currentLevelContainsLoop ? background.height * 0.29 - loopCounterSelection.height : background.height * 0.29
             currentModel: procedureModel
             anchors.right: parent.right
-            anchors.top: mode == "loops" ? loopCounterSelection.bottom : procedureHeader.bottom
-            visible: items.currentLevelContainsProcedure || mode == "loops" ? true : false
+            anchors.top: items.currentLevelContainsLoop ? loopCounterSelection.bottom : procedureHeader.bottom
+            visible: items.currentLevelContainsProcedure || items.currentLevelContainsLoop ? true : false
 
             property alias procedureIterator: procedureCodeArea.currentIndex
 
@@ -493,10 +492,11 @@ ActivityBase {
             visible: true
 
             property bool shownProcedureTutorialInstructions: false
+            property bool shownLoopTutorialInstructions: false
 
             Tutorial {
                 id:tutorialSection
-                tutorialDetails: bar.level <= 2 ? Activity.mainTutorialInstructions : Activity.procedureTutorialInstructions
+                tutorialDetails: tutorialImage.selectInstructionTutorial() //bar.level <= 2 ? Activity.mainTutorialInstructions : Activity.loopTutorialInstructions
                 useImage: false
                 onSkipPressed: {
                     Activity.initLevel()
@@ -505,8 +505,26 @@ ActivityBase {
                 }
             }
             onVisibleChanged: {
-                if(tutorialImage.visible && tutorialImage.shownProcedureTutorialInstructions)
+                if(tutorialImage.visible && (tutorialImage.shownProcedureTutorialInstructions || tutorialImage.shownLoopTutorialInstructions))
                     tutorialSection.visible = true
+            }
+
+            function selectInstructionTutorial() {
+                if(!tutorialSection.visible) {
+                    return "";
+                }
+
+                var nextLevel = items.bar.level
+                var nextLevelInstructions = items.levels[nextLevel].instructions
+                if(nextLevelInstructions.indexOf(Activity.EXECUTE_LOOPS) !== -1) {
+                    return Activity.loopTutorialInstructions;
+                }
+
+                if(nextLevelInstructions.indexOf(Activity.CALL_PROCEDURE) !== -1) {
+                    return Activity.procedureTutorialInstructions;
+                }
+
+                return Activity.mainTutorialInstructions;
             }
         }
 
@@ -515,9 +533,27 @@ ActivityBase {
             onClose: home()
         }
 
+        DialogChooseLevel {
+            id: dialogActivityConfig
+            currentActivity: activity.activityInfo
+
+            onSaveData: {
+                levelFolder = dialogActivityConfig.chosenLevels
+                currentActivity.currentLevels = dialogActivityConfig.chosenLevels
+                ApplicationSettings.setCurrentLevels(currentActivity.name, dialogActivityConfig.chosenLevels)
+            }
+            onClose: {
+                home()
+            }
+            onStartActivity: {
+                background.stop()
+                background.start()
+            }
+        }
+
         Bar {
             id: bar
-            content: BarEnumContent { value: tutorialImage.visible ? help | home : help | home | level | reload }
+            content: BarEnumContent { value: tutorialImage.visible ? help | home : help | home | level | reload | activityConfig}
             onHelpClicked: {
                 displayDialog(dialogHelp)
             }
@@ -529,6 +565,9 @@ ActivityBase {
                 activity.home();
             }
             onReloadClicked: Activity.reloadLevel()
+            onActivityConfigClicked: {
+                displayDialog(dialogActivityConfig)
+            }
         }
 
         Bonus {

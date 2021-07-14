@@ -112,15 +112,19 @@ var procedureTutorialInstructions = [
             },
         ]
 
-// Mode of the activity: basic or loop
-var activityMode
+var loopTutorialInstructions = [
+            {
+                "instruction": "<b><h7>" + qsTr("Loop:") + "</h7></b>" +
+                                    qsTr("<b>Loop</b> is a  set of instructions which can be <b>executed several times by setting a loop number for it.</b>.") + "<li>" +
+                                    qsTr("-To <b>switch</b> between the <b>Loop area</b> and the <b>Main Function area</b> to add your code, click on the <b>Loops</b> or <b>Main Function</b> label.") + "</li>",
+                "instructionQml": "qrc:/gcompris/src/activities/programmingMaze/resource/tutorial4.qml"
+            }
+        ]
 
-function start(items_, mode_, datasetUrl_) {
+function start(items_) {
     items = items_
-    items.dataset.source = datasetUrl_
-    activityMode = mode_
     currentLevel = 0
-    mazeBlocks = items.dataset.item.levels
+    mazeBlocks = items.levels
     numberOfLevel = mazeBlocks.length
     resetTux = false
     initLevel()
@@ -202,6 +206,11 @@ function initLevel() {
     else
         items.currentLevelContainsProcedure = false
 
+    if(levelInstructions.indexOf(EXECUTE_LOOPS) !== -1)
+        items.currentLevelContainsLoop = true
+    else
+        items.currentLevelContainsLoop = false
+
     // Create, populate and connect signals of instructions for main function code area and store them in mainInstructionObjects.
     createInstructionObjects(mainInstructionObjects, items.background)
 
@@ -218,7 +227,12 @@ function initLevel() {
         createInstructionObjects(procedureInstructionObjects, mainInstructionObjects[CALL_PROCEDURE])
     }
 
-    if(activityMode === "loops") {
+    if(items.currentLevelContainsLoop) {
+        if(!items.tutorialImage.shownLoopTutorialInstructions) {
+            items.tutorialImage.shownLoopTutorialInstructions = true
+            items.tutorialImage.visible = true
+        }
+
         createLoopObjectAndInstructions()
     }
 
@@ -293,7 +307,7 @@ function runCode() {
     // Append all the loop instructions to the loop area object in loops mode.
     for(var j = 0; j < items.procedureModel.count; j++) {
         instructionName = items.procedureModel.get(j).name
-        if(activityMode === "basic") {
+        if(items.currentLevelContainsProcedure) {
             mainInstructionObjects[CALL_PROCEDURE].procedureCode.append({ "name" : instructionName })
         }
         else {

@@ -12,7 +12,7 @@ import GCompris 1.0
 
 TutorialBase {
     //the level to fetch info from
-    levelNumber: 0
+    levelNumber: items.bar.level + 1
     //the highlighted area
     activeAreaTuto: "instruction"
     instructionTextVisible: true
