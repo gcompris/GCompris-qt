@@ -36,6 +36,7 @@ Item {
     id: tutorialSection
     anchors.fill: parent
     focus: true
+    opacity: 0
 
     Component.onCompleted: {
         activity.start.connect(start)
@@ -84,6 +85,7 @@ Item {
         activity.Keys.enabled = false;
         background.Keys.enabled = false;
         tutorialSection.forceActiveFocus();
+        tutorialSection.opacity = 1;
     }
 
     function restoreFocus() {

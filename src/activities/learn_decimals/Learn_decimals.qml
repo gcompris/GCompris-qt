@@ -67,7 +67,6 @@ ActivityBase {
         }
 
         onStart: {
-            tutorialImage.visible = true
             Activity.start(items)
         }
         onStop: { Activity.stop() }
@@ -77,7 +76,7 @@ ActivityBase {
             id: tutorialImage
             source: "qrc:/gcompris/src/activities/guesscount/resource/backgroundW01.svg"
             anchors.fill: parent
-            visible: false
+            visible: true
             z: 5
             Tutorial {
                 id: tutorialSection
