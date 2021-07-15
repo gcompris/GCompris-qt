@@ -4,6 +4,7 @@
  *
  * Authors:
  *   Mariam Fahmy <mariamfahmy66@gmail.com>
+ *   Timothée Giet <animtim@gmail.com>
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
@@ -20,259 +21,331 @@ Image {
     fillMode: Image.PreserveAspectFit
     source: "qrc:/gcompris/src/activities/braille_fun/resource/hillside.svg"
 
-    property bool isRepresentationShown
-    property bool isResultTyping
-    property bool isSubtractionMode
-    property bool isAdditionMode
+    property bool isRepresentationShown: false
+    property bool isResultTyping: false
+    property bool isSubtractionMode: false
+    property bool isSubtractionMode2: false
+    property bool isAdditionMode: false
 
     Item {
         id: layoutTutorial
         width: parent.paintedWidth
         height: parent.paintedHeight
-        anchors.verticalCenter: parent.verticalCenter
-        anchors.horizontalCenter: parent.horizontalCenter
+        anchors.centerIn: parent
 
         readonly property string largestNumber: Activity.toDecimalLocaleNumber(1.5)
-        readonly property string smallestNumber: Activity.toDecimalLocaleNumber(0.5)
+        readonly property string smallestNumber: Activity.toDecimalLocaleNumber(0.3)
 
-        GCText {
-           id: decimalNumberTutorial
-           anchors.horizontalCenter: parent.horizontalCenter
-           anchors.top: parent.top
-           anchors.topMargin: 2 * ApplicationInfo.ratio
-           text: layoutTutorial.displayQuestion()
-           fontSize: smallSize
-           horizontalAlignment: Text.AlignHCenter
-           wrapMode: Text.WordWrap
-           font.weight: Font.DemiBold
-           style: Text.Outline
-           styleColor: "black"
-           color: "white"
+        Rectangle {
+            id: decimalNumberTutorial
+            width: parent.width * 0.6
+            height: parent.height / 12
+            radius: 10
+            color: "#373737"
+            anchors.horizontalCenter: parent.horizontalCenter
+            anchors.top: parent.top
+            anchors.topMargin: 2 * ApplicationInfo.ratio
+            GCText {
+                anchors.centerIn: parent
+                width: parent.width - 4 * ApplicationInfo.ratio
+                height: parent.height
+                text: layoutTutorial.displayQuestion()
+                fontSize: smallSize
+                fontSizeMode: Text.Fit
+                wrapMode: Text.WordWrap
+                horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
+                font.weight: Font.DemiBold
+                color: "white"
+            }
         }
 
         function displayQuestion() {
             if(tutorialBase.isSubtractionMode) {
-                return qsTr("Display the result of: %1 - %2").arg(layoutTutorial.largestNumber).arg(layoutTutorial.smallestNumber)
+                return decimalNumber.subtractionQuestion.arg(layoutTutorial.largestNumber).arg(layoutTutorial.smallestNumber)
             }
             else if(tutorialBase.isAdditionMode) {
-                return qsTr("Display the result of: %1 + %2").arg(layoutTutorial.largestNumber).arg(layoutTutorial.smallestNumber)
+                return decimalNumber.additionQuestion.arg(layoutTutorial.largestNumber).arg(layoutTutorial.smallestNumber)
             }
             else {
-                return qsTr("Display the number: %1").arg(layoutTutorial.largestNumber)
+                return decimalNumber.decimalQuestion.arg(layoutTutorial.largestNumber)
             }
+        }
+
+        Item {
+            id: tutoLayoutArea
+            anchors.top: decimalNumberTutorial.bottom
+            anchors.topMargin: 2 * ApplicationInfo.ratio
+            anchors.bottom: okButtonTutorial.top
+            anchors.bottomMargin: anchors.topMargin
+            anchors.horizontalCenter: parent.horizontalCenter
+            width: parent.width * 0.7
         }
 
         Rectangle {
             id: topRectangleTutorial
             visible: tutorialBase.isSubtractionMode || tutorialBase.isRepresentationShown
-            anchors.topMargin: 5 * ApplicationInfo.ratio
-            color: "#55333333"
-            border.color: "black"
-            border.width: 2
-            radius: 10
+            anchors.top: tutoLayoutArea.top
+            color: "#F2F2F2"
+            border.color: "#373737"
+            border.width: 1
+            radius: 5
 
             states: [
                 State {
                     when: background.horizontalLayout
                     PropertyChanges {
                         target: topRectangleTutorial
-                        width: parent.width * 0.6
-                        height: tutorialBase.isSubtractionMode ? parent.height * 0.6 : parent.height * 0.4
-                        anchors.topMargin: 5 * ApplicationInfo.ratio
+                        width: tutoLayoutArea.width
+                        height: tutorialBase.isSubtractionMode ? tutoLayoutArea.height * 0.8 : tutoLayoutArea.height * 0.636
                     }
                     AnchorChanges {
                         target: topRectangleTutorial
-                        anchors.top: decimalNumberTutorial.bottom
-                        anchors.horizontalCenter: parent.horizontalCenter
+                        anchors.right: undefined
+                        anchors.horizontalCenter: tutoLayoutArea.horizontalCenter
+                    }
+                    PropertyChanges {
+                        target: firstBar
+                        cellSize: tutorialBase.isSubtractionMode ?
+                            Math.min(topRectangleTutorial.height / 6, topRectangleTutorial.width / 11) :
+                            Math.min(topRectangleTutorial.height / 7, topRectangleTutorial.width / 11)
+                        anchors.topMargin: tutorialBase.isSubtractionMode ? firstBar.cellSize * 0.14 :
+                            firstBar.cellSize * 0.125
+                        anchors.leftMargin: 0
+                    }
+                    AnchorChanges {
+                        target: firstBar
+                        anchors.top: topBarsLayout.top
+                        anchors.horizontalCenter: topBarsLayout.horizontalCenter
+                        anchors.verticalCenter: undefined
+                        anchors.left: undefined
+                    }
+                    PropertyChanges {
+                        target: secondBar
+                        anchors.topMargin: tutorialBase.isSubtractionMode ? firstBar.cellSize * 0.14 :
+                            firstBar.cellSize * 0.125
+                        anchors.leftMargin: 0
+                    }
+                    AnchorChanges {
+                        target: secondBar
+                        anchors.top: firstBar.bottom
+                        anchors.horizontalCenter: topRectangleTutorial.horizontalCenter
+                        anchors.verticalCenter: undefined
+                        anchors.left: undefined
                     }
                 },
                 State {
-                    when: !background.horizontalLayout
+                    when: !background.horizontalLayout && !tutorialBase.isResultTyping
                     PropertyChanges {
                         target: topRectangleTutorial
-                        width: tutorialBase.isSubtractionMode ? parent.width * 0.6 : parent.width * 0.4
-                        height: parent.height * 0.6
-                        anchors.topMargin: 5 * ApplicationInfo.ratio
-                        anchors.rightMargin: 60 * ApplicationInfo.ratio
+                        width: tutorialBase.isSubtractionMode ? tutoLayoutArea.width : tutoLayoutArea.width * 0.636
+                        height: tutoLayoutArea.height * 0.8
+                        anchors.rightMargin: 5 * ApplicationInfo.ratio
                     }
                     AnchorChanges {
                         target: topRectangleTutorial
-                        anchors.top: decimalNumberTutorial.bottom
-                        anchors.right: tutorialBase.isSubtractionMode ? undefined : parent.right
-                        anchors.horizontalCenter: (tutorialBase.isSubtractionMode || isResultTyping) ? parent.horizontalCenter : undefined
+                        anchors.right: tutoLayoutArea.right
+                        anchors.horizontalCenter: undefined
+                    }
+                    PropertyChanges {
+                        target: firstBar
+                        cellSize: tutorialBase.isSubtractionMode ?
+                            Math.min(topRectangleTutorial.width / 6, topRectangleTutorial.height / 11) :
+                            Math.min(topRectangleTutorial.width / 7, topRectangleTutorial.height / 11)
+                        anchors.topMargin: 0
+                        anchors.leftMargin: tutorialBase.isSubtractionMode ? firstBar.cellSize * 0.14 :
+                            firstBar.cellSize * 0.125
+                    }
+                    AnchorChanges {
+                        target: firstBar
+                        anchors.top: topBarsLayout.top
+                        anchors.horizontalCenter: undefined
+                        anchors.verticalCenter: topRectangleTutorial.verticalCenter
+                        anchors.left: topBarsLayout.left
+                    }
+                    PropertyChanges {
+                        target: secondBar
+                        anchors.topMargin: 0
+                        anchors.leftMargin: tutorialBase.isSubtractionMode ? firstBar.cellSize * 0.14 :
+                            firstBar.cellSize * 0.125
+                    }
+                    AnchorChanges {
+                        target: secondBar
+                        anchors.top: undefined
+                        anchors.horizontalCenter: undefined
+                        anchors.verticalCenter: topRectangleTutorial.verticalCenter
+                        anchors.left: firstBar.right
+                    }
+                },
+                State {
+                    when: !background.horizontalLayout && tutorialBase.isResultTyping
+                    PropertyChanges {
+                        target: topRectangleTutorial
+                        width: tutorialBase.isSubtractionMode ? tutoLayoutArea.width : tutoLayoutArea.width * 0.636
+                        height: tutoLayoutArea.height * 0.8
+                        anchors.rightMargin: 5 * ApplicationInfo.ratio
+                    }
+                    AnchorChanges {
+                        target: topRectangleTutorial
+                        anchors.right: undefined
+                        anchors.horizontalCenter: tutoLayoutArea.horizontalCenter
+                    }
+                    PropertyChanges {
+                        target: firstBar
+                        cellSize: tutorialBase.isSubtractionMode ?
+                            Math.min(topRectangleTutorial.width / 6, topRectangleTutorial.height / 11) :
+                            Math.min(topRectangleTutorial.width / 7, topRectangleTutorial.height / 11)
+                        anchors.topMargin: 0
+                        anchors.leftMargin: tutorialBase.isSubtractionMode ? firstBar.cellSize * 0.14 :
+                            firstBar.cellSize * 0.125
+                    }
+                    AnchorChanges {
+                        target: firstBar
+                        anchors.top: topBarsLayout.top
+                        anchors.horizontalCenter: undefined
+                        anchors.verticalCenter: topRectangleTutorial.verticalCenter
+                        anchors.left: topBarsLayout.left
+                    }
+                    PropertyChanges {
+                        target: secondBar
+                        anchors.topMargin: 0
+                        anchors.leftMargin: tutorialBase.isSubtractionMode ? firstBar.cellSize * 0.14 :
+                            firstBar.cellSize * 0.125
+                    }
+                    AnchorChanges {
+                        target: secondBar
+                        anchors.top: undefined
+                        anchors.horizontalCenter: undefined
+                        anchors.verticalCenter: topRectangleTutorial.verticalCenter
+                        anchors.left: firstBar.right
                     }
                 }
             ]
 
-            RowRepresent {
-                id: firstRow
-                anchors.top: parent.top
-                anchors.topMargin: 15 * ApplicationInfo.ratio
-                isFirstRow: true
-                model: 10
+            Item {
+                id: topBarsLayout
+                anchors.centerIn: topRectangleTutorial
+                width: background.horizontalLayout ? firstBar.cellSize * 10 :
+                        (tutorialBase.isSubtractionMode ? firstBar.cellSize * 6 :
+                        firstBar.cellSize * 7)
+                height: background.horizontalLayout ? (tutorialBase.isSubtractionMode ?
+                        firstBar.cellSize * 6 : firstBar.cellSize * 7) : firstBar.cellSize * 10
             }
 
-            RowRepresent {
-                id: secondRow
-                anchors.top: firstRow.bottom
-                anchors.topMargin: tutorialBase.isSubtractionMode ? 10 * ApplicationInfo.ratio : 0
-                isFirstRow: false
-                model: (!tutorialBase.isAdditionMode && !tutorialBase.isSubtractionMode) ? 5 : 10
+            TutorialBar {
+                id: firstBar
+                model: ["fill","fill","fill","fill","fill","fill","fill","fill","fill","fill"]
             }
 
-            ColumnRepresent {
-                id: firstColumn
-                anchors.left: parent.left
-                anchors.leftMargin: 15 * ApplicationInfo.ratio
-                isFirstColumn: true
-                model: 10
-            }
-
-            ColumnRepresent {
-                id: secondColumn
-                anchors.left: firstColumn.right
-                anchors.leftMargin: tutorialBase.isSubtractionMode ? 15 * ApplicationInfo.ratio : 0
-                isFirstColumn: false
-                model: (!tutorialBase.isAdditionMode && !tutorialBase.isSubtractionMode) ? 5 : 10
+            TutorialBar {
+                id: secondBar
+                cellSize: firstBar.cellSize
+                model: tutorialBase.isSubtractionMode2 ?
+                ["fill","fill","deleted","deleted","deleted","empty","empty","empty","empty","empty"] :
+                tutorialBase.isSubtractionMode ?
+                ["fill","fill","fill","fill","fill","empty","empty","empty","empty","empty"] :
+                ["fill","fill","fill","fill","fill","fill","fill","fill","none","none"]
             }
         }
 
         Rectangle {
             id: bottomRectangleTutorial
             visible: !tutorialBase.isSubtractionMode && !tutorialBase.isResultTyping
-            color: "#55333333"
-            border.color: "black"
-            border.width: 2
-            radius: 10
+            color: "#F2F2F2"
+            border.color: "#373737"
+            border.width: 1
+            radius: 5
 
             states: [
                 State {
                     when: background.horizontalLayout
                     PropertyChanges {
                         target: bottomRectangleTutorial
-                        width: parent.width * 0.6
-                        height: parent.height * 0.2
-                        anchors.topMargin: 5 * ApplicationInfo.ratio
+                        width: tutoLayoutArea.width
+                        // 3/11 of layoutArea
+                        height: tutoLayoutArea.height * 0.273
+                        anchors.rightMargin: 0
+                        // 0.5/11 of layoutArea
+                        anchors.topMargin: tutoLayoutArea.height * 0.045
                     }
                     AnchorChanges {
                         target: bottomRectangleTutorial
-                        anchors.horizontalCenter: parent.horizontalCenter
                         anchors.top: topRectangleTutorial.bottom
+                        anchors.horizontalCenter: tutoLayoutArea.horizontalCenter
+                        anchors.right: undefined
+                    }
+                    PropertyChanges {
+                        target: bottomBar
+                        cellSize: Math.min(bottomRectangleTutorial.height / 3, bottomRectangleTutorial.width / 11)
+                        anchors.verticalCenterOffset: -bottomBar.cellSize * 0.5
+                        anchors.horizontalCenterOffset: 0
+                    }
+                    PropertyChanges {
+                        target: arrowTutorial
+                        rotation: 0
+                        anchors.leftMargin: bottomBar.cellSize * 0.5
+                        anchors.topMargin: 0
+                    }
+                    AnchorChanges {
+                        target: arrowTutorial
+                        anchors.top: bottomBar.bottom
+                        anchors.left: bottomBar.left
+                        anchors.right: undefined
                     }
                 },
                 State {
                     when: !background.horizontalLayout
                     PropertyChanges {
                         target: bottomRectangleTutorial
-                        width: parent.width * 0.2
-                        height: parent.height * 0.6
-                        anchors.topMargin: 5 * ApplicationInfo.ratio
-                        anchors.rightMargin: 10 * ApplicationInfo.ratio
+                        width: tutoLayoutArea.width * 0.273
+                        height: tutoLayoutArea.height * 0.8
+                        anchors.rightMargin: tutoLayoutArea.width * 0.045
+                        anchors.topMargin: 0
                     }
                     AnchorChanges {
                         target: bottomRectangleTutorial
-                        anchors.top: decimalNumberTutorial.bottom
+                        anchors.top: tutoLayoutArea.top
+                        anchors.horizontalCenter: undefined
                         anchors.right: topRectangleTutorial.left
+                    }
+                    PropertyChanges {
+                        target: bottomBar
+                        cellSize: Math.min(bottomRectangleTutorial.width / 3, bottomRectangleTutorial.height / 11)
+                        anchors.verticalCenterOffset: 0
+                        anchors.horizontalCenterOffset: bottomBar.cellSize * 0.5
+                    }
+                    PropertyChanges {
+                        target: arrowTutorial
+                        rotation: 90
+                        anchors.leftMargin: 0
+                        anchors.topMargin: bottomBar.cellSize * 0.5
+                    }
+                    AnchorChanges {
+                        target: arrowTutorial
+                        anchors.top: bottomBar.top
+                        anchors.left: undefined
+                        anchors.right: bottomBar.left
                     }
                 }
             ]
 
-            Row {
-                id: bottomRow
-                visible: background.horizontalLayout
-                width: parent.width * 0.6
-                height: parent.height * 0.25
-                anchors.horizontalCenter: parent.horizontalCenter
-                anchors.top: parent.top
-                anchors.topMargin: 10 * ApplicationInfo.ratio
-
-                Repeater {
-                    model: 10
-
-                    Rectangle {
-                        width: parent.width * 0.1
-                        height: parent.height
-                        color: index < 1 ? "#87cefa" : "transparent"
-                        border.color: "black"
-                        border.width: 2
-                    }
-                }
-            }
-
-            Column {
-                id: bottomColumn
-                visible: !background.horizontalLayout
-                width: parent.width * 0.2
-                height: parent.height * 0.8
-                anchors.horizontalCenter: parent.horizontalCenter
-                anchors.top: parent.top
-                anchors.topMargin: 15 * ApplicationInfo.ratio
-
-                Repeater {
-                    model: 10
-
-                    Rectangle {
-                        width: parent.width
-                        height: parent.height * 0.1
-                        color: index < 1 ? "#87cefa" : "transparent"
-                        border.color: "black"
-                        border.width: 2
-                    }
-                }
+            TutorialBar {
+                id: bottomBar
+                anchors.centerIn: parent
+                model: ["fill","empty","empty","empty","empty","empty","empty","empty","empty","empty"]
             }
 
             Image {
                 id: arrowTutorial
-                source: "qrc:/gcompris/src/core/resource/bar_down.svg"
-
-                states: [
-                    State {
-                        when: background.horizontalLayout
-                        PropertyChanges {
-                            target: arrowTutorial
-                            rotation: 180
-                            x: bottomRow.x
-                            anchors.topMargin: 3 * ApplicationInfo.ratio
-                        }
-                        AnchorChanges {
-                            target: arrowTutorial
-                            anchors.top: bottomRow.bottom
-                        }
-                    },
-                    State {
-                        when: !background.horizontalLayout
-                        PropertyChanges {
-                            target: arrowTutorial
-                            rotation: -90
-                            y: bottomColumn.y
-                            anchors.rightMargin: 3 * ApplicationInfo.ratio
-                        }
-                        AnchorChanges {
-                            target: arrowTutorial
-                            anchors.right: bottomColumn.left
-                        }
-                    }
-                ]
-                GCText {
-                    id: textTutorial
-                    fontSize: regularSize
-                    text: Activity.toDecimalLocaleNumber(0.1)
-                    font.bold: true
-                    style: Text.Outline
-                    styleColor: "white"
-                    color: "black"
-                    wrapMode: Text.WordWrap
-                    fontSizeMode: Text.Fit
-                    verticalAlignment: Text.AlignVCenter
-                    horizontalAlignment: Text.AlignHCenter
-                    anchors.fill: parent
-                    rotation: background.horizontalLayout ? 180 : 90
-                }
+                source: "qrc:/gcompris/src/activities/learn_decimals/resource/arrow.svg"
+                width: bottomBar.cellSize
+                height: width
+                sourceSize.width: width
             }
         }
 
         Rectangle {
-            id: answerBackground
+            id: answerBackgroundTuto
             visible: tutorialBase.isResultTyping
             width: parent.width * 0.5
             height: parent.height * 0.15
@@ -280,9 +353,9 @@ Image {
             anchors.top: topRectangleTutorial.bottom
             anchors.topMargin: 5 * ApplicationInfo.ratio
             color: "#f2f2f2"
-            border.color: "black"
-            border.width: 2
-            radius: 10
+            border.color: "#373737"
+            border.width: 1
+            radius: 5
 
             GCText {
                 anchors.fill: parent
@@ -290,21 +363,20 @@ Image {
                 verticalAlignment: Text.AlignVCenter
                 color: "#373737"
                 fontSize: smallSize
-                text: qsTr("Enter the result: ")
+                text: answerBackground.resultText.arg(" ")
             }
         }
 
         Image {
             id: okButtonTutorial
             source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
-            visible: tutorialBase.isRepresentationShown
+            width: 30 * ApplicationInfo.ratio
+            sourceSize.width: width
             anchors {
-                top: tutorialBase.isSubtractionMode ? topRectangleTutorial.bottom : bottomRectangleTutorial.bottom
                 bottom: parent.bottom
                 right: parent.right
-                left: tutorialBase.isSubtractionMode || !background.horizontalLayout? topRectangleTutorial.right : bottomRectangleTutorial.right
-                leftMargin: 10 * ApplicationInfo.ratio
-                rightMargin: 10 * ApplicationInfo.ratio
+                bottomMargin: 5 * ApplicationInfo.ratio
+                rightMargin: 5 * ApplicationInfo.ratio
             }
         }
     }

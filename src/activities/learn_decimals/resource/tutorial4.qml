@@ -15,5 +15,6 @@ TutorialBase {
     isRepresentationShown: true
     isResultTyping: false
     isSubtractionMode: true
+    isSubtractionMode2: true
     isAdditionMode: false
 }

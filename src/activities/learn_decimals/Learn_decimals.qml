@@ -101,11 +101,15 @@ ActivityBase {
             anchors.top: background.top
             anchors.topMargin: 5 * ApplicationInfo.ratio
 
+            property string decimalQuestion: qsTr("Display the number: %1")
+            property string additionQuestion: qsTr("Display the result of: %1 + %2")
+            property string subtractionQuestion: qsTr("Display the result of: %1 - %2")
+
             GCText {
                 anchors.centerIn: parent
                 width: parent.width - 10 * ApplicationInfo.ratio
                 height: parent.height
-                text: isSubtractionMode ? qsTr("Display the result of: %1 - %2").arg(items.largestNumber).arg(items.smallestNumber) : isAdditionMode ? qsTr("Display the result of: %1 + %2").arg(items.largestNumber).arg(items.smallestNumber) : qsTr("Display the number: %1").arg(items.largestNumber)
+                text: isSubtractionMode ? decimalNumber.subtractionQuestion.arg(items.largestNumber).arg(items.smallestNumber) : isAdditionMode ? decimalNumber.additionQuestion.arg(items.largestNumber).arg(items.smallestNumber) : decimalNumber.decimalQuestion.arg(items.largestNumber)
                 fontSizeMode: Text.Fit
                 wrapMode: Text.WordWrap
                 horizontalAlignment: Text.AlignHCenter
@@ -543,11 +547,12 @@ ActivityBase {
             visible: items.typeResult
             height: okButton.height
             color: "#f2f2f2"
-            border.color: "black"
+            border.color: "#373737"
             border.width: 2
             radius: 10
 
             property string userEntry
+            property string resultText: qsTr("Enter the result: %1")
 
             GCText {
                 id: userEntryText
@@ -560,7 +565,7 @@ ActivityBase {
                 fontSizeMode: Text.Fit
                 wrapMode: Text.WordWrap
                 color: "#373737"
-                text: qsTr("Enter the result: %1").arg(answerBackground.userEntry)
+                text: answerBackground.resultText.arg(answerBackground.userEntry)
             }
         }
 
