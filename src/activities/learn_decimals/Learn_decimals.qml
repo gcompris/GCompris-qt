@@ -578,6 +578,8 @@ ActivityBase {
 
         Keys.enabled: !bonus.isPlaying
         Keys.onPressed: {
+            if(bonus.isPlaying)
+                return
             if(event.key === Qt.Key_Enter || event.key === Qt.Key_Return) {
                 if(items.typeResult) {
                     Activity.verifyNumberTyping(answerBackground.userEntry)
@@ -588,12 +590,6 @@ ActivityBase {
             }
             else {
                numpad.updateAnswer(event.key, true);
-            }
-        }
-
-        Keys.onReleased: {
-            if(items.typeResult) {
-                numpad.updateAnswer(event.key, false);
             }
         }
 
