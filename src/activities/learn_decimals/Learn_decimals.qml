@@ -219,7 +219,7 @@ ActivityBase {
                             cellHeight: cellSize * 1.125
                             cellWidth: cellSize
                             width: cellSize * 10
-                            height: topRectangle.height
+                            height: cellSize * 6.875
                             anchors.verticalCenterOffset: cellSize * 0.125
                             anchors.horizontalCenterOffset: 0
                             flow: GridView.FlowTopToBottom
