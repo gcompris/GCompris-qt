@@ -11,33 +11,33 @@ import GCompris 1.0
 
 Data {
     //: Coefficients are the numbers by which the numbers of stars are multiplied to get the total
-    objective: qsTr("Calculate remaining stars up to 100 with coefficients.")
-    difficulty: 4
+    objective: qsTr("Calculate remaining stars up to 1000 with coefficients.")
+    difficulty: 5
     data: [
         {
-            "maxValue": 100,
+            "maxValue": 1000,
+            "minStars" : [2, 0, 0],
+            "maxStars" : [100, 0, 0]
+        },
+        {
+            "maxValue": 1000,
             "minStars" : [2, 2, 0],
-            "maxStars" : [20, 10, 0]
+            "maxStars" : [100, 100, 0]
         },
         {
-            "maxValue": 100,
+            "maxValue": 1000,
             "minStars" : [2, 2, 2],
-            "maxStars" : [20, 20, 10]
+            "maxStars" : [200, 200, 100]
         },
         {
-            "maxValue": 100,
+            "maxValue": 1000,
             "minStars" : [2, 2, 2],
-            "maxStars" : [20, 20, 20]
+            "maxStars" : [300, 300, 100]
         },
         {
-            "maxValue": 100,
+            "maxValue": 1000,
             "minStars" : [2, 2, 2],
-            "maxStars" : [30, 30, 20]
-        },
-        {
-            "maxValue": 100,
-            "minStars" : [2, 2, 2],
-            "maxStars" : [40, 40, 20]
+            "maxStars" : [400, 400, 200]
         }
     ]
 }

@@ -10,34 +10,38 @@
 import GCompris 1.0
 
 Data {
-    //: Coefficients are the numbers by which the numbers of stars are multiplied to get the total
-    objective: qsTr("Add stars up to 1000 with coefficients.")
-    difficulty: 5
+    objective: qsTr("Add stars up to 30.")
+    difficulty: 3
     data: [
-    {
-        "maxValue": 1000,
-        "minStars" : [2, 0, 0],
-        "maxStars" : [100, 0, 0]
-    },
-    {
-        "maxValue": 1000,
-        "minStars" : [2, 2, 0],
-        "maxStars" : [100, 100, 0]
-    },
-    {
-        "maxValue": 1000,
-        "minStars" : [2, 2, 2],
-        "maxStars" : [200, 200, 100]
-    },
-    {
-        "maxValue": 1000,
-        "minStars" : [2, 2, 2],
-        "maxStars" : [300, 300, 100]
-    },
-    {
-        "maxValue": 1000,
-        "minStars" : [2, 2, 2],
-        "maxStars" : [400, 400, 200]
-    }
+        {
+            "maxValue": 30,
+            "minStars" : [2, 0, 0],
+            "maxStars" : [5, 0, 0]
+        },
+        {
+            "maxValue": 30,
+            "minStars" : [2, 2, 0],
+            "maxStars" : [7, 3, 0]
+        },
+        {
+            "maxValue": 30,
+            "minStars" : [2, 2, 0],
+            "maxStars" : [8, 8, 0]
+        },
+        {
+            "maxValue": 30,
+            "minStars" : [2, 2, 2],
+            "maxStars" : [8, 8, 4]
+        },
+        {
+            "maxValue": 30,
+            "minStars" : [2, 2, 2],
+            "maxStars" : [9, 9, 7]
+        },
+        {
+            "maxValue": 30,
+            "minStars" : [2, 2, 2],
+            "maxStars" : [9, 9, 9]
+        }
     ]
 }

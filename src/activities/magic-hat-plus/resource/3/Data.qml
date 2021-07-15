@@ -10,38 +10,23 @@
 import GCompris 1.0
 
 Data {
-    objective: qsTr("Add stars up to 30.")
-    difficulty: 3
+    objective: qsTr("Add stars up to 5.")
+    difficulty: 1
     data: [
-    {
-        "maxValue": 30,
-        "minStars" : [2, 0, 0],
-        "maxStars" : [5, 0, 0] 
-    },
-    {
-        "maxValue": 30,
-        "minStars" : [2, 2, 0],
-        "maxStars" : [7, 3, 0] 
-    },
-    {
-        "maxValue": 30,
-        "minStars" : [2, 2, 0],
-        "maxStars" : [8, 8, 0]
-    },
-    {
-        "maxValue": 30,
-        "minStars" : [2, 2, 2],
-        "maxStars" : [8, 8, 4]
-    },
-    {
-        "maxValue": 30,
-        "minStars" : [2, 2, 2],
-        "maxStars" : [9, 9, 7]
-    },
-    {
-        "maxValue": 30,
-        "minStars" : [2, 2, 2],
-        "maxStars" : [9, 9, 9]
-    }
+        {
+            "maxValue": 5,
+            "minStars" : [2, 0, 0],
+            "maxStars" : [3, 0, 0]
+        },
+        {
+            "maxValue": 5,
+            "minStars" : [2, 0, 0],
+            "maxStars" : [4, 0, 0]
+        },
+        {
+            "maxValue": 5,
+            "minStars" : [2, 0, 0],
+            "maxStars" : [5, 0, 0]
+        }
     ]
 }
