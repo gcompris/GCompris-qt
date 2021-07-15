@@ -1,6 +1,11 @@
 /* GCompris - MultipleBars.qml
  *
  * SPDX-FileCopyrightText: 2021 Mariam Fahmy <mariamfahmy66@gmail.com>
+ *
+ * Authors:
+ *   Mariam Fahmy <mariamfahmy66@gmail.com>
+ *   Timothée Giet <animtim@gmail.com>
+ *
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 import QtQuick 2.9
@@ -10,16 +15,43 @@ import "learn_decimals.js" as Activity
 
 GridView {
     id: multipleBars
-    width: background.horizontalLayout ? parent.width * 0.5 : parent.width * 0.9
-    height: parent.height * 0.9
     anchors.centerIn: parent
-    flow: background.horizontalLayout? GridView.LeftToRight : GridView.TopToBottom
-    cellWidth: background.horizontalLayout ? multipleBars.width : multipleBars.width * 0.2
-    cellHeight: background.horizontalLayout ? multipleBars.height * 0.2 : multipleBars.height
+    property int cellSize: 10
     interactive: false
     model: largestNumberRepresentation
 
     delegate: delegateUnit
+
+    states: [
+        State {
+            when: background.horizontalLayout
+            PropertyChanges {
+                target: multipleBars
+                cellSize: Math.min(mainRectangle.height / 6, mainRectangle.width / 11)
+                cellHeight: cellSize * 1.14
+                cellWidth: cellSize
+                width: cellSize * 10
+                height: cellSize * 5.86
+                anchors.verticalCenterOffset: cellSize * 0.14
+                anchors.horizontalCenterOffset: 0
+                flow: GridView.FlowTopToBottom
+            }
+        },
+        State {
+            when: !background.horizontalLayout
+            PropertyChanges {
+                target: multipleBars
+                cellSize: Math.min(mainRectangle.width / 6, mainRectangle.height / 11)
+                cellHeight: cellSize
+                cellWidth: cellSize * 1.14
+                width: cellSize * 5.86
+                height: cellSize * 10
+                anchors.verticalCenterOffset: 0
+                anchors.horizontalCenterOffset: cellSize * 0.14
+                flow: GridView.FlowLeftToRight
+            }
+        }
+    ]
 
     Component {
         id: delegateUnit
@@ -34,13 +66,13 @@ GridView {
                     multipleBars.currentIndex = index
                 }
 
+                anchors.fill: parent
+
                 states: [
                     State {
                         when: background.horizontalLayout
                         PropertyChanges {
                             target: gridLayout
-                            width: multipleBars.cellWidth
-                            height: multipleBars.cellHeight * 0.5
                             rows: 1
                             columns: 0
                         }
@@ -49,9 +81,6 @@ GridView {
                         when: !background.horizontalLayout
                         PropertyChanges {
                             target: gridLayout
-                            width: multipleBars.cellWidth * 0.5
-                            height: multipleBars.cellHeight
-                            x: multipleBars.cellWidth * 0.5 + index
                             rows: 0
                             columns: 1
                         }
@@ -65,46 +94,40 @@ GridView {
 
                     model: Activity.squaresNumber
 
-                    Rectangle {
-                        id: square
-                        color: "#87cefa"
-                        opacity: setSquareUnitOpacity()
-                        border.color: "black"
-                        border.width: 2
+                    Image {
+                        id: squareDark
+                        source: "qrc:/gcompris/src/activities/learn_decimals/resource/rectDark.svg"
+                        width: multipleBars.cellSize
+                        height: width
+                        sourceSize.width: width
 
-                        states: [
-                            State {
-                                when: background.horizontalLayout
-                                PropertyChanges {
-                                    target: square
-                                    width: gridLayout.width * 0.1
-                                    height: gridLayout.height
-                                }
-                            },
-                            State {
-                                when: !background.horizontalLayout
-                                PropertyChanges {
-                                    target: square
-                                    width: gridLayout.width
-                                    height: gridLayout.height * 0.1
-                                }
-                            }
-                        ]
-
-                        function setSquareUnitOpacity() {
-                            if(squareRepeater.gridIndex == largestNumberRepresentation.count - 1) {
-                                if(index >= Activity.lastBarSquareUnits) return 0.3
-                            }
-
-                            if(index < selectedSquareNumbers) return 1
-                            else return 0.7
+                        Image {
+                            id: squareWhite
+                            source: "qrc:/gcompris/src/activities/learn_decimals/resource/rectWhite.svg"
+                            anchors.centerIn: parent
+                            width: parent.width - 6
+                            height: width
+                            sourceSize.width: width
                         }
 
                         Image {
                             id: crossImage
                             source: "qrc:/gcompris/src/activities/learn_decimals/resource/cross.svg"
-                            anchors.fill: parent
-                            visible: square.opacity == 0.7 ? true : false
+                            anchors.centerIn: parent
+                            width: squareWhite.width
+                            sourceSize.width: width
+                            visible: squareRepeater.gridIndex < largestNumberRepresentation.count - 1 ||
+                                     index < Activity.lastBarSquareUnits
+                        }
+
+                        Image {
+                            id: squareFill
+                            source: "qrc:/gcompris/src/activities/learn_decimals/resource/rectFill.svg"
+                            anchors.centerIn: parent
+                            width: squareWhite.width
+                            height: width
+                            sourceSize.width: width
+                            visible: crossImage.visible && index < selectedSquareNumbers
                         }
 
                         MouseArea {
@@ -132,37 +155,6 @@ GridView {
                         }
                     }
                 }
-            }
-
-            Item {
-                id: emptySpace
-
-                states: [
-                    State {
-                        when: background.horizontalLayout
-                        PropertyChanges {
-                            target: emptySpace
-                            width: multipleBars.cellWidth
-                            height: multipleBars.cellHeight * 0.5
-                        }
-                        AnchorChanges {
-                            target: emptySpace
-                            anchors.top: gridLayout.bottom
-                        }
-                    },
-                    State {
-                        when: !background.horizontalLayout
-                        PropertyChanges {
-                            target: emptySpace
-                            width: multipleBars.cellWidth * 0.5
-                            height: multipleBars.cellHeight
-                        }
-                        AnchorChanges {
-                            target: emptySpace
-                            anchors.right: gridLayout.left
-                        }
-                    }
-                ]
             }
         }
     }
