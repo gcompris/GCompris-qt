@@ -13,6 +13,7 @@ Data {
     objective: qsTr("Subtract decimal numbers up to 5.")
     difficulty: 3
     data: [
+        // maxValue represents the maximum decimal number generated.
         {
             "numberOfSubLevels": 1,
             "minValue" : 0.5,

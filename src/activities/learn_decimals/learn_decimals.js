@@ -13,12 +13,14 @@ var numberOfLevel;
 var items;
 var dataset;
 var generatedNumber;
-var firstNum;
-var secondNum;
-var decimalNumberList = [];
+var minimumValue;
+var maximumValue;
+var firstNumber;
+var secondNumber;
 var squaresNumber = 10;
 var correctAnswer;
 var lastBarSquareUnits;
+var firstNumberList;
 
 var tutorialInstructions = [
             {
@@ -69,7 +71,11 @@ function start(items_) {
     dataset = items.levels;
     numberOfLevel = dataset.length;
     items.score.currentSubLevel = 1;
-    initLevel();
+    firstNumberList = [];
+
+    if(items.tutorialImage.visible) {
+        initLevel();
+    }
 }
 
 function stop() {
@@ -83,15 +89,15 @@ function initLevel() {
     items.droppedItems.clear();
     items.largestNumberRepresentation.clear();
     items.typeResult = false;
-    decimalNumberList = [];
-    firstNum = 0;
+    minimumValue = dataset[currentLevel].minValue;
+    maximumValue = dataset[currentLevel].maxValue;
 
-    displayDecimalNumbers();
+    // In case total number of levels are greater than the number of possibilities from 0.1 to 5.
+    checkQuestionListCapacity(0.1, 5);
+
+    displayDecimalNumberQuestion()
 
     if(!items.isSubtractionMode) {
-        if(items.isAdditionMode) {
-            generateSecondNumber();
-        }
         //resetting the selected bar to 0.1 (the least draggable part)
         items.draggedItems.append({"selectedSquareNumbers" : 1 });
 
@@ -104,8 +110,7 @@ function initLevel() {
         items.scrollBar.currentStep = 0;
     }
     else {
-        generateSecondNumber();
-        var largestNumber = firstNum * squaresNumber;
+        var largestNumber = firstNumber * squaresNumber;
         while(largestNumber > 0) {
             if(largestNumber > squaresNumber) {
                 items.largestNumberRepresentation.append({"selectedSquareNumbers" : squaresNumber });
@@ -142,9 +147,23 @@ function nextSubLevel() {
     }
 
     items.droppedItems.clear();
-    displayDecimalNumbers();
+
+    // In case number of sublevels are greater than the number of possibilities of the current level.
+    checkQuestionListCapacity(minimumValue, maximumValue);
+
+    displayDecimalNumberQuestion();
 
     items.score.currentSubLevel++;
+}
+
+function checkQuestionListCapacity(minValue, maxValue) {
+    var maxSize = ((maxValue - minValue) * squaresNumber) + 1;
+
+    if(firstNumberList.length >= maxSize) {
+        var lastValue = firstNumberList[maxSize - 1];
+        firstNumberList = [];
+        firstNumberList.push(lastValue);
+    }
 }
 
 function organizeDroppedBars() {
@@ -166,42 +185,55 @@ function organizeDroppedBars() {
     }
 }
 
-function generateSecondNumber() {
-    firstNum = generatedNumber;
-    displayDecimalNumbers();
-    secondNum = generatedNumber;
-
-    // In case of subtraction mode, the first number must be greater than the second number to avoid having negative results.
-    if(firstNum < secondNum) {
-        var temp = firstNum;
-        firstNum = secondNum;
-        secondNum = temp;
+function generateFirstNumber() {
+    if(items.isAdditionMode) {
+        maximumValue -= minimumValue;
     }
 
-    items.largestNumber = toDecimalLocaleNumber(firstNum);
-    items.smallestNumber = toDecimalLocaleNumber(secondNum);
+    generatedNumber = generateDecimalNumbers(minimumValue, maximumValue);
+
+    while(firstNumberList.indexOf(generatedNumber) !== -1 || generatedNumber === 0) {
+        generatedNumber = generateDecimalNumbers(minimumValue, maximumValue);
+    }
+    return generatedNumber;
 }
 
-function displayDecimalNumbers() {
-    var maxValue;
-    var minValue = dataset[currentLevel].minValue;
+function generateSecondNumber() {
+    if(items.isAdditionMode) {
+        maximumValue -= generatedNumber;
+    }
+
+    generatedNumber = generateDecimalNumbers(minimumValue, maximumValue);
+
+    while(generatedNumber === 0) {
+        generatedNumber = generateDecimalNumbers(minimumValue, maximumValue);
+    }
+    return generatedNumber;
+}
+
+function displayDecimalNumberQuestion() {
+    firstNumber = generateFirstNumber();
+    secondNumber = generateSecondNumber();
 
     if(items.isSubtractionMode) {
-        maxValue = dataset[currentLevel].maxValue;
-    }
-    else {
-        maxValue = dataset[currentLevel].maxValue - firstNum;
+        // Avoid having zero as a result.
+        while(secondNumber === firstNumber) {
+            secondNumber = generateSecondNumber();
+        }
+
+        // The first number must be greater than the second number to avoid having negative results.
+        if(firstNumber < secondNumber) {
+            var temp = firstNumber;
+            firstNumber = secondNumber;
+            secondNumber = temp;
+        }
     }
 
-    generatedNumber = generateDecimalNumbers(minValue, maxValue);
+    // Storing the first decimal number in a list to avoid displaying the same number again for the rest of the levels.
+    firstNumberList.push(firstNumber);
 
-    while(decimalNumberList.indexOf(generatedNumber) !== -1 || generatedNumber === 0) {
-        generatedNumber = generateDecimalNumbers(minValue, maxValue);
-    }
-    decimalNumberList.push(generatedNumber);
-    if(!items.isSubtractionMode && !items.isAdditionMode) {
-        items.largestNumber = toDecimalLocaleNumber(generatedNumber);
-    }
+    items.largestNumber = toDecimalLocaleNumber(firstNumber);
+    items.smallestNumber = toDecimalLocaleNumber(secondNumber);
 }
 
 function verifyNumberRepresentation() {
@@ -240,13 +272,13 @@ function verifyNumberRepresentation() {
 
 function calculateCorrectAnswer() {
     if(items.isSubtractionMode) {
-        correctAnswer = (firstNum * squaresNumber - secondNum * squaresNumber) / squaresNumber;
+        correctAnswer = (firstNumber * squaresNumber - secondNumber * squaresNumber) / squaresNumber;
     }
     else if(items.isAdditionMode) {
-        correctAnswer = (firstNum * squaresNumber + secondNum * squaresNumber) / squaresNumber;
+        correctAnswer = (firstNumber * squaresNumber + secondNumber * squaresNumber) / squaresNumber;
     }
     else {
-        correctAnswer = generatedNumber;
+        correctAnswer = firstNumber;
     }
 }
 

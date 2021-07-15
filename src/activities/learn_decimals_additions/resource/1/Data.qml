@@ -13,15 +13,16 @@ Data {
     objective: qsTr("Add decimal numbers up to 1.")
     difficulty: 1
     data: [
+        // maxValue represents the maximum addition result.
         {
             "numberOfSubLevels": 1,
             "minValue" : 0.1,
-            "maxValue" : 0.3
+            "maxValue" : 0.6
         },
         {
             "numberOfSubLevels": 1,
             "minValue" : 0.1,
-            "maxValue" : 0.5
+            "maxValue" : 1
         }
     ]
 }

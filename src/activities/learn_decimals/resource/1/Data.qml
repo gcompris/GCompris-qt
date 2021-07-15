@@ -13,9 +13,10 @@ Data {
     objective: qsTr("Basic decimal numbers.")
     difficulty: 1
     data: [
+        // maxValue represents the maximum decimal number generated.
         {
             "numberOfSubLevels": 5,
-            "minValue" : 0,
+            "minValue" : 0.1,
             "maxValue" : 1
         },
         {

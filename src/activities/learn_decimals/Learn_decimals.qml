@@ -761,5 +761,4 @@ ActivityBase {
             anchors.verticalCenter: okButton.verticalCenter
         }
     }
-
 }
