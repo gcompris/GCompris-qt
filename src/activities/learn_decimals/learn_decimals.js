@@ -37,7 +37,7 @@ var subtractionInstructions = [
                 "instructionQml": "qrc:/gcompris/src/activities/learn_decimals/resource/tutorial3.qml"
             },
             {
-                "instruction": qsTr("Click on the squares to represent the result of the subtraction, and click on the OK button to validate your answer."),
+                "instruction": qsTr("Click on the squares to subtract them and display the result of the operation, and click on the OK button to validate your answer."),
                 "instructionQml": "qrc:/gcompris/src/activities/learn_decimals/resource/tutorial4.qml"
             },
             {

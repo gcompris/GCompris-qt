@@ -144,7 +144,7 @@ GridView {
                                 }
 
                                 //Adjusting the visibility of square units of the clicked bar.
-                                Activity.changeMultiBarVisibility(i, index + 1);
+                                Activity.changeMultiBarVisibility(i, index);
                                 i = i + 1;
 
                                 //All bars after the clicked bar are totally transparent.
