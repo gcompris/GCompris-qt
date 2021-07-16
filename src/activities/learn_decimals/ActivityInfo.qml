@@ -24,7 +24,7 @@ ActivityInfo {
           qsTr("<b>Keyboard controls:</b>") + ("<ul><li>") +
           qsTr("Enter: validate your answer") + ("</li></ul>")
   credit: ""
-  section: "math arithmetic"
+  section: "math numeration"
   createdInVersion: 20000
   levels: "1"
 }
