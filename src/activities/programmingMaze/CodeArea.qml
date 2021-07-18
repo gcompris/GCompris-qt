@@ -164,7 +164,7 @@ GridView {
     MouseArea {
         id: codeAreaMouse
         anchors.fill: parent
-        enabled: items.isTuxMouseAreaEnabled || items.isRunCodeEnabled
+        enabled: items.isRunCodeEnabled
         onPressed: {
             codeArea.currentIndex = -1
             codeArea.draggedItemIndex = codeArea.indexAt(mouseX,mouseY)

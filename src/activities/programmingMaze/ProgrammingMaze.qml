@@ -78,7 +78,6 @@ ActivityBase {
             property alias fish: fish
             property alias loopCounterSelection: loopCounterSelection
             property bool isRunCodeEnabled: true
-            property bool isTuxMouseAreaEnabled: false
             property bool currentLevelContainsProcedure
             property bool currentLevelContainsLoop
             property int maxNumberOfInstructionsAllowed
@@ -106,7 +105,7 @@ ActivityBase {
 
         onAreaWithKeyboardInputChanged: activeCodeAreaIndicator.changeActiveCodeAreaIndicator(areaWithKeyboardInput)
 
-        Keys.enabled: items.isTuxMouseAreaEnabled || items.isRunCodeEnabled
+        Keys.enabled: items.isRunCodeEnabled
         Keys.onPressed: {
             activity.keyboardNavigationVisible = true
             if(event.key === Qt.Key_Left)
@@ -188,10 +187,9 @@ ActivityBase {
                 fontSizeMode: Text.Fit
                 wrapMode: Text.WordWrap
 
-                readonly property string resetTuxInstructionText: qsTr("Click on Tux or press the Enter key to reset it or click on the RELOAD button to reload the level.")
                 readonly property string constraintInstructionText: qsTr("Reach the fish in less than %1 instructions.").arg(items.maxNumberOfInstructionsAllowed + 1)
 
-                text: items.isTuxMouseAreaEnabled ? resetTuxInstructionText : constraintInstructionText
+                text: constraintInstructionText
             }
         }
 
@@ -230,15 +228,6 @@ ActivityBase {
             property int duration: 1000
             readonly property real playerCenterX: x + width / 2
             readonly property real playerCenterY: y + height / 2
-
-            MouseArea {
-                id: tuxMouseArea
-                anchors.fill: parent
-                enabled: items.isTuxMouseAreaEnabled
-                onClicked: {
-                    Activity.initLevel()
-                }
-            }
         }
 
         Rectangle {
@@ -574,7 +563,10 @@ ActivityBase {
 
         Bonus {
             id: bonus
-            Component.onCompleted: win.connect(Activity.nextLevel)
+            Component.onCompleted: {
+                win.connect(Activity.nextLevel)
+                loose.connect(Activity.resetTuxPosition)
+            }
         }
     }
 }

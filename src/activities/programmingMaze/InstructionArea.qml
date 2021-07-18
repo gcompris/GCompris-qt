@@ -95,7 +95,7 @@ GridView {
         MouseArea {
             id: mouseArea
             anchors.fill: parent
-            enabled: (items.isTuxMouseAreaEnabled || items.isRunCodeEnabled) && ((items.numberOfInstructionsAdded < items.maxNumberOfInstructionsAllowed) || procedureCodeArea.isEditingInstruction || mainFunctionCodeArea.isEditingInstruction)
+            enabled: items.isRunCodeEnabled && ((items.numberOfInstructionsAdded < items.maxNumberOfInstructionsAllowed) || procedureCodeArea.isEditingInstruction || mainFunctionCodeArea.isEditingInstruction)
 
             onPressed: instructionItem.checkModelAndInsert()
         }

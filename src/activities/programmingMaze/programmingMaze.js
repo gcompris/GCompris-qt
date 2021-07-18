@@ -203,7 +203,6 @@ function initLevel() {
 
     items.bar.level = currentLevel + 1
     loopsNumber = 1
-    items.loopCounterSelection.loopNumber = loopsNumber
     destroyInstructionObjects()
 
     var levelInstructions = mazeBlocks[currentLevel].instructions
@@ -251,6 +250,7 @@ function initLevel() {
     if(!resetTux) {
         items.mainFunctionModel.clear()
         items.procedureModel.clear()
+        items.loopCounterSelection.loopNumber = loopsNumber
         items.numberOfInstructionsAdded = 0
     }
 
@@ -273,7 +273,6 @@ function initLevel() {
 
     changedRotation = EAST
     deadEndPoint = false
-    items.isTuxMouseAreaEnabled = false
     items.isRunCodeEnabled = true
     items.maxNumberOfInstructionsAllowed = mazeBlocks[currentLevel].maxNumberOfInstructions
     items.constraintInstruction.show()
@@ -339,11 +338,13 @@ function executeNextInstruction() {
 
 function deadEnd() {
     deadEndPoint = true
-    resetTux = true
-    items.isTuxMouseAreaEnabled = true
-    items.constraintInstruction.show()
     items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/brick.wav")
     items.bonus.bad("tux")
+}
+
+function resetTuxPosition() {
+    resetTux = true
+    initLevel()
 }
 
 function checkSuccessAndExecuteNextInstruction() {
