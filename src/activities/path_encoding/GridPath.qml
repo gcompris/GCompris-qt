@@ -67,6 +67,8 @@ ActivityBase {
             id: sizeChangedTimer
             interval: 100
             onTriggered: {
+                mapView.init()
+                
                 tux.animationEnabled = false
                 Activity.moveTuxToBlock()
                 tux.animationEnabled = true
