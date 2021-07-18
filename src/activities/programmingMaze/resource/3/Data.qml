@@ -8,6 +8,7 @@
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
 import GCompris 1.0
+import "../../programmingMaze.js" as Activity
 
 Data {
     objective: qsTr("Using both the main area and the loop area.")
@@ -24,10 +25,10 @@ Data {
             ],
             "fish": {'x': 3, 'y': 1},
             "instructions": [
-                "move-forward",
-                "turn-left",
-                "turn-right",
-                "execute-loops"
+                Activity.MOVE_FORWARD,
+                Activity.TURN_LEFT,
+                Activity.TURN_RIGHT,
+                Activity.EXECUTE_LOOPS
             ],
             "maxNumberOfInstructions": 5
         },
@@ -44,10 +45,10 @@ Data {
             ],
             "fish": {'x': 1, 'y': 3},
             "instructions": [
-                "move-forward",
-                "turn-left",
-                "turn-right",
-                "execute-loops"
+                Activity.MOVE_FORWARD,
+                Activity.TURN_LEFT,
+                Activity.TURN_RIGHT,
+                Activity.EXECUTE_LOOPS
             ],
             "maxNumberOfInstructions": 4
         },
@@ -67,10 +68,10 @@ Data {
             ],
             "fish": {'x': 3, 'y': 3},
             "instructions": [
-                "move-forward",
-                "turn-left",
-                "turn-right",
-                "execute-loops"
+                Activity.MOVE_FORWARD,
+                Activity.TURN_LEFT,
+                Activity.TURN_RIGHT,
+                Activity.EXECUTE_LOOPS
             ],
             "maxNumberOfInstructions": 6
         },
@@ -89,10 +90,10 @@ Data {
             ],
             "fish": {'x': 4, 'y': 3},
             "instructions": [
-                "move-forward",
-                "turn-left",
-                "turn-right",
-                "execute-loops"
+                Activity.MOVE_FORWARD,
+                Activity.TURN_LEFT,
+                Activity.TURN_RIGHT,
+                Activity.EXECUTE_LOOPS
             ],
             "maxNumberOfInstructions": 8
         },
@@ -117,10 +118,10 @@ Data {
             ],
             "fish": {'x': 4, 'y': 2},
             "instructions": [
-                "move-forward",
-                "turn-left",
-                "turn-right",
-                "execute-loops"
+                Activity.MOVE_FORWARD,
+                Activity.TURN_LEFT,
+                Activity.TURN_RIGHT,
+                Activity.EXECUTE_LOOPS
             ],
             "maxNumberOfInstructions": 8
         }

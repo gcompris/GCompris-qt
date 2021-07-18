@@ -8,6 +8,7 @@
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
 import GCompris 1.0
+import "../../programmingMaze.js" as Activity
 
 Data {
     objective: qsTr("Using the main area only.")
@@ -22,9 +23,9 @@ Data {
             ],
             "fish": {'x': 3, 'y': 2},
             "instructions": [
-                "move-forward",
-                "turn-left",
-                "turn-right"
+                Activity.MOVE_FORWARD,
+                Activity.TURN_LEFT,
+                Activity.TURN_RIGHT
             ],
             "maxNumberOfInstructions": 4
         },
@@ -39,9 +40,9 @@ Data {
             ],
             "fish": {'x': 3, 'y': 1},
             "instructions": [
-                "move-forward",
-                "turn-left",
-                "turn-right"
+                Activity.MOVE_FORWARD,
+                Activity.TURN_LEFT,
+                Activity.TURN_RIGHT
             ],
             "maxNumberOfInstructions": 8
         },
@@ -60,9 +61,9 @@ Data {
             ],
             "fish": {'x': 2, 'y': 3},
             "instructions": [
-                "move-forward",
-                "turn-left",
-                "turn-right"
+                Activity.MOVE_FORWARD,
+                Activity.TURN_LEFT,
+                Activity.TURN_RIGHT
             ],
             "maxNumberOfInstructions": 14
         },
@@ -84,9 +85,9 @@ Data {
             ],
             "fish": {'x': 4, 'y': 2},
             "instructions": [
-                "move-forward",
-                "turn-left",
-                "turn-right"
+                Activity.MOVE_FORWARD,
+                Activity.TURN_LEFT,
+                Activity.TURN_RIGHT
             ],
             "maxNumberOfInstructions": 14
         },
@@ -111,9 +112,9 @@ Data {
             ],
             "fish": {'x': 4, 'y': 2},
             "instructions": [
-                "move-forward",
-                "turn-left",
-                "turn-right"
+                Activity.MOVE_FORWARD,
+                Activity.TURN_LEFT,
+                Activity.TURN_RIGHT
             ],
             "maxNumberOfInstructions": 15
         }

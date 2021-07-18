@@ -8,6 +8,7 @@
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
 import GCompris 1.0
+import "../../programmingMaze.js" as Activity
 
 Data {
     objective: qsTr("Using both the main area and the procedure area.")
@@ -26,10 +27,10 @@ Data {
             ],
             "fish": {'x': 1, 'y': 3},
             "instructions": [
-                "move-forward",
-                "turn-left",
-                "turn-right",
-                "call-procedure"
+                Activity.MOVE_FORWARD,
+                Activity.TURN_LEFT,
+                Activity.TURN_RIGHT,
+                Activity.CALL_PROCEDURE
             ],
             "maxNumberOfInstructions": 7
         },
@@ -48,10 +49,10 @@ Data {
             ],
             "fish": {'x': 4, 'y': 3},
             "instructions": [
-                "move-forward",
-                "turn-left",
-                "turn-right",
-                "call-procedure"
+                Activity.MOVE_FORWARD,
+                Activity.TURN_LEFT,
+                Activity.TURN_RIGHT,
+                Activity.CALL_PROCEDURE
             ],
             "maxNumberOfInstructions": 10
         },
@@ -69,10 +70,10 @@ Data {
             ],
             "fish": {'x': 4, 'y': 0},
             "instructions": [
-                "move-forward",
-                "turn-left",
-                "turn-right",
-                "call-procedure"
+                Activity.MOVE_FORWARD,
+                Activity.TURN_LEFT,
+                Activity.TURN_RIGHT,
+                Activity.CALL_PROCEDURE
             ],
             "maxNumberOfInstructions": 12
         },
@@ -97,10 +98,10 @@ Data {
             ],
             "fish": {'x': 0, 'y': 2},
             "instructions": [
-                "move-forward",
-                "turn-left",
-                "turn-right",
-                "call-procedure"
+                Activity.MOVE_FORWARD,
+                Activity.TURN_LEFT,
+                Activity.TURN_RIGHT,
+                Activity.CALL_PROCEDURE
             ],
             "maxNumberOfInstructions": 14
         },
@@ -124,10 +125,10 @@ Data {
             ],
             "fish": {'x': 4, 'y': 0},
             "instructions": [
-                "move-forward",
-                "turn-left",
-                "turn-right",
-                "call-procedure"
+                Activity.MOVE_FORWARD,
+                Activity.TURN_LEFT,
+                Activity.TURN_RIGHT,
+                Activity.CALL_PROCEDURE
             ],
             "maxNumberOfInstructions": 15
         }
