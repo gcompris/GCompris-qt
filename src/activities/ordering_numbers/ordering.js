@@ -130,13 +130,13 @@ function generateNumbers() {
             num.sort()
 
     }
-    else
-        num = [...items.levels[currentLevel].values]
-
+    else {
+        num = items.levels[currentLevel].values.slice();
+    }
     if(items.levels[currentLevel].mode === "descending")
-        num.reverse()
+        num.reverse();
 
-    originalArrangement = [...num]
+    originalArrangement = num.slice();
     num = Core.shuffle(num)
 }
 
