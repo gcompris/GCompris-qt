@@ -19,7 +19,7 @@ Rectangle {
     property int rows
     property int cols
 
-    property double cellSize
+    property int cellSize
 
     property bool touchEnabled: true
 
