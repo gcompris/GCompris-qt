@@ -77,7 +77,7 @@ function initLevel() {
 }
 
 function loadMoves() {
-    var pos = [...currPos]
+    var pos = currPos.slice()
     prevPos = [-1, -1]
     var direction = items.tux.direction
 
