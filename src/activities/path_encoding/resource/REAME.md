@@ -1,9 +1,3 @@
-<!--
-GCompris - README.md
-SPDX-FileCopyrightText: 2021 Harsh Kumar <hadron43@yahoo.com>
-SPDX-License-Identifier: GPL-3.0-or-later
--->
-
 # Attributions
 
 - `right-arrow.png` : made by <a href="https://icon54.com/" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
