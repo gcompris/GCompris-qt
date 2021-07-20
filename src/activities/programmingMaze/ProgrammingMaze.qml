@@ -142,7 +142,7 @@ ActivityBase {
             id: mainFunctionModel
         }
 
-        //If mode is "basic", then this model will store instructions exist in the procedure area.
+        //If mode is "procedures", then this model will store instructions exist in the procedure area.
         //If mode is "loops", then this model will store Instructions exist in the loop area.
         ListModel {
             id: procedureModel
@@ -326,8 +326,7 @@ ActivityBase {
                     fontSizeMode: Text.Fit
                     wrapMode: Text.WordWrap
                     color: "#373737"
-                    //: it refers to the minus operator.
-                    text: qsTr(Activity.LoopEnumValues.MINUS_SIGN)
+                    text: Activity.LoopEnumValues.MINUS_SIGN
                 }
 
                 MouseArea {
@@ -385,8 +384,7 @@ ActivityBase {
                     fontSizeMode: Text.Fit
                     wrapMode: Text.WordWrap
                     color: "#373737"
-                    //: it refers to the plus operator.
-                    text: qsTr(Activity.LoopEnumValues.PLUS_SIGN)
+                    text: Activity.LoopEnumValues.PLUS_SIGN
                 }
 
                 MouseArea {
