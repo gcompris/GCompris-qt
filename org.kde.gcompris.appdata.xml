@@ -564,6 +564,7 @@
       <caption xml:lang="tr">"Büyük bir harfe tıkla" aktivite</caption>
       <caption xml:lang="uk">Вправа «Клацніть на великій літері»</caption>
       <caption xml:lang="x-test">xx"Click on an uppercase letter" activityxx</caption>
+      <caption xml:lang="zh-CN">“点击一个大写字母” 活动</caption>
       <caption xml:lang="zh-TW">「在大寫字母上按一下」遊戲</caption>
       <image width="1600" height="1040">https://gcompris.net/screenshots_qt/large/click_on_letter_up.png</image>
     </screenshot>
@@ -605,6 +606,7 @@
       <caption xml:lang="tr">"Saatleri öğrenme" aktivite</caption>
       <caption xml:lang="uk">Вправа «Вивчення годинника»</caption>
       <caption xml:lang="x-test">xx"Learning Clock" activityxx</caption>
+      <caption xml:lang="zh-CN">“学习时钟”活动</caption>
       <caption xml:lang="zh-TW">「學習時鐘」遊戲</caption>
       <image width="1600" height="1040">https://gcompris.net/screenshots_qt/large/clockgame.png</image>
     </screenshot>
@@ -646,6 +648,7 @@
       <caption xml:lang="tr">"Renkli boya karışımı" aktivite</caption>
       <caption xml:lang="uk">Вправа «Змішування кольорів малюнка»</caption>
       <caption xml:lang="x-test">xx"Mixing color of paint" activityxx</caption>
+      <caption xml:lang="zh-CN">“颜料混合颜色”活动</caption>
       <caption xml:lang="zh-TW">「混合顏色」遊戲</caption>
       <image width="1600" height="1040">https://gcompris.net/screenshots_qt/large/color_mix.png</image>
     </screenshot>
@@ -687,6 +690,7 @@
       <caption xml:lang="tr">"Renkler" aktivite</caption>
       <caption xml:lang="uk">Вправа з кольорами</caption>
       <caption xml:lang="x-test">xx"Colors" activityxx</caption>
+      <caption xml:lang="zh-CN">“颜色”活动</caption>
       <caption xml:lang="zh-TW">「顏色」遊戲</caption>
       <image width="1600" height="1040">https://gcompris.net/screenshots_qt/large/colors.png</image>
     </screenshot>
@@ -728,6 +732,7 @@
       <caption xml:lang="tr">"Aynı modeli inşa et" aktivite</caption>
       <caption xml:lang="uk">Вправа «Відтворіть модель»</caption>
       <caption xml:lang="x-test">xx"Build the same model" activityxx</caption>
+      <caption xml:lang="zh-CN">“建立相同的模型”活动</caption>
       <caption xml:lang="zh-TW">「建立相同的模型」遊戲</caption>
       <image width="1600" height="1040">https://gcompris.net/screenshots_qt/large/crane.png</image>
     </screenshot>
@@ -769,6 +774,7 @@
       <caption xml:lang="tr">"Nesneleri say" aktivite</caption>
       <caption xml:lang="uk">Вправа «Порахувати предмети»</caption>
       <caption xml:lang="x-test">xx"Count the items" activityxx</caption>
+      <caption xml:lang="zh-CN">“计数”活动</caption>
       <caption xml:lang="zh-TW">「數一數物品」遊戲</caption>
       <image width="1600" height="1040">https://gcompris.net/screenshots_qt/large/enumerate.png</image>
     </screenshot>
@@ -810,6 +816,7 @@
       <caption xml:lang="tr">"On beş oyun" aktivite</caption>
       <caption xml:lang="uk">Вправа «Гра „П'ятнадцять“»</caption>
       <caption xml:lang="x-test">xx"The fifteen game" activityxx</caption>
+      <caption xml:lang="zh-CN">“十五数字推盘”活动</caption>
       <caption xml:lang="zh-TW">「遊戲十五」</caption>
       <image width="1600" height="1040">https://gcompris.net/screenshots_qt/large/fifteen.png</image>
     </screenshot>
@@ -851,6 +858,7 @@
       <caption xml:lang="tr">"Altıgen" aktivite</caption>
       <caption xml:lang="uk">Вправа «Шестикутник»</caption>
       <caption xml:lang="x-test">xx"Hexagon" activityxx</caption>
+      <caption xml:lang="zh-CN">“六边形”活动</caption>
       <caption xml:lang="zh-TW">「六角形」遊戲</caption>
       <image width="1600" height="1040">https://gcompris.net/screenshots_qt/large/hexagon.png</image>
     </screenshot>
@@ -892,6 +900,7 @@
       <caption xml:lang="tr">"Teraziyi doğru şekilde dengele" aktivite</caption>
       <caption xml:lang="uk">Вправа «Рівновага на вагах»</caption>
       <caption xml:lang="x-test">xx"Balance the scales properly" activityxx</caption>
+      <caption xml:lang="zh-CN">“平衡天平”活动</caption>
       <caption xml:lang="zh-TW">「讓天平平衡」遊戲</caption>
       <image width="1600" height="1040">https://gcompris.net/screenshots_qt/large/scalesboard.png</image>
     </screenshot>
@@ -933,6 +942,7 @@
       <caption xml:lang="tr">"Santranç oyunu sona erdi" aktivite</caption>
       <caption xml:lang="uk">Вправа «Завершення гри у шахи»</caption>
       <caption xml:lang="x-test">xx"End of chess game" activityxx</caption>
+      <caption xml:lang="zh-CN">“国际象棋游戏”活动</caption>
       <caption xml:lang="zh-TW">「西洋棋殘局」遊戲</caption>
       <image width="1600" height="1040">https://gcompris.net/screenshots_qt/large/chess_partyend.png</image>
     </screenshot>
@@ -973,6 +983,7 @@
       <caption xml:lang="tr">"Kayan blok yap boz oyunu" aktivite</caption>
       <caption xml:lang="uk">Вправа «Головоломка з пересувними блоками»</caption>
       <caption xml:lang="x-test">xx"A sliding-block puzzle game" activityxx</caption>
+      <caption xml:lang="zh-CN">"滑块类游戏"活动</caption>
       <caption xml:lang="zh-TW">「滑動方塊」解謎遊戲</caption>
       <image width="1600" height="1040">https://gcompris.net/screenshots_qt/large/traffic.png</image>
     </screenshot>
