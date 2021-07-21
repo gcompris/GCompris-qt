@@ -123,7 +123,7 @@ var loopTutorialInstructions = [
             {
                 "instruction": "<b><h7>" + qsTr("Loop:") + "</h7></b>" +
                                     qsTr("<b>Loop</b> is a sequence of instructions that is <b>continually repeated the number of times defined by the number inside it</b>.") + "<li>" +
-                                    qsTr("-To <b>switch</b> between the <b>Loop area</b> and the <b>Main Function area</b> to add your code, click on the <b>Loops</b> or <b>Main Function</b> label.") + "</li>",
+                                    qsTr("-To <b>switch</b> between the <b>Loop area</b> and the <b>Main Function area</b> to add your code, click on the <b>Loop</b> or <b>Main Function</b> label.") + "</li>",
                 "instructionQml": "qrc:/gcompris/src/activities/programmingMaze/resource/tutorial4.qml"
             }
         ]
