@@ -19,7 +19,7 @@ Image {
     anchors.fill: parent
     fillMode: Image.PreserveAspectFit
     source: "qrc:/gcompris/src/activities/programmingMaze/resource/background-pm.svg"
-    property int levelNumber: 0
+    property int levelNumber: items.bar.level - 1
     property string activeAreaTuto: "instruction"
     property bool instructionTextVisible
     property bool mainVisible: false

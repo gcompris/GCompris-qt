@@ -280,7 +280,7 @@ ActivityBase {
 
         HeaderArea {
             id: procedureHeader
-            property string procedureText: items.currentLevelContainsProcedure ? qsTr("Procedure") + " ( )" : qsTr("Loops")
+            property string procedureText: items.currentLevelContainsProcedure ? qsTr("Procedure") + " ( )" : qsTr("Loop")
             headerText: procedureText
             headerOpacity: !background.insertIntoMain ? 1 : 0.5
             visible: procedureCodeArea.visible
@@ -332,6 +332,7 @@ ActivityBase {
                 MouseArea {
                     id: decreaseButtonArea
                     anchors.fill: parent
+                    enabled: items.isRunCodeEnabled
                     onClicked: {
                         if(loopCounterSelection.loopNumber == loopCounterSelection.minLoopNumber) {
                             loopCounterSelection.loopNumber = loopCounterSelection.maxLoopNumber
@@ -390,6 +391,7 @@ ActivityBase {
                 MouseArea {
                     id: increaseButtonArea
                     anchors.fill: parent
+                    enabled: items.isRunCodeEnabled
                     onClicked: {
                         if(loopCounterSelection.loopNumber == loopCounterSelection.maxLoopNumber) {
                             loopCounterSelection.loopNumber = loopCounterSelection.minLoopNumber
@@ -485,7 +487,7 @@ ActivityBase {
 
             Tutorial {
                 id:tutorialSection
-                tutorialDetails: tutorialImage.selectInstructionTutorial() //bar.level <= 2 ? Activity.mainTutorialInstructions : Activity.loopTutorialInstructions
+                tutorialDetails: tutorialImage.selectInstructionTutorial()
                 useImage: false
                 onSkipPressed: {
                     Activity.initLevel()
@@ -503,7 +505,7 @@ ActivityBase {
                     return "";
                 }
 
-                var nextLevel = items.bar.level
+                var nextLevel = items.bar.level - 1
                 var nextLevelInstructions = items.levels[nextLevel].instructions
                 if(nextLevelInstructions.indexOf(Activity.EXECUTE_LOOPS) !== -1) {
                     return Activity.loopTutorialInstructions;
