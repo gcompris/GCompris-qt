@@ -122,8 +122,8 @@ var procedureTutorialInstructions = [
 var loopTutorialInstructions = [
             {
                 "instruction": "<b><h7>" + qsTr("Loop:") + "</h7></b>" +
-                                    qsTr("<b>Loop</b> is a sequence of instructions that is <b>continually repeated a number of times depending on the loop number value</b>.") + "<li>" +
-                                    qsTr("-To <b>switch</b> between the <b>Loop area</b> and the <b>Main Function area</b> to add your code, click on the <b>Loops</b> or <b>Main Function</b> label.") + "</li>",
+                                    qsTr("<b>Loop</b> is a sequence of instructions that is <b>continually repeated the number of times defined by the number inside it</b>.") + "<li>" +
+                                    qsTr("-To <b>switch</b> between the <b>Loop area</b> and the <b>Main Function area</b> to add your code, click on the <b>Loop</b> or <b>Main Function</b> label.") + "</li>",
                 "instructionQml": "qrc:/gcompris/src/activities/programmingMaze/resource/tutorial4.qml"
             }
         ]
@@ -239,6 +239,10 @@ function initLevel() {
             items.tutorialImage.visible = true
         }
 
+        if(resetTux) {
+            loopsNumber = items.loopCounterSelection.loopNumber
+        }
+
         createLoopObjectAndInstructions()
     }
 
@@ -250,8 +254,8 @@ function initLevel() {
     if(!resetTux) {
         items.mainFunctionModel.clear()
         items.procedureModel.clear()
-        items.loopCounterSelection.loopNumber = loopsNumber
         items.numberOfInstructionsAdded = 0
+        items.loopCounterSelection.loopNumber = loopsNumber;
     }
 
     stepX = items.mazeModel.itemAt(0).width
