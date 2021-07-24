@@ -18,11 +18,11 @@ Steps to create country regions map:
 
 -find the best projection available for your country in https://epsg.io or https://spatialreference.org/
 
--convert the .geojson file to the selected projection with reproject (replace EPSG:3857 by the code of the projection you selected; check the manual of reproject for more details)
+-convert the .geojson file to the selected projection with reproject from https://www.npmjs.com/package/reproject (replace EPSG:3857 by the code of the projection you selected; check the manual of reproject for more details)
 example:
 cat OSMB-myFile.geojson | reproject --use-epsg-io --from=EPSG:4326 --to=EPSG:3857 > countryName.geojson
 
--convert the resulting .geojson file to svg with https://www.npmjs.com/package/geojson-to-svg
+-convert the resulting .geojson file to svg with geojson2svg from https://www.npmjs.com/package/geojson-to-svg
 example:
 ./geojson2svg --input countryName.geojson > countryName.svg
 
@@ -70,7 +70,10 @@ example:
 
 -install the inkscape extension "Export Layers GCompris", and use it to export all the layers to separated svg files and a text file with the coordinates for each region (they will be found after export in ~/.config/inkscape/extension/layers/ )
 
--copy the script convertSvgToSvgz.sh inside this layers folder and run it to convert all svg to svgz, then do rm -f *.svg to delete the svg and keep only the svgz files
+-optimize all the exported .svg files using svgo from https://www.npmjs.com/package/svgo
+example: svgo -f /path/to/svg/folder output/folder/
+
+-copy the script convertSvgToSvgz.sh inside the output folder and run it to convert all optimized svg to svgz, then do rm -f *.svg to delete the svg and keep only the svgz files
 
 -copy the source svgz file (with all the map and regions) in MapSources in geo-country, and copy the exported separated layer svgz files to a folder with the country name in resources
 
