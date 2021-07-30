@@ -16,8 +16,7 @@ import "../../programmingMaze.js" as Activity
 Instruction {
     id: executeLoopBody
 
-    //In case of while loops, counter is set to -1
-    //In case of for loops, counter is set to the number of loops entered by the user.
+    // Counter is set to the number of loops entered by the user.
     property int counter: Activity.loopsNumber
     property alias loopCode: loopCode
 

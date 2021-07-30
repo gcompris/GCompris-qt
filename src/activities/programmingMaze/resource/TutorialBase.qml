@@ -290,7 +290,7 @@ Image {
                     fontSizeMode: Text.Fit
                     wrapMode: Text.WordWrap
                     color: "#373737"
-                    text: Activity.LoopEnumValues.ONE_VALUE
+                    text: "1"
                 }
             }
 

@@ -75,8 +75,7 @@ var EAST = 270
 //Used to increment or decrement the loop counter, and display one as an initial value for the loop counter in the tutorial base.
 var LoopEnumValues = {
     PLUS_SIGN : "\u002B",
-    MINUS_SIGN : "\u2212",
-    ONE_VALUE: "\u0031"
+    MINUS_SIGN : "\u2212"
 }
 
 /**
