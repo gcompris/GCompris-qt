@@ -95,6 +95,18 @@ function initLevel() {
     // In case total number of levels are greater than the number of possibilities from 0.1 to 5.
     checkQuestionListCapacity(0.1, 5);
 
+    // In case all possible values from the provided range in the dataset are all displayed.
+    var isAllDisplayed = true;
+    for(var i = minimumValue; i <= maximumValue; i++) {
+        if(firstNumberList.indexOf(minimumValue) !== -1) {
+            isAllDisplayed = false;
+        }
+    }
+
+    if(isAllDisplayed) {
+        checkQuestionListCapacity(minimumValue, maximumValue);
+    }
+
     displayDecimalNumberQuestion()
 
     if(!items.isSubtractionMode) {
@@ -190,24 +202,25 @@ function generateFirstNumber() {
         maximumValue -= minimumValue;
     }
 
-    generatedNumber = generateDecimalNumbers(minimumValue, maximumValue);
-
-    while(firstNumberList.indexOf(generatedNumber) !== -1 || generatedNumber === 0) {
+    do {
         generatedNumber = generateDecimalNumbers(minimumValue, maximumValue);
     }
+    while(firstNumberList.indexOf(generatedNumber) !== -1);
+
     return generatedNumber;
 }
 
 function generateSecondNumber() {
     if(items.isAdditionMode) {
+        maximumValue = dataset[currentLevel].maxValue;
         maximumValue -= generatedNumber;
     }
 
-    generatedNumber = generateDecimalNumbers(minimumValue, maximumValue);
-
-    while(generatedNumber === 0) {
+    do {
         generatedNumber = generateDecimalNumbers(minimumValue, maximumValue);
     }
+    while(generatedNumber === firstNumber && items.isSubtractionMode);
+
     return generatedNumber;
 }
 
@@ -215,13 +228,8 @@ function displayDecimalNumberQuestion() {
     firstNumber = generateFirstNumber();
     secondNumber = generateSecondNumber();
 
+    // The first number must be greater than the second number to avoid having negative results.
     if(items.isSubtractionMode) {
-        // Avoid having zero as a result.
-        while(secondNumber === firstNumber) {
-            secondNumber = generateSecondNumber();
-        }
-
-        // The first number must be greater than the second number to avoid having negative results.
         if(firstNumber < secondNumber) {
             var temp = firstNumber;
             firstNumber = secondNumber;
