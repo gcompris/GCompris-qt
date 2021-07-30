@@ -291,7 +291,8 @@ function calculateCorrectAnswer() {
 }
 
 function verifyNumberTyping(typedAnswer) {
-    if(parseFloat(typedAnswer) === parseFloat(toDecimalLocaleNumber(correctAnswer))) {
+    typedAnswer = typedAnswer.replace("," , ".");
+    if(parseFloat(typedAnswer) === parseFloat(correctAnswer)) {
         items.bonus.good("flower");
     }
     else {
