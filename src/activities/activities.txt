@@ -133,6 +133,7 @@ ordering_chronology
 ordering_numbers
 ordering_sentences
 paintings
+path_decoding
 path_encoding
 path_encoding_relative
 penalty
