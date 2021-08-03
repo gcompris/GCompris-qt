@@ -133,6 +133,7 @@ ordering_chronology
 ordering_numbers
 ordering_sentences
 paintings
+path_encoding
 penalty
 photo_hunter
 piano_composition
