@@ -1,6 +1,6 @@
 License for the activity icons
 
-Copyright: Timothée Giet, 2015-2017
+Copyright: Timothée Giet, 2015-2021
 License: CC-BY-SA 4.0
 Files:
 advanced_colors.svg
@@ -12,13 +12,18 @@ algorithm.svg
 align4.svg
 align4-2players.svg
 alphabet-sequence.svg
+analog_electricity.svg
+baby_keyboard.svg
 baby_wordprocessor.svg
 babymatch.svg
+babyshapes
 ballcatch.svg
 bargame.svg
 bargame_2players.svg
+binary_bulb
 braille_alphabets.svg
 braille_fun.svg
+calendar.svg
 canal_lock.svg
 categorization.svg
 checkers.svg
@@ -36,28 +41,39 @@ color_mix.svg
 color_mix_light.svg
 colors.svg
 crane.svg
+digital_electricity.svg
 drawnumbers.svg
 enumerate.svg
 erase.svg
 erase_2clic.svg
 erase_clic.svg
 explore_farm_animals.svg
+family.svg
+family_find_relative.svg
 fifteen.svg
+find_the_day.svg
 followline.svg
 football.svg
+geo-country.svg
 gletters.svg
 gnumch-equality.svg
 gnumch-factors.svg
 gnumch-inequality.svg
 gnumch-multiples.svg
 gnumch-primes.svg
-guessnumber.svg
 gravity.svg
+guessnumber.svg
 hangman.svg
 hexagon.svg
 instruments.svg
 land_safe.svg
 lang.svg
+learn_additions.svg
+learn_decimals.svg
+learn_decimals_additions.svg
+learn_decimals_subtractions.svg
+learn_digits.svg
+learn_subtractions.svg
 leftright.svg
 lightsoff.svg
 louis-braille.svg
@@ -67,6 +83,8 @@ maze.svg
 mazeinvisible.svg
 mazerelative.svg
 memory.svg
+memory-case-association.svg
+memory-case-association-tux.svg
 memory-enumerate.svg
 memory-math-add.svg
 memory-math-add-minus.svg
@@ -92,9 +110,20 @@ money_back.svg
 money_back_cents.svg
 money_cents.svg
 mosaic.svg
-number-odd-even.svg
+note_names.svg
+numbers-odd-even.svg
+ordering_alphabets.svg
+ordering_chronology.svg
+ordering_numbers.svg
+ordering_sentences.svg
 penalty.svg
+piano_composition.svg
 planegame.svg
+play_piano.svg
+play_rhythm.svg
+positions.svg
+programmingMaze.svg
+railroad.svg
 readingh.svg
 readingv.svg
 redraw.svg
@@ -108,6 +137,8 @@ share.svg
 simplepaint.svg
 smallnumbers.svg
 smallnumbers2.svg
+solar_system.svg
+submarine.svg
 sudoku.svg
 target.svg
 tic_tac_toe.svg
@@ -162,3 +193,9 @@ geography.svg
 hanoi.svg
 hanoi_real.svg
 photo_hunter.svg
+
+Copyright: Johnny Jazeix, 2019
+License: CC-BY-SA 4.0
+Files:
+baby_tangram.svg
+
