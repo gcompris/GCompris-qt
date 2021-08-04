@@ -295,6 +295,18 @@ Image {
                         anchors.left: bottomBar.left
                         anchors.right: undefined
                     }
+                    PropertyChanges {
+                        target: redArrow
+                        height: topRectangleTutorial.height * 0.8
+                        rotation: 0
+                    }
+                    AnchorChanges {
+                        target: redArrow
+                        anchors.bottom: bottomBar.verticalCenter
+                        anchors.horizontalCenter: bottomBar.horizontalCenter
+                        anchors.left: undefined
+                        anchors.verticalCenter: undefined
+                    }
                 },
                 State {
                     when: !background.horizontalLayout
@@ -329,6 +341,18 @@ Image {
                         anchors.left: undefined
                         anchors.right: bottomBar.left
                     }
+                    PropertyChanges {
+                        target: redArrow
+                        height: topRectangleTutorial.width * 0.5
+                        rotation: 90
+                    }
+                    AnchorChanges {
+                        target: redArrow
+                        anchors.bottom: undefined
+                        anchors.horizontalCenter: undefined
+                        anchors.left: bottomBar.horizontalCenter
+                        anchors.verticalCenter: bottomBar.verticalCenter
+                    }
                 }
             ]
 
@@ -344,6 +368,14 @@ Image {
                 width: bottomBar.cellSize
                 height: width
                 sourceSize.width: width
+            }
+
+            Image {
+                id: redArrow
+                source: "qrc:/gcompris/src/activities/learn_decimals/resource/redArrow.svg"
+                sourceSize.height: height
+                fillMode: Image.PreserveAspectFit
+                visible: topRectangleTutorial.visible && !activity.isSubtractionMode
             }
         }
 
