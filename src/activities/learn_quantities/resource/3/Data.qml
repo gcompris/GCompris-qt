@@ -10,13 +10,13 @@
 import GCompris 1.0
 
 Data {
-    objective: qsTr("Between 20 and 50.")
-    difficulty: 3
+    objective: qsTr("Between 1 and 5.")
+    difficulty: 2
     data: [
         {
             "numberOfSubLevels": 5,
-            "minValue" : 20,
-            "maxValue" : 50
+            "minValue" : 1,
+            "maxValue" : 5
         }
     ]
 }

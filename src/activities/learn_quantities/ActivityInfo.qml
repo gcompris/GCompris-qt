@@ -7,7 +7,7 @@ import GCompris 1.0
 
 ActivityInfo {
   name: "learn_quantities/Learn_quantities.qml"
-  difficulty: 3
+  difficulty: 1
   icon: "learn_quantities/learn_quantities.svg"
   author: "Timothée Giet &lt;animtim@gmail.com&gt;"
   //: Activity title
@@ -26,5 +26,5 @@ ActivityInfo {
   credit: ""
   section: "math numeration"
   createdInVersion: 20000
-  levels: "1,2,3"
+  levels: "1,2,3,4,5,6,7"
 }
