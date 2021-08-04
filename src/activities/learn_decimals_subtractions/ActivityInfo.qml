@@ -7,7 +7,7 @@ import GCompris 1.0
 
 ActivityInfo {
   name: "learn_decimals_subtractions/Learn_decimals_subtractions.qml"
-  difficulty: 1
+  difficulty: 5
   icon: "learn_decimals_subtractions/learn_decimals_subtractions.svg"
   author: "Mariam Fahmy &lt;mariamfahmy66@gmail.com&gt;"
   //: Activity title

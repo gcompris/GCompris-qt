@@ -11,7 +11,7 @@ import GCompris 1.0
 
 Data {
     objective: qsTr("Between 0.1 and 1.")
-    difficulty: 3
+    difficulty: 5
     data: [
         // maxValue represents the maximum decimal number generated.
         {
