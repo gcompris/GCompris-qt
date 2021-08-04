@@ -11,9 +11,9 @@ ActivityInfo {
   icon: "learn_quantities/learn_quantities.svg"
   author: "Timothée Giet &lt;animtim@gmail.com&gt;"
   //: Activity title
-  title: "Learn quantities"
+  title: qsTr("Learn quantities")
   //: Help title
-  description: "Learn to represent a quantity of objects."
+  description: qsTr("Learn to represent a quantity of objects.")
   //intro: "Drag the arrow to select a number of oranges, and drag the oranges to the empty area to represent the requested quantity."
   //: Help goal
   goal: qsTr("Learn quantities by counting how many oranges are needed to represent the requested quantity.")
