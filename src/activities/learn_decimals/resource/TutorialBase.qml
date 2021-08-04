@@ -23,9 +23,7 @@ Image {
 
     property bool isRepresentationShown: false
     property bool isResultTyping: false
-    property bool isSubtractionMode: false
     property bool isSubtractionMode2: false
-    property bool isAdditionMode: false
 
     Item {
         id: layoutTutorial
@@ -33,7 +31,7 @@ Image {
         height: parent.paintedHeight
         anchors.centerIn: parent
 
-        readonly property string largestNumber: Activity.toDecimalLocaleNumber(1.5)
+        readonly property string largestNumber: activity.isQuantityMode ? "15" : Activity.toDecimalLocaleNumber(1.5)
         readonly property string smallestNumber: Activity.toDecimalLocaleNumber(0.3)
 
         Rectangle {
@@ -61,11 +59,14 @@ Image {
         }
 
         function displayQuestion() {
-            if(tutorialBase.isSubtractionMode) {
+            if(activity.isSubtractionMode) {
                 return decimalNumber.subtractionQuestion.arg(layoutTutorial.largestNumber).arg(layoutTutorial.smallestNumber)
             }
-            else if(tutorialBase.isAdditionMode) {
+            else if(activity.isAdditionMode) {
                 return decimalNumber.additionQuestion.arg(layoutTutorial.largestNumber).arg(layoutTutorial.smallestNumber)
+            }
+            else if(activity.isQuantityMode) {
+                return decimalNumber.quantityQuestion.arg(layoutTutorial.largestNumber)
             }
             else {
                 return decimalNumber.decimalQuestion.arg(layoutTutorial.largestNumber)
@@ -84,7 +85,7 @@ Image {
 
         Rectangle {
             id: topRectangleTutorial
-            visible: tutorialBase.isSubtractionMode || tutorialBase.isRepresentationShown
+            visible: activity.isSubtractionMode || tutorialBase.isRepresentationShown
             anchors.top: tutoLayoutArea.top
             color: "#F2F2F2"
             border.color: "#373737"
@@ -97,7 +98,7 @@ Image {
                     PropertyChanges {
                         target: topRectangleTutorial
                         width: tutoLayoutArea.width
-                        height: tutorialBase.isSubtractionMode ? tutoLayoutArea.height * 0.8 : tutoLayoutArea.height * 0.636
+                        height: activity.isSubtractionMode ? tutoLayoutArea.height * 0.8 : tutoLayoutArea.height * 0.636
                     }
                     AnchorChanges {
                         target: topRectangleTutorial
@@ -106,10 +107,10 @@ Image {
                     }
                     PropertyChanges {
                         target: firstBar
-                        cellSize: tutorialBase.isSubtractionMode ?
+                        cellSize: activity.isSubtractionMode ?
                             Math.min(topRectangleTutorial.height / 6, topRectangleTutorial.width / 11) :
                             Math.min(topRectangleTutorial.height / 7, topRectangleTutorial.width / 11)
-                        anchors.topMargin: tutorialBase.isSubtractionMode ? firstBar.cellSize * 0.14 :
+                        anchors.topMargin: activity.isSubtractionMode ? firstBar.cellSize * 0.14 :
                             firstBar.cellSize * 0.125
                         anchors.leftMargin: 0
                     }
@@ -122,7 +123,7 @@ Image {
                     }
                     PropertyChanges {
                         target: secondBar
-                        anchors.topMargin: tutorialBase.isSubtractionMode ? firstBar.cellSize * 0.14 :
+                        anchors.topMargin: activity.isSubtractionMode ? firstBar.cellSize * 0.14 :
                             firstBar.cellSize * 0.125
                         anchors.leftMargin: 0
                     }
@@ -138,7 +139,7 @@ Image {
                     when: !background.horizontalLayout && !tutorialBase.isResultTyping
                     PropertyChanges {
                         target: topRectangleTutorial
-                        width: tutorialBase.isSubtractionMode ? tutoLayoutArea.width : tutoLayoutArea.width * 0.636
+                        width: activity.isSubtractionMode ? tutoLayoutArea.width : tutoLayoutArea.width * 0.636
                         height: tutoLayoutArea.height * 0.8
                         anchors.rightMargin: 5 * ApplicationInfo.ratio
                     }
@@ -149,11 +150,11 @@ Image {
                     }
                     PropertyChanges {
                         target: firstBar
-                        cellSize: tutorialBase.isSubtractionMode ?
+                        cellSize: activity.isSubtractionMode ?
                             Math.min(topRectangleTutorial.width / 6, topRectangleTutorial.height / 11) :
                             Math.min(topRectangleTutorial.width / 7, topRectangleTutorial.height / 11)
                         anchors.topMargin: 0
-                        anchors.leftMargin: tutorialBase.isSubtractionMode ? firstBar.cellSize * 0.14 :
+                        anchors.leftMargin: activity.isSubtractionMode ? firstBar.cellSize * 0.14 :
                             firstBar.cellSize * 0.125
                     }
                     AnchorChanges {
@@ -166,7 +167,7 @@ Image {
                     PropertyChanges {
                         target: secondBar
                         anchors.topMargin: 0
-                        anchors.leftMargin: tutorialBase.isSubtractionMode ? firstBar.cellSize * 0.14 :
+                        anchors.leftMargin: activity.isSubtractionMode ? firstBar.cellSize * 0.14 :
                             firstBar.cellSize * 0.125
                     }
                     AnchorChanges {
@@ -181,7 +182,7 @@ Image {
                     when: !background.horizontalLayout && tutorialBase.isResultTyping
                     PropertyChanges {
                         target: topRectangleTutorial
-                        width: tutorialBase.isSubtractionMode ? tutoLayoutArea.width : tutoLayoutArea.width * 0.636
+                        width: activity.isSubtractionMode ? tutoLayoutArea.width : tutoLayoutArea.width * 0.636
                         height: tutoLayoutArea.height * 0.8
                         anchors.rightMargin: 5 * ApplicationInfo.ratio
                     }
@@ -192,11 +193,11 @@ Image {
                     }
                     PropertyChanges {
                         target: firstBar
-                        cellSize: tutorialBase.isSubtractionMode ?
+                        cellSize: activity.isSubtractionMode ?
                             Math.min(topRectangleTutorial.width / 6, topRectangleTutorial.height / 11) :
                             Math.min(topRectangleTutorial.width / 7, topRectangleTutorial.height / 11)
                         anchors.topMargin: 0
-                        anchors.leftMargin: tutorialBase.isSubtractionMode ? firstBar.cellSize * 0.14 :
+                        anchors.leftMargin: activity.isSubtractionMode ? firstBar.cellSize * 0.14 :
                             firstBar.cellSize * 0.125
                     }
                     AnchorChanges {
@@ -209,7 +210,7 @@ Image {
                     PropertyChanges {
                         target: secondBar
                         anchors.topMargin: 0
-                        anchors.leftMargin: tutorialBase.isSubtractionMode ? firstBar.cellSize * 0.14 :
+                        anchors.leftMargin: activity.isSubtractionMode ? firstBar.cellSize * 0.14 :
                             firstBar.cellSize * 0.125
                     }
                     AnchorChanges {
@@ -226,9 +227,9 @@ Image {
                 id: topBarsLayout
                 anchors.centerIn: topRectangleTutorial
                 width: background.horizontalLayout ? firstBar.cellSize * 10 :
-                        (tutorialBase.isSubtractionMode ? firstBar.cellSize * 6 :
+                        (activity.isSubtractionMode ? firstBar.cellSize * 6 :
                         firstBar.cellSize * 7)
-                height: background.horizontalLayout ? (tutorialBase.isSubtractionMode ?
+                height: background.horizontalLayout ? (activity.isSubtractionMode ?
                         firstBar.cellSize * 6 : firstBar.cellSize * 7) : firstBar.cellSize * 10
             }
 
@@ -242,15 +243,17 @@ Image {
                 cellSize: firstBar.cellSize
                 model: tutorialBase.isSubtractionMode2 ?
                 ["fill","fill","deleted","deleted","deleted","empty","empty","empty","empty","empty"] :
-                tutorialBase.isSubtractionMode ?
+                activity.isSubtractionMode ?
                 ["fill","fill","fill","fill","fill","empty","empty","empty","empty","empty"] :
-                ["fill","fill","fill","fill","fill","fill","fill","fill","none","none"]
+                activity.isAdditionMode ?
+                ["fill","fill","fill","fill","fill","fill","fill","fill","none","none"] :
+                ["fill","fill","fill","fill","fill","none","none","none","none","none"]
             }
         }
 
         Rectangle {
             id: bottomRectangleTutorial
-            visible: !tutorialBase.isSubtractionMode && !tutorialBase.isResultTyping
+            visible: !activity.isSubtractionMode && !tutorialBase.isResultTyping
             color: "#F2F2F2"
             border.color: "#373737"
             border.width: 1

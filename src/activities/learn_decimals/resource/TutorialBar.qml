@@ -48,7 +48,8 @@ Item {
             id: rowRepeater
 
             Image {
-                source: "qrc:/gcompris/src/activities/learn_decimals/resource/rectDark.svg"
+                source: activity.isQuantityMode ? "qrc:/gcompris/src/core/resource/empty.svg" :
+                    "qrc:/gcompris/src/activities/learn_decimals/resource/rectDark.svg"
                 width: tutorialBar.cellSize
                 height: width
                 sourceSize.width: width
@@ -56,11 +57,13 @@ Item {
 
                 Image {
                     id: whiteSquare
-                    source: "qrc:/gcompris/src/activities/learn_decimals/resource/rectWhite.svg"
+                    source: activity.isQuantityMode ? "qrc:/gcompris/src/activities/babyshapes/resource/food/orange.svg" :
+                        "qrc:/gcompris/src/activities/learn_decimals/resource/rectWhite.svg"
                     width: parent.width - 4
                     height: width
                     sourceSize.width: width
                     anchors.centerIn: parent
+                    opacity: activity.isQuantityMode ? 0.2 : 1
                 }
                 Image {
                     source: "qrc:/gcompris/src/activities/learn_decimals/resource/cross.svg"
@@ -71,7 +74,8 @@ Item {
                     visible: modelData === "deleted"
                 }
                 Image {
-                    source: "qrc:/gcompris/src/activities/learn_decimals/resource/rectFill.svg"
+                    source: activity.isQuantityMode ? "qrc:/gcompris/src/activities/babyshapes/resource/food/orange.svg" :
+                        "qrc:/gcompris/src/activities/learn_decimals/resource/rectFill.svg"
                     width: whiteSquare.width
                     height: width
                     sourceSize.width: width

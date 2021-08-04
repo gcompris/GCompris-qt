@@ -16,7 +16,7 @@ var generatedNumber;
 var minimumValue;
 var maximumValue;
 var firstNumber;
-var secondNumber;
+var secondNumber = 0;
 var squaresNumber = 10;
 var correctAnswer;
 var lastBarSquareUnits;
@@ -43,7 +43,7 @@ var subtractionInstructions = [
                 "instructionQml": "qrc:/gcompris/src/activities/learn_decimals/resource/tutorial4.qml"
             },
             {
-                "instruction": qsTr("If the result is correct, type the corresponding result, and click on the OK button to validate your answer."),
+                "instruction": qsTr("If the answer is correct, type the corresponding result, and click on the OK button to validate your answer."),
                 "instructionQml": "qrc:/gcompris/src/activities/learn_decimals/resource/tutorial5.qml"
             }
         ];
@@ -58,12 +58,21 @@ var additionInstructions = [
                 "instructionQml": "qrc:/gcompris/src/activities/learn_decimals/resource/tutorial7.qml"
             },
             {
-                "instruction": qsTr("If the result is correct, type the corresponding result, and click on the OK button to validate your answer."),
+                "instruction": qsTr("If the answer is correct, type the corresponding result, and click on the OK button to validate your answer."),
                 "instructionQml": "qrc:/gcompris/src/activities/learn_decimals/resource/tutorial8.qml"
             }
         ];
 
-
+var quantityInstructions = [
+            {
+                "instruction": qsTr("A quantity is requested. The arrow allows to select up to 10 oranges."),
+                "instructionQml": "qrc:/gcompris/src/activities/learn_decimals/resource/tutorial1.qml"
+            },
+            {
+                "instruction": qsTr("Drag the arrow to select a number of oranges, and drag the selected oranges to the empty area. Repeat these steps until the number of oranges corresponds to the requested quantity. Then click on the OK button to validate your answer."),
+                "instructionQml": "qrc:/gcompris/src/activities/learn_decimals/resource/tutorial2.qml"
+            }
+        ];
 
 function start(items_) {
     items = items_;
@@ -92,13 +101,15 @@ function initLevel() {
     minimumValue = dataset[currentLevel].minValue;
     maximumValue = dataset[currentLevel].maxValue;
 
-    // In case total number of levels are greater than the number of possibilities from 0.1 to 5.
-    checkQuestionListCapacity(0.1, 5);
+    // In case total number of levels are greater than the number of possibilities from 0.1 to 5,
+    // or from 1 to 50 for learn_quantities
+    checkQuestionListCapacity(1 * items.unit, 50 * items.unit);
 
     // In case all possible values from the provided range in the dataset are all displayed.
     var isAllDisplayed = true;
-    for(var i = minimumValue; i <= maximumValue; i++) {
-        if(firstNumberList.indexOf(minimumValue) !== -1) {
+
+    for(var i = minimumValue; i <= maximumValue; i += items.unit) {
+        if(firstNumberList.indexOf(i) !== -1) {
             isAllDisplayed = false;
         }
     }
@@ -169,7 +180,12 @@ function nextSubLevel() {
 }
 
 function checkQuestionListCapacity(minValue, maxValue) {
-    var maxSize = ((maxValue - minValue) * squaresNumber) + 1;
+    var maxSize = 1;
+
+    if(items.isQuantityMode)
+        maxSize = (maxValue - minValue) + 1;
+    else
+        maxSize = ((maxValue - minValue) * squaresNumber) + 1;
 
     if(firstNumberList.length >= maxSize) {
         var lastValue = firstNumberList[maxSize - 1];
@@ -226,7 +242,9 @@ function generateSecondNumber() {
 
 function displayDecimalNumberQuestion() {
     firstNumber = generateFirstNumber();
-    secondNumber = generateSecondNumber();
+
+    if(items.isAdditionMode || items.isSubtractionMode)
+        secondNumber = generateSecondNumber();
 
     // The first number must be greater than the second number to avoid having negative results.
     if(items.isSubtractionMode) {
@@ -240,8 +258,12 @@ function displayDecimalNumberQuestion() {
     // Storing the first decimal number in a list to avoid displaying the same number again for the rest of the levels.
     firstNumberList.push(firstNumber);
 
-    items.largestNumber = toDecimalLocaleNumber(firstNumber);
-    items.smallestNumber = toDecimalLocaleNumber(secondNumber);
+    if(items.isQuantityMode)
+        items.largestNumber = firstNumber.toString();
+    else {
+        items.largestNumber = toDecimalLocaleNumber(firstNumber);
+        items.smallestNumber = toDecimalLocaleNumber(secondNumber);
+    }
 }
 
 function verifyNumberRepresentation() {
@@ -263,7 +285,9 @@ function verifyNumberRepresentation() {
         }
     }
 
-    sum /= squaresNumber;
+    if(!items.isQuantityMode)
+        sum /= squaresNumber;
+
     if(sum === correctAnswer) {
         if(items.isSubtractionMode || items.isAdditionMode) {
             items.numpad.resetText();
@@ -310,7 +334,10 @@ function changeMultiBarVisibility(barIndex, currentSquareNumber) {
 
 function generateDecimalNumbers(minValue, maxValue) {
     var generatedNumber = Math.random() * (maxValue - minValue) + minValue;
-    return Math.round((generatedNumber + Number.EPSILON) * squaresNumber) / squaresNumber;
+    if(items.isQuantityMode)
+        return Math.round(generatedNumber);
+    else
+        return Math.round((generatedNumber + Number.EPSILON) * squaresNumber) / squaresNumber;
 }
 
 function toDecimalLocaleNumber(decimalNumber) {

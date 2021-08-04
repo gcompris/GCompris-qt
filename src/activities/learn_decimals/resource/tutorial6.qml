@@ -11,9 +11,7 @@ import QtQuick 2.9
 import GCompris 1.0
 
 TutorialBase {
-    id: tutorial5
+    id: tutorial6
     isRepresentationShown: false
     isResultTyping: false
-    isSubtractionMode: false
-    isAdditionMode: true
 }

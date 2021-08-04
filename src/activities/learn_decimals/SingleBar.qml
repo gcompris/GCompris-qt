@@ -64,7 +64,8 @@ GridView {
                     // helps to avoid it in most cases.
                     Image {
                         id: squareContainer
-                        source: "qrc:/gcompris/src/activities/learn_decimals/resource/rectDark.svg"
+                        source: items.isQuantityMode ? "qrc:/gcompris/src/core/resource/empty.svg" :
+                            "qrc:/gcompris/src/activities/learn_decimals/resource/rectDark.svg"
                         visible: singleBar.Drag.active && index >= selectedSquareNumbers ? false : true
                         width: singleBar.cellSize
                         height: width
@@ -72,11 +73,14 @@ GridView {
 
                         Image {
                             id: square
-                            source: index < selectedSquareNumbers ? "qrc:/gcompris/src/activities/learn_decimals/resource/rectFill.svg" : "qrc:/gcompris/src/activities/learn_decimals/resource/rectWhite.svg"
+                            source: items.isQuantityMode ? "qrc:/gcompris/src/activities/babyshapes/resource/food/orange.svg" :
+                                index < selectedSquareNumbers ? "qrc:/gcompris/src/activities/learn_decimals/resource/rectFill.svg" :
+                                "qrc:/gcompris/src/activities/learn_decimals/resource/rectWhite.svg"
                             width: singleBar.cellSize - 6
                             height: width
                             sourceSize.width: width
                             anchors.centerIn: parent
+                            opacity: items.isQuantityMode && index >= selectedSquareNumbers ? 0.2 : 1
                         }
                     }
                 }

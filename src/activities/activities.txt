@@ -79,10 +79,11 @@ instruments
 land_safe
 lang
 learn_additions
-learn_digits
 learn_decimals
 learn_decimals_additions
 learn_decimals_subtractions
+learn_digits
+learn_quantities
 learn_subtractions
 leftright
 letter-in-word

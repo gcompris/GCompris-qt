@@ -23,6 +23,7 @@ ActivityBase {
 
     property bool isSubtractionMode: false
     property bool isAdditionMode: false
+    property bool isQuantityMode: false
 
     pageComponent: Image {
         id: background
@@ -49,6 +50,7 @@ ActivityBase {
             property Item main: activity.main
             property bool isSubtractionMode: activity.isSubtractionMode
             property bool isAdditionMode: activity.isAdditionMode
+            property bool isQuantityMode: activity.isQuantityMode
             property alias background: background
             property alias bar: bar
             property alias bonus: bonus
@@ -64,6 +66,7 @@ ActivityBase {
             property string smallestNumber
             property bool helper: false
             property bool typeResult: false
+            property double unit: activity.isQuantityMode ? 1 : 0.1
         }
 
         onStart: {
@@ -81,7 +84,10 @@ ActivityBase {
             Tutorial {
                 id: tutorialSection
                 useImage: false
-                tutorialDetails: isSubtractionMode ? Activity.subtractionInstructions : isAdditionMode ? Activity.additionInstructions : Activity.tutorialInstructions
+                tutorialDetails: isSubtractionMode ? Activity.subtractionInstructions :
+                    isAdditionMode ? Activity.additionInstructions :
+                    isQuantityMode ? Activity.quantityInstructions :
+                    Activity.tutorialInstructions
                 onSkipPressed: {
                     Activity.initLevel()
                     tutorialImage.visible = false
@@ -103,12 +109,16 @@ ActivityBase {
             property string decimalQuestion: qsTr("Display the number: %1")
             property string additionQuestion: qsTr("Display the result of: %1 + %2")
             property string subtractionQuestion: qsTr("Display the result of: %1 - %2")
+            property string quantityQuestion: qsTr("Represent the quantity: %1")
 
             GCText {
                 anchors.centerIn: parent
                 width: parent.width - 10 * ApplicationInfo.ratio
                 height: parent.height
-                text: isSubtractionMode ? decimalNumber.subtractionQuestion.arg(items.largestNumber).arg(items.smallestNumber) : isAdditionMode ? decimalNumber.additionQuestion.arg(items.largestNumber).arg(items.smallestNumber) : decimalNumber.decimalQuestion.arg(items.largestNumber)
+                text: isSubtractionMode ? decimalNumber.subtractionQuestion.arg(items.largestNumber).arg(items.smallestNumber) :
+                    isAdditionMode ? decimalNumber.additionQuestion.arg(items.largestNumber).arg(items.smallestNumber) :
+                    isQuantityMode ? decimalNumber.quantityQuestion.arg(items.largestNumber) :
+                    decimalNumber.decimalQuestion.arg(items.largestNumber)
                 fontSizeMode: Text.Fit
                 wrapMode: Text.WordWrap
                 horizontalAlignment: Text.AlignHCenter
@@ -484,7 +494,8 @@ ActivityBase {
                     GCText {
                         id: text
                         fontSize: regularSize
-                        text: Activity.toDecimalLocaleNumber((scrollBar.currentStep + 1) / Activity.squaresNumber)
+                        text: activity.isQuantityMode ? scrollBar.currentStep + 1 :
+                            Activity.toDecimalLocaleNumber((scrollBar.currentStep + 1) * items.unit)
                         font.bold: true
                         color: "#373737"
                         fontSizeMode: Text.Fit
@@ -711,15 +722,9 @@ ActivityBase {
         Bar {
             id: bar
 
-            content: tutorialImage.visible ? tutorialBar : (items.isSubtractionMode || items.isAdditionMode) ? withConfig : withoutConfig
-
+            content: tutorialImage.visible ? tutorialBar : withConfig
             property BarEnumContent tutorialBar: BarEnumContent { value: help | home }
-
-            // Used in case of addition and subtraction mode.
             property BarEnumContent withConfig: BarEnumContent { value: help | home | level | activityConfig }
-
-            // Used in case of basic mode.
-            property BarEnumContent withoutConfig: BarEnumContent { value: help | home | level }
 
             onHelpClicked: {
                 displayDialog(dialogHelp)

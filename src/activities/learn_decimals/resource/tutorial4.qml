@@ -14,7 +14,5 @@ TutorialBase {
     id: tutorial4
     isRepresentationShown: true
     isResultTyping: false
-    isSubtractionMode: true
     isSubtractionMode2: true
-    isAdditionMode: false
 }
