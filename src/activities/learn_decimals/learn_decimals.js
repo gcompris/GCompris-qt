@@ -82,7 +82,7 @@ function start(items_) {
     items.score.currentSubLevel = 1;
     firstNumberList = [];
 
-    if(items.tutorialImage.visible) {
+    if(!items.tutorialImage.visible) {
         initLevel();
     }
 }
