@@ -109,7 +109,7 @@ function initLevel() {
     var isAllDisplayed = true;
 
     for(var i = minimumValue; i <= maximumValue; i += items.unit) {
-        if(firstNumberList.indexOf(i) !== -1) {
+        if(firstNumberList.indexOf(i) == -1) {
             isAllDisplayed = false;
         }
     }
