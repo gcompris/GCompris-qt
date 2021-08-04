@@ -11,7 +11,7 @@ import GCompris 1.0
 
 Data {
     objective: qsTr("Subtract decimal numbers up to 3.")
-    difficulty: 2
+    difficulty: 3
     data: [
         // maxValue represents the maximum decimal number generated.
         {
