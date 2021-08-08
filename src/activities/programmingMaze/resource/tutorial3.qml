@@ -1,4 +1,4 @@
-/* GCompris - tutorial1.qml
+/* GCompris - tutorial3.qml
  *
  * SPDX-FileCopyrightText: 2021 Timothée Giet <animtim@gcompris.net>
  *
@@ -11,8 +11,6 @@ import QtQuick 2.9
 import GCompris 1.0
 
 TutorialBase {
-    //the level to fetch info from
-    levelNumber: 5
     //the highlighted area
     activeAreaTuto: "procedure"
     instructionTextVisible: false

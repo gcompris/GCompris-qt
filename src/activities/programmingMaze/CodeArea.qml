@@ -105,7 +105,7 @@ GridView {
     }
 
     function appendInstruction() {
-        if(background.insertIntoMain || (instructionArea.instructionToInsert != "call-procedure")) {
+        if(background.insertIntoMain || (instructionArea.instructionToInsert != "call-procedure") || (instructionArea.instructionToInsert != "execute-loops")) {
             currentModel.append({ "name": instructionArea.instructionToInsert })
             items.numberOfInstructionsAdded++
             instructionArea.instructionToInsert = ""
@@ -164,7 +164,7 @@ GridView {
     MouseArea {
         id: codeAreaMouse
         anchors.fill: parent
-        enabled: items.isTuxMouseAreaEnabled || items.isRunCodeEnabled
+        enabled: items.isRunCodeEnabled
         onPressed: {
             codeArea.currentIndex = -1
             codeArea.draggedItemIndex = codeArea.indexAt(mouseX,mouseY)

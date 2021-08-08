@@ -35,8 +35,6 @@ ActivityBase {
     }
 
     property bool keyboardNavigationVisible: false
-    property string mode: "basic"
-    property string datasetUrl: "qrc:/gcompris/src/activities/programmingMaze/Dataset.qml"
 
     pageComponent: Image {
         id: background
@@ -66,6 +64,7 @@ ActivityBase {
             property alias bar: bar
             property alias bonus: bonus
             property GCSfx audioEffects: activity.audioEffects
+            property var levels: activity.datasetLoader.data
             property alias mazeModel: mazeModel
             property alias instructionModel: instructionModel
             property alias mainFunctionModel: mainFunctionModel
@@ -77,10 +76,10 @@ ActivityBase {
             property alias constraintInstruction: constraintInstruction
             property alias tutorialImage: tutorialImage
             property alias fish: fish
-            property alias dataset: dataset
+            property alias loopCounterSelection: loopCounterSelection
             property bool isRunCodeEnabled: true
-            property bool isTuxMouseAreaEnabled: false
             property bool currentLevelContainsProcedure
+            property bool currentLevelContainsLoop
             property int maxNumberOfInstructionsAllowed
             property int numberOfInstructionsAdded
         }
@@ -99,14 +98,14 @@ ActivityBase {
             id: dataset
         }
 
-        onStart: { Activity.start(items, mode, datasetUrl) }
+        onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
 
         property var areaWithKeyboardInput: instructionArea
 
         onAreaWithKeyboardInputChanged: activeCodeAreaIndicator.changeActiveCodeAreaIndicator(areaWithKeyboardInput)
 
-        Keys.enabled: items.isTuxMouseAreaEnabled || items.isRunCodeEnabled
+        Keys.enabled: items.isRunCodeEnabled
         Keys.onPressed: {
             activity.keyboardNavigationVisible = true
             if(event.key === Qt.Key_Left)
@@ -123,7 +122,7 @@ ActivityBase {
                 runCodeOrResetTux()
             if(event.key === Qt.Key_Tab)
                 areaWithKeyboardInput.tabKeyPressed()
-            if(event.key === Qt.Key_Delete && activeCodeAreaIndicator.top != instructionArea.top) {
+            if(event.key === Qt.Key_Delete && activeCodeAreaIndicator.top !== instructionArea.top) {
                 areaWithKeyboardInput.deleteKeyPressed()
             }
         }
@@ -143,6 +142,8 @@ ActivityBase {
             id: mainFunctionModel
         }
 
+        //If mode is "procedures", then this model will store instructions exist in the procedure area.
+        //If mode is "loops", then this model will store Instructions exist in the loop area.
         ListModel {
             id: procedureModel
         }
@@ -186,10 +187,9 @@ ActivityBase {
                 fontSizeMode: Text.Fit
                 wrapMode: Text.WordWrap
 
-                readonly property string resetTuxInstructionText: qsTr("Click on Tux or press the Enter key to reset it or click on the RELOAD button to reload the level.")
                 readonly property string constraintInstructionText: qsTr("Reach the fish in less than %1 instructions.").arg(items.maxNumberOfInstructionsAllowed + 1)
 
-                text: items.isTuxMouseAreaEnabled ? resetTuxInstructionText : constraintInstructionText
+                text: constraintInstructionText
             }
         }
 
@@ -228,15 +228,6 @@ ActivityBase {
             property int duration: 1000
             readonly property real playerCenterX: x + width / 2
             readonly property real playerCenterY: y + height / 2
-
-            MouseArea {
-                id: tuxMouseArea
-                anchors.fill: parent
-                enabled: items.isTuxMouseAreaEnabled
-                onClicked: {
-                    Activity.initLevel()
-                }
-            }
         }
 
         Rectangle {
@@ -289,7 +280,7 @@ ActivityBase {
 
         HeaderArea {
             id: procedureHeader
-            property string procedureText: qsTr("Procedure") + " ( )"
+            property string procedureText: items.currentLevelContainsProcedure ? qsTr("Procedure") + " ( )" : qsTr("Loop")
             headerText: procedureText
             headerOpacity: !background.insertIntoMain ? 1 : 0.5
             visible: procedureCodeArea.visible
@@ -298,12 +289,129 @@ ActivityBase {
             anchors.right: parent.right
         }
 
+        Item {
+            id: loopCounterSelection
+            visible: items.currentLevelContainsLoop ? true : false
+            width: background.buttonWidth * 3
+            height: background.buttonHeight
+            anchors.top: procedureHeader.bottom
+            anchors.horizontalCenter: procedureHeader.horizontalCenter
+
+            signal setLoopNumber()
+            onSetLoopNumber: {
+                Activity.loopsNumber = loopCounterSelection.loopNumber
+                Activity.createLoopObjectAndInstructions()
+            }
+
+            readonly property int minLoopNumber: 1
+            readonly property int maxLoopNumber: 9
+
+            property int loopNumber: minLoopNumber
+
+            Rectangle {
+                id: decreaseButton
+                width: parent.width * 0.3
+                height: parent.height
+                anchors.left: parent.left
+                anchors.leftMargin: 1.2 * ApplicationInfo.ratio
+                border.width: 1.2 * ApplicationInfo.ratio
+                border.color: "grey"
+                radius: decreaseButton.width * 0.1
+
+                GCText {
+                    id: decreaseSign
+                    anchors.fill: parent
+                    horizontalAlignment: Text.AlignHCenter
+                    verticalAlignment: Text.AlignVCenter
+                    fontSizeMode: Text.Fit
+                    wrapMode: Text.WordWrap
+                    color: "#373737"
+                    text: Activity.LoopEnumValues.MINUS_SIGN
+                }
+
+                MouseArea {
+                    id: decreaseButtonArea
+                    anchors.fill: parent
+                    enabled: items.isRunCodeEnabled
+                    onClicked: {
+                        if(loopCounterSelection.loopNumber == loopCounterSelection.minLoopNumber) {
+                            loopCounterSelection.loopNumber = loopCounterSelection.maxLoopNumber
+                        }
+                        else {
+                            loopCounterSelection.loopNumber--
+                        }
+                        loopCounterSelection.setLoopNumber()
+                    }
+                }
+            }
+
+            Rectangle {
+                id: loopCounter
+                width: parent.width * 0.3
+                height: parent.height
+                anchors.left: decreaseButton.right
+                anchors.leftMargin: 1.2 * ApplicationInfo.ratio
+                border.width: 1.2 * ApplicationInfo.ratio
+                border.color: "grey"
+                radius: loopCounter.width * 0.1
+
+                GCText {
+                    id: loopCounterText
+                    anchors.fill: parent
+                    horizontalAlignment: Text.AlignHCenter
+                    verticalAlignment: Text.AlignVCenter
+                    fontSizeMode: Text.Fit
+                    wrapMode: Text.WordWrap
+                    color: "#373737"
+                    text: loopCounterSelection.loopNumber
+                }
+            }
+
+            Rectangle {
+                id: increaseButton
+                width: parent.width * 0.3
+                height: parent.height
+                anchors.left: loopCounter.right
+                anchors.leftMargin: 1.2 * ApplicationInfo.ratio
+                border.width: 1.2 * ApplicationInfo.ratio
+                border.color: "grey"
+                radius: increaseButton.width * 0.1
+
+                GCText {
+                    id: increaseSign
+                    anchors.fill: parent
+                    horizontalAlignment: Text.AlignHCenter
+                    verticalAlignment: Text.AlignVCenter
+                    fontSizeMode: Text.Fit
+                    wrapMode: Text.WordWrap
+                    color: "#373737"
+                    text: Activity.LoopEnumValues.PLUS_SIGN
+                }
+
+                MouseArea {
+                    id: increaseButtonArea
+                    anchors.fill: parent
+                    enabled: items.isRunCodeEnabled
+                    onClicked: {
+                        if(loopCounterSelection.loopNumber == loopCounterSelection.maxLoopNumber) {
+                            loopCounterSelection.loopNumber = loopCounterSelection.minLoopNumber
+                        }
+                        else {
+                            loopCounterSelection.loopNumber++
+                        }
+                        loopCounterSelection.setLoopNumber()
+                    }
+                }
+            }
+        }
+
         CodeArea {
             id: procedureCodeArea
+            height: items.currentLevelContainsLoop ? background.height * 0.29 - loopCounterSelection.height : background.height * 0.29
             currentModel: procedureModel
             anchors.right: parent.right
-            anchors.top: procedureHeader.bottom
-            visible: items.currentLevelContainsProcedure
+            anchors.top: items.currentLevelContainsLoop ? loopCounterSelection.bottom : procedureHeader.bottom
+            visible: items.currentLevelContainsProcedure || items.currentLevelContainsLoop ? true : false
 
             property alias procedureIterator: procedureCodeArea.currentIndex
 
@@ -375,10 +483,11 @@ ActivityBase {
             visible: true
 
             property bool shownProcedureTutorialInstructions: false
+            property bool shownLoopTutorialInstructions: false
 
             Tutorial {
                 id:tutorialSection
-                tutorialDetails: bar.level <= 2 ? Activity.mainTutorialInstructions : Activity.procedureTutorialInstructions
+                tutorialDetails: tutorialImage.selectInstructionTutorial()
                 useImage: false
                 onSkipPressed: {
                     Activity.initLevel()
@@ -387,8 +496,26 @@ ActivityBase {
                 }
             }
             onVisibleChanged: {
-                if(tutorialImage.visible && tutorialImage.shownProcedureTutorialInstructions)
+                if(tutorialImage.visible && (tutorialImage.shownProcedureTutorialInstructions || tutorialImage.shownLoopTutorialInstructions))
                     tutorialSection.visible = true
+            }
+
+            function selectInstructionTutorial() {
+                if(!tutorialSection.visible) {
+                    return "";
+                }
+
+                var nextLevel = items.bar.level - 1
+                var nextLevelInstructions = items.levels[nextLevel].instructions
+                if(nextLevelInstructions.indexOf(Activity.EXECUTE_LOOPS) !== -1) {
+                    return Activity.loopTutorialInstructions;
+                }
+
+                if(nextLevelInstructions.indexOf(Activity.CALL_PROCEDURE) !== -1) {
+                    return Activity.procedureTutorialInstructions;
+                }
+
+                return Activity.mainTutorialInstructions;
             }
         }
 
@@ -397,9 +524,27 @@ ActivityBase {
             onClose: home()
         }
 
+        DialogChooseLevel {
+            id: dialogActivityConfig
+            currentActivity: activity.activityInfo
+
+            onSaveData: {
+                levelFolder = dialogActivityConfig.chosenLevels
+                currentActivity.currentLevels = dialogActivityConfig.chosenLevels
+                ApplicationSettings.setCurrentLevels(currentActivity.name, dialogActivityConfig.chosenLevels)
+            }
+            onClose: {
+                home()
+            }
+            onStartActivity: {
+                background.stop()
+                background.start()
+            }
+        }
+
         Bar {
             id: bar
-            content: BarEnumContent { value: tutorialImage.visible ? help | home : help | home | level | reload }
+            content: BarEnumContent { value: tutorialImage.visible ? help | home : help | home | level | reload | activityConfig}
             onHelpClicked: {
                 displayDialog(dialogHelp)
             }
@@ -411,11 +556,17 @@ ActivityBase {
                 activity.home();
             }
             onReloadClicked: Activity.reloadLevel()
+            onActivityConfigClicked: {
+                displayDialog(dialogActivityConfig)
+            }
         }
 
         Bonus {
             id: bonus
-            Component.onCompleted: win.connect(Activity.nextLevel)
+            Component.onCompleted: {
+                win.connect(Activity.nextLevel)
+                loose.connect(Activity.resetTuxPosition)
+            }
         }
     }
 }

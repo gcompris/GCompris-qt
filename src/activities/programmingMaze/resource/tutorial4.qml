@@ -1,19 +1,21 @@
-/* GCompris - tutorial2.qml
+/* GCompris - tutorial4.qml
  *
- * SPDX-FileCopyrightText: 2021 Timothée Giet <animtim@gcompris.net>
+ * SPDX-FileCopyrightText: 2021 Mariam Fahmy <mariamfahmy66@gmail.com>
  *
  * Authors:
- *   Timothée Giet <animtim@gcompris.net>
+ *   Mariam Fahmy <mariamfahmy66@gmail.com>
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
+
 import QtQuick 2.9
 import GCompris 1.0
 
 TutorialBase {
     //the highlighted area
-    activeAreaTuto: "main"
+    activeAreaTuto: "loop"
     instructionTextVisible: false
     mainVisible: true
     procedureVisible: false
+    loopVisible: true
 }

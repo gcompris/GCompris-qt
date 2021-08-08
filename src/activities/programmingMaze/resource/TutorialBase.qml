@@ -1,4 +1,4 @@
-/* GCompris - tutorial1.qml
+/* GCompris - TutorialBase.qml
  *
  * SPDX-FileCopyrightText: 2021 Timothée Giet <animtim@gcompris.net>
  *
@@ -8,7 +8,7 @@
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
 import QtQuick 2.9
-import GCompris 1.0 
+import GCompris 1.0
 
 import "../../../core"
 import "../"
@@ -19,11 +19,12 @@ Image {
     anchors.fill: parent
     fillMode: Image.PreserveAspectFit
     source: "qrc:/gcompris/src/activities/programmingMaze/resource/background-pm.svg"
-    property int levelNumber: 0
+    property int levelNumber: items.bar.level - 1
     property string activeAreaTuto: "instruction"
     property bool instructionTextVisible
     property bool mainVisible: false
     property bool procedureVisible: false
+    property bool loopVisible: false
 
     Item {
         id: layoutTuto
@@ -40,7 +41,7 @@ Image {
             id: mazeModelTuto
             anchors.left: layoutTuto.left
             anchors.top: layoutTuto.top
-            model: items.dataset.item.levels[levelNumber].map
+            model: items.levels[levelNumber].map
 
             Image {
                 id: iceBlockTuto
@@ -57,8 +58,8 @@ Image {
             width: layoutTuto.width / 12
             sourceSize.width: width
             source: Activity.reverseCountUrl + "fish-blue.svg"
-            x: items.dataset.item.levels[levelNumber].fish.x * layoutTuto.stepX + (layoutTuto.stepX - width) / 2
-            y: items.dataset.item.levels[levelNumber].fish.y * layoutTuto.stepY + (layoutTuto.stepY - height) / 2
+            x: items.levels[levelNumber].fish.x * layoutTuto.stepX + (layoutTuto.stepX - width) / 2
+            y: items.levels[levelNumber].fish.y * layoutTuto.stepY + (layoutTuto.stepY - height) / 2
         }
 
         Image {
@@ -67,8 +68,8 @@ Image {
             width: fishTuto.width
             sourceSize.width: width
             rotation: 270
-            x: items.dataset.item.levels[levelNumber].map[0].x * layoutTuto.stepX + (layoutTuto.stepX - width) / 2
-            y: items.dataset.item.levels[levelNumber].map[0].y * layoutTuto.stepY + (layoutTuto.stepY - height) / 2
+            x: items.levels[levelNumber].map[0].x * layoutTuto.stepX + (layoutTuto.stepX - width) / 2
+            y: items.levels[levelNumber].map[0].y * layoutTuto.stepY + (layoutTuto.stepY - height) / 2
         }
 
         Rectangle {
@@ -148,6 +149,13 @@ Image {
         }
 
         ListModel {
+            id: mainFunctionModelTuto3
+            ListElement {
+                name: "execute-loops"
+            }
+        }
+
+        ListModel {
             id: procedureModelTuto
             ListElement {
                 name: "move-forward"
@@ -184,7 +192,7 @@ Image {
             anchors.top: mainFunctionHeaderTuto.bottom
 
             interactive: false
-            model: activeAreaTuto === "procedure" ? mainFunctionModelTuto2 : mainFunctionModelTuto1
+            model: activeAreaTuto === "procedure" ? mainFunctionModelTuto2 : (activeAreaTuto === "loop" ? mainFunctionModelTuto3 : mainFunctionModelTuto1)
 
             delegate: Item {
                     id: mainItemTuto
@@ -229,27 +237,102 @@ Image {
             width: parent.width * 0.4
             height: parent.height / 10
             radius: 4 * ApplicationInfo.ratio
-            visible: procedureVisible
+            visible: procedureVisible || loopVisible
             anchors.top: mainFunctionCodeAreaTuto.bottom
             anchors.right: parent.right
         }
 
+        Item {
+            id: loopCounterTuto
+            visible: loopVisible
+            width: layoutTuto.buttonWidth * 3
+            height: layoutTuto.buttonHeight
+            anchors.top: procedureHeaderTuto.bottom
+            anchors.horizontalCenter: procedureHeaderTuto.horizontalCenter
+
+            Rectangle {
+                id: decreaseButton
+                width: parent.width * 0.3
+                height: parent.height
+                anchors.left: parent.left
+                anchors.leftMargin: 1.2 * ApplicationInfo.ratio
+                border.width: 1.2 * ApplicationInfo.ratio
+                border.color: "grey"
+                radius: decreaseButton.width * 0.1
+
+                GCText {
+                    id: decreaseSign
+                    anchors.fill: parent
+                    horizontalAlignment: Text.AlignHCenter
+                    verticalAlignment: Text.AlignVCenter
+                    fontSizeMode: Text.Fit
+                    wrapMode: Text.WordWrap
+                    color: "#373737"
+                    text: Activity.LoopEnumValues.MINUS_SIGN
+                }
+            }
+
+            Rectangle {
+                id: loopCounter
+                width: parent.width * 0.3
+                height: parent.height
+                anchors.left: decreaseButton.right
+                anchors.leftMargin: 1.2 * ApplicationInfo.ratio
+                border.width: 1.2 * ApplicationInfo.ratio
+                border.color: "grey"
+                radius: loopCounter.width * 0.1
+
+                GCText {
+                    id: loopCounterText
+                    anchors.fill: parent
+                    horizontalAlignment: Text.AlignHCenter
+                    verticalAlignment: Text.AlignVCenter
+                    fontSizeMode: Text.Fit
+                    wrapMode: Text.WordWrap
+                    color: "#373737"
+                    text: "1"
+                }
+            }
+
+            Rectangle {
+                id: increaseButton
+                width: parent.width * 0.3
+                height: parent.height
+                anchors.left: loopCounter.right
+                anchors.leftMargin: 1.2 * ApplicationInfo.ratio
+                border.width: 1.2 * ApplicationInfo.ratio
+                border.color: "grey"
+                radius: increaseButton.width * 0.1
+
+                GCText {
+                    id: increaseSign
+                    anchors.fill: parent
+                    horizontalAlignment: Text.AlignHCenter
+                    verticalAlignment: Text.AlignVCenter
+                    fontSizeMode: Text.Fit
+                    wrapMode: Text.WordWrap
+                    color: "#373737"
+                    text: Activity.LoopEnumValues.PLUS_SIGN
+                }
+            }
+        }
+
         GridView {
             id: procedureCodeAreaTuto
-            visible: procedureVisible
+            visible: procedureVisible || loopVisible
             width: parent.width * 0.4
             height: parent.height * 0.29
             cellWidth: layoutTuto.buttonWidth
             cellHeight: layoutTuto.buttonHeight
 
             anchors.right: parent.right
-            anchors.top: procedureHeaderTuto.bottom
+            anchors.top: loopVisible ? loopCounterTuto.bottom : procedureHeaderTuto.bottom
 
             interactive: false
             model: procedureModelTuto
 
             delegate: Item {
-                    id: mainItemTuto
+                    id: procedureItemTuto
                     width: layoutTuto.buttonWidth
                     height: layoutTuto.buttonHeight
 
@@ -342,4 +425,3 @@ Image {
 
     }
 }
-

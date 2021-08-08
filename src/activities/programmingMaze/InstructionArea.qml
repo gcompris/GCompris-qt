@@ -95,7 +95,7 @@ GridView {
         MouseArea {
             id: mouseArea
             anchors.fill: parent
-            enabled: (items.isTuxMouseAreaEnabled || items.isRunCodeEnabled) && ((items.numberOfInstructionsAdded < items.maxNumberOfInstructionsAllowed) || procedureCodeArea.isEditingInstruction || mainFunctionCodeArea.isEditingInstruction)
+            enabled: items.isRunCodeEnabled && ((items.numberOfInstructionsAdded < items.maxNumberOfInstructionsAllowed) || procedureCodeArea.isEditingInstruction || mainFunctionCodeArea.isEditingInstruction)
 
             onPressed: instructionItem.checkModelAndInsert()
         }
@@ -108,7 +108,7 @@ GridView {
             else {
                 if(mainFunctionCodeArea.isEditingInstruction)
                     insertIntoModel(mainFunctionModel, mainFunctionCodeArea)
-                if(procedureCodeArea.isEditingInstruction && (name != Activity.CALL_PROCEDURE))
+                if(procedureCodeArea.isEditingInstruction && (name !== Activity.CALL_PROCEDURE) && (name !== Activity.EXECUTE_LOOPS))
                     insertIntoModel(procedureModel, procedureCodeArea)
             }
         }
@@ -117,7 +117,7 @@ GridView {
             if(items.constraintInstruction.opacity)
                 items.constraintInstruction.hide()
 
-            if(!background.insertIntoMain && (name != Activity.CALL_PROCEDURE))
+            if(!background.insertIntoMain && (name !== Activity.CALL_PROCEDURE) && (name !== Activity.EXECUTE_LOOPS))
                 insertIntoModel(procedureModel, procedureCodeArea)
             else if(background.insertIntoMain)
                 insertIntoModel(mainFunctionModel, mainFunctionCodeArea)
