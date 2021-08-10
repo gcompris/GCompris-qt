@@ -291,8 +291,8 @@ ActivityBase {
         Item {
             id: loopCounterSelection
             visible: items.currentLevelContainsLoop ? true : false
-            width: background.buttonWidth * 3
-            height: background.buttonHeight
+            width: procedureHeader.width * 0.75
+            height: background.buttonHeight * 1.1
             anchors.top: procedureHeader.bottom
             anchors.horizontalCenter: procedureHeader.horizontalCenter
 
@@ -310,9 +310,9 @@ ActivityBase {
             Rectangle {
                 id: decreaseButton
                 width: parent.width * 0.3
-                height: parent.height
+                height: background.buttonHeight
                 anchors.left: parent.left
-                anchors.leftMargin: 1.2 * ApplicationInfo.ratio
+                anchors.verticalCenter: parent.verticalCenter
                 border.width: 1.2 * ApplicationInfo.ratio
                 border.color: "grey"
                 radius: decreaseButton.width * 0.1
@@ -333,6 +333,7 @@ ActivityBase {
                     anchors.fill: parent
                     enabled: items.isRunCodeEnabled
                     onClicked: {
+                        decreaseAnimation.restart()
                         if(loopCounterSelection.loopNumber == loopCounterSelection.minLoopNumber) {
                             loopCounterSelection.loopNumber = loopCounterSelection.maxLoopNumber
                         }
@@ -342,14 +343,30 @@ ActivityBase {
                         loopCounterSelection.setLoopNumber()
                     }
                 }
+                SequentialAnimation {
+                    id: decreaseAnimation
+                    PropertyAnimation {
+                        target: decreaseButton
+                        property: "scale"
+                        to: 0.8
+                        duration: 150
+                    }
+
+                    PropertyAnimation {
+                        target: decreaseButton
+                        property: "scale"
+                        to: 1
+                        duration: 150
+                    }
+                }
             }
 
             Rectangle {
                 id: loopCounter
                 width: parent.width * 0.3
-                height: parent.height
-                anchors.left: decreaseButton.right
-                anchors.leftMargin: 1.2 * ApplicationInfo.ratio
+                height: background.buttonHeight
+                anchors.horizontalCenter: parent.horizontalCenter
+                anchors.verticalCenter: parent.verticalCenter
                 border.width: 1.2 * ApplicationInfo.ratio
                 border.color: "grey"
                 radius: loopCounter.width * 0.1
@@ -369,9 +386,9 @@ ActivityBase {
             Rectangle {
                 id: increaseButton
                 width: parent.width * 0.3
-                height: parent.height
-                anchors.left: loopCounter.right
-                anchors.leftMargin: 1.2 * ApplicationInfo.ratio
+                height: background.buttonHeight
+                anchors.right: parent.right
+                anchors.verticalCenter: parent.verticalCenter
                 border.width: 1.2 * ApplicationInfo.ratio
                 border.color: "grey"
                 radius: increaseButton.width * 0.1
@@ -392,6 +409,7 @@ ActivityBase {
                     anchors.fill: parent
                     enabled: items.isRunCodeEnabled
                     onClicked: {
+                        increaseAnimation.restart()
                         if(loopCounterSelection.loopNumber == loopCounterSelection.maxLoopNumber) {
                             loopCounterSelection.loopNumber = loopCounterSelection.minLoopNumber
                         }
@@ -399,6 +417,22 @@ ActivityBase {
                             loopCounterSelection.loopNumber++
                         }
                         loopCounterSelection.setLoopNumber()
+                    }
+                }
+                SequentialAnimation {
+                    id: increaseAnimation
+                    PropertyAnimation {
+                        target: increaseButton
+                        property: "scale"
+                        to: 0.8
+                        duration: 150
+                    }
+
+                    PropertyAnimation {
+                        target: increaseButton
+                        property: "scale"
+                        to: 1
+                        duration: 150
                     }
                 }
             }
