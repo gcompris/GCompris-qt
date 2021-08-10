@@ -13,9 +13,9 @@ import "path.js" as Activity
 
 Rectangle {
     id: moveBar
-    color: "lightblue"
+    color: "#55000000"
     border.color: "white"
-    border.width: 0.01 * width
+    border.width: 4
     radius: ApplicationInfo.ratio * 10
 
     property double buttonWidth: Math.min(ApplicationInfo.ratio * 50, width / 4.5)
@@ -36,20 +36,17 @@ Rectangle {
                 height: width
                 anchors.horizontalCenter: box.horizontalCenter
                 anchors.verticalCenter: box.verticalCenter
-                color: (active) ? "green" : (faded) ? "gray" : "pink"
-                border.color: "black"
-                border.width: 2
+                // orange, gray, blue
+                color: (active) ? "#E99E33" : (faded) ? "#B4B4B4" : "#1DB2E3"
+                border.color: "#F2F2F2"
+                border.width: (active) ? 8 : 4
                 radius: width / 2
 
                 Image {
                     source: "qrc:/gcompris/src/activities/path_encoding/resource/arrow.svg"
-                    width: 0.6 * parent.width
+                    anchors.fill: parent
                     sourceSize.width: width
                     height: width
-                    anchors {
-                        horizontalCenter: parent.horizontalCenter
-                        verticalCenter: parent.verticalCenter
-                    }
                     rotation: [Activity.Directions.RIGHT, Activity.Directions.DOWN, Activity.Directions.LEFT, Activity.Directions.UP].indexOf(direction) * 90
                 }
             }

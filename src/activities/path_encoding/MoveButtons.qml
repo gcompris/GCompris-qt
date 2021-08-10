@@ -30,6 +30,13 @@ Item {
             rotation: -90
             sourceSize.width: size
             onClicked: Activity.moveTowards(Activity.Directions.UP)
+            Rectangle {
+                anchors.fill: parent
+                radius: width * 0.5
+                color: "#00FFFFFF"
+                border.color: "#F2F2F2"
+                border.width: 4
+            }
         }
 
         BarButton {
@@ -38,6 +45,13 @@ Item {
             rotation: 90
             sourceSize.width: size
             onClicked: Activity.moveTowards(Activity.Directions.DOWN)
+            Rectangle {
+                anchors.fill: parent
+                radius: width * 0.5
+                color: "#00FFFFFF"
+                border.color: "#F2F2F2"
+                border.width: 4
+            }
         }
 
         BarButton {
@@ -46,6 +60,13 @@ Item {
             rotation: -180
             sourceSize.width: size
             onClicked: Activity.moveTowards(Activity.Directions.LEFT)
+            Rectangle {
+                anchors.fill: parent
+                radius: width * 0.5
+                color: "#00FFFFFF"
+                border.color: "#F2F2F2"
+                border.width: 4
+            }
         }
 
         BarButton {
@@ -54,6 +75,13 @@ Item {
             rotation: 0
             sourceSize.width: size
             onClicked: Activity.moveTowards(Activity.Directions.RIGHT)
+            Rectangle {
+                anchors.fill: parent
+                radius: width * 0.5
+                color: "#00FFFFFF"
+                border.color: "#F2F2F2"
+                border.width: 4
+            }
         }
     }
 }
