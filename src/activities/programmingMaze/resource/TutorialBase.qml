@@ -151,7 +151,7 @@ Image {
         ListModel {
             id: mainFunctionModelTuto3
             ListElement {
-                name: "execute-loops"
+                name: "execute-loop"
             }
         }
 
@@ -170,7 +170,7 @@ Image {
 
         HeaderArea {
             id: mainFunctionHeaderTuto
-            headerText: mainFunctionHeader.mainText
+            headerText: mainFunctionHeader.headerText
             headerOpacity: activeAreaTuto === "main" ? 1 : 0.5
             width: parent.width * 0.4
             height: parent.height / 10
@@ -232,7 +232,8 @@ Image {
 
         HeaderArea {
             id: procedureHeaderTuto
-            headerText: procedureHeader.procedureText
+            headerText: procedureHeader.headerText
+            headerIcon: procedureHeader.headerIcon
             headerOpacity: 1
             width: parent.width * 0.4
             height: parent.height / 10

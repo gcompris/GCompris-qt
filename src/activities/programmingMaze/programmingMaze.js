@@ -19,7 +19,7 @@ var MOVE_FORWARD = "move-forward"
 var TURN_LEFT = "turn-left"
 var TURN_RIGHT = "turn-right"
 var CALL_PROCEDURE = "call-procedure"
-var EXECUTE_LOOPS = "execute-loops"
+var EXECUTE_LOOPS = "execute-loop"
 
 var mazeBlocks
 
@@ -88,7 +88,7 @@ var instructionComponents = {
     "turn-left": Qt.createComponent(url + "instructions/TurnLeftOrRight.qml"),
     "turn-right": Qt.createComponent(url + "instructions/TurnLeftOrRight.qml"),
     "call-procedure": Qt.createComponent(url + "instructions/Procedure.qml"),
-    "execute-loops": Qt.createComponent(url + "instructions/Loops.qml")
+    "execute-loop": Qt.createComponent(url + "instructions/Loop.qml")
 }
 
 var mainTutorialInstructions = [

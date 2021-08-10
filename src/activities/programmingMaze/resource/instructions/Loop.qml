@@ -1,4 +1,4 @@
-/* GCompris - Loops.qml
+/* GCompris - Loop.qml
  *
  * SPDX-FileCopyrightText: 2021 Mariam Fahmy <mariamfahmy66@gmail.com>
  *

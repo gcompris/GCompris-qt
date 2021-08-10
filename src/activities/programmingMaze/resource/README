@@ -1,15 +1,9 @@
-Copyright: Timothée Giet, 2019
+Copyright: Timothée Giet, 2019-2021
 License: CC-BY-SA 4.0
 Files:
 background-pm.svg
 call-procedure.svg
+execute-loop.svg
 move-forward.svg
 turn-left.svg
 turn-right.svg
-
-Copyright: Timothée Giet, 2021
-License: GPL-3.0-or-later
-TutorialBase.qml
-tutorial1.qml
-tutorial2.qml
-tutorial3.qml

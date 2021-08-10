@@ -251,8 +251,7 @@ ActivityBase {
 
         HeaderArea {
             id: mainFunctionHeader
-            property string mainText: qsTr("Main function")
-            headerText: mainText
+            headerText: qsTr("Main function")
             headerOpacity: background.insertIntoMain ? 1 : 0.5
             onClicked: background.insertIntoMain = true
             anchors.top: parent.top
@@ -280,8 +279,8 @@ ActivityBase {
 
         HeaderArea {
             id: procedureHeader
-            property string procedureText: items.currentLevelContainsProcedure ? qsTr("Procedure") + " ( )" : qsTr("Loop")
-            headerText: procedureText
+            headerText: items.currentLevelContainsProcedure ? qsTr("Procedure") + " " : qsTr("Loop") + " "
+            headerIcon: items.currentLevelContainsProcedure ? "call-procedure" : "execute-loop"
             headerOpacity: !background.insertIntoMain ? 1 : 0.5
             visible: procedureCodeArea.visible
             onClicked: background.insertIntoMain = false

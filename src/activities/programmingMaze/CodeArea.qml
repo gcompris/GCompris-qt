@@ -105,7 +105,7 @@ GridView {
     }
 
     function appendInstruction() {
-        if(background.insertIntoMain || (instructionArea.instructionToInsert != "call-procedure") || (instructionArea.instructionToInsert != "execute-loops")) {
+        if(background.insertIntoMain || (instructionArea.instructionToInsert != "call-procedure") || (instructionArea.instructionToInsert != "execute-loop")) {
             currentModel.append({ "name": instructionArea.instructionToInsert })
             items.numberOfInstructionsAdded++
             instructionArea.instructionToInsert = ""

@@ -24,13 +24,17 @@ Rectangle {
 
     property real headerOpacity
     property string headerText
+    property string headerIcon: ""
 
     signal clicked
 
     GCText {
+        id: textItem
         horizontalAlignment: Text.AlignHCenter
         verticalAlignment: Text.AlignVCenter
-        width: parent.width
+        anchors.centerIn: parent
+        anchors.horizontalCenterOffset: -iconImage.width * 0.5
+        width: parent.width - iconImage.width
         height: parent.height
         fontSizeMode: Font.DemiBold
         minimumPointSize: 7
@@ -38,6 +42,17 @@ Rectangle {
         wrapMode: Text.WordWrap
         color: "#2e2f2f"
         text: header.headerText
+    }
+
+    Image {
+        id: iconImage
+        anchors.centerIn: parent
+        anchors.horizontalCenterOffset: textItem.contentWidth * 0.5
+        height: header.headerIcon === "" ? 0 : header.height * 0.6
+        width: height
+        sourceSize.height: height
+        source: header.headerIcon === "" ? "qrc:/gcompris/src/core/resource/empty.svg" :
+        "qrc:/gcompris/src/activities/programmingMaze/resource/" + header.headerIcon + ".svg"
     }
 
     MouseArea {
