@@ -88,10 +88,10 @@ ActivityBase {
             anchors.bottom: bar.top
             anchors.left: parent.left
             anchors.right: parent.right
-            anchors.bottomMargin: Math.max(bar.height * 0.5, errorsText.height)
-            anchors.topMargin: anchors.bottomMargin
-            anchors.leftMargin: anchors.bottomMargin
-            anchors.rightMargin: anchors.bottomMargin
+            anchors.bottomMargin: bar.height * 0.5
+            anchors.topMargin: 10 * ApplicationInfo.ratio
+            anchors.leftMargin: anchors.topMargin
+            anchors.rightMargin: anchors.topMargin
         }
 
         MapView {
@@ -103,16 +103,25 @@ ActivityBase {
             cols: items.cols
         }
 
+        Rectangle {
+            id: errorsArea
+            anchors.top: mapView.bottom
+            anchors.left: mapView.left
+            anchors.topMargin: height * 0.2
+            width: errorsText.width * 1.2
+            height: errorsText.height
+            radius: height * 0.5
+            color: "#f2f2f2"
+            border.color: "#e74444"
+            border.width: 4
+        }
+
         GCText {
             id: errorsText
             fontSize: tinySize
-            color: 'red'
-            text: qsTr("Errors %1").arg(items.errorsCount.toString())
-
-            anchors {
-                bottom: mapView.top
-                left: mapView.left
-            }
+            color: "#373737"
+            text: qsTr("Errors: %1").arg(items.errorsCount.toString())
+            anchors.centerIn: errorsArea
         }
 
         ListModel {
@@ -149,13 +158,14 @@ ActivityBase {
                 PropertyChanges {
                     target: moveBar
                     width: layoutArea.width - mapView.width - layoutArea.anchors.bottomMargin
-                    height: layoutArea.height / 2
-                    anchors.topMargin: 0
+                    height: (moveButtons.visible) ? layoutArea.height / 2 : layoutArea.height
+                    anchors.topMargin: errorsArea.anchors.topMargin
                 }
                 PropertyChanges {
                     target: moveButtons
                     width: moveBar.width
-                    height: layoutArea.height / 2
+                    height: (moveButtons.visible) ? layoutArea.height / 2 : 0
+                    anchors.topMargin: 0
                 }
                 AnchorChanges {
                     target: mapView
@@ -167,12 +177,12 @@ ActivityBase {
                 AnchorChanges {
                     target: moveBar
                     anchors.right: layoutArea.right
-                    anchors.top: layoutArea.top
+                    anchors.top: moveButtons.bottom
                 }
                 AnchorChanges {
                     target: moveButtons
                     anchors.right: layoutArea.right
-                    anchors.top: moveBar.bottom
+                    anchors.top: layoutArea.top
                 }
             },
             State {
@@ -180,18 +190,19 @@ ActivityBase {
                 when: layoutArea.width < layoutArea.height
                 PropertyChanges {
                     target: mapView
-                    cellSize: Math.min((layoutArea.height / 2) / items.rows, layoutArea.width / items.cols)
+                    cellSize: Math.min((layoutArea.height * 0.7) / items.rows, layoutArea.width / items.cols)
                 }
                 PropertyChanges {
                     target: moveBar
                     width: layoutArea.width
                     height: (layoutArea.height - mapView.height - moveButtons.height - layoutArea.anchors.bottomMargin)
-                    anchors.topMargin: layoutArea.anchors.bottomMargin
+                    anchors.topMargin: errorsArea.anchors.topMargin
                 }
                 PropertyChanges {
                     target: moveButtons
                     width: moveBar.width
                     height: (moveButtons.visible) ? (layoutArea.height - mapView.height - layoutArea.anchors.bottomMargin) / 2 : 0
+                    anchors.topMargin: layoutArea.anchors.bottomMargin
                 }
                 AnchorChanges {
                     target: mapView
@@ -203,12 +214,12 @@ ActivityBase {
                 AnchorChanges {
                     target: moveBar
                     anchors.right: layoutArea.right
-                    anchors.top: mapView.bottom
+                    anchors.top: moveButtons.bottom
                 }
                 AnchorChanges {
                     target: moveButtons
                     anchors.right: layoutArea.right
-                    anchors.top: moveBar.bottom
+                    anchors.top: mapView.bottom
                 }
             }
         ]

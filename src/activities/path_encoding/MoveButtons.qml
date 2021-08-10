@@ -13,8 +13,8 @@ import "path.js" as Activity
 Item {
     id: moveButtons
 
-    property double spacing: Math.min(0.05 * width, 15 * ApplicationInfo.ratio)
-    property double size: Math.min((width - 3 * spacing)/4, 55 * ApplicationInfo.ratio)
+    property double spacing: size / 3
+    property double size: Math.min(width / 5, height)
 
     Flow {
         id: flow

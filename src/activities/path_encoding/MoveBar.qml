@@ -18,7 +18,7 @@ Rectangle {
     border.width: 4
     radius: ApplicationInfo.ratio * 10
 
-    property double buttonWidth: Math.min(ApplicationInfo.ratio * 50, width / 4.5)
+    property double buttonWidth: Math.min(height * 0.9, width / 9)
     property int spacing: 0.15 * buttonWidth
 
     property alias movesGridView: movesGridView
