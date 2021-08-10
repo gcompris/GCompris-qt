@@ -112,10 +112,10 @@ ActivityBase {
                 areaWithKeyboardInput.moveCurrentIndexLeft()
             if(event.key === Qt.Key_Right)
                 areaWithKeyboardInput.moveCurrentIndexRight()
-            if(event.key === Qt.Key_Up)
-                areaWithKeyboardInput.moveCurrentIndexUp()
-            if(event.key === Qt.Key_Down)
-                areaWithKeyboardInput.moveCurrentIndexDown()
+            if(event.key === Qt.Key_Up && items.currentLevelContainsLoop && !background.insertIntoMain)
+                increaseButton.increaseClicked()
+            if(event.key === Qt.Key_Down && items.currentLevelContainsLoop && !background.insertIntoMain)
+                decreaseButton.decreaseClicked()
             if(event.key === Qt.Key_Space)
                 areaWithKeyboardInput.spaceKeyPressed()
             if(event.key === Qt.Key_Enter || event.key === Qt.Key_Return)
@@ -266,7 +266,7 @@ ActivityBase {
 
             onTabKeyPressed: {
                 mainFunctionCodeArea.currentIndex = -1
-                if(!items.currentLevelContainsProcedure) {
+                if(!items.currentLevelContainsProcedure && !items.currentLevelContainsLoop) {
                     background.areaWithKeyboardInput = instructionArea
                     instructionArea.currentIndex = 0
                 }
@@ -328,19 +328,25 @@ ActivityBase {
                     text: Activity.LoopEnumValues.MINUS_SIGN
                 }
 
+                function decreaseClicked() {
+                    if(!decreaseButtonArea.enabled)
+                        return
+                    decreaseAnimation.restart()
+                    if(loopCounterSelection.loopNumber == loopCounterSelection.minLoopNumber) {
+                        loopCounterSelection.loopNumber = loopCounterSelection.maxLoopNumber
+                    }
+                    else {
+                        loopCounterSelection.loopNumber--
+                    }
+                    loopCounterSelection.setLoopNumber()
+                }
+
                 MouseArea {
                     id: decreaseButtonArea
                     anchors.fill: parent
                     enabled: items.isRunCodeEnabled
                     onClicked: {
-                        decreaseAnimation.restart()
-                        if(loopCounterSelection.loopNumber == loopCounterSelection.minLoopNumber) {
-                            loopCounterSelection.loopNumber = loopCounterSelection.maxLoopNumber
-                        }
-                        else {
-                            loopCounterSelection.loopNumber--
-                        }
-                        loopCounterSelection.setLoopNumber()
+                        decreaseButton.decreaseClicked()
                     }
                 }
                 SequentialAnimation {
@@ -404,19 +410,25 @@ ActivityBase {
                     text: Activity.LoopEnumValues.PLUS_SIGN
                 }
 
+                function increaseClicked() {
+                    if(!increaseButtonArea.enabled)
+                        return
+                    increaseAnimation.restart()
+                    if(loopCounterSelection.loopNumber == loopCounterSelection.maxLoopNumber) {
+                        loopCounterSelection.loopNumber = loopCounterSelection.minLoopNumber
+                    }
+                    else {
+                        loopCounterSelection.loopNumber++
+                    }
+                    loopCounterSelection.setLoopNumber()
+                }
+
                 MouseArea {
                     id: increaseButtonArea
                     anchors.fill: parent
                     enabled: items.isRunCodeEnabled
                     onClicked: {
-                        increaseAnimation.restart()
-                        if(loopCounterSelection.loopNumber == loopCounterSelection.maxLoopNumber) {
-                            loopCounterSelection.loopNumber = loopCounterSelection.minLoopNumber
-                        }
-                        else {
-                            loopCounterSelection.loopNumber++
-                        }
-                        loopCounterSelection.setLoopNumber()
+                        increaseButton.increaseClicked()
                     }
                 }
                 SequentialAnimation {
