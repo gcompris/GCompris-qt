@@ -26,7 +26,7 @@ Item {
 
         BarButton {
             id: upButton
-            source: "qrc:/gcompris/src/activities/path_encoding/resource/right-arrow.png"
+            source: "qrc:/gcompris/src/activities/path_encoding/resource/arrow.svg"
             rotation: -90
             sourceSize.width: size
             onClicked: Activity.moveTowards(Activity.Directions.UP)
@@ -34,7 +34,7 @@ Item {
 
         BarButton {
             id: downButton
-            source: "qrc:/gcompris/src/activities/path_encoding/resource/right-arrow.png"
+            source: "qrc:/gcompris/src/activities/path_encoding/resource/arrow.svg"
             rotation: 90
             sourceSize.width: size
             onClicked: Activity.moveTowards(Activity.Directions.DOWN)
@@ -42,7 +42,7 @@ Item {
 
         BarButton {
             id: leftButton
-            source: "qrc:/gcompris/src/activities/path_encoding/resource/right-arrow.png"
+            source: "qrc:/gcompris/src/activities/path_encoding/resource/arrow.svg"
             rotation: -180
             sourceSize.width: size
             onClicked: Activity.moveTowards(Activity.Directions.LEFT)
@@ -50,7 +50,7 @@ Item {
 
         BarButton {
             id: rightButton
-            source: "qrc:/gcompris/src/activities/path_encoding/resource/right-arrow.png"
+            source: "qrc:/gcompris/src/activities/path_encoding/resource/arrow.svg"
             rotation: 0
             sourceSize.width: size
             onClicked: Activity.moveTowards(Activity.Directions.RIGHT)

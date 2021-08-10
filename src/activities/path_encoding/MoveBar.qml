@@ -42,8 +42,9 @@ Rectangle {
                 radius: width / 2
 
                 Image {
-                    source: "qrc:/gcompris/src/activities/path_encoding/resource/right-arrow-plain.png"
+                    source: "qrc:/gcompris/src/activities/path_encoding/resource/arrow.svg"
                     width: 0.6 * parent.width
+                    sourceSize.width: width
                     height: width
                     anchors {
                         horizontalCenter: parent.horizontalCenter

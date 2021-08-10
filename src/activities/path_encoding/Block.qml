@@ -15,52 +15,26 @@ Item {
     property int index
 
     Rectangle {
-        id: rectangle
+        id: baseSquare
         anchors.fill: parent
-        color: "#4DA849"
-        border.color: "black"
-        border.width: (invisible) ? 0 : 1
+        color: path ? "#D1C8BE" : background.color
+        border.color: "#A0000000"
+        visible: invisible ? 0 : 1
     }
 
     Image {
-        width: 0.7 * parent.width
-        height: 0.7 * parent.height
-        anchors {
-            left: parent.left
-            top: parent.top
-            leftMargin: 0.15 * parent.width
-            topMargin: 0.15 * parent.height
-        }
+        width: parent.width
+        height: parent.height
+        sourceSize.width: width
+        anchors.centerIn: parent
         source:
-            (rock) ? "qrc:/gcompris/src/activities/path_encoding/resource/stone.png" :
-            (tree) ? "qrc:/gcompris/src/activities/path_encoding/resource/tree.png" :
-            (bush) ? "qrc:/gcompris/src/activities/path_encoding/resource/bush.png" :
-            (grass) ? "qrc:/gcompris/src/activities/path_encoding/resource/grass.png" :
-            (water) ? "qrc:/gcompris/src/activities/path_encoding/resource/pond.png" :
+            (rock) ? "qrc:/gcompris/src/activities/path_encoding/resource/rock.svg" :
+            (tree) ? "qrc:/gcompris/src/activities/path_encoding/resource/tree.svg" :
+            (bush) ? "qrc:/gcompris/src/activities/path_encoding/resource/bush.svg" :
+            (grass) ? "qrc:/gcompris/src/activities/path_encoding/resource/grass.svg" :
+            (water) ? "qrc:/gcompris/src/activities/path_encoding/resource/water.svg" :
+            (flag) ? "qrc:/gcompris/src/activities/path_encoding/resource/flag.svg" :
             ""
-        fillMode: Image.PreserveAspectFit
-    }
-
-    Image {
-        width: 0.7 * parent.width
-        height: 0.7 * parent.height
-        visible: path
-        anchors.fill: parent
-        source:"qrc:/gcompris/src/activities/path_encoding/resource/mud.jpg"
-        fillMode: Image.PreserveAspectFit
-    }
-
-    Image {
-        width: 0.7 * parent.width
-        height: 0.7 * parent.height
-        visible: flag
-        anchors {
-            left: parent.left
-            top: parent.top
-            leftMargin: 0.15 * parent.width
-            topMargin: 0.15 * parent.height
-        }
-        source:"qrc:/gcompris/src/activities/path_encoding/resource/finish.png"
         fillMode: Image.PreserveAspectFit
     }
 }

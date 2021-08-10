@@ -13,6 +13,7 @@ Image {
 
     source: "qrc:/gcompris/src/activities/maze/resource/tux_top_south.svg"
     fillMode: Image.PreserveAspectFit
+    sourceSize.width: width
 
     z: 10
 

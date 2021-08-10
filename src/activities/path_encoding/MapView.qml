@@ -73,7 +73,7 @@ Rectangle {
     Rectangle {
         id: selectedOverlay
         opacity: 0.35
-        color: "pink"
+        color: "#2651DA"
         width: cellSize
         height: cellSize
         visible: false

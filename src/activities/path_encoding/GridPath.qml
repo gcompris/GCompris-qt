@@ -23,7 +23,7 @@ ActivityBase {
 
     pageComponent: Rectangle {
         id: background
-        color: "#4DA849"
+        color: "#42993E"
         anchors.fill: parent
         signal start
         signal stop
