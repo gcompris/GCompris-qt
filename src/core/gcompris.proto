@@ -1,0 +1,66 @@
+syntax = "proto3";
+
+import "google/protobuf/any.proto";
+
+package network;
+
+enum Type {
+  SCAN_CLIENTS = 0;
+  CLIENT_ACCEPTED = 1;
+  LOGIN_LIST = 2;
+  LOGIN_REQUEST = 3;
+  LOGIN_REPLY = 4;
+  DISCONNECT = 5;
+  ACTIVITY_RAW_DATA = 6;
+}
+
+enum LoginStatus {
+  LOGIN_OK = 0;
+  LOGIN_KO = 1;
+}
+
+message ContainerSize {
+  int32 size = 1;
+}
+
+message Container {
+  Type type = 1;
+  google.protobuf.Any data = 2;
+}
+
+/* Server send a scan clients in broadcast */
+message ScanClients {
+  string deviceId = 1;
+}
+
+/* Client accepts the connection */
+message ClientAccepted {
+}
+
+/* Server sends the list of logins */
+message LoginList {
+  repeated string login = 1;
+}
+
+/* Client replies with a selected login and a password */
+message LoginRequest {
+  string login = 1;
+  string password = 2;
+}
+
+/* Server replies with the status of the login */
+message LoginReply {
+  LoginStatus status = 1;
+  string login = 2;
+}
+
+/* Server sends a disconnect message to the client */
+message Disconnect {
+}
+
+/* Client send data about one activity */
+message ActivityRawData {
+  string activity = 1;
+  int64 timestamp = 2;
+  string data = 3;
+}
