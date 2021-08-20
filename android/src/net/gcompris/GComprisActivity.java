@@ -13,6 +13,7 @@ package net.gcompris;
 
 import org.qtproject.qt5.android.bindings.QtApplication;
 import org.qtproject.qt5.android.bindings.QtActivity;
+import android.os.Bundle;
 import android.media.AudioManager;
 import android.util.Log;
 import android.content.Context;
@@ -21,6 +22,8 @@ import java.text.Collator;
 import java.util.Locale;
 import java.util.Arrays;
 import java.util.List;
+import android.net.wifi.WifiManager;
+import android.net.wifi.WifiManager.MulticastLock;
 
 public class GComprisActivity extends QtActivity
 {
@@ -30,6 +33,16 @@ public class GComprisActivity extends QtActivity
     public GComprisActivity()
     {
         m_instance = this;
+    }
+    public void onCreate(Bundle savedInstanceState)
+    {
+        super.onCreate(savedInstanceState);
+        /* Allow broadcast */
+        WifiManager wifi = (WifiManager)getSystemService(Context.WIFI_SERVICE);
+        if (wifi != null) {
+            WifiManager.WifiLock lock = wifi.createWifiLock("gcompris");
+            lock.acquire();
+        }
     }
 
     public static boolean requestAudioFocus() {

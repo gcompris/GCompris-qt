@@ -216,7 +216,7 @@ class ApplicationSettings : public QObject
      */
     Q_PROPERTY(int baseFontSizeMax READ baseFontSizeMax CONSTANT)
 
-    // admin group
+    /* admin group */
 
     /**
      * Base-URL for resource downloads.
@@ -252,13 +252,20 @@ class ApplicationSettings : public QObject
      */
     Q_PROPERTY(QStringList filteredBackgroundMusic READ filteredBackgroundMusic WRITE setFilteredBackgroundMusic NOTIFY filteredBackgroundMusicChanged)
 
-    // internal group
+    /* internal group */
     Q_PROPERTY(quint32 exeCount READ exeCount WRITE setExeCount NOTIFY exeCountChanged)
 
     // keep last version ran. If different than ApplicationInfo.GCVersionCode(), it means a new version is running
     Q_PROPERTY(int lastGCVersionRan READ lastGCVersionRan WRITE setLastGCVersionRan NOTIFY lastGCVersionRanChanged)
 
-    // no group
+    /* server group */
+    /**
+     * deviceId
+     *
+     */
+    Q_PROPERTY(QString deviceId READ deviceId WRITE setDeviceId NOTIFY deviceIdChanged)
+
+    /* no group */
     Q_PROPERTY(bool isBarHidden READ isBarHidden WRITE setBarHidden NOTIFY barHiddenChanged)
 
 public:
@@ -434,6 +441,13 @@ public:
         Q_EMIT downloadServerUrlChanged();
     }
 
+    QString deviceId() const { return m_deviceId; }
+    void setDeviceId(const QString &newDeviceId)
+    {
+        m_deviceId = newDeviceId;
+        emit deviceIdChanged();
+    }
+
     QString cachePath() const { return m_cachePath; }
     void setCachePath(const QString &newCachePath)
     {
@@ -549,6 +563,7 @@ protected Q_SLOTS:
     Q_INVOKABLE void notifyUserDataPathChanged();
     Q_INVOKABLE void notifyExeCountChanged();
 
+    Q_INVOKABLE void notifyDeviceIdChanged();
     Q_INVOKABLE void notifyLastGCVersionRanChanged();
     Q_INVOKABLE void notifyRendererChanged();
 
@@ -628,6 +643,8 @@ Q_SIGNALS:
     void cachePathChanged();
     void userDataPathChanged();
 
+    void deviceIdChanged();
+
     void exeCountChanged();
 
     void lastGCVersionRanChanged();
@@ -677,6 +694,7 @@ private:
     QString m_cachePath;
     QString m_userDataPath;
 
+    QString m_deviceId;
     quint32 m_exeCount;
 
     int m_lastGCVersionRan;

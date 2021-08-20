@@ -85,6 +85,17 @@ if(Qt5Widgets_VERSION VERSION_GREATER_EQUAL "5.15.0")
   set(used_qt_modules ${used_qt_modules} Qt5::QmlWorkerScript Qt5::QuickParticles)
 endif()
 
+# Either make ClientNetworkMessages within ifdef in the whole code, else add it by default
+if(BUILD_SERVER)
+  add_definitions(-DWITH_SERVER)
+  list(APPEND gcompris_SRCS ClientNetworkMessages.cpp ClientNetworkMessages.h)
+  include_directories(${Protobuf_INCLUDE_DIRS})
+  include_directories(${CMAKE_CURRENT_BINARY_DIR})
+  protobuf_generate_cpp(PROTO_SRCS PROTO_HDRS gcompris.proto)
+  set_property(SOURCE ${PROTO_SRCS} ${PROTO_HDRS} PROPERTY SKIP_AUTOMOC ON)
+  list(APPEND gcompris_SRCS ${PROTO_SRCS} ${PROTO_HDRS})
+endif()
+
 if(ANDROID)
   add_library(${GCOMPRIS_EXECUTABLE_NAME} SHARED ${gcompris_SRCS})
   set(used_qt_modules ${used_qt_modules} Qt5::AndroidExtras)
@@ -96,13 +107,16 @@ else()
   add_executable(${GCOMPRIS_EXECUTABLE_NAME} ${gcompris_SRCS} ${gcompris_RES})
 endif()
 
-# only build the lib for testing purpose
-if(BUILD_TESTING)
-  add_library(gcompris_core SHARED ${gcompris_SRCS})
-  target_link_libraries(gcompris_core ${used_qt_modules})
-endif()
+add_library(gcompris_core SHARED ${gcompris_SRCS})
+target_link_libraries(gcompris_core ${used_qt_modules})
 
 target_link_libraries(${GCOMPRIS_EXECUTABLE_NAME} ${used_qt_modules})
+
+if(BUILD_SERVER)
+  target_link_libraries(gcompris_core protobuf::libprotobuf)
+  target_link_libraries(${GCOMPRIS_EXECUTABLE_NAME} protobuf::libprotobuf)
+  #todo for windows or linux? install(FILES "${Protobuf_LIBRARIES}" DESTINATION bin)
+endif()
 
 GCOMPRIS_ADD_RCC(core
   QML_FILES

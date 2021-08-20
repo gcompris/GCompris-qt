@@ -184,6 +184,25 @@ ExternalProject_Add(
   ${CMAKE_COMMAND} -E copy "${OPENSSL_DIR}/libssl${suffix_libssl}" "${CMAKE_LIBRARY_OUTPUT_DIRECTORY}/"
   )
 
+# protobuf
+execute_process(COMMAND ${Protobuf_PROTOC_EXECUTABLE} --version
+  OUTPUT_VARIABLE PROTOC_OUTPUT)
+string(REGEX MATCH "([0-9]+)\\.([0-9]+)\\.([0-9]+)" PROTOC_VERSION "${PROTOC_OUTPUT}")
+message(STATUS "System protoc version found: ${PROTOC_VERSION}")
+
+include(FetchContent)
+FetchContent_Declare(
+  protobuf
+  URL https://github.com/protocolbuffers/protobuf/archive/v${PROTOC_VERSION}.tar.gz
+  #SOURCE_SUBDIR cmake
+)
+cmake_policy(SET CMP0077 NEW)
+set(protobuf_INSTALL OFF CACHE BOOL "")
+set(protobuf_BUILD_TESTS OFF CACHE BOOL "")
+set(BUILD_SHARED_LIBS OFF)
+set(protobuf_BUILD_PROTOC_BINARIES OFF CACHE BOOL "")
+FetchContent_MakeAvailable(protobuf)
+
 #
 add_custom_command(
   OUTPUT move_translations_to_assets

@@ -1,0 +1,5 @@
+module components
+NavigationButton 1.0 NavigationButton.qml
+NavigationBar 1.0 NavigationBar.qml
+CommandButton 1.0 CommandButton.qml
+CommandBar 1.0 CommandBar.qml

@@ -433,6 +433,28 @@ Item {
                 onClicked: fontLetterSpacingSlider.value = ApplicationSettings.fontLetterSpacingMin
             }
         }
+
+        Flow {
+            GCText {
+                id: deviceIdLabel
+                text: qsTr("Device identifier")
+                fontSize: mediumSize
+                width: dialogConfig.contentWidth / 2
+                wrapMode: Text.WordWrap
+            }
+            TextInput {
+                id: deviceIdInput
+                height: deviceIdLabel.height
+                width: dialogConfig.contentWidth / 2
+
+                Rectangle {
+                    color: "transparent"
+                    anchors.fill: parent
+                    border.color: "red"
+                    border.width: 2
+                }
+            }
+        }
     }
 
     property bool isAudioVoicesEnabled: ApplicationSettings.isAudioVoicesEnabled
@@ -450,8 +472,12 @@ Item {
     // or we get a binding loop warning
     property real backgroundMusicVolume
     property real audioEffectsVolume
+<<<<<<< HEAD
     property int minFilter
     property int maxFilter
+=======
+    property alias deviceId: deviceIdInput.text
+>>>>>>> bdc93b5e3 (server, initial entry)
 
     function extractMusicNameFromPath(musicPath) {
         var musicDirectoryPath = ApplicationInfo.getAudioFilePath("backgroundMusic/")
@@ -489,6 +515,13 @@ Item {
         exitConfirmation = ApplicationSettings.exitConfirmation
         exitConfirmationBox.checked = exitConfirmation
 
+<<<<<<< HEAD
+=======
+        wordset = useWordset ? ApplicationSettings.wordset : ""
+
+        deviceId = ApplicationSettings.deviceId
+
+>>>>>>> bdc93b5e3 (server, initial entry)
         baseFontSize = ApplicationSettings.baseFontSize
         fontLetterSpacing = ApplicationSettings.fontLetterSpacing
         backgroundMusicVolume = ApplicationSettings.backgroundMusicVolume
@@ -541,11 +574,22 @@ Item {
         ApplicationSettings.font = fonts.get(fontBox.currentIndex).text
         ApplicationSettings.fontCapitalization = fontCapitalizationModel[fontCapitalizationBox.currentIndex].value
 
+<<<<<<< HEAD
         if(ApplicationSettings.filterLevelMin !== minFilter ||
            ApplicationSettings.filterLevelMax !== maxFilter) {
                ApplicationSettings.filterLevelMin = minFilter
                ApplicationSettings.filterLevelMax = maxFilter
                ActivityInfoTree.minMaxFiltersChanged(minFilter, maxFilter)
+=======
+        deviceIdInput.accepted()
+        ApplicationSettings.deviceId = deviceId
+
+        if(ApplicationSettings.filterLevelMin !== filterRepeater.minFilter ||
+           ApplicationSettings.filterLevelMax !== filterRepeater.maxFilter) {
+               ApplicationSettings.filterLevelMin = filterRepeater.minFilter
+               ApplicationSettings.filterLevelMax = filterRepeater.maxFilter
+               ActivityInfoTree.minMaxFiltersChanged(filterRepeater.minFilter, filterRepeater.maxFilter)
+>>>>>>> bdc93b5e3 (server, initial entry)
         }
 
         ApplicationSettings.saveBaseFontSize();

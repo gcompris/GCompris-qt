@@ -64,8 +64,8 @@ ActivityBase {
             Activity.stop()
         }
 
-        Keys.onEnterPressed: chooseDiceBar.moveTux()
-        Keys.onReturnPressed: chooseDiceBar.moveTux()
+        Keys.onEnterPressed: chooseDiceBar.click()
+        Keys.onReturnPressed: chooseDiceBar.click()
 
         onWidthChanged: {
             sizeChangedTimer.restart()

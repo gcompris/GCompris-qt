@@ -25,6 +25,10 @@
 #include "ActivityInfoTree.h"
 #include "DownloadManager.h"
 
+#ifdef WITH_SERVER
+#include "ClientNetworkMessages.h"
+#endif
+
 bool loadAndroidTranslation(QTranslator &translator, const QString &locale)
 {
     QFile file("assets:/share/GCompris/gcompris_" + locale + ".qm");
@@ -322,8 +326,16 @@ int main(int argc, char *argv[])
     }
 
     QQmlApplicationEngine engine;
+
+#ifdef WITH_SERVER
+    ClientNetworkMessages clientNetworkMessages;
+    engine.rootContext()->setContextProperty("clientNetworkMessages", &clientNetworkMessages);
+#endif
+
+    engine.load(QUrl("qrc:/gcompris/src/core/main.qml"));
     QObject::connect(&engine, &QQmlApplicationEngine::quit, DownloadManager::getInstance(),
                      &DownloadManager::shutdown);
+
     // add import path for shipped qml modules:
     engine.addImportPath(QStringLiteral("%1/../lib/qml")
                              .arg(QCoreApplication::applicationDirPath()));
