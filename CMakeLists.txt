@@ -60,6 +60,11 @@ if(CMAKE_SYSTEM_NAME STREQUAL Android)
   if(ANDROID_NDK_REVISION VERSION_LESS "21.0.0")
     message(FATAL_ERROR "android ndk 21 minimal required, actually using ${ANDROID_NDK_REVISION}")
   endif()
+  # Due to use of SOURCE_SUBDIR in FetchContent to retrieve protobuf
+  if("${CMAKE_VERSION}" VERSION_LESS "3.18.0")
+    message(FATAL_ERROR "Building GCompris for android requires CMake 3.18 minimum")
+  endif() 
+
   # TODO: possibly should be setup by toolchain one day
   set(QT_QMAKE_EXECUTABLE "${_qt5Core_install_prefix}/bin/qmake")
   if(ECM_VERSION VERSION_GREATER "5.55.0")
@@ -134,7 +139,6 @@ if((UNIX AND NOT APPLE AND NOT ANDROID) OR WIN32)
     set_package_properties(OpenSSL PROPERTIES TYPE REQUIRED)
 endif()
 
-
 option(COMPILE_DOC "Enable compilation of GCompris docbook" OFF)
 if(COMPILE_DOC)
   find_package(KF5 QUIET COMPONENTS DocTools)
@@ -153,6 +157,34 @@ if(ECM_FOUND)
         message(STATUS "ECM_VERSION is ${ECM_VERSION}, icons and desktop files won't be installed.")
     endif()
 endif()
+
+option(BUILD_SERVER "Build the server along the application" ON)
+
+if(BUILD_SERVER)
+  find_package(Qt5 ${QT_REQUIRED_VERSION} REQUIRED Sql)
+
+  set(ANDROID_WIFI_BROADCAST_PERMISSION "<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\" />\n
+    <uses-permission android:name=\"android.permission.CHANGE_WIFI_MULTICAST_STATE\" />\n
+    <uses-permission android:name=\"android.permission.WAKE_LOCK\" />")
+
+  find_package(Protobuf)
+  if(ANDROID)
+    if(Protobuf_PROTOC_EXECUTABLE)
+      if(NOT TARGET protobuf::protoc)
+        add_executable(protobuf::protoc IMPORTED)
+        if(EXISTS "${Protobuf_PROTOC_EXECUTABLE}")
+          set_target_properties(protobuf::protoc PROPERTIES
+            IMPORTED_LOCATION "${Protobuf_PROTOC_EXECUTABLE}")
+        endif()
+      else()
+        message(ERROR "protobuf::protoc already exists")
+      endif()
+    else()
+      message(ERROR "PROTOC_EXECUTABLE not exists")
+    endif()
+
+  endif()
+endif(BUILD_SERVER)
 
 # Tell CMake to run moc when necessary:
 set(CMAKE_AUTOMOC ON)
