@@ -5,3 +5,7 @@
 #=============================================================================
 add_subdirectory(core)
 add_subdirectory(activities)
+
+if(BUILD_SERVER AND NOT ANDROID)
+  add_subdirectory(server)
+endif()
