@@ -24,10 +24,8 @@ Item {
     property alias valueMax: domino.valueMax
     property alias mode: domino.mode
 
-    function moveTux() {
-        if(ok.enabled) {
-            Activity.moveTux(domino.value1 + domino.value2)
-        }
+    function click() {
+        ok.buttonClicked()
     }
 
     GCSoundEffect {
@@ -39,7 +37,7 @@ Item {
         id: barRow
         spacing: GCStyle.baseMargins
         anchors.centerIn: parent
-        BarButton {
+        OkButton {
             id: ok
             source: "qrc:/gcompris/src/core/resource/bar_ok.svg";
             width: Math.min(GCStyle.bigButtonHeight,
@@ -52,8 +50,14 @@ Item {
                 top: undefined
                 topMargin: undefined
             }
+
             enabled: chooseDiceBar.enabled
             onClicked: chooseDiceBar.moveTux();
+
+            getDataCallback: function() {
+                var data = {"index": Activity.fishIndex, "currentPosition": Activity.tuxIceBlockNumber, "dice1": chooseDiceBar.value1, "dice2": chooseDiceBar.value2};
+                return data
+            }
         }
 
         Domino {
