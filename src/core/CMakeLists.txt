@@ -26,6 +26,8 @@ if(ANDROID)
     )
 endif()
 
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/serverMasterController/)
+
 set(gcompris_SRCS
   ActivityInfo.cpp
   ActivityInfo.h
@@ -61,6 +63,40 @@ set(gcompris_SRCS
   synth/preset.cpp
   synth/waveform.cpp
   synth/waveform.h
+  serverMasterController/controllers/cm-lib_global.h
+  serverMasterController/controllers/master-controller.cpp
+  serverMasterController/controllers/master-controller.h
+  serverMasterController/controllers/navigation-controller.h
+  serverMasterController/controllers/command-controller.h
+  serverMasterController/controllers/command-controller.cpp
+  serverMasterController/controllers/database-controller.h
+  serverMasterController/controllers/database-controller.cpp
+  serverMasterController/controllers/i-database-controller.h
+  serverMasterController/models/client.cpp
+  serverMasterController/models/client.h
+  serverMasterController/models/address.cpp
+  serverMasterController/models/address.h
+  serverMasterController/models/client-search.cpp
+  serverMasterController/models/client-search.h
+  serverMasterController/models/contact.cpp
+  serverMasterController/models/contact.h
+  serverMasterController/models/appointment.cpp
+  serverMasterController/models/appointment.h  
+  serverMasterController/framework/command.cpp
+  serverMasterController/framework/command.h  
+  serverMasterController/data/data-decorator.cpp   
+  serverMasterController/data/data-decorator.h
+  serverMasterController/data/datetime-decorator.cpp   
+  serverMasterController/data/datetime-decorator.h   
+  serverMasterController/data/entity-collection.h   
+  serverMasterController/data/entity.cpp   
+  serverMasterController/data/entity.h   
+  serverMasterController/data/enumerator-decorator.cpp   
+  serverMasterController/data/enumerator-decorator.h   
+  serverMasterController/data/int-decorator.cpp   
+  serverMasterController/data/int-decorator.h   
+  serverMasterController/data/string-decorator.cpp   
+  serverMasterController/data/string-decorator.h   
 )
 
 if(ANDROID)
@@ -83,7 +119,7 @@ elseif(CMAKE_HOST_APPLE)
   set_source_files_properties(${gcompris_RES} PROPERTIES MACOSX_PACKAGE_LOCATION "Resources")
 endif()
 
-set(used_qt_modules Qt5::Qml Qt5::Quick Qt5::Gui Qt5::Multimedia Qt5::Core Qt5::Svg Qt5::Xml Qt5::XmlPatterns Qt5::Sensors)
+set(used_qt_modules Qt5::Qml Qt5::Quick Qt5::Gui Qt5::Multimedia Qt5::Core Qt5::Svg Qt5::Xml Qt5::XmlPatterns Qt5::Sensors  Qt5::QuickControls2 Qt5::Sql)
 
 if(ANDROID)
   add_library(${GCOMPRIS_EXECUTABLE_NAME} SHARED ${gcompris_SRCS})

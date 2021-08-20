@@ -96,7 +96,7 @@ if("${CMAKE_BINARY_DIR}" STREQUAL "${CMAKE_SOURCE_DIR}")
 endif()
 
 find_package(Qt5 ${QT_REQUIRED_VERSION} REQUIRED
-    Qml Quick Gui Multimedia Core Svg Xml XmlPatterns LinguistTools Sensors)
+    Qml Quick Gui Multimedia Core Svg Xml XmlPatterns LinguistTools Sensors QuickControls2 Sql)
 
 if(ANDROID)
     find_package(Qt5 ${QT_REQUIRED_VERSION} REQUIRED AndroidExtras)
