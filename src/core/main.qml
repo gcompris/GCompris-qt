@@ -486,6 +486,151 @@ Window {
         anchors.fill: parent
     }
 
+    Connections {
+        id: connection
+        // TODO Handle here (how?) if we want to compile without ClientNetworkMessages/protobuf when we don't build the server (do we want this?)
+        target: clientNetworkMessages
+
+        property string requestDeviceId
+        property string serverIp
+        property bool requestAlreadyInProgress: false
+
+        onRequestConnection: {
+            // Only show request connection on menu
+            if(pageView.depth !== 1 || requestAlreadyInProgress) {
+                return;
+            }
+            requestAlreadyInProgress = true;
+            connection.requestDeviceId = requestDeviceId;
+            connection.serverIp = serverIp;
+            Core.showMessageDialog(main,
+                    qsTr("Do you want to connect to server %1?").arg(connection.requestDeviceId),
+                    qsTr("Yes"), function() {
+                        clientNetworkMessages.connectToServer(connection.serverIp);
+                        requestAlreadyInProgress = false;
+                    },
+                    qsTr("No"), function() {
+                        requestAlreadyInProgress = false;
+                    },
+                    null);
+        }
+        onLoginListReceived: {
+            chooseLogin.model = logins;
+            chooseLogin.visible = true
+            chooseLogin.start()
+        }
+    }
+    GCInputDialog {
+        id: chooseLogin
+        visible: false
+        active: visible
+        anchors.fill: parent
+
+        message: qsTr("Select your login")
+        onClose: chooseLogin.visible = false;
+
+        button1Text: qsTr("OK")
+        button2Text: qsTr("Cancel")
+        onButton1Hit: {
+            if(chooseLogin.chosenLogin == "") {
+                closeDialogOnClick = false;
+                Core.showMessageDialog(
+                    chooseLogin,
+                    qsTr("Please select a login in the list or cancel."),
+                    "", null,
+                    "", null);
+            }
+            else {
+                closeDialogOnClick = true;
+                choosePassword.visible = true;
+                choosePassword.start();
+            }
+        }
+        onButton2Hit: {
+            // We need to reset it in case it was changed before by selecting no login
+            closeDialogOnClick = true;
+        }
+
+        property string chosenLogin
+        property var model
+        content: ListView {
+            id: view
+            width: chooseLogin.width
+            height: 100 * ApplicationInfo.ratio
+            contentHeight: 60 * ApplicationInfo.ratio * model.count
+            interactive: true
+            clip: true
+            model: chooseLogin.model
+            delegate: GCDialogCheckBox {
+                id: userBox
+                text: modelData
+                checked: false
+                ButtonGroup.group: exclusiveGroup
+                Component.onCompleted: {
+                    if (exclusiveGroup)
+                        exclusiveGroup.addButton(userBox)
+                }
+                Component.onDestruction: {
+                    if (exclusiveGroup)
+                        exclusiveGroup.removeButton(userBox)
+                }
+            }
+        }
+        ButtonGroup {
+            id: exclusiveGroup
+            onClicked: {
+                if(button) chooseLogin.chosenLogin = button.text;
+            }
+        }
+    }
+    GCInputDialog {
+        id: choosePassword
+        visible: false
+        active: visible
+        anchors.fill: parent
+
+        message: qsTr("Select your password")
+        onClose: {
+            // Reinitialise info once we have logged
+            chooseLogin.chosenLogin = ""
+            chosenPassword = "";
+            choosePassword.visible = false;
+        }
+
+        button1Text: qsTr("OK")
+        button2Text: qsTr("Cancel")
+        onButton1Hit: {
+            console.log("selected password:", chosenPassword)
+            console.log("selected user name:", chooseLogin.chosenLogin)
+            clientNetworkMessages.sendLoginMessage(chooseLogin.chosenLogin, chosenPassword)
+        }
+
+        property string chosenPassword
+        content: GridView {
+            id: view
+            width: choosePassword.width - 60
+            height: 100 * ApplicationInfo.ratio
+            contentHeight: height
+
+            interactive: true
+            clip: true
+            model: Core.shuffle(["1", "2", "3", "4", "5", "6"])
+            delegate: Image {
+                id: userBox
+                source: "qrc:/gcompris/src/core/resource/difficulty" + modelData + ".svg"
+                sourceSize.width: 30
+                sourceSize.height: 30
+                
+                MouseArea {
+                    anchors.fill: parent
+                    onClicked: {
+                        choosePassword.chosenPassword = choosePassword.chosenPassword + modelData
+                    }
+                }
+            }
+        }
+    }
+
     StackView {
         id: pageView
         anchors.fill: parent
