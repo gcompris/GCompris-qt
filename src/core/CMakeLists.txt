@@ -108,6 +108,17 @@ if(TARGET ${QT_MAJOR}::WaylandClient)
   endif()
 endif()
 
+# Either make ClientNetworkMessages within ifdef in the whole code, else add it by default
+if(BUILD_SERVER)
+  add_definitions(-DWITH_SERVER)
+  list(APPEND gcompris_SRCS ClientNetworkMessages.cpp ClientNetworkMessages.h)
+  include_directories(${Protobuf_INCLUDE_DIRS})
+  include_directories(${CMAKE_CURRENT_BINARY_DIR})
+  protobuf_generate_cpp(PROTO_SRCS PROTO_HDRS gcompris.proto)
+  set_property(SOURCE ${PROTO_SRCS} ${PROTO_HDRS} PROPERTY SKIP_AUTOMOC ON)
+  list(APPEND gcompris_SRCS ${PROTO_SRCS} ${PROTO_HDRS})
+endif()
+
 if(ANDROID)
   add_library(${GCOMPRIS_EXECUTABLE_NAME} SHARED ${gcompris_SRCS})
 elseif(CMAKE_HOST_APPLE)
@@ -132,6 +143,12 @@ target_link_libraries(${GCOMPRIS_EXECUTABLE_NAME} ${used_qt_modules})
 
 if (USE_16KB_PAGESIZE)
   target_link_options(${GCOMPRIS_EXECUTABLE_NAME} PRIVATE "-Wl,-z,max-page-size=16384")
+endif()
+
+if(BUILD_SERVER)
+  target_link_libraries(gcompris_core protobuf::libprotobuf)
+  target_link_libraries(${GCOMPRIS_EXECUTABLE_NAME} protobuf::libprotobuf)
+  #todo for windows or linux? install(FILES "${Protobuf_LIBRARIES}" DESTINATION bin)
 endif()
 
 if(WITH_RCC)

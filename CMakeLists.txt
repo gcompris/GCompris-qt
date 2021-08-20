@@ -63,6 +63,22 @@ if(CMAKE_SYSTEM_NAME STREQUAL Android)
   endif()
 
   option(USE_16KB_PAGESIZE "For android, option to compile with 16 KB pages size (mandatory since Nov 2025)" OFF)
+
+  # Due to use of SOURCE_SUBDIR in FetchContent to retrieve protobuf
+  if("${CMAKE_VERSION}" VERSION_LESS "3.18.0")
+    message(FATAL_ERROR "Building GCompris for android requires CMake 3.18 minimum")
+  endif() 
+
+  # TODO: possibly should be setup by toolchain one day
+  set(QT_QMAKE_EXECUTABLE "${_qt5Core_install_prefix}/bin/qmake")
+  if(ECM_VERSION VERSION_GREATER "5.55.0")
+    set(QT_REQUIRED_VERSION 5.12.0)
+  endif()
+
+  # workaround until this fix is in released ECM
+  if(ECM_VERSION VERSION_LESS "5.15.0")
+    add_definitions(-DANDROID)
+  endif()
 endif()
 
 # Set executable filename
@@ -162,6 +178,34 @@ if(ECM_FOUND)
         message(STATUS "ECM_VERSION is ${ECM_VERSION}, icons and desktop files won't be installed.")
     endif()
 endif()
+
+option(BUILD_SERVER "Build the server along the application" ON)
+
+if(BUILD_SERVER)
+  find_package(Qt5 ${QT_REQUIRED_VERSION} REQUIRED Sql)
+
+  set(ANDROID_WIFI_BROADCAST_PERMISSION "<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\" />\n
+    <uses-permission android:name=\"android.permission.CHANGE_WIFI_MULTICAST_STATE\" />\n
+    <uses-permission android:name=\"android.permission.WAKE_LOCK\" />")
+
+  find_package(Protobuf)
+  if(ANDROID)
+    if(Protobuf_PROTOC_EXECUTABLE)
+      if(NOT TARGET protobuf::protoc)
+        add_executable(protobuf::protoc IMPORTED)
+        if(EXISTS "${Protobuf_PROTOC_EXECUTABLE}")
+          set_target_properties(protobuf::protoc PROPERTIES
+            IMPORTED_LOCATION "${Protobuf_PROTOC_EXECUTABLE}")
+        endif()
+      else()
+        message(ERROR "protobuf::protoc already exists")
+      endif()
+    else()
+      message(ERROR "PROTOC_EXECUTABLE not exists")
+    endif()
+
+  endif()
+endif(BUILD_SERVER)
 
 # Tell CMake to run moc when necessary:
 set(CMAKE_AUTOMOC ON)
