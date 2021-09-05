@@ -16,15 +16,18 @@ namespace controllers {
             newClient = new Client(masterController);
             clientSearch = new ClientSearch(masterController, databaseController);
             commandController = new CommandController(masterController, databaseController, navigationController, newClient, clientSearch);
+            newGroup = new Group(masterController);
         }
 
         MasterController *masterController { nullptr };
         CommandController *commandController { nullptr };
         DatabaseController *databaseController { nullptr };
         NavigationController *navigationController { nullptr };
+        Group *newGroup { nullptr };
+        QList<Group *> groups;
+        // remove below
         Client *newClient { nullptr };
         ClientSearch *clientSearch { nullptr };
-        QString welcomeMessage = "Welcome to the Client Management system!";
     };
 
     MasterController::MasterController(QObject *parent) :
@@ -62,9 +65,22 @@ namespace controllers {
         return implementation->clientSearch;
     }
 
-    const QString &MasterController::welcomeMessage() const
+    Group *MasterController::newGroup()
     {
-        return implementation->welcomeMessage;
+        return implementation->newGroup;
+    }
+
+    void MasterController::createGroup(cm::models::Group *group)
+    {
+        implementation->groups << group;
+        emit groupsChanged();
+        printf("in MasterController::createGroup\n");
+        implementation->databaseController->createRow("groups", group->name->value(), group->toJson());
+    }
+
+    QQmlListProperty<Group> MasterController::ui_groups()
+    {
+        return QQmlListProperty<Group>(this, implementation->groups);
     }
 
     void MasterController::selectClient(Client *client)

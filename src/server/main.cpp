@@ -1,22 +1,11 @@
 /* GCompris - main.cpp
  *
- * Copyright (C) 2016 Johnny Jazeix <jazeix@gmail.com>
+ * SPDX-FileCopyrightText: 2021 Emmanuel Charruau <echarruau@gmail.com>
  *
  * Authors:
- *   Johnny Jazeix <jazeix@gmail.com>
+ *   Emmanuel Charruau <echarruau@gmail.com>
  *
- *   This program is free software; you can redistribute it and/or modify
- *   it under the terms of the GNU General Public License as published by
- *   the Free Software Foundation; either version 3 of the License, or
- *   (at your option) any later version.
- *
- *   This program is distributed in the hope that it will be useful,
- *   but WITHOUT ANY WARRANTY; without even the implied warranty of
- *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *   GNU General Public License for more details.
- *
- *   You should have received a copy of the GNU General Public License
- *   along with this program; if not, see <http://www.gnu.org/licenses/>.
+ *   SPDX-License-Identifier: GPL-3.0-or-later
  */
 #include <QtDebug>
 #include <QApplication>
@@ -46,6 +35,7 @@
 #include <data/enumerator-decorator.h>
 #include <data/string-decorator.h>
 #include "serverMasterController/framework/command.h"
+#include <models/group.h>
 #include <models/address.h>
 #include <models/client.h>
 #include <models/client-search.h>
@@ -85,10 +75,11 @@ int main(int argc, char *argv[])
     if(!QResource::registerResource(ApplicationInfo::getFilePath("server.rcc")))
         qDebug() << "Failed to load the resource file " << ApplicationInfo::getFilePath("server.rcc");
 
-    QQmlApplicationEngine engine(QUrl("qrc:/gcompris/src/server/main.qml"));
+    QQmlApplicationEngine engine;
 
     cm::controllers::MasterController masterController;
     engine.rootContext()->setContextProperty("masterController", &masterController);
+    engine.load(QUrl("qrc:/gcompris/src/server/main.qml"));
 
     qmlRegisterType<cm::controllers::MasterController>("CM", 1, 0, "MasterController");
     qmlRegisterType<cm::controllers::NavigationController>("CM", 1, 0, "NavigationController");
@@ -96,6 +87,7 @@ int main(int argc, char *argv[])
     qmlRegisterType<cm::framework::Command>("CM", 1, 0, "Command");
     qmlRegisterType<cm::data::EnumeratorDecorator>("CM", 1, 0, "EnumeratorDecorator");
     qmlRegisterType<cm::data::StringDecorator>("CM", 1, 0, "StringDecorator");
+    qmlRegisterType<cm::models::Group>("CM", 1, 0, "Group");
     qmlRegisterType<cm::models::Address>("CM", 1, 0, "Address");
     qmlRegisterType<cm::models::Client>("CM", 1, 0, "Client");
     qmlRegisterType<cm::models::Contact>("CM", 1, 0, "Contact");
