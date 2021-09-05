@@ -1,3 +1,8 @@
+#=============================================================================
+# SPDX-FileCopyrightText: 2021 Johnny Jazeix <jazeix@gmail.com>
+#
+# SPDX-License-Identifier: BSD-3-Clause
+#=============================================================================
 include(qt_helper)
 
 set(GCOMPRIS_SERVER_EXECUTABLE_NAME gcompris-server)
@@ -22,6 +27,7 @@ set(server_SRCS
   Authentication.h
 )
 
+# server from allon
 set(server_SRCS
   serverMasterController/cm-lib_global.h
   serverMasterController/controllers/master-controller.cpp
@@ -32,6 +38,8 @@ set(server_SRCS
   serverMasterController/controllers/database-controller.h
   serverMasterController/controllers/database-controller.cpp
   serverMasterController/controllers/i-database-controller.h
+  serverMasterController/models/group.cpp
+  serverMasterController/models/group.h
   serverMasterController/models/client.cpp
   serverMasterController/models/client.h
   serverMasterController/models/address.cpp
@@ -60,7 +68,7 @@ set(server_SRCS
 )
 
 include_directories(
-  ../core/                        # messages
+  ../core/  # messages
   "${CMAKE_CURRENT_BINARY_DIR}/../core"   # to find config.h
   serverMasterController/
 )

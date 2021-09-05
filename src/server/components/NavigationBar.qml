@@ -1,3 +1,12 @@
+/* GCompris - NavigationBar.qml
+ *
+ * SPDX-FileCopyrightText: 2021 Emmanuel Charruau <echarruau@gmail.com>
+ *
+ * Authors:
+ *   Emmanuel Charruau <echarruau@gmail.com>
+ *
+ *   SPDX-License-Identifier: GPL-3.0-or-later
+ */
 import QtQuick 2.9
 import "../../core"
 
@@ -26,54 +35,40 @@ Item {
             }
             NavigationButton {
                 iconCharacter: "\uf015"
-                description: "Dashboard"
+                description: qsTr("Dashboard")
                 hoverColour: "#dc8a00"
                 onNavigationButtonClicked: masterController.ui_navigationController.goDashboardView();
             }
             NavigationButton {
                 iconCharacter: "\uf1e6"
-                description: "Connecting devices"
+                description: qsTr("Connecting devices")
                 hoverColour: "#dc8a00"
                 onNavigationButtonClicked: masterController.ui_navigationController.goDashboardView();
             }
             NavigationButton {
                 iconCharacter: "\uf681"
-                description: "Follow results"
+                description: qsTr("Follow results")
                 hoverColour: "#dccd00"
                 onNavigationButtonClicked: masterController.ui_navigationController.goCreateClientView();
             }
             NavigationButton {
                 iconCharacter: "\uf0c0"
-                description: "Managing Pupils"
+                description: qsTr("Managing Pupils")
                 hoverColour: "#8aef63"
                 onNavigationButtonClicked: masterController.ui_navigationController.goManagePupilsView();
             }
             NavigationButton {
                 iconCharacter: "\uf073"
-                description: "Manages Workplane"
+                description: qsTr("Manages Workplane")
                 hoverColour: "#8aef63"
                 onNavigationButtonClicked: masterController.ui_navigationController.goManageWorkPlanView();
             }
             NavigationButton {
                 iconCharacter: "\uf0ae"
-                description: "Manages Sequences"
+                description: qsTr("Manages Sequences")
                 hoverColour: "#8aef63"
                 onNavigationButtonClicked: masterController.ui_navigationController.goFindClientView();
             }
-
-
-//            NavigationButton {
-//                iconCharacter: "\uf0c0"
-//                description: "New Client"
-//                hoverColour: "#dccd00"
-//                onNavigationButtonClicked: masterController.ui_navigationController.goCreateClientView();
-//            }
-//            NavigationButton {
-//                iconCharacter: "\uf002"
-//                description: "Find Client"
-//                hoverColour: "#8aef63"
-//                onNavigationButtonClicked: masterController.ui_navigationController.goFindClientView();
-//            }
         }
     }
 }

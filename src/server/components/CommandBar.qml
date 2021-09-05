@@ -1,3 +1,12 @@
+/* GCompris - CommandBar.qml
+ *
+ * SPDX-FileCopyrightText: 2021 Emmanuel Charruau <echarruau@gmail.com>
+ *
+ * Authors:
+ *   Emmanuel Charruau <echarruau@gmail.com>
+ *
+ *   SPDX-License-Identifier: GPL-3.0-or-later
+ */
 import QtQuick 2.9
 
 import "../components"

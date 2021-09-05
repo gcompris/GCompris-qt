@@ -1,4 +1,13 @@
-import QtQuick 2.12
+/* GCompris - ManagePupilsView.qml
+*
+* SPDX-FileCopyrightText: 2021 Emmanuel Charruau <echarruau@gmail.com>
+*
+* Authors:
+*   Emmanuel Charruau <echarruau@gmail.com>
+*
+*   SPDX-License-Identifier: GPL-3.0-or-later
+*/
+import QtQuick 2.9
 import QtQuick.Layouts 1.12
 import QtQml.Models 2.12
 
@@ -9,14 +18,10 @@ import QtQuick.Controls 2.2
 import "."
 import "../server.js" as Activity
 
-
-
 Item {
     id: managePupilsView
 
-
     signal pupilsNamesListSelected(var pupilsNamesList)
-
 
     Connections {
         target: masterController.ui_navigationController
@@ -25,55 +30,46 @@ Item {
         onGoRemovePupilsDialog: removePupilsDialog.open()
     }
 
-
     ListView {
         id: selectedPupilsListview
     }
-
 
     Rectangle {
         anchors.fill: parent
         color: Style.colourBackground
         Text {
             anchors.centerIn: parent
-            text: "Manage Pupils View"
+            text: qsTr("Manage Pupils View")
         }
     }
 
     TopBanner {
         id: topBanner
-
-        text: "Groups and pupils management"
+        text: qsTr("Groups and pupils management")
     }
 
     ManageGroupsBar {
         id: pupilsNavigationBar
-
         anchors.top: topBanner.bottom
     }
 
     Rectangle {
         id: managePupilsViewRectangle
-
         anchors.left: pupilsNavigationBar.right
         anchors.top: topBanner.bottom
         anchors.right: parent.right
         anchors.bottom: parent.bottom
-        width: managePupilsView.width  - pupilsNavigationBar.width
+        width: managePupilsView.width - pupilsNavigationBar.width
 
-        //color: "red"
-
-
-        ColumnLayout{
+        ColumnLayout {
             id: pupilsDetailsColumn
 
             spacing: 2
             anchors.top: parent.top
             width: parent.width
 
-            property int pupilNameColWidth : pupilsDetailsColumn.width/3
-            property int yearOfBirthColWidth : pupilsDetailsColumn.width/8
-
+            property int pupilNameColWidth : pupilsDetailsColumn.width / 3
+            property int yearOfBirthColWidth : pupilsDetailsColumn.width / 8
 
             //pupils header
             Rectangle {
@@ -81,7 +77,6 @@ Item {
 
                 height: 60
                 width: parent.width
-
 
                 RowLayout {
                     width: managePupilsViewRectangle.width - 10
@@ -94,7 +89,7 @@ Item {
                         Text {
                             anchors.verticalCenter: parent.verticalCenter
                             color: Style.colourNavigationBarBackground
-                            text: "Pupils Names"
+                            text: qsTr("Pupils Names")
                             font.bold: true
                             leftPadding: 60
                             topPadding: 20
@@ -107,7 +102,7 @@ Item {
                         Text {
                             anchors.verticalCenter: parent.verticalCenter
                             anchors.horizontalCenter: parent.horizontalCenter
-                            text: "Year of Birth"
+                            text: qsTr("Year of Birth")
                             font.bold: true
                             color: Style.colourNavigationBarBackground
                             topPadding: 20
@@ -121,7 +116,7 @@ Item {
                             anchors.verticalCenter: parent.verticalCenter
                             anchors.left: parent.left
                             leftPadding: 10
-                            text: "Groups"
+                            text: qsTr("Groups")
                             font.bold: true
                             color: Style.colourNavigationBarBackground
                             topPadding: 20
@@ -161,16 +156,16 @@ Item {
 
                         hoverEnabled: true
                         onEntered: {    //modifyPupilCommandsRectangle.visible = true
-                                        pupilDetailsRectangle.color = Style.colourPanelBackgroundHover
-                                        pupilDetailsRectangle.editPupilRectangleVisible = true
-                                        pupilDetailsRectangle.optionsPupilRectangleVisible = true
+                            pupilDetailsRectangle.color = Style.colourPanelBackgroundHover
+                            pupilDetailsRectangle.editPupilRectangleVisible = true
+                            pupilDetailsRectangle.optionsPupilRectangleVisible = true
 
                         }
                         onExited: {
-                                        ///modifyPupilCommandsRectangle.visible = false
-                                        pupilDetailsRectangle.color = Style.colourBackground
-                                        pupilDetailsRectangle.editPupilRectangleVisible = false
-                                        pupilDetailsRectangle.optionsPupilRectangleVisible = false
+                            ///modifyPupilCommandsRectangle.visible = false
+                            pupilDetailsRectangle.color = Style.colourBackground
+                            pupilDetailsRectangle.editPupilRectangleVisible = false
+                            pupilDetailsRectangle.optionsPupilRectangleVisible = false
                         }
 
                         RowLayout {
@@ -234,8 +229,8 @@ Item {
                                     anchors.centerIn: parent
                                     color: "grey"
                                     font {
-                                       family: Style.fontAwesome
-                                       pixelSize: Style.pixelSizeNavigationBarIcon / 2
+                                        family: Style.fontAwesome
+                                        pixelSize: Style.pixelSizeNavigationBarIcon / 2
                                     }
                                 }
                                 MouseArea {
@@ -247,16 +242,16 @@ Item {
                                     //anchors.fill: parent
                                     hoverEnabled: true
                                     onEntered: {    //modifyPupilCommandsRectangle.visible = true
-                                                    editIcon.color = Style.colourNavigationBarBackground //Style.colourPanelBackgroundHover
-                                                    //pupilDetailsRectangle.editPupilRectangleVisible = true
-                                                    //pupilDetailsRectangle.optionsPupilRectangleVisible = true
-                                                    print("sdfsfsdf")
+                                        editIcon.color = Style.colourNavigationBarBackground //Style.colourPanelBackgroundHover
+                                        //pupilDetailsRectangle.editPupilRectangleVisible = true
+                                        //pupilDetailsRectangle.optionsPupilRectangleVisible = true
+                                        print("sdfsfsdf")
                                     }
                                     onExited: {
-                                                    ///modifyPupilCommandsRectangle.visible = false
-                                                    editIcon.color = Style.colourCommandBarFontDisabled //Style.colourBackground
-                                                    //pupilDetailsRectangle.editPupilRectangleVisible = false
-                                                    //pupilDetailsRectangle.optionsPupilRectangleVisible = false
+                                        ///modifyPupilCommandsRectangle.visible = false
+                                        editIcon.color = Style.colourCommandBarFontDisabled //Style.colourBackground
+                                        //pupilDetailsRectangle.editPupilRectangleVisible = false
+                                        //pupilDetailsRectangle.optionsPupilRectangleVisible = false
                                     }
                                     onClicked: {
                                         modifyPupilDialog.pupilName = modelData[0]
@@ -264,7 +259,7 @@ Item {
                                         modifyPupilDialog.pupilsListIndex = index
                                         modifyPupilDialog.open()
                                     }
-                               }
+                                }
                             }
                             Rectangle {
                                 id: optionsPupilRectangle
@@ -311,7 +306,7 @@ Item {
                                         //pupilDetailsRectangle.editPupilRectangleVisible = false
                                         //pupilDetailsRectangle.optionsPupilRectangleVisible = false
                                     }
-                               }
+                                }
                             }
                         }
                     }
@@ -339,7 +334,6 @@ Item {
         commandList: masterController.ui_commandController.ui_managePupilsViewContextCommands
     }
 
-
     AddModifyPupilDialog {
         id: addPupilDialog
 
@@ -348,10 +342,7 @@ Item {
         onAccepted: {
             pupilsDetailsRepeater.model = Activity.pupilsNamesArray
         }
-
-
     }
-
 
     AddPupilsFromListDialog {
         id: addPupilsFromListDialog
@@ -359,7 +350,6 @@ Item {
         onPupilsDetailsAdded: {
             pupilsDetailsRepeater.model = Activity.pupilsNamesArray
         }
-
     }
 
     RemovePupilsDialog {

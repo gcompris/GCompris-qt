@@ -1,7 +1,17 @@
-import QtQuick 2.6
+/* GCompris - AddModifyGroupDialog.qml
+ *
+ * SPDX-FileCopyrightText: 2021 Emmanuel Charruau <echarruau@gmail.com>
+ *
+ * Authors:
+ *   Emmanuel Charruau <echarruau@gmail.com>
+ *
+ *   SPDX-License-Identifier: GPL-3.0-or-later
+ */
+import QtQuick 2.9
 import "../../core"
 import QtQuick.Controls 2.12
 import "../server.js" as Activity
+import CM 1.0
 
 Popup {
     id: addModifyGroupDialog
@@ -10,7 +20,9 @@ Popup {
     property string inputText: "Group Name to be modified in calling element."
     property bool textInputReadOnly: false
 
-    signal accepted(string textInputValue)
+    property Group group: masterController.ui_newGroup
+
+    signal accepted(Group group)
 
     anchors.centerIn: Overlay.overlay
     width: 600
@@ -31,23 +43,15 @@ Popup {
         }
     }
 
-    TextInput {
+    StringEditorSingleLine {
         id: addModifyGroupNameTextInput
-
-        x: parent.width / 10
-        y: parent.height / 3
-        text: inputText
-        cursorVisible: false
-        font {
-            family: Style.fontAwesome
-            pixelSize: 20
+        stringDecorator: group.ui_name
+        anchors {
+            top: groupDialogText.bottom
+            left: parent.left
+            right: parent.right
         }
-        selectByMouse: true
-        focus: true
-        readOnly: addModifyGroupDialog.textInputReadOnly
-
-        Component.onCompleted: addModifyGroupNameTextInput.selectAll()
-
+        Component.onCompleted: addModifyGroupNameTextInput.forceActiveFocus()
     }
 
     Rectangle {
@@ -67,8 +71,8 @@ Popup {
         anchors.bottom: parent.bottom
         text: qsTr("Save")
         onClicked: {
-            console.log("---- " + addModifyGroupNameTextInput.text)
-            addModifyGroupDialog.accepted(addModifyGroupNameTextInput.text)
+            console.log("----", group.ui_name.ui_value)
+            addModifyGroupDialog.accepted(group)
         }
 
     }

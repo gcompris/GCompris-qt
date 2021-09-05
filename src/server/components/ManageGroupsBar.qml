@@ -1,6 +1,14 @@
+/* GCompris - ManageGroupsBar.qml
+ *
+ * SPDX-FileCopyrightText: 2021 Emmanuel Charruau <echarruau@gmail.com>
+ *
+ * Authors:
+ *   Emmanuel Charruau <echarruau@gmail.com>
+ *
+ *   SPDX-License-Identifier: GPL-3.0-or-later
+ */
 import QtQuick 2.9
 import QtQuick.Layouts 1.12
-//import QtQuick.Controls 1.4
 import "../../core"
 import QtQuick.Dialogs 1.3
 import QtQuick.Controls 2.3
@@ -29,7 +37,7 @@ Item {
         border.width: 1
         border.color: "lightgrey"     
 
-        ColumnLayout{
+        ColumnLayout {
             id: groupNames
 
             spacing: 2
@@ -39,7 +47,6 @@ Item {
 
             //groups header
             Rectangle {
-
                 id: test
                 height: 60
                 width: parent.width
@@ -86,6 +93,7 @@ Item {
             Repeater {
                 id: groupsNamesRepeater
                 model: Activity.groupsNamesArray
+                //model: masterController.ui_groups
 
                 Rectangle {
                     id: groupNameRectangle
@@ -143,6 +151,7 @@ Item {
                                 anchors.verticalCenter: parent.verticalCenter
 
                                 text: modelData
+                                // Use this when using groups model: text: modelData.ui_name.ui_value
                                 color: "grey"
                                 leftPadding: 5
                                 elide: Text.ElideRight
@@ -286,7 +295,7 @@ Item {
 
                                     property int groupNameIndex
 
-                                    label: qsTr("Are you sure you want to remove the group")
+                                    label: qsTr("Are you sure you want to remove the group?")
                                     inputText: Activity.groupsNamesArray[groupNameIndex]
 
                                     textInputReadOnly: true
@@ -301,16 +310,8 @@ Item {
                                     }
                                 }
                             }
-
                         }
-
-
-
-
                     }
-
-
-
                 }
             }
         }
@@ -357,12 +358,14 @@ Item {
                 inputText: qsTr("Group name")
 
                 onAccepted: {
-                   console.log("save new group..")
-                   console.log(textInputValue)
-                   Activity.groupsNamesArray.push(textInputValue)
-                   console.log(Activity.groupsNamesArray)
-                   groupsNamesRepeater.model = Activity.groupsNamesArray
-                   addGroupDialog.close()
+                    console.log("save new group", group, group.ui_name, group.ui_name.ui_value)
+                    // Add to database the group
+                    masterController.createGroup(group)
+                    addGroupDialog.close()
+                    // Remove those 3 lines when we use masterController.ui_groups as model
+                    Activity.groupsNamesArray.push(group.ui_name.ui_value)
+                    console.log(Activity.groupsNamesArray)
+                    groupsNamesRepeater.model = Activity.groupsNamesArray
                 }
             }
         }

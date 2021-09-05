@@ -1,26 +1,14 @@
 /* GCompris - server.js
  *
- * Copyright (C) 2018 YOUR NAME <xx@yy.org>
+ * SPDX-FileCopyrightText: 2021 Emmanuel Charruau <echarruau@gmail.com>
  *
  * Authors:
- *   <THE GTK VERSION AUTHOR> (GTK+ version)
- *   "YOUR NAME" <YOUR EMAIL> (Qt Quick port)
+ *   Emmanuel Charruau <echarruau@gmail.com>
  *
- *   This program is free software; you can redistribute it and/or modify
- *   it under the terms of the GNU General Public License as published by
- *   the Free Software Foundation; either version 3 of the License, or
- *   (at your option) any later version.
- *
- *   This program is distributed in the hope that it will be useful,
- *   but WITHOUT ANY WARRANTY; without even the implied warranty of
- *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *   GNU General Public License for more details.
- *
- *   You should have received a copy of the GNU General Public License
- *   along with this program; if not, see <https://www.gnu.org/licenses/>.
+ *   SPDX-License-Identifier: GPL-3.0-or-later
  */
 .pragma library
-.import QtQuick 2.6 as Quick
+.import QtQuick 2.9 as Quick
 
 var currentLevel = 0
 var numberOfLevel = 4
@@ -36,7 +24,7 @@ groupsNamesArray = ["CP","CE1","CE2","Judo","Théâtre"]
 groupsNamesArray.push("Chant")
 
 var pupilsNamesArray = [["Mailys Urbain","2004","CP-CE1-CE2-Judo-Théâtre"],
-                        ["Lucienne Lucie","2003","CP-CE1-CE2-Judo-Théâtre"],
+                       ["Lucienne Lucie","2003","CP-CE1-CE2-Judo-Théâtre"],
                        ["France Juste","2003","CP-CE1-CE2"],
                        ["Sasha Lilou","2001","CP-CE1-CE2"],
                        ["Karine Mathilde","2001","CE2-Judo-Théâtre"],
@@ -70,9 +58,7 @@ function addPupilsNamesFromList(pupilsDetailsStr) {
             if (groupsNamesArray.indexOf(group) === -1) {
                 console.log("Failed to add unexisting group. Line " +  lineIndex + " " + group)
             }
-
         }
-
 
         reformatedPupilDetailsArray.push(pupilDetails[0].toString())
         reformatedPupilDetailsArray.push(pupilDetails[1].toString())
@@ -80,11 +66,8 @@ function addPupilsNamesFromList(pupilsDetailsStr) {
 
         addedPupilsNamesArray.push(reformatedPupilDetailsArray)
 
-
         console.log(JSON.stringify(reformatedPupilDetailsArray))
-
     }
-
 
     if (pupilsNamesArray.length === 0) {
         console.log("dummy")
@@ -93,48 +76,10 @@ function addPupilsNamesFromList(pupilsDetailsStr) {
         pupilsNamesArray = pupilsNamesArray.concat(addedPupilsNamesArray)
     }
 
-
     console.log("-----------------------------------------------------------")
-
     console.log(JSON.stringify(pupilsNamesArray))
-
-        console.log("-----------------------------------------------------------")
-
-        console.log(JSON.stringify(pupilsNamesArray[0]))
-
-
-}
-
-
-function start(items_) {
-    items = items_
-    currentLevel = 0
-    initLevel()
-}
-
-function stop() {
-}
-
-function initLevel() {
-    items.bar.level = currentLevel + 1
-
-
-
-
-}
-
-function nextLevel() {
-    if(numberOfLevel <= ++currentLevel) {
-        currentLevel = 0
-    }
-    initLevel();
-}
-
-function previousLevel() {
-    if(--currentLevel < 0) {
-        currentLevel = numberOfLevel - 1
-    }
-    initLevel();
+    console.log("-----------------------------------------------------------")
+    console.log(JSON.stringify(pupilsNamesArray[0]))
 }
 
 function savePupilNameGroups(pupilIndex) {

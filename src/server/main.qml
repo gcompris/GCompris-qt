@@ -1,22 +1,11 @@
 /* GCompris - main.qml
  *
- * Copyright (C) 2016 Johnny Jazeix <jazeix@gmail.com>
+ * SPDX-FileCopyrightText: 2021 Emmanuel Charruau <echarruau@gmail.com>
  *
  * Authors:
- *   Johnny Jazeix <jazeix@gmail.com>
+ *   Emmanuel Charruau <echarruau@gmail.com>
  *
- *   This program is free software; you can redistribute it and/or modify
- *   it under the terms of the GNU General Public License as published by
- *   the Free Software Foundation; either version 3 of the License, or
- *   (at your option) any later version.
- *
- *   This program is distributed in the hope that it will be useful,
- *   but WITHOUT ANY WARRANTY; without even the implied warranty of
- *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *   GNU General Public License for more details.
- *
- *   You should have received a copy of the GNU General Public License
- *   along with this program; if not, see <http://www.gnu.org/licenses/>.
+ *   SPDX-License-Identifier: GPL-3.0-or-later
  */
 import QtQuick 2.2
 import QtQuick.Window 2.1
@@ -37,8 +26,6 @@ import "components"
  * Handles application start (Component.onCompleted) and shutdown (onClosing)
  * on the QML layer.
  *
- * Contains the central GCAudio objects audio effects and audio voices.
- *
  * Contains the top level StackView presenting and animating GCompris'
  * full screen views.
  *
@@ -54,9 +41,6 @@ Window {
     title: qsTr("GCompris server")
 
     /// @cond INTERNAL_DOCS
-
-    property var applicationState: Qt.application.state
-
     Component.onCompleted: {
         contentFrame.replace("views/DashboardView.qml");
     }

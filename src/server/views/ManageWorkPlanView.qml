@@ -1,3 +1,12 @@
+/* GCompris - ManageWorkPlanView.qml
+ *
+ * SPDX-FileCopyrightText: 2021 Emmanuel Charruau <echarruau@gmail.com>
+ *
+ * Authors:
+ *   Emmanuel Charruau <echarruau@gmail.com>
+ *
+ *   SPDX-License-Identifier: GPL-3.0-or-later
+ */
 import QtQuick 2.12
 import QtQuick.Layouts 1.12
 import QtQml.Models 2.12
@@ -9,9 +18,6 @@ import QtQuick.Controls 2.2
 import "."
 import "../server.js" as Activity
 
-
-
-
 Item {
 
   //  property Client newClient: masterController.ui_newClient
@@ -21,7 +27,7 @@ Item {
         color: Style.colourBackground
         Text {
             anchors.centerIn: parent
-            text: "Manage Xork Plan"
+            text: "Manage Work Plan"
         }
     }
 

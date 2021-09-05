@@ -41,7 +41,11 @@ namespace controllers {
 
         bool createTables()
         {
-            return createJsonTable("client");
+            bool res = createJsonTable("users");
+            res &= createJsonTable("groups");
+            res &= createJsonTable("group_users");
+            res &= createJsonTable("activityData");
+            return res;
         }
 
         bool createJsonTable(const QString &tableName) const
