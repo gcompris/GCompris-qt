@@ -1,0 +1,7 @@
+Dependencies: {}
+
+Environment:
+  KDECI_BUILD: "TRUE"
+
+Options:
+  setup-dbus-session: False
