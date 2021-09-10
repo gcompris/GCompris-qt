@@ -95,7 +95,7 @@ ActivityBase {
 
                 opacity: index < items.numberOfDisc ? 1 : 0
                 onHeightChanged: Activity.sceneSizeChanged()
-                property alias color: disc.color
+                property string baseColor: "#808080"
                 radius: height * 0.5
                 property bool mouseEnabled: true
                 property alias discMouseArea: discMouseArea
@@ -104,6 +104,7 @@ ActivityBase {
 
                 property alias text: textSimplified.text
 
+                color: Qt.darker(baseColor, 1.2)
                 anchors.horizontalCenter: parent.horizontalCenter
 
                 Behavior on y {
@@ -122,13 +123,13 @@ ActivityBase {
                     width: parent.width - 10 * ApplicationInfo.ratio
                     height: parent.height - 6 * ApplicationInfo.ratio
                     radius: width * 0.5
-                    color: "#2AFFFFFF"
+                    color: Qt.lighter(disc.baseColor, 1.2)
                     anchors.centerIn: parent
 
                     GCText {
                         id: textSimplified
                         visible: activityMode == "simplified"
-                        color: "#b4000000"
+                        color: "#373737"
                         anchors.verticalCenter: parent.verticalCenter
                         anchors.rightMargin: 10 * ApplicationInfo.ratio
                         anchors.right: parent.right

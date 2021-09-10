@@ -116,7 +116,7 @@ function initLevel() {
         for(var i = 0 ; i < (items.numberOfDisc-nbMaxItemsByTower); ++i) {
             var index = Math.floor(Math.random() * symbols.length);
             items.discRepeater.itemAt(i).text = symbols[index];
-            items.discRepeater.itemAt(i).color = colors[index];
+            items.discRepeater.itemAt(i).baseColor = colors[index];
         }
         // Fill the text discs avoiding duplicates
         var currentAnswerId = items.numberOfDisc-nbMaxItemsByTower;
@@ -125,7 +125,7 @@ function initLevel() {
             var id = Math.floor(Math.random() * (items.numberOfDisc-nbMaxItemsByTower));
             if(goodAnswerIndices.indexOf(id) == -1) {
                 items.discRepeater.itemAt(currentAnswerId).text = items.discRepeater.itemAt(id).text;
-                items.discRepeater.itemAt(currentAnswerId).color = items.discRepeater.itemAt(id).color;
+                items.discRepeater.itemAt(currentAnswerId).baseColor = items.discRepeater.itemAt(id).baseColor;
                 goodAnswerIndices.push(id);
                 currentAnswerId ++;
             }
@@ -176,7 +176,7 @@ function placeDiscsAtOrigin() {
     if(activityMode == "real") {
         for(var i = 0 ; i < items.numberOfDisc ; ++i) {
             placeDisc(items.discRepeater.itemAt(i), items.towerModel.itemAt(0))
-            items.discRepeater.itemAt(i).color = colors[i];
+            items.discRepeater.itemAt(i).baseColor = colors[i];
         }
     }
     else {
