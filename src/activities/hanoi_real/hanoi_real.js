@@ -31,21 +31,21 @@ var symbols = [
 ]
 
 var colors = [
-    "#e4230b", // red
-    "#2cd60a", // green
-    "#0b62e4", // blue
-    "#ddb20b", // yellow
-    "#e40bb6", // magenta
-    "#0bb1e4", // cyan
-    "#e4900b", // orange
-    "#bc0be4", // purple
-    "#e43e0b", // red2
-    "#0ad618", // green2
-    "#2749f5", // blue2
-    "#ddc70b", // yellow2
-    "#e40b80", // magenta2
-    "#0b80e4", // cyan2
-    "#e4710b"  // orange2
+    "#e41c1c", // red 0
+    "#79e41c", // green 65
+    "#1c8fe4", // blue 146
+    "#e4bb1c", // yellow 34
+    "#e41c92", // magenta 230
+    "#1dc0e3", // cyan 135
+    "#e3711d", // orange 18
+    "#a91de3", // purple 200
+    "#e44b1c", // red2 10
+    "#1ce463", // green2 100
+    "#1c4ce4", // blue2 160
+    "#e4e01c", // yellow2 42
+    "#f20ee5", // magenta2 215
+    "#1de3da", // cyan2 126
+    "#e4921c"  // orange2 25
 ]
 
 var nbTowersLessExpectedAndResultOnes
