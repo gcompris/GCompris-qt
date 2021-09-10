@@ -197,9 +197,11 @@ ActivityBase {
                             Activity.url + "disc_support-green.svg"
                         else
                             Activity.url + "disc_support.svg"
-                        sourceSize.width: background.width / (towerModel.model + 2.5)
+                        width: background.width / (towerModel.model + 2.5)
                         fillMode: Image.Stretch
                         height: background.height - instruction.height - 2 * bar.height
+                        sourceSize.width: width
+                        sourceSize.height: height
                     }
                     z: 3
                 }
