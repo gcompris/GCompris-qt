@@ -1,3 +1,4 @@
+#include <algorithm>
 #include "master-controller.h"
 
 using namespace cm::models;
@@ -16,15 +17,18 @@ namespace controllers {
             newClient = new Client(masterController);
             clientSearch = new ClientSearch(masterController, databaseController);
             commandController = new CommandController(masterController, databaseController, navigationController, newClient, clientSearch);
-            newGroup = new Group(masterController);
+
+            loadDatabase();
         }
 
+        void loadDatabase() {
+            databaseController->retrieveAllExistingGroups(groups);
+        }
         MasterController *masterController { nullptr };
         CommandController *commandController { nullptr };
         DatabaseController *databaseController { nullptr };
         NavigationController *navigationController { nullptr };
-        Group *newGroup { nullptr };
-        QList<Group *> groups;
+        QList<GroupData *> groups;
         // remove below
         Client *newClient { nullptr };
         ClientSearch *clientSearch { nullptr };
@@ -65,22 +69,44 @@ namespace controllers {
         return implementation->clientSearch;
     }
 
-    Group *MasterController::newGroup()
+    void MasterController::createGroup(const QString &groupName)
     {
-        return implementation->newGroup;
-    }
-
-    void MasterController::createGroup(cm::models::Group *group)
-    {
-        implementation->groups << group;
-        emit groupsChanged();
         printf("in MasterController::createGroup\n");
-        implementation->databaseController->createRow("groups", group->name->value(), group->toJson());
+        if(implementation->databaseController->addGroup(groupName)) {
+            GroupData *group = new GroupData();
+            group->setName(groupName);
+            implementation->groups << group;
+            emit groupsChanged();
+       }
+        else {
+            qDebug() << "Unable to create group" << groupName;
+        }
+   }
+
+    void MasterController::deleteGroup(const QString &groupName)
+    {
+        printf("in MasterController::deleteGroup\n");
+        
+        if(implementation->databaseController->deleteGroup(groupName)) {
+            auto groupIterator = std::find_if(std::begin(implementation->groups), std::end(implementation->groups),
+                                           [&groupName](GroupData * group) {
+                                               return group->getName() == groupName;
+                                           });
+            if(groupIterator != std::end(implementation->groups)) {
+                GroupData *group = *groupIterator;
+                implementation->groups.removeOne(group);
+                emit groupsChanged();
+                delete group;
+            }
+        }
+        else {
+            qDebug() << "Unable to delete group" << groupName;
+        }
     }
 
-    QQmlListProperty<Group> MasterController::ui_groups()
+    QQmlListProperty<GroupData> MasterController::ui_groups()
     {
-        return QQmlListProperty<Group>(this, implementation->groups);
+        return QQmlListProperty<GroupData>(this, implementation->groups);
     }
 
     void MasterController::selectClient(Client *client)

@@ -92,8 +92,7 @@ Item {
             //groups names
             Repeater {
                 id: groupsNamesRepeater
-                model: Activity.groupsNamesArray
-                //model: masterController.ui_groups
+                model: masterController.ui_groups
 
                 Rectangle {
                     id: groupNameRectangle
@@ -149,9 +148,7 @@ Item {
                                 id: groupNameText
 
                                 anchors.verticalCenter: parent.verticalCenter
-
-                                text: modelData
-                                // Use this when using groups model: text: modelData.ui_name.ui_value
+                                text: modelData.name
                                 color: "grey"
                                 leftPadding: 5
                                 elide: Text.ElideRight
@@ -228,11 +225,7 @@ Item {
                                                anchors.fill: parent
                                                hoverEnabled: true
                                                onClicked: {
-                                                   modifyGroupDialog.inputText = modelData
-                                                   console.log("--" + index)
-                                                   modifyGroupDialog.groupNameIndex = index
                                                    modifyGroupDialog.open()
-                                                   console.log("clicked ...")
                                                }
                                                onEntered: { editIcon.color = Style.colourNavigationBarBackground }
                                                onExited: { editIcon.color = Style.colourCommandBarFontDisabled }
@@ -260,9 +253,7 @@ Item {
                                                hoverEnabled: true
                                                onClicked: {
                                                    addAGroupText.color = Style.colourNavigationBarBackground
-                                                   removeGroupDialog.groupNameIndex = index
                                                    removeGroupDialog.open()
-                                                   console.log("clicked ...")
                                                }
                                                onEntered: { trashIcon.color = Style.colourNavigationBarBackground }
                                                onExited: { trashIcon.color = Style.colourCommandBarFontDisabled }
@@ -275,38 +266,33 @@ Item {
                                 AddModifyGroupDialog {
                                     id: modifyGroupDialog
 
-                                    property int groupNameIndex
-
-                                    label: "Modify Group Name"
-                                    inputText: "testdefault"
-
+                                    property string initialGroupName
+                                    label: qsTr("Modify Group Name")
+                                    groupName: modelData.name
+                                    onOpened: {
+                                        initialGroupName = modelData.name
+                                        groupName = initialGroupName
+                                    }
                                     onAccepted: {
-                                       console.log("save.dfg..")
-                                       console.log(textInputValue)
-                                       Activity.groupsNamesArray[groupNameIndex] = textInputValue
-                                       console.log(Activity.groupsNamesArray)
-                                       groupsNamesRepeater.model = Activity.groupsNamesArray
-                                       modifyGroupDialog.close()
+                                        console.log("update group from", initialGroupName, "to", groupName)
+                                        // Update to database the group
+                                        //todo
+                                        //masterController.updateGroup(initialGroupName, groupName)
+                                        modifyGroupDialog.close()
                                     }
                                 }
 
                                 AddModifyGroupDialog {
                                     id: removeGroupDialog
-
-                                    property int groupNameIndex
-
-                                    label: qsTr("Are you sure you want to remove the group?")
-                                    inputText: Activity.groupsNamesArray[groupNameIndex]
-
                                     textInputReadOnly: true
+                                    label: qsTr("Are you sure you want to remove the group?")
+                                    groupName: modelData.name
 
                                     onAccepted: {
-                                       console.log("save.dfg..")
-                                       console.log(textInputValue)
-                                       Activity.groupsNamesArray[groupNameIndex] = textInputValue
-                                       console.log(Activity.groupsNamesArray)
-                                       groupsNamesRepeater.model = Activity.groupsNamesArray
-                                       modifyGroupDialog.close()
+                                        console.log("delete group", groupName)
+                                        // Delete to database the group
+                                        masterController.deleteGroup(groupName)
+                                        removeGroupDialog.close()
                                     }
                                 }
                             }
@@ -358,14 +344,10 @@ Item {
                 inputText: qsTr("Group name")
 
                 onAccepted: {
-                    console.log("save new group", group, group.ui_name, group.ui_name.ui_value)
+                    console.log("save new group", groupName)
                     // Add to database the group
-                    masterController.createGroup(group)
+                    masterController.createGroup(groupName)
                     addGroupDialog.close()
-                    // Remove those 3 lines when we use masterController.ui_groups as model
-                    Activity.groupsNamesArray.push(group.ui_name.ui_value)
-                    console.log(Activity.groupsNamesArray)
-                    groupsNamesRepeater.model = Activity.groupsNamesArray
                 }
             }
         }

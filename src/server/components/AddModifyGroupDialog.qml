@@ -20,9 +20,8 @@ Popup {
     property string inputText: "Group Name to be modified in calling element."
     property bool textInputReadOnly: false
 
-    property Group group: masterController.ui_newGroup
-
-    signal accepted(Group group)
+    property alias groupName: addModifyGroupNameTextInput.text
+    signal accepted(string groupName)
 
     anchors.centerIn: Overlay.overlay
     width: 600
@@ -43,14 +42,19 @@ Popup {
         }
     }
 
-    StringEditorSingleLine {
+    TextInput {
         id: addModifyGroupNameTextInput
-        stringDecorator: group.ui_name
+        x: parent.width / 10
+        y: parent.height / 3
+        cursorVisible: false
+        selectByMouse: true
+        focus: true
         anchors {
             top: groupDialogText.bottom
             left: parent.left
             right: parent.right
         }
+        readOnly: textInputReadOnly
         Component.onCompleted: addModifyGroupNameTextInput.forceActiveFocus()
     }
 
@@ -71,8 +75,8 @@ Popup {
         anchors.bottom: parent.bottom
         text: qsTr("Save")
         onClicked: {
-            console.log("----", group.ui_name.ui_value)
-            addModifyGroupDialog.accepted(group)
+            console.log("----", groupName)
+            addModifyGroupDialog.accepted(groupName)
         }
 
     }

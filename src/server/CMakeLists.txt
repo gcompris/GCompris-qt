@@ -38,8 +38,8 @@ set(server_SRCS
   serverMasterController/controllers/database-controller.h
   serverMasterController/controllers/database-controller.cpp
   serverMasterController/controllers/i-database-controller.h
-  serverMasterController/models/group.cpp
-  serverMasterController/models/group.h
+  serverMasterController/models/GroupData.cpp
+  serverMasterController/models/GroupData.h
   serverMasterController/models/client.cpp
   serverMasterController/models/client.h
   serverMasterController/models/address.cpp

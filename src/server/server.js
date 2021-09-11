@@ -15,13 +15,8 @@ var numberOfLevel = 4
 var items
 
 var dataArray = [{"color":"red"},{"color":"blue"},{"color":"yellow"}]
-var groupsNamesArray = []
 
 var debugString = "Aurélien2 Richelieu;2004;CP-CE1-CE2-Judo-Théâtre\nNadia Comtois;2003;CP-CE1-CE2-Judo-Théâtre-Maison\nRaphaël Thibault;2003;CP-CE1-CE2\nAnastasie Firmin;2001;CP-CE1-CE2\nArianne Vincent;2001;CE2-Judo-Théâtre\nMarlène Porcher;2001;CP-CE1-CE2-Théâtre\nGervais Plourde;2001;CP-CE2-Judo-Théâtre\nMadeline François;2002;CP-CE1-CE2-Théâtre\nSolange Géroux;2003;CP-CE2-Judo-Théâtre-volley\nAxel Deniau;2002;CP-CE2-Judo-Théâtre"
-
-groupsNamesArray = ["CP","CE1","CE2","Judo","Théâtre"]
-
-groupsNamesArray.push("Chant")
 
 var pupilsNamesArray = [["Mailys Urbain","2004","CP-CE1-CE2-Judo-Théâtre"],
                        ["Lucienne Lucie","2003","CP-CE1-CE2-Judo-Théâtre"],

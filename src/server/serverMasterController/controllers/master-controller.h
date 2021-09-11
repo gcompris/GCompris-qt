@@ -11,7 +11,7 @@
 #include <controllers/navigation-controller.h>
 #include <models/client.h>
 #include <models/client-search.h>
-#include <models/group.h>
+#include <models/GroupData.h>
 
 namespace cm {
 namespace controllers {
@@ -23,10 +23,9 @@ namespace controllers {
         Q_PROPERTY(cm::controllers::NavigationController *ui_navigationController READ navigationController CONSTANT)
         Q_PROPERTY(cm::controllers::CommandController *ui_commandController READ commandController CONSTANT)
         Q_PROPERTY(cm::controllers::DatabaseController *ui_databaseController READ databaseController CONSTANT)
-        Q_PROPERTY(cm::models::Group *ui_newGroup READ newGroup CONSTANT)
         Q_PROPERTY(cm::models::Client *ui_newClient READ newClient CONSTANT)
         Q_PROPERTY(cm::models::ClientSearch *ui_clientSearch READ clientSearch CONSTANT)
-        Q_PROPERTY(QQmlListProperty<cm::models::Group> ui_groups READ ui_groups NOTIFY groupsChanged)
+        Q_PROPERTY(QQmlListProperty<GroupData> ui_groups READ ui_groups NOTIFY groupsChanged)
 
     public:
         explicit MasterController(QObject *parent = nullptr);
@@ -35,13 +34,13 @@ namespace controllers {
         CommandController *commandController();
         DatabaseController *databaseController();
         NavigationController *navigationController();
-        models::Group *newGroup();
         models::Client *newClient();
         models::ClientSearch *clientSearch();
-        QQmlListProperty<cm::models::Group> ui_groups();
+        QQmlListProperty<GroupData> ui_groups();
 
     public slots:
-        void createGroup(cm::models::Group *group);
+        void createGroup(const QString &groupName);
+        void deleteGroup(const QString &groupName);
         void selectClient(cm::models::Client *client);
 
     signals:

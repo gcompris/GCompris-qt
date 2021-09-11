@@ -245,7 +245,6 @@ Item {
                                         editIcon.color = Style.colourNavigationBarBackground //Style.colourPanelBackgroundHover
                                         //pupilDetailsRectangle.editPupilRectangleVisible = true
                                         //pupilDetailsRectangle.optionsPupilRectangleVisible = true
-                                        print("sdfsfsdf")
                                     }
                                     onExited: {
                                         ///modifyPupilCommandsRectangle.visible = false
@@ -297,7 +296,6 @@ Item {
                                         optionsIcon.color = Style.colourNavigationBarBackground //Style.colourPanelBackgroundHover
                                         //pupilDetailsRectangle.editPupilRectangleVisible = true
                                         //pupilDetailsRectangle.optionsPupilRectangleVisible = true
-                                        print("sdfsfsdf")
 
                                     }
                                     onExited: {

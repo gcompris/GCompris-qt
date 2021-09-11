@@ -35,7 +35,7 @@
 #include <data/enumerator-decorator.h>
 #include <data/string-decorator.h>
 #include "serverMasterController/framework/command.h"
-#include <models/group.h>
+#include <models/GroupData.h>
 #include <models/address.h>
 #include <models/client.h>
 #include <models/client-search.h>
@@ -65,8 +65,8 @@ int main(int argc, char *argv[])
 
     GComprisPlugin plugin;
     plugin.registerTypes("GCompris");
-    ActivityInfoTree::registerResources();
-    /*Server::init();
+    /*ActivityInfoTree::registerResources();
+    Server::init();
     Database::init();
     MessageHandler::init();*/
 
@@ -87,7 +87,7 @@ int main(int argc, char *argv[])
     qmlRegisterType<cm::framework::Command>("CM", 1, 0, "Command");
     qmlRegisterType<cm::data::EnumeratorDecorator>("CM", 1, 0, "EnumeratorDecorator");
     qmlRegisterType<cm::data::StringDecorator>("CM", 1, 0, "StringDecorator");
-    qmlRegisterType<cm::models::Group>("CM", 1, 0, "Group");
+    qmlRegisterType<GroupData>("CM", 1, 0, "GroupData");
     qmlRegisterType<cm::models::Address>("CM", 1, 0, "Address");
     qmlRegisterType<cm::models::Client>("CM", 1, 0, "Client");
     qmlRegisterType<cm::models::Contact>("CM", 1, 0, "Contact");
