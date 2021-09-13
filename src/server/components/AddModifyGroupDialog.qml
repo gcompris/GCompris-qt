@@ -11,13 +11,11 @@ import QtQuick 2.9
 import "../../core"
 import QtQuick.Controls 2.12
 import "../server.js" as Activity
-import CM 1.0
 
 Popup {
     id: addModifyGroupDialog
 
     property string label: "To be modified in calling element."
-    property string inputText: "Group Name to be modified in calling element."
     property bool textInputReadOnly: false
 
     property alias groupName: addModifyGroupNameTextInput.text
@@ -75,7 +73,6 @@ Popup {
         anchors.bottom: parent.bottom
         text: qsTr("Save")
         onClicked: {
-            console.log("----", groupName)
             addModifyGroupDialog.accepted(groupName)
         }
 

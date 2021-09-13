@@ -341,7 +341,6 @@ Item {
                 id: addGroupDialog
 
                 label: qsTr("Add a group name")
-                inputText: qsTr("Group name")
 
                 onAccepted: {
                     console.log("save new group", groupName)

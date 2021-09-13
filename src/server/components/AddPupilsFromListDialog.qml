@@ -16,7 +16,7 @@ import "../server.js" as Activity
 Popup {
     id: addPupilsFromListDialog
 
-    signal pupilsDetailsAdded()
+    signal pupilsDetailsAdded(string pupilList)
 
     anchors.centerIn: Overlay.overlay
     width: 600
@@ -51,7 +51,6 @@ Popup {
         }
 
         Rectangle {
-
             Layout.preferredWidth: parent.width
             Layout.alignment: Qt.AlignCenter
             Layout.minimumHeight: 80
@@ -105,12 +104,7 @@ Popup {
                      focus: true
                      wrapMode: TextEdit.Wrap
                      onCursorRectangleChanged: flick.ensureVisible(cursorRectangle)
-
                      color: "black"
-
-                     text: Activity.debugString
-
-
                  }
             }
         }
@@ -130,17 +124,9 @@ Popup {
                 anchors.bottom: parent.bottom
                 text: qsTr("Save")
                 onClicked: {
-
-              //      var lines = edit.text.split('\n')
-
-                    Activity.addPupilsNamesFromList(edit.text)
-
-                    //console.log("---- " + lines)
-                    addPupilsFromListDialog.pupilsDetailsAdded()
+                    addPupilsFromListDialog.pupilsDetailsAdded(edit.text);
                     addPupilsFromListDialog.close();
-
                 }
-
             }
 
             ViewButton {

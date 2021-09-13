@@ -129,7 +129,7 @@ Item {
             Repeater {
                 id: pupilsDetailsRepeater
 
-                model: Activity.pupilsNamesArray
+                model: masterController.ui_users
 
                 Rectangle {
                     id: pupilDetailsRectangle
@@ -182,7 +182,7 @@ Item {
                                 color: "transparent"
                                 CheckBox {
                                     id: pupilNameCheckBox
-                                    text: modelData[0]
+                                    text: modelData.name
                                     anchors.verticalCenter: parent.verticalCenter
                                     leftPadding: 20
                                 }
@@ -194,7 +194,7 @@ Item {
                                 color: "transparent"
                                 Text {
                                     id: yearText
-                                    text: modelData[1]
+                                    text: modelData.dateOfBirth
                                     anchors.verticalCenter: parent.verticalCenter
                                     anchors.horizontalCenter: parent.horizontalCenter
                                     color: "grey"
@@ -208,7 +208,8 @@ Item {
                                 color: "transparent"
                                 Text {
                                     id: groupsText
-                                    text: modelData[2]
+                                    // todo get all groups from the users
+                                    text: "groups"
                                     leftPadding: 10
                                     anchors.verticalCenter: parent.verticalCenter
                                     color: "grey"
@@ -241,7 +242,7 @@ Item {
 
                                     //anchors.fill: parent
                                     hoverEnabled: true
-                                    onEntered: {    //modifyPupilCommandsRectangle.visible = true
+                                    onEntered: {
                                         editIcon.color = Style.colourNavigationBarBackground //Style.colourPanelBackgroundHover
                                         //pupilDetailsRectangle.editPupilRectangleVisible = true
                                         //pupilDetailsRectangle.optionsPupilRectangleVisible = true
@@ -253,8 +254,9 @@ Item {
                                         //pupilDetailsRectangle.optionsPupilRectangleVisible = false
                                     }
                                     onClicked: {
-                                        modifyPupilDialog.pupilName = modelData[0]
-                                        modifyPupilDialog.groupsNames = modelData[2]
+                                        modifyPupilDialog.pupilName = modelData.name
+                                        // todo: get groups of user
+                                        //modifyPupilDialog.groupsNames = modelData[2]
                                         modifyPupilDialog.pupilsListIndex = index
                                         modifyPupilDialog.open()
                                     }
@@ -318,9 +320,12 @@ Item {
 
                         label: qsTr("Modify the name or the groups")
 
+                        property string currentUserName
+                        property var groupsList
                         onAccepted: {
-                            pupilsDetailsRepeater.model = Activity.pupilsNamesArray
-                            //pupilDetailsRectangle.update()  //? does not work
+                            // todo
+                            // masterController.updateUser();
+                            // masterController.updateGroupsOfUser();
                         }
                     }
                 }
@@ -338,15 +343,32 @@ Item {
         label: qsTr("Add pupil name and its group(s)")
 
         onAccepted: {
-            pupilsDetailsRepeater.model = Activity.pupilsNamesArray
+            console.log("save new user", newPupil.name, groupList)
+            // Add to database the group
+            masterController.createUser(newPupil)
+            masterController.addUserToGroups(newPupil, groupList)
+            addPupilDialog.close()
         }
     }
 
+    property UserData userToAdd: UserData {}
     AddPupilsFromListDialog {
         id: addPupilsFromListDialog
 
         onPupilsDetailsAdded: {
-            pupilsDetailsRepeater.model = Activity.pupilsNamesArray
+            var pupilDetailsLineArray = pupilList.split("\n")
+            for (var i = 0; i < pupilDetailsLineArray.length; ++i) {
+                var pupilDetails = pupilDetailsLineArray[i].split(";");
+                // todo check if all groups for user exist.
+                // If at least one does not exist, ignore the user
+                // and display a warning telling user was not added because
+                // some groups do not exist
+                userToAdd.name = pupilDetails[0]
+                // todo check if dateOfBirth is a real year?
+                userToAdd.dateOfBirth = pupilDetails[1]
+                // todo have a feedback if user has not been created (already exist...)
+                masterController.createUser(userToAdd)
+            }
         }
     }
 
@@ -354,39 +376,33 @@ Item {
         id: removePupilsDialog
 
         onOpened: {
-            var pupilsNamesList = []
+            var tmpPupilsNamesList = []
             for(var i = 0 ; i < pupilsDetailsRepeater.count ; i ++) {
                 if (pupilsDetailsRepeater.itemAt(i).pupilNameCheckBox.checked === true) {
-                    console.log("test" + pupilsDetailsRepeater.itemAt(i).pupilNameCheckBox.text)
-                    pupilsNamesList.push(pupilsDetailsRepeater.itemAt(i).pupilNameCheckBox.text)
+                    tmpPupilsNamesList.push(pupilsDetailsRepeater.itemAt(i).pupilNameCheckBox.text)
                 }
             }
-            console.log(pupilsNamesList)
-            managePupilsView.pupilsNamesListSelected(pupilsNamesList)
+            console.log(tmpPupilsNamesList)
+            removePupilsDialog.pupilsNamesList = tmpPupilsNamesList
+            managePupilsView.pupilsNamesListSelected(tmpPupilsNamesList)
             var pupilsNamesListStr = ""
             for(i = 0 ; i < pupilsNamesList.length ; i++) {
-                console.log("++--------" + pupilsNamesList[i])
+                console.log("++--------" + tmpPupilsNamesList[i])
 
-                pupilsNamesListStr = pupilsNamesListStr + pupilsNamesList[i] + "\r\n"
+                pupilsNamesListStr = pupilsNamesListStr + tmpPupilsNamesList[i] + "\r\n"
             }
 
             pupilsNamesText.text = pupilsNamesListStr
 
-            console.log("----------")
             console.log(pupilsNamesListStr)
 
         }
 
         onAccepted: {
-            var pupilsNamesToRemoveList = []
-            for(var i = pupilsDetailsRepeater.count-1; i >= 0; i--) {
-                if (pupilsDetailsRepeater.itemAt(i).pupilNameCheckBox.checked === true) {
-                    Activity.pupilsNamesArray.splice(i,1)
-
-                    console.log("removed" + pupilsDetailsRepeater.itemAt(i).pupilNameCheckBox.text)
-                }
+            print(removePupilsDialog.pupilsNamesList.length, removePupilsDialog.pupilsNamesList)
+            for(var i = 0 ; i < removePupilsDialog.pupilsNamesList.length ; i++) {
+                masterController.deleteUser(removePupilsDialog.pupilsNamesList[i]);
             }
-            pupilsDetailsRepeater.model = Activity.pupilsNamesArray
         }
 
     }

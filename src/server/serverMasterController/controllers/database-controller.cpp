@@ -7,6 +7,7 @@
 #include <QSqlError>
 #include <QSqlRecord>
 #include "models/GroupData.h"
+#include "models/UserData.h"
 
 #define CREATE_TABLE_USERS \
     "CREATE TABLE IF NOT EXISTS users (user_name TEXT PRIMARY KEY NOT NULL, dateOfBirth TEXT, password TEXT); "
@@ -163,8 +164,104 @@ namespace controllers {
                 groupDeleted = true;
         }
         return groupDeleted;
+    }
+
+    void DatabaseController::retrieveAllExistingUsers(QList <UserData *> &allUsers)
+    {
+        QSqlQuery query(implementation->database);
+        query.prepare("SELECT * FROM users");
+        query.exec();
+        const int nameIndex = query.record().indexOf("user_name");
+        const int dateIndex = query.record().indexOf("dateOfBirth");
+        const int passwordIndex = query.record().indexOf("password");
+        while(query.next()) {
+            UserData *u = new UserData();
+            u->setName(query.value(nameIndex).toString());
+            u->setDateOfBirth(query.value(dateIndex).toString());
+            u->setPassword(query.value(passwordIndex).toString());
+            //retrieveActivityData(u);
+            allUsers.push_back(u);
+        }
+    }
+
+    bool DatabaseController::addUser(const UserData& user)
+    {
+        // check whether user already exists before adding to database
+        bool userAdded = false;
+        QSqlQuery query(implementation->database);
+        query.prepare("SELECT user_name FROM users WHERE user_name=:name");
+        query.bindValue(":name", user.getName());
+        query.exec();
+        if(query.next()) {
+            qDebug() << "user " << user.getName() << "already exists";
+            return false;
+        }
+        query.prepare("INSERT INTO users (user_name, dateOfBirth, password) VALUES(:name, :dateOfBirth, :password)");
+        query.bindValue(":name", user.getName());
+        query.bindValue(":dateOfBirth", user.getDateOfBirth());
+        query.bindValue(":password", user.getPassword());
+        userAdded = query.exec();
+        if(!userAdded) {
+            qDebug()<< query.lastError();
+        }
+
+        return userAdded;
+    }
+
+    bool DatabaseController::deleteUser(const QString& name)
+    {
+        bool userDeleted = false;
+        QSqlQuery query(implementation->database);
+        query.prepare("DELETE FROM users WHERE user_name=:name");
+        query.bindValue(":name", name);
+        if(query.exec()) {
+            query.prepare("DELETE FROM group_users WHERE user_name=:name");
+            query.bindValue(":name",name);
+            if(query.exec()) {
+            
+                query.prepare("DELETE FROM activity_data WHERE user_name=:name");
+                query.bindValue(":name",name);
+                if(query.exec()) {
+                    userDeleted = true;
+                }
+                else {
+                    qDebug() << query.executedQuery() << " failed";
+                }
+            }
+            else {
+                qDebug() << query.executedQuery() << " failed";
+            }
+        }
+        else {
+            qDebug() << query.executedQuery() << " failed";
+        }
+        return userDeleted;
+    }
+    bool DatabaseController::addUserToGroup(const QString& user, const QString& group)
+    {
+        // insert in table group_users
+        // add (user, group) to db only if they don't exist
+        bool userAdded = false;
+        QSqlQuery query(implementation->database);
+        query.prepare("SELECT * FROM group_users WHERE user_name=:user and group_name=:group");
+        query.bindValue(":user",user);
+        query.bindValue(":group",group);
+        query.exec();
+        if(query.next()) {
+            qDebug() << "user " << user << "already exists in group " << group;
+            return false;
+        }
+        query.prepare("INSERT INTO group_users (user_name, group_name) values(:user,:group)");
+        query.bindValue(":user",user);
+        query.bindValue(":group",group);
+        userAdded = query.exec();
+        if(!userAdded) {
+            qDebug() << "user could not be added "<< query.lastError();
+        }
+        return userAdded;
 
     }
+
     /*----------------------------------------------*/
     bool DatabaseController::createRow(const QString &tableName, const QString &id, const QJsonObject &jsonObject) const
     {

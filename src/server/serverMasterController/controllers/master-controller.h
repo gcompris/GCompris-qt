@@ -12,6 +12,7 @@
 #include <models/client.h>
 #include <models/client-search.h>
 #include <models/GroupData.h>
+#include <models/UserData.h>
 
 namespace cm {
 namespace controllers {
@@ -26,6 +27,7 @@ namespace controllers {
         Q_PROPERTY(cm::models::Client *ui_newClient READ newClient CONSTANT)
         Q_PROPERTY(cm::models::ClientSearch *ui_clientSearch READ clientSearch CONSTANT)
         Q_PROPERTY(QQmlListProperty<GroupData> ui_groups READ ui_groups NOTIFY groupsChanged)
+        Q_PROPERTY(QQmlListProperty<UserData> ui_users READ ui_users NOTIFY usersChanged)
 
     public:
         explicit MasterController(QObject *parent = nullptr);
@@ -37,14 +39,20 @@ namespace controllers {
         models::Client *newClient();
         models::ClientSearch *clientSearch();
         QQmlListProperty<GroupData> ui_groups();
+        QQmlListProperty<UserData> ui_users();
 
     public slots:
         void createGroup(const QString &groupName);
         void deleteGroup(const QString &groupName);
+        void createUser(UserData *userName);
+        void deleteUser(const QString &userName);
+        void addUserToGroups(UserData *newUser, const QVariantList &groupList);
+
         void selectClient(cm::models::Client *client);
 
     signals:
         void groupsChanged();
+        void usersChanged();
 
     private:
         class Implementation;

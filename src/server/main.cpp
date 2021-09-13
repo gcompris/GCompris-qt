@@ -36,6 +36,7 @@
 #include <data/string-decorator.h>
 #include "serverMasterController/framework/command.h"
 #include <models/GroupData.h>
+#include <models/UserData.h>
 #include <models/address.h>
 #include <models/client.h>
 #include <models/client-search.h>
@@ -88,6 +89,7 @@ int main(int argc, char *argv[])
     qmlRegisterType<cm::data::EnumeratorDecorator>("CM", 1, 0, "EnumeratorDecorator");
     qmlRegisterType<cm::data::StringDecorator>("CM", 1, 0, "StringDecorator");
     qmlRegisterType<GroupData>("CM", 1, 0, "GroupData");
+    qmlRegisterType<UserData>("CM", 1, 0, "UserData");
     qmlRegisterType<cm::models::Address>("CM", 1, 0, "Address");
     qmlRegisterType<cm::models::Client>("CM", 1, 0, "Client");
     qmlRegisterType<cm::models::Contact>("CM", 1, 0, "Contact");

@@ -172,7 +172,6 @@ Popup {
         groupNamesListView.contains()
 
         print("index: " + index)
-        console
     }
 
 }

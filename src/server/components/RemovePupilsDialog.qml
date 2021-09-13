@@ -17,6 +17,7 @@ Popup {
     id: removePupilsDialog
 
     property alias pupilsNamesText: pupilsNamesText
+    property var pupilsNamesList
 
     signal accepted()
 
@@ -71,7 +72,6 @@ Popup {
             Text {
                 id: pupilsNamesText
                 anchors.centerIn: parent
-                //text: qsTr("Format:\nPatrick Dummy;2003\nPatricia Brown;2004\nor\nPatrick Dummy;2003;2nd grade-music-sport\nPatricia Brown;2004;2nd grade-music-art")
                 font.bold: true
                 color: "grey"
                 font {

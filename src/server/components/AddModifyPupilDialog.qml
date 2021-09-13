@@ -12,17 +12,19 @@ import "../../core"
 import QtQuick.Controls 2.12
 import QtQuick.Layouts 1.2
 import "../server.js" as Activity
+import CM 1.0
 
 Popup {
     id: addModifyPupilDialog
 
     property string label: "To be modified in calling element."
-    property string pupilName: "Pupil name to be modifyed in calling element."
-    property string groupsNames: "Groups Names to be modifyed in calling element."
+    property string pupilName: "Pupil name to be modified in calling element."
+    property string groupsNames: "Groups Names to be modified in calling element."
     property bool textInputReadOnly: false
     property int pupilsListIndex
 
-    signal accepted()
+    property UserData currentPupil: UserData {}
+    signal accepted(UserData newPupil, var groupList)
 
     anchors.centerIn: Overlay.overlay
     width: 600
@@ -31,9 +33,7 @@ Popup {
     focus: true
     closePolicy: Popup.CloseOnEscape | Popup.CloseOnPressOutsideParent
 
-
     ColumnLayout {
-
         height: parent.height
         width: parent.width
         spacing: 20
@@ -91,7 +91,7 @@ Popup {
             Layout.preferredWidth: parent.width
             Layout.leftMargin: 40
 
-            defaultText: addModifyPupilDialog.pupilName    //? here we have a problem, when too long text is going left
+            defaultText: addModifyPupilDialog.pupilName //? here we have a problem, when too long text is going left
         }
 
         Text {
@@ -132,50 +132,15 @@ Popup {
                 anchors.bottom: parent.bottom
                 text: qsTr("Save")
                 onClicked: {
-                    console.log("---- " + addModifyPupilDialog.pupilName)
+                    currentPupil.name = pupilNameTextInput.text
+                    // todo create a field and get from here
+                    currentPupil.dateOfBirth = "2012"
 
-                    console.log("1++++---- " + pupilsListIndex)
-                    console.log("2++++---- " + pupilNameTextInput.text)
-                    console.log("3++++---- " + Activity.pupilsNamesArray)
-                    Activity.pupilsNamesArray[pupilsListIndex][0] = pupilNameTextInput.text
+                    // todo have a check list with all the existing groups instead of inputting the groups manually
+                    var groupList = groupsNamesTextInput.text.split("-");
 
-                    //Activity.pupilsNamesArray[pupilsListIndex][0] = pupilNameTextInput.text
-
-                    console.log("???? " + Activity.pupilsNamesArray[pupilsListIndex][2])
-
-
-
-                    var testGroupNames = groupsNamesTextInput.text.split("-");
-                    //test if all the grousp added exist
-                    var allGroupsAreValid = true
-                    for (var i=0; i<testGroupNames.length; i++) {
-                        print(testGroupNames[i])
-                        if (!Activity.groupsNamesArray.includes(testGroupNames[i])) {
-                            errorMessage.text = qsTr("The following group does not exists : " + testGroupNames[i])
-                            errorMessage.visible = true
-                            allGroupsAreValid = false
-                        }
-                    }
-
-                    //test if groups are not added twice
-                    for (i=0; i<testGroupNames.length; i++) {
-                        print(testGroupNames[i])
-                        if (Activity.groupsNamesArray.includes(testGroupNames[i])) {
-                            var idx = testGroupNames.indexOf(testGroupNames[i])
-                            var idx2 = testGroupNames.indexOf(testGroupNames[i], idx+1)
-                            if (idx2 !== -1) {
-                                errorMessage.text = qsTr("The following group has been added more than once : " + testGroupNames[i])
-                                errorMessage.visible = true
-                                allGroupsAreValid = false
-                            }
-                        }
-                    }
-
-                    if (allGroupsAreValid === true) {
-                        Activity.pupilsNamesArray[pupilsListIndex][2] = groupsNamesTextInput.text
-                        addModifyPupilDialog.accepted()
-                        addModifyPupilDialog.close();
-                    }
+                    addModifyPupilDialog.accepted(currentPupil, groupList);
+                    addModifyPupilDialog.close();
                 }
             }
 
@@ -187,7 +152,6 @@ Popup {
                 text: qsTr("Cancel")
 
                 onClicked: {
-                   console.log("cancel...")
                    addModifyPupilDialog.close();
                 }
             }
