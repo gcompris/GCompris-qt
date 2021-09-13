@@ -24,6 +24,7 @@ namespace controllers {
 
         void retrieveAllExistingGroups(QList<GroupData* > &allGroups);
         bool addGroup(const QString &groupName, const QString& description = QString(), const QStringList& users=QStringList());
+        bool updateGroup(const QString &oldGroupName, const QString& newGroupName);
         bool deleteGroup(const QString& groupName);
 
         void retrieveAllExistingUsers(QList<UserData* > &allUsers);

@@ -43,6 +43,7 @@ namespace controllers {
 
     public slots:
         void createGroup(const QString &groupName);
+        void updateGroup(const QString &oldGroupName, const QString &newGroupName);
         void deleteGroup(const QString &groupName);
         void createUser(UserData *userName);
         void deleteUser(const QString &userName);

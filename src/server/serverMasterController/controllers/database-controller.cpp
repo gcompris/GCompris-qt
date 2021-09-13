@@ -134,7 +134,7 @@ namespace controllers {
             qDebug()<< "group "<< groupName << " already exists";
             return false;
         }
-        // since the group does not exist ,create the new group and add description and users to it
+        // since the group does not exist, create the new group and add description and users to it
         query.prepare("INSERT INTO groups (group_name, description) VALUES (:groupName,:description)");
         query.bindValue(":groupName", groupName);
         query.bindValue(":description",description);
@@ -149,6 +149,27 @@ namespace controllers {
             qDebug()<<"group could not be added " <<  query.lastError();
 
         return groupAdded;
+    }
+
+    bool DatabaseController::updateGroup(const QString &oldGroupName, const QString& newGroupName)
+    {
+        bool groupUpdated = false;
+        QSqlQuery query(implementation->database);
+
+        QString sqlStatement = "UPDATE groups SET group_name=:newName WHERE group_name=:name";
+
+        if (!query.prepare(sqlStatement))
+            return false;
+
+        query.bindValue(":name", oldGroupName);
+        query.bindValue(":newName", newGroupName);
+
+        if (!query.exec()) {
+            qDebug()<<"group" << oldGroupName << "could not be updated to" << newGroupName << ": " << query.lastError();
+            return false;
+        }
+
+        return query.numRowsAffected() > 0;
     }
 
     bool DatabaseController::deleteGroup(const QString &groupName)
@@ -237,6 +258,7 @@ namespace controllers {
         }
         return userDeleted;
     }
+
     bool DatabaseController::addUserToGroup(const QString& user, const QString& group)
     {
         // insert in table group_users

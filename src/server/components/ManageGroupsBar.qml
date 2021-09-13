@@ -276,8 +276,7 @@ Item {
                                     onAccepted: {
                                         console.log("update group from", initialGroupName, "to", groupName)
                                         // Update to database the group
-                                        //todo
-                                        //masterController.updateGroup(initialGroupName, groupName)
+                                        masterController.updateGroup(initialGroupName, groupName)
                                         modifyGroupDialog.close()
                                     }
                                 }

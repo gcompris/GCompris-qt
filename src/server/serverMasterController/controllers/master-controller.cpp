@@ -83,7 +83,23 @@ namespace controllers {
         else {
             qDebug() << "Unable to create group" << groupName;
         }
-   }
+    }
+
+    void MasterController::updateGroup(const QString &oldGroupName, const QString &newGroupName)
+    {
+        if(implementation->databaseController->updateGroup(oldGroupName, newGroupName)) {
+            auto groupIterator = std::find_if(std::begin(implementation->groups), std::end(implementation->groups),
+                                              [&oldGroupName](GroupData * group) {
+                                                  return group->getName() == oldGroupName;
+                                              });
+            GroupData *group = *groupIterator;
+            group->setName(newGroupName);
+            emit groupsChanged();
+        }
+        else {
+            qDebug() << "Unable to update group from" << oldGroupName << "to" << newGroupName;
+        }
+    }
 
     void MasterController::deleteGroup(const QString &groupName)
     {
