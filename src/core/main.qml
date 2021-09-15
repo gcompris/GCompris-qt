@@ -66,17 +66,21 @@ Window {
      */
     onIsMusicalActivityRunningChanged: {
         if(isMusicalActivityRunning) {
-            backgroundMusic.pause()
+            backgroundMusic.pause();
         }
         else {
-            backgroundMusic.resume()
+            backgroundMusic.resume();
         }
     }
 
     onApplicationStateChanged: {
-        if (ApplicationInfo.isMobile && applicationState !== Qt.ApplicationActive) {
+        if(ApplicationInfo.isMobile && applicationState !== Qt.ApplicationActive) {
             audioVoices.stop();
             audioEffects.stop();
+            backgroundMusic.pause();
+        } else if(ApplicationInfo.isMobile && applicationState == Qt.ApplicationActive
+                && !isMusicalActivityRunning) {
+            backgroundMusic.resume();
         }
     }
 
