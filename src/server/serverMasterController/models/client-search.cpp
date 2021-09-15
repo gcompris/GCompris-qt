@@ -10,18 +10,18 @@ namespace models {
     class ClientSearch::Implementation
     {
     public:
-        Implementation(ClientSearch *_clientSearch, IDatabaseController *_databaseController) :
+        Implementation(ClientSearch *_clientSearch, DatabaseController *_databaseController) :
             clientSearch(_clientSearch), databaseController(_databaseController)
         {
         }
 
         ClientSearch *clientSearch { nullptr };
-        IDatabaseController *databaseController { nullptr };
+        DatabaseController *databaseController { nullptr };
         data::StringDecorator *searchText { nullptr };
         data::EntityCollection<Client> *searchResults { nullptr };
     };
 
-    ClientSearch::ClientSearch(QObject *parent, IDatabaseController *databaseController) :
+    ClientSearch::ClientSearch(QObject *parent, DatabaseController *databaseController) :
         Entity(parent, "ClientSearch")
     {
         implementation.reset(new Implementation(this, databaseController));

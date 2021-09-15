@@ -37,7 +37,7 @@ set(server_SRCS
   serverMasterController/controllers/command-controller.cpp
   serverMasterController/controllers/database-controller.h
   serverMasterController/controllers/database-controller.cpp
-  serverMasterController/controllers/i-database-controller.h
+  serverMasterController/models/DatabaseElement.h
   serverMasterController/models/GroupData.cpp
   serverMasterController/models/GroupData.h
   serverMasterController/models/UserData.cpp

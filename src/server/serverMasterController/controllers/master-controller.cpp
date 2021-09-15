@@ -75,12 +75,14 @@ namespace controllers {
 
     void MasterController::createGroup(const QString &groupName)
     {
-        if(implementation->databaseController->addGroup(groupName)) {
+        int groupId = implementation->databaseController->addGroup(groupName);
+        if(groupId > 0) {
             GroupData *group = new GroupData();
+            group->setPrimaryKey(groupId);
             group->setName(groupName);
             implementation->groups << group;
             emit groupsChanged();
-       }
+        }
         else {
             qDebug() << "Unable to create group" << groupName;
         }
@@ -88,12 +90,16 @@ namespace controllers {
 
     void MasterController::updateGroup(const QString &oldGroupName, const QString &newGroupName)
     {
-        if(implementation->databaseController->updateGroup(oldGroupName, newGroupName)) {
-            auto groupIterator = std::find_if(std::begin(implementation->groups), std::end(implementation->groups),
-                                              [&oldGroupName](GroupData * group) {
-                                                  return group->getName() == oldGroupName;
-                                              });
-            GroupData *group = *groupIterator;
+        auto groupIterator = std::find_if(std::begin(implementation->groups), std::end(implementation->groups),
+                                          [&oldGroupName](GroupData * group) {
+                                              return group->getName() == oldGroupName;
+                                          });
+        if(groupIterator == std::end(implementation->groups)) {
+            qDebug() << "Group" << oldGroupName << "does not exist";
+            return;
+        }
+        GroupData *group = *groupIterator;
+        if(implementation->databaseController->updateGroup(*group, newGroupName)) {
             group->setName(newGroupName);
             emit groupsChanged();
         }
@@ -104,31 +110,35 @@ namespace controllers {
 
     void MasterController::deleteGroup(const QString &groupName)
     {
+        auto groupIterator = std::find_if(std::begin(implementation->groups), std::end(implementation->groups),
+                                          [&groupName](GroupData * group) {
+                                              return group->getName() == groupName;
+                                          });
+        if(groupIterator == std::end(implementation->groups)) {
+            qDebug() << "Unable to delete group" << groupName;
+            return;
+        }
+        GroupData *group = *groupIterator;
         //todo remove all users from this group
-        if(implementation->databaseController->deleteGroup(groupName)) {
-            auto groupIterator = std::find_if(std::begin(implementation->groups), std::end(implementation->groups),
-                                           [&groupName](GroupData * group) {
-                                               return group->getName() == groupName;
-                                           });
-            if(groupIterator != std::end(implementation->groups)) {
-                GroupData *group = *groupIterator;
-                implementation->groups.removeOne(group);
-                emit groupsChanged();
-                delete group;
-            }
+        if(implementation->databaseController->deleteGroup(*group)) {
+            implementation->groups.removeOne(group);
+            emit groupsChanged();
+            delete group;
         }
         else {
-            qDebug() << "Unable to delete group" << groupName;
+            qDebug() << "Unable to delete group" << groupName << "on database";
         }
     }
 
     void MasterController::createUser(UserData *newUser)
     {
-        if(implementation->databaseController->addUser(*newUser)) {
+        int userId = implementation->databaseController->addUser(*newUser);
+        if(userId > 0) {
             UserData *user = new UserData(*newUser);
+            user->setPrimaryKey(userId);
             implementation->users << user;
             emit usersChanged();
-       }
+        }
         else {
             qDebug() << "Unable to create user" << newUser->getName();
         }
@@ -137,35 +147,55 @@ namespace controllers {
     void MasterController::addUserToGroups(UserData *newUser, const QVariantList &groupList)
     {
         const QString &userName = newUser->getName();
+        auto userIterator = std::find_if(std::begin(implementation->users), std::end(implementation->users),
+                                         [&userName](UserData * user) {
+                                             return user->getName() == userName;
+                                         });
+
+        if(userIterator == std::end(implementation->users)) {
+            qDebug() << "User" << newUser->getName() << "does not exist";
+        }
+        UserData *user = *userIterator;
         for(const QVariant &var: groupList) {
-            const QString group = var.toString();
-            if(implementation->databaseController->addUserToGroup(userName, group)) {
-                qDebug() << userName << "added to" << group;
+            const QString groupName = var.toString();
+            auto groupIterator = std::find_if(std::begin(implementation->groups), std::end(implementation->groups),
+                                           [&groupName](GroupData * group) {
+                                               return group->getName() == groupName;
+                                           });
+            if(groupIterator == std::end(implementation->groups)) {
+                qDebug() << "Group" << groupName << "does not exist";
+                continue;
+            }
+            GroupData *group = *groupIterator;
+
+            if(implementation->databaseController->addUserToGroup(*user, *group)) {
+                qDebug() << userName << "added to" << groupName;
                 // Todo add in the model and display it to screen
             }
             else {
-                qDebug() << "Unable to add " << userName << "to" << group;
+                qDebug() << "Unable to add " << userName << "to" << groupName;
             }
         }
     }
 
     void MasterController::deleteUser(const QString &userName)
     {
-        //todo remove this user from all of its groups
-        if(implementation->databaseController->deleteUser(userName)) {
-            auto userIterator = std::find_if(std::begin(implementation->users), std::end(implementation->users),
-                                           [&userName](UserData * user) {
-                                               return user->getName() == userName;
-                                           });
-            if(userIterator != std::end(implementation->users)) {
-                UserData *user = *userIterator;
-                implementation->users.removeOne(user);
-                emit usersChanged();
-                delete user;
-            }
+        auto userIterator = std::find_if(std::begin(implementation->users), std::end(implementation->users),
+                                         [&userName](UserData * user) {
+                                             return user->getName() == userName;
+                                         });
+        if(userIterator == std::end(implementation->users)) {
+            qDebug() << "Unable to find user" << userName;
+            return;
+        }
+        UserData *user = *userIterator;
+        if(implementation->databaseController->deleteUser(*user)) {
+            implementation->users.removeOne(user);
+            emit usersChanged();
+            delete user;
         }
         else {
-            qDebug() << "Unable to delete user" << userName;
+            qDebug() << "Unable to delete user" << userName << "from database";
         }
     }
 

@@ -12,6 +12,7 @@
 
 #include <QObject>
 #include <QStringList>
+#include "DatabaseElement.h"
 
 class UserData;
 
@@ -23,7 +24,7 @@ class UserData;
  *
  * @sa UserData
  */
-class GroupData : public QObject {
+class GroupData : public DatabaseElement {
     Q_OBJECT
 
     Q_PROPERTY(QList<QObject *> users MEMBER m_users NOTIFY newUsers)

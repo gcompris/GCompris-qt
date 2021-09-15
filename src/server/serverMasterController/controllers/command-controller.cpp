@@ -12,7 +12,7 @@ namespace controllers {
     class CommandController::Implementation
     {
     public:
-        Implementation(CommandController *_commandController, IDatabaseController *_databaseController, NavigationController *_navigationController, Client *_newClient, ClientSearch *_clientSearch) :
+        Implementation(CommandController *_commandController, DatabaseController *_databaseController, NavigationController *_navigationController, Client *_newClient, ClientSearch *_clientSearch) :
             commandController(_commandController), databaseController(_databaseController), navigationController(_navigationController), newClient(_newClient), clientSearch(_clientSearch)
         {
             Command *createClientSaveCommand = new Command(commandController, QChar(0xf0c7), "Save");
@@ -50,7 +50,7 @@ namespace controllers {
 
         CommandController *commandController { nullptr };
 
-        IDatabaseController *databaseController { nullptr };
+        DatabaseController *databaseController { nullptr };
         NavigationController *navigationController { nullptr };
         Client *newClient { nullptr };
         ClientSearch *clientSearch { nullptr };
@@ -61,7 +61,7 @@ namespace controllers {
         QList<Command *> managePupilsViewContextCommands {};
     };
 
-    CommandController::CommandController(QObject *parent, IDatabaseController *databaseController, NavigationController *navigationController, Client *newClient, ClientSearch *clientSearch) :
+    CommandController::CommandController(QObject *parent, DatabaseController *databaseController, NavigationController *navigationController, Client *newClient, ClientSearch *clientSearch) :
         QObject(parent)
     {
         implementation.reset(new Implementation(this, databaseController, navigationController, newClient, clientSearch));

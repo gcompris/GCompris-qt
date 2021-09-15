@@ -1,4 +1,4 @@
-/* GCompris - UserData.cpp
+/* GCompris - UserData.h
  *
  * SPDX-FileCopyrightText: 2021 Johnny Jazeix <jazeix@gmail.com>
  *
@@ -12,6 +12,7 @@
 
 #include <QObject>
 #include <QString>
+#include "DatabaseElement.h"
 
 /**
  * @class UserData
@@ -20,7 +21,7 @@
  * A user has a name, a date of birth, a password
  *
  */
-class UserData : public QObject {
+class UserData : public DatabaseElement {
     Q_OBJECT
 
     Q_PROPERTY(QString password MEMBER m_password NOTIFY newPassword)
@@ -40,6 +41,7 @@ public:
     const QString &getDateOfBirth() const;
     const QString &getPassword() const;
 
+    
 private:
     QString m_password;
     QString m_dateOfBirth;

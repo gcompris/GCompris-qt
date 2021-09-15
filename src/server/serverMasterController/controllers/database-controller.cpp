@@ -2,6 +2,8 @@
 
 #include <QDebug>
 #include <QJsonDocument>
+#include <QJsonObject>
+#include <QJsonArray>
 #include <QSqlDatabase>
 #include <QSqlQuery>
 #include <QSqlError>
@@ -14,8 +16,7 @@
 #define CREATE_TABLE_GROUPS \
     "CREATE TABLE IF NOT EXISTS groups (group_name TEXT PRIMARY KEY NOT NULL, description TEXT); "
 #define CREATE_TABLE_USERGROUP \
-    "CREATE TABLE IF NOT EXISTS group_users(user_name TEXT NOT NULL, group_name TEXT NOT NULL)"
-
+    "CREATE TABLE IF NOT EXISTS group_users(user_id INT NOT NULL, group_id INT NOT NULL, PRIMARY KEY (user_id, group_id));"
 #define CREATE_TABLE_ACTIVITY_DATA \
     "CREATE TABLE IF NOT EXISTS activity_data(user_name TEXT NOT NULL, activity_name TEXT NOT NULL, " \
     "date TEXT NOT NULL,data TEXT NOT NULL,PRIMARY KEY(user_name,activity_name,date))"
@@ -97,7 +98,7 @@ namespace controllers {
 namespace controllers {
 
     DatabaseController::DatabaseController(QObject *parent) :
-        IDatabaseController(parent)
+        QObject(parent)
     {
         implementation.reset(new Implementation(this));
     }
@@ -110,21 +111,23 @@ namespace controllers {
     {
         // Don't add twice the same login
         QSqlQuery query(implementation->database);
-        query.prepare("SELECT * FROM groups");
+        query.prepare("SELECT ROWID, * FROM groups");
         query.exec();
+        const int groupId = query.record().indexOf("ROWID");
         const int nameIndex = query.record().indexOf("group_name");
         const int descriptionIndex = query.record().indexOf("description");
         while(query.next()) {
             GroupData *g = new GroupData();
+            g->setPrimaryKey(query.value(groupId).toInt());
             g->setName(query.value(nameIndex).toString());
             g->setDescription(query.value(descriptionIndex).toString());
             allGroups.push_back(g);
         }
     }
 
-    bool DatabaseController::addGroup(const QString &groupName, const QString& description, const QStringList& users)
+    int DatabaseController::addGroup(const QString &groupName, const QString& description, const QStringList& users)
     {
-        bool groupAdded = false;
+        int groupId = -1;
         QSqlQuery query(implementation->database);
         // add group to db only if it has not been added before
         query.prepare("SELECT group_name FROM groups WHERE group_name=:groupName");
@@ -132,13 +135,13 @@ namespace controllers {
         query.exec();
         if(query.next()) {
             qDebug()<< "group "<< groupName << " already exists";
-            return false;
+            return groupId;
         }
         // since the group does not exist, create the new group and add description and users to it
         query.prepare("INSERT INTO groups (group_name, description) VALUES (:groupName,:description)");
         query.bindValue(":groupName", groupName);
         query.bindValue(":description",description);
-        groupAdded = query.exec();
+        bool groupAdded = query.exec();
         if(groupAdded) {
             //add users to the group
             for(const auto &user: users) {
@@ -147,40 +150,40 @@ namespace controllers {
         }
         else
             qDebug()<<"group could not be added " <<  query.lastError();
-
-        return groupAdded;
+        groupId = query.lastInsertId().toInt();
+        return groupId;
     }
 
-    bool DatabaseController::updateGroup(const QString &oldGroupName, const QString& newGroupName)
+    int DatabaseController::updateGroup(const GroupData &oldGroup, const QString& newGroupName)
     {
         bool groupUpdated = false;
         QSqlQuery query(implementation->database);
 
-        QString sqlStatement = "UPDATE groups SET group_name=:newName WHERE group_name=:name";
+        QString sqlStatement = "UPDATE groups SET group_name=:newName WHERE ROWID=:id";
 
         if (!query.prepare(sqlStatement))
             return false;
 
-        query.bindValue(":name", oldGroupName);
+        query.bindValue(":id", oldGroup.getPrimaryKey());
         query.bindValue(":newName", newGroupName);
 
         if (!query.exec()) {
-            qDebug()<<"group" << oldGroupName << "could not be updated to" << newGroupName << ": " << query.lastError();
+            qDebug()<<"group" << oldGroup.getName() << "could not be updated to" << newGroupName << ": " << query.lastError();
             return false;
         }
 
         return query.numRowsAffected() > 0;
     }
 
-    bool DatabaseController::deleteGroup(const QString &groupName)
+    bool DatabaseController::deleteGroup(const GroupData &group)
     {
         bool groupDeleted = false;
         QSqlQuery query(implementation->database);
         query.prepare("DELETE FROM groups WHERE group_name=:gname");
-        query.bindValue(":gname", groupName);
+        query.bindValue(":gname", group.getName());
         if(query.exec()) {
-            query.prepare("DELETE FROM group_users WHERE group_name=:gname");
-            query.bindValue(":gname", groupName);
+            query.prepare("DELETE FROM group_users WHERE group_id=:gid");
+            query.bindValue(":gid", group.getPrimaryKey());
             if(query.exec())
                 groupDeleted = true;
         }
@@ -190,13 +193,15 @@ namespace controllers {
     void DatabaseController::retrieveAllExistingUsers(QList <UserData *> &allUsers)
     {
         QSqlQuery query(implementation->database);
-        query.prepare("SELECT * FROM users");
+        query.prepare("SELECT ROWID, * FROM users");
         query.exec();
+        const int rowId = query.record().indexOf("ROWID");
         const int nameIndex = query.record().indexOf("user_name");
         const int dateIndex = query.record().indexOf("dateOfBirth");
         const int passwordIndex = query.record().indexOf("password");
         while(query.next()) {
             UserData *u = new UserData();
+            u->setPrimaryKey(query.value(rowId).toInt());
             u->setName(query.value(nameIndex).toString());
             u->setDateOfBirth(query.value(dateIndex).toString());
             u->setPassword(query.value(passwordIndex).toString());
@@ -205,43 +210,44 @@ namespace controllers {
         }
     }
 
-    bool DatabaseController::addUser(const UserData& user)
+    int DatabaseController::addUser(const UserData& user)
     {
         // check whether user already exists before adding to database
-        bool userAdded = false;
+        int userId = -1;
         QSqlQuery query(implementation->database);
         query.prepare("SELECT user_name FROM users WHERE user_name=:name");
         query.bindValue(":name", user.getName());
         query.exec();
         if(query.next()) {
             qDebug() << "user " << user.getName() << "already exists";
-            return false;
+            return userId;
         }
         query.prepare("INSERT INTO users (user_name, dateOfBirth, password) VALUES(:name, :dateOfBirth, :password)");
         query.bindValue(":name", user.getName());
         query.bindValue(":dateOfBirth", user.getDateOfBirth());
         query.bindValue(":password", user.getPassword());
-        userAdded = query.exec();
-        if(!userAdded) {
+        if(!query.exec()) {
             qDebug()<< query.lastError();
+            return userId;
         }
+        userId = query.lastInsertId().toInt();
 
-        return userAdded;
+        return userId;
     }
 
-    bool DatabaseController::deleteUser(const QString& name)
+    bool DatabaseController::deleteUser(const UserData& user)
     {
         bool userDeleted = false;
         QSqlQuery query(implementation->database);
         query.prepare("DELETE FROM users WHERE user_name=:name");
-        query.bindValue(":name", name);
+        query.bindValue(":name", user.getName());
         if(query.exec()) {
-            query.prepare("DELETE FROM group_users WHERE user_name=:name");
-            query.bindValue(":name",name);
+            query.prepare("DELETE FROM group_users WHERE user_id=:name");
+            query.bindValue(":name", user.getPrimaryKey());
             if(query.exec()) {
             
                 query.prepare("DELETE FROM activity_data WHERE user_name=:name");
-                query.bindValue(":name",name);
+                query.bindValue(":name", user.getName());
                 if(query.exec()) {
                     userDeleted = true;
                 }
@@ -259,23 +265,23 @@ namespace controllers {
         return userDeleted;
     }
 
-    bool DatabaseController::addUserToGroup(const QString& user, const QString& group)
+    int DatabaseController::addUserToGroup(const UserData& user, const GroupData& group)
     {
         // insert in table group_users
         // add (user, group) to db only if they don't exist
         bool userAdded = false;
         QSqlQuery query(implementation->database);
-        query.prepare("SELECT * FROM group_users WHERE user_name=:user and group_name=:group");
-        query.bindValue(":user",user);
-        query.bindValue(":group",group);
+        query.prepare("SELECT * FROM group_users WHERE user_id=:user and group_id=:group");
+        query.bindValue(":user", user.getPrimaryKey());
+        query.bindValue(":group", group.getPrimaryKey());
         query.exec();
         if(query.next()) {
-            qDebug() << "user " << user << "already exists in group " << group;
-            return false;
+            qDebug() << "user " << user.getName() << "already exists in group " << group.getName();
+            return -1;
         }
-        query.prepare("INSERT INTO group_users (user_name, group_name) values(:user,:group)");
-        query.bindValue(":user",user);
-        query.bindValue(":group",group);
+        query.prepare("INSERT INTO group_users (user_id, group_id) values(:user,:group)");
+        query.bindValue(":user", user.getPrimaryKey());
+        query.bindValue(":group", group.getPrimaryKey());
         userAdded = query.exec();
         if(!userAdded) {
             qDebug() << "user could not be added "<< query.lastError();
