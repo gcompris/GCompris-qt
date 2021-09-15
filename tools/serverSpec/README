@@ -1,0 +1,48 @@
+Principal:
+pdfBuild.py allows to create a pdf from a collection of issues created within invent.kde.org, the kde gitlab environment.
+Working with gitlab and its issues fonctionnality allows to provide to a team an environment to collaborate while working on a specification. Comments can be used and old design are stored for logging purpose.
+Using pdfBuild.py ensures to always have the latest specification.
+
+Packages and modules to install in order to run pdfBuild.py :
+
+- pdflaxtex needs to be installed with the following command:
+sudo apt install texlive-latex-extra
+
+- pylatex needs to be installed with the following command:
+pip install pylatex
+
+How it works:
+pdfBuild.py extracts first the GCompris specification structure from the following invent wiki page:
+https://invent.kde.org/education/gcompris/-/wikis/GComprisCPSpec/gcompris-control-panel-specification
+
+The structure is provided by a list of wiki links pointing to issues:
+example:
+- [Main screen overview](https://invent.kde.org/education/gcompris/-/issues/3)
+- [Connecting devices](https://invent.kde.org/education/gcompris/-/issues/5)
+- [Following results](https://invent.kde.org/education/gcompris/-/issues/6)
+
+In this example the first link points to the invent issue number 3. This one contains the text to be displayed in the final pdf specification and its illustrations.
+Illustrations are stored into what is called issues designs and are uploaded and updated directly within the issues interface.
+
+In order to get the wiki content, the scipt is using git to download the file https://invent.kde.org/education/gcompris.wiki.git .
+
+bugs:
+It is sometimes necessary to run the script twice to avoid the following file reading error.
+FileNotFoundError: [Errno 2] No such file or directory: './gcompris.wiki/GComprisCPSpec/GCompris-control-panel-specification.md'
+The second time git will correctly download the files needed.
+This bug needs to be investigated
+
+Usage:
+python pdfBuild.py --wikiurl https://invent.kde.org/education/gcompris.wiki.git --outputFilename myGCSpecificationFile.pdflaxtex
+
+additional oprions to gain creation time are:
+--doNotDownloadWiki to use the wiki file already downloaded locally;
+--doNotDownloadIssuesImages to use the issues images files already downloaded locally.
+
+Improvements:
+Iutput files should be generated in a dedicated output directory.
+
+
+
+
+
