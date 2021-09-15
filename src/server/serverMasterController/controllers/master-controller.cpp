@@ -1,3 +1,4 @@
+#include <QtDebug>
 #include <algorithm>
 #include "master-controller.h"
 
