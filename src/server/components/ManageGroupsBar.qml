@@ -94,6 +94,7 @@ Item {
                 id: groupsNamesRepeater
                 model: masterController.ui_groups
 
+                property string selectedGroup: ""
                 Rectangle {
                     id: groupNameRectangle
                     width: groupNames.width
@@ -134,7 +135,17 @@ Item {
                                width: parent.width
                                hoverEnabled: true
                                onClicked: {
-                                   console.log("sort groups")
+                                   if(groupsNamesRepeater.selectedGroup == modelData.name) {
+                                       groupsNamesRepeater.selectedGroup = "";
+                                   }
+                                   else {
+                                       // We bind in case we update the group name
+                                       // when we are already filtering to be sure
+                                       // selectedGroup keeps the new name
+                                       groupsNamesRepeater.selectedGroup = Qt.binding(function() { return modelData.name })
+                                   }
+                                   console.log("filter users to only those in", groupsNamesRepeater.selectedGroup);
+                                   masterController.filterUsersView(groupsNamesRepeater.selectedGroup);
                                }
                                onEntered: { groupNameText.color = Style.colourNavigationBarBackground
                                             groupNameRectangle.color = Style.colourPanelBackgroundHover
@@ -152,7 +163,7 @@ Item {
                                 color: "grey"
                                 leftPadding: 5
                                 elide: Text.ElideRight
-
+                                font.underline: groupsNamesRepeater.selectedGroup == modelData.name
                             }
                         }
 

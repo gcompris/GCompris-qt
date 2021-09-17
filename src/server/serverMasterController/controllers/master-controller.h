@@ -36,10 +36,10 @@ namespace controllers {
         CommandController *commandController();
         DatabaseController *databaseController();
         NavigationController *navigationController();
-        models::Client *newClient();
-        models::ClientSearch *clientSearch();
         QQmlListProperty<GroupData> ui_groups();
         QQmlListProperty<UserData> ui_users();
+        models::Client *newClient();
+        models::ClientSearch *clientSearch();
 
     public slots:
         void createGroup(const QString &groupName);
@@ -47,9 +47,11 @@ namespace controllers {
         void deleteGroup(const QString &groupName);
         void createUser(UserData *userName);
         void deleteUser(const QString &userName);
-        void addUserToGroups(UserData *newUser, const QVariantList &groupList);
+        void setGroupsForUser(UserData *newUser, const QVariantList &groupList);
 
         void selectClient(cm::models::Client *client);
+
+        Q_INVOKABLE void filterUsersView(const QString &groupName);
 
     signals:
         void groupsChanged();

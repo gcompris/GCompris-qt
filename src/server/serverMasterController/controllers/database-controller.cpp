@@ -242,10 +242,7 @@ namespace controllers {
         query.prepare("DELETE FROM users WHERE user_name=:name");
         query.bindValue(":name", user.getName());
         if(query.exec()) {
-            query.prepare("DELETE FROM group_users WHERE user_id=:name");
-            query.bindValue(":name", user.getPrimaryKey());
-            if(query.exec()) {
-            
+            if(removeAllGroupsForUser(user)) {
                 query.prepare("DELETE FROM activity_data WHERE user_name=:name");
                 query.bindValue(":name", user.getName());
                 if(query.exec()) {
@@ -265,7 +262,46 @@ namespace controllers {
         return userDeleted;
     }
 
-    int DatabaseController::addUserToGroup(const UserData& user, const GroupData& group)
+    void DatabaseController::recreateAllLinksBetweenGroupsAndUsers(QList<GroupData* > &groups, QList<UserData* > &users) {
+        QSqlQuery query(implementation->database);
+        query.prepare("SELECT * FROM group_users");
+        query.exec();
+        const int userIndex = query.record().indexOf("user_id");
+        const int groupIndex = query.record().indexOf("group_id");
+        while(query.next()) {
+            int groupId = query.value(groupIndex).toInt();
+            auto groupIterator = std::find_if(std::begin(groups), std::end(groups),
+                                              [&groupId](GroupData * group) {
+                                                  return group->getPrimaryKey() == groupId;
+                                              });
+            GroupData *group = *groupIterator;
+            int userId = query.value(userIndex).toInt();
+            auto userIterator = std::find_if(std::begin(users), std::end(users),
+                                             [&userId](UserData * user) {
+                                                 return user->getPrimaryKey() == userId;
+                                             });
+            UserData *user = *userIterator;
+            qDebug() << "Adding" << group->getName() << "to" << user->getName();
+            user->addGroup(group);
+        }
+    }
+
+    bool DatabaseController::removeAllGroupsForUser(const UserData& user)
+    {
+        bool groupsRemoved = false;
+        QSqlQuery query(implementation->database);
+        query.prepare("DELETE FROM group_users WHERE user_id=:name");
+        query.bindValue(":name", user.getPrimaryKey());
+        if(query.exec()) {
+            groupsRemoved = true;
+        }
+        else {
+            qDebug() << query.executedQuery() << " failed";
+        }
+        return groupsRemoved;
+    }
+
+    bool DatabaseController::addUserToGroup(const UserData& user, const GroupData& group)
     {
         // insert in table group_users
         // add (user, group) to db only if they don't exist
@@ -287,7 +323,6 @@ namespace controllers {
             qDebug() << "user could not be added "<< query.lastError();
         }
         return userAdded;
-
     }
 
     /*----------------------------------------------*/

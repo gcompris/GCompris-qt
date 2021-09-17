@@ -42,10 +42,6 @@ namespace controllers {
             Command *managePupilsRemovePupilsFromListCommand = new Command(commandController, QChar(0xf503), "Remove Pupil(s)");
             QObject::connect(managePupilsRemovePupilsFromListCommand, &Command::executed, commandController, &CommandController::onManagePupilsRemovePupilsExecuted);
             managePupilsViewContextCommands.append(managePupilsRemovePupilsFromListCommand);
-
-            Command *managePupilsEditPupilFromListCommand = new Command(commandController, QChar(0xf4ff), "Edit Pupil");
-            QObject::connect(managePupilsEditPupilFromListCommand, &Command::executed, commandController, &CommandController::onManagePupilsEditPupilExecuted);
-            managePupilsViewContextCommands.append(managePupilsEditPupilFromListCommand);
         }
 
         CommandController *commandController { nullptr };
@@ -156,19 +152,6 @@ namespace controllers {
     {
         qDebug() << "You created new pupils from list!";
         implementation->navigationController->goAddPupilsFromListDialog();
-        /*  implementation->databaseController->createRow(implementation->newClient->key(), implementation->newClient->id(), implementation->newClient->toJson());
-
-    qDebug() << "New client saved.";
-
-    implementation->clientSearch->searchText()->setValue(implementation->newClient->id());
-    implementation->clientSearch->search();
-    implementation->navigationController->goFindClientView();*/
-    }
-
-    void CommandController::onManagePupilsEditPupilExecuted()
-    {
-        qDebug() << "You edited a pupil!";
-
         /*  implementation->databaseController->createRow(implementation->newClient->key(), implementation->newClient->id(), implementation->newClient->toJson());
 
     qDebug() << "New client saved.";

@@ -3,6 +3,7 @@
 
 #include <QObject>
 #include <QScopedPointer>
+#include <QSqlQueryModel>
 
 #include <cm-lib_global.h>
 
@@ -28,7 +29,10 @@ namespace controllers {
         void retrieveAllExistingUsers(QList<UserData* > &allUsers);
         int addUser(const UserData& user);
         bool deleteUser(const UserData& user);
-        int addUserToGroup(const UserData& user, const GroupData& group);
+
+        void recreateAllLinksBetweenGroupsAndUsers(QList<GroupData* > &groups, QList<UserData* > &users);
+        bool addUserToGroup(const UserData& user, const GroupData& group);
+        bool removeAllGroupsForUser(const UserData& user);
 
         /* ---------------------- */
         bool createRow(const QString &tableName, const QString &id, const QJsonObject &jsonObject) const;
@@ -36,7 +40,6 @@ namespace controllers {
         QJsonArray find(const QString &tableName, const QString &searchText) const;
         QJsonObject readRow(const QString &tableName, const QString &id) const;
         bool updateRow(const QString &tableName, const QString &id, const QJsonObject &jsonObject) const;
-
     private:
         class Implementation;
         QScopedPointer<Implementation> implementation;

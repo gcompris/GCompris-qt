@@ -209,7 +209,7 @@ Item {
                                 Text {
                                     id: groupsText
                                     // todo get all groups from the users
-                                    text: "groups"
+                                    text: modelData.groupsList
                                     leftPadding: 10
                                     anchors.verticalCenter: parent.verticalCenter
                                     color: "grey"
@@ -346,7 +346,7 @@ Item {
             console.log("save new user", newPupil.name, groupList)
             // Add to database the group
             masterController.createUser(newPupil)
-            masterController.addUserToGroups(newPupil, groupList)
+            masterController.setGroupsForUser(newPupil, groupList)
             addPupilDialog.close()
         }
     }
@@ -359,6 +359,9 @@ Item {
             var pupilDetailsLineArray = pupilList.split("\n")
             for (var i = 0; i < pupilDetailsLineArray.length; ++i) {
                 var pupilDetails = pupilDetailsLineArray[i].split(";");
+                if(pupilDetails.length > 3) {
+                    print("Line", pupilDetails, "too long");
+                }
                 // todo check if all groups for user exist.
                 // If at least one does not exist, ignore the user
                 // and display a warning telling user was not added because
@@ -368,6 +371,10 @@ Item {
                 userToAdd.dateOfBirth = pupilDetails[1]
                 // todo have a feedback if user has not been created (already exist...)
                 masterController.createUser(userToAdd)
+                var groups = pupilDetails[2].split("-");
+                if(groups.length != 0) {
+                    masterController.setGroupsForUser(userToAdd, groups)
+                }
             }
         }
     }
@@ -387,8 +394,6 @@ Item {
             managePupilsView.pupilsNamesListSelected(tmpPupilsNamesList)
             var pupilsNamesListStr = ""
             for(i = 0 ; i < pupilsNamesList.length ; i++) {
-                console.log("++--------" + tmpPupilsNamesList[i])
-
                 pupilsNamesListStr = pupilsNamesListStr + tmpPupilsNamesList[i] + "\r\n"
             }
 

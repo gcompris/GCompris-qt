@@ -11,6 +11,7 @@
 #include <QVariant>
 #include <QDebug>
 
+#include "GroupData.h"
 #include "UserData.h"
 
 UserData::UserData(const QString &name, const QString &dateOfBirth, const QString &password) : m_name(name), m_dateOfBirth(dateOfBirth), m_password(password)
@@ -59,4 +60,37 @@ const QString &UserData::getDateOfBirth() const
 const QString &UserData::getPassword() const
 {
     return m_password;
+}
+
+void UserData::addGroup(GroupData *g) {
+    m_groups << g;
+    emit newGroups();
+}
+
+void UserData::removeAllGroups() {
+    m_groups.clear();
+    emit newGroups();
+}
+
+const QList<GroupData *> UserData::getGroups() const {
+    return m_groups;
+}
+
+QString UserData::getGroupsAsString() const {
+    if (!m_groups.empty()) {
+        QString ss;
+        auto it = m_groups.cbegin();
+        while (true)
+        {
+            ss += (*it)->getName();
+            it++;
+            if (it != m_groups.cend()) {
+                ss += ", ";
+            }
+            else {
+                return ss;
+            }
+        }       
+    }
+    return "";
 }

@@ -95,6 +95,29 @@ Popup {
         }
 
         Text {
+            id: pupilYearOfBirthTitleText
+
+            Layout.preferredHeight: 20
+            Layout.preferredWidth: parent.width
+            Layout.leftMargin: 40
+
+            text: qsTr("Year of birth")
+            font.bold: true
+            font {
+                family: Style.fontAwesome
+                pixelSize: 15
+            }
+        }
+
+        UnderlinedTextInput {
+            id: pupilYearOfBirthTextInput
+
+            Layout.preferredHeight: 20
+            Layout.preferredWidth: parent.width
+            Layout.leftMargin: 40
+        }
+
+        Text {
             id: groupsListTitleText
 
             Layout.preferredHeight: 20
@@ -133,8 +156,7 @@ Popup {
                 text: qsTr("Save")
                 onClicked: {
                     currentPupil.name = pupilNameTextInput.text
-                    // todo create a field and get from here
-                    currentPupil.dateOfBirth = "2012"
+                    currentPupil.dateOfBirth = pupilYearOfBirthTitleText.text
 
                     // todo have a check list with all the existing groups instead of inputting the groups manually
                     var groupList = groupsNamesTextInput.text.split("-");

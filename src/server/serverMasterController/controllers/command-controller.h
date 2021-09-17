@@ -39,7 +39,6 @@ namespace controllers {
         void onEditClientDeleteExecuted();
         void onManagePupilsAddPupilExecuted();
         void onManagePupilsAddPupilsFromListExecuted();
-        void onManagePupilsEditPupilExecuted();
         void onManagePupilsRemovePupilsExecuted();
 
     private:

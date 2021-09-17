@@ -25,6 +25,27 @@ namespace controllers {
         void loadDatabase() {
             databaseController->retrieveAllExistingGroups(groups);
             databaseController->retrieveAllExistingUsers(users);
+            databaseController->recreateAllLinksBetweenGroupsAndUsers(groups, users);
+            filterUsersView("");
+        }
+
+        void filterUsersView(const QString &groupName) {
+            groupFilterName = groupName;
+            usersToDisplay.clear();
+            if(groupName.isEmpty()) {
+                usersToDisplay << users;
+            }
+            else {
+                for(UserData *user: users) {
+                    auto groupIterator = std::find_if(std::begin(user->getGroups()), std::end(user->getGroups()),
+                                                      [&groupName](GroupData * group) {
+                                                          return group->getName() == groupName;
+                                                      });
+                    if(groupIterator != std::end(user->getGroups())) {
+                        usersToDisplay << user;
+                    }
+                }
+            }
         }
 
         MasterController *masterController { nullptr };
@@ -33,7 +54,10 @@ namespace controllers {
         NavigationController *navigationController { nullptr };
         QList<GroupData *> groups;
         QList<UserData *> users;
-        // remove below
+        QList<UserData *> usersToDisplay;
+        QString groupFilterName;
+
+        // remove below once server ok
         Client *newClient { nullptr };
         ClientSearch *clientSearch { nullptr };
     };
@@ -102,7 +126,8 @@ namespace controllers {
         if(implementation->databaseController->updateGroup(*group, newGroupName)) {
             group->setName(newGroupName);
             emit groupsChanged();
-        }
+            emit usersChanged();
+       }
         else {
             qDebug() << "Unable to update group from" << oldGroupName << "to" << newGroupName;
         }
@@ -144,7 +169,7 @@ namespace controllers {
         }
     }
 
-    void MasterController::addUserToGroups(UserData *newUser, const QVariantList &groupList)
+    void MasterController::setGroupsForUser(UserData *newUser, const QVariantList &groupList)
     {
         const QString &userName = newUser->getName();
         auto userIterator = std::find_if(std::begin(implementation->users), std::end(implementation->users),
@@ -156,6 +181,8 @@ namespace controllers {
             qDebug() << "User" << newUser->getName() << "does not exist";
         }
         UserData *user = *userIterator;
+        implementation->databaseController->removeAllGroupsForUser(*user);
+        user->removeAllGroups();
         for(const QVariant &var: groupList) {
             const QString groupName = var.toString();
             auto groupIterator = std::find_if(std::begin(implementation->groups), std::end(implementation->groups),
@@ -169,13 +196,14 @@ namespace controllers {
             GroupData *group = *groupIterator;
 
             if(implementation->databaseController->addUserToGroup(*user, *group)) {
+                user->addGroup(group);
                 qDebug() << userName << "added to" << groupName;
-                // Todo add in the model and display it to screen
             }
             else {
                 qDebug() << "Unable to add " << userName << "to" << groupName;
             }
         }
+        emit usersChanged();
     }
 
     void MasterController::deleteUser(const QString &userName)
@@ -204,15 +232,20 @@ namespace controllers {
         return QQmlListProperty<GroupData>(this, implementation->groups);
     }
 
+    void MasterController::filterUsersView(const QString &groupName)
+    {
+        implementation->filterUsersView(groupName);
+        emit usersChanged();
+    }
+
     QQmlListProperty<UserData> MasterController::ui_users()
     {
-        return QQmlListProperty<UserData>(this, implementation->users);
+        return QQmlListProperty<UserData>(this, implementation->usersToDisplay);
     }
 
     void MasterController::selectClient(Client *client)
     {
         implementation->navigationController->goEditClientView(client);
     }
-
 }
 }
