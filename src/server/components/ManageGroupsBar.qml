@@ -29,6 +29,9 @@ Item {
     }
     width: Style.widthNavigationButton
 
+    property var selectedGroups: []
+    property bool resetGroups: false
+
     Rectangle {
         id: pupilsNavigationRectangle
         width: parent.width
@@ -86,6 +89,17 @@ Item {
                             color: Style.colourNavigationBarBackground
                         }
                     }
+                    MouseArea {
+                        anchors.fill: parent
+                        onClicked: {
+                            // Reset filter when clicking on "Groups"
+                            // todo add a "ALL" text
+                            resetGroups = true
+                            pupilsNavigationBarItem.selectedGroups = [];
+                            masterController.filterUsersView(pupilsNavigationBarItem.selectedGroups);
+                            resetGroups = false
+                        }
+                    }
                 }
             }
 
@@ -94,7 +108,6 @@ Item {
                 id: groupsNamesRepeater
                 model: masterController.ui_groups
 
-                property string selectedGroup: ""
                 Rectangle {
                     id: groupNameRectangle
                     width: groupNames.width
@@ -109,61 +122,32 @@ Item {
                             Layout.fillHeight: true
                             Layout.minimumWidth: pupilsNavigationRectangle.width/5
                             color: "transparent"
-                            Text {
-                                text: "\uf054"
-                                anchors.horizontalCenter: parent.horizontalCenter
+                            CheckBox {
+                                id: groupSelectionCheckBox
+                                property bool resetGroups: pupilsNavigationBarItem.resetGroups
                                 anchors.verticalCenter: parent.verticalCenter
                                 leftPadding: 20
-                                color: "grey"
-                                font {
-                                    family: Style.fontAwesome
-                                    pixelSize: Style.pixelSizeNavigationBarIcon / 2
-                                }
-                            }
-                        }
-                        Rectangle {
-                            id: groupeNameTextRectangle
-                            Layout.fillWidth: true
-                            Layout.fillHeight: true
-                            Layout.preferredWidth: groupNameText.width
-                            Layout.preferredHeight: groupNameText.height
-                            color: "transparent"
-
-                            MouseArea {
-                               anchors.fill: parent
-                               height: parent.height
-                               width: parent.width
-                               hoverEnabled: true
-                               onClicked: {
-                                   if(groupsNamesRepeater.selectedGroup == modelData.name) {
-                                       groupsNamesRepeater.selectedGroup = "";
-                                   }
-                                   else {
-                                       // We bind in case we update the group name
-                                       // when we are already filtering to be sure
-                                       // selectedGroup keeps the new name
-                                       groupsNamesRepeater.selectedGroup = Qt.binding(function() { return modelData.name })
-                                   }
-                                   console.log("filter users to only those in", groupsNamesRepeater.selectedGroup);
-                                   masterController.filterUsersView(groupsNamesRepeater.selectedGroup);
-                               }
-                               onEntered: { groupNameText.color = Style.colourNavigationBarBackground
-                                            groupNameRectangle.color = Style.colourPanelBackgroundHover
-                               }
-                               onExited: { groupNameText.color = "grey"
-                                           groupNameRectangle.color = Style.colourBackground
-                               }
-                            }
-
-                            Text {
-                                id: groupNameText
-
-                                anchors.verticalCenter: parent.verticalCenter
                                 text: modelData.name
-                                color: "grey"
-                                leftPadding: 5
-                                elide: Text.ElideRight
-                                font.underline: groupsNamesRepeater.selectedGroup == modelData.name
+                                onToggled: {
+                                    var groupIndex = pupilsNavigationBarItem.selectedGroups.indexOf(modelData.name);
+                                    if(groupIndex >= 0) {
+                                        pupilsNavigationBarItem.selectedGroups.splice(groupIndex, 1);
+                                    }
+                                    else {
+                                        // We would need to bind in case we update the group name
+                                        // when we are already filtering to be sure
+                                        // selectedGroup keeps the new name
+                                        //pupilsNavigationBarItem.selectedGroups.push(Qt.binding(function() { return modelData.name }))
+                                        pupilsNavigationBarItem.selectedGroups.push(modelData.name)
+                                    }
+                                    console.log("filter users to only those in", pupilsNavigationBarItem.selectedGroups);
+                                    masterController.filterUsersView(pupilsNavigationBarItem.selectedGroups);
+                                }
+                                onResetGroupsChanged: {
+                                    if(checked) {
+                                        toggle();
+                                    }
+                                }
                             }
                         }
 

@@ -26,20 +26,20 @@ namespace controllers {
             databaseController->retrieveAllExistingGroups(groups);
             databaseController->retrieveAllExistingUsers(users);
             databaseController->recreateAllLinksBetweenGroupsAndUsers(groups, users);
-            filterUsersView("");
+            filterUsersView({});
         }
 
-        void filterUsersView(const QString &groupName) {
-            groupFilterName = groupName;
+        void filterUsersView(const QStringList &groupNames) {
+            groupFilterName = groupNames;
             usersToDisplay.clear();
-            if(groupName.isEmpty()) {
+            if(groupNames.isEmpty()) {
                 usersToDisplay << users;
             }
             else {
                 for(UserData *user: users) {
                     auto groupIterator = std::find_if(std::begin(user->getGroups()), std::end(user->getGroups()),
-                                                      [&groupName](GroupData * group) {
-                                                          return group->getName() == groupName;
+                                                      [&groupNames](GroupData * group) {
+                                                          return groupNames.indexOf(group->getName()) != -1;
                                                       });
                     if(groupIterator != std::end(user->getGroups())) {
                         usersToDisplay << user;
@@ -55,7 +55,7 @@ namespace controllers {
         QList<GroupData *> groups;
         QList<UserData *> users;
         QList<UserData *> usersToDisplay;
-        QString groupFilterName;
+        QStringList groupFilterName;
 
         // remove below once server ok
         Client *newClient { nullptr };
@@ -232,9 +232,9 @@ namespace controllers {
         return QQmlListProperty<GroupData>(this, implementation->groups);
     }
 
-    void MasterController::filterUsersView(const QString &groupName)
+    void MasterController::filterUsersView(const QStringList &groupNames)
     {
-        implementation->filterUsersView(groupName);
+        implementation->filterUsersView(groupNames);
         emit usersChanged();
     }
 

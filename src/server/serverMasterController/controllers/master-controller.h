@@ -51,7 +51,7 @@ namespace controllers {
 
         void selectClient(cm::models::Client *client);
 
-        Q_INVOKABLE void filterUsersView(const QString &groupName);
+        Q_INVOKABLE void filterUsersView(const QStringList &groupNames);
 
     signals:
         void groupsChanged();
