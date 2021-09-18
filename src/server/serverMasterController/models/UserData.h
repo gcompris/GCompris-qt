@@ -50,6 +50,7 @@ public:
     const QList<GroupData *> getGroups() const;
     QString getGroupsAsString() const;
     void addGroup(GroupData *g);
+    void removeGroup(GroupData *g);
     void removeAllGroups();
 
 private:

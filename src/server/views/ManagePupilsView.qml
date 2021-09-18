@@ -208,7 +208,6 @@ Item {
                                 color: "transparent"
                                 Text {
                                     id: groupsText
-                                    // todo get all groups from the users
                                     text: modelData.groupsList
                                     leftPadding: 10
                                     anchors.verticalCenter: parent.verticalCenter

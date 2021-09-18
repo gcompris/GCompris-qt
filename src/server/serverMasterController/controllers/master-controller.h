@@ -26,6 +26,7 @@ namespace controllers {
         Q_PROPERTY(cm::models::Client *ui_newClient READ newClient CONSTANT)
         Q_PROPERTY(QQmlListProperty<GroupData> ui_groups READ ui_groups NOTIFY groupsChanged)
         Q_PROPERTY(QQmlListProperty<UserData> ui_users READ ui_users NOTIFY usersChanged)
+        Q_PROPERTY(QStringList ui_groupsFiltered READ ui_groupsFiltered NOTIFY groupsFilteredChanged)
 
     public:
         explicit MasterController(QObject *parent = nullptr);
@@ -36,6 +37,7 @@ namespace controllers {
         NavigationController *navigationController();
         QQmlListProperty<GroupData> ui_groups();
         QQmlListProperty<UserData> ui_users();
+        QStringList ui_groupsFiltered();
         models::Client *newClient();
 
     public slots:
@@ -48,9 +50,12 @@ namespace controllers {
 
         void selectClient(cm::models::Client *client);
 
-        Q_INVOKABLE void filterUsersView(const QStringList &groupNames);
+        void addGroupToFilter(const QString &groupName);
+        void removeGroupToFilter(const QString &groupName);
+        Q_INVOKABLE void filterUsersView();
 
     signals:
+        void groupsFilteredChanged();
         void groupsChanged();
         void usersChanged();
 

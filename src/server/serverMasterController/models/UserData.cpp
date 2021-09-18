@@ -67,6 +67,11 @@ void UserData::addGroup(GroupData *g) {
     emit newGroups();
 }
 
+void UserData::removeGroup(GroupData *g) {
+    m_groups.removeOne(g);
+    emit newGroups();
+}
+
 void UserData::removeAllGroups() {
     m_groups.clear();
     emit newGroups();

@@ -29,7 +29,7 @@ Item {
     }
     width: Style.widthNavigationButton
 
-    property var selectedGroups: []
+    property var selectedGroups: masterController.ui_groupsFiltered
     property bool resetGroups: false
 
     Rectangle {
@@ -46,7 +46,6 @@ Item {
             spacing: 2
             anchors.top: parent.top
             width: parent.width
-
 
             //groups header
             Rectangle {
@@ -89,16 +88,17 @@ Item {
                             color: Style.colourNavigationBarBackground
                         }
                     }
-                    MouseArea {
-                        anchors.fill: parent
-                        onClicked: {
-                            // Reset filter when clicking on "Groups"
-                            // todo add a "ALL" text
-                            resetGroups = true
-                            pupilsNavigationBarItem.selectedGroups = [];
-                            masterController.filterUsersView(pupilsNavigationBarItem.selectedGroups);
-                            resetGroups = false
-                        }
+                }
+
+                MouseArea {
+                    anchors.fill: parent
+                    onClicked: {
+                        // Reset filter when clicking on "Groups"
+                        // todo add a "All" text
+                        resetGroups = true
+                        masterController.removeGroupToFilter("");
+                        masterController.filterUsersView();
+                        resetGroups = false
                     }
                 }
             }
@@ -128,20 +128,24 @@ Item {
                                 anchors.verticalCenter: parent.verticalCenter
                                 leftPadding: 20
                                 text: modelData.name
+                                Component.onCompleted: {
+                                    // After updating a group, the view is resetted
+                                    // so we check the previous selected groups manually
+                                    var groupIndex = pupilsNavigationBarItem.selectedGroups.indexOf(modelData.name);
+                                    if(groupIndex >= 0) {
+                                        checked = true
+                                    }
+                                }
                                 onToggled: {
                                     var groupIndex = pupilsNavigationBarItem.selectedGroups.indexOf(modelData.name);
                                     if(groupIndex >= 0) {
-                                        pupilsNavigationBarItem.selectedGroups.splice(groupIndex, 1);
+                                        masterController.removeGroupToFilter(modelData.name)
                                     }
                                     else {
-                                        // We would need to bind in case we update the group name
-                                        // when we are already filtering to be sure
-                                        // selectedGroup keeps the new name
-                                        //pupilsNavigationBarItem.selectedGroups.push(Qt.binding(function() { return modelData.name }))
-                                        pupilsNavigationBarItem.selectedGroups.push(modelData.name)
+                                        masterController.addGroupToFilter(modelData.name)
                                     }
                                     console.log("filter users to only those in", pupilsNavigationBarItem.selectedGroups);
-                                    masterController.filterUsersView(pupilsNavigationBarItem.selectedGroups);
+                                    masterController.filterUsersView();
                                 }
                                 onResetGroupsChanged: {
                                     if(checked) {

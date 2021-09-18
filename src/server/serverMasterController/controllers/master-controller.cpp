@@ -25,20 +25,19 @@ namespace controllers {
             databaseController->retrieveAllExistingGroups(groups);
             databaseController->retrieveAllExistingUsers(users);
             databaseController->recreateAllLinksBetweenGroupsAndUsers(groups, users);
-            filterUsersView({});
+            filterUsersView();
         }
 
-        void filterUsersView(const QStringList &groupNames) {
-            groupFilterName = groupNames;
+        void filterUsersView() {
             usersToDisplay.clear();
-            if(groupNames.isEmpty()) {
+            if(groupFilterName.isEmpty()) {
                 usersToDisplay << users;
             }
             else {
                 for(UserData *user: users) {
                     auto groupIterator = std::find_if(std::begin(user->getGroups()), std::end(user->getGroups()),
-                                                      [&groupNames](GroupData * group) {
-                                                          return groupNames.indexOf(group->getName()) != -1;
+                                                      [this](GroupData * group) {
+                                                          return groupFilterName.indexOf(group->getName()) != -1;
                                                       });
                     if(groupIterator != std::end(user->getGroups())) {
                         usersToDisplay << user;
@@ -117,6 +116,12 @@ namespace controllers {
         }
         GroupData *group = *groupIterator;
         if(implementation->databaseController->updateGroup(*group, newGroupName)) {
+            if(implementation->groupFilterName.indexOf(group->getName()) >= 0) {
+                implementation->groupFilterName.removeOne(group->getName());
+                implementation->groupFilterName << newGroupName;
+                emit groupsFilteredChanged();
+            }
+
             group->setName(newGroupName);
             emit groupsChanged();
             emit usersChanged();
@@ -137,10 +142,25 @@ namespace controllers {
             return;
         }
         GroupData *group = *groupIterator;
-        //todo remove all users from this group
         if(implementation->databaseController->deleteGroup(*group)) {
             implementation->groups.removeOne(group);
+            // remove all users from this group
+            for(UserData *user: implementation->users) {
+                auto groupIterator = std::find_if(std::begin(user->getGroups()), std::end(user->getGroups()),
+                                                  [&groupName](GroupData * group) {
+                                                      return groupName == group->getName();
+                                                  });
+                if(groupIterator != std::end(user->getGroups())) {
+                    user->removeGroup(*groupIterator);
+                }
+            }
+            // Remove the group from views filter if it was present
+            if(implementation->groupFilterName.indexOf(group->getName()) >= 0) {
+                implementation->groupFilterName.removeOne(group->getName());
+                filterUsersView();
+            }
             emit groupsChanged();
+            emit usersChanged();
             delete group;
         }
         else {
@@ -196,6 +216,7 @@ namespace controllers {
                 qDebug() << "Unable to add " << userName << "to" << groupName;
             }
         }
+        filterUsersView();
         emit usersChanged();
     }
 
@@ -212,6 +233,7 @@ namespace controllers {
         UserData *user = *userIterator;
         if(implementation->databaseController->deleteUser(*user)) {
             implementation->users.removeOne(user);
+            filterUsersView();
             emit usersChanged();
             delete user;
         }
@@ -222,18 +244,46 @@ namespace controllers {
 
     QQmlListProperty<GroupData> MasterController::ui_groups()
     {
+#if QT_VERSION >= QT_VERSION_CHECK(5, 15, 0)
+        return QQmlListProperty<GroupData>(this, &implementation->groups);
+#else
         return QQmlListProperty<GroupData>(this, implementation->groups);
+#endif
+        
     }
 
-    void MasterController::filterUsersView(const QStringList &groupNames)
+    void MasterController::addGroupToFilter(const QString &groupName)
     {
-        implementation->filterUsersView(groupNames);
+        implementation->groupFilterName << groupName;
+    }
+    void MasterController::removeGroupToFilter(const QString &groupName)
+    {
+        if(groupName.isEmpty()) {
+            implementation->groupFilterName.clear();
+        }
+        else {
+            implementation->groupFilterName.removeOne(groupName);
+        }
+    }
+
+    void MasterController::filterUsersView()
+    {
+        implementation->filterUsersView();
         emit usersChanged();
     }
 
     QQmlListProperty<UserData> MasterController::ui_users()
     {
+#if QT_VERSION >= QT_VERSION_CHECK(5, 15, 0)
+        return QQmlListProperty<UserData>(this, &implementation->usersToDisplay);
+#else
         return QQmlListProperty<UserData>(this, implementation->usersToDisplay);
+#endif
+    }
+
+    QStringList MasterController::ui_groupsFiltered()
+    {
+        return implementation->groupFilterName;
     }
 
     void MasterController::selectClient(Client *client)
