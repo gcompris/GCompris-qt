@@ -16,8 +16,7 @@ namespace controllers {
             databaseController = new DatabaseController(masterController);
             navigationController = new NavigationController(masterController);
             newClient = new Client(masterController);
-            clientSearch = new ClientSearch(masterController, databaseController);
-            commandController = new CommandController(masterController, databaseController, navigationController, newClient, clientSearch);
+            commandController = new CommandController(masterController, databaseController, navigationController, newClient);
 
             loadDatabase();
         }
@@ -59,7 +58,6 @@ namespace controllers {
 
         // remove below once server ok
         Client *newClient { nullptr };
-        ClientSearch *clientSearch { nullptr };
     };
 
     MasterController::MasterController(QObject *parent) :
@@ -90,11 +88,6 @@ namespace controllers {
     Client *MasterController::newClient()
     {
         return implementation->newClient;
-    }
-
-    ClientSearch *MasterController::clientSearch()
-    {
-        return implementation->clientSearch;
     }
 
     void MasterController::createGroup(const QString &groupName)

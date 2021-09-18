@@ -39,7 +39,6 @@
 #include <models/UserData.h>
 #include <models/address.h>
 #include <models/client.h>
-#include <models/client-search.h>
 #include <models/contact.h>
 
 

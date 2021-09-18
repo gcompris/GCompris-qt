@@ -46,8 +46,6 @@ set(server_SRCS
   serverMasterController/models/client.h
   serverMasterController/models/address.cpp
   serverMasterController/models/address.h
-  serverMasterController/models/client-search.cpp
-  serverMasterController/models/client-search.h
   serverMasterController/models/contact.cpp
   serverMasterController/models/contact.h
   serverMasterController/framework/command.cpp

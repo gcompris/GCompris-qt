@@ -12,16 +12,12 @@ namespace controllers {
     class CommandController::Implementation
     {
     public:
-        Implementation(CommandController *_commandController, DatabaseController *_databaseController, NavigationController *_navigationController, Client *_newClient, ClientSearch *_clientSearch) :
-            commandController(_commandController), databaseController(_databaseController), navigationController(_navigationController), newClient(_newClient), clientSearch(_clientSearch)
+        Implementation(CommandController *_commandController, DatabaseController *_databaseController, NavigationController *_navigationController, Client *_newClient) :
+            commandController(_commandController), databaseController(_databaseController), navigationController(_navigationController), newClient(_newClient)
         {
             Command *createClientSaveCommand = new Command(commandController, QChar(0xf0c7), "Save");
             QObject::connect(createClientSaveCommand, &Command::executed, commandController, &CommandController::onCreateClientSaveExecuted);
             createClientViewContextCommands.append(createClientSaveCommand);
-
-            Command *findClientSearchCommand = new Command(commandController, QChar(0xf002), "Search");
-            QObject::connect(findClientSearchCommand, &Command::executed, commandController, &CommandController::onFindClientSearchExecuted);
-            findClientViewContextCommands.append(findClientSearchCommand);
 
             Command *editClientDeleteCommand = new Command(commandController, QChar(0xf235), "Delete");
             QObject::connect(editClientDeleteCommand, &Command::executed, commandController, &CommandController::onEditClientDeleteExecuted);
@@ -49,7 +45,6 @@ namespace controllers {
         DatabaseController *databaseController { nullptr };
         NavigationController *navigationController { nullptr };
         Client *newClient { nullptr };
-        ClientSearch *clientSearch { nullptr };
         Client *selectedClient { nullptr };
         QList<Command *> createClientViewContextCommands {};
         QList<Command *> findClientViewContextCommands {};
@@ -57,10 +52,10 @@ namespace controllers {
         QList<Command *> managePupilsViewContextCommands {};
     };
 
-    CommandController::CommandController(QObject *parent, DatabaseController *databaseController, NavigationController *navigationController, Client *newClient, ClientSearch *clientSearch) :
+    CommandController::CommandController(QObject *parent, DatabaseController *databaseController, NavigationController *navigationController, Client *newClient) :
         QObject(parent)
     {
-        implementation.reset(new Implementation(this, databaseController, navigationController, newClient, clientSearch));
+        implementation.reset(new Implementation(this, databaseController, navigationController, newClient));
     }
 
     CommandController::~CommandController()
@@ -100,16 +95,7 @@ namespace controllers {
 
         qDebug() << "New client saved.";
 
-        implementation->clientSearch->searchText()->setValue(implementation->newClient->id());
-        implementation->clientSearch->search();
         implementation->navigationController->goFindClientView();
-    }
-
-    void CommandController::onFindClientSearchExecuted()
-    {
-        qDebug() << "You executed the Search command!";
-
-        implementation->clientSearch->search();
     }
 
     void CommandController::onEditClientSaveExecuted()
@@ -130,7 +116,6 @@ namespace controllers {
 
         qDebug() << "Client deleted.";
 
-        implementation->clientSearch->search();
         implementation->navigationController->goAddPupilsFromListDialog();
     }
 
@@ -142,9 +127,6 @@ namespace controllers {
         /*  implementation->databaseController->createRow(implementation->newClient->key(), implementation->newClient->id(), implementation->newClient->toJson());
 
     qDebug() << "New client saved.";
-
-    implementation->clientSearch->searchText()->setValue(implementation->newClient->id());
-    implementation->clientSearch->search();
     implementation->navigationController->goFindClientView();*/
     }
 
@@ -156,8 +138,6 @@ namespace controllers {
 
     qDebug() << "New client saved.";
 
-    implementation->clientSearch->searchText()->setValue(implementation->newClient->id());
-    implementation->clientSearch->search();
     implementation->navigationController->goFindClientView();*/
     }
 
@@ -169,9 +149,6 @@ namespace controllers {
         /*  implementation->databaseController->createRow(implementation->newClient->key(), implementation->newClient->id(), implementation->newClient->toJson());
 
     qDebug() << "New client saved.";
-
-    implementation->clientSearch->searchText()->setValue(implementation->newClient->id());
-    implementation->clientSearch->search();
     implementation->navigationController->goFindClientView();*/
     }
 

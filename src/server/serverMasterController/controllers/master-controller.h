@@ -10,7 +10,6 @@
 #include <controllers/database-controller.h>
 #include <controllers/navigation-controller.h>
 #include <models/client.h>
-#include <models/client-search.h>
 #include <models/GroupData.h>
 #include <models/UserData.h>
 
@@ -25,7 +24,6 @@ namespace controllers {
         Q_PROPERTY(cm::controllers::CommandController *ui_commandController READ commandController CONSTANT)
         Q_PROPERTY(cm::controllers::DatabaseController *ui_databaseController READ databaseController CONSTANT)
         Q_PROPERTY(cm::models::Client *ui_newClient READ newClient CONSTANT)
-        Q_PROPERTY(cm::models::ClientSearch *ui_clientSearch READ clientSearch CONSTANT)
         Q_PROPERTY(QQmlListProperty<GroupData> ui_groups READ ui_groups NOTIFY groupsChanged)
         Q_PROPERTY(QQmlListProperty<UserData> ui_users READ ui_users NOTIFY usersChanged)
 
@@ -39,7 +37,6 @@ namespace controllers {
         QQmlListProperty<GroupData> ui_groups();
         QQmlListProperty<UserData> ui_users();
         models::Client *newClient();
-        models::ClientSearch *clientSearch();
 
     public slots:
         void createGroup(const QString &groupName);

@@ -9,7 +9,6 @@
 #include <controllers/database-controller.h>
 #include <controllers/navigation-controller.h>
 #include <models/client.h>
-#include <models/client-search.h>
 
 namespace cm {
 namespace controllers {
@@ -23,7 +22,7 @@ namespace controllers {
         Q_PROPERTY(QQmlListProperty<cm::framework::Command> ui_managePupilsViewContextCommands READ ui_managePupilsViewContextCommands CONSTANT)
 
     public:
-        explicit CommandController(QObject *_parent = nullptr, DatabaseController *databaseController = nullptr, controllers::NavigationController *navigationController = nullptr, models::Client *newClient = nullptr, models::ClientSearch *clientSearch = nullptr);
+        explicit CommandController(QObject *_parent = nullptr, DatabaseController *databaseController = nullptr, controllers::NavigationController *navigationController = nullptr, models::Client *newClient = nullptr);
         ~CommandController();
 
         QQmlListProperty<framework::Command> ui_createClientViewContextCommands();
@@ -34,7 +33,6 @@ namespace controllers {
     public slots:
         void setSelectedClient(cm::models::Client *client);
         void onCreateClientSaveExecuted();
-        void onFindClientSearchExecuted();
         void onEditClientSaveExecuted();
         void onEditClientDeleteExecuted();
         void onManagePupilsAddPupilExecuted();
