@@ -132,15 +132,35 @@ Popup {
             }
         }
 
-        UnderlinedTextInput {
-            id: groupsNamesTextInput
+        Rectangle {
+            id: groupNamesRectangle
 
-            Layout.preferredHeight: 20
             Layout.preferredWidth: parent.width
+            Layout.preferredHeight: 80
             Layout.leftMargin: 40
+            border.color: "red"
+            border.width: 3
 
-            defaultText: addModifyPupilDialog.groupsNames
+            ListView {
+                id: groupNamesListView
+                anchors.top: parent.top
+                anchors.horizontalCenter: parent.horizontalCenter
+                width: parent.width
+                height: parent.height - 10
+
+                model: masterController.ui_groups
+                delegate: CheckDelegate {
+                    text: modelData.name
+
+                    width: 100
+
+                    onCheckedChanged: {
+                        print("checked changed: " + index)
+                    }
+                }
+            }
         }
+
 
 
         Rectangle {
