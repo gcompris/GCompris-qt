@@ -27,6 +27,8 @@ namespace controllers {
         void goAddPupilsFromListDialog();
         void goRemovePupilsDialog();
         void goAddPupilDialog();
+        void goAddPupilToGroupsDialog();
+        void goRemovePupilToGroupsDialog();
     };
 
 }

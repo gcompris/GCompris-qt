@@ -49,6 +49,7 @@ public:
     const QString &getPassword() const;
     const QList<GroupData *> getGroups() const;
     QString getGroupsAsString() const;
+    bool hasGroup(GroupData *g);
     void addGroup(GroupData *g);
     void removeGroup(GroupData *g);
     void removeAllGroups();

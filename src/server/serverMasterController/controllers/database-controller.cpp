@@ -325,6 +325,21 @@ namespace controllers {
         return userAdded;
     }
 
+    bool DatabaseController::removeUserToGroup(const UserData& user, const GroupData& group)
+    {
+        bool userGroupRemoved = false;
+        QSqlQuery query(implementation->database);
+        query.prepare("DELETE FROM group_users WHERE user_id=:user and group_id=:group");
+        query.bindValue(":user", user.getPrimaryKey());
+        query.bindValue(":group", group.getPrimaryKey());
+        query.exec();
+        userGroupRemoved = query.exec();
+        if(!userGroupRemoved) {
+            qDebug() << "user-group could not be added "<< query.lastError();
+        }
+        return userGroupRemoved;
+    }
+
     /*----------------------------------------------*/
     bool DatabaseController::createRow(const QString &tableName, const QString &id, const QJsonObject &jsonObject) const
     {

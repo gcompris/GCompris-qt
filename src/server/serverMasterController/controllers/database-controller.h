@@ -32,6 +32,7 @@ namespace controllers {
 
         void recreateAllLinksBetweenGroupsAndUsers(QList<GroupData* > &groups, QList<UserData* > &users);
         bool addUserToGroup(const UserData& user, const GroupData& group);
+        bool removeUserToGroup(const UserData& user, const GroupData& group);
         bool removeAllGroupsForUser(const UserData& user);
 
         /* ---------------------- */

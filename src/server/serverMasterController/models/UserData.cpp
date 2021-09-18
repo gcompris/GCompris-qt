@@ -62,6 +62,10 @@ const QString &UserData::getPassword() const
     return m_password;
 }
 
+bool UserData::hasGroup(GroupData *g) {
+    return m_groups.indexOf(g) >= 0;
+}
+
 void UserData::addGroup(GroupData *g) {
     m_groups << g;
     emit newGroups();

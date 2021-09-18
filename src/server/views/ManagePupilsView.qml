@@ -28,6 +28,8 @@ Item {
         onGoAddPupilDialog: addPupilDialog.open()
         onGoAddPupilsFromListDialog: addPupilsFromListDialog.open()
         onGoRemovePupilsDialog: removePupilsDialog.open()
+        onGoAddPupilToGroupsDialog: addPupilsToGroupsDialog.open()
+        onGoRemovePupilToGroupsDialog: removePupilsToGroupsDialog.open()
     }
 
     ListView {
@@ -408,6 +410,69 @@ Item {
                 masterController.deleteUser(removePupilsDialog.pupilsNamesList[i]);
             }
         }
+    }
 
+    AddPupilsToGroupsDialog {
+        id: addPupilsToGroupsDialog
+
+        onOpened: {
+            var tmpPupilsNamesList = []
+            for(var i = 0 ; i < pupilsDetailsRepeater.count ; i ++) {
+                if (pupilsDetailsRepeater.itemAt(i).pupilNameCheckBox.checked === true) {
+                    tmpPupilsNamesList.push(pupilsDetailsRepeater.itemAt(i).pupilNameCheckBox.text)
+                }
+            }
+            console.log(tmpPupilsNamesList)
+            addPupilsToGroupsDialog.pupilsNamesList = tmpPupilsNamesList
+            managePupilsView.pupilsNamesListSelected(tmpPupilsNamesList)
+            var pupilsNamesListStr = ""
+            for(i = 0 ; i < pupilsNamesList.length ; i++) {
+                pupilsNamesListStr = pupilsNamesListStr + tmpPupilsNamesList[i] + "\r\n"
+            }
+
+            pupilsNamesText.text = pupilsNamesListStr
+
+            console.log(pupilsNamesListStr)
+
+        }
+
+        onAccepted: {
+            print(addPupilsToGroupsDialog.pupilsNamesList.length, addPupilsToGroupsDialog.pupilsNamesList, newGroups)
+            for(var i = 0 ; i < addPupilsToGroupsDialog.pupilsNamesList.length ; i++) {
+                masterController.addGroupsToUser(addPupilsToGroupsDialog.pupilsNamesList[i], newGroups);
+            }
+        }
+    }
+
+    RemovePupilsToGroupsDialog {
+        id: removePupilsToGroupsDialog
+
+        onOpened: {
+            var tmpPupilsNamesList = []
+            for(var i = 0 ; i < pupilsDetailsRepeater.count ; i ++) {
+                if (pupilsDetailsRepeater.itemAt(i).pupilNameCheckBox.checked === true) {
+                    tmpPupilsNamesList.push(pupilsDetailsRepeater.itemAt(i).pupilNameCheckBox.text)
+                }
+            }
+            console.log(tmpPupilsNamesList)
+            removePupilsToGroupsDialog.pupilsNamesList = tmpPupilsNamesList
+            managePupilsView.pupilsNamesListSelected(tmpPupilsNamesList)
+            var pupilsNamesListStr = ""
+            for(i = 0 ; i < pupilsNamesList.length ; i++) {
+                pupilsNamesListStr = pupilsNamesListStr + tmpPupilsNamesList[i] + "\r\n"
+            }
+
+            pupilsNamesText.text = pupilsNamesListStr
+
+            console.log(pupilsNamesListStr)
+
+        }
+
+        onAccepted: {
+            print(removePupilsToGroupsDialog.pupilsNamesList.length, removePupilsToGroupsDialog.pupilsNamesList, newGroups)
+            for(var i = 0 ; i < removePupilsToGroupsDialog.pupilsNamesList.length ; i++) {
+                masterController.removeGroupsToUser(removePupilsToGroupsDialog.pupilsNamesList[i], newGroups);
+            }
+        }
     }
 }

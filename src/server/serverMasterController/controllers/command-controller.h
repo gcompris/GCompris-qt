@@ -38,6 +38,8 @@ namespace controllers {
         void onManagePupilsAddPupilExecuted();
         void onManagePupilsAddPupilsFromListExecuted();
         void onManagePupilsRemovePupilsExecuted();
+        void onManagePupilsAddPupilToGroupsExecuted();
+        void onManagePupilsRemovePupilToGroupsExecuted();
 
     private:
         class Implementation;

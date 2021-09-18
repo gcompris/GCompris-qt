@@ -27,11 +27,19 @@ namespace controllers {
             QObject::connect(editClientSaveCommand, &Command::executed, commandController, &CommandController::onEditClientSaveExecuted);
             editClientViewContextCommands.append(editClientSaveCommand);
 
-            Command *managePupilsAddPupilCommand = new Command(commandController, QChar(0xf234), "Add Pupil");
+            Command *managePupilsAddPupilToGroupsCommand = new Command(commandController, QChar(0xf0c7), tr("Add to Groups"));
+            QObject::connect(managePupilsAddPupilToGroupsCommand, &Command::executed, commandController, &CommandController::onManagePupilsAddPupilToGroupsExecuted);
+            managePupilsViewContextCommands.append(managePupilsAddPupilToGroupsCommand);
+
+            Command *managePupilsRemovePupilToGroupsCommand = new Command(commandController, QChar(0xf235), tr("Remove to Groups"));
+            QObject::connect(managePupilsRemovePupilToGroupsCommand, &Command::executed, commandController, &CommandController::onManagePupilsRemovePupilToGroupsExecuted);
+            managePupilsViewContextCommands.append(managePupilsRemovePupilToGroupsCommand);
+
+            Command *managePupilsAddPupilCommand = new Command(commandController, QChar(0xf234), tr("Add Pupil"));
             QObject::connect(managePupilsAddPupilCommand, &Command::executed, commandController, &CommandController::onManagePupilsAddPupilExecuted);
             managePupilsViewContextCommands.append(managePupilsAddPupilCommand);
 
-            Command *managePupilsAddPupilFromListCommand = new Command(commandController, QChar(0xf2c2), "Add Pupils from List");
+            Command *managePupilsAddPupilFromListCommand = new Command(commandController, QChar(0xf2c2), tr("Add Pupils from List"));
             QObject::connect(managePupilsAddPupilFromListCommand, &Command::executed, commandController, &CommandController::onManagePupilsAddPupilsFromListExecuted);
             managePupilsViewContextCommands.append(managePupilsAddPupilFromListCommand);
 
@@ -64,22 +72,38 @@ namespace controllers {
 
     QQmlListProperty<Command> CommandController::ui_createClientViewContextCommands()
     {
+#if QT_VERSION >= QT_VERSION_CHECK(5, 15, 0)
+        return QQmlListProperty<Command>(this, &implementation->createClientViewContextCommands);
+#else
         return QQmlListProperty<Command>(this, implementation->createClientViewContextCommands);
+#endif
     }
 
     QQmlListProperty<Command> CommandController::ui_findClientViewContextCommands()
     {
+#if QT_VERSION >= QT_VERSION_CHECK(5, 15, 0)
+        return QQmlListProperty<Command>(this, &implementation->findClientViewContextCommands);
+#else
         return QQmlListProperty<Command>(this, implementation->findClientViewContextCommands);
+#endif
     }
 
     QQmlListProperty<Command> CommandController::ui_editClientViewContextCommands()
     {
+#if QT_VERSION >= QT_VERSION_CHECK(5, 15, 0)
+        return QQmlListProperty<Command>(this, &implementation->editClientViewContextCommands);
+#else
         return QQmlListProperty<Command>(this, implementation->editClientViewContextCommands);
+#endif
     }
 
     QQmlListProperty<Command> CommandController::ui_managePupilsViewContextCommands()
     {
+#if QT_VERSION >= QT_VERSION_CHECK(5, 15, 0)
+        return QQmlListProperty<Command>(this, &implementation->managePupilsViewContextCommands);
+#else
         return QQmlListProperty<Command>(this, implementation->managePupilsViewContextCommands);
+#endif
     }
 
     void CommandController::setSelectedClient(Client *client)
@@ -119,38 +143,31 @@ namespace controllers {
         implementation->navigationController->goAddPupilsFromListDialog();
     }
 
+    void CommandController::onManagePupilsAddPupilToGroupsExecuted()
+    {
+        implementation->navigationController->goAddPupilToGroupsDialog();
+    }
+
+    void CommandController::onManagePupilsRemovePupilToGroupsExecuted()
+    {
+        implementation->navigationController->goRemovePupilToGroupsDialog();
+    }
     void CommandController::onManagePupilsAddPupilExecuted()
     {
         qDebug() << "You created a new pupil!";
         implementation->navigationController->goAddPupilDialog();
-
-        /*  implementation->databaseController->createRow(implementation->newClient->key(), implementation->newClient->id(), implementation->newClient->toJson());
-
-    qDebug() << "New client saved.";
-    implementation->navigationController->goFindClientView();*/
     }
 
     void CommandController::onManagePupilsAddPupilsFromListExecuted()
     {
         qDebug() << "You created new pupils from list!";
         implementation->navigationController->goAddPupilsFromListDialog();
-        /*  implementation->databaseController->createRow(implementation->newClient->key(), implementation->newClient->id(), implementation->newClient->toJson());
-
-    qDebug() << "New client saved.";
-
-    implementation->navigationController->goFindClientView();*/
     }
 
     void CommandController::onManagePupilsRemovePupilsExecuted()
     {
         qDebug() << "You removed pupil(s)!";
         implementation->navigationController->goRemovePupilsDialog();
-
-        /*  implementation->databaseController->createRow(implementation->newClient->key(), implementation->newClient->id(), implementation->newClient->toJson());
-
-    qDebug() << "New client saved.";
-    implementation->navigationController->goFindClientView();*/
     }
-
 }
 }

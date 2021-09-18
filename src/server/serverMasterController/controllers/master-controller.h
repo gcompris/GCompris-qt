@@ -46,7 +46,9 @@ namespace controllers {
         void deleteGroup(const QString &groupName);
         void createUser(UserData *userName);
         void deleteUser(const QString &userName);
-        void setGroupsForUser(UserData *newUser, const QVariantList &groupList);
+        void setGroupsForUser(UserData *newUser, const QStringList &groupList);
+        void addGroupsToUser(const QString &userName, const QStringList &groupList);
+        void removeGroupsToUser(const QString &userName, const QStringList &groupList);
 
         void selectClient(cm::models::Client *client);
 
