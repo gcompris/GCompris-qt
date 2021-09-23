@@ -134,6 +134,8 @@ ordering_alphabets
 ordering_chronology
 ordering_numbers
 ordering_sentences
+oware
+oware_2players
 paintings
 path_decoding
 path_decoding_relative
