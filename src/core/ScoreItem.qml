@@ -175,12 +175,15 @@ Item {
                 x: parent.width*0.06
                 anchors.verticalCenter: parent.verticalCenter
             }
-
             GCText {
                 id: scoreLabel
+                x: parent.width * 0.65
                 anchors.verticalCenter: parent.verticalCenter
+                height: parent.height * 0.8
+                width: parent.width * 0.3
+                horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
                 color: "#2a2a2a"
-                x: parent.width*0.65
                 fontSizeMode: Text.Fit
                 text: playerScore
             }
