@@ -98,7 +98,6 @@ Item {
                     height: width
                     sourceSize.width: width
                     visible: display
-                    opacity: label ? 1 : 0.3
                     anchors.horizontalCenter: parent.horizontalCenter
                     anchors.verticalCenter: parent.verticalCenter
                 }
