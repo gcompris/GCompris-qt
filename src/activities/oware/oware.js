@@ -104,7 +104,7 @@ function processMove(player, ind) {
 
     if(!isValidMove(pit)) {
         items.invalidMoveAnimation.start(pit)
-        items.instructionArea.start("Invalid Move!")
+        items.instructionArea.start(qsTr("Invalid Move!"))
         return
     }
 
