@@ -21,7 +21,7 @@ Item {
     property bool responsive: true
     property bool label: true
     property bool highlight: false
-    property string highlightColor: "orange"
+    property string highlightColor: "#E77936" //orange
     property bool selected: false
 
     height: circle.height

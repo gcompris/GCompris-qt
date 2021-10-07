@@ -356,7 +356,7 @@ ActivityBase {
                 PropertyAnimation {
                     target: captureAnimation.fromPit
                     property: "highlightColor"
-                    to: "orange"
+                    to: "#e77936" //orange
                 }
                 PropertyAnimation {
                     target: captureAnimation.fromPit
@@ -404,7 +404,7 @@ ActivityBase {
                 items.isDistributionAnimationPlaying = true
                 targetPit = _targetPit
                 originalHighlightColor = targetPit.highlightColor
-                targetPit.highlightColor = "red"
+                targetPit.highlightColor = "#DF543D" //red
                 targetPit.highlight = true
                 invalidMovePauseAnimation.running = true
             }
