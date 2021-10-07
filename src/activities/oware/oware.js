@@ -44,15 +44,11 @@ function initLevel() {
     if (items.playerWithFirstMove === Player.PLAYER1) {
         items.player2score.beginTurn()
         items.player1score.endTurn()
-        items.hand1.highlight = false
-        items.hand2.highlight = true
         items.playerWithFirstMove = Player.PLAYER2
     }
     else {
         items.player1score.beginTurn()
         items.player2score.endTurn()
-        items.hand1.highlight = true
-        items.hand2.highlight = false
         items.playerWithFirstMove = Player.PLAYER1
     }
 
@@ -108,7 +104,7 @@ function processMove(player, ind) {
 
     if(!isValidMove(pit)) {
         items.invalidMoveAnimation.start(pit)
-        items.instructionArea.start('Invalid Move!')
+        items.instructionArea.start("Invalid Move!")
         return
     }
 
@@ -160,6 +156,7 @@ function captureAll() {
 }
 
 function switchTurn() {
+    items.selectedPit.selected = false
     if(checkWin())
         return
     if(turn === Player.PLAYER1) {
@@ -167,7 +164,6 @@ function switchTurn() {
 
         items.player1score.endTurn()
         items.player2score.beginTurn()
-        items.hand2.highlight = true
 
         if(!twoPlayers) {
             playRandomMove()
@@ -184,7 +180,6 @@ function switchTurn() {
         turn = Player.PLAYER1
         items.player2score.endTurn()
         items.player1score.beginTurn()
-        items.hand1.highlight = true
 
         var valid = false
         for(var i = 0; i < items.board.numberOfPitsInOneRow; ++i)
@@ -227,7 +222,7 @@ function nextClockwise(lastPos) {
 }
 
 function getGlobalPos(component) {
-    if(!component || component.id === 'background')
+    if(!component || component.id === "background")
         return [0, 0]
 
     var pos = getGlobalPos(component.parent)

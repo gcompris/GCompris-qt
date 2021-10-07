@@ -12,13 +12,14 @@ import QtQuick 2.9
 import GCompris 1.0
 
 import "../../core"
+import "oware.js" as Activity
 
 Rectangle {
     id: board
-    color: '#F6E1E1'
+    color: "#80FFFFFF"
     radius: pitWidth / 2
-    height: rowPlayer1.height + rowPlayer2.height + 3 * margin
-    opacity: 0.85
+    height: topSideBg.height * 3
+    opacity: 1
 
     property double margin: 15 * ApplicationInfo.ratio
     property double pitWidth: (width - 7 * margin) / numberOfPitsInOneRow
@@ -36,11 +37,33 @@ Rectangle {
         }
     }
 
+    Image {
+        id: topSideBg
+        source: Activity.url + "boardSide.svg"
+        width: parent.width
+        height: rowPlayer1.height * 1.5
+        sourceSize.width: width
+        sourceSize.height: height
+        anchors.horizontalCenter: parent.horizontalCenter
+        anchors.bottom: parent.verticalCenter
+    }
+
+    Image {
+        id: bottomSideBg
+        source: Activity.url + "boardSide.svg"
+        width: parent.width
+        height: topSideBg.height
+        sourceSize.width: width
+        sourceSize.height: height
+        rotation: 180
+        anchors.horizontalCenter: parent.horizontalCenter
+        anchors.top: parent.verticalCenter
+    }
+
     Row {
         id: rowPlayer1
         anchors{
-            top: parent.top
-            topMargin: margin
+            verticalCenter: topSideBg.verticalCenter
             left: parent.left
             leftMargin: margin
         }
@@ -58,8 +81,7 @@ Rectangle {
     Row {
         id: rowPlayer2
         anchors{
-            bottom: parent.bottom
-            bottomMargin: margin
+            verticalCenter: bottomSideBg.verticalCenter
             left: parent.left
             leftMargin: margin
         }

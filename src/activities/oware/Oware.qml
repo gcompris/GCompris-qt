@@ -20,7 +20,10 @@ ActivityBase {
     pageComponent: Image {
         id: background
         anchors.fill: parent
-        source: "qrc:/gcompris/src/activities/memory/resource/background.svg"
+        source: "qrc:/gcompris/src/activities/hanoi_real/resource/background.svg"
+        sourceSize.width: width
+        sourceSize.height: height
+        fillMode: Image.PreserveAspectCrop
         signal start
         signal stop
 
@@ -47,6 +50,7 @@ ActivityBase {
             property alias captureAnimation: captureAnimation
             property alias invalidMoveAnimation: invalidMoveAnimation
             property alias instructionArea: instructionArea
+            property alias selectedPit: teleportAnimation.fromPit
             property bool isDistributionAnimationPlaying: false
             property bool forceStop: false
             property bool gameOver: false
@@ -86,6 +90,7 @@ ActivityBase {
                 label: false
                 player: 1
                 seeds: 0
+                visible: player1score.playersTurn === true
                 width: topPanel.height - 2 * anchors.topMargin
                 anchors {
                     top: topPanel.top
@@ -129,7 +134,7 @@ ActivityBase {
                     fontSize: tinySize
                     horizontalAlignment: Text.Center
                     width: parent.width * 0.9
-                    color: 'white'
+                    color: "white"
                     anchors.centerIn: instructionArea
                 }
             }
@@ -140,6 +145,7 @@ ActivityBase {
                 label: false
                 player: 2
                 seeds: 0
+                visible: player2score.playersTurn === true
                 width: topPanel.height - 2 * anchors.topMargin
                 anchors {
                     top: topPanel.top
@@ -173,6 +179,7 @@ ActivityBase {
                 left: parent.left
                 right: parent.right
                 bottom: bar.top
+                bottomMargin: bar.height * 0.2
             }
         }
 
@@ -182,15 +189,15 @@ ActivityBase {
                 horizontalCenter: layoutArea.horizontalCenter
                 verticalCenter: layoutArea.verticalCenter
             }
-            width: Math.min(layoutArea.width / 7, layoutArea.height / 5) * 6
+            width: Math.min(layoutArea.width / 6, layoutArea.height / 4) * 6
         }
 
-        Rectangle {
+        Image {
             id: animationSeed
+            source: Activity.url + "seed.svg"
             visible: false
             height: width
-            radius: width / 2
-            color: 'black'
+            sourceSize.width: width
             property Pit fromPit
             property Pit toPit
             property int animationDurationMillis: 750
@@ -242,6 +249,7 @@ ActivityBase {
                 }
 
                 onStopped: {
+                    audioEffects.play("qrc:/gcompris/src/core/resource/sounds/scroll.wav")
                     animationSeed.visible = false
                     animationSeed.toPit.seeds = animationSeed.toPit.seeds + 1
                     if(items.forceStop  || items.gameOver)
@@ -272,7 +280,7 @@ ActivityBase {
                 PropertyAnimation {
                     id: fromHighlightOnAnim
                     target: teleportAnimation.fromPit
-                    property: "highlight"
+                    property: "selected"
                     to: true
                 }
                 PauseAnimation { duration: teleportAnimation.animationDurationMillis }
@@ -289,26 +297,14 @@ ActivityBase {
                     to: teleportAnimation.noOfSeeds
                 }
                 PauseAnimation { duration: teleportAnimation.animationDurationMillis }
-                ParallelAnimation {
-                    PropertyAnimation {
-                        id: fromHighlightOffAnim
-                        target: teleportAnimation.fromPit
-                        property: "highlight"
-                        to: false
-                    }
-                    PropertyAnimation {
-                        id: toHighlightOffAnim
-                        target: teleportAnimation.toPit
-                        property: "highlight"
-                        to: false
-                    }
-                }
                 PauseAnimation { duration: teleportAnimation.animationDurationMillis }
 
                 onStopped: {
-                    if(items.forceStop  || items.gameOver)
-                        return
-                    Activity.redistribute()
+                    if(items.forceStop  || items.gameOver) {
+                        teleportAnimation.fromPit.selected = false;
+                        return;
+                    }
+                    Activity.redistribute();
                 }
             }
         }
@@ -360,7 +356,7 @@ ActivityBase {
                 PropertyAnimation {
                     target: captureAnimation.fromPit
                     property: "highlightColor"
-                    to: 'orange'
+                    to: "orange"
                 }
                 PropertyAnimation {
                     target: captureAnimation.fromPit
@@ -408,7 +404,7 @@ ActivityBase {
                 items.isDistributionAnimationPlaying = true
                 targetPit = _targetPit
                 originalHighlightColor = targetPit.highlightColor
-                targetPit.highlightColor = 'red'
+                targetPit.highlightColor = "red"
                 targetPit.highlight = true
                 invalidMovePauseAnimation.running = true
             }
