@@ -93,11 +93,19 @@ Item {
      */
     signal endTurn
 
+    /**
+     * type:bool
+     * Wether it is player's turn.
+     */
+    property bool playersTurn: false
+
     onBeginTurn: {
         scaleAnimation.start()
+        playersTurn = true
     }
 
     onEndTurn: {
+        playersTurn = false
         scaleAnimation.stop()
         playerImageRotate.stop()
         playerImage.rotation = 0
