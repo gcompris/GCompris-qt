@@ -207,7 +207,7 @@ ActivityBase {
                 left: background.left
                 leftMargin: 5
             }
-            playerImageSource: Activity.url + "player_1.svg"
+            playerImageSource: "qrc:/gcompris/src/core/resource/player_1.svg"
             backgroundImageSource: Activity.url + "score_1.svg"
         }
 
@@ -223,7 +223,7 @@ ActivityBase {
                 right: background.right
                 rightMargin: 5
             }
-            playerImageSource: Activity.url + "player_2.svg"
+            playerImageSource: "qrc:/gcompris/src/core/resource/player_2.svg"
             backgroundImageSource: Activity.url + "score_2.svg"
             playerScaleOriginX: player2score.width
         }
