@@ -80,8 +80,12 @@ ActivityBase {
                     left: topPanel.left
                     leftMargin: 5
                 }
-                playerImageSource: "qrc:/gcompris/src/activities/bargame/resource/player_1.svg"
+                playerImageSource: "qrc:/gcompris/src/core/resource/player_1.svg"
                 backgroundImageSource: "qrc:/gcompris/src/activities/bargame/resource/score_1.svg"
+                playerItem.source: Activity.url + "seed.svg"
+                playerItem.height: playerItem.parent.height * 0.35
+                playerItem.anchors.leftMargin: playerItem.parent.height * 0.15
+                playerItem.anchors.bottomMargin: playerItem.parent.height * 0.10
             }
 
             Pit {
@@ -166,8 +170,12 @@ ActivityBase {
                     right: topPanel.right
                     rightMargin: 5
                 }
-                playerImageSource: "qrc:/gcompris/src/activities/bargame/resource/player_2.svg"
+                playerImageSource: "qrc:/gcompris/src/core/resource/player_2.svg"
                 backgroundImageSource: "qrc:/gcompris/src/activities/bargame/resource/score_2.svg"
+                playerItem.source: Activity.url + "seed.svg"
+                playerItem.height: playerItem.parent.height * 0.35
+                playerItem.anchors.leftMargin: playerItem.parent.height * 0.10
+                playerItem.anchors.bottomMargin: playerItem.parent.height * 0.10
                 playerScaleOriginX: player2score.width
             }
         }
