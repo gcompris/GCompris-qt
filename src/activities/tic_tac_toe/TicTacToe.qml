@@ -174,8 +174,12 @@ ActivityBase {
                 left: background.left
                 leftMargin: 5
             }
-            playerImageSource: Activity.url + "player_1.svg"
+            playerImageSource: "qrc:/gcompris/src/core/resource/player_1.svg"
             backgroundImageSource: Activity.url + "score_1.svg"
+            playerItem.source: Activity.url + "cross.svg"
+            playerItem.height: playerItem.parent.height * 0.4
+            playerItem.anchors.leftMargin: playerItem.parent.height * 0.15
+            playerItem.anchors.bottomMargin: playerItem.parent.height * 0.05
         }
 
         ScoreItem {
@@ -189,9 +193,13 @@ ActivityBase {
                 right: background.right
                 rightMargin: 5
             }
-            playerImageSource: Activity.url + "player_2.svg"
+            playerImageSource: "qrc:/gcompris/src/core/resource/player_2.svg"
             backgroundImageSource: Activity.url + "score_2.svg"
             playerScaleOriginX: player2score.width
+            playerItem.source: Activity.url + "circle.svg"
+            playerItem.height: playerItem.parent.height * 0.4
+            playerItem.anchors.leftMargin: playerItem.parent.height * 0.15
+            playerItem.anchors.bottomMargin: playerItem.parent.height * 0.15
         }
 
         DialogHelp {
