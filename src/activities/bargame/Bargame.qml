@@ -76,7 +76,7 @@ ActivityBase {
         Image {
             id: tux
             visible: gameMode == 1
-            source: Activity.url + "tux1.svg"
+            source: "qrc:/gcompris/src/activities/ballcatch/resource/tux.svg"
             height: rootWindow.height * 0.2
             width: tux.height
             y: rootWindow.height * 0.4
@@ -108,7 +108,7 @@ ActivityBase {
         // Box row
         Item {
             id: boxModel
-            
+
             states: [
                 State {
                     name: "horizontalBar"
@@ -334,8 +334,12 @@ ActivityBase {
                 left: rootWindow.left
                 leftMargin: 5
             }
-            playerImageSource: Activity.url + "player_1.svg"
+            playerImageSource: "qrc:/gcompris/src/core/resource/player_1.svg"
             backgroundImageSource: Activity.url + "score_1.svg"
+            playerItem.source: Activity.url + "ball_1b.svg"
+            playerItem.height: playerItem.parent.height * 0.3
+            playerItem.anchors.leftMargin: playerItem.parent.height * 0.05
+            playerItem.anchors.bottomMargin: playerItem.parent.height * 0.05
         }
 
         ScoreItem {
@@ -349,9 +353,13 @@ ActivityBase {
                 right: rootWindow.right
                 rightMargin: 5
             }
-            playerImageSource: Activity.url + "player_2.svg"
+            playerImageSource: "qrc:/gcompris/src/core/resource/player_2.svg"
             backgroundImageSource: Activity.url + "score_2.svg"
             playerScaleOriginX: player2score.width
+            playerItem.source: Activity.url + "ball_2b.svg"
+            playerItem.height: playerItem.parent.height * 0.3
+            playerItem.anchors.leftMargin: playerItem.parent.height * 0.05
+            playerItem.anchors.bottomMargin: playerItem.parent.height * 0.10
         }
 
         DialogHelp {
