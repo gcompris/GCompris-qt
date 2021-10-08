@@ -99,6 +99,13 @@ Item {
      */
     property bool playersTurn: false
 
+    /**
+     * type:alias
+     * allow to access properties of playerItem
+     * Usually you'll need set its source, height, anchors.leftMargin and anchors.bottom.margin
+     */
+    property alias playerItem: playerItem
+
     onBeginTurn: {
         scaleAnimation.start()
         playersTurn = true
@@ -169,8 +176,8 @@ Item {
         Image {
             id: backgroundImage
             source: backgroundImageSource
-            sourceSize.height: height
-            sourceSize.width: width
+            sourceSize.height: height * 1.4
+            sourceSize.width: width * 1.4
             anchors.fill: parent
             anchors.margins: parent.height * 0.04
 
@@ -179,9 +186,20 @@ Item {
                 source: playerImageSource
                 fillMode: Image.PreserveAspectFit
                 height: parent.height*0.8
-                sourceSize.height: height
+                sourceSize.height: height * 1.4
                 x: parent.width*0.06
                 anchors.verticalCenter: parent.verticalCenter
+                Image {
+                    id: playerItem
+                    source: "qrc:/gcompris/src/core/resource/empty.svg"
+                    fillMode: Image.PreserveAspectFit
+                    height: 0
+                    sourceSize.height: height * 1.4
+                    anchors.bottom: parent.bottom
+                    anchors.left: parent.left
+                    anchors.leftMargin: 0
+                    anchors.bottomMargin: 0
+                }
             }
             GCText {
                 id: scoreLabel
@@ -208,6 +226,10 @@ Item {
                 target: playerImage
                 source: playerImageSource
             }
+            PropertyChanges {
+                target: playerItem
+                visible: true
+            }
         },
         State {
             name: "second"
@@ -219,12 +241,20 @@ Item {
                 target: playerImage
                 source: playerImageSource
             }
+            PropertyChanges {
+                target: playerItem
+                visible: true
+            }
         },
         State {
             name: "win"
             PropertyChanges {
                 target: playerImage
                 source: "qrc:/gcompris/src/core/resource/win.svg"
+            }
+            PropertyChanges {
+                target: playerItem
+                visible: false
             }
             PropertyChanges {
                 target: backgroundRectangle
