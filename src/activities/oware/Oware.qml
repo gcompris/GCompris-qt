@@ -1,6 +1,11 @@
 /* GCompris - Oware.qml
  *
  * SPDX-FileCopyrightText: 2021 Harsh Kumar <hadron43@yahoo.com>
+ *
+ * Authors:
+ *   Harsh Kumar <hadron43@yahoo.com>
+ *   Timothée Giet <animtim@gmail.com> (redesign)
+ *
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 import QtQuick 2.9

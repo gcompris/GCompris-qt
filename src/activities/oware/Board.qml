@@ -4,6 +4,7 @@
  *
  * Authors:
  *   Harsh Kumar <hadron43@yahoo.com>
+ *   Timothée Giet <animtim@gmail.com> (redesign)
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
