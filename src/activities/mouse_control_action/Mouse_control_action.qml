@@ -52,7 +52,11 @@ ActivityBase {
             Activity.start(items)
             resetDuckPosition()
         }
-        onStop: { Activity.stop() }
+        onStop: {
+            Activity.stop()
+            resetArrowTimer.stop()
+            pressArrowTimer.stop()
+        }
 
         Item {
             id: mainArea
