@@ -5,6 +5,7 @@
  * Authors:
  *   Bruno Coudoin <bruno.coudoin@gcompris.net> (GTK+ version)
  *   Bruno Coudoin <bruno.coudoin@gcompris.net> (Qt Quick port)
+ *   Timothée Giet <animtim@gmail.com> (animation refactoring)
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
@@ -24,6 +25,7 @@ ActivityBase {
         id: background
         signal start
         signal stop
+        signal animTrigger
         focus: true
         fillMode: Image.PreserveAspectCrop
         source: "qrc:/gcompris/src/activities/clickgame/resource/sea1.jpg"
@@ -38,6 +40,7 @@ ActivityBase {
         onStop: {
             Activity.stop()
             timer.stop()
+            fishAnimation.stop()
         }
 
         QtObject {
@@ -52,6 +55,14 @@ ActivityBase {
             running: true
             repeat: true
             onTriggered: activity.audioEffects.play("qrc:/gcompris/src/activities/clickgame/resource/bubble.wav")
+        }
+
+        Timer {
+            id: fishAnimation
+            interval: 10
+            running: true
+            repeat: true
+            onTriggered: background.animTrigger()
         }
 
         DialogHelp {

@@ -5,6 +5,7 @@
  * Authors:
  *   Bruno Coudoin <bruno.coudoin@gcompris.net> (GTK+ version)
  *   Bruno Coudoin <bruno.coudoin@gcompris.net> (Qt Quick port)
+ *   Timothée Giet <animtim@gmail.com> (animation refactoring)
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
@@ -180,27 +181,27 @@ var fishes = [
 var levelProperty = [
             {
                 "nbFish": 5,
-                "minDuration": 20000
+                "minDuration": 2000
             },
             {
                 "nbFish": 7,
-                "minDuration": 15000
+                "minDuration": 1500
             },
             {
                 "nbFish": 10,
-                "minDuration": 10000
+                "minDuration": 1000
             },
             {
                 "nbFish": 12,
-                "minDuration": 8000
+                "minDuration": 800
             },
             {
                 "nbFish": 15,
-                "minDuration": 6000
+                "minDuration": 600
             },
             {
                 "nbFish": 18,
-                "minDuration": 4000
+                "minDuration": 400
             }
         ]
 var currentImageId = 0
@@ -254,7 +255,7 @@ function nextLevel() {
     if(levelProperty.length <= ++currentLevel) {
         currentLevel = 0
     }
-    
+
     initLevel();
 }
 
@@ -270,6 +271,7 @@ function createFish(minDuration) {
     var fishSource = fishes[Math.floor(Math.random() * fishes.length)]
     var minY = items.score.y + items.score.height
     var maxY = bar.y - fishSource.height - bar.height
+    var maxX = background.width - fishSource.width
     var fish = component.createObject(
                 background,
                 {
@@ -277,12 +279,14 @@ function createFish(minDuration) {
                     "background": background,
                     "bar": bar,
                     "y": (Math.random() * (maxY - minY + 1)) + minY,
+                    "x": (Math.random() * (maxX + 1)),
                     "width": fishSource.width * 1.1 * GCompris.ApplicationInfo.ratio,
                     "height": fishSource.height * 1.1 * GCompris.ApplicationInfo.ratio,
                     "source": "qrc:/gcompris/src/activities/clickgame/resource/" +
                               fishSource.imgName,
                     "frameCount": fishSource.nbFrame,
-                    "duration": minDuration + Math.floor(Math.random() * 5000)
+                    "xSpeed": (background.width + fishSource.width * 1.1 * GCompris.ApplicationInfo.ratio) / (minDuration + Math.floor(Math.random() * 500)),
+                    "ySpeed": (background.height + fishSource.height * 1.1 * GCompris.ApplicationInfo.ratio) / (minDuration * 2 + Math.floor(Math.random() * 500))
                 });
     if (fish === null) {
         // Error Handling

@@ -5,6 +5,7 @@
  * Authors:
  *   Bruno Coudoin <bruno.coudoin@gcompris.net> (GTK+ version)
  *   Bruno Coudoin <bruno.coudoin@gcompris.net> (Qt Quick port)
+ *   Timothée Giet <animtim@gmail.com> (animation refactoring)
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
@@ -19,69 +20,55 @@ AnimatedSprite {
     property Item activity
     property Item background
     property Item bar
-    property real targetX // The x target of the fish
     property int duration: 5000
+    property int minY: Activity.items.score.y + Activity.items.score.height
+    property int maxY: bar.y - fish.height
+    property int minX: fish.width * -1.2
+    property int maxX: background.width + fish.width * 0.2
+    property real xSpeed: 10
+    property real ySpeed: 1
     frameRate: 2
     interpolate: true
 
+    signal animTrigger
+
     Component.onCompleted: {
-        targetX = background.width - fish.width
-        x = targetX
+        background.animTrigger.connect(animTrigger)
     }
 
     transform: Rotation {
         id: rotate; origin.x: width / 2; origin.y: 0; axis { x: 0; y: 1; z: 0 } angle: 0
     }
 
-    SequentialAnimation {
-        id: rotateLeftAnimation
-        loops: 1
-        PropertyAnimation {
-            target: rotate
-            properties: "angle"
-            from: 0
-            to: 180
-            duration: 500
+    onAnimTrigger: {
+        if(x >= maxX) {
+            rotate.angle = 180;
+            fish.xSpeed *= -1;
+            x = maxX
+        } else if(x <= minX) {
+            rotate.angle = 0;
+            fish.xSpeed *= -1;
+            x = minX
         }
+        if(y >= maxY) {
+            ySpeed *= -1;
+            y = maxY;
+        }else if(y <= minY) {
+            ySpeed *= -1;
+            y = minY;
+        }
+        if(Activity.currentLevel > 0) {
+            fish.y += fish.ySpeed;
+        }
+        fish.x += fish.xSpeed
     }
 
-    SequentialAnimation {
-        id: rotateRightAnimation
-        loops: 1
-        PropertyAnimation {
-            target: rotate
-            properties: "angle"
-            from: 180
-            to: 0
-            duration: 500
-        }
-    }
-
-    onXChanged: {
-        var minY = Activity.items.score.y + Activity.items.score.height
-        var maxY = bar.y - fish.height
-        if( (x > background.width - fish.width && rotate.angle == 0) ||
-            (x == targetX && rotate.angle == 0) ) {
-            rotateLeftAnimation.start()
-            targetX = 0
-            x = targetX
-            var barHeight = ApplicationSettings.isBarHidden ? bar.height / 2 : bar.height
-            y = Activity.currentLevel > 0
-                    ? (Math.random() * (maxY - minY + 1)) + minY
-                    : y
-        } else if(x == 0 && rotate.angle == 180) {
-            rotateRightAnimation.start()
-            targetX = background.width - fish.width
-            x = targetX
-       }
-    }
-    Behavior on x { PropertyAnimation { duration: fish.duration } }
-    Behavior on y { PropertyAnimation { duration: fish.duration } }
     Behavior on opacity { PropertyAnimation { duration: 500 } }
 
     MouseArea {
         anchors.fill: parent
         onClicked: {
+            background.animTrigger.disconnect(animTrigger)
             parent.opacity = 0
             enabled = false
             activity.audioEffects.play("qrc:/gcompris/src/activities/clickgame/resource/drip.wav")
