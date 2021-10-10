@@ -1,4 +1,4 @@
-/* GCompris - mouse_control_action.qml
+/* GCompris - Mouse_control_action.qml
  *
  * SPDX-FileCopyrightText: 2021 Mariam Fahmy <mariamfahmy66@gmail.com>
  * SPDX-License-Identifier: GPL-3.0-or-later
