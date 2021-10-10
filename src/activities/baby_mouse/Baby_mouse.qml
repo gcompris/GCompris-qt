@@ -60,11 +60,18 @@ ActivityBase {
 
         Item {
             id: mainArea
-            width: background.width - duckGrid.width - arrowsArea.width
-            height: background.height - bar.height * 1.05
+            width: background.width - duckGrid.width
+            height: background.height - bar.height * 1.05 - y
             anchors.left: duckGrid.right
+            anchors.top: arrowsArea.bottom
 
-            readonly property double rightDirectionLimit: mainArea.width - mainDuck.width * 1.3
+            // To detect click in this area with mainAreaBlock...
+            Rectangle {
+                anchors.fill: parent
+                color: "transparent"
+            }
+
+            readonly property double rightDirectionLimit: mainArea.width - mainDuck.width
             readonly property double downDirectionLimit: mainArea.height - mainDuck.height
 
             property alias mainDuckX: mainDuck.x
@@ -178,9 +185,6 @@ ActivityBase {
                             pressArrowTimer.rightPressed = true
                             pressArrowTimer.start()
                         }
-                        else {
-                            items.audioEffects.play(Activity.audioURL + "win.wav")
-                        }
                     }
                 }
             }
@@ -215,13 +219,13 @@ ActivityBase {
                         var ducksPoint = parent.mapToItem(duckGrid, touch.x, touch.y)
                         var ducksBlock = duckGrid.itemAt(ducksPoint.x, ducksPoint.y)
 
-                        var arrowsPoint = parent.mapToItem(arrowsArea, touch.x, touch.y)
-                        var arrowsBlock = arrowsArea.childAt(arrowsPoint.x, arrowsPoint.y)
+                        var mainAreaPoint = parent.mapToItem(mainArea, touch.x, touch.y)
+                        var mainAreaBlock = mainArea.childAt(mainAreaPoint.x, mainAreaPoint.y)
 
                         if(ducksBlock) {
                             ducksBlock.restartAnimation()
                         }
-                        else if(!arrowsBlock){
+                        else if(mainAreaBlock){
                             pressCircle.x = touch.x - pressCircle.width / 2
                             pressCircle.y = touch.y - pressCircle.height / 2
                             pressCircle.visible = true
@@ -343,17 +347,12 @@ ActivityBase {
         // Area for displaying the 4 arrows.
         Item {
             id: arrowsArea
-            width: parent.width * 0.15
-            height: parent.height * 0.2
+            width: duckGrid.cellWidth
+            height: width
             anchors.top: parent.top
-            anchors.topMargin: parent.height * 0.01
+            anchors.topMargin: width * 0.1
             anchors.right: parent.right
-
-            // To avoid having circle indicator when pressing in arrows area.
-            Rectangle {
-                anchors.fill: parent
-                color: "transparent"
-            }
+            anchors.rightMargin: anchors.topMargin
 
             property alias upArrow: upArrow
             property alias leftArrow: leftArrow
@@ -368,10 +367,10 @@ ActivityBase {
             Image {
                 id: upArrow
                 source: Activity.arrowImageURL
-                sourceSize.width: 0.2 * arrowsArea.width
-                sourceSize.height: 0.25 * arrowsArea.height
+                width: 0.33 * arrowsArea.width
+                sourceSize.width: width * largeScale
+                fillMode: Image.PreserveAspectFit
                 anchors.top: arrowsArea.top
-                anchors.topMargin: 0.05 * arrowsArea.height
                 anchors.horizontalCenter: arrowsArea.horizontalCenter
                 rotation: -90
 
@@ -388,10 +387,11 @@ ActivityBase {
             Image {
                 id: rightArrow
                 source: Activity.arrowImageURL
-                sourceSize.width: 0.2 * arrowsArea.width
-                sourceSize.height: 0.25 * arrowsArea.height
-                anchors.left: upArrow.right
-                anchors.top: upArrow.bottom
+                width: upArrow.width
+                sourceSize.width: upArrow.sourceSize.width
+                fillMode: Image.PreserveAspectFit
+                anchors.right: arrowsArea.right
+                anchors.verticalCenter: arrowsArea.verticalCenter
                 rotation: 0
 
                 function moveDuckToRight() {
@@ -407,10 +407,11 @@ ActivityBase {
             Image {
                 id: downArrow
                 source: Activity.arrowImageURL
-                sourceSize.width: 0.2 * arrowsArea.width
-                sourceSize.height: 0.25 * arrowsArea.height
-                anchors.top: upArrow.bottom
-                anchors.topMargin: rightArrow.height
+                width: upArrow.width
+                sourceSize.width: upArrow.sourceSize.width
+                fillMode: Image.PreserveAspectFit
+                anchors.bottom: arrowsArea.bottom
+                anchors.horizontalCenter: arrowsArea.horizontalCenter
                 anchors.left: upArrow.left
                 rotation: 90
 
@@ -427,10 +428,11 @@ ActivityBase {
             Image {
                 id: leftArrow
                 source: Activity.arrowImageURL
-                sourceSize.width: 0.2 * arrowsArea.width
-                sourceSize.height: 0.25 * arrowsArea.height
-                anchors.right: upArrow.left
-                anchors.top: upArrow.bottom
+                width: upArrow.width
+                sourceSize.width: upArrow.sourceSize.width
+                fillMode: Image.PreserveAspectFit
+                anchors.left: arrowsArea.left
+                anchors.verticalCenter: arrowsArea.verticalCenter
                 rotation: 180
 
                 function moveDuckToLeft() {
@@ -512,12 +514,13 @@ ActivityBase {
 
         Rectangle {
             id: pressCircle
-            width: parent.width * 0.03
-            height: pressCircle.width
-            color: "#ff77a9"
-            border.width: 0.02 * pressCircle.width
+            width: ApplicationInfo.ratio * 20
+            height: width
+            color: "#E77936"
+            border.width: width * 0.1
+            border.color: "#EEEEEE"
             visible: false
-            radius: 100
+            radius: width * 0.5
         }
 
         onWidthChanged: {
