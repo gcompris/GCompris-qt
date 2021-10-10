@@ -378,7 +378,7 @@ ActivityBase {
                 function moveDuckUp() {
                     upArrow.scale = background.largeScale
                     if(mainArea.mainDuckY - 1 >= 0) {
-                        mainArea.mainDuckY -= 1;
+                        mainArea.mainDuckY -= 5;
                     }
                 }
 
@@ -397,7 +397,7 @@ ActivityBase {
                 function moveDuckToRight() {
                     rightArrow.scale = background.largeScale
                     if(mainArea.mainDuckX + 1 <= mainArea.rightDirectionLimit) {
-                        mainArea.mainDuckX += 1;
+                        mainArea.mainDuckX += 5;
                     }
                 }
 
@@ -417,7 +417,7 @@ ActivityBase {
                 function moveDuckDown() {
                     downArrow.scale = background.largeScale
                     if(mainArea.mainDuckY + 1 <= mainArea.downDirectionLimit) {
-                        mainArea.mainDuckY += 1;
+                        mainArea.mainDuckY += 5;
                     }
                 }
 
@@ -436,7 +436,7 @@ ActivityBase {
                 function moveDuckToLeft() {
                     leftArrow.scale = background.largeScale
                     if(mainArea.mainDuckX - 1 >= 0) {
-                        mainArea.mainDuckX -= 1;
+                        mainArea.mainDuckX -= 5;
                     }
                 }
 
