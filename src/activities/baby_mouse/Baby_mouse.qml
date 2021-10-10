@@ -1,4 +1,4 @@
-/* GCompris - Mouse_control_action.qml
+/* GCompris - Baby_mouse.qml
  *
  * SPDX-FileCopyrightText: 2021 Mariam Fahmy <mariamfahmy66@gmail.com>
  * SPDX-License-Identifier: GPL-3.0-or-later
@@ -7,7 +7,7 @@ import QtQuick 2.9
 import GCompris 1.0
 
 import "../../core"
-import "mouse_control_action.js" as Activity
+import "baby_mouse.js" as Activity
 import "qrc:/gcompris/src/core/core.js" as Core
 
 ActivityBase {

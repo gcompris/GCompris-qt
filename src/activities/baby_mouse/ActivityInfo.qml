@@ -6,9 +6,9 @@
 import GCompris 1.0
 
 ActivityInfo {
-  name: "mouse_control_action/Mouse_control_action.qml"
+  name: "baby_mouse/Baby_mouse.qml"
   difficulty: 1
-  icon: "mouse_control_action/mouse_control_action.svg"
+  icon: "baby_mouse/baby_mouse.svg"
   author: "Mariam Fahmy &lt;mariamfahmy66@gmail.com&gt;"
   //: Activity title
   title: qsTr("Baby mouse")
