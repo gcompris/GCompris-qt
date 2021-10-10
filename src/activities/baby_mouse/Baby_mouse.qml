@@ -225,6 +225,7 @@ ActivityBase {
                             pressCircle.x = touch.x - pressCircle.width / 2
                             pressCircle.y = touch.y - pressCircle.height / 2
                             pressCircle.visible = true
+                            Activity.playSound(4)
                         }
                     }
 
@@ -487,7 +488,7 @@ ActivityBase {
                     }
                     onRunningChanged: {
                         if(running) {
-                            Activity.playSound(model.index)
+                            Activity.playSound(index)
                             particles.burst(20)
                         }
                         else {

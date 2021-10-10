@@ -9,7 +9,7 @@
 
 var items;
 var duckImages = ["red_duck", "purple_duck", "orange_duck", "grey_duck"];
-var duckSounds = ["bleep", "brick", "flip", "completetask"];
+var clickSounds = ["bleep", "brick", "flip", "completetask", "scroll"];
 
 var audioURL = "qrc:/gcompris/src/core/resource/sounds/";
 var arrowImageURL = "qrc:/gcompris/src/activities/baby_mouse/resource/arrow.svg";
@@ -25,11 +25,10 @@ function stop() {
 
 function initLevel() {
     for(var i = 0; i < duckImages.length; i++) {
-        items.duckModel.append({"image" : duckImages[i], "sound": duckSounds[i]});
+        items.duckModel.append({"image" : duckImages[i]});
     }
 }
 
 function playSound(index) {
-    var sound = items.duckModel.get(index).sound;
-    items.audioEffects.play(audioURL + sound + '.wav');
+    items.audioEffects.play(audioURL + clickSounds[index] + '.wav');
 }
