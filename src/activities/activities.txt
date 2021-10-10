@@ -11,6 +11,7 @@ align4-2players
 alphabet-sequence
 analog_electricity
 baby_keyboard
+baby_mouse
 babymatch
 babyshapes
 baby_tangram
@@ -124,7 +125,6 @@ money_back
 money_back_cents
 money_cents
 mosaic
-mouse_control_action
 nine_men_morris
 nine_men_morris_2players
 note_names
