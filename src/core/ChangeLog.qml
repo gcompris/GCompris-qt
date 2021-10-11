@@ -29,6 +29,7 @@ QtObject {
             { "versionCode": 20000, "content": [
                 qsTr("Translation added for Azerbaijani"),
                 qsTr("New maps and update of the maps for geography activities"),
+                qsTr("New dataset containing loops operations for programming maze, and make tutorial images translated"),
                 qsTr("Addition of a level to teach voltage source loop in analog electricity activity"),
                 qsTr("Many new images"),
                 qsTr("Many usability improvements")
