@@ -34,6 +34,7 @@ QtObject {
             { "text": inMenu ? qsTr("Your system default") : qsTr("GCompris' language"), "locale": "system" },
             { "text": "UK English", "locale": "en_GB.UTF-8" },
             { "text": "American English", "locale": "en_US.UTF-8" },
+            { "text": "Azərbaycanca", "locale": "az_AZ.UTF-8" },
             //{ "text": "български", "locale": "bg_BG.UTF-8" },
             { "text": "Brezhoneg", "locale": "br_FR.UTF-8" },
             { "text": "Беларуская", "locale": "be_BY.UTF-8" },
