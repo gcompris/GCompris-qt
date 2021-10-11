@@ -86,7 +86,14 @@ QtObject {
         var activities = ActivityInfoTree.menuTree;
         // display for each version an optional text ("content") then the new activities
         filtered.map(function filter(obj) {
-            var version = (obj['versionCode'] / 10000).toFixed(2);
+            var major = Math.floor((obj['versionCode'] / 10000));
+            var minor = (obj['versionCode'] % 10000 / 100);
+            var patch = (obj['versionCode'] % 100);
+
+            var version = major + "." + minor;
+            if(patch !== 0) {
+                version += "."+patch;
+            }
             output += "<b>" + qsTr("Version %1:").arg(version) + "</b>";
             output += "<ul>";
             // display free text if exist
