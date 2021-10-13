@@ -27,7 +27,6 @@ QtObject {
      */
     property var changelog: [
             { "versionCode": 20000, "content": [
-                qsTr("New activities"),
                 qsTr("Translation added for Azerbaijani"),
                 qsTr("New maps and update of the maps for geography activities"),
                 qsTr("New dataset containing loops operations for programming maze, and make tutorial images translated"),
