@@ -217,8 +217,8 @@ Item {
 
             Image {
                 id: previous
-                visible: model.count > view.nbItemsByGroup &&
-                          view.previousNavigation != 0 && view.currentDisplayedGroup != 0
+                opacity: (model.count > view.nbItemsByGroup &&
+                          view.previousNavigation != 0 && view.currentDisplayedGroup != 0) ? 1 : 0
                 source:"qrc:/gcompris/src/core/resource/bar_previous.svg"
                 sourceSize.width: view.iconSize * 0.35
                 fillMode: Image.PreserveAspectFit
@@ -237,8 +237,8 @@ Item {
 
             Image {
                 id: next
-                visible: model.count > view.nbItemsByGroup && view.nextNavigation != 0
-                            && view.currentDisplayedGroup < view.nbDisplayedGroup - 1
+                opacity: (model.count > view.nbItemsByGroup && view.nextNavigation != 0
+                            && view.currentDisplayedGroup < view.nbDisplayedGroup - 1) ? 1 : 0
                 source:"qrc:/gcompris/src/core/resource/bar_next.svg"
                 sourceSize.width: view.iconSize * 0.35
                 fillMode: Image.PreserveAspectFit
