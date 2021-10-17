@@ -63,7 +63,10 @@ ActivityBase {
         }
 
         onStart: { Activity.start(items, twoPlayers) }
-        onStop: { Activity.stop() }
+        onStop: {
+            stopAllAnimation()
+            Activity.stop()
+        }
 
         Item {
             id: topPanel
@@ -433,6 +436,16 @@ ActivityBase {
             }
         }
 
+        function stopAllAnimation() {
+            items.forceStop = true
+            invalidMovePauseAnimation.complete()
+            parallelAnimation.complete()
+            teleportSequenceAnimation.complete()
+            pauseAnimation.complete()
+            captureSequentialAnimation.complete()
+            items.forceStop = false
+        }
+
         DialogHelp {
             id: dialogHelp
             onClose: home()
@@ -446,13 +459,7 @@ ActivityBase {
             }
             onHomeClicked: activity.home()
             onReloadClicked: {
-                items.forceStop = true
-                invalidMovePauseAnimation.complete()
-                parallelAnimation.complete()
-                teleportSequenceAnimation.complete()
-                pauseAnimation.complete()
-                captureSequentialAnimation.complete()
-                items.forceStop = false
+                stopAllAnimation()
                 Activity.initLevel()
             }
         }
