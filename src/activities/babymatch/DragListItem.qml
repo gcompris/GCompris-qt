@@ -99,7 +99,7 @@ Item {
             property int dropStatus: -1 // -1: Nothing / 0: Bad pos / 1: Good pos
             property bool small: true
             property Item currentTargetSpot
-            property bool pressedOnce
+            property bool pressedOnce: false
             property bool parentIsTile : parent == tile ? true : false
 
             onFullWidthChanged: correctDroppedImageSize();
@@ -176,10 +176,10 @@ Item {
 
                     if(imgSound)
                         activity.audioVoices.play(ApplicationInfo.getAudioFilePath(imgSound));
-                    tileImage.pressedOnce = true;
                 }
 
                 onUpdated: {
+                    tileImage.pressedOnce = true;
                     var moveX = point1.x - startX;
                     var moveY = point1.y - startY;
                     parent.x = parent.x + moveX;
