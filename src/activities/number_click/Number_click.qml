@@ -63,9 +63,9 @@ ActivityBase {
         onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
 
-        /*Set a workspace*/
+        /*Set the main workspace*/
         Rectangle {
-            id: workspace
+            id: mainworkspace
 
             height: parent.height * 0.6
             width: parent.width * 0.3
@@ -130,12 +130,12 @@ ActivityBase {
 
                     onEntered: {
                         parent.rotation = -3
-                        parent.height = workspace.height * 0.41
+                        parent.height = mainworkspace.height * 0.41
                     }
 
                     onExited: {
                         parent.rotation = 0
-                        parent.height = workspace.height * 0.40
+                        parent.height = mainworkspace.height * 0.40
                     }
 
                     onPressed: {
@@ -190,6 +190,149 @@ ActivityBase {
                         Activity.checkAnswer()
                     }
                     onReleased: { buttonTick.height = parent.height * 0.6 }
+                }
+            }
+        }
+
+        /*  */
+        Rectangle {
+            id: errorpanel
+
+            height: parent.height * 0.6
+            width : parent.width * 0.6
+
+            color: "white"
+            border.width: 4
+            border.color: "black"
+            radius: 30
+
+            anchors.horizontalCenter: parent.horizontalCenter
+            anchors.verticalCenter: parent.verticalCenter
+
+            visible: true
+
+            Rectangle {
+                id: firstbar
+
+                height: parent.height * 0.09 //0.09 * 1
+                width: parent.width * 0.09
+
+                color: "grey"
+                border.width: 2
+                border.color: "black"
+                radius : 10
+
+                anchors.left: parent.left
+                anchors.leftMargin: parent.width * 0.05
+                anchors.bottom: parent.bottom
+                anchors.bottomMargin: parent.height * 0.05
+
+                Text {
+                    id: firstbar_text
+
+                    text: "1"
+                    color: "white"
+                    style: Text.Outline
+                    styleColor: "black"
+
+                    font.pointSize: 24 * background.height / 1080
+
+                    anchors.horizontalCenter: parent.horizontalCenter
+                    anchors.bottom: parent.bottom
+                    anchors.bottomMargin: parent.height * 0.05
+                }
+            }
+            Rectangle {
+                id: secondbar
+
+                height: parent.height * 0.18 //0.09 * 2
+                width: parent.width * 0.09
+
+                color: "red"
+                border.width: 2
+                border.color: "black"
+                radius : 10
+
+                anchors.left: firstbar.left
+                anchors.leftMargin: parent.width * 0.1
+                anchors.bottom: parent.bottom
+                anchors.bottomMargin: parent.height * 0.05
+
+                Text {
+                    id: secondbar_text
+
+                    text: "2"
+                    color: "white"
+                    style: Text.Outline
+                    styleColor: "black"
+
+                    font.pointSize: 24 * background.height / 1080
+
+                    anchors.horizontalCenter: parent.horizontalCenter
+                    anchors.bottom: parent.bottom
+                    anchors.bottomMargin: parent.height * 0.05
+                }
+            }
+            Rectangle {
+                id: thirdbar
+
+                height: parent.height * 0.27 // 0.09 * 3
+                width: parent.width * 0.09
+
+                color: "orange"
+                border.width: 2
+                border.color: "black"
+                radius : 10
+
+                anchors.left: secondbar.left
+                anchors.leftMargin: parent.width * 0.1
+                anchors.bottom: parent.bottom
+                anchors.bottomMargin: parent.height * 0.05
+
+                Text {
+                    id: thirdbar_text
+
+                    text: "3"
+                    color: "white"
+                    style: Text.Outline
+                    styleColor: "black"
+
+                    font.pointSize: 24 * background.height / 1080
+
+                    anchors.horizontalCenter: parent.horizontalCenter
+                    anchors.bottom: parent.bottom
+                    anchors.bottomMargin: parent.height * 0.05
+                }
+            }
+            Rectangle {
+                id: fourthbar
+
+                height: parent.height * 0.36 // 0.09 * 4
+                width: parent.width * 0.09
+
+                color: "green"
+                border.width: 2
+                border.color: "black"
+                radius : 10
+
+                anchors.left: thirdbar.left
+                anchors.leftMargin: parent.width * 0.1
+                anchors.bottom: parent.bottom
+                anchors.bottomMargin: parent.height * 0.05
+
+                Text {
+                    id: fourthbar_text
+
+                    text: "4"
+                    color: "white"
+                    style: Text.Outline
+                    styleColor: "black"
+
+                    font.pointSize: 24 * background.height / 1080
+
+                    anchors.horizontalCenter: parent.horizontalCenter
+                    anchors.bottom: parent.bottom
+                    anchors.bottomMargin: parent.height * 0.05
                 }
             }
         }
