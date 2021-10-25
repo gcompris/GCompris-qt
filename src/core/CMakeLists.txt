@@ -157,6 +157,7 @@ if(BUILD_STANDALONE)
   set(_qml_plugins
     QtGraphicalEffects/${_lib_prefix}qtgraphicaleffectsplugin
     QtGraphicalEffects/private/${_lib_prefix}qtgraphicaleffectsprivate
+    QtQML/Models.2/${_lib_prefix}modelsplugin
     QtQuick/Window.2/${_lib_prefix}windowplugin
     QtQuick/Particles.2/${_lib_prefix}particlesplugin
     QtQuick.2/${_lib_prefix}qtquick2plugin
