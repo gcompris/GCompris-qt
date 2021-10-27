@@ -176,7 +176,8 @@ ActivityBase {
                                 id: mouseArea
                                 anchors.fill: parent
                                 enabled: modelData.isTarget &&
-                                         miningBg.scale === miningBg._MAX_SCALE
+                                         miningBg.scale === miningBg._MAX_SCALE &&
+                                         background.gotIt === false
                                 onClicked: parent.hit()
                             }
 
