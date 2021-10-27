@@ -50,11 +50,10 @@ be installed
     Qt Quick
     Qt Svg
     Qt Xml
-    Qt XmlPatterns
 
 Installing dependencies on a Debian based systems can be done like this:
 
-    sudo aptitude install libqt5svg5-dev libqt5xmlpatterns5-dev \
+    sudo aptitude install libqt5svg5-dev \
                           qml-module-qtmultimedia qt5-default \
                           qml-module-qtgraphicaleffects qt5-qmake qtcreator \
                           qtdeclarative5-dev qtdeclarative5-dev \
