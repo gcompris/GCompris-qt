@@ -3,7 +3,7 @@
 TEMPLATE = app
 TARGET = gcompris
 INCLUDEPATH += .
-QT += qml quick gui multimedia network xmlpatterns svg xml core
+QT += qml quick gui multimedia network svg core
 APPCERT = "3rd Party Mac Developer Application: Bruno Coudoin"
 INSTALLERCERT = "3rd Party Mac Developer Installer: Bruno Coudoin"
 BUNDLEID = net.gcompris
