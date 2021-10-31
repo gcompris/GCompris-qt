@@ -49,7 +49,6 @@ be installed
     Qt Qml
     Qt Quick
     Qt Svg
-    Qt Xml
 
 Installing dependencies on a Debian based systems can be done like this:
 

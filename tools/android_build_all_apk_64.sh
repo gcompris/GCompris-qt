@@ -62,8 +62,6 @@ f_cmake()
 	  -DQt5Multimedia_DIR=${Qt5_BaseDIR}/${QtTarget}/lib/cmake/Qt5Multimedia \
 	  -DQt5Svg_DIR=${Qt5_BaseDIR}/${QtTarget}/lib/cmake/Qt5Svg \
 	  -DQt5Widgets_DIR=${Qt5_BaseDIR}/${QtTarget}/lib/cmake/Qt5Widgets \
-	  -DQt5Xml_DIR=${Qt5_BaseDIR}/${QtTarget}/lib/cmake/Qt5Xml \
-	  -DQt5XmlPatterns_DIR=${Qt5_BaseDIR}/${QtTarget}/lib/cmake/Qt5XmlPatterns \
 	  -DQt5LinguistTools_DIR=${Qt5_BaseDIR}/${QtTarget}/lib/cmake/Qt5LinguistTools \
 	  -DQt5Sensors_DIR=${Qt5_BaseDIR}/${QtTarget}/lib/cmake/Qt5Sensors \
 	  -DQt5AndroidExtras_DIR=${Qt5_BaseDIR}/${QtTarget}/lib/cmake/Qt5AndroidExtras \
