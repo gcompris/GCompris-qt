@@ -11,7 +11,6 @@
  */
 import QtQuick 2.9
 import GCompris 1.0
-import QtQml.Models 2.1
 
 import "../../core"
 import "ordering.js" as Activity
