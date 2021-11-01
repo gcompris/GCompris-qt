@@ -284,6 +284,9 @@ endif()
 
 # install fixup_bundle script to resolve and fixup runtime dependencies
 if(BUILD_STANDALONE AND NOT ANDROID)
+  # Specify the path to get the Qt libraries
+  get_target_property(QtCore_location Qt5::Core LOCATION)
+  get_filename_component(QT_LIBS_DIRECTORY ${QtCore_location} DIRECTORY)
   configure_file(${CMAKE_SOURCE_DIR}/cmake/FixBundle.cmake.in FixBundle.cmake)
   install(SCRIPT ${CMAKE_CURRENT_BINARY_DIR}/FixBundle.cmake)
 
