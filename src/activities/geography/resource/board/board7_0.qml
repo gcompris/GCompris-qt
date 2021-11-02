@@ -55,7 +55,7 @@ QtObject {
     },
     {
         "pixmapfile": "northafrica/south_sudan.svgz",
-        "soundFile": "voices-$CA/$LOCALE/geographys/south_sudan.$CA",
+        "soundFile": "voices-$CA/$LOCALE/geography/south_sudan.$CA",
         "toolTipText": qsTr("South Sudan"),
         "x": "0.7071",
         "y": "0.6974"
