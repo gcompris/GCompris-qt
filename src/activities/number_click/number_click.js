@@ -32,7 +32,7 @@ var numberOfLevel = 10
 var items
 
 var randomNumber = 0
-var oldRandomNumber = 0
+var lastRandomNumber = 0
 var clickCount = 0
 
 function start(items_) {
@@ -48,7 +48,7 @@ function initLevel() {
     items.bar.level = currentLevel + 1
 
     /*Avoiding recurrence between two levels*/
-    while (oldRandomNumber === randomNumber) {
+    while (lastRandomNumber === randomNumber) {
         randomNumber = Math.ceil(Math.random() * 10)
     }
 
@@ -120,12 +120,85 @@ function numericToLetters(number) {
 function checkAnswer() {
     if (clickCount === randomNumber) {
         won()
-        oldRandomNumber = randomNumber
+        lastRandomNumber = randomNumber
     }
     else {
         tryAgain()
+        showErrorpanel()
         clickCount = 0
     }
+}
+
+function showErrorpanel() {
+    //Set position of the correct answer rectangle
+    switch(randomNumber) {
+        case 1:
+            items.correctAnswer.anchors.horizontalCenter = items.firstbar.horizontalCenter
+            break
+        case 2:
+            items.correctAnswer.anchors.horizontalCenter = items.secondbar.horizontalCenter
+            break
+        case 3:
+            items.correctAnswer.anchors.horizontalCenter = items.thirdbar.horizontalCenter
+            break
+        case 4:
+            items.correctAnswer.anchors.horizontalCenter = items.fourthbar.horizontalCenter
+            break
+        case 5:
+            items.correctAnswer.anchors.horizontalCenter = items.fifthbar.horizontalCenter
+            break
+        case 6:
+            items.correctAnswer.anchors.horizontalCenter = items.sixthbar.horizontalCenter
+            break
+        case 7:
+            items.correctAnswer.anchors.horizontalCenter = items.seventhbar.horizontalCenter
+            break
+        case 8:
+            items.correctAnswer.anchors.horizontalCenter = items.eighthbar.horizontalCenter
+            break
+        case 9:
+            items.correctAnswer.anchors.horizontalCenter = items.ninthbar.horizontalCenter
+            break
+        case 10:
+            items.correctAnswer.anchors.horizontalCenter = items.tenthbar.horizontalCenter
+            break
+    }
+
+    //Set the possition of the wrong answer rectangle
+    switch(clickCount) {
+        case 1:
+            items.wrongAnswer.anchors.horizontalCenter = items.firstbar.horizontalCenter
+            break
+        case 2:
+            items.wrongAnswer.anchors.horizontalCenter = items.secondbar.horizontalCenter
+            break
+        case 3:
+            items.wrongAnswer.anchors.horizontalCenter = items.thirdbar.horizontalCenter
+            break
+        case 4:
+            items.wrongAnswer.anchors.horizontalCenter = items.fourthbar.horizontalCenter
+            break
+        case 5:
+            items.wrongAnswer.anchors.horizontalCenter = items.fifthbar.horizontalCenter
+            break
+        case 6:
+            items.wrongAnswer.anchors.horizontalCenter = items.sixthbar.horizontalCenter
+            break
+        case 7:
+            items.wrongAnswer.anchors.horizontalCenter = items.seventhbar.horizontalCenter
+            break
+        case 8:
+            items.wrongAnswer.anchors.horizontalCenter = items.eighthbar.horizontalCenter
+            break
+        case 9:
+            items.wrongAnswer.anchors.horizontalCenter = items.ninthbar.horizontalCenter
+            break
+        case 10:
+            items.wrongAnswer.anchors.horizontalCenter = items.tenthbar.horizontalCenter
+            break
+    }
+
+   items.errorpanel.visible = true
 }
 
 function won() {
@@ -135,3 +208,4 @@ function won() {
 function tryAgain() {
     items.bonus.bad("flower")
 }
+

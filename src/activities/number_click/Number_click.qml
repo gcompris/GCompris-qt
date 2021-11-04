@@ -57,7 +57,19 @@ ActivityBase {
             property alias tux: tux
             property alias numberInLetters: numberInLetters
             property alias numericNumber: numericNumber
-
+            property alias errorpanel: errorpanel
+            property alias correctAnswer: correctAnswer
+            property alias wrongAnswer: wrongAnswer
+            property alias firstbar: firstbar
+            property alias secondbar: secondbar
+            property alias thirdbar: thirdbar
+            property alias fourthbar: fourthbar
+            property alias fifthbar: fifthbar
+            property alias sixthbar: sixthbar
+            property alias seventhbar: seventhbar
+            property alias eighthbar: eighthbar
+            property alias ninthbar: ninthbar
+            property alias tenthbar: tenthbar
         }
 
         onStart: { Activity.start(items) }
@@ -66,6 +78,8 @@ ActivityBase {
         /*Set the main workspace*/
         Rectangle {
             id: mainworkspace
+
+            visible : true
 
             height: parent.height * 0.6
             width: parent.width * 0.3
@@ -194,9 +208,11 @@ ActivityBase {
             }
         }
 
-        /*  */
+        /* Set the error panel */
         Rectangle {
             id: errorpanel
+
+            visible: false
 
             height: parent.height * 0.6
             width : parent.width * 0.6
@@ -209,13 +225,54 @@ ActivityBase {
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.verticalCenter: parent.verticalCenter
 
-            visible: true
+            MouseArea {
+                id: errorpanelArea
+
+                anchors.fill: parent
+                hoverEnabled: true
+
+                onEntered: {  }
+                onExited: {  }
+                onPressed: {
+                    activity.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/bleep.wav")
+                    errorpanel.visible = false
+                }
+                onReleased: {  }
+            }
+
+            Rectangle {
+                id: correctAnswer
+
+                height: tenthbar.height * 1.05
+                width: firstbar.width * 1.25
+
+                anchors.verticalCenter: parent.verticalCenter
+                //anchors.horizontalCenter: firstbar.horizontalCenter
+
+                border.color: "green"
+                border.width: 7
+                radius: 10
+            }
+
+            Rectangle {
+                id: wrongAnswer
+
+                height: tenthbar.height * 1.05
+                width: firstbar.width * 1.25
+
+                anchors.verticalCenter: parent.verticalCenter
+                //anchors.horizontalCenter: tenthbar.horizontalCenter
+
+                border.color: "red"
+                border.width: 7
+                radius: 10
+            }
 
             Rectangle {
                 id: firstbar
 
                 height: parent.height * 0.09 //0.09 * 1
-                width: parent.width * 0.09
+                width: parent.width * 0.07
 
                 color: "grey"
                 border.width: 2
@@ -246,7 +303,7 @@ ActivityBase {
                 id: secondbar
 
                 height: parent.height * 0.18 //0.09 * 2
-                width: parent.width * 0.09
+                width: parent.width * 0.07
 
                 color: "red"
                 border.width: 2
@@ -254,7 +311,7 @@ ActivityBase {
                 radius : 10
 
                 anchors.left: firstbar.left
-                anchors.leftMargin: parent.width * 0.1
+                anchors.leftMargin: parent.width * 0.091
                 anchors.bottom: parent.bottom
                 anchors.bottomMargin: parent.height * 0.05
 
@@ -277,15 +334,15 @@ ActivityBase {
                 id: thirdbar
 
                 height: parent.height * 0.27 // 0.09 * 3
-                width: parent.width * 0.09
+                width: parent.width * 0.07
 
-                color: "orange"
+                color: "darkorange"
                 border.width: 2
                 border.color: "black"
                 radius : 10
 
                 anchors.left: secondbar.left
-                anchors.leftMargin: parent.width * 0.1
+                anchors.leftMargin: parent.width * 0.091
                 anchors.bottom: parent.bottom
                 anchors.bottomMargin: parent.height * 0.05
 
@@ -308,7 +365,7 @@ ActivityBase {
                 id: fourthbar
 
                 height: parent.height * 0.36 // 0.09 * 4
-                width: parent.width * 0.09
+                width: parent.width * 0.07
 
                 color: "green"
                 border.width: 2
@@ -316,7 +373,7 @@ ActivityBase {
                 radius : 10
 
                 anchors.left: thirdbar.left
-                anchors.leftMargin: parent.width * 0.1
+                anchors.leftMargin: parent.width * 0.091
                 anchors.bottom: parent.bottom
                 anchors.bottomMargin: parent.height * 0.05
 
@@ -324,6 +381,192 @@ ActivityBase {
                     id: fourthbar_text
 
                     text: "4"
+                    color: "white"
+                    style: Text.Outline
+                    styleColor: "black"
+
+                    font.pointSize: 24 * background.height / 1080
+
+                    anchors.horizontalCenter: parent.horizontalCenter
+                    anchors.bottom: parent.bottom
+                    anchors.bottomMargin: parent.height * 0.05
+                }
+            }
+            Rectangle {
+                id: fifthbar
+
+                height: parent.height * 0.45 // 0.09 * 5
+                width: parent.width * 0.07
+
+                color: "purple"
+                border.width: 2
+                border.color: "black"
+                radius : 10
+
+                anchors.left: fourthbar.left
+                anchors.leftMargin: parent.width * 0.091
+                anchors.bottom: parent.bottom
+                anchors.bottomMargin: parent.height * 0.05
+
+                Text {
+                    id: fifthbar_text
+
+                    text: "5"
+                    color: "white"
+                    style: Text.Outline
+                    styleColor: "black"
+
+                    font.pointSize: 24 * background.height / 1080
+
+                    anchors.horizontalCenter: parent.horizontalCenter
+                    anchors.bottom: parent.bottom
+                    anchors.bottomMargin: parent.height * 0.05
+                }
+            }
+            Rectangle {
+                id: sixthbar
+
+                height: parent.height * 0.54 // 0.09 * 6
+                width: parent.width * 0.07
+
+                color: "cyan"
+                border.width: 2
+                border.color: "black"
+                radius : 10
+
+                anchors.left: fifthbar.left
+                anchors.leftMargin: parent.width * 0.091
+                anchors.bottom: parent.bottom
+                anchors.bottomMargin: parent.height * 0.05
+
+                Text {
+                    id: sixthbar_text
+
+                    text: "6"
+                    color: "white"
+                    style: Text.Outline
+                    styleColor: "black"
+
+                    font.pointSize: 24 * background.height / 1080
+
+                    anchors.horizontalCenter: parent.horizontalCenter
+                    anchors.bottom: parent.bottom
+                    anchors.bottomMargin: parent.height * 0.05
+                }
+            }
+            Rectangle {
+                id: seventhbar
+
+                height: parent.height * 0.63 // 0.09 * 7
+                width: parent.width * 0.07
+
+                color: "deeppink"
+                border.width: 2
+                border.color: "black"
+                radius : 10
+
+                anchors.left: sixthbar.left
+                anchors.leftMargin: parent.width * 0.091
+                anchors.bottom: parent.bottom
+                anchors.bottomMargin: parent.height * 0.05
+
+                Text {
+                    id: seventhbar_text
+
+                    text: "7"
+                    color: "white"
+                    style: Text.Outline
+                    styleColor: "black"
+
+                    font.pointSize: 24 * background.height / 1080
+
+                    anchors.horizontalCenter: parent.horizontalCenter
+                    anchors.bottom: parent.bottom
+                    anchors.bottomMargin: parent.height * 0.05
+                }
+            }
+            Rectangle {
+                id: eighthbar
+
+                height: parent.height * 0.72 // 0.09 * 8
+                width: parent.width * 0.07
+
+                color: "salmon"
+                border.width: 2
+                border.color: "black"
+                radius : 10
+
+                anchors.left: seventhbar.left
+                anchors.leftMargin: parent.width * 0.091
+                anchors.bottom: parent.bottom
+                anchors.bottomMargin: parent.height * 0.05
+
+                Text {
+                    id: eighthbar_text
+
+                    text: "8"
+                    color: "white"
+                    style: Text.Outline
+                    styleColor: "black"
+
+                    font.pointSize: 24 * background.height / 1080
+
+                    anchors.horizontalCenter: parent.horizontalCenter
+                    anchors.bottom: parent.bottom
+                    anchors.bottomMargin: parent.height * 0.05
+                }
+            }
+            Rectangle {
+                id: ninthbar
+
+                height: parent.height * 0.81 // 0.09 * 9
+                width: parent.width * 0.07
+
+                color: "gold"
+                border.width: 2
+                border.color: "black"
+                radius : 10
+
+                anchors.left: eighthbar.left
+                anchors.leftMargin: parent.width * 0.091
+                anchors.bottom: parent.bottom
+                anchors.bottomMargin: parent.height * 0.05
+
+                Text {
+                    id: ninthbar_text
+
+                    text: "9"
+                    color: "white"
+                    style: Text.Outline
+                    styleColor: "black"
+
+                    font.pointSize: 24 * background.height / 1080
+
+                    anchors.horizontalCenter: parent.horizontalCenter
+                    anchors.bottom: parent.bottom
+                    anchors.bottomMargin: parent.height * 0.05
+                }
+            }
+            Rectangle {
+                id: tenthbar
+
+                height: parent.height * 0.9 // 0.09 * 10
+                width: parent.width * 0.07
+
+                color: "blue"
+                border.width: 2
+                border.color: "black"
+                radius : 10
+
+                anchors.left: ninthbar.left
+                anchors.leftMargin: parent.width * 0.091
+                anchors.bottom: parent.bottom
+                anchors.bottomMargin: parent.height * 0.05
+
+                Text {
+                    id: tenthbar_text
+
+                    text: "10"
                     color: "white"
                     style: Text.Outline
                     styleColor: "black"
