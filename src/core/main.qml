@@ -230,18 +230,19 @@ Window {
         checkVoices();
         checkWordset();
         checkBackgroundMusic();
-        var voicesLine = voicesDownloaded ? "" : ("<br>") + "-" + qsTr("Voices for your language");
-        var wordSetLine = wordSetDownloaded ? "" : ("<br>") + "-" + qsTr("Full word image set");
-        var musicLine = musicDownloaded ? "" : ("<br>") + "-" + qsTr("Background music");
+        var voicesLine = voicesDownloaded ? "" : ("<li>" + qsTr("Voices for your language") + "</li>");
+        var wordSetLine = wordSetDownloaded ? "" : ("<li>" + qsTr("Full word image set") + "</li>");
+        var musicLine = musicDownloaded ? "" : ("<li>" + qsTr("Background music") + "</li>");
         if(!voicesDownloaded || !wordSetDownloaded || ! musicDownloaded) {
             var dialog;
             dialog = Core.showMessageDialog(
                 pageView.currentItem,
                 qsTr("Do you want to download the following external assets?")
-                + ("<br>")
+                + ("<ul>")
                 + voicesLine
                 + wordSetLine
-                + musicLine,
+                + musicLine
+                + "</ul>",
                 qsTr("Yes"),
                 function() {
                     if(!voicesDownloaded)
