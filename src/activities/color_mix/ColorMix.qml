@@ -48,6 +48,7 @@ ActivityBase {
             property alias bar: bar
             property alias bonus: bonus
             property alias score: score
+            property bool okEnabled: true
             property int maxSteps: 1
             property int targetColor1: 0
             property int targetColor2: 0
@@ -184,6 +185,7 @@ ActivityBase {
             source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
             sourceSize.width: 66 * bar.barZoom
             visible: true
+            enabled: items.okEnabled
             anchors {
                 right: parent.right
                 rightMargin: items.margins
@@ -228,6 +230,7 @@ ActivityBase {
                 helpMessage.text = message
 
                 if (message === "") {
+                    items.okEnabled = false
                     bonus.good("gnu")
                     helpMessage.text = ""
                 }

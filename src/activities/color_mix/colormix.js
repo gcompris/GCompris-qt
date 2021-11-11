@@ -41,6 +41,9 @@ function initLevel() {
     items.currentColor1 = 0
     items.currentColor2 = 0
     items.currentColor3 = 0
+
+    /* Enable OK button */
+    items.okEnabled = true
 }
 
 function getColor(i1, i2, i3) {
