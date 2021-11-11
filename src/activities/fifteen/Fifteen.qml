@@ -144,7 +144,9 @@ ActivityBase {
                 for(var i in touchPoints) {
                     var touch = touchPoints[i]
                     var block = puzzleArea.childAt(touch.x, touch.y)
-                    if(!puzzleArea.trans.running && block) {
+                    if(block.val === 0)
+                        return
+                    else if(!puzzleArea.trans.running && block) {
                         Activity.onClick(block.val)
                         if(Activity.checkAnswer())
                             bonus.good('flower')
