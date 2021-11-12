@@ -99,7 +99,7 @@ Item {
             property int dropStatus: -1 // -1: Nothing / 0: Bad pos / 1: Good pos
             property bool small: true
             property Item currentTargetSpot
-            property bool pressedOnce: false
+            property bool dropEnabled: false
             property bool parentIsTile : parent == tile ? true : false
 
             onFullWidthChanged: correctDroppedImageSize();
@@ -144,10 +144,9 @@ Item {
                 small = false;
             }
 
-            MultiPointTouchArea {
-                id: mouseArea
+            MouseArea {
                 enabled: !items.inputLocked
-                touchPoints: [ TouchPoint { id: point1 } ]
+                drag.target: parent
                 property real startX
                 property real startY
 
@@ -160,62 +159,71 @@ Item {
                     tileImage.anchors.centerIn = undefined;
                     tileImage.dropStatus = -1;
                     item.hideOkButton();
-                    startX = point1.x;
-                    startY = point1.y;
-
+                    startX = mouseX;
+                    startY = mouseY;
                     toolTip.show(toolTipText);
                     if(tileImage.parent == tile)
                         leftWidget.z = 3;
-                    else
+                    else {
                         leftWidget.z = 1;
+                    }
 
                     if(tileImage.currentTargetSpot) {
+                        var coords = movePlaceholder.mapFromItem(backgroundImage, tileImage.currentTargetSpot.xCenter, tileImage.currentTargetSpot.yCenter);
+                        tileImage.parent = movePlaceholder;
+                        tileImage.x = coords.x - tileImage.width * 0.5;
+                        tileImage.y = coords.y - tileImage.height * 0.5;
                         tileImage.currentTargetSpot.currentTileImageItem = null;
                         tileImage.currentTargetSpot = null;
                     }
-
                     if(imgSound)
                         activity.audioVoices.play(ApplicationInfo.getAudioFilePath(imgSound));
                 }
 
-                onUpdated: {
-                    tileImage.pressedOnce = true;
-                    var moveX = point1.x - startX;
-                    var moveY = point1.y - startY;
-                    parent.x = parent.x + moveX;
-                    parent.y = parent.y + moveY;
-                    tileImage.opacity = 1;
-                    Activity.highLightSpot(getClosestSpot(), tileImage);
+                onPositionChanged: {
+                    tileImage.opacity = 0.5;
+                    if((background.verticalBar && tileImage.x > leftWidget.width) || (!background.verticalBar && tileImage.y > leftWidget.height)) {
+                        tileImage.dropEnabled = true;
+                        Activity.highLightSpot(getClosestSpot(), tileImage);
+                    } else {
+                        tileImage.dropEnabled = false;
+                        Activity.clearHighLightSpots();
+                    }
                 }
 
                 onReleased: {
-                    if(tileImage.pressedOnce) {
-                        tileImage.opacity = 1;
-                        tileImage.pressedOnce = false;
-                        Activity.highLightSpot(null, tileImage);
-                        var closestSpot = getClosestSpot();
+                    tileImage.opacity = 1;
+                    Activity.highLightSpot(null, tileImage);
+                    var closestSpot = null;
+                    if(tileImage.dropEnabled) {
+                        closestSpot = getClosestSpot();
                         updateFoundStatus(closestSpot);
-                        if(closestSpot === null) {
-                            if(tileImage.currentTargetSpot)
-                                tileImage.currentTargetSpot.imageRemove();
-                            else
-                                tileImage.imageRemove();
-                        } else {
-                            if(tileImage.currentTargetSpot !== closestSpot) {
-                                closestSpot.imageRemove();
-                                closestSpot.imageAdd(tileImage);
-                            }
-                            tileImage.currentTargetSpot = closestSpot;
-                            tileImage.tileImageParent = backgroundImage;
-                            tileImage.toFull();
-                            var coord = tileImage.parent.mapFromItem(backgroundImage,
+                        tileImage.dropEnabled = false;
+                    }
+                    if(closestSpot === null) {
+                        if(tileImage.currentTargetSpot)
+                            tileImage.currentTargetSpot.imageRemove();
+                        else
+                            tileImage.imageRemove();
+                    } else {
+                        if(tileImage.currentTargetSpot !== closestSpot) {
+                            closestSpot.imageRemove();
+                            closestSpot.imageAdd(tileImage);
+                        }
+                        tileImage.currentTargetSpot = closestSpot;
+                        tileImage.tileImageParent = backgroundImage;
+                        var originCoords = tileImage.parent.mapToItem(backgroundImage, tileImage.x, tileImage.y);
+                        tileImage.parent = tileImage.tileImageParent;
+                        tileImage.x = originCoords.x;
+                        tileImage.y = originCoords.y;
+                        tileImage.toFull();
+                        var coord = tileImage.parent.mapFromItem(backgroundImage,
                                                                      closestSpot.xCenter - tileImage.fullWidth/2,
                                                                      closestSpot.yCenter - tileImage.fullHeight/2);
-                            tileImage.moveImageX = coord.x;
-                            tileImage.moveImageY = coord.y;
-                            tileImage.z = 100;
-                            tileImageAnimation.start();
-                        }
+                        tileImage.moveImageX = coord.x;
+                        tileImage.moveImageY = coord.y;
+                        tileImage.z = 100;
+                        tileImageAnimation.start();
                     }
                 }
 
