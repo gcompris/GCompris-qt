@@ -270,7 +270,7 @@ ActivityBase {
         function showChooser(visible, guessIndex, item)
         {
             if (!visible) {
-                chooser.scale = 0;
+                chooser.visible = false;
                 return;
             }
             var modelObj = items.nodesRepeater.model.get(guessIndex);
@@ -293,7 +293,6 @@ ActivityBase {
             }
             chooser.x = targetX;
             chooser.y = targetY;
-            chooser.scale = 1;
             chooser.visible = true;
             //console.log(" item.x = " + item.x + " item.y" + item.y+" absolute.x" + absolute.x +" absolute.y" + absolute.y)
         }
@@ -309,7 +308,6 @@ ActivityBase {
             border.color: "white"
 
             opacity: 1
-            scale: 0
             visible: false
             z: 10
 
