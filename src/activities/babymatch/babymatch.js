@@ -248,3 +248,9 @@ function highLightSpot(stopItem, tile) {
         }
     }
 }
+
+function clearHighLightSpots() {
+    for(var i = 0 ; i < spots.length ; ++ i) {
+        spots[i].hide();
+    }
+}

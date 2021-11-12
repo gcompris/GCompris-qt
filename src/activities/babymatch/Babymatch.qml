@@ -38,7 +38,7 @@ ActivityBase {
         signal start
         signal stop
 
-        property bool vert: background.width >= background.height
+        property bool verticalBar: background.width >= background.height
 
         Component.onCompleted: {
             dialogActivityConfig.initialize();
@@ -139,10 +139,10 @@ ActivityBase {
         Image {
             id: leftWidget
             source: "qrc:/gcompris/src/activities/guesscount/resource/backgroundW02.svg"
-            width: background.vert ?
+            width: background.verticalBar ?
                        90 * ApplicationInfo.ratio :
                        background.width
-            height: background.vert ?
+            height: background.verticalBar ?
                         background.height :
                         90 * ApplicationInfo.ratio
             anchors.left: parent.left
@@ -217,11 +217,11 @@ ActivityBase {
 
             color: "transparent"
             z: 2
-            x: background.vert ? 90 * ApplicationInfo.ratio : 0
-            y: background.vert ? 0 : 90 * ApplicationInfo.ratio
-            width: background.vert ?
+            x: background.verticalBar ? 90 * ApplicationInfo.ratio : 0
+            y: background.verticalBar ? 0 : 90 * ApplicationInfo.ratio
+            width: background.verticalBar ?
                        background.width - 90 * ApplicationInfo.ratio : background.width
-            height: background.vert ?
+            height: background.verticalBar ?
                         background.height - (bar.height * 1.1) :
                         background.height - (bar.height * 1.1) - 90 * ApplicationInfo.ratio
 
@@ -346,9 +346,9 @@ ActivityBase {
         GCText {
             id: instructionTxt
             anchors {
-                top: background.vert ? grid.top : leftWidget.bottom
+                top: background.verticalBar ? grid.top : leftWidget.bottom
                 topMargin:  20
-                horizontalCenter: background.vert ? grid.horizontalCenter : leftWidget.horizontalCenter
+                horizontalCenter: background.verticalBar ? grid.horizontalCenter : leftWidget.horizontalCenter
             }
             opacity: instruction.opacity
             z: instruction.z
@@ -362,6 +362,12 @@ ActivityBase {
 
         ListModel {
             id: backgroundPiecesModel
+        }
+
+        Item {
+            id: movePlaceholder
+            z: 1000
+            anchors.fill: background
         }
     }
 }

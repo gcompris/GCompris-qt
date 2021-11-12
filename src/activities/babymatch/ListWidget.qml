@@ -67,15 +67,15 @@ Item {
     Grid {
         id: view
         width: leftWidget.width
-        height: background.vert ? background.height - bar.height * 2 : bar.height
+        height: background.verticalBar ? background.height - bar.height * 2 : bar.height
         spacing: 10
         z: 20
-        columns: background.vert ? 1 : nbItemsByGroup + 1
+        columns: background.verticalBar ? 1 : nbItemsByGroup + 1
 
         property int currentDisplayedGroup: 0
         property int setCurrentDisplayedGroup
         property int nbItemsByGroup:
-            background.vert ?
+            background.verticalBar ?
                 view.height / iconSize - 1 :
                 view.width / iconSize - 2
 
