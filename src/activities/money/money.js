@@ -114,8 +114,14 @@ function initLevel() {
             if(currentLevel === 0)
                 cents += 0.10 + Math.floor(Math.random() * 9) / 10
             else
-                cents += 0.01 + Math.floor(Math.random() * 9) / 100
+                cents += 0.01 + Math.floor(Math.random() * 99) / 100
 
+            // To be sure that the sums of the cents will never go higher than the
+            // maxPrice, we remove them instead of adding them if the item price
+            // is above 1
+            if(price > 1) {
+                cents = cents - 1
+            }
             priceTotal += cents
             price += cents
         }
