@@ -64,9 +64,10 @@ Rectangle {
                 MultiPointTouchArea {
                     anchors.fill: parent
                     onReleased: moneyAreaBody.transaction(index)
+                    enabled: !bonus.isPlaying
                 }
 
-                Rectangle{
+                Rectangle {
                     width: parent.width * 1.1
                     height: parent.height * 1.1
                     color: "#88111111"

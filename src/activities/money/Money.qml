@@ -11,7 +11,5 @@
 
 
 MoneyCore {
-
     dataset: "WITHOUT_CENTS"
-
 }

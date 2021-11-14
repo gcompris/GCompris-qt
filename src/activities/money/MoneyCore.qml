@@ -191,6 +191,7 @@ ActivityBase {
             }
         }
 
+        Keys.enabled: !bonus.isPlaying
 
         Keys.onPressed: {
             if(event.key === Qt.Key_Tab) {
