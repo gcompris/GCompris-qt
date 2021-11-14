@@ -28,7 +28,7 @@ var normalObjects = [
 
 var expensiveObjects = [
     "qrc:/gcompris/src/activities/babymatch/resource/images/lamp.svg",
-    "qrc:/gcompris/src/activities/babymatch/resource/images/football.svg",
+    "qrc:/gcompris/src/activities/babymatch/resource/images/minivan.svg",
     "qrc:/gcompris/src/activities/babymatch/resource/images/bicycle.svg"
 ]
 
