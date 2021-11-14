@@ -21,15 +21,14 @@ Data {
         "maxPrice": 9,
         "paid": 10,
         "pocket": [
-            moneyItems.MONEY_PAPER_10E,
+            moneyItems.MONEY_PAPER_5E,
             moneyItems.MONEY_PAPER_5E,
             moneyItems.MONEY_COIN_2E,
-            moneyItems.MONEY_COIN_1E,
             moneyItems.MONEY_COIN_2E,
-            moneyItems.MONEY_PAPER_5E,
-            moneyItems.MONEY_PAPER_5E,
+            moneyItems.MONEY_COIN_2E,
             moneyItems.MONEY_COIN_1E,
             moneyItems.MONEY_COIN_1E,
+            moneyItems.MONEY_COIN_1E
         ]
     },
     {
@@ -40,11 +39,10 @@ Data {
         "pocket": [
             moneyItems.MONEY_PAPER_10E,
             moneyItems.MONEY_PAPER_5E,
+            moneyItems.MONEY_PAPER_5E,
+            moneyItems.MONEY_COIN_2E,
             moneyItems.MONEY_COIN_2E,
             moneyItems.MONEY_COIN_1E,
-            moneyItems.MONEY_COIN_2E,
-            moneyItems.MONEY_PAPER_5E,
-            moneyItems.MONEY_PAPER_5E,
             moneyItems.MONEY_COIN_1E,
             moneyItems.MONEY_COIN_1E
         ]
@@ -57,11 +55,10 @@ Data {
         "pocket": [
             moneyItems.MONEY_PAPER_10E,
             moneyItems.MONEY_PAPER_5E,
+            moneyItems.MONEY_PAPER_5E,
+            moneyItems.MONEY_COIN_2E,
             moneyItems.MONEY_COIN_2E,
             moneyItems.MONEY_COIN_1E,
-            moneyItems.MONEY_COIN_2E,
-            moneyItems.MONEY_PAPER_5E,
-            moneyItems.MONEY_PAPER_5E,
             moneyItems.MONEY_COIN_1E,
             moneyItems.MONEY_COIN_1E
         ]
@@ -76,8 +73,8 @@ Data {
             moneyItems.MONEY_PAPER_10E,
             moneyItems.MONEY_PAPER_5E,
             moneyItems.MONEY_COIN_2E,
-            moneyItems.MONEY_COIN_1E,
             moneyItems.MONEY_COIN_2E,
+            moneyItems.MONEY_COIN_1E,
             moneyItems.MONEY_COIN_1E,
             moneyItems.MONEY_COIN_1E
         ]
@@ -89,12 +86,12 @@ Data {
         "paid": 20,
         "pocket": [
             moneyItems.MONEY_PAPER_20E,
-            moneyItems.MONEY_COIN_2E,
-            moneyItems.MONEY_COIN_1E,
             moneyItems.MONEY_PAPER_10E,
             moneyItems.MONEY_PAPER_5E,
-            moneyItems.MONEY_COIN_1E,
             moneyItems.MONEY_COIN_2E,
+            moneyItems.MONEY_COIN_2E,
+            moneyItems.MONEY_COIN_1E,
+            moneyItems.MONEY_COIN_1E,
             moneyItems.MONEY_COIN_1E
         ]
     },
@@ -105,12 +102,12 @@ Data {
         "paid": 20,
         "pocket": [
             moneyItems.MONEY_PAPER_20E,
-            moneyItems.MONEY_COIN_2E,
-            moneyItems.MONEY_COIN_1E,
             moneyItems.MONEY_PAPER_10E,
             moneyItems.MONEY_PAPER_5E,
-            moneyItems.MONEY_COIN_1E,
             moneyItems.MONEY_COIN_2E,
+            moneyItems.MONEY_COIN_2E,
+            moneyItems.MONEY_COIN_1E,
+            moneyItems.MONEY_COIN_1E,
             moneyItems.MONEY_COIN_1E
         ]
     },
@@ -120,12 +117,12 @@ Data {
         "maxPrice": 49,
         "paid": 50,
         "pocket": [
-            moneyItems.MONEY_PAPER_10E,
-            moneyItems.MONEY_PAPER_10E,
             moneyItems.MONEY_PAPER_50E,
-            moneyItems.MONEY_COIN_2E,
             moneyItems.MONEY_PAPER_20E,
+            moneyItems.MONEY_PAPER_10E,
+            moneyItems.MONEY_PAPER_10E,
             moneyItems.MONEY_PAPER_5E,
+            moneyItems.MONEY_COIN_2E,
             moneyItems.MONEY_COIN_2E,
             moneyItems.MONEY_COIN_1E,
             moneyItems.MONEY_COIN_1E,
@@ -138,12 +135,12 @@ Data {
         "maxPrice": 49,
         "paid": 50,
         "pocket": [
-            moneyItems.MONEY_PAPER_10E,
-            moneyItems.MONEY_PAPER_10E,
             moneyItems.MONEY_PAPER_50E,
-            moneyItems.MONEY_COIN_2E,
             moneyItems.MONEY_PAPER_20E,
+            moneyItems.MONEY_PAPER_10E,
+            moneyItems.MONEY_PAPER_10E,
             moneyItems.MONEY_PAPER_5E,
+            moneyItems.MONEY_COIN_2E,
             moneyItems.MONEY_COIN_2E,
             moneyItems.MONEY_COIN_1E,
             moneyItems.MONEY_COIN_1E,
@@ -156,12 +153,12 @@ Data {
         "maxPrice": 49,
         "paid": 50,
         "pocket": [
-            moneyItems.MONEY_PAPER_10E,
-            moneyItems.MONEY_PAPER_10E,
             moneyItems.MONEY_PAPER_50E,
-            moneyItems.MONEY_COIN_2E,
             moneyItems.MONEY_PAPER_20E,
+            moneyItems.MONEY_PAPER_10E,
+            moneyItems.MONEY_PAPER_10E,
             moneyItems.MONEY_PAPER_5E,
+            moneyItems.MONEY_COIN_2E,
             moneyItems.MONEY_COIN_2E,
             moneyItems.MONEY_COIN_1E,
             moneyItems.MONEY_COIN_1E,
@@ -175,16 +172,16 @@ Data {
         "paid": 100,
         "pocket": [
             moneyItems.MONEY_PAPER_100E,
-            moneyItems.MONEY_PAPER_10E,
-            moneyItems.MONEY_COIN_2E,
-            moneyItems.MONEY_PAPER_5E,
-            moneyItems.MONEY_COIN_1E,
-            moneyItems.MONEY_COIN_1E,
-            moneyItems.MONEY_COIN_2E,
             moneyItems.MONEY_PAPER_50E,
             moneyItems.MONEY_PAPER_20E,
+            moneyItems.MONEY_PAPER_10E,
             moneyItems.MONEY_PAPER_5E,
-            moneyItems.MONEY_PAPER_5E
+            moneyItems.MONEY_PAPER_5E,
+            moneyItems.MONEY_PAPER_5E,
+            moneyItems.MONEY_COIN_2E,
+            moneyItems.MONEY_COIN_2E,
+            moneyItems.MONEY_COIN_1E,
+            moneyItems.MONEY_COIN_1E
         ]
     },
     {
@@ -194,16 +191,16 @@ Data {
         "paid": 100,
         "pocket": [
             moneyItems.MONEY_PAPER_100E,
-            moneyItems.MONEY_PAPER_10E,
-            moneyItems.MONEY_COIN_2E,
-            moneyItems.MONEY_PAPER_5E,
-            moneyItems.MONEY_COIN_1E,
-            moneyItems.MONEY_COIN_1E,
-            moneyItems.MONEY_COIN_2E,
             moneyItems.MONEY_PAPER_50E,
             moneyItems.MONEY_PAPER_20E,
+            moneyItems.MONEY_PAPER_10E,
             moneyItems.MONEY_PAPER_5E,
-            moneyItems.MONEY_PAPER_5E
+            moneyItems.MONEY_PAPER_5E,
+            moneyItems.MONEY_PAPER_5E,
+            moneyItems.MONEY_COIN_2E,
+            moneyItems.MONEY_COIN_2E,
+            moneyItems.MONEY_COIN_1E,
+            moneyItems.MONEY_COIN_1E
         ]
     },
     {
@@ -213,16 +210,16 @@ Data {
         "paid": 100,
         "pocket": [
             moneyItems.MONEY_PAPER_100E,
-            moneyItems.MONEY_PAPER_10E,
-            moneyItems.MONEY_COIN_2E,
-            moneyItems.MONEY_PAPER_5E,
-            moneyItems.MONEY_COIN_1E,
-            moneyItems.MONEY_COIN_1E,
-            moneyItems.MONEY_COIN_2E,
             moneyItems.MONEY_PAPER_50E,
             moneyItems.MONEY_PAPER_20E,
+            moneyItems.MONEY_PAPER_10E,
             moneyItems.MONEY_PAPER_5E,
-            moneyItems.MONEY_PAPER_5E
+            moneyItems.MONEY_PAPER_5E,
+            moneyItems.MONEY_PAPER_5E,
+            moneyItems.MONEY_COIN_2E,
+            moneyItems.MONEY_COIN_2E,
+            moneyItems.MONEY_COIN_1E,
+            moneyItems.MONEY_COIN_1E
         ]
     }
     ]
