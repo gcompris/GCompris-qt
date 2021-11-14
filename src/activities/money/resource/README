@@ -3,8 +3,8 @@ money2.wav: keweldog https://www.freesound.org/people/keweldog/sounds/181761/
 money1.wav: florian_reinke https://www.freesound.org/people/florian_reinke/sounds/63523/
             This work is licensed under the Creative Commons 0 License.
 
-Copyright: 2000, 2008 Bruno Coudoin and others
-License: GPLv3
+Copyright: Timothée Giet, 2021
+License: CC-BY-SA 4.0
 Files:
 c1c.svg
 c1e.svg
@@ -18,8 +18,6 @@ n5e.svg
 n10e.svg
 n20e.svg
 n50e.svg
-
-License: Public domain
-n100e.png: https://commons.wikimedia.org/wiki/Category:100_euro_banknotes#/media/File:100-Euro.svg
-n200e.svg: https://openclipart.org
-n500e.png: https://commons.wikimedia.org/wiki/Category:500_euro_banknotes#/media/File:500-Euro.svg:
+n100e.svg
+n200e.svg
+n500e.svg
