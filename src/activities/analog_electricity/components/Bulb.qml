@@ -208,7 +208,7 @@ ElectricalComponent {
     }
 
     function checkComponentAnswer() {
-        if(Activity.currentLevel === 7 && componentVoltage > 0 && !isBroken)
+        if(Activity.currentLevel === 8 && componentVoltage > 0 && !isBroken)
             return "bulbIn";
 
         if(componentVoltage === 10) {
