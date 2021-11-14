@@ -77,22 +77,38 @@ function initLevel() {
     for(var i = 0; i < pocket.length; i++)
         items.pocketModel.append(pocket[i])
 
+    var locale = GCompris.ApplicationSettings.locale
+    if(locale == "system") {
+        locale = Qt.locale().name == "C" ? "en_US" : Qt.locale().name
+    }
     // fill up the store in a random way
     var storeModel = new Array()
-    priceTotal = Math.floor(data.minPrice + Math.random() *
-                            (data.maxPrice - data.minPrice))
+    // the real minimum price should always be at least the number of items
+    // in non cents mode, to always have positive prices
+    // else it could happen to have a price of 1 and 3 items to sell...
+    var realMinPrice = Math.max(data.minPrice, data.numberOfItem)
+    priceTotal = Math.floor(realMinPrice + Math.random() *
+                            (data.maxPrice - realMinPrice))
     var priceCounter = 0
     for(var i = 0; i < data.numberOfItem; i++) {
         var price
-        if(i < data.numberOfItem - 1)
+        if(i < data.numberOfItem - 1) {
+            var delta = (centsMode ? 0 : 1)
             // Calc a random price for each item based on the previous prices
-            price = Math.floor((centsMode ? 0 : 1) +
+            price = Math.floor(delta +
                                Math.random() *
-                               (2 * (priceTotal - priceCounter) / data.numberOfItem))
-        else
+                               (2 * (priceTotal - priceCounter) / data.numberOfItem - delta))
+        }
+        else {
             // Put the remaining missing price on the last item
             price = priceTotal - priceCounter
-
+            // If the price is 0, we recompute it to be between 1 and the remaining values
+            // between the actual total price and the max price possible
+            if(price == 0) {
+                price = delta + Math.floor(Math.random() * (data.maxPrice - priceTotal - delta));
+                priceTotal += price;
+            }
+        }
         var cents = 0
         if(centsMode) {
             if(currentLevel === 0)
@@ -104,10 +120,6 @@ function initLevel() {
             price += cents
         }
 
-        var locale = GCompris.ApplicationSettings.locale
-        if(locale == "system") {
-            locale = Qt.locale().name == "C" ? "en_US" : Qt.locale().name
-        }
         var priceText = Number(price).toLocaleCurrencyString(Qt.locale(locale))
         if(!centsMode) {
             // Strip floating part
@@ -146,10 +158,6 @@ function initLevel() {
         for(var i=0; i < tuxMoney.length; i++)
             tuxTotal += tuxMoney[i].val
 
-        var locale = GCompris.ApplicationSettings.locale
-        if(locale == "system") {
-            locale = Qt.locale().name == "C" ? "en_US" : Qt.locale().name
-        }
         var priceText = Number(tuxTotal).toLocaleCurrencyString(Qt.locale(locale))
         if(!centsMode) {
             // Strip floating part
@@ -160,7 +168,6 @@ function initLevel() {
         items.instructions.text = qsTr("Tux just bought some items in your shop.\n" +
                                        "He gives you %1, please give back his change.")
                       .arg(priceText)
-
     }
 
     //Keyboard reset
