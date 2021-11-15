@@ -129,7 +129,7 @@ function initLevel() {
         var priceText = Number(price).toLocaleCurrencyString(Qt.locale(locale))
         if(!centsMode) {
             // Strip floating part
-            priceText = priceText.replace((/.00/), "")
+            priceText = priceText.replace((/[,.]00/), "")
         }
 
         storeModel.push({img: getRandomObject(price),
