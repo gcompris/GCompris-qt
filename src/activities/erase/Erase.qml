@@ -59,7 +59,7 @@ ActivityBase {
                     var touch = touchPoints[i]
 
                     var newBlock = rootItem.childAt(touch.x, touch.y)
-                    if(newBlock)
+                    if(newBlock && activity.type === "erase")
                         newBlock.enter()
 
                     var previousBlock = rootItem.childAt(touch.previousX, touch.previousY)
