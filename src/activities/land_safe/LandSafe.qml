@@ -120,6 +120,7 @@ ActivityBase {
 
         onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
+        onVisibleChanged: visible ? physicsWorld.running = true : physicsWorld.running = false
 
         World {
             id: physicsWorld
@@ -732,10 +733,7 @@ ActivityBase {
             id: bar
             z: 21
             content: BarEnumContent { value: help | home | level | reload | activityConfig }
-            onHelpClicked: {
-                Activity.initLevel();
-                displayDialog(dialogHelp);
-            }
+            onHelpClicked: displayDialog(dialogHelp);
             onPreviousLevelClicked: Activity.previousLevel();
             onNextLevelClicked: Activity.nextLevel();
             onHomeClicked: {
