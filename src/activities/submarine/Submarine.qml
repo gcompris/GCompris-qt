@@ -34,8 +34,8 @@ ActivityBase {
 
         onWidthChanged: updateOnWidthReset.start()
         onHeightChanged: Activity.resetUpperGate()
-        onVisibleChanged: visible ? physicalWorld.timeStep = physicalWorld.originalTimeStep :
-                                    physicalWorld.timeStep = 0
+        onVisibleChanged: visible ? physicalWorld.running = true :
+                                    physicalWorld.running = false
 
         property bool hori: background.width >= background.height
 
@@ -124,10 +124,7 @@ ActivityBase {
             }
         }
 
-        onStart: {
-            Activity.start(items)
-            physicalWorld.originalTimeStep = physicalWorld.timeStep
-        }
+        onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
 
         World {
@@ -135,7 +132,6 @@ ActivityBase {
             running: !tutorial.visible && !items.processingAnswer
             gravity: Qt.point(0,0)
             autoClearForces: false
-            property double originalTimeStep: 0
         }
 
         Item {
