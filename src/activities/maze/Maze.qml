@@ -55,7 +55,7 @@ ActivityBase {
             property int playery: 0
             property int playerr: 270
             property int doory: 0
-            property int cellSize: Math.min((parent.height - 200) / mazeRows,
+            property int cellSize: Math.min((parent.height - bar.height * 1.2 - 40) / mazeRows,
                                             (parent.width - 40) / mazeColumns)
             property int wallSize: Math.max(2, cellSize / 10)
             property bool wallVisible: true
@@ -77,7 +77,7 @@ ActivityBase {
         Grid {
             id: maze
             anchors.top: parent.top
-            anchors.topMargin: (parent.height - height) / 2
+            anchors.topMargin: 40
             anchors.horizontalCenter: parent.horizontalCenter
             columns: 0
             rows: 0
