@@ -88,6 +88,7 @@ ActivityBase {
 
                     MultiPointTouchArea {
                         id: ballTouchArea
+                        enabled: !bonus.isPlaying
                         anchors.fill: parent
                         touchPoints: [ TouchPoint { id: point1 }]
                         property var pointPosition: Qt.point(0, 0)
