@@ -246,12 +246,12 @@ ActivityBase {
                     if(!check.shown && powerIn) check.opacity = 1
                 }
 
-                if(powerOut > powerIn && residentSmallSwitch.on) {
+                if(!started || (powerOut > powerIn && residentSmallSwitch.on)) {
                     residentSmallSwitch.on = false
                     if(!check.shown && powerIn) check.opacity = 1
                 }
 
-                if(powerOut > powerIn && tuxSwitch.on) {
+                if(!started || (powerOut > powerIn && tuxSwitch.on)) {
                     tuxSwitch.on = false
                     if(!check.shown && powerIn) check.opacity = 1
                 }
