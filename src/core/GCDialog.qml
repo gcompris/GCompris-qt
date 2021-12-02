@@ -57,6 +57,12 @@ Item {
     property bool isDestructible: true
 
     /**
+     * type:bool
+     * Set to true after clicking on one of the options
+     */
+    property bool alreadyClicked: false
+
+    /**
      * Emitted when the dialog should be started.
      *
      * Triggers fading in.
@@ -103,6 +109,7 @@ Item {
         opacity = 1;
         gcdialog.forceActiveFocus();
         parent.Keys.enabled = false;
+        alreadyClicked = false;
     }
     onStop: {
         opacity = 0;
@@ -203,7 +210,9 @@ Item {
             theme: "highContrast"
             visible: text != ""
             property bool selected: false;
+            enabled: !gcdialog.alreadyClicked
             onClicked: {
+                gcdialog.alreadyClicked = true;
                 gcdialog.button1Hit()
                 gcdialog.stop()
             }
@@ -221,7 +230,9 @@ Item {
             theme: "highContrast"
             visible: text != ""
             property bool selected: false;
+            enabled: !gcdialog.alreadyClicked
             onClicked: {
+                gcdialog.alreadyClicked = true;
                 gcdialog.button2Hit()
                 gcdialog.stop()
             }
