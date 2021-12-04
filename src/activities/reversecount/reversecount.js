@@ -78,9 +78,10 @@ function initLevel() {
 function moveTux(numberOfMovesToDo) {
     calculateTuxIceBlockNextPos(numberOfMovesToDo)
 
-    if (tuxIceBlockNumberGoal > fishIndex)
+    if (tuxIceBlockNumberGoal != fishIndex)
     {
         items.clockPosition--
+        items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/darken.wav")
         if (items.clockPosition === 0) {
             lost()
             return
