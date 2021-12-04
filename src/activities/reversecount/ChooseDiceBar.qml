@@ -27,6 +27,10 @@ Item {
     property alias mode: domino.mode
     property GCSfx audioEffects
 
+    function moveTux() {
+        Activity.moveTux(domino.value1 + domino.value2)
+    }
+
     Row {
         id: barRow
         spacing: 8
@@ -43,7 +47,7 @@ Item {
                 topMargin: undefined
             }
             enabled: !items.tuxIsMoving && !clockAnim.running && !bonus.isPlaying
-            onClicked: Activity.moveTux(domino.value1 + domino.value2)
+            onClicked: chooseDiceBar.moveTux();
         }
 
         Domino {
