@@ -221,7 +221,7 @@
       <li xml:lang="et">arvuti tundmaõppimine: klaviatuur, hiir, erinevad hiireliigutused ...</li>
       <li xml:lang="eu">ordenagailua ezagutzea: teklatua, sagua, saguaren mugimendu ezberdinak, ...</li>
       <li xml:lang="fi">tietokoneen oppiminen: näppäimistö, hiiri, eri hiirieleet…</li>
-      <li xml:lang="fr">découverte de l'ordinateur : clavier, souris, mouvements de la souris…</li>
+      <li xml:lang="fr">découverte de l'ordinateur : clavier, souris, mouvements de la souris…</li>
       <li xml:lang="gl">Descubrimento do computador: teclado, rato, xestos do rato, etc.</li>
       <li xml:lang="he">לגלות את המחשב: מקלדת, עכבר, מחוות...</li>
       <li xml:lang="hi">कंप्यूटर की खोज: कीबोर्ड, माउस, अलग माउस इशारों, ...</li>
@@ -553,7 +553,7 @@
       <caption xml:lang="et">"Klõpsa suurtähel" tegevus</caption>
       <caption xml:lang="eu">"Egin klik letra larri batean" jarduera</caption>
       <caption xml:lang="fi">”Napsauta suuraakkosta” -toiminto</caption>
-      <caption xml:lang="fr">L'activité « Trouver la lettre majuscule »</caption>
+      <caption xml:lang="fr">L'activité « Clique la lettre majuscule »</caption>
       <caption xml:lang="gl">Actividade de «Premer unha letra maiúscula»</caption>
       <caption xml:lang="he">פעילות "להקיש על האותיות הגדולות"</caption>
       <caption xml:lang="hi">"अपरकेस अक्षर पर क्लिक करें" क्रिया</caption>
@@ -596,7 +596,7 @@
       <caption xml:lang="et">"Õpi kella tundma" tegevus</caption>
       <caption xml:lang="eu">"Erlojua ezagutzea" jarduera</caption>
       <caption xml:lang="fi">”Kellon oppiminen” -toiminto</caption>
-      <caption xml:lang="fr">L'activité « Trouver l'heure »</caption>
+      <caption xml:lang="fr">L'activité « Trouve l'heure »</caption>
       <caption xml:lang="gl">Actividade de «Aprender o reloxo»</caption>
       <caption xml:lang="he">פעילות "ללמוד לקרוא שעון"</caption>
       <caption xml:lang="hi">घड़ी सीखें</caption>
@@ -682,7 +682,7 @@
       <caption xml:lang="et">"Värvide" tegevus</caption>
       <caption xml:lang="eu">"Koloreak" jarduera</caption>
       <caption xml:lang="fi">”Värit”-toiminto</caption>
-      <caption xml:lang="fr">L'activité « Trouver la couleur »</caption>
+      <caption xml:lang="fr">L'activité « Trouve la couleur »</caption>
       <caption xml:lang="gl">Actividade de «Cores»</caption>
       <caption xml:lang="he">פעילות "צבעים"</caption>
       <caption xml:lang="hi">रंगों की गतिविधि</caption>
@@ -725,7 +725,7 @@
       <caption xml:lang="et">"Ehita samasugune mudel" tegevus</caption>
       <caption xml:lang="eu">"Eraiki eredu bera" jarduera</caption>
       <caption xml:lang="fi">”Rakenna sama malli” -toiminto</caption>
-      <caption xml:lang="fr">L'activité « Reconstruire le modèle »</caption>
+      <caption xml:lang="fr">L'activité « Reconstruis le modèle »</caption>
       <caption xml:lang="gl">Actividade de «Constrúe o mesmo modelo»</caption>
       <caption xml:lang="he">פעילות "לבנות את אותו דגם"</caption>
       <caption xml:lang="hi">वैसा ही बनाएँ गतिविधि</caption>
@@ -768,7 +768,7 @@
       <caption xml:lang="et">"Loe esemed kokku" tegevus</caption>
       <caption xml:lang="eu">"Zenbatu elementuak" jarduera</caption>
       <caption xml:lang="fi">”Laske kohteet” -toiminto</caption>
-      <caption xml:lang="fr">L'activité « Compter les éléments »</caption>
+      <caption xml:lang="fr">L'activité « Compte les éléments »</caption>
       <caption xml:lang="gl">Actividade de «Contar os elementos»</caption>
       <caption xml:lang="he">פעילות "למנות את הפריטים"</caption>
       <caption xml:lang="hi">सामान गिनने की गतिविधि</caption>
@@ -854,7 +854,7 @@
       <caption xml:lang="et">"Kuusnurga" tegevus</caption>
       <caption xml:lang="eu">"Hexagonoa" jarduera</caption>
       <caption xml:lang="fi">”Kuusiokulmio”-toiminto</caption>
-      <caption xml:lang="fr">L'activité « Localiser la fraise »</caption>
+      <caption xml:lang="fr">L'activité « Localise la fraise »</caption>
       <caption xml:lang="gl">Actividade de «Hexágono»</caption>
       <caption xml:lang="he">פעילות "מתומן"</caption>
       <caption xml:lang="hi">षटकोण गतिविधि</caption>
@@ -897,7 +897,7 @@
       <caption xml:lang="et">"Kaalud tasakaalu" tegevus</caption>
       <caption xml:lang="eu">"Orekatu balantzak behar bezala" jarduera</caption>
       <caption xml:lang="fi">”Tasapainota vaaka oikein” -toiminto</caption>
-      <caption xml:lang="fr">L'activité « Trouver le poids »</caption>
+      <caption xml:lang="fr">L'activité « Trouve le poids »</caption>
       <caption xml:lang="gl">Actividade de «Equilibra a balanza de forma axeitada»</caption>
       <caption xml:lang="he">פעילות "לאזן את המאזניים"</caption>
       <caption xml:lang="hi">तराजू बराबर करने की गतिविधि</caption>
@@ -982,7 +982,7 @@
       <caption xml:lang="es">Actividad «Tráfico»</caption>
       <caption xml:lang="et">"Liuglevate klotside mängu" tegevus</caption>
       <caption xml:lang="eu">"Bloke irristagarrien puzzle joko bat" jarduera</caption>
-      <caption xml:lang="fr">L'activité « Sortir la voiture du parking »</caption>
+      <caption xml:lang="fr">L'activité « Embouteillage »</caption>
       <caption xml:lang="gl">Actividade de «Un crebacabezas de bloques que se moven»</caption>
       <caption xml:lang="he">פעילות "משחק הרכבה של לבנים מחליקות"</caption>
       <caption xml:lang="hi">"स्लाइडिंग-ब्लॉक पहेली खेल" क्रिया</caption>
