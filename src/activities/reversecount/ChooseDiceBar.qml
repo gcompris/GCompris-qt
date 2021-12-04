@@ -28,7 +28,9 @@ Item {
     property GCSfx audioEffects
 
     function moveTux() {
-        Activity.moveTux(domino.value1 + domino.value2)
+        if(ok.enabled) {
+            Activity.moveTux(domino.value1 + domino.value2)
+        }
     }
 
     Row {
@@ -46,7 +48,7 @@ Item {
                 top: undefined
                 topMargin: undefined
             }
-            enabled: !items.tuxIsMoving && !clockAnim.running && !bonus.isPlaying
+            enabled: items.tuxCanMove && !bonus.isPlaying
             onClicked: chooseDiceBar.moveTux();
         }
 

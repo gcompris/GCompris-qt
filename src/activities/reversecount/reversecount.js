@@ -59,7 +59,8 @@ function stop() {
 
 function initLevel() {
     items.bar.level = currentLevel + 1
-    items.tuxIsMoving = false;
+    items.tuxIsMoving = false
+    items.tuxCanMove = true
     items.chooseDiceBar.value1 = 0
     items.chooseDiceBar.value2 = 0
     items.chooseDiceBar.valueMax = items.levels[currentLevel].maxNumber
@@ -78,8 +79,10 @@ function initLevel() {
 function moveTux(numberOfMovesToDo) {
     calculateTuxIceBlockNextPos(numberOfMovesToDo)
 
-    if (tuxIceBlockNumberGoal != fishIndex)
-    {
+    if(items.chooseDiceBar.value1 === 0 && items.chooseDiceBar.value2 === 0) {
+        return
+    }
+    else if (tuxIceBlockNumberGoal != fishIndex) {
         items.clockPosition--
         items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/darken.wav")
         if (items.clockPosition === 0) {
@@ -87,7 +90,8 @@ function moveTux(numberOfMovesToDo) {
             return
         }
     }
-    else if (items.chooseDiceBar.value1 != 0 || items.chooseDiceBar.value2 != 0 ) {
+    else {
+        items.tuxCanMove = false
         moveTuxToNextIceBlock()
     }
 }
