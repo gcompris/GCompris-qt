@@ -55,6 +55,7 @@ ActivityBase {
             property var heightBase: (background.height - bar.height * 1.5) / 5
             property var widthBase: background.width / 5
             property bool tuxIsMoving: false
+            property bool tuxCanMove: true
         }
 
         onStart: { Activity.start(items) }
@@ -132,6 +133,7 @@ ActivityBase {
                     x = nextX
                     y = nextY
                     opacity = 1
+                    items.tuxCanMove = true
                 }
             }
 
