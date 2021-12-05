@@ -52,6 +52,7 @@ function initLevel() {
     dataset[currentLevel] = Core.shuffle(dataset[currentLevel])
     hasWon = false
     initQuestion()
+    items.objectSelected = false
 }
 
 function initQuestion() {

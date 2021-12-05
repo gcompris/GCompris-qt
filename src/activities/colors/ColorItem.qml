@@ -22,7 +22,9 @@ Image {
     property bool playAudioOnError: false
 
     function select() {
-        mouseArea.enabled = false
+        if(items.objectSelected)
+            return
+        items.objectSelected = true
         if(Activity.hasWon) {
             return
         }
@@ -42,6 +44,7 @@ Image {
     MouseArea {
         id: mouseArea
         anchors.fill: parent
+        enabled: !items.objectSelected
         onClicked: select()
     }
 
@@ -78,7 +81,7 @@ Image {
           }
           onRunningChanged: {
               if (running == false) {
-                  mouseArea.enabled = true
+                  items.objectSelected = false
               }
           }
     }
@@ -121,7 +124,7 @@ Image {
         }
         onRunningChanged: {
             if (running == false) {
-                mouseArea.enabled = true
+                items.objectSelected = false
             }
         }
     }

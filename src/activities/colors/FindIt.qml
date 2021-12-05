@@ -60,6 +60,7 @@ ActivityBase {
             property bool firstQuestion: true
             property bool audioOk: false
             property alias score: score
+            property bool objectSelected: true
         }
         onStart: {
             if((!ApplicationSettings.isAudioVoicesEnabled || !ApplicationSettings.isAudioEffectsEnabled) && activity.isMusicalActivity) {
