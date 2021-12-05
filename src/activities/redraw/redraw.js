@@ -60,6 +60,7 @@ function initLevel() {
         // at first level
         items.userModel.itemAt(0).paint(items.targetModelData[0])
     }
+    items.colorSelector = 1
 }
 
 function nextLevel() {
