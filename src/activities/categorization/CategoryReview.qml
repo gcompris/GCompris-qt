@@ -162,18 +162,16 @@ Item {
             height: width
             sourceSize.width: width
             sourceSize.height: height
+            enabled: items.okEnabled
             anchors {
                 rightMargin: 14 * ApplicationInfo.ratio
                 right: parent.right
                 bottom: parent.bottom
                 bottomMargin: 14 * ApplicationInfo.ratio
             }
-
-            MouseArea {
-                anchors.fill: parent
-                onClicked: {
-                    Activity.allPlaced();
-                }
+            onClicked: {
+                items.okEnabled = false;
+                Activity.allPlaced();
             }
         }
 

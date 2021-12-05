@@ -59,6 +59,7 @@ ActivityBase {
             property bool categoriesFallback
             property alias file: file
             property var categories: activity.datasetLoader.data
+            property bool okEnabled: true
         }
 
         onStart: {
@@ -144,6 +145,7 @@ ActivityBase {
         Bonus {
             id: bonus
             Component.onCompleted: win.connect(Activity.nextLevel)
+            onStop: items.okEnabled = true
         }
 
         Loader {
