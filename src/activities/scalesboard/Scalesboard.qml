@@ -263,7 +263,7 @@ ActivityBase {
             id: okButton
             source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
             sourceSize.width: 60 * ApplicationInfo.ratio
-            enabled: !bonus.isPlaying
+            enabled: !bonus.isPlaying && masseAreaLeft.weight != 0
             visible: (!question.text || items.question.userEntry) ? true : false
             ParticleSystemStarLoader {
                 id: okButtonParticles
