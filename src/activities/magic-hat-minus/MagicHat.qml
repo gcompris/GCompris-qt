@@ -253,7 +253,7 @@ ActivityBase {
             source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
             width: (background.height - bar.height * 1.2) * 0.15
             sourceSize.width: width
-            enabled: !bonus.isPlaying
+            enabled: !bonus.isPlaying && theHat.state === "GuessNumber"
             onClicked: Activity.verifyAnswer()
         }
 
