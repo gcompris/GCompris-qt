@@ -47,7 +47,7 @@ QtObject {
             { "text": "Español", "locale": "es_ES.UTF-8" },
             { "text": "Eesti", "locale": "et_EE.UTF-8" },
             { "text": "Euskara", "locale": "eu_ES.UTF-8" },
-            //{ "text": "Suomi", "locale": "fi_FI.UTF-8" },
+            { "text": "Suomi", "locale": "fi_FI.UTF-8" },
             { "text": "Français", "locale": "fr_FR.UTF-8" },
             { "text": "Gaeilge", "locale": "ga_IE.UTF-8" },
             //{ "text": "Gàidhlig", "locale": "gd_GB.UTF-8" },
