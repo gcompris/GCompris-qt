@@ -23,7 +23,7 @@ ActivityInfo {
   manual: qsTr("A subtraction with two decimal numbers is displayed. The first number from the subtraction is represented with bars. Each bar represents one unit, and each square in the bar represent one tenth of this unit. Click on the squares to subtract the second number and represent the result of the operation")+ ("<br><br>") +
   qsTr("If the answer is correct, type the corresponding result, and click on the OK button to validate your answer.") + ("<br><br>") +
           qsTr("<b>Keyboard controls:</b>") + ("<ul><li>") +
-          qsTr("Enter: validate your answer") + ("</li></li>") +
+          qsTr("Enter: validate your answer") + ("</li><li>") +
           qsTr("Numbers: type the result") + ("</li></ul>")
   credit: ""
   section: "math arithmetic"
