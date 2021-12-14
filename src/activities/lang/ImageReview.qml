@@ -182,9 +182,10 @@ Item {
             id: imageFrame
             parent: rootItem
             source: "qrc:/gcompris/src/activities/lang/resource/imageid_frame.svg"
-            sourceSize.width: Math.min((parent.width - previousWordButton.width * 2) * 0.8,
-            (parent.height - categoryTextbg.height
-            - wordTextbg.height - bar.height) * 1.1)
+            width: (parent.width - previousWordButton.width * 2) * 0.8
+            height: (parent.height - categoryTextbg.height - wordTextbg.height - bar.height * 1.1) * 0.8
+            sourceSize.width: width
+            fillMode: Image.PreserveAspectFit
             anchors {
                 horizontalCenter: parent.horizontalCenter
                 top: categoryTextbg.bottom
@@ -195,7 +196,7 @@ Item {
             Image {
                 id: wordImage
                 // Images are not svg
-                width: Math.min(parent.width, parent.height) * 0.9
+                width: parent.paintedHeight * 0.9
                 height: width
                 anchors.centerIn: parent
 
