@@ -5,6 +5,7 @@
  * Authors:
  *   Harsh Kumar <hadron43@yahoo.com>
  *   Emmanuel Charruau <echarruau@gmail.com>
+ *   Timothée Giet <animtim@gmail.com>
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
@@ -126,8 +127,20 @@ function generateNumbers() {
 
         if(mode === "numbers")
             num.sort(function(a, b) { return a - b })
-        else
-            num.sort()
+        // for sorting letters we can't rely on sort default behavior, as in some languages the correct order
+        // is not the same as Unicode UTF 16 order (issue noticed with Malayalam). Using a.localeCompare(b)
+        // is also not reliable. So we just sort according to the reference list in the dataset.
+        else {
+            num.sort(function (a, b) {
+                if(items.levels[currentLevel].values.indexOf(a) > items.levels[currentLevel].values.indexOf(b)) {
+                    return 1;
+                }
+                if(items.levels[currentLevel].values.indexOf(a) < items.levels[currentLevel].values.indexOf(b)) {
+                    return -1;
+                }
+                return 0;
+            });
+        }
 
     }
     else {
