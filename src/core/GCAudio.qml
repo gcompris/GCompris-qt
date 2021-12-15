@@ -214,7 +214,10 @@ Item {
             source = ""
             gcaudio.done()
         } else {
-            source = ""
+            // on Ubuntu Touch, emptying the source result in an Audio error which triggers that method again endlessly
+            if (ApplicationInfo.platform !== ApplicationInfo.UbuntuTouchOS) {
+               source = ""
+            }
             source = nextFile
             if(!muted)
                 audio.play()
