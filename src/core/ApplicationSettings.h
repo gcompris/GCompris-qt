@@ -301,15 +301,7 @@ public:
         emit audioEffectsEnabledChanged();
     }
 
-    bool isBackgroundMusicEnabled() const
-    {
-#if defined(UBUNTUTOUCH)
-        // there is an issue with playing two audio stream on UT, disable background music for now
-        return false;
-#else
-        return m_isBackgroundMusicEnabled;
-#endif
-    }
+    bool isBackgroundMusicEnabled() const { return m_isBackgroundMusicEnabled; }
     void setIsBackgroundMusicEnabled(const bool newMode)
     {
         m_isBackgroundMusicEnabled = newMode;
