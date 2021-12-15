@@ -147,12 +147,10 @@ Item {
     }
     GCText {
         id: label
-        anchors.verticalCenter: parent.verticalCenter
-        // We need to manually horizonally center the text, because in wrongAnswerAnimation,
-        // the x of the text is changed, which would not work if we use an anchor layout.
-        property int horizontallyCenteredX: (button.width - contentWidth) >> 1;
+        anchors.centerIn: parent
+        anchors.horizontalCenterOffset: 0
+        horizontalAlignment: Text.AlignHCenter
         width: button.width
-        x: horizontallyCenteredX;
         fontSizeMode: Text.Fit
         font.bold: true
         text: textLabel
@@ -219,22 +217,22 @@ Item {
             SequentialAnimation {
                 PropertyAnimation {
                     target: label
-                    property: "x"
-                    to: label.horizontallyCenteredX - wrongAnswerShakeAmplitude
+                    property: "anchors.horizontalCenterOffset"
+                    to: -wrongAnswerShakeAmplitude
                     easing.type: Easing.InCubic
                     duration: 120
                 }
                 PropertyAnimation {
                     target: label
-                    property: "x"
-                    to: label.horizontallyCenteredX + wrongAnswerShakeAmplitude
+                    property: "anchors.horizontalCenterOffset"
+                    to: wrongAnswerShakeAmplitude
                     easing.type: Easing.InOutCubic
                     duration: 220
                 }
                 PropertyAnimation {
                     target: label
-                    property: "x"
-                    to: label.horizontallyCenteredX
+                    property: "anchors.horizontalCenterOffset"
+                    to: 0
                     easing { type: Easing.OutBack; overshoot: 3 }
                     duration: 180
                 }
