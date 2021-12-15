@@ -92,12 +92,12 @@ function setUp() {
                         + items.totalBoys * items.background.placedInBoys
             }
         }
-        //~ singular Place %n boy 
-        //~ plural Place %n boys 
+        //~ singular "Place %n boy "
+        //~ plural "Place %n boys "
         items.instruction.text = qsTr("Place %n boy(s) ", "First part of Place %n boy(s) and %n girl(s) in the center. Then split %n pieces of candy equally between them.", items.totalBoys);
 
-        //~ singular and %n girl in the center. 
-        //~ plural and %n girls in the center. 
+        //~ singular "and %n girl in the center. "
+        //~ plural "and %n girls in the center. "
         items.instruction.text += qsTr("and %n girl(s) in the center. ", "Second part of Place %n boy(s) and %n girl(s) in the center. Then split %n pieces of candy equally between them.", items.totalGirls);
 
         //~ singular Then split %n candy equally between them.
