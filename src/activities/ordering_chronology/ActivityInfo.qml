@@ -15,7 +15,7 @@ import GCompris 1.0
 ActivityInfo {
     name: "ordering_chronology/ChronologicalOrder.qml"
     difficulty: 2
-    icon: "ordering_chronology/chronological_order.svg"
+    icon: "ordering_chronology/ordering_chronology.svg"
     author: "Harsh Kumar &lt;hadron43@yahoo.com&gt;"
     //: Activity title
     title: qsTr("Ordering chronology")

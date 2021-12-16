@@ -14,7 +14,7 @@ import GCompris 1.0
 ActivityInfo {
     name: "ordering_numbers/OrderingNumbers.qml"
     difficulty: 2
-    icon: "ordering_numbers/ordering.svg"
+    icon: "ordering_numbers/ordering_numbers.svg"
     author: "Rudra Nil Basu &lt;rudra.nil.basu.1996@gmail.com&gt;, Emmanuel Charruau &lt;echarruau@gmail.com&gt;, Harsh Kumar &lt;hadron43@yahoo.com&gt;"
     //: Activity title
     title: qsTr("Ordering numbers")

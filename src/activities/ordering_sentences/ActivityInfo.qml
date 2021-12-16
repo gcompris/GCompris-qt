@@ -14,7 +14,7 @@ import GCompris 1.0
 ActivityInfo {
     name: "ordering_sentences/SentencesOrdering.qml"
     difficulty: 2
-    icon: "ordering_sentences/sentences_ordering.svg"
+    icon: "ordering_sentences/ordering_sentences.svg"
     author: "Harsh Kumar &lt;hadron43@yahoo.com&gt;, Emmanuel Charruau &lt;echarruau@gmail.com&gt;"
     //: Activity title
     title: qsTr("Ordering sentences")
