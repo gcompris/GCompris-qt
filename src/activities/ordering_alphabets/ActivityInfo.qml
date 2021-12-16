@@ -15,7 +15,7 @@ import GCompris 1.0
 ActivityInfo {
     name: "ordering_alphabets/AlphabeticalOrder.qml"
     difficulty: 2
-    icon: "ordering_alphabets/alphabetical_order.svg"
+    icon: "ordering_alphabets/ordering_alphabets.svg"
     author: "Rudra Nil Basu &lt;rudra.nil.basu.1996@gmail.com&gt;, Harsh Kumar &lt;hadron43@yahoo.com&gt;"
     //: Activity title
     title: qsTr("Ordering letters")
