@@ -83,6 +83,7 @@ foreach(PoSource ${TRANSLATIONS_FILES})
 endforeach()
 
 find_program(ZIP_ALIGN NAMES zipalign PATHS ${ANDROID_SDK_ROOT}/build-tools/${ANDROID_SDK_BUILD_TOOLS_REVISION}/)
+find_program(APK_SIGNER NAMES apksigner PATHS ${ANDROID_SDK_ROOT}/build-tools/${ANDROID_SDK_BUILD_TOOLS_REVISION}/)
 
 add_custom_command(
   OUTPUT createApkFromAndroidDeployQtDebug
@@ -101,17 +102,17 @@ add_custom_command(
 )
 
 add_custom_command(
-  OUTPUT createApkSignedFromAndroidDeployQtRelease
+  OUTPUT createApkAlignedFromAndroidDeployQtRelease
   DEPENDS ${CMAKE_CURRENT_BINARY_DIR}/GCompris-Android-release-${ANDROID_ABI}${APK_SUFFIX}${GCOMPRIS_VERSION}.apk
-  COMMAND ${CMAKE_COMMAND} -E copy ${CMAKE_CURRENT_BINARY_DIR}/GCompris-Android-release-${ANDROID_ABI}${APK_SUFFIX}${GCOMPRIS_VERSION}.apk ${CMAKE_CURRENT_BINARY_DIR}/GCompris-Android-release-signed-${ANDROID_ABI}${APK_SUFFIX}${GCOMPRIS_VERSION}.apk
-  COMMAND jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore $ENV{ANDROID_KEYSTORE} -storepass $ENV{ANDROID_KEYSTORE_PASSWD} ${CMAKE_CURRENT_BINARY_DIR}/GCompris-Android-release-signed-${ANDROID_ABI}${APK_SUFFIX}${GCOMPRIS_VERSION}.apk gcompris
+  COMMAND ${ZIP_ALIGN} -f -v 4 ${CMAKE_CURRENT_BINARY_DIR}/GCompris-Android-release-${ANDROID_ABI}${APK_SUFFIX}${GCOMPRIS_VERSION}.apk ${CMAKE_CURRENT_BINARY_DIR}/GCompris-Android-release-aligned-${ANDROID_ABI}${APK_SUFFIX}${GCOMPRIS_VERSION}.apk
 )
 
 add_custom_command(
   OUTPUT createApkSignedAlignedFromAndroidDeployQtRelease
-  DEPENDS ${CMAKE_CURRENT_BINARY_DIR}/GCompris-Android-release-signed-${ANDROID_ABI}${APK_SUFFIX}${GCOMPRIS_VERSION}.apk
+  DEPENDS ${CMAKE_CURRENT_BINARY_DIR}/GCompris-Android-release-aligned-${ANDROID_ABI}${APK_SUFFIX}${GCOMPRIS_VERSION}.apk
   COMMAND ${CMAKE_COMMAND} -E remove ${CMAKE_CURRENT_BINARY_DIR}/GCompris-Android-release-signed-aligned-${ANDROID_ABI}${APK_SUFFIX}${GCOMPRIS_VERSION}.apk
-  COMMAND ${ZIP_ALIGN} -v 4 ${CMAKE_CURRENT_BINARY_DIR}/GCompris-Android-release-signed-${ANDROID_ABI}${APK_SUFFIX}${GCOMPRIS_VERSION}.apk ${CMAKE_CURRENT_BINARY_DIR}/GCompris-Android-release-signed-aligned-${ANDROID_ABI}${APK_SUFFIX}${GCOMPRIS_VERSION}.apk
+  COMMAND ${CMAKE_COMMAND} -E copy ${CMAKE_CURRENT_BINARY_DIR}/GCompris-Android-release-aligned-${ANDROID_ABI}${APK_SUFFIX}${GCOMPRIS_VERSION}.apk ${CMAKE_CURRENT_BINARY_DIR}/GCompris-Android-release-signed-aligned-${ANDROID_ABI}${APK_SUFFIX}${GCOMPRIS_VERSION}.apk
+  COMMAND ${APK_SIGNER} sign --ks $ENV{ANDROID_KEYSTORE} --ks-pass pass:$ENV{ANDROID_KEYSTORE_PASSWD} --v1-signing-enabled true --v2-signing-enabled true ${CMAKE_CURRENT_BINARY_DIR}/GCompris-Android-release-signed-aligned-${ANDROID_ABI}${APK_SUFFIX}${GCOMPRIS_VERSION}.apk
 )
 
 add_custom_command(
@@ -130,13 +131,13 @@ add_custom_target(apk_release
   DEPENDS ${ALL_LOCALES} move_translations_to_assets package_openssl createApkFromAndroidDeployQtRelease java_src
 )
 
-# Command to create signed apk from Makefile
-add_custom_target(apk_signed
-  DEPENDS ${ALL_LOCALES} move_translations_to_assets package_openssl createApkSignedFromAndroidDeployQtRelease java_src
+# Command to create aligned apk from Makefile
+add_custom_target(apk_aligned
+  DEPENDS ${ALL_LOCALES} move_translations_to_assets package_openssl createApkAlignedFromAndroidDeployQtRelease java_src
 )
 
-# Command to create signed aligned apk from Makefile
-add_custom_target(apk_signed_aligned
+# Command to create aligned signed apk from Makefile
+add_custom_target(apk_aligned_signed
   DEPENDS ${ALL_LOCALES} move_translations_to_assets package_openssl createApkSignedAlignedFromAndroidDeployQtRelease java_src
 )
 
@@ -190,8 +191,8 @@ ExternalProject_Add(
   )
 add_custom_command(
   OUTPUT package_openssl
-  COMMAND ${CMAKE_COMMAND} -E copy "${OPENSSL_DIR}/libcrypto.so.1.1" "${CMAKE_BINARY_DIR}/android/libs/${ANDROID_ABI}/libcrypto${suffix_libssl}.so"
-  COMMAND ${CMAKE_COMMAND} -E copy "${OPENSSL_DIR}/libssl.so.1.1" "${CMAKE_BINARY_DIR}/android/libs/${ANDROID_ABI}/libssl${suffix_libssl}.so"
+  COMMAND ${CMAKE_COMMAND} -E copy "${OPENSSL_DIR}/../libcrypto_1_1.so" "${CMAKE_BINARY_DIR}/android/libs/${ANDROID_ABI}/libcrypto${suffix_libssl}.so"
+  COMMAND ${CMAKE_COMMAND} -E copy "${OPENSSL_DIR}/../libssl_1_1.so" "${CMAKE_BINARY_DIR}/android/libs/${ANDROID_ABI}/libssl${suffix_libssl}.so"
   )
 endif()
 
