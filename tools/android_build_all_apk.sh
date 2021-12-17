@@ -9,7 +9,7 @@
 # Uncomment if this is not already done
 # make getSvnTranslations
 
-Qt5_BaseDIR=~/Qt/5.12.5
+Qt5_BaseDIR=~/Qt/5.12.6
 export ANDROID_NDK_ROOT=$ANDROID_NDK
 
 # The current version
@@ -77,24 +77,9 @@ builddir=${buildprefix}-${QtTarget}
 mkdir -p ${builddir}
 cd ${builddir}
 
-f_cmake arm inapp OFF ON OFF
-make -j 4
-make BuildTranslations
-make apk_release && make apk_signed && make apk_signed_aligned
-
-f_cmake arm internal OFF ON OFF
-make -j 4
-make apk_release && make apk_signed && make apk_signed_aligned
-
 f_cmake arm no OFF ON OFF
 make -j 4
-make apk_release && make apk_signed && make apk_signed_aligned
-
-f_cmake arm no ON ON OFF
-make clean
-make -j 4
-make BuildTranslations
-make apk_release && make apk_signed && make apk_signed_aligned
+make apk_release && make apk_aligned && make apk_aligned_signed
 
 # Remove extra apk
 rm -f android/bin/*release-armeabi*

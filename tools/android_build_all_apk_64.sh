@@ -9,7 +9,7 @@
 # Uncomment if this is not already done
 # make getSvnTranslations
 
-Qt5_BaseDIR=~/Qt/5.12.5
+Qt5_BaseDIR=~/Qt/5.12.6
 export ANDROID_NDK_ROOT=$ANDROID_NDK
 export ANDROID_ARCH=arm64
 export ANDROID_ARCH_ABI=arm64-v8a
@@ -84,7 +84,7 @@ cd ${builddir}
 f_cmake arm64 no OFF ON OFF
 make -j 4
 make BuildTranslations
-make apk_release && make apk_signed && make apk_signed_aligned
+make apk_release && make apk_aligned && make apk_aligned_signed
 
 
 # Remove extra apk
