@@ -28,7 +28,7 @@ ActivityInfo {
     'Making a trap'. Use your pawns as baits.
 <b>Explanation</b>: this way you can lure your opponent out of his 'comfort zone'.
     Be patient enough.
-<b>Explanation</b>: don't rush too quick, be patient. Let yourself think a little bit and try to predict your opponent's future moves, so that you can catch him or secure your pieces from his attacks.")
+<b>Explanation</b>: don't rush too quick, be patient. Let yourself think a little bit and try to predict your opponent's future moves, so that you can catch him or secure your pieces from his attacks.") + ("<br><br>") + qsTr("Single click on undo button will undo one move. Single click on redo button will redo one move. To undo all the moves, press and hold the undo button for 3 seconds.")
   credit: ""
   section: "strategy"
   createdInVersion: 5000

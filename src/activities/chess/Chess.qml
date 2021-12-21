@@ -87,12 +87,54 @@ ActivityBase {
             property alias trigComputerMove: trigComputerMove
             property alias whiteTakenPieceModel: whiteTakenPieces.takenPiecesModel
             property alias blackTakenPieceModel: blackTakenPieces.takenPiecesModel
+            property bool displayUndoAllDialog: false
 
             Behavior on cellSize { PropertyAnimation { easing.type: Easing.InOutQuad; duration: 1000 } }
         }
 
         onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
+
+        function performUndo() {
+            if(items.history.length <= 0)
+                return
+            Activity.undo()
+            if(whiteTakenPieces.pushedLast[whiteTakenPieces.pushedLast.length-1] == movesCount) {
+                whiteTakenPieces.pushedLast.pop()
+                whiteTakenPieces.takenPiecesModel.remove(whiteTakenPieces.takenPiecesModel.count-1)
+            }
+            if(!items.twoPlayer) {
+                movesCount--
+            }
+            if(blackTakenPieces.pushedLast[blackTakenPieces.pushedLast.length-1] == movesCount) {
+                blackTakenPieces.pushedLast.pop()
+                blackTakenPieces.takenPiecesModel.remove(blackTakenPieces.takenPiecesModel.count-1)
+            }
+            movesCount--
+        }
+
+        Loader {
+            id: undoAllDialogLoader
+            sourceComponent: GCDialog {
+                parent: activity
+                isDestructible: false
+                //: Translators: undo all the moves in chess activity
+                message: qsTr("Do you really want to undo all the moves?")
+                button1Text: qsTr("Yes")
+                button2Text: qsTr("No")
+                onClose: items.displayUndoAllDialog = false
+                onButton1Hit: {
+                    stop()
+                    while(items.history.length > 0)
+                        performUndo()
+                }
+                onButton2Hit: {}
+            }
+            anchors.fill: parent
+            focus: true
+            active: items.displayUndoAllDialog
+            onStatusChanged: if (status == Loader.Ready) item.start()
+        }
 
         GCText {
             id: textMessage
@@ -115,27 +157,10 @@ ActivityBase {
             horizontalItemAlignment: Grid.AlignHCenter
             verticalItemAlignment: Grid.AlignVCenter
 
-            GCButton {
+            GCTimerButton {
                 id: undo
                 height: items.cellSize
                 width: items.cellSize
-                text: "";
-                theme: "noStyle"
-                onClicked: {
-                    Activity.undo()
-                    if(whiteTakenPieces.pushedLast[whiteTakenPieces.pushedLast.length-1] == movesCount) {
-                        whiteTakenPieces.pushedLast.pop()
-                        whiteTakenPieces.takenPiecesModel.remove(whiteTakenPieces.takenPiecesModel.count-1)
-                    }
-                    if(!items.twoPlayer) {
-                        movesCount--
-                    }
-                    if(blackTakenPieces.pushedLast[blackTakenPieces.pushedLast.length-1] == movesCount) {
-                        blackTakenPieces.pushedLast.pop()
-                        blackTakenPieces.takenPiecesModel.remove(blackTakenPieces.takenPiecesModel.count-1)
-                    }
-                    movesCount--
-                }
                 enabled: !buttonsBlocked && opacity == 1
                 opacity: items.history.length > 0 ? 1 : 0
                 Image {
@@ -144,6 +169,14 @@ ActivityBase {
                     width: items.cellSize
                     sourceSize.height: items.cellSize
                     fillMode: Image.PreserveAspectFit
+                }
+
+                onClicked: {
+                    if(!items.displayUndoAllDialog)
+                        performUndo()
+                }
+                onPressAndHold: {
+                    items.displayUndoAllDialog = true
                 }
                 Behavior on opacity {
                     PropertyAnimation {
