@@ -191,8 +191,8 @@ ExternalProject_Add(
   )
 add_custom_command(
   OUTPUT package_openssl
-  COMMAND ${CMAKE_COMMAND} -E copy "${OPENSSL_DIR}/../libcrypto_1_1.so" "${CMAKE_BINARY_DIR}/android/libs/${ANDROID_ABI}/libcrypto${suffix_libssl}.so"
-  COMMAND ${CMAKE_COMMAND} -E copy "${OPENSSL_DIR}/../libssl_1_1.so" "${CMAKE_BINARY_DIR}/android/libs/${ANDROID_ABI}/libssl${suffix_libssl}.so"
+  COMMAND ${CMAKE_COMMAND} -E copy "${OPENSSL_DIR}/libcrypto.so.1.1" "${CMAKE_BINARY_DIR}/android/libs/${ANDROID_ABI}/libcrypto${suffix_libssl}.so"
+  COMMAND ${CMAKE_COMMAND} -E copy "${OPENSSL_DIR}/libssl.so.1.1" "${CMAKE_BINARY_DIR}/android/libs/${ANDROID_ABI}/libssl${suffix_libssl}.so"
   )
 endif()
 
