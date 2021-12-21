@@ -23,9 +23,6 @@ version=$(sed -n -e 's/set(GCOMPRIS_MINOR_VERSION \([0-9]\+\)).*/\1/p' CMakeList
 # The prefix of the build dir, will be suffixed by the arch target
 buildprefix=emb-$version
 
-# Remove po files android do not support
-rm -f po/*@*
-
 #
 if [ ! -f org.kde.gcompris.appdata.xml ]
 then
@@ -40,7 +37,7 @@ then
 fi
 download_assets=$1
 
-# Param: ANDROID_ARCHITECTURE WITH_ACTIVATION_CODE DEMO_ONLY DOWNLOAD KIOSK_MODE DOWNLOAD_ASSETS
+# Param: ANDROID_ARCHITECTURE DOWNLOAD KIOSK_MODE DOWNLOAD_ASSETS
 # DOWNLOAD_ASSETS: list of assets to bundle in the apk
 #  e.g: words,en,fr,music # This packages the large words rcc, the french and english voices, and the music
 f_cmake()
@@ -77,11 +74,9 @@ f_cmake()
 	  -DQt5AndroidExtras_DIR=${Qt5_BaseDIR}/${QtTarget}/lib/cmake/Qt5AndroidExtras \
 	  -Wno-dev \
 	  -DQML_BOX2D_MODULE=submodule \
-	  -DACTIVATION_MODE=$2 \
-	  -DWITH_DEMO_ONLY=$3 \
-	  -DWITH_DOWNLOAD=$4 \
-	  -DWITH_KIOSK_MODE=$5 \
-	  -DDOWNLOAD_ASSETS=$6 \
+	  -DWITH_DOWNLOAD=$2 \
+	  -DWITH_KIOSK_MODE=$3 \
+	  -DDOWNLOAD_ASSETS=$4 \
 	  ..
 
 }
@@ -93,7 +88,7 @@ mkdir -p ${builddir}
 cd ${builddir}
 
 
-f_cmake arm no OFF OFF OFF $download_assets
+f_cmake arm OFF OFF $download_assets
 make
 make BuildTranslations
 make getAssets
