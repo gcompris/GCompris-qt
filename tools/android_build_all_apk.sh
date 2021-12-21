@@ -18,9 +18,6 @@ version=$(sed -n -e 's/set(GCOMPRIS_MINOR_VERSION \([0-9]\+\)).*/\1/p' CMakeList
 # The prefix of the build dir, will be suffixed by the arch target
 buildprefix=bb-$version
 
-# Remove po files android do not support
-rm -f po/*@*
-
 #
 if [ ! -f org.kde.gcompris.appdata.xml ]
 then
@@ -28,7 +25,7 @@ then
     exit 1
 fi
 
-# Param: ANDROID_ARCHITECTURE WITH_ACTIVATION_CODE DEMO_ONLY DOWNLOAD KIOSK_MODE
+# Param: ANDROID_ARCHITECTURE DOWNLOAD KIOSK_MODE
 f_cmake()
 {
     if [ $# != 5 ]
@@ -63,10 +60,8 @@ f_cmake()
 	  -DQt5AndroidExtras_DIR=${Qt5_BaseDIR}/${QtTarget}/lib/cmake/Qt5AndroidExtras \
 	  -Wno-dev \
 	  -DQML_BOX2D_MODULE=submodule \
-	  -DACTIVATION_MODE=$2 \
-	  -DWITH_DEMO_ONLY=$3 \
-	  -DWITH_DOWNLOAD=$4 \
-	  -DWITH_KIOSK_MODE=$5 \
+	  -DWITH_DOWNLOAD=$2 \
+	  -DWITH_KIOSK_MODE=$3 \
 	  ..
 
 }
@@ -77,7 +72,7 @@ builddir=${buildprefix}-${QtTarget}
 mkdir -p ${builddir}
 cd ${builddir}
 
-f_cmake arm no OFF ON OFF
+f_cmake arm ON OFF
 make -j 4
 make apk_release && make apk_aligned && make apk_aligned_signed
 
