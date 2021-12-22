@@ -42,7 +42,7 @@ download_assets=$1
 #  e.g: words,en,fr,music # This packages the large words rcc, the french and english voices, and the music
 f_cmake()
 {
-    if [ $# != 6 ]
+    if [ $# != 4 ]
     then
 	echo "f_cmake parameter number mismatch"
 	return
