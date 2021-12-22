@@ -31,7 +31,7 @@ fi
 # Param: ANDROID_ARCHITECTURE DOWNLOAD KIOSK_MODE
 f_cmake()
 {
-    if [ $# != 5 ]
+    if [ $# != 3 ]
     then
 	echo "f_cmake missing parameter"
 	return
