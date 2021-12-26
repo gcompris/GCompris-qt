@@ -59,6 +59,10 @@ set(QT_REQUIRED_VERSION 5.9.0)
 if(CMAKE_SYSTEM_NAME STREQUAL Android)
   find_package(ECM)
   set(ANDROID 1)
+  # Require ndk minimum version to 21
+  if(ANDROID_NDK_REVISION VERSION_LESS "21.0.0")
+    message(FATAL_ERROR "android ndk 21 minimal required, actually using ${ANDROID_NDK_REVISION}")
+  endif()
   # TODO: possibly should be setup by toolchain one day
   set(QT_QMAKE_EXECUTABLE "${_qt5Core_install_prefix}/bin/qmake")
   if(ECM_VERSION VERSION_GREATER "5.55.0")
