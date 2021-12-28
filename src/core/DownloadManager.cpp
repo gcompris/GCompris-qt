@@ -30,6 +30,24 @@ DownloadManager *DownloadManager::_instance = nullptr;
 DownloadManager::DownloadManager() :
     accessManager(this), serverUrl(ApplicationSettings::getInstance()->downloadServerUrl())
 {
+    // Manually add the "ISRG Root X1" certificate to download on older android
+    // Check https://bugs.kde.org/show_bug.cgi?id=447572 for more info
+#if defined(Q_OS_ANDROID)
+    // Starting Qt5.15, we can directly use addCaCertificate (https://doc.qt.io/qt-5/qsslconfiguration.html#addCaCertificate)
+    auto sslConfig = QSslConfiguration::defaultConfiguration();
+    QList<QSslCertificate> certificates = sslConfig.caCertificates();
+    // Certificate downloaded from https://letsencrypt.org/certificates/#root-certificates
+    QFile file(":/gcompris/src/core/resource/isrgrootx1.pem");
+    QIODevice::OpenMode openMode = QIODevice::ReadOnly | QIODevice::Text;
+    if (!file.open(openMode)) {
+        qDebug() << "Error opening " << file;
+    }
+    else {
+        certificates << QSslCertificate::fromData(file.readAll(), QSsl::Pem);
+        sslConfig.setCaCertificates(certificates);
+        QSslConfiguration::setDefaultConfiguration(sslConfig);
+    }
+#endif
 }
 
 DownloadManager::~DownloadManager()
