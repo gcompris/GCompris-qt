@@ -51,8 +51,10 @@ DialogBackground {
 
     property string gcVersion: ApplicationInfo.GCVersion
     property string qtVersion: ApplicationInfo.QTVersion
+    property string openSslVersion: ApplicationInfo.OpenSSLVersion
     property string gcVersionTxt: qsTr("GCompris %1").arg(gcVersion)
-    property string qtVersionTxt: qsTr("Based on Qt %1").arg(qtVersion)
+    //! first string is the version of Qt, second is the version of openSSL. The second string is something like: "OpenSSL 1.1.1m 14 Dec 2021"
+    property string qtVersionTxt: qsTr("Based on Qt %1 and %2").arg(qtVersion).arg(openSslVersion)
 
     content:
         "<center><b>" + "<a href='https://gcompris.net'>" +

@@ -19,6 +19,7 @@
 #include <QObject>
 #include <QLocale>
 #include <QQmlEngine>
+#include <QSslSocket>
 #include <QtGlobal>
 
 class QQuickWindow;
@@ -111,6 +112,11 @@ class ApplicationInfo : public QObject
      * Qt version string (runtime).
      */
     Q_PROPERTY(QString QTVersion READ QTVersion CONSTANT)
+
+    /**
+     * OpenSSL version string (runtime).
+     */
+    Q_PROPERTY(QString OpenSSLVersion READ OpenSSLVersion CONSTANT)
 
     /**
      * Audio codec used for voices resources.
@@ -274,6 +280,7 @@ public:
     static QString GCVersion() { return VERSION; }
     static int GCVersionCode() { return VERSION_CODE; }
     static QString QTVersion() { return qVersion(); }
+    static QString OpenSSLVersion() { return QSslSocket::sslLibraryVersionString(); }
     static QString CompressedAudio() { return COMPRESSED_AUDIO; }
     static bool isDownloadAllowed() { return QString(DOWNLOAD_ALLOWED) == "ON"; }
     bool useOpenGL() const { return m_useOpenGL; }
