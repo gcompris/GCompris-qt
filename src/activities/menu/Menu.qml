@@ -460,6 +460,9 @@ ActivityBase {
             model: ActivityInfoTree.menuTree
             keyNavigationWraps: true
             property int spacing: 10
+            // Needed to calculate the OpacityMask offset
+            // If not using OpenGL, this value is not used, so we save the calculation and set it to 1
+            property real hiddenBottom: ApplicationInfo.useOpenGL ? contentHeight - height - contentY : 1
 
             delegate: Item {
                 id: delegateItem
@@ -629,10 +632,21 @@ ActivityBase {
                 id: activitiesMask
                 visible: false
                 anchors.fill: activitiesGrid
+                // Dynamic position of the gradient used for OpacityMask
+                // If the hidden bottom part of the grid is > to the maximum heighht of the gradient,
+                // we use the maximum height.
+                // Else we set the gradient start position proportionnally to the hidden bottom part,
+                // until it disappears.
+                // And if not using OpenGL, the mask is disabled, so we save the calculation and set it to 1
+                property real gradientStartValue:
+                    ApplicationInfo.useOpenGL ?
+                    (activitiesGrid.hiddenBottom > activitiesGrid.height * 0.08 ?
+                        0.92 : 1 - (activitiesGrid.hiddenBottom / activitiesGrid.height)) :
+                        1
                 gradient: Gradient {
                   GradientStop { position: 0.0; color: "#FFFFFFFF" }
-                  GradientStop { position: 0.92; color: "#FFFFFFFF" }
-                  GradientStop { position: 0.96; color: "#00FFFFFF"}
+                  GradientStop { position: activitiesMask.gradientStartValue; color: "#FFFFFFFF" }
+                  GradientStop { position: activitiesMask.gradientStartValue + 0.04; color: "#00FFFFFF"}
                 }
             }
             layer.enabled: ApplicationInfo.useOpenGL
