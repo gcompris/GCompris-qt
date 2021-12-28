@@ -179,7 +179,7 @@ function calculateNextPlaceFishToReach() {
         ((newFishIndex === previousFishIndex) || (newFishIndex >= iceBlocksLayout.length)))
     previousFishIndex = newFishIndex
 
-    fishIndex = tuxIceBlockNumber + newFishIndex
+    fishIndex = (tuxIceBlockNumber + newFishIndex) % iceBlocksLayout.length
 }
 
 function placeFishToReach() {
