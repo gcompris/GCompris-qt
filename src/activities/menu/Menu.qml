@@ -39,15 +39,18 @@ ActivityBase {
     focus: true
     activityInfo: ActivityInfoTree.rootMenu
     onBack: {
-        pageView.pop(to);
-        // Restore focus that has been taken by the loaded activity
-        if(pageView.currentItem === activity)
-            focus = true;
+        if (pageView.currentItem === activity) {
+            // Restore focus that has been taken by the loaded activity
+            focus = true
+        } else {
+            pageView.pop(to)
+        }
+
     }
 
     onHome: {
         if(pageView.depth === 1 && !ApplicationSettings.isKioskMode) {
-            Core.quit(main);
+            Core.quit(activity);
         }
         else {
             pageView.pop();
@@ -92,7 +95,7 @@ ActivityBase {
     }
 
     Connections {
-        // At the launch of the application, box2d check is performed after we 
+        // At the launch of the application, box2d check is performed after we
         // first initialize the menu. This connection is to refresh
         // automatically the menu at start.
         target: ApplicationInfo

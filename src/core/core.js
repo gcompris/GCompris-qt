@@ -216,7 +216,7 @@ function quit(parent)
             backgroundButtonVisible: false
         });
         dialog.finished.connect(function() {Qt.quit();});
-    } else if (GCompris.ApplicationInfo.isMobile) {
+    } else if (GCompris.ApplicationSettings.exitConfirmation) {
         // prevent the user from quitting accidentially by clicking back too often:
         showMessageDialog(parent,
                 qsTr("Quit?") +
@@ -225,8 +225,9 @@ function quit(parent)
                 qsTr("Yes"), function() { Qt.quit(); },
                 qsTr("No"), function() { aboutToQuit = false; },
                 function() { aboutToQuit = false; } );
-    } else
+    } else {
         Qt.quit();
+    }
 }
 
 function isLeftToRightLocale(locale) {

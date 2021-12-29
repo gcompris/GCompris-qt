@@ -67,6 +67,7 @@ static const char *DEFAULT_CURSOR = "defaultCursor";
 static const char *NO_CURSOR = "noCursor";
 static const char *KIOSK_KEY = "kiosk";
 static const char *SECTION_VISIBLE = "sectionVisible";
+static const char *EXIT_CONFIRMATION = "exitConfirmation";
 static const char *WORDSET = "wordset";
 static const char *USE_WORDSET = "useWordset";
 
@@ -114,6 +115,7 @@ ApplicationSettings::ApplicationSettings(const QString &configPath, QObject *par
 #endif
 
     m_sectionVisible = m_config.value(SECTION_VISIBLE, true).toBool();
+    m_exitConfirmation = m_config.value(EXIT_CONFIRMATION, ApplicationInfo::getInstance()->isMobile() ? true : false).toBool();
     m_wordset = m_config.value(WORDSET, "").toString();
     m_useWordset = m_config.value(USE_WORDSET, true).toBool();
     m_isAutomaticDownloadsEnabled = m_config.value(ENABLE_AUTOMATIC_DOWNLOADS,
@@ -166,6 +168,7 @@ ApplicationSettings::ApplicationSettings(const QString &configPath, QObject *par
     connect(this, &ApplicationSettings::filterLevelMinChanged, this, &ApplicationSettings::notifyFilterLevelMinChanged);
     connect(this, &ApplicationSettings::filterLevelMaxChanged, this, &ApplicationSettings::notifyFilterLevelMaxChanged);
     connect(this, &ApplicationSettings::sectionVisibleChanged, this, &ApplicationSettings::notifySectionVisibleChanged);
+    connect(this, &ApplicationSettings::exitConfirmationChanged, this, &ApplicationSettings::notifyExitConfirmationChanged);
     connect(this, &ApplicationSettings::wordsetChanged, this, &ApplicationSettings::notifyWordsetChanged);
     connect(this, &ApplicationSettings::useWordsetChanged, this, &ApplicationSettings::notifyUseWordsetChanged);
     connect(this, &ApplicationSettings::kioskModeChanged, this, &ApplicationSettings::notifyKioskModeChanged);
@@ -202,6 +205,7 @@ ApplicationSettings::~ApplicationSettings()
     m_config.setValue(FILTER_LEVEL_MAX, m_filterLevelMax);
     m_config.setValue(KIOSK_KEY, m_isKioskMode);
     m_config.setValue(SECTION_VISIBLE, m_sectionVisible);
+    m_config.setValue(EXIT_CONFIRMATION, m_exitConfirmation);
     m_config.setValue(WORDSET, m_wordset);
     m_config.setValue(USE_WORDSET, m_useWordset);
     m_config.setValue(DEFAULT_CURSOR, m_defaultCursor);
@@ -359,6 +363,11 @@ void ApplicationSettings::notifySectionVisibleChanged()
 {
     updateValueInConfig(GENERAL_GROUP_KEY, SECTION_VISIBLE, m_sectionVisible);
     qDebug() << "notifySectionVisible: " << m_sectionVisible;
+}
+
+void ApplicationSettings::notifyExitConfirmationChanged()
+{
+    updateValueInConfig(GENERAL_GROUP_KEY, EXIT_CONFIRMATION, m_exitConfirmation);
 }
 
 void ApplicationSettings::notifyWordsetChanged()

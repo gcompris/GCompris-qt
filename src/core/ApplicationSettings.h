@@ -172,6 +172,11 @@ class ApplicationSettings : public QObject
     Q_PROPERTY(bool sectionVisible READ sectionVisible WRITE setSectionVisible NOTIFY sectionVisibleChanged)
 
     /**
+     * When true a dialog will pop up when we try to exit asking for confirmation. In mobile devices, it will be true by default and on desktops, it will be false.
+     */
+    Q_PROPERTY(bool exitConfirmation READ exitConfirmation WRITE setExitConfirmation NOTIFY exitConfirmationChanged)
+
+    /**
      * The name of the default wordset to use. If empty then the internal sample wordset is used.
      */
     Q_PROPERTY(QString wordset READ wordset WRITE setWordset NOTIFY wordsetChanged)
@@ -415,6 +420,13 @@ public:
         emit sectionVisibleChanged();
     }
 
+    bool exitConfirmation() const { return m_exitConfirmation; }
+    void setExitConfirmation(const bool newMode)
+    {
+        m_exitConfirmation = newMode;
+        emit exitConfirmationChanged();
+    }
+
     QString wordset() const { return m_wordset; }
     void setWordset(const QString &newWordset)
     {
@@ -534,6 +546,7 @@ protected slots:
     Q_INVOKABLE void notifyFilterLevelMaxChanged();
     Q_INVOKABLE void notifyKioskModeChanged();
     Q_INVOKABLE void notifySectionVisibleChanged();
+    Q_INVOKABLE void notifyExitConfirmationChanged();
     Q_INVOKABLE void notifyWordsetChanged();
     Q_INVOKABLE void notifyUseWordsetChanged();
     Q_INVOKABLE void notifyFilteredBackgroundMusicChanged();
@@ -613,6 +626,7 @@ signals:
     void filterLevelMaxChanged();
     void kioskModeChanged();
     void sectionVisibleChanged();
+    void exitConfirmationChanged();
     void wordsetChanged();
     void useWordsetChanged();
     void baseFontSizeChanged();
@@ -658,6 +672,7 @@ private:
     QString m_font;
     bool m_isKioskMode;
     bool m_sectionVisible;
+    bool m_exitConfirmation;
     QString m_wordset;
     bool m_useWordset;
     QStringList m_filteredBackgroundMusic;

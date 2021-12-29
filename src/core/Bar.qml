@@ -394,7 +394,7 @@ Item {
             source: "qrc:/gcompris/src/core/resource/bar_exit.svg";
             sourceSize.width: fullButtonScaled
             visible: barRow.isHidden === false
-            onClicked: Core.quit(bar.parent.parent);
+            onClicked: Core.quit(bar.parent);
         }
     }
     Component {

@@ -299,6 +299,16 @@ Item {
             }
         }
 
+        GCDialogCheckBox {
+            id: exitConfirmationBox
+            checked: exitConfirmation
+            text: qsTr("Ask for confirmation to exit")
+            visible: GCompris.ApplicationInfo.isMobile ? false : true
+            onCheckedChanged: {
+                exitConfirmation = checked;
+            }
+        }
+
         GCComboBox {
             id: fontBox
             model: fonts
@@ -490,6 +500,7 @@ Item {
     property bool isVirtualKeyboard: ApplicationSettings.isVirtualKeyboard
     property bool isAutomaticDownloadsEnabled: ApplicationSettings.isAutomaticDownloadsEnabled
     property bool sectionVisible: ApplicationSettings.sectionVisible
+    property bool exitConfirmation: ApplicationSettings.exitConfirmation
     property string wordset: ApplicationSettings.wordset
     property bool useWordset: ApplicationSettings.useWordset
     property var filteredBackgroundMusic: ApplicationSettings.filteredBackgroundMusic
@@ -532,6 +543,9 @@ Item {
 
         sectionVisible = ApplicationSettings.sectionVisible
         sectionVisibleBox.checked = sectionVisible
+
+        exitConfirmation = ApplicationSettings.exitConfirmation
+        exitConfirmationBox.checked = exitConfirmation
 
         wordset = useWordset ? ApplicationSettings.wordset : ""
 
@@ -577,6 +591,7 @@ Item {
         ApplicationSettings.isVirtualKeyboard = isVirtualKeyboard
         ApplicationSettings.isAutomaticDownloadsEnabled = isAutomaticDownloadsEnabled
         ApplicationSettings.sectionVisible = sectionVisible
+        ApplicationSettings.exitConfirmation = exitConfirmation
         ApplicationSettings.wordset = wordset
         ApplicationSettings.useWordset = useWordset
         ApplicationSettings.isEmbeddedFont = fonts.get(fontBox.currentIndex).isLocalResource;
@@ -674,6 +689,7 @@ Item {
     function hasConfigChanged() {
         return (ApplicationSettings.locale !== dialogConfig.languages[languageBox.currentIndex].locale ||
         (ApplicationSettings.sectionVisible != sectionVisible) ||
+        (ApplicationSettings.exitConfirmation != exitConfirmation) ||
         (ApplicationSettings.wordset != wordset) ||
         (ApplicationSettings.useWordset != useWordset) ||
         (ApplicationSettings.font = fonts.get(fontBox.currentIndex).text) ||
