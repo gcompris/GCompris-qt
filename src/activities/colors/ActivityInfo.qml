@@ -24,8 +24,8 @@ ActivityInfo {
   manual: qsTr("Listen to the color and click on the matching duck.") + ("<br><br>") +
           qsTr("<b>Keyboard controls:</b>") + ("<ul><li>") +
           qsTr("Arrows: navigate") + ("</li><li>") +
-          qsTr("Space or Enter: select an answer") + ("</li></li>") +
-          qsTr("Tab: repeat the question") + ("</li></li>")
+          qsTr("Space or Enter: select an answer") + ("</li><li>") +
+          qsTr("Tab: repeat the question") + ("</li></ul>")
   credit: ""
   section: "reading color vocabulary"
   createdInVersion: 0
