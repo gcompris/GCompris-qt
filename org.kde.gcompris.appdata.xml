@@ -4,6 +4,7 @@
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>AGPL-3.0</project_license>
   <name>GCompris</name>
+  <name xml:lang="ar">فهمت</name>
   <name xml:lang="az">GCompris</name>
   <name xml:lang="br">GCompris</name>
   <name xml:lang="ca">GCompris</name>
@@ -91,7 +92,7 @@
   <summary xml:lang="zh-TW">為 2-10 歲孩子設計的教育遊戲</summary>
   <description>
     <p>GCompris is a high quality educational software suite, including a large number of activities for children aged 2 to 10.</p>
-    <p xml:lang="ar">«فهمت» هو طقم برمجيّات تعليميّة عالية الجودة يضمّ مختلف الأنشطة للأطفال من سنتين إلى ١٠ سنوات.</p>
+    <p xml:lang="ar">فهمت هو طقم برمجيّات تعليميّة عالية الجودة يضمّ مختلف الأنشطة للأطفال من سنتين إلى ١٠ سنوات.</p>
     <p xml:lang="az">GCompris 2 yaşından 10 yaşınadək uşaqlar üçün çoxlu sayda çalşmalardan ibarət tədris proqramı paketidir.</p>
     <p xml:lang="br">Un dastumadeg a-feson gant obererezhioù ha c'hoarioù kelennadel evit ar vugale etre 2 ha 10 vloaz eo GCompris.</p>
     <p xml:lang="ca">El GCompris és una suite de programari educatiu d'alta qualitat, que inclou una gran quantitat d'activitats per a nens i nenes entre els 2 i els 10 anys.</p>
@@ -567,6 +568,7 @@
     </screenshot>
     <screenshot>
       <caption>"Click on an uppercase letter" activity</caption>
+      <caption xml:lang="ar">نشاط "النقر على الحرف الكبير"</caption>
       <caption xml:lang="az">"Böyük hərflərə vurun" çalışması</caption>
       <caption xml:lang="br">Obererezh "Klik war ur bennlizherenn"</caption>
       <caption xml:lang="ca">Activitat «Fes clic en una lletra en majúscula»</caption>
@@ -610,6 +612,7 @@
     </screenshot>
     <screenshot>
       <caption>"Learning Clock" activity</caption>
+      <caption xml:lang="ar">نشاط "تعلم الساعة"</caption>
       <caption xml:lang="az">"Saatı öyrənin" çalışması</caption>
       <caption xml:lang="br">Obererezh "Horolajoù"</caption>
       <caption xml:lang="ca">Activitat «Rellotge d'aprenentatge»</caption>
@@ -653,6 +656,7 @@
     </screenshot>
     <screenshot>
       <caption>"Mixing color of paint" activity</caption>
+      <caption xml:lang="ar">نشاط "خلط الألوان"</caption>
       <caption xml:lang="az">"Boya rənglərinin qarışdırılması" çalışması</caption>
       <caption xml:lang="br">Obererezh "Kemmeskañ livioù pentur"</caption>
       <caption xml:lang="ca">Activitat «Mescla els colors de la pintura»</caption>
@@ -696,6 +700,7 @@
     </screenshot>
     <screenshot>
       <caption>"Colors" activity</caption>
+      <caption xml:lang="ar">نشاط "الألوان"</caption>
       <caption xml:lang="az">"Rənglər" çalışması</caption>
       <caption xml:lang="br">Obererezh "Livioù"</caption>
       <caption xml:lang="ca">Activitat «Colors»</caption>
@@ -740,6 +745,7 @@
     </screenshot>
     <screenshot>
       <caption>"Build the same model" activity</caption>
+      <caption xml:lang="ar">نشاط "ابن نفس الطراز"</caption>
       <caption xml:lang="az">"Oxşar modeli qurun" çalışması</caption>
       <caption xml:lang="br">Obererezh "Krou ar memes skouer"</caption>
       <caption xml:lang="ca">Activitat «Construeix el mateix model»</caption>
@@ -783,6 +789,7 @@
     </screenshot>
     <screenshot>
       <caption>"Count the items" activity</caption>
+      <caption xml:lang="ar">نشاط "عد الأشياء"</caption>
       <caption xml:lang="az">"Elementləri sayın" çalışması</caption>
       <caption xml:lang="br">Obererezh "Kont an traoù"</caption>
       <caption xml:lang="ca">Activitat «Compta els elements»</caption>
@@ -826,6 +833,7 @@
     </screenshot>
     <screenshot>
       <caption>"The fifteen game" activity</caption>
+      <caption xml:lang="ar">نشاط "لعبة الخمسة عشر"</caption>
       <caption xml:lang="az">"Onbeşlik oyunu" çalışması</caption>
       <caption xml:lang="br">Obererezh "Ar miltamm lec'h-dilec'h"</caption>
       <caption xml:lang="ca">Activitat «El joc dels quinze»</caption>
@@ -869,6 +877,7 @@
     </screenshot>
     <screenshot>
       <caption>"Hexagon" activity</caption>
+      <caption xml:lang="ar">نشاط "المضلع"</caption>
       <caption xml:lang="az">"Altıbucaqlı" çalışması</caption>
       <caption xml:lang="br">Obererezh "C'hwec'hkorn"</caption>
       <caption xml:lang="ca">Activitat «Hexàgon»</caption>
@@ -912,6 +921,7 @@
     </screenshot>
     <screenshot>
       <caption>"Balance the scales properly" activity</caption>
+      <caption xml:lang="ar">نشاط "وازن الأحجام بشكل صحيح"</caption>
       <caption xml:lang="az">"Tərəzinin tarazlığı" çalışması</caption>
       <caption xml:lang="br">Obererezh "Pouezerez Roberval"</caption>
       <caption xml:lang="ca">Activitat «Equilibra correctament la balança»</caption>
@@ -955,6 +965,7 @@
     </screenshot>
     <screenshot>
       <caption>"End of chess game" activity</caption>
+      <caption xml:lang="ar">نشاط "نهاية لعبة الشطرنج"</caption>
       <caption xml:lang="az">"Şahmat oyununun son mərhələsi" çalışması</caption>
       <caption xml:lang="br">Obererezh "Dibenn an echedoù"</caption>
       <caption xml:lang="ca">Activitat «Final de la partida d'escacs»</caption>
@@ -998,6 +1009,7 @@
     </screenshot>
     <screenshot>
       <caption>"A sliding-block puzzle game" activity</caption>
+      <caption xml:lang="ar">نشاط "لعبة حرك الكتل"</caption>
       <caption xml:lang="az">"Blokların yerini dəyişməklə tapmaca" çalışması</caption>
       <caption xml:lang="br">Obererezh "Torr-penn ar parkva"</caption>
       <caption xml:lang="ca">Activitat «Un joc de trencaclosques amb blocs que es desplacen»</caption>
