@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=GCompris
+Name[ar]=فهمت
 Name[az]=GCompris
 Name[br]=GCompris
 Name[ca]=GCompris
@@ -43,6 +44,7 @@ Name[x-test]=xxGComprisxx
 Name[zh_CN]=GCompris
 Name[zh_TW]=GCompris
 GenericName=Educational Game for Children
+GenericName[ar]=لعبة تعليميّة للأطفال
 GenericName[az]=Uşaqlar üçün öyrədici oyun
 GenericName[br]=C'hoari kelennadel evit ar vugale
 GenericName[ca]=Joc educatiu per a infants
