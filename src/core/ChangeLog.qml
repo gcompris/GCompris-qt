@@ -26,6 +26,11 @@ QtObject {
      *
      */
     property var changelog: [
+            { "versionCode": 20100, "content": [
+                qsTr("Translations added for Breton, Czech and Macedonian"),
+                qsTr("Several bug fixes")
+                ]
+            },
             { "versionCode": 20000, "content": [
                 qsTr("Translation added for Azerbaijani"),
                 qsTr("New maps and update of the maps for geography activities"),
