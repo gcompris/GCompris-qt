@@ -1,7 +1,9 @@
-Put any number of images in this directory.
-They will be used as background in the 'erase' activity.
-The images must be in the 'jpeg' format and be suffixed with '.jpg' or '.jpeg'.
-For best results, they must have a size of 800x520 pixels.
+Copyright: Timothée Giet, 2022
+License: CC-BY-SA 4.0
+Files:
+transparent_square_green.svg
+transparent_square_yellow.svg
+transparent_square.svg
 
 Use of animal pictures is granted by Ralf Schmode (rschmode@gmx.net)
 WWW: http://schmode.net (no more alive)
