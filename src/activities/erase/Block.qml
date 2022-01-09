@@ -27,6 +27,8 @@ Image {
     y: iy * (main.height - bar.height) / (nby + getMultipleOfRatioToAdjustHeight() * ApplicationInfo.ratio)
     width: main.width / nbx
     height: (main.height - bar.height) / (nby + getMultipleOfRatioToAdjustHeight() * ApplicationInfo.ratio)
+    sourceSize.width: width
+    sourceSize.height: height
 
     signal enter
     signal leave
