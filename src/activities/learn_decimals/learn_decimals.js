@@ -1,6 +1,11 @@
 /* GCompris - learn_decimals.js
  *
  * SPDX-FileCopyrightText: 2021 Mariam Fahmy <mariamfahmy66@gmail.com>
+ *
+ * Authors:
+ *   Mariam Fahmy <mariamfahmy66@gmail.com>
+ *   Timothée Giet <animtim@gmail.com>
+ *
  * SPDX-License-Identifier: GPL-3.0-or-later
  *
  */
@@ -21,6 +26,7 @@ var squaresNumber = 10;
 var correctAnswer;
 var lastBarSquareUnits;
 var firstNumberList;
+var numberOfPossibleQuestions;
 
 var tutorialInstructions = [
             {
@@ -101,22 +107,7 @@ function initLevel() {
     minimumValue = dataset[currentLevel].minValue;
     maximumValue = dataset[currentLevel].maxValue;
 
-    // In case total number of levels are greater than the number of possibilities from 0.1 to 5,
-    // or from 1 to 50 for learn_quantities
-    checkQuestionListCapacity(1 * items.unit, 50 * items.unit);
-
-    // In case all possible values from the provided range in the dataset are all displayed.
-    var isAllDisplayed = true;
-
-    for(var i = minimumValue; i <= maximumValue; i += items.unit) {
-        if(firstNumberList.indexOf(i) == -1) {
-            isAllDisplayed = false;
-        }
-    }
-
-    if(isAllDisplayed) {
-        checkQuestionListCapacity(minimumValue, maximumValue);
-    }
+    checkAvailableQuestions();
 
     displayDecimalNumberQuestion()
 
@@ -172,25 +163,30 @@ function nextSubLevel() {
     items.droppedItems.clear();
 
     // In case number of sublevels are greater than the number of possibilities of the current level.
-    checkQuestionListCapacity(minimumValue, maximumValue);
+    checkAvailableQuestions();
 
     displayDecimalNumberQuestion();
 
     items.score.currentSubLevel++;
 }
 
-function checkQuestionListCapacity(minValue, maxValue) {
-    var maxSize = 1;
+function checkAvailableQuestions() {
+    // In case all possible values from the provided range in the dataset are all displayed.
+    var isAllDisplayed = true;
+    numberOfPossibleQuestions = 0;
 
-    if(items.isQuantityMode)
-        maxSize = (maxValue - minValue) + 1;
-    else
-        maxSize = ((maxValue - minValue) * squaresNumber) + 1;
+    for(var i = minimumValue; i <= maximumValue; i += items.unit) {
+        numberOfPossibleQuestions += 1;
+        // i += items.unit can sometimes return weird numbers like 0.30000000000000004 or 0.7999999999999999
+        // so rounding it is needed for a safe check
+        var j = Math.round(i * 10) / 10;
+        if(firstNumberList.indexOf(j) == -1) {
+            isAllDisplayed = false;
+        }
+    }
 
-    if(firstNumberList.length >= maxSize) {
-        var lastValue = firstNumberList[maxSize - 1];
+    if(isAllDisplayed) {
         firstNumberList = [];
-        firstNumberList.push(lastValue);
     }
 }
 
@@ -217,11 +213,16 @@ function generateFirstNumber() {
     if(items.isAdditionMode) {
         maximumValue -= minimumValue;
     }
-
-    do {
+    generatedNumber = generateDecimalNumbers(minimumValue, maximumValue);
+    var loopCheck = 0;
+    // if the number has already been asked, try to get a new one
+    while(firstNumberList.indexOf(generatedNumber) !== -1) {
         generatedNumber = generateDecimalNumbers(minimumValue, maximumValue);
+        //safety check to avoid stuck loop in case of js bugs
+        loopCheck += 1;
+        if(loopCheck > numberOfPossibleQuestions)
+            firstNumberList = []
     }
-    while(firstNumberList.indexOf(generatedNumber) !== -1);
 
     return generatedNumber;
 }
