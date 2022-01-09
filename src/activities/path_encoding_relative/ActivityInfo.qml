@@ -23,7 +23,7 @@ ActivityInfo {
   manual: qsTr("Use the arrow buttons to move Tux along the path until he reaches the target.") + "<br><br>" +
           qsTr("The directions are relative to the current orientation of Tux.") + "<br><br>" +
           qsTr("This means that UP moves forward, DOWN moves backward, LEFT moves to the left side of Tux and RIGHT moves to the right side of Tux.") + "<br><br>" +
-          qsTr("Keyboard controls:") + ("<ul><li>") +
+          "<b>" + qsTr("Keyboard controls:") + "</b>" + ("<ul><li>") +
           qsTr("Arrows: directions") + ("</li></ul>")
   credit: ""
   section: "discovery logic"

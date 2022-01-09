@@ -22,7 +22,7 @@ ActivityInfo {
   //: Help manual
   manual: qsTr("Use the arrow buttons to move Tux along the path until he reaches the target.") + "<br><br>" +
           qsTr("The directions are absolute, they do not depend on the current orientation of Tux.") + "<br><br>" +
-          qsTr("Keyboard controls:") + ("<ul><li>") +
+          "<b>" + qsTr("Keyboard controls:") + "</b>" + ("<ul><li>") +
           qsTr("Arrows: directions") + ("</li></ul>")
   credit: ""
   section: "discovery logic"
