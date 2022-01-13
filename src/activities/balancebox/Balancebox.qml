@@ -45,7 +45,7 @@ ActivityBase {
 
     pageComponent: Image {
         id: background
-        source: Activity.baseUrl + "/maze_bg.svg"
+        source: "qrc:/gcompris/src/activities/maze/resource/maze_bg.svg"
         sourceSize.width: parent.width
         anchors.fill: parent
         signal start
