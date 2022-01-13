@@ -316,6 +316,7 @@ Item {
                     anchors.margins: props.wallSize / 2
                     z: 1
                     imageSource: Activity.baseUrl + "/door.svg"
+                    imageScale: 1.1
                 }
             }
 
@@ -499,6 +500,7 @@ Item {
                                 anchors.centerIn: parent
                                 z: 1
                                 imageSource: Activity.baseUrl + "/door.svg"
+                                imageScale: 1.1
                             }
                         }
 

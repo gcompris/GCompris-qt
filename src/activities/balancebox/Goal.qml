@@ -15,7 +15,6 @@ import "balancebox.js" as Activity
 
 Item {
     id: goal
-    
     property alias world: itemBody.world
     property alias imageSource: goalImage.source
     property alias body: itemBody
@@ -35,8 +34,10 @@ Item {
     Image {
         id: goalImage
         
-        width: goal.width
-        height: goal.height
+        width: goal.width * 1.1
+        height: goal.height * 1.1
+        sourceSize.height: height
+        sourceSize.width: width
         source: Activity.baseUrl + "/door_closed.svg"
         anchors.centerIn: parent
     }

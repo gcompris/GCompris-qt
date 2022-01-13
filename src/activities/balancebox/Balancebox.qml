@@ -156,6 +156,12 @@ ActivityBase {
             onError: console.error("Balancebox: Error parsing JSON: " + msg);
         }
 
+        // color overlay to better see the map outline
+        Rectangle {
+            anchors.fill: parent
+            color: "#40FFFFFF"
+        }
+
         Rectangle {
             id: mapWrapper
 

@@ -37,17 +37,21 @@ Item {
     property alias shadow: itemShadow.visible
     property alias shadowHorizontalOffset: itemShadow.horizontalOffset
     property alias shadowVerticalOffset: itemShadow.verticalOffset
+    // for goal in the editor, use 1.1 scale
+    property alias imageScale: itemImage.scale
 
     signal beginContact(Item item, Item other)
     signal endContact(Item item, Item other)
 
     Image {
         id: itemImage
-        
         width: item.width
         height: item.height
+        sourceSize.width: width
+        sourceSize.height: height
         source: item.imageSource
         anchors.centerIn: parent
+        scale: 1
     }
 
     DropShadow {
