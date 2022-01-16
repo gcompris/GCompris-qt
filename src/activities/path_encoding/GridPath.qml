@@ -40,8 +40,8 @@ ActivityBase {
             readonly property string resourceUrl: activity.resourceUrl
             readonly property string mode: activity.mode
             readonly property string movement: activity.movement
-            property int rows
-            property int cols
+            property int rows: 1
+            property int cols: 1
             property int errorsCount
             property var levels: activity.datasetLoader.data
             property alias mapView: mapView
