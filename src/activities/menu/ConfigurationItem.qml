@@ -303,7 +303,7 @@ Item {
             id: exitConfirmationBox
             checked: exitConfirmation
             text: qsTr("Ask for confirmation to exit")
-            visible: GCompris.ApplicationInfo.isMobile ? false : true
+            visible: ApplicationInfo.isMobile ? false : true
             onCheckedChanged: {
                 exitConfirmation = checked;
             }
