@@ -79,8 +79,8 @@ ActivityBase {
             anchors.top: parent.top
             anchors.topMargin: 40
             anchors.horizontalCenter: parent.horizontalCenter
-            columns: 0
-            rows: 0
+            columns: 1
+            rows: 1
             spacing: 0
 
             Repeater {
