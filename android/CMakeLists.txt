@@ -47,11 +47,10 @@ endif()
 # specific clang addition
 if("${CMAKE_CXX_COMPILER_ID}" STREQUAL "Clang")
   set(STDCPP_PATH ",\"stdcpp-path\": \"${ANDROID_NDK}/sources/cxx-stl/llvm-libc++/libs/${ANDROID_ABI}/libc++_shared.so\"")
-  set(REMOVE_mandroid_FLAG_FOR_CLANG "sed -i -e 's/-mandroid//' Configure")
 endif()
 
 set(ANDROID_TOOLCHAIN arm-linux-androideabi)
-if("${ANDROID_ARCH}" STREQUAL "arm64")
+if("${ANDROID_ARCHITECTURE}" STREQUAL "arm64")
   set(ANDROID_TOOLCHAIN aarch64-linux-android)
 endif()
 
@@ -135,52 +134,32 @@ add_custom_target(apk_install
 # compile openssl needed to download from https
 include(ExternalProject)
 set(OPENSSL_DIR "${CMAKE_BINARY_DIR}/external/openssl/")
-set(SCRIPT_BUILD "build_openssl.sh.in")
-if("${ANDROID_ARCH}" STREQUAL "arm64")
-  set(SCRIPT_BUILD "build_openssl_64.sh.in")
+
+# For Qt 5.12.5 and above 5.13.0, it needs libcrypto_1_1.so and libssl_1_1.so
+set(suffix_libssl ".so")
+if(Qt5Core_VERSION VERSION_GREATER_EQUAL "5.12.5" AND NOT Qt5Core_VERSION MATCHES "5.13.0")
+  set(suffix_libssl "_1_1.so")
 endif()
-message(STATUS "Building ${SCRIPT_BUILD}")
-
-configure_file("${SCRIPT_BUILD}" "build_openssl.sh" @ONLY)
-
-if("${ANDROID_ARCH}" STREQUAL "arm")
-ExternalProject_Add(
-  ext_openssl
-  DOWNLOAD_DIR ${CMAKE_BINARY_DIR}
-  SOURCE_DIR ${OPENSSL_DIR}
-  URL https://www.openssl.org/source/openssl-1.0.2u.tar.gz
-  URL_HASH SHA256=ecd0c6ffb493dd06707d38b14bb4d8c2288bb7033735606569d8f90f89669d16
-  CONFIGURE_COMMAND echo "Configuration not needed"
-  BUILD_COMMAND sh "${CMAKE_CURRENT_BINARY_DIR}/build_openssl.sh" <SOURCE_DIR>
-  INSTALL_COMMAND ""
-  )
-add_custom_command(
-  OUTPUT package_openssl
-  COMMAND ${CMAKE_COMMAND} -E copy "${OPENSSL_DIR}/libcrypto.so.1.0.0" "${CMAKE_BINARY_DIR}/android/libs/${ANDROID_ABI}/libcrypto.so"
-  COMMAND ${CMAKE_COMMAND} -E copy "${OPENSSL_DIR}/libssl.so.1.0.0" "${CMAKE_BINARY_DIR}/android/libs/${ANDROID_ABI}/libssl.so"
-  )
-else()
-  # For Qt 5.12.5 and above 5.13.0, it needs libcrypto_1_1.so and libssl_1_1.so
-  set(suffix_libssl "")
-  if(Qt5Core_VERSION VERSION_GREATER_EQUAL "5.12.5" AND NOT Qt5Core_VERSION MATCHES "5.13.0")
-    set(suffix_libssl "_1_1")
-  endif()
 ExternalProject_Add(
   ext_openssl
   DOWNLOAD_DIR ${CMAKE_BINARY_DIR}
   SOURCE_DIR ${OPENSSL_DIR}
   URL https://www.openssl.org/source/openssl-1.1.1m.tar.gz
   URL_HASH SHA256=f89199be8b23ca45fc7cb9f1d8d3ee67312318286ad030f5316aca6462db6c96
-  CONFIGURE_COMMAND echo "Configuration not needed"
-  BUILD_COMMAND sh "${CMAKE_CURRENT_BINARY_DIR}/build_openssl.sh" <SOURCE_DIR>
+  BUILD_IN_SOURCE 1
+  CONFIGURE_COMMAND
+  ${CMAKE_COMMAND} -E env PATH=${ANDROID_NDK}/toolchains/llvm/prebuilt/linux-x86_64/bin:$ENV{PATH}
+  ./Configure --prefix=${CMAKE_CURRENT_BINARY_DIR} --openssldir=./ssl android-${ANDROID_ARCHITECTURE} shared -D__ANDROID_API__=${CMAKE_ANDROID_API}
+  BUILD_COMMAND
+  ${CMAKE_COMMAND} -E env PATH=${ANDROID_NDK}/toolchains/llvm/prebuilt/linux-x86_64/bin:$ENV{PATH}
+  make SHLIB_VERSION_NUMBER= SHLIB_EXT=${suffix_libssl} build_libs
   INSTALL_COMMAND ""
   )
 add_custom_command(
   OUTPUT package_openssl
-  COMMAND ${CMAKE_COMMAND} -E copy "${OPENSSL_DIR}/libcrypto.so.1.1" "${CMAKE_BINARY_DIR}/android/libs/${ANDROID_ABI}/libcrypto${suffix_libssl}.so"
-  COMMAND ${CMAKE_COMMAND} -E copy "${OPENSSL_DIR}/libssl.so.1.1" "${CMAKE_BINARY_DIR}/android/libs/${ANDROID_ABI}/libssl${suffix_libssl}.so"
+  COMMAND ${CMAKE_COMMAND} -E copy "${OPENSSL_DIR}/libcrypto${suffix_libssl}" "${CMAKE_BINARY_DIR}/android/libs/${ANDROID_ABI}/libcrypto${suffix_libssl}"
+  COMMAND ${CMAKE_COMMAND} -E copy "${OPENSSL_DIR}/libssl${suffix_libssl}" "${CMAKE_BINARY_DIR}/android/libs/${ANDROID_ABI}/libssl${suffix_libssl}"
   )
-endif()
 
 #
 add_custom_command(
