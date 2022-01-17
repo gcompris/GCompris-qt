@@ -74,7 +74,7 @@ cd ${builddir}
 
 f_cmake arm ON OFF
 make -j 4
-make apk_release && make apk_aligned && make apk_aligned_signed
+make apk_aligned_signed
 
 # Remove extra apk
 rm -f android/bin/*release-armeabi*

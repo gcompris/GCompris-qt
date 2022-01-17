@@ -92,7 +92,7 @@ f_cmake arm OFF OFF $download_assets
 make
 make BuildTranslations
 make getAssets
-make apk_release && make apk_aligned && make apk_aligned_signed
+make apk_aligned_signed
 
 # Remove extra apk
 rm -f android/*release-arm*

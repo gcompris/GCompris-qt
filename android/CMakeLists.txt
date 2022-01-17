@@ -82,9 +82,6 @@ foreach(PoSource ${TRANSLATIONS_FILES})
   list(APPEND ALL_LOCALES ${locale})
 endforeach()
 
-find_program(ZIP_ALIGN NAMES zipalign PATHS ${ANDROID_SDK_ROOT}/build-tools/${ANDROID_SDK_BUILD_TOOLS_REVISION}/)
-find_program(APK_SIGNER NAMES apksigner PATHS ${ANDROID_SDK_ROOT}/build-tools/${ANDROID_SDK_BUILD_TOOLS_REVISION}/)
-
 add_custom_command(
   OUTPUT createApkFromAndroidDeployQtDebug
   DEPENDS ${PACKAGE_SOURCE_ANDROID}/AndroidManifest.xml
@@ -102,17 +99,11 @@ add_custom_command(
 )
 
 add_custom_command(
-  OUTPUT createApkAlignedFromAndroidDeployQtRelease
-  DEPENDS ${CMAKE_CURRENT_BINARY_DIR}/GCompris-Android-release-${ANDROID_ABI}${APK_SUFFIX}${GCOMPRIS_VERSION}.apk
-  COMMAND ${ZIP_ALIGN} -f -v 4 ${CMAKE_CURRENT_BINARY_DIR}/GCompris-Android-release-${ANDROID_ABI}${APK_SUFFIX}${GCOMPRIS_VERSION}.apk ${CMAKE_CURRENT_BINARY_DIR}/GCompris-Android-release-aligned-${ANDROID_ABI}${APK_SUFFIX}${GCOMPRIS_VERSION}.apk
-)
-
-add_custom_command(
   OUTPUT createApkSignedAlignedFromAndroidDeployQtRelease
-  DEPENDS ${CMAKE_CURRENT_BINARY_DIR}/GCompris-Android-release-aligned-${ANDROID_ABI}${APK_SUFFIX}${GCOMPRIS_VERSION}.apk
-  COMMAND ${CMAKE_COMMAND} -E remove ${CMAKE_CURRENT_BINARY_DIR}/GCompris-Android-release-signed-aligned-${ANDROID_ABI}${APK_SUFFIX}${GCOMPRIS_VERSION}.apk
-  COMMAND ${CMAKE_COMMAND} -E copy ${CMAKE_CURRENT_BINARY_DIR}/GCompris-Android-release-aligned-${ANDROID_ABI}${APK_SUFFIX}${GCOMPRIS_VERSION}.apk ${CMAKE_CURRENT_BINARY_DIR}/GCompris-Android-release-signed-aligned-${ANDROID_ABI}${APK_SUFFIX}${GCOMPRIS_VERSION}.apk
-  COMMAND ${APK_SIGNER} sign --ks $ENV{ANDROID_KEYSTORE} --ks-pass pass:$ENV{ANDROID_KEYSTORE_PASSWD} --v1-signing-enabled true --v2-signing-enabled true ${CMAKE_CURRENT_BINARY_DIR}/GCompris-Android-release-signed-aligned-${ANDROID_ABI}${APK_SUFFIX}${GCOMPRIS_VERSION}.apk
+  DEPENDS ${PACKAGE_SOURCE_ANDROID}/AndroidManifest.xml
+  COMMAND ${CMAKE_COMMAND} -E copy_directory ${CMAKE_CURRENT_SOURCE_DIR} ${PACKAGE_SOURCE_ANDROID}
+  COMMAND ${ANDROID_DEPLOY_QT} --output ${CMAKE_CURRENT_BINARY_DIR}/ --input ${PACKAGE_SOURCE_ANDROID}/configAndroid.json --gradle --sign $ENV{ANDROID_KEYSTORE} gcompris --storepass $ENV{ANDROID_KEYSTORE_PASSWD}
+    COMMAND ${CMAKE_COMMAND} -E rename ${CMAKE_CURRENT_BINARY_DIR}/build/outputs/apk/release/android-release-signed.apk ${CMAKE_CURRENT_BINARY_DIR}/GCompris-Android-release-signed-aligned-${ANDROID_ABI}${APK_SUFFIX}${GCOMPRIS_VERSION}.apk
 )
 
 add_custom_command(
@@ -129,11 +120,6 @@ add_custom_target(apk_debug
 # Command to create apk from Makefile
 add_custom_target(apk_release
   DEPENDS ${ALL_LOCALES} move_translations_to_assets package_openssl createApkFromAndroidDeployQtRelease java_src
-)
-
-# Command to create aligned apk from Makefile
-add_custom_target(apk_aligned
-  DEPENDS ${ALL_LOCALES} move_translations_to_assets package_openssl createApkAlignedFromAndroidDeployQtRelease java_src
 )
 
 # Command to create aligned signed apk from Makefile
