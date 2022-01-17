@@ -31,7 +31,6 @@ import java.util.Locale;
 public class GComprisActivity extends QtActivity
 {
     private static GComprisActivity m_instance;
-    public static final String SKU_NAME = "full";
 
     public GComprisActivity()
     {

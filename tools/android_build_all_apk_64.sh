@@ -79,7 +79,7 @@ cd ${builddir}
 f_cmake arm64 ON OFF
 make -j 4
 make BuildTranslations
-make apk_release && make apk_aligned && make apk_aligned_signed
+make apk_aligned_signed
 
 
 # Remove extra apk
