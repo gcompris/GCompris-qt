@@ -50,7 +50,7 @@ if("${CMAKE_CXX_COMPILER_ID}" STREQUAL "Clang")
 endif()
 
 set(ANDROID_TOOLCHAIN arm-linux-androideabi)
-if("${ANDROID_ARCHITECTURE}" STREQUAL "arm64")
+if("${CMAKE_ANDROID_ARCH}" STREQUAL "arm64")
   set(ANDROID_TOOLCHAIN aarch64-linux-android)
 endif()
 
@@ -149,7 +149,7 @@ ExternalProject_Add(
   BUILD_IN_SOURCE 1
   CONFIGURE_COMMAND
   ${CMAKE_COMMAND} -E env PATH=${ANDROID_NDK}/toolchains/llvm/prebuilt/linux-x86_64/bin:$ENV{PATH}
-  ./Configure --prefix=${CMAKE_CURRENT_BINARY_DIR} --openssldir=./ssl android-${ANDROID_ARCHITECTURE} shared -D__ANDROID_API__=${CMAKE_ANDROID_API}
+  ./Configure --prefix=${CMAKE_CURRENT_BINARY_DIR} --openssldir=./ssl android-${CMAKE_ANDROID_ARCH} shared -D__ANDROID_API__=${CMAKE_ANDROID_API}
   BUILD_COMMAND
   ${CMAKE_COMMAND} -E env PATH=${ANDROID_NDK}/toolchains/llvm/prebuilt/linux-x86_64/bin:$ENV{PATH}
   make SHLIB_VERSION_NUMBER= SHLIB_EXT=${suffix_libssl} build_libs

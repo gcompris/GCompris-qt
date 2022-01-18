@@ -11,9 +11,6 @@
 
 Qt5_BaseDIR=~/Qt/5.12.6
 export ANDROID_NDK_ROOT=$ANDROID_NDK
-export ANDROID_ARCH=arm64
-export ANDROID_ARCH_ABI=arm64-v8a
-export Qt5_android=${Qt5_BaseDIR}/${QtTarget}/
 
 # The current version
 version=$(sed -n -e 's/set(GCOMPRIS_MINOR_VERSION \([0-9]\+\)).*/\1/p' CMakeLists.txt)
@@ -28,7 +25,7 @@ then
     exit 1
 fi
 
-# Param: ANDROID_ARCHITECTURE DOWNLOAD KIOSK_MODE
+# Param: ANDROID_ABI DOWNLOAD KIOSK_MODE
 f_cmake()
 {
     if [ $# != 3 ]
@@ -48,20 +45,10 @@ f_cmake()
 
     cmake -DCMAKE_TOOLCHAIN_FILE=/usr/share/ECM/toolchain/Android.cmake \
 	  -DCMAKE_ANDROID_API=21 \
-	  -DCMAKE_BUILD_TYPE=release \
-	  -DANDROID_ARCHITECTURE=$1 \
+	  -DCMAKE_BUILD_TYPE=Release \
+	  -DANDROID_ABI=$1 \
+	  -DCMAKE_FIND_ROOT_PATH=${Qt5_BaseDIR}/${QtTarget}/lib/ \
 	  -DQt5_DIR=${Qt5_BaseDIR}/${QtTarget}/lib/cmake/Qt5 \
-	  -DQt5Qml_DIR=${Qt5_BaseDIR}/${QtTarget}/lib/cmake/Qt5Qml \
-	  -DQt5Network_DIR=${Qt5_BaseDIR}/${QtTarget}/lib/cmake/Qt5Network \
-	  -DQt5Core_DIR=${Qt5_BaseDIR}/${QtTarget}/lib/cmake/Qt5Core \
-	  -DQt5Quick_DIR=${Qt5_BaseDIR}/${QtTarget}/lib/cmake/Qt5Quick \
-	  -DQt5Gui_DIR=${Qt5_BaseDIR}/${QtTarget}/lib/cmake/Qt5Gui \
-	  -DQt5Multimedia_DIR=${Qt5_BaseDIR}/${QtTarget}/lib/cmake/Qt5Multimedia \
-	  -DQt5Svg_DIR=${Qt5_BaseDIR}/${QtTarget}/lib/cmake/Qt5Svg \
-	  -DQt5Widgets_DIR=${Qt5_BaseDIR}/${QtTarget}/lib/cmake/Qt5Widgets \
-	  -DQt5LinguistTools_DIR=${Qt5_BaseDIR}/${QtTarget}/lib/cmake/Qt5LinguistTools \
-	  -DQt5Sensors_DIR=${Qt5_BaseDIR}/${QtTarget}/lib/cmake/Qt5Sensors \
-	  -DQt5AndroidExtras_DIR=${Qt5_BaseDIR}/${QtTarget}/lib/cmake/Qt5AndroidExtras \
 	  -Wno-dev \
 	  -DQML_BOX2D_MODULE=submodule \
 	  -DWITH_DOWNLOAD=$2 \
@@ -76,7 +63,7 @@ builddir=${buildprefix}-${QtTarget}
 mkdir -p ${builddir}
 cd ${builddir}
 
-f_cmake arm64 ON OFF
+f_cmake arm64-v8a ON OFF
 make -j 4
 make BuildTranslations
 make apk_aligned_signed
