@@ -37,7 +37,7 @@ then
 fi
 download_assets=$1
 
-# Param: ANDROID_ARCHITECTURE DOWNLOAD KIOSK_MODE DOWNLOAD_ASSETS
+# Param: ANDROID_ABI DOWNLOAD KIOSK_MODE DOWNLOAD_ASSETS
 # DOWNLOAD_ASSETS: list of assets to bundle in the apk
 #  e.g: words,en,fr,music # This packages the large words rcc, the french and english voices, and the music
 f_cmake()
@@ -58,20 +58,10 @@ f_cmake()
     fi
 
     cmake -DCMAKE_TOOLCHAIN_FILE=~/ecm/share/ECM/toolchain/Android.cmake \
-	  -DCMAKE_BUILD_TYPE=release \
-	  -DANDROID_ARCHITECTURE=$1 \
+	  -DCMAKE_BUILD_TYPE=Release \
+	  -DANDROID_ABI=$1 \
+	  -DCMAKE_FIND_ROOT_PATH=${Qt5_BaseDIR}/${QtTarget}/lib/ \
 	  -DQt5_DIR=${Qt5_BaseDIR}/${QtTarget}/lib/cmake/Qt5 \
-	  -DQt5Qml_DIR=${Qt5_BaseDIR}/${QtTarget}/lib/cmake/Qt5Qml \
-	  -DQt5Network_DIR=${Qt5_BaseDIR}/${QtTarget}/lib/cmake/Qt5Network \
-	  -DQt5Core_DIR=${Qt5_BaseDIR}/${QtTarget}/lib/cmake/Qt5Core \
-	  -DQt5Quick_DIR=${Qt5_BaseDIR}/${QtTarget}/lib/cmake/Qt5Quick \
-	  -DQt5Gui_DIR=${Qt5_BaseDIR}/${QtTarget}/lib/cmake/Qt5Gui \
-	  -DQt5Multimedia_DIR=${Qt5_BaseDIR}/${QtTarget}/lib/cmake/Qt5Multimedia \
-	  -DQt5Svg_DIR=${Qt5_BaseDIR}/${QtTarget}/lib/cmake/Qt5Svg \
-	  -DQt5Widgets_DIR=${Qt5_BaseDIR}/${QtTarget}/lib/cmake/Qt5Widgets \
-	  -DQt5LinguistTools_DIR=${Qt5_BaseDIR}/${QtTarget}/lib/cmake/Qt5LinguistTools \
-	  -DQt5Sensors_DIR=${Qt5_BaseDIR}/${QtTarget}/lib/cmake/Qt5Sensors \
-	  -DQt5AndroidExtras_DIR=${Qt5_BaseDIR}/${QtTarget}/lib/cmake/Qt5AndroidExtras \
 	  -Wno-dev \
 	  -DQML_BOX2D_MODULE=submodule \
 	  -DWITH_DOWNLOAD=$2 \
@@ -88,7 +78,7 @@ mkdir -p ${builddir}
 cd ${builddir}
 
 
-f_cmake arm OFF OFF $download_assets
+f_cmake armeabi-v7a OFF OFF $download_assets
 make
 make BuildTranslations
 make getAssets
