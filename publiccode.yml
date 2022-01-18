@@ -5,8 +5,8 @@
 publiccodeYmlVersion: '0.2'
 name: GCompris
 url: 'https://invent.kde.org/education/gcompris.git'
-releaseDate: '2021-12-17'
-softwareVersion: '2.0'
+releaseDate: '2022-01-21'
+softwareVersion: '2.1'
 developmentStatus: stable
 logo: images/sc-apps-gcompris-qt.svg
 landingURL: 'https://www.gcompris.net/'
@@ -40,6 +40,7 @@ localisation:
     - be_BY
     - ca_ES
     - ca-valencia
+    - cs_CZ
     - de_DE
     - el_GR
     - es_ES
