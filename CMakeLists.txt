@@ -119,9 +119,12 @@ if((UNIX AND NOT APPLE AND NOT SAILFISHOS AND NOT ANDROID) OR WIN32)
     find_package(OpenSSL REQUIRED)
 endif()
 
-find_package(KF5 QUIET COMPONENTS
-    DocTools
-)
+
+option(COMPILE_DOC "Enable compilation of GCompris docbook" OFF)
+if(COMPILE_DOC)
+  find_package(KF5 QUIET COMPONENTS DocTools)
+endif()
+
 if(ECM_FOUND)
     include(KDEInstallDirs)
 
