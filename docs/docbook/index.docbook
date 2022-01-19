@@ -40,12 +40,12 @@
 Don't forget to include this last date.
 Please respect the format of the date (YYYY-MM-DD),it is used by scripts.
 -->
-<date>2020-08-30</date>
+<date>2022-01-21</date>
 
 <!--version information of the application and kde this documentation is valid for.
 for example 'xx.yy.zz'
 -->
-<releaseinfo>0.97</releaseinfo>
+<releaseinfo>2.1</releaseinfo>
 
 <!-- Abstract about this handbook -->
 
@@ -338,7 +338,7 @@ or make it show real car images instead of filled rectangles (traffic).</para>
 &gcompris;
 </para>
 <para>
-Program copyright 2000-2020 Timothée Giet and others
+Program copyright 2000-2022 Timothée Giet and others
 </para>
 
 <!-- TRANS:CREDIT_FOR_TRANSLATORS -->
