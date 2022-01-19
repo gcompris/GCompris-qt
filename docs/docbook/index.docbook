@@ -318,13 +318,13 @@ or make it show real car images instead of filled rectangles (traffic).</para>
 <sect2 id="windows-example">
 <title>&Windows; Example</title>
 <para>You can add these switches in the desktop icon properties. Here is an example that runs &gcompris; in kiosk mode in full screen, without Configuration button and cursor:</para>
-<para><userinput><command>"C:\Program Files\Gcompris\gcompris-qt.exe" --disable-kiosk -f -C</command></userinput></para>
+<para><userinput><command>"C:\Program Files\Gcompris\gcompris-qt.exe" --enable-kioskmode -f -C</command></userinput></para>
 </sect2>
 
 <sect2 id="gnu-linux-example">
 <title>&GNU;/&Linux; Example</title>
 <para>Create an application launcher and configure the command line parameters. Here is an example that runs &gcompris; in kiosk mode in full screen, without Config button and cursor:</para> 
-<para><userinput><command>gcompris-qt --disable-kiosk -f -C</command></userinput></para>
+<para><userinput><command>gcompris-qt --enable-kioskmode -f -C</command></userinput></para>
 </sect2>
 
 </sect1>
