@@ -186,7 +186,7 @@ if(BUILD_STANDALONE)
       MACOSX_BUNDLE_BUNDLE_NAME "gcompris-qt"
       MACOSX_BUNDLE_SHORT_VERSION_STRING "${GCOMPRIS_VERSION}"
       MACOSX_BUNDLE_BUNDLE_VERSION "${GCOMPRIS_VERSION}"
-      MACOSX_BUNDLE_COPYRIGHT "AGPL-3.0 License, SPDX-FileCopyrightText: 2000-2021 Timothee Giet and Others.")
+      MACOSX_BUNDLE_COPYRIGHT "AGPL-3.0 License, SPDX-FileCopyrightText: 2000-2022 Timothee Giet and Others.")
     set_source_files_properties(${GCOMPRIS_RESOURCES}/${gcompris_icon} PROPERTIES MACOSX_PACKAGE_LOCATION "Resources")
   else()
     set(_qtconf_destdir bin)
