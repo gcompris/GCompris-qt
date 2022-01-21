@@ -85,6 +85,10 @@ endif()
 
 set(used_qt_modules Qt5::Qml Qt5::Quick Qt5::Gui Qt5::Multimedia Qt5::Core Qt5::Svg Qt5::Sensors)
 
+if(Qt5Widgets_VERSION_STRING VERSION_GREATER_EQUAL "5.15.0") 
+  set(used_qt_modules ${used_qt_modules} Qt5::QmlWorkerScript Qt5::QuickParticles)
+endif()
+
 if(ANDROID)
   add_library(${GCOMPRIS_EXECUTABLE_NAME} SHARED ${gcompris_SRCS})
   set(used_qt_modules ${used_qt_modules} Qt5::AndroidExtras)

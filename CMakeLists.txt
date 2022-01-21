@@ -102,6 +102,10 @@ endif()
 find_package(Qt5 ${QT_REQUIRED_VERSION} REQUIRED
     Qml Quick Gui Multimedia Core Svg LinguistTools Sensors)
 
+if(Qt5Widgets_VERSION_STRING VERSION_GREATER_EQUAL "5.15.0")
+  find_package(Qt5 ${QT_REQUIRED_VERSION} REQUIRED QmlWorkerScript QuickParticles)
+endif()
+
 if(ANDROID)
     find_package(Qt5 ${QT_REQUIRED_VERSION} REQUIRED AndroidExtras)
 endif()
