@@ -140,6 +140,9 @@ set(suffix_libssl ".so")
 if(Qt5Core_VERSION VERSION_GREATER_EQUAL "5.12.5" AND NOT Qt5Core_VERSION MATCHES "5.13.0")
   set(suffix_libssl "_1_1.so")
 endif()
+
+find_program(LLVM_STRIP NAMES llvm-strip)
+
 ExternalProject_Add(
   ext_openssl
   DOWNLOAD_DIR ${CMAKE_BINARY_DIR}
@@ -152,7 +155,9 @@ ExternalProject_Add(
   ./Configure --prefix=${CMAKE_CURRENT_BINARY_DIR} --openssldir=./ssl android-${CMAKE_ANDROID_ARCH} shared -D__ANDROID_API__=${CMAKE_ANDROID_API}
   BUILD_COMMAND
   ${CMAKE_COMMAND} -E env PATH=${ANDROID_NDK}/toolchains/llvm/prebuilt/linux-x86_64/bin:$ENV{PATH}
-  make SHLIB_VERSION_NUMBER= SHLIB_EXT=${suffix_libssl} build_libs
+  make SHLIB_VERSION_NUMBER= SHLIB_EXT=${suffix_libssl} build_libs &&
+  ${LLVM_STRIP} --strip-all libcrypto${suffix_libssl} &&
+  ${LLVM_STRIP} --strip-all libcrypto${suffix_libssl}
   INSTALL_COMMAND ""
   )
 add_custom_command(
