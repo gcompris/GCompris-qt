@@ -123,7 +123,7 @@ ActivityBase {
             property alias file: file
             property int ballSize: cellSize - 2*wallSize
             property alias mapWrapper: mapWrapper
-            property int cellSize: mapWrapper.length / Math.min(mapWrapper.rows, mapWrapper.columns)
+            property int cellSize: (mapWrapper.rows == 0 || mapWrapper.columns == 0) ? 5 : mapWrapper.length / Math.min(mapWrapper.rows, mapWrapper.columns)
             property int wallSize: cellSize / 5
             property var world: physicsWorld
             property alias keyboardTimer: keyboardTimer
