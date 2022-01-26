@@ -123,7 +123,7 @@ ActivityBase {
             property alias file: file
             property int ballSize: cellSize - 2*wallSize
             property alias mapWrapper: mapWrapper
-            property int cellSize: (mapWrapper.rows == 0 || mapWrapper.columns == 0) ? 5 : mapWrapper.length / Math.min(mapWrapper.rows, mapWrapper.columns)
+            property int cellSize: mapWrapper.length / Math.min(mapWrapper.rows, mapWrapper.columns)
             property int wallSize: cellSize / 5
             property var world: physicsWorld
             property alias keyboardTimer: keyboardTimer
@@ -167,8 +167,8 @@ ActivityBase {
 
             property double margin: 20
             property int barHeight: ApplicationSettings.isBarHidden ? 0 : bar.height
-            property int columns: 0
-            property int rows: 0
+            property int columns: 1
+            property int rows: 1
             property double length: Math.min(background.height -
                     mapWrapper.barHeight - 2 * mapWrapper.margin, background.width - 2 * mapWrapper.margin);
 
