@@ -113,17 +113,17 @@ add_custom_command(
 
 # Command to create apk from Makefile
 add_custom_target(apk_debug
-  DEPENDS ${ALL_LOCALES} move_translations_to_assets package_openssl createApkFromAndroidDeployQtDebug java_src
+  DEPENDS ${ALL_LOCALES} move_translations_to_assets createApkFromAndroidDeployQtDebug java_src
 )
 
 # Command to create apk from Makefile
 add_custom_target(apk_release
-  DEPENDS ${ALL_LOCALES} move_translations_to_assets package_openssl createApkFromAndroidDeployQtRelease java_src
+  DEPENDS ${ALL_LOCALES} move_translations_to_assets createApkFromAndroidDeployQtRelease java_src
 )
 
 # Command to create aligned signed apk from Makefile
 add_custom_target(apk_aligned_signed
-  DEPENDS ${ALL_LOCALES} move_translations_to_assets package_openssl createApkSignedAlignedFromAndroidDeployQtRelease java_src
+  DEPENDS ${ALL_LOCALES} move_translations_to_assets createApkSignedAlignedFromAndroidDeployQtRelease java_src
 )
 
 # Command to install the signed aligned apk through adb from Makefile
@@ -158,12 +158,9 @@ ExternalProject_Add(
   make SHLIB_VERSION_NUMBER= SHLIB_EXT=${suffix_libssl} build_libs &&
   ${LLVM_STRIP} --strip-all libcrypto${suffix_libssl} &&
   ${LLVM_STRIP} --strip-all libcrypto${suffix_libssl}
-  INSTALL_COMMAND ""
-  )
-add_custom_command(
-  OUTPUT package_openssl
-  COMMAND ${CMAKE_COMMAND} -E copy "${OPENSSL_DIR}/libcrypto${suffix_libssl}" "${CMAKE_BINARY_DIR}/android/libs/${ANDROID_ABI}/libcrypto${suffix_libssl}"
-  COMMAND ${CMAKE_COMMAND} -E copy "${OPENSSL_DIR}/libssl${suffix_libssl}" "${CMAKE_BINARY_DIR}/android/libs/${ANDROID_ABI}/libssl${suffix_libssl}"
+  INSTALL_COMMAND
+  ${CMAKE_COMMAND} -E copy "${OPENSSL_DIR}/libcrypto${suffix_libssl}" "${CMAKE_LIBRARY_OUTPUT_DIRECTORY}/" &&
+  ${CMAKE_COMMAND} -E copy "${OPENSSL_DIR}/libssl${suffix_libssl}" "${CMAKE_LIBRARY_OUTPUT_DIRECTORY}/"
   )
 
 #
