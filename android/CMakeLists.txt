@@ -56,11 +56,10 @@ endif()
 
 # set android package source for androiddeployqt json file
 set(PACKAGE_SOURCE_ANDROID ${CMAKE_BINARY_DIR}/tmpAndroid)
-configure_file(${CMAKE_CURRENT_SOURCE_DIR}/AndroidManifest.xml.cmake ${PACKAGE_SOURCE_ANDROID}/AndroidManifest.xml @ONLY)
-
-# create json file parsed by the androiddeployqt
 set(ANDROID_SDK_ROOT $ENV{ANDROID_SDK_ROOT})
-configure_file(${CMAKE_CURRENT_SOURCE_DIR}/configAndroid.json.cmake ${PACKAGE_SOURCE_ANDROID}/configAndroid.json @ONLY)
+
+configure_file(${CMAKE_CURRENT_SOURCE_DIR}/AndroidManifest_5.12.xml.cmake ${PACKAGE_SOURCE_ANDROID}/AndroidManifest.xml @ONLY)
+configure_file(${CMAKE_CURRENT_SOURCE_DIR}/configAndroid_5.12.json.cmake ${PACKAGE_SOURCE_ANDROID}/configAndroid.json @ONLY)
 
 # Get all po files in po/ to create the values-{locale} in order to have the locales available in android
 file(GLOB TRANSLATIONS_FILES RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} "../po/*.po")
