@@ -10,11 +10,11 @@ list(APPEND JAVA_SRCS "src/net/gcompris/GComprisActivity.java")
 
 foreach(JavaSource ${JAVA_SRCS})
   add_custom_command(
-    OUTPUT ${CMAKE_CURRENT_BINARY_DIR}/${JavaSource}
-    COMMAND ${CMAKE_COMMAND} -E copy ${CMAKE_CURRENT_SOURCE_DIR}/${JavaSource} ${CMAKE_CURRENT_BINARY_DIR}/${JavaSource}
+    OUTPUT ${CMAKE_BINARY_DIR}/android-build/${JavaSource}
+    COMMAND ${CMAKE_COMMAND} -E copy ${CMAKE_CURRENT_SOURCE_DIR}/${JavaSource} ${CMAKE_BINARY_DIR}/android-build/${JavaSource}
     DEPENDS ${CMAKE_CURRENT_SOURCE_DIR}/${JavaSource}
     )
-  list(APPEND TARGET_JAVA_FILES ${CMAKE_CURRENT_BINARY_DIR}/${JavaSource})
+  list(APPEND TARGET_JAVA_FILES ${CMAKE_BINARY_DIR}/android-build/${JavaSource})
 endforeach()
 
 add_custom_target(java_src DEPENDS ${TARGET_JAVA_FILES})
@@ -75,8 +75,8 @@ foreach(PoSource ${TRANSLATIONS_FILES})
   add_custom_command(
     OUTPUT ${locale}
     COMMAND cmake -E make_directory ${GCOMPRIS_TRANSLATIONS_DIR}
-    COMMAND cmake -E make_directory ${CMAKE_BINARY_DIR}/android/res/values-${locale}
-    COMMAND cmake -E copy ${CMAKE_SOURCE_DIR}/android/strings.xml ${CMAKE_BINARY_DIR}/android/res/values-${locale}/strings.xml
+    COMMAND cmake -E make_directory ${CMAKE_BINARY_DIR}/android-build/res/values-${locale}
+    COMMAND cmake -E copy ${CMAKE_SOURCE_DIR}/android/strings.xml ${CMAKE_BINARY_DIR}/android-build/res/values-${locale}/strings.xml
     )
   list(APPEND ALL_LOCALES ${locale})
 endforeach()
@@ -85,30 +85,30 @@ add_custom_command(
   OUTPUT createApkFromAndroidDeployQtDebug
   DEPENDS ${PACKAGE_SOURCE_ANDROID}/AndroidManifest.xml
   COMMAND ${CMAKE_COMMAND} -E copy_directory ${CMAKE_CURRENT_SOURCE_DIR} ${PACKAGE_SOURCE_ANDROID}
-  COMMAND ${ANDROID_DEPLOY_QT} --output ${CMAKE_CURRENT_BINARY_DIR}/ --input ${PACKAGE_SOURCE_ANDROID}/configAndroid.json --debug --gradle
-  COMMAND ${CMAKE_COMMAND} -E rename ${CMAKE_CURRENT_BINARY_DIR}/build/outputs/apk/debug/android-debug.apk ${CMAKE_CURRENT_BINARY_DIR}/GCompris-Android-debug-${ANDROID_ABI}${APK_SUFFIX}${GCOMPRIS_VERSION}.apk
+  COMMAND ${ANDROID_DEPLOY_QT} --output ${CMAKE_BINARY_DIR}/android-build/ --input ${PACKAGE_SOURCE_ANDROID}/configAndroid.json --debug --gradle
+  COMMAND ${CMAKE_COMMAND} -E rename ${CMAKE_BINARY_DIR}/android-build/build/outputs/apk/debug/android-build-debug.apk ${CMAKE_BINARY_DIR}/android-build/GCompris-Android-debug-${ANDROID_ABI}${APK_SUFFIX}${GCOMPRIS_VERSION}.apk
 )
 
 add_custom_command(
   OUTPUT createApkFromAndroidDeployQtRelease
   DEPENDS ${PACKAGE_SOURCE_ANDROID}/AndroidManifest.xml
   COMMAND ${CMAKE_COMMAND} -E copy_directory ${CMAKE_CURRENT_SOURCE_DIR} ${PACKAGE_SOURCE_ANDROID}
-  COMMAND ${ANDROID_DEPLOY_QT} --output ${CMAKE_CURRENT_BINARY_DIR}/ --input ${PACKAGE_SOURCE_ANDROID}/configAndroid.json --release --gradle
-  COMMAND ${CMAKE_COMMAND} -E rename ${CMAKE_CURRENT_BINARY_DIR}/build/outputs/apk/release/android-release-unsigned.apk ${CMAKE_CURRENT_BINARY_DIR}/GCompris-Android-release-${ANDROID_ABI}${APK_SUFFIX}${GCOMPRIS_VERSION}.apk
+  COMMAND ${ANDROID_DEPLOY_QT} --output ${CMAKE_BINARY_DIR}/android-build/ --input ${PACKAGE_SOURCE_ANDROID}/configAndroid.json --release --gradle
+  COMMAND ${CMAKE_COMMAND} -E rename ${CMAKE_BINARY_DIR}/android-build/build/outputs/apk/release/android-build-release-unsigned.apk ${CMAKE_BINARY_DIR}/android-build/GCompris-Android-release-${ANDROID_ABI}${APK_SUFFIX}${GCOMPRIS_VERSION}.apk
 )
 
 add_custom_command(
   OUTPUT createApkSignedAlignedFromAndroidDeployQtRelease
   DEPENDS ${PACKAGE_SOURCE_ANDROID}/AndroidManifest.xml
   COMMAND ${CMAKE_COMMAND} -E copy_directory ${CMAKE_CURRENT_SOURCE_DIR} ${PACKAGE_SOURCE_ANDROID}
-  COMMAND ${ANDROID_DEPLOY_QT} --output ${CMAKE_CURRENT_BINARY_DIR}/ --input ${PACKAGE_SOURCE_ANDROID}/configAndroid.json --gradle --sign $ENV{ANDROID_KEYSTORE} gcompris --storepass $ENV{ANDROID_KEYSTORE_PASSWD}
-    COMMAND ${CMAKE_COMMAND} -E rename ${CMAKE_CURRENT_BINARY_DIR}/build/outputs/apk/release/android-release-signed.apk ${CMAKE_CURRENT_BINARY_DIR}/GCompris-Android-release-signed-aligned-${ANDROID_ABI}${APK_SUFFIX}${GCOMPRIS_VERSION}.apk
+  COMMAND ${ANDROID_DEPLOY_QT} --output ${CMAKE_BINARY_DIR}/android-build/ --input ${PACKAGE_SOURCE_ANDROID}/configAndroid.json --gradle --sign $ENV{ANDROID_KEYSTORE} gcompris --storepass $ENV{ANDROID_KEYSTORE_PASSWD}
+    COMMAND ${CMAKE_COMMAND} -E rename ${CMAKE_BINARY_DIR}/android-build/build/outputs/apk/release/android-build-release-signed.apk ${CMAKE_BINARY_DIR}/android-build/GCompris-Android-release-signed-aligned-${ANDROID_ABI}${APK_SUFFIX}${GCOMPRIS_VERSION}.apk
 )
 
 add_custom_command(
   OUTPUT apkInstall
-  DEPENDS ${CMAKE_CURRENT_BINARY_DIR}/GCompris-Android-release-signed-aligned-${ANDROID_ABI}${APK_SUFFIX}${GCOMPRIS_VERSION}.apk
-  COMMAND ${ANDROID_SDK_ROOT}/platform-tools/adb install -r ${CMAKE_CURRENT_BINARY_DIR}/GCompris-Android-release-signed-aligned-${ANDROID_ABI}${APK_SUFFIX}${GCOMPRIS_VERSION}.apk
+  DEPENDS ${CMAKE_BINARY_DIR}/android-build/GCompris-Android-release-signed-aligned-${ANDROID_ABI}${APK_SUFFIX}${GCOMPRIS_VERSION}.apk
+  COMMAND ${ANDROID_SDK_ROOT}/platform-tools/adb install -r ${CMAKE_BINARY_DIR}/android-build/GCompris-Android-release-signed-aligned-${ANDROID_ABI}${APK_SUFFIX}${GCOMPRIS_VERSION}.apk
 )
 
 # Command to create apk from Makefile
@@ -152,7 +152,7 @@ ExternalProject_Add(
   BUILD_IN_SOURCE 1
   CONFIGURE_COMMAND
   ${CMAKE_COMMAND} -E env PATH=${ANDROID_NDK}/toolchains/llvm/prebuilt/linux-x86_64/bin:$ENV{PATH}
-  ./Configure --prefix=${CMAKE_CURRENT_BINARY_DIR} --openssldir=./ssl android-${CMAKE_ANDROID_ARCH} shared -D__ANDROID_API__=${CMAKE_ANDROID_API}
+  ./Configure --prefix=${CMAKE_BINARY_DIR}/android-build --openssldir=./ssl android-${CMAKE_ANDROID_ARCH} shared -D__ANDROID_API__=${CMAKE_ANDROID_API}
   BUILD_COMMAND
   ${CMAKE_COMMAND} -E env PATH=${ANDROID_NDK}/toolchains/llvm/prebuilt/linux-x86_64/bin:$ENV{PATH}
   make SHLIB_VERSION_NUMBER= SHLIB_EXT=${suffix_libssl} build_libs &&
@@ -166,7 +166,7 @@ ExternalProject_Add(
 #
 add_custom_command(
   OUTPUT move_translations_to_assets
-  COMMAND ${CMAKE_COMMAND} -E copy_directory ${GCOMPRIS_TRANSLATIONS_DIR} ${CMAKE_BINARY_DIR}/android/assets/share/GCompris
+  COMMAND ${CMAKE_COMMAND} -E copy_directory ${GCOMPRIS_TRANSLATIONS_DIR} ${CMAKE_BINARY_DIR}/android-build/assets/share/GCompris
   )
 
 if(TARGET create-apk)
