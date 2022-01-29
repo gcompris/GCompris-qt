@@ -12,6 +12,11 @@
 Qt5_BaseDIR=~/Qt/5.12.6
 export ANDROID_NDK_ROOT=$ANDROID_NDK
 
+if [ "$#" -eq 1 ]; then
+    Qt5_BaseDIR=$1
+    echo "Overriding Qt5_BaseDIR to ${Qt5_BaseDIR}"
+fi
+
 # The current version
 version=$(sed -n -e 's/set(GCOMPRIS_MINOR_VERSION \([0-9]\+\)).*/\1/p' CMakeLists.txt)
 
@@ -53,6 +58,7 @@ f_cmake()
 	  -DQML_BOX2D_MODULE=submodule \
 	  -DWITH_DOWNLOAD=$2 \
 	  -DWITH_KIOSK_MODE=$3 \
+	  ${cmake_extra_args} \
 	  ..
 
 }
@@ -63,10 +69,27 @@ builddir=${buildprefix}-${QtTarget}
 mkdir -p ${builddir}
 cd ${builddir}
 
+# Retrieve the Qt version
+if [[ $Qt5_BaseDIR =~ [0-9]+\.[0-9]+\.[0-9]+ ]]; then
+    version=${BASH_REMATCH[0]}
+fi
+n=${version//[!0-9]/ }
+a=(${n//\./ })
+major=${a[0]}
+minor=${a[1]}
+patch=${a[2]}
+
+# If we use Qt > 5.14, we need to update some variables
+if [[ $minor -ge 14 ]]; then
+    echo "Using Qt5.14 or more";
+    cmake_extra_args="-DANDROID_BUILD_ABI_armeabi-v7a=ON"
+    QtTarget=android
+fi
+
 f_cmake armeabi-v7a ON OFF
 make -j 4
 make apk_aligned_signed
 
 # Remove extra apk
-rm -f android/bin/*release-armeabi*
-rm -f android/bin/*release-signed-armeabi*
+rm -f android-build/bin/*release-armeabi*
+rm -f android-build/bin/*release-signed-armeabi*
