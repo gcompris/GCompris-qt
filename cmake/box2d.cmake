@@ -84,16 +84,16 @@ if(NOT ${QML_BOX2D_MODULE} STREQUAL "disabled")
     # In case Ninja is set as generator, use make on Linux, nmake on Windows
     if(${CMAKE_GENERATOR} MATCHES "Ninja")
       if(WIN32)
-        set(QMAKE_MAKE_PROGRAM "nmake")
+        set(BOX2D_MAKE_PROGRAM "nmake")
       else()
-        set(QMAKE_MAKE_PROGRAM "make")
+        set(BOX2D_MAKE_PROGRAM "make")
       endif()
     endif()
     ExternalProject_Add(qml_box2d
       DOWNLOAD_COMMAND ""
       SOURCE_DIR ${_box2d_source_dir}
       CONFIGURE_COMMAND ${_qmake_program} ${_qmake_options} ${_box2d_source_dir}/box2d.pro
-      BUILD_COMMAND ${QMAKE_MAKE_PROGRAM}
+      BUILD_COMMAND ${BOX2D_MAKE_PROGRAM}
       INSTALL_DIR ${_box2d_install_dir}
       INSTALL_COMMAND ${CMAKE_COMMAND} -E copy ${_box2d_library_dir}${_box2d_library_file} ${_box2d_source_dir}/qmldir ${_box2d_install_dir}
       )
