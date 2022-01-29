@@ -62,6 +62,9 @@ if(NOT ${QML_BOX2D_MODULE} STREQUAL "disabled")
     elseif(CMAKE_HOST_APPLE)
       set(_box2d_library_dir "")
       set(_box2d_library_file "libBox2D.dylib")
+    elseif(ANDROID AND Qt5Widgets_VERSION_STRING VERSION_GREATER_EQUAL "5.14.0")
+      set(_box2d_library_dir "")
+      set(_box2d_library_file "libBox2D_${ANDROID_ABI}.so")
     else()
       set(_box2d_library_dir "")
       set(_box2d_library_file "libBox2D.so")
@@ -89,6 +92,15 @@ if(NOT ${QML_BOX2D_MODULE} STREQUAL "disabled")
         set(BOX2D_MAKE_PROGRAM "make")
       endif()
     endif()
+
+    if(ANDROID AND Qt5Widgets_VERSION_STRING VERSION_GREATER_EQUAL "5.14.0")
+      # Capitalize first letter of the abi...
+      string(SUBSTRING ${ANDROID_ABI} 0 1 FIRST_LETTER)
+      string(TOUPPER ${FIRST_LETTER} FIRST_LETTER)
+      string(REGEX REPLACE "^.(.*)" "${FIRST_LETTER}\\1" ANDROID_ABI_CAP "${ANDROID_ABI}")
+      set(BOX2D_MAKE_PROGRAM ${BOX2D_MAKE_PROGRAM} -f Makefile.${ANDROID_ABI_CAP})
+    endif()
+
     ExternalProject_Add(qml_box2d
       DOWNLOAD_COMMAND ""
       SOURCE_DIR ${_box2d_source_dir}

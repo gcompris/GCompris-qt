@@ -300,6 +300,11 @@ int main(int argc, char *argv[])
                              .arg(QCoreApplication::applicationDirPath()));
 #endif
 
+#if __ANDROID__ && QT_VERSION >= QT_VERSION_CHECK(5, 14, 0)
+    // Find box2d
+    engine.addImportPath(QStringLiteral("assets:/"));
+#endif
+
     ApplicationInfo::getInstance()->setBox2DInstalled(engine);
 
     if (parser.isSet(exportActivitiesAsSQL)) {
