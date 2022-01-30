@@ -5,6 +5,7 @@
  * Authors:
  *   Bruno Coudoin <bruno.coudoin@gcompris.net>(GTK+ version)
  *   Sagar Chand Agarwal <atomsagar@gmail.com> (Qt Quick port)
+ *   Timothée Giet <animtim@gmail.com> (Big refactoring)
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
@@ -22,11 +23,13 @@ ActivityBase {
     onStop: {}
 
     property string url: "qrc:/gcompris/src/activities/watercycle/resource/"
-    property var barAtStart
 
-    pageComponent: Item {
+    pageComponent: Image {
         id: background
         anchors.fill: parent
+        source: "qrc:/gcompris/src/activities/checkers/resource/background-wood.svg"
+        sourceSize.width: width
+        sourceSize.height: height
 
         signal start
         signal stop
@@ -37,14 +40,8 @@ ActivityBase {
         }
 
         onStart: {
-            barAtStart = ApplicationSettings.isBarHidden;
-            ApplicationSettings.isBarHidden = true;
             shower.hide();
             river.level = 0;
-        }
-
-        onStop: {
-            ApplicationSettings.isBarHidden = barAtStart;
         }
 
         function initLevel() {
@@ -55,17 +52,13 @@ ActivityBase {
             items.cycleDone = false;
             river.level = 0;
             sun_area.enabled = true;
-            sun.down();
+            sun.isUp = false;
             sun.hasRun = false;
-            vaporAnim.stop();
-            vapor.opacity = 0;
-            vapor.y = background.height * 0.28
+            vapor.animLoop = false;
+            vapor.isUp = false;
             rainAnim.stop();
             rain.down();
-            cloudanimOn.stop();
-            cloudanimOff.stop();
-            cloud.down();
-            tuxboat.opacity = 0;
+            cloud.isUp = false;
             boatparked.opacity = 1;
             shower.stop();
             waterplant.running = false;
@@ -93,6 +86,7 @@ ActivityBase {
 
             property bool restarted: false
             property bool cycleDone: false
+            property bool isVertical: background.width < background.height - bar.height * 1.2
             property GCSfx audioEffects: activity.audioEffects
         }
 
@@ -108,7 +102,8 @@ ActivityBase {
             }
             z: 100
             onIntroDone: {
-                anim.running = true;
+                tuxboat.isStarted = true;
+                sun.isUp = false;
                 info.visible = true;
                 sun_area.enabled = true;
             }
@@ -128,31 +123,45 @@ ActivityBase {
             ]
         }
 
+        Item {
+            id: layoutArea
+            width: items.isVertical ? parent.width : parent.height - bar.height * 1.2
+            height: width
+            anchors.left: background.left
+            anchors.leftMargin: items.isVertical ? 0 : 10 * ApplicationInfo.ratio
+            anchors.verticalCenter: background.verticalCenter
+            anchors.verticalCenterOffset: -bar.height * 0.6
+        }
+
         Image {
             id: sky
-            anchors.top: parent.top
-            sourceSize.width: parent.width
+            anchors.top: layoutArea.top
+            anchors.left: layoutArea.left
+            width: layoutArea.width
+            height: layoutArea.height * 0.31
+            sourceSize.width: width
+            sourceSize.height: height
             source: activity.url + "sky.svg"
-            height: (background.height - landscape.paintedHeight) / 2 + landscape.paintedHeight * 0.3
             z: 1
         }
 
         Image {
             id: sea
-            anchors {
-                left: parent.left
-                bottom: parent.bottom
-            }
-            sourceSize.width: parent.width
+            anchors.left: layoutArea.left
+            anchors.bottom: layoutArea.bottom
+            width: layoutArea.width
+            height: layoutArea.height * 0.7
+            sourceSize.width: width
+            sourceSize.height: height
             source: activity.url + "sea.svg"
-            height: (background.height - landscape.paintedHeight) / 2 + landscape.paintedHeight * 0.7
             z:3
         }
 
         Image {
             id: landscape
-            anchors.fill: parent
-            sourceSize.width: parent.width
+            anchors.fill: layoutArea
+            sourceSize.width: width
+            sourceSize.height: height
             source: activity.url + "landscape.svg"
             z: 6
         }
@@ -161,48 +170,88 @@ ActivityBase {
             id: tuxboat
             opacity: 1
             source: activity.url + "boat.svg"
-            sourceSize.width: parent.width*0.15
-            sourceSize.height: parent.height*0.15
+            width: layoutArea.width * 0.15
+            height: width
+            sourceSize.width: width
+            sourceSize.height: height
+            property bool isStarted: false
             anchors{
-                bottom: parent.bottom
-                bottomMargin: 15
+                bottom: layoutArea.bottom
+                bottomMargin: layoutArea.height * 0.02
+                left: layoutArea.left
+                leftMargin: 0
             }
-            x:0
             z:30
 
-            Behavior on opacity { PropertyAnimation { easing.type: Easing.InOutQuad; duration: 200 } }
-            NumberAnimation on x {
-                id: anim
-                running: false
-                to: parent.width - tuxboat.width
-                duration: 15000
-                easing.type: Easing.InOutSine
-                onRunningChanged: {
-                    if(!anim.running)
-                    {
-                        items.audioEffects.play('qrc:/gcompris/src/activities/watercycle/resource/harbor2.wav');
-                        tuxboat.opacity = 0;
-                        boatparked.opacity = 1;
-                        shower.stop();
-                        if(!sun.hasRun && !items.restarted)
-                            info.setKey('start');
-                    } else {
-                        items.audioEffects.play('qrc:/gcompris/src/activities/watercycle/resource/harbor1.wav');
+            states: [
+                State {
+                    name: "tuxboatLeft"
+                    when: !tuxboat.isStarted
+                    PropertyChanges {
+                        target: tuxboat
+                        anchors.leftMargin: 0
+                        opacity: 1
+                    }
+                },
+                State {
+                    name: "tuxboatRight"
+                    when: tuxboat.isStarted && !items.restarted
+                    PropertyChanges {
+                        target: tuxboat
+                        anchors.leftMargin: layoutArea.width - tuxboat.width
+                        opacity: 0
+                    }
+                },
+                State {
+                    name: "tuxboatRestarted"
+                    when: tuxboat.isStarted && items.restarted
+                    PropertyChanges {
+                        target: tuxboat
+                        anchors.leftMargin: layoutArea.width - tuxboat.width
+                        opacity: 0
                     }
                 }
-            }
+            ]
+
+            transitions: [
+                Transition {
+                    from: "tuxboatLeft"; to: "tuxboatRight";
+                    SequentialAnimation {
+                        ScriptAction { script: items.audioEffects.play("qrc:/gcompris/src/activities/watercycle/resource/harbor1.wav") }
+                        NumberAnimation { property: "anchors.leftMargin"; easing.type: Easing.InOutSine; duration: 15000 }
+                        ScriptAction { script: items.audioEffects.play("qrc:/gcompris/src/activities/watercycle/resource/harbor2.wav") }
+                        NumberAnimation { property: "opacity"; easing.type: Easing.InOutQuad; duration: 200 }
+                        ScriptAction { script: {
+                                boatparked.opacity = 1;
+                                shower.stop();
+                                if(!sun.hasRun && !items.restarted)
+                                    info.setKey('start');
+                            }
+                        }
+                    }
+                },
+                Transition {
+                    from: "tuxboatRight"; to: "tuxboatLeft";
+                    PropertyAction { properties: "anchors.leftMargin, opacity" }
+                    ScriptAction { script: boatparked.opacity = 0 }
+                },
+                Transition {
+                    from: "tuxboatRight, tuxboatLeft"; to: "tuxboatRestarted"
+                    PropertyAction { properties: "anchors.leftMargin, opacity" }
+                }
+            ]
         }
 
         Image {
             id: boatparked
             source: activity.url + "boat_parked.svg"
-            sourceSize.width: parent.width*0.15
-            sourceSize.height: parent.height*0.15
+            sourceSize.width: layoutArea.width * 0.15
+            sourceSize.height: layoutArea.height * 0.15
             opacity: 0
             anchors {
-                right: parent.right
-                bottom: parent.bottom
-                bottomMargin: 20
+                right: layoutArea.right
+                bottom: layoutArea.bottom
+                bottomMargin: tuxboat.anchors.bottomMargin
             }
             z: 29
             Behavior on opacity { PropertyAnimation { easing.type: Easing.InOutQuad; duration: 200 } }
@@ -211,34 +260,64 @@ ActivityBase {
         Image {
             id: sun
             source: activity.url + "sun.svg"
-            sourceSize.width: parent.width * 0.05
+            width: layoutArea.width * 0.05
+            sourceSize.width: width
             anchors {
-                left: parent.left
-                top: parent.top
-                leftMargin: parent.width*0.05
-                topMargin: parent.height * 0.28
+                left: layoutArea.left
+                top: layoutArea.top
+                leftMargin: width
+                topMargin: layoutArea.height * 0.275
             }
             z: 2
             property bool hasRun: false
+            property bool isUp: true
             MouseArea {
                 id: sun_area
                 anchors.fill: sun
                 onClicked: {
                     if(cloud.opacity == 0)
-                        sun.up();
+                        sun.isUp = true;
                 }
             }
-            Behavior on anchors.topMargin { PropertyAnimation { easing.type: Easing.InOutQuad; duration: 5000 } }
-            function up() {
-                items.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/bleep.wav');
-                info.setKey('sun');
-                sun.hasRun = true;
-                sun.anchors.topMargin = parent.height * 0.05;
-                vapor.up();
-            }
-            function down() {
-                sun.anchors.topMargin = parent.height * 0.28;
-            }
+
+            states: [
+                State {
+                    name: "sunDown"
+                    when: !sun.isUp
+                    PropertyChanges {
+                        target: sun
+                        anchors.topMargin: layoutArea.height * 0.275
+                    }
+                },
+                State {
+                    name: "sunUp"
+                    when: sun.isUp
+                    PropertyChanges {
+                        target: sun
+                        anchors.topMargin: layoutArea.height * 0.05
+                    }
+                }
+            ]
+
+            transitions: [
+                Transition {
+                    from: "sunUp"; to: "sunDown";
+                    NumberAnimation { property: "anchors.topMargin"; easing.type: Easing.InOutQuad; duration: 5000 }
+                },
+                Transition {
+                    from: "sunDown"; to: "sunUp";
+                    ScriptAction { script: {
+                            items.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/bleep.wav');
+                            info.setKey('sun');
+                            sun.hasRun = true;
+                            vapor.animLoop = true;
+                            vapor.isUp = true;
+                            cloud.isUp = true;
+                        }
+                    }
+                    NumberAnimation { property: "anchors.topMargin"; easing.type: Easing.InOutQuad; duration: 5000 }
+                }
+            ]
         }
 
         Image {
@@ -247,138 +326,139 @@ ActivityBase {
             state: "vapor"
             source: activity.url + "vapor.svg"
             sourceSize.width: parent.width*0.05
+            property bool isUp: false
+            property bool animLoop: true
             anchors {
                 left: sun.left
+                top: layoutArea.top
+                topMargin: layoutArea.height * 0.28
             }
-            y: background.height * 0.28
             z: 10
 
-            SequentialAnimation {
-                id: vaporAnim
-                loops: 2
-                NumberAnimation {
-                    target: vapor
-                    property: "opacity"
-                    duration: 200
-                    from: 0
-                    to: 1
+            states: [
+                State {
+                    name: "vaporDown"
+                    when: !vapor.isUp && !items.restarted
+                    PropertyChanges {
+                        target: vapor
+                        opacity: 0
+                        anchors.topMargin: layoutArea.height * 0.28
+                    }
+                },
+                State {
+                    name: "vaporUp"
+                    when: vapor.isUp
+                    PropertyChanges {
+                        target: vapor
+                        opacity: 1
+                        anchors.topMargin: layoutArea.height * 0.1
+                    }
+                },
+                State {
+                    name: "vaporDownRestarted"
+                    when: !vapor.isUp && items.restarted
+                    PropertyChanges {
+                        target: vapor
+                        opacity: 0
+                        anchors.topMargin: layoutArea.height * 0.28
+                    }
                 }
-                NumberAnimation {
-                    target: vapor
-                    property: "y"
-                    duration: 5000
-                    from: background.height * 0.28
-                    to: background.height * 0.1
-                }
-                NumberAnimation {
-                    target: vapor
-                    property: "opacity"
-                    duration: 200
-                    from: 1
-                    to: 0
-                }
-                NumberAnimation {
-                    target: vapor
-                    property: "y"
-                    duration: 0
-                    to: background.height * 0.28
-                }
-                onRunningChanged: {
-                    if(!running && !items.restarted)
-                        info.setKey('cloud');
-                }
-            }
-            function up() {
-                vaporAnim.start();
-                cloud.up();
-            }
-        }
+            ]
 
+            transitions: [
+                Transition {
+                    from: "vaporDown, vaporDownRestarted"; to: "vaporUp";
+                    SequentialAnimation {
+                        NumberAnimation { property: "opacity"; duration: 200 }
+                        NumberAnimation { property: "anchors.topMargin"; duration: 5000 }
+                        ScriptAction { script: vapor.isUp = false }
+                    }
+                },
+                Transition {
+                    from: "vaporUp"; to: "vaporDown";
+                    SequentialAnimation {
+                        NumberAnimation { property: "opacity"; duration: 200 }
+                        PropertyAction { property: "anchors.topMargin" }
+                        ScriptAction { script: {
+                                if(vapor.animLoop === true) {
+                                    vapor.animLoop = false;
+                                    vapor.isUp = true;
+                                } else {
+                                    info.setKey("cloud");
+                                }
+                            }
+                        }
+                    }
+                },
+                Transition {
+                    from: "vaporUp, vaporDown"; to: "vaporDownRestarted";
+                    ScriptAction { script: vapor.animLoop = false }
+                    PropertyAction { properties: "anchors.topMargin, opacity" }
+                }
+            ]
+        }
 
         Image {
             id: cloud
             opacity: 0
             source: activity.url + "cloud.svg"
-            sourceSize.width: parent.width * 0.20
+            sourceSize.width: layoutArea.width * 0.20
             fillMode: Image.PreserveAspectFit
             width: 0
+            property bool isUp: false
+            property double originMargin: layoutArea.width * 0.05
+            property double upMargin: layoutArea.width * 0.4
             anchors {
-                top: parent.top
-                topMargin: parent.height * 0.05
+                top: layoutArea.top
+                topMargin: originMargin
+                left: layoutArea.left
+                leftMargin: originMargin
             }
-            x: parent.width * 0.05
             z: 11
+
+            states: [
+                State {
+                    name: "cloudIsDown"
+                    when: !cloud.isUp
+                    PropertyChanges {
+                        target: cloud
+                        opacity: 0
+                        width: 0
+                        anchors.leftMargin: cloud.originMargin
+                    }
+                },
+                State {
+                    name: "cloudIsUp"
+                    when: cloud.isUp
+                    PropertyChanges {
+                        target: cloud
+                        opacity: 1
+                        width: cloud.sourceSize.width
+                        anchors.leftMargin: cloud.upMargin
+                    }
+                }
+            ]
+
+            transitions: [
+                Transition {
+                    from: "cloudIsDown"; to: "cloudIsUp";
+                    NumberAnimation { property: "opacity"; easing.type: Easing.InOutQuad; duration: 5000 }
+                    NumberAnimation { properties: "width, anchors.leftMargin"; easing.type: Easing.InOutQuad; duration: 15000 }
+                },
+                Transition {
+                    from: "cloudIsUp"; to: "cloudIsDown";
+                    PropertyAction { properties: "opacity, width, anchors.leftMargin" }
+                }
+            ]
+
             MouseArea {
                 id: cloud_area
                 anchors.fill: cloud
                 enabled: info.newKey === 'cloud'
                 onClicked: {
-                    sun.down();
+                    sun.isUp = false;
                     rain.up();
                 }
-            }
-            ParallelAnimation {
-                id: cloudanimOn
-                running: false
-                PropertyAnimation {
-                    target: cloud
-                    property: 'opacity'
-                    easing.type: Easing.InOutQuad
-                    duration: 5000
-                    from: 0
-                    to: 1
-                }
-                PropertyAnimation {
-                    target: cloud
-                    property: 'width'
-                    easing.type: Easing.InOutQuad
-                    duration: 15000
-                    from: 0
-                    to: cloud.sourceSize.width
-                }
-                PropertyAnimation {
-                    target: cloud
-                    property: 'x'
-                    easing.type: Easing.InOutQuad
-                    duration: 15000
-                    from: background.width * 0.05
-                    to: background.width * 0.4
-                }
-            }
-            SequentialAnimation {
-                id: cloudanimOff
-                running: false
-                PropertyAnimation {
-                    target: cloud
-                    property: 'opacity'
-                    easing.type: Easing.InOutQuad
-                    duration: 3000
-                    from: 1
-                    to: 0
-                }
-                PropertyAnimation {
-                    target: cloud
-                    property: 'width'
-                    easing.type: Easing.InOutQuad
-                    duration: 0
-                    to: 0
-                }
-                PropertyAnimation {
-                    target: cloud
-                    property: 'x'
-                    easing.type: Easing.InOutQuad
-                    duration: 0
-                    to: background.width * 0.05
-                }
-            }
-
-            function up() {
-                cloudanimOn.start();
-            }
-            function down() {
-                opacity = 0;
-                width = 0;
-                x = parent.width * 0.05;
             }
         }
 
@@ -389,8 +469,8 @@ ActivityBase {
             opacity: 0
             anchors {
                 top: cloud.bottom
+                left: cloud.left
             }
-            x: cloud.x
             z: 10
             Behavior on opacity { PropertyAnimation { easing.type: Easing.InOutQuad; duration: 300 } }
             SequentialAnimation{
@@ -412,7 +492,7 @@ ActivityBase {
                 onRunningChanged: {
                     if(!running) {
                         rain.down();
-                        cloud.down();
+                        cloud.isUp = false;
                     }
                 }
             }
@@ -431,16 +511,16 @@ ActivityBase {
         Image {
             id: river
             source: activity.url + "river.svg"
-            sourceSize.width: parent.width * 0.415
-            sourceSize.height: parent.height * 0.74
-            width: parent.width * 0.415
-            height: parent.height * 0.74
+            width: layoutArea.width * 0.415
+            height: layoutArea.height * 0.74
+            sourceSize.width: width
+            sourceSize.height: height
             opacity: level > 0 ? 1 : 0
             anchors {
-                top: parent.top
-                left: parent.left
-                topMargin: parent.height*0.1775
-                leftMargin: parent.width*0.293
+                top: layoutArea.top
+                left: layoutArea.left
+                topMargin: layoutArea.height * 0.1775
+                leftMargin: layoutArea.width * 0.293
             }
             z: 10
             Behavior on opacity { PropertyAnimation { easing.type: Easing.InOutQuad; duration: 5000 } }
@@ -450,14 +530,15 @@ ActivityBase {
         Image {
             id: reservoir1
             source: activity.url + "reservoir1.svg"
-            sourceSize.width: parent.width*0.06
-            width: parent.width*0.06
-            height: parent.height*0.15
+            width: layoutArea.width * 0.06
+            height: layoutArea.height * 0.15
+            sourceSize.width: width
+            sourceSize.height: height
             anchors {
-                top: parent.top
-                left: parent.left
-                topMargin: parent.height*0.2925
-                leftMargin: parent.width*0.3225
+                top: layoutArea.top
+                left: layoutArea.left
+                topMargin: layoutArea.height * 0.2925
+                leftMargin: layoutArea.width * 0.3225
             }
             opacity: river.level > 0.2 ? 1 : 0
             z: 10
@@ -467,14 +548,15 @@ ActivityBase {
         Image {
             id: reservoir2
             source: activity.url + "reservoir2.svg"
-            sourceSize.width: parent.width*0.12
-            width: parent.width*0.12
-            height: parent.height*0.155
+            width: layoutArea.width * 0.12
+            height: layoutArea.height * 0.155
+            sourceSize.width: width
+            sourceSize.height: height
             anchors {
-                top: parent.top
-                left: parent.left
-                topMargin: parent.height*0.2925
-                leftMargin: parent.width*0.285
+                top: layoutArea.top
+                left: layoutArea.left
+                topMargin: layoutArea.height * 0.2925
+                leftMargin: layoutArea.width * 0.285
             }
             opacity: river.level > 0.5 ? 1 : 0
             z: 10
@@ -484,14 +566,15 @@ ActivityBase {
         Image {
             id: reservoir3
             source: activity.url + "reservoir3.svg"
-            sourceSize.width: parent.width*0.2
-            width: parent.width*0.2
-            height: parent.height*0.17
+            width: layoutArea.width * 0.2
+            height: layoutArea.height * 0.17
+            sourceSize.width: width
+            sourceSize.height: height
             anchors {
-                top: parent.top
-                left: parent.left
-                topMargin: parent.height*0.29
-                leftMargin: parent.width*0.25
+                top: layoutArea.top
+                left: layoutArea.left
+                topMargin: layoutArea.height * 0.29
+                leftMargin: layoutArea.width * 0.25
             }
             opacity: river.level > 0.8 ? 1 : 0
             z: 10
@@ -501,13 +584,15 @@ ActivityBase {
         Image {
             id: waterplant
             source: activity.url + "motor.svg"
-            sourceSize.width: parent.width*0.07
-            sourceSize.height: parent.height*0.08
+            width: layoutArea.width * 0.07
+            height: layoutArea.height * 0.08
+            sourceSize.width: width
+            sourceSize.height: height
             anchors {
-                top: parent.top
-                left:parent.left
-                topMargin: parent.height*0.38
-                leftMargin: parent.width*0.4
+                top: layoutArea.top
+                left: layoutArea.left
+                topMargin: layoutArea.height * 0.38
+                leftMargin: layoutArea.width * 0.4
             }
             z: 20
             property bool running: false
@@ -525,9 +610,8 @@ ActivityBase {
 
         Image {
             id: fillpipe
-            anchors.fill: parent
-            sourceSize.width: parent.width
-            width: parent.width
+            anchors.fill: layoutArea
+            sourceSize.width: width
             source: activity.url + "fillwater.svg"
             opacity: waterplant.running ? 1 : 0.1
             z: 9
@@ -537,12 +621,13 @@ ActivityBase {
         Image {
             id: sewageplant
             source: activity.url + "waste.svg"
-            sourceSize.height: parent.height * 0.15
+            height: layoutArea.height * 0.15
+            sourceSize.height: height
             anchors {
-                top: parent.top
-                left: parent.left
-                topMargin: parent.height*0.74
-                leftMargin: parent.width*0.66
+                top: layoutArea.top
+                left: layoutArea.left
+                topMargin: layoutArea.height * 0.74
+                leftMargin: layoutArea.width * 0.66
             }
             z: 11
             property bool running: false
@@ -560,9 +645,8 @@ ActivityBase {
 
         Image {
             id: wastepipe
-            anchors.fill: parent
-            sourceSize.width: parent.width
-            width: parent.width
+            anchors.fill: layoutArea
+            sourceSize.width: width
             source: activity.url + "wastewater.svg"
             opacity: sewageplant.running ? 1 : 0.1
             z: 10
@@ -572,13 +656,15 @@ ActivityBase {
         Image {
             id: tower
             source: activity.url + "watertower.svg"
-            sourceSize.width: parent.width*0.18
-            sourceSize.height: parent.height*0.15
+            width: layoutArea.width * 0.18
+            height: layoutArea.height * 0.15
+            sourceSize.width: width
+            sourceSize.height: height
             anchors {
-                top: parent.top
-                right: parent.right
-                topMargin: parent.height*0.225
-                rightMargin: parent.width*0.175
+                top: layoutArea.top
+                right: layoutArea.right
+                topMargin: layoutArea.height * 0.225
+                rightMargin: layoutArea.width * 0.175
             }
             z: 10
             property double level: 0
@@ -587,12 +673,13 @@ ActivityBase {
                 id: towerfill
                 scale: tower.level
                 source: activity.url + "watertowerfill.svg"
-                sourceSize.width: tower.width*0.4
+                width: tower.width * 0.4
+                sourceSize.width: width
                 anchors {
                     top: tower.top
-                    left:tower.left
-                    topMargin: tower.height*0.13
-                    leftMargin: tower.width*0.3
+                    left: tower.left
+                    topMargin: tower.height * 0.13
+                    leftMargin: tower.width * 0.3
                 }
                 Behavior on scale { PropertyAnimation { duration: timer.interval } }
             }
@@ -601,13 +688,15 @@ ActivityBase {
         Image {
             id: shower
             source: activity.url + "shower.svg"
-            sourceSize.height: parent.height*0.2
-            sourceSize.width: parent.width*0.15
+            height: layoutArea.height * 0.2
+            width: layoutArea.width * 0.15
+            sourceSize.height: height
+            sourceSize.width: width
             anchors {
-                bottom: parent.bottom
-                right: parent.right
-                bottomMargin: parent.height* 0.32
-                rightMargin: parent.width*0.012
+                bottom: layoutArea.bottom
+                right: layoutArea.right
+                bottomMargin: layoutArea.height * 0.32
+                rightMargin: layoutArea.width * 0.012
             }
             z: 10
             visible: false
@@ -618,7 +707,7 @@ ActivityBase {
                 anchors.fill: parent
                 onClicked: {
                     if(!shower.on &&
-                            river.opacity == 1 && wastepipe.opacity > 0.8 &&
+                            wastepipe.opacity > 0.8 &&
                             fillpipe.opacity > 0.8 && tower.level > 0.5)
                         shower.start();
                     else
@@ -663,12 +752,13 @@ ActivityBase {
         Image {
             id: tuxoff
             source:activity.url + "tuxoff.svg"
-            sourceSize.width: shower.height * 0.4
+            width: shower.height * 0.4
+            sourceSize.width: width
             anchors {
                 horizontalCenter: shower.horizontalCenter
                 verticalCenter: shower.verticalCenter
-                verticalCenterOffset: shower.height*0.1
-                horizontalCenterOffset: -shower.width*0.05
+                verticalCenterOffset: shower.height * 0.1
+                horizontalCenterOffset: -shower.width * 0.05
             }
             z: 10
             visible: false
@@ -677,12 +767,13 @@ ActivityBase {
         Image {
             id: tuxbath
             source: activity.url + "tuxbath.svg"
-            sourceSize.width: shower.height * 0.5
+            width: shower.height * 0.5
+            sourceSize.width: width
             anchors {
                 horizontalCenter: shower.horizontalCenter
                 verticalCenter: shower.verticalCenter
-                verticalCenterOffset: shower.height*0.1
-                horizontalCenterOffset: -shower.width*0.05
+                verticalCenterOffset: shower.height * 0.1
+                horizontalCenterOffset: -shower.width * 0.05
             }
             z: 10
             visible: false
@@ -691,12 +782,13 @@ ActivityBase {
         Image {
             id: showerhot
             source: activity.url + "showerhot.svg"
-            sourceSize.width: shower.width * 0.1
+            width: shower.width * 0.1
+            sourceSize.width: width
             anchors {
                 right: shower.right
                 top: shower.top
-                rightMargin: shower.width*0.15
-                topMargin: shower.height*0.25
+                rightMargin: shower.width * 0.15
+                topMargin: shower.height * 0.25
             }
             z: 10
             visible: false
@@ -705,12 +797,13 @@ ActivityBase {
         Image {
             id: showercold
             source: activity.url + "showercold.svg"
-            sourceSize.width: shower.width * 0.1
+            width: shower.width * 0.1
+            sourceSize.width: width
             anchors {
                 right: shower.right
                 top: shower.top
-                rightMargin: shower.width*0.15
-                topMargin: shower.height*0.25
+                rightMargin: shower.width * 0.15
+                topMargin: shower.height * 0.25
             }
             z: 10
             visible: false
@@ -741,17 +834,17 @@ ActivityBase {
 
         GCText {
             id: info
-            visible: true
+            visible: false
             fontSize: smallSize
             font.weight: Font.DemiBold
             horizontalAlignment: Text.AlignHCenter
             anchors {
                 top: parent.top
-                topMargin: 10 *ApplicationInfo.ratio
+                topMargin: 10 * ApplicationInfo.ratio
                 right: parent.right
                 rightMargin: 5 * ApplicationInfo.ratio
                 left: parent.left
-                leftMargin: parent.width * 0.50
+                leftMargin: items.isVertical ? rightMargin : parent.width * 0.50
             }
             width: parent.width
             wrapMode: Text.WordWrap
@@ -767,6 +860,9 @@ ActivityBase {
                     duration: 200
                     from: 1
                     to: 0
+                }
+                ScriptAction {
+                    script: if(items.cycleDone && info.newKey != "done") info.visible = false;
                 }
                 PropertyAction {
                     target: info
@@ -794,9 +890,10 @@ ActivityBase {
             id: infoBg
             z: 99
             anchors.fill: info
-            color: '#8ebfc7'
+            color: '#B0D2D2D2'
             radius: width * 0.01
             opacity: info.text ? 0.7 : 0
+            visible: info.visible
             Behavior on opacity { PropertyAnimation { easing.type: Easing.InOutQuad; duration: 200 } }
         }
 
