@@ -62,6 +62,9 @@ set(ANDROID_SDK_ROOT $ENV{ANDROID_SDK_ROOT})
 if(Qt5Widgets_VERSION_STRING VERSION_GREATER_EQUAL "5.14.0")
   configure_file(${CMAKE_CURRENT_SOURCE_DIR}/AndroidManifest.xml.cmake ${PACKAGE_SOURCE_ANDROID}/AndroidManifest.xml @ONLY)
   configure_file(${CMAKE_CURRENT_SOURCE_DIR}/configAndroid.json.cmake ${PACKAGE_SOURCE_ANDROID}/configAndroid.json @ONLY)
+  # TODO Remove this file as soon as we have moved to plugins instead of rcc files for activities
+  # This way, we'll use the one provided by Qt
+  configure_file(${CMAKE_CURRENT_SOURCE_DIR}/build_5.14.gradle ${PACKAGE_SOURCE_ANDROID}/build.gradle @ONLY)
 else()
   configure_file(${CMAKE_CURRENT_SOURCE_DIR}/AndroidManifest_5.12.xml.cmake ${PACKAGE_SOURCE_ANDROID}/AndroidManifest.xml @ONLY)
   configure_file(${CMAKE_CURRENT_SOURCE_DIR}/configAndroid_5.12.json.cmake ${PACKAGE_SOURCE_ANDROID}/configAndroid.json @ONLY)
