@@ -114,6 +114,14 @@ add_custom_command(
 )
 
 add_custom_command(
+  OUTPUT createAabFromAndroidDeploy
+  DEPENDS ${PACKAGE_SOURCE_ANDROID}/AndroidManifest.xml
+  COMMAND ${CMAKE_COMMAND} -E copy_directory ${CMAKE_CURRENT_SOURCE_DIR} ${PACKAGE_SOURCE_ANDROID}
+  COMMAND ${ANDROID_DEPLOY_QT} --output ${CMAKE_BINARY_DIR}/android-build/ --input ${PACKAGE_SOURCE_ANDROID}/configAndroid.json --aab --release --gradle
+  COMMAND ${CMAKE_COMMAND} -E rename ${CMAKE_BINARY_DIR}/android-build/build/outputs/bundle/release/android-build-release.aab ${CMAKE_BINARY_DIR}/android-build/GCompris-Android-release${APK_SUFFIX}${GCOMPRIS_VERSION}.aab
+  )
+
+add_custom_command(
   OUTPUT apkInstall
   DEPENDS ${CMAKE_BINARY_DIR}/android-build/GCompris-Android-release-signed-aligned-${ANDROID_ABI}${APK_SUFFIX}${GCOMPRIS_VERSION}.apk
   COMMAND ${ANDROID_SDK_ROOT}/platform-tools/adb install -r ${CMAKE_BINARY_DIR}/android-build/GCompris-Android-release-signed-aligned-${ANDROID_ABI}${APK_SUFFIX}${GCOMPRIS_VERSION}.apk
@@ -132,6 +140,11 @@ add_custom_target(apk_release
 # Command to create aligned signed apk from Makefile
 add_custom_target(apk_aligned_signed
   DEPENDS ${ALL_LOCALES} move_translations_to_assets createApkSignedAlignedFromAndroidDeployQtRelease java_src
+)
+
+# Command to create aab from Makefile
+add_custom_target(aab_release
+  DEPENDS ${ALL_LOCALES} move_translations_to_assets createAabFromAndroidDeploy java_src
 )
 
 # Command to install the signed aligned apk through adb from Makefile
