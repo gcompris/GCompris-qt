@@ -94,11 +94,14 @@ if(NOT ${QML_BOX2D_MODULE} STREQUAL "disabled")
     endif()
 
     if(ANDROID AND Qt5Widgets_VERSION_STRING VERSION_GREATER_EQUAL "5.14.0")
+      # Only build the necessary architecture for box2d
       # Capitalize first letter of the abi...
       string(SUBSTRING ${ANDROID_ABI} 0 1 FIRST_LETTER)
       string(TOUPPER ${FIRST_LETTER} FIRST_LETTER)
       string(REGEX REPLACE "^.(.*)" "${FIRST_LETTER}\\1" ANDROID_ABI_CAP "${ANDROID_ABI}")
       set(BOX2D_MAKE_PROGRAM ${BOX2D_MAKE_PROGRAM} -f Makefile.${ANDROID_ABI_CAP})
+      # I didn't find a better way to copy the libraries to the lib folder only on Android when doing an aab package...
+      set(EXTRA_INSTALL_ANDROID_BOX2D ${CMAKE_COMMAND} -E make_directory ${CMAKE_LIBRARY_OUTPUT_DIRECTORY} && ${CMAKE_COMMAND} -E copy ${_box2d_library_dir}${_box2d_library_file} ${CMAKE_LIBRARY_OUTPUT_DIRECTORY} && )
     endif()
 
     ExternalProject_Add(qml_box2d
@@ -107,7 +110,7 @@ if(NOT ${QML_BOX2D_MODULE} STREQUAL "disabled")
       CONFIGURE_COMMAND ${_qmake_program} ${_qmake_options} ${_box2d_source_dir}/box2d.pro
       BUILD_COMMAND ${BOX2D_MAKE_PROGRAM}
       INSTALL_DIR ${_box2d_install_dir}
-      INSTALL_COMMAND ${CMAKE_COMMAND} -E copy ${_box2d_library_dir}${_box2d_library_file} ${_box2d_source_dir}/qmldir ${_box2d_install_dir}
+      INSTALL_COMMAND ${EXTRA_INSTALL_ANDROID_BOX2D} ${CMAKE_COMMAND} -E copy ${_box2d_library_dir}${_box2d_library_file} ${_box2d_source_dir}/qmldir ${_box2d_install_dir}
       )
 
     add_library(qml-box2d SHARED IMPORTED)
