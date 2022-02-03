@@ -1,6 +1,7 @@
 /* GCompris - watercycle.qml
  *
  * SPDX-FileCopyrightText: 2015 Sagar Chand Agarwal <atomsagar@gmail.com>
+ * SPDX-FileCopyrightText: 2022 Timothée Giet <animtim@gmail.com>
  *
  * Authors:
  *   Bruno Coudoin <bruno.coudoin@gcompris.net>(GTK+ version)
@@ -125,12 +126,41 @@ ActivityBase {
 
         Item {
             id: layoutArea
-            width: items.isVertical ? parent.width : parent.height - bar.height * 1.2
+            width: parent.height - bar.height * 1.2
             height: width
             anchors.left: background.left
-            anchors.leftMargin: items.isVertical ? 0 : 10 * ApplicationInfo.ratio
-            anchors.verticalCenter: background.verticalCenter
-            anchors.verticalCenterOffset: -bar.height * 0.6
+            states: [
+                State {
+                    name: "verticalLayout"
+                    when: items.isVertical
+                    PropertyChanges {
+                        target: layoutArea
+                        width: parent.width
+                        anchors.bottomMargin: bar.height * 0.2
+                        anchors.leftMargin: 0
+                    }
+                    AnchorChanges {
+                        target: layoutArea
+                        anchors.top: undefined
+                        anchors.bottom: bar.top
+                    }
+                },
+                State {
+                    name: "horizontalLayout"
+                    when: !items.isVertical
+                    PropertyChanges {
+                        target: layoutArea
+                        width: parent.height - bar.height * 1.2
+                        anchors.bottomMargin: 0
+                        anchors.leftMargin: 10 * ApplicationInfo.ratio
+                    }
+                    AnchorChanges {
+                        target: layoutArea
+                        anchors.top: parent.top
+                        anchors.bottom: undefined
+                    }
+                }
+            ]
         }
 
         Image {
@@ -138,7 +168,7 @@ ActivityBase {
             anchors.top: layoutArea.top
             anchors.left: layoutArea.left
             width: layoutArea.width
-            height: layoutArea.height * 0.31
+            height: layoutArea.height * 0.305
             sourceSize.width: width
             sourceSize.height: height
             source: activity.url + "sky.svg"
@@ -170,10 +200,9 @@ ActivityBase {
             id: tuxboat
             opacity: 1
             source: activity.url + "boat.svg"
-            width: layoutArea.width * 0.15
-            height: width
+            width: layoutArea.width * 0.12
+            fillMode: Image.PreserveAspectFit
             sourceSize.width: width
-            sourceSize.height: height
             property bool isStarted: false
             anchors{
                 bottom: layoutArea.bottom
@@ -245,8 +274,9 @@ ActivityBase {
         Image {
             id: boatparked
             source: activity.url + "boat_parked.svg"
-            sourceSize.width: layoutArea.width * 0.15
-            sourceSize.height: layoutArea.height * 0.15
+            width: layoutArea.width * 0.12
+            fillMode: Image.PreserveAspectFit
+            sourceSize.width: width
             opacity: 0
             anchors {
                 right: layoutArea.right
@@ -260,13 +290,14 @@ ActivityBase {
         Image {
             id: sun
             source: activity.url + "sun.svg"
-            width: layoutArea.width * 0.05
+            width: layoutArea.width * 0.1
+            fillMode: Image.PreserveAspectFit
             sourceSize.width: width
             anchors {
                 left: layoutArea.left
                 top: layoutArea.top
-                leftMargin: width
-                topMargin: layoutArea.height * 0.275
+                leftMargin: layoutArea.width * 0.056
+                topMargin: layoutArea.height * 0.256
             }
             z: 2
             property bool hasRun: false
@@ -286,7 +317,7 @@ ActivityBase {
                     when: !sun.isUp
                     PropertyChanges {
                         target: sun
-                        anchors.topMargin: layoutArea.height * 0.275
+                        anchors.topMargin: layoutArea.height * 0.256
                     }
                 },
                 State {
@@ -294,7 +325,7 @@ ActivityBase {
                     when: sun.isUp
                     PropertyChanges {
                         target: sun
-                        anchors.topMargin: layoutArea.height * 0.05
+                        anchors.topMargin: layoutArea.height * 0.056
                     }
                 }
             ]
@@ -325,7 +356,9 @@ ActivityBase {
             opacity: 0
             state: "vapor"
             source: activity.url + "vapor.svg"
-            sourceSize.width: parent.width*0.05
+            width: layoutArea.width * 0.1
+            fillMode: Image.PreserveAspectFit
+            sourceSize.width: width
             property bool isUp: false
             property bool animLoop: true
             anchors {
@@ -402,12 +435,12 @@ ActivityBase {
             id: cloud
             opacity: 0
             source: activity.url + "cloud.svg"
-            sourceSize.width: layoutArea.width * 0.20
+            sourceSize.width: layoutArea.width * 0.256
             fillMode: Image.PreserveAspectFit
             width: 0
             property bool isUp: false
             property double originMargin: layoutArea.width * 0.05
-            property double upMargin: layoutArea.width * 0.4
+            property double upMargin: layoutArea.width * 0.38
             anchors {
                 top: layoutArea.top
                 topMargin: originMargin
@@ -465,11 +498,15 @@ ActivityBase {
         Image {
             id: rain
             source: activity.url + "rain.svg"
-            sourceSize.height: cloud.height * 2
+            width: layoutArea.height * 0.146
+            fillMode: Image.PreserveAspectFit
+            sourceSize.width: width
             opacity: 0
             anchors {
-                top: cloud.bottom
+                top: layoutArea.top
+                topMargin: layoutArea.width * 0.123
                 left: cloud.left
+                leftMargin: cloud.width * 0.26
             }
             z: 10
             Behavior on opacity { PropertyAnimation { easing.type: Easing.InOutQuad; duration: 300 } }
@@ -511,16 +548,15 @@ ActivityBase {
         Image {
             id: river
             source: activity.url + "river.svg"
-            width: layoutArea.width * 0.415
-            height: layoutArea.height * 0.74
+            width: layoutArea.width * 0.431
             sourceSize.width: width
-            sourceSize.height: height
+            fillMode: Image.PreserveAspectFit
             opacity: level > 0 ? 1 : 0
             anchors {
                 top: layoutArea.top
                 left: layoutArea.left
-                topMargin: layoutArea.height * 0.1775
-                leftMargin: layoutArea.width * 0.293
+                topMargin: layoutArea.height * 0.3309
+                leftMargin: layoutArea.width * 0.292
             }
             z: 10
             Behavior on opacity { PropertyAnimation { easing.type: Easing.InOutQuad; duration: 5000 } }
@@ -530,15 +566,14 @@ ActivityBase {
         Image {
             id: reservoir1
             source: activity.url + "reservoir1.svg"
-            width: layoutArea.width * 0.06
-            height: layoutArea.height * 0.15
+            width: layoutArea.width * 0.112
+            fillMode: Image.PreserveAspectFit
             sourceSize.width: width
-            sourceSize.height: height
             anchors {
                 top: layoutArea.top
                 left: layoutArea.left
-                topMargin: layoutArea.height * 0.2925
-                leftMargin: layoutArea.width * 0.3225
+                topMargin: layoutArea.height * 0.3309
+                leftMargin: layoutArea.width * 0.2948
             }
             opacity: river.level > 0.2 ? 1 : 0
             z: 10
@@ -548,15 +583,14 @@ ActivityBase {
         Image {
             id: reservoir2
             source: activity.url + "reservoir2.svg"
-            width: layoutArea.width * 0.12
-            height: layoutArea.height * 0.155
+            width: layoutArea.width * 0.1604
+            fillMode: Image.PreserveAspectFit
             sourceSize.width: width
-            sourceSize.height: height
             anchors {
                 top: layoutArea.top
                 left: layoutArea.left
-                topMargin: layoutArea.height * 0.2925
-                leftMargin: layoutArea.width * 0.285
+                topMargin: layoutArea.height * 0.3309
+                leftMargin: layoutArea.width * 0.2691
             }
             opacity: river.level > 0.5 ? 1 : 0
             z: 10
@@ -566,15 +600,14 @@ ActivityBase {
         Image {
             id: reservoir3
             source: activity.url + "reservoir3.svg"
-            width: layoutArea.width * 0.2
-            height: layoutArea.height * 0.17
+            width: layoutArea.width * 0.1965
+            fillMode: Image.PreserveAspectFit
             sourceSize.width: width
-            sourceSize.height: height
             anchors {
                 top: layoutArea.top
                 left: layoutArea.left
-                topMargin: layoutArea.height * 0.29
-                leftMargin: layoutArea.width * 0.25
+                topMargin: layoutArea.height * 0.3309
+                leftMargin: layoutArea.width * 0.2532
             }
             opacity: river.level > 0.8 ? 1 : 0
             z: 10
@@ -584,15 +617,14 @@ ActivityBase {
         Image {
             id: waterplant
             source: activity.url + "motor.svg"
-            width: layoutArea.width * 0.07
-            height: layoutArea.height * 0.08
+            width: layoutArea.width * 0.083
+            fillMode: Image.PreserveAspectFit
             sourceSize.width: width
-            sourceSize.height: height
             anchors {
                 top: layoutArea.top
                 left: layoutArea.left
-                topMargin: layoutArea.height * 0.38
-                leftMargin: layoutArea.width * 0.4
+                topMargin: layoutArea.height * 0.367
+                leftMargin: layoutArea.width * 0.371
             }
             z: 20
             property bool running: false
@@ -610,10 +642,17 @@ ActivityBase {
 
         Image {
             id: fillpipe
-            anchors.fill: layoutArea
+            width: layoutArea.width * 0.354
             sourceSize.width: width
+            fillMode: Image.PreserveAspectFit
             source: activity.url + "fillwater.svg"
-            opacity: waterplant.running ? 1 : 0.1
+            opacity: waterplant.running ? 1 : 0.2
+            anchors {
+                top: layoutArea.top
+                left: layoutArea.left
+                topMargin: layoutArea.height * 0.405
+                leftMargin: layoutArea.width * 0.422
+            }
             z: 9
             Behavior on opacity { PropertyAnimation { easing.type: Easing.InOutQuad; duration: 300 } }
         }
@@ -621,13 +660,14 @@ ActivityBase {
         Image {
             id: sewageplant
             source: activity.url + "waste.svg"
-            height: layoutArea.height * 0.15
+            height: layoutArea.height * 0.144
             sourceSize.height: height
+            fillMode: Image.PreserveAspectFit
             anchors {
                 top: layoutArea.top
                 left: layoutArea.left
-                topMargin: layoutArea.height * 0.74
-                leftMargin: layoutArea.width * 0.66
+                topMargin: layoutArea.height * 0.778
+                leftMargin: layoutArea.width * 0.682
             }
             z: 11
             property bool running: false
@@ -645,10 +685,17 @@ ActivityBase {
 
         Image {
             id: wastepipe
-            anchors.fill: layoutArea
+            width: layoutArea.width * 0.275
             sourceSize.width: width
+            fillMode: Image.PreserveAspectFit
             source: activity.url + "wastewater.svg"
-            opacity: sewageplant.running ? 1 : 0.1
+            opacity: sewageplant.running ? 1 : 0.2
+            anchors {
+                top: layoutArea.top
+                left: layoutArea.left
+                topMargin: layoutArea.height * 0.597
+                leftMargin: layoutArea.width * 0.536
+            }
             z: 10
             Behavior on opacity { PropertyAnimation { easing.type: Easing.InOutQuad; duration: 300 } }
         }
@@ -656,15 +703,14 @@ ActivityBase {
         Image {
             id: tower
             source: activity.url + "watertower.svg"
-            width: layoutArea.width * 0.18
-            height: layoutArea.height * 0.15
+            width: layoutArea.width * 0.135
             sourceSize.width: width
-            sourceSize.height: height
+            fillMode: Image.PreserveAspectFit
             anchors {
                 top: layoutArea.top
-                right: layoutArea.right
-                topMargin: layoutArea.height * 0.225
-                rightMargin: layoutArea.width * 0.175
+                left: layoutArea.left
+                topMargin: layoutArea.height * 0.226
+                leftMargin: layoutArea.width * 0.686
             }
             z: 10
             property double level: 0
@@ -673,13 +719,13 @@ ActivityBase {
                 id: towerfill
                 scale: tower.level
                 source: activity.url + "watertowerfill.svg"
-                width: tower.width * 0.4
+                width: tower.width * 0.5
                 sourceSize.width: width
+                fillMode: Image.PreserveAspectFit
                 anchors {
                     top: tower.top
-                    left: tower.left
-                    topMargin: tower.height * 0.13
-                    leftMargin: tower.width * 0.3
+                    topMargin: tower.height * 0.085
+                    horizontalCenter: tower.horizontalCenter
                 }
                 Behavior on scale { PropertyAnimation { duration: timer.interval } }
             }
@@ -688,15 +734,14 @@ ActivityBase {
         Image {
             id: shower
             source: activity.url + "shower.svg"
-            height: layoutArea.height * 0.2
-            width: layoutArea.width * 0.15
-            sourceSize.height: height
+            width: layoutArea.width * 0.184
             sourceSize.width: width
+            fillMode: Image.PreserveAspectFit
             anchors {
-                bottom: layoutArea.bottom
-                right: layoutArea.right
-                bottomMargin: layoutArea.height * 0.32
-                rightMargin: layoutArea.width * 0.012
+                top: layoutArea.top
+                left: layoutArea.left
+                topMargin: layoutArea.height * 0.557
+                leftMargin: layoutArea.width * 0.791
             }
             z: 10
             visible: false
@@ -718,10 +763,7 @@ ActivityBase {
             function start() {
                 shower.on = true;
                 shower.visible = true;
-                showerhot.visible = true;
                 tuxbath.visible = true;
-                showercold.visible = false;
-                tuxoff.visible = false;
 
                 if(!items.cycleDone) {
                     info.setKey('done');
@@ -734,79 +776,54 @@ ActivityBase {
             function stop() {
                 shower.on = false;
                 shower.visible = true;
-                showerhot.visible = false;
                 tuxbath.visible = false;
-                showercold.visible = true;
-                tuxoff.visible = true;
             }
             function hide() {
                 shower.visible = false;
                 shower.on = false;
-                tuxoff.visible = false;
-                showercold.visible = false;
-                showerhot.visible = false;
                 tuxbath.visible = false;
             }
-        }
-
-        Image {
-            id: tuxoff
-            source:activity.url + "tuxoff.svg"
-            width: shower.height * 0.4
-            sourceSize.width: width
-            anchors {
-                horizontalCenter: shower.horizontalCenter
-                verticalCenter: shower.verticalCenter
-                verticalCenterOffset: shower.height * 0.1
-                horizontalCenterOffset: -shower.width * 0.05
-            }
-            z: 10
-            visible: false
         }
 
         Image {
             id: tuxbath
             source: activity.url + "tuxbath.svg"
-            width: shower.height * 0.5
+            width: shower.width
             sourceSize.width: width
-            anchors {
-                horizontalCenter: shower.horizontalCenter
-                verticalCenter: shower.verticalCenter
-                verticalCenterOffset: shower.height * 0.1
-                horizontalCenterOffset: -shower.width * 0.05
-            }
+            fillMode: Image.PreserveAspectFit
+            anchors.centerIn: shower
             z: 10
             visible: false
         }
 
         Image {
-            id: showerhot
-            source: activity.url + "showerhot.svg"
-            width: shower.width * 0.1
+            id: city
+            source: activity.url + "city.svg"
+            width: layoutArea.width * 0.202
             sourceSize.width: width
+            fillMode: Image.PreserveAspectFit
             anchors {
-                right: shower.right
-                top: shower.top
-                rightMargin: shower.width * 0.15
-                topMargin: shower.height * 0.25
+                top: layoutArea.top
+                left: layoutArea.left
+                topMargin: layoutArea.height * 0.465
+                leftMargin: layoutArea.width * 0.44
             }
             z: 10
-            visible: false
         }
 
         Image {
-            id: showercold
-            source: activity.url + "showercold.svg"
-            width: shower.width * 0.1
+            id: tuxHouse
+            source: activity.url + "tuxHouse.svg"
+            width: layoutArea.width * 0.036
             sourceSize.width: width
+            fillMode: Image.PreserveAspectFit
             anchors {
-                right: shower.right
-                top: shower.top
-                rightMargin: shower.width * 0.15
-                topMargin: shower.height * 0.25
+                top: layoutArea.top
+                left: layoutArea.left
+                topMargin: layoutArea.height * 0.638
+                leftMargin: layoutArea.width * 0.765
             }
             z: 10
-            visible: false
         }
 
         // Manage stuff that changes periodically
@@ -840,17 +857,35 @@ ActivityBase {
             horizontalAlignment: Text.AlignHCenter
             anchors {
                 top: parent.top
-                topMargin: 10 * ApplicationInfo.ratio
+                topMargin: 5 * ApplicationInfo.ratio
                 right: parent.right
                 rightMargin: 5 * ApplicationInfo.ratio
                 left: parent.left
-                leftMargin: items.isVertical ? rightMargin : parent.width * 0.50
             }
             width: parent.width
             wrapMode: Text.WordWrap
             z: 100
             onTextChanged: textanim.start();
             property string newKey
+
+            states: [
+                State {
+                    name: "verticalInfo"
+                    when: items.isVertical
+                    PropertyChanges {
+                        target: info
+                        anchors.leftMargin: 5 * ApplicationInfo.ratio
+                    }
+                },
+                State {
+                    name: "horizontalInfo"
+                    when: !items.isVertical
+                    PropertyChanges {
+                        target: info
+                        anchors.leftMargin: parent.width * 0.5
+                    }
+                }
+            ]
 
             SequentialAnimation {
                 id: textanim
