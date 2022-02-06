@@ -21,6 +21,7 @@ QtObject {
     {
         "pixmapfile": "europe/cyprus.svgz",
         "soundFile": "voices-$CA/$LOCALE/geography/cyprus.$CA",
+        "toolTipText": qsTr("Cyprus"),
         "type": "SHAPE_BACKGROUND",
         "x": "0.8147",
         "y": "0.9745"

@@ -70,6 +70,7 @@ QtObject {
     {
         "pixmapfile": "europe/luxembourg.svgz",
         "soundFile": "voices-$CA/$LOCALE/geography/luxembourg.$CA",
+        "toolTipText": qsTr("Luxembourg"),
         "type": "SHAPE_BACKGROUND",
         "x": "0.4358",
         "y": "0.5802"
