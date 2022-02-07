@@ -40,9 +40,10 @@ ActivityBase {
             activity.stop.connect(stop)
         }
 
-        onStart: {
-            shower.hide();
-            river.level = 0;
+        onStart: {}
+        onStop: {
+            timer.stop()
+            activity.audioEffects.stop()
         }
 
         function initLevel() {
