@@ -18,6 +18,15 @@ ControlButton {
     property int holdTime: 3000
 
     signal pressAndHold
+    signal stop
+
+    Component.onCompleted: {
+        activity.stop.connect(stop);
+    }
+
+    onStop: {
+        buttonTimer.stop()
+    }
 
     Timer {
         id: buttonTimer
