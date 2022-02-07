@@ -290,9 +290,9 @@ void ActivityInfoTree::filterBySearch(const QString &text)
             const auto &constMenuTreeFull = m_menuTreeFull;
             for (const auto &activity: constMenuTreeFull) {
                 /* clang-format off */
-                if (activity->title().contains(trimmedText, Qt::CaseInsensitive) ||
-                    activity->name().contains(trimmedText, Qt::CaseInsensitive) ||
-                    activity->description().contains(trimmedText, Qt::CaseInsensitive)) {
+                if (activity->title().remove(QChar::SoftHyphen).contains(trimmedText, Qt::CaseInsensitive) ||
+                    activity->name().remove(QChar::SoftHyphen).contains(trimmedText, Qt::CaseInsensitive) ||
+                    activity->description().remove(QChar::SoftHyphen).contains(trimmedText, Qt::CaseInsensitive)) {
                     /* clang-format on */
                     // add the activity only if it's not added
                     if (m_menuTree.indexOf(activity) == -1)
