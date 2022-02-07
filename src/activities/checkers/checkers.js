@@ -26,6 +26,8 @@ function start(items_) {
 }
 
 function stop() {
+    items.trigComputerMove.stop();
+    items.redoTimer.stop();
 }
 
 function initLevel() {

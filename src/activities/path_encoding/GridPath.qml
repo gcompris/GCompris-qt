@@ -75,7 +75,10 @@ ActivityBase {
         }
 
         onStart: { Activity.start(items) }
-        onStop: { Activity.stop() }
+        onStop: {
+            sizeChangedTimer.stop()
+            Activity.stop()
+        }
 
         ListModel {
             id: mapListModel

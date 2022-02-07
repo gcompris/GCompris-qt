@@ -119,7 +119,10 @@ ActivityBase {
         }
 
         onStart: { Activity.start(items) }
-        onStop: { Activity.stop() }
+        onStop: {
+            timer0.stop()
+            Activity.stop()
+        }
         onVisibleChanged: visible ? physicsWorld.running = true : physicsWorld.running = false
 
         World {

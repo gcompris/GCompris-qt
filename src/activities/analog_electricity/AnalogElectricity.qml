@@ -147,7 +147,11 @@ ActivityBase {
         }
 
         onStart: Activity.start(items);
-        onStop: Activity.stop();
+        onStop: {
+            resizeTimer.stop();
+            netlistTimer.stop();
+            Activity.stop();
+        }
 
         Rectangle {
             id: visibleArea

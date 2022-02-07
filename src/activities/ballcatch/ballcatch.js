@@ -73,7 +73,7 @@ function start(items_) {
 }
 
 function stop() {
-    // Nothing to do
+    items.deltaPressedTimer.stop();
 }
 
 function leftShiftPressed() {

@@ -60,6 +60,10 @@ Rectangle {
         }
     }
 
+    function stopTimer() {
+        timer.stop();
+    }
+
     Component {
         id: listElement
 

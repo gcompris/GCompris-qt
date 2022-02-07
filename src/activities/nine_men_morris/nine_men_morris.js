@@ -247,6 +247,7 @@ function start(items_, twoPlayer_) {
 }
 
 function stop() {
+    items.trigTuxMove.stop();
 }
 
 function initLevel() {

@@ -65,7 +65,10 @@ ActivityBase {
         }
 
         onStart: { Activity.start(items) }
-        onStop: { Activity.stop() }
+        onStop: {
+            checkTimer.stop()
+            Activity.stop()
+        }
 
         Keys.enabled: !bonus.isPlaying
         Keys.onPressed: {

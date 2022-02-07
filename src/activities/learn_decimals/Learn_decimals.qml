@@ -72,7 +72,10 @@ ActivityBase {
         onStart: {
             Activity.start(items)
         }
-        onStop: { Activity.stop() }
+        onStop: {
+            timer.stop()
+            Activity.stop()
+        }
 
         // Tutorial section starts
         Image {

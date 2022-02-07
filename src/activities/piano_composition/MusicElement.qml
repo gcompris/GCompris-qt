@@ -21,6 +21,16 @@ Item {
     width: noteImageWidth
     height: multipleStaff.height / 5
 
+    signal stop
+
+    Component.onCompleted: {
+        activity.stop.connect(stop);
+    }
+
+    onStop: {
+        highlightTimer.stop();
+    }
+
     property string noteName
     property string noteType
     property string soundPitch

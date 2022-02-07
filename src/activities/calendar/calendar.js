@@ -43,6 +43,7 @@ function start(items_, dataset_) {
 }
 
 function stop() {
+    items.questionDelay.stop();
 }
 
 function initLevel() {

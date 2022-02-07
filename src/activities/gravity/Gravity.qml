@@ -71,7 +71,11 @@ ActivityBase {
             explosion.hide()
             Activity.start(items,message)
         }
-        onStop: Activity.stop()
+        onStop: {
+            explosionTimer.stop()
+            spaceRepeat.stop()
+            Activity.stop()
+        }
 
         onWidthChanged: {
             initSpace()

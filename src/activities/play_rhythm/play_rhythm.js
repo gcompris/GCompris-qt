@@ -30,6 +30,7 @@ function start(items_) {
 }
 
 function stop() {
+    items.introductoryAudioTimer.stop()
     items.metronomeOscillation.stop()
     items.multipleStaff.stopAudios()
 }

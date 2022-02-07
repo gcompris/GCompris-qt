@@ -20,6 +20,18 @@ Item {
     width: optionsRow.iconsWidth * 2
     height: optionsRow.iconsWidth
     visible: bpmVisible
+
+    signal stop
+
+    Component.onCompleted: {
+        activity.stop.connect(stop);
+    }
+
+    onStop: {
+        decreaseBpm.stop();
+        increaseBpm.stop();
+    }
+
     Rectangle {
         id: bpmBg
         color: "yellow"

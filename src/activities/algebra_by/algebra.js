@@ -39,6 +39,7 @@ function start(items_, operand_, speedSetting_) {
 
 function stop() {
     items.balloon.stopMoving()
+    items.timer.stop()
 }
 
 function initLevel() {

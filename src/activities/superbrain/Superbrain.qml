@@ -61,7 +61,10 @@ ActivityBase {
         }
 
         onStart: { Activity.start(items) }
-        onStop: { Activity.stop() }
+        onStop: {
+            chooserTimer.stop()
+            Activity.stop()
+        }
 
         Column {
             id: colorsColumn
@@ -476,6 +479,15 @@ if (targetY < 0) {
                                     id: tooltipTimer
                                     repeat: false
                                     interval: 500
+                                    signal stopTimer
+
+                                    Component.onCompleted: {
+                                        activity.stop.connect(stopTimer);
+                                    }
+
+                                    onStopTimer: {
+                                        stop();
+                                    }
 
                                     onTriggered: showTooltip(true, status, mouseAreaRect)
                                 }

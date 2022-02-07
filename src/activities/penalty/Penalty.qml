@@ -83,7 +83,10 @@ ActivityBase {
         }
 
         onStart: { Activity.start(items) }
-        onStop: { Activity.stop() }
+        onStop: {
+            timerBonus.stop()
+            Activity.stop()
+        }
 
         /* Instruction */
         Item {
