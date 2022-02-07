@@ -50,6 +50,7 @@ function start(items_, gameMode_) {
 }
 
 function stop() {
+    items.trigTuxMove.stop();
 }
 
 function initLevel() {

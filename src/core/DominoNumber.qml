@@ -81,6 +81,16 @@ Item {
 
     readonly property var romans : ["", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX"]
 
+    signal stop
+
+    Component.onCompleted: {
+        activity.stop.connect(stop);
+    }
+
+    onStop: {
+        timer.stop();
+    }
+
     GCText {
         id: numberText
         visible: (item.mode == "number" || item.mode == "roman")

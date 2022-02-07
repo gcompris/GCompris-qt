@@ -66,6 +66,7 @@ ActivityBase {
             Activity.start(items, relativeMode, invisibleMode)
         }
         onStop: {
+            timeAutoMove.stop()
             Activity.stop()
         }
 

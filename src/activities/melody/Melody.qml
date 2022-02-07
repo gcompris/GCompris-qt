@@ -62,6 +62,7 @@ ActivityBase {
         }
 
         onStop: {
+            introDelay.stop()
             knock.stop()
             questionPlayer.stop()
             items.running = false

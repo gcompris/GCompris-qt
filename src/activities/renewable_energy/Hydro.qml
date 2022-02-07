@@ -21,6 +21,7 @@ Item {
     }
 
     function stop() {
+        timer.stop()
         anim.running = false
         dam.started = false
         river.level = 0

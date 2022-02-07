@@ -45,7 +45,7 @@ ActivityBase {
     ]
 
     onStart: focus = true
-    onStop: {}
+    onStop: unlockButtonBlock.stop()
 
     pageComponent: Image {
         id: background
@@ -85,6 +85,7 @@ ActivityBase {
             property string message
             property bool isWarningMessage
             property alias trigComputerMove: trigComputerMove
+            property alias timerSwap: timerSwap
             property alias whiteTakenPieceModel: whiteTakenPieces.takenPiecesModel
             property alias blackTakenPieceModel: blackTakenPieces.takenPiecesModel
 

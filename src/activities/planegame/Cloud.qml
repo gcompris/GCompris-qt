@@ -31,6 +31,16 @@ Image {
 
     signal done
     signal touch
+    signal stop
+
+    Component.onCompleted: {
+        activity.stop.connect(stop);
+    }
+
+    onStop: {
+        stormy.stop();
+        opacityTimer.stop();
+    }
 
     onDone: {
         particles.burst(50)

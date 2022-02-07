@@ -16,6 +16,16 @@ import "../../core"
 Rectangle {
     property alias text: warningText
 
+    signal stop
+
+    Component.onCompleted: {
+        activity.stop.connect(stop);
+    }
+
+    onStop: {
+        timerWarn.stop();
+    }
+
     width: warningText.contentWidth * 1.1
     height: warningText.height * 1.1
     opacity: 0

@@ -84,7 +84,10 @@ ActivityBase {
         onStart: {
             Activity.start(items)
         }
-        onStop: { Activity.stop() }
+        onStop: {
+            checkWinTimer.stop()
+            Activity.stop()
+        }
 
         Image {
             id: bgData

@@ -19,6 +19,17 @@ Item {
     property bool waterFilling: false
     property bool waterFlushing: false
 
+    signal stop
+
+    Component.onCompleted: {
+        activity.stop.connect(stop);
+    }
+
+    onStop: {
+        fillBallastTanks.stop();
+        flushBallastTanks.stop();
+    }
+
     function fillBallastTanks() {
         waterFilling = !waterFilling
     }

@@ -116,6 +116,8 @@ ActivityBase {
         }
         onStop: {
             spawningMonsters.stop()
+            positionTimer.stop()
+            timerActivateWarn.stop()
             monsters.destroyAll()
             Activity.stop()
         }

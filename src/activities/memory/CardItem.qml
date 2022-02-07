@@ -27,6 +27,17 @@ Flipable {
     property GCAudio audioVoices
     property GCSfx audioEffects
 
+    signal stop
+
+    Component.onCompleted: {
+        activity.stop.connect(stop);
+    }
+
+    onStop: {
+        timer.stop();
+        animationTimer.stop();
+    }
+
     onIsFoundChanged: {
         opacity = 0
         timer.start()

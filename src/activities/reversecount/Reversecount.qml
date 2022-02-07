@@ -59,7 +59,10 @@ ActivityBase {
         }
 
         onStart: { Activity.start(items) }
-        onStop: { Activity.stop() }
+        onStop: {
+            sizeChangedTimer.stop()
+            Activity.stop()
+        }
 
         Keys.onEnterPressed: chooseDiceBar.moveTux()
         Keys.onReturnPressed: chooseDiceBar.moveTux()
@@ -71,7 +74,7 @@ ActivityBase {
         onHeightChanged: {
             sizeChangedTimer.restart()
         }
-        
+
         function replaceItems() {
             if(Activity.fishIndex > 0) {
                 // set x
@@ -84,7 +87,7 @@ ActivityBase {
                 Activity.moveTuxToIceBlock()
             }
         }
-        
+
         Timer {
             id: sizeChangedTimer
             interval: 100

@@ -21,6 +21,16 @@ Rectangle {
     property bool isInitial
     property int gridIndex
 
+    signal stop
+
+    Component.onCompleted: {
+        activity.stop.connect(stop);
+    }
+
+    onStop: {
+        restoreColorTimer.stop();
+    }
+
     Image {
         id: imageId
         source: Activity.dataToImageSource(mCase.text)

@@ -58,6 +58,7 @@ function start(items_) {
 }
 
 function stop() {
+    items.winTimer.stop();
 }
 
 function initLevel() {

@@ -18,6 +18,16 @@ Creature {
     property int direction
     property var player
 
+    signal stop
+
+    Component.onCompleted: {
+        activity.stop.connect(stop);
+    }
+
+    onStop: {
+        timerMove.stop();
+    }
+
     function checkCell() {
         if (index === player.index && player.movable) {
             player.getCaught(-1)

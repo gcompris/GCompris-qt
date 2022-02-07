@@ -17,6 +17,7 @@ Item {
     property alias power: windTransformer.power
 
     function stop() {
+        windTimer.stop()
         cloud.started = false
         windTransformer.started = false
     }

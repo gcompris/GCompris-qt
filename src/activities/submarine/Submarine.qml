@@ -125,7 +125,13 @@ ActivityBase {
         }
 
         onStart: { Activity.start(items) }
-        onStop: { Activity.stop() }
+        onStop: {
+            smoothHorizontalVelocity.stop()
+            updateVerticalVelocity.stop()
+            removeSparkleTimer.stop()
+            updateOnWidthReset.stop()
+            Activity.stop()
+        }
 
         World {
             id: physicalWorld

@@ -34,6 +34,7 @@ function start(items_) {
 }
 
 function stop() {
+    items.timer.stop();
 }
 
 function initLevel() {

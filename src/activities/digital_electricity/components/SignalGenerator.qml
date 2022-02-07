@@ -27,6 +27,16 @@ ElectricalComponent {
     property var periodFraction: ["1/4","1/2","1","2"]
     property int periodIndex: 2
 
+    signal stop
+
+    Component.onCompleted: {
+        activity.stop.connect(stop);
+    }
+
+    onStop: {
+        timer.stop();
+    }
+
     Repeater {
         id: outputTerminals
         model: 1

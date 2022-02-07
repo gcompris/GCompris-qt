@@ -27,6 +27,7 @@ function start(items_) {
 }
 
 function stop() {
+    items.lineBrokenTimer.stop()
     destroyLineParts()
 }
 

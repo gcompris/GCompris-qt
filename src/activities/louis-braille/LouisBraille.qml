@@ -46,7 +46,10 @@ ActivityBase {
         }
 
         onStart: { Activity.start(items) }
-        onStop: { Activity.stop() }
+        onStop: {
+            list.stopTimer()
+            Activity.stop()
+        }
 
         Image {
             id: charList

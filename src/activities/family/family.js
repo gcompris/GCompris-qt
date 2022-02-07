@@ -38,6 +38,7 @@ function start(items_) {
 }
 
 function stop() {
+    items.loadDatasetDelay.stop();
     GCompris.ApplicationSettings.isBarHidden = barAtStart;
 }
 
