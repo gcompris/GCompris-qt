@@ -355,13 +355,12 @@ ActivityBase {
         Image {
             id: vapor
             opacity: 0
-            state: "vapor"
             source: activity.url + "vapor.svg"
             width: layoutArea.width * 0.1
             fillMode: Image.PreserveAspectFit
             sourceSize.width: width
             property bool isUp: false
-            property bool animLoop: true
+            property bool animLoop: false
             anchors {
                 left: sun.left
                 top: layoutArea.top
@@ -507,9 +506,9 @@ ActivityBase {
                 top: layoutArea.top
                 topMargin: layoutArea.width * 0.123
                 left: cloud.left
-                leftMargin: cloud.width * 0.26
+                leftMargin: cloud.width * 0.25
             }
-            z: 10
+            z: 12
             Behavior on opacity { PropertyAnimation { easing.type: Easing.InOutQuad; duration: 300 } }
             SequentialAnimation{
                 id: rainAnim
