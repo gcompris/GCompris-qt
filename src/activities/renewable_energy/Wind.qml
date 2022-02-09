@@ -1,10 +1,12 @@
 /* GCompris - wind.qml
  *
  * SPDX-FileCopyrightText: 2015 Sagar Chand Agarwal <atomsagar@gmail.com>
+ * SPDX-FileCopyrightText: 2022 Timothée Giet <animtim@gmail.com>
  *
  * Authors:
  *   Bruno Coudoin <bruno.coudoin@gcompris.net> (GTK+ version)
  *   Sagar Chand Agarwal <atomsagar@gmail.com> (Qt Quick port)
+ *   Timothée Giet <animtim@gmail.com> (Big refactoring)
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
@@ -22,17 +24,22 @@ Item {
         windTransformer.started = false
     }
 
+    function stopTimer() {
+        windTimer.stop();
+    }
+
     Image {
         id: cloud
         opacity: 1
-        source: activity.url + "wind/" + (started ? "cloud_fury.svg" :"cloud_quiet.svg")
-        sourceSize.width: parent.width * 0.20
-        sourceSize.height: parent.height * 0.10
+        source: activity.url + "wind/cloud_quiet.svg"
+        width: parent.width * 0.225
+        sourceSize.width: width
+        fillMode: Image.PreserveAspectFit
         anchors {
-            right: parent.right
+            left: parent.left
             top: parent.top
-            topMargin: 0.02 * parent.height
-            rightMargin: 0.05 * parent.width
+            topMargin: parent.width * 0.02
+            leftMargin: parent.width * 0.764
         }
         property bool started: false
         MouseArea {
@@ -44,6 +51,15 @@ Item {
         }
     }
 
+    Image {
+        id: cloudActive
+        source: activity.url + "wind/cloud_blowing.svg"
+        visible: cloud.started
+        anchors.fill: cloud
+        sourceSize.width: width
+        fillMode: Image.PreserveAspectFit
+    }
+
     Timer {
         id: windTimer
         interval: 30000
@@ -53,23 +69,51 @@ Item {
     }
 
     Image {
-        id: windTransformer
-        source: activity.url + (started ? "transformer.svg" : "transformer_off.svg")
-        sourceSize.width: parent.width * 0.035
-        height: parent.height * 0.06
+        source: activity.url + (windTurbine.power ? "wind/wind_on.svg" : "wind/wind_off.svg")
+        width: parent.width * 0.119
+        sourceSize.width: width
+        fillMode: Image.PreserveAspectFit
         anchors {
             top: parent.top
-            right: parent.right
-            topMargin: parent.height * 0.2
-            rightMargin: parent.width * 0.18
+            left: parent.left
+            topMargin: parent.width * 0.199
+            leftMargin: parent.width * 0.733
+        }
+    }
+
+    Image {
+        source: activity.url + (windTransformer.power ? "wind/wind_power_on.svg" : "wind/wind_power_off.svg")
+        width: parent.width * 0.065
+        sourceSize.width: width
+        fillMode: Image.PreserveAspectFit
+        anchors {
+            top: parent.top
+            left: parent.left
+            topMargin: parent.width * 0.28
+            leftMargin: parent.width * 0.699
+        }
+    }
+
+    Image {
+        id: windTransformer
+        source: activity.url + "transformer_off.svg"
+        width: parent.width * 0.05
+        sourceSize.width: width
+        fillMode: Image.PreserveAspectFit
+        anchors {
+            top: parent.top
+            left: parent.left
+            topMargin: parent.width * 0.241
+            leftMargin: parent.width * 0.726
         }
         property bool started: false
         property int power: started ? windTurbine.power : 0
         MouseArea {
             anchors.centerIn: parent
             // Size the area for a touch screen
-            width: 70 * ApplicationInfo.ratio
-            height: width
+            width: parent.width * 1.2
+            height: parent.height * 1.2
+            enabled: parent.visible
             onClicked: {
                 parent.started = !parent.started
             }
@@ -77,57 +121,41 @@ Item {
     }
 
     Image {
-        sourceSize.width: windTransformer.width / 2
-        sourceSize.height: windTransformer.height / 2
-        source: activity.url + "down.svg"
+        id: windTransformerOn
+        source: activity.url + "transformer_on"
+        visible: windTransformer.started
+        anchors.fill: windTransformer
+        sourceSize.width: width
+        fillMode: Image.PreserveAspectFit
+    }
+
+    Rectangle {
+        width: windvoltage.width * 1.1
+        height: windvoltage.height * 1.1
+        border.color: items.produceColorBorder
+        radius: 5
+        color: items.produceColor
         anchors {
-            bottom: windTransformer.top
-            right: parent.right
-            rightMargin: parent.width*0.20
+            bottom: windTransformer.verticalCenter
+            right: windTransformer.left
         }
-
-        Rectangle {
-            width: windvoltage.width * 1.1
-            height: windvoltage.height * 1.1
-            border.color: "black"
-            radius: 5
-            color: items.produceColor
-            anchors {
-                bottom: parent.top
-                right: parent.right
-            }
-            GCText {
-                id: windvoltage
-                anchors.centerIn: parent
-                text: wind.power.toString() + "W"
-                fontSize: smallSize * 0.5
-            }
+        GCText {
+            id: windvoltage
+            anchors.centerIn: parent
+            text: wind.power.toString() + "W"
+            fontSize: smallSize * 0.5
         }
-    }
-
-
-    Image {
-        source: activity.url + (windTurbine.power ? "wind/windturbineon.svg" : "wind/windturbineoff.svg")
-        sourceSize.width: parent.width
-        sourceSize.height: parent.height
-        anchors.fill: parent
-    }
-
-    Image {
-        source: activity.url + (windTransformer.power ? "wind/windpoweron.svg" : "wind/windpoweroff.svg")
-        sourceSize.width: parent.width
-        sourceSize.height: parent.height
-        anchors.fill: parent
     }
 
     // Wind turbines
     WindTurbine {
         id: windTurbine
+        width: parent.width * 0.054
         anchors {
             top: parent.top
-            right: parent.right
-            topMargin: parent.height * 0.17
-            rightMargin: parent.width * 0.05
+            left: parent.left
+            topMargin: parent.width * 0.126
+            leftMargin: parent.width * 0.734
         }
         z: 55
         duration: 3200
@@ -135,22 +163,24 @@ Item {
     }
     WindTurbine {
         id: windTurbine2
+        width: parent.width * 0.054
         anchors {
             top: parent.top
-            right: parent.right
-            topMargin: parent.height * 0.15
-            rightMargin: parent.width * 0.1
+            left: parent.left
+            topMargin: parent.width * 0.138
+            leftMargin: parent.width * 0.778
         }
         z: 54
         duration: 3500
     }
     WindTurbine {
         id: windTurbine3
+        width: parent.width * 0.054
         anchors {
             top: parent.top
-            right: parent.right
-            topMargin: parent.height * 0.12
-            rightMargin: parent.width * 0.15
+            left: parent.left
+            topMargin: parent.width * 0.15
+            leftMargin: parent.width * 0.822
         }
         z: 53
         duration: 3100
