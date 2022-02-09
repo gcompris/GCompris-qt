@@ -325,7 +325,7 @@ QVariantList ActivityInfoTree::allCharacters()
     for (const auto &tree: constMenuTreeFull) {
         const QString &title = tree->title();
         for (const QChar &letter: title) {
-            if (!letter.isSpace() && !letter.isPunct()) {
+            if (letter.isLetterOrNumber() || letter == QLatin1Char('-')) {
                 keyboardChars.insert(letter.toLower());
             }
         }
