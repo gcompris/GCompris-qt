@@ -14,19 +14,22 @@ import "../../core"
 Image {
     id: windTurbine
     source: activity.url + "wind/mast.svg"
-    sourceSize.width: parent.width * 0.01
+    sourceSize.width: width
+    fillMode: Image.PreserveAspectFit
     property int duration
 
     Image {
         id: blade
         source: activity.url + "wind/blade.svg"
-        sourceSize.height: parent.height * 1.3
+        width: parent.width
+        sourceSize.width: width
+        fillMode: Image.PreserveAspectFit
         anchors {
             horizontalCenter: parent.horizontalCenter
-            verticalCenter: parent.top
-            verticalCenterOffset: parent.height * 0.06
+            verticalCenter: parent.verticalCenter
+            verticalCenterOffset: parent.height * -0.08
         }
-        
+
         SequentialAnimation on rotation {
             id: anim
             loops: Animation.Infinite
