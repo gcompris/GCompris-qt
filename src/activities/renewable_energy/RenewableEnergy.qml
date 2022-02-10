@@ -47,7 +47,8 @@ ActivityBase {
             property bool isVertical: background.width < background.height - bar.height * 1.2
             property alias bonus: bonus
             property GCSfx audioEffects: activity.audioEffects
-            property int currentLevel
+            // we initialize it to -1, so onStart it forces a layout refresh when it's set to 0
+            property int currentLevel: -1
             property int numberOfLevel: 3
             property bool sunIsUp: true
             property color consumeColor: "#E09C4C"
@@ -58,7 +59,7 @@ ActivityBase {
             property bool restarted: false
         }
 
-        onStart: {}
+        onStart: items.currentLevel = 0
         onStop: {
             hydro.item.stopTimer();
             wind.item.stopTimer();
