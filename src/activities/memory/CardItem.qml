@@ -115,7 +115,14 @@ Flipable {
     }
 
     transitions: Transition {
-        NumberAnimation { target: rotation; property: "angle"; duration: 750 }
+        SequentialAnimation {
+            NumberAnimation { target: rotation; property: "angle"; duration: 750 }
+            ScriptAction { script: {
+                if(card.pairData.sound && !card.isBack)
+                    audioVoices.play(card.pairData.sound)
+                }
+            }
+        }
     }
 
     MouseArea {
@@ -137,10 +144,6 @@ Flipable {
         var win = Activity.reverseCardsIfNeeded()
         if(tuxTurn && win || tuxTurn && !pairs)
             Activity.tuxPlay()
-
-        if (card.pairData.sound) {
-            audioVoices.play(card.pairData.sound)
-        }
     }
 
     Behavior on opacity { NumberAnimation { duration: 1000 } }
