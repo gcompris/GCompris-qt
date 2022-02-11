@@ -144,7 +144,15 @@ function getRandomLetter(word) {
 function getRandomMaskedQuestion(clearQuestion, guessLetters, level) {
     var maskedQuestion = clearQuestion
     var goodLetter = getRandomLetter(maskedQuestion)
-    var index = maskedQuestion.search(goodLetter)
+
+    // If the word has several occurrences of the letter, choose one at random
+    var goodLetterPositions = [];
+    for(var i = 0; i < maskedQuestion.length; i++) {
+        if (maskedQuestion[i] === goodLetter) {
+            goodLetterPositions.push(i);
+        }
+    }
+    var index = goodLetterPositions[Math.floor(Math.random() * goodLetterPositions.length)];
 
     // Replace the char at index with '_'
     var repl = maskedQuestion.split('')
