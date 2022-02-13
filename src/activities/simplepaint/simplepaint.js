@@ -99,7 +99,7 @@ var backgrounds = [
     'qrc:/gcompris/src/activities/gletters/resource/background.svg',
     'qrc:/gcompris/src/activities/braille_alphabets/resource/background.svg',
     'qrc:/gcompris/src/activities/followline/resource/background.svg',
-    'qrc:/gcompris/src/activities/money/resource/background.svg',
+    'qrc:/gcompris/src/activities/bargame/resource/background.svg',
     'qrc:/gcompris/src/activities/menu/resource/background.svg',
     'qrc:/gcompris/src/activities/smallnumbers2/resource/background.svg',
     'qrc:/gcompris/src/activities/align4-2players/resource/background.svg',
@@ -107,7 +107,11 @@ var backgrounds = [
     'qrc:/gcompris/src/activities/magic-hat-minus/resource/background.svg',
     'qrc:/gcompris/src/activities/tic_tac_toe/resource/background.svg',
     'qrc:/gcompris/src/activities/click_on_letter/resource/background.svg',
-    'qrc:/gcompris/src/activities/fifteen/resource/background.svg'
+    'qrc:/gcompris/src/activities/fifteen/resource/background.svg',
+    'qrc:/gcompris/src/activities/crane/resource/background.svg',
+    'qrc:/gcompris/src/activities/hangman/resource/background.svg',
+    'qrc:/gcompris/src/activities/land_safe/resource/background.svg',
+    'qrc:/gcompris/src/activities/target/resource/target_background.svg',
 ]
 
 var items
