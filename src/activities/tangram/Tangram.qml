@@ -249,7 +249,9 @@ ActivityBase {
                     x: - width
                     y: parent.height / 2 - height / 2
                     visible: tansItem.selected && tansItem.rotable
-                    sourceSize.width: 40 * ApplicationInfo.ratio
+                    width: 40 * ApplicationInfo.ratio
+                    sourceSize.width: width
+                    fillMode: Image.PreserveAspectFit
                     z: tansItem.z + 1
 
                     RotateMouseArea {}
@@ -261,7 +263,9 @@ ActivityBase {
                     x: parent.width / 2 - width / 2
                     y: parent.height - height / 2
                     visible: tansItem.selected && tansItem.flippable
-                    sourceSize.width: 40 * ApplicationInfo.ratio
+                    width: 40 * ApplicationInfo.ratio
+                    sourceSize.width: width
+                    fillMode: Image.PreserveAspectFit
                     z: tansItem.z + 1
 
                     MouseArea {
