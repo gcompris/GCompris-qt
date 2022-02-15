@@ -1,8 +1,12 @@
-Copyright: 2000, 2008 Bruno Coudoin and others
+Copyright: Timothée Giet, 2022
+License: CC-BY-SA 4.0
+Files:
+tangrame/flip.svg
+
+Copyright: 2000, 2022 Timothée Giet and others
 License: Public domain
 Files:
 tangram/background.svg
-tangram/flip.svg
 tangram/p0.svg
 tangram/p1.svg
 tangram/p2.svg
