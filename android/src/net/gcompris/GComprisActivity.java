@@ -19,10 +19,13 @@ import android.content.Context;
 import android.view.WindowManager;
 import java.text.Collator;
 import java.util.Locale;
+import java.util.Arrays;
+import java.util.List;
 
 public class GComprisActivity extends QtActivity
 {
     private static GComprisActivity m_instance;
+    private List<Locale> availableLocales = null;
 
     public GComprisActivity()
     {
@@ -80,18 +83,21 @@ public class GComprisActivity extends QtActivity
 
 	public int localeCompare(String a, String b, String locale)
 	{
+		// Only initialize once the available locales list
+		if(availableLocales == null)
+			availableLocales = Arrays.asList(Collator.getAvailableLocales());
 		String[] parts = locale.split("[\\._]");
 		Locale l;
-		if (parts.length == 1)
-			l = new Locale(parts[0]);
-		else if (parts.length == 2)
+		if (parts.length >= 2 && availableLocales.contains(new Locale(parts[0], parts[1])))
 			l = new Locale(parts[0], parts[1]);
+		else if (availableLocales.contains(new Locale(parts[0])))
+			l = new Locale(parts[0]);
 		else
 			l = Locale.getDefault();
 		Collator collator = Collator.getInstance(l);
 		// Note: This works only if the device supports the
 		// passed locale. If it does not or if an invalid locale string has been
 		// passed, the collator seems to sort according to Locale.getDefault()
-		return collator.compare(a, b);
+                return collator.compare(a, b);
 	}
 }
