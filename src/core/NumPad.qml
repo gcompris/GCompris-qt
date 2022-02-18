@@ -102,7 +102,7 @@ Item {
       *
       * Stores the decimal point character of the current locale.
       */
-    readonly property string decimalPoint: Qt.locale(ApplicationSettings.locale).decimalPoint
+    readonly property string decimalPoint: ApplicationSettings.locale == "system" ? Qt.locale().decimalPoint : Qt.locale(ApplicationSettings.locale).decimalPoint
 
     /**
      * type:int
