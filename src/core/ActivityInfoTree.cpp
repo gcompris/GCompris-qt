@@ -145,7 +145,6 @@ void ActivityInfoTree::filterByTag(const QString &tag, const QString &category, 
 
 void ActivityInfoTree::filterByDifficulty(quint32 levelMin, quint32 levelMax)
 {
-    //todo fix here the difficulty filtering
     auto it = std::remove_if(m_menuTree.begin(), m_menuTree.end(),
                              [&](const ActivityInfo *activity) {
                                  return activity->minimalDifficulty() < levelMin || activity->maximalDifficulty() > levelMax;
@@ -333,7 +332,9 @@ QVariantList ActivityInfoTree::allCharacters()
     for (const QChar &letters: keyboardChars) {
         m_keyboardCharacters.push_back(letters);
     }
-    std::sort(m_keyboardCharacters.begin(), m_keyboardCharacters.end(), [](const QVariant &v1, const QVariant &v2) { return v1.toChar() < v2.toChar(); });
+    std::sort(m_keyboardCharacters.begin(), m_keyboardCharacters.end(), [](const QVariant &v1, const QVariant &v2) {
+        return ApplicationInfo::getInstance()->localeCompare(v1.toString(), v2.toString()) < 0;
+    });
 
     return m_keyboardCharacters;
 }
