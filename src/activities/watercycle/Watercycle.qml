@@ -89,6 +89,7 @@ ActivityBase {
             property bool restarted: false
             property bool cycleDone: false
             property bool isVertical: background.width < background.height - bar.height * 1.2
+            property bool textOnSide: background.width > layoutArea.width * 1.5
             property GCSfx audioEffects: activity.audioEffects
         }
 
@@ -878,8 +879,16 @@ ActivityBase {
                     }
                 },
                 State {
-                    name: "horizontalInfo"
-                    when: !items.isVertical
+                    name: "horizontalInfoSide"
+                    when: !items.isVertical && items.textOnSide
+                    PropertyChanges {
+                        target: info
+                        anchors.leftMargin: layoutArea.width + 15 * ApplicationInfo.ratio
+                    }
+                },
+                State {
+                    name: "horizontalInfoOver"
+                    when: !items.isVertical && !items.textOnSide
                     PropertyChanges {
                         target: info
                         anchors.leftMargin: parent.width * 0.5
@@ -925,7 +934,7 @@ ActivityBase {
             id: infoBg
             z: 99
             anchors.fill: info
-            color: '#B0D2D2D2'
+            color: '#D2D2D2'
             radius: width * 0.01
             opacity: info.text ? 0.7 : 0
             visible: info.visible
