@@ -141,7 +141,7 @@ if(Qt5Core_VERSION VERSION_GREATER_EQUAL "5.12.5" AND NOT Qt5Core_VERSION MATCHE
   set(suffix_libssl "_1_1.so")
 endif()
 
-find_program(LLVM_STRIP NAMES llvm-strip)
+find_program(LLVM_STRIP NAMES llvm-strip PATHS ${ANDROID_NDK}/toolchains/llvm/prebuilt/linux-x86_64/bin/)
 
 ExternalProject_Add(
   ext_openssl
