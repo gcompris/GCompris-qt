@@ -9,9 +9,7 @@ class ApplicationInfo(QObject):
 
     def __init__(self, parent=None):
         super().__init__(parent)
-
         # Initialise the value of the properties.
-        self._localeShort = "fr"
         self._isBox2DInstalled = True
         self._isMobile = False
 
@@ -24,13 +22,9 @@ class ApplicationInfo(QObject):
         self._isBox2DInstalled = isBox2DInstalled
 
     @pyqtProperty('QString')
-    def localeShort(self, notify=localeShortChanged):
-        return self._localeShort
-
-    @localeShort.setter
-    def setLocaleShort(self, localeShort):
-        self._localeShort = localeShort
-
+    def localeShort(self, notify=localeShortChanged, constant=True):
+        return "fr"
+    
     def createSingleton(self, engine):
         return ApplicationInfo(self)
 

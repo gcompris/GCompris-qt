@@ -120,7 +120,7 @@ if os.path.exists(gcompris_source + "/docs/manual-general"):
 # Create Qt application to load the activities information from ActivityInfo.qml
 app = QCoreApplication(sys.argv)
 translator = QTranslator()
-translator.load(str(web_source + "locale/"+locale+"/LC_MESSAGES/gcompris_qt.qm"))
+translator.load(os.path.join(web_source, "locale", locale,"LC_MESSAGES/gcompris_qt.qm"))
 app.installTranslator(translator)
 
 # create qml engine to read the files
@@ -128,12 +128,12 @@ engine = QQmlEngine()
 activityInfoComponent = QQmlComponent(engine)
 qmlRegisterSingletonType(ApplicationInfo, "GCompris", 1, 0, "ApplicationInfo", ApplicationInfo.createSingleton);
 qmlRegisterType(ActivityInfo, "GCompris", 1, 0, "ActivityInfo");
-#qmlRegisterType(Dataset, "GCompris", 1, 0, "Data");
+qmlRegisterType(Dataset, "GCompris", 1, 0, "Data");
 
 for activity in os.listdir(activity_dir):
     if activity in ["CMakeLists.txt", "template", "createit.sh", "README", "activities.txt", "activities_out.txt", "activities.qrc", "menu"]:
         continue
-    activityInfoComponent.loadUrl(QUrl(activity_dir + "/" + activity + "/ActivityInfo.qml"))
+    activityInfoComponent.loadUrl(QUrl(os.path.join(activity_dir,activity,"ActivityInfo.qml")))
     activityInfo = activityInfoComponent.create()
 
     if activityInfo is None:
@@ -163,7 +163,6 @@ for activity in os.listdir(activity_dir):
         levels = None
     hasError = False
 
-    print(name)
     translated_title = escape_latex(title)
     # remove quotes if there are
     translated_title = translated_title.replace("\"", "")
@@ -187,25 +186,16 @@ for activity in os.listdir(activity_dir):
                 for level in levels:
                     # needs to be opened via qml to get the full string
                     # (in case of line break)
-                    f = open(activity_dir + "/" + activity + "/resource/" + level + "/Data.qml")
-                    content2 = f.readlines()
-                    for line in content2:
-                        m = re.match('.*objective:.*\"(.*)\"', line)
-                        if m:
-                            objective = m.group(1)
-                    objective_tabular.add_row((level, getTranslatedText(objective, gcompris_po_translated_entries)))
-#                    dataComponent = QQmlComponent(engine)
-#                    dataComponent.loadUrl(QUrl(activity_dir + "/" + activity + "/resource/" + level + "/Data.qml"))
-#                    data = dataComponent.create()
-#                    for error in dataComponent.errors():
-#                        print("JJ", error.toString())
-#                        hasError = True
-#                        break
-#                    if hasError:
-#                        break
-#                    print(data.property('objective'))
-#                    objective = data.property('objective')
-#                    objective_tabular.add_row((level, objective))
+                    dataComponent = QQmlComponent(engine)
+                    dataComponent.loadUrl(QUrl(os.path.join(activity_dir, activity, "resource", level, "Data.qml")))
+                    data = dataComponent.create()
+                    for error in dataComponent.errors():
+                        print("JJ", error.toString())
+                        hasError = True
+                    if hasError:
+                        break
+                    objective = data.property('objective')
+                    objective_tabular.add_row((level, objective))
                     objective_tabular.add_hline()
 
 # would be great to use but do not work with Greek or Ukrainian for example as 
