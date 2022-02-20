@@ -9,7 +9,7 @@
  */
 .pragma library
 .import QtQuick 2.12 as Quick
-.import "qrc:/gcompris/src/core/core.js" as Core
+.import "../../core/core.js" as Core
 
 
 var numberOfLevel;

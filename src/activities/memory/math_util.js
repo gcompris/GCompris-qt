@@ -6,7 +6,7 @@
  */
 
 .pragma library
-.import "qrc:/gcompris/src/core/core.js" as Core
+.import "../../core/core.js" as Core
 
 var cacheAdd = {};
 function getAddTable(table) {

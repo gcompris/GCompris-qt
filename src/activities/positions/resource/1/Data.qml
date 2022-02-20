@@ -8,7 +8,7 @@
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
 import GCompris 1.0
-import "qrc:/gcompris/src/activities/positions/positions.js" as Activity
+import "../../positions.js" as Activity
 
 Data {
     objective: qsTr("Basic positions.")

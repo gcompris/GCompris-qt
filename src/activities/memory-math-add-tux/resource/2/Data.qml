@@ -9,7 +9,7 @@
  */
 
 import GCompris 1.0
-import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+import "../../../memory/math_util.js" as Memory
 
 Data {
     objective: qsTr("Addition table of 2.")
