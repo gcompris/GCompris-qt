@@ -3,7 +3,7 @@
 #
 # user_manual_generator.py
 #
-# Copyright (C) 2018 Johnny Jazeix <jazeix@gmail.com>
+# Copyright (C) 2018-2022 Johnny Jazeix <jazeix@gmail.com>
 #
 #   This program is free software; you can redistribute it and/or modify
 #   it under the terms of the GNU General Public License as published by
@@ -21,6 +21,13 @@
 from pylatex import Document, Section, Subsection, Tabular, MultiColumn, \
  Figure, Package, NewLine, Command, escape_latex
 from pylatex.utils import NoEscape
+
+from PyQt5.QtCore import QCoreApplication, QUrl, QTranslator
+from PyQt5.QtQml import qmlRegisterType, qmlRegisterSingletonType, QQmlComponent, QQmlEngine
+
+from ActivityInfo import ActivityInfo
+from ApplicationInfo import ApplicationInfo
+from Dataset import Dataset
 
 import subprocess
 import sys
@@ -110,46 +117,68 @@ if os.path.exists(gcompris_source + "/docs/manual-general"):
     doc.append(NoEscape(r'\newpage'))
 
 
+# Create Qt application to load the activities information from ActivityInfo.qml
+app = QCoreApplication(sys.argv)
+translator = QTranslator()
+translator.load(str(web_source + "locale/"+locale+"/LC_MESSAGES/gcompris_qt.qm"))
+app.installTranslator(translator)
+
+# create qml engine to read the files
+engine = QQmlEngine()
+activityInfoComponent = QQmlComponent(engine)
+qmlRegisterSingletonType(ApplicationInfo, "GCompris", 1, 0, "ApplicationInfo", ApplicationInfo.createSingleton);
+qmlRegisterType(ActivityInfo, "GCompris", 1, 0, "ActivityInfo");
+#qmlRegisterType(Dataset, "GCompris", 1, 0, "Data");
+
 for activity in os.listdir(activity_dir):
     if activity in ["CMakeLists.txt", "template", "createit.sh", "README", "activities.txt", "activities_out.txt", "activities.qrc", "menu"]:
         continue
-    with open(activity_dir + "/" + activity + "/ActivityInfo.qml") as f:
-        content = f.readlines()
-        description = "need to fill a description for " + activity
-        goal = "need to fill a goal for " + activity
-        levels = []
-        for line in content:
-            m = re.match('.*title:.*\"(.*)\"', line)
-            if m:
-                title = m.group(1)
+    activityInfoComponent.loadUrl(QUrl(activity_dir + "/" + activity + "/ActivityInfo.qml"))
+    activityInfo = activityInfoComponent.create()
 
-            m = re.match('.*description:.*\"(.*)\"', line)
-            if m and m.group(1):
-                description = m.group(1)
+    if activityInfo is None:
+        # Print all errors that occurred.
+        for error in activityInfoComponent.errors():
+            print(error.toString())
+            exit(-1)
+    # ignore disabled activities
+    if not activityInfo.property('enabled'):
+        print("Disabling", activityInfo.property('name'))
+        continue
+    description = activityInfo.property('description').replace('\n', '<br/>')
+    name = activityInfo.property('name').split('/')[0]
+    title = activityInfo.property('title')
+    credit = activityInfo.property('credit').replace('\n', '<br/>')
+    goal = activityInfo.property('goal').replace('\n', '<br/>')
+    section = activityInfo.property('section')
+    author = activityInfo.property('author')
+    manual = activityInfo.property('manual').replace('\n', '<br/>')
+    difficulty = activityInfo.property('difficulty')
+    category = activityInfo.property('category')
+    prerequisite = activityInfo.property('prerequisite').replace('\n', '<br/>')
+    icon = activityInfo.property('icon').split('/')[0]
+    if len(activityInfo.property('levels')) != 0:
+        levels = activityInfo.property('levels').split(',')
+    else:
+        levels = None
+    hasError = False
 
-            m = re.match('.*goal:.*\"(.*)\"', line)
-            if m:
-                goal = m.group(1)
-
-            m = re.match('.*levels:.*\"(.*)\"', line)
-            if m:
-                levels = m.group(1).split(',')
-
-    translated_title = escape_latex(getTranslatedText(title, gcompris_po_translated_entries))
+    print(name)
+    translated_title = escape_latex(title)
     # remove quotes if there are
     translated_title = translated_title.replace("\"", "")
     with doc.create(Section(translated_title, numbering=False)):
         doc.append(NoEscape(r'\addcontentsline{toc}{section}{'+translated_title+'}'));
-        doc.append(escape_latex(getTranslatedText(description, gcompris_po_translated_entries)))
+        doc.append(escape_latex(description))
         doc.append(NewLine())
-        doc.append(getTranslatedText("Goal:", gcompris_po_translated_entries) + " " + getTranslatedText(goal, gcompris_po_translated_entries))
+        doc.append(app.translate(None, "Goal:") + " " + goal)
 
         with doc.create(Figure(position='H')) as activity_picture:
             activity_image = gcompris_web_screenshots + activity + ".png"
             activity_picture.add_image(activity_image, width='250px')
             activity_picture.add_caption(translated_title)
 
-        if levels:
+        if levels != None:
             with doc.create(Tabular("|p{5cm}|p{12cm}|")) as objective_tabular:
                 objective_tabular.add_hline()
                 # needs translation
@@ -165,6 +194,18 @@ for activity in os.listdir(activity_dir):
                         if m:
                             objective = m.group(1)
                     objective_tabular.add_row((level, getTranslatedText(objective, gcompris_po_translated_entries)))
+#                    dataComponent = QQmlComponent(engine)
+#                    dataComponent.loadUrl(QUrl(activity_dir + "/" + activity + "/resource/" + level + "/Data.qml"))
+#                    data = dataComponent.create()
+#                    for error in dataComponent.errors():
+#                        print("JJ", error.toString())
+#                        hasError = True
+#                        break
+#                    if hasError:
+#                        break
+#                    print(data.property('objective'))
+#                    objective = data.property('objective')
+#                    objective_tabular.add_row((level, objective))
                     objective_tabular.add_hline()
 
 # would be great to use but do not work with Greek or Ukrainian for example as 
