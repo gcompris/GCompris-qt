@@ -13,7 +13,7 @@ import GCompris 1.0
 import "../analog_electricity.js" as Activity
 
 ElectricalComponent {
-    id: redLed //to form a LED, connecting diode, resistor of 19 ohm and voltage source of 1.84v in series
+    id: redLed //to form an LED, connecting diode, resistor of 19 ohm and voltage source of 1.84v in series
     terminalSize: 0.2
     noOfConnectionPoints: 2
     information: qsTr("Red LED converts electrical energy into red light energy. It can glow only if the current flow is in the direction of the arrow. Electrical energy more than a certain limit can break it.")
