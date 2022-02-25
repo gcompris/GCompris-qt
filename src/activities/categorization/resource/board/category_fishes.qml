@@ -26,7 +26,7 @@ QtObject {
                     "maxNumberOfBad": 6,
                     "prefix": "qrc:/gcompris/src/activities/categorization/resource/images/",
                     "good": ["fishes/fish1.jpg","fishes/fish2.png","fishes/fish3.jpg","fishes/fish4.jpg","fishes/fish5.jpg","fishes/fish6.jpg"],
-                    "bad": ["monuments/beandenburgGate.jpg","monuments/burj.jpg","others/bulb.jpg","tools/cutingTool.jpg","others/knife.jpg","tools/multimeter.jpg"]
+                    "bad": ["monuments/brandenburgGate.jpg","monuments/burj.jpg","others/bulb.jpg","tools/cutingTool.jpg","others/knife.jpg","tools/multimeter.jpg"]
                 },
                 {
                     "instructions": qsTr("Place the FISHES to the right and other objects to the left"),

@@ -44,7 +44,7 @@ QtObject {
                     "maxNumberOfBad": 6,
                     "prefix": "qrc:/gcompris/src/activities/categorization/resource/images/",
                     "good": ["tools/scissor1.jpg","tools/scissor2.jpg","tools/scissors.jpg","tools/sprinkler.jpg","tools/tweezer.jpg","tools/wrench1.jpg"],
-                    "bad": ["others/buffetset.jpg","monuments/beandenburgGate.jpg","monuments/parthenon.jpg","fishes/fish12.jpg","fishes/fish16.jpg","others/plate.jpg"]
+                    "bad": ["others/buffetset.jpg","monuments/brandenburgGate.jpg","monuments/parthenon.jpg","fishes/fish12.jpg","fishes/fish16.jpg","others/plate.jpg"]
                 },
                 {
                     "instructions": qsTr("Place the TOOLS to the right and other objects to the left"),
