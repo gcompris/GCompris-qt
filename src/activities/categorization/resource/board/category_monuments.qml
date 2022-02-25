@@ -25,7 +25,7 @@ QtObject {
                     "maxNumberOfGood": 6,
                     "maxNumberOfBad": 6,
                     "prefix": "qrc:/gcompris/src/activities/categorization/resource/images/",
-                    "good": ["monuments/bayterek.jpg","monuments/burj.jpg","monuments/cathedral.jpg","monuments/colosseum.jpg","monuments/beandenburgGate.jpg","monuments/arcDeTriomphe.jpg"],
+                    "good": ["monuments/bayterek.jpg","monuments/burj.jpg","monuments/cathedral.jpg","monuments/colosseum.jpg","monuments/brandenburgGate.jpg","monuments/arcDeTriomphe.jpg"],
                     "bad": ["renewable/windmill5.jpg","renewable/dam2.jpg","tools/tweezer.jpg","others/bulb.jpg","others/pan.jpg","others/knife.jpg"]
                 },
                 {
@@ -57,7 +57,7 @@ QtObject {
                 },
                 {
                     "instructions": qsTr("Place the MONUMENTS to the right and other objects to the left"),
-                    "image": imagesPrefix + "beandenburgGate.jpg",
+                    "image": imagesPrefix + "brandenburgGate.jpg",
                     "maxNumberOfGood": 3,
                     "maxNumberOfBad": 3,
                     "prefix": "qrc:/gcompris/src/activities/categorization/resource/images/",
