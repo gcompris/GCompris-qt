@@ -31,16 +31,6 @@ Image {
 
     signal done
     signal touch
-    signal stop
-
-    Component.onCompleted: {
-        activity.stop.connect(stop);
-    }
-
-    onStop: {
-        stormy.stop();
-        opacityTimer.stop();
-    }
 
     onDone: {
         particles.burst(50)
@@ -71,8 +61,8 @@ Image {
 
     Timer {
         id: stormy
-        interval: 2000;
-        running: false;
+        interval: 2000
+        running: false
         repeat: false
         onTriggered: cloud.state = "normal"
     }
