@@ -81,16 +81,6 @@ Item {
 
     readonly property var romans : ["", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX"]
 
-    signal stop
-
-    Component.onCompleted: {
-        activity.stop.connect(stop);
-    }
-
-    onStop: {
-        timer.stop();
-    }
-
     GCText {
         id: numberText
         visible: (item.mode == "number" || item.mode == "roman")
@@ -204,37 +194,13 @@ Item {
         }
     }
 
-    /**
-     * type:boolean
-     * To check on touch devices to increase or decrease the integer value.
-     */
-    property bool goUp
-    Timer {
-        id: timer
-        interval: 500
-        repeat: true
-        onTriggered: goUp ? up() : down()
-    }
-
     MultiPointTouchArea {
         enabled: ApplicationInfo.isMobile && item.isClickable
         anchors.fill: parent
         maximumTouchPoints: 1
         onPressed: {
-            goUp = true
             up()
-            timer.start()
         }
-        onTouchUpdated: {
-            if(touchPoints.length) {
-                var touch = touchPoints[0]
-                if(touch.y < parent.y + parent.height)
-                    goUp = true
-                else
-                    goUp = false
-            }
-        }
-        onReleased: timer.stop()
     }
 
 }
