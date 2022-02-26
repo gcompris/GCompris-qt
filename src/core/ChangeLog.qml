@@ -26,6 +26,10 @@ QtObject {
      *
      */
     property var changelog: [
+            { "versionCode": 20300, "content": [
+                qsTr("Fix Alphabet sequence, Even and odd numbers and Numbers in order activities")
+                ]
+            },
             { "versionCode": 20200, "content": [
                 qsTr("Several bug fixes"),
                 qsTr("Many new images"),
