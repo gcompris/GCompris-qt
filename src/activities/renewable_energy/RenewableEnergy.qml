@@ -62,7 +62,8 @@ ActivityBase {
         onStart: items.currentLevel = 0
         onStop: {
             hydro.item.stopTimer();
-            wind.item.stopTimer();
+            if(wind.item)
+                wind.item.stopTimer();
         }
 
         function initLevel() {
