@@ -121,18 +121,23 @@ install(TARGETS ${GCOMPRIS_EXECUTABLE_NAME}
 if(BUILD_STANDALONE)
   # Qt plugins to install
   set(_qt_plugins "")
-  if(NOT SAILFISHOS)
-    list(APPEND _qt_plugins Qt5::QJpegPlugin)
-  endif()
-  if(APPLE)
-    list(APPEND _qt_plugins Qt5::QTgaPlugin Qt5::QTiffPlugin Qt5::QCocoaIntegrationPlugin)
-  elseif(WIN32)
-    list(APPEND _qt_plugins Qt5::QWindowsIntegrationPlugin Qt5::QWindowsAudioPlugin Qt5::AudioCaptureServicePlugin Qt5::DSServicePlugin)
-  elseif(UNIX AND NOT ANDROID AND NOT SAILFISHOS AND NOT UBUNTUTOUCH)
-    list(APPEND _qt_plugins Qt5::QXcbIntegrationPlugin Qt5::QXcbEglIntegrationPlugin Qt5::QXcbGlxIntegrationPlugin Qt5::QAlsaPlugin Qt5::QPulseAudioPlugin)
-  endif()
 
-  list(APPEND _qt_plugins Qt5::genericSensorPlugin Qt5::QtSensorGesturePlugin Qt5::QShakeSensorGesturePlugin)
+  # First plugins should be available on all platforms
+  foreach(_plugin Qt5::QJpegPlugin Qt5::genericSensorPlugin Qt5::QtSensorGesturePlugin Qt5::QShakeSensorGesturePlugin
+      # Should be specific Linux plugins
+      Qt5::QComposePlatformInputContextPlugin Qt5::QXcbIntegrationPlugin Qt5::QXcbEglIntegrationPlugin Qt5::QXcbGlxIntegrationPlugin Qt5::QAlsaPlugin Qt5::QPulseAudioPlugin
+      # Should be specific MacOS plugins
+      Qt5::QTgaPlugin Qt5::QTiffPlugin Qt5::QCocoaIntegrationPlugin
+      # Should be specific Windows plugins
+      Qt5::QWindowsIntegrationPlugin Qt5::QWindowsAudioPlugin Qt5::AudioCaptureServicePlugin Qt5::DSServicePlugin
+      )
+    if(TARGET ${_plugin})
+      message(STATUS "${_plugin} will be included in the package")
+      list(APPEND _qt_plugins ${_plugin})
+    else()
+      message(STATUS "${_plugin} is not a plugin for this system")
+    endif()
+  endforeach()
 
   # Qml plugins to install
   if(WIN32)
