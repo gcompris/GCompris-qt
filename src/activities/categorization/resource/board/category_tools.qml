@@ -43,7 +43,7 @@ QtObject {
                     "maxNumberOfGood": 6,
                     "maxNumberOfBad": 6,
                     "prefix": "qrc:/gcompris/src/activities/categorization/resource/images/",
-                    "good": ["tools/scissor1.webp","tools/scissor2.webp","tools/scissors3.webp","tools/spray.webp","tools/tweezer.webp","tools/wrench1.webp"],
+                    "good": ["tools/scissors1.webp","tools/scissors2.webp","tools/scissors3.webp","tools/spray.webp","tools/tweezer.webp","tools/wrench1.webp"],
                     "bad": ["others/buffetset.webp","monuments/brandenburgGate.webp","monuments/parthenon.webp","fishes/fish12.webp","fishes/fish16.webp","others/plate.webp"]
                 },
                 {
@@ -61,7 +61,7 @@ QtObject {
                     "maxNumberOfGood": 5,
                     "maxNumberOfBad": 4,
                     "prefix": "qrc:/gcompris/src/activities/categorization/resource/images/",
-                    "good": ["tools/multimeter.webp","tools/screwDriver.webp","tools/hammer3.webp","tools/measuringTape6.webp","tools/plier3.webp"],
+                    "good": ["tools/multimeter1.webp","tools/screwDriver.webp","tools/hammer3.webp","tools/measuringTape6.webp","tools/plier3.webp"],
                     "bad": ["fishes/fish25.webp","fishes/fish18.webp","monuments/monument1.webp","monuments/monument2.webp"]
                 },
                 {
@@ -71,11 +71,11 @@ QtObject {
                     "maxNumberOfBad": 4,
                     "prefix": "qrc:/gcompris/src/activities/categorization/resource/images/",
                     "good": ["tools/wrench.webp","tools/tweezer1.webp","tools/sickle.webp","tools/plier2.webp","tools/sideCutter1.webp"],
-                    "bad": ["renewable/solar5.webp","others/bulb.webp","renewable/dam3.webp","monuments/leninMuseum.webp"]
+                    "bad": ["renewable/solar5.webp","others/bulb.webp","renewable/dam3.webp","monuments/operaHouse.webp"]
                 },
                 {
                     "instructions": qsTr("Place the TOOLS to the right and other objects to the left"),
-                    "image": imagesPrefix + "multimeter.webp",
+                    "image": imagesPrefix + "multimeter2.webp",
                     "maxNumberOfGood": 4,
                     "maxNumberOfBad": 5,
                     "prefix": "qrc:/gcompris/src/activities/categorization/resource/images/",
@@ -97,7 +97,7 @@ QtObject {
                     "maxNumberOfGood": 3,
                     "maxNumberOfBad": 3,
                     "prefix": "qrc:/gcompris/src/activities/categorization/resource/images/",
-                    "good": ["tools/plier3.webp","tools/multimeter2.webp","tools/nailCutter.webp"],
+                    "good": ["tools/plier3.webp","tools/multimeter3.webp","tools/nailCutter.webp"],
                     "bad": ["fishes/fish10.webp","others/pan.webp","others/igloo.webp"]
                 },
                 {
@@ -106,7 +106,7 @@ QtObject {
                     "maxNumberOfGood": 3,
                     "maxNumberOfBad": 3,
                     "prefix": "qrc:/gcompris/src/activities/categorization/resource/images/",
-                    "good": ["tools/hammer4.webp","tools/screwDriver.webp","tools/multimeter1.webp"],
+                    "good": ["tools/hammer4.webp","tools/screwDriver.webp","tools/multimeter2.webp"],
                     "bad": ["renewable/dam2.webp","monuments/leaningTowerOfPisa.webp", "others/pillow.webp"]
                 }
             ]

@@ -43,7 +43,7 @@ QtObject {
                     "maxNumberOfGood": 5,
                     "maxNumberOfBad": 4,
                     "prefix": "qrc:/gcompris/src/activities/categorization/resource/images/",
-                    "good": ["monuments/jucheTower.webp","monuments/kutubMinar.webp","monuments/leaningTowerOfPisa.webp" ,"monuments/leninMuseum.webp","monuments/monument1.webp"],
+                    "good": ["monuments/jucheTower.webp","monuments/kutubMinar.webp","monuments/leaningTowerOfPisa.webp" ,"monuments/operaHouse.webp","monuments/monument1.webp"],
                     "bad": ["fishes/fish7.webp","fishes/fish16.webp","tools/hammer4.webp","tools/spray.webp"]
                 },
                 {

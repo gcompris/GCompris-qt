@@ -71,7 +71,7 @@ QtObject {
                     "maxNumberOfBad": 3,
                     "prefix": "qrc:/gcompris/src/activities/categorization/resource/images/",
                     "good": ["renewable/windmill9.webp","renewable/windmill12.webp","renewable/solar7.webp"],
-                    "bad": ["others/blackslate.webp","monuments/IndiaGate.webp","tools/multimeter.webp"]
+                    "bad": ["others/blackslate.webp","monuments/IndiaGate.webp","tools/multimeter2.webp"]
                 },
                 {
                     "instructions": qsTr("Place the RENEWABLE energy sources to the right and other objects to the left"),
