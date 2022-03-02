@@ -17,62 +17,62 @@ QtObject {
         {
             "type": "lesson",
             "name": qsTr("Fishes"),
-            "image": imagesPrefix + "fish20.jpg",
+            "image": imagesPrefix + "fish20.webp",
             "content": [
                 {
                     "instructions": qsTr("Place the FISHES to the right and other objects to the left"),
-                    "image": imagesPrefix + "fish10.jpg",
+                    "image": imagesPrefix + "fish10.webp",
                     "maxNumberOfGood": 6,
                     "maxNumberOfBad": 6,
                     "prefix": "qrc:/gcompris/src/activities/categorization/resource/images/",
-                    "good": ["fishes/fish1.jpg","fishes/fish2.png","fishes/fish3.jpg","fishes/fish4.jpg","fishes/fish5.jpg","fishes/fish6.jpg"],
-                    "bad": ["monuments/brandenburgGate.jpg","monuments/burj.jpg","others/bulb.jpg","tools/cutingTool.jpg","others/knife.jpg","tools/multimeter.jpg"]
+                    "good": ["fishes/fish1.webp","fishes/fish2.webp","fishes/fish3.webp","fishes/fish4.webp","fishes/fish5.webp","fishes/fish6.webp"],
+                    "bad": ["monuments/brandenburgGate.webp","monuments/burj.webp","others/bulb.webp","tools/cutingTool.webp","others/knife.webp","tools/multimeter.webp"]
                 },
                 {
                     "instructions": qsTr("Place the FISHES to the right and other objects to the left"),
-                    "image": imagesPrefix + "fish13.jpg",
+                    "image": imagesPrefix + "fish13.webp",
                     "maxNumberOfGood": 6,
                     "maxNumberOfBad": 6,
                     "prefix": "qrc:/gcompris/src/activities/categorization/resource/images/",
-                    "good": ["fishes/fish7.jpg","fishes/fish8.jpg","fishes/fish9.jpg","fishes/fish10.jpg","fishes/fish11.jpg","fishes/fish12.jpg"],
-                    "bad": ["renewable/dam2.jpg","renewable/solar5.jpg","others/pillow.jpg","tools/plier2.jpg","tools/nailCutter.jpg","monuments/colosseum.jpg"]
+                    "good": ["fishes/fish7.webp","fishes/fish8.webp","fishes/fish9.webp","fishes/fish10.webp","fishes/fish11.webp","fishes/fish12.webp"],
+                    "bad": ["renewable/dam2.webp","renewable/solar5.webp","others/pillow.webp","tools/plier1.webp","tools/nailCutter.webp","monuments/colosseum.webp"]
                 },
                 {
                     "instructions": qsTr("Place the FISHES to the right and other objects to the left"),
-                    "image": imagesPrefix + "fish3.jpg",
+                    "image": imagesPrefix + "fish3.webp",
                     "maxNumberOfGood": 5,
                     "maxNumberOfBad": 4,
                     "prefix": "qrc:/gcompris/src/activities/categorization/resource/images/",
-                    "good": ["fishes/fish13.jpg","fishes/fish14.jpg","fishes/fish15.jpg","fishes/fish16.jpg","fishes/fish17.jpg"],
-                    "bad": ["others/bulb.jpg","others/chair.jpg","renewable/windmill.jpg","monuments/monument2.jpg"]
+                    "good": ["fishes/fish13.webp","fishes/fish14.webp","fishes/fish15.webp","fishes/fish16.webp","fishes/fish17.webp"],
+                    "bad": ["others/bulb.webp","others/chair.webp","renewable/windmill.webp","monuments/monument2.webp"]
                 },
                 {
                     "instructions": qsTr("Place the FISHES to the right and other objects to the left"),
-                    "image": imagesPrefix + "fish16.jpg",
+                    "image": imagesPrefix + "fish16.webp",
                     "maxNumberOfGood": 5,
                     "maxNumberOfBad": 4,
                     "prefix": "qrc:/gcompris/src/activities/categorization/resource/images/",
-                    "good": ["fishes/fish18.jpg","fishes/fish19.jpg","fishes/fish20.jpg","fishes/fish21.jpg",
-                            "fishes/fish22.jpg"],
-                    "bad": ["others/plate.jpg","monuments/operaHouse.jpg","monuments/zimniPalace.jpg","renewable/geothermal.jpg"]
+                    "good": ["fishes/fish18.webp","fishes/fish19.webp","fishes/fish20.webp","fishes/fish21.webp",
+                            "fishes/fish22.webp"],
+                    "bad": ["others/plate.webp","monuments/operaHouse.webp","monuments/zimniPalace.webp","renewable/geothermal.webp"]
                 },
                 {
                     "instructions": qsTr("Place the FISHES to the right and other objects to the left"),
-                    "image": imagesPrefix + "fish20.jpg",
+                    "image": imagesPrefix + "fish20.webp",
                     "maxNumberOfGood": 3,
                     "maxNumberOfBad": 3,
                     "prefix": "qrc:/gcompris/src/activities/categorization/resource/images/",
-                    "good": ["fishes/fish23.jpg","fishes/fish24.jpg", "fishes/fish25.jpg"],
-                    "bad": ["monuments/monument3.jpg","others/pan.jpg","others/pencil.jpg"]
+                    "good": ["fishes/fish23.webp","fishes/fish24.webp", "fishes/fish25.webp"],
+                    "bad": ["monuments/monument3.webp","others/pan.webp","others/pencil.webp"]
                 },
                 {
                     "instructions": qsTr("Place the FISHES to the right and other objects to the left"),
-                    "image": imagesPrefix + "fish25.jpg",
+                    "image": imagesPrefix + "fish25.webp",
                     "maxNumberOfGood": 3,
                     "maxNumberOfBad": 3,
                     "prefix": "qrc:/gcompris/src/activities/categorization/resource/images/",
-                    "good": ["fishes/fish26.jpg","fishes/fish27.jpg","fishes/fish28.jpg"],
-                    "bad": ["renewable/windmill13.jpg","renewable/geothermal.jpg","tools/scissors.jpg"]
+                    "good": ["fishes/fish26.webp","fishes/fish27.webp","fishes/fish28.webp"],
+                    "bad": ["renewable/windmill13.webp","renewable/geothermal.webp","tools/scissors1.webp"]
                 }
             ]
         }

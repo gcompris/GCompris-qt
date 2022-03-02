@@ -16,7 +16,7 @@ QtObject {
     property var levels: [
         {
             "name": qsTr("Alphabets"),
-            "image": imagesPrefix + "alphabets.jpg",
+            "image": imagesPrefix + "alphabets.webm",
             "content": [
                 {
                     "instructions": qsTr("Place the LETTERS to the right and other objects to the left"),
