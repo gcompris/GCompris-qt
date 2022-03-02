@@ -17,7 +17,7 @@ QtObject {
         {
             "type": "lesson",
             "name": qsTr("Numbers"),
-            "image": "qrc:/gcompris/src/activities/categorization/resource/images/numbers/numbers.jpg",
+            "image": "qrc:/gcompris/src/activities/categorization/resource/images/numbers/numbers.webm",
             "content": [
                 {
                     "instructions": qsTr("Place the NUMBERS to the right and other objects to the left"),

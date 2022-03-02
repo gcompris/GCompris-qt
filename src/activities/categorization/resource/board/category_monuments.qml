@@ -17,61 +17,61 @@ QtObject {
         {
             "type": "lesson",
             "name": qsTr("Monuments"),
-            "image": imagesPrefix + "colosseum.jpg",
+            "image": imagesPrefix + "colosseum.webp",
             "content": [
                 {
                     "instructions": qsTr("Place the MONUMENTS to the right and other objects to the left"),
-                    "image": imagesPrefix + "victoriaMemorial.jpg",
+                    "image": imagesPrefix + "victoriaMemorial.webp",
                     "maxNumberOfGood": 6,
                     "maxNumberOfBad": 6,
                     "prefix": "qrc:/gcompris/src/activities/categorization/resource/images/",
-                    "good": ["monuments/bayterek.jpg","monuments/burj.jpg","monuments/cathedral.jpg","monuments/colosseum.jpg","monuments/brandenburgGate.jpg","monuments/arcDeTriomphe.jpg"],
-                    "bad": ["renewable/windmill5.jpg","renewable/dam2.jpg","tools/tweezer.jpg","others/bulb.jpg","others/pan.jpg","others/knife.jpg"]
+                    "good": ["monuments/bayterek.webp","monuments/burj.webp","monuments/cathedral.webp","monuments/colosseum.webp","monuments/brandenburgGate.webp","monuments/arcDeTriomphe.webp"],
+                    "bad": ["renewable/windmill5.webp","renewable/dam2.webp","tools/tweezer.webp","others/bulb.webp","others/pan.webp","others/knife.webp"]
                 },
                 {
                     "instructions": qsTr("Place the MONUMENTS to the right and other objects to the left"),
-                    "image": imagesPrefix + "parthenon.jpg",
+                    "image": imagesPrefix + "parthenon.webp",
                     "maxNumberOfGood": 6,
                     "maxNumberOfBad": 6,
                     "prefix": "qrc:/gcompris/src/activities/categorization/resource/images/",
-                    "good": ["monuments/christTheRedeemer.jpg","monuments/eiffelTower.jpg","monuments/empireState.jpg" ,"monuments/greatPyramid.jpg","monuments/greatWall.jpg","monuments/IndiaGate.jpg"],
-                    "bad": ["fishes/fish3.jpg","fishes/fish5.jpg","renewable/dam2.jpg","others/spoons.jpg","others/igloo.jpg","tools/measuringTape.jpg"]
+                    "good": ["monuments/christTheRedeemer.webp","monuments/eiffelTower.webp","monuments/empireState.webp" ,"monuments/greatPyramid.webp","monuments/greatWall.webp","monuments/IndiaGate.webp"],
+                    "bad": ["fishes/fish3.webp","fishes/fish5.webp","renewable/dam2.webp","others/spoons.webp","others/igloo.webp","tools/measuringTape5.webp"]
                 },
                 {
                     "instructions": qsTr("Place the MONUMENTS to the right and other objects to the left"),
-                    "image": imagesPrefix + "monument2.jpg",
+                    "image": imagesPrefix + "monument2.webp",
                     "maxNumberOfGood": 5,
                     "maxNumberOfBad": 4,
                     "prefix": "qrc:/gcompris/src/activities/categorization/resource/images/",
-                    "good": ["monuments/jucheTower.jpg","monuments/kutubMinar.jpg","monuments/leaningTowerOfPisa.jpg" ,"monuments/leninMuseum.jpg","monuments/monument1.jpg"],
-                    "bad": ["fishes/fish7.jpg","fishes/fish16.jpg","tools/hammer4.jpg","tools/sprinkler.jpg"]
+                    "good": ["monuments/jucheTower.webp","monuments/kutubMinar.webp","monuments/leaningTowerOfPisa.webp" ,"monuments/leninMuseum.webp","monuments/monument1.webp"],
+                    "bad": ["fishes/fish7.webp","fishes/fish16.webp","tools/hammer4.webp","tools/spray.webp"]
                 },
                 {
                     "instructions": qsTr("Place the MONUMENTS to the right and other objects to the left"),
-                    "image": imagesPrefix + "greatPyramid.jpg",
+                    "image": imagesPrefix + "greatPyramid.webp",
                     "maxNumberOfGood": 5,
                     "maxNumberOfBad": 4,
                     "prefix": "qrc:/gcompris/src/activities/categorization/resource/images/",
-                    "good": ["monuments/mountRushmore.jpg","monuments/operaHouse.jpg","monuments/parthenon.jpg","monuments/statueOfLiberty.jpg","monuments/tajMahal.jpg"],
-                    "bad": ["renewable/solar2.jpg","renewable/geothermal.jpg","tools/scissor.jpg","tools/stripper1.png"]
+                    "good": ["monuments/mountRushmore.webp","monuments/operaHouse.webp","monuments/parthenon.webp","monuments/statueOfLiberty.webp","monuments/tajMahal.webp"],
+                    "bad": ["renewable/solar2.webp","renewable/geothermal.webp","tools/scissors2.webp","tools/plier4.webp"]
                 },
                 {
                     "instructions": qsTr("Place the MONUMENTS to the right and other objects to the left"),
-                    "image": imagesPrefix + "brandenburgGate.jpg",
+                    "image": imagesPrefix + "brandenburgGate.webp",
                     "maxNumberOfGood": 3,
                     "maxNumberOfBad": 3,
                     "prefix": "qrc:/gcompris/src/activities/categorization/resource/images/",
-                    "good": ["monuments/usCapitol.jpg","monuments/victoriaMemorial.jpg","monuments/zimniPalace.jpg"],
-                    "bad": ["tools/plier2.jpg","others/pillow.jpg","renewable/solar5.jpg"]
+                    "good": ["monuments/usCapitol.webp","monuments/victoriaMemorial.webp","monuments/zimniPalace.webp"],
+                    "bad": ["tools/plier1.webp","others/pillow.webp","renewable/solar5.webp"]
                 },
                 {
                     "instructions": qsTr("Place the MONUMENTS to the right and other objects to the left"),
-                    "image": imagesPrefix + "IndiaGate.jpg",
+                    "image": imagesPrefix + "IndiaGate.webp",
                     "maxNumberOfGood": 2,
                     "maxNumberOfBad": 4,
                     "prefix": "qrc:/gcompris/src/activities/categorization/resource/images/",
-                    "good": ["monuments/monument2.jpg","monuments/monument3.jpg"],
-                    "bad": ["others/volleyball.jpg","tools/sickle.jpg","others/chair.jpg","renewable/dam4.jpg"]
+                    "good": ["monuments/monument2.webp","monuments/monument3.webp"],
+                    "bad": ["others/volleyball.webp","tools/sickle.webp","others/chair.webp","renewable/dam4.webp"]
                 }
             ]
         }
