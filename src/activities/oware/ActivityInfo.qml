@@ -11,7 +11,7 @@ ActivityInfo {
   icon: "oware/oware.svg"
   author: "Harsh Kumar &lt;hadron43@yahoo.com&gt;"
   //: Activity title
-  title: qsTr("Play oware against Tux")
+  title: qsTr("Play oware (against Tux)")
   //: Help title
   description: qsTr("Play the Oware strategy game against Tux.")
   //intro: "Capture at least 25 seeds to win the game"

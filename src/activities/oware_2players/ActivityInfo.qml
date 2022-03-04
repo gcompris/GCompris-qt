@@ -11,7 +11,7 @@ ActivityInfo {
   icon: "oware_2players/oware_2players.svg"
   author: "Harsh Kumar &lt;hadron43@yahoo.com&gt;"
   //: Activity title
-  title: qsTr("Play oware with a friend")
+  title: qsTr("Play oware (with a friend)")
   //: Help title
   description: qsTr("Play the Oware strategy game with a friend.")
   //intro: "Capture at least 25 seeds to win the game"
