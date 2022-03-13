@@ -40,6 +40,7 @@ clockgame
 color_mix
 color_mix_light
 colors
+comparator
 crane
 details
 digital_electricity
