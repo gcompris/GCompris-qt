@@ -12,7 +12,7 @@ ActivityInfo {
   icon: "chess/chess.svg"
   author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
   //: Activity title
-  title: qsTr("Play chess against Tux")
+  title: qsTr("Play chess (against Tux)")
   //: Help title
   description: ""
   //intro: "play chess against Tux"
