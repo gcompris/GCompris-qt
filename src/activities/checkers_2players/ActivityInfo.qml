@@ -12,7 +12,7 @@ ActivityInfo {
     icon: "checkers_2players/checkers_2players.svg"
     author: "Johnny Jazeix &lt;jazeix@gmail.com&gt;"
     //: Activity title
-    title: qsTr("Play checkers with your friend")
+    title: qsTr("Play checkers (with a friend)")
     //: Help title
     description: qsTr("The version in GCompris is the international draughts.")
     //intro: "play checkers with your friend"

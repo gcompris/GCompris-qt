@@ -12,10 +12,10 @@ ActivityInfo {
     icon: "checkers/checkers.svg"
     author: "Johnny Jazeix &lt;jazeix@gmail.com&gt;"
     //: Activity title
-    title: qsTr("Play checkers against the computer")
+    title: qsTr("Play checkers (against Tux)")
     //: Help title
     description: qsTr("The version in GCompris is the international draughts.")
-    //intro: "play checkers against the computer"
+    //intro: "play checkers against Tux"
     //: Help goal
     goal: qsTr("Capture all the pieces of your opponent before your opponent captures all of yours.")
     //: Help prerequisite
