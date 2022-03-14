@@ -7,7 +7,7 @@ algebra_minus
 algebra_plus
 algorithm
 align4
-align4-2players
+align4_2players
 alphabet-sequence
 analog_electricity
 baby_keyboard

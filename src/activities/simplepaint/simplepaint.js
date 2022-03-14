@@ -102,7 +102,7 @@ var backgrounds = [
     'qrc:/gcompris/src/activities/bargame/resource/background.svg',
     'qrc:/gcompris/src/activities/menu/resource/background.svg',
     'qrc:/gcompris/src/activities/smallnumbers2/resource/background.svg',
-    'qrc:/gcompris/src/activities/align4-2players/resource/background.svg',
+    'qrc:/gcompris/src/activities/align4_2players/resource/background.svg',
     'qrc:/gcompris/src/activities/smallnumbers/resource/background.svg',
     'qrc:/gcompris/src/activities/magic-hat-minus/resource/background.svg',
     'qrc:/gcompris/src/activities/tic_tac_toe/resource/background.svg',
