@@ -7,9 +7,9 @@
 import GCompris 1.0
 
 ActivityInfo {
-  name: "align4-2players/Align42players.qml"
+  name: "align4_2players/Align42players.qml"
   difficulty: 2
-  icon: "align4-2players/align4-2players.svg"
+  icon: "align4_2players/align4_2players.svg"
   author: "Bharath M S &lt;brat.197@gmail.com&gt;"
   //: Activity title
   title: qsTr("Align four (with a friend)")

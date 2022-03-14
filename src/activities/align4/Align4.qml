@@ -11,7 +11,7 @@
 import QtQuick 2.9
 
 import "../../core"
-import "../align4-2players"
+import "../align4_2players"
 
 Align42players {
     twoPlayer: false

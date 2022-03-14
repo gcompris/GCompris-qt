@@ -1,4 +1,4 @@
-/* GCompris - align4-2players.qml
+/* GCompris - Align42players.qml
  *
  * SPDX-FileCopyrightText: 2014 Bharath M S <brat.197@gmail.com>
  *
