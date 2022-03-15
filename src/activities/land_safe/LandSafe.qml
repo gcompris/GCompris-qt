@@ -90,6 +90,9 @@ ActivityBase {
             property alias bar: bar
             property alias bonus: bonus
             property alias rocket: rocket
+            property alias leftEngine: leftEngine
+            property alias rightEngine: rightEngine
+            property alias bottomEngine: bottomEngine
             property alias explosion: explosion
             property alias world: physicsWorld
             property alias landing: landing
