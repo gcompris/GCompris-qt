@@ -107,6 +107,9 @@ function initLevel() {
     max = items.onScreenControls ? items.background.width - items.upDownControl.width - items.landing.width : max;
     items.landing.anchors.leftMargin = Math.random() * (max- min) + min;
     items.landing.overlayColor = "-g";
+    items.leftEngine.reset();
+    items.rightEngine.reset();
+    items.bottomEngine.reset();
 
     // initialize world:
     items.world.pixelsPerMeter = pxYToAltitude(items.rocket.y) / startingAltitudeReal;
@@ -230,12 +233,15 @@ function processKeyRelease(event)
 function finishLevel(success)
 {
     items.rocket.accel = 0;
-    items.rocket.leftAccel = 0;
-    items.rocket.rightAccel = 0;
-    items.rocket.body.linearVelocity = Qt.point(0,0)
-    if (success)
+    if (success) {
+        items.rocket.leftAccel = 0;
+        items.rocket.rightAccel = 0;
+        items.rocket.body.linearVelocity = Qt.point(0,0)
+
         items.bonus.good("lion");
-    else {
+    } else {
+        // don't reset physics on a crash so the explosion rolls along landscape.
+
         items.explosion.show();
         items.rocket.hide();
         items.bonus.bad("lion");
