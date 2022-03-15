@@ -28,7 +28,7 @@ QtObject {
         {
             "image": "qrc:/gcompris/src/activities/explore_world_animals/resource/animals/question.svg",
             "title": qsTr("Polar bear"),
-            "text": qsTr("The polar bear is one of the world's largest predatory mammals. It weights up to a ton and can be as long as 3 meters!"),
+            "text": qsTr("The polar bear is one of the world's largest predatory mammals. It weighs up to a ton and can be as long as 3 meters!"),
             "image2": "qrc:/gcompris/src/activities/explore_world_animals/resource/animals/polar_bear.webp",
             "text2": qsTr("Polar bear"),
             "x": 0.365,
