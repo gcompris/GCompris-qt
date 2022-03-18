@@ -14,41 +14,41 @@ QtObject {
    property string instruction: qsTr("Taj Mahal, Agra, India")
    property var levels: [
       {
-         "pixmapfile" : "image/TajMahal_background.jpg",
+         "pixmapfile" : "image/TajMahal_background.webp",
          "type" : "SHAPE_BACKGROUND_IMAGE"
       },
       {
-         "pixmapfile" : "image/TajMahal_0.png",
+         "pixmapfile" : "image/TajMahal_0.webp",
          "x" : "0.499",
          "y" : "0.1",
          "dropAreaSize" : "8"
       },
       {
-         "pixmapfile" : "image/TajMahal_1.png",
+         "pixmapfile" : "image/TajMahal_1.webp",
          "x" : "0.893",
          "y" : "0.252",
          "dropAreaSize" : "8"
       },
       {
-         "pixmapfile" : "image/TajMahal_2.png",
+         "pixmapfile" : "image/TajMahal_2.webp",
          "x" : "0.507",
          "y" : "0.534",
          "dropAreaSize" : "8"
       },
       {
-         "pixmapfile" : "image/TajMahal_3.png",
+         "pixmapfile" : "image/TajMahal_3.webp",
          "x" : "0.351",
          "y" : "0.33",
          "dropAreaSize" : "8"
       },
       {
-         "pixmapfile" : "image/TajMahal_4.png",
+         "pixmapfile" : "image/TajMahal_4.webp",
          "x" : "0.626",
          "y" : "0.32",
          "dropAreaSize" : "8"
       },
       {
-         "pixmapfile" : "image/TajMahal_5.png",
+         "pixmapfile" : "image/TajMahal_5.webp",
          "x" : "0.501",
          "y" : "0.256",
          "dropAreaSize" : "8"

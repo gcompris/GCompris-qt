@@ -14,17 +14,17 @@ QtObject {
    property string instruction: qsTr("Eiffel Tower, seen from the champ de Mars, Paris, France")
    property var levels: [
       {
-         "pixmapfile" : "image/TourEiffel_background.jpg",
+         "pixmapfile" : "image/TourEiffel_background.webp",
          "type" : "SHAPE_BACKGROUND_IMAGE"
       },
       {
-         "pixmapfile" : "image/TourEiffel_0.png",
+         "pixmapfile" : "image/TourEiffel_0.webp",
          "x" : "0.493",
          "y" : "0.09",
          "dropAreaSize" : "8"
       },
       {
-         "pixmapfile" : "image/TourEiffel_1.png",
+         "pixmapfile" : "image/TourEiffel_1.webp",
          "x" : "0.489",
          "y" : "0.524",
          "dropAreaSize" : "8"
