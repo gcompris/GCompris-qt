@@ -1,131 +1,213 @@
-Copyright: 2000, 2008 Bruno Coudoin and others 
-License: GPLv3
+Copyright: 2000, 2008 Bruno Coudoin and others
+License: CC-BY-SA 4.0
 Files:
-Chenonceau_0.png
-Chenonceau_1.png
-Chenonceau_2.png
-Chenonceau_background.jpg
-EgeskovSlotSpejling_0.png
-EgeskovSlotSpejling_1.png
-EgeskovSlotSpejling_2.png
-EgeskovSlotSpejling_3.png
-EgeskovSlotSpejling_4.png
-EgeskovSlotSpejling_5.png
-EgeskovSlotSpejling_6.png
-EgeskovSlotSpejling_7.png
-EgeskovSlotSpejling_background.jpg
-Eglise_dAuvers-sur-Oise_0.png
-Eglise_dAuvers-sur-Oise_1.png
-Eglise_dAuvers-sur-Oise_2.png
-Eglise_dAuvers-sur-Oise_background.jpg
-EilanDonanCastle_0.png
-EilanDonanCastle_1.png
-EilanDonanCastle_background.jpg
-FanoeWindmill_0.png
-FanoeWindmill_1.png
-FanoeWindmill_2.png
-FanoeWindmill_3.png
-FanoeWindmill_background.jpg
-GizahPyramids_0.png
-GizahPyramids_1.png
-GizahPyramids_2.png
-GizahPyramids_3.png
-GizahPyramids_background.jpg
-Gogh4_0.png
-Gogh4_1.png
-Gogh4_2.png
-Gogh4_3.png
-Gogh4_4.png
-Gogh4_5.png
-Gogh4_6.png
-Gogh4_7.png
-Gogh4_8.png
-Gogh4_background.jpg
-Louvre_2007_02_24_c_0.png
-Louvre_2007_02_24_c_1.png
-Louvre_2007_02_24_c_2.png
-Louvre_2007_02_24_c_background.jpg
-Nagoya_0.png
-Nagoya_1.png
-Nagoya_2.png
-Nagoya_3.png
-Nagoya_4.png
-Nagoya_background.jpg
-NDP_0.png
-NDP_1.png
-NDP_2.png
-NDP_background.jpg
-Neuschwanstein_0.png
-Neuschwanstein_1.png
-Neuschwanstein_2.png
-Neuschwanstein_3.png
-Neuschwanstein_4.png
-Neuschwanstein_5.png
-Neuschwanstein_6.png
-Neuschwanstein_7.png
-Neuschwanstein_8.png
-Neuschwanstein_9.png
-Neuschwanstein_background.jpg
-OperaSidney_0.png
-OperaSidney_1.png
-OperaSidney_2.png
-OperaSidney_3.png
-OperaSidney_background.jpg
-PortraitOfPereTanguy_0.png
-PortraitOfPereTanguy_1.png
-PortraitOfPereTanguy_2.png
-PortraitOfPereTanguy_3.png
-PortraitOfPereTanguy_4.png
-PortraitOfPereTanguy_5.png
-PortraitOfPereTanguy_6.png
-PortraitOfPereTanguy_7.png
-PortraitOfPereTanguy_8.png
-PortraitOfPereTanguy_background.jpg
-README
-TajMahal_0.png
-TajMahal_1.png
-TajMahal_2.png
-TajMahal_3.png
-TajMahal_4.png
-TajMahal_5.png
-TajMahal_background.jpg
-TourEiffel_0.png
-TourEiffel_1.png
-TourEiffel_background.jpg
-TowerBridgeLondon_0.png
-TowerBridgeLondon_1.png
-TowerBridgeLondon_2.png
-TowerBridgeLondon_3.png
-TowerBridgeLondon_4.png
-TowerBridgeLondon_background.jpg
-Van_Gogh_The_Night_Cafe_0.png
-Van_Gogh_The_Night_Cafe_1.png
-Van_Gogh_The_Night_Cafe_2.png
-Van_Gogh_The_Night_Cafe_3.png
-Van_Gogh_The_Night_Cafe_4.png
-Van_Gogh_The_Night_Cafe_5.png
-Van_Gogh_The_Night_Cafe_6.png
-Van_Gogh_The_Night_Cafe_7.png
-Van_Gogh_The_Night_Cafe_background.jpg
-VincentVanGogh0012_0.png
-VincentVanGogh0012_1.png
-VincentVanGogh0012_background.jpg
-VincentVanGogh0013_0.png
-VincentVanGogh0013_1.png
-VincentVanGogh0013_2.png
-VincentVanGogh0013_3.png
-VincentVanGogh0013_4.png
-VincentVanGogh0013_background.jpg
-VincentVanGogh0019_0.png
-VincentVanGogh0019_1.png
-VincentVanGogh0019_2.png
-VincentVanGogh0019_3.png
-VincentVanGogh0019_4.png
-VincentVanGogh0019_5.png
-VincentVanGogh0019_6.png
-VincentVanGogh0019_7.png
-VincentVanGogh0019_8.png
-VincentVanGogh0019_background.jpg
-VincentVanGoghBridge_0.png
-VincentVanGoghBridge_1.png
-VincentVanGoghBridge_background.jpg
+Chenonceau_0.webp
+Chenonceau_1.webp
+Chenonceau_2.webp
+Chenonceau_background.webp
+Comment: based on an original image by Ra-smit, license CC-BY-SA 3.0, source at https://commons.wikimedia.org/wiki/File:Chateau_de_Chenonceau_2008.jpg
+
+Copyright: 2000, 2008 Bruno Coudoin and others
+License: CC-BY-SA 4.0
+Files:
+EgeskovSlotSpejling_0.webp
+EgeskovSlotSpejling_1.webp
+EgeskovSlotSpejling_2.webp
+EgeskovSlotSpejling_3.webp
+EgeskovSlotSpejling_4.webp
+EgeskovSlotSpejling_5.webp
+EgeskovSlotSpejling_6.webp
+EgeskovSlotSpejling_7.webp
+EgeskovSlotSpejling_background.webp
+Comment: based on an original image by Malene Thyssen, license CC-BY-SA 3.0, source at https://commons.wikimedia.org/wiki/File:Egeskov_Slot_spejling.jpg
+
+Copyright: 2000, 2008 Bruno Coudoin and others
+License: Public domain
+Files:
+Eglise_dAuvers-sur-Oise_0.webp
+Eglise_dAuvers-sur-Oise_1.webp
+Eglise_dAuvers-sur-Oise_2.webp
+Eglise_dAuvers-sur-Oise_background.webp
+Comment: based on an original painting by Van Gogh, Public domain image.
+
+Copyright: 2000, 2008 Bruno Coudoin and others
+License: CC-BY 4.0
+EilanDonanCastle_0.webp
+EilanDonanCastle_1.webp
+EilanDonanCastle_background.webp
+Comment: based on a photo by Guillaume Piolle, license CC-BY 3.0, source at https://commons.wikimedia.org/wiki/File:Eilean_Donan_castle_-_95mm.jpg
+
+Copyright: 2000, 2008 Bruno Coudoin and others
+License: CC-BY-SA 4.0
+FanoeWindmill_0.webp
+FanoeWindmill_1.webp
+FanoeWindmill_2.webp
+FanoeWindmill_3.webp
+FanoeWindmill_background.webp
+Comment: based on a photo by Cnyborg, license CC-BY-SA 3.0, source at https://commons.wikimedia.org/wiki/File:DK_Fanoe_Windmill01.JPG
+
+Copyright: 2000, 2008 Bruno Coudoin and others
+License: CC-BY-SA 4.0
+GizahPyramids_0.webp
+GizahPyramids_1.webp
+GizahPyramids_2.webp
+GizahPyramids_3.webp
+GizahPyramids_background.webp
+Comment: based on a photo by Ricardo Liberato, license CC-BY-SA 2.0, source at https://commons.wikimedia.org/wiki/File:Pyramids_at_Gizah.jpg
+
+Copyright: 2000, 2008 Bruno Coudoin and others
+License: Public domain
+Gogh4_0.webp
+Gogh4_1.webp
+Gogh4_2.webp
+Gogh4_3.webp
+Gogh4_4.webp
+Gogh4_5.webp
+Gogh4_6.webp
+Gogh4_7.webp
+Gogh4_8.webp
+Gogh4_background.webp
+Comment: based on an original painting by Van Gogh, Public domain image.
+
+Copyright: 2000, 2008 Bruno Coudoin and others
+License: CC-BY-SA 4.0
+Louvre_2007_02_24_c_0.webp
+Louvre_2007_02_24_c_1.webp
+Louvre_2007_02_24_c_2.webp
+Louvre_2007_02_24_c_background.webp
+Comment: based on a photo by Benh LIEU SONG, license CC-BY-SA 3.0, source at https://commons.wikimedia.org/wiki/File:Louvre_2007_02_24_c.jpg
+
+Copyright: 2000, 2008 Bruno Coudoin and others
+License: CC-BY-SA 4.0
+Nagoya_0.webp
+Nagoya_1.webp
+Nagoya_2.webp
+Nagoya_3.webp
+Nagoya_4.webp
+Nagoya_background.webp
+Comment: based on a photo by Base64, license CC-BY-SA 3.0, source at https://commons.wikimedia.org/wiki/File:Nagoya_Castle(Edit2).jpg
+
+Copyright: 2000, 2008 Bruno Coudoin and others
+License: CC-BY-SA 4.0
+NDP_0.webp
+NDP_1.webp
+NDP_2.webp
+NDP_background.webp
+Comment: based on a photo by Sanchezn, license CC-BY-SA 3.0, source at https://commons.wikimedia.org/wiki/File:NotreDameDeParis.jpg
+
+Copyright: 2000, 2008 Bruno Coudoin and others
+License: CC-BY-SA 4.0
+Neuschwanstein_0.webp
+Neuschwanstein_1.webp
+Neuschwanstein_2.webp
+Neuschwanstein_3.webp
+Neuschwanstein_4.webp
+Neuschwanstein_5.webp
+Neuschwanstein_6.webp
+Neuschwanstein_7.webp
+Neuschwanstein_8.webp
+Neuschwanstein_9.webp
+Neuschwanstein_background.webp
+Comment: based on a photo by Softeis, license CC-BY-SA 3.0, source at https://commons.wikimedia.org/wiki/File:Castle_Neuschwanstein.jpg
+
+Copyright: 2000, 2008 Bruno Coudoin and others
+License: CC-BY-SA 4.0
+OperaSidney_0.webp
+OperaSidney_1.webp
+OperaSidney_2.webp
+OperaSidney_3.webp
+OperaSidney_background.webp
+Comment: based on a photo by David Iliff, license CC-BY-SA 3.0, source at https://commons.wikimedia.org/wiki/File:Sydney_Opera_House_-_Dec_2008.jpg
+
+Copyright: 2000, 2008 Bruno Coudoin and others
+License: Public domain
+PortraitOfPereTanguy_0.webp
+PortraitOfPereTanguy_1.webp
+PortraitOfPereTanguy_2.webp
+PortraitOfPereTanguy_3.webp
+PortraitOfPereTanguy_4.webp
+PortraitOfPereTanguy_5.webp
+PortraitOfPereTanguy_6.webp
+PortraitOfPereTanguy_7.webp
+PortraitOfPereTanguy_8.webp
+PortraitOfPereTanguy_background.webp
+Comment: based on an original painting by Van Gogh, Public domain image.
+
+Copyright: 2000, 2008 Bruno Coudoin and others
+License: CC-BY-SA 4.0
+TajMahal_0.webp
+TajMahal_1.webp
+TajMahal_2.webp
+TajMahal_3.webp
+TajMahal_4.webp
+TajMahal_5.webp
+TajMahal_background.webp
+Comment: based on a photo by Dhirad, license CC-BY-SA 3.0, source at https://commons.wikimedia.org/wiki/File:Taj_Mahal_in_March_2004.jpg
+
+Copyright: 2000, 2008 Bruno Coudoin and others
+License: CC-BY-SA 4.0
+TourEiffel_0.webp
+TourEiffel_1.webp
+TourEiffel_background.webp
+Comment: based on a photo by Benh LIEU SONG, license CC-BY-SA 3.0, source at https://commons.wikimedia.org/wiki/File:Tour_Eiffel_Wikimedia_Commons.jpg
+
+Copyright: 2000, 2008 Bruno Coudoin and others
+License: CC-BY-SA 4.0
+TowerBridgeLondon_0.webp
+TowerBridgeLondon_1.webp
+TowerBridgeLondon_2.webp
+TowerBridgeLondon_3.webp
+TowerBridgeLondon_4.webp
+TowerBridgeLondon_background.webp
+Comment: based on a photo by David Iliff, license CC-BY-SA 4.0, source at https://commons.wikimedia.org/wiki/File:Tower_Bridge_London_Feb_2006.jpg
+
+Copyright: 2000, 2008 Bruno Coudoin and others
+License: Public domain
+Van_Gogh_The_Night_Cafe_0.webp
+Van_Gogh_The_Night_Cafe_1.webp
+Van_Gogh_The_Night_Cafe_2.webp
+Van_Gogh_The_Night_Cafe_3.webp
+Van_Gogh_The_Night_Cafe_4.webp
+Van_Gogh_The_Night_Cafe_5.webp
+Van_Gogh_The_Night_Cafe_6.webp
+Van_Gogh_The_Night_Cafe_7.webp
+Van_Gogh_The_Night_Cafe_background.webp
+Comment: based on an original painting by Van Gogh, Public domain image.
+
+Copyright: 2000, 2008 Bruno Coudoin and others
+License: Public domain
+VincentVanGogh0012_0.webp
+VincentVanGogh0012_1.webp
+VincentVanGogh0012_background.webp
+Comment: based on an original painting by Van Gogh, Public domain image.
+
+Copyright: 2000, 2008 Bruno Coudoin and others
+License: Public domain
+VincentVanGogh0013_0.webp
+VincentVanGogh0013_1.webp
+VincentVanGogh0013_2.webp
+VincentVanGogh0013_3.webp
+VincentVanGogh0013_4.webp
+VincentVanGogh0013_background.webp
+Comment: based on an original painting by Van Gogh, Public domain image.
+
+Copyright: 2000, 2008 Bruno Coudoin and others
+License: Public domain
+VincentVanGogh0019_0.webp
+VincentVanGogh0019_1.webp
+VincentVanGogh0019_2.webp
+VincentVanGogh0019_3.webp
+VincentVanGogh0019_4.webp
+VincentVanGogh0019_5.webp
+VincentVanGogh0019_6.webp
+VincentVanGogh0019_7.webp
+VincentVanGogh0019_8.webp
+VincentVanGogh0019_background.webp
+Comment: based on an original painting by Van Gogh, Public domain image.
+
+Copyright: 2000, 2008 Bruno Coudoin and others
+License: Public domain
+VincentVanGoghBridge_0.webp
+VincentVanGoghBridge_1.webp
+VincentVanGoghBridge_background.webp
+Comment: based on an original painting by Van Gogh, Public domain image.

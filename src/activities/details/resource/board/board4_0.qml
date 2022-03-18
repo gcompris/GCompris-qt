@@ -14,35 +14,35 @@ QtObject {
    property string instruction: qsTr("Vincent van Gogh, Painter on His Way to Work - 1888")
    property var levels: [
       {
-         "pixmapfile" : "image/VincentVanGogh0013_background.jpg",
+         "pixmapfile" : "image/VincentVanGogh0013_background.webp",
          "type" : "SHAPE_BACKGROUND_IMAGE"
       },
       {
-         "pixmapfile" : "image/VincentVanGogh0013_0.png",
+         "pixmapfile" : "image/VincentVanGogh0013_0.webp",
          "x" : "0.501",
          "y" : "0.32",
          "dropAreaSize" : "8"
       },
       {
-         "pixmapfile" : "image/VincentVanGogh0013_1.png",
+         "pixmapfile" : "image/VincentVanGogh0013_1.webp",
          "x" : "0.859",
          "y" : "0.828",
          "dropAreaSize" : "8"
       },
       {
-         "pixmapfile" : "image/VincentVanGogh0013_2.png",
+         "pixmapfile" : "image/VincentVanGogh0013_2.webp",
          "x" : "0.67",
          "y" : "0.22",
          "dropAreaSize" : "8"
       },
       {
-         "pixmapfile" : "image/VincentVanGogh0013_3.png",
+         "pixmapfile" : "image/VincentVanGogh0013_3.webp",
          "x" : "0.396",
          "y" : "0.268",
          "dropAreaSize" : "8"
       },
       {
-         "pixmapfile" : "image/VincentVanGogh0013_4.png",
+         "pixmapfile" : "image/VincentVanGogh0013_4.webp",
          "x" : "0.212",
          "y" : "0.44",
          "dropAreaSize" : "8"

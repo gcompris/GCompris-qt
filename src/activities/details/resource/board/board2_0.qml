@@ -14,17 +14,17 @@ QtObject {
    property string instruction: qsTr("Vincent van Gogh, The Bridge of Langlois at Arles with a lady with umbrella - 1888")
    property var levels: [
       {
-         "pixmapfile" : "image/VincentVanGoghBridge_background.jpg",
+         "pixmapfile" : "image/VincentVanGoghBridge_background.webp",
          "type" : "SHAPE_BACKGROUND_IMAGE"
       },
       {
-         "pixmapfile" : "image/VincentVanGoghBridge_0.png",
+         "pixmapfile" : "image/VincentVanGoghBridge_0.webp",
          "x" : "0.56",
          "y" : "0.536",
          "dropAreaSize" : "8"
       },
       {
-         "pixmapfile" : "image/VincentVanGoghBridge_1.png",
+         "pixmapfile" : "image/VincentVanGoghBridge_1.webp",
          "x" : "0.943",
          "y" : "0.5",
          "dropAreaSize" : "8"
