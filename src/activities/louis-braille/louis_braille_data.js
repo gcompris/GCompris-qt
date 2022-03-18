@@ -11,22 +11,22 @@ var dataset = [
             {
                  "text": qsTr("Born on January 4th 1809 in Coupvray near Paris in France."),
                  "year": "1809",
-                 "img": baseUrl + "louis.png"
+                 "img": baseUrl + "louis.webp"
              },
              {
                  "text": qsTr("Louis Braille injured his right eye with a stitching awl from his father's workshop."),
                  "year": "1812",
-                 "img": baseUrl + "workshop.jpg"
+                 "img": baseUrl + "workshop.webp"
              },
              {
                  "text": qsTr("At the age of three, Louis became blind due to a severe infection that spread to his left eye."),
                  "year": "1812",
-                 "img": baseUrl + "fireplace.jpg"
+                 "img": baseUrl + "fireplace.webp"
              },
              {
                  "text": qsTr("At the age of 10, he was sent to Paris to study at the Royal Institute for Blind Youth."),
                  "year": "1819",
-                 "img": baseUrl + "rnib.jpg"
+                 "img": baseUrl + "rnib.webp"
              },
              {
                  "text": qsTr("He impressed his classmates and began to play the piano and the organ."),
@@ -36,31 +36,31 @@ var dataset = [
              {
                  "text": qsTr("Charles Barbier, a French soldier, visited his school and shared his invention of night writing, a code of 12 raised dots to share information on battlefields."),
                  "year": "1821",
-                 "img": baseUrl + "night_printing.jpg"
+                 "img": baseUrl + "night_printing.webp"
              },
              {
                  "text": qsTr("Louis trimmed Barbier's 12 dots into 6 and invented the braille system."),
                  "year": "1824",
-                 "img": baseUrl + "braille.jpg"
+                 "img": baseUrl + "braille.webp"
              },
              {
                  "text": qsTr("He became a teacher after graduating and promoted his method while secretly teaching it at the Institute."),
                  "year": "1828",
-                 "img": baseUrl + "teach.jpg"
+                 "img": baseUrl + "teach.webp"
              },
              {
                  "text": qsTr("He revised and extended braille to include mathematics, symbols, punctuations and music notations."),
                  "year": "1837",
-                 "img": baseUrl + "chart.png"
+                 "img": baseUrl + "chart.webp"
              },
              {
                  "text": qsTr("He died of tuberculosis. He is buried in the Pantheon in Paris. A monument is erected to honor him."),
                  "year": "1852",
-                 "img": baseUrl + "statue.jpg"
+                 "img": baseUrl + "statue.webp"
              },
              {
                  "text": qsTr("Braille got accepted as a world wide standard. Louis Braille proved that if you have motivation you can do incredible things."),
                  "year": "After his Death",
-                 "img": baseUrl + "braille_ball.jpg"
+                 "img": baseUrl + "braille_ball.webp"
              }
         ];

@@ -1,15 +1,16 @@
 Copyright: 2000, 2008 Bruno Coudoin and others
 License: GPLv3
 Files:
-braille_ball.jpg
-braille.jpg
-chart.png
-fireplace.jpg
-louis.png
-night_printing.jpg
-piano.svg
-rnib.jpg
-statue.jpg
-teach.jpg
-top_back.svg
-workshop.jpg
+  braille_ball.webp
+  braille.webp
+  chart.webp
+  fireplace.webp
+  louis.webp
+  night_printing.webp
+  piano.svg
+  rnib.webp
+  statue.webp
+  teach.webp
+  top_back.svg
+  workshop.webp
+Comment: braille.webp is based on a photo by Christophe Moustier, original source at https://commons.wikimedia.org/wiki/File:DSC_4050-MR-Braille.jpg
