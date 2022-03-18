@@ -224,7 +224,7 @@ Item {
                 fillMode: Image.PreserveAspectFit
                 MouseArea {
                     anchors.fill: parent
-                    enabled: !items.inputLocked
+                    enabled: !items.inputLocked && parent.opacity > 0
                     onClicked: {
                         repeater.currentIndex = -1;
                         if(previous.opacity == 1) {
@@ -244,7 +244,7 @@ Item {
                 fillMode: Image.PreserveAspectFit
                 MouseArea {
                     anchors.fill: parent
-                    enabled: !items.inputLocked
+                    enabled: !items.inputLocked && parent.opacity > 0
                     onClicked: {
                         repeater.currentIndex = -1;
                         view.setCurrentDisplayedGroup = view.currentDisplayedGroup + view.nextNavigation;
