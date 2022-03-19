@@ -50,19 +50,29 @@ be installed
     Qt Quick
     Qt Svg
 
+CMake must be installed to compile GCompris:
+
+    sudo apt install cmake
+
 Installing dependencies on a Debian based systems can be done like this:
 
-    sudo aptitude install libqt5svg5-dev \
-                          qml-module-qtmultimedia qt5-default \
+    sudo apt install libqt5svg5-dev \
+                          qml-module-qtmultimedia \
                           qml-module-qtgraphicaleffects qt5-qmake qtcreator \
                           qtdeclarative5-dev qtdeclarative5-dev \
-                          qtmultimedia5-dev qtquick1-5-dev qttools5-dev \
+                          qtmultimedia5-dev qtquickcontrols2-5-dev qttools5-dev \
                           qttools5-dev-tools libqt5multimedia5-plugins \
                           qml-module-qtsensors libqt5quickparticles5 \
                           qml-module-qtquick2 qml-module-qtquick-particles2 \
                           libqt5sensors5-dev libqt5sensors5
 
 To build for Android, Qt 5 AndroidExtras also needs to be installed.
+
+If building from a .tar.gz or .zip source distribution the externals may
+need to be added.
+
+    cd GCompris-qt-*
+    git clone https://github.com/qml-box2d/qml-box2d.git external/qml-box2d/
 
 
 Build
@@ -71,6 +81,15 @@ Start QtCreator and select Open Project and open CMakeLists.txt in the
 gcompris-qt root directory. Follow the wizard instructions.
 
 Use the buttons on the lower left side to build, run, and debug GCompris.
+
+An alternative building process is to use cmake in command-line directly.
+
+    cd GCompris-qt-*
+    mkdir build
+    cd build
+    cmake ..
+    make
+    ./bin/gcompris-qt
 
 More Details
 ------------
