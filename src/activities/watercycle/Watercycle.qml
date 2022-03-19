@@ -49,18 +49,18 @@ ActivityBase {
         function initLevel() {
             if(message.visible)
                 return;
-            items.restarted = true;
             timer.stop();
             items.cycleDone = false;
             river.level = 0;
             sun_area.enabled = true;
-            sun.isUp = false;
+            sun.state = "sunDown";
             sun.hasRun = false;
             vapor.animLoop = false;
-            vapor.isUp = false;
+            vapor.state = "vaporDownRestarted";
             rainAnim.stop();
             rain.down();
             cloud.isUp = false;
+            tuxboat.state = "tuxboatRestarted";
             boatparked.opacity = 1;
             shower.stop();
             waterplant.running = false;
@@ -69,7 +69,6 @@ ActivityBase {
             info.visible = true;
             info.setKey('start');
             timer.restart();
-            items.restarted = false;
         }
 
         QtObject {
@@ -86,7 +85,6 @@ ActivityBase {
                 "done":  qsTr("Fantastic, you have completed the water cycle. You can continue playing.")
             }
 
-            property bool restarted: false
             property bool cycleDone: false
             property bool isVertical: background.width < background.height - bar.height * 1.2
             property bool textOnSide: background.width > layoutArea.width * 1.5
@@ -105,8 +103,8 @@ ActivityBase {
             }
             z: 100
             onIntroDone: {
-                tuxboat.isStarted = true;
-                sun.isUp = false;
+                tuxboat.state = "tuxboatRight";
+                sun.state = "sunDown";
                 info.visible = true;
                 sun_area.enabled = true;
             }
@@ -205,7 +203,6 @@ ActivityBase {
             width: layoutArea.width * 0.12
             fillMode: Image.PreserveAspectFit
             sourceSize.width: width
-            property bool isStarted: false
             anchors{
                 bottom: layoutArea.bottom
                 bottomMargin: layoutArea.height * 0.02
@@ -213,11 +210,11 @@ ActivityBase {
                 leftMargin: 0
             }
             z:30
+            state: "tuxboatLeft"
 
             states: [
                 State {
                     name: "tuxboatLeft"
-                    when: !tuxboat.isStarted
                     PropertyChanges {
                         target: tuxboat
                         anchors.leftMargin: 0
@@ -226,7 +223,6 @@ ActivityBase {
                 },
                 State {
                     name: "tuxboatRight"
-                    when: tuxboat.isStarted && !items.restarted
                     PropertyChanges {
                         target: tuxboat
                         anchors.leftMargin: layoutArea.width - tuxboat.width
@@ -235,7 +231,6 @@ ActivityBase {
                 },
                 State {
                     name: "tuxboatRestarted"
-                    when: tuxboat.isStarted && items.restarted
                     PropertyChanges {
                         target: tuxboat
                         anchors.leftMargin: layoutArea.width - tuxboat.width
@@ -255,7 +250,7 @@ ActivityBase {
                         ScriptAction { script: {
                                 boatparked.opacity = 1;
                                 shower.stop();
-                                if(!sun.hasRun && !items.restarted)
+                                if(!sun.hasRun)
                                     info.setKey('start');
                             }
                         }
@@ -299,24 +294,23 @@ ActivityBase {
                 left: layoutArea.left
                 top: layoutArea.top
                 leftMargin: layoutArea.width * 0.056
-                topMargin: layoutArea.height * 0.256
+                topMargin: layoutArea.height * 0.056
             }
             z: 2
             property bool hasRun: false
-            property bool isUp: true
             MouseArea {
                 id: sun_area
                 anchors.fill: sun
                 onClicked: {
                     if(cloud.opacity == 0)
-                        sun.isUp = true;
+                        sun.state = "sunUp";
                 }
             }
+            state: "sunUp"
 
             states: [
                 State {
                     name: "sunDown"
-                    when: !sun.isUp
                     PropertyChanges {
                         target: sun
                         anchors.topMargin: layoutArea.height * 0.256
@@ -324,7 +318,6 @@ ActivityBase {
                 },
                 State {
                     name: "sunUp"
-                    when: sun.isUp
                     PropertyChanges {
                         target: sun
                         anchors.topMargin: layoutArea.height * 0.056
@@ -344,7 +337,7 @@ ActivityBase {
                             info.setKey('sun');
                             sun.hasRun = true;
                             vapor.animLoop = true;
-                            vapor.isUp = true;
+                            vapor.state = "vaporUp";
                             cloud.isUp = true;
                         }
                     }
@@ -360,7 +353,6 @@ ActivityBase {
             width: layoutArea.width * 0.1
             fillMode: Image.PreserveAspectFit
             sourceSize.width: width
-            property bool isUp: false
             property bool animLoop: false
             anchors {
                 left: sun.left
@@ -368,11 +360,11 @@ ActivityBase {
                 topMargin: layoutArea.height * 0.28
             }
             z: 10
+            state: "vaporDown"
 
             states: [
                 State {
                     name: "vaporDown"
-                    when: !vapor.isUp && !items.restarted
                     PropertyChanges {
                         target: vapor
                         opacity: 0
@@ -381,7 +373,6 @@ ActivityBase {
                 },
                 State {
                     name: "vaporUp"
-                    when: vapor.isUp
                     PropertyChanges {
                         target: vapor
                         opacity: 1
@@ -390,7 +381,6 @@ ActivityBase {
                 },
                 State {
                     name: "vaporDownRestarted"
-                    when: !vapor.isUp && items.restarted
                     PropertyChanges {
                         target: vapor
                         opacity: 0
@@ -405,7 +395,7 @@ ActivityBase {
                     SequentialAnimation {
                         NumberAnimation { property: "opacity"; duration: 200 }
                         NumberAnimation { property: "anchors.topMargin"; duration: 5000 }
-                        ScriptAction { script: vapor.isUp = false }
+                        ScriptAction { script: vapor.state = "vaporDown" }
                     }
                 },
                 Transition {
@@ -416,7 +406,7 @@ ActivityBase {
                         ScriptAction { script: {
                                 if(vapor.animLoop === true) {
                                     vapor.animLoop = false;
-                                    vapor.isUp = true;
+                                    vapor.state = "vaporUp";
                                 } else {
                                     info.setKey("cloud");
                                 }
@@ -490,7 +480,7 @@ ActivityBase {
                 anchors.fill: cloud
                 enabled: info.newKey === 'cloud'
                 onClicked: {
-                    sun.isUp = false;
+                    sun.state = "sunDown";
                     rain.up();
                 }
             }
