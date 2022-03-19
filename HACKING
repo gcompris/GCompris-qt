@@ -86,6 +86,7 @@ An alternative building process is to use cmake.
     cd build
     cmake ..
     make
+    ./bin/gcompris-qt
 
 More Details
 ------------
