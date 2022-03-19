@@ -23,13 +23,12 @@ Item {
     property alias cloudIsUp: cloud.isUp
 
     function start() {
-        tuxboat.isStarted = true
+        tuxboat.state = "tuxboatRight"
         items.sunIsUp = false
     }
 
     function stop() {
-        items.restarted = true
-        tuxboat.isStarted = true
+        tuxboat.state = "tuxboatRestarted"
         dam.started = false
         river.level = 0
         items.sunIsUp = false
@@ -38,7 +37,6 @@ Item {
         rain.down()
         cloud.isUp = false
         stepup.started = false
-        items.restarted = false
     }
 
     function stopTimer() {
@@ -51,7 +49,6 @@ Item {
         width: parent.width * 0.12
         fillMode: Image.PreserveAspectFit
         sourceSize.width: width
-        property bool isStarted: false
         anchors{
             bottom: parent.bottom
             bottomMargin: parent.width * 0.02
@@ -59,11 +56,10 @@ Item {
             leftMargin: 0
         }
         z: 51
-
+        state: "tuxboatLeft"
         states: [
             State {
                 name: "tuxboatLeft"
-                when: !tuxboat.isStarted
                 PropertyChanges {
                     target: tuxboat
                     anchors.leftMargin: 0
@@ -72,7 +68,6 @@ Item {
             },
             State {
                 name: "tuxboatRight"
-                when: tuxboat.isStarted && !items.restarted
                 PropertyChanges {
                     target: tuxboat
                     anchors.leftMargin: layoutArea.width - tuxboat.width
@@ -81,7 +76,6 @@ Item {
             },
             State {
                 name: "tuxboatRestarted"
-                when: tuxboat.isStarted && items.restarted
                 PropertyChanges {
                     target: tuxboat
                     anchors.leftMargin: layoutArea.width - tuxboat.width
@@ -155,10 +149,17 @@ Item {
         }
         z: 31
 
+        onIsUpChanged: {
+            if(isUp)
+                state = "vaporUp"
+            else
+                state = "vaporDown"
+        }
+
+        state: "vaporDown"
         states: [
             State {
                 name: "vaporDown"
-                when: !vapor.isUp
                 PropertyChanges {
                     target: vapor
                     opacity: 0
@@ -167,7 +168,6 @@ Item {
             },
             State {
                 name: "vaporUp"
-                when: vapor.isUp
                 PropertyChanges {
                     target: vapor
                     opacity: 1
@@ -228,10 +228,17 @@ Item {
                 rain.up()
             }
         }
+
+        onIsUpChanged: {
+            if(isUp)
+                state = "cloudIsUp"
+            else
+                state = "cloudIsDown"
+        }
+        state: "cloudIsDown"
         states: [
             State {
                 name: "cloudIsDown"
-                when: !cloud.isUp
                 PropertyChanges {
                     target: cloud
                     opacity: 0
@@ -241,7 +248,6 @@ Item {
             },
             State {
                 name: "cloudIsUp"
-                when: cloud.isUp
                 PropertyChanges {
                     target: cloud
                     opacity: 1

@@ -56,7 +56,13 @@ ActivityBase {
             property color produceColor: "#E9E87F"
             property color produceColorBorder: "#82811E"
             property bool hasWon: false
-            property bool restarted: false
+
+            onSunIsUpChanged: {
+                if(sunIsUp)
+                    sun.state = "sunUp"
+                else
+                    sun.state = "sunDown"
+            }
         }
 
         onStart: items.currentLevel = 0
@@ -183,11 +189,10 @@ ActivityBase {
                         items.sunIsUp = true;
                 }
             }
-
+            state: "sunUp"
             states: [
                 State {
                     name: "sunDown"
-                    when: !items.sunIsUp
                     PropertyChanges {
                         target: sun
                         anchors.topMargin: layoutArea.height * 0.256
@@ -195,7 +200,6 @@ ActivityBase {
                 },
                 State {
                     name: "sunUp"
-                    when: items.sunIsUp
                     PropertyChanges {
                         target: sun
                         anchors.topMargin: layoutArea.height * 0.056
