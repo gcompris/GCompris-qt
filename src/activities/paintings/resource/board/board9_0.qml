@@ -20,82 +20,82 @@ QtObject {
          "height": 515
       },
       {
-         "pixmapfile" : "image/HiroshigeHorsePrawns_d4.png",
+         "pixmapfile" : "image/HiroshigeHorsePrawns_d4.webp",
          "x" : "0.853",
          "y" : "0.83"
       },
       {
-         "pixmapfile" : "image/HiroshigeHorsePrawns_c4.png",
+         "pixmapfile" : "image/HiroshigeHorsePrawns_c4.webp",
          "x" : "0.626",
          "y" : "0.853"
       },
       {
-         "pixmapfile" : "image/HiroshigeHorsePrawns_b4.png",
+         "pixmapfile" : "image/HiroshigeHorsePrawns_b4.webp",
          "x" : "0.37",
          "y" : "0.83"
       },
       {
-         "pixmapfile" : "image/HiroshigeHorsePrawns_a4.png",
+         "pixmapfile" : "image/HiroshigeHorsePrawns_a4.webp",
          "x" : "0.115",
          "y" : "0.83"
       },
       {
-         "pixmapfile" : "image/HiroshigeHorsePrawns_d3.png",
+         "pixmapfile" : "image/HiroshigeHorsePrawns_d3.webp",
          "x" : "0.853",
          "y" : "0.594"
       },
       {
-         "pixmapfile" : "image/HiroshigeHorsePrawns_c3.png",
+         "pixmapfile" : "image/HiroshigeHorsePrawns_c3.webp",
          "x" : "0.6",
          "y" : "0.619"
       },
       {
-         "pixmapfile" : "image/HiroshigeHorsePrawns_b3.png",
+         "pixmapfile" : "image/HiroshigeHorsePrawns_b3.webp",
          "x" : "0.343",
          "y" : "0.617"
       },
       {
-         "pixmapfile" : "image/HiroshigeHorsePrawns_a3.png",
+         "pixmapfile" : "image/HiroshigeHorsePrawns_a3.webp",
          "x" : "0.115",
          "y" : "0.594"
       },
       {
-         "pixmapfile" : "image/HiroshigeHorsePrawns_d2.png",
+         "pixmapfile" : "image/HiroshigeHorsePrawns_d2.webp",
          "x" : "0.853",
          "y" : "0.376"
       },
       {
-         "pixmapfile" : "image/HiroshigeHorsePrawns_c2.png",
+         "pixmapfile" : "image/HiroshigeHorsePrawns_c2.webp",
          "x" : "0.6",
          "y" : "0.376"
       },
       {
-         "pixmapfile" : "image/HiroshigeHorsePrawns_b2.png",
+         "pixmapfile" : "image/HiroshigeHorsePrawns_b2.webp",
          "x" : "0.368",
          "y" : "0.4"
       },
       {
-         "pixmapfile" : "image/HiroshigeHorsePrawns_a2.png",
+         "pixmapfile" : "image/HiroshigeHorsePrawns_a2.webp",
          "x" : "0.142",
          "y" : "0.375"
       },
       {
-         "pixmapfile" : "image/HiroshigeHorsePrawns_d1.png",
+         "pixmapfile" : "image/HiroshigeHorsePrawns_d1.webp",
          "x" : "0.878",
          "y" : "0.163"
       },
       {
-         "pixmapfile" : "image/HiroshigeHorsePrawns_c1.png",
+         "pixmapfile" : "image/HiroshigeHorsePrawns_c1.webp",
          "x" : "0.627",
          "y" : "0.163"
       },
       {
-         "pixmapfile" : "image/HiroshigeHorsePrawns_b1.png",
+         "pixmapfile" : "image/HiroshigeHorsePrawns_b1.webp",
          "x" : "0.368",
          "y" : "0.163"
       },
       {
-         "pixmapfile" : "image/HiroshigeHorsePrawns_a1.png",
+         "pixmapfile" : "image/HiroshigeHorsePrawns_a1.webp",
          "x" : "0.142",
          "y" : "0.163"
       }
