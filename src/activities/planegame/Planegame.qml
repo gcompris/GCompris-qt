@@ -97,7 +97,7 @@ ActivityBase {
                 id: tutorialComponent
                 Image {
                     id: tutorialImage
-                    source: "../digital_electricity/resource/texture01.png"
+                    source: "../digital_electricity/resource/texture01.webp"
                     anchors.fill: parent
                     fillMode: Image.Tile
                     Tutorial {

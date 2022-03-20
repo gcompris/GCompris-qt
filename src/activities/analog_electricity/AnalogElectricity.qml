@@ -26,7 +26,7 @@ ActivityBase {
     pageComponent: Image {
         id: background
         anchors.fill: parent
-        source: Activity.urlDigital + "texture02.png"
+        source: Activity.urlDigital + "texture02.webp"
         fillMode: Image.Tile
         signal start
         signal stop
@@ -273,7 +273,7 @@ ActivityBase {
                 anchors.fill: parent
                 anchors.rightMargin: 3 * ApplicationInfo.ratio
                 anchors.bottomMargin: 0
-                source: Activity.urlDigital + "texture01.png"
+                source: Activity.urlDigital + "texture01.webp"
                 fillMode: Image.Tile
                 ListWidget {
                     id: availablePieces
