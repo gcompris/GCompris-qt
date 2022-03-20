@@ -14,7 +14,7 @@ QtObject {
    property string instruction: qsTr("Moonwalker")
    property var levels: [
       {
-          "pixmapfile": "images/4.png",
+          "pixmapfile": "images/4.webp",
           "x": "0.75",
           "y": "0.65",
           "width": 0.4,
@@ -22,7 +22,7 @@ QtObject {
           "soundFile": "sound/2.$CA"
       },
       {
-          "pixmapfile": "images/3.png",
+          "pixmapfile": "images/3.webp",
           "x": "0.25",
           "y": "0.65",
           "width": 0.4,
@@ -30,7 +30,7 @@ QtObject {
           "soundFile": "sound/3.$CA"
       },
       {
-          "pixmapfile": "images/2.png",
+          "pixmapfile": "images/2.webp",
           "x": "0.75",
           "y": "0.2",
           "width": 0.4,
@@ -38,7 +38,7 @@ QtObject {
           "soundFile": "sound/2.$CA"
       },
       {
-          "pixmapfile": "images/1.png",
+          "pixmapfile": "images/1.webp",
           "x": "0.25",
           "y": "0.2",
           "width": 0.4,
