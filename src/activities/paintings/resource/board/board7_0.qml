@@ -20,62 +20,62 @@ QtObject {
          "height": 515
       },
       {
-         "pixmapfile" : "image/GreatWave_d3.png",
+         "pixmapfile" : "image/GreatWave_d3.webp",
          "x" : "0.847",
          "y" : "0.752"
       },
       {
-         "pixmapfile" : "image/GreatWave_c3.png",
+         "pixmapfile" : "image/GreatWave_c3.webp",
          "x" : "0.64",
          "y" : "0.752"
       },
       {
-         "pixmapfile" : "image/GreatWave_b3.png",
+         "pixmapfile" : "image/GreatWave_b3.webp",
          "x" : "0.404",
          "y" : "0.752"
       },
       {
-         "pixmapfile" : "image/GreatWave_a3.png",
+         "pixmapfile" : "image/GreatWave_a3.webp",
          "x" : "0.172",
          "y" : "0.782"
       },
       {
-         "pixmapfile" : "image/GreatWave_d2.png",
+         "pixmapfile" : "image/GreatWave_d2.webp",
          "x" : "0.847",
          "y" : "0.468"
       },
       {
-         "pixmapfile" : "image/GreatWave_c2.png",
+         "pixmapfile" : "image/GreatWave_c2.webp",
          "x" : "0.64",
          "y" : "0.497"
       },
       {
-         "pixmapfile" : "image/GreatWave_b2.png",
+         "pixmapfile" : "image/GreatWave_b2.webp",
          "x" : "0.404",
          "y" : "0.468"
       },
       {
-         "pixmapfile" : "image/GreatWave_a2.png",
+         "pixmapfile" : "image/GreatWave_a2.webp",
          "x" : "0.172",
          "y" : "0.527"
       },
       {
-         "pixmapfile" : "image/GreatWave_d1.png",
+         "pixmapfile" : "image/GreatWave_d1.webp",
          "x" : "0.847",
          "y" : "0.212"
       },
       {
-         "pixmapfile" : "image/GreatWave_c1.png",
+         "pixmapfile" : "image/GreatWave_c1.webp",
          "x" : "0.617",
          "y" : "0.242"
       },
       {
-         "pixmapfile" : "image/GreatWave_b1.png",
+         "pixmapfile" : "image/GreatWave_b1.webp",
          "x" : "0.355",
          "y" : "0.212"
       },
       {
-         "pixmapfile" : "image/GreatWave_a1.png",
+         "pixmapfile" : "image/GreatWave_a1.webp",
          "x" : "0.147",
          "y" : "0.242"
       }
