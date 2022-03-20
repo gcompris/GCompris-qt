@@ -17,10 +17,10 @@ Data {
             // To override the default hardcoded instruction, define instruction string
             // instruction: "overridden instruction"
             values: [
-                'qrc:/gcompris/src/activities/chronos/resource/images/1.png',
-                'qrc:/gcompris/src/activities/chronos/resource/images/2.png',
-                'qrc:/gcompris/src/activities/chronos/resource/images/3.png',
-                'qrc:/gcompris/src/activities/chronos/resource/images/4.png'
+                'qrc:/gcompris/src/activities/chronos/resource/images/1.webp',
+                'qrc:/gcompris/src/activities/chronos/resource/images/2.webp',
+                'qrc:/gcompris/src/activities/chronos/resource/images/3.webp',
+                'qrc:/gcompris/src/activities/chronos/resource/images/4.webp'
             ]
         }
     ]
