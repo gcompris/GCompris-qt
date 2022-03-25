@@ -1,0 +1,40 @@
+include($QT_INSTALL_DOCS/global/qt-module-defaults.qdocconf)
+
+project                 = QtQuickCalendar
+description             = Qt Quick Calendar Reference Documentation
+version                 = $QT_VERSION
+
+qhp.projects            = QtQuickCalendar
+
+qhp.QtQuickCalendar.file          = qtquickcalendar.qhp
+qhp.QtQuickCalendar.namespace     = org.qt-project.qtquickcalendar.$QT_VERSION_TAG
+qhp.QtQuickCalendar.virtualFolder = qtquickcalendar
+qhp.QtQuickCalendar.indexTitle    = Qt Quick Calendar
+qhp.QtQuickCalendar.indexRoot     =
+
+qhp.QtQuickCalendar.filterAttributes                  = qtquickcalendar $QT_VERSION qtrefdoc
+qhp.QtQuickCalendar.customFilters.Qt.name             = QtQuickCalendar $QT_VERSION
+qhp.QtQuickCalendar.customFilters.Qt.filterAttributes = qtquickcalendar $QT_VERSION
+
+qhp.QtQuickCalendar.subprojects = qmltypes
+qhp.QtQuickCalendar.subprojects.qmltypes.title = QML Types
+qhp.QtQuickCalendar.subprojects.qmltypes.indexTitle = Qt Quick Calendar QML Types
+qhp.QtQuickCalendar.subprojects.qmltypes.selectors = qmlclass
+qhp.QtQuickCalendar.subprojects.qmltypes.sortPages = true
+
+depends = qtcore qtgui qtdoc qtqml qtquick qtquickcontrols
+
+# This module has no documented C++ types, clear the module header
+moduleheader =
+
+headerdirs += ../
+sourcedirs += ../ src
+exampledirs += ../ snippets
+imagedirs += images
+
+navigation.landingpage  = "Qt Quick Calendar"
+navigation.qmltypespage = "Qt Quick Calendar QML Types"
+
+tagfile                 = qtquickcalendar.tags
+
+macro.compatibility = "\\note \\e{Types in this module are not guaranteed to remain compatible in future versions.}"

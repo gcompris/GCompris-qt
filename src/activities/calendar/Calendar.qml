@@ -9,13 +9,14 @@
  */
 
 import QtQuick 2.12
+import QtQuick.Controls 2.12
+import QtQuick.Layouts 1.12
+import QtQuick.Calendar 1.0
 import GCompris 1.0
-import QtQuick.Controls 1.5
-import QtQuick.Controls.Private 1.0
-import QtQuick.Controls.Styles 1.4
-import "../../core"
+
 import "calendar.js" as Activity
 import "calendar_dataset.js" as Dataset
+import "../../core"
 
 ActivityBase {
     id: activity
@@ -83,100 +84,149 @@ ActivityBase {
             opacity: 0.3
         }
 
-        Calendar {
+        Rectangle {
+            id: navigationBar
+            anchors.top: calendarBox.top
+            anchors.horizontalCenter: calendarBox.horizontalCenter
+            anchors.topMargin: calendarBox.height * 0.02
+            height: calendarBox.height * 0.96 * 0.12
+            width: calendar.width
+            color: "#f2f2f2"
+
+            BarButton {
+                id: previousMonth
+                height: parent.height * 0.8
+                width: previousMonth.height
+                sourceSize.height: previousMonth.height
+                sourceSize.width: previousMonth.width
+                anchors.verticalCenter: parent.verticalCenter
+                anchors.left: parent.left
+                anchors.leftMargin: parent.height * 0.1
+                source: "qrc:/gcompris/src/core/resource/scroll_down.svg"
+                rotation: 90
+                visible: calendar.navigationBarVisible && (calendar.currentDate.getFullYear() > calendar.minimumDate.getFullYear() || (calendar.currentDate.getFullYear() == calendar.minimumDate.getFullYear() && calendar.currentDate.getMonth() > calendar.minimumDate.getMonth()))
+                onClicked: {
+                    calendar.showPreviousMonth();
+                }
+            }
+            GCText {
+                id: dateText
+                visible: calendar.navigationBarVisible
+                text: grid.title
+                color: "#373737"
+                horizontalAlignment: Text.AlignHCenter
+                fontSizeMode: Text.Fit
+                anchors.verticalCenter: parent.verticalCenter
+                anchors.left: previousMonth.right
+                anchors.leftMargin: 2
+                anchors.right: nextMonth.left
+                anchors.rightMargin: 2
+            }
+            BarButton {
+                id: nextMonth
+                height: previousMonth.height
+                width: nextMonth.height
+                sourceSize.height: nextMonth.height
+                sourceSize.width: nextMonth.width
+                anchors.verticalCenter: parent.verticalCenter
+                anchors.right: parent.right
+                anchors.rightMargin: previousMonth.anchors.leftMargin
+                source: "qrc:/gcompris/src/core/resource/scroll_down.svg"
+                rotation: 270
+                visible: calendar.navigationBarVisible && (calendar.currentDate.getFullYear() < calendar.maximumDate.getFullYear() || (calendar.currentDate.getFullYear() == calendar.maximumDate.getFullYear() && calendar.currentDate.getMonth() < calendar.maximumDate.getMonth()));
+                onClicked: {
+                    calendar.showNextMonth();
+                }
+            }
+        }
+
+        Rectangle {
+            anchors.fill: calendar
+            color: "#F2F2F2"
+        }
+        GridLayout {
             id: calendar
-            weekNumbersVisible: false
             width: calendarBox.width * 0.96
-            height: calendarBox.height * 0.96
-            anchors.centerIn: calendarBox
-            frameVisible: true
-            focus: !answerChoices.visible
-            __locale: Qt.locale(ApplicationInfo.localeShort)
-            style: CalendarStyle {
-                navigationBar: Rectangle {
-                    height: calendar.height * 0.12
-                    color: "#f2f2f2"
-                    
-                    BarButton {
-                        id: previousMonth
-                        height: parent.height * 0.8
-                        width: previousMonth.height
-                        sourceSize.height: previousMonth.height
-                        sourceSize.width: previousMonth.width
-                        anchors.verticalCenter: parent.verticalCenter
-                        anchors.left: parent.left
-                        anchors.leftMargin: parent.height * 0.1
-                        source: "qrc:/gcompris/src/core/resource/scroll_down.svg"
-                        rotation: 90
-                        visible: ((calendar.visibleYear + calendar.visibleMonth) > Activity.minRange) ? true : false
-                        onClicked: calendar.showPreviousMonth()
-                    }
-                    GCText {
-                        id: dateText
-                        text: styleData.title
-                        color: "#373737"
-                        horizontalAlignment: Text.AlignHCenter
-                        fontSizeMode: Text.Fit
-                        anchors.verticalCenter: parent.verticalCenter
-                        anchors.left: previousMonth.right
-                        anchors.leftMargin: 2
-                        anchors.right: nextMonth.left
-                        anchors.rightMargin: 2
-                    }
-                    BarButton {
-                        id: nextMonth
-                        height: previousMonth.height
-                        width: nextMonth.height
-                        sourceSize.height: nextMonth.height
-                        sourceSize.width: nextMonth.width
-                        anchors.verticalCenter: parent.verticalCenter
-                        anchors.right: parent.right
-                        anchors.rightMargin: previousMonth.anchors.leftMargin
-                        source: "qrc:/gcompris/src/core/resource/scroll_down.svg"
-                        rotation: 270
-                        visible: ((calendar.visibleYear + calendar.visibleMonth) < Activity.maxRange) ? true : false
-                        onClicked: calendar.showNextMonth()
-                    }
+            height: calendarBox.height * 0.96 - navigationBar.height
+            anchors.top: navigationBar.bottom
+            anchors.horizontalCenter: calendarBox.horizontalCenter
+            columns: 1
+            rowSpacing: -5
+            property bool navigationBarVisible
+            property var minimumDate
+            property var maximumDate
+            property date currentDate: new Date()
+            property int selectedDay
+            onSelectedDayChanged: {
+                var date = new Date(calendar.currentDate);
+                date.setDate(selectedDay);
+                calendar.currentDate = date;
+                Activity.daySelected = selectedDay;
+            }
+
+            function showPreviousMonth() {
+                var date = new Date(calendar.currentDate);
+                date.setMonth(date.getMonth()-1);
+                if(minimumDate.getTime() <= date.getTime()) {
+                       calendar.currentDate = date;
                 }
-                dayDelegate: Rectangle {
-                    anchors.fill: parent
-                    anchors.leftMargin: (!addExtraMargin || control.weekNumbersVisible) && styleData.index % CalendarUtils.daysInAWeek === 0 ? 0 : -1
-                    anchors.rightMargin: !addExtraMargin && styleData.index % CalendarUtils.daysInAWeek === CalendarUtils.daysInAWeek - 1 ? 0 : -1
-                    anchors.bottomMargin: !addExtraMargin && styleData.index >= CalendarUtils.daysInAWeek * (CalendarUtils.weeksOnACalendarMonth - 1) ? 0 : -1
-                    anchors.topMargin: styleData.selected ? -1 : 0
-                    color: styleData.date !== undefined && styleData.selected ? selectedDateColor : "#F2F2F2"
-                    border.color: "#cec4c4"
-                    radius: 5
-                    property bool addExtraMargin: control.frameVisible && styleData.selected
-                    readonly property color sameMonthDateTextColor: "#373737"
-                    readonly property color selectedDateColor: "#3778d0"
-                    readonly property color selectedDateTextColor: "white"
-                    readonly property color differentMonthDateTextColor: "#bbb"
-                    readonly property color invalidDateColor: "#dddddd"
-                    Label {
-                        id: dayDelegateText
-                        text: styleData.date.getDate()
-                        anchors.centerIn: parent
-                        horizontalAlignment: Text.AlignRight
-                        font.family: GCSingletonFontLoader.fontLoader.name
-                        font.pixelSize: Math.min(parent.height/3, parent.width/3)
-                        color: {
-                            var theColor = invalidDateColor;
-                            if (styleData.valid) {
-                                // Date is within the valid range.
-                                theColor = styleData.visibleMonth ? sameMonthDateTextColor : differentMonthDateTextColor;
-                                if (styleData.selected)
-                                    theColor = selectedDateTextColor;
-                            }
-                            theColor;
-                        }
-                    }
+            }
+            function showNextMonth() {
+                var date = new Date(calendar.currentDate);
+                date.setMonth(date.getMonth()+1);
+                if(date.getTime()<= maximumDate.getTime()) {
+                       calendar.currentDate = date;
                 }
-                dayOfWeekDelegate: Rectangle {
+            }
+            function selectPreviousDay() {
+                addDaysToCurrentDate(-1);
+            }
+            function selectNextDay() {
+                addDaysToCurrentDate(1);
+            }
+            function selectPreviousWeek() {
+                addDaysToCurrentDate(-7);
+            }
+            function selectNextWeek() {
+                addDaysToCurrentDate(7);
+            }
+            function addDaysToCurrentDate(daysToAdd) {
+                var date = new Date(calendar.currentDate);
+                date.setDate(date.getDate()+daysToAdd);
+                if(minimumDate.getTime() <= date.getTime() &&
+                   date.getTime()<= maximumDate.getTime()) {
+                    calendar.currentDate = date;
+                    calendar.selectedDay = calendar.currentDate.getDate();
+                }
+            }
+            function selectFirstDayOfMonth() {
+                var date = new Date(calendar.currentDate);
+                date.setDate(1);
+                calendar.currentDate = date;
+                calendar.selectedDay = calendar.currentDate.getDate();
+            }
+            function selectLastDayOfMonth() {
+                // on some months, it goes to the next month...
+                if(calendar.currentDate.getDate() == 31) return;
+                var date = new Date(calendar.currentDate);
+                date.setMonth(calendar.currentDate.getMonth()+1);
+                date.setDate(0);
+                calendar.currentDate = date;
+                calendar.selectedDay = calendar.currentDate.getDate();
+            }
+
+            DayOfWeekRow {
+                id: dayOfWeekRow
+                locale: grid.locale
+                font.bold: false
+                spacing: 2
+                delegate: Rectangle {
                     color: "lightgray"
-                    implicitHeight: Math.round(TextSingleton.implicitHeight * 2.25)
+                    height: 50
+                    width: 50
+                    radius: 5
                     Label {
-                        text: control.__locale.dayName(styleData.dayOfWeek, control.dayOfWeekFormat)
+                        text: grid.locale.dayName((grid.locale.firstDayOfWeek+index) % 7, Locale.ShortFormat)
                         font.family: GCSingletonFontLoader.fontLoader.name
                         fontSizeMode: Text.Fit
                         minimumPixelSize: 1
@@ -185,67 +235,72 @@ ActivityBase {
                         anchors.centerIn: parent
                     }
                 }
-            }
-            onVisibleMonthChanged: {
-                Activity.monthSelected = visibleMonth
-                Activity.daySelected = selectedDate.getDate()
-            }
-            onVisibleYearChanged: {
-                Activity.yearSelected = visibleYear
-                Activity.daySelected = selectedDate.getDate()
-            }
-            onClicked: {
-                Activity.daySelected = selectedDate.getDate()
-            }
-            onSelectedDateChanged: {
-                Activity.daySelected = selectedDate.getDate()
+                Layout.fillWidth: true
             }
 
+            MonthGrid {
+                id: grid
+                locale: Qt.locale(ApplicationInfo.localeShort)
+                month: parent.currentDate.getMonth()
+                year: parent.currentDate.getFullYear()
+                spacing: 0
+                title: parent.currentDate.toLocaleString(locale, "MMMM yyyy") // should be automatically translated but is not
+
+                readonly property int gridLineThickness: 1
+
+                Layout.fillWidth: true
+                Layout.fillHeight: true
+
+                delegate: MonthGridDelegate {
+                    id: gridDelegate
+                    visibleMonth: grid.month
+                }
+            }
         }
 
         function handleKeys(event) {
-            if(event.key === Qt.Key_Space && okButtonMouseArea.enabled) {
+            if(event.key === Qt.Key_Space && okButton.enabled) {
                 Activity.checkAnswer()
                 event.accepted = true
             }
-            if(event.key === Qt.Key_Enter && okButtonMouseArea.enabled) {
+            if(event.key === Qt.Key_Enter && okButton.enabled) {
                 Activity.checkAnswer()
                 event.accepted = true
             }
-            if(event.key === Qt.Key_Return && okButtonMouseArea.enabled) {
+            if(event.key === Qt.Key_Return && okButton.enabled) {
                 Activity.checkAnswer()
                 event.accepted = true
             }
             if(event.key === Qt.Key_Home) {
-                calendar.__selectFirstDayOfMonth();
+                calendar.selectFirstDayOfMonth();
                 event.accepted = true;
             }
             if(event.key === Qt.Key_End) {
-                calendar.__selectLastDayOfMonth();
+                calendar.selectLastDayOfMonth();
                 event.accepted = true;
             }
             if(event.key === Qt.Key_PageUp) {
-                calendar.__selectPreviousMonth();
+                calendar.showPreviousMonth();
                 event.accepted = true;
             }
             if(event.key === Qt.Key_PageDown) {
-                calendar.__selectNextMonth();
+                calendar.showNextMonth();
                 event.accepted = true;
             }
             if(event.key === Qt.Key_Left) {
-                calendar.__selectPreviousDay();
+                calendar.selectPreviousDay();
                 event.accepted = true;
             }
             if(event.key === Qt.Key_Up) {
-                calendar.__selectPreviousWeek();
+                calendar.selectPreviousWeek();
                 event.accepted = true;
             }
             if(event.key === Qt.Key_Down) {
-                calendar.__selectNextWeek();
+                calendar.selectNextWeek();
                 event.accepted = true;
             }
             if(event.key === Qt.Key_Right) {
-                calendar.__selectNextDay();
+                calendar.selectNextDay();
                 event.accepted = true;
             }
         }
@@ -378,12 +433,8 @@ ActivityBase {
                 id: okButtonParticles
                 clip: false
             }
-            MouseArea {
-                id: okButtonMouseArea
-                anchors.fill: parent
-                onClicked: {
-                    Activity.checkAnswer()
-                }
+            onClicked: {
+                Activity.checkAnswer()
             }
         }
 
@@ -420,5 +471,3 @@ ActivityBase {
         }
     }
 }
-
-

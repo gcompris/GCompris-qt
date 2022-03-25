@@ -6,7 +6,7 @@
   },
  "android-package-source-directory": "@PACKAGE_SOURCE_ANDROID@/",
  "android-package": "net.gcompris",
- "android-extra-plugins": "@CMAKE_BINARY_DIR@/lib/qml/Box2D.2.0",
+ "android-extra-plugins": "@CMAKE_BINARY_DIR@/lib/qml/Box2D.2.0,@CMAKE_BINARY_DIR@/lib/qml/QtQuick",
  "sdkBuildToolsRevision": "@ANDROID_SDK_BUILD_TOOLS_REVISION@",
  "ndk": "@ANDROID_NDK@",
  "ndk-host": "@_HOST@",

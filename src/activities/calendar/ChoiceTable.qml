@@ -13,7 +13,6 @@
 
 import QtQuick 2.12
 import GCompris 1.0
-import QtQuick.Controls 1.5
 import "../../core"
 import "calendar.js" as Activity
 

@@ -413,6 +413,9 @@ endif()
 # qml-box2d
 include(cmake/box2d.cmake)
 
+# qtquick-calendar
+include(cmake/qtquickcalendar.cmake)
+
 add_subdirectory(src)
 
 if(SAILFISHOS)
