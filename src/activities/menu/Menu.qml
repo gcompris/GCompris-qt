@@ -52,21 +52,19 @@ ActivityBase {
             Core.quit(activity);
         }
         else {
-            pageView.pop();
+            pageView.popElement();
             // Restore focus that has been taken by the loaded activity
             if(pageView.currentItem === activity)
                 focus = true;
         }
     }
 
-    onDisplayDialog: pageView.push(dialog)
+    onDisplayDialog: pageView.pushElement(dialog)
 
     onDisplayDialogs: {
-        var toPush = [];
         for (var i = 0; i < dialogs.length; i++) {
-            toPush.push({item: dialogs[i]});
+            pageView.pushElement(dialogs[i]);
         }
-        pageView.push(toPush);
     }
 
     //when selecting a new language in config, we need to open the newVoicesDialog,
@@ -189,7 +187,7 @@ ActivityBase {
             //take the focus away from textField before starting an activity
             searchTextField.focus = false
 
-            pageView.push(activityLoader.item)
+            pageView.pushElement(activityLoader.item)
         }
 
         Loader {
@@ -590,7 +588,7 @@ ActivityBase {
                             // immediately pop the Dialog to load the activity
                             // if we don't do it immediately the page is busy
                             // and it does not load the activity
-                            pageView.pop({immediate: true})
+                            pageView.pop(StackView.Immediate)
                             selectCurrentItem()
                         }
                     }

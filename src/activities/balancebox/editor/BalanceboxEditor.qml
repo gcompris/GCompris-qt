@@ -98,6 +98,7 @@ Item {
         testBox.testLevel = Activity.modelToLevel();
         testBox.needRestart = true;
         back(testBox);
+        testBox.start();
     }
 
     function stopTesting() {
