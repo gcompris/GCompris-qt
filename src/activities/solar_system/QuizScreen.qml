@@ -10,7 +10,7 @@
 import QtQuick 2.12
 import GCompris 1.0
 import QtGraphicalEffects 1.0
-import QtQuick.Controls 1.5
+import QtQuick.Controls 2.12
 
 import "../../core"
 import "solar_system.js" as Activity
@@ -230,35 +230,26 @@ Item {
         }
     }
 
-    ProgressBar {
+    GCProgressBar {
         id: progressBar
         height: bar.height * 0.35
         width: parent.width * 0.35
 
         readonly property real percentage: (mainQuizScreen.numberOfCorrectAnswers / score.numberOfSubLevels) * 100
-        readonly property string message: qsTr("%1%").arg(value)
+        message: qsTr("%1%").arg(value)
 
         value: Math.round(percentage * 10) / 10
-        maximumValue: 100
+        to: 100
 
         visible: items.assessmentMode
         y: parent.height - bar.height - height - 10 * ApplicationInfo.ratio
         x: parent.width - width * 1.1
 
-        GCText {
-            id: progressbarText
-            anchors.centerIn: parent
-            fontSize: mediumSize
-            font.bold: true
-            color: "black"
-            text: parent.message
-            z: 2
-        }
         Rectangle {
             z: -1
             radius: 5 * ApplicationInfo.ratio
             anchors.centerIn: parent
-            height: progressbarText.height
+            height: progressBar.height * 1.25
             width: parent.width
             color: "#80EEEEEE"
         }

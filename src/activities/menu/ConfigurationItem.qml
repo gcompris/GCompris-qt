@@ -127,11 +127,11 @@ Item {
         GCSlider {
             id: audioEffectsVolumeSlider
             width: 250 * ApplicationInfo.ratio
-            maximumValue: 10
-            minimumValue: 0
+            to: 10
+            from: 0
             value: audioEffectsVolume * 10
             onValueChanged: ApplicationSettings.audioEffectsVolume = value / 10;
-            scrollEnabled: false
+            wheelEnabled: false
         }
 
         GCButton {
@@ -211,11 +211,11 @@ Item {
         GCSlider {
             id: backgroundMusicVolumeSlider
             width: 250 * ApplicationInfo.ratio
-            maximumValue: 10
-            minimumValue: 0
+            to: 10
+            from: 0
             value: backgroundMusicVolume * 10
             onValueChanged: ApplicationSettings.backgroundMusicVolume = value / 10;
-            scrollEnabled: false
+            wheelEnabled: false
         }
 
         GCDialogCheckBox {
@@ -330,11 +330,11 @@ Item {
             GCSlider {
                 id: baseFontSizeSlider
                 width: 250 * ApplicationInfo.ratio
-                maximumValue: ApplicationSettings.baseFontSizeMax
-                minimumValue: ApplicationSettings.baseFontSizeMin
+                to: ApplicationSettings.baseFontSizeMax
+                from: ApplicationSettings.baseFontSizeMin
                 value: baseFontSize
                 onValueChanged: ApplicationSettings.baseFontSize = value;
-                scrollEnabled: false
+                wheelEnabled: false
             }
             GCButton {
                 height: 30 * ApplicationInfo.ratio
@@ -364,11 +364,11 @@ Item {
             GCSlider {
                 id: fontLetterSpacingSlider
                 width: 250 * ApplicationInfo.ratio
-                maximumValue: ApplicationSettings.fontLetterSpacingMax
-                minimumValue: ApplicationSettings.fontLetterSpacingMin
+                to: ApplicationSettings.fontLetterSpacingMax
+                from: ApplicationSettings.fontLetterSpacingMin
                 value: fontLetterSpacing
                 onValueChanged: ApplicationSettings.fontLetterSpacing = value;
-                scrollEnabled: false
+                wheelEnabled: false
             }
             GCButton {
                 height: 30 * ApplicationInfo.ratio

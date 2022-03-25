@@ -10,8 +10,7 @@
 import QtQuick 2.12
 import GCompris 1.0
 import QtGraphicalEffects 1.0
-import QtQuick.Controls 1.5
-import QtQuick.Controls.Styles 1.4
+import QtQuick.Controls 2.12
 
 Item {
     id: virtualKey
@@ -28,7 +27,7 @@ Item {
                                  * 0 Otherwise */
 
     signal pressed(var virtualKey);
-    
+
     Button {
         id: button
         text: ((modifiers & Qt.ShiftModifier) && (shiftLabel !== undefined)) ? shiftLabel : label
@@ -36,44 +35,36 @@ Item {
         width: parent.width
         height: virtualKey.height
         
-        style: ButtonStyle {
-            background: Rectangle {
-                border.width: control.activeFocus ? 2 : 1
-                border.color: "black"
-                radius: 4
-                gradient: Gradient {
-                    GradientStop {
-                        position: 0;
-                        color: (control.pressed
-                                || ( virtualKey.specialKey == Qt.Key_Shift 
-                                     && virtualKey.modifiers & Qt.ShiftModifier))
-                               ? "#ccc" : "#eee";
-                    }
-                    GradientStop {
-                        position: 1;
-                        color: (control.pressed
-                                || ( virtualKey.specialKey == Qt.Key_Shift 
-                                        && virtualKey.modifiers & Qt.ShiftModifier))
-                               ? "#aaa" : "#ccc";
-                    }
+        background: Rectangle {
+            border.width: button.activeFocus ? 2 : 1
+            border.color: "black"
+            radius: 4
+            gradient: Gradient {
+                GradientStop {
+                    position: 0;
+                    color: (button.pressed
+                            || ( virtualKey.specialKey == Qt.Key_Shift
+                                 && virtualKey.modifiers & Qt.ShiftModifier))
+                           ? "#ccc" : "#eee";
+                }
+                GradientStop {
+                    position: 1;
+                    color: (button.pressed
+                            || ( virtualKey.specialKey == Qt.Key_Shift
+                                    && virtualKey.modifiers & Qt.ShiftModifier))
+                           ? "#aaa" : "#ccc";
                 }
             }
-            label: Item {
-                GCText {
-                    //renderType: Text.NativeRendering
-                    anchors.centerIn: parent
-                    text: control.text
-                    width: button.width
-                    height: button.height
-                    horizontalAlignment: Text.AlignHCenter
-                    verticalAlignment: Text.AlignVCenter
-                    fontSizeMode: Text.Fit
-                    minimumPointSize: 7
-                    fontSize: largeSize
-                    font.bold: false
-                    color: "black"
-                    //antialiasing: true
-                }
+        }
+        contentItem: Item {
+            GCText {
+                //renderType: Text.NativeRendering
+                anchors.centerIn: parent
+                text: button.text
+                fontSize: 20
+                font.bold: false
+                color: "black"
+                //antialiasing: true
             }
         }
     

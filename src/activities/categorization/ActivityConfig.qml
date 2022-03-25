@@ -10,7 +10,7 @@
 import QtQuick 2.12
 import "../../core"
 import "categorization.js" as Activity
-import QtQuick.Controls 1.5
+import QtQuick.Controls 2.12
 import GCompris 1.0
 
 Item {
@@ -29,8 +29,8 @@ Item {
         property alias mediumModeBox: mediumModeBox
         property alias expertModeBox: expertModeBox
 
-        ExclusiveGroup {
-            id: configOptions
+        ButtonGroup {
+            id: childGroup
         }
 
         GCDialogCheckBox {
@@ -38,7 +38,7 @@ Item {
             width: column.width - 50
             text: qsTr("Put together all the items from a category (with score)")
             checked: (mode === "easy") ? true : false
-            exclusiveGroup: configOptions
+            ButtonGroup.group: childGroup
             onCheckedChanged: {
                 if(easyModeBox.checked) {
                     mode = "easy"
@@ -51,7 +51,7 @@ Item {
             width: easyModeBox.width
             text: qsTr("Put together all the items from a category (without score)")
             checked: (mode === "medium") ? true : false
-            exclusiveGroup: configOptions
+            ButtonGroup.group: childGroup
             onCheckedChanged: {
                 if(mediumModeBox.checked) {
                     mode = "medium"
@@ -64,7 +64,7 @@ Item {
             width: easyModeBox.width
             text: qsTr("Discover a category, grouping items together")
             checked: (mode === "expert") ? true : false
-            exclusiveGroup: configOptions
+            ButtonGroup.group: childGroup
             onCheckedChanged: {
                 if(expertModeBox.checked) {
                     mode = "expert"

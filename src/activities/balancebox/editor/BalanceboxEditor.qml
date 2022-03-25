@@ -10,7 +10,7 @@
 import QtQuick 2.12
 import QtGraphicalEffects 1.0
 import GCompris 1.0
-import QtQuick.Controls 1.5
+import QtQuick.Controls 2.12
 
 import "../../../core"
 import ".."
@@ -353,10 +353,8 @@ Item {
                         width: contact.width * 2
                         height: contact.height
                         value: props.contactValue
-                        maximumValue: 99
-                        minimumValue: 1
-                        decimals: 0
-                        horizontalAlignment: Qt.AlignHCenter
+                        to: 99
+                        from: 1
                         font.family: GCSingletonFontLoader.fontLoader.name
                         font.pixelSize: height / 2
                         onValueChanged: if (value != props.contactValue) props.contactValue = value;

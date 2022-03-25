@@ -8,7 +8,7 @@
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
 import QtQuick 2.12
-import QtQuick.Controls 1.5
+import QtQuick.Controls 2.12
 import GCompris 1.0
 
 import "../../core"
@@ -22,8 +22,8 @@ Item {
     property string mode: coloredNotes
     width: if(background) background.width
 
-    ExclusiveGroup {
-        id: configOptions
+    ButtonGroup {
+        id: childGroup
     }
 
     Column {
@@ -34,7 +34,7 @@ Item {
             width: parent.width - 50
             text: qsTr("Display colored notes.")
             checked: activityConfiguration.mode === coloredNotes
-            exclusiveGroup: configOptions
+            ButtonGroup.group: childGroup
             onCheckedChanged: {
                 if(coloredNotesModeBox.checked) {
                     activityConfiguration.mode = coloredNotes
@@ -47,7 +47,7 @@ Item {
             width: coloredNotesModeBox.width
             text: qsTr("Display colorless notes.")
             checked: activityConfiguration.mode === coloredlessNotes
-            exclusiveGroup: configOptions
+            ButtonGroup.group: childGroup
             onCheckedChanged: {
                 if(colorlessNotesModeBox.checked) {
                     activityConfiguration.mode = coloredlessNotes

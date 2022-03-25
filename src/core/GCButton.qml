@@ -9,14 +9,13 @@
  */
 import QtQuick 2.12
 import GCompris 1.0
-import QtQuick.Controls 1.5
-import QtQuick.Controls.Styles 1.4
+import QtQuick.Controls 2.12
 
 /**
  * A QML component representing GCompris' buttons.
  * @ingroup components
  *
- * @inherit QtQuick.Button
+ * @inherit QtQuick2.Button
  */
 Button {
     id: buttonControl
@@ -126,39 +125,39 @@ Button {
         }
     }
     
-    style: ButtonStyle {
-        background: Rectangle {
-            border.width: theme === "settingsButton" ? 3 * ApplicationInfo.ratio : control.activeFocus ? 3 * ApplicationInfo.ratio : 1 * ApplicationInfo.ratio
-            border.color: themes[theme].borderColor
-            radius: 10 * ApplicationInfo.ratio
-            gradient: Gradient {
-                GradientStop { position: 0 ; color: (control.pressed || buttonControl.selected) ? themes[theme].selectedColorGradient0 : themes[theme].backgroundColorGradient0 }
-                GradientStop { position: 1 ; color: (control.pressed || buttonControl.selected) ? themes[theme].selectedColorGradient1 : themes[theme].backgroundColorGradient1 }
-            }
+    focusPolicy: Qt.NoFocus
+    
+    background: Rectangle {
+        border.width: buttonControl.activeFocus ? 4 : 2
+        border.color: themes[theme].borderColor
+        radius: 10
+        gradient: Gradient {
+            GradientStop { position: 0 ; color: buttonControl.pressed ? themes[theme].selectedColorGradient0 : themes[theme].backgroundColorGradient0 }
+            GradientStop { position: 1 ; color: buttonControl.pressed ? themes[theme].selectedColorGradient1 : themes[theme].backgroundColorGradient1 }
         }
-        label: Item {
-            id: labelItem
+    }
+    contentItem: Item {
+        id: labelItem
+        anchors.fill: parent
+        implicitWidth: labelText.implicitWidth
+        implicitHeight: labelText.implicitHeight
+
+        GCText {
+            id: labelText
+            color: themes[theme].textColor
+            text: buttonControl.text
+            fontSize: textSizes[textSize].fontSize
+            font.bold: textSizes[textSize].fontBold
             anchors.fill: parent
-            implicitWidth: labelText.implicitWidth
-            implicitHeight: labelText.implicitHeight
+            horizontalAlignment: Text.AlignHCenter
+            verticalAlignment: Text.AlignVCenter
+            wrapMode: Text.WordWrap
+            fontSizeMode: Text.Fit
 
-            GCText {
-                id: labelText
-                color: themes[theme].textColor
-                text: control.text
-                fontSize: textSizes[textSize].fontSize
-                font.bold: textSizes[textSize].fontBold
-                anchors.fill: parent
-                horizontalAlignment: Text.AlignHCenter
-                verticalAlignment: Text.AlignVCenter
-                wrapMode: Text.WordWrap
-                fontSizeMode: Text.Fit
-
-                Component.onCompleted: {
-                    if (fixedFontSize > 0) {
-                        labelText.fixFontSize = true;
-                        labelText.fontSize = fixedFontSize;
-                    }
+            Component.onCompleted: {
+                if (fixedFontSize > 0) {
+                    labelText.fixFontSize = true;
+                    labelText.fontSize = fixedFontSize;
                 }
             }
         }

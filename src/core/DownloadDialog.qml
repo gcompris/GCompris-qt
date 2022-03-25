@@ -10,7 +10,7 @@
 import QtQuick 2.12
 import GCompris 1.0
 import QtQuick.Layouts 1.12
-import QtQuick.Controls 1.5
+import QtQuick.Controls 2.12
 import "qrc:/gcompris/src/core/core.js" as Core
 
 /**
@@ -227,8 +227,8 @@ Item {
             Layout.alignment: Qt.AlignHCenter
             Layout.rowSpan: 1
             Layout.fillWidth: true
-            minimumValue: 0
-            maximumValue: 100
+            from: 0
+            to: 100
             value: 0
         }
 

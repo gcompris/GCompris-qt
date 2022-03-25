@@ -83,7 +83,7 @@ elseif(CMAKE_HOST_APPLE)
   set_source_files_properties(${gcompris_RES} PROPERTIES MACOSX_PACKAGE_LOCATION "Resources")
 endif()
 
-set(used_qt_modules Qt5::Qml Qt5::Quick Qt5::Gui Qt5::Multimedia Qt5::Core Qt5::Svg Qt5::Sensors)
+set(used_qt_modules Qt5::Qml Qt5::Quick Qt5::Gui Qt5::Multimedia Qt5::Core Qt5::Svg Qt5::Sensors Qt5::QuickControls2 Qt5::QuickTemplates2)
 
 if(Qt5Widgets_VERSION VERSION_GREATER_EQUAL "5.15.0") 
   set(used_qt_modules ${used_qt_modules} Qt5::QmlWorkerScript Qt5::QuickParticles)
@@ -173,11 +173,21 @@ if(BUILD_STANDALONE)
     QtMultimedia/${_lib_prefix}declarative_multimedia
     QtSensors/${_lib_prefix}declarative_sensors)
 
+  # TODO Double check for ubuntutouch, we may need qtquickcontrols2/templates2!
   if(NOT SAILFISHOS AND NOT UBUNTUTOUCH)
     list(APPEND _qml_plugins
-      QtQuick/Controls/${_lib_prefix}qtquickcontrolsplugin
-      QtQuick/Controls/Styles/Flat/${_lib_prefix}qtquickextrasflatplugin
+      QtQuick/Controls.2/${_lib_prefix}qtquickcontrols2plugin
+      QtQuick/Templates.2/${_lib_prefix}qtquicktemplates2plugin
       QtQuick/Layouts/${_lib_prefix}qquicklayoutsplugin)
+  endif()
+
+  # Only explicit these dll for Windows to be sure we don't ship the debug dll in the package. Other platforms don't have this issue.
+  if(WIN32)
+    list(APPEND _qml_plugins
+      QtQuick/Controls.2/Fusion/${_lib_prefix}qtquickcontrols2fusionstyleplugin
+      QtQuick/Controls.2/Imagine/${_lib_prefix}qtquickcontrols2imaginestyleplugin
+      QtQuick/Controls.2/Material/${_lib_prefix}qtquickcontrols2materialstyleplugin
+      QtQuick/Controls.2/Universal/${_lib_prefix}qtquickcontrols2universalstyleplugin)
   endif()
 
   set(GCOMPRIS_OTHER_LIBS)

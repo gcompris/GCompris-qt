@@ -11,8 +11,7 @@
 import QtQuick 2.12
 import GCompris 1.0
 // TextField
-import QtQuick.Controls 1.5
-import QtQuick.Controls.Styles 1.4
+import QtQuick.Controls 2.12
 import "qrc:/gcompris/src/core/core.js" as Core
 
 Rectangle {
@@ -205,13 +204,11 @@ Rectangle {
             if(!creationHandler.isSaveMode)
                 searchFiles()
         }
-        style: TextFieldStyle {
-            textColor: "black"
-            background: Rectangle {
-                border.color: "black"
-                border.width: 1
-                radius: fileNameInput.height / 4
-            }
+        color: "black"
+        background: Rectangle {
+            border.color: "black"
+            border.width: 1
+            radius: fileNameInput.height / 4
         }
     }
 

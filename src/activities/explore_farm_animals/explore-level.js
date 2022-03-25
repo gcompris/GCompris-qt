@@ -38,7 +38,7 @@ function initLevel() {
     var filename = url + "board" + "/" + "board" + currentLevel + ".qml"
     items.dataset.source = filename
     items.progressbar.value = 0
-    items.progressbar.maximumValue = items.dataModel.count
+    items.progressbar.to = items.dataModel.count
     items.score.numberOfSubLevels = items.hasAudioQuestions ? 3 : 2;
     // randomize the questions for level 2 and 3
     items.questionOrder = Array.apply(null, {length: items.dataModel.count}).map(Number.call, Number)

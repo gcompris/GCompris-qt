@@ -100,7 +100,7 @@ if("${CMAKE_BINARY_DIR}" STREQUAL "${CMAKE_SOURCE_DIR}")
 endif()
 
 find_package(Qt5 ${QT_REQUIRED_VERSION} REQUIRED
-    Qml Quick Gui Multimedia Core Svg LinguistTools Sensors)
+    Qml Quick Gui Multimedia Core Svg LinguistTools Sensors QuickControls2 QuickTemplates2)
 
 if(Qt5Widgets_VERSION VERSION_GREATER_EQUAL "5.15.0")
   find_package(Qt5 ${QT_REQUIRED_VERSION} REQUIRED QmlWorkerScript QuickParticles)
