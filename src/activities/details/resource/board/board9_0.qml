@@ -8,7 +8,7 @@
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
-import QtQuick 2.9
+import QtQuick 2.12
 
 QtObject {
    property string instruction: qsTr("Notre Dame de Paris cathedral on the Île de la Cité in Paris, France.")

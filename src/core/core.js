@@ -17,7 +17,7 @@
  * FIXME: how to include this file in kgenapidox's output?
  */
 .pragma library
-.import QtQml 2.2 as Qml
+.import QtQml 2.12 as Qml
 .import GCompris 1.0 as GCompris
 
 /**
@@ -84,7 +84,7 @@ function showMessageDialog(parent, informativeText,
                            closeCallback) {
     //console.debug("Core.showMessageDialog: parent=" + parent + " backtrace="); console.trace();
     var qmlStr =
-          'import QtQuick 2.9\n'
+          'import QtQuick 2.12\n'
         + 'GCDialog {\n'
         + '    message: "' + informativeText + '"\n'
         + '    button1Text: "' + button1Text + '"\n'

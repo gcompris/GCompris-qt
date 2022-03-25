@@ -54,7 +54,7 @@ if(BUILD_TESTING)
   include(CodeQualityUtils)
 endif()
 
-set(QT_REQUIRED_VERSION 5.9.0)
+set(QT_REQUIRED_VERSION 5.12.0)
 
 if(CMAKE_SYSTEM_NAME STREQUAL Android)
   find_package(ECM)

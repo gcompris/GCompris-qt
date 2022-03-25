@@ -10,9 +10,9 @@
  */
 
 .pragma library
-.import QtQuick 2.9 as Quick
+.import QtQuick 2.12 as Quick
 .import GCompris 1.0 as GCompris
-.import QtQml 2.2 as Qml
+.import QtQml 2.12 as Qml
 
 /* The format and the dataset for the traffic game in gcompris
  * is taken from

@@ -29,7 +29,7 @@
  *   }
  * }
  */
-import QtQuick 2.9
+import QtQuick 2.12
 import GCompris 1.0
 
 Item {

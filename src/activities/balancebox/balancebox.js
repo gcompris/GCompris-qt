@@ -16,11 +16,11 @@
     arbitrary order
 */
 .pragma library
-.import QtQuick 2.9 as Quick
+.import QtQuick 2.12 as Quick
 .import GCompris 1.0 as GCompris
 .import Box2D 2.0 as Box2D
 .import "qrc:/gcompris/src/core/core.js" as Core
-.import QtQml 2.2 as Qml
+.import QtQml 2.12 as Qml
 
 Qt.include("balancebox_common.js")
 
@@ -307,7 +307,7 @@ function initMap()
             if (debugDraw) {
                 try {
                     var rect = Qt.createQmlObject(
-                                "import QtQuick 2.9;Rectangle{"
+                                "import QtQuick 2.12;Rectangle{"
                                 +"width:" + items.cellSize +";"
                                 +"height:" + items.cellSize+";"
                                 +"x:" + x + ";"

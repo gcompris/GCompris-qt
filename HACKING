@@ -33,7 +33,7 @@ See GitHub's documentation for more information.
 Dependencies
 ------------
 In order to be able to compile GCompris the following Qt5 dependencies need to
-be installed
+be installed (version 5.12 minimum)
 
     Qt 5 Development Defaults
     Qt 5 qmake

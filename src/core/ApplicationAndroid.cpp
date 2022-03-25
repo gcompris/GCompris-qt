@@ -79,7 +79,6 @@ int ApplicationInfo::localeCompare(const QString &a, const QString &b,
 // Code adapted from https://bugreports.qt.io/browse/QTBUG-50759
 bool ApplicationInfo::checkPermissions() const
 {
-#if QT_VERSION >= QT_VERSION_CHECK(5, 10, 0)
     const QStringList permissionsRequest = QStringList(
         { QString("android.permission.READ_EXTERNAL_STORAGE"),
           QString("android.permission.WRITE_EXTERNAL_STORAGE") });
@@ -95,6 +94,5 @@ bool ApplicationInfo::checkPermissions() const
             }
         }
     }
-#endif
     return true;
 }

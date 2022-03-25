@@ -9,8 +9,8 @@
  */
 
 .pragma library
-.import QtQuick 2.9 as Quick
-.import QtQml 2.2 as Qml
+.import QtQuick 2.12 as Quick
+.import QtQml 2.12 as Qml
 .import GCompris 1.0 as GCompris //for ApplicationInfo
 .import "qrc:/gcompris/src/core/core.js" as Core
 

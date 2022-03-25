@@ -8,8 +8,8 @@
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
-import QtQuick 2.9
-import QtMultimedia 5.0
+import QtQuick 2.12
+import QtMultimedia 5.12
 import GCompris 1.0
 
 /**

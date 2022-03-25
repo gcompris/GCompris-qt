@@ -8,7 +8,7 @@
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
-import QtQuick 2.9
+import QtQuick 2.12
 
 QtObject {
    property string instruction: qsTr("Vincent van Gogh, The Church at Auvers-sur-Oise - 1890")

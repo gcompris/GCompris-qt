@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-import QtQuick 2.9
+import QtQuick 2.12
 import "path.js" as Activity
 import GCompris 1.0
 

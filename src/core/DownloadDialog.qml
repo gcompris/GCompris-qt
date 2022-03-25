@@ -7,9 +7,9 @@
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
-import QtQuick 2.9
+import QtQuick 2.12
 import GCompris 1.0
-import QtQuick.Layouts 1.3
+import QtQuick.Layouts 1.12
 import QtQuick.Controls 1.5
 import "qrc:/gcompris/src/core/core.js" as Core
 

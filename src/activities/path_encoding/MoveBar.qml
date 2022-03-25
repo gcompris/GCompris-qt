@@ -4,9 +4,9 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-import QtQuick 2.9
+import QtQuick 2.12
 import GCompris 1.0
-import QtQml.Models 2.1
+import QtQml.Models 2.12
 
 import "../../core" as Core
 import "path.js" as Activity

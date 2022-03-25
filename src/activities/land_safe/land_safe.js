@@ -29,7 +29,7 @@
  */
 
 .pragma library
-.import QtQuick 2.9 as Quick
+.import QtQuick 2.12 as Quick
 .import GCompris 1.0 as GCompris
 
 var levels;

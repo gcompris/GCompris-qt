@@ -240,7 +240,7 @@ void ApplicationInfo::setBox2DInstalled(const QQmlEngine &engine)
       context->setContextObject(&myDataSet);
 
       QQmlComponent component(&engine);
-      component.setData("import QtQuick 2.0\nimport Box2D 2.0\nItem { }", QUrl());
+      component.setData("import QtQuick 2.12\nimport Box2D 2.0\nItem { }", QUrl());
       component.create(context);
       box2dInstalled = (component != nullptr);
     */
