@@ -172,6 +172,7 @@ if(BUILD_STANDALONE)
   if(NOT SAILFISHOS AND NOT UBUNTUTOUCH)
     list(APPEND _qml_plugins
       QtQuick/Controls/${_lib_prefix}qtquickcontrolsplugin
+      QtQuick/Controls/Styles/Flat/${_lib_prefix}qtquickextrasflatplugin
       QtQuick/Layouts/${_lib_prefix}qquicklayoutsplugin)
   endif()
 
