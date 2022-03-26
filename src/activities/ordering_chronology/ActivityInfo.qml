@@ -13,7 +13,7 @@
 import GCompris 1.0
 
 ActivityInfo {
-    name: "ordering_chronology/ChronologicalOrder.qml"
+    name: "ordering_chronology/OrderingChronology.qml"
     difficulty: 2
     icon: "ordering_chronology/ordering_chronology.svg"
     author: "Harsh Kumar &lt;hadron43@yahoo.com&gt;"

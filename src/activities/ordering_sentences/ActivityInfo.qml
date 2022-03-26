@@ -12,7 +12,7 @@
 import GCompris 1.0
 
 ActivityInfo {
-    name: "ordering_sentences/SentencesOrdering.qml"
+    name: "ordering_sentences/OrderingSentences.qml"
     difficulty: 2
     icon: "ordering_sentences/ordering_sentences.svg"
     author: "Harsh Kumar &lt;hadron43@yahoo.com&gt;, Emmanuel Charruau &lt;echarruau@gmail.com&gt;"

@@ -1,4 +1,4 @@
-/* GCompris - ChronologicalOrder.qml
+/* GCompris - OrderingChronology.qml
  *
  * SPDX-FileCopyrightText: 2021 Harsh Kumar <hadron43@yahoo.com>
  *
