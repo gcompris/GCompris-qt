@@ -122,13 +122,13 @@ if(BUILD_STANDALONE)
   # Qt plugins to install
   set(_qt_plugins "")
 
-  # First plugins should be available on all platforms
-  foreach(_plugin Qt5::QJpegPlugin Qt5::genericSensorPlugin Qt5::QtSensorGesturePlugin Qt5::QShakeSensorGesturePlugin
-      # Should be specific Linux plugins
+  # First plugins should be used on all platforms
+  foreach(_plugin Qt5::QSvgPlugin Qt5::QWebpPlugin Qt5::QICOPlugin Qt5::QICNSPlugin Qt5::QGifPlugin Qt5::QJpegPlugin Qt5::QWbmpPlugin Qt5::genericSensorPlugin Qt5::QtSensorGesturePlugin Qt5::QShakeSensorGesturePlugin
+      # Should be specific plugins used on Linux
       Qt5::QComposePlatformInputContextPlugin Qt5::QXcbIntegrationPlugin Qt5::QXcbEglIntegrationPlugin Qt5::QXcbGlxIntegrationPlugin Qt5::QAlsaPlugin Qt5::QPulseAudioPlugin
-      # Should be specific MacOS plugins
+      # Should be specific plugins used on MacOS
       Qt5::QTgaPlugin Qt5::QTiffPlugin Qt5::QCocoaIntegrationPlugin
-      # Should be specific Windows plugins
+      # Should be specific plugins used on Windows
       Qt5::QWindowsIntegrationPlugin Qt5::QWindowsAudioPlugin Qt5::AudioCaptureServicePlugin Qt5::DSServicePlugin
       )
     if(TARGET ${_plugin})
@@ -146,7 +146,7 @@ if(BUILD_STANDALONE)
     set(_lib_prefix "lib")
   endif()
 
-  set(_qt_plugins2 imageformats/${_lib_prefix}qsvg)
+  set(_qt_plugins2 "")
   if(UNIX AND NOT ANDROID AND NOT APPLE AND NOT SAILFISHOS AND NOT UBUNTUTOUCH)
     list(APPEND _qt_plugins2 mediaservice/${_lib_prefix}gstaudiodecoder
       mediaservice/${_lib_prefix}gstcamerabin
