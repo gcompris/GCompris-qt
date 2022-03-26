@@ -14,45 +14,45 @@
 var currentHands = []
 var levels = [
     { "images": [
-        "main_droite_dessus_0.png",
-        "main_droite_paume_0.png" ,
-        "main_gauche_dessus_0.png",
-        "main_gauche_paume_0.png" ],
+        "main_droite_dessus_0.webp",
+        "main_droite_paume_0.webp" ,
+        "main_gauche_dessus_0.webp",
+        "main_gauche_paume_0.webp" ],
       "rotations": [-90]
     },
     { "images": [
-        "main_droite_dessus_0.png",
-        "main_droite_paume_0.png",
-        "main_gauche_dessus_0.png",
-        "main_gauche_paume_0.png" ],
+        "main_droite_dessus_0.webp",
+        "main_droite_paume_0.webp",
+        "main_gauche_dessus_0.webp",
+        "main_gauche_paume_0.webp" ],
       "rotations": [0, 180]
     },
     { "images": [
-        "main_droite_dessus_0.png",
-        "main_droite_paume_0.png",
-        "main_gauche_dessus_0.png",
-        "main_gauche_paume_0.png" ],
+        "main_droite_dessus_0.webp",
+        "main_droite_paume_0.webp",
+        "main_gauche_dessus_0.webp",
+        "main_gauche_paume_0.webp" ],
         "rotations": [90]
      },
     { "images": [
-        "poing_droit_dessus_0.png",
-        "poing_droit_paume_0.png",
-        "poing_gauche_dessus_0.png",
-        "poing_gauche_paume_0.png" ],
+        "poing_droit_dessus_0.webp",
+        "poing_droit_paume_0.webp",
+        "poing_gauche_dessus_0.webp",
+        "poing_gauche_paume_0.webp" ],
         "rotations": [-90]
     },
     { "images": [
-        "poing_droit_dessus_0.png",
-        "poing_droit_paume_0.png",
-        "poing_gauche_dessus_0.png",
-        "poing_gauche_paume_0.png" ],
+        "poing_droit_dessus_0.webp",
+        "poing_droit_paume_0.webp",
+        "poing_gauche_dessus_0.webp",
+        "poing_gauche_paume_0.webp" ],
         "rotations": [0, 180]
     },
     { "images": [
-        "poing_droit_dessus_0.png",
-        "poing_droit_paume_0.png",
-        "poing_gauche_dessus_0.png",
-        "poing_gauche_paume_0.png" ],
+        "poing_droit_dessus_0.webp",
+        "poing_droit_paume_0.webp",
+        "poing_gauche_dessus_0.webp",
+        "poing_gauche_paume_0.webp" ],
         "rotations": [90]
     },
 ]
