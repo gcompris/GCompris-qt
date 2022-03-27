@@ -43,7 +43,7 @@ ActivityBase {
             property int rows: 1
             property int cols: 1
             property int errorsCount
-            property var levels: activity.datasetLoader.data
+            readonly property var levels: activity.datasetLoader.data
             property alias mapView: mapView
             property alias tux: tux
             property alias movesGridView: moveBar.movesGridView

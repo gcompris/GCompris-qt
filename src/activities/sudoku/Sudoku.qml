@@ -53,7 +53,7 @@ ActivityBase {
             property alias columns: sudoColumn.columns
             property alias rows: sudoColumn.rows
             property alias sudokuModel: sudokuModel
-            property var levels: activity.datasetLoader.data
+            readonly property var levels: activity.datasetLoader.data
         }
         onStart: Activity.start(items)
 

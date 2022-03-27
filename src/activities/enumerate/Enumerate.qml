@@ -114,7 +114,7 @@ ActivityBase {
             property string instructionText: ""
             property alias score: score
             property GCSfx audioEffects: activity.audioEffects
-            property var levels: activity.datasetLoader.data.length !== 0 ? activity.datasetLoader.data : null
+            readonly property var levels: activity.datasetLoader.data.length !== 0 ? activity.datasetLoader.data : null
             property int mode: 1 // default is automatic
         }
 

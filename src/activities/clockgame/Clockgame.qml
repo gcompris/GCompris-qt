@@ -53,7 +53,7 @@ ActivityBase {
             property int currentS: 43
             property int numberOfTry: 3
             property int currentTry: 0
-            property var levels: activity.datasetLoader.data
+            readonly property var levels: activity.datasetLoader.data
             property bool minutesHandVisible
             property bool secondsHandVisible
             property bool zonesVisible

@@ -50,7 +50,7 @@ ActivityBase {
             property int sublevel: 0
             property alias operandRow: operandRow
             property var data
-            property var levels: activity.datasetLoader.data
+            readonly property var levels: activity.datasetLoader.data
             property int result: data[sublevel-1][1]
             property alias timer: timer
             property alias warningDialog: warningDialog

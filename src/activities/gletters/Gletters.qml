@@ -78,7 +78,7 @@ ActivityBase {
             property Item main: activity.main
             property Item ourActivity: activity
             property GCAudio audioVoices: activity.audioVoices
-            property var levels: activity.datasetLoader.data.length !== 0 ? activity.datasetLoader.data : null
+            readonly property var levels: activity.datasetLoader.data.length !== 0 ? activity.datasetLoader.data : null
             property string instructionText: ""
             property alias background: background
             property alias bar: bar
