@@ -24,34 +24,39 @@ var mode
 var num = []
 var originalArrangement = []
 
+// for random datasets, we have to dynamically generate values
+// items.levels should be treated as read only, thus we keep a local copy
+var levels = []
+
 function start(items_, mode_) {
     items = items_
     mode = mode_
+    levels = items.levels
 
     // For sentences mode, parse the sentences in the datasets
     if(mode === "sentences") {
         var datasets = []
-        for(var level in items.levels) {
-            var sentences = items.levels[level].sentences.split("\n")
+        for(var level_ind in levels) {
+            var sentences = levels[level_ind].sentences.split("\n")
             for(var ind in sentences) {
                 var obj = {
-                    values: sentences[ind].split("|") 
+                    values: sentences[ind].split("|")
                 }
                 datasets.push(obj)
             }
         }
-        items.levels = datasets
+        levels = datasets
     }
 
     // For defined letters in ordering_alphabets datasets, parse the string
     if(mode === "alphabets") {
-        for(var level in items.levels) {
-            items.levels[level].values = items.levels[level].string.split("|")
+        for(var level_ind in levels) {
+            levels[level_ind].values = levels[level_ind].string.split("|")
         }
     }
 
     currentLevel = 0
-    numberOfLevel = items.levels.length
+    numberOfLevel = levels.length
     initLevel()
 }
 
@@ -67,36 +72,26 @@ function initLevel() {
     var sentences = qsTr("Drag and drop the words to the upper box to form a meaningful sentence.");
 
     var display_instruction = "";
-    if(items.levels[currentLevel].instruction)
-        display_instruction = items.levels[currentLevel].instruction;
+    if(levels[currentLevel].instruction)
+        display_instruction = levels[currentLevel].instruction;
     else if(mode === "sentences")
         display_instruction = sentences;
     else if(mode === "chronology")
         display_instruction = chronology;
     else if(mode === "alphabets")
-        display_instruction = (items.levels[currentLevel].mode === 'ascending') ? alphabets_asc : alphabets_desc;
+        display_instruction = (levels[currentLevel].mode === 'ascending') ? alphabets_asc : alphabets_desc;
     else if(mode === "numbers")
-        display_instruction = (items.levels[currentLevel].mode === 'ascending') ? numbers_asc : numbers_desc;
+        display_instruction = (levels[currentLevel].mode === 'ascending') ? numbers_asc : numbers_desc;
 
     items.instruction.text = display_instruction;
     items.bar.level = currentLevel + 1
     initGrids()
 }
 
-function resetGrid() {
-    var count = items.targetListModel.count
-    var i = 0
-    for(i=0; i<count; ++i)
-        items.targetListModel.remove(0)
-
-    count = items.originListModel.count
-    for(i=0; i<count; ++i)
-        items.originListModel.remove(0)
-}
-
 function initGrids() {
     generateNumbers()
-    resetGrid()
+    items.targetListModel.clear()
+    items.originListModel.clear()
 
     for(var i = 0;i < num.length; i++) {
         items.originListModel.append({
@@ -109,15 +104,15 @@ function initGrids() {
 function generateNumbers() {
     num = []
     // generate a permutation of numbers from the dataset and store it in num[]
-    if(items.levels[currentLevel].random) {
-        var min = (mode === "alphabets") ? 1 : items.levels[currentLevel].minNumber
-        var max = (mode === "alphabets") ? items.levels[currentLevel].values.length : items.levels[currentLevel].maxNumber
+    if(levels[currentLevel].random) {
+        var min = (mode === "alphabets") ? 1 : levels[currentLevel].minNumber
+        var max = (mode === "alphabets") ? levels[currentLevel].values.length : levels[currentLevel].maxNumber
         var range = max - min + 1
         var count = 0
-        while(count < items.levels[currentLevel].numberOfElementsToOrder) {
+        while(count < levels[currentLevel].numberOfElementsToOrder) {
             var random = min + parseInt(Math.random() * range)
             if(mode === "alphabets")
-                random = items.levels[currentLevel].values[random-1]
+                random = levels[currentLevel].values[random-1]
             if(num.indexOf(random) === -1) {
                 // Unique element found
                 count++
@@ -132,10 +127,10 @@ function generateNumbers() {
         // is also not reliable. So we just sort according to the reference list in the dataset.
         else {
             num.sort(function (a, b) {
-                if(items.levels[currentLevel].values.indexOf(a) > items.levels[currentLevel].values.indexOf(b)) {
+                if(levels[currentLevel].values.indexOf(a) > levels[currentLevel].values.indexOf(b)) {
                     return 1;
                 }
-                if(items.levels[currentLevel].values.indexOf(a) < items.levels[currentLevel].values.indexOf(b)) {
+                if(levels[currentLevel].values.indexOf(a) < levels[currentLevel].values.indexOf(b)) {
                     return -1;
                 }
                 return 0;
@@ -144,9 +139,9 @@ function generateNumbers() {
 
     }
     else {
-        num = items.levels[currentLevel].values.slice();
+        num = levels[currentLevel].values.slice();
     }
-    if(items.levels[currentLevel].mode === "descending")
+    if(levels[currentLevel].mode === "descending")
         num.reverse();
 
     originalArrangement = num.slice();
