@@ -52,7 +52,7 @@ ActivityBase {
             property alias bar: bar
             property alias bonus: bonus
             property alias targetModel: targetItem.model
-            property var levels: activity.datasetLoader.data
+            readonly property var levels: activity.datasetLoader.data
             property alias targetItem: targetItem
             property alias userEntry: userEntry
             property int currentArrow

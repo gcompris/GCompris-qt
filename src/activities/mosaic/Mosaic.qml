@@ -52,7 +52,7 @@ ActivityBase {
             property alias bar: bar
             property alias bonus: bonus
             property string selectedItem
-            property var levels: activity.datasetLoader.data
+            readonly property var levels: activity.datasetLoader.data
             property int nbItems
             property int questionLayoutColumns
             property int questionLayoutRows

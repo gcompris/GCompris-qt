@@ -62,7 +62,7 @@ ActivityBase {
             property int circlesModel: 3
             property int selectedCircle: -1
             property bool inputLocked: false
-            property var levels: activity.datasetLoader.data
+            readonly property var levels: activity.datasetLoader.data
             property int mode: 1 // default is arabic numerals
             property bool voicesEnabled: true
             property string imageSource: "qrc:/gcompris/src/core/resource/empty.svg"

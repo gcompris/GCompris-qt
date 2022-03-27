@@ -48,7 +48,7 @@ ActivityBase {
             property alias secondOp: secondOp
             property alias numpad: numpad
             property int result
-            property var levels: activity.datasetLoader.data.length !== 0 ? activity.datasetLoader.data : null
+            readonly property var levels: activity.datasetLoader.data.length !== 0 ? activity.datasetLoader.data : null
             property GCSfx audioEffects: activity.audioEffects
         }
 

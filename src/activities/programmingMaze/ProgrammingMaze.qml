@@ -64,7 +64,7 @@ ActivityBase {
             property alias bar: bar
             property alias bonus: bonus
             property GCSfx audioEffects: activity.audioEffects
-            property var levels: activity.datasetLoader.data
+            readonly property var levels: activity.datasetLoader.data
             property alias mazeModel: mazeModel
             property alias instructionModel: instructionModel
             property alias mainFunctionModel: mainFunctionModel

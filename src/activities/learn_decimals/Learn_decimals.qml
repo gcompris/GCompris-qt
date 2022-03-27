@@ -56,7 +56,7 @@ ActivityBase {
             property alias bonus: bonus
             property alias score: score
             property alias numpad: numpad
-            property var levels: activity.datasetLoader.data
+            readonly property var levels: activity.datasetLoader.data
             property alias draggedItems: draggedItems
             property alias droppedItems: droppedItems
             property alias largestNumberRepresentation: largestNumberRepresentation

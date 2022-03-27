@@ -52,7 +52,7 @@ ActivityBase {
             property int currentSubLevel
             property int giftWeight
             property int scaleHeight: background.scaleHeight
-            property var levels: activity.datasetLoader.data
+            readonly property var levels: activity.datasetLoader.data
             property alias masseAreaCenter: masseAreaCenter
             property alias masseAreaLeft: masseAreaLeft
             property alias masseAreaRight: masseAreaRight

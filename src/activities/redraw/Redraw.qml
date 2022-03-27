@@ -61,7 +61,7 @@ ActivityBase {
             property int numberOfLine: targetModelData.length / numberOfColumn
             property alias targetModel: targetModel
             property var targetModelData
-            property var levels: activity.datasetLoader.data.length !== 0 ? activity.datasetLoader.data : null
+            readonly property var levels: activity.datasetLoader.data.length !== 0 ? activity.datasetLoader.data : null
         }
 
         onStart: { Activity.start(items) }

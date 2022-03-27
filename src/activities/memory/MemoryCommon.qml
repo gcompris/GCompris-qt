@@ -63,7 +63,7 @@ ActivityBase {
             property alias player2Score: player2Score
             property var playQueue
             property int selectionCount
-            property var levels: activity.datasetLoader.data !=  0 ? activity.datasetLoader.data : activity.dataset
+            readonly property var levels: activity.datasetLoader.data !=  0 ? activity.datasetLoader.data : activity.dataset
             property alias containerModel: containerModel
             property alias grid: grid
             property bool blockClicks: false

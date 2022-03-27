@@ -33,7 +33,7 @@ ActivityBase {
             id: items
             property alias bar: bar
             property alias bonus: bonus
-            property var levels: activity.datasetLoader.data
+            readonly property var levels: activity.datasetLoader.data
             property GCSfx audioEffects: activity.audioEffects
             property alias score: score
             property int checkState: -1

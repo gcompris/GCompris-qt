@@ -43,7 +43,7 @@ ActivityBase {
             property Item main: activity.main
             property GCSfx audioEffects: activity.audioEffects
             readonly property string resourceUrl: activity.resourceUrl
-            property var levels: activity.datasetLoader.data
+            readonly property var levels: activity.datasetLoader.data
             property alias background: background
             property alias bar: bar
             property alias bonus: bonus
