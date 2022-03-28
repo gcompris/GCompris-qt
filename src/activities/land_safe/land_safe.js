@@ -177,6 +177,10 @@ function processKeyPress(event)
         else
             return;
     }
+
+    if(items.bonus.isPlaying) {
+        return;
+    }
     var newAccel = 0;
     if(key === Qt.Key_Up || key === Qt.Key_Down) {
         if (key === Qt.Key_Up) {
@@ -219,6 +223,11 @@ function processKeyRelease(event)
         event.accepted = false;
         return;
     }
+    if(items.bonus.isPlaying) {
+        event.accepted = false;
+        return;
+    }
+
     var key = event.key;
     event.accepted = true;
     //console.log("XXX release " + key + " = " + event.isAutoRepeat + " = " + Qt.Key_Right);
