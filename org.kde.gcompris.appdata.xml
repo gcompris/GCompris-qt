@@ -96,7 +96,7 @@
     <p xml:lang="az">GCompris 2 yaşından 10 yaşınadək uşaqlar üçün çoxlu sayda çalşmalardan ibarət tədris proqramı paketidir.</p>
     <p xml:lang="br">Un dastumadeg a-feson gant obererezhioù ha c'hoarioù kelennadel evit ar vugale etre 2 ha 10 vloaz eo GCompris.</p>
     <p xml:lang="ca">El GCompris és una suite de programari educatiu d'alta qualitat, que inclou una gran quantitat d'activitats per a nens i nenes entre els 2 i els 10 anys.</p>
-    <p xml:lang="ca-valencia">El GCompris és una suite de programari educatiu d'alta qualitat, que inclou una gran quantitat d'activitats per a nens i nenes entre els 2 i els 10 anys.</p>
+    <p xml:lang="ca-valencia">GCompris és una suite de programari educatiu d'alta qualitat, que inclou una gran quantitat d'activitats per a nens i nenes entre els 2 i els 10 anys.</p>
     <p xml:lang="cs">GCompris je vysoce kvalitní vzdělávací softwarový balík, skládající se z mnoha aktivit pro děti ve věku 2-10.</p>
     <p xml:lang="de">GCompris ist eine Lernsoftware mit vielen Aktivitäten für Kinder im Alter von 2 bis 10 Jahren.</p>
     <p xml:lang="el">Το GCompris είναι μια σουίτα εκπαιδευτικού λογισμικού με πολυάριθμες δραστηριότητες για παιδιά ηλικίας 2 έως 10 ετών.</p>
@@ -483,7 +483,7 @@
     <p xml:lang="az">Hazırda GCompris 100-dən çox çalışma təklif edir və daha çox çalışmalar tərtib olunma mərhələsindədir. GCompris pulsuz proqramdır, yəni siz onu öz ehtiyaclarınıza uyğunlaşdıra, təkmilləşdirə və ən əsası onu hər yerdə uşaqlarla paylaşa bilərsiniz.</p>
     <p xml:lang="br">Evit ar poent e kinnig GCompris muioc'h eget 100 oberezh ha reoù all a zo war ar stern. Ur meziant digor eo GCompris, ar pezh a sinifi e c'heller azasaat anezhañ diouzh ezhommoù-mañ-ezhommoù, gwellaat anezhañ ha, pouezusosc'h c'hoazh, lakaat bugale d'ober gantañ ne vern pelec'h.</p>
     <p xml:lang="ca">Actualment el GCompris ofereix més de 100 activitats i encara se'n desenvolupen més. El GCompris és programari lliure, el qual vol dir que podeu adaptar-lo a les vostres pròpies necessitats, millorar-lo i, el més important, compartir-lo amb infants de tot arreu.</p>
-    <p xml:lang="ca-valencia">Actualment el GCompris ofereix més de 100 activitats i encara se'n desenvolupen més. El GCompris és programari lliure, el qual vol dir que podeu adaptar-lo a les vostres pròpies necessitats, millorar-lo i, el més important, compartir-lo amb infants de tot arreu.</p>
+    <p xml:lang="ca-valencia">Actualment GCompris ofereix més de 100 activitats i encara se'n desenvolupen més. GCompris és programari lliure, el qual vol dir que podeu adaptar-lo a les vostres pròpies necessitats, millorar-lo i, el més important, compartir-lo amb infants de tot arreu.</p>
     <p xml:lang="cs">V současné době GCompris nabízí více než 100 aktivit a další se připravují. GCompris je svobodný software, což znamená, že můžeš přizpůsobit svým vlastním potřebám, zlepšit a co je nejdůležitější, je sdílet s dětmi po celém světě.</p>
     <p xml:lang="de">Insgesamt beinhaltet GCompris mehr als 100 Aktivitäten und wird ständig weiterentwickelt. GCompris ist freie Software. Sie haben also die Möglichkeit, sie ihren Bedürfnissen anzupassen und zu verbessern, und gerne auch alle Kinder der Welt von Ihrer Arbeit profitieren zu lassen.</p>
     <p xml:lang="el">Προς το παρόν το GCompris προσφέρει περισσότερες από 100 δραστηριότητες και αναπτύσσονται και άλλες. Το GCompris είναι ελεύθερο λογισμικό, το οποίο σημαίνει ότι μπορείτε να το προσαρμόσετε στις ανάγκες σας, να το βελτιώσετε, και, το σπουδαιότερο, να το μοιραστείτε με παιδιά από όλον τον κόσμο.</p>
@@ -527,7 +527,7 @@
       <caption xml:lang="az">GCompris əsas menyusu</caption>
       <caption xml:lang="br">Lañser pennañ GCompris</caption>
       <caption xml:lang="ca">Menú principal del GCompris</caption>
-      <caption xml:lang="ca-valencia">Menú principal del GCompris</caption>
+      <caption xml:lang="ca-valencia">Menú principal de GCompris</caption>
       <caption xml:lang="cs">Hlavní nabídka GCompris</caption>
       <caption xml:lang="de">GCompris-Hauptmenü</caption>
       <caption xml:lang="el">Κύριο μενού του GCompris</caption>
