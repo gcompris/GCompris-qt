@@ -478,9 +478,9 @@ function previousLevel() {
 
 function nextSubLevel() {
     if(++currentSubLevel >= maxSubLevel) {
+        // Stop having more words dropping once we have won
+        items.wordDropTimer.stop();
         items.inputLocked = true;
-        items.audioVoices.clearQueue();
-        items.bonus.good("lion");
     } else {
         items.score.playWinAnimation();
     }

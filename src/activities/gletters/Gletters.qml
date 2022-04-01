@@ -239,6 +239,15 @@ ActivityBase {
             anchors.bottom: bar.top
         }
 
+        Connections {
+            target: audioVoices
+            onDone: {
+                // If we have won, we wait until the last voice has played to play the bonus
+                if(items.inputLocked && !bonus.isPlaying) {
+                    items.bonus.good("lion");
+                }
+            }
+        }
         VirtualKeyboard {
             id: keyboard
             anchors.bottom: parent.bottom
