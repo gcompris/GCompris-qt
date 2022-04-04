@@ -91,6 +91,8 @@ function setUp(){
 
     answerIndex = getImages(number, currentLevel)
     setAnswer(answerIndex)
+
+    choiceCount = matchesVisible
 }
 
 // Returns a set of images that is used to set either the Sample algorithm or the Answer tray.
@@ -162,7 +164,6 @@ function nextLevel() {
 }
 
 function nextSubLevel() {
-    choiceCount = matchesVisible
     items.currentSubLevel++
     // Increment level after 3 successful games.
     if (items.currentSubLevel === items.nbSubLevel) {
