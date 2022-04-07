@@ -117,6 +117,11 @@ ApplicationSettings::ApplicationSettings(const QString &configPath, QObject *par
     m_sectionVisible = m_config.value(SECTION_VISIBLE, true).toBool();
     m_exitConfirmation = m_config.value(EXIT_CONFIRMATION, ApplicationInfo::getInstance()->isMobile() ? true : false).toBool();
     m_wordset = m_config.value(WORDSET, "").toString();
+
+    // Automatically override the previous rcc with the new one
+    if (m_wordset == QLatin1String("data2/words/words.rcc"))
+        m_wordset = "data2/words/words-webp.rcc";
+
     m_useWordset = m_config.value(USE_WORDSET, true).toBool();
     m_isAutomaticDownloadsEnabled = m_config.value(ENABLE_AUTOMATIC_DOWNLOADS,
                                                    !ApplicationInfo::getInstance()->isMobile() && ApplicationInfo::isDownloadAllowed())
