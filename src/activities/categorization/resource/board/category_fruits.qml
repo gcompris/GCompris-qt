@@ -17,79 +17,79 @@ QtObject{
         {
             "type": "lesson",
             "name": qsTr("Fruits"),
-            "image": "qrc:/gcompris/data/words/fruits/fruitsalad.jpg",
+            "image": "qrc:/gcompris/data/words-webp/fruits/fruitsalad.webp",
             "content": [
                 {
                     "instructions": qsTr("Place the FRUITS to the right and other objects to the left"),
-                    "image": imagesPrefix + "fruit.png",
+                    "image": imagesPrefix + "fruit.webp",
                     "maxNumberOfGood": 6,
                     "maxNumberOfBad": 6,
-                    "prefix": "qrc:/gcompris/data/words/",
-                    "good": ["fruits/apple.jpg","fruits/apricot.jpg","fruits/banana.jpg","fruits/berries.jpg","fruits/billberries.jpg","fruits/cherries.jpg"],
-                    "bad": ["vegetables/batatadoce.jpg","vegetables/bittergourd.jpg","vegetables/blackchillies.jpg","vegetables/aubergine.jpg","others/house.jpg","others/street.jpg"],
+                    "prefix": "qrc:/gcompris/data/words-webp/",
+                    "good": ["fruits/apple.webp","fruits/apricot.webp","fruits/banana.webp","fruits/berries.webp","fruits/billberries.webp","fruits/cherries.webp"],
+                    "bad": ["vegetables/batatadoce.webp","vegetables/bittergourd.webp","vegetables/blackchillies.webp","vegetables/aubergine.webp","others/house.webp","others/street.webp"],
                 },
                 {
                     "instructions": qsTr("Place the FRUITS to the right and other objects to the left"),
-                    "image": imagesPrefix + "fruit.png",
+                    "image": imagesPrefix + "fruit.webp",
                     "maxNumberOfGood": 6,
                     "maxNumberOfBad": 6,
-                    "prefix": "qrc:/gcompris/data/words/",
-                    "good": ["fruits/cranberries.jpg","fruits/feiji.jpg","fruits/kiwi.jpg","fruits/lemon.jpg","fruits/litchi.jpg","fruits/mango.jpg"],
-                    "bad": ["vegetables/garlic.jpg","vegetables/carrots.jpg","vegetables/cauliflower.jpg","vegetables/chillies.jpg","others/spoon.jpg","others/fork.jpg"]
+                    "prefix": "qrc:/gcompris/data/words-webp/",
+                    "good": ["fruits/cranberries.webp","fruits/feiji.webp","fruits/kiwi.webp","fruits/lemon.webp","fruits/litchi.webp","fruits/mango.webp"],
+                    "bad": ["vegetables/garlic.webp","vegetables/carrots.webp","vegetables/cauliflower.webp","vegetables/chillies.webp","others/spoon.webp","others/fork.webp"]
                 },
                 {
                     "instructions": qsTr("Place the FRUITS to the right and other objects to the left"),
-                    "image": imagesPrefix + "fruit.png",
+                    "image": imagesPrefix + "fruit.webp",
                     "maxNumberOfGood": 5,
                     "maxNumberOfBad": 7,
-                    "prefix": "qrc:/gcompris/data/words/",
-                    "good": ["fruits/mirabellen.jpg","fruits/nectarine.jpg","fruits/papaya.jpg","fruits/peach.jpg","fruits/pineapple.jpg"],
-                    "bad": ["vegetables/chineseradish.jpg","vegetables/cucumber.jpg","food/cereal.jpg","food/macroni.jpg","food/hamburger.jpg","transport/cycle.jpg","transport/car1.jpg"]
+                    "prefix": "qrc:/gcompris/data/words-webp/",
+                    "good": ["fruits/mirabellen.webp","fruits/nectarine.webp","fruits/papaya.webp","fruits/peach.webp","fruits/pineapple.webp"],
+                    "bad": ["vegetables/chineseradish.webp","vegetables/cucumber.webp","food/cereal.webp","food/macroni.webp","food/hamburger.webp","transport/cycle.webp","transport/car1.webp"]
                 },
                 {
                     "instructions": qsTr("Place the FRUITS to the right and other objects to the left"),
-                    "image": imagesPrefix + "fruit.png",
+                    "image": imagesPrefix + "fruit.webp",
                     "maxNumberOfGood": 4,
                     "maxNumberOfBad": 5,
-                    "prefix": "qrc:/gcompris/data/words/",
-                    "good": ["fruits/plum.jpg","fruits/stackelberry.jpg","fruits/tyttberries.jpg","fruits/strwaberry.jpg"],
-                    "bad": ["vegetables/dahuisi.jpg","others/mobile.jpg","vegetables/fid.jpg","food/eggs.jpg","food/icecream.jpg"]
+                    "prefix": "qrc:/gcompris/data/words-webp/",
+                    "good": ["fruits/plum.webp","fruits/stackelberry.webp","fruits/tyttberries.webp","fruits/strwaberry.webp"],
+                    "bad": ["vegetables/dahuisi.webp","others/mobile.webp","vegetables/fid.webp","food/eggs.webp","food/icecream.webp"]
                 },
                 {
                     "instructions": qsTr("Place the FRUITS to the right and other objects to the left"),
-                    "image": imagesPrefix + "fruit.png",
+                    "image": imagesPrefix + "fruit.webp",
                     "maxNumberOfGood": 4,
                     "maxNumberOfBad": 5,
-                    "prefix": "qrc:/gcompris/data/words/",
-                    "good": ["fruits/fruitsalad.jpg","fruits/guava.jpg","fruits/grapes.jpg","fruits/litchi.jpg"],
-                    "bad": ["vegetables/pumpkin.jpg","transport/bus.jpg","food/milk.jpg","food/cheese.jpg","food/butter.jpg"]
+                    "prefix": "qrc:/gcompris/data/words-webp/",
+                    "good": ["fruits/fruitsalad.webp","fruits/guava.webp","fruits/grapes.webp","fruits/litchi.webp"],
+                    "bad": ["vegetables/pumpkin.webp","transport/bus.webp","food/milk.webp","food/cheese.webp","food/butter.webp"]
                 },
                 {
                     "instructions": qsTr("Place the FRUITS to the right and other objects to the left"),
-                    "image": imagesPrefix + "fruit.png",
+                    "image": imagesPrefix + "fruit.webp",
                     "maxNumberOfGood": 3,
                     "maxNumberOfBad": 3,
-                    "prefix": "qrc:/gcompris/data/words/",
-                    "good": ["fruits/pear.jpg","fruits/pyrusmalus.jpg","fruits/pineapple.jpg"],
-                    "bad": ["vegetables/radish.jpg","food/popcorn.jpg","others/street.jpg"]
+                    "prefix": "qrc:/gcompris/data/words-webp/",
+                    "good": ["fruits/pear.webp","fruits/pyrusmalus.webp","fruits/pineapple.webp"],
+                    "bad": ["vegetables/radish.webp","food/popcorn.webp","others/street.webp"]
                 },
                 {
                     "instructions": qsTr("Place the FRUITS to the right and other objects to the left"),
-                    "image": imagesPrefix + "fruit.png",
+                    "image": imagesPrefix + "fruit.webp",
                     "maxNumberOfGood": 3 ,
                     "maxNumberOfBad": 3,
-                    "prefix": "qrc:/gcompris/data/words/",
-                    "good": ["fruits/peach.jpg","fruits/tyttberries.jpg","fruits/papaya.jpg"],
-                    "bad": ["vegetables/spinach.jpg","food/hotdog.jpg", "food/milk.jpg"]
+                    "prefix": "qrc:/gcompris/data/words-webp/",
+                    "good": ["fruits/peach.webp","fruits/tyttberries.webp","fruits/papaya.webp"],
+                    "bad": ["vegetables/spinach.webp","food/hotdog.webp", "food/milk.webp"]
                 },
                 {
                     "instructions": qsTr("Place the FRUITS to the right and other objects to the left"),
-                    "image": imagesPrefix + "fruit.png",
+                    "image": imagesPrefix + "fruit.webp",
                     "maxNumberOfGood": 2,
                     "maxNumberOfBad": 4,
-                    "prefix": "qrc:/gcompris/data/words/",
-                    "good": ["fruits/mango.jpg","fruits/strwaberry.jpg"],
-                    "bad": ["others/pencil.jpg","vegetables/onion.jpg","food/cheese.jpg","food/water.jpg"]
+                    "prefix": "qrc:/gcompris/data/words-webp/",
+                    "good": ["fruits/mango.webp","fruits/strwaberry.webp"],
+                    "bad": ["others/pencil.webp","vegetables/onion.webp","food/cheese.webp","food/water.webp"]
                 }
             ]
         }
