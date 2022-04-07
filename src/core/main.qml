@@ -173,19 +173,19 @@ Window {
         if(wordset === '')
             // Maybe the wordset has been bundled or copied manually
             // we have to register it if we find it.
-            wordset = 'data2/words/words.rcc'
+            wordset = 'data2/words/words-webp.rcc'
 
-        // check for words.rcc:
-        if (DownloadManager.isDataRegistered("words")) {
-            // words.rcc is already registered -> nothing to do
+        // check for words-webp.rcc:
+        if (DownloadManager.isDataRegistered("words-webp")) {
+            // words-webp.rcc is already registered -> nothing to do
         } else if(DownloadManager.haveLocalResource(wordset)) {
-            // words.rcc is there -> register old file first
+            // words-webp.rcc is there -> register old file first
             // then try to update in the background
             if(DownloadManager.updateResource(wordset)) {
                 ApplicationSettings.wordset = wordset
             }
         } else if(ApplicationSettings.useWordset) { // Only if external wordset is enabled
-            // words.rcc has not been downloaded yet -> ask for download
+            // words-webp.rcc has not been downloaded yet -> ask for download
             wordSetDownloaded = false;
         }
 
@@ -248,7 +248,7 @@ Window {
                     if(!voicesDownloaded)
                         DownloadManager.downloadResource(DownloadManager.getVoicesResourceForLocale(ApplicationSettings.locale));
                     if(!wordSetDownloaded)
-                        DownloadManager.downloadResource('data2/words/words.rcc');
+                        DownloadManager.downloadResource('data2/words/words-webp.rcc');
                     if(!musicDownloaded)
                         DownloadManager.downloadResource(DownloadManager.getBackgroundMusicResources());
                     var downloadDialog = Core.showDownloadDialog(pageView.currentItem, {});
