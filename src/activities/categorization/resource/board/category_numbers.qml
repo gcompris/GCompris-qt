@@ -26,7 +26,7 @@ QtObject {
                     "maxNumberOfBad": 6,
                     "prefix": "qrc:/gcompris/src/activities/",
                     "good": ["categorization/resource/images/numbers/12.svg","categorization/resource/images/numbers/02.svg","categorization/resource/images/numbers/00.svg","categorization/resource/images/numbers/08.svg","categorization/resource/images/numbers/10.svg","categorization/resource/images/numbers/04.svg"],
-                    "bad": ["categorization/resource/images/alphabets/upperA.svg","categorization/resource/images/alphabets/upperM.svg","categorization/resource/images/alphabets/lowerB.svg","categorization/resource/images/alphabets/upperS.svg","lang/resource/words_sample/fish.png","lang/resource/words_sample/color.png"]
+                    "bad": ["categorization/resource/images/alphabets/upperA.svg","categorization/resource/images/alphabets/upperM.svg","categorization/resource/images/alphabets/lowerB.svg","categorization/resource/images/alphabets/upperS.svg","lang/resource/words_sample/fish.webp","lang/resource/words_sample/color.webp"]
                 },
                 {
                     "instructions": qsTr("Place the NUMBERS to the right and other objects to the left"),
@@ -35,7 +35,7 @@ QtObject {
                     "maxNumberOfBad": 4,
                     "prefix": "qrc:/gcompris/src/activities/",
                     "good": ["categorization/resource/images/numbers/05.svg","categorization/resource/images/numbers/11.svg","categorization/resource/images/numbers/09.svg","categorization/resource/images/numbers/03.svg","categorization/resource/images/numbers/07.svg"],
-                    "bad": ["categorization/resource/images/alphabets/upperZ.svg","categorization/resource/images/alphabets/lowerH.svg","lang/resource/words_sample/mosquito.png","lang/resource/words_sample/fruit.png"]
+                    "bad": ["categorization/resource/images/alphabets/upperZ.svg","categorization/resource/images/alphabets/lowerH.svg","lang/resource/words_sample/mosquito.webp","lang/resource/words_sample/fruit.webp"]
                 },
                 {
                     "instructions": qsTr("Place the NUMBERS to the right and other objects to the left"),
@@ -44,7 +44,7 @@ QtObject {
                     "maxNumberOfBad": 3,
                     "prefix": "qrc:/gcompris/src/activities/",
                     "good": ["categorization/resource/images/numbers/01.svg","categorization/resource/images/numbers/06.svg","categorization/resource/images/numbers/16.svg"],
-                    "bad": ["categorization/resource/images/alphabets/upperR.svg","categorization/resource/images/alphabets/lowerQ.svg", "lang/resource/words_sample/strawberry.png"]
+                    "bad": ["categorization/resource/images/alphabets/upperR.svg","categorization/resource/images/alphabets/lowerQ.svg", "lang/resource/words_sample/strawberry.webp"]
                 }
             ]
         }

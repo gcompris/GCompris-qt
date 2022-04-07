@@ -12,66 +12,66 @@ import QtQuick 2.9
 QtObject{
     property bool isEmbedded: false
     property bool allowExpertMode: true
-    property string imagesPrefix: "qrc:/gcompris/data/words/food/"
+    property string imagesPrefix: "qrc:/gcompris/data/words-webp/food/"
     property var levels: [
         {
             "type": "lesson",
             "name": qsTr("Food"),
-            "image": imagesPrefix + "pizza.jpg",
+            "image": imagesPrefix + "pizza.webp",
             "content": [
                 {
                     "instructions": qsTr("Place the FOOD ITEMS to the right and other objects to the left"),
-                    "image": imagesPrefix + "sweetBread.jpg",
+                    "image": imagesPrefix + "sweetBread.webp",
                     "maxNumberOfGood": 6,
                     "maxNumberOfBad": 6,
-                    "prefix": "qrc:/gcompris/data/words/",
-                    "good": ["food/applepie.jpg","food/bananaNutBread.jpg","food/biryani.jpg","food/cereal.jpg","food/cheese.jpg","food/eggs.jpg"],
-                    "bad": ["nature/nature28.jpg","plants/plant2.jpg","nature/nature27.jpg","birds/bird1.jpg","nature/nature17.jpg","insects/insect10.jpg"]
+                    "prefix": "qrc:/gcompris/data/words-webp/",
+                    "good": ["food/applepie.webp","food/bananaNutBread.webp","food/biryani.webp","food/cereal.webp","food/cheese.webp","food/eggs.webp"],
+                    "bad": ["nature/nature28.webp","plants/plant2.webp","nature/nature27.webp","birds/bird1.webp","nature/nature17.webp","insects/insect10.webp"]
                 },
                 {
                     "instructions": qsTr("Place the FOOD ITEMS to the right and other objects to the left"),
-                    "image": imagesPrefix + "pizza1.jpg",
+                    "image": imagesPrefix + "pizza1.webp",
                     "maxNumberOfGood": 6,
                     "maxNumberOfBad": 6,
-                    "prefix": "qrc:/gcompris/data/words/",
-                    "good": ["food/fish.jpg","food/frenchFries.jpg","food/friedEggs.jpg","food/grilledSandwich.jpg","food/hamburger.jpg","food/hotdog.jpg"],
-                    "bad": ["nature/nature26.jpg","birds/bird25.jpg","transport/cycle.jpg","insects/insect1.jpg","nature/nature24.jpg","others/fork.jpg"]
+                    "prefix": "qrc:/gcompris/data/words-webp/",
+                    "good": ["food/fish.webp","food/frenchFries.webp","food/friedEggs.webp","food/grilledSandwich.webp","food/hamburger.webp","food/hotdog.webp"],
+                    "bad": ["nature/nature26.webp","birds/bird25.webp","transport/cycle.webp","insects/insect1.webp","nature/nature24.webp","others/fork.webp"]
                 },
                 {
                     "instructions": qsTr("Place the FOOD ITEMS to the right and other objects to the left"),
-                    "image": imagesPrefix + "hotdog.jpg",
+                    "image": imagesPrefix + "hotdog.webp",
                     "maxNumberOfGood": 5,
                     "maxNumberOfBad": 4,
-                    "prefix": "qrc:/gcompris/data/words/",
-                    "good": ["food/icecream.jpg","food/cereal1.jpg","food/cheese1.jpg","food/kathiRoll.jpg","food/macroni.jpg"],
-                    "bad": ["animals/camel.jpg","animals/hare.jpg","insects/insect4.jpg","birds/bird5.jpg"]
+                    "prefix": "qrc:/gcompris/data/words-webp/",
+                    "good": ["food/icecream.webp","food/cereal1.webp","food/cheese1.webp","food/kathiRoll.webp","food/macroni.webp"],
+                    "bad": ["animals/camel.webp","animals/hare.webp","insects/insect4.webp","birds/bird5.webp"]
                 },
                 {
                     "instructions": qsTr("Place the FOOD ITEMS to the right and other objects to the left"),
-                    "image": imagesPrefix + "frenchFries.jpg",
+                    "image": imagesPrefix + "frenchFries.webp",
                     "maxNumberOfGood": 5,
                     "maxNumberOfBad": 4,
-                    "prefix": "qrc:/gcompris/data/words/",
-                    "good": ["food/MaozVegetariano.jpg","food/milk.jpg","food/bananaNutBread.jpg","food/pitaBread.jpg","food/pizza.jpg"],
-                    "bad": ["birds/bird6.jpg","others/street.jpg","householdGoods/iron2.jpg","insects/insect8.jpg"]
+                    "prefix": "qrc:/gcompris/data/words-webp/",
+                    "good": ["food/MaozVegetariano.webp","food/milk.webp","food/bananaNutBread.webp","food/pitaBread.webp","food/pizza.webp"],
+                    "bad": ["birds/bird6.webp","others/street.webp","householdGoods/iron2.webp","insects/insect8.webp"]
                 },
                 {
                     "instructions": qsTr("Place the FOOD ITEMS to the right and other objects to the left"),
-                    "image": imagesPrefix + "hamburger.jpg",
+                    "image": imagesPrefix + "hamburger.webp",
                     "maxNumberOfGood": 3,
                     "maxNumberOfBad": 3,
-                    "prefix": "qrc:/gcompris/data/words/",
-                    "good": ["food/icecream1.jpg","food/riceBeans.jpg","food/scrambledEggsVeggies.jpg"],
-                    "bad": ["nature/nature21.jpg","plants/tree2.jpg","householdGoods/bed.jpg"]
+                    "prefix": "qrc:/gcompris/data/words-webp/",
+                    "good": ["food/icecream1.webp","food/riceBeans.webp","food/scrambledEggsVeggies.webp"],
+                    "bad": ["nature/nature21.webp","plants/tree2.webp","householdGoods/bed.webp"]
                 },
                 {
                     "instructions": qsTr("Place the FOOD ITEMS to the right and other objects to the left"),
-                    "image": imagesPrefix + "milk.jpg",
+                    "image": imagesPrefix + "milk.webp",
                     "maxNumberOfGood": 3,
                     "maxNumberOfBad": 3,
-                    "prefix": "qrc:/gcompris/data/words/",
-                    "good": ["food/skimmedMilk.jpg","food/steak.jpg","food/sweetBread.jpg"],
-                    "bad": ["birds/bird4.jpg","animals/koala.jpg","transport/ferry.jpg"]
+                    "prefix": "qrc:/gcompris/data/words-webp/",
+                    "good": ["food/skimmedMilk.webp","food/steak.webp","food/sweetBread.webp"],
+                    "bad": ["birds/bird4.webp","animals/koala.webp","transport/ferry.webp"]
                 }
             ]
         }

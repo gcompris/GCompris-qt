@@ -12,92 +12,92 @@ import QtQuick 2.9
 QtObject {
     property bool isEmbedded: false
     property bool allowExpertMode: true
-    property string imagesPrefix: "qrc:/gcompris/data/words/flowers/"
+    property string imagesPrefix: "qrc:/gcompris/data/words-webp/flowers/"
     property var levels: [
         {
             "name": qsTr("Flowers"),
-            "image": imagesPrefix + "bunchOfFlowers.jpg",
+            "image": imagesPrefix + "bunchOfFlowers.webp",
             "content": [
                 {
                     "instructions": qsTr("Place the FLOWERS to the right and other objects to the left"),
-                    "image": imagesPrefix + "bunchOfFlowers.jpg",
+                    "image": imagesPrefix + "bunchOfFlowers.webp",
                     "maxNumberOfGood": 6,
                     "maxNumberOfBad": 6,
-                    "prefix": "qrc:/gcompris/data/words/",
-                    "good": ["flowers/allamanda.jpg", "flowers/angiosperms.jpg", "flowers/angiosperms2.jpg", "flowers/aster.jpg", "flowers/aster2.jpg", "flowers/bauhiniaAcuminata.jpg"],
-                    "bad": ["plants/plant2.jpg", "birds/bird1.jpg", "insects/insect10.jpg", "transport/cycle.jpg", "animals/camel.jpg", "householdGoods/iron2.jpg"]
+                    "prefix": "qrc:/gcompris/data/words-webp/",
+                    "good": ["flowers/allamanda.webp", "flowers/angiosperms.webp", "flowers/angiosperms2.webp", "flowers/aster.webp", "flowers/aster2.webp", "flowers/bauhiniaAcuminata.webp"],
+                    "bad": ["plants/plant2.webp", "birds/bird1.webp", "insects/insect10.webp", "transport/cycle.webp", "animals/camel.webp", "householdGoods/iron2.webp"]
                 },
                 {
                     "instructions": qsTr("Place the FLOWERS to the right and other objects to the left"),
-                    "image": imagesPrefix + "bunchOfFlowers.jpg",
+                    "image": imagesPrefix + "bunchOfFlowers.webp",
                     "maxNumberOfGood": 6,
                     "maxNumberOfBad": 6,
-                    "prefix": "qrc:/gcompris/data/words/",
-                    "good": ["flowers/bossier.jpg", "flowers/bunchOfFlowers.jpg", "flowers/calendulaSuffruticosa.jpg", "flowers/camellia.jpg", "flowers/capullo.jpg", "flowers/crocus.jpg"],
-                    "bad": ["nature/nature5.jpg", "food/biryani.jpg", "food/milk.jpg", "fruits/apple.jpg", "others/house.jpg", "vegetables/carrots.jpg"]
+                    "prefix": "qrc:/gcompris/data/words-webp/",
+                    "good": ["flowers/bossier.webp", "flowers/bunchOfFlowers.webp", "flowers/calendulaSuffruticosa.webp", "flowers/camellia.webp", "flowers/capullo.webp", "flowers/crocus.webp"],
+                    "bad": ["nature/nature5.webp", "food/biryani.webp", "food/milk.webp", "fruits/apple.webp", "others/house.webp", "vegetables/carrots.webp"]
                 },
                 {
                     "instructions": qsTr("Place the FLOWERS to the right and other objects to the left"),
-                    "image": imagesPrefix + "bunchOfFlowers.jpg",
+                    "image": imagesPrefix + "bunchOfFlowers.webp",
                     "maxNumberOfGood": 6,
                     "maxNumberOfBad": 6,
-                    "prefix": "qrc:/gcompris/data/words/",
-                    "good": ["flowers/dahlia.jpg", "flowers/daisy.jpg", "flowers/floora.jpg", "flowers/floreInsectos.jpg", "flowers/galanthusNivalis.jpg", "flowers/hibiscus.jpg"],
-                    "bad": ["animals/cow.jpg", "transport/helicopter1.jpg", "food/cereal.jpg", "animals/elephant.jpg", "others/pepsi.jpg", "plants/tree3.jpg"]
+                    "prefix": "qrc:/gcompris/data/words-webp/",
+                    "good": ["flowers/dahlia.webp", "flowers/daisy.webp", "flowers/floora.webp", "flowers/floreInsectos.webp", "flowers/galanthusNivalis.webp", "flowers/hibiscus.webp"],
+                    "bad": ["animals/cow.webp", "transport/helicopter1.webp", "food/cereal.webp", "animals/elephant.webp", "others/pepsi.webp", "plants/tree3.webp"]
                 },
                 {
                     "instructions": qsTr("Place the FLOWERS to the right and other objects to the left"),
-                    "image": imagesPrefix + "bunchOfFlowers.jpg",
+                    "image": imagesPrefix + "bunchOfFlowers.webp",
                     "maxNumberOfGood": 5,
                     "maxNumberOfBad": 4,
-                    "prefix": "qrc:/gcompris/data/words/",
-                    "good": ["flowers/lily.jpg", "flowers/marigold.jpg", "flowers/orchid.jpg", "flowers/pollen.jpg", "flowers/rose.jpg"],
-                    "bad": ["lobster.png", "potato.png", "pumpkin.png", "radio.png"]
+                    "prefix": "qrc:/gcompris/data/words-webp/",
+                    "good": ["flowers/lily.webp", "flowers/marigold.webp", "flowers/orchid.webp", "flowers/pollen.webp", "flowers/rose.webp"],
+                    "bad": ["lobster.webp", "potato.webp", "pumpkin.webp", "radio.webp"]
                 },
                 {
                     "instructions": qsTr("Place the FLOWERS to the right and other objects to the left"),
-                    "image": imagesPrefix + "bunchOfFlowers.jpg",
+                    "image": imagesPrefix + "bunchOfFlowers.webp",
                     "maxNumberOfGood": 4,
                     "maxNumberOfBad": 5,
-                    "prefix": "qrc:/gcompris/data/words/",
-                    "good": ["flowers/sunflower.jpg", "flowers/tulip.jpg", "flowers/victoriaAmazonica.jpg", "flowers/wildPetunia.jpg"],
-                    "bad": ["food/hotdog.jpg", "vegetables/onion.jpg", "food/cheese.jpg", "food/water.jpg", "others/street.jpg"]
+                    "prefix": "qrc:/gcompris/data/words-webp/",
+                    "good": ["flowers/sunflower.webp", "flowers/tulip.webp", "flowers/victoriaAmazonica.webp", "flowers/wildPetunia.webp"],
+                    "bad": ["food/hotdog.webp", "vegetables/onion.webp", "food/cheese.webp", "food/water.webp", "others/street.webp"]
                 },
                 {
                     "instructions": qsTr("Place the FLOWERS to the right and other objects to the left"),
-                    "image": imagesPrefix + "bunchOfFlowers.jpg",
+                    "image": imagesPrefix + "bunchOfFlowers.webp",
                     "maxNumberOfGood": 5,
                     "maxNumberOfBad": 4,
-                    "prefix": "qrc:/gcompris/data/words/",
-                    "good": ["flowers/lily.jpg", "flowers/marigold.jpg", "flowers/orchid.jpg", "flowers/pollen.jpg", "flowers/rose.jpg"],
-                    "bad": ["food/eggs.jpg", "animals/lion.jpg", "birds/bird17.jpg", "householdGoods/iron.jpg"]
+                    "prefix": "qrc:/gcompris/data/words-webp/",
+                    "good": ["flowers/lily.webp", "flowers/marigold.webp", "flowers/orchid.webp", "flowers/pollen.webp", "flowers/rose.webp"],
+                    "bad": ["food/eggs.webp", "animals/lion.webp", "birds/bird17.webp", "householdGoods/iron.webp"]
                 },
                 {
                     "instructions": qsTr("Place the FLOWERS to the right and other objects to the left"),
-                    "image": imagesPrefix + "bunchOfFlowers.jpg",
+                    "image": imagesPrefix + "bunchOfFlowers.webp",
                     "maxNumberOfGood": 3,
                     "maxNumberOfBad": 3,
-                    "prefix": "qrc:/gcompris/data/words/",
-                    "good": ["flowers/lotus.jpg", "flowers/jasmine.jpg", "flowers/rhododendron.jpg"],
-                    "bad": ["food/grilledSandwich.jpg", "transport/metro.jpg", "food/frenchFries.jpg"]
+                    "prefix": "qrc:/gcompris/data/words-webp/",
+                    "good": ["flowers/lotus.webp", "flowers/jasmine.webp", "flowers/rhododendron.webp"],
+                    "bad": ["food/grilledSandwich.webp", "transport/metro.webp", "food/frenchFries.webp"]
                 },
                 {
                     "instructions": qsTr("Place the FLOWERS to the right and other objects to the left"),
-                    "image": imagesPrefix + "bunchOfFlowers.jpg",
+                    "image": imagesPrefix + "bunchOfFlowers.webp",
                     "maxNumberOfGood": 2,
                     "maxNumberOfBad": 4,
-                    "prefix": "qrc:/gcompris/data/words/",
-                    "good": ["flowers/ashoka.jpg", "flowers/acidanthera.jpg"],
-                    "bad": ["others/fork.jpg", "fruits/apple.jpg", "food/skimmedMilk.jpg", "fruits/grapes.jpg"]
+                    "prefix": "qrc:/gcompris/data/words-webp/",
+                    "good": ["flowers/ashoka.webp", "flowers/acidanthera.webp"],
+                    "bad": ["others/fork.webp", "fruits/apple.webp", "food/skimmedMilk.webp", "fruits/grapes.webp"]
                 },
                 {
                     "instructions": qsTr("Place the FLOWERS to the right and other objects to the left"),
-                    "image": imagesPrefix + "bunchOfFlowers.jpg",
+                    "image": imagesPrefix + "bunchOfFlowers.webp",
                     "maxNumberOfGood": 4,
                     "maxNumberOfBad": 2,
-                    "prefix": "qrc:/gcompris/data/words/",
-                    "good": ["flowers/allamanda.jpg", "flowers/camellia.jpg", "flowers/jasmine.jpg", "flowers/marigold.jpg"],
-                    "bad": ["plants/plant6.jpg", "fruits/papaya.jpg"]
+                    "prefix": "qrc:/gcompris/data/words-webp/",
+                    "good": ["flowers/allamanda.webp", "flowers/camellia.webp", "flowers/jasmine.webp", "flowers/marigold.webp"],
+                    "bad": ["plants/plant6.webp", "fruits/papaya.webp"]
                 }
             ]
         }
