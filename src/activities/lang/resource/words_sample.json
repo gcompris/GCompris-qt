@@ -10,62 +10,62 @@
                 "content": [
                     {
                         "description": "color",
-                        "image": "color.png",
+                        "image": "color.webp",
                         "voice": "voices-$CA/$LOCALE/words/color.$CA"
                     },
                     {
                         "description": "blue",
-                        "image": "blue.png",
+                        "image": "blue.webp",
                         "voice": "voices-$CA/$LOCALE/words/blue.$CA"
                     },
                     {
                         "description": "brown",
-                        "image": "brown.png",
+                        "image": "brown.webp",
                         "voice": "voices-$CA/$LOCALE/words/brown.$CA"
                     },
                     {
                         "description": "black",
-                        "image": "black.png",
+                        "image": "black.webp",
                         "voice": "voices-$CA/$LOCALE/words/black.$CA"
                     },
                     {
                         "description": "gray",
-                        "image": "gray.png",
+                        "image": "gray.webp",
                         "voice": "voices-$CA/$LOCALE/words/gray.$CA"
                     },
                     {
                         "description": "green",
-                        "image": "green.png",
+                        "image": "green.webp",
                         "voice": "voices-$CA/$LOCALE/words/green.$CA"
                     },
                     {
                         "description": "mauve",
-                        "image": "mauve.png",
+                        "image": "mauve.webp",
                         "voice": "voices-$CA/$LOCALE/words/mauve.$CA"
                     },
                     {
                         "description": "orange",
-                        "image": "orange-color.png",
+                        "image": "orange-color.webp",
                         "voice": "voices-$CA/$LOCALE/words/orange-color.$CA"
                     },
                     {
                         "description": "pink",
-                        "image": "pink.png",
+                        "image": "pink.webp",
                         "voice": "voices-$CA/$LOCALE/words/pink.$CA"
                     },
                     {
                         "description": "red",
-                        "image": "red.png",
+                        "image": "red.webp",
                         "voice": "voices-$CA/$LOCALE/words/red.$CA"
                     },
                     {
                         "description": "white",
-                        "image": "white.png",
+                        "image": "white.webp",
                         "voice": "voices-$CA/$LOCALE/words/white.$CA"
                     },
                     {
                         "description": "yellow",
-                        "image": "yellow.png",
+                        "image": "yellow.webp",
                         "voice": "voices-$CA/$LOCALE/words/yellow.$CA"
                     }
                 ]
@@ -76,72 +76,72 @@
                 "content": [
                     {
                         "description": "zero",
-                        "image": "zero.png",
+                        "image": "zero.webp",
                         "voice": "voices-$CA/$LOCALE/alphabet/U0030.$CA"
                     },
                     {
                         "description": "one",
-                        "image": "one.png",
+                        "image": "one.webp",
                         "voice": "voices-$CA/$LOCALE/alphabet/U0031.$CA"
                     },
                     {
                         "description": "two",
-                        "image": "two.png",
+                        "image": "two.webp",
                         "voice": "voices-$CA/$LOCALE/alphabet/U0032.$CA"
                     },
                     {
                         "description": "three",
-                        "image": "three.png",
+                        "image": "three.webp",
                         "voice": "voices-$CA/$LOCALE/alphabet/U0033.$CA"
                     },
                     {
                         "description": "four",
-                        "image": "four.png",
+                        "image": "four.webp",
                         "voice": "voices-$CA/$LOCALE/alphabet/U0034.$CA"
                     },
                     {
                         "description": "five",
-                        "image": "five.png",
+                        "image": "five.webp",
                         "voice": "voices-$CA/$LOCALE/alphabet/U0035.$CA"
                     },
                     {
                         "description": "six",
-                        "image": "six.png",
+                        "image": "six.webp",
                         "voice": "voices-$CA/$LOCALE/alphabet/U0036.$CA"
                     },
                     {
                         "description": "seven",
-                        "image": "seven.png",
+                        "image": "seven.webp",
                         "voice": "voices-$CA/$LOCALE/alphabet/U0037.$CA"
                     },
                     {
                         "description": "eight",
-                        "image": "eight.png",
+                        "image": "eight.webp",
                         "voice": "voices-$CA/$LOCALE/alphabet/U0038.$CA"
                     },
                     {
                         "description": "nine",
-                        "image": "nine.png",
+                        "image": "nine.webp",
                         "voice": "voices-$CA/$LOCALE/alphabet/U0039.$CA"
                     },
                     {
                         "description": "ten",
-                        "image": "ten.png",
+                        "image": "ten.webp",
                         "voice": "voices-$CA/$LOCALE/alphabet/10.$CA"
                     },
                     {
                         "description": "eleven",
-                        "image": "eleven.png",
+                        "image": "eleven.webp",
                         "voice": "voices-$CA/$LOCALE/alphabet/11.$CA"
                     },
                     {
                         "description": "twelve",
-                        "image": "twelve.png",
+                        "image": "twelve.webp",
                         "voice": "voices-$CA/$LOCALE/alphabet/12.$CA"
                     },
                     {
                         "description": "sixteen",
-                        "image": "sixteen.png",
+                        "image": "sixteen.webp",
                         "voice": "voices-$CA/$LOCALE/alphabet/16.$CA"
                     }
                 ]
@@ -159,102 +159,102 @@
                 "content": [
                     {
                         "description": "arm",
-                        "image": "arm.png",
+                        "image": "arm.webp",
                         "voice": "voices-$CA/$LOCALE/words/arm.$CA"
                     },
                     {
                         "description": "back",
-                        "image": "back.png",
+                        "image": "back.webp",
                         "voice": "voices-$CA/$LOCALE/words/back.$CA"
                     },
                     {
                         "description": "brain",
-                        "image": "brain.png",
+                        "image": "brain.webp",
                         "voice": "voices-$CA/$LOCALE/words/brain.$CA"
                     },
                     {
                         "description": "ear",
-                        "image": "ear.png",
+                        "image": "ear.webp",
                         "voice": "voices-$CA/$LOCALE/words/ear.$CA"
                     },
                     {
                         "description": "eyes",
-                        "image": "eyes.png",
+                        "image": "eyes.webp",
                         "voice": "voices-$CA/$LOCALE/words/eyes.$CA"
                     },
                     {
                         "description": "face",
-                        "image": "face.png",
+                        "image": "face.webp",
                         "voice": "voices-$CA/$LOCALE/words/face.$CA"
                     },
                     {
                         "description": "finger",
-                        "image": "finger.png",
+                        "image": "finger.webp",
                         "voice": "voices-$CA/$LOCALE/words/finger.$CA"
                     },
                     {
                         "description": "foot",
-                        "image": "foot.png",
+                        "image": "foot.webp",
                         "voice": "voices-$CA/$LOCALE/words/foot.$CA"
                     },
                     {
                         "description": "hair",
-                        "image": "hair.png",
+                        "image": "hair.webp",
                         "voice": "voices-$CA/$LOCALE/words/hair.$CA"
                     },
                     {
                         "description": "hand",
-                        "image": "hand.png",
+                        "image": "hand.webp",
                         "voice": "voices-$CA/$LOCALE/words/hand.$CA"
                     },
                     {
                         "description": "head",
-                        "image": "head.png",
+                        "image": "head.webp",
                         "voice": "voices-$CA/$LOCALE/words/head.$CA"
                     },
                     {
                         "description": "knee",
-                        "image": "knee.png",
+                        "image": "knee.webp",
                         "voice": "voices-$CA/$LOCALE/words/knee.$CA"
                     },
                     {
                         "description": "leg",
-                        "image": "leg.png",
+                        "image": "leg.webp",
                         "voice": "voices-$CA/$LOCALE/words/leg.$CA"
                     },
                     {
                         "description": "mouth",
-                        "image": "mouth.png",
+                        "image": "mouth.webp",
                         "voice": "voices-$CA/$LOCALE/words/mouth.$CA"
                     },
                     {
                         "description": "neck",
-                        "image": "neck.png",
+                        "image": "neck.webp",
                         "voice": "voices-$CA/$LOCALE/words/neck.$CA"
                     },
                     {
                         "description": "nose",
-                        "image": "nose.png",
+                        "image": "nose.webp",
                         "voice": "voices-$CA/$LOCALE/words/nose.$CA"
                     },
                     {
                         "description": "skin",
-                        "image": "skin.png",
+                        "image": "skin.webp",
                         "voice": "voices-$CA/$LOCALE/words/skin.$CA"
                     },
                     {
                         "description": "teeth",
-                        "image": "teeth.png",
+                        "image": "teeth.webp",
                         "voice": "voices-$CA/$LOCALE/words/teeth.$CA"
                     },
                     {
                         "description": "thumb",
-                        "image": "thumb.png",
+                        "image": "thumb.webp",
                         "voice": "voices-$CA/$LOCALE/words/thumb.$CA"
                     },
                     {
                         "description": "tongue",
-                        "image": "tongue.png",
+                        "image": "tongue.webp",
                         "voice": "voices-$CA/$LOCALE/words/tongue.$CA"
                     }
                 ]
@@ -265,67 +265,67 @@
                 "content": [
                     {
                         "description": "boy",
-                        "image": "boy.png",
+                        "image": "boy.webp",
                         "voice": "voices-$CA/$LOCALE/words/boy.$CA"
                     },
                     {
                         "description": "brother",
-                        "image": "brother.png",
+                        "image": "brother.webp",
                         "voice": "voices-$CA/$LOCALE/words/brother.$CA"
                     },
                     {
                         "description": "child",
-                        "image": "child.png",
+                        "image": "child.webp",
                         "voice": "voices-$CA/$LOCALE/words/child.$CA"
                     },
                     {
                         "description": "dad",
-                        "image": "dad.png",
+                        "image": "dad.webp",
                         "voice": "voices-$CA/$LOCALE/words/dad.$CA"
                     },
                     {
                         "description": "family",
-                        "image": "family.png",
+                        "image": "family.webp",
                         "voice": "voices-$CA/$LOCALE/words/family.$CA"
                     },
                     {
                         "description": "friend",
-                        "image": "friend.png",
+                        "image": "friend.webp",
                         "voice": "voices-$CA/$LOCALE/words/friend.$CA"
                     },
                     {
                         "description": "girl",
-                        "image": "girl.png",
+                        "image": "girl.webp",
                         "voice": "voices-$CA/$LOCALE/words/girl.$CA"
                     },
                     {
                         "description": "grandmother",
-                        "image": "grandmother.png",
+                        "image": "grandmother.webp",
                         "voice": "voices-$CA/$LOCALE/words/grandmother.$CA"
                     },
                     {
                         "description": "man",
-                        "image": "man.png",
+                        "image": "man.webp",
                         "voice": "voices-$CA/$LOCALE/words/man.$CA"
                     },
                     {
                         "description": "mother",
-                        "image": "mother.png",
+                        "image": "mother.webp",
                         "voice": "voices-$CA/$LOCALE/words/mother.$CA"
                     },
                     {
                         "description": "sister",
-                        "image": "sister.png",
+                        "image": "sister.webp",
                         "voice": "voices-$CA/$LOCALE/words/sister.$CA"
                     },
                     {
                         "description": "son",
-                        "image": "son.png",
+                        "image": "son.webp",
                         "voice": "voices-$CA/$LOCALE/words/son.$CA"
                     },
                     {
                         "description": "woman",
-                        "image": "woman.png",
+                        "image": "woman.webp",
                         "voice": "voices-$CA/$LOCALE/words/woman.$CA"
                     }
                 ]
@@ -343,222 +343,222 @@
                 "content": [
                     {
                         "description": "animal",
-                        "image": "animal.png",
+                        "image": "animal.webp",
                         "voice": "voices-$CA/$LOCALE/words/animal.$CA"
                     },
                     {
                         "description": "bear",
-                        "image": "bear.png",
+                        "image": "bear.webp",
                         "voice": "voices-$CA/$LOCALE/words/bear.$CA"
                     },
                     {
                         "description": "bee",
-                        "image": "bee.png",
+                        "image": "bee.webp",
                         "voice": "voices-$CA/$LOCALE/words/bee.$CA"
                     },
                     {
                         "description": "beetle",
-                        "image": "beetle.png",
+                        "image": "beetle.webp",
                         "voice": "voices-$CA/$LOCALE/words/beetle.$CA"
                     },
                     {
                         "description": "bird",
-                        "image": "bird.png",
+                        "image": "bird.webp",
                         "voice": "voices-$CA/$LOCALE/words/bird.$CA"
                     },
                     {
                         "description": "bug",
-                        "image": "bug.png",
+                        "image": "bug.webp",
                         "voice": "voices-$CA/$LOCALE/words/bug.$CA"
                     },
                     {
                         "description": "bull",
-                        "image": "bull.png",
+                        "image": "bull.webp",
                         "voice": "voices-$CA/$LOCALE/words/bull.$CA"
                     },
                     {
                         "description": "butterfly",
-                        "image": "butterfly.png",
+                        "image": "butterfly.webp",
                         "voice": "voices-$CA/$LOCALE/words/butterfly.$CA"
                     },
                     {
                         "description": "camel",
-                        "image": "camel.png",
+                        "image": "camel.webp",
                         "voice": "voices-$CA/$LOCALE/words/camel.$CA"
                     },
                     {
                         "description": "cat",
-                        "image": "cat.png",
+                        "image": "cat.webp",
                         "voice": "voices-$CA/$LOCALE/words/cat.$CA"
                     },
                     {
                         "description": "chicken",
-                        "image": "chicken.png",
+                        "image": "chicken.webp",
                         "voice": "voices-$CA/$LOCALE/words/chicken.$CA"
                     },
                     {
                         "description": "cow",
-                        "image": "cow.png",
+                        "image": "cow.webp",
                         "voice": "voices-$CA/$LOCALE/words/cow.$CA"
                     },
                     {
                         "description": "dog",
-                        "image": "dog.png",
+                        "image": "dog.webp",
                         "voice": "voices-$CA/$LOCALE/words/dog.$CA"
                     },
                     {
                         "description": "dolphin",
-                        "image": "dolphin.png",
+                        "image": "dolphin.webp",
                         "voice": "voices-$CA/$LOCALE/words/dolphin.$CA"
                     },
                     {
                         "description": "dragon",
-                        "image": "dragon.png",
+                        "image": "dragon.webp",
                         "voice": "voices-$CA/$LOCALE/words/dragon.$CA"
                     },
                     {
                         "description": "duck",
-                        "image": "duck.png",
+                        "image": "duck.webp",
                         "voice": "voices-$CA/$LOCALE/words/duck.$CA"
                     },
                     {
                         "description": "fish",
-                        "image": "fish.png",
+                        "image": "fish.webp",
                         "voice": "voices-$CA/$LOCALE/words/fish.$CA"
                     },
                     {
                         "description": "flies",
-                        "image": "flies.png",
+                        "image": "flies.webp",
                         "voice": "voices-$CA/$LOCALE/words/flies.$CA"
                     },
                     {
                         "description": "fox",
-                        "image": "fox.png",
+                        "image": "fox.webp",
                         "voice": "voices-$CA/$LOCALE/words/fox.$CA"
                     },
                     {
                         "description": "frog",
-                        "image": "frog.png",
+                        "image": "frog.webp",
                         "voice": "voices-$CA/$LOCALE/words/frog.$CA"
                     },
                     {
                         "description": "giraffe",
-                        "image": "giraffe.png",
+                        "image": "giraffe.webp",
                         "voice": "voices-$CA/$LOCALE/words/giraffe.$CA"
                     },
                     {
                         "description": "gorilla",
-                        "image": "gorilla.png",
+                        "image": "gorilla.webp",
                         "voice": "voices-$CA/$LOCALE/words/gorilla.$CA"
                     },
                     {
                         "description": "hedgehog",
-                        "image": "hedgehog.png",
+                        "image": "hedgehog.webp",
                         "voice": "voices-$CA/$LOCALE/words/hedgehog.$CA"
                     },
                     {
                         "description": "hippopotamus",
-                        "image": "hippopotamus.png",
+                        "image": "hippopotamus.webp",
                         "voice": "voices-$CA/$LOCALE/words/hippopotamus.$CA"
                     },
                     {
                         "description": "horse",
-                        "image": "horse.png",
+                        "image": "horse.webp",
                         "voice": "voices-$CA/$LOCALE/words/horse.$CA"
                     },
                     {
                         "description": "kangaroo",
-                        "image": "kangaroo.png",
+                        "image": "kangaroo.webp",
                         "voice": "voices-$CA/$LOCALE/words/kangaroo.$CA"
                     },
                     {
                         "description": "lizard",
-                        "image": "lizard.png",
+                        "image": "lizard.webp",
                         "voice": "voices-$CA/$LOCALE/words/lizard.$CA"
                     },
                     {
                         "description": "mosquito",
-                        "image": "mosquito.png",
+                        "image": "mosquito.webp",
                         "voice": "voices-$CA/$LOCALE/words/mosquito.$CA"
                     },
                     {
                         "description": "mouse",
-                        "image": "mouse.png",
+                        "image": "mouse.webp",
                         "voice": "voices-$CA/$LOCALE/words/mouse.$CA"
                     },
                     {
                         "description": "owl",
-                        "image": "owl.png",
+                        "image": "owl.webp",
                         "voice": "voices-$CA/$LOCALE/words/owl.$CA"
                     },
                     {
                         "description": "panda",
-                        "image": "panda.png",
+                        "image": "panda.webp",
                         "voice": "voices-$CA/$LOCALE/words/panda.$CA"
                     },
                     {
                         "description": "pig",
-                        "image": "pig.png",
+                        "image": "pig.webp",
                         "voice": "voices-$CA/$LOCALE/words/pig.$CA"
                     },
                     {
                         "description": "rabbit",
-                        "image": "rabbit.png",
+                        "image": "rabbit.webp",
                         "voice": "voices-$CA/$LOCALE/words/rabbit.$CA"
                     },
                     {
                         "description": "reptile",
-                        "image": "reptile.png",
+                        "image": "reptile.webp",
                         "voice": "voices-$CA/$LOCALE/words/reptile.$CA"
                     },
                     {
                         "description": "rhinoceros",
-                        "image": "rhinoceros.png",
+                        "image": "rhinoceros.webp",
                         "voice": "voices-$CA/$LOCALE/words/rhinoceros.$CA"
                     },
                     {
                         "description": "shark",
-                        "image": "shark.png",
+                        "image": "shark.webp",
                         "voice": "voices-$CA/$LOCALE/words/shark.$CA"
                     },
                     {
                         "description": "sheep",
-                        "image": "sheep.png",
+                        "image": "sheep.webp",
                         "voice": "voices-$CA/$LOCALE/words/sheep.$CA"
                     },
                     {
                         "description": "snail",
-                        "image": "snail.png",
+                        "image": "snail.webp",
                         "voice": "voices-$CA/$LOCALE/words/snail.$CA"
                     },
                     {
                         "description": "snake",
-                        "image": "snake.png",
+                        "image": "snake.webp",
                         "voice": "voices-$CA/$LOCALE/words/snake.$CA"
                     },
                     {
                         "description": "spider",
-                        "image": "spider.png",
+                        "image": "spider.webp",
                         "voice": "voices-$CA/$LOCALE/words/spider.$CA"
                     },
                     {
                         "description": "turkey",
-                        "image": "turkey.png",
+                        "image": "turkey.webp",
                         "voice": "voices-$CA/$LOCALE/words/turkey.$CA"
                     },
                     {
                         "description": "turtle",
-                        "image": "turtle.png",
+                        "image": "turtle.webp",
                         "voice": "voices-$CA/$LOCALE/words/turtle.$CA"
                     },
                     {
                         "description": "whale",
-                        "image": "whale.png",
+                        "image": "whale.webp",
                         "voice": "voices-$CA/$LOCALE/words/whale.$CA"
                     },
                     {
                         "description": "wolf",
-                        "image": "wolf.png",
+                        "image": "wolf.webp",
                         "voice": "voices-$CA/$LOCALE/words/wolf.$CA"
                     }
                 ]
@@ -569,67 +569,67 @@
                 "content": [
                     {
                         "description": "apple",
-                        "image": "apple.png",
+                        "image": "apple.webp",
                         "voice": "voices-$CA/$LOCALE/words/apple.$CA"
                     },
                     {
                         "description": "apricot",
-                        "image": "apricot.png",
+                        "image": "apricot.webp",
                         "voice": "voices-$CA/$LOCALE/words/apricot.$CA"
                     },
                     {
                         "description": "coconut",
-                        "image": "coconut.png",
+                        "image": "coconut.webp",
                         "voice": "voices-$CA/$LOCALE/words/coconut.$CA"
                     },
                     {
                         "description": "fruit",
-                        "image": "fruit.png",
+                        "image": "fruit.webp",
                         "voice": "voices-$CA/$LOCALE/words/fruit.$CA"
                     },
                     {
                         "description": "kiwi",
-                        "image": "kiwi.png",
+                        "image": "kiwi.webp",
                         "voice": "voices-$CA/$LOCALE/words/kiwi.$CA"
                     },
                     {
                         "description": "lemon",
-                        "image": "lemon.png",
+                        "image": "lemon.webp",
                         "voice": "voices-$CA/$LOCALE/words/lemon.$CA"
                     },
                     {
                         "description": "melon",
-                        "image": "melon.png",
+                        "image": "melon.webp",
                         "voice": "voices-$CA/$LOCALE/words/melon.$CA"
                     },
                     {
                         "description": "orange",
-                        "image": "orange.png",
+                        "image": "orange.webp",
                         "voice": "voices-$CA/$LOCALE/words/orange.$CA"
                     },
                     {
                         "description": "peach",
-                        "image": "peach.png",
+                        "image": "peach.webp",
                         "voice": "voices-$CA/$LOCALE/words/peach.$CA"
                     },
                     {
                         "description": "pear",
-                        "image": "pear.png",
+                        "image": "pear.webp",
                         "voice": "voices-$CA/$LOCALE/words/pear.$CA"
                     },
                     {
                         "description": "plum",
-                        "image": "plum.png",
+                        "image": "plum.webp",
                         "voice": "voices-$CA/$LOCALE/words/plum.$CA"
                     },
                     {
                         "description": "raspberry",
-                        "image": "raspberry.png",
+                        "image": "raspberry.webp",
                         "voice": "voices-$CA/$LOCALE/words/raspberry.$CA"
                     },
                     {
                         "description": "strawberry",
-                        "image": "strawberry.png",
+                        "image": "strawberry.webp",
                         "voice": "voices-$CA/$LOCALE/words/strawberry.$CA"
                     }
                 ]
