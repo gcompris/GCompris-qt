@@ -84,7 +84,7 @@ function getAllLessons(dataset) {
 
 /* return a list of words in the lesson. Each words is formatted like:
  * 'description' => "splatter"
- * 'image' => "words/splatter.png"
+ * 'image' => "words/splatter.webp"
  * 'voice' => "voices-$CA/$LOCALE/words/splatter.$CA"
  * 'translatedTxt' => "splatter"
  */
