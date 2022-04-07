@@ -255,7 +255,7 @@ Item {
             text: qsTr("Download full word image set")
 
             onClicked: {
-                if(DownloadManager.downloadResource("data2/words/words.rcc"))
+                if(DownloadManager.downloadResource("data2/words/words-webp.rcc"))
                     var downloadDialog = Core.showDownloadDialog(pageView.currentItem, {});
             }
         }
@@ -271,13 +271,13 @@ Item {
         */
         GCDialogCheckBox {
             id: wordsetBox
-            checked: useWordset && DownloadManager.isDataRegistered("words")
+            checked: useWordset && DownloadManager.isDataRegistered("words-webp")
             text: checked ? qsTr("Full word image set is installed") : qsTr("Full word image set is not installed")
             visible: ApplicationInfo.isDownloadAllowed
             enabled: false
             onCheckedChanged: {
                 if(checked) {
-                    wordset = "data2/words/words.rcc";
+                    wordset = "data2/words/words-webp.rcc";
                     useWordset = true;
                 } else {
                     wordset = "";
@@ -286,7 +286,7 @@ Item {
             }
 
             function updateStatus() {
-                checked = DownloadManager.isDataRegistered("words")
+                checked = DownloadManager.isDataRegistered("words-webp")
             }
         }
 
