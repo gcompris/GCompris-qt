@@ -372,8 +372,8 @@ void ApplicationSettings::notifyExitConfirmationChanged()
 
 void ApplicationSettings::notifyWordsetChanged()
 {
-    if (!m_wordset.isEmpty() && DownloadManager::getInstance()->haveLocalResource(m_wordset) && !DownloadManager::getInstance()->isDataRegistered("words")) {
-        // words.rcc is there -> register old file first
+    if (!m_wordset.isEmpty() && DownloadManager::getInstance()->haveLocalResource(m_wordset) && !DownloadManager::getInstance()->isDataRegistered("words-webp")) {
+        // words-webp.rcc is there -> register old file first
         // then try to update in the background
         DownloadManager::getInstance()->updateResource(m_wordset);
     }
@@ -518,7 +518,7 @@ void ApplicationSettings::saveActivityProgress(const QString &activity, int prog
 
 bool ApplicationSettings::useExternalWordset()
 {
-    return !m_wordset.isEmpty() && DownloadManager::getInstance()->isDataRegistered("words");
+    return !m_wordset.isEmpty() && DownloadManager::getInstance()->isDataRegistered("words-webp");
 }
 
 QObject *ApplicationSettings::applicationSettingsProvider(QQmlEngine *engine,
