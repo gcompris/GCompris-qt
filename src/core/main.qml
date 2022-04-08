@@ -188,11 +188,6 @@ Window {
             // words-webp.rcc has not been downloaded yet -> ask for download
             wordSetDownloaded = false;
         }
-
-        //disable wordset if useWordset config is false
-        if(!ApplicationSettings.useWordset) {
-            ApplicationSettings.wordset = "";
-        }
     }
 
     function checkBackgroundMusic() {
@@ -302,7 +297,13 @@ Window {
                 DownloadManager.updateResource(
                     DownloadManager.getVoicesResourceForLocale(ApplicationSettings.locale));
             }
+
             checkWordset();
+
+            if(ApplicationSettings.useWordset && DownloadManager.updateResource('data2/words/words-webp.rcc')) {
+                ApplicationSettings.wordset = 'data2/words/words-webp.rcc'
+            }
+
             checkBackgroundMusic();
             if(changelog.isNewerVersion(ApplicationSettings.lastGCVersionRan, ApplicationInfo.GCVersionCode)) {
                 lastGCVersionRanCopy = ApplicationSettings.lastGCVersionRan;
