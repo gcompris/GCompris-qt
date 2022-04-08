@@ -26,6 +26,14 @@ QtObject {
      *
      */
     property var changelog: [
+            { "versionCode": 20400, "content": [
+                qsTr("Reduce the size of the packages for all platforms and of the external word images set"),
+                qsTr("Improve images quality in several activities"),
+                qsTr("Fix some transitions in renewable_energy/watercycle on some platforms"),
+                qsTr("Fix dead keys ignored on Linux for typing activities"),
+                qsTr("Fix level reset when changing level manually in Logical associations")
+                ]
+            },
             { "versionCode": 20300, "content": [
                 qsTr("Fix Alphabet sequence, Even and odd numbers and Numbers in order activities")
                 ]
