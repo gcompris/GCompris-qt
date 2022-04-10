@@ -22,7 +22,10 @@ ActivityInfo {
   prerequisite: qsTr("Knowledge of different monuments.")
   //: Help manual
   manual: qsTr("Click on the spots to learn about the monuments and then locate them on the map.")
-  credit: qsTr("Photos taken from Wikipedia.")
+  credit: qsTr("Photos taken from Wikipedia.") + ("<ul><li>") +
+          ('"Chichen Itza 3" by Daniel Schwen (https://commons.wikimedia.org/wiki/File:Chichen_Itza_3.jpg), CC BY-SA 4.0') + ("</li><li>") +
+          ('"1 cristor redentor 2014" by Chensiyuan (https://commons.wikimedia.org/wiki/File:1_cristor_redentor_2014.jpg), CC BY-SA 4.0') + ("</li><li>") +
+          ('"Taj Mahal, Agra, India" by Yann (https://commons.wikimedia.org/wiki/File:Taj_Mahal,_Agra,_India.jpg), CC BY-SA 4.0') + ("</li></ul>")
   section: "sciences geography"
   createdInVersion: 6000
 }
