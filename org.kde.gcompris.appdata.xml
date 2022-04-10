@@ -1083,6 +1083,7 @@
     <value key="KDE::windows_store">https://www.microsoft.com/store/apps/9pgxjtcxn8qm</value>
   </custom>
   <releases>
+    <release version="2.4" date="2022-04-13"/>
     <release version="2.3" date="2022-02-27"/>
     <release version="2.2" date="2022-02-24"/>
     <release version="2.1" date="2022-01-21"/>
