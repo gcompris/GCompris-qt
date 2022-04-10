@@ -1,8 +1,5 @@
-car.wav: https://www.freesound.org/people/henrique85n/sounds/160442/
-	This work is licensed under the Attribution License.
-
 Copyright: Various - openclipart
-Licence: Public domain
+Licence: CC0-1.0
 Files:
 car1.svg
 car2.svg
@@ -25,3 +22,10 @@ truck1.svg
 truck2.svg
 truck3.svg
 truck4.svg
+
+Copyright: henrique85n
+License: CC-BY-SA 3.0
+Source: https://www.freesound.org/people/henrique85n/sounds/160442/
+Comment: extract
+Files:
+car.wav
