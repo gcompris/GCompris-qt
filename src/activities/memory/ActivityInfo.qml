@@ -25,7 +25,8 @@ ActivityInfo {
           qsTr("<b>Keyboard controls:</b>") + ("<ul><li>") +
           qsTr("Arrows: navigate") + ("</li><li>") +
           qsTr("Space or Enter: flip the selected card") + ("</li></ul>")
-  credit: ""
+  credit: ("<ul><li>") +
+          ('"Card Flip" by f4ngy, (https://freesound.org/people/f4ngy/sounds/240776/), CC BY 3.0') + ("</li></ul>")
   section: "fun memory"
   createdInVersion: 0
 }
