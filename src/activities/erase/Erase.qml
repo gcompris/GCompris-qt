@@ -32,6 +32,8 @@ ActivityBase {
         source: Activity.url + Activity.getFirstImage()
         sourceSize.width: width
         sourceSize.height: height
+        horizontalAlignment: Image.AlignHCenter
+        verticalAlignment: Image.AlignVCenter
 
         Component.onCompleted: {
             dialogActivityConfig.initialize()
@@ -51,6 +53,22 @@ ActivityBase {
         onStart: Activity.start(main, items, type)
 
         onStop: { Activity.stop() }
+
+        function alignBackground() {
+            if(Activity.backgroundImages[Activity.currentImage][1] === "left")
+                background.horizontalAlignment = Image.AlignLeft
+            else if(Activity.backgroundImages[Activity.currentImage][1] === "right")
+                background.horizontalAlignment = Image.AlignRight
+            else
+                background.horizontalAlignment = Image.AlignHCenter
+
+            if(Activity.backgroundImages[Activity.currentImage][2] === "top")
+                background.verticalAlignment = Image.AlignTop
+            else if(Activity.backgroundImages[Activity.currentImage][2] === "bottom")
+                background.verticalAlignment = Image.AlignBottom
+            else
+                background.verticalAlignment = Image.AlignVCenter
+        }
 
         MultiPointTouchArea {
             anchors.fill: parent
