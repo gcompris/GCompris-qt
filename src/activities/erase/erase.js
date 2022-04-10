@@ -16,40 +16,41 @@
 
 var url = "qrc:/gcompris/src/activities/erase/resource/"
 
+//array of array, each with filename, horizontalAlignment and verticalAlignment
 var backgroundImages = [
-    "alpaca.webp",
-    "bee.webp",
-    "butterfly.webp",
-    "calf.webp",
-    "camels.webp",
-    "caterpillar.webp",
-    "chamaeleon.webp",
-    "cheetah.webp",
-    "crab.webp",
-    "dolphin.webp",
-    "flying_fox.webp",
-    "gibbon.webp",
-    "giraffe.webp",
-    "goat.webp",
-    "gorilla.webp",
-    "gosling.webp",
-    "heron.webp",
-    "horse.webp",
-    "kingfisher.webp",
-    "kitten.webp",
-    "long_nosed_monkey.webp",
-    "macaque.webp",
-    "meerkats.webp",
-    "northern_harrier.webp",
-    "nubian_ibex.webp",
-    "penguin.webp",
-    "pika.webp",
-    "red_panda.webp",
-    "rhinoceros.webp",
-    "spoonbills.webp",
-    "squirrel.webp",
-    "swans.webp",
-    "toucan.webp"
+    ["alpaca.webp", "left", "top"],
+    ["bee.webp", "left", "center"],
+    ["butterfly.webp", "left", "center"],
+    ["calf.webp", "center", "center"],
+    ["camels.webp", "right", "center"],
+    ["caterpillar.webp", "center", "center"],
+    ["chamaeleon.webp", "left", "center"],
+    ["cheetah.webp", "right", "top"],
+    ["crab.webp", "center", "center"],
+    ["dolphin.webp", "center", "top"],
+    ["flying_fox.webp", "center", "bottom"],
+    ["gibbon.webp", "center", "center"],
+    ["giraffe.webp", "right", "center"],
+    ["goat.webp", "right", "top"],
+    ["gorilla.webp", "center", "center"],
+    ["gosling.webp", "center", "top"],
+    ["heron.webp", "center", "center"],
+    ["horse.webp", "center", "top"],
+    ["kingfisher.webp", "center", "top"],
+    ["kitten.webp", "center", "center"],
+    ["long_nosed_monkey.webp", "center", "top"],
+    ["macaque.webp", "center", "center"],
+    ["meerkats.webp", "center", "top"],
+    ["northern_harrier.webp", "center", "center"],
+    ["nubian_ibex.webp", "center", "top"],
+    ["penguin.webp", "center", "top"],
+    ["pika.webp", "center", "top"],
+    ["red_panda.webp", "center", "center"],
+    ["rhinoceros.webp", "center", "center"],
+    ["spoonbills.webp", "left", "top"],
+    ["squirrel.webp", "center", "top"],
+    ["swans.webp", "right", "top"],
+    ["toucan.webp", "left", "top"]
 ]
 
 var blockImages = [
@@ -89,10 +90,12 @@ function initLevel() {
     items.blocks.clear()
     imgIndex++
     items.bar.level = currentLevel + 1
-    items.background.source = url + backgroundImages[currentImage++]
+    currentImage++
     if(currentImage >= backgroundImages.length) {
         currentImage = 0
     }
+    items.background.source = url + backgroundImages[currentImage][0]
+    items.background.alignBackground()
     createdBlocks = 0
     killedBlocks = 0
     var nbx = Math.min((currentLevel % 2 * 3) + 5, main.width / (10 * GCompris.ApplicationInfo.ratio));
@@ -144,5 +147,5 @@ function blockKilled() {
 
 function getFirstImage() {
     backgroundImages = Core.shuffle(backgroundImages)
-    return backgroundImages[0]
+    return backgroundImages[0][0]
 }
