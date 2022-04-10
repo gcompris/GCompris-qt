@@ -22,7 +22,8 @@ ActivityInfo {
   prerequisite: ""
   //: Help manual
   manual: qsTr("Each car can only move either horizontally or vertically. You must make some room in order to let the red car move through the gate on the right.")
-  credit: ""
+  credit: ("<ul><li>") +
+          ('"Car Start Engine" by henrique85n, (https://freesound.org/people/henrique85n/sounds/160442/), CC BY 3.0, extract') + ("</li></ul>")
   section: "discovery logic"
   createdInVersion: 0
 }
