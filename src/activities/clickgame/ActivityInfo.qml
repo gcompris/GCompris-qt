@@ -22,7 +22,7 @@ ActivityInfo {
   prerequisite: qsTr("Can move mouse and click on the correct place.")
   //: Help manual
   manual: qsTr("Catch all the moving fish by clicking or touching them with your finger.")
-  credit: qsTr("Fish are taken from the Unix utility xfishtank. All image credits belong to Guillaume Rousse.")
+  credit: ""
   section: "computer mouse"
   createdInVersion: 0
 }
