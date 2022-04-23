@@ -62,7 +62,7 @@ if(NOT ${QML_BOX2D_MODULE} STREQUAL "disabled")
     elseif(CMAKE_HOST_APPLE)
       set(_box2d_library_dir "")
       set(_box2d_library_file "libBox2D.dylib")
-    elseif(ANDROID AND Qt5Widgets_VERSION_STRING VERSION_GREATER_EQUAL "5.14.0")
+    elseif(ANDROID AND Qt5Widgets_VERSION VERSION_GREATER_EQUAL "5.14.0")
       set(_box2d_library_dir "")
       set(_box2d_library_file "libBox2D_${ANDROID_ABI}.so")
     else()
@@ -93,7 +93,7 @@ if(NOT ${QML_BOX2D_MODULE} STREQUAL "disabled")
       endif()
     endif()
 
-    if(ANDROID AND Qt5Widgets_VERSION_STRING VERSION_GREATER_EQUAL "5.14.0")
+    if(ANDROID AND Qt5Widgets_VERSION VERSION_GREATER_EQUAL "5.14.0")
       # Only build the necessary architecture for box2d
       # Capitalize first letter of the abi...
       string(SUBSTRING ${ANDROID_ABI} 0 1 FIRST_LETTER)

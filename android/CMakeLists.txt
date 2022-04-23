@@ -44,7 +44,7 @@ if(WITH_KIOSK_MODE)
   set(APK_SUFFIX "-kiosk${APK_SUFFIX}")
 endif()
 
-if(Qt5Widgets_VERSION_STRING VERSION_GREATER_EQUAL "5.14.0")
+if(Qt5Widgets_VERSION VERSION_GREATER_EQUAL "5.14.0")
   set(STDCPP_PATH "\"stdcpp-path\": \"${ANDROID_NDK}/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/\"")
 else()
   set(STDCPP_PATH ",\"stdcpp-path\": \"${ANDROID_NDK}/sources/cxx-stl/llvm-libc++/libs/${ANDROID_ABI}/libc++_shared.so\"")
@@ -59,7 +59,7 @@ endif()
 set(PACKAGE_SOURCE_ANDROID ${CMAKE_BINARY_DIR}/tmpAndroid)
 set(ANDROID_SDK_ROOT $ENV{ANDROID_SDK_ROOT})
 
-if(Qt5Widgets_VERSION_STRING VERSION_GREATER_EQUAL "5.14.0")
+if(Qt5Widgets_VERSION VERSION_GREATER_EQUAL "5.14.0")
   configure_file(${CMAKE_CURRENT_SOURCE_DIR}/AndroidManifest.xml.cmake ${PACKAGE_SOURCE_ANDROID}/AndroidManifest.xml @ONLY)
   configure_file(${CMAKE_CURRENT_SOURCE_DIR}/configAndroid.json.cmake ${PACKAGE_SOURCE_ANDROID}/configAndroid.json @ONLY)
   # TODO Remove this file as soon as we have moved to plugins instead of rcc files for activities

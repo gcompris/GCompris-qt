@@ -102,7 +102,7 @@ endif()
 find_package(Qt5 ${QT_REQUIRED_VERSION} REQUIRED
     Qml Quick Gui Multimedia Core Svg LinguistTools Sensors)
 
-if(Qt5Widgets_VERSION_STRING VERSION_GREATER_EQUAL "5.15.0")
+if(Qt5Widgets_VERSION VERSION_GREATER_EQUAL "5.15.0")
   find_package(Qt5 ${QT_REQUIRED_VERSION} REQUIRED QmlWorkerScript QuickParticles)
 endif()
 
@@ -170,7 +170,7 @@ else()
 endif()
 if(ANDROID)
   # Android .so output
-  if(Qt5Widgets_VERSION_STRING VERSION_LESS "5.14.0")
+  if(Qt5Widgets_VERSION VERSION_LESS "5.14.0")
     set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/android-build/libs/${ANDROID_ABI}/)
   endif()
   set(GCOMPRIS_TRANSLATIONS_DIR ${CMAKE_BINARY_DIR}/${_data_dest_dir} CACHE INTERNAL "" FORCE)
