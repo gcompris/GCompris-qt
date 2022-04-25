@@ -23,7 +23,7 @@ Data {
             'Steve|jumps|into|the|pool.\n'+
             'Jessica|wants|a|new|book.\n'+
             'Mom|made|me|a|sandwich.\n'+
-            'Tigers|live|in|savannas.\n'+
+            'Tigers|live|in|forests.\n'+
             'Football|is|a|team|game.')
         }
     ]
