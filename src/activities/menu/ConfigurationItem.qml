@@ -54,10 +54,7 @@ Item {
 
             function localeChanged() {
                 var language = dialogConfig.languages[languageBox.currentIndex].text;
-                voicesRow.haveLocalResource = DownloadManager.isDataRegistered(
-                            "voices-" + ApplicationInfo.CompressedAudio + "/" +
-                            ApplicationInfo.getVoicesLocale(dialogConfig.languages[languageBox.currentIndex].locale)
-                            )
+                voicesRow.haveLocalResource = DownloadManager.haveLocalResource(DownloadManager.getVoicesResourceForLocale(dialogConfig.languages[languageBox.currentIndex].locale))
             }
 
             Connections {
