@@ -66,18 +66,12 @@ Item {
                 onDownloadFinished: voicesRow.localeChanged()
             }
 
-            GCText {
+            GCDialogCheckBox {
                 id: voicesText
+                width: dialogConfig.contentWidth
+                enabled: false
                 text: qsTr("Localized voices")
-                fontSize: mediumSize
-                wrapMode: Text.WordWrap
-            }
-
-            Image {
-                id: voicesImage
-                sourceSize.height: 30 * ApplicationInfo.ratio
-                source: voicesRow.haveLocalResource ? "qrc:/gcompris/src/core/resource/apply.svg" :
-                "qrc:/gcompris/src/core/resource/cancel.svg"
+                checked: voicesRow.haveLocalResource
             }
 
             GCButton {
