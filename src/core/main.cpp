@@ -50,7 +50,7 @@ bool loadAndroidTranslation(QTranslator &translator, const QString &locale)
 /**
  * Checks if the locale is supported. Locale may have been removed because
  * translation progress was not enough or invalid language put in configuration.
-*/
+ */
 bool isSupportedLocale(const QString &locale)
 {
     bool isSupported = false;
@@ -131,7 +131,7 @@ int main(int argc, char *argv[])
     // the one we use (because appName is gcompris-qt, not gcompris)
     QGuiApplication::setDesktopFileName("org.kde.gcompris");
 
-    //add a variable to disable default fullscreen on Mac, see below..
+    // add a variable to disable default fullscreen on Mac, see below..
 #if defined(Q_OS_MAC)
     // Sandboxing on MacOSX as documented in:
     // https://doc.qt.io/qt-5/osx-deployment.html
@@ -194,6 +194,11 @@ int main(int argc, char *argv[])
     QCommandLineOption clOpenGLRenderer(QStringList() << "opengl-renderer",
                                         QObject::tr("Use openGL renderer instead of software (faster but crash potentially depending on your graphical card)."));
     parser.addOption(clOpenGLRenderer);
+
+    QCommandLineOption clListActivities(QStringList() << "l"
+                                                      << "list-activities",
+                                        QObject::tr("Outputs all the available activities on the standard output."));
+    parser.addOption(clListActivities);
 
     parser.process(app);
 
@@ -310,7 +315,13 @@ int main(int argc, char *argv[])
     if (parser.isSet(exportActivitiesAsSQL)) {
         ActivityInfoTree *menuTree(qobject_cast<ActivityInfoTree *>(ActivityInfoTree::menuTreeProvider(&engine, nullptr)));
         menuTree->exportAsSQL();
-        exit(0);
+        return 0;
+    }
+
+    if (parser.isSet(clListActivities)) {
+        ActivityInfoTree *menuTree(qobject_cast<ActivityInfoTree *>(ActivityInfoTree::menuTreeProvider(&engine, nullptr)));
+        menuTree->listActivities();
+        return 0;
     }
 
     QObject *topLevel = engine.rootObjects().value(0);

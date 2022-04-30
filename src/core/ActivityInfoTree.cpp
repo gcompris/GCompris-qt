@@ -217,6 +217,35 @@ void ActivityInfoTree::exportAsSQL()
     qtOut.flush();
 }
 
+void ActivityInfoTree::listActivities()
+{
+    QTextStream qtOut(stdout);
+    QStringList list = ActivityInfoTree::getActivityList();
+    for (const QString &activity: list) {
+        qtOut << activity << '\n';
+    }
+    qtOut.flush();
+}
+
+QStringList ActivityInfoTree::getActivityList()
+{
+    QStringList list;
+    QFile file(":/gcompris/src/activities/activities_out.txt");
+    if (!file.open(QFile::ReadOnly)) {
+        qDebug() << "Failed to load the activity list";
+        return list;
+    }
+    QTextStream in(&file);
+    while (!in.atEnd()) {
+        QString line = in.readLine();
+        if (!line.startsWith(QLatin1String("#"))) {
+            list << line;
+        }
+    }
+    file.close();
+    return list;
+}
+
 QObject *ActivityInfoTree::menuTreeProvider(QQmlEngine *engine, QJSEngine *scriptEngine)
 {
     Q_UNUSED(scriptEngine)
@@ -227,32 +256,24 @@ QObject *ActivityInfoTree::menuTreeProvider(QQmlEngine *engine, QJSEngine *scrip
     QObject *objectRoot = componentRoot.create();
     menuTree->setRootMenu(qobject_cast<ActivityInfo *>(objectRoot));
 
-    QFile file(":/gcompris/src/activities/activities_out.txt");
-    if (!file.open(QFile::ReadOnly)) {
-        qDebug() << "Failed to load the activity list";
-    }
-    QTextStream in(&file);
-    while (!in.atEnd()) {
-        QString line = in.readLine();
-        if (!line.startsWith(QLatin1String("#"))) {
-            QString url = QString("qrc:/gcompris/src/activities/%1/ActivityInfo.qml").arg(line);
-            if (!QResource::registerResource(
-                    ApplicationInfo::getFilePath(line + ".rcc")))
-                qDebug() << "Failed to load the resource file " << line + ".rcc";
+    QStringList activities = getActivityList();
+    for (const QString &line: activities) {
+        QString url = QString("qrc:/gcompris/src/activities/%1/ActivityInfo.qml").arg(line);
+        if (!QResource::registerResource(
+                ApplicationInfo::getFilePath(line + ".rcc")))
+            qDebug() << "Failed to load the resource file " << line + ".rcc";
 
-            QQmlComponent activityComponentRoot(engine, QUrl(url));
-            QObject *activityObjectRoot = activityComponentRoot.create();
-            if (activityObjectRoot != nullptr) {
-                ActivityInfo *activityInfo = qobject_cast<ActivityInfo *>(activityObjectRoot);
-                activityInfo->fillDatasets(engine);
-                menuTree->menuTreeAppend(activityInfo);
-            }
-            else {
-                qDebug() << "ERROR: failed to load " << line << " " << activityComponentRoot.errors();
-            }
+        QQmlComponent activityComponentRoot(engine, QUrl(url));
+        QObject *activityObjectRoot = activityComponentRoot.create();
+        if (activityObjectRoot != nullptr) {
+            ActivityInfo *activityInfo = qobject_cast<ActivityInfo *>(activityObjectRoot);
+            activityInfo->fillDatasets(engine);
+            menuTree->menuTreeAppend(activityInfo);
+        }
+        else {
+            qDebug() << "ERROR: failed to load " << line << " " << activityComponentRoot.errors();
         }
     }
-    file.close();
 
     menuTree->filterByTag("favorite");
     menuTree->filterEnabledActivities();

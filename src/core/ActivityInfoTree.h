@@ -66,11 +66,13 @@ private:
     static int menuTreeCount(QQmlListProperty<ActivityInfo> *property);
     static ActivityInfo *menuTreeAt(QQmlListProperty<ActivityInfo> *property, int index);
 #endif
+    static QStringList getActivityList();
 
 public:
     static void registerResources();
     static QObject *menuTreeProvider(QQmlEngine *engine, QJSEngine *scriptEngine);
     void exportAsSQL();
+    void listActivities();
 };
 
 #endif // ACTIVITYINFOTREE_H
