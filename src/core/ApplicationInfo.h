@@ -150,8 +150,8 @@ class ApplicationInfo : public QObject
 
 public:
     /**
-	 * Known host platforms.
-	 */
+     * Known host platforms.
+     */
     enum Platform {
         Linux, /**< Linux (except Android) */
         Windows, /**< Windows */

@@ -21,9 +21,12 @@ class ActivityInfoTree : public QObject
     Q_PROPERTY(QQmlListProperty<ActivityInfo> menuTree READ menuTree NOTIFY menuTreeChanged)
     Q_PROPERTY(ActivityInfo *currentActivity READ getCurrentActivity WRITE setCurrentActivity NOTIFY currentActivityChanged)
     Q_PROPERTY(QVariantList characters READ allCharacters CONSTANT)
+    /**
+     * Specify the activity to start on when running GCompris if --launch is specified in command-line.
+     */
+    Q_PROPERTY(QString startingActivity READ startingActivity WRITE setStartingActivity)
 
 public:
-    explicit ActivityInfoTree(QObject *parent = 0);
     QQmlListProperty<ActivityInfo> menuTree();
     ActivityInfo *getRootMenu() const;
     void setRootMenu(ActivityInfo *rootMenu);
@@ -36,6 +39,9 @@ public:
     void sortByDifficultyThenName(bool emitChanged = true);
     QVariantList allCharacters();
 
+    static QString startingActivity() { return m_startingActivity; }
+    static void setStartingActivity(const QString &startingActivity) { m_startingActivity = startingActivity; }
+
 protected Q_SLOTS:
     Q_INVOKABLE void filterByTag(const QString &tag, const QString &category = "", bool emitChanged = true);
     Q_INVOKABLE void filterEnabledActivities(bool emitChanged = true);
@@ -45,6 +51,7 @@ protected Q_SLOTS:
     Q_INVOKABLE void filterBySearch(const QString &text);
     Q_INVOKABLE void filterByDifficulty(quint32 levelMin, quint32 levelMax);
     Q_INVOKABLE void minMaxFiltersChanged(quint32 levelMin, quint32 levelMax, bool emitChanged = true);
+    Q_INVOKABLE void setCurrentActivityFromName(const QString &name);
 
 signals:
     void menuTreeChanged();
@@ -52,6 +59,8 @@ signals:
     void allCharactersChanged();
 
 private:
+    explicit ActivityInfoTree(QObject *parent = 0);
+
     // this is the full activity list, it never changes
     QList<ActivityInfo *> m_menuTreeFull;
     // represents the Menu view and can be filtered
@@ -59,6 +68,8 @@ private:
     ActivityInfo *m_rootMenu;
     ActivityInfo *m_currentActivity;
     QVariantList m_keyboardCharacters;
+    static QString m_startingActivity;
+
 #if QT_VERSION >= QT_VERSION_CHECK(6, 0, 0)
     static qsizetype menuTreeCount(QQmlListProperty<ActivityInfo> *property);
     static ActivityInfo *menuTreeAt(QQmlListProperty<ActivityInfo> *property, qsizetype index);

@@ -169,6 +169,8 @@ ActivityBase {
 
     property string clickMode: "play"
 
+    signal startActivity(string activityName)
+
     pageComponent: Image {
         id: background
         source: activity.url + "background.svg"
@@ -199,8 +201,9 @@ ActivityBase {
                 } else if (status == Loader.Ready) {
                     loading.stop();
                     loadActivity();
-                } else if (status == Loader.Error)
+                } else if (status == Loader.Error) {
                     loading.stop();
+                }
             }
         }
 
@@ -717,6 +720,18 @@ ActivityBase {
                     } else
                         activity.focus = true;
                 }
+
+                onStartActivity: {
+                    ActivityInfoTree.setCurrentActivityFromName(activityName)
+                    var currentLevels = ApplicationSettings.currentLevels(ActivityInfoTree.currentActivity.name)
+                    activityLoader.setSource("qrc:/gcompris/src/activities/" + ActivityInfoTree.currentActivity.name,
+                    {
+                        'menu': activity,
+                        'activityInfo': ActivityInfoTree.currentActivity,
+                        'levelFolder': currentLevels
+                    })
+                    if (activityLoader.status == Loader.Ready) loadActivity()
+                }
             }
 
             TextField {
@@ -1083,7 +1098,7 @@ ActivityBase {
         DialogAbout {
             id: dialogAbout
             onClose: home()
-            }
+        }
         DialogHelp {
             id: dialogHelp
             onClose: home()

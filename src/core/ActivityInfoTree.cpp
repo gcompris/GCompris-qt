@@ -18,6 +18,8 @@
 #include <QCoreApplication>
 #include <QTextStream>
 
+QString ActivityInfoTree::m_startingActivity = "";
+
 ActivityInfoTree::ActivityInfoTree(QObject *parent) :
     QObject(parent),
     m_rootMenu(nullptr),
@@ -69,6 +71,18 @@ ActivityInfo *ActivityInfoTree::menuTreeAt(QQmlListProperty<ActivityInfo> *prope
 ActivityInfo *ActivityInfoTree::menuTree(int index) const
 {
     return m_menuTree.at(index);
+}
+
+void ActivityInfoTree::setCurrentActivityFromName(const QString &name)
+{
+    const auto &constMenuTreeFull = m_menuTreeFull;
+    for (const auto &activity: constMenuTreeFull) {
+        if (activity->name() == name) {
+            m_currentActivity = activity;
+            emit currentActivityChanged();
+            break;
+        }
+    }
 }
 
 void ActivityInfoTree::setCurrentActivity(ActivityInfo *currentActivity)
@@ -257,6 +271,7 @@ QObject *ActivityInfoTree::menuTreeProvider(QQmlEngine *engine, QJSEngine *scrip
     menuTree->setRootMenu(qobject_cast<ActivityInfo *>(objectRoot));
 
     QStringList activities = getActivityList();
+    QString startingActivity = m_startingActivity;
     for (const QString &line: activities) {
         QString url = QString("qrc:/gcompris/src/activities/%1/ActivityInfo.qml").arg(line);
         if (!QResource::registerResource(
@@ -269,10 +284,23 @@ QObject *ActivityInfoTree::menuTreeProvider(QQmlEngine *engine, QJSEngine *scrip
             ActivityInfo *activityInfo = qobject_cast<ActivityInfo *>(activityObjectRoot);
             activityInfo->fillDatasets(engine);
             menuTree->menuTreeAppend(activityInfo);
+
+            // Check if the activity is the one we want to start in and set the full name
+            if (!startingActivity.isEmpty() && startingActivity == line) {
+                startingActivity = activityInfo->name();
+            }
         }
         else {
             qDebug() << "ERROR: failed to load " << line << " " << activityComponentRoot.errors();
         }
+    }
+
+    // In case we have asked for a specific activity to start but the activity does not exist, we reinitialise the value
+    if (m_startingActivity == startingActivity) {
+        m_startingActivity = "";
+    }
+    else {
+        m_startingActivity = startingActivity;
     }
 
     menuTree->filterByTag("favorite");
@@ -321,8 +349,9 @@ void ActivityInfoTree::filterBySearch(const QString &text)
             }
         }
     }
-    else
+    else {
         m_menuTree = m_menuTreeFull;
+    }
 
     filterEnabledActivities(false);
     filterByDifficulty(ApplicationSettings::getInstance()->filterLevelMin(), ApplicationSettings::getInstance()->filterLevelMax());

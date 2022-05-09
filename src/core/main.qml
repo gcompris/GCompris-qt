@@ -106,8 +106,13 @@ Window {
         }
 
         Component.onCompleted: {
-            if (DownloadManager.areVoicesRegistered())
+            if(ApplicationInfo.startingActivity != "") {
+                // Don't play welcome intro
+                welcomePlayed = true;
+            }
+            else if (DownloadManager.areVoicesRegistered()) {
                 delayedWelcomeTimer.playWelcome();
+            }
             else {
                 DownloadManager.voicesRegistered.connect(
                         delayedWelcomeTimer.playWelcome);
@@ -147,8 +152,9 @@ Window {
         }
 
         Component.onCompleted: {
-            if(ApplicationSettings.isBackgroundMusicEnabled)
+            if(ApplicationSettings.isBackgroundMusicEnabled && ApplicationInfo.startingActivity == "") {
                 backgroundMusic.append(ApplicationInfo.getAudioFilePath("qrc:/gcompris/src/core/resource/intro.$CA"))
+            }
             if(ApplicationSettings.isBackgroundMusicEnabled
                && DownloadManager.haveLocalResource(DownloadManager.getBackgroundMusicResources())) {
                    backgroundMusic.playBackgroundMusic()
@@ -334,6 +340,21 @@ Window {
                 'loading': loading,
                 'backgroundMusic': backgroundMusic
             })
+
+            if(ActivityInfoTree.startingActivity != "") {
+                startApplicationTimer.start();
+            }
+        }
+
+        Timer {
+            id: startApplicationTimer
+            interval: 2000
+            repeat: false
+
+            onTriggered: {
+                print("Start activity", ActivityInfoTree.startingActivity)
+                pageView.currentItem.startActivity(ActivityInfoTree.startingActivity);
+            }
         }
 
         property var enterItem

@@ -195,6 +195,10 @@ int main(int argc, char *argv[])
                                         QObject::tr("Use openGL renderer instead of software (faster but crash potentially depending on your graphical card)."));
     parser.addOption(clOpenGLRenderer);
 
+    QCommandLineOption clStartOnActivity("launch",
+                                         QObject::tr("Specify the activity when starting GCompris."), "activity");
+    parser.addOption(clStartOnActivity);
+
     QCommandLineOption clListActivities(QStringList() << "l"
                                                       << "list-activities",
                                         QObject::tr("Outputs all the available activities on the standard output."));
@@ -290,6 +294,12 @@ int main(int argc, char *argv[])
 #else
         QQuickWindow::setSceneGraphBackend(QSGRendererInterface::OpenGL);
 #endif
+    }
+
+    // Start on specific activity
+    if (parser.isSet(clStartOnActivity)) {
+        QString startingActivity = parser.value(clStartOnActivity);
+        ActivityInfoTree::setStartingActivity(startingActivity);
     }
 
     QQmlApplicationEngine engine(QUrl("qrc:/gcompris/src/core/main.qml"));
