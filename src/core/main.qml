@@ -352,8 +352,9 @@ Window {
             repeat: false
 
             onTriggered: {
-                print("Start activity", ActivityInfoTree.startingActivity)
+                print("Start activity", ActivityInfoTree.startingActivity);
                 pageView.currentItem.startActivity(ActivityInfoTree.startingActivity);
+                ActivityInfoTree.startingActivity = "";
             }
         }
 

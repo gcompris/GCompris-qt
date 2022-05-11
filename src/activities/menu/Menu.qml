@@ -59,6 +59,8 @@ ActivityBase {
         }
     }
 
+    enabled: ActivityInfoTree.startingActivity === ""
+
     onDisplayDialog: pageView.pushElement(dialog)
 
     onDisplayDialogs: {
