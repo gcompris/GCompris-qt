@@ -154,7 +154,7 @@ Rectangle {
                         fontSize: regularSize
                         wrapMode: TextEdit.Wrap
                         textFormat: TextEdit.RichText
-                        property string style: "<HEAD><STYLE type='text/css'>A {color: black;}</STYLE></HEAD>"
+                        property string style: "<head><style>A {color: black;}</style></head>"
                     }
                 }
                 // The scroll buttons
