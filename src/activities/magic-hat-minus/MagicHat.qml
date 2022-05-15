@@ -94,7 +94,7 @@ ActivityBase {
         }
 
         Image {
-            //: The math operation
+            // The math operation
             id: operatorImage
             source: mode == "minus" ? Activity.url + "minus.svg" :
                                       Activity.url + "plus.svg"
