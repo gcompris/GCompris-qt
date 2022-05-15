@@ -21,6 +21,7 @@ ActivityInfo {
   //: Help prerequisite
   prerequisite: ""
   //: Help manual
+  //: Much of this string is shared across the three activities "chess", "chess_partyend", and "chess_2players".
   manual: qsTr("In this activity you discover the chess game by playing only the end of a game. It displays the possible target positions for any selected piece which helps the children understand how pieces moves.
 \nYou can achieve a mate sooner if you follow these simple rules:
     Trying to drive your opponent's king in the corner.

@@ -21,6 +21,7 @@ ActivityInfo {
   //: Help prerequisite
   prerequisite: ""
   //: Help manual
+  //: Much of this string is shared across the three activities "chess", "chess_partyend", and "chess_2players".
   manual: qsTr("In this activity you discover the chess game by playing against the computer. It displays the possible target positions for any selected piece which helps the children understand how pieces moves. At first level the computer is fully random to give more chances to the children. As level increases, the computer plays better.
 \nYou can achieve a mate sooner if you follow these simple rules:
     Trying to drive your opponent's king in the corner.
