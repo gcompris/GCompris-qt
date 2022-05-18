@@ -8,6 +8,10 @@
 import os
 import re
 import subprocess
+import sys
+
+from PyQt5.QtCore import QCoreApplication, QUrl
+from PyQt5.QtQml import QQmlComponent, QQmlEngine
 
 # Copied from Trojita
 """Fetch the .po files from KDE's SVN for GCompris
@@ -34,7 +38,27 @@ all_languages = subprocess.check_output(['svn', 'cat', SVN_PATH + 'subdirs'],
 
 all_languages = [x.strip() for x in all_languages.decode().split("\n") if len(x)]
 all_languages.remove("x-test")
+
+# Get all locales handled in GCompris
+app = QCoreApplication(sys.argv)
+engine = QQmlEngine()
+component = QQmlComponent(engine)
+try:
+    component.loadUrl(QUrl("./src/core/LanguageList.qml"))
+    languageList = component.create()
+    gcompris_langs = [languageList.property('languages').property(i).property("locale").toString().replace(".UTF-8", "") for i in range(languageList.property('languages').property('length').toInt())]
+    gcompris_langs.remove("system")
+    gcompris_langs = [[x.split('_', 1)[0], x] for x in gcompris_langs]
+    gcompris_locales = set(x for lst in gcompris_langs for x in lst)
+except IOError as e:
+    print("Unable to read LanguageList.qml")
+    pass
+
 for lang in all_languages:
+    if not lang in gcompris_locales:
+        print(lang, "is not supported in GCompris, no need to fetch it")
+        continue
+
     try:
         raw_data = subprocess.check_output(['svn', 'cat', SVN_PATH + lang + SOURCE_PO_PATH],
                                           stderr=subprocess.PIPE)
