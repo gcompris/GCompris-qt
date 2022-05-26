@@ -52,7 +52,6 @@ try:
     gcompris_locales = set(x for lst in gcompris_langs for x in lst)
 except IOError as e:
     print("Unable to read LanguageList.qml")
-    pass
 
 for lang in all_languages:
     if not lang in gcompris_locales:
