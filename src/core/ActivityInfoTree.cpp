@@ -42,11 +42,7 @@ QQmlListProperty<ActivityInfo> ActivityInfoTree::menuTree()
     return { this, nullptr, &menuTreeCount, &menuTreeAt };
 }
 
-#if QT_VERSION >= QT_VERSION_CHECK(6, 0, 0)
-qsizetype ActivityInfoTree::menuTreeCount(QQmlListProperty<ActivityInfo> *property)
-#else
-int ActivityInfoTree::menuTreeCount(QQmlListProperty<ActivityInfo> *property)
-#endif
+QList<ActivityInfo>::size_type ActivityInfoTree::menuTreeCount(QQmlListProperty<ActivityInfo> *property)
 {
     ActivityInfoTree *obj = qobject_cast<ActivityInfoTree *>(property->object);
     if (obj != nullptr)
@@ -55,11 +51,7 @@ int ActivityInfoTree::menuTreeCount(QQmlListProperty<ActivityInfo> *property)
     return 0;
 }
 
-#if QT_VERSION >= QT_VERSION_CHECK(6, 0, 0)
-ActivityInfo *ActivityInfoTree::menuTreeAt(QQmlListProperty<ActivityInfo> *property, qsizetype index)
-#else
-ActivityInfo *ActivityInfoTree::menuTreeAt(QQmlListProperty<ActivityInfo> *property, int index)
-#endif
+ActivityInfo *ActivityInfoTree::menuTreeAt(QQmlListProperty<ActivityInfo> *property, QList<ActivityInfo>::size_type index)
 {
     ActivityInfoTree *obj = qobject_cast<ActivityInfoTree *>(property->object);
     if (obj != nullptr)

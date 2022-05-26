@@ -12,6 +12,7 @@
 
 #include "ActivityInfo.h"
 #include <QQmlEngine>
+#include <QList>
 #include <QDir>
 
 class ActivityInfoTree : public QObject
@@ -70,13 +71,9 @@ private:
     QVariantList m_keyboardCharacters;
     static QString m_startingActivity;
 
-#if QT_VERSION >= QT_VERSION_CHECK(6, 0, 0)
-    static qsizetype menuTreeCount(QQmlListProperty<ActivityInfo> *property);
-    static ActivityInfo *menuTreeAt(QQmlListProperty<ActivityInfo> *property, qsizetype index);
-#else
-    static int menuTreeCount(QQmlListProperty<ActivityInfo> *property);
-    static ActivityInfo *menuTreeAt(QQmlListProperty<ActivityInfo> *property, int index);
-#endif
+    static QList<ActivityInfo>::size_type menuTreeCount(QQmlListProperty<ActivityInfo> *property);
+    static ActivityInfo *menuTreeAt(QQmlListProperty<ActivityInfo> *property, QList<ActivityInfo>::size_type index);
+
     static QStringList getActivityList();
 
 public:
