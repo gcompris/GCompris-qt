@@ -12,7 +12,7 @@
 
 import QtQuick 2.12
 import GCompris 1.0
-import QtGraphicalEffects 1.0
+import Qt5Compat.GraphicalEffects 1.0
 import "../../core"
 import "click_on_letter.js" as Activity
 
@@ -86,7 +86,7 @@ Item {
             horizontalOffset: 1
             verticalOffset: 1
             radius: 3
-            samples: 16
+            // samples: 16
             color: "#422a2a2a"
             source: text
         }

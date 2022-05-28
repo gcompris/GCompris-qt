@@ -31,7 +31,7 @@ Loader {
      * Cf. Emitter.burst
      */
     function burst(val) {
-        if(active) {
+        if(item && active) {
             item.opacity = 1
             item.start()
             item.emitter.burst(val)
@@ -49,5 +49,5 @@ Loader {
         }
     }
     onLoaded: item.clip = clip
-    source: "ParticleSystemStar.qml"
+    source: "qrc:/gcompris/src/core/ParticleSystemStar.qml"
 }

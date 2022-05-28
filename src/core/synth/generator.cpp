@@ -228,7 +228,7 @@ Generator::generateData(qint64 len) {
     m_lock.unlock();
 
     // Convert data from qreal to qint16.
-    const int channelBytes = format.sampleSize() / 8;
+    const int channelBytes = 2; //? format.sampleSize() / 8;
     unsigned char *ptr = reinterpret_cast<unsigned char *>(m_buffer.data());
     for (unsigned int sample = 0; sample < numSamples; sample++) {
         if (synthData[sample] > 1)  synthData[sample] = 1;

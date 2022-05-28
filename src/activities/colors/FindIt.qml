@@ -9,7 +9,7 @@
  */
 
 import QtQuick 2.12
-import QtGraphicalEffects 1.0
+import Qt5Compat.GraphicalEffects 1.0
 import GCompris 1.0
 
 import "../../core"
@@ -174,7 +174,7 @@ ActivityBase {
             horizontalOffset: 3
             verticalOffset: 3
             radius: 8.0
-            samples: 16
+            // samples: 16
             color: "#80000000"
             source: questionItem
         }

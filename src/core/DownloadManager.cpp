@@ -17,7 +17,7 @@
 #include <QResource>
 #include <QStandardPaths>
 #include <QMutexLocker>
-#include <QNetworkConfiguration>
+//#include <QNetworkConfiguration>
 #include <QDirIterator>
 
 #include <QtQml>

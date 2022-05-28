@@ -222,7 +222,7 @@ Item {
 
     Keys.forwardTo: activity.children
     Keys.onEscapePressed: home();
-    Keys.onPressed: {
+    Keys.onPressed: (event) => {
         if (event.modifiers === Qt.ControlModifier &&
                 event.key === Qt.Key_Q) {
             // Ctrl+Q exit the application
@@ -252,7 +252,7 @@ Item {
             ApplicationInfo.screenshot("/tmp/" + activityInfo.name.split('/')[0] + ".png")
         }
     }
-    Keys.onReleased: {
+    Keys.onReleased: (event) => {
         if (event.key === Qt.Key_Back) {
             event.accepted = true
             home()

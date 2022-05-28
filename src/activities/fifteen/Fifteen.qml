@@ -9,7 +9,7 @@
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
 import QtQuick 2.12
-import QtGraphicalEffects 1.0
+import Qt5Compat.GraphicalEffects 1.0
 
 import "../../core"
 import "fifteen.js" as Activity
@@ -125,7 +125,7 @@ ActivityBase {
                         horizontalOffset: 3
                         verticalOffset: 3
                         radius: 1
-                        samples: 16
+                        // samples: 16
                         color: "#ff1c4788"
                         source: text
                     }

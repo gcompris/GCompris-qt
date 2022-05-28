@@ -13,6 +13,12 @@
 #include "generator.h"
 
 #include <QDebug>
+#if QT_VERSION > QT_VERSION_CHECK(6, 0, 0)
+#include <QMediaDevices>
+#include <QAudioDevice>
+#else
+#include <QAudioDeviceInfo>
+#endif
 
 GSynth *GSynth::m_instance = nullptr;
 
@@ -22,31 +28,46 @@ GSynth::GSynth(QObject *parent) : QObject(parent)
 
     m_format.setSampleRate(22050);
     m_format.setChannelCount(1);
+#if QT_VERSION > QT_VERSION_CHECK(6, 0, 0)
+    m_format.setSampleFormat(QAudioFormat::Int16);
+    //? m_format.setCodec("audio/pcm");
+    //? m_format.setByteOrder(QAudioFormat::LittleEndian);
+#else
     m_format.setSampleSize(16);
     m_format.setCodec("audio/pcm");
     m_format.setByteOrder(QAudioFormat::LittleEndian);
     m_format.setSampleType(QAudioFormat::SignedInt);
+#endif
 
+#if QT_VERSION > QT_VERSION_CHECK(6, 0, 0)
+    QAudioDevice defaultDevice(QMediaDevices::defaultAudioOutput());
+    if (!defaultDevice.isFormatSupported(m_format)) {
+        qWarning() << "Default format not supported - trying to use nearest";
+        //? m_format = defaultDevice.nearestFormat(m_format);
+    }
+    m_audioOutput = new QAudioOutput(QMediaDevices::defaultAudioOutput(), this);
+    //? set format?? m_audioOutput = new QAudioOutput(QMediaDevices::defaultAudioOutput(), m_format, this);
+#else
     QAudioDeviceInfo info(QAudioDeviceInfo::defaultOutputDevice());
     if (!info.isFormatSupported(m_format)) {
         qWarning() << "Default format not supported - trying to use nearest";
         m_format = info.nearestFormat(m_format);
     }
-    m_device = QAudioDeviceInfo::defaultOutputDevice();
-    m_buffer = QByteArray(bufferSize, 0);
+    m_audioOutput = new QAudioOutput(QAudioDeviceInfo::defaultOutputDevice(), m_format, this);
+#endif
 
-    m_audioOutput = new QAudioOutput(m_device, m_format, this);
-    m_audioOutput->setBufferSize(bufferSize);
+    m_buffer = QByteArray(bufferSize, 0);
+    //? m_audioOutput->setBufferSize(bufferSize);
     m_generator   = new Generator(m_format, this);
     // todo Only start generator if musical activity, and stop it on exit (in main.qml, activity.isMusicalActivity)
     m_generator->setPreset(PresetCustom);
     m_generator->start();
-    m_audioOutput->start(m_generator);
+    //? m_audioOutput->start(m_generator);
     m_audioOutput->setVolume(1);
 }
 
 GSynth::~GSynth() {
-    m_audioOutput->stop();
+    //? m_audioOutput->stop();
     m_generator->stop();
     delete m_audioOutput;
     delete m_generator;
