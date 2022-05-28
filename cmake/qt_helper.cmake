@@ -35,7 +35,7 @@ endfunction()
 #
 # The qml/-dir is always a sibling of the plugins/ dir.
 function(getQtPluginsPath _path)
-  get_target_property(_lib_file Qt5::Qml LOCATION)
+  get_target_property(_lib_file ${QT_MAJOR}::Qml LOCATION)
   get_filename_component(_lib_dir ${_lib_file} PATH)
   # try $_lib_dir/qt5/plugins (Debian/Opensuse)
   set(_plugin_root ${_lib_dir}/qt5/plugins)

@@ -46,9 +46,7 @@ if(NOT ${QML_BOX2D_MODULE} STREQUAL "disabled")
   if(_need_box2d_submodule)
     # build qml-box2d ourselves from submodule
     include(ExternalProject)
-
-    get_property(_qmake_program TARGET Qt5::qmake PROPERTY IMPORT_LOCATION)
-
+    get_property(_qmake_program TARGET ${QT_MAJOR}::qmake PROPERTY IMPORT_LOCATION)
     set(_box2d_source_dir ${CMAKE_CURRENT_SOURCE_DIR}/external/qml-box2d)
     if(WIN32)
       set(_box2d_library_dir "release/")
@@ -56,7 +54,7 @@ if(NOT ${QML_BOX2D_MODULE} STREQUAL "disabled")
     elseif(CMAKE_HOST_APPLE)
       set(_box2d_library_dir "")
       set(_box2d_library_file "libBox2D.dylib")
-    elseif(ANDROID AND Qt5Widgets_VERSION VERSION_GREATER_EQUAL "5.14.0")
+    elseif(ANDROID AND ${QT_MAJOR}Widgets_VERSION VERSION_GREATER_EQUAL "5.14.0")
       set(_box2d_library_dir "")
       set(_box2d_library_file "libBox2D_${ANDROID_ABI}.so")
     else()
@@ -87,7 +85,7 @@ if(NOT ${QML_BOX2D_MODULE} STREQUAL "disabled")
       endif()
     endif()
 
-    if(ANDROID AND Qt5Widgets_VERSION VERSION_GREATER_EQUAL "5.14.0")
+    if(ANDROID AND ${QT_MAJOR}Widgets_VERSION VERSION_GREATER_EQUAL "5.14.0")
       # Only build the necessary architecture for box2d
       # Capitalize first letter of the abi...
       string(SUBSTRING ${ANDROID_ABI} 0 1 FIRST_LETTER)

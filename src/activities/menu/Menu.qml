@@ -10,7 +10,7 @@
 import QtQuick 2.12
 import "../../core"
 import GCompris 1.0
-import QtGraphicalEffects 1.0
+import Qt5Compat.GraphicalEffects
 import "qrc:/gcompris/src/core/core.js" as Core
 
 // For TextField
@@ -104,7 +104,7 @@ ActivityBase {
         // first initialize the menu. This connection is to refresh
         // automatically the menu at start.
         target: ApplicationInfo
-        onIsBox2DInstalledChanged: {
+        function onIsBox2DInstalledChanged() {
             ActivityInfoTree.filterByTag(activity.currentTag, currentCategory)
             ActivityInfoTree.filterEnabledActivities()
         }
@@ -244,11 +244,11 @@ ActivityBase {
                 currentActiveGrid.currentItem.selectCurrentItem()
             }
         }
-        Keys.onReleased: {
+        Keys.onReleased: (event) => {
             keyboardMode = true
             event.accepted = false
         }
-        Keys.onTabPressed: {
+        Keys.onTabPressed: (event) => {
             if(currentActiveGrid == section) {
                 if(currentTagCategories && currentTagCategories.length != 0) {
                     currentActiveGrid = categoriesGrid;
@@ -720,7 +720,7 @@ ActivityBase {
 
             Connections {
                 target: activity
-                onCurrentTagChanged: {
+                function onCurrentTagChanged() {
                     if (activity.currentTag === 'search') {
                         if(ApplicationSettings.isVirtualKeyboard && !keyboard.isPopulated) {
                             keyboard.populate();
@@ -731,7 +731,7 @@ ActivityBase {
                         activity.focus = true;
                 }
 
-                onStartActivity: {
+                function onStartActivity() {
                     ActivityInfoTree.setCurrentActivityFromName(activityName)
                     var currentLevels = ApplicationSettings.currentLevels(ActivityInfoTree.currentActivity.name)
                     activityLoader.setSource("qrc:/gcompris/src/activities/" + ActivityInfoTree.currentActivity.name,

@@ -79,15 +79,18 @@ elseif(CMAKE_HOST_APPLE)
   set_source_files_properties(${gcompris_RES} PROPERTIES MACOSX_PACKAGE_LOCATION "Resources")
 endif()
 
-set(used_qt_modules Qt5::Qml Qt5::Quick Qt5::Gui Qt5::Multimedia Qt5::Core Qt5::Svg Qt5::Sensors Qt5::QuickControls2 Qt5::QuickTemplates2 Qt5::Charts)
+set(used_qt_modules ${QT_MAJOR}::Qml ${QT_MAJOR}::Quick ${QT_MAJOR}::Widgets ${QT_MAJOR}::Gui ${QT_MAJOR}::Multimedia ${QT_MAJOR}::Core ${QT_MAJOR}::Svg ${QT_MAJOR}::Sensors ${QT_MAJOR}::QuickControls2 ${QT_MAJOR}::QuickTemplates2 ${QT_MAJOR}::Charts ${QT_MAJOR}::Core5Compat)
 
-if(Qt5Widgets_VERSION VERSION_GREATER_EQUAL "5.15.0")
-  set(used_qt_modules ${used_qt_modules} Qt5::QmlWorkerScript Qt5::QuickParticles)
+if(${QT_MAJOR}Widgets_VERSION VERSION_GREATER_EQUAL "5.15.0") 
+  set(used_qt_modules ${used_qt_modules} ${QT_MAJOR}::QmlWorkerScript)
+  if(${QT_MAJOR}Widgets_VERSION VERSION_LESS "6.0.0")
+    set(used_qt_modules ${used_qt_modules} ${QT_MAJOR}::QuickParticles)
+  endif()
 endif()
 
 if(ANDROID)
   add_library(${GCOMPRIS_EXECUTABLE_NAME} SHARED ${gcompris_SRCS})
-  set(used_qt_modules ${used_qt_modules} Qt5::AndroidExtras)
+  set(used_qt_modules ${used_qt_modules} ${QT_MAJOR}::AndroidExtras)
 elseif(CMAKE_HOST_APPLE)
   add_executable(${GCOMPRIS_EXECUTABLE_NAME} MACOSX_BUNDLE ${gcompris_SRCS} ${gcompris_RES})
 elseif(CMAKE_HOST_WIN32)
@@ -120,13 +123,13 @@ if(BUILD_STANDALONE)
   set(_qt_plugins "")
 
   # First plugins should be used on all platforms
-  foreach(_plugin Qt5::QSvgPlugin Qt5::QWebpPlugin Qt5::QICOPlugin Qt5::QICNSPlugin Qt5::QGifPlugin Qt5::QJpegPlugin Qt5::QWbmpPlugin Qt5::genericSensorPlugin Qt5::QtSensorGesturePlugin Qt5::QShakeSensorGesturePlugin
+  foreach(_plugin ${QT_MAJOR}::QSvgPlugin ${QT_MAJOR}::QWebpPlugin ${QT_MAJOR}::QICOPlugin ${QT_MAJOR}::QICNSPlugin ${QT_MAJOR}::QGifPlugin ${QT_MAJOR}::QJpegPlugin ${QT_MAJOR}::QWbmpPlugin ${QT_MAJOR}::genericSensorPlugin ${QT_MAJOR}::QtSensorGesturePlugin ${QT_MAJOR}::QShakeSensorGesturePlugin
       # Should be specific plugins used on Linux
-      Qt5::QComposePlatformInputContextPlugin Qt5::QXcbIntegrationPlugin Qt5::QXcbEglIntegrationPlugin Qt5::QXcbGlxIntegrationPlugin Qt5::QAlsaPlugin Qt5::QPulseAudioPlugin
+      ${QT_MAJOR}::QComposePlatformInputContextPlugin ${QT_MAJOR}::QXcbIntegrationPlugin ${QT_MAJOR}::QXcbEglIntegrationPlugin ${QT_MAJOR}::QXcbGlxIntegrationPlugin ${QT_MAJOR}::QAlsaPlugin ${QT_MAJOR}::QPulseAudioPlugin
       # Should be specific plugins used on MacOS
-      Qt5::QTgaPlugin Qt5::QTiffPlugin Qt5::QCocoaIntegrationPlugin
+      ${QT_MAJOR}::QTgaPlugin ${QT_MAJOR}::QTiffPlugin ${QT_MAJOR}::QCocoaIntegrationPlugin
       # Should be specific plugins used on Windows
-      Qt5::QWindowsIntegrationPlugin Qt5::QWindowsAudioPlugin Qt5::AudioCaptureServicePlugin Qt5::DSServicePlugin
+      ${QT_MAJOR}::QWindowsIntegrationPlugin ${QT_MAJOR}::QWindowsAudioPlugin ${QT_MAJOR}::AudioCaptureServicePlugin ${QT_MAJOR}::DSServicePlugin
       )
     if(TARGET ${_plugin})
       message(STATUS "${_plugin} will be included in the package")
@@ -157,8 +160,8 @@ if(BUILD_STANDALONE)
   endif()
 
   set(_qml_plugins
-    QtGraphicalEffects/${_lib_prefix}qtgraphicaleffectsplugin
-    QtGraphicalEffects/private/${_lib_prefix}qtgraphicaleffectsprivate
+    Qt5Compat/GraphicalEffects/${_lib_prefix}qtgraphicaleffectsplugin
+    Qt5Compat/GraphicalEffects/private/${_lib_prefix}qtgraphicaleffectsprivate
     QtQml/Models.2/${_lib_prefix}modelsplugin
     QtQuick/Window.2/${_lib_prefix}windowplugin
     QtQuick/Particles.2/${_lib_prefix}particlesplugin

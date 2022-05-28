@@ -8,7 +8,7 @@
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
-import QtQuick 2.12
+import QtQuick 2.15
 import GCompris 1.0
 
 import "../../core"
@@ -334,7 +334,7 @@ ActivityBase {
                 font.letterSpacing: ApplicationSettings.fontLetterSpacing
                 cursorVisible: true
                 wrapMode: TextInput.Wrap
-                validator: RegExpValidator{regExp: items.toArabic ?
+                validator: RegularExpressionValidator{ regularExpression: items.toArabic ?
                     /[0-9]+/ :
                     /[ivxlcdmIVXLCDM]*/}
                     onTextChanged: if(text) {

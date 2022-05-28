@@ -10,7 +10,7 @@
  */
 import QtQuick 2.12
 import GCompris 1.0
-import QtGraphicalEffects 1.0
+import Qt5Compat.GraphicalEffects 1.0
 
 import "../../core"
 import "redraw.js" as Activity
@@ -187,7 +187,7 @@ ActivityBase {
                                 horizontalOffset: 1
                                 verticalOffset: 1
                                 radius: 8.0
-                                samples: 16
+                                // samples: 16
                                 color: "#80000000"
                                 source: text1
                             }
@@ -307,7 +307,7 @@ ActivityBase {
                                 horizontalOffset: 1
                                 verticalOffset: 1
                                 radius: 8.0
-                                samples: 16
+                                // samples: 16
                                 color: "#80000000"
                                 source: text2
                             }
@@ -355,7 +355,7 @@ ActivityBase {
                                 horizontalOffset: 1
                                 verticalOffset: 1
                                 radius: 8.0
-                                samples: 16
+                                // samples: 16
                                 color: "#80000000"
                                 source: text3
                             }

@@ -9,7 +9,7 @@
  */
 import QtQuick 2.12
 import Box2D 2.0
-import QtGraphicalEffects 1.0
+import Qt5Compat.GraphicalEffects 1.0
 
 import "../../core"
 
@@ -61,7 +61,7 @@ Item {
         visible: false  // note: dropping shadows for the walls is really expensive
                         // in terms of CPU usage!
         radius: 0
-        samples: 16
+        // samples: 16
         color: "#80000000"
         source: itemImage
     }

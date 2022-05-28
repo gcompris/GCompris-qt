@@ -11,7 +11,7 @@
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
-import QtQuick 2.12
+import QtQuick 2.15
 import "../../core"
 import "../../core/core.js" as Core
 import GCompris 1.0
@@ -294,8 +294,7 @@ ActivityBase {
                 font.letterSpacing: ApplicationSettings.fontLetterSpacing
                 cursorVisible: true
                 wrapMode: TextInput.Wrap
-                // TODO Use RegularExpressionValidator when supporting Qt5.14 minimum
-                validator: RegExpValidator { regExp: items.toAlpha ?
+                validator: RegularExpressionValidator { regularExpression: items.toAlpha ?
                                                        /^[a-zA-Z0-9 ]+$/ :
                                                        /[\.\-\x00B7 ]+$/
                                            }

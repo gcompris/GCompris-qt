@@ -5,7 +5,7 @@
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
 import QtQuick 2.12
-import QtGraphicalEffects 1.0
+import Qt5Compat.GraphicalEffects 1.0
 
 import "../../core"
 
@@ -31,7 +31,7 @@ Item {
         horizontalOffset: 1
         verticalOffset: 1
         radius: 3.0
-        samples: 16
+        // samples: 16
         color: "#422a2a2a"
         source: text
     }
