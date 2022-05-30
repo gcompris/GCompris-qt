@@ -106,7 +106,7 @@ Window {
         }
 
         Component.onCompleted: {
-            if(ApplicationInfo.startingActivity != "") {
+            if(ActivityInfoTree.startingActivity != "") {
                 // Don't play welcome intro
                 welcomePlayed = true;
             }
@@ -152,7 +152,7 @@ Window {
         }
 
         Component.onCompleted: {
-            if(ApplicationSettings.isBackgroundMusicEnabled && ApplicationInfo.startingActivity == "") {
+            if(ApplicationSettings.isBackgroundMusicEnabled && ActivityInfoTree.startingActivity == "") {
                 backgroundMusic.append(ApplicationInfo.getAudioFilePath("qrc:/gcompris/src/core/resource/intro.$CA"))
             }
             if(ApplicationSettings.isBackgroundMusicEnabled
