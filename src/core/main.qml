@@ -143,6 +143,9 @@ Window {
 
         function playBackgroundMusic() {
             rccBackgroundMusic = ApplicationInfo.getBackgroundMusicFromRcc()
+            if(filteredBackgroundMusic.length === 0) {
+                filteredBackgroundMusic = rccBackgroundMusic
+            }
 
             for(var i = 0; i < filteredBackgroundMusic.length; i++) {
                 backgroundMusic.append(ApplicationInfo.getAudioFilePath("backgroundMusic/" + filteredBackgroundMusic[i]))
