@@ -96,7 +96,7 @@
     <p xml:lang="az">GCompris 2 yaşından 10 yaşınadək uşaqlar üçün çoxlu sayda çalşmalardan ibarət tədris proqramı paketidir.</p>
     <p xml:lang="br">Un dastumadeg a-feson gant obererezhioù ha c'hoarioù kelennadel evit ar vugale etre 2 ha 10 vloaz eo GCompris.</p>
     <p xml:lang="ca">El GCompris és una suite de programari educatiu d'alta qualitat, que inclou una gran quantitat d'activitats per a nens i nenes entre els 2 i els 10 anys.</p>
-    <p xml:lang="ca-valencia">GCompris és una suite de programari educatiu d'alta qualitat, que inclou una gran cantitat d'activitats per a xiquets i xiquetes entre els 2 i els 10 anys.</p>
+    <p xml:lang="ca-valencia">GCompris és una suite de programari educatiu d'alta qualitat, que inclou una gran quantitat d'activitats per a xiquets i xiquetes entre els 2 i els 10 anys.</p>
     <p xml:lang="cs">GCompris je vysoce kvalitní vzdělávací softwarový balík, skládající se z mnoha aktivit pro děti ve věku 2-10.</p>
     <p xml:lang="de">GCompris ist eine Lernsoftware mit vielen Aktivitäten für Kinder im Alter von 2 bis 10 Jahren.</p>
     <p xml:lang="el">Το GCompris είναι μια σουίτα εκπαιδευτικού λογισμικού με πολυάριθμες δραστηριότητες για παιδιά ηλικίας 2 έως 10 ετών.</p>
@@ -268,7 +268,7 @@
       <li xml:lang="az">hesab: cədvəl yaddaşı, sadalama, əks olunma, tarazlıq, verilmişlərin dəyişdirilməsi, ...</li>
       <li xml:lang="br">Jediñ : deskiñ an taolennoù-jediñ, niveriñ eeun, simetriezh ar skeudenn, kempouezañ ar bouezerez, distreiñ ar moneiz, ...</li>
       <li xml:lang="ca">aritmètica: memoritzar la taula, enumeració, imatge al mirall, equilibrar la balança, donar el canvi...</li>
-      <li xml:lang="ca-valencia">aritmètica: memoritzar la taula, enumeració, imatge a l'espill, equilibrar la balança, donar el canvi...</li>
+      <li xml:lang="ca-valencia">aritmètica: memorisar la taula, enumeració, imatge a l'espill, equilibrar la balança, donar el canvi...</li>
       <li xml:lang="cs">aritmetika: tabulková paměť, výčet, zrcadlový obraz, vyvážení měřítka, dávání drobných, ...</li>
       <li xml:lang="de">Arithmetik: Kombitabellen, Aufzählungen, Bilder spiegeln, Gewichte ausgleichen, Wechselgeld geben...</li>
       <li xml:lang="el">αριθμητική: παιχνίδια memory, απαρίθμηση, κάτοπτρο, ισορροπώ τη ζυγαριά, δίνω ρέστα, ...</li>
@@ -352,7 +352,7 @@
       <li xml:lang="az">oyunlar: yaddaş, 4 qoşulma, "X×O" oyunu, sudoku, Hanoy qülləsi, ...</li>
       <li xml:lang="br">C'hoarioù : memor, pevar a-steud, tri merk a-steud, sudoku, tour Hanoi,…</li>
       <li xml:lang="ca">jocs: memòria, connecta 4, tres en ratlla, sudoku, torre de Hanoi...</li>
-      <li xml:lang="ca-valencia">jocs: memòria, connecta 4, tres en ratlla, sudoku, torre de Hanoi...</li>
+      <li xml:lang="ca-valencia">jocs: memòria, connecta 4, tres en ralla, sudoku, torre de Hanoi...</li>
       <li xml:lang="cs">hry: pexeso, spoj 4, piškvorky, sudoku, hanojská věž, ...</li>
       <li xml:lang="de">Spiele: Memory, Vier gewinnt, Tic-Tac-Toe, Sudoku, Türme von Hanoi,...</li>
       <li xml:lang="el">παιχνίδια: μνήμη, τετράδες, τρίλιζα, σουντόκου, πύργος του Ανόι, ...</li>
