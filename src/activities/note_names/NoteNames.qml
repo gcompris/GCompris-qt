@@ -260,7 +260,7 @@ ActivityBase {
                 rightMargin: 10
             }
             //: The following translation represents percentage.
-            text: qsTr("%1%").arg(parent.value)
+            message: qsTr("%1%").arg(value)
         }
 
         MultipleStaff {
