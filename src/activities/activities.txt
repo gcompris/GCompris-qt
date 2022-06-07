@@ -87,6 +87,7 @@ learn_digits
 learn_quantities
 learn_subtractions
 leftright
+left_right_click
 letter-in-word
 lightsoff
 louis-braille
