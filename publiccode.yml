@@ -2,7 +2,7 @@
 # metadata file that makes public software easily discoverable.
 # More info at https://github.com/italia/publiccode.yml
 
-publiccodeYmlVersion: '0.2'
+publiccodeYmlVersion: '0.3'
 name: GCompris
 url: 'https://invent.kde.org/education/gcompris.git'
 releaseDate: '2022-04-13'
@@ -63,14 +63,13 @@ localisation:
     - ro_RO
     - ru_RU
     - sl_SI
-    - sq_SQ
+    - sq_AL
     - sv_FI
     - tr_TR
     - uk_UA
     - zh_TW
 description:
   en:
-    genericName: Educational software
     shortDescription: |-
       GCompris is a high quality educational software suite, including a large
       number of activities for children aged 2 to 10.
@@ -122,7 +121,6 @@ description:
       - https://cdn.kde.org/gcompris/images/developers_italia_it/programmingMaze.png
 
   it:
-    genericName: Software educativo
     shortDescription: |-
       GCompris è una collezione di giochi didattici di alta qualità che offre
       differenti attività ai bambini dai 2 ai 10 anni.
@@ -175,7 +173,6 @@ description:
       - https://cdn.kde.org/gcompris/images/developers_italia_it/programmingMaze.png
 
   fr:
-    genericName: Logiciel éducatif
     shortDescription: |-
       GCompris est une suite logicielle éducative de grande qualité,
       comprenant un grand nombre d'activités pour les enfants âgés
