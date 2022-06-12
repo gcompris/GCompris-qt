@@ -115,11 +115,11 @@ description:
       - science
       - logic
     screenshots:
-      - screenshots/root.png
-      - screenshots/gletters.png
-      - screenshots/algebra_plus.png
-      - screenshots/clockgame.png
-      - screenshots/programmingMaze.png
+      - https://cdn.kde.org/gcompris/images/developers_italia_it/root.png
+      - https://cdn.kde.org/gcompris/images/developers_italia_it/gletters.png
+      - https://cdn.kde.org/gcompris/images/developers_italia_it/algebra_plus.png
+      - https://cdn.kde.org/gcompris/images/developers_italia_it/clockgame.png
+      - https://cdn.kde.org/gcompris/images/developers_italia_it/programmingMaze.png
 
   it:
     genericName: Software educativo
@@ -168,11 +168,11 @@ description:
       - scienza
       - logica
     screenshots:
-      - screenshots/root.png
-      - screenshots/gletters.png
-      - screenshots/algebra_plus.png
-      - screenshots/clockgame.png
-      - screenshots/programmingMaze.png
+      - https://cdn.kde.org/gcompris/images/developers_italia_it/root.png
+      - https://cdn.kde.org/gcompris/images/developers_italia_it/gletters.png
+      - https://cdn.kde.org/gcompris/images/developers_italia_it/algebra_plus.png
+      - https://cdn.kde.org/gcompris/images/developers_italia_it/clockgame.png
+      - https://cdn.kde.org/gcompris/images/developers_italia_it/programmingMaze.png
 
   fr:
     genericName: Logiciel éducatif
@@ -224,9 +224,9 @@ description:
       - "science"
       - "logique"
     screenshots:
-      - screenshots/root.png
-      - screenshots/gletters.png
-      - screenshots/algebra_plus.png
-      - screenshots/clockgame.png
-      - screenshots/programmingMaze.png
+      - https://cdn.kde.org/gcompris/images/developers_italia_it/root.png
+      - https://cdn.kde.org/gcompris/images/developers_italia_it/gletters.png
+      - https://cdn.kde.org/gcompris/images/developers_italia_it/algebra_plus.png
+      - https://cdn.kde.org/gcompris/images/developers_italia_it/clockgame.png
+      - https://cdn.kde.org/gcompris/images/developers_italia_it/programmingMaze.png
 
