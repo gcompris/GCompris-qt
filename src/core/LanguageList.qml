@@ -70,7 +70,7 @@ QtObject {
             { "text": "Русский", "locale": "ru_RU.UTF-8" },
             //{ "text": "Slovenský", "locale": "sk_SK.UTF-8" },
             { "text": "Slovenski", "locale": "sl_SI.UTF-8" },
-            { "text": "Shqip", "locale": "sq_SQ.UTF-8" },
+            { "text": "Shqip", "locale": "sq_AL.UTF-8" },
             //{ "text": "црногорски jeзик", "locale": "sr_ME.UTF-8" },
             { "text": "Svenska", "locale": "sv_FI.UTF-8" },
             //{ "text": "தமிழ்", "locale": "ta_IN.UTF-8" },
