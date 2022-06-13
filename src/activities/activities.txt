@@ -175,6 +175,7 @@ sudoku
 superbrain
 tangram
 target
+tens_complement
 tic_tac_toe
 tic_tac_toe_2players
 traffic
