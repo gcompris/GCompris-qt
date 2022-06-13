@@ -139,7 +139,7 @@
     <p xml:lang="az">Bəzi çalışmalar oyun şəkilində yaradılmışdır, bununla belə onlar tədris xarakteri daşıyır.</p>
     <p xml:lang="br">Obererezhioù 'zo a zo bet troet da c'hoarioù, chom a reont kelennadel avat.</p>
     <p xml:lang="ca">Algunes de les activitats estan orientades a joc, però sempre són educatives.</p>
-    <p xml:lang="ca-valencia">Algunes de les activitats estan orientades a joc, pero sempre són educatives.</p>
+    <p xml:lang="ca-valencia">Algunes de les activitats estan orientades a joc, però sempre són educatives.</p>
     <p xml:lang="cs">Některé aktivity jsou v podobě her, ale přesto jsou poučné.</p>
     <p xml:lang="de">Einige Aktivitäten sind eher spielerisch, aber immer lehrreich.</p>
     <p xml:lang="el">Ορισμένες από τις δραστηριότητες είναι απλώς παιχνίδια, αλλά οπωσδήποτε με εκπαιδευτικό χαρακτήρα.</p>
@@ -182,7 +182,7 @@
     <p xml:lang="az">Aşağıda, bu kateqoriyada mövcud olan bəzi çalışmaların kateqoriyalarının siyahısını tapa bilərsiniz.</p>
     <p xml:lang="br">Amañ dindan e kaver ur roll eus ar rummadoù gant un toullad eus an oberezhioù kinniget e pep rummad.</p>
     <p xml:lang="ca">A continuació trobareu una llista de les categories amb algunes de les activitats disponibles en cadascuna.</p>
-    <p xml:lang="ca-valencia">A continuació trobareu una llista de les categories amb algunes de les activitats disponibles en cada una.</p>
+    <p xml:lang="ca-valencia">A continuació trobareu una llista de les categories amb algunes de les activitats disponibles en cadascuna.</p>
     <p xml:lang="cs">Níže naleznete seznam kategorií s některými aktivitami k dispozici v této kategorii.</p>
     <p xml:lang="de">Sie können Aktivitäten aus folgenden Bereichen in GCompris finden:</p>
     <p xml:lang="el">Παρακάτω θα βρείτε μια λίστα με κατηγορίες που περιέχουν ορισμένες από το σύνολο των δραστηριοτήτων σε κάθε κατηγορία.</p>
@@ -268,7 +268,7 @@
       <li xml:lang="az">hesab: cədvəl yaddaşı, sadalama, əks olunma, tarazlıq, verilmişlərin dəyişdirilməsi, ...</li>
       <li xml:lang="br">Jediñ : deskiñ an taolennoù-jediñ, niveriñ eeun, simetriezh ar skeudenn, kempouezañ ar bouezerez, distreiñ ar moneiz, ...</li>
       <li xml:lang="ca">aritmètica: memoritzar la taula, enumeració, imatge al mirall, equilibrar la balança, donar el canvi...</li>
-      <li xml:lang="ca-valencia">aritmètica: memorisar la taula, enumeració, image a l'espill, equilibrar la balança, donar el canvi...</li>
+      <li xml:lang="ca-valencia">aritmètica: memoritzar la taula, enumeració, imatge a l'espill, equilibrar la balança, donar el canvi...</li>
       <li xml:lang="cs">aritmetika: tabulková paměť, výčet, zrcadlový obraz, vyvážení měřítka, dávání drobných, ...</li>
       <li xml:lang="de">Arithmetik: Kombitabellen, Aufzählungen, Bilder spiegeln, Gewichte ausgleichen, Wechselgeld geben...</li>
       <li xml:lang="el">αριθμητική: παιχνίδια memory, απαρίθμηση, κάτοπτρο, ισορροπώ τη ζυγαριά, δίνω ρέστα, ...</li>
@@ -352,7 +352,7 @@
       <li xml:lang="az">oyunlar: yaddaş, 4 qoşulma, "X×O" oyunu, sudoku, Hanoy qülləsi, ...</li>
       <li xml:lang="br">C'hoarioù : memor, pevar a-steud, tri merk a-steud, sudoku, tour Hanoi,…</li>
       <li xml:lang="ca">jocs: memòria, connecta 4, tres en ratlla, sudoku, torre de Hanoi...</li>
-      <li xml:lang="ca-valencia">jocs: memòria, connecta 4, tres en ralla, sudoku, torre de Hanoi...</li>
+      <li xml:lang="ca-valencia">jocs: memòria, connecta 4, tres en ratlla, sudoku, torre de Hanoi...</li>
       <li xml:lang="cs">hry: pexeso, spoj 4, piškvorky, sudoku, hanojská věž, ...</li>
       <li xml:lang="de">Spiele: Memory, Vier gewinnt, Tic-Tac-Toe, Sudoku, Türme von Hanoi,...</li>
       <li xml:lang="el">παιχνίδια: μνήμη, τετράδες, τρίλιζα, σουντόκου, πύργος του Ανόι, ...</li>
@@ -437,7 +437,7 @@
       <li xml:lang="az">digər: saatdakı vaxtı demək, Brayla əlifbası, labirint, musiqi alətləri, ...</li>
       <li xml:lang="br">A bep seurt : deskiñ reiñ an eur, meizad Braille, milendall, benvegoù sonerezh, ...</li>
       <li xml:lang="ca">altres: aprendre a dir l'hora, el sistema braille, laberints, instruments musicals...</li>
-      <li xml:lang="ca-valencia">atres: aprendre a dir l'hora, el sistema braille, laberints, instruments musicals...</li>
+      <li xml:lang="ca-valencia">altres: aprendre a dir l'hora, el sistema braille, laberints, instruments musicals...</li>
       <li xml:lang="cs">ostatní: nauč se čas, Braillovo písmo, bludiště, hudební nástroje, ...</li>
       <li xml:lang="de">Sonstiges: Uhrzeit, Braille-System, Labyrinthe, Musikinstrumente ...</li>
       <li xml:lang="el">άλλα: μαθαίνω να λέω την ώρα, το σύστημα μπράιγ, λαβύρινθος, μουσικά όργανα, ...</li>
