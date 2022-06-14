@@ -483,7 +483,7 @@
     <p xml:lang="az">Hazırda GCompris 100-dən çox çalışma təklif edir və daha çox çalışmalar tərtib olunma mərhələsindədir. GCompris pulsuz proqramdır, yəni siz onu öz ehtiyaclarınıza uyğunlaşdıra, təkmilləşdirə və ən əsası onu hər yerdə uşaqlarla paylaşa bilərsiniz.</p>
     <p xml:lang="br">Evit ar poent e kinnig GCompris muioc'h eget 100 oberezh ha reoù all a zo war ar stern. Ur meziant digor eo GCompris, ar pezh a sinifi e c'heller azasaat anezhañ diouzh ezhommoù-mañ-ezhommoù, gwellaat anezhañ ha, pouezusosc'h c'hoazh, lakaat bugale d'ober gantañ ne vern pelec'h.</p>
     <p xml:lang="ca">Actualment el GCompris ofereix més de 100 activitats i encara se'n desenvolupen més. El GCompris és programari lliure, el qual vol dir que podeu adaptar-lo a les vostres pròpies necessitats, millorar-lo i, el més important, compartir-lo amb infants de tot arreu.</p>
-    <p xml:lang="ca-valencia">Actualment GCompris ofereix més de 100 activitats i encara se'n desenvolupen més. GCompris és programari lliure, el qual vol dir que podeu adaptar-lo a les vostres pròpies necessitats, millorar-lo i, el més important, compartir-lo amb infants de tot arreu.</p>
+    <p xml:lang="ca-valencia">Actualment GCompris oferix més de 100 activitats i encara se'n desenvolupen més. GCompris és programari lliure, el qual vol dir que podeu adaptar-lo a les vostres pròpies necessitats, millorar-lo i, el més important, compartir-lo amb infants de tot arreu.</p>
     <p xml:lang="cs">V současné době GCompris nabízí více než 100 aktivit a další se připravují. GCompris je svobodný software, což znamená, že můžeš přizpůsobit svým vlastním potřebám, zlepšit a co je nejdůležitější, je sdílet s dětmi po celém světě.</p>
     <p xml:lang="de">Insgesamt beinhaltet GCompris mehr als 100 Aktivitäten und wird ständig weiterentwickelt. GCompris ist freie Software. Sie haben also die Möglichkeit, sie ihren Bedürfnissen anzupassen und zu verbessern, und gerne auch alle Kinder der Welt von Ihrer Arbeit profitieren zu lassen.</p>
     <p xml:lang="el">Προς το παρόν το GCompris προσφέρει περισσότερες από 100 δραστηριότητες και αναπτύσσονται και άλλες. Το GCompris είναι ελεύθερο λογισμικό, το οποίο σημαίνει ότι μπορείτε να το προσαρμόσετε στις ανάγκες σας, να το βελτιώσετε, και, το σπουδαιότερο, να το μοιραστείτε με παιδιά από όλον τον κόσμο.</p>
@@ -749,7 +749,7 @@
       <caption xml:lang="az">"Oxşar modeli qurun" çalışması</caption>
       <caption xml:lang="br">Obererezh "Krou ar memes skouer"</caption>
       <caption xml:lang="ca">Activitat «Construeix el mateix model»</caption>
-      <caption xml:lang="ca-valencia">Activitat «Construeix el mateix model»</caption>
+      <caption xml:lang="ca-valencia">Activitat «Construïx el mateix model»</caption>
       <caption xml:lang="cs">Aktivita "Postav stejný model"</caption>
       <caption xml:lang="de">Aktivität „Baue das gleiche Modell“</caption>
       <caption xml:lang="el">Δραστηριότητα "Φτιάξε το ίδιο"</caption>
