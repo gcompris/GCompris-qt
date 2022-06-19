@@ -85,7 +85,7 @@ endif()
 
 set(used_qt_modules Qt5::Qml Qt5::Quick Qt5::Gui Qt5::Multimedia Qt5::Core Qt5::Svg Qt5::Sensors Qt5::QuickControls2 Qt5::QuickTemplates2)
 
-if(Qt5Widgets_VERSION VERSION_GREATER_EQUAL "5.15.0") 
+if(Qt5Widgets_VERSION VERSION_GREATER_EQUAL "5.15.0")
   set(used_qt_modules ${used_qt_modules} Qt5::QmlWorkerScript Qt5::QuickParticles)
 endif()
 
@@ -179,6 +179,12 @@ if(BUILD_STANDALONE)
       QtQuick/Controls.2/${_lib_prefix}qtquickcontrols2plugin
       QtQuick/Templates.2/${_lib_prefix}qtquicktemplates2plugin
       QtQuick/Layouts/${_lib_prefix}qquicklayoutsplugin)
+  endif()
+
+  # For Qt5, we use Qt.labs for Calendar
+  if(Qt5Widgets_VERSION VERSION_LESS "6.0")
+    list(APPEND _qml_plugins
+      Qt/labs/calendar/${_lib_prefix}qtlabscalendarplugin)
   endif()
 
   # Only explicit these dll for Windows to be sure we don't ship the debug dll in the package. Other platforms don't have this issue.

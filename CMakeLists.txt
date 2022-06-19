@@ -413,8 +413,11 @@ endif()
 # qml-box2d
 include(cmake/box2d.cmake)
 
-# qtquick-calendar
-include(cmake/qtquickcalendar.cmake)
+# qtquick-calendar only for Qt6.0 -> 6.2
+if(Qt5Widgets_VERSION VERSION_GREATER_EQUAL "6.0" AND Qt5Widgets_VERSION VERSION_LESS "6.3.0")
+  set(ANDROID_QT_QUICK_CALENDAR_EXTRA_PLUGIN_PATH ",${CMAKE_BINARY_DIR}/lib/qml/QtQuick")
+  include(cmake/qtquickcalendar.cmake)
+endif()
 
 add_subdirectory(src)
 

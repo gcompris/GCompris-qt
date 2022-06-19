@@ -11,7 +11,7 @@
 import QtQuick 2.12
 import QtQuick.Controls 2.12
 import QtQuick.Layouts 1.12
-import QtQuick.Calendar 1.0
+@CALENDAR_IMPORT@
 import GCompris 1.0
 
 import "calendar.js" as Activity
@@ -244,7 +244,6 @@ ActivityBase {
                 month: parent.currentDate.getMonth()
                 year: parent.currentDate.getFullYear()
                 spacing: 0
-                title: parent.currentDate.toLocaleString(locale, "MMMM yyyy") // should be automatically translated but is not
 
                 readonly property int gridLineThickness: 1
 
