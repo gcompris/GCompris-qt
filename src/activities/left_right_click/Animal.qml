@@ -1,6 +1,7 @@
 /* GCompris - Animal.qml
  *
  * SPDX-FileCopyrightText: 2022 Samarth Raj <mailforsamarth@gmail.com>
+ * SPDX-FileCopyrightText: 2022 Timothée Giet <animtim@gmail.com>
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 import QtQuick 2.12
@@ -18,19 +19,18 @@ Item {
         anchors.verticalCenter: parent.verticalCenter
         width: parent.width * 0.8
         height: parent.height * 0.8
-        color: "white"
-        opacity: 0.9
-        border.color: "black"
-        property color initialBorderColor: border.color
+        color: "transparent"
+        border.color: "transparent"
         border.width: 5
         radius: 10
         Image {
             width: parent.width * 0.9
             height: parent.height * 0.9
+            sourceSize.width: width
+            source: imageSource
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.verticalCenter: parent.verticalCenter
-            source: imageSource
-            fillMode: Image.Stretch
+            fillMode: Image.PreserveAspectFit
         }
         PropertyAnimation {
             id: disappearAnimal
@@ -43,7 +43,7 @@ Item {
             id: borderHighlight
             target: animalRect
             property: 'border.color'
-            to: "yellow"
+            to: "#F2F2F2"
             duration: 0
         }
         MouseArea {
@@ -78,12 +78,10 @@ Item {
 
             hoverEnabled: true
             onEntered: {
-                animal.opacity = 1
-                animalRect.border.color = "yellow"
+                animalRect.border.color = "#F2F2F2"
             }
             onExited: {
-                animal.opacity = 0.9
-                animalRect.border.color = "initialBorderColor"
+                animalRect.border.color = "transparent"
             }
         }
     }

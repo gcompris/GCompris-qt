@@ -15,7 +15,7 @@ var animalCountForBonus = 0;
 var cardsToDisplay;
 var imgSrc = [
     "qrc:/gcompris/src/activities/explore_farm_animals/resource/animals/horse.svg",
-    "qrc:/gcompris/src/activities/memory/resource/13_monkey.svg"
+    "qrc:/gcompris/src/activities/left_right_click/resource/monkey.svg"
 ]
 var Position = {
     left: 0,

@@ -1,6 +1,7 @@
 /* GCompris - Left_right_click.qml
  *
  * SPDX-FileCopyrightText: 2022 Samarth Raj <mailforsamarth@gmail.com>
+ * SPDX-FileCopyrightText: 2022 Timothée Giet <animtim@gmail.com>
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 import QtQuick 2.12
@@ -18,10 +19,12 @@ ActivityBase {
     onStart: focus = true
     onStop: {}
 
-    pageComponent: Rectangle {
+    pageComponent: Image {
         id: background
         anchors.fill: parent
-        color: "#ABCDEF"
+        source: "qrc:/gcompris/src/activities/canal_lock/resource/sky.svg"
+        sourceSize.height: height
+        sourceSize.width: width
         signal start
         signal stop
 
@@ -54,6 +57,16 @@ ActivityBase {
         onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
 
+        Image {
+            id: hillArea
+            source: "qrc:/gcompris/src/activities/left_right_click/resource/hill.svg"
+            width: background.width
+            height: background.height - leftAreaTarget.height * 0.5
+            anchors.bottom: background.bottom
+            sourceSize.width: width
+            sourceSize.height: height
+        }
+
         Item {
             id: layoutArea
             anchors.top: parent.top
@@ -67,38 +80,34 @@ ActivityBase {
             id: leftAreaTarget
             parent: layoutArea
             width: layoutArea.width * 0.3
-            height: sourceSize.height
-            sourceSize.height: layoutArea.height * 0.5
+            height: layoutArea.height * 0.5
+            sourceSize.height: Math.min(width, height)
             anchors.left: layoutArea.left
             fillMode: Image.PreserveAspectFit
-            source: "qrc:/gcompris/src/activities/left_right_click/resource/redbarn.png"
+            source: "qrc:/gcompris/src/activities/left_right_click/resource/barn.svg"
         }
 
         Image {
             id: rightAreaTarget
             parent: layoutArea
-            width: layoutArea.width * 0.3
-            height: sourceSize.height
-            sourceSize.height: layoutArea.height * 0.5
+            width: leftAreaTarget.width
+            height: leftAreaTarget.height
+            sourceSize.height: leftAreaTarget.sourceSize.height
             anchors.right: layoutArea.right
             fillMode: Image.PreserveAspectFit
-            source: "qrc:/gcompris/src/activities/babymatch/resource/images/tree.svg"
+            source: "qrc:/gcompris/src/activities/left_right_click/resource/tree.svg"
         }
 
         ListModel {
             id: animalListModel
         }
 
-        Rectangle {
+        Item {
             id: animalCardsArea
             parent: layoutArea
             width: layoutArea.width
-            height: layoutArea.height * 0.5
+            height: leftAreaTarget.height
             anchors.top: leftAreaTarget.bottom
-            color: "pink"
-            border.color: "black"
-            border.width: 2
-            radius: 5
             property double animalCardSize: Core.fitItems(animalCardsArea.width,animalCardsArea.height,items.animalCount)
 
             GridView {
@@ -116,53 +125,39 @@ ActivityBase {
             }
         }
 
-        Rectangle {
+        Item {
             id: mouseDisplayContainer
             parent: layoutArea
             anchors.top: layoutArea.top
             anchors.bottom: animalCardsArea.top
             anchors.left: leftAreaTarget.right
             anchors.right: rightAreaTarget.left
-            color: "transparent"
 
-            Rectangle {
+            Image {
                 id: displayMouse
-                width: 2 * height / 3
-                height: layoutArea.height * 0.45
+                source: "qrc:/gcompris/src/activities/left_right_click/resource/mouse.svg"
+                width: Math.min(parent.width, parent.height)
+                height: width
+                sourceSize.width: width
                 anchors.centerIn: parent
-                color: "white"
-                border.width: 2
-                border.color: "black"
-                radius: 30
+                fillMode: Image.PreserveAspectFit
 
                 MouseButton {
                     id: leftClickDisplayMouse
-                    height: displayMouse.height * 0.3
-                    width: displayMouse.width * 0.5
                 }
 
                 MouseButton {
                     id: rightClickDisplayMouse
-                    height: displayMouse.height * 0.3
-                    width: displayMouse.width * 0.5
-                    anchors.right: parent.right
-                }
-
-                Rectangle {
-                    id: lowerMouseArea
-                    width: parent.width
-                    height: parent.height - rightClickDisplayMouse.height
-                    anchors.bottom: parent.bottom
-                    color: "white"
-                    border.width: 2
-                    border.color: "black"
-                    radius: 30
+                    isRightButton: true
                 }
 
                 Image {
                     id: cross
-                    anchors.fill: lowerMouseArea
-                    sourceSize.height: lowerMouseArea.height
+                    height: parent.width * 0.5
+                    width: height
+                    sourceSize.height: height
+                    anchors.horizontalCenter: parent.horizontalCenter
+                    anchors.bottom: parent.bottom
                     source: "qrc:/gcompris/src/core/resource/cancel.svg"
                     visible: false // only visible when a wrong click is pressed
                 }
