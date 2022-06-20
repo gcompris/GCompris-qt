@@ -1,6 +1,7 @@
 /* GCompris - left_right_click.js
  *
  * SPDX-FileCopyrightText: 2022 Samarth Raj <mailforsamarth@gmail.com>
+ * SPDX-FileCopyrightText: 2022 Timothée Giet <animtim@gmail.com>
  * SPDX-License-Identifier: GPL-3.0-or-later
  *
  */
@@ -13,6 +14,8 @@ var currentLevel = 0;
 var numberOfLevel = 3;
 var animalCountForBonus = 0;
 var cardsToDisplay;
+// different number of cards to display per level
+var levelDifficulty = [5, 7, 10]
 var imgSrc = [
     "qrc:/gcompris/src/activities/explore_farm_animals/resource/animals/horse.svg",
     "qrc:/gcompris/src/activities/left_right_click/resource/monkey.svg"
@@ -34,8 +37,7 @@ function initLevel() {
     items.bar.level = currentLevel + 1;
     items.animalListModel.clear();
     var animalArray = new Array();
-    // only at level 3 we have 10 cards and for the other levels 2 cards.
-    cardsToDisplay = items.bar.level === 3 ? 10 : 5;
+    cardsToDisplay = levelDifficulty[items.bar.level - 1];
     items.animalCount = (cardsToDisplay / 2) * 3;
     var animalCardLeft = {
         "animalIdentifier": Position.left,
