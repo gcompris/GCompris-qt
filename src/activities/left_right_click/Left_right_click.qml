@@ -115,6 +115,7 @@ ActivityBase {
                 height: parent.height
                 width: parent.width
                 anchors.centerIn: parent
+                interactive: false
                 cellHeight: animalCardsArea.animalCardSize
                 cellWidth: animalCardsArea.animalCardSize
                 model: animalListModel
