@@ -13,6 +13,8 @@ Item {
     id: animal
     z: 10
     visible: !animalInvisible ? true : false
+    property bool clicked: false
+
     Rectangle {
         id: animalRect
         anchors.horizontalCenter: parent.horizontalCenter
@@ -50,15 +52,17 @@ Item {
             id: mouseArea
             anchors.fill: parent
             acceptedButtons: Qt.LeftButton | Qt.RightButton
-
+            enabled: !animal.clicked
             onClicked: {
                 // if left target animal is clicked with left click
                 if((mouse.button === Qt.LeftButton) && (animalIdentifier === Activity.Position.left)) {
+                    animal.clicked = true
                     animal.state = "toLeftTarget"
                     Activity.incrementCounter()
                     disappearAnimal.running = true
                 }
                 else if((mouse.button === Qt.RightButton) && (animalIdentifier === Activity.Position.right)) {
+                    animal.clicked = true
                     animal.state = "toRightTarget"
                     Activity.incrementCounter()
                     disappearAnimal.running = true
@@ -76,7 +80,7 @@ Item {
                     rightClickTrigger()
             }
 
-            hoverEnabled: true
+            hoverEnabled: enabled
             onEntered: {
                 animalRect.border.color = "#F2F2F2"
             }
