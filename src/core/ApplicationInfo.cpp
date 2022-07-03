@@ -37,7 +37,7 @@ ApplicationInfo::ApplicationInfo(QObject *parent) :
     QObject(parent)
 {
 
-#if defined(Q_OS_ANDROID) || defined(Q_OS_IOS) || defined(Q_OS_BLACKBERRY) || defined(SAILFISHOS) || defined(UBUNTUTOUCH)
+#if defined(Q_OS_ANDROID) || defined(Q_OS_IOS) || defined(Q_OS_BLACKBERRY) || defined(UBUNTUTOUCH)
     m_isMobile = true;
 #else
     m_isMobile = false;
@@ -58,8 +58,6 @@ ApplicationInfo::ApplicationInfo(QObject *parent) :
     m_platform = Ios;
 #elif defined(Q_OS_BLACKBERRY)
     m_platform = Blackberry;
-#elif defined(SAILFISHOS)
-    m_platform = SailfishOS;
 #else // default is Linux
     m_platform = Linux;
 #endif

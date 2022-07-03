@@ -159,7 +159,6 @@ public:
         Android, /**< Android */
         Ios, /**< IOS (not supported) */
         Blackberry, /**< Blackberry (not supported) */
-        SailfishOS, /**< SailfishOS */
         UbuntuTouchOS /**< UbuntuTouch OS */
     };
 

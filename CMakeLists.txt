@@ -78,8 +78,6 @@ endif()
 # Set executable filename
 if(ANDROID)
   set(GCOMPRIS_EXECUTABLE_NAME GCompris)
-elseif(SAILFISHOS)
-  set(GCOMPRIS_EXECUTABLE_NAME harbour-gcompris-qt)
 elseif(WIN32)
   set(GCOMPRIS_EXECUTABLE_NAME GCompris)
 else()
@@ -110,16 +108,12 @@ if(ANDROID)
     find_package(Qt5 ${QT_REQUIRED_VERSION} REQUIRED AndroidExtras)
 endif()
 
-if(SAILFISHOS)
-    find_package(Qt5 ${QT_REQUIRED_VERSION} REQUIRED Widgets)
-endif()
-
 ## For now we workaround CMAKE_ANDROID_NDK_TOOLCHAIN_VERSION to clang with a command variable, so not needed
 # if(ANDROID AND ECM_VERSION VERSION_LESS "5.56.0" AND Qt5Core_VERSION VERSION_GREATER "5.11.99")
 #   message(FATAL_ERROR "ECM ${ECM_VERSION} not compatible with Qt ${Qt5Core_VERSION} version for android.")
 # endif()
 
-if((UNIX AND NOT APPLE AND NOT SAILFISHOS AND NOT ANDROID) OR WIN32)
+if((UNIX AND NOT APPLE AND NOT ANDROID) OR WIN32)
     find_package(OpenSSL REQUIRED)
 endif()
 
@@ -420,11 +414,6 @@ if(Qt5Widgets_VERSION VERSION_GREATER_EQUAL "6.0" AND Qt5Widgets_VERSION VERSION
 endif()
 
 add_subdirectory(src)
-
-if(SAILFISHOS)
-  # Need to be done at the end, after src
-  add_subdirectory(platforms/sailfishOS)
-endif()
 
 if (UBUNTU_TOUCH)
     add_subdirectory(platforms/ubuntutouch)

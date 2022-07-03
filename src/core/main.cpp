@@ -306,14 +306,8 @@ int main(int argc, char *argv[])
     QObject::connect(&engine, &QQmlApplicationEngine::quit, DownloadManager::getInstance(),
                      &DownloadManager::shutdown);
     // add import path for shipped qml modules:
-#ifdef SAILFISHOS
-    engine.addImportPath(QStringLiteral("%1/../share/%2/lib/qml")
-                             .arg(QCoreApplication::applicationDirPath())
-                             .arg(GCOMPRIS_APPLICATION_NAME));
-#else
     engine.addImportPath(QStringLiteral("%1/../lib/qml")
                              .arg(QCoreApplication::applicationDirPath()));
-#endif
 
 #if __ANDROID__ && QT_VERSION >= QT_VERSION_CHECK(5, 14, 0)
     // Find box2d

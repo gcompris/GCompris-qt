@@ -11,10 +11,6 @@ if(WITH_KIOSK_MODE)
   add_definitions(-DWITH_KIOSK_MODE)
 endif()
 
-if(SAILFISHOS)
-  add_definitions(-DSAILFISHOS)
-endif()
-
 if (UBUNTU_TOUCH)
   add_definitions(-DUBUNTUTOUCH)
 endif()
@@ -96,9 +92,6 @@ elseif(CMAKE_HOST_APPLE)
   add_executable(${GCOMPRIS_EXECUTABLE_NAME} MACOSX_BUNDLE ${gcompris_SRCS} ${gcompris_RES})
 elseif(CMAKE_HOST_WIN32)
   add_executable(${GCOMPRIS_EXECUTABLE_NAME} WIN32 ${gcompris_SRCS} ${gcompris_RES})
-elseif(SAILFISHOS)
-  add_executable(${GCOMPRIS_EXECUTABLE_NAME} ${gcompris_SRCS} ${gcompris_RES})
-  set(used_qt_modules ${used_qt_modules} Qt5::Widgets)
 else()
   add_executable(${GCOMPRIS_EXECUTABLE_NAME} ${gcompris_SRCS} ${gcompris_RES})
 endif()
@@ -151,7 +144,7 @@ if(BUILD_STANDALONE)
   endif()
 
   set(_qt_plugins2 "")
-  if(UNIX AND NOT ANDROID AND NOT APPLE AND NOT SAILFISHOS AND NOT UBUNTUTOUCH)
+  if(UNIX AND NOT ANDROID AND NOT APPLE AND NOT UBUNTUTOUCH)
     list(APPEND _qt_plugins2 mediaservice/${_lib_prefix}gstaudiodecoder
       mediaservice/${_lib_prefix}gstcamerabin
       mediaservice/${_lib_prefix}gstmediacapture
@@ -174,7 +167,7 @@ if(BUILD_STANDALONE)
     QtSensors/${_lib_prefix}declarative_sensors)
 
   # TODO Double check for ubuntutouch, we may need qtquickcontrols2/templates2!
-  if(NOT SAILFISHOS AND NOT UBUNTUTOUCH)
+  if(NOT UBUNTUTOUCH)
     list(APPEND _qml_plugins
       QtQuick/Controls.2/${_lib_prefix}qtquickcontrols2plugin
       QtQuick/Templates.2/${_lib_prefix}qtquicktemplates2plugin
@@ -256,7 +249,7 @@ if(BUILD_STANDALONE)
   #install(DIRECTORY ${_qt_qml_path}/QtGraphicalEffects DESTINATION ${_qt_qml_destdir})
 
   # Fix for Linux 'make package' that fails to link with libicu; also package OpenSSL libs from system
-  if(UNIX AND NOT APPLE AND NOT SAILFISHOS AND NOT ANDROID)
+  if(UNIX AND NOT APPLE AND NOT ANDROID)
     add_library( libicudata SHARED IMPORTED )
     file(GLOB LIBICUDATA_SO "${Qt5_DIR}/../../libicudata.so.[0-9][0-9]")
     if("${LIBICUDATA_SO}" STREQUAL "")
@@ -317,7 +310,7 @@ if(BUILD_STANDALONE AND NOT ANDROID)
   install(SCRIPT ${CMAKE_CURRENT_BINARY_DIR}/FixBundle.cmake)
 
   # install a startup script for linux bundle
-  if(UNIX AND NOT APPLE AND NOT SAILFISHOS AND NOT UBUNTUTOUCH)
+  if(UNIX AND NOT APPLE AND NOT UBUNTUTOUCH)
     install(PROGRAMS ../../tools/gcompris-qt.sh DESTINATION bin)
   endif()
 endif()
@@ -387,23 +380,6 @@ if(APPLE)
   set(CPACK_DMG_BACKGROUND_IMAGE "${GCOMPRIS_RESOURCES}/dmg_background.png")
 elseif(WIN32)
   set(CPACK_GENERATOR "NSIS")
-elseif(SAILFISHOS)
-  configure_file(${PROJECT_SOURCE_DIR}/platforms/sailfishOS/harbour-gcompris-qt.spec.cmake ${CMAKE_BINARY_DIR}/harbour-gcompris-qt.spec @ONLY)
-
-  install(FILES ${PROJECT_SOURCE_DIR}/platforms/sailfishOS/harbour-gcompris-qt.desktop DESTINATION share/applications)
-  install(FILES ${PROJECT_SOURCE_DIR}/platforms/sailfishOS/harbour-gcompris-qt.png DESTINATION share/icons/hicolor/86x86/apps)
-  set(CPACK_RPM_PACKAGE_SUMMARY "gcompris-qt")
-  # BUILD_ARCH is either armv7hl or i486
-  set(CPACK_RPM_PACKAGE_ARCHITECTURE "${BUILD_ARCH}")
-  set(CPACK_RPM_PACKAGE_NAME "${GCOMPRIS_EXECUTABLE_NAME}")
-  set(CPACK_RPM_PACKAGE_VERSION "${GCOMPRIS_VERSION}")
-  set(CPACK_RPM_PACKAGE_LICENSE "GNU Affero General Public License v3.0")
-  set(CPACK_RPM_PACKAGE_URL "https://www.gcompris.org")
-  set(CPACK_RPM_PACKAGE_DESCRIPTION "GCompris is a high quality educational software suite comprising of numerous activities for children aged 2 to 10.")
-  set(CPACK_RPM_USER_BINARY_SPECFILE "${CMAKE_BINARY_DIR}/harbour-gcompris-qt.spec")
-  set(CMAKE_INSTALL_PREFIX "/usr")
-  set(CPACK_PACKAGING_INSTALL_PREFIX "/usr")
-  set(CPACK_GENERATOR "RPM")
 else()
   set(CPACK_GENERATOR "STGZ")
 endif()
