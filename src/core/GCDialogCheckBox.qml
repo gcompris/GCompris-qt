@@ -50,6 +50,6 @@ CheckBox {
         fontSize: labelTextFontSize
         text: checkBox.text
         wrapMode: Text.WordWrap
-        width: parent.width - 50 * ApplicationInfo.ratio - 10 * 2
+        width: parent.width - indicatorImageHeight - 10 * 2
     }
 }

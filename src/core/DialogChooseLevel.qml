@@ -301,7 +301,7 @@ Rectangle {
                             }
                             GCDialogCheckBox {
                                 id: objective
-                                width: dialogChooseLevel.width - 30 - difficultyIcon.width - 2 * flick.anchors.margins
+                                width: datasetOptionsRow.width - difficultyIcon.width - 2 * flick.anchors.margins - indicatorImageHeight
                                 text: modelData.objective
                                 checked: chosenLevels.indexOf(modelData.level) != -1
                                 onVisibleChanged: {
