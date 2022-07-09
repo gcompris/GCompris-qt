@@ -74,6 +74,9 @@ echo $activity >> activities.txt.tmp
 # Save the comments
 grep "^#" activities.txt > activities.txt.tmp.comment
 
+# The output of sort depends on the locale so we set C by default
+LC_ALL=C
+
 # Concat both to form the new list
 mv activities.txt.tmp.comment activities.txt
 sort -u activities.txt.tmp >> activities.txt
