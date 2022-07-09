@@ -11,8 +11,8 @@ align4-2players
 alphabet-sequence
 analog_electricity
 baby_keyboard
-baby_mouse
 babymatch
+baby_mouse
 babyshapes
 baby_tangram
 baby_wordprocessor
@@ -69,6 +69,7 @@ gnumch-multiples
 gnumch-primes
 graph-coloring
 gravity
+guess24
 guesscount
 guessnumber
 hangman
