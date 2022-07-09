@@ -11,7 +11,7 @@
 import QtQuick 2.9
 
 import "../../core"
-import "guesscount.js" as Activity
+import "guess24.js" as Activity
 
 DropArea {
     id: dragTarget
