@@ -18,6 +18,9 @@ public:
     explicit DatabaseController(QObject *parent = nullptr);
     ~DatabaseController();
 
+    Q_INVOKABLE bool createTeacher(const QString &login, const QString &password);
+    Q_INVOKABLE bool checkTeacher(const QString &login, const QString &password);
+
     void retrieveAllExistingGroups(QList<GroupData *> &allGroups);
     int addGroup(const QString &groupName, const QString &description = QString(), const QStringList &users = QStringList());
     int updateGroup(const GroupData &oldGroup, const QString &newGroupName);
