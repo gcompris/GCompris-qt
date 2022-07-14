@@ -14,6 +14,9 @@ public:
         QObject(parent) { }
 
 signals:
+    void teacherConnected();
+    void teacherDisconnected();
+
     void goManagePupilsView();
     void goFollowResultsView();
     void goDashboardView();

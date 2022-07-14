@@ -16,6 +16,8 @@
 #include "Database.h"
 #include "MessageHandler.h"*/
 
+#include <QtCrypto>
+
 #include "GComprisPlugin.h"
 #include "ApplicationInfo.h"
 #include "ApplicationSettings.h"
@@ -49,6 +51,9 @@ int main(int argc, char *argv[])
     app.setApplicationName(GCOMPRIS_SERVER_APPLICATION_NAME);
     app.setOrganizationDomain("kde.org");
 
+    // Initialise QCA
+    QCA::Initializer init;
+ 
 #if defined(Q_OS_MAC)
     // Sandboxing on MacOSX as documented in:
     // http://doc.qt.io/qt-5/osx-deployment.html
