@@ -17,29 +17,6 @@ Row {
     property alias repeater: repeater
     property int rowSum
     spacing: 20
-    Rectangle {
-        id: operands
-        width: parent.width*0.328
-        height: parent.height
-        radius: 10
-        color: "black"  //green
-        Rectangle {
-            id: insideFill
-            width: parent.width - anchors.margins
-            height: parent.height - anchors.margins
-            anchors.verticalCenter: parent.verticalCenter
-            anchors.horizontalCenter: parent.horizontalCenter
-            anchors.margins: parent.height/4
-            radius: 80
-            color: "blue" //paper white
-        }
-        GCText {
-            anchors.horizontalCenter: parent.horizontalCenter
-            anchors.verticalCenter: parent.verticalCenter
-            fontSize: mediumSize
-            text: qsTr("Numbers")
-        }
-    }
     Repeater {
         id: repeater
         delegate: DragTile {
