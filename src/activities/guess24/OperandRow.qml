@@ -22,7 +22,7 @@ Row {
         width: parent.width*0.328
         height: parent.height
         radius: 10
-        color: "#75D21B"  //green
+        color: "black"  //green
         Rectangle {
             id: insideFill
             width: parent.width - anchors.margins
@@ -30,8 +30,8 @@ Row {
             anchors.verticalCenter: parent.verticalCenter
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.margins: parent.height/4
-            radius: 10
-            color: "#E8E8E8" //paper white
+            radius: 80
+            color: "blue" //paper white
         }
         GCText {
             anchors.horizontalCenter: parent.horizontalCenter

@@ -73,7 +73,7 @@ ActivityBase {
 
         JsonParser {
             id: parser
-            onError: console.error("Guess24: Error parsing JSON: " + msg);
+            onError: console.error("Guesscount: Error parsing JSON: " + msg);
         }
 
         Loader {
@@ -175,14 +175,14 @@ ActivityBase {
             anchors.leftMargin: 5
             width: parent.width
             height: parent.height-top.height-background.height/5
-            OperatorRow {
+          /*  OperatorRow {
                 id: operatorRow
                 width: parent.width
                 height: parent.height/7
                 mode: items.mode
                 operators: items.levelArr
                 level: items.currentlevel
-            }
+            }*/
             OperandRow {
                 id: operandRow
                 width: parent.width
