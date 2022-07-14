@@ -8,90 +8,177 @@
 #include <QSqlQuery>
 #include <QSqlError>
 #include <QSqlRecord>
+
+#include <QtCrypto>
+
 #include "models/GroupData.h"
 #include "models/UserData.h"
 
-#define CREATE_TABLE_USERS \
+#define CREATE_TABLE_USERS                                              \
     "CREATE TABLE IF NOT EXISTS users (user_name TEXT PRIMARY KEY NOT NULL, dateOfBirth TEXT, password TEXT); "
-#define CREATE_TABLE_GROUPS \
+#define CREATE_TABLE_GROUPS                                             \
     "CREATE TABLE IF NOT EXISTS groups (group_name TEXT PRIMARY KEY NOT NULL, description TEXT); "
-#define CREATE_TABLE_USERGROUP \
+#define CREATE_TABLE_USERGROUP                                          \
     "CREATE TABLE IF NOT EXISTS group_users(user_id INT NOT NULL, group_id INT NOT NULL, PRIMARY KEY (user_id, group_id));"
-#define CREATE_TABLE_ACTIVITY_DATA                                                                    \
+#define CREATE_TABLE_ACTIVITY_DATA                                      \
     "CREATE TABLE IF NOT EXISTS activity_data(user_id INT NOT NULL, activity_name TEXT NOT NULL, " \
     "date BIGINT NOT NULL,data TEXT NOT NULL,PRIMARY KEY(user_id,activity_name,date))"
+#define CREATE_TABLE_TEACHERS                                              \
+    "CREATE TABLE IF NOT EXISTS teachers (login TEXT PRIMARY KEY NOT NULL, password TEXT); "
+
+
+static const char *AES_ALGORITHM = "aes128";
+static const char *AES_ENCRYPTION = "aes128-cbc-pkcs7";
+static const char *INITIALIZATION_VECTOR = "gcomprisInitialisationVector";
 
 namespace controllers {
 
-class DatabaseController::Implementation
-{
-public:
-    Implementation(DatabaseController *_databaseController) :
-        databaseController(_databaseController)
+    class DatabaseController::Implementation
     {
-        if (initialise()) {
-            qDebug() << "Database created using Sqlite version: " + sqliteVersion();
-            if (createTables()) {
-                qDebug() << "Database tables created";
+    public:
+        Implementation(DatabaseController *_databaseController) :
+            databaseController(_databaseController)
+        {
+            if (initialise()) {
+                qDebug() << "Database created using Sqlite version: " + sqliteVersion();
+                if (createTables()) {
+                    qDebug() << "Database tables created";
+                }
+                else {
+                    qDebug() << "ERROR: Unable to create database tables";
+                }
             }
             else {
-                qDebug() << "ERROR: Unable to create database tables";
+                qDebug() << "ERROR: Unable to open database";
+            }
+
+            QString test = "testé";
+            QString dec = decryptText(encryptText(test));
+            printf("Decrypt %s = %s\n",
+                   qPrintable(QCA::arrayToHex(test.toUtf8())),
+                   qPrintable(dec.toUtf8()));
+        }
+
+        DatabaseController *databaseController { nullptr };
+        QSqlDatabase database;
+
+    private:
+        bool initialise()
+        {
+            database = QSqlDatabase::addDatabase("QSQLITE", "gcompris");
+            database.setDatabaseName("gcompris-qt.sqlite");
+            if (!database.open()) {
+                qDebug() << "Error: connection with database fail";
+            }
+            createTables();
+
+            return database.open();
+        }
+
+        bool createTables()
+        {
+            bool res = createTable(CREATE_TABLE_USERS, "users");
+            res &= createTable(CREATE_TABLE_GROUPS, "groups");
+            res &= createTable(CREATE_TABLE_USERGROUP, "userGroups");
+            res &= createTable(CREATE_TABLE_ACTIVITY_DATA, "activityData");
+            res &= createTable(CREATE_TABLE_TEACHERS, "teachers");
+            return res;
+        }
+
+        bool createTable(const QString &sqlStatement, const QString &table) const
+        {
+            QSqlQuery query(database);
+
+            if (!query.prepare(sqlStatement))
+                return false;
+            if (!query.exec()) {
+                qDebug() << "Unable to create table " << table;
+            }
+            return true;
+        }
+
+        QString sqliteVersion() const
+        {
+            QSqlQuery query(database);
+
+            query.exec("SELECT sqlite_version()");
+
+            if (query.next())
+                return query.value(0).toString();
+
+            return QString::number(-1);
+        }
+
+        QString decryptText(const QString &value) {
+            // AES128 testing
+            if (!QCA::isSupported(AES_ENCRYPTION)) {
+                printf("AES128-CBC not supported!\n");
+                return "";
+            }
+            else {
+                // Create a random key - you'd probably use one from another
+                // source in a real application
+                QCA::SymmetricKey key(QByteArray("toto"));
+ 
+                // Create a random initialisation vector - you need this
+                // value to decrypt the resulting cipher text, but it
+                // need not be kept secret (unlike the key).
+                QCA::InitializationVector iv(QByteArray{INITIALIZATION_VECTOR});
+
+                // create a 128 bit AES cipher object using Cipher Block Chaining (CBC) mode
+                QCA::Cipher cipher(AES_ALGORITHM,
+                                   QCA::Cipher::CBC,
+                                   // use Default padding, which is equivalent to PKCS7 for CBC
+                                   QCA::Cipher::DefaultPadding,
+                                   // this object will decrypt
+                                   QCA::Decode,
+                                   key,
+                                   iv);
+
+                QCA::SecureArray encryptedData = QCA::SecureArray(QCA::hexToArray(value));
+                QCA::SecureArray decryptedData = cipher.process(encryptedData);
+ 
+                // check if the update() call worked
+                if (!cipher.ok()) {
+                    printf("Update failed\n");
+                }
+
+                return QString(decryptedData.data());
             }
         }
-        else {
-            qDebug() << "ERROR: Unable to open database";
-        }
-    }
 
-    DatabaseController *databaseController { nullptr };
-    QSqlDatabase database;
+            QString encryptText(const QString &value) {
+                // AES128 testing
+                if (!QCA::isSupported(AES_ENCRYPTION)) {
+                    printf("AES128-CBC not supported!\n");
+                    return "";
+                }
+                else {
+                    // Create a random key - you'd probably use one from another
+                    // source in a real application
+                    QCA::SymmetricKey key(QByteArray("toto"));
+ 
+                    // Create a random initialisation vector - you need this
+                    // value to decrypt the resulting cipher text, but it
+                    // need not be kept secret (unlike the key).
+                    QCA::InitializationVector iv(QByteArray{INITIALIZATION_VECTOR});
 
-private:
-    bool initialise()
-    {
-        database = QSqlDatabase::addDatabase("QSQLITE", "gcompris");
-        database.setDatabaseName("gcompris-qt.sqlite");
-        if (!database.open()) {
-            qDebug() << "Error: connection with database fail";
-        }
-        createTables();
+                    // create a 128 bit AES cipher object using Cipher Block Chaining (CBC) mode
+                    QCA::Cipher cipher(AES_ALGORITHM,
+                                       QCA::Cipher::CBC,
+                                       // use Default padding, which is equivalent to PKCS7 for CBC
+                                       QCA::Cipher::DefaultPadding,
+                                       // this object will encrypt
+                                       QCA::Encode,
+                                       key,
+                                       iv);
+                    QCA::SecureArray secureData = value.toUtf8();
+                    QCA::SecureArray encryptedData = cipher.process(secureData);
 
-        return database.open();
-    }
-
-    bool createTables()
-    {
-        bool res = createTable(CREATE_TABLE_USERS, "users");
-        res &= createTable(CREATE_TABLE_GROUPS, "groups");
-        res &= createTable(CREATE_TABLE_USERGROUP, "userGroups");
-        res &= createTable(CREATE_TABLE_ACTIVITY_DATA, "activityData");
-        return res;
-    }
-
-    bool createTable(const QString &sqlStatement, const QString &table) const
-    {
-        QSqlQuery query(database);
-
-        if (!query.prepare(sqlStatement))
-            return false;
-        if (!query.exec()) {
-            qDebug() << "Unable to create table " << table;
-        }
-        return true;
-    }
-
-    QString sqliteVersion() const
-    {
-        QSqlQuery query(database);
-
-        query.exec("SELECT sqlite_version()");
-
-        if (query.next())
-            return query.value(0).toString();
-
-        return QString::number(-1);
-    }
-};
+                    return QString(qPrintable(QCA::arrayToHex(encryptedData.toByteArray())));
+                }
+            }
+        };
 }
 
 namespace controllers {
@@ -104,6 +191,84 @@ DatabaseController::DatabaseController(QObject *parent) :
 
 DatabaseController::~DatabaseController()
 {
+}
+
+/*
+int DatabaseController::addUser(const UserData &user)
+{
+    // check whether user already exists before adding to database
+    int userId = -1;
+    QSqlQuery query(implementation->database);
+    query.prepare("SELECT user_name FROM users WHERE user_name=:name");
+    query.bindValue(":name", user.getName());
+    query.exec();
+    if (query.next()) {
+        qDebug() << "user " << user.getName() << "already exists";
+        return userId;
+    }
+    query.prepare("INSERT INTO users (user_name, dateOfBirth, password) VALUES(:name, :dateOfBirth, :password)");
+    query.bindValue(":name", user.getName());
+    query.bindValue(":dateOfBirth", user.getDateOfBirth());
+    query.bindValue(":password", user.getPassword());
+    if (!query.exec()) {
+        qDebug() << query.lastError();
+        return userId;
+    }
+    userId = query.lastInsertId().toInt();
+
+    return userId;
+}*/
+bool DatabaseController::createTeacher(const QString &login, const QString &password) {
+    QString encryptedPassword;
+    if(!QCA::isSupported("sha256")) {
+        qDebug() << "SHA256 not supported!";
+    }
+    else {
+        QByteArray hashResult = QCA::Hash("sha256").hash(password.toUtf8()).toByteArray();
+        encryptedPassword = QString(qPrintable(QCA::arrayToHex(hashResult)));
+    }
+
+    QSqlQuery query(implementation->database);
+    query.prepare("SELECT ROWID, * FROM teachers WHERE login=:login");
+    query.bindValue(":login", login);
+    query.exec();
+    if (query.next()) {
+        qDebug() << "login" << login << "does already exist";
+        return false;
+    }
+    query.prepare("INSERT INTO teachers (login, password) VALUES(:login, :password)");
+    query.bindValue(":login", login);
+    query.bindValue(":password", encryptedPassword);
+    int teacherId;
+    if (!query.exec()) {
+        qDebug() << query.lastError();
+        return teacherId;
+    }
+    teacherId = query.lastInsertId().toInt();
+
+    return teacherId;
+}
+
+bool DatabaseController::checkTeacher(const QString &login, const QString &password) {
+    QString encryptedPassword;
+    if(!QCA::isSupported("sha256")) {
+        qDebug() << "SHA256 not supported!";
+    }
+    else {
+        QByteArray hashResult = QCA::Hash("sha256").hash(password.toUtf8()).toByteArray();
+        encryptedPassword = QString(qPrintable(QCA::arrayToHex(hashResult)));
+    }
+
+    QSqlQuery query(implementation->database);
+    query.prepare("SELECT ROWID, * FROM teachers WHERE login=:login AND password=:password");
+    query.bindValue(":login", login);
+    query.bindValue(":password", encryptedPassword);
+    query.exec();
+    if (!query.next()) {
+        qDebug() << "login " << login << " does not already exist or incorrect password";
+        return false;
+    }
+    return true;
 }
 
 void DatabaseController::retrieveAllExistingGroups(QList<GroupData *> &allGroups)
