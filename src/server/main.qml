@@ -47,6 +47,13 @@ Window {
 
     Connections {
         target: masterController.ui_navigationController
+        onTeacherConnected: navigationBarConnections.enabled = true
+        onTeacherDisconnected: navigationBarConnections.enabled = false
+    }
+    Connections {
+        id: navigationBarConnections
+        target: masterController.ui_navigationController
+        enabled: false
         onGoManagePupilsView: contentFrame.replace("views/ManagePupilsView.qml")
         onGoFollowResultsView: contentFrame.replace("views/FollowResultsView.qml")
         onGoDashboardView: contentFrame.replace("views/DashboardView.qml")
