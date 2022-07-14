@@ -130,40 +130,6 @@ ActivityBase {
                     text: qsTr("%1/%2").arg(items.sublevel).arg(items.data.length)
                 }
             }
-          /*  Rectangle {
-                id: guessLabel
-                width: parent.width * 0.7
-                height: parent.height
-                radius: 20
-                color: "orange"
-                anchors {
-                    left: questionNo.right
-                    leftMargin: 20 * ApplicationInfo.ratio
-                }
-                Rectangle {
-                    id: insideFill
-                    width: parent.width - anchors.margins
-                    height: parent.height - anchors.margins
-                    anchors.verticalCenter: parent.verticalCenter
-                    anchors.horizontalCenter: parent.horizontalCenter
-                    anchors.margins: parent.height/4
-                    radius: 10
-                    color: "#E8E8E8"
-                }
-                GCText {
-                    id: guess
-                    anchors.horizontalCenter: parent.horizontalCenter
-                    anchors.verticalCenter: parent.verticalCenter
-                    width: insideFill.width
-                    height: insideFill.height
-                    fontSizeMode: Text.Fit
-                    minimumPointSize: 7
-                    fontSize: mediumSize
-                    verticalAlignment: Text.AlignVCenter
-                    horizontalAlignment: Text.AlignHCenter
-                    text: qsTr("Guesscount: %1").arg(items.result)
-                }
-            }*/
         }
 
         Column {
