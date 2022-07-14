@@ -148,7 +148,13 @@ endif()
 if(BUILD_SERVER)
   target_link_libraries(gcompris_core protobuf::libprotobuf)
   target_link_libraries(${GCOMPRIS_EXECUTABLE_NAME} protobuf::libprotobuf)
-  #todo for windows or linux? install(FILES "${Protobuf_LIBRARIES}" DESTINATION bin)
+  if(BUILD_STANDALONE)
+    install(FILES "${Protobuf_LIBRARY}" DESTINATION bin)
+    if(UNIX)
+      install(FILES "${Protobuf_LIBRARY}.10" DESTINATION bin)
+      install(FILES "${Protobuf_LIBRARY}.10.0.0" DESTINATION bin)
+    endif()
+  endif()
 endif()
 
 if(WITH_RCC)
@@ -195,7 +201,7 @@ endif()
 # Installation
 # ============
 
-install(TARGETS ${GCOMPRIS_EXECUTABLE_NAME}
+install(TARGETS ${GCOMPRIS_EXECUTABLE_NAME} gcompris_core
   ARCHIVE DESTINATION ${CMAKE_INSTALL_BINDIR}
   RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
   LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
@@ -205,7 +211,7 @@ if(BUILD_STANDALONE)
   # Qt plugins to install
   set(_qt_plugins "")
 
-  set(default_plugins ${QT_MAJOR}::QSvgPlugin ${QT_MAJOR}::QWebpPlugin ${QT_MAJOR}::QGifPlugin ${QT_MAJOR}::genericSensorPlugin ${QT_MAJOR}::QtSensorGesturePlugin ${QT_MAJOR}::QShakeSensorGesturePlugin)
+  set(default_plugins ${QT_MAJOR}::QSvgPlugin ${QT_MAJOR}::QWebpPlugin ${QT_MAJOR}::QGifPlugin ${QT_MAJOR}::genericSensorPlugin ${QT_MAJOR}::QtSensorGesturePlugin ${QT_MAJOR}::QShakeSensorGesturePlugin ${QT_MAJOR}::QSQLiteDriverPlugin)
   if(WIN32)
     set(default_plugins ${default_plugins} ${QT_MAJOR}::QICOPlugin ${QT_MAJOR}::QWindowsIntegrationPlugin ${QT_MAJOR}::QWindowsAudioPlugin ${QT_MAJOR}::AudioCaptureServicePlugin ${QT_MAJOR}::DSServicePlugin)
   elseif(ANDROID)
@@ -266,6 +272,10 @@ if(BUILD_STANDALONE)
   else()
     set(_qml_plugins ${_qml_plugins} QtGraphs/${_lib_prefix}graphsplugin)
   endif()
+
+   if(BUILD_SERVER)
+     list(APPEND _qt_plugins2 crypto/${_lib_prefix}qca-ossl)
+   endif()
 
   # TODO Double check for ubuntutouch, we may need qtquickcontrols2/templates2!
   if(NOT UBUNTUTOUCH)
