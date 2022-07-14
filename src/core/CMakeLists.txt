@@ -115,7 +115,13 @@ target_link_libraries(${GCOMPRIS_EXECUTABLE_NAME} ${used_qt_modules})
 if(BUILD_SERVER)
   target_link_libraries(gcompris_core protobuf::libprotobuf)
   target_link_libraries(${GCOMPRIS_EXECUTABLE_NAME} protobuf::libprotobuf)
-  #todo for windows or linux? install(FILES "${Protobuf_LIBRARIES}" DESTINATION bin)
+  if(BUILD_STANDALONE)
+    install(FILES "${Protobuf_LIBRARY}" DESTINATION bin)
+    if(UNIX)
+      install(FILES "${Protobuf_LIBRARY}.10" DESTINATION bin)
+      install(FILES "${Protobuf_LIBRARY}.10.0.0" DESTINATION bin)
+    endif()
+  endif()
 endif()
 
 GCOMPRIS_ADD_RCC(core
@@ -138,7 +144,7 @@ GCOMPRIS_ADD_RCC(core
 # Installation
 # ============
 
-install(TARGETS ${GCOMPRIS_EXECUTABLE_NAME}
+install(TARGETS ${GCOMPRIS_EXECUTABLE_NAME} gcompris_core
   ARCHIVE DESTINATION bin
   RUNTIME DESTINATION bin
   LIBRARY DESTINATION lib
@@ -149,14 +155,20 @@ if(BUILD_STANDALONE)
   set(_qt_plugins "")
 
   # First plugins should be used on all platforms
-  foreach(_plugin Qt5::QSvgPlugin Qt5::QWebpPlugin Qt5::QICOPlugin Qt5::QICNSPlugin Qt5::QGifPlugin Qt5::QJpegPlugin Qt5::QWbmpPlugin Qt5::genericSensorPlugin Qt5::QtSensorGesturePlugin Qt5::QShakeSensorGesturePlugin
-      # Should be specific plugins used on Linux
-      Qt5::QComposePlatformInputContextPlugin Qt5::QXcbIntegrationPlugin Qt5::QXcbEglIntegrationPlugin Qt5::QXcbGlxIntegrationPlugin Qt5::QAlsaPlugin Qt5::QPulseAudioPlugin
-      # Should be specific plugins used on MacOS
-      Qt5::QTgaPlugin Qt5::QTiffPlugin Qt5::QCocoaIntegrationPlugin
-      # Should be specific plugins used on Windows
-      Qt5::QWindowsIntegrationPlugin Qt5::QWindowsAudioPlugin Qt5::AudioCaptureServicePlugin Qt5::DSServicePlugin
-      )
+  set(plugins_list Qt5::QSvgPlugin;Qt5::QWebpPlugin;Qt5::QICOPlugin;Qt5::QICNSPlugin;Qt5::QGifPlugin;Qt5::QJpegPlugin;Qt5::QWbmpPlugin;Qt5::genericSensorPlugin;Qt5::QtSensorGesturePlugin;Qt5::QShakeSensorGesturePlugin
+    # Should be specific plugins used on Linux
+    Qt5::QComposePlatformInputContextPlugin;Qt5::QXcbIntegrationPlugin;Qt5::QXcbEglIntegrationPlugin;Qt5::QXcbGlxIntegrationPlugin;Qt5::QAlsaPlugin;Qt5::QPulseAudioPlugin
+    # Should be specific plugins used on MacOS
+    Qt5::QTgaPlugin;Qt5::QTiffPlugin;Qt5::QCocoaIntegrationPlugin
+    # Should be specific plugins used on Windows
+    Qt5::QWindowsIntegrationPlugin;Qt5::QWindowsAudioPlugin;Qt5::AudioCaptureServicePlugin;Qt5::DSServicePlugin
+    )
+    if(BUILD_SERVER)
+      list(APPEND plugins_list Qt5::QSQLiteDriverPlugin)
+    endif()
+
+  foreach(_plugin ${plugins_list})
+
     if(TARGET ${_plugin})
       message(STATUS "${_plugin} will be included in the package")
       list(APPEND _qt_plugins ${_plugin})
@@ -183,6 +195,10 @@ if(BUILD_STANDALONE)
       mediaservice/${_lib_prefix}qavfmediaplayer
       mediaservice/${_lib_prefix}qtmedia_audioengine
       mediaservice/${_lib_prefix}qavfcamera)
+  endif()
+
+  if(BUILD_SERVER)
+    list(APPEND _qt_plugins2 crypto/${_lib_prefix}qca-ossl)
   endif()
 
   set(_qml_plugins
