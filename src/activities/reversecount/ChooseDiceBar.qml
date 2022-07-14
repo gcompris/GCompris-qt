@@ -55,7 +55,13 @@ Item {
             onClicked: chooseDiceBar.moveTux();
 
             getDataCallback: function() {
-                var data = {"index": Activity.fishIndex, "currentPosition": Activity.tuxIceBlockNumber, "dice1": chooseDiceBar.value1, "dice2": chooseDiceBar.value2};
+                var data = {
+                    "index": Activity.fishIndex,
+                    "currentPosition": Activity.tuxIceBlockNumber,
+                    "dice1": chooseDiceBar.value1,
+                    "dice2": chooseDiceBar.value2,
+                    "goodAnswer": ((Activity.tuxIceBlockNumber+chooseDiceBar.value1+chooseDiceBar.value2) % Activity.iceBlocksLayout.length == (Activity.fishIndex % Activity.iceBlocksLayout.length))
+                }
                 return data
             }
         }
