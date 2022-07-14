@@ -81,3 +81,15 @@ target_link_libraries(${GCOMPRIS_SERVER_EXECUTABLE_NAME} protobuf::libprotobuf)
 target_link_libraries(${GCOMPRIS_SERVER_EXECUTABLE_NAME} gcompris_core)
 
 gcompris_add_rcc(server main.qml *.js views/*.qml components/*.qml resource/*)
+
+
+install(TARGETS ${GCOMPRIS_SERVER_EXECUTABLE_NAME}
+  ARCHIVE DESTINATION bin
+  RUNTIME DESTINATION bin
+  LIBRARY DESTINATION lib
+  BUNDLE DESTINATION .)
+
+# install a startup script for linux bundle
+if(UNIX AND NOT APPLE AND NOT SAILFISHOS AND NOT UBUNTUTOUCH)
+  install(PROGRAMS ../../tools/gcompris-server.sh DESTINATION bin)
+endif()
