@@ -130,7 +130,7 @@ ActivityBase {
                     text: qsTr("%1/%2").arg(items.sublevel).arg(items.data.length)
                 }
             }
-            Rectangle {
+          /*  Rectangle {
                 id: guessLabel
                 width: parent.width * 0.7
                 height: parent.height
@@ -163,7 +163,7 @@ ActivityBase {
                     horizontalAlignment: Text.AlignHCenter
                     text: qsTr("Guesscount: %1").arg(items.result)
                 }
-            }
+            }*/
         }
 
         Column {
@@ -175,14 +175,6 @@ ActivityBase {
             anchors.leftMargin: 5
             width: parent.width
             height: parent.height-top.height-background.height/5
-          /*  OperatorRow {
-                id: operatorRow
-                width: parent.width
-                height: parent.height/7
-                mode: items.mode
-                operators: items.levelArr
-                level: items.currentlevel
-            }*/
             OperandRow {
                 id: operandRow
                 width: parent.width
