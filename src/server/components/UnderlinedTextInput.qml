@@ -16,6 +16,7 @@ Item {
 
     property string defaultText: "Default text, must be set in calling element"
     property alias text: textInput.text
+    property alias echoMode: textInput.echoMode
 
     onFocusChanged: { if(focus) textInput.forceActiveFocus(); }
     TextInput {
@@ -26,6 +27,7 @@ Item {
         width: parent.width * 5/6
         text: defaultText
         cursorVisible: false
+        echoMode: TextInput.Normal
         font {
             family: Style.fontAwesome
             pixelSize: 15
