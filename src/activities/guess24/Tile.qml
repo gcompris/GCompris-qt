@@ -20,6 +20,7 @@ MouseArea {
     width: root.width
     height: root.height
     anchors.centerIn: parent
+    anchors.leftMargin: 20
     drag.target: tile
     onReleased: {
         parent = tile.Drag.target != null ? tile.Drag.target : root
@@ -39,7 +40,6 @@ MouseArea {
         width: parent.width
         height: parent.height
         anchors.verticalCenter: parent.verticalCenter
-        anchors.horizontalCenter: parent.horizontalCenter
         property var datavalue: modelData
         radius: 10
         //opacity: 0.7
