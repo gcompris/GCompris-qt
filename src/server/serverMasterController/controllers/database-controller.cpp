@@ -522,6 +522,7 @@ bool DatabaseController::addDataToUser(const UserData &user, const QString& acti
     return dataAdded;
 }
 
+#include <QJsonDocument>
 // QMap with key the date?
 QList<QVariant> DatabaseController::getActivityData(const UserData &user, const QString &activity /*, range of date*/) {
     QSqlQuery query(implementation->database);
@@ -534,9 +535,13 @@ QList<QVariant> DatabaseController::getActivityData(const UserData &user, const 
     QList<QVariant> fetchedData;
     qDebug() << "Found" << query.size() << "records";
     while (query.next()) {
-        fetchedData << query.value(dataIndex);
-        qDebug() << "data" <<query.value(dataIndex).toString();
-        qDebug() << "date" <<query.value(dateIndex).toInt();
+        QVariant data = query.value(dataIndex);
+        QJsonDocument doc = QJsonDocument::fromJson(data.toByteArray());
+        QJsonObject obj = doc.object();
+        obj["date"] = query.value(dateIndex).toInt();
+        doc.setObject(obj);
+        QVariant dataWithDate = doc.toJson(QJsonDocument::Compact);
+        fetchedData << dataWithDate;
     }
     return fetchedData;
 }

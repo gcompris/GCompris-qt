@@ -19,11 +19,11 @@ Item {
 
     property var currentData
 
-    onCurrentDataChanged: print(currentData)
     Rectangle {
         anchors.fill: parent
         color: Style.colourBackground
         Text {
+            textFormat: Text.StyledText
             anchors.centerIn: parent
             text: currentData ? currentData.toString() : qsTr("Follow Results view")
         }
@@ -42,7 +42,19 @@ Item {
         onAccepted: {
             console.log("selected", pupilName, activityName)
             // todo fetch from database. At some point, do we want a local cache?
-            currentData = masterController.getActivityData(pupilName, activityName)
+            var results = masterController.getActivityData(pupilName, activityName)
+            var dataInArray = new Array();
+            for(var index in results) {
+                var result = JSON.parse(results[index]);
+                if(result.goodAnswer === true) {
+                    result='<font color="green">'+results[index]+'</font>';
+                }
+                else {
+                    result='<font color="red">'+results[index]+'</font>';
+                }
+                dataInArray.push(result);
+            }
+            currentData = dataInArray.join("<br/>");
             selectResultsDialog.close()
         }
     }
