@@ -101,7 +101,6 @@ else()
   add_executable(${GCOMPRIS_EXECUTABLE_NAME} ${gcompris_SRCS} ${gcompris_RES})
 endif()
 
-<<<<<<< HEAD
 # only build the lib for testing purpose
 if(BUILD_TESTING)
   if(WIN32)
@@ -117,7 +116,13 @@ target_link_libraries(${GCOMPRIS_EXECUTABLE_NAME} ${used_qt_modules})
 if(BUILD_SERVER)
   target_link_libraries(gcompris_core protobuf::libprotobuf)
   target_link_libraries(${GCOMPRIS_EXECUTABLE_NAME} protobuf::libprotobuf)
-  #todo for windows or linux? install(FILES "${Protobuf_LIBRARIES}" DESTINATION bin)
+  if(BUILD_STANDALONE)
+    install(FILES "${Protobuf_LIBRARY}" DESTINATION bin)
+    if(UNIX)
+      install(FILES "${Protobuf_LIBRARY}.10" DESTINATION bin)
+      install(FILES "${Protobuf_LIBRARY}.10.0.0" DESTINATION bin)
+    endif()
+  endif()
 endif()
 
 if(WITH_RCC)
@@ -164,7 +169,7 @@ endif()
 # Installation
 # ============
 
-install(TARGETS ${GCOMPRIS_EXECUTABLE_NAME}
+install(TARGETS ${GCOMPRIS_EXECUTABLE_NAME} gcompris_core
   ARCHIVE DESTINATION bin
   RUNTIME DESTINATION bin
   LIBRARY DESTINATION lib
@@ -184,7 +189,10 @@ if(BUILD_STANDALONE)
       ${QT_MAJOR}::QWindowsIntegrationPlugin ${QT_MAJOR}::QWindowsAudioPlugin ${QT_MAJOR}::AudioCaptureServicePlugin ${QT_MAJOR}::DSServicePlugin
       # Should be specific plugins used on Android
       ${QT_MAJOR}::QAndroidIntegrationPlugin
+      # Server
+      ${QT_MAJOR}::QSQLiteDriverPlugin
       )
+
     if(TARGET ${_plugin})
       message(STATUS "${_plugin} will be included in the package")
       list(APPEND _qt_plugins ${_plugin})
@@ -228,6 +236,10 @@ if(BUILD_STANDALONE)
      QtMultimedia/${_lib_prefix}quickmultimediaplugin
      QtSensors/${_lib_prefix}sensorsquickplugin
      QtCharts/${_lib_prefix}qtchartsqml2plugin)
+
+   if(BUILD_SERVER)
+     list(APPEND _qt_plugins2 crypto/${_lib_prefix}qca-ossl)
+   endif()
 
   # TODO Double check for ubuntutouch, we may need qtquickcontrols2/templates2!
   if(NOT UBUNTUTOUCH)
