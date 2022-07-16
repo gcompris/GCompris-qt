@@ -5,6 +5,25 @@
 #=============================================================================
 include(qt_helper)
 
+#install_with_symlinks(FILE ${OPENSSL_CRYPTO_LIBRARY} DESTINATION bin)
+function(install_with_symlinks)
+    set(oneValueArgs FILE DESTINATION)
+    cmake_parse_arguments(ARGS "" "${oneValueArgs}"
+                          "" ${ARGN} )
+    if(IS_SYMLINK ${ARGS_FILE})
+      set(result)
+      file(READ_SYMLINK "${ARGS_FILE}" result)
+      if(NOT IS_ABSOLUTE "${result}")
+        get_filename_component(dir "${ARGS_FILE}" DIRECTORY)
+        set(result "${dir}/${result}")
+      endif()
+      install_with_symlinks(FILE ${result} DESTINATION ${ARGS_DESTINATION})
+    endif()
+    message(STATUS "Install ${ARGS_FILE} in ${ARGS_DESTINATION}")
+    install(FILES ${ARGS_FILE} DESTINATION ${ARGS_DESTINATION})
+endfunction()
+
+
 configure_file(config.h.in "${CMAKE_CURRENT_BINARY_DIR}/config.h" @ONLY)
 
 if(WITH_KIOSK_MODE)
@@ -112,15 +131,13 @@ target_link_libraries(gcompris_core ${used_qt_modules})
 
 target_link_libraries(${GCOMPRIS_EXECUTABLE_NAME} ${used_qt_modules})
 
+set(GCOMPRIS_OTHER_LIBS)
+
 if(BUILD_SERVER)
   target_link_libraries(gcompris_core protobuf::libprotobuf)
   target_link_libraries(${GCOMPRIS_EXECUTABLE_NAME} protobuf::libprotobuf)
   if(BUILD_STANDALONE)
-    install(FILES "${Protobuf_LIBRARY}" DESTINATION bin)
-    if(UNIX)
-      install(FILES "${Protobuf_LIBRARY}.10" DESTINATION bin)
-      install(FILES "${Protobuf_LIBRARY}.10.0.0" DESTINATION bin)
-    endif()
+    install_with_symlinks(FILE ${Protobuf_LIBRARY} DESTINATION bin)
   endif()
 endif()
 
@@ -235,8 +252,6 @@ if(BUILD_STANDALONE)
       QtQuick/Controls.2/Universal/${_lib_prefix}qtquickcontrols2universalstyleplugin)
   endif()
 
-  set(GCOMPRIS_OTHER_LIBS)
-
   if(APPLE)
     set(_app gcompris-qt.app)
     set(_qtconf_destdir ${_app}/Contents/Resources)
@@ -316,12 +331,8 @@ if(BUILD_STANDALONE)
     set_target_properties( libicuuc PROPERTIES IMPORTED_LOCATION ${LIBICUUC_SO} )
     target_link_libraries(${GCOMPRIS_EXECUTABLE_NAME} libicudata libicui18n libicuuc)
     # package installed OpenSSL libraries
-    install(FILES "${OPENSSL_SSL_LIBRARY}" DESTINATION bin)
-    install(FILES "${OPENSSL_CRYPTO_LIBRARY}" DESTINATION bin)
-    install(FILES "${OPENSSL_SSL_LIBRARY}.10" DESTINATION bin)
-    install(FILES "${OPENSSL_CRYPTO_LIBRARY}.10" DESTINATION bin)
-    install(FILES "${OPENSSL_SSL_LIBRARY}.1.0.2k" DESTINATION bin)
-    install(FILES "${OPENSSL_CRYPTO_LIBRARY}.1.0.2k" DESTINATION bin)
+    install_with_symlinks(FILE ${OPENSSL_SSL_LIBRARY} DESTINATION bin)
+    install_with_symlinks(FILE ${OPENSSL_CRYPTO_LIBRARY} DESTINATION bin)
     target_link_libraries(${GCOMPRIS_EXECUTABLE_NAME} OpenSSL::SSL OpenSSL::Crypto)
   endif()
 
