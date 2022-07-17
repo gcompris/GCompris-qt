@@ -163,7 +163,7 @@ ActivityBase {
             visible: Dataset.get()[items.currentLevel].enableHelp
         }
 
-        BarButton {
+        OkButton {
             id: okButton
             anchors {
                 bottom: bar.top
@@ -171,10 +171,17 @@ ActivityBase {
                 rightMargin: 10 * ApplicationInfo.ratio
                 bottomMargin: 10 * ApplicationInfo.ratio
             }
-            source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
-            sourceSize.width: 60 * ApplicationInfo.ratio
+            width: 60 * ApplicationInfo.ratio
             onClicked: Activity.equalityCheck()
             enabled: !items.buttonsBlocked
+            getDataCallback: function() {
+                var data = {
+                    "expected": items.numberToConvert,
+                    "result": items.numberSoFar,
+                    "goodAnswer": (items.numberToConvert == items.numberSoFar)
+                }
+                return data
+            }
         }
 
         DialogHelp {
