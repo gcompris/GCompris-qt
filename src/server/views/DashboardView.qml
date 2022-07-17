@@ -43,7 +43,7 @@ Item {
                 id: login
                 Layout.preferredHeight: 20
                 Layout.preferredWidth: parent.width
-                defaultText: ""
+                defaultText: "tata"
             }
             Text {
                 id: passwordLabel
@@ -61,7 +61,7 @@ Item {
                 Layout.preferredHeight: 20
                 Layout.preferredWidth: parent.width
                 echoMode: TextInput.Password
-                defaultText: ""
+                defaultText: "tata"
             }
             RowLayout {
                 ViewButton {

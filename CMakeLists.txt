@@ -179,7 +179,7 @@ endif()
 option(BUILD_SERVER "Build the server along the application" ON)
 
 if(BUILD_SERVER)
-  find_package(Qt5 ${QT_REQUIRED_VERSION} REQUIRED Sql)
+  find_package(Qt5 ${QT_REQUIRED_VERSION} REQUIRED Sql Charts)
 
   find_package(Qca-qt5 REQUIRED)
   set(ANDROID_WIFI_BROADCAST_PERMISSION "<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\" />\n
