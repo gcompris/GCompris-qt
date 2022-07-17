@@ -538,7 +538,7 @@ QList<QVariant> DatabaseController::getActivityData(const UserData &user, const 
         QVariant data = query.value(dataIndex);
         QJsonDocument doc = QJsonDocument::fromJson(data.toByteArray());
         QJsonObject obj = doc.object();
-        obj["date"] = query.value(dateIndex).toInt();
+        obj["date"] = query.value(dateIndex).toLongLong();
         doc.setObject(obj);
         QVariant dataWithDate = doc.toJson(QJsonDocument::Compact);
         fetchedData << dataWithDate;
