@@ -174,7 +174,7 @@ ActivityBase {
             visible: dataset[items.currentLevel].enableHelp
         }
 
-        BarButton {
+        OkButton {
             id: okButton
             anchors {
                 bottom: bar.top
@@ -186,6 +186,14 @@ ActivityBase {
             width: 60 * ApplicationInfo.ratio
             onClicked: Activity.equalityCheck()
             enabled: !items.buttonsBlocked
+            getDataCallback: function() {
+                var data = {
+                    "expected": items.numberToConvert,
+                    "result": items.numberSoFar,
+                    "goodAnswer": (items.numberToConvert == items.numberSoFar)
+                }
+                return data
+            }
         }
 
         DialogHelp {
