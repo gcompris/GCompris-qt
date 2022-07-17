@@ -16,16 +16,33 @@ import "."
 
 
 Item {
-
     property var currentData
 
     Rectangle {
-        anchors.fill: parent
+        id: header
+        anchors.top: parent.top
+        anchors.left: parent.left
+        anchors.right: parent.right
+        height: headerText.height
         color: Style.colourBackground
         Text {
+            id: headerText
+            anchors.horizontalCenter: parent.horizontalCenter
             textFormat: Text.StyledText
-            anchors.centerIn: parent
-            text: currentData ? currentData.toString() : qsTr("Follow Results view")
+            text: qsTr("Follow Results view")
+        }
+    }
+
+    ListView {
+        anchors.top: header.bottom
+        anchors.bottom: commandBar.top
+        anchors.left: parent.left
+        anchors.right: parent.right
+        model: currentData
+        delegate: Text {
+            anchors.horizontalCenter: parent.horizontalCenter
+            text: new Date(modelData.date) + ": " + modelData.goodAnswer
+            color: modelData.goodAnswer ? "green": "red"
         }
     }
 
@@ -46,20 +63,15 @@ Item {
             var dataInArray = new Array();
             for(var index in results) {
                 var result = JSON.parse(results[index]);
-                if(result.goodAnswer === true) {
-                    result='<font color="green">'+results[index]+'</font>';
-                }
-                else {
-                    result='<font color="red">'+results[index]+'</font>';
-                }
                 dataInArray.push(result);
             }
-            currentData = dataInArray.join("<br/>");
+            currentData = dataInArray;
             selectResultsDialog.close()
         }
     }
 
     CommandBar {
+        id: commandBar
         commandList: masterController.ui_commandController.ui_followResultViewContextCommands
     }
 }
