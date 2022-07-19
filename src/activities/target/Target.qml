@@ -155,8 +155,13 @@ ActivityBase {
 
             userEntry.text += text
 
+        }
+
+        function checkAnswer() {
             if(targetItem.scoreTotal.toString() === userEntry.text)
                 bonus.good("flower")
+            else
+                bonus.bad("flower")
         }
 
         GCText {
@@ -170,6 +175,28 @@ ActivityBase {
             color: "white"
             wrapMode: Text.WordWrap
             horizontalAlignment: Text.AlignHCenter
+        }
+
+        BarButton {
+            id: okButton
+            source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
+            sourceSize.width: 60 * ApplicationInfo.ratio
+            anchors.bottom: bar.top
+            anchors.bottomMargin: 20 * ApplicationInfo.ratio
+            anchors.right: parent.right
+            anchors.rightMargin: 10 * ApplicationInfo.ratio
+            enabled: !bonus.isPlaying
+            ParticleSystemStarLoader {
+                id: okButtonParticles
+                clip: false
+            }
+            MouseArea {
+                id: okButtonMouseArea
+                anchors.fill: parent
+                onClicked: {
+                    checkAnswer();
+                }
+            }
         }
 
         VirtualKeyboard {
