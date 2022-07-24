@@ -124,7 +124,7 @@ ActivityBase {
             id: hidden
             fontSize: largeSize
             color: "#4d4d4d"
-            font.letterSpacing: 0.5
+            font.letterSpacing: 5.5
             width: parent.width * 0.90 - score.width
             fontSizeMode: Text.Fit
             horizontalAlignment: Text.AlignHCenter
