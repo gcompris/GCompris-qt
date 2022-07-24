@@ -377,7 +377,11 @@ ActivityBase {
             anchors.bottom: parent.bottom
             anchors.horizontalCenter: parent.horizontalCenter
             width: parent.width
-            onKeypress: Activity.processKeyPress(text);
+            onKeypress: {
+                Activity.processKeyPress(text);
+                // Set the focus back to the InputText for keyboard input
+                Activity.focusTextInput();
+            }
             onError: console.log("VirtualKeyboard error: " + msg);
         }
 
