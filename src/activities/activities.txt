@@ -177,6 +177,7 @@ tangram
 target
 tens_complement_find
 tens_complement_swap
+tens_complement3
 tic_tac_toe
 tic_tac_toe_2players
 traffic
