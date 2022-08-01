@@ -11,11 +11,11 @@ align4_2players
 alphabet-sequence
 analog_electricity
 baby_keyboard
+babymatch
 baby_mouse
+babyshapes
 baby_tangram
 baby_wordprocessor
-babymatch
-babyshapes
 balancebox
 ballcatch
 bargame
@@ -32,10 +32,10 @@ chess
 chess_2players
 chess_partyend
 chronos
-click_on_letter
-click_on_letter_up
 clickanddraw
 clickgame
+click_on_letter
+click_on_letter_up
 clockgame
 color_mix
 color_mix_light
@@ -67,6 +67,7 @@ gnumch-factors
 gnumch-inequality
 gnumch-multiples
 gnumch-primes
+grammatical_analyse
 graph-coloring
 gravity
 guesscount
