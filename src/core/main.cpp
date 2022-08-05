@@ -189,7 +189,7 @@ int main(int argc, char *argv[])
     parser.addOption(clWithKioskMode);
 
     QCommandLineOption clSoftwareRenderer(QStringList() << "software-renderer",
-                                          QObject::tr("Use software renderer instead of openGL (slower but should run with any graphical card, needs Qt 5.8 minimum)."));
+                                          QObject::tr("Use software renderer instead of openGL (slower but should run with any graphical card)."));
     parser.addOption(clSoftwareRenderer);
     QCommandLineOption clOpenGLRenderer(QStringList() << "opengl-renderer",
                                         QObject::tr("Use openGL renderer instead of software (faster but crash potentially depending on your graphical card)."));
