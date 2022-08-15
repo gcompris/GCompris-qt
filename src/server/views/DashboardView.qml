@@ -9,6 +9,7 @@
  */
 import QtQuick 2.12
 import QtQuick.Layouts 1.12
+import GCompris 1.0
 import "../components"
 import "../../core"
 
@@ -68,6 +69,10 @@ Item {
                     id: connectTeacher
                     text: qsTr("Connect")
                     onClicked: {
+                        if(masterController.ui_databaseController.isDatabaseLoaded()) {
+                            masterController.unloadDatabase();
+                        }
+                        masterController.loadDatabase(databaseFileValue.text);
                         if(masterController.ui_databaseController.checkTeacher(login.text, password.text)) {
                             print("good boy")
                             masterController.ui_navigationController.teacherConnected();
@@ -81,10 +86,35 @@ Item {
                     id: createTeacher
                     text: qsTr("Create login")
                     onClicked: {
-                        print("Create teacher");
-                        masterController.ui_databaseController.createTeacher(login.text, password.text);
+                        if(!masterController.ui_databaseController.isDatabaseLoaded()) {
+                            masterController.loadDatabase(databaseFileValue.text);
+                        }
+                        if(!masterController.ui_databaseController.isDatabaseLoaded()) {
+                            print("Database not loaded, cannot create a teacher")
+                        }
+                        else {
+                            print("Create teacher");
+                            masterController.ui_databaseController.createTeacher(login.text, password.text);
+                        }
                     }
                 }
+            }
+            Text {
+                id: databaseFile
+                Layout.preferredHeight: 20
+                Layout.preferredWidth: parent.width
+                text: qsTr("Database file")
+                font.bold: true
+                font {
+                    family: Style.fontAwesome
+                    pixelSize: 15
+                }
+            }
+            UnderlinedTextInput {
+                id: databaseFileValue
+                Layout.preferredHeight: 20
+                Layout.preferredWidth: parent.width
+                defaultText: ServerSettings.databaseFile
             }
         }
     }
