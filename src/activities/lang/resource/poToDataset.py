@@ -20,7 +20,7 @@ jsonFile = sys.argv[2]
 data = {}
 
 if poFile.percent_translated() < 40:
-    print("Need at least 40% of the words translated to create the json data file")
+    print("Need at least 40% of the words translated to create the json data file for", jsonFile)
     sys.exit(0)
     
 for entry in poFile.translated_entries():
