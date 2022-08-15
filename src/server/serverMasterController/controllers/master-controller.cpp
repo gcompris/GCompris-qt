@@ -13,12 +13,27 @@ public:
         databaseController = new DatabaseController(masterController);
         navigationController = new NavigationController(masterController);
         commandController = new CommandController(masterController, databaseController, navigationController);
-
-        loadDatabase();
     }
 
-    void loadDatabase()
+    void unloadDatabase()
     {
+        databaseController->unloadDatabase();
+        for(GroupData *g: groups) {
+            delete g;
+        }
+        groups.clear();
+        for(UserData *u: users) {
+            delete u;
+        }
+        users.clear();
+        usersToDisplay.clear();
+
+        filterUsersView();
+    }
+
+    void loadDatabase(const QString &databaseFile)
+    {
+        databaseController->loadDatabase(databaseFile);
         databaseController->retrieveAllExistingGroups(groups);
         databaseController->retrieveAllExistingUsers(users);
         databaseController->recreateAllLinksBetweenGroupsAndUsers(groups, users);
@@ -64,6 +79,14 @@ MasterController::MasterController(QObject *parent) :
 
 MasterController::~MasterController()
 {
+}
+
+void MasterController::unloadDatabase() {
+    implementation->unloadDatabase();
+}
+
+void MasterController::loadDatabase(const QString &databaseFile) {
+    implementation->loadDatabase(databaseFile);
 }
 
 CommandController *MasterController::commandController()

@@ -14,6 +14,8 @@
 #include "models/GroupData.h"
 #include "models/UserData.h"
 
+#include "config/ServerSettings.h"
+
 #define CREATE_TABLE_USERS                                              \
     "CREATE TABLE IF NOT EXISTS users (user_name TEXT PRIMARY KEY NOT NULL, dateOfBirth TEXT, password TEXT); "
 #define CREATE_TABLE_GROUPS                                             \
@@ -36,10 +38,10 @@ namespace controllers {
     class DatabaseController::Implementation
     {
     public:
-        Implementation(DatabaseController *_databaseController) :
+        Implementation(const QString& databaseFile, DatabaseController *_databaseController) :
             databaseController(_databaseController)
         {
-            if (initialise()) {
+            if (initialise(databaseFile)) {
                 qDebug() << "Database created using Sqlite version: " + sqliteVersion();
                 if (createTables()) {
                     qDebug() << "Database tables created";
@@ -51,7 +53,24 @@ namespace controllers {
             else {
                 qDebug() << "ERROR: Unable to open database";
             }
+        }
 
+        bool isDatabaseLoaded()
+        {
+            return QSqlDatabase::contains("gcompris");
+        }
+
+        void unloadDatabase()
+        {
+            if (QSqlDatabase::contains("gcompris")) {
+               database.close();
+               database = QSqlDatabase();
+               QSqlDatabase::removeDatabase("gcompris");
+           }
+        }
+
+        void setKey(const QString &teacherKey) {
+            teacherPasswordKey = teacherKey;
             QString test = "testé";
             QString dec = decryptText(encryptText(test));
             printf("Decrypt %s = %s\n",
@@ -59,14 +78,17 @@ namespace controllers {
                    qPrintable(dec.toUtf8()));
         }
 
-        DatabaseController *databaseController { nullptr };
         QSqlDatabase database;
 
     private:
-        bool initialise()
+
+        DatabaseController *databaseController { nullptr };
+        QString teacherPasswordKey;
+
+        bool initialise(const QString& databaseFile)
         {
             database = QSqlDatabase::addDatabase("QSQLITE", "gcompris");
-            database.setDatabaseName("gcompris-qt.sqlite");
+            database.setDatabaseName(databaseFile);
             if (!database.open()) {
                 qDebug() << "Error: connection with database fail";
             }
@@ -116,9 +138,8 @@ namespace controllers {
                 return "";
             }
             else {
-                // Create a random key - you'd probably use one from another
-                // source in a real application
-                QCA::SymmetricKey key(QByteArray("toto"));
+                qDebug() << "JJ" << teacherPasswordKey.toUtf8();
+                QCA::SymmetricKey key(teacherPasswordKey.toUtf8());
  
                 // Create a random initialisation vector - you need this
                 // value to decrypt the resulting cipher text, but it
@@ -154,9 +175,7 @@ namespace controllers {
                     return "";
                 }
                 else {
-                    // Create a random key - you'd probably use one from another
-                    // source in a real application
-                    QCA::SymmetricKey key(QByteArray("toto"));
+                    QCA::SymmetricKey key(teacherPasswordKey.toUtf8());
  
                     // Create a random initialisation vector - you need this
                     // value to decrypt the resulting cipher text, but it
@@ -186,38 +205,27 @@ namespace controllers {
 DatabaseController::DatabaseController(QObject *parent) :
     QObject(parent)
 {
-    implementation.reset(new Implementation(this));
 }
 
 DatabaseController::~DatabaseController()
 {
 }
 
-/*
-int DatabaseController::addUser(const UserData &user)
+bool DatabaseController::isDatabaseLoaded()
 {
-    // check whether user already exists before adding to database
-    int userId = -1;
-    QSqlQuery query(implementation->database);
-    query.prepare("SELECT user_name FROM users WHERE user_name=:name");
-    query.bindValue(":name", user.getName());
-    query.exec();
-    if (query.next()) {
-        qDebug() << "user " << user.getName() << "already exists";
-        return userId;
-    }
-    query.prepare("INSERT INTO users (user_name, dateOfBirth, password) VALUES(:name, :dateOfBirth, :password)");
-    query.bindValue(":name", user.getName());
-    query.bindValue(":dateOfBirth", user.getDateOfBirth());
-    query.bindValue(":password", user.getPassword());
-    if (!query.exec()) {
-        qDebug() << query.lastError();
-        return userId;
-    }
-    userId = query.lastInsertId().toInt();
+    return implementation->isDatabaseLoaded();
+}
 
-    return userId;
-}*/
+void DatabaseController::unloadDatabase()
+{
+    implementation->unloadDatabase();
+}
+
+void DatabaseController::loadDatabase(const QString &databaseFile)
+{
+    implementation.reset(new Implementation(databaseFile, this));
+}
+
 bool DatabaseController::createTeacher(const QString &login, const QString &password) {
     QString encryptedPassword;
     if(!QCA::isSupported("sha256")) {
@@ -266,9 +274,14 @@ bool DatabaseController::checkTeacher(const QString &login, const QString &passw
     query.exec();
     if (!query.next()) {
         qDebug() << "login " << login << " does not already exist or incorrect password";
+        implementation->setKey("");
         return false;
     }
-    return true;
+    else {
+        // We successfully logged as 'login', we use 'password' as key
+        implementation->setKey(password);
+        return true;
+    }
 }
 
 void DatabaseController::retrieveAllExistingGroups(QList<GroupData *> &allGroups)
