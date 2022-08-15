@@ -7,27 +7,7 @@ include(qt_helper)
 
 set(GCOMPRIS_SERVER_EXECUTABLE_NAME gcompris-server)
 
-# this is the "old" server, need to merge with actual one
-set(server_SRCS
-  MessageHandler.cpp
-  MessageHandler.h
-  ActivityData.cpp
-  ActivityData.h
-  ClientData.cpp
-  ClientData.h
-  Database.cpp
-  Database.h
-  GroupData.cpp
-  GroupData.h
-  UserData.cpp
-  UserData.h
-  Server.cpp
-  Server.h
-  Authentication.cpp
-  Authentication.h
-)
-
-# server from allon
+# server
 set(server_SRCS
   serverMasterController/controllers/master-controller.cpp
   serverMasterController/controllers/master-controller.h
@@ -45,6 +25,9 @@ set(server_SRCS
   serverMasterController/models/UserData.h
   serverMasterController/framework/command.cpp
   serverMasterController/framework/command.h
+  
+  serverMasterController/config/ServerSettings.cpp
+  serverMasterController/config/ServerSettings.h
   )
 
 # Add files that do no need to pass through the moc processor
