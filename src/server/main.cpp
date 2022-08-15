@@ -12,18 +12,12 @@
 #include <QQuickWindow>
 #include <QQmlApplicationEngine>
 #include <QStandardPaths>
-/*#include "Server.h"
-#include "Database.h"
-#include "MessageHandler.h"*/
 
 #include <QtCrypto>
 
 #include "GComprisPlugin.h"
 #include "ApplicationInfo.h"
-#include "ApplicationSettings.h"
-#include "ActivityInfoTree.h"
-#include "File.h"
-#include "DownloadManager.h"
+#include "serverMasterController/config/ServerSettings.h"
 
 #include <QResource>
 #include <config.h>
@@ -65,16 +59,15 @@ int main(int argc, char *argv[])
 
     GComprisPlugin plugin;
     plugin.registerTypes("GCompris");
-    /*ActivityInfoTree::registerResources();
-    Server::init();
-    Database::init();
-    MessageHandler::init();*/
-
+ 
     if (!QResource::registerResource(ApplicationInfo::getFilePath("core.rcc")))
         qDebug() << "Failed to load the resource file " << ApplicationInfo::getFilePath("core.rcc");
     if (!QResource::registerResource(ApplicationInfo::getFilePath("server.rcc")))
         qDebug() << "Failed to load the resource file " << ApplicationInfo::getFilePath("server.rcc");
 
+    qmlRegisterSingletonType<ServerSettings>("GCompris", 1, 0,
+                                             "ServerSettings", ServerSettings::serverSettingsProvider);
+    
     QQmlApplicationEngine engine;
 
     controllers::MasterController masterController;

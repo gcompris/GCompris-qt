@@ -38,6 +38,9 @@ public:
     QQmlListProperty<UserData> ui_users();
     QStringList ui_groupsFiltered();
 
+    Q_INVOKABLE void unloadDatabase();
+    Q_INVOKABLE void loadDatabase(const QString &databaseFile);
+
     bool checkPassword(const QString &login, const QString &password);
 
     void addActivityDataForUser(const UserData &user, const QString& activity, qint64 timestamp, const QString &rawData);
