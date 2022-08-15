@@ -18,6 +18,10 @@ public:
     explicit DatabaseController(QObject *parent = nullptr);
     ~DatabaseController();
 
+    Q_INVOKABLE bool isDatabaseLoaded();
+    void unloadDatabase();
+    void loadDatabase(const QString &databaseFile);
+
     Q_INVOKABLE bool createTeacher(const QString &login, const QString &password);
     Q_INVOKABLE bool checkTeacher(const QString &login, const QString &password);
 
