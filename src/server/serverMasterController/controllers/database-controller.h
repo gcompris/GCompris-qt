@@ -32,6 +32,7 @@ public:
 
     void retrieveAllExistingUsers(QList<UserData *> &allUsers);
     int addUser(const UserData &user);
+    bool updateUser(UserData *oldUser, UserData *newUser);
     bool deleteUser(const UserData &user);
 
     void recreateAllLinksBetweenGroupsAndUsers(QList<GroupData *> &groups, QList<UserData *> &users);
