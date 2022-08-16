@@ -411,6 +411,31 @@ int DatabaseController::addUser(const UserData &user)
     return userId;
 }
 
+bool DatabaseController::updateUser(UserData *oldUser, UserData *newUser)
+{
+    // check user already exists before adding to database
+    QSqlQuery searchQuery(implementation->database);
+    searchQuery.prepare("SELECT user_name FROM users WHERE user_name=:name");
+    searchQuery.bindValue(":name", oldUser->getName());
+    searchQuery.exec();
+    if (!searchQuery.next()) {
+        qDebug() << "user " << oldUser->getName() << "does not exist";
+        return false;
+    }
+    QSqlQuery updateQuery(implementation->database);
+    updateQuery.prepare("UPDATE users SET user_name=:name, dateOfBirth=:dateOfBirth, password=:password WHERE ROWID=:id");
+    updateQuery.bindValue(":name", newUser->getName());
+    updateQuery.bindValue(":dateOfBirth", newUser->getDateOfBirth());
+    updateQuery.bindValue(":password", newUser->getPassword());
+    updateQuery.bindValue(":id", oldUser->getPrimaryKey());
+    if (!updateQuery.exec()) {
+        qDebug() << updateQuery.lastError() << "for" << updateQuery.lastQuery();
+        return false;
+    }
+
+    return true;
+}
+
 bool DatabaseController::deleteUser(const UserData &user)
 {
     bool userDeleted = false;
@@ -419,8 +444,8 @@ bool DatabaseController::deleteUser(const UserData &user)
     query.bindValue(":name", user.getName());
     if (query.exec()) {
         if (removeAllGroupsForUser(user)) {
-            query.prepare("DELETE FROM activity_data WHERE user_name=:name");
-            query.bindValue(":name", user.getName());
+            query.prepare("DELETE FROM activity_data WHERE user_id=:name");
+            query.bindValue(":name", user.getPrimaryKey());
             if (query.exec()) {
                 userDeleted = true;
             }

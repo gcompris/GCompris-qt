@@ -56,8 +56,8 @@ Item {
             anchors.top: parent.top
             width: parent.width
 
-            property int pupilNameColWidth : pupilsDetailsColumn.width / 3
-            property int yearOfBirthColWidth : pupilsDetailsColumn.width / 8
+            property int pupilNameColWidth: pupilsDetailsColumn.width / 3
+            property int yearOfBirthColWidth: pupilsDetailsColumn.width / 8
 
             //pupils header
             Rectangle {
@@ -231,7 +231,8 @@ Item {
                                         editIcon.color = Style.colourCommandBarFontDisabled
                                     }
                                     onClicked: {
-                                        modifyPupilDialog.pupilName = modelData.name
+                                        modifyPupilDialog.currentPupil.name = modelData.name
+                                        modifyPupilDialog.currentPupil.dateOfBirth = modelData.dateOfBirth
                                         // todo: get groups of user
                                         //modifyPupilDialog.groupsNames = modelData[2]
                                         modifyPupilDialog.pupilsListIndex = index
@@ -294,9 +295,7 @@ Item {
                         property string currentUserName
                         property var groupsList
                         onAccepted: {
-                            // todo
-                            // masterController.updateUser();
-                            // masterController.updateGroupsOfUser();
+                            masterController.updateUser(modelData, currentPupil, groupList);
                         }
                     }
                 }

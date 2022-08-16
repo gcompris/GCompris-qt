@@ -58,6 +58,7 @@ public:
     UserData(const QString &name = QString(), const QString &dateOfBirth = QString(), const QString &password = QString());
     UserData(const UserData &user);
     ~UserData();
+    UserData &operator=(const UserData &user);
 
     void setName(const QString &name);
     void setDateOfBirth(const QString &dateOfBirth);

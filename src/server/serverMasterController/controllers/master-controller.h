@@ -50,6 +50,7 @@ public slots:
     void updateGroup(const QString &oldGroupName, const QString &newGroupName);
     void deleteGroup(const QString &groupName);
     void createUser(UserData *userName);
+    void updateUser(UserData *oldUser, UserData *newUser, const QStringList &newGroupList);
     void deleteUser(const QString &userName);
     void setGroupsForUser(UserData *newUser, const QStringList &groupList);
     void addGroupsToUser(const QString &userName, const QStringList &groupList);
