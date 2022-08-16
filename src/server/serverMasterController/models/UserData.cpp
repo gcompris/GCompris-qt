@@ -15,7 +15,7 @@
 #include "UserData.h"
 
 UserData::UserData(const QString &name, const QString &dateOfBirth, const QString &password) :
-    m_name(name), m_dateOfBirth(dateOfBirth), m_password(password)
+    m_name(name), m_dateOfBirth(dateOfBirth), m_password(password), m_status(ConnectionStatus::NOT_CONNECTED)
 {
 }
 
@@ -24,6 +24,7 @@ UserData::UserData(const UserData &user)
     m_name = user.m_name;
     m_dateOfBirth = user.m_dateOfBirth;
     m_password = user.m_password;
+    m_status = user.m_status;
 }
 
 UserData::~UserData()
