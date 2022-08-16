@@ -17,7 +17,6 @@ Popup {
     id: addModifyPupilDialog
 
     property string label: "To be modified in calling element."
-    property string pupilName: "Pupil name to be modified in calling element."
     property string groupsNames: "Groups Names to be modified in calling element."
     property bool textInputReadOnly: false
     property int pupilsListIndex
@@ -87,12 +86,11 @@ Popup {
 
         UnderlinedTextInput {
             id: pupilNameTextInput
+            text: currentPupil.name
 
             Layout.preferredHeight: 20
             Layout.preferredWidth: parent.width
             Layout.leftMargin: 40
-
-            defaultText: addModifyPupilDialog.pupilName //? here we have a problem, when too long text is going left
         }
 
         Text {
@@ -112,6 +110,7 @@ Popup {
 
         UnderlinedTextInput {
             id: pupilYearOfBirthTextInput
+            text: currentPupil.dateOfBirth
 
             Layout.preferredHeight: 20
             Layout.preferredWidth: parent.width
@@ -178,7 +177,7 @@ Popup {
                 text: qsTr("Save")
                 onClicked: {
                     currentPupil.name = pupilNameTextInput.text
-                    currentPupil.dateOfBirth = pupilYearOfBirthTitleText.text
+                    currentPupil.dateOfBirth = pupilYearOfBirthTextInput.text
 
                     var groupList = [];
                     // itemAtIndex(i) is Qt >= 5.13, so we workaround by looping
