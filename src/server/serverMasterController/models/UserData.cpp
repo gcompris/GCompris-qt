@@ -27,6 +27,15 @@ UserData::UserData(const UserData &user)
     m_status = user.m_status;
 }
 
+UserData &UserData::operator=(const UserData &user)
+{
+    m_name = user.m_name;
+    m_dateOfBirth = user.m_dateOfBirth;
+    m_password = user.m_password;
+    m_status = user.m_status;
+    return *this;
+}
+
 UserData::~UserData()
 {
 }
