@@ -189,6 +189,17 @@ void MasterController::createUser(UserData *newUser)
     }
 }
 
+void MasterController::updateUser(UserData *oldUser, UserData *newUser, const QStringList &newGroupList) {
+    // update database
+    if(implementation->databaseController->updateUser(oldUser, newUser)) {
+        // Remove all previous groups
+        implementation->databaseController->removeAllGroupsForUser(*oldUser);
+        // update internal values
+        *oldUser = *newUser;
+        setGroupsForUser(oldUser, newGroupList);
+    }
+}
+
 void MasterController::setGroupsForUser(UserData *newUser, const QStringList &groupList)
 {
     UserData *user = getUserByName(newUser->getName());
