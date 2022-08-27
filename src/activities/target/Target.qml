@@ -32,9 +32,16 @@ ActivityBase {
             if(items.currentArrow != items.nbArrow)
                 return
 
+            if(bonus.isPlaying || items.inputLocked)
+                return
+
             if(event.key === Qt.Key_Backspace) {
                 backspace()
             }
+
+            if(event.key === Qt.Key_Enter || event.key === Qt.Key_Return)
+                Activity.checkAnswer();
+
             appendText(event.text)
         }
 
@@ -60,6 +67,8 @@ ActivityBase {
             property int currentSubLevel
             property int numberOfSubLevel
             property bool arrowFlying
+            property bool inputLocked: true
+            property real okButtonOpacity: inputLocked ? 0 : 1
 
             onNbArrowChanged: {
                 arrowRepeater.init(nbArrow)
@@ -82,6 +91,7 @@ ActivityBase {
                 targetItem.stop()
                 targetItem.scoreText += " = "
                 userEntry.text = "?"
+                items.inputLocked = false
             }
         }
 
@@ -129,13 +139,12 @@ ActivityBase {
             userEntry.text = userEntry.text.slice(0, -1)
             if(userEntry.text.length === 0) {
                 userEntry.text = "?"
-            } else {
-                if(targetItem.scoreTotal == userEntry.text)
-                    bonus.good("flower")
             }
         }
 
         function appendText(text) {
+            if(bonus.isPlaying || items.inputLocked)
+                return
             if(text === keyboard.backspace) {
                 backspace()
                 return
@@ -154,9 +163,6 @@ ActivityBase {
             }
 
             userEntry.text += text
-
-            if(targetItem.scoreTotal.toString() === userEntry.text)
-                bonus.good("flower")
         }
 
         GCText {
@@ -170,6 +176,21 @@ ActivityBase {
             color: "white"
             wrapMode: Text.WordWrap
             horizontalAlignment: Text.AlignHCenter
+        }
+
+        BarButton {
+            id: okButton
+            source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
+            sourceSize.width: 60 * ApplicationInfo.ratio
+            anchors.bottom: bar.top
+            anchors.bottomMargin: 20 * ApplicationInfo.ratio
+            anchors.right: parent.right
+            anchors.rightMargin: 10 * ApplicationInfo.ratio
+            enabled: !bonus.isPlaying && !items.inputLocked
+            opacity: items.okButtonOpacity
+            onClicked: {
+                Activity.checkAnswer();
+            }
         }
 
         VirtualKeyboard {

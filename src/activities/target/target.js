@@ -10,7 +10,6 @@
  */
 .pragma library
 .import QtQuick 2.12 as Quick
-
 var url = "qrc:/gcompris/src/activities/target/resource/"
 
 var levels
@@ -67,4 +66,13 @@ function previousLevel() {
         currentLevel = numberOfLevel - 1
     }
     initLevel();
+}
+
+function checkAnswer() {
+    if(items.targetItem.scoreTotal.toString() === items.userEntry.text) {
+        items.bonus.good("flower")
+        items.inputLocked = true
+    }
+    else
+        items.bonus.bad("flower")
 }
