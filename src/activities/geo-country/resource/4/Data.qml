@@ -45,6 +45,10 @@ Data {
         [
             //Lithuania
             "qrc:/gcompris/src/activities/geo-country/resource/board/board17_0.qml"
+        ],
+        [
+            //Spain
+            "qrc:/gcompris/src/activities/geo-country/resource/board/board18_0.qml"
         ]
     ]
 }

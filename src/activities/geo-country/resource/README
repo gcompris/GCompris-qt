@@ -477,6 +477,30 @@ west_virginia.svgz
 wisconsin.svgz
 wyoming.svgz
 
+Copyright: Jesús Espino, 2022
+License: CC-BY-SA 4.0
+Files:
+./spain:
+spain_andalucia.svgz
+spain_aragon.svgz
+spain_asturias.svgz
+spain_baleares.svgz
+spain_canarias.svgz
+spain_cantabria.svgz
+spain_castilla_la_mancha.svgz
+spain_castilla_y_leon.svgz
+spain_cataluna.svgz
+spain_ceuta.svgz
+spain_extremadura.svgz
+spain_galicia.svgz
+spain_la_rioja.svgz
+spain_madrid.svgz
+spain_melilla.svgz
+spain_murcia.svgz
+spain_navarra.svgz
+spain_pais_vasco.svgz
+spain_spain.svgz
+spain_valencia.svgz
 
 Notes: All the maps (except romania-historical and lithuania-cultural) were created based on data from OpenStreetMap (downloaded with https://osm-boundaries.com/), converted to country-specific projections using reproject (https://www.npmjs.com/package/reproject), converted to svg with geojson-to-svg (https://www.npmjs.com/package/geojson-to-svg), and then heavily edited in Inkscape.
 
