@@ -37,12 +37,15 @@ ActivityBase {
 
             if(event.key === Qt.Key_Backspace) {
                 backspace()
+                event.accepted = true
             }
-
-            if(event.key === Qt.Key_Enter || event.key === Qt.Key_Return)
+            else if(event.key === Qt.Key_Enter || event.key === Qt.Key_Return) {
                 Activity.checkAnswer();
-
-            appendText(event.text)
+                event.accepted = true
+            }
+            else if(appendText(event.text)) {
+                event.accepted = true
+            }
         }
 
         Component.onCompleted: {
@@ -144,25 +147,27 @@ ActivityBase {
 
         function appendText(text) {
             if(bonus.isPlaying || items.inputLocked)
-                return
+                return false
+
             if(text === keyboard.backspace) {
                 backspace()
-                return
+                return true
             }
 
             var number = parseInt(text)
             if(isNaN(number))
-                return
+                return false
 
             if(userEntry.text === "?") {
                 userEntry.text = ""
             }
 
             if(userEntry.text.length > ('' + targetItem.scoreTotal).length) {
-                return
+                return false
             }
 
             userEntry.text += text
+            return true
         }
 
         GCText {
