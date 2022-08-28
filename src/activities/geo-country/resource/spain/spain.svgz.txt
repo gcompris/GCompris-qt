@@ -1,0 +1,21 @@
+spain, X: 0.5055, Y: 0.5004
+andalucia, X: 0.3407, Y: 0.7071
+madrid, X: 0.3985, Y: 0.3761
+galicia, X: 0.1094, Y: 0.1278
+castilla_y_leon, X: 0.3559, Y: 0.2543
+castilla_la_mancha, X: 0.4458, Y: 0.4644
+cataluña, X: 0.7814, Y: 0.2429
+aragon, X: 0.6118, Y: 0.2803
+valencia, X: 0.632, Y: 0.4973
+murcia, X: 0.5667, Y: 0.6326
+asturias, X: 0.2594, Y: 0.0816
+pais_vasco, X: 0.4808, Y: 0.1177
+la_rioja, X: 0.4942, Y: 0.1888
+cantabria, X: 0.3846, Y: 0.1007
+navarra, X: 0.5479, Y: 0.1528
+extremadura, X: 0.2333, Y: 0.5109
+canarias, X: 0.7704, Y: 0.9013
+baleares, X: 0.8685, Y: 0.4788
+ceuta, X: 0.2815, Y: 0.8621
+melilla, X: 0.4621, Y: 0.9273
+
