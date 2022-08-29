@@ -65,6 +65,9 @@ ActivityBase {
             readonly property var levels: activity.datasetLoader.data.length !== 0 ? activity.datasetLoader.data : null
             property alias dataset: dataset
             property bool inputLocked: false
+            // same formula used to define dropCircle size, here to define a minimum MouseArea
+            // size for dropped items if they are smaller than the circles.
+            property double minimumClickArea: backgroundImage.width >= backgroundImage.height ? backgroundImage.height/35 : backgroundImage.width/35
         }
 
         Loader {

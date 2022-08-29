@@ -150,7 +150,10 @@ Item {
                 property real startX
                 property real startY
 
-                anchors.fill: parent
+                anchors.centerIn: parent
+                // the MouseArea size of dropped items is never smaller than the dropCircles
+                width: Math.max(parent.width, items.minimumClickArea)
+                height: Math.max(parent.height, items.minimumClickArea)
 
                 onPressed: {
                     Activity.hideInstructions();
