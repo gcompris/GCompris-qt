@@ -39,10 +39,6 @@ set(CMAKE_PREFIX_PATH "${Qt5_DIR}/")
 if(ECM_FOUND)
   include(kdeFetchTranslation)
   include(ECMAddTests)
-  include(ECMPoQmTools)
-  if(IS_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/po")
-    ecm_install_po_files_as_qm(po)
-  endif()
 
   option(BUILD_TESTING "Build and enable unit tests" OFF)
   include(ECMCoverageOption)
@@ -211,14 +207,18 @@ add_custom_target(getSvnTranslations
   )
 
 # Get all po files in po/. You can get them doing: python3 tools/l10n-fetch-po-files.py
-file(GLOB TRANSLATIONS_FILES RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} "po/*.po")
-# Set the output dir for the translation files to /bin
+file(GLOB TRANSLATIONS_FILES RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} "po/*/gcompris_qt.po")
 foreach(PoSource ${TRANSLATIONS_FILES})
+  # Get the locale
+  string(REGEX MATCH "po/([a-zA-Z@_]*)/gcompris_qt.po" _ ${PoSource})
+  set(locale ${CMAKE_MATCH_1})
   # Changes the .po extension to .ts
   string(REPLACE ".po" ".ts" TsSource ${PoSource})
-  # Removes the po/ folder
-  string(REPLACE "po/" "" TsSource ${TsSource})
-  # qm filename
+  # Replace qt in gcompris_qt.po with the locale
+  string(REPLACE "qt" "${locale}" TsSource ${TsSource})
+  # Removes the po/${locale} folder prefix
+  string(REPLACE "po/${locale}/" "" TsSource ${TsSource})
+  # qm extension filename
   string(REPLACE ".ts" ".qm" QmOutput ${TsSource})
 
   set(OutTsFile ${CMAKE_BINARY_DIR}/tmp/${TsSource})
