@@ -18,16 +18,13 @@ Run me from GCompris's top-level directory.
 
 SVN_PATH = "svn://anonsvn.kde.org/home/kde/branches/stable/l10n-kf5/"
 SOURCE_PO_PATH = "/messages/gcompris/gcompris_qt.po"
-OUTPUT_PO_PATH = "./po/"
-OUTPUT_PO_PATTERN = "gcompris_%s.po"
+OUTPUT_PO_PATH = "./po/%s/"
+OUTPUT_PO_FILE = "gcompris_qt.po"
 
 fixer = re.compile(r'^#~\| ', re.MULTILINE)
 re_empty_msgid = re.compile('^msgid ""$', re.MULTILINE)
 re_empty_line = re.compile('^$', re.MULTILINE)
 re_has_qt_contexts = re.compile('X-Qt-Contexts: true\\n')
-
-if not os.path.exists(OUTPUT_PO_PATH):
-    os.mkdir(OUTPUT_PO_PATH)
 
 all_languages = subprocess.check_output(['svn', 'cat', SVN_PATH + 'subdirs'],
                                        stderr=subprocess.STDOUT)
@@ -50,7 +47,12 @@ for lang in all_languages:
             print("Fetched %s (and performed %d cleanups)" % (lang, subs))
         else:
             print("Fetched %s" % lang)
-        out_file = open(OUTPUT_PO_PATH + OUTPUT_PO_PATTERN % lang, "wb")
+            
+        output_path = OUTPUT_PO_PATH % lang;
+        if not os.path.exists(output_path):
+            os.makedirs(output_path)
+
+        out_file = open(output_path + OUTPUT_PO_FILE, "wb")
         out_file.write(transformed.encode())
     except subprocess.CalledProcessError:
         print ("No data for %s" % lang)
