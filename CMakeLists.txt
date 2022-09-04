@@ -203,12 +203,35 @@ add_custom_target(getSvnTranslations
   COMMENT "Re-run cmake after this to be able to run BuildTranslations with the latest files"
   )
 
+# Get all supported locales by GCompris from LanguageList.qml file, excluded the commented ones
+file(STRINGS "${CMAKE_SOURCE_DIR}/src/core/LanguageList.qml" handledGComprisLocaleList ENCODING UTF-8 REGEX "[^//]{.*UTF-8")
+foreach(localeLine ${handledGComprisLocaleList})
+  # We match the pattern locale.UTF-8
+  string(REGEX MATCH ".*\"([a-zA-Z_@]*)\.UTF-8.*" _ ${localeLine})
+  set(localeFull ${CMAKE_MATCH_1})
+  list(APPEND gcomprisLocales ${localeFull})
+  # Add simplified locale
+  string(REGEX MATCH "([a-zA-Z@]*)_.*" _ ${localeFull})
+  set(localeShort ${CMAKE_MATCH_1})
+  list(APPEND gcomprisLocales ${localeShort})
+endforeach()
+# Remove all duplicated shortened locales
+list(REMOVE_DUPLICATES gcomprisLocales)
+
 # Get all po files in po/. You can get them doing: python3 tools/l10n-fetch-po-files.py
 file(GLOB TRANSLATIONS_FILES RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} "po/*/gcompris_qt.po")
 foreach(PoSource ${TRANSLATIONS_FILES})
   # Get the locale
   string(REGEX MATCH "po/([a-zA-Z@_]*)/gcompris_qt.po" _ ${PoSource})
   set(locale ${CMAKE_MATCH_1})
+
+  # search in src/core/LanguageList the line corresponding to the locale. If exists, then add the custom_command
+  if(NOT ${locale} IN_LIST gcomprisLocales)
+    message(STATUS "Locale ${locale} not supported by GCompris")
+    continue()
+  endif()
+  message(STATUS "Locale ${locale} is supported by GCompris")
+
   # Changes the .po extension to .ts
   string(REPLACE ".po" ".ts" TsSource ${PoSource})
   # Replace qt in gcompris_qt.po with the locale
@@ -219,6 +242,7 @@ foreach(PoSource ${TRANSLATIONS_FILES})
   string(REPLACE ".ts" ".qm" QmOutput ${TsSource})
 
   set(OutTsFile ${CMAKE_BINARY_DIR}/tmp/${TsSource})
+
   add_custom_command(
     OUTPUT ${QmOutput}
     COMMAND cmake -E make_directory ${GCOMPRIS_TRANSLATIONS_DIR}
