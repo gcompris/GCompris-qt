@@ -23,7 +23,7 @@
 
 #include <QtQml>
 
-#define GC_DEFAULT_FONT QLatin1String("Andika-R.otf")
+#define GC_DEFAULT_FONT QLatin1String("Andika-R.ttf")
 #define GC_DEFAULT_FONT_CAPITALIZATION 0 // Font.MixedCase
 #define GC_DEFAULT_FONT_LETTER_SPACING 0
 
@@ -99,8 +99,8 @@ ApplicationSettings::ApplicationSettings(const QString &configPath, QObject *par
                               .toBool();
     m_locale = m_config.value(LOCALE_KEY, GC_DEFAULT_LOCALE).toString();
     m_font = m_config.value(FONT_KEY, GC_DEFAULT_FONT).toString();
-    if (m_font == QLatin1String("Andika-R.ttf"))
-        m_font = "Andika-R.otf";
+    if (m_font == QLatin1String("Andika-R.otf"))
+        m_font = "Andika-R.ttf";
     m_fontCapitalization = m_config.value(FONT_CAPITALIZATION, GC_DEFAULT_FONT_CAPITALIZATION).toUInt();
     m_fontLetterSpacing = m_config.value(FONT_LETTER_SPACING, GC_DEFAULT_FONT_LETTER_SPACING).toReal();
     m_isEmbeddedFont = m_config.value(IS_CURRENT_FONT_EMBEDDED, true).toBool();

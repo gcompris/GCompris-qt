@@ -1,15 +1,12 @@
 FONTLOG
 Andika
-==========================
-
+======
 
 This file provides detailed information on the Andika family of fonts.
 This information should be distributed along with the Andika fonts and
 any derivative works.
 
-
-Basic Font Information
-----------------------
+## About this project
 
 Andika ("Write!" in Swahili) is a sans serif, Unicode-compliant font
 designed especially for literacy use, taking into account the needs of
@@ -26,41 +23,7 @@ get the all of characters they need for their particular language
 project, resulting in confusing and unattractive publications. Andika
 addresses those issues.
 
-After receiving many insightful comments on the Design Review and Basic
-fonts, we have refined Andika's final letterforms, with alternate shapes
-still available for some characters. 
-
-With the SIL TypeTuner utility (see http://scripts.sil.org/TypeTuner),
-you can select which alternates to use as Andika's default letterforms.
-
-This font now contains the same character set as Charis SIL and
-Doulos SIL.
-
-One font from this typeface family is included in this release:
-
-     * Andika Regular
-
-Work is ongoing to provide italic, bold and bold-italic weights.
-
-Features
---------
-
-Andika supports all of the smart font features that the Doulos SIL
-font supports. It also contains features specific to Andika. 
-These are:
-   Capital Q alternate
-   Lower case j serif alternate
-   Lower case q alternate
-   No-tail t and y alternates
-   Numeral 0 1 4 6 7 9 alternates
-   Tail i and l alternates
-
-More detail on features can be seen at
-http://scripts.sil.org/SILUnicodeRF_Features.
-
-
-A Note Regarding the Open Font License and TypeTuner
-----------------------------------------------------
+## A Note Regarding the Open Font License and TypeTuner
 
 The OFL prohibits the use of Reserved Font Names "Andika" and "SIL" in
 the name of any font that is derived from the Original Version of Andika.
@@ -81,17 +44,231 @@ with other tools would not be allowed to use the "Andika" or "SIL"
 Reserved Font Names and would have to be named something like 
 "Write Sans".
 
+## ChangeLog
 
-ChangeLog
-----------
 (This should list both major and minor changes, most recent first.)
 
-11 Jan 2015 (SIL TypeTuner) Tuned version of Andika Regular 5.000
-- Tuned and delivered by SIL TypeTuner 
-(http://scripts.sil.org/ttw/fonts2go.cgi).
-- See included xml file for details of feature changes.
+### 06 Sep 2022 (SIL TypeTuner) Tuned version of Andika version 6.101
 
-27 Oct 2014 (SIL NRSI team) Andika Regular version 5.000
+- Tuned and delivered by SIL TypeTuner (http://scripts.sil.org/ttw/fonts2go.cgi)
+
+- See included xml file for details of feature changes
+
+### 9 Feb 2022 (SIL WSTech Team) Andika version 6.101
+
+This is a maintenance release primarily focused on making the v6 fonts available on *TypeTuner Web*.
+
+#### New
+
+- The fonts now support SIL *TypeTuner*. Customized fonts can be created at *TypeTuner Web* (https://scripts.sil.org/ttw/fonts2go.cgi)
+
+- New `locl` OpenType feature that supports Macedonian (MKD/mk) Cyrillic alternates
+
+- Serbian and Macedonian alternates are also available through a new OpenType feature (cv84) for applications that do not support language-specific `locl` features
+
+- Characters have been added to support Unicode versions up to 14.0.0 (more to be added in future releases):
+    - U+A7C4 LATIN CAPITAL LETTER C WITH PALATAL HOOK
+    - U+A7C5 LATIN CAPITAL LETTER S WITH HOOK
+    - U+1DF00 LATIN SMALL LETTER FENG DIGRAPH WITH TRILL
+    - U+1DF01 LATIN SMALL LETTER REVERSED SCRIPT G
+    - U+1DF02 LATIN LETTER SMALL CAPITAL TURNED G
+    - U+1DF03 LATIN SMALL LETTER REVERSED K
+    - U+1DF05 LATIN SMALL LETTER LEZH WITH RETROFLEX HOOK
+    - U+1DF07 LATIN SMALL LETTER REVERSED ENG
+    - U+1DF09 LATIN SMALL LETTER T WITH HOOK AND RETROFLEX HOOK
+    - U+1DF0A LATIN LETTER RETROFLEX CLICK WITH RETROFLEX HOOK
+    - U+1DF0B LATIN SMALL LETTER ESH WITH DOUBLE BAR
+    - U+1DF0C LATIN SMALL LETTER ESH WITH DOUBLE BAR AND CURL
+    - U+1DF0D LATIN SMALL LETTER TURNED T WITH CURL
+    - U+1DF0E LATIN LETTER INVERTED GLOTTAL STOP WITH CURL
+    - U+1DF0F LATIN LETTER STRETCHED C WITH CURL
+    - U+1DF10 LATIN LETTER SMALL CAPITAL TURNED K
+    - U+1DF11 LATIN SMALL LETTER L WITH FISHHOOK
+    - U+1DF12 LATIN SMALL LETTER DEZH DIGRAPH WITH PALATAL HOOK
+    - U+1DF13 LATIN SMALL LETTER L WITH BELT AND PALATAL HOOK
+    - U+1DF14 LATIN SMALL LETTER ENG WITH PALATAL HOOK
+    - U+1DF15 LATIN SMALL LETTER TURNED R WITH PALATAL HOOK
+    - U+1DF16 LATIN SMALL LETTER R WITH FISHHOOK AND PALATAL HOOK
+    - U+1DF17 LATIN SMALL LETTER TESH DIGRAPH WITH PALATAL HOOK
+    - U+1DF19 LATIN SMALL LETTER DEZH DIGRAPH WITH RETROFLEX HOOK
+    - U+1DF1A LATIN SMALL LETTER I WITH STROKE AND RETROFLEX HOOK
+    - U+1DF1B LATIN SMALL LETTER O WITH RETROFLEX HOOK
+    - U+1DF1C LATIN SMALL LETTER TESH DIGRAPH WITH RETROFLEX HOOK
+    - U+1DF1D LATIN SMALL LETTER C WITH RETROFLEX HOOK
+    - U+1DF1E LATIN SMALL LETTER S WITH CURL
+    
+#### Improved
+
+- The special-purpose modified fonts have been updated to be based on the current version. These are available at https://software.sil.org/lcgfonts/download/ and include *Literacy* and *Compact* versions.
+
+- U+02DE MODIFIER LETTER RHOTIC HOOK position improved with modifier vowels: 
+    - U+02B8 MODIFIER LETTER SMALL Y
+    - U+1D53 MODIFIER LETTER SMALL OPEN O
+    - U+1D5A MODIFIER LETTER SMALL TURNED M
+    - U+1DBA MODIFIER LETTER SMALL TURNED V
+
+- Design improved for these characters:
+    - U+0184 LATIN CAPITAL LETTER TONE SIX
+    - U+0185 LATIN SMALL LETTER TONE SIX
+
+- The small caps feature (smcp) now supports more characters
+
+#### Changed encoding
+
+- The following characters were in the SIL PUA but have now been given Unicode assignments. The SIL PUA characters are now deprecated:
+    - U+A7C6 LATIN CAPITAL LETTER Z WITH PALATAL HOOK (was U+F234)
+    - U+10783 MODIFIER LETTER SMALL AE (was U+F1A1)
+    - U+1078F MODIFIER LETTER SMALL CLOSED REVERSED OPEN E (was U+F1A4)
+    - U+10791 MODIFIER LETTER SMALL RAMS HORN (was U+F1B5)
+    - U+10795 MODIFIER LETTER SMALL H WITH STROKE (was U+F1BC)
+    - U+107A0 MODIFIER LETTER SMALL TURNED Y (was U+F1CE)
+    - U+107A2 MODIFIER LETTER SMALL O WITH STROKE (was U+F1AB)
+    - U+107A3 MODIFIER LETTER SMALL CAPITAL OE (was U+F1AE)
+    - U+107B2 MODIFIER LETTER SMALL CAPITAL Y (was U+F1B4)
+    - U+1088E NABATAEAN LETTER FINAL KAPH (was U+F1A3)
+    - U+1DF04 LATIN LETTER SMALL CAPITAL L WITH BELT (was U+F268)
+    - U+1DF06 LATIN SMALL LETTER TURNED Y WITH BELT (was U+F267)
+    - U+1DF08 LATIN SMALL LETTER TURNED R WITH LONG LEG AND RETROFLEX HOOK (was U+F269)
+    - U+1DF18 LATIN SMALL LETTER EZH WITH PALATAL HOOK (was U+F235)
+
+### 2 July 2021 (SIL WSTech Team) Andika version 6.001
+
+- Reverted font Postscript name to that used in v5 and earlier to avoid problems with unrecognized fonts when opening older documents.
+
+### 29 Jun 2021 (SIL WSTech Team) Andika version 6.000
+
+***Note that this is a major upgrade that may cause document reflow as some glyphs widths have changed and some features have been removed.***
+
+#### Removed
+
+- **Removed DSIGs added in version 5.000.** These have now been removed to reflect current best practice font development guidance. Adobe InDesign will complain that fonts cannot be found if a document last saved with version 5.000 is opened with version 5.960 or later installed. It will be necessary to find/replace the fonts in the document using the command in the Type menu. Please also look over the document carefully to note any places where changes in the fonts have affected letterforms or spacing.
+
+- **Graphite has been removed.** Application and OS support for OpenType has greatly improved, so the need for Graphite in this font family is greatly reduced. *If this affects you, and you find that OpenType does not provide sufficient support for your needs, please contact us right away.*  
+
+- Removed the *Show Invisibles* feature.
+
+- Removed support for nine-level pitch contours. These will be replaced by a standalone pitch contours font in the future.
+
+#### Added
+
+Characters added to support Unicode versions 7.0-13.0, including feature support (e.g. small caps) where appropriate:
+
+- U+03D1 GREEK THETA SYMBOL
+- U+03F4 GREEK CAPITAL THETA SYMBOL
+- U+1AB0 COMBINING DOUBLED CIRCUMFLEX ACCENT
+- U+1AB1 COMBINING DIAERESIS-RING
+- U+1AB2 COMBINING INFINITY
+- U+1AB3 COMBINING DOWNWARDS ARROW
+- U+1AB4 COMBINING TRIPLE DOT
+- U+1AB5 COMBINING X-X BELOW
+- U+1AB6 COMBINING WIGGLY LINE BELOW
+- U+1AB7 COMBINING OPEN MARK BELOW
+- U+1AB8 COMBINING DOUBLE OPEN MARK BELOW
+- U+1AB9 COMBINING LIGHT CENTRALIZATION STROKE BELOW
+- U+1ABA COMBINING STRONG CENTRALIZATION STROKE BELOW
+- U+1DF5 COMBINING UP TACK ABOVE
+- U+203B REFERENCE MARK
+- U+20BE LARI SIGN
+- U+20BF BITCOIN SIGN
+- U+27E8 MATHEMATICAL LEFT ANGLE BRACKET
+- U+27E9 MATHEMATICAL RIGHT ANGLE BRACKET
+- U+2E13 DOTTED OBELOS
+- U+2E14 DOWNWARDS ANCORA
+- U+2E17 DOUBLE OBLIQUE HYPHEN
+- U+2E22 TOP LEFT HALF BRACKET
+- U+2E23 TOP RIGHT HALF BRACKET
+- U+2E24 BOTTOM LEFT HALF BRACKET
+- U+2E25 BOTTOM RIGHT HALF BRACKET
+- U+A78F LATIN LETTER SINOLOGICAL DOT
+- U+A7AE LATIN CAPITAL LETTER SMALL CAPITAL I
+- U+A7AF LATIN LETTER SMALL CAPITAL Q
+- U+A7B3 LATIN CAPITAL LETTER CHI
+- U+A7B4 LATIN CAPITAL LETTER BETA
+- U+A7B5 LATIN SMALL LETTER BETA
+- U+A7B6 LATIN CAPITAL LETTER OMEGA
+- U+A7B7 LATIN SMALL LETTER OMEGA
+- U+A7B8 LATIN CAPITAL LETTER U WITH STROKE
+- U+A7B9 LATIN SMALL LETTER U WITH STROKE
+- U+AB30 LATIN SMALL LETTER BARRED ALPHA
+- U+AB53 LATIN SMALL LETTER CHI
+- U+AB5C MODIFIER LETTER SMALL HENG
+- U+AB5E MODIFIER LETTER SMALL L WITH MIDDLE TILDE
+- U+F26E CAPITAL RAMS HORN (in SIL PUA)
+
+#### New
+
+- First release that uses a UFO-based design and production workflow
+    - All sources are in open formats
+    - Build toolkit and workflow is completely open-source
+    - See https://silnrsi.github.io/silfontdev/en-US/Introduction.html
+
+- New weights previously only available in the Andika New Basic fonts. The new weights may not be identical in metrics or form to the Basic fonts, though care has been taken to minimize differences.
+
+- Web fonts are provided in both WOFF and WOFF2 formats
+
+- Applied new hinting techniques to try to improve screen rendering on Windows
+
+- All-new documentation in HTML and PDF formats
+
+- Features for controlling literacy forms of a and g separately
+    - Double-story a alternates (ss13)
+    - Double-story g alternates (ss14)
+
+- Feature to support side-by-side rendering of U+0300 plus U+0301
+    - Kayan diacritics (cv79)
+
+- Added feature to provide alternate form of capital J with top serif (cv35)
+
+- Tone letter features (cv91 & cv92) now supported through OpenType
+
+- Made many basic or common glyphs interpolation-compatible. There is no current plan to make all of Andika interpolatable, although please let us know if this is a feature that would be helpful to you.
+
+#### Fixes
+
+- Fixed some small capital correspondences, including added support for clicks
+
+- Fixed problems with spacing of tone letters
+
+- Improved miscellaneous anchor positions, including the position of diacritics below glyphs with macrons below (e.g. U+1E0F LATIN SMALL LETTER D WITH LINE BELOW)
+
+- Improved position of diacritics for superscripts and modifier letters (including cedilla, ogonek, rhotic hook)
+
+- Fixes and improvements to various glyphs:
+    - U+00E6 LATIN SMALL LETTER AE (made single-story in italic)
+    - U+01E5 LATIN SMALL LETTER G WITH STROKE (bar position on single-story variant)
+    - U+026D LATIN SMALL LETTER L WITH RETROFLEX HOOK (form)
+    - U+026E LATIN SMALL LETTER EZH
+    - U+02D6 MODIFIER LETTER PLUS SIGN (size)
+    - U+02DF MODIFIER LETTER CROSS ACCENT (size)
+    - U+0306 COMBINING BREVE (improved position for Cyrillic)
+    - U+0312 COMBINING TURNED COMMA ABOVE (increased size)
+    - U+0313 COMBINING COMMA ABOVE (increased size)
+    - U+031A COMBINING LEFT ANGLE ABOVE (spacing)
+    - U+0326 COMBINING COMMA BELOW (increased size)
+    - U+033B COMBINING SQUARE BELOW (more rectangular)
+    - U+04E0 CYRILLIC CAPITAL LETTER ABKHASIAN DZE (form)
+    - U+1D15 LATIN LETTER SMALL CAPITAL OU (form)
+    - U+1D3B MODIFIER LETTER CAPITAL REVERSED N (form)
+    - U+1D77 LATIN SMALL LETTER TURNED G (position)
+    - U+1D78 MODIFIER LETTER CYRILLIC EN (form)
+    - U+1DA9 MODIFIER LETTER SMALL L WITH RETROFLEX HOOK (form)
+    - U+2008 PUNCTUATION SPACE (made width consistent)
+    - U+A76A LATIN CAPITAL LETTER ET
+    - U+A76B LATIN SMALL LETTER ET
+    - U+A76C LATIN CAPITAL LETTER IS
+    - U+A76D LATIN SMALL LETTER IS
+    - U+A778 LATIN SMALL LETTER UM (spacing)
+    - U+A77F LATIN SMALL LETTER TURNED INSULAR G (position)
+    - U+A78E LATIN SMALL LETTER L WITH RETROFLEX HOOK AND BELT (form)
+    - U+A7F8 MODIFIER LETTER CAPITAL H WITH STROKE (form)
+
+#### Known issues
+
+- There is no support for TypeTuner or TypeTuner Web. We hope to add that support soon.
+
+- There are no regional subsets. Please contact us if these are a priority for you and describe how you use them. We are reassessing whether to provide these subsets. With current web technology and WOFF2 compression most uses can be met equally well with the full fonts.
+
+### 27 Oct 2014 (SIL NRSI team) Andika Regular version 5.000
 - Added Stylistic Sets to the font for OpenType support 
 	of previously Graphite-only features
 - Added Character Variants to the font for OpenType support 
@@ -159,68 +336,53 @@ ChangeLog
 - Changed U+1D44 and U+0250 to be double-story rather than single-story
 - Allowed combining marks to render properly with U+02D0
 
-1 Aug 2012 (SIL NRSI team) Andika Regular version 1.004
+### 1 Aug 2012 (SIL NRSI team) Andika Regular version 1.004
 - Changed Graphite feature identifiers from integers to 4-character 
   alphanumeric tags (no other changes)
 
-12 Sep 2011 (SIL NRSI team) Andika Regular version 1.002
+### 12 Sep 2011 (SIL NRSI team) Andika Regular version 1.002
 - Removed the VDMX table and changed the version number.
 
-8 Jul 2011 (SIL NRSI team) Andika Regular version 1.000
+### 8 Jul 2011 (SIL NRSI team) Andika Regular version 1.000
 - Released under SIL Open Font License.
 
-2 May 2008 (SIL NRSI team) Andika Basic Regular version 1.0
+### 2 May 2008 (SIL NRSI team) Andika Basic Regular version 1.0
 - Released under SIL Open Font License.
 
-19 Jan 2007 (SIL NRSI team) Andika Design Review version 0.001
+### 19 Jan 2007 (SIL NRSI team) Andika Design Review version 0.001
 - Released under Open Font License. Five new fonts containing
   revisions of some glyphs and different combinations of others.
 
-7 Aug 2006 (SIL NRSI team) Andika Design Review version 0.001
+### 7 Aug 2006 (SIL NRSI team) Andika Design Review version 0.001
 - Released under Open Font License.
 
 
-Acknowledgements
------------------
+## Acknowledgements
+
 (Here is where contributors can be acknowledged. If you make modifications
-be sure to add your name (N), email (E), web-address (W) and description (D).
-This list is sorted by last name in alphabetical order.)
+be sure to add your name (N), email (E), web-address (W) and description
+(D). This list is sorted by last name in alphabetical order.)
 
-N: Don Collingsworth
-E: http://scripts.sil.org/support
-W: http://scripts.sil.org/
-D: Contributed some extended Latin glyphs
+N: Jon Coblentz, Don Collingsworth, Sharon Correll, Lorna Evans,
+Bob Hallissy, Eric Hays, Martin Hosken, Jonathan Kew, Julie Remington,
+Alan Ward
+E: https://software.sil.org/andika/about/contact/
+W: https://software.sil.org/andika/
+D: SIL designers and font engineers
 
-N: Victor Gaultney
-E: http://scripts.sil.org/support
-W: http://www.sil.org/~gaultney/
-D: Original Designer
+N: Victor Gaultney, Annie Olsen
+E: https://software.sil.org/andika/about/contact/
+W: https://software.sil.org/andika/
+D: Original Designers
 
-N: Eric Hays
-E: http://scripts.sil.org/support
-W: http://scripts.sil.org/
-D: Contributed some extended Latin glyphs
+N: Pablo Ugerman
+E: https://software.sil.org/andika/about/contact/
+W: https://software.sil.org/andika/
+D: Assistance with Andika Bold
 
-N: Annie Olsen
-E: http://scripts.sil.org/support
-W: http://scripts.sil.org/
-D: Lead Designer
+The Andika SIL project is maintained by SIL International, a global,
+faith-based nonprofit that works with local communities around the world
+to develop language solutions that expand possibilities for a better life.
 
-N: Julie Remington
-E: http://scripts.sil.org/support
-W: http://scripts.sil.org/
-D: Contributed some extended Latin glyphs
-
-N: SIL font engineers
-E: http://scripts.sil.org/support
-W: http://scripts.sil.org/
-D: Graphite, OpenType, and TypeTuner code, and build support
-
-
-The Andika and Andika Basic fonts are maintained by SIL International.
-
-For more information please visit the Andika page on SIL
-International's Computers and Writing Systems website:
-http://scripts.sil.org/andika
-
-Support through the website: http://scripts.sil.org/Support
+For more information or support please visit:
+https://software.sil.org/andika/
