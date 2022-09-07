@@ -31,7 +31,7 @@
  * 'ID''X''Y'
  *
  * - 'ID' is one char in the range A-R and X
- *   A-N Specify a different car color of size 2
+ *   A-K Specify a different car color of size 2
  *   O-R Specify a different car color of size 3
  *   X   Always Red, the goal car of size 2
  *
@@ -158,10 +158,7 @@ var carList = [
   baseUrl + "car9.svg",
   baseUrl + "car10.svg",
   baseUrl + "car11.svg",
-  baseUrl + "car12.svg",
-  baseUrl + "car13.svg",
-  baseUrl + "car14.svg",
-  baseUrl + "car15.svg"
+  baseUrl + "car12.svg"
 ];
 
 var truckList = [
