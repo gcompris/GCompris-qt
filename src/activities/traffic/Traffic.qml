@@ -21,12 +21,9 @@ ActivityBase {
     onStart: focus = true
     onStop: {}
 
-    pageComponent: Image {
+    pageComponent: Rectangle {
         id: background
-        source: "qrc:/gcompris/src/activities/traffic/resource/traffic_bg.svg"
-        sourceSize.width: width
-        sourceSize.height: height
-        fillMode: Image.PreserveAspectCrop
+        color: "#808080"
 
         signal start
         signal stop
@@ -48,6 +45,7 @@ ActivityBase {
             property alias score: score
             property alias jamBox: jamBox
             property alias jamGrid: jamGrid
+            property bool isVertical: background.width < background.height - 64 * ApplicationInfo.ratio
         }
 
         onStart: { Activity.start(items, mode) }
@@ -55,19 +53,46 @@ ActivityBase {
 
         Image {
             id: jamBox
-            source: "qrc:/gcompris/src/activities/traffic/resource/traffic_box.svg"
-
-            anchors.centerIn: parent
-            sourceSize.width: Math.min(background.width * 0.85,
-                                       background.height * 0.85)
-            fillMode: Image.PreserveAspectFit
-            property double scaleFactor: background.width / background.sourceSize.width
+            source: "qrc:/gcompris/src/activities/traffic/resource/jamBox.svg"
+            width: parent.height - 64 * ApplicationInfo.ratio
+            height: width
+            sourceSize.width: width
+            sourceSize.height: height
+            anchors.horizontalCenter: background.horizontalCenter
+            states: [
+                State {
+                    name: "verticalLayout"
+                    when: items.isVertical
+                    PropertyChanges {
+                        target: jamBox
+                        width: parent.width
+                    }
+                    AnchorChanges {
+                        target: jamBox
+                        anchors.top: undefined
+                        anchors.verticalCenter: background.verticalCenter
+                    }
+                },
+                State {
+                    name: "horizontalLayout"
+                    when: !items.isVertical
+                    PropertyChanges {
+                        target: jamBox
+                        width: parent.height - 64 * ApplicationInfo.ratio
+                    }
+                    AnchorChanges {
+                        target: jamBox
+                        anchors.top: parent.top
+                        anchors.verticalCenter: undefined
+                    }
+                }
+            ]
 
             Grid {
                 id: jamGrid
                 anchors.centerIn: parent
-                width: parent.width - 86 * jamBox.scaleFactor * ApplicationInfo.ratio
-                height: parent.height - 86 * jamBox.scaleFactor * ApplicationInfo.ratio
+                width: parent.width * 0.75
+                height: width
                 columns: 6
                 rows: 6
                 spacing: 0
@@ -82,8 +107,8 @@ ActivityBase {
                         height: jamGrid.height / jamGrid.rows
                         width: height
                         border.width: 1
-                        border.color: "white"
-                        color: "#444444"
+                        border.color: "#A2A2A2"
+                        color: "transparent"
                     }
                 }
             }

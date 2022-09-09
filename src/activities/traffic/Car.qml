@@ -26,7 +26,7 @@ Item {
     property alias color: carRect.color
     property alias source: carImage.source
     
-    property real blockSize: ((parent.width-3) / 6)
+    property real blockSize: parent.width / 6
     property var xBounds: undefined
     property var yBounds: undefined
 
@@ -74,7 +74,7 @@ Item {
             width: parent.width
             height: parent.height
             
-            border.width: 1
+            border.width: 2
             border.color: "white"
             
             MultiPointTouchArea {
