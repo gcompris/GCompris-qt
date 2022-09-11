@@ -69,6 +69,17 @@ Item {
                     width: managePupilsViewRectangle.width - 10
                     height: parent.height
 
+                    CheckBox {
+                        id: selectAllCheckBox
+                        leftPadding: 20
+                        topPadding: 20
+                        onClicked: {
+                            for(var i = 0 ; i < pupilsDetailsRepeater.count ; i ++) {
+                                pupilsDetailsRepeater.itemAtIndex(i).pupilNameCheckBox.checked = checked;
+                            }
+                        }
+                    }
+
                     Rectangle {
                         id: pupilNameHeader
                         Layout.fillHeight: true
@@ -100,43 +111,34 @@ Item {
             }
 
             //pupils data
-            Repeater {
+            ListView {
                 id: pupilsDetailsRepeater
 
                 model: masterController.ui_users
+                width: managePupilsViewRectangle.width
+                height: 400 // TODO Compute the good size and unhardcode...
+                contentHeight: lineHeight * count
 
-                Rectangle {
+                readonly property int lineHeight: 40
+                delegate: Rectangle {
                     id: pupilDetailsRectangle
 
                     property alias pupilNameCheckBox: pupilNameCheckBox
 
-                    property bool editPupilRectangleVisible: false
-                    property bool optionsPupilRectangleVisible: false
-
                     width: managePupilsViewRectangle.width
-                    height: 40
-
-                    border.color: "green"
-                    border.width: 5
+                    height: pupilsDetailsRepeater.lineHeight
 
                     MouseArea {
                         id: pupilDetailsRectangleMouseArea
-                        anchors.right: pupilDetailsRectangle.right
-                        anchors.top: pupilDetailsRectangle.top
-                        height: pupilDetailsRectangle.height
-                        width: parent.width
+                        anchors.fill: parent
 
                         hoverEnabled: true
                         onEntered: {
                             pupilDetailsRectangle.color = Style.colourPanelBackgroundHover
-                            pupilDetailsRectangle.editPupilRectangleVisible = true
-                            pupilDetailsRectangle.optionsPupilRectangleVisible = true
 
                         }
                         onExited: {
                             pupilDetailsRectangle.color = Style.colourBackground
-                            pupilDetailsRectangle.editPupilRectangleVisible = false
-                            pupilDetailsRectangle.optionsPupilRectangleVisible = false
                         }
 
                         RowLayout {
@@ -158,6 +160,7 @@ Item {
                                     leftPadding: 20
                                 }
                             }
+
                             Rectangle {
                                 id: groups
                                 Layout.fillWidth: true
@@ -172,91 +175,21 @@ Item {
                                     color: "grey"
                                 }
                             }
-                            Rectangle {
+                            Button {
                                 id: editPupilRectangle
-                                Layout.minimumWidth: 50
-                                Layout.fillHeight: true
                                 height: 40
+                                visible: pupilDetailsRectangleMouseArea.containsMouse
+                                text: "\uf304"
 
-                                visible: pupilDetailsRectangle.editPupilRectangleVisible
-                                color: "transparent"
-                                Text {
-                                    id: editIcon
-                                    text: "\uf304"
-                                    anchors.centerIn: parent
-                                    color: "grey"
-                                    font {
-                                        family: Style.fontAwesome
-                                        pixelSize: Style.pixelSizeNavigationBarIcon / 2
-                                    }
-                                }
-                                MouseArea {
-                                    anchors.left: parent.left
-                                    anchors.top: parent.top
-                                    height: parent.height
-                                    width: parent.width
-
-                                    hoverEnabled: true
-                                    onEntered: {
-                                        editIcon.color = Style.colourNavigationBarBackground
-                                    }
-                                    onExited: {
-                                        editIcon.color = Style.colourCommandBarFontDisabled
-                                    }
-                                    onClicked: {
-                                        modifyPupilDialog.currentPupil.name = modelData.name
-                                        // todo: get groups of user
-                                        //modifyPupilDialog.groupsNames = modelData[2]
-                                        modifyPupilDialog.pupilsListIndex = index
-                                        modifyPupilDialog.open()
-                                    }
-                                }
-                            }
-                            Rectangle {
-                                id: optionsPupilRectangle
-                                Layout.minimumWidth: 50
-                                Layout.alignment: Qt.AlignRight
-                                Layout.fillHeight: true
-                                height: 40
-
-                                visible: pupilDetailsRectangle.optionsPupilRectangleVisible
-                                color: "transparent"
-                                Text {
-                                    id: optionsIcon
-                                    text: "\uf142"   //elipsis-v
-                                    anchors.horizontalCenter: parent.horizontalCenter
-                                    anchors.verticalCenter: parent.verticalCenter
-                                    color: "grey"
-                                    font {
-                                        family: Style.fontAwesome
-                                        pixelSize: Style.pixelSizeNavigationBarIcon / 2    //? see with style
-                                    }
-                                }
-                                MouseArea {
-                                    anchors.left: parent.left
-                                    anchors.top: parent.top
-                                    height: parent.height
-                                    width: parent.width
-
-                                    hoverEnabled: true
-                                    onClicked: {
-                                        modifyPupilGroupsDialog.open()
-                                    }
-
-                                    onEntered: {
-                                        optionsIcon.color = Style.colourNavigationBarBackground
-
-                                    }
-                                    onExited: {
-                                        optionsIcon.color = Style.colourCommandBarFontDisabled
-                                    }
+                                onClicked: {
+                                    modifyPupilDialog.currentPupil.name = modelData.name
+                                    // todo: get groups of user
+                                    //modifyPupilDialog.groupsNames = modelData[1]
+                                    modifyPupilDialog.pupilsListIndex = index
+                                    modifyPupilDialog.open()
                                 }
                             }
                         }
-                    }
-
-                    ModifyPupilGroupsDialog {
-                        id: modifyPupilGroupsDialog
                     }
 
                     AddModifyPupilDialog {
@@ -311,7 +244,7 @@ Item {
                 userToAdd.name = pupilDetails[0]
                 // todo have a feedback if user has not been created (already exist...)
                 masterController.createUser(userToAdd)
-                var groups = pupilDetails[2].split("-");
+                var groups = pupilDetails[1].split("-");
                 if(groups.length != 0) {
                     masterController.setGroupsForUser(userToAdd, groups)
                 }
@@ -325,8 +258,8 @@ Item {
         onOpened: {
             var tmpPupilsNamesList = []
             for(var i = 0 ; i < pupilsDetailsRepeater.count ; i ++) {
-                if (pupilsDetailsRepeater.itemAt(i).pupilNameCheckBox.checked === true) {
-                    tmpPupilsNamesList.push(pupilsDetailsRepeater.itemAt(i).pupilNameCheckBox.text)
+                if (pupilsDetailsRepeater.itemAtIndex(i).pupilNameCheckBox.checked === true) {
+                    tmpPupilsNamesList.push(pupilsDetailsRepeater.itemAtIndex(i).pupilNameCheckBox.text)
                 }
             }
             console.log(tmpPupilsNamesList)
@@ -357,8 +290,8 @@ Item {
         onOpened: {
             var tmpPupilsNamesList = []
             for(var i = 0 ; i < pupilsDetailsRepeater.count ; i ++) {
-                if (pupilsDetailsRepeater.itemAt(i).pupilNameCheckBox.checked === true) {
-                    tmpPupilsNamesList.push(pupilsDetailsRepeater.itemAt(i).pupilNameCheckBox.text)
+                if (pupilsDetailsRepeater.itemAtIndex(i).pupilNameCheckBox.checked === true) {
+                    tmpPupilsNamesList.push(pupilsDetailsRepeater.itemAtIndex(i).pupilNameCheckBox.text)
                 }
             }
             console.log(tmpPupilsNamesList)
@@ -389,8 +322,8 @@ Item {
         onOpened: {
             var tmpPupilsNamesList = []
             for(var i = 0 ; i < pupilsDetailsRepeater.count ; i ++) {
-                if (pupilsDetailsRepeater.itemAt(i).pupilNameCheckBox.checked === true) {
-                    tmpPupilsNamesList.push(pupilsDetailsRepeater.itemAt(i).pupilNameCheckBox.text)
+                if (pupilsDetailsRepeater.itemAtIndex(i).pupilNameCheckBox.checked === true) {
+                    tmpPupilsNamesList.push(pupilsDetailsRepeater.itemAtIndex(i).pupilNameCheckBox.text)
                 }
             }
             console.log(tmpPupilsNamesList)
