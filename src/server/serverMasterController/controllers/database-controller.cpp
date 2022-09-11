@@ -17,7 +17,7 @@
 #include "config/ServerSettings.h"
 
 #define CREATE_TABLE_USERS                                              \
-    "CREATE TABLE IF NOT EXISTS users (user_name TEXT PRIMARY KEY NOT NULL, dateOfBirth TEXT, password TEXT); "
+    "CREATE TABLE IF NOT EXISTS users (user_name TEXT PRIMARY KEY NOT NULL, password TEXT); "
 #define CREATE_TABLE_GROUPS                                             \
     "CREATE TABLE IF NOT EXISTS groups (group_name TEXT PRIMARY KEY NOT NULL, description TEXT); "
 #define CREATE_TABLE_USERGROUP                                          \
@@ -374,13 +374,11 @@ void DatabaseController::retrieveAllExistingUsers(QList<UserData *> &allUsers)
     query.exec();
     const int rowId = query.record().indexOf("ROWID");
     const int nameIndex = query.record().indexOf("user_name");
-    const int dateIndex = query.record().indexOf("dateOfBirth");
     const int passwordIndex = query.record().indexOf("password");
     while (query.next()) {
         UserData *u = new UserData();
         u->setPrimaryKey(query.value(rowId).toInt());
         u->setName(query.value(nameIndex).toString());
-        u->setDateOfBirth(query.value(dateIndex).toString());
         u->setPassword(query.value(passwordIndex).toString());
         allUsers.push_back(u);
     }
@@ -398,9 +396,8 @@ int DatabaseController::addUser(const UserData &user)
         qDebug() << "user " << user.getName() << "already exists";
         return userId;
     }
-    query.prepare("INSERT INTO users (user_name, dateOfBirth, password) VALUES(:name, :dateOfBirth, :password)");
+    query.prepare("INSERT INTO users (user_name, password) VALUES(:name, :password)");
     query.bindValue(":name", user.getName());
-    query.bindValue(":dateOfBirth", user.getDateOfBirth());
     query.bindValue(":password", user.getPassword());
     if (!query.exec()) {
         qDebug() << query.lastError();
@@ -423,9 +420,8 @@ bool DatabaseController::updateUser(UserData *oldUser, UserData *newUser)
         return false;
     }
     QSqlQuery updateQuery(implementation->database);
-    updateQuery.prepare("UPDATE users SET user_name=:name, dateOfBirth=:dateOfBirth, password=:password WHERE ROWID=:id");
+    updateQuery.prepare("UPDATE users SET user_name=:name, password=:password WHERE ROWID=:id");
     updateQuery.bindValue(":name", newUser->getName());
-    updateQuery.bindValue(":dateOfBirth", newUser->getDateOfBirth());
     updateQuery.bindValue(":password", newUser->getPassword());
     updateQuery.bindValue(":id", oldUser->getPrimaryKey());
     if (!updateQuery.exec()) {

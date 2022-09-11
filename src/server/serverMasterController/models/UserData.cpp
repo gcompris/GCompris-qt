@@ -14,15 +14,14 @@
 #include "GroupData.h"
 #include "UserData.h"
 
-UserData::UserData(const QString &name, const QString &dateOfBirth, const QString &password) :
-    m_name(name), m_dateOfBirth(dateOfBirth), m_password(password), m_status(ConnectionStatus::NOT_CONNECTED)
+UserData::UserData(const QString &name, const QString &password) :
+    m_name(name), m_password(password), m_status(ConnectionStatus::NOT_CONNECTED)
 {
 }
 
 UserData::UserData(const UserData &user)
 {
     m_name = user.m_name;
-    m_dateOfBirth = user.m_dateOfBirth;
     m_password = user.m_password;
     m_status = user.m_status;
 }
@@ -30,7 +29,6 @@ UserData::UserData(const UserData &user)
 UserData &UserData::operator=(const UserData &user)
 {
     m_name = user.m_name;
-    m_dateOfBirth = user.m_dateOfBirth;
     m_password = user.m_password;
     m_status = user.m_status;
     return *this;
@@ -44,12 +42,6 @@ void UserData::setName(const QString &name)
 {
     m_name = name;
     emit newName();
-}
-
-void UserData::setDateOfBirth(const QString &dateOfBirth)
-{
-    m_dateOfBirth = dateOfBirth;
-    emit newDateOfBirth();
 }
 
 void UserData::setPassword(const QString &password)
@@ -67,11 +59,6 @@ void UserData::setConnectionStatus(const ConnectionStatus::Value status)
 const QString &UserData::getName() const
 {
     return m_name;
-}
-
-const QString &UserData::getDateOfBirth() const
-{
-    return m_dateOfBirth;
 }
 
 const QString &UserData::getPassword() const
