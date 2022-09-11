@@ -57,7 +57,6 @@ Item {
             width: parent.width
 
             property int pupilNameColWidth: pupilsDetailsColumn.width / 3
-            property int yearOfBirthColWidth: pupilsDetailsColumn.width / 8
 
             //pupils header
             Rectangle {
@@ -80,19 +79,6 @@ Item {
                             text: qsTr("Pupils Names")
                             font.bold: true
                             leftPadding: 60
-                            topPadding: 20
-                        }
-                    }
-                    Rectangle {
-                        id: yearOfBirthHeader
-                        Layout.fillHeight: true
-                        Layout.minimumWidth: pupilsDetailsColumn.yearOfBirthColWidth     //any way to find "year of birth text width" if translations ?
-                        Text {
-                            anchors.verticalCenter: parent.verticalCenter
-                            anchors.horizontalCenter: parent.horizontalCenter
-                            text: qsTr("Year of Birth")
-                            font.bold: true
-                            color: Style.colourNavigationBarBackground
                             topPadding: 20
                         }
                     }
@@ -173,19 +159,6 @@ Item {
                                 }
                             }
                             Rectangle {
-                                id: yearOfBirth
-                                Layout.fillHeight: true
-                                Layout.minimumWidth: pupilsDetailsColumn.yearOfBirthColWidth   //any way to find "year of birth text width" if translations ?
-                                color: "transparent"
-                                Text {
-                                    id: yearText
-                                    text: modelData.dateOfBirth
-                                    anchors.verticalCenter: parent.verticalCenter
-                                    anchors.horizontalCenter: parent.horizontalCenter
-                                    color: "grey"
-                                }
-                            }
-                            Rectangle {
                                 id: groups
                                 Layout.fillWidth: true
                                 Layout.fillHeight: true
@@ -232,7 +205,6 @@ Item {
                                     }
                                     onClicked: {
                                         modifyPupilDialog.currentPupil.name = modelData.name
-                                        modifyPupilDialog.currentPupil.dateOfBirth = modelData.dateOfBirth
                                         // todo: get groups of user
                                         //modifyPupilDialog.groupsNames = modelData[2]
                                         modifyPupilDialog.pupilsListIndex = index
@@ -337,8 +309,6 @@ Item {
                 // and display a warning telling user was not added because
                 // some groups do not exist
                 userToAdd.name = pupilDetails[0]
-                // todo check if dateOfBirth is a real year?
-                userToAdd.dateOfBirth = pupilDetails[1]
                 // todo have a feedback if user has not been created (already exist...)
                 masterController.createUser(userToAdd)
                 var groups = pupilDetails[2].split("-");
