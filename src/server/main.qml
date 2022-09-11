@@ -64,6 +64,7 @@ Window {
 
     NavigationBar {
         id: navigationBar
+        enabled: navigationBarConnections.enabled
     }
 
     StackView {
