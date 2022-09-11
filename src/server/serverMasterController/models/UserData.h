@@ -37,7 +37,7 @@ private:
  * @class UserData
  * @short Contains all the data relative to a user
  *
- * A user has a name, a date of birth, a password
+ * A user has a name and a password
  *
  */
 class UserData : public DatabaseElement
@@ -45,7 +45,6 @@ class UserData : public DatabaseElement
     Q_OBJECT
 
     Q_PROPERTY(QString password MEMBER m_password NOTIFY newPassword)
-    Q_PROPERTY(QString dateOfBirth MEMBER m_dateOfBirth NOTIFY newDateOfBirth)
     Q_PROPERTY(QString name MEMBER m_name NOTIFY newName)
     // todo check if there is a better way to display the list of pupils with
     // their group (directly from sqlModel?). Storing it there and updating a
@@ -55,18 +54,16 @@ class UserData : public DatabaseElement
     Q_PROPERTY(ConnectionStatus::Value status READ getConnectionStatus NOTIFY newConnectionStatus)
 
 public:
-    UserData(const QString &name = QString(), const QString &dateOfBirth = QString(), const QString &password = QString());
+    UserData(const QString &name = QString(), const QString &password = QString());
     UserData(const UserData &user);
     ~UserData();
     UserData &operator=(const UserData &user);
 
     void setName(const QString &name);
-    void setDateOfBirth(const QString &dateOfBirth);
     void setPassword(const QString &password);
     void setConnectionStatus(const ConnectionStatus::Value status);
 
     const QString &getName() const;
-    const QString &getDateOfBirth() const;
     const QString &getPassword() const;
     const QList<GroupData *> getGroups() const;
     const ConnectionStatus::Value getConnectionStatus() const;
@@ -78,14 +75,12 @@ public:
 
 private:
     QString m_password;
-    QString m_dateOfBirth;
     QString m_name;
     QList<GroupData *> m_groups;
     ConnectionStatus::Value m_status;
 
 signals:
     void newName();
-    void newDateOfBirth();
     void newPassword();
     void newGroups();
     void newConnectionStatus();
