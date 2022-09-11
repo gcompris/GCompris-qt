@@ -53,34 +53,48 @@ Item {
                 height: 60
                 width: parent.width
 
-                Rectangle {
-                    id: pupilNameHeader
-                    width: devicesViewRectangle.width - 10
+                RowLayout {
+                    width: parent.width - 10
                     height: parent.height
-                    Text {
-                        anchors.verticalCenter: parent.verticalCenter
-                        color: Style.colourNavigationBarBackground
-                        text: qsTr("Pupils Names")
-                        font.bold: true
-                        leftPadding: 60
+                    Layout.alignment: Qt.AlignHCenter
+                    CheckBox {
+                        id: selectAllCheckBox
+                        leftPadding: 20
                         topPadding: 20
+                        onClicked: {
+                            for(var i = 0 ; i < pupilsDetailsRepeater.count ; i ++) {
+                                pupilsDetailsRepeater.itemAtIndex(i).pupilNameCheckBox.checked = checked;
+                            }
+                        }
+                    }
+
+                    Rectangle {
+                        id: pupilNameHeader
+                        Text {
+                            color: Style.colourNavigationBarBackground
+                            text: qsTr("Pupils Names")
+                            font.bold: true
+                            leftPadding: 60
+                            topPadding: 20
+                        }
                     }
                 }
             }
 
             //pupils data
-            Repeater {
+            ListView {
                 id: pupilsDetailsRepeater
 
                 model: masterController.ui_users
 
-                Rectangle {
+                readonly property int lineHeight: 40
+                height: 400 // TODO Compute the good size and unhardcode...
+                contentHeight: lineHeight * count
+
+                delegate: Rectangle {
                     id: pupilDetailsRectangle
 
                     property alias pupilNameCheckBox: pupilNameCheckBox
-
-                    property bool editPupilRectangleVisible: false
-                    property bool optionsPupilRectangleVisible: false
 
                     width: devicesViewRectangle.width
                     height: 40
@@ -90,22 +104,14 @@ Item {
 
                     MouseArea {
                         id: pupilDetailsRectangleMouseArea
-                        anchors.right: pupilDetailsRectangle.right
-                        anchors.top: pupilDetailsRectangle.top
-                        height: pupilDetailsRectangle.height
-                        width: parent.width
+                        anchors.fill: parent
 
                         hoverEnabled: true
                         onEntered: {
                             pupilDetailsRectangle.color = Style.colourPanelBackgroundHover
-                            pupilDetailsRectangle.editPupilRectangleVisible = true
-                            pupilDetailsRectangle.optionsPupilRectangleVisible = true
-
                         }
                         onExited: {
                             pupilDetailsRectangle.color = Style.colourBackground
-                            pupilDetailsRectangle.editPupilRectangleVisible = false
-                            pupilDetailsRectangle.optionsPupilRectangleVisible = false
                         }
 
                         RowLayout {
@@ -200,8 +206,8 @@ Item {
                 onClicked: {
                     var usersList = [];
                     for(var i = 0 ; i < pupilsDetailsRepeater.count ; ++ i) {
-                        if(pupilsDetailsRepeater.itemAt(i).pupilNameCheckBox.checked) {
-                            usersList.push(pupilsDetailsRepeater.itemAt(i).pupilNameCheckBox.text);
+                        if(pupilsDetailsRepeater.itemAtIndex(i).pupilNameCheckBox.checked) {
+                            usersList.push(pupilsDetailsRepeater.itemAtIndex(i).pupilNameCheckBox.text);
                         }
                     }
                     networkController.disconnectSession(usersList);
@@ -215,7 +221,7 @@ Item {
                 onClicked: {
                     var usersList = [];
                     for(var i = 0 ; i < pupilsDetailsRepeater.count ; ++ i) {
-                        usersList.push(pupilsDetailsRepeater.itemAt(i).pupilNameCheckBox.text);
+                        usersList.push(pupilsDetailsRepeater.itemAtIndex(i).pupilNameCheckBox.text);
                     }
                     networkController.disconnectSession(usersList);
                 }
