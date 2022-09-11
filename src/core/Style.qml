@@ -1,5 +1,5 @@
 pragma Singleton
-import QtQuick 2.9
+import QtQuick 2.12
 
 Item {
     property alias fontAwesome: fontAwesomeLoader.name
@@ -9,6 +9,7 @@ Item {
      readonly property real sizeScreenMargin: 20
      readonly property real sizeControlSpacing: 10
 
+     readonly property color colourNavigationBarBackgroundDisabled: "#aaaaaa"
      readonly property color colourNavigationBarBackground: "#2a56c6"
      readonly property color colourNavigationBarFont: "#ffffff"
      readonly property int pixelSizeNavigationBarIcon: 42
