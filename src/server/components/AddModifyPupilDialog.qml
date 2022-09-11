@@ -94,30 +94,6 @@ Popup {
         }
 
         Text {
-            id: pupilYearOfBirthTitleText
-
-            Layout.preferredHeight: 20
-            Layout.preferredWidth: parent.width
-            Layout.leftMargin: 40
-
-            text: qsTr("Year of birth")
-            font.bold: true
-            font {
-                family: Style.fontAwesome
-                pixelSize: 15
-            }
-        }
-
-        UnderlinedTextInput {
-            id: pupilYearOfBirthTextInput
-            text: currentPupil.dateOfBirth
-
-            Layout.preferredHeight: 20
-            Layout.preferredWidth: parent.width
-            Layout.leftMargin: 40
-        }
-
-        Text {
             id: groupsListTitleText
 
             Layout.preferredHeight: 20
@@ -177,7 +153,6 @@ Popup {
                 text: qsTr("Save")
                 onClicked: {
                     currentPupil.name = pupilNameTextInput.text
-                    currentPupil.dateOfBirth = pupilYearOfBirthTextInput.text
 
                     var groupList = [];
                     // itemAtIndex(i) is Qt >= 5.13, so we workaround by looping
