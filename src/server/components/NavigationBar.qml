@@ -22,7 +22,7 @@ Item {
 
     Rectangle {
         anchors.fill: parent
-        color: Style.colourNavigationBarBackground
+        color: enabled ? Style.colourNavigationBarBackground : Style.colourNavigationBarBackgroundDisabled
 
         Column {
             width: parent.width
