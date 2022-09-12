@@ -51,11 +51,12 @@ function initSubLevel() {
         var maxDenominator = 12;
         var randomDenominator;
         var randomNumerator;
+        var maxFractions = currentSubLevel.maxFractions;
         // Make sure we don't have twice the same question in a row
         do {
             randomDenominator = Math.floor(Math.random() * (maxDenominator - minDenominator) + minDenominator);
             // We allow twice the denominator to have 2 pie, but no more to ensure it's still readable on small screens
-            randomNumerator = Math.floor(Math.random() * (2 * randomDenominator - minNumerator) + minNumerator);
+            randomNumerator = Math.floor(Math.random() * (maxFractions * randomDenominator - minNumerator) + minNumerator);
         }
         while((previousQuestion.numerator == randomNumerator) && (previousQuestion.denominator == randomDenominator));
             

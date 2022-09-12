@@ -60,6 +60,7 @@ find_the_day
 followline
 football
 fractions_create
+fractions_find
 geo-country
 geography
 gletters
