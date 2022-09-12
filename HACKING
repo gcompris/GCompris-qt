@@ -49,6 +49,7 @@ be installed (version 5.12 minimum)
     Qt Qml
     Qt Quick
     Qt Svg
+    Qt Charts (qml plugin)
 
 CMake must be installed to compile GCompris:
 
@@ -64,7 +65,7 @@ Installing dependencies on a Debian based systems can be done like this:
                           qttools5-dev-tools libqt5multimedia5-plugins \
                           qml-module-qtsensors libqt5quickparticles5 \
                           qml-module-qtquick2 qml-module-qtquick-particles2 \
-                          libqt5sensors5-dev libqt5sensors5
+                          libqt5sensors5-dev libqt5sensors5 qml-module-qtcharts
 
 To build for Android, Qt 5 AndroidExtras also needs to be installed.
 

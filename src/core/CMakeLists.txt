@@ -79,7 +79,7 @@ elseif(CMAKE_HOST_APPLE)
   set_source_files_properties(${gcompris_RES} PROPERTIES MACOSX_PACKAGE_LOCATION "Resources")
 endif()
 
-set(used_qt_modules Qt5::Qml Qt5::Quick Qt5::Gui Qt5::Multimedia Qt5::Core Qt5::Svg Qt5::Sensors Qt5::QuickControls2 Qt5::QuickTemplates2)
+set(used_qt_modules Qt5::Qml Qt5::Quick Qt5::Gui Qt5::Multimedia Qt5::Core Qt5::Svg Qt5::Sensors Qt5::QuickControls2 Qt5::QuickTemplates2 Qt5::Charts)
 
 if(Qt5Widgets_VERSION VERSION_GREATER_EQUAL "5.15.0")
   set(used_qt_modules ${used_qt_modules} Qt5::QmlWorkerScript Qt5::QuickParticles)
@@ -164,7 +164,8 @@ if(BUILD_STANDALONE)
     QtQuick/Particles.2/${_lib_prefix}particlesplugin
     QtQuick.2/${_lib_prefix}qtquick2plugin
     QtMultimedia/${_lib_prefix}declarative_multimedia
-    QtSensors/${_lib_prefix}declarative_sensors)
+    QtSensors/${_lib_prefix}declarative_sensors
+    QtCharts/${_lib_prefix}qtchartsqml2)
 
   # TODO Double check for ubuntutouch, we may need qtquickcontrols2/templates2!
   if(NOT UBUNTUTOUCH)
