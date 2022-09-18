@@ -21,7 +21,8 @@ ActivityInfo {
   //: Help prerequisite
   prerequisite: ""
   //: Help manual
-  manual: qsTr("Play with the computer. First take turns to place nine pieces, and then take turns to move your pieces.")
+  manual: qsTr("Play with Tux. First take turns to place nine pieces, and then take turns to move your pieces.") + ("<br>") +
+    qsTr("Tux will play better when you increase the level.")
   credit: ""
   section: "strategy"
   createdInVersion: 7000 
