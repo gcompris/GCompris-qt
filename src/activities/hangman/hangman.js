@@ -62,6 +62,11 @@ function stop() {
 }
 
 function initLevel() {
+    // If clicking on previous/next level after winning, we prevent to skip the next word
+    if(items.winTimer.running) {
+        items.winTimer.stop();
+    }
+
     items.bar.level = currentLevel + 1;
     var currentLesson = lessons[currentLevel];
     wordList = Lang.getLessonWords(dataset, currentLesson);
