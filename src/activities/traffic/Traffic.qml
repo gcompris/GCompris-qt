@@ -23,7 +23,7 @@ ActivityBase {
 
     pageComponent: Rectangle {
         id: background
-        color: "#808080"
+        color: "#64B560"
 
         signal start
         signal stop
@@ -50,6 +50,29 @@ ActivityBase {
 
         onStart: { Activity.start(items, mode) }
         onStop: { Activity.stop() }
+
+        Rectangle {
+            color: "#9EC282"
+            width: jamBox.width * 1.075
+            height: width
+            radius: width * 0.15
+            anchors.centerIn: jamBox
+        }
+        Rectangle {
+            color: "#9EC282"
+            width: background.width * 0.5
+            height: jamBox.height * 0.2
+            anchors.left: jamBox.horizontalCenter
+            anchors.verticalCenter: outsideRoad.verticalCenter
+        }
+        Rectangle {
+            id: outsideRoad
+            color: "#444444"
+            width: background.width * 0.5
+            height: jamBox.height * 0.125
+            anchors.left: jamBox.horizontalCenter
+            anchors.bottom: jamBox.verticalCenter
+        }
 
         Image {
             id: jamBox
