@@ -126,22 +126,22 @@ var dataList = [
 ];
 
 var colorMap = {
-    'X': "#FF0000",
-    'A': "#80FF80",
-    'B': "#C0C000",
-    'C': "#8080FF",
-    'D': "#FF80FF",
-    'E': "#C00000",
-    'F': "#008000",
-    'G': "#C0C0C0",
-    'H': "#6000ef",
-    'I': "#FFFF00",
-    'J': "#FFA801",
-    'K': "#00FF00",
-    'O': "#FFFF00",
-    'P': "#FF80FF",
-    'Q': "#0000FF",
-    'R': "#00FFFF"    
+    'X': "#DA3131",
+    'A': "#E9CA39",
+    'B': "#467EEA",
+    'C': "#4BD754",
+    'D': "#D8813C",
+    'E': "#BF36C8",
+    'F': "#4B59D7",
+    'G': "#36C8C5",
+    'H': "#C8B336",
+    'I': "#D9D9D9",
+    'J': "#66D83C",
+    'K': "#6D36C8",
+    'O': "#3A8FC2",
+    'P': "#CE9161",
+    'Q': "#CDCDCD",
+    'R': "#7BCE61"
 };
 
 var baseUrl="qrc:/gcompris/src/activities/traffic/resource/";
