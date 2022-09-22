@@ -48,6 +48,7 @@ ActivityBase {
             property alias bar: bar
             property alias bonus: bonus
             property int sublevel: 0
+            property alias operatorRow: operatorRow
             property alias operandRow: operandRow
             property var data
             readonly property var levels: activity.datasetLoader.data
@@ -180,8 +181,6 @@ ActivityBase {
                 width: parent.width
                 height: parent.height/7
                 mode: items.mode
-                operators: items.levelArr
-                level: items.currentlevel
             }
             OperandRow {
                 id: operandRow

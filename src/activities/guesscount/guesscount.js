@@ -59,10 +59,12 @@ function initLevel() {
         dataItems = multipleDataItems
         levelSchema = multipleDataSchema
         items.data = buildDataset(dataItems, levelSchema)
+        items.operatorRow.repeater.model = defaultOperators[currentLevel]
     }
     else if(items.mode === "admin") {
         numberOfLevel = Data.levelSchema.length
         items.data = buildDataset(Data.dataset, Data.levelSchema)
+        items.operatorRow.repeater.model = items.levelArr[currentLevel]
     }
 
     items.operandRow.repeater.model = Core.shuffle(items.data[items.sublevel-1][0])
