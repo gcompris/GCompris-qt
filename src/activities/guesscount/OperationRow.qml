@@ -173,14 +173,17 @@ Row {
         }
     }
 
-    onPrevCompleteChanged: {
+    onPrevTextChanged: {
+        if(items.solved) {
+            return
+        }
         if(!prevComplete) {
             endResult.text = ""
             operandRow.complete = false
         }
         else {
             if(operator.count == 1 && operand2.count == 1) {
-                Activity.calculate(loader.children[0].droppedItem.datavalue, operator.droppedItem.datavalue, operand2.droppedItem.datavalue, operandRow)
+                Activity.calculate(parseInt(prevText), operator.droppedItem.datavalue, operand2.droppedItem.datavalue, operandRow)
                 operandRow.complete = true
                 if(operandRow.rowNo == operandRow.noOfRows-1 && operandRow.rowResult == operandRow.guesscount) {
                     Activity.checkAnswer(operandRow)
