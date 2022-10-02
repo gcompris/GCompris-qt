@@ -194,18 +194,6 @@ include(cmake/rcc.cmake)
 
 # Translations handling
 
-# Simple command calling the python script
-  add_custom_command(
-    OUTPUT retrievePoFilesFromSvn
-    COMMAND python3 tools/l10n-fetch-po-files.py
-    WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}
-    )
-# Install translations
-add_custom_target(getSvnTranslations
-  DEPENDS retrievePoFilesFromSvn
-  COMMENT "Re-run cmake after this to be able to run BuildTranslations with the latest files"
-  )
-
 # Get all supported locales by GCompris from LanguageList.qml file, excluded the commented ones
 file(STRINGS "${CMAKE_SOURCE_DIR}/src/core/LanguageList.qml" handledGComprisLocaleList ENCODING UTF-8 REGEX "[^//]{.*UTF-8")
 foreach(localeLine ${handledGComprisLocaleList})
@@ -221,11 +209,11 @@ endforeach()
 # Remove all duplicated shortened locales
 list(REMOVE_DUPLICATES gcomprisLocales)
 
-# Get all po files in po/. You can get them doing: python3 tools/l10n-fetch-po-files.py
-file(GLOB TRANSLATIONS_FILES RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} "po/*/gcompris_qt.po")
+# Get all po files in poqm/
+file(GLOB TRANSLATIONS_FILES RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} "poqm/*/gcompris_qt.po")
 foreach(PoSource ${TRANSLATIONS_FILES})
   # Get the locale
-  string(REGEX MATCH "po/([a-zA-Z@_]*)/gcompris_qt.po" _ ${PoSource})
+  string(REGEX MATCH "poqm/([a-zA-Z@_\-]*)/gcompris_qt.po" _ ${PoSource})
   set(locale ${CMAKE_MATCH_1})
 
   # search in src/core/LanguageList the line corresponding to the locale. If exists, then add the custom_command
@@ -239,8 +227,8 @@ foreach(PoSource ${TRANSLATIONS_FILES})
   string(REPLACE ".po" ".ts" TsSource ${PoSource})
   # Replace qt in gcompris_qt.po with the locale
   string(REPLACE "qt" "${locale}" TsSource ${TsSource})
-  # Removes the po/${locale} folder prefix
-  string(REPLACE "po/${locale}/" "" TsSource ${TsSource})
+  # Removes the poqm/${locale} folder prefix
+  string(REPLACE "poqm/${locale}/" "" TsSource ${TsSource})
   # qm extension filename
   string(REPLACE ".ts" ".qm" QmOutput ${TsSource})
 
@@ -264,12 +252,10 @@ endforeach()
 if(WIN32)
     add_custom_target(BuildTranslations
         DEPENDS ${QM_FILES}
-        COMMENT "If you don't have the .po, you need to run make getSvnTranslations first then re-run cmake"
     )
 else()
     add_custom_target(BuildTranslations ALL
         DEPENDS ${QM_FILES}
-        COMMENT "If you don't have the .po, you need to run make getSvnTranslations first then re-run cmake"
     )
 endif()
 
