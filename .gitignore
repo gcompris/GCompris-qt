@@ -9,7 +9,6 @@ GCompris.pro.user
 build/*
 *.DS_Store
 src/activities/activities_out.txt
-po
 .kdev4/
 *.kdev4
 *autosave
