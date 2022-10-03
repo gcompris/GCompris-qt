@@ -9316,7 +9316,7 @@ msgstr "Crear les fraccions"
 #: activities/fractions_create/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "A shape splitted in equal parts is displayed on screen."
-msgstr "Es mostra a la pantalla una forma dividida en parts iguals."
+msgstr "Es mostra en la pantalla una forma dividida en parts iguals."
 
 #: activities/fractions_create/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
@@ -22966,7 +22966,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Select a color and paint the rectangles as you like to create a drawing."
 msgstr ""
-"Seleccioneu un color i pinteu els rectangles com vos agradi per a crear un "
+"Seleccioneu un color i pinteu els rectangles com vos agrade per a crear un "
 "dibuix."
 
 # skip-rule: kct-tab

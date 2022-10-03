@@ -1,0 +1,6558 @@
+#
+# Giovanni Sora <g.sora@tiscali.it>, 2020, 2021, 2022.
+msgid ""
+msgstr ""
+"Project-Id-Version: gcompris_qt\\n\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org/enter_bug.cgi?product=gcompris\n"
+"POT-Creation-Date: 2022-04-08 00:32+0000\n"
+"PO-Revision-Date: 2022-01-14 15:02+0100\n"
+"Last-Translator: giovanni <g.sora@tiscali.it>\n"
+"Language-Team: Interlingua <kde-i18n-doc@kde.org>\n"
+"Language: ia\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"\n"
+"\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 20.04.2\n"
+
+#. otherChapter / otherLesson / alphabet
+#. https://gcompris.net/incoming/lang/words_by_section.html#alphabet
+msgctxt "alphabet.ogg"
+msgid "alphabet"
+msgstr "alphabeto"
+
+#. otherChapter / otherLesson / angel
+#. https://gcompris.net/incoming/lang/words_by_section.html#angel
+msgctxt "angel.ogg"
+msgid "angel"
+msgstr "angelo"
+
+#. otherChapter / otherLesson / behind
+#. https://gcompris.net/incoming/lang/words_by_section.html#behind
+msgctxt "behind.ogg"
+msgid "behind"
+msgstr "detra"
+
+#. otherChapter / otherLesson / bit
+#. https://gcompris.net/incoming/lang/words_by_section.html#bit
+msgctxt "bit.ogg"
+msgid "bit"
+msgstr "bit"
+
+#. otherChapter / otherLesson / bone
+#. https://gcompris.net/incoming/lang/words_by_section.html#bone
+msgctxt "bone.ogg"
+msgid "bone"
+msgstr "osso"
+
+#. otherChapter / otherLesson / bubble
+#. https://gcompris.net/incoming/lang/words_by_section.html#bubble
+msgctxt "bubble.ogg"
+msgid "bubble"
+msgstr "bulla"
+
+#. otherChapter / otherLesson / camp
+#. https://gcompris.net/incoming/lang/words_by_section.html#camp
+msgctxt "camp.ogg"
+msgid "camp"
+msgstr "campo"
+
+#. otherChapter / otherLesson / carnival
+#. https://gcompris.net/incoming/lang/words_by_section.html#carnival
+msgctxt "carnival.ogg"
+msgid "carnival"
+msgstr "carneval"
+
+#. otherChapter / otherLesson / chores
+#. https://gcompris.net/incoming/lang/words_by_section.html#chores
+msgctxt "chores.ogg"
+msgid "chores"
+msgstr ""
+
+#. otherChapter / otherLesson / christmas
+#. https://gcompris.net/incoming/lang/words_by_section.html#christmas
+msgctxt "christmas.ogg"
+msgid "christmas"
+msgstr "natal"
+
+#. otherChapter / otherLesson / craft
+#. https://gcompris.net/incoming/lang/words_by_section.html#craft
+msgctxt "craft.ogg"
+msgid "craft"
+msgstr ""
+
+#. otherChapter / otherLesson / dot
+#. https://gcompris.net/incoming/lang/words_by_section.html#dot
+msgctxt "dot.ogg"
+msgid "dot"
+msgstr "puncto"
+
+#. otherChapter / otherLesson / engine
+#. https://gcompris.net/incoming/lang/words_by_section.html#engine
+msgctxt "engine.ogg"
+msgid "engine"
+msgstr "motor"
+
+#. otherChapter / otherLesson / fairy
+#. https://gcompris.net/incoming/lang/words_by_section.html#fairy
+msgctxt "fairy.ogg"
+msgid "fairy"
+msgstr ""
+
+#. otherChapter / otherLesson / flat
+#. https://gcompris.net/incoming/lang/words_by_section.html#flat
+msgctxt "flat.ogg"
+msgid "flat"
+msgstr "plan"
+
+#. otherChapter / otherLesson / front
+#. https://gcompris.net/incoming/lang/words_by_section.html#front
+msgctxt "front.ogg"
+msgid "front"
+msgstr "fronte"
+
+#. otherChapter / otherLesson / gnome
+#. https://gcompris.net/incoming/lang/words_by_section.html#gnome
+msgctxt "gnome.ogg"
+msgid "gnome"
+msgstr "gnomo"
+
+#. otherChapter / otherLesson / guignol
+#. https://gcompris.net/incoming/lang/words_by_section.html#guignol
+msgctxt "guignol.ogg"
+msgid "guignol"
+msgstr ""
+
+#. otherChapter / otherLesson / half
+#. https://gcompris.net/incoming/lang/words_by_section.html#half
+msgctxt "half.ogg"
+msgid "half"
+msgstr "medietate"
+
+#. otherChapter / otherLesson / king
+#. https://gcompris.net/incoming/lang/words_by_section.html#king
+msgctxt "king.ogg"
+msgid "king"
+msgstr ""
+
+#. otherChapter / otherLesson / knight
+#. https://gcompris.net/incoming/lang/words_by_section.html#knight
+msgctxt "knight.ogg"
+msgid "knight"
+msgstr ""
+
+#. otherChapter / otherLesson / lad
+#. https://gcompris.net/incoming/lang/words_by_section.html#lad
+msgctxt "lad.ogg"
+msgid "lad"
+msgstr ""
+
+#. otherChapter / otherLesson / left
+#. https://gcompris.net/incoming/lang/words_by_section.html#left
+msgctxt "left.ogg"
+msgid "left"
+msgstr "sinistra"
+
+#. otherChapter / otherLesson / light
+#. https://gcompris.net/incoming/lang/words_by_section.html#light
+msgctxt "light.ogg"
+msgid "light"
+msgstr "legier"
+
+#. otherChapter / otherLesson / line
+#. https://gcompris.net/incoming/lang/words_by_section.html#line
+msgctxt "line.ogg"
+msgid "line"
+msgstr "linea"
+
+#. otherChapter / otherLesson / link
+#. https://gcompris.net/incoming/lang/words_by_section.html#link
+msgctxt "link.ogg"
+msgid "link"
+msgstr "ligamine"
+
+#. otherChapter / otherLesson / movie
+#. https://gcompris.net/incoming/lang/words_by_section.html#movie
+msgctxt "movie.ogg"
+msgid "movie"
+msgstr "film"
+
+#. otherChapter / otherLesson / music
+#. https://gcompris.net/incoming/lang/words_by_section.html#music
+msgctxt "music.ogg"
+msgid "music"
+msgstr "musica"
+
+#. otherChapter / otherLesson / number
+#. https://gcompris.net/incoming/lang/words_by_section.html#number
+msgctxt "number.ogg"
+msgid "number"
+msgstr "numero"
+
+#. otherChapter / otherLesson / on
+#. https://gcompris.net/incoming/lang/words_by_section.html#on
+msgctxt "on.ogg"
+msgid "on"
+msgstr "sur"
+
+#. otherChapter / otherLesson / pedal
+#. https://gcompris.net/incoming/lang/words_by_section.html#pedal
+msgctxt "pedal.ogg"
+msgid "pedal"
+msgstr ""
+
+#. otherChapter / otherLesson / pirate
+#. https://gcompris.net/incoming/lang/words_by_section.html#pirate
+msgctxt "pirate.ogg"
+msgid "pirate"
+msgstr ""
+
+#. otherChapter / otherLesson / pope
+#. https://gcompris.net/incoming/lang/words_by_section.html#pope
+msgctxt "pope.ogg"
+msgid "pope"
+msgstr ""
+
+#. otherChapter / otherLesson / porthole
+#. https://gcompris.net/incoming/lang/words_by_section.html#porthole
+msgctxt "porthole.ogg"
+msgid "porthole"
+msgstr ""
+
+#. otherChapter / otherLesson / president
+#. https://gcompris.net/incoming/lang/words_by_section.html#president
+msgctxt "president.ogg"
+msgid "president"
+msgstr ""
+
+#. otherChapter / otherLesson / price
+#. https://gcompris.net/incoming/lang/words_by_section.html#price
+msgctxt "price.ogg"
+msgid "price"
+msgstr "precio"
+
+#. otherChapter / otherLesson / prince
+#. https://gcompris.net/incoming/lang/words_by_section.html#prince
+msgctxt "prince.ogg"
+msgid "prince"
+msgstr ""
+
+#. otherChapter / otherLesson / princess
+#. https://gcompris.net/incoming/lang/words_by_section.html#princess
+msgctxt "princess.ogg"
+msgid "princess"
+msgstr ""
+
+#. otherChapter / otherLesson / prisoner
+#. https://gcompris.net/incoming/lang/words_by_section.html#prisoner
+msgctxt "prisoner.ogg"
+msgid "prisoner"
+msgstr ""
+
+#. otherChapter / otherLesson / queen
+#. https://gcompris.net/incoming/lang/words_by_section.html#queen
+msgctxt "queen.ogg"
+msgid "queen"
+msgstr ""
+
+#. otherChapter / otherLesson / question
+#. https://gcompris.net/incoming/lang/words_by_section.html#question
+msgctxt "question.ogg"
+msgid "question"
+msgstr "demanda"
+
+#. otherChapter / otherLesson / quiz
+#. https://gcompris.net/incoming/lang/words_by_section.html#quiz
+msgctxt "quiz.ogg"
+msgid "quiz"
+msgstr ""
+
+#. otherChapter / otherLesson / right
+#. https://gcompris.net/incoming/lang/words_by_section.html#right
+msgctxt "right.ogg"
+msgid "right"
+msgstr "dextera"
+
+#. otherChapter / otherLesson / rocket
+#. https://gcompris.net/incoming/lang/words_by_section.html#rocket
+msgctxt "rocket.ogg"
+msgid "rocket"
+msgstr ""
+
+#. otherChapter / otherLesson / round
+#. https://gcompris.net/incoming/lang/words_by_section.html#round
+msgctxt "round.ogg"
+msgid "round"
+msgstr ""
+
+#. otherChapter / otherLesson / science
+#. https://gcompris.net/incoming/lang/words_by_section.html#science
+msgctxt "science.ogg"
+msgid "science"
+msgstr "scientia"
+
+#. otherChapter / otherLesson / splatter
+#. https://gcompris.net/incoming/lang/words_by_section.html#splatter
+msgctxt "splatter.ogg"
+msgid "splatter"
+msgstr ""
+
+#. otherChapter / otherLesson / spot
+#. https://gcompris.net/incoming/lang/words_by_section.html#spot
+msgctxt "spot.ogg"
+msgid "spot"
+msgstr "macula"
+
+#. otherChapter / otherLesson / square
+#. https://gcompris.net/incoming/lang/words_by_section.html#square
+msgctxt "square.ogg"
+msgid "square"
+msgstr "quadrato"
+
+#. otherChapter / otherLesson / stand
+#. https://gcompris.net/incoming/lang/words_by_section.html#stand
+msgctxt "stand.ogg"
+msgid "stand"
+msgstr ""
+
+#. otherChapter / otherLesson / stripe
+#. https://gcompris.net/incoming/lang/words_by_section.html#stripe
+msgctxt "stripe.ogg"
+msgid "stripe"
+msgstr ""
+
+#. otherChapter / otherLesson / student
+#. https://gcompris.net/incoming/lang/words_by_section.html#student
+msgctxt "student.ogg"
+msgid "student"
+msgstr ""
+
+#. otherChapter / otherLesson / text
+#. https://gcompris.net/incoming/lang/words_by_section.html#text
+msgctxt "text.ogg"
+msgid "text"
+msgstr "texto"
+
+#. otherChapter / otherLesson / thief
+#. https://gcompris.net/incoming/lang/words_by_section.html#thief
+msgctxt "thief.ogg"
+msgid "thief"
+msgstr ""
+
+#. otherChapter / otherLesson / triangle
+#. https://gcompris.net/incoming/lang/words_by_section.html#triangle
+msgctxt "triangle.ogg"
+msgid "triangle"
+msgstr "triangulo"
+
+#. otherChapter / otherLesson / trip
+#. https://gcompris.net/incoming/lang/words_by_section.html#trip
+msgctxt "trip.ogg"
+msgid "trip"
+msgstr "Viage (Trip)"
+
+#. otherChapter / otherLesson / tune
+#. https://gcompris.net/incoming/lang/words_by_section.html#tune
+msgctxt "tune.ogg"
+msgid "tune"
+msgstr ""
+
+#. otherChapter / otherLesson / under
+#. https://gcompris.net/incoming/lang/words_by_section.html#under
+msgctxt "under.ogg"
+msgid "under"
+msgstr "sub"
+
+#. otherChapter / otherLesson / vowel
+#. https://gcompris.net/incoming/lang/words_by_section.html#vowel
+msgctxt "vowel.ogg"
+msgid "vowel"
+msgstr ""
+
+#. otherChapter / otherLesson / weight
+#. https://gcompris.net/incoming/lang/words_by_section.html#weight
+msgctxt "weight.ogg"
+msgid "weight"
+msgstr "peso"
+
+#. otherChapter / otherLesson / word
+#. https://gcompris.net/incoming/lang/words_by_section.html#word
+msgctxt "word.ogg"
+msgid "word"
+msgstr "parola"
+
+#. otherChapter / action / to bark
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20bark
+msgctxt "bark.ogg"
+msgid "to bark"
+msgstr ""
+
+#. otherChapter / action / to beat
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20beat
+msgctxt "beat.ogg"
+msgid "to beat"
+msgstr ""
+
+#. otherChapter / action / to beg
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20beg
+msgctxt "beg.ogg"
+msgid "to beg"
+msgstr ""
+
+#. otherChapter / action / to bite
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20bite
+msgctxt "bite.ogg"
+msgid "to bite"
+msgstr ""
+
+#. otherChapter / action / to blink
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20blink
+msgctxt "blink.ogg"
+msgid "to blink"
+msgstr ""
+
+#. otherChapter / action / to boil
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20boil
+msgctxt "boil.ogg"
+msgid "to boil"
+msgstr ""
+
+#. otherChapter / action / to break
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20break
+msgctxt "break.ogg"
+msgid "to break"
+msgstr ""
+
+#. otherChapter / action / to call
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20call
+msgctxt "call.ogg"
+msgid "to call"
+msgstr ""
+
+#. otherChapter / action / to catch
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20catch
+msgctxt "catch.ogg"
+msgid "to catch"
+msgstr ""
+
+#. otherChapter / action / to chat
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20chat
+msgctxt "chat.ogg"
+msgid "to chat"
+msgstr ""
+
+#. otherChapter / action / to chop
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20chop
+msgctxt "chop.ogg"
+msgid "to chop"
+msgstr ""
+
+#. otherChapter / action / to clap
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20clap
+msgctxt "clap.ogg"
+msgid "to clap"
+msgstr ""
+
+#. otherChapter / action / to clean
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20clean
+msgctxt "clean.ogg"
+msgid "to clean"
+msgstr ""
+
+#. otherChapter / action / to cook
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20cook
+msgctxt "cook.ogg"
+msgid "to cook"
+msgstr ""
+
+#. otherChapter / action / to cough
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20cough
+msgctxt "cough.ogg"
+msgid "to cough"
+msgstr ""
+
+#. otherChapter / action / to crawl
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20crawl
+msgctxt "crawl.ogg"
+msgid "to crawl"
+msgstr ""
+
+#. otherChapter / action / to croak
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20croak
+msgctxt "croak.ogg"
+msgid "to croak"
+msgstr ""
+
+#. otherChapter / action / to cry
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20cry
+msgctxt "cry.ogg"
+msgid "to cry"
+msgstr ""
+
+#. otherChapter / action / to cut
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20cut
+msgctxt "cut.ogg"
+msgid "to cut"
+msgstr ""
+
+#. otherChapter / action / to dig
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20dig
+msgctxt "dig.ogg"
+msgid "to dig"
+msgstr ""
+
+#. otherChapter / action / to draw
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20draw
+msgctxt "draw.ogg"
+msgid "to draw"
+msgstr ""
+
+#. otherChapter / action / to dream
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20dream
+msgctxt "dream.ogg"
+msgid "to dream"
+msgstr ""
+
+#. otherChapter / action / to drink
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20drink
+msgctxt "to_drink.ogg"
+msgid "to drink"
+msgstr ""
+
+#. otherChapter / action / to drive
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20drive
+msgctxt "drive.ogg"
+msgid "to drive"
+msgstr ""
+
+#. otherChapter / action / to drool
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20drool
+msgctxt "drool.ogg"
+msgid "to drool"
+msgstr ""
+
+#. otherChapter / action / to dry
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20dry
+msgctxt "dry.ogg"
+msgid "to dry"
+msgstr ""
+
+#. otherChapter / action / to eat
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20eat
+msgctxt "eat.ogg"
+msgid "to eat"
+msgstr ""
+
+#. otherChapter / action / to feed
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20feed
+msgctxt "feed.ogg"
+msgid "to feed"
+msgstr ""
+
+#. otherChapter / action / to fall
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20fall
+msgctxt "fall.ogg"
+msgid "to fall"
+msgstr ""
+
+#. otherChapter / action / to fetch
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20fetch
+msgctxt "fetch.ogg"
+msgid "to fetch"
+msgstr ""
+
+#. otherChapter / action / to find
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20find
+msgctxt "find.ogg"
+msgid "to find"
+msgstr ""
+
+#. otherChapter / action / to float
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20float
+msgctxt "float.ogg"
+msgid "to float"
+msgstr ""
+
+#. otherChapter / action / to fly
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20fly
+msgctxt "fly.ogg"
+msgid "to fly"
+msgstr ""
+
+#. otherChapter / action / to freeze
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20freeze
+msgctxt "freeze.ogg"
+msgid "to freeze"
+msgstr ""
+
+#. otherChapter / action / to growl
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20growl
+msgctxt "growl.ogg"
+msgid "to growl"
+msgstr ""
+
+#. otherChapter / action / to hatch
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20hatch
+msgctxt "hatch.ogg"
+msgid "to hatch"
+msgstr ""
+
+#. otherChapter / action / to hear
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20hear
+msgctxt "hear.ogg"
+msgid "to hear"
+msgstr ""
+
+#. otherChapter / action / to howl
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20howl
+msgctxt "howl.ogg"
+msgid "to howl"
+msgstr ""
+
+#. otherChapter / action / to hug
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20hug
+msgctxt "hug.ogg"
+msgid "to hug"
+msgstr ""
+
+#. otherChapter / action / to jump
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20jump
+msgctxt "jump.ogg"
+msgid "to jump"
+msgstr ""
+
+#. otherChapter / action / to kiss
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20kiss
+msgctxt "kiss.ogg"
+msgid "to kiss"
+msgstr ""
+
+#. otherChapter / action / to kneel
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20kneel
+msgctxt "kneel.ogg"
+msgid "to kneel"
+msgstr ""
+
+#. otherChapter / action / to knit
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20knit
+msgctxt "knit.ogg"
+msgid "to knit"
+msgstr ""
+
+#. otherChapter / action / to lick
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20lick
+msgctxt "lick.ogg"
+msgid "to lick"
+msgstr ""
+
+#. otherChapter / action / to look
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20look
+msgctxt "look.ogg"
+msgid "to look"
+msgstr ""
+
+#. otherChapter / action / to meet
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20meet
+msgctxt "meet.ogg"
+msgid "to meet"
+msgstr ""
+
+#. otherChapter / action / to nap
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20nap
+msgctxt "nap.ogg"
+msgid "to nap"
+msgstr ""
+
+#. otherChapter / action / to peck
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20peck
+msgctxt "peck.ogg"
+msgid "to peck"
+msgstr ""
+
+#. otherChapter / action / to play
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20play
+msgctxt "play.ogg"
+msgid "to play"
+msgstr ""
+
+#. otherChapter / action / to plow
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20plow
+msgctxt "plow.ogg"
+msgid "to plow"
+msgstr ""
+
+#. otherChapter / action / to pounce
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20pounce
+msgctxt "pounce.ogg"
+msgid "to pounce"
+msgstr ""
+
+#. otherChapter / action / to pull
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20pull
+msgctxt "pull.ogg"
+msgid "to pull"
+msgstr ""
+
+#. otherChapter / action / to quarrel
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20quarrel
+msgctxt "quarrel.ogg"
+msgid "to quarrel"
+msgstr ""
+
+#. otherChapter / action / to read
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20read
+msgctxt "read.ogg"
+msgid "to read"
+msgstr ""
+
+#. otherChapter / action / to rip
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20rip
+msgctxt "rip.ogg"
+msgid "to rip"
+msgstr ""
+
+#. otherChapter / action / to rise
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20rise
+msgctxt "rise.ogg"
+msgid "to rise"
+msgstr ""
+
+#. otherChapter / action / to run
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20run
+msgctxt "run.ogg"
+msgid "to run"
+msgstr ""
+
+#. otherChapter / action / to scare
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20scare
+msgctxt "scare.ogg"
+msgid "to scare"
+msgstr ""
+
+#. otherChapter / action / to scratch
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20scratch
+msgctxt "scratch.ogg"
+msgid "to scratch"
+msgstr ""
+
+#. otherChapter / action / to scream
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20scream
+msgctxt "scream.ogg"
+msgid "to scream"
+msgstr ""
+
+#. otherChapter / action / to scribble
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20scribble
+msgctxt "scribble.ogg"
+msgid "to scribble"
+msgstr ""
+
+#. otherChapter / action / to see
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20see
+msgctxt "see.ogg"
+msgid "to see"
+msgstr ""
+
+#. otherChapter / action / to shake
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20shake
+msgctxt "shake.ogg"
+msgid "to shake"
+msgstr ""
+
+#. otherChapter / action / to shave
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20shave
+msgctxt "shave.ogg"
+msgid "to shave"
+msgstr ""
+
+#. otherChapter / action / to sing
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20sing
+msgctxt "sing.ogg"
+msgid "to sing"
+msgstr ""
+
+#. otherChapter / action / to sip
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20sip
+msgctxt "sip.ogg"
+msgid "to sip"
+msgstr ""
+
+#. otherChapter / action / to sit
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20sit
+msgctxt "sit.ogg"
+msgid "to sit"
+msgstr ""
+
+#. otherChapter / action / to slam
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20slam
+msgctxt "slam.ogg"
+msgid "to slam"
+msgstr ""
+
+#. otherChapter / action / to sleep
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20sleep
+msgctxt "sleep.ogg"
+msgid "to sleep"
+msgstr ""
+
+#. otherChapter / action / to smell
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20smell
+msgctxt "smell.ogg"
+msgid "to smell"
+msgstr ""
+
+#. otherChapter / action / to smooch
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20smooch
+msgctxt "smooch.ogg"
+msgid "to smooch"
+msgstr ""
+
+#. otherChapter / action / to sniff
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20sniff
+msgctxt "sniff.ogg"
+msgid "to sniff"
+msgstr ""
+
+#. otherChapter / action / to speak
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20speak
+msgctxt "speak.ogg"
+msgid "to speak"
+msgstr ""
+
+#. otherChapter / action / to spill
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20spill
+msgctxt "spill.ogg"
+msgid "to spill"
+msgstr ""
+
+#. otherChapter / action / to splash
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20splash
+msgctxt "splash.ogg"
+msgid "to splash"
+msgstr ""
+
+#. otherChapter / action / to spray
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20spray
+msgctxt "spray.ogg"
+msgid "to spray"
+msgstr ""
+
+#. otherChapter / action / to spread
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20spread
+msgctxt "spread.ogg"
+msgid "to spread"
+msgstr ""
+
+#. otherChapter / action / to spring
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20spring
+msgctxt "spring.ogg"
+msgid "to spring"
+msgstr ""
+
+#. otherChapter / action / to squat
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20squat
+msgctxt "squat.ogg"
+msgid "to squat"
+msgstr ""
+
+#. otherChapter / action / to stare
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20stare
+msgctxt "stare.ogg"
+msgid "to stare"
+msgstr ""
+
+#. otherChapter / action / to sting
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20sting
+msgctxt "sting.ogg"
+msgid "to sting"
+msgstr ""
+
+#. otherChapter / action / to stitch
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20stitch
+msgctxt "stitch.ogg"
+msgid "to stitch"
+msgstr ""
+
+#. otherChapter / action / to stop
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20stop
+msgctxt "stop.ogg"
+msgid "to stop"
+msgstr ""
+
+#. otherChapter / action / to stretch
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20stretch
+msgctxt "stretch.ogg"
+msgid "to stretch"
+msgstr ""
+
+#. otherChapter / action / to study
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20study
+msgctxt "study.ogg"
+msgid "to study"
+msgstr ""
+
+#. otherChapter / action / to teach
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20teach
+msgctxt "teach.ogg"
+msgid "to teach"
+msgstr ""
+
+#. otherChapter / action / to tear
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20tear
+msgctxt "tear.ogg"
+msgid "to tear"
+msgstr ""
+
+#. otherChapter / action / to think
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20think
+msgctxt "think.ogg"
+msgid "to think"
+msgstr ""
+
+#. otherChapter / action / to touch
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20touch
+msgctxt "touch.ogg"
+msgid "to touch"
+msgstr ""
+
+#. otherChapter / action / to wag
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20wag
+msgctxt "wag.ogg"
+msgid "to wag"
+msgstr ""
+
+#. otherChapter / action / to walk
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20walk
+msgctxt "walk.ogg"
+msgid "to walk"
+msgstr ""
+
+#. otherChapter / action / to wash
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20wash
+msgctxt "wash.ogg"
+msgid "to wash"
+msgstr ""
+
+#. otherChapter / action / to whisper
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20whisper
+msgctxt "whisper.ogg"
+msgid "to whisper"
+msgstr ""
+
+#. otherChapter / action / to win
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20win
+msgctxt "win.ogg"
+msgid "to win"
+msgstr ""
+
+#. otherChapter / action / to write
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20write
+msgctxt "write.ogg"
+msgid "to write"
+msgstr ""
+
+#. otherChapter / adjective / bald
+#. https://gcompris.net/incoming/lang/words_by_section.html#bald
+msgctxt "bald.ogg"
+msgid "bald"
+msgstr ""
+
+#. otherChapter / adjective / big
+#. https://gcompris.net/incoming/lang/words_by_section.html#big
+msgctxt "big.ogg"
+msgid "big"
+msgstr "grande"
+
+#. otherChapter / adjective / blind
+#. https://gcompris.net/incoming/lang/words_by_section.html#blind
+msgctxt "blind.ogg"
+msgid "blind"
+msgstr ""
+
+#. otherChapter / adjective / blond
+#. https://gcompris.net/incoming/lang/words_by_section.html#blond
+msgctxt "blond.ogg"
+msgid "blond"
+msgstr ""
+
+#. otherChapter / adjective / bright
+#. https://gcompris.net/incoming/lang/words_by_section.html#bright
+msgctxt "bright.ogg"
+msgid "bright"
+msgstr "brillantia"
+
+#. otherChapter / adjective / crazy
+#. https://gcompris.net/incoming/lang/words_by_section.html#crazy
+msgctxt "crazy.ogg"
+msgid "crazy"
+msgstr ""
+
+#. otherChapter / adjective / cute
+#. https://gcompris.net/incoming/lang/words_by_section.html#cute
+msgctxt "cute.ogg"
+msgid "cute"
+msgstr "sympathic (Cute)"
+
+#. otherChapter / adjective / dirty
+#. https://gcompris.net/incoming/lang/words_by_section.html#dirty
+msgctxt "dirty.ogg"
+msgid "dirty"
+msgstr ""
+
+#. otherChapter / adjective / empty
+#. https://gcompris.net/incoming/lang/words_by_section.html#empty
+msgctxt "empty.ogg"
+msgid "empty"
+msgstr "vacue"
+
+#. otherChapter / adjective / fat
+#. https://gcompris.net/incoming/lang/words_by_section.html#fat
+msgctxt "fat.ogg"
+msgid "fat"
+msgstr "grasse"
+
+#. otherChapter / adjective / full
+#. https://gcompris.net/incoming/lang/words_by_section.html#full
+msgctxt "full.ogg"
+msgid "full"
+msgstr "plen"
+
+#. otherChapter / adjective / giant
+#. https://gcompris.net/incoming/lang/words_by_section.html#giant
+msgctxt "giant.ogg"
+msgid "giant"
+msgstr ""
+
+#. otherChapter / adjective / golden
+#. https://gcompris.net/incoming/lang/words_by_section.html#golden
+msgctxt "golden.ogg"
+msgid "golden"
+msgstr ""
+
+#. otherChapter / adjective / happy
+#. https://gcompris.net/incoming/lang/words_by_section.html#happy
+msgctxt "happy.ogg"
+msgid "happy"
+msgstr "felice"
+
+#. otherChapter / adjective / high
+#. https://gcompris.net/incoming/lang/words_by_section.html#high
+msgctxt "high.ogg"
+msgid "high"
+msgstr "alte"
+
+#. otherChapter / adjective / hot
+#. https://gcompris.net/incoming/lang/words_by_section.html#hot
+msgctxt "hot.ogg"
+msgid "hot"
+msgstr "calide"
+
+#. otherChapter / adjective / huge
+#. https://gcompris.net/incoming/lang/words_by_section.html#huge
+msgctxt "huge.ogg"
+msgid "huge"
+msgstr "Ponderose"
+
+#. otherChapter / adjective / hunchbacked
+#. https://gcompris.net/incoming/lang/words_by_section.html#hunchbacked
+msgctxt "hunchbacked.ogg"
+msgid "hunchbacked"
+msgstr ""
+
+#. otherChapter / adjective / ill
+#. https://gcompris.net/incoming/lang/words_by_section.html#ill
+msgctxt "ill.ogg"
+msgid "ill"
+msgstr ""
+
+#. otherChapter / adjective / liquid
+#. https://gcompris.net/incoming/lang/words_by_section.html#liquid
+msgctxt "liquid.ogg"
+msgid "liquid"
+msgstr ""
+
+#. otherChapter / adjective / magic
+#. https://gcompris.net/incoming/lang/words_by_section.html#magic
+msgctxt "magic.ogg"
+msgid "magic"
+msgstr ""
+
+#. otherChapter / adjective / naked
+#. https://gcompris.net/incoming/lang/words_by_section.html#naked
+msgctxt "naked.ogg"
+msgid "naked"
+msgstr ""
+
+#. otherChapter / adjective / open
+#. https://gcompris.net/incoming/lang/words_by_section.html#open
+msgctxt "open.ogg"
+msgid "open"
+msgstr "aperi"
+
+#. otherChapter / adjective / pretty
+#. https://gcompris.net/incoming/lang/words_by_section.html#pretty
+msgctxt "pretty.ogg"
+msgid "pretty"
+msgstr ""
+
+#. otherChapter / adjective / royal
+#. https://gcompris.net/incoming/lang/words_by_section.html#royal
+msgctxt "royal.ogg"
+msgid "royal"
+msgstr ""
+
+#. otherChapter / adjective / shut
+#. https://gcompris.net/incoming/lang/words_by_section.html#shut
+msgctxt "shut.ogg"
+msgid "shut"
+msgstr ""
+
+#. otherChapter / adjective / sick
+#. https://gcompris.net/incoming/lang/words_by_section.html#sick
+msgctxt "sick.ogg"
+msgid "sick"
+msgstr "malade"
+
+#. otherChapter / adjective / slim
+#. https://gcompris.net/incoming/lang/words_by_section.html#slim
+msgctxt "slim.ogg"
+msgid "slim"
+msgstr ""
+
+#. otherChapter / adjective / sloppy
+#. https://gcompris.net/incoming/lang/words_by_section.html#sloppy
+msgctxt "sloppy.ogg"
+msgid "sloppy"
+msgstr ""
+
+#. otherChapter / adjective / small
+#. https://gcompris.net/incoming/lang/words_by_section.html#small
+msgctxt "small.ogg"
+msgid "small"
+msgstr "parve"
+
+#. otherChapter / adjective / steep
+#. https://gcompris.net/incoming/lang/words_by_section.html#steep
+msgctxt "steep.ogg"
+msgid "steep"
+msgstr ""
+
+#. otherChapter / adjective / stinky
+#. https://gcompris.net/incoming/lang/words_by_section.html#stinky
+msgctxt "stinky.ogg"
+msgid "stinky"
+msgstr ""
+
+#. otherChapter / adjective / straight
+#. https://gcompris.net/incoming/lang/words_by_section.html#straight
+msgctxt "straight.ogg"
+msgid "straight"
+msgstr "recte"
+
+#. otherChapter / adjective / strong
+#. https://gcompris.net/incoming/lang/words_by_section.html#strong
+msgctxt "strong.ogg"
+msgid "strong"
+msgstr "forte"
+
+#. otherChapter / adjective / tall
+#. https://gcompris.net/incoming/lang/words_by_section.html#tall
+msgctxt "tall.ogg"
+msgid "tall"
+msgstr "alte"
+
+#. otherChapter / adjective / thick
+#. https://gcompris.net/incoming/lang/words_by_section.html#thick
+msgctxt "thick.ogg"
+msgid "thick"
+msgstr "spisse"
+
+#. otherChapter / adjective / tired
+#. https://gcompris.net/incoming/lang/words_by_section.html#tired
+msgctxt "tired.ogg"
+msgid "tired"
+msgstr "fatigate"
+
+#. otherChapter / adjective / wet
+#. https://gcompris.net/incoming/lang/words_by_section.html#wet
+msgctxt "wet.ogg"
+msgid "wet"
+msgstr ""
+
+#. otherChapter / adjective / wide
+#. https://gcompris.net/incoming/lang/words_by_section.html#wide
+msgctxt "wide.ogg"
+msgid "wide"
+msgstr "large"
+
+#. otherChapter / color / color
+#. https://gcompris.net/incoming/lang/words_by_section.html#color
+msgctxt "color.ogg"
+msgid "color"
+msgstr "color"
+
+#. otherChapter / color / blue
+#. https://gcompris.net/incoming/lang/words_by_section.html#blue
+msgctxt "blue.ogg"
+msgid "blue"
+msgstr "blau"
+
+#. otherChapter / color / brown
+#. https://gcompris.net/incoming/lang/words_by_section.html#brown
+msgctxt "brown.ogg"
+msgid "brown"
+msgstr "Brun"
+
+#. otherChapter / color / black
+#. https://gcompris.net/incoming/lang/words_by_section.html#black
+msgctxt "black.ogg"
+msgid "black"
+msgstr "nigre"
+
+#. otherChapter / color / gray
+#. https://gcompris.net/incoming/lang/words_by_section.html#gray
+msgctxt "gray.ogg"
+msgid "gray"
+msgstr "gris"
+
+#. otherChapter / color / green
+#. https://gcompris.net/incoming/lang/words_by_section.html#green
+msgctxt "green.ogg"
+msgid "green"
+msgstr "Verde"
+
+#. otherChapter / color / mauve
+#. https://gcompris.net/incoming/lang/words_by_section.html#mauve
+msgctxt "mauve.ogg"
+msgid "mauve"
+msgstr ""
+
+#. otherChapter / color / orange
+#. https://gcompris.net/incoming/lang/words_by_section.html#orange
+msgctxt "orange-color.ogg"
+msgid "orange"
+msgstr "Orange"
+
+#. otherChapter / color / pink
+#. https://gcompris.net/incoming/lang/words_by_section.html#pink
+msgctxt "pink.ogg"
+msgid "pink"
+msgstr "Rosate"
+
+#. otherChapter / color / red
+#. https://gcompris.net/incoming/lang/words_by_section.html#red
+msgctxt "red.ogg"
+msgid "red"
+msgstr "rubie"
+
+#. otherChapter / color / white
+#. https://gcompris.net/incoming/lang/words_by_section.html#white
+msgctxt "white.ogg"
+msgid "white"
+msgstr "blanc"
+
+#. otherChapter / color / yellow
+#. https://gcompris.net/incoming/lang/words_by_section.html#yellow
+msgctxt "yellow.ogg"
+msgid "yellow"
+msgstr "Jalne"
+
+#. otherChapter / number / zero
+#. https://gcompris.net/incoming/lang/words_by_section.html#zero
+msgctxt "U0030.ogg"
+msgid "zero"
+msgstr "zero"
+
+#. otherChapter / number / one
+#. https://gcompris.net/incoming/lang/words_by_section.html#one
+msgctxt "U0031.ogg"
+msgid "one"
+msgstr "uno"
+
+#. otherChapter / number / two
+#. https://gcompris.net/incoming/lang/words_by_section.html#two
+msgctxt "U0032.ogg"
+msgid "two"
+msgstr "duo"
+
+#. otherChapter / number / three
+#. https://gcompris.net/incoming/lang/words_by_section.html#three
+msgctxt "U0033.ogg"
+msgid "three"
+msgstr "tres"
+
+#. otherChapter / number / four
+#. https://gcompris.net/incoming/lang/words_by_section.html#four
+msgctxt "U0034.ogg"
+msgid "four"
+msgstr "quatro"
+
+#. otherChapter / number / five
+#. https://gcompris.net/incoming/lang/words_by_section.html#five
+msgctxt "U0035.ogg"
+msgid "five"
+msgstr "cinque"
+
+#. otherChapter / number / six
+#. https://gcompris.net/incoming/lang/words_by_section.html#six
+msgctxt "U0036.ogg"
+msgid "six"
+msgstr "sex"
+
+#. otherChapter / number / seven
+#. https://gcompris.net/incoming/lang/words_by_section.html#seven
+msgctxt "U0037.ogg"
+msgid "seven"
+msgstr "septe"
+
+#. otherChapter / number / eight
+#. https://gcompris.net/incoming/lang/words_by_section.html#eight
+msgctxt "U0038.ogg"
+msgid "eight"
+msgstr "octo"
+
+#. otherChapter / number / nine
+#. https://gcompris.net/incoming/lang/words_by_section.html#nine
+msgctxt "U0039.ogg"
+msgid "nine"
+msgstr "novem "
+
+#. otherChapter / number / ten
+#. https://gcompris.net/incoming/lang/words_by_section.html#ten
+msgctxt "10.ogg"
+msgid "ten"
+msgstr "dece"
+
+#. otherChapter / number / eleven
+#. https://gcompris.net/incoming/lang/words_by_section.html#eleven
+msgctxt "11.ogg"
+msgid "eleven"
+msgstr "dece-un"
+
+#. otherChapter / number / twelve
+#. https://gcompris.net/incoming/lang/words_by_section.html#twelve
+msgctxt "12.ogg"
+msgid "twelve"
+msgstr "dece-due"
+
+#. otherChapter / number / sixteen
+#. https://gcompris.net/incoming/lang/words_by_section.html#sixteen
+msgctxt "16.ogg"
+msgid "sixteen"
+msgstr "dece-sex"
+
+#. people / bodyparts / ankle
+#. https://gcompris.net/incoming/lang/words_by_section.html#ankle
+msgctxt "ankle.ogg"
+msgid "ankle"
+msgstr ""
+
+#. people / bodyparts / arm
+#. https://gcompris.net/incoming/lang/words_by_section.html#arm
+msgctxt "arm.ogg"
+msgid "arm"
+msgstr ""
+
+#. people / bodyparts / back
+#. https://gcompris.net/incoming/lang/words_by_section.html#back
+msgctxt "back.ogg"
+msgid "back"
+msgstr "retro"
+
+#. people / bodyparts / beard
+#. https://gcompris.net/incoming/lang/words_by_section.html#beard
+msgctxt "beard.ogg"
+msgid "beard"
+msgstr ""
+
+#. people / bodyparts / belly
+#. https://gcompris.net/incoming/lang/words_by_section.html#belly
+msgctxt "belly.ogg"
+msgid "belly"
+msgstr ""
+
+#. people / bodyparts / bottom
+#. https://gcompris.net/incoming/lang/words_by_section.html#bottom
+msgctxt "bottom.ogg"
+msgid "bottom"
+msgstr "basso"
+
+#. people / bodyparts / braid
+#. https://gcompris.net/incoming/lang/words_by_section.html#braid
+msgctxt "braid.ogg"
+msgid "braid"
+msgstr ""
+
+#. people / bodyparts / brain
+#. https://gcompris.net/incoming/lang/words_by_section.html#brain
+msgctxt "brain.ogg"
+msgid "brain"
+msgstr ""
+
+#. people / bodyparts / breast
+#. https://gcompris.net/incoming/lang/words_by_section.html#breast
+msgctxt "breast.ogg"
+msgid "breast"
+msgstr ""
+
+#. people / bodyparts / bump
+#. https://gcompris.net/incoming/lang/words_by_section.html#bump
+msgctxt "bump.ogg"
+msgid "bump"
+msgstr ""
+
+#. people / bodyparts / cheek
+#. https://gcompris.net/incoming/lang/words_by_section.html#cheek
+msgctxt "cheek.ogg"
+msgid "cheek"
+msgstr ""
+
+#. people / bodyparts / chin
+#. https://gcompris.net/incoming/lang/words_by_section.html#chin
+msgctxt "chin.ogg"
+msgid "chin"
+msgstr ""
+
+#. people / bodyparts / ear
+#. https://gcompris.net/incoming/lang/words_by_section.html#ear
+msgctxt "ear.ogg"
+msgid "ear"
+msgstr ""
+
+#. people / bodyparts / elbow
+#. https://gcompris.net/incoming/lang/words_by_section.html#elbow
+msgctxt "elbow.ogg"
+msgid "elbow"
+msgstr ""
+
+#. people / bodyparts / eyelash
+#. https://gcompris.net/incoming/lang/words_by_section.html#eyelash
+msgctxt "eyelash.ogg"
+msgid "eyelash"
+msgstr ""
+
+#. people / bodyparts / eyes
+#. https://gcompris.net/incoming/lang/words_by_section.html#eyes
+msgctxt "eyes.ogg"
+msgid "eyes"
+msgstr ""
+
+#. people / bodyparts / face
+#. https://gcompris.net/incoming/lang/words_by_section.html#face
+msgctxt "face.ogg"
+msgid "face"
+msgstr "face (facie)"
+
+#. people / bodyparts / femur
+#. https://gcompris.net/incoming/lang/words_by_section.html#femur
+msgctxt "femur.ogg"
+msgid "femur"
+msgstr ""
+
+#. people / bodyparts / finger
+#. https://gcompris.net/incoming/lang/words_by_section.html#finger
+msgctxt "finger.ogg"
+msgid "finger"
+msgstr "digito"
+
+#. people / bodyparts / fist
+#. https://gcompris.net/incoming/lang/words_by_section.html#fist
+msgctxt "fist.ogg"
+msgid "fist"
+msgstr ""
+
+#. people / bodyparts / foot
+#. https://gcompris.net/incoming/lang/words_by_section.html#foot
+msgctxt "foot.ogg"
+msgid "foot"
+msgstr "pede"
+
+#. people / bodyparts / grin
+#. https://gcompris.net/incoming/lang/words_by_section.html#grin
+msgctxt "grin.ogg"
+msgid "grin"
+msgstr ""
+
+#. people / bodyparts / hair
+#. https://gcompris.net/incoming/lang/words_by_section.html#hair
+msgctxt "hair.ogg"
+msgid "hair"
+msgstr ""
+
+#. people / bodyparts / hand
+#. https://gcompris.net/incoming/lang/words_by_section.html#hand
+msgctxt "hand.ogg"
+msgid "hand"
+msgstr ""
+
+#. people / bodyparts / head
+#. https://gcompris.net/incoming/lang/words_by_section.html#head
+msgctxt "head.ogg"
+msgid "head"
+msgstr "capite"
+
+#. people / bodyparts / hip
+#. https://gcompris.net/incoming/lang/words_by_section.html#hip
+msgctxt "hip.ogg"
+msgid "hip"
+msgstr ""
+
+#. people / bodyparts / knee
+#. https://gcompris.net/incoming/lang/words_by_section.html#knee
+msgctxt "knee.ogg"
+msgid "knee"
+msgstr ""
+
+#. people / bodyparts / lap
+#. https://gcompris.net/incoming/lang/words_by_section.html#lap
+msgctxt "lap.ogg"
+msgid "lap"
+msgstr "gyro"
+
+#. people / bodyparts / leg
+#. https://gcompris.net/incoming/lang/words_by_section.html#leg
+msgctxt "leg.ogg"
+msgid "leg"
+msgstr ""
+
+#. people / bodyparts / lip
+#. https://gcompris.net/incoming/lang/words_by_section.html#lip
+msgctxt "lip.ogg"
+msgid "lip"
+msgstr ""
+
+#. people / bodyparts / mouth
+#. https://gcompris.net/incoming/lang/words_by_section.html#mouth
+msgctxt "mouth.ogg"
+msgid "mouth"
+msgstr ""
+
+#. people / bodyparts / muscle
+#. https://gcompris.net/incoming/lang/words_by_section.html#muscle
+msgctxt "muscle.ogg"
+msgid "muscle"
+msgstr ""
+
+#. people / bodyparts / navel
+#. https://gcompris.net/incoming/lang/words_by_section.html#navel
+msgctxt "navel.ogg"
+msgid "navel"
+msgstr ""
+
+#. people / bodyparts / neck
+#. https://gcompris.net/incoming/lang/words_by_section.html#neck
+msgctxt "neck.ogg"
+msgid "neck"
+msgstr ""
+
+#. people / bodyparts / nose
+#. https://gcompris.net/incoming/lang/words_by_section.html#nose
+msgctxt "nose.ogg"
+msgid "nose"
+msgstr ""
+
+#. people / bodyparts / nostril
+#. https://gcompris.net/incoming/lang/words_by_section.html#nostril
+msgctxt "nostril.ogg"
+msgid "nostril"
+msgstr ""
+
+#. people / bodyparts / scar
+#. https://gcompris.net/incoming/lang/words_by_section.html#scar
+msgctxt "scar.ogg"
+msgid "scar"
+msgstr ""
+
+#. people / bodyparts / skeleton
+#. https://gcompris.net/incoming/lang/words_by_section.html#skeleton
+msgctxt "skeleton.ogg"
+msgid "skeleton"
+msgstr "skeleto"
+
+#. people / bodyparts / skin
+#. https://gcompris.net/incoming/lang/words_by_section.html#skin
+msgctxt "skin.ogg"
+msgid "skin"
+msgstr "skin (apparentia)"
+
+#. people / bodyparts / spine
+#. https://gcompris.net/incoming/lang/words_by_section.html#spine
+msgctxt "spine.ogg"
+msgid "spine"
+msgstr ""
+
+#. people / bodyparts / stomach
+#. https://gcompris.net/incoming/lang/words_by_section.html#stomach
+msgctxt "stomach.ogg"
+msgid "stomach"
+msgstr ""
+
+#. people / bodyparts / sweat
+#. https://gcompris.net/incoming/lang/words_by_section.html#sweat
+msgctxt "sweat.ogg"
+msgid "sweat"
+msgstr ""
+
+#. people / bodyparts / teeth
+#. https://gcompris.net/incoming/lang/words_by_section.html#teeth
+msgctxt "teeth.ogg"
+msgid "teeth"
+msgstr ""
+
+#. people / bodyparts / thigh
+#. https://gcompris.net/incoming/lang/words_by_section.html#thigh
+msgctxt "thigh.ogg"
+msgid "thigh"
+msgstr ""
+
+#. people / bodyparts / throat
+#. https://gcompris.net/incoming/lang/words_by_section.html#throat
+msgctxt "throat.ogg"
+msgid "throat"
+msgstr ""
+
+#. people / bodyparts / thumb
+#. https://gcompris.net/incoming/lang/words_by_section.html#thumb
+msgctxt "thumb.ogg"
+msgid "thumb"
+msgstr ""
+
+#. people / bodyparts / toe
+#. https://gcompris.net/incoming/lang/words_by_section.html#toe
+msgctxt "toe.ogg"
+msgid "toe"
+msgstr ""
+
+#. people / bodyparts / tongue
+#. https://gcompris.net/incoming/lang/words_by_section.html#tongue
+msgctxt "tongue.ogg"
+msgid "tongue"
+msgstr ""
+
+#. people / bodyparts / vein
+#. https://gcompris.net/incoming/lang/words_by_section.html#vein
+msgctxt "vein.ogg"
+msgid "vein"
+msgstr ""
+
+#. people / bodyparts / wart
+#. https://gcompris.net/incoming/lang/words_by_section.html#wart
+msgctxt "wart.ogg"
+msgid "wart"
+msgstr ""
+
+#. people / bodyparts / wrist
+#. https://gcompris.net/incoming/lang/words_by_section.html#wrist
+msgctxt "wrist.ogg"
+msgid "wrist"
+msgstr ""
+
+#. people / clothes / bathing suit
+#. https://gcompris.net/incoming/lang/words_by_section.html#bathing%20suit
+msgctxt "bathing_suit.ogg"
+msgid "bathing suit"
+msgstr ""
+
+#. people / clothes / bib
+#. https://gcompris.net/incoming/lang/words_by_section.html#bib
+msgctxt "bib.ogg"
+msgid "bib"
+msgstr ""
+
+#. people / clothes / button
+#. https://gcompris.net/incoming/lang/words_by_section.html#button
+msgctxt "button.ogg"
+msgid "button"
+msgstr "button"
+
+#. people / clothes / cap
+#. https://gcompris.net/incoming/lang/words_by_section.html#cap
+msgctxt "cap.ogg"
+msgid "cap"
+msgstr ""
+
+#. people / clothes / cape
+#. https://gcompris.net/incoming/lang/words_by_section.html#cape
+msgctxt "cape.ogg"
+msgid "cape"
+msgstr ""
+
+#. people / clothes / coat
+#. https://gcompris.net/incoming/lang/words_by_section.html#coat
+msgctxt "coat.ogg"
+msgid "coat"
+msgstr ""
+
+#. people / clothes / dress
+#. https://gcompris.net/incoming/lang/words_by_section.html#dress
+msgctxt "dress.ogg"
+msgid "dress"
+msgstr ""
+
+#. people / clothes / glove
+#. https://gcompris.net/incoming/lang/words_by_section.html#glove
+msgctxt "glove.ogg"
+msgid "glove"
+msgstr ""
+
+#. people / clothes / hat
+#. https://gcompris.net/incoming/lang/words_by_section.html#hat
+msgctxt "hat.ogg"
+msgid "hat"
+msgstr "cappello"
+
+#. people / clothes / heel
+#. https://gcompris.net/incoming/lang/words_by_section.html#heel
+msgctxt "heel.ogg"
+msgid "heel"
+msgstr ""
+
+#. people / clothes / helmet
+#. https://gcompris.net/incoming/lang/words_by_section.html#helmet
+msgctxt "helmet.ogg"
+msgid "helmet"
+msgstr ""
+
+#. people / clothes / jacket
+#. https://gcompris.net/incoming/lang/words_by_section.html#jacket
+msgctxt "jacket.ogg"
+msgid "jacket"
+msgstr ""
+
+#. people / clothes / kimono
+#. https://gcompris.net/incoming/lang/words_by_section.html#kimono
+msgctxt "kimono.ogg"
+msgid "kimono"
+msgstr ""
+
+#. people / clothes / nightgown
+#. https://gcompris.net/incoming/lang/words_by_section.html#nightgown
+msgctxt "nightgown.ogg"
+msgid "nightgown"
+msgstr ""
+
+#. people / clothes / pajamas
+#. https://gcompris.net/incoming/lang/words_by_section.html#pajamas
+msgctxt "pajamas.ogg"
+msgid "pajamas"
+msgstr ""
+
+#. people / clothes / panties
+#. https://gcompris.net/incoming/lang/words_by_section.html#panties
+msgctxt "panties.ogg"
+msgid "panties"
+msgstr ""
+
+#. people / clothes / pants
+#. https://gcompris.net/incoming/lang/words_by_section.html#pants
+msgctxt "pants.ogg"
+msgid "pants"
+msgstr ""
+
+#. people / clothes / patch
+#. https://gcompris.net/incoming/lang/words_by_section.html#patch
+msgctxt "patch.ogg"
+msgid "patch"
+msgstr ""
+
+#. people / clothes / pocket
+#. https://gcompris.net/incoming/lang/words_by_section.html#pocket
+msgctxt "pocket.ogg"
+msgid "pocket"
+msgstr "tasca"
+
+#. people / clothes / pompon
+#. https://gcompris.net/incoming/lang/words_by_section.html#pompon
+msgctxt "pompon.ogg"
+msgid "pompon"
+msgstr ""
+
+#. people / clothes / pullover
+#. https://gcompris.net/incoming/lang/words_by_section.html#pullover
+msgctxt "pullover.ogg"
+msgid "pullover"
+msgstr ""
+
+#. people / clothes / raincoat
+#. https://gcompris.net/incoming/lang/words_by_section.html#raincoat
+msgctxt "raincoat.ogg"
+msgid "raincoat"
+msgstr ""
+
+#. people / clothes / robe
+#. https://gcompris.net/incoming/lang/words_by_section.html#robe
+msgctxt "robe.ogg"
+msgid "robe"
+msgstr ""
+
+#. people / clothes / sandals
+#. https://gcompris.net/incoming/lang/words_by_section.html#sandals
+msgctxt "sandals.ogg"
+msgid "sandals"
+msgstr ""
+
+#. people / clothes / sash
+#. https://gcompris.net/incoming/lang/words_by_section.html#sash
+msgctxt "sash.ogg"
+msgid "sash"
+msgstr ""
+
+#. people / clothes / scarf
+#. https://gcompris.net/incoming/lang/words_by_section.html#scarf
+msgctxt "scarf.ogg"
+msgid "scarf"
+msgstr ""
+
+#. people / clothes / shirt
+#. https://gcompris.net/incoming/lang/words_by_section.html#shirt
+msgctxt "shirt.ogg"
+msgid "shirt"
+msgstr ""
+
+#. people / clothes / shoe
+#. https://gcompris.net/incoming/lang/words_by_section.html#shoe
+msgctxt "shoe.ogg"
+msgid "shoe"
+msgstr ""
+
+#. people / clothes / shoelace
+#. https://gcompris.net/incoming/lang/words_by_section.html#shoelace
+msgctxt "shoelace.ogg"
+msgid "shoelace"
+msgstr ""
+
+#. people / clothes / short
+#. https://gcompris.net/incoming/lang/words_by_section.html#short
+msgctxt "short.ogg"
+msgid "short"
+msgstr "breve"
+
+#. people / clothes / skirt
+#. https://gcompris.net/incoming/lang/words_by_section.html#skirt
+msgctxt "skirt.ogg"
+msgid "skirt"
+msgstr ""
+
+#. people / clothes / sleeve
+#. https://gcompris.net/incoming/lang/words_by_section.html#sleeve
+msgctxt "sleeve.ogg"
+msgid "sleeve"
+msgstr ""
+
+#. people / clothes / slippers
+#. https://gcompris.net/incoming/lang/words_by_section.html#slippers
+msgctxt "slippers.ogg"
+msgid "slippers"
+msgstr ""
+
+#. people / clothes / smock
+#. https://gcompris.net/incoming/lang/words_by_section.html#smock
+msgctxt "smock.ogg"
+msgid "smock"
+msgstr ""
+
+#. people / clothes / sneaker
+#. https://gcompris.net/incoming/lang/words_by_section.html#sneaker
+msgctxt "sneaker.ogg"
+msgid "sneaker"
+msgstr ""
+
+#. people / clothes / sock
+#. https://gcompris.net/incoming/lang/words_by_section.html#sock
+msgctxt "sock.ogg"
+msgid "sock"
+msgstr ""
+
+#. people / clothes / sole shoe
+#. https://gcompris.net/incoming/lang/words_by_section.html#sole%20shoe
+msgctxt "sole_shoe.ogg"
+msgid "sole shoe"
+msgstr ""
+
+#. people / clothes / suit
+#. https://gcompris.net/incoming/lang/words_by_section.html#suit
+msgctxt "suit.ogg"
+msgid "suit"
+msgstr ""
+
+#. people / clothes / sweatshirt
+#. https://gcompris.net/incoming/lang/words_by_section.html#sweatshirt
+msgctxt "sweatshirt.ogg"
+msgid "sweatshirt"
+msgstr ""
+
+#. people / clothes / uniform
+#. https://gcompris.net/incoming/lang/words_by_section.html#uniform
+msgctxt "uniform.ogg"
+msgid "uniform"
+msgstr ""
+
+#. people / clothes / vest
+#. https://gcompris.net/incoming/lang/words_by_section.html#vest
+msgctxt "vest.ogg"
+msgid "vest"
+msgstr ""
+
+#. people / clothes / zipper
+#. https://gcompris.net/incoming/lang/words_by_section.html#zipper
+msgctxt "zipper.ogg"
+msgid "zipper"
+msgstr ""
+
+#. people / emotion / ache
+#. https://gcompris.net/incoming/lang/words_by_section.html#ache
+msgctxt "ache.ogg"
+msgid "ache"
+msgstr ""
+
+#. people / emotion / angry
+#. https://gcompris.net/incoming/lang/words_by_section.html#angry
+msgctxt "angry.ogg"
+msgid "angry"
+msgstr "irate"
+
+#. people / emotion / blush
+#. https://gcompris.net/incoming/lang/words_by_section.html#blush
+msgctxt "blush.ogg"
+msgid "blush"
+msgstr ""
+
+#. people / emotion / fear
+#. https://gcompris.net/incoming/lang/words_by_section.html#fear
+msgctxt "fear.ogg"
+msgid "fear"
+msgstr ""
+
+#. people / emotion / joy
+#. https://gcompris.net/incoming/lang/words_by_section.html#joy
+msgctxt "joy.ogg"
+msgid "joy"
+msgstr ""
+
+#. people / emotion / to laugh
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20laugh
+msgctxt "laugh.ogg"
+msgid "to laugh"
+msgstr ""
+
+#. people / emotion / mad
+#. https://gcompris.net/incoming/lang/words_by_section.html#mad
+msgctxt "mad.ogg"
+msgid "mad"
+msgstr "mad"
+
+#. people / emotion / rage
+#. https://gcompris.net/incoming/lang/words_by_section.html#rage
+msgctxt "rage.ogg"
+msgid "rage"
+msgstr ""
+
+#. people / emotion / sad
+#. https://gcompris.net/incoming/lang/words_by_section.html#sad
+msgctxt "sad.ogg"
+msgid "sad"
+msgstr "triste"
+
+#. people / emotion / smile
+#. https://gcompris.net/incoming/lang/words_by_section.html#smile
+msgctxt "smile.ogg"
+msgid "smile"
+msgstr ""
+
+#. people / emotion / sob
+#. https://gcompris.net/incoming/lang/words_by_section.html#sob
+msgctxt "sob.ogg"
+msgid "sob"
+msgstr ""
+
+#. people / emotion / yum
+#. https://gcompris.net/incoming/lang/words_by_section.html#yum
+msgctxt "yum.ogg"
+msgid "yum"
+msgstr "yum"
+
+#. people / job / accountant
+#. https://gcompris.net/incoming/lang/words_by_section.html#accountant
+msgctxt "accountant.ogg"
+msgid "accountant"
+msgstr ""
+
+#. people / job / actor
+#. https://gcompris.net/incoming/lang/words_by_section.html#actor
+msgctxt "actor.ogg"
+msgid "actor"
+msgstr "actor/actrice"
+
+#. people / job / artist
+#. https://gcompris.net/incoming/lang/words_by_section.html#artist
+msgctxt "artist.ogg"
+msgid "artist"
+msgstr "artista"
+
+#. people / job / astronaut
+#. https://gcompris.net/incoming/lang/words_by_section.html#astronaut
+msgctxt "astronaut.ogg"
+msgid "astronaut"
+msgstr ""
+
+#. people / job / boxer
+#. https://gcompris.net/incoming/lang/words_by_section.html#boxer
+msgctxt "boxer.ogg"
+msgid "boxer"
+msgstr ""
+
+#. people / job / banker female
+#. https://gcompris.net/incoming/lang/words_by_section.html#banker%20female
+msgctxt "banker_female.ogg"
+msgid "banker female"
+msgstr ""
+
+#. people / job / bricklayer
+#. https://gcompris.net/incoming/lang/words_by_section.html#bricklayer
+msgctxt "bricklayer.ogg"
+msgid "bricklayer"
+msgstr ""
+
+#. people / job / butcher
+#. https://gcompris.net/incoming/lang/words_by_section.html#butcher
+msgctxt "butcher.ogg"
+msgid "butcher"
+msgstr ""
+
+#. people / job / carpenter
+#. https://gcompris.net/incoming/lang/words_by_section.html#carpenter
+msgctxt "carpenter.ogg"
+msgid "carpenter"
+msgstr ""
+
+#. people / job / chef
+#. https://gcompris.net/incoming/lang/words_by_section.html#chef
+msgctxt "chef.ogg"
+msgid "chef"
+msgstr ""
+
+#. people / job / cleaning lady
+#. https://gcompris.net/incoming/lang/words_by_section.html#cleaning%20lady
+msgctxt "cleaning_lady.ogg"
+msgid "cleaning lady"
+msgstr ""
+
+#. people / job / clown
+#. https://gcompris.net/incoming/lang/words_by_section.html#clown
+msgctxt "clown.ogg"
+msgid "clown"
+msgstr ""
+
+#. people / job / coach
+#. https://gcompris.net/incoming/lang/words_by_section.html#coach
+msgctxt "coach.ogg"
+msgid "coach"
+msgstr "autocar"
+
+#. people / job / cowboy
+#. https://gcompris.net/incoming/lang/words_by_section.html#cowboy
+msgctxt "cowboy.ogg"
+msgid "cowboy"
+msgstr ""
+
+#. people / job / doctor
+#. https://gcompris.net/incoming/lang/words_by_section.html#doctor
+msgctxt "doctor.ogg"
+msgid "doctor"
+msgstr ""
+
+#. people / job / electrician
+#. https://gcompris.net/incoming/lang/words_by_section.html#electrician
+msgctxt "electrician.ogg"
+msgid "electrician"
+msgstr ""
+
+#. people / job / engineer
+#. https://gcompris.net/incoming/lang/words_by_section.html#engineer
+msgctxt "engineer.ogg"
+msgid "engineer"
+msgstr "ingeniero"
+
+#. people / job / farmer
+#. https://gcompris.net/incoming/lang/words_by_section.html#farmer
+msgctxt "farmer.ogg"
+msgid "farmer"
+msgstr ""
+
+#. people / job / fireman
+#. https://gcompris.net/incoming/lang/words_by_section.html#fireman
+msgctxt "fireman.ogg"
+msgid "fireman"
+msgstr ""
+
+#. people / job / fisherman
+#. https://gcompris.net/incoming/lang/words_by_section.html#fisherman
+msgctxt "fisherman.ogg"
+msgid "fisherman"
+msgstr ""
+
+#. people / job / hunter
+#. https://gcompris.net/incoming/lang/words_by_section.html#hunter
+msgctxt "hunter.ogg"
+msgid "hunter"
+msgstr ""
+
+#. people / job / job
+#. https://gcompris.net/incoming/lang/words_by_section.html#job
+msgctxt "job.ogg"
+msgid "job"
+msgstr "carga"
+
+#. people / job / jockey
+#. https://gcompris.net/incoming/lang/words_by_section.html#jockey
+msgctxt "jockey.ogg"
+msgid "jockey"
+msgstr ""
+
+#. people / job / judge
+#. https://gcompris.net/incoming/lang/words_by_section.html#judge
+msgctxt "judge.ogg"
+msgid "judge"
+msgstr ""
+
+#. people / job / juggler
+#. https://gcompris.net/incoming/lang/words_by_section.html#juggler
+msgctxt "juggler.ogg"
+msgid "juggler"
+msgstr ""
+
+#. people / job / lawyer
+#. https://gcompris.net/incoming/lang/words_by_section.html#lawyer
+msgctxt "lawyer.ogg"
+msgid "lawyer"
+msgstr ""
+
+#. people / job / librarian
+#. https://gcompris.net/incoming/lang/words_by_section.html#librarian
+msgctxt "librarian.ogg"
+msgid "librarian"
+msgstr ""
+
+#. people / job / mechanic
+#. https://gcompris.net/incoming/lang/words_by_section.html#mechanic
+msgctxt "mechanic.ogg"
+msgid "mechanic"
+msgstr ""
+
+#. people / job / musician
+#. https://gcompris.net/incoming/lang/words_by_section.html#musician
+msgctxt "musician.ogg"
+msgid "musician"
+msgstr ""
+
+#. people / job / nun
+#. https://gcompris.net/incoming/lang/words_by_section.html#nun
+msgctxt "nun.ogg"
+msgid "nun"
+msgstr ""
+
+#. people / job / nurse
+#. https://gcompris.net/incoming/lang/words_by_section.html#nurse
+msgctxt "nurse.ogg"
+msgid "nurse"
+msgstr ""
+
+#. people / job / nurse male
+#. https://gcompris.net/incoming/lang/words_by_section.html#nurse%20male
+msgctxt "nurse_male.ogg"
+msgid "nurse male"
+msgstr ""
+
+#. people / job / pilot
+#. https://gcompris.net/incoming/lang/words_by_section.html#pilot
+msgctxt "pilot.ogg"
+msgid "pilot"
+msgstr ""
+
+#. people / job / plumber
+#. https://gcompris.net/incoming/lang/words_by_section.html#plumber
+msgctxt "plumber.ogg"
+msgid "plumber"
+msgstr ""
+
+#. people / job / police
+#. https://gcompris.net/incoming/lang/words_by_section.html#police
+msgctxt "police.ogg"
+msgid "police"
+msgstr ""
+
+#. people / job / priest
+#. https://gcompris.net/incoming/lang/words_by_section.html#priest
+msgctxt "priest.ogg"
+msgid "priest"
+msgstr ""
+
+#. people / job / sailor
+#. https://gcompris.net/incoming/lang/words_by_section.html#sailor
+msgctxt "sailor.ogg"
+msgid "sailor"
+msgstr ""
+
+#. people / job / soldier
+#. https://gcompris.net/incoming/lang/words_by_section.html#soldier
+msgctxt "soldier.ogg"
+msgid "soldier"
+msgstr ""
+
+#. people / job / teacher
+#. https://gcompris.net/incoming/lang/words_by_section.html#teacher
+msgctxt "teacher.ogg"
+msgid "teacher"
+msgstr ""
+
+#. people / job / vet
+#. https://gcompris.net/incoming/lang/words_by_section.html#vet
+msgctxt "vet.ogg"
+msgid "vet"
+msgstr ""
+
+#. people / job / worker
+#. https://gcompris.net/incoming/lang/words_by_section.html#worker
+msgctxt "worker.ogg"
+msgid "worker"
+msgstr ""
+
+#. people / people / wedding
+#. https://gcompris.net/incoming/lang/words_by_section.html#wedding
+msgctxt "wedding.ogg"
+msgid "wedding"
+msgstr ""
+
+#. people / people / boy
+#. https://gcompris.net/incoming/lang/words_by_section.html#boy
+msgctxt "boy.ogg"
+msgid "boy"
+msgstr ""
+
+#. people / people / bride
+#. https://gcompris.net/incoming/lang/words_by_section.html#bride
+msgctxt "bride.ogg"
+msgid "bride"
+msgstr ""
+
+#. people / people / brother
+#. https://gcompris.net/incoming/lang/words_by_section.html#brother
+msgctxt "brother.ogg"
+msgid "brother"
+msgstr ""
+
+#. people / people / child
+#. https://gcompris.net/incoming/lang/words_by_section.html#child
+msgctxt "child.ogg"
+msgid "child"
+msgstr "filio"
+
+#. people / people / couple
+#. https://gcompris.net/incoming/lang/words_by_section.html#couple
+msgctxt "couple.ogg"
+msgid "couple"
+msgstr ""
+
+#. people / people / dad
+#. https://gcompris.net/incoming/lang/words_by_section.html#dad
+msgctxt "dad.ogg"
+msgid "dad"
+msgstr ""
+
+#. people / people / dwarf
+#. https://gcompris.net/incoming/lang/words_by_section.html#dwarf
+msgctxt "dwarf.ogg"
+msgid "dwarf"
+msgstr ""
+
+#. people / people / family
+#. https://gcompris.net/incoming/lang/words_by_section.html#family
+msgctxt "family.ogg"
+msgid "family"
+msgstr "familia"
+
+#. people / people / friend
+#. https://gcompris.net/incoming/lang/words_by_section.html#friend
+msgctxt "friend.ogg"
+msgid "friend"
+msgstr "amico"
+
+#. people / people / girl
+#. https://gcompris.net/incoming/lang/words_by_section.html#girl
+msgctxt "girl.ogg"
+msgid "girl"
+msgstr ""
+
+#. people / people / grandmother
+#. https://gcompris.net/incoming/lang/words_by_section.html#grandmother
+msgctxt "grandmother.ogg"
+msgid "grandmother"
+msgstr ""
+
+#. people / people / husband
+#. https://gcompris.net/incoming/lang/words_by_section.html#husband
+msgctxt "husband.ogg"
+msgid "husband"
+msgstr ""
+
+#. people / people / lady
+#. https://gcompris.net/incoming/lang/words_by_section.html#lady
+msgctxt "lady.ogg"
+msgid "lady"
+msgstr ""
+
+#. people / people / man
+#. https://gcompris.net/incoming/lang/words_by_section.html#man
+msgctxt "man.ogg"
+msgid "man"
+msgstr ""
+
+#. people / people / mate
+#. https://gcompris.net/incoming/lang/words_by_section.html#mate
+msgctxt "mate.ogg"
+msgid "mate"
+msgstr ""
+
+#. people / people / mom
+#. https://gcompris.net/incoming/lang/words_by_section.html#mom
+msgctxt "mom.ogg"
+msgid "mom"
+msgstr ""
+
+#. people / people / mother
+#. https://gcompris.net/incoming/lang/words_by_section.html#mother
+msgctxt "mother.ogg"
+msgid "mother"
+msgstr ""
+
+#. people / people / pal
+#. https://gcompris.net/incoming/lang/words_by_section.html#pal
+msgctxt "pal.ogg"
+msgid "pal"
+msgstr "camerada"
+
+#. people / people / people
+#. https://gcompris.net/incoming/lang/words_by_section.html#people
+msgctxt "people.ogg"
+msgid "people"
+msgstr "gente"
+
+#. people / people / sister
+#. https://gcompris.net/incoming/lang/words_by_section.html#sister
+msgctxt "sister.ogg"
+msgid "sister"
+msgstr ""
+
+#. people / people / son
+#. https://gcompris.net/incoming/lang/words_by_section.html#son
+msgctxt "son.ogg"
+msgid "son"
+msgstr ""
+
+#. people / people / tribe
+#. https://gcompris.net/incoming/lang/words_by_section.html#tribe
+msgctxt "tribe.ogg"
+msgid "tribe"
+msgstr ""
+
+#. people / people / twin boys
+#. https://gcompris.net/incoming/lang/words_by_section.html#twin%20boys
+msgctxt "twin_boys.ogg"
+msgid "twin boys"
+msgstr ""
+
+#. people / people / twin girls
+#. https://gcompris.net/incoming/lang/words_by_section.html#twin%20girls
+msgctxt "twin_girls.ogg"
+msgid "twin girls"
+msgstr ""
+
+#. people / people / wife
+#. https://gcompris.net/incoming/lang/words_by_section.html#wife
+msgctxt "wife.ogg"
+msgid "wife"
+msgstr ""
+
+#. people / people / woman
+#. https://gcompris.net/incoming/lang/words_by_section.html#woman
+msgctxt "woman.ogg"
+msgid "woman"
+msgstr ""
+
+#. people / sport / athlete
+#. https://gcompris.net/incoming/lang/words_by_section.html#athlete
+msgctxt "athlete.ogg"
+msgid "athlete"
+msgstr ""
+
+#. people / sport / ballet
+#. https://gcompris.net/incoming/lang/words_by_section.html#ballet
+msgctxt "ballet.ogg"
+msgid "ballet"
+msgstr ""
+
+#. people / sport / cheer
+#. https://gcompris.net/incoming/lang/words_by_section.html#cheer
+msgctxt "cheer.ogg"
+msgid "cheer"
+msgstr ""
+
+#. people / sport / climb
+#. https://gcompris.net/incoming/lang/words_by_section.html#climb
+msgctxt "climb.ogg"
+msgid "climb"
+msgstr ""
+
+#. people / sport / dance
+#. https://gcompris.net/incoming/lang/words_by_section.html#dance
+msgctxt "dance.ogg"
+msgid "dance"
+msgstr "dansa"
+
+#. people / sport / dive
+#. https://gcompris.net/incoming/lang/words_by_section.html#dive
+msgctxt "dive.ogg"
+msgid "dive"
+msgstr ""
+
+#. people / sport / explore
+#. https://gcompris.net/incoming/lang/words_by_section.html#explore
+msgctxt "explore.ogg"
+msgid "explore"
+msgstr ""
+
+#. people / sport / golf
+#. https://gcompris.net/incoming/lang/words_by_section.html#golf
+msgctxt "golf.ogg"
+msgid "golf"
+msgstr ""
+
+#. people / sport / hike
+#. https://gcompris.net/incoming/lang/words_by_section.html#hike
+msgctxt "hike.ogg"
+msgid "hike"
+msgstr ""
+
+#. people / sport / hit
+#. https://gcompris.net/incoming/lang/words_by_section.html#hit
+msgctxt "hit.ogg"
+msgid "hit"
+msgstr ""
+
+#. people / sport / hockey
+#. https://gcompris.net/incoming/lang/words_by_section.html#hockey
+msgctxt "hockey.ogg"
+msgid "hockey"
+msgstr ""
+
+#. people / sport / hop
+#. https://gcompris.net/incoming/lang/words_by_section.html#hop
+msgctxt "hop.ogg"
+msgid "hop"
+msgstr ""
+
+#. people / sport / jog
+#. https://gcompris.net/incoming/lang/words_by_section.html#jog
+msgctxt "jog.ogg"
+msgid "jog"
+msgstr ""
+
+#. people / sport / judo
+#. https://gcompris.net/incoming/lang/words_by_section.html#judo
+msgctxt "judo.ogg"
+msgid "judo"
+msgstr ""
+
+#. people / sport / lift
+#. https://gcompris.net/incoming/lang/words_by_section.html#lift
+msgctxt "lift.ogg"
+msgid "lift"
+msgstr ""
+
+#. people / sport / race
+#. https://gcompris.net/incoming/lang/words_by_section.html#race
+msgctxt "race.ogg"
+msgid "race"
+msgstr ""
+
+#. people / sport / ran
+#. https://gcompris.net/incoming/lang/words_by_section.html#ran
+msgctxt "ran.ogg"
+msgid "ran"
+msgstr ""
+
+#. people / sport / ride
+#. https://gcompris.net/incoming/lang/words_by_section.html#ride
+msgctxt "ride.ogg"
+msgid "ride"
+msgstr ""
+
+#. people / sport / rowing
+#. https://gcompris.net/incoming/lang/words_by_section.html#rowing
+msgctxt "rowing.ogg"
+msgid "rowing"
+msgstr ""
+
+#. people / sport / skate
+#. https://gcompris.net/incoming/lang/words_by_section.html#skate
+msgctxt "skate.ogg"
+msgid "skate"
+msgstr ""
+
+#. people / sport / ski
+#. https://gcompris.net/incoming/lang/words_by_section.html#ski
+msgctxt "ski.ogg"
+msgid "ski"
+msgstr ""
+
+#. people / sport / sport
+#. https://gcompris.net/incoming/lang/words_by_section.html#sport
+msgctxt "sport.ogg"
+msgid "sport"
+msgstr ""
+
+#. people / sport / swim
+#. https://gcompris.net/incoming/lang/words_by_section.html#swim
+msgctxt "swim.ogg"
+msgid "swim"
+msgstr ""
+
+#. people / sport / tennis
+#. https://gcompris.net/incoming/lang/words_by_section.html#tennis
+msgctxt "tennis.ogg"
+msgid "tennis"
+msgstr ""
+
+#. people / sport / throw
+#. https://gcompris.net/incoming/lang/words_by_section.html#throw
+msgctxt "throw.ogg"
+msgid "throw"
+msgstr ""
+
+#. people / food / bread
+#. https://gcompris.net/incoming/lang/words_by_section.html#bread
+msgctxt "bread.ogg"
+msgid "bread"
+msgstr ""
+
+#. people / food / bun
+#. https://gcompris.net/incoming/lang/words_by_section.html#bun
+msgctxt "bun.ogg"
+msgid "bun"
+msgstr ""
+
+#. people / food / butter
+#. https://gcompris.net/incoming/lang/words_by_section.html#butter
+msgctxt "butter.ogg"
+msgid "butter"
+msgstr ""
+
+#. people / food / cake
+#. https://gcompris.net/incoming/lang/words_by_section.html#cake
+msgctxt "cake.ogg"
+msgid "cake"
+msgstr ""
+
+#. people / food / candy
+#. https://gcompris.net/incoming/lang/words_by_section.html#candy
+msgctxt "candy.ogg"
+msgid "candy"
+msgstr "bonbon"
+
+#. people / food / cereal
+#. https://gcompris.net/incoming/lang/words_by_section.html#cereal
+msgctxt "cereal.ogg"
+msgid "cereal"
+msgstr ""
+
+#. people / food / cheese
+#. https://gcompris.net/incoming/lang/words_by_section.html#cheese
+msgctxt "cheese.ogg"
+msgid "cheese"
+msgstr ""
+
+#. people / food / chocolate
+#. https://gcompris.net/incoming/lang/words_by_section.html#chocolate
+msgctxt "chocolate.ogg"
+msgid "chocolate"
+msgstr "Chocolate"
+
+#. people / food / coffee
+#. https://gcompris.net/incoming/lang/words_by_section.html#coffee
+msgctxt "coffee.ogg"
+msgid "coffee"
+msgstr "caffe"
+
+#. people / food / cookie
+#. https://gcompris.net/incoming/lang/words_by_section.html#cookie
+msgctxt "cookie.ogg"
+msgid "cookie"
+msgstr ""
+
+#. people / food / crepe
+#. https://gcompris.net/incoming/lang/words_by_section.html#crepe
+msgctxt "crepe.ogg"
+msgid "crepe"
+msgstr ""
+
+#. people / food / crumb
+#. https://gcompris.net/incoming/lang/words_by_section.html#crumb
+msgctxt "crumb.ogg"
+msgid "crumb"
+msgstr ""
+
+#. people / food / crust
+#. https://gcompris.net/incoming/lang/words_by_section.html#crust
+msgctxt "crust.ogg"
+msgid "crust"
+msgstr ""
+
+#. people / food / dessert
+#. https://gcompris.net/incoming/lang/words_by_section.html#dessert
+msgctxt "dessert.ogg"
+msgid "dessert"
+msgstr ""
+
+#. people / food / doughnut
+#. https://gcompris.net/incoming/lang/words_by_section.html#doughnut
+msgctxt "doughnut.ogg"
+msgid "doughnut"
+msgstr ""
+
+#. people / food / drink
+#. https://gcompris.net/incoming/lang/words_by_section.html#drink
+msgctxt "drink.ogg"
+msgid "drink"
+msgstr "bibita"
+
+#. people / food / egg
+#. https://gcompris.net/incoming/lang/words_by_section.html#egg
+msgctxt "egg.ogg"
+msgid "egg"
+msgstr ""
+
+#. people / food / feast
+#. https://gcompris.net/incoming/lang/words_by_section.html#feast
+msgctxt "feast.ogg"
+msgid "feast"
+msgstr ""
+
+#. people / food / flour
+#. https://gcompris.net/incoming/lang/words_by_section.html#flour
+msgctxt "flour.ogg"
+msgid "flour"
+msgstr ""
+
+#. people / food / fries
+#. https://gcompris.net/incoming/lang/words_by_section.html#fries
+msgctxt "fries.ogg"
+msgid "fries"
+msgstr ""
+
+#. people / food / fudge
+#. https://gcompris.net/incoming/lang/words_by_section.html#fudge
+msgctxt "fudge.ogg"
+msgid "fudge"
+msgstr ""
+
+#. people / food / gum
+#. https://gcompris.net/incoming/lang/words_by_section.html#gum
+msgctxt "gum.ogg"
+msgid "gum"
+msgstr ""
+
+#. people / food / ham
+#. https://gcompris.net/incoming/lang/words_by_section.html#ham
+msgctxt "ham.ogg"
+msgid "ham"
+msgstr "gambon"
+
+#. people / food / hamburger
+#. https://gcompris.net/incoming/lang/words_by_section.html#hamburger
+msgctxt "hamburger.ogg"
+msgid "hamburger"
+msgstr ""
+
+#. people / food / hot dog
+#. https://gcompris.net/incoming/lang/words_by_section.html#hot%20dog
+msgctxt "hot_dog.ogg"
+msgid "hot dog"
+msgstr ""
+
+#. people / food / ice
+#. https://gcompris.net/incoming/lang/words_by_section.html#ice
+msgctxt "ice.ogg"
+msgid "ice"
+msgstr ""
+
+#. people / food / jam
+#. https://gcompris.net/incoming/lang/words_by_section.html#jam
+msgctxt "jam.ogg"
+msgid "jam"
+msgstr ""
+
+#. people / food / jelly
+#. https://gcompris.net/incoming/lang/words_by_section.html#jelly
+msgctxt "jelly.ogg"
+msgid "jelly"
+msgstr ""
+
+#. people / food / juice
+#. https://gcompris.net/incoming/lang/words_by_section.html#juice
+msgctxt "juice.ogg"
+msgid "juice"
+msgstr ""
+
+#. people / food / lemonade
+#. https://gcompris.net/incoming/lang/words_by_section.html#lemonade
+msgctxt "lemonade.ogg"
+msgid "lemonade"
+msgstr ""
+
+#. people / food / lunch
+#. https://gcompris.net/incoming/lang/words_by_section.html#lunch
+msgctxt "lunch.ogg"
+msgid "lunch"
+msgstr "prandio"
+
+#. people / food / mashed potatoes
+#. https://gcompris.net/incoming/lang/words_by_section.html#mashed%20potatoes
+msgctxt "mashed_potatoes.ogg"
+msgid "mashed potatoes"
+msgstr ""
+
+#. people / food / meal
+#. https://gcompris.net/incoming/lang/words_by_section.html#meal
+msgctxt "meal.ogg"
+msgid "meal"
+msgstr ""
+
+#. people / food / meat
+#. https://gcompris.net/incoming/lang/words_by_section.html#meat
+msgctxt "meat.ogg"
+msgid "meat"
+msgstr ""
+
+#. people / food / milk
+#. https://gcompris.net/incoming/lang/words_by_section.html#milk
+msgctxt "milk.ogg"
+msgid "milk"
+msgstr ""
+
+#. people / food / pepper
+#. https://gcompris.net/incoming/lang/words_by_section.html#pepper
+msgctxt "pepper.ogg"
+msgid "pepper"
+msgstr ""
+
+#. people / food / pie
+#. https://gcompris.net/incoming/lang/words_by_section.html#pie
+msgctxt "pie.ogg"
+msgid "pie"
+msgstr "torta"
+
+#. people / food / pizza
+#. https://gcompris.net/incoming/lang/words_by_section.html#pizza
+msgctxt "pizza.ogg"
+msgid "pizza"
+msgstr ""
+
+#. people / food / popcorn
+#. https://gcompris.net/incoming/lang/words_by_section.html#popcorn
+msgctxt "popcorn.ogg"
+msgid "popcorn"
+msgstr ""
+
+#. people / food / rice
+#. https://gcompris.net/incoming/lang/words_by_section.html#rice
+msgctxt "rice.ogg"
+msgid "rice"
+msgstr ""
+
+#. people / food / roast
+#. https://gcompris.net/incoming/lang/words_by_section.html#roast
+msgctxt "roast.ogg"
+msgid "roast"
+msgstr ""
+
+#. people / food / sandwich
+#. https://gcompris.net/incoming/lang/words_by_section.html#sandwich
+msgctxt "sandwich.ogg"
+msgid "sandwich"
+msgstr ""
+
+#. people / food / sauce
+#. https://gcompris.net/incoming/lang/words_by_section.html#sauce
+msgctxt "sauce.ogg"
+msgid "sauce"
+msgstr ""
+
+#. people / food / sausage
+#. https://gcompris.net/incoming/lang/words_by_section.html#sausage
+msgctxt "sausage.ogg"
+msgid "sausage"
+msgstr ""
+
+#. people / food / snack
+#. https://gcompris.net/incoming/lang/words_by_section.html#snack
+msgctxt "snack.ogg"
+msgid "snack"
+msgstr ""
+
+#. people / food / soup
+#. https://gcompris.net/incoming/lang/words_by_section.html#soup
+msgctxt "soup.ogg"
+msgid "soup"
+msgstr ""
+
+#. people / food / spaghetti
+#. https://gcompris.net/incoming/lang/words_by_section.html#spaghetti
+msgctxt "spaghetti.ogg"
+msgid "spaghetti"
+msgstr ""
+
+#. people / food / spice
+#. https://gcompris.net/incoming/lang/words_by_section.html#spice
+msgctxt "spice.ogg"
+msgid "spice"
+msgstr "specie"
+
+#. people / food / sprinkle
+#. https://gcompris.net/incoming/lang/words_by_section.html#sprinkle
+msgctxt "sprinkle.ogg"
+msgid "sprinkle"
+msgstr ""
+
+#. people / food / stew
+#. https://gcompris.net/incoming/lang/words_by_section.html#stew
+msgctxt "stew.ogg"
+msgid "stew"
+msgstr ""
+
+#. people / food / sugar
+#. https://gcompris.net/incoming/lang/words_by_section.html#sugar
+msgctxt "sugar.ogg"
+msgid "sugar"
+msgstr ""
+
+#. people / food / treat
+#. https://gcompris.net/incoming/lang/words_by_section.html#treat
+msgctxt "treat.ogg"
+msgid "treat"
+msgstr ""
+
+#. people / food / yogurt
+#. https://gcompris.net/incoming/lang/words_by_section.html#yogurt
+msgctxt "yogurt.ogg"
+msgid "yogurt"
+msgstr ""
+
+#. nature / animal / alligator
+#. https://gcompris.net/incoming/lang/words_by_section.html#alligator
+msgctxt "alligator.ogg"
+msgid "alligator"
+msgstr "alligator"
+
+#. nature / animal / animal
+#. https://gcompris.net/incoming/lang/words_by_section.html#animal
+msgctxt "animal.ogg"
+msgid "animal"
+msgstr "animal"
+
+#. nature / animal / ant
+#. https://gcompris.net/incoming/lang/words_by_section.html#ant
+msgctxt "ant.ogg"
+msgid "ant"
+msgstr ""
+
+#. nature / animal / anteater
+#. https://gcompris.net/incoming/lang/words_by_section.html#anteater
+msgctxt "anteater.ogg"
+msgid "anteater"
+msgstr ""
+
+#. nature / animal / antelope
+#. https://gcompris.net/incoming/lang/words_by_section.html#antelope
+msgctxt "antelope.ogg"
+msgid "antelope"
+msgstr ""
+
+#. nature / animal / bait
+#. https://gcompris.net/incoming/lang/words_by_section.html#bait
+msgctxt "bait.ogg"
+msgid "bait"
+msgstr ""
+
+#. nature / animal / bat
+#. https://gcompris.net/incoming/lang/words_by_section.html#bat
+msgctxt "bat.ogg"
+msgid "bat"
+msgstr ""
+
+#. nature / animal / bear
+#. https://gcompris.net/incoming/lang/words_by_section.html#bear
+msgctxt "bear.ogg"
+msgid "bear"
+msgstr ""
+
+#. nature / animal / beaver
+#. https://gcompris.net/incoming/lang/words_by_section.html#beaver
+msgctxt "beaver.ogg"
+msgid "beaver"
+msgstr ""
+
+#. nature / animal / bee
+#. https://gcompris.net/incoming/lang/words_by_section.html#bee
+msgctxt "bee.ogg"
+msgid "bee"
+msgstr ""
+
+#. nature / animal / beetle
+#. https://gcompris.net/incoming/lang/words_by_section.html#beetle
+msgctxt "beetle.ogg"
+msgid "beetle"
+msgstr ""
+
+#. nature / animal / bird
+#. https://gcompris.net/incoming/lang/words_by_section.html#bird
+msgctxt "bird.ogg"
+msgid "bird"
+msgstr ""
+
+#. nature / animal / blackbird
+#. https://gcompris.net/incoming/lang/words_by_section.html#blackbird
+msgctxt "blackbird.ogg"
+msgid "blackbird"
+msgstr ""
+
+#. nature / animal / buffalo
+#. https://gcompris.net/incoming/lang/words_by_section.html#buffalo
+msgctxt "buffalo.ogg"
+msgid "buffalo"
+msgstr ""
+
+#. nature / animal / bug
+#. https://gcompris.net/incoming/lang/words_by_section.html#bug
+msgctxt "bug.ogg"
+msgid "bug"
+msgstr "insecto"
+
+#. nature / animal / bull
+#. https://gcompris.net/incoming/lang/words_by_section.html#bull
+msgctxt "bull.ogg"
+msgid "bull"
+msgstr "tauro"
+
+#. nature / animal / butterfly
+#. https://gcompris.net/incoming/lang/words_by_section.html#butterfly
+msgctxt "butterfly.ogg"
+msgid "butterfly"
+msgstr ""
+
+#. nature / animal / camel
+#. https://gcompris.net/incoming/lang/words_by_section.html#camel
+msgctxt "camel.ogg"
+msgid "camel"
+msgstr ""
+
+#. nature / animal / canary
+#. https://gcompris.net/incoming/lang/words_by_section.html#canary
+msgctxt "canary.ogg"
+msgid "canary"
+msgstr "Canario"
+
+#. nature / animal / cat
+#. https://gcompris.net/incoming/lang/words_by_section.html#cat
+msgctxt "cat.ogg"
+msgid "cat"
+msgstr "catto"
+
+#. nature / animal / caterpillar
+#. https://gcompris.net/incoming/lang/words_by_section.html#caterpillar
+msgctxt "caterpillar.ogg"
+msgid "caterpillar"
+msgstr ""
+
+#. nature / animal / female cat
+#. https://gcompris.net/incoming/lang/words_by_section.html#female%20cat
+msgctxt "cat_female.ogg"
+msgid "female cat"
+msgstr ""
+
+#. nature / animal / centipede
+#. https://gcompris.net/incoming/lang/words_by_section.html#centipede
+msgctxt "centipede.ogg"
+msgid "centipede"
+msgstr ""
+
+#. nature / animal / chameleon
+#. https://gcompris.net/incoming/lang/words_by_section.html#chameleon
+msgctxt "chameleon.ogg"
+msgid "chameleon"
+msgstr ""
+
+#. nature / animal / chick
+#. https://gcompris.net/incoming/lang/words_by_section.html#chick
+msgctxt "chick.ogg"
+msgid "chick"
+msgstr ""
+
+#. nature / animal / chicken
+#. https://gcompris.net/incoming/lang/words_by_section.html#chicken
+msgctxt "chicken.ogg"
+msgid "chicken"
+msgstr ""
+
+#. nature / animal / chimp
+#. https://gcompris.net/incoming/lang/words_by_section.html#chimp
+msgctxt "chimp.ogg"
+msgid "chimp"
+msgstr ""
+
+#. nature / animal / clam
+#. https://gcompris.net/incoming/lang/words_by_section.html#clam
+msgctxt "clam.ogg"
+msgid "clam"
+msgstr ""
+
+#. nature / animal / claw
+#. https://gcompris.net/incoming/lang/words_by_section.html#claw
+msgctxt "claw.ogg"
+msgid "claw"
+msgstr ""
+
+#. nature / animal / cobra
+#. https://gcompris.net/incoming/lang/words_by_section.html#cobra
+msgctxt "cobra.ogg"
+msgid "cobra"
+msgstr ""
+
+#. nature / animal / cod
+#. https://gcompris.net/incoming/lang/words_by_section.html#cod
+msgctxt "cod.ogg"
+msgid "cod"
+msgstr ""
+
+#. nature / animal / colt
+#. https://gcompris.net/incoming/lang/words_by_section.html#colt
+msgctxt "colt.ogg"
+msgid "colt"
+msgstr ""
+
+#. nature / animal / cow
+#. https://gcompris.net/incoming/lang/words_by_section.html#cow
+msgctxt "cow.ogg"
+msgid "cow"
+msgstr ""
+
+#. nature / animal / crab
+#. https://gcompris.net/incoming/lang/words_by_section.html#crab
+msgctxt "crab.ogg"
+msgid "crab"
+msgstr "cancere"
+
+#. nature / animal / crocodile
+#. https://gcompris.net/incoming/lang/words_by_section.html#crocodile
+msgctxt "crocodile.ogg"
+msgid "crocodile"
+msgstr ""
+
+#. nature / animal / crow
+#. https://gcompris.net/incoming/lang/words_by_section.html#crow
+msgctxt "crow.ogg"
+msgid "crow"
+msgstr ""
+
+#. nature / animal / deer
+#. https://gcompris.net/incoming/lang/words_by_section.html#deer
+msgctxt "deer.ogg"
+msgid "deer"
+msgstr ""
+
+#. nature / animal / den
+#. https://gcompris.net/incoming/lang/words_by_section.html#den
+msgctxt "den.ogg"
+msgid "den"
+msgstr ""
+
+#. nature / animal / doe
+#. https://gcompris.net/incoming/lang/words_by_section.html#doe
+msgctxt "doe.ogg"
+msgid "doe"
+msgstr ""
+
+#. nature / animal / dog
+#. https://gcompris.net/incoming/lang/words_by_section.html#dog
+msgctxt "dog.ogg"
+msgid "dog"
+msgstr "can"
+
+#. nature / animal / dolphin
+#. https://gcompris.net/incoming/lang/words_by_section.html#dolphin
+msgctxt "dolphin.ogg"
+msgid "dolphin"
+msgstr "dolphin"
+
+#. nature / animal / dove
+#. https://gcompris.net/incoming/lang/words_by_section.html#dove
+msgctxt "dove.ogg"
+msgid "dove"
+msgstr ""
+
+#. nature / animal / dragon
+#. https://gcompris.net/incoming/lang/words_by_section.html#dragon
+msgctxt "dragon.ogg"
+msgid "dragon"
+msgstr "dracon"
+
+#. nature / animal / dragonfly
+#. https://gcompris.net/incoming/lang/words_by_section.html#dragonfly
+msgctxt "dragonfly.ogg"
+msgid "dragonfly"
+msgstr ""
+
+#. nature / animal / duck
+#. https://gcompris.net/incoming/lang/words_by_section.html#duck
+msgctxt "duck.ogg"
+msgid "duck"
+msgstr ""
+
+#. nature / animal / duck mother
+#. https://gcompris.net/incoming/lang/words_by_section.html#duck%20mother
+msgctxt "duck_mother.ogg"
+msgid "duck mother"
+msgstr ""
+
+#. nature / animal / eagle
+#. https://gcompris.net/incoming/lang/words_by_section.html#eagle
+msgctxt "eagle.ogg"
+msgid "eagle"
+msgstr ""
+
+#. nature / animal / elk
+#. https://gcompris.net/incoming/lang/words_by_section.html#elk
+msgctxt "elk.ogg"
+msgid "elk"
+msgstr ""
+
+#. nature / animal / fawn
+#. https://gcompris.net/incoming/lang/words_by_section.html#fawn
+msgctxt "fawn.ogg"
+msgid "fawn"
+msgstr ""
+
+#. nature / animal / feather
+#. https://gcompris.net/incoming/lang/words_by_section.html#feather
+msgctxt "feather.ogg"
+msgid "feather"
+msgstr ""
+
+#. nature / animal / fin
+#. https://gcompris.net/incoming/lang/words_by_section.html#fin
+msgctxt "fin.ogg"
+msgid "fin"
+msgstr ""
+
+#. nature / animal / fish
+#. https://gcompris.net/incoming/lang/words_by_section.html#fish
+msgctxt "fish.ogg"
+msgid "fish"
+msgstr "pisce"
+
+#. nature / animal / flamingo
+#. https://gcompris.net/incoming/lang/words_by_section.html#flamingo
+msgctxt "flamingo.ogg"
+msgid "flamingo"
+msgstr ""
+
+#. nature / animal / flies
+#. https://gcompris.net/incoming/lang/words_by_section.html#flies
+msgctxt "flies.ogg"
+msgid "flies"
+msgstr ""
+
+#. nature / animal / fox
+#. https://gcompris.net/incoming/lang/words_by_section.html#fox
+msgctxt "fox.ogg"
+msgid "fox"
+msgstr ""
+
+#. nature / animal / frog
+#. https://gcompris.net/incoming/lang/words_by_section.html#frog
+msgctxt "frog.ogg"
+msgid "frog"
+msgstr ""
+
+#. nature / animal / fur
+#. https://gcompris.net/incoming/lang/words_by_section.html#fur
+msgctxt "fur.ogg"
+msgid "fur"
+msgstr ""
+
+#. nature / animal / giraffe
+#. https://gcompris.net/incoming/lang/words_by_section.html#giraffe
+msgctxt "giraffe.ogg"
+msgid "giraffe"
+msgstr ""
+
+#. nature / animal / goat
+#. https://gcompris.net/incoming/lang/words_by_section.html#goat
+msgctxt "goat.ogg"
+msgid "goat"
+msgstr "capro"
+
+#. nature / animal / goose
+#. https://gcompris.net/incoming/lang/words_by_section.html#goose
+msgctxt "goose.ogg"
+msgid "goose"
+msgstr ""
+
+#. nature / animal / gorilla
+#. https://gcompris.net/incoming/lang/words_by_section.html#gorilla
+msgctxt "gorilla.ogg"
+msgid "gorilla"
+msgstr ""
+
+#. nature / animal / guinea pig
+#. https://gcompris.net/incoming/lang/words_by_section.html#guinea%20pig
+msgctxt "guinea_pig.ogg"
+msgid "guinea pig"
+msgstr ""
+
+#. nature / animal / hedgehog
+#. https://gcompris.net/incoming/lang/words_by_section.html#hedgehog
+msgctxt "hedgehog.ogg"
+msgid "hedgehog"
+msgstr ""
+
+#. nature / animal / hen
+#. https://gcompris.net/incoming/lang/words_by_section.html#hen
+msgctxt "hen.ogg"
+msgid "hen"
+msgstr ""
+
+#. nature / animal / herd
+#. https://gcompris.net/incoming/lang/words_by_section.html#herd
+msgctxt "herd.ogg"
+msgid "herd"
+msgstr ""
+
+#. nature / animal / hippopotamus
+#. https://gcompris.net/incoming/lang/words_by_section.html#hippopotamus
+msgctxt "hippopotamus.ogg"
+msgid "hippopotamus"
+msgstr ""
+
+#. nature / animal / hive
+#. https://gcompris.net/incoming/lang/words_by_section.html#hive
+msgctxt "hive.ogg"
+msgid "hive"
+msgstr ""
+
+#. nature / animal / horse
+#. https://gcompris.net/incoming/lang/words_by_section.html#horse
+msgctxt "horse.ogg"
+msgid "horse"
+msgstr "cavallo"
+
+#. nature / animal / hound
+#. https://gcompris.net/incoming/lang/words_by_section.html#hound
+msgctxt "hound.ogg"
+msgid "hound"
+msgstr ""
+
+#. nature / animal / hummingbird
+#. https://gcompris.net/incoming/lang/words_by_section.html#hummingbird
+msgctxt "hummingbird.ogg"
+msgid "hummingbird"
+msgstr ""
+
+#. nature / animal / hyena
+#. https://gcompris.net/incoming/lang/words_by_section.html#hyena
+msgctxt "hyena.ogg"
+msgid "hyena"
+msgstr ""
+
+#. nature / animal / iguana
+#. https://gcompris.net/incoming/lang/words_by_section.html#iguana
+msgctxt "iguana.ogg"
+msgid "iguana"
+msgstr ""
+
+#. nature / animal / jaguar
+#. https://gcompris.net/incoming/lang/words_by_section.html#jaguar
+msgctxt "jaguar.ogg"
+msgid "jaguar"
+msgstr ""
+
+#. nature / animal / jay
+#. https://gcompris.net/incoming/lang/words_by_section.html#jay
+msgctxt "jay.ogg"
+msgid "jay"
+msgstr ""
+
+#. nature / animal / jellyfish
+#. https://gcompris.net/incoming/lang/words_by_section.html#jellyfish
+msgctxt "jellyfish.ogg"
+msgid "jellyfish"
+msgstr ""
+
+#. nature / animal / kangaroo
+#. https://gcompris.net/incoming/lang/words_by_section.html#kangaroo
+msgctxt "kangaroo.ogg"
+msgid "kangaroo"
+msgstr ""
+
+#. nature / animal / kitten
+#. https://gcompris.net/incoming/lang/words_by_section.html#kitten
+msgctxt "kitten.ogg"
+msgid "kitten"
+msgstr ""
+
+#. nature / animal / koala
+#. https://gcompris.net/incoming/lang/words_by_section.html#koala
+msgctxt "koala.ogg"
+msgid "koala"
+msgstr ""
+
+#. nature / animal / ladybug
+#. https://gcompris.net/incoming/lang/words_by_section.html#ladybug
+msgctxt "ladybug.ogg"
+msgid "ladybug"
+msgstr ""
+
+#. nature / animal / lama
+#. https://gcompris.net/incoming/lang/words_by_section.html#lama
+msgctxt "lama.ogg"
+msgid "lama"
+msgstr ""
+
+#. nature / animal / lamb
+#. https://gcompris.net/incoming/lang/words_by_section.html#lamb
+msgctxt "lamb.ogg"
+msgid "lamb"
+msgstr ""
+
+#. nature / animal / lemur
+#. https://gcompris.net/incoming/lang/words_by_section.html#lemur
+msgctxt "lemur.ogg"
+msgid "lemur"
+msgstr ""
+
+#. nature / animal / leopard
+#. https://gcompris.net/incoming/lang/words_by_section.html#leopard
+msgctxt "leopard.ogg"
+msgid "leopard"
+msgstr ""
+
+#. nature / animal / lion
+#. https://gcompris.net/incoming/lang/words_by_section.html#lion
+msgctxt "lion.ogg"
+msgid "lion"
+msgstr "leon"
+
+#. nature / animal / lion cub
+#. https://gcompris.net/incoming/lang/words_by_section.html#lion%20cub
+msgctxt "lion_cub.ogg"
+msgid "lion cub"
+msgstr ""
+
+#. nature / animal / lizard
+#. https://gcompris.net/incoming/lang/words_by_section.html#lizard
+msgctxt "lizard.ogg"
+msgid "lizard"
+msgstr ""
+
+#. nature / animal / lobster
+#. https://gcompris.net/incoming/lang/words_by_section.html#lobster
+msgctxt "lobster.ogg"
+msgid "lobster"
+msgstr ""
+
+#. nature / animal / magpie
+#. https://gcompris.net/incoming/lang/words_by_section.html#magpie
+msgctxt "magpie.ogg"
+msgid "magpie"
+msgstr ""
+
+#. nature / animal / mane
+#. https://gcompris.net/incoming/lang/words_by_section.html#mane
+msgctxt "mane.ogg"
+msgid "mane"
+msgstr ""
+
+#. nature / animal / mice
+#. https://gcompris.net/incoming/lang/words_by_section.html#mice
+msgctxt "mice.ogg"
+msgid "mice"
+msgstr ""
+
+#. nature / animal / mole
+#. https://gcompris.net/incoming/lang/words_by_section.html#mole
+msgctxt "mole.ogg"
+msgid "mole"
+msgstr ""
+
+#. nature / animal / moose
+#. https://gcompris.net/incoming/lang/words_by_section.html#moose
+msgctxt "moose.ogg"
+msgid "moose"
+msgstr ""
+
+#. nature / animal / mosquito
+#. https://gcompris.net/incoming/lang/words_by_section.html#mosquito
+msgctxt "mosquito.ogg"
+msgid "mosquito"
+msgstr ""
+
+#. nature / animal / mouse
+#. https://gcompris.net/incoming/lang/words_by_section.html#mouse
+msgctxt "mouse.ogg"
+msgid "mouse"
+msgstr "mus"
+
+#. nature / animal / mule
+#. https://gcompris.net/incoming/lang/words_by_section.html#mule
+msgctxt "mule.ogg"
+msgid "mule"
+msgstr ""
+
+#. nature / animal / opossum
+#. https://gcompris.net/incoming/lang/words_by_section.html#opossum
+msgctxt "opossum.ogg"
+msgid "opossum"
+msgstr ""
+
+#. nature / animal / ostrich
+#. https://gcompris.net/incoming/lang/words_by_section.html#ostrich
+msgctxt "ostrich.ogg"
+msgid "ostrich"
+msgstr ""
+
+#. nature / animal / otter
+#. https://gcompris.net/incoming/lang/words_by_section.html#otter
+msgctxt "otter.ogg"
+msgid "otter"
+msgstr ""
+
+#. nature / animal / owl
+#. https://gcompris.net/incoming/lang/words_by_section.html#owl
+msgctxt "owl.ogg"
+msgid "owl"
+msgstr ""
+
+#. nature / animal / ox
+#. https://gcompris.net/incoming/lang/words_by_section.html#ox
+msgctxt "ox.ogg"
+msgid "ox"
+msgstr "bove"
+
+#. nature / animal / oyster
+#. https://gcompris.net/incoming/lang/words_by_section.html#oyster
+msgctxt "oyster.ogg"
+msgid "oyster"
+msgstr ""
+
+#. nature / animal / panda
+#. https://gcompris.net/incoming/lang/words_by_section.html#panda
+msgctxt "panda.ogg"
+msgid "panda"
+msgstr ""
+
+#. nature / animal / panther
+#. https://gcompris.net/incoming/lang/words_by_section.html#panther
+msgctxt "panther.ogg"
+msgid "panther"
+msgstr ""
+
+#. nature / animal / parakeet
+#. https://gcompris.net/incoming/lang/words_by_section.html#parakeet
+msgctxt "parakeet.ogg"
+msgid "parakeet"
+msgstr ""
+
+#. nature / animal / parrot
+#. https://gcompris.net/incoming/lang/words_by_section.html#parrot
+msgctxt "parrot.ogg"
+msgid "parrot"
+msgstr ""
+
+#. nature / animal / paw
+#. https://gcompris.net/incoming/lang/words_by_section.html#paw
+msgctxt "paw.ogg"
+msgid "paw"
+msgstr ""
+
+#. nature / animal / peacock
+#. https://gcompris.net/incoming/lang/words_by_section.html#peacock
+msgctxt "peacock.ogg"
+msgid "peacock"
+msgstr ""
+
+#. nature / animal / pelican
+#. https://gcompris.net/incoming/lang/words_by_section.html#pelican
+msgctxt "pelican.ogg"
+msgid "pelican"
+msgstr ""
+
+#. nature / animal / pet
+#. https://gcompris.net/incoming/lang/words_by_section.html#pet
+msgctxt "pet.ogg"
+msgid "pet"
+msgstr ""
+
+#. nature / animal / pig
+#. https://gcompris.net/incoming/lang/words_by_section.html#pig
+msgctxt "pig.ogg"
+msgid "pig"
+msgstr "porco"
+
+#. nature / animal / pigeon
+#. https://gcompris.net/incoming/lang/words_by_section.html#pigeon
+msgctxt "pigeon.ogg"
+msgid "pigeon"
+msgstr ""
+
+#. nature / animal / piranha
+#. https://gcompris.net/incoming/lang/words_by_section.html#piranha
+msgctxt "piranha.ogg"
+msgid "piranha"
+msgstr ""
+
+#. nature / animal / pony
+#. https://gcompris.net/incoming/lang/words_by_section.html#pony
+msgctxt "pony.ogg"
+msgid "pony"
+msgstr ""
+
+#. nature / animal / pug
+#. https://gcompris.net/incoming/lang/words_by_section.html#pug
+msgctxt "pug.ogg"
+msgid "pug"
+msgstr ""
+
+#. nature / animal / puppy
+#. https://gcompris.net/incoming/lang/words_by_section.html#puppy
+msgctxt "puppy.ogg"
+msgid "puppy"
+msgstr ""
+
+#. nature / animal / rabbit
+#. https://gcompris.net/incoming/lang/words_by_section.html#rabbit
+msgctxt "rabbit.ogg"
+msgid "rabbit"
+msgstr "conilio"
+
+#. nature / animal / baby rabbit
+#. https://gcompris.net/incoming/lang/words_by_section.html#baby%20rabbit
+msgctxt "rabbit_baby.ogg"
+msgid "baby rabbit"
+msgstr ""
+
+#. nature / animal / rat
+#. https://gcompris.net/incoming/lang/words_by_section.html#rat
+msgctxt "rat.ogg"
+msgid "rat"
+msgstr "ratto"
+
+#. nature / animal / reptile
+#. https://gcompris.net/incoming/lang/words_by_section.html#reptile
+msgctxt "reptile.ogg"
+msgid "reptile"
+msgstr ""
+
+#. nature / animal / rhinoceros
+#. https://gcompris.net/incoming/lang/words_by_section.html#rhinoceros
+msgctxt "rhinoceros.ogg"
+msgid "rhinoceros"
+msgstr ""
+
+#. nature / animal / salamander
+#. https://gcompris.net/incoming/lang/words_by_section.html#salamander
+msgctxt "salamander.ogg"
+msgid "salamander"
+msgstr ""
+
+#. nature / animal / salmon
+#. https://gcompris.net/incoming/lang/words_by_section.html#salmon
+msgctxt "salmon.ogg"
+msgid "salmon"
+msgstr "Salmon"
+
+#. nature / animal / scorpion
+#. https://gcompris.net/incoming/lang/words_by_section.html#scorpion
+msgctxt "scorpion.ogg"
+msgid "scorpion"
+msgstr "scorpion"
+
+#. nature / animal / shark
+#. https://gcompris.net/incoming/lang/words_by_section.html#shark
+msgctxt "shark.ogg"
+msgid "shark"
+msgstr ""
+
+#. nature / animal / sheep
+#. https://gcompris.net/incoming/lang/words_by_section.html#sheep
+msgctxt "sheep.ogg"
+msgid "sheep"
+msgstr ""
+
+#. nature / animal / shell
+#. https://gcompris.net/incoming/lang/words_by_section.html#shell
+msgctxt "shell.ogg"
+msgid "shell"
+msgstr "concha"
+
+#. nature / animal / shrimp
+#. https://gcompris.net/incoming/lang/words_by_section.html#shrimp
+msgctxt "shrimp.ogg"
+msgid "shrimp"
+msgstr ""
+
+#. nature / animal / skunk
+#. https://gcompris.net/incoming/lang/words_by_section.html#skunk
+msgctxt "skunk.ogg"
+msgid "skunk"
+msgstr ""
+
+#. nature / animal / slime
+#. https://gcompris.net/incoming/lang/words_by_section.html#slime
+msgctxt "slime.ogg"
+msgid "slime"
+msgstr ""
+
+#. nature / animal / sloth
+#. https://gcompris.net/incoming/lang/words_by_section.html#sloth
+msgctxt "sloth.ogg"
+msgid "sloth"
+msgstr ""
+
+#. nature / animal / slug
+#. https://gcompris.net/incoming/lang/words_by_section.html#slug
+msgctxt "slug.ogg"
+msgid "slug"
+msgstr ""
+
+#. nature / animal / snail
+#. https://gcompris.net/incoming/lang/words_by_section.html#snail
+msgctxt "snail.ogg"
+msgid "snail"
+msgstr ""
+
+#. nature / animal / snake
+#. https://gcompris.net/incoming/lang/words_by_section.html#snake
+msgctxt "snake.ogg"
+msgid "snake"
+msgstr "serpente"
+
+#. nature / animal / sole
+#. https://gcompris.net/incoming/lang/words_by_section.html#sole
+msgctxt "sole.ogg"
+msgid "sole"
+msgstr ""
+
+#. nature / animal / sparrow
+#. https://gcompris.net/incoming/lang/words_by_section.html#sparrow
+msgctxt "sparrow.ogg"
+msgid "sparrow"
+msgstr ""
+
+#. nature / animal / spider
+#. https://gcompris.net/incoming/lang/words_by_section.html#spider
+msgctxt "spider.ogg"
+msgid "spider"
+msgstr ""
+
+#. nature / animal / spike
+#. https://gcompris.net/incoming/lang/words_by_section.html#spike
+msgctxt "spike.ogg"
+msgid "spike"
+msgstr ""
+
+#. nature / animal / squid
+#. https://gcompris.net/incoming/lang/words_by_section.html#squid
+msgctxt "squid.ogg"
+msgid "squid"
+msgstr ""
+
+#. nature / animal / squirrel
+#. https://gcompris.net/incoming/lang/words_by_section.html#squirrel
+msgctxt "squirrel.ogg"
+msgid "squirrel"
+msgstr ""
+
+#. nature / animal / starfish
+#. https://gcompris.net/incoming/lang/words_by_section.html#starfish
+msgctxt "starfish.ogg"
+msgid "starfish"
+msgstr ""
+
+#. nature / animal / swan
+#. https://gcompris.net/incoming/lang/words_by_section.html#swan
+msgctxt "swan.ogg"
+msgid "swan"
+msgstr ""
+
+#. nature / animal / tadpole
+#. https://gcompris.net/incoming/lang/words_by_section.html#tadpole
+msgctxt "tadpole.ogg"
+msgid "tadpole"
+msgstr ""
+
+#. nature / animal / tail
+#. https://gcompris.net/incoming/lang/words_by_section.html#tail
+msgctxt "tail.ogg"
+msgid "tail"
+msgstr ""
+
+#. nature / animal / tick
+#. https://gcompris.net/incoming/lang/words_by_section.html#tick
+msgctxt "tick.ogg"
+msgid "tick"
+msgstr "marca (tick)"
+
+#. nature / animal / tiger
+#. https://gcompris.net/incoming/lang/words_by_section.html#tiger
+msgctxt "tiger.ogg"
+msgid "tiger"
+msgstr "tigre"
+
+#. nature / animal / toad
+#. https://gcompris.net/incoming/lang/words_by_section.html#toad
+msgctxt "toad.ogg"
+msgid "toad"
+msgstr ""
+
+#. nature / animal / turkey
+#. https://gcompris.net/incoming/lang/words_by_section.html#turkey
+msgctxt "turkey.ogg"
+msgid "turkey"
+msgstr "gallo de India"
+
+#. nature / animal / turtle
+#. https://gcompris.net/incoming/lang/words_by_section.html#turtle
+msgctxt "turtle.ogg"
+msgid "turtle"
+msgstr ""
+
+#. nature / animal / tusk
+#. https://gcompris.net/incoming/lang/words_by_section.html#tusk
+msgctxt "tusk.ogg"
+msgid "tusk"
+msgstr ""
+
+#. nature / animal / viper
+#. https://gcompris.net/incoming/lang/words_by_section.html#viper
+msgctxt "viper.ogg"
+msgid "viper"
+msgstr ""
+
+#. nature / animal / vulture
+#. https://gcompris.net/incoming/lang/words_by_section.html#vulture
+msgctxt "vulture.ogg"
+msgid "vulture"
+msgstr ""
+
+#. nature / animal / wasp
+#. https://gcompris.net/incoming/lang/words_by_section.html#wasp
+msgctxt "wasp.ogg"
+msgid "wasp"
+msgstr ""
+
+#. nature / animal / whale
+#. https://gcompris.net/incoming/lang/words_by_section.html#whale
+msgctxt "whale.ogg"
+msgid "whale"
+msgstr ""
+
+#. nature / animal / wing
+#. https://gcompris.net/incoming/lang/words_by_section.html#wing
+msgctxt "wing.ogg"
+msgid "wing"
+msgstr ""
+
+#. nature / animal / wolf
+#. https://gcompris.net/incoming/lang/words_by_section.html#wolf
+msgctxt "wolf.ogg"
+msgid "wolf"
+msgstr ""
+
+#. nature / animal / zebra
+#. https://gcompris.net/incoming/lang/words_by_section.html#zebra
+msgctxt "zebra.ogg"
+msgid "zebra"
+msgstr ""
+
+#. nature / fruit / apple
+#. https://gcompris.net/incoming/lang/words_by_section.html#apple
+msgctxt "apple.ogg"
+msgid "apple"
+msgstr "pomo"
+
+#. nature / fruit / apricot
+#. https://gcompris.net/incoming/lang/words_by_section.html#apricot
+msgctxt "apricot.ogg"
+msgid "apricot"
+msgstr ""
+
+#. nature / fruit / blackberry
+#. https://gcompris.net/incoming/lang/words_by_section.html#blackberry
+msgctxt "blackberry.ogg"
+msgid "blackberry"
+msgstr ""
+
+#. nature / fruit / blueberry
+#. https://gcompris.net/incoming/lang/words_by_section.html#blueberry
+msgctxt "blueberry.ogg"
+msgid "blueberry"
+msgstr ""
+
+#. nature / fruit / cacao
+#. https://gcompris.net/incoming/lang/words_by_section.html#cacao
+msgctxt "cacao.ogg"
+msgid "cacao"
+msgstr ""
+
+#. nature / fruit / cherry
+#. https://gcompris.net/incoming/lang/words_by_section.html#cherry
+msgctxt "cherry.ogg"
+msgid "cherry"
+msgstr ""
+
+#. nature / fruit / coconut
+#. https://gcompris.net/incoming/lang/words_by_section.html#coconut
+msgctxt "coconut.ogg"
+msgid "coconut"
+msgstr ""
+
+#. nature / fruit / date fruit
+#. https://gcompris.net/incoming/lang/words_by_section.html#date%20fruit
+msgctxt "date_fruit.ogg"
+msgid "date fruit"
+msgstr ""
+
+#. nature / fruit / fig
+#. https://gcompris.net/incoming/lang/words_by_section.html#fig
+msgctxt "fig.ogg"
+msgid "fig"
+msgstr "fico"
+
+#. nature / fruit / fruit
+#. https://gcompris.net/incoming/lang/words_by_section.html#fruit
+msgctxt "fruit.ogg"
+msgid "fruit"
+msgstr ""
+
+#. nature / fruit / grape
+#. https://gcompris.net/incoming/lang/words_by_section.html#grape
+msgctxt "grape.ogg"
+msgid "grape"
+msgstr ""
+
+#. nature / fruit / grapefruit
+#. https://gcompris.net/incoming/lang/words_by_section.html#grapefruit
+msgctxt "grapefruit.ogg"
+msgid "grapefruit"
+msgstr ""
+
+#. nature / fruit / kernel
+#. https://gcompris.net/incoming/lang/words_by_section.html#kernel
+msgctxt "kernel.ogg"
+msgid "kernel"
+msgstr "nucleo"
+
+#. nature / fruit / kiwi
+#. https://gcompris.net/incoming/lang/words_by_section.html#kiwi
+msgctxt "kiwi.ogg"
+msgid "kiwi"
+msgstr ""
+
+#. nature / fruit / lemon
+#. https://gcompris.net/incoming/lang/words_by_section.html#lemon
+msgctxt "lemon.ogg"
+msgid "lemon"
+msgstr ""
+
+#. nature / fruit / lime
+#. https://gcompris.net/incoming/lang/words_by_section.html#lime
+msgctxt "lime.ogg"
+msgid "lime"
+msgstr ""
+
+#. nature / fruit / mango
+#. https://gcompris.net/incoming/lang/words_by_section.html#mango
+msgctxt "mango.ogg"
+msgid "mango"
+msgstr ""
+
+#. nature / fruit / melon
+#. https://gcompris.net/incoming/lang/words_by_section.html#melon
+msgctxt "melon.ogg"
+msgid "melon"
+msgstr ""
+
+#. nature / fruit / orange
+#. https://gcompris.net/incoming/lang/words_by_section.html#orange
+msgctxt "orange.ogg"
+msgid "orange"
+msgstr "Orange"
+
+#. nature / fruit / papaya
+#. https://gcompris.net/incoming/lang/words_by_section.html#papaya
+msgctxt "papaya.ogg"
+msgid "papaya"
+msgstr ""
+
+#. nature / fruit / peach
+#. https://gcompris.net/incoming/lang/words_by_section.html#peach
+msgctxt "peach.ogg"
+msgid "peach"
+msgstr ""
+
+#. nature / fruit / pear
+#. https://gcompris.net/incoming/lang/words_by_section.html#pear
+msgctxt "pear.ogg"
+msgid "pear"
+msgstr ""
+
+#. nature / fruit / plum
+#. https://gcompris.net/incoming/lang/words_by_section.html#plum
+msgctxt "plum.ogg"
+msgid "plum"
+msgstr "Pruna"
+
+#. nature / fruit / raspberry
+#. https://gcompris.net/incoming/lang/words_by_section.html#raspberry
+msgctxt "raspberry.ogg"
+msgid "raspberry"
+msgstr ""
+
+#. nature / fruit / strawberry
+#. https://gcompris.net/incoming/lang/words_by_section.html#strawberry
+msgctxt "strawberry.ogg"
+msgid "strawberry"
+msgstr ""
+
+#. nature / nature / bay
+#. https://gcompris.net/incoming/lang/words_by_section.html#bay
+msgctxt "bay.ogg"
+msgid "bay"
+msgstr ""
+
+#. nature / nature / beach
+#. https://gcompris.net/incoming/lang/words_by_section.html#beach
+msgctxt "beach.ogg"
+msgid "beach"
+msgstr "plagia"
+
+#. nature / nature / canyon
+#. https://gcompris.net/incoming/lang/words_by_section.html#canyon
+msgctxt "canyon.ogg"
+msgid "canyon"
+msgstr ""
+
+#. nature / nature / cave
+#. https://gcompris.net/incoming/lang/words_by_section.html#cave
+msgctxt "cave.ogg"
+msgid "cave"
+msgstr ""
+
+#. nature / nature / cavern
+#. https://gcompris.net/incoming/lang/words_by_section.html#cavern
+msgctxt "cavern.ogg"
+msgid "cavern"
+msgstr ""
+
+#. nature / nature / cliff
+#. https://gcompris.net/incoming/lang/words_by_section.html#cliff
+msgctxt "cliff.ogg"
+msgid "cliff"
+msgstr ""
+
+#. nature / nature / cloud
+#. https://gcompris.net/incoming/lang/words_by_section.html#cloud
+msgctxt "cloud.ogg"
+msgid "cloud"
+msgstr ""
+
+#. nature / nature / cloudy
+#. https://gcompris.net/incoming/lang/words_by_section.html#cloudy
+msgctxt "cloudy.ogg"
+msgid "cloudy"
+msgstr "nubilose"
+
+#. nature / nature / coast
+#. https://gcompris.net/incoming/lang/words_by_section.html#coast
+msgctxt "coast.ogg"
+msgid "coast"
+msgstr ""
+
+#. nature / nature / cold
+#. https://gcompris.net/incoming/lang/words_by_section.html#cold
+msgctxt "cold.ogg"
+msgid "cold"
+msgstr "frigido"
+
+#. nature / nature / creek
+#. https://gcompris.net/incoming/lang/words_by_section.html#creek
+msgctxt "creek.ogg"
+msgid "creek"
+msgstr ""
+
+#. nature / nature / crystal
+#. https://gcompris.net/incoming/lang/words_by_section.html#crystal
+msgctxt "crystal.ogg"
+msgid "crystal"
+msgstr ""
+
+#. nature / nature / desert
+#. https://gcompris.net/incoming/lang/words_by_section.html#desert
+msgctxt "desert.ogg"
+msgid "desert"
+msgstr ""
+
+#. nature / nature / diamond
+#. https://gcompris.net/incoming/lang/words_by_section.html#diamond
+msgctxt "diamond.ogg"
+msgid "diamond"
+msgstr "diamante"
+
+#. nature / nature / dirt
+#. https://gcompris.net/incoming/lang/words_by_section.html#dirt
+msgctxt "dirt.ogg"
+msgid "dirt"
+msgstr ""
+
+#. nature / nature / drip
+#. https://gcompris.net/incoming/lang/words_by_section.html#drip
+msgctxt "drip.ogg"
+msgid "drip"
+msgstr ""
+
+#. nature / nature / dune
+#. https://gcompris.net/incoming/lang/words_by_section.html#dune
+msgctxt "dune.ogg"
+msgid "dune"
+msgstr ""
+
+#. nature / nature / earth
+#. https://gcompris.net/incoming/lang/words_by_section.html#earth
+msgctxt "earth.ogg"
+msgid "earth"
+msgstr "terra"
+
+#. nature / nature / fall season
+#. https://gcompris.net/incoming/lang/words_by_section.html#fall%20season
+msgctxt "fall_season.ogg"
+msgid "fall season"
+msgstr ""
+
+#. nature / nature / fire
+#. https://gcompris.net/incoming/lang/words_by_section.html#fire
+msgctxt "fire.ogg"
+msgid "fire"
+msgstr ""
+
+#. nature / nature / flame
+#. https://gcompris.net/incoming/lang/words_by_section.html#flame
+msgctxt "flame.ogg"
+msgid "flame"
+msgstr "flamma"
+
+#. nature / nature / forest
+#. https://gcompris.net/incoming/lang/words_by_section.html#forest
+msgctxt "forest.ogg"
+msgid "forest"
+msgstr ""
+
+#. nature / nature / garden
+#. https://gcompris.net/incoming/lang/words_by_section.html#garden
+msgctxt "garden.ogg"
+msgid "garden"
+msgstr ""
+
+#. nature / nature / gem
+#. https://gcompris.net/incoming/lang/words_by_section.html#gem
+msgctxt "gem.ogg"
+msgid "gem"
+msgstr ""
+
+#. nature / nature / ground
+#. https://gcompris.net/incoming/lang/words_by_section.html#ground
+msgctxt "ground.ogg"
+msgid "ground"
+msgstr ""
+
+#. nature / nature / heat
+#. https://gcompris.net/incoming/lang/words_by_section.html#heat
+msgctxt "heat.ogg"
+msgid "heat"
+msgstr "calor"
+
+#. nature / nature / hill
+#. https://gcompris.net/incoming/lang/words_by_section.html#hill
+msgctxt "hill.ogg"
+msgid "hill"
+msgstr ""
+
+#. nature / nature / hole
+#. https://gcompris.net/incoming/lang/words_by_section.html#hole
+msgctxt "hole.ogg"
+msgid "hole"
+msgstr ""
+
+#. nature / nature / iceberg
+#. https://gcompris.net/incoming/lang/words_by_section.html#iceberg
+msgctxt "iceberg.ogg"
+msgid "iceberg"
+msgstr ""
+
+#. nature / nature / island
+#. https://gcompris.net/incoming/lang/words_by_section.html#island
+msgctxt "island.ogg"
+msgid "island"
+msgstr ""
+
+#. nature / nature / lake
+#. https://gcompris.net/incoming/lang/words_by_section.html#lake
+msgctxt "lake.ogg"
+msgid "lake"
+msgstr ""
+
+#. nature / nature / land
+#. https://gcompris.net/incoming/lang/words_by_section.html#land
+msgctxt "land.ogg"
+msgid "land"
+msgstr ""
+
+#. nature / nature / lava
+#. https://gcompris.net/incoming/lang/words_by_section.html#lava
+msgctxt "lava.ogg"
+msgid "lava"
+msgstr ""
+
+#. nature / nature / ledge
+#. https://gcompris.net/incoming/lang/words_by_section.html#ledge
+msgctxt "ledge.ogg"
+msgid "ledge"
+msgstr ""
+
+#. nature / nature / lightning
+#. https://gcompris.net/incoming/lang/words_by_section.html#lightning
+msgctxt "lightning.ogg"
+msgid "lightning"
+msgstr ""
+
+#. nature / nature / moon
+#. https://gcompris.net/incoming/lang/words_by_section.html#moon
+msgctxt "moon.ogg"
+msgid "moon"
+msgstr "luna"
+
+#. nature / nature / mountain
+#. https://gcompris.net/incoming/lang/words_by_section.html#mountain
+msgctxt "mountain.ogg"
+msgid "mountain"
+msgstr ""
+
+#. nature / nature / mud
+#. https://gcompris.net/incoming/lang/words_by_section.html#mud
+msgctxt "mud.ogg"
+msgid "mud"
+msgstr ""
+
+#. nature / nature / night
+#. https://gcompris.net/incoming/lang/words_by_section.html#night
+msgctxt "night.ogg"
+msgid "night"
+msgstr "nocte"
+
+#. nature / nature / ocean
+#. https://gcompris.net/incoming/lang/words_by_section.html#ocean
+msgctxt "ocean.ogg"
+msgid "ocean"
+msgstr ""
+
+#. nature / nature / path
+#. https://gcompris.net/incoming/lang/words_by_section.html#path
+msgctxt "path.ogg"
+msgid "path"
+msgstr "percurso"
+
+#. nature / nature / peak
+#. https://gcompris.net/incoming/lang/words_by_section.html#peak
+msgctxt "peak.ogg"
+msgid "peak"
+msgstr ""
+
+#. nature / nature / planet
+#. https://gcompris.net/incoming/lang/words_by_section.html#planet
+msgctxt "planet.ogg"
+msgid "planet"
+msgstr ""
+
+#. nature / nature / pond
+#. https://gcompris.net/incoming/lang/words_by_section.html#pond
+msgctxt "pond.ogg"
+msgid "pond"
+msgstr ""
+
+#. nature / nature / rain
+#. https://gcompris.net/incoming/lang/words_by_section.html#rain
+msgctxt "rain.ogg"
+msgid "rain"
+msgstr "pluvia"
+
+#. nature / nature / river
+#. https://gcompris.net/incoming/lang/words_by_section.html#river
+msgctxt "river.ogg"
+msgid "river"
+msgstr ""
+
+#. nature / nature / rock
+#. https://gcompris.net/incoming/lang/words_by_section.html#rock
+msgctxt "rock.ogg"
+msgid "rock"
+msgstr "rocca"
+
+#. nature / nature / sand
+#. https://gcompris.net/incoming/lang/words_by_section.html#sand
+msgctxt "sand.ogg"
+msgid "sand"
+msgstr "arena"
+
+#. nature / nature / sea
+#. https://gcompris.net/incoming/lang/words_by_section.html#sea
+msgctxt "sea.ogg"
+msgid "sea"
+msgstr ""
+
+#. nature / nature / shadow
+#. https://gcompris.net/incoming/lang/words_by_section.html#shadow
+msgctxt "shadow.ogg"
+msgid "shadow"
+msgstr "umbra"
+
+#. nature / nature / shore
+#. https://gcompris.net/incoming/lang/words_by_section.html#shore
+msgctxt "shore.ogg"
+msgid "shore"
+msgstr ""
+
+#. nature / nature / sky
+#. https://gcompris.net/incoming/lang/words_by_section.html#sky
+msgctxt "sky.ogg"
+msgid "sky"
+msgstr ""
+
+#. nature / nature / slope
+#. https://gcompris.net/incoming/lang/words_by_section.html#slope
+msgctxt "slope.ogg"
+msgid "slope"
+msgstr "inclination"
+
+#. nature / nature / smoke
+#. https://gcompris.net/incoming/lang/words_by_section.html#smoke
+msgctxt "smoke.ogg"
+msgid "smoke"
+msgstr "fumo"
+
+#. nature / nature / snow
+#. https://gcompris.net/incoming/lang/words_by_section.html#snow
+msgctxt "snow.ogg"
+msgid "snow"
+msgstr "nive"
+
+#. nature / nature / spider web
+#. https://gcompris.net/incoming/lang/words_by_section.html#spider%20web
+msgctxt "spider_web.ogg"
+msgid "spider web"
+msgstr ""
+
+#. nature / nature / spring season
+#. https://gcompris.net/incoming/lang/words_by_section.html#spring%20season
+msgctxt "spring_season.ogg"
+msgid "spring season"
+msgstr ""
+
+#. nature / nature / star
+#. https://gcompris.net/incoming/lang/words_by_section.html#star
+msgctxt "star.ogg"
+msgid "star"
+msgstr "stella"
+
+#. nature / nature / steam
+#. https://gcompris.net/incoming/lang/words_by_section.html#steam
+msgctxt "steam.ogg"
+msgid "steam"
+msgstr ""
+
+#. nature / nature / stone
+#. https://gcompris.net/incoming/lang/words_by_section.html#stone
+msgctxt "stone.ogg"
+msgid "stone"
+msgstr "stone"
+
+#. nature / nature / stream
+#. https://gcompris.net/incoming/lang/words_by_section.html#stream
+msgctxt "stream.ogg"
+msgid "stream"
+msgstr "fluxo"
+
+#. nature / nature / summer
+#. https://gcompris.net/incoming/lang/words_by_section.html#summer
+msgctxt "summer.ogg"
+msgid "summer"
+msgstr "estate"
+
+#. nature / nature / summit
+#. https://gcompris.net/incoming/lang/words_by_section.html#summit
+msgctxt "summit.ogg"
+msgid "summit"
+msgstr ""
+
+#. nature / nature / sun
+#. https://gcompris.net/incoming/lang/words_by_section.html#sun
+msgctxt "sun.ogg"
+msgid "sun"
+msgstr "sol"
+
+#. nature / nature / time
+#. https://gcompris.net/incoming/lang/words_by_section.html#time
+msgctxt "time.ogg"
+msgid "time"
+msgstr "tempore"
+
+#. nature / nature / top
+#. https://gcompris.net/incoming/lang/words_by_section.html#top
+msgctxt "top.ogg"
+msgid "top"
+msgstr "culmine"
+
+#. nature / nature / trail
+#. https://gcompris.net/incoming/lang/words_by_section.html#trail
+msgctxt "trail.ogg"
+msgid "trail"
+msgstr ""
+
+#. nature / nature / water
+#. https://gcompris.net/incoming/lang/words_by_section.html#water
+msgctxt "water.ogg"
+msgid "water"
+msgstr ""
+
+#. nature / nature / wave
+#. https://gcompris.net/incoming/lang/words_by_section.html#wave
+msgctxt "wave.ogg"
+msgid "wave"
+msgstr "unda"
+
+#. nature / nature / wind
+#. https://gcompris.net/incoming/lang/words_by_section.html#wind
+msgctxt "wind.ogg"
+msgid "wind"
+msgstr "vento"
+
+#. nature / nature / winter
+#. https://gcompris.net/incoming/lang/words_by_section.html#winter
+msgctxt "winter.ogg"
+msgid "winter"
+msgstr "inverno"
+
+#. nature / nature / world
+#. https://gcompris.net/incoming/lang/words_by_section.html#world
+msgctxt "world.ogg"
+msgid "world"
+msgstr "mundo"
+
+#. nature / nature / vapor
+#. https://gcompris.net/incoming/lang/words_by_section.html#vapor
+msgctxt "vapor.ogg"
+msgid "vapor"
+msgstr ""
+
+#. nature / plant / acorn
+#. https://gcompris.net/incoming/lang/words_by_section.html#acorn
+msgctxt "acorn.ogg"
+msgid "acorn"
+msgstr ""
+
+#. nature / plant / apple tree
+#. https://gcompris.net/incoming/lang/words_by_section.html#apple%20tree
+msgctxt "apple_tree.ogg"
+msgid "apple tree"
+msgstr ""
+
+#. nature / plant / branch
+#. https://gcompris.net/incoming/lang/words_by_section.html#branch
+msgctxt "branch.ogg"
+msgid "branch"
+msgstr "ramo"
+
+#. nature / plant / bud
+#. https://gcompris.net/incoming/lang/words_by_section.html#bud
+msgctxt "bud.ogg"
+msgid "bud"
+msgstr "button"
+
+#. nature / plant / bush
+#. https://gcompris.net/incoming/lang/words_by_section.html#bush
+msgctxt "bush.ogg"
+msgid "bush"
+msgstr ""
+
+#. nature / plant / cactus
+#. https://gcompris.net/incoming/lang/words_by_section.html#cactus
+msgctxt "cactus.ogg"
+msgid "cactus"
+msgstr ""
+
+#. nature / plant / clover
+#. https://gcompris.net/incoming/lang/words_by_section.html#clover
+msgctxt "clover.ogg"
+msgid "clover"
+msgstr ""
+
+#. nature / plant / daffodil
+#. https://gcompris.net/incoming/lang/words_by_section.html#daffodil
+msgctxt "daffodil.ogg"
+msgid "daffodil"
+msgstr ""
+
+#. nature / plant / daisy
+#. https://gcompris.net/incoming/lang/words_by_section.html#daisy
+msgctxt "daisy.ogg"
+msgid "daisy"
+msgstr ""
+
+#. nature / plant / dandelion
+#. https://gcompris.net/incoming/lang/words_by_section.html#dandelion
+msgctxt "dandelion.ogg"
+msgid "dandelion"
+msgstr ""
+
+#. nature / plant / flower
+#. https://gcompris.net/incoming/lang/words_by_section.html#flower
+msgctxt "flower.ogg"
+msgid "flower"
+msgstr "flor"
+
+#. nature / plant / grain
+#. https://gcompris.net/incoming/lang/words_by_section.html#grain
+msgctxt "grain.ogg"
+msgid "grain"
+msgstr ""
+
+#. nature / plant / grass
+#. https://gcompris.net/incoming/lang/words_by_section.html#grass
+msgctxt "grass.ogg"
+msgid "grass"
+msgstr "herba"
+
+#. nature / plant / hay
+#. https://gcompris.net/incoming/lang/words_by_section.html#hay
+msgctxt "hay.ogg"
+msgid "hay"
+msgstr ""
+
+#. nature / plant / hedge
+#. https://gcompris.net/incoming/lang/words_by_section.html#hedge
+msgctxt "hedge.ogg"
+msgid "hedge"
+msgstr ""
+
+#. nature / plant / lawn
+#. https://gcompris.net/incoming/lang/words_by_section.html#lawn
+msgctxt "lawn.ogg"
+msgid "lawn"
+msgstr ""
+
+#. nature / plant / leaf
+#. https://gcompris.net/incoming/lang/words_by_section.html#leaf
+msgctxt "leaf.ogg"
+msgid "leaf"
+msgstr ""
+
+#. nature / plant / lilac
+#. https://gcompris.net/incoming/lang/words_by_section.html#lilac
+msgctxt "lilac.ogg"
+msgid "lilac"
+msgstr ""
+
+#. nature / plant / maple
+#. https://gcompris.net/incoming/lang/words_by_section.html#maple
+msgctxt "maple.ogg"
+msgid "maple"
+msgstr ""
+
+#. nature / plant / mimosa
+#. https://gcompris.net/incoming/lang/words_by_section.html#mimosa
+msgctxt "mimosa.ogg"
+msgid "mimosa"
+msgstr ""
+
+#. nature / plant / orchid
+#. https://gcompris.net/incoming/lang/words_by_section.html#orchid
+msgctxt "orchid.ogg"
+msgid "orchid"
+msgstr "Orchidea"
+
+#. nature / plant / palm tree
+#. https://gcompris.net/incoming/lang/words_by_section.html#palm%20tree
+msgctxt "palm_tree.ogg"
+msgid "palm tree"
+msgstr ""
+
+#. nature / plant / peony
+#. https://gcompris.net/incoming/lang/words_by_section.html#peony
+msgctxt "peony.ogg"
+msgid "peony"
+msgstr ""
+
+#. nature / plant / petal
+#. https://gcompris.net/incoming/lang/words_by_section.html#petal
+msgctxt "petal.ogg"
+msgid "petal"
+msgstr ""
+
+#. nature / plant / pine
+#. https://gcompris.net/incoming/lang/words_by_section.html#pine
+msgctxt "pine.ogg"
+msgid "pine"
+msgstr "pino"
+
+#. nature / plant / pine cone
+#. https://gcompris.net/incoming/lang/words_by_section.html#pine%20cone
+msgctxt "pine_cone.ogg"
+msgid "pine cone"
+msgstr ""
+
+#. nature / plant / pip
+#. https://gcompris.net/incoming/lang/words_by_section.html#pip
+msgctxt "pip.ogg"
+msgid "pip"
+msgstr ""
+
+#. nature / plant / plant
+#. https://gcompris.net/incoming/lang/words_by_section.html#plant
+msgctxt "plant.ogg"
+msgid "plant"
+msgstr "planta"
+
+#. nature / plant / root
+#. https://gcompris.net/incoming/lang/words_by_section.html#root
+msgctxt "root.ogg"
+msgid "root"
+msgstr "Radice"
+
+#. nature / plant / rose
+#. https://gcompris.net/incoming/lang/words_by_section.html#rose
+msgctxt "rose.ogg"
+msgid "rose"
+msgstr ""
+
+#. nature / plant / seed
+#. https://gcompris.net/incoming/lang/words_by_section.html#seed
+msgctxt "seed.ogg"
+msgid "seed"
+msgstr ""
+
+#. nature / plant / shrub
+#. https://gcompris.net/incoming/lang/words_by_section.html#shrub
+msgctxt "shrub.ogg"
+msgid "shrub"
+msgstr ""
+
+#. nature / plant / stem
+#. https://gcompris.net/incoming/lang/words_by_section.html#stem
+msgctxt "stem.ogg"
+msgid "stem"
+msgstr ""
+
+#. nature / plant / stick
+#. https://gcompris.net/incoming/lang/words_by_section.html#stick
+msgctxt "stick.ogg"
+msgid "stick"
+msgstr ""
+
+#. nature / plant / stump
+#. https://gcompris.net/incoming/lang/words_by_section.html#stump
+msgctxt "stump.ogg"
+msgid "stump"
+msgstr ""
+
+#. nature / plant / tree
+#. https://gcompris.net/incoming/lang/words_by_section.html#tree
+msgctxt "tree.ogg"
+msgid "tree"
+msgstr "arbore"
+
+#. nature / plant / tulip
+#. https://gcompris.net/incoming/lang/words_by_section.html#tulip
+msgctxt "tulip.ogg"
+msgid "tulip"
+msgstr ""
+
+#. nature / plant / verdure
+#. https://gcompris.net/incoming/lang/words_by_section.html#verdure
+msgctxt "verdure.ogg"
+msgid "verdure"
+msgstr ""
+
+#. nature / vegetables / artichoke
+#. https://gcompris.net/incoming/lang/words_by_section.html#artichoke
+msgctxt "artichoke.ogg"
+msgid "artichoke"
+msgstr ""
+
+#. nature / vegetables / asparagus
+#. https://gcompris.net/incoming/lang/words_by_section.html#asparagus
+msgctxt "asparagus.ogg"
+msgid "asparagus"
+msgstr ""
+
+#. nature / vegetables / avocado
+#. https://gcompris.net/incoming/lang/words_by_section.html#avocado
+msgctxt "avocado.ogg"
+msgid "avocado"
+msgstr ""
+
+#. nature / vegetables / bean
+#. https://gcompris.net/incoming/lang/words_by_section.html#bean
+msgctxt "bean.ogg"
+msgid "bean"
+msgstr ""
+
+#. nature / vegetables / broccoli
+#. https://gcompris.net/incoming/lang/words_by_section.html#broccoli
+msgctxt "broccoli.ogg"
+msgid "broccoli"
+msgstr ""
+
+#. nature / vegetables / cabbage
+#. https://gcompris.net/incoming/lang/words_by_section.html#cabbage
+msgctxt "cabbage.ogg"
+msgid "cabbage"
+msgstr ""
+
+#. nature / vegetables / carrot
+#. https://gcompris.net/incoming/lang/words_by_section.html#carrot
+msgctxt "carrot.ogg"
+msgid "carrot"
+msgstr ""
+
+#. nature / vegetables / cauliflower
+#. https://gcompris.net/incoming/lang/words_by_section.html#cauliflower
+msgctxt "cauliflower.ogg"
+msgid "cauliflower"
+msgstr ""
+
+#. nature / vegetables / celery
+#. https://gcompris.net/incoming/lang/words_by_section.html#celery
+msgctxt "celery.ogg"
+msgid "celery"
+msgstr ""
+
+#. nature / vegetables / corn
+#. https://gcompris.net/incoming/lang/words_by_section.html#corn
+msgctxt "corn.ogg"
+msgid "corn"
+msgstr ""
+
+#. nature / vegetables / cucumber
+#. https://gcompris.net/incoming/lang/words_by_section.html#cucumber
+msgctxt "cucumber.ogg"
+msgid "cucumber"
+msgstr ""
+
+#. nature / vegetables / eggplant
+#. https://gcompris.net/incoming/lang/words_by_section.html#eggplant
+msgctxt "eggplant.ogg"
+msgid "eggplant"
+msgstr ""
+
+#. nature / vegetables / garlic
+#. https://gcompris.net/incoming/lang/words_by_section.html#garlic
+msgctxt "garlic.ogg"
+msgid "garlic"
+msgstr ""
+
+#. nature / vegetables / leek
+#. https://gcompris.net/incoming/lang/words_by_section.html#leek
+msgctxt "leek.ogg"
+msgid "leek"
+msgstr ""
+
+#. nature / vegetables / lettuce
+#. https://gcompris.net/incoming/lang/words_by_section.html#lettuce
+msgctxt "lettuce.ogg"
+msgid "lettuce"
+msgstr ""
+
+#. nature / vegetables / mushroom
+#. https://gcompris.net/incoming/lang/words_by_section.html#mushroom
+msgctxt "mushroom.ogg"
+msgid "mushroom"
+msgstr ""
+
+#. nature / vegetables / nut
+#. https://gcompris.net/incoming/lang/words_by_section.html#nut
+msgctxt "nut.ogg"
+msgid "nut"
+msgstr ""
+
+#. nature / vegetables / olive
+#. https://gcompris.net/incoming/lang/words_by_section.html#olive
+msgctxt "olive.ogg"
+msgid "olive"
+msgstr ""
+
+#. nature / vegetables / onion
+#. https://gcompris.net/incoming/lang/words_by_section.html#onion
+msgctxt "onion.ogg"
+msgid "onion"
+msgstr ""
+
+#. nature / vegetables / pea
+#. https://gcompris.net/incoming/lang/words_by_section.html#pea
+msgctxt "pea.ogg"
+msgid "pea"
+msgstr ""
+
+#. nature / vegetables / peppers
+#. https://gcompris.net/incoming/lang/words_by_section.html#peppers
+msgctxt "peppers.ogg"
+msgid "peppers"
+msgstr ""
+
+#. nature / vegetables / pod
+#. https://gcompris.net/incoming/lang/words_by_section.html#pod
+msgctxt "pod.ogg"
+msgid "pod"
+msgstr ""
+
+#. nature / vegetables / potato
+#. https://gcompris.net/incoming/lang/words_by_section.html#potato
+msgctxt "potato.ogg"
+msgid "potato"
+msgstr "patata"
+
+#. nature / vegetables / pumpkin
+#. https://gcompris.net/incoming/lang/words_by_section.html#pumpkin
+msgctxt "pumpkin.ogg"
+msgid "pumpkin"
+msgstr ""
+
+#. nature / vegetables / radish
+#. https://gcompris.net/incoming/lang/words_by_section.html#radish
+msgctxt "radish.ogg"
+msgid "radish"
+msgstr ""
+
+#. nature / vegetables / spinach
+#. https://gcompris.net/incoming/lang/words_by_section.html#spinach
+msgctxt "spinach.ogg"
+msgid "spinach"
+msgstr ""
+
+#. nature / vegetables / squash
+#. https://gcompris.net/incoming/lang/words_by_section.html#squash
+msgctxt "squash.ogg"
+msgid "squash"
+msgstr "citronada"
+
+#. nature / vegetables / tomatoe
+#. https://gcompris.net/incoming/lang/words_by_section.html#tomatoe
+msgctxt "tomatoe.ogg"
+msgid "tomatoe"
+msgstr ""
+
+#. nature / vegetables / turnip
+#. https://gcompris.net/incoming/lang/words_by_section.html#turnip
+msgctxt "turnip.ogg"
+msgid "turnip"
+msgstr ""
+
+#. nature / vegetables / vegetable
+#. https://gcompris.net/incoming/lang/words_by_section.html#vegetable
+msgctxt "vegetable.ogg"
+msgid "vegetable"
+msgstr ""
+
+#. nature / vegetables / walnut
+#. https://gcompris.net/incoming/lang/words_by_section.html#walnut
+msgctxt "walnut.ogg"
+msgid "walnut"
+msgstr ""
+
+#. nature / vegetables / wheat
+#. https://gcompris.net/incoming/lang/words_by_section.html#wheat
+msgctxt "wheat.ogg"
+msgid "wheat"
+msgstr "Frumento"
+
+#. object / construction / bank
+#. https://gcompris.net/incoming/lang/words_by_section.html#bank
+msgctxt "bank.ogg"
+msgid "bank"
+msgstr "banca"
+
+#. object / construction / barn
+#. https://gcompris.net/incoming/lang/words_by_section.html#barn
+msgctxt "barn.ogg"
+msgid "barn"
+msgstr ""
+
+#. object / construction / bedroom
+#. https://gcompris.net/incoming/lang/words_by_section.html#bedroom
+msgctxt "bedroom.ogg"
+msgid "bedroom"
+msgstr ""
+
+#. object / construction / big top
+#. https://gcompris.net/incoming/lang/words_by_section.html#big%20top
+msgctxt "big_top.ogg"
+msgid "big top"
+msgstr ""
+
+#. object / construction / bridge
+#. https://gcompris.net/incoming/lang/words_by_section.html#bridge
+msgctxt "bridge.ogg"
+msgid "bridge"
+msgstr "ponte"
+
+#. object / construction / cabin
+#. https://gcompris.net/incoming/lang/words_by_section.html#cabin
+msgctxt "cabin.ogg"
+msgid "cabin"
+msgstr ""
+
+#. object / construction / cage
+#. https://gcompris.net/incoming/lang/words_by_section.html#cage
+msgctxt "cage.ogg"
+msgid "cage"
+msgstr ""
+
+#. object / construction / castle
+#. https://gcompris.net/incoming/lang/words_by_section.html#castle
+msgctxt "castle.ogg"
+msgid "castle"
+msgstr ""
+
+#. object / construction / chimney
+#. https://gcompris.net/incoming/lang/words_by_section.html#chimney
+msgctxt "chimney.ogg"
+msgid "chimney"
+msgstr ""
+
+#. object / construction / circus
+#. https://gcompris.net/incoming/lang/words_by_section.html#circus
+msgctxt "circus.ogg"
+msgid "circus"
+msgstr ""
+
+#. object / construction / city
+#. https://gcompris.net/incoming/lang/words_by_section.html#city
+msgctxt "city.ogg"
+msgid "city"
+msgstr "citate"
+
+#. object / construction / dam
+#. https://gcompris.net/incoming/lang/words_by_section.html#dam
+msgctxt "dam.ogg"
+msgid "dam"
+msgstr "dam"
+
+#. object / construction / door
+#. https://gcompris.net/incoming/lang/words_by_section.html#door
+msgctxt "door.ogg"
+msgid "door"
+msgstr ""
+
+#. object / construction / fair
+#. https://gcompris.net/incoming/lang/words_by_section.html#fair
+msgctxt "fair.ogg"
+msgid "fair"
+msgstr "blonde"
+
+#. object / construction / farm
+#. https://gcompris.net/incoming/lang/words_by_section.html#farm
+msgctxt "farm.ogg"
+msgid "farm"
+msgstr ""
+
+#. object / construction / fountain
+#. https://gcompris.net/incoming/lang/words_by_section.html#fountain
+msgctxt "fountain.ogg"
+msgid "fountain"
+msgstr ""
+
+#. object / construction / garage
+#. https://gcompris.net/incoming/lang/words_by_section.html#garage
+msgctxt "garage.ogg"
+msgid "garage"
+msgstr "garage"
+
+#. object / construction / grave
+#. https://gcompris.net/incoming/lang/words_by_section.html#grave
+msgctxt "grave.ogg"
+msgid "grave"
+msgstr "fossa"
+
+#. object / construction / home
+#. https://gcompris.net/incoming/lang/words_by_section.html#home
+msgctxt "home.ogg"
+msgid "home"
+msgstr "domo"
+
+#. object / construction / hospital
+#. https://gcompris.net/incoming/lang/words_by_section.html#hospital
+msgctxt "hospital.ogg"
+msgid "hospital"
+msgstr ""
+
+#. object / construction / house
+#. https://gcompris.net/incoming/lang/words_by_section.html#house
+msgctxt "house.ogg"
+msgid "house"
+msgstr "casa"
+
+#. object / construction / hut
+#. https://gcompris.net/incoming/lang/words_by_section.html#hut
+msgctxt "hut.ogg"
+msgid "hut"
+msgstr ""
+
+#. object / construction / kitchen
+#. https://gcompris.net/incoming/lang/words_by_section.html#kitchen
+msgctxt "kitchen.ogg"
+msgid "kitchen"
+msgstr ""
+
+#. object / construction / lane
+#. https://gcompris.net/incoming/lang/words_by_section.html#lane
+msgctxt "lane.ogg"
+msgid "lane"
+msgstr ""
+
+#. object / construction / lighthouse
+#. https://gcompris.net/incoming/lang/words_by_section.html#lighthouse
+msgctxt "lighthouse.ogg"
+msgid "lighthouse"
+msgstr ""
+
+#. object / construction / merry-go-round
+#. https://gcompris.net/incoming/lang/words_by_section.html#merry-go-round
+msgctxt "merry-go-round.ogg"
+msgid "merry-go-round"
+msgstr ""
+
+#. object / construction / mill
+#. https://gcompris.net/incoming/lang/words_by_section.html#mill
+msgctxt "mill.ogg"
+msgid "mill"
+msgstr ""
+
+#. object / construction / mosque
+#. https://gcompris.net/incoming/lang/words_by_section.html#mosque
+msgctxt "mosque.ogg"
+msgid "mosque"
+msgstr ""
+
+#. object / construction / office
+#. https://gcompris.net/incoming/lang/words_by_section.html#office
+msgctxt "office.ogg"
+msgid "office"
+msgstr "officio"
+
+#. object / construction / pool
+#. https://gcompris.net/incoming/lang/words_by_section.html#pool
+msgctxt "pool.ogg"
+msgid "pool"
+msgstr ""
+
+#. object / construction / post
+#. https://gcompris.net/incoming/lang/words_by_section.html#post
+msgctxt "post.ogg"
+msgid "post"
+msgstr "message de publicar"
+
+#. object / construction / prison
+#. https://gcompris.net/incoming/lang/words_by_section.html#prison
+msgctxt "prison.ogg"
+msgid "prison"
+msgstr ""
+
+#. object / construction / pyramid
+#. https://gcompris.net/incoming/lang/words_by_section.html#pyramid
+msgctxt "pyramid.ogg"
+msgid "pyramid"
+msgstr "pyramide"
+
+#. object / construction / ramp
+#. https://gcompris.net/incoming/lang/words_by_section.html#ramp
+msgctxt "ramp.ogg"
+msgid "ramp"
+msgstr ""
+
+#. object / construction / road
+#. https://gcompris.net/incoming/lang/words_by_section.html#road
+msgctxt "road.ogg"
+msgid "road"
+msgstr ""
+
+#. object / construction / roof
+#. https://gcompris.net/incoming/lang/words_by_section.html#roof
+msgctxt "roof.ogg"
+msgid "roof"
+msgstr ""
+
+#. object / construction / room
+#. https://gcompris.net/incoming/lang/words_by_section.html#room
+msgctxt "room.ogg"
+msgid "room"
+msgstr "camera"
+
+#. object / construction / school
+#. https://gcompris.net/incoming/lang/words_by_section.html#school
+msgctxt "school.ogg"
+msgid "school"
+msgstr "schola"
+
+#. object / construction / shed
+#. https://gcompris.net/incoming/lang/words_by_section.html#shed
+msgctxt "shed.ogg"
+msgid "shed"
+msgstr ""
+
+#. object / construction / shop
+#. https://gcompris.net/incoming/lang/words_by_section.html#shop
+msgctxt "shop.ogg"
+msgid "shop"
+msgstr ""
+
+#. object / construction / shutter
+#. https://gcompris.net/incoming/lang/words_by_section.html#shutter
+msgctxt "shutter.ogg"
+msgid "shutter"
+msgstr "persiana"
+
+#. object / construction / sidewalk
+#. https://gcompris.net/incoming/lang/words_by_section.html#sidewalk
+msgctxt "sidewalk.ogg"
+msgid "sidewalk"
+msgstr ""
+
+#. object / construction / stage
+#. https://gcompris.net/incoming/lang/words_by_section.html#stage
+msgctxt "stage.ogg"
+msgid "stage"
+msgstr "scena"
+
+#. object / construction / staircase
+#. https://gcompris.net/incoming/lang/words_by_section.html#staircase
+msgctxt "staircase.ogg"
+msgid "staircase"
+msgstr ""
+
+#. object / construction / steeple
+#. https://gcompris.net/incoming/lang/words_by_section.html#steeple
+msgctxt "steeple.ogg"
+msgid "steeple"
+msgstr ""
+
+#. object / construction / step
+#. https://gcompris.net/incoming/lang/words_by_section.html#step
+msgctxt "step.ogg"
+msgid "step"
+msgstr "passo"
+
+#. object / construction / store
+#. https://gcompris.net/incoming/lang/words_by_section.html#store
+msgctxt "store.ogg"
+msgid "store"
+msgstr "magazin"
+
+#. object / construction / street
+#. https://gcompris.net/incoming/lang/words_by_section.html#street
+msgctxt "street.ogg"
+msgid "street"
+msgstr "strata"
+
+#. object / construction / temple
+#. https://gcompris.net/incoming/lang/words_by_section.html#temple
+msgctxt "temple.ogg"
+msgid "temple"
+msgstr ""
+
+#. object / construction / tent
+#. https://gcompris.net/incoming/lang/words_by_section.html#tent
+msgctxt "tent.ogg"
+msgid "tent"
+msgstr ""
+
+#. object / construction / train station
+#. https://gcompris.net/incoming/lang/words_by_section.html#train%20station
+msgctxt "train_station.ogg"
+msgid "train station"
+msgstr ""
+
+#. object / construction / wall
+#. https://gcompris.net/incoming/lang/words_by_section.html#wall
+msgctxt "wall.ogg"
+msgid "wall"
+msgstr ""
+
+#. object / construction / window
+#. https://gcompris.net/incoming/lang/words_by_section.html#window
+msgctxt "window.ogg"
+msgid "window"
+msgstr "fenestra"
+
+#. object / construction / window glass
+#. https://gcompris.net/incoming/lang/words_by_section.html#window%20glass
+msgctxt "window_glass.ogg"
+msgid "window glass"
+msgstr ""
+
+#. object / construction / zoo
+#. https://gcompris.net/incoming/lang/words_by_section.html#zoo
+msgctxt "zoo.ogg"
+msgid "zoo"
+msgstr ""
+
+#. object / construction / class
+#. https://gcompris.net/incoming/lang/words_by_section.html#class
+msgctxt "class.ogg"
+msgid "class"
+msgstr "class"
+
+#. object / furniture / armchair
+#. https://gcompris.net/incoming/lang/words_by_section.html#armchair
+msgctxt "armchair.ogg"
+msgid "armchair"
+msgstr ""
+
+#. object / furniture / bath
+#. https://gcompris.net/incoming/lang/words_by_section.html#bath
+msgctxt "bath.ogg"
+msgid "bath"
+msgstr "banio"
+
+#. object / furniture / bed
+#. https://gcompris.net/incoming/lang/words_by_section.html#bed
+msgctxt "bed.ogg"
+msgid "bed"
+msgstr ""
+
+#. object / furniture / bench
+#. https://gcompris.net/incoming/lang/words_by_section.html#bench
+msgctxt "bench.ogg"
+msgid "bench"
+msgstr ""
+
+#. object / furniture / bookcase
+#. https://gcompris.net/incoming/lang/words_by_section.html#bookcase
+msgctxt "bookcase.ogg"
+msgid "bookcase"
+msgstr ""
+
+#. object / furniture / carpet
+#. https://gcompris.net/incoming/lang/words_by_section.html#carpet
+msgctxt "carpet.ogg"
+msgid "carpet"
+msgstr ""
+
+#. object / furniture / chair
+#. https://gcompris.net/incoming/lang/words_by_section.html#chair
+msgctxt "chair.ogg"
+msgid "chair"
+msgstr "sedia"
+
+#. object / furniture / chest
+#. https://gcompris.net/incoming/lang/words_by_section.html#chest
+msgctxt "chest.ogg"
+msgid "chest"
+msgstr ""
+
+#. object / furniture / couch
+#. https://gcompris.net/incoming/lang/words_by_section.html#couch
+msgctxt "couch.ogg"
+msgid "couch"
+msgstr ""
+
+#. object / furniture / cradle
+#. https://gcompris.net/incoming/lang/words_by_section.html#cradle
+msgctxt "cradle.ogg"
+msgid "cradle"
+msgstr ""
+
+#. object / furniture / crib
+#. https://gcompris.net/incoming/lang/words_by_section.html#crib
+msgctxt "crib.ogg"
+msgid "crib"
+msgstr ""
+
+#. object / furniture / desk
+#. https://gcompris.net/incoming/lang/words_by_section.html#desk
+msgctxt "desk.ogg"
+msgid "desk"
+msgstr ""
+
+#. object / furniture / doormat
+#. https://gcompris.net/incoming/lang/words_by_section.html#doormat
+msgctxt "doormat.ogg"
+msgid "doormat"
+msgstr ""
+
+#. object / furniture / drawer
+#. https://gcompris.net/incoming/lang/words_by_section.html#drawer
+msgctxt "drawer.ogg"
+msgid "drawer"
+msgstr ""
+
+#. object / furniture / fan
+#. https://gcompris.net/incoming/lang/words_by_section.html#fan
+msgctxt "fan.ogg"
+msgid "fan"
+msgstr "ventilator"
+
+#. object / furniture / lamp
+#. https://gcompris.net/incoming/lang/words_by_section.html#lamp
+msgctxt "lamp.ogg"
+msgid "lamp"
+msgstr "lampa"
+
+#. object / furniture / mat
+#. https://gcompris.net/incoming/lang/words_by_section.html#mat
+msgctxt "mat.ogg"
+msgid "mat"
+msgstr ""
+
+#. object / furniture / mattress
+#. https://gcompris.net/incoming/lang/words_by_section.html#mattress
+msgctxt "mattress.ogg"
+msgid "mattress"
+msgstr ""
+
+#. object / furniture / quilt
+#. https://gcompris.net/incoming/lang/words_by_section.html#quilt
+msgctxt "quilt.ogg"
+msgid "quilt"
+msgstr ""
+
+#. object / furniture / rug
+#. https://gcompris.net/incoming/lang/words_by_section.html#rug
+msgctxt "rug.ogg"
+msgid "rug"
+msgstr ""
+
+#. object / furniture / seat
+#. https://gcompris.net/incoming/lang/words_by_section.html#seat
+msgctxt "seat.ogg"
+msgid "seat"
+msgstr "sede"
+
+#. object / furniture / shelf
+#. https://gcompris.net/incoming/lang/words_by_section.html#shelf
+msgctxt "shelf.ogg"
+msgid "shelf"
+msgstr ""
+
+#. object / furniture / shower
+#. https://gcompris.net/incoming/lang/words_by_section.html#shower
+msgctxt "shower.ogg"
+msgid "shower"
+msgstr ""
+
+#. object / furniture / sink
+#. https://gcompris.net/incoming/lang/words_by_section.html#sink
+msgctxt "sink.ogg"
+msgid "sink"
+msgstr ""
+
+#. object / furniture / stove
+#. https://gcompris.net/incoming/lang/words_by_section.html#stove
+msgctxt "stove.ogg"
+msgid "stove"
+msgstr ""
+
+#. object / furniture / table
+#. https://gcompris.net/incoming/lang/words_by_section.html#table
+msgctxt "table.ogg"
+msgid "table"
+msgstr "tabella"
+
+#. object / furniture / television
+#. https://gcompris.net/incoming/lang/words_by_section.html#television
+msgctxt "television.ogg"
+msgid "television"
+msgstr "television"
+
+#. object / furniture / toilet
+#. https://gcompris.net/incoming/lang/words_by_section.html#toilet
+msgctxt "toilet.ogg"
+msgid "toilet"
+msgstr ""
+
+#. object / houseware / appliance
+#. https://gcompris.net/incoming/lang/words_by_section.html#appliance
+msgctxt "appliance.ogg"
+msgid "appliance"
+msgstr ""
+
+#. object / houseware / baby bottle
+#. https://gcompris.net/incoming/lang/words_by_section.html#baby%20bottle
+msgctxt "baby_bottle.ogg"
+msgid "baby bottle"
+msgstr ""
+
+#. object / houseware / balance
+#. https://gcompris.net/incoming/lang/words_by_section.html#balance
+msgctxt "balance.ogg"
+msgid "balance"
+msgstr "balancia"
+
+#. object / houseware / blade
+#. https://gcompris.net/incoming/lang/words_by_section.html#blade
+msgctxt "blade.ogg"
+msgid "blade"
+msgstr ""
+
+#. object / houseware / can
+#. https://gcompris.net/incoming/lang/words_by_section.html#can
+msgctxt "can.ogg"
+msgid "can"
+msgstr ""
+
+#. object / houseware / carafe
+#. https://gcompris.net/incoming/lang/words_by_section.html#carafe
+msgctxt "carafe.ogg"
+msgid "carafe"
+msgstr ""
+
+#. object / houseware / cauldron
+#. https://gcompris.net/incoming/lang/words_by_section.html#cauldron
+msgctxt "cauldron.ogg"
+msgid "cauldron"
+msgstr ""
+
+#. object / houseware / chandelier
+#. https://gcompris.net/incoming/lang/words_by_section.html#chandelier
+msgctxt "chandelier.ogg"
+msgid "chandelier"
+msgstr ""
+
+#. object / houseware / clock
+#. https://gcompris.net/incoming/lang/words_by_section.html#clock
+msgctxt "clock.ogg"
+msgid "clock"
+msgstr "horologio"
+
+#. object / houseware / curtain
+#. https://gcompris.net/incoming/lang/words_by_section.html#curtain
+msgctxt "curtain.ogg"
+msgid "curtain"
+msgstr "tela"
+
+#. object / houseware / dish
+#. https://gcompris.net/incoming/lang/words_by_section.html#dish
+msgctxt "dish.ogg"
+msgid "dish"
+msgstr ""
+
+#. object / houseware / fork
+#. https://gcompris.net/incoming/lang/words_by_section.html#fork
+msgctxt "fork.ogg"
+msgid "fork"
+msgstr ""
+
+#. object / houseware / glass
+#. https://gcompris.net/incoming/lang/words_by_section.html#glass
+msgctxt "glass.ogg"
+msgid "glass"
+msgstr ""
+
+#. object / houseware / knife
+#. https://gcompris.net/incoming/lang/words_by_section.html#knife
+msgctxt "knife.ogg"
+msgid "knife"
+msgstr ""
+
+#. object / houseware / lid
+#. https://gcompris.net/incoming/lang/words_by_section.html#lid
+msgctxt "lid.ogg"
+msgid "lid"
+msgstr ""
+
+#. object / houseware / mop
+#. https://gcompris.net/incoming/lang/words_by_section.html#mop
+msgctxt "mop.ogg"
+msgid "mop"
+msgstr "mop"
+
+#. object / houseware / mug
+#. https://gcompris.net/incoming/lang/words_by_section.html#mug
+msgctxt "mug.ogg"
+msgid "mug"
+msgstr ""
+
+#. object / houseware / pan
+#. https://gcompris.net/incoming/lang/words_by_section.html#pan
+msgctxt "pan.ogg"
+msgid "pan"
+msgstr "casserola"
+
+#. object / houseware / plate
+#. https://gcompris.net/incoming/lang/words_by_section.html#plate
+msgctxt "plate.ogg"
+msgid "plate"
+msgstr "folio"
+
+#. object / houseware / pot
+#. https://gcompris.net/incoming/lang/words_by_section.html#pot
+msgctxt "pot.ogg"
+msgid "pot"
+msgstr ""
+
+#. object / houseware / scale
+#. https://gcompris.net/incoming/lang/words_by_section.html#scale
+msgctxt "scale.ogg"
+msgid "scale"
+msgstr "scala"
+
+#. object / houseware / skimmer
+#. https://gcompris.net/incoming/lang/words_by_section.html#skimmer
+msgctxt "skimmer.ogg"
+msgid "skimmer"
+msgstr ""
+
+#. object / houseware / spatula
+#. https://gcompris.net/incoming/lang/words_by_section.html#spatula
+msgctxt "spatula.ogg"
+msgid "spatula"
+msgstr ""
+
+#. object / houseware / sponge
+#. https://gcompris.net/incoming/lang/words_by_section.html#sponge
+msgctxt "sponge.ogg"
+msgid "sponge"
+msgstr ""
+
+#. object / houseware / spoon
+#. https://gcompris.net/incoming/lang/words_by_section.html#spoon
+msgctxt "spoon.ogg"
+msgid "spoon"
+msgstr ""
+
+#. object / houseware / strainer
+#. https://gcompris.net/incoming/lang/words_by_section.html#strainer
+msgctxt "strainer.ogg"
+msgid "strainer"
+msgstr ""
+
+#. object / houseware / tablecloth
+#. https://gcompris.net/incoming/lang/words_by_section.html#tablecloth
+msgctxt "tablecloth.ogg"
+msgid "tablecloth"
+msgstr ""
+
+#. object / houseware / tin
+#. https://gcompris.net/incoming/lang/words_by_section.html#tin
+msgctxt "tin.ogg"
+msgid "tin"
+msgstr ""
+
+#. object / houseware / toaster
+#. https://gcompris.net/incoming/lang/words_by_section.html#toaster
+msgctxt "toaster.ogg"
+msgid "toaster"
+msgstr ""
+
+#. object / houseware / tongs
+#. https://gcompris.net/incoming/lang/words_by_section.html#tongs
+msgctxt "tongs.ogg"
+msgid "tongs"
+msgstr ""
+
+#. object / houseware / trash
+#. https://gcompris.net/incoming/lang/words_by_section.html#trash
+msgctxt "trash.ogg"
+msgid "trash"
+msgstr "corbe"
+
+#. object / houseware / tray
+#. https://gcompris.net/incoming/lang/words_by_section.html#tray
+msgctxt "tray.ogg"
+msgid "tray"
+msgstr ""
+
+#. object / houseware / vase
+#. https://gcompris.net/incoming/lang/words_by_section.html#vase
+msgctxt "vase.ogg"
+msgid "vase"
+msgstr ""
+
+#. object / houseware / whisk
+#. https://gcompris.net/incoming/lang/words_by_section.html#whisk
+msgctxt "whisk.ogg"
+msgid "whisk"
+msgstr ""
+
+#. object / houseware / alarmclock
+#. https://gcompris.net/incoming/lang/words_by_section.html#alarmclock
+msgctxt "alarmclock.ogg"
+msgid "alarmclock"
+msgstr ""
+
+#. object / object / faucet
+#. https://gcompris.net/incoming/lang/words_by_section.html#faucet
+msgctxt "faucet.ogg"
+msgid "faucet"
+msgstr ""
+
+#. object / object / air horn
+#. https://gcompris.net/incoming/lang/words_by_section.html#air%20horn
+msgctxt "air_horn.ogg"
+msgid "air horn"
+msgstr ""
+
+#. object / object / anchor
+#. https://gcompris.net/incoming/lang/words_by_section.html#anchor
+msgctxt "anchor.ogg"
+msgid "anchor"
+msgstr "ancora"
+
+#. object / object / badge
+#. https://gcompris.net/incoming/lang/words_by_section.html#badge
+msgctxt "badge.ogg"
+msgid "badge"
+msgstr ""
+
+#. object / object / bag
+#. https://gcompris.net/incoming/lang/words_by_section.html#bag
+msgctxt "bag.ogg"
+msgid "bag"
+msgstr ""
+
+#. object / object / ball
+#. https://gcompris.net/incoming/lang/words_by_section.html#ball
+msgctxt "ball.ogg"
+msgid "ball"
+msgstr ""
+
+#. object / object / soccer ball
+#. https://gcompris.net/incoming/lang/words_by_section.html#soccer%20ball
+msgctxt "ball_soccer.ogg"
+msgid "soccer ball"
+msgstr ""
+
+#. object / object / bell
+#. https://gcompris.net/incoming/lang/words_by_section.html#bell
+msgctxt "bell.ogg"
+msgid "bell"
+msgstr "campana de sono"
+
+#. object / object / block
+#. https://gcompris.net/incoming/lang/words_by_section.html#block
+msgctxt "block.ogg"
+msgid "block"
+msgstr "block"
+
+#. object / object / board
+#. https://gcompris.net/incoming/lang/words_by_section.html#board
+msgctxt "board.ogg"
+msgid "board"
+msgstr ""
+
+#. object / object / bomb
+#. https://gcompris.net/incoming/lang/words_by_section.html#bomb
+msgctxt "bomb.ogg"
+msgid "bomb"
+msgstr ""
+
+#. object / object / book
+#. https://gcompris.net/incoming/lang/words_by_section.html#book
+msgctxt "book.ogg"
+msgid "book"
+msgstr "libro"
+
+#. object / object / box
+#. https://gcompris.net/incoming/lang/words_by_section.html#box
+msgctxt "box.ogg"
+msgid "box"
+msgstr "cassa"
+
+#. object / object / bucket
+#. https://gcompris.net/incoming/lang/words_by_section.html#bucket
+msgctxt "bucket.ogg"
+msgid "bucket"
+msgstr ""
+
+#. object / object / bulb
+#. https://gcompris.net/incoming/lang/words_by_section.html#bulb
+msgctxt "bulb.ogg"
+msgid "bulb"
+msgstr "Bulbo"
+
+#. object / object / camera
+#. https://gcompris.net/incoming/lang/words_by_section.html#camera
+msgctxt "camera.ogg"
+msgid "camera"
+msgstr "camera"
+
+#. object / object / candle
+#. https://gcompris.net/incoming/lang/words_by_section.html#candle
+msgctxt "candle.ogg"
+msgid "candle"
+msgstr ""
+
+#. object / object / cane
+#. https://gcompris.net/incoming/lang/words_by_section.html#cane
+msgctxt "cane.ogg"
+msgid "cane"
+msgstr ""
+
+#. object / object / canon
+#. https://gcompris.net/incoming/lang/words_by_section.html#canon
+msgctxt "canon.ogg"
+msgid "canon"
+msgstr ""
+
+#. object / object / card
+#. https://gcompris.net/incoming/lang/words_by_section.html#card
+msgctxt "card.ogg"
+msgid "card"
+msgstr "carta"
+
+#. object / object / cart
+#. https://gcompris.net/incoming/lang/words_by_section.html#cart
+msgctxt "cart.ogg"
+msgid "cart"
+msgstr ""
+
+#. object / object / cash
+#. https://gcompris.net/incoming/lang/words_by_section.html#cash
+msgctxt "cash.ogg"
+msgid "cash"
+msgstr "contante"
+
+#. object / object / chain
+#. https://gcompris.net/incoming/lang/words_by_section.html#chain
+msgctxt "chain.ogg"
+msgid "chain"
+msgstr ""
+
+#. object / object / chalk
+#. https://gcompris.net/incoming/lang/words_by_section.html#chalk
+msgctxt "chalk.ogg"
+msgid "chalk"
+msgstr ""
+
+#. object / object / cigar
+#. https://gcompris.net/incoming/lang/words_by_section.html#cigar
+msgctxt "cigar.ogg"
+msgid "cigar"
+msgstr ""
+
+#. object / object / clay
+#. https://gcompris.net/incoming/lang/words_by_section.html#clay
+msgctxt "clay.ogg"
+msgid "clay"
+msgstr ""
+
+#. object / object / cloth
+#. https://gcompris.net/incoming/lang/words_by_section.html#cloth
+msgctxt "cloth.ogg"
+msgid "cloth"
+msgstr ""
+
+#. object / object / clothes hanger
+#. https://gcompris.net/incoming/lang/words_by_section.html#clothes%20hanger
+msgctxt "clothes_hanger.ogg"
+msgid "clothes hanger"
+msgstr ""
+
+#. object / object / coin
+#. https://gcompris.net/incoming/lang/words_by_section.html#coin
+msgctxt "coin.ogg"
+msgid "coin"
+msgstr ""
+
+#. object / object / comb
+#. https://gcompris.net/incoming/lang/words_by_section.html#comb
+msgctxt "comb.ogg"
+msgid "comb"
+msgstr ""
+
+#. object / object / cone
+#. https://gcompris.net/incoming/lang/words_by_section.html#cone
+msgctxt "cone.ogg"
+msgid "cone"
+msgstr ""
+
+#. object / object / cork
+#. https://gcompris.net/incoming/lang/words_by_section.html#cork
+msgctxt "cork.ogg"
+msgid "cork"
+msgstr ""
+
+#. object / object / cross
+#. https://gcompris.net/incoming/lang/words_by_section.html#cross
+msgctxt "cross.ogg"
+msgid "cross"
+msgstr "cruce"
+
+#. object / object / crown
+#. https://gcompris.net/incoming/lang/words_by_section.html#crown
+msgctxt "crown.ogg"
+msgid "crown"
+msgstr ""
+
+#. object / object / cube
+#. https://gcompris.net/incoming/lang/words_by_section.html#cube
+msgctxt "cube.ogg"
+msgid "cube"
+msgstr "cubo"
+
+#. object / object / tire
+#. https://gcompris.net/incoming/lang/words_by_section.html#tire
+msgctxt "tire.ogg"
+msgid "tire"
+msgstr ""
+
+#. object / object / dart board
+#. https://gcompris.net/incoming/lang/words_by_section.html#dart%20board
+msgctxt "dart_board.ogg"
+msgid "dart board"
+msgstr ""
+
+#. object / object / dishcloth
+#. https://gcompris.net/incoming/lang/words_by_section.html#dishcloth
+msgctxt "dishcloth.ogg"
+msgid "dishcloth"
+msgstr ""
+
+#. object / object / doll
+#. https://gcompris.net/incoming/lang/words_by_section.html#doll
+msgctxt "doll.ogg"
+msgid "doll"
+msgstr ""
+
+#. object / object / domino
+#. https://gcompris.net/incoming/lang/words_by_section.html#domino
+msgctxt "domino.ogg"
+msgid "domino"
+msgstr ""
+
+#. object / object / drum
+#. https://gcompris.net/incoming/lang/words_by_section.html#drum
+msgctxt "drum.ogg"
+msgid "drum"
+msgstr ""
+
+#. object / object / eraser
+#. https://gcompris.net/incoming/lang/words_by_section.html#eraser
+msgctxt "eraser.ogg"
+msgid "eraser"
+msgstr "Eradicator"
+
+#. object / object / fire extinguisher
+#. https://gcompris.net/incoming/lang/words_by_section.html#fire%20extinguisher
+msgctxt "fire_extinguisher.ogg"
+msgid "fire extinguisher"
+msgstr ""
+
+#. object / object / flacon
+#. https://gcompris.net/incoming/lang/words_by_section.html#flacon
+msgctxt "flacon.ogg"
+msgid "flacon"
+msgstr ""
+
+#. object / object / flag
+#. https://gcompris.net/incoming/lang/words_by_section.html#flag
+msgctxt "flag.ogg"
+msgid "flag"
+msgstr ""
+
+#. object / object / fluff
+#. https://gcompris.net/incoming/lang/words_by_section.html#fluff
+msgctxt "fluff.ogg"
+msgid "fluff"
+msgstr ""
+
+#. object / object / flute
+#. https://gcompris.net/incoming/lang/words_by_section.html#flute
+msgctxt "flute.ogg"
+msgid "flute"
+msgstr ""
+
+#. object / object / game
+#. https://gcompris.net/incoming/lang/words_by_section.html#game
+msgctxt "game.ogg"
+msgid "game"
+msgstr "Joco"
+
+#. object / object / gift
+#. https://gcompris.net/incoming/lang/words_by_section.html#gift
+msgctxt "gift.ogg"
+msgid "gift"
+msgstr "regalo"
+
+#. object / object / glasses
+#. https://gcompris.net/incoming/lang/words_by_section.html#glasses
+msgctxt "glasses.ogg"
+msgid "glasses"
+msgstr ""
+
+#. object / object / glue
+#. https://gcompris.net/incoming/lang/words_by_section.html#glue
+msgctxt "glue.ogg"
+msgid "glue"
+msgstr ""
+
+#. object / object / grill
+#. https://gcompris.net/incoming/lang/words_by_section.html#grill
+msgctxt "grill.ogg"
+msgid "grill"
+msgstr ""
+
+#. object / object / hair-dryer
+#. https://gcompris.net/incoming/lang/words_by_section.html#hair-dryer
+msgctxt "hair_dryer.ogg"
+msgid "hair-dryer"
+msgstr ""
+
+#. object / object / handlebar
+#. https://gcompris.net/incoming/lang/words_by_section.html#handlebar
+msgctxt "handlebar.ogg"
+msgid "handlebar"
+msgstr ""
+
+#. object / object / harp
+#. https://gcompris.net/incoming/lang/words_by_section.html#harp
+msgctxt "harp.ogg"
+msgid "harp"
+msgstr ""
+
+#. object / object / hook
+#. https://gcompris.net/incoming/lang/words_by_section.html#hook
+msgctxt "hook.ogg"
+msgid "hook"
+msgstr ""
+
+#. object / object / hose
+#. https://gcompris.net/incoming/lang/words_by_section.html#hose
+msgctxt "hose.ogg"
+msgid "hose"
+msgstr ""
+
+#. object / object / ink
+#. https://gcompris.net/incoming/lang/words_by_section.html#ink
+msgctxt "ink.ogg"
+msgid "ink"
+msgstr "tinta"
+
+#. object / object / jewel
+#. https://gcompris.net/incoming/lang/words_by_section.html#jewel
+msgctxt "jewel.ogg"
+msgid "jewel"
+msgstr ""
+
+#. object / object / keel
+#. https://gcompris.net/incoming/lang/words_by_section.html#keel
+msgctxt "keel.ogg"
+msgid "keel"
+msgstr ""
+
+#. object / object / keyboard
+#. https://gcompris.net/incoming/lang/words_by_section.html#keyboard
+msgctxt "keyboard.ogg"
+msgid "keyboard"
+msgstr "claviero"
+
+#. object / object / kite
+#. https://gcompris.net/incoming/lang/words_by_section.html#kite
+msgctxt "kite.ogg"
+msgid "kite"
+msgstr "kite (Cometa)"
+
+#. object / object / knot
+#. https://gcompris.net/incoming/lang/words_by_section.html#knot
+msgctxt "knot.ogg"
+msgid "knot"
+msgstr "nodo"
+
+#. object / object / lasso
+#. https://gcompris.net/incoming/lang/words_by_section.html#lasso
+msgctxt "lasso.ogg"
+msgid "lasso"
+msgstr ""
+
+#. object / object / log
+#. https://gcompris.net/incoming/lang/words_by_section.html#log
+msgctxt "log.ogg"
+msgid "log"
+msgstr "bloco"
+
+#. object / object / magnet
+#. https://gcompris.net/incoming/lang/words_by_section.html#magnet
+msgctxt "magnet.ogg"
+msgid "magnet"
+msgstr ""
+
+#. object / object / magnifying glass
+#. https://gcompris.net/incoming/lang/words_by_section.html#magnifying%20glass
+msgctxt "magnifying_glass.ogg"
+msgid "magnifying glass"
+msgstr ""
+
+#. object / object / mail
+#. https://gcompris.net/incoming/lang/words_by_section.html#mail
+msgctxt "mail.ogg"
+msgid "mail"
+msgstr "posta"
+
+#. object / object / map
+#. https://gcompris.net/incoming/lang/words_by_section.html#map
+msgctxt "map.ogg"
+msgid "map"
+msgstr "mappa"
+
+#. object / object / marble
+#. https://gcompris.net/incoming/lang/words_by_section.html#marble
+msgctxt "marble.ogg"
+msgid "marble"
+msgstr ""
+
+#. object / object / mask
+#. https://gcompris.net/incoming/lang/words_by_section.html#mask
+msgctxt "mask.ogg"
+msgid "mask"
+msgstr "mascara"
+
+#. object / object / mast
+#. https://gcompris.net/incoming/lang/words_by_section.html#mast
+msgctxt "mast.ogg"
+msgid "mast"
+msgstr ""
+
+#. object / object / match
+#. https://gcompris.net/incoming/lang/words_by_section.html#match
+msgctxt "match.ogg"
+msgid "match"
+msgstr "flammifero"
+
+#. object / object / medal
+#. https://gcompris.net/incoming/lang/words_by_section.html#medal
+msgctxt "medal.ogg"
+msgid "medal"
+msgstr ""
+
+#. object / object / microphone
+#. https://gcompris.net/incoming/lang/words_by_section.html#microphone
+msgctxt "microphone.ogg"
+msgid "microphone"
+msgstr "microphono"
+
+#. object / object / mirror
+#. https://gcompris.net/incoming/lang/words_by_section.html#mirror
+msgctxt "mirror.ogg"
+msgid "mirror"
+msgstr "speculo"
+
+#. object / object / mixer
+#. https://gcompris.net/incoming/lang/words_by_section.html#mixer
+msgctxt "mixer.ogg"
+msgid "mixer"
+msgstr "mixer (miscitor)"
+
+#. object / object / necklace
+#. https://gcompris.net/incoming/lang/words_by_section.html#necklace
+msgctxt "necklace.ogg"
+msgid "necklace"
+msgstr ""
+
+#. object / object / nest
+#. https://gcompris.net/incoming/lang/words_by_section.html#nest
+msgctxt "nest.ogg"
+msgid "nest"
+msgstr ""
+
+#. object / object / net
+#. https://gcompris.net/incoming/lang/words_by_section.html#net
+msgctxt "net.ogg"
+msgid "net"
+msgstr ""
+
+#. object / object / newspaper
+#. https://gcompris.net/incoming/lang/words_by_section.html#newspaper
+msgctxt "newspaper.ogg"
+msgid "newspaper"
+msgstr ""
+
+#. object / object / notebook
+#. https://gcompris.net/incoming/lang/words_by_section.html#notebook
+msgctxt "notebook.ogg"
+msgid "notebook"
+msgstr ""
+
+#. object / object / oar
+#. https://gcompris.net/incoming/lang/words_by_section.html#oar
+msgctxt "oar.ogg"
+msgid "oar"
+msgstr ""
+
+#. object / object / pacifier
+#. https://gcompris.net/incoming/lang/words_by_section.html#pacifier
+msgctxt "pacifier.ogg"
+msgid "pacifier"
+msgstr ""
+
+#. object / object / page
+#. https://gcompris.net/incoming/lang/words_by_section.html#page
+msgctxt "page.ogg"
+msgid "page"
+msgstr "Pagina"
+
+#. object / object / pair
+#. https://gcompris.net/incoming/lang/words_by_section.html#pair
+msgctxt "pair.ogg"
+msgid "pair"
+msgstr "par"
+
+#. object / object / paper
+#. https://gcompris.net/incoming/lang/words_by_section.html#paper
+msgctxt "paper.ogg"
+msgid "paper"
+msgstr "papiro"
+
+#. object / object / pearl
+#. https://gcompris.net/incoming/lang/words_by_section.html#pearl
+msgctxt "pearl.ogg"
+msgid "pearl"
+msgstr ""
+
+#. object / object / pen
+#. https://gcompris.net/incoming/lang/words_by_section.html#pen
+msgctxt "pen.ogg"
+msgid "pen"
+msgstr "penna"
+
+#. object / object / pencil
+#. https://gcompris.net/incoming/lang/words_by_section.html#pencil
+msgctxt "pencil.ogg"
+msgid "pencil"
+msgstr "stilo"
+
+#. object / object / phone
+#. https://gcompris.net/incoming/lang/words_by_section.html#phone
+msgctxt "phone.ogg"
+msgid "phone"
+msgstr "telephono"
+
+#. object / object / piano
+#. https://gcompris.net/incoming/lang/words_by_section.html#piano
+msgctxt "piano.ogg"
+msgid "piano"
+msgstr ""
+
+#. object / object / picture
+#. https://gcompris.net/incoming/lang/words_by_section.html#picture
+msgctxt "picture.ogg"
+msgid "picture"
+msgstr "photo"
+
+#. object / object / pill
+#. https://gcompris.net/incoming/lang/words_by_section.html#pill
+msgctxt "pill.ogg"
+msgid "pill"
+msgstr ""
+
+#. object / object / pillow
+#. https://gcompris.net/incoming/lang/words_by_section.html#pillow
+msgctxt "pillow.ogg"
+msgid "pillow"
+msgstr ""
+
+#. object / object / pipe
+#. https://gcompris.net/incoming/lang/words_by_section.html#pipe
+msgctxt "pipe.ogg"
+msgid "pipe"
+msgstr "pipa"
+
+#. object / object / pole
+#. https://gcompris.net/incoming/lang/words_by_section.html#pole
+msgctxt "pole.ogg"
+msgid "pole"
+msgstr ""
+
+#. object / object / prize
+#. https://gcompris.net/incoming/lang/words_by_section.html#prize
+msgctxt "prize.ogg"
+msgid "prize"
+msgstr ""
+
+#. object / object / radio
+#. https://gcompris.net/incoming/lang/words_by_section.html#radio
+msgctxt "radio.ogg"
+msgid "radio"
+msgstr "radio"
+
+#. object / object / rag
+#. https://gcompris.net/incoming/lang/words_by_section.html#rag
+msgctxt "rag.ogg"
+msgid "rag"
+msgstr ""
+
+#. object / object / razor
+#. https://gcompris.net/incoming/lang/words_by_section.html#razor
+msgctxt "razor.ogg"
+msgid "razor"
+msgstr ""
+
+#. object / object / rifle
+#. https://gcompris.net/incoming/lang/words_by_section.html#rifle
+msgctxt "rifle.ogg"
+msgid "rifle"
+msgstr ""
+
+#. object / object / robot
+#. https://gcompris.net/incoming/lang/words_by_section.html#robot
+msgctxt "robot.ogg"
+msgid "robot"
+msgstr ""
+
+#. object / object / rolling pin
+#. https://gcompris.net/incoming/lang/words_by_section.html#rolling%20pin
+msgctxt "rolling_pin.ogg"
+msgid "rolling pin"
+msgstr ""
+
+#. object / object / rope
+#. https://gcompris.net/incoming/lang/words_by_section.html#rope
+msgctxt "rope.ogg"
+msgid "rope"
+msgstr ""
+
+#. object / object / saddle
+#. https://gcompris.net/incoming/lang/words_by_section.html#saddle
+msgctxt "saddle.ogg"
+msgid "saddle"
+msgstr ""
+
+#. object / object / school bag
+#. https://gcompris.net/incoming/lang/words_by_section.html#school%20bag
+msgctxt "school_bag.ogg"
+msgid "school bag"
+msgstr ""
+
+#. object / object / sign
+#. https://gcompris.net/incoming/lang/words_by_section.html#sign
+msgctxt "sign.ogg"
+msgid "sign"
+msgstr "signo"
+
+#. object / object / sleigh
+#. https://gcompris.net/incoming/lang/words_by_section.html#sleigh
+msgctxt "sleigh.ogg"
+msgid "sleigh"
+msgstr ""
+
+#. object / object / slide
+#. https://gcompris.net/incoming/lang/words_by_section.html#slide
+msgctxt "slide.ogg"
+msgid "slide"
+msgstr "diapositiva"
+
+#. object / object / slot
+#. https://gcompris.net/incoming/lang/words_by_section.html#slot
+msgctxt "slot.ogg"
+msgid "slot"
+msgstr "slot"
+
+#. object / object / soap
+#. https://gcompris.net/incoming/lang/words_by_section.html#soap
+msgctxt "soap.ogg"
+msgid "soap"
+msgstr ""
+
+#. object / object / spark
+#. https://gcompris.net/incoming/lang/words_by_section.html#spark
+msgctxt "spark.ogg"
+msgid "spark"
+msgstr ""
+
+#. object / object / spinning top
+#. https://gcompris.net/incoming/lang/words_by_section.html#spinning%20top
+msgctxt "spinning_top.ogg"
+msgid "spinning top"
+msgstr ""
+
+#. object / object / spool
+#. https://gcompris.net/incoming/lang/words_by_section.html#spool
+msgctxt "spool.ogg"
+msgid "spool"
+msgstr ""
+
+#. object / object / squirt
+#. https://gcompris.net/incoming/lang/words_by_section.html#squirt
+msgctxt "squirt.ogg"
+msgid "squirt"
+msgstr ""
+
+#. object / object / stack
+#. https://gcompris.net/incoming/lang/words_by_section.html#stack
+msgctxt "stack.ogg"
+msgid "stack"
+msgstr ""
+
+#. object / object / stamp
+#. https://gcompris.net/incoming/lang/words_by_section.html#stamp
+msgctxt "stamp.ogg"
+msgid "stamp"
+msgstr "timbro"
+
+#. object / object / straw
+#. https://gcompris.net/incoming/lang/words_by_section.html#straw
+msgctxt "straw.ogg"
+msgid "straw"
+msgstr ""
+
+#. object / object / string
+#. https://gcompris.net/incoming/lang/words_by_section.html#string
+msgctxt "string.ogg"
+msgid "string"
+msgstr "catena"
+
+#. object / object / suitcase
+#. https://gcompris.net/incoming/lang/words_by_section.html#suitcase
+msgctxt "suitcase.ogg"
+msgid "suitcase"
+msgstr ""
+
+#. object / object / tag
+#. https://gcompris.net/incoming/lang/words_by_section.html#tag
+msgctxt "tag.ogg"
+msgid "tag"
+msgstr "etiquetta"
+
+#. object / object / teddy
+#. https://gcompris.net/incoming/lang/words_by_section.html#teddy
+msgctxt "teddy.ogg"
+msgid "teddy"
+msgstr ""
+
+#. object / object / thread
+#. https://gcompris.net/incoming/lang/words_by_section.html#thread
+msgctxt "thread.ogg"
+msgid "thread"
+msgstr "filo"
+
+#. object / object / ticket
+#. https://gcompris.net/incoming/lang/words_by_section.html#ticket
+msgctxt "ticket.ogg"
+msgid "ticket"
+msgstr "Billet"
+
+#. object / object / tissue
+#. https://gcompris.net/incoming/lang/words_by_section.html#tissue
+msgctxt "tissue.ogg"
+msgid "tissue"
+msgstr ""
+
+#. object / object / torch
+#. https://gcompris.net/incoming/lang/words_by_section.html#torch
+msgctxt "torch.ogg"
+msgid "torch"
+msgstr ""
+
+#. object / object / towel
+#. https://gcompris.net/incoming/lang/words_by_section.html#towel
+msgctxt "towel.ogg"
+msgid "towel"
+msgstr ""
+
+#. object / object / toy
+#. https://gcompris.net/incoming/lang/words_by_section.html#toy
+msgctxt "toy.ogg"
+msgid "toy"
+msgstr "Joculo"
+
+#. object / object / trap
+#. https://gcompris.net/incoming/lang/words_by_section.html#trap
+msgctxt "trap.ogg"
+msgid "trap"
+msgstr ""
+
+#. object / object / tube
+#. https://gcompris.net/incoming/lang/words_by_section.html#tube
+msgctxt "tube.ogg"
+msgid "tube"
+msgstr ""
+
+#. object / object / umbrella
+#. https://gcompris.net/incoming/lang/words_by_section.html#umbrella
+msgctxt "umbrella.ogg"
+msgid "umbrella"
+msgstr ""
+
+#. object / object / watch
+#. https://gcompris.net/incoming/lang/words_by_section.html#watch
+msgctxt "watch.ogg"
+msgid "watch"
+msgstr ""
+
+#. object / object / wheel
+#. https://gcompris.net/incoming/lang/words_by_section.html#wheel
+msgctxt "wheel.ogg"
+msgid "wheel"
+msgstr "rota"
+
+#. object / object / wig
+#. https://gcompris.net/incoming/lang/words_by_section.html#wig
+msgctxt "wig.ogg"
+msgid "wig"
+msgstr ""
+
+#. object / object / wood
+#. https://gcompris.net/incoming/lang/words_by_section.html#wood
+msgctxt "wood.ogg"
+msgid "wood"
+msgstr ""
+
+#. object / object / wreath
+#. https://gcompris.net/incoming/lang/words_by_section.html#wreath
+msgctxt "wreath.ogg"
+msgid "wreath"
+msgstr ""
+
+#. object / object / ball of yarn
+#. https://gcompris.net/incoming/lang/words_by_section.html#ball%20of%20yarn
+msgctxt "ball_of_yarn.ogg"
+msgid "ball of yarn"
+msgstr ""
+
+#. object / object / foam
+#. https://gcompris.net/incoming/lang/words_by_section.html#foam
+msgctxt "foam.ogg"
+msgid "foam"
+msgstr ""
+
+#. object / tool / ax
+#. https://gcompris.net/incoming/lang/words_by_section.html#ax
+msgctxt "ax.ogg"
+msgid "ax"
+msgstr ""
+
+#. object / tool / bolt
+#. https://gcompris.net/incoming/lang/words_by_section.html#bolt
+msgctxt "bolt.ogg"
+msgid "bolt"
+msgstr ""
+
+#. object / tool / brick
+#. https://gcompris.net/incoming/lang/words_by_section.html#brick
+msgctxt "brick.ogg"
+msgid "brick"
+msgstr ""
+
+#. object / tool / brush
+#. https://gcompris.net/incoming/lang/words_by_section.html#brush
+msgctxt "brush.ogg"
+msgid "brush"
+msgstr "pincel"
+
+#. object / tool / flash
+#. https://gcompris.net/incoming/lang/words_by_section.html#flash
+msgctxt "flash.ogg"
+msgid "flash"
+msgstr "fulgor"
+
+#. object / tool / hammer
+#. https://gcompris.net/incoming/lang/words_by_section.html#hammer
+msgctxt "hammer.ogg"
+msgid "hammer"
+msgstr ""
+
+#. object / tool / mower
+#. https://gcompris.net/incoming/lang/words_by_section.html#mower
+msgctxt "mower.ogg"
+msgid "mower"
+msgstr ""
+
+#. object / tool / needle
+#. https://gcompris.net/incoming/lang/words_by_section.html#needle
+msgctxt "needle.ogg"
+msgid "needle"
+msgstr ""
+
+#. object / tool / pliers
+#. https://gcompris.net/incoming/lang/words_by_section.html#pliers
+msgctxt "pliers.ogg"
+msgid "pliers"
+msgstr ""
+
+#. object / tool / rake
+#. https://gcompris.net/incoming/lang/words_by_section.html#rake
+msgctxt "rake.ogg"
+msgid "rake"
+msgstr ""
+
+#. object / tool / scissors
+#. https://gcompris.net/incoming/lang/words_by_section.html#scissors
+msgctxt "scissors.ogg"
+msgid "scissors"
+msgstr ""
+
+#. object / tool / screw
+#. https://gcompris.net/incoming/lang/words_by_section.html#screw
+msgctxt "screw.ogg"
+msgid "screw"
+msgstr ""
+
+#. object / tool / screwdriver
+#. https://gcompris.net/incoming/lang/words_by_section.html#screwdriver
+msgctxt "screwdriver.ogg"
+msgid "screwdriver"
+msgstr ""
+
+#. object / tool / shovel
+#. https://gcompris.net/incoming/lang/words_by_section.html#shovel
+msgctxt "shovel.ogg"
+msgid "shovel"
+msgstr ""
+
+#. object / tool / spade
+#. https://gcompris.net/incoming/lang/words_by_section.html#spade
+msgctxt "spade.ogg"
+msgid "spade"
+msgstr ""
+
+#. object / tool / spear
+#. https://gcompris.net/incoming/lang/words_by_section.html#spear
+msgctxt "spear.ogg"
+msgid "spear"
+msgstr ""
+
+#. object / tool / tape measure
+#. https://gcompris.net/incoming/lang/words_by_section.html#tape%20measure
+msgctxt "tape_measure.ogg"
+msgid "tape measure"
+msgstr ""
+
+#. object / tool / tool
+#. https://gcompris.net/incoming/lang/words_by_section.html#tool
+msgctxt "tool.ogg"
+msgid "tool"
+msgstr "instrumento"
+
+#. object / tool / wedge
+#. https://gcompris.net/incoming/lang/words_by_section.html#wedge
+msgctxt "wedge.ogg"
+msgid "wedge"
+msgstr ""
+
+#. object / tool / wrench
+#. https://gcompris.net/incoming/lang/words_by_section.html#wrench
+msgctxt "wrench.ogg"
+msgid "wrench"
+msgstr ""
+
+#. object / transport / bike
+#. https://gcompris.net/incoming/lang/words_by_section.html#bike
+msgctxt "bike.ogg"
+msgid "bike"
+msgstr "Bicycletta"
+
+#. object / transport / boat
+#. https://gcompris.net/incoming/lang/words_by_section.html#boat
+msgctxt "boat.ogg"
+msgid "boat"
+msgstr ""
+
+#. object / transport / bus
+#. https://gcompris.net/incoming/lang/words_by_section.html#bus
+msgctxt "bus.ogg"
+msgid "bus"
+msgstr "bus"
+
+#. object / transport / canoe
+#. https://gcompris.net/incoming/lang/words_by_section.html#canoe
+msgctxt "canoe.ogg"
+msgid "canoe"
+msgstr ""
+
+#. object / transport / car
+#. https://gcompris.net/incoming/lang/words_by_section.html#car
+msgctxt "car.ogg"
+msgid "car"
+msgstr "automobile"
+
+#. object / transport / motorcycle
+#. https://gcompris.net/incoming/lang/words_by_section.html#motorcycle
+msgctxt "motorcycle.ogg"
+msgid "motorcycle"
+msgstr ""
+
+#. object / transport / parachute
+#. https://gcompris.net/incoming/lang/words_by_section.html#parachute
+msgctxt "parachute.ogg"
+msgid "parachute"
+msgstr ""
+
+#. object / transport / plane
+#. https://gcompris.net/incoming/lang/words_by_section.html#plane
+msgctxt "plane.ogg"
+msgid "plane"
+msgstr "avion"
+
+#. object / transport / raft
+#. https://gcompris.net/incoming/lang/words_by_section.html#raft
+msgctxt "raft.ogg"
+msgid "raft"
+msgstr ""
+
+#. object / transport / sail
+#. https://gcompris.net/incoming/lang/words_by_section.html#sail
+msgctxt "sail.ogg"
+msgid "sail"
+msgstr ""
+
+#. object / transport / ship
+#. https://gcompris.net/incoming/lang/words_by_section.html#ship
+msgctxt "ship.ogg"
+msgid "ship"
+msgstr ""
+
+#. object / transport / sled
+#. https://gcompris.net/incoming/lang/words_by_section.html#sled
+msgctxt "sled.ogg"
+msgid "sled"
+msgstr ""
+
+#. object / transport / taxi
+#. https://gcompris.net/incoming/lang/words_by_section.html#taxi
+msgctxt "taxi.ogg"
+msgid "taxi"
+msgstr ""
+
+#. object / transport / train
+#. https://gcompris.net/incoming/lang/words_by_section.html#train
+msgctxt "train.ogg"
+msgid "train"
+msgstr ""
+
+#. object / transport / truck
+#. https://gcompris.net/incoming/lang/words_by_section.html#truck
+msgctxt "truck.ogg"
+msgid "truck"
+msgstr ""
+
+#. object / transport / van
+#. https://gcompris.net/incoming/lang/words_by_section.html#van
+msgctxt "van.ogg"
+msgid "van"
+msgstr "van"

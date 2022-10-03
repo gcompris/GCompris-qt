@@ -1,0 +1,6569 @@
+# Translation for gcompris_lang.po to Euskara/Basque (eu).
+# Copyright (C) 2019-2020, This file is copyright:
+# This file is distributed under the same license as the gcompris package.
+# KDE euskaratzeko proiektuko arduraduna <xalba@euskalnet.net>.
+#
+# Translators:
+# Iñigo Salvador Azurmendi <xalba@euskalnet.net>, 2019, 2020.
+# Alexander Gabilondo <alexgabe@irakasle.net>, 2019.
+msgid ""
+msgstr ""
+"Project-Id-Version: gcompris_qt\\n\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org/enter_bug.cgi?product=gcompris\n"
+"POT-Creation-Date: 2022-04-08 00:32+0000\n"
+"PO-Revision-Date: 2020-08-31 08:48+0200\n"
+"Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
+"Language-Team: Basque <kde-i18n-eu@kde.org>\n"
+"Language: eu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"\n"
+"\n"
+"\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 20.08.0\n"
+
+#. otherChapter / otherLesson / alphabet
+#. https://gcompris.net/incoming/lang/words_by_section.html#alphabet
+msgctxt "alphabet.ogg"
+msgid "alphabet"
+msgstr "alfabetoa"
+
+#. otherChapter / otherLesson / angel
+#. https://gcompris.net/incoming/lang/words_by_section.html#angel
+msgctxt "angel.ogg"
+msgid "angel"
+msgstr "aingerua"
+
+#. otherChapter / otherLesson / behind
+#. https://gcompris.net/incoming/lang/words_by_section.html#behind
+msgctxt "behind.ogg"
+msgid "behind"
+msgstr "atzean"
+
+#. otherChapter / otherLesson / bit
+#. https://gcompris.net/incoming/lang/words_by_section.html#bit
+msgctxt "bit.ogg"
+msgid "bit"
+msgstr "puska"
+
+#. otherChapter / otherLesson / bone
+#. https://gcompris.net/incoming/lang/words_by_section.html#bone
+msgctxt "bone.ogg"
+msgid "bone"
+msgstr "hezurra"
+
+#. otherChapter / otherLesson / bubble
+#. https://gcompris.net/incoming/lang/words_by_section.html#bubble
+msgctxt "bubble.ogg"
+msgid "bubble"
+msgstr "burbuila"
+
+#. otherChapter / otherLesson / camp
+#. https://gcompris.net/incoming/lang/words_by_section.html#camp
+msgctxt "camp.ogg"
+msgid "camp"
+msgstr "kanpamendu"
+
+#. otherChapter / otherLesson / carnival
+#. https://gcompris.net/incoming/lang/words_by_section.html#carnival
+msgctxt "carnival.ogg"
+msgid "carnival"
+msgstr "inauteria"
+
+#. otherChapter / otherLesson / chores
+#. https://gcompris.net/incoming/lang/words_by_section.html#chores
+msgctxt "chores.ogg"
+msgid "chores"
+msgstr "zereginak"
+
+#. otherChapter / otherLesson / christmas
+#. https://gcompris.net/incoming/lang/words_by_section.html#christmas
+msgctxt "christmas.ogg"
+msgid "christmas"
+msgstr "gabonak"
+
+#. otherChapter / otherLesson / craft
+#. https://gcompris.net/incoming/lang/words_by_section.html#craft
+msgctxt "craft.ogg"
+msgid "craft"
+msgstr "eskulana"
+
+#. otherChapter / otherLesson / dot
+#. https://gcompris.net/incoming/lang/words_by_section.html#dot
+msgctxt "dot.ogg"
+msgid "dot"
+msgstr "puntua"
+
+#. otherChapter / otherLesson / engine
+#. https://gcompris.net/incoming/lang/words_by_section.html#engine
+msgctxt "engine.ogg"
+msgid "engine"
+msgstr "motorra"
+
+#. otherChapter / otherLesson / fairy
+#. https://gcompris.net/incoming/lang/words_by_section.html#fairy
+msgctxt "fairy.ogg"
+msgid "fairy"
+msgstr "maitagarria"
+
+#. otherChapter / otherLesson / flat
+#. https://gcompris.net/incoming/lang/words_by_section.html#flat
+msgctxt "flat.ogg"
+msgid "flat"
+msgstr "Laua"
+
+#. otherChapter / otherLesson / front
+#. https://gcompris.net/incoming/lang/words_by_section.html#front
+msgctxt "front.ogg"
+msgid "front"
+msgstr "aurrean"
+
+#. otherChapter / otherLesson / gnome
+#. https://gcompris.net/incoming/lang/words_by_section.html#gnome
+msgctxt "gnome.ogg"
+msgid "gnome"
+msgstr "gnomoa"
+
+#. otherChapter / otherLesson / guignol
+#. https://gcompris.net/incoming/lang/words_by_section.html#guignol
+msgctxt "guignol.ogg"
+msgid "guignol"
+msgstr "txotxongiloa"
+
+#. otherChapter / otherLesson / half
+#. https://gcompris.net/incoming/lang/words_by_section.html#half
+msgctxt "half.ogg"
+msgid "half"
+msgstr "erdia"
+
+#. otherChapter / otherLesson / king
+#. https://gcompris.net/incoming/lang/words_by_section.html#king
+msgctxt "king.ogg"
+msgid "king"
+msgstr "erregea"
+
+#. otherChapter / otherLesson / knight
+#. https://gcompris.net/incoming/lang/words_by_section.html#knight
+msgctxt "knight.ogg"
+msgid "knight"
+msgstr "zalduna"
+
+#. otherChapter / otherLesson / lad
+#. https://gcompris.net/incoming/lang/words_by_section.html#lad
+msgctxt "lad.ogg"
+msgid "lad"
+msgstr "mutila"
+
+#. otherChapter / otherLesson / left
+#. https://gcompris.net/incoming/lang/words_by_section.html#left
+msgctxt "left.ogg"
+msgid "left"
+msgstr "ezkerra"
+
+#. otherChapter / otherLesson / light
+#. https://gcompris.net/incoming/lang/words_by_section.html#light
+msgctxt "light.ogg"
+msgid "light"
+msgstr "argia"
+
+#. otherChapter / otherLesson / line
+#. https://gcompris.net/incoming/lang/words_by_section.html#line
+msgctxt "line.ogg"
+msgid "line"
+msgstr "lerroa"
+
+#. otherChapter / otherLesson / link
+#. https://gcompris.net/incoming/lang/words_by_section.html#link
+msgctxt "link.ogg"
+msgid "link"
+msgstr "katebegia"
+
+#. otherChapter / otherLesson / movie
+#. https://gcompris.net/incoming/lang/words_by_section.html#movie
+msgctxt "movie.ogg"
+msgid "movie"
+msgstr "filma"
+
+#. otherChapter / otherLesson / music
+#. https://gcompris.net/incoming/lang/words_by_section.html#music
+msgctxt "music.ogg"
+msgid "music"
+msgstr "musika"
+
+#. otherChapter / otherLesson / number
+#. https://gcompris.net/incoming/lang/words_by_section.html#number
+msgctxt "number.ogg"
+msgid "number"
+msgstr "zenbakia"
+
+#. otherChapter / otherLesson / on
+#. https://gcompris.net/incoming/lang/words_by_section.html#on
+msgctxt "on.ogg"
+msgid "on"
+msgstr "gainean"
+
+#. otherChapter / otherLesson / pedal
+#. https://gcompris.net/incoming/lang/words_by_section.html#pedal
+msgctxt "pedal.ogg"
+msgid "pedal"
+msgstr "pedala"
+
+#. otherChapter / otherLesson / pirate
+#. https://gcompris.net/incoming/lang/words_by_section.html#pirate
+msgctxt "pirate.ogg"
+msgid "pirate"
+msgstr "pirata"
+
+#. otherChapter / otherLesson / pope
+#. https://gcompris.net/incoming/lang/words_by_section.html#pope
+msgctxt "pope.ogg"
+msgid "pope"
+msgstr "aita santua"
+
+#. otherChapter / otherLesson / porthole
+#. https://gcompris.net/incoming/lang/words_by_section.html#porthole
+msgctxt "porthole.ogg"
+msgid "porthole"
+msgstr "idi-begia"
+
+#. otherChapter / otherLesson / president
+#. https://gcompris.net/incoming/lang/words_by_section.html#president
+msgctxt "president.ogg"
+msgid "president"
+msgstr "presidentea"
+
+#. otherChapter / otherLesson / price
+#. https://gcompris.net/incoming/lang/words_by_section.html#price
+msgctxt "price.ogg"
+msgid "price"
+msgstr "prezioa"
+
+#. otherChapter / otherLesson / prince
+#. https://gcompris.net/incoming/lang/words_by_section.html#prince
+msgctxt "prince.ogg"
+msgid "prince"
+msgstr "printzea"
+
+#. otherChapter / otherLesson / princess
+#. https://gcompris.net/incoming/lang/words_by_section.html#princess
+msgctxt "princess.ogg"
+msgid "princess"
+msgstr "printzesa"
+
+#. otherChapter / otherLesson / prisoner
+#. https://gcompris.net/incoming/lang/words_by_section.html#prisoner
+msgctxt "prisoner.ogg"
+msgid "prisoner"
+msgstr "atxiloa"
+
+#. otherChapter / otherLesson / queen
+#. https://gcompris.net/incoming/lang/words_by_section.html#queen
+msgctxt "queen.ogg"
+msgid "queen"
+msgstr "erregina"
+
+#. otherChapter / otherLesson / question
+#. https://gcompris.net/incoming/lang/words_by_section.html#question
+msgctxt "question.ogg"
+msgid "question"
+msgstr "galdera"
+
+#. otherChapter / otherLesson / quiz
+#. https://gcompris.net/incoming/lang/words_by_section.html#quiz
+msgctxt "quiz.ogg"
+msgid "quiz"
+msgstr "galdeketa"
+
+#. otherChapter / otherLesson / right
+#. https://gcompris.net/incoming/lang/words_by_section.html#right
+msgctxt "right.ogg"
+msgid "right"
+msgstr "eskuina"
+
+#. otherChapter / otherLesson / rocket
+#. https://gcompris.net/incoming/lang/words_by_section.html#rocket
+msgctxt "rocket.ogg"
+msgid "rocket"
+msgstr "suziria"
+
+#. otherChapter / otherLesson / round
+#. https://gcompris.net/incoming/lang/words_by_section.html#round
+msgctxt "round.ogg"
+msgid "round"
+msgstr "biribildua"
+
+#. otherChapter / otherLesson / science
+#. https://gcompris.net/incoming/lang/words_by_section.html#science
+msgctxt "science.ogg"
+msgid "science"
+msgstr "zientzia"
+
+#. otherChapter / otherLesson / splatter
+#. https://gcompris.net/incoming/lang/words_by_section.html#splatter
+msgctxt "splatter.ogg"
+msgid "splatter"
+msgstr "zipriztina"
+
+#. otherChapter / otherLesson / spot
+#. https://gcompris.net/incoming/lang/words_by_section.html#spot
+msgctxt "spot.ogg"
+msgid "spot"
+msgstr "orbana"
+
+#. otherChapter / otherLesson / square
+#. https://gcompris.net/incoming/lang/words_by_section.html#square
+msgctxt "square.ogg"
+msgid "square"
+msgstr "karratua"
+
+#. otherChapter / otherLesson / stand
+#. https://gcompris.net/incoming/lang/words_by_section.html#stand
+msgctxt "stand.ogg"
+msgid "stand"
+msgstr "zutik egon"
+
+#. otherChapter / otherLesson / stripe
+#. https://gcompris.net/incoming/lang/words_by_section.html#stripe
+msgctxt "stripe.ogg"
+msgid "stripe"
+msgstr "marra"
+
+#. otherChapter / otherLesson / student
+#. https://gcompris.net/incoming/lang/words_by_section.html#student
+msgctxt "student.ogg"
+msgid "student"
+msgstr "ikaslea"
+
+#. otherChapter / otherLesson / text
+#. https://gcompris.net/incoming/lang/words_by_section.html#text
+msgctxt "text.ogg"
+msgid "text"
+msgstr "testua"
+
+#. otherChapter / otherLesson / thief
+#. https://gcompris.net/incoming/lang/words_by_section.html#thief
+msgctxt "thief.ogg"
+msgid "thief"
+msgstr "lapurra"
+
+#. otherChapter / otherLesson / triangle
+#. https://gcompris.net/incoming/lang/words_by_section.html#triangle
+msgctxt "triangle.ogg"
+msgid "triangle"
+msgstr "triangelua"
+
+#. otherChapter / otherLesson / trip
+#. https://gcompris.net/incoming/lang/words_by_section.html#trip
+msgctxt "trip.ogg"
+msgid "trip"
+msgstr "txangoa"
+
+#. otherChapter / otherLesson / tune
+#. https://gcompris.net/incoming/lang/words_by_section.html#tune
+msgctxt "tune.ogg"
+msgid "tune"
+msgstr "doinua"
+
+#. otherChapter / otherLesson / under
+#. https://gcompris.net/incoming/lang/words_by_section.html#under
+msgctxt "under.ogg"
+msgid "under"
+msgstr "azpian"
+
+#. otherChapter / otherLesson / vowel
+#. https://gcompris.net/incoming/lang/words_by_section.html#vowel
+msgctxt "vowel.ogg"
+msgid "vowel"
+msgstr "bokala"
+
+#. otherChapter / otherLesson / weight
+#. https://gcompris.net/incoming/lang/words_by_section.html#weight
+msgctxt "weight.ogg"
+msgid "weight"
+msgstr "pisua"
+
+#. otherChapter / otherLesson / word
+#. https://gcompris.net/incoming/lang/words_by_section.html#word
+msgctxt "word.ogg"
+msgid "word"
+msgstr "hitza"
+
+#. otherChapter / action / to bark
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20bark
+msgctxt "bark.ogg"
+msgid "to bark"
+msgstr "zaunk egin"
+
+#. otherChapter / action / to beat
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20beat
+msgctxt "beat.ogg"
+msgid "to beat"
+msgstr "irabazi"
+
+#. otherChapter / action / to beg
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20beg
+msgctxt "beg.ogg"
+msgid "to beg"
+msgstr "erregutu"
+
+#. otherChapter / action / to bite
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20bite
+msgctxt "bite.ogg"
+msgid "to bite"
+msgstr "koxk egin"
+
+#. otherChapter / action / to blink
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20blink
+msgctxt "blink.ogg"
+msgid "to blink"
+msgstr "kliskatu"
+
+#. otherChapter / action / to boil
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20boil
+msgctxt "boil.ogg"
+msgid "to boil"
+msgstr "egosi"
+
+#. otherChapter / action / to break
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20break
+msgctxt "break.ogg"
+msgid "to break"
+msgstr "puskatu"
+
+#. otherChapter / action / to call
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20call
+msgctxt "call.ogg"
+msgid "to call"
+msgstr "hots egin"
+
+#. otherChapter / action / to catch
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20catch
+msgctxt "catch.ogg"
+msgid "to catch"
+msgstr "hartu"
+
+#. otherChapter / action / to chat
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20chat
+msgctxt "chat.ogg"
+msgid "to chat"
+msgstr "berriketan aritu"
+
+#. otherChapter / action / to chop
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20chop
+msgctxt "chop.ogg"
+msgid "to chop"
+msgstr "txikitu"
+
+#. otherChapter / action / to clap
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20clap
+msgctxt "clap.ogg"
+msgid "to clap"
+msgstr "txalo egin"
+
+#. otherChapter / action / to clean
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20clean
+msgctxt "clean.ogg"
+msgid "to clean"
+msgstr "garbitu"
+
+#. otherChapter / action / to cook
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20cook
+msgctxt "cook.ogg"
+msgid "to cook"
+msgstr "janaria prestatu"
+
+#. otherChapter / action / to cough
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20cough
+msgctxt "cough.ogg"
+msgid "to cough"
+msgstr "eztul egin"
+
+#. otherChapter / action / to crawl
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20crawl
+msgctxt "crawl.ogg"
+msgid "to crawl"
+msgstr "narras ibili"
+
+#. otherChapter / action / to croak
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20croak
+msgctxt "croak.ogg"
+msgid "to croak"
+msgstr "kro-kro egin"
+
+#. otherChapter / action / to cry
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20cry
+msgctxt "cry.ogg"
+msgid "to cry"
+msgstr "negar egin"
+
+#. otherChapter / action / to cut
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20cut
+msgctxt "cut.ogg"
+msgid "to cut"
+msgstr "moztu"
+
+#. otherChapter / action / to dig
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20dig
+msgctxt "dig.ogg"
+msgid "to dig"
+msgstr "zulatu"
+
+#. otherChapter / action / to draw
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20draw
+msgctxt "draw.ogg"
+msgid "to draw"
+msgstr "marraztu"
+
+#. otherChapter / action / to dream
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20dream
+msgctxt "dream.ogg"
+msgid "to dream"
+msgstr "amestu"
+
+#. otherChapter / action / to drink
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20drink
+msgctxt "to_drink.ogg"
+msgid "to drink"
+msgstr "edan"
+
+#. otherChapter / action / to drive
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20drive
+msgctxt "drive.ogg"
+msgid "to drive"
+msgstr "gidatu"
+
+#. otherChapter / action / to drool
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20drool
+msgctxt "drool.ogg"
+msgid "to drool"
+msgstr "lerdea jario"
+
+#. otherChapter / action / to dry
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20dry
+msgctxt "dry.ogg"
+msgid "to dry"
+msgstr "lehortu"
+
+#. otherChapter / action / to eat
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20eat
+msgctxt "eat.ogg"
+msgid "to eat"
+msgstr "jan"
+
+#. otherChapter / action / to feed
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20feed
+msgctxt "feed.ogg"
+msgid "to feed"
+msgstr "jaten eman"
+
+#. otherChapter / action / to fall
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20fall
+msgctxt "fall.ogg"
+msgid "to fall"
+msgstr "erori"
+
+#. otherChapter / action / to fetch
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20fetch
+msgctxt "fetch.ogg"
+msgid "to fetch"
+msgstr "ekarri"
+
+#. otherChapter / action / to find
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20find
+msgctxt "find.ogg"
+msgid "to find"
+msgstr "aurkitu"
+
+#. otherChapter / action / to float
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20float
+msgctxt "float.ogg"
+msgid "to float"
+msgstr "flotatu"
+
+#. otherChapter / action / to fly
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20fly
+msgctxt "fly.ogg"
+msgid "to fly"
+msgstr "hegan egin"
+
+#. otherChapter / action / to freeze
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20freeze
+msgctxt "freeze.ogg"
+msgid "to freeze"
+msgstr "izoztu"
+
+#. otherChapter / action / to growl
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20growl
+msgctxt "growl.ogg"
+msgid "to growl"
+msgstr "marmartu"
+
+#. otherChapter / action / to hatch
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20hatch
+msgctxt "hatch.ogg"
+msgid "to hatch"
+msgstr "oskola urratu"
+
+#. otherChapter / action / to hear
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20hear
+msgctxt "hear.ogg"
+msgid "to hear"
+msgstr "entzun"
+
+#. otherChapter / action / to howl
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20howl
+msgctxt "howl.ogg"
+msgid "to howl"
+msgstr "uhuri egin"
+
+#. otherChapter / action / to hug
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20hug
+msgctxt "hug.ogg"
+msgid "to hug"
+msgstr "besarkatu"
+
+#. otherChapter / action / to jump
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20jump
+msgctxt "jump.ogg"
+msgid "to jump"
+msgstr "salto egin"
+
+#. otherChapter / action / to kiss
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20kiss
+msgctxt "kiss.ogg"
+msgid "to kiss"
+msgstr "muxu eman"
+
+#. otherChapter / action / to kneel
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20kneel
+msgctxt "kneel.ogg"
+msgid "to kneel"
+msgstr "belaunikatu"
+
+#. otherChapter / action / to knit
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20knit
+msgctxt "knit.ogg"
+msgid "to knit"
+msgstr "puntua egin"
+
+#. otherChapter / action / to lick
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20lick
+msgctxt "lick.ogg"
+msgid "to lick"
+msgstr "miazkatu"
+
+#. otherChapter / action / to look
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20look
+msgctxt "look.ogg"
+msgid "to look"
+msgstr "begiratu"
+
+#. otherChapter / action / to meet
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20meet
+msgctxt "meet.ogg"
+msgid "to meet"
+msgstr "topatu"
+
+#. otherChapter / action / to nap
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20nap
+msgctxt "nap.ogg"
+msgid "to nap"
+msgstr "siesta egin"
+
+#. otherChapter / action / to peck
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20peck
+msgctxt "peck.ogg"
+msgid "to peck"
+msgstr "mokokatu"
+
+#. otherChapter / action / to play
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20play
+msgctxt "play.ogg"
+msgid "to play"
+msgstr "jolastu"
+
+#. otherChapter / action / to plow
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20plow
+msgctxt "plow.ogg"
+msgid "to plow"
+msgstr "goldatu"
+
+#. otherChapter / action / to pounce
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20pounce
+msgctxt "pounce.ogg"
+msgid "to pounce"
+msgstr "jauzi egin"
+
+#. otherChapter / action / to pull
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20pull
+msgctxt "pull.ogg"
+msgid "to pull"
+msgstr "tira egin"
+
+#. otherChapter / action / to quarrel
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20quarrel
+msgctxt "quarrel.ogg"
+msgid "to quarrel"
+msgstr "errieta egin"
+
+#. otherChapter / action / to read
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20read
+msgctxt "read.ogg"
+msgid "to read"
+msgstr "irakurri"
+
+#. otherChapter / action / to rip
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20rip
+msgctxt "rip.ogg"
+msgid "to rip"
+msgstr "erauzi"
+
+#. otherChapter / action / to rise
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20rise
+msgctxt "rise.ogg"
+msgid "to rise"
+msgstr "igo"
+
+#. otherChapter / action / to run
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20run
+msgctxt "run.ogg"
+msgid "to run"
+msgstr "korrika egin"
+
+#. otherChapter / action / to scare
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20scare
+msgctxt "scare.ogg"
+msgid "to scare"
+msgstr "beldurtu"
+
+#. otherChapter / action / to scratch
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20scratch
+msgctxt "scratch.ogg"
+msgid "to scratch"
+msgstr "harramazkatu"
+
+#. otherChapter / action / to scream
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20scream
+msgctxt "scream.ogg"
+msgid "to scream"
+msgstr "oihukatu"
+
+#. otherChapter / action / to scribble
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20scribble
+msgctxt "scribble.ogg"
+msgid "to scribble"
+msgstr "zirriborratu"
+
+#. otherChapter / action / to see
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20see
+msgctxt "see.ogg"
+msgid "to see"
+msgstr "ikusi"
+
+#. otherChapter / action / to shake
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20shake
+msgctxt "shake.ogg"
+msgid "to shake"
+msgstr "astindu"
+
+#. otherChapter / action / to shave
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20shave
+msgctxt "shave.ogg"
+msgid "to shave"
+msgstr "bizarra moztu"
+
+#. otherChapter / action / to sing
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20sing
+msgctxt "sing.ogg"
+msgid "to sing"
+msgstr "abestu"
+
+#. otherChapter / action / to sip
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20sip
+msgctxt "sip.ogg"
+msgid "to sip"
+msgstr "hurrupatu"
+
+#. otherChapter / action / to sit
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20sit
+msgctxt "sit.ogg"
+msgid "to sit"
+msgstr "eseri"
+
+#. otherChapter / action / to slam
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20slam
+msgctxt "slam.ogg"
+msgid "to slam"
+msgstr "kolpez itxi"
+
+#. otherChapter / action / to sleep
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20sleep
+msgctxt "sleep.ogg"
+msgid "to sleep"
+msgstr "lo egin"
+
+#. otherChapter / action / to smell
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20smell
+msgctxt "smell.ogg"
+msgid "to smell"
+msgstr "usaia aditu"
+
+#. otherChapter / action / to smooch
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20smooch
+msgctxt "smooch.ogg"
+msgid "to smooch"
+msgstr "musukatu"
+
+#. otherChapter / action / to sniff
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20sniff
+msgctxt "sniff.ogg"
+msgid "to sniff"
+msgstr "usnatu"
+
+#. otherChapter / action / to speak
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20speak
+msgctxt "speak.ogg"
+msgid "to speak"
+msgstr "hitz egin"
+
+#. otherChapter / action / to spill
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20spill
+msgctxt "spill.ogg"
+msgid "to spill"
+msgstr "isuri"
+
+#. otherChapter / action / to splash
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20splash
+msgctxt "splash.ogg"
+msgid "to splash"
+msgstr "plast egin"
+
+#. otherChapter / action / to spray
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20spray
+msgctxt "spray.ogg"
+msgid "to spray"
+msgstr "lainoztatu"
+
+#. otherChapter / action / to spread
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20spread
+msgctxt "spread.ogg"
+msgid "to spread"
+msgstr "igurtzi"
+
+#. otherChapter / action / to spring
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20spring
+msgctxt "spring.ogg"
+msgid "to spring"
+msgstr "jauzi egin"
+
+#. otherChapter / action / to squat
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20squat
+msgctxt "squat.ogg"
+msgid "to squat"
+msgstr "makurtu"
+
+#. otherChapter / action / to stare
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20stare
+msgctxt "stare.ogg"
+msgid "to stare"
+msgstr "behatu"
+
+#. otherChapter / action / to sting
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20sting
+msgctxt "sting.ogg"
+msgid "to sting"
+msgstr "ziztatu"
+
+#. otherChapter / action / to stitch
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20stitch
+msgctxt "stitch.ogg"
+msgid "to stitch"
+msgstr "josi"
+
+#. otherChapter / action / to stop
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20stop
+msgctxt "stop.ogg"
+msgid "to stop"
+msgstr "gelditu"
+
+#. otherChapter / action / to stretch
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20stretch
+msgctxt "stretch.ogg"
+msgid "to stretch"
+msgstr "luzatu"
+
+#. otherChapter / action / to study
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20study
+msgctxt "study.ogg"
+msgid "to study"
+msgstr "ikasi"
+
+#. otherChapter / action / to teach
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20teach
+msgctxt "teach.ogg"
+msgid "to teach"
+msgstr "irakatsi"
+
+#. otherChapter / action / to tear
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20tear
+msgctxt "tear.ogg"
+msgid "to tear"
+msgstr "urratu"
+
+#. otherChapter / action / to think
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20think
+msgctxt "think.ogg"
+msgid "to think"
+msgstr "pentsatu"
+
+#. otherChapter / action / to touch
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20touch
+msgctxt "touch.ogg"
+msgid "to touch"
+msgstr "ukitu"
+
+#. otherChapter / action / to wag
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20wag
+msgctxt "wag.ogg"
+msgid "to wag"
+msgstr "astindu"
+
+#. otherChapter / action / to walk
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20walk
+msgctxt "walk.ogg"
+msgid "to walk"
+msgstr "ibili"
+
+#. otherChapter / action / to wash
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20wash
+msgctxt "wash.ogg"
+msgid "to wash"
+msgstr "garbitu"
+
+#. otherChapter / action / to whisper
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20whisper
+msgctxt "whisper.ogg"
+msgid "to whisper"
+msgstr "xuxurlatu"
+
+#. otherChapter / action / to win
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20win
+msgctxt "win.ogg"
+msgid "to win"
+msgstr "irabazi"
+
+#. otherChapter / action / to write
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20write
+msgctxt "write.ogg"
+msgid "to write"
+msgstr "idatzi"
+
+#. otherChapter / adjective / bald
+#. https://gcompris.net/incoming/lang/words_by_section.html#bald
+msgctxt "bald.ogg"
+msgid "bald"
+msgstr "burusoila"
+
+#. otherChapter / adjective / big
+#. https://gcompris.net/incoming/lang/words_by_section.html#big
+msgctxt "big.ogg"
+msgid "big"
+msgstr "handia"
+
+#. otherChapter / adjective / blind
+#. https://gcompris.net/incoming/lang/words_by_section.html#blind
+msgctxt "blind.ogg"
+msgid "blind"
+msgstr "itsua"
+
+#. otherChapter / adjective / blond
+#. https://gcompris.net/incoming/lang/words_by_section.html#blond
+msgctxt "blond.ogg"
+msgid "blond"
+msgstr "ilehoria"
+
+#. otherChapter / adjective / bright
+#. https://gcompris.net/incoming/lang/words_by_section.html#bright
+msgctxt "bright.ogg"
+msgid "bright"
+msgstr "argia"
+
+#. otherChapter / adjective / crazy
+#. https://gcompris.net/incoming/lang/words_by_section.html#crazy
+msgctxt "crazy.ogg"
+msgid "crazy"
+msgstr "zoroa"
+
+#. otherChapter / adjective / cute
+#. https://gcompris.net/incoming/lang/words_by_section.html#cute
+msgctxt "cute.ogg"
+msgid "cute"
+msgstr "polita"
+
+#. otherChapter / adjective / dirty
+#. https://gcompris.net/incoming/lang/words_by_section.html#dirty
+msgctxt "dirty.ogg"
+msgid "dirty"
+msgstr "zikina"
+
+#. otherChapter / adjective / empty
+#. https://gcompris.net/incoming/lang/words_by_section.html#empty
+msgctxt "empty.ogg"
+msgid "empty"
+msgstr "hutsik"
+
+#. otherChapter / adjective / fat
+#. https://gcompris.net/incoming/lang/words_by_section.html#fat
+msgctxt "fat.ogg"
+msgid "fat"
+msgstr "gizena"
+
+#. otherChapter / adjective / full
+#. https://gcompris.net/incoming/lang/words_by_section.html#full
+msgctxt "full.ogg"
+msgid "full"
+msgstr "betea"
+
+#. otherChapter / adjective / giant
+#. https://gcompris.net/incoming/lang/words_by_section.html#giant
+msgctxt "giant.ogg"
+msgid "giant"
+msgstr "erraldoia"
+
+#. otherChapter / adjective / golden
+#. https://gcompris.net/incoming/lang/words_by_section.html#golden
+msgctxt "golden.ogg"
+msgid "golden"
+msgstr "urrezkoa"
+
+#. otherChapter / adjective / happy
+#. https://gcompris.net/incoming/lang/words_by_section.html#happy
+msgctxt "happy.ogg"
+msgid "happy"
+msgstr "alaia"
+
+#. otherChapter / adjective / high
+#. https://gcompris.net/incoming/lang/words_by_section.html#high
+msgctxt "high.ogg"
+msgid "high"
+msgstr "altua"
+
+#. otherChapter / adjective / hot
+#. https://gcompris.net/incoming/lang/words_by_section.html#hot
+msgctxt "hot.ogg"
+msgid "hot"
+msgstr "beroa"
+
+#. otherChapter / adjective / huge
+#. https://gcompris.net/incoming/lang/words_by_section.html#huge
+msgctxt "huge.ogg"
+msgid "huge"
+msgstr "itzela"
+
+#. otherChapter / adjective / hunchbacked
+#. https://gcompris.net/incoming/lang/words_by_section.html#hunchbacked
+msgctxt "hunchbacked.ogg"
+msgid "hunchbacked"
+msgstr "konkorduna"
+
+#. otherChapter / adjective / ill
+#. https://gcompris.net/incoming/lang/words_by_section.html#ill
+msgctxt "ill.ogg"
+msgid "ill"
+msgstr "gaixoa"
+
+#. otherChapter / adjective / liquid
+#. https://gcompris.net/incoming/lang/words_by_section.html#liquid
+msgctxt "liquid.ogg"
+msgid "liquid"
+msgstr "likidoa"
+
+#. otherChapter / adjective / magic
+#. https://gcompris.net/incoming/lang/words_by_section.html#magic
+msgctxt "magic.ogg"
+msgid "magic"
+msgstr "magikoa"
+
+#. otherChapter / adjective / naked
+#. https://gcompris.net/incoming/lang/words_by_section.html#naked
+msgctxt "naked.ogg"
+msgid "naked"
+msgstr "biluzik"
+
+#. otherChapter / adjective / open
+#. https://gcompris.net/incoming/lang/words_by_section.html#open
+msgctxt "open.ogg"
+msgid "open"
+msgstr "ireki"
+
+#. otherChapter / adjective / pretty
+#. https://gcompris.net/incoming/lang/words_by_section.html#pretty
+msgctxt "pretty.ogg"
+msgid "pretty"
+msgstr "ederra"
+
+#. otherChapter / adjective / royal
+#. https://gcompris.net/incoming/lang/words_by_section.html#royal
+msgctxt "royal.ogg"
+msgid "royal"
+msgstr "erregerena"
+
+#. otherChapter / adjective / shut
+#. https://gcompris.net/incoming/lang/words_by_section.html#shut
+msgctxt "shut.ogg"
+msgid "shut"
+msgstr "itxi"
+
+#. otherChapter / adjective / sick
+#. https://gcompris.net/incoming/lang/words_by_section.html#sick
+msgctxt "sick.ogg"
+msgid "sick"
+msgstr "gaixoa"
+
+#. otherChapter / adjective / slim
+#. https://gcompris.net/incoming/lang/words_by_section.html#slim
+msgctxt "slim.ogg"
+msgid "slim"
+msgstr "mehea"
+
+#. otherChapter / adjective / sloppy
+#. https://gcompris.net/incoming/lang/words_by_section.html#sloppy
+msgctxt "sloppy.ogg"
+msgid "sloppy"
+msgstr "axolagabea"
+
+#. otherChapter / adjective / small
+#. https://gcompris.net/incoming/lang/words_by_section.html#small
+msgctxt "small.ogg"
+msgid "small"
+msgstr "txikia"
+
+#. otherChapter / adjective / steep
+#. https://gcompris.net/incoming/lang/words_by_section.html#steep
+msgctxt "steep.ogg"
+msgid "steep"
+msgstr "pikoa"
+
+#. otherChapter / adjective / stinky
+#. https://gcompris.net/incoming/lang/words_by_section.html#stinky
+msgctxt "stinky.ogg"
+msgid "stinky"
+msgstr "kirasduna"
+
+#. otherChapter / adjective / straight
+#. https://gcompris.net/incoming/lang/words_by_section.html#straight
+msgctxt "straight.ogg"
+msgid "straight"
+msgstr "zuzena"
+
+#. otherChapter / adjective / strong
+#. https://gcompris.net/incoming/lang/words_by_section.html#strong
+msgctxt "strong.ogg"
+msgid "strong"
+msgstr "sendoa"
+
+#. otherChapter / adjective / tall
+#. https://gcompris.net/incoming/lang/words_by_section.html#tall
+msgctxt "tall.ogg"
+msgid "tall"
+msgstr "altua"
+
+#. otherChapter / adjective / thick
+#. https://gcompris.net/incoming/lang/words_by_section.html#thick
+msgctxt "thick.ogg"
+msgid "thick"
+msgstr "gizena"
+
+#. otherChapter / adjective / tired
+#. https://gcompris.net/incoming/lang/words_by_section.html#tired
+msgctxt "tired.ogg"
+msgid "tired"
+msgstr "nekatuta"
+
+#. otherChapter / adjective / wet
+#. https://gcompris.net/incoming/lang/words_by_section.html#wet
+msgctxt "wet.ogg"
+msgid "wet"
+msgstr "bustia"
+
+#. otherChapter / adjective / wide
+#. https://gcompris.net/incoming/lang/words_by_section.html#wide
+msgctxt "wide.ogg"
+msgid "wide"
+msgstr "zabala"
+
+#. otherChapter / color / color
+#. https://gcompris.net/incoming/lang/words_by_section.html#color
+msgctxt "color.ogg"
+msgid "color"
+msgstr "kolorea"
+
+#. otherChapter / color / blue
+#. https://gcompris.net/incoming/lang/words_by_section.html#blue
+msgctxt "blue.ogg"
+msgid "blue"
+msgstr "urdina"
+
+#. otherChapter / color / brown
+#. https://gcompris.net/incoming/lang/words_by_section.html#brown
+msgctxt "brown.ogg"
+msgid "brown"
+msgstr "marroia"
+
+#. otherChapter / color / black
+#. https://gcompris.net/incoming/lang/words_by_section.html#black
+msgctxt "black.ogg"
+msgid "black"
+msgstr "beltza"
+
+#. otherChapter / color / gray
+#. https://gcompris.net/incoming/lang/words_by_section.html#gray
+msgctxt "gray.ogg"
+msgid "gray"
+msgstr "grisa"
+
+#. otherChapter / color / green
+#. https://gcompris.net/incoming/lang/words_by_section.html#green
+msgctxt "green.ogg"
+msgid "green"
+msgstr "berdea"
+
+#. otherChapter / color / mauve
+#. https://gcompris.net/incoming/lang/words_by_section.html#mauve
+msgctxt "mauve.ogg"
+msgid "mauve"
+msgstr "malba"
+
+#. otherChapter / color / orange
+#. https://gcompris.net/incoming/lang/words_by_section.html#orange
+msgctxt "orange-color.ogg"
+msgid "orange"
+msgstr "laranja"
+
+#. otherChapter / color / pink
+#. https://gcompris.net/incoming/lang/words_by_section.html#pink
+msgctxt "pink.ogg"
+msgid "pink"
+msgstr "arrosa"
+
+#. otherChapter / color / red
+#. https://gcompris.net/incoming/lang/words_by_section.html#red
+msgctxt "red.ogg"
+msgid "red"
+msgstr "gorria"
+
+#. otherChapter / color / white
+#. https://gcompris.net/incoming/lang/words_by_section.html#white
+msgctxt "white.ogg"
+msgid "white"
+msgstr "zuria"
+
+#. otherChapter / color / yellow
+#. https://gcompris.net/incoming/lang/words_by_section.html#yellow
+msgctxt "yellow.ogg"
+msgid "yellow"
+msgstr "horia"
+
+#. otherChapter / number / zero
+#. https://gcompris.net/incoming/lang/words_by_section.html#zero
+msgctxt "U0030.ogg"
+msgid "zero"
+msgstr "zero"
+
+#. otherChapter / number / one
+#. https://gcompris.net/incoming/lang/words_by_section.html#one
+msgctxt "U0031.ogg"
+msgid "one"
+msgstr "bat"
+
+#. otherChapter / number / two
+#. https://gcompris.net/incoming/lang/words_by_section.html#two
+msgctxt "U0032.ogg"
+msgid "two"
+msgstr "bi"
+
+#. otherChapter / number / three
+#. https://gcompris.net/incoming/lang/words_by_section.html#three
+msgctxt "U0033.ogg"
+msgid "three"
+msgstr "hiru"
+
+#. otherChapter / number / four
+#. https://gcompris.net/incoming/lang/words_by_section.html#four
+msgctxt "U0034.ogg"
+msgid "four"
+msgstr "lau"
+
+#. otherChapter / number / five
+#. https://gcompris.net/incoming/lang/words_by_section.html#five
+msgctxt "U0035.ogg"
+msgid "five"
+msgstr "bost"
+
+#. otherChapter / number / six
+#. https://gcompris.net/incoming/lang/words_by_section.html#six
+msgctxt "U0036.ogg"
+msgid "six"
+msgstr "sei"
+
+#. otherChapter / number / seven
+#. https://gcompris.net/incoming/lang/words_by_section.html#seven
+msgctxt "U0037.ogg"
+msgid "seven"
+msgstr "zazpi"
+
+#. otherChapter / number / eight
+#. https://gcompris.net/incoming/lang/words_by_section.html#eight
+msgctxt "U0038.ogg"
+msgid "eight"
+msgstr "zortzi"
+
+#. otherChapter / number / nine
+#. https://gcompris.net/incoming/lang/words_by_section.html#nine
+msgctxt "U0039.ogg"
+msgid "nine"
+msgstr "bederatzi"
+
+#. otherChapter / number / ten
+#. https://gcompris.net/incoming/lang/words_by_section.html#ten
+msgctxt "10.ogg"
+msgid "ten"
+msgstr "hamar"
+
+#. otherChapter / number / eleven
+#. https://gcompris.net/incoming/lang/words_by_section.html#eleven
+msgctxt "11.ogg"
+msgid "eleven"
+msgstr "hamaika"
+
+#. otherChapter / number / twelve
+#. https://gcompris.net/incoming/lang/words_by_section.html#twelve
+msgctxt "12.ogg"
+msgid "twelve"
+msgstr "hamabi"
+
+#. otherChapter / number / sixteen
+#. https://gcompris.net/incoming/lang/words_by_section.html#sixteen
+msgctxt "16.ogg"
+msgid "sixteen"
+msgstr "hamasei"
+
+#. people / bodyparts / ankle
+#. https://gcompris.net/incoming/lang/words_by_section.html#ankle
+msgctxt "ankle.ogg"
+msgid "ankle"
+msgstr "orkatila"
+
+#. people / bodyparts / arm
+#. https://gcompris.net/incoming/lang/words_by_section.html#arm
+msgctxt "arm.ogg"
+msgid "arm"
+msgstr "besoa"
+
+#. people / bodyparts / back
+#. https://gcompris.net/incoming/lang/words_by_section.html#back
+msgctxt "back.ogg"
+msgid "back"
+msgstr "bizkarra"
+
+#. people / bodyparts / beard
+#. https://gcompris.net/incoming/lang/words_by_section.html#beard
+msgctxt "beard.ogg"
+msgid "beard"
+msgstr "bizarra"
+
+#. people / bodyparts / belly
+#. https://gcompris.net/incoming/lang/words_by_section.html#belly
+msgctxt "belly.ogg"
+msgid "belly"
+msgstr "sabela"
+
+#. people / bodyparts / bottom
+#. https://gcompris.net/incoming/lang/words_by_section.html#bottom
+msgctxt "bottom.ogg"
+msgid "bottom"
+msgstr "ipurdia"
+
+#. people / bodyparts / braid
+#. https://gcompris.net/incoming/lang/words_by_section.html#braid
+msgctxt "braid.ogg"
+msgid "braid"
+msgstr "txirikorda"
+
+#. people / bodyparts / brain
+#. https://gcompris.net/incoming/lang/words_by_section.html#brain
+msgctxt "brain.ogg"
+msgid "brain"
+msgstr "garuna"
+
+#. people / bodyparts / breast
+#. https://gcompris.net/incoming/lang/words_by_section.html#breast
+msgctxt "breast.ogg"
+msgid "breast"
+msgstr "bularra"
+
+#. people / bodyparts / bump
+#. https://gcompris.net/incoming/lang/words_by_section.html#bump
+msgctxt "bump.ogg"
+msgid "bump"
+msgstr "koskorra"
+
+#. people / bodyparts / cheek
+#. https://gcompris.net/incoming/lang/words_by_section.html#cheek
+msgctxt "cheek.ogg"
+msgid "cheek"
+msgstr "masaila"
+
+#. people / bodyparts / chin
+#. https://gcompris.net/incoming/lang/words_by_section.html#chin
+msgctxt "chin.ogg"
+msgid "chin"
+msgstr "kokotsa"
+
+#. people / bodyparts / ear
+#. https://gcompris.net/incoming/lang/words_by_section.html#ear
+msgctxt "ear.ogg"
+msgid "ear"
+msgstr "belarria"
+
+#. people / bodyparts / elbow
+#. https://gcompris.net/incoming/lang/words_by_section.html#elbow
+msgctxt "elbow.ogg"
+msgid "elbow"
+msgstr "ukondoa"
+
+#. people / bodyparts / eyelash
+#. https://gcompris.net/incoming/lang/words_by_section.html#eyelash
+msgctxt "eyelash.ogg"
+msgid "eyelash"
+msgstr "betilea"
+
+#. people / bodyparts / eyes
+#. https://gcompris.net/incoming/lang/words_by_section.html#eyes
+msgctxt "eyes.ogg"
+msgid "eyes"
+msgstr "begiak"
+
+#. people / bodyparts / face
+#. https://gcompris.net/incoming/lang/words_by_section.html#face
+msgctxt "face.ogg"
+msgid "face"
+msgstr "aurpegia"
+
+#. people / bodyparts / femur
+#. https://gcompris.net/incoming/lang/words_by_section.html#femur
+msgctxt "femur.ogg"
+msgid "femur"
+msgstr "femurra"
+
+#. people / bodyparts / finger
+#. https://gcompris.net/incoming/lang/words_by_section.html#finger
+msgctxt "finger.ogg"
+msgid "finger"
+msgstr "hatza"
+
+#. people / bodyparts / fist
+#. https://gcompris.net/incoming/lang/words_by_section.html#fist
+msgctxt "fist.ogg"
+msgid "fist"
+msgstr "ukabila"
+
+#. people / bodyparts / foot
+#. https://gcompris.net/incoming/lang/words_by_section.html#foot
+msgctxt "foot.ogg"
+msgid "foot"
+msgstr "oina"
+
+#. people / bodyparts / grin
+#. https://gcompris.net/incoming/lang/words_by_section.html#grin
+msgctxt "grin.ogg"
+msgid "grin"
+msgstr "irribarrea"
+
+#. people / bodyparts / hair
+#. https://gcompris.net/incoming/lang/words_by_section.html#hair
+msgctxt "hair.ogg"
+msgid "hair"
+msgstr "ilea"
+
+#. people / bodyparts / hand
+#. https://gcompris.net/incoming/lang/words_by_section.html#hand
+msgctxt "hand.ogg"
+msgid "hand"
+msgstr "eskua"
+
+#. people / bodyparts / head
+#. https://gcompris.net/incoming/lang/words_by_section.html#head
+msgctxt "head.ogg"
+msgid "head"
+msgstr "burua"
+
+#. people / bodyparts / hip
+#. https://gcompris.net/incoming/lang/words_by_section.html#hip
+msgctxt "hip.ogg"
+msgid "hip"
+msgstr "aldaka"
+
+#. people / bodyparts / knee
+#. https://gcompris.net/incoming/lang/words_by_section.html#knee
+msgctxt "knee.ogg"
+msgid "knee"
+msgstr "belauna"
+
+#. people / bodyparts / lap
+#. https://gcompris.net/incoming/lang/words_by_section.html#lap
+msgctxt "lap.ogg"
+msgid "lap"
+msgstr "magala"
+
+#. people / bodyparts / leg
+#. https://gcompris.net/incoming/lang/words_by_section.html#leg
+msgctxt "leg.ogg"
+msgid "leg"
+msgstr "hanka"
+
+#. people / bodyparts / lip
+#. https://gcompris.net/incoming/lang/words_by_section.html#lip
+msgctxt "lip.ogg"
+msgid "lip"
+msgstr "ezpaina"
+
+#. people / bodyparts / mouth
+#. https://gcompris.net/incoming/lang/words_by_section.html#mouth
+msgctxt "mouth.ogg"
+msgid "mouth"
+msgstr "ahoa"
+
+#. people / bodyparts / muscle
+#. https://gcompris.net/incoming/lang/words_by_section.html#muscle
+msgctxt "muscle.ogg"
+msgid "muscle"
+msgstr "giharra"
+
+#. people / bodyparts / navel
+#. https://gcompris.net/incoming/lang/words_by_section.html#navel
+msgctxt "navel.ogg"
+msgid "navel"
+msgstr "zilborra"
+
+#. people / bodyparts / neck
+#. https://gcompris.net/incoming/lang/words_by_section.html#neck
+msgctxt "neck.ogg"
+msgid "neck"
+msgstr "lepoa"
+
+#. people / bodyparts / nose
+#. https://gcompris.net/incoming/lang/words_by_section.html#nose
+msgctxt "nose.ogg"
+msgid "nose"
+msgstr "sudurra"
+
+#. people / bodyparts / nostril
+#. https://gcompris.net/incoming/lang/words_by_section.html#nostril
+msgctxt "nostril.ogg"
+msgid "nostril"
+msgstr "sudur-zuloa"
+
+#. people / bodyparts / scar
+#. https://gcompris.net/incoming/lang/words_by_section.html#scar
+msgctxt "scar.ogg"
+msgid "scar"
+msgstr "orbaina"
+
+#. people / bodyparts / skeleton
+#. https://gcompris.net/incoming/lang/words_by_section.html#skeleton
+msgctxt "skeleton.ogg"
+msgid "skeleton"
+msgstr "hezurdura"
+
+#. people / bodyparts / skin
+#. https://gcompris.net/incoming/lang/words_by_section.html#skin
+msgctxt "skin.ogg"
+msgid "skin"
+msgstr "azala"
+
+#. people / bodyparts / spine
+#. https://gcompris.net/incoming/lang/words_by_section.html#spine
+msgctxt "spine.ogg"
+msgid "spine"
+msgstr "bizkarrezurra"
+
+#. people / bodyparts / stomach
+#. https://gcompris.net/incoming/lang/words_by_section.html#stomach
+msgctxt "stomach.ogg"
+msgid "stomach"
+msgstr "sabela"
+
+#. people / bodyparts / sweat
+#. https://gcompris.net/incoming/lang/words_by_section.html#sweat
+msgctxt "sweat.ogg"
+msgid "sweat"
+msgstr "izerdia"
+
+#. people / bodyparts / teeth
+#. https://gcompris.net/incoming/lang/words_by_section.html#teeth
+msgctxt "teeth.ogg"
+msgid "teeth"
+msgstr "hortzak"
+
+#. people / bodyparts / thigh
+#. https://gcompris.net/incoming/lang/words_by_section.html#thigh
+msgctxt "thigh.ogg"
+msgid "thigh"
+msgstr "izterra"
+
+#. people / bodyparts / throat
+#. https://gcompris.net/incoming/lang/words_by_section.html#throat
+msgctxt "throat.ogg"
+msgid "throat"
+msgstr "eztarria"
+
+#. people / bodyparts / thumb
+#. https://gcompris.net/incoming/lang/words_by_section.html#thumb
+msgctxt "thumb.ogg"
+msgid "thumb"
+msgstr "erpurua"
+
+#. people / bodyparts / toe
+#. https://gcompris.net/incoming/lang/words_by_section.html#toe
+msgctxt "toe.ogg"
+msgid "toe"
+msgstr "behatza"
+
+#. people / bodyparts / tongue
+#. https://gcompris.net/incoming/lang/words_by_section.html#tongue
+msgctxt "tongue.ogg"
+msgid "tongue"
+msgstr "mingaina"
+
+#. people / bodyparts / vein
+#. https://gcompris.net/incoming/lang/words_by_section.html#vein
+msgctxt "vein.ogg"
+msgid "vein"
+msgstr "zaina"
+
+#. people / bodyparts / wart
+#. https://gcompris.net/incoming/lang/words_by_section.html#wart
+msgctxt "wart.ogg"
+msgid "wart"
+msgstr "garatxoa"
+
+#. people / bodyparts / wrist
+#. https://gcompris.net/incoming/lang/words_by_section.html#wrist
+msgctxt "wrist.ogg"
+msgid "wrist"
+msgstr "eskumuturra"
+
+#. people / clothes / bathing suit
+#. https://gcompris.net/incoming/lang/words_by_section.html#bathing%20suit
+msgctxt "bathing_suit.ogg"
+msgid "bathing suit"
+msgstr "bainu jantzia"
+
+#. people / clothes / bib
+#. https://gcompris.net/incoming/lang/words_by_section.html#bib
+msgctxt "bib.ogg"
+msgid "bib"
+msgstr "dortsala"
+
+#. people / clothes / button
+#. https://gcompris.net/incoming/lang/words_by_section.html#button
+msgctxt "button.ogg"
+msgid "button"
+msgstr "botoia"
+
+#. people / clothes / cap
+#. https://gcompris.net/incoming/lang/words_by_section.html#cap
+msgctxt "cap.ogg"
+msgid "cap"
+msgstr "txanoa"
+
+#. people / clothes / cape
+#. https://gcompris.net/incoming/lang/words_by_section.html#cape
+msgctxt "cape.ogg"
+msgid "cape"
+msgstr "kapa"
+
+#. people / clothes / coat
+#. https://gcompris.net/incoming/lang/words_by_section.html#coat
+msgctxt "coat.ogg"
+msgid "coat"
+msgstr "berokia"
+
+#. people / clothes / dress
+#. https://gcompris.net/incoming/lang/words_by_section.html#dress
+msgctxt "dress.ogg"
+msgid "dress"
+msgstr "soinekoa"
+
+#. people / clothes / glove
+#. https://gcompris.net/incoming/lang/words_by_section.html#glove
+msgctxt "glove.ogg"
+msgid "glove"
+msgstr "eskularrua"
+
+#. people / clothes / hat
+#. https://gcompris.net/incoming/lang/words_by_section.html#hat
+msgctxt "hat.ogg"
+msgid "hat"
+msgstr "kapela"
+
+#. people / clothes / heel
+#. https://gcompris.net/incoming/lang/words_by_section.html#heel
+msgctxt "heel.ogg"
+msgid "heel"
+msgstr "takoia"
+
+#. people / clothes / helmet
+#. https://gcompris.net/incoming/lang/words_by_section.html#helmet
+msgctxt "helmet.ogg"
+msgid "helmet"
+msgstr "kaskoa"
+
+#. people / clothes / jacket
+#. https://gcompris.net/incoming/lang/words_by_section.html#jacket
+msgctxt "jacket.ogg"
+msgid "jacket"
+msgstr "jaka"
+
+#. people / clothes / kimono
+#. https://gcompris.net/incoming/lang/words_by_section.html#kimono
+msgctxt "kimono.ogg"
+msgid "kimono"
+msgstr "kimonoa"
+
+#. people / clothes / nightgown
+#. https://gcompris.net/incoming/lang/words_by_section.html#nightgown
+msgctxt "nightgown.ogg"
+msgid "nightgown"
+msgstr "kamisoia"
+
+#. people / clothes / pajamas
+#. https://gcompris.net/incoming/lang/words_by_section.html#pajamas
+msgctxt "pajamas.ogg"
+msgid "pajamas"
+msgstr "pijama"
+
+#. people / clothes / panties
+#. https://gcompris.net/incoming/lang/words_by_section.html#panties
+msgctxt "panties.ogg"
+msgid "panties"
+msgstr "kuleroa"
+
+#. people / clothes / pants
+#. https://gcompris.net/incoming/lang/words_by_section.html#pants
+msgctxt "pants.ogg"
+msgid "pants"
+msgstr "prakak"
+
+#. people / clothes / patch
+#. https://gcompris.net/incoming/lang/words_by_section.html#patch
+msgctxt "patch.ogg"
+msgid "patch"
+msgstr "adabakia"
+
+#. people / clothes / pocket
+#. https://gcompris.net/incoming/lang/words_by_section.html#pocket
+msgctxt "pocket.ogg"
+msgid "pocket"
+msgstr "poltsikoa"
+
+#. people / clothes / pompon
+#. https://gcompris.net/incoming/lang/words_by_section.html#pompon
+msgctxt "pompon.ogg"
+msgid "pompon"
+msgstr "borla"
+
+#. people / clothes / pullover
+#. https://gcompris.net/incoming/lang/words_by_section.html#pullover
+msgctxt "pullover.ogg"
+msgid "pullover"
+msgstr "jertsea"
+
+#. people / clothes / raincoat
+#. https://gcompris.net/incoming/lang/words_by_section.html#raincoat
+msgctxt "raincoat.ogg"
+msgid "raincoat"
+msgstr "zira"
+
+#. people / clothes / robe
+#. https://gcompris.net/incoming/lang/words_by_section.html#robe
+msgctxt "robe.ogg"
+msgid "robe"
+msgstr "bata"
+
+#. people / clothes / sandals
+#. https://gcompris.net/incoming/lang/words_by_section.html#sandals
+msgctxt "sandals.ogg"
+msgid "sandals"
+msgstr "sandaliak"
+
+#. people / clothes / sash
+#. https://gcompris.net/incoming/lang/words_by_section.html#sash
+msgctxt "sash.ogg"
+msgid "sash"
+msgstr "gerrikoa"
+
+#. people / clothes / scarf
+#. https://gcompris.net/incoming/lang/words_by_section.html#scarf
+msgctxt "scarf.ogg"
+msgid "scarf"
+msgstr "bufanda"
+
+#. people / clothes / shirt
+#. https://gcompris.net/incoming/lang/words_by_section.html#shirt
+msgctxt "shirt.ogg"
+msgid "shirt"
+msgstr "kamiseta"
+
+#. people / clothes / shoe
+#. https://gcompris.net/incoming/lang/words_by_section.html#shoe
+msgctxt "shoe.ogg"
+msgid "shoe"
+msgstr "zapata"
+
+#. people / clothes / shoelace
+#. https://gcompris.net/incoming/lang/words_by_section.html#shoelace
+msgctxt "shoelace.ogg"
+msgid "shoelace"
+msgstr "lokarria"
+
+#. people / clothes / short
+#. https://gcompris.net/incoming/lang/words_by_section.html#short
+msgctxt "short.ogg"
+msgid "short"
+msgstr "galtzamotza"
+
+#. people / clothes / skirt
+#. https://gcompris.net/incoming/lang/words_by_section.html#skirt
+msgctxt "skirt.ogg"
+msgid "skirt"
+msgstr "gona"
+
+#. people / clothes / sleeve
+#. https://gcompris.net/incoming/lang/words_by_section.html#sleeve
+msgctxt "sleeve.ogg"
+msgid "sleeve"
+msgstr "mahuka"
+
+#. people / clothes / slippers
+#. https://gcompris.net/incoming/lang/words_by_section.html#slippers
+msgctxt "slippers.ogg"
+msgid "slippers"
+msgstr "zapatilak"
+
+#. people / clothes / smock
+#. https://gcompris.net/incoming/lang/words_by_section.html#smock
+msgctxt "smock.ogg"
+msgid "smock"
+msgstr "mantala"
+
+#. people / clothes / sneaker
+#. https://gcompris.net/incoming/lang/words_by_section.html#sneaker
+msgctxt "sneaker.ogg"
+msgid "sneaker"
+msgstr "kirol zapatila"
+
+#. people / clothes / sock
+#. https://gcompris.net/incoming/lang/words_by_section.html#sock
+msgctxt "sock.ogg"
+msgid "sock"
+msgstr "galtzerdia"
+
+#. people / clothes / sole shoe
+#. https://gcompris.net/incoming/lang/words_by_section.html#sole%20shoe
+msgctxt "sole_shoe.ogg"
+msgid "sole shoe"
+msgstr "oinetakoaren zola"
+
+#. people / clothes / suit
+#. https://gcompris.net/incoming/lang/words_by_section.html#suit
+msgctxt "suit.ogg"
+msgid "suit"
+msgstr "jantzia"
+
+#. people / clothes / sweatshirt
+#. https://gcompris.net/incoming/lang/words_by_section.html#sweatshirt
+msgctxt "sweatshirt.ogg"
+msgid "sweatshirt"
+msgstr "kirol-kamiseta"
+
+#. people / clothes / uniform
+#. https://gcompris.net/incoming/lang/words_by_section.html#uniform
+msgctxt "uniform.ogg"
+msgid "uniform"
+msgstr "uniformea"
+
+#. people / clothes / vest
+#. https://gcompris.net/incoming/lang/words_by_section.html#vest
+msgctxt "vest.ogg"
+msgid "vest"
+msgstr "txalekoa"
+
+#. people / clothes / zipper
+#. https://gcompris.net/incoming/lang/words_by_section.html#zipper
+msgctxt "zipper.ogg"
+msgid "zipper"
+msgstr "kremailera"
+
+#. people / emotion / ache
+#. https://gcompris.net/incoming/lang/words_by_section.html#ache
+msgctxt "ache.ogg"
+msgid "ache"
+msgstr "mina"
+
+#. people / emotion / angry
+#. https://gcompris.net/incoming/lang/words_by_section.html#angry
+msgctxt "angry.ogg"
+msgid "angry"
+msgstr "haserre"
+
+#. people / emotion / blush
+#. https://gcompris.net/incoming/lang/words_by_section.html#blush
+msgctxt "blush.ogg"
+msgid "blush"
+msgstr "gorritzea"
+
+#. people / emotion / fear
+#. https://gcompris.net/incoming/lang/words_by_section.html#fear
+msgctxt "fear.ogg"
+msgid "fear"
+msgstr "beldurra"
+
+#. people / emotion / joy
+#. https://gcompris.net/incoming/lang/words_by_section.html#joy
+msgctxt "joy.ogg"
+msgid "joy"
+msgstr "alaitasuna"
+
+#. people / emotion / to laugh
+#. https://gcompris.net/incoming/lang/words_by_section.html#to%20laugh
+msgctxt "laugh.ogg"
+msgid "to laugh"
+msgstr "barre egin"
+
+#. people / emotion / mad
+#. https://gcompris.net/incoming/lang/words_by_section.html#mad
+msgctxt "mad.ogg"
+msgid "mad"
+msgstr "eroa"
+
+#. people / emotion / rage
+#. https://gcompris.net/incoming/lang/words_by_section.html#rage
+msgctxt "rage.ogg"
+msgid "rage"
+msgstr "amorrua"
+
+#. people / emotion / sad
+#. https://gcompris.net/incoming/lang/words_by_section.html#sad
+msgctxt "sad.ogg"
+msgid "sad"
+msgstr "goibel, triste"
+
+#. people / emotion / smile
+#. https://gcompris.net/incoming/lang/words_by_section.html#smile
+msgctxt "smile.ogg"
+msgid "smile"
+msgstr "irribarrea"
+
+#. people / emotion / sob
+#. https://gcompris.net/incoming/lang/words_by_section.html#sob
+msgctxt "sob.ogg"
+msgid "sob"
+msgstr "negar-zotina"
+
+#. people / emotion / yum
+#. https://gcompris.net/incoming/lang/words_by_section.html#yum
+msgctxt "yum.ogg"
+msgid "yum"
+msgstr "mmm"
+
+#. people / job / accountant
+#. https://gcompris.net/incoming/lang/words_by_section.html#accountant
+msgctxt "accountant.ogg"
+msgid "accountant"
+msgstr "kontularia"
+
+#. people / job / actor
+#. https://gcompris.net/incoming/lang/words_by_section.html#actor
+msgctxt "actor.ogg"
+msgid "actor"
+msgstr "aktorea"
+
+#. people / job / artist
+#. https://gcompris.net/incoming/lang/words_by_section.html#artist
+msgctxt "artist.ogg"
+msgid "artist"
+msgstr "artista"
+
+#. people / job / astronaut
+#. https://gcompris.net/incoming/lang/words_by_section.html#astronaut
+msgctxt "astronaut.ogg"
+msgid "astronaut"
+msgstr "astronauta"
+
+#. people / job / boxer
+#. https://gcompris.net/incoming/lang/words_by_section.html#boxer
+msgctxt "boxer.ogg"
+msgid "boxer"
+msgstr "boxeolaria"
+
+#. people / job / banker female
+#. https://gcompris.net/incoming/lang/words_by_section.html#banker%20female
+msgctxt "banker_female.ogg"
+msgid "banker female"
+msgstr "emakume bankaria"
+
+#. people / job / bricklayer
+#. https://gcompris.net/incoming/lang/words_by_section.html#bricklayer
+msgctxt "bricklayer.ogg"
+msgid "bricklayer"
+msgstr "igeltseroa"
+
+#. people / job / butcher
+#. https://gcompris.net/incoming/lang/words_by_section.html#butcher
+msgctxt "butcher.ogg"
+msgid "butcher"
+msgstr "harakina"
+
+#. people / job / carpenter
+#. https://gcompris.net/incoming/lang/words_by_section.html#carpenter
+msgctxt "carpenter.ogg"
+msgid "carpenter"
+msgstr "arotza"
+
+#. people / job / chef
+#. https://gcompris.net/incoming/lang/words_by_section.html#chef
+msgctxt "chef.ogg"
+msgid "chef"
+msgstr "sukaldaria"
+
+#. people / job / cleaning lady
+#. https://gcompris.net/incoming/lang/words_by_section.html#cleaning%20lady
+msgctxt "cleaning_lady.ogg"
+msgid "cleaning lady"
+msgstr "garbitzailea"
+
+#. people / job / clown
+#. https://gcompris.net/incoming/lang/words_by_section.html#clown
+msgctxt "clown.ogg"
+msgid "clown"
+msgstr "pailazoa"
+
+#. people / job / coach
+#. https://gcompris.net/incoming/lang/words_by_section.html#coach
+msgctxt "coach.ogg"
+msgid "coach"
+msgstr "entrenatzailea"
+
+#. people / job / cowboy
+#. https://gcompris.net/incoming/lang/words_by_section.html#cowboy
+msgctxt "cowboy.ogg"
+msgid "cowboy"
+msgstr "unaia"
+
+#. people / job / doctor
+#. https://gcompris.net/incoming/lang/words_by_section.html#doctor
+msgctxt "doctor.ogg"
+msgid "doctor"
+msgstr "sendagilea"
+
+#. people / job / electrician
+#. https://gcompris.net/incoming/lang/words_by_section.html#electrician
+msgctxt "electrician.ogg"
+msgid "electrician"
+msgstr "elektrikaria"
+
+#. people / job / engineer
+#. https://gcompris.net/incoming/lang/words_by_section.html#engineer
+msgctxt "engineer.ogg"
+msgid "engineer"
+msgstr "ingeniaria"
+
+#. people / job / farmer
+#. https://gcompris.net/incoming/lang/words_by_section.html#farmer
+msgctxt "farmer.ogg"
+msgid "farmer"
+msgstr "baserritarra"
+
+#. people / job / fireman
+#. https://gcompris.net/incoming/lang/words_by_section.html#fireman
+msgctxt "fireman.ogg"
+msgid "fireman"
+msgstr "suhiltzailea"
+
+#. people / job / fisherman
+#. https://gcompris.net/incoming/lang/words_by_section.html#fisherman
+msgctxt "fisherman.ogg"
+msgid "fisherman"
+msgstr "arrantzalea"
+
+#. people / job / hunter
+#. https://gcompris.net/incoming/lang/words_by_section.html#hunter
+msgctxt "hunter.ogg"
+msgid "hunter"
+msgstr "ehiztaria"
+
+#. people / job / job
+#. https://gcompris.net/incoming/lang/words_by_section.html#job
+msgctxt "job.ogg"
+msgid "job"
+msgstr "enplegua"
+
+#. people / job / jockey
+#. https://gcompris.net/incoming/lang/words_by_section.html#jockey
+msgctxt "jockey.ogg"
+msgid "jockey"
+msgstr "jockeya"
+
+#. people / job / judge
+#. https://gcompris.net/incoming/lang/words_by_section.html#judge
+msgctxt "judge.ogg"
+msgid "judge"
+msgstr "epailea"
+
+#. people / job / juggler
+#. https://gcompris.net/incoming/lang/words_by_section.html#juggler
+msgctxt "juggler.ogg"
+msgid "juggler"
+msgstr "malabarista"
+
+#. people / job / lawyer
+#. https://gcompris.net/incoming/lang/words_by_section.html#lawyer
+msgctxt "lawyer.ogg"
+msgid "lawyer"
+msgstr "abokatua"
+
+#. people / job / librarian
+#. https://gcompris.net/incoming/lang/words_by_section.html#librarian
+msgctxt "librarian.ogg"
+msgid "librarian"
+msgstr "liburuzaina"
+
+#. people / job / mechanic
+#. https://gcompris.net/incoming/lang/words_by_section.html#mechanic
+msgctxt "mechanic.ogg"
+msgid "mechanic"
+msgstr "mekanikaria"
+
+#. people / job / musician
+#. https://gcompris.net/incoming/lang/words_by_section.html#musician
+msgctxt "musician.ogg"
+msgid "musician"
+msgstr "musikaria"
+
+#. people / job / nun
+#. https://gcompris.net/incoming/lang/words_by_section.html#nun
+msgctxt "nun.ogg"
+msgid "nun"
+msgstr "moja, lekaimea"
+
+#. people / job / nurse
+#. https://gcompris.net/incoming/lang/words_by_section.html#nurse
+msgctxt "nurse.ogg"
+msgid "nurse"
+msgstr "erizaina"
+
+#. people / job / nurse male
+#. https://gcompris.net/incoming/lang/words_by_section.html#nurse%20male
+msgctxt "nurse_male.ogg"
+msgid "nurse male"
+msgstr "erizain gizona"
+
+#. people / job / pilot
+#. https://gcompris.net/incoming/lang/words_by_section.html#pilot
+msgctxt "pilot.ogg"
+msgid "pilot"
+msgstr "pilotua"
+
+#. people / job / plumber
+#. https://gcompris.net/incoming/lang/words_by_section.html#plumber
+msgctxt "plumber.ogg"
+msgid "plumber"
+msgstr "iturgina"
+
+#. people / job / police
+#. https://gcompris.net/incoming/lang/words_by_section.html#police
+msgctxt "police.ogg"
+msgid "police"
+msgstr "polizia"
+
+#. people / job / priest
+#. https://gcompris.net/incoming/lang/words_by_section.html#priest
+msgctxt "priest.ogg"
+msgid "priest"
+msgstr "apaiza"
+
+#. people / job / sailor
+#. https://gcompris.net/incoming/lang/words_by_section.html#sailor
+msgctxt "sailor.ogg"
+msgid "sailor"
+msgstr "marinela"
+
+#. people / job / soldier
+#. https://gcompris.net/incoming/lang/words_by_section.html#soldier
+msgctxt "soldier.ogg"
+msgid "soldier"
+msgstr "soldadua"
+
+#. people / job / teacher
+#. https://gcompris.net/incoming/lang/words_by_section.html#teacher
+msgctxt "teacher.ogg"
+msgid "teacher"
+msgstr "irakaslea"
+
+#. people / job / vet
+#. https://gcompris.net/incoming/lang/words_by_section.html#vet
+msgctxt "vet.ogg"
+msgid "vet"
+msgstr "albaitaria"
+
+#. people / job / worker
+#. https://gcompris.net/incoming/lang/words_by_section.html#worker
+msgctxt "worker.ogg"
+msgid "worker"
+msgstr "langilea, behargina"
+
+#. people / people / wedding
+#. https://gcompris.net/incoming/lang/words_by_section.html#wedding
+msgctxt "wedding.ogg"
+msgid "wedding"
+msgstr "ezkontza"
+
+#. people / people / boy
+#. https://gcompris.net/incoming/lang/words_by_section.html#boy
+msgctxt "boy.ogg"
+msgid "boy"
+msgstr "mutila"
+
+#. people / people / bride
+#. https://gcompris.net/incoming/lang/words_by_section.html#bride
+msgctxt "bride.ogg"
+msgid "bride"
+msgstr "andregaia"
+
+#. people / people / brother
+#. https://gcompris.net/incoming/lang/words_by_section.html#brother
+msgctxt "brother.ogg"
+msgid "brother"
+msgstr "neba/anaia"
+
+#. people / people / child
+#. https://gcompris.net/incoming/lang/words_by_section.html#child
+msgctxt "child.ogg"
+msgid "child"
+msgstr "umea"
+
+#. people / people / couple
+#. https://gcompris.net/incoming/lang/words_by_section.html#couple
+msgctxt "couple.ogg"
+msgid "couple"
+msgstr "bikotea"
+
+#. people / people / dad
+#. https://gcompris.net/incoming/lang/words_by_section.html#dad
+msgctxt "dad.ogg"
+msgid "dad"
+msgstr "aita"
+
+#. people / people / dwarf
+#. https://gcompris.net/incoming/lang/words_by_section.html#dwarf
+msgctxt "dwarf.ogg"
+msgid "dwarf"
+msgstr "nanoa"
+
+#. people / people / family
+#. https://gcompris.net/incoming/lang/words_by_section.html#family
+msgctxt "family.ogg"
+msgid "family"
+msgstr "familia"
+
+#. people / people / friend
+#. https://gcompris.net/incoming/lang/words_by_section.html#friend
+msgctxt "friend.ogg"
+msgid "friend"
+msgstr "laguna"
+
+#. people / people / girl
+#. https://gcompris.net/incoming/lang/words_by_section.html#girl
+msgctxt "girl.ogg"
+msgid "girl"
+msgstr "neska"
+
+#. people / people / grandmother
+#. https://gcompris.net/incoming/lang/words_by_section.html#grandmother
+msgctxt "grandmother.ogg"
+msgid "grandmother"
+msgstr "amona"
+
+#. people / people / husband
+#. https://gcompris.net/incoming/lang/words_by_section.html#husband
+msgctxt "husband.ogg"
+msgid "husband"
+msgstr "senarra"
+
+#. people / people / lady
+#. https://gcompris.net/incoming/lang/words_by_section.html#lady
+msgctxt "lady.ogg"
+msgid "lady"
+msgstr "andrea"
+
+#. people / people / man
+#. https://gcompris.net/incoming/lang/words_by_section.html#man
+msgctxt "man.ogg"
+msgid "man"
+msgstr "gizona"
+
+#. people / people / mate
+#. https://gcompris.net/incoming/lang/words_by_section.html#mate
+msgctxt "mate.ogg"
+msgid "mate"
+msgstr "kidea"
+
+#. people / people / mom
+#. https://gcompris.net/incoming/lang/words_by_section.html#mom
+msgctxt "mom.ogg"
+msgid "mom"
+msgstr "amatxo"
+
+#. people / people / mother
+#. https://gcompris.net/incoming/lang/words_by_section.html#mother
+msgctxt "mother.ogg"
+msgid "mother"
+msgstr "ama"
+
+#. people / people / pal
+#. https://gcompris.net/incoming/lang/words_by_section.html#pal
+msgctxt "pal.ogg"
+msgid "pal"
+msgstr "adiskidea"
+
+#. people / people / people
+#. https://gcompris.net/incoming/lang/words_by_section.html#people
+msgctxt "people.ogg"
+msgid "people"
+msgstr "jendea"
+
+#. people / people / sister
+#. https://gcompris.net/incoming/lang/words_by_section.html#sister
+msgctxt "sister.ogg"
+msgid "sister"
+msgstr "ahizpa/arreba"
+
+#. people / people / son
+#. https://gcompris.net/incoming/lang/words_by_section.html#son
+msgctxt "son.ogg"
+msgid "son"
+msgstr "semea"
+
+#. people / people / tribe
+#. https://gcompris.net/incoming/lang/words_by_section.html#tribe
+msgctxt "tribe.ogg"
+msgid "tribe"
+msgstr "tribua"
+
+#. people / people / twin boys
+#. https://gcompris.net/incoming/lang/words_by_section.html#twin%20boys
+msgctxt "twin_boys.ogg"
+msgid "twin boys"
+msgstr "mutil bikiak"
+
+#. people / people / twin girls
+#. https://gcompris.net/incoming/lang/words_by_section.html#twin%20girls
+msgctxt "twin_girls.ogg"
+msgid "twin girls"
+msgstr "neska bikiak"
+
+#. people / people / wife
+#. https://gcompris.net/incoming/lang/words_by_section.html#wife
+msgctxt "wife.ogg"
+msgid "wife"
+msgstr "emaztea"
+
+#. people / people / woman
+#. https://gcompris.net/incoming/lang/words_by_section.html#woman
+msgctxt "woman.ogg"
+msgid "woman"
+msgstr "emakumea"
+
+#. people / sport / athlete
+#. https://gcompris.net/incoming/lang/words_by_section.html#athlete
+msgctxt "athlete.ogg"
+msgid "athlete"
+msgstr "atleta"
+
+#. people / sport / ballet
+#. https://gcompris.net/incoming/lang/words_by_section.html#ballet
+msgctxt "ballet.ogg"
+msgid "ballet"
+msgstr "balleta"
+
+#. people / sport / cheer
+#. https://gcompris.net/incoming/lang/words_by_section.html#cheer
+msgctxt "cheer.ogg"
+msgid "cheer"
+msgstr "alaitasuna"
+
+#. people / sport / climb
+#. https://gcompris.net/incoming/lang/words_by_section.html#climb
+msgctxt "climb.ogg"
+msgid "climb"
+msgstr "eskalatzea"
+
+#. people / sport / dance
+#. https://gcompris.net/incoming/lang/words_by_section.html#dance
+msgctxt "dance.ogg"
+msgid "dance"
+msgstr "dantzatzea"
+
+#. people / sport / dive
+#. https://gcompris.net/incoming/lang/words_by_section.html#dive
+msgctxt "dive.ogg"
+msgid "dive"
+msgstr "urperatzea"
+
+#. people / sport / explore
+#. https://gcompris.net/incoming/lang/words_by_section.html#explore
+msgctxt "explore.ogg"
+msgid "explore"
+msgstr "arakatu"
+
+#. people / sport / golf
+#. https://gcompris.net/incoming/lang/words_by_section.html#golf
+msgctxt "golf.ogg"
+msgid "golf"
+msgstr "golfa"
+
+#. people / sport / hike
+#. https://gcompris.net/incoming/lang/words_by_section.html#hike
+msgctxt "hike.ogg"
+msgid "hike"
+msgstr "ibilaldia"
+
+#. people / sport / hit
+#. https://gcompris.net/incoming/lang/words_by_section.html#hit
+msgctxt "hit.ogg"
+msgid "hit"
+msgstr "astindu"
+
+#. people / sport / hockey
+#. https://gcompris.net/incoming/lang/words_by_section.html#hockey
+msgctxt "hockey.ogg"
+msgid "hockey"
+msgstr "hockeya"
+
+#. people / sport / hop
+#. https://gcompris.net/incoming/lang/words_by_section.html#hop
+msgctxt "hop.ogg"
+msgid "hop"
+msgstr "txingoka ibili"
+
+#. people / sport / jog
+#. https://gcompris.net/incoming/lang/words_by_section.html#jog
+msgctxt "jog.ogg"
+msgid "jog"
+msgstr "korrika egin"
+
+#. people / sport / judo
+#. https://gcompris.net/incoming/lang/words_by_section.html#judo
+msgctxt "judo.ogg"
+msgid "judo"
+msgstr "judoa"
+
+#. people / sport / lift
+#. https://gcompris.net/incoming/lang/words_by_section.html#lift
+msgctxt "lift.ogg"
+msgid "lift"
+msgstr "altxatu"
+
+#. people / sport / race
+#. https://gcompris.net/incoming/lang/words_by_section.html#race
+msgctxt "race.ogg"
+msgid "race"
+msgstr "lasterketa"
+
+#. people / sport / ran
+#. https://gcompris.net/incoming/lang/words_by_section.html#ran
+msgctxt "ran.ogg"
+msgid "ran"
+msgstr "korrika egin"
+
+#. people / sport / ride
+#. https://gcompris.net/incoming/lang/words_by_section.html#ride
+msgctxt "ride.ogg"
+msgid "ride"
+msgstr "bizikletan ibili"
+
+#. people / sport / rowing
+#. https://gcompris.net/incoming/lang/words_by_section.html#rowing
+msgctxt "rowing.ogg"
+msgid "rowing"
+msgstr "arrauna"
+
+#. people / sport / skate
+#. https://gcompris.net/incoming/lang/words_by_section.html#skate
+msgctxt "skate.ogg"
+msgid "skate"
+msgstr "irristagailua"
+
+#. people / sport / ski
+#. https://gcompris.net/incoming/lang/words_by_section.html#ski
+msgctxt "ski.ogg"
+msgid "ski"
+msgstr "eskia"
+
+#. people / sport / sport
+#. https://gcompris.net/incoming/lang/words_by_section.html#sport
+msgctxt "sport.ogg"
+msgid "sport"
+msgstr "kirola"
+
+#. people / sport / swim
+#. https://gcompris.net/incoming/lang/words_by_section.html#swim
+msgctxt "swim.ogg"
+msgid "swim"
+msgstr "igeri egin"
+
+#. people / sport / tennis
+#. https://gcompris.net/incoming/lang/words_by_section.html#tennis
+msgctxt "tennis.ogg"
+msgid "tennis"
+msgstr "tenisa"
+
+#. people / sport / throw
+#. https://gcompris.net/incoming/lang/words_by_section.html#throw
+msgctxt "throw.ogg"
+msgid "throw"
+msgstr "jaurtiketa"
+
+#. people / food / bread
+#. https://gcompris.net/incoming/lang/words_by_section.html#bread
+msgctxt "bread.ogg"
+msgid "bread"
+msgstr "ogia"
+
+#. people / food / bun
+#. https://gcompris.net/incoming/lang/words_by_section.html#bun
+msgctxt "bun.ogg"
+msgid "bun"
+msgstr "opila"
+
+#. people / food / butter
+#. https://gcompris.net/incoming/lang/words_by_section.html#butter
+msgctxt "butter.ogg"
+msgid "butter"
+msgstr "gurina"
+
+#. people / food / cake
+#. https://gcompris.net/incoming/lang/words_by_section.html#cake
+msgctxt "cake.ogg"
+msgid "cake"
+msgstr "pastela"
+
+#. people / food / candy
+#. https://gcompris.net/incoming/lang/words_by_section.html#candy
+msgctxt "candy.ogg"
+msgid "candy"
+msgstr "goxokia"
+
+#. people / food / cereal
+#. https://gcompris.net/incoming/lang/words_by_section.html#cereal
+msgctxt "cereal.ogg"
+msgid "cereal"
+msgstr "zereala"
+
+#. people / food / cheese
+#. https://gcompris.net/incoming/lang/words_by_section.html#cheese
+msgctxt "cheese.ogg"
+msgid "cheese"
+msgstr "gazta"
+
+#. people / food / chocolate
+#. https://gcompris.net/incoming/lang/words_by_section.html#chocolate
+msgctxt "chocolate.ogg"
+msgid "chocolate"
+msgstr "txokolatea"
+
+#. people / food / coffee
+#. https://gcompris.net/incoming/lang/words_by_section.html#coffee
+msgctxt "coffee.ogg"
+msgid "coffee"
+msgstr "kafea"
+
+#. people / food / cookie
+#. https://gcompris.net/incoming/lang/words_by_section.html#cookie
+msgctxt "cookie.ogg"
+msgid "cookie"
+msgstr "gaileta"
+
+#. people / food / crepe
+#. https://gcompris.net/incoming/lang/words_by_section.html#crepe
+msgctxt "crepe.ogg"
+msgid "crepe"
+msgstr "krepea"
+
+#. people / food / crumb
+#. https://gcompris.net/incoming/lang/words_by_section.html#crumb
+msgctxt "crumb.ogg"
+msgid "crumb"
+msgstr "ogi apurrak"
+
+#. people / food / crust
+#. https://gcompris.net/incoming/lang/words_by_section.html#crust
+msgctxt "crust.ogg"
+msgid "crust"
+msgstr "ogi azala"
+
+#. people / food / dessert
+#. https://gcompris.net/incoming/lang/words_by_section.html#dessert
+msgctxt "dessert.ogg"
+msgid "dessert"
+msgstr "postrea"
+
+#. people / food / doughnut
+#. https://gcompris.net/incoming/lang/words_by_section.html#doughnut
+msgctxt "doughnut.ogg"
+msgid "doughnut"
+msgstr "donutsa"
+
+#. people / food / drink
+#. https://gcompris.net/incoming/lang/words_by_section.html#drink
+msgctxt "drink.ogg"
+msgid "drink"
+msgstr "edaria"
+
+#. people / food / egg
+#. https://gcompris.net/incoming/lang/words_by_section.html#egg
+msgctxt "egg.ogg"
+msgid "egg"
+msgstr "arrautza"
+
+#. people / food / feast
+#. https://gcompris.net/incoming/lang/words_by_section.html#feast
+msgctxt "feast.ogg"
+msgid "feast"
+msgstr "otoruntza"
+
+#. people / food / flour
+#. https://gcompris.net/incoming/lang/words_by_section.html#flour
+msgctxt "flour.ogg"
+msgid "flour"
+msgstr "irina"
+
+#. people / food / fries
+#. https://gcompris.net/incoming/lang/words_by_section.html#fries
+msgctxt "fries.ogg"
+msgid "fries"
+msgstr "patata frijituak"
+
+#. people / food / fudge
+#. https://gcompris.net/incoming/lang/words_by_section.html#fudge
+msgctxt "fudge.ogg"
+msgid "fudge"
+msgstr "azukre gozokia"
+
+#. people / food / gum
+#. https://gcompris.net/incoming/lang/words_by_section.html#gum
+msgctxt "gum.ogg"
+msgid "gum"
+msgstr "txiklea"
+
+#. people / food / ham
+#. https://gcompris.net/incoming/lang/words_by_section.html#ham
+msgctxt "ham.ogg"
+msgid "ham"
+msgstr "urdaiazpikoa"
+
+#. people / food / hamburger
+#. https://gcompris.net/incoming/lang/words_by_section.html#hamburger
+msgctxt "hamburger.ogg"
+msgid "hamburger"
+msgstr "hanburgesa"
+
+#. people / food / hot dog
+#. https://gcompris.net/incoming/lang/words_by_section.html#hot%20dog
+msgctxt "hot_dog.ogg"
+msgid "hot dog"
+msgstr "saltxitxa-ogitarteko, hot dog"
+
+#. people / food / ice
+#. https://gcompris.net/incoming/lang/words_by_section.html#ice
+msgctxt "ice.ogg"
+msgid "ice"
+msgstr "izotza"
+
+#. people / food / jam
+#. https://gcompris.net/incoming/lang/words_by_section.html#jam
+msgctxt "jam.ogg"
+msgid "jam"
+msgstr "marmelada"
+
+#. people / food / jelly
+#. https://gcompris.net/incoming/lang/words_by_section.html#jelly
+msgctxt "jelly.ogg"
+msgid "jelly"
+msgstr "gelatina"
+
+#. people / food / juice
+#. https://gcompris.net/incoming/lang/words_by_section.html#juice
+msgctxt "juice.ogg"
+msgid "juice"
+msgstr "zukua"
+
+#. people / food / lemonade
+#. https://gcompris.net/incoming/lang/words_by_section.html#lemonade
+msgctxt "lemonade.ogg"
+msgid "lemonade"
+msgstr "limoi-edari, limonada"
+
+#. people / food / lunch
+#. https://gcompris.net/incoming/lang/words_by_section.html#lunch
+msgctxt "lunch.ogg"
+msgid "lunch"
+msgstr "bazkaria"
+
+#. people / food / mashed potatoes
+#. https://gcompris.net/incoming/lang/words_by_section.html#mashed%20potatoes
+msgctxt "mashed_potatoes.ogg"
+msgid "mashed potatoes"
+msgstr "patata purea"
+
+#. people / food / meal
+#. https://gcompris.net/incoming/lang/words_by_section.html#meal
+msgctxt "meal.ogg"
+msgid "meal"
+msgstr "otordua"
+
+#. people / food / meat
+#. https://gcompris.net/incoming/lang/words_by_section.html#meat
+msgctxt "meat.ogg"
+msgid "meat"
+msgstr "haragia"
+
+#. people / food / milk
+#. https://gcompris.net/incoming/lang/words_by_section.html#milk
+msgctxt "milk.ogg"
+msgid "milk"
+msgstr "esnea"
+
+#. people / food / pepper
+#. https://gcompris.net/incoming/lang/words_by_section.html#pepper
+msgctxt "pepper.ogg"
+msgid "pepper"
+msgstr "piperra"
+
+#. people / food / pie
+#. https://gcompris.net/incoming/lang/words_by_section.html#pie
+msgctxt "pie.ogg"
+msgid "pie"
+msgstr "tarta"
+
+#. people / food / pizza
+#. https://gcompris.net/incoming/lang/words_by_section.html#pizza
+msgctxt "pizza.ogg"
+msgid "pizza"
+msgstr "pizza"
+
+#. people / food / popcorn
+#. https://gcompris.net/incoming/lang/words_by_section.html#popcorn
+msgctxt "popcorn.ogg"
+msgid "popcorn"
+msgstr "krispeta"
+
+#. people / food / rice
+#. https://gcompris.net/incoming/lang/words_by_section.html#rice
+msgctxt "rice.ogg"
+msgid "rice"
+msgstr "arroza"
+
+#. people / food / roast
+#. https://gcompris.net/incoming/lang/words_by_section.html#roast
+msgctxt "roast.ogg"
+msgid "roast"
+msgstr "errekia"
+
+#. people / food / sandwich
+#. https://gcompris.net/incoming/lang/words_by_section.html#sandwich
+msgctxt "sandwich.ogg"
+msgid "sandwich"
+msgstr "ogitartekoa"
+
+#. people / food / sauce
+#. https://gcompris.net/incoming/lang/words_by_section.html#sauce
+msgctxt "sauce.ogg"
+msgid "sauce"
+msgstr "saltsa"
+
+#. people / food / sausage
+#. https://gcompris.net/incoming/lang/words_by_section.html#sausage
+msgctxt "sausage.ogg"
+msgid "sausage"
+msgstr "saltxitxa"
+
+#. people / food / snack
+#. https://gcompris.net/incoming/lang/words_by_section.html#snack
+msgctxt "snack.ogg"
+msgid "snack"
+msgstr "mokadua"
+
+#. people / food / soup
+#. https://gcompris.net/incoming/lang/words_by_section.html#soup
+msgctxt "soup.ogg"
+msgid "soup"
+msgstr "zopa"
+
+#. people / food / spaghetti
+#. https://gcompris.net/incoming/lang/words_by_section.html#spaghetti
+msgctxt "spaghetti.ogg"
+msgid "spaghetti"
+msgstr "espagetiak"
+
+#. people / food / spice
+#. https://gcompris.net/incoming/lang/words_by_section.html#spice
+msgctxt "spice.ogg"
+msgid "spice"
+msgstr "espezia"
+
+#. people / food / sprinkle
+#. https://gcompris.net/incoming/lang/words_by_section.html#sprinkle
+msgctxt "sprinkle.ogg"
+msgid "sprinkle"
+msgstr "zipriztindu"
+
+#. people / food / stew
+#. https://gcompris.net/incoming/lang/words_by_section.html#stew
+msgctxt "stew.ogg"
+msgid "stew"
+msgstr "erregosi"
+
+#. people / food / sugar
+#. https://gcompris.net/incoming/lang/words_by_section.html#sugar
+msgctxt "sugar.ogg"
+msgid "sugar"
+msgstr "azukrea"
+
+#. people / food / treat
+#. https://gcompris.net/incoming/lang/words_by_section.html#treat
+msgctxt "treat.ogg"
+msgid "treat"
+msgstr "gozokia"
+
+#. people / food / yogurt
+#. https://gcompris.net/incoming/lang/words_by_section.html#yogurt
+msgctxt "yogurt.ogg"
+msgid "yogurt"
+msgstr "jogurta"
+
+#. nature / animal / alligator
+#. https://gcompris.net/incoming/lang/words_by_section.html#alligator
+msgctxt "alligator.ogg"
+msgid "alligator"
+msgstr "kaimana"
+
+#. nature / animal / animal
+#. https://gcompris.net/incoming/lang/words_by_section.html#animal
+msgctxt "animal.ogg"
+msgid "animal"
+msgstr "animalia"
+
+#. nature / animal / ant
+#. https://gcompris.net/incoming/lang/words_by_section.html#ant
+msgctxt "ant.ogg"
+msgid "ant"
+msgstr "inurria, txindurria"
+
+#. nature / animal / anteater
+#. https://gcompris.net/incoming/lang/words_by_section.html#anteater
+msgctxt "anteater.ogg"
+msgid "anteater"
+msgstr "hartz inurrijalea"
+
+#. nature / animal / antelope
+#. https://gcompris.net/incoming/lang/words_by_section.html#antelope
+msgctxt "antelope.ogg"
+msgid "antelope"
+msgstr "antilopea"
+
+#. nature / animal / bait
+#. https://gcompris.net/incoming/lang/words_by_section.html#bait
+msgctxt "bait.ogg"
+msgid "bait"
+msgstr "beita"
+
+#. nature / animal / bat
+#. https://gcompris.net/incoming/lang/words_by_section.html#bat
+msgctxt "bat.ogg"
+msgid "bat"
+msgstr "saguzarra"
+
+#. nature / animal / bear
+#. https://gcompris.net/incoming/lang/words_by_section.html#bear
+msgctxt "bear.ogg"
+msgid "bear"
+msgstr "hartza"
+
+#. nature / animal / beaver
+#. https://gcompris.net/incoming/lang/words_by_section.html#beaver
+msgctxt "beaver.ogg"
+msgid "beaver"
+msgstr "kastorea"
+
+#. nature / animal / bee
+#. https://gcompris.net/incoming/lang/words_by_section.html#bee
+msgctxt "bee.ogg"
+msgid "bee"
+msgstr "erlea"
+
+#. nature / animal / beetle
+#. https://gcompris.net/incoming/lang/words_by_section.html#beetle
+msgctxt "beetle.ogg"
+msgid "beetle"
+msgstr "kakalardoa"
+
+#. nature / animal / bird
+#. https://gcompris.net/incoming/lang/words_by_section.html#bird
+msgctxt "bird.ogg"
+msgid "bird"
+msgstr "txoria"
+
+#. nature / animal / blackbird
+#. https://gcompris.net/incoming/lang/words_by_section.html#blackbird
+msgctxt "blackbird.ogg"
+msgid "blackbird"
+msgstr "zozoa"
+
+#. nature / animal / buffalo
+#. https://gcompris.net/incoming/lang/words_by_section.html#buffalo
+msgctxt "buffalo.ogg"
+msgid "buffalo"
+msgstr "bufaloa"
+
+#. nature / animal / bug
+#. https://gcompris.net/incoming/lang/words_by_section.html#bug
+msgctxt "bug.ogg"
+msgid "bug"
+msgstr "zomorroa"
+
+#. nature / animal / bull
+#. https://gcompris.net/incoming/lang/words_by_section.html#bull
+msgctxt "bull.ogg"
+msgid "bull"
+msgstr "zezena"
+
+#. nature / animal / butterfly
+#. https://gcompris.net/incoming/lang/words_by_section.html#butterfly
+msgctxt "butterfly.ogg"
+msgid "butterfly"
+msgstr "tximeleta, pinpilinpauxa"
+
+#. nature / animal / camel
+#. https://gcompris.net/incoming/lang/words_by_section.html#camel
+msgctxt "camel.ogg"
+msgid "camel"
+msgstr "gamelua"
+
+#. nature / animal / canary
+#. https://gcompris.net/incoming/lang/words_by_section.html#canary
+msgctxt "canary.ogg"
+msgid "canary"
+msgstr "kanarioa"
+
+#. nature / animal / cat
+#. https://gcompris.net/incoming/lang/words_by_section.html#cat
+msgctxt "cat.ogg"
+msgid "cat"
+msgstr "katua"
+
+#. nature / animal / caterpillar
+#. https://gcompris.net/incoming/lang/words_by_section.html#caterpillar
+msgctxt "caterpillar.ogg"
+msgid "caterpillar"
+msgstr "beldarra"
+
+#. nature / animal / female cat
+#. https://gcompris.net/incoming/lang/words_by_section.html#female%20cat
+msgctxt "cat_female.ogg"
+msgid "female cat"
+msgstr "katemea"
+
+#. nature / animal / centipede
+#. https://gcompris.net/incoming/lang/words_by_section.html#centipede
+msgctxt "centipede.ogg"
+msgid "centipede"
+msgstr "ehunzangoa"
+
+#. nature / animal / chameleon
+#. https://gcompris.net/incoming/lang/words_by_section.html#chameleon
+msgctxt "chameleon.ogg"
+msgid "chameleon"
+msgstr "kameleoia"
+
+#. nature / animal / chick
+#. https://gcompris.net/incoming/lang/words_by_section.html#chick
+msgctxt "chick.ogg"
+msgid "chick"
+msgstr "txita"
+
+#. nature / animal / chicken
+#. https://gcompris.net/incoming/lang/words_by_section.html#chicken
+msgctxt "chicken.ogg"
+msgid "chicken"
+msgstr "oiloa"
+
+#. nature / animal / chimp
+#. https://gcompris.net/incoming/lang/words_by_section.html#chimp
+msgctxt "chimp.ogg"
+msgid "chimp"
+msgstr "txinpantzea"
+
+#. nature / animal / clam
+#. https://gcompris.net/incoming/lang/words_by_section.html#clam
+msgctxt "clam.ogg"
+msgid "clam"
+msgstr "txirla"
+
+#. nature / animal / claw
+#. https://gcompris.net/incoming/lang/words_by_section.html#claw
+msgctxt "claw.ogg"
+msgid "claw"
+msgstr "atzaparra"
+
+#. nature / animal / cobra
+#. https://gcompris.net/incoming/lang/words_by_section.html#cobra
+msgctxt "cobra.ogg"
+msgid "cobra"
+msgstr "kobra"
+
+#. nature / animal / cod
+#. https://gcompris.net/incoming/lang/words_by_section.html#cod
+msgctxt "cod.ogg"
+msgid "cod"
+msgstr "makailao, bakailao"
+
+#. nature / animal / colt
+#. https://gcompris.net/incoming/lang/words_by_section.html#colt
+msgctxt "colt.ogg"
+msgid "colt"
+msgstr "moxala"
+
+#. nature / animal / cow
+#. https://gcompris.net/incoming/lang/words_by_section.html#cow
+msgctxt "cow.ogg"
+msgid "cow"
+msgstr "behia"
+
+#. nature / animal / crab
+#. https://gcompris.net/incoming/lang/words_by_section.html#crab
+msgctxt "crab.ogg"
+msgid "crab"
+msgstr "karramarroa"
+
+#. nature / animal / crocodile
+#. https://gcompris.net/incoming/lang/words_by_section.html#crocodile
+msgctxt "crocodile.ogg"
+msgid "crocodile"
+msgstr "krokodiloa"
+
+#. nature / animal / crow
+#. https://gcompris.net/incoming/lang/words_by_section.html#crow
+msgctxt "crow.ogg"
+msgid "crow"
+msgstr "belea"
+
+#. nature / animal / deer
+#. https://gcompris.net/incoming/lang/words_by_section.html#deer
+msgctxt "deer.ogg"
+msgid "deer"
+msgstr "oreina"
+
+#. nature / animal / den
+#. https://gcompris.net/incoming/lang/words_by_section.html#den
+msgctxt "den.ogg"
+msgid "den"
+msgstr "gordelekua"
+
+#. nature / animal / doe
+#. https://gcompris.net/incoming/lang/words_by_section.html#doe
+msgctxt "doe.ogg"
+msgid "doe"
+msgstr "adarzabala"
+
+#. nature / animal / dog
+#. https://gcompris.net/incoming/lang/words_by_section.html#dog
+msgctxt "dog.ogg"
+msgid "dog"
+msgstr "zakurra"
+
+#. nature / animal / dolphin
+#. https://gcompris.net/incoming/lang/words_by_section.html#dolphin
+msgctxt "dolphin.ogg"
+msgid "dolphin"
+msgstr "izurdea"
+
+#. nature / animal / dove
+#. https://gcompris.net/incoming/lang/words_by_section.html#dove
+msgctxt "dove.ogg"
+msgid "dove"
+msgstr "usoa"
+
+#. nature / animal / dragon
+#. https://gcompris.net/incoming/lang/words_by_section.html#dragon
+msgctxt "dragon.ogg"
+msgid "dragon"
+msgstr "herensugea"
+
+#. nature / animal / dragonfly
+#. https://gcompris.net/incoming/lang/words_by_section.html#dragonfly
+msgctxt "dragonfly.ogg"
+msgid "dragonfly"
+msgstr "burruntzia, sorgin-orratza"
+
+#. nature / animal / duck
+#. https://gcompris.net/incoming/lang/words_by_section.html#duck
+msgctxt "duck.ogg"
+msgid "duck"
+msgstr "ahatea"
+
+#. nature / animal / duck mother
+#. https://gcompris.net/incoming/lang/words_by_section.html#duck%20mother
+msgctxt "duck_mother.ogg"
+msgid "duck mother"
+msgstr "ahate ama"
+
+#. nature / animal / eagle
+#. https://gcompris.net/incoming/lang/words_by_section.html#eagle
+msgctxt "eagle.ogg"
+msgid "eagle"
+msgstr "arranoa"
+
+#. nature / animal / elk
+#. https://gcompris.net/incoming/lang/words_by_section.html#elk
+msgctxt "elk.ogg"
+msgid "elk"
+msgstr "altzea"
+
+#. nature / animal / fawn
+#. https://gcompris.net/incoming/lang/words_by_section.html#fawn
+msgctxt "fawn.ogg"
+msgid "fawn"
+msgstr "oreinkumea"
+
+#. nature / animal / feather
+#. https://gcompris.net/incoming/lang/words_by_section.html#feather
+msgctxt "feather.ogg"
+msgid "feather"
+msgstr "luma"
+
+#. nature / animal / fin
+#. https://gcompris.net/incoming/lang/words_by_section.html#fin
+msgctxt "fin.ogg"
+msgid "fin"
+msgstr "hegatsa"
+
+#. nature / animal / fish
+#. https://gcompris.net/incoming/lang/words_by_section.html#fish
+msgctxt "fish.ogg"
+msgid "fish"
+msgstr "arraina"
+
+#. nature / animal / flamingo
+#. https://gcompris.net/incoming/lang/words_by_section.html#flamingo
+msgctxt "flamingo.ogg"
+msgid "flamingo"
+msgstr "flamenkoa"
+
+#. nature / animal / flies
+#. https://gcompris.net/incoming/lang/words_by_section.html#flies
+msgctxt "flies.ogg"
+msgid "flies"
+msgstr "euliak"
+
+#. nature / animal / fox
+#. https://gcompris.net/incoming/lang/words_by_section.html#fox
+msgctxt "fox.ogg"
+msgid "fox"
+msgstr "azeria"
+
+#. nature / animal / frog
+#. https://gcompris.net/incoming/lang/words_by_section.html#frog
+msgctxt "frog.ogg"
+msgid "frog"
+msgstr "igela"
+
+#. nature / animal / fur
+#. https://gcompris.net/incoming/lang/words_by_section.html#fur
+msgctxt "fur.ogg"
+msgid "fur"
+msgstr "ilajea"
+
+#. nature / animal / giraffe
+#. https://gcompris.net/incoming/lang/words_by_section.html#giraffe
+msgctxt "giraffe.ogg"
+msgid "giraffe"
+msgstr "lepoluzea"
+
+#. nature / animal / goat
+#. https://gcompris.net/incoming/lang/words_by_section.html#goat
+msgctxt "goat.ogg"
+msgid "goat"
+msgstr "ahuntza"
+
+#. nature / animal / goose
+#. https://gcompris.net/incoming/lang/words_by_section.html#goose
+msgctxt "goose.ogg"
+msgid "goose"
+msgstr "antzara"
+
+#. nature / animal / gorilla
+#. https://gcompris.net/incoming/lang/words_by_section.html#gorilla
+msgctxt "gorilla.ogg"
+msgid "gorilla"
+msgstr "gorila"
+
+#. nature / animal / guinea pig
+#. https://gcompris.net/incoming/lang/words_by_section.html#guinea%20pig
+msgctxt "guinea_pig.ogg"
+msgid "guinea pig"
+msgstr "akuria"
+
+#. nature / animal / hedgehog
+#. https://gcompris.net/incoming/lang/words_by_section.html#hedgehog
+msgctxt "hedgehog.ogg"
+msgid "hedgehog"
+msgstr "trikua"
+
+#. nature / animal / hen
+#. https://gcompris.net/incoming/lang/words_by_section.html#hen
+msgctxt "hen.ogg"
+msgid "hen"
+msgstr "oiloa"
+
+#. nature / animal / herd
+#. https://gcompris.net/incoming/lang/words_by_section.html#herd
+msgctxt "herd.ogg"
+msgid "herd"
+msgstr "artaldea"
+
+#. nature / animal / hippopotamus
+#. https://gcompris.net/incoming/lang/words_by_section.html#hippopotamus
+msgctxt "hippopotamus.ogg"
+msgid "hippopotamus"
+msgstr "hipopotamoa"
+
+#. nature / animal / hive
+#. https://gcompris.net/incoming/lang/words_by_section.html#hive
+msgctxt "hive.ogg"
+msgid "hive"
+msgstr "erlauntza"
+
+#. nature / animal / horse
+#. https://gcompris.net/incoming/lang/words_by_section.html#horse
+msgctxt "horse.ogg"
+msgid "horse"
+msgstr "zaldia"
+
+#. nature / animal / hound
+#. https://gcompris.net/incoming/lang/words_by_section.html#hound
+msgctxt "hound.ogg"
+msgid "hound"
+msgstr "ehiza-txakurra"
+
+#. nature / animal / hummingbird
+#. https://gcompris.net/incoming/lang/words_by_section.html#hummingbird
+msgctxt "hummingbird.ogg"
+msgid "hummingbird"
+msgstr "kolibria"
+
+#. nature / animal / hyena
+#. https://gcompris.net/incoming/lang/words_by_section.html#hyena
+msgctxt "hyena.ogg"
+msgid "hyena"
+msgstr "hiena"
+
+#. nature / animal / iguana
+#. https://gcompris.net/incoming/lang/words_by_section.html#iguana
+msgctxt "iguana.ogg"
+msgid "iguana"
+msgstr "iguana"
+
+#. nature / animal / jaguar
+#. https://gcompris.net/incoming/lang/words_by_section.html#jaguar
+msgctxt "jaguar.ogg"
+msgid "jaguar"
+msgstr "jaguarra"
+
+#. nature / animal / jay
+#. https://gcompris.net/incoming/lang/words_by_section.html#jay
+msgctxt "jay.ogg"
+msgid "jay"
+msgstr "eskinosoa"
+
+#. nature / animal / jellyfish
+#. https://gcompris.net/incoming/lang/words_by_section.html#jellyfish
+msgctxt "jellyfish.ogg"
+msgid "jellyfish"
+msgstr "marmoka"
+
+#. nature / animal / kangaroo
+#. https://gcompris.net/incoming/lang/words_by_section.html#kangaroo
+msgctxt "kangaroo.ogg"
+msgid "kangaroo"
+msgstr "kangurua"
+
+#. nature / animal / kitten
+#. https://gcompris.net/incoming/lang/words_by_section.html#kitten
+msgctxt "kitten.ogg"
+msgid "kitten"
+msgstr "katakumea"
+
+#. nature / animal / koala
+#. https://gcompris.net/incoming/lang/words_by_section.html#koala
+msgctxt "koala.ogg"
+msgid "koala"
+msgstr "koala"
+
+#. nature / animal / ladybug
+#. https://gcompris.net/incoming/lang/words_by_section.html#ladybug
+msgctxt "ladybug.ogg"
+msgid "ladybug"
+msgstr "marigorringoa"
+
+#. nature / animal / lama
+#. https://gcompris.net/incoming/lang/words_by_section.html#lama
+msgctxt "lama.ogg"
+msgid "lama"
+msgstr "llama"
+
+#. nature / animal / lamb
+#. https://gcompris.net/incoming/lang/words_by_section.html#lamb
+msgctxt "lamb.ogg"
+msgid "lamb"
+msgstr "arkumea"
+
+#. nature / animal / lemur
+#. https://gcompris.net/incoming/lang/words_by_section.html#lemur
+msgctxt "lemur.ogg"
+msgid "lemur"
+msgstr "lemurra"
+
+#. nature / animal / leopard
+#. https://gcompris.net/incoming/lang/words_by_section.html#leopard
+msgctxt "leopard.ogg"
+msgid "leopard"
+msgstr "lehoinabarra"
+
+#. nature / animal / lion
+#. https://gcompris.net/incoming/lang/words_by_section.html#lion
+msgctxt "lion.ogg"
+msgid "lion"
+msgstr "lehoia"
+
+#. nature / animal / lion cub
+#. https://gcompris.net/incoming/lang/words_by_section.html#lion%20cub
+msgctxt "lion_cub.ogg"
+msgid "lion cub"
+msgstr "lehoikumea"
+
+#. nature / animal / lizard
+#. https://gcompris.net/incoming/lang/words_by_section.html#lizard
+msgctxt "lizard.ogg"
+msgid "lizard"
+msgstr "muskerra"
+
+#. nature / animal / lobster
+#. https://gcompris.net/incoming/lang/words_by_section.html#lobster
+msgctxt "lobster.ogg"
+msgid "lobster"
+msgstr "otarraina"
+
+#. nature / animal / magpie
+#. https://gcompris.net/incoming/lang/words_by_section.html#magpie
+msgctxt "magpie.ogg"
+msgid "magpie"
+msgstr "mika"
+
+#. nature / animal / mane
+#. https://gcompris.net/incoming/lang/words_by_section.html#mane
+msgctxt "mane.ogg"
+msgid "mane"
+msgstr "adatsa"
+
+#. nature / animal / mice
+#. https://gcompris.net/incoming/lang/words_by_section.html#mice
+msgctxt "mice.ogg"
+msgid "mice"
+msgstr "saguak"
+
+#. nature / animal / mole
+#. https://gcompris.net/incoming/lang/words_by_section.html#mole
+msgctxt "mole.ogg"
+msgid "mole"
+msgstr "satorra"
+
+#. nature / animal / moose
+#. https://gcompris.net/incoming/lang/words_by_section.html#moose
+msgctxt "moose.ogg"
+msgid "moose"
+msgstr "altzea"
+
+#. nature / animal / mosquito
+#. https://gcompris.net/incoming/lang/words_by_section.html#mosquito
+msgctxt "mosquito.ogg"
+msgid "mosquito"
+msgstr "eltxoa"
+
+#. nature / animal / mouse
+#. https://gcompris.net/incoming/lang/words_by_section.html#mouse
+msgctxt "mouse.ogg"
+msgid "mouse"
+msgstr "sagua"
+
+#. nature / animal / mule
+#. https://gcompris.net/incoming/lang/words_by_section.html#mule
+msgctxt "mule.ogg"
+msgid "mule"
+msgstr "mandoa"
+
+#. nature / animal / opossum
+#. https://gcompris.net/incoming/lang/words_by_section.html#opossum
+msgctxt "opossum.ogg"
+msgid "opossum"
+msgstr "zarigueia"
+
+#. nature / animal / ostrich
+#. https://gcompris.net/incoming/lang/words_by_section.html#ostrich
+msgctxt "ostrich.ogg"
+msgid "ostrich"
+msgstr "ostruka"
+
+#. nature / animal / otter
+#. https://gcompris.net/incoming/lang/words_by_section.html#otter
+msgctxt "otter.ogg"
+msgid "otter"
+msgstr "igaraba"
+
+#. nature / animal / owl
+#. https://gcompris.net/incoming/lang/words_by_section.html#owl
+msgctxt "owl.ogg"
+msgid "owl"
+msgstr "hontza"
+
+#. nature / animal / ox
+#. https://gcompris.net/incoming/lang/words_by_section.html#ox
+msgctxt "ox.ogg"
+msgid "ox"
+msgstr "idia"
+
+#. nature / animal / oyster
+#. https://gcompris.net/incoming/lang/words_by_section.html#oyster
+msgctxt "oyster.ogg"
+msgid "oyster"
+msgstr "ostra"
+
+#. nature / animal / panda
+#. https://gcompris.net/incoming/lang/words_by_section.html#panda
+msgctxt "panda.ogg"
+msgid "panda"
+msgstr "panda"
+
+#. nature / animal / panther
+#. https://gcompris.net/incoming/lang/words_by_section.html#panther
+msgctxt "panther.ogg"
+msgid "panther"
+msgstr "pantera"
+
+#. nature / animal / parakeet
+#. https://gcompris.net/incoming/lang/words_by_section.html#parakeet
+msgctxt "parakeet.ogg"
+msgid "parakeet"
+msgstr "perikitoa"
+
+#. nature / animal / parrot
+#. https://gcompris.net/incoming/lang/words_by_section.html#parrot
+msgctxt "parrot.ogg"
+msgid "parrot"
+msgstr "loroa"
+
+#. nature / animal / paw
+#. https://gcompris.net/incoming/lang/words_by_section.html#paw
+msgctxt "paw.ogg"
+msgid "paw"
+msgstr "erpea"
+
+#. nature / animal / peacock
+#. https://gcompris.net/incoming/lang/words_by_section.html#peacock
+msgctxt "peacock.ogg"
+msgid "peacock"
+msgstr "pauma"
+
+#. nature / animal / pelican
+#. https://gcompris.net/incoming/lang/words_by_section.html#pelican
+msgctxt "pelican.ogg"
+msgid "pelican"
+msgstr "pelikanoa"
+
+#. nature / animal / pet
+#. https://gcompris.net/incoming/lang/words_by_section.html#pet
+msgctxt "pet.ogg"
+msgid "pet"
+msgstr "maskota"
+
+#. nature / animal / pig
+#. https://gcompris.net/incoming/lang/words_by_section.html#pig
+msgctxt "pig.ogg"
+msgid "pig"
+msgstr "txerria"
+
+#. nature / animal / pigeon
+#. https://gcompris.net/incoming/lang/words_by_section.html#pigeon
+msgctxt "pigeon.ogg"
+msgid "pigeon"
+msgstr "usoa"
+
+#. nature / animal / piranha
+#. https://gcompris.net/incoming/lang/words_by_section.html#piranha
+msgctxt "piranha.ogg"
+msgid "piranha"
+msgstr "piraña"
+
+#. nature / animal / pony
+#. https://gcompris.net/incoming/lang/words_by_section.html#pony
+msgctxt "pony.ogg"
+msgid "pony"
+msgstr "poneya"
+
+#. nature / animal / pug
+#. https://gcompris.net/incoming/lang/words_by_section.html#pug
+msgctxt "pug.ogg"
+msgid "pug"
+msgstr "puga"
+
+#. nature / animal / puppy
+#. https://gcompris.net/incoming/lang/words_by_section.html#puppy
+msgctxt "puppy.ogg"
+msgid "puppy"
+msgstr "txakurkumea"
+
+#. nature / animal / rabbit
+#. https://gcompris.net/incoming/lang/words_by_section.html#rabbit
+msgctxt "rabbit.ogg"
+msgid "rabbit"
+msgstr "untxia"
+
+#. nature / animal / baby rabbit
+#. https://gcompris.net/incoming/lang/words_by_section.html#baby%20rabbit
+msgctxt "rabbit_baby.ogg"
+msgid "baby rabbit"
+msgstr "untxikumea"
+
+#. nature / animal / rat
+#. https://gcompris.net/incoming/lang/words_by_section.html#rat
+msgctxt "rat.ogg"
+msgid "rat"
+msgstr "arratoia"
+
+#. nature / animal / reptile
+#. https://gcompris.net/incoming/lang/words_by_section.html#reptile
+msgctxt "reptile.ogg"
+msgid "reptile"
+msgstr "narrastia"
+
+#. nature / animal / rhinoceros
+#. https://gcompris.net/incoming/lang/words_by_section.html#rhinoceros
+msgctxt "rhinoceros.ogg"
+msgid "rhinoceros"
+msgstr "errinozeroa"
+
+#. nature / animal / salamander
+#. https://gcompris.net/incoming/lang/words_by_section.html#salamander
+msgctxt "salamander.ogg"
+msgid "salamander"
+msgstr "arrabioa"
+
+#. nature / animal / salmon
+#. https://gcompris.net/incoming/lang/words_by_section.html#salmon
+msgctxt "salmon.ogg"
+msgid "salmon"
+msgstr "izokina"
+
+#. nature / animal / scorpion
+#. https://gcompris.net/incoming/lang/words_by_section.html#scorpion
+msgctxt "scorpion.ogg"
+msgid "scorpion"
+msgstr "eskorpioia"
+
+#. nature / animal / shark
+#. https://gcompris.net/incoming/lang/words_by_section.html#shark
+msgctxt "shark.ogg"
+msgid "shark"
+msgstr "marrazoa"
+
+#. nature / animal / sheep
+#. https://gcompris.net/incoming/lang/words_by_section.html#sheep
+msgctxt "sheep.ogg"
+msgid "sheep"
+msgstr "ardia"
+
+#. nature / animal / shell
+#. https://gcompris.net/incoming/lang/words_by_section.html#shell
+msgctxt "shell.ogg"
+msgid "shell"
+msgstr "maskorra"
+
+#. nature / animal / shrimp
+#. https://gcompris.net/incoming/lang/words_by_section.html#shrimp
+msgctxt "shrimp.ogg"
+msgid "shrimp"
+msgstr "izkira"
+
+#. nature / animal / skunk
+#. https://gcompris.net/incoming/lang/words_by_section.html#skunk
+msgctxt "skunk.ogg"
+msgid "skunk"
+msgstr "mofeta"
+
+#. nature / animal / slime
+#. https://gcompris.net/incoming/lang/words_by_section.html#slime
+msgctxt "slime.ogg"
+msgid "slime"
+msgstr "lerdea"
+
+#. nature / animal / sloth
+#. https://gcompris.net/incoming/lang/words_by_section.html#sloth
+msgctxt "sloth.ogg"
+msgid "sloth"
+msgstr "nagia"
+
+#. nature / animal / slug
+#. https://gcompris.net/incoming/lang/words_by_section.html#slug
+msgctxt "slug.ogg"
+msgid "slug"
+msgstr "barea"
+
+#. nature / animal / snail
+#. https://gcompris.net/incoming/lang/words_by_section.html#snail
+msgctxt "snail.ogg"
+msgid "snail"
+msgstr "barraskiloa"
+
+#. nature / animal / snake
+#. https://gcompris.net/incoming/lang/words_by_section.html#snake
+msgctxt "snake.ogg"
+msgid "snake"
+msgstr "sugea"
+
+#. nature / animal / sole
+#. https://gcompris.net/incoming/lang/words_by_section.html#sole
+msgctxt "sole.ogg"
+msgid "sole"
+msgstr "mihi-arraina"
+
+#. nature / animal / sparrow
+#. https://gcompris.net/incoming/lang/words_by_section.html#sparrow
+msgctxt "sparrow.ogg"
+msgid "sparrow"
+msgstr "txolarrea"
+
+#. nature / animal / spider
+#. https://gcompris.net/incoming/lang/words_by_section.html#spider
+msgctxt "spider.ogg"
+msgid "spider"
+msgstr "armiarma"
+
+#. nature / animal / spike
+#. https://gcompris.net/incoming/lang/words_by_section.html#spike
+msgctxt "spike.ogg"
+msgid "spike"
+msgstr "iltzea"
+
+#. nature / animal / squid
+#. https://gcompris.net/incoming/lang/words_by_section.html#squid
+msgctxt "squid.ogg"
+msgid "squid"
+msgstr "txibia, txipiroia"
+
+#. nature / animal / squirrel
+#. https://gcompris.net/incoming/lang/words_by_section.html#squirrel
+msgctxt "squirrel.ogg"
+msgid "squirrel"
+msgstr "urtxintxa, katagorria"
+
+#. nature / animal / starfish
+#. https://gcompris.net/incoming/lang/words_by_section.html#starfish
+msgctxt "starfish.ogg"
+msgid "starfish"
+msgstr "itsas izarra"
+
+#. nature / animal / swan
+#. https://gcompris.net/incoming/lang/words_by_section.html#swan
+msgctxt "swan.ogg"
+msgid "swan"
+msgstr "beltxarga, zisnea"
+
+#. nature / animal / tadpole
+#. https://gcompris.net/incoming/lang/words_by_section.html#tadpole
+msgctxt "tadpole.ogg"
+msgid "tadpole"
+msgstr "zapaburua, txalburua"
+
+#. nature / animal / tail
+#. https://gcompris.net/incoming/lang/words_by_section.html#tail
+msgctxt "tail.ogg"
+msgid "tail"
+msgstr "buztana"
+
+#. nature / animal / tick
+#. https://gcompris.net/incoming/lang/words_by_section.html#tick
+msgctxt "tick.ogg"
+msgid "tick"
+msgstr "akaina"
+
+#. nature / animal / tiger
+#. https://gcompris.net/incoming/lang/words_by_section.html#tiger
+msgctxt "tiger.ogg"
+msgid "tiger"
+msgstr "tigrea"
+
+#. nature / animal / toad
+#. https://gcompris.net/incoming/lang/words_by_section.html#toad
+msgctxt "toad.ogg"
+msgid "toad"
+msgstr "apoa"
+
+#. nature / animal / turkey
+#. https://gcompris.net/incoming/lang/words_by_section.html#turkey
+msgctxt "turkey.ogg"
+msgid "turkey"
+msgstr "indioilarra"
+
+#. nature / animal / turtle
+#. https://gcompris.net/incoming/lang/words_by_section.html#turtle
+msgctxt "turtle.ogg"
+msgid "turtle"
+msgstr "dortoka"
+
+#. nature / animal / tusk
+#. https://gcompris.net/incoming/lang/words_by_section.html#tusk
+msgctxt "tusk.ogg"
+msgid "tusk"
+msgstr "betortza"
+
+#. nature / animal / viper
+#. https://gcompris.net/incoming/lang/words_by_section.html#viper
+msgctxt "viper.ogg"
+msgid "viper"
+msgstr "sugegorria"
+
+#. nature / animal / vulture
+#. https://gcompris.net/incoming/lang/words_by_section.html#vulture
+msgctxt "vulture.ogg"
+msgid "vulture"
+msgstr "saia"
+
+#. nature / animal / wasp
+#. https://gcompris.net/incoming/lang/words_by_section.html#wasp
+msgctxt "wasp.ogg"
+msgid "wasp"
+msgstr "liztorra"
+
+#. nature / animal / whale
+#. https://gcompris.net/incoming/lang/words_by_section.html#whale
+msgctxt "whale.ogg"
+msgid "whale"
+msgstr "balea"
+
+#. nature / animal / wing
+#. https://gcompris.net/incoming/lang/words_by_section.html#wing
+msgctxt "wing.ogg"
+msgid "wing"
+msgstr "hegala"
+
+#. nature / animal / wolf
+#. https://gcompris.net/incoming/lang/words_by_section.html#wolf
+msgctxt "wolf.ogg"
+msgid "wolf"
+msgstr "otsoa"
+
+#. nature / animal / zebra
+#. https://gcompris.net/incoming/lang/words_by_section.html#zebra
+msgctxt "zebra.ogg"
+msgid "zebra"
+msgstr "zebra"
+
+#. nature / fruit / apple
+#. https://gcompris.net/incoming/lang/words_by_section.html#apple
+msgctxt "apple.ogg"
+msgid "apple"
+msgstr "sagarra"
+
+#. nature / fruit / apricot
+#. https://gcompris.net/incoming/lang/words_by_section.html#apricot
+msgctxt "apricot.ogg"
+msgid "apricot"
+msgstr "abrikota"
+
+#. nature / fruit / blackberry
+#. https://gcompris.net/incoming/lang/words_by_section.html#blackberry
+msgctxt "blackberry.ogg"
+msgid "blackberry"
+msgstr "masusta"
+
+#. nature / fruit / blueberry
+#. https://gcompris.net/incoming/lang/words_by_section.html#blueberry
+msgctxt "blueberry.ogg"
+msgid "blueberry"
+msgstr "ahabia"
+
+#. nature / fruit / cacao
+#. https://gcompris.net/incoming/lang/words_by_section.html#cacao
+msgctxt "cacao.ogg"
+msgid "cacao"
+msgstr "kakaoa"
+
+#. nature / fruit / cherry
+#. https://gcompris.net/incoming/lang/words_by_section.html#cherry
+msgctxt "cherry.ogg"
+msgid "cherry"
+msgstr "gerezia"
+
+#. nature / fruit / coconut
+#. https://gcompris.net/incoming/lang/words_by_section.html#coconut
+msgctxt "coconut.ogg"
+msgid "coconut"
+msgstr "kokoa"
+
+#. nature / fruit / date fruit
+#. https://gcompris.net/incoming/lang/words_by_section.html#date%20fruit
+msgctxt "date_fruit.ogg"
+msgid "date fruit"
+msgstr "datila"
+
+#. nature / fruit / fig
+#. https://gcompris.net/incoming/lang/words_by_section.html#fig
+msgctxt "fig.ogg"
+msgid "fig"
+msgstr "pikua"
+
+#. nature / fruit / fruit
+#. https://gcompris.net/incoming/lang/words_by_section.html#fruit
+msgctxt "fruit.ogg"
+msgid "fruit"
+msgstr "fruta"
+
+#. nature / fruit / grape
+#. https://gcompris.net/incoming/lang/words_by_section.html#grape
+msgctxt "grape.ogg"
+msgid "grape"
+msgstr "mahatsa"
+
+#. nature / fruit / grapefruit
+#. https://gcompris.net/incoming/lang/words_by_section.html#grapefruit
+msgctxt "grapefruit.ogg"
+msgid "grapefruit"
+msgstr "arabisagarra, pomeloa"
+
+#. nature / fruit / kernel
+#. https://gcompris.net/incoming/lang/words_by_section.html#kernel
+msgctxt "kernel.ogg"
+msgid "kernel"
+msgstr "muina"
+
+#. nature / fruit / kiwi
+#. https://gcompris.net/incoming/lang/words_by_section.html#kiwi
+msgctxt "kiwi.ogg"
+msgid "kiwi"
+msgstr "kiwia"
+
+#. nature / fruit / lemon
+#. https://gcompris.net/incoming/lang/words_by_section.html#lemon
+msgctxt "lemon.ogg"
+msgid "lemon"
+msgstr "limoia"
+
+#. nature / fruit / lime
+#. https://gcompris.net/incoming/lang/words_by_section.html#lime
+msgctxt "lime.ogg"
+msgid "lime"
+msgstr "lima"
+
+#. nature / fruit / mango
+#. https://gcompris.net/incoming/lang/words_by_section.html#mango
+msgctxt "mango.ogg"
+msgid "mango"
+msgstr "mangoa"
+
+#. nature / fruit / melon
+#. https://gcompris.net/incoming/lang/words_by_section.html#melon
+msgctxt "melon.ogg"
+msgid "melon"
+msgstr "meloia"
+
+#. nature / fruit / orange
+#. https://gcompris.net/incoming/lang/words_by_section.html#orange
+msgctxt "orange.ogg"
+msgid "orange"
+msgstr "laranja"
+
+#. nature / fruit / papaya
+#. https://gcompris.net/incoming/lang/words_by_section.html#papaya
+msgctxt "papaya.ogg"
+msgid "papaya"
+msgstr "papaia"
+
+#. nature / fruit / peach
+#. https://gcompris.net/incoming/lang/words_by_section.html#peach
+msgctxt "peach.ogg"
+msgid "peach"
+msgstr "mertxika"
+
+#. nature / fruit / pear
+#. https://gcompris.net/incoming/lang/words_by_section.html#pear
+msgctxt "pear.ogg"
+msgid "pear"
+msgstr "madaria, udarea"
+
+#. nature / fruit / plum
+#. https://gcompris.net/incoming/lang/words_by_section.html#plum
+msgctxt "plum.ogg"
+msgid "plum"
+msgstr "arana, okarana"
+
+#. nature / fruit / raspberry
+#. https://gcompris.net/incoming/lang/words_by_section.html#raspberry
+msgctxt "raspberry.ogg"
+msgid "raspberry"
+msgstr "mugurdia"
+
+#. nature / fruit / strawberry
+#. https://gcompris.net/incoming/lang/words_by_section.html#strawberry
+msgctxt "strawberry.ogg"
+msgid "strawberry"
+msgstr "marrubia"
+
+#. nature / nature / bay
+#. https://gcompris.net/incoming/lang/words_by_section.html#bay
+msgctxt "bay.ogg"
+msgid "bay"
+msgstr "badia"
+
+#. nature / nature / beach
+#. https://gcompris.net/incoming/lang/words_by_section.html#beach
+msgctxt "beach.ogg"
+msgid "beach"
+msgstr "hondartza"
+
+#. nature / nature / canyon
+#. https://gcompris.net/incoming/lang/words_by_section.html#canyon
+msgctxt "canyon.ogg"
+msgid "canyon"
+msgstr "arroila"
+
+#. nature / nature / cave
+#. https://gcompris.net/incoming/lang/words_by_section.html#cave
+msgctxt "cave.ogg"
+msgid "cave"
+msgstr "haitzuloa"
+
+#. nature / nature / cavern
+#. https://gcompris.net/incoming/lang/words_by_section.html#cavern
+msgctxt "cavern.ogg"
+msgid "cavern"
+msgstr "leizea"
+
+#. nature / nature / cliff
+#. https://gcompris.net/incoming/lang/words_by_section.html#cliff
+msgctxt "cliff.ogg"
+msgid "cliff"
+msgstr "labarra"
+
+#. nature / nature / cloud
+#. https://gcompris.net/incoming/lang/words_by_section.html#cloud
+msgctxt "cloud.ogg"
+msgid "cloud"
+msgstr "hodeia"
+
+#. nature / nature / cloudy
+#. https://gcompris.net/incoming/lang/words_by_section.html#cloudy
+msgctxt "cloudy.ogg"
+msgid "cloudy"
+msgstr "hodeitsu"
+
+#. nature / nature / coast
+#. https://gcompris.net/incoming/lang/words_by_section.html#coast
+msgctxt "coast.ogg"
+msgid "coast"
+msgstr "kosta"
+
+#. nature / nature / cold
+#. https://gcompris.net/incoming/lang/words_by_section.html#cold
+msgctxt "cold.ogg"
+msgid "cold"
+msgstr "hotza"
+
+#. nature / nature / creek
+#. https://gcompris.net/incoming/lang/words_by_section.html#creek
+msgctxt "creek.ogg"
+msgid "creek"
+msgstr "erreka"
+
+#. nature / nature / crystal
+#. https://gcompris.net/incoming/lang/words_by_section.html#crystal
+msgctxt "crystal.ogg"
+msgid "crystal"
+msgstr "kristala"
+
+#. nature / nature / desert
+#. https://gcompris.net/incoming/lang/words_by_section.html#desert
+msgctxt "desert.ogg"
+msgid "desert"
+msgstr "basamortua"
+
+#. nature / nature / diamond
+#. https://gcompris.net/incoming/lang/words_by_section.html#diamond
+msgctxt "diamond.ogg"
+msgid "diamond"
+msgstr "diamantea"
+
+#. nature / nature / dirt
+#. https://gcompris.net/incoming/lang/words_by_section.html#dirt
+msgctxt "dirt.ogg"
+msgid "dirt"
+msgstr "zikinkeria"
+
+#. nature / nature / drip
+#. https://gcompris.net/incoming/lang/words_by_section.html#drip
+msgctxt "drip.ogg"
+msgid "drip"
+msgstr "tanta"
+
+#. nature / nature / dune
+#. https://gcompris.net/incoming/lang/words_by_section.html#dune
+msgctxt "dune.ogg"
+msgid "dune"
+msgstr "duna"
+
+#. nature / nature / earth
+#. https://gcompris.net/incoming/lang/words_by_section.html#earth
+msgctxt "earth.ogg"
+msgid "earth"
+msgstr "lurra"
+
+#. nature / nature / fall season
+#. https://gcompris.net/incoming/lang/words_by_section.html#fall%20season
+msgctxt "fall_season.ogg"
+msgid "fall season"
+msgstr "udazkena"
+
+#. nature / nature / fire
+#. https://gcompris.net/incoming/lang/words_by_section.html#fire
+msgctxt "fire.ogg"
+msgid "fire"
+msgstr "sua"
+
+#. nature / nature / flame
+#. https://gcompris.net/incoming/lang/words_by_section.html#flame
+msgctxt "flame.ogg"
+msgid "flame"
+msgstr "garra"
+
+#. nature / nature / forest
+#. https://gcompris.net/incoming/lang/words_by_section.html#forest
+msgctxt "forest.ogg"
+msgid "forest"
+msgstr "basoa"
+
+#. nature / nature / garden
+#. https://gcompris.net/incoming/lang/words_by_section.html#garden
+msgctxt "garden.ogg"
+msgid "garden"
+msgstr "lorategia"
+
+#. nature / nature / gem
+#. https://gcompris.net/incoming/lang/words_by_section.html#gem
+msgctxt "gem.ogg"
+msgid "gem"
+msgstr "harribitxia"
+
+#. nature / nature / ground
+#. https://gcompris.net/incoming/lang/words_by_section.html#ground
+msgctxt "ground.ogg"
+msgid "ground"
+msgstr "zorua"
+
+#. nature / nature / heat
+#. https://gcompris.net/incoming/lang/words_by_section.html#heat
+msgctxt "heat.ogg"
+msgid "heat"
+msgstr "beroa"
+
+#. nature / nature / hill
+#. https://gcompris.net/incoming/lang/words_by_section.html#hill
+msgctxt "hill.ogg"
+msgid "hill"
+msgstr "muinoa"
+
+#. nature / nature / hole
+#. https://gcompris.net/incoming/lang/words_by_section.html#hole
+msgctxt "hole.ogg"
+msgid "hole"
+msgstr "zuloa"
+
+#. nature / nature / iceberg
+#. https://gcompris.net/incoming/lang/words_by_section.html#iceberg
+msgctxt "iceberg.ogg"
+msgid "iceberg"
+msgstr "izotz-mendia"
+
+#. nature / nature / island
+#. https://gcompris.net/incoming/lang/words_by_section.html#island
+msgctxt "island.ogg"
+msgid "island"
+msgstr "uhartea, irla"
+
+#. nature / nature / lake
+#. https://gcompris.net/incoming/lang/words_by_section.html#lake
+msgctxt "lake.ogg"
+msgid "lake"
+msgstr "aintzira, lakua"
+
+#. nature / nature / land
+#. https://gcompris.net/incoming/lang/words_by_section.html#land
+msgctxt "land.ogg"
+msgid "land"
+msgstr "lursaila"
+
+#. nature / nature / lava
+#. https://gcompris.net/incoming/lang/words_by_section.html#lava
+msgctxt "lava.ogg"
+msgid "lava"
+msgstr "laba"
+
+#. nature / nature / ledge
+#. https://gcompris.net/incoming/lang/words_by_section.html#ledge
+msgctxt "ledge.ogg"
+msgid "ledge"
+msgstr "irtengunea, koska"
+
+#. nature / nature / lightning
+#. https://gcompris.net/incoming/lang/words_by_section.html#lightning
+msgctxt "lightning.ogg"
+msgid "lightning"
+msgstr "tximista"
+
+#. nature / nature / moon
+#. https://gcompris.net/incoming/lang/words_by_section.html#moon
+msgctxt "moon.ogg"
+msgid "moon"
+msgstr "ilargia"
+
+#. nature / nature / mountain
+#. https://gcompris.net/incoming/lang/words_by_section.html#mountain
+msgctxt "mountain.ogg"
+msgid "mountain"
+msgstr "mendia"
+
+#. nature / nature / mud
+#. https://gcompris.net/incoming/lang/words_by_section.html#mud
+msgctxt "mud.ogg"
+msgid "mud"
+msgstr "lokatza"
+
+#. nature / nature / night
+#. https://gcompris.net/incoming/lang/words_by_section.html#night
+msgctxt "night.ogg"
+msgid "night"
+msgstr "gaua"
+
+#. nature / nature / ocean
+#. https://gcompris.net/incoming/lang/words_by_section.html#ocean
+msgctxt "ocean.ogg"
+msgid "ocean"
+msgstr "ozeanoa"
+
+#. nature / nature / path
+#. https://gcompris.net/incoming/lang/words_by_section.html#path
+msgctxt "path.ogg"
+msgid "path"
+msgstr "bidea"
+
+#. nature / nature / peak
+#. https://gcompris.net/incoming/lang/words_by_section.html#peak
+msgctxt "peak.ogg"
+msgid "peak"
+msgstr "gailurra"
+
+#. nature / nature / planet
+#. https://gcompris.net/incoming/lang/words_by_section.html#planet
+msgctxt "planet.ogg"
+msgid "planet"
+msgstr "planeta"
+
+#. nature / nature / pond
+#. https://gcompris.net/incoming/lang/words_by_section.html#pond
+msgctxt "pond.ogg"
+msgid "pond"
+msgstr "putzua"
+
+#. nature / nature / rain
+#. https://gcompris.net/incoming/lang/words_by_section.html#rain
+msgctxt "rain.ogg"
+msgid "rain"
+msgstr "euria"
+
+#. nature / nature / river
+#. https://gcompris.net/incoming/lang/words_by_section.html#river
+msgctxt "river.ogg"
+msgid "river"
+msgstr "ibaia"
+
+#. nature / nature / rock
+#. https://gcompris.net/incoming/lang/words_by_section.html#rock
+msgctxt "rock.ogg"
+msgid "rock"
+msgstr "harkaitza"
+
+#. nature / nature / sand
+#. https://gcompris.net/incoming/lang/words_by_section.html#sand
+msgctxt "sand.ogg"
+msgid "sand"
+msgstr "harea, hondarra"
+
+#. nature / nature / sea
+#. https://gcompris.net/incoming/lang/words_by_section.html#sea
+msgctxt "sea.ogg"
+msgid "sea"
+msgstr "itsasoa"
+
+#. nature / nature / shadow
+#. https://gcompris.net/incoming/lang/words_by_section.html#shadow
+msgctxt "shadow.ogg"
+msgid "shadow"
+msgstr "itzala"
+
+#. nature / nature / shore
+#. https://gcompris.net/incoming/lang/words_by_section.html#shore
+msgctxt "shore.ogg"
+msgid "shore"
+msgstr "urbazterra"
+
+#. nature / nature / sky
+#. https://gcompris.net/incoming/lang/words_by_section.html#sky
+msgctxt "sky.ogg"
+msgid "sky"
+msgstr "zerua"
+
+#. nature / nature / slope
+#. https://gcompris.net/incoming/lang/words_by_section.html#slope
+msgctxt "slope.ogg"
+msgid "slope"
+msgstr "aldapa"
+
+#. nature / nature / smoke
+#. https://gcompris.net/incoming/lang/words_by_section.html#smoke
+msgctxt "smoke.ogg"
+msgid "smoke"
+msgstr "kea"
+
+#. nature / nature / snow
+#. https://gcompris.net/incoming/lang/words_by_section.html#snow
+msgctxt "snow.ogg"
+msgid "snow"
+msgstr "elurra"
+
+#. nature / nature / spider web
+#. https://gcompris.net/incoming/lang/words_by_section.html#spider%20web
+msgctxt "spider_web.ogg"
+msgid "spider web"
+msgstr "amarauna"
+
+#. nature / nature / spring season
+#. https://gcompris.net/incoming/lang/words_by_section.html#spring%20season
+msgctxt "spring_season.ogg"
+msgid "spring season"
+msgstr "udaberria"
+
+#. nature / nature / star
+#. https://gcompris.net/incoming/lang/words_by_section.html#star
+msgctxt "star.ogg"
+msgid "star"
+msgstr "izarra"
+
+#. nature / nature / steam
+#. https://gcompris.net/incoming/lang/words_by_section.html#steam
+msgctxt "steam.ogg"
+msgid "steam"
+msgstr "lurruna"
+
+#. nature / nature / stone
+#. https://gcompris.net/incoming/lang/words_by_section.html#stone
+msgctxt "stone.ogg"
+msgid "stone"
+msgstr "harria"
+
+#. nature / nature / stream
+#. https://gcompris.net/incoming/lang/words_by_section.html#stream
+msgctxt "stream.ogg"
+msgid "stream"
+msgstr "zurrusta"
+
+#. nature / nature / summer
+#. https://gcompris.net/incoming/lang/words_by_section.html#summer
+msgctxt "summer.ogg"
+msgid "summer"
+msgstr "uda"
+
+#. nature / nature / summit
+#. https://gcompris.net/incoming/lang/words_by_section.html#summit
+msgctxt "summit.ogg"
+msgid "summit"
+msgstr "gailurra"
+
+#. nature / nature / sun
+#. https://gcompris.net/incoming/lang/words_by_section.html#sun
+msgctxt "sun.ogg"
+msgid "sun"
+msgstr "eguzkia"
+
+#. nature / nature / time
+#. https://gcompris.net/incoming/lang/words_by_section.html#time
+msgctxt "time.ogg"
+msgid "time"
+msgstr "denbora"
+
+#. nature / nature / top
+#. https://gcompris.net/incoming/lang/words_by_section.html#top
+msgctxt "top.ogg"
+msgid "top"
+msgstr "tontorra"
+
+#. nature / nature / trail
+#. https://gcompris.net/incoming/lang/words_by_section.html#trail
+msgctxt "trail.ogg"
+msgid "trail"
+msgstr "ibilbidea"
+
+#. nature / nature / water
+#. https://gcompris.net/incoming/lang/words_by_section.html#water
+msgctxt "water.ogg"
+msgid "water"
+msgstr "ura"
+
+#. nature / nature / wave
+#. https://gcompris.net/incoming/lang/words_by_section.html#wave
+msgctxt "wave.ogg"
+msgid "wave"
+msgstr "olatua, uhina"
+
+#. nature / nature / wind
+#. https://gcompris.net/incoming/lang/words_by_section.html#wind
+msgctxt "wind.ogg"
+msgid "wind"
+msgstr "haizea"
+
+#. nature / nature / winter
+#. https://gcompris.net/incoming/lang/words_by_section.html#winter
+msgctxt "winter.ogg"
+msgid "winter"
+msgstr "negua"
+
+#. nature / nature / world
+#. https://gcompris.net/incoming/lang/words_by_section.html#world
+msgctxt "world.ogg"
+msgid "world"
+msgstr "mundua"
+
+#. nature / nature / vapor
+#. https://gcompris.net/incoming/lang/words_by_section.html#vapor
+msgctxt "vapor.ogg"
+msgid "vapor"
+msgstr "lurruna"
+
+#. nature / plant / acorn
+#. https://gcompris.net/incoming/lang/words_by_section.html#acorn
+msgctxt "acorn.ogg"
+msgid "acorn"
+msgstr "ezkurra"
+
+#. nature / plant / apple tree
+#. https://gcompris.net/incoming/lang/words_by_section.html#apple%20tree
+msgctxt "apple_tree.ogg"
+msgid "apple tree"
+msgstr "sagarrondoa"
+
+#. nature / plant / branch
+#. https://gcompris.net/incoming/lang/words_by_section.html#branch
+msgctxt "branch.ogg"
+msgid "branch"
+msgstr "adarra"
+
+#. nature / plant / bud
+#. https://gcompris.net/incoming/lang/words_by_section.html#bud
+msgctxt "bud.ogg"
+msgid "bud"
+msgstr "kimua"
+
+#. nature / plant / bush
+#. https://gcompris.net/incoming/lang/words_by_section.html#bush
+msgctxt "bush.ogg"
+msgid "bush"
+msgstr "zuhaixka"
+
+#. nature / plant / cactus
+#. https://gcompris.net/incoming/lang/words_by_section.html#cactus
+msgctxt "cactus.ogg"
+msgid "cactus"
+msgstr "kaktusa"
+
+#. nature / plant / clover
+#. https://gcompris.net/incoming/lang/words_by_section.html#clover
+msgctxt "clover.ogg"
+msgid "clover"
+msgstr "hirusta"
+
+#. nature / plant / daffodil
+#. https://gcompris.net/incoming/lang/words_by_section.html#daffodil
+msgctxt "daffodil.ogg"
+msgid "daffodil"
+msgstr "lilipa, nartzisoa"
+
+#. nature / plant / daisy
+#. https://gcompris.net/incoming/lang/words_by_section.html#daisy
+msgctxt "daisy.ogg"
+msgid "daisy"
+msgstr "bitxilorea"
+
+#. nature / plant / dandelion
+#. https://gcompris.net/incoming/lang/words_by_section.html#dandelion
+msgctxt "dandelion.ogg"
+msgid "dandelion"
+msgstr "txikoria"
+
+#. nature / plant / flower
+#. https://gcompris.net/incoming/lang/words_by_section.html#flower
+msgctxt "flower.ogg"
+msgid "flower"
+msgstr "lorea"
+
+#. nature / plant / grain
+#. https://gcompris.net/incoming/lang/words_by_section.html#grain
+msgctxt "grain.ogg"
+msgid "grain"
+msgstr "alea, garaua"
+
+#. nature / plant / grass
+#. https://gcompris.net/incoming/lang/words_by_section.html#grass
+msgctxt "grass.ogg"
+msgid "grass"
+msgstr "belarra"
+
+#. nature / plant / hay
+#. https://gcompris.net/incoming/lang/words_by_section.html#hay
+msgctxt "hay.ogg"
+msgid "hay"
+msgstr "belar donua, saralea"
+
+#. nature / plant / hedge
+#. https://gcompris.net/incoming/lang/words_by_section.html#hedge
+msgctxt "hedge.ogg"
+msgid "hedge"
+msgstr "hesia"
+
+#. nature / plant / lawn
+#. https://gcompris.net/incoming/lang/words_by_section.html#lawn
+msgctxt "lawn.ogg"
+msgid "lawn"
+msgstr "belardia"
+
+#. nature / plant / leaf
+#. https://gcompris.net/incoming/lang/words_by_section.html#leaf
+msgctxt "leaf.ogg"
+msgid "leaf"
+msgstr "hostoa"
+
+#. nature / plant / lilac
+#. https://gcompris.net/incoming/lang/words_by_section.html#lilac
+msgctxt "lilac.ogg"
+msgid "lilac"
+msgstr "lila"
+
+#. nature / plant / maple
+#. https://gcompris.net/incoming/lang/words_by_section.html#maple
+msgctxt "maple.ogg"
+msgid "maple"
+msgstr "astigarra"
+
+#. nature / plant / mimosa
+#. https://gcompris.net/incoming/lang/words_by_section.html#mimosa
+msgctxt "mimosa.ogg"
+msgid "mimosa"
+msgstr "mimosa"
+
+#. nature / plant / orchid
+#. https://gcompris.net/incoming/lang/words_by_section.html#orchid
+msgctxt "orchid.ogg"
+msgid "orchid"
+msgstr "orkidea"
+
+#. nature / plant / palm tree
+#. https://gcompris.net/incoming/lang/words_by_section.html#palm%20tree
+msgctxt "palm_tree.ogg"
+msgid "palm tree"
+msgstr "palmondoa"
+
+#. nature / plant / peony
+#. https://gcompris.net/incoming/lang/words_by_section.html#peony
+msgctxt "peony.ogg"
+msgid "peony"
+msgstr "peonia"
+
+#. nature / plant / petal
+#. https://gcompris.net/incoming/lang/words_by_section.html#petal
+msgctxt "petal.ogg"
+msgid "petal"
+msgstr "petaloa"
+
+#. nature / plant / pine
+#. https://gcompris.net/incoming/lang/words_by_section.html#pine
+msgctxt "pine.ogg"
+msgid "pine"
+msgstr "pinua"
+
+#. nature / plant / pine cone
+#. https://gcompris.net/incoming/lang/words_by_section.html#pine%20cone
+msgctxt "pine_cone.ogg"
+msgid "pine cone"
+msgstr "pinaburua"
+
+#. nature / plant / pip
+#. https://gcompris.net/incoming/lang/words_by_section.html#pip
+msgctxt "pip.ogg"
+msgid "pip"
+msgstr "hazi, pipita"
+
+#. nature / plant / plant
+#. https://gcompris.net/incoming/lang/words_by_section.html#plant
+msgctxt "plant.ogg"
+msgid "plant"
+msgstr "landarea"
+
+#. nature / plant / root
+#. https://gcompris.net/incoming/lang/words_by_section.html#root
+msgctxt "root.ogg"
+msgid "root"
+msgstr "erroa, sustraia"
+
+#. nature / plant / rose
+#. https://gcompris.net/incoming/lang/words_by_section.html#rose
+msgctxt "rose.ogg"
+msgid "rose"
+msgstr "arrosa"
+
+#. nature / plant / seed
+#. https://gcompris.net/incoming/lang/words_by_section.html#seed
+msgctxt "seed.ogg"
+msgid "seed"
+msgstr "hazia"
+
+#. nature / plant / shrub
+#. https://gcompris.net/incoming/lang/words_by_section.html#shrub
+msgctxt "shrub.ogg"
+msgid "shrub"
+msgstr "zuhaixka"
+
+#. nature / plant / stem
+#. https://gcompris.net/incoming/lang/words_by_section.html#stem
+msgctxt "stem.ogg"
+msgid "stem"
+msgstr "zurtoina"
+
+#. nature / plant / stick
+#. https://gcompris.net/incoming/lang/words_by_section.html#stick
+msgctxt "stick.ogg"
+msgid "stick"
+msgstr "makila"
+
+#. nature / plant / stump
+#. https://gcompris.net/incoming/lang/words_by_section.html#stump
+msgctxt "stump.ogg"
+msgid "stump"
+msgstr "motzondoa"
+
+#. nature / plant / tree
+#. https://gcompris.net/incoming/lang/words_by_section.html#tree
+msgctxt "tree.ogg"
+msgid "tree"
+msgstr "zuhaitza"
+
+#. nature / plant / tulip
+#. https://gcompris.net/incoming/lang/words_by_section.html#tulip
+msgctxt "tulip.ogg"
+msgid "tulip"
+msgstr "tulipa"
+
+#. nature / plant / verdure
+#. https://gcompris.net/incoming/lang/words_by_section.html#verdure
+msgctxt "verdure.ogg"
+msgid "verdure"
+msgstr "barazkia"
+
+#. nature / vegetables / artichoke
+#. https://gcompris.net/incoming/lang/words_by_section.html#artichoke
+msgctxt "artichoke.ogg"
+msgid "artichoke"
+msgstr "orburua"
+
+#. nature / vegetables / asparagus
+#. https://gcompris.net/incoming/lang/words_by_section.html#asparagus
+msgctxt "asparagus.ogg"
+msgid "asparagus"
+msgstr "zainzuria, frantses-porrua"
+
+#. nature / vegetables / avocado
+#. https://gcompris.net/incoming/lang/words_by_section.html#avocado
+msgctxt "avocado.ogg"
+msgid "avocado"
+msgstr "ahuakatea"
+
+#. nature / vegetables / bean
+#. https://gcompris.net/incoming/lang/words_by_section.html#bean
+msgctxt "bean.ogg"
+msgid "bean"
+msgstr "babarruna, indaba"
+
+#. nature / vegetables / broccoli
+#. https://gcompris.net/incoming/lang/words_by_section.html#broccoli
+msgctxt "broccoli.ogg"
+msgid "broccoli"
+msgstr "brokolia"
+
+#. nature / vegetables / cabbage
+#. https://gcompris.net/incoming/lang/words_by_section.html#cabbage
+msgctxt "cabbage.ogg"
+msgid "cabbage"
+msgstr "aza"
+
+#. nature / vegetables / carrot
+#. https://gcompris.net/incoming/lang/words_by_section.html#carrot
+msgctxt "carrot.ogg"
+msgid "carrot"
+msgstr "azenarioa"
+
+#. nature / vegetables / cauliflower
+#. https://gcompris.net/incoming/lang/words_by_section.html#cauliflower
+msgctxt "cauliflower.ogg"
+msgid "cauliflower"
+msgstr "azalorea"
+
+#. nature / vegetables / celery
+#. https://gcompris.net/incoming/lang/words_by_section.html#celery
+msgctxt "celery.ogg"
+msgid "celery"
+msgstr "apioa, perrexil hezea"
+
+#. nature / vegetables / corn
+#. https://gcompris.net/incoming/lang/words_by_section.html#corn
+msgctxt "corn.ogg"
+msgid "corn"
+msgstr "artoa"
+
+#. nature / vegetables / cucumber
+#. https://gcompris.net/incoming/lang/words_by_section.html#cucumber
+msgctxt "cucumber.ogg"
+msgid "cucumber"
+msgstr "luzokerra, pepinoa"
+
+#. nature / vegetables / eggplant
+#. https://gcompris.net/incoming/lang/words_by_section.html#eggplant
+msgctxt "eggplant.ogg"
+msgid "eggplant"
+msgstr "alberjinia"
+
+#. nature / vegetables / garlic
+#. https://gcompris.net/incoming/lang/words_by_section.html#garlic
+msgctxt "garlic.ogg"
+msgid "garlic"
+msgstr "baratxuria, berakatza"
+
+#. nature / vegetables / leek
+#. https://gcompris.net/incoming/lang/words_by_section.html#leek
+msgctxt "leek.ogg"
+msgid "leek"
+msgstr "porrua"
+
+#. nature / vegetables / lettuce
+#. https://gcompris.net/incoming/lang/words_by_section.html#lettuce
+msgctxt "lettuce.ogg"
+msgid "lettuce"
+msgstr "letxuga"
+
+#. nature / vegetables / mushroom
+#. https://gcompris.net/incoming/lang/words_by_section.html#mushroom
+msgctxt "mushroom.ogg"
+msgid "mushroom"
+msgstr "perretxikoa"
+
+#. nature / vegetables / nut
+#. https://gcompris.net/incoming/lang/words_by_section.html#nut
+msgctxt "nut.ogg"
+msgid "nut"
+msgstr "kakahuetea"
+
+#. nature / vegetables / olive
+#. https://gcompris.net/incoming/lang/words_by_section.html#olive
+msgctxt "olive.ogg"
+msgid "olive"
+msgstr "oliba"
+
+#. nature / vegetables / onion
+#. https://gcompris.net/incoming/lang/words_by_section.html#onion
+msgctxt "onion.ogg"
+msgid "onion"
+msgstr "tipula"
+
+#. nature / vegetables / pea
+#. https://gcompris.net/incoming/lang/words_by_section.html#pea
+msgctxt "pea.ogg"
+msgid "pea"
+msgstr "ilarra"
+
+#. nature / vegetables / peppers
+#. https://gcompris.net/incoming/lang/words_by_section.html#peppers
+msgctxt "peppers.ogg"
+msgid "peppers"
+msgstr "piperrak"
+
+#. nature / vegetables / pod
+#. https://gcompris.net/incoming/lang/words_by_section.html#pod
+msgctxt "pod.ogg"
+msgid "pod"
+msgstr "leka"
+
+#. nature / vegetables / potato
+#. https://gcompris.net/incoming/lang/words_by_section.html#potato
+msgctxt "potato.ogg"
+msgid "potato"
+msgstr "patata"
+
+#. nature / vegetables / pumpkin
+#. https://gcompris.net/incoming/lang/words_by_section.html#pumpkin
+msgctxt "pumpkin.ogg"
+msgid "pumpkin"
+msgstr "kalabaza"
+
+#. nature / vegetables / radish
+#. https://gcompris.net/incoming/lang/words_by_section.html#radish
+msgctxt "radish.ogg"
+msgid "radish"
+msgstr "errefaua"
+
+#. nature / vegetables / spinach
+#. https://gcompris.net/incoming/lang/words_by_section.html#spinach
+msgctxt "spinach.ogg"
+msgid "spinach"
+msgstr "ziazerba, espinaka"
+
+#. nature / vegetables / squash
+#. https://gcompris.net/incoming/lang/words_by_section.html#squash
+msgctxt "squash.ogg"
+msgid "squash"
+msgstr "kuia"
+
+#. nature / vegetables / tomatoe
+#. https://gcompris.net/incoming/lang/words_by_section.html#tomatoe
+msgctxt "tomatoe.ogg"
+msgid "tomatoe"
+msgstr "tomatea"
+
+#. nature / vegetables / turnip
+#. https://gcompris.net/incoming/lang/words_by_section.html#turnip
+msgctxt "turnip.ogg"
+msgid "turnip"
+msgstr "arbia"
+
+#. nature / vegetables / vegetable
+#. https://gcompris.net/incoming/lang/words_by_section.html#vegetable
+msgctxt "vegetable.ogg"
+msgid "vegetable"
+msgstr "barazkia"
+
+#. nature / vegetables / walnut
+#. https://gcompris.net/incoming/lang/words_by_section.html#walnut
+msgctxt "walnut.ogg"
+msgid "walnut"
+msgstr "intxaurra"
+
+#. nature / vegetables / wheat
+#. https://gcompris.net/incoming/lang/words_by_section.html#wheat
+msgctxt "wheat.ogg"
+msgid "wheat"
+msgstr "garia"
+
+#. object / construction / bank
+#. https://gcompris.net/incoming/lang/words_by_section.html#bank
+msgctxt "bank.ogg"
+msgid "bank"
+msgstr "bankua"
+
+#. object / construction / barn
+#. https://gcompris.net/incoming/lang/words_by_section.html#barn
+msgctxt "barn.ogg"
+msgid "barn"
+msgstr "bihitegia"
+
+#. object / construction / bedroom
+#. https://gcompris.net/incoming/lang/words_by_section.html#bedroom
+msgctxt "bedroom.ogg"
+msgid "bedroom"
+msgstr "logela"
+
+#. object / construction / big top
+#. https://gcompris.net/incoming/lang/words_by_section.html#big%20top
+msgctxt "big_top.ogg"
+msgid "big top"
+msgstr "karpa"
+
+#. object / construction / bridge
+#. https://gcompris.net/incoming/lang/words_by_section.html#bridge
+msgctxt "bridge.ogg"
+msgid "bridge"
+msgstr "zubia"
+
+#. object / construction / cabin
+#. https://gcompris.net/incoming/lang/words_by_section.html#cabin
+msgctxt "cabin.ogg"
+msgid "cabin"
+msgstr "etxola"
+
+#. object / construction / cage
+#. https://gcompris.net/incoming/lang/words_by_section.html#cage
+msgctxt "cage.ogg"
+msgid "cage"
+msgstr "kaiola"
+
+#. object / construction / castle
+#. https://gcompris.net/incoming/lang/words_by_section.html#castle
+msgctxt "castle.ogg"
+msgid "castle"
+msgstr "gaztelua"
+
+#. object / construction / chimney
+#. https://gcompris.net/incoming/lang/words_by_section.html#chimney
+msgctxt "chimney.ogg"
+msgid "chimney"
+msgstr "tximinia"
+
+#. object / construction / circus
+#. https://gcompris.net/incoming/lang/words_by_section.html#circus
+msgctxt "circus.ogg"
+msgid "circus"
+msgstr "zirkua"
+
+#. object / construction / city
+#. https://gcompris.net/incoming/lang/words_by_section.html#city
+msgctxt "city.ogg"
+msgid "city"
+msgstr "hiria"
+
+#. object / construction / dam
+#. https://gcompris.net/incoming/lang/words_by_section.html#dam
+msgctxt "dam.ogg"
+msgid "dam"
+msgstr "presa"
+
+#. object / construction / door
+#. https://gcompris.net/incoming/lang/words_by_section.html#door
+msgctxt "door.ogg"
+msgid "door"
+msgstr "atea"
+
+#. object / construction / fair
+#. https://gcompris.net/incoming/lang/words_by_section.html#fair
+msgctxt "fair.ogg"
+msgid "fair"
+msgstr "feria"
+
+#. object / construction / farm
+#. https://gcompris.net/incoming/lang/words_by_section.html#farm
+msgctxt "farm.ogg"
+msgid "farm"
+msgstr "baserria"
+
+#. object / construction / fountain
+#. https://gcompris.net/incoming/lang/words_by_section.html#fountain
+msgctxt "fountain.ogg"
+msgid "fountain"
+msgstr "iturria"
+
+#. object / construction / garage
+#. https://gcompris.net/incoming/lang/words_by_section.html#garage
+msgctxt "garage.ogg"
+msgid "garage"
+msgstr "garajea"
+
+#. object / construction / grave
+#. https://gcompris.net/incoming/lang/words_by_section.html#grave
+msgctxt "grave.ogg"
+msgid "grave"
+msgstr "hilobia"
+
+#. object / construction / home
+#. https://gcompris.net/incoming/lang/words_by_section.html#home
+msgctxt "home.ogg"
+msgid "home"
+msgstr "etxea"
+
+#. object / construction / hospital
+#. https://gcompris.net/incoming/lang/words_by_section.html#hospital
+msgctxt "hospital.ogg"
+msgid "hospital"
+msgstr "ospitalea"
+
+#. object / construction / house
+#. https://gcompris.net/incoming/lang/words_by_section.html#house
+msgctxt "house.ogg"
+msgid "house"
+msgstr "etxea"
+
+#. object / construction / hut
+#. https://gcompris.net/incoming/lang/words_by_section.html#hut
+msgctxt "hut.ogg"
+msgid "hut"
+msgstr "etxola"
+
+#. object / construction / kitchen
+#. https://gcompris.net/incoming/lang/words_by_section.html#kitchen
+msgctxt "kitchen.ogg"
+msgid "kitchen"
+msgstr "sukaldea"
+
+#. object / construction / lane
+#. https://gcompris.net/incoming/lang/words_by_section.html#lane
+msgctxt "lane.ogg"
+msgid "lane"
+msgstr "erreia"
+
+#. object / construction / lighthouse
+#. https://gcompris.net/incoming/lang/words_by_section.html#lighthouse
+msgctxt "lighthouse.ogg"
+msgid "lighthouse"
+msgstr "itsasargia"
+
+#. object / construction / merry-go-round
+#. https://gcompris.net/incoming/lang/words_by_section.html#merry-go-round
+msgctxt "merry-go-round.ogg"
+msgid "merry-go-round"
+msgstr "zaldiko-maldikoa"
+
+#. object / construction / mill
+#. https://gcompris.net/incoming/lang/words_by_section.html#mill
+msgctxt "mill.ogg"
+msgid "mill"
+msgstr "errota"
+
+#. object / construction / mosque
+#. https://gcompris.net/incoming/lang/words_by_section.html#mosque
+msgctxt "mosque.ogg"
+msgid "mosque"
+msgstr "meskita"
+
+#. object / construction / office
+#. https://gcompris.net/incoming/lang/words_by_section.html#office
+msgctxt "office.ogg"
+msgid "office"
+msgstr "bulegoa"
+
+#. object / construction / pool
+#. https://gcompris.net/incoming/lang/words_by_section.html#pool
+msgctxt "pool.ogg"
+msgid "pool"
+msgstr "igerilekua"
+
+#. object / construction / post
+#. https://gcompris.net/incoming/lang/words_by_section.html#post
+msgctxt "post.ogg"
+msgid "post"
+msgstr "postontzia"
+
+#. object / construction / prison
+#. https://gcompris.net/incoming/lang/words_by_section.html#prison
+msgctxt "prison.ogg"
+msgid "prison"
+msgstr "espetxea"
+
+#. object / construction / pyramid
+#. https://gcompris.net/incoming/lang/words_by_section.html#pyramid
+msgctxt "pyramid.ogg"
+msgid "pyramid"
+msgstr "piramidea"
+
+#. object / construction / ramp
+#. https://gcompris.net/incoming/lang/words_by_section.html#ramp
+msgctxt "ramp.ogg"
+msgid "ramp"
+msgstr "arrapala"
+
+#. object / construction / road
+#. https://gcompris.net/incoming/lang/words_by_section.html#road
+msgctxt "road.ogg"
+msgid "road"
+msgstr "errepidea"
+
+#. object / construction / roof
+#. https://gcompris.net/incoming/lang/words_by_section.html#roof
+msgctxt "roof.ogg"
+msgid "roof"
+msgstr "teilatua"
+
+#. object / construction / room
+#. https://gcompris.net/incoming/lang/words_by_section.html#room
+msgctxt "room.ogg"
+msgid "room"
+msgstr "gela"
+
+#. object / construction / school
+#. https://gcompris.net/incoming/lang/words_by_section.html#school
+msgctxt "school.ogg"
+msgid "school"
+msgstr "ikastetxea"
+
+#. object / construction / shed
+#. https://gcompris.net/incoming/lang/words_by_section.html#shed
+msgctxt "shed.ogg"
+msgid "shed"
+msgstr "estalgunea, estalpea"
+
+#. object / construction / shop
+#. https://gcompris.net/incoming/lang/words_by_section.html#shop
+msgctxt "shop.ogg"
+msgid "shop"
+msgstr "denda"
+
+#. object / construction / shutter
+#. https://gcompris.net/incoming/lang/words_by_section.html#shutter
+msgctxt "shutter.ogg"
+msgid "shutter"
+msgstr "leiho-ohola"
+
+#. object / construction / sidewalk
+#. https://gcompris.net/incoming/lang/words_by_section.html#sidewalk
+msgctxt "sidewalk.ogg"
+msgid "sidewalk"
+msgstr "espaloia"
+
+#. object / construction / stage
+#. https://gcompris.net/incoming/lang/words_by_section.html#stage
+msgctxt "stage.ogg"
+msgid "stage"
+msgstr "agertokia, eszena"
+
+#. object / construction / staircase
+#. https://gcompris.net/incoming/lang/words_by_section.html#staircase
+msgctxt "staircase.ogg"
+msgid "staircase"
+msgstr "eskailera"
+
+#. object / construction / steeple
+#. https://gcompris.net/incoming/lang/words_by_section.html#steeple
+msgctxt "steeple.ogg"
+msgid "steeple"
+msgstr "kanpandorrea"
+
+#. object / construction / step
+#. https://gcompris.net/incoming/lang/words_by_section.html#step
+msgctxt "step.ogg"
+msgid "step"
+msgstr "maila"
+
+#. object / construction / store
+#. https://gcompris.net/incoming/lang/words_by_section.html#store
+msgctxt "store.ogg"
+msgid "store"
+msgstr "saltokia"
+
+#. object / construction / street
+#. https://gcompris.net/incoming/lang/words_by_section.html#street
+msgctxt "street.ogg"
+msgid "street"
+msgstr "kalea"
+
+#. object / construction / temple
+#. https://gcompris.net/incoming/lang/words_by_section.html#temple
+msgctxt "temple.ogg"
+msgid "temple"
+msgstr "tenplua"
+
+#. object / construction / tent
+#. https://gcompris.net/incoming/lang/words_by_section.html#tent
+msgctxt "tent.ogg"
+msgid "tent"
+msgstr "kanpin-denda"
+
+#. object / construction / train station
+#. https://gcompris.net/incoming/lang/words_by_section.html#train%20station
+msgctxt "train_station.ogg"
+msgid "train station"
+msgstr "tren geltokia"
+
+#. object / construction / wall
+#. https://gcompris.net/incoming/lang/words_by_section.html#wall
+msgctxt "wall.ogg"
+msgid "wall"
+msgstr "horma"
+
+#. object / construction / window
+#. https://gcompris.net/incoming/lang/words_by_section.html#window
+msgctxt "window.ogg"
+msgid "window"
+msgstr "leihoa"
+
+#. object / construction / window glass
+#. https://gcompris.net/incoming/lang/words_by_section.html#window%20glass
+msgctxt "window_glass.ogg"
+msgid "window glass"
+msgstr "leihoko beira"
+
+#. object / construction / zoo
+#. https://gcompris.net/incoming/lang/words_by_section.html#zoo
+msgctxt "zoo.ogg"
+msgid "zoo"
+msgstr "zooa"
+
+#. object / construction / class
+#. https://gcompris.net/incoming/lang/words_by_section.html#class
+msgctxt "class.ogg"
+msgid "class"
+msgstr "ikasgela"
+
+#. object / furniture / armchair
+#. https://gcompris.net/incoming/lang/words_by_section.html#armchair
+msgctxt "armchair.ogg"
+msgid "armchair"
+msgstr "besaulkia"
+
+#. object / furniture / bath
+#. https://gcompris.net/incoming/lang/words_by_section.html#bath
+msgctxt "bath.ogg"
+msgid "bath"
+msgstr "bainuontzia"
+
+#. object / furniture / bed
+#. https://gcompris.net/incoming/lang/words_by_section.html#bed
+msgctxt "bed.ogg"
+msgid "bed"
+msgstr "ohea"
+
+#. object / furniture / bench
+#. https://gcompris.net/incoming/lang/words_by_section.html#bench
+msgctxt "bench.ogg"
+msgid "bench"
+msgstr "bankua"
+
+#. object / furniture / bookcase
+#. https://gcompris.net/incoming/lang/words_by_section.html#bookcase
+msgctxt "bookcase.ogg"
+msgid "bookcase"
+msgstr "apalategia"
+
+#. object / furniture / carpet
+#. https://gcompris.net/incoming/lang/words_by_section.html#carpet
+msgctxt "carpet.ogg"
+msgid "carpet"
+msgstr "alfonbra"
+
+#. object / furniture / chair
+#. https://gcompris.net/incoming/lang/words_by_section.html#chair
+msgctxt "chair.ogg"
+msgid "chair"
+msgstr "aulkia"
+
+#. object / furniture / chest
+#. https://gcompris.net/incoming/lang/words_by_section.html#chest
+msgctxt "chest.ogg"
+msgid "chest"
+msgstr "kutxa"
+
+#. object / furniture / couch
+#. https://gcompris.net/incoming/lang/words_by_section.html#couch
+msgctxt "couch.ogg"
+msgid "couch"
+msgstr "sofa"
+
+#. object / furniture / cradle
+#. https://gcompris.net/incoming/lang/words_by_section.html#cradle
+msgctxt "cradle.ogg"
+msgid "cradle"
+msgstr "sehaska"
+
+#. object / furniture / crib
+#. https://gcompris.net/incoming/lang/words_by_section.html#crib
+msgctxt "crib.ogg"
+msgid "crib"
+msgstr "sehaska"
+
+#. object / furniture / desk
+#. https://gcompris.net/incoming/lang/words_by_section.html#desk
+msgctxt "desk.ogg"
+msgid "desk"
+msgstr "idazmahaia"
+
+#. object / furniture / doormat
+#. https://gcompris.net/incoming/lang/words_by_section.html#doormat
+msgctxt "doormat.ogg"
+msgid "doormat"
+msgstr "lanpasa"
+
+#. object / furniture / drawer
+#. https://gcompris.net/incoming/lang/words_by_section.html#drawer
+msgctxt "drawer.ogg"
+msgid "drawer"
+msgstr "tiradera"
+
+#. object / furniture / fan
+#. https://gcompris.net/incoming/lang/words_by_section.html#fan
+msgctxt "fan.ogg"
+msgid "fan"
+msgstr "haizagailua"
+
+#. object / furniture / lamp
+#. https://gcompris.net/incoming/lang/words_by_section.html#lamp
+msgctxt "lamp.ogg"
+msgid "lamp"
+msgstr "lanpara"
+
+#. object / furniture / mat
+#. https://gcompris.net/incoming/lang/words_by_section.html#mat
+msgctxt "mat.ogg"
+msgid "mat"
+msgstr "tapiza, alfonbra"
+
+#. object / furniture / mattress
+#. https://gcompris.net/incoming/lang/words_by_section.html#mattress
+msgctxt "mattress.ogg"
+msgid "mattress"
+msgstr "koltxoia"
+
+#. object / furniture / quilt
+#. https://gcompris.net/incoming/lang/words_by_section.html#quilt
+msgctxt "quilt.ogg"
+msgid "quilt"
+msgstr "edredoia"
+
+#. object / furniture / rug
+#. https://gcompris.net/incoming/lang/words_by_section.html#rug
+msgctxt "rug.ogg"
+msgid "rug"
+msgstr "alfonbra"
+
+#. object / furniture / seat
+#. https://gcompris.net/incoming/lang/words_by_section.html#seat
+msgctxt "seat.ogg"
+msgid "seat"
+msgstr "eserlekua"
+
+#. object / furniture / shelf
+#. https://gcompris.net/incoming/lang/words_by_section.html#shelf
+msgctxt "shelf.ogg"
+msgid "shelf"
+msgstr "apala"
+
+#. object / furniture / shower
+#. https://gcompris.net/incoming/lang/words_by_section.html#shower
+msgctxt "shower.ogg"
+msgid "shower"
+msgstr "dutxa"
+
+#. object / furniture / sink
+#. https://gcompris.net/incoming/lang/words_by_section.html#sink
+msgctxt "sink.ogg"
+msgid "sink"
+msgstr "konketa"
+
+#. object / furniture / stove
+#. https://gcompris.net/incoming/lang/words_by_section.html#stove
+msgctxt "stove.ogg"
+msgid "stove"
+msgstr "sukaldea"
+
+#. object / furniture / table
+#. https://gcompris.net/incoming/lang/words_by_section.html#table
+msgctxt "table.ogg"
+msgid "table"
+msgstr "mahaia"
+
+#. object / furniture / television
+#. https://gcompris.net/incoming/lang/words_by_section.html#television
+msgctxt "television.ogg"
+msgid "television"
+msgstr "telebista"
+
+#. object / furniture / toilet
+#. https://gcompris.net/incoming/lang/words_by_section.html#toilet
+msgctxt "toilet.ogg"
+msgid "toilet"
+msgstr "komuna"
+
+#. object / houseware / appliance
+#. https://gcompris.net/incoming/lang/words_by_section.html#appliance
+msgctxt "appliance.ogg"
+msgid "appliance"
+msgstr "etxetresna"
+
+#. object / houseware / baby bottle
+#. https://gcompris.net/incoming/lang/words_by_section.html#baby%20bottle
+msgctxt "baby_bottle.ogg"
+msgid "baby bottle"
+msgstr "biberoia"
+
+#. object / houseware / balance
+#. https://gcompris.net/incoming/lang/words_by_section.html#balance
+msgctxt "balance.ogg"
+msgid "balance"
+msgstr "balantza"
+
+#. object / houseware / blade
+#. https://gcompris.net/incoming/lang/words_by_section.html#blade
+msgctxt "blade.ogg"
+msgid "blade"
+msgstr "xafla"
+
+#. object / houseware / can
+#. https://gcompris.net/incoming/lang/words_by_section.html#can
+msgctxt "can.ogg"
+msgid "can"
+msgstr "poto, lata"
+
+#. object / houseware / carafe
+#. https://gcompris.net/incoming/lang/words_by_section.html#carafe
+msgctxt "carafe.ogg"
+msgid "carafe"
+msgstr "pitxerra, txarroa"
+
+#. object / houseware / cauldron
+#. https://gcompris.net/incoming/lang/words_by_section.html#cauldron
+msgctxt "cauldron.ogg"
+msgid "cauldron"
+msgstr "pertza"
+
+#. object / houseware / chandelier
+#. https://gcompris.net/incoming/lang/words_by_section.html#chandelier
+msgctxt "chandelier.ogg"
+msgid "chandelier"
+msgstr "argi-armiarma"
+
+#. object / houseware / clock
+#. https://gcompris.net/incoming/lang/words_by_section.html#clock
+msgctxt "clock.ogg"
+msgid "clock"
+msgstr "ordularia"
+
+#. object / houseware / curtain
+#. https://gcompris.net/incoming/lang/words_by_section.html#curtain
+msgctxt "curtain.ogg"
+msgid "curtain"
+msgstr "gortina"
+
+#. object / houseware / dish
+#. https://gcompris.net/incoming/lang/words_by_section.html#dish
+msgctxt "dish.ogg"
+msgid "dish"
+msgstr "platera"
+
+#. object / houseware / fork
+#. https://gcompris.net/incoming/lang/words_by_section.html#fork
+msgctxt "fork.ogg"
+msgid "fork"
+msgstr "sardexka"
+
+#. object / houseware / glass
+#. https://gcompris.net/incoming/lang/words_by_section.html#glass
+msgctxt "glass.ogg"
+msgid "glass"
+msgstr "edalontzia"
+
+#. object / houseware / knife
+#. https://gcompris.net/incoming/lang/words_by_section.html#knife
+msgctxt "knife.ogg"
+msgid "knife"
+msgstr "labana"
+
+#. object / houseware / lid
+#. https://gcompris.net/incoming/lang/words_by_section.html#lid
+msgctxt "lid.ogg"
+msgid "lid"
+msgstr "tapa"
+
+#. object / houseware / mop
+#. https://gcompris.net/incoming/lang/words_by_section.html#mop
+msgctxt "mop.ogg"
+msgid "mop"
+msgstr "lanbasa"
+
+#. object / houseware / mug
+#. https://gcompris.net/incoming/lang/words_by_section.html#mug
+msgctxt "mug.ogg"
+msgid "mug"
+msgstr "katilua"
+
+#. object / houseware / pan
+#. https://gcompris.net/incoming/lang/words_by_section.html#pan
+msgctxt "pan.ogg"
+msgid "pan"
+msgstr "paella-ontzia"
+
+#. object / houseware / plate
+#. https://gcompris.net/incoming/lang/words_by_section.html#plate
+msgctxt "plate.ogg"
+msgid "plate"
+msgstr "platera"
+
+#. object / houseware / pot
+#. https://gcompris.net/incoming/lang/words_by_section.html#pot
+msgctxt "pot.ogg"
+msgid "pot"
+msgstr "eltzea"
+
+#. object / houseware / scale
+#. https://gcompris.net/incoming/lang/words_by_section.html#scale
+msgctxt "scale.ogg"
+msgid "scale"
+msgstr "balantza"
+
+#. object / houseware / skimmer
+#. https://gcompris.net/incoming/lang/words_by_section.html#skimmer
+msgctxt "skimmer.ogg"
+msgid "skimmer"
+msgstr "bitsadera"
+
+#. object / houseware / spatula
+#. https://gcompris.net/incoming/lang/words_by_section.html#spatula
+msgctxt "spatula.ogg"
+msgid "spatula"
+msgstr "espatula"
+
+#. object / houseware / sponge
+#. https://gcompris.net/incoming/lang/words_by_section.html#sponge
+msgctxt "sponge.ogg"
+msgid "sponge"
+msgstr "esponja"
+
+#. object / houseware / spoon
+#. https://gcompris.net/incoming/lang/words_by_section.html#spoon
+msgctxt "spoon.ogg"
+msgid "spoon"
+msgstr "koilara"
+
+#. object / houseware / strainer
+#. https://gcompris.net/incoming/lang/words_by_section.html#strainer
+msgctxt "strainer.ogg"
+msgid "strainer"
+msgstr "iragazkia"
+
+#. object / houseware / tablecloth
+#. https://gcompris.net/incoming/lang/words_by_section.html#tablecloth
+msgctxt "tablecloth.ogg"
+msgid "tablecloth"
+msgstr "mahai-zapia"
+
+#. object / houseware / tin
+#. https://gcompris.net/incoming/lang/words_by_section.html#tin
+msgctxt "tin.ogg"
+msgid "tin"
+msgstr "potea"
+
+#. object / houseware / toaster
+#. https://gcompris.net/incoming/lang/words_by_section.html#toaster
+msgctxt "toaster.ogg"
+msgid "toaster"
+msgstr "xigorgailua"
+
+#. object / houseware / tongs
+#. https://gcompris.net/incoming/lang/words_by_section.html#tongs
+msgctxt "tongs.ogg"
+msgid "tongs"
+msgstr "matxardak"
+
+#. object / houseware / trash
+#. https://gcompris.net/incoming/lang/words_by_section.html#trash
+msgctxt "trash.ogg"
+msgid "trash"
+msgstr "zakarrontzia"
+
+#. object / houseware / tray
+#. https://gcompris.net/incoming/lang/words_by_section.html#tray
+msgctxt "tray.ogg"
+msgid "tray"
+msgstr "erretilua"
+
+#. object / houseware / vase
+#. https://gcompris.net/incoming/lang/words_by_section.html#vase
+msgctxt "vase.ogg"
+msgid "vase"
+msgstr "loreontzia"
+
+#. object / houseware / whisk
+#. https://gcompris.net/incoming/lang/words_by_section.html#whisk
+msgctxt "whisk.ogg"
+msgid "whisk"
+msgstr "irabiagailua"
+
+#. object / houseware / alarmclock
+#. https://gcompris.net/incoming/lang/words_by_section.html#alarmclock
+msgctxt "alarmclock.ogg"
+msgid "alarmclock"
+msgstr "iratzargailua"
+
+#. object / object / faucet
+#. https://gcompris.net/incoming/lang/words_by_section.html#faucet
+msgctxt "faucet.ogg"
+msgid "faucet"
+msgstr "txorrota"
+
+#. object / object / air horn
+#. https://gcompris.net/incoming/lang/words_by_section.html#air%20horn
+msgctxt "air_horn.ogg"
+msgid "air horn"
+msgstr "sirena"
+
+#. object / object / anchor
+#. https://gcompris.net/incoming/lang/words_by_section.html#anchor
+msgctxt "anchor.ogg"
+msgid "anchor"
+msgstr "aingura"
+
+#. object / object / badge
+#. https://gcompris.net/incoming/lang/words_by_section.html#badge
+msgctxt "badge.ogg"
+msgid "badge"
+msgstr "entseina"
+
+#. object / object / bag
+#. https://gcompris.net/incoming/lang/words_by_section.html#bag
+msgctxt "bag.ogg"
+msgid "bag"
+msgstr "poltsa"
+
+#. object / object / ball
+#. https://gcompris.net/incoming/lang/words_by_section.html#ball
+msgctxt "ball.ogg"
+msgid "ball"
+msgstr "baloia"
+
+#. object / object / soccer ball
+#. https://gcompris.net/incoming/lang/words_by_section.html#soccer%20ball
+msgctxt "ball_soccer.ogg"
+msgid "soccer ball"
+msgstr "futboleko baloia"
+
+#. object / object / bell
+#. https://gcompris.net/incoming/lang/words_by_section.html#bell
+msgctxt "bell.ogg"
+msgid "bell"
+msgstr "kanpaia"
+
+#. object / object / block
+#. https://gcompris.net/incoming/lang/words_by_section.html#block
+msgctxt "block.ogg"
+msgid "block"
+msgstr "blokea"
+
+#. object / object / board
+#. https://gcompris.net/incoming/lang/words_by_section.html#board
+msgctxt "board.ogg"
+msgid "board"
+msgstr "taula"
+
+#. object / object / bomb
+#. https://gcompris.net/incoming/lang/words_by_section.html#bomb
+msgctxt "bomb.ogg"
+msgid "bomb"
+msgstr "bonba"
+
+#. object / object / book
+#. https://gcompris.net/incoming/lang/words_by_section.html#book
+msgctxt "book.ogg"
+msgid "book"
+msgstr "liburua"
+
+#. object / object / box
+#. https://gcompris.net/incoming/lang/words_by_section.html#box
+msgctxt "box.ogg"
+msgid "box"
+msgstr "kutxa"
+
+#. object / object / bucket
+#. https://gcompris.net/incoming/lang/words_by_section.html#bucket
+msgctxt "bucket.ogg"
+msgid "bucket"
+msgstr "pertza"
+
+#. object / object / bulb
+#. https://gcompris.net/incoming/lang/words_by_section.html#bulb
+msgctxt "bulb.ogg"
+msgid "bulb"
+msgstr "bonbilla"
+
+#. object / object / camera
+#. https://gcompris.net/incoming/lang/words_by_section.html#camera
+msgctxt "camera.ogg"
+msgid "camera"
+msgstr "kamera"
+
+#. object / object / candle
+#. https://gcompris.net/incoming/lang/words_by_section.html#candle
+msgctxt "candle.ogg"
+msgid "candle"
+msgstr "kandela"
+
+#. object / object / cane
+#. https://gcompris.net/incoming/lang/words_by_section.html#cane
+msgctxt "cane.ogg"
+msgid "cane"
+msgstr "bastoia"
+
+#. object / object / canon
+#. https://gcompris.net/incoming/lang/words_by_section.html#canon
+msgctxt "canon.ogg"
+msgid "canon"
+msgstr "kanoia"
+
+#. object / object / card
+#. https://gcompris.net/incoming/lang/words_by_section.html#card
+msgctxt "card.ogg"
+msgid "card"
+msgstr "txartela"
+
+#. object / object / cart
+#. https://gcompris.net/incoming/lang/words_by_section.html#cart
+msgctxt "cart.ogg"
+msgid "cart"
+msgstr "orga"
+
+#. object / object / cash
+#. https://gcompris.net/incoming/lang/words_by_section.html#cash
+msgctxt "cash.ogg"
+msgid "cash"
+msgstr "eskudirua"
+
+#. object / object / chain
+#. https://gcompris.net/incoming/lang/words_by_section.html#chain
+msgctxt "chain.ogg"
+msgid "chain"
+msgstr "katea"
+
+#. object / object / chalk
+#. https://gcompris.net/incoming/lang/words_by_section.html#chalk
+msgctxt "chalk.ogg"
+msgid "chalk"
+msgstr "klariona"
+
+#. object / object / cigar
+#. https://gcompris.net/incoming/lang/words_by_section.html#cigar
+msgctxt "cigar.ogg"
+msgid "cigar"
+msgstr "purua"
+
+#. object / object / clay
+#. https://gcompris.net/incoming/lang/words_by_section.html#clay
+msgctxt "clay.ogg"
+msgid "clay"
+msgstr "buztina"
+
+#. object / object / cloth
+#. https://gcompris.net/incoming/lang/words_by_section.html#cloth
+msgctxt "cloth.ogg"
+msgid "cloth"
+msgstr "oihala"
+
+#. object / object / clothes hanger
+#. https://gcompris.net/incoming/lang/words_by_section.html#clothes%20hanger
+msgctxt "clothes_hanger.ogg"
+msgid "clothes hanger"
+msgstr "esekilekua"
+
+#. object / object / coin
+#. https://gcompris.net/incoming/lang/words_by_section.html#coin
+msgctxt "coin.ogg"
+msgid "coin"
+msgstr "txanpona"
+
+#. object / object / comb
+#. https://gcompris.net/incoming/lang/words_by_section.html#comb
+msgctxt "comb.ogg"
+msgid "comb"
+msgstr "orrazia"
+
+#. object / object / cone
+#. https://gcompris.net/incoming/lang/words_by_section.html#cone
+msgctxt "cone.ogg"
+msgid "cone"
+msgstr "konoa"
+
+#. object / object / cork
+#. https://gcompris.net/incoming/lang/words_by_section.html#cork
+msgctxt "cork.ogg"
+msgid "cork"
+msgstr "kortxoa"
+
+#. object / object / cross
+#. https://gcompris.net/incoming/lang/words_by_section.html#cross
+msgctxt "cross.ogg"
+msgid "cross"
+msgstr "gurutzea"
+
+#. object / object / crown
+#. https://gcompris.net/incoming/lang/words_by_section.html#crown
+msgctxt "crown.ogg"
+msgid "crown"
+msgstr "koroa"
+
+#. object / object / cube
+#. https://gcompris.net/incoming/lang/words_by_section.html#cube
+msgctxt "cube.ogg"
+msgid "cube"
+msgstr "kuboa"
+
+#. object / object / tire
+#. https://gcompris.net/incoming/lang/words_by_section.html#tire
+msgctxt "tire.ogg"
+msgid "tire"
+msgstr "pneumatikoa"
+
+#. object / object / dart board
+#. https://gcompris.net/incoming/lang/words_by_section.html#dart%20board
+msgctxt "dart_board.ogg"
+msgid "dart board"
+msgstr "dardo taula"
+
+#. object / object / dishcloth
+#. https://gcompris.net/incoming/lang/words_by_section.html#dishcloth
+msgctxt "dishcloth.ogg"
+msgid "dishcloth"
+msgstr "sukaldeko zapia"
+
+#. object / object / doll
+#. https://gcompris.net/incoming/lang/words_by_section.html#doll
+msgctxt "doll.ogg"
+msgid "doll"
+msgstr "panpina"
+
+#. object / object / domino
+#. https://gcompris.net/incoming/lang/words_by_section.html#domino
+msgctxt "domino.ogg"
+msgid "domino"
+msgstr "dominoa"
+
+#. object / object / drum
+#. https://gcompris.net/incoming/lang/words_by_section.html#drum
+msgctxt "drum.ogg"
+msgid "drum"
+msgstr "danborra"
+
+#. object / object / eraser
+#. https://gcompris.net/incoming/lang/words_by_section.html#eraser
+msgctxt "eraser.ogg"
+msgid "eraser"
+msgstr "ezabagoma"
+
+#. object / object / fire extinguisher
+#. https://gcompris.net/incoming/lang/words_by_section.html#fire%20extinguisher
+msgctxt "fire_extinguisher.ogg"
+msgid "fire extinguisher"
+msgstr "su-itzalgailua"
+
+#. object / object / flacon
+#. https://gcompris.net/incoming/lang/words_by_section.html#flacon
+msgctxt "flacon.ogg"
+msgid "flacon"
+msgstr "dosifikatzailea"
+
+#. object / object / flag
+#. https://gcompris.net/incoming/lang/words_by_section.html#flag
+msgctxt "flag.ogg"
+msgid "flag"
+msgstr "bandera"
+
+#. object / object / fluff
+#. https://gcompris.net/incoming/lang/words_by_section.html#fluff
+msgctxt "fluff.ogg"
+msgid "fluff"
+msgstr "ilauna"
+
+#. object / object / flute
+#. https://gcompris.net/incoming/lang/words_by_section.html#flute
+msgctxt "flute.ogg"
+msgid "flute"
+msgstr "txirula"
+
+#. object / object / game
+#. https://gcompris.net/incoming/lang/words_by_section.html#game
+msgctxt "game.ogg"
+msgid "game"
+msgstr "jokoa"
+
+#. object / object / gift
+#. https://gcompris.net/incoming/lang/words_by_section.html#gift
+msgctxt "gift.ogg"
+msgid "gift"
+msgstr "oparia"
+
+#. object / object / glasses
+#. https://gcompris.net/incoming/lang/words_by_section.html#glasses
+msgctxt "glasses.ogg"
+msgid "glasses"
+msgstr "betaurrekoak"
+
+#. object / object / glue
+#. https://gcompris.net/incoming/lang/words_by_section.html#glue
+msgctxt "glue.ogg"
+msgid "glue"
+msgstr "lekeda"
+
+#. object / object / grill
+#. https://gcompris.net/incoming/lang/words_by_section.html#grill
+msgctxt "grill.ogg"
+msgid "grill"
+msgstr "erretegia"
+
+#. object / object / hair-dryer
+#. https://gcompris.net/incoming/lang/words_by_section.html#hair-dryer
+msgctxt "hair_dryer.ogg"
+msgid "hair-dryer"
+msgstr "ile-lehorgailua"
+
+#. object / object / handlebar
+#. https://gcompris.net/incoming/lang/words_by_section.html#handlebar
+msgctxt "handlebar.ogg"
+msgid "handlebar"
+msgstr "eskulekua"
+
+#. object / object / harp
+#. https://gcompris.net/incoming/lang/words_by_section.html#harp
+msgctxt "harp.ogg"
+msgid "harp"
+msgstr "harpa"
+
+#. object / object / hook
+#. https://gcompris.net/incoming/lang/words_by_section.html#hook
+msgctxt "hook.ogg"
+msgid "hook"
+msgstr "kakoa"
+
+#. object / object / hose
+#. https://gcompris.net/incoming/lang/words_by_section.html#hose
+msgctxt "hose.ogg"
+msgid "hose"
+msgstr "mangera"
+
+#. object / object / ink
+#. https://gcompris.net/incoming/lang/words_by_section.html#ink
+msgctxt "ink.ogg"
+msgid "ink"
+msgstr "tinta"
+
+#. object / object / jewel
+#. https://gcompris.net/incoming/lang/words_by_section.html#jewel
+msgctxt "jewel.ogg"
+msgid "jewel"
+msgstr "bitxia"
+
+#. object / object / keel
+#. https://gcompris.net/incoming/lang/words_by_section.html#keel
+msgctxt "keel.ogg"
+msgid "keel"
+msgstr "gila"
+
+#. object / object / keyboard
+#. https://gcompris.net/incoming/lang/words_by_section.html#keyboard
+msgctxt "keyboard.ogg"
+msgid "keyboard"
+msgstr "teklatua"
+
+#. object / object / kite
+#. https://gcompris.net/incoming/lang/words_by_section.html#kite
+msgctxt "kite.ogg"
+msgid "kite"
+msgstr "kometa"
+
+#. object / object / knot
+#. https://gcompris.net/incoming/lang/words_by_section.html#knot
+msgctxt "knot.ogg"
+msgid "knot"
+msgstr "korapiloa"
+
+#. object / object / lasso
+#. https://gcompris.net/incoming/lang/words_by_section.html#lasso
+msgctxt "lasso.ogg"
+msgid "lasso"
+msgstr "lakioa"
+
+#. object / object / log
+#. https://gcompris.net/incoming/lang/words_by_section.html#log
+msgctxt "log.ogg"
+msgid "log"
+msgstr "enborra"
+
+#. object / object / magnet
+#. https://gcompris.net/incoming/lang/words_by_section.html#magnet
+msgctxt "magnet.ogg"
+msgid "magnet"
+msgstr "imana"
+
+#. object / object / magnifying glass
+#. https://gcompris.net/incoming/lang/words_by_section.html#magnifying%20glass
+msgctxt "magnifying_glass.ogg"
+msgid "magnifying glass"
+msgstr "lupa"
+
+#. object / object / mail
+#. https://gcompris.net/incoming/lang/words_by_section.html#mail
+msgctxt "mail.ogg"
+msgid "mail"
+msgstr "posta"
+
+#. object / object / map
+#. https://gcompris.net/incoming/lang/words_by_section.html#map
+msgctxt "map.ogg"
+msgid "map"
+msgstr "mapa"
+
+#. object / object / marble
+#. https://gcompris.net/incoming/lang/words_by_section.html#marble
+msgctxt "marble.ogg"
+msgid "marble"
+msgstr "puxtarria"
+
+#. object / object / mask
+#. https://gcompris.net/incoming/lang/words_by_section.html#mask
+msgctxt "mask.ogg"
+msgid "mask"
+msgstr "maskara"
+
+#. object / object / mast
+#. https://gcompris.net/incoming/lang/words_by_section.html#mast
+msgctxt "mast.ogg"
+msgid "mast"
+msgstr "masta"
+
+#. object / object / match
+#. https://gcompris.net/incoming/lang/words_by_section.html#match
+msgctxt "match.ogg"
+msgid "match"
+msgstr "pospoloa"
+
+#. object / object / medal
+#. https://gcompris.net/incoming/lang/words_by_section.html#medal
+msgctxt "medal.ogg"
+msgid "medal"
+msgstr "domina"
+
+#. object / object / microphone
+#. https://gcompris.net/incoming/lang/words_by_section.html#microphone
+msgctxt "microphone.ogg"
+msgid "microphone"
+msgstr "mikrofonoa"
+
+#. object / object / mirror
+#. https://gcompris.net/incoming/lang/words_by_section.html#mirror
+msgctxt "mirror.ogg"
+msgid "mirror"
+msgstr "ispilua"
+
+#. object / object / mixer
+#. https://gcompris.net/incoming/lang/words_by_section.html#mixer
+msgctxt "mixer.ogg"
+msgid "mixer"
+msgstr "nahasgailua"
+
+#. object / object / necklace
+#. https://gcompris.net/incoming/lang/words_by_section.html#necklace
+msgctxt "necklace.ogg"
+msgid "necklace"
+msgstr "lepokoa"
+
+#. object / object / nest
+#. https://gcompris.net/incoming/lang/words_by_section.html#nest
+msgctxt "nest.ogg"
+msgid "nest"
+msgstr "habia"
+
+#. object / object / net
+#. https://gcompris.net/incoming/lang/words_by_section.html#net
+msgctxt "net.ogg"
+msgid "net"
+msgstr "sarea"
+
+#. object / object / newspaper
+#. https://gcompris.net/incoming/lang/words_by_section.html#newspaper
+msgctxt "newspaper.ogg"
+msgid "newspaper"
+msgstr "egunkaria"
+
+#. object / object / notebook
+#. https://gcompris.net/incoming/lang/words_by_section.html#notebook
+msgctxt "notebook.ogg"
+msgid "notebook"
+msgstr "koadernoa"
+
+#. object / object / oar
+#. https://gcompris.net/incoming/lang/words_by_section.html#oar
+msgctxt "oar.ogg"
+msgid "oar"
+msgstr "arrauna"
+
+#. object / object / pacifier
+#. https://gcompris.net/incoming/lang/words_by_section.html#pacifier
+msgctxt "pacifier.ogg"
+msgid "pacifier"
+msgstr "zupakia"
+
+#. object / object / page
+#. https://gcompris.net/incoming/lang/words_by_section.html#page
+msgctxt "page.ogg"
+msgid "page"
+msgstr "orria"
+
+#. object / object / pair
+#. https://gcompris.net/incoming/lang/words_by_section.html#pair
+msgctxt "pair.ogg"
+msgid "pair"
+msgstr "bikotea"
+
+#. object / object / paper
+#. https://gcompris.net/incoming/lang/words_by_section.html#paper
+msgctxt "paper.ogg"
+msgid "paper"
+msgstr "papera"
+
+#. object / object / pearl
+#. https://gcompris.net/incoming/lang/words_by_section.html#pearl
+msgctxt "pearl.ogg"
+msgid "pearl"
+msgstr "perla"
+
+#. object / object / pen
+#. https://gcompris.net/incoming/lang/words_by_section.html#pen
+msgctxt "pen.ogg"
+msgid "pen"
+msgstr "bolaluma"
+
+#. object / object / pencil
+#. https://gcompris.net/incoming/lang/words_by_section.html#pencil
+msgctxt "pencil.ogg"
+msgid "pencil"
+msgstr "arkatza"
+
+#. object / object / phone
+#. https://gcompris.net/incoming/lang/words_by_section.html#phone
+msgctxt "phone.ogg"
+msgid "phone"
+msgstr "telefonoa"
+
+#. object / object / piano
+#. https://gcompris.net/incoming/lang/words_by_section.html#piano
+msgctxt "piano.ogg"
+msgid "piano"
+msgstr "pianoa"
+
+#. object / object / picture
+#. https://gcompris.net/incoming/lang/words_by_section.html#picture
+msgctxt "picture.ogg"
+msgid "picture"
+msgstr "irudia"
+
+#. object / object / pill
+#. https://gcompris.net/incoming/lang/words_by_section.html#pill
+msgctxt "pill.ogg"
+msgid "pill"
+msgstr "pilula"
+
+#. object / object / pillow
+#. https://gcompris.net/incoming/lang/words_by_section.html#pillow
+msgctxt "pillow.ogg"
+msgid "pillow"
+msgstr "burukoa"
+
+#. object / object / pipe
+#. https://gcompris.net/incoming/lang/words_by_section.html#pipe
+msgctxt "pipe.ogg"
+msgid "pipe"
+msgstr "hodia"
+
+#. object / object / pole
+#. https://gcompris.net/incoming/lang/words_by_section.html#pole
+msgctxt "pole.ogg"
+msgid "pole"
+msgstr "zutoina"
+
+#. object / object / prize
+#. https://gcompris.net/incoming/lang/words_by_section.html#prize
+msgctxt "prize.ogg"
+msgid "prize"
+msgstr "saria"
+
+#. object / object / radio
+#. https://gcompris.net/incoming/lang/words_by_section.html#radio
+msgctxt "radio.ogg"
+msgid "radio"
+msgstr "irratia"
+
+#. object / object / rag
+#. https://gcompris.net/incoming/lang/words_by_section.html#rag
+msgctxt "rag.ogg"
+msgid "rag"
+msgstr "trapua"
+
+#. object / object / razor
+#. https://gcompris.net/incoming/lang/words_by_section.html#razor
+msgctxt "razor.ogg"
+msgid "razor"
+msgstr "bizar-aitzurra"
+
+#. object / object / rifle
+#. https://gcompris.net/incoming/lang/words_by_section.html#rifle
+msgctxt "rifle.ogg"
+msgid "rifle"
+msgstr "fusila"
+
+#. object / object / robot
+#. https://gcompris.net/incoming/lang/words_by_section.html#robot
+msgctxt "robot.ogg"
+msgid "robot"
+msgstr "robota"
+
+#. object / object / rolling pin
+#. https://gcompris.net/incoming/lang/words_by_section.html#rolling%20pin
+msgctxt "rolling_pin.ogg"
+msgid "rolling pin"
+msgstr "arrabola"
+
+#. object / object / rope
+#. https://gcompris.net/incoming/lang/words_by_section.html#rope
+msgctxt "rope.ogg"
+msgid "rope"
+msgstr "soka"
+
+#. object / object / saddle
+#. https://gcompris.net/incoming/lang/words_by_section.html#saddle
+msgctxt "saddle.ogg"
+msgid "saddle"
+msgstr "zela"
+
+#. object / object / school bag
+#. https://gcompris.net/incoming/lang/words_by_section.html#school%20bag
+msgctxt "school_bag.ogg"
+msgid "school bag"
+msgstr "eskolako motxila"
+
+#. object / object / sign
+#. https://gcompris.net/incoming/lang/words_by_section.html#sign
+msgctxt "sign.ogg"
+msgid "sign"
+msgstr "seinalea"
+
+#. object / object / sleigh
+#. https://gcompris.net/incoming/lang/words_by_section.html#sleigh
+msgctxt "sleigh.ogg"
+msgid "sleigh"
+msgstr "elur lera"
+
+#. object / object / slide
+#. https://gcompris.net/incoming/lang/words_by_section.html#slide
+msgctxt "slide.ogg"
+msgid "slide"
+msgstr "txirrista"
+
+#. object / object / slot
+#. https://gcompris.net/incoming/lang/words_by_section.html#slot
+msgctxt "slot.ogg"
+msgid "slot"
+msgstr "zirrikitua"
+
+#. object / object / soap
+#. https://gcompris.net/incoming/lang/words_by_section.html#soap
+msgctxt "soap.ogg"
+msgid "soap"
+msgstr "xaboia"
+
+#. object / object / spark
+#. https://gcompris.net/incoming/lang/words_by_section.html#spark
+msgctxt "spark.ogg"
+msgid "spark"
+msgstr "txinparta"
+
+#. object / object / spinning top
+#. https://gcompris.net/incoming/lang/words_by_section.html#spinning%20top
+msgctxt "spinning_top.ogg"
+msgid "spinning top"
+msgstr "ziba"
+
+#. object / object / spool
+#. https://gcompris.net/incoming/lang/words_by_section.html#spool
+msgctxt "spool.ogg"
+msgid "spool"
+msgstr "txirrika"
+
+#. object / object / squirt
+#. https://gcompris.net/incoming/lang/words_by_section.html#squirt
+msgctxt "squirt.ogg"
+msgid "squirt"
+msgstr "zurrusta"
+
+#. object / object / stack
+#. https://gcompris.net/incoming/lang/words_by_section.html#stack
+msgctxt "stack.ogg"
+msgid "stack"
+msgstr "pila"
+
+#. object / object / stamp
+#. https://gcompris.net/incoming/lang/words_by_section.html#stamp
+msgctxt "stamp.ogg"
+msgid "stamp"
+msgstr "zigilua"
+
+#. object / object / straw
+#. https://gcompris.net/incoming/lang/words_by_section.html#straw
+msgctxt "straw.ogg"
+msgid "straw"
+msgstr "lastoa"
+
+#. object / object / string
+#. https://gcompris.net/incoming/lang/words_by_section.html#string
+msgctxt "string.ogg"
+msgid "string"
+msgstr "soka"
+
+#. object / object / suitcase
+#. https://gcompris.net/incoming/lang/words_by_section.html#suitcase
+msgctxt "suitcase.ogg"
+msgid "suitcase"
+msgstr "maleta"
+
+#. object / object / tag
+#. https://gcompris.net/incoming/lang/words_by_section.html#tag
+msgctxt "tag.ogg"
+msgid "tag"
+msgstr "etiketa"
+
+#. object / object / teddy
+#. https://gcompris.net/incoming/lang/words_by_section.html#teddy
+msgctxt "teddy.ogg"
+msgid "teddy"
+msgstr "hartzatxo panpina"
+
+#. object / object / thread
+#. https://gcompris.net/incoming/lang/words_by_section.html#thread
+msgctxt "thread.ogg"
+msgid "thread"
+msgstr "haria"
+
+#. object / object / ticket
+#. https://gcompris.net/incoming/lang/words_by_section.html#ticket
+msgctxt "ticket.ogg"
+msgid "ticket"
+msgstr "txartela"
+
+#. object / object / tissue
+#. https://gcompris.net/incoming/lang/words_by_section.html#tissue
+msgctxt "tissue.ogg"
+msgid "tissue"
+msgstr "paperezko mukizapia"
+
+#. object / object / torch
+#. https://gcompris.net/incoming/lang/words_by_section.html#torch
+msgctxt "torch.ogg"
+msgid "torch"
+msgstr "zuzia"
+
+#. object / object / towel
+#. https://gcompris.net/incoming/lang/words_by_section.html#towel
+msgctxt "towel.ogg"
+msgid "towel"
+msgstr "eskuoihala"
+
+#. object / object / toy
+#. https://gcompris.net/incoming/lang/words_by_section.html#toy
+msgctxt "toy.ogg"
+msgid "toy"
+msgstr "jostailua"
+
+#. object / object / trap
+#. https://gcompris.net/incoming/lang/words_by_section.html#trap
+msgctxt "trap.ogg"
+msgid "trap"
+msgstr "tranpa"
+
+#. object / object / tube
+#. https://gcompris.net/incoming/lang/words_by_section.html#tube
+msgctxt "tube.ogg"
+msgid "tube"
+msgstr "ezpainetako margoa"
+
+#. object / object / umbrella
+#. https://gcompris.net/incoming/lang/words_by_section.html#umbrella
+msgctxt "umbrella.ogg"
+msgid "umbrella"
+msgstr "aterkia"
+
+#. object / object / watch
+#. https://gcompris.net/incoming/lang/words_by_section.html#watch
+msgctxt "watch.ogg"
+msgid "watch"
+msgstr "erlojua"
+
+#. object / object / wheel
+#. https://gcompris.net/incoming/lang/words_by_section.html#wheel
+msgctxt "wheel.ogg"
+msgid "wheel"
+msgstr "gurpila"
+
+#. object / object / wig
+#. https://gcompris.net/incoming/lang/words_by_section.html#wig
+msgctxt "wig.ogg"
+msgid "wig"
+msgstr "ileordea"
+
+#. object / object / wood
+#. https://gcompris.net/incoming/lang/words_by_section.html#wood
+msgctxt "wood.ogg"
+msgid "wood"
+msgstr "zura"
+
+#. object / object / wreath
+#. https://gcompris.net/incoming/lang/words_by_section.html#wreath
+msgctxt "wreath.ogg"
+msgid "wreath"
+msgstr "girlanda"
+
+#. object / object / ball of yarn
+#. https://gcompris.net/incoming/lang/words_by_section.html#ball%20of%20yarn
+msgctxt "ball_of_yarn.ogg"
+msgid "ball of yarn"
+msgstr "artilezko piru bola"
+
+#. object / object / foam
+#. https://gcompris.net/incoming/lang/words_by_section.html#foam
+msgctxt "foam.ogg"
+msgid "foam"
+msgstr "aparra"
+
+#. object / tool / ax
+#. https://gcompris.net/incoming/lang/words_by_section.html#ax
+msgctxt "ax.ogg"
+msgid "ax"
+msgstr "aizkora"
+
+#. object / tool / bolt
+#. https://gcompris.net/incoming/lang/words_by_section.html#bolt
+msgctxt "bolt.ogg"
+msgid "bolt"
+msgstr "torlojua"
+
+#. object / tool / brick
+#. https://gcompris.net/incoming/lang/words_by_section.html#brick
+msgctxt "brick.ogg"
+msgid "brick"
+msgstr "adreilua"
+
+#. object / tool / brush
+#. https://gcompris.net/incoming/lang/words_by_section.html#brush
+msgctxt "brush.ogg"
+msgid "brush"
+msgstr "brotxa"
+
+#. object / tool / flash
+#. https://gcompris.net/incoming/lang/words_by_section.html#flash
+msgctxt "flash.ogg"
+msgid "flash"
+msgstr "esku-argia, linterna"
+
+#. object / tool / hammer
+#. https://gcompris.net/incoming/lang/words_by_section.html#hammer
+msgctxt "hammer.ogg"
+msgid "hammer"
+msgstr "mailua"
+
+#. object / tool / mower
+#. https://gcompris.net/incoming/lang/words_by_section.html#mower
+msgctxt "mower.ogg"
+msgid "mower"
+msgstr "sega-makina"
+
+#. object / tool / needle
+#. https://gcompris.net/incoming/lang/words_by_section.html#needle
+msgctxt "needle.ogg"
+msgid "needle"
+msgstr "orratza"
+
+#. object / tool / pliers
+#. https://gcompris.net/incoming/lang/words_by_section.html#pliers
+msgctxt "pliers.ogg"
+msgid "pliers"
+msgstr "aliketak"
+
+#. object / tool / rake
+#. https://gcompris.net/incoming/lang/words_by_section.html#rake
+msgctxt "rake.ogg"
+msgid "rake"
+msgstr "eskuarea"
+
+#. object / tool / scissors
+#. https://gcompris.net/incoming/lang/words_by_section.html#scissors
+msgctxt "scissors.ogg"
+msgid "scissors"
+msgstr "artaziak"
+
+#. object / tool / screw
+#. https://gcompris.net/incoming/lang/words_by_section.html#screw
+msgctxt "screw.ogg"
+msgid "screw"
+msgstr "torlojua"
+
+#. object / tool / screwdriver
+#. https://gcompris.net/incoming/lang/words_by_section.html#screwdriver
+msgctxt "screwdriver.ogg"
+msgid "screwdriver"
+msgstr "bihurkina"
+
+#. object / tool / shovel
+#. https://gcompris.net/incoming/lang/words_by_section.html#shovel
+msgctxt "shovel.ogg"
+msgid "shovel"
+msgstr "pala"
+
+#. object / tool / spade
+#. https://gcompris.net/incoming/lang/words_by_section.html#spade
+msgctxt "spade.ogg"
+msgid "spade"
+msgstr "laia"
+
+#. object / tool / spear
+#. https://gcompris.net/incoming/lang/words_by_section.html#spear
+msgctxt "spear.ogg"
+msgid "spear"
+msgstr "arpoia"
+
+#. object / tool / tape measure
+#. https://gcompris.net/incoming/lang/words_by_section.html#tape%20measure
+msgctxt "tape_measure.ogg"
+msgid "tape measure"
+msgstr "neurketa-zinta"
+
+#. object / tool / tool
+#. https://gcompris.net/incoming/lang/words_by_section.html#tool
+msgctxt "tool.ogg"
+msgid "tool"
+msgstr "tresna"
+
+#. object / tool / wedge
+#. https://gcompris.net/incoming/lang/words_by_section.html#wedge
+msgctxt "wedge.ogg"
+msgid "wedge"
+msgstr "ziria"
+
+#. object / tool / wrench
+#. https://gcompris.net/incoming/lang/words_by_section.html#wrench
+msgctxt "wrench.ogg"
+msgid "wrench"
+msgstr "giltza ingelesa"
+
+#. object / transport / bike
+#. https://gcompris.net/incoming/lang/words_by_section.html#bike
+msgctxt "bike.ogg"
+msgid "bike"
+msgstr "bizikleta"
+
+#. object / transport / boat
+#. https://gcompris.net/incoming/lang/words_by_section.html#boat
+msgctxt "boat.ogg"
+msgid "boat"
+msgstr "txalupa"
+
+#. object / transport / bus
+#. https://gcompris.net/incoming/lang/words_by_section.html#bus
+msgctxt "bus.ogg"
+msgid "bus"
+msgstr "autobusa"
+
+#. object / transport / canoe
+#. https://gcompris.net/incoming/lang/words_by_section.html#canoe
+msgctxt "canoe.ogg"
+msgid "canoe"
+msgstr "kanoa"
+
+#. object / transport / car
+#. https://gcompris.net/incoming/lang/words_by_section.html#car
+msgctxt "car.ogg"
+msgid "car"
+msgstr "beribila"
+
+#. object / transport / motorcycle
+#. https://gcompris.net/incoming/lang/words_by_section.html#motorcycle
+msgctxt "motorcycle.ogg"
+msgid "motorcycle"
+msgstr "motozikleta"
+
+#. object / transport / parachute
+#. https://gcompris.net/incoming/lang/words_by_section.html#parachute
+msgctxt "parachute.ogg"
+msgid "parachute"
+msgstr "jausgailua"
+
+#. object / transport / plane
+#. https://gcompris.net/incoming/lang/words_by_section.html#plane
+msgctxt "plane.ogg"
+msgid "plane"
+msgstr "hegazkina"
+
+#. object / transport / raft
+#. https://gcompris.net/incoming/lang/words_by_section.html#raft
+msgctxt "raft.ogg"
+msgid "raft"
+msgstr "baltsa"
+
+#. object / transport / sail
+#. https://gcompris.net/incoming/lang/words_by_section.html#sail
+msgctxt "sail.ogg"
+msgid "sail"
+msgstr "belaontzia"
+
+#. object / transport / ship
+#. https://gcompris.net/incoming/lang/words_by_section.html#ship
+msgctxt "ship.ogg"
+msgid "ship"
+msgstr "ontzia"
+
+#. object / transport / sled
+#. https://gcompris.net/incoming/lang/words_by_section.html#sled
+msgctxt "sled.ogg"
+msgid "sled"
+msgstr "lera"
+
+#. object / transport / taxi
+#. https://gcompris.net/incoming/lang/words_by_section.html#taxi
+msgctxt "taxi.ogg"
+msgid "taxi"
+msgstr "taxia"
+
+#. object / transport / train
+#. https://gcompris.net/incoming/lang/words_by_section.html#train
+msgctxt "train.ogg"
+msgid "train"
+msgstr "trena"
+
+#. object / transport / truck
+#. https://gcompris.net/incoming/lang/words_by_section.html#truck
+msgctxt "truck.ogg"
+msgid "truck"
+msgstr "Kamioia"
+
+#. object / transport / van
+#. https://gcompris.net/incoming/lang/words_by_section.html#van
+msgctxt "van.ogg"
+msgid "van"
+msgstr "furgoneta"
+
+#~ msgctxt "orange-color.ogg"
+#~ msgid "orange color"
+#~ msgstr "laranja kolorea"

@@ -1,0 +1,1289 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Stelios <sstavra@gmail.com>, 2017, 2020, 2021.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-09-26 00:40+0000\n"
+"PO-Revision-Date: 2021-09-26 08:10+0300\n"
+"Last-Translator: Stelios <sstavra@gmail.com>\n"
+"Language-Team: Greek <kde-i18n-el@kde.org>\n"
+"Language: el\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 20.04.2\n"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "advanced_colors"
+#: activities/advanced_colors/ActivityInfo.qml:18
+#, kde-format
+msgid "click on the required color"
+msgstr "κάνε κλικ στο απαιτούμενο χρώμα"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "algebra_by"
+#: activities/algebra_by/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Multiply the two numbers together and type in your answer before the balloon "
+"lands in the water"
+msgstr ""
+"Πολλαπλασίασε τους δύο αριθμούς και πληκτρολόγησε την απάντησή σου πριν το "
+"μπαλόνι προσγειωθεί στο νερό"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "algebra_div"
+#: activities/algebra_div/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Find the result of the division and type in your answer before the balloon "
+"lands in the water"
+msgstr ""
+"Βρες το αποτέλεσμα της διαίρεσης και πληκτρολόγησε την απάντησή σου πριν το "
+"μπαλόνι προσγειωθεί στο νερό"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "algebra_minus"
+#: activities/algebra_minus/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Subtract the two numbers and type in your answer before the balloon lands in "
+"the water"
+msgstr ""
+"Αφαίρεσε τους δύο αριθμούς και πληκτρολόγησε την απάντησή σου πριν το "
+"μπαλόνι προσγειωθεί στο νερό"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "algebra_plus"
+#: activities/algebra_plus/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Add the two numbers together and type in your answer before the balloon "
+"lands in the water"
+msgstr ""
+"Πρόσθεσε τους δύο αριθμούς και πληκτρολόγησε την απάντησή σου πριν το "
+"μπαλόνι προσγειωθεί στο νερό"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "algorithm"
+#: activities/algorithm/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Click on the missing items on the table and follow the logical sequence "
+"displayed above it."
+msgstr ""
+"Κάνε κλικ στο αντικείμενο που λείπει από το τραπέζι και ακολούθησε τη λογική "
+"ακολουθία που εμφανίζεται από πάνω του."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "align4"
+#: activities/align4/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Click on the column where you wish your token to fall and try to align of 4 "
+"tokens before Tux."
+msgstr ""
+"Κάνε κλικ στη στήλη όπου θέλεις να πέσει το πιόνι σου και προσπάθησε να "
+"ευθυγραμμίσεις 4 πιόνια πριν από τον Tux."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "align4_2players"
+#: activities/align4_2players/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Click on the column where you wish your token to fall and try to align 4 "
+"tokens to win."
+msgstr ""
+"Κάνε κλικ στη στήλη όπου θέλεις να πέσει το πιόνι σου και προσπάθησε να "
+"ευθυγραμμίσεις 4 πιόνια για να κερδίσεις."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "alphabet-sequence"
+#: activities/alphabet-sequence/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Move the helicopter to catch the clouds following the order of the alphabet."
+msgstr ""
+"Μετακίνησε το ελικόπτερο για να πιάσεις τα σύννεφα με αλφαβητική σειρά."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "analog_electricity"
+#: activities/analog_electricity/ActivityInfo.qml:18
+#, kde-format
+msgid "Learn how analog electricity works and create your own circuit."
+msgstr ""
+"Μάθε πώς λετουργεί ο αναλογικός ηλεκτρισμός και σχεδίασε το δικό σου κύκλωμα."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "baby_keyboard"
+#: activities/baby_keyboard/ActivityInfo.qml:18
+#, kde-format
+msgid "Type any key on the keyboard and observe the result."
+msgstr ""
+"Πίεσε οποιοδήποτε πλήκτρο στο πληκτρολόγιο και παρατήρησε το αποτέλεσμα."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "baby_mouse"
+#: activities/baby_mouse/ActivityInfo.qml:17
+#, kde-format
+msgid "Move the mouse or touch the screen and observe the result."
+msgstr "Μετακίνησε το ποντίκι ή άγγιξε την οθόνη και παρατήρησε το αποτέλεσμα."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "baby_tangram"
+#: activities/baby_tangram/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Move each puzzle piece, to obtain the completed puzzle. You can change their "
+"orientation by clicking on the arrows."
+msgstr ""
+"Τοποθέτησε τα κομμάτια για να ολοκληρώσεις το παζλ. Μπορείς να αλλάξεις τον "
+"προσανατολισμό τους με κλικ στα βελάκια."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "baby_wordprocessor"
+#: activities/baby_wordprocessor/ActivityInfo.qml:18
+#, kde-format
+msgid "A simplistic word processor to play around with the keyboard"
+msgstr "Ένας απλοϊκός επεξεργαστής κειμένου για παιχνίδι με το πληκτρολόγιο"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "babymatch"
+#: activities/babymatch/ActivityInfo.qml:21
+#, kde-format
+msgid "Drag and drop the objects matching the pictures"
+msgstr "Σύρε και άφησε τα αντικείμενα που ταιριάζουν με τις εικόνες"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "babyshapes"
+#: activities/babyshapes/ActivityInfo.qml:22
+#, kde-format
+msgid "Drag and drop the objects matching the shapes."
+msgstr "Σύρε και άφησε τα αντικείμενα που ταιριάζουν με τα σχήματα."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "balancebox"
+#: activities/balancebox/ActivityInfo.qml:21
+#, kde-format
+msgid "Tilt the box to navigate the ball to the door."
+msgstr "Δώσε κλίση στο κουτί για να οδηγήσεις τη μπάλα προς την πόρτα."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "ballcatch"
+#: activities/ballcatch/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Press the left and right arrows at the same time to send the ball straight on"
+msgstr ""
+"Πίεσε το αριστερό και δεξί βέλος ταυτόχρονα για να στείλεις τη μπάλα ευθεία "
+"μπροστά"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "bargame"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "bargame_2players"
+#: activities/bargame/ActivityInfo.qml:19
+#: activities/bargame_2players/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Select the number of balls you wish to place in the holes and then click on "
+"the OK button. The winner is the one who hasn't put a ball in the red hole."
+msgstr ""
+"Επίλεξε τον αριθμό από μπάλες που θέλεις να τοποθετήσεις στις οπές και κάνε "
+"κλικ στο κουμπί Εντάξει. Ο νικητής είναι όποιος δεν έχει τοποθετήσει μπάλα "
+"στην κόκκινη οπή."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "binary_bulb"
+#: activities/binary_bulb/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Turn on the right bulbs to represent the binary of the given decimal number. "
+"When you have achieved it, press OK"
+msgstr ""
+"Άναψε τις λάμπες στα δεξιά για να αναπαραστήσεις το δυαδικό μέρος του "
+"δοσμένου δεκαδικού αριθμού. Όταν το καταφέρεις, πάτησε το Οκέι"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "braille_alphabets"
+#: activities/braille_alphabets/ActivityInfo.qml:18
+#, kde-format
+msgid "Click on Tux to start and then re-create the Braille cells."
+msgstr ""
+"Κάνε κλικ στον Tux για να ξεκινήσεις και να επαναδημιουργήσεις τα κελιά "
+"Braille."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "braille_fun"
+#: activities/braille_fun/ActivityInfo.qml:18
+#, kde-format
+msgid "Create the Braille cell for the letter."
+msgstr "Δημιούργησε το κελί Braille για το γράμμα."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "calendar"
+#: activities/calendar/ActivityInfo.qml:18
+#, kde-format
+msgid "Select the asked date on the calendar"
+msgstr "Επιλέξτε τη ζητούμενη ημερομηνία στο ημερολόγιο"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "canal_lock"
+#: activities/canal_lock/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"You are responsible for the lock and you must help Tux pass through. Click "
+"on the valves to cause either a drop or an increase in the water level, and "
+"click on the gates to open or close a path."
+msgstr ""
+"Είσαι υπεύθυνος για το κλείδωμα και πρέπει να βοηθήσεις τον Tux να το "
+"ξεπεράσει. Κάνε κλικ στις βαλβίδες ώστε να προκαλέσεις μείωση ή αύξηση της "
+"στάθμης του νερού και κάνε κλικ στις πύλες για να ανοιγοκλείσεις μια "
+"διαδρομή."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "categorization"
+#: activities/categorization/ActivityInfo.qml:18
+#, kde-format
+msgid "Categorize the items into the correct group"
+msgstr "Κατηγοριοποίησε τα αντικείμενα στη σωστή ομάδα"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "checkers"
+#: activities/checkers/ActivityInfo.qml:18
+#, fuzzy, kde-format
+#| msgid "play chess against Tux"
+msgid "play checkers against Tux"
+msgstr "παίξε σκάκι με τον Tux"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "checkers_2players"
+#: activities/checkers_2players/ActivityInfo.qml:18
+#, kde-format
+msgid "play checkers with your friend"
+msgstr "παίξε ντάμα με τον φίλο σου"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "chess"
+#: activities/chess/ActivityInfo.qml:18
+#, kde-format
+msgid "play chess against Tux"
+msgstr "παίξε σκάκι με τον Tux"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "chess_2players"
+#: activities/chess_2players/ActivityInfo.qml:18
+#, kde-format
+msgid "play chess against your friend"
+msgstr "παίξε σκάκι με το φίλο σου"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "chess_partyend"
+#: activities/chess_partyend/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Click on a white chess piece and green boxes will appear to indicate all the "
+"movements that piece can make. Try and get the black king into checkmate."
+msgstr ""
+"Κάνε κλικ σε ένα λευκό πιόνι και πράσινα κουτιά θα εμφανιστούν που θα "
+"δηλώνουν ποιες κινήσεις μπορεί να κάνει αυτό το πιόνι. Προσπάθησε να κάνεις "
+"ματ στο μαύρο βασιλιά."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "chronos"
+#: activities/chronos/ActivityInfo.qml:22
+#, kde-format
+msgid "Slide the pictures into the order that tells the story"
+msgstr "Μετακύλισε τις εικόνες στη σειρά που ταιριάζει στην αφήγηση"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "click_on_letter_up"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "click_on_letter"
+#: activities/click_on_letter/ActivityInfo.qml:18
+#: activities/click_on_letter_up/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Click on the required letter. You can listen to it again by clicking on the "
+"mouth."
+msgstr ""
+"Κάνε κλικ στο απαιτούμενο γράμμα. Μπορείς να ακούσεις τον ήχο του πάλι με "
+"κλικ στο στόμα."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "clickanddraw"
+#: activities/clickanddraw/ActivityInfo.qml:18
+#, kde-format
+msgid "Click on the selected points and draw"
+msgstr "Κάνε κλικ στα επιλεγμένα σημεία και ζωγράφισε"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "clickgame"
+#: activities/clickgame/ActivityInfo.qml:18
+#, kde-format
+msgid "Catch the fish before they leave the aquarium."
+msgstr "Πιάσε τα ψάρια πριν φύγουν από το ενυδρείο."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "clockgame"
+#: activities/clockgame/ActivityInfo.qml:18
+#, kde-format
+msgid "Drag and drop the needles of the clock to display the required time"
+msgstr ""
+"Σύρε και άφησε τις βελόνες του ρολογιού για να εμφανιστεί η ζητούμενη ώρα"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "color_mix"
+#: activities/color_mix/ActivityInfo.qml:18
+#, kde-format
+msgid "Match the color by moving the sliders on the tubes of paint"
+msgstr "Ταίριαξε το χρώμα με κύλιση πάνω στις γραμμές της βαφής"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "color_mix_light"
+#: activities/color_mix_light/ActivityInfo.qml:18
+#, kde-format
+msgid "Match the color by moving the sliders on the torches"
+msgstr "Ταίριαξε το χρώμα με κύλιση πάνω στους φακούς"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "colors"
+#: activities/colors/ActivityInfo.qml:18
+#, kde-format
+msgid "Click on the right color"
+msgstr "Κάνε κλικ στο σωστό χρώμα"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "crane"
+#: activities/crane/ActivityInfo.qml:23
+#, kde-format
+msgid ""
+" Click on each item in turn, in the blue frame, and move them to reproduce "
+"the pattern from the pink frame."
+msgstr ""
+"Κάνε κλικ με τη σειρά στα αντικείμενο στο μπλε πλαίσιο και μετακίνησέ τα "
+"ώστε να αναπαραχθεί το μοτίβο από το ροζ πλαίσιο."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "details"
+#: activities/details/ActivityInfo.qml:21
+#, kde-format
+msgid "Slide the images on their respective targets"
+msgstr "Μετακύλισε τις εικόνες στους αντίστοιχους προορισμούς"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "digital_electricity"
+#: activities/digital_electricity/ActivityInfo.qml:18
+#, kde-format
+msgid "Learn how digital electronics work and create your own circuit."
+msgstr ""
+"Μάθε πώς λετουργούν τα ψηφιακά ηλεκτρονικά και σχεδίασε το δικό σου κύκλωμα."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "drawletters"
+#: activities/drawletters/ActivityInfo.qml:18
+#, kde-format
+msgid "Click on the selected points and draw the letter"
+msgstr "Κάνε κλικ στα επιλεγμένα σημεία και ζωγράφισε το γράμμα"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "drawnumbers"
+#: activities/drawnumbers/ActivityInfo.qml:18
+#, kde-format
+msgid "Draw the numbers by connecting the dots in the correct order."
+msgstr "Ζωγράφισε τους αριθμούς συνδέοντας τις τελείες στη σωστή σειρά."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "enumerate"
+#: activities/enumerate/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Count the elements by organizing them then type the answer on your keyboard."
+msgstr ""
+"Υπολόγισε τα αντικείμενα οργανώνοντάς τα και πληκτρολόγησε την απάντησή σου."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "erase"
+#: activities/erase/ActivityInfo.qml:18
+#, kde-format
+msgid " Clear the window with your sponge and discover the hidden picture."
+msgstr ""
+"Καθάρισε το παράθυρο με το σφουγγάρι σου και ανακάλυψε την κρυμμένη εικόνα."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "erase_2clic"
+#: activities/erase_2clic/ActivityInfo.qml:18
+#, kde-format
+msgid "Double tap or double click on the bricks to discover the hidden picture"
+msgstr ""
+"Διπλό χτύπημα ή διπλό κλικ στα τούβλα για να ανακαλύψεις την κρυμμένη εικόνα"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "erase_clic"
+#: activities/erase_clic/ActivityInfo.qml:18
+#, kde-format
+msgid "Click or tap on the transparent bricks and discover the hidden picture."
+msgstr ""
+"Κάνε κλικ στην κορυφή των διάφανων τούβλων και ανακάλυψε την κρυμμένη εικόνα."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "explore_farm_animals"
+#: activities/explore_farm_animals/ActivityInfo.qml:18
+#, kde-format
+msgid "Learn about farmyard animals and the noises that they make."
+msgstr "Μάθε για τα ζώα του αγροκτήματος και τους ήχους που κάνουν."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "explore_monuments"
+#: activities/explore_monuments/ActivityInfo.qml:18
+#, kde-format
+msgid "Explore Monuments around the world."
+msgstr "Εξερεύνησε μνημεία από όλον τον κόσμο."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "explore_world_animals"
+#: activities/explore_world_animals/ActivityInfo.qml:22
+#, kde-format
+msgid "Learn about world animals and locate them on a map."
+msgstr "Μάθε για τα ζώα στη γη και ανακάλυψέ τα πάνω στο χάρτη."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "explore_world_music"
+#: activities/explore_world_music/ActivityInfo.qml:18
+#, kde-format
+msgid "Click on the suitcases to learn about music from around the world."
+msgstr ""
+"Κάνε κλικ στις αποσκευές για να μάθεις για τη μουσική από όλον τον κόσμο."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "family"
+#: activities/family/ActivityInfo.qml:18
+#, kde-format
+msgid "Let us understand what to call our relatives"
+msgstr "Ας κατανοήσουμε πώς να ονομάζουμε τους συγγενείς μας"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "family_find_relative"
+#: activities/family_find_relative/ActivityInfo.qml:18
+#, kde-format
+msgid "Click on a pair that defines the given relation"
+msgstr "Κάνε κλικ στο ζεύγος που ορίζει τη δοσμένη σχέση"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "fifteen"
+#: activities/fifteen/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Click or drag an element next to a free space, the element will move and "
+"release its space. You must put all the pieces in the correct order. The "
+"numbers on the pieces can help you."
+msgstr ""
+"Κάνε κλικ ή τράβηξε ένα αντικείμενο δίπλα σε ελεύθερο χώρο. Το αντικείμενο "
+"θα μετακινηθεί και θα ελευθερώσει το χώρο του. Πρέπει να τοποθετήσεις όλα τα "
+"κομμάτια στη σωστή σειρά. Οι αριθμοί πάνω στα κομμάτια θα σε βοηθήσουν."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "find_the_day"
+#: activities/find_the_day/ActivityInfo.qml:18
+#, kde-format
+msgid "Select the required day."
+msgstr "Επίλεξε την απαιτούμενη ημέρα."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "followline"
+#: activities/followline/ActivityInfo.qml:18
+#, kde-format
+msgid " Move the mouse or your finger along the pipe to stop the fire."
+msgstr ""
+" Μετακίνησε το ποντίκι ή το δάχτυλό σου κατά μήκος του σωλήνα για να σβήσεις "
+"τη φωτιά."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "football"
+#: activities/football/ActivityInfo.qml:18
+#, kde-format
+msgid "Drag a line from the ball to set the speed and direction of your kick."
+msgstr ""
+"Σύρε μια γραμμή από τη μπάλα για να ορίσεις την ταχύτητα και την κατεύθυνση "
+"του λακτίσματός σου."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "fractions_create"
+#: activities/fractions_create/ActivityInfo.qml:19
+#, kde-format
+msgid ""
+"Select the appropriate number of parts as described in the instructions."
+msgstr ""
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "fractions_find"
+#: activities/fractions_find/ActivityInfo.qml:17
+#, kde-format
+msgid "Find the correct numerator and denominator of the represented fraction"
+msgstr ""
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "geo-country"
+#: activities/geo-country/ActivityInfo.qml:22
+#, kde-format
+msgid "Drag and drop the regions to complete the country maps."
+msgstr "Σύρε και άφησε τις περιοχές για να συμπληρωθούν οι χάρτες των χωρών."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "geography"
+#: activities/geography/ActivityInfo.qml:22
+#, kde-format
+msgid "Drag and drop the objects to complete the map."
+msgstr "Σύρε και άφησε τα αντιεκίμενα για να συμπληρώσεις το χάρτη."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "gletters"
+#: activities/gletters/ActivityInfo.qml:18
+#, kde-format
+msgid "Type the letters on your keyboard before they reach the ground."
+msgstr "Πληκτρολόγησε τα γράμματα πριν αυτά φθάσουν στο έδαφος."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "gnumch-equality"
+#: activities/gnumch-equality/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Guide the number eater with the arrow keys to the required numbers and press "
+"the space bar to swallow them."
+msgstr ""
+"Οδήγησε με τα βελάκια το φαγάνα στους αριθμούς και πίεσε το κενό για να τους "
+"καταπιεί."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "gnumch-factors"
+#: activities/gnumch-factors/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Guide the number eater with the arrow keys to the factors of the displayed "
+"number and press space to swallow them."
+msgstr ""
+"Οδήγησε με τα βελάκια το φαγάνα των αριθμών στους παράγοντες του "
+"εμφανιζόμενου αριθμού και πάτησε το κενό για να τους καταπιεί."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "gnumch-inequality"
+#: activities/gnumch-inequality/ActivityInfo.qml:19
+#, kde-format
+msgid ""
+"Guide the number eater with the arrow keys to the numbers that are different "
+"from the ones displayed and press the space bar to swallow them."
+msgstr ""
+"Οδήγησε με τα βελάκια το φαγάνα των αριθμών στους αριθμούς που διαφέρουν από "
+"τους εμφανιζόμενους και πάτησε το κενό για να τους καταπιεί."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "gnumch-multiples"
+#: activities/gnumch-multiples/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Guide the number eater with the arrow keys to the multiples of the displayed "
+"number and press space to swallow them."
+msgstr ""
+"Οδήγησε με τα βελάκια το φαγάνα των αριθμών στα πολλαπλάσια του "
+"εμφανιζόμενου αριθμού και πάτησε το κενό για να τα καταπιεί."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "gnumch-primes"
+#: activities/gnumch-primes/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Guide the number eater with the arrow keys to the prime numbers and press "
+"space to swallow them."
+msgstr ""
+"Οδήγησε με τα βελάκια το φαγάνα των αριθμών στους πρώτους αριθμούς και "
+"πάτησε το κενό για να τους καταπιεί."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "graph-coloring"
+#: activities/graph-coloring/ActivityInfo.qml:18
+#, kde-format
+msgid "Color the graph so that no two adjacent nodes have the same color."
+msgstr ""
+"Χρωμάτισε το γράφο ώστε δυο συνεχόμενοι κόμβοι να μην έχουν το ίδιο χρώμα."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "gravity"
+#: activities/gravity/ActivityInfo.qml:22
+#, kde-format
+msgid ""
+"Move the spaceship to avoid hitting the planets and reach the space station."
+msgstr ""
+"Μετακίνησε το διαστημόπλοιο για να αποφύγεις τη σύγκρουση με τους πλανήτες "
+"και να προσεγγίσεις το διαστημικό σταθμό."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "guesscount"
+#: activities/guesscount/ActivityInfo.qml:22
+#, kde-format
+msgid ""
+"Use the numbers and operations suggested to find the results proposed above."
+msgstr ""
+"Χρησιμοποίησε τους αριθμούς και τις λειτουργίες που προτείνονται για να "
+"βρεις τα αποτελέσματα που φαίνονται παραπάνω."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "guessnumber"
+#: activities/guessnumber/ActivityInfo.qml:18
+#, kde-format
+msgid "Find out the number by typing a number from the range proposed."
+msgstr "Ανακάλυψε τον αριθμό πληκτρολογώντας έναν από το προτεινόμενο εύρος."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "hangman"
+#: activities/hangman/ActivityInfo.qml:22
+#, kde-format
+msgid "A word is hidden, you must discover it letter by letter."
+msgstr "Μια λέξη είναι κρυμμένη, πρέπει να την ανακαλύψεις γράμμα το γράμμα."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "hanoi"
+#: activities/hanoi/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Rebuild the same tower in the empty area as the one you see on the right "
+"hand side."
+msgstr ""
+"Αναδόμησε τον ίδιο πύργο στην άδεια περιοχή όπως εκείνον που βλέπεις στα "
+"δεξιά."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "hanoi_real"
+#: activities/hanoi_real/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Rebuild the model tower on the right support. Take care, no disc may be "
+"placed atop a smaller disc."
+msgstr ""
+"Αναδόμησε το μοντέλο του πύργου με τη σωστή στήριξη. Πρόσεξε, κανένας δίσκος "
+"δεν πρέπει να τοποθετηθεί πάνω από έναν μικρότερο δίσκο."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "hexagon"
+#: activities/hexagon/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Click on the hexagons to find the hidden object, the red zone indicates that "
+"you're close to it!"
+msgstr ""
+"Κάνε κλικ στα εξάγωνα για να βρεις το κρυμμένο αντικείμενο, η κόκκινη ζώνη "
+"σημαίνει ότι είσαι πολύ κοντά σε αυτό!"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "imagename"
+#: activities/imagename/ActivityInfo.qml:21
+#, kde-format
+msgid "Drag and drop each item above its name."
+msgstr "Σύρε και άφησε κάθε αντικείμενο πάνω από το όνομά του."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "instruments"
+#: activities/instruments/ActivityInfo.qml:18
+#, kde-format
+msgid "Click on the correct musical instrument."
+msgstr "Κάνε κλικ στο σωστό μουσικό όργανο."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "land_safe"
+#: activities/land_safe/ActivityInfo.qml:18
+#, kde-format
+msgid "Use the arrow keys to pilot your spaceship safely onto the landing pad."
+msgstr ""
+"Χρησιμοποίησε τα βελάκια για να οδηγήσεις το διαστημόπλοιό σου με ασφάλεια "
+"στο χώρο προσγείωσης."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "lang"
+#: activities/lang/ActivityInfo.qml:24
+#, kde-format
+msgid ""
+"Select the language you want to learn then review the words before doing the "
+"exercises."
+msgstr ""
+"Επίλεξε τη γλώσσα που θέλεις να μάθεις και εξέτασε τις λέξεις πριν να κάνεις "
+"τις ασκήσεις."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "learn_additions"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "learn_subtractions"
+#: activities/learn_additions/ActivityInfo.qml:18
+#: activities/learn_subtractions/ActivityInfo.qml:18
+#, kde-format
+msgid "Click on the circles to give the operation's result."
+msgstr "Κάνε κλικ στους κύκλους για να δώσεις το αποτέλεσμα της πράξης."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "learn_decimals"
+#: activities/learn_decimals/ActivityInfo.qml:17
+#, kde-format
+msgid ""
+"Drag the arrow to select a part of the bar, and drag the selected part of "
+"the bar to the empty area to represent the decimal number."
+msgstr ""
+"Τράβηξε το βέλος για να επιλέξεις ένα τμήμα της γραμμής και τράβηξε το "
+"επιλεγμένο τμήμα της γραμμής στην κενή περιοχή για να αναπαραστήσεις τον "
+"δεκαδικό αριθμό."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "learn_decimals_additions"
+#: activities/learn_decimals_additions/ActivityInfo.qml:17
+#, kde-format
+msgid ""
+"Drag the arrow to select a part of the bar, and drag the selected part of "
+"the bar to the empty area to represent the result of the addition."
+msgstr ""
+"Τράβηξε το βέλος για να επιλέξεις ένα τμήμα της γραμμής και τράβηξε το "
+"επιλεγμένο τμήμα της γραμμής στην κενή περιοχή για να αναπαραστήσεις το "
+"αποτέλεσμα της πρόσθεσης."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "learn_decimals_subtractions"
+#: activities/learn_decimals_subtractions/ActivityInfo.qml:17
+#, kde-format
+msgid "Click on the squares to represent the result of the subtraction."
+msgstr ""
+"Κάνε κλικ στα τετράγωνα για να αναπαραστήσεις το αποτέλεσμα της αφαίρεσης."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "learn_digits"
+#: activities/learn_digits/ActivityInfo.qml:18
+#, kde-format
+msgid "Click on the circles to match the given digit."
+msgstr "Κάνε κλικ στους κύκλους για να βρεις το δοσμένο ψηφίο."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "learn_quantities"
+#: activities/learn_quantities/ActivityInfo.qml:17
+#, kde-format
+msgid ""
+"Drag the arrow to select a number of oranges, and drag the oranges to the "
+"empty area to represent the requested quantity."
+msgstr ""
+"Τράβηξε το βέλος για να επιλέξεις ένα πλήθος πορτοκαλιών και τράβηξε τα "
+"πορτοκάλια στην κενή περιοχή για να αναπαραστήσεις την απαιτούμενη ποσότητα."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "left_right_click"
+#: activities/left_right_click/ActivityInfo.qml:17
+#, kde-format
+msgid ""
+"Move animals to their homes using a left click or right click on your mouse."
+msgstr ""
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "leftright"
+#: activities/leftright/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Guess if the picture presents a left or right hand and click on the correct "
+"answer."
+msgstr ""
+"Μάντεψε αν η εικόνα παρουσιάζεται στα αριστερά ή στα δεξιά και κάνε κλικ στη "
+"σωστή απάντηση."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "letter-in-word"
+#: activities/letter-in-word/ActivityInfo.qml:18
+#, kde-format
+msgid "Click on all the words containing the wanted letter."
+msgstr "Κάνε κλικ σε όλες τις λέξεις που περιέχουν το ζητομενο γράμμα."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "lightsoff"
+#: activities/lightsoff/ActivityInfo.qml:18
+#, kde-format
+msgid "Click on the lamps to turn them off."
+msgstr "Κάνε κλικ στις λάμπες για να τις σβήσεις."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "louis-braille"
+#: activities/louis-braille/ActivityInfo.qml:18
+#, kde-format
+msgid "Discover the history of Louis Braille."
+msgstr "Ανακάλυψε την ιστορία του Louis Braille."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "magic-hat-minus"
+#: activities/magic-hat-minus/ActivityInfo.qml:18
+#, kde-format
+msgid "Click on the hat. How many stars are still hiding under the hat."
+msgstr "Κάνε κλικ στο καπέλο. Πόσα αστέρια κρύβονται ακόμη από κάτω."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "magic-hat-plus"
+#: activities/magic-hat-plus/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Count the number of stars hidden under the hat and then click on the stars "
+"to indicate their number."
+msgstr ""
+"Υπολόγισε πόσα αστέρια είναι κρυμμένα κάτω από το καπέλο και κάνε κλικ στα "
+"αστέρια για να δηλώσεις τον αριθμό τους."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "maze"
+#: activities/maze/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Use the arrows keys or swipe the touch screen to help Tux find his way out."
+msgstr ""
+"χρησιμοποίησε τα ωελάκια ή την οθόνη αφής για να βοηθήσεις τον Tux να βγει "
+"έξω."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "mazeinvisible"
+#: activities/mazeinvisible/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Use the arrow keys or swipe the touch screen to guide Tux out. Use the maze "
+"icon or the space key to see the map."
+msgstr ""
+"Χρησιμοποίησε τα βελάκια ή την οθόνη αφής για να βοηθήσεις τον Tux να βγει "
+"έξω. Χρησιμοποίησε το εικονίδιο του λαβύρινθου ή το κενό πλήκτρο για να δεις "
+"το χάρτη."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "mazerelative"
+#: activities/mazerelative/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Help Tux find his way out. Left and right are used to turn and up to go "
+"forward."
+msgstr ""
+"Βοήθησε τον Tux να βγει έξω. Αριστερά και δεξιά είναι για να στρίβει και "
+"επάνω για να πηγαίνει μπροστά."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "melody"
+#: activities/melody/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Listen to the sound sequence played, and reproduce it by clicking on the "
+"xylophone's bars"
+msgstr ""
+"Άκουσε την αναπαραγόμενη ακολουθία ήχων και αναπαράγαγέ τη με κλικ στις "
+"ράβδους του ξυλόφωνου"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-case-association-tux"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-case-association"
+#: activities/memory-case-association-tux/ActivityInfo.qml:18
+#: activities/memory-case-association/ActivityInfo.qml:18
+#, kde-format
+msgid "Match the upper case card with its lower case pair."
+msgstr ""
+"Βρες τα ζεύγη των καρτών ώστε να ταιριάξεις κάθε κεφαλαίο γράμμα με το "
+"αντίστοιχο πεζό."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-enumerate"
+#: activities/memory-enumerate/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Match a number card with a card displaying the same number of butterflies."
+msgstr ""
+"Ταίριαξε μια αριθμημένη κάρτα με την κάρτα που περιέχει τον ίδιο αριθμό από "
+"πεταλούδες."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-math-minus"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-math-add-tux"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-math-div-tux"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-math-add-minus-tux"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-math-add-minus-mult-div"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-math-add-minus-mult-div-tux"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-math-add-minus"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-math-mult-div"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-math-mult"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-math-mult-div-tux"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-math-div"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-math-add"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-math-mult-tux"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-math-minus-tux"
+#: activities/memory-math-add-minus-mult-div-tux/ActivityInfo.qml:18
+#: activities/memory-math-add-minus-mult-div/ActivityInfo.qml:18
+#: activities/memory-math-add-minus-tux/ActivityInfo.qml:18
+#: activities/memory-math-add-minus/ActivityInfo.qml:18
+#: activities/memory-math-add-tux/ActivityInfo.qml:18
+#: activities/memory-math-add/ActivityInfo.qml:18
+#: activities/memory-math-div-tux/ActivityInfo.qml:18
+#: activities/memory-math-div/ActivityInfo.qml:18
+#: activities/memory-math-minus-tux/ActivityInfo.qml:18
+#: activities/memory-math-minus/ActivityInfo.qml:18
+#: activities/memory-math-mult-div-tux/ActivityInfo.qml:18
+#: activities/memory-math-mult-div/ActivityInfo.qml:18
+#: activities/memory-math-mult-tux/ActivityInfo.qml:18
+#: activities/memory-math-mult/ActivityInfo.qml:18
+#, kde-format
+msgid "Turn over two cards to match the calculation with its answer."
+msgstr ""
+"Γύρισε ανάποδα δύο κάρτες για να ταιριάξει ο υπολογισμός με την απάντηση."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-sound"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-sound-tux"
+#: activities/memory-sound-tux/ActivityInfo.qml:18
+#: activities/memory-sound/ActivityInfo.qml:18
+#, kde-format
+msgid "Click on an audio card and find its double."
+msgstr "Κάνε κλικ σε μια ηχητική κάρτα για να βρεις το ζεύγος της."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-tux"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "memory"
+#: activities/memory-tux/ActivityInfo.qml:18
+#: activities/memory/ActivityInfo.qml:18
+#, kde-format
+msgid "Click on a card and find its double."
+msgstr "Κάνε κλικ σε μια κάρτα και βρες το ζεύγος της."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-wordnumber"
+#: activities/memory-wordnumber/ActivityInfo.qml:18
+#, kde-format
+msgid "Match the numeric with the word."
+msgstr "Ταίριαξε το αριθμητικό με τη λέξη."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "mining"
+#: activities/mining/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Looking at the rockwall, you can see a sparkle somewhere. Move the mouse "
+"cursor next to this sparkle and use the mousewheel or the zoom gesture to "
+"zoom in."
+msgstr ""
+"Κοιτάζοντας στον πέτρινο τοίχο θα δεις κάπου μια λάμψη. Μετακίνησε το δείτη "
+"του ποντικιού σου δίπλα στη λάμψη και χρησιμοποίησε τη ρόδα του ποντικιού ή "
+"το ζουμ με την αφή για να εστιάσεις."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "missing-letter"
+#: activities/missing-letter/ActivityInfo.qml:19
+#, kde-format
+msgid ""
+"Find the missing letter and complete the word by clicking on one of the "
+"letters proposed on the side."
+msgstr ""
+"Βρες το γράμμα που λείπει και συμπλήρωσε τη λέξη με κλικ στα προτεινόμενα "
+"γράμματα."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "money"
+#: activities/money/ActivityInfo.qml:18
+#, kde-format
+msgid "Click or tap on the money to pay."
+msgstr "Κάνε κλικ ή χτύπα πάνω στα χρήματα για να πληρώσεις."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "money_back_cents"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "money_back"
+#: activities/money_back/ActivityInfo.qml:18
+#: activities/money_back_cents/ActivityInfo.qml:18
+#, kde-format
+msgid "Click on the money at the bottom of the screen to give Tux his change."
+msgstr ""
+"Κάνε κλικ στα χρήματα στο κάτω μέρος της οθόνης για να δώσεις στον Tux τα "
+"ρέστα του."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "money_cents"
+#: activities/money_cents/ActivityInfo.qml:18
+#, kde-format
+msgid "Click on the money to pay."
+msgstr "Κάνε κλικ στα χρήματα για να πληρώσεις."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "mosaic"
+#: activities/mosaic/ActivityInfo.qml:18
+#, kde-format
+msgid "Put each item at the same place as in the given example."
+msgstr "Τοποθέτησε κάθε αντικείμενο στην ίδια θέση όπως στο παράδειγμα."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "nine_men_morris"
+#: activities/nine_men_morris/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Click on the dot where you wish to place your piece and try to take all "
+"Tux's pieces."
+msgstr ""
+"Κάνε κλικ στο σημείο όπου θέλεις να τοποθετήσεις τα κομμάτια σου και "
+"προσπάθησε να πάρεις όλα τα κομμάτια του Tux."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "nine_men_morris_2players"
+#: activities/nine_men_morris_2players/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Click on the dot where you wish to place your piece and try to take all your "
+"friend's pieces."
+msgstr ""
+"Κάνε κλικ στο σημείο όπου θέλεις να τοποθετήσεις το κομμάτι σου και "
+"προσπάθησε να πάρεις όλα τα κομμάτια του φίλου σου."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "note_names"
+#: activities/note_names/ActivityInfo.qml:21
+#, kde-format
+msgid "Identify the note and press the correct piano key"
+msgstr "Ανακάλυψε τη νότα και πάτησε το σωστό πλήκτρο στο πιάνο"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "number_sequence"
+#: activities/number_sequence/ActivityInfo.qml:18
+#, kde-format
+msgid "Draw the picture by touching the numbers in ascending order."
+msgstr "Ζωγράφισε την εικόνα αγγίζοντας τους αριθμούς σε αύξουσα σειρά."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "numbers-odd-even"
+#: activities/numbers-odd-even/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Move the helicopter to catch the clouds having even or odd numbers, in the "
+"shown order."
+msgstr ""
+"Μετακίνησε το ελικόπτερο για να πιάσεις τα σύννεφα που περιέχουν άρτιους ή "
+"περιττούς αριθμούς, με τη σειρά που παρουσιάζονται."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "ordering_alphabets"
+#: activities/ordering_alphabets/ActivityInfo.qml:24
+#, kde-format
+msgid "Arrange the letters in the correct order."
+msgstr "Τοποθέτησε τα γράμματα στη σωστή σειρά."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "ordering_chronology"
+#: activities/ordering_chronology/ActivityInfo.qml:24
+#, kde-format
+msgid "Arrange the given events in their chronological order."
+msgstr "Βάλε τα δοσμένα γεγονότα σε χρονολογική σειρά."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "ordering_numbers"
+#: activities/ordering_numbers/ActivityInfo.qml:23
+#, kde-format
+msgid "Arrange the numbers in the correct order."
+msgstr "Τοποθέτησε τους αριθμούς στη σωστή σειρά."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "ordering_sentences"
+#: activities/ordering_sentences/ActivityInfo.qml:23
+#, kde-format
+msgid "Arrange the given words to form a meaningful sentence."
+msgstr ""
+"Τοποθέτησε τις δοσμένες λέξεις για να σχηματίσεις μια πρόταση με νόημα."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "oware_2players"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "oware"
+#: activities/oware/ActivityInfo.qml:17
+#: activities/oware_2players/ActivityInfo.qml:17
+#, kde-format
+msgid "Capture at least 25 seeds to win the game"
+msgstr "Μάζεψε τουλάχιστον 25 σπόρους για να κερδίσεις το παιχνίδι"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "paintings"
+#: activities/paintings/ActivityInfo.qml:23
+#, kde-format
+msgid "Catch and drop each piece on the points."
+msgstr "Πιάσε και άφησε κάθε κομμάτι πάνω στα σημεία."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "path_decoding"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "path_decoding_relative"
+#: activities/path_decoding/ActivityInfo.qml:17
+#: activities/path_decoding_relative/ActivityInfo.qml:17
+#, kde-format
+msgid ""
+"Click on the grid squares following the given directions to help Tux reach "
+"the target."
+msgstr ""
+"Κάνε κλικ στα τετράγωνα ακολουθώντας τις δοσμένες κατευθύνσεις για να "
+"βοηθήσεις τον Tux να φθάσει στον προορισμό."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "path_encoding"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "path_encoding_relative"
+#: activities/path_encoding/ActivityInfo.qml:17
+#: activities/path_encoding_relative/ActivityInfo.qml:17
+#, kde-format
+msgid "Use the arrows to move Tux along the path and reach the target."
+msgstr ""
+"Χρησιμοποίησε τα βελάκια για να μετακινήσεις τον Tux πάνω στο μονοπάτι ώστε "
+"να φθάσει στον προορισμό."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "penalty"
+#: activities/penalty/ActivityInfo.qml:18
+#, kde-format
+msgid "Double click or double tap on the goal, in order to score."
+msgstr "Διπλό κλικ ή διπλό χτύπημα στα δίχτυα για να βάλεις γκολ."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "photo_hunter"
+#: activities/photo_hunter/ActivityInfo.qml:18
+#, kde-format
+msgid "look at the two pictures carefully and click where you see a difference"
+msgstr ""
+"Κοίταξε τις δύο εικόνες προσεκτικά και κάνε κλικ όπου παρατηρείς ότι "
+"διαφέρουν"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "piano_composition"
+#: activities/piano_composition/ActivityInfo.qml:19
+#, kde-format
+msgid ""
+"Learn to compose piano music using the octaves and the tools presented above "
+"the staff."
+msgstr ""
+"Μάθε να συθέτεις μουσική στο πιάνο με τις οκτάβες και τα εργαλεία που "
+"παρουσιάζονται από πάνω."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "planegame"
+#: activities/planegame/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Move the helicopter with the arrow keys and catch the numbers in the clouds, "
+"in ascending order."
+msgstr ""
+"Μετακίνησε το ελικόπτερο με τα βελάκια και πιάσε τους αριθμούς στα σύννεφα "
+"σε αύξουσα σειρά."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "play_piano"
+#: activities/play_piano/ActivityInfo.qml:22
+#, kde-format
+msgid "Click on the keyboard keys that match the notes that you see and hear"
+msgstr ""
+"Κάνε κλικ στα πλήκτρα που ταιριάζουν με τις νότες που βλέπεις και ακούς"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "play_rhythm"
+#: activities/play_rhythm/ActivityInfo.qml:22
+#, kde-format
+msgid "Click the drum to recreate the rhythm"
+msgstr "Κάνε κλικ στο τύμπανο για αναπαραγωγή του ρυθμού"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "positions"
+#: activities/positions/ActivityInfo.qml:18
+#, kde-format
+msgid "Find the correct position"
+msgstr "Βρες τη σωστή θέση"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "programmingMaze"
+#: activities/programmingMaze/ActivityInfo.qml:19
+#, kde-format
+msgid ""
+"Arrange the instructions and traverse the correct path to reach the fish."
+msgstr ""
+"Διευθέτησε τις εντολές και διάσχισε τη σωστή διαδρομή για να προσεγγίσεις το "
+"ψάρι."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "railroad"
+#: activities/railroad/ActivityInfo.qml:20
+#, kde-format
+msgid "Observe the train and then click on the items to set up a similar train"
+msgstr ""
+"Παρατήρησε το τρένο και κάνε κλικ στα αντικείμενα για να ορίσεις ένα παρόμοιο"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "readingh"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "readingv"
+#: activities/readingh/ActivityInfo.qml:18
+#: activities/readingv/ActivityInfo.qml:18
+#, kde-format
+msgid "Read a list of words and say if a given word is in it."
+msgstr ""
+"Διάβασε μια λίστα από λέξεις και πες αν μια δοσμένη λέξη υπάρχει στη λίστα."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "redraw"
+#: activities/redraw/ActivityInfo.qml:18
+#, kde-format
+msgid "Use the drawing tools to build an identical pattern on the right."
+msgstr ""
+"Χρησιμοποίησε τα εργαλεία ζωγραφικής για να σχεδιάσεις ένα ταυτόσημο μοτίβο "
+"στη δεξιά πλευρά."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "redraw_symmetrical"
+#: activities/redraw_symmetrical/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Use the drawing tools to reproduce symmetrically the pattern on the right."
+msgstr ""
+"Χρησιμοποίησε τα εργαλεία ζωγραφικής για να αναπαραγάγεις συμμετρικά το "
+"μοτίβο στη δεξιά πλευρά."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "renewable_energy"
+#: activities/renewable_energy/ActivityInfo.qml:18
+#, kde-format
+msgid "Click on the different stages that go to make up the power supply."
+msgstr "Κάνε κλικ στα διάφορα στάδια που συνθέτουν την τροφοδοσία."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "reversecount"
+#: activities/reversecount/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Click on the domino and validate your choice with the OK button to indicate "
+"the number of ice blocks Tux will have to follow to eat a fish."
+msgstr ""
+"Κάνε κλικ στο ντόμινο και αξιολόγησε την επιλογή σου με το κουμπί Εντάξει "
+"για να δηλώσεις τον αριθμό από παγάκια που πρέπει να ακολουθήσει ο Tux για "
+"να φάει ένα ψάρι."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "roman_numerals"
+#: activities/roman_numerals/ActivityInfo.qml:18
+#, kde-format
+msgid "Learn and practice roman to arabic numerals conversion"
+msgstr "Μάθε και εξασκήσου στη μετατροπή από ρωμαϊκή σε αραβική αρίθμηση."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "scalesboard"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "scalesboard_weight_avoirdupois"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "scalesboard_weight"
+#: activities/scalesboard/ActivityInfo.qml:18
+#: activities/scalesboard_weight/ActivityInfo.qml:18
+#: activities/scalesboard_weight_avoirdupois/ActivityInfo.qml:18
+#, kde-format
+msgid "Drag the weights up to balance the scales."
+msgstr "Ανασήκωσε τα βάρη για να ισορροπήσει η ζυγαριά."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "share"
+#: activities/share/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Share the candies equally among the specified number of children and notice "
+"that there may be a rest left"
+msgstr ""
+"Μοίρασε τις καραμέλες ισότιμα ανάμεσα στον δοσμένο αριθμό παιδιών και "
+"κοίταξε αν μένει υπόλοιπο"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "simplepaint"
+#: activities/simplepaint/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Select a color and paint the rectangles as you like to create a drawing."
+msgstr ""
+"Επίλεξε ένα χρώμα και βάψε τα ορθογώνια όπως σου αρέσει για να ζωγραφίσεις."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "smallnumbers"
+#: activities/smallnumbers/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Count the number on the dice and type it on your keyboard before it reaches "
+"the ground."
+msgstr ""
+"Υπολόγισε τον αριθμό στο ζάρι και πληκτρολόγησέ τον πριν το ζάρι φτάσει στο "
+"έδαφος."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "smallnumbers2"
+#: activities/smallnumbers2/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Count the numbers on the dominoes then type the result on your keyboard."
+msgstr "Υπολόγισε τον αριθμό των ντόμινο και πληκτρολόγησε το αποτέλεσμα."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "solar_system"
+#: activities/solar_system/ActivityInfo.qml:21
+#, kde-format
+msgid ""
+"Answer the questions presented and get a 100% correctness among the options."
+msgstr "Απάντησε στις ερωτήσεις που παρουσιάζονται με ακρίβεια 100%."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "submarine"
+#: activities/submarine/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Drive the submarine to the right end of the screen without colliding with "
+"any objects"
+msgstr ""
+"Οδήγησε το υποβρύχιο στο δεξί άκρο της οθόνης χωρίς να συγκρουστεί με κάποιο "
+"αντικείμενο"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "sudoku"
+#: activities/sudoku/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Select a number or a symbol and click its target area. Each symbol must "
+"appear only once in a row, in a column and in a subregion if any."
+msgstr ""
+"Επίλεξε έναν αριθμό ή ένα σύμβολο και κάνε κλικ στην περιοχή που θέλεις. "
+"Κάθε σύμβολο πρέπει να εμφανίζεται μόνο μια φορά σε μια γραμμή, μια φορά σε "
+"μια στήλη και μια φορά σε μια υποπεριοχή αν υπάρχει κάποια."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "superbrain"
+#: activities/superbrain/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Find out the right combination of colors. A dot framed in a black square "
+"means that you found the correct colour in the correct position, while a dot "
+"framed in a white square means it's the correct colour, but in the wrong "
+"position."
+msgstr ""
+"Ανακάλυψε το σωστό συνδυασμό χρωμάτων. Μια τελεία σε μαύρο τετράγωνο πλαίσιο "
+"σημαίνει ότι βρήκες το σωστό χρώμα στη σωστή θέση, ενώ μια τελεία σε λευκό "
+"τετράγωνο πλαίσιο σημαίνει ότι είναι το σωστό χρώμα στη λάθος θέση."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "tangram"
+#: activities/tangram/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Click on each object to obtain the same figure. You can change their "
+"orientation by clicking on the arrows."
+msgstr ""
+"Κάνε κλικ σε κάθε αντικείμενο για να έχεις την ίδια φιγούρα. Μπορείς να "
+"αλλάξεις τον προσανατολισμό τους με κλικ στα βελάκια."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "target"
+#: activities/target/ActivityInfo.qml:18
+#, kde-format
+msgid "Click on the target to launch darts, then count your final score!"
+msgstr ""
+"Κάνε κλικ στο στόχο για να πετάξεις βελάκια και υπολόγισε το τελικό σκορ!"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "tic_tac_toe_2players"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "tic_tac_toe"
+#: activities/tic_tac_toe/ActivityInfo.qml:21
+#: activities/tic_tac_toe_2players/ActivityInfo.qml:21
+#, kde-format
+msgid ""
+"Click on the square which you wish to mark and try to mark 3 consecutive "
+"squares before Tux."
+msgstr ""
+"Κάνε κλικ στο τετράγωνο που θέλεις να σημειώσεις και προσπάθησε να "
+"σημειώσεις 3 διαδοχικά τετράγωνα πριν από τον Tux."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "traffic"
+#: activities/traffic/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Slide the cars to make a space so that the red car can go out of the box."
+msgstr ""
+"Μετακύλισε τα αυτοκίνητα για να κάνεις χώρο ώστε το κόκκινο αυτοκίνητο να "
+"μπορεί να βγει από το κουτί."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "watercycle"
+#: activities/watercycle/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Click on the various active elements that make up the water supply. Then "
+"press the shower button for Tux."
+msgstr ""
+"Κάνε κλικ στα διάφορα ενεργά αντικείμενα που συνθέτουν την παροχή νερού. "
+"Μετά πάτησε το κουμπί του ντους για τον Tux."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "wordsgame"
+#: activities/wordsgame/ActivityInfo.qml:18
+#, kde-format
+msgid "Type the words on your keyboard before they reach the ground."
+msgstr "Πληκτρολόγησε τις λέξεις πριν αυτές φθάσουν στο έδαφος."
+
+#~ msgid "play checkers against the computer"
+#~ msgstr "παίξε ντάμα με τον υπολογιστή"
+
+#~ msgid ""
+#~ "Drag the arrow to select a part of the bar then drop it in the empty area "
+#~ "to represent the decimal number."
+#~ msgstr ""
+#~ "Τράβηξε το βέλος για να επιλέξεις ένα τμήμα της γραμμής και άφησέ το στην "
+#~ "κενή περιοχή για να αναπαραστήσεις τον δεκαδικό αριθμό."
+
+#~ msgid "put here in comment the text for the intro voice"
+#~ msgstr "βάλε εδώ σε σχόλιο το κείμενο για την εισαγωγική φωνή"
+
+#~ msgid ""
+#~ "Change the planets' gravitational force by moving the sliders up and "
+#~ "down. Be careful not to crash Tux's spaceship."
+#~ msgstr ""
+#~ "Άλλαξε τη βαρυτκή δύναμη των πλανητών με κύλιση πάνω και κάτω. Πρόσεξε μη "
+#~ "διαλύσεις το διαστημόπλοιο του Tux."
+
+#~ msgid "Match the alphabet with its upper);"
+#~ msgstr "Ταίριαξε το γράμμα του αλφαβήτου με το αντίστοιχο κεφαλαίο)·"
+
+#~ msgid ""
+#~ "Use the drawing tools to reproduce the right-hand side symmetrical figure."
+#~ msgstr ""
+#~ "Χρησιμοποίησε τα εργαλεία ζωγραφικής για να αναπαραγάγεις τη συμμετρική "
+#~ "φιγούρα στα δεξιά."

@@ -1,0 +1,1112 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: kdeorg\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-09-26 00:40+0000\n"
+"PO-Revision-Date: 2022-10-02 15:49\n"
+"Last-Translator: \n"
+"Language-Team: Chinese Simplified\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Crowdin-Project: kdeorg\n"
+"X-Crowdin-Project-ID: 269464\n"
+"X-Crowdin-Language: zh-CN\n"
+"X-Crowdin-File: /kf5-trunk/messages/gcompris/gcompris_voices.pot\n"
+"X-Crowdin-File-ID: 6174\n"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "advanced_colors"
+#: activities/advanced_colors/ActivityInfo.qml:18
+#, kde-format
+msgid "click on the required color"
+msgstr "单击所需的颜色"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "algebra_by"
+#: activities/algebra_by/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Multiply the two numbers together and type in your answer before the balloon "
+"lands in the water"
+msgstr "将两个数字相乘，并在气球落入水中之前输入答案"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "algebra_div"
+#: activities/algebra_div/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Find the result of the division and type in your answer before the balloon "
+"lands in the water"
+msgstr "将两个数字相除，并在气球落入水中之前输入答案"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "algebra_minus"
+#: activities/algebra_minus/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Subtract the two numbers and type in your answer before the balloon lands in "
+"the water"
+msgstr "将两个数字相减，并在气球落入水中之前输入答案"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "algebra_plus"
+#: activities/algebra_plus/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Add the two numbers together and type in your answer before the balloon "
+"lands in the water"
+msgstr "将两个数字相加，并在气球落入水中之前输入答案"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "algorithm"
+#: activities/algorithm/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Click on the missing items on the table and follow the logical sequence "
+"displayed above it."
+msgstr "单击表上缺少的项目，然后按照其上方显示的逻辑顺序进行操作。"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "align4"
+#: activities/align4/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Click on the column where you wish your token to fall and try to align of 4 "
+"tokens before Tux."
+msgstr "单击您希望令牌落入的列，并尝试在Tux之前对齐4个令牌。"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "align4_2players"
+#: activities/align4_2players/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Click on the column where you wish your token to fall and try to align 4 "
+"tokens to win."
+msgstr "单击您希望令牌落入的列，并尝试对齐4个令牌以获胜。"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "alphabet-sequence"
+#: activities/alphabet-sequence/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Move the helicopter to catch the clouds following the order of the alphabet."
+msgstr "按照字母表的顺序移动直升机以捕捉云层。"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "analog_electricity"
+#: activities/analog_electricity/ActivityInfo.qml:18
+#, kde-format
+msgid "Learn how analog electricity works and create your own circuit."
+msgstr "了解模拟电路是如何工作的，并创建自己的电路。"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "baby_keyboard"
+#: activities/baby_keyboard/ActivityInfo.qml:18
+#, kde-format
+msgid "Type any key on the keyboard and observe the result."
+msgstr "按下键盘上的任何键并观察结果。"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "baby_mouse"
+#: activities/baby_mouse/ActivityInfo.qml:17
+#, kde-format
+msgid "Move the mouse or touch the screen and observe the result."
+msgstr "移动鼠标或触摸屏幕并观察结果。"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "baby_tangram"
+#: activities/baby_tangram/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Move each puzzle piece, to obtain the completed puzzle. You can change their "
+"orientation by clicking on the arrows."
+msgstr "移动每个拼图块，来得到完整的拼图。您可以点击箭头来更改其方向。"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "baby_wordprocessor"
+#: activities/baby_wordprocessor/ActivityInfo.qml:18
+#, kde-format
+msgid "A simplistic word processor to play around with the keyboard"
+msgstr "一个简单的文字处理器，可以随意使用键盘输入"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "babymatch"
+#: activities/babymatch/ActivityInfo.qml:21
+#, kde-format
+msgid "Drag and drop the objects matching the pictures"
+msgstr "拖放与图片匹配的对象"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "babyshapes"
+#: activities/babyshapes/ActivityInfo.qml:22
+#, kde-format
+msgid "Drag and drop the objects matching the shapes."
+msgstr "拖放与形状匹配的对象。"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "balancebox"
+#: activities/balancebox/ActivityInfo.qml:21
+#, kde-format
+msgid "Tilt the box to navigate the ball to the door."
+msgstr "倾斜盒子，把球导向门。"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "ballcatch"
+#: activities/ballcatch/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Press the left and right arrows at the same time to send the ball straight on"
+msgstr "同时按左箭头和右箭头，使球直线前进"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "bargame"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "bargame_2players"
+#: activities/bargame/ActivityInfo.qml:19
+#: activities/bargame_2players/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Select the number of balls you wish to place in the holes and then click on "
+"the OK button. The winner is the one who hasn't put a ball in the red hole."
+msgstr ""
+"选择您希望放入洞中的球的数量，然后单击确定按钮。谁没有把球投进红洞，谁就是胜"
+"利者。"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "binary_bulb"
+#: activities/binary_bulb/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Turn on the right bulbs to represent the binary of the given decimal number. "
+"When you have achieved it, press OK"
+msgstr "打开右边的灯泡表示给定十进制数字的二进制数。完成后，按确定"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "braille_alphabets"
+#: activities/braille_alphabets/ActivityInfo.qml:18
+#, kde-format
+msgid "Click on Tux to start and then re-create the Braille cells."
+msgstr "单击Tux开始，然后重新创建盲文单元。"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "braille_fun"
+#: activities/braille_fun/ActivityInfo.qml:18
+#, kde-format
+msgid "Create the Braille cell for the letter."
+msgstr "为字母创建盲文单元。"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "calendar"
+#: activities/calendar/ActivityInfo.qml:18
+#, kde-format
+msgid "Select the asked date on the calendar"
+msgstr "在日历上选择要求的日期"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "canal_lock"
+#: activities/canal_lock/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"You are responsible for the lock and you must help Tux pass through. Click "
+"on the valves to cause either a drop or an increase in the water level, and "
+"click on the gates to open or close a path."
+msgstr ""
+"您负责锁，并且必须帮助Tux通过。单击阀门使水位下降或升高，然后单击闸门打开或关"
+"闭通道。"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "categorization"
+#: activities/categorization/ActivityInfo.qml:18
+#, kde-format
+msgid "Categorize the items into the correct group"
+msgstr "将这些项目归类到正确的组中"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "checkers"
+#: activities/checkers/ActivityInfo.qml:18
+#, kde-format
+msgid "play checkers against Tux"
+msgstr "和 Tux 玩 checkers"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "checkers_2players"
+#: activities/checkers_2players/ActivityInfo.qml:18
+#, kde-format
+msgid "play checkers with your friend"
+msgstr "和你的朋友玩跳棋"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "chess"
+#: activities/chess/ActivityInfo.qml:18
+#, kde-format
+msgid "play chess against Tux"
+msgstr "与Tux下棋"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "chess_2players"
+#: activities/chess_2players/ActivityInfo.qml:18
+#, kde-format
+msgid "play chess against your friend"
+msgstr "和您的朋友下棋"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "chess_partyend"
+#: activities/chess_partyend/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Click on a white chess piece and green boxes will appear to indicate all the "
+"movements that piece can make. Try and get the black king into checkmate."
+msgstr ""
+"点击一个白色的棋子，绿色的方框将会显示出棋子所有可用的走位。请尝试把黑王将"
+"死。"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "chronos"
+#: activities/chronos/ActivityInfo.qml:22
+#, kde-format
+msgid "Slide the pictures into the order that tells the story"
+msgstr "把图片按讲故事的顺序放进去"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "click_on_letter_up"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "click_on_letter"
+#: activities/click_on_letter/ActivityInfo.qml:18
+#: activities/click_on_letter_up/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Click on the required letter. You can listen to it again by clicking on the "
+"mouth."
+msgstr "点击所需的字母。你可以通过点击嘴巴再听一遍。"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "clickanddraw"
+#: activities/clickanddraw/ActivityInfo.qml:18
+#, kde-format
+msgid "Click on the selected points and draw"
+msgstr "单击选定的点并绘制"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "clickgame"
+#: activities/clickgame/ActivityInfo.qml:18
+#, kde-format
+msgid "Catch the fish before they leave the aquarium."
+msgstr "在鱼离开水族馆之前抓住它们。"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "clockgame"
+#: activities/clockgame/ActivityInfo.qml:18
+#, kde-format
+msgid "Drag and drop the needles of the clock to display the required time"
+msgstr "拖放时钟指针以显示所需时间"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "color_mix"
+#: activities/color_mix/ActivityInfo.qml:18
+#, kde-format
+msgid "Match the color by moving the sliders on the tubes of paint"
+msgstr "通过移动颜料管上的滑动条来匹配颜色"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "color_mix_light"
+#: activities/color_mix_light/ActivityInfo.qml:18
+#, kde-format
+msgid "Match the color by moving the sliders on the torches"
+msgstr "通过移动火把上的滑块来匹配颜色"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "colors"
+#: activities/colors/ActivityInfo.qml:18
+#, kde-format
+msgid "Click on the right color"
+msgstr "单击正确的颜色"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "crane"
+#: activities/crane/ActivityInfo.qml:23
+#, kde-format
+msgid ""
+" Click on each item in turn, in the blue frame, and move them to reproduce "
+"the pattern from the pink frame."
+msgstr " 依次点击蓝框中的每件物品，移动它们以再现粉框中的图案。"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "details"
+#: activities/details/ActivityInfo.qml:21
+#, kde-format
+msgid "Slide the images on their respective targets"
+msgstr "将图像滑动到各自的目标上"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "digital_electricity"
+#: activities/digital_electricity/ActivityInfo.qml:18
+#, kde-format
+msgid "Learn how digital electronics work and create your own circuit."
+msgstr "了解数字电子是如何工作的，并创建自己的电路。"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "drawletters"
+#: activities/drawletters/ActivityInfo.qml:18
+#, kde-format
+msgid "Click on the selected points and draw the letter"
+msgstr "点击选定的点，画出字母"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "drawnumbers"
+#: activities/drawnumbers/ActivityInfo.qml:18
+#, kde-format
+msgid "Draw the numbers by connecting the dots in the correct order."
+msgstr "按照正确的顺序把点连起来画出数字."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "enumerate"
+#: activities/enumerate/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Count the elements by organizing them then type the answer on your keyboard."
+msgstr "通过组织它们来计算元素，然后在键盘上输入答案。"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "erase"
+#: activities/erase/ActivityInfo.qml:18
+#, kde-format
+msgid " Clear the window with your sponge and discover the hidden picture."
+msgstr " 用你的海绵清理窗户，发现隐藏的图片。"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "erase_2clic"
+#: activities/erase_2clic/ActivityInfo.qml:18
+#, kde-format
+msgid "Double tap or double click on the bricks to discover the hidden picture"
+msgstr "双击或双击砖块来发现隐藏的图片"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "erase_clic"
+#: activities/erase_clic/ActivityInfo.qml:18
+#, kde-format
+msgid "Click or tap on the transparent bricks and discover the hidden picture."
+msgstr "点击或轻敲透明的砖块，发现隐藏的图片。"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "explore_farm_animals"
+#: activities/explore_farm_animals/ActivityInfo.qml:18
+#, kde-format
+msgid "Learn about farmyard animals and the noises that they make."
+msgstr "了解农场动物和它们发出的声音。"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "explore_monuments"
+#: activities/explore_monuments/ActivityInfo.qml:18
+#, kde-format
+msgid "Explore Monuments around the world."
+msgstr "探索世界各地的古迹。"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "explore_world_animals"
+#: activities/explore_world_animals/ActivityInfo.qml:22
+#, kde-format
+msgid "Learn about world animals and locate them on a map."
+msgstr "了解世界动物，并在地图上找到它们。"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "explore_world_music"
+#: activities/explore_world_music/ActivityInfo.qml:18
+#, kde-format
+msgid "Click on the suitcases to learn about music from around the world."
+msgstr "单击手提箱以了解世界各地的音乐。"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "family"
+#: activities/family/ActivityInfo.qml:18
+#, kde-format
+msgid "Let us understand what to call our relatives"
+msgstr "让我们知道如何称呼我们的亲戚"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "family_find_relative"
+#: activities/family_find_relative/ActivityInfo.qml:18
+#, kde-format
+msgid "Click on a pair that defines the given relation"
+msgstr "单击定义给定关系的一对"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "fifteen"
+#: activities/fifteen/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Click or drag an element next to a free space, the element will move and "
+"release its space. You must put all the pieces in the correct order. The "
+"numbers on the pieces can help you."
+msgstr ""
+"单击或拖动元素旁边的空闲空间，该元素将移动并释放其空间。你必须把所有的东西按"
+"正确的顺序摆放。棋子上的数字可以帮助你。"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "find_the_day"
+#: activities/find_the_day/ActivityInfo.qml:18
+#, kde-format
+msgid "Select the required day."
+msgstr "选择所需的日期。"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "followline"
+#: activities/followline/ActivityInfo.qml:18
+#, kde-format
+msgid " Move the mouse or your finger along the pipe to stop the fire."
+msgstr " 沿着管道移动鼠标或手指以阻止火灾。"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "football"
+#: activities/football/ActivityInfo.qml:18
+#, kde-format
+msgid "Drag a line from the ball to set the speed and direction of your kick."
+msgstr "从球上拖出一条线来设定你踢球的速度和方向。"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "fractions_create"
+#: activities/fractions_create/ActivityInfo.qml:19
+#, kde-format
+msgid ""
+"Select the appropriate number of parts as described in the instructions."
+msgstr ""
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "fractions_find"
+#: activities/fractions_find/ActivityInfo.qml:17
+#, kde-format
+msgid "Find the correct numerator and denominator of the represented fraction"
+msgstr ""
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "geo-country"
+#: activities/geo-country/ActivityInfo.qml:22
+#, kde-format
+msgid "Drag and drop the regions to complete the country maps."
+msgstr "拖放区域以完成国家或地区地图。"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "geography"
+#: activities/geography/ActivityInfo.qml:22
+#, kde-format
+msgid "Drag and drop the objects to complete the map."
+msgstr "拖放对象以完成地图。"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "gletters"
+#: activities/gletters/ActivityInfo.qml:18
+#, kde-format
+msgid "Type the letters on your keyboard before they reach the ground."
+msgstr "在字母到达地面之前，在键盘上键入这些字母。"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "gnumch-equality"
+#: activities/gnumch-equality/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Guide the number eater with the arrow keys to the required numbers and press "
+"the space bar to swallow them."
+msgstr "用箭头键将吃数狂引导到所需的数字，并按空格键吞下它们。"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "gnumch-factors"
+#: activities/gnumch-factors/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Guide the number eater with the arrow keys to the factors of the displayed "
+"number and press space to swallow them."
+msgstr "用箭头键将吃数狂引导到显示数字的因子，并按空格键吞下它们。"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "gnumch-inequality"
+#: activities/gnumch-inequality/ActivityInfo.qml:19
+#, kde-format
+msgid ""
+"Guide the number eater with the arrow keys to the numbers that are different "
+"from the ones displayed and press the space bar to swallow them."
+msgstr "用箭头键将吃数狂引导到与显示的数字不同的数字，并按空格键吞下它们。"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "gnumch-multiples"
+#: activities/gnumch-multiples/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Guide the number eater with the arrow keys to the multiples of the displayed "
+"number and press space to swallow them."
+msgstr "用箭头键将吃数狂引导到显示数字的倍数，然后按空格键吞下它们。"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "gnumch-primes"
+#: activities/gnumch-primes/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Guide the number eater with the arrow keys to the prime numbers and press "
+"space to swallow them."
+msgstr "用箭头键将吃数狂引导到质数，然后按空格键吞下它们。"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "graph-coloring"
+#: activities/graph-coloring/ActivityInfo.qml:18
+#, kde-format
+msgid "Color the graph so that no two adjacent nodes have the same color."
+msgstr "为图形着色，使得所有相邻的两个节点都具有不同的颜色。"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "gravity"
+#: activities/gravity/ActivityInfo.qml:22
+#, kde-format
+msgid ""
+"Move the spaceship to avoid hitting the planets and reach the space station."
+msgstr "移动飞船以避免撞上行星并到达空间站。"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "guesscount"
+#: activities/guesscount/ActivityInfo.qml:22
+#, kde-format
+msgid ""
+"Use the numbers and operations suggested to find the results proposed above."
+msgstr "使用建议的数字和操作来算出上面建议的结果。"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "guessnumber"
+#: activities/guessnumber/ActivityInfo.qml:18
+#, kde-format
+msgid "Find out the number by typing a number from the range proposed."
+msgstr "通过从建议的范围内输入一个数字来找出数字。"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "hangman"
+#: activities/hangman/ActivityInfo.qml:22
+#, kde-format
+msgid "A word is hidden, you must discover it letter by letter."
+msgstr "一个单词是隐藏的，您必须一个字母一个字母地发现它。"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "hanoi"
+#: activities/hanoi/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Rebuild the same tower in the empty area as the one you see on the right "
+"hand side."
+msgstr "在空白区域重建与您在右侧看到的一样的塔。"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "hanoi_real"
+#: activities/hanoi_real/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Rebuild the model tower on the right support. Take care, no disc may be "
+"placed atop a smaller disc."
+msgstr "在右边的支架上重建模型塔。请注意，任何光盘都不能放在较小的光盘上。"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "hexagon"
+#: activities/hexagon/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Click on the hexagons to find the hidden object, the red zone indicates that "
+"you're close to it!"
+msgstr "单击六边形找到隐藏的物体，红色区域表示你已经接近它了!"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "imagename"
+#: activities/imagename/ActivityInfo.qml:21
+#, kde-format
+msgid "Drag and drop each item above its name."
+msgstr "将每个项拖放到其名称上方。"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "instruments"
+#: activities/instruments/ActivityInfo.qml:18
+#, kde-format
+msgid "Click on the correct musical instrument."
+msgstr "单击正确的乐器。"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "land_safe"
+#: activities/land_safe/ActivityInfo.qml:18
+#, kde-format
+msgid "Use the arrow keys to pilot your spaceship safely onto the landing pad."
+msgstr "使用箭头键将您的飞船安全降落在着陆台上。"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "lang"
+#: activities/lang/ActivityInfo.qml:24
+#, kde-format
+msgid ""
+"Select the language you want to learn then review the words before doing the "
+"exercises."
+msgstr "选择你想学的语言，然后在做练习之前复习单词。"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "learn_additions"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "learn_subtractions"
+#: activities/learn_additions/ActivityInfo.qml:18
+#: activities/learn_subtractions/ActivityInfo.qml:18
+#, kde-format
+msgid "Click on the circles to give the operation's result."
+msgstr "点击圆圈，给出运算结果。"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "learn_decimals"
+#: activities/learn_decimals/ActivityInfo.qml:17
+#, kde-format
+msgid ""
+"Drag the arrow to select a part of the bar, and drag the selected part of "
+"the bar to the empty area to represent the decimal number."
+msgstr "拖动箭头选择条形图的一部分，并将所选部分拖到表示小数的空白区域。"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "learn_decimals_additions"
+#: activities/learn_decimals_additions/ActivityInfo.qml:17
+#, kde-format
+msgid ""
+"Drag the arrow to select a part of the bar, and drag the selected part of "
+"the bar to the empty area to represent the result of the addition."
+msgstr ""
+"拖动箭头选择条形图的一部分，并将选择的部分拖到空白区域，以表示加法的结果。"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "learn_decimals_subtractions"
+#: activities/learn_decimals_subtractions/ActivityInfo.qml:17
+#, kde-format
+msgid "Click on the squares to represent the result of the subtraction."
+msgstr "点击方块表示减法的结果。"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "learn_digits"
+#: activities/learn_digits/ActivityInfo.qml:18
+#, kde-format
+msgid "Click on the circles to match the given digit."
+msgstr "单击圆圈以匹配给定的数字。"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "learn_quantities"
+#: activities/learn_quantities/ActivityInfo.qml:17
+#, kde-format
+msgid ""
+"Drag the arrow to select a number of oranges, and drag the oranges to the "
+"empty area to represent the requested quantity."
+msgstr "拖动箭头选择一定数量的橙子，并将橙子拖到空白区域，代表所要求的数量。"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "left_right_click"
+#: activities/left_right_click/ActivityInfo.qml:17
+#, kde-format
+msgid ""
+"Move animals to their homes using a left click or right click on your mouse."
+msgstr ""
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "leftright"
+#: activities/leftright/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Guess if the picture presents a left or right hand and click on the correct "
+"answer."
+msgstr "猜猜这幅图是左手还是右手，然后点击正确的答案。"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "letter-in-word"
+#: activities/letter-in-word/ActivityInfo.qml:18
+#, kde-format
+msgid "Click on all the words containing the wanted letter."
+msgstr "单击所有包含所需字母的单词。"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "lightsoff"
+#: activities/lightsoff/ActivityInfo.qml:18
+#, kde-format
+msgid "Click on the lamps to turn them off."
+msgstr "按一下灯把它们关掉。"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "louis-braille"
+#: activities/louis-braille/ActivityInfo.qml:18
+#, kde-format
+msgid "Discover the history of Louis Braille."
+msgstr "了解路易斯·布莱叶的历史。"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "magic-hat-minus"
+#: activities/magic-hat-minus/ActivityInfo.qml:18
+#, kde-format
+msgid "Click on the hat. How many stars are still hiding under the hat."
+msgstr "按一下帽子。有多少星星还藏在帽子下面。"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "magic-hat-plus"
+#: activities/magic-hat-plus/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Count the number of stars hidden under the hat and then click on the stars "
+"to indicate their number."
+msgstr "数一数隐藏在帽子下面的星星的数目，然后点击星星表示它们的数目。"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "maze"
+#: activities/maze/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Use the arrows keys or swipe the touch screen to help Tux find his way out."
+msgstr "使用箭头键或轻扫触摸屏，帮助 Tux 找到出路。"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "mazeinvisible"
+#: activities/mazeinvisible/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Use the arrow keys or swipe the touch screen to guide Tux out. Use the maze "
+"icon or the space key to see the map."
+msgstr "使用箭头键或轻扫触摸屏以引导 Tux 退出。使用迷宫图标或空格键查看地图。"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "mazerelative"
+#: activities/mazerelative/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Help Tux find his way out. Left and right are used to turn and up to go "
+"forward."
+msgstr "帮助Tux找到出路。左右方向键用于转弯，上方向键前进。"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "melody"
+#: activities/melody/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Listen to the sound sequence played, and reproduce it by clicking on the "
+"xylophone's bars"
+msgstr "听一下播放的声音序列，然后点击木琴的小节来重现它"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-case-association-tux"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-case-association"
+#: activities/memory-case-association-tux/ActivityInfo.qml:18
+#: activities/memory-case-association/ActivityInfo.qml:18
+#, kde-format
+msgid "Match the upper case card with its lower case pair."
+msgstr "将大写字母卡与它的小写字母对匹配。"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-enumerate"
+#: activities/memory-enumerate/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Match a number card with a card displaying the same number of butterflies."
+msgstr "将数字卡与显示相同数量蝴蝶的卡匹配。"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-math-minus"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-math-add-tux"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-math-div-tux"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-math-add-minus-tux"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-math-add-minus-mult-div"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-math-add-minus-mult-div-tux"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-math-add-minus"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-math-mult-div"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-math-mult"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-math-mult-div-tux"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-math-div"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-math-add"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-math-mult-tux"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-math-minus-tux"
+#: activities/memory-math-add-minus-mult-div-tux/ActivityInfo.qml:18
+#: activities/memory-math-add-minus-mult-div/ActivityInfo.qml:18
+#: activities/memory-math-add-minus-tux/ActivityInfo.qml:18
+#: activities/memory-math-add-minus/ActivityInfo.qml:18
+#: activities/memory-math-add-tux/ActivityInfo.qml:18
+#: activities/memory-math-add/ActivityInfo.qml:18
+#: activities/memory-math-div-tux/ActivityInfo.qml:18
+#: activities/memory-math-div/ActivityInfo.qml:18
+#: activities/memory-math-minus-tux/ActivityInfo.qml:18
+#: activities/memory-math-minus/ActivityInfo.qml:18
+#: activities/memory-math-mult-div-tux/ActivityInfo.qml:18
+#: activities/memory-math-mult-div/ActivityInfo.qml:18
+#: activities/memory-math-mult-tux/ActivityInfo.qml:18
+#: activities/memory-math-mult/ActivityInfo.qml:18
+#, kde-format
+msgid "Turn over two cards to match the calculation with its answer."
+msgstr "翻两张牌，使计算结果与答案相符。"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-sound"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-sound-tux"
+#: activities/memory-sound-tux/ActivityInfo.qml:18
+#: activities/memory-sound/ActivityInfo.qml:18
+#, kde-format
+msgid "Click on an audio card and find its double."
+msgstr "点击一个声卡，找到它的替身。"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-tux"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "memory"
+#: activities/memory-tux/ActivityInfo.qml:18
+#: activities/memory/ActivityInfo.qml:18
+#, kde-format
+msgid "Click on a card and find its double."
+msgstr "点击卡片，找出两张相同的。"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-wordnumber"
+#: activities/memory-wordnumber/ActivityInfo.qml:18
+#, kde-format
+msgid "Match the numeric with the word."
+msgstr "将数字与单词匹配。"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "mining"
+#: activities/mining/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Looking at the rockwall, you can see a sparkle somewhere. Move the mouse "
+"cursor next to this sparkle and use the mousewheel or the zoom gesture to "
+"zoom in."
+msgstr ""
+"看着岩壁，你可以看到某处有火花。将鼠标光标移到此闪烁点旁边，并使用鼠标滚轮或"
+"缩放手势来放大。"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "missing-letter"
+#: activities/missing-letter/ActivityInfo.qml:19
+#, kde-format
+msgid ""
+"Find the missing letter and complete the word by clicking on one of the "
+"letters proposed on the side."
+msgstr "找到丢失的字母，点击旁边的字母完成单词。"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "money"
+#: activities/money/ActivityInfo.qml:18
+#, kde-format
+msgid "Click or tap on the money to pay."
+msgstr "点击或触摸钱来支付。"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "money_back_cents"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "money_back"
+#: activities/money_back/ActivityInfo.qml:18
+#: activities/money_back_cents/ActivityInfo.qml:18
+#, kde-format
+msgid "Click on the money at the bottom of the screen to give Tux his change."
+msgstr "单击屏幕底部的钱，给Tux找零。"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "money_cents"
+#: activities/money_cents/ActivityInfo.qml:18
+#, kde-format
+msgid "Click on the money to pay."
+msgstr "点击钱支付。"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "mosaic"
+#: activities/mosaic/ActivityInfo.qml:18
+#, kde-format
+msgid "Put each item at the same place as in the given example."
+msgstr "按照示范，将每个东西放在相同的位置。"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "nine_men_morris"
+#: activities/nine_men_morris/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Click on the dot where you wish to place your piece and try to take all "
+"Tux's pieces."
+msgstr "点击您想放置作品的点，并尝试完成所有Tux的作品。"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "nine_men_morris_2players"
+#: activities/nine_men_morris_2players/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Click on the dot where you wish to place your piece and try to take all your "
+"friend's pieces."
+msgstr "单击您想放置棋子的点，并尝试完成你朋友的作品。"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "note_names"
+#: activities/note_names/ActivityInfo.qml:21
+#, kde-format
+msgid "Identify the note and press the correct piano key"
+msgstr "识别音符并按下正确的钢琴键"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "number_sequence"
+#: activities/number_sequence/ActivityInfo.qml:18
+#, kde-format
+msgid "Draw the picture by touching the numbers in ascending order."
+msgstr "按升序触摸数字，画出图画。"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "numbers-odd-even"
+#: activities/numbers-odd-even/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Move the helicopter to catch the clouds having even or odd numbers, in the "
+"shown order."
+msgstr "按照显示的顺序，移动直升机捕捉偶数或奇数的云。"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "ordering_alphabets"
+#: activities/ordering_alphabets/ActivityInfo.qml:24
+#, kde-format
+msgid "Arrange the letters in the correct order."
+msgstr "按正确的顺序排列字母。"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "ordering_chronology"
+#: activities/ordering_chronology/ActivityInfo.qml:24
+#, kde-format
+msgid "Arrange the given events in their chronological order."
+msgstr "按时间顺序排列给定的事件。"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "ordering_numbers"
+#: activities/ordering_numbers/ActivityInfo.qml:23
+#, kde-format
+msgid "Arrange the numbers in the correct order."
+msgstr "按正确的顺序排列数字。"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "ordering_sentences"
+#: activities/ordering_sentences/ActivityInfo.qml:23
+#, kde-format
+msgid "Arrange the given words to form a meaningful sentence."
+msgstr "将给定的词组成一个有意义的句子。"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "oware_2players"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "oware"
+#: activities/oware/ActivityInfo.qml:17
+#: activities/oware_2players/ActivityInfo.qml:17
+#, kde-format
+msgid "Capture at least 25 seeds to win the game"
+msgstr "捕获至少25个种子以赢得比赛"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "paintings"
+#: activities/paintings/ActivityInfo.qml:23
+#, kde-format
+msgid "Catch and drop each piece on the points."
+msgstr "抓住并放下每个点上的棋子。"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "path_decoding"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "path_decoding_relative"
+#: activities/path_decoding/ActivityInfo.qml:17
+#: activities/path_decoding_relative/ActivityInfo.qml:17
+#, kde-format
+msgid ""
+"Click on the grid squares following the given directions to help Tux reach "
+"the target."
+msgstr "按照给定的方向点击网格方块，帮助 Tux 到达目标。"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "path_encoding"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "path_encoding_relative"
+#: activities/path_encoding/ActivityInfo.qml:17
+#: activities/path_encoding_relative/ActivityInfo.qml:17
+#, kde-format
+msgid "Use the arrows to move Tux along the path and reach the target."
+msgstr "使用箭头沿路径移动小企鹅并到达目标。"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "penalty"
+#: activities/penalty/ActivityInfo.qml:18
+#, kde-format
+msgid "Double click or double tap on the goal, in order to score."
+msgstr "双击或双击目标即可得分。"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "photo_hunter"
+#: activities/photo_hunter/ActivityInfo.qml:18
+#, kde-format
+msgid "look at the two pictures carefully and click where you see a difference"
+msgstr "仔细看这两张图片，然后点击你看到不同的地方"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "piano_composition"
+#: activities/piano_composition/ActivityInfo.qml:19
+#, kde-format
+msgid ""
+"Learn to compose piano music using the octaves and the tools presented above "
+"the staff."
+msgstr "学习使用八度音阶和五线谱上的工具谱曲。"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "planegame"
+#: activities/planegame/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Move the helicopter with the arrow keys and catch the numbers in the clouds, "
+"in ascending order."
+msgstr "用方向键移动直升机，按升序捕捉云中的数字。"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "play_piano"
+#: activities/play_piano/ActivityInfo.qml:22
+#, kde-format
+msgid "Click on the keyboard keys that match the notes that you see and hear"
+msgstr "单击与您看到和听到的音符相匹配的键盘键"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "play_rhythm"
+#: activities/play_rhythm/ActivityInfo.qml:22
+#, kde-format
+msgid "Click the drum to recreate the rhythm"
+msgstr "单击鼓以重现节奏"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "positions"
+#: activities/positions/ActivityInfo.qml:18
+#, kde-format
+msgid "Find the correct position"
+msgstr "找到正确的位置"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "programmingMaze"
+#: activities/programmingMaze/ActivityInfo.qml:19
+#, kde-format
+msgid ""
+"Arrange the instructions and traverse the correct path to reach the fish."
+msgstr "安排好指令，并按照正确的路径到达鱼。"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "railroad"
+#: activities/railroad/ActivityInfo.qml:20
+#, kde-format
+msgid "Observe the train and then click on the items to set up a similar train"
+msgstr "观察火车，然后点击项目设置一个类似的火车"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "readingh"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "readingv"
+#: activities/readingh/ActivityInfo.qml:18
+#: activities/readingv/ActivityInfo.qml:18
+#, kde-format
+msgid "Read a list of words and say if a given word is in it."
+msgstr "阅读一组单词，并说出其中是否有给定单词。"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "redraw"
+#: activities/redraw/ActivityInfo.qml:18
+#, kde-format
+msgid "Use the drawing tools to build an identical pattern on the right."
+msgstr "使用绘图工具在右侧构建相同的图案。"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "redraw_symmetrical"
+#: activities/redraw_symmetrical/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Use the drawing tools to reproduce symmetrically the pattern on the right."
+msgstr "使用绘图工具来对称地重现右边的图案。"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "renewable_energy"
+#: activities/renewable_energy/ActivityInfo.qml:18
+#, kde-format
+msgid "Click on the different stages that go to make up the power supply."
+msgstr "单击组成电源的不同阶段。"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "reversecount"
+#: activities/reversecount/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Click on the domino and validate your choice with the OK button to indicate "
+"the number of ice blocks Tux will have to follow to eat a fish."
+msgstr ""
+"单击多米诺骨牌，并单击确定按钮验证您的选择，以指示Tux吃鱼必须遵循的冰块数量。"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "roman_numerals"
+#: activities/roman_numerals/ActivityInfo.qml:18
+#, kde-format
+msgid "Learn and practice roman to arabic numerals conversion"
+msgstr "学习和练习罗马数字到阿拉伯数字的转换"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "scalesboard"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "scalesboard_weight_avoirdupois"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "scalesboard_weight"
+#: activities/scalesboard/ActivityInfo.qml:18
+#: activities/scalesboard_weight/ActivityInfo.qml:18
+#: activities/scalesboard_weight_avoirdupois/ActivityInfo.qml:18
+#, kde-format
+msgid "Drag the weights up to balance the scales."
+msgstr "把重物向上拉，使天平平衡。"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "share"
+#: activities/share/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Share the candies equally among the specified number of children and notice "
+"that there may be a rest left"
+msgstr "把糖果平均分给规定人数的孩子们，注意可能还剩下一些糖果"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "simplepaint"
+#: activities/simplepaint/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Select a color and paint the rectangles as you like to create a drawing."
+msgstr "选择一种颜色并为您喜欢的矩形上色，尝试着组合成一幅画。"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "smallnumbers"
+#: activities/smallnumbers/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Count the number on the dice and type it on your keyboard before it reaches "
+"the ground."
+msgstr "数骰子上的数字，在落到地上之前在键盘上输入数字。"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "smallnumbers2"
+#: activities/smallnumbers2/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Count the numbers on the dominoes then type the result on your keyboard."
+msgstr "计算多米诺骨牌上的数字，然后在键盘上输入结果。"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "solar_system"
+#: activities/solar_system/ActivityInfo.qml:21
+#, kde-format
+msgid ""
+"Answer the questions presented and get a 100% correctness among the options."
+msgstr "回答提出的问题，并在各个选项中获得100％的正确性。"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "submarine"
+#: activities/submarine/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Drive the submarine to the right end of the screen without colliding with "
+"any objects"
+msgstr "驾驶潜水艇到屏幕的右端，不要与任何物体碰撞"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "sudoku"
+#: activities/sudoku/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Select a number or a symbol and click its target area. Each symbol must "
+"appear only once in a row, in a column and in a subregion if any."
+msgstr ""
+"选择一个数字或符号，然后单击其目标区域。每个符号必须在一行中出现一次，在一列"
+"中出现一次，在子区域中出现一次(如果有的话)。"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "superbrain"
+#: activities/superbrain/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Find out the right combination of colors. A dot framed in a black square "
+"means that you found the correct colour in the correct position, while a dot "
+"framed in a white square means it's the correct colour, but in the wrong "
+"position."
+msgstr ""
+"找出正确的颜色组合。黑色框中的圆点表示你在正确的位置找到了正确的颜色，而白方"
+"框中的圆点表示它的颜色正确，但位置不正确。"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "tangram"
+#: activities/tangram/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Click on each object to obtain the same figure. You can change their "
+"orientation by clicking on the arrows."
+msgstr "单击每个对象以获得相同的图形。您可以通过单击箭头来改变它们的方向。"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "target"
+#: activities/target/ActivityInfo.qml:18
+#, kde-format
+msgid "Click on the target to launch darts, then count your final score!"
+msgstr "单击目标发射飞镖，然后计算你的最终得分！"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "tic_tac_toe_2players"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "tic_tac_toe"
+#: activities/tic_tac_toe/ActivityInfo.qml:21
+#: activities/tic_tac_toe_2players/ActivityInfo.qml:21
+#, kde-format
+msgid ""
+"Click on the square which you wish to mark and try to mark 3 consecutive "
+"squares before Tux."
+msgstr "单击要标记的方块，试着在Tux之前标记3个连续的方块。"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "traffic"
+#: activities/traffic/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Slide the cars to make a space so that the red car can go out of the box."
+msgstr "滑动汽车以腾出空间，这样红色的车就可以从箱子里出来了。"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "watercycle"
+#: activities/watercycle/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Click on the various active elements that make up the water supply. Then "
+"press the shower button for Tux."
+msgstr "单击构成供水的各种活动元素。然后按下Tux的淋浴按钮。"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "wordsgame"
+#: activities/wordsgame/ActivityInfo.qml:18
+#, kde-format
+msgid "Type the words on your keyboard before they reach the ground."
+msgstr "在他们落到地面之前，先在键盘上输入单词。"

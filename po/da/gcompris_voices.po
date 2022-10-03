@@ -1,0 +1,1244 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR This file is copyright:
+# This file is distributed under the same license as the gcompris package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gcompris\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-09-26 00:40+0000\n"
+"PO-Revision-Date: 2019-12-28 18:27+0100\n"
+"Last-Translator: \n"
+"Language-Team: Danish <kde-i18n-doc@kde.org>\n"
+"Language: da\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.4\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "advanced_colors"
+#: activities/advanced_colors/ActivityInfo.qml:18
+#, kde-format
+msgid "click on the required color"
+msgstr "Klik på den ønskede farve"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "algebra_by"
+#: activities/algebra_by/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Multiply the two numbers together and type in your answer before the balloon "
+"lands in the water"
+msgstr ""
+"Multiplicer de to tal sammen og skriv dit svar, før ballonen lander i vandet"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "algebra_div"
+#: activities/algebra_div/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Find the result of the division and type in your answer before the balloon "
+"lands in the water"
+msgstr ""
+"Find resultatet af divisionen og skriv dit svar, før ballonen lander i vandet"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "algebra_minus"
+#: activities/algebra_minus/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Subtract the two numbers and type in your answer before the balloon lands in "
+"the water"
+msgstr "Fratræk de to tal og skriv dit svar, før ballonen lander i vandet"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "algebra_plus"
+#: activities/algebra_plus/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Add the two numbers together and type in your answer before the balloon "
+"lands in the water"
+msgstr "Læg de to tal sammen og skriv dit svar, før ballonen lander i vandet"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "algorithm"
+#: activities/algorithm/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Click on the missing items on the table and follow the logical sequence "
+"displayed above it."
+msgstr "Klik på de manglende emner på bordet og følg det som vises oven over."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "align4"
+#: activities/align4/ActivityInfo.qml:18
+#, fuzzy, kde-format
+msgid ""
+"Click on the column where you wish your token to fall and try to align of 4 "
+"tokens before Tux."
+msgstr ""
+"Klik på den kolonne, hvor du ønsker at din polet skal falde og forsøg "
+"herefter at justere 4 poletter før Tux."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "align4_2players"
+#: activities/align4_2players/ActivityInfo.qml:18
+#, fuzzy, kde-format
+msgid ""
+"Click on the column where you wish your token to fall and try to align 4 "
+"tokens to win."
+msgstr ""
+"Klik på den kolonne, hvor du ønsker din polet skal falde og forsøg at "
+"justere 4 poletter for at vinde."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "alphabet-sequence"
+#: activities/alphabet-sequence/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Move the helicopter to catch the clouds following the order of the alphabet."
+msgstr "Flyt helikopteren for at fange skyerne efter rækkefølgen af alfabetet."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "analog_electricity"
+#: activities/analog_electricity/ActivityInfo.qml:18
+#, fuzzy, kde-format
+#| msgid "Learn how digital electronics work and create your own circuit."
+msgid "Learn how analog electricity works and create your own circuit."
+msgstr "Lær hvordan elektronik fungerer og skab dit eget elekroniske kredsløb."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "baby_keyboard"
+#: activities/baby_keyboard/ActivityInfo.qml:18
+#, kde-format
+msgid "Type any key on the keyboard and observe the result."
+msgstr ""
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "baby_mouse"
+#: activities/baby_mouse/ActivityInfo.qml:17
+#, fuzzy, kde-format
+#| msgid " Move the mouse or your finger along the pipe to stop the fire."
+msgid "Move the mouse or touch the screen and observe the result."
+msgstr "Bevæg musen eller fingeren hen langs røret for at standse ilden."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "baby_tangram"
+#: activities/baby_tangram/ActivityInfo.qml:18
+#, fuzzy, kde-format
+#| msgid ""
+#| "Click on each object to obtain the same figure. You can change their "
+#| "orientation by clicking on the arrows."
+msgid ""
+"Move each puzzle piece, to obtain the completed puzzle. You can change their "
+"orientation by clicking on the arrows."
+msgstr ""
+"Klik på hvert objekt for at få det samme tal. Du kan ændre deres retning ved "
+"at klikke på pilene."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "baby_wordprocessor"
+#: activities/baby_wordprocessor/ActivityInfo.qml:18
+#, kde-format
+msgid "A simplistic word processor to play around with the keyboard"
+msgstr ""
+"Et simpelt tekstbehandlingsprogram som kan spilles ved hjælp af tastaturet"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "babymatch"
+#: activities/babymatch/ActivityInfo.qml:21
+#, kde-format
+msgid "Drag and drop the objects matching the pictures"
+msgstr "Træk og slip de objekter, som svarer til billederne"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "babyshapes"
+#: activities/babyshapes/ActivityInfo.qml:22
+#, kde-format
+msgid "Drag and drop the objects matching the shapes."
+msgstr "Træk og slip de objekter, som svarer til figurerne."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "balancebox"
+#: activities/balancebox/ActivityInfo.qml:21
+#, kde-format
+msgid "Tilt the box to navigate the ball to the door."
+msgstr "Vip boksen for at navigere bolden til døren."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "ballcatch"
+#: activities/ballcatch/ActivityInfo.qml:18
+#, fuzzy, kde-format
+#| msgid ""
+#| "Press the left and right arrow key at the same time to send the ball "
+#| "straight on"
+msgid ""
+"Press the left and right arrows at the same time to send the ball straight on"
+msgstr ""
+"Tryk på venstre og højre piletast på samme tid for at skyde bolden ligeud"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "bargame"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "bargame_2players"
+#: activities/bargame/ActivityInfo.qml:19
+#: activities/bargame_2players/ActivityInfo.qml:18
+#, fuzzy, kde-format
+#| msgid ""
+#| "Click the number of balls you wish to place in the holes and then click "
+#| "the OK button. The winner is the one who hasn't put a ball in the red "
+#| "hole."
+msgid ""
+"Select the number of balls you wish to place in the holes and then click on "
+"the OK button. The winner is the one who hasn't put a ball in the red hole."
+msgstr ""
+"Klik på antallet af bolde, du ønsker at placere i hullerne, og klik derefter "
+"på OK-knappen. Vinderen er den, der ikke har sat en bold i det røde hul."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "binary_bulb"
+#: activities/binary_bulb/ActivityInfo.qml:18
+#, fuzzy, kde-format
+msgid ""
+"Turn on the right bulbs to represent the binary of the given decimal number. "
+"When you have achieved it, press OK"
+msgstr ""
+"Tænd de rigtige pærer for at repræsentere den binære del af det givne "
+"decimaltal. Når du har opnået det, skal du trykke på OK"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "braille_alphabets"
+#: activities/braille_alphabets/ActivityInfo.qml:18
+#, fuzzy, kde-format
+msgid "Click on Tux to start and then re-create the Braille cells."
+msgstr "Klik på Tux for at starte, for derefter at genskabe Braille-cellerne."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "braille_fun"
+#: activities/braille_fun/ActivityInfo.qml:18
+#, fuzzy, kde-format
+msgid "Create the Braille cell for the letter."
+msgstr "Opret Braille-cellen til brevet."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "calendar"
+#: activities/calendar/ActivityInfo.qml:18
+#, kde-format
+msgid "Select the asked date on the calendar"
+msgstr "Vælg den anmodede dato i kalenderen"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "canal_lock"
+#: activities/canal_lock/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"You are responsible for the lock and you must help Tux pass through. Click "
+"on the valves to cause either a drop or an increase in the water level, and "
+"click on the gates to open or close a path."
+msgstr ""
+"Du er ansvarlig for låsen, og du skal hjælpe Tux med at komme igennem. Klik "
+"på ventilerne for at lave enten en dråbe eller for at få vandstanden til at "
+"stige. Klik på portene for at åbne eller lukke."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "categorization"
+#: activities/categorization/ActivityInfo.qml:18
+#, fuzzy, kde-format
+#| msgid "Categorize the elements into the correct group"
+msgid "Categorize the items into the correct group"
+msgstr "Arranger elementerne ind i den korrekte gruppe"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "checkers"
+#: activities/checkers/ActivityInfo.qml:18
+#, fuzzy, kde-format
+#| msgid "play chess against Tux"
+msgid "play checkers against Tux"
+msgstr "spil skak mod Tux"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "checkers_2players"
+#: activities/checkers_2players/ActivityInfo.qml:18
+#, kde-format
+msgid "play checkers with your friend"
+msgstr "spil brikker med din ven"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "chess"
+#: activities/chess/ActivityInfo.qml:18
+#, kde-format
+msgid "play chess against Tux"
+msgstr "spil skak mod Tux"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "chess_2players"
+#: activities/chess_2players/ActivityInfo.qml:18
+#, kde-format
+msgid "play chess against your friend"
+msgstr "spil skak mod din ven"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "chess_partyend"
+#: activities/chess_partyend/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Click on a white chess piece and green boxes will appear to indicate all the "
+"movements that piece can make. Try and get the black king into checkmate."
+msgstr ""
+"Klik på en hvid skakbrik og de grønne bokse vil vise de mulige ryk som en "
+"brik kan flytte. Prøv at få den sorte konge i skakmat."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "chronos"
+#: activities/chronos/ActivityInfo.qml:22
+#, kde-format
+msgid "Slide the pictures into the order that tells the story"
+msgstr "Skub billederne ind i den rækkefølge, der fortæller historien"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "click_on_letter_up"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "click_on_letter"
+#: activities/click_on_letter/ActivityInfo.qml:18
+#: activities/click_on_letter_up/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Click on the required letter. You can listen to it again by clicking on the "
+"mouth."
+msgstr ""
+"Klik på det ønskede bogstav. Du kan lytte til det igen ved at klikke på "
+"munden."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "clickanddraw"
+#: activities/clickanddraw/ActivityInfo.qml:18
+#, kde-format
+msgid "Click on the selected points and draw"
+msgstr "Klik på de valgte punkter og træk"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "clickgame"
+#: activities/clickgame/ActivityInfo.qml:18
+#, kde-format
+msgid "Catch the fish before they leave the aquarium."
+msgstr "Fang fiskene før de forlader akvariet."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "clockgame"
+#: activities/clockgame/ActivityInfo.qml:18
+#, kde-format
+msgid "Drag and drop the needles of the clock to display the required time"
+msgstr "Træk og slip viserne på uret for at få vist den ønskede tid"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "color_mix"
+#: activities/color_mix/ActivityInfo.qml:18
+#, fuzzy, kde-format
+#| msgid "Match the colour by moving the sliders on the tubes of paint"
+msgid "Match the color by moving the sliders on the tubes of paint"
+msgstr "Få farven til at matche ved at flytte skyderne på malingstuberne"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "color_mix_light"
+#: activities/color_mix_light/ActivityInfo.qml:18
+#, fuzzy, kde-format
+#| msgid "Match the colour by moving the sliders on the torches"
+msgid "Match the color by moving the sliders on the torches"
+msgstr "Få farven til at matche ved at flytte skyderne på faklerne"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "colors"
+#: activities/colors/ActivityInfo.qml:18
+#, kde-format
+msgid "Click on the right color"
+msgstr "Klik på den rigtige farve"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "crane"
+#: activities/crane/ActivityInfo.qml:23
+#, fuzzy, kde-format
+#| msgid ""
+#| " Click on each item in turn, in the left frame, and move them to "
+#| "reproduce the pattern from the right frame."
+msgid ""
+" Click on each item in turn, in the blue frame, and move them to reproduce "
+"the pattern from the pink frame."
+msgstr ""
+"Klik på hvert genstand i den venstre boks. Flyt dem herefter for at gengive "
+"mønsteret fra den højre boks."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "details"
+#: activities/details/ActivityInfo.qml:21
+#, fuzzy, kde-format
+msgid "Slide the images on their respective targets"
+msgstr "Flyt billederne hen til hvor de passer"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "digital_electricity"
+#: activities/digital_electricity/ActivityInfo.qml:18
+#, kde-format
+msgid "Learn how digital electronics work and create your own circuit."
+msgstr "Lær hvordan elektronik fungerer og skab dit eget elekroniske kredsløb."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "drawletters"
+#: activities/drawletters/ActivityInfo.qml:18
+#, kde-format
+msgid "Click on the selected points and draw the letter"
+msgstr "Klik på de valgte punkter og tegn brevet"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "drawnumbers"
+#: activities/drawnumbers/ActivityInfo.qml:18
+#, kde-format
+msgid "Draw the numbers by connecting the dots in the correct order."
+msgstr "Tegn tallene ved at forbinde prikkerne i den rigtige rækkefølge."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "enumerate"
+#: activities/enumerate/ActivityInfo.qml:18
+#, fuzzy, kde-format
+#| msgid ""
+#| "Count the elements by organising them then type the answer on your "
+#| "keyboard."
+msgid ""
+"Count the elements by organizing them then type the answer on your keyboard."
+msgstr ""
+"Tæl genstandene ved at samle dem og skriv derefter svaret på dit tastatur."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "erase"
+#: activities/erase/ActivityInfo.qml:18
+#, kde-format
+msgid " Clear the window with your sponge and discover the hidden picture."
+msgstr "Rens vinduet med din svamp og opdag det skjulte billede."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "erase_2clic"
+#: activities/erase_2clic/ActivityInfo.qml:18
+#, kde-format
+msgid "Double tap or double click on the bricks to discover the hidden picture"
+msgstr "Dobbeltklik på klodserne for at opdage det skjulte billede"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "erase_clic"
+#: activities/erase_clic/ActivityInfo.qml:18
+#, kde-format
+msgid "Click or tap on the transparent bricks and discover the hidden picture."
+msgstr "Klik på de gennemsigtige mursten og opdag det skjulte billede."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "explore_farm_animals"
+#: activities/explore_farm_animals/ActivityInfo.qml:18
+#, kde-format
+msgid "Learn about farmyard animals and the noises that they make."
+msgstr "Lær om dyrene på bondegården og de lyde de laver."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "explore_monuments"
+#: activities/explore_monuments/ActivityInfo.qml:18
+#, kde-format
+msgid "Explore Monuments around the world."
+msgstr "Udforsk monumenter rundt om i verden."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "explore_world_animals"
+#: activities/explore_world_animals/ActivityInfo.qml:22
+#, kde-format
+msgid "Learn about world animals and locate them on a map."
+msgstr "Lær om verdens dyr og find dem på et kort."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "explore_world_music"
+#: activities/explore_world_music/ActivityInfo.qml:18
+#, kde-format
+msgid "Click on the suitcases to learn about music from around the world."
+msgstr "Klik på kufferterne for at lære om musik fra hele verden."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "family"
+#: activities/family/ActivityInfo.qml:18
+#, kde-format
+msgid "Let us understand what to call our relatives"
+msgstr "Lad os prøve at forstå hvad vi skal kalde vores slægtninge"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "family_find_relative"
+#: activities/family_find_relative/ActivityInfo.qml:18
+#, kde-format
+msgid "Click on a pair that defines the given relation"
+msgstr "Klik på et par som passer sammen"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "fifteen"
+#: activities/fifteen/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Click or drag an element next to a free space, the element will move and "
+"release its space. You must put all the pieces in the correct order. The "
+"numbers on the pieces can help you."
+msgstr ""
+"Klik eller træk en genstand hen til en ledig plads og det vil flytte og "
+"frigive sin plads. Du skal lægge alle brikkerne i den rigtige rækkefølge. "
+"Numrene på brikkerne kan hjælpe dig."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "find_the_day"
+#: activities/find_the_day/ActivityInfo.qml:18
+#, kde-format
+msgid "Select the required day."
+msgstr "Vælg den ønskede dag."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "followline"
+#: activities/followline/ActivityInfo.qml:18
+#, kde-format
+msgid " Move the mouse or your finger along the pipe to stop the fire."
+msgstr "Bevæg musen eller fingeren hen langs røret for at standse ilden."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "football"
+#: activities/football/ActivityInfo.qml:18
+#, kde-format
+msgid "Drag a line from the ball to set the speed and direction of your kick."
+msgstr ""
+"Træk en linje fra bolden for at sætte hastigheden og retningen af dit spark."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "fractions_create"
+#: activities/fractions_create/ActivityInfo.qml:19
+#, kde-format
+msgid ""
+"Select the appropriate number of parts as described in the instructions."
+msgstr ""
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "fractions_find"
+#: activities/fractions_find/ActivityInfo.qml:17
+#, kde-format
+msgid "Find the correct numerator and denominator of the represented fraction"
+msgstr ""
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "geo-country"
+#: activities/geo-country/ActivityInfo.qml:22
+#, kde-format
+msgid "Drag and drop the regions to complete the country maps."
+msgstr "Træk og slip områderne for at gøre landkortene færdige."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "geography"
+#: activities/geography/ActivityInfo.qml:22
+#, kde-format
+msgid "Drag and drop the objects to complete the map."
+msgstr "Træk og slip genstandene for at gøre kortet færdigt."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "gletters"
+#: activities/gletters/ActivityInfo.qml:18
+#, kde-format
+msgid "Type the letters on your keyboard before they reach the ground."
+msgstr "Skriv bogstaverne før de når jorden."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "gnumch-equality"
+#: activities/gnumch-equality/ActivityInfo.qml:18
+#, fuzzy, kde-format
+msgid ""
+"Guide the number eater with the arrow keys to the required numbers and press "
+"the space bar to swallow them."
+msgstr ""
+"Vis vej for tal-spiseren med piletasterne til de nødvendige tal. Tryk på "
+"mellemrumstasten for at sluge dem."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "gnumch-factors"
+#: activities/gnumch-factors/ActivityInfo.qml:18
+#, fuzzy, kde-format
+msgid ""
+"Guide the number eater with the arrow keys to the factors of the displayed "
+"number and press space to swallow them."
+msgstr ""
+"Vis vej for tal-spiseren med piletasterne til andre tal i nærheden med det "
+"viste nummer. Tryk på mellemrumstasten for at sluge dem."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "gnumch-inequality"
+#: activities/gnumch-inequality/ActivityInfo.qml:19
+#, fuzzy, kde-format
+msgid ""
+"Guide the number eater with the arrow keys to the numbers that are different "
+"from the ones displayed and press the space bar to swallow them."
+msgstr ""
+"Vis vej for tal-spiseren med piletasterne til de tal der er forskellige fra "
+"dem som vises. Tryk på mellemrumstasten for at sluge dem."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "gnumch-multiples"
+#: activities/gnumch-multiples/ActivityInfo.qml:18
+#, fuzzy, kde-format
+msgid ""
+"Guide the number eater with the arrow keys to the multiples of the displayed "
+"number and press space to swallow them."
+msgstr ""
+"Vis vej for tal-spiseren med piletasterne til multiplikationen af det viste "
+"nummer. Tryk på mellemrumstasten for at sluge dem."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "gnumch-primes"
+#: activities/gnumch-primes/ActivityInfo.qml:18
+#, fuzzy, kde-format
+msgid ""
+"Guide the number eater with the arrow keys to the prime numbers and press "
+"space to swallow them."
+msgstr ""
+"Vis vej for tal-spiseren med piletasterne til primtallene. Tryk på "
+"mellemrumstasten for at sluge dem."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "graph-coloring"
+#: activities/graph-coloring/ActivityInfo.qml:18
+#, kde-format
+msgid "Color the graph so that no two adjacent nodes have the same color."
+msgstr "Farvelæg grafen så der ikke er to tilstødende noder med samme farve."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "gravity"
+#: activities/gravity/ActivityInfo.qml:22
+#, kde-format
+msgid ""
+"Move the spaceship to avoid hitting the planets and reach the space station."
+msgstr ""
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "guesscount"
+#: activities/guesscount/ActivityInfo.qml:22
+#, fuzzy, kde-format
+msgid ""
+"Use the numbers and operations suggested to find the results proposed above."
+msgstr ""
+"Brug de tal og handlinger som foreslås for at finde de resultater, som er "
+"foreslået ovenfor."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "guessnumber"
+#: activities/guessnumber/ActivityInfo.qml:18
+#, kde-format
+msgid "Find out the number by typing a number from the range proposed."
+msgstr "Find ud af nummeret ved at skrive et tal fra det foreslåede interval."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "hangman"
+#: activities/hangman/ActivityInfo.qml:22
+#, kde-format
+msgid "A word is hidden, you must discover it letter by letter."
+msgstr "Et ord er skjult og du skal opdage det bogstav for bogstav."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "hanoi"
+#: activities/hanoi/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Rebuild the same tower in the empty area as the one you see on the right "
+"hand side."
+msgstr ""
+"Genopbyg det samme tårn i det tomme område som det du ser i højre side."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "hanoi_real"
+#: activities/hanoi_real/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Rebuild the model tower on the right support. Take care, no disc may be "
+"placed atop a smaller disc."
+msgstr ""
+"Genopbyg modeltårnet på det rigtige fundament. Pas på, at der ikke kan "
+"placeres en plade på toppen af en mindre plade."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "hexagon"
+#: activities/hexagon/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Click on the hexagons to find the hidden object, the red zone indicates that "
+"you're close to it!"
+msgstr ""
+"Klik på sekskanter for at finde den skjulte genstand. Den røde zone "
+"indikerer at du er tæt på det!"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "imagename"
+#: activities/imagename/ActivityInfo.qml:21
+#, kde-format
+msgid "Drag and drop each item above its name."
+msgstr "Træk og slip hver genstand over dets navn."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "instruments"
+#: activities/instruments/ActivityInfo.qml:18
+#, kde-format
+msgid "Click on the correct musical instrument."
+msgstr "Klik på det rigtige musikinstrument."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "land_safe"
+#: activities/land_safe/ActivityInfo.qml:18
+#, kde-format
+msgid "Use the arrow keys to pilot your spaceship safely onto the landing pad."
+msgstr "Brug piletasterne til at styre dit rumskib sikkert på landingsblokken."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "lang"
+#: activities/lang/ActivityInfo.qml:24
+#, kde-format
+msgid ""
+"Select the language you want to learn then review the words before doing the "
+"exercises."
+msgstr ""
+"Vælg det sprog du vil lære, og gennemgå ordene før du udfører øvelserne."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "learn_additions"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "learn_subtractions"
+#: activities/learn_additions/ActivityInfo.qml:18
+#: activities/learn_subtractions/ActivityInfo.qml:18
+#, fuzzy, kde-format
+#| msgid "Click on the lamps to turn them off."
+msgid "Click on the circles to give the operation's result."
+msgstr "Klik på lamperne for at slukke dem."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "learn_decimals"
+#: activities/learn_decimals/ActivityInfo.qml:17
+#, kde-format
+msgid ""
+"Drag the arrow to select a part of the bar, and drag the selected part of "
+"the bar to the empty area to represent the decimal number."
+msgstr ""
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "learn_decimals_additions"
+#: activities/learn_decimals_additions/ActivityInfo.qml:17
+#, kde-format
+msgid ""
+"Drag the arrow to select a part of the bar, and drag the selected part of "
+"the bar to the empty area to represent the result of the addition."
+msgstr ""
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "learn_decimals_subtractions"
+#: activities/learn_decimals_subtractions/ActivityInfo.qml:17
+#, fuzzy, kde-format
+#| msgid "Click on the lamps to turn them off."
+msgid "Click on the squares to represent the result of the subtraction."
+msgstr "Klik på lamperne for at slukke dem."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "learn_digits"
+#: activities/learn_digits/ActivityInfo.qml:18
+#, fuzzy, kde-format
+#| msgid "Click on the lamps to turn them off."
+msgid "Click on the circles to match the given digit."
+msgstr "Klik på lamperne for at slukke dem."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "learn_quantities"
+#: activities/learn_quantities/ActivityInfo.qml:17
+#, kde-format
+msgid ""
+"Drag the arrow to select a number of oranges, and drag the oranges to the "
+"empty area to represent the requested quantity."
+msgstr ""
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "left_right_click"
+#: activities/left_right_click/ActivityInfo.qml:17
+#, kde-format
+msgid ""
+"Move animals to their homes using a left click or right click on your mouse."
+msgstr ""
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "leftright"
+#: activities/leftright/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Guess if the picture presents a left or right hand and click on the correct "
+"answer."
+msgstr ""
+"Gæt om billedet viser en venstre eller højre hånd, og klik på det rigtige "
+"svar."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "letter-in-word"
+#: activities/letter-in-word/ActivityInfo.qml:18
+#, kde-format
+msgid "Click on all the words containing the wanted letter."
+msgstr "Klik på alle de ord der indeholder det ønskede bogstav."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "lightsoff"
+#: activities/lightsoff/ActivityInfo.qml:18
+#, kde-format
+msgid "Click on the lamps to turn them off."
+msgstr "Klik på lamperne for at slukke dem."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "louis-braille"
+#: activities/louis-braille/ActivityInfo.qml:18
+#, kde-format
+msgid "Discover the history of Louis Braille."
+msgstr "Oplev historien om Louis Braille."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "magic-hat-minus"
+#: activities/magic-hat-minus/ActivityInfo.qml:18
+#, kde-format
+msgid "Click on the hat. How many stars are still hiding under the hat."
+msgstr "Klik på hatten. Hvor mange stjerner gemmer sig stadig under hatten?"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "magic-hat-plus"
+#: activities/magic-hat-plus/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Count the number of stars hidden under the hat and then click on the stars "
+"to indicate their number."
+msgstr ""
+"Tæl antallet af stjerner skjult under hatten, og klik derefter på stjernerne "
+"for at angive deres nummer."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "maze"
+#: activities/maze/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Use the arrows keys or swipe the touch screen to help Tux find his way out."
+msgstr ""
+"Brug piletasterne eller stryg den berøringsfølsomme skærm for at hjælpe Tux "
+"med at finde vejen ud."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "mazeinvisible"
+#: activities/mazeinvisible/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Use the arrow keys or swipe the touch screen to guide Tux out. Use the maze "
+"icon or the space key to see the map."
+msgstr ""
+"Brug piletasterne eller stryg den berøringsfølsomme skærm for at guide Tux "
+"ud. Brug labyrintikonet eller mellemrumstasten til at se kortet."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "mazerelative"
+#: activities/mazerelative/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Help Tux find his way out. Left and right are used to turn and up to go "
+"forward."
+msgstr ""
+"Hjælp Tux med at finde vej ud. Venstre og højre bruges til at dreje. Pil op "
+"bruges til at gå fremad med."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "melody"
+#: activities/melody/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Listen to the sound sequence played, and reproduce it by clicking on the "
+"xylophone's bars"
+msgstr ""
+"Lyt til den lydsekvens der spilles, og gengiv den ved at klikke på "
+"xylofonens tangenter"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-case-association-tux"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-case-association"
+#: activities/memory-case-association-tux/ActivityInfo.qml:18
+#: activities/memory-case-association/ActivityInfo.qml:18
+#, fuzzy, kde-format
+msgid "Match the upper case card with its lower case pair."
+msgstr "Match det store bogstavekort med dets små bogstavepar."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-enumerate"
+#: activities/memory-enumerate/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Match a number card with a card displaying the same number of butterflies."
+msgstr "Match et nummerkort med et kort der viser det samme antal sommerfugle."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-math-minus"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-math-add-tux"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-math-div-tux"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-math-add-minus-tux"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-math-add-minus-mult-div"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-math-add-minus-mult-div-tux"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-math-add-minus"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-math-mult-div"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-math-mult"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-math-mult-div-tux"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-math-div"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-math-add"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-math-mult-tux"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-math-minus-tux"
+#: activities/memory-math-add-minus-mult-div-tux/ActivityInfo.qml:18
+#: activities/memory-math-add-minus-mult-div/ActivityInfo.qml:18
+#: activities/memory-math-add-minus-tux/ActivityInfo.qml:18
+#: activities/memory-math-add-minus/ActivityInfo.qml:18
+#: activities/memory-math-add-tux/ActivityInfo.qml:18
+#: activities/memory-math-add/ActivityInfo.qml:18
+#: activities/memory-math-div-tux/ActivityInfo.qml:18
+#: activities/memory-math-div/ActivityInfo.qml:18
+#: activities/memory-math-minus-tux/ActivityInfo.qml:18
+#: activities/memory-math-minus/ActivityInfo.qml:18
+#: activities/memory-math-mult-div-tux/ActivityInfo.qml:18
+#: activities/memory-math-mult-div/ActivityInfo.qml:18
+#: activities/memory-math-mult-tux/ActivityInfo.qml:18
+#: activities/memory-math-mult/ActivityInfo.qml:18
+#, fuzzy, kde-format
+msgid "Turn over two cards to match the calculation with its answer."
+msgstr "Vend to kort hvor beregningen er lig med svaret."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-sound"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-sound-tux"
+#: activities/memory-sound-tux/ActivityInfo.qml:18
+#: activities/memory-sound/ActivityInfo.qml:18
+#, kde-format
+msgid "Click on an audio card and find its double."
+msgstr "Klik på et lydkort, og find det dobbelte."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-tux"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "memory"
+#: activities/memory-tux/ActivityInfo.qml:18
+#: activities/memory/ActivityInfo.qml:18
+#, kde-format
+msgid "Click on a card and find its double."
+msgstr "Klik på et kort og find det dobbelte."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-wordnumber"
+#: activities/memory-wordnumber/ActivityInfo.qml:18
+#, fuzzy, kde-format
+msgid "Match the numeric with the word."
+msgstr "Match nummeret med ordet."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "mining"
+#: activities/mining/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Looking at the rockwall, you can see a sparkle somewhere. Move the mouse "
+"cursor next to this sparkle and use the mousewheel or the zoom gesture to "
+"zoom in."
+msgstr ""
+"Hvis du kigger på stenvæggen, kan du et eller andet sted se en gnist. Flyt "
+"musemarkøren hen til gnisten, og brug musehjulet eller zoom-funktionen for "
+"at zoome ind."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "missing-letter"
+#: activities/missing-letter/ActivityInfo.qml:19
+#, kde-format
+msgid ""
+"Find the missing letter and complete the word by clicking on one of the "
+"letters proposed on the side."
+msgstr ""
+"Find det manglende bogstav og udfyld ordet ved at klikke på et af "
+"bogstaverne som foreslåes på siden."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "money"
+#: activities/money/ActivityInfo.qml:18
+#, kde-format
+msgid "Click or tap on the money to pay."
+msgstr "Klik eller tryk på pengene for at betale."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "money_back_cents"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "money_back"
+#: activities/money_back/ActivityInfo.qml:18
+#: activities/money_back_cents/ActivityInfo.qml:18
+#, kde-format
+msgid "Click on the money at the bottom of the screen to give Tux his change."
+msgstr "Klik på pengene i bunden af skærmen for at give Tux hans forandring."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "money_cents"
+#: activities/money_cents/ActivityInfo.qml:18
+#, kde-format
+msgid "Click on the money to pay."
+msgstr "Klik på pengene for at betale."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "mosaic"
+#: activities/mosaic/ActivityInfo.qml:18
+#, kde-format
+msgid "Put each item at the same place as in the given example."
+msgstr "Placer hvert genstand på samme sted som i det viste eksempel."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "nine_men_morris"
+#: activities/nine_men_morris/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Click on the dot where you wish to place your piece and try to take all "
+"Tux's pieces."
+msgstr ""
+"Klik på den prik hvor du ønsker at placere din brik og forsøg at tage alle "
+"Tux stykker."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "nine_men_morris_2players"
+#: activities/nine_men_morris_2players/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Click on the dot where you wish to place your piece and try to take all your "
+"friend's pieces."
+msgstr ""
+"Klik på den prik, hvor du ønsker at placere din brik og forsøg at tage alle "
+"dine vens brikker."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "note_names"
+#: activities/note_names/ActivityInfo.qml:21
+#, kde-format
+msgid "Identify the note and press the correct piano key"
+msgstr "Identificer noden, og tryk på den korrekte klavertangent"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "number_sequence"
+#: activities/number_sequence/ActivityInfo.qml:18
+#, kde-format
+msgid "Draw the picture by touching the numbers in ascending order."
+msgstr "Tegn billedet ved at røre ved tallene i stigende rækkefølge."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "numbers-odd-even"
+#: activities/numbers-odd-even/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Move the helicopter to catch the clouds having even or odd numbers, in the "
+"shown order."
+msgstr ""
+"Flyt helikopteren for at fange skyerne med lige eller ulige tal, i den viste "
+"rækkefølge."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "ordering_alphabets"
+#: activities/ordering_alphabets/ActivityInfo.qml:24
+#, fuzzy, kde-format
+#| msgid "Draw the numbers by connecting the dots in the correct order."
+msgid "Arrange the letters in the correct order."
+msgstr "Tegn tallene ved at forbinde prikkerne i den rigtige rækkefølge."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "ordering_chronology"
+#: activities/ordering_chronology/ActivityInfo.qml:24
+#, kde-format
+msgid "Arrange the given events in their chronological order."
+msgstr ""
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "ordering_numbers"
+#: activities/ordering_numbers/ActivityInfo.qml:23
+#, fuzzy, kde-format
+#| msgid "Draw the numbers by connecting the dots in the correct order."
+msgid "Arrange the numbers in the correct order."
+msgstr "Tegn tallene ved at forbinde prikkerne i den rigtige rækkefølge."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "ordering_sentences"
+#: activities/ordering_sentences/ActivityInfo.qml:23
+#, kde-format
+msgid "Arrange the given words to form a meaningful sentence."
+msgstr ""
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "oware_2players"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "oware"
+#: activities/oware/ActivityInfo.qml:17
+#: activities/oware_2players/ActivityInfo.qml:17
+#, kde-format
+msgid "Capture at least 25 seeds to win the game"
+msgstr ""
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "paintings"
+#: activities/paintings/ActivityInfo.qml:23
+#, kde-format
+msgid "Catch and drop each piece on the points."
+msgstr "Fang og slip hvert stykke på punkterne."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "path_decoding"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "path_decoding_relative"
+#: activities/path_decoding/ActivityInfo.qml:17
+#: activities/path_decoding_relative/ActivityInfo.qml:17
+#, kde-format
+msgid ""
+"Click on the grid squares following the given directions to help Tux reach "
+"the target."
+msgstr ""
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "path_encoding"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "path_encoding_relative"
+#: activities/path_encoding/ActivityInfo.qml:17
+#: activities/path_encoding_relative/ActivityInfo.qml:17
+#, kde-format
+msgid "Use the arrows to move Tux along the path and reach the target."
+msgstr ""
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "penalty"
+#: activities/penalty/ActivityInfo.qml:18
+#, kde-format
+msgid "Double click or double tap on the goal, in order to score."
+msgstr "Dobbeltklik eller dobbelttryk på målet, for at score."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "photo_hunter"
+#: activities/photo_hunter/ActivityInfo.qml:18
+#, kde-format
+msgid "look at the two pictures carefully and click where you see a difference"
+msgstr "kig omhyggeligt på de to billeder og klik hvor du ser en forskel"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "piano_composition"
+#: activities/piano_composition/ActivityInfo.qml:19
+#, fuzzy, kde-format
+msgid ""
+"Learn to compose piano music using the octaves and the tools presented above "
+"the staff."
+msgstr ""
+"Lær at komponere klavermusik ved hjælp af oktaver og de værktøjer der "
+"præsenteres ovenover personalet."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "planegame"
+#: activities/planegame/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Move the helicopter with the arrow keys and catch the numbers in the clouds, "
+"in ascending order."
+msgstr ""
+"Flyt helikopteren med piletasterne og fang numrene i skyerne, i stigende "
+"rækkefølge."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "play_piano"
+#: activities/play_piano/ActivityInfo.qml:22
+#, kde-format
+msgid "Click on the keyboard keys that match the notes that you see and hear"
+msgstr "Klik på de tastaturtaster, der svarer til de noter, du ser og hører"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "play_rhythm"
+#: activities/play_rhythm/ActivityInfo.qml:22
+#, kde-format
+msgid "Click the drum to recreate the rhythm"
+msgstr "Klik på trommen for at genskabe rytmen"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "positions"
+#: activities/positions/ActivityInfo.qml:18
+#, kde-format
+msgid "Find the correct position"
+msgstr ""
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "programmingMaze"
+#: activities/programmingMaze/ActivityInfo.qml:19
+#, kde-format
+msgid ""
+"Arrange the instructions and traverse the correct path to reach the fish."
+msgstr "Følg instruktionerne og kryds den rigtige vej for at nå fisken."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "railroad"
+#: activities/railroad/ActivityInfo.qml:20
+#, kde-format
+msgid "Observe the train and then click on the items to set up a similar train"
+msgstr ""
+"Kig efter toget og klik derefter på genstandene, for at bygge et lignende tog"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "readingh"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "readingv"
+#: activities/readingh/ActivityInfo.qml:18
+#: activities/readingv/ActivityInfo.qml:18
+#, kde-format
+msgid "Read a list of words and say if a given word is in it."
+msgstr "Læs en liste med ord og sig hvis et bestemt ord er i det."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "redraw"
+#: activities/redraw/ActivityInfo.qml:18
+#, kde-format
+msgid "Use the drawing tools to build an identical pattern on the right."
+msgstr "Brug tegneværktøjerne til at opbygge et identisk mønster i højre side."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "redraw_symmetrical"
+#: activities/redraw_symmetrical/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Use the drawing tools to reproduce symmetrically the pattern on the right."
+msgstr ""
+"Brug tegneværktøjerne til at genskabe et symmetrisk mønster i højre side."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "renewable_energy"
+#: activities/renewable_energy/ActivityInfo.qml:18
+#, fuzzy, kde-format
+msgid "Click on the different stages that go to make up the power supply."
+msgstr ""
+"Klik på de forskellige stadier, der skal til for at lave strømforsyningen."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "reversecount"
+#: activities/reversecount/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Click on the domino and validate your choice with the OK button to indicate "
+"the number of ice blocks Tux will have to follow to eat a fish."
+msgstr ""
+"Klik på dominobrikken og afgør dit valg med OK-knappen for at vælge hvor "
+"mange isblokke Tux skal følge for at spise en fisk."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "roman_numerals"
+#: activities/roman_numerals/ActivityInfo.qml:18
+#, kde-format
+msgid "Learn and practice roman to arabic numerals conversion"
+msgstr "Lær at oversætte romertal til arabiske tal"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "scalesboard"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "scalesboard_weight_avoirdupois"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "scalesboard_weight"
+#: activities/scalesboard/ActivityInfo.qml:18
+#: activities/scalesboard_weight/ActivityInfo.qml:18
+#: activities/scalesboard_weight_avoirdupois/ActivityInfo.qml:18
+#, kde-format
+msgid "Drag the weights up to balance the scales."
+msgstr "Træk i vægtene for at balancere vægten."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "share"
+#: activities/share/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Share the candies equally among the specified number of children and notice "
+"that there may be a rest left"
+msgstr ""
+"Del slikket ligeligt blandt det angivne antal børn. Bemærk at der godt må "
+"være en rest tilbage"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "simplepaint"
+#: activities/simplepaint/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Select a color and paint the rectangles as you like to create a drawing."
+msgstr ""
+"Vælg en farve, og mal rektanglerne som du vil, for at oprette en tegning."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "smallnumbers"
+#: activities/smallnumbers/ActivityInfo.qml:18
+#, fuzzy, kde-format
+#| msgid ""
+#| "Count the number on your dice and type it on your keyboard before it "
+#| "reaches the ground."
+msgid ""
+"Count the number on the dice and type it on your keyboard before it reaches "
+"the ground."
+msgstr ""
+"Tæl nummeret på dine terning og skriv det på dit tastatur, inden det når "
+"jorden."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "smallnumbers2"
+#: activities/smallnumbers2/ActivityInfo.qml:18
+#, fuzzy, kde-format
+#| msgid ""
+#| "Count the number of the points on the dominoes then type the result on "
+#| "your keyboard."
+msgid ""
+"Count the numbers on the dominoes then type the result on your keyboard."
+msgstr ""
+"Tæl antallet af punkter på dominobrikken. Skriv derefter resultatet ved "
+"hjælp af tastaturet."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "solar_system"
+#: activities/solar_system/ActivityInfo.qml:21
+#, kde-format
+msgid ""
+"Answer the questions presented and get a 100% correctness among the options."
+msgstr "Besvar de præsenterede spørgsmål og få 100% rigtige."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "submarine"
+#: activities/submarine/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Drive the submarine to the right end of the screen without colliding with "
+"any objects"
+msgstr ""
+"Før ubåden til højre ende af skærmen uden at kollidere med nogen genstande"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "sudoku"
+#: activities/sudoku/ActivityInfo.qml:18
+#, fuzzy, kde-format
+msgid ""
+"Select a number or a symbol and click its target area. Each symbol must "
+"appear only once in a row, in a column and in a subregion if any."
+msgstr ""
+"Vælg et tal eller et symbol, og klik på dets målområde. Hvert symbol må kun "
+"vises én gang i en række, i en kolonne og i et eventuelt underområde."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "superbrain"
+#: activities/superbrain/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Find out the right combination of colors. A dot framed in a black square "
+"means that you found the correct colour in the correct position, while a dot "
+"framed in a white square means it's the correct colour, but in the wrong "
+"position."
+msgstr ""
+"Find den rigtige kombination af farver. En prik indrammet i en sort firkant "
+"betyder, at du har fundet den rigtige farve i den rigtige position, mens en "
+"prik indrammet i en hvid firkant betyder, at det er den rigtige farve, men i "
+"den forkerte position."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "tangram"
+#: activities/tangram/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Click on each object to obtain the same figure. You can change their "
+"orientation by clicking on the arrows."
+msgstr ""
+"Klik på hvert objekt for at få det samme tal. Du kan ændre deres retning ved "
+"at klikke på pilene."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "target"
+#: activities/target/ActivityInfo.qml:18
+#, kde-format
+msgid "Click on the target to launch darts, then count your final score!"
+msgstr ""
+"Klik på målet for at skyde dartpilene. Tæl derefter dine samlede point!"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "tic_tac_toe_2players"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "tic_tac_toe"
+#: activities/tic_tac_toe/ActivityInfo.qml:21
+#: activities/tic_tac_toe_2players/ActivityInfo.qml:21
+#, fuzzy, kde-format
+msgid ""
+"Click on the square which you wish to mark and try to mark 3 consecutive "
+"squares before Tux."
+msgstr ""
+"Klik på den firkant som du ønsker at markere og forsøg så at markere 3 på "
+"hinanden følgende firkanter før Tux."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "traffic"
+#: activities/traffic/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Slide the cars to make a space so that the red car can go out of the box."
+msgstr ""
+"Flyt bilerne for at gøre plads, så den røde bil kan komme ud af kassen."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "watercycle"
+#: activities/watercycle/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Click on the various active elements that make up the water supply. Then "
+"press the shower button for Tux."
+msgstr ""
+"Klik på de forskellige aktive genstande, som udgør vandforsyningen. Tryk "
+"derefter på brusebadsknappen for Tux."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "wordsgame"
+#: activities/wordsgame/ActivityInfo.qml:18
+#, kde-format
+msgid "Type the words on your keyboard before they reach the ground."
+msgstr "Skriv ordene før de når jorden."
+
+#~ msgid "play checkers against the computer"
+#~ msgstr "Spil brikker mod computeren"
+
+#~ msgid "put here in comment the text for the intro voice"
+#~ msgstr "Indsæt kommentartekst her til introstemmen"
+
+#, fuzzy
+#~ msgid ""
+#~ "Change the planets' gravitational force by moving the sliders up and "
+#~ "down. Be careful not to crash Tux's spaceship."
+#~ msgstr ""
+#~ "Skift planternes gravitationskraft ved at flytte slideren op og ned. Vær "
+#~ "omhyggelig med ikke at gå ned i Tux rumskib."

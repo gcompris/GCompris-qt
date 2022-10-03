@@ -1,0 +1,1251 @@
+# Copyright (C) YEAR This file is copyright:
+# This file is distributed under the same license as the gcompris package.
+#
+# KERVOAS <envelkervoas@free.fr>, 2019, 2020, 2021.
+msgid ""
+msgstr ""
+"Project-Id-Version: gcompris\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-09-26 00:40+0000\n"
+"PO-Revision-Date: 2021-12-16 21:22+0100\n"
+"Last-Translator: Envel KERVOAS <envelkervoas@free.fr>\n"
+"Language-Team: Breton <kde-i18n-doc@kde.org>\n"
+"Language: br\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Lokalize 19.12.3\n"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "advanced_colors"
+#: activities/advanced_colors/ActivityInfo.qml:18
+#, kde-format
+msgid "click on the required color"
+msgstr "Klik war al liv dereat"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "algebra_by"
+#: activities/algebra_by/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Multiply the two numbers together and type in your answer before the balloon "
+"lands in the water"
+msgstr ""
+"Kav disoc'h al liesadenn ha skriv da respont a-raok ma vo tizhet al leur "
+"gant ar baloñs"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "algebra_div"
+#: activities/algebra_div/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Find the result of the division and type in your answer before the balloon "
+"lands in the water"
+msgstr ""
+"Kav disoc'h ar rannadenn ha skriv da respont a-raok ma vo tizhet al leur "
+"gant ar baloñs"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "algebra_minus"
+#: activities/algebra_minus/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Subtract the two numbers and type in your answer before the balloon lands in "
+"the water"
+msgstr ""
+"Kav disoc'h al lamadenn ha skriv da respont a-raok ma vo tizhet al leur gant "
+"ar baloñs"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "algebra_plus"
+#: activities/algebra_plus/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Add the two numbers together and type in your answer before the balloon "
+"lands in the water"
+msgstr ""
+"Kav disoc'h ar sammadenn ha skriv da respont a-raok ma vo tizhet al leur "
+"gant ar baloñs"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "algorithm"
+#: activities/algorithm/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Click on the missing items on the table and follow the logical sequence "
+"displayed above it."
+msgstr ""
+"Klik en traoñ war an traoù a vank evit kenderc'hel en un doare poellek evel "
+"an heuliad diskouezet dit el lein"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "align4"
+#: activities/align4/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Click on the column where you wish your token to fall and try to align of 4 "
+"tokens before Tux."
+msgstr ""
+"Klik er bann el lec'h ma fell dit lakaat da bezh da gouezhañ ha klask sevel "
+"ur renkad pevar fezh a-raok Tuks."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "align4_2players"
+#: activities/align4_2players/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Click on the column where you wish your token to fall and try to align 4 "
+"tokens to win."
+msgstr ""
+"Klik er bann el lec'h ma fell dit lakaat da bezh da gouezhañ ha klask sevel "
+"ur renkad pevar fezh evit gounit."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "alphabet-sequence"
+#: activities/alphabet-sequence/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Move the helicopter to catch the clouds following the order of the alphabet."
+msgstr ""
+"Lak ar viñsaskell da fiñval evit tapout ar c'houmoul hervez urzh al "
+"lizherenneg."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "analog_electricity"
+#: activities/analog_electricity/ActivityInfo.qml:18
+#, kde-format
+msgid "Learn how analog electricity works and create your own circuit."
+msgstr "Desk penaos e tro an elektronek daouredel ha sav da amredad dit-te."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "baby_keyboard"
+#: activities/baby_keyboard/ActivityInfo.qml:18
+#, kde-format
+msgid "Type any key on the keyboard and observe the result."
+msgstr ""
+"Klik war n'eus forzh peseurt stokell ar c'hlavier ha sell petra a c'hoarvez."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "baby_mouse"
+#: activities/baby_mouse/ActivityInfo.qml:17
+#, kde-format
+msgid "Move the mouse or touch the screen and observe the result."
+msgstr ""
+"Dilec'h al logodenn pe touch ar skramm-stekiñ ha sell petra a c'hoarvez."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "baby_tangram"
+#: activities/baby_tangram/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Move each puzzle piece, to obtain the completed puzzle. You can change their "
+"orientation by clicking on the arrows."
+msgstr ""
+"Klik war pep tamm evit adsevel ar skouer. Bez' e c'hallez cheñch tu an "
+"tammoù gant ar biroù."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "baby_wordprocessor"
+#: activities/baby_wordprocessor/ActivityInfo.qml:18
+#, kde-format
+msgid "A simplistic word processor to play around with the keyboard"
+msgstr "Setu ur meziant simpl evit skrivañ ha c'hoari gant ar c'hlavier"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "babymatch"
+#: activities/babymatch/ActivityInfo.qml:21
+#, kde-format
+msgid "Drag and drop the objects matching the pictures"
+msgstr "Rikl ha laosk an traoù a glot gant pep skeudenn"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "babyshapes"
+#: activities/babyshapes/ActivityInfo.qml:22
+#, kde-format
+msgid "Drag and drop the objects matching the shapes."
+msgstr "Rikl ha laosk an traoù a glot gant o stumm"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "balancebox"
+#: activities/balancebox/ActivityInfo.qml:21
+#, kde-format
+msgid "Tilt the box to navigate the ball to the door."
+msgstr "Stur ar vell betek an nor en ur stouiñ ar voest."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "ballcatch"
+#: activities/ballcatch/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Press the left and right arrows at the same time to send the ball straight on"
+msgstr ""
+"Pouez war ar biroù kleiz ha dehoù war un dro evit lakaat ar vell da vont war "
+"eeun."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "bargame"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "bargame_2players"
+#: activities/bargame/ActivityInfo.qml:19
+#: activities/bargame_2players/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Select the number of balls you wish to place in the holes and then click on "
+"the OK button. The winner is the one who hasn't put a ball in the red hole."
+msgstr ""
+"Klik pet boull a fell dit lakaat en toulloù ha klik goude war OK. Gounezet e "
+"vo gant an hini ne lako ket ur voull en toull ruz."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "binary_bulb"
+#: activities/binary_bulb/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Turn on the right bulbs to represent the binary of the given decimal number. "
+"When you have achieved it, press OK"
+msgstr ""
+"Lak war enaou ar c'hlogorennoù-tredan reizh evit sevel stumm daouredel un "
+"niver dekredel. Pa 'z eo echu ganit, klik war OK."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "braille_alphabets"
+#: activities/braille_alphabets/ActivityInfo.qml:18
+#, kde-format
+msgid "Click on Tux to start and then re-create the Braille cells."
+msgstr "Klik war dTuks evit kregiñ ganti hag adsevel ar c'helligoù Braille. "
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "braille_fun"
+#: activities/braille_fun/ActivityInfo.qml:18
+#, kde-format
+msgid "Create the Braille cell for the letter."
+msgstr "Sav ar gellig Braille hervez al lizherenn."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "calendar"
+#: activities/calendar/ActivityInfo.qml:18
+#, kde-format
+msgid "Select the asked date on the calendar"
+msgstr "Dibab an deiziad goulennet war an deiziataer"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "canal_lock"
+#: activities/canal_lock/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"You are responsible for the lock and you must help Tux pass through. Click "
+"on the valves to cause either a drop or an increase in the water level, and "
+"click on the gates to open or close a path."
+msgstr ""
+"Te a ren ar skluz evit sikour Tuks da dremen. Klik war ar rañvellioù evit "
+"lakaat live an dour da sevel pe da ziskenn ha klik war an dorioù evit "
+"digeriñ pe serriñ an hent."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "categorization"
+#: activities/categorization/ActivityInfo.qml:18
+#, kde-format
+msgid "Categorize the items into the correct group"
+msgstr "Renk an traoù er rummad a-feson"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "checkers"
+#: activities/checkers/ActivityInfo.qml:18
+#, fuzzy, kde-format
+#| msgid "play chess against Tux"
+msgid "play checkers against Tux"
+msgstr "C'hoari echedoù a-enep Tuks"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "checkers_2players"
+#: activities/checkers_2players/ActivityInfo.qml:18
+#, kde-format
+msgid "play checkers with your friend"
+msgstr "C'hoari damez a-enep unan all"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "chess"
+#: activities/chess/ActivityInfo.qml:18
+#, kde-format
+msgid "play chess against Tux"
+msgstr "C'hoari echedoù a-enep Tuks"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "chess_2players"
+#: activities/chess_2players/ActivityInfo.qml:18
+#, kde-format
+msgid "play chess against your friend"
+msgstr "C'hoari echedoù a-enep unan all"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "chess_partyend"
+#: activities/chess_partyend/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Click on a white chess piece and green boxes will appear to indicate all the "
+"movements that piece can make. Try and get the black king into checkmate."
+msgstr ""
+"Klik war ur pezh gwenn ha diskouezet e vo dit gant ar c'hombodoù an holl "
+"lec'hioù a c'hallez tizhout gant ar pezh-mañ. Klask ober \"Lamm d'ar Roue\" "
+"du."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "chronos"
+#: activities/chronos/ActivityInfo.qml:22
+#, kde-format
+msgid "Slide the pictures into the order that tells the story"
+msgstr "Rikl ha laosk ar skeudennoù hervez urzh an istor"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "click_on_letter_up"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "click_on_letter"
+#: activities/click_on_letter/ActivityInfo.qml:18
+#: activities/click_on_letter_up/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Click on the required letter. You can listen to it again by clicking on the "
+"mouth."
+msgstr ""
+"Klik war al lizherenn dereat. Gallout a rez adselaou anezhi gant ur c'hlik "
+"war ar genoù."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "clickanddraw"
+#: activities/clickanddraw/ActivityInfo.qml:18
+#, kde-format
+msgid "Click on the selected points and draw"
+msgstr "Klik war ar pikoù kinniget ha tres"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "clickgame"
+#: activities/clickgame/ActivityInfo.qml:18
+#, kde-format
+msgid "Catch the fish before they leave the aquarium."
+msgstr "Tap ar pesked a-raok ma vint aet kuit eus an akwariom."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "clockgame"
+#: activities/clockgame/ActivityInfo.qml:18
+#, kde-format
+msgid "Drag and drop the needles of the clock to display the required time"
+msgstr "Rikl ha laosk bizied an horolaj evit diskouez an eur ginniget"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "color_mix"
+#: activities/color_mix/ActivityInfo.qml:18
+#, kde-format
+msgid "Match the color by moving the sliders on the tubes of paint"
+msgstr ""
+"Kav ar memes liv en ur implijout ar barrennoù-riklañ war ar c'horzennoù "
+"pentur"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "color_mix_light"
+#: activities/color_mix_light/ActivityInfo.qml:18
+#, kde-format
+msgid "Match the color by moving the sliders on the torches"
+msgstr "Kav ar memes liv en ur implijout ar barrennoù-riklañ war al lampoù"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "colors"
+#: activities/colors/ActivityInfo.qml:18
+#, kde-format
+msgid "Click on the right color"
+msgstr "Klik war al liv dereat"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "crane"
+#: activities/crane/ActivityInfo.qml:23
+#, kde-format
+msgid ""
+" Click on each item in turn, in the blue frame, and move them to reproduce "
+"the pattern from the pink frame."
+msgstr ""
+"Klik war pep tra pep hini d'e dro er framm glas ha diblas anezhe hollhervez "
+"skouer ar framm roz."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "details"
+#: activities/details/ActivityInfo.qml:21
+#, kde-format
+msgid "Slide the images on their respective targets"
+msgstr "Rikl ha laosk pep skeudenn el lec'h mat"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "digital_electricity"
+#: activities/digital_electricity/ActivityInfo.qml:18
+#, kde-format
+msgid "Learn how digital electronics work and create your own circuit."
+msgstr "Desk penaos e tro an elektronek daouredel ha sav da amredad dit-te."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "drawletters"
+#: activities/drawletters/ActivityInfo.qml:18
+#, kde-format
+msgid "Click on the selected points and draw the letter"
+msgstr "Klik war ar pikoù kinniget ha tres al lizherenn"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "drawnumbers"
+#: activities/drawnumbers/ActivityInfo.qml:18
+#, kde-format
+msgid "Draw the numbers by connecting the dots in the correct order."
+msgstr "Liamm ar pikoù en urzh mat evit tresañ an niveroù."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "enumerate"
+#: activities/enumerate/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Count the elements by organizing them then type the answer on your keyboard."
+msgstr "Renk ha kont an traoù ha skriv neuze da respont gant da glavier."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "erase"
+#: activities/erase/ActivityInfo.qml:18
+#, kde-format
+msgid " Clear the window with your sponge and discover the hidden picture."
+msgstr "Naeta ar prenestr gant ar spoueenn ha dizolo ar skeudenn guzhet."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "erase_2clic"
+#: activities/erase_2clic/ActivityInfo.qml:18
+#, kde-format
+msgid "Double tap or double click on the bricks to discover the hidden picture"
+msgstr "Daoustok pe zaouklik ar brikennoù evit dizoleiñ ar skeudenn guzhet"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "erase_clic"
+#: activities/erase_clic/ActivityInfo.qml:18
+#, kde-format
+msgid "Click or tap on the transparent bricks and discover the hidden picture."
+msgstr "Klik pe stok ar brikennoù treuzwelus evit dizoleiñ ar skeudenn guzhet."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "explore_farm_animals"
+#: activities/explore_farm_animals/ActivityInfo.qml:18
+#, kde-format
+msgid "Learn about farmyard animals and the noises that they make."
+msgstr "Desk traoù diwar-benn loened an atant hag o doare da c'harmiñ."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "explore_monuments"
+#: activities/explore_monuments/ActivityInfo.qml:18
+#, kde-format
+msgid "Explore Monuments around the world."
+msgstr "Ergerzh savadurioù er bed a-bezh."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "explore_world_animals"
+#: activities/explore_world_animals/ActivityInfo.qml:22
+#, kde-format
+msgid "Learn about world animals and locate them on a map."
+msgstr ""
+"Desk traoù diwar-benn loened er bed a-bezh ha kav pelec'h emaint o vevañ war "
+"ar gartenn."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "explore_world_music"
+#: activities/explore_world_music/ActivityInfo.qml:18
+#, kde-format
+msgid "Click on the suitcases to learn about music from around the world."
+msgstr ""
+"Klik war ar malizennoù evit deskiñ traoù diwar-benn ar sonerezh tro-dro d'ar "
+"bed."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "family"
+#: activities/family/ActivityInfo.qml:18
+#, kde-format
+msgid "Let us understand what to call our relatives"
+msgstr "Gwelomp asambles petra eo anv an dud-kar"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "family_find_relative"
+#: activities/family_find_relative/ActivityInfo.qml:18
+#, kde-format
+msgid "Click on a pair that defines the given relation"
+msgstr "Klik war un daouad tud hervez al liamm kerentiezh kinniget"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "fifteen"
+#: activities/fifteen/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Click or drag an element next to a free space, the element will move and "
+"release its space. You must put all the pieces in the correct order. The "
+"numbers on the pieces can help you."
+msgstr ""
+"Klik pe rikl un tamm gant ur c'hombod dieub en e gichen hag eskemmet e vo e "
+"blas gant an hini goullo. Ret eo dit lakaat an holl dammoù en urzh mat. "
+"Skoazellet e vi marteze gant an niveroù war an tammoù."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "find_the_day"
+#: activities/find_the_day/ActivityInfo.qml:18
+#, kde-format
+msgid "Select the required day."
+msgstr "Dibab an deiziad mat."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "followline"
+#: activities/followline/ActivityInfo.qml:18
+#, kde-format
+msgid " Move the mouse or your finger along the pipe to stop the fire."
+msgstr "Kas al logodenn pe da viz a-hed an duellenn evit mougañ an tan."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "football"
+#: activities/football/ActivityInfo.qml:18
+#, kde-format
+msgid "Drag a line from the ball to set the speed and direction of your kick."
+msgstr "Rikl ul linenn diwar ar vell en ur zibab tizh ha tu da daol-troad."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "fractions_create"
+#: activities/fractions_create/ActivityInfo.qml:19
+#, kde-format
+msgid ""
+"Select the appropriate number of parts as described in the instructions."
+msgstr ""
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "fractions_find"
+#: activities/fractions_find/ActivityInfo.qml:17
+#, kde-format
+msgid "Find the correct numerator and denominator of the represented fraction"
+msgstr ""
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "geo-country"
+#: activities/geo-country/ActivityInfo.qml:22
+#, kde-format
+msgid "Drag and drop the regions to complete the country maps."
+msgstr "Rikl ha laosk ar ranndirioù evit klokaat ar c'hartoù-bro."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "geography"
+#: activities/geography/ActivityInfo.qml:22
+#, kde-format
+msgid "Drag and drop the objects to complete the map."
+msgstr "Rikl ha laosk an traoù evit klokaat ar gartenn."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "gletters"
+#: activities/gletters/ActivityInfo.qml:18
+#, kde-format
+msgid "Type the letters on your keyboard before they reach the ground."
+msgstr ""
+"Skriv al lizherennoù gant ar c'hlavier a-raok ma vo tizhet al leur gante."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "gnumch-equality"
+#: activities/gnumch-equality/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Guide the number eater with the arrow keys to the required numbers and press "
+"the space bar to swallow them."
+msgstr ""
+"Heñch an debrer niveroù gant ar biroù war-zu an niveroù dereat ha klik war "
+"ar varrenn esaouiñ evit lonkañ anezhe."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "gnumch-factors"
+#: activities/gnumch-factors/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Guide the number eater with the arrow keys to the factors of the displayed "
+"number and press space to swallow them."
+msgstr ""
+"Heñch an debrer niveroù gant ar biroù war-zu rannerioù an niver kinniget ha "
+"klik war ar varrenn esaouiñ evit lonkañ anezhe."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "gnumch-inequality"
+#: activities/gnumch-inequality/ActivityInfo.qml:19
+#, kde-format
+msgid ""
+"Guide the number eater with the arrow keys to the numbers that are different "
+"from the ones displayed and press the space bar to swallow them."
+msgstr ""
+"Heñch an debrer niveroù gant ar biroù war-zu an niveroù disheñvel diouzh ar "
+"re ginniget ha klik war ar varrenn esaouiñ evit lonkañ anezhe."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "gnumch-multiples"
+#: activities/gnumch-multiples/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Guide the number eater with the arrow keys to the multiples of the displayed "
+"number and press space to swallow them."
+msgstr ""
+"Heñch an debrer niveroù gant ar biroù war-zu lieskementoù an niver kinniget "
+"ha klik war ar varrenn esaouiñ evit lonkañ anezhe."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "gnumch-primes"
+#: activities/gnumch-primes/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Guide the number eater with the arrow keys to the prime numbers and press "
+"space to swallow them."
+msgstr ""
+"Heñch an debrer niveroù gant ar biroù war-zu an niveroù kentañ ha klik war "
+"ar varrenn esaouiñ evit lonkañ anezhe."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "graph-coloring"
+#: activities/graph-coloring/ActivityInfo.qml:18
+#, kde-format
+msgid "Color the graph so that no two adjacent nodes have the same color."
+msgstr ""
+"Lak livioù d'ar graf gant ma ne vo ket memes liv gant daou stumm kichen-ha-"
+"kichen. "
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "gravity"
+#: activities/gravity/ActivityInfo.qml:22
+#, kde-format
+msgid ""
+"Move the spaceship to avoid hitting the planets and reach the space station."
+msgstr ""
+"Stur an egorlestr betek ar greizenn-egor hep stekiñ ouzh ar planedennoù."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "guesscount"
+#: activities/guesscount/ActivityInfo.qml:22
+#, kde-format
+msgid ""
+"Use the numbers and operations suggested to find the results proposed above."
+msgstr ""
+"Implij an niveroù hag ar jedadennoù kinniget a-benn kavout an disoc'hoù "
+"diskouezet el lein."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "guessnumber"
+#: activities/guessnumber/ActivityInfo.qml:18
+#, kde-format
+msgid "Find out the number by typing a number from the range proposed."
+msgstr ""
+"Klask an niver dereat en ur skrivañ un niver eus an dachenn niverell "
+"kinniget."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "hangman"
+#: activities/hangman/ActivityInfo.qml:22
+#, kde-format
+msgid "A word is hidden, you must discover it letter by letter."
+msgstr "Kuzhet eo ar ger, dav eo dit kavout anezhañ lizherenn a lizherenn."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "hanoi"
+#: activities/hanoi/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Rebuild the same tower in the empty area as the one you see on the right "
+"hand side."
+msgstr "Adsav el lec'h goullo ar memes tour eget an hini a welez a-zehoù."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "hanoi_real"
+#: activities/hanoi_real/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Rebuild the model tower on the right support. Take care, no disc may be "
+"placed atop a smaller disc."
+msgstr ""
+"Adsav an tour skouer el lec'h mat a-zehoù. Diwall, na lak kantenn ebet war "
+"unan vihanoc'h."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "hexagon"
+#: activities/hexagon/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Click on the hexagons to find the hidden object, the red zone indicates that "
+"you're close to it!"
+msgstr ""
+"Klik war ar c'hwec'hkornioù evit kavout ar sivienn guzhet, diskouez a ra al "
+"liv ruz n'emaout ket pell diouti !"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "imagename"
+#: activities/imagename/ActivityInfo.qml:21
+#, kde-format
+msgid "Drag and drop each item above its name."
+msgstr "Rikl ha laosk pep skeudenn a-us d'hec'h anv."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "instruments"
+#: activities/instruments/ActivityInfo.qml:18
+#, kde-format
+msgid "Click on the correct musical instrument."
+msgstr "Klik war ar benveg sonerezh dereat."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "land_safe"
+#: activities/land_safe/ActivityInfo.qml:18
+#, kde-format
+msgid "Use the arrow keys to pilot your spaceship safely onto the landing pad."
+msgstr ""
+"Implij ar biroù evit bleinañ da egorlestr diarvar war an dachenn-douarañ."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "lang"
+#: activities/lang/ActivityInfo.qml:24
+#, kde-format
+msgid ""
+"Select the language you want to learn then review the words before doing the "
+"exercises."
+msgstr ""
+"Dibab ar yezh a fell dit deskiñ ha taol ur sell ouzh ar gerioù a-raok ober "
+"ar poelladennoù."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "learn_additions"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "learn_subtractions"
+#: activities/learn_additions/ActivityInfo.qml:18
+#: activities/learn_subtractions/ActivityInfo.qml:18
+#, kde-format
+msgid "Click on the circles to give the operation's result."
+msgstr "Klik war ar c'helc'hioù evit reiñ disoc'h ar jedadenn."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "learn_decimals"
+#: activities/learn_decimals/ActivityInfo.qml:17
+#, kde-format
+msgid ""
+"Drag the arrow to select a part of the bar, and drag the selected part of "
+"the bar to the empty area to represent the decimal number."
+msgstr ""
+"Rikl ar bir evit dibab ur rann eus ar varrenn, ha rikl ar rann dibabet eus "
+"ar varrenn betek an dachenn c'houllo betek kaout an niver dekrannel ret."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "learn_decimals_additions"
+#: activities/learn_decimals_additions/ActivityInfo.qml:17
+#, kde-format
+msgid ""
+"Drag the arrow to select a part of the bar, and drag the selected part of "
+"the bar to the empty area to represent the result of the addition."
+msgstr ""
+"Rikl ar bir evit dibab ur rann eus ar varrenn, ha rikl ar rann dibabet eus "
+"ar varrenn betek an dachenn c'houllo betek kaout disoc'h ar sammadenn."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "learn_decimals_subtractions"
+#: activities/learn_decimals_subtractions/ActivityInfo.qml:17
+#, kde-format
+msgid "Click on the squares to represent the result of the subtraction."
+msgstr "Klik war ar c'harrezennoù evit reiñ disoc'h al lamadenn."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "learn_digits"
+#: activities/learn_digits/ActivityInfo.qml:18
+#, kde-format
+msgid "Click on the circles to match the given digit."
+msgstr "Klik war ar c'helc'hioù evit kenglotañ gant ar sifr dereat."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "learn_quantities"
+#: activities/learn_quantities/ActivityInfo.qml:17
+#, kde-format
+msgid ""
+"Drag the arrow to select a number of oranges, and drag the oranges to the "
+"empty area to represent the requested quantity."
+msgstr ""
+"Rikl ar bir evit dibab ur rann eus ar varrenn, ha rikl ar rann dibabet eus "
+"ar varrenn betek an dachenn c'houllo betek kaout ar c'hementad goulennet."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "left_right_click"
+#: activities/left_right_click/ActivityInfo.qml:17
+#, kde-format
+msgid ""
+"Move animals to their homes using a left click or right click on your mouse."
+msgstr ""
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "leftright"
+#: activities/leftright/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Guess if the picture presents a left or right hand and click on the correct "
+"answer."
+msgstr ""
+"Klask gouzout hag-eñv eo un dorn kleiz pe unan dehoù hag a zo war ar "
+"skeudenn ha klik war ar respont mat. "
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "letter-in-word"
+#: activities/letter-in-word/ActivityInfo.qml:18
+#, kde-format
+msgid "Click on all the words containing the wanted letter."
+msgstr "Klik war an holl c'herioù a zo gant al lizherenn ginniget."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "lightsoff"
+#: activities/lightsoff/ActivityInfo.qml:18
+#, kde-format
+msgid "Click on the lamps to turn them off."
+msgstr "Klik war al lampoù evit lazhañ anezhe."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "louis-braille"
+#: activities/louis-braille/ActivityInfo.qml:18
+#, kde-format
+msgid "Discover the history of Louis Braille."
+msgstr "Dizolo istor Louis Braille."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "magic-hat-minus"
+#: activities/magic-hat-minus/ActivityInfo.qml:18
+#, kde-format
+msgid "Click on the hat. How many stars are still hiding under the hat."
+msgstr "Klik war an tog. Pet steredenn zo kuzhet dindanañ bepred ?"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "magic-hat-plus"
+#: activities/magic-hat-plus/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Count the number of stars hidden under the hat and then click on the stars "
+"to indicate their number."
+msgstr ""
+"Kont niver ar steredennoù kuzhet dindan an tog ha klik neuze war ar stered "
+"evit reiñ o c'hementad."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "maze"
+#: activities/maze/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Use the arrows keys or swipe the touch screen to help Tux find his way out."
+msgstr ""
+"Implij ar biroù pe rikl da viz war ar skramm evit sikour Tuks da vont kuit."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "mazeinvisible"
+#: activities/mazeinvisible/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Use the arrow keys or swipe the touch screen to guide Tux out. Use the maze "
+"icon or the space key to see the map."
+msgstr ""
+"Implij ar biroù pe rikl da viz war ar skramm evit sikour Tuks da vont kuit. "
+"Implij skeudennig ar milendall pe ar varrenn esaouiñ evit sellout ouzh ar "
+"plan."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "mazerelative"
+#: activities/mazerelative/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Help Tux find his way out. Left and right are used to turn and up to go "
+"forward."
+msgstr ""
+"Sikour Tuks da vont kuit. Servijout a ra an tu kleiz hag an tu dehoù da "
+"dreiñ hag an tu uhel da vont war-raok."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "melody"
+#: activities/melody/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Listen to the sound sequence played, and reproduce it by clicking on the "
+"xylophone's bars"
+msgstr ""
+"Selaou ouzh an heuliad sonioù kinniget, ha klask adseniñ anezhañ dre glikañ "
+"war stokelloù ar zilofon."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-case-association-tux"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-case-association"
+#: activities/memory-case-association-tux/ActivityInfo.qml:18
+#: activities/memory-case-association/ActivityInfo.qml:18
+#, kde-format
+msgid "Match the upper case card with its lower case pair."
+msgstr ""
+"Lak da glotañ kenetreze ar gartenn gant ur bennlizherenn hag an hini gant he "
+"lizherenn vunut."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-enumerate"
+#: activities/memory-enumerate/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Match a number card with a card displaying the same number of butterflies."
+msgstr ""
+"Lak da glotañ kenetreze ur gartenn gant un niver hag an hini gant ar memes "
+"kementad a valefenned."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-math-minus"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-math-add-tux"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-math-div-tux"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-math-add-minus-tux"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-math-add-minus-mult-div"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-math-add-minus-mult-div-tux"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-math-add-minus"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-math-mult-div"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-math-mult"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-math-mult-div-tux"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-math-div"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-math-add"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-math-mult-tux"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-math-minus-tux"
+#: activities/memory-math-add-minus-mult-div-tux/ActivityInfo.qml:18
+#: activities/memory-math-add-minus-mult-div/ActivityInfo.qml:18
+#: activities/memory-math-add-minus-tux/ActivityInfo.qml:18
+#: activities/memory-math-add-minus/ActivityInfo.qml:18
+#: activities/memory-math-add-tux/ActivityInfo.qml:18
+#: activities/memory-math-add/ActivityInfo.qml:18
+#: activities/memory-math-div-tux/ActivityInfo.qml:18
+#: activities/memory-math-div/ActivityInfo.qml:18
+#: activities/memory-math-minus-tux/ActivityInfo.qml:18
+#: activities/memory-math-minus/ActivityInfo.qml:18
+#: activities/memory-math-mult-div-tux/ActivityInfo.qml:18
+#: activities/memory-math-mult-div/ActivityInfo.qml:18
+#: activities/memory-math-mult-tux/ActivityInfo.qml:18
+#: activities/memory-math-mult/ActivityInfo.qml:18
+#, kde-format
+msgid "Turn over two cards to match the calculation with its answer."
+msgstr "Tro div gartenn evit lakaat da glotañ ar jedadenn gant he disoc'h."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-sound"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-sound-tux"
+#: activities/memory-sound-tux/ActivityInfo.qml:18
+#: activities/memory-sound/ActivityInfo.qml:18
+#, kde-format
+msgid "Click on an audio card and find its double."
+msgstr "Klik war ur gartenn son ha kav ar memes hini."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-tux"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "memory"
+#: activities/memory-tux/ActivityInfo.qml:18
+#: activities/memory/ActivityInfo.qml:18
+#, kde-format
+msgid "Click on a card and find its double."
+msgstr "Klik war ur gartenn ha kav ar memes hini."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-wordnumber"
+#: activities/memory-wordnumber/ActivityInfo.qml:18
+#, kde-format
+msgid "Match the numeric with the word."
+msgstr "Lak da glotañ an niver e sifroù gant ar memes hini e lizherennoù."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "mining"
+#: activities/mining/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Looking at the rockwall, you can see a sparkle somewhere. Move the mouse "
+"cursor next to this sparkle and use the mousewheel or the zoom gesture to "
+"zoom in."
+msgstr ""
+"Pa sellez ouzh ar roc'h e c'hallez gwelet ul luc'hig en ul lec'h bennak. "
+"Tosta ouzh al luc'hig ha klask zoumañ warnañ gant rod al logodenn pe da "
+"vizied ouzh ar skramm."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "missing-letter"
+#: activities/missing-letter/ActivityInfo.qml:19
+#, kde-format
+msgid ""
+"Find the missing letter and complete the word by clicking on one of the "
+"letters proposed on the side."
+msgstr ""
+"Kav al lizherenn a vank ha klok ar ger en ur glikañ war unan eus al "
+"lizherennoù kinniget e-kichen."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "money"
+#: activities/money/ActivityInfo.qml:18
+#, kde-format
+msgid "Click or tap on the money to pay."
+msgstr "Klik pe stok evit paeañ gant an arc'hant."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "money_back_cents"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "money_back"
+#: activities/money_back/ActivityInfo.qml:18
+#: activities/money_back_cents/ActivityInfo.qml:18
+#, kde-format
+msgid "Click on the money at the bottom of the screen to give Tux his change."
+msgstr ""
+"Klik war an arc'hant e traoñ ar skramm evit restaoliñ e voneiz da dTuks."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "money_cents"
+#: activities/money_cents/ActivityInfo.qml:18
+#, kde-format
+msgid "Click on the money to pay."
+msgstr "Klik war an arc'hant evit paeañ."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "mosaic"
+#: activities/mosaic/ActivityInfo.qml:18
+#, kde-format
+msgid "Put each item at the same place as in the given example."
+msgstr "Lak pep elfenn er memes lec'h evel war ar skouer."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "nine_men_morris"
+#: activities/nine_men_morris/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Click on the dot where you wish to place your piece and try to take all "
+"Tux's pieces."
+msgstr ""
+"Klik war ar pik a fell dit lakaat ur pezh warnañ ha klask tapout holl "
+"bezhioù Tuks."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "nine_men_morris_2players"
+#: activities/nine_men_morris_2players/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Click on the dot where you wish to place your piece and try to take all your "
+"friend's pieces."
+msgstr ""
+"Klik war ar pik a fell dit lakaat ur pezh warnañ ha klask tapout holl "
+"bezhioù ar c'hoarier all."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "note_names"
+#: activities/note_names/ActivityInfo.qml:21
+#, kde-format
+msgid "Identify the note and press the correct piano key"
+msgstr "Anavez an notenn ha pouez war stokell dereat ar piano."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "number_sequence"
+#: activities/number_sequence/ActivityInfo.qml:18
+#, kde-format
+msgid "Draw the picture by touching the numbers in ascending order."
+msgstr "Sav ar skeudenn en ur glikañ pe stokañ an niveroù en urzh kresk."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "numbers-odd-even"
+#: activities/numbers-odd-even/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Move the helicopter to catch the clouds having even or odd numbers, in the "
+"shown order."
+msgstr ""
+"Lak ar viñsaskell da fiñval evit tapout ar c'houmoul gant niveroù par pe "
+"ampar, en urzh kinniget."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "ordering_alphabets"
+#: activities/ordering_alphabets/ActivityInfo.qml:24
+#, kde-format
+msgid "Arrange the letters in the correct order."
+msgstr "Lak al lizherennoù en urzh mat."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "ordering_chronology"
+#: activities/ordering_chronology/ActivityInfo.qml:24
+#, kde-format
+msgid "Arrange the given events in their chronological order."
+msgstr "Lak an darvoudoù roet hervez urzh red an amzer."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "ordering_numbers"
+#: activities/ordering_numbers/ActivityInfo.qml:23
+#, kde-format
+msgid "Arrange the numbers in the correct order."
+msgstr "Lak an niveroù en urzh mat."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "ordering_sentences"
+#: activities/ordering_sentences/ActivityInfo.qml:23
+#, kde-format
+msgid "Arrange the given words to form a meaningful sentence."
+msgstr "Lak ar gerioù roet en urzh a-benn sevel frazennoù reizh."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "oware_2players"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "oware"
+#: activities/oware/ActivityInfo.qml:17
+#: activities/oware_2players/ActivityInfo.qml:17
+#, kde-format
+msgid "Capture at least 25 seeds to win the game"
+msgstr "Pak 25 greunenn da nebeutañ evit gounit ar c'hoari"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "paintings"
+#: activities/paintings/ActivityInfo.qml:23
+#, kde-format
+msgid "Catch and drop each piece on the points."
+msgstr "Rikl ha laosk pep tamm war ar pikoù."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "path_decoding"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "path_decoding_relative"
+#: activities/path_decoding/ActivityInfo.qml:17
+#: activities/path_decoding_relative/ActivityInfo.qml:17
+#, kde-format
+msgid ""
+"Click on the grid squares following the given directions to help Tux reach "
+"the target."
+msgstr ""
+"Klik war kombodoù ar gael o heuliañ an urzhioù-hent a-benn kas Tuks betek ar "
+"pal."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "path_encoding"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "path_encoding_relative"
+#: activities/path_encoding/ActivityInfo.qml:17
+#: activities/path_encoding_relative/ActivityInfo.qml:17
+#, kde-format
+msgid "Use the arrows to move Tux along the path and reach the target."
+msgstr "Implij ar biroù evit sturiañ Tuks war an hent mat betek ar pal."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "penalty"
+#: activities/penalty/ActivityInfo.qml:18
+#, kde-format
+msgid "Double click or double tap on the goal, in order to score."
+msgstr ""
+"Daouglik pe zaoustok ne vern peseurt tu eus ar gwarner evit merkañ ur pal"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "photo_hunter"
+#: activities/photo_hunter/ActivityInfo.qml:18
+#, kde-format
+msgid "look at the two pictures carefully and click where you see a difference"
+msgstr ""
+"Sell mat ouzh an div skeudenn ha klik el lec'h ma 'z eus traoù disheñvel."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "piano_composition"
+#: activities/piano_composition/ActivityInfo.qml:19
+#, kde-format
+msgid ""
+"Learn to compose piano music using the octaves and the tools presented above "
+"the staff."
+msgstr ""
+"Desk sonaozañ sonerezh piano gant an eizhvedelloù hag an ostilhoù diskouezet "
+"a-us  d'ar skeulenn."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "planegame"
+#: activities/planegame/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Move the helicopter with the arrow keys and catch the numbers in the clouds, "
+"in ascending order."
+msgstr ""
+"Lak ar viñsaskell da fiñval gant ar biroù evit tapout ar c'houmoul hervez "
+"urzh kresk an niveroù."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "play_piano"
+#: activities/play_piano/ActivityInfo.qml:22
+#, kde-format
+msgid "Click on the keyboard keys that match the notes that you see and hear"
+msgstr "Klik war stokelloù ar piano a glot gant an notennoù gwelet ha klevet."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "play_rhythm"
+#: activities/play_rhythm/ActivityInfo.qml:22
+#, kde-format
+msgid "Click the drum to recreate the rhythm"
+msgstr "Klik war an taboulin evit adsevel al lusk."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "positions"
+#: activities/positions/ActivityInfo.qml:18
+#, kde-format
+msgid "Find the correct position"
+msgstr "Kav al lec'hiadur mat"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "programmingMaze"
+#: activities/programmingMaze/ActivityInfo.qml:19
+#, kde-format
+msgid ""
+"Arrange the instructions and traverse the correct path to reach the fish."
+msgstr "Renk mat an urzhioù a-benn kemer an hent mat betek ar pesk. "
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "railroad"
+#: activities/railroad/ActivityInfo.qml:20
+#, kde-format
+msgid "Observe the train and then click on the items to set up a similar train"
+msgstr "Sell ouzh an tren ha klik war an traoù evit adsevel unan heñvel-mik."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "readingh"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "readingv"
+#: activities/readingh/ActivityInfo.qml:18
+#: activities/readingv/ActivityInfo.qml:18
+#, kde-format
+msgid "Read a list of words and say if a given word is in it."
+msgstr "Lenn ar roll gerioù ha lâr hag-eñ emañ ar ger kinniget e-barzh."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "redraw"
+#: activities/redraw/ActivityInfo.qml:18
+#, kde-format
+msgid "Use the drawing tools to build an identical pattern on the right."
+msgstr ""
+"Implij an ostilhoù tresañ evit sevel ur skeudenn evel ar skouer a-zehoù."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "redraw_symmetrical"
+#: activities/redraw_symmetrical/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Use the drawing tools to reproduce symmetrically the pattern on the right."
+msgstr ""
+"Implij an ostilhoù tresañ evit adsevel ur simetriezh eus ar skouer a-zehoù."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "renewable_energy"
+#: activities/renewable_energy/ActivityInfo.qml:18
+#, kde-format
+msgid "Click on the different stages that go to make up the power supply."
+msgstr "Klik war pep pazenn ret evit lakaat da dreiñ ar pourchas energiezh."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "reversecount"
+#: activities/reversecount/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Click on the domino and validate your choice with the OK button to indicate "
+"the number of ice blocks Tux will have to follow to eat a fish."
+msgstr ""
+"Klik war an domino evit kinnig niver an tammoù skorn ret da dTuks da vont "
+"warne evit debriñ ur pesk ha gwiria da respont gant ar bouton OK."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "roman_numerals"
+#: activities/roman_numerals/ActivityInfo.qml:18
+#, kde-format
+msgid "Learn and practice roman to arabic numerals conversion"
+msgstr "Desk penaos kemm niveroù roman hag arab kenetreze."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "scalesboard"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "scalesboard_weight_avoirdupois"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "scalesboard_weight"
+#: activities/scalesboard/ActivityInfo.qml:18
+#: activities/scalesboard_weight/ActivityInfo.qml:18
+#: activities/scalesboard_weight_avoirdupois/ActivityInfo.qml:18
+#, kde-format
+msgid "Drag the weights up to balance the scales."
+msgstr "Rikl ar pouezioù evit kempouez ar bouezerez."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "share"
+#: activities/share/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Share the candies equally among the specified number of children and notice "
+"that there may be a rest left"
+msgstr ""
+"Dasparzh ingal ar madigoù hervez an niver a vugale kinniget ha merzh e "
+"c'hallfe chom ur rest."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "simplepaint"
+#: activities/simplepaint/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Select a color and paint the rectangles as you like to create a drawing."
+msgstr ""
+"Dibab ul liv ha tres ar c'hombodoù evel ma fell dit a-benn sevel un "
+"dresadenn."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "smallnumbers"
+#: activities/smallnumbers/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Count the number on the dice and type it on your keyboard before it reaches "
+"the ground."
+msgstr ""
+"Kont niver ar pikoù war pep diñs ha bizskriv anezhañ gant ar c'hlavier a-"
+"raok ma tizho al leur."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "smallnumbers2"
+#: activities/smallnumbers2/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Count the numbers on the dominoes then type the result on your keyboard."
+msgstr ""
+"Kont niver ar pikoù war bep domino ha bizskriv anezhañ gant ar c'hlavier a-"
+"raok ma tizho al leur."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "solar_system"
+#: activities/solar_system/ActivityInfo.qml:21
+#, kde-format
+msgid ""
+"Answer the questions presented and get a 100% correctness among the options."
+msgstr ""
+"Respont d'ar goulennoù hervez ar respontoù kinniget ha klask tapout 100% a "
+"resisted."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "submarine"
+#: activities/submarine/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Drive the submarine to the right end of the screen without colliding with "
+"any objects"
+msgstr ""
+"Stur ar splujvag betek penn dehoù ar skramm hep flastrañ anezhi ouzh un dra "
+"bennak."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "sudoku"
+#: activities/sudoku/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Select a number or a symbol and click its target area. Each symbol must "
+"appear only once in a row, in a column and in a subregion if any."
+msgstr ""
+"Dibab un niver pe un arouez ha klik war e gombod. Ur wech nemetken e rank "
+"bezañ pep arouez e pep renk, bann ha rann, ma vez dioute."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "superbrain"
+#: activities/superbrain/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Find out the right combination of colors. A dot framed in a black square "
+"means that you found the correct colour in the correct position, while a dot "
+"framed in a white square means it's the correct colour, but in the wrong "
+"position."
+msgstr ""
+"Klask an heuliad livioù dereat. Un elfenn e-barzh ur c'hombod du a sinifi eo "
+"mat al liv dibabet ganit hag al lec'h ivez ; padal un elfenn e-barzh ur "
+"c'hombod gwenn a sinifi eo mat al liv met fall al lec'h."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "tangram"
+#: activities/tangram/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Click on each object to obtain the same figure. You can change their "
+"orientation by clicking on the arrows."
+msgstr ""
+"Klik war pep tamm evit adsevel ar skouer. Bez' e c'hallez cheñch tu an "
+"tammoù gant ar biroù."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "target"
+#: activities/target/ActivityInfo.qml:18
+#, kde-format
+msgid "Click on the target to launch darts, then count your final score!"
+msgstr "Bann biroùigoù ouzh ar gwenn ha jed da gont !"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "tic_tac_toe_2players"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "tic_tac_toe"
+#: activities/tic_tac_toe/ActivityInfo.qml:21
+#: activities/tic_tac_toe_2players/ActivityInfo.qml:21
+#, kde-format
+msgid ""
+"Click on the square which you wish to mark and try to mark 3 consecutive "
+"squares before Tux."
+msgstr ""
+"Klik war ar c'hombod a fell dit lakaat da verk warnañ ha klask bezañ an hini "
+"kentañ o verkañ 3 c'hombod a-steud."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "traffic"
+#: activities/traffic/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Slide the cars to make a space so that the red car can go out of the box."
+msgstr ""
+"Kas ar c'harr ruz er-maez eus ar parkva en ur vountañ war ar c'hirri da reiñ "
+"lec'h da dremen."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "watercycle"
+#: activities/watercycle/ActivityInfo.qml:18
+#, kde-format
+msgid ""
+"Click on the various active elements that make up the water supply. Then "
+"press the shower button for Tux."
+msgstr ""
+"Klik war an elfennoù oberiant ret evit pourchas an dour. Pouez goude war "
+"bouton ar strinkadenn evit Tuks."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "wordsgame"
+#: activities/wordsgame/ActivityInfo.qml:18
+#, kde-format
+msgid "Type the words on your keyboard before they reach the ground."
+msgstr "Bizskriv ar gerioù gant da glavier a-raok ma vo tizhet al leur gante."
+
+#~ msgid "play checkers against the computer"
+#~ msgstr "C'hoari damez a-enep an urzhiataer"
+
+#~ msgid "put here in comment the text for the intro voice"
+#~ msgstr "Lak amañ en displegadenn an testenn evit mouezh an digoradur."
+
+#~ msgid ""
+#~ "Change the planets' gravitational force by moving the sliders up and "
+#~ "down. Be careful not to crash Tux's spaceship."
+#~ msgstr ""
+#~ "Cheñch nerzh dedennañ ar planedennoù en ur implijout ar biroù daoudu "
+#~ "uhel / izel. Diwall, arabat lakaat egorlestr Tuks da flastrañ."

@@ -1,0 +1,633 @@
+<?xml version="1.0" ?>
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+  <!-- Define an entity for your application if it is not part of KDE
+       Git -->
+  <!ENTITY gcompris "<application
+>GCompris</application
+>">
+  <!ENTITY kappname "&gcompris;"
+><!-- replace kmyapplication here
+                                            do *not* replace kappname-->
+  <!ENTITY % addindex "IGNORE">
+  <!ENTITY % Ukrainian "INCLUDE"
+> <!-- ONLY If you are writing non-English
+                                     original documentation, change
+                                     the language here -->
+
+  <!-- Do not define any other entities; instead, use the entities
+       from entities/general.entities and en/user.entities. -->
+]>
+<book id="gcompris" lang="&language;">
+
+<bookinfo>
+<title
+>Підручник з &gcompris; для адміністраторів</title>
+
+<authorgroup>
+<author>
+<personname
+><firstname
+>Johnny Jazeix</firstname
+> <surname
+></surname
+> </personname>
+</author>
+
+<othercredit role="developer">
+<othername
+>Команда &gcompris;</othername>
+<contrib
+>Розробники</contrib>
+</othercredit
+> 
+
+<othercredit role="translator"
+><firstname
+>Юрій</firstname
+><surname
+>Чорноіван</surname
+><affiliation
+><address
+><email
+>yurchor@ukr.net</email
+></address
+></affiliation
+><contrib
+>Переклад українською</contrib
+></othercredit
+> 
+</authorgroup>
+
+<legalnotice
+>&FDLNotice;</legalnotice>
+
+<!-- Date of the documentation
+Don't forget to include this last date.
+Please respect the format of the date (YYYY-MM-DD),it is used by scripts.
+-->
+<date
+>21 січня 2022 року</date>
+
+<!--version information of the application and kde this documentation is valid for.
+for example 'xx.yy.zz'
+-->
+<releaseinfo
+>2.1</releaseinfo>
+
+<!-- Abstract about this handbook -->
+
+<abstract>
+<para
+>&gcompris; — навчальне програмне забезпечення з багатьма вправами. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>освіта</keyword>
+<keyword
+>діти</keyword>
+<keyword
+>ігри</keyword>
+</keywordset>
+
+</bookinfo>
+
+<chapter id="administration-handbook">
+<title
+>Підручник для адміністраторів</title>
+
+<sect1 id="introduction">
+<title
+>Вступ</title>
+<para
+>&gcompris; — багатий на можливості комплекс освітнього програмного забезпечення, яке складається із широкого діапазону вправ.</para>
+<para
+>У ньому передбачено різноманітні вправи з різних галузей знань. Тематика комплексу включає читання та набір тексту, арифметику, географію, гуманітарні науки тощо. Комплекс призначено для домашнього використання та шкільного навчання.</para>
+<para
+>Метою створення &gcompris; є створення ігрових вправ, у яких має бути навчальна компонента.</para>
+<para
+>&gcompris; є частиною проєкту &kde;, програма поширюється за дотримання <ulink url="https://www.gnu.org/licenses/agpl-3.0.html"
+>умов ліцензування AGPLv3</ulink
+>. Увесь код, окрім рушія для вправи з аналогової електрики, розповсюджується за умов дотримання <ulink url="https://www.gnu.org/licenses/gpl.html"
+>GPLv3</ulink
+>.</para>
+<para
+>&gcompris; можна встановити у таких операційних системах: &GNU;/&Linux;, &BSD;, MacOSX, &Windows;, Android. Для забезпечення працездатності програми потрібна відеокартка із апаратним прискоренням обробки просторових об’єктів у форматі <emphasis
+>OpenGL 2.1</emphasis
+> або новішого. Обов’язковою є можливість показу 32-бітових кольорів.</para>
+</sect1>
+
+<sect1 id="installation">
+<title
+>Встановлення</title>
+<para
+>Програмне забезпечення постачається у декількох форматах. Вам слід виконати настанови, що відповідають вашому випадку. </para>
+<itemizedlist>
+<listitem
+><para
+>&GNU;/&Linux;: скористайтеся пакунками, створеними для вашого дистрибутива &GNU;/&Linux;. Якщо для вашого дистрибутива &Linux; немає пакунка &gcompris;, будь ласка, зв’яжіться із авторами дистрибутива і попросіть їх включити пакунок &gcompris; до відповідного дистрибутива &Linux;.</para
+></listitem>
+<listitem
+><para
+>&Windows;: постачається у форматі класичного засобу для встановлення у &Windows;, можна встановити з Microsoft Store.</para
+></listitem>
+<listitem
+><para
+>MacOSX: постачається у форматі класичного засобу для встановлення.</para
+></listitem>
+<listitem
+><para
+>Android: розповсюджується за допомогою F-Droid та Google Play Store. Також можна скористатися файлом apk.</para
+></listitem>
+</itemizedlist>
+</sect1>
+
+<sect1 id="user-interface">
+<title
+>Інтерфейс користувача</title>
+<para
+>Інтерфейс програми створено для користування малими дітьми. &gcompris; можна керувати за допомогою миші. У більшості вправ передбачено можливість навігації за допомогою клавіатури.</para>
+
+<sect2 id="main-window">
+<title
+>Головне вікно</title>
+<para
+>Після запуску програми &gcompris; покаже графічний інтерфейс зі списком вправ і панеллю керування у нижній частині.</para>
+<screenshot>
+<screeninfo
+>Ось знімок головного вікна &gcompris;</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="gcompris-main-menu.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Головне вікно &gcompris;</phrase>
+    </textobject>
+  </mediaobject>
+</screenshot>
+
+<para
+>Кожній піктограмі відповідає вправа. Навколо кожної піктограми буде показано маленькі піктограмки із додатковою інформацією щодо вправи. Просте натискання піктограми призведе до переходу до вправи або відкриття меню вправ. Передбачено 8 розділів (категорій) вправ, пункти яких розташовано вгорі або ліворуч (лише якщо вибрано портретну орієнтацію). Наприклад, передбачено розділ «Ігри на дошці», до якого включено ігри на дошці, зокрема шахи, хрестики-нулики та «чотири-у-ряд».</para>
+<para
+>У деяких категоріях передбачено підкатегорії для фільтрування вправ. Для більшості математичних вправ передбачено три підкатегорії: лічба, арифметика та вимірювання.</para>
+<para
+>Зірочки позначають вікову групу, для якої розроблено відповідну гру:</para
+> 
+<itemizedlist>
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="difficulty1.svg" format="SVG"/></imageobject
+></inlinemediaobject
+>1, 2 або 3 жовтих зірочки — для дітей віком від 2 до 6 років.</para
+></listitem
+> 
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="difficulty4.svg" format="SVG"/></imageobject
+></inlinemediaobject
+>1, 2 або 3 червоних зірочки — для дітей, старших за 6 років.</para
+></listitem
+> 
+</itemizedlist>
+
+<para
+>У нижній частині вікна розташовано панель керування &gcompris;. Можливі піктограми (відповідні піктограми буде показано, лише якщо вони доступні для поточної вправи):</para>
+<itemizedlist>
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_home.svg" format="SVG"/></imageobject
+></inlinemediaobject
+> Хатка — полишити поточну вправу, повернутися до попереднього меню.</para
+></listitem
+> 
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_ok.svg" format="SVG"/></imageobject
+></inlinemediaobject
+> «Гаразд» — підтвердити відповідь. У деяких вправах не передбачено автоматичної перевірки того, чи було завершено виконання вправи. У таких випадках слід натискати цю піктограму. Також можна скористатися клавішею &Enter; на клавіатурі комп’ютера.</para
+></listitem
+> 
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_hint.svg" format="SVG"/></imageobject
+></inlinemediaobject
+> Лампа — показати підказку до вправи. За допомогою підказки можна допомогти дитині у деяких вправах, надавши настанови для визначення правильної відповіді. </para
+></listitem>
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_previous.svg" format="SVG"/></imageobject
+></inlinemediaobject>
+<inlinemediaobject
+><imageobject
+><imagedata fileref="bar_next.svg" format="SVG"/></imageobject
+></inlinemediaobject
+> Стрілки — показує поточний рівень. Натисніть одну зі стрілок, щоб вибрати інший рівень. Загалом, у вправ є декілька рівнів, кількість яких залежить від вправи. У &gcompris; можна переходити до наступного рівня, навіть якщо не завершено вправляння на попередньому рівні.</para
+></listitem
+> 
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_repeat.svg" format="SVG"/></imageobject
+></inlinemediaobject
+> Губи — попросити &gcompris; повторити питання.</para
+></listitem
+> 
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_help.svg" format="SVG"/></imageobject
+></inlinemediaobject
+> Знак питання — показати панель із довідкою. Іноді, вправа може бути надто складною, щоб усі її аспекти можна було описати на панелі опису. У цьому випадку за допомогою цієї кнопки можна отримати доступ до додаткової інформації.</para
+></listitem
+> 
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_config.svg" format="SVG"/></imageobject
+></inlinemediaobject
+> Відкрутка з ключем — меню налаштувань. Налаштування зберігаються у сховищі користувача (теці) з назвою <filename
+>.config/gcompris/gcompris.conf</filename
+>. Це текстовий файл, який можна редагувати вручну.</para
+></listitem
+> 
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_activity_config.svg" format="SVG"/></imageobject
+></inlinemediaobject
+> Пункт списку — показує меню параметрів вправи. Тут передбачено дві вкладки. Перша, «Набір даних», уможливлює вибір рівнів вправ, залежно від мети, а друга, «Параметри», надає змогу оновити налаштування вправи, якщо такі доступні. </para
+></listitem>
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_about.svg" format="SVG"/></imageobject
+></inlinemediaobject
+> Велика «G» — інформаційна панель щодо &gcompris;, містить список основних учасників розробки та дані щодо версії програмного забезпечення.</para
+></listitem
+> 
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_exit.svg" format="SVG"/></imageobject
+></inlinemediaobject
+> Символ живлення — вийти з &gcompris;. З цією ж метою ви можете скористатися клавіатурним скороченням <keycombo action="simul"
+>&Ctrl;<keycap
+>Q</keycap
+></keycombo
+></para
+></listitem
+> 
+</itemizedlist>
+</sect2>
+
+<sect2 id="kiosk-mode">
+<title
+>Режим кіоску</title>
+<para
+>Якщо ви користуєтеся &gcompris; для навчання малих дітей або на комп’ютері-кіоску, призначеному для самонавчання, ви можете вимкнути доступ до деяких зайвих можливостей:</para>
+<itemizedlist>
+<listitem
+><para
+><userinput
+><command
+>gcompris --enable-kioskmode</command
+></userinput
+> : вимикає кнопки <guiicon
+>Вийти</guiicon
+> і <guiicon
+>Налаштування</guiicon
+>.</para
+></listitem
+> 
+<listitem
+><para
+><userinput
+><command
+>gcompris --disable-kioskmode</command
+></userinput
+> : вмикає кнопки <guiicon
+>Вийти</guiicon
+> і <guiicon
+>Налаштування</guiicon
+>.</para
+></listitem>
+<listitem
+><para
+><userinput
+><command
+>gcompris -f</command
+></userinput
+>: запустити &gcompris; у повноекранному режимі</para
+></listitem
+> 
+<listitem
+><para
+><userinput
+><command
+>gcompris -C</command
+></userinput
+>: вимкнути показ вказівника (режим сенсорного екрана)</para
+></listitem
+> 
+</itemizedlist>
+<para
+>Звичайно ж, ці параметри можна поєднувати.</para>
+</sect2>
+
+<sect2 id="keyboard-shortcuts">
+<title
+>Клавіатурні скорочення</title>
+<informaltable>
+<tgroup cols="2">
+<tbody>
+<row>
+<entry
+>Скорочення</entry>
+<entry
+>Дія</entry>
+</row>
+<row>
+<entry
+>&Esc; або <keycombo action="simul"
+>&Ctrl;<keycap
+>W</keycap
+></keycombo
+></entry>
+<entry
+>Завершити поточну вправу або закрити діалогове вікно і повернутися до головного меню.</entry>
+</row>
+<row>
+<entry
+><keycombo action="simul"
+>&Ctrl;<keycap
+>Q</keycap
+></keycombo
+></entry>
+<entry
+>Завершити роботу &gcompris; без додаткових повідомлень.</entry>
+</row>
+<row>
+<entry
+><keycombo action="simul"
+>&Ctrl;<keycap
+>F</keycap
+></keycombo
+></entry>
+<entry
+>Вмикання або вимикання повноекранного режиму.</entry>
+</row>
+<row>
+<entry
+><keycombo action="simul"
+>&Ctrl;<keycap
+>M</keycap
+></keycombo
+></entry>
+<entry
+>Вимкнути або увімкнути звук.</entry>
+</row>
+<row>
+<entry
+><keycombo action="simul"
+>&Ctrl;<keycap
+>B</keycap
+></keycombo
+></entry>
+<entry
+>Показати або приховати панель керування.</entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
+</sect2>
+
+</sect1>
+
+<sect1 id="internationalization">
+<title
+>Зауваження щодо інтернаціоналізації</title>
+<para
+>&gcompris; можна інтернаціоналізувати. Програму перекладено понад 35 мовами. Якщо ви хочете перевірити, чи є доступною певна мова, ви можете запустити &gcompris; і вибрати відповідну мову зі списку у налаштуваннях.</para>
+<para
+>Майте на увазі, для показу повідомлень деякими мовами потрібні відповідні шрифти. </para
+> 
+<para
+>Якщо підтримки потрібної вам мови ще не передбачено, ви можете допомогти розробникам і додати переклад відповідною мовою. Якщо хочете допомогти, зв’яжіться із <ulink url="https://l10n.kde.org/teams"
+>командою перекладачів</ulink
+> проєкту &kde; вашою мовою. Із поточним рівнем перекладу потрібною вам мовою можна ознайомитися за допомогою <ulink url="https://l10n.kde.org/"
+>сайта перекладу &kde;</ulink
+>.</para>
+</sect1>
+
+<sect1 id="learning-language">
+<title
+>Навчання мовам</title>
+<para
+>Ви можете скористатися перекладом &gcompris; іноземною мовою, яка вивчається. Виберіть цю мову у меню налаштовування. Не забудьте отримати додаткові модулі звукових даних відповідною мовою.</para>
+</sect1>
+
+<sect1 id="customizing-activities">
+<title
+>Коригування вправ</title>
+<para
+>Налаштувати деякі з вправ можна за допомогою натискання кнопки налаштовування. Наприклад, ви можете встановити мову для деяких текстових вправ (зокрема ігор із вгадуванням слів) або наказати програмі показувати зображення справжніх автомобілів замість кольорових прямокутників (гра у водіння авто).</para>
+
+<para
+>Для деяких вправ ви можете вибрати декілька наборів даних у налаштуваннях. Для кожного набору передбачено певну мету, яку наведено в описі.</para>
+<screenshot>
+<screeninfo
+>Набір даних вправи «Полічити елементи»</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="dataset.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Набір даних вправи «Полічити елементи»</phrase>
+    </textobject>
+  </mediaobject>
+</screenshot>
+
+<para
+>Ви можете вибрати параметри для цієї вправи.</para>
+<screenshot>
+<screeninfo
+>Вибір режиму вправи «Полічити елементи»</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="activity-config.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Вибір режиму вправи «Полічити елементи»</phrase>
+    </textobject>
+  </mediaobject>
+</screenshot>
+</sect1>
+
+<sect1 id="console-switches">
+<title
+>Параметри консольної команди</title>
+<para
+>Якщо запустити &gcompris; з командної консолі з параметром --help, програма покаже список усіх параметрів, які є прийнятними для програми:</para>
+<informaltable>
+<tgroup cols="2">
+<tbody>
+<row>
+<entry
+>-f, --fullscreen</entry>
+<entry
+>Запустити &gcompris; у повноекранному режимі.</entry>
+</row>
+<row>
+<entry
+>-w, --window</entry>
+<entry
+>Запустити &gcompris; у вікні.</entry>
+</row>
+<row>
+<entry
+>-s, --sound</entry>
+<entry
+>Запустити &gcompris; із ввімкненим звуком.</entry>
+</row>
+<row>
+<entry
+>-m, --mute</entry>
+<entry
+>Запустити &gcompris; без звуку.</entry>
+</row>
+<row>
+<entry
+>-c, --cursor</entry>
+<entry
+>Запустити &gcompris; з використанням типового вказівника системи.</entry>
+</row>
+<row>
+<entry
+>-C, --nocursor</entry>
+<entry
+>Запустити &gcompris; без вказівника (режим сенсорного екрана).</entry>
+</row>
+<row>
+<entry
+>-v, --version</entry>
+<entry
+>Вивести дані щодо версії &gcompris;.</entry>
+</row>
+<row>
+<entry
+>--export-activities-as-sql</entry>
+<entry
+>Експортувати вправи у форматі SQL.</entry>
+</row>
+<row>
+<entry
+>--enable-kioskmode</entry>
+<entry
+>Увімкнути режим кіоску (приховує кнопки «Вийти» і «Налаштування»).</entry>
+</row>
+<row>
+<entry
+>--disable-kioskmode</entry>
+<entry
+>Вимкнути режим кіоску (типова поведінка).</entry>
+</row>
+<row>
+<entry
+>--software-renderer</entry>
+<entry
+>Використовувати програмну обробку замість openGL (має працювати з будь-якими графічними картками).</entry>
+</row>
+<row>
+<entry
+>--opengl-renderer</entry>
+<entry
+>Використовувати засоби обробки openGL замість програмних (швидше і з ширшим спектром графічних ефектів, але може призвести до аварійного завершення програми на деяких графічних картках).</entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
+
+<sect2 id="windows-example">
+<title
+>Приклад для &Windows;</title>
+<para
+>Ви можете додати ці параметри до команди у властивостях піктограми на стільниці. Ось приклад, у якому &gcompris; запускається у режимі кіоску на увесь екран без кнопки налаштовування та вказівника:</para>
+<para
+><userinput
+><command
+>"C:\Program Files\Gcompris\gcompris-qt.exe" --enable-kioskmode -f -C</command
+></userinput
+></para>
+</sect2>
+
+<sect2 id="gnu-linux-example">
+<title
+>Приклад для &GNU;/&Linux;</title>
+<para
+>Створіть кнопку запуску програми і налаштуйте параметри командного рядка. Ось приклад для запуску &gcompris; у режимі кіоску на увесь екран без кнопки налаштовування і вказівника:</para
+> 
+<para
+><userinput
+><command
+>gcompris-qt --enable-kioskmode -f -C</command
+></userinput
+></para>
+</sect2>
+
+</sect1>
+
+</chapter>
+<chapter id="credits">
+
+<title
+>Авторські права та ліцензування</title>
+
+<para
+>&gcompris; </para>
+<para
+>Авторські права на програму належать Timothée Giet та іншим, 2000–2022 </para>
+
+<para
+>Переклад українською: Юрій Чорноіван <email
+>yurchor@ukr.net</email
+></para
+> &underFDL; &underGPL; </chapter>
+
+&documentation.index;
+</book>
+
+<!--
+Local Variables:
+mode: xml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+
+vim:tabstop=2:shiftwidth=2:expandtab
+kate: space-indent on; indent-width 2; tab-width 2; indent-mode none;
+-->

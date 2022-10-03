@@ -1,0 +1,621 @@
+<?xml version="1.0" ?>
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+  <!-- Define an entity for your application if it is not part of KDE
+       Git -->
+  <!ENTITY gcompris "<application
+>GCompris</application
+>">
+  <!ENTITY kappname "&gcompris;"
+><!-- replace kmyapplication here
+                                            do *not* replace kappname-->
+  <!ENTITY % addindex "IGNORE">
+  <!ENTITY % Catalan  "INCLUDE"
+> <!-- ONLY If you are writing non-English
+                                     original documentation, change
+                                     the language here -->
+
+  <!-- Do not define any other entities; instead, use the entities
+       from entities/general.entities and en/user.entities. -->
+]>
+<book id="gcompris" lang="&language;">
+
+<bookinfo>
+<title
+>El manual d'administració del &gcompris;</title>
+
+<authorgroup>
+<author>
+<personname
+><firstname
+>Johnny Jazeix</firstname
+> <surname
+></surname
+> </personname>
+</author>
+
+<othercredit role="developer">
+<othername
+>L'equip del &gcompris;</othername>
+<contrib
+>Desenvolupadors</contrib>
+</othercredit
+> 
+
+&traductor.Antoni.Bella; 
+</authorgroup>
+
+<legalnotice
+>&FDLNotice;</legalnotice>
+
+<!-- Date of the documentation
+Don't forget to include this last date.
+Please respect the format of the date (YYYY-MM-DD),it is used by scripts.
+-->
+<date
+>21 de gener de 2022</date>
+
+<!--version information of the application and kde this documentation is valid for.
+for example 'xx.yy.zz'
+-->
+<releaseinfo
+>2.1</releaseinfo>
+
+<!-- Abstract about this handbook -->
+
+<abstract>
+<para
+>El &gcompris; és un programari educatiu amb múltiples activitats. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>educació</keyword>
+<keyword
+>canalla</keyword>
+<keyword
+>jocs</keyword>
+</keywordset>
+
+</bookinfo>
+
+<chapter id="administration-handbook">
+<title
+>Manual d'administració</title>
+
+<sect1 id="introduction">
+<title
+>Introducció</title>
+<para
+>El &gcompris; és una rica suite de programari educatiu que conté una gran varietat d'activitats.</para>
+<para
+>Ofereix diverses activitats destinades a cobrir una varietat de camps. Els temes inclouen lectura i escriptura, aritmètica, geografia, ciències i altres temes. Està destinat a ser utilitzat tant a casa com a l'escola.</para>
+<para
+>La finalitat del &gcompris; és proporcionar activitats lúdiques però sempre educatives.</para>
+<para
+>El &gcompris; forma part del projecte &kde; i es troba sota la <ulink url="https://www.gnu.org/licenses/agpl-3.0.html"
+>llicència AGPL versió 3</ulink
+>. Tot el codi, a excepció del motor de l'activitat electricitat anàloga es troba sota la <ulink url="https://www.gnu.org/licenses/gpl.html"
+>llicència GPL versió 3</ulink
+>.</para>
+<para
+>El &gcompris; està disponible en els sistemes operatius següents: &GNU;/&Linux;, &BSD;, MacOSX i Android. Es requereix una targeta 3D amb implementació de l'<emphasis
+>OpenGL 2.1</emphasis
+> o superior. És obligatori una profunditat de color de 32 bits</para>
+</sect1>
+
+<sect1 id="installation">
+<title
+>Instal·lació</title>
+<para
+>El programari es lliura sota diverses formes. Seguiu el procediment d'acord amb el vostre cas. </para>
+<itemizedlist>
+<listitem
+><para
+>&GNU;/&Linux;: Utilitza els paquets lliurats per la vostra distribució de &GNU;/&Linux;. Si el &gcompris; no està empaquetat en la vostra distribució de &Linux;, si us plau, contacteu-hi per a demanar la inclusió del &gcompris; en la vostra distribució de &Linux;.</para
+></listitem>
+<listitem
+><para
+>&Windows;: Lliurat sota un instal·lador clàssic per a &Windows; o mitjançant la Microsoft Store.</para
+></listitem>
+<listitem
+><para
+>MacOSX: Lliurat sota un instal·lador clàssic.</para
+></listitem>
+<listitem
+><para
+>Android: Distribuït per la botiga F-Droid o la Google Play Store. També està disponible el fitxer «apk».</para
+></listitem>
+</itemizedlist>
+</sect1>
+
+<sect1 id="user-interface">
+<title
+>La interfície d'usuari</title>
+<para
+>La interfície està dissenyada per a facilitar el seu ús per infants. El &gcompris; es controla amb un ratolí. També està disponible la navegació amb el teclat a la majoria de les activitats.</para>
+
+<sect2 id="main-window">
+<title
+>Finestra principal</title>
+<para
+>En iniciar el programa, el &gcompris; mostra una interfície gràfica que presenta la llista d'activitats amb una barra de control a la part inferior.</para>
+<screenshot>
+<screeninfo
+>Aquí hi ha una captura de pantalla de la finestra principal del &gcompris;</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="gcompris-main-menu.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Finestra principal del &gcompris;</phrase>
+    </textobject>
+  </mediaobject>
+</screenshot>
+
+<para
+>Cada icona representa una activitat. Al voltant de cadascuna trobareu petites icones que ofereixen informació addicional sobre l'activitat. Un simple clic a la icona us durà a una activitat o un menú d'activitats. Hi ha 8 seccions (categories) d'activitats, que estan ubicades a la part superior o esquerra (només si la vostra orientació és vertical). Per exemple, hi ha la secció «Jocs de taula», la qual inclou jocs de taula com els escacs, tres en ratlla o alinea 4.</para>
+<para
+>Algunes categories tenen subcategories per a filtrar millor les activitats. Per a les activitats matemàtiques, tenim tres subcategories: numeració, aritmètica i mesures.</para>
+<para
+>Les estrelles indiquen el grup d'edat per al qual està dissenyat cada joc:</para
+> 
+<itemizedlist>
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="difficulty1.svg" format="SVG"/></imageobject
+></inlinemediaobject
+>1, 2 o 3 estrelles grogues: dels 2 als 6 anys.</para
+></listitem
+> 
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="difficulty4.svg" format="SVG"/></imageobject
+></inlinemediaobject
+>1, 2 o 3 estrelles vermelles: més grans de 6 anys.</para
+></listitem
+> 
+</itemizedlist>
+
+<para
+>A la part inferior de la pantalla hi ha una barra de control per al &gcompris;. Les possibles icones són (només es mostraran si estan disponibles per a l'activitat):</para>
+<itemizedlist>
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_home.svg" format="SVG"/></imageobject
+></inlinemediaobject
+> Inici: Deixa l'activitat actual i torna al menú anterior.</para
+></listitem
+> 
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_ok.svg" format="SVG"/></imageobject
+></inlinemediaobject
+> «D'acord»: Valida, confirmant la vostra resposta. Algunes activitats no detecten automàticament si l'infant ha completat la tasca. En aquest cas, haureu de fer clic en aquesta icona. També podeu utilitzar la tecla &Intro; al teclat.</para
+></listitem
+> 
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_hint.svg" format="SVG"/></imageobject
+></inlinemediaobject
+> Llum: mostra un consell per a l'activitat. Podem ajudar a la canalla en algunes activitats per a guiar-los a trobar les respostes. </para
+></listitem>
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_previous.svg" format="SVG"/></imageobject
+></inlinemediaobject>
+<inlinemediaobject
+><imageobject
+><imagedata fileref="bar_next.svg" format="SVG"/></imageobject
+></inlinemediaobject
+> Fletxes: Es mostren al nivell actual. Feu clic en les fletxes per a seleccionar un altre nivell. Generalment, les activitats ofereixen diversos nivells on els nombres dependran de l'activitat. Al &gcompris;, és possible anar al següent nivell sense haver completat el nivell actual.</para
+></listitem
+> 
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_repeat.svg" format="SVG"/></imageobject
+></inlinemediaobject
+> Llavi: Demana al &gcompris; que repeteixi la pregunta.</para
+></listitem
+> 
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_help.svg" format="SVG"/></imageobject
+></inlinemediaobject
+> Signe d'interrogació: Mostra el diàleg d'ajuda. A vegades, una activitat pot ser massa complexa per a ser descrita amb facilitat a l'àrea de descripció. En aquest cas, aquesta funció dona accés a informació addicional.</para
+></listitem
+> 
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_config.svg" format="SVG"/></imageobject
+></inlinemediaobject
+> Quadre d'eines: El menú de configuració. La configuració es desa al repositori de l'usuari (carpeta) amb el nom <filename
+>.config/gcompris/gcompris.conf</filename
+>. Aquest és un fitxer de text que es pot editar manualment.</para
+></listitem
+> 
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_activity_config.svg" format="SVG"/></imageobject
+></inlinemediaobject
+> Element de llista: mostra el menú de configuració de l'activitat. Aquí hi ha dues pestanyes possibles. La primera, <guilabel
+>Conjunt de dades</guilabel
+>, permet triar el nivell de les activitats en funció de diversos objectius, i la segona, <guilabel
+>Opcions</guilabel
+>, si està disponible permet actualitzar la configuració de l'activitat. </para
+></listitem>
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_about.svg" format="SVG"/></imageobject
+></inlinemediaobject
+> La «G» majúscula: Mostra un rètol informatiu sobre el &gcompris;, on es presenten els col·laboradors principals i la versió del programari.</para
+></listitem
+> 
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_exit.svg" format="SVG"/></imageobject
+></inlinemediaobject
+> Encendre: Surt del &gcompris;. També podeu utilitzar la drecera de teclat <keycombo action="simul"
+>&Ctrl;<keycap
+>Q</keycap
+></keycombo
+>.</para
+></listitem
+> 
+</itemizedlist>
+</sect2>
+
+<sect2 id="kiosk-mode">
+<title
+>El mode quiosc</title>
+<para
+>Quan empreu el &gcompris; amb infants o en un quiosc d'autoestudi, podreu inhabilitar un determinat nombre d'opcions:</para>
+<itemizedlist>
+<listitem
+><para
+><userinput
+><command
+>gcompris --enable-kioskmode</command
+></userinput
+> : inhabilita els botons <guiicon
+>Surt</guiicon
+> i <guiicon
+>Configuració</guiicon
+>.</para
+></listitem
+> 
+<listitem
+><para
+><userinput
+><command
+>gcompris --disable-kioskmode</command
+></userinput
+> : habilita els botons <guiicon
+>Surt</guiicon
+> i <guiicon
+>Configuració</guiicon
+>.</para
+></listitem>
+<listitem
+><para
+><userinput
+><command
+>gcompris -f</command
+></userinput
+> : executa el &gcompris; en el mode de pantalla completa.</para
+></listitem
+> 
+<listitem
+><para
+><userinput
+><command
+>gcompris -C</command
+></userinput
+> : inhabilita el cursor (mode de pantalla tàctil).</para
+></listitem
+> 
+</itemizedlist>
+<para
+>Aquestes opcions es poden combinar, per descomptat.</para>
+</sect2>
+
+<sect2 id="keyboard-shortcuts">
+<title
+>Dreceres de teclat</title>
+<informaltable>
+<tgroup cols="2">
+<tbody>
+<row>
+<entry
+>Drecera</entry>
+<entry
+>Acció</entry>
+</row>
+<row>
+<entry
+>&Esc; o <keycombo action="simul"
+>&Ctrl;<keycap
+>W</keycap
+></keycombo
+></entry>
+<entry
+>Surt de l'activitat actual o del diàleg i després torna al menú principal.</entry>
+</row>
+<row>
+<entry
+><keycombo action="simul"
+>&Ctrl;<keycap
+>Q</keycap
+></keycombo
+></entry>
+<entry
+>Surt del &gcompris; sense avís previ.</entry>
+</row>
+<row>
+<entry
+><keycombo action="simul"
+>&Ctrl;<keycap
+>F</keycap
+></keycombo
+></entry>
+<entry
+>Alterna el mode de pantalla completa.</entry>
+</row>
+<row>
+<entry
+><keycombo action="simul"
+>&Ctrl;<keycap
+>M</keycap
+></keycombo
+></entry>
+<entry
+>Alterna entre el silenci i el so.</entry>
+</row>
+<row>
+<entry
+><keycombo action="simul"
+>&Ctrl;<keycap
+>B</keycap
+></keycombo
+></entry>
+<entry
+>Mostra o oculta la barra de control.</entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
+</sect2>
+
+</sect1>
+
+<sect1 id="internationalization">
+<title
+>Notes sobre la internacionalització</title>
+<para
+>El &gcompris; és internacionalitzat i està disponible en més de 35 idiomes. Per a comprovar si està disponible el vostre idioma, podeu iniciar el &gcompris; i seleccionar el vostre idioma en l'opció de configuració.</para>
+<para
+>Aneu amb compte, alguns idiomes necessiten tipus de lletra específics per a mostrar-se correctament. </para
+> 
+<para
+>Si no s'admet el vostre idioma, podeu col·laborar amb el programari i afegir-hi la seva traducció. Si hi esteu interessat, podeu posar-vos en contacte amb l'<ulink url="https://l10n.kde.org/teams"
+>equip de traducció</ulink
+> del projecte &kde; pel vostre idioma. Podeu comprovar el nivell de traducció pel vostre idioma al <ulink url="https://l10n.kde.org/"
+>lloc web de traducció del &kde;</ulink
+>.</para>
+</sect1>
+
+<sect1 id="learning-language">
+<title
+>Aprenentatge d'idiomes</title>
+<para
+>Podeu emprar el &gcompris; en un idioma estranger que esteu aprenent. Seleccioneu un idioma estranger en el menú de configuració. No us oblideu de descarregar els mòduls d'àudio opcionals per a aquest idioma.</para>
+</sect1>
+
+<sect1 id="customizing-activities">
+<title
+>Personalitzar les activitats</title>
+<para
+>Podeu personalitzar algunes activitats emprant amb el seu propi botó de configuració. Per exemple, podeu establir la configuració regional en algunes activitats de text (com el joc de paraules), o fer que es mostrin imatges de cotxes reals en lloc de rectangles farcits (trànsit).</para>
+
+<para
+>Per a múltiples activitats, podreu triar diversos conjunts de dades a la configuració. Cadascun té un objectiu específic que es descriu.</para>
+<screenshot>
+<screeninfo
+>Conjunt de dades de l'activitat «Compta els elements»</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="dataset.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Conjunt de dades de l'activitat «Compta els elements»</phrase>
+    </textobject>
+  </mediaobject>
+</screenshot>
+
+<para
+>Podeu triar les opcions per a aquesta activitat.</para>
+<screenshot>
+<screeninfo
+>Seleccionant el mode de l'activitat «Compta els elements»</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="activity-config.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Seleccionant el mode de l'activitat «Compta els elements»</phrase>
+    </textobject>
+  </mediaobject>
+</screenshot>
+</sect1>
+
+<sect1 id="console-switches">
+<title
+>Opcions de la consola</title>
+<para
+>En executar el &gcompris; des d'una consola d'ordres amb l'opció --help, es mostraran tots els paràmetres que accepta:</para>
+<informaltable>
+<tgroup cols="2">
+<tbody>
+<row>
+<entry
+>-f, --fullscreen</entry>
+<entry
+>Executa el &gcompris; en el mode de pantalla completa.</entry>
+</row>
+<row>
+<entry
+>-w, --window</entry>
+<entry
+>Executa el &gcompris; en el mode de finestra.</entry>
+</row>
+<row>
+<entry
+>-s, --sound</entry>
+<entry
+>Executa el &gcompris; amb el so habilitat.</entry>
+</row>
+<row>
+<entry
+>-m, --mute</entry>
+<entry
+>Executa el &gcompris; sense so.</entry>
+</row>
+<row>
+<entry
+>-c, --cursor</entry>
+<entry
+>Executa el &gcompris; amb el cursor predeterminat del sistema.</entry>
+</row>
+<row>
+<entry
+>-C, --nocursor</entry>
+<entry
+>Executa el &gcompris; sense cursor (mode de pantalla tàctil).</entry>
+</row>
+<row>
+<entry
+>-v, --version</entry>
+<entry
+>Imprimeix la versió del &gcompris;.</entry>
+</row>
+<row>
+<entry
+>--export-activities-as-sql</entry>
+<entry
+>Exporta les activitats com a una base de dades SQL.</entry>
+</row>
+<row>
+<entry
+>--enable-kioskmode</entry>
+<entry
+>Habilita el mode quiosc (oculta els botons Surt i Configuració).</entry>
+</row>
+<row>
+<entry
+>--disable-kioskmode</entry>
+<entry
+>Inhabilita el mode quiosc (omissió).</entry>
+</row>
+<row>
+<entry
+>--software-renderer</entry>
+<entry
+>Utilitza el renderitzador per programari en lloc d'openGL (s'executa amb qualsevol targeta gràfica).</entry>
+</row>
+<row>
+<entry
+>--opengl-renderer</entry>
+<entry
+>Utilitza el renderitzador openGL en comptes del per programari (més ràpid, però pot fallar amb algunes targetes gràfiques).</entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
+
+<sect2 id="windows-example">
+<title
+>Exemple del &Windows;</title>
+<para
+>Podeu afegir aquestes opcions en les propietats de la icona de l'escriptori. Aquest és un exemple que executa el &gcompris; en el mode quiosc a pantalla completa, sense el botó de configuració ni el cursor:</para>
+<para
+><userinput
+><command
+>"C:\Program Files\Gcompris\gcompris-qt.exe" --enable-kioskmode -f -C</command
+></userinput
+></para>
+</sect2>
+
+<sect2 id="gnu-linux-example">
+<title
+>Exemple del &GNU;/&Linux;</title>
+<para
+>Creeu un llançador d'aplicacions i configureu els paràmetres de la línia d'ordres. Aquest és un exemple que executa el &gcompris; en el mode quiosc a pantalla completa, sense el botó de configuració ni el cursor:</para
+> 
+<para
+><userinput
+><command
+>gcompris-qt --enable-kioskmode -f -C</command
+></userinput
+></para>
+</sect2>
+
+</sect1>
+
+</chapter>
+<chapter id="credits">
+
+<title
+>Crèdits i llicència</title>
+
+<para
+>&gcompris; </para>
+<para
+>Copyright del programa 2000-2022 Timothée Giet i altres </para>
+
+<para
+>Traductor de la documentació: &credits.Antoni.Bella;</para
+> &underFDL; &underGPL; </chapter>
+
+&documentation.index;
+</book>
+
+<!--
+Local Variables:
+mode: xml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+
+vim:tabstop=2:shiftwidth=2:expandtab
+kate: space-indent on; indent-width 2; tab-width 2; indent-mode none;
+-->

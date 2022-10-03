@@ -1,0 +1,615 @@
+<?xml version="1.0" ?>
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+  <!-- Define an entity for your application if it is not part of KDE
+       Git -->
+  <!ENTITY gcompris "<application
+>GCompris</application
+>">
+  <!ENTITY kappname "&gcompris;"
+><!-- replace kmyapplication here
+                                            do *not* replace kappname-->
+  <!ENTITY % addindex "IGNORE">
+  <!ENTITY % Dutch "INCLUDE"
+> <!-- ONLY If you are writing non-English
+                                     original documentation, change
+                                     the language here -->
+
+  <!-- Do not define any other entities; instead, use the entities
+       from entities/general.entities and en/user.entities. -->
+]>
+<book id="gcompris" lang="&language;">
+
+<bookinfo>
+<title
+>Het handboek voor beheer van &gcompris;</title>
+
+<authorgroup>
+<author>
+<personname
+><firstname
+>Johnny Jazeix</firstname
+> <surname
+></surname
+> </personname>
+</author>
+
+<othercredit role="developer">
+<othername
+>Het team van &gcompris;</othername>
+<contrib
+>Ontwikkelaars</contrib>
+</othercredit
+> 
+
+&Freek.de.Kruijf;&Ronald.Stroethoff; 
+</authorgroup>
+
+<legalnotice
+>&FDLNotice;</legalnotice>
+
+<!-- Date of the documentation
+Don't forget to include this last date.
+Please respect the format of the date (YYYY-MM-DD),it is used by scripts.
+-->
+<date
+>2022-01-21</date>
+
+<!--version information of the application and kde this documentation is valid for.
+for example 'xx.yy.zz'
+-->
+<releaseinfo
+>2.1</releaseinfo>
+
+<!-- Abstract about this handbook -->
+
+<abstract>
+<para
+>&gcompris; is educatieve software voor meerdere activiteiten. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>onderwijs</keyword>
+<keyword
+>kinderen</keyword>
+<keyword
+>spellen</keyword>
+</keywordset>
+
+</bookinfo>
+
+<chapter id="administration-handbook">
+<title
+>Handboek voor administratie</title>
+
+<sect1 id="introduction">
+<title
+>Inleiding</title>
+<para
+>&gcompris; is een rij voorziene suite met software voor onderwijs die een brede reeks van activiteiten bevat.</para>
+<para
+>Het biedt verschillende activiteiten gericht op het dekken van een variëteit van velden. De onderwerpen bevatten lezen en typen, rekenen, aardrijkskunde, wetenschap en andere onderwerpen. Het is bedoeld om zowel thuis als op school te worden gebruikt.</para>
+<para
+>Het doel van &gcompris; is om speelse activiteiten te bieden maar altijd onderwijskundig.</para>
+<para
+>&gcompris; is onderdeel van het &kde;-project en is geplaatst onder de <ulink url="https://www.gnu.org/licenses/agpl-3.0.html"
+>AGPLv3 licentie</ulink
+>. Alle code, behalve de engine voor de activiteit analoge elektriciteit activity is onder de <ulink url="https://www.gnu.org/licenses/gpl.html"
+>GPLv3 licentie</ulink
+>.</para>
+<para
+>&gcompris; is beschikbaar op de volgende besturingssystemen: &GNU;/&Linux;, &BSD;, MacOSX, &Windows; en Android. Het vereist een 3D kaart met ondersteuning voor <emphasis
+>OpenGL 2.1</emphasis
+> of hoger. 32 bits kleurdiepte is verplicht</para>
+</sect1>
+
+<sect1 id="installation">
+<title
+>Installatie</title>
+<para
+>De software wordt in verschillende vormen geleverd. Volg het proces behorende bij uw omgeving. </para>
+<itemizedlist>
+<listitem
+><para
+>&GNU;/&Linux; : gebruik de pakketten geleverd door uw &GNU;/&Linux; distributie. Als &gcompris; niet als pakket in uw &Linux; distributie zit, neem dan contact met ze op om te vragen &gcompris; op te nemen in uw &Linux; distributie.</para
+></listitem>
+<listitem
+><para
+>&Windows; : geleverd onder een klassiek installatieprogramma voor &Windows; of via de Microsoft Store.</para
+></listitem>
+<listitem
+><para
+>MacOSX : geleverd onder een klassiek installatieprogramma.</para
+></listitem>
+<listitem
+><para
+>Android: geleverd door de F-Droid store of Google Play Store. Apk bestand is ook beschikbaar.</para
+></listitem>
+</itemizedlist>
+</sect1>
+
+<sect1 id="user-interface">
+<title
+>De gebruikersinterface</title>
+<para
+>Het interface is zo ontworpen dat het makkelijk door kleine kinderen kan worden gebruikt. U bedient &gcompris; met een muis. Navigatie met het toetsenbord is ook beschikbaar op de meeste activiteiten.</para>
+
+<sect2 id="main-window">
+<title
+>Hoofdvenster</title>
+<para
+>Nadat u het programma heeft gestart, zal &gcompris; een grafische omgeving laten zien met een lijst van activiteiten en onderaan een werkbalk.</para>
+<screenshot>
+<screeninfo
+>Hier is een schermafdruk van het hoofdvenster van &gcompris;</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="gcompris-main-menu.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Hoofdvenster van &gcompris;</phrase>
+    </textobject>
+  </mediaobject>
+</screenshot>
+
+<para
+>Elk pictogram stelt een activiteit voor. Bij elk daarvan vindt u kleinere pictogrammen die extra informatie over die activiteit geven. Een gewone klik op het pictogram zal u naar het activiteit of een menu met activiteiten leiden. Er zijn 8 groepen (categorieën) van activiteiten, bovenaan of links (alleen als uw oriëntatie portret is) geplaatst. Als voorbeeld, er is een groep "Bord spellen", met daarin bord spellen, zoals schaken, boter kaas en eieren of vier op een rij.</para>
+<para
+>Sommige categorieën hebben subcategorieën om de activiteiten beter te filteren. Voor rekenactiviteiten hebben we drie subcategorieën: tellen, rekenen en maten.</para>
+<para
+>Bij elk spel geven de sterren aan voor welke leeftijdsgroep het is ontworpen:</para
+> 
+<itemizedlist>
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="difficulty1.svg" format="SVG"/></imageobject
+></inlinemediaobject
+>1, 2 of 3 gele sterren -voor 2 tot 6 jaar oud.</para
+></listitem
+> 
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="difficulty4.svg" format="SVG"/></imageobject
+></inlinemediaobject
+>1, 2 of 3 rode sterren - ouder dan 6 jaar.</para
+></listitem
+> 
+</itemizedlist>
+
+<para
+>Onderaan het scherm is een werkbalk voor &gcompris;. De mogelijke pictogrammen zijn (de pictogrammen zijn alleen zichtbaar als ze in de activiteit ook beschikbaar zijn):</para>
+<itemizedlist>
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_home.svg" format="SVG"/></imageobject
+></inlinemediaobject
+> Thuis - Verlaat de huidige activiteit, ga terug naar het vorige menu.</para
+></listitem
+> 
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_ok.svg" format="SVG"/></imageobject
+></inlinemediaobject
+> "OK" - Controleert en bevestigt uw antwoord. Sommige activiteiten detecteren niet automatisch dat een kind de taak heeft volbracht. In dat geval moet u op dit pictogram klikken. U kunt de &Enter;-toets op uw toetsenbord gebruiken.</para
+></listitem
+> 
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_hint.svg" format="SVG"/></imageobject
+></inlinemediaobject
+> Licht - toon een tip voor de activiteit. We kunnen de kinderen bij sommige activiteiten helpen om ze bij het zoeken van de antwoorden te begeleiden. </para
+></listitem>
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_previous.svg" format="SVG"/></imageobject
+></inlinemediaobject>
+<inlinemediaobject
+><imageobject
+><imagedata fileref="bar_next.svg" format="SVG"/></imageobject
+></inlinemediaobject
+> Pijlen - Toont het huidige niveau. Klik op een van de pijlen om een ander niveau te selecteren. Meestal heeft een activiteit meerdere niveaus waarbij het aantal niveaus afhankelijk is van de activiteit. In &gcompris;, het is mogelijk om naar het volgende niveau te gaan terwijl het huidige niveau nog niet compleet is.</para
+></listitem
+> 
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_repeat.svg" format="SVG"/></imageobject
+></inlinemediaobject
+> Lippen - Vraagt aan &gcompris; om de vraag te herhalen.</para
+></listitem
+> 
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_help.svg" format="SVG"/></imageobject
+></inlinemediaobject
+> Vraagteken - Toont het help-dialoogvenster. Soms is een activiteit te ingewikkeld om gemakkelijk in de omschrijvings-tekst te beschrijven. In dat geval geeft deze functie toegang tot extra informatie.</para
+></listitem
+> 
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_config.svg" format="SVG"/></imageobject
+></inlinemediaobject
+> Gereedschapskist - Configuratie menu. DE configuratie wordt bewaart in de repository (map) van de gebruiker onder de naam <filename
+>.config/gcompris/gcompris.conf</filename
+>. Dit is een tekstbestand dat u handmatig kan bewerken.</para
+></listitem
+> 
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_activity_config.svg" format="SVG"/></imageobject
+></inlinemediaobject
+> Element in lijst - toon het instellingenmenu van de activiteit. Er zijn hier twee mogelijke tabbladen. De eerste, "Gegevensset", biedt het kiezen van de niveaus van de activiteiten afhankelijk van verschillende doelen en de tweede, "Opties", biedt het bijwerken van de configuratie van de activiteit indien beschikbaar. </para
+></listitem>
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_about.svg" format="SVG"/></imageobject
+></inlinemediaobject
+> Hoofdletter "G" - Informatievenster over &gcompris;, geeft informatie over de hoofdontwikkelaars en de versie van de software.</para
+></listitem
+> 
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_exit.svg" format="SVG"/></imageobject
+></inlinemediaobject
+> Power - Stopt &gcompris;. u kunt ook de sneltoets op uw toetsenbord <keycombo action="simul"
+>&Ctrl;<keycap
+>Q</keycap
+></keycombo
+> gebruiken</para
+></listitem
+> 
+</itemizedlist>
+</sect2>
+
+<sect2 id="kiosk-mode">
+<title
+>Kiosk Modus</title>
+<para
+>Als u met kleine kinderen &gcompris; of op een self-service kiosk gebruikt, dan kunt een aantal mogelijkheden uitschakelen:</para>
+<itemizedlist>
+<listitem
+><para
+><userinput
+><command
+>gcompris --enable-kioskmode</command
+></userinput
+> : de knoppen <guiicon
+>Afsluiten</guiicon
+> en <guiicon
+>Configuratie</guiicon
+> uitschakelen.</para
+></listitem
+> 
+<listitem
+><para
+><userinput
+><command
+>gcompris --disable-kioskmode</command
+></userinput
+> : de knoppen <guiicon
+>Afsluiten</guiicon
+> en <guiicon
+>Configuratie</guiicon
+> uitschakelen.</para
+></listitem>
+<listitem
+><para
+><userinput
+><command
+>gcompris -f</command
+></userinput
+> : &gcompris; uitvoeren in modus volledig scherm</para
+></listitem
+> 
+<listitem
+><para
+><userinput
+><command
+>gcompris -C</command
+></userinput
+> : schakel de cursor uit (modus aanraakscherm)</para
+></listitem
+> 
+</itemizedlist>
+<para
+>Deze opties kunnen natuurlijk gecombineerd worden.</para>
+</sect2>
+
+<sect2 id="keyboard-shortcuts">
+<title
+>Sneltoetsen</title>
+<informaltable>
+<tgroup cols="2">
+<tbody>
+<row>
+<entry
+>Sneltoets</entry>
+<entry
+>Actie</entry>
+</row>
+<row>
+<entry
+>&Esc; of <keycombo action="simul"
+>&Ctrl;<keycap
+>W</keycap
+></keycombo
+></entry>
+<entry
+>Verlaat het huidige activiteit of dialoogvenster en gaat terug naar het hoofdvenster.</entry>
+</row>
+<row>
+<entry
+><keycombo action="simul"
+>&Ctrl;<keycap
+>Q</keycap
+></keycombo
+></entry>
+<entry
+>&gcompris; zonder verdere waarschuwing afsluiten.</entry>
+</row>
+<row>
+<entry
+><keycombo action="simul"
+>&Ctrl;<keycap
+>F</keycap
+></keycombo
+></entry>
+<entry
+>Volledig scherm omschakelen.</entry>
+</row>
+<row>
+<entry
+><keycombo action="simul"
+>&Ctrl;<keycap
+>M</keycap
+></keycombo
+></entry>
+<entry
+>Geluid aan of uit zetten.</entry>
+</row>
+<row>
+<entry
+><keycombo action="simul"
+>&Ctrl;<keycap
+>B</keycap
+></keycombo
+></entry>
+<entry
+>De werkbalk aan of uit zetten.</entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
+</sect2>
+
+</sect1>
+
+<sect1 id="internationalization">
+<title
+>Opmerkingen over internationaliseren</title>
+<para
+>&gcompris; is geïnternationaliseerd en is beschikbaar in meer dan 35 talen. Als u wilt controleren of uw taal beschikbaar is, dan kunt u &gcompris; starten en uw taal selecteren in het configuratievenster.</para>
+<para
+>Wees voorzichtig, sommige talen hebben specifieke lettertypes nodig om op de juiste manier te worden getoond. </para
+> 
+<para
+>Als &gcompris; nog niet naar uw taal is vertaald, dan kunt u aan de software bijdragen en een vertaling naar uw taal toevoegen. Als u geïnteresseerd bent, dan kunt contact opnemen met het <ulink url="https://l10n.kde.org/teams"
+>vertaal team</ulink
+> van het &kde; project voor uw taal. U kunt controleren hoeveel van uw taal al vertaald is op de <ulink url="https://l10n.kde.org/"
+>&kde; vertalings web site</ulink
+>.</para>
+</sect1>
+
+<sect1 id="learning-language">
+<title
+>Taal leren</title>
+<para
+>U kunt &gcompris; gebruiken in een vreemde taal die u bezig bent om te leren. Selecteer een vreemde taal in het configuratiemenu. Vergeet niet om de optionele audio modules voor deze taal te downloaden.</para>
+</sect1>
+
+<sect1 id="customizing-activities">
+<title
+>Activiteiten aanpassen</title>
+<para
+>U kunt sommige activiteiten aanpassen met behulp van de configuratieknop daarin. Bijvoorbeeld, u kunt de taal instellen bij sommige tekst-activiteiten (zoals woordspelletjes) of dat er afbeeldingen van echte auto's worden getoond in plaats van opgevulde rechthoeken (verkeer).</para>
+
+<para
+>Voor meerdere activiteiten kunt u verschillende gegevenssets in de configuratie kiezen. Elk heeft een specifiek doel die beschreven is.</para>
+<screenshot>
+<screeninfo
+>Gegevensset van activiteit "De voorwerpen tellen"</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="dataset.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Gegevensset van activiteit "De voorwerpen tellen"</phrase>
+    </textobject>
+  </mediaobject>
+</screenshot>
+
+<para
+>U kunt de opties kiezen voor deze activiteit.</para>
+<screenshot>
+<screeninfo
+>Modus van activiteit "De voorwerpen tellen" selecteren</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="activity-config.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Modus van activiteit "De voorwerpen tellen" selecteren</phrase>
+    </textobject>
+  </mediaobject>
+</screenshot>
+</sect1>
+
+<sect1 id="console-switches">
+<title
+>Switches op de opdrachtregel</title>
+<para
+>&gcompris; uitvoeren vanaf een console met een opdrachtregel met de optie --help zal alle parameters tonen die geaccepteerd worden:</para>
+<informaltable>
+<tgroup cols="2">
+<tbody>
+<row>
+<entry
+>-f, --fullscreen</entry>
+<entry
+>&gcompris; uitvoeren in volledig scherm.</entry>
+</row>
+<row>
+<entry
+>-w, --window</entry>
+<entry
+>&gcompris; uitvoeren in een venster.</entry>
+</row>
+<row>
+<entry
+>-s, --sound</entry>
+<entry
+>&gcompris; uitvoeren met geluid aan.</entry>
+</row>
+<row>
+<entry
+>-m, --mute</entry>
+<entry
+>&gcompris; uitvoeren zonder geluid.</entry>
+</row>
+<row>
+<entry
+>-c, --cursor</entry>
+<entry
+>&gcompris; uitvoeren met de standaard systeemcursor.</entry>
+</row>
+<row>
+<entry
+>-C, --nocursor</entry>
+<entry
+>&gcompris; uitvoeren zonder cursor (modus aanraakscherm).</entry>
+</row>
+<row>
+<entry
+>-v, --version</entry>
+<entry
+>De versie van &gcompris; tonen.</entry>
+</row>
+<row>
+<entry
+>--export-activities-as-sql</entry>
+<entry
+>Activiteiten exporteren als SQL.</entry>
+</row>
+<row>
+<entry
+>--enable-kioskmode</entry>
+<entry
+>De kioskmodus inschakelen (verbergt knoppen Afsluiten en Configuratie).</entry>
+</row>
+<row>
+<entry
+>--disable-kioskmode</entry>
+<entry
+>De kioskmodus uitschakelen (standaard).</entry>
+</row>
+<row>
+<entry
+>--software-renderer</entry>
+<entry
+>Software renderer gebruiken in plaats van openGL (zou met elke grafische kaart moeten werken).</entry>
+</row>
+<row>
+<entry
+>--opengl-renderer</entry>
+<entry
+>Renderen met openGL gebruiken in plaats van software (sneller en meer grafische effecten maar kan crashen bij sommige grafische kaarten).</entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
+
+<sect2 id="windows-example">
+<title
+>Voorbeeld in &Windows;</title>
+<para
+>U kunt deze switches aan de eigenschappen van het icoon op het bureaublad toevoegen. Hier is een voorbeeld dat &gcompris; in kiosk mode beeldvullend opstart, zonder configuratieknop en zonder cursor:</para>
+<para
+><userinput
+><command
+>"C:\Program Files\Gcompris\gcompris-qt.exe" --enable-kioskmode -f -C</command
+></userinput
+></para>
+</sect2>
+
+<sect2 id="gnu-linux-example">
+<title
+>Voorbeeld in &GNU;/&Linux;</title>
+<para
+>Creëert een startmenu en configureert de commandoregel parameters.  Hier is een voorbeeld dat &gcompris; in kiosk mode beeldvullend opstart, zonder configuratieknop en zonder cursor:</para
+> 
+<para
+><userinput
+><command
+>gcompris-qt --enable-kioskmode -f -C</command
+></userinput
+></para>
+</sect2>
+
+</sect1>
+
+</chapter>
+<chapter id="credits">
+
+<title
+>Dankbetuigingen en licentie</title>
+
+<para
+>&gcompris; </para>
+<para
+>Programma copyright 2000-2022 Timothée Giet en anderen </para>
+
+&meld.fouten;&vertaling.freek; &underFDL; &underGPL; </chapter>
+
+&documentation.index;
+</book>
+
+<!--
+Local Variables:
+mode: xml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+
+vim:tabstop=2:shiftwidth=2:expandtab
+kate: space-indent on; indent-width 2; tab-width 2; indent-mode none;
+-->

@@ -1,0 +1,633 @@
+<?xml version="1.0" ?>
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+  <!-- Define an entity for your application if it is not part of KDE
+       Git -->
+  <!ENTITY gcompris "<application
+>GCompris</application
+>">
+  <!ENTITY kappname "&gcompris;"
+><!-- replace kmyapplication here
+                                            do *not* replace kappname-->
+  <!ENTITY % addindex "IGNORE">
+  <!ENTITY % Swedish "INCLUDE"
+> <!-- ONLY If you are writing non-English
+                                     original documentation, change
+                                     the language here -->
+
+  <!-- Do not define any other entities; instead, use the entities
+       from entities/general.entities and en/user.entities. -->
+]>
+<book id="gcompris" lang="&language;">
+
+<bookinfo>
+<title
+>Administratörshandbok &gcompris;</title>
+
+<authorgroup>
+<author>
+<personname
+><firstname
+>Johnny</firstname
+> <surname
+> Jazeix</surname
+> </personname>
+</author>
+
+<othercredit role="developer">
+<othername
+>&gcompris; gruppen</othername>
+<contrib
+>Utvecklare</contrib>
+</othercredit
+> 
+
+<othercredit role="translator"
+> <firstname
+>Stefan</firstname
+> <surname
+>Asserhäll</surname
+> <affiliation
+><address
+><email
+>stefan.asserhall@bredband.net</email
+></address
+></affiliation
+> <contrib
+>Översättare</contrib
+></othercredit
+> 
+</authorgroup>
+
+<legalnotice
+>&FDLNotice;</legalnotice>
+
+<!-- Date of the documentation
+Don't forget to include this last date.
+Please respect the format of the date (YYYY-MM-DD),it is used by scripts.
+-->
+<date
+>2022-01-21</date>
+
+<!--version information of the application and kde this documentation is valid for.
+for example 'xx.yy.zz'
+-->
+<releaseinfo
+>2.1</releaseinfo>
+
+<!-- Abstract about this handbook -->
+
+<abstract>
+<para
+>&gcompris; är en pedagogisk programvara med flera aktiviteter. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>utbildning</keyword>
+<keyword
+>barn</keyword>
+<keyword
+>spel</keyword>
+</keywordset>
+
+</bookinfo>
+
+<chapter id="administration-handbook">
+<title
+>Administratörshandbok</title>
+
+<sect1 id="introduction">
+<title
+>Inledning</title>
+<para
+>&gcompris; är en omfattande pedagogisk programsvit som består av en mängd olika aktiviteter.</para>
+<para
+>Den erbjuder diverse aktiviteter med målet att täcka en mängd olika fält. Ämnena omfattar läsa och skriva, aritmetik, geografi, vetenskap och andra ämnen. Den är avsedd att användas både hemma och i skolan.</para>
+<para
+>&gcompris; syfte är att tillhandahålla lekbaserade men alltid pedagogiska aktiviteter.</para>
+<para
+>&gcompris; är en del av &kde;-projektet och använder licensen <ulink url="https://www.gnu.org/licenses/agpl-3.0.html"
+>AGPLv3</ulink
+>. All kod, utom gränssnittet för analog elektricitet använder licensen <ulink url="https://www.gnu.org/licenses/gpl.html"
+>GPLv3</ulink
+>.</para>
+<para
+>&gcompris; är tillgänglig på följande operativsystem: &GNU;/&Linux;, &BSD;, MacOSX, &Windows; och Android. Det kräver ett 3D-kort med stöd för <emphasis
+>OpenGL 2.1</emphasis
+> eller senare. 32-bitars färgdjup är nödvändigt.</para>
+</sect1>
+
+<sect1 id="installation">
+<title
+>Installation</title>
+<para
+>Programvaran levereras i flera olika former. Följ processen i enlighet med ditt fall. </para>
+<itemizedlist>
+<listitem
+><para
+>&GNU;/&Linux;: Använd paketen levererade av din &GNU;/&Linux;-distribution. Om &gcompris; inte är paketerat i din &Linux;-distribution, kontakta dem gärna och be att &gcompris; inkluderas i distributionen.</para
+></listitem>
+<listitem
+><para
+>&Windows;: Levereras med ett klassiskt installationsprogram för &Windows; eller via Microsoft Store.</para
+></listitem>
+<listitem
+><para
+>MacOSX : Levereras med ett klassiskt installationsprogram.</para
+></listitem>
+<listitem
+><para
+>Android: Distributeras av F-Droid butiken eller Google Play butiken. En APK-fil är också tillgänglig.</para
+></listitem>
+</itemizedlist>
+</sect1>
+
+<sect1 id="user-interface">
+<title
+>Användargränssnittet</title>
+<para
+>Gränssnittet är konstruerat för enkel användning av små barn. &gcompris; styrs med en mus. Tangentbordsnavigering är också tillgänglig i de flesta aktiviteter.</para>
+
+<sect2 id="main-window">
+<title
+>Huvudfönster</title>
+<para
+>När programmet startas, visar &gcompris; ett grafiskt gränssnitt som presenterar listan med aktiviteter och en styrrad längst ner.</para>
+<screenshot>
+<screeninfo
+>Här är en skärmbild av &gcompris; huvudfönster</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="gcompris-main-menu.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>&gcompris; huvudfönster</phrase>
+    </textobject>
+  </mediaobject>
+</screenshot>
+
+<para
+>Varje ikon representerar en aktivitet. Omkring var och en finns små ikoner som ger ytterligare information om aktiviteten. Ett enkelklick på ikonen tar dig till en aktivitet eller en meny av aktiviteter. Det finns åtta sektioner (kategorier) av aktiviteter, som är placerade längst upp till vänster (men bara för stående orientering). Exempelvis finns sektionen "Brädspel", som inkluderar brädspel som schack, luffarschack eller arrangera fyra.</para>
+<para
+>Några kategorier har delkategorier för att filtrera aktiviteterna bättre. För matematiska aktiviteter finns tre delkategorier: räkning, aritmetik och mått.</para>
+<para
+>Stjärnorna anger åldersgruppen som varje spel är konstruerat för:</para
+> 
+<itemizedlist>
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="difficulty1.svg" format="SVG"/></imageobject
+></inlinemediaobject
+>1, 2 eller 3 gula stjärnor: för två- till sexåringar.</para
+></listitem
+> 
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="difficulty4.svg" format="SVG"/></imageobject
+></inlinemediaobject
+>1,  eller 3 röda stjärnor: äldre än sexåringar.</para
+></listitem
+> 
+</itemizedlist>
+
+<para
+>Längst ner på skärmen finns en styrrad för &gcompris;. Möjliga ikoner är (ikonerna visas bara om de är tillgängliga i aktiviteten):</para>
+<itemizedlist>
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_home.svg" format="SVG"/></imageobject
+></inlinemediaobject
+> Hem - Lämnar aktuell aktivitet, återgår till föregående meny.</para
+></listitem
+> 
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_ok.svg" format="SVG"/></imageobject
+></inlinemediaobject
+> "Ok": Kontrollera, bekräfta ditt svar. Vissa aktiviteter detekterar inte automatiskt om barnet har slutfört uppgiften. I detta fall måste man klicka på den här ikonen. Det går också att använda returtangenten på tangentbordet.</para
+></listitem
+> 
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_hint.svg" format="SVG"/></imageobject
+></inlinemediaobject
+> Lampa: Visa ett tips för aktiviteten. I vissa aktiviteter kan vi kan hjälpa barn för att leda dem till det rätta svaret. </para
+></listitem>
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_previous.svg" format="SVG"/></imageobject
+></inlinemediaobject>
+<inlinemediaobject
+><imageobject
+><imagedata fileref="bar_next.svg" format="SVG"/></imageobject
+></inlinemediaobject
+> Pilar: Aktuell nivå visas. Klicka på en av pilarna för att välja en annan nivå. I allmänhet erbjuder aktiviteterna flera nivåer vars antal beror på aktiviteten. Det är möjligt att gå till nästa nivå i &gcompris; utan att ha gjort färdigt den aktuella nivån.</para
+></listitem
+> 
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_repeat.svg" format="SVG"/></imageobject
+></inlinemediaobject
+> Läppar: Be &gcompris; att upprepa frågan.</para
+></listitem
+> 
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_help.svg" format="SVG"/></imageobject
+></inlinemediaobject
+> Frågetecken: Visa hjälpdialogrutan. Ibland kan en aktivitet vara för komplicerad för att enkelt beskrivas i beskrivningsområdet. I så fall, ger den här funktionen tillgång till ytterligare information.</para
+></listitem
+> 
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_config.svg" format="SVG"/></imageobject
+></inlinemediaobject
+> Verktygslåda: Inställningsmeny. Inställningen sparas i användararkivet (katalogen) med namnet <filename
+>.config/gcompris/gcompris.conf</filename
+>. Det är en textfil som kan redigeras för hand.</para
+></listitem
+> 
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_activity_config.svg" format="SVG"/></imageobject
+></inlinemediaobject
+> Listobjekt: Visar aktivitetens inställningsmeny. Här finns två möjliga flikar. Den första, "Datamängd" gör det möjligt att välja aktiviteternas nivå baserat på olika mål, och den andra, "Alternativ", tillåter att aktivitetens inställning uppdateras om det är tillgängligt. </para
+></listitem>
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_about.svg" format="SVG"/></imageobject
+></inlinemediaobject
+> Stora "G": Informationsruta om &gcompris;, som presenterar de viktigaste bidragsgivarna och programvarans version.</para
+></listitem
+> 
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_exit.svg" format="SVG"/></imageobject
+></inlinemediaobject
+> Strömknapp: Avsluta &gcompris;. Det går också att använda genvägen på tangentbordet <keycombo action="simul"
+>&Ctrl;<keycap
+>Q</keycap
+></keycombo
+>.</para
+></listitem
+> 
+</itemizedlist>
+</sect2>
+
+<sect2 id="kiosk-mode">
+<title
+>Kioskläge</title>
+<para
+>När &gcompris; används av små barn på en självbetjäningsdator, kan ett visst antal alternativ inaktiveras:</para>
+<itemizedlist>
+<listitem
+><para
+><userinput
+><command
+>gcompris --enable-kioskmode</command
+></userinput
+>: inaktivera knapparna <guiicon
+>Avsluta</guiicon
+> och <guiicon
+>Inställning</guiicon
+>.</para
+></listitem
+> 
+<listitem
+><para
+><userinput
+><command
+>gcompris --disable-kioskmode</command
+></userinput
+>: aktivera knapparna <guiicon
+>Avsluta</guiicon
+> och <guiicon
+>Inställning</guiicon
+>.</para
+></listitem>
+<listitem
+><para
+><userinput
+><command
+>gcompris -f</command
+></userinput
+>: kör &gcompris; i fullskärmsläge</para
+></listitem
+> 
+<listitem
+><para
+><userinput
+><command
+>gcompris -C</command
+></userinput
+>: inaktivera pekaren (pekskärm)</para
+></listitem
+> 
+</itemizedlist>
+<para
+>Väljarna kan naturligtvis kombineras.</para>
+</sect2>
+
+<sect2 id="keyboard-shortcuts">
+<title
+>Snabbtangenter</title>
+<informaltable>
+<tgroup cols="2">
+<tbody>
+<row>
+<entry
+>Genväg</entry>
+<entry
+>Åtgärd</entry>
+</row>
+<row>
+<entry
+>&Esc; eller <keycombo action="simul"
+>&Ctrl;<keycap
+>W</keycap
+></keycombo
+></entry>
+<entry
+>Avsluta aktuell aktivitet eller dialogruta och återgå till huvudmenyn.</entry>
+</row>
+<row>
+<entry
+><keycombo action="simul"
+>&Ctrl;<keycap
+>Q</keycap
+></keycombo
+></entry>
+<entry
+>Avsluta &gcompris; utan ytterligare frågor.</entry>
+</row>
+<row>
+<entry
+><keycombo action="simul"
+>&Ctrl;<keycap
+>F</keycap
+></keycombo
+></entry>
+<entry
+>Växla fullskärmsläge.</entry>
+</row>
+<row>
+<entry
+><keycombo action="simul"
+>&Ctrl;<keycap
+>M</keycap
+></keycombo
+></entry>
+<entry
+>Växla mellan tyst och ljud.</entry>
+</row>
+<row>
+<entry
+><keycombo action="simul"
+>&Ctrl;<keycap
+>B</keycap
+></keycombo
+></entry>
+<entry
+>Visa eller dölja styrraden.</entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
+</sect2>
+
+</sect1>
+
+<sect1 id="internationalization">
+<title
+>Anmärkningar om landsanpassning</title>
+<para
+>&gcompris; är översatt och tillgänglig på mer än 35 språk. Om du vill kontrollera om ditt modersmål är tillgängligt, kan du starta &gcompris; och välja ditt modersmål med inställningsalternativet.</para>
+<para
+>Var försiktig, vissa språk kräver särskilda teckensnitt för att visas på ett riktigt sätt. </para
+> 
+<para
+>Om ditt modersmål inte stöds, kan du bidra till programvaran och lägga till översättning till ditt modersmål. Om du är intresserad kan du kontakta &kde; :s <ulink url="https://l10n.kde.org/teams"
+>översättningsgrupp</ulink
+> för ditt modersmål. Du kan kontrollera översättningsnivån för ditt modersmål på <ulink url="https://l10n.kde.org/"
+>&kde;:s översättningswebbplats</ulink
+>.</para>
+</sect1>
+
+<sect1 id="learning-language">
+<title
+>Språkinlärning</title>
+<para
+>Man kan använda &gcompris; på ett främmande språk som man håller på att lära sig. Välj det främmande språket i inställningsmenyn. Glöm inte att ladda ner de valfria ljudmodulerna för språket.</para>
+</sect1>
+
+<sect1 id="customizing-activities">
+<title
+>Anpassa aktiviteter</title>
+<para
+>Vissa aktiviteter kan anpassas genom att använda inställningsknappen i dem. Det går exempelvis att ställa in landsinställningar i vissa textaktiviteter (som ordspel), eller få den att visa verkliga bilder av bilar istället för ifyllda rektanglar (trafik).</para>
+
+<para
+>Du kan välja flera datamängder i inställningen för ett antal aktiviteter. Var och en har ett specifikt mål som beskrivs.</para>
+<screenshot>
+<screeninfo
+>Datamängd för aktiviteten "Räkna sakerna"</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="dataset.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Datamängd för aktiviteten "Räkna sakerna"</phrase>
+    </textobject>
+  </mediaobject>
+</screenshot>
+
+<para
+>Du kan välja alternativ för aktiviteten.</para>
+<screenshot>
+<screeninfo
+>Välj aktivitetsläge för "Räkna sakerna"</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="activity-config.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Välj aktivitetsläge för "Räkna sakerna"</phrase>
+    </textobject>
+  </mediaobject>
+</screenshot>
+</sect1>
+
+<sect1 id="console-switches">
+<title
+>Terminalväljare</title>
+<para
+>Att köra &gcompris; från en kommandoterminal med väljaren --help visar alla väljare som accepteras:</para>
+<informaltable>
+<tgroup cols="2">
+<tbody>
+<row>
+<entry
+>-f, --fullscreen</entry>
+<entry
+>Kör &gcompris; i fullskärmsläge.</entry>
+</row>
+<row>
+<entry
+>-w, --window</entry>
+<entry
+>Kör &gcompris; i fönsterläge.</entry>
+</row>
+<row>
+<entry
+>-s, --sound</entry>
+<entry
+>Kör &gcompris; med ljud aktiverat.</entry>
+</row>
+<row>
+<entry
+>-m, --mute</entry>
+<entry
+>Kör GCompris utan ljud.</entry>
+</row>
+<row>
+<entry
+>-c, --cursor</entry>
+<entry
+>Kör &gcompris; med systemets vanliga pekare.</entry>
+</row>
+<row>
+<entry
+>-C, --nocursor</entry>
+<entry
+>Kör &gcompris; utan pekare (pekskärmsläge).</entry>
+</row>
+<row>
+<entry
+>-v, --version</entry>
+<entry
+>Skriv ut &gcompris; version.</entry>
+</row>
+<row>
+<entry
+>--export-activities-as-sql</entry>
+<entry
+>Exportera aktiviteter som SQL.</entry>
+</row>
+<row>
+<entry
+>--enable-kioskmode</entry>
+<entry
+>Aktivera kioskläge (döljer knapparna Avsluta och Inställning).</entry>
+</row>
+<row>
+<entry
+>--disable-kioskmode</entry>
+<entry
+>Inaktivera kioskläget (standardvärde).</entry>
+</row>
+<row>
+<entry
+>--software-renderer</entry>
+<entry
+>Använd programvaruåtergivning istället för OpenGL (bör fungera med vilket grafikkort som helst).</entry>
+</row>
+<row>
+<entry
+>--opengl-renderer</entry>
+<entry
+>Använd återgivning med OpenGL istället för programvara (snabbare och fler grafikeffekter, men kan krascha med vissa grafikkort).</entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
+
+<sect2 id="windows-example">
+<title
+>&Windows;-exempel</title>
+<para
+>Väljarna kan läggas till i egenskaperna för skrivbordsikonen. Här är ett exempel som kör &gcompris; i självbetjäningsläge med fullskärm, utan inställningsknapp och pekare:</para>
+<para
+><userinput
+><command
+>"C:\Program Files\Gcompris\gcompris-qt.exe" --enable-kioskmode -f -C</command
+></userinput
+></para>
+</sect2>
+
+<sect2 id="gnu-linux-example">
+<title
+>&GNU;/&Linux;-exempel</title>
+<para
+>Skapa programstartare och anpassa kommandoradsväljarna. Här är ett exempel som kör &gcompris; i självbetjäningsläge med fullskärm, utan inställningsknapp och pekare:</para
+> 
+<para
+><userinput
+><command
+>gcompris-qt --enable-kioskmode -f -C</command
+></userinput
+></para>
+</sect2>
+
+</sect1>
+
+</chapter>
+<chapter id="credits">
+
+<title
+>Tack till och licens</title>
+
+<para
+>&gcompris; </para>
+<para
+>Program copyright 2000-2022 Timothée Giet med flera </para>
+
+<para
+>Översättning Stefan Asserhäll <email
+>stefan.asserhall@bredband.net</email
+></para
+> &underFDL; &underGPL; </chapter>
+
+&documentation.index;
+</book>
+
+<!--
+Local Variables:
+mode: xml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+
+vim:tabstop=2:shiftwidth=2:expandtab
+kate: space-indent on; indent-width 2; tab-width 2; indent-mode none;
+-->
