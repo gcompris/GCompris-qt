@@ -1,7 +1,8 @@
 CMakeLists.txt.user
 GCompris.pro.user
 .directory
-po/ # We don't need it because po files are under poqm
+# We don't need it because po files are under poqm
+po
 *.aac
 *.qrc
 *.qmlc
