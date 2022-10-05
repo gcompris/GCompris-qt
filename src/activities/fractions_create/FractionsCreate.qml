@@ -16,10 +16,13 @@ ActivityBase {
     onStop: {}
 
     property string mode: "selectPie" // or "findFraction" in fractions_find activity
-    pageComponent: Rectangle {
+    pageComponent: Image {
         id: background
-        color: "#373737"
         anchors.fill: parent
+        source: "qrc:/gcompris/src/activities/magic-hat-minus/resource/background.svg"
+        sourceSize.width: width
+        sourceSize.height: height
+        fillMode: Image.PreserveAspectCrop
         signal start
         signal stop
 
