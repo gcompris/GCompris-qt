@@ -7,9 +7,9 @@ import QtQuick 2.12
 
 Flow {
     id: gridContainer
-
-    readonly property string selectedColor: "#ff0000"
-    readonly property string unselectedColor: "#00ffff"
+    // color needs to be in hex format with lowercase for comparison checks to work
+    readonly property string selectedColor: "#80ffffff"
+    readonly property string unselectedColor: "#00000000"
     flow: items.horizontalLayout ? Flow.LeftToRight : Flow.TopToBottom
     spacing: 10
     Repeater {

@@ -18,11 +18,12 @@ GridView {
     interactive: false
 
     delegate: Rectangle {
-        border.width: 1
-        border.color: "black"
+        border.width: 5
+        border.color: "white"
         color: selected ? gridContainer.selectedColor : gridContainer.unselectedColor
-        width: chart.cellWidth;
-        height: chart.cellHeight;
+        // add border.width as an offset to avoid double-sized separation lines
+        width: chart.cellWidth + border.width
+        height: chart.cellHeight
 
         MouseArea {
             anchors.fill: parent

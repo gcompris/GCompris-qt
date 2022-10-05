@@ -41,8 +41,6 @@ Item {
                 text: "" + value
                 font.weight: Font.DemiBold
                 anchors.centerIn: parent
-                style: Text.Outline
-                styleColor: "black"
                 color: "white"
             }
         }

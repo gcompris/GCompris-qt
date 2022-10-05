@@ -131,11 +131,10 @@ ActivityBase {
                 id: fractionBar
                 width: numeratorText.childrenRect.width
                 height: 5
-                border.width: 5
                 anchors.horizontalCenter: denominatorText.horizontalCenter
                 anchors.top: numeratorText.bottom
                 anchors.topMargin: 10
-                color: "black"
+                color: "white"
             }
             FractionNumber {
                 id: denominatorText

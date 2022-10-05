@@ -8,7 +8,7 @@ import QtCharts 2.0
 
 ChartView {
     id: chart
-    backgroundColor: "#80FFFFFF"
+    backgroundColor: "#00000000"
     legend.visible: false
     antialiasing: true
     property alias pieSeries: pieSeries
@@ -19,7 +19,7 @@ ChartView {
         PieSlice {
             value: 1
             color: gridContainer.unselectedColor
-            borderColor: "#373737"
+            borderColor: "white"
             borderWidth: 5
         }
 
@@ -39,7 +39,7 @@ ChartView {
 
         function setSliceStyle(sliceNumber, selected) {
             var slice = pieSeries.at(sliceNumber);
-            slice.borderColor = "#373737";
+            slice.borderColor = "white";
             slice.borderWidth = 5;
             slice.color = selected ? gridContainer.selectedColor : gridContainer.unselectedColor;
         }
