@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris-by\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2021-12-03 10:04+0300\n"
-"Last-Translator: Antoś Vaclaŭski <vaclau@zkodam.info>\n"
+"PO-Revision-Date: 2022-10-04 09:00+0300\n"
+"Last-Translator: Aleś Bułojčyk <alex73mail@gmail.com>\n"
 "Language-Team: Belarusian\n"
 "Language: be\n"
 "MIME-Version: 1.0\n"
@@ -117,7 +117,7 @@ msgstr "Выберыце мятліка слушнага колеру."
 #: activities/advanced_colors/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Learn to recognize unusual colors."
-msgstr "Навучыцеся адрозніваць адметныя колеры."
+msgstr "Навучыцца адрозніваць адметныя колеры."
 
 #. Help prerequisite
 #: activities/advanced_colors/ActivityInfo.qml:22
@@ -827,7 +827,7 @@ msgstr "Практыка аперацыі множання."
 #: activities/algebra_by/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Learn to multiply numbers within a limited period of time."
-msgstr "Навучыцца знаходзіць здабытак лікаў за абмежаваны прамежак часу."
+msgstr "Навучыцца памнажаць лічбы за абмежаваны прамежак часу."
 
 #. Help prerequisite
 #: activities/algebra_by/ActivityInfo.qml:22
@@ -1312,7 +1312,7 @@ msgstr ""
 #: activities/alphabet-sequence/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Alphabet sequence"
-msgstr "Абэцэда"
+msgstr "Алфавіт"
 
 #. Help title
 #: activities/alphabet-sequence/ActivityInfo.qml:17
@@ -2095,7 +2095,7 @@ msgstr "Простае практыкаванне для даследаванн�
 #: activities/baby_keyboard/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Discover the keyboard."
-msgstr "Вывучайце клавіятуру."
+msgstr "Вывучыць клавіятуру."
 
 #. Help manual
 #: activities/baby_keyboard/ActivityInfo.qml:24
@@ -2124,7 +2124,7 @@ msgstr ""
 #| msgid "Baby Puzzle"
 msgctxt "ActivityInfo|"
 msgid "Baby mouse"
-msgstr "Дзіцячая галаваломка"
+msgstr "Дзіцячая мыш"
 
 #. Help title
 #: activities/baby_mouse/ActivityInfo.qml:16
@@ -2133,7 +2133,7 @@ msgstr "Дзіцячая галаваломка"
 #| msgid "Move the mouse or touch the screen"
 msgctxt "ActivityInfo|"
 msgid "Move the mouse or touch the screen and observe the result."
-msgstr "Коўзанне па экране"
+msgstr "Рухайце мышшу ці націскайце экран і глядзіце вынік."
 
 #. Help goal
 #: activities/baby_mouse/ActivityInfo.qml:19
@@ -3171,7 +3171,7 @@ msgstr "Прачытайце інструкцыі і выберыце слушн
 #: activities/calendar/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Learn how to use a calendar."
-msgstr "Навучыцеся карыстацца календаром."
+msgstr "Навучыцца карыстацца календаром."
 
 #. Help prerequisite
 #: activities/calendar/ActivityInfo.qml:22
@@ -3471,7 +3471,7 @@ msgstr ""
 #: activities/canal_lock/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Understand how a canal lock works."
-msgstr "Зразумейце як працуе суднаходны шлюз."
+msgstr "Зразумець як працуе суднаходны шлюз."
 
 #. Help manual
 #: activities/canal_lock/ActivityInfo.qml:24
@@ -4092,7 +4092,7 @@ msgstr "Размясціце ГАРОДНІНУ справа, а астатні�
 #| msgid "Play chess against Tux"
 msgctxt "ActivityInfo|"
 msgid "Play checkers (against Tux)"
-msgstr "Шахматы з Туксам"
+msgstr "Шашкі (з Туксам)"
 
 #. Help title
 #: activities/checkers/ActivityInfo.qml:17
@@ -4210,7 +4210,7 @@ msgstr "Чорныя перамаглі"
 #| msgid "Play checkers with your friend"
 msgctxt "ActivityInfo|"
 msgid "Play checkers (with a friend)"
-msgstr "Гуляйце ў шашкі з сябрам"
+msgstr "Шашкі (з сябрам)"
 
 #. Help manual
 #: activities/checkers_2players/ActivityInfo.qml:24
@@ -4259,7 +4259,7 @@ msgstr ""
 #| msgid "Play chess against Tux"
 msgctxt "ActivityInfo|"
 msgid "Play chess (against Tux)"
-msgstr "Шахматы з Туксам"
+msgstr "Шахматы (з Туксам)"
 
 #. Help manual Much of this string is shared across the three activities "chess", "chess_partyend", and "chess_2players".
 #: activities/chess/ActivityInfo.qml:25
@@ -4392,7 +4392,7 @@ msgstr "Не"
 #| msgid "Bargame (with a friend)"
 msgctxt "ActivityInfo|"
 msgid "Play chess (with a friend)"
-msgstr "Гульня з палоскай (з сябрам)"
+msgstr "Шахматы (з сябрам)"
 
 #. Help manual Much of this string is shared across the three activities "chess", "chess_partyend", and "chess_2players".
 #: activities/chess_2players/ActivityInfo.qml:25
@@ -4915,7 +4915,7 @@ msgstr "Аўтаматычна"
 #: activities/number_sequence/ActivityConfig.qml:22
 msgctxt "ActivityConfig|"
 msgid "Manual"
-msgstr "Правадніцтва"
+msgstr "Уручную"
 
 #: activities/clickanddraw/ActivityConfig.qml:31
 #: activities/drawletters/ActivityConfig.qml:31
@@ -5400,7 +5400,7 @@ msgstr "Працягнуць"
 #: activities/crane/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Build the same model"
-msgstr "Пабудуйце такую жа мадэль"
+msgstr "Пабудуйце такую самую мадэль"
 
 #. Help title
 #: activities/crane/ActivityInfo.qml:22
@@ -6431,7 +6431,7 @@ msgstr "Намалюйце літары, злучаючы кропкі ў слу
 #: activities/drawnumbers/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Draw numbers"
-msgstr "Намалюйце лічбы"
+msgstr "Маляванне лічбаў"
 
 #. Help title
 #: activities/drawnumbers/ActivityInfo.qml:17
@@ -6465,7 +6465,7 @@ msgstr "Праверыць адказы"
 #: activities/enumerate/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Count the items"
-msgstr "Колькасць рэчаў"
+msgstr "Падлік рэчаў"
 
 #. Help title
 #: activities/enumerate/ActivityInfo.qml:17
@@ -6648,7 +6648,7 @@ msgstr "Рухайце мышкай, альбо датыкайцеся паль�
 #: activities/erase_2clic/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Double tap or double click"
-msgstr "Двайное крананне ці пстрычок"
+msgstr "Двайны дотык ці пстрык"
 
 #. Help title
 #: activities/erase_2clic/ActivityInfo.qml:17
@@ -6689,7 +6689,7 @@ msgstr "Рабіце пстрыкі ці дотыкі па кубіках, па�
 #: activities/explore_farm_animals/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Explore farm animals"
-msgstr "Пазнаёмцеся з жывёламі на ферме"
+msgstr "Хатнія жывёлы"
 
 #. Help title
 #: activities/explore_farm_animals/ActivityInfo.qml:17
@@ -6969,13 +6969,13 @@ msgstr "Пстрыкніце па жывёле, што пасуе да апіс�
 #: activities/explore_monuments/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Explore monuments"
-msgstr "Даведайцеся пра манументы"
+msgstr "Даведайцеся пра помнікі"
 
 #. Help title
 #: activities/explore_monuments/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Explore monuments around the world."
-msgstr "Даведайцеся пра манументы з усяго свету."
+msgstr "Даведайцеся пра помнікі з усяго свету."
 
 #. Help goal
 #: activities/explore_monuments/ActivityInfo.qml:20
@@ -8117,7 +8117,7 @@ msgstr "Выберыце мясцовасць, дзе размяшчаецца �
 #: activities/explore_world_animals/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Explore world animals"
-msgstr "Даведайцеся пра жывёльны свет"
+msgstr "Дзікія жывёлы"
 
 #. Help title
 #: activities/explore_world_animals/ActivityInfo.qml:21
@@ -8434,7 +8434,7 @@ msgstr "Выберыце мясцовасць, дзе жыве дадзеная 
 #: activities/explore_world_music/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Explore world music"
-msgstr "Даведайцеся пра сусветную музыку"
+msgstr "Сусветная музыка"
 
 #. Help title
 #: activities/explore_world_music/ActivityInfo.qml:17
@@ -8731,7 +8731,7 @@ msgstr "Бацька"
 #: activities/family/FamilyDataset.qml:337
 msgctxt "FamilyDataset|"
 msgid "Grandfather"
-msgstr "Дзед"
+msgstr "Дзядуля"
 
 #: activities/family/FamilyDataset.qml:126
 #: activities/family/FamilyDataset.qml:388
@@ -8836,7 +8836,7 @@ msgstr "Пляменніца"
 #: activities/family/FamilyDataset.qml:578
 msgctxt "FamilyDataset|"
 msgid "Father-in-law"
-msgstr "Дзядзька"
+msgstr "Свёкар ці цесць"
 
 #: activities/family/FamilyDataset.qml:495
 #: activities/family/FamilyDataset.qml:521
@@ -8846,7 +8846,7 @@ msgstr "Дзядзька"
 #: activities/family/FamilyDataset.qml:605
 msgctxt "FamilyDataset|"
 msgid "Mother-in-law"
-msgstr "Цётка"
+msgstr "Свякруха ці цешча"
 
 #: activities/family/FamilyDataset.qml:495
 #: activities/family/FamilyDataset.qml:522
@@ -8856,7 +8856,7 @@ msgstr "Цётка"
 #: activities/family/FamilyDataset.qml:605
 msgctxt "FamilyDataset|"
 msgid "Sister-in-law"
-msgstr "Стрыечная сястра"
+msgstr "Залоўка"
 
 #: activities/family/FamilyDataset.qml:495
 #: activities/family/FamilyDataset.qml:522
@@ -8866,7 +8866,7 @@ msgstr "Стрыечная сястра"
 #: activities/family/FamilyDataset.qml:605
 msgctxt "FamilyDataset|"
 msgid "Brother-in-law"
-msgstr "Стрыечны брат"
+msgstr "Швагер"
 
 #: activities/family/FamilyDataset.qml:495
 #: activities/family/FamilyDataset.qml:522
@@ -8887,7 +8887,7 @@ msgstr "Зяць"
 #: activities/family_find_relative/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Point the relatives"
-msgstr "Пакажыце родзічаў"
+msgstr "Пакажыце сваякоў"
 
 #. Help title
 #: activities/family_find_relative/ActivityInfo.qml:17
@@ -9182,7 +9182,7 @@ msgstr ""
 #| msgid "Practice subtractions."
 msgctxt "ActivityInfo|"
 msgid "Create the fractions"
-msgstr "Практыка адымання."
+msgstr "Стварыць дробы"
 
 #. Help title
 #: activities/fractions_create/ActivityInfo.qml:16
@@ -9590,7 +9590,7 @@ msgstr ""
 #| msgid "Find the accordion"
 msgctxt "ActivityInfo|"
 msgid "Find the fraction"
-msgstr "Знайдзіце акардэон"
+msgstr "Знайсці дроб"
 
 #. Help title
 #: activities/fractions_find/ActivityInfo.qml:16
@@ -14331,7 +14331,7 @@ msgstr "Не выбрана"
 #: activities/guesscount/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Guesscount"
-msgstr "Адгадайлік"
+msgstr "Адгадай лік"
 
 #. Help title
 #: activities/guesscount/ActivityInfo.qml:21
@@ -15622,7 +15622,7 @@ msgstr "Складанне з лікамі 1, 2, 3 і 4."
 #| msgid "Learn division of numbers."
 msgctxt "ActivityInfo|"
 msgid "Learn decimal numbers"
-msgstr "Вывучайце дзяленне лікаў."
+msgstr "Вывучыць дзесятковыя лічбы"
 
 #. Help title
 #: activities/learn_decimals/ActivityInfo.qml:16
@@ -16038,7 +16038,7 @@ msgstr "Лічбы ад 0 да 9."
 #| msgid "Learn additions"
 msgctxt "ActivityInfo|"
 msgid "Learn quantities"
-msgstr "Навучыцца складаць"
+msgstr "Вывучаць колькасць"
 
 #. Help title
 #: activities/learn_quantities/ActivityInfo.qml:16
@@ -16190,7 +16190,7 @@ msgstr ""
 #: activities/leftright/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Find your left and right hands"
-msgstr "Пакажыце вашую левую і правую руку"
+msgstr "Левая ці правая рука ?"
 
 #. Help title
 #: activities/leftright/ActivityInfo.qml:17
@@ -17056,9 +17056,12 @@ msgstr ""
 
 #. Activity title
 #: activities/memory-case-association/ActivityInfo.qml:15
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Case association memory game against Tux"
 msgctxt "ActivityInfo|"
 msgid "Case association memory game"
-msgstr "Гульня на памяць з вывучэннем сувязі рэгістру літар"
+msgstr "Гульня з Туксам на памяць з вывучэннем сувязі рэгістру літар"
 
 #. Help title
 #: activities/memory-case-association/ActivityInfo.qml:17
@@ -21065,7 +21068,7 @@ msgstr "Працягнуць"
 #| msgid "Additions."
 msgctxt "ActivityInfo|"
 msgid "Positions"
-msgstr "Складанне."
+msgstr "Пазіцыі"
 
 #. Help title
 #: activities/positions/ActivityInfo.qml:17
@@ -21074,7 +21077,7 @@ msgstr "Складанне."
 #| msgid "Find the missing letter to complete the word."
 msgctxt "ActivityInfo|"
 msgid "Find the boy's position in relation to the box."
-msgstr "Знайдзіце адсутную літару для запаўнення слова."
+msgstr "Знайдзі дзе знаходзіцца хлопчык адносна скрыні."
 
 #. Help goal
 #: activities/positions/ActivityInfo.qml:20
@@ -21111,7 +21114,7 @@ msgstr "Базавы пералік."
 #: activities/positions/resource/1/Data.qml:20
 msgctxt "Data|"
 msgid "beside"
-msgstr ""
+msgstr "побач"
 
 #: activities/positions/resource/1/Data.qml:21
 msgctxt "Data|"
@@ -21123,7 +21126,7 @@ msgstr ""
 #: activities/positions/resource/2/Data.qml:32
 msgctxt "Data|"
 msgid "behind"
-msgstr ""
+msgstr "ззаду"
 
 #: activities/positions/resource/1/Data.qml:27
 #: activities/positions/resource/2/Data.qml:33
@@ -21136,7 +21139,7 @@ msgstr ""
 #: activities/positions/resource/2/Data.qml:38
 msgctxt "Data|"
 msgid "in front of"
-msgstr ""
+msgstr "спераду"
 
 #: activities/positions/resource/1/Data.qml:33
 #: activities/positions/resource/2/Data.qml:39
@@ -21149,7 +21152,7 @@ msgstr ""
 #: activities/positions/resource/2/Data.qml:44
 msgctxt "Data|"
 msgid "inside"
-msgstr ""
+msgstr "усярэдзіне"
 
 #: activities/positions/resource/1/Data.qml:39
 #: activities/positions/resource/2/Data.qml:45
@@ -21162,7 +21165,7 @@ msgstr ""
 #: activities/positions/resource/2/Data.qml:50
 msgctxt "Data|"
 msgid "above"
-msgstr ""
+msgstr "зверху"
 
 #: activities/positions/resource/1/Data.qml:45
 #: activities/positions/resource/2/Data.qml:51
@@ -21175,7 +21178,7 @@ msgstr ""
 #: activities/positions/resource/2/Data.qml:56
 msgctxt "Data|"
 msgid "under"
-msgstr ""
+msgstr "пад"
 
 #: activities/positions/resource/1/Data.qml:51
 #: activities/positions/resource/2/Data.qml:57
@@ -21198,7 +21201,7 @@ msgstr "Складанне 1 і 2."
 #| msgid "eight"
 msgctxt "Data|"
 msgid "right"
-msgstr "восем"
+msgstr "справа"
 
 #: activities/positions/resource/2/Data.qml:21
 msgctxt "Data|"
@@ -21209,7 +21212,7 @@ msgstr ""
 #: activities/positions/resource/2/Data.qml:26
 msgctxt "Data|"
 msgid "left"
-msgstr ""
+msgstr "злева"
 
 #: activities/positions/resource/2/Data.qml:27
 msgctxt "Data|"
@@ -26069,7 +26072,7 @@ msgstr "Мэта:"
 #: core/DialogHelp.qml:63
 msgctxt "DialogHelp|"
 msgid "Manual:"
-msgstr "Правадніцтва:"
+msgstr "Апісанне:"
 
 #: core/DialogHelp.qml:67
 msgctxt "DialogHelp|"
@@ -26433,6 +26436,10 @@ msgstr "Прапусціць"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Пачаць"
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Case assoрэгістраciation memory game"
+#~ msgstr "Гульня напамяць з вывучэннем сувязі рэгістра літар"
 
 #~ msgctxt "ActivityInfo|"
 #~ msgid ""
