@@ -209,45 +209,49 @@ endforeach()
 # Remove all duplicated shortened locales
 list(REMOVE_DUPLICATES gcomprisLocales)
 
-# Get all po files in poqm/
-file(GLOB TRANSLATIONS_FILES RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} "poqm/*/gcompris_qt.po")
-foreach(PoSource ${TRANSLATIONS_FILES})
-  # Get the locale
-  string(REGEX MATCH "poqm/([a-zA-Z@_\-]*)/gcompris_qt.po" _ ${PoSource})
-  set(locale ${CMAKE_MATCH_1})
+#skipping translations can be useful during dev builds
+option(SKIP_TRANSLATIONS "Skip building translation files" OFF)
+if(NOT SKIP_TRANSLATIONS)
+  # Get all po files in poqm/
+  file(GLOB TRANSLATIONS_FILES RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} "poqm/*/gcompris_qt.po")
+  foreach(PoSource ${TRANSLATIONS_FILES})
+    # Get the locale
+    string(REGEX MATCH "poqm/([a-zA-Z@_\-]*)/gcompris_qt.po" _ ${PoSource})
+    set(locale ${CMAKE_MATCH_1})
 
-  # search in src/core/LanguageList the line corresponding to the locale. If exists, then add the custom_command
-  if(NOT ${locale} IN_LIST gcomprisLocales)
-    message(STATUS "Locale ${locale} not supported by GCompris")
-    continue()
-  endif()
-  message(STATUS "Locale ${locale} is supported by GCompris")
+    # search in src/core/LanguageList the line corresponding to the locale. If exists, then add the custom_command
+    if(NOT ${locale} IN_LIST gcomprisLocales)
+      message(STATUS "Locale ${locale} not supported by GCompris")
+      continue()
+    endif()
+    message(STATUS "Locale ${locale} is supported by GCompris")
 
-  # Changes the .po extension to .ts
-  string(REPLACE ".po" ".ts" TsSource ${PoSource})
-  # Replace qt in gcompris_qt.po with the locale
-  string(REPLACE "qt" "${locale}" TsSource ${TsSource})
-  # Removes the poqm/${locale} folder prefix
-  string(REPLACE "poqm/${locale}/" "" TsSource ${TsSource})
-  # qm extension filename
-  string(REPLACE ".ts" ".qm" QmOutput ${TsSource})
+    # Changes the .po extension to .ts
+    string(REPLACE ".po" ".ts" TsSource ${PoSource})
+    # Replace qt in gcompris_qt.po with the locale
+    string(REPLACE "qt" "${locale}" TsSource ${TsSource})
+    # Removes the poqm/${locale} folder prefix
+    string(REPLACE "poqm/${locale}/" "" TsSource ${TsSource})
+    # qm extension filename
+    string(REPLACE ".ts" ".qm" QmOutput ${TsSource})
 
-  set(OutTsFile ${CMAKE_BINARY_DIR}/tmp/${TsSource})
+    set(OutTsFile ${CMAKE_BINARY_DIR}/tmp/${TsSource})
 
-  add_custom_command(
-    OUTPUT ${QmOutput}
-    COMMAND cmake -E make_directory ${GCOMPRIS_TRANSLATIONS_DIR}
-    COMMAND cmake -E make_directory ${CMAKE_BINARY_DIR}/tmp
-    # Remove the obsolete translations and set po in the ts output file
-    COMMAND msgattrib --no-obsolete  ${CMAKE_CURRENT_SOURCE_DIR}/${PoSource} -o ${OutTsFile}
-    # Convert the po into ts
-    COMMAND Qt5::lconvert -if po -of ts -i ${OutTsFile} -o ${OutTsFile}
-    # Convert the ts in qm removing non finished translations
-    COMMAND Qt5::lrelease -compress -nounfinished ${OutTsFile} -qm ${GCOMPRIS_TRANSLATIONS_DIR}/${QmOutput}
-    )
-  list(APPEND QM_FILES ${QmOutput})
-endforeach()
-
+    add_custom_command(
+      OUTPUT ${QmOutput}
+      COMMAND cmake -E make_directory ${GCOMPRIS_TRANSLATIONS_DIR}
+      COMMAND cmake -E make_directory ${CMAKE_BINARY_DIR}/tmp
+      # Remove the obsolete translations and set po in the ts output file
+      COMMAND msgattrib --no-obsolete  ${CMAKE_CURRENT_SOURCE_DIR}/${PoSource} -o ${OutTsFile}
+      # Convert the po into ts
+      COMMAND Qt5::lconvert -if po -of ts -i ${OutTsFile} -o ${OutTsFile}
+      # Convert the ts in qm removing non finished translations
+      COMMAND Qt5::lrelease -compress -nounfinished ${OutTsFile} -qm ${GCOMPRIS_TRANSLATIONS_DIR}/${QmOutput}
+      )
+    list(APPEND QM_FILES ${QmOutput})
+  endforeach()
+endif()
+  
 # Install translations
 if(WIN32)
     add_custom_target(BuildTranslations
