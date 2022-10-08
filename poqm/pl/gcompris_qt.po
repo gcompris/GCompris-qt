@@ -1,10 +1,11 @@
 # Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022.
 # Marcin Stanclik <mstanclik@yahoo.com>, 2021.
+# Grzegorz Koryga <rehork@tutamail.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2022-06-27 20:18+0200\n"
-"Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
+"PO-Revision-Date: 2022-10-08 11:13+0200\n"
+"Last-Translator: Grzegorz Koryga <rehork@tutamail.com>\n"
 "Language-Team: Polish <kde-i18n-doc@kde.org>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
@@ -14,7 +15,7 @@ msgstr ""
 "|| n%100>=20) ? 1 : 2);\n"
 "X-Language: pl\n"
 "X-Qt-Contexts: true\n"
-"X-Generator: Lokalize 22.03.70\n"
+"X-Generator: Lokalize 22.04.1\n"
 
 #. Activity title
 #: activities/advanced_colors/ActivityInfo.qml:15
@@ -1165,19 +1166,14 @@ msgstr ""
 
 #. Help manual
 #: activities/align4/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Play with a friend. Take turns to click the line in which you want to "
-#| "drop a token. The first player to create a line of 4 tokens wins."
 msgctxt "ActivityInfo|"
 msgid ""
 "Play with Tux. Take turns to click the line in which you want to drop a "
 "token. The first player to create a line of 4 tokens wins."
 msgstr ""
-"Zagraj z koleżanką/kolegą. Na zmianę będziecie naciskać linię w miejscu, w "
-"którym będziecie chcieli upuścić token. Pierwszy gracz, który utworzy linię "
-"4 tokenów, wygrywa."
+"Baw się z Tuksem. Na zmianę naciskacie linię, w której chcecie upuścić "
+"token.  Pierwszy gracz, który utworzy linię składającą się z 4 tokenów, "
+"wygrywa."
 
 #: activities/align4/ActivityInfo.qml:23 activities/bargame/ActivityInfo.qml:26
 #: activities/checkers/ActivityInfo.qml:27
@@ -1185,7 +1181,7 @@ msgstr ""
 #: activities/tic_tac_toe/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Tux will play better when you increase the level."
-msgstr ""
+msgstr "Tux będzie grał lepiej, gdy zwiększysz poziom."
 
 #: activities/align4/ActivityInfo.qml:25
 #: activities/align4_2players/ActivityInfo.qml:24
@@ -2626,22 +2622,16 @@ msgstr "Umiejętność liczenia."
 
 #. Help manual
 #: activities/bargame/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Click on the ball icon to select a number of balls, then click on the OK "
-#| "button to place the balls in the holes. You win if the computer has to "
-#| "place the last ball. If you want Tux to begin, just click on him."
 msgctxt "ActivityInfo|"
 msgid ""
 "Click on the ball icon to select a number of balls, then click on the OK "
 "button to place the balls in the holes. You win if Tux has to place the last "
 "ball. If you want Tux to begin, just click on him."
 msgstr ""
-"Naciśnij na ikonie piłki, aby wybrać liczbę piłek, a następnie na przycisku "
-"OK, aby umieścić piłkę w otworze. Wygrasz, jeśli komputer będzie musiał "
-"umieścić ostatnią piłkę. Jeśli chcesz, aby rozpoczął Tux, wystarczy że na "
-"nim klikniesz."
+"Naciśnij na ikonę piłki, aby wybrać liczbę piłek, a następnie na przycisk "
+"OK, aby umieścić piłkę w otworze. Wygrasz, jeśli Tux będzie musiał umieścić "
+"ostatnią piłkę. Jeśli chcesz, aby rozpoczął Tux, wystarczy że na nim "
+"klikniesz."
 
 #. Activity title
 #: activities/bargame_2players/ActivityInfo.qml:15
@@ -3939,27 +3929,6 @@ msgstr "Zbij wszystkie pionki przeciwnika zanim on zbije twoje."
 
 #. Help manual
 #: activities/checkers/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Checkers is played by two opponents, on opposite sides of the gameboard. "
-#| "One player has the dark pieces; the other has the light pieces. Players "
-#| "alternate turns. A player may not move an opponent's piece. A move "
-#| "consists of moving a piece diagonally to an adjacent unoccupied square. "
-#| "If the adjacent square contains an opponent's piece, and the square "
-#| "immediately beyond it is vacant, the piece may be captured (and removed "
-#| "from the game) by jumping over it.\n"
-#| "Only the dark squares of the checkered board are used. A piece may move "
-#| "only diagonally into an unoccupied square. Capturing is mandatory. The "
-#| "player without pieces remaining, or who cannot move due to being blocked, "
-#| "loses the game.\n"
-#| "When a man reaches the crownhead or kings row (the farthest row forward), "
-#| "it becomes a king, and is marked by placing an additional piece on top of "
-#| "the first man, and acquires additional powers including the ability to "
-#| "move backwards. If there is a piece in a diagonal that a king can "
-#| "capture, he can move any distance along the diagonal, and may capture an "
-#| "opposing man any distance away by jumping to any of the unoccupied "
-#| "squares immediately beyond it.\n"
 msgctxt "ActivityInfo|"
 msgid ""
 "Checkers is played by two opponents, on opposite sides of the gameboard. One "
@@ -3981,7 +3950,7 @@ msgid ""
 "distance away by jumping to any of the unoccupied squares immediately beyond "
 "it."
 msgstr ""
-"W warcaby gra się we dóch, po przeciwnych stronach szachownicy Jeden z "
+"W warcaby gra się w dwie osoby, po przeciwnych stronach szachownicy Jeden z "
 "graczy ma czarne pionki; a drugi białe pionki. Gracze grają na tury. Gracz "
 "nie może przesuwać pionków przeciwnika. Ruch polega na ruchu wzdłuż "
 "przekątnych na najbliższe niezajmowane pole. Jeśli najbliższe pole zawiera "
@@ -3990,11 +3959,12 @@ msgstr ""
 "Używane są tylko czarne pola szachownicy. Pionek może przemieszczać się "
 "tylko po przekątnej na niezajmowane pole. Zbijanie jest obowiązkowe. Gracz "
 "bez pionków lub z pionkami, które zostały przyblokowane przegrywa.\n"
-"Gdy gracz dojdzie do ostatniego rzędu, zostaje damką, jest oznaczony poprzez "
-"nałożenie na niego dodatkowego pionka oraz zyskuje dodatkowe możliwości "
-"takie jak możliwośc poruszania się wstecz (i zbijania wstecz). Jeśli po "
-"przekątnej znajduje się pionek, którego król może zbić, to król może przebyć "
-"dowolną drogę wzdłuż przekątnej i zająć dowolne niezajęte pole za nim.\n"
+"Gdy gracz dojdzie do ostatniego rzędu, zostaje królem, jest oznaczony "
+"poprzez nałożenie na niego dodatkowego pionka oraz zyskuje dodatkowe "
+"możliwości takie jak możliwość poruszania się wstecz (i zbijania wstecz). "
+"Jeśli po przekątnej znajduje się pionek, którego król może zbić, to król "
+"może przebyć dowolną drogę wzdłuż przekątnej i zająć dowolne niezajęte pole "
+"za nim."
 
 #: activities/checkers/ActivityInfo.qml:29
 #: activities/checkers_2players/ActivityInfo.qml:28
@@ -8972,44 +8942,31 @@ msgstr ""
 
 #. Activity title
 #: activities/fractions_create/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice subtractions."
 msgctxt "ActivityInfo|"
 msgid "Create the fractions"
-msgstr "Ćwicz odejmowanie."
+msgstr "Twórz ułamki"
 
 #. Help title
 #: activities/fractions_create/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "A shape splitted in equal parts is displayed on screen."
-msgstr ""
+msgstr "Na ekranie wyświetlany jest kształt podzielony na równe części."
 
 #: activities/fractions_create/ActivityInfo.qml:18
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Drag the appropriate numbers and the operators to the boxes to obtain the "
-#| "number to guess in the instruction."
 msgctxt "ActivityInfo|"
 msgid ""
 "Select the appropriate number of parts as described in the instructions."
-msgstr ""
-"Przeciągnij odpowiednie liczby i operatory do pól, aby otrzymać liczbę do "
-"zgadnięcia w instrukcji."
+msgstr "Zaznacz odpowiednią liczbę części zgodnie z opisem w instrukcji."
 
 #: activities/fractions_create/fractions_create.js:79
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Digits representation"
 msgctxt "fractions_create|"
 msgid "Find the represented fraction."
-msgstr "Przedstawienie cyfr"
+msgstr "Znajdź przedstawiony ułamek."
 
 #: activities/fractions_create/resource/1/Data.qml:9
 msgctxt "Data|"
 msgid "Simplified fractions with a pie."
-msgstr ""
+msgstr "Uproszczone ułamki z tortem."
 
 #: activities/fractions_create/resource/1/Data.qml:18
 #: activities/fractions_create/resource/3/Data.qml:17
@@ -9017,78 +8974,63 @@ msgstr ""
 #: activities/fractions_create/resource/3/Data.qml:29
 msgctxt "Data|"
 msgid "Select one half of the pie."
-msgstr ""
+msgstr "Zaznacz jedną połowę tortu."
 
 #: activities/fractions_create/resource/1/Data.qml:24
 #: activities/fractions_create/resource/3/Data.qml:35
 #: activities/fractions_create/resource/3/Data.qml:49
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Select the fifth Thursday of the given month"
 msgctxt "Data|"
 msgid "Select one-third of the pie."
-msgstr "Zaznacz piąty czwartek danego miesiąca"
+msgstr "Zaznacz jedną trzecią tortu."
 
 #: activities/fractions_create/resource/1/Data.qml:30
 #: activities/fractions_create/resource/3/Data.qml:41
 #: activities/fractions_create/resource/3/Data.qml:55
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Select the fourth Sunday of the given month"
 msgctxt "Data|"
 msgid "Select two-thirds of the pie."
-msgstr "Zaznacz czwartą niedzielę danego miesiąca"
+msgstr "Zaznacz dwie trzecie tortu."
 
 #: activities/fractions_create/resource/1/Data.qml:36
 #: activities/fractions_create/resource/3/Data.qml:61
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Select the butterfly of the correct color."
 msgctxt "Data|"
 msgid "Select one-quarter of the pie."
-msgstr "Wybierz motyla o właściwej barwie."
+msgstr "Zaznacz jedną czwartą tortu."
 
 #: activities/fractions_create/resource/1/Data.qml:42
 #: activities/fractions_create/resource/3/Data.qml:67
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Select the fifth Thursday of the given month"
 msgctxt "Data|"
 msgid "Select two-fifths of the pie."
-msgstr "Zaznacz piąty czwartek danego miesiąca"
+msgstr "Zaznacz dwie piąte tortu."
 
 #: activities/fractions_create/resource/1/Data.qml:50
 msgctxt "Data|"
 msgid "Select one pie and one-quarter of a pie."
-msgstr ""
+msgstr "Zaznacz jeden tort i jedną czwartą tortu."
 
 #: activities/fractions_create/resource/1/Data.qml:56
 msgctxt "Data|"
 msgid "Select one pie and two-fifths of a pie."
-msgstr ""
+msgstr "Zaznacz jeden tort i dwie piąte tortu."
 
 #: activities/fractions_create/resource/1/Data.qml:62
 msgctxt "Data|"
 msgid "Select one pie and one-third of a pie."
-msgstr ""
+msgstr "Zaznacz jeden tort i jedną trzecią tortu."
 
 #: activities/fractions_create/resource/1/Data.qml:68
 msgctxt "Data|"
 msgid "Select one pie and one half of a pie."
-msgstr ""
+msgstr "Zaznacz jeden tort i jedną połówkę tortu."
 
 #: activities/fractions_create/resource/1/Data.qml:74
 msgctxt "Data|"
 msgid "Select one pie and three-quarters of a pie."
-msgstr ""
+msgstr "Zaznacz jeden tort i trzy czwarte tortu."
 
 #: activities/fractions_create/resource/10/Data.qml:9
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Answer the questions with a correctness of 100%."
 msgctxt "Data|"
 msgid "Specific questions with a rectangle."
-msgstr "Odpowiedz na pytania i uzyskaj 100% poprawności."
+msgstr "Pytania szczegółowe z prostokątem."
 
 #: activities/fractions_create/resource/10/Data.qml:18
 #: activities/fractions_create/resource/10/Data.qml:24
@@ -9097,242 +9039,198 @@ msgid ""
 "Select as many parts as you can without taking more than half of the "
 "rectangle."
 msgstr ""
+"Zaznacz tyle części, ile możesz, nie zajmując więcej niż połowy prostokąta."
 
 #: activities/fractions_create/resource/2/Data.qml:9
 msgctxt "Data|"
 msgid "Simplified fractions with a rectangle."
-msgstr ""
+msgstr "Uproszczone ułamki z prostokątem."
 
 #: activities/fractions_create/resource/2/Data.qml:18
 #: activities/fractions_create/resource/4/Data.qml:17
 #: activities/fractions_create/resource/4/Data.qml:23
 #: activities/fractions_create/resource/4/Data.qml:29
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Select the butterfly of the correct color."
 msgctxt "Data|"
 msgid "Select one half of the rectangle."
-msgstr "Wybierz motyla o właściwej barwie."
+msgstr "Zaznacz jedną połowę prostokąta."
 
 #: activities/fractions_create/resource/2/Data.qml:24
 #: activities/fractions_create/resource/4/Data.qml:35
 #: activities/fractions_create/resource/4/Data.qml:49
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Select the butterfly of the correct color."
 msgctxt "Data|"
 msgid "Select one-third of the rectangle."
-msgstr "Wybierz motyla o właściwej barwie."
+msgstr "Zaznacz jedną trzecią prostokąta."
 
 #: activities/fractions_create/resource/2/Data.qml:30
 #: activities/fractions_create/resource/4/Data.qml:41
 #: activities/fractions_create/resource/4/Data.qml:55
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Select the butterfly of the correct color."
 msgctxt "Data|"
 msgid "Select two-thirds of the rectangle."
-msgstr "Wybierz motyla o właściwej barwie."
+msgstr "Zaznacz dwie trzecie prostokąta."
 
 #: activities/fractions_create/resource/2/Data.qml:36
 #: activities/fractions_create/resource/4/Data.qml:61
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Select the butterfly of the correct color."
 msgctxt "Data|"
 msgid "Select one-quarter of the rectangle."
-msgstr "Wybierz motyla o właściwej barwie."
+msgstr "Zaznacz jedną czwartą prostokąta."
 
 #: activities/fractions_create/resource/2/Data.qml:42
 #: activities/fractions_create/resource/4/Data.qml:67
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Select the fifth Thursday of the given month"
 msgctxt "Data|"
 msgid "Select two-fifths of the rectangle."
-msgstr "Zaznacz piąty czwartek danego miesiąca"
+msgstr "Zaznacz dwie piąte prostokąta."
 
 #: activities/fractions_create/resource/2/Data.qml:50
 msgctxt "Data|"
 msgid "Select one rectangle and one-quarter of a rectangle."
-msgstr ""
+msgstr "Zaznacz jeden prostokąt i jedną czwartą prostokąta."
 
 #: activities/fractions_create/resource/2/Data.qml:56
 msgctxt "Data|"
 msgid "Select one rectangle and two-fifths of a rectangle."
-msgstr ""
+msgstr "Zaznacz jeden prostokąt i dwie piąte prostokąta."
 
 #: activities/fractions_create/resource/2/Data.qml:62
 msgctxt "Data|"
 msgid "Select one rectangle and one-third of a rectangle."
-msgstr ""
+msgstr "Zaznacz jeden prostokąt i jedną trzecią prostokąta."
 
 #: activities/fractions_create/resource/2/Data.qml:68
 msgctxt "Data|"
 msgid "Select one rectangle and one half of a rectangle."
-msgstr ""
+msgstr "Zaznacz jeden prostokąt i jedną połowę prostokąta."
 
 #: activities/fractions_create/resource/2/Data.qml:74
 msgctxt "Data|"
 msgid "Select one rectangle and three-quarters of a rectangle."
-msgstr ""
+msgstr "Zaznacz jeden prostokąt i trzy czwarte prostokąta."
 
 #: activities/fractions_create/resource/3/Data.qml:9
 msgctxt "Data|"
 msgid "Non-simplified fractions with a pie."
-msgstr ""
+msgstr "Ułamki zwykłe nie uproszczone z tortem."
 
 #: activities/fractions_create/resource/3/Data.qml:73
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Select the fifth Thursday of the given month"
 msgctxt "Data|"
 msgid "Select three-fifths of the pie."
-msgstr "Zaznacz piąty czwartek danego miesiąca"
+msgstr "Zaznacz trzy piąte tortu."
 
 #: activities/fractions_create/resource/4/Data.qml:9
 msgctxt "Data|"
 msgid "Non-simplified fractions with a rectangle."
-msgstr ""
+msgstr "Ułamki zwykłe, nie uproszczone z prostokątem."
 
 #: activities/fractions_create/resource/4/Data.qml:73
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Select the butterfly of the correct color."
 msgctxt "Data|"
 msgid "Select three-fifths of the rectangle."
-msgstr "Wybierz motyla o właściwej barwie."
+msgstr "Zaznacz trzy piąte prostokąta."
 
 #: activities/fractions_create/resource/5/Data.qml:9
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Decimal number system."
 msgctxt "Data|"
 msgid "Decimal numbers with a pie."
-msgstr "Dziesiętny system liczbowy."
+msgstr "Liczby dziesiętne z tortem."
 
 #: activities/fractions_create/resource/5/Data.qml:18
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 0.5 pie."
-msgstr "Zaznaczono"
+msgstr "Zaznacz 0,5 tortu."
 
 #: activities/fractions_create/resource/5/Data.qml:24
 msgctxt "Data|"
 msgid "Select 0.25 pie."
-msgstr ""
+msgstr "Zaznacz 0,25 tortu."
 
 #: activities/fractions_create/resource/5/Data.qml:30
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 0.4 pie."
-msgstr "Zaznaczono"
+msgstr "Zaznacz 0,4 tortu."
 
 #: activities/fractions_create/resource/5/Data.qml:36
 msgctxt "Data|"
 msgid "Select 0.75 pie."
-msgstr ""
+msgstr "Zaznacz 0,75 tortu."
 
 #: activities/fractions_create/resource/5/Data.qml:42
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 0.8 pie."
-msgstr "Zaznaczono"
+msgstr "Zaznacz 0,8 tortu."
 
 #: activities/fractions_create/resource/5/Data.qml:50
 msgctxt "Data|"
 msgid "Select 1.25 pies."
-msgstr ""
+msgstr "Zaznacz 1,25 tortu."
 
 #: activities/fractions_create/resource/5/Data.qml:56
 msgctxt "Data|"
 msgid "Select 1.4 pies."
-msgstr ""
+msgstr "Zaznacz 1,4 tortu."
 
 #: activities/fractions_create/resource/5/Data.qml:62
 #: activities/fractions_create/resource/5/Data.qml:68
 msgctxt "Data|"
 msgid "Select 1.5 pies."
-msgstr ""
+msgstr "Zaznacz 1,5 tortu."
 
 #: activities/fractions_create/resource/5/Data.qml:74
 msgctxt "Data|"
 msgid "Select 1.75 pies."
-msgstr ""
+msgstr "Zaznacz 1,75 tortu."
 
 #: activities/fractions_create/resource/6/Data.qml:9
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Decimal number system."
 msgctxt "Data|"
 msgid "Decimal numbers with a rectangle."
-msgstr "Dziesiętny system liczbowy."
+msgstr "Liczby dziesiętne z prostokątem."
 
 #: activities/fractions_create/resource/6/Data.qml:18
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Select your locale"
 msgctxt "Data|"
 msgid "Select 0.5 rectangle."
-msgstr "Wybierz swój język"
+msgstr "Zaznacz 0,5 prostokąta."
 
 #: activities/fractions_create/resource/6/Data.qml:24
 msgctxt "Data|"
 msgid "Select 0.25 rectangle."
-msgstr ""
+msgstr "Zaznacz 0,25 prostokąta."
 
 #: activities/fractions_create/resource/6/Data.qml:30
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Select your locale"
 msgctxt "Data|"
 msgid "Select 0.4 rectangle."
-msgstr "Wybierz swój język"
+msgstr "Zaznacz 0,4 prostokąta."
 
 #: activities/fractions_create/resource/6/Data.qml:36
 msgctxt "Data|"
 msgid "Select 0.75 rectangle."
-msgstr ""
+msgstr "Zaznacz 0,75 prostokąta."
 
 #: activities/fractions_create/resource/6/Data.qml:42
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Select your locale"
 msgctxt "Data|"
 msgid "Select 0.8 rectangle."
-msgstr "Wybierz swój język"
+msgstr "Zaznacz 0,8 prostokąta."
 
 #: activities/fractions_create/resource/6/Data.qml:50
 msgctxt "Data|"
 msgid "Select 1.25 rectangles."
-msgstr ""
+msgstr "Zaznacz 1,25 prostokąta."
 
 #: activities/fractions_create/resource/6/Data.qml:56
 msgctxt "Data|"
 msgid "Select 1.4 rectangles."
-msgstr ""
+msgstr "Zaznacz 1,4 prostokąta."
 
 #: activities/fractions_create/resource/6/Data.qml:62
 #: activities/fractions_create/resource/6/Data.qml:68
 msgctxt "Data|"
 msgid "Select 1.5 rectangles."
-msgstr ""
+msgstr "Zaznacz 1,5 prostokąta."
 
 #: activities/fractions_create/resource/6/Data.qml:74
 msgctxt "Data|"
 msgid "Select 1.75 rectangles."
-msgstr ""
+msgstr "Zaznacz 1,75 prostokąta."
 
 #: activities/fractions_create/resource/7/Data.qml:9
 msgctxt "Data|"
 msgid "Percentages with a pie."
-msgstr ""
+msgstr "Procenty z tortem."
 
 #. Select %1 percent of the pie.
 #: activities/fractions_create/resource/7/Data.qml:19
@@ -9343,17 +9241,15 @@ msgstr ""
 #: activities/fractions_create/resource/7/Data.qml:56
 #: activities/fractions_create/resource/7/Data.qml:63
 #: activities/fractions_create/resource/7/Data.qml:70
-#, fuzzy, qt-format
-#| msgctxt "calendar_dataset|"
-#| msgid "Select the 1st"
+#, qt-format
 msgctxt "Data|"
 msgid "Select %1% of the pie."
-msgstr "Wybierz 1. dzień"
+msgstr "Zaznacz %1% tortu."
 
 #: activities/fractions_create/resource/8/Data.qml:9
 msgctxt "Data|"
 msgid "Percentages with a rectangle."
-msgstr ""
+msgstr "Procenty z prostokątem."
 
 #. Select %1 percent of the rectangle.
 #: activities/fractions_create/resource/8/Data.qml:19
@@ -9365,76 +9261,61 @@ msgstr ""
 #, qt-format
 msgctxt "Data|"
 msgid "Select %1% of the rectangle."
-msgstr ""
+msgstr "Zaznacz %1% prostokąta."
 
 #: activities/fractions_create/resource/9/Data.qml:9
 msgctxt "Data|"
 msgid "Specific questions with a pie."
-msgstr ""
+msgstr "Konkretne pytania z tortem."
 
 #: activities/fractions_create/resource/9/Data.qml:18
 #: activities/fractions_create/resource/9/Data.qml:24
 msgctxt "Data|"
 msgid ""
 "Select as many parts as you can without taking more than half of the pie."
-msgstr ""
+msgstr "Wybierz tyle części, ile możesz, nie biorąc więcej niż połowy tortu."
 
 #. Activity title
 #: activities/fractions_find/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "instruments|"
-#| msgid "Find the accordion"
 msgctxt "ActivityInfo|"
 msgid "Find the fraction"
-msgstr "Znajdź akordeon"
+msgstr "Znajdź ułamek"
 
 #. Help title
 #: activities/fractions_find/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Find the correct date and select it on the calendar."
 msgctxt "ActivityInfo|"
 msgid "Find the correct numerator and denominator of the represented fraction."
-msgstr "Znajdź poprawną datę i wskaż ją w kalendarzu."
+msgstr "Znajdź prawidłowy licznik i mianownik przedstawionego ułamka."
 
 #: activities/fractions_find/resource/1/Data.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Nine men's morris (with a friend)"
 msgctxt "Data|"
 msgid "Find denominator (with a pie)."
-msgstr "Młynek (z kolegą/koleżanką)"
+msgstr "Znajdź mianownik (na przykładzie tortu)."
 
 #: activities/fractions_find/resource/2/Data.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Nine men's morris (with a friend)"
 msgctxt "Data|"
 msgid "Find denominator (with a rectangle)."
-msgstr "Młynek (z kolegą/koleżanką)"
+msgstr "Znajdź mianownik (na przykładzie prostokąta)."
 
 #: activities/fractions_find/resource/3/Data.qml:9
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Align four (with a friend)"
 msgctxt "Data|"
 msgid "Find numerator (with a pie)."
-msgstr "Ułóż czwórki (dla dwóch graczy)"
+msgstr "Znajdź licznik (na przykładzie tortu)."
 
 #: activities/fractions_find/resource/4/Data.qml:9
 msgctxt "Data|"
 msgid "Find numerator (with a rectangle)."
-msgstr ""
+msgstr "Znajdź licznik (na przykładzie prostokąta)."
 
 #: activities/fractions_find/resource/5/Data.qml:9
 msgctxt "Data|"
 msgid "Find numerator and denominator (with a pie)."
-msgstr ""
+msgstr "Znajdź licznik i mianownik (na przykładzie tortu)."
 
 #: activities/fractions_find/resource/6/Data.qml:9
 msgctxt "Data|"
 msgid "Find numerator and denominator (with a rectangle)."
-msgstr ""
+msgstr "Znajdź licznik i mianownik (na przykładzie prostokąta)."
 
 #. Activity title
 #: activities/geo-country/ActivityInfo.qml:19
@@ -10672,148 +10553,121 @@ msgstr "Suvalkija"
 #: activities/geo-country/resource/board/board18_0.qml:13
 msgctxt "board18_0|"
 msgid "Autonomous communities of Spain"
-msgstr ""
+msgstr "Wspólnoty autonomiczne Hiszpanii"
 
 #. Autonomous communities of Spain: Andalusia
 #: activities/geo-country/resource/board/board18_0.qml:22
 msgctxt "board18_0|"
 msgid "Andalusia"
-msgstr ""
+msgstr "Andaluzja"
 
 #. Autonomous communities of Spain: Madrid
 #: activities/geo-country/resource/board/board18_0.qml:29
 msgctxt "board18_0|"
 msgid "Madrid"
-msgstr ""
+msgstr "Madryt"
 
 #. Autonomous communities of Spain: Galicia
 #: activities/geo-country/resource/board/board18_0.qml:36
-#, fuzzy
-#| msgctxt "DialogConfig|"
-#| msgid "Galician"
 msgctxt "board18_0|"
 msgid "Galicia"
-msgstr "Galicyjski"
+msgstr "Galicja"
 
 #. Autonomous communities of Spain: Castile and León
 #: activities/geo-country/resource/board/board18_0.qml:43
 msgctxt "board18_0|"
 msgid "Castile and León"
-msgstr ""
+msgstr "Kastylia i León"
 
 #. Autonomous communities of Spain: Castilla-La Mancha
 #: activities/geo-country/resource/board/board18_0.qml:50
 msgctxt "board18_0|"
 msgid "Castilla-La Mancha"
-msgstr ""
+msgstr "Kastylia-La Mancha"
 
 #. Autonomous communities of Spain: Catalonia
 #: activities/geo-country/resource/board/board18_0.qml:57
-#, fuzzy
-#| msgctxt "board11_3|"
-#| msgid "Catania"
 msgctxt "board18_0|"
 msgid "Catalonia"
-msgstr "Katania"
+msgstr "Katalonia"
 
 #. Autonomous communities of Spain: Aragon
 #: activities/geo-country/resource/board/board18_0.qml:64
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Hexagon"
 msgctxt "board18_0|"
 msgid "Aragon"
-msgstr "Sześciokąt"
+msgstr "Aragonia"
 
 #. Autonomous communities of Spain: Valencia
 #: activities/geo-country/resource/board/board18_0.qml:71
-#, fuzzy
-#| msgctxt "board11_3|"
-#| msgid "Vibo Valentia"
 msgctxt "board18_0|"
 msgid "Valencia"
-msgstr "Vibo Valentia"
+msgstr "Walencja"
 
 #. Autonomous communities of Spain: Murcia
 #: activities/geo-country/resource/board/board18_0.qml:78
 msgctxt "board18_0|"
 msgid "Murcia"
-msgstr ""
+msgstr "Murcia"
 
 #. Autonomous communities of Spain: Asturias
 #: activities/geo-country/resource/board/board18_0.qml:85
 msgctxt "board18_0|"
 msgid "Asturias"
-msgstr ""
+msgstr "Asturias"
 
 #. Autonomous communities of Spain: Basque Country
 #: activities/geo-country/resource/board/board18_0.qml:92
 msgctxt "board18_0|"
 msgid "Basque Country"
-msgstr ""
+msgstr "Kraj Basków"
 
 #. Autonomous communities of Spain: La Rioja
 #: activities/geo-country/resource/board/board18_0.qml:99
-#, fuzzy
-#| msgctxt "board3_0|"
-#| msgid "La Rioja"
 msgctxt "board18_0|"
 msgid "La Rioja"
 msgstr "La Rioja"
 
 #. Autonomous communities of Spain: Cantabria
 #: activities/geo-country/resource/board/board18_0.qml:106
-#, fuzzy
-#| msgctxt "board11_0|"
-#| msgid "Calabria"
 msgctxt "board18_0|"
 msgid "Cantabria"
-msgstr "Kalabria"
+msgstr "Kantabria"
 
 #. Autonomous communities of Spain: Navarre
 #: activities/geo-country/resource/board/board18_0.qml:113
-#, fuzzy
-#| msgctxt "board5|"
-#| msgid "Navajo"
 msgctxt "board18_0|"
 msgid "Navarre"
-msgstr "Nawaho"
+msgstr "Nawarra"
 
 #. Autonomous communities of Spain: Extremadura
 #: activities/geo-country/resource/board/board18_0.qml:120
 msgctxt "board18_0|"
 msgid "Extremadura"
-msgstr ""
+msgstr "Ekstremadura"
 
 #. Autonomous communities of Spain: Canary Islands
 #: activities/geo-country/resource/board/board18_0.qml:127
-#, fuzzy
-#| msgctxt "board14_0|"
-#| msgid "Mariana Islands"
 msgctxt "board18_0|"
 msgid "Canary Islands"
-msgstr "Wyspy Mariana"
+msgstr "Wyspy Kanaryjskie"
 
 #. Autonomous communities of Spain: Balearic Islands
 #: activities/geo-country/resource/board/board18_0.qml:134
-#, fuzzy
-#| msgctxt "board14_0|"
-#| msgid "Mariana Islands"
 msgctxt "board18_0|"
 msgid "Balearic Islands"
-msgstr "Wyspy Mariana"
+msgstr "Baleary"
 
 #. Autonomous communities of Spain: Ceuta
 #: activities/geo-country/resource/board/board18_0.qml:141
 msgctxt "board18_0|"
 msgid "Ceuta"
-msgstr ""
+msgstr "Ceuta"
 
 #. Autonomous communities of Spain: Melilla
 #: activities/geo-country/resource/board/board18_0.qml:148
 msgctxt "board18_0|"
 msgid "Melilla"
-msgstr ""
+msgstr "Melilla"
 
 #: activities/geo-country/resource/board/board1_0.qml:15
 msgctxt "board1_0|"
@@ -16307,8 +16161,8 @@ msgid ""
 "until he reaches a fork and you have to decide which way to go further."
 msgstr ""
 "Dla większych labiryntów istnieje osobny tryb chodzenia, nazwany \"tryb-"
-"szybkiego-biegania\". Po włączeniu tego trybu-szybkiego-biegania, Tux "
-"pobiegnie sam do rozwidlenia i poczeka, aż wybierzesz drogę."
+"szybkiego-biegania\". Po włączeniu tego trybu-szybkiego-biegania, "
+"Tuxpobiegnie sam do rozwidlenia i poczeka, aż wybierzesz drogę."
 
 #: activities/maze/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
@@ -16511,7 +16365,7 @@ msgstr ""
 #: activities/memory-case-association/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Learning lowercase and uppercase letters, memory."
-msgstr "Nauka małych i wielkich liter, pamięc."
+msgstr "Nauka małych i wielkich liter, pamięć."
 
 #. Help prerequisite
 #: activities/memory-case-association-tux/ActivityInfo.qml:22
@@ -18545,18 +18399,13 @@ msgstr ""
 
 #. Help manual
 #: activities/nine_men_morris/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Play with a friend. First take turns to place nine pieces, and then take "
-#| "turns to move your pieces."
 msgctxt "ActivityInfo|"
 msgid ""
 "Play with Tux. First take turns to place nine pieces, and then take turns to "
 "move your pieces."
 msgstr ""
-"Zagraj przeciwko koledze. Najpierw na zmianę ustawiacie dziewięć pionków, a "
-"następnie na zmianę wykonujecie nimi ruchy."
+"Zagraj z Tuksem. Najpierw na zmianę ustawiacie dziewięć pionków, a następnie "
+"na zmianę wykonujecie nimi ruchy."
 
 #: activities/nine_men_morris/nine_men_morris.js:29
 msgctxt "nine_men_morris|"
@@ -19226,6 +19075,16 @@ msgid ""
 "Mom|has|asked|me|to|play|in|the|room.\n"
 "I|think|we|are|going|to|have|a|good|day."
 msgstr ""
+"Słońce|świeci|na|niebie.\n"
+"Dzieci|lubią|bawić|się|na|podwórku|wieczorem.\n"
+"Wychodzisz|na|obiad?\n"
+"Dziewczynka|wsuwa|swoje|tenisówki|i |wychodzi|na|zewnątrz.\n"
+"Jacek|poczuł|się|chory|po|zjedzeniu|pięciu|batonów.\n"
+"Nasza|rodzina|jedzie|na|wakacje|nad|morze|każdego|roku.\n"
+"Wujek|Tomek|dał|mi|czerwonego|resoraka.\n"
+"Jeśli|zjesz|obiad|możesz|zjeść|deser.\n"
+"Mama|poprosiła|mnie|o|zabawę|w|swoim|pokoju.\n"
+"Myślę|że|to|będzie|fajny|dzień."
 
 #. Activity title
 #: activities/oware/ActivityInfo.qml:14
@@ -24519,18 +24378,13 @@ msgstr ""
 
 #. Help manual
 #: activities/tic_tac_toe/ActivityInfo.qml:27
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Play with a friend. Take turns to click on the square which you want to "
-#| "mark. The first player to create a line of 3 marks wins."
 msgctxt "ActivityInfo|"
 msgid ""
 "Play with Tux. Take turns to click on the square which you want to mark. The "
 "first player to create a line of 3 marks wins."
 msgstr ""
-"Zagraj z koleżanką/kolegą. Raz ty raz on naciskajcie na kratki, które "
-"chcecie oznaczyć. Wygrywa gracz, który jako pierwszy utworzy linię 3 znaków."
+"Zagraj z Tuksem. Raz ty raz on naciskajcie na kratki, które chcecie "
+"oznaczyć.  Wygrywa gracz, który jako pierwszy utworzy linię 3 znaków."
 
 #. Activity title
 #: activities/tic_tac_toe_2players/ActivityInfo.qml:18
@@ -24653,7 +24507,7 @@ msgstr ""
 #: activities/watercycle/Watercycle.qml:84
 msgctxt "Watercycle|"
 msgid "Great, click on the shower, as Tux arrives home."
-msgstr "Świetnie, nacisnij na przysznic, gdy Tux wróci do domu."
+msgstr "Świetnie, naciśnij na prysznic, gdy Tux wróci do domu."
 
 #: activities/watercycle/Watercycle.qml:85
 msgctxt "Watercycle|"
@@ -25530,18 +25384,13 @@ msgid "Enable the kiosk mode."
 msgstr "Włącz tryb kiosku."
 
 #: core/main.cpp:192
-#, fuzzy
-#| msgctxt "QObject|"
-#| msgid ""
-#| "Use software renderer instead of openGL (slower but should run with any "
-#| "graphical card, needs Qt 5.8 minimum)."
 msgctxt "QObject|"
 msgid ""
 "Use software renderer instead of openGL (slower but should run with any "
 "graphical card)."
 msgstr ""
 "Użyj wyświetlania programowego zamiast OpenGL (wolniejsze, lecz powinno dać "
-"się uruchomić na każdej karcie graficznej, wymaga co najmniej Qt 5.8)"
+"się uruchomić na każdej karcie graficznej)."
 
 #: core/main.cpp:195
 msgctxt "QObject|"
@@ -25560,7 +25409,7 @@ msgstr "Określ aktywność po rozpoczęciu GCompris."
 #: core/main.cpp:204
 msgctxt "QObject|"
 msgid "Outputs all the available activities on the standard output."
-msgstr ""
+msgstr "Wyprowadza na standardowe wyjście wszystkie dostępne aktywności."
 
 #: core/main.qml:233
 msgctxt "main|"
