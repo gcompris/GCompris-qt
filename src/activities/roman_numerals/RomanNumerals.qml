@@ -219,12 +219,7 @@ ActivityBase {
                 }
             }
 
-            property bool isChecking: false
             function check() {
-                if(isChecking) {
-                    return
-                }
-                isChecking = true
                 if(feedback.value == items.questionValue) {
                     bonus.good('tux')
                 } else {
@@ -498,7 +493,8 @@ ActivityBase {
           anchors.right: background.right
           anchors.bottom: bar.top
           anchors.margins: 2 * background.layoutMargins
-          height: bar.height;
+          enabled: !bonus.isPlaying
+          height: bar.height
           width: height
           sourceSize.height: height
           sourceSize.width: height
@@ -508,8 +504,6 @@ ActivityBase {
         Bonus {
             id: bonus
             Component.onCompleted: win.connect(items.nextSubLevel)
-            onWin: items.isChecking = false
-            onLoose: items.isChecking = false
         }
     }
 }
