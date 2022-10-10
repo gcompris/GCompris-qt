@@ -21563,13 +21563,13 @@ msgstr ""
 "Gouzout a rez bremañ ar reolennoù, gallout a rez lenn ha skrivañ niveroù "
 "gant sifroù roman."
 
-#: activities/roman_numerals/RomanNumerals.qml:382
+#: activities/roman_numerals/RomanNumerals.qml:377
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Roman value: %1"
 msgstr "Niver roman : %1"
 
-#: activities/roman_numerals/RomanNumerals.qml:383
+#: activities/roman_numerals/RomanNumerals.qml:378
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Arabic value: %1"

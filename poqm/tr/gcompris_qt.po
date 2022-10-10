@@ -22252,13 +22252,13 @@ msgstr ""
 "Artık kuralları biliyorsun, Roma rakamlarında herhangi bir sayı okuyabilir "
 "ve yazabilirsin."
 
-#: activities/roman_numerals/RomanNumerals.qml:382
+#: activities/roman_numerals/RomanNumerals.qml:377
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Roman value: %1"
 msgstr "Roma değer: %1"
 
-#: activities/roman_numerals/RomanNumerals.qml:383
+#: activities/roman_numerals/RomanNumerals.qml:378
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Arabic value: %1"

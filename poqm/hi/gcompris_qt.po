@@ -23570,13 +23570,13 @@ msgid ""
 msgstr ""
 "अब आप नियमों को जानते हैं, आप रोमन अंकों में किसी भी संख्या को पढ़ सकते हैं और लिख सकते हैं।"
 
-#: activities/roman_numerals/RomanNumerals.qml:382
+#: activities/roman_numerals/RomanNumerals.qml:377
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Roman value: %1"
 msgstr "रोमन मूल्य:  %1"
 
-#: activities/roman_numerals/RomanNumerals.qml:383
+#: activities/roman_numerals/RomanNumerals.qml:378
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Arabic value: %1"

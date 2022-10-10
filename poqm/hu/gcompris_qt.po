@@ -21387,13 +21387,13 @@ msgstr ""
 "Most, hogy tudod a szabályokat, bármelyik arab számot átírhatod római szám "
 "alakba."
 
-#: activities/roman_numerals/RomanNumerals.qml:382
+#: activities/roman_numerals/RomanNumerals.qml:377
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Roman value: %1"
 msgstr "Értéke római számban: %1"
 
-#: activities/roman_numerals/RomanNumerals.qml:383
+#: activities/roman_numerals/RomanNumerals.qml:378
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Arabic value: %1"

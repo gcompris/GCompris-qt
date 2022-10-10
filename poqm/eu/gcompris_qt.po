@@ -21419,13 +21419,13 @@ msgstr ""
 "Orain arauak ezagutzen dituzunez, erromatar zenbakiekin idatzitako zenbakiak "
 "irakur eta idatz ditzakezu."
 
-#: activities/roman_numerals/RomanNumerals.qml:382
+#: activities/roman_numerals/RomanNumerals.qml:377
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Roman value: %1"
 msgstr "Erromatar balioa: %1"
 
-#: activities/roman_numerals/RomanNumerals.qml:383
+#: activities/roman_numerals/RomanNumerals.qml:378
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Arabic value: %1"

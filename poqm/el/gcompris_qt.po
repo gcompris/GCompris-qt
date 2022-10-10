@@ -21906,13 +21906,13 @@ msgstr ""
 "Τώρα ξέρεις τους κανόνες, μπορείς να διαβάσεις και να γράψεις οποιονδήποτε "
 "αριθμό με ρωμαϊκή αρίθμηση."
 
-#: activities/roman_numerals/RomanNumerals.qml:382
+#: activities/roman_numerals/RomanNumerals.qml:377
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Roman value: %1"
 msgstr "Ρωμαϊκή γραφή: %1"
 
-#: activities/roman_numerals/RomanNumerals.qml:383
+#: activities/roman_numerals/RomanNumerals.qml:378
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Arabic value: %1"

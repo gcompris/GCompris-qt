@@ -20618,13 +20618,13 @@ msgid ""
 "Now you know the rules, you can read and write numbers in roman numerals."
 msgstr "現在您知道規則了，可以用羅馬數字表示法來讀寫數字了。"
 
-#: activities/roman_numerals/RomanNumerals.qml:382
+#: activities/roman_numerals/RomanNumerals.qml:377
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Roman value: %1"
 msgstr "羅馬數字：%1"
 
-#: activities/roman_numerals/RomanNumerals.qml:383
+#: activities/roman_numerals/RomanNumerals.qml:378
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Arabic value: %1"
