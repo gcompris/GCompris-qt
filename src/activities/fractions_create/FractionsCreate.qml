@@ -1,6 +1,7 @@
 /* GCompris - FractionsCreate.qml
  *
  * SPDX-FileCopyrightText: 2022 Johnny Jazeix <jazeix@gmail.com>
+ * SPDX-FileCopyrightText: 2022 Timothée Giet <animtim@gmail.com>
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 import QtQuick 2.12
@@ -71,7 +72,9 @@ ActivityBase {
         //instruction rectangle
         Rectangle {
             id: instruction
-            anchors.fill: instructionTxt
+            anchors.centerIn: instructionTxt
+            width: instructionTxt.width + 20
+            height: instructionTxt.height
             opacity: 0.8
             radius: 10
             border.width: 2
@@ -96,27 +99,55 @@ ActivityBase {
             wrapMode: TextEdit.WordWrap
         }
 
-        ChartDisplay {
-            id: chartDisplay
-            width: Math.min(parent.width - 2 * (okButton.width + okButton.anchors.rightMargin), parent.height-bar.height * 1.5 - instruction.height)
-            height: width
+        Item {
+            id: layoutArea
+            width: parent.width - 20
+            height: parent.height - instructionTxt.height - bar.height * 1.2 - 30
+            anchors.top: instruction.bottom
+            anchors.topMargin: 10
+            anchors.horizontalCenter: parent.horizontalCenter
+        }
+
+        Item {
+            id: chartLayoutArea
+            width: layoutArea.width - okButton.width - 10 * ApplicationInfo.ratio
+            height: layoutArea.height
             anchors {
-                top: instruction.bottom
-                horizontalCenter: parent.horizontalCenter
+                top: layoutArea.top
+                left: layoutArea.left
             }
         }
 
         Item {
+            id: rightLayoutArea
+            width:  layoutArea.width - chartLayoutArea.width
+            height: layoutArea.height
+            anchors.top: layoutArea.top
+            anchors.right: layoutArea.right
+        }
+
+        ChartDisplay {
+            id: chartDisplay
+            layoutWidth: chartLayoutArea.width
+            layoutHeight: chartLayoutArea.height
+            anchors.centerIn: chartLayoutArea
+        }
+
+        Item {
             id: fractionTextDisplay
-            anchors.verticalCenter: chartDisplay.verticalCenter
-            anchors.left: chartDisplay.right
+            width: rightLayoutArea.width
+            anchors.top: rightLayoutArea.top
             anchors.bottom: okButton.top
-            width: 140
+            anchors.bottomMargin: 10 * ApplicationInfo.ratio
+
             FractionNumber {
                 id: numeratorText
                 value: 0
-                width: fractionTextDisplay.width
-                height: 50
+                width: parent.width
+                height: 30 * ApplicationInfo.ratio
+                anchors.horizontalCenter: parent.horizontalCenter
+                anchors.bottom: fractionBar.bottom
+                anchors.bottomMargin: 10
                 interactive: activity.mode === "findFraction" && !items.fixedNumerator
                 onLeftClicked: {
                     if(items.numeratorValue > 0) {
@@ -129,21 +160,20 @@ ActivityBase {
             }
             Rectangle {
                 id: fractionBar
-                width: numeratorText.childrenRect.width
+                width: parent.width
                 height: 5
-                anchors.horizontalCenter: denominatorText.horizontalCenter
-                anchors.top: numeratorText.bottom
-                anchors.topMargin: 10
+                anchors.horizontalCenter: parent.horizontalCenter
+                anchors.verticalCenter: parent.verticalCenter
                 color: "white"
             }
             FractionNumber {
                 id: denominatorText
                 value: 0
-                width: fractionTextDisplay.width
-                height: 50
-                anchors.topMargin: 10
+                width: parent.width
+                height: numeratorText.height
                 anchors.horizontalCenter: parent.horizontalCenter
                 anchors.top: fractionBar.bottom
+                anchors.topMargin: 10
                 interactive: activity.mode === "findFraction" && !items.fixedDenominator
                 onLeftClicked: {
                     if(items.denominatorValue > 0) {
@@ -161,9 +191,8 @@ ActivityBase {
             enabled: !bonus.isPlaying
             anchors {
                 bottom: score.top
-                right: parent.right
-                rightMargin: 10 * ApplicationInfo.ratio
-                bottomMargin: height * 0.5
+                bottomMargin: 10 * ApplicationInfo.ratio
+                horizontalCenter: rightLayoutArea.horizontalCenter
             }
             source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
             sourceSize.width: 60 * ApplicationInfo.ratio
@@ -176,10 +205,30 @@ ActivityBase {
         Score {
             id: score
             anchors {
-                bottom: bar.top
-                right: parent.right
+                top: undefined
+                bottom: rightLayoutArea.bottom
+                horizontalCenter: rightLayoutArea.horizontalCenter
             }
         }
+
+        states: [
+            State {
+                name: "horizontalState"
+                when: items.horizontalLayout
+                AnchorChanges {
+                    target: fractionTextDisplay
+                    anchors.left: chartDisplay.right
+                }
+            },
+            State {
+                name: "verticalState"
+                when: !items.horizontalLayout
+                AnchorChanges {
+                    target: fractionTextDisplay
+                    anchors.left: rightLayoutArea.left
+                }
+            }
+        ]
 
         DialogChooseLevel {
             id: dialogActivityConfig

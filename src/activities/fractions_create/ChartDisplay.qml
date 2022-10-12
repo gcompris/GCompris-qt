@@ -1,6 +1,7 @@
 /* GCompris - ChartDisplay.qml
  *
  * SPDX-FileCopyrightText: 2022 Johnny Jazeix <jazeix@gmail.com>
+ * SPDX-FileCopyrightText: 2022 Timothée Giet <animtim@gmail.com>
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 import QtQuick 2.12
@@ -10,15 +11,25 @@ Flow {
     // color needs to be in hex format with lowercase for comparison checks to work
     readonly property string selectedColor: "#80ffffff"
     readonly property string unselectedColor: "#00000000"
+    property double layoutWidth: 10
+    property double layoutHeight: 10
+    property double gridItemHeight: items.horizontalLayout ?
+                        Math.min(layoutWidth / repeater.model, layoutHeight) :
+                        Math.min(layoutWidth, layoutHeight / repeater.model)
+    property double gridItemWidth: items.horizontalLayout ? gridItemHeight :
+                        layoutWidth
+    width: items.horizontalLayout ? gridItemWidth * repeater.model : gridItemWidth
+    height: items.horizontalLayout ? gridItemHeight : gridItemHeight * repeater.model
     flow: items.horizontalLayout ? Flow.LeftToRight : Flow.TopToBottom
-    spacing: 10
+    spacing: 0
+    anchors.centerIn: parent
     Repeater {
         id: repeater
         model: Math.ceil(items.numeratorToFind / items.denominatorToFind)
         Loader {
             id: graphLoader
-            width: gridContainer.width / repeater.model - gridContainer.spacing / 2
-            height: gridContainer.height / repeater.model - gridContainer.spacing / 2
+            width: gridContainer.gridItemWidth
+            height: gridContainer.gridItemHeight
             asynchronous: false
             source: items.chartType === "pie" ? "PieChart.qml" : "RectangleChart.qml"
         }
