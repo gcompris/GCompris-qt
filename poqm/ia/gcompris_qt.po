@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2022-04-11 10:49+0200\n"
+"PO-Revision-Date: 2022-10-12 15:37+0200\n"
 "Last-Translator: giovanni <g.sora@tiscali.it>\n"
 "Language-Team: Interlingua <kde-i18n-doc@kde.org>\n"
 "Language: ia\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Qt-Contexts: true\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 20.04.2\n"
+"X-Generator: Lokalize 21.12.3\n"
 
 #. Activity title
 #: activities/advanced_colors/ActivityInfo.qml:15
@@ -8216,29 +8216,34 @@ msgid "Decimal numbers with a rectangle."
 msgstr ""
 
 #: activities/fractions_create/resource/6/Data.qml:18
+#, fuzzy
 msgctxt "Data|"
 msgid "Select 0.5 rectangle."
-msgstr ""
+msgstr "Rectangulo"
 
 #: activities/fractions_create/resource/6/Data.qml:24
+#, fuzzy
 msgctxt "Data|"
 msgid "Select 0.25 rectangle."
-msgstr ""
+msgstr "Rectangulo"
 
 #: activities/fractions_create/resource/6/Data.qml:30
+#, fuzzy
 msgctxt "Data|"
 msgid "Select 0.4 rectangle."
-msgstr ""
+msgstr "Rectangulo"
 
 #: activities/fractions_create/resource/6/Data.qml:36
+#, fuzzy
 msgctxt "Data|"
 msgid "Select 0.75 rectangle."
-msgstr ""
+msgstr "Rectangulo"
 
 #: activities/fractions_create/resource/6/Data.qml:42
+#, fuzzy
 msgctxt "Data|"
 msgid "Select 0.8 rectangle."
-msgstr ""
+msgstr "Rectangulo"
 
 #: activities/fractions_create/resource/6/Data.qml:50
 msgctxt "Data|"
@@ -9600,7 +9605,7 @@ msgstr ""
 #: activities/geo-country/resource/board/board18_0.qml:29
 msgctxt "board18_0|"
 msgid "Madrid"
-msgstr ""
+msgstr "Madrid"
 
 #. Autonomous communities of Spain: Galicia
 #: activities/geo-country/resource/board/board18_0.qml:36
@@ -9622,12 +9627,9 @@ msgstr ""
 
 #. Autonomous communities of Spain: Catalonia
 #: activities/geo-country/resource/board/board18_0.qml:57
-#, fuzzy
-#| msgctxt "board11_3|"
-#| msgid "Catania"
 msgctxt "board18_0|"
 msgid "Catalonia"
-msgstr "Catania"
+msgstr "Catalonia"
 
 #. Autonomous communities of Spain: Aragon
 #: activities/geo-country/resource/board/board18_0.qml:64
@@ -9667,9 +9669,6 @@ msgstr ""
 
 #. Autonomous communities of Spain: La Rioja
 #: activities/geo-country/resource/board/board18_0.qml:99
-#, fuzzy
-#| msgctxt "board3_0|"
-#| msgid "La Rioja"
 msgctxt "board18_0|"
 msgid "La Rioja"
 msgstr "La Rioja"
@@ -9702,7 +9701,7 @@ msgstr ""
 #| msgid "Mariana Islands"
 msgctxt "board18_0|"
 msgid "Canary Islands"
-msgstr "Insulas Mariana"
+msgstr "Insulas Canarias"
 
 #. Autonomous communities of Spain: Balearic Islands
 #: activities/geo-country/resource/board/board18_0.qml:134
@@ -9717,7 +9716,7 @@ msgstr "Insulas Mariana"
 #: activities/geo-country/resource/board/board18_0.qml:141
 msgctxt "board18_0|"
 msgid "Ceuta"
-msgstr ""
+msgstr "Ceuta"
 
 #. Autonomous communities of Spain: Melilla
 #: activities/geo-country/resource/board/board18_0.qml:148
