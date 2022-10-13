@@ -87,7 +87,7 @@
   <summary xml:lang="sq">Lojë Edukative me Shumë Veprimtari për fëmijë nga 2 deri në 10 vjeç</summary>
   <summary xml:lang="sv">Pedagogiskt multiaktivitetsspel för barn från 2 till 10 år</summary>
   <summary xml:lang="tg">Бозиҳои омӯзишии серкор барои кӯдакони аз 2 то 10-сола</summary>
-  <summary xml:lang="tr">2 ile 10 yaş arasındaki çocuklar için çok Etkinlikli oyun</summary>
+  <summary xml:lang="tr">2-10 Yaş Arası Çocuklar için Çok Etkinlikli Eğitici Oyun</summary>
   <summary xml:lang="uk">Набір освітніх ігор для дітей від 2 до 10 років</summary>
   <summary xml:lang="x-test">xxMulti-Activity Educational game for children 2 to 10xx</summary>
   <summary xml:lang="zh-CN">面向 2 到 10 岁儿童的多学科教学游戏</summary>
@@ -386,7 +386,7 @@
       <li xml:lang="sl">igre: spomin, štiri v vrsto, križci in krožci, sudoku, Hanojski stolpi, ...</li>
       <li xml:lang="sq">lojëra: kujtesë, lidhni 4, tik tak to, sudoku, kullë Hanoi, …</li>
       <li xml:lang="sv">spel: memory, koppla 4, tre-i-rad, sudoku, tornen i Hanoi, ...</li>
-      <li xml:lang="tr">oyunlar: hafıza, dörtleme, üç taş, sudoku, hanoi kulesi, ...</li>
+      <li xml:lang="tr">oyunlar: bellek, dörtleme, üç taş, sudoku, hanoi kulesi, ...</li>
       <li xml:lang="uk">Ігри: запам’ятовування, чотири-у-рядок, хрестики-нулики, судоку, ханойські вежі…</li>
       <li xml:lang="x-test">xxgames: memory, connect 4, tic tac toe, sudoku, hanoi tower, ...xx</li>
       <li xml:lang="zh-CN">智力游戏：速记、四子棋、井子棋、数独、汉诺塔……</li>
@@ -471,7 +471,7 @@
       <li xml:lang="sl">ostalo: prepoznavanje časa, brajica, blodnjak, glasbila, ...</li>
       <li xml:lang="sq">të tjera: mësoni si të tregoni orën, sistemi Braj, maze, vegla muzikore, …</li>
       <li xml:lang="sv">annat: lära sig klockan, punktskrift, labyrint, musikinstrument, ...</li>
-      <li xml:lang="tr">diğer: saati söylemeyi öğrenme, braille sistemi, labirent, müzik, enstrümanlar, ...</li>
+      <li xml:lang="tr">diğer: saati söylemeyi öğrenme, braille sistemi, labirent, müzik, çalgılar, ...</li>
       <li xml:lang="uk">Інше: навчання позначенням часу, система Брайля, лабіринти, музичні інструменти…</li>
       <li xml:lang="x-test">xxother: learn to tell time, the braille system, maze, music instruments, ...xx</li>
       <li xml:lang="zh-CN">其他活动：时间识别、盲文、迷宫、乐器……</li>
@@ -516,7 +516,7 @@
     <p xml:lang="sl">GCompris trenutno ponuja več kot 100 dejavnosti, še več pa jih je v razvoju. GCompris je prosta programska oprema, kar pomeni, da jo lahko prilagodite po svoje, še pomembneje pa je, da jo lahko delite z otroki po vsem svetu.</p>
     <p xml:lang="sq">Aktualisht GCompris-i ofron më shumë se 100 veprimtari dhe po zhvillohen dhe të tjera. GCompris-i është “software” i lirë, që do të thotë se mund t’ia përshtatni nevojave tuaja, ta përmirësoni, dhe, më e rëndësishmja, t’ua jepni fëmijëve kudo.</p>
     <p xml:lang="sv">För närvarande erbjuder GCompris över 100 aktiviteter och ännu fler håller på att utvecklas. GCompris är fri programvara, vilket betyder att man kan anpassa det till sina egna behov, och viktigast av allt, dela det med barn överallt.</p>
-    <p xml:lang="tr">Şu anda GCompris 100'den fazla etkinlik sunuyor ve daha fazlasını geliştiriliyor. GCompris bir özgür yazılımdır; bu, onu kendi ihtiyaçlarınıza uyarlayabilir, geliştirebilir ve en önemlisi, her yerde çocuklarla paylaşabileceğiniz anlamına gelir.</p>
+    <p xml:lang="tr">Şu anda GCompris 100'den fazla etkinlik sunuyor ve daha fazlası da geliştiriliyor. GCompris özgür bir yazılımdır; bu, onu kendi gereksinimlerinize uyarlayabilir, geliştirebilir ve en önemlisi, her yerde çocuklarla paylaşabileceğiniz anlamına gelir.</p>
     <p xml:lang="uk">У поточній версії GCompris понад 100 вправ. Розробники постійно працюють над новими вправами. GCompris є вільним програмним забезпеченням, це означає, що ви можете адаптувати програму до власних потреб, покращувати її і, що найважливіше, ділитися вашими творіннями із усіма дітьми.</p>
     <p xml:lang="x-test">xxCurrently GCompris offers in excess of 100 activities and more are being developed. GCompris is free software, that means that you can adapt it to your own needs, improve it and, most importantly, share it with children everywhere.xx</p>
     <p xml:lang="zh-CN">GCompris 当前提供了超过 100 种教学活动，更多的活动也会在日后陆续加入。GCompris 是一款自由软件，这意味着您可以根据您的需要对其进行调整、改进，并且自由地将它分享给世界各地的孩子们。</p>
@@ -561,7 +561,7 @@
       <caption xml:lang="sl">GCompris glavni meni</caption>
       <caption xml:lang="sq">Menuja kryesore e GCompris-it</caption>
       <caption xml:lang="sv">GCompris-huvudmeny</caption>
-      <caption xml:lang="tr">GCompris ana menü</caption>
+      <caption xml:lang="tr">GCompris ana menüsü</caption>
       <caption xml:lang="uk">Головне меню GCompris</caption>
       <caption xml:lang="x-test">xxGCompris main menuxx</caption>
       <caption xml:lang="zh-CN">GCompris 主菜单</caption>
@@ -605,7 +605,7 @@
       <caption xml:lang="sl">Dejavnost "Kliknite na veliko črko"</caption>
       <caption xml:lang="sq">Veprimtaria ”Klikoni mbi një shkronjë të madhe”</caption>
       <caption xml:lang="sv">Aktiviteten "Klicka på en stor bokstav"</caption>
-      <caption xml:lang="tr">"Büyük bir harfe tıkla" aktivite</caption>
+      <caption xml:lang="tr">"Büyük bir harfe tıkla" etkinliği</caption>
       <caption xml:lang="uk">Вправа «Клацніть на великій літері»</caption>
       <caption xml:lang="x-test">xx"Click on an uppercase letter" activityxx</caption>
       <caption xml:lang="zh-CN">“点击一个大写字母” 活动</caption>
@@ -649,7 +649,7 @@
       <caption xml:lang="sl">Dejavnost "Učimo se poznati na uro"</caption>
       <caption xml:lang="sq">Veprimtaria “Mësoni Sahatin”</caption>
       <caption xml:lang="sv">Aktiviteten "Lära sig klockan"</caption>
-      <caption xml:lang="tr">"Saatleri öğrenme" aktivite</caption>
+      <caption xml:lang="tr">"Saatleri öğrenme" etkinliği</caption>
       <caption xml:lang="uk">Вправа «Вивчення годинника»</caption>
       <caption xml:lang="x-test">xx"Learning Clock" activityxx</caption>
       <caption xml:lang="zh-CN">“学习时钟”活动</caption>
@@ -693,7 +693,7 @@
       <caption xml:lang="sl">Dejavnost "Mešanje barv"</caption>
       <caption xml:lang="sq">Veprimtaria Zgjidhni ngjyrë veprimtarie skede</caption>
       <caption xml:lang="sv">Aktiviteten "Blanda målarfärger"</caption>
-      <caption xml:lang="tr">"Renkli boya karışımı" aktivite</caption>
+      <caption xml:lang="tr">"Renkli boya karışımı" etkinliği</caption>
       <caption xml:lang="uk">Вправа «Змішування кольорів малюнка»</caption>
       <caption xml:lang="x-test">xx"Mixing color of paint" activityxx</caption>
       <caption xml:lang="zh-CN">“颜料混合颜色”活动</caption>
@@ -738,7 +738,7 @@
       <caption xml:lang="sl">Dejavnost "Barve"</caption>
       <caption xml:lang="sq">Veprimtaria “Ngjyra”</caption>
       <caption xml:lang="sv">Aktiviteten "Färger"</caption>
-      <caption xml:lang="tr">"Renkler" aktivite</caption>
+      <caption xml:lang="tr">"Renkler" etkinliği</caption>
       <caption xml:lang="uk">Вправа з кольорами</caption>
       <caption xml:lang="x-test">xx"Colors" activityxx</caption>
       <caption xml:lang="zh-CN">“颜色”活动</caption>
@@ -782,7 +782,7 @@
       <caption xml:lang="sl">Dejavnost "Izgradi enak model"</caption>
       <caption xml:lang="sq">Veprimtaria “Ndërtoni të njëjtin model”</caption>
       <caption xml:lang="sv">Aktiviteten "Bygg samma modell"</caption>
-      <caption xml:lang="tr">"Aynı modeli inşa et" aktivite</caption>
+      <caption xml:lang="tr">"Aynı modeli yap" etkinliği</caption>
       <caption xml:lang="uk">Вправа «Відтворіть модель»</caption>
       <caption xml:lang="x-test">xx"Build the same model" activityxx</caption>
       <caption xml:lang="zh-CN">“建立相同的模型”活动</caption>
@@ -826,7 +826,7 @@
       <caption xml:lang="sl">Dejavnost "Preštej predmete"</caption>
       <caption xml:lang="sq">Veprimtaria “Numëroni objektet”</caption>
       <caption xml:lang="sv">Aktiviteten "Räkna sakerna"</caption>
-      <caption xml:lang="tr">"Nesneleri say" aktivite</caption>
+      <caption xml:lang="tr">"Nesneleri say" etkinliği</caption>
       <caption xml:lang="uk">Вправа «Порахувати предмети»</caption>
       <caption xml:lang="x-test">xx"Count the items" activityxx</caption>
       <caption xml:lang="zh-CN">“计数”活动</caption>
@@ -870,7 +870,7 @@
       <caption xml:lang="sl">Dejavnost "Igra petnajst"</caption>
       <caption xml:lang="sq">Veprimtaria “Loja e pesëmbëdhjetëshes”</caption>
       <caption xml:lang="sv">Aktiviteten "Femtonspel"</caption>
-      <caption xml:lang="tr">"On beş oyun" aktivite</caption>
+      <caption xml:lang="tr">"On beş oyun" etkinliği</caption>
       <caption xml:lang="uk">Вправа «Гра „П'ятнадцять“»</caption>
       <caption xml:lang="x-test">xx"The fifteen game" activityxx</caption>
       <caption xml:lang="zh-CN">“十五数字推盘”活动</caption>
@@ -914,7 +914,7 @@
       <caption xml:lang="sl">Dejavnost "Šesterokotnik"</caption>
       <caption xml:lang="sq">Veprimtaria “Gjashtëkëndëshi”</caption>
       <caption xml:lang="sv">Aktiviteten "Hexagon"</caption>
-      <caption xml:lang="tr">"Altıgen" aktivite</caption>
+      <caption xml:lang="tr">"Altıgen" etkinliği</caption>
       <caption xml:lang="uk">Вправа «Шестикутник»</caption>
       <caption xml:lang="x-test">xx"Hexagon" activityxx</caption>
       <caption xml:lang="zh-CN">“六边形”活动</caption>
@@ -958,7 +958,7 @@
       <caption xml:lang="sl">Dejavnost "Pravilno uravnoteži tehtnice"</caption>
       <caption xml:lang="sq">Veprimtaria “Baraspeshoni peshoret si duhet”</caption>
       <caption xml:lang="sv">Aktiviteten "Balansera vågen rätt"</caption>
-      <caption xml:lang="tr">"Teraziyi doğru şekilde dengele" aktivite</caption>
+      <caption xml:lang="tr">"Teraziyi doğru şekilde dengele" etkinliği</caption>
       <caption xml:lang="uk">Вправа «Рівновага на вагах»</caption>
       <caption xml:lang="x-test">xx"Balance the scales properly" activityxx</caption>
       <caption xml:lang="zh-CN">“平衡天平”活动</caption>
@@ -1002,7 +1002,7 @@
       <caption xml:lang="sl">Dejavnost "Šahovska končnica"</caption>
       <caption xml:lang="sq">Veprimtari “Lojë fundi shahu”</caption>
       <caption xml:lang="sv">Aktiviteten "Slutspel i schack"</caption>
-      <caption xml:lang="tr">"Santranç oyunu sona erdi" aktivite</caption>
+      <caption xml:lang="tr">"Santranç oyunu sona erdi" etkinliği</caption>
       <caption xml:lang="uk">Вправа «Завершення гри у шахи»</caption>
       <caption xml:lang="x-test">xx"End of chess game" activityxx</caption>
       <caption xml:lang="zh-CN">“国际象棋游戏”活动</caption>
@@ -1046,7 +1046,7 @@
       <caption xml:lang="sl">Dejavnost "Sestavljanke drsečih blokov"</caption>
       <caption xml:lang="sq">Veprimtari “Lojë puzzle me blloqe të lëvizshëm”</caption>
       <caption xml:lang="sv">Aktiviteten "Pusselspel med glidande block"</caption>
-      <caption xml:lang="tr">"Kayan blok yap boz oyunu" aktivite</caption>
+      <caption xml:lang="tr">"Kayan blok yap boz oyunu" etkinliği</caption>
       <caption xml:lang="uk">Вправа «Головоломка з пересувними блоками»</caption>
       <caption xml:lang="x-test">xx"A sliding-block puzzle game" activityxx</caption>
       <caption xml:lang="zh-CN">"滑块类游戏"活动</caption>
