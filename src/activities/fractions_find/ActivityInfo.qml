@@ -11,7 +11,7 @@ ActivityInfo {
   icon: "fractions_find/fractions_find.svg"
   author: "Johnny Jazeix &lt;jazeix@gmail.com&gt;"
   //: Activity title
-  title: qsTr("Find the fraction")
+  title: qsTr("Find the fractions")
   //: Help title
   description: qsTr("Find the correct numerator and denominator of the represented fraction.")
   //intro: "Find the correct numerator and denominator of the represented fraction"
