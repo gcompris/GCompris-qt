@@ -13,7 +13,7 @@ ActivityInfo {
   //: Activity title
   title: qsTr("Create the fractions")
   //: Help title
-  description: qsTr("A shape splitted in equal parts is displayed on screen.") +
+  description: qsTr("A shape split in equal parts is displayed on screen.") +
     "<br>" +
     qsTr("Select the appropriate number of parts as described in the instructions.")
   //intro: "Select the appropriate number of parts as described in the instructions."
