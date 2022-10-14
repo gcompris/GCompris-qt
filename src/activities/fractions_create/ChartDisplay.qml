@@ -51,7 +51,10 @@ Flow {
             goodAnswer = (selected == items.numeratorToFind);
         }
         else {
-            goodAnswer = (items.numeratorValue == items.numeratorToFind) && (items.denominatorValue == items.denominatorToFind);
+            // We also accept multiples of the actual solution (it is used in the case you can choose both numerator and denominator).
+            // For example, if we want 2/4, we also accept 1/2 or 3/6 as good answer.
+            // We force the check on the denominator not null because 1) it's not possible, 2) if both numerator and denominator to find are 0, it is not a correct answer
+            goodAnswer = Number(items.denominatorValue) != 0 && (Number(items.numeratorValue) * items.denominatorToFind == items.numeratorToFind * Number(items.denominatorValue));
         }
         if(goodAnswer) {
             if (items.currentSubLevel === items.numberOfSubLevels) {
