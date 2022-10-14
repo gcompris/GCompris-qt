@@ -9063,8 +9063,11 @@ msgstr "Crea las fracciones"
 
 #. Help title
 #: activities/fractions_create/ActivityInfo.qml:16
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "A shape splitted in equal parts is displayed on screen."
 msgctxt "ActivityInfo|"
-msgid "A shape splitted in equal parts is displayed on screen."
+msgid "A shape split in equal parts is displayed on screen."
 msgstr "En la pantalla se muestra una forma dividida en partes iguales."
 
 #: activities/fractions_create/ActivityInfo.qml:18
@@ -9396,8 +9399,11 @@ msgstr ""
 
 #. Activity title
 #: activities/fractions_find/ActivityInfo.qml:14
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Find the fraction"
 msgctxt "ActivityInfo|"
-msgid "Find the fraction"
+msgid "Find the fractions"
 msgstr "Encuentra la fracción"
 
 #. Help title

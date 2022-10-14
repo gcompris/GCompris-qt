@@ -8451,7 +8451,7 @@ msgstr "指示を選びます"
 #. Help title
 #: activities/fractions_create/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
-msgid "A shape splitted in equal parts is displayed on screen."
+msgid "A shape split in equal parts is displayed on screen."
 msgstr ""
 
 #: activities/fractions_create/ActivityInfo.qml:18
@@ -8817,7 +8817,7 @@ msgstr ""
 #| msgctxt "advanced_colors|"
 #| msgid "Find the crimson butterfly"
 msgctxt "ActivityInfo|"
-msgid "Find the fraction"
+msgid "Find the fractions"
 msgstr "あかね色のちょうちょを見つけよう"
 
 #. Help title

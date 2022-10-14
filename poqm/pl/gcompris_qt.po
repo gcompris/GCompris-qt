@@ -8948,8 +8948,11 @@ msgstr "Twórz ułamki"
 
 #. Help title
 #: activities/fractions_create/ActivityInfo.qml:16
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "A shape splitted in equal parts is displayed on screen."
 msgctxt "ActivityInfo|"
-msgid "A shape splitted in equal parts is displayed on screen."
+msgid "A shape split in equal parts is displayed on screen."
 msgstr "Na ekranie wyświetlany jest kształt podzielony na równe części."
 
 #: activities/fractions_create/ActivityInfo.qml:18
@@ -9277,8 +9280,11 @@ msgstr "Wybierz tyle części, ile możesz, nie biorąc więcej niż połowy tor
 
 #. Activity title
 #: activities/fractions_find/ActivityInfo.qml:14
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Find the fraction"
 msgctxt "ActivityInfo|"
-msgid "Find the fraction"
+msgid "Find the fractions"
 msgstr "Znajdź ułamek"
 
 #. Help title

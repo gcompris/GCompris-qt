@@ -8987,7 +8987,7 @@ msgstr "Поупражняться в вычитании"
 #. Help title
 #: activities/fractions_create/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
-msgid "A shape splitted in equal parts is displayed on screen."
+msgid "A shape split in equal parts is displayed on screen."
 msgstr ""
 
 #: activities/fractions_create/ActivityInfo.qml:18
@@ -9391,7 +9391,7 @@ msgstr ""
 #| msgctxt "instruments|"
 #| msgid "Find the accordion"
 msgctxt "ActivityInfo|"
-msgid "Find the fraction"
+msgid "Find the fractions"
 msgstr "Найди аккордеон"
 
 #. Help title

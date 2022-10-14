@@ -8916,8 +8916,11 @@ msgstr "Skapa bråken"
 
 #. Help title
 #: activities/fractions_create/ActivityInfo.qml:16
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "A shape splitted in equal parts is displayed on screen."
 msgctxt "ActivityInfo|"
-msgid "A shape splitted in equal parts is displayed on screen."
+msgid "A shape split in equal parts is displayed on screen."
 msgstr "En figur delad i lika delar visas på skärmen."
 
 #: activities/fractions_create/ActivityInfo.qml:18
@@ -9244,8 +9247,11 @@ msgstr "Välj så många delar du kan utan att använda mer än halva pajen."
 
 #. Activity title
 #: activities/fractions_find/ActivityInfo.qml:14
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Find the fraction"
 msgctxt "ActivityInfo|"
-msgid "Find the fraction"
+msgid "Find the fractions"
 msgstr "Bestäm bråket"
 
 #. Help title
