@@ -11,7 +11,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=gcompris&keywords=I18N+L10N&component=general\n"
 "POT-Creation-Date: 2014-11-09 17:30+0000\n"
-"PO-Revision-Date: 2022-09-26 13:03+0300\n"
+"PO-Revision-Date: 2022-10-14 17:07+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
 "Language: uk\n"
@@ -9018,9 +9018,6 @@ msgstr "Створення дробів"
 
 #. Help title
 #: activities/fractions_create/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "A shape splitted in equal parts is displayed on screen."
 msgctxt "ActivityInfo|"
 msgid "A shape split in equal parts is displayed on screen."
 msgstr "На екрані показано форму, яку поділено на рівні частини."
@@ -9353,12 +9350,9 @@ msgstr ""
 
 #. Activity title
 #: activities/fractions_find/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Find the fraction"
 msgctxt "ActivityInfo|"
 msgid "Find the fractions"
-msgstr "Знайдіть дріб"
+msgstr "Знайдіть дроби"
 
 #. Help title
 #: activities/fractions_find/ActivityInfo.qml:16

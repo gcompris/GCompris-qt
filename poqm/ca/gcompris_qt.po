@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2014-12-25 01:10+0000\n"
-"PO-Revision-Date: 2022-09-26 12:58+0200\n"
+"PO-Revision-Date: 2022-10-14 13:43+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
@@ -9316,9 +9316,6 @@ msgstr "Crear les fraccions"
 
 #. Help title
 #: activities/fractions_create/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "A shape splitted in equal parts is displayed on screen."
 msgctxt "ActivityInfo|"
 msgid "A shape split in equal parts is displayed on screen."
 msgstr "Es mostra a la pantalla una forma dividida en parts iguals."
@@ -9651,12 +9648,9 @@ msgstr ""
 
 #. Activity title
 #: activities/fractions_find/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Find the fraction"
 msgctxt "ActivityInfo|"
 msgid "Find the fractions"
-msgstr "Troba la fracció"
+msgstr "Troba les fraccions"
 
 #. Help title
 #: activities/fractions_find/ActivityInfo.qml:16

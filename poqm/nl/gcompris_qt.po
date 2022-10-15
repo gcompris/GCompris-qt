@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2022-09-26 11:33+0200\n"
+"PO-Revision-Date: 2022-10-14 10:09+0200\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -8988,9 +8988,6 @@ msgstr "De breuken aanmaken"
 
 #. Help title
 #: activities/fractions_create/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "A shape splitted in equal parts is displayed on screen."
 msgctxt "ActivityInfo|"
 msgid "A shape split in equal parts is displayed on screen."
 msgstr "Een vorm opgesplitst in gelijke delen wordt op het scherm getoond."
@@ -9324,12 +9321,9 @@ msgstr ""
 
 #. Activity title
 #: activities/fractions_find/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Find the fraction"
 msgctxt "ActivityInfo|"
 msgid "Find the fractions"
-msgstr "Zoek de breuk"
+msgstr "Zoek de onderdelen van de breuk"
 
 #. Help title
 #: activities/fractions_find/ActivityInfo.qml:16
