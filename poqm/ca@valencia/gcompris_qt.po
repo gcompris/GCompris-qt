@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2014-12-25 01:10+0000\n"
-"PO-Revision-Date: 2022-09-26 12:58+0200\n"
+"PO-Revision-Date: 2022-10-14 13:43+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca@valencia\n"
@@ -2939,9 +2939,9 @@ msgid ""
 "characters to use as a reference. Each level teaches a set of 10 characters."
 msgstr ""
 "La pantalla té 3 seccions: una cel·la de braille interactiva, una instrucció "
-"que vos indica la lletra a reproduir, i a la part superior els caràcters en "
-"braille per a emprar-los com a referència. Cada nivell ensenya un conjunt de "
-"10 caràcters."
+"que vos indica la lletra que es reproduirà, i a la part superior els "
+"caràcters en braille per a emprar-los com a referència. Cada nivell ensenya "
+"un conjunt de 10 caràcters."
 
 #: activities/braille_alphabets/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
@@ -4172,7 +4172,7 @@ msgid ""
 msgstr ""
 "Les dames es juguen amb dos oponents, en costats oposats del tauler. Un "
 "jugador té les peces negres i l'altra té les blanques. Els jugadors alternen "
-"els torns. Ningú pot moure una peça de l'oponent. Un moviment consistix a "
+"els torns. Ningú pot moure una peça de l'oponent. Un moviment consistix en "
 "moure una peça en diagonal a un quadrat adjacent que no es trobe ocupat. Si "
 "el quadrat adjacent conté una peça de l'oponent, i el quadrat immediatament "
 "més enllà seu està buit, la peça es podrà capturar (i retirar del joc) "
@@ -4253,7 +4253,7 @@ msgid ""
 msgstr ""
 "Les dames es juguen amb dos oponents, en costats oposats del tauler. Un "
 "jugador té les peces negres i l'altra té les blanques. Els jugadors alternen "
-"els torns. Ningú pot moure una peça de l'oponent. Un moviment consistix a "
+"els torns. Ningú pot moure una peça de l'oponent. Un moviment consistix en "
 "moure una peça en diagonal a un quadrat adjacent que no es trobe ocupat. Si "
 "el quadrat adjacent conté una peça de l'oponent, i el quadrat immediatament "
 "més enllà seu està buit, la peça es podrà capturar (i retirar del joc) "
@@ -9314,9 +9314,6 @@ msgstr "Crear les fraccions"
 
 #. Help title
 #: activities/fractions_create/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "A shape splitted in equal parts is displayed on screen."
 msgctxt "ActivityInfo|"
 msgid "A shape split in equal parts is displayed on screen."
 msgstr "Es mostra en la pantalla una forma dividida en parts iguals."
@@ -9649,12 +9646,9 @@ msgstr ""
 
 #. Activity title
 #: activities/fractions_find/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Find the fraction"
 msgctxt "ActivityInfo|"
 msgid "Find the fractions"
-msgstr "Troba la fracció"
+msgstr "Troba les fraccions"
 
 #. Help title
 #: activities/fractions_find/ActivityInfo.qml:16
@@ -14363,14 +14357,15 @@ msgstr "Endevina un número entre l'1 i %1."
 #: activities/hangman/ActivityConfig.qml:43
 msgctxt "ActivityConfig|"
 msgid "Display the image to find as hint"
-msgstr "Mostra la imatge a buscar com un consell"
+msgstr "Mostra la imatge que es busca com un consell"
 
 #: activities/hangman/ActivityConfig.qml:52
 msgctxt "ActivityConfig|"
 msgid ""
 "Speak the words to find (if available) when three attempts are remaining"
 msgstr ""
-"Llig les paraules a buscar (si està disponible) quan queden tres intents"
+"Llig les paraules que s'han de buscar (si està disponible) quan queden tres "
+"intents"
 
 #. Activity title
 #: activities/hangman/ActivityInfo.qml:15
@@ -14406,9 +14401,9 @@ msgid ""
 "If the option 'Display the image to find as hint' is activated, on every "
 "wrong try a part of the image representing the word will be revealed."
 msgstr ""
-"Si està activada l'opció «Mostra la imatge a buscar com un consell» en cada "
-"intent equivocat, es donarà a conéixer una part de la imatge que representa "
-"la paraula."
+"Si està activada l'opció «Mostra la imatge que es busca com un consell» en "
+"cada intent equivocat, es donarà a conéixer una part de la imatge que "
+"representa la paraula."
 
 #: activities/hangman/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
@@ -14417,9 +14412,9 @@ msgid ""
 "corresponding voice is available, you will hear the word to find when three "
 "attempts are remaining."
 msgstr ""
-"Si està activada l'opció «Llig les paraules a buscar...», i si està "
-"disponible la veu corresponent, escoltareu la paraula a trobar quan falten "
-"tres intents."
+"Si està activada l'opció «Llig les paraules que s'han de buscar...», i si "
+"està disponible la veu corresponent, escoltareu la paraula a trobar quan "
+"falten tres intents."
 
 #: activities/hangman/hangman.js:215
 #, qt-format
@@ -16069,7 +16064,7 @@ msgstr "Només 5 paraules"
 #: activities/letter-in-word/ActivityConfig.qml:59
 msgctxt "ActivityConfig|"
 msgid "Select the case for the letters to search"
-msgstr "Seleccioneu què emprar per a les lletres a buscar"
+msgstr "Seleccioneu què emprar per a les lletres que s'han de buscar"
 
 #: activities/letter-in-word/ActivityConfig.qml:62
 msgctxt "ActivityConfig|"
@@ -20501,7 +20496,7 @@ msgstr "No"
 #: activities/piano_composition/Piano_composition.qml:418
 msgctxt "Piano_composition|"
 msgid "Select the type of melody to load."
-msgstr "Selecciona el tipus de la melodia a carregar."
+msgstr "Selecciona el tipus de la melodia que es carregarà."
 
 #: activities/piano_composition/Piano_composition.qml:423
 msgctxt "Piano_composition|"

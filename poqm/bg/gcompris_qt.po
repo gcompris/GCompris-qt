@@ -24347,23 +24347,3 @@ msgstr ""
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr ""
-
-#, fuzzy
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Play with the computer. Take turns to click the line in which you want to "
-#~ "drop a token. The first player to create a line of 4 tokens wins."
-#~ msgstr ""
-#~ "Натиснете върху колоната, където искате да пуснете пула. Може да "
-#~ "използвате и стрелките на клавиатурата, за да го движите наляво или "
-#~ "надясно, и долната стрелка или интервала, за да го пуснете."
-
-#, fuzzy
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Play with the computer. Take turns to click on the square which you want "
-#~ "to mark. The first player to create a line of 3 marks wins."
-#~ msgstr ""
-#~ "Натиснете върху колоната, където искате да пуснете пула. Може да "
-#~ "използвате и стрелките на клавиатурата, за да го движите наляво или "
-#~ "надясно, и долната стрелка или интервала, за да го пуснете."

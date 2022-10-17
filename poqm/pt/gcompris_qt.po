@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: kstars\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2015-05-27 08:46+0000\n"
-"PO-Revision-Date: 2022-09-26 17:11+0100\n"
+"PO-Revision-Date: 2022-10-16 11:38+0100\n"
 "Last-Translator: Pedro Morais <morais@kde.org>\n"
 "Language-Team: pt <kde-i18n-pt@kde.org>\n"
 "Language: pt\n"
@@ -9784,9 +9784,6 @@ msgstr "Criar as fracções"
 
 #. Help title
 #: activities/fractions_create/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "A shape splitted in equal parts is displayed on screen."
 msgctxt "ActivityInfo|"
 msgid "A shape split in equal parts is displayed on screen."
 msgstr "É apresentada no ecrã uma forma dividida em partes iguais."
@@ -10118,12 +10115,9 @@ msgstr "Seleccione o máximo de partes sem levar mais de metade da tarte."
 
 #. Activity title
 #: activities/fractions_find/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Find the fraction"
 msgctxt "ActivityInfo|"
 msgid "Find the fractions"
-msgstr "Descobrir a fracção"
+msgstr "Descobrir as fracções"
 
 #. Help title
 #: activities/fractions_find/ActivityInfo.qml:16
