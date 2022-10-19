@@ -20,7 +20,7 @@ ActivityBase {
     onStart: focus = true
     onStop: {}
 
-    pageComponent: Image{
+    pageComponent: Image {
         id: background
         source: "qrc:/gcompris/src/activities/checkers/resource/background-wood.svg"
         anchors.centerIn: parent
@@ -43,14 +43,11 @@ ActivityBase {
             property alias bonus: bonus
             readonly property var levels: activity.datasetLoader.data
             property alias dataListModel: dataListModel
-            property int selected: -1
+            property int selectedLine: -1
             property int spacingOfElement: 20 * ApplicationInfo.ratio
             property int sizeOfElement: 36 * ApplicationInfo.ratio
-            property int step: 0
-            property int numOfRowsSelected: 0
-            property int index: 0
-            property bool okClicked: false
-            property bool wrongAnswer: false
+            property int numberOfRowsCompleted: 0
+            property alias score: score
         }
 
         onStart: { Activity.start(items) }
@@ -71,38 +68,61 @@ ActivityBase {
             id: dataListModel
         }
 
+        Keys.enabled: !bonus.isPlaying
         Keys.onPressed: {
             switch(event.key) {
-            case Qt.Key_Less :
-                event.accepted = true
-                lessThanSign.clicked()
-                break;
-            case Qt.Key_Equal :
+                case Qt.Key_Less:
                 event.accepted = true;
-                equalSign.clicked()
+                symbolSelectionList.clickItemWithSign("<");
                 break;
-            case Qt.Key_Greater :
-                event.accepted = true
-                greaterThanSign.clicked()
-                break;
-            case Qt.Key_Up :
+                case Qt.Key_Equal:
                 event.accepted = true;
-                Activity.upAction()
+                symbolSelectionList.clickItemWithSign("=");
                 break;
-            case Qt.Key_Down :
+                case Qt.Key_Greater:
                 event.accepted = true;
-                Activity.downAction()
+                symbolSelectionList.clickItemWithSign(">");
                 break;
-            case Qt.Key_Return :
+                case Qt.Key_Up:
                 event.accepted = true;
-                okButton.clicked()
+                Activity.upAction();
                 break;
-            case Qt.Key_Backspace :
+                case Qt.Key_Down:
                 event.accepted = true;
-                Activity.clearSymbol()
+                Activity.downAction();
                 break;
+                case Qt.Key_Left:
+                event.accepted = true;
+                symbolSelectionList.decrementCurrentIndex();
+                break;
+                case Qt.Key_Right:
+                event.accepted = true;
+                symbolSelectionList.incrementCurrentIndex();
+                break;
+                case Qt.Key_Space:
+                event.accepted = true;
+                if(symbolSelectionList.currentItem) {
+                    symbolSelectionList.currentItem.onClicked();
+                }
+                break;
+                case Qt.Key_Return:
+                case Qt.Key_Enter:
+                event.accepted = true;
+                if(okButton.visible) {
+                    okButton.clicked();
+                }
+                break;
+                case Qt.Key_Backspace:
+                event.accepted = true;
+                var equation = dataListModel.get(items.selectedLine);
+                if(equation.symbol != "") {
+                    equation.symbol = "";
+                    items.numberOfRowsCompleted --;
+                    equation.isValidationImageVisible = false;
+                }
+                break;
+            }
         }
-    }
 
         Item {
             id: wholeExerciceDisplay
@@ -120,72 +140,21 @@ ActivityBase {
                     anchors.right: parent.right
                     width: parent.width
                     Repeater {
-                            model: dataListModel
-                            delegate:
-                            Item {
-                                height: items.sizeOfElement
-                                width: parent.width
-                                property int modelIndex: DelegateModel.itemsIndex
-                                Rectangle {
-                                    width: items.sizeOfElement
-                                    height: parent.height
-                                    anchors.right: mathSymbolDisplayText.left
-                                    anchors.rightMargin: items.sizeOfElement / (30 * ApplicationInfo.ratio)
-                                    anchors.left: parent.left
-                                    color: "transparent"
-                                    ComparatorText {
-                                        id: leftHandSideCharDisplay
-                                        anchors.fill : parent
-                                        text: leftHandSide
-                                        color: evaluate == true ? ( currentlySelected === true ? "orange" : "#000000" ) : "red"
-
-                                    }
-                                }
-
-                                Rectangle {
-                                    id: mathSymbolDisplayText
-                                    height: items.sizeOfElement
-                                    width: items.sizeOfElement
-                                    anchors.horizontalCenter: parent.horizontalCenter
-                                    color: "transparent"
-                                    ComparatorText {
-                                        color: "black"
-                                        text:" " + symbol + " "
-                                        anchors.fill : parent
-                                        horizontalAlignment: Text.AlignHCenter
-                                        verticalAlignment: Text.AlignVCenter
-                                    }
-                                }
-
-                                Rectangle {
-                                    width: items.sizeOfElement
-                                    height: parent.height
-                                    anchors.left: mathSymbolDisplayText.right
-                                    anchors.leftMargin: items.sizeOfElement / (30 * ApplicationInfo.ratio)
-                                    anchors.right: parent.right
-                                    color: "transparent"
-                                    ComparatorText {
-                                        id: rightHandSideCharDisplay
-                                        anchors.fill : parent
-                                        text: rightHandSide
-                                        color: currentlySelected === true ? "orange" : "#000000"
-                                    }
-                                }
-                            }
+                        model: dataListModel
+                        delegate: ComparatorLine {
                         }
                     }
                 }
             }
-
+        }
 
         Item {
             id: upDownButtonSet
             height: layoutArea.height * 0.1
             width: layoutArea.width
-            anchors.top: charList.bottom
+            anchors.bottom: wholeExerciceDisplay.bottom
             anchors.topMargin: 20 * ApplicationInfo.ratio
             anchors.right: layoutArea.right
-            //visible: items.selected === -1 ? false : true
             Row {
                 spacing: items.spacingOfElement
                 anchors.right: parent.right
@@ -211,7 +180,7 @@ ActivityBase {
                     id: downButton
                     source: "qrc:/gcompris/src/activities/path_encoding/resource/arrow.svg"
                     sourceSize.height: parent.height
-                    rotation: +90
+                    rotation: 90
                     Rectangle {
                         anchors.fill: parent
                         radius: width * 0.5
@@ -221,156 +190,42 @@ ActivityBase {
                         opacity: 0.2
                     }
                     onClicked: {
-                       Activity.downAction()
+                        Activity.downAction()
                     }
                 }
             }
         }
-
-       Item {
-            id: selectedAnswerArea
+            
+        ListView {
+            id: symbolSelectionList
             height: layoutArea.height * 0.1
-            width: layoutArea.width
-            anchors.bottom: symbolSelectionRow.top
-            anchors.bottomMargin: items.sizeOfElement
-            anchors.top: wholeExerciceDisplay.bottom
-            anchors.topMargin: items.size
-                GCText {
-                    id:leftHandSideHighlightDisplay
-                    color: "#FFFFFF"
-                    verticalAlignment: Text.AlignVCenter
-                    horizontalAlignment: Text.AlignHCenter
-                    anchors.right: inputAreaHighlightDisplay.left
-                    anchors.rightMargin: items.sizeOfElement
-                    height: parent.height
-                    text: (items.selected === -1) ? "" : dataListModel.get(items.selected).leftHandSide.toString()
-                }
-
-                Rectangle {
-                        id: inputAreaHighlightDisplay
-                        height: parent.height
-                        width: parent.height
-                        anchors.horizontalCenter: parent.horizontalCenter
-                        radius: 10
-                        color: "#E8E8E8"
-                        visible: items.selected !== -1
-                            GCText {
-                                anchors.centerIn: parent
-                                color: "#000000"
-                                text: (items.step === 1 && items.selected !== -1) ? dataListModel.get(items.selected).symbol : ""
-                                anchors.fill : parent
-                                horizontalAlignment: Text.AlignHCenter
-                                verticalAlignment: Text.AlignVCenter
-                            }
-                }
-
-                GCText {
-                    id:rightHandSideHighlightDisplay
-                    color: "#FFFFFF"
-                    verticalAlignment: Text.AlignVCenter
-                    horizontalAlignment: Text.AlignHCenter
-                    anchors.left: inputAreaHighlightDisplay.right
-                    anchors.leftMargin: items.sizeOfElement
-                    height: parent.height
-                    text: (items.selected === -1) ? "" : dataListModel.get(items.selected).rightHandSide.toString()
-                }
-        }
-
-        Item {
-            id: symbolSelectionRow
-            height: layoutArea.height * 0.1
-            width: layoutArea.width
             anchors.bottom: bar.top
+            width: wholeExerciceDisplay.width
             anchors.bottomMargin: 30 * ApplicationInfo.ratio
-            Row {
-                height: parent.height
-                anchors.horizontalCenter: parent.horizontalCenter
-                spacing: items.sizeOfElement
-                GCButton {
-                    id: lessThanSign
-                    height: parent.height
-                    width: parent.height
-                    onClicked: {
-                        items.step = 0
-                        dataListModel.get(items.selected).symbol = "<"
-                        dataListModel.get(items.selected).visited ++
-                        //increment the numOfRowsSelected by 1 if symbol has been selected for the row
-                        items.numOfRowsSelected = dataListModel.get(items.selected).visited == 1 ? items.numOfRowsSelected + 1 : items.numOfRowsSelected
-                        items.step = 1
-                    }
-                    Rectangle {
-                        anchors.fill: parent
-                        radius: width * 0.5
-                        color: "#6495ED"
-                        border.color: "#FFFFFF"
-                        border.width: 4
-
-                    }
-                    GCText {
-                        anchors.centerIn: parent
-                        verticalAlignment: Text.AlignVCenter
-                        horizontalAlignment: Text.AlignHCenter
-                        text: "<"
-                        fontSize: largeSize
-                        color: "#FFFFFF"
-                    }
+            anchors.horizontalCenter: wholeExerciceDisplay.horizontalCenter
+            orientation: Qt.Horizontal
+            interactive: false
+            keyNavigationWraps: true
+            spacing: items.sizeOfElement
+        currentIndex: -1
+            model: ["<", "=", ">"]
+            delegate: ComparatorSign {
+                height: ListView.view.height
+                width: height
+                signValue: modelData
+                isSelected: ListView.isCurrentItem
+                onClickTriggered: {
+                    symbolSelectionList.currentIndex = index
                 }
-
-                GCButton {
-                    id: equalSign
-                    height: parent.height
-                    width: parent.height
-                    onClicked:{
-                        items.step = 0
-                        dataListModel.get(items.selected).symbol = "="
-                        dataListModel.get(items.selected).visited ++
-                        //increment the numOfRowsSelected by 1 if symbol has been selected for the row
-                        items.numOfRowsSelected = dataListModel.get(items.selected).visited == 1 ? items.numOfRowsSelected + 1 : items.numOfRowsSelected
-                        items.step = 1
-                    }
-                    Rectangle {
-                        anchors.fill: parent
-                        radius: width * 0.5
-                        color: "#6495ED"
-                        border.color: "#FFFFFF"
-                        border.width: 4
-                    }
-                    GCText {
-                        anchors.centerIn: parent
-                        verticalAlignment: Text.AlignVCenter
-                        horizontalAlignment: Text.AlignHCenter
-                        text: "="
-                        fontSize: largeSize
-                        color: "#FFFFFF"
-                    }
-                }
-
-                GCButton {
-                    id: greaterThanSign
-                    height: parent.height
-                    width: parent.height
-                    onClicked: {
-                        items.step = 0
-                        dataListModel.get(items.selected).symbol = ">"
-                        dataListModel.get(items.selected).visited ++
-                        //increment the numOfRowsSelected by 1 if symbol has been selected for the row
-                        items.numOfRowsSelected = dataListModel.get(items.selected).visited == 1 ? items.numOfRowsSelected + 1 : items.numOfRowsSelected
-                        items.step = 1
-                    }
-                    Rectangle {
-                        anchors.fill: parent
-                        radius: width * 0.5
-                        color: "#6495ED"
-                        border.color: "#FFFFFF"
-                        border.width: 4
-                    }
-                    GCText {
-                        anchors.centerIn: parent
-                        verticalAlignment: Text.AlignVCenter
-                        horizontalAlignment: Text.AlignHCenter
-                        text: ">"
-                        fontSize: largeSize
-                        color: "#FFFFFF"
+            }
+            // We should use getItemAtIndex(model.get(sign)) instead of this method
+            // but it's Qt 5.13 and we need to support Qt 5.12
+            function clickItemWithSign(sign) {
+                for(var i = 0 ; i < symbolSelectionList.count ; ++ i) {
+                    symbolSelectionList.currentIndex = i;
+                    if(symbolSelectionList.currentItem.signValue == sign) {
+                        symbolSelectionList.currentItem.clicked();
+                        break;
                     }
                 }
             }
@@ -379,13 +234,13 @@ ActivityBase {
         BarButton {
             id: okButton
             source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
-            height: items.sizeOfElement
-            width: items.sizeOfElement
-            visible: items.numOfRowsSelected == dataListModel.count
+            visible: items.numberOfRowsCompleted == dataListModel.count
+            sourceSize.width: 60 * ApplicationInfo.ratio
+            enabled: !bonus.isPlaying
             anchors {
-                right: parent.right
+                top: score.top
+                right: score.left
                 rightMargin: 20
-                bottom: bar.top
             }
             onClicked: {
                 Activity.checkAnswer()
@@ -416,6 +271,12 @@ ActivityBase {
             }
         }
 
+        Score {
+            id: score
+            anchors.right: parent.right
+            anchors.bottom: bar.top
+        }
+
         Bar {
             id: bar
             content: BarEnumContent { value: help | home | level | activityConfig }
@@ -432,9 +293,7 @@ ActivityBase {
 
         Bonus {
             id: bonus
-            Component.onCompleted: win.connect(Activity.nextLevel)
+            Component.onCompleted: win.connect(Activity.nextSubLevel)
         }
-
     }
-
 }

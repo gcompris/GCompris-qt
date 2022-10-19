@@ -11,26 +11,26 @@
 import GCompris 1.0
 
 Data {
-    objective: qsTr("1 decimal place between 0 to 9.")
-    difficulty: 1
+    objective: qsTr("2 decimal places between 0 to 99.99.")
+    difficulty: 6
 
     data: [
         {
             random: true,
             numberOfSublevels: 5,
-            maxDistanceBetweenNumbers: 1,
-            precision: 0.1,
+            maxDistanceBetweenNumbers: 0.5,
+            precision: 0.01,
             minValue: 0.0,
-            maxValue: 9.0,
+            maxValue: 99.99,
             numberOfEquations: 5
         },
         {
             random: true,
             numberOfSublevels: 5,
-            maxDistanceBetweenNumbers: 0.5,
-            precision: 0.1,
+            maxDistanceBetweenNumbers: 0.05,
+            precision: 0.01,
             minValue: 0.0,
-            maxValue: 9.0,
+            maxValue: 99.99,
             numberOfEquations: 5
         }
     ]

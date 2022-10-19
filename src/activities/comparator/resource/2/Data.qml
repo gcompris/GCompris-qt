@@ -17,15 +17,24 @@ Data {
     data: [
         {
             random: true,
+            numberOfSublevels: 5,
             minValue: 1,
-            maxValue: 9,
-            count: 5
+            maxValue: 19,
+            numberOfEquations: 5
         },
         {
             random: true,
-            minValue: 11,
+            numberOfSublevels: 5,
+            minValue: 1,
             maxValue: 19,
-            count: 5
+            numberOfEquations: 5
+        },
+        {
+            random: true,
+            numberOfSublevels: 5,
+            minValue: 1,
+            maxValue: 19,
+            numberOfEquations: 5
         }
     ]
 }

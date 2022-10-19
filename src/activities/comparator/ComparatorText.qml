@@ -1,4 +1,4 @@
-/* GCompris - Comparator.qml
+/* GCompris - ComparatorText.qml
  *
  * SPDX-FileCopyrightText: 2022 Aastha Chauhan <aastha.chauhan01@gmail.com>
  *
@@ -8,23 +8,18 @@
  */
 import QtQuick 2.12
 import GCompris 1.0
-import QtQml.Models 2.12
-import QtQuick.Controls 2.12
 
 import "../../core"
-import "comparator.js" as Activity
 
 GCText {
-    font.bold : currentlySelected === true ? true : false
+    readonly property color selectedColor: "blue"
+    readonly property color unselectedColor: "black"
+
+    height: items.sizeOfElement
+    width: items.sizeOfElement
+    font.bold: currentlySelected === true
     verticalAlignment: Text.AlignVCenter
     horizontalAlignment: Text.AlignHCenter
     fontSizeMode: Text.Fit
-
-    MouseArea {
-        anchors.fill: parent
-        onClicked: {
-            items.index = modelIndex
-            Activity.mouseAreaAction()
-        }
-    }
+    color: currentlySelected === true ? selectedColor : unselectedColor
 }

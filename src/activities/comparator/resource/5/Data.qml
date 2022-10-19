@@ -17,15 +17,27 @@ Data {
     data: [
         {
             random: true,
+            numberOfSublevels: 5,
+            maxDistanceBetweenNumbers: 100000,
             minValue: 1,
-            maxValue: 500000,
-            count: 5
+            maxValue: 1000000,
+            numberOfEquations: 5
         },
         {
             random: true,
-            minValue: 500001,
+            numberOfSublevels: 5,
+            maxDistanceBetweenNumbers: 1000,
+            minValue: 1,
             maxValue: 1000000,
-            count: 5
+            numberOfEquations: 5
+        },
+        {
+            random: true,
+            numberOfSublevels: 5,
+            maxDistanceBetweenNumbers: 10,
+            minValue: 1,
+            maxValue: 1000000,
+            numberOfEquations: 5
         }
     ]
 }

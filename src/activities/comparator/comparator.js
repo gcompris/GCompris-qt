@@ -7,167 +7,178 @@
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
 .pragma library
-.import QtQuick 2.12 as Quick
+.import GCompris 1.0 as GCompris
 
-var currentLevel = 0
-var numberOfLevel
-var items
+var currentLevel = 0;
+var numberOfLevel;
+var currentSubLevel = 0;
+var numberOfSubLevel;
+var items;
 
 function start(items_) {
-    items = items_
-    currentLevel = 0
-    numberOfLevel = items.levels.length
-    initLevel()
+    items = items_;
+    currentLevel = 0;
+    currentSubLevel = 0;
+    numberOfLevel = items.levels.length;
+    initLevel();
 }
 
 function stop() {
 }
 
 function initLevel() {
-    items.bar.level = currentLevel + 1
-    items.dataListModel.clear()
-    items.selected = -1
-    items.step = 0
-    items.numOfRowsSelected = 0
-    var minValue = items.levels[currentLevel].minValue
-    var maxValue = items.levels[currentLevel].maxValue
-    var count = items.levels[currentLevel].count
+    items.bar.level = currentLevel + 1;
+    items.score.currentSubLevel = currentSubLevel + 1;
+    items.dataListModel.clear();
+    items.numberOfRowsCompleted = 0;
+    var currentDataset = items.levels[currentLevel];
+    var minValue = currentDataset.minValue;
+    var maxValue = currentDataset.maxValue;
+    var numberOfEquations = currentDataset.numberOfEquations;
+    // By default, the precision is the unit, no decimal numbers
+    var precision = currentDataset.precision ? currentDataset.precision : 1;
+    var decimalNumbersCount = Math.log10(1 / precision);
+    var maxDistanceBetweenNumbers = currentDataset.maxDistanceBetweenNumbers;
+    if(maxDistanceBetweenNumbers) {
+        minValue = minValue + maxDistanceBetweenNumbers;
+        maxValue = maxValue - maxDistanceBetweenNumbers;
+    }
+
     //RandomDataset
-    console.log(items.levels[currentLevel].toString())
-    if(items.levels[currentLevel].random) {
-        for(var i = 0; i < count; ++i) {
-            var leftHandSide = Math.floor(Math.random() * (maxValue - minValue)) + minValue
-            var rightHandSide = Math.floor(Math.random() * (maxValue - minValue)) + minValue
+    if(currentDataset.random) {
+        for(var i = 0; i < numberOfEquations; ++i) {
+            var leftHandSide = 0;
+            var rightHandSide = 0;
+            // Find a number between [minValue+maxDistanceBetweenNumbers; maxValue-maxDistanceBetweenNumbers] at the good precision
+            // Find the distance from this number to the second one between [-maxDistanceBetweenNumbers; +maxDistanceBetweenNumbers]
+            // allowing the second number to be between [minValue; maxValue]
+            // truncate the numbers at the good precision
+            if(maxDistanceBetweenNumbers) {
+                leftHandSide = Math.floor(Math.random() * (maxValue - minValue) / precision) * precision + minValue;
+                var distance = Math.floor(2 * Math.random() * maxDistanceBetweenNumbers / precision) * precision - maxDistanceBetweenNumbers;
+                rightHandSide = leftHandSide + distance;
+                leftHandSide = toDecimalLocaleNumber(leftHandSide, decimalNumbersCount);
+                rightHandSide = toDecimalLocaleNumber(rightHandSide, decimalNumbersCount);
+            }
+            else {
+                leftHandSide = toDecimalLocaleNumber(Math.floor(Math.random() * (maxValue - minValue + 1)) + minValue, decimalNumbersCount);
+                rightHandSide = toDecimalLocaleNumber(Math.floor(Math.random() * (maxValue - minValue + 1)) + minValue, decimalNumbersCount);
+            }
+
             items.dataListModel.append({
-                "leftHandSide": leftHandSide.toString(),
-                "rightHandSide": rightHandSide.toString(),
+                "leftHandSide": leftHandSide,
+                "rightHandSide": rightHandSide,
                 "symbol": "",
-                "symbolPlainText" : ".....",
-                "currentlySelected" : false,
-                //adding a counter to check if all rows have been visited or not
-                "visited" : 0,
-                "evaluate" : true
+                "isValidationImageVisible": false,
+                "isCorrectAnswer": true
             })
         }
+        items.score.numberOfSubLevels = currentDataset.numberOfSublevels;
     }
     //fixedDataset
     else {
-        count = items.levels[currentLevel].values.length
-        for(var i = 0; i < count; i++) {
-            var leftHandSide = items.levels[currentLevel].values[i][0]
-            var rightHandSide = items.levels[currentLevel].values[i][1]
+        var sublevel = currentDataset.values[currentSubLevel];
+        numberOfEquations = sublevel.length;
+        for(var i = 0; i < numberOfEquations; i++) {
+            var leftHandSide = sublevel[i][0].toString()
+            var rightHandSide = sublevel[i][1].toString()
             items.dataListModel.append({
-                "leftHandSide": leftHandSide.toString(),
-                "rightHandSide": rightHandSide.toString(),
-                "symbol": ".....",
-                "currentlySelected" : false,
-                //adding a counter to check if all rows have been visited or not
-                "visited" : 0,
-                "evaluate" : true
+                "leftHandSide": leftHandSide,
+                "rightHandSide": rightHandSide,
+                "symbol": "",
+                "isValidationImageVisible": false,
+                "isCorrectAnswer": true
             })
         }
+        items.score.numberOfSubLevels = currentDataset.values.length;
     }
-    downAction()
-    items.okClicked = true
+    numberOfSubLevel = items.score.numberOfSubLevels;
+    // Refresh the bindings by forcing a change of value and always select the first line by default
+    items.selectedLine = 1;
+    items.selectedLine = 0;
 }
 
 function checkAnswer() {
-    if(items.okClicked === true) {
+    var allCorrect = true;
 
-        var finalEvaluate = true
-
-        for(var i = 0; i < items.dataListModel.count; ++i) {
-
-            if(!items.dataListModel.get(i).evaluate) {
-                finalEvaluate = false
-                    break;
-            }
+    for(var i = 0; i < items.dataListModel.count; ++i) {
+        var line = items.dataListModel.get(i);
+        line.isCorrectAnswer = evaluateAnswer(line);
+        if(!line.isCorrectAnswer) {
+            allCorrect = false;
         }
+        line.isValidationImageVisible = true;
+    }
 
-        if(finalEvaluate) {
-
-            items.bonus.good('flower')
-                items.okClicked = false
-            }
-
-        else {
-
-            items.bonus.bad('flower')
-            items.wrongAnswer = true
-            items.okClicked = true
-
-            }
-
+    if(allCorrect) {
+        items.bonus.good('flower');
+    }
+    else {
+        items.bonus.bad('flower');
     }
 }
 
 
-function evaluateAnswer() {
+function evaluateAnswer(equation) {
+    var leftHandSide = equation.leftHandSide;
+    var rightHandSide = equation.rightHandSide;
+    var symbol = equation.symbol;
 
-            var leftHandSide = items.dataListModel.get(items.selected).leftHandSide
-            var rightHandSide = items.dataListModel.get(items.selected).rightHandSide
-            var symbol = items.dataListModel.get(items.selected).symbol
-            var evaluate = items.dataListModel.get(items.selected).evaluate
+    var isCorrectAnswer = true;
 
-
-        if(( leftHandSide < rightHandSide ) && ( symbol !== "<" )) evaluate = false
-
-        else  if (( leftHandSide > rightHandSide ) && ( symbol !== ">" )) evaluate = false
-
-        else if (( leftHandSide === rightHandSide ) && ( symbol !== "=")) evaluate = false
-
-        else evaluate = true
-
-
+    if((leftHandSide < rightHandSide) && (symbol !== "<")) {
+        isCorrectAnswer = false;
+    }
+    else if ((leftHandSide > rightHandSide) && (symbol !== ">")) {
+        isCorrectAnswer = false;
+    }
+    else if ((leftHandSide === rightHandSide) && (symbol !== "=")) {
+        isCorrectAnswer = false;
+    }
+    return isCorrectAnswer;
 }
 
-
-function mouseAreaAction(){
-    if (items.selected > -1 ) {
-        items.dataListModel.get(items.selected).currentlySelected = false
-        items.selected = items.index
-        items.dataListModel.get(items.selected).currentlySelected = true
+function upAction() {
+    if (items.selectedLine > 0) {
+        items.selectedLine --;
     }
-    items.step = items.dataListModel.get(items.selected).symbol === "" && items.selected !== -1 ? 0 : 1
 }
-function upAction(){
-    if (items.selected > 0 ){
-        evaluateAnswer()
-        items.dataListModel.get(items.selected).currentlySelected = false
-        items.selected --
-        items.dataListModel.get(items.selected).currentlySelected = true
-        evaluateAnswer()
-    }
-    items.step = items.dataListModel.get(items.selected).symbol === "" ? 0 : 1
 
-}
-function downAction(){
-    if (items.selected < (items.dataListModel.count - 1)){
-        if(items.selected > -1 ) {
-            evaluateAnswer()
-            items.dataListModel.get(items.selected).currentlySelected = false
-        }
-        items.selected ++
-        items.dataListModel.get(items.selected).currentlySelected = true
-        evaluateAnswer()
+function downAction() {
+    if (items.selectedLine < (items.dataListModel.count - 1)) {
+        items.selectedLine ++;
     }
-    items.step = items.dataListModel.get(items.selected).symbol === "" ? 0 : 1
 }
 
 function nextLevel() {
     if(numberOfLevel <= ++currentLevel) {
-        currentLevel = 0
+        currentLevel = 0;
+    }
+    currentSubLevel = 0;
+    initLevel();
+}
+
+function nextSubLevel() {
+    if(numberOfSubLevel <= ++currentSubLevel) {
+        currentSubLevel = 0;
+        nextLevel();
     }
     initLevel();
 }
 
 function previousLevel() {
     if(--currentLevel < 0) {
-        currentLevel = numberOfLevel - 1
+        currentLevel = numberOfLevel - 1;
     }
+    currentSubLevel = 0;
     initLevel();
 }
-function clearSymbol(){
-    items.dataListModel.get(items.selected).symbol = ""
-    items.dataListModel.get(items.selected).symbolPlainText = ""
+
+function toDecimalLocaleNumber(decimalNumber, precision) {
+    var locale = GCompris.ApplicationSettings.locale;
+    if(locale === "system") {
+        locale = Qt.locale().name === "C" ? "en_US" : Qt.locale().name;
+    }
+    var decimalLocale = decimalNumber.toLocaleString(Qt.locale(locale), 'f', precision);
+    return decimalLocale;
 }
