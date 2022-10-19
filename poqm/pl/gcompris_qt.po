@@ -4,8 +4,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2022-10-08 11:13+0200\n"
-"Last-Translator: Grzegorz Koryga <rehork@tutamail.com>\n"
+"PO-Revision-Date: 2022-10-18 18:04+0200\n"
+"Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
 "Language-Team: Polish <kde-i18n-doc@kde.org>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
@@ -15,7 +15,7 @@ msgstr ""
 "|| n%100>=20) ? 1 : 2);\n"
 "X-Language: pl\n"
 "X-Qt-Contexts: true\n"
-"X-Generator: Lokalize 22.04.1\n"
+"X-Generator: Lokalize 22.08.1\n"
 
 #. Activity title
 #: activities/advanced_colors/ActivityInfo.qml:15
@@ -8948,9 +8948,6 @@ msgstr "Twórz ułamki"
 
 #. Help title
 #: activities/fractions_create/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "A shape splitted in equal parts is displayed on screen."
 msgctxt "ActivityInfo|"
 msgid "A shape split in equal parts is displayed on screen."
 msgstr "Na ekranie wyświetlany jest kształt podzielony na równe części."
@@ -9280,9 +9277,6 @@ msgstr "Wybierz tyle części, ile możesz, nie biorąc więcej niż połowy tor
 
 #. Activity title
 #: activities/fractions_find/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Find the fraction"
 msgctxt "ActivityInfo|"
 msgid "Find the fractions"
 msgstr "Znajdź ułamek"
