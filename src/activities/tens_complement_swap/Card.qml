@@ -5,7 +5,7 @@
  */
 import QtQuick 2.12
 import "../../core"
-import "tens_complement_2.js" as Activity
+import "tens_complement_swap.js" as Activity
 
 Item {
     property color containerColor
@@ -13,8 +13,8 @@ Item {
     readonly property color numberCardBorderColor: "black"
     Rectangle {
         color: type == "numberCard" || type == "resultCard" ? numberCardColor : containerColor
-        height: (selected) ? parent.height : parent.height * 0.8
-        width: (selected) ? parent.width : parent.width * 0.9
+        height: selected ? parent.height : parent.height * 0.8
+        width: selected ? parent.width : parent.width * 0.9
         border.width: 2
         border.color: (type == "numberCard" || type == "resultCard") ? numberCardBorderColor : containerColor
         radius: 20

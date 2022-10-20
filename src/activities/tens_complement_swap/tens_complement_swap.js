@@ -1,10 +1,11 @@
-/* GCompris - tens_complement_2.js
+/* GCompris - tens_complement_swap.js
  *
  * SPDX-FileCopyrightText: 2022 Samarth Raj <mailforsamarth@gmail.com>
  * SPDX-License-Identifier: GPL-3.0-or-later
  *
  */
 .pragma library
+.import "qrc:/gcompris/src/core/core.js" as Core
 
 var currentLevel = 0;
 var numberOfLevel;
@@ -25,19 +26,19 @@ function start(items_) {
     }
     numberOfDatasetLevel = items.levels.length;
     numberOfLevel = datasets.length;
-    initLevel()
+    initLevel();
 }
 
 function stop() {
-    destroyListModels();
+    clearListModels();
 }
 
 function initLevel() {
     items.bar.level = currentLevel + 1;
-    destroyListModels();
+    clearListModels();
     for(var indexOfListModel = 0; indexOfListModel < datasets[currentLevel].length; indexOfListModel++) {
-        var model = createNewListModel(items.background);
-        var valueArray = getValueArray(datasets[currentLevel][indexOfListModel].numberValue);
+        var model = [];
+        var valueArray = getValueArray(datasets[currentLevel][indexOfListModel]);
         for(var indexOfDisplayArray = 0; indexOfDisplayArray < valueArray.length - 1; indexOfDisplayArray++) {
             var card = {};
             if(!Number.isNaN(parseInt(valueArray[indexOfDisplayArray]))) {
@@ -55,13 +56,13 @@ function initLevel() {
                     "value": valueArray[indexOfDisplayArray].toString()
                 }
             }
-            model.append(card);
+            model.push(card);
         }
         var resultCard = {
             "type": "resultCard",
             "value": valueArray[valueArray.length - 1].toString(),
         }
-        model.append(resultCard);
+        model.push(resultCard);
         items.equations.append({
             "listmodel": model,
             "isGood": false,
@@ -70,22 +71,8 @@ function initLevel() {
     }
 }
 
-/*
- * This function destroys list models to prevent memory leak.
- */
-function destroyListModels() {
-    for(var i = 0; i < items.equations.count; i++) {
-        items.equations.get(i).listmodel.destroy();
-    }
+function clearListModels() {
     items.equations.clear();
-}
-
-/*
- * This function creates a new list model and attaches it to a parent qml item.
- */
-function createNewListModel(parent) {
-    var newListModel = Qt.createQmlObject('import QtQuick 2.2; \ ListModel {}', parent);
-    return newListModel;
 }
 
 /*
@@ -94,18 +81,47 @@ function createNewListModel(parent) {
  */
 function getValueArray(numberArray) {
     var valueArray = [];
-    var countOfNumbers = numberArray.length;
     var totalSum = 0;
-    var numberOfPairs = Math.floor(countOfNumbers/2);
     var indexOfNumberValue = 0;
+    var countOfNumbers = numberArray.randomValues ? numberArray.numberOfElements : numberArray.numberValue.length;
+    var numberOfPairs = Math.floor(countOfNumbers / 2);
+    var values = [];
+    if(numberArray.randomValues) {
+        var numberOfPairsFilled = 0;
+        while(numberOfPairsFilled != numberOfPairs) {
+            // Get a number between 1 and 9
+            var randomNumber = Math.floor(1 + Math.random() * 9);
+            if(values.indexOf(randomNumber) > -1) {
+                continue; // Avoid having twice the same numbers
+            }
+            values.push(randomNumber);
+            values.push(10 - randomNumber);
+            numberOfPairsFilled ++;
+        };
+        if(countOfNumbers % 2 != 0) {
+            // Add a random number at the end between 1 and 9
+            values.push(Math.floor(Math.random() * 9) + 1);
+        }
+    }
+    else {
+        values = numberArray.numberValue;
+    }
+    if(numberArray.randomizeOrder == undefined || numberArray.randomizeOrder == true) {
+        do {
+            // Shuffle the numbers before creating the model.
+            // Make sure at least the first computation is not correct to avoid having the possibility to have all good answers at start
+            Core.shuffle(values);
+        } while(values[0] + values[1] == 10);
+    }
+
     for(var i = 0; i < numberOfPairs; i++) {
         valueArray.push("(");
-        valueArray.push(numberArray[indexOfNumberValue].toString());
-        totalSum += numberArray[indexOfNumberValue];
+        valueArray.push(values[indexOfNumberValue].toString());
+        totalSum += values[indexOfNumberValue];
         indexOfNumberValue++;
         valueArray.push("+");
-        valueArray.push(numberArray[indexOfNumberValue].toString());
-        totalSum += numberArray[indexOfNumberValue];
+        valueArray.push(values[indexOfNumberValue].toString());
+        totalSum += values[indexOfNumberValue];
         indexOfNumberValue++;
         valueArray.push(")");
         if(i != numberOfPairs - 1) {
@@ -114,8 +130,8 @@ function getValueArray(numberArray) {
     }
     if(countOfNumbers % 2 != 0) {
         valueArray.push("+");
-        valueArray.push(numberArray[indexOfNumberValue].toString());
-        totalSum += numberArray[indexOfNumberValue];
+        valueArray.push(values[indexOfNumberValue].toString());
+        totalSum += values[indexOfNumberValue];
     }
     valueArray.push("=");
     valueArray.push(totalSum.toString());
@@ -188,6 +204,7 @@ function checkAnswer() {
                 if(numberCardCounter == 2) {
                     if(sum != 10) {
                         isRowCorrect = false;
+                        break;
                     }
                     numberCardCounter = 0;
                     sum = 0;
@@ -198,5 +215,10 @@ function checkAnswer() {
         currentRow.isValidationImageVisible = true;
         isAllCorrect = isAllCorrect & isRowCorrect;
     }
-    isAllCorrect ? items.bonus.good("flower") : items.bonus.bad("flower");
+    if(isAllCorrect) {
+        items.bonus.good("flower");
+    }
+    else {
+        items.bonus.bad("flower");
+    }
 }

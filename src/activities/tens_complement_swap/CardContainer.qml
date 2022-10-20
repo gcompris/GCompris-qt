@@ -36,8 +36,7 @@ Item {
 
     Image {
         visible: isValidationImageVisible
-        height: cardContainer.height * 0.65
-        width: cardContainer.height * 0.65
+        sourceSize.width: cardContainer.height * 0.65
         source: isGood === true ? correctAnswerImage : wrongAnswerImage
         anchors {
             left: cardContainer.right

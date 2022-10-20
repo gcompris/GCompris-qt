@@ -1,4 +1,4 @@
-/* GCompris - tens_complement_2.qml
+/* GCompris - tens_complement_swap.qml
  *
  * SPDX-FileCopyrightText: 2022 Samarth Raj <mailforsamarth@gmail.com>
  * SPDX-License-Identifier: GPL-3.0-or-later
@@ -9,7 +9,7 @@ import QtQuick.Controls 2.12
 
 import GCompris 1.0
 import "../../core"
-import "tens_complement_2.js" as Activity
+import "tens_complement_swap.js" as Activity
 import "qrc:/gcompris/src/core/core.js" as Core
 
 ActivityBase {
@@ -44,6 +44,13 @@ ActivityBase {
         onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
 
+        Keys.enabled: okButton.enabled
+        Keys.onPressed: {
+            if(event.key === Qt.Key_Enter || event.key === Qt.Key_Return) {
+                okButton.clicked();
+            }
+        }
+
         Item {
             id: layoutArea
             anchors.top: parent.top
@@ -59,7 +66,7 @@ ActivityBase {
             Rectangle {
                 id: containerHolder
                 height: layoutArea.height * 0.7
-                width: layoutArea.width * 0.6
+                width: layoutArea.width * 0.9
                 color: "white"
                 radius: 20
                 anchors.centerIn: parent
@@ -81,9 +88,7 @@ ActivityBase {
 
             BarButton {
                 id: okButton
-                height: containerHolder.height * 0.2
-                width: containerHolder.height * 0.2
-                z: 2
+                sourceSize.width: 60 * ApplicationInfo.ratio
                 source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
                 anchors {
                     horizontalCenter: layoutArea.horizontalCenter
