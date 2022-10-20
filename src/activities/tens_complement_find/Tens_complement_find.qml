@@ -1,4 +1,4 @@
-/* GCompris - tens_complement.qml
+/* GCompris - tens_complement_find.qml
  *
  * SPDX-FileCopyrightText: 2022 Samarth Raj <mailforsamarth@gmail.com>
  * SPDX-License-Identifier: GPL-3.0-or-later
@@ -8,7 +8,7 @@ import QtQml.Models 2.12
 import QtQuick.Controls 2.12
 import GCompris 1.0
 import "../../core"
-import "tens_complement.js" as Activity
+import "tens_complement_find.js" as Activity
 import "qrc:/gcompris/src/core/core.js" as Core
 
 ActivityBase {
@@ -54,98 +54,92 @@ ActivityBase {
             anchors.bottomMargin: bar.height * 0.2
             anchors.left: parent.left
             anchors.right: parent.right
-        }
-
-        ListModel {
-            id: cardListModel
-        }
-
-        Rectangle {
-            id: numberContainer
-            parent: layoutArea
-            height: layoutArea.height * 0.4
-            width: layoutArea.width * 0.32
-            anchors.left: layoutArea.left
-            anchors.verticalCenter: parent.verticalCenter
-            anchors.leftMargin: layoutArea.width * 0.02
-            color: "pink"
-            border.width: 2
-            border.color: "black"
-            radius: 30
-
-            GridView {
-                id: container
-                height: parent.height
-                width: parent.width
-                interactive: false
-                anchors.centerIn: parent
-                cellHeight: items.cardSize
-                cellWidth: items.cardSize
-                model: cardListModel
-                delegate: NumberCard {
-                    height: items.cardSize
-                    width: items.cardSize
-                }
-            }
-        }
-
-        ListModel {
-            id: holderListModel
-        }
-
-        Rectangle {
-            id: answerHolderArea
-            parent: layoutArea
-            anchors {
-                left: numberContainer.right
-                top: parent.top
-                bottom: parent.bottom
-                right: parent.right
+            
+            ListModel {
+                id: cardListModel
             }
 
             Rectangle {
-                id: answerHolder
-                height: items.cardSize * 4
-                width: parent.width * 0.6
-                anchors.centerIn: parent
+                id: numberContainer
+                height: parent.height * 0.4
+                width: parent.width * 0.32
+                anchors.left: parent.left
+                anchors.verticalCenter: parent.verticalCenter
+                anchors.leftMargin: parent.width * 0.02
+                color: "pink"
+                border.width: 2
+                border.color: "black"
+                radius: 30
 
-                ListView {
+                GridView {
+                    id: container
                     height: parent.height
                     width: parent.width
                     interactive: false
                     anchors.centerIn: parent
-                    model: holderListModel
-                    delegate: AnswerContainer {
+                    cellHeight: items.cardSize
+                    cellWidth: items.cardSize
+                    model: cardListModel
+                    delegate: NumberCard {
                         height: items.cardSize
-                        width: answerHolder.width
+                        width: items.cardSize
                     }
                 }
             }
 
-            BarButton {
-                id: okButton
-                visible: false
-                z: 2
-                source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
-                anchors {
-                    horizontalCenter: answerHolder.horizontalCenter
-                    bottom: parent.bottom
-                }
-                sourceSize.height: items.cardSize * 0.8
-                sourceSize.width: items.cardSize * 0.8
-                height: sourceSize.height
-                width: sourceSize.width
-                enabled: !bonus.isPlaying
-                onClicked: Activity.checkAnswer()
+            ListModel {
+                id: holderListModel
             }
-        }
 
-        Score {
-            id: score
-            parent: layoutArea
-            color: "#76F361"
-            height: items.cardSize * 0.5
-            width: items.cardSize
+            Rectangle {
+                id: answerHolderArea
+                anchors {
+                    left: numberContainer.right
+                    top: parent.top
+                    bottom: parent.bottom
+                    right: parent.right
+                }
+
+                Rectangle {
+                    id: answerHolder
+                    height: items.cardSize * 4
+                    width: parent.width * 0.6
+                    anchors.centerIn: parent
+
+                    ListView {
+                        height: parent.height
+                        width: parent.width
+                        interactive: false
+                        anchors.centerIn: parent
+                        model: holderListModel
+                        delegate: AnswerContainer {
+                            height: items.cardSize
+                            width: answerHolder.width
+                        }
+                    }
+                }
+
+                BarButton {
+                    id: okButton
+                    visible: false
+                    z: 2
+                    source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
+                    anchors {
+                        horizontalCenter: answerHolder.horizontalCenter
+                        bottom: parent.bottom
+                    }
+                    sourceSize.width: 60 * ApplicationInfo.ratio
+                    enabled: !bonus.isPlaying
+                    onClicked: Activity.checkAnswer()
+                }
+            }
+
+            Score {
+                id: score
+                color: "#76F361"
+                height: items.cardSize * 0.5
+                width: items.cardSize
+            }
         }
 
         DialogChooseLevel {
@@ -174,14 +168,13 @@ ActivityBase {
 
         Bar {
             id: bar
-            content: BarEnumContent { value: help | home | level | reload | activityConfig }
+            content: BarEnumContent { value: help | home | level | activityConfig }
             onHelpClicked: {
                 displayDialog(dialogHelp)
             }
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: activity.home()
-            onReloadClicked: Activity.initLevel()
             onActivityConfigClicked: {
                 displayDialog(dialogActivityConfig)
             }

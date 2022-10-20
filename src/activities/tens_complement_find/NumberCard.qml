@@ -7,7 +7,7 @@ import QtQuick 2.12
 
 import GCompris 1.0
 import "../../core"
-import "tens_complement.js" as Activity
+import "tens_complement_find.js" as Activity
 
 Item {
     Rectangle {
@@ -15,6 +15,7 @@ Item {
         visible: visibility
         height: selected ? parent.height : parent.height * 0.9
         width: selected ? parent.width : parent.width * 0.9
+        anchors.centerIn: parent
         color: "#FFFB9A"
         border.color: "black"
         border.width: 3
@@ -33,10 +34,9 @@ Item {
 
         MouseArea {
             anchors.fill: parent
+            enabled: !items.bonus.isPlaying
             onClicked: {
-                if(!Activity.items.bonus.isPlaying) {
-                    Activity.selectedCard(index)
-                }
+                Activity.selectCard(index)
             }
         }
     }
