@@ -219,8 +219,8 @@ msgid ""
 "click on the gates to open or close a path."
 msgstr ""
 "Eres el responsable de la resclosa i has d'ajudar a en Tux a passar-hi. Fes "
-"clic a les vàlvules per a fer que baixe o augmente el nivell de l'aigua, i "
-"fes clic a les portes per a obrir o tancar un camí."
+"clic en les vàlvules per a fer que baixe o augmente el nivell de l'aigua, i "
+"fes clic en les portes per a obrir o tancar un camí."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "categorization"
 #: activities/categorization/ActivityInfo.qml:18
@@ -408,7 +408,7 @@ msgstr "Aprén sobre els animals del món i ubica'ls en un mapa."
 #: activities/explore_world_music/ActivityInfo.qml:18
 #, kde-format
 msgid "Click on the suitcases to learn about music from around the world."
-msgstr "Fes clic a les maletes per a aprendre sobre la música arreu del món."
+msgstr "Fes clic en les maletes per a aprendre sobre la música arreu del món."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "family"
 #: activities/family/ActivityInfo.qml:18
@@ -1046,7 +1046,7 @@ msgstr ""
 #, kde-format
 msgid "Click on the keyboard keys that match the notes that you see and hear"
 msgstr ""
-"Fes clic a les tecles del teclat que coincidixen amb les notes que veus i "
+"Fes clic en les tecles del teclat que coincidixen amb les notes que veus i "
 "escoltes"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "play_rhythm"

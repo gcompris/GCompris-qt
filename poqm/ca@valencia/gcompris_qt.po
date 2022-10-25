@@ -2205,8 +2205,8 @@ msgid ""
 msgstr ""
 "Només heu d'escriure en el teclat real o virtual com en un processador de "
 "textos.\n"
-"     En fer clic en el botó «Títol» es farà el text més gran. De manera "
-"similar, el botó «Subtítol» farà el text una mica menys gran. En fer clic en "
+"     Fent clic en el botó «Títol» es farà el text més gran. De manera "
+"similar, el botó «Subtítol» farà el text una mica menys gran. Fent clic en "
 "«Paràgraf» s'eliminarà el format."
 
 #: activities/baby_wordprocessor/ActivityInfo.qml:27
@@ -3540,7 +3540,7 @@ msgid ""
 "set' to download the full word image set. Click on the cross or on 'Never "
 "show this dialog again' to play with the demo version."
 msgstr ""
-"No teniu totes les imatges per a esta activitat. Feu clic a «Actualitza el "
+"No teniu totes les imatges per a esta activitat. Feu clic en «Actualitza el "
 "conjunt d'imatges» per a descarregar el conjunt d'imatges complet per a les "
 "paraules. Feu clic en la «Creu» o a «No mostres este diàleg una altra "
 "vegada» per a jugar amb la versió de demostració."
@@ -5765,8 +5765,8 @@ msgstr ""
 msgctxt "ActivityInfo|"
 msgid "To deselect a terminal or the delete tool, click on any empty area."
 msgstr ""
-"Per a desseleccionar un terminal o l'eina de supressió, feu clic a qualsevol "
-"àrea buida."
+"Per a desseleccionar un terminal o l'eina de supressió, feu clic en "
+"qualsevol àrea buida."
 
 #: activities/digital_electricity/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
@@ -6758,7 +6758,7 @@ msgid ""
 "level 2 and 3."
 msgstr ""
 "En el nivell u, els jugadors gaudixen explorant cada animal en la pantalla. "
-"Feu clic a un animal per a aprendre sobre seu: com s'anomena, quin so fa i "
+"Feu clic en un animal per a aprendre sobre seu: com s'anomena, quin so fa i "
 "com es veu. Estudieu bé esta informació, ja que es posarà a prova en els "
 "nivells 2 i 3."
 
@@ -8775,7 +8775,7 @@ msgstr ""
 #: activities/explore_world_music/resource/board/board1.qml:130
 msgctxt "board1|"
 msgid "Explore world music. Click on the suitcases."
-msgstr "Explora les músiques del món. Fes clic a les maletes."
+msgstr "Explora les músiques del món. Fes clic en les maletes."
 
 #: activities/explore_world_music/resource/board/board1.qml:133
 msgctxt "board1|"
@@ -9044,7 +9044,7 @@ msgstr ""
 "Es mostra un arbre genealògic, amb algunes instruccions.\n"
 "Els cercles estan vinculats amb línies per a marcar les relacions. Les "
 "parelles casades estan marcades amb un anell al vincle.\n"
-"Feu clic a un parell de membres de la família que corresponguen amb la "
+"Feu clic en un parell de membres de la família que corresponguen amb la "
 "relació indicada."
 
 #. Activity title
@@ -18779,8 +18779,8 @@ msgid ""
 "First select an item from the list, and then click on a spot of the mosaic "
 "to place the item."
 msgstr ""
-"Primer, seleccioneu un element des de la llista i després feu clic a un punt "
-"en el mosaic per a col·locar-lo."
+"Primer, seleccioneu un element des de la llista i després feu clic en un "
+"punt en el mosaic per a col·locar-lo."
 
 #: activities/mosaic/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
@@ -18874,7 +18874,7 @@ msgid ""
 "there. Green color spots indicates where you can move."
 msgstr ""
 "Una vegada es col·loquen totes les peces, tu i en Tux fareu torns per a "
-"moure-les. Fes clic a una de les teues peces, i després en l'espai buit "
+"moure-les. Fes clic en una de les teues peces, i després en l'espai buit "
 "adjacent per a moure-l'hi. Els punts de color verd indicarà on es pot moure."
 
 #: activities/nine_men_morris/nine_men_morris.js:41
@@ -20011,7 +20011,7 @@ msgstr "Arrossega el control lliscant per a mostrar les diferències."
 #: activities/photo_hunter/PhotoHunter.qml:95
 msgctxt "PhotoHunter|"
 msgid "Click on the differences between the two images."
-msgstr "Fes clic a les diferències entre les dues imatges."
+msgstr "Fes clic en les diferències entre les dues imatges."
 
 #. Activity title
 #: activities/piano_composition/ActivityInfo.qml:16
@@ -21214,7 +21214,7 @@ msgid ""
 "-Click on any instruction in the <b>instruction area</b> to add it to the "
 "<b>Main Function</b>."
 msgstr ""
-"- Feu clic a qualsevol instrucció en l'<b>àrea d'instruccions</b> per a "
+"- Feu clic en qualsevol instrucció en l'<b>àrea d'instruccions</b> per a "
 "afegir-la a la <b>Funció principal</b>."
 
 #: activities/programmingMaze/programmingMaze.js:107
@@ -23214,7 +23214,7 @@ msgid ""
 "Each question contains 4 options. One of those is 100% correct. Try to "
 "answer the questions until you get 100% in the closeness meter."
 msgstr ""
-"Feu clic a un planeta o al sol i responeu les següents preguntes. Cada "
+"Feu clic en un planeta o al sol i responeu les següents preguntes. Cada "
 "pregunta conté 4 opcions. Una d'elles és 100% correcta. Intenteu respondre "
 "les preguntes fins que obteniu un 100% al mesurador d'apropament."
 
