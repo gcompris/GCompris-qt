@@ -20,7 +20,7 @@ ActivityInfo {
   //: Help prerequisite
   prerequisite: qsTr("Mouse-manipulation.")
   //: Help manual
-  manual: qsTr("A left click on a horse will move it to the stable. A right click on a monkey will move it to the tree. A message will show if you make the wrong click.")
+  manual: qsTr("A left click on a fish will move it to the pond. A right click on a monkey will move it to the tree. A message will show if you make the wrong click.")
   credit: ""
   section: "computer mouse"
   createdInVersion: 30000

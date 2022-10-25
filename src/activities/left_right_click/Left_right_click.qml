@@ -84,7 +84,7 @@ ActivityBase {
             sourceSize.height: Math.min(width, height)
             anchors.left: layoutArea.left
             fillMode: Image.PreserveAspectFit
-            source: "qrc:/gcompris/src/activities/left_right_click/resource/barn.svg"
+            source: "qrc:/gcompris/src/activities/left_right_click/resource/pond.svg"
         }
 
         Image {

@@ -17,7 +17,7 @@ var cardsToDisplay;
 // different number of cards to display per level
 var levelDifficulty = [5, 7, 10]
 var imgSrc = [
-    "qrc:/gcompris/src/activities/explore_farm_animals/resource/animals/horse.svg",
+    "qrc:/gcompris/src/activities/left_right_click/resource/fish.svg",
     "qrc:/gcompris/src/activities/left_right_click/resource/monkey.svg"
 ]
 var Position = {

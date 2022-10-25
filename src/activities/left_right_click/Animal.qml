@@ -100,7 +100,7 @@ Item {
             PropertyChanges {
                 target: animal
                 x: (leftArea.width - animal.width) * 0.5
-                y: (leftArea.height - animal.height) * 0.5
+                y: (leftArea.height - animal.height) * 0.75
             }
         },
         State {
