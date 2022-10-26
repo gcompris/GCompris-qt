@@ -15602,11 +15602,16 @@ msgstr "Sagua erabiltzea. Ezker eta eskuin klikekin trebatzea."
 
 #. Help manual
 #: activities/left_right_click/ActivityInfo.qml:23
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "A left click on a horse will move it to the stable. A right click on a "
+#| "monkey will move it to the tree. A message will show if you make the "
+#| "wrong click."
 msgctxt "ActivityInfo|"
 msgid ""
-"A left click on a horse will move it to the stable. A right click on a "
-"monkey will move it to the tree. A message will show if you make the wrong "
-"click."
+"A left click on a fish will move it to the pond. A right click on a monkey "
+"will move it to the tree. A message will show if you make the wrong click."
 msgstr ""
 "Zaldi baten gainean ezkerreko klik egiteak zalditegira eramango du. Tximu "
 "baten gainean eskuineko klik egiteak zuhaitzera eramango du. Mezu bat "

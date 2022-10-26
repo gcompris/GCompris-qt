@@ -15993,11 +15993,16 @@ msgstr "Ús del ratolí. Entrenament del clic esquerre i dret del ratolí."
 
 #. Help manual
 #: activities/left_right_click/ActivityInfo.qml:23
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "A left click on a horse will move it to the stable. A right click on a "
+#| "monkey will move it to the tree. A message will show if you make the "
+#| "wrong click."
 msgctxt "ActivityInfo|"
 msgid ""
-"A left click on a horse will move it to the stable. A right click on a "
-"monkey will move it to the tree. A message will show if you make the wrong "
-"click."
+"A left click on a fish will move it to the pond. A right click on a monkey "
+"will move it to the tree. A message will show if you make the wrong click."
 msgstr ""
 "Un clic esquerre en un cavall el mourà a l'estable. Un clic dret en un mico "
 "el mourà a l'arbre. Es mostrarà un missatge si es fa un clic incorrecte."

@@ -15751,11 +15751,16 @@ msgstr "Utilizzare il mouse. Allenamento del clic sinistro e destro."
 
 #. Help manual
 #: activities/left_right_click/ActivityInfo.qml:23
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "A left click on a horse will move it to the stable. A right click on a "
+#| "monkey will move it to the tree. A message will show if you make the "
+#| "wrong click."
 msgctxt "ActivityInfo|"
 msgid ""
-"A left click on a horse will move it to the stable. A right click on a "
-"monkey will move it to the tree. A message will show if you make the wrong "
-"click."
+"A left click on a fish will move it to the pond. A right click on a monkey "
+"will move it to the tree. A message will show if you make the wrong click."
 msgstr ""
 "Un clic sinistro su un cavallo lo sposterà nella stalla. Un clic destro su "
 "una scimmia la sposterà sull'albero. Se fai il clic sbagliato sarà "

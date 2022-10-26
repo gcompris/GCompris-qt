@@ -15659,11 +15659,16 @@ msgstr "Using the mouse. Left and right click training."
 
 #. Help manual
 #: activities/left_right_click/ActivityInfo.qml:23
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "A left click on a horse will move it to the stable. A right click on a "
+#| "monkey will move it to the tree. A message will show if you make the "
+#| "wrong click."
 msgctxt "ActivityInfo|"
 msgid ""
-"A left click on a horse will move it to the stable. A right click on a "
-"monkey will move it to the tree. A message will show if you make the wrong "
-"click."
+"A left click on a fish will move it to the pond. A right click on a monkey "
+"will move it to the tree. A message will show if you make the wrong click."
 msgstr ""
 "A left click on a horse will move it to the stable. A right click on a "
 "monkey will move it to the tree. A message will show if you make the wrong "

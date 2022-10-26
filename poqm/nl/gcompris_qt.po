@@ -15646,11 +15646,16 @@ msgstr "Met de muis. Trainen van links en rechts klikken."
 
 #. Help manual
 #: activities/left_right_click/ActivityInfo.qml:23
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "A left click on a horse will move it to the stable. A right click on a "
+#| "monkey will move it to the tree. A message will show if you make the "
+#| "wrong click."
 msgctxt "ActivityInfo|"
 msgid ""
-"A left click on a horse will move it to the stable. A right click on a "
-"monkey will move it to the tree. A message will show if you make the wrong "
-"click."
+"A left click on a fish will move it to the pond. A right click on a monkey "
+"will move it to the tree. A message will show if you make the wrong click."
 msgstr ""
 "Een klik links op een paard zal deze naar de stal verplaatsen. Een klik "
 "rechts op een aap zal deze naar de boom verplaatsen. Een bericht toont of je "

@@ -15582,11 +15582,16 @@ msgstr "Używanie myszy. Ćwiczenie na naciskanie lewego i prawego przycisku."
 
 #. Help manual
 #: activities/left_right_click/ActivityInfo.qml:23
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "A left click on a horse will move it to the stable. A right click on a "
+#| "monkey will move it to the tree. A message will show if you make the "
+#| "wrong click."
 msgctxt "ActivityInfo|"
 msgid ""
-"A left click on a horse will move it to the stable. A right click on a "
-"monkey will move it to the tree. A message will show if you make the wrong "
-"click."
+"A left click on a fish will move it to the pond. A right click on a monkey "
+"will move it to the tree. A message will show if you make the wrong click."
 msgstr ""
 "Naciśnięcie lewym na koniu przeniesie go do stajni. Naciśnięcie prawym na "
 "małpie przeniesie ją na drzewo. Jeśli naciśniesz źle, to pojawi się o tym "

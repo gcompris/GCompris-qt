@@ -15671,11 +15671,16 @@ msgstr "Siçan düymələrindən istifadə edin. Sol və sağ düyməyə vurma m
 
 #. Help manual
 #: activities/left_right_click/ActivityInfo.qml:23
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "A left click on a horse will move it to the stable. A right click on a "
+#| "monkey will move it to the tree. A message will show if you make the "
+#| "wrong click."
 msgctxt "ActivityInfo|"
 msgid ""
-"A left click on a horse will move it to the stable. A right click on a "
-"monkey will move it to the tree. A message will show if you make the wrong "
-"click."
+"A left click on a fish will move it to the pond. A right click on a monkey "
+"will move it to the tree. A message will show if you make the wrong click."
 msgstr ""
 "Atın üzərinə sol düymə ilə vurmaq onu tövləyə aparacaq. Meymuna sağ düymə "
 "ilə vurmaq onu ağaca çıxaracaq. Əgər səhv düyməyə vursanız bu barədə sizi "
