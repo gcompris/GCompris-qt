@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2014-12-25 01:10+0000\n"
-"PO-Revision-Date: 2022-10-14 13:43+0200\n"
+"PO-Revision-Date: 2022-10-26 07:05+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
@@ -15993,19 +15993,13 @@ msgstr "Ús del ratolí. Entrenament del clic esquerre i dret del ratolí."
 
 #. Help manual
 #: activities/left_right_click/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "A left click on a horse will move it to the stable. A right click on a "
-#| "monkey will move it to the tree. A message will show if you make the "
-#| "wrong click."
 msgctxt "ActivityInfo|"
 msgid ""
 "A left click on a fish will move it to the pond. A right click on a monkey "
 "will move it to the tree. A message will show if you make the wrong click."
 msgstr ""
-"Un clic esquerre en un cavall el mourà a l'estable. Un clic dret en un mico "
-"el mourà a l'arbre. Es mostrarà un missatge si es fa un clic incorrecte."
+"Un clic esquerre en un peix el mourà a la bassa. Un clic dret en un mico el "
+"mourà a l'arbre. Es mostrarà un missatge si es fa un clic incorrecte."
 
 #. Activity title
 #: activities/leftright/ActivityInfo.qml:15

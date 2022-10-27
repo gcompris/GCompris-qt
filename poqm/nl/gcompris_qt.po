@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2022-10-14 10:09+0200\n"
+"PO-Revision-Date: 2022-10-26 23:02+0200\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Language: nl\n"
 "X-Qt-Contexts: true\n"
-"X-Generator: Lokalize 22.08.1\n"
+"X-Generator: Lokalize 22.08.2\n"
 
 #. Activity title
 #: activities/advanced_colors/ActivityInfo.qml:15
@@ -15646,18 +15646,12 @@ msgstr "Met de muis. Trainen van links en rechts klikken."
 
 #. Help manual
 #: activities/left_right_click/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "A left click on a horse will move it to the stable. A right click on a "
-#| "monkey will move it to the tree. A message will show if you make the "
-#| "wrong click."
 msgctxt "ActivityInfo|"
 msgid ""
 "A left click on a fish will move it to the pond. A right click on a monkey "
 "will move it to the tree. A message will show if you make the wrong click."
 msgstr ""
-"Een klik links op een paard zal deze naar de stal verplaatsen. Een klik "
+"Een klik links op een vis zal deze naar de vijver verplaatsen. Een klik "
 "rechts op een aap zal deze naar de boom verplaatsen. Een bericht toont of je "
 "de verkeerde klik hebt gebruikt."
 

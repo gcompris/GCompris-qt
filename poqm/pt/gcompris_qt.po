@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: kstars\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2015-05-27 08:46+0000\n"
-"PO-Revision-Date: 2022-10-16 11:38+0100\n"
+"PO-Revision-Date: 2022-10-26 21:57+0100\n"
 "Last-Translator: Pedro Morais <morais@kde.org>\n"
 "Language-Team: pt <kde-i18n-pt@kde.org>\n"
 "Language: pt\n"
@@ -16425,20 +16425,14 @@ msgstr "Utilização do rato. Treino de 'clicks' com o botão esquerdo e direito
 
 #. Help manual
 #: activities/left_right_click/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "A left click on a horse will move it to the stable. A right click on a "
-#| "monkey will move it to the tree. A message will show if you make the "
-#| "wrong click."
 msgctxt "ActivityInfo|"
 msgid ""
 "A left click on a fish will move it to the pond. A right click on a monkey "
 "will move it to the tree. A message will show if you make the wrong click."
 msgstr ""
-"Se carregar com o botão esquerdo sobre um cavalo, levá-lo-á para o estábulo. "
-"Se carregar com o botão direito sobre um macaco, movê-lo-á para a árvore. "
-"Irá aparecer uma mensagem se tiver carregado com o botão errado."
+"Se carregar com o botão esquerdo sobre um peixe, levá-lo-á para o lago. Se "
+"carregar com o botão direito sobre um macaco, movê-lo-á para a árvore. Irá "
+"aparecer uma mensagem se tiver carregado com o botão errado."
 
 #. Activity title
 #: activities/leftright/ActivityInfo.qml:15
