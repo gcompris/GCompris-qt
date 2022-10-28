@@ -15516,12 +15516,9 @@ msgstr "Bruka musa og øva på venstre- og høgreklikking."
 #: activities/left_right_click/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid ""
-"A left click on a horse will move it to the stable. A right click on a "
-"monkey will move it to the tree. A message will show if you make the wrong "
-"click."
+"A left click on a fish will move it to the pond. A right click on a monkey "
+"will move it to the tree. A message will show if you make the wrong click."
 msgstr ""
-"Venstreklikk på hesten for å flytta han til stallen. Høgreklikk på apekatten "
-"for å flytta han til treet. Då får ei melding dersom du trykkjer feil."
 
 #. Activity title
 #: activities/leftright/ActivityInfo.qml:15

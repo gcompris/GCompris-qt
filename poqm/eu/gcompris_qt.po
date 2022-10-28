@@ -1,5 +1,5 @@
 # Translation for gcompris_qt.po to Euskara/Basque (eu).
-# Copyright (C), 2018-2022, This file is copyright:
+# Copyright (C), 2018-2022 This file is copyright:
 # This file is distributed under the same license as the GCompris package.
 # KDE euskaratzeko proiektuko arduraduna <xalba@ni.eus>.
 #
@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GCompris\n"
 "POT-Creation-Date: 2018-11-30 13:03+0000\n"
-"PO-Revision-Date: 2022-10-14 06:59+0200\n"
+"PO-Revision-Date: 2022-10-27 05:09+0200\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
 "Language: eu\n"
@@ -15602,20 +15602,14 @@ msgstr "Sagua erabiltzea. Ezker eta eskuin klikekin trebatzea."
 
 #. Help manual
 #: activities/left_right_click/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "A left click on a horse will move it to the stable. A right click on a "
-#| "monkey will move it to the tree. A message will show if you make the "
-#| "wrong click."
 msgctxt "ActivityInfo|"
 msgid ""
 "A left click on a fish will move it to the pond. A right click on a monkey "
 "will move it to the tree. A message will show if you make the wrong click."
 msgstr ""
-"Zaldi baten gainean ezkerreko klik egiteak zalditegira eramango du. Tximu "
-"baten gainean eskuineko klik egiteak zuhaitzera eramango du. Mezu bat "
-"agertuko da okerreko klik egiten baduzu."
+"Arrain baten gainean klik egiteak hura potzura eramango du. Tximu baten "
+"gainean eskuineko klik egiteak zuhaitzera eramango du. Mezu bat agertuko da "
+"okerreko klik egiten baduzu."
 
 #. Activity title
 #: activities/leftright/ActivityInfo.qml:15

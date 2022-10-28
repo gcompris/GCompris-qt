@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2022-10-14 21:44+0200\n"
+"PO-Revision-Date: 2022-10-27 12:31+0200\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
@@ -15716,20 +15716,14 @@ msgstr "Uso del ratón. Práctica de clic izquierdo y derecho."
 
 #. Help manual
 #: activities/left_right_click/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "A left click on a horse will move it to the stable. A right click on a "
-#| "monkey will move it to the tree. A message will show if you make the "
-#| "wrong click."
 msgctxt "ActivityInfo|"
 msgid ""
 "A left click on a fish will move it to the pond. A right click on a monkey "
 "will move it to the tree. A message will show if you make the wrong click."
 msgstr ""
-"Un clic izquierdo sobre un caballo lo moverá al establo. Un clic derecho "
-"sobre un mono lo moverá al árbol. Se mostrará un mensaje cuando hagas un "
-"clic incorrecto."
+"Un clic izquierdo sobre un pez lo moverá al estanque. Un clic derecho sobre "
+"un mono lo moverá al árbol. Se mostrará un mensaje cuando hagas un clic "
+"incorrecto."
 
 #. Activity title
 #: activities/leftright/ActivityInfo.qml:15
