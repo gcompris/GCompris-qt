@@ -20875,11 +20875,12 @@ msgstr ""
 #, qt-format
 msgctxt "Readingh|"
 msgid ""
-"<font color=\"#373737\">Check if the word<br/></font><b><font color=\"#315AAA"
-"\">%1</font></b><br/><font color=\"#373737\">is displayed</font>"
+"<font color=\"#373737\">Check if the word<br/></font><b><font "
+"color=\"#315AAA\">%1</font></b><br/><font color=\"#373737\">is displayed</"
+"font>"
 msgstr ""
-"<font color=\"#373737\">Sjå om ordet<br/></font><b><font color=\"#315AAA\">"
-"%1</font></b><br/><font color=\"#373737\">vert vist</font>"
+"<font color=\"#373737\">Sjå om ordet<br/></font><b><font "
+"color=\"#315AAA\">%1</font></b><br/><font color=\"#373737\">vert vist</font>"
 
 #: activities/readingh/Readingh.qml:197
 msgctxt "Readingh|"

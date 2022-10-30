@@ -1509,7 +1509,7 @@ msgid ""
 msgstr ""
 "La bateria s'utilitza per a encendre dispositius elèctrics. Pot subministrar "
 "voltatge en un circuit tancat. El qual vol dir que hi haurà d'haver un camí "
-"perquè el corrent fluïsca des d'un terminal de la bateria a l'altre."
+"perquè el corrent fluïsca des d'un terminal de la bateria fins a l'altre."
 
 # skip-rule: ff-current
 #: activities/analog_electricity/components/Battery.qml:19
@@ -14472,8 +14472,8 @@ msgid ""
 "Drag and Drop one top piece at a time, from one tower to another, to "
 "reproduce the tower on the right in the empty area."
 msgstr ""
-"Arrossegueu i deixeu només una peça de dalt a la vegada d'una torre a "
-"l'altra, per a reproduir la torre de la dreta a l'àrea buida."
+"Arrossegueu i deixeu només una peça de dalt a la vegada des d'una torre cap "
+"a l'altra, per a reproduir la torre de la dreta a l'àrea buida."
 
 #: activities/hanoi/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
@@ -17747,7 +17747,7 @@ msgid ""
 "remember where a picture is, while you look for its twin. When you flip the "
 "twins, they both disappear."
 msgstr ""
-"Cada targeta té una imatge a l'altra cara, i cada targeta té una parella "
+"Cada targeta té una imatge en l'altra cara, i cada targeta té una parella "
 "exactament igual. Feu clic en una targeta per a veure la seua imatge oculta, "
 "i intenteu aparellar-les. Només podeu destapar dues targetes cada vegada, de "
 "manera que necessitareu recordar on es troba una imatge, mentre busqueu la "
@@ -25338,7 +25338,7 @@ msgstr "L'activitat «lang» ara està disponible en polonés, suec i ucraïnés
 #: core/ChangeLog.qml:92
 msgctxt "ChangeLog|"
 msgid "Search feature."
-msgstr "Funcionalitat de busca."
+msgstr "Característica de busca."
 
 #: core/ChangeLog.qml:93
 msgctxt "ChangeLog|"
