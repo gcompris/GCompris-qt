@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-09-26 00:40+0000\n"
-"PO-Revision-Date: 2022-10-22 05:28\n"
+"POT-Creation-Date: 2022-10-31 00:41+0000\n"
+"PO-Revision-Date: 2022-10-30 07:47\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
@@ -789,6 +789,13 @@ msgstr "单击屏幕底部的钱，给Tux找零。"
 #, kde-format
 msgid "Click on the money to pay."
 msgstr "点击钱支付。"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "morse_code"
+#: activities/morse_code/ActivityInfo.qml:21
+#, fuzzy, kde-format
+#| msgid "Learn and practice roman to arabic numerals conversion"
+msgid "Learn and practice the International Morse code"
+msgstr "学习和练习罗马数字到阿拉伯数字的转换"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "mosaic"
 #: activities/mosaic/ActivityInfo.qml:18

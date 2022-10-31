@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-09-26 00:40+0000\n"
+"POT-Creation-Date: 2022-10-31 00:41+0000\n"
 "PO-Revision-Date: 2021-12-16 21:22+0100\n"
 "Last-Translator: Envel KERVOAS <envelkervoas@free.fr>\n"
 "Language-Team: Breton <kde-i18n-doc@kde.org>\n"
@@ -877,6 +877,13 @@ msgstr ""
 #, kde-format
 msgid "Click on the money to pay."
 msgstr "Klik war an arc'hant evit paeañ."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "morse_code"
+#: activities/morse_code/ActivityInfo.qml:21
+#, fuzzy, kde-format
+#| msgid "Learn and practice roman to arabic numerals conversion"
+msgid "Learn and practice the International Morse code"
+msgstr "Desk penaos kemm niveroù roman hag arab kenetreze."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "mosaic"
 #: activities/mosaic/ActivityInfo.qml:18

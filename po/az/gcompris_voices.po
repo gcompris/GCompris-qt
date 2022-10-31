@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-09-26 00:40+0000\n"
+"POT-Creation-Date: 2022-10-31 00:41+0000\n"
 "PO-Revision-Date: 2022-06-19 12:06+0400\n"
 "Last-Translator: Kheyyam <xxmn77@gmail.com>\n"
 "Language-Team: Azerbaijani <kde-i18n-doc@kde.org>\n"
@@ -865,6 +865,13 @@ msgstr "Ekranın aşağısındakı pul işarəsinə vuraraq Tuksa qalığı qayt
 #, kde-format
 msgid "Click on the money to pay."
 msgstr "Ödəniş etmək üçün pul işarəsinə vurun."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "morse_code"
+#: activities/morse_code/ActivityInfo.qml:21
+#, fuzzy, kde-format
+#| msgid "Learn and practice roman to arabic numerals conversion"
+msgid "Learn and practice the International Morse code"
+msgstr "Rum rəqəmlərindən ərəb rəqəmlərinə çevirməni öyrənin və məşq edin"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "mosaic"
 #: activities/mosaic/ActivityInfo.qml:18

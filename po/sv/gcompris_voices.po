@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-09-26 00:40+0000\n"
+"POT-Creation-Date: 2022-10-31 00:41+0000\n"
 "PO-Revision-Date: 2022-09-26 20:18+0200\n"
 "Last-Translator: Stefan Asserhäll <stefan.asserhall@bredband.net>\n"
 "Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
@@ -861,6 +861,13 @@ msgstr "Klicka på pengarna längst ner på skärmen och ge Tux sin växel."
 #, kde-format
 msgid "Click on the money to pay."
 msgstr "Klicka på pengarna att betala."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "morse_code"
+#: activities/morse_code/ActivityInfo.qml:21
+#, fuzzy, kde-format
+#| msgid "Learn and practice roman to arabic numerals conversion"
+msgid "Learn and practice the International Morse code"
+msgstr "Lär dig och öva på konvertering mellan romerska och arabiska siffror"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "mosaic"
 #: activities/mosaic/ActivityInfo.qml:18

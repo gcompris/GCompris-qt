@@ -20261,6 +20261,182 @@ msgstr ""
 "प्रदर्शित होते हैं, और आपको पहले कुल मूल्य की गणना करनी होगी"
 
 #. Activity title
+#: activities/morse_code/ActivityInfo.qml:18
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Discover the braille system"
+msgctxt "ActivityInfo|"
+msgid "Discover the International Morse code"
+msgstr "ब्रेल प्रणाली को जानें"
+
+#. Help title
+#: activities/morse_code/ActivityInfo.qml:20
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Learn how to tell the time on an analog clock."
+msgctxt "ActivityInfo|"
+msgid "Learn how to communicate with the International Morse code."
+msgstr "एनालॉग घड़ी पर समय बताना सीखें"
+
+#. Help goal
+#: activities/morse_code/ActivityInfo.qml:23
+msgctxt "ActivityInfo|"
+msgid ""
+"You have to send and receive letters and digits in International Morse code."
+msgstr ""
+
+#. Help prerequisite
+#: activities/morse_code/ActivityInfo.qml:25
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "knowledge of arithmetic operations"
+msgctxt "ActivityInfo|"
+msgid "Knowledge of alphabets and digits."
+msgstr "अंकगणितीय प्रचालकों का ज्ञान"
+
+#. Help manual
+#: activities/morse_code/ActivityInfo.qml:27
+msgctxt "ActivityInfo|"
+msgid ""
+"You are either asked to send a message in Morse code or convert the received "
+"Morse code message to letters or digits. To learn the Morse code, you can "
+"have a look at the translation map which contains the code for all the "
+"letters and digits."
+msgstr ""
+
+#: activities/morse_code/FirstScreen.qml:25
+msgctxt "FirstScreen|"
+msgid "Exploring Morse Code"
+msgstr ""
+
+#: activities/morse_code/FirstScreen.qml:52
+msgctxt "FirstScreen|"
+msgid ""
+"Morse code was developed by Samuel Morse. It is a method of transmitting "
+"text information as a series of on-off tones, lights, or clicks."
+msgstr ""
+
+#: activities/morse_code/FirstScreen.qml:53
+msgctxt "FirstScreen|"
+msgid ""
+"Each Morse code symbol represents either a text character (letter or "
+"numeral) or a prosign and is represented by a unique sequence of dots and "
+"dashes. The duration of a dash is three times the duration of a dot. To "
+"increase the speed of the communication, the code was designed so that the "
+"most common letters have the shorter sequences of dots and dashes.\n"
+"For example, the most common letter in English, the letter \"E\", has the "
+"shortest code, a single dot."
+msgstr ""
+
+#: activities/morse_code/FirstScreen.qml:90
+#, fuzzy
+#| msgctxt "FirstScreen|"
+#| msgid ""
+#| "When you are ready, click on me and try reproducing braille characters."
+msgctxt "FirstScreen|"
+msgid "When you are ready, click on Tux and we will converse in Morse code."
+msgstr "जब आप तैयार हों, तो मुझ पर क्लिक करें और ब्रेल वर्ण पुन: प्रस्तुत करने का प्रयास करें।"
+
+#: activities/morse_code/MorseCode.qml:332
+#, fuzzy, qt-format
+#| msgctxt "RomanNumerals|"
+#| msgid "Roman value: %1"
+msgctxt "MorseCode|"
+msgid "Morse value: %1"
+msgstr "रोमन मूल्य:  %1"
+
+#: activities/morse_code/MorseCode.qml:333
+#, fuzzy, qt-format
+#| msgctxt "RomanNumerals|"
+#| msgid "Arabic value: %1"
+msgctxt "MorseCode|"
+msgid "Alphabet/Numeric value: %1"
+msgstr "अरबी मूल्य : %1"
+
+#: activities/morse_code/resource/1/Data.qml:13
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Draw Letters"
+msgctxt "Data|"
+msgid "Letters."
+msgstr "अक्षर लिखें"
+
+#: activities/morse_code/resource/1/Data.qml:18
+#: activities/morse_code/resource/1/Data.qml:34
+#: activities/morse_code/resource/1/Data.qml:50
+#: activities/morse_code/resource/1/Data.qml:66
+#: activities/morse_code/resource/2/Data.qml:18
+#: activities/morse_code/resource/2/Data.qml:34
+#: activities/morse_code/resource/3/Data.qml:18
+#, qt-format
+msgctxt "Data|"
+msgid "Send the message %1 in Morse code."
+msgstr ""
+
+#: activities/morse_code/resource/1/Data.qml:23
+#: activities/morse_code/resource/1/Data.qml:39
+#: activities/morse_code/resource/1/Data.qml:55
+#: activities/morse_code/resource/1/Data.qml:71
+#, fuzzy, qt-format
+#| msgctxt "RomanNumerals|"
+#| msgid "Convert the roman number %1 in arabic."
+msgctxt "Data|"
+msgid "Convert the message %1 to letters."
+msgstr "रोमन संख्याओं %1 को अरबी में बदलें।"
+
+#: activities/morse_code/resource/1/Data.qml:28
+#: activities/morse_code/resource/1/Data.qml:44
+#: activities/morse_code/resource/1/Data.qml:60
+#: activities/morse_code/resource/1/Data.qml:76
+#, fuzzy
+#| msgctxt "advanced_colors|"
+#| msgid "Find the corn butterfly"
+msgctxt "Data|"
+msgid "Find the corresponding letter."
+msgstr "कॉर्न तितली को ढूंढें"
+
+#: activities/morse_code/resource/2/Data.qml:13
+msgctxt "Data|"
+msgid "Digits."
+msgstr ""
+
+#: activities/morse_code/resource/2/Data.qml:23
+#: activities/morse_code/resource/2/Data.qml:39
+#, fuzzy, qt-format
+#| msgctxt "RomanNumerals|"
+#| msgid "Convert the roman number %1 in arabic."
+msgctxt "Data|"
+msgid "Convert the message %1 to digits."
+msgstr "रोमन संख्याओं %1 को अरबी में बदलें।"
+
+#: activities/morse_code/resource/2/Data.qml:28
+#: activities/morse_code/resource/2/Data.qml:44
+#, fuzzy
+#| msgctxt "instruments|"
+#| msgid "Find the accordion"
+msgctxt "Data|"
+msgid "Find the corresponding digit."
+msgstr "एकार्डियन को ढूंढें"
+
+#: activities/morse_code/resource/3/Data.qml:13
+msgctxt "Data|"
+msgid "Words."
+msgstr ""
+
+#: activities/morse_code/resource/3/Data.qml:24
+msgctxt "Data|"
+msgid "Write the Morse code you hear."
+msgstr ""
+
+#: activities/morse_code/resource/3/Data.qml:34
+#, fuzzy
+#| msgctxt "RomanNumerals|"
+#| msgid "Convert the roman number %1 in arabic."
+msgctxt "Data|"
+msgid "Convert the message in a word."
+msgstr "रोमन संख्याओं %1 को अरबी में बदलें।"
+
+#. Activity title
 #: activities/mosaic/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Rebuild the mosaic"

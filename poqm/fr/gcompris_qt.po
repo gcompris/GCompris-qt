@@ -1,5 +1,5 @@
 # Ludovic Grossard <ludovic.grossard@unilim.fr>, 2014, 2015.
-# Jazeix Johnny <jazeix@gmail.com>, 2015, 2016, 2017, 2018, 2019, 2020, 2021.
+# Jazeix Johnny <jazeix@gmail.com>, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022.
 # charruau <echarruau@gmail.com>, 2016, 2017, 2018, 2020, 2021, 2022.
 # Simon Depiets <sdepiets@gmail.com>, 2018.
 # Christian Wiatrowski <w9204-wi@yahoo.com>, 2018.
@@ -1177,17 +1177,12 @@ msgstr ""
 
 #. Help manual
 #: activities/align4/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Play with a friend. Take turns to click the line in which you want to "
-#| "drop a token. The first player to create a line of 4 tokens wins."
 msgctxt "ActivityInfo|"
 msgid ""
 "Play with Tux. Take turns to click the line in which you want to drop a "
 "token. The first player to create a line of 4 tokens wins."
 msgstr ""
-"Joue avec un ami. Tour à tour, clique sur la colonne sur laquelle tu veux "
+"Joue avec Tux. Tour à tour, clique sur la colonne sur laquelle tu veux "
 "déposer un jeton. Tu peux aussi utiliser les touches flèches pour déplacer "
 "le jeton à gauche ou à droite, et la touche flèche bas ou la barre espace "
 "pour faire tomber le jeton. Le premier qui aligne 4 jetons a gagné."
@@ -2675,12 +2670,6 @@ msgstr "Savoir compter."
 
 #. Help manual
 #: activities/bargame/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Click on the ball icon to select a number of balls, then click on the OK "
-#| "button to place the balls in the holes. You win if the computer has to "
-#| "place the last ball. If you want Tux to begin, just click on him."
 msgctxt "ActivityInfo|"
 msgid ""
 "Click on the ball icon to select a number of balls, then click on the OK "
@@ -6129,7 +6118,7 @@ msgid ""
 "the three switches are turned on."
 msgstr ""
 "Allume l'ampoule en utilisant les trois interrupteurs en faisant en sorte "
-"qu'elle brille si un nombre impair d'interrupteurs sont fermés."
+"qu'elle brille si tous les interrupteurs sont fermés."
 
 #: activities/digital_electricity/TutorialDataset.qml:282
 msgctxt "TutorialDataset|"
@@ -6138,7 +6127,7 @@ msgid ""
 "switches are turned on."
 msgstr ""
 "Allume l'ampoule en utilisant les trois interrupteurs en faisant en sorte "
-"qu'elle brille si un nombre impair d'interrupteurs sont fermés."
+"qu'elle brille si au moins un des interrupteurs est fermé."
 
 #: activities/digital_electricity/TutorialDataset.qml:295
 msgctxt "TutorialDataset|"
@@ -9200,20 +9189,13 @@ msgstr "Entraînement à la soustraction."
 #: activities/fractions_create/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "A shape split in equal parts is displayed on screen."
-msgstr ""
+msgstr "Une forme divisée en nombre égal de parts est affichée à l'écran."
 
 #: activities/fractions_create/ActivityInfo.qml:18
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Drag the appropriate numbers and the operators to the boxes to obtain the "
-#| "number to guess in the instruction."
 msgctxt "ActivityInfo|"
 msgid ""
 "Select the appropriate number of parts as described in the instructions."
-msgstr ""
-"Sélectionne les bons nombres et opérateurs dans les boîtes pour obtenir le "
-"nombre donné dans les instructions."
+msgstr "Sélectionne le nombre de parts indiqué dans les instructions."
 
 #: activities/fractions_create/fractions_create.js:79
 #, fuzzy
@@ -9326,75 +9308,60 @@ msgstr ""
 #: activities/fractions_create/resource/4/Data.qml:17
 #: activities/fractions_create/resource/4/Data.qml:23
 #: activities/fractions_create/resource/4/Data.qml:29
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Select the butterfly of the correct color."
 msgctxt "Data|"
 msgid "Select one half of the rectangle."
-msgstr "Trouve le papillon de la bonne couleur."
+msgstr "Sélectionne une moitié du rectangle."
 
 #: activities/fractions_create/resource/2/Data.qml:24
 #: activities/fractions_create/resource/4/Data.qml:35
 #: activities/fractions_create/resource/4/Data.qml:49
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Select the butterfly of the correct color."
 msgctxt "Data|"
 msgid "Select one-third of the rectangle."
-msgstr "Trouve le papillon de la bonne couleur."
+msgstr "Sélectionne un tiers du rectangle."
 
 #: activities/fractions_create/resource/2/Data.qml:30
 #: activities/fractions_create/resource/4/Data.qml:41
 #: activities/fractions_create/resource/4/Data.qml:55
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Select the butterfly of the correct color."
 msgctxt "Data|"
 msgid "Select two-thirds of the rectangle."
-msgstr "Trouve le papillon de la bonne couleur."
+msgstr "Sélectionne deux-tiers du rectangle."
 
 #: activities/fractions_create/resource/2/Data.qml:36
 #: activities/fractions_create/resource/4/Data.qml:61
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Select the butterfly of the correct color."
 msgctxt "Data|"
 msgid "Select one-quarter of the rectangle."
-msgstr "Trouve le papillon de la bonne couleur."
+msgstr "Sélectionne un quart du rectangle."
 
 #: activities/fractions_create/resource/2/Data.qml:42
 #: activities/fractions_create/resource/4/Data.qml:67
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Select the fifth Thursday of the given month"
 msgctxt "Data|"
 msgid "Select two-fifths of the rectangle."
-msgstr "Sélectionne le cinquième jeudi du mois proposé"
+msgstr "Sélectionne deux cinquièmes du rectangle."
 
 #: activities/fractions_create/resource/2/Data.qml:50
 msgctxt "Data|"
 msgid "Select one rectangle and one-quarter of a rectangle."
-msgstr ""
+msgstr "Sélectionne un rectangle et un quart de rectangle."
 
 #: activities/fractions_create/resource/2/Data.qml:56
 msgctxt "Data|"
 msgid "Select one rectangle and two-fifths of a rectangle."
-msgstr ""
+msgstr "Sélectionne un rectangle et deux cinquièmes de rectangle."
 
 #: activities/fractions_create/resource/2/Data.qml:62
 msgctxt "Data|"
 msgid "Select one rectangle and one-third of a rectangle."
-msgstr ""
+msgstr "Sélectionne un rectangle et un tiers de rectangle."
 
 #: activities/fractions_create/resource/2/Data.qml:68
 msgctxt "Data|"
 msgid "Select one rectangle and one half of a rectangle."
-msgstr ""
+msgstr "Sélectionne un rectangle et une moitié de rectangle."
 
 #: activities/fractions_create/resource/2/Data.qml:74
 msgctxt "Data|"
 msgid "Select one rectangle and three-quarters of a rectangle."
-msgstr ""
+msgstr "Sélectionne un rectangle et trois quarts de rectangle."
 
 #: activities/fractions_create/resource/3/Data.qml:9
 msgctxt "Data|"
@@ -10889,148 +10856,121 @@ msgstr "Suvalkija"
 #: activities/geo-country/resource/board/board18_0.qml:13
 msgctxt "board18_0|"
 msgid "Autonomous communities of Spain"
-msgstr ""
+msgstr "Communautés autonomes d'Espagne"
 
 #. Autonomous communities of Spain: Andalusia
 #: activities/geo-country/resource/board/board18_0.qml:22
 msgctxt "board18_0|"
 msgid "Andalusia"
-msgstr ""
+msgstr "Andalousie"
 
 #. Autonomous communities of Spain: Madrid
 #: activities/geo-country/resource/board/board18_0.qml:29
 msgctxt "board18_0|"
 msgid "Madrid"
-msgstr ""
+msgstr "Communauté de Madrid"
 
 #. Autonomous communities of Spain: Galicia
 #: activities/geo-country/resource/board/board18_0.qml:36
-#, fuzzy
-#| msgctxt "DialogConfig|"
-#| msgid "Galician"
 msgctxt "board18_0|"
 msgid "Galicia"
-msgstr "Galicien"
+msgstr "Galice"
 
 #. Autonomous communities of Spain: Castile and León
 #: activities/geo-country/resource/board/board18_0.qml:43
 msgctxt "board18_0|"
 msgid "Castile and León"
-msgstr ""
+msgstr "Castille-et-León"
 
 #. Autonomous communities of Spain: Castilla-La Mancha
 #: activities/geo-country/resource/board/board18_0.qml:50
 msgctxt "board18_0|"
 msgid "Castilla-La Mancha"
-msgstr ""
+msgstr "Castille-La Manche"
 
 #. Autonomous communities of Spain: Catalonia
 #: activities/geo-country/resource/board/board18_0.qml:57
-#, fuzzy
-#| msgctxt "board11_3|"
-#| msgid "Catania"
 msgctxt "board18_0|"
 msgid "Catalonia"
-msgstr "Catane"
+msgstr "Catalogne"
 
 #. Autonomous communities of Spain: Aragon
 #: activities/geo-country/resource/board/board18_0.qml:64
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Hexagon"
 msgctxt "board18_0|"
 msgid "Aragon"
-msgstr "Hexagone"
+msgstr "Aragon"
 
 #. Autonomous communities of Spain: Valencia
 #: activities/geo-country/resource/board/board18_0.qml:71
-#, fuzzy
-#| msgctxt "board11_3|"
-#| msgid "Vibo Valentia"
 msgctxt "board18_0|"
 msgid "Valencia"
-msgstr "Vibo Valentia"
+msgstr "Valence"
 
 #. Autonomous communities of Spain: Murcia
 #: activities/geo-country/resource/board/board18_0.qml:78
 msgctxt "board18_0|"
 msgid "Murcia"
-msgstr ""
+msgstr "Région de Murcie"
 
 #. Autonomous communities of Spain: Asturias
 #: activities/geo-country/resource/board/board18_0.qml:85
 msgctxt "board18_0|"
 msgid "Asturias"
-msgstr ""
+msgstr "Asturies"
 
 #. Autonomous communities of Spain: Basque Country
 #: activities/geo-country/resource/board/board18_0.qml:92
 msgctxt "board18_0|"
 msgid "Basque Country"
-msgstr ""
+msgstr "Pays basque"
 
 #. Autonomous communities of Spain: La Rioja
 #: activities/geo-country/resource/board/board18_0.qml:99
-#, fuzzy
-#| msgctxt "board3_0|"
-#| msgid "La Rioja"
 msgctxt "board18_0|"
 msgid "La Rioja"
 msgstr "La Rioja"
 
 #. Autonomous communities of Spain: Cantabria
 #: activities/geo-country/resource/board/board18_0.qml:106
-#, fuzzy
-#| msgctxt "board11_0|"
-#| msgid "Calabria"
 msgctxt "board18_0|"
 msgid "Cantabria"
-msgstr "Calabre"
+msgstr "Cantabrie"
 
 #. Autonomous communities of Spain: Navarre
 #: activities/geo-country/resource/board/board18_0.qml:113
-#, fuzzy
-#| msgctxt "board5|"
-#| msgid "Navajo"
 msgctxt "board18_0|"
 msgid "Navarre"
-msgstr "Le Navajo National Monument"
+msgstr "Navarre"
 
 #. Autonomous communities of Spain: Extremadura
 #: activities/geo-country/resource/board/board18_0.qml:120
 msgctxt "board18_0|"
 msgid "Extremadura"
-msgstr ""
+msgstr "Estrémadure"
 
 #. Autonomous communities of Spain: Canary Islands
 #: activities/geo-country/resource/board/board18_0.qml:127
-#, fuzzy
-#| msgctxt "board14_0|"
-#| msgid "Mariana Islands"
 msgctxt "board18_0|"
 msgid "Canary Islands"
-msgstr "Îles des Mariannes"
+msgstr "Îles Canaries"
 
 #. Autonomous communities of Spain: Balearic Islands
 #: activities/geo-country/resource/board/board18_0.qml:134
-#, fuzzy
-#| msgctxt "board14_0|"
-#| msgid "Mariana Islands"
 msgctxt "board18_0|"
 msgid "Balearic Islands"
-msgstr "Îles des Mariannes"
+msgstr "Îles Baléares"
 
 #. Autonomous communities of Spain: Ceuta
 #: activities/geo-country/resource/board/board18_0.qml:141
 msgctxt "board18_0|"
 msgid "Ceuta"
-msgstr ""
+msgstr "Ceuta"
 
 #. Autonomous communities of Spain: Melilla
 #: activities/geo-country/resource/board/board18_0.qml:148
 msgctxt "board18_0|"
 msgid "Melilla"
-msgstr ""
+msgstr "Melilla"
 
 #: activities/geo-country/resource/board/board1_0.qml:15
 msgctxt "board1_0|"
@@ -15984,18 +15924,12 @@ msgstr ""
 
 #. Help manual
 #: activities/left_right_click/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "A left click on a horse will move it to the stable. A right click on a "
-#| "monkey will move it to the tree. A message will show if you make the "
-#| "wrong click."
 msgctxt "ActivityInfo|"
 msgid ""
 "A left click on a fish will move it to the pond. A right click on a monkey "
 "will move it to the tree. A message will show if you make the wrong click."
 msgstr ""
-"Un clic avec le bouton gauche sur un cheval va l'amener dans l'étable. Un "
+"Un clic avec le bouton gauche sur un poisson va l'amener dans l'étang. Un "
 "clic avec le bouton droit sur un singe va l'amener dans l'arbre. Un message "
 "apparaîtra si tu n'utilises pas le bon bouton."
 
@@ -18774,6 +18708,187 @@ msgstr ""
 "le prix total."
 
 #. Activity title
+#: activities/morse_code/ActivityInfo.qml:18
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Discover the braille system"
+msgctxt "ActivityInfo|"
+msgid "Discover the International Morse code"
+msgstr "Découvre le système braille"
+
+#. Help title
+#: activities/morse_code/ActivityInfo.qml:20
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Learn how to tell the time on an analog clock."
+msgctxt "ActivityInfo|"
+msgid "Learn how to communicate with the International Morse code."
+msgstr "Apprends à lire l'heure sur une montre à aiguilles."
+
+#. Help goal
+#: activities/morse_code/ActivityInfo.qml:23
+msgctxt "ActivityInfo|"
+msgid ""
+"You have to send and receive letters and digits in International Morse code."
+msgstr ""
+
+#. Help prerequisite
+#: activities/morse_code/ActivityInfo.qml:25
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Knowledge of arithmetic operations."
+msgctxt "ActivityInfo|"
+msgid "Knowledge of alphabets and digits."
+msgstr "Connaître les opérations arithmétiques."
+
+#. Help manual
+#: activities/morse_code/ActivityInfo.qml:27
+msgctxt "ActivityInfo|"
+msgid ""
+"You are either asked to send a message in Morse code or convert the received "
+"Morse code message to letters or digits. To learn the Morse code, you can "
+"have a look at the translation map which contains the code for all the "
+"letters and digits."
+msgstr ""
+
+#: activities/morse_code/FirstScreen.qml:25
+msgctxt "FirstScreen|"
+msgid "Exploring Morse Code"
+msgstr ""
+
+#: activities/morse_code/FirstScreen.qml:52
+msgctxt "FirstScreen|"
+msgid ""
+"Morse code was developed by Samuel Morse. It is a method of transmitting "
+"text information as a series of on-off tones, lights, or clicks."
+msgstr ""
+
+#: activities/morse_code/FirstScreen.qml:53
+msgctxt "FirstScreen|"
+msgid ""
+"Each Morse code symbol represents either a text character (letter or "
+"numeral) or a prosign and is represented by a unique sequence of dots and "
+"dashes. The duration of a dash is three times the duration of a dot. To "
+"increase the speed of the communication, the code was designed so that the "
+"most common letters have the shorter sequences of dots and dashes.\n"
+"For example, the most common letter in English, the letter \"E\", has the "
+"shortest code, a single dot."
+msgstr ""
+
+#: activities/morse_code/FirstScreen.qml:90
+#, fuzzy
+#| msgctxt "FirstScreen|"
+#| msgid ""
+#| "When you are ready, click on me and try reproducing braille characters."
+msgctxt "FirstScreen|"
+msgid "When you are ready, click on Tux and we will converse in Morse code."
+msgstr ""
+"Dès que tu es prêt, clique-moi dessus et essaie de reproduire les caractères "
+"braille."
+
+#: activities/morse_code/MorseCode.qml:332
+#, fuzzy, qt-format
+#| msgctxt "RomanNumerals|"
+#| msgid "Roman value: %1"
+msgctxt "MorseCode|"
+msgid "Morse value: %1"
+msgstr "Nombre romain : %1"
+
+#: activities/morse_code/MorseCode.qml:333
+#, fuzzy, qt-format
+#| msgctxt "RomanNumerals|"
+#| msgid "Arabic value: %1"
+msgctxt "MorseCode|"
+msgid "Alphabet/Numeric value: %1"
+msgstr "Nombre arabe : %1"
+
+#: activities/morse_code/resource/1/Data.qml:13
+#, fuzzy
+#| msgctxt "Menu|"
+#| msgid "Letters"
+msgctxt "Data|"
+msgid "Letters."
+msgstr "Lettres"
+
+#: activities/morse_code/resource/1/Data.qml:18
+#: activities/morse_code/resource/1/Data.qml:34
+#: activities/morse_code/resource/1/Data.qml:50
+#: activities/morse_code/resource/1/Data.qml:66
+#: activities/morse_code/resource/2/Data.qml:18
+#: activities/morse_code/resource/2/Data.qml:34
+#: activities/morse_code/resource/3/Data.qml:18
+#, qt-format
+msgctxt "Data|"
+msgid "Send the message %1 in Morse code."
+msgstr ""
+
+#: activities/morse_code/resource/1/Data.qml:23
+#: activities/morse_code/resource/1/Data.qml:39
+#: activities/morse_code/resource/1/Data.qml:55
+#: activities/morse_code/resource/1/Data.qml:71
+#, fuzzy, qt-format
+#| msgctxt "RomanNumerals|"
+#| msgid "Convert the roman number %1 to arabic."
+msgctxt "Data|"
+msgid "Convert the message %1 to letters."
+msgstr "Convertis le nombre romain %1 en nombre arabe"
+
+#: activities/morse_code/resource/1/Data.qml:28
+#: activities/morse_code/resource/1/Data.qml:44
+#: activities/morse_code/resource/1/Data.qml:60
+#: activities/morse_code/resource/1/Data.qml:76
+#, fuzzy
+#| msgctxt "advanced_colors|"
+#| msgid "Find the corn butterfly"
+msgctxt "Data|"
+msgid "Find the corresponding letter."
+msgstr "Trouve le papillon blé"
+
+#: activities/morse_code/resource/2/Data.qml:13
+msgctxt "Data|"
+msgid "Digits."
+msgstr ""
+
+#: activities/morse_code/resource/2/Data.qml:23
+#: activities/morse_code/resource/2/Data.qml:39
+#, fuzzy, qt-format
+#| msgctxt "RomanNumerals|"
+#| msgid "Convert the roman number %1 to arabic."
+msgctxt "Data|"
+msgid "Convert the message %1 to digits."
+msgstr "Convertis le nombre romain %1 en nombre arabe"
+
+#: activities/morse_code/resource/2/Data.qml:28
+#: activities/morse_code/resource/2/Data.qml:44
+#, fuzzy
+#| msgctxt "instruments|"
+#| msgid "Find the accordion"
+msgctxt "Data|"
+msgid "Find the corresponding digit."
+msgstr "Trouve l'accordéon"
+
+#: activities/morse_code/resource/3/Data.qml:13
+#, fuzzy
+#| msgctxt "Menu|"
+#| msgid "Words"
+msgctxt "Data|"
+msgid "Words."
+msgstr "Mots"
+
+#: activities/morse_code/resource/3/Data.qml:24
+msgctxt "Data|"
+msgid "Write the Morse code you hear."
+msgstr ""
+
+#: activities/morse_code/resource/3/Data.qml:34
+#, fuzzy
+#| msgctxt "RomanNumerals|"
+#| msgid "Convert the roman number %1 to arabic."
+msgctxt "Data|"
+msgid "Convert the message in a word."
+msgstr "Convertis le nombre romain %1 en nombre arabe"
+
+#. Activity title
 #: activities/mosaic/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Rebuild the mosaic"
@@ -18848,18 +18963,12 @@ msgstr ""
 
 #. Help manual
 #: activities/nine_men_morris/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Play with a friend. First take turns to place nine pieces, and then take "
-#| "turns to move your pieces."
 msgctxt "ActivityInfo|"
 msgid ""
 "Play with Tux. First take turns to place nine pieces, and then take turns to "
 "move your pieces."
 msgstr ""
-"Joue avec un ami. Posez d'abord vos pions puis chacun votre tour déplacez-"
-"les."
+"Joue avec Tux. Posez d'abord vos pions puis chacun votre tour déplacez-les."
 
 #: activities/nine_men_morris/nine_men_morris.js:29
 msgctxt "nine_men_morris|"
@@ -24935,20 +25044,15 @@ msgstr ""
 
 #. Help manual
 #: activities/tic_tac_toe/ActivityInfo.qml:27
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Play with a friend. Take turns to click on the square which you want to "
-#| "mark. The first player to create a line of 3 marks wins."
 msgctxt "ActivityInfo|"
 msgid ""
 "Play with Tux. Take turns to click on the square which you want to mark. The "
 "first player to create a line of 3 marks wins."
 msgstr ""
-"Joue avec un ami. Tour à tour, clique sur la case dans laquelle tu veux "
-"déposer un jeton. Tu peux aussi utiliser les touches flèches pour déplacer "
-"le jeton à gauche ou à droite, et la touche flèche bas ou la barre espace "
-"pour faire tomber le jeton. Le premier qui aligne trois jetons a gagné."
+"Joue avec Tux. Tour à tour, clique sur la case dans laquelle tu veux déposer "
+"un jeton. Tu peux aussi utiliser les touches flèches pour déplacer le jeton "
+"à gauche ou à droite, et la touche flèche bas ou la barre espace pour faire "
+"tomber le jeton. Le premier qui aligne trois jetons a gagné."
 
 #. Activity title
 #: activities/tic_tac_toe_2players/ActivityInfo.qml:18
