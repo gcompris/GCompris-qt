@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2022-10-26 23:02+0200\n"
+"PO-Revision-Date: 2022-10-31 11:35+0100\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -18415,21 +18415,15 @@ msgstr ""
 
 #. Activity title
 #: activities/morse_code/ActivityInfo.qml:18
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Discover the braille system"
 msgctxt "ActivityInfo|"
 msgid "Discover the International Morse code"
-msgstr "Ontdek het braillesysteem"
+msgstr "Ontdek de internationale morsecode"
 
 #. Help title
 #: activities/morse_code/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn how to tell the time on an analog clock."
 msgctxt "ActivityInfo|"
 msgid "Learn how to communicate with the International Morse code."
-msgstr "Klokkijken leren op een klok met wijzers."
+msgstr "Leren hoe met de internationale morsecode te communiceren."
 
 #. Help goal
 #: activities/morse_code/ActivityInfo.qml:23
@@ -18437,15 +18431,14 @@ msgctxt "ActivityInfo|"
 msgid ""
 "You have to send and receive letters and digits in International Morse code."
 msgstr ""
+"Je moet letters en cijfers verzenden en ontvangen in internationale "
+"morsecode."
 
 #. Help prerequisite
 #: activities/morse_code/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Knowledge of arithmetic operations."
 msgctxt "ActivityInfo|"
 msgid "Knowledge of alphabets and digits."
-msgstr "Kennis van rekenkundige bewerkingen."
+msgstr "Kennis van alfabet en cijfers."
 
 #. Help manual
 #: activities/morse_code/ActivityInfo.qml:27
@@ -18456,11 +18449,15 @@ msgid ""
 "have a look at the translation map which contains the code for all the "
 "letters and digits."
 msgstr ""
+"Je wordt ofwel gevraagd een bericht in morsecode te verzenden of het "
+"ontvangen bericht in morsecode naar letters of cijfers te converteren. Om de "
+"morsecode te leren, kun je een kijkje nemen op de vertaalkaart die de code "
+"voor alle letters en cijfers bevat."
 
 #: activities/morse_code/FirstScreen.qml:25
 msgctxt "FirstScreen|"
 msgid "Exploring Morse Code"
-msgstr ""
+msgstr "Morsecode verkennen"
 
 #: activities/morse_code/FirstScreen.qml:52
 msgctxt "FirstScreen|"
@@ -18468,6 +18465,9 @@ msgid ""
 "Morse code was developed by Samuel Morse. It is a method of transmitting "
 "text information as a series of on-off tones, lights, or clicks."
 msgstr ""
+"Morsecode is ontwikkeld door Samuel Morse. Het is een methode voor het "
+"overbrengen van tekstinformatie als een serie van aan-uit tonen, lichten of "
+"klikken."
 
 #: activities/morse_code/FirstScreen.qml:53
 msgctxt "FirstScreen|"
@@ -18480,41 +18480,37 @@ msgid ""
 "For example, the most common letter in English, the letter \"E\", has the "
 "shortest code, a single dot."
 msgstr ""
+"Elk symbool in morsecode representeert ofwel een tekstteken (letter of "
+"cijfer) of een voorteken en wordt gerepresenteerd door een unieke reeks "
+"punten en streepjes. De duur van een streepje is drie maal de duur van een "
+"punt. Om de snelheid van de communicatie te vergroten, is de code ontworpen "
+"zodat de meest algemene letters de kortere reeks van punten en streepjes "
+"heeft.\n"
+"Bijvoorbeeld, de meest algemene letter in het Engels, de letter \"E\", heeft "
+"de kortste code, een enkele punt."
 
 #: activities/morse_code/FirstScreen.qml:90
-#, fuzzy
-#| msgctxt "FirstScreen|"
-#| msgid ""
-#| "When you are ready, click on me and try reproducing braille characters."
 msgctxt "FirstScreen|"
 msgid "When you are ready, click on Tux and we will converse in Morse code."
 msgstr ""
-"Als je er klaar voor bent, klik dan op mij en probeer brailletekens na te "
-"maken."
+"Als je klaar bent, klik dan op Tux en we zullen naar morsecode converteren."
 
 #: activities/morse_code/MorseCode.qml:332
-#, fuzzy, qt-format
-#| msgctxt "RomanNumerals|"
-#| msgid "Roman value: %1"
+#, qt-format
 msgctxt "MorseCode|"
 msgid "Morse value: %1"
-msgstr "Romeinse waarde: %1"
+msgstr "Morse-waarde: %1"
 
 #: activities/morse_code/MorseCode.qml:333
-#, fuzzy, qt-format
-#| msgctxt "RomanNumerals|"
-#| msgid "Arabic value: %1"
+#, qt-format
 msgctxt "MorseCode|"
 msgid "Alphabet/Numeric value: %1"
-msgstr "Arabische waarde: %1"
+msgstr "Alfabetische/numerieke waarde: %1"
 
 #: activities/morse_code/resource/1/Data.qml:13
-#, fuzzy
-#| msgctxt "Menu|"
-#| msgid "Letters"
 msgctxt "Data|"
 msgid "Letters."
-msgstr "Letters"
+msgstr "Letters."
 
 #: activities/morse_code/resource/1/Data.qml:18
 #: activities/morse_code/resource/1/Data.qml:34
@@ -18526,73 +18522,57 @@ msgstr "Letters"
 #, qt-format
 msgctxt "Data|"
 msgid "Send the message %1 in Morse code."
-msgstr ""
+msgstr "Het bericht %1 in morsecode verzenden."
 
 #: activities/morse_code/resource/1/Data.qml:23
 #: activities/morse_code/resource/1/Data.qml:39
 #: activities/morse_code/resource/1/Data.qml:55
 #: activities/morse_code/resource/1/Data.qml:71
-#, fuzzy, qt-format
-#| msgctxt "RomanNumerals|"
-#| msgid "Convert the roman number %1 to arabic."
+#, qt-format
 msgctxt "Data|"
 msgid "Convert the message %1 to letters."
-msgstr "Romeins getal %1 in Arabische cijfers converteren."
+msgstr "Het bericht %1 in naar letters converteren."
 
 #: activities/morse_code/resource/1/Data.qml:28
 #: activities/morse_code/resource/1/Data.qml:44
 #: activities/morse_code/resource/1/Data.qml:60
 #: activities/morse_code/resource/1/Data.qml:76
-#, fuzzy
-#| msgctxt "advanced_colors|"
-#| msgid "Find the corn butterfly"
 msgctxt "Data|"
 msgid "Find the corresponding letter."
-msgstr "Zoek de mais-gele vlinder"
+msgstr "Zoek de bijbehorende letter."
 
 #: activities/morse_code/resource/2/Data.qml:13
 msgctxt "Data|"
 msgid "Digits."
-msgstr ""
+msgstr "Cijfers."
 
 #: activities/morse_code/resource/2/Data.qml:23
 #: activities/morse_code/resource/2/Data.qml:39
-#, fuzzy, qt-format
-#| msgctxt "RomanNumerals|"
-#| msgid "Convert the roman number %1 to arabic."
+#, qt-format
 msgctxt "Data|"
 msgid "Convert the message %1 to digits."
-msgstr "Romeins getal %1 in Arabische cijfers converteren."
+msgstr "Het bericht %1 naar cijfers converteren."
 
 #: activities/morse_code/resource/2/Data.qml:28
 #: activities/morse_code/resource/2/Data.qml:44
-#, fuzzy
-#| msgctxt "instruments|"
-#| msgid "Find the accordion"
 msgctxt "Data|"
 msgid "Find the corresponding digit."
-msgstr "Zoek de accordeon"
+msgstr "Zoek het bijbehorende cijfer."
 
 #: activities/morse_code/resource/3/Data.qml:13
-#, fuzzy
-#| msgctxt "Menu|"
-#| msgid "Words"
 msgctxt "Data|"
 msgid "Words."
-msgstr "Woorden"
+msgstr "Woorden."
 
 #: activities/morse_code/resource/3/Data.qml:24
 msgctxt "Data|"
 msgid "Write the Morse code you hear."
-msgstr ""
+msgstr "Schrijf de morsecode die je hoort."
 
 #: activities/morse_code/resource/3/Data.qml:34
-#, fuzzy
-#| msgctxt "RomanNumerals|"
-#| msgid "Convert the roman number %1 to arabic."
 msgctxt "Data|"
 msgid "Convert the message in a word."
-msgstr "Romeins getal %1 in Arabische cijfers converteren."
+msgstr "Het bericht in een woord converteren."
 
 #. Activity title
 #: activities/mosaic/ActivityInfo.qml:15

@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-10-31 00:41+0000\n"
-"PO-Revision-Date: 2022-09-30 06:24+0200\n"
+"PO-Revision-Date: 2022-10-31 06:02+0100\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
 "Language: eu\n"
@@ -877,12 +877,9 @@ msgstr "Egin klik ordaindu beharreko diruan."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "morse_code"
 #: activities/morse_code/ActivityInfo.qml:21
-#, fuzzy, kde-format
-#| msgid "Learn and practice roman to arabic numerals conversion"
+#, kde-format
 msgid "Learn and practice the International Morse code"
-msgstr ""
-"Ikasi eta praktikatu zenbaki erromatarretatik arabiarretarako bihurketak "
-"egiten"
+msgstr "Ikasi eta praktikatu Nazioarteko Morse kodea"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "mosaic"
 #: activities/mosaic/ActivityInfo.qml:18

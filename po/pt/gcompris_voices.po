@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: gcompris_voices\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-10-31 00:41+0000\n"
-"PO-Revision-Date: 2022-09-26 16:53+0100\n"
+"PO-Revision-Date: 2022-10-31 09:57+0000\n"
 "Last-Translator: José Nuno Coelho Pires <zepires@gmail.com>\n"
 "Language-Team: Portuguese <kde-i18n-pt@kde.org>\n"
 "Language: pt\n"
@@ -883,10 +883,9 @@ msgstr "Carregue no dinheiro para pagar."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "morse_code"
 #: activities/morse_code/ActivityInfo.qml:21
-#, fuzzy, kde-format
-#| msgid "Learn and practice roman to arabic numerals conversion"
+#, kde-format
 msgid "Learn and practice the International Morse code"
-msgstr "Aprenda e pratique a conversão de números romanos para árabes"
+msgstr "Aprenda e pratique o código Morse internacional"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "mosaic"
 #: activities/mosaic/ActivityInfo.qml:18

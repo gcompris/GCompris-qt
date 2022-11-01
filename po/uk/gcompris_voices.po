@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: gcompris_voices\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-10-31 00:41+0000\n"
-"PO-Revision-Date: 2022-09-26 08:39+0300\n"
+"PO-Revision-Date: 2022-10-31 17:04+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
 "Language: uk\n"
@@ -889,12 +889,9 @@ msgstr "Натисніть на зображеннях грошей, які сл
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "morse_code"
 #: activities/morse_code/ActivityInfo.qml:21
-#, fuzzy, kde-format
-#| msgid "Learn and practice roman to arabic numerals conversion"
+#, kde-format
 msgid "Learn and practice the International Morse code"
-msgstr ""
-"Ознайомтеся з правилами та повправляйтеся у перетворенні чисел з римського "
-"запису до арабського, і навпаки."
+msgstr "Вивчайте міжнародну азбуку Морзе та вправляйтеся у ній"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "mosaic"
 #: activities/mosaic/ActivityInfo.qml:18
