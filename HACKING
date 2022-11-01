@@ -55,6 +55,10 @@ CMake must be installed to compile GCompris:
 
     sudo apt install cmake
 
+By default, translations are also built so gettext package must be installed to compile GCompris (to ignore translation files, run cmake with `-DSKIP_TRANSLATIONS=ON`:
+
+    sudo apt install gettext
+    
 Installing dependencies on a Debian based systems can be done like this:
 
     sudo apt install libqt5svg5-dev \
