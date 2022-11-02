@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2022-10-27 07:04+0200\n"
+"PO-Revision-Date: 2022-11-01 17:41+0100\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
@@ -18235,21 +18235,15 @@ msgstr ""
 
 #. Activity title
 #: activities/morse_code/ActivityInfo.qml:18
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Discover the braille system"
 msgctxt "ActivityInfo|"
 msgid "Discover the International Morse code"
-msgstr "Odkrij brajico"
+msgstr "Odkrij mednarodno Morsejevo kodo"
 
 #. Help title
 #: activities/morse_code/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn how to tell the time on an analog clock."
 msgctxt "ActivityInfo|"
 msgid "Learn how to communicate with the International Morse code."
-msgstr "Naučite se razpoznati čas na analogni uri."
+msgstr "Naučite se komunicirati z mednarodno Morsejevo kodo."
 
 #. Help goal
 #: activities/morse_code/ActivityInfo.qml:23
@@ -18257,15 +18251,13 @@ msgctxt "ActivityInfo|"
 msgid ""
 "You have to send and receive letters and digits in International Morse code."
 msgstr ""
+"Poslati in sprejeti morate črke in številke v mednarodni Morsejevi kodi."
 
 #. Help prerequisite
 #: activities/morse_code/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Knowledge of arithmetic operations."
 msgctxt "ActivityInfo|"
 msgid "Knowledge of alphabets and digits."
-msgstr "Poznavanje aritmetičnih operacij."
+msgstr "Poznavanje abeced in številk."
 
 #. Help manual
 #: activities/morse_code/ActivityInfo.qml:27
@@ -18276,11 +18268,14 @@ msgid ""
 "have a look at the translation map which contains the code for all the "
 "letters and digits."
 msgstr ""
+"Naprošeni ste, da pošljete sporočilo v Morsejevi kodi ali prevedete prejeto "
+"sporočilo v Morsejevi kodi v črke ali številke. Da bi se naučiti Morsejeve "
+"kode, si lahko ogledate tabelo, ki vsebuje kodo za vse črke in številke."
 
 #: activities/morse_code/FirstScreen.qml:25
 msgctxt "FirstScreen|"
 msgid "Exploring Morse Code"
-msgstr ""
+msgstr "Raziskovanje Morsejeve kode"
 
 #: activities/morse_code/FirstScreen.qml:52
 msgctxt "FirstScreen|"
@@ -18288,6 +18283,8 @@ msgid ""
 "Morse code was developed by Samuel Morse. It is a method of transmitting "
 "text information as a series of on-off tones, lights, or clicks."
 msgstr ""
+"Morsejevo kodo je razvil Samuel Morse. Je metoda prenašanja besedne "
+"informacije kot zaporedja zvokov, bliskov ali klikov."
 
 #: activities/morse_code/FirstScreen.qml:53
 msgctxt "FirstScreen|"
@@ -18300,40 +18297,37 @@ msgid ""
 "For example, the most common letter in English, the letter \"E\", has the "
 "shortest code, a single dot."
 msgstr ""
+"Vsak simbol v Morsejevi kodi predstavlja bodisi besedilni znak (črko ali "
+"številko) ali uvodno zaporedje, ki je predstavljeno z edinstvenim zaporedjem "
+"pik in črt. Trajanje črte je trikrat večje od trajanja pike. Da bi povečal "
+"hitrost komunikacije, je bila koda je bila zasnovana tako, da imajo "
+"najpogostejše črke imajo krajše zaporedje pik in črt.\n"
+"Na primer, najpogostejša črka v angleščini, črka \"E\", ima najkrajšo kodo, "
+"eno piko."
 
 #: activities/morse_code/FirstScreen.qml:90
-#, fuzzy
-#| msgctxt "FirstScreen|"
-#| msgid ""
-#| "When you are ready, click on me and try reproducing braille characters."
 msgctxt "FirstScreen|"
 msgid "When you are ready, click on Tux and we will converse in Morse code."
 msgstr ""
-"Ko boste pripravljeni, kliknite name in poskusite ponoviti znake brajice."
+"Ko boste pripravljeni, kliknite na Tuxa in se bomo pogovarjali v Morsejevi "
+"kodi."
 
 #: activities/morse_code/MorseCode.qml:332
-#, fuzzy, qt-format
-#| msgctxt "RomanNumerals|"
-#| msgid "Roman value: %1"
+#, qt-format
 msgctxt "MorseCode|"
 msgid "Morse value: %1"
-msgstr "Rimska vrednost: %1"
+msgstr "Morsejeva vrednost: %1"
 
 #: activities/morse_code/MorseCode.qml:333
-#, fuzzy, qt-format
-#| msgctxt "RomanNumerals|"
-#| msgid "Arabic value: %1"
+#, qt-format
 msgctxt "MorseCode|"
 msgid "Alphabet/Numeric value: %1"
-msgstr "Arabska vrednost: %1"
+msgstr "Črkovna/Številska vrednost: %1"
 
 #: activities/morse_code/resource/1/Data.qml:13
-#, fuzzy
-#| msgctxt "Menu|"
-#| msgid "Letters"
 msgctxt "Data|"
 msgid "Letters."
-msgstr "Črke"
+msgstr "Črke."
 
 #: activities/morse_code/resource/1/Data.qml:18
 #: activities/morse_code/resource/1/Data.qml:34
@@ -18345,73 +18339,57 @@ msgstr "Črke"
 #, qt-format
 msgctxt "Data|"
 msgid "Send the message %1 in Morse code."
-msgstr ""
+msgstr "Pošljite sporočilo %1 v Morsejevi kodi."
 
 #: activities/morse_code/resource/1/Data.qml:23
 #: activities/morse_code/resource/1/Data.qml:39
 #: activities/morse_code/resource/1/Data.qml:55
 #: activities/morse_code/resource/1/Data.qml:71
-#, fuzzy, qt-format
-#| msgctxt "RomanNumerals|"
-#| msgid "Convert the roman number %1 to arabic."
+#, qt-format
 msgctxt "Data|"
 msgid "Convert the message %1 to letters."
-msgstr "Pretvori rimsko številko %1 v arabsko."
+msgstr "Pretvorite sporočilo %1 v črke."
 
 #: activities/morse_code/resource/1/Data.qml:28
 #: activities/morse_code/resource/1/Data.qml:44
 #: activities/morse_code/resource/1/Data.qml:60
 #: activities/morse_code/resource/1/Data.qml:76
-#, fuzzy
-#| msgctxt "advanced_colors|"
-#| msgid "Find the corn butterfly"
 msgctxt "Data|"
 msgid "Find the corresponding letter."
-msgstr "Najdi metuljčka koruzno rumene barve"
+msgstr "Najdite ustrezno črko."
 
 #: activities/morse_code/resource/2/Data.qml:13
 msgctxt "Data|"
 msgid "Digits."
-msgstr ""
+msgstr "Številke."
 
 #: activities/morse_code/resource/2/Data.qml:23
 #: activities/morse_code/resource/2/Data.qml:39
-#, fuzzy, qt-format
-#| msgctxt "RomanNumerals|"
-#| msgid "Convert the roman number %1 to arabic."
+#, qt-format
 msgctxt "Data|"
 msgid "Convert the message %1 to digits."
-msgstr "Pretvori rimsko številko %1 v arabsko."
+msgstr "Pretvorite sporočilo %1 v številke."
 
 #: activities/morse_code/resource/2/Data.qml:28
 #: activities/morse_code/resource/2/Data.qml:44
-#, fuzzy
-#| msgctxt "instruments|"
-#| msgid "Find the accordion"
 msgctxt "Data|"
 msgid "Find the corresponding digit."
-msgstr "Najdite harmoniko"
+msgstr "Najdi"
 
 #: activities/morse_code/resource/3/Data.qml:13
-#, fuzzy
-#| msgctxt "Menu|"
-#| msgid "Words"
 msgctxt "Data|"
 msgid "Words."
-msgstr "Besede"
+msgstr "Besede."
 
 #: activities/morse_code/resource/3/Data.qml:24
 msgctxt "Data|"
 msgid "Write the Morse code you hear."
-msgstr ""
+msgstr "Napišite Morsejevo kodo, ki jo slišite."
 
 #: activities/morse_code/resource/3/Data.qml:34
-#, fuzzy
-#| msgctxt "RomanNumerals|"
-#| msgid "Convert the roman number %1 to arabic."
 msgctxt "Data|"
 msgid "Convert the message in a word."
-msgstr "Pretvori rimsko številko %1 v arabsko."
+msgstr "Pretvorite sporočilo v besedo."
 
 #. Activity title
 #: activities/mosaic/ActivityInfo.qml:15

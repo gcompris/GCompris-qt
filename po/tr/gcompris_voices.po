@@ -2,20 +2,21 @@
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Volkan Gezer <volkangezer@gmail.com>, 2021.
+# Emir SARI <emir_sari@icloud.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_voices\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-10-31 00:41+0000\n"
-"PO-Revision-Date: 2021-10-29 16:07+0200\n"
-"Last-Translator: Volkan Gezer <volkangezer@gmail.com>\n"
+"PO-Revision-Date: 2022-11-01 13:49+0300\n"
+"Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 20.12.3\n"
+"X-Generator: Lokalize 22.08.2\n"
 "X-POOTLE-MTIME: 1497539875.000000\n"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "advanced_colors"
@@ -30,8 +31,7 @@ msgstr "istenen rengin üzerine tıkla"
 msgid ""
 "Multiply the two numbers together and type in your answer before the balloon "
 "lands in the water"
-msgstr ""
-"İki numarayı birbiriyle çarpın ve cevabınızı balon suya değmeden önce yazın"
+msgstr "İki numarayı birbiriyle çarp ve yanıtını balon suya değmeden önce yaz"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "algebra_div"
 #: activities/algebra_div/ActivityInfo.qml:18
@@ -39,8 +39,7 @@ msgstr ""
 msgid ""
 "Find the result of the division and type in your answer before the balloon "
 "lands in the water"
-msgstr ""
-"Bölme işleminin sonucunu bulun ve balon suya inmeden önce cevabınızı yazın"
+msgstr "Bölme işleminin sonucunu bul ve yanıtını balon suya değmeden önce yaz"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "algebra_minus"
 #: activities/algebra_minus/ActivityInfo.qml:18
@@ -48,8 +47,7 @@ msgstr ""
 msgid ""
 "Subtract the two numbers and type in your answer before the balloon lands in "
 "the water"
-msgstr ""
-"İki numarayı birbiriyle çarpın ve cevabınızı balon suya değmeden önce yazın"
+msgstr "İki numarayı birbiriyle çarp ve yanıtını balon suya değmeden önce yaz"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "algebra_plus"
 #: activities/algebra_plus/ActivityInfo.qml:18
@@ -57,8 +55,7 @@ msgstr ""
 msgid ""
 "Add the two numbers together and type in your answer before the balloon "
 "lands in the water"
-msgstr ""
-"İki numarayı birlikte ekleyin ve balon suya değmeden önce cevabınızı yazın"
+msgstr "İki numarayı birlikte ekle ve yanıtını balon suya değmeden önce yaz"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "algorithm"
 #: activities/algorithm/ActivityInfo.qml:18
@@ -345,7 +342,7 @@ msgstr "Noktaları doğru sırada birleştirerek, sayıları çizin."
 #, kde-format
 msgid ""
 "Count the elements by organizing them then type the answer on your keyboard."
-msgstr "Ögeleri düzenleyerek say ve ardından cevabı klavyenden yaz."
+msgstr "Ögeleri düzenleyerek say ve yanıtını klavyeden yaz"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "erase"
 #: activities/erase/ActivityInfo.qml:18
@@ -677,8 +674,7 @@ msgid ""
 "Guess if the picture presents a left or right hand and click on the correct "
 "answer."
 msgstr ""
-"Resmin sağda mı sol da mı olduğunu takmin edin ve doğru cevabın üstüne "
-"tıklayın."
+"Resmin sağda mı sol da mı olduğunu tahmin et ve doğru yanıtın üstüne tıkla."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "letter-in-word"
 #: activities/letter-in-word/ActivityInfo.qml:18
@@ -799,7 +795,7 @@ msgstr "Bir sayı kartını, aynı sayıda kelebeği gösteren bir kartla eşle�
 #: activities/memory-math-mult/ActivityInfo.qml:18
 #, kde-format
 msgid "Turn over two cards to match the calculation with its answer."
-msgstr "Hesaplamanın, cevap ile eşleşmesi için iki kartı çevirin."
+msgstr "Hesaplamanın yanıtıyla eşleşmesi için iki kartı ters çevir."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-sound"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-sound-tux"
@@ -1137,7 +1133,7 @@ msgstr "Domino taşlarının üzerindeki sayıları say ve sonucu klavyenden yaz
 #, kde-format
 msgid ""
 "Answer the questions presented and get a 100% correctness among the options."
-msgstr "Sunulan soruları cevapla ve seçenekler arasından 100 doğruluk elde et."
+msgstr "Sunulan soruları yanıtla ve seçeneklerin hepsini doğru yap"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "submarine"
 #: activities/submarine/ActivityInfo.qml:18

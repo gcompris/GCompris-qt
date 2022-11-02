@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-10-31 00:41+0000\n"
-"PO-Revision-Date: 2022-09-26 10:56+0200\n"
+"PO-Revision-Date: 2022-10-31 09:12+0100\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca@valencia\n"
@@ -24,7 +24,7 @@ msgstr ""
 #: activities/advanced_colors/ActivityInfo.qml:18
 #, kde-format
 msgid "click on the required color"
-msgstr "Fes clic sobre el color requerit."
+msgstr "Fes clic damunt del color requerit."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "algebra_by"
 #: activities/algebra_by/ActivityInfo.qml:18
@@ -131,7 +131,7 @@ msgid ""
 "orientation by clicking on the arrows."
 msgstr ""
 "Mou cada peça del puzle per a completar el trencaclosques. Pots canviar la "
-"seua orientació fent clic a les fletxes."
+"seua orientació fent clic en les fletxes."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "baby_wordprocessor"
 #: activities/baby_wordprocessor/ActivityInfo.qml:18
@@ -195,8 +195,8 @@ msgstr ""
 #, kde-format
 msgid "Click on Tux to start and then re-create the Braille cells."
 msgstr ""
-"Per a començar fes clic sobre en Tux i després torna a crear les cel·les en "
-"braille."
+"Per a començar fes clic damunt d'en Tux i després torna a crear les cel·les "
+"en braille."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "braille_fun"
 #: activities/braille_fun/ActivityInfo.qml:18
@@ -259,9 +259,9 @@ msgid ""
 "Click on a white chess piece and green boxes will appear to indicate all the "
 "movements that piece can make. Try and get the black king into checkmate."
 msgstr ""
-"Fes clic sobre una peça d'escacs blanca i apareixeran quadros en color verd "
-"per a indicar tots els moviments que es poden fer. Mira de capturar el rei "
-"negre fent escac i mat."
+"Fes clic damunt d'una peça d'escacs blanca i apareixeran quadros en color "
+"verd per a indicar tots els moviments que es poden fer. Mira de capturar el "
+"rei negre fent escac i mat."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "chronos"
 #: activities/chronos/ActivityInfo.qml:22
@@ -278,14 +278,14 @@ msgid ""
 "Click on the required letter. You can listen to it again by clicking on the "
 "mouth."
 msgstr ""
-"Fes clic sobre la lletra requerida. La pots tornar a escoltar fent clic en "
-"la boca."
+"Fes clic damunt de la lletra requerida. La pots tornar a escoltar fent clic "
+"en la boca."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "clickanddraw"
 #: activities/clickanddraw/ActivityInfo.qml:18
 #, kde-format
 msgid "Click on the selected points and draw"
-msgstr "Fes clic sobre els punts seleccionats i dibuixa."
+msgstr "Fes clic damunt dels punts seleccionats i dibuixa."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "clickgame"
 #: activities/clickgame/ActivityInfo.qml:18
@@ -321,7 +321,7 @@ msgstr ""
 #: activities/colors/ActivityInfo.qml:18
 #, kde-format
 msgid "Click on the right color"
-msgstr "Fes clic sobre el color correcte."
+msgstr "Fes clic damunt del color correcte."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "crane"
 #: activities/crane/ActivityInfo.qml:23
@@ -349,7 +349,7 @@ msgstr "Aprén com funciona l'electricitat digital i crea el teu propi circuit."
 #: activities/drawletters/ActivityInfo.qml:18
 #, kde-format
 msgid "Click on the selected points and draw the letter"
-msgstr "Fes clic sobre els punts seleccionats i dibuixa la lletra."
+msgstr "Fes clic damunt dels punts seleccionats i dibuixa la lletra."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "drawnumbers"
 #: activities/drawnumbers/ActivityInfo.qml:18
@@ -377,7 +377,8 @@ msgstr "Neteja la finestra amb l'esponja i descobrix la imatge oculta."
 #, kde-format
 msgid "Double tap or double click on the bricks to discover the hidden picture"
 msgstr ""
-"Fes doble toc o doble clic sobre els blocs per a descobrir la imatge oculta."
+"Fes doble toc o doble clic damunt dels blocs per a descobrir la imatge "
+"oculta."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "erase_clic"
 #: activities/erase_clic/ActivityInfo.qml:18
@@ -584,8 +585,8 @@ msgid ""
 "Rebuild the same tower in the empty area as the one you see on the right "
 "hand side."
 msgstr ""
-"Torna a construir en l'àrea buida la mateixa torre com la que veus al costat "
-"dret."
+"Torna a construir en l'àrea buida la mateixa torre com la que veus en el "
+"costat dret."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "hanoi_real"
 #: activities/hanoi_real/ActivityInfo.qml:18
@@ -643,7 +644,7 @@ msgstr ""
 #: activities/learn_subtractions/ActivityInfo.qml:18
 #, kde-format
 msgid "Click on the circles to give the operation's result."
-msgstr "Fes clic sobre els cercles per a donar el resultat de l'operació."
+msgstr "Fes clic damunt dels cercles per a donar el resultat de l'operació."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "learn_decimals"
 #: activities/learn_decimals/ActivityInfo.qml:17
@@ -671,13 +672,14 @@ msgstr ""
 #: activities/learn_decimals_subtractions/ActivityInfo.qml:17
 #, kde-format
 msgid "Click on the squares to represent the result of the subtraction."
-msgstr "Fes clic sobre els quadros per a representar el resultat de la resta."
+msgstr ""
+"Fes clic damunt dels quadros per a representar el resultat de la resta."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "learn_digits"
 #: activities/learn_digits/ActivityInfo.qml:18
 #, kde-format
 msgid "Click on the circles to match the given digit."
-msgstr "Fes clic sobre els cercles que coincidisquen amb el dígit indicat."
+msgstr "Fes clic damunt dels cercles que coincidisquen amb el dígit indicat."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "learn_quantities"
 #: activities/learn_quantities/ActivityInfo.qml:17
@@ -705,14 +707,15 @@ msgid ""
 "Guess if the picture presents a left or right hand and click on the correct "
 "answer."
 msgstr ""
-"Esbrina si la imatge presenta una mà esquerra o la dreta i fes clic sobre la "
-"resposta correcta."
+"Esbrina si la imatge presenta una mà esquerra o la dreta i fes clic damunt "
+"de la resposta correcta."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "letter-in-word"
 #: activities/letter-in-word/ActivityInfo.qml:18
 #, kde-format
 msgid "Click on all the words containing the wanted letter."
-msgstr "Fes clic sobre totes les paraules que continguen la lletra desitjada."
+msgstr ""
+"Fes clic damunt de totes les paraules que continguen la lletra desitjada."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "lightsoff"
 #: activities/lightsoff/ActivityInfo.qml:18
@@ -732,7 +735,8 @@ msgstr "Descobrix la història d'en Louis Braille."
 #, kde-format
 msgid "Click on the hat. How many stars are still hiding under the hat."
 msgstr ""
-"Fes clic sobre el barret. Quantes estreles s'amaguen encara davall el barret?"
+"Fes clic damunt del barret. Quantes estreles s'amaguen encara davall el "
+"barret?"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "magic-hat-plus"
 #: activities/magic-hat-plus/ActivityInfo.qml:18
@@ -840,7 +844,7 @@ msgstr ""
 #: activities/memory-sound/ActivityInfo.qml:18
 #, kde-format
 msgid "Click on an audio card and find its double."
-msgstr "Fes clic sobre una targeta amb àudio i troba el seu doble."
+msgstr "Fes clic damunt d'una targeta amb àudio i troba el seu doble."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-tux"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "memory"
@@ -848,7 +852,7 @@ msgstr "Fes clic sobre una targeta amb àudio i troba el seu doble."
 #: activities/memory/ActivityInfo.qml:18
 #, kde-format
 msgid "Click on a card and find its double."
-msgstr "Fes clic sobre una targeta i troba el seu doble."
+msgstr "Fes clic damunt d'una targeta i troba el seu doble."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-wordnumber"
 #: activities/memory-wordnumber/ActivityInfo.qml:18
@@ -875,8 +879,8 @@ msgid ""
 "Find the missing letter and complete the word by clicking on one of the "
 "letters proposed on the side."
 msgstr ""
-"Troba la lletra que falta i completa la paraula fent clic a una de les "
-"lletres propostes al costat."
+"Troba la lletra que falta i completa la paraula fent clic en una de les "
+"lletres propostes en el costat."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "money"
 #: activities/money/ActivityInfo.qml:18
@@ -902,10 +906,9 @@ msgstr "Fes clic en els diners per a pagar."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "morse_code"
 #: activities/morse_code/ActivityInfo.qml:21
-#, fuzzy, kde-format
-#| msgid "Learn and practice roman to arabic numerals conversion"
+#, kde-format
 msgid "Learn and practice the International Morse code"
-msgstr "Aprén i practica la conversió dels nombres romans a àrabs."
+msgstr "Aprén i practica el codi Morse internacional"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "mosaic"
 #: activities/mosaic/ActivityInfo.qml:18
@@ -920,8 +923,8 @@ msgid ""
 "Click on the dot where you wish to place your piece and try to take all "
 "Tux's pieces."
 msgstr ""
-"Fes clic al punt on vols col·locar la peça i mira de prendre totes les peces "
-"a en Tux."
+"Fes clic damunt del punt on vols col·locar la peça i mira de prendre totes "
+"les peces a en Tux."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "nine_men_morris_2players"
 #: activities/nine_men_morris_2players/ActivityInfo.qml:18
@@ -930,8 +933,8 @@ msgid ""
 "Click on the dot where you wish to place your piece and try to take all your "
 "friend's pieces."
 msgstr ""
-"Fes clic al punt on vols col·locar la peça i mira de prendre totes les peces "
-"del teu amic."
+"Fes clic damunt del punt on vols col·locar la peça i mira de prendre totes "
+"les peces del teu amic."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "note_names"
 #: activities/note_names/ActivityInfo.qml:21
@@ -1002,7 +1005,7 @@ msgid ""
 "Click on the grid squares following the given directions to help Tux reach "
 "the target."
 msgstr ""
-"Fes clic sobre els quadrats de quadrícula seguint les instruccions donades "
+"Fes clic damunt dels quadrats de quadrícula seguint les instruccions donades "
 "per a ajudar que en Tux arribe fins a l'objectiu."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "path_encoding"
@@ -1060,7 +1063,7 @@ msgstr ""
 #: activities/play_rhythm/ActivityInfo.qml:22
 #, kde-format
 msgid "Click the drum to recreate the rhythm"
-msgstr "Fes clic al tambor per a recrear el ritme"
+msgstr "Fes clic en el tambor per a recrear el ritme"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "positions"
 #: activities/positions/ActivityInfo.qml:18
@@ -1097,7 +1100,8 @@ msgstr "Llig una llista de paraules i digues si hi trobes la paraula indicada."
 #, kde-format
 msgid "Use the drawing tools to build an identical pattern on the right."
 msgstr ""
-"Utilitza les eines de dibuix per a construir un patró idèntic al costat dret."
+"Utilitza les eines de dibuix per a construir un patró idèntic en el costat "
+"dret."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "redraw_symmetrical"
 #: activities/redraw_symmetrical/ActivityInfo.qml:18
@@ -1105,7 +1109,7 @@ msgstr ""
 msgid ""
 "Use the drawing tools to reproduce symmetrically the pattern on the right."
 msgstr ""
-"Utilitza les eines de dibuix per a reproduir simètricament el patró al "
+"Utilitza les eines de dibuix per a reproduir simètricament el patró en el "
 "costat dret."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "renewable_energy"
@@ -1231,8 +1235,8 @@ msgid ""
 "Click on each object to obtain the same figure. You can change their "
 "orientation by clicking on the arrows."
 msgstr ""
-"Fes clic sobre cada objecte per a obtindre la mateixa figura. Pots canviar "
-"la seua orientació fent clic a les fletxes."
+"Fes clic damunt de cada objecte per a obtindre la mateixa figura. Pots "
+"canviar la seua orientació fent clic en les fletxes."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "target"
 #: activities/target/ActivityInfo.qml:18
@@ -1251,8 +1255,8 @@ msgid ""
 "Click on the square which you wish to mark and try to mark 3 consecutive "
 "squares before Tux."
 msgstr ""
-"Fes clic al lloc que vols marcar i intenta marcar tres caselles consecutives "
-"abans que en Tux."
+"Fes clic en el lloc que vols marcar i intenta marcar tres caselles "
+"consecutives abans que en Tux."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "traffic"
 #: activities/traffic/ActivityInfo.qml:18

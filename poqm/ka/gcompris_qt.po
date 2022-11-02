@@ -11,7 +11,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Qt-Contexts: true\n"
-"X-Generator: Poedit 3.1.1\n"
+"X-Generator: Poedit 3.2\n"
 
 #. Activity title
 #: activities/advanced_colors/ActivityInfo.qml:15
@@ -17796,7 +17796,7 @@ msgstr ""
 #: activities/oware/oware.js:107
 msgctxt "oware|"
 msgid "Invalid Move!"
-msgstr ""
+msgstr "არასწორი სვლა!"
 
 #. Activity title
 #: activities/oware_2players/ActivityInfo.qml:14
@@ -17999,7 +17999,7 @@ msgstr ""
 #, qt-format
 msgctxt "Data|"
 msgid "%1x%2 grids."
-msgstr ""
+msgstr "%1x%2 ბადეები."
 
 #. Activity title
 #: activities/path_decoding_relative/ActivityInfo.qml:14
@@ -18292,7 +18292,7 @@ msgstr ""
 #, qt-format
 msgctxt "LyricsArea|"
 msgid "Title: %1"
-msgstr ""
+msgstr "სათაური: %1"
 
 #: activities/piano_composition/LyricsArea.qml:65
 #, qt-format
@@ -18390,7 +18390,7 @@ msgstr "სერბია"
 #: activities/piano_composition/melodies.js:249
 msgctxt "melodies|"
 msgid "Britain"
-msgstr ""
+msgstr "ბრიტანეთი"
 
 #: activities/piano_composition/melodies.js:179
 msgctxt "melodies|"
@@ -18421,28 +18421,28 @@ msgstr "ფინეთი"
 #: activities/piano_composition/MelodyList.qml:61
 msgctxt "MelodyList|"
 msgid "Melodies"
-msgstr ""
+msgstr "მელოდიები"
 
 #. Whole note, Half note, Quarter note and Eighth note are the different length notes in the musical notation.
 #: activities/piano_composition/OptionsRow.qml:23
 msgctxt "OptionsRow|"
 msgid "Whole note"
-msgstr ""
+msgstr "თეთრი ნოტა"
 
 #: activities/piano_composition/OptionsRow.qml:23
 msgctxt "OptionsRow|"
 msgid "Half note"
-msgstr ""
+msgstr "ნახევარი ნოტა"
 
 #: activities/piano_composition/OptionsRow.qml:23
 msgctxt "OptionsRow|"
 msgid "Quarter note"
-msgstr ""
+msgstr "მეოთხედი ნოტა"
 
 #: activities/piano_composition/OptionsRow.qml:23
 msgctxt "OptionsRow|"
 msgid "Eighth note"
-msgstr ""
+msgstr "მერვედი ნოტა"
 
 #. Whole rest, Half rest, Quarter rest and Eighth rest are the different length rests (silences) in the musical notation.
 #: activities/piano_composition/OptionsRow.qml:26
@@ -18488,7 +18488,7 @@ msgstr ""
 #: activities/piano_composition/OptionsRow.qml:28
 msgctxt "OptionsRow|"
 msgid "Piano"
-msgstr ""
+msgstr "პიანინო"
 
 #: activities/piano_composition/OptionsRow.qml:28
 msgctxt "OptionsRow|"
@@ -18645,7 +18645,7 @@ msgstr "G%1"
 #, qt-format
 msgctxt "PianoOctaveKeyboard|"
 msgid "A%1"
-msgstr ""
+msgstr "A%1"
 
 #: activities/piano_composition/PianoOctaveKeyboard.qml:45
 #: activities/piano_composition/PianoOctaveKeyboard.qml:52
@@ -18728,7 +18728,7 @@ msgstr "G♯%1"
 #, qt-format
 msgctxt "PianoOctaveKeyboard|"
 msgid "A♯%1"
-msgstr ""
+msgstr "A♯%1"
 
 #. Translators, D♭, E♭, G♭, A♭, B♭ are the note notations in English musical notation system. The numbers in the arguments represents the octave number of the note. For instance, D♭4 is a D♭ note in the 4th octave.
 #: activities/piano_composition/PianoOctaveKeyboard.qml:103
@@ -18763,7 +18763,7 @@ msgstr "G♭%1"
 #, qt-format
 msgctxt "PianoOctaveKeyboard|"
 msgid "A♭%1"
-msgstr ""
+msgstr "A♭%1"
 
 #: activities/piano_composition/PianoOctaveKeyboard.qml:107
 #: activities/piano_composition/PianoOctaveKeyboard.qml:112
@@ -18777,7 +18777,7 @@ msgstr "B♭%1"
 #: activities/planegame/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Numbers in order"
-msgstr ""
+msgstr "რიცხვები რიგში"
 
 #. Help title
 #: activities/planegame/ActivityInfo.qml:17
@@ -18798,18 +18798,18 @@ msgstr ""
 #: activities/play_piano/ActivityConfig.qml:35
 msgctxt "ActivityConfig|"
 msgid "Display colored notes."
-msgstr ""
+msgstr "გაფერადებული ნოტების ჩვენება."
 
 #: activities/play_piano/ActivityConfig.qml:48
 msgctxt "ActivityConfig|"
 msgid "Display colorless notes."
-msgstr ""
+msgstr "გაუფერადებელი ნოტების ჩვენება."
 
 #. Activity title
 #: activities/play_piano/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Play piano"
-msgstr ""
+msgstr "პიანინოს დაკვრა"
 
 #. Help goal
 #: activities/play_piano/ActivityInfo.qml:24
@@ -18871,7 +18871,7 @@ msgstr "გაგრძელება"
 #: activities/play_rhythm/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Play rhythm"
-msgstr ""
+msgstr "რითმის დაკვრა"
 
 #. Help goal
 #: activities/play_rhythm/ActivityInfo.qml:24
@@ -19250,7 +19250,7 @@ msgstr ""
 #: activities/programmingMaze/programmingMaze.js:114
 msgctxt "programmingMaze|"
 msgid "Procedure:"
-msgstr ""
+msgstr "პროცედურა:"
 
 #: activities/programmingMaze/programmingMaze.js:115
 msgctxt "programmingMaze|"
@@ -19270,7 +19270,7 @@ msgstr ""
 #: activities/programmingMaze/programmingMaze.js:123
 msgctxt "programmingMaze|"
 msgid "Loop:"
-msgstr ""
+msgstr "მარყუჟი:"
 
 #: activities/programmingMaze/programmingMaze.js:124
 msgctxt "programmingMaze|"
@@ -19296,7 +19296,7 @@ msgstr ""
 #: activities/programmingMaze/ProgrammingMaze.qml:254
 msgctxt "ProgrammingMaze|"
 msgid "Main function"
-msgstr ""
+msgstr "მთავარი ფუნქცია"
 
 #: activities/programmingMaze/ProgrammingMaze.qml:282
 msgctxt "ProgrammingMaze|"
@@ -19339,7 +19339,7 @@ msgstr ""
 #: activities/railroad/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid "Memory training."
-msgstr ""
+msgstr "მეხსიერების ვარჯიში."
 
 #. Help manual
 #: activities/railroad/ActivityInfo.qml:26
@@ -19353,7 +19353,7 @@ msgstr ""
 #: activities/railroad/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "<b>Keyboard Controls:</b>"
-msgstr ""
+msgstr "<b>კლავიატურის კონტროლი:</b>"
 
 #: activities/railroad/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
@@ -19428,12 +19428,12 @@ msgstr ""
 #: activities/readingh/Readingh.qml:197
 msgctxt "Readingh|"
 msgid "Yes, I saw it!"
-msgstr ""
+msgstr "დიახ, დავინახე!"
 
 #: activities/readingh/Readingh.qml:211
 msgctxt "Readingh|"
 msgid "No, it was not there!"
-msgstr ""
+msgstr "არა, ის იქ არაა!"
 
 #. Activity title
 #: activities/readingv/ActivityInfo.qml:15
@@ -21171,7 +21171,7 @@ msgstr ""
 #: activities/solar_system/Dataset.js:391
 msgctxt "Dataset|"
 msgid "Seventh"
-msgstr ""
+msgstr "მეშვიდე"
 
 #: activities/solar_system/Dataset.js:58 activities/solar_system/Dataset.js:103
 #: activities/solar_system/Dataset.js:154
@@ -21180,7 +21180,7 @@ msgstr ""
 #: activities/solar_system/Dataset.js:301
 msgctxt "Dataset|"
 msgid "Sixth"
-msgstr ""
+msgstr "მეექვსე"
 
 #: activities/solar_system/Dataset.js:58 activities/solar_system/Dataset.js:154
 #: activities/solar_system/Dataset.js:205
@@ -21266,23 +21266,23 @@ msgstr ""
 #: activities/solar_system/Dataset.js:235
 msgctxt "Dataset|"
 msgid "365 Earth days"
-msgstr ""
+msgstr "365 დედამიწის დღე"
 
 #: activities/solar_system/Dataset.js:82
 msgctxt "Dataset|"
 msgid "433 Earth days"
-msgstr ""
+msgstr "433 დედამიწის დღე"
 
 #: activities/solar_system/Dataset.js:82 activities/solar_system/Dataset.js:127
 msgctxt "Dataset|"
 msgid "88 Earth days"
-msgstr ""
+msgstr "88 დედამიწის დღე"
 
 #: activities/solar_system/Dataset.js:82 activities/solar_system/Dataset.js:88
 #: activities/solar_system/Dataset.js:127
 msgctxt "Dataset|"
 msgid "107 Earth days"
-msgstr ""
+msgstr "107 დედამიწის დღე"
 
 #: activities/solar_system/Dataset.js:87
 msgctxt "Dataset|"
@@ -21292,12 +21292,12 @@ msgstr ""
 #: activities/solar_system/Dataset.js:88
 msgctxt "Dataset|"
 msgid "50 Earth days"
-msgstr ""
+msgstr "50 დედამიწის დღე"
 
 #: activities/solar_system/Dataset.js:88
 msgctxt "Dataset|"
 msgid "59 Earth days"
-msgstr ""
+msgstr "59 დედამიწის დღე"
 
 #: activities/solar_system/Dataset.js:96
 msgctxt "Dataset|"
@@ -21327,22 +21327,22 @@ msgstr ""
 #: activities/solar_system/Dataset.js:109
 msgctxt "Dataset|"
 msgid "0.7 Earths"
-msgstr ""
+msgstr "0.7 დედამიწა"
 
 #: activities/solar_system/Dataset.js:109
 msgctxt "Dataset|"
 msgid "0.8 Earths"
-msgstr ""
+msgstr "0.8 დედამიწა"
 
 #: activities/solar_system/Dataset.js:109
 msgctxt "Dataset|"
 msgid "1.3 Earths"
-msgstr ""
+msgstr "1.3 დედამიწა"
 
 #: activities/solar_system/Dataset.js:109
 msgctxt "Dataset|"
 msgid "2.5 Earths"
-msgstr ""
+msgstr "2.5 დედამიწა"
 
 #: activities/solar_system/Dataset.js:114
 msgctxt "Dataset|"
@@ -21372,17 +21372,17 @@ msgstr ""
 #: activities/solar_system/Dataset.js:121
 msgctxt "Dataset|"
 msgid "225 Earth days"
-msgstr ""
+msgstr "225 დედამიწის დღე"
 
 #: activities/solar_system/Dataset.js:121
 msgctxt "Dataset|"
 msgid "116 Earth days"
-msgstr ""
+msgstr "116 დედამიწის დღე"
 
 #: activities/solar_system/Dataset.js:121
 msgctxt "Dataset|"
 msgid "100 Earth days"
-msgstr ""
+msgstr "100 დედამიწის დღე"
 
 #: activities/solar_system/Dataset.js:126
 msgctxt "Dataset|"
@@ -21392,7 +21392,7 @@ msgstr ""
 #: activities/solar_system/Dataset.js:127
 msgctxt "Dataset|"
 msgid "243 Earth days"
-msgstr ""
+msgstr "243 დედამიწის დღე"
 
 #: activities/solar_system/Dataset.js:132
 msgctxt "Dataset|"
@@ -21461,7 +21461,7 @@ msgstr "მესამე"
 #: activities/solar_system/Dataset.js:391
 msgctxt "Dataset|"
 msgid "Fifth"
-msgstr ""
+msgstr "მეხუთე"
 
 #: activities/solar_system/Dataset.js:159
 msgctxt "Dataset|"
@@ -21471,7 +21471,7 @@ msgstr ""
 #: activities/solar_system/Dataset.js:160
 msgctxt "Dataset|"
 msgid "200 days"
-msgstr ""
+msgstr "200 დღე"
 
 #: activities/solar_system/Dataset.js:160
 msgctxt "Dataset|"
@@ -21486,7 +21486,7 @@ msgstr "7 დღე"
 #: activities/solar_system/Dataset.js:160
 msgctxt "Dataset|"
 msgid "365 days"
-msgstr ""
+msgstr "365 დღე"
 
 #: activities/solar_system/Dataset.js:165
 msgctxt "Dataset|"
@@ -21517,7 +21517,7 @@ msgstr "24 საათი"
 #: activities/solar_system/Dataset.js:172
 msgctxt "Dataset|"
 msgid "365 hours"
-msgstr ""
+msgstr "365 საათი"
 
 #: activities/solar_system/Dataset.js:172
 #: activities/solar_system/Dataset.js:229
@@ -21527,7 +21527,7 @@ msgstr ""
 #: activities/solar_system/Dataset.js:409
 msgctxt "Dataset|"
 msgid "48 hours"
-msgstr ""
+msgstr "48 საათი"
 
 #: activities/solar_system/Dataset.js:177
 msgctxt "Dataset|"
@@ -21583,7 +21583,7 @@ msgstr ""
 #: activities/solar_system/Dataset.js:217
 msgctxt "Dataset|"
 msgid "The same"
-msgstr ""
+msgstr "იგივე"
 
 #: activities/solar_system/Dataset.js:217
 msgctxt "Dataset|"
@@ -21593,12 +21593,12 @@ msgstr "ნახევარი"
 #: activities/solar_system/Dataset.js:217
 msgctxt "Dataset|"
 msgid "Two times"
-msgstr ""
+msgstr "ორჯერ"
 
 #: activities/solar_system/Dataset.js:217
 msgctxt "Dataset|"
 msgid "Three times"
-msgstr ""
+msgstr "სამჯერ"
 
 #: activities/solar_system/Dataset.js:222
 msgctxt "Dataset|"
@@ -21613,7 +21613,7 @@ msgstr ""
 #: activities/solar_system/Dataset.js:229
 msgctxt "Dataset|"
 msgid "24.5 hours"
-msgstr ""
+msgstr "24.5 საათი"
 
 #: activities/solar_system/Dataset.js:234
 msgctxt "Dataset|"
@@ -21623,17 +21623,17 @@ msgstr ""
 #: activities/solar_system/Dataset.js:235
 msgctxt "Dataset|"
 msgid "687 Earth days"
-msgstr ""
+msgstr "687 დედამიწის დღე"
 
 #: activities/solar_system/Dataset.js:235
 msgctxt "Dataset|"
 msgid "30 Earth days"
-msgstr ""
+msgstr "30 დედამიწის დღე"
 
 #: activities/solar_system/Dataset.js:235
 msgctxt "Dataset|"
 msgid "7 Earth days"
-msgstr ""
+msgstr "7 დედამიწის დღე"
 
 #: activities/solar_system/Dataset.js:240
 msgctxt "Dataset|"
@@ -21698,7 +21698,7 @@ msgstr ""
 #: activities/solar_system/Dataset.js:364
 msgctxt "Dataset|"
 msgid "10 hours"
-msgstr ""
+msgstr "10 საათი"
 
 #: activities/solar_system/Dataset.js:285
 msgctxt "Dataset|"
@@ -21709,17 +21709,17 @@ msgstr ""
 #: activities/solar_system/Dataset.js:286
 msgctxt "Dataset|"
 msgid "5 Earth years"
-msgstr ""
+msgstr "5 დედამიწის წელიწადი"
 
 #: activities/solar_system/Dataset.js:286
 msgctxt "Dataset|"
 msgid "12 Earth years"
-msgstr ""
+msgstr "12 დედამიწის წელიწადი"
 
 #: activities/solar_system/Dataset.js:286
 msgctxt "Dataset|"
 msgid "30 Earth years"
-msgstr ""
+msgstr "30 დედამიწის წელიწადი"
 
 #: activities/solar_system/Dataset.js:286
 #: activities/solar_system/Dataset.js:331
@@ -21727,7 +21727,7 @@ msgstr ""
 #: activities/solar_system/Dataset.js:397
 msgctxt "Dataset|"
 msgid "1 Earth year"
-msgstr ""
+msgstr "1 დედამიწის წელიწადი"
 
 #: activities/solar_system/Dataset.js:294
 msgctxt "Dataset|"
@@ -21767,7 +21767,7 @@ msgstr ""
 #: activities/solar_system/Dataset.js:319
 msgctxt "Dataset|"
 msgid "10.5 hours"
-msgstr ""
+msgstr "10.5 საათი"
 
 #: activities/solar_system/Dataset.js:324
 msgctxt "Dataset|"
@@ -21800,17 +21800,17 @@ msgstr ""
 #: activities/solar_system/Dataset.js:331
 msgctxt "Dataset|"
 msgid "29.5 Earth years"
-msgstr ""
+msgstr "29.5 დედამიწის წელიწადი"
 
 #: activities/solar_system/Dataset.js:331
 msgctxt "Dataset|"
 msgid "20 Earth years"
-msgstr ""
+msgstr "20 დედამიწის წელიწადი"
 
 #: activities/solar_system/Dataset.js:331
 msgctxt "Dataset|"
 msgid "10 Earth years"
-msgstr ""
+msgstr "10 დედამიწის წელიწადი"
 
 #: activities/solar_system/Dataset.js:339
 msgctxt "Dataset|"
@@ -21831,7 +21831,7 @@ msgstr ""
 #: activities/solar_system/Dataset.js:391
 msgctxt "Dataset|"
 msgid "Eighth"
-msgstr ""
+msgstr "მერვე"
 
 #: activities/solar_system/Dataset.js:351
 msgctxt "Dataset|"
@@ -21841,17 +21841,17 @@ msgstr ""
 #: activities/solar_system/Dataset.js:352
 msgctxt "Dataset|"
 msgid "24 Earth years"
-msgstr ""
+msgstr "24 დედამიწის წელიწადი"
 
 #: activities/solar_system/Dataset.js:352
 msgctxt "Dataset|"
 msgid "68 Earth years"
-msgstr ""
+msgstr "68 დედამიწის წელიწადი"
 
 #: activities/solar_system/Dataset.js:352
 msgctxt "Dataset|"
 msgid "84 Earth years"
-msgstr ""
+msgstr "84 დედამიწის წელიწადი"
 
 #: activities/solar_system/Dataset.js:357
 msgctxt "Dataset|"
@@ -21867,13 +21867,13 @@ msgstr ""
 #: activities/solar_system/Dataset.js:409
 msgctxt "Dataset|"
 msgid "27 hours"
-msgstr ""
+msgstr "27 საათი"
 
 #: activities/solar_system/Dataset.js:364
 #: activities/solar_system/Dataset.js:409
 msgctxt "Dataset|"
 msgid "17 hours"
-msgstr ""
+msgstr "17 საათი"
 
 #: activities/solar_system/Dataset.js:369
 msgctxt "Dataset|"
@@ -21919,17 +21919,17 @@ msgstr ""
 #: activities/solar_system/Dataset.js:397
 msgctxt "Dataset|"
 msgid "165 Earth years"
-msgstr ""
+msgstr "165 დედამიწის წელიწადი"
 
 #: activities/solar_system/Dataset.js:397
 msgctxt "Dataset|"
 msgid "3 Earth years"
-msgstr ""
+msgstr "3 დედამიწის წელიწადი"
 
 #: activities/solar_system/Dataset.js:397
 msgctxt "Dataset|"
 msgid "100 Earth years"
-msgstr ""
+msgstr "100 დედამიწის წელიწადი"
 
 #: activities/solar_system/Dataset.js:402
 msgctxt "Dataset|"
@@ -21944,7 +21944,7 @@ msgstr ""
 #: activities/solar_system/Dataset.js:409
 msgctxt "Dataset|"
 msgid "16 hours"
-msgstr ""
+msgstr "16 საათი"
 
 #: activities/solar_system/Dataset.js:414
 msgctxt "Dataset|"
@@ -21965,13 +21965,13 @@ msgstr ""
 #, qt-format
 msgctxt "QuizScreen|"
 msgid "Accuracy: %1%"
-msgstr ""
+msgstr "სიზუსტე: %1%"
 
 #: activities/solar_system/QuizScreen.qml:239
 #, qt-format
 msgctxt "QuizScreen|"
 msgid "%1%"
-msgstr ""
+msgstr "%1%"
 
 #: activities/solar_system/QuizScreen.qml:274
 #, qt-format
@@ -22013,7 +22013,7 @@ msgstr "შეფასება"
 #: activities/solar_system/SolarSystem.qml:155
 msgctxt "SolarSystem|"
 msgid "Learning"
-msgstr ""
+msgstr "სწავლა"
 
 #: activities/solar_system/SolarSystem.qml:159
 msgctxt "SolarSystem|"
@@ -22125,7 +22125,7 @@ msgstr ""
 #: activities/submarine/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "<b>Engine</b>"
-msgstr ""
+msgstr "<b>ძრავა</b>"
 
 #: activities/submarine/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
@@ -22971,7 +22971,7 @@ msgstr ""
 #: core/core.js:210
 msgctxt "core|"
 msgid "Download in progress"
-msgstr ""
+msgstr "მიმდინარეობს გადმოწერა"
 
 #: core/core.js:212
 msgctxt "core|"
@@ -22981,12 +22981,12 @@ msgstr ""
 #: core/core.js:222
 msgctxt "core|"
 msgid "Quit?"
-msgstr ""
+msgstr "გავიდე?"
 
 #: core/core.js:224
 msgctxt "core|"
 msgid "Do you really want to quit GCompris?"
-msgstr ""
+msgstr "მართლა გნებავთ GCompris-დან გასვლა?"
 
 #: core/core.js:225
 msgctxt "core|"
@@ -23001,7 +23001,7 @@ msgstr "არა"
 #: core/DialogAbout.qml:22
 msgctxt "DialogAbout|"
 msgid "About GCompris"
-msgstr ""
+msgstr "GCompris-ის შესახებ"
 
 #: core/DialogAbout.qml:23 core/DialogAbout.qml:36
 msgctxt "DialogAbout|"
@@ -23018,7 +23018,7 @@ msgstr "თემური დოღონაძე"
 #, qt-format
 msgctxt "DialogAbout|"
 msgid "GCompris %1"
-msgstr ""
+msgstr "GCompris %1"
 
 #: core/DialogAbout.qml:57
 #, qt-format
@@ -23118,7 +23118,7 @@ msgstr ""
 #, qt-format
 msgctxt "DialogActivityConfig|"
 msgid "%1 configuration"
-msgstr ""
+msgstr "%1 -ის მორგება"
 
 #: core/DialogActivityConfig.qml:86
 msgctxt "DialogActivityConfig|"
@@ -23129,7 +23129,7 @@ msgstr "გამართვა"
 #, qt-format
 msgctxt "DialogChooseLevel|"
 msgid "%1 settings"
-msgstr ""
+msgstr "%1 -ის მორგება"
 
 #: core/DialogChooseLevel.qml:205
 msgctxt "DialogChooseLevel|"
@@ -23139,7 +23139,7 @@ msgstr ""
 #: core/DialogChooseLevel.qml:218
 msgctxt "DialogChooseLevel|"
 msgid "Options"
-msgstr ""
+msgstr "პარამეტრები"
 
 #: core/DialogChooseLevel.qml:349
 msgctxt "DialogChooseLevel|"
@@ -23149,12 +23149,12 @@ msgstr "გაუქმება"
 #: core/DialogChooseLevel.qml:357
 msgctxt "DialogChooseLevel|"
 msgid "Save"
-msgstr ""
+msgstr "შენახვა"
 
 #: core/DialogChooseLevel.qml:371
 msgctxt "DialogChooseLevel|"
 msgid "Save and start"
-msgstr ""
+msgstr "შენახვა და გაშვება"
 
 #: core/DialogHelp.qml:49
 msgctxt "DialogHelp|"
@@ -23164,27 +23164,27 @@ msgstr "ავტორი:"
 #: core/DialogHelp.qml:53
 msgctxt "DialogHelp|"
 msgid "Prerequisite:"
-msgstr ""
+msgstr "წინასწარი მოთხოვნები:"
 
 #: core/DialogHelp.qml:58
 msgctxt "DialogHelp|"
 msgid "Goal:"
-msgstr ""
+msgstr "მიზანი:"
 
 #: core/DialogHelp.qml:63
 msgctxt "DialogHelp|"
 msgid "Manual:"
-msgstr ""
+msgstr "ხელით:"
 
 #: core/DialogHelp.qml:67
 msgctxt "DialogHelp|"
 msgid "Credit:"
-msgstr ""
+msgstr "კრედიტი:"
 
 #: core/DialogHelp.qml:71
 msgctxt "DialogHelp|"
 msgid "Section:"
-msgstr ""
+msgstr "სექცია:"
 
 #. "Dots" is for representation of the points in a domino in the form of dots
 #: core/Domino.qml:57
@@ -23196,13 +23196,13 @@ msgstr "წერტილები"
 #: core/Domino.qml:59
 msgctxt "Domino|"
 msgid "Arabic Numbers"
-msgstr ""
+msgstr "არაბული რიცხვები"
 
 #. "Roman Numbers" is for representation of the points in a domino in the form of roman numbers
 #: core/Domino.qml:61
 msgctxt "Domino|"
 msgid "Roman Numbers"
-msgstr ""
+msgstr "რომაული რიცხვები"
 
 #. "Images" is for representation of the points in a domino in the form of an image (containing a specific count of same elements)
 #: core/Domino.qml:63
@@ -23488,13 +23488,13 @@ msgstr ""
 #: core/main.qml:284
 msgctxt "main|"
 msgid "Have Fun!"
-msgstr ""
+msgstr "გაერთე!"
 
 #: core/main.qml:286
 #, qt-format
 msgctxt "main|"
 msgid "Your current language is %1 (%2)."
-msgstr ""
+msgstr "თქვენი მიმდინარე ენაა %1 (%2)."
 
 #: core/main.qml:317
 msgctxt "main|"
