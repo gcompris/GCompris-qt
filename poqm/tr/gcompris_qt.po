@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2022-11-01 13:02+0300\n"
+"PO-Revision-Date: 2022-11-02 11:17+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -198,7 +198,7 @@ msgstr "Oklar: gezinme"
 #: activities/money_cents/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Space or Enter: select an item"
-msgstr "Boşluk veya Enter : bir öğe seçin"
+msgstr "Boşluk veya Enter : bir öge seçin"
 
 #. Look at https://gcompris.net/wiki/Advanced_color_translation to see all the advanced colors Color #FF7F50
 #. ----------
@@ -2463,7 +2463,7 @@ msgid ""
 "clicking again on the same cell with the same tool, you can remove it again."
 msgstr ""
 "Tüm araçlar (temizleme aracı dışında) tıklanan hücrede ilgili hedeflerini "
-"değiştirir: Boş bir hücreye tıklanarak bir öğe yerleştirilebilir ve aynı "
+"değiştirir: Boş bir hücreye tıklanarak bir öge yerleştirilebilir ve aynı "
 "araçla aynı hücreye tekrar tıklayarak onu tekrar kaldırabilirsin."
 
 #: activities/balancebox/ActivityInfo.qml:41
@@ -3389,17 +3389,17 @@ msgstr ""
 #: activities/categorization/ActivityConfig.qml:39
 msgctxt "ActivityConfig|"
 msgid "Put together all the items from a category (with score)"
-msgstr "Bir kategorideki tüm öğeleri bir araya getirme (puanlı)"
+msgstr "Bir kategorideki tüm ögeleri bir araya getirme (puanlı)"
 
 #: activities/categorization/ActivityConfig.qml:52
 msgctxt "ActivityConfig|"
 msgid "Put together all the items from a category (without score)"
-msgstr "Bir kategorideki tüm öğeleri bir araya getirme (puansız)"
+msgstr "Bir kategorideki tüm ögeleri bir araya getirme (puansız)"
 
 #: activities/categorization/ActivityConfig.qml:65
 msgctxt "ActivityConfig|"
 msgid "Discover a category, grouping items together"
-msgstr "Bir kategori keşfet, öğeleri birlikte sınıflandırma"
+msgstr "Bir kategori keşfet, ögeleri birlikte sınıflandırma"
 
 #. Activity title
 #: activities/categorization/ActivityInfo.qml:15
@@ -3411,7 +3411,7 @@ msgstr "Sınıflandırma"
 #: activities/categorization/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Categorize the items into correct and incorrect groups."
-msgstr "Öğeleri doğru ve yanlış gruplara ayır."
+msgstr "Ögeleri doğru ve yanlış gruplara ayır."
 
 #. Help goal
 #: activities/categorization/ActivityInfo.qml:20
@@ -4741,7 +4741,7 @@ msgstr ""
 #: activities/letter-in-word/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Space: select an item"
-msgstr "Boşluk: bir öğe seç"
+msgstr "Boşluk: bir öge seç"
 
 #: activities/click_on_letter/ActivityInfo.qml:28
 #: activities/click_on_letter_up/ActivityInfo.qml:28
@@ -5294,20 +5294,20 @@ msgid ""
 "arrows that let you move the selected item. You can also swipe up/down/left/"
 "right to move the selected item."
 msgstr ""
-"Mavi çerçevedeki öğeleri model çerçevesindeki konumlarına uyacak şekilde "
-"taşı. Bir öğeyi seçmek için üzerine tıklaman yeterlidir. Vincin yanında, "
-"seçili öğeyi hareket ettirmene izin veren dört ok bulacaksın. Seçili öğeyi "
+"Mavi çerçevedeki ögeleri model çerçevesindeki konumlarına uyacak şekilde "
+"taşı. Bir ögeyi seçmek için üzerine tıklaman yeterlidir. Vincin yanında, "
+"seçili ögeyi hareket ettirmene izin veren dört ok bulacaksın. Seçili ögeyi "
 "taşımak için yukarı / aşağı / sola / sağa da kaydırabilirsin."
 
 #: activities/crane/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
 msgid "Arrows: move the selected item"
-msgstr "Oklar: seçili öğeyi taşıma"
+msgstr "Oklar: seçili ögeyi taşıma"
 
 #: activities/crane/ActivityInfo.qml:32
 msgctxt "ActivityInfo|"
 msgid "Space or Enter or Tab: select the next item"
-msgstr "Boşluk veya Enter veya Sekme: sonraki öğeyi seçme"
+msgstr "Boşluk veya Enter veya Sekme: sonraki ögeyi seçme"
 
 #. Translators: NOTE: Word list for crane activity. Translate this into a list of 15–25 simple 3-letter words separated by semi-colons. The words can only contain lowercase ASCII letters (a–z). Example: cat;dog;win;red;yes
 #: activities/crane/crane.js:45
@@ -6355,24 +6355,24 @@ msgid ""
 "on an item of the answers list in the top left area and enter the "
 "corresponding answer with the keyboard."
 msgstr ""
-"İlk olarak, öğeleri sayabilmen için uygun şekilde düzenle. Ardından, sol üst "
+"İlk olarak, ögeleri sayabilmen için uygun şekilde düzenle. Ardından, sol üst "
 "alandaki cevaplar listesindeki bir maddeye tıkla ve klavye ile karşılık "
 "gelen cevabı gir."
 
 #: activities/enumerate/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Up arrow: select next item"
-msgstr "Yukarı ok: sonraki öğeyi seç"
+msgstr "Yukarı ok: sonraki ögeyi seç"
 
 #: activities/enumerate/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Down arrow: select previous item"
-msgstr "Aşağı ok: önceki öğeyi seç"
+msgstr "Aşağı ok: önceki ögeyi seç"
 
 #: activities/enumerate/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Digits: enter your answer for the selected item"
-msgstr "Rakamlar: seçili öğe için cevabını gir"
+msgstr "Rakamlar: seçili öge için cevabını gir"
 
 #: activities/enumerate/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
@@ -12579,7 +12579,7 @@ msgstr "Ülkeleri yerleştir"
 #: activities/geography/ActivityInfo.qml:21
 msgctxt "ActivityInfo|"
 msgid "Drag and Drop the items to complete the map."
-msgstr "Haritayı tamamlamak için öğeleri sürükleyip bırak."
+msgstr "Haritayı tamamlamak için ögeleri sürükleyip bırak."
 
 #. Help manual
 #: activities/geography/ActivityInfo.qml:28
@@ -14298,7 +14298,7 @@ msgid ""
 msgstr ""
 "Renkleri / şekilleri grafiğe, bitişik iki düğümün aynı renge sahip olmaması "
 "için yerleştir. Bir düğüm seç, ardından düğüme yerleştirmek için listeden "
-"bir öğe seç."
+"bir öge seç."
 
 #: activities/graph-coloring/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
@@ -14838,7 +14838,7 @@ msgstr "Görsel setini güncelle"
 #: activities/imagename/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Drag and Drop each item above its name."
-msgstr "Her öğeyi adının üzerine sürükleyip bırakın."
+msgstr "Her ögeyi adının üzerine sürükleyip bırakın."
 
 #. Help goal
 #: activities/imagename/ActivityInfo.qml:23
@@ -14870,7 +14870,7 @@ msgstr ""
 #: activities/imagename/resource/board/board1_0.qml:14
 msgctxt "board1_0|"
 msgid "Drag and Drop each item above its name"
-msgstr "Her öğeyi adının üzerine sürükleyip bırak"
+msgstr "Her ögeyi adının üzerine sürükleyip bırak"
 
 #: activities/imagename/resource/board/board1_0.qml:59
 msgctxt "board1_0|"
@@ -15505,7 +15505,7 @@ msgstr "Ayarlardan öğrenmek istediğin dili seçebilirsin."
 #: activities/lang/ActivityInfo.qml:35
 msgctxt "ActivityInfo|"
 msgid "Space or Enter: select an item from the list"
-msgstr "Boşluk veya Enter: listeden bir öğe seç"
+msgstr "Boşluk veya Enter: listeden bir öge seç"
 
 #: activities/lang/ActivityInfo.qml:36
 msgctxt "ActivityInfo|"
@@ -16535,7 +16535,7 @@ msgstr ""
 #: activities/louis-braille/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Space or Enter: select an item and change its position"
-msgstr "Boşluk veya Enter: bir öğe seç ve konumunu değiştir"
+msgstr "Boşluk veya Enter: bir öge seç ve konumunu değiştir"
 
 #: activities/louis-braille/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
@@ -17204,7 +17204,7 @@ msgid ""
 "Each card is hiding either a picture with a number of items, or a number. "
 "You have to match the numbers with the corresponding pictures."
 msgstr ""
-"Her kart, birkaç öğe içeren bir resmi veya bir sayıyı saklıyor. Rakamları "
+"Her kart, birkaç öge içeren bir resmi veya bir sayıyı saklıyor. Rakamları "
 "ilgili resimlerle eşleştirmelisin."
 
 #: activities/memory-enumerate/resource/1/Data.qml:15
@@ -18891,7 +18891,7 @@ msgid ""
 "several items are displayed, and you must first calculate the total price."
 msgstr ""
 "Farklı ürünler satın almalı ve tam fiyatı vermelisin. Daha yüksek "
-"seviyelerde birkaç öğe görüntülenir ve önce toplam fiyatı hesaplaman gerekir."
+"seviyelerde birkaç öge görüntülenir ve önce toplam fiyatı hesaplaman gerekir."
 
 #. Help goal
 #. ----------
@@ -19000,7 +19000,7 @@ msgid ""
 "must first calculate the total price."
 msgstr ""
 "Tux senden farklı eşyalar aldı ve sana parasını gösteriyor. Ona para üstünü "
-"geri vermelisin. Daha yüksek seviyelerde, birkaç öğe görüntülenir ve önce "
+"geri vermelisin. Daha yüksek seviyelerde, birkaç öge görüntülenir ve önce "
 "toplam fiyatı hesaplaman gerekir."
 
 #. Help manual
@@ -19233,7 +19233,7 @@ msgstr "Mozaiği yeniden yap"
 #: activities/mosaic/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Put each item at the same place as in the given example."
-msgstr "Her bir öğeyi verilen örnekteki gibi aynı yere koy."
+msgstr "Her bir ögeyi verilen örnekteki gibi aynı yere koy."
 
 #. Help manual
 #: activities/mosaic/ActivityInfo.qml:24
@@ -19242,7 +19242,7 @@ msgid ""
 "First select an item from the list, and then click on a spot of the mosaic "
 "to place the item."
 msgstr ""
-"Önce listeden bir öğe seç ve ardından öğeyi yerleştirmek için mozaiğin "
+"Önce listeden bir öge seç ve ardından ögeyi yerleştirmek için mozaiğin "
 "herhangi bir noktasına tıkla."
 
 #: activities/mosaic/ActivityInfo.qml:26
@@ -19253,32 +19253,32 @@ msgstr "Oklar: bir alan içinde gezinme"
 #: activities/mosaic/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Space or Enter: select or place an item"
-msgstr "Boşluk veya Enter: bir öğe seç veya yerleştir"
+msgstr "Boşluk veya Enter: bir öge seç veya yerleştir"
 
 #: activities/mosaic/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Tab: navigate between the item list and the mosaic"
-msgstr "Sekme: öğe listesi ve mozaik arasında gezin"
+msgstr "Sekme: öge listesi ve mozaik arasında gezin"
 
 #: activities/mosaic/resource/1/Data.qml:13
 msgctxt "Data|"
 msgid "Up to 5 items, on a single line."
-msgstr "Tek bir satırda 5 adede kadar öğe."
+msgstr "Tek bir satırda 5 adede kadar öge."
 
 #: activities/mosaic/resource/2/Data.qml:13
 msgctxt "Data|"
 msgid "Up to 8 items, on a single line."
-msgstr "Tek bir satırda 8 adede kadar öğe."
+msgstr "Tek bir satırda 8 adede kadar öge."
 
 #: activities/mosaic/resource/3/Data.qml:13
 msgctxt "Data|"
 msgid "Up to 16 items, on multiple lines."
-msgstr "Birden çok satırda 16 adede kadar öğe."
+msgstr "Birden çok satırda 16 adede kadar öge."
 
 #: activities/mosaic/resource/4/Data.qml:13
 msgctxt "Data|"
 msgid "Up to 24 items, on multiple lines."
-msgstr "Birden çok satırda 24 adede kadar öğe."
+msgstr "Birden çok satırda 24 adede kadar öge."
 
 #. Activity title
 #: activities/nine_men_morris/ActivityInfo.qml:15
@@ -21861,7 +21861,7 @@ msgid ""
 msgstr ""
 "Ana bölgenin üst kısmında birkaç saniye boyunca bir tren - bir lokomotif ve "
 "vagonlar - görüntülenir. Uygun vagonları ve lokomotifi sürükleyerek ekranın "
-"en üstünde yeniden inşa et. Aşağı doğru sürükleyerek bir öğenin seçimini "
+"en üstünde yeniden inşa et. Aşağı doğru sürükleyerek bir ögenin seçimini "
 "kaldır."
 
 #: activities/railroad/ActivityInfo.qml:27
@@ -21880,13 +21880,13 @@ msgid ""
 "Space: add an item from the samples to the answer area, or swap two items in "
 "the answer area"
 msgstr ""
-"Boşluk: örneklerden cevap alanına bir öğe ekle veya cevap alanındaki iki "
-"öğeyi değiştir"
+"Boşluk: örneklerden cevap alanına bir öge ekle veya cevap alanındaki iki "
+"ögeyi değiştir"
 
 #: activities/railroad/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
 msgid "Delete or Backspace: remove the selected item from the answer area"
-msgstr "Sil veya Geri Al: seçili öğeyi yanıt alanından kaldır"
+msgstr "Sil veya Geri Al: seçili ögeyi yanıt alanından kaldır"
 
 #: activities/railroad/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
@@ -21900,7 +21900,7 @@ msgid ""
 "to set up a similar train."
 msgstr ""
 "Zamanlayıcı sona ermeden önce treni gözlemle ve ezberle. Ardından benzer bir "
-"tren kurmak için öğeleri sürükle."
+"tren kurmak için ögeleri sürükle."
 
 #: activities/railroad/Railroad.qml:104
 msgctxt "Railroad|"
@@ -25303,7 +25303,7 @@ msgid ""
 "The leftmost item in the control panel is the engine of the submarine, "
 "indicating the current speed of the submarine."
 msgstr ""
-"Kontrol panelinde en soldaki öğe denizaltının motorudur ve denizaltının "
+"Kontrol panelinde en soldaki öge denizaltının motorudur ve denizaltının "
 "mevcut hızını gösterir."
 
 #: activities/submarine/submarine.js:23
@@ -25321,7 +25321,7 @@ msgstr "Hızı arttırmak için + düğmesine, hızı azaltmak için - düğmesi
 #: activities/submarine/submarine.js:27
 msgctxt "submarine|"
 msgid "The item next to the engine is the ballast tank."
-msgstr "Motorun yanındaki öğe, balast tankıdır."
+msgstr "Motorun yanındaki öge, balast tankıdır."
 
 #: activities/submarine/submarine.js:28
 msgctxt "submarine|"
@@ -25364,7 +25364,7 @@ msgid ""
 "The rightmost item in the control panel controls the diving planes of the "
 "submarine"
 msgstr ""
-"Kontrol panelinde en sağdaki öğe denizaltının dalış uçaklarını kontrol eder"
+"Kontrol panelinde en sağdaki öge denizaltının dalış uçaklarını kontrol eder"
 
 #: activities/submarine/submarine.js:35
 msgctxt "submarine|"
@@ -25513,28 +25513,28 @@ msgid ""
 "you un-mark them, by double clicking on them again."
 msgstr ""
 "Doğru cevabı bulana kadar maddelere tıkla. Ardından, Tamam düğmesine tıkla. "
-"Siyah nokta, doğru öğeyi doğru konumda bulduğun anlamına gelirken beyaz "
-"nokta, öğenin doğru ancak yanlış konumda olduğu anlamına gelir. Daha düşük "
-"seviyelerde, Tux sana doğru konumdaki doğru öğeler üzerinde siyah bir kare "
-"ve yanlış konumdaki doğru öğeler üzerinde beyaz bir kare ile bir gösterge "
-"verir. 4. ve 8. seviyelerde bir nesne birkaç kez gizlenebilir. <br/> Öğeleri "
+"Siyah nokta, doğru ögeyi doğru konumda bulduğun anlamına gelirken beyaz "
+"nokta, ögenin doğru ancak yanlış konumda olduğu anlamına gelir. Daha düşük "
+"seviyelerde, Tux sana doğru konumdaki doğru ögeler üzerinde siyah bir kare "
+"ve yanlış konumdaki doğru ögeler üzerinde beyaz bir kare ile bir gösterge "
+"verir. 4. ve 8. seviyelerde bir nesne birkaç kez gizlenebilir. <br/> Ögeleri "
 "ters sırada çevirmek için farenin sağ düğmesini veya listeden bir nesneyi "
-"doğrudan seçmek için öğe seçiciyi kullanabilirsin. Bu konumda seçilen son "
-"öğeyi otomatik olarak seçmek için bir öğeye iki saniye bas. Tahmin "
-"geçmişinde önceden seçilmiş bir öğeyi 'doğru' olarak işaretlemek için "
-"üzerine çift tıkla. Bu tür işaretli öğeler, tekrar çift tıklayarak "
+"doğrudan seçmek için öge seçiciyi kullanabilirsin. Bu konumda seçilen son "
+"ögeyi otomatik olarak seçmek için bir ögeye iki saniye bas. Tahmin "
+"geçmişinde önceden seçilmiş bir ögeyi 'doğru' olarak işaretlemek için "
+"üzerine çift tıkla. Bu tür işaretli ögeler, tekrar çift tıklayarak "
 "işaretlerini kaldırana kadar mevcut ve gelecekteki tahminlerinde otomatik "
 "olarak seçilir."
 
 #: activities/superbrain/Superbrain.qml:139
 msgctxt "Superbrain|"
 msgid "This item is well placed."
-msgstr "Bu öğe iyi yerleştirilmiş."
+msgstr "Bu öge iyi yerleştirilmiş."
 
 #: activities/superbrain/Superbrain.qml:141
 msgctxt "Superbrain|"
 msgid "This item is misplaced."
-msgstr "Bu öğe yanlış yerleştirilmiş."
+msgstr "Bu öge yanlış yerleştirilmiş."
 
 #. Activity title
 #: activities/tangram/ActivityInfo.qml:15
@@ -25586,7 +25586,7 @@ msgid ""
 "selected piece. Check the activity 'Baby Puzzle' for a simpler introduction "
 "to tangram."
 msgstr ""
-"Bir parçayı sürükleyerek taşı. Simetrik düğme, onu destekleyen öğelerde "
+"Bir parçayı sürükleyerek taşı. Simetrik düğme, onu destekleyen ögelerde "
 "görünür. Seçili parçayı döndürmek için döndürme düğmesine tıkla veya "
 "etrafında sürükle. Tangrama daha basit bir giriş için 'Bebek Bulmacası' "
 "etkinliğine bakabilirsin."

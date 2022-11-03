@@ -23,20 +23,20 @@ msgstr "დამატებითი ფერები"
 #: activities/advanced_colors/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Select the butterfly of the correct color."
-msgstr ""
+msgstr "აირჩიეთ სწორი ფერის პეპელა."
 
 #. Help goal
 #: activities/advanced_colors/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Learn to recognize unusual colors."
-msgstr ""
+msgstr "ისწავლეთ, როგორ გამოიცნოთ უცნაური ფერები."
 
 #. Help prerequisite
 #: activities/advanced_colors/ActivityInfo.qml:22
 #: activities/positions/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid "Can read."
-msgstr ""
+msgstr "შეუძლია წაკითხვა."
 
 #. Help manual
 #: activities/advanced_colors/ActivityInfo.qml:24
@@ -45,6 +45,8 @@ msgid ""
 "You will see dancing butterflies of different colors and a question. You "
 "have to find the correct butterfly and touch it."
 msgstr ""
+"დანახავთ სხვადასხვა ფერის მქონე მოცეკვავე პეპლებს და კითხვას. იპოვეთ სწორი "
+"პეპელა და შეეხეთ მას."
 
 #: activities/advanced_colors/ActivityInfo.qml:25
 #: activities/algebra_by/ActivityInfo.qml:25
@@ -133,7 +135,7 @@ msgstr ""
 #: activities/submarine/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "<b>Keyboard controls:</b>"
-msgstr ""
+msgstr "<b>კლავიატურით კონტროლი:</b>"
 
 #: activities/advanced_colors/ActivityInfo.qml:26
 #: activities/algorithm/ActivityInfo.qml:24
@@ -181,7 +183,7 @@ msgstr ""
 #: activities/solar_system/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid "Arrows: navigate"
-msgstr ""
+msgstr "ისრები: ნავიგაცია"
 
 #: activities/advanced_colors/ActivityInfo.qml:27
 #: activities/algorithm/ActivityInfo.qml:25
@@ -192,7 +194,7 @@ msgstr ""
 #: activities/money_cents/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Space or Enter: select an item"
-msgstr ""
+msgstr "გამოტოვება ან Enter: ელემენტის არჩევა"
 
 #. Look at https://gcompris.net/wiki/Advanced_color_translation to see all the advanced colors Color #FF7F50
 #. ----------
@@ -201,7 +203,7 @@ msgstr ""
 #: activities/advanced_colors/advanced_colors.js:530
 msgctxt "advanced_colors|"
 msgid "Find the coral butterfly"
-msgstr ""
+msgstr "იპოვეთ მარჯნისფერი პეპელა"
 
 #. Color #7F1734
 #: activities/advanced_colors/advanced_colors.js:20
@@ -213,7 +215,7 @@ msgstr ""
 #: activities/advanced_colors/advanced_colors.js:849
 msgctxt "advanced_colors|"
 msgid "Find the claret butterfly"
-msgstr ""
+msgstr "იპოვეთ ბორდოსფერი პეპელა"
 
 #. Color #000080
 #: activities/advanced_colors/advanced_colors.js:25
@@ -221,21 +223,21 @@ msgstr ""
 #: activities/advanced_colors/advanced_colors.js:562
 msgctxt "advanced_colors|"
 msgid "Find the navy butterfly"
-msgstr ""
+msgstr "იპოვეთ მუქი ლურჯი პეპელა"
 
 #. Color #FBEC5D
 #: activities/advanced_colors/advanced_colors.js:30
 #: activities/advanced_colors/advanced_colors.js:67
 msgctxt "advanced_colors|"
 msgid "Find the corn butterfly"
-msgstr ""
+msgstr "იპოვეთ ოქროსფერი პეპელა"
 
 #. Color #0047AB
 #: activities/advanced_colors/advanced_colors.js:35
 #: activities/advanced_colors/advanced_colors.js:72
 msgctxt "advanced_colors|"
 msgid "Find the cobalt butterfly"
-msgstr ""
+msgstr "იპოვეთ კობალტისფერი პეპელა"
 
 #. Color #00FFFF
 #: activities/advanced_colors/advanced_colors.js:40
@@ -243,7 +245,7 @@ msgstr ""
 #: activities/advanced_colors/advanced_colors.js:483
 msgctxt "advanced_colors|"
 msgid "Find the cyan butterfly"
-msgstr ""
+msgstr "იპოვეთ ცისფერი პეპელა"
 
 #. Color #954535
 #: activities/advanced_colors/advanced_colors.js:45
@@ -254,41 +256,41 @@ msgstr ""
 #: activities/advanced_colors/advanced_colors.js:688
 msgctxt "advanced_colors|"
 msgid "Find the chestnut butterfly"
-msgstr ""
+msgstr "იპოვეთ წაბლისფერი პეპელა"
 
 #. Color #AB784E
 #: activities/advanced_colors/advanced_colors.js:50
 #: activities/advanced_colors/advanced_colors.js:87
 msgctxt "advanced_colors|"
 msgid "Find the almond butterfly"
-msgstr ""
+msgstr "იპოვეთ ნუშისფერი პეპელა"
 
 #. Color #0F52BA
 #: activities/advanced_colors/advanced_colors.js:62
 #: activities/advanced_colors/advanced_colors.js:844
 msgctxt "advanced_colors|"
 msgid "Find the sapphire butterfly"
-msgstr ""
+msgstr "იპოვეთ საფირისფერი პეპელა"
 
 #. Color #E0115F
 #: activities/advanced_colors/advanced_colors.js:92
 #: activities/advanced_colors/advanced_colors.js:213
 msgctxt "advanced_colors|"
 msgid "Find the ruby butterfly"
-msgstr ""
+msgstr "იპოვეთ ლალისფერი პეპელა"
 
 #. Color #882D17
 #: activities/advanced_colors/advanced_colors.js:99
 #: activities/advanced_colors/advanced_colors.js:824
 msgctxt "advanced_colors|"
 msgid "Find the sienna butterfly"
-msgstr ""
+msgstr "იპოვეთ სიენისფერი პეპელა"
 
 #. Color #BCB88A
 #: activities/advanced_colors/advanced_colors.js:104
 msgctxt "advanced_colors|"
 msgid "Find the sage butterfly"
-msgstr ""
+msgstr "იპოვეთ სალბისფერი პეპელა"
 
 #. Color #FF8C69
 #: activities/advanced_colors/advanced_colors.js:109
@@ -296,7 +298,7 @@ msgstr ""
 #: activities/advanced_colors/advanced_colors.js:703
 msgctxt "advanced_colors|"
 msgid "Find the salmon butterfly"
-msgstr ""
+msgstr "იპოვეთ ნარინჯისფერ-ვარდისფერი პეპელა"
 
 #. Color #704214
 #: activities/advanced_colors/advanced_colors.js:114
@@ -304,71 +306,71 @@ msgstr ""
 #: activities/advanced_colors/advanced_colors.js:787
 msgctxt "advanced_colors|"
 msgid "Find the sepia butterfly"
-msgstr ""
+msgstr "იპოვეთ სეპიისფერი პეპელა"
 
 #. Color #E4BB25
 #: activities/advanced_colors/advanced_colors.js:119
 msgctxt "advanced_colors|"
 msgid "Find the sulfur butterfly"
-msgstr ""
+msgstr "იპოვეთ გოგირდისფერი პეპელა"
 
 #. Color #DB6D7B
 #: activities/advanced_colors/advanced_colors.js:124
 #: activities/advanced_colors/advanced_colors.js:814
 msgctxt "advanced_colors|"
 msgid "Find the tea butterfly"
-msgstr ""
+msgstr "იპოვეთ ჩაისფერი პეპელა"
 
 #. Color #BFFF00
 #: activities/advanced_colors/advanced_colors.js:129
 msgctxt "advanced_colors|"
 msgid "Find the lime butterfly"
-msgstr ""
+msgstr "იპოვეთ კირისფერი პეპელა"
 
 #. Color #40E0D0
 #: activities/advanced_colors/advanced_colors.js:134
 msgctxt "advanced_colors|"
 msgid "Find the turquoise butterfly"
-msgstr ""
+msgstr "იპოვეთ ფირუზისფერი პეპელა"
 
 #. Color #73B881
 #: activities/advanced_colors/advanced_colors.js:141
 msgctxt "advanced_colors|"
 msgid "Find the absinthe butterfly"
-msgstr ""
+msgstr "იპოვეთ მოყვითალო მწვანე პეპელა"
 
 #. Color #C04000
 #: activities/advanced_colors/advanced_colors.js:146
 msgctxt "advanced_colors|"
 msgid "Find the mahogany butterfly"
-msgstr ""
+msgstr "იპოვეთ მოწითალო-მოყავისფრო პეპელა"
 
 #. Color #7FFFD4
 #: activities/advanced_colors/advanced_colors.js:151
 #: activities/advanced_colors/advanced_colors.js:760
 msgctxt "advanced_colors|"
 msgid "Find the aquamarine butterfly"
-msgstr ""
+msgstr "იპოვეთ ზღვის ფერი პეპელა"
 
 #. Color #F2F0E6
 #: activities/advanced_colors/advanced_colors.js:156
 #: activities/advanced_colors/advanced_colors.js:520
 msgctxt "advanced_colors|"
 msgid "Find the alabaster butterfly"
-msgstr ""
+msgstr "იპოვეთ რძისფერი პეპელა"
 
 #. Color #FFBF00
 #: activities/advanced_colors/advanced_colors.js:161
 #: activities/advanced_colors/advanced_colors.js:708
 msgctxt "advanced_colors|"
 msgid "Find the amber butterfly"
-msgstr ""
+msgstr "იპოვეტ ქარვისფერი პეპელა"
 
 #. Color #9966CC
 #: activities/advanced_colors/advanced_colors.js:166
 msgctxt "advanced_colors|"
 msgid "Find the amethyst butterfly"
-msgstr ""
+msgstr "იპოვეთ იისფერი პეპელა"
 
 #. Color #F5EACC
 #: activities/advanced_colors/advanced_colors.js:171
@@ -376,7 +378,7 @@ msgstr ""
 #: activities/advanced_colors/advanced_colors.js:772
 msgctxt "advanced_colors|"
 msgid "Find the anise butterfly"
-msgstr ""
+msgstr "იპოვეთ ანისულისფერი პეპელა"
 
 #. Color #E34234
 #: activities/advanced_colors/advanced_colors.js:176
@@ -384,13 +386,13 @@ msgstr ""
 #: activities/advanced_colors/advanced_colors.js:555
 msgctxt "advanced_colors|"
 msgid "Find the vermilion butterfly"
-msgstr ""
+msgstr "იპოვეთ მეწამული პეპელა"
 
 #. Color #EEEBEB
 #: activities/advanced_colors/advanced_colors.js:183
 msgctxt "advanced_colors|"
 msgid "Find the ceruse butterfly"
-msgstr ""
+msgstr "იპოვეთ ტყვიის თეთრის ფერის პეპელა"
 
 #. Color #E5AA70
 #: activities/advanced_colors/advanced_colors.js:188
@@ -399,20 +401,20 @@ msgstr ""
 #: activities/advanced_colors/advanced_colors.js:651
 msgctxt "advanced_colors|"
 msgid "Find the fawn butterfly"
-msgstr ""
+msgstr "იპოვეთ მოყვითალო-მოყავისფრო ფერის პეპელა"
 
 #. Color #7FFF00
 #: activities/advanced_colors/advanced_colors.js:193
 #: activities/advanced_colors/advanced_colors.js:713
 msgctxt "advanced_colors|"
 msgid "Find the chartreuse butterfly"
-msgstr ""
+msgstr "იპოვეთ ბაცი მწვანე პეპელა"
 
 #. Color #50C878
 #: activities/advanced_colors/advanced_colors.js:198
 msgctxt "advanced_colors|"
 msgid "Find the emerald butterfly"
-msgstr ""
+msgstr "იპოვეთ ზურმუხტისფერი პეპელა"
 
 #. Color #614051
 #: activities/advanced_colors/advanced_colors.js:203
@@ -1044,52 +1046,52 @@ msgstr ""
 #: activities/algebra_plus/resource/1/Data.qml:13
 msgctxt "Data|"
 msgid "Learn addition table of 1."
-msgstr ""
+msgstr "ისწავლეთ 1-ის დამატების ცხრილი."
 
 #: activities/algebra_plus/resource/10/Data.qml:13
 msgctxt "Data|"
 msgid "Learn addition table of 10."
-msgstr ""
+msgstr "ისწავლეთ 10-ის დამატების ცხრილი."
 
 #: activities/algebra_plus/resource/2/Data.qml:13
 msgctxt "Data|"
 msgid "Learn addition table of 2."
-msgstr ""
+msgstr "ისწავლეთ 2-ის დამატების ცხრილი."
 
 #: activities/algebra_plus/resource/3/Data.qml:13
 msgctxt "Data|"
 msgid "Learn addition table of 3."
-msgstr ""
+msgstr "ისწავლეთ 3-ის დამატების ცხრილი."
 
 #: activities/algebra_plus/resource/4/Data.qml:13
 msgctxt "Data|"
 msgid "Learn addition table of 4."
-msgstr ""
+msgstr "ისწავლეთ 4-ის დამატების ცხრილი."
 
 #: activities/algebra_plus/resource/5/Data.qml:13
 msgctxt "Data|"
 msgid "Learn addition table of 5."
-msgstr ""
+msgstr "ისწავლეთ 5-ის დამატების ცხრილი."
 
 #: activities/algebra_plus/resource/6/Data.qml:13
 msgctxt "Data|"
 msgid "Learn addition table of 6."
-msgstr ""
+msgstr "ისწავლეთ 6-ის დამატების ცხრილი."
 
 #: activities/algebra_plus/resource/7/Data.qml:13
 msgctxt "Data|"
 msgid "Learn addition table of 7."
-msgstr ""
+msgstr "ისწავლეთ 7-ის დამატების ცხრილი."
 
 #: activities/algebra_plus/resource/8/Data.qml:13
 msgctxt "Data|"
 msgid "Learn addition table of 8."
-msgstr ""
+msgstr "ისწავლეთ 8-ის დამატების ცხრილი."
 
 #: activities/algebra_plus/resource/9/Data.qml:13
 msgctxt "Data|"
 msgid "Learn addition table of 9."
-msgstr ""
+msgstr "ისწავლეთ 9-ის დამატების ცხრილი."
 
 #. Activity title
 #: activities/algorithm/ActivityInfo.qml:15
@@ -16984,12 +16986,9 @@ msgid "Alphabet/Numeric value: %1"
 msgstr ""
 
 #: activities/morse_code/resource/1/Data.qml:13
-#, fuzzy
-#| msgctxt "Menu|"
-#| msgid "Letters"
 msgctxt "Data|"
 msgid "Letters."
-msgstr "წერილები"
+msgstr "წერილი."
 
 #: activities/morse_code/resource/1/Data.qml:18
 #: activities/morse_code/resource/1/Data.qml:34
@@ -17039,12 +17038,9 @@ msgid "Find the corresponding digit."
 msgstr ""
 
 #: activities/morse_code/resource/3/Data.qml:13
-#, fuzzy
-#| msgctxt "Menu|"
-#| msgid "Words"
 msgctxt "Data|"
 msgid "Words."
-msgstr "სიტყვა"
+msgstr "სიტყვა."
 
 #: activities/morse_code/resource/3/Data.qml:24
 msgctxt "Data|"
