@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-09-26 00:40+0000\n"
+"POT-Creation-Date: 2022-10-31 00:41+0000\n"
 "PO-Revision-Date: 2022-07-02 14:36+0200\n"
 "Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
 "Language-Team: Norwegian Nynorsk <l10n-no@lister.huftis.org>\n"
@@ -565,8 +565,8 @@ msgstr ""
 #, kde-format
 msgid "Find out the number by typing a number from the range proposed."
 msgstr ""
-"Hjelp Tux å komma seg ut av <phoneme alphabet=\"CereProc\" ph=\"h oaa3 l a"
-"\">hòla</phoneme> ved å gjetta det hemmelege talet."
+"Hjelp Tux å komma seg ut av <phoneme alphabet=\"CereProc\" ph=\"h oaa3 l "
+"a\">hòla</phoneme> ved å gjetta det hemmelege talet."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "hangman"
 #: activities/hangman/ActivityInfo.qml:22
@@ -884,6 +884,12 @@ msgstr "Trykk på pengane for å gje Tux pengar tilbake på kjøpet."
 #, kde-format
 msgid "Click on the money to pay."
 msgstr "Trykk på pengane for å betala."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "morse_code"
+#: activities/morse_code/ActivityInfo.qml:21
+#, kde-format
+msgid "Learn and practice the International Morse code"
+msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "mosaic"
 #: activities/mosaic/ActivityInfo.qml:18
