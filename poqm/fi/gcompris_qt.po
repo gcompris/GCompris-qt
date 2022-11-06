@@ -15798,6 +15798,22 @@ msgctxt "Data|"
 msgid "Subtractions with 1, 2, 3, 4 and 5."
 msgstr "Vähennyslaskut 1:llä, 2:lla, 3:lla, 4:llä ja 5:llä."
 
+#: activities/learn_subtractions/resource/4/Data.qml:14
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Subtractions with 1, 2, 3, 4 and 5."
+msgctxt "Data|"
+msgid "Subtractions with 1, 2, 3, 4, 5, 6 and 7."
+msgstr "Vähennyslaskut 1:llä, 2:lla, 3:lla, 4:llä ja 5:llä."
+
+#: activities/learn_subtractions/resource/5/Data.qml:14
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Subtractions with 1, 2, 3, 4 and 5."
+msgctxt "Data|"
+msgid "Subtractions with 1, 2, 3, 4, 5, 6, 7, 8 and 9."
+msgstr "Vähennyslaskut 1:llä, 2:lla, 3:lla, 4:llä ja 5:llä."
+
 #. Activity title
 #: activities/left_right_click/ActivityInfo.qml:14
 #, fuzzy

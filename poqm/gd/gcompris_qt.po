@@ -15818,6 +15818,22 @@ msgctxt "Data|"
 msgid "Subtractions with 1, 2, 3, 4 and 5."
 msgstr ""
 
+#: activities/learn_subtractions/resource/4/Data.qml:14
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Learn subtraction"
+msgctxt "Data|"
+msgid "Subtractions with 1, 2, 3, 4, 5, 6 and 7."
+msgstr "Ionnsaich toirt air falbh"
+
+#: activities/learn_subtractions/resource/5/Data.qml:14
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Learn subtraction"
+msgctxt "Data|"
+msgid "Subtractions with 1, 2, 3, 4, 5, 6, 7, 8 and 9."
+msgstr "Ionnsaich toirt air falbh"
+
 #. Activity title
 #: activities/left_right_click/ActivityInfo.qml:14
 #, fuzzy

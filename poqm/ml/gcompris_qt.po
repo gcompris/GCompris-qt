@@ -15514,6 +15514,22 @@ msgctxt "Data|"
 msgid "Subtractions with 1, 2, 3, 4 and 5."
 msgstr "1, 2, 3, 4, 5 എന്നിവ കൊണ്ടുള്ള കുറയ്ക്കൽ."
 
+#: activities/learn_subtractions/resource/4/Data.qml:14
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Subtractions with 1, 2, 3, 4 and 5."
+msgctxt "Data|"
+msgid "Subtractions with 1, 2, 3, 4, 5, 6 and 7."
+msgstr "1, 2, 3, 4, 5 എന്നിവ കൊണ്ടുള്ള കുറയ്ക്കൽ."
+
+#: activities/learn_subtractions/resource/5/Data.qml:14
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Subtractions with 1, 2, 3, 4 and 5."
+msgctxt "Data|"
+msgid "Subtractions with 1, 2, 3, 4, 5, 6, 7, 8 and 9."
+msgstr "1, 2, 3, 4, 5 എന്നിവ കൊണ്ടുള്ള കുറയ്ക്കൽ."
+
 #. Activity title
 #: activities/left_right_click/ActivityInfo.qml:14
 #, fuzzy

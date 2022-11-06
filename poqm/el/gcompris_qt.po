@@ -15997,6 +15997,22 @@ msgctxt "Data|"
 msgid "Subtractions with 1, 2, 3, 4 and 5."
 msgstr "Αφαιρέσεις με το 1, 2, 3, 4 και 5."
 
+#: activities/learn_subtractions/resource/4/Data.qml:14
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Subtractions with 1, 2, 3, 4 and 5."
+msgctxt "Data|"
+msgid "Subtractions with 1, 2, 3, 4, 5, 6 and 7."
+msgstr "Αφαιρέσεις με το 1, 2, 3, 4 και 5."
+
+#: activities/learn_subtractions/resource/5/Data.qml:14
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Subtractions with 1, 2, 3, 4 and 5."
+msgctxt "Data|"
+msgid "Subtractions with 1, 2, 3, 4, 5, 6, 7, 8 and 9."
+msgstr "Αφαιρέσεις με το 1, 2, 3, 4 και 5."
+
 #. Activity title
 #: activities/left_right_click/ActivityInfo.qml:14
 #, fuzzy
