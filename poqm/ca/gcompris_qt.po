@@ -14,8 +14,8 @@ msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2014-12-25 01:10+0000\n"
-"PO-Revision-Date: 2022-11-01 12:58+0100\n"
-"Last-Translator: Antoni Bella Pérez <antonibella5@yahoo.com>\n"
+"PO-Revision-Date: 2022-11-06 11:30+0100\n"
+"Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
 "MIME-Version: 1.0\n"
@@ -15971,20 +15971,14 @@ msgid "Subtractions with 1, 2, 3, 4 and 5."
 msgstr "Restes amb l'1, 2, 3, 4 i 5."
 
 #: activities/learn_subtractions/resource/4/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2, 3, 4 and 5."
 msgctxt "Data|"
 msgid "Subtractions with 1, 2, 3, 4, 5, 6 and 7."
-msgstr "Restes amb l'1, 2, 3, 4 i 5."
+msgstr "Restes amb l'1, 2, 3, 4, 5, 6 i 7."
 
 #: activities/learn_subtractions/resource/5/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2, 3, 4 and 5."
 msgctxt "Data|"
 msgid "Subtractions with 1, 2, 3, 4, 5, 6, 7, 8 and 9."
-msgstr "Restes amb l'1, 2, 3, 4 i 5."
+msgstr "Restes amb l'1, 2, 3, 4, 5, 6, 7, 8 i 9."
 
 #. Activity title
 #: activities/left_right_click/ActivityInfo.qml:14
@@ -20574,7 +20568,7 @@ msgstr "Piano"
 #: activities/piano_composition/OptionsRow.qml:28
 msgctxt "OptionsRow|"
 msgid "Lyrics"
-msgstr "Lletres"
+msgstr "Lletra"
 
 #: activities/piano_composition/OptionsRow.qml:70
 msgctxt "OptionsRow|"

@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GCompris\n"
 "POT-Creation-Date: 2018-11-30 13:03+0000\n"
-"PO-Revision-Date: 2022-10-31 06:31+0100\n"
+"PO-Revision-Date: 2022-11-06 06:36+0100\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
 "Language: eu\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 22.08.1\n"
+"X-Generator: Lokalize 22.08.3\n"
 "X-Qt-Contexts: true\n"
 
 #. Activity title
@@ -15580,20 +15580,14 @@ msgid "Subtractions with 1, 2, 3, 4 and 5."
 msgstr "Kenketak 1, 2, 3, 4 eta 5ekin."
 
 #: activities/learn_subtractions/resource/4/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2, 3, 4 and 5."
 msgctxt "Data|"
 msgid "Subtractions with 1, 2, 3, 4, 5, 6 and 7."
-msgstr "Kenketak 1, 2, 3, 4 eta 5ekin."
+msgstr "Kenketak 1, 2, 3, 4, 5, 6 eta 7rekin."
 
 #: activities/learn_subtractions/resource/5/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2, 3, 4 and 5."
 msgctxt "Data|"
 msgid "Subtractions with 1, 2, 3, 4, 5, 6, 7, 8 and 9."
-msgstr "Kenketak 1, 2, 3, 4 eta 5ekin."
+msgstr "Kenketak 1, 2, 3, 4, 5, 6, 7, 8 eta 9rekin."
 
 #. Activity title
 #: activities/left_right_click/ActivityInfo.qml:14

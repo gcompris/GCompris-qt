@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2022-10-31 11:35+0100\n"
+"PO-Revision-Date: 2022-11-06 15:35-0400\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Language: nl\n"
 "X-Qt-Contexts: true\n"
-"X-Generator: Lokalize 22.08.2\n"
+"X-Generator: Lokalize 22.08.1\n"
 
 #. Activity title
 #: activities/advanced_colors/ActivityInfo.qml:15
@@ -15624,20 +15624,14 @@ msgid "Subtractions with 1, 2, 3, 4 and 5."
 msgstr "Aftrekken met 1, 2, 3, 4 en 5."
 
 #: activities/learn_subtractions/resource/4/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2, 3, 4 and 5."
 msgctxt "Data|"
 msgid "Subtractions with 1, 2, 3, 4, 5, 6 and 7."
-msgstr "Aftrekken met 1, 2, 3, 4 en 5."
+msgstr "Aftrekken met 1, 2, 3, 4, 5 6 en 7."
 
 #: activities/learn_subtractions/resource/5/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2, 3, 4 and 5."
 msgctxt "Data|"
 msgid "Subtractions with 1, 2, 3, 4, 5, 6, 7, 8 and 9."
-msgstr "Aftrekken met 1, 2, 3, 4 en 5."
+msgstr "Aftrekken met 1, 2, 3, 4, 5, 6, 7, 8 en 9."
 
 #. Activity title
 #: activities/left_right_click/ActivityInfo.qml:14
