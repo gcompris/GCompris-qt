@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: kstars\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2015-05-27 08:46+0000\n"
-"PO-Revision-Date: 2022-10-31 10:55+0000\n"
+"PO-Revision-Date: 2022-11-07 15:57+0000\n"
 "Last-Translator: Pedro Morais <morais@kde.org>\n"
 "Language-Team: pt <kde-i18n-pt@kde.org>\n"
 "Language: pt\n"
@@ -16403,20 +16403,14 @@ msgid "Subtractions with 1, 2, 3, 4 and 5."
 msgstr "Subtracções com o 1, 2, 3, 4 e 5."
 
 #: activities/learn_subtractions/resource/4/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2, 3, 4 and 5."
 msgctxt "Data|"
 msgid "Subtractions with 1, 2, 3, 4, 5, 6 and 7."
-msgstr "Subtracções com o 1, 2, 3, 4 e 5."
+msgstr "Subtracções com o 1, 2, 3, 4, 5, 6 e 7."
 
 #: activities/learn_subtractions/resource/5/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2, 3, 4 and 5."
 msgctxt "Data|"
 msgid "Subtractions with 1, 2, 3, 4, 5, 6, 7, 8 and 9."
-msgstr "Subtracções com o 1, 2, 3, 4 e 5."
+msgstr "Subtracções com o 1, 2, 3, 4, 5, 6, 7, 8 e 9."
 
 #. Activity title
 #: activities/left_right_click/ActivityInfo.qml:14
