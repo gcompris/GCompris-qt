@@ -1,4 +1,5 @@
-Copyright: from https://github.com/Crazy-Marvin/Morse/tree/development/app/src/main/res/raw
+Copyright: Crasy Marvin, 2019
+Source: https://github.com/Crazy-Marvin/Morse/tree/development/app/src/main/res/raw
 License: Apache License 2.0
 Files:
 dash.wav
@@ -8,3 +9,9 @@ Copyright: Johnny Jazeix, 2022
 License: CC-BY-SA 4.0
 Files:
 silence.wav
+
+Copyright: Timothée Giet, 2022
+License: CC-BY-SA 4.0
+Files:
+ledOff.svg
+ledOn.svg

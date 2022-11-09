@@ -2,10 +2,12 @@
  *
  * SPDX-FileCopyrightText: 2016 SOURADEEP BARUA <sourad97@gmail.com>
  * SPDX-FileCopyrightText: 2022 Johnny Jazeix <jazeix@gmail.com>
+ * SPDX-FileCopyrightText: 2022 Timothée Giet <animtim@gmail.com>
  *
  * Authors:
  *   SOURADEEP BARUA <sourad97@gmail.com>
  *   Johnny Jazeix <jazeix@gmail.com>
+ *   Timothée Giet <animtim@gmail.com>
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
@@ -103,7 +105,7 @@ ActivityBase {
                 activity.audioVoices.clearQueue();
                 // Play the audio at start of the sublevel
                 if(items.audioMode) {
-                    repeatItem.clicked();
+                    delayTimer.restart();
                 }
             }
 
@@ -151,10 +153,7 @@ ActivityBase {
             firstScreen.visible = true
             items.start()
         }
-        onStop: {
-            activity.audioVoices.stop();
-            activity.audioVoices.clearQueue();
-        }
+        onStop: {}
 
         Keys.enabled: !bonus.isPlaying
         Keys.onPressed: {
@@ -344,6 +343,94 @@ ActivityBase {
             }
         }
 
+        Rectangle {
+            id: ledContainer
+            visible: repeatItem.visible
+            anchors.top: inputArea.bottom
+            anchors.bottom: repeatItem.top
+            anchors.left: inputArea.left
+            anchors.right: inputArea.right
+            anchors.margins: background.layoutMargins
+            radius:background.layoutMargins
+            color: "#f2f2f2"
+            property var soundList: []
+            property bool phraseRunning: false
+
+            Rectangle {
+                id: ledContour
+                anchors.centerIn: parent
+                width: Math.min(parent.width, parent.height) * 0.9
+                height: width
+                radius: width * 0.5
+                color: "#373737"
+            }
+            Image {
+                id: ledOff
+                source: "qrc:/gcompris/src/activities/morse_code/resource/ledOff.svg"
+                anchors.centerIn: ledContour
+                width: ledContour.width * 0.9
+                height: width
+                sourceSize.width: width
+                sourceSize.height: width
+            }
+            Image {
+                id: ledOn
+                source: "qrc:/gcompris/src/activities/morse_code/resource/ledOn.svg"
+                anchors.centerIn: ledContour
+                width: ledContour.width * 0.9
+                height: width
+                sourceSize.width: width
+                sourceSize.height: width
+                visible: false
+            }
+            SequentialAnimation {
+                id: dotAnim
+                PropertyAction { target: ledOn; property: "visible"; value: true }
+                PauseAnimation { duration: 100 }
+                PropertyAction { target: ledOn; property: "visible"; value: false }
+                PauseAnimation { duration: 400 }
+                ScriptAction { script: ledContainer.playLedAnim() }
+            }
+            SequentialAnimation {
+                id: dashAnim
+                PropertyAction { target: ledOn; property: "visible"; value: true }
+                PauseAnimation { duration: 280 }
+                PropertyAction { target: ledOn; property: "visible"; value: false }
+                PauseAnimation { duration: 200 }
+                ScriptAction { script: ledContainer.playLedAnim() }
+            }
+            SequentialAnimation {
+                id: silenceAnim
+                PropertyAction { target: ledOn; property: "visible"; value: false }
+                PauseAnimation { duration: 500 }
+                ScriptAction { script: ledContainer.playLedAnim() }
+            }
+            function playLedAnim() {
+                if(ledContainer.soundList.length > 0) {
+                    var soundType = soundList.shift();
+                    var audioFile = resourcesUrl + soundType;
+                    activity.audioVoices.append(audioFile);
+                    if (soundType === "dot.wav") {
+                        dotAnim.restart();
+                    } else if (soundType === "dash.wav") {
+                        dashAnim.restart();
+                    } else if (soundType === "silence.wav") {
+                        silenceAnim.restart();
+                    }
+                } else {
+                    ledContainer.phraseRunning = false;
+                }
+            }
+        }
+
+        Timer {
+            id: delayTimer
+            interval: 1000
+            repeat: false
+            running: false
+            onTriggered: repeatItem.clicked()
+        }
+
         MorseMap {
             id: morseMap
             visible: false
@@ -492,8 +579,8 @@ ActivityBase {
                 right: okButton.left
             }
             onClicked: {
-                if (activity.audioVoices.files.length == 0) {
-                    var audioFile;
+                if (ledContainer.phraseRunning == false) {
+                    ledContainer.soundList = []
                     for(var f = 0 ; f < items.questionValue.length; ++ f) {
                         var letter = items.questionValue[f];
                         // If the character to play is a letter, we convert it ot morse
@@ -503,17 +590,17 @@ ActivityBase {
                         // We play each character, one after the other
                         for(var i = 0 ; i < letter.length; ++ i) {
                             if(letter[i] === '-') {
-                                audioFile = resourcesUrl + "dash.wav";
+                                ledContainer.soundList.push("dash.wav");
                             }
                             else if(letter[i] === '.' || letter[i] === '·') {
-                                audioFile = resourcesUrl + "dot.wav";
+                                ledContainer.soundList.push("dot.wav");
                             }
-                            activity.audioVoices.append(audioFile);
                         }
                         // Add a silence after each letter
-                        audioFile = resourcesUrl + "silence.wav";
-                        activity.audioVoices.append(audioFile);
+                        ledContainer.soundList.push("silence.wav")
                     }
+                    ledContainer.phraseRunning = true;
+                    ledContainer.playLedAnim();
                 }
             }
         }
