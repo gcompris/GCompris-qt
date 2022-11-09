@@ -75,7 +75,7 @@ QtObject {
             { "text": "Svenska", "locale": "sv_FI.UTF-8" },
             //{ "text": "தமிழ்", "locale": "ta_IN.UTF-8" },
             //{ "text": "ไทย", "locale": "th_TH.UTF-8" },
-            { "text": "Türk", "locale": "tr_TR.UTF-8" },
+            { "text": "Türkçe", "locale": "tr_TR.UTF-8" },
             { "text": "Українська", "locale": "uk_UA.UTF-8" },
             //{ "text": "中文（简体）", "locale": "zh_CN.UTF-8" },
             { "text": "繁體中文", "locale": "zh_TW.UTF-8" }
