@@ -37,6 +37,7 @@ ActivityBase {
     id: activity
     focus: true
     activityInfo: ActivityInfoTree.rootMenu
+    isMenu: true
     onBack: {
         if (pageView.currentItem === activity) {
             // Restore focus that has been taken by the loaded activity

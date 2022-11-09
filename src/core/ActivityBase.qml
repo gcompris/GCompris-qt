@@ -142,6 +142,14 @@ Item {
     property Loading loading
 
     /**
+     * type: bool
+     * Check if the activity is the menu or not.
+     * Set by default to false for all activities,
+     * and only set to true inside Menu.qml
+     */
+    property bool isMenu: false
+
+    /**
      * Emitted when the user wants to return to the Home/Menu screen.
      */
     signal home
@@ -167,6 +175,12 @@ Item {
     signal stop
 
     /**
+     * Connected to stop signal
+     * Used to stop all the voices and sounds from the activity
+     */
+    signal stopSounds
+
+    /**
      * Emitted when dialog @p dialog should be shown
      *
      * Emit this signal when you want to show another dialog, e.g. on
@@ -189,6 +203,17 @@ Item {
 
     //Initially hide it to avoid components appearing on the menu while the activity is loading.
     visible: false
+
+    Component.onCompleted: {
+        page.stop.connect(stopSounds);
+    }
+    onStopSounds: {
+        if(!isMenu) {
+            audioEffects.stop();
+            audioVoices.clearQueue();
+            audioVoices.stop();
+        }
+    }
 
     onBack: menu ? menu.back(to) : ""
     onHome: menu ? menu.home() : ""
