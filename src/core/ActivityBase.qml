@@ -187,6 +187,9 @@ Item {
      */
     signal displayDialogs(var dialogs)
 
+    //Initially hide it to avoid components appearing on the menu while the activity is loading.
+    visible: false
+
     onBack: menu ? menu.back(to) : ""
     onHome: menu ? menu.home() : ""
     onDisplayDialog: menu ? menu.displayDialog(dialog) : ""
