@@ -20525,7 +20525,7 @@ msgctxt "ConfigurationItem|"
 msgid "All lowercase"
 msgstr "Všetko malými písmenami"
 
-#: activities/menu/Menu.qml:84
+#: activities/menu/Menu.qml:85
 #, fuzzy
 #| msgctxt "ConfigurationItem|"
 #| msgid ""
@@ -20540,12 +20540,12 @@ msgstr ""
 "ste hrali vo svojom novom miestnom nastavení. <br/>Chcete stiahnuť "
 "zodpovedajúce zvukové súbory teraz?"
 
-#: activities/menu/Menu.qml:85
+#: activities/menu/Menu.qml:86
 msgctxt "Menu|"
 msgid "Yes"
 msgstr "Áno"
 
-#: activities/menu/Menu.qml:91
+#: activities/menu/Menu.qml:92
 #, fuzzy
 #| msgctxt "balanceboxeditor|"
 #| msgid "No"
@@ -20553,67 +20553,67 @@ msgctxt "Menu|"
 msgid "No"
 msgstr "Nie"
 
-#: activities/menu/Menu.qml:121
+#: activities/menu/Menu.qml:122
 msgctxt "Menu|"
 msgid "Logic"
 msgstr "Logika"
 
-#: activities/menu/Menu.qml:122
+#: activities/menu/Menu.qml:123
 msgctxt "Menu|"
 msgid "Fine Arts"
 msgstr "Výtvarné umenie"
 
-#: activities/menu/Menu.qml:123
+#: activities/menu/Menu.qml:124
 msgctxt "Menu|"
 msgid "Music"
 msgstr "Hudba"
 
-#: activities/menu/Menu.qml:129
+#: activities/menu/Menu.qml:130
 msgctxt "Menu|"
 msgid "Experiment"
 msgstr "Experiment"
 
-#: activities/menu/Menu.qml:130
+#: activities/menu/Menu.qml:131
 msgctxt "Menu|"
 msgid "History"
 msgstr "História"
 
-#: activities/menu/Menu.qml:131
+#: activities/menu/Menu.qml:132
 msgctxt "Menu|"
 msgid "Geography"
 msgstr "Geografia"
 
-#: activities/menu/Menu.qml:141
+#: activities/menu/Menu.qml:142
 msgctxt "Menu|"
 msgid "Numeration"
 msgstr "Číslovanie"
 
-#: activities/menu/Menu.qml:142
+#: activities/menu/Menu.qml:143
 msgctxt "Menu|"
 msgid "Arithmetic"
 msgstr "Aritmetika"
 
-#: activities/menu/Menu.qml:143
+#: activities/menu/Menu.qml:144
 msgctxt "Menu|"
 msgid "Measures"
 msgstr "Jednotky"
 
-#: activities/menu/Menu.qml:153
+#: activities/menu/Menu.qml:154
 msgctxt "Menu|"
 msgid "Letters"
 msgstr "Písmená"
 
-#: activities/menu/Menu.qml:154
+#: activities/menu/Menu.qml:155
 msgctxt "Menu|"
 msgid "Words"
 msgstr "Slová"
 
-#: activities/menu/Menu.qml:155
+#: activities/menu/Menu.qml:156
 msgctxt "Menu|"
 msgid "Vocabulary"
 msgstr "Slovník"
 
-#: activities/menu/Menu.qml:371
+#: activities/menu/Menu.qml:372
 #, fuzzy
 #| msgctxt "Menu|"
 #| msgid ""
@@ -20627,12 +20627,12 @@ msgstr ""
 "Dajte sem svoje obľúbené aktivity výberom slnka na každej aktivite vpravo "
 "hore."
 
-#: activities/menu/Menu.qml:773
+#: activities/menu/Menu.qml:774
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "Ukazovať zamknuté aktivity"
 
-#: activities/menu/Menu.qml:800
+#: activities/menu/Menu.qml:801
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "Nastavenia aktivity"
@@ -21127,7 +21127,7 @@ msgid "When you are ready, click on Tux and we will converse in Morse code."
 msgstr ""
 "Keď budeš pripravený, klikni na mňa a pokús sa reprodukovať braillove znaky."
 
-#: activities/morse_code/MorseCode.qml:332
+#: activities/morse_code/MorseCode.qml:331
 #, fuzzy, qt-format
 #| msgctxt "RomanNumerals|"
 #| msgid "Roman value: %1"
@@ -21135,7 +21135,7 @@ msgctxt "MorseCode|"
 msgid "Morse value: %1"
 msgstr "Rímska hodnota: %1"
 
-#: activities/morse_code/MorseCode.qml:333
+#: activities/morse_code/MorseCode.qml:332
 #, fuzzy, qt-format
 #| msgctxt "RomanNumerals|"
 #| msgid "Arabic value: %1"

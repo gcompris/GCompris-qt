@@ -17938,7 +17938,7 @@ msgctxt "ConfigurationItem|"
 msgid "All lowercase"
 msgstr "All lowercase"
 
-#: activities/menu/Menu.qml:84
+#: activities/menu/Menu.qml:85
 msgctxt "Menu|"
 msgid ""
 "You selected a new locale, you need to restart GCompris to use it.<br/>Do "
@@ -17947,77 +17947,77 @@ msgstr ""
 "You selected a new locale, you need to restart GCompris to use it.<br/>Do "
 "you want to download the corresponding sound files now?"
 
-#: activities/menu/Menu.qml:85
+#: activities/menu/Menu.qml:86
 msgctxt "Menu|"
 msgid "Yes"
 msgstr "Yes"
 
-#: activities/menu/Menu.qml:91
+#: activities/menu/Menu.qml:92
 msgctxt "Menu|"
 msgid "No"
 msgstr "No"
 
-#: activities/menu/Menu.qml:121
+#: activities/menu/Menu.qml:122
 msgctxt "Menu|"
 msgid "Logic"
 msgstr "Logic"
 
-#: activities/menu/Menu.qml:122
+#: activities/menu/Menu.qml:123
 msgctxt "Menu|"
 msgid "Fine Arts"
 msgstr "Fine Arts"
 
-#: activities/menu/Menu.qml:123
+#: activities/menu/Menu.qml:124
 msgctxt "Menu|"
 msgid "Music"
 msgstr "Music"
 
-#: activities/menu/Menu.qml:129
+#: activities/menu/Menu.qml:130
 msgctxt "Menu|"
 msgid "Experiment"
 msgstr "Experiment"
 
-#: activities/menu/Menu.qml:130
+#: activities/menu/Menu.qml:131
 msgctxt "Menu|"
 msgid "History"
 msgstr "History"
 
-#: activities/menu/Menu.qml:131
+#: activities/menu/Menu.qml:132
 msgctxt "Menu|"
 msgid "Geography"
 msgstr "Geography"
 
-#: activities/menu/Menu.qml:141
+#: activities/menu/Menu.qml:142
 msgctxt "Menu|"
 msgid "Numeration"
 msgstr "Numeration"
 
-#: activities/menu/Menu.qml:142
+#: activities/menu/Menu.qml:143
 msgctxt "Menu|"
 msgid "Arithmetic"
 msgstr "Arithmetic"
 
-#: activities/menu/Menu.qml:143
+#: activities/menu/Menu.qml:144
 msgctxt "Menu|"
 msgid "Measures"
 msgstr "Measures"
 
-#: activities/menu/Menu.qml:153
+#: activities/menu/Menu.qml:154
 msgctxt "Menu|"
 msgid "Letters"
 msgstr "Letters"
 
-#: activities/menu/Menu.qml:154
+#: activities/menu/Menu.qml:155
 msgctxt "Menu|"
 msgid "Words"
 msgstr "Words"
 
-#: activities/menu/Menu.qml:155
+#: activities/menu/Menu.qml:156
 msgctxt "Menu|"
 msgid "Vocabulary"
 msgstr "Vocabulary"
 
-#: activities/menu/Menu.qml:371
+#: activities/menu/Menu.qml:372
 msgctxt "Menu|"
 msgid ""
 "Put your favorite activities here by clicking on the sun at the top right of "
@@ -18026,12 +18026,12 @@ msgstr ""
 "Put your favourite activities here by clicking on the sun at the top right "
 "of that activity."
 
-#: activities/menu/Menu.qml:773
+#: activities/menu/Menu.qml:774
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "Search specific activities"
 
-#: activities/menu/Menu.qml:800
+#: activities/menu/Menu.qml:801
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "Activity Settings"
@@ -18480,7 +18480,7 @@ msgid "When you are ready, click on Tux and we will converse in Morse code."
 msgstr ""
 "When you are ready, click on me and try reproducing Braille characters."
 
-#: activities/morse_code/MorseCode.qml:332
+#: activities/morse_code/MorseCode.qml:331
 #, fuzzy, qt-format
 #| msgctxt "RomanNumerals|"
 #| msgid "Roman value: %1"
@@ -18488,7 +18488,7 @@ msgctxt "MorseCode|"
 msgid "Morse value: %1"
 msgstr "Roman value: %1"
 
-#: activities/morse_code/MorseCode.qml:333
+#: activities/morse_code/MorseCode.qml:332
 #, fuzzy, qt-format
 #| msgctxt "RomanNumerals|"
 #| msgid "Arabic value: %1"
