@@ -622,7 +622,7 @@ ActivityBase {
 
         BarButton {
             id: showMapButton
-            source: "qrc:/gcompris/src/activities/braille_alphabets/resource/target.svg"
+            source: "qrc:/gcompris/src/activities/morse_code/resource/morseButton.svg"
             visible: !firstScreen.visible
             anchors.right: background.right
             anchors.bottom: bar.top
