@@ -31,20 +31,20 @@ Image {
         anchors.centerIn: parent.Center
         color: "#2a2a2a"
         width: parent.width
-        height: parent.height * 0.16
+        height: parent.height * 0.10
         wrapMode: Text.WordWrap
     }
 
     Image {
         id: introChar
         source: Activity.url + "intro_braille_char.svg"
-        sourceSize.height: parent.height * 0.25
+        sourceSize.height: Math.min(parent.height * 0.25, parent.width * 0.25)
         fillMode: Image.PreserveAspectFit
         anchors {
             top: heading.bottom
-            topMargin: 30 * ApplicationInfo.ratio
+            topMargin: 5 * ApplicationInfo.ratio
             left: parent.left
-            leftMargin: 30 * ApplicationInfo.ratio
+            leftMargin: 5 * ApplicationInfo.ratio
         }
     }
 
@@ -61,15 +61,15 @@ Image {
         horizontalAlignment: Text.AlignJustify
         anchors {
             top: heading.bottom
-            topMargin: 15 * ApplicationInfo.ratio
+            topMargin: 5 * ApplicationInfo.ratio
             right: parent.right
-            rightMargin: 15 * ApplicationInfo.ratio
+            rightMargin: 5 * ApplicationInfo.ratio
             left: introChar.right
-            leftMargin: 15 * ApplicationInfo.ratio
+            leftMargin: 5 * ApplicationInfo.ratio
         }
         color: "#2a2a2a"
-        width: parent.width * 0.5
-        height: parent.height * 0.33
+        width: parent.width - introChar.width - 15 * ApplicationInfo.ratio
+        height: parent.height * 0.4
         wrapMode: Text.WordWrap
     }
 
@@ -85,9 +85,9 @@ Image {
         wrapMode:  Text.WordWrap
         anchors {
             top: body_text1.bottom
-            topMargin: 15 * ApplicationInfo.ratio
+            topMargin: 10 * ApplicationInfo.ratio
             left: parent.left
-            leftMargin: 30 * ApplicationInfo.ratio
+            leftMargin: 10 * ApplicationInfo.ratio
         }
         height: parent.height * 0.25
         width: parent.width * 0.5
@@ -98,13 +98,8 @@ Image {
         z: 3
         source: Activity.url + "tux_braille.svg"
         fillMode: Image.PreserveAspectFit
-        sourceSize.width: parent.width * 0.2
-        anchors {
-            top: body_text1.bottom
-            topMargin: 5 * ApplicationInfo.ratio
-            left: bottom_text.right
-            leftMargin: 30 * ApplicationInfo.ratio
-        }
+        sourceSize.width: Math.min(parent.width * 0.2, parent.height * 0.2)
+        anchors.centerIn: bgTux
         Behavior on scale { PropertyAnimation { duration: 100 } }
 
         MouseArea {
@@ -125,8 +120,10 @@ Image {
         height: introTux.height * 1.1
         radius: bgTux.width * 0.5
         anchors {
-            horizontalCenter: introTux.horizontalCenter
-            verticalCenter: introTux.verticalCenter
+            top: body_text1.bottom
+            topMargin: 10 * ApplicationInfo.ratio
+            left: bottom_text.right
+            leftMargin: 10 * ApplicationInfo.ratio
         }
     }
 }
