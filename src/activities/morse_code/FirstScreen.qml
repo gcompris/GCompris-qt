@@ -17,49 +17,48 @@ Image {
     anchors.fill: parent
     fillMode: Image.PreserveAspectCrop
     source: "qrc:/gcompris/src/activities/braille_alphabets/resource/intro_bg.svg"
-    sourceSize.width: Math.max(parent.width, parent.height)
-    visible: false
+    sourceSize.width: width
+    sourceSize.height: height
 
     GCText {
         id: heading
         text: qsTr("Exploring Morse Code")
         fontSize: largeSize
+        fontSizeMode: Text.Fit
         horizontalAlignment: Text.AlignHCenter
         font.weight: Font.DemiBold
         anchors.centerIn: parent.Center
         color: "#2a2a2a"
         width: parent.width
+        height: parent.height * 0.10
         wrapMode: Text.WordWrap
     }
 
     Image {
         id: introChar
         source: "qrc:/gcompris/src/activities/morse_code/morse_code.svg"
-        sourceSize.width: parent.width * 0.25
-        sourceSize.height: parent.height * 0.4
+        sourceSize.height: Math.min(parent.height * 0.25, parent.width * 0.25)
         fillMode: Image.PreserveAspectFit
-        verticalAlignment: Image.AlignTop
         anchors {
             top: heading.bottom
-            topMargin: 10 * ApplicationInfo.ratio
+            topMargin: 5* ApplicationInfo.ratio
             left: parent.left
-            leftMargin:  10 * ApplicationInfo.ratio
+            leftMargin: 5 * ApplicationInfo.ratio
         }
     }
 
     GCText {
         id: bodyText
+        z: 1
         text: qsTr('Morse code was developed by Samuel Morse. It is a method of transmitting text information as a series of on-off tones, lights, or clicks.') + "\n" +
               qsTr('Each Morse code symbol represents either a text character (letter or numeral) or a prosign and is represented by a unique sequence of dots and dashes. ' +
                    'The duration of a dash is three times the duration of a dot.' +
                    ' To increase the speed of the communication, the code was designed so that the most common letters have the shorter sequences of dots and dashes.' + "\n" +
                     'For example, the most common letter in English, the letter "E", has the shortest code, a single dot.')
-        fontSize: smallSize
+        fontSize: regularSize
         fontSizeMode: Text.Fit
         font.weight: Font.DemiBold
         horizontalAlignment: Text.AlignJustify
-        verticalAlignment: Text.AlignJustify
-        wrapMode: Text.WordWrap
         anchors {
             top: heading.bottom
             topMargin: 5 * ApplicationInfo.ratio
@@ -67,58 +66,44 @@ Image {
             rightMargin: 5 * ApplicationInfo.ratio
             left: introChar.right
             leftMargin: 5 * ApplicationInfo.ratio
-            bottom: introChar.bottom
-
         }
         color: "#2a2a2a"
-    }
-    Item { // Just a margin
-        id: margin
-        width: 1
-        height: 15 * ApplicationInfo.ratio
-        anchors {
-            top: bodyText.bottom
-            left: introChar.right
-            right: parent.right
-            leftMargin: 5 * ApplicationInfo.ratio
-            rightMargin: 5 * ApplicationInfo.ratio
-        }
+        width: parent.width - introChar.width - 15 * ApplicationInfo.ratio
+        height: parent.height * 0.4
+        wrapMode: Text.WordWrap
     }
 
     GCText {
         id: bottomText
+        z: 2
         text: qsTr("When you are ready, click on Tux and we will converse in Morse code.")
         fontSize: regularSize
         fontSizeMode: Text.Fit
         font.weight: Font.Bold
-        width: parent.width * 0.75
+        horizontalAlignment: Text.AlignRight
         color: "#2a2a2a"
-        horizontalAlignment: Text.AlignJustify
-        wrapMode: Text.WordWrap
+        wrapMode:  Text.WordWrap
         anchors {
-            top: margin.bottom
+            top: bodyText.bottom
             topMargin: 10 * ApplicationInfo.ratio
-            left: introChar.left
+            left: parent.left
             leftMargin: 10 * ApplicationInfo.ratio
         }
+        height: parent.height * 0.25
+        width: parent.width * 0.5
     }
 
     Image {
         id: introTux
+        z: 3
         source: "qrc:/gcompris/src/activities/braille_alphabets/resource/tux_braille.svg"
         fillMode: Image.PreserveAspectFit
-        sourceSize.width: parent.width * 0.2
-        height: parent.height * 0.2
-        anchors {
-            right: parent.right
-            bottom: parent.bottom
-            rightMargin: 5 * ApplicationInfo.ratio
-            bottomMargin: 5 * ApplicationInfo.ratio
-        }
-        Behavior on scale { PropertyAnimation { duration: 100} }
+        sourceSize.width: Math.min(parent.width * 0.2, parent.height * 0.2)
+        anchors.centerIn: bgTux
+        Behavior on scale { PropertyAnimation { duration: 100 } }
 
         MouseArea {
-            id: tuxClick
+            id: tux_click
             anchors.fill: parent
             hoverEnabled: true
             onClicked: {
@@ -128,6 +113,21 @@ Image {
             }
             onEntered: introTux.scale = 1.1
             onExited: introTux.scale = 1
+        }
+    }
+
+    Rectangle {
+        id: bgTux
+        z: 0
+        color: "#94c1d2"
+        width: introTux.width * 1.5
+        height: introTux.height * 1.1
+        radius: bgTux.width * 0.5
+        anchors {
+            top: bodyText.bottom
+            topMargin: 10 * ApplicationInfo.ratio
+            left: bottomText.right
+            leftMargin: 10 * ApplicationInfo.ratio
         }
     }
 }
