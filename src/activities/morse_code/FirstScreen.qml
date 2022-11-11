@@ -36,14 +36,25 @@ Image {
 
     Image {
         id: introChar
-        source: "qrc:/gcompris/src/activities/morse_code/morse_code.svg"
+        source: "qrc:/gcompris/src/activities/morse_code/resource/morseButton.svg"
         sourceSize.height: Math.min(parent.height * 0.25, parent.width * 0.25)
         fillMode: Image.PreserveAspectFit
         anchors {
-            top: heading.bottom
-            topMargin: 5* ApplicationInfo.ratio
             left: parent.left
             leftMargin: 5 * ApplicationInfo.ratio
+            verticalCenter: bodyText.verticalCenter
+        }
+        Behavior on scale { PropertyAnimation { duration: 100 } }
+        MouseArea {
+            anchors.fill: parent
+            hoverEnabled: firstScreen.visible
+            enabled: firstScreen.visible
+            onClicked: {
+                morseMap.visible = true
+                displayDialog(morseMap)
+            }
+            onEntered: introChar.scale = 1.1
+            onExited: introChar.scale = 1
         }
     }
 
