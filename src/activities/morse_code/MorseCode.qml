@@ -257,6 +257,8 @@ ActivityBase {
             radius: background.layoutMargins
             width: questionArea.width * 0.5 - background.layoutMargins * 0.5
             height: textInput.height
+            border.width: 1 * ApplicationInfo.ratio
+            border.color: "#9fb8e3"
             TextInput {
                 id: textInput
                 x: parent.width / 2
@@ -323,6 +325,8 @@ ActivityBase {
             height: inputArea.height
             color: "#f2f2f2"
             radius: background.layoutMargins
+            border.width: 1 * ApplicationInfo.ratio
+            border.color: "#9fb8e3"
 
             GCText {
                 id: feedback
@@ -343,16 +347,28 @@ ActivityBase {
             }
         }
 
+        Item {
+            id: layoutArea
+            anchors.top: feedbackArea.bottom
+            anchors.topMargin: background.layoutMargins
+            anchors.left: inputArea.left
+            anchors.right: feedbackArea.right
+            anchors.bottom: bar.top
+            anchors.bottomMargin: bar.height * 0.2
+        }
+
         Rectangle {
             id: ledContainer
             visible: repeatItem.visible
-            anchors.top: inputArea.bottom
-            anchors.bottom: repeatItem.top
-            anchors.left: inputArea.left
-            anchors.right: inputArea.right
-            anchors.margins: background.layoutMargins
+            anchors.verticalCenter: layoutArea.verticalCenter
+            anchors.right: repeatItem.left
+            anchors.rightMargin: background.layoutMargins
+            height: Math.min(70 * ApplicationInfo.ratio, layoutArea.height)
+            width: height
             radius:background.layoutMargins
             color: "#f2f2f2"
+            border.width: 1 * ApplicationInfo.ratio
+            border.color: "#9fb8e3"
             property var soundList: []
             property bool phraseRunning: false
 
@@ -440,8 +456,8 @@ ActivityBase {
         Score {
             id: score
             visible: !firstScreen.visible
-            anchors.right: repeatItem.left
-            anchors.verticalCenter: okButton.verticalCenter
+            anchors.right: layoutArea.right
+            anchors.verticalCenter: layoutArea.verticalCenter
             anchors.bottom: undefined
             currentSubLevel: 0
             numberOfSubLevels: 1
@@ -569,14 +585,15 @@ ActivityBase {
         BarButton {
             id: repeatItem
             source: "qrc:/gcompris/src/core/resource/bar_repeat.svg"
-            height: bar.height
+            height: ledContainer.height
             width: height
             sourceSize.height: height
             sourceSize.width: height
             visible: !firstScreen.visible && items.audioMode
             anchors {
-                verticalCenter: okButton.verticalCenter
-                right: okButton.left
+                verticalCenter: layoutArea.verticalCenter
+                right: showMapButton.left
+                rightMargin: background.layoutMargins
             }
             onClicked: {
                 if (ledContainer.phraseRunning == false) {
@@ -609,11 +626,11 @@ ActivityBase {
             id: okButton
             source: "qrc:/gcompris/src/core/resource/bar_ok.svg";
             visible: !firstScreen.visible
-            anchors.right: showMapButton.left
-            anchors.bottom: bar.top
-            anchors.margins: 2 * background.layoutMargins
+            anchors.right: score.left
+            anchors.verticalCenter: layoutArea.verticalCenter
+            anchors.rightMargin: background.layoutMargins
             enabled: !bonus.isPlaying
-            height: bar.height
+            height: ledContainer.height
             width: height
             sourceSize.height: height
             sourceSize.width: height
@@ -624,11 +641,11 @@ ActivityBase {
             id: showMapButton
             source: "qrc:/gcompris/src/activities/morse_code/resource/morseButton.svg"
             visible: !firstScreen.visible
-            anchors.right: background.right
-            anchors.bottom: bar.top
-            anchors.margins: 2 * background.layoutMargins
+            anchors.right: okButton.left
+            anchors.verticalCenter: layoutArea.verticalCenter
+            anchors.rightMargin: background.layoutMargins
             enabled: !bonus.isPlaying
-            height: bar.height
+            height: ledContainer.height
             width: height
             sourceSize.height: height
             sourceSize.width: height
