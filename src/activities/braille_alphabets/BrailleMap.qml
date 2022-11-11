@@ -40,9 +40,47 @@ Rectangle {
         activity.forceActiveFocus();
     }
 
+    // The back button
+    Image {
+        id: cancel
+        source: Activity.url + "back.svg"
+        fillMode: Image.PreserveAspectFit
+        anchors.right: parent.right
+        anchors.top: parent.top
+        smooth: true
+        sourceSize.width: 60 * ApplicationInfo.ratio
+        anchors.margins: 10
+        SequentialAnimation {
+            id: anim
+            running: true
+            loops: Animation.Infinite
+            NumberAnimation {
+                target: cancel
+                property: "rotation"
+                from: -10; to: 10
+                duration: 500
+                easing.type: Easing.InOutQuad
+            }
+            NumberAnimation {
+                target: cancel
+                property: "rotation"
+                from: 10; to: -10
+                duration: 500
+                easing.type: Easing.InOutQuad
+            }
+        }
+        MouseArea {
+            anchors.fill: parent
+            onClicked: close()
+        }
+    }
+    
     Flickable {
         id: flick
-        anchors.fill: parent
+        anchors.top: cancel.bottom
+        anchors.bottom: parent.bottom
+        anchors.left: parent.left
+        anchors.right: parent.right
         contentWidth: parent.width
         contentHeight: (grid1.height + grid2.height) * 1.1
         flickableDirection: Flickable.VerticalFlick
@@ -151,41 +189,6 @@ Rectangle {
                         }
                     }
                 }
-            }
-        }
-
-        // The back button
-        Image {
-            id: cancel
-            source: Activity.url + "back.svg"
-            fillMode: Image.PreserveAspectFit
-            anchors.right: parent.right
-            anchors.bottom: parent.bottom
-            smooth: true
-            sourceSize.width: 60 * ApplicationInfo.ratio
-            anchors.margins: 10
-            SequentialAnimation {
-                id: anim
-                running: true
-                loops: Animation.Infinite
-                NumberAnimation {
-                    target: cancel
-                    property: "rotation"
-                    from: -10; to: 10
-                    duration: 500
-                    easing.type: Easing.InOutQuad
-                }
-                NumberAnimation {
-                    target: cancel
-                    property: "rotation"
-                    from: 10; to: -10
-                    duration: 500
-                    easing.type: Easing.InOutQuad
-                }
-            }
-            MouseArea {
-                anchors.fill: parent
-                onClicked: close()
             }
         }
     }
