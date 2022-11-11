@@ -41,10 +41,9 @@ Image {
         sourceSize.height: Math.min(parent.height * 0.25, parent.width * 0.25)
         fillMode: Image.PreserveAspectFit
         anchors {
-            top: heading.bottom
-            topMargin: 5 * ApplicationInfo.ratio
             left: parent.left
             leftMargin: 5 * ApplicationInfo.ratio
+            verticalCenter: body_text1.verticalCenter
         }
     }
 
