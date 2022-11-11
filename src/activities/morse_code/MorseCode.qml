@@ -240,7 +240,7 @@ ActivityBase {
                     id: questionLabel
                     anchors.centerIn: parent
                     wrapMode: TextEdit.WordWrap
-                    text: items.questionValue ? items.audioMode ? items.questionText : items.questionText.arg(items.questionValue) : ''
+                    text: items.questionValue ? items.questionText.includes("%1") ? items.questionText.arg(items.questionValue) : items.questionText : ''
                     color: "#373737"
                     width: parent.width * 0.9
                     horizontalAlignment: Text.AlignHCenter
