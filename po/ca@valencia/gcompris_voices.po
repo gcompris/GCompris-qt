@@ -1243,8 +1243,8 @@ msgstr ""
 #, kde-format
 msgid "Click on the target to launch darts, then count your final score!"
 msgstr ""
-"Fes clic sobre l'objectiu per a llançar els dards i després compta la teua "
-"puntuació final!"
+"Fes clic damunt de l'objectiu per a llançar els dards i després compta la "
+"teua puntuació final!"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "tic_tac_toe_2players"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "tic_tac_toe"

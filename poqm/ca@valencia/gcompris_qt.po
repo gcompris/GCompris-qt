@@ -4979,7 +4979,7 @@ msgstr "Fes clic i dibuixa"
 #: activities/clickanddraw/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Draw the picture by clicking on the selected points."
-msgstr "Dibuixeu la imatge fent clic en els punts seleccionats."
+msgstr "Dibuixeu la imatge fent clic damunt dels punts seleccionats."
 
 #. Help prerequisite
 #: activities/clickanddraw/ActivityInfo.qml:22
@@ -18851,7 +18851,7 @@ msgstr ""
 msgctxt "FirstScreen|"
 msgid "When you are ready, click on Tux and we will converse in Morse code."
 msgstr ""
-"Quan estigues preparat, fes clic damunt d'en Tux i conversarem en codi Morse."
+"Quan estigues preparat, fes clic damunt del Tux i conversarem en codi Morse."
 
 #: activities/morse_code/MorseCode.qml:331
 #, qt-format
@@ -19026,7 +19026,7 @@ msgid ""
 "the empty spots of the board (by clicking on the spots)."
 msgstr ""
 "Tu i en Tux comenceu amb 9 peces cadascun, i fareu torns per a posar-les en "
-"els espais buits del tauler (fent clic en els punts)."
+"els espais buits del tauler (fent clic damunt dels punts)."
 
 # skip-rule: kct-remove
 #: activities/nine_men_morris/nine_men_morris.js:33
@@ -21425,7 +21425,7 @@ msgid ""
 "Function</b> label."
 msgstr ""
 "- Per a <b>canviar</b> entre l'<b>Àrea del procediment</b> i l'<b>Àrea de "
-"funcions principals</b> per a afegir el codi, fes clic sobre l'etiqueta "
+"funcions principals</b> per a afegir el codi, fes clic damunt de l'etiqueta "
 "<b>Procediment</b> o <b>Funció principal</b>."
 
 #: activities/programmingMaze/programmingMaze.js:123
@@ -21450,8 +21450,8 @@ msgid ""
 "label."
 msgstr ""
 "- Per a <b>canviar</b> entre l'<b>Àrea del bucle</b> i l'<b>Àrea de funcions "
-"principals</b> per a afegir el codi, fes clic sobre l'etiqueta <b>Bucle</b> "
-"o <b>Funció principal</b>."
+"principals</b> per a afegir el codi, fes clic damunt de l'etiqueta <b>Bucle</"
+"b> o <b>Funció principal</b>."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:190
 #, qt-format
@@ -24470,7 +24470,7 @@ msgid ""
 "closeness by following the closeness meter. If the hint button is visible, "
 "you can click on it to get a hint to find the answer."
 msgstr ""
-"Després d'haver fet clic a un planeta, el mesurador d'apropament que hi ha "
+"Després d'haver fet clic en un planeta, el mesurador d'apropament que hi ha "
 "en el cantó inferior dret de la pantalla, representarà el grau de correcció "
 "de la resposta seleccionada. La resposta menys correcta es representarà en "
 "un 1%. Torna-ho a provar fins que arribes a un apropament del 100% seguint "
@@ -25008,7 +25008,7 @@ msgid ""
 "a dart. When all your darts are thrown, you are asked to count your score. "
 "Enter the score with the keyboard."
 msgstr ""
-"Comproveu la velocitat i la direcció del vent, després feu clic sobre "
+"Comproveu la velocitat i la direcció del vent, després feu clic damunt de "
 "l'objectiu per a llançar un dard. Quan hàgeu llançat tots els dards, "
 "apareixerà una finestra que vos demanarà que compteu la vostra puntuació. "
 "Introduïu la puntuació amb el teclat."
