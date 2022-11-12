@@ -2837,14 +2837,14 @@ msgctxt "FirstScreen|"
 msgid "Braille: Unlocking the Code"
 msgstr "Brajica: Odklepanje kode"
 
-#: activities/braille_alphabets/FirstScreen.qml:54
+#: activities/braille_alphabets/FirstScreen.qml:53
 msgctxt "FirstScreen|"
 msgid ""
 "The braille system is a method that is used by blind people to read and "
 "write."
 msgstr "Brajica je pisava, ki jo slepi ljudje uporabijo za branje in pisanje."
 
-#: activities/braille_alphabets/FirstScreen.qml:55
+#: activities/braille_alphabets/FirstScreen.qml:54
 msgctxt "FirstScreen|"
 msgid ""
 "Each braille character, or cell, is made up of six dot positions, arranged "
@@ -2855,7 +2855,7 @@ msgstr ""
 "razporejene v dveh stolpcih in treh vrsticah. Kot lahko vidite na levi, "
 "jevsaka pika označena s številom od 1 do 6."
 
-#: activities/braille_alphabets/FirstScreen.qml:79
+#: activities/braille_alphabets/FirstScreen.qml:78
 msgctxt "FirstScreen|"
 msgid "When you are ready, click on me and try reproducing braille characters."
 msgstr ""
@@ -18287,7 +18287,7 @@ msgctxt "FirstScreen|"
 msgid "Exploring Morse Code"
 msgstr "Raziskovanje Morsejeve kode"
 
-#: activities/morse_code/FirstScreen.qml:52
+#: activities/morse_code/FirstScreen.qml:64
 msgctxt "FirstScreen|"
 msgid ""
 "Morse code was developed by Samuel Morse. It is a method of transmitting "
@@ -18296,7 +18296,7 @@ msgstr ""
 "Morsejevo kodo je razvil Samuel Morse. Je metoda prenašanja besedne "
 "informacije kot zaporedja zvokov, bliskov ali klikov."
 
-#: activities/morse_code/FirstScreen.qml:53
+#: activities/morse_code/FirstScreen.qml:65
 msgctxt "FirstScreen|"
 msgid ""
 "Each Morse code symbol represents either a text character (letter or "
@@ -18322,13 +18322,13 @@ msgstr ""
 "Ko boste pripravljeni, kliknite na Tuxa in se bomo pogovarjali v Morsejevi "
 "kodi."
 
-#: activities/morse_code/MorseCode.qml:331
+#: activities/morse_code/MorseCode.qml:335
 #, qt-format
 msgctxt "MorseCode|"
 msgid "Morse value: %1"
 msgstr "Morsejeva vrednost: %1"
 
-#: activities/morse_code/MorseCode.qml:332
+#: activities/morse_code/MorseCode.qml:336
 #, qt-format
 msgctxt "MorseCode|"
 msgid "Alphabet/Numeric value: %1"

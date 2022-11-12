@@ -2814,7 +2814,7 @@ msgctxt "FirstScreen|"
 msgid "Braille: Unlocking the Code"
 msgstr "Braille: Ag Briseadh an Chóid"
 
-#: activities/braille_alphabets/FirstScreen.qml:54
+#: activities/braille_alphabets/FirstScreen.qml:53
 msgctxt "FirstScreen|"
 msgid ""
 "The braille system is a method that is used by blind people to read and "
@@ -2823,7 +2823,7 @@ msgstr ""
 "Is bealach é an córas Braille a úsáideann daoine dalla le rudaí a léamh agus "
 "a scríobh."
 
-#: activities/braille_alphabets/FirstScreen.qml:55
+#: activities/braille_alphabets/FirstScreen.qml:54
 msgctxt "FirstScreen|"
 msgid ""
 "Each braille character, or cell, is made up of six dot positions, arranged "
@@ -2835,7 +2835,7 @@ msgstr ""
 "Mar a fheiceann tú ar chlé, déantar tagairt do gach ponc leis na huimhreacha "
 "ó 1 go 6."
 
-#: activities/braille_alphabets/FirstScreen.qml:79
+#: activities/braille_alphabets/FirstScreen.qml:78
 msgctxt "FirstScreen|"
 msgid "When you are ready, click on me and try reproducing braille characters."
 msgstr ""
@@ -19201,14 +19201,14 @@ msgctxt "FirstScreen|"
 msgid "Exploring Morse Code"
 msgstr ""
 
-#: activities/morse_code/FirstScreen.qml:52
+#: activities/morse_code/FirstScreen.qml:64
 msgctxt "FirstScreen|"
 msgid ""
 "Morse code was developed by Samuel Morse. It is a method of transmitting "
 "text information as a series of on-off tones, lights, or clicks."
 msgstr ""
 
-#: activities/morse_code/FirstScreen.qml:53
+#: activities/morse_code/FirstScreen.qml:65
 msgctxt "FirstScreen|"
 msgid ""
 "Each Morse code symbol represents either a text character (letter or "
@@ -19231,7 +19231,7 @@ msgstr ""
 "Nuair atá tú réidh, cliceáil orm agus bain triail as carachtair Braille a "
 "athdhéanamh."
 
-#: activities/morse_code/MorseCode.qml:331
+#: activities/morse_code/MorseCode.qml:335
 #, fuzzy, qt-format
 #| msgctxt "RomanNumerals|"
 #| msgid "Roman value: %1"
@@ -19239,7 +19239,7 @@ msgctxt "MorseCode|"
 msgid "Morse value: %1"
 msgstr "Luach Rómhánach: %1"
 
-#: activities/morse_code/MorseCode.qml:332
+#: activities/morse_code/MorseCode.qml:336
 #, fuzzy, qt-format
 #| msgctxt "RomanNumerals|"
 #| msgid "Arabic value: %1"

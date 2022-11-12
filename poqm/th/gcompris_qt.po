@@ -2900,7 +2900,7 @@ msgctxt "FirstScreen|"
 msgid "Braille: Unlocking the Code"
 msgstr "อักษรเบรลล์ : การถอดรหัส"
 
-#: activities/braille_alphabets/FirstScreen.qml:54
+#: activities/braille_alphabets/FirstScreen.qml:53
 #, fuzzy
 #| msgctxt "FirstScreen|"
 #| msgid ""
@@ -2912,7 +2912,7 @@ msgid ""
 "write."
 msgstr "อักษรเบรลล์เป็นวิธีการที่ผู้พิการทางสายตาใช้ในการอ่านและเขียน"
 
-#: activities/braille_alphabets/FirstScreen.qml:55
+#: activities/braille_alphabets/FirstScreen.qml:54
 #, fuzzy
 #| msgctxt "FirstScreen|"
 #| msgid ""
@@ -2928,7 +2928,7 @@ msgstr ""
 "อักษรเบรลล์แต่ละตัวหรือช่อง ประกอบด้วยจุด 6 จุดเรียงเป็นรูปสี่เหลี่่ยม โดยเรียงเป็นสองคอลัมน์ "
 "คอลัมน์ละสามจุด ดังภาพทางซ้าย แต่ละจุดจะอ้างอิงด้วยเลข 1 ถึง 6"
 
-#: activities/braille_alphabets/FirstScreen.qml:79
+#: activities/braille_alphabets/FirstScreen.qml:78
 #, fuzzy
 #| msgctxt "FirstScreen|"
 #| msgid ""
@@ -18941,14 +18941,14 @@ msgctxt "FirstScreen|"
 msgid "Exploring Morse Code"
 msgstr ""
 
-#: activities/morse_code/FirstScreen.qml:52
+#: activities/morse_code/FirstScreen.qml:64
 msgctxt "FirstScreen|"
 msgid ""
 "Morse code was developed by Samuel Morse. It is a method of transmitting "
 "text information as a series of on-off tones, lights, or clicks."
 msgstr ""
 
-#: activities/morse_code/FirstScreen.qml:53
+#: activities/morse_code/FirstScreen.qml:65
 msgctxt "FirstScreen|"
 msgid ""
 "Each Morse code symbol represents either a text character (letter or "
@@ -18969,13 +18969,13 @@ msgctxt "FirstScreen|"
 msgid "When you are ready, click on Tux and we will converse in Morse code."
 msgstr "ถ้าคุณพร้อมแล้ว ก็คลิกที่ฉัน เราจะได้ลองสร้างอักษรเบรลล์กัน"
 
-#: activities/morse_code/MorseCode.qml:331
+#: activities/morse_code/MorseCode.qml:335
 #, qt-format
 msgctxt "MorseCode|"
 msgid "Morse value: %1"
 msgstr ""
 
-#: activities/morse_code/MorseCode.qml:332
+#: activities/morse_code/MorseCode.qml:336
 #, qt-format
 msgctxt "MorseCode|"
 msgid "Alphabet/Numeric value: %1"

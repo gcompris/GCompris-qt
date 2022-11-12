@@ -2797,7 +2797,7 @@ msgctxt "FirstScreen|"
 msgid "Braille: Unlocking the Code"
 msgstr "Braille : Otključavanje koda"
 
-#: activities/braille_alphabets/FirstScreen.qml:54
+#: activities/braille_alphabets/FirstScreen.qml:53
 #, fuzzy
 msgctxt "FirstScreen|"
 msgid ""
@@ -2806,7 +2806,7 @@ msgid ""
 msgstr ""
 "Braille sistem je metoda koja se koristi da slijepe osobe čitaju i pišu."
 
-#: activities/braille_alphabets/FirstScreen.qml:55
+#: activities/braille_alphabets/FirstScreen.qml:54
 #, fuzzy
 msgctxt "FirstScreen|"
 msgid ""
@@ -2819,7 +2819,7 @@ msgstr ""
 "tačke. Kao što se vidi na lijevoj strani, svaka kolona upućuje na tačke 1 - "
 "6."
 
-#: activities/braille_alphabets/FirstScreen.qml:79
+#: activities/braille_alphabets/FirstScreen.qml:78
 #, fuzzy
 msgctxt "FirstScreen|"
 msgid "When you are ready, click on me and try reproducing braille characters."
@@ -18094,14 +18094,14 @@ msgctxt "FirstScreen|"
 msgid "Exploring Morse Code"
 msgstr ""
 
-#: activities/morse_code/FirstScreen.qml:52
+#: activities/morse_code/FirstScreen.qml:64
 msgctxt "FirstScreen|"
 msgid ""
 "Morse code was developed by Samuel Morse. It is a method of transmitting "
 "text information as a series of on-off tones, lights, or clicks."
 msgstr ""
 
-#: activities/morse_code/FirstScreen.qml:53
+#: activities/morse_code/FirstScreen.qml:65
 msgctxt "FirstScreen|"
 msgid ""
 "Each Morse code symbol represents either a text character (letter or "
@@ -18121,13 +18121,13 @@ msgstr ""
 "Kada ste spremni, kliknite na mene i pokušajte repodrukcije Braille "
 "karaktera."
 
-#: activities/morse_code/MorseCode.qml:331
+#: activities/morse_code/MorseCode.qml:335
 #, qt-format
 msgctxt "MorseCode|"
 msgid "Morse value: %1"
 msgstr ""
 
-#: activities/morse_code/MorseCode.qml:332
+#: activities/morse_code/MorseCode.qml:336
 #, qt-format
 msgctxt "MorseCode|"
 msgid "Alphabet/Numeric value: %1"

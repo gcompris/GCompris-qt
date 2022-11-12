@@ -2902,7 +2902,7 @@ msgctxt "FirstScreen|"
 msgid "Braille: Unlocking the Code"
 msgstr "ப்ரெய்ல் : குறியாக்கத்தை பூட்டு திறத்தல்"
 
-#: activities/braille_alphabets/FirstScreen.qml:54
+#: activities/braille_alphabets/FirstScreen.qml:53
 #, fuzzy
 #| msgctxt "FirstScreen|"
 #| msgid ""
@@ -2914,7 +2914,7 @@ msgid ""
 "write."
 msgstr "ப்ரெய்ல் அமைப்பு பார்வை இல்லாதவர் படிக்க எழுத பயன்படுத்தும் அமைப்பு"
 
-#: activities/braille_alphabets/FirstScreen.qml:55
+#: activities/braille_alphabets/FirstScreen.qml:54
 #, fuzzy
 #| msgctxt "FirstScreen|"
 #| msgid ""
@@ -2930,7 +2930,7 @@ msgstr ""
 "ஒவ்வொரு ப்ரெய்லி எழுத்துருவும் ஆறு புள்ளி இடங்களை கொண்டது. ஒரு செவ்வகத்தில் மூன்று "
 "புள்ளிகள் இரண்டு நெடு பத்திகள் என அமைக்கப்பட்டது."
 
-#: activities/braille_alphabets/FirstScreen.qml:79
+#: activities/braille_alphabets/FirstScreen.qml:78
 #, fuzzy
 #| msgctxt "FirstScreen|"
 #| msgid ""
@@ -18975,14 +18975,14 @@ msgctxt "FirstScreen|"
 msgid "Exploring Morse Code"
 msgstr ""
 
-#: activities/morse_code/FirstScreen.qml:52
+#: activities/morse_code/FirstScreen.qml:64
 msgctxt "FirstScreen|"
 msgid ""
 "Morse code was developed by Samuel Morse. It is a method of transmitting "
 "text information as a series of on-off tones, lights, or clicks."
 msgstr ""
 
-#: activities/morse_code/FirstScreen.qml:53
+#: activities/morse_code/FirstScreen.qml:65
 msgctxt "FirstScreen|"
 msgid ""
 "Each Morse code symbol represents either a text character (letter or "
@@ -19004,13 +19004,13 @@ msgid "When you are ready, click on Tux and we will converse in Morse code."
 msgstr ""
 "நீங்க தயார் ஆனதும் என் மேல சொடுக்கி ப்ரெய்ல் எழுத்த்ருக்களை உருவாக்க முயற்சி செய்யுங்க."
 
-#: activities/morse_code/MorseCode.qml:331
+#: activities/morse_code/MorseCode.qml:335
 #, qt-format
 msgctxt "MorseCode|"
 msgid "Morse value: %1"
 msgstr ""
 
-#: activities/morse_code/MorseCode.qml:332
+#: activities/morse_code/MorseCode.qml:336
 #, qt-format
 msgctxt "MorseCode|"
 msgid "Alphabet/Numeric value: %1"
