@@ -25631,9 +25631,8 @@ msgstr ""
 ">Francesc Vilches &lt;francesc.vilches AT gmail DOT com&gt; (2007-2008)<br/"
 ">i Antoni Bella &lt;antonibella5 AT yahoo DOT com&gt; (2015-2022).<br /"
 "><b>Atenció</b>: Cal ajuda per a la seva traducció al valencià. Volem que "
-"esta sigui correcta i potser voldreu que les veus també estiguen en "
-"valencià. Escriviu-nos a la llista de correu &lt;kde-i18n-ca@kde.org&gt; i "
-"en parlarem."
+"esta siga correcta i potser voldreu que les veus també estiguen en valencià. "
+"Escriviu-nos a la llista de correu &lt;kde-i18n-ca@kde.org&gt; i en parlarem."
 
 #: core/DialogAbout.qml:55
 #, qt-format
