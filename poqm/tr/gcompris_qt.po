@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2022-11-02 11:17+0300\n"
+"PO-Revision-Date: 2022-11-15 05:02+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 22.08.2\n"
+"X-Generator: Lokalize 22.08.3\n"
 "X-Qt-Contexts: true\n"
 
 #. Activity title
@@ -17788,7 +17788,7 @@ msgstr "Çıkarma tablosu 9."
 #: activities/memory-math-minus/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Subtraction memory game"
-msgstr "Çıkartma işlemi ile hafıza oyunu"
+msgstr "Çıkarma işlemi bellek oyunu"
 
 #. Help title
 #: activities/memory-math-minus/ActivityInfo.qml:17

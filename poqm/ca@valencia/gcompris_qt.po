@@ -14,8 +14,8 @@ msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2014-12-25 01:10+0000\n"
-"PO-Revision-Date: 2022-11-06 11:30+0100\n"
-"Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
+"PO-Revision-Date: 2022-11-15 18:09+0100\n"
+"Last-Translator: Antoni Bella <antonibella5@yahoo.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca@valencia\n"
 "MIME-Version: 1.0\n"
@@ -4329,7 +4329,7 @@ msgid ""
 "for 3 seconds."
 msgstr ""
 "Un clic únic en el botó de desfer desfarà un moviment. Un clic únic en el "
-"botó de refer refarà un moviment. Per desfer tots els moviments, premeu i "
+"botó de refer refarà un moviment. Per a desfer tots els moviments, premeu i "
 "manteniu premut el botó de desfer durant 3 segons."
 
 #: activities/chess/ActivityInfo.qml:33
@@ -7627,8 +7627,8 @@ msgstr ""
 "precàriament contra el penya-segat per damunt del canó d'Alzou. Un dels "
 "pobles més famosos d'Europa, Ròcamador aparentment desafia les lleis de la "
 "gravetat. La ciutadella vertiginosa de la fe es resumix millor amb una vella "
-"dita local: «esglésies a les cases, roques a les esglésies, el castell sobre "
-"la roca»."
+"dita local: «esglésies en les cases, roques en les esglésies, el castell "
+"sobre la roca»."
 
 #: activities/explore_monuments/resource/board/board3.qml:95
 #: activities/explore_monuments/resource/board/board3.qml:98
@@ -18471,7 +18471,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Thanks to the Tuxpaint team for providing the following sounds under GPL:"
 msgstr ""
-"Gràcies a l'equip Tuxpaint per proporcionar els següents sons davall la GPL:"
+"Gràcies a l'equip Tuxpaint per proporcionar els sons següents davall la GPL:"
 
 #: activities/mining/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
@@ -19756,9 +19756,9 @@ msgstr ""
 "una de les sis cases davall el seu control. El jugador eliminarà totes les "
 "llavors d'esta casa i les distribuirà, caent una en cada casa en sentit "
 "antihorari des d'esta casa, en un procés anomenat sembrat. Les llavors no es "
-"distribuiran a les cases en la puntuació final, ni dins de la casa on "
-"s'extrauen. La casa inicial sempre es deixarà buida -si contenia 12 (o més) "
-"llavors, s'ometrà i la dotzena llavor es col·locarà en la casa següent-."
+"distribuiran a dins de les cases en la puntuació final, ni dins de la casa "
+"on s'extrauen. La casa inicial sempre es deixarà buida -si contenia 12 (o "
+"més) llavors, s'ometrà i la dotzena llavor es col·locarà en la casa següent-."
 
 #: activities/oware/ActivityInfo.qml:24
 #: activities/oware_2players/ActivityInfo.qml:24
@@ -25691,9 +25691,9 @@ msgstr ""
 "de KDE, espais de treball i aplicacions.<br /><br />KDE és una iniciativa "
 "cooperativa en la qual cap entitat individual controla els esforços o els "
 "productes de KDE per a excloure'n d'altres. Donem la benvinguda a tothom per "
-"afegir-se i col·laborar amb KDE, incloent-vos-hi.<br /><br />Visiteu <a href="
-"\"%2\">%2</a> per a més informació sobre la comunitat KDE i el programari "
-"que produïm."
+"a afegir-se i col·laborar amb KDE, incloent-vos-hi.<br /><br />Visiteu <a "
+"href=\"%2\">%2</a> per a més informació sobre la comunitat KDE i el "
+"programari que produïm."
 
 #: core/DialogAbout.qml:96
 #, qt-format
