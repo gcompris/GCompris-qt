@@ -10,7 +10,6 @@ farm-animals.svg
 horse.svg
 owl.svg
 pig.svg
-rooster.svg
 sheep.svg
 
 Copyright: 2000, 2008 Bruno Coudoin and others
@@ -24,7 +23,6 @@ duck.ogg
 horse.ogg
 owl.ogg
 pig.ogg
-rooster.ogg
 sheep.ogg
 
 Copyright: Loliloli
@@ -74,12 +72,6 @@ License: Public Domain
 Source: https://commons.wikimedia.org/wiki/File:Pig_1,_Savaii,_Samoa.JPG
 Files:
 pig.webp
-
-Copyright: Jean Beaufort
-License: CC0-1.0
-Source: https://commons.wikimedia.org/wiki/File:Lone_Rooster.jpg
-Files:
-rooster.webp
 
 Copyright: Rob Mitchell
 License: CC0-1.0
