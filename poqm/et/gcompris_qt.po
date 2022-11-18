@@ -6526,13 +6526,19 @@ msgstr "Hobune"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:22
 msgctxt "board1|"
-msgid "The horse goes 'neigh! neigh!'. Horses usually sleep standing up."
-msgstr "Hobune hirnub ihaahaa-ihaahaa. Hobused magavad tavaliselt seistes."
+msgid ""
+"The horse goes 'neigh'. Horses are adapted to run, allowing them to quickly "
+"escape predators, and possess an excellent sense of balance. They have "
+"single-toed hooves. "
+msgstr ""
 
 #: activities/explore_farm_animals/resource/board/board1.qml:25
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "This animal's ancestors were wolves."
 msgctxt "board1|"
-msgid "You can ride on the back of this animal!"
-msgstr "Selle looma seljas saab sõita!"
+msgid "This animal has single-toed hooves."
+msgstr "Selle looma esivanemad olid hundid."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:33
 msgctxt "board1|"
@@ -6542,16 +6548,17 @@ msgstr "Kana"
 #: activities/explore_farm_animals/resource/board/board1.qml:34
 msgctxt "board1|"
 msgid ""
-"The chicken goes 'luck, cackle, cluck'. Chickens have over 200 different "
-"noises they can use to communicate."
+"The chicken goes 'cluck'. Domestic chickens have wings, but are not capable "
+"of long-distance flight. They have a comb on their head."
 msgstr ""
-"Kanad teevad häält klok-klok-klok. Nad oskavad rohkem kui 200 häält, mida "
-"kasutavad omavahel suhtlemiseks."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:37
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "This animal likes to come out at night."
 msgctxt "board1|"
-msgid "This animal lays eggs."
-msgstr "See loom muneb."
+msgid "This animal has a comb on its head."
+msgstr "Sellele loomale meeldib ringi liikuda öösel."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:45
 msgctxt "board1|"
@@ -6561,16 +6568,15 @@ msgstr "Lehm"
 #: activities/explore_farm_animals/resource/board/board1.qml:46
 msgctxt "board1|"
 msgid ""
-"The cow goes 'moo! moo!'. Cows are herbivorous mammals. They graze all day "
-"in the meadow."
+"The cow goes 'moo'. Cows have a wide field of view of 330°. They have a well-"
+"developed sense of taste, with around 20,000 taste buds. They can detect "
+"odours 8km away."
 msgstr ""
-"Lehm teeb muu-muu. Lehmad söövad rohtu. Nad veedavad mäludes kogu päeva "
-"rohumaal."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:49
 msgctxt "board1|"
-msgid "You can drink the milk this animal produces."
-msgstr "Nende loomade piima juuakse."
+msgid "This animal has around 20,000 taste buds."
+msgstr ""
 
 #: activities/explore_farm_animals/resource/board/board1.qml:57
 msgctxt "board1|"
@@ -6580,16 +6586,18 @@ msgstr "Kass"
 #: activities/explore_farm_animals/resource/board/board1.qml:58
 msgctxt "board1|"
 msgid ""
-"The cat goes 'meow, meow'. Cats usually hate water because their fur doesn't "
-"stay warm when it is wet."
+"The cat goes 'meow'. Cats are valued by humans for companionship and their "
+"ability to chase mice and other rodents. They purr to communicate various "
+"emotions."
 msgstr ""
-"Kass teeb mjäu-mjäu. Kassid tavaliselt vihkavad vett, sest nende karv ei "
-"hoia enam sooja, kui saab märjaks."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:61
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "This animal lays eggs."
 msgctxt "board1|"
-msgid "This pet likes chasing mice."
-msgstr "See loom armastab hiiri püüda."
+msgid "This animal can purr."
+msgstr "See loom muneb."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:69
 msgctxt "board1|"
@@ -6598,14 +6606,15 @@ msgstr "Siga"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:70
 msgctxt "board1|"
-msgid "The pig goes 'oink, oink'. Pigs are the 4th most intelligent animal."
+msgid ""
+"The pig goes 'oink'. Pigs wallow in the mud, mainly to control their body "
+"temperature."
 msgstr ""
-"Siga teeb ruik-ruik. Sead on loomade seas tarkuse poolest neljandal kohal."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:73
 msgctxt "board1|"
-msgid "This animal likes to lie in the mud."
-msgstr "Sellele loomale meeldib mudas püherdada."
+msgid "This animal wallows in the mud to control its body temperature."
+msgstr ""
 
 #: activities/explore_farm_animals/resource/board/board1.qml:81
 msgctxt "board1|"
@@ -6615,15 +6624,16 @@ msgstr "Part"
 #: activities/explore_farm_animals/resource/board/board1.qml:82
 msgctxt "board1|"
 msgid ""
-"The duck goes 'quack, quack'. Ducks have special features like webbed feet "
-"and produce an oil to make their feathers 'waterproof'."
+"The duck goes 'quack'. Ducks are mostly aquatic birds. They have waterproof "
+"feathers and webbed feet which enable them to swim on the water."
 msgstr ""
-"Part teeb prääks-prääks. Partidel on erilised ujulestaga jalad ja nad "
-"toodavad õli, mis muudab nende suled veekindlaks."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:85
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "This animal has webbed feet so it can swim in the water."
 msgctxt "board1|"
-msgid "This animal has webbed feet so it can swim in the water."
+msgid "This animal has webbed feet and can swim on the water."
 msgstr "Sel loomal on ujulestad, mille abil ta saab vees ujuda."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:93
@@ -6632,15 +6642,24 @@ msgid "Owl"
 msgstr "Öökull"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:94
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid ""
+#| "The owl goes 'hoo. hoo.' The owl has excellent vision and hearing at "
+#| "night."
 msgctxt "board1|"
 msgid ""
-"The owl goes 'hoo. hoo.' The owl has excellent vision and hearing at night."
+"The owl goes 'hoot'. Owls are nocturnal birds, they have excellent vision "
+"and hearing at night."
 msgstr ""
 "Öökull teeb uhuu-uhuu. Öökullil on öösel suurepärane nägemine ja kuulmine."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:97
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "This animal likes to come out at night."
 msgctxt "board1|"
-msgid "This animal likes to come out at night."
+msgid "This animal is a nocturnal bird."
 msgstr "Sellele loomale meeldib ringi liikuda öösel."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:105
@@ -6651,69 +6670,49 @@ msgstr "Koer"
 #: activities/explore_farm_animals/resource/board/board1.qml:106
 msgctxt "board1|"
 msgid ""
-"The dog goes 'bark! bark!'. Dogs are great human companions and usually "
-"enjoy love and attention."
+"The dog goes 'woof'. Dogs are probably the oldest domesticated species. They "
+"are descendants of the wolf."
 msgstr ""
-"Koer teeb auh-auh. Koerad on suurepärased inimese kaaslased ning neile "
-"meeldib, kui neid armastatakse ja hellitatakse."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:109
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "This animal is a close relative to the goat."
 msgctxt "board1|"
-msgid "This animal's ancestors were wolves."
-msgstr "Selle looma esivanemad olid hundid."
+msgid "This animal is a descendant of the wolf."
+msgstr "See loom on lähedalt sugulane kitsega."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:117
-msgctxt "board1|"
-msgid "Rooster"
-msgstr "Kukk"
-
-#: activities/explore_farm_animals/resource/board/board1.qml:118
-msgctxt "board1|"
-msgid ""
-"The rooster goes 'coc-a-doodle-doo!'. Roosters have been on farms for about "
-"5,000 years. Every morning it wakes the farm up with its noises."
-msgstr ""
-"Kukk teeb kikerikii. Kukkesid on talus peetud juba oma 5000 aastat. Nad "
-"äratavad igal hommikul kiremisega kogu talu üles."
-
-#: activities/explore_farm_animals/resource/board/board1.qml:121
-msgctxt "board1|"
-msgid "This animal wakes the farm up in the morning."
-msgstr "See loom äratab hommikuti talurahva ja -loomad."
-
-#: activities/explore_farm_animals/resource/board/board1.qml:129
 msgctxt "board1|"
 msgid "Sheep"
 msgstr "Lammas"
 
-#: activities/explore_farm_animals/resource/board/board1.qml:130
+#: activities/explore_farm_animals/resource/board/board1.qml:118
 msgctxt "board1|"
 msgid ""
-"The sheep is a mammal that bears a fleece of wool. It is a grazing "
-"herbivore, bred for its wool, its meat, and its milk. The fleece can be "
-"removed and used to produce articles of clothing and blankets, among other "
-"things."
+"The sheep goes 'baa'. Most sheep breeds bear a fleece of wool. The fleece "
+"can be sheared and used to produce textile fibre."
 msgstr ""
-"Lammas on paksu villakihiga imetaja. Lammas on rohusööja, keda kasvatatakse "
-"villa, liha ja piima pärast. Villa saab ära lõigata ja sellest valmistada "
-"lisaks kõigele muule ka mitmesuguseid rõivaid ja muid riideesemeid."
 
-#: activities/explore_farm_animals/resource/board/board1.qml:133
+#: activities/explore_farm_animals/resource/board/board1.qml:121
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "This animal's ancestors were wolves."
 msgctxt "board1|"
-msgid "This animal is a close relative to the goat."
-msgstr "See loom on lähedalt sugulane kitsega."
+msgid "This animal produces wool."
+msgstr "Selle looma esivanemad olid hundid."
 
-#: activities/explore_farm_animals/resource/board/board1.qml:143
+#: activities/explore_farm_animals/resource/board/board1.qml:131
 msgctxt "board1|"
 msgid "Click on each farm animal to discover them."
 msgstr "Klõpsa taluloomal nendega tutvumiseks."
 
-#: activities/explore_farm_animals/resource/board/board1.qml:146
+#: activities/explore_farm_animals/resource/board/board1.qml:134
 msgctxt "board1|"
 msgid "Click on the farm animal that makes the sound you hear."
 msgstr "Klõpsa taluloomal, kes teeb kuuldavat häält."
 
-#: activities/explore_farm_animals/resource/board/board1.qml:149
+#: activities/explore_farm_animals/resource/board/board1.qml:137
 msgctxt "board1|"
 msgid "Click the animal that matches the description."
 msgstr "Klõpsa loomal, kes sobib kokku kirjeldusega."
@@ -25614,6 +25613,99 @@ msgstr "Jäta vahele"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Alusta"
+
+#~ msgctxt "board1|"
+#~ msgid "The horse goes 'neigh! neigh!'. Horses usually sleep standing up."
+#~ msgstr "Hobune hirnub ihaahaa-ihaahaa. Hobused magavad tavaliselt seistes."
+
+#~ msgctxt "board1|"
+#~ msgid "You can ride on the back of this animal!"
+#~ msgstr "Selle looma seljas saab sõita!"
+
+#~ msgctxt "board1|"
+#~ msgid ""
+#~ "The chicken goes 'luck, cackle, cluck'. Chickens have over 200 different "
+#~ "noises they can use to communicate."
+#~ msgstr ""
+#~ "Kanad teevad häält klok-klok-klok. Nad oskavad rohkem kui 200 häält, mida "
+#~ "kasutavad omavahel suhtlemiseks."
+
+#~ msgctxt "board1|"
+#~ msgid ""
+#~ "The cow goes 'moo! moo!'. Cows are herbivorous mammals. They graze all "
+#~ "day in the meadow."
+#~ msgstr ""
+#~ "Lehm teeb muu-muu. Lehmad söövad rohtu. Nad veedavad mäludes kogu päeva "
+#~ "rohumaal."
+
+#~ msgctxt "board1|"
+#~ msgid "You can drink the milk this animal produces."
+#~ msgstr "Nende loomade piima juuakse."
+
+#~ msgctxt "board1|"
+#~ msgid ""
+#~ "The cat goes 'meow, meow'. Cats usually hate water because their fur "
+#~ "doesn't stay warm when it is wet."
+#~ msgstr ""
+#~ "Kass teeb mjäu-mjäu. Kassid tavaliselt vihkavad vett, sest nende karv ei "
+#~ "hoia enam sooja, kui saab märjaks."
+
+#~ msgctxt "board1|"
+#~ msgid "This pet likes chasing mice."
+#~ msgstr "See loom armastab hiiri püüda."
+
+#~ msgctxt "board1|"
+#~ msgid "The pig goes 'oink, oink'. Pigs are the 4th most intelligent animal."
+#~ msgstr ""
+#~ "Siga teeb ruik-ruik. Sead on loomade seas tarkuse poolest neljandal kohal."
+
+#~ msgctxt "board1|"
+#~ msgid "This animal likes to lie in the mud."
+#~ msgstr "Sellele loomale meeldib mudas püherdada."
+
+#~ msgctxt "board1|"
+#~ msgid ""
+#~ "The duck goes 'quack, quack'. Ducks have special features like webbed "
+#~ "feet and produce an oil to make their feathers 'waterproof'."
+#~ msgstr ""
+#~ "Part teeb prääks-prääks. Partidel on erilised ujulestaga jalad ja nad "
+#~ "toodavad õli, mis muudab nende suled veekindlaks."
+
+#~ msgctxt "board1|"
+#~ msgid ""
+#~ "The dog goes 'bark! bark!'. Dogs are great human companions and usually "
+#~ "enjoy love and attention."
+#~ msgstr ""
+#~ "Koer teeb auh-auh. Koerad on suurepärased inimese kaaslased ning neile "
+#~ "meeldib, kui neid armastatakse ja hellitatakse."
+
+#~ msgctxt "board1|"
+#~ msgid "Rooster"
+#~ msgstr "Kukk"
+
+#~ msgctxt "board1|"
+#~ msgid ""
+#~ "The rooster goes 'coc-a-doodle-doo!'. Roosters have been on farms for "
+#~ "about 5,000 years. Every morning it wakes the farm up with its noises."
+#~ msgstr ""
+#~ "Kukk teeb kikerikii. Kukkesid on talus peetud juba oma 5000 aastat. Nad "
+#~ "äratavad igal hommikul kiremisega kogu talu üles."
+
+#~ msgctxt "board1|"
+#~ msgid "This animal wakes the farm up in the morning."
+#~ msgstr "See loom äratab hommikuti talurahva ja -loomad."
+
+#~ msgctxt "board1|"
+#~ msgid ""
+#~ "The sheep is a mammal that bears a fleece of wool. It is a grazing "
+#~ "herbivore, bred for its wool, its meat, and its milk. The fleece can be "
+#~ "removed and used to produce articles of clothing and blankets, among "
+#~ "other things."
+#~ msgstr ""
+#~ "Lammas on paksu villakihiga imetaja. Lammas on rohusööja, keda "
+#~ "kasvatatakse villa, liha ja piima pärast. Villa saab ära lõigata ja "
+#~ "sellest valmistada lisaks kõigele muule ka mitmesuguseid rõivaid ja muid "
+#~ "riideesemeid."
 
 #~ msgctxt "ActivityInfo|"
 #~ msgid ""

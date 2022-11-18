@@ -7676,13 +7676,19 @@ msgstr "Kôň"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:22
 msgctxt "board1|"
-msgid "The horse goes 'neigh! neigh!'. Horses usually sleep standing up."
-msgstr "Kôň robí 'iha! iha!'. Kone zvyčajne spia v stoji."
+msgid ""
+"The horse goes 'neigh'. Horses are adapted to run, allowing them to quickly "
+"escape predators, and possess an excellent sense of balance. They have "
+"single-toed hooves. "
+msgstr ""
 
 #: activities/explore_farm_animals/resource/board/board1.qml:25
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "This animal's ancestors were wolves."
 msgctxt "board1|"
-msgid "You can ride on the back of this animal!"
-msgstr "Na chrbte tohto zvieraťa môžete jazdiť!"
+msgid "This animal has single-toed hooves."
+msgstr "Predkovia tohto zvieraťa boli vlky."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:33
 msgctxt "board1|"
@@ -7692,16 +7698,17 @@ msgstr "Kura"
 #: activities/explore_farm_animals/resource/board/board1.qml:34
 msgctxt "board1|"
 msgid ""
-"The chicken goes 'luck, cackle, cluck'. Chickens have over 200 different "
-"noises they can use to communicate."
+"The chicken goes 'cluck'. Domestic chickens have wings, but are not capable "
+"of long-distance flight. They have a comb on their head."
 msgstr ""
-"Kurča robí 'ko, ko, ko'. Kurčatá majú viac ako 200 rôznych zvukov, ktoré "
-"môžu používať na komunikáciu."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:37
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "This animal likes to come out at night."
 msgctxt "board1|"
-msgid "This animal lays eggs."
-msgstr "Toto zviera znáša vajcia."
+msgid "This animal has a comb on its head."
+msgstr "Toto zviera rado chodí von v noci."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:45
 msgctxt "board1|"
@@ -7711,15 +7718,15 @@ msgstr "Krava"
 #: activities/explore_farm_animals/resource/board/board1.qml:46
 msgctxt "board1|"
 msgid ""
-"The cow goes 'moo! moo!'. Cows are herbivorous mammals. They graze all day "
-"in the meadow."
+"The cow goes 'moo'. Cows have a wide field of view of 330°. They have a well-"
+"developed sense of taste, with around 20,000 taste buds. They can detect "
+"odours 8km away."
 msgstr ""
-"Krava robí 'mú! mú!'. Kravy sú bylinožravé cicavce. Celý deň sa pasú na lúke."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:49
 msgctxt "board1|"
-msgid "You can drink the milk this animal produces."
-msgstr "Môžete piť mlieko, ktoré produkuje toto zviera."
+msgid "This animal has around 20,000 taste buds."
+msgstr ""
 
 #: activities/explore_farm_animals/resource/board/board1.qml:57
 msgctxt "board1|"
@@ -7729,16 +7736,18 @@ msgstr "Mačka"
 #: activities/explore_farm_animals/resource/board/board1.qml:58
 msgctxt "board1|"
 msgid ""
-"The cat goes 'meow, meow'. Cats usually hate water because their fur doesn't "
-"stay warm when it is wet."
+"The cat goes 'meow'. Cats are valued by humans for companionship and their "
+"ability to chase mice and other rodents. They purr to communicate various "
+"emotions."
 msgstr ""
-"Mačka robí 'mňau, mňau'. Mačky obvykle nenávidia vodu, pretože ich srsť "
-"nezostane teplá, keď je mokrá."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:61
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "This animal lays eggs."
 msgctxt "board1|"
-msgid "This pet likes chasing mice."
-msgstr "Toto zviera naháňa myši."
+msgid "This animal can purr."
+msgstr "Toto zviera znáša vajcia."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:69
 msgctxt "board1|"
@@ -7747,13 +7756,15 @@ msgstr "Prasa"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:70
 msgctxt "board1|"
-msgid "The pig goes 'oink, oink'. Pigs are the 4th most intelligent animal."
-msgstr "Prasa robí 'kvík, kvík'. Prasa je 4. najinteligentnejšie zviera."
+msgid ""
+"The pig goes 'oink'. Pigs wallow in the mud, mainly to control their body "
+"temperature."
+msgstr ""
 
 #: activities/explore_farm_animals/resource/board/board1.qml:73
 msgctxt "board1|"
-msgid "This animal likes to lie in the mud."
-msgstr "Toto zviera rado leží v bahne."
+msgid "This animal wallows in the mud to control its body temperature."
+msgstr ""
 
 #: activities/explore_farm_animals/resource/board/board1.qml:81
 msgctxt "board1|"
@@ -7763,15 +7774,16 @@ msgstr "Kačka"
 #: activities/explore_farm_animals/resource/board/board1.qml:82
 msgctxt "board1|"
 msgid ""
-"The duck goes 'quack, quack'. Ducks have special features like webbed feet "
-"and produce an oil to make their feathers 'waterproof'."
+"The duck goes 'quack'. Ducks are mostly aquatic birds. They have waterproof "
+"feathers and webbed feet which enable them to swim on the water."
 msgstr ""
-"Kačica robí 'kvák, kvák'. Kačice majú špeciálne vlastnosti, ako sú nožičky s "
-"plávacou blanou, a vytvárajú olej, aby ich perie bolo 'nepremokavé'."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:85
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "This animal has webbed feet so it can swim in the water."
 msgctxt "board1|"
-msgid "This animal has webbed feet so it can swim in the water."
+msgid "This animal has webbed feet and can swim on the water."
 msgstr "Toto zviera má plávacie blany, takže môže plávať vo vode."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:93
@@ -7780,14 +7792,23 @@ msgid "Owl"
 msgstr "Sova"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:94
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid ""
+#| "The owl goes 'hoo. hoo.' The owl has excellent vision and hearing at "
+#| "night."
 msgctxt "board1|"
 msgid ""
-"The owl goes 'hoo. hoo.' The owl has excellent vision and hearing at night."
+"The owl goes 'hoot'. Owls are nocturnal birds, they have excellent vision "
+"and hearing at night."
 msgstr "Sova robí 'huhu, huhú'. Sova má vynikajúce videnie a sluch v noci."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:97
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "This animal likes to come out at night."
 msgctxt "board1|"
-msgid "This animal likes to come out at night."
+msgid "This animal is a nocturnal bird."
 msgstr "Toto zviera rado chodí von v noci."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:105
@@ -7798,69 +7819,49 @@ msgstr "Pes"
 #: activities/explore_farm_animals/resource/board/board1.qml:106
 msgctxt "board1|"
 msgid ""
-"The dog goes 'bark! bark!'. Dogs are great human companions and usually "
-"enjoy love and attention."
+"The dog goes 'woof'. Dogs are probably the oldest domesticated species. They "
+"are descendants of the wolf."
 msgstr ""
-"Pes robí 'hav-hav'. Psy sú skvelými ľudskými spoločníkmi a zvyčajne sa tešia "
-"láske a pozornosti."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:109
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "This animal is a close relative to the goat."
 msgctxt "board1|"
-msgid "This animal's ancestors were wolves."
-msgstr "Predkovia tohto zvieraťa boli vlky."
+msgid "This animal is a descendant of the wolf."
+msgstr "Toto zviera je blízko príbuzné koze."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:117
-msgctxt "board1|"
-msgid "Rooster"
-msgstr "Kohút"
-
-#: activities/explore_farm_animals/resource/board/board1.qml:118
-msgctxt "board1|"
-msgid ""
-"The rooster goes 'coc-a-doodle-doo!'. Roosters have been on farms for about "
-"5,000 years. Every morning it wakes the farm up with its noises."
-msgstr ""
-"Kohút robí 'kikirikí'. Kohúti sú na farmách asi 5 000 rokov. Každé ráno "
-"prebúdza farmu svojimi zvukmi."
-
-#: activities/explore_farm_animals/resource/board/board1.qml:121
-msgctxt "board1|"
-msgid "This animal wakes the farm up in the morning."
-msgstr "Toto zviera budí farmu každé ráno."
-
-#: activities/explore_farm_animals/resource/board/board1.qml:129
 msgctxt "board1|"
 msgid "Sheep"
 msgstr "Ovca"
 
-#: activities/explore_farm_animals/resource/board/board1.qml:130
+#: activities/explore_farm_animals/resource/board/board1.qml:118
 msgctxt "board1|"
 msgid ""
-"The sheep is a mammal that bears a fleece of wool. It is a grazing "
-"herbivore, bred for its wool, its meat, and its milk. The fleece can be "
-"removed and used to produce articles of clothing and blankets, among other "
-"things."
+"The sheep goes 'baa'. Most sheep breeds bear a fleece of wool. The fleece "
+"can be sheared and used to produce textile fibre."
 msgstr ""
-"Ovca je cicavec, ktorý nosí vlnu. Je pasúci sa bylinožravec, ktorý sa chová "
-"na vlnu, mäso a mlieko. Vlna sa dá odstrániť a použiť na výrobu odevov a "
-"prikrývok okrem iného."
 
-#: activities/explore_farm_animals/resource/board/board1.qml:133
+#: activities/explore_farm_animals/resource/board/board1.qml:121
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "This animal's ancestors were wolves."
 msgctxt "board1|"
-msgid "This animal is a close relative to the goat."
-msgstr "Toto zviera je blízko príbuzné koze."
+msgid "This animal produces wool."
+msgstr "Predkovia tohto zvieraťa boli vlky."
 
-#: activities/explore_farm_animals/resource/board/board1.qml:143
+#: activities/explore_farm_animals/resource/board/board1.qml:131
 msgctxt "board1|"
 msgid "Click on each farm animal to discover them."
 msgstr "Kliknite na každé farmárske zviera, aby ste ich odhalili."
 
-#: activities/explore_farm_animals/resource/board/board1.qml:146
+#: activities/explore_farm_animals/resource/board/board1.qml:134
 msgctxt "board1|"
 msgid "Click on the farm animal that makes the sound you hear."
 msgstr "Kliknutie na farmárske zviera prehrá zvuk, ktorý môžete počuť."
 
-#: activities/explore_farm_animals/resource/board/board1.qml:149
+#: activities/explore_farm_animals/resource/board/board1.qml:137
 msgctxt "board1|"
 msgid "Click the animal that matches the description."
 msgstr "Kliknite na zviera, ktoré vyhovuje popisu."
@@ -29678,6 +29679,98 @@ msgstr "Preskočiť"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Spustiť"
+
+#~ msgctxt "board1|"
+#~ msgid "The horse goes 'neigh! neigh!'. Horses usually sleep standing up."
+#~ msgstr "Kôň robí 'iha! iha!'. Kone zvyčajne spia v stoji."
+
+#~ msgctxt "board1|"
+#~ msgid "You can ride on the back of this animal!"
+#~ msgstr "Na chrbte tohto zvieraťa môžete jazdiť!"
+
+#~ msgctxt "board1|"
+#~ msgid ""
+#~ "The chicken goes 'luck, cackle, cluck'. Chickens have over 200 different "
+#~ "noises they can use to communicate."
+#~ msgstr ""
+#~ "Kurča robí 'ko, ko, ko'. Kurčatá majú viac ako 200 rôznych zvukov, ktoré "
+#~ "môžu používať na komunikáciu."
+
+#~ msgctxt "board1|"
+#~ msgid ""
+#~ "The cow goes 'moo! moo!'. Cows are herbivorous mammals. They graze all "
+#~ "day in the meadow."
+#~ msgstr ""
+#~ "Krava robí 'mú! mú!'. Kravy sú bylinožravé cicavce. Celý deň sa pasú na "
+#~ "lúke."
+
+#~ msgctxt "board1|"
+#~ msgid "You can drink the milk this animal produces."
+#~ msgstr "Môžete piť mlieko, ktoré produkuje toto zviera."
+
+#~ msgctxt "board1|"
+#~ msgid ""
+#~ "The cat goes 'meow, meow'. Cats usually hate water because their fur "
+#~ "doesn't stay warm when it is wet."
+#~ msgstr ""
+#~ "Mačka robí 'mňau, mňau'. Mačky obvykle nenávidia vodu, pretože ich srsť "
+#~ "nezostane teplá, keď je mokrá."
+
+#~ msgctxt "board1|"
+#~ msgid "This pet likes chasing mice."
+#~ msgstr "Toto zviera naháňa myši."
+
+#~ msgctxt "board1|"
+#~ msgid "The pig goes 'oink, oink'. Pigs are the 4th most intelligent animal."
+#~ msgstr "Prasa robí 'kvík, kvík'. Prasa je 4. najinteligentnejšie zviera."
+
+#~ msgctxt "board1|"
+#~ msgid "This animal likes to lie in the mud."
+#~ msgstr "Toto zviera rado leží v bahne."
+
+#~ msgctxt "board1|"
+#~ msgid ""
+#~ "The duck goes 'quack, quack'. Ducks have special features like webbed "
+#~ "feet and produce an oil to make their feathers 'waterproof'."
+#~ msgstr ""
+#~ "Kačica robí 'kvák, kvák'. Kačice majú špeciálne vlastnosti, ako sú "
+#~ "nožičky s plávacou blanou, a vytvárajú olej, aby ich perie bolo "
+#~ "'nepremokavé'."
+
+#~ msgctxt "board1|"
+#~ msgid ""
+#~ "The dog goes 'bark! bark!'. Dogs are great human companions and usually "
+#~ "enjoy love and attention."
+#~ msgstr ""
+#~ "Pes robí 'hav-hav'. Psy sú skvelými ľudskými spoločníkmi a zvyčajne sa "
+#~ "tešia láske a pozornosti."
+
+#~ msgctxt "board1|"
+#~ msgid "Rooster"
+#~ msgstr "Kohút"
+
+#~ msgctxt "board1|"
+#~ msgid ""
+#~ "The rooster goes 'coc-a-doodle-doo!'. Roosters have been on farms for "
+#~ "about 5,000 years. Every morning it wakes the farm up with its noises."
+#~ msgstr ""
+#~ "Kohút robí 'kikirikí'. Kohúti sú na farmách asi 5 000 rokov. Každé ráno "
+#~ "prebúdza farmu svojimi zvukmi."
+
+#~ msgctxt "board1|"
+#~ msgid "This animal wakes the farm up in the morning."
+#~ msgstr "Toto zviera budí farmu každé ráno."
+
+#~ msgctxt "board1|"
+#~ msgid ""
+#~ "The sheep is a mammal that bears a fleece of wool. It is a grazing "
+#~ "herbivore, bred for its wool, its meat, and its milk. The fleece can be "
+#~ "removed and used to produce articles of clothing and blankets, among "
+#~ "other things."
+#~ msgstr ""
+#~ "Ovca je cicavec, ktorý nosí vlnu. Je pasúci sa bylinožravec, ktorý sa "
+#~ "chová na vlnu, mäso a mlieko. Vlna sa dá odstrániť a použiť na výrobu "
+#~ "odevov a prikrývok okrem iného."
 
 #, fuzzy
 #~| msgctxt "ActivityInfo|"

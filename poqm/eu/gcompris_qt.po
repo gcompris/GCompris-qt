@@ -6547,13 +6547,19 @@ msgstr "Zaldia"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:22
 msgctxt "board1|"
-msgid "The horse goes 'neigh! neigh!'. Horses usually sleep standing up."
-msgstr "Zaldiak «irrintzi» egiten du. Zaldiek gehienetan zutik egiten dute lo."
+msgid ""
+"The horse goes 'neigh'. Horses are adapted to run, allowing them to quickly "
+"escape predators, and possess an excellent sense of balance. They have "
+"single-toed hooves. "
+msgstr ""
 
 #: activities/explore_farm_animals/resource/board/board1.qml:25
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "This animal's ancestors were wolves."
 msgctxt "board1|"
-msgid "You can ride on the back of this animal!"
-msgstr "Abere honen bizkar gainean ibil zaitezke!"
+msgid "This animal has single-toed hooves."
+msgstr "Abere honen arbasoak otsoak ziren."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:33
 msgctxt "board1|"
@@ -6563,16 +6569,17 @@ msgstr "Oiloa"
 #: activities/explore_farm_animals/resource/board/board1.qml:34
 msgctxt "board1|"
 msgid ""
-"The chicken goes 'luck, cackle, cluck'. Chickens have over 200 different "
-"noises they can use to communicate."
+"The chicken goes 'cluck'. Domestic chickens have wings, but are not capable "
+"of long-distance flight. They have a comb on their head."
 msgstr ""
-"Oiloak «karaka-karaka» egiten du. Oiloek 200 soinu ezberdin dauzkate "
-"komunikatzeko erabil ditzaketenak."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:37
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "This animal likes to come out at night."
 msgctxt "board1|"
-msgid "This animal lays eggs."
-msgstr "Animalia honek arrautzak erruten ditu."
+msgid "This animal has a comb on its head."
+msgstr "Animalia honek gauez ateratzea atsegin du."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:45
 msgctxt "board1|"
@@ -6582,16 +6589,15 @@ msgstr "Behia"
 #: activities/explore_farm_animals/resource/board/board1.qml:46
 msgctxt "board1|"
 msgid ""
-"The cow goes 'moo! moo!'. Cows are herbivorous mammals. They graze all day "
-"in the meadow."
+"The cow goes 'moo'. Cows have a wide field of view of 330°. They have a well-"
+"developed sense of taste, with around 20,000 taste buds. They can detect "
+"odours 8km away."
 msgstr ""
-"Behiak «marru-marru» egiten du. Behiak ugaztun belarjaleak dira. Egun osoan "
-"bazkatzen dute belardian."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:49
 msgctxt "board1|"
-msgid "You can drink the milk this animal produces."
-msgstr "Abere honek sortzen duen esnea edan dezakezu."
+msgid "This animal has around 20,000 taste buds."
+msgstr ""
 
 #: activities/explore_farm_animals/resource/board/board1.qml:57
 msgctxt "board1|"
@@ -6601,16 +6607,18 @@ msgstr "Katua"
 #: activities/explore_farm_animals/resource/board/board1.qml:58
 msgctxt "board1|"
 msgid ""
-"The cat goes 'meow, meow'. Cats usually hate water because their fur doesn't "
-"stay warm when it is wet."
+"The cat goes 'meow'. Cats are valued by humans for companionship and their "
+"ability to chase mice and other rodents. They purr to communicate various "
+"emotions."
 msgstr ""
-"Katuak «mau-mau» egiten du. Katuek urari gorroto izan ohi diote, beraien "
-"azala ez delako bero mantentzen bustia dagoenean."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:61
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "This animal lays eggs."
 msgctxt "board1|"
-msgid "This pet likes chasing mice."
-msgstr "Etxabere honek saguak ehizatzea gustuko du."
+msgid "This animal can purr."
+msgstr "Animalia honek arrautzak erruten ditu."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:69
 msgctxt "board1|"
@@ -6619,15 +6627,15 @@ msgstr "Txerria"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:70
 msgctxt "board1|"
-msgid "The pig goes 'oink, oink'. Pigs are the 4th most intelligent animal."
+msgid ""
+"The pig goes 'oink'. Pigs wallow in the mud, mainly to control their body "
+"temperature."
 msgstr ""
-"Txerriak «kurrin-kurrin» egiten du. Txerriak laugarren animalia "
-"adimentsuenak dira."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:73
 msgctxt "board1|"
-msgid "This animal likes to lie in the mud."
-msgstr "Abere honek lokatzetan etzanda egotea gustuko du."
+msgid "This animal wallows in the mud to control its body temperature."
+msgstr ""
 
 #: activities/explore_farm_animals/resource/board/board1.qml:81
 msgctxt "board1|"
@@ -6637,16 +6645,16 @@ msgstr "Ahatea"
 #: activities/explore_farm_animals/resource/board/board1.qml:82
 msgctxt "board1|"
 msgid ""
-"The duck goes 'quack, quack'. Ducks have special features like webbed feet "
-"and produce an oil to make their feathers 'waterproof'."
+"The duck goes 'quack'. Ducks are mostly aquatic birds. They have waterproof "
+"feathers and webbed feet which enable them to swim on the water."
 msgstr ""
-"Ahateak «piru-piru» egiten du. Ahateek ezaugarri bereziak dituzte, beraien "
-"palmondo-itxurako hankak esaterako, eta lumak «iragazgaitz» mantentzeko "
-"olioa sortzen dute."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:85
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "This animal has webbed feet so it can swim in the water."
 msgctxt "board1|"
-msgid "This animal has webbed feet so it can swim in the water."
+msgid "This animal has webbed feet and can swim on the water."
 msgstr "Animalia honek palmondo-itxurako hankak ditu uretan igeri egiteko."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:93
@@ -6655,15 +6663,24 @@ msgid "Owl"
 msgstr "Hontza"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:94
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid ""
+#| "The owl goes 'hoo. hoo.' The owl has excellent vision and hearing at "
+#| "night."
 msgctxt "board1|"
 msgid ""
-"The owl goes 'hoo. hoo.' The owl has excellent vision and hearing at night."
+"The owl goes 'hoot'. Owls are nocturnal birds, they have excellent vision "
+"and hearing at night."
 msgstr ""
 "Hontzak «ulu» egiten du.  Hontzek gauez ikusmen eta entzumen bikaina dute."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:97
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "This animal likes to come out at night."
 msgctxt "board1|"
-msgid "This animal likes to come out at night."
+msgid "This animal is a nocturnal bird."
 msgstr "Animalia honek gauez ateratzea atsegin du."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:105
@@ -6674,70 +6691,50 @@ msgstr "Txakurra"
 #: activities/explore_farm_animals/resource/board/board1.qml:106
 msgctxt "board1|"
 msgid ""
-"The dog goes 'bark! bark!'. Dogs are great human companions and usually "
-"enjoy love and attention."
+"The dog goes 'woof'. Dogs are probably the oldest domesticated species. They "
+"are descendants of the wolf."
 msgstr ""
-"Txakurrak «zaunk-zaunk» egiten du. Txakurrak gizakien lagun onak dira eta "
-"maitasuna eta arreta gustuko izan ohi dute."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:109
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "This animal is a close relative to the goat."
 msgctxt "board1|"
-msgid "This animal's ancestors were wolves."
-msgstr "Abere honen arbasoak otsoak ziren."
+msgid "This animal is a descendant of the wolf."
+msgstr "Animalia hau ahuntzaren familia hurbilekoa da."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:117
-msgctxt "board1|"
-msgid "Rooster"
-msgstr "Oilarra"
-
-#: activities/explore_farm_animals/resource/board/board1.qml:118
-msgctxt "board1|"
-msgid ""
-"The rooster goes 'coc-a-doodle-doo!'. Roosters have been on farms for about "
-"5,000 years. Every morning it wakes the farm up with its noises."
-msgstr ""
-"Oilarrak \"kukurruku\" egiten du. Oilarrak baserrietan egon izan dira azken "
-"5.000 urteetan. Egunero baserria esnatzen dute euren deiadarrekin."
-
-#: activities/explore_farm_animals/resource/board/board1.qml:121
-msgctxt "board1|"
-msgid "This animal wakes the farm up in the morning."
-msgstr "Animalia honek goizaldean baserrikoak esnatzen ditu."
-
-#: activities/explore_farm_animals/resource/board/board1.qml:129
 msgctxt "board1|"
 msgid "Sheep"
 msgstr "Ardia"
 
-#: activities/explore_farm_animals/resource/board/board1.qml:130
+#: activities/explore_farm_animals/resource/board/board1.qml:118
 msgctxt "board1|"
 msgid ""
-"The sheep is a mammal that bears a fleece of wool. It is a grazing "
-"herbivore, bred for its wool, its meat, and its milk. The fleece can be "
-"removed and used to produce articles of clothing and blankets, among other "
-"things."
+"The sheep goes 'baa'. Most sheep breeds bear a fleece of wool. The fleece "
+"can be sheared and used to produce textile fibre."
 msgstr ""
-"Ardia artilea duen ugaztun bat da. Bazkatzen duen belarjalea da; bere "
-"artile, haragi eta esneagatik hazten da. Artilea kendu daiteke, jantziak eta "
-"mantak ekoizteko, besteak beste."
 
-#: activities/explore_farm_animals/resource/board/board1.qml:133
+#: activities/explore_farm_animals/resource/board/board1.qml:121
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "This animal's ancestors were wolves."
 msgctxt "board1|"
-msgid "This animal is a close relative to the goat."
-msgstr "Animalia hau ahuntzaren familia hurbilekoa da."
+msgid "This animal produces wool."
+msgstr "Abere honen arbasoak otsoak ziren."
 
-#: activities/explore_farm_animals/resource/board/board1.qml:143
+#: activities/explore_farm_animals/resource/board/board1.qml:131
 msgctxt "board1|"
 msgid "Click on each farm animal to discover them."
 msgstr "Egin klik baserriko animalia bakoitzaren gainean haiek ezagutzeko."
 
-#: activities/explore_farm_animals/resource/board/board1.qml:146
+#: activities/explore_farm_animals/resource/board/board1.qml:134
 msgctxt "board1|"
 msgid "Click on the farm animal that makes the sound you hear."
 msgstr ""
 "Egin klik entzuten duzun soinua egiten duen baserriko animaliaren gainean."
 
-#: activities/explore_farm_animals/resource/board/board1.qml:149
+#: activities/explore_farm_animals/resource/board/board1.qml:137
 msgctxt "board1|"
 msgid "Click the animal that matches the description."
 msgstr "Egin klik deskribapenarekin bat datorren animaliari."
@@ -25694,6 +25691,101 @@ msgstr "Saihestu"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Hasi"
+
+#~ msgctxt "board1|"
+#~ msgid "The horse goes 'neigh! neigh!'. Horses usually sleep standing up."
+#~ msgstr ""
+#~ "Zaldiak «irrintzi» egiten du. Zaldiek gehienetan zutik egiten dute lo."
+
+#~ msgctxt "board1|"
+#~ msgid "You can ride on the back of this animal!"
+#~ msgstr "Abere honen bizkar gainean ibil zaitezke!"
+
+#~ msgctxt "board1|"
+#~ msgid ""
+#~ "The chicken goes 'luck, cackle, cluck'. Chickens have over 200 different "
+#~ "noises they can use to communicate."
+#~ msgstr ""
+#~ "Oiloak «karaka-karaka» egiten du. Oiloek 200 soinu ezberdin dauzkate "
+#~ "komunikatzeko erabil ditzaketenak."
+
+#~ msgctxt "board1|"
+#~ msgid ""
+#~ "The cow goes 'moo! moo!'. Cows are herbivorous mammals. They graze all "
+#~ "day in the meadow."
+#~ msgstr ""
+#~ "Behiak «marru-marru» egiten du. Behiak ugaztun belarjaleak dira. Egun "
+#~ "osoan bazkatzen dute belardian."
+
+#~ msgctxt "board1|"
+#~ msgid "You can drink the milk this animal produces."
+#~ msgstr "Abere honek sortzen duen esnea edan dezakezu."
+
+#~ msgctxt "board1|"
+#~ msgid ""
+#~ "The cat goes 'meow, meow'. Cats usually hate water because their fur "
+#~ "doesn't stay warm when it is wet."
+#~ msgstr ""
+#~ "Katuak «mau-mau» egiten du. Katuek urari gorroto izan ohi diote, beraien "
+#~ "azala ez delako bero mantentzen bustia dagoenean."
+
+#~ msgctxt "board1|"
+#~ msgid "This pet likes chasing mice."
+#~ msgstr "Etxabere honek saguak ehizatzea gustuko du."
+
+#~ msgctxt "board1|"
+#~ msgid "The pig goes 'oink, oink'. Pigs are the 4th most intelligent animal."
+#~ msgstr ""
+#~ "Txerriak «kurrin-kurrin» egiten du. Txerriak laugarren animalia "
+#~ "adimentsuenak dira."
+
+#~ msgctxt "board1|"
+#~ msgid "This animal likes to lie in the mud."
+#~ msgstr "Abere honek lokatzetan etzanda egotea gustuko du."
+
+#~ msgctxt "board1|"
+#~ msgid ""
+#~ "The duck goes 'quack, quack'. Ducks have special features like webbed "
+#~ "feet and produce an oil to make their feathers 'waterproof'."
+#~ msgstr ""
+#~ "Ahateak «piru-piru» egiten du. Ahateek ezaugarri bereziak dituzte, "
+#~ "beraien palmondo-itxurako hankak esaterako, eta lumak «iragazgaitz» "
+#~ "mantentzeko olioa sortzen dute."
+
+#~ msgctxt "board1|"
+#~ msgid ""
+#~ "The dog goes 'bark! bark!'. Dogs are great human companions and usually "
+#~ "enjoy love and attention."
+#~ msgstr ""
+#~ "Txakurrak «zaunk-zaunk» egiten du. Txakurrak gizakien lagun onak dira eta "
+#~ "maitasuna eta arreta gustuko izan ohi dute."
+
+#~ msgctxt "board1|"
+#~ msgid "Rooster"
+#~ msgstr "Oilarra"
+
+#~ msgctxt "board1|"
+#~ msgid ""
+#~ "The rooster goes 'coc-a-doodle-doo!'. Roosters have been on farms for "
+#~ "about 5,000 years. Every morning it wakes the farm up with its noises."
+#~ msgstr ""
+#~ "Oilarrak \"kukurruku\" egiten du. Oilarrak baserrietan egon izan dira "
+#~ "azken 5.000 urteetan. Egunero baserria esnatzen dute euren deiadarrekin."
+
+#~ msgctxt "board1|"
+#~ msgid "This animal wakes the farm up in the morning."
+#~ msgstr "Animalia honek goizaldean baserrikoak esnatzen ditu."
+
+#~ msgctxt "board1|"
+#~ msgid ""
+#~ "The sheep is a mammal that bears a fleece of wool. It is a grazing "
+#~ "herbivore, bred for its wool, its meat, and its milk. The fleece can be "
+#~ "removed and used to produce articles of clothing and blankets, among "
+#~ "other things."
+#~ msgstr ""
+#~ "Ardia artilea duen ugaztun bat da. Bazkatzen duen belarjalea da; bere "
+#~ "artile, haragi eta esneagatik hazten da. Artilea kendu daiteke, jantziak "
+#~ "eta mantak ekoizteko, besteak beste."
 
 #~ msgctxt "ActivityInfo|"
 #~ msgid ""

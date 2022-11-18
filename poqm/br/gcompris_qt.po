@@ -6578,15 +6578,19 @@ msgstr "Marc'h"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:22
 msgctxt "board1|"
-msgid "The horse goes 'neigh! neigh!'. Horses usually sleep standing up."
+msgid ""
+"The horse goes 'neigh'. Horses are adapted to run, allowing them to quickly "
+"escape predators, and possess an excellent sense of balance. They have "
+"single-toed hooves. "
 msgstr ""
-"\"Heñ ! heñ ! heñ !\" a lâr ar marc'h. War o sav e kousk ar c'hezek "
-"peurliesañ."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:25
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "This animal's ancestors were wolves."
 msgctxt "board1|"
-msgid "You can ride on the back of this animal!"
-msgstr "Beajet e vez war kein al loen-mañ !"
+msgid "This animal has single-toed hooves."
+msgstr "Hendadoù al loen-mañ e oa ar bleizi."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:33
 msgctxt "board1|"
@@ -6596,16 +6600,17 @@ msgstr "Yar"
 #: activities/explore_farm_animals/resource/board/board1.qml:34
 msgctxt "board1|"
 msgid ""
-"The chicken goes 'luck, cackle, cluck'. Chickens have over 200 different "
-"noises they can use to communicate."
+"The chicken goes 'cluck'. Domestic chickens have wings, but are not capable "
+"of long-distance flight. They have a comb on their head."
 msgstr ""
-"\"Kak, kak, kak !\" a lâr ar yar. Ouzhpenn 200 trouz disheñvel a vez graet "
-"gant ar yer da gehentiñ an eil gant eben."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:37
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "This animal likes to come out at night."
 msgctxt "board1|"
-msgid "This animal lays eggs."
-msgstr "Vioù a vez dozvet gant al loen-mañ."
+msgid "This animal has a comb on its head."
+msgstr "E-pad an noz ez a er-maez al loen-mañ."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:45
 msgctxt "board1|"
@@ -6615,16 +6620,15 @@ msgstr "Buoc'h"
 #: activities/explore_farm_animals/resource/board/board1.qml:46
 msgctxt "board1|"
 msgid ""
-"The cow goes 'moo! moo!'. Cows are herbivorous mammals. They graze all day "
-"in the meadow."
+"The cow goes 'moo'. Cows have a wide field of view of 330°. They have a well-"
+"developed sense of taste, with around 20,000 taste buds. They can detect "
+"odours 8km away."
 msgstr ""
-"\"Mou ! Mou !\" a lâr ar vuoc'h. Bronneged a zebr geot eo ar saout. A-hed an "
-"deiz emaint o peuriñ war ar pradoù."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:49
 msgctxt "board1|"
-msgid "You can drink the milk this animal produces."
-msgstr "Moarvat ez evez al laezh produet gant al loened-mañ."
+msgid "This animal has around 20,000 taste buds."
+msgstr ""
 
 #: activities/explore_farm_animals/resource/board/board1.qml:57
 msgctxt "board1|"
@@ -6634,16 +6638,18 @@ msgstr "Kazh"
 #: activities/explore_farm_animals/resource/board/board1.qml:58
 msgctxt "board1|"
 msgid ""
-"The cat goes 'meow, meow'. Cats usually hate water because their fur doesn't "
-"stay warm when it is wet."
+"The cat goes 'meow'. Cats are valued by humans for companionship and their "
+"ability to chase mice and other rodents. They purr to communicate various "
+"emotions."
 msgstr ""
-"\"Miaou, miaou !\" a lâr ar c'hazh. An dour ne blij ket d'ar c'hizhier rak "
-"ne chom ket tomm o feur pa vez gleb."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:61
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "This animal lays eggs."
 msgctxt "board1|"
-msgid "This pet likes chasing mice."
-msgstr "Logota a blij d'al loen-mañ."
+msgid "This animal can purr."
+msgstr "Vioù a vez dozvet gant al loen-mañ."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:69
 msgctxt "board1|"
@@ -6652,15 +6658,15 @@ msgstr "Pemoc'h"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:70
 msgctxt "board1|"
-msgid "The pig goes 'oink, oink'. Pigs are the 4th most intelligent animal."
+msgid ""
+"The pig goes 'oink'. Pigs wallow in the mud, mainly to control their body "
+"temperature."
 msgstr ""
-"\"Oc'h, oc'h, oc'h !\" a lâr ar pemoc'h. Ar pevarvet e-touez al loened "
-"speredekañ eo ar pemoc'h."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:73
 msgctxt "board1|"
-msgid "This animal likes to lie in the mud."
-msgstr "Chom en e led er fank a blij dezho."
+msgid "This animal wallows in the mud to control its body temperature."
+msgstr ""
 
 #: activities/explore_farm_animals/resource/board/board1.qml:81
 msgctxt "board1|"
@@ -6670,15 +6676,16 @@ msgstr "Houad"
 #: activities/explore_farm_animals/resource/board/board1.qml:82
 msgctxt "board1|"
 msgid ""
-"The duck goes 'quack, quack'. Ducks have special features like webbed feet "
-"and produce an oil to make their feathers 'waterproof'."
+"The duck goes 'quack'. Ducks are mostly aquatic birds. They have waterproof "
+"feathers and webbed feet which enable them to swim on the water."
 msgstr ""
-"\"Kwak, kwak !\" a lâr an houad. Treid roeñvek zo gant an houidi. Eoul a "
-"brodu an houidi da lakaat o fluñv da vezañ didreuzus d'an dour."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:85
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "This animal has webbed feet so it can swim in the water."
 msgctxt "board1|"
-msgid "This animal has webbed feet so it can swim in the water."
+msgid "This animal has webbed feet and can swim on the water."
 msgstr "Treid roeñvek zo gant al loen-mañ, aes eo dezhañ neuial neuze."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:93
@@ -6687,16 +6694,25 @@ msgid "Owl"
 msgstr "Kaouenn"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:94
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid ""
+#| "The owl goes 'hoo. hoo.' The owl has excellent vision and hearing at "
+#| "night."
 msgctxt "board1|"
 msgid ""
-"The owl goes 'hoo. hoo.' The owl has excellent vision and hearing at night."
+"The owl goes 'hoot'. Owls are nocturnal birds, they have excellent vision "
+"and hearing at night."
 msgstr ""
 "\"C'hou, c'hou !\" a lâr ar gaouenn. E-kreiz an noz eo barrek da welout "
 "sklaer hag ur c'hleved eus ar c'hentañ he deus."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:97
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "This animal likes to come out at night."
 msgctxt "board1|"
-msgid "This animal likes to come out at night."
+msgid "This animal is a nocturnal bird."
 msgstr "E-pad an noz ez a er-maez al loen-mañ."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:105
@@ -6707,70 +6723,49 @@ msgstr "Ki"
 #: activities/explore_farm_animals/resource/board/board1.qml:106
 msgctxt "board1|"
 msgid ""
-"The dog goes 'bark! bark!'. Dogs are great human companions and usually "
-"enjoy love and attention."
+"The dog goes 'woof'. Dogs are probably the oldest domesticated species. They "
+"are descendants of the wolf."
 msgstr ""
-"\"Waou, waou !\" a lâr ar c'hi. Mignoned dispar an dud eo ar chas ha "
-"peurliesañ e vezont plijet gant karantez hag evezh oute."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:109
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "This animal is a close relative to the goat."
 msgctxt "board1|"
-msgid "This animal's ancestors were wolves."
-msgstr "Hendadoù al loen-mañ e oa ar bleizi."
+msgid "This animal is a descendant of the wolf."
+msgstr "Loened kerent ouzh ar givri int."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:117
-msgctxt "board1|"
-msgid "Rooster"
-msgstr "Kilhog"
-
-#: activities/explore_farm_animals/resource/board/board1.qml:118
-msgctxt "board1|"
-msgid ""
-"The rooster goes 'coc-a-doodle-doo!'. Roosters have been on farms for about "
-"5,000 years. Every morning it wakes the farm up with its noises."
-msgstr ""
-"\"Kokokog !\" a lâr ar c'hilhog. Abaoe war-dro 5000 bloaz emañ ar c'hilheien "
-"en tiez feurm. Bep beure e vez dihunet loened ha tud an ti feurm gant e "
-"c'harm."
-
-#: activities/explore_farm_animals/resource/board/board1.qml:121
-msgctxt "board1|"
-msgid "This animal wakes the farm up in the morning."
-msgstr "Bep beure e vez dihunet loened ha tud an ti feurm gantañ."
-
-#: activities/explore_farm_animals/resource/board/board1.qml:129
 msgctxt "board1|"
 msgid "Sheep"
 msgstr "Dañvad"
 
-#: activities/explore_farm_animals/resource/board/board1.qml:130
+#: activities/explore_farm_animals/resource/board/board1.qml:118
 msgctxt "board1|"
 msgid ""
-"The sheep is a mammal that bears a fleece of wool. It is a grazing "
-"herbivore, bred for its wool, its meat, and its milk. The fleece can be "
-"removed and used to produce articles of clothing and blankets, among other "
-"things."
+"The sheep goes 'baa'. Most sheep breeds bear a fleece of wool. The fleece "
+"can be sheared and used to produce textile fibre."
 msgstr ""
-"An deñved zo bronneged a zoug ur c'hreoñ gloan. Geotdebrerion int, peuriñ a "
-"reont, maget int evit o gloan, o c'hig hag o laezh. Dilamet e vez ar c'hreoñ "
-"hag implijet evit ober, en o zouez, pezhioù dilhad ha goloennoù."
 
-#: activities/explore_farm_animals/resource/board/board1.qml:133
+#: activities/explore_farm_animals/resource/board/board1.qml:121
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "This animal's ancestors were wolves."
 msgctxt "board1|"
-msgid "This animal is a close relative to the goat."
-msgstr "Loened kerent ouzh ar givri int."
+msgid "This animal produces wool."
+msgstr "Hendadoù al loen-mañ e oa ar bleizi."
 
-#: activities/explore_farm_animals/resource/board/board1.qml:143
+#: activities/explore_farm_animals/resource/board/board1.qml:131
 msgctxt "board1|"
 msgid "Click on each farm animal to discover them."
 msgstr "Klik war pep loen an atant evit dizoleiñ anezhañ."
 
-#: activities/explore_farm_animals/resource/board/board1.qml:146
+#: activities/explore_farm_animals/resource/board/board1.qml:134
 msgctxt "board1|"
 msgid "Click on the farm animal that makes the sound you hear."
 msgstr "Klik war loen an atant a c'harm evel ar son a glevez."
 
-#: activities/explore_farm_animals/resource/board/board1.qml:149
+#: activities/explore_farm_animals/resource/board/board1.qml:137
 msgctxt "board1|"
 msgid "Click the animal that matches the description."
 msgstr "Klik war al loen a genglot gant an deskrivadenn."
@@ -25839,6 +25834,102 @@ msgstr "Tremen hepti"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Kregiñ"
+
+#~ msgctxt "board1|"
+#~ msgid "The horse goes 'neigh! neigh!'. Horses usually sleep standing up."
+#~ msgstr ""
+#~ "\"Heñ ! heñ ! heñ !\" a lâr ar marc'h. War o sav e kousk ar c'hezek "
+#~ "peurliesañ."
+
+#~ msgctxt "board1|"
+#~ msgid "You can ride on the back of this animal!"
+#~ msgstr "Beajet e vez war kein al loen-mañ !"
+
+#~ msgctxt "board1|"
+#~ msgid ""
+#~ "The chicken goes 'luck, cackle, cluck'. Chickens have over 200 different "
+#~ "noises they can use to communicate."
+#~ msgstr ""
+#~ "\"Kak, kak, kak !\" a lâr ar yar. Ouzhpenn 200 trouz disheñvel a vez "
+#~ "graet gant ar yer da gehentiñ an eil gant eben."
+
+#~ msgctxt "board1|"
+#~ msgid ""
+#~ "The cow goes 'moo! moo!'. Cows are herbivorous mammals. They graze all "
+#~ "day in the meadow."
+#~ msgstr ""
+#~ "\"Mou ! Mou !\" a lâr ar vuoc'h. Bronneged a zebr geot eo ar saout. A-hed "
+#~ "an deiz emaint o peuriñ war ar pradoù."
+
+#~ msgctxt "board1|"
+#~ msgid "You can drink the milk this animal produces."
+#~ msgstr "Moarvat ez evez al laezh produet gant al loened-mañ."
+
+#~ msgctxt "board1|"
+#~ msgid ""
+#~ "The cat goes 'meow, meow'. Cats usually hate water because their fur "
+#~ "doesn't stay warm when it is wet."
+#~ msgstr ""
+#~ "\"Miaou, miaou !\" a lâr ar c'hazh. An dour ne blij ket d'ar c'hizhier "
+#~ "rak ne chom ket tomm o feur pa vez gleb."
+
+#~ msgctxt "board1|"
+#~ msgid "This pet likes chasing mice."
+#~ msgstr "Logota a blij d'al loen-mañ."
+
+#~ msgctxt "board1|"
+#~ msgid "The pig goes 'oink, oink'. Pigs are the 4th most intelligent animal."
+#~ msgstr ""
+#~ "\"Oc'h, oc'h, oc'h !\" a lâr ar pemoc'h. Ar pevarvet e-touez al loened "
+#~ "speredekañ eo ar pemoc'h."
+
+#~ msgctxt "board1|"
+#~ msgid "This animal likes to lie in the mud."
+#~ msgstr "Chom en e led er fank a blij dezho."
+
+#~ msgctxt "board1|"
+#~ msgid ""
+#~ "The duck goes 'quack, quack'. Ducks have special features like webbed "
+#~ "feet and produce an oil to make their feathers 'waterproof'."
+#~ msgstr ""
+#~ "\"Kwak, kwak !\" a lâr an houad. Treid roeñvek zo gant an houidi. Eoul a "
+#~ "brodu an houidi da lakaat o fluñv da vezañ didreuzus d'an dour."
+
+#~ msgctxt "board1|"
+#~ msgid ""
+#~ "The dog goes 'bark! bark!'. Dogs are great human companions and usually "
+#~ "enjoy love and attention."
+#~ msgstr ""
+#~ "\"Waou, waou !\" a lâr ar c'hi. Mignoned dispar an dud eo ar chas ha "
+#~ "peurliesañ e vezont plijet gant karantez hag evezh oute."
+
+#~ msgctxt "board1|"
+#~ msgid "Rooster"
+#~ msgstr "Kilhog"
+
+#~ msgctxt "board1|"
+#~ msgid ""
+#~ "The rooster goes 'coc-a-doodle-doo!'. Roosters have been on farms for "
+#~ "about 5,000 years. Every morning it wakes the farm up with its noises."
+#~ msgstr ""
+#~ "\"Kokokog !\" a lâr ar c'hilhog. Abaoe war-dro 5000 bloaz emañ ar "
+#~ "c'hilheien en tiez feurm. Bep beure e vez dihunet loened ha tud an ti "
+#~ "feurm gant e c'harm."
+
+#~ msgctxt "board1|"
+#~ msgid "This animal wakes the farm up in the morning."
+#~ msgstr "Bep beure e vez dihunet loened ha tud an ti feurm gantañ."
+
+#~ msgctxt "board1|"
+#~ msgid ""
+#~ "The sheep is a mammal that bears a fleece of wool. It is a grazing "
+#~ "herbivore, bred for its wool, its meat, and its milk. The fleece can be "
+#~ "removed and used to produce articles of clothing and blankets, among "
+#~ "other things."
+#~ msgstr ""
+#~ "An deñved zo bronneged a zoug ur c'hreoñ gloan. Geotdebrerion int, peuriñ "
+#~ "a reont, maget int evit o gloan, o c'hig hag o laezh. Dilamet e vez ar "
+#~ "c'hreoñ hag implijet evit ober, en o zouez, pezhioù dilhad ha goloennoù."
 
 #~ msgctxt "ActivityInfo|"
 #~ msgid ""

@@ -6202,13 +6202,19 @@ msgstr "馬"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:22
 msgctxt "board1|"
-msgid "The horse goes 'neigh! neigh!'. Horses usually sleep standing up."
-msgstr "馬的叫聲是「嘶~ 嘶~」。馬通常是站著睡覺的。"
+msgid ""
+"The horse goes 'neigh'. Horses are adapted to run, allowing them to quickly "
+"escape predators, and possess an excellent sense of balance. They have "
+"single-toed hooves. "
+msgstr ""
 
 #: activities/explore_farm_animals/resource/board/board1.qml:25
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "This animal's ancestors were wolves."
 msgctxt "board1|"
-msgid "You can ride on the back of this animal!"
-msgstr "你可以騎在這種動物身上！"
+msgid "This animal has single-toed hooves."
+msgstr "這種動物的祖先是狼。"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:33
 msgctxt "board1|"
@@ -6218,15 +6224,17 @@ msgstr "雞"
 #: activities/explore_farm_animals/resource/board/board1.qml:34
 msgctxt "board1|"
 msgid ""
-"The chicken goes 'luck, cackle, cluck'. Chickens have over 200 different "
-"noises they can use to communicate."
+"The chicken goes 'cluck'. Domestic chickens have wings, but are not capable "
+"of long-distance flight. They have a comb on their head."
 msgstr ""
-"雞的叫聲類似「咯~ 咯~」。但實際上牠們會發出兩百多種不同的聲音來彼此溝通。"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:37
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "This animal likes to come out at night."
 msgctxt "board1|"
-msgid "This animal lays eggs."
-msgstr "這種動物會生蛋。"
+msgid "This animal has a comb on its head."
+msgstr "這個動物喜歡在夜晚出現。"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:45
 msgctxt "board1|"
@@ -6236,14 +6244,15 @@ msgstr "牛"
 #: activities/explore_farm_animals/resource/board/board1.qml:46
 msgctxt "board1|"
 msgid ""
-"The cow goes 'moo! moo!'. Cows are herbivorous mammals. They graze all day "
-"in the meadow."
-msgstr "牛的叫聲是「哞~ 哞」。牛是草食性動物，成天都在草地上晃來晃去。"
+"The cow goes 'moo'. Cows have a wide field of view of 330°. They have a well-"
+"developed sense of taste, with around 20,000 taste buds. They can detect "
+"odours 8km away."
+msgstr ""
 
 #: activities/explore_farm_animals/resource/board/board1.qml:49
 msgctxt "board1|"
-msgid "You can drink the milk this animal produces."
-msgstr "我們大家都很喜歡喝這個動物產的奶喔。"
+msgid "This animal has around 20,000 taste buds."
+msgstr ""
 
 #: activities/explore_farm_animals/resource/board/board1.qml:57
 msgctxt "board1|"
@@ -6253,16 +6262,18 @@ msgstr "貓"
 #: activities/explore_farm_animals/resource/board/board1.qml:58
 msgctxt "board1|"
 msgid ""
-"The cat goes 'meow, meow'. Cats usually hate water because their fur doesn't "
-"stay warm when it is wet."
+"The cat goes 'meow'. Cats are valued by humans for companionship and their "
+"ability to chase mice and other rodents. They purr to communicate various "
+"emotions."
 msgstr ""
-"貓的叫聲是「喵~ 喵~」。貓通常不喜歡水，因為牠們身體碰到水的話就沒辦法保持溫"
-"暖。"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:61
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "This animal lays eggs."
 msgctxt "board1|"
-msgid "This pet likes chasing mice."
-msgstr "這個動物喜歡追老鼠。"
+msgid "This animal can purr."
+msgstr "這種動物會生蛋。"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:69
 msgctxt "board1|"
@@ -6271,13 +6282,15 @@ msgstr "豬"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:70
 msgctxt "board1|"
-msgid "The pig goes 'oink, oink'. Pigs are the 4th most intelligent animal."
-msgstr "豬的叫聲像是「哄~ 哄~」。豬是第四聰明的動物。"
+msgid ""
+"The pig goes 'oink'. Pigs wallow in the mud, mainly to control their body "
+"temperature."
+msgstr ""
 
 #: activities/explore_farm_animals/resource/board/board1.qml:73
 msgctxt "board1|"
-msgid "This animal likes to lie in the mud."
-msgstr "這個動物喜歡躺在泥巴中。"
+msgid "This animal wallows in the mud to control its body temperature."
+msgstr ""
 
 #: activities/explore_farm_animals/resource/board/board1.qml:81
 msgctxt "board1|"
@@ -6287,15 +6300,16 @@ msgstr "鴨子"
 #: activities/explore_farm_animals/resource/board/board1.qml:82
 msgctxt "board1|"
 msgid ""
-"The duck goes 'quack, quack'. Ducks have special features like webbed feet "
-"and produce an oil to make their feathers 'waterproof'."
+"The duck goes 'quack'. Ducks are mostly aquatic birds. They have waterproof "
+"feathers and webbed feet which enable them to swim on the water."
 msgstr ""
-"鴨子的叫聲是「呱~ 呱~」。鴨子的特徵是腳上有蹼，並且會分泌油脂，所以牠們的羽毛"
-"可以防水。"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:85
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "This animal has webbed feet so it can swim in the water."
 msgctxt "board1|"
-msgid "This animal has webbed feet so it can swim in the water."
+msgid "This animal has webbed feet and can swim on the water."
 msgstr "這個動物的腳有蹼，所以可以在水裡游泳。"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:93
@@ -6304,14 +6318,23 @@ msgid "Owl"
 msgstr "貓頭鷹"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:94
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid ""
+#| "The owl goes 'hoo. hoo.' The owl has excellent vision and hearing at "
+#| "night."
 msgctxt "board1|"
 msgid ""
-"The owl goes 'hoo. hoo.' The owl has excellent vision and hearing at night."
+"The owl goes 'hoot'. Owls are nocturnal birds, they have excellent vision "
+"and hearing at night."
 msgstr "貓頭鷹的叫聲是「互~ 互~」。貓頭鷹的在夜間有很好的視力跟聽力。"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:97
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "This animal likes to come out at night."
 msgctxt "board1|"
-msgid "This animal likes to come out at night."
+msgid "This animal is a nocturnal bird."
 msgstr "這個動物喜歡在夜晚出現。"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:105
@@ -6322,67 +6345,49 @@ msgstr "狗"
 #: activities/explore_farm_animals/resource/board/board1.qml:106
 msgctxt "board1|"
 msgid ""
-"The dog goes 'bark! bark!'. Dogs are great human companions and usually "
-"enjoy love and attention."
-msgstr "狗的叫聲是「汪~ 汪~」。狗是人類很忠實的朋友，喜歡跟人在一起玩。"
+"The dog goes 'woof'. Dogs are probably the oldest domesticated species. They "
+"are descendants of the wolf."
+msgstr ""
 
 #: activities/explore_farm_animals/resource/board/board1.qml:109
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "This animal is a close relative to the goat."
 msgctxt "board1|"
-msgid "This animal's ancestors were wolves."
-msgstr "這種動物的祖先是狼。"
+msgid "This animal is a descendant of the wolf."
+msgstr "這個動物是山羊的親戚。"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:117
-msgctxt "board1|"
-msgid "Rooster"
-msgstr "公雞"
-
-#: activities/explore_farm_animals/resource/board/board1.qml:118
-msgctxt "board1|"
-msgid ""
-"The rooster goes 'coc-a-doodle-doo!'. Roosters have been on farms for about "
-"5,000 years. Every morning it wakes the farm up with its noises."
-msgstr ""
-"公雞的叫聲是「喔~ 喔~ 喔~」。公雞在農場上的歷史至少有五千年了。每天早上牠都負"
-"責用牠的叫聲來叫醒整個農場。"
-
-#: activities/explore_farm_animals/resource/board/board1.qml:121
-msgctxt "board1|"
-msgid "This animal wakes the farm up in the morning."
-msgstr "這個動物每天早上都會用叫聲叫醒大家。"
-
-#: activities/explore_farm_animals/resource/board/board1.qml:129
 msgctxt "board1|"
 msgid "Sheep"
 msgstr "綿羊"
 
-#: activities/explore_farm_animals/resource/board/board1.qml:130
+#: activities/explore_farm_animals/resource/board/board1.qml:118
 msgctxt "board1|"
 msgid ""
-"The sheep is a mammal that bears a fleece of wool. It is a grazing "
-"herbivore, bred for its wool, its meat, and its milk. The fleece can be "
-"removed and used to produce articles of clothing and blankets, among other "
-"things."
+"The sheep goes 'baa'. Most sheep breeds bear a fleece of wool. The fleece "
+"can be sheared and used to produce textile fibre."
 msgstr ""
-"綿羊是一種哺乳動物，身上有一大團羊毛。牠通常被放牧在農場中，而牠身上的羊毛、"
-"牠的肉跟牠的奶對我們都很有益處。羊毛剃下來之後，可以拿來做衣服、毛毯等等許多"
-"東西。"
 
-#: activities/explore_farm_animals/resource/board/board1.qml:133
+#: activities/explore_farm_animals/resource/board/board1.qml:121
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "This animal's ancestors were wolves."
 msgctxt "board1|"
-msgid "This animal is a close relative to the goat."
-msgstr "這個動物是山羊的親戚。"
+msgid "This animal produces wool."
+msgstr "這種動物的祖先是狼。"
 
-#: activities/explore_farm_animals/resource/board/board1.qml:143
+#: activities/explore_farm_animals/resource/board/board1.qml:131
 msgctxt "board1|"
 msgid "Click on each farm animal to discover them."
 msgstr "點擊每種動物來認識牠們。"
 
-#: activities/explore_farm_animals/resource/board/board1.qml:146
+#: activities/explore_farm_animals/resource/board/board1.qml:134
 msgctxt "board1|"
 msgid "Click on the farm animal that makes the sound you hear."
 msgstr "點擊符合你所聽到的叫聲的動物。"
 
-#: activities/explore_farm_animals/resource/board/board1.qml:149
+#: activities/explore_farm_animals/resource/board/board1.qml:137
 msgctxt "board1|"
 msgid "Click the animal that matches the description."
 msgstr "點擊符合描述的動物。"
@@ -24715,6 +24720,92 @@ msgstr "略過"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "開始"
+
+#~ msgctxt "board1|"
+#~ msgid "The horse goes 'neigh! neigh!'. Horses usually sleep standing up."
+#~ msgstr "馬的叫聲是「嘶~ 嘶~」。馬通常是站著睡覺的。"
+
+#~ msgctxt "board1|"
+#~ msgid "You can ride on the back of this animal!"
+#~ msgstr "你可以騎在這種動物身上！"
+
+#~ msgctxt "board1|"
+#~ msgid ""
+#~ "The chicken goes 'luck, cackle, cluck'. Chickens have over 200 different "
+#~ "noises they can use to communicate."
+#~ msgstr ""
+#~ "雞的叫聲類似「咯~ 咯~」。但實際上牠們會發出兩百多種不同的聲音來彼此溝通。"
+
+#~ msgctxt "board1|"
+#~ msgid ""
+#~ "The cow goes 'moo! moo!'. Cows are herbivorous mammals. They graze all "
+#~ "day in the meadow."
+#~ msgstr "牛的叫聲是「哞~ 哞」。牛是草食性動物，成天都在草地上晃來晃去。"
+
+#~ msgctxt "board1|"
+#~ msgid "You can drink the milk this animal produces."
+#~ msgstr "我們大家都很喜歡喝這個動物產的奶喔。"
+
+#~ msgctxt "board1|"
+#~ msgid ""
+#~ "The cat goes 'meow, meow'. Cats usually hate water because their fur "
+#~ "doesn't stay warm when it is wet."
+#~ msgstr ""
+#~ "貓的叫聲是「喵~ 喵~」。貓通常不喜歡水，因為牠們身體碰到水的話就沒辦法保持"
+#~ "溫暖。"
+
+#~ msgctxt "board1|"
+#~ msgid "This pet likes chasing mice."
+#~ msgstr "這個動物喜歡追老鼠。"
+
+#~ msgctxt "board1|"
+#~ msgid "The pig goes 'oink, oink'. Pigs are the 4th most intelligent animal."
+#~ msgstr "豬的叫聲像是「哄~ 哄~」。豬是第四聰明的動物。"
+
+#~ msgctxt "board1|"
+#~ msgid "This animal likes to lie in the mud."
+#~ msgstr "這個動物喜歡躺在泥巴中。"
+
+#~ msgctxt "board1|"
+#~ msgid ""
+#~ "The duck goes 'quack, quack'. Ducks have special features like webbed "
+#~ "feet and produce an oil to make their feathers 'waterproof'."
+#~ msgstr ""
+#~ "鴨子的叫聲是「呱~ 呱~」。鴨子的特徵是腳上有蹼，並且會分泌油脂，所以牠們的"
+#~ "羽毛可以防水。"
+
+#~ msgctxt "board1|"
+#~ msgid ""
+#~ "The dog goes 'bark! bark!'. Dogs are great human companions and usually "
+#~ "enjoy love and attention."
+#~ msgstr "狗的叫聲是「汪~ 汪~」。狗是人類很忠實的朋友，喜歡跟人在一起玩。"
+
+#~ msgctxt "board1|"
+#~ msgid "Rooster"
+#~ msgstr "公雞"
+
+#~ msgctxt "board1|"
+#~ msgid ""
+#~ "The rooster goes 'coc-a-doodle-doo!'. Roosters have been on farms for "
+#~ "about 5,000 years. Every morning it wakes the farm up with its noises."
+#~ msgstr ""
+#~ "公雞的叫聲是「喔~ 喔~ 喔~」。公雞在農場上的歷史至少有五千年了。每天早上牠"
+#~ "都負責用牠的叫聲來叫醒整個農場。"
+
+#~ msgctxt "board1|"
+#~ msgid "This animal wakes the farm up in the morning."
+#~ msgstr "這個動物每天早上都會用叫聲叫醒大家。"
+
+#~ msgctxt "board1|"
+#~ msgid ""
+#~ "The sheep is a mammal that bears a fleece of wool. It is a grazing "
+#~ "herbivore, bred for its wool, its meat, and its milk. The fleece can be "
+#~ "removed and used to produce articles of clothing and blankets, among "
+#~ "other things."
+#~ msgstr ""
+#~ "綿羊是一種哺乳動物，身上有一大團羊毛。牠通常被放牧在農場中，而牠身上的羊"
+#~ "毛、牠的肉跟牠的奶對我們都很有益處。羊毛剃下來之後，可以拿來做衣服、毛毯等"
+#~ "等許多東西。"
 
 #~ msgctxt "ActivityInfo|"
 #~ msgid ""

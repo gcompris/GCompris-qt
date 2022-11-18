@@ -6728,15 +6728,19 @@ msgstr "Capall"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:22
 msgctxt "board1|"
-msgid "The horse goes 'neigh! neigh!'. Horses usually sleep standing up."
+msgid ""
+"The horse goes 'neigh'. Horses are adapted to run, allowing them to quickly "
+"escape predators, and possess an excellent sense of balance. They have "
+"single-toed hooves. "
 msgstr ""
-"\"Seit! Seit!\" a deir an capall. Codlaíonn capaill agus iad ina seasamh de "
-"ghnáth."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:25
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "This animal's ancestors were wolves."
 msgctxt "board1|"
-msgid "You can ride on the back of this animal!"
-msgstr "Is féidir marcaíocht ar dhroim an ainmhí seo!"
+msgid "This animal has single-toed hooves."
+msgstr "Bhí sinsir an ainmhí seo ina mhac tíre."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:33
 msgctxt "board1|"
@@ -6746,16 +6750,17 @@ msgstr "Cearc"
 #: activities/explore_farm_animals/resource/board/board1.qml:34
 msgctxt "board1|"
 msgid ""
-"The chicken goes 'luck, cackle, cluck'. Chickens have over 200 different "
-"noises they can use to communicate."
+"The chicken goes 'cluck'. Domestic chickens have wings, but are not capable "
+"of long-distance flight. They have a comb on their head."
 msgstr ""
-"\"Míog! Gíog!\" a deir an chearc. Tá breis agus 200 fuaim difriúil ag cearca "
-"chun cumarsáid a dhéanamh lena chéile."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:37
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "This animal likes to come out at night."
 msgctxt "board1|"
-msgid "This animal lays eggs."
-msgstr "Rugann an t-ainmhí seo uibheacha."
+msgid "This animal has a comb on its head."
+msgstr "Is breá leis an ainmhí seo teacht amach san oíche."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:45
 msgctxt "board1|"
@@ -6765,16 +6770,15 @@ msgstr "Bó"
 #: activities/explore_farm_animals/resource/board/board1.qml:46
 msgctxt "board1|"
 msgid ""
-"The cow goes 'moo! moo!'. Cows are herbivorous mammals. They graze all day "
-"in the meadow."
+"The cow goes 'moo'. Cows have a wide field of view of 330°. They have a well-"
+"developed sense of taste, with around 20,000 taste buds. They can detect "
+"odours 8km away."
 msgstr ""
-"\"Mú! Mú!\" a deir an bhó. Is luibhiteoirí iad na ba. Itheann siad féar sa "
-"pháirc an lá ar fad."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:49
 msgctxt "board1|"
-msgid "You can drink the milk this animal produces."
-msgstr "Is féidir bainne an t-ainmhí seo a ól."
+msgid "This animal has around 20,000 taste buds."
+msgstr ""
 
 #: activities/explore_farm_animals/resource/board/board1.qml:57
 msgctxt "board1|"
@@ -6784,16 +6788,18 @@ msgstr "Cat"
 #: activities/explore_farm_animals/resource/board/board1.qml:58
 msgctxt "board1|"
 msgid ""
-"The cat goes 'meow, meow'. Cats usually hate water because their fur doesn't "
-"stay warm when it is wet."
+"The cat goes 'meow'. Cats are valued by humans for companionship and their "
+"ability to chase mice and other rodents. They purr to communicate various "
+"emotions."
 msgstr ""
-"\"Meamh! Meamh!\" a deir an cat. Is fuath le cait uisce de ghnáth toisc nach "
-"gcoinníonn a gcuid fionnaidh te iad nuair a éiríonn sé fliuch."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:61
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "This animal lays eggs."
 msgctxt "board1|"
-msgid "This pet likes chasing mice."
-msgstr "Is breá leis an ainmhí seo a dhul sa tóir ar luchóga."
+msgid "This animal can purr."
+msgstr "Rugann an t-ainmhí seo uibheacha."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:69
 msgctxt "board1|"
@@ -6802,15 +6808,15 @@ msgstr "Muc"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:70
 msgctxt "board1|"
-msgid "The pig goes 'oink, oink'. Pigs are the 4th most intelligent animal."
+msgid ""
+"The pig goes 'oink'. Pigs wallow in the mud, mainly to control their body "
+"temperature."
 msgstr ""
-"\"Sceamh! Sceamh!\" a deir an mhuc. Tá muca ar an cheathrú hainmhí is cliste "
-"dá bhfuil ann."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:73
 msgctxt "board1|"
-msgid "This animal likes to lie in the mud."
-msgstr "Is breá leis an ainmhí seo a bheith ina luí sa chlábar."
+msgid "This animal wallows in the mud to control its body temperature."
+msgstr ""
 
 #: activities/explore_farm_animals/resource/board/board1.qml:81
 msgctxt "board1|"
@@ -6820,16 +6826,16 @@ msgstr "Lacha"
 #: activities/explore_farm_animals/resource/board/board1.qml:82
 msgctxt "board1|"
 msgid ""
-"The duck goes 'quack, quack'. Ducks have special features like webbed feet "
-"and produce an oil to make their feathers 'waterproof'."
+"The duck goes 'quack'. Ducks are mostly aquatic birds. They have waterproof "
+"feathers and webbed feet which enable them to swim on the water."
 msgstr ""
-"\"Mhág! Mhág!\" a deir an lacha. Tá tréithe speisialta ag an lacha, mar "
-"shampla, tá cosa scamallacha acu agus cruthaíonn siad ola chun a gcleití a "
-"dhéanamh uiscedhíonach."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:85
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "This animal has webbed feet so it can swim in the water."
 msgctxt "board1|"
-msgid "This animal has webbed feet so it can swim in the water."
+msgid "This animal has webbed feet and can swim on the water."
 msgstr "Tá cosa scamallacha ag an ainmhí seo le cuidiú leis snámh níos gaiste."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:93
@@ -6838,16 +6844,25 @@ msgid "Owl"
 msgstr "Ulchabhán"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:94
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid ""
+#| "The owl goes 'hoo. hoo.' The owl has excellent vision and hearing at "
+#| "night."
 msgctxt "board1|"
 msgid ""
-"The owl goes 'hoo. hoo.' The owl has excellent vision and hearing at night."
+"The owl goes 'hoot'. Owls are nocturnal birds, they have excellent vision "
+"and hearing at night."
 msgstr ""
 "\"Scréach! Scréach!\" a deir an t-ulchabhán. Tá radharc agus éisteacht "
 "iontach ag an ulchabhán san oíche."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:97
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "This animal likes to come out at night."
 msgctxt "board1|"
-msgid "This animal likes to come out at night."
+msgid "This animal is a nocturnal bird."
 msgstr "Is breá leis an ainmhí seo teacht amach san oíche."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:105
@@ -6858,73 +6873,51 @@ msgstr "Madadh"
 #: activities/explore_farm_animals/resource/board/board1.qml:106
 msgctxt "board1|"
 msgid ""
-"The dog goes 'bark! bark!'. Dogs are great human companions and usually "
-"enjoy love and attention."
+"The dog goes 'woof'. Dogs are probably the oldest domesticated species. They "
+"are descendants of the wolf."
 msgstr ""
-"\"Amh! Amh!\" a deir an madadh. Réitíonn madaí go mór le daoine agus "
-"taitníonn aird agus grá leo."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:109
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "This animal is a close relative to the goat."
 msgctxt "board1|"
-msgid "This animal's ancestors were wolves."
-msgstr "Bhí sinsir an ainmhí seo ina mhac tíre."
+msgid "This animal is a descendant of the wolf."
+msgstr "Is féidir éadach a dhéanamh as olann an ainmhí seo."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:117
-msgctxt "board1|"
-msgid "Rooster"
-msgstr "Coileach"
-
-#: activities/explore_farm_animals/resource/board/board1.qml:118
-msgctxt "board1|"
-msgid ""
-"The rooster goes 'coc-a-doodle-doo!'. Roosters have been on farms for about "
-"5,000 years. Every morning it wakes the farm up with its noises."
-msgstr ""
-"\"Cuc-a-dúdal-dú!\" a deir an coileach. Tá coiligh le feiceáil ar "
-"fheirmeacha le timpeall is 5,000 bliain anuas. Músclaíonn an coileach an "
-"fheirm ar fad achan mhaidin nuair a fhógraíonn siad an lá."
-
-#: activities/explore_farm_animals/resource/board/board1.qml:121
-msgctxt "board1|"
-msgid "This animal wakes the farm up in the morning."
-msgstr "Musclaíonn an t-ainmhí seo an fheirm ar maidin."
-
-#: activities/explore_farm_animals/resource/board/board1.qml:129
 msgctxt "board1|"
 msgid "Sheep"
 msgstr "Caora"
 
-#: activities/explore_farm_animals/resource/board/board1.qml:130
+#: activities/explore_farm_animals/resource/board/board1.qml:118
 msgctxt "board1|"
 msgid ""
-"The sheep is a mammal that bears a fleece of wool. It is a grazing "
-"herbivore, bred for its wool, its meat, and its milk. The fleece can be "
-"removed and used to produce articles of clothing and blankets, among other "
-"things."
+"The sheep goes 'baa'. Most sheep breeds bear a fleece of wool. The fleece "
+"can be sheared and used to produce textile fibre."
 msgstr ""
-"\"Mé! Mé!\" a deir an chaora. Is mamach í an chaora. Tá cóta olla orthu. Is "
-"luibhiteoirí iad. Tógtar iad ar mhaithe lena n-olann, lena bhfeoil agus lena "
-"mbainne. Is féidir an cóta olla a bhaint dóibh agus baill éadaigh agus "
-"pluideanna a chruthú as, i measc rudaí eile."
 
-#: activities/explore_farm_animals/resource/board/board1.qml:133
+#: activities/explore_farm_animals/resource/board/board1.qml:121
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "This animal's ancestors were wolves."
 msgctxt "board1|"
-msgid "This animal is a close relative to the goat."
-msgstr "Is féidir éadach a dhéanamh as olann an ainmhí seo."
+msgid "This animal produces wool."
+msgstr "Bhí sinsir an ainmhí seo ina mhac tíre."
 
-#: activities/explore_farm_animals/resource/board/board1.qml:143
+#: activities/explore_farm_animals/resource/board/board1.qml:131
 msgctxt "board1|"
 msgid "Click on each farm animal to discover them."
 msgstr ""
 "Foghlaim faoi ainmhithe feirme, na fuaimeanna a dhéanann siad agus fíricí "
 "suimiúla fúthu. "
 
-#: activities/explore_farm_animals/resource/board/board1.qml:146
+#: activities/explore_farm_animals/resource/board/board1.qml:134
 msgctxt "board1|"
 msgid "Click on the farm animal that makes the sound you hear."
 msgstr "Cliceáil ar an ainmhí feirme a dhéanann an fuaim a chloiseann tú."
 
-#: activities/explore_farm_animals/resource/board/board1.qml:149
+#: activities/explore_farm_animals/resource/board/board1.qml:137
 msgctxt "board1|"
 msgid "Click the animal that matches the description."
 msgstr "Cliceáil ar an ainmhí a ndéantar cur síos air thuas."
@@ -26677,6 +26670,104 @@ msgstr "Scipeáil"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Tosaigh"
+
+#~ msgctxt "board1|"
+#~ msgid "The horse goes 'neigh! neigh!'. Horses usually sleep standing up."
+#~ msgstr ""
+#~ "\"Seit! Seit!\" a deir an capall. Codlaíonn capaill agus iad ina seasamh "
+#~ "de ghnáth."
+
+#~ msgctxt "board1|"
+#~ msgid "You can ride on the back of this animal!"
+#~ msgstr "Is féidir marcaíocht ar dhroim an ainmhí seo!"
+
+#~ msgctxt "board1|"
+#~ msgid ""
+#~ "The chicken goes 'luck, cackle, cluck'. Chickens have over 200 different "
+#~ "noises they can use to communicate."
+#~ msgstr ""
+#~ "\"Míog! Gíog!\" a deir an chearc. Tá breis agus 200 fuaim difriúil ag "
+#~ "cearca chun cumarsáid a dhéanamh lena chéile."
+
+#~ msgctxt "board1|"
+#~ msgid ""
+#~ "The cow goes 'moo! moo!'. Cows are herbivorous mammals. They graze all "
+#~ "day in the meadow."
+#~ msgstr ""
+#~ "\"Mú! Mú!\" a deir an bhó. Is luibhiteoirí iad na ba. Itheann siad féar "
+#~ "sa pháirc an lá ar fad."
+
+#~ msgctxt "board1|"
+#~ msgid "You can drink the milk this animal produces."
+#~ msgstr "Is féidir bainne an t-ainmhí seo a ól."
+
+#~ msgctxt "board1|"
+#~ msgid ""
+#~ "The cat goes 'meow, meow'. Cats usually hate water because their fur "
+#~ "doesn't stay warm when it is wet."
+#~ msgstr ""
+#~ "\"Meamh! Meamh!\" a deir an cat. Is fuath le cait uisce de ghnáth toisc "
+#~ "nach gcoinníonn a gcuid fionnaidh te iad nuair a éiríonn sé fliuch."
+
+#~ msgctxt "board1|"
+#~ msgid "This pet likes chasing mice."
+#~ msgstr "Is breá leis an ainmhí seo a dhul sa tóir ar luchóga."
+
+#~ msgctxt "board1|"
+#~ msgid "The pig goes 'oink, oink'. Pigs are the 4th most intelligent animal."
+#~ msgstr ""
+#~ "\"Sceamh! Sceamh!\" a deir an mhuc. Tá muca ar an cheathrú hainmhí is "
+#~ "cliste dá bhfuil ann."
+
+#~ msgctxt "board1|"
+#~ msgid "This animal likes to lie in the mud."
+#~ msgstr "Is breá leis an ainmhí seo a bheith ina luí sa chlábar."
+
+#~ msgctxt "board1|"
+#~ msgid ""
+#~ "The duck goes 'quack, quack'. Ducks have special features like webbed "
+#~ "feet and produce an oil to make their feathers 'waterproof'."
+#~ msgstr ""
+#~ "\"Mhág! Mhág!\" a deir an lacha. Tá tréithe speisialta ag an lacha, mar "
+#~ "shampla, tá cosa scamallacha acu agus cruthaíonn siad ola chun a gcleití "
+#~ "a dhéanamh uiscedhíonach."
+
+#~ msgctxt "board1|"
+#~ msgid ""
+#~ "The dog goes 'bark! bark!'. Dogs are great human companions and usually "
+#~ "enjoy love and attention."
+#~ msgstr ""
+#~ "\"Amh! Amh!\" a deir an madadh. Réitíonn madaí go mór le daoine agus "
+#~ "taitníonn aird agus grá leo."
+
+#~ msgctxt "board1|"
+#~ msgid "Rooster"
+#~ msgstr "Coileach"
+
+#~ msgctxt "board1|"
+#~ msgid ""
+#~ "The rooster goes 'coc-a-doodle-doo!'. Roosters have been on farms for "
+#~ "about 5,000 years. Every morning it wakes the farm up with its noises."
+#~ msgstr ""
+#~ "\"Cuc-a-dúdal-dú!\" a deir an coileach. Tá coiligh le feiceáil ar "
+#~ "fheirmeacha le timpeall is 5,000 bliain anuas. Músclaíonn an coileach an "
+#~ "fheirm ar fad achan mhaidin nuair a fhógraíonn siad an lá."
+
+#~ msgctxt "board1|"
+#~ msgid "This animal wakes the farm up in the morning."
+#~ msgstr "Musclaíonn an t-ainmhí seo an fheirm ar maidin."
+
+#~ msgctxt "board1|"
+#~ msgid ""
+#~ "The sheep is a mammal that bears a fleece of wool. It is a grazing "
+#~ "herbivore, bred for its wool, its meat, and its milk. The fleece can be "
+#~ "removed and used to produce articles of clothing and blankets, among "
+#~ "other things."
+#~ msgstr ""
+#~ "\"Mé! Mé!\" a deir an chaora. Is mamach í an chaora. Tá cóta olla orthu. "
+#~ "Is luibhiteoirí iad. Tógtar iad ar mhaithe lena n-olann, lena bhfeoil "
+#~ "agus lena mbainne. Is féidir an cóta olla a bhaint dóibh agus baill "
+#~ "éadaigh agus pluideanna a chruthú as, i measc rudaí eile."
 
 #~ msgctxt "ActivityInfo|"
 #~ msgid ""

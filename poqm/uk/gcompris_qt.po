@@ -6600,13 +6600,19 @@ msgstr "Кінь"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:22
 msgctxt "board1|"
-msgid "The horse goes 'neigh! neigh!'. Horses usually sleep standing up."
-msgstr "Коні кажуть: «іго-го!» Коні, зазвичай, сплять навстоячки."
+msgid ""
+"The horse goes 'neigh'. Horses are adapted to run, allowing them to quickly "
+"escape predators, and possess an excellent sense of balance. They have "
+"single-toed hooves. "
+msgstr ""
 
 #: activities/explore_farm_animals/resource/board/board1.qml:25
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "This animal's ancestors were wolves."
 msgctxt "board1|"
-msgid "You can ride on the back of this animal!"
-msgstr "На спині цієї тварини можна їздити."
+msgid "This animal has single-toed hooves."
+msgstr "Предками цієї тварини були вовки."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:33
 msgctxt "board1|"
@@ -6616,16 +6622,17 @@ msgstr "Курка"
 #: activities/explore_farm_animals/resource/board/board1.qml:34
 msgctxt "board1|"
 msgid ""
-"The chicken goes 'luck, cackle, cluck'. Chickens have over 200 different "
-"noises they can use to communicate."
+"The chicken goes 'cluck'. Domestic chickens have wings, but are not capable "
+"of long-distance flight. They have a comb on their head."
 msgstr ""
-"Кури кажуть: «ко-ко-ко». Кури можуть видавати понад 200 різних звуків, за "
-"допомогою яких вони спілкуються між собою."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:37
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "This animal likes to come out at night."
 msgctxt "board1|"
-msgid "This animal lays eggs."
-msgstr "Ця тварина відкладає яйця."
+msgid "This animal has a comb on its head."
+msgstr "Ця тварина активна в основному вночі."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:45
 msgctxt "board1|"
@@ -6635,16 +6642,15 @@ msgstr "Корова"
 #: activities/explore_farm_animals/resource/board/board1.qml:46
 msgctxt "board1|"
 msgid ""
-"The cow goes 'moo! moo!'. Cows are herbivorous mammals. They graze all day "
-"in the meadow."
+"The cow goes 'moo'. Cows have a wide field of view of 330°. They have a well-"
+"developed sense of taste, with around 20,000 taste buds. They can detect "
+"odours 8km away."
 msgstr ""
-"Корови кажуть: «му-му». Корови є травоїдними тваринами. Вони увесь день "
-"пасуться на лузі."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:49
 msgctxt "board1|"
-msgid "You can drink the milk this animal produces."
-msgstr "Молоко цієї тварини широко вживається людиною."
+msgid "This animal has around 20,000 taste buds."
+msgstr ""
 
 #: activities/explore_farm_animals/resource/board/board1.qml:57
 msgctxt "board1|"
@@ -6654,16 +6660,18 @@ msgstr "Кіт"
 #: activities/explore_farm_animals/resource/board/board1.qml:58
 msgctxt "board1|"
 msgid ""
-"The cat goes 'meow, meow'. Cats usually hate water because their fur doesn't "
-"stay warm when it is wet."
+"The cat goes 'meow'. Cats are valued by humans for companionship and their "
+"ability to chase mice and other rodents. They purr to communicate various "
+"emotions."
 msgstr ""
-"Коти кажуть: «няв-няв». Коти не люблять воду, оскільки мокра шерсть не може "
-"їх зігріти."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:61
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "This animal lays eggs."
 msgctxt "board1|"
-msgid "This pet likes chasing mice."
-msgstr "Ця домашня тварина полюбляє полювати на мишей."
+msgid "This animal can purr."
+msgstr "Ця тварина відкладає яйця."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:69
 msgctxt "board1|"
@@ -6672,15 +6680,15 @@ msgstr "Свиня"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:70
 msgctxt "board1|"
-msgid "The pig goes 'oink, oink'. Pigs are the 4th most intelligent animal."
+msgid ""
+"The pig goes 'oink'. Pigs wallow in the mud, mainly to control their body "
+"temperature."
 msgstr ""
-"Свині кажуть: «рох-рох». У списку найрозумніших тварин свиня є четвертою "
-"найрозумнішою."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:73
 msgctxt "board1|"
-msgid "This animal likes to lie in the mud."
-msgstr "Ця тварина полюбляє ніжитися у багні."
+msgid "This animal wallows in the mud to control its body temperature."
+msgstr ""
 
 #: activities/explore_farm_animals/resource/board/board1.qml:81
 msgctxt "board1|"
@@ -6690,15 +6698,16 @@ msgstr "Качка"
 #: activities/explore_farm_animals/resource/board/board1.qml:82
 msgctxt "board1|"
 msgid ""
-"The duck goes 'quack, quack'. Ducks have special features like webbed feet "
-"and produce an oil to make their feathers 'waterproof'."
+"The duck goes 'quack'. Ducks are mostly aquatic birds. They have waterproof "
+"feathers and webbed feet which enable them to swim on the water."
 msgstr ""
-"Качки кажуть: «ках-ках». Між пальцями на лапах качок є перетинки. У качок є "
-"жирові залози, за допомогою яких вони можуть робити своє пір'я непромокним."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:85
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "This animal has webbed feet so it can swim in the water."
 msgctxt "board1|"
-msgid "This animal has webbed feet so it can swim in the water."
+msgid "This animal has webbed feet and can swim on the water."
 msgstr "У цієї тварини між пальцями на ногах є перетинки, вона може плавати."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:93
@@ -6707,14 +6716,23 @@ msgid "Owl"
 msgstr "Сова"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:94
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid ""
+#| "The owl goes 'hoo. hoo.' The owl has excellent vision and hearing at "
+#| "night."
 msgctxt "board1|"
 msgid ""
-"The owl goes 'hoo. hoo.' The owl has excellent vision and hearing at night."
+"The owl goes 'hoot'. Owls are nocturnal birds, they have excellent vision "
+"and hearing at night."
 msgstr "Сови кажуть: «хух-хух». У сови чудовий зір вночі і слух."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:97
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "This animal likes to come out at night."
 msgctxt "board1|"
-msgid "This animal likes to come out at night."
+msgid "This animal is a nocturnal bird."
 msgstr "Ця тварина активна в основному вночі."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:105
@@ -6725,69 +6743,49 @@ msgstr "Собака"
 #: activities/explore_farm_animals/resource/board/board1.qml:106
 msgctxt "board1|"
 msgid ""
-"The dog goes 'bark! bark!'. Dogs are great human companions and usually "
-"enjoy love and attention."
+"The dog goes 'woof'. Dogs are probably the oldest domesticated species. They "
+"are descendants of the wolf."
 msgstr ""
-"Собаки кажуть: «гав-гав!» Собаки — чудові друзі людини, які, зазвичай, "
-"полюбляють ласку та увагу до них."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:109
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "This animal is a close relative to the goat."
 msgctxt "board1|"
-msgid "This animal's ancestors were wolves."
-msgstr "Предками цієї тварини були вовки."
+msgid "This animal is a descendant of the wolf."
+msgstr "Ця тварина є близьким родичем кози."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:117
-msgctxt "board1|"
-msgid "Rooster"
-msgstr "Півень"
-
-#: activities/explore_farm_animals/resource/board/board1.qml:118
-msgctxt "board1|"
-msgid ""
-"The rooster goes 'coc-a-doodle-doo!'. Roosters have been on farms for about "
-"5,000 years. Every morning it wakes the farm up with its noises."
-msgstr ""
-"Півні кажуть: «ку-ку-рі-ку!» Півні є сільськими жителями уже приблизно 5000 "
-"років. Кожного ранку півень будить усіх своїм криком."
-
-#: activities/explore_farm_animals/resource/board/board1.qml:121
-msgctxt "board1|"
-msgid "This animal wakes the farm up in the morning."
-msgstr "Ця тварина будить своїм співом усіх уранці."
-
-#: activities/explore_farm_animals/resource/board/board1.qml:129
 msgctxt "board1|"
 msgid "Sheep"
 msgstr "Вівця"
 
-#: activities/explore_farm_animals/resource/board/board1.qml:130
+#: activities/explore_farm_animals/resource/board/board1.qml:118
 msgctxt "board1|"
 msgid ""
-"The sheep is a mammal that bears a fleece of wool. It is a grazing "
-"herbivore, bred for its wool, its meat, and its milk. The fleece can be "
-"removed and used to produce articles of clothing and blankets, among other "
-"things."
+"The sheep goes 'baa'. Most sheep breeds bear a fleece of wool. The fleece "
+"can be sheared and used to produce textile fibre."
 msgstr ""
-"Вівця — ссавець, який має чудову шерстяну шубу. Це чудова травоїдна тварина, "
-"яку вирощують заради шерсті, м'яса та молока. Шерсть вівці можна зістригати "
-"і використовувати для створення одягу, ковдр та інших речей."
 
-#: activities/explore_farm_animals/resource/board/board1.qml:133
+#: activities/explore_farm_animals/resource/board/board1.qml:121
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "This animal's ancestors were wolves."
 msgctxt "board1|"
-msgid "This animal is a close relative to the goat."
-msgstr "Ця тварина є близьким родичем кози."
+msgid "This animal produces wool."
+msgstr "Предками цієї тварини були вовки."
 
-#: activities/explore_farm_animals/resource/board/board1.qml:143
+#: activities/explore_farm_animals/resource/board/board1.qml:131
 msgctxt "board1|"
 msgid "Click on each farm animal to discover them."
 msgstr "Натисніть зображення тварини, щоб дізнатися про неї більше."
 
-#: activities/explore_farm_animals/resource/board/board1.qml:146
+#: activities/explore_farm_animals/resource/board/board1.qml:134
 msgctxt "board1|"
 msgid "Click on the farm animal that makes the sound you hear."
 msgstr "Натисніть зображення тієї тварини, звук якої ви почули."
 
-#: activities/explore_farm_animals/resource/board/board1.qml:149
+#: activities/explore_farm_animals/resource/board/board1.qml:137
 msgctxt "board1|"
 msgid "Click the animal that matches the description."
 msgstr "Натисніть зображення тієї тварини, яку описано."
@@ -25776,6 +25774,100 @@ msgstr "Пропустити"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Почати"
+
+#~ msgctxt "board1|"
+#~ msgid "The horse goes 'neigh! neigh!'. Horses usually sleep standing up."
+#~ msgstr "Коні кажуть: «іго-го!» Коні, зазвичай, сплять навстоячки."
+
+#~ msgctxt "board1|"
+#~ msgid "You can ride on the back of this animal!"
+#~ msgstr "На спині цієї тварини можна їздити."
+
+#~ msgctxt "board1|"
+#~ msgid ""
+#~ "The chicken goes 'luck, cackle, cluck'. Chickens have over 200 different "
+#~ "noises they can use to communicate."
+#~ msgstr ""
+#~ "Кури кажуть: «ко-ко-ко». Кури можуть видавати понад 200 різних звуків, за "
+#~ "допомогою яких вони спілкуються між собою."
+
+#~ msgctxt "board1|"
+#~ msgid ""
+#~ "The cow goes 'moo! moo!'. Cows are herbivorous mammals. They graze all "
+#~ "day in the meadow."
+#~ msgstr ""
+#~ "Корови кажуть: «му-му». Корови є травоїдними тваринами. Вони увесь день "
+#~ "пасуться на лузі."
+
+#~ msgctxt "board1|"
+#~ msgid "You can drink the milk this animal produces."
+#~ msgstr "Молоко цієї тварини широко вживається людиною."
+
+#~ msgctxt "board1|"
+#~ msgid ""
+#~ "The cat goes 'meow, meow'. Cats usually hate water because their fur "
+#~ "doesn't stay warm when it is wet."
+#~ msgstr ""
+#~ "Коти кажуть: «няв-няв». Коти не люблять воду, оскільки мокра шерсть не "
+#~ "може їх зігріти."
+
+#~ msgctxt "board1|"
+#~ msgid "This pet likes chasing mice."
+#~ msgstr "Ця домашня тварина полюбляє полювати на мишей."
+
+#~ msgctxt "board1|"
+#~ msgid "The pig goes 'oink, oink'. Pigs are the 4th most intelligent animal."
+#~ msgstr ""
+#~ "Свині кажуть: «рох-рох». У списку найрозумніших тварин свиня є четвертою "
+#~ "найрозумнішою."
+
+#~ msgctxt "board1|"
+#~ msgid "This animal likes to lie in the mud."
+#~ msgstr "Ця тварина полюбляє ніжитися у багні."
+
+#~ msgctxt "board1|"
+#~ msgid ""
+#~ "The duck goes 'quack, quack'. Ducks have special features like webbed "
+#~ "feet and produce an oil to make their feathers 'waterproof'."
+#~ msgstr ""
+#~ "Качки кажуть: «ках-ках». Між пальцями на лапах качок є перетинки. У качок "
+#~ "є жирові залози, за допомогою яких вони можуть робити своє пір'я "
+#~ "непромокним."
+
+#~ msgctxt "board1|"
+#~ msgid ""
+#~ "The dog goes 'bark! bark!'. Dogs are great human companions and usually "
+#~ "enjoy love and attention."
+#~ msgstr ""
+#~ "Собаки кажуть: «гав-гав!» Собаки — чудові друзі людини, які, зазвичай, "
+#~ "полюбляють ласку та увагу до них."
+
+#~ msgctxt "board1|"
+#~ msgid "Rooster"
+#~ msgstr "Півень"
+
+#~ msgctxt "board1|"
+#~ msgid ""
+#~ "The rooster goes 'coc-a-doodle-doo!'. Roosters have been on farms for "
+#~ "about 5,000 years. Every morning it wakes the farm up with its noises."
+#~ msgstr ""
+#~ "Півні кажуть: «ку-ку-рі-ку!» Півні є сільськими жителями уже приблизно "
+#~ "5000 років. Кожного ранку півень будить усіх своїм криком."
+
+#~ msgctxt "board1|"
+#~ msgid "This animal wakes the farm up in the morning."
+#~ msgstr "Ця тварина будить своїм співом усіх уранці."
+
+#~ msgctxt "board1|"
+#~ msgid ""
+#~ "The sheep is a mammal that bears a fleece of wool. It is a grazing "
+#~ "herbivore, bred for its wool, its meat, and its milk. The fleece can be "
+#~ "removed and used to produce articles of clothing and blankets, among "
+#~ "other things."
+#~ msgstr ""
+#~ "Вівця — ссавець, який має чудову шерстяну шубу. Це чудова травоїдна "
+#~ "тварина, яку вирощують заради шерсті, м'яса та молока. Шерсть вівці можна "
+#~ "зістригати і використовувати для створення одягу, ковдр та інших речей."
 
 #~ msgctxt "ActivityInfo|"
 #~ msgid ""

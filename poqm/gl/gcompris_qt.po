@@ -7193,16 +7193,21 @@ msgctxt "board1|"
 msgid "Horse"
 msgstr "Cabalo"
 
-# Fonte: http://www.ivoox.com/nomeando-as-voces-dos-animais-audios-mp3_rf_665908_1.html
 #: activities/explore_farm_animals/resource/board/board1.qml:22
 msgctxt "board1|"
-msgid "The horse goes 'neigh! neigh!'. Horses usually sleep standing up."
-msgstr "Os cabalos griñen. Os cabalos adoitan durmir de pé."
+msgid ""
+"The horse goes 'neigh'. Horses are adapted to run, allowing them to quickly "
+"escape predators, and possess an excellent sense of balance. They have "
+"single-toed hooves. "
+msgstr ""
 
 #: activities/explore_farm_animals/resource/board/board1.qml:25
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "This animal's ancestors were wolves."
 msgctxt "board1|"
-msgid "You can ride on the back of this animal!"
-msgstr "Podes montar nas costas deste animal!"
+msgid "This animal has single-toed hooves."
+msgstr "Os lobos son os ancestros deste animal."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:33
 msgctxt "board1|"
@@ -7212,16 +7217,17 @@ msgstr "Galiña"
 #: activities/explore_farm_animals/resource/board/board1.qml:34
 msgctxt "board1|"
 msgid ""
-"The chicken goes 'luck, cackle, cluck'. Chickens have over 200 different "
-"noises they can use to communicate."
+"The chicken goes 'cluck'. Domestic chickens have wings, but are not capable "
+"of long-distance flight. They have a comb on their head."
 msgstr ""
-"As galiñas cacarexan, e ás veces acocoran. As galiñas teñen máis de 200 "
-"ruídos que poden usar para comunicarse."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:37
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "This animal likes to come out at night."
 msgctxt "board1|"
-msgid "This animal lays eggs."
-msgstr "Este animal pon ovos."
+msgid "This animal has a comb on its head."
+msgstr "Este animal gosta de saír pola noite."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:45
 msgctxt "board1|"
@@ -7231,16 +7237,15 @@ msgstr "Vaca"
 #: activities/explore_farm_animals/resource/board/board1.qml:46
 msgctxt "board1|"
 msgid ""
-"The cow goes 'moo! moo!'. Cows are herbivorous mammals. They graze all day "
-"in the meadow."
+"The cow goes 'moo'. Cows have a wide field of view of 330°. They have a well-"
+"developed sense of taste, with around 20,000 taste buds. They can detect "
+"odours 8km away."
 msgstr ""
-"A vaca múa ou brúa. As vacas son mamíferos herbívoros. As vacas pasan todo o "
-"día pastando na pradeira."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:49
 msgctxt "board1|"
-msgid "You can drink the milk this animal produces."
-msgstr "Podes beber o leite que produce este animal."
+msgid "This animal has around 20,000 taste buds."
+msgstr ""
 
 #: activities/explore_farm_animals/resource/board/board1.qml:57
 msgctxt "board1|"
@@ -7250,16 +7255,18 @@ msgstr "Gato"
 #: activities/explore_farm_animals/resource/board/board1.qml:58
 msgctxt "board1|"
 msgid ""
-"The cat goes 'meow, meow'. Cats usually hate water because their fur doesn't "
-"stay warm when it is wet."
+"The cat goes 'meow'. Cats are valued by humans for companionship and their "
+"ability to chase mice and other rodents. They purr to communicate various "
+"emotions."
 msgstr ""
-"O gato mía ou miaña. Os gatos adoitar odiar a auga porque a súa pelaxe non "
-"retén a calor cando está mollada."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:61
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "This animal lays eggs."
 msgctxt "board1|"
-msgid "This pet likes chasing mice."
-msgstr "Esta mascota gosta de perseguir ratos."
+msgid "This animal can purr."
+msgstr "Este animal pon ovos."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:69
 msgctxt "board1|"
@@ -7268,15 +7275,15 @@ msgstr "Porco"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:70
 msgctxt "board1|"
-msgid "The pig goes 'oink, oink'. Pigs are the 4th most intelligent animal."
+msgid ""
+"The pig goes 'oink'. Pigs wallow in the mud, mainly to control their body "
+"temperature."
 msgstr ""
-"O porco gorla ou gruñe, e ás veces acocora. Os porcos son o cuarto animal "
-"máis intelixente."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:73
 msgctxt "board1|"
-msgid "This animal likes to lie in the mud."
-msgstr "Este animal gosta de deitar na lama."
+msgid "This animal wallows in the mud to control its body temperature."
+msgstr ""
 
 #: activities/explore_farm_animals/resource/board/board1.qml:81
 msgctxt "board1|"
@@ -7286,16 +7293,16 @@ msgstr "Pato"
 #: activities/explore_farm_animals/resource/board/board1.qml:82
 msgctxt "board1|"
 msgid ""
-"The duck goes 'quack, quack'. Ducks have special features like webbed feet "
-"and produce an oil to make their feathers 'waterproof'."
+"The duck goes 'quack'. Ducks are mostly aquatic birds. They have waterproof "
+"feathers and webbed feet which enable them to swim on the water."
 msgstr ""
-"O parrulo fai «cuac, cuac». Os parrulos teñen características que os fan "
-"especiais, como por exemplo que teñen membranas entre as dedas, e producen "
-"unha grasa que fai que a súa plumaxe sexa resistente á auga."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:85
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "This animal has webbed feet so it can swim in the water."
 msgctxt "board1|"
-msgid "This animal has webbed feet so it can swim in the water."
+msgid "This animal has webbed feet and can swim on the water."
 msgstr ""
 "Este animal ten membranas entre as dedas, o que lle permite nadar na auga."
 
@@ -7305,16 +7312,25 @@ msgid "Owl"
 msgstr "Curuxa"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:94
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid ""
+#| "The owl goes 'hoo. hoo.' The owl has excellent vision and hearing at "
+#| "night."
 msgctxt "board1|"
 msgid ""
-"The owl goes 'hoo. hoo.' The owl has excellent vision and hearing at night."
+"The owl goes 'hoot'. Owls are nocturnal birds, they have excellent vision "
+"and hearing at night."
 msgstr ""
 "A curuxa fai «u, u». A curuxa ten unha visión e un oído excelentes pola "
 "noite."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:97
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "This animal likes to come out at night."
 msgctxt "board1|"
-msgid "This animal likes to come out at night."
+msgid "This animal is a nocturnal bird."
 msgstr "Este animal gosta de saír pola noite."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:105
@@ -7325,69 +7341,49 @@ msgstr "Can"
 #: activities/explore_farm_animals/resource/board/board1.qml:106
 msgctxt "board1|"
 msgid ""
-"The dog goes 'bark! bark!'. Dogs are great human companions and usually "
-"enjoy love and attention."
+"The dog goes 'woof'. Dogs are probably the oldest domesticated species. They "
+"are descendants of the wolf."
 msgstr ""
-"O can atouza ou ladra. Os cans son moi bos compañeiros para as persoas, e "
-"adoitar gozar do amor e da atención."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:109
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "This animal is a close relative to the goat."
 msgctxt "board1|"
-msgid "This animal's ancestors were wolves."
-msgstr "Os lobos son os ancestros deste animal."
+msgid "This animal is a descendant of the wolf."
+msgstr "Este animal é un parente próximo da cabra."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:117
-msgctxt "board1|"
-msgid "Rooster"
-msgstr "Galo"
-
-#: activities/explore_farm_animals/resource/board/board1.qml:118
-msgctxt "board1|"
-msgid ""
-"The rooster goes 'coc-a-doodle-doo!'. Roosters have been on farms for about "
-"5,000 years. Every morning it wakes the farm up with its noises."
-msgstr ""
-"O galo cacarexa. Os galos levan nas granxas desde hai arredor de 5.000 anos. "
-"Cada mañá espertan as granxas coa súa voz."
-
-#: activities/explore_farm_animals/resource/board/board1.qml:121
-msgctxt "board1|"
-msgid "This animal wakes the farm up in the morning."
-msgstr "O animal esperta a granxa pola mañá."
-
-#: activities/explore_farm_animals/resource/board/board1.qml:129
 msgctxt "board1|"
 msgid "Sheep"
 msgstr "Ovella"
 
-#: activities/explore_farm_animals/resource/board/board1.qml:130
+#: activities/explore_farm_animals/resource/board/board1.qml:118
 msgctxt "board1|"
 msgid ""
-"The sheep is a mammal that bears a fleece of wool. It is a grazing "
-"herbivore, bred for its wool, its meat, and its milk. The fleece can be "
-"removed and used to produce articles of clothing and blankets, among other "
-"things."
+"The sheep goes 'baa'. Most sheep breeds bear a fleece of wool. The fleece "
+"can be sheared and used to produce textile fibre."
 msgstr ""
-"A ovella é un mamífero que está arroupado de la. É un animal hervíboro que "
-"pasta, e que se cría pasar obter la, carne e leite. A la pódeselle retirar e "
-"usala para producir roupa e mantas, por exemplo."
 
-#: activities/explore_farm_animals/resource/board/board1.qml:133
+#: activities/explore_farm_animals/resource/board/board1.qml:121
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "This animal's ancestors were wolves."
 msgctxt "board1|"
-msgid "This animal is a close relative to the goat."
-msgstr "Este animal é un parente próximo da cabra."
+msgid "This animal produces wool."
+msgstr "Os lobos son os ancestros deste animal."
 
-#: activities/explore_farm_animals/resource/board/board1.qml:143
+#: activities/explore_farm_animals/resource/board/board1.qml:131
 msgctxt "board1|"
 msgid "Click on each farm animal to discover them."
 msgstr "Preme os animais de granxa para descubrilos."
 
-#: activities/explore_farm_animals/resource/board/board1.qml:146
+#: activities/explore_farm_animals/resource/board/board1.qml:134
 msgctxt "board1|"
 msgid "Click on the farm animal that makes the sound you hear."
 msgstr "Preme o animal de granxa que fai o son que escoitas."
 
-#: activities/explore_farm_animals/resource/board/board1.qml:149
+#: activities/explore_farm_animals/resource/board/board1.qml:137
 msgctxt "board1|"
 msgid "Click the animal that matches the description."
 msgstr "Preme o animal que se corresponde coa descrición."
@@ -28768,6 +28764,101 @@ msgstr "Saltar"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Iniciar"
+
+# Fonte: http://www.ivoox.com/nomeando-as-voces-dos-animais-audios-mp3_rf_665908_1.html
+#~ msgctxt "board1|"
+#~ msgid "The horse goes 'neigh! neigh!'. Horses usually sleep standing up."
+#~ msgstr "Os cabalos griñen. Os cabalos adoitan durmir de pé."
+
+#~ msgctxt "board1|"
+#~ msgid "You can ride on the back of this animal!"
+#~ msgstr "Podes montar nas costas deste animal!"
+
+#~ msgctxt "board1|"
+#~ msgid ""
+#~ "The chicken goes 'luck, cackle, cluck'. Chickens have over 200 different "
+#~ "noises they can use to communicate."
+#~ msgstr ""
+#~ "As galiñas cacarexan, e ás veces acocoran. As galiñas teñen máis de 200 "
+#~ "ruídos que poden usar para comunicarse."
+
+#~ msgctxt "board1|"
+#~ msgid ""
+#~ "The cow goes 'moo! moo!'. Cows are herbivorous mammals. They graze all "
+#~ "day in the meadow."
+#~ msgstr ""
+#~ "A vaca múa ou brúa. As vacas son mamíferos herbívoros. As vacas pasan "
+#~ "todo o día pastando na pradeira."
+
+#~ msgctxt "board1|"
+#~ msgid "You can drink the milk this animal produces."
+#~ msgstr "Podes beber o leite que produce este animal."
+
+#~ msgctxt "board1|"
+#~ msgid ""
+#~ "The cat goes 'meow, meow'. Cats usually hate water because their fur "
+#~ "doesn't stay warm when it is wet."
+#~ msgstr ""
+#~ "O gato mía ou miaña. Os gatos adoitar odiar a auga porque a súa pelaxe "
+#~ "non retén a calor cando está mollada."
+
+#~ msgctxt "board1|"
+#~ msgid "This pet likes chasing mice."
+#~ msgstr "Esta mascota gosta de perseguir ratos."
+
+#~ msgctxt "board1|"
+#~ msgid "The pig goes 'oink, oink'. Pigs are the 4th most intelligent animal."
+#~ msgstr ""
+#~ "O porco gorla ou gruñe, e ás veces acocora. Os porcos son o cuarto animal "
+#~ "máis intelixente."
+
+#~ msgctxt "board1|"
+#~ msgid "This animal likes to lie in the mud."
+#~ msgstr "Este animal gosta de deitar na lama."
+
+#~ msgctxt "board1|"
+#~ msgid ""
+#~ "The duck goes 'quack, quack'. Ducks have special features like webbed "
+#~ "feet and produce an oil to make their feathers 'waterproof'."
+#~ msgstr ""
+#~ "O parrulo fai «cuac, cuac». Os parrulos teñen características que os fan "
+#~ "especiais, como por exemplo que teñen membranas entre as dedas, e "
+#~ "producen unha grasa que fai que a súa plumaxe sexa resistente á auga."
+
+#~ msgctxt "board1|"
+#~ msgid ""
+#~ "The dog goes 'bark! bark!'. Dogs are great human companions and usually "
+#~ "enjoy love and attention."
+#~ msgstr ""
+#~ "O can atouza ou ladra. Os cans son moi bos compañeiros para as persoas, e "
+#~ "adoitar gozar do amor e da atención."
+
+#~ msgctxt "board1|"
+#~ msgid "Rooster"
+#~ msgstr "Galo"
+
+#~ msgctxt "board1|"
+#~ msgid ""
+#~ "The rooster goes 'coc-a-doodle-doo!'. Roosters have been on farms for "
+#~ "about 5,000 years. Every morning it wakes the farm up with its noises."
+#~ msgstr ""
+#~ "O galo cacarexa. Os galos levan nas granxas desde hai arredor de 5.000 "
+#~ "anos. Cada mañá espertan as granxas coa súa voz."
+
+#~ msgctxt "board1|"
+#~ msgid "This animal wakes the farm up in the morning."
+#~ msgstr "O animal esperta a granxa pola mañá."
+
+#~ msgctxt "board1|"
+#~ msgid ""
+#~ "The sheep is a mammal that bears a fleece of wool. It is a grazing "
+#~ "herbivore, bred for its wool, its meat, and its milk. The fleece can be "
+#~ "removed and used to produce articles of clothing and blankets, among "
+#~ "other things."
+#~ msgstr ""
+#~ "A ovella é un mamífero que está arroupado de la. É un animal hervíboro "
+#~ "que pasta, e que se cría pasar obter la, carne e leite. A la pódeselle "
+#~ "retirar e usala para producir roupa e mantas, por exemplo."
 
 #, fuzzy
 #~| msgctxt "ActivityInfo|"

@@ -6445,13 +6445,19 @@ msgstr "കുതിര"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:22
 msgctxt "board1|"
-msgid "The horse goes 'neigh! neigh!'. Horses usually sleep standing up."
-msgstr "കുതിര 'ഹീ! ഹീ!' എന്നു ചിനയ്ക്കുന്നു. കുതിര സാധാരണയായി നിന്നുകൊണ്ടാണ് ഉറങ്ങുന്നത്."
+msgid ""
+"The horse goes 'neigh'. Horses are adapted to run, allowing them to quickly "
+"escape predators, and possess an excellent sense of balance. They have "
+"single-toed hooves. "
+msgstr ""
 
 #: activities/explore_farm_animals/resource/board/board1.qml:25
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "This animal's ancestors were wolves."
 msgctxt "board1|"
-msgid "You can ride on the back of this animal!"
-msgstr "നിങ്ങൾക്ക് ഈ മൃഗത്തിനു പുറത്തിരുന്ന് സഞ്ചരിക്കാം!"
+msgid "This animal has single-toed hooves."
+msgstr "ചെന്നായകളായിരുന്നു ഈ മൃഗത്തിന്റെ പൂർവികർ."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:33
 msgctxt "board1|"
@@ -6461,16 +6467,17 @@ msgstr "പിടക്കോഴി"
 #: activities/explore_farm_animals/resource/board/board1.qml:34
 msgctxt "board1|"
 msgid ""
-"The chicken goes 'luck, cackle, cluck'. Chickens have over 200 different "
-"noises they can use to communicate."
+"The chicken goes 'cluck'. Domestic chickens have wings, but are not capable "
+"of long-distance flight. They have a comb on their head."
 msgstr ""
-"പിടക്കോഴി 'കൊക്ക്, കൊക്ക് ' എന്ന് കൊക്കി വിളിക്കുന്നു. ഇവയ്ക്ക് ആശയവിനിമയത്തിനായി 200-ലധികം "
-"ശബ്ദങ്ങൾ ഉണ്ടാക്കാൻ കഴിയും."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:37
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "This animal likes to come out at night."
 msgctxt "board1|"
-msgid "This animal lays eggs."
-msgstr "ഇതു മുട്ടകളിടും."
+msgid "This animal has a comb on its head."
+msgstr "ഇതിന് രാത്രി പുറത്തിറങ്ങാനാണ് ഇഷ്ടം."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:45
 msgctxt "board1|"
@@ -6480,16 +6487,15 @@ msgstr "പശു"
 #: activities/explore_farm_animals/resource/board/board1.qml:46
 msgctxt "board1|"
 msgid ""
-"The cow goes 'moo! moo!'. Cows are herbivorous mammals. They graze all day "
-"in the meadow."
+"The cow goes 'moo'. Cows have a wide field of view of 330°. They have a well-"
+"developed sense of taste, with around 20,000 taste buds. They can detect "
+"odours 8km away."
 msgstr ""
-"പശു 'മ്പേ മ്പേ' എന്ന് അമറുന്നു. പശുക്കൾ സസ്യഭുക്കായ സസ്തനികൾ ആണ്. അവ മുഴുവൻ സമയവും പുൽത്തകിടിയിൽ "
-"മേഞ്ഞുനടക്കുന്നു."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:49
 msgctxt "board1|"
-msgid "You can drink the milk this animal produces."
-msgstr "ഈ മൃഗം ഉല്പാദിപ്പിക്കുന്ന പാൽ നിങ്ങൾക്ക് കുടിക്കാൻ കഴിയും. "
+msgid "This animal has around 20,000 taste buds."
+msgstr ""
 
 #: activities/explore_farm_animals/resource/board/board1.qml:57
 msgctxt "board1|"
@@ -6499,16 +6505,18 @@ msgstr "പൂച്ച"
 #: activities/explore_farm_animals/resource/board/board1.qml:58
 msgctxt "board1|"
 msgid ""
-"The cat goes 'meow, meow'. Cats usually hate water because their fur doesn't "
-"stay warm when it is wet."
+"The cat goes 'meow'. Cats are valued by humans for companionship and their "
+"ability to chase mice and other rodents. They purr to communicate various "
+"emotions."
 msgstr ""
-"പൂച്ച 'മ്യാവൂ, മ്യാവൂ' എന്നു കരയുന്നു. പൂച്ചകൾക്ക് സാധാരണയായി വെള്ളത്തോടു വെറുപ്പാണ് കാരണം നനഞ്ഞാൽ "
-"പിന്നെ അവയുടെ രോമങ്ങളിൽ ചൂടു നില്ക്കില്ല."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:61
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "This animal lays eggs."
 msgctxt "board1|"
-msgid "This pet likes chasing mice."
-msgstr "ഈ ഓമന മൃഗത്തിന് ചുണ്ടെലികളെ തുരത്താൻ ഇഷ്ടമാണ്."
+msgid "This animal can purr."
+msgstr "ഇതു മുട്ടകളിടും."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:69
 msgctxt "board1|"
@@ -6517,13 +6525,15 @@ msgstr "പന്നി"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:70
 msgctxt "board1|"
-msgid "The pig goes 'oink, oink'. Pigs are the 4th most intelligent animal."
-msgstr "പന്നി 'ങ്റ്വ, ങ്റ്വ' എന്നു മുരളുന്നു. പന്നികൾ ഏറ്റവും ബുദ്ധിയുള്ള 4-ാമത്തെ മൃഗമാണ്."
+msgid ""
+"The pig goes 'oink'. Pigs wallow in the mud, mainly to control their body "
+"temperature."
+msgstr ""
 
 #: activities/explore_farm_animals/resource/board/board1.qml:73
 msgctxt "board1|"
-msgid "This animal likes to lie in the mud."
-msgstr "ഈ മൃഗത്തിന് ചെളിയിൽ കിടക്കാനാണിഷ്ടം."
+msgid "This animal wallows in the mud to control its body temperature."
+msgstr ""
 
 #: activities/explore_farm_animals/resource/board/board1.qml:81
 msgctxt "board1|"
@@ -6533,15 +6543,16 @@ msgstr "താറാവ്"
 #: activities/explore_farm_animals/resource/board/board1.qml:82
 msgctxt "board1|"
 msgid ""
-"The duck goes 'quack, quack'. Ducks have special features like webbed feet "
-"and produce an oil to make their feathers 'waterproof'."
+"The duck goes 'quack'. Ducks are mostly aquatic birds. They have waterproof "
+"feathers and webbed feet which enable them to swim on the water."
 msgstr ""
-"താറാവ് 'ക്വാക്ക്, ക്വാക്ക്' എന്നു കരയുന്നു. കാൽവിരലുകൾ തൊലി കൊണ്ടു ബന്ധിപ്പിച്ചിരിക്കുന്നു, തൂവൽ "
-"നനയാതിരിക്കാനായി ഒരുതരം എണ്ണ ഉല്പാദിപ്പിക്കും എന്നിവ താറാവിന്റെ പ്രത്യേകതകളാണ്."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:85
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "This animal has webbed feet so it can swim in the water."
 msgctxt "board1|"
-msgid "This animal has webbed feet so it can swim in the water."
+msgid "This animal has webbed feet and can swim on the water."
 msgstr "തൊലി കൊണ്ടു ബന്ധിപ്പിച്ചിരിക്കുന്ന കാൽവിരലുകൾ അവയെ വെള്ളത്തിൽ നീന്താൻ സഹായിക്കുന്നു. "
 
 #: activities/explore_farm_animals/resource/board/board1.qml:93
@@ -6550,14 +6561,23 @@ msgid "Owl"
 msgstr "മൂങ്ങ"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:94
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid ""
+#| "The owl goes 'hoo. hoo.' The owl has excellent vision and hearing at "
+#| "night."
 msgctxt "board1|"
 msgid ""
-"The owl goes 'hoo. hoo.' The owl has excellent vision and hearing at night."
+"The owl goes 'hoot'. Owls are nocturnal birds, they have excellent vision "
+"and hearing at night."
 msgstr "മൂങ്ങ 'ഊ. ഊ.' എന്നു മൂളുന്നു. മൂങ്ങയുടെ രാത്രികാല കാഴ്ചയും കേൾവിയും മികച്ചതാണ്."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:97
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "This animal likes to come out at night."
 msgctxt "board1|"
-msgid "This animal likes to come out at night."
+msgid "This animal is a nocturnal bird."
 msgstr "ഇതിന് രാത്രി പുറത്തിറങ്ങാനാണ് ഇഷ്ടം."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:105
@@ -6568,69 +6588,49 @@ msgstr "പട്ടി"
 #: activities/explore_farm_animals/resource/board/board1.qml:106
 msgctxt "board1|"
 msgid ""
-"The dog goes 'bark! bark!'. Dogs are great human companions and usually "
-"enjoy love and attention."
+"The dog goes 'woof'. Dogs are probably the oldest domesticated species. They "
+"are descendants of the wolf."
 msgstr ""
-"പട്ടി 'ബൗ! ബൗ!' എന്നു കുരയ്ക്കുന്നു. പട്ടികൾ മനുഷ്യരുടെ മികച്ച കൂട്ടാളികളും സാധാരണയായി സ്നേഹവും "
-"ശ്രദ്ധയും ആസ്വദിക്കുന്നവരുമാണ്."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:109
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "This animal is a close relative to the goat."
 msgctxt "board1|"
-msgid "This animal's ancestors were wolves."
-msgstr "ചെന്നായകളായിരുന്നു ഈ മൃഗത്തിന്റെ പൂർവികർ."
+msgid "This animal is a descendant of the wolf."
+msgstr "ആടിന്റെ അടുത്ത ബന്ധുവാണ് ഈ മൃഗം."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:117
-msgctxt "board1|"
-msgid "Rooster"
-msgstr "പൂവൻകോഴി"
-
-#: activities/explore_farm_animals/resource/board/board1.qml:118
-msgctxt "board1|"
-msgid ""
-"The rooster goes 'coc-a-doodle-doo!'. Roosters have been on farms for about "
-"5,000 years. Every morning it wakes the farm up with its noises."
-msgstr ""
-"പൂവൻകോഴി 'കൊക്കരേ-കോ!' എന്നു കൂവുന്നു. 5000-ത്തോളം വർഷങ്ങളായി ഇവ കൃഷിയിടങ്ങളിലുണ്ട്. എല്ലാ "
-"ദിവസവും രാവിലെ ഇവ കൃഷിയിടത്തെ കൂവിയുണർത്തും."
-
-#: activities/explore_farm_animals/resource/board/board1.qml:121
-msgctxt "board1|"
-msgid "This animal wakes the farm up in the morning."
-msgstr "ഇവ രാവിലെ കൃഷിയിടത്തെ കൂവിയുണർത്തുന്നു."
-
-#: activities/explore_farm_animals/resource/board/board1.qml:129
 msgctxt "board1|"
 msgid "Sheep"
 msgstr "ചെമ്മരിയാട്"
 
-#: activities/explore_farm_animals/resource/board/board1.qml:130
+#: activities/explore_farm_animals/resource/board/board1.qml:118
 msgctxt "board1|"
 msgid ""
-"The sheep is a mammal that bears a fleece of wool. It is a grazing "
-"herbivore, bred for its wool, its meat, and its milk. The fleece can be "
-"removed and used to produce articles of clothing and blankets, among other "
-"things."
+"The sheep goes 'baa'. Most sheep breeds bear a fleece of wool. The fleece "
+"can be sheared and used to produce textile fibre."
 msgstr ""
-"കമ്പിളി രോമമുള്ള സസ്തനിയാണ് ചെമ്മരിയാട്. മേഞ്ഞുനടക്കുന്ന, സസ്യഭുക്കായ ഇവയെ കമ്പിളിയ്ക്കും "
-"മാംസത്തിനും പാലിനും വേണ്ടി വളർത്തുന്നു. രോമം മുറിച്ചെടുത്ത്, അത് പലതരം വസ്ത്രങ്ങളും പുതപ്പുകളും "
-"മറ്റും ഉണ്ടാക്കാൻ ഉപയോഗിക്കുന്നു."
 
-#: activities/explore_farm_animals/resource/board/board1.qml:133
+#: activities/explore_farm_animals/resource/board/board1.qml:121
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "This animal's ancestors were wolves."
 msgctxt "board1|"
-msgid "This animal is a close relative to the goat."
-msgstr "ആടിന്റെ അടുത്ത ബന്ധുവാണ് ഈ മൃഗം."
+msgid "This animal produces wool."
+msgstr "ചെന്നായകളായിരുന്നു ഈ മൃഗത്തിന്റെ പൂർവികർ."
 
-#: activities/explore_farm_animals/resource/board/board1.qml:143
+#: activities/explore_farm_animals/resource/board/board1.qml:131
 msgctxt "board1|"
 msgid "Click on each farm animal to discover them."
 msgstr "ഓരോ വളർത്തു മൃഗത്തിലും ക്ലിക്ക് ചെയ്ത് അവയെ കുറിച്ച് അറിയൂ."
 
-#: activities/explore_farm_animals/resource/board/board1.qml:146
+#: activities/explore_farm_animals/resource/board/board1.qml:134
 msgctxt "board1|"
 msgid "Click on the farm animal that makes the sound you hear."
 msgstr "നിങ്ങൾ കേൾക്കുന്ന ശബ്ദം പുറപ്പെടുവിക്കുന്ന വളർത്തു മൃഗത്തിൽ ക്ലിക്ക് ചെയ്യൂ."
 
-#: activities/explore_farm_animals/resource/board/board1.qml:149
+#: activities/explore_farm_animals/resource/board/board1.qml:137
 msgctxt "board1|"
 msgid "Click the animal that matches the description."
 msgstr "വിവരണത്തിനു ചേരുന്ന മൃഗത്തിൽ ക്ലിക്ക് ചെയ്യൂ."
@@ -25471,6 +25471,97 @@ msgstr "നോക്കാതെ വിടുക"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "തുടങ്ങാം"
+
+#~ msgctxt "board1|"
+#~ msgid "The horse goes 'neigh! neigh!'. Horses usually sleep standing up."
+#~ msgstr "കുതിര 'ഹീ! ഹീ!' എന്നു ചിനയ്ക്കുന്നു. കുതിര സാധാരണയായി നിന്നുകൊണ്ടാണ് ഉറങ്ങുന്നത്."
+
+#~ msgctxt "board1|"
+#~ msgid "You can ride on the back of this animal!"
+#~ msgstr "നിങ്ങൾക്ക് ഈ മൃഗത്തിനു പുറത്തിരുന്ന് സഞ്ചരിക്കാം!"
+
+#~ msgctxt "board1|"
+#~ msgid ""
+#~ "The chicken goes 'luck, cackle, cluck'. Chickens have over 200 different "
+#~ "noises they can use to communicate."
+#~ msgstr ""
+#~ "പിടക്കോഴി 'കൊക്ക്, കൊക്ക് ' എന്ന് കൊക്കി വിളിക്കുന്നു. ഇവയ്ക്ക് ആശയവിനിമയത്തിനായി 200-"
+#~ "ലധികം ശബ്ദങ്ങൾ ഉണ്ടാക്കാൻ കഴിയും."
+
+#~ msgctxt "board1|"
+#~ msgid ""
+#~ "The cow goes 'moo! moo!'. Cows are herbivorous mammals. They graze all "
+#~ "day in the meadow."
+#~ msgstr ""
+#~ "പശു 'മ്പേ മ്പേ' എന്ന് അമറുന്നു. പശുക്കൾ സസ്യഭുക്കായ സസ്തനികൾ ആണ്. അവ മുഴുവൻ സമയവും "
+#~ "പുൽത്തകിടിയിൽ മേഞ്ഞുനടക്കുന്നു."
+
+#~ msgctxt "board1|"
+#~ msgid "You can drink the milk this animal produces."
+#~ msgstr "ഈ മൃഗം ഉല്പാദിപ്പിക്കുന്ന പാൽ നിങ്ങൾക്ക് കുടിക്കാൻ കഴിയും. "
+
+#~ msgctxt "board1|"
+#~ msgid ""
+#~ "The cat goes 'meow, meow'. Cats usually hate water because their fur "
+#~ "doesn't stay warm when it is wet."
+#~ msgstr ""
+#~ "പൂച്ച 'മ്യാവൂ, മ്യാവൂ' എന്നു കരയുന്നു. പൂച്ചകൾക്ക് സാധാരണയായി വെള്ളത്തോടു വെറുപ്പാണ് കാരണം "
+#~ "നനഞ്ഞാൽ പിന്നെ അവയുടെ രോമങ്ങളിൽ ചൂടു നില്ക്കില്ല."
+
+#~ msgctxt "board1|"
+#~ msgid "This pet likes chasing mice."
+#~ msgstr "ഈ ഓമന മൃഗത്തിന് ചുണ്ടെലികളെ തുരത്താൻ ഇഷ്ടമാണ്."
+
+#~ msgctxt "board1|"
+#~ msgid "The pig goes 'oink, oink'. Pigs are the 4th most intelligent animal."
+#~ msgstr "പന്നി 'ങ്റ്വ, ങ്റ്വ' എന്നു മുരളുന്നു. പന്നികൾ ഏറ്റവും ബുദ്ധിയുള്ള 4-ാമത്തെ മൃഗമാണ്."
+
+#~ msgctxt "board1|"
+#~ msgid "This animal likes to lie in the mud."
+#~ msgstr "ഈ മൃഗത്തിന് ചെളിയിൽ കിടക്കാനാണിഷ്ടം."
+
+#~ msgctxt "board1|"
+#~ msgid ""
+#~ "The duck goes 'quack, quack'. Ducks have special features like webbed "
+#~ "feet and produce an oil to make their feathers 'waterproof'."
+#~ msgstr ""
+#~ "താറാവ് 'ക്വാക്ക്, ക്വാക്ക്' എന്നു കരയുന്നു. കാൽവിരലുകൾ തൊലി കൊണ്ടു ബന്ധിപ്പിച്ചിരിക്കുന്നു, തൂവൽ "
+#~ "നനയാതിരിക്കാനായി ഒരുതരം എണ്ണ ഉല്പാദിപ്പിക്കും എന്നിവ താറാവിന്റെ പ്രത്യേകതകളാണ്."
+
+#~ msgctxt "board1|"
+#~ msgid ""
+#~ "The dog goes 'bark! bark!'. Dogs are great human companions and usually "
+#~ "enjoy love and attention."
+#~ msgstr ""
+#~ "പട്ടി 'ബൗ! ബൗ!' എന്നു കുരയ്ക്കുന്നു. പട്ടികൾ മനുഷ്യരുടെ മികച്ച കൂട്ടാളികളും സാധാരണയായി "
+#~ "സ്നേഹവും ശ്രദ്ധയും ആസ്വദിക്കുന്നവരുമാണ്."
+
+#~ msgctxt "board1|"
+#~ msgid "Rooster"
+#~ msgstr "പൂവൻകോഴി"
+
+#~ msgctxt "board1|"
+#~ msgid ""
+#~ "The rooster goes 'coc-a-doodle-doo!'. Roosters have been on farms for "
+#~ "about 5,000 years. Every morning it wakes the farm up with its noises."
+#~ msgstr ""
+#~ "പൂവൻകോഴി 'കൊക്കരേ-കോ!' എന്നു കൂവുന്നു. 5000-ത്തോളം വർഷങ്ങളായി ഇവ കൃഷിയിടങ്ങളിലുണ്ട്. "
+#~ "എല്ലാ ദിവസവും രാവിലെ ഇവ കൃഷിയിടത്തെ കൂവിയുണർത്തും."
+
+#~ msgctxt "board1|"
+#~ msgid "This animal wakes the farm up in the morning."
+#~ msgstr "ഇവ രാവിലെ കൃഷിയിടത്തെ കൂവിയുണർത്തുന്നു."
+
+#~ msgctxt "board1|"
+#~ msgid ""
+#~ "The sheep is a mammal that bears a fleece of wool. It is a grazing "
+#~ "herbivore, bred for its wool, its meat, and its milk. The fleece can be "
+#~ "removed and used to produce articles of clothing and blankets, among "
+#~ "other things."
+#~ msgstr ""
+#~ "കമ്പിളി രോമമുള്ള സസ്തനിയാണ് ചെമ്മരിയാട്. മേഞ്ഞുനടക്കുന്ന, സസ്യഭുക്കായ ഇവയെ കമ്പിളിയ്ക്കും "
+#~ "മാംസത്തിനും പാലിനും വേണ്ടി വളർത്തുന്നു. രോമം മുറിച്ചെടുത്ത്, അത് പലതരം വസ്ത്രങ്ങളും പുതപ്പുകളും "
+#~ "മറ്റും ഉണ്ടാക്കാൻ ഉപയോഗിക്കുന്നു."
 
 #~ msgctxt "ActivityInfo|"
 #~ msgid ""

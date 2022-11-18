@@ -6701,13 +6701,19 @@ msgstr "Pferd"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:22
 msgctxt "board1|"
-msgid "The horse goes 'neigh! neigh!'. Horses usually sleep standing up."
-msgstr "Das Pferd macht »wiihiihi!« Pferde schlafen normalerweise im Stehen."
+msgid ""
+"The horse goes 'neigh'. Horses are adapted to run, allowing them to quickly "
+"escape predators, and possess an excellent sense of balance. They have "
+"single-toed hooves. "
+msgstr ""
 
 #: activities/explore_farm_animals/resource/board/board1.qml:25
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "This animal's ancestors were wolves."
 msgctxt "board1|"
-msgid "You can ride on the back of this animal!"
-msgstr "Du kannst auf dem Rücken dieses Tieres reiten."
+msgid "This animal has single-toed hooves."
+msgstr "Dieses Tier stammt vom Wolf ab."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:33
 msgctxt "board1|"
@@ -6717,16 +6723,17 @@ msgstr "Huhn"
 #: activities/explore_farm_animals/resource/board/board1.qml:34
 msgctxt "board1|"
 msgid ""
-"The chicken goes 'luck, cackle, cluck'. Chickens have over 200 different "
-"noises they can use to communicate."
+"The chicken goes 'cluck'. Domestic chickens have wings, but are not capable "
+"of long-distance flight. They have a comb on their head."
 msgstr ""
-"Ein Huhn macht »Gaaack, gaaack«. Hühner machen über 200 verschiedene "
-"Geräusche, mit denen sie sich verständigen."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:37
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "This animal likes to come out at night."
 msgctxt "board1|"
-msgid "This animal lays eggs."
-msgstr "Dieses Tier legt Eier."
+msgid "This animal has a comb on its head."
+msgstr "Dieses Tier ist gerne in der Nacht aktiv."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:45
 msgctxt "board1|"
@@ -6736,16 +6743,15 @@ msgstr "Kuh"
 #: activities/explore_farm_animals/resource/board/board1.qml:46
 msgctxt "board1|"
 msgid ""
-"The cow goes 'moo! moo!'. Cows are herbivorous mammals. They graze all day "
-"in the meadow."
+"The cow goes 'moo'. Cows have a wide field of view of 330°. They have a well-"
+"developed sense of taste, with around 20,000 taste buds. They can detect "
+"odours 8km away."
 msgstr ""
-"Die Kuh macht „Muh Muh“. Kühe sind pflanzenfressende Säugetiere. Sie grasen "
-"den ganzen Tag auf der Weide."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:49
 msgctxt "board1|"
-msgid "You can drink the milk this animal produces."
-msgstr "Die Milch dieses Tiers kannst du trinken."
+msgid "This animal has around 20,000 taste buds."
+msgstr ""
 
 #: activities/explore_farm_animals/resource/board/board1.qml:57
 msgctxt "board1|"
@@ -6755,16 +6761,18 @@ msgstr "Katze"
 #: activities/explore_farm_animals/resource/board/board1.qml:58
 msgctxt "board1|"
 msgid ""
-"The cat goes 'meow, meow'. Cats usually hate water because their fur doesn't "
-"stay warm when it is wet."
+"The cat goes 'meow'. Cats are valued by humans for companionship and their "
+"ability to chase mice and other rodents. They purr to communicate various "
+"emotions."
 msgstr ""
-"Die Katze mach „Miau Miau“. Katzen mögen normalerweise kein Wasser, weil ihr "
-"Fell nicht mehr wärmt, wenn es nass ist."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:61
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "This animal lays eggs."
 msgctxt "board1|"
-msgid "This pet likes chasing mice."
-msgstr "Dieses Haustier jagt gerne Mäuse."
+msgid "This animal can purr."
+msgstr "Dieses Tier legt Eier."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:69
 msgctxt "board1|"
@@ -6773,15 +6781,15 @@ msgstr "Schwein"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:70
 msgctxt "board1|"
-msgid "The pig goes 'oink, oink'. Pigs are the 4th most intelligent animal."
+msgid ""
+"The pig goes 'oink'. Pigs wallow in the mud, mainly to control their body "
+"temperature."
 msgstr ""
-"Das Schwein macht „Oink Oink“. Schweine stehen an vierter Stelle der "
-"intelligenten Lebewesen."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:73
 msgctxt "board1|"
-msgid "This animal likes to lie in the mud."
-msgstr "Dieses Tier liegt gerne im Schlamm."
+msgid "This animal wallows in the mud to control its body temperature."
+msgstr ""
 
 #: activities/explore_farm_animals/resource/board/board1.qml:81
 msgctxt "board1|"
@@ -6791,16 +6799,16 @@ msgstr "Ente"
 #: activities/explore_farm_animals/resource/board/board1.qml:82
 msgctxt "board1|"
 msgid ""
-"The duck goes 'quack, quack'. Ducks have special features like webbed feet "
-"and produce an oil to make their feathers 'waterproof'."
+"The duck goes 'quack'. Ducks are mostly aquatic birds. They have waterproof "
+"feathers and webbed feet which enable them to swim on the water."
 msgstr ""
-"Die Ente macht „Quack Quack“. Enten haben besondere Eigenschaften wie Füße "
-"mit Schwimmhäuten und sie produzieren ein Öl, mit dem sie ihre Federn "
-"wasserdicht machen."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:85
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "This animal has webbed feet so it can swim in the water."
 msgctxt "board1|"
-msgid "This animal has webbed feet so it can swim in the water."
+msgid "This animal has webbed feet and can swim on the water."
 msgstr ""
 "Dieses Tier hat Füße mit Schwimmhäuten und kann damit gut im Wasser "
 "schwimmen."
@@ -6811,16 +6819,25 @@ msgid "Owl"
 msgstr "Eule"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:94
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid ""
+#| "The owl goes 'hoo. hoo.' The owl has excellent vision and hearing at "
+#| "night."
 msgctxt "board1|"
 msgid ""
-"The owl goes 'hoo. hoo.' The owl has excellent vision and hearing at night."
+"The owl goes 'hoot'. Owls are nocturnal birds, they have excellent vision "
+"and hearing at night."
 msgstr ""
 "Eine Eule macht  »Huu, huu«. Eulen sehen hervorragend in der Nacht und haben "
 "ein sehr gutes Gehör."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:97
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "This animal likes to come out at night."
 msgctxt "board1|"
-msgid "This animal likes to come out at night."
+msgid "This animal is a nocturnal bird."
 msgstr "Dieses Tier ist gerne in der Nacht aktiv."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:105
@@ -6831,70 +6848,49 @@ msgstr "Hund"
 #: activities/explore_farm_animals/resource/board/board1.qml:106
 msgctxt "board1|"
 msgid ""
-"The dog goes 'bark! bark!'. Dogs are great human companions and usually "
-"enjoy love and attention."
+"The dog goes 'woof'. Dogs are probably the oldest domesticated species. They "
+"are descendants of the wolf."
 msgstr ""
-"Der Hund macht „Wau Wau“. Hunde sind die treuesten Begleiter der Menschen "
-"und genießen Zuneigung und Aufmerksamkeit."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:109
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "This animal is a close relative to the goat."
 msgctxt "board1|"
-msgid "This animal's ancestors were wolves."
-msgstr "Dieses Tier stammt vom Wolf ab."
+msgid "This animal is a descendant of the wolf."
+msgstr "Dieses Tier ist ein enger Verwandter der Ziege."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:117
-msgctxt "board1|"
-msgid "Rooster"
-msgstr "Hahn"
-
-#: activities/explore_farm_animals/resource/board/board1.qml:118
-msgctxt "board1|"
-msgid ""
-"The rooster goes 'coc-a-doodle-doo!'. Roosters have been on farms for about "
-"5,000 years. Every morning it wakes the farm up with its noises."
-msgstr ""
-"Ein Hahn macht »Kikiriki«. Hähne leben seit etwa 5.000 Jahren auf "
-"Bauernhöfen. Jeden morgen wecken Sie den Bauernhof mit ihren Lauten."
-
-#: activities/explore_farm_animals/resource/board/board1.qml:121
-msgctxt "board1|"
-msgid "This animal wakes the farm up in the morning."
-msgstr "Dieses Tier weckt morgens den ganzen Bauernhof auf."
-
-#: activities/explore_farm_animals/resource/board/board1.qml:129
 msgctxt "board1|"
 msgid "Sheep"
 msgstr "Schaf"
 
-#: activities/explore_farm_animals/resource/board/board1.qml:130
+#: activities/explore_farm_animals/resource/board/board1.qml:118
 msgctxt "board1|"
 msgid ""
-"The sheep is a mammal that bears a fleece of wool. It is a grazing "
-"herbivore, bred for its wool, its meat, and its milk. The fleece can be "
-"removed and used to produce articles of clothing and blankets, among other "
-"things."
+"The sheep goes 'baa'. Most sheep breeds bear a fleece of wool. The fleece "
+"can be sheared and used to produce textile fibre."
 msgstr ""
-"Das Schaf ist ein Säugetier, das einen Pelz aus Wolle trägt. Es ist ein "
-"grasender Pflanzenfresser und wird für seine Wolle, sein Fleisch und seine "
-"Milch gezüchtet. Sein Fell kann geschoren werden und wird benutzt um unter "
-"anderem Kleidung und Decken herzustellen."
 
-#: activities/explore_farm_animals/resource/board/board1.qml:133
+#: activities/explore_farm_animals/resource/board/board1.qml:121
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "This animal's ancestors were wolves."
 msgctxt "board1|"
-msgid "This animal is a close relative to the goat."
-msgstr "Dieses Tier ist ein enger Verwandter der Ziege."
+msgid "This animal produces wool."
+msgstr "Dieses Tier stammt vom Wolf ab."
 
-#: activities/explore_farm_animals/resource/board/board1.qml:143
+#: activities/explore_farm_animals/resource/board/board1.qml:131
 msgctxt "board1|"
 msgid "Click on each farm animal to discover them."
 msgstr "Klicke auf ein Bauernhoftier, um es kennenzulernen."
 
-#: activities/explore_farm_animals/resource/board/board1.qml:146
+#: activities/explore_farm_animals/resource/board/board1.qml:134
 msgctxt "board1|"
 msgid "Click on the farm animal that makes the sound you hear."
 msgstr "Klicke auf das Bauernhoftier, das das Geräusch macht, das du hörst."
 
-#: activities/explore_farm_animals/resource/board/board1.qml:149
+#: activities/explore_farm_animals/resource/board/board1.qml:137
 msgctxt "board1|"
 msgid "Click the animal that matches the description."
 msgstr "Klicke auf das Tier, das zur Beschreibung passt."
@@ -26272,6 +26268,102 @@ msgstr "Überspringen"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Start"
+
+#~ msgctxt "board1|"
+#~ msgid "The horse goes 'neigh! neigh!'. Horses usually sleep standing up."
+#~ msgstr ""
+#~ "Das Pferd macht »wiihiihi!« Pferde schlafen normalerweise im Stehen."
+
+#~ msgctxt "board1|"
+#~ msgid "You can ride on the back of this animal!"
+#~ msgstr "Du kannst auf dem Rücken dieses Tieres reiten."
+
+#~ msgctxt "board1|"
+#~ msgid ""
+#~ "The chicken goes 'luck, cackle, cluck'. Chickens have over 200 different "
+#~ "noises they can use to communicate."
+#~ msgstr ""
+#~ "Ein Huhn macht »Gaaack, gaaack«. Hühner machen über 200 verschiedene "
+#~ "Geräusche, mit denen sie sich verständigen."
+
+#~ msgctxt "board1|"
+#~ msgid ""
+#~ "The cow goes 'moo! moo!'. Cows are herbivorous mammals. They graze all "
+#~ "day in the meadow."
+#~ msgstr ""
+#~ "Die Kuh macht „Muh Muh“. Kühe sind pflanzenfressende Säugetiere. Sie "
+#~ "grasen den ganzen Tag auf der Weide."
+
+#~ msgctxt "board1|"
+#~ msgid "You can drink the milk this animal produces."
+#~ msgstr "Die Milch dieses Tiers kannst du trinken."
+
+#~ msgctxt "board1|"
+#~ msgid ""
+#~ "The cat goes 'meow, meow'. Cats usually hate water because their fur "
+#~ "doesn't stay warm when it is wet."
+#~ msgstr ""
+#~ "Die Katze mach „Miau Miau“. Katzen mögen normalerweise kein Wasser, weil "
+#~ "ihr Fell nicht mehr wärmt, wenn es nass ist."
+
+#~ msgctxt "board1|"
+#~ msgid "This pet likes chasing mice."
+#~ msgstr "Dieses Haustier jagt gerne Mäuse."
+
+#~ msgctxt "board1|"
+#~ msgid "The pig goes 'oink, oink'. Pigs are the 4th most intelligent animal."
+#~ msgstr ""
+#~ "Das Schwein macht „Oink Oink“. Schweine stehen an vierter Stelle der "
+#~ "intelligenten Lebewesen."
+
+#~ msgctxt "board1|"
+#~ msgid "This animal likes to lie in the mud."
+#~ msgstr "Dieses Tier liegt gerne im Schlamm."
+
+#~ msgctxt "board1|"
+#~ msgid ""
+#~ "The duck goes 'quack, quack'. Ducks have special features like webbed "
+#~ "feet and produce an oil to make their feathers 'waterproof'."
+#~ msgstr ""
+#~ "Die Ente macht „Quack Quack“. Enten haben besondere Eigenschaften wie "
+#~ "Füße mit Schwimmhäuten und sie produzieren ein Öl, mit dem sie ihre "
+#~ "Federn wasserdicht machen."
+
+#~ msgctxt "board1|"
+#~ msgid ""
+#~ "The dog goes 'bark! bark!'. Dogs are great human companions and usually "
+#~ "enjoy love and attention."
+#~ msgstr ""
+#~ "Der Hund macht „Wau Wau“. Hunde sind die treuesten Begleiter der Menschen "
+#~ "und genießen Zuneigung und Aufmerksamkeit."
+
+#~ msgctxt "board1|"
+#~ msgid "Rooster"
+#~ msgstr "Hahn"
+
+#~ msgctxt "board1|"
+#~ msgid ""
+#~ "The rooster goes 'coc-a-doodle-doo!'. Roosters have been on farms for "
+#~ "about 5,000 years. Every morning it wakes the farm up with its noises."
+#~ msgstr ""
+#~ "Ein Hahn macht »Kikiriki«. Hähne leben seit etwa 5.000 Jahren auf "
+#~ "Bauernhöfen. Jeden morgen wecken Sie den Bauernhof mit ihren Lauten."
+
+#~ msgctxt "board1|"
+#~ msgid "This animal wakes the farm up in the morning."
+#~ msgstr "Dieses Tier weckt morgens den ganzen Bauernhof auf."
+
+#~ msgctxt "board1|"
+#~ msgid ""
+#~ "The sheep is a mammal that bears a fleece of wool. It is a grazing "
+#~ "herbivore, bred for its wool, its meat, and its milk. The fleece can be "
+#~ "removed and used to produce articles of clothing and blankets, among "
+#~ "other things."
+#~ msgstr ""
+#~ "Das Schaf ist ein Säugetier, das einen Pelz aus Wolle trägt. Es ist ein "
+#~ "grasender Pflanzenfresser und wird für seine Wolle, sein Fleisch und "
+#~ "seine Milch gezüchtet. Sein Fell kann geschoren werden und wird benutzt "
+#~ "um unter anderem Kleidung und Decken herzustellen."
 
 #~ msgctxt "ActivityInfo|"
 #~ msgid ""

@@ -6701,13 +6701,19 @@ msgstr "घोड़ा"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:22
 msgctxt "board1|"
-msgid "The horse goes 'neigh! neigh!'. Horses usually sleep standing up."
-msgstr "घोड़े 'हिनहिनाते' हैं । घोड़े आमतौर पर खड़े होके सोते हैं।"
+msgid ""
+"The horse goes 'neigh'. Horses are adapted to run, allowing them to quickly "
+"escape predators, and possess an excellent sense of balance. They have "
+"single-toed hooves. "
+msgstr ""
 
 #: activities/explore_farm_animals/resource/board/board1.qml:25
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "This animal's ancestors were wolves."
 msgctxt "board1|"
-msgid "You can ride on the back of this animal!"
-msgstr "इस जानवर की पीठ पर आप सवारी कर सकते हैं!"
+msgid "This animal has single-toed hooves."
+msgstr "इस जानवर के पूर्वज भेड़िये थे।"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:33
 msgctxt "board1|"
@@ -6717,16 +6723,17 @@ msgstr "मुर्गी"
 #: activities/explore_farm_animals/resource/board/board1.qml:34
 msgctxt "board1|"
 msgid ""
-"The chicken goes 'luck, cackle, cluck'. Chickens have over 200 different "
-"noises they can use to communicate."
+"The chicken goes 'cluck'. Domestic chickens have wings, but are not capable "
+"of long-distance flight. They have a comb on their head."
 msgstr ""
-"मुर्गियां 'कुड़कुड़ातीं' हैं।  मुर्गियों के पास 200 अलग-अलग शोर हैं जो वे संवाद करने के लिए "
-"उपयोग कर सकतीं हैं।"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:37
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "This animal likes to come out at night."
 msgctxt "board1|"
-msgid "This animal lays eggs."
-msgstr "इस जानवर अंडे देता है।"
+msgid "This animal has a comb on its head."
+msgstr "इस जानवर को रात में बाहर आना पसंद है।"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:45
 msgctxt "board1|"
@@ -6734,22 +6741,17 @@ msgid "Cow"
 msgstr "गाय"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:46
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid ""
-#| "The cow goes 'moo. moo.'. Cows are herbivorous mammals. They graze all "
-#| "day in the meadow."
 msgctxt "board1|"
 msgid ""
-"The cow goes 'moo! moo!'. Cows are herbivorous mammals. They graze all day "
-"in the meadow."
+"The cow goes 'moo'. Cows have a wide field of view of 330°. They have a well-"
+"developed sense of taste, with around 20,000 taste buds. They can detect "
+"odours 8km away."
 msgstr ""
-"गाय 'मू मू' आवाज़ करतीं हैं । गाय शाकाहारी स्तनपायी हैं। वे घास के मैदान में पूरे दिन चरते हैं।"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:49
 msgctxt "board1|"
-msgid "You can drink the milk this animal produces."
-msgstr "आप इस जानवर द्वारा दिए गए दूध को पी सकते हैं।"
+msgid "This animal has around 20,000 taste buds."
+msgstr ""
 
 #: activities/explore_farm_animals/resource/board/board1.qml:57
 msgctxt "board1|"
@@ -6759,16 +6761,18 @@ msgstr "बिल्ली"
 #: activities/explore_farm_animals/resource/board/board1.qml:58
 msgctxt "board1|"
 msgid ""
-"The cat goes 'meow, meow'. Cats usually hate water because their fur doesn't "
-"stay warm when it is wet."
+"The cat goes 'meow'. Cats are valued by humans for companionship and their "
+"ability to chase mice and other rodents. They purr to communicate various "
+"emotions."
 msgstr ""
-"बिल्ली 'म्याऊ, म्याऊ' चिल्लाती हैं।  बिल्लियां आम तौर पर पानी से नफरत करती हैं क्योंकि "
-"उनके फर गर्म नहीं रहते हैं जब यह गीला हो जातीं हैं।"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:61
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "This animal lays eggs."
 msgctxt "board1|"
-msgid "This pet likes chasing mice."
-msgstr "यह पालतू जानवर चूहों का शिकार करता है."
+msgid "This animal can purr."
+msgstr "इस जानवर अंडे देता है।"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:69
 msgctxt "board1|"
@@ -6777,13 +6781,15 @@ msgstr "सूअर"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:70
 msgctxt "board1|"
-msgid "The pig goes 'oink, oink'. Pigs are the 4th most intelligent animal."
-msgstr "सुअर 'ओइंक, ओइंक' कहता है। सूअर 4 थे नंबर का सबसे बुद्धिमान जानवर है।"
+msgid ""
+"The pig goes 'oink'. Pigs wallow in the mud, mainly to control their body "
+"temperature."
+msgstr ""
 
 #: activities/explore_farm_animals/resource/board/board1.qml:73
 msgctxt "board1|"
-msgid "This animal likes to lie in the mud."
-msgstr "यह जानवर कीचड़ में लेटे रहना पसंद करता है."
+msgid "This animal wallows in the mud to control its body temperature."
+msgstr ""
 
 #: activities/explore_farm_animals/resource/board/board1.qml:81
 msgctxt "board1|"
@@ -6793,15 +6799,16 @@ msgstr "बतख"
 #: activities/explore_farm_animals/resource/board/board1.qml:82
 msgctxt "board1|"
 msgid ""
-"The duck goes 'quack, quack'. Ducks have special features like webbed feet "
-"and produce an oil to make their feathers 'waterproof'."
+"The duck goes 'quack'. Ducks are mostly aquatic birds. They have waterproof "
+"feathers and webbed feet which enable them to swim on the water."
 msgstr ""
-"बतखें 'क्वाक क्वाक' करतीं हैं।  बतखों में विशेषताएं हैं जैसे उनके जालदार पैर और वे अपने पंखों को "
-"जलरोधक बनाने के लिए तेल का उत्पादन करते हैं।"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:85
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "This animal has webbed feet so it can swim in the water."
 msgctxt "board1|"
-msgid "This animal has webbed feet so it can swim in the water."
+msgid "This animal has webbed feet and can swim on the water."
 msgstr "इस जानवर के पैर जालदार होते हैं, इसलिए यह पानी में तैर सकता है।"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:93
@@ -6810,14 +6817,23 @@ msgid "Owl"
 msgstr "उल्लू"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:94
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid ""
+#| "The owl goes 'hoo. hoo.' The owl has excellent vision and hearing at "
+#| "night."
 msgctxt "board1|"
 msgid ""
-"The owl goes 'hoo. hoo.' The owl has excellent vision and hearing at night."
+"The owl goes 'hoot'. Owls are nocturnal birds, they have excellent vision "
+"and hearing at night."
 msgstr "उल्लू 'हू हू' आवाज़ करता है। उल्लू की रात में उत्कृष्ट दृष्टि और सुनने की क्षमता होती है।"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:97
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "This animal likes to come out at night."
 msgctxt "board1|"
-msgid "This animal likes to come out at night."
+msgid "This animal is a nocturnal bird."
 msgstr "इस जानवर को रात में बाहर आना पसंद है।"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:105
@@ -6828,59 +6844,39 @@ msgstr "कुत्ता"
 #: activities/explore_farm_animals/resource/board/board1.qml:106
 msgctxt "board1|"
 msgid ""
-"The dog goes 'bark! bark!'. Dogs are great human companions and usually "
-"enjoy love and attention."
+"The dog goes 'woof'. Dogs are probably the oldest domesticated species. They "
+"are descendants of the wolf."
 msgstr ""
-"कुत्ते 'भौं भौं' आवाज़ करतें हैं। कुत्ते बोहोत अच्छे मानव साथी हैं और आम तौर पर प्यार और ध्यान "
-"का आनंद लेते हैं। "
 
 #: activities/explore_farm_animals/resource/board/board1.qml:109
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "This animal is a close relative to the goat."
 msgctxt "board1|"
-msgid "This animal's ancestors were wolves."
-msgstr "इस जानवर के पूर्वज भेड़िये थे।"
+msgid "This animal is a descendant of the wolf."
+msgstr "इस जानवर बकरी का एक करीबी रिश्तेदार है।"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:117
-msgctxt "board1|"
-msgid "Rooster"
-msgstr "मुर्गा"
-
-#: activities/explore_farm_animals/resource/board/board1.qml:118
-msgctxt "board1|"
-msgid ""
-"The rooster goes 'coc-a-doodle-doo!'. Roosters have been on farms for about "
-"5,000 years. Every morning it wakes the farm up with its noises."
-msgstr ""
-"मुर्गियां 'कुकडूँकूं' आवाज़ करतीं हैं! मुर्गियां लगभग 5000 वर्षों से खेतों में रहती आयीं हैं। हर सुबह "
-"यह अपने शोर के साथ किसानों को जगाती हैं। "
-
-#: activities/explore_farm_animals/resource/board/board1.qml:121
-msgctxt "board1|"
-msgid "This animal wakes the farm up in the morning."
-msgstr "यह जानवर सुबह खेत खलिहान को जगाता है।"
-
-#: activities/explore_farm_animals/resource/board/board1.qml:129
 msgctxt "board1|"
 msgid "Sheep"
 msgstr "भेड़"
 
-#: activities/explore_farm_animals/resource/board/board1.qml:130
+#: activities/explore_farm_animals/resource/board/board1.qml:118
 msgctxt "board1|"
 msgid ""
-"The sheep is a mammal that bears a fleece of wool. It is a grazing "
-"herbivore, bred for its wool, its meat, and its milk. The fleece can be "
-"removed and used to produce articles of clothing and blankets, among other "
-"things."
+"The sheep goes 'baa'. Most sheep breeds bear a fleece of wool. The fleece "
+"can be sheared and used to produce textile fibre."
 msgstr ""
-"भेड़ एक स्तनपायी है, जो ऊन देतीं हैं। यह चरने वाले जानवर हैं जिनको ऊन, मांस और दूध के लिए "
-"पैदा किया जाता है। ऊन को हटाया जा सकता है और अन्य चीजों के बीच कपड़ों और कंबल के "
-"सामानों का उत्पादन करने के लिए इस्तेमाल किया जा सकता है।"
 
-#: activities/explore_farm_animals/resource/board/board1.qml:133
+#: activities/explore_farm_animals/resource/board/board1.qml:121
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "This animal's ancestors were wolves."
 msgctxt "board1|"
-msgid "This animal is a close relative to the goat."
-msgstr "इस जानवर बकरी का एक करीबी रिश्तेदार है।"
+msgid "This animal produces wool."
+msgstr "इस जानवर के पूर्वज भेड़िये थे।"
 
-#: activities/explore_farm_animals/resource/board/board1.qml:143
+#: activities/explore_farm_animals/resource/board/board1.qml:131
 #, fuzzy
 #| msgctxt "board1|"
 #| msgid "Click on the farm animal that makes the sound you hear."
@@ -6888,12 +6884,12 @@ msgctxt "board1|"
 msgid "Click on each farm animal to discover them."
 msgstr "उन खेत के जानवर पर क्लिक करें जिसकी आवाज़ आपको सुनाई जाएगी। "
 
-#: activities/explore_farm_animals/resource/board/board1.qml:146
+#: activities/explore_farm_animals/resource/board/board1.qml:134
 msgctxt "board1|"
 msgid "Click on the farm animal that makes the sound you hear."
 msgstr "उन खेत के जानवर पर क्लिक करें जिसकी आवाज़ आपको सुनाई जाएगी। "
 
-#: activities/explore_farm_animals/resource/board/board1.qml:149
+#: activities/explore_farm_animals/resource/board/board1.qml:137
 msgctxt "board1|"
 msgid "Click the animal that matches the description."
 msgstr "वर्णन से मेल खाते जानवर पर क्लिक करें।"
@@ -28627,6 +28623,102 @@ msgstr ""
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr ""
+
+#~ msgctxt "board1|"
+#~ msgid "The horse goes 'neigh! neigh!'. Horses usually sleep standing up."
+#~ msgstr "घोड़े 'हिनहिनाते' हैं । घोड़े आमतौर पर खड़े होके सोते हैं।"
+
+#~ msgctxt "board1|"
+#~ msgid "You can ride on the back of this animal!"
+#~ msgstr "इस जानवर की पीठ पर आप सवारी कर सकते हैं!"
+
+#~ msgctxt "board1|"
+#~ msgid ""
+#~ "The chicken goes 'luck, cackle, cluck'. Chickens have over 200 different "
+#~ "noises they can use to communicate."
+#~ msgstr ""
+#~ "मुर्गियां 'कुड़कुड़ातीं' हैं।  मुर्गियों के पास 200 अलग-अलग शोर हैं जो वे संवाद करने के लिए "
+#~ "उपयोग कर सकतीं हैं।"
+
+#, fuzzy
+#~| msgctxt "board1|"
+#~| msgid ""
+#~| "The cow goes 'moo. moo.'. Cows are herbivorous mammals. They graze all "
+#~| "day in the meadow."
+#~ msgctxt "board1|"
+#~ msgid ""
+#~ "The cow goes 'moo! moo!'. Cows are herbivorous mammals. They graze all "
+#~ "day in the meadow."
+#~ msgstr ""
+#~ "गाय 'मू मू' आवाज़ करतीं हैं । गाय शाकाहारी स्तनपायी हैं। वे घास के मैदान में पूरे दिन चरते "
+#~ "हैं।"
+
+#~ msgctxt "board1|"
+#~ msgid "You can drink the milk this animal produces."
+#~ msgstr "आप इस जानवर द्वारा दिए गए दूध को पी सकते हैं।"
+
+#~ msgctxt "board1|"
+#~ msgid ""
+#~ "The cat goes 'meow, meow'. Cats usually hate water because their fur "
+#~ "doesn't stay warm when it is wet."
+#~ msgstr ""
+#~ "बिल्ली 'म्याऊ, म्याऊ' चिल्लाती हैं।  बिल्लियां आम तौर पर पानी से नफरत करती हैं क्योंकि "
+#~ "उनके फर गर्म नहीं रहते हैं जब यह गीला हो जातीं हैं।"
+
+#~ msgctxt "board1|"
+#~ msgid "This pet likes chasing mice."
+#~ msgstr "यह पालतू जानवर चूहों का शिकार करता है."
+
+#~ msgctxt "board1|"
+#~ msgid "The pig goes 'oink, oink'. Pigs are the 4th most intelligent animal."
+#~ msgstr "सुअर 'ओइंक, ओइंक' कहता है। सूअर 4 थे नंबर का सबसे बुद्धिमान जानवर है।"
+
+#~ msgctxt "board1|"
+#~ msgid "This animal likes to lie in the mud."
+#~ msgstr "यह जानवर कीचड़ में लेटे रहना पसंद करता है."
+
+#~ msgctxt "board1|"
+#~ msgid ""
+#~ "The duck goes 'quack, quack'. Ducks have special features like webbed "
+#~ "feet and produce an oil to make their feathers 'waterproof'."
+#~ msgstr ""
+#~ "बतखें 'क्वाक क्वाक' करतीं हैं।  बतखों में विशेषताएं हैं जैसे उनके जालदार पैर और वे अपने पंखों "
+#~ "को जलरोधक बनाने के लिए तेल का उत्पादन करते हैं।"
+
+#~ msgctxt "board1|"
+#~ msgid ""
+#~ "The dog goes 'bark! bark!'. Dogs are great human companions and usually "
+#~ "enjoy love and attention."
+#~ msgstr ""
+#~ "कुत्ते 'भौं भौं' आवाज़ करतें हैं। कुत्ते बोहोत अच्छे मानव साथी हैं और आम तौर पर प्यार और "
+#~ "ध्यान का आनंद लेते हैं। "
+
+#~ msgctxt "board1|"
+#~ msgid "Rooster"
+#~ msgstr "मुर्गा"
+
+#~ msgctxt "board1|"
+#~ msgid ""
+#~ "The rooster goes 'coc-a-doodle-doo!'. Roosters have been on farms for "
+#~ "about 5,000 years. Every morning it wakes the farm up with its noises."
+#~ msgstr ""
+#~ "मुर्गियां 'कुकडूँकूं' आवाज़ करतीं हैं! मुर्गियां लगभग 5000 वर्षों से खेतों में रहती आयीं हैं। हर "
+#~ "सुबह यह अपने शोर के साथ किसानों को जगाती हैं। "
+
+#~ msgctxt "board1|"
+#~ msgid "This animal wakes the farm up in the morning."
+#~ msgstr "यह जानवर सुबह खेत खलिहान को जगाता है।"
+
+#~ msgctxt "board1|"
+#~ msgid ""
+#~ "The sheep is a mammal that bears a fleece of wool. It is a grazing "
+#~ "herbivore, bred for its wool, its meat, and its milk. The fleece can be "
+#~ "removed and used to produce articles of clothing and blankets, among "
+#~ "other things."
+#~ msgstr ""
+#~ "भेड़ एक स्तनपायी है, जो ऊन देतीं हैं। यह चरने वाले जानवर हैं जिनको ऊन, मांस और दूध के "
+#~ "लिए पैदा किया जाता है। ऊन को हटाया जा सकता है और अन्य चीजों के बीच कपड़ों और कंबल "
+#~ "के सामानों का उत्पादन करने के लिए इस्तेमाल किया जा सकता है।"
 
 #, fuzzy
 #~| msgctxt "ActivityInfo|"

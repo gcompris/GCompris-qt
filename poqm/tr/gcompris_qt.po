@@ -6616,13 +6616,19 @@ msgstr "At"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:22
 msgctxt "board1|"
-msgid "The horse goes 'neigh! neigh!'. Horses usually sleep standing up."
-msgstr "At kişniyor! 'neiiihh! neiiihh!'. Atlar genellikle ayakta uyurlar."
+msgid ""
+"The horse goes 'neigh'. Horses are adapted to run, allowing them to quickly "
+"escape predators, and possess an excellent sense of balance. They have "
+"single-toed hooves. "
+msgstr ""
 
 #: activities/explore_farm_animals/resource/board/board1.qml:25
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "This animal's ancestors were wolves."
 msgctxt "board1|"
-msgid "You can ride on the back of this animal!"
-msgstr "Bu hayvanın sırtına binebilirsin!"
+msgid "This animal has single-toed hooves."
+msgstr "Bu hayvanın ataları kurtlardır."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:33
 msgctxt "board1|"
@@ -6632,16 +6638,17 @@ msgstr "Tavuk"
 #: activities/explore_farm_animals/resource/board/board1.qml:34
 msgctxt "board1|"
 msgid ""
-"The chicken goes 'luck, cackle, cluck'. Chickens have over 200 different "
-"noises they can use to communicate."
+"The chicken goes 'cluck'. Domestic chickens have wings, but are not capable "
+"of long-distance flight. They have a comb on their head."
 msgstr ""
-"Tavuklar 'gıt gıt gıdıklarlar!'. Tavukların iletişim kurmak için "
-"kullanabilecekleri 200'den fazla farklı ses vardır."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:37
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "This animal likes to come out at night."
 msgctxt "board1|"
-msgid "This animal lays eggs."
-msgstr "Bu hayvan yumurta bırakır."
+msgid "This animal has a comb on its head."
+msgstr "Bu hayvan geceleri dışarı çıkmayı sever."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:45
 msgctxt "board1|"
@@ -6651,15 +6658,15 @@ msgstr "İnek"
 #: activities/explore_farm_animals/resource/board/board1.qml:46
 msgctxt "board1|"
 msgid ""
-"The cow goes 'moo! moo!'. Cows are herbivorous mammals. They graze all day "
-"in the meadow."
+"The cow goes 'moo'. Cows have a wide field of view of 330°. They have a well-"
+"developed sense of taste, with around 20,000 taste buds. They can detect "
+"odours 8km away."
 msgstr ""
-"İnek 'mööler!'. İnekler otçul memelilerdir. Bütün gün çayırda otlanırlar."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:49
 msgctxt "board1|"
-msgid "You can drink the milk this animal produces."
-msgstr "Bu hayvanın ürettiği sütü içebilirsin."
+msgid "This animal has around 20,000 taste buds."
+msgstr ""
 
 #: activities/explore_farm_animals/resource/board/board1.qml:57
 msgctxt "board1|"
@@ -6669,16 +6676,18 @@ msgstr "Kedi"
 #: activities/explore_farm_animals/resource/board/board1.qml:58
 msgctxt "board1|"
 msgid ""
-"The cat goes 'meow, meow'. Cats usually hate water because their fur doesn't "
-"stay warm when it is wet."
+"The cat goes 'meow'. Cats are valued by humans for companionship and their "
+"ability to chase mice and other rodents. They purr to communicate various "
+"emotions."
 msgstr ""
-"Kedi 'miyavlar'. Kediler genellikle sudan nefret eder çünkü ıslak "
-"olduklarında kürkleri ısınmaz."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:61
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "This animal lays eggs."
 msgctxt "board1|"
-msgid "This pet likes chasing mice."
-msgstr "Bu hayvan, fareleri kovalamayı sever."
+msgid "This animal can purr."
+msgstr "Bu hayvan yumurta bırakır."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:69
 msgctxt "board1|"
@@ -6687,13 +6696,15 @@ msgstr "Domuz"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:70
 msgctxt "board1|"
-msgid "The pig goes 'oink, oink'. Pigs are the 4th most intelligent animal."
-msgstr "Domuz 'oink, oink' sesi çıkarır. Domuzlar 4. en zeki hayvanlardır."
+msgid ""
+"The pig goes 'oink'. Pigs wallow in the mud, mainly to control their body "
+"temperature."
+msgstr ""
 
 #: activities/explore_farm_animals/resource/board/board1.qml:73
 msgctxt "board1|"
-msgid "This animal likes to lie in the mud."
-msgstr "Bu hayvan, çamura uzanmayı sever."
+msgid "This animal wallows in the mud to control its body temperature."
+msgstr ""
 
 #: activities/explore_farm_animals/resource/board/board1.qml:81
 msgctxt "board1|"
@@ -6703,15 +6714,16 @@ msgstr "Ördek"
 #: activities/explore_farm_animals/resource/board/board1.qml:82
 msgctxt "board1|"
 msgid ""
-"The duck goes 'quack, quack'. Ducks have special features like webbed feet "
-"and produce an oil to make their feathers 'waterproof'."
+"The duck goes 'quack'. Ducks are mostly aquatic birds. They have waterproof "
+"feathers and webbed feet which enable them to swim on the water."
 msgstr ""
-"Ördek 'vak vaklar!'. Ördekler perdeli ayaklar gibi özelliklere sahiptirler "
-"ve tüylerinin su geçirmemesi için özel bir yağ üretirler."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:85
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "This animal has webbed feet so it can swim in the water."
 msgctxt "board1|"
-msgid "This animal has webbed feet so it can swim in the water."
+msgid "This animal has webbed feet and can swim on the water."
 msgstr "Bu hayvan perdeli ayaklara sahiptir, böylece suda yüzebilirler."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:93
@@ -6720,16 +6732,25 @@ msgid "Owl"
 msgstr "Baykuş"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:94
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid ""
+#| "The owl goes 'hoo. hoo.' The owl has excellent vision and hearing at "
+#| "night."
 msgctxt "board1|"
 msgid ""
-"The owl goes 'hoo. hoo.' The owl has excellent vision and hearing at night."
+"The owl goes 'hoot'. Owls are nocturnal birds, they have excellent vision "
+"and hearing at night."
 msgstr ""
 "Baykuş 'huu huu!' diye ses çıkarır. Baykuşlar geceleri çok iyi görür ve "
 "duyarlar."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:97
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "This animal likes to come out at night."
 msgctxt "board1|"
-msgid "This animal likes to come out at night."
+msgid "This animal is a nocturnal bird."
 msgstr "Bu hayvan geceleri dışarı çıkmayı sever."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:105
@@ -6740,69 +6761,49 @@ msgstr "Köpek"
 #: activities/explore_farm_animals/resource/board/board1.qml:106
 msgctxt "board1|"
 msgid ""
-"The dog goes 'bark! bark!'. Dogs are great human companions and usually "
-"enjoy love and attention."
+"The dog goes 'woof'. Dogs are probably the oldest domesticated species. They "
+"are descendants of the wolf."
 msgstr ""
-"Köpek 'Hav havlar!'. Köpekler çok iyi birer insan yoldaşlarıdır, genellikle "
-"sevgi ve ilgiden hoşlanırlar."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:109
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "This animal is a close relative to the goat."
 msgctxt "board1|"
-msgid "This animal's ancestors were wolves."
-msgstr "Bu hayvanın ataları kurtlardır."
+msgid "This animal is a descendant of the wolf."
+msgstr "Bu hayvan keçiye yakın bir akrabadır."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:117
-msgctxt "board1|"
-msgid "Rooster"
-msgstr "Horoz"
-
-#: activities/explore_farm_animals/resource/board/board1.qml:118
-msgctxt "board1|"
-msgid ""
-"The rooster goes 'coc-a-doodle-doo!'. Roosters have been on farms for about "
-"5,000 years. Every morning it wakes the farm up with its noises."
-msgstr ""
-"Horoz, 'üüürü üüü' sesi çıkarır. Horozlar yaklaşık 5,000 yıldır "
-"çiftliklerdedirler. Her sabah sesleriyle tüm çiftliği uyandırırlar."
-
-#: activities/explore_farm_animals/resource/board/board1.qml:121
-msgctxt "board1|"
-msgid "This animal wakes the farm up in the morning."
-msgstr "Bu hayvan, sabahları tüm çiftliği uyandırır."
-
-#: activities/explore_farm_animals/resource/board/board1.qml:129
 msgctxt "board1|"
 msgid "Sheep"
 msgstr "Koyun"
 
-#: activities/explore_farm_animals/resource/board/board1.qml:130
+#: activities/explore_farm_animals/resource/board/board1.qml:118
 msgctxt "board1|"
 msgid ""
-"The sheep is a mammal that bears a fleece of wool. It is a grazing "
-"herbivore, bred for its wool, its meat, and its milk. The fleece can be "
-"removed and used to produce articles of clothing and blankets, among other "
-"things."
+"The sheep goes 'baa'. Most sheep breeds bear a fleece of wool. The fleece "
+"can be sheared and used to produce textile fibre."
 msgstr ""
-"Koyun, yün postu olan bir memelidir. Ot yerler, eti ve sütü için "
-"yetiştirilen, ot ile beslenen bir otçuldur. Postu, başka şeylerin yanı sıra, "
-"giyim eşyası ve battaniye ürünlerini üretmek için kullanılabilir."
 
-#: activities/explore_farm_animals/resource/board/board1.qml:133
+#: activities/explore_farm_animals/resource/board/board1.qml:121
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "This animal's ancestors were wolves."
 msgctxt "board1|"
-msgid "This animal is a close relative to the goat."
-msgstr "Bu hayvan keçiye yakın bir akrabadır."
+msgid "This animal produces wool."
+msgstr "Bu hayvanın ataları kurtlardır."
 
-#: activities/explore_farm_animals/resource/board/board1.qml:143
+#: activities/explore_farm_animals/resource/board/board1.qml:131
 msgctxt "board1|"
 msgid "Click on each farm animal to discover them."
 msgstr "Onları keşfetmek için her bir çiftlik hayvanına tıkla."
 
-#: activities/explore_farm_animals/resource/board/board1.qml:146
+#: activities/explore_farm_animals/resource/board/board1.qml:134
 msgctxt "board1|"
 msgid "Click on the farm animal that makes the sound you hear."
 msgstr "Duyduğun sesi çıkaran çiftlik hayvanının üstüne tıkla."
 
-#: activities/explore_farm_animals/resource/board/board1.qml:149
+#: activities/explore_farm_animals/resource/board/board1.qml:137
 msgctxt "board1|"
 msgid "Click the animal that matches the description."
 msgstr "Açıklamasıyla eşleşen hayvanın üstüne tıkla."
@@ -26833,3 +26834,93 @@ msgstr "Atla"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Başla"
+
+#~ msgctxt "board1|"
+#~ msgid "The horse goes 'neigh! neigh!'. Horses usually sleep standing up."
+#~ msgstr "At kişniyor! 'neiiihh! neiiihh!'. Atlar genellikle ayakta uyurlar."
+
+#~ msgctxt "board1|"
+#~ msgid "You can ride on the back of this animal!"
+#~ msgstr "Bu hayvanın sırtına binebilirsin!"
+
+#~ msgctxt "board1|"
+#~ msgid ""
+#~ "The chicken goes 'luck, cackle, cluck'. Chickens have over 200 different "
+#~ "noises they can use to communicate."
+#~ msgstr ""
+#~ "Tavuklar 'gıt gıt gıdıklarlar!'. Tavukların iletişim kurmak için "
+#~ "kullanabilecekleri 200'den fazla farklı ses vardır."
+
+#~ msgctxt "board1|"
+#~ msgid ""
+#~ "The cow goes 'moo! moo!'. Cows are herbivorous mammals. They graze all "
+#~ "day in the meadow."
+#~ msgstr ""
+#~ "İnek 'mööler!'. İnekler otçul memelilerdir. Bütün gün çayırda otlanırlar."
+
+#~ msgctxt "board1|"
+#~ msgid "You can drink the milk this animal produces."
+#~ msgstr "Bu hayvanın ürettiği sütü içebilirsin."
+
+#~ msgctxt "board1|"
+#~ msgid ""
+#~ "The cat goes 'meow, meow'. Cats usually hate water because their fur "
+#~ "doesn't stay warm when it is wet."
+#~ msgstr ""
+#~ "Kedi 'miyavlar'. Kediler genellikle sudan nefret eder çünkü ıslak "
+#~ "olduklarında kürkleri ısınmaz."
+
+#~ msgctxt "board1|"
+#~ msgid "This pet likes chasing mice."
+#~ msgstr "Bu hayvan, fareleri kovalamayı sever."
+
+#~ msgctxt "board1|"
+#~ msgid "The pig goes 'oink, oink'. Pigs are the 4th most intelligent animal."
+#~ msgstr "Domuz 'oink, oink' sesi çıkarır. Domuzlar 4. en zeki hayvanlardır."
+
+#~ msgctxt "board1|"
+#~ msgid "This animal likes to lie in the mud."
+#~ msgstr "Bu hayvan, çamura uzanmayı sever."
+
+#~ msgctxt "board1|"
+#~ msgid ""
+#~ "The duck goes 'quack, quack'. Ducks have special features like webbed "
+#~ "feet and produce an oil to make their feathers 'waterproof'."
+#~ msgstr ""
+#~ "Ördek 'vak vaklar!'. Ördekler perdeli ayaklar gibi özelliklere "
+#~ "sahiptirler ve tüylerinin su geçirmemesi için özel bir yağ üretirler."
+
+#~ msgctxt "board1|"
+#~ msgid ""
+#~ "The dog goes 'bark! bark!'. Dogs are great human companions and usually "
+#~ "enjoy love and attention."
+#~ msgstr ""
+#~ "Köpek 'Hav havlar!'. Köpekler çok iyi birer insan yoldaşlarıdır, "
+#~ "genellikle sevgi ve ilgiden hoşlanırlar."
+
+#~ msgctxt "board1|"
+#~ msgid "Rooster"
+#~ msgstr "Horoz"
+
+#~ msgctxt "board1|"
+#~ msgid ""
+#~ "The rooster goes 'coc-a-doodle-doo!'. Roosters have been on farms for "
+#~ "about 5,000 years. Every morning it wakes the farm up with its noises."
+#~ msgstr ""
+#~ "Horoz, 'üüürü üüü' sesi çıkarır. Horozlar yaklaşık 5,000 yıldır "
+#~ "çiftliklerdedirler. Her sabah sesleriyle tüm çiftliği uyandırırlar."
+
+#~ msgctxt "board1|"
+#~ msgid "This animal wakes the farm up in the morning."
+#~ msgstr "Bu hayvan, sabahları tüm çiftliği uyandırır."
+
+#~ msgctxt "board1|"
+#~ msgid ""
+#~ "The sheep is a mammal that bears a fleece of wool. It is a grazing "
+#~ "herbivore, bred for its wool, its meat, and its milk. The fleece can be "
+#~ "removed and used to produce articles of clothing and blankets, among "
+#~ "other things."
+#~ msgstr ""
+#~ "Koyun, yün postu olan bir memelidir. Ot yerler, eti ve sütü için "
+#~ "yetiştirilen, ot ile beslenen bir otçuldur. Postu, başka şeylerin yanı "
+#~ "sıra, giyim eşyası ve battaniye ürünlerini üretmek için kullanılabilir."
