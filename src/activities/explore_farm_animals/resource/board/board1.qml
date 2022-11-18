@@ -19,7 +19,7 @@ QtObject {
         {
             "image": "qrc:/gcompris/src/activities/explore_farm_animals/resource/animals/horse.svg",
             "title": qsTr("Horse"),
-            "text": qsTr("The horse goes 'neigh'. Horses are adapted to run, allowing them to quickly escape predators, and possess an excellent sense of balance. They have single-toed hooves. "),
+            "text": qsTr("The horse goes 'neigh'. Horses are adapted to run, allowing them to quickly escape predators, and possess an excellent sense of balance. They have single-toed hooves."),
             "audio": GCompris.ApplicationInfo.getAudioFilePath("qrc:/gcompris/src/activities/explore_farm_animals/resource/animals/horse.$CA"),
             "image2": "qrc:/gcompris/src/activities/explore_farm_animals/resource/animals/horse.webp",
             "text2": qsTr("This animal has single-toed hooves."),
