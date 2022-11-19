@@ -6593,7 +6593,7 @@ msgctxt "board1|"
 msgid ""
 "The horse goes 'neigh'. Horses are adapted to run, allowing them to quickly "
 "escape predators, and possess an excellent sense of balance. They have "
-"single-toed hooves. "
+"single-toed hooves."
 msgstr ""
 
 #: activities/explore_farm_animals/resource/board/board1.qml:25

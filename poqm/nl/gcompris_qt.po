@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2022-11-06 15:35-0400\n"
+"PO-Revision-Date: 2022-11-18 11:55+0100\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Language: nl\n"
 "X-Qt-Contexts: true\n"
-"X-Generator: Lokalize 22.08.1\n"
+"X-Generator: Lokalize 22.08.3\n"
 
 #. Activity title
 #: activities/advanced_colors/ActivityInfo.qml:15
@@ -6543,20 +6543,26 @@ msgid "Horse"
 msgstr "Paard"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:22
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid ""
+#| "The horse goes 'neigh'. Horses are adapted to run, allowing them to "
+#| "quickly escape predators, and possess an excellent sense of balance. They "
+#| "have single-toed hooves. "
 msgctxt "board1|"
 msgid ""
 "The horse goes 'neigh'. Horses are adapted to run, allowing them to quickly "
 "escape predators, and possess an excellent sense of balance. They have "
-"single-toed hooves. "
+"single-toed hooves."
 msgstr ""
+"Het paard gaat 'hinniken'. Paarden zijn aangepast om te rennen, waarmee ze "
+"snel kunnen ontsnappen aan roofdieren en bezitten een uitstekend "
+"evenwichtsgevoel. Ze hebben hoeven met één teen. "
 
 #: activities/explore_farm_animals/resource/board/board1.qml:25
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal's ancestors were wolves."
 msgctxt "board1|"
 msgid "This animal has single-toed hooves."
-msgstr "De voorouders van dit dier waren wolven."
+msgstr "Dit dier heeft hoeven met één teen."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:33
 msgctxt "board1|"
@@ -6569,14 +6575,13 @@ msgid ""
 "The chicken goes 'cluck'. Domestic chickens have wings, but are not capable "
 "of long-distance flight. They have a comb on their head."
 msgstr ""
+"De kip zegt 'tok-tok'. Huisdier kippen hebben vleugels, maar zijn niet in "
+"staat lange afstanden te vliegen. Ze hebben een kam op hun kop."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:37
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal likes to come out at night."
 msgctxt "board1|"
 msgid "This animal has a comb on its head."
-msgstr "Dit dier komt graag 's nachts naar buiten."
+msgstr "Dit dier heeft een kam op haar kop."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:45
 msgctxt "board1|"
@@ -6590,11 +6595,14 @@ msgid ""
 "developed sense of taste, with around 20,000 taste buds. They can detect "
 "odours 8km away."
 msgstr ""
+"De koe zegt 'boe'. Koeien hebben een breed gezichtsveld van 330°. Ze hebben "
+"een goed ontwikkeld tastgevoel, met ongeveer 20.000 tastzintuigen. Ze kunnen "
+"geuren op 8 km afstand ruiken."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:49
 msgctxt "board1|"
 msgid "This animal has around 20,000 taste buds."
-msgstr ""
+msgstr "Dit dier heeft ongeveer 20.000 tastzintuigen."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:57
 msgctxt "board1|"
@@ -6608,14 +6616,14 @@ msgid ""
 "ability to chase mice and other rodents. They purr to communicate various "
 "emotions."
 msgstr ""
+"De kat zegt 'mauw'. Katten worden door mensen gewaardeerd voor gezelschap en "
+"hun mogelijkheid op muizen en andere knaagdieren te jagen. Ze snorren om "
+"verschillende emoties te laten zien."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:61
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal lays eggs."
 msgctxt "board1|"
 msgid "This animal can purr."
-msgstr "Dit dier legt eieren"
+msgstr "Dit dier kan snorren."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:69
 msgctxt "board1|"
@@ -6628,11 +6636,15 @@ msgid ""
 "The pig goes 'oink'. Pigs wallow in the mud, mainly to control their body "
 "temperature."
 msgstr ""
+"Het varken zegt 'knor'. Varkens wentelen zich in de modder, hoofdzakelijk om "
+"hun lichaamstemperatuur te controleren."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:73
 msgctxt "board1|"
 msgid "This animal wallows in the mud to control its body temperature."
 msgstr ""
+"Dit dier wentelt zich in de modder om zijn lichaamstemperatuur te "
+"controleren."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:81
 msgctxt "board1|"
@@ -6645,16 +6657,13 @@ msgid ""
 "The duck goes 'quack'. Ducks are mostly aquatic birds. They have waterproof "
 "feathers and webbed feet which enable them to swim on the water."
 msgstr ""
+"De eend zegt 'kwak'. Eenden zijn meestal watervogels. Ze hebben waterproof "
+"veren en poten met zwemvliezen waarmee ze in het water kunnen zwemmen."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:85
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal has webbed feet so it can swim in the water."
 msgctxt "board1|"
 msgid "This animal has webbed feet and can swim on the water."
-msgstr ""
-"Dier dier heeft poten met vliezen tussen de tenen zodat het in het water kan "
-"zwemmen"
+msgstr "Dit dier heeft poten met zwemvliezen en kan in het water zwemmen."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:93
 msgctxt "board1|"
@@ -6662,25 +6671,18 @@ msgid "Owl"
 msgstr "Uil"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:94
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid ""
-#| "The owl goes 'hoo. hoo.' The owl has excellent vision and hearing at "
-#| "night."
 msgctxt "board1|"
 msgid ""
 "The owl goes 'hoot'. Owls are nocturnal birds, they have excellent vision "
 "and hearing at night."
 msgstr ""
-"De uil doet 'oeḧoe. oehoe.' De uil kan 's nachts heel goed zien en horen."
+"De uil zegt 'oehoe'. Ze zijn nachtelijke dieren en kunnen 's nachts heel "
+"goed zien en horen."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:97
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal likes to come out at night."
 msgctxt "board1|"
 msgid "This animal is a nocturnal bird."
-msgstr "Dit dier komt graag 's nachts naar buiten."
+msgstr "Dit dier is een nachtvogel."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:105
 msgctxt "board1|"
@@ -6693,14 +6695,13 @@ msgid ""
 "The dog goes 'woof'. Dogs are probably the oldest domesticated species. They "
 "are descendants of the wolf."
 msgstr ""
+"De hond zegt 'woef'. Honden zijn waarschijnlijk de oudste gedomesticeerde "
+"soort. Ze zijn afstammelingen van de wolf."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:109
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal is a close relative to the goat."
 msgctxt "board1|"
 msgid "This animal is a descendant of the wolf."
-msgstr "Dit dier is een naast familielid van de geit."
+msgstr "Dit dier is een afstammeling van de wolf."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:117
 msgctxt "board1|"
@@ -6713,14 +6714,13 @@ msgid ""
 "The sheep goes 'baa'. Most sheep breeds bear a fleece of wool. The fleece "
 "can be sheared and used to produce textile fibre."
 msgstr ""
+"Het schaap zegt 'baa'. Op de meeste schapen groeit een wollen vacht. De "
+"vacht kan geschoren worden en gebruikt om textieldraad te produceren."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:121
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal's ancestors were wolves."
 msgctxt "board1|"
 msgid "This animal produces wool."
-msgstr "De voorouders van dit dier waren wolven."
+msgstr "Dit dier produceert wol."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:131
 msgctxt "board1|"

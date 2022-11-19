@@ -1,5 +1,5 @@
 # Translation for gcompris_qt.po to Euskara/Basque (eu).
-# Copyright (C), 2018-2022 This file is copyright:
+# Copyright (C) 2018-2022 This file is copyright:
 # This file is distributed under the same license as the GCompris package.
 # KDE euskaratzeko proiektuko arduraduna <xalba@ni.eus>.
 #
@@ -6550,7 +6550,7 @@ msgctxt "board1|"
 msgid ""
 "The horse goes 'neigh'. Horses are adapted to run, allowing them to quickly "
 "escape predators, and possess an excellent sense of balance. They have "
-"single-toed hooves. "
+"single-toed hooves."
 msgstr ""
 
 #: activities/explore_farm_animals/resource/board/board1.qml:25
