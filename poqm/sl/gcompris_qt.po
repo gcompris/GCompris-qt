@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2022-11-06 07:31+0100\n"
+"PO-Revision-Date: 2022-11-19 19:24+0100\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
@@ -15,7 +15,7 @@ msgstr ""
 "%100<=4 ? 2 : 3);\n"
 "X-Language: sl\n"
 "X-Qt-Contexts: true\n"
-"X-Generator: Poedit 3.1.1\n"
+"X-Generator: Lokalize 22.08.2\n"
 
 #. Activity title
 #: activities/advanced_colors/ActivityInfo.qml:15
@@ -6500,14 +6500,14 @@ msgid ""
 "escape predators, and possess an excellent sense of balance. They have "
 "single-toed hooves."
 msgstr ""
+"Konj se oglaša s hrzanjem. Konji so prilagojeni ta tek, kar jim omogoča, da "
+"hitro pobegnejo pred plenilci in imajo odličen občutek za ravnotežje. Imajo "
+"eno-prsta kopita."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:25
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal's ancestors were wolves."
 msgctxt "board1|"
 msgid "This animal has single-toed hooves."
-msgstr "Predniki te živali so bili volkovi."
+msgstr "Ta žival ima eno-prsta kopita."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:33
 msgctxt "board1|"
@@ -6520,14 +6520,13 @@ msgid ""
 "The chicken goes 'cluck'. Domestic chickens have wings, but are not capable "
 "of long-distance flight. They have a comb on their head."
 msgstr ""
+"Piščancek se oglaša s čivkom. Domači piščanci imajo krila, vendar niso "
+"sposobni letenja na dolge razdalje. Na glavi imajo pečo."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:37
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal likes to come out at night."
 msgctxt "board1|"
 msgid "This animal has a comb on its head."
-msgstr "To žival je večinoma aktivna ponoči."
+msgstr "To žival ima pečo na glavi."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:45
 msgctxt "board1|"
@@ -6541,11 +6540,14 @@ msgid ""
 "developed sense of taste, with around 20,000 taste buds. They can detect "
 "odours 8km away."
 msgstr ""
+"Krava se oglaša z mukanjem. Krave imajo široko vidno polje 330°. Imajo dobro "
+"razvit občutek okusa s približno 20.000 brsti za okus. Lahko zaznajo vonj 8 "
+"km stran."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:49
 msgctxt "board1|"
 msgid "This animal has around 20,000 taste buds."
-msgstr ""
+msgstr "Ta žival ima približno 20.000 brstov za okus."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:57
 msgctxt "board1|"
@@ -6559,14 +6561,14 @@ msgid ""
 "ability to chase mice and other rodents. They purr to communicate various "
 "emotions."
 msgstr ""
+"Mačka se oglaša z mijavkanjem. Ljudje cenijo mačke zaradi druženja in "
+"njihove sposobnosti preganjanja miši in drugih glodalcev. S predenjem "
+"komunicirajo njihova različna čustva."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:61
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal lays eggs."
 msgctxt "board1|"
 msgid "This animal can purr."
-msgstr "Ta žival nese jajca."
+msgstr "Ta žival lahko prede."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:69
 msgctxt "board1|"
@@ -6579,11 +6581,13 @@ msgid ""
 "The pig goes 'oink'. Pigs wallow in the mud, mainly to control their body "
 "temperature."
 msgstr ""
+"Pujs se oglaša s kruljenjem. Pujsi se valjajo v blatu, večinoma zato, da "
+"kontrolirajo njihovo telesno temperaturo."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:73
 msgctxt "board1|"
 msgid "This animal wallows in the mud to control its body temperature."
-msgstr ""
+msgstr "Ta žival se valja po blatu, da kontrolira svojo telesno temperaturo."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:81
 msgctxt "board1|"
@@ -6596,14 +6600,13 @@ msgid ""
 "The duck goes 'quack'. Ducks are mostly aquatic birds. They have waterproof "
 "feathers and webbed feet which enable them to swim on the water."
 msgstr ""
+"Raca se oglaša z gaganjem. Race so večinoma vodne ptice. Imajo vodoodporno "
+"perje in kožico med stopali, ki jim omogoča plavanje po vodi."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:85
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal has webbed feet so it can swim in the water."
 msgctxt "board1|"
 msgid "This animal has webbed feet and can swim on the water."
-msgstr "Ta žival ima plavalne noge, da lažje plava po vodi."
+msgstr "Ta žival ima kožico med stopali, da lažje plava po vodi."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:93
 msgctxt "board1|"
@@ -6611,24 +6614,18 @@ msgid "Owl"
 msgstr "Sova"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:94
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid ""
-#| "The owl goes 'hoo. hoo.' The owl has excellent vision and hearing at "
-#| "night."
 msgctxt "board1|"
 msgid ""
 "The owl goes 'hoot'. Owls are nocturnal birds, they have excellent vision "
 "and hearing at night."
-msgstr "Sova uka: 'hu, hu'. Sova ponoči odlično vidi in sliši."
+msgstr ""
+"Sova se oglaša s skovikanjem. Sove so nočne ptice, ponoči imajo odličen vid "
+"in sluh."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:97
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal likes to come out at night."
 msgctxt "board1|"
 msgid "This animal is a nocturnal bird."
-msgstr "To žival je večinoma aktivna ponoči."
+msgstr "To žival je nočna ptica."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:105
 msgctxt "board1|"
@@ -6641,14 +6638,13 @@ msgid ""
 "The dog goes 'woof'. Dogs are probably the oldest domesticated species. They "
 "are descendants of the wolf."
 msgstr ""
+"Pes se oglaša z lajanjem. Psi so verjetno najstarejše udomačene vrste. So "
+"potomci volka."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:109
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal is a close relative to the goat."
 msgctxt "board1|"
 msgid "This animal is a descendant of the wolf."
-msgstr "Ta žival je v bližnjem sorodstvu s kozo."
+msgstr "Ta žival je potomec volka."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:117
 msgctxt "board1|"
@@ -6661,14 +6657,13 @@ msgid ""
 "The sheep goes 'baa'. Most sheep breeds bear a fleece of wool. The fleece "
 "can be sheared and used to produce textile fibre."
 msgstr ""
+"Ovca se oglaša z meketanjem. Večina pasme ovc nosi volneno krzno. Krzno "
+"lahko strižemo in uporabimo za izdelavo tekstilnih vlaken."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:121
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal's ancestors were wolves."
 msgctxt "board1|"
 msgid "This animal produces wool."
-msgstr "Predniki te živali so bili volkovi."
+msgstr "Ta žival prideluje volno."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:131
 msgctxt "board1|"

@@ -24501,8 +24501,3 @@ msgstr ""
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr ""
-
-#, fuzzy
-#~ msgctxt "board1|"
-#~ msgid "This animal likes to lie in the mud."
-#~ msgstr "Целта е да се загасят всички лампи."

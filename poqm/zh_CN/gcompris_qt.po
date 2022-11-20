@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
-"PO-Revision-Date: 2022-11-06 01:05\n"
+"PO-Revision-Date: 2022-11-19 14:48\n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
@@ -6149,12 +6149,9 @@ msgid ""
 msgstr ""
 
 #: activities/explore_farm_animals/resource/board/board1.qml:25
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal's ancestors were wolves."
 msgctxt "board1|"
 msgid "This animal has single-toed hooves."
-msgstr "这个动物的祖先是狼。"
+msgstr ""
 
 #: activities/explore_farm_animals/resource/board/board1.qml:33
 msgctxt "board1|"
@@ -6169,12 +6166,9 @@ msgid ""
 msgstr ""
 
 #: activities/explore_farm_animals/resource/board/board1.qml:37
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal likes to come out at night."
 msgctxt "board1|"
 msgid "This animal has a comb on its head."
-msgstr "这一动物通常在夜晚活动。"
+msgstr ""
 
 #: activities/explore_farm_animals/resource/board/board1.qml:45
 msgctxt "board1|"
@@ -6208,12 +6202,9 @@ msgid ""
 msgstr ""
 
 #: activities/explore_farm_animals/resource/board/board1.qml:61
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal lays eggs."
 msgctxt "board1|"
 msgid "This animal can purr."
-msgstr "它可以下蛋。"
+msgstr ""
 
 #: activities/explore_farm_animals/resource/board/board1.qml:69
 msgctxt "board1|"
@@ -6245,12 +6236,9 @@ msgid ""
 msgstr ""
 
 #: activities/explore_farm_animals/resource/board/board1.qml:85
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal has webbed feet so it can swim in the water."
 msgctxt "board1|"
 msgid "This animal has webbed feet and can swim on the water."
-msgstr "这种动物有脚蹼，所以可以在水中游泳。"
+msgstr ""
 
 #: activities/explore_farm_animals/resource/board/board1.qml:93
 msgctxt "board1|"
@@ -6258,24 +6246,16 @@ msgid "Owl"
 msgstr "猫头鹰"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:94
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid ""
-#| "The owl goes 'hoo. hoo.' The owl has excellent vision and hearing at "
-#| "night."
 msgctxt "board1|"
 msgid ""
 "The owl goes 'hoot'. Owls are nocturnal birds, they have excellent vision "
 "and hearing at night."
-msgstr "猫头鹰的叫声是“咕，咕”。夜晚时，猫头鹰的视力、听力超群。"
+msgstr ""
 
 #: activities/explore_farm_animals/resource/board/board1.qml:97
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal likes to come out at night."
 msgctxt "board1|"
 msgid "This animal is a nocturnal bird."
-msgstr "这一动物通常在夜晚活动。"
+msgstr ""
 
 #: activities/explore_farm_animals/resource/board/board1.qml:105
 msgctxt "board1|"
@@ -6290,12 +6270,9 @@ msgid ""
 msgstr ""
 
 #: activities/explore_farm_animals/resource/board/board1.qml:109
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal is a close relative to the goat."
 msgctxt "board1|"
 msgid "This animal is a descendant of the wolf."
-msgstr "这个动物和山羊是近亲。"
+msgstr ""
 
 #: activities/explore_farm_animals/resource/board/board1.qml:117
 msgctxt "board1|"
@@ -6310,12 +6287,9 @@ msgid ""
 msgstr ""
 
 #: activities/explore_farm_animals/resource/board/board1.qml:121
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal's ancestors were wolves."
 msgctxt "board1|"
 msgid "This animal produces wool."
-msgstr "这个动物的祖先是狼。"
+msgstr ""
 
 #: activities/explore_farm_animals/resource/board/board1.qml:131
 msgctxt "board1|"
@@ -14738,20 +14712,14 @@ msgid "Subtractions with 1, 2, 3, 4 and 5."
 msgstr ""
 
 #: activities/learn_subtractions/resource/4/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Additions with 1, 2, 3 and 4."
 msgctxt "Data|"
 msgid "Subtractions with 1, 2, 3, 4, 5, 6 and 7."
-msgstr "1, 2, 3, 和 4 的加法。"
+msgstr ""
 
 #: activities/learn_subtractions/resource/5/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Additions with 1, 2, 3 and 4."
 msgctxt "Data|"
 msgid "Subtractions with 1, 2, 3, 4, 5, 6, 7, 8 and 9."
-msgstr "1, 2, 3, 和 4 的加法。"
+msgstr ""
 
 #. Activity title
 #: activities/left_right_click/ActivityInfo.qml:14
@@ -24000,80 +23968,3 @@ msgstr "跳过"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "开始"
-
-#~ msgctxt "board1|"
-#~ msgid "The horse goes 'neigh! neigh!'. Horses usually sleep standing up."
-#~ msgstr "马的叫声是“嘶！嘶！”。马通常站着睡觉。"
-
-#~ msgctxt "board1|"
-#~ msgid "You can ride on the back of this animal!"
-#~ msgstr "您可以骑在它的背上！"
-
-#~ msgctxt "board1|"
-#~ msgid ""
-#~ "The chicken goes 'luck, cackle, cluck'. Chickens have over 200 different "
-#~ "noises they can use to communicate."
-#~ msgstr "鸡的叫声是“咕咕，咯咯”。鸡可以发出200多种不同的声音来进行交流。"
-
-#~ msgctxt "board1|"
-#~ msgid "You can drink the milk this animal produces."
-#~ msgstr "您可以喝到它们产的牛奶。"
-
-#~ msgctxt "board1|"
-#~ msgid ""
-#~ "The cat goes 'meow, meow'. Cats usually hate water because their fur "
-#~ "doesn't stay warm when it is wet."
-#~ msgstr ""
-#~ "猫的叫声是“喵，喵”。猫通常讨厌水，因为当它们的毛沾上水时就无法保暖了。"
-
-#~ msgctxt "board1|"
-#~ msgid "This pet likes chasing mice."
-#~ msgstr "这种动物喜欢追逐老鼠。"
-
-#~ msgctxt "board1|"
-#~ msgid "The pig goes 'oink, oink'. Pigs are the 4th most intelligent animal."
-#~ msgstr "猪的叫声是“哼，哼”。猪在最聪明的动物中排名第四。"
-
-#~ msgctxt "board1|"
-#~ msgid "This animal likes to lie in the mud."
-#~ msgstr "这种动物喜欢躺在泥里。"
-
-#~ msgctxt "board1|"
-#~ msgid ""
-#~ "The duck goes 'quack, quack'. Ducks have special features like webbed "
-#~ "feet and produce an oil to make their feathers 'waterproof'."
-#~ msgstr ""
-#~ "鸭的叫声是“嘎，嘎”。鸭子有特殊的脚蹼，并且可以产生一种油脂使它们的羽毛“防"
-#~ "水”。"
-
-#~ msgctxt "board1|"
-#~ msgid ""
-#~ "The dog goes 'bark! bark!'. Dogs are great human companions and usually "
-#~ "enjoy love and attention."
-#~ msgstr "狗的叫声是“汪！汪！”狗通常是人类的好同伴，会得到人的喜爱和关注。"
-
-#~ msgctxt "board1|"
-#~ msgid "Rooster"
-#~ msgstr "公鸡"
-
-#~ msgctxt "board1|"
-#~ msgid ""
-#~ "The rooster goes 'coc-a-doodle-doo!'. Roosters have been on farms for "
-#~ "about 5,000 years. Every morning it wakes the farm up with its noises."
-#~ msgstr ""
-#~ "公鸡的叫声是“咯咯咯！”。农场饲养公鸡已经有5000多年的历史。每个早上，它都会"
-#~ "用它的啼鸣唤醒农场。"
-
-#~ msgctxt "board1|"
-#~ msgid "This animal wakes the farm up in the morning."
-#~ msgstr "这个动物每天早上叫醒农场。"
-
-#~ msgctxt "board1|"
-#~ msgid ""
-#~ "The sheep is a mammal that bears a fleece of wool. It is a grazing "
-#~ "herbivore, bred for its wool, its meat, and its milk. The fleece can be "
-#~ "removed and used to produce articles of clothing and blankets, among "
-#~ "other things."
-#~ msgstr ""
-#~ "绵羊是能够产羊毛的哺乳类动物。它是放牧的食草动物，人们饲养它来获取羊毛、羊"
-#~ "肉和羊奶。羊毛可以被剃下来，作为生产衣物和毛毯等的原料。"

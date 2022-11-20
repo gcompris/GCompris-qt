@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2022-11-18 11:55+0100\n"
+"PO-Revision-Date: 2022-11-19 11:54+0100\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -6543,12 +6543,6 @@ msgid "Horse"
 msgstr "Paard"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:22
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid ""
-#| "The horse goes 'neigh'. Horses are adapted to run, allowing them to "
-#| "quickly escape predators, and possess an excellent sense of balance. They "
-#| "have single-toed hooves. "
 msgctxt "board1|"
 msgid ""
 "The horse goes 'neigh'. Horses are adapted to run, allowing them to quickly "
@@ -6557,7 +6551,7 @@ msgid ""
 msgstr ""
 "Het paard gaat 'hinniken'. Paarden zijn aangepast om te rennen, waarmee ze "
 "snel kunnen ontsnappen aan roofdieren en bezitten een uitstekend "
-"evenwichtsgevoel. Ze hebben hoeven met één teen. "
+"evenwichtsgevoel. Ze hebben hoeven met één teen."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:25
 msgctxt "board1|"

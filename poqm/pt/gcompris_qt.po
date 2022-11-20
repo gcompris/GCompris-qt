@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: kstars\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2015-05-27 08:46+0000\n"
-"PO-Revision-Date: 2022-11-18 09:59+0000\n"
+"PO-Revision-Date: 2022-11-18 23:42+0000\n"
 "Last-Translator: Pedro Morais <morais@kde.org>\n"
 "Language-Team: pt <kde-i18n-pt@kde.org>\n"
 "Language: pt\n"
@@ -754,7 +754,7 @@ msgstr ""
 "X-POFile-SpellExtra: Thuringia Rhineland Palatinate Westfália Hesse\n"
 "X-POFile-SpellExtra: Silesian Warmian Masurian Silesiano Opole Masovian\n"
 "X-POFile-SpellExtra: ódź Lubusz Lublin Kuyavian Dobruja Bukovina Oware\n"
-"X-POFile-SpellExtra: Nynorsk renewableenergy watercycle\n"
+"X-POFile-SpellExtra: Nynorsk renewableenergy watercycle mú quá bé\n"
 
 #. Activity title
 #: activities/advanced_colors/ActivityInfo.qml:15
@@ -7356,6 +7356,9 @@ msgid ""
 "escape predators, and possess an excellent sense of balance. They have "
 "single-toed hooves."
 msgstr ""
+"O cavalo relincha. Os cavalos estão treinados para correr, permitindo-lhe "
+"fugir rapidamente aos predadores, tendo um sentido de equilíbrio excelente. "
+"Têm cascos únicos por cada pata."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:25
 msgctxt "board1|"
@@ -7393,11 +7396,14 @@ msgid ""
 "developed sense of taste, with around 20,000 taste buds. They can detect "
 "odours 8km away."
 msgstr ""
+"A vaca faz 'mú'. As vacas têm um campo de visão amplo de 330°. Têm um "
+"sentido de paladar bem desenvolvido, com cerca de 20 000 amostras de sabor. "
+"Eles consegue detectar odores a 8km de distância."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:49
 msgctxt "board1|"
 msgid "This animal has around 20,000 taste buds."
-msgstr ""
+msgstr "Este animal conhece cerca de 20 000 amostras de sabores."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:57
 msgctxt "board1|"
@@ -7411,6 +7417,9 @@ msgid ""
 "ability to chase mice and other rodents. They purr to communicate various "
 "emotions."
 msgstr ""
+"O gato faz 'miau'. Os gatos são reconhecidos pelos humanos pela capacidade "
+"de fazerem companhia e de conseguirem perseguir ratos e outros roedores. "
+"Eles ronronam para comunicar várias emoções."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:61
 msgctxt "board1|"
@@ -7428,11 +7437,14 @@ msgid ""
 "The pig goes 'oink'. Pigs wallow in the mud, mainly to control their body "
 "temperature."
 msgstr ""
+"O rato faz 'óinc'. Os porcos esfregam-se na lama, principalmente para "
+"controlar a sua temperatura corporal."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:73
 msgctxt "board1|"
 msgid "This animal wallows in the mud to control its body temperature."
 msgstr ""
+"Este animal esfrega-se na lama para controlar a sua temperatura corporal."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:81
 msgctxt "board1|"
@@ -7445,6 +7457,8 @@ msgid ""
 "The duck goes 'quack'. Ducks are mostly aquatic birds. They have waterproof "
 "feathers and webbed feet which enable them to swim on the water."
 msgstr ""
+"O pato faz 'quá-quá'. Os patos são principalmente pássaros aquáticos. Têm "
+"penas à prova de água e patas com membranas que lhes permitem nadar na água."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:85
 msgctxt "board1|"
@@ -7481,6 +7495,8 @@ msgid ""
 "The dog goes 'woof'. Dogs are probably the oldest domesticated species. They "
 "are descendants of the wolf."
 msgstr ""
+"O cão faz 'ão'. Os cães são a espécie mais antiga para domesticar. Eles são "
+"descendentes dos lobos."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:109
 msgctxt "board1|"
@@ -7498,6 +7514,8 @@ msgid ""
 "The sheep goes 'baa'. Most sheep breeds bear a fleece of wool. The fleece "
 "can be sheared and used to produce textile fibre."
 msgstr ""
+"A ovelha faz 'bé'. A maior parte possui uma camada de lã. A lã poderá ser "
+"tosquiada e usada para produzir fibras têxteis."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:121
 msgctxt "board1|"
