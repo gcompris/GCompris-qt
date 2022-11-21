@@ -799,9 +799,9 @@ ActivityBase {
             GCText {
                 id: activitySettingsLabel
                 text: qsTr("Activity Settings")
+                fontSizeMode: Text.Fit
                 visible: parent.visible
                 width: parent.width
-                height: paintedHeight
                 anchors.verticalCenter: parent.verticalCenter
                 horizontalAlignment: Text.AlignHCenter
                 color: "#232323"
