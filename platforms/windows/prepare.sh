@@ -19,8 +19,6 @@ cd build
 cmake -D COMPRESSED_AUDIO=mp3 ..
 make createMp3FromOgg
 make BundleConvertedOggs
-# don't fetch translations, instead copy the curated list from release source tarball before running this script
-# make getSvnTranslations
 make BuildTranslations
 make BundleTranslations
 #rsync -a ../converted_ogg_to_mp3-*.7z translations-*.7z gcompris.net:/var/www/download

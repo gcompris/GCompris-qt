@@ -6,9 +6,6 @@
 #
 #   SPDX-License-Identifier: GPL-3.0-or-later
 
-# Uncomment if this is not already done
-# make getSvnTranslations
-
 Qt5_BaseDIR=~/Qt/5.12.6
 export ANDROID_NDK_ROOT=$ANDROID_NDK
 

@@ -19,7 +19,6 @@ git checkout -b 0.${version}-po
 mkdir -p build
 cd build
 cmake ..
-make getSvnTranslations
 
 # remove all translation files that should not be shipped
 # get all the locales to keep from LanguageList.qml
