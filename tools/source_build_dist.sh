@@ -29,9 +29,9 @@ for f in $languageListToKeep; do
     fullLanguageList="$fullLanguageList `echo $f | cut -d'_' -f1`"
 done
 # remove each po file that is not within the previous list
-for f in ../po/gcompris_*.po; do
+for f in ../poqm/*/gcompris_qt.po; do
     # get the locale from the filename
-    locale=`echo $f | cut -d'_' -f2- | cut -d'.' -f1`
+    locale=`echo $f | cut -d'/' -f3- | cut -d'/' -f1`
     echo $fullLanguageList | grep -q -w $locale
     if [[ $? -ne 0 ]]; then
         echo "Removing $locale as it is not shipped within gcompris"
@@ -39,7 +39,9 @@ for f in ../po/gcompris_*.po; do
     fi
 done
 
-git add -f ../po
+git add -f ../poqm
+# Remove the po from po/ folder, they are unused
+git rm -f ../po
 git commit -a -m "PO INTEGRATED / DO NOT PUSH ME"
 make dist
 git checkout ${curbranch}
