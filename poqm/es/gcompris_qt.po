@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2022-11-06 15:13+0100\n"
+"PO-Revision-Date: 2022-11-21 00:16+0100\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Language: es\n"
 "X-Qt-Contexts: true\n"
-"X-Generator: Lokalize 22.08.3\n"
+"X-Generator: Lokalize 22.11.80\n"
 "X-Qt-Contexts: true\n"
 
 #. Activity title
@@ -6618,14 +6618,14 @@ msgid ""
 "escape predators, and possess an excellent sense of balance. They have "
 "single-toed hooves."
 msgstr ""
+"El caballo hace «iiiiih». Los caballos están adaptados para correr, por lo "
+"que pueden escapar rápidamente de los depredadores; poseen un excelente "
+"sentido del equilibrio. Tienen pezuñas de un solo dedo."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:25
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal's ancestors were wolves."
 msgctxt "board1|"
 msgid "This animal has single-toed hooves."
-msgstr "Los antepasados de este animal fueron los lobos."
+msgstr "Este animal tiene pezuñas de un solo dedo."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:33
 msgctxt "board1|"
@@ -6638,14 +6638,13 @@ msgid ""
 "The chicken goes 'cluck'. Domestic chickens have wings, but are not capable "
 "of long-distance flight. They have a comb on their head."
 msgstr ""
+"La gallina hace «clo, clo». Las gallinas domésticas tienen alas, pero no "
+"pueden volar largas distancias. Tienen un peine en la cabeza."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:37
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal likes to come out at night."
 msgctxt "board1|"
 msgid "This animal has a comb on its head."
-msgstr "A este animal le gusta salir por la noche."
+msgstr "Este animal tiene un peine en la cabeza."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:45
 msgctxt "board1|"
@@ -6659,11 +6658,14 @@ msgid ""
 "developed sense of taste, with around 20,000 taste buds. They can detect "
 "odours 8km away."
 msgstr ""
+"La vaca hace «muuuu». Las vacas tienen un amplio campo de visión de 330°. "
+"Tienen un sentido del gusto bien desarrollado, con alrededor de 20.000 "
+"papilas gustativas. Pueden detectar olores a 8 km de distancia."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:49
 msgctxt "board1|"
 msgid "This animal has around 20,000 taste buds."
-msgstr ""
+msgstr "Este animal tiene alrededor de 20.000 papilas gustativas."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:57
 msgctxt "board1|"
@@ -6677,14 +6679,14 @@ msgid ""
 "ability to chase mice and other rodents. They purr to communicate various "
 "emotions."
 msgstr ""
+"El gato hace «miau». Los humanos valoran a los gatos por su compañía y su "
+"capacidad para perseguir ratones y otros roedores. Ronronean para comunicar "
+"diversas emociones."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:61
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal lays eggs."
 msgctxt "board1|"
 msgid "This animal can purr."
-msgstr "Este animal pone huevos."
+msgstr "Este animal puede ronronear."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:69
 msgctxt "board1|"
@@ -6697,11 +6699,14 @@ msgid ""
 "The pig goes 'oink'. Pigs wallow in the mud, mainly to control their body "
 "temperature."
 msgstr ""
+"El cerdo hace «oinc». Los cerdos se revuelcan en el barro, principalmente "
+"para controlar la temperatura de su cuerpo."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:73
 msgctxt "board1|"
 msgid "This animal wallows in the mud to control its body temperature."
 msgstr ""
+"Este animal se revuelca en el barro para controlar su temperatura corporal."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:81
 msgctxt "board1|"
@@ -6714,14 +6719,14 @@ msgid ""
 "The duck goes 'quack'. Ducks are mostly aquatic birds. They have waterproof "
 "feathers and webbed feet which enable them to swim on the water."
 msgstr ""
+"El pato hace «cua, cua, cua». Los patos son en su mayoría aves acuáticas. "
+"Tienen plumas impermeables y patas palmeadas que les permiten nadar en el "
+"agua."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:85
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal has webbed feet so it can swim in the water."
 msgctxt "board1|"
 msgid "This animal has webbed feet and can swim on the water."
-msgstr "Este animal tiene patas palmeadas para poder nadar en el agua."
+msgstr "Este animal tiene patas palmeadas y puede nadar en el agua."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:93
 msgctxt "board1|"
@@ -6729,26 +6734,18 @@ msgid "Owl"
 msgstr "Búho"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:94
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid ""
-#| "The owl goes 'hoo. hoo.' The owl has excellent vision and hearing at "
-#| "night."
 msgctxt "board1|"
 msgid ""
 "The owl goes 'hoot'. Owls are nocturnal birds, they have excellent vision "
 "and hearing at night."
 msgstr ""
-"El búho hace «¡Uh-uh!». El búho tiene una vista y un oído excelentes por la "
-"noche."
+"El búho hace «¡Uh-uh!». Los búhos son aves nocturnas y tienen una vista y un "
+"oído excelentes por la noche."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:97
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal likes to come out at night."
 msgctxt "board1|"
 msgid "This animal is a nocturnal bird."
-msgstr "A este animal le gusta salir por la noche."
+msgstr "Este animal es un ave nocturna."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:105
 msgctxt "board1|"
@@ -6761,14 +6758,13 @@ msgid ""
 "The dog goes 'woof'. Dogs are probably the oldest domesticated species. They "
 "are descendants of the wolf."
 msgstr ""
+"El perro hace «guau». Los perros son probablemente la especie domesticada "
+"más antigua. Son descendientes del lobo."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:109
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal is a close relative to the goat."
 msgctxt "board1|"
 msgid "This animal is a descendant of the wolf."
-msgstr "Este animal es un pariente cercano de la cabra."
+msgstr "Este animal desciende del lobo."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:117
 msgctxt "board1|"
@@ -6781,14 +6777,13 @@ msgid ""
 "The sheep goes 'baa'. Most sheep breeds bear a fleece of wool. The fleece "
 "can be sheared and used to produce textile fibre."
 msgstr ""
+"La oveja hace «beeee». La mayoría de las razas de ovejas tienen lana. La "
+"lana se puede cortar y usar para producir fibra textil."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:121
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal's ancestors were wolves."
 msgctxt "board1|"
 msgid "This animal produces wool."
-msgstr "Los antepasados de este animal fueron los lobos."
+msgstr "Este animal produce lana."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:131
 msgctxt "board1|"
