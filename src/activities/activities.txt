@@ -176,6 +176,7 @@ superbrain
 tangram
 target
 tens_complement
+tens_complement_2
 tic_tac_toe
 tic_tac_toe_2players
 traffic
