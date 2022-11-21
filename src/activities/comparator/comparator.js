@@ -35,6 +35,7 @@ function initLevel() {
     var minValue = currentDataset.minValue;
     var maxValue = currentDataset.maxValue;
     var numberOfEquations = currentDataset.numberOfEquations;
+    var sameInteger = currentDataset.sameInteger;
     // By default, the precision is the unit, no decimal numbers
     var precision = currentDataset.precision ? currentDataset.precision : 1;
     var decimalNumbersCount = Math.log10(1 / precision);
@@ -47,6 +48,8 @@ function initLevel() {
     //RandomDataset
     if(currentDataset.random) {
         for(var i = 0; i < numberOfEquations; ++i) {
+            var leftHandSideFloat = 0;
+            var rightHandSideFloat = 0;
             var leftHandSide = 0;
             var rightHandSide = 0;
             // Find a number between [minValue+maxDistanceBetweenNumbers; maxValue-maxDistanceBetweenNumbers] at the good precision
@@ -54,15 +57,25 @@ function initLevel() {
             // allowing the second number to be between [minValue; maxValue]
             // truncate the numbers at the good precision
             if(maxDistanceBetweenNumbers) {
-                leftHandSide = Math.floor(Math.random() * (maxValue - minValue) / precision) * precision + minValue;
+                leftHandSideFloat = Math.floor(Math.random() * (maxValue - minValue) / precision) * precision + minValue;
                 var distance = Math.floor(2 * Math.random() * maxDistanceBetweenNumbers / precision) * precision - maxDistanceBetweenNumbers;
-                rightHandSide = leftHandSide + distance;
-                leftHandSide = toDecimalLocaleNumber(leftHandSide, decimalNumbersCount);
-                rightHandSide = toDecimalLocaleNumber(rightHandSide, decimalNumbersCount);
+                rightHandSideFloat = leftHandSideFloat + distance;
+                leftHandSide = toDecimalLocaleNumber(leftHandSideFloat, decimalNumbersCount);
+                rightHandSide = toDecimalLocaleNumber(rightHandSideFloat, decimalNumbersCount);
             }
             else {
-                leftHandSide = toDecimalLocaleNumber(Math.floor(Math.random() * (maxValue - minValue + 1)) + minValue, decimalNumbersCount);
-                rightHandSide = toDecimalLocaleNumber(Math.floor(Math.random() * (maxValue - minValue + 1)) + minValue, decimalNumbersCount);
+                leftHandSideFloat = Math.floor(Math.random() * (maxValue - minValue + 1)) + minValue;
+                leftHandSide = toDecimalLocaleNumber(leftHandSideFloat, decimalNumbersCount);
+                rightHandSideFloat = Math.floor(Math.random() * (maxValue - minValue + 1)) + minValue;
+                rightHandSide = toDecimalLocaleNumber(rightHandSideFloat, decimalNumbersCount);
+            }
+
+            // If we use the option to have same integer part on both sides
+            if(sameInteger) {
+                var sharedInteger = Math.trunc(leftHandSideFloat);
+                var rightHandDecimal = rightHandSideFloat - Math.trunc(rightHandSideFloat);
+                rightHandSideFloat = sharedInteger + rightHandDecimal;
+                rightHandSide = toDecimalLocaleNumber(rightHandSideFloat, decimalNumbersCount);
             }
 
             items.dataListModel.append({

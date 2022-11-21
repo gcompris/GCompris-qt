@@ -19,7 +19,7 @@ ActivityInfo {
   description: qsTr("Compare the numbers and choose the corresponding sign.")
   //intro: "Select the correct comparator sign for each pair of numbers in the list."
   //: Help goal
-  goal: qsTr("Learn how to compare the number values.")
+  goal: qsTr("Learn how to compare number values.")
   //: Help prerequisite
   prerequisite: ""
   //: Help manual
@@ -34,5 +34,5 @@ ActivityInfo {
   credit: ""
   section: "math numeration"
   createdInVersion: 30000
-  levels: "1,2,3,4,5,6,7,8,9"
+  levels: "1,2,3,4,5,6,7,8,9,10"
 }
