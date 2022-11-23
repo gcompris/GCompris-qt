@@ -27,7 +27,7 @@ Data {
         {
             random: true,
             numberOfSublevels: 5,
-            maxDistanceBetweenNumbers: 0.05,
+            maxDistanceBetweenNumbers: 1,
             precision: 0.01,
             minValue: 0.0,
             maxValue: 99.99,
