@@ -91,8 +91,6 @@ ActivityBase {
             property bool displayUndoAllDialog: false
             // Used to stop piece animation on board resize; set to true on board resize, and to false on any action that triggers a piece move
             property bool noPieceAnimation: false
-
-            Behavior on cellSize { PropertyAnimation { easing.type: Easing.InOutQuad; duration: 1000 } }
         }
 
         onStart: { Activity.start(items) }
