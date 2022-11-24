@@ -14,8 +14,8 @@ Image {
     id: piece
     property int pos
     Behavior on opacity { PropertyAnimation { easing.type: Easing.InOutQuad; duration: 200 } }
-    Behavior on x { PropertyAnimation { easing.type: Easing.InOutQuad; duration: 200 } }
-    Behavior on y { PropertyAnimation { easing.type: Easing.InOutQuad; duration: 200 } }
+    Behavior on x { PropertyAnimation { easing.type: Easing.InOutQuad; duration: items.noPieceAnimation ? 0 : 200 } }
+    Behavior on y { PropertyAnimation { easing.type: Easing.InOutQuad; duration: items.noPieceAnimation ? 0 : 200 } }
     z: 10
 
     property string img

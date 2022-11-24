@@ -208,6 +208,7 @@ function computerMove() {
 }
 
 function moveTo(from, to) {
+    items.noPieceAnimation = false
     var move = state.move({"from": viewPosToEngine(from), "to": viewPosToEngine(to)})
     if(move) {
         visibleMove(move, from, to)
@@ -239,6 +240,7 @@ function undo() {
 }
 
 function moveByEngine(engineMove) {
+    items.noPieceAnimation = false
     if(!engineMove)
         return
     var move = state.move(engineMove)

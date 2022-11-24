@@ -64,10 +64,10 @@ ActivityBase {
             property var movesToDo: []
             property string message
             property alias trigComputerMove: trigComputerMove
+             // Used to stop piece animation on board resize; set to true on board resize, and to false on any action that triggers a piece move
+            property bool noPieceAnimation: false
 
             property int numberOfCases: 10
-
-            Behavior on cellSize { PropertyAnimation { easing.type: Easing.InOutQuad; duration: 1000 } }
         }
 
         onStart: { Activity.start(items) }
@@ -246,6 +246,7 @@ ActivityBase {
             anchors.centerIn: layoutArea
             z: 09
             color: "#2E1B0C"
+            onWidthChanged: items.noPieceAnimation = true
 
             // The chessboard
             GridView {
