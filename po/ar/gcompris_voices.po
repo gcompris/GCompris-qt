@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-10-31 00:41+0000\n"
+"POT-Creation-Date: 2022-11-24 00:41+0000\n"
 "PO-Revision-Date: 2022-01-04 16:16+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
@@ -280,6 +280,13 @@ msgstr "طابِق اللون المعروض بنقر الأزرار على "
 #: activities/colors/ActivityInfo.qml:18
 #, kde-format
 msgid "Click on the right color"
+msgstr ""
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "comparator"
+#: activities/comparator/ActivityInfo.qml:20
+#, kde-format
+msgid ""
+"Select the correct comparator sign for each pair of numbers in the list."
 msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "crane"

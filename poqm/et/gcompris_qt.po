@@ -65,7 +65,9 @@ msgstr ""
 #: activities/calendar/ActivityInfo.qml:25
 #: activities/click_on_letter/ActivityInfo.qml:25
 #: activities/click_on_letter_up/ActivityInfo.qml:25
-#: activities/colors/ActivityInfo.qml:25 activities/crane/ActivityInfo.qml:30
+#: activities/colors/ActivityInfo.qml:25
+#: activities/comparator/ActivityInfo.qml:28
+#: activities/crane/ActivityInfo.qml:30
 #: activities/enumerate/ActivityInfo.qml:25
 #: activities/fifteen/ActivityInfo.qml:25
 #: activities/find_the_day/ActivityInfo.qml:25
@@ -5189,6 +5191,146 @@ msgstr "Sulgege"
 msgctxt "FindIt|"
 msgid "Continue"
 msgstr "Jätka"
+
+#. Activity title
+#: activities/comparator/ActivityInfo.qml:17
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Compare numbers."
+msgctxt "ActivityInfo|"
+msgid "Compare numbers"
+msgstr "Võrdle numbreid."
+
+#. Help title
+#: activities/comparator/ActivityInfo.qml:19
+msgctxt "ActivityInfo|"
+msgid "Compare the numbers and choose the corresponding sign."
+msgstr ""
+
+#. Help goal
+#: activities/comparator/ActivityInfo.qml:22
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Learn about prime numbers."
+msgctxt "ActivityInfo|"
+msgid "Learn how to compare number values."
+msgstr "Algarvude tundmaõppimine."
+
+#. Help manual
+#: activities/comparator/ActivityInfo.qml:26
+msgctxt "ActivityInfo|"
+msgid ""
+"Select a pair of numbers in the list. Then select the correct comparison "
+"symbol for this pair. When each line contains a symbol, select the OK button "
+"to validate the answers."
+msgstr ""
+
+#: activities/comparator/ActivityInfo.qml:27
+msgctxt "ActivityInfo|"
+msgid ""
+"If some answers are incorrect, a cross icon will appear on the corresponding "
+"lines. Correct the errors, then select the OK button again."
+msgstr ""
+
+#: activities/comparator/ActivityInfo.qml:29
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Down arrow: select previous item"
+msgctxt "ActivityInfo|"
+msgid "Up and Down arrows: select a pair of numbers in the list"
+msgstr "Allanool: eelmise üksuse valimine"
+
+#: activities/comparator/ActivityInfo.qml:30
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Left and Right arrows: turn left and right"
+msgctxt "ActivityInfo|"
+msgid "Left and Right arrows: select a symbol button"
+msgstr "Vasak- ja paremnooled: pöörake vasakule ja paremale"
+
+#: activities/comparator/ActivityInfo.qml:31
+msgctxt "ActivityInfo|"
+msgid "Space: if a symbol button is selected, enter this symbol"
+msgstr ""
+
+#: activities/comparator/ActivityInfo.qml:32
+#, fuzzy
+msgctxt "ActivityInfo|"
+msgid "Return: validate the answers"
+msgstr "Vastuste kinnitamine"
+
+#: activities/comparator/ActivityInfo.qml:33
+msgctxt "ActivityInfo|"
+msgid "&lt;, &gt; or =: enter the corresponding symbol"
+msgstr ""
+
+#: activities/comparator/resource/1/Data.qml:36
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Numbers from 0 to 9."
+msgctxt "Data|"
+msgid "Numbers from 1 to 9."
+msgstr "Numbrid 0 kuni 9."
+
+#: activities/comparator/resource/10/Data.qml:14
+msgctxt "Data|"
+msgid "3 decimal places between 0 and 999."
+msgstr ""
+
+#: activities/comparator/resource/2/Data.qml:14
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Numbers from 0 to 9."
+msgctxt "Data|"
+msgid "Numbers from 1 to 19."
+msgstr "Numbrid 0 kuni 9."
+
+#: activities/comparator/resource/3/Data.qml:14
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Numbers from 0 to 9."
+msgctxt "Data|"
+msgid "Numbers from 1 to 100."
+msgstr "Numbrid 0 kuni 9."
+
+#: activities/comparator/resource/4/Data.qml:14
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Numbers from 0 to 9."
+msgctxt "Data|"
+msgid "Numbers from 1 to 1000."
+msgstr "Numbrid 0 kuni 9."
+
+#: activities/comparator/resource/5/Data.qml:14
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Numbers from 0 to 9."
+msgctxt "Data|"
+msgid "Numbers from 1 to 1000000."
+msgstr "Numbrid 0 kuni 9."
+
+#: activities/comparator/resource/6/Data.qml:14
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Numbers from 0 to 9."
+msgctxt "Data|"
+msgid "Numbers from 1 to 1 billion."
+msgstr "Numbrid 0 kuni 9."
+
+#: activities/comparator/resource/7/Data.qml:14
+msgctxt "Data|"
+msgid "1 decimal place between 0 and 9, same integer part."
+msgstr ""
+
+#: activities/comparator/resource/8/Data.qml:14
+msgctxt "Data|"
+msgid "1 decimal place between 0 and 9."
+msgstr ""
+
+#: activities/comparator/resource/9/Data.qml:14
+msgctxt "Data|"
+msgid "2 decimal places between 0 and 99.99."
+msgstr ""
 
 #. Activity title
 #: activities/crane/ActivityInfo.qml:20
@@ -27765,11 +27907,6 @@ msgstr "Alusta"
 #~ msgctxt "ActivityInfo|"
 #~ msgid "Click on the correct instrument."
 #~ msgstr "Klõpsa õigetel muusika instrumentidel."
-
-#, fuzzy
-#~ msgctxt "ActivityInfo|"
-#~ msgid "-Enter: validate the answer"
-#~ msgstr "Vastuste kinnitamine"
 
 #, fuzzy
 #~ msgctxt "ActivityInfo|"
