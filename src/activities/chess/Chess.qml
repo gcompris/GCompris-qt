@@ -89,6 +89,8 @@ ActivityBase {
             property alias whiteTakenPieceModel: whiteTakenPieces.takenPiecesModel
             property alias blackTakenPieceModel: blackTakenPieces.takenPiecesModel
             property bool displayUndoAllDialog: false
+            // Used to stop piece animation on board resize; set to true on board resize, and to false on any action that triggers a piece move
+            property bool noPieceAnimation: false
 
             Behavior on cellSize { PropertyAnimation { easing.type: Easing.InOutQuad; duration: 1000 } }
         }
@@ -353,6 +355,7 @@ ActivityBase {
             anchors.centerIn: layoutArea
             z: 08
             color: "#452501"
+            onWidthChanged: items.noPieceAnimation = true
 
             // The chessboard
             GridView {
