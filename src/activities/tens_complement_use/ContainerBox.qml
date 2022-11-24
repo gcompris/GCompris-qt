@@ -5,15 +5,17 @@
  */
 import QtQuick 2.12
 import "../../core"
-import "tens_complement3.js" as Activity
+import "tens_complement_use.js" as Activity
 
 Rectangle {
+    id: cardContainer
+    readonly property string correctAnswerImage: "qrc:/gcompris/src/core/resource/apply.svg"
+    readonly property string wrongAnswerImage:  "qrc:/gcompris/src/core/resource/cancel.svg"
+
     color: "#F0CB38"
     border.color: "black"
     border.width: 3
     radius: 15
-    property ListModel questionListModel
-    property ListModel answerListModel
     property bool tickVisibility
     property string validationImage
 
@@ -37,7 +39,7 @@ Rectangle {
             interactive: false
             anchors.centerIn: parent
             orientation: ListView.Horizontal
-            model: questionListModel
+            model: addition
             delegate: Card {
                 height: questionContainer.height * 0.8
                 width: questionContainer.width / 6
@@ -66,28 +68,31 @@ Rectangle {
             interactive: false
             anchors.centerIn: parent
             orientation: ListView.Horizontal
-            model: answerListModel
+            model: secondRow
             delegate: Card {
                 height: answerContainer.height * 0.8
                 width: answerContainer.width / 10
+                enabled: isAnswerCard
+                onClicked: {
+                    if(value != "?") {
+                        Activity.reappearNumberCard(value);
+                        value = "?";
+                    }
+                    value = Activity.getEnteredCard();
+                    Activity.showOkButton();
+                }
             }
         }
     }
-
-    Rectangle {
-        id: answerValidationSymbol
-        height: Math.max(answerContainer.height * 0.12, answerContainer.width * 0.12)
-        width: Math.max(answerContainer.height * 0.12, answerContainer.width * 0.12)
-        color: "#F0CB38"
+    
+    Image {
+        visible: isValidationImageVisible
+        sourceSize.height: answerContainer.height
+        source: isGood === true ? correctAnswerImage : wrongAnswerImage
         anchors {
-            verticalCenter: answerContainer.verticalCenter
-            right: parent.right
-            rightMargin: 10
-        }
-        Image {
-            visible: tickVisibility
-            anchors.fill: parent
-            source: validationImage
+            right: cardContainer.right
+            leftMargin: 5
+            verticalCenter: cardContainer.verticalCenter
         }
     }
 }
