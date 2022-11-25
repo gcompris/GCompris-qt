@@ -100,6 +100,7 @@ ActivityBase {
             }
 
             function initSubLevel() {
+                stopMorseSounds();
                 questionValue = dataset[currentLevel].values[1][score.currentSubLevel-1]
                 questionValue = questionValue.replace(/\./g, items.middleDot);
                 activity.audioVoices.clearQueue();
@@ -141,11 +142,21 @@ ActivityBase {
 
             function check() {
                 if(feedback.value === items.questionValue) {
+                    stopMorseSounds();
                     bonus.good('tux');
                 }
                 else {
+                    stopMorseSounds();
                     bonus.bad('tux', bonus.checkAnswer);
                 }
+            }
+
+            function stopMorseSounds() {
+                // Reset soundList and stop running sound
+                delayTimer.stop();
+                ledContainer.soundList = [];
+                ledContainer.phraseRunning = false;
+                activity.stopSounds();
             }
         }
 
