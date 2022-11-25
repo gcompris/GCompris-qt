@@ -606,30 +606,30 @@ ActivityBase {
                 right: showMapButton.left
                 rightMargin: background.layoutMargins
             }
+            mouseArea.enabled: ledContainer.phraseRunning == false
+            mouseArea.hoverEnabled: ledContainer.phraseRunning == false
             onClicked: {
-                if (ledContainer.phraseRunning == false) {
-                    ledContainer.soundList = []
-                    for(var f = 0 ; f < items.questionValue.length; ++ f) {
-                        var letter = items.questionValue[f];
-                        // If the character to play is a letter, we convert it ot morse
-                        if(".·- ".indexOf(items.questionValue[f]) === -1) {
-                            letter = morseConverter.alpha2morse(items.questionValue[f]);
-                        }
-                        // We play each character, one after the other
-                        for(var i = 0 ; i < letter.length; ++ i) {
-                            if(letter[i] === '-') {
-                                ledContainer.soundList.push("dash.wav");
-                            }
-                            else if(letter[i] === '.' || letter[i] === '·') {
-                                ledContainer.soundList.push("dot.wav");
-                            }
-                        }
-                        // Add a silence after each letter
-                        ledContainer.soundList.push("silence.wav")
+                ledContainer.soundList = []
+                for(var f = 0 ; f < items.questionValue.length; ++ f) {
+                    var letter = items.questionValue[f];
+                    // If the character to play is a letter, we convert it to morse
+                    if(".·- ".indexOf(items.questionValue[f]) === -1) {
+                        letter = morseConverter.alpha2morse(items.questionValue[f]);
                     }
-                    ledContainer.phraseRunning = true;
-                    ledContainer.playLedAnim();
+                    // We play each character, one after the other
+                    for(var i = 0 ; i < letter.length; ++ i) {
+                        if(letter[i] === '-') {
+                            ledContainer.soundList.push("dash.wav");
+                        }
+                        else if(letter[i] === '.' || letter[i] === '·') {
+                            ledContainer.soundList.push("dot.wav");
+                        }
+                    }
+                    // Add a silence after each letter
+                    ledContainer.soundList.push("silence.wav")
                 }
+                ledContainer.phraseRunning = true;
+                ledContainer.playLedAnim();
             }
         }
 
