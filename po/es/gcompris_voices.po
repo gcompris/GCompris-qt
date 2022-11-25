@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_voices\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-10-31 00:41+0000\n"
+"POT-Creation-Date: 2022-11-24 00:41+0000\n"
 "PO-Revision-Date: 2022-10-31 21:16+0100\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
@@ -314,6 +314,13 @@ msgstr "Haz que coincida el color moviendo las barras que hay en las linternas"
 #, kde-format
 msgid "Click on the right color"
 msgstr "Pulsa sobre el color correcto"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "comparator"
+#: activities/comparator/ActivityInfo.qml:20
+#, kde-format
+msgid ""
+"Select the correct comparator sign for each pair of numbers in the list."
+msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "crane"
 #: activities/crane/ActivityInfo.qml:23
