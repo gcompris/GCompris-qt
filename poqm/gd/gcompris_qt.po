@@ -19162,13 +19162,13 @@ msgstr ""
 "Nuair a bhios tu deiseil, briog orm is feuch an ath-chruthaich thu na "
 "caractaran Braille."
 
-#: activities/morse_code/MorseCode.qml:335
+#: activities/morse_code/MorseCode.qml:346
 #, qt-format
 msgctxt "MorseCode|"
 msgid "Morse value: %1"
 msgstr ""
 
-#: activities/morse_code/MorseCode.qml:336
+#: activities/morse_code/MorseCode.qml:347
 #, qt-format
 msgctxt "MorseCode|"
 msgid "Alphabet/Numeric value: %1"

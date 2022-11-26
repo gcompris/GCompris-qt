@@ -19042,7 +19042,7 @@ msgstr ""
 "Όταν είσαι έτοιμος πάτησε επάνω μου και προσπάθησε να αναπαράγεις τους "
 "χαρακτήρες Μπράιγ."
 
-#: activities/morse_code/MorseCode.qml:335
+#: activities/morse_code/MorseCode.qml:346
 #, fuzzy, qt-format
 #| msgctxt "RomanNumerals|"
 #| msgid "Roman value: %1"
@@ -19050,7 +19050,7 @@ msgctxt "MorseCode|"
 msgid "Morse value: %1"
 msgstr "Ρωμαϊκή γραφή: %1"
 
-#: activities/morse_code/MorseCode.qml:336
+#: activities/morse_code/MorseCode.qml:347
 #, fuzzy, qt-format
 #| msgctxt "RomanNumerals|"
 #| msgid "Arabic value: %1"

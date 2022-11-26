@@ -18928,13 +18928,13 @@ msgstr ""
 "Dès que tu es prêt, clique-moi dessus et essaie de reproduire les caractères "
 "braille."
 
-#: activities/morse_code/MorseCode.qml:335
+#: activities/morse_code/MorseCode.qml:346
 #, qt-format
 msgctxt "MorseCode|"
 msgid "Morse value: %1"
 msgstr "Valeur en Morse : %1"
 
-#: activities/morse_code/MorseCode.qml:336
+#: activities/morse_code/MorseCode.qml:347
 #, qt-format
 msgctxt "MorseCode|"
 msgid "Alphabet/Numeric value: %1"

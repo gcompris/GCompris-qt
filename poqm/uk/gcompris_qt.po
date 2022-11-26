@@ -11,7 +11,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=gcompris&keywords=I18N+L10N&component=general\n"
 "POT-Creation-Date: 2014-11-09 17:30+0000\n"
-"PO-Revision-Date: 2022-11-19 06:19+0200\n"
+"PO-Revision-Date: 2022-11-25 09:24+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
 "Language: uk\n"
@@ -5229,27 +5229,21 @@ msgstr "Продовжити"
 
 #. Activity title
 #: activities/comparator/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Compare numbers."
 msgctxt "ActivityInfo|"
 msgid "Compare numbers"
-msgstr "Порівняйте числа."
+msgstr "Порівняння чисел"
 
 #. Help title
 #: activities/comparator/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Compare the numbers and choose the corresponding sign."
-msgstr ""
+msgstr "Порівняйте числа і виберіть відповідний знак."
 
 #. Help goal
 #: activities/comparator/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn about prime numbers."
 msgctxt "ActivityInfo|"
 msgid "Learn how to compare number values."
-msgstr "Вивчення простих чисел."
+msgstr "Вивчить порівняння чисел."
 
 #. Help manual
 #: activities/comparator/ActivityInfo.qml:26
@@ -5259,6 +5253,9 @@ msgid ""
 "symbol for this pair. When each line contains a symbol, select the OK button "
 "to validate the answers."
 msgstr ""
+"Виберіть пару чисел у списку. Потім виберіть належний символ порівняння для "
+"цієї пари. Коли у кожному рядку буде символ, натисніть кнопку «Гаразд», щоб "
+"перевірити відповіді."
 
 #: activities/comparator/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
@@ -5266,108 +5263,83 @@ msgid ""
 "If some answers are incorrect, a cross icon will appear on the corresponding "
 "lines. Correct the errors, then select the OK button again."
 msgstr ""
+"Якщо відповіді є неправильними, на відповідних рядках буде показано значок "
+"хрестика. Виправте помилки, потім натисніть кнопку «Гаразд» ще раз."
 
 #: activities/comparator/ActivityInfo.qml:29
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Down arrow: select previous item"
 msgctxt "ActivityInfo|"
 msgid "Up and Down arrows: select a pair of numbers in the list"
-msgstr "↓: вибрати попередній пункт"
+msgstr "Стрілки ⬆ і ⬇: вибрати пару чисел зі списку"
 
 #: activities/comparator/ActivityInfo.qml:30
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Left and Right arrows: turn left and right"
 msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: select a symbol button"
-msgstr "← і →: повернути ліворуч або праворуч"
+msgstr "← і →: вибрати кнопку символу"
 
 #: activities/comparator/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
 msgid "Space: if a symbol button is selected, enter this symbol"
-msgstr ""
+msgstr "Пробіл: якщо вибрано кнопку символу, ввести цей символ"
 
 #: activities/comparator/ActivityInfo.qml:32
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Enter: validate your answer"
 msgctxt "ActivityInfo|"
 msgid "Return: validate the answers"
-msgstr "Enter: перевірити вашу відповідь"
+msgstr "Enter: перевірити відповідь"
 
 #: activities/comparator/ActivityInfo.qml:33
 msgctxt "ActivityInfo|"
 msgid "&lt;, &gt; or =: enter the corresponding symbol"
-msgstr ""
+msgstr "&lt;, &gt; або =: ввести відповідний символ"
 
 #: activities/comparator/resource/1/Data.qml:36
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "Data|"
 msgid "Numbers from 1 to 9."
-msgstr "Числа від 0 до 9."
+msgstr "Числа від 1 до 9."
 
 #: activities/comparator/resource/10/Data.qml:14
 msgctxt "Data|"
 msgid "3 decimal places between 0 and 999."
-msgstr ""
+msgstr "3 десяткових позиції між 0 і 999."
 
 #: activities/comparator/resource/2/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "Data|"
 msgid "Numbers from 1 to 19."
-msgstr "Числа від 0 до 9."
+msgstr "Числа від 1 до 19."
 
 #: activities/comparator/resource/3/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "Data|"
 msgid "Numbers from 1 to 100."
-msgstr "Числа від 0 до 9."
+msgstr "Числа від 1 до 100."
 
 #: activities/comparator/resource/4/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "Data|"
 msgid "Numbers from 1 to 1000."
-msgstr "Числа від 0 до 9."
+msgstr "Числа від 1 до 1000."
 
 #: activities/comparator/resource/5/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "Data|"
 msgid "Numbers from 1 to 1000000."
-msgstr "Числа від 0 до 9."
+msgstr "Числа від 1 до 1000000."
 
 #: activities/comparator/resource/6/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "Data|"
 msgid "Numbers from 1 to 1 billion."
-msgstr "Числа від 0 до 9."
+msgstr "Числа від 1 до мільярда."
 
 #: activities/comparator/resource/7/Data.qml:14
 msgctxt "Data|"
 msgid "1 decimal place between 0 and 9, same integer part."
-msgstr ""
+msgstr "1 десяткова позиція між 0 і 9, однакова ціла частина."
 
 #: activities/comparator/resource/8/Data.qml:14
 msgctxt "Data|"
 msgid "1 decimal place between 0 and 9."
-msgstr ""
+msgstr "1 десяткова позиція між 0 і 9."
 
 #: activities/comparator/resource/9/Data.qml:14
 msgctxt "Data|"
 msgid "2 decimal places between 0 and 99.99."
-msgstr ""
+msgstr "2 десяткових позиції між 0 і 99.99."
 
 #. Activity title
 #: activities/crane/ActivityInfo.qml:20
@@ -18645,13 +18617,13 @@ msgstr ""
 "Коли будете готові, клацніть на Туксі і ми перетворимо повідомлення на код "
 "Морзе."
 
-#: activities/morse_code/MorseCode.qml:335
+#: activities/morse_code/MorseCode.qml:346
 #, qt-format
 msgctxt "MorseCode|"
 msgid "Morse value: %1"
 msgstr "Код Морзе: %1"
 
-#: activities/morse_code/MorseCode.qml:336
+#: activities/morse_code/MorseCode.qml:347
 #, qt-format
 msgctxt "MorseCode|"
 msgid "Alphabet/Numeric value: %1"

@@ -18477,7 +18477,7 @@ msgid "When you are ready, click on Tux and we will converse in Morse code."
 msgstr ""
 "നിങ്ങൾ തയ്യാറാണെങ്കിൽ, എന്നിൽ ക്ലിക്ക് ചെയ്ത് ബ്രായി ക്യാരക്ടറുകൾ നിർമ്മിക്കാൻ ശ്രമിക്കൂ."
 
-#: activities/morse_code/MorseCode.qml:335
+#: activities/morse_code/MorseCode.qml:346
 #, fuzzy, qt-format
 #| msgctxt "RomanNumerals|"
 #| msgid "Roman value: %1"
@@ -18485,7 +18485,7 @@ msgctxt "MorseCode|"
 msgid "Morse value: %1"
 msgstr "റോമൻ വില: %1"
 
-#: activities/morse_code/MorseCode.qml:336
+#: activities/morse_code/MorseCode.qml:347
 #, fuzzy, qt-format
 #| msgctxt "RomanNumerals|"
 #| msgid "Arabic value: %1"

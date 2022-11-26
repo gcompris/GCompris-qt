@@ -18623,7 +18623,7 @@ msgid "When you are ready, click on Tux and we will converse in Morse code."
 msgstr ""
 "When you are ready, click on me and try reproducing Braille characters."
 
-#: activities/morse_code/MorseCode.qml:335
+#: activities/morse_code/MorseCode.qml:346
 #, fuzzy, qt-format
 #| msgctxt "RomanNumerals|"
 #| msgid "Roman value: %1"
@@ -18631,7 +18631,7 @@ msgctxt "MorseCode|"
 msgid "Morse value: %1"
 msgstr "Roman value: %1"
 
-#: activities/morse_code/MorseCode.qml:336
+#: activities/morse_code/MorseCode.qml:347
 #, fuzzy, qt-format
 #| msgctxt "RomanNumerals|"
 #| msgid "Arabic value: %1"

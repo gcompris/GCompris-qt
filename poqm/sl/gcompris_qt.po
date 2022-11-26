@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2022-11-19 19:24+0100\n"
+"PO-Revision-Date: 2022-11-25 11:18+0100\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
@@ -5164,27 +5164,21 @@ msgstr "Nadaljujte"
 
 #. Activity title
 #: activities/comparator/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Compare numbers."
 msgctxt "ActivityInfo|"
 msgid "Compare numbers"
-msgstr "Primerjaj števila."
+msgstr "Primerjaj števila"
 
 #. Help title
 #: activities/comparator/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Compare the numbers and choose the corresponding sign."
-msgstr ""
+msgstr "Primerjajte števila in in izberite ustrezni znak primerjave."
 
 #. Help goal
 #: activities/comparator/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn about prime numbers."
 msgctxt "ActivityInfo|"
 msgid "Learn how to compare number values."
-msgstr "Nauči se o praštevilih."
+msgstr "Naučite se primerjati številske vrednosti."
 
 #. Help manual
 #: activities/comparator/ActivityInfo.qml:26
@@ -5194,6 +5188,8 @@ msgid ""
 "symbol for this pair. When each line contains a symbol, select the OK button "
 "to validate the answers."
 msgstr ""
+"Izberite par števil v seznamu. Izberite pravilni znak primerjave za ta par. "
+"Ko vsaka vrstica vsebuje znak, izberite gumb OK za ovrednotenje odgovorov."
 
 #: activities/comparator/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
@@ -5201,108 +5197,83 @@ msgid ""
 "If some answers are incorrect, a cross icon will appear on the corresponding "
 "lines. Correct the errors, then select the OK button again."
 msgstr ""
+"Če je odgovor napačen, se bo v tej vrstici pojavila ikona s križem. "
+"Popravite napake in spet izberite gumb OK."
 
 #: activities/comparator/ActivityInfo.qml:29
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Down arrow: select previous item"
 msgctxt "ActivityInfo|"
 msgid "Up and Down arrows: select a pair of numbers in the list"
-msgstr "Puščica dol: izberite prejšnjo postavko"
+msgstr "Puščici gor in dol: izberite par števil v seznamu"
 
 #: activities/comparator/ActivityInfo.qml:30
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Left and Right arrows: turn left and right"
 msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: select a symbol button"
-msgstr "Puščici levo in desno: obrnite se levo in desno"
+msgstr "Puščici levo in desno: izberite gumb s simbolom"
 
 #: activities/comparator/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
 msgid "Space: if a symbol button is selected, enter this symbol"
-msgstr ""
+msgstr "Preslednica: če je gumb s simbolom izbran, vnesite ta simbol"
 
 #: activities/comparator/ActivityInfo.qml:32
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Enter: validate your answer"
 msgctxt "ActivityInfo|"
 msgid "Return: validate the answers"
-msgstr "Enter: potrdite odgovor"
+msgstr "Return: ovrednotite odgovore"
 
 #: activities/comparator/ActivityInfo.qml:33
 msgctxt "ActivityInfo|"
 msgid "&lt;, &gt; or =: enter the corresponding symbol"
-msgstr ""
+msgstr "&lt;, &gt; ali =: vnesite ustrezni simbol"
 
 #: activities/comparator/resource/1/Data.qml:36
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "Data|"
 msgid "Numbers from 1 to 9."
-msgstr "Števila od 0 do 9."
+msgstr "Števila od 1 do 9."
 
 #: activities/comparator/resource/10/Data.qml:14
 msgctxt "Data|"
 msgid "3 decimal places between 0 and 999."
-msgstr ""
+msgstr "3 decimalna mesta med 0 in 999."
 
 #: activities/comparator/resource/2/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "Data|"
 msgid "Numbers from 1 to 19."
-msgstr "Števila od 0 do 9."
+msgstr "Števila od 1 do 19."
 
 #: activities/comparator/resource/3/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "Data|"
 msgid "Numbers from 1 to 100."
-msgstr "Števila od 0 do 9."
+msgstr "Števila od 1 do 100."
 
 #: activities/comparator/resource/4/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "Data|"
 msgid "Numbers from 1 to 1000."
-msgstr "Števila od 0 do 9."
+msgstr "Števila od 1 do 1000."
 
 #: activities/comparator/resource/5/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "Data|"
 msgid "Numbers from 1 to 1000000."
-msgstr "Števila od 0 do 9."
+msgstr "Števila od 1 do 1000000."
 
 #: activities/comparator/resource/6/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "Data|"
 msgid "Numbers from 1 to 1 billion."
-msgstr "Števila od 0 do 9."
+msgstr "Števila od 1 do 1 bilijon."
 
 #: activities/comparator/resource/7/Data.qml:14
 msgctxt "Data|"
 msgid "1 decimal place between 0 and 9, same integer part."
-msgstr ""
+msgstr "1 decimalno mesto med 0 in 9, enak celi del."
 
 #: activities/comparator/resource/8/Data.qml:14
 msgctxt "Data|"
 msgid "1 decimal place between 0 and 9."
-msgstr ""
+msgstr "1 decimalno mesto med 0 in 9."
 
 #: activities/comparator/resource/9/Data.qml:14
 msgctxt "Data|"
 msgid "2 decimal places between 0 and 99.99."
-msgstr ""
+msgstr "2 decimalni mesti med 0 in 99,99."
 
 #. Activity title
 #: activities/crane/ActivityInfo.qml:20
@@ -18460,13 +18431,13 @@ msgstr ""
 "Ko boste pripravljeni, kliknite na Tuxa in se bomo pogovarjali v Morsejevi "
 "kodi."
 
-#: activities/morse_code/MorseCode.qml:335
+#: activities/morse_code/MorseCode.qml:346
 #, qt-format
 msgctxt "MorseCode|"
 msgid "Morse value: %1"
 msgstr "Morsejeva vrednost: %1"
 
-#: activities/morse_code/MorseCode.qml:336
+#: activities/morse_code/MorseCode.qml:347
 #, qt-format
 msgctxt "MorseCode|"
 msgid "Alphabet/Numeric value: %1"

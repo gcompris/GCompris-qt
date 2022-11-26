@@ -18893,7 +18893,7 @@ msgstr ""
 "Quando estiver pronto, clique em mim e tente reproduzir os caracteres "
 "Braille."
 
-#: activities/morse_code/MorseCode.qml:335
+#: activities/morse_code/MorseCode.qml:346
 #, fuzzy, qt-format
 #| msgctxt "RomanNumerals|"
 #| msgid "Roman value: %1"
@@ -18901,7 +18901,7 @@ msgctxt "MorseCode|"
 msgid "Morse value: %1"
 msgstr "Valor romano: %1"
 
-#: activities/morse_code/MorseCode.qml:336
+#: activities/morse_code/MorseCode.qml:347
 #, fuzzy, qt-format
 #| msgctxt "RomanNumerals|"
 #| msgid "Arabic value: %1"

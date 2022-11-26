@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GCompris\n"
 "POT-Creation-Date: 2018-11-30 13:03+0000\n"
-"PO-Revision-Date: 2022-11-06 06:36+0100\n"
+"PO-Revision-Date: 2022-11-25 22:41+0100\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
 "Language: eu\n"
@@ -5180,27 +5180,21 @@ msgstr "Jarraitu"
 
 #. Activity title
 #: activities/comparator/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Compare numbers."
 msgctxt "ActivityInfo|"
 msgid "Compare numbers"
-msgstr "Zenbakiak konparatu."
+msgstr "Konparatu zenbakiak"
 
 #. Help title
 #: activities/comparator/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Compare the numbers and choose the corresponding sign."
-msgstr ""
+msgstr "Konparatu zenbakiak eta hautatu dagokien zeinua."
 
 #. Help goal
 #: activities/comparator/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn about prime numbers."
 msgctxt "ActivityInfo|"
 msgid "Learn how to compare number values."
-msgstr "Ikasi zenbaki lehenei buruz."
+msgstr "Ikasi zenbakizko balioak nola konparatu."
 
 #. Help manual
 #: activities/comparator/ActivityInfo.qml:26
@@ -5210,6 +5204,9 @@ msgid ""
 "symbol for this pair. When each line contains a symbol, select the OK button "
 "to validate the answers."
 msgstr ""
+"Hautatu zerrendako zenbaki pare bat. Ondoren hautatu pare honi dagokion "
+"konparatzeko ikur egokia. Lerro bakoitzak ikur bat duenean, hautatu Ados "
+"botoia erantzuna baliozkotzeko."
 
 #: activities/comparator/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
@@ -5217,45 +5214,35 @@ msgid ""
 "If some answers are incorrect, a cross icon will appear on the corresponding "
 "lines. Correct the errors, then select the OK button again."
 msgstr ""
+"Erantzun batzuk okerrak badira, gurutze ikono bat agertuko da dagokion "
+"lerroan. Zuzendu erroreak eta hautatu Ados botoia berriz."
 
 #: activities/comparator/ActivityInfo.qml:29
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Down arrow: select previous item"
 msgctxt "ActivityInfo|"
 msgid "Up and Down arrows: select a pair of numbers in the list"
-msgstr "Behera gezia: hautatu aurreko elementua"
+msgstr "Gora eta behera geziak: hautatu zerrendako zenbaki pare bat"
 
 #: activities/comparator/ActivityInfo.qml:30
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Left and Right arrows: turn left and right"
 msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: select a symbol button"
-msgstr "Ezker- eta eskuin-geziak: ezkerrera eta eskuinera biratzea"
+msgstr "Ezker eta eskuin geziak: hautatu ikur-botoi bat"
 
 #: activities/comparator/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
 msgid "Space: if a symbol button is selected, enter this symbol"
-msgstr ""
+msgstr "Zuriunea: ikur-botoi bat hautatzen bada, sartu ikur hau"
 
 #: activities/comparator/ActivityInfo.qml:32
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "-Enter: validate the answer"
 msgctxt "ActivityInfo|"
 msgid "Return: validate the answers"
-msgstr "- Sartu: baliozkotu erantzuna"
+msgstr "Sartu: baliozkotu erantzuna"
 
 #: activities/comparator/ActivityInfo.qml:33
 msgctxt "ActivityInfo|"
 msgid "&lt;, &gt; or =: enter the corresponding symbol"
-msgstr ""
+msgstr "&lt;, &gt; edo =: sartu dagokion ikurra"
 
 #: activities/comparator/resource/1/Data.qml:36
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "Data|"
 msgid "Numbers from 1 to 9."
 msgstr "0tik 9ra arteko zenbakiak."
@@ -5263,62 +5250,47 @@ msgstr "0tik 9ra arteko zenbakiak."
 #: activities/comparator/resource/10/Data.qml:14
 msgctxt "Data|"
 msgid "3 decimal places between 0 and 999."
-msgstr ""
+msgstr "3 hamartar-leku 0 eta 999 artean."
 
 #: activities/comparator/resource/2/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "Data|"
 msgid "Numbers from 1 to 19."
-msgstr "0tik 9ra arteko zenbakiak."
+msgstr "0tik 19ra arteko zenbakiak."
 
 #: activities/comparator/resource/3/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "Data|"
 msgid "Numbers from 1 to 100."
-msgstr "0tik 9ra arteko zenbakiak."
+msgstr "0tik 10era arteko zenbakiak."
 
 #: activities/comparator/resource/4/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "Data|"
 msgid "Numbers from 1 to 1000."
-msgstr "0tik 9ra arteko zenbakiak."
+msgstr "1tik 1000ra arteko zenbakiak."
 
 #: activities/comparator/resource/5/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "Data|"
 msgid "Numbers from 1 to 1000000."
-msgstr "0tik 9ra arteko zenbakiak."
+msgstr "1tik 1000000ra arteko zenbakiak."
 
 #: activities/comparator/resource/6/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "Data|"
 msgid "Numbers from 1 to 1 billion."
-msgstr "0tik 9ra arteko zenbakiak."
+msgstr "1tik 1000 milioira arteko zenbakiak."
 
 #: activities/comparator/resource/7/Data.qml:14
 msgctxt "Data|"
 msgid "1 decimal place between 0 and 9, same integer part."
-msgstr ""
+msgstr "Hamartar-leku 1 0 eta 9 artean, zati oso berdina."
 
 #: activities/comparator/resource/8/Data.qml:14
 msgctxt "Data|"
 msgid "1 decimal place between 0 and 9."
-msgstr ""
+msgstr "Hamartar-leku 1 0 eta 999 artean."
 
 #: activities/comparator/resource/9/Data.qml:14
 msgctxt "Data|"
 msgid "2 decimal places between 0 and 99.99."
-msgstr ""
+msgstr "2 leku-hamartar 0 eta 99,99 artean."
 
 #. Activity title
 #: activities/crane/ActivityInfo.qml:20
@@ -6696,14 +6668,14 @@ msgid ""
 "escape predators, and possess an excellent sense of balance. They have "
 "single-toed hooves."
 msgstr ""
+"Zaldiak 'irrintzi' egiten du. Lasterka egiteko egokituta daude, horri esker, "
+"azkar egin dezakete ihes harrapariengandik, eta oreka-sentsazio bikaina "
+"dute. Zaldiek behatz bakarreko apatxak dituzte."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:25
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal's ancestors were wolves."
 msgctxt "board1|"
 msgid "This animal has single-toed hooves."
-msgstr "Abere honen arbasoak otsoak ziren."
+msgstr "Abere honek behatz bakarreko apatxak ditu."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:33
 msgctxt "board1|"
@@ -6716,14 +6688,13 @@ msgid ""
 "The chicken goes 'cluck'. Domestic chickens have wings, but are not capable "
 "of long-distance flight. They have a comb on their head."
 msgstr ""
+"Oilaskoak 'karaka' egiten du. Etxeko oilaskoek hegoak dituzte, baina ez dira "
+"urrutira hegan egiteko gai. Buruan gangarra dute."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:37
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal likes to come out at night."
 msgctxt "board1|"
 msgid "This animal has a comb on its head."
-msgstr "Animalia honek gauez ateratzea atsegin du."
+msgstr "Abere honek gangarra du bere buruan."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:45
 msgctxt "board1|"
@@ -6737,11 +6708,14 @@ msgid ""
 "developed sense of taste, with around 20,000 taste buds. They can detect "
 "odours 8km away."
 msgstr ""
+"Behiak 'mu' egiten du. 330°ko ikusmen-eremu zabala dute. Gustuaren "
+"zentzumena ongi garatua dute, 20.000 dastamen-papila inguru dituzte. 8 km-ra "
+"dauden usainak hauteman ditzakete."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:49
 msgctxt "board1|"
 msgid "This animal has around 20,000 taste buds."
-msgstr ""
+msgstr "Abere honek 20.000 dastamen-papila inguru ditu."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:57
 msgctxt "board1|"
@@ -6755,14 +6729,14 @@ msgid ""
 "ability to chase mice and other rodents. They purr to communicate various "
 "emotions."
 msgstr ""
+"Katuak 'ñau' egiten du. Gizakiek katuak baloratzen dituzte konpainiagatik "
+"eta saguak eta beste karraskari batzuk jazartzeko gaitasunagatik. Hainbat "
+"emozio komunikatzeko urruma egiten dute."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:61
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal lays eggs."
 msgctxt "board1|"
 msgid "This animal can purr."
-msgstr "Animalia honek arrautzak erruten ditu."
+msgstr "Animalia honek urruma egin dezake."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:69
 msgctxt "board1|"
@@ -6775,11 +6749,14 @@ msgid ""
 "The pig goes 'oink'. Pigs wallow in the mud, mainly to control their body "
 "temperature."
 msgstr ""
+"Txerriak 'kurrin-kurrin' egiten du. Zerriak lokatzean iraulkatzen dira, "
+"gorputzeko tenperatura kontrolatzeko batez ere."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:73
 msgctxt "board1|"
 msgid "This animal wallows in the mud to control its body temperature."
 msgstr ""
+"Abere hau lokatzean iraulkatzen da gorputzeko tenperatura kontrolatzeko."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:81
 msgctxt "board1|"
@@ -6792,14 +6769,13 @@ msgid ""
 "The duck goes 'quack'. Ducks are mostly aquatic birds. They have waterproof "
 "feathers and webbed feet which enable them to swim on the water."
 msgstr ""
+"Ahateak 'kua-kua' esaten du. Ahateak uretako hegaztiak dira batez ere. Luma "
+"iragazgaitzak eta oin palmatuak dituzte, uretan igeri egiteko."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:85
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal has webbed feet so it can swim in the water."
 msgctxt "board1|"
 msgid "This animal has webbed feet and can swim on the water."
-msgstr "Animalia honek palmondo-itxurako hankak ditu uretan igeri egiteko."
+msgstr "Abere honek oin palmatuak ditu eta uretan igeri egin dezake."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:93
 msgctxt "board1|"
@@ -6807,25 +6783,18 @@ msgid "Owl"
 msgstr "Hontza"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:94
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid ""
-#| "The owl goes 'hoo. hoo.' The owl has excellent vision and hearing at "
-#| "night."
 msgctxt "board1|"
 msgid ""
 "The owl goes 'hoot'. Owls are nocturnal birds, they have excellent vision "
 "and hearing at night."
 msgstr ""
-"Hontzak «ulu» egiten du.  Hontzek gauez ikusmen eta entzumen bikaina dute."
+"Hontzak 'ulu' egiten du. Gaueko hegaztiak dira, ikusmen eta entzumen bikaina "
+"dute gauez."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:97
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal likes to come out at night."
 msgctxt "board1|"
 msgid "This animal is a nocturnal bird."
-msgstr "Animalia honek gauez ateratzea atsegin du."
+msgstr "Animalia hau gaueko hegaztia da."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:105
 msgctxt "board1|"
@@ -6838,14 +6807,13 @@ msgid ""
 "The dog goes 'woof'. Dogs are probably the oldest domesticated species. They "
 "are descendants of the wolf."
 msgstr ""
+"Txakurrak \"au\" egiten du. Txakurrak dira, seguruenik, etxekotutako espezie "
+"zaharrena. Otsoaren ondorengoak dira."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:109
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal is a close relative to the goat."
 msgctxt "board1|"
 msgid "This animal is a descendant of the wolf."
-msgstr "Animalia hau ahuntzaren familia hurbilekoa da."
+msgstr "Animalia hau otxoaren ondorengoa da."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:117
 msgctxt "board1|"
@@ -6858,14 +6826,13 @@ msgid ""
 "The sheep goes 'baa'. Most sheep breeds bear a fleece of wool. The fleece "
 "can be sheared and used to produce textile fibre."
 msgstr ""
+"Ardiak 'bee' egiten du. Ardi-arraza gehienek artilezko biloa dute. Ilea "
+"moztu eta ehun-zuntza egiteko erabil daiteke."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:121
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal's ancestors were wolves."
 msgctxt "board1|"
 msgid "This animal produces wool."
-msgstr "Abere honen arbasoak otsoak ziren."
+msgstr "Abere honek artilea sortzen du."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:131
 msgctxt "board1|"
@@ -18574,13 +18541,13 @@ msgid "When you are ready, click on Tux and we will converse in Morse code."
 msgstr ""
 "Prest zaudenean, egin klik Tux-en gainean eta Morse kodean solastuko gara."
 
-#: activities/morse_code/MorseCode.qml:335
+#: activities/morse_code/MorseCode.qml:346
 #, qt-format
 msgctxt "MorseCode|"
 msgid "Morse value: %1"
 msgstr "Morse balioa: %1"
 
-#: activities/morse_code/MorseCode.qml:336
+#: activities/morse_code/MorseCode.qml:347
 #, qt-format
 msgctxt "MorseCode|"
 msgid "Alphabet/Numeric value: %1"

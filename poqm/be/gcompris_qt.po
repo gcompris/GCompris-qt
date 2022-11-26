@@ -19155,7 +19155,7 @@ msgstr ""
 "Калі вы гатовыя пачаць, пстрыкніце на мне і паспрабуйце ўтвараць сімвалы "
 "Брайля."
 
-#: activities/morse_code/MorseCode.qml:335
+#: activities/morse_code/MorseCode.qml:346
 #, fuzzy, qt-format
 #| msgctxt "RomanNumerals|"
 #| msgid "Roman value: %1"
@@ -19163,7 +19163,7 @@ msgctxt "MorseCode|"
 msgid "Morse value: %1"
 msgstr "Рымская лічба: %1"
 
-#: activities/morse_code/MorseCode.qml:336
+#: activities/morse_code/MorseCode.qml:347
 #, fuzzy, qt-format
 #| msgctxt "RomanNumerals|"
 #| msgid "Arabic value: %1"
