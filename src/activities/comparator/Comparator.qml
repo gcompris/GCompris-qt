@@ -29,6 +29,7 @@ ActivityBase {
         sourceSize.height: height
         signal start
         signal stop
+        property int layoutMargins: ApplicationInfo.ratio * 10
 
         Component.onCompleted: {
             activity.start.connect(start)
@@ -48,6 +49,7 @@ ActivityBase {
             property int sizeOfElement: 36 * ApplicationInfo.ratio
             property int numberOfRowsCompleted: 0
             property alias score: score
+            property bool horizontalLayout: layoutArea.width >= layoutArea.height
         }
 
         onStart: { Activity.start(items) }
@@ -60,7 +62,7 @@ ActivityBase {
                 left: parent.left
                 right: parent.right
                 bottom: bar.top
-                bottomMargin: bar.height * 0.2
+                bottomMargin: bar.height * 0.5
             }
         }
 
@@ -124,25 +126,25 @@ ActivityBase {
             }
         }
 
-        Item {
+        Rectangle {
             id: wholeExerciceDisplay
-            width: layoutArea.width * 0.5
-            height: parent.height * 0.5
-            anchors.horizontalCenter: parent.horizontalCenter
-            anchors.top: parent.top
-            Rectangle {
+            // width defined in states
+            height: items.sizeOfElement * lineRepeater.count
+            anchors.horizontalCenter: layoutArea.horizontalCenter
+            anchors.verticalCenter: layoutArea.verticalCenter
+            anchors.verticalCenterOffset: -symbolSelectionList.height
+            color: "#F2F2F2"
+            Column {
+                id: wholeExerciceDisplayContent
+                spacing: 0
+                anchors.horizontalCenter: parent.horizontalCenter
+                anchors.verticalCenter: parent.verticalCenter
                 width: parent.width
                 height: parent.height
-                color: "#FFFFFF"
-                Column {
-                    id: wholeExerciceDisplayContent
-                    spacing: 5
-                    anchors.right: parent.right
-                    width: parent.width
-                    Repeater {
-                        model: dataListModel
-                        delegate: ComparatorLine {
-                        }
+                Repeater {
+                    id: lineRepeater
+                    model: dataListModel
+                    delegate: ComparatorLine {
                     }
                 }
             }
@@ -150,64 +152,67 @@ ActivityBase {
 
         Item {
             id: upDownButtonSet
-            height: layoutArea.height * 0.1
-            width: layoutArea.width
-            anchors.bottom: wholeExerciceDisplay.bottom
-            anchors.topMargin: 20 * ApplicationInfo.ratio
-            anchors.right: layoutArea.right
-            Row {
-                spacing: items.spacingOfElement
+            anchors.verticalCenter: wholeExerciceDisplay.verticalCenter
+            anchors.right: wholeExerciceDisplay.left
+            anchors.rightMargin: background.layoutMargins
+            height: upButton.height * 3
+            width: upButton.width
+            BarButton {
+                id: upButton
+                source: "qrc:/gcompris/src/activities/path_encoding/resource/arrow.svg"
+                // height defined in states
+                width: height
+                sourceSize.height: height * scale
+                rotation: -90
+                anchors.top: parent.top
                 anchors.right: parent.right
-                BarButton {
-                    id: upButton
-                    source: "qrc:/gcompris/src/activities/path_encoding/resource/arrow.svg"
-                    sourceSize.height: parent.height
-                    rotation: -90
-                    Rectangle {
-                        anchors.fill: parent
-                        radius: width * 0.5
-                        color: "#FFFFFF"
-                        border.color: "#000000"
-                        border.width: 4
-                        opacity: 0.2
-                    }
-                    onClicked: {
-                        Activity.upAction()
-                    }
+                Rectangle {
+                    anchors.fill: parent
+                    radius: width * 0.5
+                    color: "#FFFFFF"
+                    border.color: "#000000"
+                    border.width: 4
+                    opacity: 0.2
                 }
-
-                BarButton {
-                    id: downButton
-                    source: "qrc:/gcompris/src/activities/path_encoding/resource/arrow.svg"
-                    sourceSize.height: parent.height
-                    rotation: 90
-                    Rectangle {
-                        anchors.fill: parent
-                        radius: width * 0.5
-                        color: "#FFFFFF"
-                        border.color: "#000000"
-                        border.width: 4
-                        opacity: 0.2
-                    }
-                    onClicked: {
-                        Activity.downAction()
-                    }
+                onClicked: {
+                    Activity.upAction()
+                }
+            }
+            BarButton {
+                id: downButton
+                source: "qrc:/gcompris/src/activities/path_encoding/resource/arrow.svg"
+                height: upButton.height
+                width: height
+                sourceSize.height: height * scale
+                rotation: 90
+                anchors.bottom: parent.bottom
+                anchors.right: parent.right
+                Rectangle {
+                    anchors.fill: parent
+                    radius: width * 0.5
+                    color: "#FFFFFF"
+                    border.color: "#000000"
+                    border.width: 4
+                    opacity: 0.2
+                }
+                onClicked: {
+                    Activity.downAction()
                 }
             }
         }
             
         ListView {
             id: symbolSelectionList
-            height: layoutArea.height * 0.1
-            anchors.bottom: bar.top
-            width: wholeExerciceDisplay.width
-            anchors.bottomMargin: 30 * ApplicationInfo.ratio
+            height: Math.min(wholeExerciceDisplay.width * 0.2, items.sizeOfElement)
+            width: height * 5
+            anchors.top: wholeExerciceDisplay.bottom
+            anchors.topMargin: background.layoutMargins
             anchors.horizontalCenter: wholeExerciceDisplay.horizontalCenter
             orientation: Qt.Horizontal
             interactive: false
             keyNavigationWraps: true
-            spacing: items.sizeOfElement
-        currentIndex: -1
+            spacing: height
+            currentIndex: -1
             model: ["<", "=", ">"]
             delegate: ComparatorSign {
                 height: ListView.view.height
@@ -238,9 +243,9 @@ ActivityBase {
             sourceSize.width: 60 * ApplicationInfo.ratio
             enabled: !bonus.isPlaying
             anchors {
-                top: score.top
-                right: score.left
-                rightMargin: 20
+                bottom: score.top
+                bottomMargin: background.layoutMargins
+                horizontalCenter: score.horizontalCenter
             }
             onClicked: {
                 Activity.checkAnswer()
@@ -273,9 +278,51 @@ ActivityBase {
 
         Score {
             id: score
-            anchors.right: parent.right
-            anchors.bottom: bar.top
+            anchors.right: layoutArea.right
+            anchors.bottom: layoutArea.bottom
+            anchors.rightMargin: background.layoutMargins
+            anchors.bottomMargin: background.layoutMargins
+            anchors.horizontalCenterOffset: layoutArea.width * 0.375
         }
+
+        states: [
+            State {
+                name: "isHorizontalLayout"
+                when: items.horizontalLayout
+                AnchorChanges {
+                    target: score
+                    anchors.right: undefined
+                    anchors.horizontalCenter: layoutArea.horizontalCenter
+                }
+                PropertyChanges {
+                    target: wholeExerciceDisplay
+                    width: layoutArea.width * 0.5
+                    anchors.horizontalCenterOffset: -items.sizeOfElement
+                }
+                PropertyChanges {
+                    target: upButton
+                    height: Math.max(layoutArea.height * 0.1, items.sizeOfElement)
+                }
+            },
+            State {
+                name: "isVerticalLayout"
+                when: !items.horizontalLayout
+                AnchorChanges {
+                    target: score
+                    anchors.right: layoutArea.right
+                    anchors.horizontalCenter: undefined
+                }
+                PropertyChanges {
+                    target: wholeExerciceDisplay
+                    width: layoutArea.width * 0.7
+                    anchors.horizontalCenterOffset: 0
+                }
+                PropertyChanges {
+                    target: upButton
+                    height: layoutArea.width * 0.1
+                }
+            }
+        ]
 
         Bar {
             id: bar
