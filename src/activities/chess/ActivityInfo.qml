@@ -22,7 +22,7 @@ ActivityInfo {
   prerequisite: ""
   //: Help manual
   //: Much of this string is shared across the three activities "chess", "chess_partyend", and "chess_2players".
-  manual: qsTr("In this activity you discover the chess game by playing against the computer. It displays the possible target positions for any selected piece which helps the children understand how pieces moves. At first level the computer is fully random to give more chances to the children. As level increases, the computer plays better.
+  manual: qsTr("In this activity you discover the chess game by playing against the computer. It displays the possible target positions for any selected piece which helps the children understand how pieces moves. At first level the computer is fully random to give more chances to the children. As level increases, the computer plays better. You can use the arrow buttons to manually select the difficulty level.
 \nYou can achieve a mate sooner if you follow these simple rules:
     Trying to drive your opponent's king in the corner.
 <b>Explanation</b>: this way your opponent's king would have only 3 directions to move instead of 8 from a better position.
