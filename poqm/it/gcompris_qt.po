@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_qt\n"
-"PO-Revision-Date: 2022-11-09 18:13+0100\n"
+"PO-Revision-Date: 2022-11-24 14:26+0100\n"
 "Last-Translator: Vincenzo Reale <smart2128vr@gmail.com>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
 "Language: it\n"
@@ -5287,27 +5287,21 @@ msgstr "Continua"
 
 #. Activity title
 #: activities/comparator/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Compare numbers."
 msgctxt "ActivityInfo|"
 msgid "Compare numbers"
-msgstr "Confronto dei numeri."
+msgstr "Confronta i numeri"
 
 #. Help title
 #: activities/comparator/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Compare the numbers and choose the corresponding sign."
-msgstr ""
+msgstr "Confronta i numeri e scegli il segno corrispondente."
 
 #. Help goal
 #: activities/comparator/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn about prime numbers."
 msgctxt "ActivityInfo|"
 msgid "Learn how to compare number values."
-msgstr "Impara cosa sono i numeri primi."
+msgstr "Scopri come confrontare i valori numerici."
 
 #. Help manual
 #: activities/comparator/ActivityInfo.qml:26
@@ -5317,6 +5311,9 @@ msgid ""
 "symbol for this pair. When each line contains a symbol, select the OK button "
 "to validate the answers."
 msgstr ""
+"Seleziona una coppia di numeri nell'elenco. Quindi seleziona il simbolo di "
+"confronto corretto per questa coppia. Quando ogni riga contiene un simbolo, "
+"seleziona il pulsante OK per convalidare le risposte."
 
 #: activities/comparator/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
@@ -5324,108 +5321,84 @@ msgid ""
 "If some answers are incorrect, a cross icon will appear on the corresponding "
 "lines. Correct the errors, then select the OK button again."
 msgstr ""
+"Se alcune risposte non sono corrette, sarà visualizzata un'icona a forma di "
+"croce sulle righe corrispondenti. Correggi gli errori, quindi seleziona "
+"nuovamente il pulsante OK."
 
 #: activities/comparator/ActivityInfo.qml:29
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Down arrow: select previous item"
 msgctxt "ActivityInfo|"
 msgid "Up and Down arrows: select a pair of numbers in the list"
-msgstr "Freccia giù: seleziona l'elemento precedente"
+msgstr "Frecce sinistra e destra: seleziona un pulsante simbolo"
 
 #: activities/comparator/ActivityInfo.qml:30
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Left and Right arrows: turn left and right"
 msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: select a symbol button"
-msgstr "Frecce sinistra e destra: gira a sinistra e destra"
+msgstr "Frecce sinistra e destra: seleziona un pulsante simbolo"
 
 #: activities/comparator/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
 msgid "Space: if a symbol button is selected, enter this symbol"
-msgstr ""
+msgstr "Spazio: se è selezionato un pulsante simbolo, inserisci questo simbolo"
 
 #: activities/comparator/ActivityInfo.qml:32
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "-Enter: validate the answer"
 msgctxt "ActivityInfo|"
 msgid "Return: validate the answers"
-msgstr "-Invio: convalida la risposta"
+msgstr "Ritorno: convalida le risposte"
 
 #: activities/comparator/ActivityInfo.qml:33
 msgctxt "ActivityInfo|"
 msgid "&lt;, &gt; or =: enter the corresponding symbol"
-msgstr ""
+msgstr "&lt;, &gt; oppure =: inserisci il simbolo corrispondente"
 
 #: activities/comparator/resource/1/Data.qml:36
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "Data|"
 msgid "Numbers from 1 to 9."
-msgstr "Numeri da 0 a 9."
+msgstr "Numeri da 1 a 9."
 
 #: activities/comparator/resource/10/Data.qml:14
 msgctxt "Data|"
 msgid "3 decimal places between 0 and 999."
-msgstr ""
+msgstr "3 cifre decimali tra 0 e 999."
 
 #: activities/comparator/resource/2/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "Data|"
 msgid "Numbers from 1 to 19."
-msgstr "Numeri da 0 a 9."
+msgstr "Numeri da 1 a 19."
 
 #: activities/comparator/resource/3/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "Data|"
 msgid "Numbers from 1 to 100."
-msgstr "Numeri da 0 a 9."
+msgstr "Numeri da 1 a 100."
 
 #: activities/comparator/resource/4/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "Data|"
 msgid "Numbers from 1 to 1000."
-msgstr "Numeri da 0 a 9."
+msgstr "Numeri da 1 a 1000."
 
 #: activities/comparator/resource/5/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "Data|"
 msgid "Numbers from 1 to 1000000."
-msgstr "Numeri da 0 a 9."
+msgstr "Numeri da 1 a 1000000."
 
 #: activities/comparator/resource/6/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "Data|"
 msgid "Numbers from 1 to 1 billion."
-msgstr "Numeri da 0 a 9."
+msgstr "Numeri da 1 a 1 miliardo."
 
 #: activities/comparator/resource/7/Data.qml:14
 msgctxt "Data|"
 msgid "1 decimal place between 0 and 9, same integer part."
-msgstr ""
+msgstr "1 cifra decimale tra 0 e 9, stessa parte intera."
 
 #: activities/comparator/resource/8/Data.qml:14
 msgctxt "Data|"
 msgid "1 decimal place between 0 and 9."
-msgstr ""
+msgstr "1 cifra decimale tra 0 e 9."
 
 #: activities/comparator/resource/9/Data.qml:14
 msgctxt "Data|"
 msgid "2 decimal places between 0 and 99.99."
-msgstr ""
+msgstr "2 cifre decimali tra 0 e 99,99."
 
 #. Activity title
 #: activities/crane/ActivityInfo.qml:20
@@ -6791,14 +6764,14 @@ msgid ""
 "escape predators, and possess an excellent sense of balance. They have "
 "single-toed hooves."
 msgstr ""
+"Il cavallo fa «iiih». I cavalli sono adattati per correre, permettendo loro "
+"di sfuggire rapidamente ai predatori e possiedono un eccellente senso "
+"dell'equilibrio. Hanno zoccoli a dito singolo."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:25
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal's ancestors were wolves."
 msgctxt "board1|"
 msgid "This animal has single-toed hooves."
-msgstr "I lupi sono antenati di questo animale."
+msgstr "Questo animale ha zoccoli a dito singolo."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:33
 msgctxt "board1|"
@@ -6811,14 +6784,13 @@ msgid ""
 "The chicken goes 'cluck'. Domestic chickens have wings, but are not capable "
 "of long-distance flight. They have a comb on their head."
 msgstr ""
+"La gallina fa «coccodè». Le galline domestici hanno le ali, ma non sono in "
+"grado di volare a lunga distanza. Hanno una cresta in testa."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:37
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal likes to come out at night."
 msgctxt "board1|"
 msgid "This animal has a comb on its head."
-msgstr "Questo animale ama uscire di notte."
+msgstr "Questo animale ha una cresta sulla testa."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:45
 msgctxt "board1|"
@@ -6832,11 +6804,14 @@ msgid ""
 "developed sense of taste, with around 20,000 taste buds. They can detect "
 "odours 8km away."
 msgstr ""
+"La mucca fa «muu». Le mucche hanno un ampio campo visivo di 330°. Hanno un "
+"pozzo-sviluppato il senso del gusto, con circa 20.000 papille gustative. "
+"Possono rilevareodori a 8 km di distanza."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:49
 msgctxt "board1|"
 msgid "This animal has around 20,000 taste buds."
-msgstr ""
+msgstr "Questo animale ha circa 20.000 papille gustative."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:57
 msgctxt "board1|"
@@ -6850,14 +6825,14 @@ msgid ""
 "ability to chase mice and other rodents. They purr to communicate various "
 "emotions."
 msgstr ""
+"Il gatto fa «miao». I gatti sono apprezzati dagli esseri umani per la "
+"compagnia e la loro capacità di inseguire topi e altri roditori. Fanno le "
+"fusa per comunicare varie emozioni."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:61
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal lays eggs."
 msgctxt "board1|"
 msgid "This animal can purr."
-msgstr "Questo animale depone uova."
+msgstr "Questo animale può fare le fusa."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:69
 msgctxt "board1|"
@@ -6870,11 +6845,14 @@ msgid ""
 "The pig goes 'oink'. Pigs wallow in the mud, mainly to control their body "
 "temperature."
 msgstr ""
+"Il maiale fa «oink». I maiali sguazzano nel fango, principalmente per "
+"controllare la temperatura del proprio corpo."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:73
 msgctxt "board1|"
 msgid "This animal wallows in the mud to control its body temperature."
 msgstr ""
+"Questo animale sguazza nel fango per controllare la sua temperatura corporea."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:81
 msgctxt "board1|"
@@ -6887,15 +6865,13 @@ msgid ""
 "The duck goes 'quack'. Ducks are mostly aquatic birds. They have waterproof "
 "feathers and webbed feet which enable them to swim on the water."
 msgstr ""
+"L'anatra fa «qua». Le anatre sono per lo più uccelli acquatici. Hanno piume "
+"impermeabili e piedi palmati che consentono loro di nuotare sull'acqua."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:85
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal has webbed feet so it can swim in the water."
 msgctxt "board1|"
 msgid "This animal has webbed feet and can swim on the water."
-msgstr ""
-"Questo animale ha zampe palmate che gli permettono di nuotare nell'acqua."
+msgstr "Questo animale ha i piedi palmati e può nuotare sull'acqua."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:93
 msgctxt "board1|"
@@ -6903,25 +6879,18 @@ msgid "Owl"
 msgstr "Gufo"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:94
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid ""
-#| "The owl goes 'hoo. hoo.' The owl has excellent vision and hearing at "
-#| "night."
 msgctxt "board1|"
 msgid ""
 "The owl goes 'hoot'. Owls are nocturnal birds, they have excellent vision "
 "and hearing at night."
 msgstr ""
-"Il gufo fa «uuh, uuh». Il gufo ha vista notturna e un udito eccellenti."
+"Il gufo fa «uuh». I gufi sono uccelli notturni, hanno una vista e un udito "
+"eccellenti di notte."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:97
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal likes to come out at night."
 msgctxt "board1|"
 msgid "This animal is a nocturnal bird."
-msgstr "Questo animale ama uscire di notte."
+msgstr "Questo animale è un uccello notturno."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:105
 msgctxt "board1|"
@@ -6934,14 +6903,13 @@ msgid ""
 "The dog goes 'woof'. Dogs are probably the oldest domesticated species. They "
 "are descendants of the wolf."
 msgstr ""
+"Il cane fa «bau». I cani sono probabilmente la specie domestica più antica. "
+"Sono i discendenti del lupo."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:109
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal is a close relative to the goat."
 msgctxt "board1|"
 msgid "This animal is a descendant of the wolf."
-msgstr "Questo animale è un parente stretto della capra."
+msgstr "Questo animale è un discendente del lupo."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:117
 msgctxt "board1|"
@@ -6954,14 +6922,13 @@ msgid ""
 "The sheep goes 'baa'. Most sheep breeds bear a fleece of wool. The fleece "
 "can be sheared and used to produce textile fibre."
 msgstr ""
+"La pecora fa «bee». La maggior parte delle razze di pecore porta un vello di "
+"lana. Il vello può essere tosato e utilizzato per produrre fibra tessile."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:121
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal's ancestors were wolves."
 msgctxt "board1|"
 msgid "This animal produces wool."
-msgstr "I lupi sono antenati di questo animale."
+msgstr "Questo animale produce lana."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:131
 msgctxt "board1|"
