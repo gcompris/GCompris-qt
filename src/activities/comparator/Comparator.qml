@@ -4,6 +4,7 @@
  *
  * Authors:
  *   Aastha Chauhan <aastha.chauhan01@gmail.com>
+ *   Timothée Giet <animtim@gmail.com>
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
 import QtQuick 2.12
@@ -75,15 +76,15 @@ ActivityBase {
             switch(event.key) {
                 case Qt.Key_Less:
                 event.accepted = true;
-                symbolSelectionList.clickItemWithSign("<");
+                symbolSelectionList.enterSign("<");
                 break;
                 case Qt.Key_Equal:
                 event.accepted = true;
-                symbolSelectionList.clickItemWithSign("=");
+                symbolSelectionList.enterSign("=");
                 break;
                 case Qt.Key_Greater:
                 event.accepted = true;
-                symbolSelectionList.clickItemWithSign(">");
+                symbolSelectionList.enterSign(">");
                 break;
                 case Qt.Key_Up:
                 event.accepted = true;
@@ -104,7 +105,7 @@ ActivityBase {
                 case Qt.Key_Space:
                 event.accepted = true;
                 if(symbolSelectionList.currentItem) {
-                    symbolSelectionList.currentItem.onClicked();
+                    symbolSelectionList.currentItem.clicked();
                 }
                 break;
                 case Qt.Key_Return:
@@ -203,15 +204,15 @@ ActivityBase {
             
         ListView {
             id: symbolSelectionList
-            height: Math.min(wholeExerciceDisplay.width * 0.2, items.sizeOfElement)
-            width: height * 5
+            height: Math.min(wholeExerciceDisplay.width * 0.2, items.sizeOfElement * 1.5)
+            width: height * 4
             anchors.top: wholeExerciceDisplay.bottom
             anchors.topMargin: background.layoutMargins
             anchors.horizontalCenter: wholeExerciceDisplay.horizontalCenter
             orientation: Qt.Horizontal
             interactive: false
             keyNavigationWraps: true
-            spacing: height
+            spacing: height * 0.5
             currentIndex: -1
             model: ["<", "=", ">"]
             delegate: ComparatorSign {
@@ -219,20 +220,14 @@ ActivityBase {
                 width: height
                 signValue: modelData
                 isSelected: ListView.isCurrentItem
-                onClickTriggered: {
-                    symbolSelectionList.currentIndex = index
-                }
             }
-            // We should use getItemAtIndex(model.get(sign)) instead of this method
-            // but it's Qt 5.13 and we need to support Qt 5.12
-            function clickItemWithSign(sign) {
-                for(var i = 0 ; i < symbolSelectionList.count ; ++ i) {
-                    symbolSelectionList.currentIndex = i;
-                    if(symbolSelectionList.currentItem.signValue == sign) {
-                        symbolSelectionList.currentItem.clicked();
-                        break;
-                    }
+            function enterSign(sign) {
+                //increment the numberOfRowsCompleted if there was no symbol previously
+                if(dataListModel.get(items.selectedLine).symbol === "") {
+                    items.numberOfRowsCompleted ++;
                 }
+                dataListModel.get(items.selectedLine).symbol = sign;
+                dataListModel.get(items.selectedLine).isValidationImageVisible = false;
             }
         }
 
