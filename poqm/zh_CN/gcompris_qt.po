@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
-"PO-Revision-Date: 2022-11-19 14:48\n"
+"PO-Revision-Date: 2022-12-01 06:51\n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
@@ -4907,12 +4907,9 @@ msgstr "继续"
 
 #. Activity title
 #: activities/comparator/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Compare numbers."
 msgctxt "ActivityInfo|"
 msgid "Compare numbers"
-msgstr "比较数字。"
+msgstr ""
 
 #. Help title
 #: activities/comparator/ActivityInfo.qml:19
@@ -4922,12 +4919,9 @@ msgstr ""
 
 #. Help goal
 #: activities/comparator/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn about prime numbers."
 msgctxt "ActivityInfo|"
 msgid "Learn how to compare number values."
-msgstr "学习质数"
+msgstr ""
 
 #. Help manual
 #: activities/comparator/ActivityInfo.qml:26
@@ -4946,12 +4940,9 @@ msgid ""
 msgstr ""
 
 #: activities/comparator/ActivityInfo.qml:29
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Down arrow: select previous item"
 msgctxt "ActivityInfo|"
 msgid "Up and Down arrows: select a pair of numbers in the list"
-msgstr "下箭头：选择上一个项目"
+msgstr ""
 
 #: activities/comparator/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
@@ -4964,12 +4955,9 @@ msgid "Space: if a symbol button is selected, enter this symbol"
 msgstr ""
 
 #: activities/comparator/ActivityInfo.qml:32
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Enter: validate your answer"
 msgctxt "ActivityInfo|"
 msgid "Return: validate the answers"
-msgstr "回车键：验证您的答案"
+msgstr ""
 
 #: activities/comparator/ActivityInfo.qml:33
 msgctxt "ActivityInfo|"
@@ -4977,12 +4965,9 @@ msgid "&lt;, &gt; or =: enter the corresponding symbol"
 msgstr ""
 
 #: activities/comparator/resource/1/Data.qml:36
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Digits from 1 to 9."
 msgctxt "Data|"
 msgid "Numbers from 1 to 9."
-msgstr "1到9的数字。"
+msgstr ""
 
 #: activities/comparator/resource/10/Data.qml:14
 msgctxt "Data|"
@@ -4990,28 +4975,19 @@ msgid "3 decimal places between 0 and 999."
 msgstr ""
 
 #: activities/comparator/resource/2/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Digits from 1 to 9."
 msgctxt "Data|"
 msgid "Numbers from 1 to 19."
-msgstr "1到9的数字。"
+msgstr ""
 
 #: activities/comparator/resource/3/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Digits from 1 to 2."
 msgctxt "Data|"
 msgid "Numbers from 1 to 100."
-msgstr "1到2的数字。"
+msgstr ""
 
 #: activities/comparator/resource/4/Data.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplication tables from 1 to 10."
 msgctxt "Data|"
 msgid "Numbers from 1 to 1000."
-msgstr "1 到 10 的乘法表。"
+msgstr ""
 
 #: activities/comparator/resource/5/Data.qml:14
 msgctxt "Data|"
