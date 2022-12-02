@@ -154,12 +154,16 @@ function evaluateAnswer(equation) {
 function upAction() {
     if (items.selectedLine > 0) {
         items.selectedLine --;
+    } else {
+        items.selectedLine = items.dataListModel.count - 1
     }
 }
 
 function downAction() {
     if (items.selectedLine < (items.dataListModel.count - 1)) {
         items.selectedLine ++;
+    } else {
+        items.selectedLine = 0
     }
 }
 
