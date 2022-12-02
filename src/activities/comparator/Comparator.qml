@@ -37,6 +37,10 @@ ActivityBase {
             activity.stop.connect(stop)
         }
 
+        function resetSelectedButton() {
+            symbolSelectionList.currentIndex = -1;
+        }
+
         QtObject {
             id: items
             property Item main: activity.main

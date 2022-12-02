@@ -31,6 +31,7 @@ function initLevel() {
     items.score.currentSubLevel = currentSubLevel + 1;
     items.dataListModel.clear();
     items.numberOfRowsCompleted = 0;
+    items.background.resetSelectedButton();
     var currentDataset = items.levels[currentLevel];
     var minValue = currentDataset.minValue;
     var maxValue = currentDataset.maxValue;
