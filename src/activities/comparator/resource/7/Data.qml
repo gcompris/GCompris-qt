@@ -12,7 +12,7 @@ import GCompris 1.0
 
 Data {
     objective: qsTr("1 decimal place between 0 and 9, same integer part.")
-    difficulty: 1
+    difficulty: 4
 
     data: [
         {
