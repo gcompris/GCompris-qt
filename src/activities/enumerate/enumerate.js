@@ -192,5 +192,7 @@ function playAudio() {
 }
 
 function focusAnswerInput() {
-    registerAnswerItem(items.answerColumn.itemAt(items.answerColumn.currentIndex));
+    if(items && items.answerColumn) {
+        registerAnswerItem(items.answerColumn.itemAt(items.answerColumn.currentIndex));
+    }
 }
