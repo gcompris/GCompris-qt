@@ -16,6 +16,7 @@ platforms:
   - android
   - mac
 categories:
+  - educational-content
   - learning-management-system
 softwareType: standalone/desktop
 intendedAudience:
