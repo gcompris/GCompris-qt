@@ -20,7 +20,7 @@ ActivityInfo {
   goal: qsTr("Create a line of 4 tokens either horizontally (lying down), vertically (standing up) or diagonally.")
   //: Help manual
   manual: qsTr("Play with Tux. Take turns to click the line in which you want to drop a token. The first player to create a line of 4 tokens wins.") + ("<br>") +
-          qsTr("Tux will play better when you increase the level.") + ("<br><br>") +
+          qsTr("You can use the arrow buttons to manually select the difficulty level. Tux will play better when you increase the level.") + ("<br><br>") +
           qsTr("<b>Keyboard controls:</b>") + ("<ul><li>") +
           qsTr("Left arrow: move the token to the left") + ("</li><li>") +
           qsTr("Right arrow: move the token to the right") + ("</li><li>") +
