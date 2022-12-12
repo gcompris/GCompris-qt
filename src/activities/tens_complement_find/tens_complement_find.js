@@ -17,6 +17,7 @@ var selected = -1; // "-1" indicates no item selected
 function start(items_) {
     items = items_;
     currentLevel = 0;
+    currentSubLevel = 0;
     numberOfLevel = items.levels.length;
     initLevel();
 }
