@@ -39,7 +39,7 @@ Item {
 
     MouseArea {
         anchors.fill: parent
-        enabled: clickable && !items.bonus.isPlaying
+        enabled: clickable
         onClicked: {
             numberCard.clicked();
         }

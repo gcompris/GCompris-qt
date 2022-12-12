@@ -141,6 +141,11 @@ ActivityBase {
                 }
             }
         }
+        MouseArea {
+            id: clickMask
+            anchors.fill: layoutArea
+            enabled: items.bonus.isPlaying
+        }
 
         DialogChooseLevel {
             id: dialogActivityConfig
