@@ -16,8 +16,6 @@ Rectangle {
     border.color: "black"
     border.width: 3
     radius: 15
-    property bool tickVisibility
-    property string validationImage
 
     Rectangle {
         id: questionContainer
@@ -77,6 +75,7 @@ Rectangle {
                     if(value != "?") {
                         Activity.reappearNumberCard(value);
                         value = "?";
+                        tickVisibility = false;
                     }
                     value = Activity.getEnteredCard();
                     Activity.showOkButton();
@@ -86,7 +85,7 @@ Rectangle {
     }
     
     Image {
-        visible: isValidationImageVisible
+        visible: tickVisibility
         sourceSize.height: answerContainer.height
         source: isGood === true ? correctAnswerImage : wrongAnswerImage
         anchors {

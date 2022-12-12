@@ -41,7 +41,7 @@ function initLevel() {
             var questionsModel = {
                 "addition": [],
                 "secondRow": [],
-                "isValidationImageVisible": false,
+                "tickVisibility": false,
                 "isGood": false
             };
 
@@ -148,7 +148,7 @@ function initLevel() {
             var questionsModel = {
                 "addition": [],
                 "secondRow": [],
-                "isValidationImageVisible": false,
+                "tickVisibility": false,
                 "isGood": false
             };
 
@@ -278,7 +278,7 @@ function checkAnswer() {
         if(!check) {
             allOk = false;
         }
-        equation.isValidationImageVisible = true;
+        equation.tickVisibility = true;
         equation.isGood = check;
     }
     if(allOk) {
