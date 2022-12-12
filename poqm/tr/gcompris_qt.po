@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2022-12-10 18:33+0300\n"
+"PO-Revision-Date: 2022-12-11 20:15+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 22.08.3\n"
+"X-Generator: Lokalize 22.12.0\n"
 "X-Qt-Contexts: true\n"
 
 #. Activity title
@@ -10306,7 +10306,7 @@ msgstr ""
 #: activities/geo-country/resource/board/board12_0.qml:144
 msgctxt "board12_0|"
 msgid "Tamil Nadu"
-msgstr ""
+msgstr "Tamil Nadu"
 
 #. State of India: West Bengal
 #: activities/geo-country/resource/board/board12_0.qml:151
@@ -11112,7 +11112,7 @@ msgstr ""
 #: activities/geo-country/resource/board/board18_0.qml:92
 msgctxt "board18_0|"
 msgid "Basque Country"
-msgstr ""
+msgstr "Bask Ülkesi"
 
 #. Autonomous communities of Spain: La Rioja
 #: activities/geo-country/resource/board/board18_0.qml:99
@@ -11201,7 +11201,7 @@ msgstr ""
 #: activities/geo-country/resource/board/board1_0.qml:43
 msgctxt "board1_0|"
 msgid "Occitanie"
-msgstr ""
+msgstr "Oksitanya"
 
 #. Region of France: Provence-Alpes-Côte d'Azur
 #: activities/geo-country/resource/board/board1_0.qml:51
@@ -12766,9 +12766,6 @@ msgid "Central Asia"
 msgstr "Orta Amerika"
 
 #: activities/geography/resource/board/board10_0.qml:24
-#, fuzzy
-#| msgctxt "board9_0|"
-#| msgid "Kazakhstan"
 msgctxt "board10_0|"
 msgid "Kazakhstan"
 msgstr "Kazakistan"
@@ -12782,9 +12779,6 @@ msgid "Kyrgyzstan"
 msgstr "Kırgızistan"
 
 #: activities/geography/resource/board/board10_0.qml:38
-#, fuzzy
-#| msgctxt "board9_0|"
-#| msgid "Tajikistan"
 msgctxt "board10_0|"
 msgid "Tajikistan"
 msgstr "Tacikistan"
@@ -12798,9 +12792,6 @@ msgid "Turkmenistan"
 msgstr "Türkmenistan"
 
 #: activities/geography/resource/board/board10_0.qml:52
-#, fuzzy
-#| msgctxt "board9_0|"
-#| msgid "Uzbekistan"
 msgctxt "board10_0|"
 msgid "Uzbekistan"
 msgstr "Özbekistan"
@@ -12904,9 +12895,6 @@ msgid "Myanmar"
 msgstr "Miyanmar"
 
 #: activities/geography/resource/board/board12_0.qml:46
-#, fuzzy
-#| msgctxt "board9_0|"
-#| msgid "Thailand"
 msgctxt "board12_0|"
 msgid "Thailand"
 msgstr "Tayland"
@@ -12936,9 +12924,6 @@ msgid "Cambodia"
 msgstr "Kamboçya"
 
 #: activities/geography/resource/board/board12_0.qml:74
-#, fuzzy
-#| msgctxt "board9_0|"
-#| msgid "Malaysia"
 msgctxt "board12_0|"
 msgid "Malaysia"
 msgstr "Malezya"
@@ -26144,36 +26129,24 @@ msgid "Many new images"
 msgstr "Birçok yeni resim"
 
 #: core/ChangeLog.qml:44
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translation added for Macedonian."
 msgctxt "ChangeLog|"
 msgid "Translation updated for Russian"
-msgstr "Makedonca için çeviri eklendi."
+msgstr "Rusça çeviri güncellendi"
 
 #: core/ChangeLog.qml:45
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "New voices for US English."
 msgctxt "ChangeLog|"
 msgid "New voices for Norwegian Nynorsk"
-msgstr "Amerikan İngilizcesi için yeni sesler."
+msgstr "Nynorsk Norveççesi için yeni sesler"
 
 #: core/ChangeLog.qml:49
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translation added for Macedonian."
 msgctxt "ChangeLog|"
 msgid "Translations added for Breton, Czech and Macedonian"
-msgstr "Makedonca için çeviri eklendi."
+msgstr "Bretonca, Çekçe ve Makedonca çeviriler eklendi."
 
 #: core/ChangeLog.qml:54
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translation added for Macedonian."
 msgctxt "ChangeLog|"
 msgid "Translation added for Azerbaijani"
-msgstr "Makedonca için çeviri eklendi."
+msgstr "Azerbaycanca çevirisi eklendi"
 
 #: core/ChangeLog.qml:55
 msgctxt "ChangeLog|"
@@ -26217,7 +26190,7 @@ msgstr "Aktiviteleri düzenlemek için yeni alt kategoriler"
 #: core/ChangeLog.qml:74
 msgctxt "ChangeLog|"
 msgid "Translation added for Macedonian."
-msgstr "Makedonca için çeviri eklendi."
+msgstr "Makedonca çeviri eklendi."
 
 #: core/ChangeLog.qml:75
 msgctxt "ChangeLog|"
@@ -26261,7 +26234,7 @@ msgid ""
 "Finnish...)."
 msgstr ""
 "Birden çok dil için güncellenen çeviri (Bretonca, Brezilya Portekizcesi, "
-"Fince ...)."
+"Fince, ...)."
 
 #: core/ChangeLog.qml:83
 msgctxt "ChangeLog|"
@@ -26290,7 +26263,7 @@ msgstr "Hücrelerin 0'dan değil 1'den başladığı braille aktivitelerini düz
 #: core/ChangeLog.qml:87
 msgctxt "ChangeLog|"
 msgid "Translation added for Basque, Hungarian and Malayalam."
-msgstr "Baskça, Macarca ve Malayalam için çeviri eklendi."
+msgstr "Baskça, Macarca ve Malayalam Dili için çeviri eklendi."
 
 #: core/ChangeLog.qml:88
 msgctxt "ChangeLog|"
@@ -26304,7 +26277,7 @@ msgstr ""
 #: core/ChangeLog.qml:89
 msgctxt "ChangeLog|"
 msgid "Translations added for Scottish Gaelic."
-msgstr "İskoç Galcesi için çeviriler eklendi."
+msgstr "İskoç Gaelcesi için çeviriler eklendi."
 
 #: core/ChangeLog.qml:90
 msgctxt "ChangeLog|"
@@ -26319,7 +26292,7 @@ msgstr "Ergonomiyi geliştirmek için planlarda yapılan birden fazla değişikl
 #: core/ChangeLog.qml:91
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in Polish, Swedish and Ukrainian."
-msgstr "Dil etkinliği artık Lehçe, İsveççe ve Ukraynaca olarak mevcuttur."
+msgstr "Dil etkinliği artık Lehçe, İsveççe ve Ukraynaca olarak vardır."
 
 #: core/ChangeLog.qml:92
 msgctxt "ChangeLog|"
@@ -26356,8 +26329,8 @@ msgid ""
 "Translations added for: Catalan (Valencian), Chinese Traditional, Finnish "
 "(92% translated), Russian (98% translated), Slovak (92% translated), Turkish."
 msgstr ""
-"Çeviriler eklendi: Katalanca (Valensiya), Geleneksel Çince, Fince (% 92 "
-"çevrildi), Rusça (% 98 çevrildi), Slovakça (% 92 çevrildi), Türkçe."
+"Şu çeviriler eklendi: Katalanca (Valensiya), Geleneksel Çince, Fince (%​92 "
+"çevrildi), Rusça (%​98 çevrildi), Slovakça (%​92 çevrildi), Türkçe."
 
 #: core/ChangeLog.qml:96
 msgctxt "ChangeLog|"
@@ -26559,7 +26532,7 @@ msgstr ""
 "etmektedir. KDE e.V. hakkında bilgi almak için <a href=\"%1\">%1</a> "
 "adresini ziyaret edin. <br /><br />KDE Takımı'nın her zaman finansal desteğe "
 "ihtiyacı vardır. Yapılan bağışlar, yasal destek sağlamak, KDE "
-"geliştiricilerinin KDE'ye yaptıkları desteğin devamını sağlamak ve "
+"geliştiricilerinin KDE'ye yaptıkları desteğin sürmesini sağlamak ve "
 "toplantıların, konferansların organizasyonu için harcanıyor.<br /> <br /"
 ">Sizin de <a href=\"%2\">%2</a> adresinde anlatılan şekilde KDE'ye yardım "
 "etmenizi bekliyoruz.<br /><br />Desteğiniz için şimdiden teşekkürler."
