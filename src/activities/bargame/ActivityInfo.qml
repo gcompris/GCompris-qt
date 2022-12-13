@@ -23,7 +23,7 @@ ActivityInfo {
   prerequisite: qsTr("Ability to count.")
   //: Help manual
   manual: qsTr("Click on the ball icon to select a number of balls, then click on the OK button to place the balls in the holes. You win if Tux has to place the last ball. If you want Tux to begin, just click on him.") + ("<br>") +
-          qsTr("Tux will play better when you increase the level.")
+          qsTr("You can use the arrow buttons to manually select the difficulty level. Tux will play better when you increase the level.")
   credit: ""
   section: "strategy"
   createdInVersion: 8000
