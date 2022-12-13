@@ -1,11 +1,12 @@
 /* GCompris - AnswerContainer.qml
  *
  * SPDX-FileCopyrightText: 2022 Samarth Raj <mailforsamarth@gmail.com>
+ * SPDX-FileCopyrightText: 2022 Timothée Giet <animtim@gmail.com>
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 import QtQuick 2.12
-
 import "../../core"
+import "tens_complement_find.js" as Activity
 
 Item {
     id: answerContainer
@@ -26,61 +27,35 @@ Item {
             margins: 10
         }
 
-        AnswerNumberCard {
-            id: firstPlaceHolder
-            anchors.top: parent.top
-            anchors.left: parent.left
-            anchors.verticalCenter: parent.verticalCenter
-            text: leftValue
-            index: 0
-            clickable: firstCardClickable
-        }
-
-        GCText {
-            text: "+"
-            verticalAlignment: Text.AlignVCenter
-            horizontalAlignment: Text.AlignHCenter
-            anchors {
-                left: firstPlaceHolder.right
-                right: secondPlaceHolder.left
-                top: parent.top
-                bottom: parent.bottom
+        ListView {
+            id: additionList
+            height: parent.height * 0.9
+            width: parent.width * 0.9
+            interactive: false
+            anchors.centerIn: parent
+            orientation: ListView.Horizontal
+            model: addition
+            delegate: NumberQuestionCard {
+                height: additionList.height * 0.8
+                width: additionList.width / 5
+                enabled: isAnswerCard
+                onClicked: {
+                    if(value != "?") {
+                        Activity.reappearNumberCard(value);
+                        value = "?";
+                        tickVisibility = false;
+                    }
+                    value = Activity.getEnteredCard();
+                    Activity.showOkButton();
+                }
             }
-        }
-
-        AnswerNumberCard {
-            id: secondPlaceHolder
-            anchors.horizontalCenter: parent.horizontalCenter
-            text: rightValue
-            clickable: secondCardClickable
-            index: 1
-        }
-
-        GCText {
-            text: "="
-            verticalAlignment: Text.AlignVCenter
-            horizontalAlignment: Text.AlignHCenter
-            anchors {
-                left: secondPlaceHolder.right
-                right: targetNumber.left
-                top: parent.top
-                bottom: parent.bottom
-            }
-        }
-
-       AnswerNumberCard {
-            id: targetNumber
-            anchors.right: parent.right
-            text: "10"
-            clickable: false
-            index: 2
         }
     }
 
     Image {
         id: validationImage
         visible: tickVisibility
-        sourceSize.width: firstPlaceHolder.width * 0.7
+        sourceSize.height: answerContainer.height
         source: isCorrect ? correctAnswerImage : wrongAnswerImage
         anchors {
             left: answerRectangle.right

@@ -1,6 +1,7 @@
 /* GCompris - tens_complement_find.js
  *
  * SPDX-FileCopyrightText: 2022 Samarth Raj <mailforsamarth@gmail.com>
+ * SPDX-FileCopyrightText: 2022 Timothée Giet <animtim@gmail.com>
  * SPDX-License-Identifier: GPL-3.0-or-later
  *
  */
@@ -12,7 +13,6 @@ var numberOfLevel;
 var currentSubLevel = 0;
 var numberOfSubLevel;
 var items;
-var selected = -1; // "-1" indicates no item selected
 
 function start(items_) {
     items = items_;
@@ -63,7 +63,9 @@ function initLevel() {
             var card = {
                 "value": rightHandSide.toString(),
                 "visibility": true,
-                "selected": false
+                "isSignSymbol": false,
+                "clickable": true,
+                "isAnswerCard": true
             }
             cards.push(card);
 
@@ -71,7 +73,9 @@ function initLevel() {
                 var card = {
                     "value": leftHandSide.toString(),
                     "visibility": true,
-                    "selected": false
+                    "isSignSymbol": false,
+                    "clickable": true,
+                    "isAnswerCard": true
                 } 
                 cards.push(card);
             }
@@ -94,7 +98,9 @@ function initLevel() {
             var card = {
                 "value": randomNumber.toString(),
                 "visibility": true,
-                "selected": false
+                "isSignSymbol": false,
+                "clickable": true,
+                "isAnswerCard": true
             } 
             cards.push(card);
         }
@@ -108,7 +114,9 @@ function initLevel() {
             var card = {
                 "value": sublevel.numberValue[cardToDisplayIndex].toString(),
                 "visibility": true,
-                "selected": false
+                "isSignSymbol": false,
+                "clickable": true,
+                "isAnswerCard": true
             }
             cards.push(card);
         }
@@ -137,8 +145,43 @@ function initLevel() {
 
 function createEquation(values) {
     return {
-        "leftValue": values[0].toString(),
-        "rightValue": values[1].toString(),
+        "addition": [
+            {
+                "value": values[0],
+                "visibility": true,
+                "clickable": values[0] === "?",
+                "isSignSymbol": false,
+                "isAnswerCard": values[0] === "?"
+            },
+            {
+                "value": "+",
+                "visibility": true,
+                "clickable": false,
+                "isSignSymbol": true,
+                "isAnswerCard": false
+            },
+            {
+                "value": values[1],
+                "visibility": true,
+                "clickable": values[1] === "?",
+                "isSignSymbol": false,
+                "isAnswerCard": values[1] === "?"
+            },
+            {
+                "value": "=",
+                "visibility": true,
+                "clickable": false,
+                "isSignSymbol": true,
+                "isAnswerCard": false
+            },
+            {
+                "value": "10",
+                "visibility": true,
+                "clickable": false,
+                "isSignSymbol": false,
+                "isAnswerCard": false
+            }
+        ],
         "firstCardClickable": values[0] == "?" ? true : false,
         "secondCardClickable": values[1] == "?" ? true : false,
         "isCorrect": false,
@@ -170,15 +213,6 @@ function previousLevel() {
     initLevel();
 }
 
-function selectCard(index) {
-    // Unselect previous card if one was selected
-    if(selected != -1) {
-        items.cardListModel.setProperty(selected, "selected", false);
-    }
-    selected = index;
-    items.cardListModel.setProperty(selected, "selected", true);
-}
-
 function reappearNumberCard(value) {
     var cardsToDisplay = items.cardListModel.count;
     for(var i = 0 ; i < cardsToDisplay ; i++) {
@@ -190,50 +224,52 @@ function reappearNumberCard(value) {
 }
 
 function getSelectedValue() {
-    var selectedValue = selected != -1 ? items.cardListModel.get(selected).value.toString() : "?";
+    var selectedValue = items.selectedIndex != -1 ? items.cardListModel.get(items.selectedIndex).value.toString() : "?";
     return selectedValue;
 }
 
-function click(index, rowIndex) {
-    var equation = items.holderListModel.get(rowIndex);
-    var property = (index == 0) ? "leftValue" : "rightValue";
-    var value = equation[property];
-    if(value != "?") {
-        reappearNumberCard(value);
+function getEnteredCard() {
+    if(items.selectedIndex == -1) {
+        return "?";
     }
-    items.holderListModel.setProperty(rowIndex, property, getSelectedValue());
-    updateVisibility(rowIndex)
+    items.cardListModel.setProperty(items.selectedIndex, "visibility", false);
+    var tempSelected = items.selectedIndex;
+    items.selectedIndex = -1;
+    return items.cardListModel.get(tempSelected).value.toString();
 }
-
 
 function updateVisibility(rowIndex) {
     items.holderListModel.get(rowIndex).tickVisibility = false;
-    if(selected != -1) {
+    if(items.selectedIndex != -1) {
         // Unselect it
         items.cardListModel.setProperty(selected, "selected", false);
         items.cardListModel.setProperty(selected, "visibility", false);
-        selected = -1;
+        items.selectedIndex = -1;
     }
-    items.okButton.visible = shouldShowOkButton();
+    items.okButton.visible = showOkButton();
 }
 
-function shouldShowOkButton() {
+function showOkButton() {
     var checkQuestionMark = true;
     for(var i = 0; i < items.holderListModel.count; i++) {
-        var equation = items.holderListModel.get(i);
-        if(equation.leftValue == "?" || equation.rightValue == "?") {
-            checkQuestionMark = false;
-            break;
+        var equation = items.holderListModel.get(i).addition;
+        for(var j = 0; j < equation.count; j++) {
+            var answer = equation.get(j);
+            if(answer.value == "?") {
+                checkQuestionMark = false;
+                break;
+            }
         }
     }
-    return checkQuestionMark;
+    items.okButton.visible = checkQuestionMark;
 }
 
 function checkAnswer() {
     var isAllCorrect = true;
     for(var i = 0 ; i < items.holderListModel.count ; i ++) {
         var equation = items.holderListModel.get(i);
-        var isGood = parseInt(equation.leftValue) + parseInt(equation.rightValue) == 10 ? true : false;
+        var solution = equation.addition
+        var isGood = parseInt(solution.get(0).value) + parseInt(solution.get(2).value) == 10 ? true : false;
         equation.isCorrect = isGood;
         equation.tickVisibility = true;
         isAllCorrect = isGood & isAllCorrect;

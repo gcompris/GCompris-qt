@@ -1,6 +1,7 @@
 /* GCompris - tens_complement_find.qml
  *
  * SPDX-FileCopyrightText: 2022 Samarth Raj <mailforsamarth@gmail.com>
+ * SPDX-FileCopyrightText: 2022 Timothée Giet <animtim@gmail.com>
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 import QtQuick 2.12
@@ -38,6 +39,7 @@ ActivityBase {
             property alias bonus: bonus
             property alias cardListModel: cardListModel
             property alias holderListModel: holderListModel
+            property int selectedIndex: -1
             readonly property var levels: activity.datasetLoader.data
             property alias okButton: okButton
             property alias score: score
@@ -80,9 +82,13 @@ ActivityBase {
                     cellHeight: items.cardSize
                     cellWidth: items.cardSize
                     model: cardListModel
-                    delegate: NumberCard {
+                    delegate: NumberQuestionCard {
                         height: items.cardSize
                         width: items.cardSize
+                        selected: index == items.selectedIndex
+                        onClicked: {
+                            items.selectedIndex = index;
+                        }
                     }
                 }
             }
@@ -100,22 +106,15 @@ ActivityBase {
                     right: parent.right
                 }
 
-                Rectangle {
-                    id: answerHolder
+                ListView {
                     height: items.cardSize * 4
                     width: parent.width * 0.6
+                    interactive: false
                     anchors.centerIn: parent
-
-                    ListView {
-                        height: parent.height
-                        width: parent.width
-                        interactive: false
-                        anchors.centerIn: parent
-                        model: holderListModel
-                        delegate: AnswerContainer {
-                            height: items.cardSize
-                            width: answerHolder.width
-                        }
+                    model: holderListModel
+                    delegate: AnswerContainer {
+                        height: items.cardSize
+                        width: answerHolderArea.width * 0.6
                     }
                 }
 
@@ -125,7 +124,7 @@ ActivityBase {
                     z: 2
                     source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
                     anchors {
-                        horizontalCenter: answerHolder.horizontalCenter
+                        horizontalCenter: parent.horizontalCenter
                         bottom: parent.bottom
                     }
                     sourceSize.width: 60 * ApplicationInfo.ratio
@@ -140,6 +139,12 @@ ActivityBase {
                 height: items.cardSize * 0.5
                 width: items.cardSize
             }
+        }
+
+        MouseArea {
+            id: clickMask
+            anchors.fill: layoutArea
+            enabled: items.bonus.isPlaying
         }
 
         DialogChooseLevel {
