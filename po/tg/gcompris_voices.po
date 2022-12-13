@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-11-24 00:41+0000\n"
+"POT-Creation-Date: 2022-12-13 00:48+0000\n"
 "PO-Revision-Date: 2021-09-08 23:39-0700\n"
 "Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
 "Language-Team: Tajik Language Support\n"
@@ -1075,6 +1075,31 @@ msgstr ""
 #: activities/target/ActivityInfo.qml:18
 #, kde-format
 msgid "Click on the target to launch darts, then count your final score!"
+msgstr ""
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "tens_complement_find"
+#: activities/tens_complement_find/ActivityInfo.qml:17
+#, kde-format
+msgid ""
+"Create pairs of numbers equal to ten. Select a number in the list, then "
+"select an empty spot of an operation to move the selected number there."
+msgstr ""
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "tens_complement_swap"
+#: activities/tens_complement_swap/ActivityInfo.qml:17
+#, kde-format
+msgid ""
+"Create pairs of numbers equal to ten. Select a number, then select another "
+"number of the same operation to swap their position."
+msgstr ""
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "tens_complement_use"
+#: activities/tens_complement_use/ActivityInfo.qml:17
+#, kde-format
+msgid ""
+"Decompose the operations to include a pair of numbers equal to ten. Select a "
+"number in the list, then select an empty spot of an operation to move the "
+"selected number there."
 msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "tic_tac_toe_2players"

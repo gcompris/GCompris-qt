@@ -1179,12 +1179,11 @@ msgstr ""
 "സുഹൃത്തിന്റെ കൂടെ കളിക്കൂ. മാറി മാറി നിങ്ങൾക്കു വേണ്ട കളത്തിൽ ക്ലിക്ക് ചെയ്ത് മാർക്ക് ചെയ്യൂ. 4 "
 "മാർക്കുകളുടെ ഒരു വരി ആദ്യം നിർമ്മിക്കുന്ന ആൾ ജയിക്കും."
 
-#: activities/align4/ActivityInfo.qml:23 activities/bargame/ActivityInfo.qml:26
-#: activities/checkers/ActivityInfo.qml:27
-#: activities/nine_men_morris/ActivityInfo.qml:25
-#: activities/tic_tac_toe/ActivityInfo.qml:28
+#: activities/align4/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
-msgid "Tux will play better when you increase the level."
+msgid ""
+"You can use the arrow buttons to manually select the difficulty level. Tux "
+"will play better when you increase the level."
 msgstr ""
 
 #: activities/align4/ActivityInfo.qml:25
@@ -2613,6 +2612,14 @@ msgstr ""
 "പന്തിന്റെ ഐക്കണിൽ ക്ലിക്കു ചെയ്ത് പന്തുകളുടെ എണ്ണം തിരഞ്ഞെടുക്കുക, എന്നിട്ട് ഒകെ ബട്ടണിൽ ക്ലിക്കു "
 "ചെയ്ത് പന്തുകൾ കുഴികളിൽ ഇടാവുന്നതാണ്. കംപ്യൂട്ടറാണ് അവസാനത്തെ പന്ത് ഇടുന്നതെങ്കിൽ നിങ്ങൾ ജയിച്ചു. "
 "ടക്സിൽ ക്ലിക്ക് ചെയ്താൽ, ടക്സ് കളി തുടങ്ങും."
+
+#: activities/bargame/ActivityInfo.qml:26
+#: activities/checkers/ActivityInfo.qml:27
+#: activities/nine_men_morris/ActivityInfo.qml:25
+#: activities/tic_tac_toe/ActivityInfo.qml:28
+msgctxt "ActivityInfo|"
+msgid "Tux will play better when you increase the level."
+msgstr ""
 
 #. Activity title
 #: activities/bargame_2players/ActivityInfo.qml:15
@@ -5239,6 +5246,7 @@ msgid "&lt;, &gt; or =: enter the corresponding symbol"
 msgstr ""
 
 #: activities/comparator/resource/1/Data.qml:36
+#: activities/tens_complement_find/resource/3/Data.qml:9
 #, fuzzy
 #| msgctxt "Data|"
 #| msgid "Numbers from 0 to 9."
@@ -24505,6 +24513,202 @@ msgstr "പരമാവധി വില: 50000."
 msgctxt "Data|"
 msgid "Maximum value: 500000."
 msgstr "പരമാവധി വില: 500000."
+
+#. Activity title
+#: activities/tens_complement_find/ActivityInfo.qml:14
+#, fuzzy
+#| msgctxt "instruments|"
+#| msgid "Find the trumpet"
+msgctxt "ActivityInfo|"
+msgid "Find ten's complement"
+msgstr "ട്രമ്പെറ്റ് കണ്ടെത്തൂ"
+
+#. Help title
+#: activities/tens_complement_find/ActivityInfo.qml:16
+msgctxt "ActivityInfo|"
+msgid "Find the ten's complement of each number."
+msgstr ""
+
+#. Help goal
+#: activities/tens_complement_find/ActivityInfo.qml:19
+msgctxt "ActivityInfo|"
+msgid "Learn to find ten's complement."
+msgstr ""
+
+#. Help prerequisite
+#: activities/tens_complement_find/ActivityInfo.qml:21
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Numbers from 0 to 9."
+msgctxt "ActivityInfo|"
+msgid "Numbers from 1 to 10 and additions."
+msgstr "0 തൊട്ട് 9 വരെയുള്ള സംഖ്യകൾ."
+
+#: activities/tens_complement_find/ActivityInfo.qml:23
+#: activities/tens_complement_use/ActivityInfo.qml:24
+msgctxt "ActivityInfo|"
+msgid ""
+"When all the lines are completed, press the OK button to validate the "
+"answers. If some answers are incorrect, a cross icon will appear on the "
+"corresponding lines. To correct the errors, click on the wrong numbers to "
+"remove them and repeat the previous steps."
+msgstr ""
+
+#. Help manual
+#: activities/tens_complement_find/ActivityInfo.qml:23
+msgctxt "ActivityInfo|"
+msgid ""
+"Create pairs of numbers equal to ten. Select a number in the list, then "
+"select an empty spot of an operation to move the selected number there."
+msgstr ""
+
+#: activities/tens_complement_find/resource/1/Data.qml:25
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Numbers from 0 to 9."
+msgctxt "Data|"
+msgid "First number from 1 to 4."
+msgstr "0 തൊട്ട് 9 വരെയുള്ള സംഖ്യകൾ."
+
+#: activities/tens_complement_find/resource/2/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Numbers from 0 to 9."
+msgctxt "Data|"
+msgid "First number from 5 to 9."
+msgstr "0 തൊട്ട് 9 വരെയുള്ള സംഖ്യകൾ."
+
+#: activities/tens_complement_find/resource/4/Data.qml:9
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Division of numbers"
+msgctxt "Data|"
+msgid "Find both numbers."
+msgstr "സംഖ്യകളുടെ ഹരണം"
+
+#. Activity title
+#: activities/tens_complement_swap/ActivityInfo.qml:14
+msgctxt "ActivityInfo|"
+msgid "Swap ten's complement"
+msgstr ""
+
+#. Help title
+#: activities/tens_complement_swap/ActivityInfo.qml:16
+msgctxt "ActivityInfo|"
+msgid "Swap the numbers to create pairs equal to ten."
+msgstr ""
+
+#. Help goal
+#: activities/tens_complement_swap/ActivityInfo.qml:19
+msgctxt "ActivityInfo|"
+msgid ""
+"Learn to use ten's complement to optimize the order of numbers in an "
+"operation."
+msgstr ""
+
+#. Help prerequisite
+#: activities/tens_complement_swap/ActivityInfo.qml:21
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Numbers from 0 to 9."
+msgctxt "ActivityInfo|"
+msgid "Numbers from 1 to 30 and additions."
+msgstr "0 തൊട്ട് 9 വരെയുള്ള സംഖ്യകൾ."
+
+#. Help manual
+#: activities/tens_complement_swap/ActivityInfo.qml:23
+msgctxt "ActivityInfo|"
+msgid ""
+"Create pairs of numbers equal to ten within each parentheses. Select a "
+"number, then select another number of the same operation to swap their "
+"position. When all the lines are completed, press the OK button to validate "
+"the answers. If some answers are incorrect, a cross icon will appear on the "
+"corresponding lines. Correct the errors, then press the OK button again."
+msgstr ""
+
+#: activities/tens_complement_swap/resource/1/Data.qml:36
+#, fuzzy
+#| msgctxt "Warning|"
+#| msgid "1 is not a prime number."
+msgctxt "Data|"
+msgid "2 pairs to make from 4 numbers."
+msgstr "1 ഒരു അഭാജ്യ സംഖ്യയല്ല."
+
+#: activities/tens_complement_swap/resource/2/Data.qml:9
+#, fuzzy
+#| msgctxt "Warning|"
+#| msgid "1 is not a prime number."
+msgctxt "Data|"
+msgid "2 pairs to make from 5 numbers."
+msgstr "1 ഒരു അഭാജ്യ സംഖ്യയല്ല."
+
+#: activities/tens_complement_swap/resource/3/Data.qml:9
+#, fuzzy
+#| msgctxt "Warning|"
+#| msgid "1 is not a prime number."
+msgctxt "Data|"
+msgid "3 pairs to make from 6 numbers."
+msgstr "1 ഒരു അഭാജ്യ സംഖ്യയല്ല."
+
+#. Activity title
+#: activities/tens_complement_use/ActivityInfo.qml:14
+msgctxt "ActivityInfo|"
+msgid "Use ten's complement"
+msgstr ""
+
+#. Help title
+#: activities/tens_complement_use/ActivityInfo.qml:16
+msgctxt "ActivityInfo|"
+msgid "Use a ten's complement to simplify the operation."
+msgstr ""
+
+#. Help goal
+#: activities/tens_complement_use/ActivityInfo.qml:19
+msgctxt "ActivityInfo|"
+msgid "Learn a practical use of ten's complement."
+msgstr ""
+
+#. Help prerequisite
+#: activities/tens_complement_use/ActivityInfo.qml:21
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Numbers from 0 to 9."
+msgctxt "ActivityInfo|"
+msgid "Numbers from 1 to 50 and additions."
+msgstr "0 തൊട്ട് 9 വരെയുള്ള സംഖ്യകൾ."
+
+#. Help manual
+#: activities/tens_complement_use/ActivityInfo.qml:23
+msgctxt "ActivityInfo|"
+msgid ""
+"Decompose the additions to create pairs of numbers equal to ten within each "
+"parentheses. Select a number in the list, then select an empty spot of an "
+"operation to move the selected number there."
+msgstr ""
+
+#: activities/tens_complement_use/resource/1/Data.qml:43
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Between 1 and 10."
+msgctxt "Data|"
+msgid "Result between 11 and 19."
+msgstr "1-നും 10-നും ഇടയിൽ."
+
+#: activities/tens_complement_use/resource/2/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Numbers between %1 and %2."
+msgctxt "Data|"
+msgid "Result between 20 and 29."
+msgstr "%1-നും %2-നും ഇടയിലുള്ള സംഖ്യകൾ."
+
+#: activities/tens_complement_use/resource/3/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Between 20 and 50."
+msgctxt "Data|"
+msgid "Result between 30 and 50."
+msgstr "20-നും 50-നും ഇടയിൽ."
 
 #. Activity title
 #: activities/tic_tac_toe/ActivityInfo.qml:18

@@ -1178,13 +1178,12 @@ msgstr ""
 "Speel met Tux. Klik om beurten op een lijn waarin je een teken wilt stoppen. "
 "De eerste speler die er vier op een rij heeft wint."
 
-#: activities/align4/ActivityInfo.qml:23 activities/bargame/ActivityInfo.qml:26
-#: activities/checkers/ActivityInfo.qml:27
-#: activities/nine_men_morris/ActivityInfo.qml:25
-#: activities/tic_tac_toe/ActivityInfo.qml:28
+#: activities/align4/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
-msgid "Tux will play better when you increase the level."
-msgstr "Tux zal beter spelen wanneer je het niveau verhoogt."
+msgid ""
+"You can use the arrow buttons to manually select the difficulty level. Tux "
+"will play better when you increase the level."
+msgstr ""
 
 #: activities/align4/ActivityInfo.qml:25
 #: activities/align4_2players/ActivityInfo.qml:24
@@ -2650,6 +2649,14 @@ msgstr ""
 "Klik op het balpictogram om het aantal ballen te selecteren, klik daarna op "
 "de knop OK om de ballen in de gaten te plaatsen. Je wint als Tux de laatste "
 "bal moet plaatsen. Als je Tux wilt laten beginnen, klik dan gewoon op hem."
+
+#: activities/bargame/ActivityInfo.qml:26
+#: activities/checkers/ActivityInfo.qml:27
+#: activities/nine_men_morris/ActivityInfo.qml:25
+#: activities/tic_tac_toe/ActivityInfo.qml:28
+msgctxt "ActivityInfo|"
+msgid "Tux will play better when you increase the level."
+msgstr "Tux zal beter spelen wanneer je het niveau verhoogt."
 
 #. Activity title
 #: activities/bargame_2players/ActivityInfo.qml:15
@@ -5258,6 +5265,7 @@ msgid "&lt;, &gt; or =: enter the corresponding symbol"
 msgstr "&lt;, &gt; of =: voer het bijbehorende symbool in"
 
 #: activities/comparator/resource/1/Data.qml:36
+#: activities/tens_complement_find/resource/3/Data.qml:9
 msgctxt "Data|"
 msgid "Numbers from 1 to 9."
 msgstr "Getallen van 1 tot 9."
@@ -24723,6 +24731,210 @@ msgstr "Maximum waarde: 50000."
 msgctxt "Data|"
 msgid "Maximum value: 500000."
 msgstr "Maximum waarde: 500000."
+
+#. Activity title
+#: activities/tens_complement_find/ActivityInfo.qml:14
+#, fuzzy
+#| msgctxt "instruments|"
+#| msgid "Find the trumpet"
+msgctxt "ActivityInfo|"
+msgid "Find ten's complement"
+msgstr "Zoek de trompet"
+
+#. Help title
+#: activities/tens_complement_find/ActivityInfo.qml:16
+msgctxt "ActivityInfo|"
+msgid "Find the ten's complement of each number."
+msgstr ""
+
+#. Help goal
+#: activities/tens_complement_find/ActivityInfo.qml:19
+msgctxt "ActivityInfo|"
+msgid "Learn to find ten's complement."
+msgstr ""
+
+#. Help prerequisite
+#: activities/tens_complement_find/ActivityInfo.qml:21
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Numbers from 1 to 1 billion."
+msgctxt "ActivityInfo|"
+msgid "Numbers from 1 to 10 and additions."
+msgstr "Getallen van 1 tot 1 miljard."
+
+#: activities/tens_complement_find/ActivityInfo.qml:23
+#: activities/tens_complement_use/ActivityInfo.qml:24
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "If some answers are incorrect, a cross icon will appear on the "
+#| "corresponding lines. Correct the errors, then select the OK button again."
+msgctxt "ActivityInfo|"
+msgid ""
+"When all the lines are completed, press the OK button to validate the "
+"answers. If some answers are incorrect, a cross icon will appear on the "
+"corresponding lines. To correct the errors, click on the wrong numbers to "
+"remove them and repeat the previous steps."
+msgstr ""
+"Als sommige antwoorden onjuist zijn zal er een pictogram met kruis "
+"verschijnen op de bijbehorende regels. Corrigeer de fouten, selecteer daarna "
+"de knop OK opnieuw."
+
+#. Help manual
+#: activities/tens_complement_find/ActivityInfo.qml:23
+msgctxt "ActivityInfo|"
+msgid ""
+"Create pairs of numbers equal to ten. Select a number in the list, then "
+"select an empty spot of an operation to move the selected number there."
+msgstr ""
+
+#: activities/tens_complement_find/resource/1/Data.qml:25
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Numbers from 1 to 9."
+msgctxt "Data|"
+msgid "First number from 1 to 4."
+msgstr "Getallen van 1 tot 9."
+
+#: activities/tens_complement_find/resource/2/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Numbers from 1 to 9."
+msgctxt "Data|"
+msgid "First number from 5 to 9."
+msgstr "Getallen van 1 tot 9."
+
+#: activities/tens_complement_find/resource/4/Data.qml:9
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Division of numbers"
+msgctxt "Data|"
+msgid "Find both numbers."
+msgstr "Getallen delen"
+
+#. Activity title
+#: activities/tens_complement_swap/ActivityInfo.qml:14
+msgctxt "ActivityInfo|"
+msgid "Swap ten's complement"
+msgstr ""
+
+#. Help title
+#: activities/tens_complement_swap/ActivityInfo.qml:16
+msgctxt "ActivityInfo|"
+msgid "Swap the numbers to create pairs equal to ten."
+msgstr ""
+
+#. Help goal
+#: activities/tens_complement_swap/ActivityInfo.qml:19
+msgctxt "ActivityInfo|"
+msgid ""
+"Learn to use ten's complement to optimize the order of numbers in an "
+"operation."
+msgstr ""
+
+#. Help prerequisite
+#: activities/tens_complement_swap/ActivityInfo.qml:21
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Numbers from 1 to 1 billion."
+msgctxt "ActivityInfo|"
+msgid "Numbers from 1 to 30 and additions."
+msgstr "Getallen van 1 tot 1 miljard."
+
+#. Help manual
+#: activities/tens_complement_swap/ActivityInfo.qml:23
+msgctxt "ActivityInfo|"
+msgid ""
+"Create pairs of numbers equal to ten within each parentheses. Select a "
+"number, then select another number of the same operation to swap their "
+"position. When all the lines are completed, press the OK button to validate "
+"the answers. If some answers are incorrect, a cross icon will appear on the "
+"corresponding lines. Correct the errors, then press the OK button again."
+msgstr ""
+
+#: activities/tens_complement_swap/resource/1/Data.qml:36
+#, fuzzy
+#| msgctxt "Warning|"
+#| msgid "1 is not a prime number."
+msgctxt "Data|"
+msgid "2 pairs to make from 4 numbers."
+msgstr "1 is geen priemgetal."
+
+#: activities/tens_complement_swap/resource/2/Data.qml:9
+#, fuzzy
+#| msgctxt "Warning|"
+#| msgid "1 is not a prime number."
+msgctxt "Data|"
+msgid "2 pairs to make from 5 numbers."
+msgstr "1 is geen priemgetal."
+
+#: activities/tens_complement_swap/resource/3/Data.qml:9
+#, fuzzy
+#| msgctxt "Warning|"
+#| msgid "1 is not a prime number."
+msgctxt "Data|"
+msgid "3 pairs to make from 6 numbers."
+msgstr "1 is geen priemgetal."
+
+#. Activity title
+#: activities/tens_complement_use/ActivityInfo.qml:14
+msgctxt "ActivityInfo|"
+msgid "Use ten's complement"
+msgstr ""
+
+#. Help title
+#: activities/tens_complement_use/ActivityInfo.qml:16
+msgctxt "ActivityInfo|"
+msgid "Use a ten's complement to simplify the operation."
+msgstr ""
+
+#. Help goal
+#: activities/tens_complement_use/ActivityInfo.qml:19
+msgctxt "ActivityInfo|"
+msgid "Learn a practical use of ten's complement."
+msgstr ""
+
+#. Help prerequisite
+#: activities/tens_complement_use/ActivityInfo.qml:21
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Numbers from 1 to 1 billion."
+msgctxt "ActivityInfo|"
+msgid "Numbers from 1 to 50 and additions."
+msgstr "Getallen van 1 tot 1 miljard."
+
+#. Help manual
+#: activities/tens_complement_use/ActivityInfo.qml:23
+msgctxt "ActivityInfo|"
+msgid ""
+"Decompose the additions to create pairs of numbers equal to ten within each "
+"parentheses. Select a number in the list, then select an empty spot of an "
+"operation to move the selected number there."
+msgstr ""
+
+#: activities/tens_complement_use/resource/1/Data.qml:43
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Between 1 and 10."
+msgctxt "Data|"
+msgid "Result between 11 and 19."
+msgstr "Tussen 1 en 10."
+
+#: activities/tens_complement_use/resource/2/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Numbers between %1 and %2."
+msgctxt "Data|"
+msgid "Result between 20 and 29."
+msgstr "Getallen tussen %1 en %2."
+
+#: activities/tens_complement_use/resource/3/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Between 20 and 50."
+msgctxt "Data|"
+msgid "Result between 30 and 50."
+msgstr "Tussen 20 en 50."
 
 #. Activity title
 #: activities/tic_tac_toe/ActivityInfo.qml:18
