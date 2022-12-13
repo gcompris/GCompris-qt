@@ -22,7 +22,7 @@ ActivityInfo {
   prerequisite: ""
   //: Help manual
   manual: qsTr("Play with Tux. First take turns to place nine pieces, and then take turns to move your pieces.") + ("<br>") +
-    qsTr("Tux will play better when you increase the level.")
+    qsTr("You can use the arrow buttons to manually select the difficulty level. Tux will play better when you increase the level.")
   credit: ""
   section: "strategy"
   createdInVersion: 7000 
