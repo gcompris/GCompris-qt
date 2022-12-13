@@ -19,6 +19,7 @@ var indexOfNumberInAnswerArray = [1, 3, 6];
 function start(items_) {
     items = items_
     currentLevel = 0
+    currentSubLevel = 0
     initLevel()
 }
 
@@ -259,7 +260,6 @@ function showOkButton() {
     }
 
     items.okButton.visible = checkQuestionMark;
-    return checkQuestionMark;
 }
 
 function checkAnswer() {

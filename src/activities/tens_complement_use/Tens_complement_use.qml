@@ -83,7 +83,9 @@ ActivityBase {
                     cellHeight: items.cardSize
                     cellWidth: items.cardSize
                     model: cardListModel
-                    delegate: Card {
+                    delegate: NumberQuestionCard {
+                        height: items.cardSize
+                        width: items.cardSize
                         selected: index == items.selectedIndex
                         onClicked: {
                             items.selectedIndex = index;

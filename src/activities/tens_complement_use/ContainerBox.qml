@@ -38,7 +38,7 @@ Rectangle {
             anchors.centerIn: parent
             orientation: ListView.Horizontal
             model: addition
-            delegate: Card {
+            delegate: NumberQuestionCard {
                 height: questionContainer.height * 0.8
                 width: questionContainer.width / 6
             }
@@ -67,10 +67,9 @@ Rectangle {
             anchors.centerIn: parent
             orientation: ListView.Horizontal
             model: secondRow
-            delegate: Card {
+            delegate: NumberQuestionCard {
                 height: answerContainer.height * 0.8
                 width: answerContainer.width / 10
-                enabled: isAnswerCard
                 onClicked: {
                     if(value != "?") {
                         Activity.reappearNumberCard(value);
