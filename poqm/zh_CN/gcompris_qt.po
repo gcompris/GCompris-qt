@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
-"PO-Revision-Date: 2022-12-01 06:51\n"
+"PO-Revision-Date: 2022-12-13 12:20\n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
@@ -1162,7 +1162,9 @@ msgid ""
 "token. The first player to create a line of 4 tokens wins."
 msgstr ""
 
-#: activities/align4/ActivityInfo.qml:23
+#: activities/align4/ActivityInfo.qml:23 activities/bargame/ActivityInfo.qml:26
+#: activities/checkers/ActivityInfo.qml:27
+#: activities/nine_men_morris/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid ""
 "You can use the arrow buttons to manually select the difficulty level. Tux "
@@ -2493,14 +2495,6 @@ msgid ""
 "Click on the ball icon to select a number of balls, then click on the OK "
 "button to place the balls in the holes. You win if Tux has to place the last "
 "ball. If you want Tux to begin, just click on him."
-msgstr ""
-
-#: activities/bargame/ActivityInfo.qml:26
-#: activities/checkers/ActivityInfo.qml:27
-#: activities/nine_men_morris/ActivityInfo.qml:25
-#: activities/tic_tac_toe/ActivityInfo.qml:28
-msgctxt "ActivityInfo|"
-msgid "Tux will play better when you increase the level."
 msgstr ""
 
 #. Activity title
@@ -3844,26 +3838,6 @@ msgstr "（跟小企鹅）下棋"
 
 #. Help manual Much of this string is shared across the three activities "chess", "chess_partyend", and "chess_2players".
 #: activities/chess/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "In this activity you discover the chess game by playing against the "
-#| "computer. It displays the possible target positions for any selected "
-#| "piece which helps the children understand how pieces moves. At first "
-#| "level the computer is fully random to give more chances to the children. "
-#| "As level increases, the computer plays better.\n"
-#| "\n"
-#| "You can achieve a mate sooner if you follow these simple rules:\n"
-#| "    Trying to drive your opponent's king in the corner.\n"
-#| "<b>Explanation</b>: this way your opponent's king would have only 3 "
-#| "directions to move instead of 8 from a better position.\n"
-#| "    'Making a trap'. Use your pawns as baits.\n"
-#| "<b>Explanation</b>: this way you can lure your opponent out of his "
-#| "'comfort zone'.\n"
-#| "    Be patient enough.\n"
-#| "<b>Explanation</b>: don't rush too quick, be patient. Let yourself think "
-#| "a little bit and try to predict your opponent's future moves, so that you "
-#| "can catch him or secure your pieces from his attacks."
 msgctxt "ActivityInfo|"
 msgid ""
 "In this activity you discover the chess game by playing against the "
@@ -3885,18 +3859,6 @@ msgid ""
 "little bit and try to predict your opponent's future moves, so that you can "
 "catch him or secure your pieces from his attacks."
 msgstr ""
-"在这一活动中，您可以和电脑下棋。为了帮助儿童理解如何行棋，在选中某个棋子时会"
-"显示其可能被放置的位置。在第一级中，电脑随机下子；随着关卡提升，电脑的水平也"
-"会逐步提升。\n"
-"\n"
-"若按照以下规则下棋，您就可以尽快赢棋：\n"
-"    尽量把对方的王压制在角落。\n"
-"<b>解释</b>：这样一来，对手的棋子就只有三个方向能走 (而不是八个方向)。\n"
-"    “做陷阱”：用您的车作诱饵。\n"
-"<b>解释</b>：这样一来，就可以把对方引出后方的“安全区域”。\n"
-"    要耐心。\n"
-"<b>解释</b>：不要下得太快，应当有耐心。要多想想每一招后对手会如何应招，这样一"
-"来您就可以心中有数，能够吃掉对方的子，或者保证自己不会丢子。"
 
 #: activities/chess/ActivityInfo.qml:32
 #: activities/chess_2players/ActivityInfo.qml:32
@@ -23266,6 +23228,11 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Play with Tux. Take turns to click on the square which you want to mark. The "
 "first player to create a line of 3 marks wins."
+msgstr ""
+
+#: activities/tic_tac_toe/ActivityInfo.qml:28
+msgctxt "ActivityInfo|"
+msgid "Tux will play better when you increase the level."
 msgstr ""
 
 #. Activity title

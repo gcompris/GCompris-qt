@@ -1195,7 +1195,9 @@ msgstr ""
 "Žaisk su draugu. Pakaitomis paspauskite ant stulpelio, į kurį norite padėti "
 "žetoną. Laimi pirmasis padaręs liniją iš keturių žetonų."
 
-#: activities/align4/ActivityInfo.qml:23
+#: activities/align4/ActivityInfo.qml:23 activities/bargame/ActivityInfo.qml:26
+#: activities/checkers/ActivityInfo.qml:27
+#: activities/nine_men_morris/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid ""
 "You can use the arrow buttons to manually select the difficulty level. Tux "
@@ -2654,14 +2656,6 @@ msgstr ""
 "ir tada spausk mygtuką OK. Tuomet bus priešininko eilė. Laimėsi, jei "
 "kompiuteriui teks įridenti paskutinį kamuolį. Jei nori, kad Tuksas pradėtų "
 "žaidimą – pradžioje spustelk ant jo."
-
-#: activities/bargame/ActivityInfo.qml:26
-#: activities/checkers/ActivityInfo.qml:27
-#: activities/nine_men_morris/ActivityInfo.qml:25
-#: activities/tic_tac_toe/ActivityInfo.qml:28
-msgctxt "ActivityInfo|"
-msgid "Tux will play better when you increase the level."
-msgstr ""
 
 #. Activity title
 #: activities/bargame_2players/ActivityInfo.qml:15
@@ -25112,6 +25106,11 @@ msgid ""
 msgstr ""
 "Žaisk su draugu. Pakaitomis spausk ant kvadratėlio, kurį nori pažymėti. "
 "Laimi tas, kuris pirmas sukuria trijų vienodų ženkliukų tiesią liniją."
+
+#: activities/tic_tac_toe/ActivityInfo.qml:28
+msgctxt "ActivityInfo|"
+msgid "Tux will play better when you increase the level."
+msgstr ""
 
 #. Activity title
 #: activities/tic_tac_toe_2players/ActivityInfo.qml:18

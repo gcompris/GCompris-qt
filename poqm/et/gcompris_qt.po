@@ -1179,7 +1179,9 @@ msgstr ""
 "asetada. Võidab mängija, kes saab esimesena ühte ritta neli ühesugust "
 "žetooni."
 
-#: activities/align4/ActivityInfo.qml:23
+#: activities/align4/ActivityInfo.qml:23 activities/bargame/ActivityInfo.qml:26
+#: activities/checkers/ActivityInfo.qml:27
+#: activities/nine_men_morris/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid ""
 "You can use the arrow buttons to manually select the difficulty level. Tux "
@@ -2628,14 +2630,6 @@ msgid ""
 msgstr ""
 "Aseta kuulikesed aukudesse. Sa võidad, kui arvuti peab asetama paika viimase "
 "kuulikese. Kui soovid, et Tux alustaks, klõpsa tema peal."
-
-#: activities/bargame/ActivityInfo.qml:26
-#: activities/checkers/ActivityInfo.qml:27
-#: activities/nine_men_morris/ActivityInfo.qml:25
-#: activities/tic_tac_toe/ActivityInfo.qml:28
-msgctxt "ActivityInfo|"
-msgid "Tux will play better when you increase the level."
-msgstr ""
 
 #. Activity title
 #: activities/bargame_2players/ActivityInfo.qml:15
@@ -24872,6 +24866,11 @@ msgid ""
 msgstr ""
 "Mäng sõbra vastu. Käigu sooritamiseks klõpsa ruudule, kuhu soovid märgi "
 "asetada. Võidab mängija, kes saab esimesena ühte ritta kolm ühesugust märki."
+
+#: activities/tic_tac_toe/ActivityInfo.qml:28
+msgctxt "ActivityInfo|"
+msgid "Tux will play better when you increase the level."
+msgstr ""
 
 #. Activity title
 #: activities/tic_tac_toe_2players/ActivityInfo.qml:18

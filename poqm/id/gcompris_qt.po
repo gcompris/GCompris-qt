@@ -1201,7 +1201,9 @@ msgstr ""
 "ingin menjatuhkan kepingan gambar. Pemain pertama yang membuat 4 baris "
 "kepingan gambar adalah pemenangnya."
 
-#: activities/align4/ActivityInfo.qml:23
+#: activities/align4/ActivityInfo.qml:23 activities/bargame/ActivityInfo.qml:26
+#: activities/checkers/ActivityInfo.qml:27
+#: activities/nine_men_morris/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid ""
 "You can use the arrow buttons to manually select the difficulty level. Tux "
@@ -2669,14 +2671,6 @@ msgstr ""
 "Klik pada ikon bola untuk memilih sejumlah bola, lalu klik tombol OK untuk "
 "menempatkan bola pada lubang. Kamu menang jika komputer harus meletakkan "
 "bola yang terakhir. Jika kamu ingin Tux yang mulai, klik dia."
-
-#: activities/bargame/ActivityInfo.qml:26
-#: activities/checkers/ActivityInfo.qml:27
-#: activities/nine_men_morris/ActivityInfo.qml:25
-#: activities/tic_tac_toe/ActivityInfo.qml:28
-msgctxt "ActivityInfo|"
-msgid "Tux will play better when you increase the level."
-msgstr "Pinguin Tux akan bermain lebih baik ketika kamu meningkatkan level."
 
 #. Activity title
 #: activities/bargame_2players/ActivityInfo.qml:15
@@ -25215,6 +25209,11 @@ msgid ""
 msgstr ""
 "Bermain bersama teman. Saling bergantian untuk mengeklik kotak yang ingin "
 "kamu tandai. Pemain pertama yang membuat 3 tanda segaris menang."
+
+#: activities/tic_tac_toe/ActivityInfo.qml:28
+msgctxt "ActivityInfo|"
+msgid "Tux will play better when you increase the level."
+msgstr "Pinguin Tux akan bermain lebih baik ketika kamu meningkatkan level."
 
 #. Activity title
 #: activities/tic_tac_toe_2players/ActivityInfo.qml:18

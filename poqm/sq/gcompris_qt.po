@@ -1189,7 +1189,9 @@ msgstr ""
 "Luajeni me një shok. Klikoni, me radhë, mbi rreshtin në të cilin doni të "
 "lihet një pullë. Fiton lojtari i parë që krijon një rresht me 4 pulla."
 
-#: activities/align4/ActivityInfo.qml:23
+#: activities/align4/ActivityInfo.qml:23 activities/bargame/ActivityInfo.qml:26
+#: activities/checkers/ActivityInfo.qml:27
+#: activities/nine_men_morris/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid ""
 "You can use the arrow buttons to manually select the difficulty level. Tux "
@@ -2657,14 +2659,6 @@ msgstr ""
 "klikoni mbi butonin OK që topthat të vendosen te vrimat. Fitoni nëse "
 "kompjuterit i duhet të vendosë topthin e fundit. Nëse doni që të fillojë Tux-"
 "i i pari, thjesht klikoni mbi të."
-
-#: activities/bargame/ActivityInfo.qml:26
-#: activities/checkers/ActivityInfo.qml:27
-#: activities/nine_men_morris/ActivityInfo.qml:25
-#: activities/tic_tac_toe/ActivityInfo.qml:28
-msgctxt "ActivityInfo|"
-msgid "Tux will play better when you increase the level."
-msgstr ""
 
 #. Activity title
 #: activities/bargame_2players/ActivityInfo.qml:15
@@ -25233,6 +25227,11 @@ msgid ""
 msgstr ""
 "Luani me një shok. Një herë njëri, një herë tjetri, klikoni mbi kutinë ku "
 "doni të vendosni. I pari që krijon një vijë me 3 gurë fiton."
+
+#: activities/tic_tac_toe/ActivityInfo.qml:28
+msgctxt "ActivityInfo|"
+msgid "Tux will play better when you increase the level."
+msgstr ""
 
 #. Activity title
 #: activities/tic_tac_toe_2players/ActivityInfo.qml:18

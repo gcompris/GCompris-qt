@@ -1273,7 +1273,9 @@ msgstr ""
 "Jugueu amb en Tux. Per torns, feu clic damunt de la línia en la qual "
 "afegireu una fitxa. El primer jugador que cree una línia de 4 fitxes guanya."
 
-#: activities/align4/ActivityInfo.qml:23
+#: activities/align4/ActivityInfo.qml:23 activities/bargame/ActivityInfo.qml:26
+#: activities/checkers/ActivityInfo.qml:27
+#: activities/nine_men_morris/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid ""
 "You can use the arrow buttons to manually select the difficulty level. Tux "
@@ -2775,14 +2777,6 @@ msgstr ""
 "després feu clic en el botó «OK» per a situar-les en els forats. Guanyareu "
 "si en Tux ha de posar l'última bala. Si voleu que comence en Tux, "
 "senzillament feu-hi clic."
-
-#: activities/bargame/ActivityInfo.qml:26
-#: activities/checkers/ActivityInfo.qml:27
-#: activities/nine_men_morris/ActivityInfo.qml:25
-#: activities/tic_tac_toe/ActivityInfo.qml:28
-msgctxt "ActivityInfo|"
-msgid "Tux will play better when you increase the level."
-msgstr "En Tux jugarà millor a mesura que augmenteu el nivell."
 
 #. Activity title
 #: activities/bargame_2players/ActivityInfo.qml:15
@@ -25391,6 +25385,11 @@ msgid ""
 msgstr ""
 "Jugueu amb en Tux. Per torns, feu clic damunt del quadrat que voleu marcar. "
 "El primer jugador que cree una línia de 3 marques guanya."
+
+#: activities/tic_tac_toe/ActivityInfo.qml:28
+msgctxt "ActivityInfo|"
+msgid "Tux will play better when you increase the level."
+msgstr "En Tux jugarà millor a mesura que augmenteu el nivell."
 
 #. Activity title
 #: activities/tic_tac_toe_2players/ActivityInfo.qml:18

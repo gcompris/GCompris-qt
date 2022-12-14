@@ -1274,7 +1274,9 @@ msgstr ""
 "koristiš tastere sa strelicama da pomjeriš dio lijevo ili desno, a strelicu "
 "na dolje ili taster za razmak da bi spustio dio."
 
-#: activities/align4/ActivityInfo.qml:23
+#: activities/align4/ActivityInfo.qml:23 activities/bargame/ActivityInfo.qml:26
+#: activities/checkers/ActivityInfo.qml:27
+#: activities/nine_men_morris/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid ""
 "You can use the arrow buttons to manually select the difficulty level. Tux "
@@ -2582,14 +2584,6 @@ msgid ""
 "Click on the ball icon to select a number of balls, then click on the OK "
 "button to place the balls in the holes. You win if Tux has to place the last "
 "ball. If you want Tux to begin, just click on him."
-msgstr ""
-
-#: activities/bargame/ActivityInfo.qml:26
-#: activities/checkers/ActivityInfo.qml:27
-#: activities/nine_men_morris/ActivityInfo.qml:25
-#: activities/tic_tac_toe/ActivityInfo.qml:28
-msgctxt "ActivityInfo|"
-msgid "Tux will play better when you increase the level."
 msgstr ""
 
 #. Activity title
@@ -24225,6 +24219,11 @@ msgstr ""
 "Klikni na mjesto na liniji gdje hoćeš da spustiš djelić. Takođe, možeš da "
 "koristiš tastere sa strelicama da pomjeriš dio lijevo ili desno, a strelicu "
 "na dolje ili taster za razmak da bi spustio dio."
+
+#: activities/tic_tac_toe/ActivityInfo.qml:28
+msgctxt "ActivityInfo|"
+msgid "Tux will play better when you increase the level."
+msgstr ""
 
 #. Activity title
 #: activities/tic_tac_toe_2players/ActivityInfo.qml:18

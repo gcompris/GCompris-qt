@@ -1185,7 +1185,9 @@ msgstr ""
 "Joacă cu un prieten. Faceți clic pe rând pe linia pe care vrei să așezi "
 "jetonul. Câștigă jucătorul care reușește primul să creeze o linie de 4."
 
-#: activities/align4/ActivityInfo.qml:23
+#: activities/align4/ActivityInfo.qml:23 activities/bargame/ActivityInfo.qml:26
+#: activities/checkers/ActivityInfo.qml:27
+#: activities/nine_men_morris/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid ""
 "You can use the arrow buttons to manually select the difficulty level. Tux "
@@ -2731,14 +2733,6 @@ msgstr ""
 "butonul de OK pentru a plasa bilele în găuri. Câștigi dacă sistemul de "
 "calcul e nevoit să plaseze ultima bilă. Dacă vrei să înceapă Tux, fă clic pe "
 "el."
-
-#: activities/bargame/ActivityInfo.qml:26
-#: activities/checkers/ActivityInfo.qml:27
-#: activities/nine_men_morris/ActivityInfo.qml:25
-#: activities/tic_tac_toe/ActivityInfo.qml:28
-msgctxt "ActivityInfo|"
-msgid "Tux will play better when you increase the level."
-msgstr ""
 
 #. Activity title
 #: activities/bargame_2players/ActivityInfo.qml:15
@@ -26139,6 +26133,11 @@ msgstr ""
 "Joacă cu un prieten. Faceți clic pe rând pe pătrate pentru a vă pune "
 "simbolurile de X și 0. Câștigă primul jucător care reușește să creeze o "
 "linie de trei simboluri."
+
+#: activities/tic_tac_toe/ActivityInfo.qml:28
+msgctxt "ActivityInfo|"
+msgid "Tux will play better when you increase the level."
+msgstr ""
 
 #. Activity title
 #: activities/tic_tac_toe_2players/ActivityInfo.qml:18

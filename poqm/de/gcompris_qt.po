@@ -1195,7 +1195,9 @@ msgstr ""
 "Spielstein ablegen möchtest. Der erste Spieler mit 4 Steinen in einer Reihe "
 "gewinnt."
 
-#: activities/align4/ActivityInfo.qml:23
+#: activities/align4/ActivityInfo.qml:23 activities/bargame/ActivityInfo.qml:26
+#: activities/checkers/ActivityInfo.qml:27
+#: activities/nine_men_morris/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid ""
 "You can use the arrow buttons to manually select the difficulty level. Tux "
@@ -2693,14 +2695,6 @@ msgstr ""
 "Klicke auf das Ballsymbol, um die Anzahl der Bälle zu wählen. Klicke dann "
 "auf den Knopf OK, um Bälle in die Löcher zu legen. Du gewinnst, wenn der "
 "Rechner den letzten Ball ablegen muss. Soll Tux anfangen, klicke auf ihn."
-
-#: activities/bargame/ActivityInfo.qml:26
-#: activities/checkers/ActivityInfo.qml:27
-#: activities/nine_men_morris/ActivityInfo.qml:25
-#: activities/tic_tac_toe/ActivityInfo.qml:28
-msgctxt "ActivityInfo|"
-msgid "Tux will play better when you increase the level."
-msgstr ""
 
 #. Activity title
 #: activities/bargame_2players/ActivityInfo.qml:15
@@ -25495,6 +25489,11 @@ msgstr ""
 "Spiele mit einem Freund Klicke die Position in der Reihe, in der du einen "
 "Spielstein ablegen möchtest. Der erste Spieler mit 3 Steinen in einer Reihe "
 "gewinnt."
+
+#: activities/tic_tac_toe/ActivityInfo.qml:28
+msgctxt "ActivityInfo|"
+msgid "Tux will play better when you increase the level."
+msgstr ""
 
 #. Activity title
 #: activities/tic_tac_toe_2players/ActivityInfo.qml:18

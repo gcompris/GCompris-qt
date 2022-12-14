@@ -11,7 +11,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=gcompris&keywords=I18N+L10N&component=general\n"
 "POT-Creation-Date: 2014-11-09 17:30+0000\n"
-"PO-Revision-Date: 2022-12-08 07:00+0200\n"
+"PO-Revision-Date: 2022-12-13 15:02+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
 "Language: uk\n"
@@ -1185,12 +1185,16 @@ msgstr ""
 "Зіграйте із Туксом. Клацніть на лінії, на яку слід скинути позначку. Виграє "
 "той з гравців, хто першим створить пряму лінію з чотирьох своїх позначок."
 
-#: activities/align4/ActivityInfo.qml:23
+#: activities/align4/ActivityInfo.qml:23 activities/bargame/ActivityInfo.qml:26
+#: activities/checkers/ActivityInfo.qml:27
+#: activities/nine_men_morris/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid ""
 "You can use the arrow buttons to manually select the difficulty level. Tux "
 "will play better when you increase the level."
 msgstr ""
+"Ви можете скористатися кнопками зі стрілками, щоб вибрати рівень складності "
+"вручну. Якщо ви збільшите рівень, Тукс гратиме краще."
 
 #: activities/align4/ActivityInfo.qml:25
 #: activities/align4_2players/ActivityInfo.qml:24
@@ -2665,14 +2669,6 @@ msgstr ""
 "кнопку «Гаразд» і розташуйте кульки у ямках. Ви виграєте, якщо змусите Тукса "
 "покласти останню кульку. Якщо хочете, щоб гру розпочав Тукс, натисніть його "
 "зображення."
-
-#: activities/bargame/ActivityInfo.qml:26
-#: activities/checkers/ActivityInfo.qml:27
-#: activities/nine_men_morris/ActivityInfo.qml:25
-#: activities/tic_tac_toe/ActivityInfo.qml:28
-msgctxt "ActivityInfo|"
-msgid "Tux will play better when you increase the level."
-msgstr "Тукс гратиме краще, якщо ви збільшите рівень."
 
 #. Activity title
 #: activities/bargame_2players/ActivityInfo.qml:15
@@ -24756,41 +24752,30 @@ msgstr "Максимальне значення: 500000."
 
 #. Activity title
 #: activities/tens_complement_find/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "instruments|"
-#| msgid "Find the trumpet"
 msgctxt "ActivityInfo|"
 msgid "Find ten's complement"
-msgstr "Знайдіть трубу"
+msgstr "Знайдіть доповнення до десяти"
 
 #. Help title
 #: activities/tens_complement_find/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Find the ten's complement of each number."
-msgstr ""
+msgstr "Знайдіть доповнення кожного з чисел до десяти."
 
 #. Help goal
 #: activities/tens_complement_find/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Learn to find ten's complement."
-msgstr ""
+msgstr "Вивчення доповнення до десяти."
 
 #. Help prerequisite
 #: activities/tens_complement_find/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 1 to 1 billion."
 msgctxt "ActivityInfo|"
 msgid "Numbers from 1 to 10 and additions."
-msgstr "Числа від 1 до мільярда."
+msgstr "Числа від 1 до 10 і додавання."
 
 #: activities/tens_complement_find/ActivityInfo.qml:23
 #: activities/tens_complement_use/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "If some answers are incorrect, a cross icon will appear on the "
-#| "corresponding lines. Correct the errors, then select the OK button again."
 msgctxt "ActivityInfo|"
 msgid ""
 "When all the lines are completed, press the OK button to validate the "
@@ -24798,8 +24783,10 @@ msgid ""
 "corresponding lines. To correct the errors, click on the wrong numbers to "
 "remove them and repeat the previous steps."
 msgstr ""
-"Якщо відповіді є неправильними, на відповідних рядках буде показано значок "
-"хрестика. Виправте помилки, потім натисніть кнопку «Гаразд» ще раз."
+"Коли усі рядки буде заповнено, натисніть кнопку «Гаразд», щоб перевірити "
+"результати. Якщо якісь відповіді будуть помилковими, у відповідних рядка "
+"буде показано хрестик. Щоб виправити помилки, натисніть помилкові числа, щоб "
+"вилучити їх і повторіть попередні кроки."
 
 #. Help manual
 #: activities/tens_complement_find/ActivityInfo.qml:23
@@ -24808,42 +24795,35 @@ msgid ""
 "Create pairs of numbers equal to ten. Select a number in the list, then "
 "select an empty spot of an operation to move the selected number there."
 msgstr ""
+"Створіть пари чисел, які разом складають десять. Виберіть число зі списку, "
+"потім виберіть порожнє місце у дії, що пересунути вибране число на це місце."
 
 #: activities/tens_complement_find/resource/1/Data.qml:25
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 1 to 9."
 msgctxt "Data|"
 msgid "First number from 1 to 4."
-msgstr "Числа від 1 до 9."
+msgstr "Перше число від 1 до 4."
 
 #: activities/tens_complement_find/resource/2/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 1 to 9."
 msgctxt "Data|"
 msgid "First number from 5 to 9."
-msgstr "Числа від 1 до 9."
+msgstr "Перше число від 5 до 9."
 
 #: activities/tens_complement_find/resource/4/Data.qml:9
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Division of numbers"
 msgctxt "Data|"
 msgid "Find both numbers."
-msgstr "Ділення чисел"
+msgstr "Знайдіть обидва числа."
 
 #. Activity title
 #: activities/tens_complement_swap/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Swap ten's complement"
-msgstr ""
+msgstr "Обмін доповнень до десяти"
 
 #. Help title
 #: activities/tens_complement_swap/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Swap the numbers to create pairs equal to ten."
-msgstr ""
+msgstr "Поміняйте місцями числа, створивши пари, які разом складають десять."
 
 #. Help goal
 #: activities/tens_complement_swap/ActivityInfo.qml:19
@@ -24852,15 +24832,14 @@ msgid ""
 "Learn to use ten's complement to optimize the order of numbers in an "
 "operation."
 msgstr ""
+"Вивчення використання доповнення до десяти для оптимізації порядку чисел у "
+"дії."
 
 #. Help prerequisite
 #: activities/tens_complement_swap/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 1 to 1 billion."
 msgctxt "ActivityInfo|"
 msgid "Numbers from 1 to 30 and additions."
-msgstr "Числа від 1 до мільярда."
+msgstr "Числа від 1 до 30 і додавання."
 
 #. Help manual
 #: activities/tens_complement_swap/ActivityInfo.qml:23
@@ -24872,57 +24851,50 @@ msgid ""
 "the answers. If some answers are incorrect, a cross icon will appear on the "
 "corresponding lines. Correct the errors, then press the OK button again."
 msgstr ""
+"Створіть пари чисел, які разом складають десять у кожній з дужок. Виберіть "
+"число, потім виберіть інше число у дій самій дії, щоб поміняти їх місцями. "
+"Коли буде завершено усі рядки, натисніть кнопку «Гаразд», щоб перевірити "
+"відповіді. Якщо якісь з відповідей будуть помилковими, у відповідних рядках "
+"буде показано хрестик. Виправте помилки і натисніть кнопку «Гаразд» ще раз."
 
 #: activities/tens_complement_swap/resource/1/Data.qml:36
-#, fuzzy
-#| msgctxt "Warning|"
-#| msgid "1 is not a prime number."
 msgctxt "Data|"
 msgid "2 pairs to make from 4 numbers."
-msgstr "1 не є простим числом."
+msgstr "Дві пари з 4 чисел."
 
 #: activities/tens_complement_swap/resource/2/Data.qml:9
-#, fuzzy
-#| msgctxt "Warning|"
-#| msgid "1 is not a prime number."
 msgctxt "Data|"
 msgid "2 pairs to make from 5 numbers."
-msgstr "1 не є простим числом."
+msgstr "Дві пари з 5 чисел."
 
 #: activities/tens_complement_swap/resource/3/Data.qml:9
-#, fuzzy
-#| msgctxt "Warning|"
-#| msgid "1 is not a prime number."
 msgctxt "Data|"
 msgid "3 pairs to make from 6 numbers."
-msgstr "1 не є простим числом."
+msgstr "3 пари з 6 чисел."
 
 #. Activity title
 #: activities/tens_complement_use/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Use ten's complement"
-msgstr ""
+msgstr "Використання доповнення до десяти"
 
 #. Help title
 #: activities/tens_complement_use/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Use a ten's complement to simplify the operation."
-msgstr ""
+msgstr "Скористайтеся доповненням до десяти, щоб спростити дію."
 
 #. Help goal
 #: activities/tens_complement_use/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Learn a practical use of ten's complement."
-msgstr ""
+msgstr "Вивчення практичного застосування доповнення до десяти."
 
 #. Help prerequisite
 #: activities/tens_complement_use/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 1 to 1 billion."
 msgctxt "ActivityInfo|"
 msgid "Numbers from 1 to 50 and additions."
-msgstr "Числа від 1 до мільярда."
+msgstr "Числа від 1 до 50 і додавання."
 
 #. Help manual
 #: activities/tens_complement_use/ActivityInfo.qml:23
@@ -24932,30 +24904,24 @@ msgid ""
 "parentheses. Select a number in the list, then select an empty spot of an "
 "operation to move the selected number there."
 msgstr ""
+"Розкладіть додавання, створивши пари чисел, які разом складають десять у "
+"кожній з дужок. Виберіть число зі списку, потім виберіть порожнє місце у "
+"дії, що пересунути вибране число на це місце."
 
 #: activities/tens_complement_use/resource/1/Data.qml:43
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Between 1 and 10."
 msgctxt "Data|"
 msgid "Result between 11 and 19."
-msgstr "Від 1 до 10."
+msgstr "Результат від 11 до 19."
 
 #: activities/tens_complement_use/resource/2/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Result between 20 and 29."
-msgstr "Числа від %1 до %2."
+msgstr "Результат від 20 до 29."
 
 #: activities/tens_complement_use/resource/3/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Between 20 and 50."
 msgctxt "Data|"
 msgid "Result between 30 and 50."
-msgstr "Від 20 до 50."
+msgstr "Результат від 30 до 50."
 
 #. Activity title
 #: activities/tic_tac_toe/ActivityInfo.qml:18
@@ -24990,6 +24956,11 @@ msgid ""
 msgstr ""
 "Зіграйте із Туксом. Клацніть на полі, де слід розташувати позначку. Виграє "
 "той з гравців, хто першим створить пряму лінію з чотирьох своїх позначок."
+
+#: activities/tic_tac_toe/ActivityInfo.qml:28
+msgctxt "ActivityInfo|"
+msgid "Tux will play better when you increase the level."
+msgstr "Тукс гратиме краще, якщо ви збільшите рівень."
 
 #. Activity title
 #: activities/tic_tac_toe_2players/ActivityInfo.qml:18

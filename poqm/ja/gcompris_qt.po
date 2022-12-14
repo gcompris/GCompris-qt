@@ -1174,7 +1174,9 @@ msgstr ""
 "友達と遊びます。自分の順番が来たらコマを落としたい列をクリックします。最初に4"
 "つ並べた方が勝ちです。"
 
-#: activities/align4/ActivityInfo.qml:23
+#: activities/align4/ActivityInfo.qml:23 activities/bargame/ActivityInfo.qml:26
+#: activities/checkers/ActivityInfo.qml:27
+#: activities/nine_men_morris/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid ""
 "You can use the arrow buttons to manually select the difficulty level. Tux "
@@ -2594,14 +2596,6 @@ msgstr ""
 "中にボールを置きます。コンピュータが最後のボールを置かなければならなくなった"
 "らあなたの勝ちです。もしタックスに先において欲しいときは、タックスを押してく"
 "ださい。"
-
-#: activities/bargame/ActivityInfo.qml:26
-#: activities/checkers/ActivityInfo.qml:27
-#: activities/nine_men_morris/ActivityInfo.qml:25
-#: activities/tic_tac_toe/ActivityInfo.qml:28
-msgctxt "ActivityInfo|"
-msgid "Tux will play better when you increase the level."
-msgstr ""
 
 #. Activity title
 #: activities/bargame_2players/ActivityInfo.qml:15
@@ -24041,6 +24035,11 @@ msgid ""
 msgstr ""
 "友達と遊びます。順番が来たらマークを置きたい四角の場所をクリックします。3つの"
 "マークを最初に1列に並べた方が勝ちです。"
+
+#: activities/tic_tac_toe/ActivityInfo.qml:28
+msgctxt "ActivityInfo|"
+msgid "Tux will play better when you increase the level."
+msgstr ""
 
 #. Activity title
 #: activities/tic_tac_toe_2players/ActivityInfo.qml:18

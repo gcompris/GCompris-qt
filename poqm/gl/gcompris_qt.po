@@ -1303,7 +1303,9 @@ msgstr ""
 "Xoga contra un amigo. Por quendas, premede a caixa que queirades marcar. "
 "Gaña o primeiro xogador que consiga crear unha liña de 3 marcas."
 
-#: activities/align4/ActivityInfo.qml:23
+#: activities/align4/ActivityInfo.qml:23 activities/bargame/ActivityInfo.qml:26
+#: activities/checkers/ActivityInfo.qml:27
+#: activities/nine_men_morris/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid ""
 "You can use the arrow buttons to manually select the difficulty level. Tux "
@@ -2738,14 +2740,6 @@ msgid ""
 msgstr ""
 "Coloca bólas nos buratos. Gañas se o computador ten que colocar a última "
 "bóla. Preme a Tux se queres que comece."
-
-#: activities/bargame/ActivityInfo.qml:26
-#: activities/checkers/ActivityInfo.qml:27
-#: activities/nine_men_morris/ActivityInfo.qml:25
-#: activities/tic_tac_toe/ActivityInfo.qml:28
-msgctxt "ActivityInfo|"
-msgid "Tux will play better when you increase the level."
-msgstr ""
 
 #. Activity title
 #: activities/bargame_2players/ActivityInfo.qml:15
@@ -27896,6 +27890,11 @@ msgid ""
 msgstr ""
 "Xoga contra un amigo. Por quendas, premede a caixa que queirades marcar. "
 "Gaña o primeiro xogador que consiga crear unha liña de 3 marcas."
+
+#: activities/tic_tac_toe/ActivityInfo.qml:28
+msgctxt "ActivityInfo|"
+msgid "Tux will play better when you increase the level."
+msgstr ""
 
 #. Activity title
 #: activities/tic_tac_toe_2players/ActivityInfo.qml:18

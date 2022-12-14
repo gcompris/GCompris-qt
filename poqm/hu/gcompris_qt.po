@@ -1182,7 +1182,9 @@ msgstr ""
 "Játék egy másik személlyel. Felváltva léptek, kattins arra a négyzetre "
 "amelyikbe tenni szeretnél. Az első, aki három jelet rak le egy sorba, nyer."
 
-#: activities/align4/ActivityInfo.qml:23
+#: activities/align4/ActivityInfo.qml:23 activities/bargame/ActivityInfo.qml:26
+#: activities/checkers/ActivityInfo.qml:27
+#: activities/nine_men_morris/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid ""
 "You can use the arrow buttons to manually select the difficulty level. Tux "
@@ -2638,14 +2640,6 @@ msgid ""
 msgstr ""
 "Helyezd a golyókat a lyukakba! Ha a számítógépnek kell utoljára raknia, "
 "nyertél. Ha azt akarod, hogy Tux kezdjen, kattints rá!"
-
-#: activities/bargame/ActivityInfo.qml:26
-#: activities/checkers/ActivityInfo.qml:27
-#: activities/nine_men_morris/ActivityInfo.qml:25
-#: activities/tic_tac_toe/ActivityInfo.qml:28
-msgctxt "ActivityInfo|"
-msgid "Tux will play better when you increase the level."
-msgstr ""
 
 #. Activity title
 #: activities/bargame_2players/ActivityInfo.qml:15
@@ -24883,6 +24877,11 @@ msgid ""
 msgstr ""
 "Játék egy másik személlyel. Felváltva léptek, kattins arra a négyzetre "
 "amelyikbe tenni szeretnél. Az első aki négy jelet rak le egy sorba, nyer."
+
+#: activities/tic_tac_toe/ActivityInfo.qml:28
+msgctxt "ActivityInfo|"
+msgid "Tux will play better when you increase the level."
+msgstr ""
 
 #. Activity title
 #: activities/tic_tac_toe_2players/ActivityInfo.qml:18

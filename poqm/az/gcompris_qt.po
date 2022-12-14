@@ -1172,7 +1172,9 @@ msgstr ""
 "Tuks ilə oyna. Düymə atmaq istədiyiniz sətirə növbə ilə vurun. 4 düymədən "
 "ibarət sətir yaradan ilk oyunçu qalib gəlir."
 
-#: activities/align4/ActivityInfo.qml:23
+#: activities/align4/ActivityInfo.qml:23 activities/bargame/ActivityInfo.qml:26
+#: activities/checkers/ActivityInfo.qml:27
+#: activities/nine_men_morris/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid ""
 "You can use the arrow buttons to manually select the difficulty level. Tux "
@@ -2627,14 +2629,6 @@ msgstr ""
 "yerləşdirmək üçün OLDU düyməsinə vurun. Əgər sonuncu topu Tuks atarsa siz "
 "qalib olursunuz. Oyunu Tuks'un başlamasını istəyirsinizsə sadəcə onun "
 "üzərinə vurun."
-
-#: activities/bargame/ActivityInfo.qml:26
-#: activities/checkers/ActivityInfo.qml:27
-#: activities/nine_men_morris/ActivityInfo.qml:25
-#: activities/tic_tac_toe/ActivityInfo.qml:28
-msgctxt "ActivityInfo|"
-msgid "Tux will play better when you increase the level."
-msgstr "Səviyyə artdıqca Tuks daha yaxşı oynayacaq"
 
 #. Activity title
 #: activities/bargame_2players/ActivityInfo.qml:15
@@ -24830,6 +24824,11 @@ msgid ""
 msgstr ""
 "Tuks ilə oynayın Öz gedişinizdə işarə qoymaq istədiyiniz xananı vurun. Bir "
 "sırada ilk üç işarəni birinci yerləşdirə bilən oyunu qazanır."
+
+#: activities/tic_tac_toe/ActivityInfo.qml:28
+msgctxt "ActivityInfo|"
+msgid "Tux will play better when you increase the level."
+msgstr "Səviyyə artdıqca Tuks daha yaxşı oynayacaq"
 
 #. Activity title
 #: activities/tic_tac_toe_2players/ActivityInfo.qml:18

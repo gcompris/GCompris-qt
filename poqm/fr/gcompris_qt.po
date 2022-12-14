@@ -1189,7 +1189,9 @@ msgstr ""
 "le jeton à gauche ou à droite, et la touche flèche bas ou la barre espace "
 "pour faire tomber le jeton. Le premier qui aligne 4 jetons a gagné."
 
-#: activities/align4/ActivityInfo.qml:23
+#: activities/align4/ActivityInfo.qml:23 activities/bargame/ActivityInfo.qml:26
+#: activities/checkers/ActivityInfo.qml:27
+#: activities/nine_men_morris/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid ""
 "You can use the arrow buttons to manually select the difficulty level. Tux "
@@ -2686,14 +2688,6 @@ msgstr ""
 "dans le trou marqué en rouge).\n"
 "Si tu veux que ce soit Tux qui joue en premier, clique lui dessus dès le "
 "début."
-
-#: activities/bargame/ActivityInfo.qml:26
-#: activities/checkers/ActivityInfo.qml:27
-#: activities/nine_men_morris/ActivityInfo.qml:25
-#: activities/tic_tac_toe/ActivityInfo.qml:28
-msgctxt "ActivityInfo|"
-msgid "Tux will play better when you increase the level."
-msgstr ""
 
 #. Activity title
 #: activities/bargame_2players/ActivityInfo.qml:15
@@ -25397,6 +25391,11 @@ msgstr ""
 "un jeton. Tu peux aussi utiliser les touches flèches pour déplacer le jeton "
 "à gauche ou à droite, et la touche flèche bas ou la barre espace pour faire "
 "tomber le jeton. Le premier qui aligne trois jetons a gagné."
+
+#: activities/tic_tac_toe/ActivityInfo.qml:28
+msgctxt "ActivityInfo|"
+msgid "Tux will play better when you increase the level."
+msgstr ""
 
 #. Activity title
 #: activities/tic_tac_toe_2players/ActivityInfo.qml:18

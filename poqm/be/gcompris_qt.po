@@ -1268,7 +1268,9 @@ msgstr ""
 "Гуляйце з сябрам. Па чарзе пстрыкайце па квадраціках, у якія хочаце пакласці "
 "фішку. Пераможа той, хто першым утворыць радок з чатырох фішак."
 
-#: activities/align4/ActivityInfo.qml:23
+#: activities/align4/ActivityInfo.qml:23 activities/bargame/ActivityInfo.qml:26
+#: activities/checkers/ActivityInfo.qml:27
+#: activities/nine_men_morris/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid ""
 "You can use the arrow buttons to manually select the difficulty level. Tux "
@@ -2821,14 +2823,6 @@ msgstr ""
 "ОК, каб размясціць мячыкі ў дзіркі. Вы пераможаце калі кампутару прыйдзецца "
 "пакласці апошні мячык. Калі вы хочаце каб пачаў Tux, то проста пстрыкніце па "
 "яму."
-
-#: activities/bargame/ActivityInfo.qml:26
-#: activities/checkers/ActivityInfo.qml:27
-#: activities/nine_men_morris/ActivityInfo.qml:25
-#: activities/tic_tac_toe/ActivityInfo.qml:28
-msgctxt "ActivityInfo|"
-msgid "Tux will play better when you increase the level."
-msgstr ""
 
 #. Activity title
 #: activities/bargame_2players/ActivityInfo.qml:15
@@ -25875,6 +25869,11 @@ msgid ""
 msgstr ""
 "Гульня з сябрам. Падчас свайго ходу, пстрыкайце па квадраціках, якія хочаце "
 "пазначыць. Пераможа той, хто першым ўтворыць радок з трох знакаў."
+
+#: activities/tic_tac_toe/ActivityInfo.qml:28
+msgctxt "ActivityInfo|"
+msgid "Tux will play better when you increase the level."
+msgstr ""
 
 #. Activity title
 #: activities/tic_tac_toe_2players/ActivityInfo.qml:18

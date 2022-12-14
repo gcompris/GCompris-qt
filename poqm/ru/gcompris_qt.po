@@ -1201,7 +1201,9 @@ msgstr ""
 "Игра вдвоём. В свой ход нажми прямоугольник, в который нужно поместить "
 "шарик. Выигрывает игрок, который первым создаст ряд из четырёх своих шариков."
 
-#: activities/align4/ActivityInfo.qml:23
+#: activities/align4/ActivityInfo.qml:23 activities/bargame/ActivityInfo.qml:26
+#: activities/checkers/ActivityInfo.qml:27
+#: activities/nine_men_morris/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid ""
 "You can use the arrow buttons to manually select the difficulty level. Tux "
@@ -2671,14 +2673,6 @@ msgstr ""
 "Нажми значок шара, чтобы выбрать количество шаров, а затем кнопку «ОК», "
 "чтобы поместить шары в ячейки. Если Тукс будет вынужден положить последний "
 "шарик, победа твоя! Чтобы Тукс сделал первый ход, щёлкни по нему."
-
-#: activities/bargame/ActivityInfo.qml:26
-#: activities/checkers/ActivityInfo.qml:27
-#: activities/nine_men_morris/ActivityInfo.qml:25
-#: activities/tic_tac_toe/ActivityInfo.qml:28
-msgctxt "ActivityInfo|"
-msgid "Tux will play better when you increase the level."
-msgstr ""
 
 #. Activity title
 #: activities/bargame_2players/ActivityInfo.qml:15
@@ -25119,6 +25113,11 @@ msgstr ""
 "Игра вдвоём. В свой ход нажми прямоугольник, в который нужно поставить "
 "крестик или нолик. Выигрывает игрок, который первым создаст ряд из трёх "
 "своих пометок."
+
+#: activities/tic_tac_toe/ActivityInfo.qml:28
+msgctxt "ActivityInfo|"
+msgid "Tux will play better when you increase the level."
+msgstr ""
 
 #. Activity title
 #: activities/tic_tac_toe_2players/ActivityInfo.qml:18

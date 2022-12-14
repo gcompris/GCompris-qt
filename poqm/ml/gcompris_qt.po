@@ -1179,7 +1179,9 @@ msgstr ""
 "സുഹൃത്തിന്റെ കൂടെ കളിക്കൂ. മാറി മാറി നിങ്ങൾക്കു വേണ്ട കളത്തിൽ ക്ലിക്ക് ചെയ്ത് മാർക്ക് ചെയ്യൂ. 4 "
 "മാർക്കുകളുടെ ഒരു വരി ആദ്യം നിർമ്മിക്കുന്ന ആൾ ജയിക്കും."
 
-#: activities/align4/ActivityInfo.qml:23
+#: activities/align4/ActivityInfo.qml:23 activities/bargame/ActivityInfo.qml:26
+#: activities/checkers/ActivityInfo.qml:27
+#: activities/nine_men_morris/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid ""
 "You can use the arrow buttons to manually select the difficulty level. Tux "
@@ -2612,14 +2614,6 @@ msgstr ""
 "പന്തിന്റെ ഐക്കണിൽ ക്ലിക്കു ചെയ്ത് പന്തുകളുടെ എണ്ണം തിരഞ്ഞെടുക്കുക, എന്നിട്ട് ഒകെ ബട്ടണിൽ ക്ലിക്കു "
 "ചെയ്ത് പന്തുകൾ കുഴികളിൽ ഇടാവുന്നതാണ്. കംപ്യൂട്ടറാണ് അവസാനത്തെ പന്ത് ഇടുന്നതെങ്കിൽ നിങ്ങൾ ജയിച്ചു. "
 "ടക്സിൽ ക്ലിക്ക് ചെയ്താൽ, ടക്സ് കളി തുടങ്ങും."
-
-#: activities/bargame/ActivityInfo.qml:26
-#: activities/checkers/ActivityInfo.qml:27
-#: activities/nine_men_morris/ActivityInfo.qml:25
-#: activities/tic_tac_toe/ActivityInfo.qml:28
-msgctxt "ActivityInfo|"
-msgid "Tux will play better when you increase the level."
-msgstr ""
 
 #. Activity title
 #: activities/bargame_2players/ActivityInfo.qml:15
@@ -24747,6 +24741,11 @@ msgid ""
 msgstr ""
 "സുഹൃത്തിന്റെ കൂടെ കളിക്കൂ. മാറി മാറി നിങ്ങൾക്കു വേണ്ട കളത്തിൽ ക്ലിക്ക് ചെയ്ത് മാർക്ക് ചെയ്യൂ. 3 "
 "മാർക്കുകളുള്ള ഒരു വരി ആദ്യം നിർമ്മിക്കുന്ന ആൾ വിജയി."
+
+#: activities/tic_tac_toe/ActivityInfo.qml:28
+msgctxt "ActivityInfo|"
+msgid "Tux will play better when you increase the level."
+msgstr ""
 
 #. Activity title
 #: activities/tic_tac_toe_2players/ActivityInfo.qml:18

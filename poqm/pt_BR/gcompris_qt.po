@@ -1218,7 +1218,9 @@ msgstr ""
 "deseja soltar a peça. O primeiro jogador que criar uma linha de 4 peças, "
 "vence."
 
-#: activities/align4/ActivityInfo.qml:23
+#: activities/align4/ActivityInfo.qml:23 activities/bargame/ActivityInfo.qml:26
+#: activities/checkers/ActivityInfo.qml:27
+#: activities/nine_men_morris/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid ""
 "You can use the arrow buttons to manually select the difficulty level. Tux "
@@ -2714,14 +2716,6 @@ msgstr ""
 "no botão OK para colocar essas bolas nos buracos. Você ganha se o computador "
 "tiver que colocar a última bola (no buraco vermelho). Caso você queira que o "
 "Tux comece, é só clicar nele."
-
-#: activities/bargame/ActivityInfo.qml:26
-#: activities/checkers/ActivityInfo.qml:27
-#: activities/nine_men_morris/ActivityInfo.qml:25
-#: activities/tic_tac_toe/ActivityInfo.qml:28
-msgctxt "ActivityInfo|"
-msgid "Tux will play better when you increase the level."
-msgstr ""
 
 # O nome "Jogo das Bolas" deve-se ao fato dessa ser a tradução que era utilizada originalmente na versão GTK do GCompris, já estando consolidada. (Frederico)
 #. Activity title
@@ -25272,6 +25266,11 @@ msgstr ""
 "Jogue com um amigo. Cada um tem a sua vez de jogar. No seu turno, cada "
 "jogador deve clicar no campo que deseja marcar. O primeiro jogador a colocar "
 "três marcas em uma linha ganha."
+
+#: activities/tic_tac_toe/ActivityInfo.qml:28
+msgctxt "ActivityInfo|"
+msgid "Tux will play better when you increase the level."
+msgstr ""
 
 #. Activity title
 #: activities/tic_tac_toe_2players/ActivityInfo.qml:18

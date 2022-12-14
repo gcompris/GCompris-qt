@@ -1326,7 +1326,9 @@ msgstr ""
 "Hrajte s priateľom. Striedajte sa pri klikaní na štvorec, ktorý chcete "
 "označiť. Prvý hráč, ktorý vytvorí líniu z 3 značiek, vyhráva"
 
-#: activities/align4/ActivityInfo.qml:23
+#: activities/align4/ActivityInfo.qml:23 activities/bargame/ActivityInfo.qml:26
+#: activities/checkers/ActivityInfo.qml:27
+#: activities/nine_men_morris/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid ""
 "You can use the arrow buttons to manually select the difficulty level. Tux "
@@ -2816,14 +2818,6 @@ msgid ""
 msgstr ""
 "Umiestnite lopty do dier. Vyhráte, ak počítač musí umiestniť poslednú loptu. "
 "Ak chcete, aby Tux začal, kliknite naňho."
-
-#: activities/bargame/ActivityInfo.qml:26
-#: activities/checkers/ActivityInfo.qml:27
-#: activities/nine_men_morris/ActivityInfo.qml:25
-#: activities/tic_tac_toe/ActivityInfo.qml:28
-msgctxt "ActivityInfo|"
-msgid "Tux will play better when you increase the level."
-msgstr ""
 
 #. Activity title
 #: activities/bargame_2players/ActivityInfo.qml:15
@@ -28833,6 +28827,11 @@ msgid ""
 msgstr ""
 "Hrajte s priateľom. Striedajte sa pri klikaní na štvorec, ktorý chcete "
 "označiť. Prvý hráč, ktorý vytvorí líniu z 3 značiek, vyhráva"
+
+#: activities/tic_tac_toe/ActivityInfo.qml:28
+msgctxt "ActivityInfo|"
+msgid "Tux will play better when you increase the level."
+msgstr ""
 
 #. Activity title
 #: activities/tic_tac_toe_2players/ActivityInfo.qml:18

@@ -1183,7 +1183,9 @@ msgstr ""
 "Pelaa kaveria vastaan. Napsauttakaa kukin vuorollaan ruutua, jonka haluatte "
 "merkitä. Pelaaja, joka ensimmäisenä saa meljä merkkiä riviin voittaa."
 
-#: activities/align4/ActivityInfo.qml:23
+#: activities/align4/ActivityInfo.qml:23 activities/bargame/ActivityInfo.qml:26
+#: activities/checkers/ActivityInfo.qml:27
+#: activities/nine_men_morris/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid ""
 "You can use the arrow buttons to manually select the difficulty level. Tux "
@@ -2629,14 +2631,6 @@ msgstr ""
 "Napsauta pallokuvaketta valitaksesi määrä palloja ja napsauta sitten OK-"
 "painiketta asettaaksesi pallot reikiin. Voitat, jos tietokoneen on "
 "asetettava viimeinen pallo. Jos haluat Tuxin aloittavan, napsauta häntä."
-
-#: activities/bargame/ActivityInfo.qml:26
-#: activities/checkers/ActivityInfo.qml:27
-#: activities/nine_men_morris/ActivityInfo.qml:25
-#: activities/tic_tac_toe/ActivityInfo.qml:28
-msgctxt "ActivityInfo|"
-msgid "Tux will play better when you increase the level."
-msgstr ""
 
 #. Activity title
 #: activities/bargame_2players/ActivityInfo.qml:15
@@ -25119,6 +25113,11 @@ msgid ""
 msgstr ""
 "Pelaa kaveria vastaan. Napsauttakaa kukin vuorollaan ruutua, jonka haluatte "
 "merkitä. Pelaaja, joka ensimmäisenä saa kolme merkkiä riviin, voittaa."
+
+#: activities/tic_tac_toe/ActivityInfo.qml:28
+msgctxt "ActivityInfo|"
+msgid "Tux will play better when you increase the level."
+msgstr ""
 
 #. Activity title
 #: activities/tic_tac_toe_2players/ActivityInfo.qml:18

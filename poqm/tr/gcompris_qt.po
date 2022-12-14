@@ -1180,7 +1180,9 @@ msgstr ""
 "Bir arkadaş ile oyna. Jetonu bırakmak istediğin satıra tıkla. 4 jeton ile "
 "bir sıra oluşturan ilk kişi kazanır."
 
-#: activities/align4/ActivityInfo.qml:23
+#: activities/align4/ActivityInfo.qml:23 activities/bargame/ActivityInfo.qml:26
+#: activities/checkers/ActivityInfo.qml:27
+#: activities/nine_men_morris/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid ""
 "You can use the arrow buttons to manually select the difficulty level. Tux "
@@ -2693,14 +2695,6 @@ msgstr ""
 "Bir top numarası seçmek için top simgesine tıkla, ardından topları deliklere "
 "yerleştirmek için Tamam düğmesine tıkla. Kazanman için son topu Tux'un "
 "yerleştirmesi gerek. Tux'un başlamasını istiyorsan, ona tıklaman yeterlidir."
-
-#: activities/bargame/ActivityInfo.qml:26
-#: activities/checkers/ActivityInfo.qml:27
-#: activities/nine_men_morris/ActivityInfo.qml:25
-#: activities/tic_tac_toe/ActivityInfo.qml:28
-msgctxt "ActivityInfo|"
-msgid "Tux will play better when you increase the level."
-msgstr ""
 
 #. Activity title
 #: activities/bargame_2players/ActivityInfo.qml:15
@@ -26072,6 +26066,11 @@ msgid ""
 msgstr ""
 "Bir arkadaşla oynamak. İşaretlemek istediğin kareyi sırayla tıkla. 3 puanlık "
 "bir çizgi oluşturan ilk oyuncu kazanır."
+
+#: activities/tic_tac_toe/ActivityInfo.qml:28
+msgctxt "ActivityInfo|"
+msgid "Tux will play better when you increase the level."
+msgstr ""
 
 #. Activity title
 #: activities/tic_tac_toe_2players/ActivityInfo.qml:18

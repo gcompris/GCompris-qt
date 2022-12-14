@@ -1175,7 +1175,9 @@ msgstr ""
 "Play with Tux. Take turns to click the line in which you want to drop a "
 "token. The first player to create a line of 4 tokens wins."
 
-#: activities/align4/ActivityInfo.qml:23
+#: activities/align4/ActivityInfo.qml:23 activities/bargame/ActivityInfo.qml:26
+#: activities/checkers/ActivityInfo.qml:27
+#: activities/nine_men_morris/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid ""
 "You can use the arrow buttons to manually select the difficulty level. Tux "
@@ -2622,14 +2624,6 @@ msgstr ""
 "Click on the ball icon to select a number of balls, then click on the OK "
 "button to place the balls in the holes. You win if Tux has to place the last "
 "ball. If you want Tux to begin, just click on him."
-
-#: activities/bargame/ActivityInfo.qml:26
-#: activities/checkers/ActivityInfo.qml:27
-#: activities/nine_men_morris/ActivityInfo.qml:25
-#: activities/tic_tac_toe/ActivityInfo.qml:28
-msgctxt "ActivityInfo|"
-msgid "Tux will play better when you increase the level."
-msgstr "Tux will play better when you increase the level."
 
 #. Activity title
 #: activities/bargame_2players/ActivityInfo.qml:15
@@ -24754,6 +24748,11 @@ msgid ""
 msgstr ""
 "Play with Tux. Take turns to click on the square which you want to mark. The "
 "first player to create a line of 3 marks wins."
+
+#: activities/tic_tac_toe/ActivityInfo.qml:28
+msgctxt "ActivityInfo|"
+msgid "Tux will play better when you increase the level."
+msgstr "Tux will play better when you increase the level."
 
 #. Activity title
 #: activities/tic_tac_toe_2players/ActivityInfo.qml:18

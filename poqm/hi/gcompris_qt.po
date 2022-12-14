@@ -1275,7 +1275,9 @@ msgstr ""
 "एक दोस्त के साथ खेलें। उस वर्ग पर क्लिक करने के लिए ले जाएं जिसे आप चिह्नित करना चाहते हैं। "
 "3 अंक जीतने वाली लाइन बनाने के लिए पहला खिलाड़ी विजेता होगा।"
 
-#: activities/align4/ActivityInfo.qml:23
+#: activities/align4/ActivityInfo.qml:23 activities/bargame/ActivityInfo.qml:26
+#: activities/checkers/ActivityInfo.qml:27
+#: activities/nine_men_morris/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid ""
 "You can use the arrow buttons to manually select the difficulty level. Tux "
@@ -2653,14 +2655,6 @@ msgid ""
 msgstr ""
 "गेंदों को छेद में रखें। अगर कंप्यूटर आखिरी गेंद रखता है तो आप जीतेंगे। यदि आप चाहते हैं की टक्स "
 "शुरू करे तो बस उस पर क्लिक करें।"
-
-#: activities/bargame/ActivityInfo.qml:26
-#: activities/checkers/ActivityInfo.qml:27
-#: activities/nine_men_morris/ActivityInfo.qml:25
-#: activities/tic_tac_toe/ActivityInfo.qml:28
-msgctxt "ActivityInfo|"
-msgid "Tux will play better when you increase the level."
-msgstr ""
 
 #. Activity title
 #: activities/bargame_2players/ActivityInfo.qml:15
@@ -27733,6 +27727,11 @@ msgid ""
 msgstr ""
 "एक दोस्त के साथ खेलें। उस वर्ग पर क्लिक करने के लिए ले जाएं जिसे आप चिह्नित करना चाहते हैं। "
 "3 अंक जीतने वाली लाइन बनाने के लिए पहला खिलाड़ी विजेता होगा।"
+
+#: activities/tic_tac_toe/ActivityInfo.qml:28
+msgctxt "ActivityInfo|"
+msgid "Tux will play better when you increase the level."
+msgstr ""
 
 #. Activity title
 #: activities/tic_tac_toe_2players/ActivityInfo.qml:18

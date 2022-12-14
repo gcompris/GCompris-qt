@@ -1198,7 +1198,9 @@ msgstr ""
 "Gioca con Tux. A turno, fai clic sulla riga in cui si desidera rilasciare un "
 "gettone. Il primo giocatore che crea una linea di 4 gettoni vince."
 
-#: activities/align4/ActivityInfo.qml:23
+#: activities/align4/ActivityInfo.qml:23 activities/bargame/ActivityInfo.qml:26
+#: activities/checkers/ActivityInfo.qml:27
+#: activities/nine_men_morris/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid ""
 "You can use the arrow buttons to manually select the difficulty level. Tux "
@@ -2685,14 +2687,6 @@ msgstr ""
 "Fai clic sull'icona della bilia per selezionare un numero di bilie, quindi "
 "fai clic sul pulsante OK per posizionare le bilie nei fori. Vinci se il Tux "
 "deve piazzare l'ultima bilia. Se vuoi che Tux inizi, fai clic su di lui."
-
-#: activities/bargame/ActivityInfo.qml:26
-#: activities/checkers/ActivityInfo.qml:27
-#: activities/nine_men_morris/ActivityInfo.qml:25
-#: activities/tic_tac_toe/ActivityInfo.qml:28
-msgctxt "ActivityInfo|"
-msgid "Tux will play better when you increase the level."
-msgstr "Tux giocherà meglio quando aumenti il livello."
 
 #. Activity title
 #: activities/bargame_2players/ActivityInfo.qml:15
@@ -25099,6 +25093,11 @@ msgid ""
 msgstr ""
 "Gioca con Tux Al tuo turno, fai clic sulla casella che vuoi marcare. Vince "
 "il primo giocatore che crea una linea di 3 segni."
+
+#: activities/tic_tac_toe/ActivityInfo.qml:28
+msgctxt "ActivityInfo|"
+msgid "Tux will play better when you increase the level."
+msgstr "Tux giocherà meglio quando aumenti il livello."
 
 #. Activity title
 #: activities/tic_tac_toe_2players/ActivityInfo.qml:18

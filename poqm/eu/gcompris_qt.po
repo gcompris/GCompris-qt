@@ -1183,7 +1183,9 @@ msgstr ""
 "Jokatu Tux-ekin. Txandaka, egin klik fitxa jaregin nahi duzun marran. 4 "
 "fitxako marra bat osatzen duen lehenengo jokalaria irabazle."
 
-#: activities/align4/ActivityInfo.qml:23
+#: activities/align4/ActivityInfo.qml:23 activities/bargame/ActivityInfo.qml:26
+#: activities/checkers/ActivityInfo.qml:27
+#: activities/nine_men_morris/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid ""
 "You can use the arrow buttons to manually select the difficulty level. Tux "
@@ -2641,14 +2643,6 @@ msgstr ""
 "Egin klik bolaren ikonoan bola kopuru bat hautatzeko, ondoren egin klik "
 "«Ados» botoiari bolak zuloetan ipintzeko. Irabazi duzu Tux azken bola "
 "jartzera behartzen baduzu. Tux hastea nahi baduzu, egin klik bere gainean."
-
-#: activities/bargame/ActivityInfo.qml:26
-#: activities/checkers/ActivityInfo.qml:27
-#: activities/nine_men_morris/ActivityInfo.qml:25
-#: activities/tic_tac_toe/ActivityInfo.qml:28
-msgctxt "ActivityInfo|"
-msgid "Tux will play better when you increase the level."
-msgstr "Tux-ek hobeto jokatutako du maila igotzen duzunean."
 
 #. Activity title
 #: activities/bargame_2players/ActivityInfo.qml:15
@@ -24909,6 +24903,11 @@ msgid ""
 msgstr ""
 "Jokatu Tux-ekin. Txandaka, klik egin markatu nahi duzun karratuan. 3 markako "
 "lerroa sortzen duen lehenengo jokalaria irabazle."
+
+#: activities/tic_tac_toe/ActivityInfo.qml:28
+msgctxt "ActivityInfo|"
+msgid "Tux will play better when you increase the level."
+msgstr "Tux-ek hobeto jokatutako du maila igotzen duzunean."
 
 #. Activity title
 #: activities/tic_tac_toe_2players/ActivityInfo.qml:18

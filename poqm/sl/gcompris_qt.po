@@ -1176,7 +1176,9 @@ msgstr ""
 "Igrajte s Tuxom. Izmenično klikajta na vrstico na katero želita spustiti "
 "žeton. Prvi igralec, ki ustvari vrstico s 4 žetoni, zmaga."
 
-#: activities/align4/ActivityInfo.qml:23
+#: activities/align4/ActivityInfo.qml:23 activities/bargame/ActivityInfo.qml:26
+#: activities/checkers/ActivityInfo.qml:27
+#: activities/nine_men_morris/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid ""
 "You can use the arrow buttons to manually select the difficulty level. Tux "
@@ -2610,14 +2612,6 @@ msgstr ""
 "Kliknite na ikono kroglice, da izberete število kroglic, nato kliknite gumb "
 "V redu, da postavite kroglice v luknje. Zmagate, če mora Tux postaviti "
 "zadnjo žogo. Če želite, da Tux začne, preprosto kliknite nanj."
-
-#: activities/bargame/ActivityInfo.qml:26
-#: activities/checkers/ActivityInfo.qml:27
-#: activities/nine_men_morris/ActivityInfo.qml:25
-#: activities/tic_tac_toe/ActivityInfo.qml:28
-msgctxt "ActivityInfo|"
-msgid "Tux will play better when you increase the level."
-msgstr "Tux bo igral bolje, ko povišate raven."
 
 #. Activity title
 #: activities/bargame_2players/ActivityInfo.qml:15
@@ -24710,6 +24704,11 @@ msgid ""
 msgstr ""
 "Igrajte s Tuxom. Izmenično klikajta na kvadratek, ki ga želita označiti. "
 "Zmaga prvi igralec, ki ustvari vrsto 3 oznak."
+
+#: activities/tic_tac_toe/ActivityInfo.qml:28
+msgctxt "ActivityInfo|"
+msgid "Tux will play better when you increase the level."
+msgstr "Tux bo igral bolje, ko povišate raven."
 
 #. Activity title
 #: activities/tic_tac_toe_2players/ActivityInfo.qml:18

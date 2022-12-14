@@ -1919,7 +1919,9 @@ msgstr ""
 "Jogue com o Tux. Jogue por turnos para carregar na linha onde deseja largar "
 "uma peça. O primeiro jogador a criar uma linha de 4 peças ganha."
 
-#: activities/align4/ActivityInfo.qml:23
+#: activities/align4/ActivityInfo.qml:23 activities/bargame/ActivityInfo.qml:26
+#: activities/checkers/ActivityInfo.qml:27
+#: activities/nine_men_morris/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid ""
 "You can use the arrow buttons to manually select the difficulty level. Tux "
@@ -3392,14 +3394,6 @@ msgstr ""
 "depois no botão OK para colocar as bolas nos buracos. Irá ganhar se o "
 "computador tiver de colocar a última bola. Se quiser que o Tux comece, basta "
 "carregar sobre ele."
-
-#: activities/bargame/ActivityInfo.qml:26
-#: activities/checkers/ActivityInfo.qml:27
-#: activities/nine_men_morris/ActivityInfo.qml:25
-#: activities/tic_tac_toe/ActivityInfo.qml:28
-msgctxt "ActivityInfo|"
-msgid "Tux will play better when you increase the level."
-msgstr "O Tux irá jogar melhor quando aumentar o nível."
 
 #. Activity title
 #: activities/bargame_2players/ActivityInfo.qml:15
@@ -25738,6 +25732,11 @@ msgid ""
 msgstr ""
 "Jogue com o Tux. De cada vez, carregue no quadrado que deseja marcar. O "
 "primeiro jogador a criar uma linha de 3 marcas ganha."
+
+#: activities/tic_tac_toe/ActivityInfo.qml:28
+msgctxt "ActivityInfo|"
+msgid "Tux will play better when you increase the level."
+msgstr "O Tux irá jogar melhor quando aumentar o nível."
 
 #. Activity title
 #: activities/tic_tac_toe_2players/ActivityInfo.qml:18

@@ -1172,7 +1172,9 @@ msgstr ""
 "這個遊戲可以跟朋友一起玩。輪到您時，在想要下的地方點一下。誰先完成四個排成一"
 "列的就獲勝。"
 
-#: activities/align4/ActivityInfo.qml:23
+#: activities/align4/ActivityInfo.qml:23 activities/bargame/ActivityInfo.qml:26
+#: activities/checkers/ActivityInfo.qml:27
+#: activities/nine_men_morris/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid ""
 "You can use the arrow buttons to manually select the difficulty level. Tux "
@@ -2515,14 +2517,6 @@ msgid ""
 msgstr ""
 "點擊球的圖示來選擇球數，然後按下「確定」把球放進洞裡。如果電腦被迫把球放進紅"
 "色洞裡，那麼您就贏了。如果您要小企鵝先開始，只要在它身上點擊一下即可。"
-
-#: activities/bargame/ActivityInfo.qml:26
-#: activities/checkers/ActivityInfo.qml:27
-#: activities/nine_men_morris/ActivityInfo.qml:25
-#: activities/tic_tac_toe/ActivityInfo.qml:28
-msgctxt "ActivityInfo|"
-msgid "Tux will play better when you increase the level."
-msgstr ""
 
 #. Activity title
 #: activities/bargame_2players/ActivityInfo.qml:15
@@ -24040,6 +24034,11 @@ msgid ""
 msgstr ""
 "這個遊戲可以跟朋友一起玩。輪到您時，在想要下的地方點一下。誰先完成三個排成一"
 "列的就獲勝。"
+
+#: activities/tic_tac_toe/ActivityInfo.qml:28
+msgctxt "ActivityInfo|"
+msgid "Tux will play better when you increase the level."
+msgstr ""
 
 #. Activity title
 #: activities/tic_tac_toe_2players/ActivityInfo.qml:18

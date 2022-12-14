@@ -1169,7 +1169,9 @@ msgstr ""
 "Zahraj si s Tuxem. Pokaždé když jsi na tahu, klikni na sloupec, do kterého "
 "chceš upustit žeton. První hráč, který vytvoří řadu 4 žetonů, vyhrává."
 
-#: activities/align4/ActivityInfo.qml:23
+#: activities/align4/ActivityInfo.qml:23 activities/bargame/ActivityInfo.qml:26
+#: activities/checkers/ActivityInfo.qml:27
+#: activities/nine_men_morris/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid ""
 "You can use the arrow buttons to manually select the difficulty level. Tux "
@@ -2597,14 +2599,6 @@ msgstr ""
 "Kliknutím na ikonu kuličky vyber počet kuliček a poté klikni na tlačítko OK "
 "pro vložení kuliček do děr. Vyhraješ, pokud Tux musí umístit poslední "
 "kuličku. Pokud chceš, aby Tux začal, jednoduše na něj klikni."
-
-#: activities/bargame/ActivityInfo.qml:26
-#: activities/checkers/ActivityInfo.qml:27
-#: activities/nine_men_morris/ActivityInfo.qml:25
-#: activities/tic_tac_toe/ActivityInfo.qml:28
-msgctxt "ActivityInfo|"
-msgid "Tux will play better when you increase the level."
-msgstr "Když zvýšíš úroveň, bude těžší Tuxe porazit."
 
 #. Activity title
 #: activities/bargame_2players/ActivityInfo.qml:15
@@ -24007,6 +24001,11 @@ msgid ""
 "Play with Tux. Take turns to click on the square which you want to mark. The "
 "first player to create a line of 3 marks wins."
 msgstr ""
+
+#: activities/tic_tac_toe/ActivityInfo.qml:28
+msgctxt "ActivityInfo|"
+msgid "Tux will play better when you increase the level."
+msgstr "Když zvýšíš úroveň, bude těžší Tuxe porazit."
 
 #. Activity title
 #: activities/tic_tac_toe_2players/ActivityInfo.qml:18

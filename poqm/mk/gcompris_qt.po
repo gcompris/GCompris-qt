@@ -1191,7 +1191,9 @@ msgstr ""
 "Играјте со пријател. Кликајте најизменично на полињата што сакате да ги "
 "одбележите. Ќе победи првиот играч што ќе има линија од 4 знаци."
 
-#: activities/align4/ActivityInfo.qml:23
+#: activities/align4/ActivityInfo.qml:23 activities/bargame/ActivityInfo.qml:26
+#: activities/checkers/ActivityInfo.qml:27
+#: activities/nine_men_morris/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid ""
 "You can use the arrow buttons to manually select the difficulty level. Tux "
@@ -2665,14 +2667,6 @@ msgstr ""
 "на ОК за да ги поставите топчињата во дупките. Вие ќе победите ако "
 "компјутерот треба да ја смести последната топка. Ако сакате Тукс да започне, "
 "само кликнете на него."
-
-#: activities/bargame/ActivityInfo.qml:26
-#: activities/checkers/ActivityInfo.qml:27
-#: activities/nine_men_morris/ActivityInfo.qml:25
-#: activities/tic_tac_toe/ActivityInfo.qml:28
-msgctxt "ActivityInfo|"
-msgid "Tux will play better when you increase the level."
-msgstr ""
 
 #. Activity title
 #: activities/bargame_2players/ActivityInfo.qml:15
@@ -25197,6 +25191,11 @@ msgid ""
 msgstr ""
 "Играјте со пријател. Кликајте најизменично на полињата што сакате да ги "
 "одбележите. Ќе победи првиот играч што ќе има линија од 3 знаци."
+
+#: activities/tic_tac_toe/ActivityInfo.qml:28
+msgctxt "ActivityInfo|"
+msgid "Tux will play better when you increase the level."
+msgstr ""
 
 #. Activity title
 #: activities/tic_tac_toe_2players/ActivityInfo.qml:18

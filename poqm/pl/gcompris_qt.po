@@ -1177,7 +1177,9 @@ msgstr ""
 "token.  Pierwszy gracz, który utworzy linię składającą się z 4 tokenów, "
 "wygrywa."
 
-#: activities/align4/ActivityInfo.qml:23
+#: activities/align4/ActivityInfo.qml:23 activities/bargame/ActivityInfo.qml:26
+#: activities/checkers/ActivityInfo.qml:27
+#: activities/nine_men_morris/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid ""
 "You can use the arrow buttons to manually select the difficulty level. Tux "
@@ -2633,14 +2635,6 @@ msgstr ""
 "OK, aby umieścić piłkę w otworze. Wygrasz, jeśli Tux będzie musiał umieścić "
 "ostatnią piłkę. Jeśli chcesz, aby rozpoczął Tux, wystarczy że na nim "
 "klikniesz."
-
-#: activities/bargame/ActivityInfo.qml:26
-#: activities/checkers/ActivityInfo.qml:27
-#: activities/nine_men_morris/ActivityInfo.qml:25
-#: activities/tic_tac_toe/ActivityInfo.qml:28
-msgctxt "ActivityInfo|"
-msgid "Tux will play better when you increase the level."
-msgstr "Tux będzie grał lepiej, gdy zwiększysz poziom."
 
 #. Activity title
 #: activities/bargame_2players/ActivityInfo.qml:15
@@ -24953,6 +24947,11 @@ msgid ""
 msgstr ""
 "Zagraj z Tuksem. Raz ty raz on naciskajcie na kratki, które chcecie "
 "oznaczyć.  Wygrywa gracz, który jako pierwszy utworzy linię 3 znaków."
+
+#: activities/tic_tac_toe/ActivityInfo.qml:28
+msgctxt "ActivityInfo|"
+msgid "Tux will play better when you increase the level."
+msgstr "Tux będzie grał lepiej, gdy zwiększysz poziom."
 
 #. Activity title
 #: activities/tic_tac_toe_2players/ActivityInfo.qml:18
