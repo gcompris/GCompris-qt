@@ -12,7 +12,7 @@ ActivityInfo {
   icon: "learn_digits/learn_digits.svg"
   author: "Timothée Giet &lt;animtim@gmail.com&gt;"
   //: Activity title
-  title: qsTr("Learn digits")
+  title: qsTr("Count and color the circles")
   //: Help title
   description: qsTr("Learn digits from 0 to 9.")
   //intro: "Click on the circles to match the given digit."
