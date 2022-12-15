@@ -26,6 +26,15 @@ QtObject {
      *
      */
     property var changelog: [
+            { "versionCode": 30000, "content": [
+                qsTr("Map of Spain added for geography activity"),
+                qsTr("Voices added for Ukrainian"),
+                qsTr("New command-line option to list all the activities and start on a specific one"),
+                qsTr("Many usability improvements"),
+                qsTr("Many new images"),
+                qsTr("Many bug fixes")
+                ]
+            },
             { "versionCode": 20400, "content": [
                 qsTr("Reduce the size of the packages for all platforms and of the external word images set"),
                 qsTr("Improve images quality in several activities"),
