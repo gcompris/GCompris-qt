@@ -15500,9 +15500,12 @@ msgstr "Aktivera uppläsning"
 
 #. Activity title
 #: activities/learn_digits/ActivityInfo.qml:15
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Count the items"
 msgctxt "ActivityInfo|"
-msgid "Learn digits"
-msgstr "Lär dig siffror"
+msgid "Count and color the circles"
+msgstr "Räkna sakerna"
 
 #. Help title
 #: activities/learn_digits/ActivityInfo.qml:17
@@ -25950,6 +25953,10 @@ msgstr "Hoppa över"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Starta"
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Learn digits"
+#~ msgstr "Lär dig siffror"
 
 #~ msgctxt "board1|"
 #~ msgid "The horse goes 'neigh! neigh!'. Horses usually sleep standing up."

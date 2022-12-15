@@ -16120,9 +16120,12 @@ msgstr "Уключыць голас"
 
 #. Activity title
 #: activities/learn_digits/ActivityInfo.qml:15
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Count the items"
 msgctxt "ActivityInfo|"
-msgid "Learn digits"
-msgstr "Вывучаць лічбы"
+msgid "Count and color the circles"
+msgstr "Падлік рэчаў"
 
 #. Help title
 #: activities/learn_digits/ActivityInfo.qml:17
@@ -26998,6 +27001,10 @@ msgstr "Прапусціць"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Пачаць"
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Learn digits"
+#~ msgstr "Вывучаць лічбы"
 
 #~ msgctxt "board1|"
 #~ msgid "The horse goes 'neigh! neigh!'. Horses usually sleep standing up."

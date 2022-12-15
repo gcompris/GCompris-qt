@@ -15719,10 +15719,10 @@ msgstr ""
 #: activities/learn_digits/ActivityInfo.qml:15
 #, fuzzy
 #| msgctxt "ActivityInfo|"
-#| msgid "Learning Clock"
+#| msgid "Count the items"
 msgctxt "ActivityInfo|"
-msgid "Learn digits"
-msgstr "கடிகாரத்தை அறிவோம்"
+msgid "Count and color the circles"
+msgstr "உருப்படிகளை எண்ணுங்க"
 
 #. Help title
 #: activities/learn_digits/ActivityInfo.qml:17
@@ -26528,6 +26528,13 @@ msgstr ""
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr ""
+
+#, fuzzy
+#~| msgctxt "ActivityInfo|"
+#~| msgid "Learning Clock"
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Learn digits"
+#~ msgstr "கடிகாரத்தை அறிவோம்"
 
 #, fuzzy
 #~| msgctxt "ActivityInfo|"

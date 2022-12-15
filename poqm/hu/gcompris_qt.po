@@ -15603,9 +15603,12 @@ msgstr "Hangok engedélyezése"
 
 #. Activity title
 #: activities/learn_digits/ActivityInfo.qml:15
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Count the items"
 msgctxt "ActivityInfo|"
-msgid "Learn digits"
-msgstr "Összeadás megtanulása"
+msgid "Count and color the circles"
+msgstr "Tárgyszámláló"
 
 #. Help title
 #: activities/learn_digits/ActivityInfo.qml:17
@@ -25983,6 +25986,10 @@ msgstr "Kihagyás"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Indítás"
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Learn digits"
+#~ msgstr "Összeadás megtanulása"
 
 #~ msgctxt "board1|"
 #~ msgid "The horse goes 'neigh! neigh!'. Horses usually sleep standing up."

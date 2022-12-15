@@ -17053,10 +17053,10 @@ msgstr "Activar as voces sonoras"
 #: activities/learn_digits/ActivityInfo.qml:15
 #, fuzzy
 #| msgctxt "ActivityInfo|"
-#| msgid "Learn addition"
+#| msgid "Count the items"
 msgctxt "ActivityInfo|"
-msgid "Learn digits"
-msgstr "Aprende a sumar"
+msgid "Count and color the circles"
+msgstr "Contar os elementos"
 
 #. Help title
 #: activities/learn_digits/ActivityInfo.qml:17
@@ -29110,6 +29110,13 @@ msgstr "Saltar"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Iniciar"
+
+#, fuzzy
+#~| msgctxt "ActivityInfo|"
+#~| msgid "Learn addition"
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Learn digits"
+#~ msgstr "Aprende a sumar"
 
 # Fonte: http://www.ivoox.com/nomeando-as-voces-dos-animais-audios-mp3_rf_665908_1.html
 #~ msgctxt "board1|"

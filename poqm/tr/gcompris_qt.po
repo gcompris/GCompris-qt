@@ -16202,9 +16202,12 @@ msgstr "Sesleri etkinleştir"
 
 #. Activity title
 #: activities/learn_digits/ActivityInfo.qml:15
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Count the items"
 msgctxt "ActivityInfo|"
-msgid "Learn digits"
-msgstr "Rakamları öğren"
+msgid "Count and color the circles"
+msgstr "Nesneleri say"
 
 #. Help title
 #: activities/learn_digits/ActivityInfo.qml:17
@@ -27171,6 +27174,10 @@ msgstr "Atla"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Başla"
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Learn digits"
+#~ msgstr "Rakamları öğren"
 
 #~ msgctxt "board1|"
 #~ msgid "The horse goes 'neigh! neigh!'. Horses usually sleep standing up."

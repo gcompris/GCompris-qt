@@ -15310,7 +15310,7 @@ msgstr ""
 #. Activity title
 #: activities/learn_digits/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
-msgid "Learn digits"
+msgid "Count and color the circles"
 msgstr ""
 
 #. Help title

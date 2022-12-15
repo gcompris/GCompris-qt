@@ -16819,10 +16819,10 @@ msgstr "ऑडियो आवाज चालू करें"
 #: activities/learn_digits/ActivityInfo.qml:15
 #, fuzzy
 #| msgctxt "ActivityInfo|"
-#| msgid "Learning Clock"
+#| msgid "Count the items"
 msgctxt "ActivityInfo|"
-msgid "Learn digits"
-msgstr "घड़ी देखना सीखना"
+msgid "Count and color the circles"
+msgstr "वस्तुएँ गिनें"
 
 #. Help title
 #: activities/learn_digits/ActivityInfo.qml:17
@@ -28965,6 +28965,13 @@ msgstr ""
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr ""
+
+#, fuzzy
+#~| msgctxt "ActivityInfo|"
+#~| msgid "Learning Clock"
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Learn digits"
+#~ msgstr "घड़ी देखना सीखना"
 
 #~ msgctxt "board1|"
 #~ msgid "The horse goes 'neigh! neigh!'. Horses usually sleep standing up."

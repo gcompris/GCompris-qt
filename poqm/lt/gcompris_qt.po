@@ -15711,9 +15711,12 @@ msgstr "Leisti pamokėles su garsu"
 
 #. Activity title
 #: activities/learn_digits/ActivityInfo.qml:15
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Count the items"
 msgctxt "ActivityInfo|"
-msgid "Learn digits"
-msgstr "Išmok skaičiuoti"
+msgid "Count and color the circles"
+msgstr "Suskaičiuok elementus"
 
 #. Help title
 #: activities/learn_digits/ActivityInfo.qml:17
@@ -26234,6 +26237,10 @@ msgstr "Praleisti"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Pradėti"
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Learn digits"
+#~ msgstr "Išmok skaičiuoti"
 
 #~ msgctxt "board1|"
 #~ msgid "The horse goes 'neigh! neigh!'. Horses usually sleep standing up."

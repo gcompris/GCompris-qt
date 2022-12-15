@@ -15062,9 +15062,11 @@ msgstr "Uključi zvuke i glasove"
 #. Activity title
 #: activities/learn_digits/ActivityInfo.qml:15
 #, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Count the items"
 msgctxt "ActivityInfo|"
-msgid "Learn digits"
-msgstr "Čitanje vremena"
+msgid "Count and color the circles"
+msgstr "Prebroj stavke"
 
 #. Help title
 #: activities/learn_digits/ActivityInfo.qml:17
@@ -25281,6 +25283,11 @@ msgstr ""
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr ""
+
+#, fuzzy
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Learn digits"
+#~ msgstr "Čitanje vremena"
 
 #, fuzzy
 #~ msgctxt "board1|"

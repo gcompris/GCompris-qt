@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: kstars\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2015-05-27 08:46+0000\n"
-"PO-Revision-Date: 2022-12-12 17:55+0000\n"
+"PO-Revision-Date: 2022-12-14 19:14+0000\n"
 "Last-Translator: Pedro Morais <morais@kde.org>\n"
 "Language-Team: pt <kde-i18n-pt@kde.org>\n"
 "Language: pt\n"
@@ -1927,6 +1927,8 @@ msgid ""
 "You can use the arrow buttons to manually select the difficulty level. Tux "
 "will play better when you increase the level."
 msgstr ""
+"Poderá usar as teclas dos cursores para seleccionar manualmente o nível de "
+"dificuldade. O Tux irá jogar melhor quando o utilizador aumentar o nível."
 
 #: activities/align4/ActivityInfo.qml:25
 #: activities/align4_2players/ActivityInfo.qml:24
@@ -16331,9 +16333,12 @@ msgstr "Activar as vozes"
 
 #. Activity title
 #: activities/learn_digits/ActivityInfo.qml:15
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Count the items"
 msgctxt "ActivityInfo|"
-msgid "Learn digits"
-msgstr "Aprender os algarismos"
+msgid "Count and color the circles"
+msgstr "Contagem dos itens"
 
 #. Help title
 #: activities/learn_digits/ActivityInfo.qml:17
@@ -25497,41 +25502,30 @@ msgstr "Valor máximo: 500000."
 
 #. Activity title
 #: activities/tens_complement_find/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "instruments|"
-#| msgid "Find the trumpet"
 msgctxt "ActivityInfo|"
 msgid "Find ten's complement"
-msgstr "Descobrir o trompete"
+msgstr "Descobrir o complemento de dez"
 
 #. Help title
 #: activities/tens_complement_find/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Find the ten's complement of each number."
-msgstr ""
+msgstr "Descobrir o complemento de dez para cada número."
 
 #. Help goal
 #: activities/tens_complement_find/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Learn to find ten's complement."
-msgstr ""
+msgstr "Aprender a descobrir o complemento de dez."
 
 #. Help prerequisite
 #: activities/tens_complement_find/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 1 to 1 billion."
 msgctxt "ActivityInfo|"
 msgid "Numbers from 1 to 10 and additions."
-msgstr "Números do 1 a mil milhões."
+msgstr "Números do 1 a 10 e adições."
 
 #: activities/tens_complement_find/ActivityInfo.qml:23
 #: activities/tens_complement_use/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "If some answers are incorrect, a cross icon will appear on the "
-#| "corresponding lines. Correct the errors, then select the OK button again."
 msgctxt "ActivityInfo|"
 msgid ""
 "When all the lines are completed, press the OK button to validate the "
@@ -25539,9 +25533,11 @@ msgid ""
 "corresponding lines. To correct the errors, click on the wrong numbers to "
 "remove them and repeat the previous steps."
 msgstr ""
-"Se algumas respostas estiverem incorrectas, irá aparecer um ícone com uma "
-"cruz nas linhas correspondentes. Corrija os erros e depois seleccione o "
-"botão OK de novo."
+"Quando todas as linhas estiverem completas, carregue no botão OK para "
+"validar as respostas. Se algumas respostas estiverem incorrectas, irá "
+"aparecer um ícone com uma cruz nas linhas correspondentes. Para corrigir os "
+"erros, carregue nos números errados para os remover e repita os passos "
+"anteriores."
 
 #. Help manual
 #: activities/tens_complement_find/ActivityInfo.qml:23
@@ -25550,42 +25546,36 @@ msgid ""
 "Create pairs of numbers equal to ten. Select a number in the list, then "
 "select an empty spot of an operation to move the selected number there."
 msgstr ""
+"Crie pares de números iguais a dez. Seleccione um número na lista, depois "
+"seleccione um lugar vazio para uma operação para mover o número seleccionado "
+"para aí."
 
 #: activities/tens_complement_find/resource/1/Data.qml:25
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 1 to 9."
 msgctxt "Data|"
 msgid "First number from 1 to 4."
-msgstr "Números do 1 ao 9."
+msgstr "Primeiro número de 1 a 4."
 
 #: activities/tens_complement_find/resource/2/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 1 to 9."
 msgctxt "Data|"
 msgid "First number from 5 to 9."
-msgstr "Números do 1 ao 9."
+msgstr "Primeiro número de 5 a 9."
 
 #: activities/tens_complement_find/resource/4/Data.qml:9
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Division of numbers"
 msgctxt "Data|"
 msgid "Find both numbers."
-msgstr "Divisão de números"
+msgstr "Descobrir ambos os números."
 
 #. Activity title
 #: activities/tens_complement_swap/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Swap ten's complement"
-msgstr ""
+msgstr "Trocar o complemento de dez"
 
 #. Help title
 #: activities/tens_complement_swap/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Swap the numbers to create pairs equal to ten."
-msgstr ""
+msgstr "Trocar os números para criar pares iguais a dez."
 
 #. Help goal
 #: activities/tens_complement_swap/ActivityInfo.qml:19
@@ -25594,15 +25584,14 @@ msgid ""
 "Learn to use ten's complement to optimize the order of numbers in an "
 "operation."
 msgstr ""
+"Aprender a usar o complemento de dez para optimizar a ordem dos números numa "
+"operação."
 
 #. Help prerequisite
 #: activities/tens_complement_swap/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 1 to 1 billion."
 msgctxt "ActivityInfo|"
 msgid "Numbers from 1 to 30 and additions."
-msgstr "Números do 1 a mil milhões."
+msgstr "Números do 1 ao 30 e adições."
 
 #. Help manual
 #: activities/tens_complement_swap/ActivityInfo.qml:23
@@ -25614,57 +25603,51 @@ msgid ""
 "the answers. If some answers are incorrect, a cross icon will appear on the "
 "corresponding lines. Correct the errors, then press the OK button again."
 msgstr ""
+"Crie pares de números iguais a dez dentro de cada parêntesis. Seleccione um "
+"número, depois seleccione outro número da mesma operação para trocar as suas "
+"posições. Quando todas as linhas estiverem completas, carregue no botão OK "
+"para validar as respostas. Se algumas delas estiverem incorrectas, irá "
+"aparecer um ícone com uma cruz nas linhas correspondentes. Corrija os erros "
+"e depois carregue no botão OK de novo."
 
 #: activities/tens_complement_swap/resource/1/Data.qml:36
-#, fuzzy
-#| msgctxt "Warning|"
-#| msgid "1 is not a prime number."
 msgctxt "Data|"
 msgid "2 pairs to make from 4 numbers."
-msgstr "1 não é um número primo."
+msgstr "2 pares para fazer a partir de 4 números."
 
 #: activities/tens_complement_swap/resource/2/Data.qml:9
-#, fuzzy
-#| msgctxt "Warning|"
-#| msgid "1 is not a prime number."
 msgctxt "Data|"
 msgid "2 pairs to make from 5 numbers."
-msgstr "1 não é um número primo."
+msgstr "2 pares para fazer a partir de 5 números."
 
 #: activities/tens_complement_swap/resource/3/Data.qml:9
-#, fuzzy
-#| msgctxt "Warning|"
-#| msgid "1 is not a prime number."
 msgctxt "Data|"
 msgid "3 pairs to make from 6 numbers."
-msgstr "1 não é um número primo."
+msgstr "3 pares para fazer a partir de 6 números."
 
 #. Activity title
 #: activities/tens_complement_use/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Use ten's complement"
-msgstr ""
+msgstr "Usar o complemento de dez"
 
 #. Help title
 #: activities/tens_complement_use/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Use a ten's complement to simplify the operation."
-msgstr ""
+msgstr "Usar o complemento de dez para simplificar a operação."
 
 #. Help goal
 #: activities/tens_complement_use/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Learn a practical use of ten's complement."
-msgstr ""
+msgstr "Aprender um uso prático do complemento de dez."
 
 #. Help prerequisite
 #: activities/tens_complement_use/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 1 to 1 billion."
 msgctxt "ActivityInfo|"
 msgid "Numbers from 1 to 50 and additions."
-msgstr "Números do 1 a mil milhões."
+msgstr "Números do 1 a 50 e adições."
 
 #. Help manual
 #: activities/tens_complement_use/ActivityInfo.qml:23
@@ -25674,30 +25657,24 @@ msgid ""
 "parentheses. Select a number in the list, then select an empty spot of an "
 "operation to move the selected number there."
 msgstr ""
+"Decompor as adições para criar pares de números iguais a dez dentro de cada "
+"parêntesis. Seleccione um número da lista, depois seleccione um lugar vazio "
+"de uma operação para mover o número seleccionado para lá."
 
 #: activities/tens_complement_use/resource/1/Data.qml:43
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Between 1 and 10."
 msgctxt "Data|"
 msgid "Result between 11 and 19."
-msgstr "Entre 1 e 10."
+msgstr "Resultado entre 11 e 19."
 
 #: activities/tens_complement_use/resource/2/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Result between 20 and 29."
-msgstr "Números entre %1 e %2."
+msgstr "Resultado entre 20 e 29."
 
 #: activities/tens_complement_use/resource/3/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Between 20 and 50."
 msgctxt "Data|"
 msgid "Result between 30 and 50."
-msgstr "Entre 20 e 50."
+msgstr "Resultado entre 30 e 50."
 
 #. Activity title
 #: activities/tic_tac_toe/ActivityInfo.qml:18
@@ -26856,3 +26833,7 @@ msgstr "Ignorar"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Iniciar"
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Learn digits"
+#~ msgstr "Aprender os algarismos"

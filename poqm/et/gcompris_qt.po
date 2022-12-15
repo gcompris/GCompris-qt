@@ -15596,9 +15596,12 @@ msgstr "Häälte lubamine"
 
 #. Activity title
 #: activities/learn_digits/ActivityInfo.qml:15
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Count the items"
 msgctxt "ActivityInfo|"
-msgid "Learn digits"
-msgstr "Õpi numbreid"
+msgid "Count and color the circles"
+msgstr "Kokkuarvamine"
 
 #. Help title
 #: activities/learn_digits/ActivityInfo.qml:17
@@ -25979,6 +25982,10 @@ msgstr "Jäta vahele"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Alusta"
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Learn digits"
+#~ msgstr "Õpi numbreid"
 
 #~ msgctxt "board1|"
 #~ msgid "The horse goes 'neigh! neigh!'. Horses usually sleep standing up."

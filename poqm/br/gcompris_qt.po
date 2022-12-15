@@ -15709,9 +15709,12 @@ msgstr "Aotreañ ar mouezhioù"
 
 #. Activity title
 #: activities/learn_digits/ActivityInfo.qml:15
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Count the items"
 msgctxt "ActivityInfo|"
-msgid "Learn digits"
-msgstr "Desk ar sifroù"
+msgid "Count and color the circles"
+msgstr "Kont an traoù"
 
 #. Help title
 #: activities/learn_digits/ActivityInfo.qml:17
@@ -26202,6 +26205,10 @@ msgstr "Tremen hepti"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Kregiñ"
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Learn digits"
+#~ msgstr "Desk ar sifroù"
 
 #~ msgctxt "board1|"
 #~ msgid "The horse goes 'neigh! neigh!'. Horses usually sleep standing up."

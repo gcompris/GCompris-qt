@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: gcompris_voices\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-12-13 00:48+0000\n"
-"PO-Revision-Date: 2022-11-01 13:49+0300\n"
+"PO-Revision-Date: 2022-12-14 16:39+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 22.08.2\n"
+"X-Generator: Lokalize 22.12.0\n"
 "X-POOTLE-MTIME: 1497539875.000000\n"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "advanced_colors"
@@ -64,8 +64,8 @@ msgid ""
 "Click on the missing items on the table and follow the logical sequence "
 "displayed above it."
 msgstr ""
-"Masadaki eksik parçalara tıklayın ve yukarıda gösterilen mantıksal diziyi "
-"takip edin."
+"Masadaki eksik parçalara tıkla ve yukarıda gösterilen mantıksal sıralamayı "
+"takip et."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "align4"
 #: activities/align4/ActivityInfo.qml:18
@@ -74,8 +74,8 @@ msgid ""
 "Click on the column where you wish your token to fall and try to align of 4 "
 "tokens before Tux."
 msgstr ""
-"Jetonun düşmesini istediğiniz sütuna tıklayın ve Tux'tan önce 4 jetonu "
-"hizalamaya çalışın."
+"Jetonun düşmesini istediğiniz sütuna tıkla ve Tux'tan önce 4 jetonu "
+"hizalamaya çalış."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "align4_2players"
 #: activities/align4_2players/ActivityInfo.qml:18
@@ -84,8 +84,7 @@ msgid ""
 "Click on the column where you wish your token to fall and try to align 4 "
 "tokens to win."
 msgstr ""
-"Jetonun düşmesini istediğiniz sütuna tıklayın ve kazanmak için 4 jetonu "
-"sıralayın."
+"Jetonun düşmesini istediğiniz sütuna tıkla ve kazanmak için 4 jetonu sırala."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "alphabet-sequence"
 #: activities/alphabet-sequence/ActivityInfo.qml:18
@@ -93,8 +92,7 @@ msgstr ""
 msgid ""
 "Move the helicopter to catch the clouds following the order of the alphabet."
 msgstr ""
-"Alfabe sırasını takip eden bulutları yakalamak için helikopteri hareket "
-"ettirin."
+"Abece sırasını takip eden bulutları yakalamak için helikopteri hareket ettir."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "analog_electricity"
 #: activities/analog_electricity/ActivityInfo.qml:18
@@ -106,13 +104,13 @@ msgstr "Analog elektriğin nasıl çalıştığını öğren ve kendi devreni ol
 #: activities/baby_keyboard/ActivityInfo.qml:18
 #, kde-format
 msgid "Type any key on the keyboard and observe the result."
-msgstr "Klavyede herhangi bir tuşa bas ve sonucu gözlemle."
+msgstr "Klavyede herhangi bir düğmeye bas ve sonucu gözlemle."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "baby_mouse"
 #: activities/baby_mouse/ActivityInfo.qml:17
 #, kde-format
 msgid "Move the mouse or touch the screen and observe the result."
-msgstr "Fareyi hareket ettirerek veya ekrana dokunarak ve sonucu gözlemle."
+msgstr "Fareyi hareket ettirerek veya ekrana dokunarak sonucu gözlemle."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "baby_tangram"
 #: activities/baby_tangram/ActivityInfo.qml:18
@@ -121,32 +119,32 @@ msgid ""
 "Move each puzzle piece, to obtain the completed puzzle. You can change their "
 "orientation by clicking on the arrows."
 msgstr ""
-"Tamamlanmış bulmacayı elde etmek için her bulmaca parçasını hareket ettir. "
-"Yönlerini oklara tıklayarak değiştirebilirsin."
+"Tamamlanmış bulmacayı elde etmek için her bir bulmaca parçasını hareket "
+"ettir. Yönlerini oklara tıklayarak değiştirebilirsin."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "baby_wordprocessor"
 #: activities/baby_wordprocessor/ActivityInfo.qml:18
 #, kde-format
 msgid "A simplistic word processor to play around with the keyboard"
-msgstr "Klavye ile oyalanmak için basit bir kelime işlemci"
+msgstr "Klavye ile oyalanmak için basit bir sözcük işlemci"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "babymatch"
 #: activities/babymatch/ActivityInfo.qml:21
 #, kde-format
 msgid "Drag and drop the objects matching the pictures"
-msgstr "Resimlerle eşleşen nesneleri sürükleyip bırakın"
+msgstr "Resimlerle eşleşen nesneleri sürükleyip bırak"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "babyshapes"
 #: activities/babyshapes/ActivityInfo.qml:22
 #, kde-format
 msgid "Drag and drop the objects matching the shapes."
-msgstr "Şekillerle eşleşen nesneleri sürükleyip bırakın."
+msgstr "Şekillerle eşleşen nesneleri sürükleyip bırak."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "balancebox"
 #: activities/balancebox/ActivityInfo.qml:21
 #, kde-format
 msgid "Tilt the box to navigate the ball to the door."
-msgstr "Topu, kapıya doğru yönlendirmek için kutuyu sallayın"
+msgstr "Topu kapıya doğru yönlendirmek için kutuyu salla"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "ballcatch"
 #: activities/ballcatch/ActivityInfo.qml:18
@@ -181,20 +179,19 @@ msgstr ""
 #: activities/braille_alphabets/ActivityInfo.qml:18
 #, kde-format
 msgid "Click on Tux to start and then re-create the Braille cells."
-msgstr ""
-"Braille hücrelerini başlatmak ve yeniden oluşturmak için Tux'a tıklayın."
+msgstr "Braille hücrelerini başlatmak ve yeniden oluşturmak için Tux'a tıkla."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "braille_fun"
 #: activities/braille_fun/ActivityInfo.qml:18
 #, kde-format
 msgid "Create the Braille cell for the letter."
-msgstr "Harf için Braille hücresi oluşturun."
+msgstr "Harf için Braille hücresi oluştur."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "calendar"
 #: activities/calendar/ActivityInfo.qml:18
 #, kde-format
 msgid "Select the asked date on the calendar"
-msgstr "Sorulan tarihi takvimden seç"
+msgstr "Takvimde sorulan tarihi seç"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "canal_lock"
 #: activities/canal_lock/ActivityInfo.qml:18
@@ -204,9 +201,9 @@ msgid ""
 "on the valves to cause either a drop or an increase in the water level, and "
 "click on the gates to open or close a path."
 msgstr ""
-"Kilitten siz sorumlusunuz ve Tux'un geçmesine yardım etmelisiniz. Su "
-"seviyesinde düşüşe veya artışa neden olması için valflere tıklayın ve bir "
-"yolu açmak veya kapatmak için kapıların üzerine tıklayın."
+"Kilitten sen sorumlusun ve Tux'un geçmesine yardım etmelisin. Su düzeyinde "
+"artışa veya düşüşe neden olması için valflere tıkla ve bir yolu açmak veya "
+"kapatmak içinse kapıların üzerine tıkla."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "categorization"
 #: activities/categorization/ActivityInfo.qml:18
@@ -216,16 +213,15 @@ msgstr "Ögeleri doğru gruplar halinde sınıflandır"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "checkers"
 #: activities/checkers/ActivityInfo.qml:18
-#, fuzzy, kde-format
-#| msgid "play chess against Tux"
+#, kde-format
 msgid "play checkers against Tux"
-msgstr "Tux'a karşı satranç oyna"
+msgstr "Tux'a karşı dama oyna"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "checkers_2players"
 #: activities/checkers_2players/ActivityInfo.qml:18
 #, kde-format
 msgid "play checkers with your friend"
-msgstr "bir arkadaşınla dama oyna"
+msgstr "arkadaşına karşı dama oyna"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "chess"
 #: activities/chess/ActivityInfo.qml:18

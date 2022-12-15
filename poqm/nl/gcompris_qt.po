@@ -15551,9 +15551,12 @@ msgstr "Stemmen inschakelen"
 
 #. Activity title
 #: activities/learn_digits/ActivityInfo.qml:15
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Count the items"
 msgctxt "ActivityInfo|"
-msgid "Learn digits"
-msgstr "Cijfers leren"
+msgid "Count and color the circles"
+msgstr "Tel het aantal figuurtjes"
 
 #. Help title
 #: activities/learn_digits/ActivityInfo.qml:17
@@ -26056,6 +26059,10 @@ msgstr "Overslaan"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Begin"
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Learn digits"
+#~ msgstr "Cijfers leren"
 
 #~ msgctxt "board1|"
 #~ msgid "The horse goes 'neigh! neigh!'. Horses usually sleep standing up."

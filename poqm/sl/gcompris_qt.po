@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2022-12-09 08:59+0100\n"
+"PO-Revision-Date: 2022-12-14 08:55+0100\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
@@ -1184,6 +1184,8 @@ msgid ""
 "You can use the arrow buttons to manually select the difficulty level. Tux "
 "will play better when you increase the level."
 msgstr ""
+"Lahko uporabljate tipke s puščicami za ročno izbiro ravni težavnosti. Tux bo "
+"igral bolje, če zvišate raven."
 
 #: activities/align4/ActivityInfo.qml:25
 #: activities/align4_2players/ActivityInfo.qml:24
@@ -15409,9 +15411,12 @@ msgstr "Omogoči zvoke"
 
 #. Activity title
 #: activities/learn_digits/ActivityInfo.qml:15
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Count the items"
 msgctxt "ActivityInfo|"
-msgid "Learn digits"
-msgstr "Učenje številk"
+msgid "Count and color the circles"
+msgstr "Štetje predmetov"
 
 #. Help title
 #: activities/learn_digits/ActivityInfo.qml:17
@@ -24470,41 +24475,30 @@ msgstr "Maksimalna vrednost: 500000."
 
 #. Activity title
 #: activities/tens_complement_find/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "instruments|"
-#| msgid "Find the trumpet"
 msgctxt "ActivityInfo|"
 msgid "Find ten's complement"
-msgstr "Najdite trobento"
+msgstr "Najdite komplement desetice"
 
 #. Help title
 #: activities/tens_complement_find/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Find the ten's complement of each number."
-msgstr ""
+msgstr "Najdite komplement desetice za vsako število."
 
 #. Help goal
 #: activities/tens_complement_find/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Learn to find ten's complement."
-msgstr ""
+msgstr "Naučite se najti komplement desetice."
 
 #. Help prerequisite
 #: activities/tens_complement_find/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 1 to 1 billion."
 msgctxt "ActivityInfo|"
 msgid "Numbers from 1 to 10 and additions."
-msgstr "Števila od 1 do 1 bilijon."
+msgstr "Števila od 1 do 10 in seštevanja."
 
 #: activities/tens_complement_find/ActivityInfo.qml:23
 #: activities/tens_complement_use/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "If some answers are incorrect, a cross icon will appear on the "
-#| "corresponding lines. Correct the errors, then select the OK button again."
 msgctxt "ActivityInfo|"
 msgid ""
 "When all the lines are completed, press the OK button to validate the "
@@ -24512,8 +24506,10 @@ msgid ""
 "corresponding lines. To correct the errors, click on the wrong numbers to "
 "remove them and repeat the previous steps."
 msgstr ""
-"Če je odgovor napačen, se bo v tej vrstici pojavila ikona s križem. "
-"Popravite napake in spet izberite gumb OK."
+"Ko so vse vrstice dokončane, pritisnite gumb V redu, da preverite odgovore. "
+"Če so nekateri odgovori napačni, se bo tam prikazala ikona križa. Če želite "
+"odpraviti napake, kliknite na napačne številke, jih odstranite in ponovite "
+"prejšnje korake."
 
 #. Help manual
 #: activities/tens_complement_find/ActivityInfo.qml:23
@@ -24522,42 +24518,35 @@ msgid ""
 "Create pairs of numbers equal to ten. Select a number in the list, then "
 "select an empty spot of an operation to move the selected number there."
 msgstr ""
+"Ustvarite pare številk, ki so enake deset. Izberite število na seznamu, nato "
+"izberite prazno mesto operacije in premaknite izbrano število tja."
 
 #: activities/tens_complement_find/resource/1/Data.qml:25
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 1 to 9."
 msgctxt "Data|"
 msgid "First number from 1 to 4."
-msgstr "Števila od 1 do 9."
+msgstr "Prvo število od 1 do 4."
 
 #: activities/tens_complement_find/resource/2/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 1 to 9."
 msgctxt "Data|"
 msgid "First number from 5 to 9."
-msgstr "Števila od 1 do 9."
+msgstr "Prvo število od 5 do 9."
 
 #: activities/tens_complement_find/resource/4/Data.qml:9
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Division of numbers"
 msgctxt "Data|"
 msgid "Find both numbers."
-msgstr "Deljenje števil"
+msgstr "Najdi obe števili."
 
 #. Activity title
 #: activities/tens_complement_swap/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Swap ten's complement"
-msgstr ""
+msgstr "Zamenjajte med sabo komplementa desetice"
 
 #. Help title
 #: activities/tens_complement_swap/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Swap the numbers to create pairs equal to ten."
-msgstr ""
+msgstr "Zamenjajte med sabo števila, da ustvarite pare enake deset."
 
 #. Help goal
 #: activities/tens_complement_swap/ActivityInfo.qml:19
@@ -24566,15 +24555,14 @@ msgid ""
 "Learn to use ten's complement to optimize the order of numbers in an "
 "operation."
 msgstr ""
+"Naučite se uporabiti komplemente desetice za optimiziranje razvrstitve "
+"števil v operaciji."
 
 #. Help prerequisite
 #: activities/tens_complement_swap/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 1 to 1 billion."
 msgctxt "ActivityInfo|"
 msgid "Numbers from 1 to 30 and additions."
-msgstr "Števila od 1 do 1 bilijon."
+msgstr "Števila od 1 do 30 in seštevanja."
 
 #. Help manual
 #: activities/tens_complement_swap/ActivityInfo.qml:23
@@ -24586,57 +24574,50 @@ msgid ""
 "the answers. If some answers are incorrect, a cross icon will appear on the "
 "corresponding lines. Correct the errors, then press the OK button again."
 msgstr ""
+"Ustvarite pare števil enakih deset v vsakem oklepaju. Izberite število, nato "
+"izberite drugo število iste operacije, da zamenjate njun položaj. Ko so vse "
+"vrstice končane, pritisnite gumb V redu, da preverite odgovore. Če so "
+"nekateri odgovori napačni, se bo na tam prikazala ikona križa. Popravite "
+"napake, nato spet pritisnite gumb V redu."
 
 #: activities/tens_complement_swap/resource/1/Data.qml:36
-#, fuzzy
-#| msgctxt "Warning|"
-#| msgid "1 is not a prime number."
 msgctxt "Data|"
 msgid "2 pairs to make from 4 numbers."
-msgstr "1 ni praštevilo."
+msgstr "naredite 2 para iz 4 števil."
 
 #: activities/tens_complement_swap/resource/2/Data.qml:9
-#, fuzzy
-#| msgctxt "Warning|"
-#| msgid "1 is not a prime number."
 msgctxt "Data|"
 msgid "2 pairs to make from 5 numbers."
-msgstr "1 ni praštevilo."
+msgstr "naredite 2 para iz 5 števil."
 
 #: activities/tens_complement_swap/resource/3/Data.qml:9
-#, fuzzy
-#| msgctxt "Warning|"
-#| msgid "1 is not a prime number."
 msgctxt "Data|"
 msgid "3 pairs to make from 6 numbers."
-msgstr "1 ni praštevilo."
+msgstr "naredite 3 pare iz 6 števil."
 
 #. Activity title
 #: activities/tens_complement_use/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Use ten's complement"
-msgstr ""
+msgstr "Uporabite komplement desetice"
 
 #. Help title
 #: activities/tens_complement_use/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Use a ten's complement to simplify the operation."
-msgstr ""
+msgstr "Uporabite komplement desetice, da poenostavite program."
 
 #. Help goal
 #: activities/tens_complement_use/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Learn a practical use of ten's complement."
-msgstr ""
+msgstr "Naučite se praktične rabe komplementa desetice."
 
 #. Help prerequisite
 #: activities/tens_complement_use/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 1 to 1 billion."
 msgctxt "ActivityInfo|"
 msgid "Numbers from 1 to 50 and additions."
-msgstr "Števila od 1 do 1 bilijon."
+msgstr "Števila od 1 do 50 in seštevanja."
 
 #. Help manual
 #: activities/tens_complement_use/ActivityInfo.qml:23
@@ -24646,30 +24627,24 @@ msgid ""
 "parentheses. Select a number in the list, then select an empty spot of an "
 "operation to move the selected number there."
 msgstr ""
+"Razgradite seštevanja, da ustvarite pare številk, ki so enake deset v vsakem "
+"oklepaju. Na seznamu izberite številko, nato izberite prazno mestooperacije "
+"za premik izbrane številke tja."
 
 #: activities/tens_complement_use/resource/1/Data.qml:43
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Between 1 and 10."
 msgctxt "Data|"
 msgid "Result between 11 and 19."
-msgstr "Med 1 in 10."
+msgstr "Rezultat med 11 in 19."
 
 #: activities/tens_complement_use/resource/2/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Result between 20 and 29."
-msgstr "Števila med %1 in %2."
+msgstr "Rezultat med 20 in 29."
 
 #: activities/tens_complement_use/resource/3/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Between 20 and 50."
 msgctxt "Data|"
 msgid "Result between 30 and 50."
-msgstr "Med 20 in 50."
+msgstr "Rezultat med 30 in 50."
 
 #. Activity title
 #: activities/tic_tac_toe/ActivityInfo.qml:18
@@ -25807,6 +25782,10 @@ msgstr "Preskoči"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Zaženi"
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Learn digits"
+#~ msgstr "Učenje številk"
 
 #~ msgctxt "board1|"
 #~ msgid "The horse goes 'neigh! neigh!'. Horses usually sleep standing up."

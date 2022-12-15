@@ -15772,9 +15772,12 @@ msgstr "Käytä puheääniä"
 
 #. Activity title
 #: activities/learn_digits/ActivityInfo.qml:15
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Count the items"
 msgctxt "ActivityInfo|"
-msgid "Learn digits"
-msgstr "Opi numerot"
+msgid "Count and color the circles"
+msgstr "Laske esineet"
 
 #. Help title
 #: activities/learn_digits/ActivityInfo.qml:17
@@ -26238,6 +26241,10 @@ msgstr "Ohita"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Käynnistä"
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Learn digits"
+#~ msgstr "Opi numerot"
 
 #~ msgctxt "board1|"
 #~ msgid "The horse goes 'neigh! neigh!'. Horses usually sleep standing up."

@@ -15973,9 +15973,12 @@ msgstr "Ενεργοποίηση ήχων"
 
 #. Activity title
 #: activities/learn_digits/ActivityInfo.qml:15
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Count the items"
 msgctxt "ActivityInfo|"
-msgid "Learn digits"
-msgstr "Μαθαίνω αριθμούς"
+msgid "Count and color the circles"
+msgstr "Μετρώ τα αντικείμενα"
 
 #. Help title
 #: activities/learn_digits/ActivityInfo.qml:17
@@ -26637,6 +26640,10 @@ msgstr "Παράλειψη"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Έναρξη"
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Learn digits"
+#~ msgstr "Μαθαίνω αριθμούς"
 
 #~ msgctxt "board1|"
 #~ msgid "The horse goes 'neigh! neigh!'. Horses usually sleep standing up."

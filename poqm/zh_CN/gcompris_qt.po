@@ -14638,9 +14638,12 @@ msgstr "启用声音"
 
 #. Activity title
 #: activities/learn_digits/ActivityInfo.qml:15
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Count the items"
 msgctxt "ActivityInfo|"
-msgid "Learn digits"
-msgstr "学习数字"
+msgid "Count and color the circles"
+msgstr "物件计数"
 
 #. Help title
 #: activities/learn_digits/ActivityInfo.qml:17
@@ -24262,3 +24265,7 @@ msgstr "跳过"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "开始"
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Learn digits"
+#~ msgstr "学习数字"

@@ -16301,9 +16301,12 @@ msgstr "Úsáid guthanna"
 
 #. Activity title
 #: activities/learn_digits/ActivityInfo.qml:15
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Count the items"
 msgctxt "ActivityInfo|"
-msgid "Learn digits"
-msgstr "Foghlaim digití"
+msgid "Count and color the circles"
+msgstr "Cuntas Líon na Míreanna"
 
 #. Help title
 #: activities/learn_digits/ActivityInfo.qml:17
@@ -27038,6 +27041,10 @@ msgstr "Scipeáil"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Tosaigh"
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Learn digits"
+#~ msgstr "Foghlaim digití"
 
 #~ msgctxt "board1|"
 #~ msgid "The horse goes 'neigh! neigh!'. Horses usually sleep standing up."

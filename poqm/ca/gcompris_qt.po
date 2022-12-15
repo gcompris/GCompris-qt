@@ -15897,9 +15897,12 @@ msgstr "Habilita les veus"
 
 #. Activity title
 #: activities/learn_digits/ActivityInfo.qml:15
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Count the items"
 msgctxt "ActivityInfo|"
-msgid "Learn digits"
-msgstr "Aprendre els dígits"
+msgid "Count and color the circles"
+msgstr "Compta els elements"
 
 #. Help title
 #: activities/learn_digits/ActivityInfo.qml:17
@@ -26483,3 +26486,7 @@ msgstr "Omet"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Inicia"
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Learn digits"
+#~ msgstr "Aprendre els dígits"

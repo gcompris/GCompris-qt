@@ -15646,10 +15646,10 @@ msgstr ""
 #: activities/learn_digits/ActivityInfo.qml:15
 #, fuzzy
 #| msgctxt "ActivityInfo|"
-#| msgid "Learning Clock"
+#| msgid "Count the items"
 msgctxt "ActivityInfo|"
-msgid "Learn digits"
-msgstr "Pulksteņa apguve"
+msgid "Count and color the circles"
+msgstr "Saskaiti objektus"
 
 #. Help title
 #: activities/learn_digits/ActivityInfo.qml:17
@@ -26487,6 +26487,13 @@ msgstr ""
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr ""
+
+#, fuzzy
+#~| msgctxt "ActivityInfo|"
+#~| msgid "Learning Clock"
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Learn digits"
+#~ msgstr "Pulksteņa apguve"
 
 #, fuzzy
 #~| msgctxt "ActivityInfo|"

@@ -15064,9 +15064,12 @@ msgstr "開啟語音"
 
 #. Activity title
 #: activities/learn_digits/ActivityInfo.qml:15
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Count the items"
 msgctxt "ActivityInfo|"
-msgid "Learn digits"
-msgstr "學習數字"
+msgid "Count and color the circles"
+msgstr "數一數物品"
 
 #. Help title
 #: activities/learn_digits/ActivityInfo.qml:17
@@ -25088,6 +25091,10 @@ msgstr "略過"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "開始"
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Learn digits"
+#~ msgstr "學習數字"
 
 #~ msgctxt "board1|"
 #~ msgid "The horse goes 'neigh! neigh!'. Horses usually sleep standing up."
