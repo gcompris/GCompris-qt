@@ -1183,9 +1183,10 @@ msgstr ""
 #: activities/align4/ActivityInfo.qml:23 activities/bargame/ActivityInfo.qml:26
 #: activities/checkers/ActivityInfo.qml:27
 #: activities/nine_men_morris/ActivityInfo.qml:25
-#: activities/tic_tac_toe/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
-msgid "Tux will play better when you increase the level."
+msgid ""
+"You can use the arrow buttons to manually select the difficulty level. Tux "
+"will play better when you increase the level."
 msgstr ""
 
 #: activities/align4/ActivityInfo.qml:25
@@ -5166,6 +5167,7 @@ msgid "&lt;, &gt; or =: enter the corresponding symbol"
 msgstr ""
 
 #: activities/comparator/resource/1/Data.qml:36
+#: activities/tens_complement_find/resource/3/Data.qml:9
 msgctxt "Data|"
 msgid "Numbers from 1 to 9."
 msgstr ""
@@ -15374,12 +15376,11 @@ msgctxt "ActivityConfig|"
 msgid "Enable voices"
 msgstr "Bruk tale"
 
-# Det erikkje snakk om siffer; det er snakk om tal (som kan vert viste med siffer, prikkar eller fingrar).
 #. Activity title
 #: activities/learn_digits/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
-msgid "Learn digits"
-msgstr "Lær tala under 10"
+msgid "Count and color the circles"
+msgstr ""
 
 #. Help title
 #: activities/learn_digits/ActivityInfo.qml:17
@@ -24478,6 +24479,163 @@ msgid "Maximum value: 500000."
 msgstr "Høgaste verdi: 500 000"
 
 #. Activity title
+#: activities/tens_complement_find/ActivityInfo.qml:14
+msgctxt "ActivityInfo|"
+msgid "Find ten's complement"
+msgstr ""
+
+#. Help title
+#: activities/tens_complement_find/ActivityInfo.qml:16
+msgctxt "ActivityInfo|"
+msgid "Find the ten's complement of each number."
+msgstr ""
+
+#. Help goal
+#: activities/tens_complement_find/ActivityInfo.qml:19
+msgctxt "ActivityInfo|"
+msgid "Learn to find ten's complement."
+msgstr ""
+
+#. Help prerequisite
+#: activities/tens_complement_find/ActivityInfo.qml:21
+msgctxt "ActivityInfo|"
+msgid "Numbers from 1 to 10 and additions."
+msgstr ""
+
+#: activities/tens_complement_find/ActivityInfo.qml:23
+#: activities/tens_complement_use/ActivityInfo.qml:24
+msgctxt "ActivityInfo|"
+msgid ""
+"When all the lines are completed, press the OK button to validate the "
+"answers. If some answers are incorrect, a cross icon will appear on the "
+"corresponding lines. To correct the errors, click on the wrong numbers to "
+"remove them and repeat the previous steps."
+msgstr ""
+
+#. Help manual
+#: activities/tens_complement_find/ActivityInfo.qml:23
+msgctxt "ActivityInfo|"
+msgid ""
+"Create pairs of numbers equal to ten. Select a number in the list, then "
+"select an empty spot of an operation to move the selected number there."
+msgstr ""
+
+#: activities/tens_complement_find/resource/1/Data.qml:25
+msgctxt "Data|"
+msgid "First number from 1 to 4."
+msgstr ""
+
+#: activities/tens_complement_find/resource/2/Data.qml:9
+msgctxt "Data|"
+msgid "First number from 5 to 9."
+msgstr ""
+
+#: activities/tens_complement_find/resource/4/Data.qml:9
+msgctxt "Data|"
+msgid "Find both numbers."
+msgstr ""
+
+#. Activity title
+#: activities/tens_complement_swap/ActivityInfo.qml:14
+msgctxt "ActivityInfo|"
+msgid "Swap ten's complement"
+msgstr ""
+
+#. Help title
+#: activities/tens_complement_swap/ActivityInfo.qml:16
+msgctxt "ActivityInfo|"
+msgid "Swap the numbers to create pairs equal to ten."
+msgstr ""
+
+#. Help goal
+#: activities/tens_complement_swap/ActivityInfo.qml:19
+msgctxt "ActivityInfo|"
+msgid ""
+"Learn to use ten's complement to optimize the order of numbers in an "
+"operation."
+msgstr ""
+
+#. Help prerequisite
+#: activities/tens_complement_swap/ActivityInfo.qml:21
+msgctxt "ActivityInfo|"
+msgid "Numbers from 1 to 30 and additions."
+msgstr ""
+
+#. Help manual
+#: activities/tens_complement_swap/ActivityInfo.qml:23
+msgctxt "ActivityInfo|"
+msgid ""
+"Create pairs of numbers equal to ten within each parentheses. Select a "
+"number, then select another number of the same operation to swap their "
+"position. When all the lines are completed, press the OK button to validate "
+"the answers. If some answers are incorrect, a cross icon will appear on the "
+"corresponding lines. Correct the errors, then press the OK button again."
+msgstr ""
+
+#: activities/tens_complement_swap/resource/1/Data.qml:36
+msgctxt "Data|"
+msgid "2 pairs to make from 4 numbers."
+msgstr ""
+
+#: activities/tens_complement_swap/resource/2/Data.qml:9
+msgctxt "Data|"
+msgid "2 pairs to make from 5 numbers."
+msgstr ""
+
+#: activities/tens_complement_swap/resource/3/Data.qml:9
+msgctxt "Data|"
+msgid "3 pairs to make from 6 numbers."
+msgstr ""
+
+#. Activity title
+#: activities/tens_complement_use/ActivityInfo.qml:14
+msgctxt "ActivityInfo|"
+msgid "Use ten's complement"
+msgstr ""
+
+#. Help title
+#: activities/tens_complement_use/ActivityInfo.qml:16
+msgctxt "ActivityInfo|"
+msgid "Use a ten's complement to simplify the operation."
+msgstr ""
+
+#. Help goal
+#: activities/tens_complement_use/ActivityInfo.qml:19
+msgctxt "ActivityInfo|"
+msgid "Learn a practical use of ten's complement."
+msgstr ""
+
+#. Help prerequisite
+#: activities/tens_complement_use/ActivityInfo.qml:21
+msgctxt "ActivityInfo|"
+msgid "Numbers from 1 to 50 and additions."
+msgstr ""
+
+#. Help manual
+#: activities/tens_complement_use/ActivityInfo.qml:23
+msgctxt "ActivityInfo|"
+msgid ""
+"Decompose the additions to create pairs of numbers equal to ten within each "
+"parentheses. Select a number in the list, then select an empty spot of an "
+"operation to move the selected number there."
+msgstr ""
+
+#: activities/tens_complement_use/resource/1/Data.qml:43
+msgctxt "Data|"
+msgid "Result between 11 and 19."
+msgstr ""
+
+#: activities/tens_complement_use/resource/2/Data.qml:9
+msgctxt "Data|"
+msgid "Result between 20 and 29."
+msgstr ""
+
+#: activities/tens_complement_use/resource/3/Data.qml:9
+msgctxt "Data|"
+msgid "Result between 30 and 50."
+msgstr ""
+
+#. Activity title
 #: activities/tic_tac_toe/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
 msgid "Tic tac toe (against Tux)"
@@ -24507,6 +24665,11 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Play with Tux. Take turns to click on the square which you want to mark. The "
 "first player to create a line of 3 marks wins."
+msgstr ""
+
+#: activities/tic_tac_toe/ActivityInfo.qml:28
+msgctxt "ActivityInfo|"
+msgid "Tux will play better when you increase the level."
 msgstr ""
 
 #. Activity title
@@ -24716,6 +24879,40 @@ msgstr "Skriv inn heile orda mens dei dalar ned, før dei når bakken."
 
 #: core/ChangeLog.qml:30
 msgctxt "ChangeLog|"
+msgid "Map of Spain added for geography activity"
+msgstr ""
+
+#: core/ChangeLog.qml:31
+msgctxt "ChangeLog|"
+msgid "Voices added for Ukrainian"
+msgstr ""
+
+#: core/ChangeLog.qml:32
+msgctxt "ChangeLog|"
+msgid ""
+"New command-line option to list all the activities and start on a specific "
+"one"
+msgstr ""
+
+#: core/ChangeLog.qml:33 core/ChangeLog.qml:68 core/ChangeLog.qml:71
+#: core/ChangeLog.qml:77
+msgctxt "ChangeLog|"
+msgid "Many usability improvements"
+msgstr "Er blitt mykje meir brukarvennleg"
+
+#: core/ChangeLog.qml:34 core/ChangeLog.qml:52 core/ChangeLog.qml:67
+#: core/ChangeLog.qml:72 core/ChangeLog.qml:78
+msgctxt "ChangeLog|"
+msgid "Many new images"
+msgstr "Mange nye bilete"
+
+#: core/ChangeLog.qml:35 core/ChangeLog.qml:73 core/ChangeLog.qml:79
+msgctxt "ChangeLog|"
+msgid "Many bug fixes"
+msgstr "Mange feilrettingar"
+
+#: core/ChangeLog.qml:39
+msgctxt "ChangeLog|"
 msgid ""
 "Reduce the size of the packages for all platforms and of the external word "
 "images set"
@@ -24723,33 +24920,33 @@ msgstr ""
 "Redusert storleiken på program­pakkane (alle plattformer) og på den eksterne "
 "biletsamlinga"
 
-#: core/ChangeLog.qml:31
+#: core/ChangeLog.qml:40
 msgctxt "ChangeLog|"
 msgid "Improve images quality in several activities"
 msgstr "Forbetra biletkvaliteten i fleire aktivitetar"
 
-#: core/ChangeLog.qml:32
+#: core/ChangeLog.qml:41
 msgctxt "ChangeLog|"
 msgid "Fix some transitions in renewable_energy/watercycle on some platforms"
 msgstr ""
 "Retta feil i nokre overgangs­animasjonar i aktivitetane «Fornybar energi» og "
 "«Vasskrinsløpet»"
 
-#: core/ChangeLog.qml:33
+#: core/ChangeLog.qml:42
 msgctxt "ChangeLog|"
 msgid "Fix dead keys ignored on Linux for typing activities"
 msgstr ""
 "Retta problem med at dødtastar vart ignorerte i nokre skriveaktivitetar på "
 "Linux"
 
-#: core/ChangeLog.qml:34
+#: core/ChangeLog.qml:43
 msgctxt "ChangeLog|"
 msgid "Fix level reset when changing level manually in Logical associations"
 msgstr ""
 "Retta nullstilling av brettet når ein manuelt endra nivå i aktiviteten "
 "«Logiske samanhengar»"
 
-#: core/ChangeLog.qml:38
+#: core/ChangeLog.qml:47
 msgctxt "ChangeLog|"
 msgid ""
 "Fix Alphabet sequence, Even and odd numbers and Numbers in order activities"
@@ -24757,43 +24954,37 @@ msgstr ""
 "Retta feil i aktivitetane «Rekkjefølgja på bokstavane i alfabetet», «Partal "
 "og oddetal» og «Tal i rekkjefølgje»"
 
-#: core/ChangeLog.qml:42 core/ChangeLog.qml:50
+#: core/ChangeLog.qml:51 core/ChangeLog.qml:59
 msgctxt "ChangeLog|"
 msgid "Several bug fixes"
 msgstr "Fleire feilrettingar"
 
-#: core/ChangeLog.qml:43 core/ChangeLog.qml:58 core/ChangeLog.qml:63
-#: core/ChangeLog.qml:69
-msgctxt "ChangeLog|"
-msgid "Many new images"
-msgstr "Mange nye bilete"
-
-#: core/ChangeLog.qml:44
+#: core/ChangeLog.qml:53
 msgctxt "ChangeLog|"
 msgid "Translation updated for Russian"
 msgstr "Oppdatert omsetjing for russisk"
 
-#: core/ChangeLog.qml:45
+#: core/ChangeLog.qml:54
 msgctxt "ChangeLog|"
 msgid "New voices for Norwegian Nynorsk"
 msgstr "Nynorske talefiler"
 
-#: core/ChangeLog.qml:49
+#: core/ChangeLog.qml:58
 msgctxt "ChangeLog|"
 msgid "Translations added for Breton, Czech and Macedonian"
 msgstr "Lagt til omsetjingar for bretonsk, tsjekkisk og makedonsk"
 
-#: core/ChangeLog.qml:54
+#: core/ChangeLog.qml:63
 msgctxt "ChangeLog|"
 msgid "Translation added for Azerbaijani"
 msgstr "Lagt til omsetjing for aserbajdsjansk"
 
-#: core/ChangeLog.qml:55
+#: core/ChangeLog.qml:64
 msgctxt "ChangeLog|"
 msgid "New maps and update of the maps for geography activities"
 msgstr "Nye kart og oppdaterte kart for geografiske aktivitetar"
 
-#: core/ChangeLog.qml:56
+#: core/ChangeLog.qml:65
 msgctxt "ChangeLog|"
 msgid ""
 "New dataset containing loops operations for programming maze, and make "
@@ -24802,74 +24993,64 @@ msgstr ""
 "Nytt datasett for lykkjer i programmerings­labyrinten, og gjort opplærings­"
 "bileta mogleg å omsetja"
 
-#: core/ChangeLog.qml:57
+#: core/ChangeLog.qml:66
 msgctxt "ChangeLog|"
 msgid ""
 "Addition of a level to teach voltage source loop in analog electricity "
 "activity"
 msgstr "Nytt brett for å læra om kortslutningar i analogteknikk-aktiviteten"
 
-#: core/ChangeLog.qml:59 core/ChangeLog.qml:62 core/ChangeLog.qml:68
-msgctxt "ChangeLog|"
-msgid "Many usability improvements"
-msgstr "Er blitt mykje meir brukarvennleg"
-
-#: core/ChangeLog.qml:64 core/ChangeLog.qml:70
-msgctxt "ChangeLog|"
-msgid "Many bug fixes"
-msgstr "Mange feilrettingar"
-
-#: core/ChangeLog.qml:67
+#: core/ChangeLog.qml:76
 msgctxt "ChangeLog|"
 msgid "New Activity Settings menu, with dataset selection"
 msgstr "Ny innstillingsmeny i aktivitetane, med val av datasett"
 
-#: core/ChangeLog.qml:73
+#: core/ChangeLog.qml:82
 msgctxt "ChangeLog|"
 msgid "New sub-categories to organize activities"
 msgstr "Nye organisering av aktivitetane, med underkategoriar"
 
-#: core/ChangeLog.qml:74
+#: core/ChangeLog.qml:83
 msgctxt "ChangeLog|"
 msgid "Translation added for Macedonian."
 msgstr "Lagt til omsetjing for makedonsk"
 
-#: core/ChangeLog.qml:75
+#: core/ChangeLog.qml:84
 msgctxt "ChangeLog|"
 msgid "New activities Programming Maze and Baby Tangram"
 msgstr "Nye aktivitetar: programmerings­labyrint og babytangram"
 
-#: core/ChangeLog.qml:76
+#: core/ChangeLog.qml:85
 msgctxt "ChangeLog|"
 msgid "New background music and volume settings."
 msgstr "Nye innstillingar for bakgrunnsmusikk og lydstyrke"
 
-#: core/ChangeLog.qml:77
+#: core/ChangeLog.qml:86
 msgctxt "ChangeLog|"
 msgid "New speed setting in several activities."
 msgstr "Ny fartsinnstilling i fleire aktivitetar"
 
-#: core/ChangeLog.qml:78
+#: core/ChangeLog.qml:87
 msgctxt "ChangeLog|"
 msgid "New option in chess to display captured pieces."
 msgstr "Nytt alternativ i sjakk­aktivitetane for å visa brikkene som er tekne"
 
-#: core/ChangeLog.qml:79
+#: core/ChangeLog.qml:88
 msgctxt "ChangeLog|"
 msgid "New images in Colors, Advanced colors and Target game."
 msgstr "Nye teikningar for fargar, avanserte fargar og målskivespelet"
 
-#: core/ChangeLog.qml:80
+#: core/ChangeLog.qml:89
 msgctxt "ChangeLog|"
 msgid "New voices for US English."
 msgstr "Nye stemmefiler for engelsk (amerikansk)"
 
-#: core/ChangeLog.qml:81 core/ChangeLog.qml:89
+#: core/ChangeLog.qml:90 core/ChangeLog.qml:98
 msgctxt "ChangeLog|"
 msgid "Many little fixes and improvements."
 msgstr "Mange små rettingar og forbetringar"
 
-#: core/ChangeLog.qml:82
+#: core/ChangeLog.qml:91
 msgctxt "ChangeLog|"
 msgid ""
 "Translation updated for multiple languages (Breton, Brazilian Portuguese, "
@@ -24878,17 +25059,17 @@ msgstr ""
 "Oppdatert omsetjing for fleire språk (nynorsk, bretonsk, brasiliansk "
 "portugisisk, finsk, …)"
 
-#: core/ChangeLog.qml:83
+#: core/ChangeLog.qml:92
 msgctxt "ChangeLog|"
 msgid "Add Russian dataset for Click on letter activity."
 msgstr "Lagt til russisk datasett i «Trykk på ein bokstav»-aktiviteten"
 
-#: core/ChangeLog.qml:84
+#: core/ChangeLog.qml:93
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in Dutch."
 msgstr "Språkaktiviteten er no tilgjengeleg på nederlandsk"
 
-#: core/ChangeLog.qml:85
+#: core/ChangeLog.qml:94
 msgctxt "ChangeLog|"
 msgid ""
 "Merge Norwegian counties Nord-Trøndelag and Sør-Trøndelag into Trøndelag in "
@@ -24897,18 +25078,18 @@ msgstr ""
 "Dei norske fylka Nord-Trøndelag og Sør-Trøndelag er slått saman til eitt i "
 "kartaktiviteten"
 
-#: core/ChangeLog.qml:86
+#: core/ChangeLog.qml:95
 msgctxt "ChangeLog|"
 msgid "Fix in braille activities where the cells start at 1, not 0."
 msgstr ""
 "Feilretting i blindeskrift-aktiviteten, der cellene startar med 1, ikkje 0"
 
-#: core/ChangeLog.qml:87
+#: core/ChangeLog.qml:96
 msgctxt "ChangeLog|"
 msgid "Translation added for Basque, Hungarian and Malayalam."
 msgstr "Lagt til omsetjingar for baskisk, ungarsk og malayalam"
 
-#: core/ChangeLog.qml:88
+#: core/ChangeLog.qml:97
 msgctxt "ChangeLog|"
 msgid ""
 "Loading/saving of creations (Baby Wordprocessor, Balance Box and Piano "
@@ -24917,47 +25098,47 @@ msgstr ""
 "Kan no lagra og opna filer (enkel teksthandsamar, balanseøskje og "
 "pianokomponering)"
 
-#: core/ChangeLog.qml:89
+#: core/ChangeLog.qml:98
 msgctxt "ChangeLog|"
 msgid "Translations added for Scottish Gaelic."
 msgstr "Lagt til omsetjing for skotsk-gælisk"
 
-#: core/ChangeLog.qml:90
+#: core/ChangeLog.qml:99
 msgctxt "ChangeLog|"
 msgid "License page added in configuration."
 msgstr "Lagt til lisensside i oppsettet"
 
-#: core/ChangeLog.qml:90
+#: core/ChangeLog.qml:99
 msgctxt "ChangeLog|"
 msgid "Multiple changes on layouts to improve the ergonomy."
 msgstr "Fleire utformingsendringar for betre ergonomi"
 
-#: core/ChangeLog.qml:91
+#: core/ChangeLog.qml:100
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in Polish, Swedish and Ukrainian."
 msgstr "Språkaktiviteten finst no òg på polsk, svensk og ukrainsk"
 
-#: core/ChangeLog.qml:92
+#: core/ChangeLog.qml:101
 msgctxt "ChangeLog|"
 msgid "Search feature."
 msgstr "Ein søkjefunksjon"
 
-#: core/ChangeLog.qml:93
+#: core/ChangeLog.qml:102
 msgctxt "ChangeLog|"
 msgid "A Changelog."
 msgstr "Ein endringslogg"
 
-#: core/ChangeLog.qml:94
+#: core/ChangeLog.qml:103
 msgctxt "ChangeLog|"
 msgid "Many little fixes."
 msgstr "Mange små rettingar"
 
-#: core/ChangeLog.qml:94
+#: core/ChangeLog.qml:103
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in French."
 msgstr "Språkaktiviteten finst no òg på fransk"
 
-#: core/ChangeLog.qml:95
+#: core/ChangeLog.qml:104
 msgctxt "ChangeLog|"
 msgid ""
 "Adding a loading overlay to let the user know that some actions are taking "
@@ -24966,7 +25147,7 @@ msgstr ""
 "Lagt til innlastingsbilete som viser at noko kan ta nokre sekund å fullføra "
 "(for eksempel innlasting av ein aktivitet)"
 
-#: core/ChangeLog.qml:95
+#: core/ChangeLog.qml:104
 msgctxt "ChangeLog|"
 msgid ""
 "Translations added for: Catalan (Valencian), Chinese Traditional, Finnish "
@@ -24975,12 +25156,12 @@ msgstr ""
 "Lagt til omsetjingar for katalansk, kinesisk (tradisjonell), finsk (92 % "
 "omsett), russisk (98 % omsett), slovakisk (92 % omsett) og tyrkisk"
 
-#: core/ChangeLog.qml:96
+#: core/ChangeLog.qml:105
 msgctxt "ChangeLog|"
 msgid "Translations added for: Slovenian, German, Galician."
 msgstr "Lagt til omsetjingar for slovensk, tysk og galisisk"
 
-#: core/ChangeLog.qml:121
+#: core/ChangeLog.qml:130
 #, qt-format
 msgctxt "ChangeLog|"
 msgid "Version %1:"
