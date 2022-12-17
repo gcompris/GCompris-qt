@@ -14,8 +14,8 @@ msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2014-12-25 01:10+0000\n"
-"PO-Revision-Date: 2022-12-08 17:00+0100\n"
-"Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
+"PO-Revision-Date: 2022-11-15 18:09+0100\n"
+"Last-Translator: Antoni Bella <antonibella5@yahoo.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca@valencia\n"
 "MIME-Version: 1.0\n"
@@ -1265,12 +1265,17 @@ msgstr ""
 
 #. Help manual
 #: activities/align4/ActivityInfo.qml:22
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "Play with a friend. Take turns to click the line in which you want to "
+#| "drop a token. The first player to create a line of 4 tokens wins."
 msgctxt "ActivityInfo|"
 msgid ""
 "Play with Tux. Take turns to click the line in which you want to drop a "
 "token. The first player to create a line of 4 tokens wins."
 msgstr ""
-"Jugueu amb en Tux. Per torns, feu clic damunt de la línia en la qual "
+"Jugueu amb un amic. Per torns, feu clic damunt de la línia en la qual "
 "afegireu una fitxa. El primer jugador que cree una línia de 4 fitxes guanya."
 
 #: activities/align4/ActivityInfo.qml:23 activities/bargame/ActivityInfo.qml:26
@@ -2767,6 +2772,12 @@ msgstr "Capacitat de comptar."
 
 #. Help manual
 #: activities/bargame/ActivityInfo.qml:25
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "Click on the ball icon to select a number of balls, then click on the OK "
+#| "button to place the balls in the holes. You win if the computer has to "
+#| "place the last ball. If you want Tux to begin, just click on him."
 msgctxt "ActivityInfo|"
 msgid ""
 "Click on the ball icon to select a number of balls, then click on the OK "
@@ -2775,7 +2786,7 @@ msgid ""
 msgstr ""
 "Feu clic damunt de la icona de bala per a seleccionar un nombre de bales, "
 "després feu clic en el botó «OK» per a situar-les en els forats. Guanyareu "
-"si en Tux ha de posar l'última bala. Si voleu que comence en Tux, "
+"si l'ordinador ha de posar l'última bala. Si voleu que comence en Tux, "
 "senzillament feu-hi clic."
 
 #. Activity title
@@ -4129,9 +4140,12 @@ msgstr "Col·loca els VEGETALS a la dreta i els altres objectes a l'esquerra"
 
 #. Activity title
 #: activities/checkers/ActivityInfo.qml:15
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Play chess against Tux"
 msgctxt "ActivityInfo|"
 msgid "Play checkers (against Tux)"
-msgstr "Juga a les dames (contra en Tux)"
+msgstr "Jugueu als escacs contra en Tux"
 
 #. Help title
 #: activities/checkers/ActivityInfo.qml:17
@@ -4153,6 +4167,27 @@ msgstr ""
 # skip-rule: kct-remove
 #. Help manual
 #: activities/checkers/ActivityInfo.qml:24
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "Checkers is played by two opponents, on opposite sides of the gameboard. "
+#| "One player has the dark pieces; the other has the light pieces. Players "
+#| "alternate turns. A player may not move an opponent's piece. A move "
+#| "consists of moving a piece diagonally to an adjacent unoccupied square. "
+#| "If the adjacent square contains an opponent's piece, and the square "
+#| "immediately beyond it is vacant, the piece may be captured (and removed "
+#| "from the game) by jumping over it.\n"
+#| "Only the dark squares of the checkered board are used. A piece may move "
+#| "only diagonally into an unoccupied square. Capturing is mandatory. The "
+#| "player without pieces remaining, or who cannot move due to being blocked, "
+#| "loses the game.\n"
+#| "When a man reaches the crownhead or kings row (the farthest row forward), "
+#| "it becomes a king, and is marked by placing an additional piece on top of "
+#| "the first man, and acquires additional powers including the ability to "
+#| "move backwards. If there is a piece in a diagonal that a king can "
+#| "capture, he can move any distance along the diagonal, and may capture an "
+#| "opposing man any distance away by jumping to any of the unoccupied "
+#| "squares immediately beyond it.\n"
 msgctxt "ActivityInfo|"
 msgid ""
 "Checkers is played by two opponents, on opposite sides of the gameboard. One "
@@ -4191,7 +4226,7 @@ msgstr ""
 "capacitat de moure i capturar cap arrere. Si hi ha una peça en una diagonal "
 "que un rei pot capturar, este podrà moure's qualsevol distància al llarg de "
 "la diagonal, capturant la peça saltant per damunt seu a qualsevol dels "
-"quadrats sense ocupar immediatament darrere seu."
+"quadrats sense ocupar immediatament darrere seu.\n"
 
 #: activities/checkers/ActivityInfo.qml:29
 #: activities/checkers_2players/ActivityInfo.qml:28
@@ -4227,9 +4262,12 @@ msgstr "Guanyen les negres"
 
 #. Activity title
 #: activities/checkers_2players/ActivityInfo.qml:15
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Play checkers with your friend"
 msgctxt "ActivityInfo|"
 msgid "Play checkers (with a friend)"
-msgstr "Juga a les dames (amb un amic)"
+msgstr "Juga a les dames amb un amic"
 
 # skip-rule: kct-remove
 #. Help manual
@@ -4276,12 +4314,35 @@ msgstr ""
 
 #. Activity title
 #: activities/chess/ActivityInfo.qml:15
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Play chess against Tux"
 msgctxt "ActivityInfo|"
 msgid "Play chess (against Tux)"
-msgstr "Juga als escacs (contra en Tux)"
+msgstr "Jugueu als escacs contra en Tux"
 
 #. Help manual Much of this string is shared across the three activities "chess", "chess_partyend", and "chess_2players".
 #: activities/chess/ActivityInfo.qml:25
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "In this activity you discover the chess game by playing against the "
+#| "computer. It displays the possible target positions for any selected "
+#| "piece which helps the children understand how pieces moves. At first "
+#| "level the computer is fully random to give more chances to the children. "
+#| "As level increases, the computer plays better.\n"
+#| "\n"
+#| "You can achieve a mate sooner if you follow these simple rules:\n"
+#| "    Trying to drive your opponent's king in the corner.\n"
+#| "<b>Explanation</b>: this way your opponent's king would have only 3 "
+#| "directions to move instead of 8 from a better position.\n"
+#| "    'Making a trap'. Use your pawns as baits.\n"
+#| "<b>Explanation</b>: this way you can lure your opponent out of his "
+#| "'comfort zone'.\n"
+#| "    Be patient enough.\n"
+#| "<b>Explanation</b>: don't rush too quick, be patient. Let yourself think "
+#| "a little bit and try to predict your opponent's future moves, so that you "
+#| "can catch him or secure your pieces from his attacks."
 msgctxt "ActivityInfo|"
 msgid ""
 "In this activity you discover the chess game by playing against the "
@@ -4308,8 +4369,7 @@ msgstr ""
 "seleccionada, el qual ajudarà als infants a entendre com es mouen les peces. "
 "En el primer nivell, l'ordinador és completament aleatori per a donar el "
 "nombre més gran de possibilitats. A mesura que augmenta el nivell, "
-"l'ordinador jugarà millor. Podeu utilitzar els botons de fletxa per a "
-"seleccionar manualment el nivell de dificultat.\n"
+"l'ordinador jugarà millor.\n"
 "\n"
 "Podreu aconseguir un mat abans si seguiu estes senzilles regles:\n"
 "     Mireu d'empényer el rei del rival cap a un cantó.\n"
@@ -4333,9 +4393,6 @@ msgid ""
 "will redo one move. To undo all the moves, press and hold the undo button "
 "for 3 seconds."
 msgstr ""
-"Un clic únic en el botó de desfer desfarà un moviment. Un clic únic en el "
-"botó de refer refarà un moviment. Per a desfer tots els moviments, premeu i "
-"manteniu premut el botó de desfer durant 3 segons."
 
 #: activities/chess/ActivityInfo.qml:33
 #: activities/chess_partyend/ActivityInfo.qml:33
@@ -4388,25 +4445,37 @@ msgstr "Moviment no vàlid, el vostre rei queda en escac"
 
 #. Translators: undo all the moves in chess activity
 #: activities/chess/Chess.qml:123
+#, fuzzy
+#| msgctxt "core|"
+#| msgid "Do you really want to quit GCompris?"
 msgctxt "Chess|"
 msgid "Do you really want to undo all the moves?"
-msgstr "Estàs segur que vols desfer tots els moviments?"
+msgstr "Estàs segur que vols eixir de GCompris?"
 
 #: activities/chess/Chess.qml:124
+#, fuzzy
+#| msgctxt "balanceboxeditor|"
+#| msgid "Yes"
 msgctxt "Chess|"
 msgid "Yes"
 msgstr "Sí"
 
 #: activities/chess/Chess.qml:125
+#, fuzzy
+#| msgctxt "balanceboxeditor|"
+#| msgid "No"
 msgctxt "Chess|"
 msgid "No"
 msgstr "No"
 
 #. Activity title
 #: activities/chess_2players/ActivityInfo.qml:15
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Play oware with a friend"
 msgctxt "ActivityInfo|"
 msgid "Play chess (with a friend)"
-msgstr "Juga als escacs (amb un amic)"
+msgstr "Juga a l'aualé amb un amic"
 
 #. Help manual Much of this string is shared across the three activities "chess", "chess_partyend", and "chess_2players".
 #: activities/chess_2players/ActivityInfo.qml:25
@@ -5433,21 +5502,27 @@ msgstr "Continua"
 
 #. Activity title
 #: activities/comparator/ActivityInfo.qml:17
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Compare numbers."
 msgctxt "ActivityInfo|"
 msgid "Compare numbers"
-msgstr "Comparar els números"
+msgstr "Comparar els números."
 
 #. Help title
 #: activities/comparator/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Compare the numbers and choose the corresponding sign."
-msgstr "Compareu els números i trieu el signe corresponent."
+msgstr ""
 
 #. Help goal
 #: activities/comparator/ActivityInfo.qml:22
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Learn about prime numbers."
 msgctxt "ActivityInfo|"
 msgid "Learn how to compare number values."
-msgstr "Aprendre com comparar els valors numèrics."
+msgstr "Aprendre sobre els nombres primers."
 
 #. Help manual
 #: activities/comparator/ActivityInfo.qml:26
@@ -5457,9 +5532,6 @@ msgid ""
 "symbol for this pair. When each line contains a symbol, select the OK button "
 "to validate the answers."
 msgstr ""
-"Seleccioneu un parell de números de la llista. A continuació, seleccioneu el "
-"símbol de comparació correcte per a este parell. Quan cada línia continga un "
-"símbol, seleccioneu el botó D'acord per a validar les respostes."
 
 #: activities/comparator/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
@@ -5467,84 +5539,109 @@ msgid ""
 "If some answers are incorrect, a cross icon will appear on the corresponding "
 "lines. Correct the errors, then select the OK button again."
 msgstr ""
-"Si alguna resposta és incorrecta, apareixerà una icona de creu en les línies "
-"corresponents. Corregiu els errors i seleccioneu el botó D'acord de nou."
 
 #: activities/comparator/ActivityInfo.qml:29
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Down arrow: select previous item"
 msgctxt "ActivityInfo|"
 msgid "Up and Down arrows: select a pair of numbers in the list"
-msgstr "Fletxa amunt o avall: selecciona un parell de números de la llista"
+msgstr "Fletxa avall: per a seleccionar l'element anterior"
 
 #: activities/comparator/ActivityInfo.qml:30
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Left and Right arrows: turn left and right"
 msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: select a symbol button"
-msgstr "Fletxa esquerra o dreta: selecciona un botó de símbol"
+msgstr "Fletxa esquerra i dreta: per a fer girar a l'esquerra i dreta"
 
 #: activities/comparator/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
 msgid "Space: if a symbol button is selected, enter this symbol"
-msgstr "Espai: si s'ha seleccionat un botó de símbol, introduïx este símbol"
+msgstr ""
 
 #: activities/comparator/ActivityInfo.qml:32
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Enter: validate your answer"
 msgctxt "ActivityInfo|"
 msgid "Return: validate the answers"
-msgstr "Retorn: valida les respostes"
+msgstr "Retorn: per a validar la resposta"
 
 #: activities/comparator/ActivityInfo.qml:33
 msgctxt "ActivityInfo|"
 msgid "&lt;, &gt; or =: enter the corresponding symbol"
-msgstr "&lt;, &gt; o =: introduïx el símbol corresponent"
+msgstr ""
 
 #: activities/comparator/resource/1/Data.qml:36
 #: activities/tens_complement_find/resource/3/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Numbers from 0 to 9."
 msgctxt "Data|"
 msgid "Numbers from 1 to 9."
-msgstr "Números des de l'1 fins al 9."
+msgstr "Números des del 0 fins al 9."
 
 #: activities/comparator/resource/10/Data.qml:14
 msgctxt "Data|"
 msgid "3 decimal places between 0 and 999."
-msgstr "3 posicions decimals entre 0 i 999."
+msgstr ""
 
 #: activities/comparator/resource/2/Data.qml:14
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Numbers from 0 to 9."
 msgctxt "Data|"
 msgid "Numbers from 1 to 19."
-msgstr "Números des de l'1 fins al 19."
+msgstr "Números des del 0 fins al 9."
 
 #: activities/comparator/resource/3/Data.qml:14
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Numbers from 0 to 9."
 msgctxt "Data|"
 msgid "Numbers from 1 to 100."
-msgstr "Números des de l'1 fins al 100."
+msgstr "Números des del 0 fins al 9."
 
 #: activities/comparator/resource/4/Data.qml:14
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Numbers from 0 to 9."
 msgctxt "Data|"
 msgid "Numbers from 1 to 1000."
-msgstr "Números des de l'1 fins al 1000."
+msgstr "Números des del 0 fins al 9."
 
 #: activities/comparator/resource/5/Data.qml:14
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Numbers from 0 to 9."
 msgctxt "Data|"
 msgid "Numbers from 1 to 1000000."
-msgstr "Números des de l'1 fins a 1000000."
+msgstr "Números des del 0 fins al 9."
 
 #: activities/comparator/resource/6/Data.qml:14
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Numbers from 0 to 9."
 msgctxt "Data|"
 msgid "Numbers from 1 to 1 billion."
-msgstr "Números des de l'1 fins a 1 miliard."
+msgstr "Números des del 0 fins al 9."
 
 #: activities/comparator/resource/7/Data.qml:14
 msgctxt "Data|"
 msgid "1 decimal place between 0 and 9, same integer part."
-msgstr "1 posició decimal entre 0 i 9, la mateixa part entera."
+msgstr ""
 
 #: activities/comparator/resource/8/Data.qml:14
 msgctxt "Data|"
 msgid "1 decimal place between 0 and 9."
-msgstr "1 posició decimal entre 0 i 9."
+msgstr ""
 
 #: activities/comparator/resource/9/Data.qml:14
 msgctxt "Data|"
 msgid "2 decimal places between 0 and 99.99."
-msgstr "2 posicions decimals entre 0 i 99,99."
+msgstr ""
 
 #. Activity title
 #: activities/crane/ActivityInfo.qml:20
@@ -6937,34 +7034,34 @@ msgid ""
 "escape predators, and possess an excellent sense of balance. They have "
 "single-toed hooves."
 msgstr ""
-"El cavall «renilla». Els cavalls estan adaptats per a córrer, permetent-los "
-"escapar ràpidament dels depredadors, i tenen un sentit de l'equilibri "
-"excel·lent. Tenen peülles d'un sol dit."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:25
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "This animal's ancestors were wolves."
 msgctxt "board1|"
 msgid "This animal has single-toed hooves."
-msgstr "Este animal té peülles d'un sol dit."
+msgstr "Els avantpassats d'este animal eren els llops."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:33
 msgctxt "board1|"
 msgid "Chicken"
 msgstr "Gallina"
 
-# skip-rule: ff-domestic
 #: activities/explore_farm_animals/resource/board/board1.qml:34
 msgctxt "board1|"
 msgid ""
 "The chicken goes 'cluck'. Domestic chickens have wings, but are not capable "
 "of long-distance flight. They have a comb on their head."
 msgstr ""
-"La gallina «cloqueja». Les gallines domèstiques tenen ales, però no són "
-"capaces de volar a llarga distància. Tenen una cresta al cap."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:37
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "This animal likes to come out at night."
 msgctxt "board1|"
 msgid "This animal has a comb on its head."
-msgstr "Este animal té una cresta al cap."
+msgstr "A este animal li agrada eixir a la nit."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:45
 msgctxt "board1|"
@@ -6978,14 +7075,11 @@ msgid ""
 "developed sense of taste, with around 20,000 taste buds. They can detect "
 "odours 8km away."
 msgstr ""
-"La vaca «mugeix». Les vaques tenen un camp de visió ampli de 330°. Tenen un "
-"sentit de gust ben desenvolupat, amb unes 20.000 papil·les gustatives. Poden "
-"detectar olors fins a 8 km de distància."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:49
 msgctxt "board1|"
 msgid "This animal has around 20,000 taste buds."
-msgstr "Este animal té al voltant de 20.000 papil·les gustatives."
+msgstr ""
 
 #: activities/explore_farm_animals/resource/board/board1.qml:57
 msgctxt "board1|"
@@ -6999,14 +7093,14 @@ msgid ""
 "ability to chase mice and other rodents. They purr to communicate various "
 "emotions."
 msgstr ""
-"El gat «miola». Els gats són valorats pels humans per a la companyia i la "
-"seua capacitat de perseguir ratolins i altres rosegadors. Ronquen per a "
-"comunicar diverses emocions."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:61
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "This animal lays eggs."
 msgctxt "board1|"
 msgid "This animal can purr."
-msgstr "Este animal pot roncar."
+msgstr "Este animal pon ous."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:69
 msgctxt "board1|"
@@ -7019,15 +7113,11 @@ msgid ""
 "The pig goes 'oink'. Pigs wallow in the mud, mainly to control their body "
 "temperature."
 msgstr ""
-"El porc «rondineja» o «gruny». Els porcs es rebolquen en el fang, "
-"principalment per a controlar la seua temperatura corporal."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:73
 msgctxt "board1|"
 msgid "This animal wallows in the mud to control its body temperature."
 msgstr ""
-"Este animal es rebolca en el fang per a controlar la seua temperatura "
-"corporal."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:81
 msgctxt "board1|"
@@ -7040,13 +7130,14 @@ msgid ""
 "The duck goes 'quack'. Ducks are mostly aquatic birds. They have waterproof "
 "feathers and webbed feet which enable them to swim on the water."
 msgstr ""
-"L'ànec «nyequeja». Els ànecs són principalment ocells aquàtics. Tenen plomes "
-"impermeables i peus amb membrana que els permeten nadar a l'aigua."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:85
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "This animal has webbed feet so it can swim in the water."
 msgctxt "board1|"
 msgid "This animal has webbed feet and can swim on the water."
-msgstr "Este animal té peus amb membrana per tal de poder nadar a l'aigua."
+msgstr "Este animal té potes palmades per tal de poder nadar a l'aigua."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:93
 msgctxt "board1|"
@@ -7054,18 +7145,26 @@ msgid "Owl"
 msgstr "Mussol"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:94
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid ""
+#| "The owl goes 'hoo. hoo.' The owl has excellent vision and hearing at "
+#| "night."
 msgctxt "board1|"
 msgid ""
 "The owl goes 'hoot'. Owls are nocturnal birds, they have excellent vision "
 "and hearing at night."
 msgstr ""
-"El mussol fa «uuu-uuu». Els mussols són ocells nocturns, tenen una "
-"excel·lent visió i oïdes de nit."
+"El mussol fa uuu-uuu «udol». Els mussols tenen una excel·lent vista i oïda a "
+"la nit."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:97
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "This animal likes to come out at night."
 msgctxt "board1|"
 msgid "This animal is a nocturnal bird."
-msgstr "Este animal és un ocell nocturn."
+msgstr "A este animal li agrada eixir a la nit."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:105
 msgctxt "board1|"
@@ -7078,13 +7177,14 @@ msgid ""
 "The dog goes 'woof'. Dogs are probably the oldest domesticated species. They "
 "are descendants of the wolf."
 msgstr ""
-"El gos fa «lladrucs». Els gossos són probablement les espècies domesticades "
-"més antigues. Són descendents del llop."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:109
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "This animal is a close relative to the goat."
 msgctxt "board1|"
 msgid "This animal is a descendant of the wolf."
-msgstr "Este animal és descendent del llop."
+msgstr "Este animal és un parent proper de la cabra."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:117
 msgctxt "board1|"
@@ -7097,13 +7197,14 @@ msgid ""
 "The sheep goes 'baa'. Most sheep breeds bear a fleece of wool. The fleece "
 "can be sheared and used to produce textile fibre."
 msgstr ""
-"L'ovella «bela». La majoria de les races d'ovelles porten un velló de llana. "
-"El velló es pot esquilar i utilitzar per a produir fibres tèxtils."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:121
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "This animal's ancestors were wolves."
 msgctxt "board1|"
 msgid "This animal produces wool."
-msgstr "Este animal produïx llana."
+msgstr "Els avantpassats d'este animal eren els llops."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:131
 msgctxt "board1|"
@@ -8514,6 +8615,11 @@ msgid "Polar bear"
 msgstr "Os blanc"
 
 #: activities/explore_world_animals/resource/board/board2.qml:31
+#, fuzzy
+#| msgctxt "board2|"
+#| msgid ""
+#| "The polar bear is one of the world's largest predatory mammals. It "
+#| "weights up to a ton and can be as long as 3 meters!"
 msgctxt "board2|"
 msgid ""
 "The polar bear is one of the world's largest predatory mammals. It weighs up "
@@ -9423,32 +9529,44 @@ msgstr ""
 
 #. Activity title
 #: activities/fractions_create/ActivityInfo.qml:14
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Practice subtractions."
 msgctxt "ActivityInfo|"
 msgid "Create the fractions"
-msgstr "Crear les fraccions"
+msgstr "Practicar les restes."
 
 #. Help title
 #: activities/fractions_create/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "A shape split in equal parts is displayed on screen."
-msgstr "Es mostra en la pantalla una forma dividida en parts iguals."
+msgstr ""
 
 #: activities/fractions_create/ActivityInfo.qml:18
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "Drag the appropriate numbers and the operators to the boxes to obtain the "
+#| "number to guess in the instruction."
 msgctxt "ActivityInfo|"
 msgid ""
 "Select the appropriate number of parts as described in the instructions."
 msgstr ""
-"Selecciona el nombre adequat de parts com es descriu en les instruccions."
+"Arrossegueu els números apropiats i els operadors fins als quadros per a "
+"obtindre el número que voleu endevinar amb la instrucció."
 
 #: activities/fractions_create/fractions_create.js:79
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Digits representation"
 msgctxt "fractions_create|"
 msgid "Find the represented fraction."
-msgstr "Troba la fracció representada."
+msgstr "Representació dels dígits"
 
 #: activities/fractions_create/resource/1/Data.qml:9
 msgctxt "Data|"
 msgid "Simplified fractions with a pie."
-msgstr "Fraccions simplificades amb un pastís."
+msgstr ""
 
 #: activities/fractions_create/resource/1/Data.qml:18
 #: activities/fractions_create/resource/3/Data.qml:17
@@ -9456,63 +9574,78 @@ msgstr "Fraccions simplificades amb un pastís."
 #: activities/fractions_create/resource/3/Data.qml:29
 msgctxt "Data|"
 msgid "Select one half of the pie."
-msgstr "Selecciona una meitat del pastís."
+msgstr ""
 
 #: activities/fractions_create/resource/1/Data.qml:24
 #: activities/fractions_create/resource/3/Data.qml:35
 #: activities/fractions_create/resource/3/Data.qml:49
+#, fuzzy
+#| msgctxt "calendar_dataset|"
+#| msgid "Select the fifth Thursday of the given month"
 msgctxt "Data|"
 msgid "Select one-third of the pie."
-msgstr "Selecciona un terç del pastís."
+msgstr "Selecciona el cinquè dijous del mes indicat"
 
 #: activities/fractions_create/resource/1/Data.qml:30
 #: activities/fractions_create/resource/3/Data.qml:41
 #: activities/fractions_create/resource/3/Data.qml:55
+#, fuzzy
+#| msgctxt "calendar_dataset|"
+#| msgid "Select the fourth Sunday of the given month"
 msgctxt "Data|"
 msgid "Select two-thirds of the pie."
-msgstr "Selecciona dos terços del pastís."
+msgstr "Selecciona el quart diumenge del mes indicat"
 
 #: activities/fractions_create/resource/1/Data.qml:36
 #: activities/fractions_create/resource/3/Data.qml:61
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Select the butterfly of the correct color."
 msgctxt "Data|"
 msgid "Select one-quarter of the pie."
-msgstr "Selecciona un quart del pastís."
+msgstr "Seleccioneu la palometa del color correcte."
 
 #: activities/fractions_create/resource/1/Data.qml:42
 #: activities/fractions_create/resource/3/Data.qml:67
+#, fuzzy
+#| msgctxt "calendar_dataset|"
+#| msgid "Select the fifth Thursday of the given month"
 msgctxt "Data|"
 msgid "Select two-fifths of the pie."
-msgstr "Selecciona dos cinquens del pastís."
+msgstr "Selecciona el cinquè dijous del mes indicat"
 
 #: activities/fractions_create/resource/1/Data.qml:50
 msgctxt "Data|"
 msgid "Select one pie and one-quarter of a pie."
-msgstr "Selecciona un pastís i un quart d'un altre pastís."
+msgstr ""
 
 #: activities/fractions_create/resource/1/Data.qml:56
 msgctxt "Data|"
 msgid "Select one pie and two-fifths of a pie."
-msgstr "Selecciona un pastís i dos cinquens d'un altre pastís."
+msgstr ""
 
 #: activities/fractions_create/resource/1/Data.qml:62
 msgctxt "Data|"
 msgid "Select one pie and one-third of a pie."
-msgstr "Selecciona un pastís i un terç d'un altre pastís."
+msgstr ""
 
 #: activities/fractions_create/resource/1/Data.qml:68
 msgctxt "Data|"
 msgid "Select one pie and one half of a pie."
-msgstr "Selecciona un pastís i una meitat d'un altre pastís."
+msgstr ""
 
 #: activities/fractions_create/resource/1/Data.qml:74
 msgctxt "Data|"
 msgid "Select one pie and three-quarters of a pie."
-msgstr "Selecciona un pastís i tres quarts d'un altre pastís."
+msgstr ""
 
 #: activities/fractions_create/resource/10/Data.qml:9
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Answer the questions with a correctness of 100%."
 msgctxt "Data|"
 msgid "Specific questions with a rectangle."
-msgstr "Preguntes específiques amb un rectangle."
+msgstr "Responeu les preguntes amb una correcció del 100%."
 
 #: activities/fractions_create/resource/10/Data.qml:18
 #: activities/fractions_create/resource/10/Data.qml:24
@@ -9521,199 +9654,242 @@ msgid ""
 "Select as many parts as you can without taking more than half of the "
 "rectangle."
 msgstr ""
-"Selecciona tantes parts com pugues sense agafar més de la meitat del "
-"rectangle."
 
 #: activities/fractions_create/resource/2/Data.qml:9
 msgctxt "Data|"
 msgid "Simplified fractions with a rectangle."
-msgstr "Fraccions simplificades amb un rectangle."
+msgstr ""
 
 #: activities/fractions_create/resource/2/Data.qml:18
 #: activities/fractions_create/resource/4/Data.qml:17
 #: activities/fractions_create/resource/4/Data.qml:23
 #: activities/fractions_create/resource/4/Data.qml:29
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Select the butterfly of the correct color."
 msgctxt "Data|"
 msgid "Select one half of the rectangle."
-msgstr "Selecciona una meitat del rectangle."
+msgstr "Seleccioneu la palometa del color correcte."
 
 #: activities/fractions_create/resource/2/Data.qml:24
 #: activities/fractions_create/resource/4/Data.qml:35
 #: activities/fractions_create/resource/4/Data.qml:49
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Select the butterfly of the correct color."
 msgctxt "Data|"
 msgid "Select one-third of the rectangle."
-msgstr "Selecciona un terç del rectangle."
+msgstr "Seleccioneu la palometa del color correcte."
 
 #: activities/fractions_create/resource/2/Data.qml:30
 #: activities/fractions_create/resource/4/Data.qml:41
 #: activities/fractions_create/resource/4/Data.qml:55
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Select the butterfly of the correct color."
 msgctxt "Data|"
 msgid "Select two-thirds of the rectangle."
-msgstr "Selecciona dos terços del rectangle."
+msgstr "Seleccioneu la palometa del color correcte."
 
 #: activities/fractions_create/resource/2/Data.qml:36
 #: activities/fractions_create/resource/4/Data.qml:61
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Select the butterfly of the correct color."
 msgctxt "Data|"
 msgid "Select one-quarter of the rectangle."
-msgstr "Selecciona un quart del rectangle."
+msgstr "Seleccioneu la palometa del color correcte."
 
 #: activities/fractions_create/resource/2/Data.qml:42
 #: activities/fractions_create/resource/4/Data.qml:67
+#, fuzzy
+#| msgctxt "calendar_dataset|"
+#| msgid "Select the fifth Thursday of the given month"
 msgctxt "Data|"
 msgid "Select two-fifths of the rectangle."
-msgstr "Selecciona dos cinquens del rectangle."
+msgstr "Selecciona el cinquè dijous del mes indicat"
 
 #: activities/fractions_create/resource/2/Data.qml:50
 msgctxt "Data|"
 msgid "Select one rectangle and one-quarter of a rectangle."
-msgstr "Selecciona un rectangle i un quart d'un altre rectangle."
+msgstr ""
 
 #: activities/fractions_create/resource/2/Data.qml:56
 msgctxt "Data|"
 msgid "Select one rectangle and two-fifths of a rectangle."
-msgstr "Selecciona un rectangle i dos cinquens d'un altre rectangle."
+msgstr ""
 
 #: activities/fractions_create/resource/2/Data.qml:62
 msgctxt "Data|"
 msgid "Select one rectangle and one-third of a rectangle."
-msgstr "Selecciona un rectangle i un terç d'un altre rectangle."
+msgstr ""
 
 #: activities/fractions_create/resource/2/Data.qml:68
 msgctxt "Data|"
 msgid "Select one rectangle and one half of a rectangle."
-msgstr "Selecciona un rectangle i una meitat d'un altre rectangle."
+msgstr ""
 
 #: activities/fractions_create/resource/2/Data.qml:74
 msgctxt "Data|"
 msgid "Select one rectangle and three-quarters of a rectangle."
-msgstr "Selecciona un rectangle i tres quarts d'un altre rectangle."
+msgstr ""
 
 #: activities/fractions_create/resource/3/Data.qml:9
 msgctxt "Data|"
 msgid "Non-simplified fractions with a pie."
-msgstr "Fraccions no simplificades amb un pastís."
+msgstr ""
 
 #: activities/fractions_create/resource/3/Data.qml:73
+#, fuzzy
+#| msgctxt "calendar_dataset|"
+#| msgid "Select the fifth Thursday of the given month"
 msgctxt "Data|"
 msgid "Select three-fifths of the pie."
-msgstr "Selecciona tres cinquens del pastís."
+msgstr "Selecciona el cinquè dijous del mes indicat"
 
 #: activities/fractions_create/resource/4/Data.qml:9
 msgctxt "Data|"
 msgid "Non-simplified fractions with a rectangle."
-msgstr "Fraccions no simplificades amb un rectangle."
+msgstr ""
 
 #: activities/fractions_create/resource/4/Data.qml:73
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Select the butterfly of the correct color."
 msgctxt "Data|"
 msgid "Select three-fifths of the rectangle."
-msgstr "Selecciona tres cinquens del rectangle."
+msgstr "Seleccioneu la palometa del color correcte."
 
 #: activities/fractions_create/resource/5/Data.qml:9
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Decimal number system."
 msgctxt "Data|"
 msgid "Decimal numbers with a pie."
-msgstr "Nombres decimals amb un pastís."
+msgstr "Sistema de nombres decimals."
 
 #: activities/fractions_create/resource/5/Data.qml:18
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 0.5 pie."
-msgstr "Selecciona 0,5 pastissos."
+msgstr "Seleccionat"
 
 #: activities/fractions_create/resource/5/Data.qml:24
 msgctxt "Data|"
 msgid "Select 0.25 pie."
-msgstr "Selecciona 0,25 pastissos."
+msgstr ""
 
 #: activities/fractions_create/resource/5/Data.qml:30
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 0.4 pie."
-msgstr "Selecciona 0,4 pastissos."
+msgstr "Seleccionat"
 
 #: activities/fractions_create/resource/5/Data.qml:36
 msgctxt "Data|"
 msgid "Select 0.75 pie."
-msgstr "Selecciona 0,75 pastissos."
+msgstr ""
 
 #: activities/fractions_create/resource/5/Data.qml:42
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 0.8 pie."
-msgstr "Selecciona 0,8 pastissos."
+msgstr "Seleccionat"
 
 #: activities/fractions_create/resource/5/Data.qml:50
 msgctxt "Data|"
 msgid "Select 1.25 pies."
-msgstr "Selecciona 1,25 pastissos."
+msgstr ""
 
 #: activities/fractions_create/resource/5/Data.qml:56
 msgctxt "Data|"
 msgid "Select 1.4 pies."
-msgstr "Selecciona 1,4 pastissos."
+msgstr ""
 
 #: activities/fractions_create/resource/5/Data.qml:62
 #: activities/fractions_create/resource/5/Data.qml:68
 msgctxt "Data|"
 msgid "Select 1.5 pies."
-msgstr "Selecciona 1,5 pastissos."
+msgstr ""
 
 #: activities/fractions_create/resource/5/Data.qml:74
 msgctxt "Data|"
 msgid "Select 1.75 pies."
-msgstr "Selecciona 1,75 pastissos."
+msgstr ""
 
 #: activities/fractions_create/resource/6/Data.qml:9
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Decimal number system."
 msgctxt "Data|"
 msgid "Decimal numbers with a rectangle."
-msgstr "Nombres decimals amb un rectangle."
+msgstr "Sistema de nombres decimals."
 
 #: activities/fractions_create/resource/6/Data.qml:18
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Select your locale"
 msgctxt "Data|"
 msgid "Select 0.5 rectangle."
-msgstr "Selecciona 0,5 rectangles."
+msgstr "Seleccioneu la vostra configuració regional"
 
 #: activities/fractions_create/resource/6/Data.qml:24
 msgctxt "Data|"
 msgid "Select 0.25 rectangle."
-msgstr "Selecciona 0,25 rectangles."
+msgstr ""
 
 #: activities/fractions_create/resource/6/Data.qml:30
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Select your locale"
 msgctxt "Data|"
 msgid "Select 0.4 rectangle."
-msgstr "Selecciona 0,4 rectangles."
+msgstr "Seleccioneu la vostra configuració regional"
 
 #: activities/fractions_create/resource/6/Data.qml:36
 msgctxt "Data|"
 msgid "Select 0.75 rectangle."
-msgstr "Selecciona 0,75 rectangles."
+msgstr ""
 
 #: activities/fractions_create/resource/6/Data.qml:42
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Select your locale"
 msgctxt "Data|"
 msgid "Select 0.8 rectangle."
-msgstr "Selecciona 0,8 rectangles."
+msgstr "Seleccioneu la vostra configuració regional"
 
 #: activities/fractions_create/resource/6/Data.qml:50
 msgctxt "Data|"
 msgid "Select 1.25 rectangles."
-msgstr "Selecciona 1,25 rectangles."
+msgstr ""
 
 #: activities/fractions_create/resource/6/Data.qml:56
 msgctxt "Data|"
 msgid "Select 1.4 rectangles."
-msgstr "Selecciona 1,4 rectangles."
+msgstr ""
 
 #: activities/fractions_create/resource/6/Data.qml:62
 #: activities/fractions_create/resource/6/Data.qml:68
 msgctxt "Data|"
 msgid "Select 1.5 rectangles."
-msgstr "Selecciona 1,5 rectangles."
+msgstr ""
 
 #: activities/fractions_create/resource/6/Data.qml:74
 msgctxt "Data|"
 msgid "Select 1.75 rectangles."
-msgstr "Selecciona 1,75 rectangles."
+msgstr ""
 
 #: activities/fractions_create/resource/7/Data.qml:9
 msgctxt "Data|"
 msgid "Percentages with a pie."
-msgstr "Tants per cent amb un pastís."
+msgstr ""
 
 #. Select %1 percent of the pie.
 #: activities/fractions_create/resource/7/Data.qml:19
@@ -9724,15 +9900,17 @@ msgstr "Tants per cent amb un pastís."
 #: activities/fractions_create/resource/7/Data.qml:56
 #: activities/fractions_create/resource/7/Data.qml:63
 #: activities/fractions_create/resource/7/Data.qml:70
-#, qt-format
+#, fuzzy, qt-format
+#| msgctxt "calendar_dataset|"
+#| msgid "Select the 1st"
 msgctxt "Data|"
 msgid "Select %1% of the pie."
-msgstr "Selecciona %1% del pastís."
+msgstr "Selecciona el dia 1"
 
 #: activities/fractions_create/resource/8/Data.qml:9
 msgctxt "Data|"
 msgid "Percentages with a rectangle."
-msgstr "Tants per cent amb un rectangle."
+msgstr ""
 
 #. Select %1 percent of the rectangle.
 #: activities/fractions_create/resource/8/Data.qml:19
@@ -9744,12 +9922,12 @@ msgstr "Tants per cent amb un rectangle."
 #, qt-format
 msgctxt "Data|"
 msgid "Select %1% of the rectangle."
-msgstr "Selecciona %1% del rectangle."
+msgstr ""
 
 #: activities/fractions_create/resource/9/Data.qml:9
 msgctxt "Data|"
 msgid "Specific questions with a pie."
-msgstr "Preguntes específiques amb un pastís."
+msgstr ""
 
 #: activities/fractions_create/resource/9/Data.qml:18
 #: activities/fractions_create/resource/9/Data.qml:24
@@ -9757,50 +9935,65 @@ msgctxt "Data|"
 msgid ""
 "Select as many parts as you can without taking more than half of the pie."
 msgstr ""
-"Selecciona tantes parts com pugues sense agafar més de la meitat del pastís."
 
 #. Activity title
 #: activities/fractions_find/ActivityInfo.qml:14
+#, fuzzy
+#| msgctxt "instruments|"
+#| msgid "Find the accordion"
 msgctxt "ActivityInfo|"
 msgid "Find the fractions"
-msgstr "Troba les fraccions"
+msgstr "Troba l'acordió"
 
 #. Help title
 #: activities/fractions_find/ActivityInfo.qml:16
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Find the correct date and select it on the calendar."
 msgctxt "ActivityInfo|"
 msgid "Find the correct numerator and denominator of the represented fraction."
-msgstr ""
-"Troba el numerador i el denominador correcte de la fracció representada."
+msgstr "Trobeu la data correcta i seleccioneu-la al calendari."
 
+# Nota: https://ca.wikipedia.org/wiki/Marro_de_nou
 #: activities/fractions_find/resource/1/Data.qml:19
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Nine men's morris (with a friend)"
 msgctxt "Data|"
 msgid "Find denominator (with a pie)."
-msgstr "Troba el denominador (amb un pastís)."
+msgstr "Marro de nou (amb un amic)"
 
+# Nota: https://ca.wikipedia.org/wiki/Marro_de_nou
 #: activities/fractions_find/resource/2/Data.qml:19
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Nine men's morris (with a friend)"
 msgctxt "Data|"
 msgid "Find denominator (with a rectangle)."
-msgstr "Troba el denominador (amb un rectangle)."
+msgstr "Marro de nou (amb un amic)"
 
 #: activities/fractions_find/resource/3/Data.qml:9
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Align four (with a friend)"
 msgctxt "Data|"
 msgid "Find numerator (with a pie)."
-msgstr "Troba el numerador (amb un pastís)."
+msgstr "Alinea quatre (amb un amic)"
 
 #: activities/fractions_find/resource/4/Data.qml:9
 msgctxt "Data|"
 msgid "Find numerator (with a rectangle)."
-msgstr "Troba el numerador (amb un rectangle)."
+msgstr ""
 
 #: activities/fractions_find/resource/5/Data.qml:9
 msgctxt "Data|"
 msgid "Find numerator and denominator (with a pie)."
-msgstr "Troba el numerador i el denominador (amb un pastís)."
+msgstr ""
 
 #: activities/fractions_find/resource/6/Data.qml:9
 msgctxt "Data|"
 msgid "Find numerator and denominator (with a rectangle)."
-msgstr "Troba el numerador i el denominador (amb un rectangle)."
+msgstr ""
 
 #. Activity title
 #: activities/geo-country/ActivityInfo.qml:19
@@ -11043,122 +11236,146 @@ msgstr "Suvalkija"
 #: activities/geo-country/resource/board/board18_0.qml:13
 msgctxt "board18_0|"
 msgid "Autonomous communities of Spain"
-msgstr "Comunitats autònomes d'Espanya"
+msgstr ""
 
 #. Autonomous communities of Spain: Andalusia
 #: activities/geo-country/resource/board/board18_0.qml:22
 msgctxt "board18_0|"
 msgid "Andalusia"
-msgstr "Andalusia"
+msgstr ""
 
 #. Autonomous communities of Spain: Madrid
 #: activities/geo-country/resource/board/board18_0.qml:29
 msgctxt "board18_0|"
 msgid "Madrid"
-msgstr "Madrid"
+msgstr ""
 
 #. Autonomous communities of Spain: Galicia
 #: activities/geo-country/resource/board/board18_0.qml:36
 msgctxt "board18_0|"
 msgid "Galicia"
-msgstr "Galícia"
+msgstr ""
 
 #. Autonomous communities of Spain: Castile and León
 #: activities/geo-country/resource/board/board18_0.qml:43
 msgctxt "board18_0|"
 msgid "Castile and León"
-msgstr "Castella i Lleó"
+msgstr ""
 
 #. Autonomous communities of Spain: Castilla-La Mancha
 #: activities/geo-country/resource/board/board18_0.qml:50
 msgctxt "board18_0|"
 msgid "Castilla-La Mancha"
-msgstr "Castella la Manxa"
+msgstr ""
 
 #. Autonomous communities of Spain: Catalonia
 #: activities/geo-country/resource/board/board18_0.qml:57
+#, fuzzy
+#| msgctxt "board14_0|"
+#| msgid "New Caledonia"
 msgctxt "board18_0|"
 msgid "Catalonia"
-msgstr "Catalunya"
+msgstr "Nova Caledònia"
 
 #. Autonomous communities of Spain: Aragon
 #: activities/geo-country/resource/board/board18_0.qml:64
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Hexagon"
 msgctxt "board18_0|"
 msgid "Aragon"
-msgstr "Aragó"
+msgstr "Hexàgon"
 
 #. Autonomous communities of Spain: Valencia
 #: activities/geo-country/resource/board/board18_0.qml:71
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Calendar"
 msgctxt "board18_0|"
 msgid "Valencia"
-msgstr "València"
+msgstr "Calendari"
 
 #. Autonomous communities of Spain: Murcia
 #: activities/geo-country/resource/board/board18_0.qml:78
 msgctxt "board18_0|"
 msgid "Murcia"
-msgstr "Múrcia"
+msgstr ""
 
 #. Autonomous communities of Spain: Asturias
 #: activities/geo-country/resource/board/board18_0.qml:85
 msgctxt "board18_0|"
 msgid "Asturias"
-msgstr "Astúries"
+msgstr ""
 
 #. Autonomous communities of Spain: Basque Country
 #: activities/geo-country/resource/board/board18_0.qml:92
 msgctxt "board18_0|"
 msgid "Basque Country"
-msgstr "País Basc"
+msgstr ""
 
 #. Autonomous communities of Spain: La Rioja
 #: activities/geo-country/resource/board/board18_0.qml:99
+#, fuzzy
+#| msgctxt "board3_0|"
+#| msgid "La Rioja"
 msgctxt "board18_0|"
 msgid "La Rioja"
 msgstr "La Rioja"
 
 #. Autonomous communities of Spain: Cantabria
 #: activities/geo-country/resource/board/board18_0.qml:106
+#, fuzzy
+#| msgctxt "board11_0|"
+#| msgid "Calabria"
 msgctxt "board18_0|"
 msgid "Cantabria"
-msgstr "Cantàbria"
+msgstr "Calàbria"
 
 # Nota: <https://en.wikipedia.org/wiki/Navajo_National_Monument>
 #. Autonomous communities of Spain: Navarre
 #: activities/geo-country/resource/board/board18_0.qml:113
+#, fuzzy
+#| msgctxt "board5|"
+#| msgid "Navajo"
 msgctxt "board18_0|"
 msgid "Navarre"
-msgstr "Navarra"
+msgstr "Navajo"
 
 #. Autonomous communities of Spain: Extremadura
 #: activities/geo-country/resource/board/board18_0.qml:120
 msgctxt "board18_0|"
 msgid "Extremadura"
-msgstr "Extremadura"
+msgstr ""
 
 #. Autonomous communities of Spain: Canary Islands
 #: activities/geo-country/resource/board/board18_0.qml:127
+#, fuzzy
+#| msgctxt "board14_0|"
+#| msgid "Mariana Islands"
 msgctxt "board18_0|"
 msgid "Canary Islands"
-msgstr "Illes Canàries"
+msgstr "Illes Marianes"
 
 #. Autonomous communities of Spain: Balearic Islands
 #: activities/geo-country/resource/board/board18_0.qml:134
+#, fuzzy
+#| msgctxt "board14_0|"
+#| msgid "Mariana Islands"
 msgctxt "board18_0|"
 msgid "Balearic Islands"
-msgstr "Illes Balears"
+msgstr "Illes Marianes"
 
 #. Autonomous communities of Spain: Ceuta
 #: activities/geo-country/resource/board/board18_0.qml:141
 msgctxt "board18_0|"
 msgid "Ceuta"
-msgstr "Ceuta"
+msgstr ""
 
 #. Autonomous communities of Spain: Melilla
 #: activities/geo-country/resource/board/board18_0.qml:148
 msgctxt "board18_0|"
 msgid "Melilla"
-msgstr "Melilla"
+msgstr ""
 
 #: activities/geo-country/resource/board/board1_0.qml:15
 msgctxt "board1_0|"
@@ -13181,7 +13398,7 @@ msgstr "Països Baixos"
 #: activities/geography/resource/board/board5_0.qml:73
 msgctxt "board5_0|"
 msgid "Luxembourg"
-msgstr "Luxemburg"
+msgstr ""
 
 #: activities/geography/resource/board/board5_0.qml:81
 msgctxt "board5_0|"
@@ -13234,6 +13451,9 @@ msgid "Eastern Europe"
 msgstr "Europa de l'est"
 
 #: activities/geography/resource/board/board6_0.qml:24
+#, fuzzy
+#| msgctxt "board9_0|"
+#| msgid "Cyprus"
 msgctxt "board6_0|"
 msgid "Cyprus"
 msgstr "Xipre"
@@ -15898,9 +16118,12 @@ msgstr "Habilita les veus"
 
 #. Activity title
 #: activities/learn_digits/ActivityInfo.qml:15
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Count the items"
 msgctxt "ActivityInfo|"
-msgid "Learn digits"
-msgstr "Aprendre els dígits"
+msgid "Count and color the circles"
+msgstr "Compta els elements"
 
 #. Help title
 #: activities/learn_digits/ActivityInfo.qml:17
@@ -16084,20 +16307,29 @@ msgid "Subtractions with 1, 2, 3, 4 and 5."
 msgstr "Restes amb l'1, 2, 3, 4 i 5."
 
 #: activities/learn_subtractions/resource/4/Data.qml:14
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Subtractions with 1, 2, 3, 4 and 5."
 msgctxt "Data|"
 msgid "Subtractions with 1, 2, 3, 4, 5, 6 and 7."
-msgstr "Restes amb l'1, 2, 3, 4, 5, 6 i 7."
+msgstr "Restes amb l'1, 2, 3, 4 i 5."
 
 #: activities/learn_subtractions/resource/5/Data.qml:14
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Subtractions with 1, 2, 3, 4 and 5."
 msgctxt "Data|"
 msgid "Subtractions with 1, 2, 3, 4, 5, 6, 7, 8 and 9."
-msgstr "Restes amb l'1, 2, 3, 4, 5, 6, 7, 8 i 9."
+msgstr "Restes amb l'1, 2, 3, 4 i 5."
 
 #. Activity title
 #: activities/left_right_click/ActivityInfo.qml:14
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Memory training."
 msgctxt "ActivityInfo|"
 msgid "Mouse click training"
-msgstr "Entrenar el clic del ratolí"
+msgstr "Habilitats de la memòria."
 
 #. Help title
 #: activities/left_right_click/ActivityInfo.qml:16
@@ -16105,14 +16337,12 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Move animals to their homes using a left click or right click on your mouse."
 msgstr ""
-"Mou els animals a les seues cases utilitzant un clic esquerre o clic dret "
-"del ratolí."
 
 #. Help goal
 #: activities/left_right_click/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Using the mouse. Left and right click training."
-msgstr "Ús del ratolí. Entrenament del clic esquerre i dret del ratolí."
+msgstr ""
 
 #. Help manual
 #: activities/left_right_click/ActivityInfo.qml:23
@@ -16121,8 +16351,6 @@ msgid ""
 "A left click on a fish will move it to the pond. A right click on a monkey "
 "will move it to the tree. A message will show if you make the wrong click."
 msgstr ""
-"Un clic esquerre en un peix el mourà a la bassa. Un clic dret en un mico el "
-"mourà a l'arbre. Es mostrarà un missatge si es fa un clic incorrecte."
 
 #. Activity title
 #: activities/leftright/ActivityInfo.qml:15
@@ -18363,7 +18591,7 @@ msgstr "El menú de la secció activitat és visible"
 #: activities/menu/ConfigurationItem.qml:296
 msgctxt "ConfigurationItem|"
 msgid "Ask for confirmation to exit"
-msgstr "Per a eixir demana confirmació"
+msgstr ""
 
 #: activities/menu/ConfigurationItem.qml:307
 msgctxt "ConfigurationItem|"
@@ -18887,28 +19115,37 @@ msgstr ""
 
 #. Activity title
 #: activities/morse_code/ActivityInfo.qml:18
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Discover the braille system"
 msgctxt "ActivityInfo|"
 msgid "Discover the International Morse code"
-msgstr "Descobrix el codi Morse internacional"
+msgstr "Descobrix el sistema braille"
 
 #. Help title
 #: activities/morse_code/ActivityInfo.qml:20
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Learn how to tell the time on an analog clock."
 msgctxt "ActivityInfo|"
 msgid "Learn how to communicate with the International Morse code."
-msgstr "Apreneu a comunicar-vos amb el codi Morse internacional."
+msgstr "Apreneu a dir l'hora en un rellotge analògic."
 
 #. Help goal
 #: activities/morse_code/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid ""
 "You have to send and receive letters and digits in International Morse code."
-msgstr "Cal enviar i rebre lletres i dígits en el codi Morse internacional."
+msgstr ""
 
 #. Help prerequisite
 #: activities/morse_code/ActivityInfo.qml:25
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Knowledge of arithmetic operations."
 msgctxt "ActivityInfo|"
 msgid "Knowledge of alphabets and digits."
-msgstr "Conéixer els alfabets i els dígits."
+msgstr "Conéixer les operacions aritmètiques."
 
 #. Help manual
 #: activities/morse_code/ActivityInfo.qml:27
@@ -18919,15 +19156,11 @@ msgid ""
 "have a look at the translation map which contains the code for all the "
 "letters and digits."
 msgstr ""
-"Se us demanarà que envieu un missatge en codi Morse o que convertiu el "
-"missatge rebut en codi Morse a lletres o dígits. Per a aprendre el codi "
-"Morse, podeu consultar el mapa de traducció que conté el codi per a totes "
-"les lletres i dígits."
 
 #: activities/morse_code/FirstScreen.qml:25
 msgctxt "FirstScreen|"
 msgid "Exploring Morse Code"
-msgstr "Exploració del codi Morse"
+msgstr ""
 
 #: activities/morse_code/FirstScreen.qml:64
 msgctxt "FirstScreen|"
@@ -18935,8 +19168,6 @@ msgid ""
 "Morse code was developed by Samuel Morse. It is a method of transmitting "
 "text information as a series of on-off tones, lights, or clicks."
 msgstr ""
-"El codi Morse va ser desenvolupat per en Samuel Morse. És un mètode de "
-"transmetre informació de text amb una sèrie de tons, llums o clics."
 
 #: activities/morse_code/FirstScreen.qml:65
 msgctxt "FirstScreen|"
@@ -18949,37 +19180,41 @@ msgid ""
 "For example, the most common letter in English, the letter \"E\", has the "
 "shortest code, a single dot."
 msgstr ""
-"Cada símbol del codi Morse representa un caràcter de text (lletra o número) "
-"o un signe de procediment i està representat per una seqüència única de "
-"punts i ratlles. La duració d'una ratlla és tres vegades la d'un punt. Per a "
-"augmentar la velocitat de la comunicació, el codi va ser dissenyat de manera "
-"que les lletres més comunes tenen les seqüències més curtes de punts i "
-"ratlles.\n"
-"Per exemple, la lletra més comuna en anglés, la lletra «E», té el codi més "
-"curt, un sol punt."
 
 #: activities/morse_code/FirstScreen.qml:90
+#, fuzzy
+#| msgctxt "FirstScreen|"
+#| msgid ""
+#| "When you are ready, click on me and try reproducing braille characters."
 msgctxt "FirstScreen|"
 msgid "When you are ready, click on Tux and we will converse in Morse code."
 msgstr ""
-"Quan estigues preparat, fes clic damunt del Tux i conversarem en codi Morse."
+"Quan estigues preparat, fes clic sobre meu i mira de reproduir els caràcters "
+"en braille."
 
 #: activities/morse_code/MorseCode.qml:346
-#, qt-format
+#, fuzzy, qt-format
+#| msgctxt "RomanNumerals|"
+#| msgid "Roman value: %1"
 msgctxt "MorseCode|"
 msgid "Morse value: %1"
-msgstr "Valor Morse: %1"
+msgstr "Valor romà: %1"
 
 #: activities/morse_code/MorseCode.qml:347
-#, qt-format
+#, fuzzy, qt-format
+#| msgctxt "RomanNumerals|"
+#| msgid "Arabic value: %1"
 msgctxt "MorseCode|"
 msgid "Alphabet/Numeric value: %1"
-msgstr "Valor alfabètic/numèric: %1"
+msgstr "Valor àrab: %1"
 
 #: activities/morse_code/resource/1/Data.qml:13
+#, fuzzy
+#| msgctxt "Menu|"
+#| msgid "Letters"
 msgctxt "Data|"
 msgid "Letters."
-msgstr "Lletres."
+msgstr "Lletres"
 
 #: activities/morse_code/resource/1/Data.qml:18
 #: activities/morse_code/resource/1/Data.qml:34
@@ -18991,16 +19226,18 @@ msgstr "Lletres."
 #, qt-format
 msgctxt "Data|"
 msgid "Send the message %1 in Morse code."
-msgstr "Envia el missatge %1 en codi Morse."
+msgstr ""
 
 #: activities/morse_code/resource/1/Data.qml:23
 #: activities/morse_code/resource/1/Data.qml:39
 #: activities/morse_code/resource/1/Data.qml:55
 #: activities/morse_code/resource/1/Data.qml:71
-#, qt-format
+#, fuzzy, qt-format
+#| msgctxt "RomanNumerals|"
+#| msgid "Convert the roman number %1 to arabic."
 msgctxt "Data|"
 msgid "Convert the message %1 to letters."
-msgstr "Convertix el missatge %1 a lletres."
+msgstr "Convertix el número romà %1 a àrab."
 
 # Nota: http://encycolorpedia.es/fbec5d
 # https://en.wikipedia.org/wiki/Maize_(color)
@@ -19008,42 +19245,56 @@ msgstr "Convertix el missatge %1 a lletres."
 #: activities/morse_code/resource/1/Data.qml:44
 #: activities/morse_code/resource/1/Data.qml:60
 #: activities/morse_code/resource/1/Data.qml:76
+#, fuzzy
+#| msgctxt "advanced_colors|"
+#| msgid "Find the corn butterfly"
 msgctxt "Data|"
 msgid "Find the corresponding letter."
-msgstr "Troba la lletra corresponent."
+msgstr "Troba la palometa dacsa"
 
 #: activities/morse_code/resource/2/Data.qml:13
 msgctxt "Data|"
 msgid "Digits."
-msgstr "Dígits."
+msgstr ""
 
 #: activities/morse_code/resource/2/Data.qml:23
 #: activities/morse_code/resource/2/Data.qml:39
-#, qt-format
+#, fuzzy, qt-format
+#| msgctxt "RomanNumerals|"
+#| msgid "Convert the roman number %1 to arabic."
 msgctxt "Data|"
 msgid "Convert the message %1 to digits."
-msgstr "Convertix el missatge %1 a dígits."
+msgstr "Convertix el número romà %1 a àrab."
 
 #: activities/morse_code/resource/2/Data.qml:28
 #: activities/morse_code/resource/2/Data.qml:44
+#, fuzzy
+#| msgctxt "instruments|"
+#| msgid "Find the accordion"
 msgctxt "Data|"
 msgid "Find the corresponding digit."
-msgstr "Troba el dígit corresponent."
+msgstr "Troba l'acordió"
 
 #: activities/morse_code/resource/3/Data.qml:13
+#, fuzzy
+#| msgctxt "Menu|"
+#| msgid "Words"
 msgctxt "Data|"
 msgid "Words."
-msgstr "Paraules."
+msgstr "Paraules"
 
 #: activities/morse_code/resource/3/Data.qml:24
 msgctxt "Data|"
 msgid "Write the Morse code you hear."
-msgstr "Escriu el codi Morse que escoltes."
+msgstr ""
 
 #: activities/morse_code/resource/3/Data.qml:34
+#, fuzzy
+#| msgctxt "RomanNumerals|"
+#| msgid "Convert the roman number %1 to arabic."
 msgctxt "Data|"
 msgid "Convert the message in a word."
-msgstr "Convertix el missatge a una paraula."
+msgstr "Convertix el número romà %1 a àrab."
 
 #. Activity title
 #: activities/mosaic/ActivityInfo.qml:15
@@ -19122,12 +19373,17 @@ msgstr ""
 
 #. Help manual
 #: activities/nine_men_morris/ActivityInfo.qml:24
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "Play with a friend. First take turns to place nine pieces, and then take "
+#| "turns to move your pieces."
 msgctxt "ActivityInfo|"
 msgid ""
 "Play with Tux. First take turns to place nine pieces, and then take turns to "
 "move your pieces."
 msgstr ""
-"Jugueu amb en Tux. En primer lloc feu torns per a posar les nou peces, i "
+"Jugueu amb un amic. En primer lloc feu torns per a posar les nou peces, i "
 "després feu torns per a moure-les."
 
 #: activities/nine_men_morris/nine_men_morris.js:29
@@ -19778,16 +20034,6 @@ msgid ""
 "Tigers|live|in|forests.\n"
 "Football|is|a|team|game."
 msgstr ""
-"El|gos|borda.\n"
-"La|casa|és|verda.\n"
-"El|xic|llig|un llibre.\n"
-"El meu|amic|és|bo.\n"
-"Quina|vista|més|bonica!\n"
-"En Pere|salta|a|la|piscina.\n"
-"La Jana|vol|un|llibre|nou.\n"
-"La mare|m'ha|fet|un|entrepà.\n"
-"Els|tigres|viuen|als|boscos.\n"
-"El futbol|és un|joc|d'equip."
 
 #: activities/ordering_sentences/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -19809,23 +20055,16 @@ msgid ""
 "Mom|has|asked|me|to|play|in|the|room.\n"
 "I|think|we|are|going|to|have|a|good|day."
 msgstr ""
-"El|sol|brilla|molt|en|el|cel.\n"
-"Els|infants|gaudixen|jugant|a fora|el|vespre.\n"
-"A on|anireu|a|fer|un|mos?\n"
-"La|xica|es|va|cordar|les|sabatilles|i|isquí|a fora.\n"
-"En Samuel|es trobà|malament|després|de|menjar|cinc|gelats|enormes.\n"
-"La nostra|família|fa|vacances|a|la|platja|cada|any.\n"
-"El tiet|Josep|em|va|donar|un|camió|de|joguet|roig.\n"
-"Quan|acabes|l'arròs|podràs|menjar|un|postre.\n"
-"La|mare|m'ha|demanat|que|jugue|a|l'habitació.\n"
-"Pense|que|tindrem|un|bon|dia."
 
 # Nota: https://ca.wikipedia.org/wiki/Aualé
 #. Activity title
 #: activities/oware/ActivityInfo.qml:14
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Play oware against Tux"
 msgctxt "ActivityInfo|"
 msgid "Play oware (against Tux)"
-msgstr "Juga a l'aualé (contra en Tux)"
+msgstr "Jugueu a aualé contra en Tux"
 
 #. Help title
 #: activities/oware/ActivityInfo.qml:16
@@ -19917,9 +20156,12 @@ msgstr "Moviment no vàlid!"
 
 #. Activity title
 #: activities/oware_2players/ActivityInfo.qml:14
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Play oware with a friend"
 msgctxt "ActivityInfo|"
 msgid "Play oware (with a friend)"
-msgstr "Juga a l'aualé (amb un amic)"
+msgstr "Juga a l'aualé amb un amic"
 
 #. Help title
 #: activities/oware_2players/ActivityInfo.qml:16
@@ -25174,18 +25416,13 @@ msgstr ""
 #: activities/tens_complement_find/ActivityInfo.qml:21
 #, fuzzy
 #| msgctxt "Data|"
-#| msgid "Numbers from 1 to 1 billion."
+#| msgid "Numbers from 0 to 9."
 msgctxt "ActivityInfo|"
 msgid "Numbers from 1 to 10 and additions."
-msgstr "Números des de l'1 fins a 1 miliard."
+msgstr "Números des del 0 fins al 9."
 
 #: activities/tens_complement_find/ActivityInfo.qml:23
 #: activities/tens_complement_use/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "If some answers are incorrect, a cross icon will appear on the "
-#| "corresponding lines. Correct the errors, then select the OK button again."
 msgctxt "ActivityInfo|"
 msgid ""
 "When all the lines are completed, press the OK button to validate the "
@@ -25193,8 +25430,6 @@ msgid ""
 "corresponding lines. To correct the errors, click on the wrong numbers to "
 "remove them and repeat the previous steps."
 msgstr ""
-"Si alguna resposta és incorrecta, apareixerà una icona de creu en les línies "
-"corresponents. Corregiu els errors i seleccioneu el botó D'acord de nou."
 
 #. Help manual
 #: activities/tens_complement_find/ActivityInfo.qml:23
@@ -25207,18 +25442,18 @@ msgstr ""
 #: activities/tens_complement_find/resource/1/Data.qml:25
 #, fuzzy
 #| msgctxt "Data|"
-#| msgid "Numbers from 1 to 9."
+#| msgid "Numbers from 0 to 9."
 msgctxt "Data|"
 msgid "First number from 1 to 4."
-msgstr "Números des de l'1 fins al 9."
+msgstr "Números des del 0 fins al 9."
 
 #: activities/tens_complement_find/resource/2/Data.qml:9
 #, fuzzy
 #| msgctxt "Data|"
-#| msgid "Numbers from 1 to 9."
+#| msgid "Numbers from 0 to 9."
 msgctxt "Data|"
 msgid "First number from 5 to 9."
-msgstr "Números des de l'1 fins al 9."
+msgstr "Números des del 0 fins al 9."
 
 #: activities/tens_complement_find/resource/4/Data.qml:9
 #, fuzzy
@@ -25252,10 +25487,10 @@ msgstr ""
 #: activities/tens_complement_swap/ActivityInfo.qml:21
 #, fuzzy
 #| msgctxt "Data|"
-#| msgid "Numbers from 1 to 1 billion."
+#| msgid "Numbers from 0 to 9."
 msgctxt "ActivityInfo|"
 msgid "Numbers from 1 to 30 and additions."
-msgstr "Números des de l'1 fins a 1 miliard."
+msgstr "Números des del 0 fins al 9."
 
 #. Help manual
 #: activities/tens_complement_swap/ActivityInfo.qml:23
@@ -25314,10 +25549,10 @@ msgstr ""
 #: activities/tens_complement_use/ActivityInfo.qml:21
 #, fuzzy
 #| msgctxt "Data|"
-#| msgid "Numbers from 1 to 1 billion."
+#| msgid "Numbers from 0 to 9."
 msgctxt "ActivityInfo|"
 msgid "Numbers from 1 to 50 and additions."
-msgstr "Números des de l'1 fins a 1 miliard."
+msgstr "Números des del 0 fins al 9."
 
 #. Help manual
 #: activities/tens_complement_use/ActivityInfo.qml:23
@@ -25378,18 +25613,23 @@ msgstr ""
 
 #. Help manual
 #: activities/tic_tac_toe/ActivityInfo.qml:27
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "Play with a friend. Take turns to click on the square which you want to "
+#| "mark. The first player to create a line of 3 marks wins."
 msgctxt "ActivityInfo|"
 msgid ""
 "Play with Tux. Take turns to click on the square which you want to mark. The "
 "first player to create a line of 3 marks wins."
 msgstr ""
-"Jugueu amb en Tux. Per torns, feu clic damunt del quadrat que voleu marcar. "
+"Jugueu amb un amic. Per torns, feu clic damunt del quadrat que voleu marcar. "
 "El primer jugador que cree una línia de 3 marques guanya."
 
 #: activities/tic_tac_toe/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Tux will play better when you increase the level."
-msgstr "En Tux jugarà millor a mesura que augmenteu el nivell."
+msgstr ""
 
 #. Activity title
 #: activities/tic_tac_toe_2players/ActivityInfo.qml:18
@@ -25603,6 +25843,43 @@ msgid "Type the complete word as it falls, before it reaches the ground."
 msgstr "Escriviu la paraula completa mentre cau, abans que arribe a terra."
 
 #: core/ChangeLog.qml:30
+#, fuzzy
+#| msgctxt "ChangeLog|"
+#| msgid "New maps and update of the maps for geography activities"
+msgctxt "ChangeLog|"
+msgid "Map of Spain added for geography activity"
+msgstr "Mapes nous i actualització de les activitats amb mapes de geografia"
+
+#: core/ChangeLog.qml:31
+msgctxt "ChangeLog|"
+msgid "Voices added for Ukrainian"
+msgstr ""
+
+#: core/ChangeLog.qml:32
+msgctxt "ChangeLog|"
+msgid ""
+"New command-line option to list all the activities and start on a specific "
+"one"
+msgstr ""
+
+#: core/ChangeLog.qml:33 core/ChangeLog.qml:68 core/ChangeLog.qml:71
+#: core/ChangeLog.qml:77
+msgctxt "ChangeLog|"
+msgid "Many usability improvements"
+msgstr "Moltes millores en la usabilitat"
+
+#: core/ChangeLog.qml:34 core/ChangeLog.qml:52 core/ChangeLog.qml:67
+#: core/ChangeLog.qml:72 core/ChangeLog.qml:78
+msgctxt "ChangeLog|"
+msgid "Many new images"
+msgstr "Moltes imatges noves"
+
+#: core/ChangeLog.qml:35 core/ChangeLog.qml:73 core/ChangeLog.qml:79
+msgctxt "ChangeLog|"
+msgid "Many bug fixes"
+msgstr "Moltes esmenes d'errors"
+
+#: core/ChangeLog.qml:39
 msgctxt "ChangeLog|"
 msgid ""
 "Reduce the size of the packages for all platforms and of the external word "
@@ -25611,32 +25888,32 @@ msgstr ""
 "Reduïx la mida dels paquets per a totes les plataformes i del conjunt extern "
 "d'imatges de paraules"
 
-#: core/ChangeLog.qml:31
+#: core/ChangeLog.qml:40
 msgctxt "ChangeLog|"
 msgid "Improve images quality in several activities"
 msgstr "Millora la qualitat de les imatges en diverses activitats"
 
-#: core/ChangeLog.qml:32
+#: core/ChangeLog.qml:41
 msgctxt "ChangeLog|"
 msgid "Fix some transitions in renewable_energy/watercycle on some platforms"
 msgstr ""
 "Corregix diverses transicions en «energies renovables/cicle de l'aigua» en "
 "diverses plataformes"
 
-#: core/ChangeLog.qml:33
+#: core/ChangeLog.qml:42
 msgctxt "ChangeLog|"
 msgid "Fix dead keys ignored on Linux for typing activities"
 msgstr ""
 "Corregix les tecles mortes ignorades a Linux per a les activitats de tecleig"
 
-#: core/ChangeLog.qml:34
+#: core/ChangeLog.qml:43
 msgctxt "ChangeLog|"
 msgid "Fix level reset when changing level manually in Logical associations"
 msgstr ""
 "Corregix el restabliment del nivell en canviar el nivell manualment a les "
 "associacions lògiques"
 
-#: core/ChangeLog.qml:38
+#: core/ChangeLog.qml:47
 msgctxt "ChangeLog|"
 msgid ""
 "Fix Alphabet sequence, Even and odd numbers and Numbers in order activities"
@@ -25644,43 +25921,37 @@ msgstr ""
 "Correcció de la seqüència alfabètica, dels nombres parells i senars i els "
 "nombres en les activitats d'ordenació"
 
-#: core/ChangeLog.qml:42 core/ChangeLog.qml:50
+#: core/ChangeLog.qml:51 core/ChangeLog.qml:59
 msgctxt "ChangeLog|"
 msgid "Several bug fixes"
 msgstr "Diverses esmenes d'errors"
 
-#: core/ChangeLog.qml:43 core/ChangeLog.qml:58 core/ChangeLog.qml:63
-#: core/ChangeLog.qml:69
-msgctxt "ChangeLog|"
-msgid "Many new images"
-msgstr "Moltes imatges noves"
-
-#: core/ChangeLog.qml:44
+#: core/ChangeLog.qml:53
 msgctxt "ChangeLog|"
 msgid "Translation updated for Russian"
 msgstr "Traducció actualitzada per al rus"
 
-#: core/ChangeLog.qml:45
+#: core/ChangeLog.qml:54
 msgctxt "ChangeLog|"
 msgid "New voices for Norwegian Nynorsk"
 msgstr "Veus noves per al noruec nynorsk"
 
-#: core/ChangeLog.qml:49
+#: core/ChangeLog.qml:58
 msgctxt "ChangeLog|"
 msgid "Translations added for Breton, Czech and Macedonian"
 msgstr "S'han afegit les traduccions per al bretó, txec i macedoni."
 
-#: core/ChangeLog.qml:54
+#: core/ChangeLog.qml:63
 msgctxt "ChangeLog|"
 msgid "Translation added for Azerbaijani"
 msgstr "S'han afegit les traduccions per a l'àzeri."
 
-#: core/ChangeLog.qml:55
+#: core/ChangeLog.qml:64
 msgctxt "ChangeLog|"
 msgid "New maps and update of the maps for geography activities"
 msgstr "Mapes nous i actualització de les activitats amb mapes de geografia"
 
-#: core/ChangeLog.qml:56
+#: core/ChangeLog.qml:65
 msgctxt "ChangeLog|"
 msgid ""
 "New dataset containing loops operations for programming maze, and make "
@@ -25689,7 +25960,7 @@ msgstr ""
 "Conjunt de dades nous que conté operacions de bucle per a programar el "
 "laberint i fer imatges de guia d'aprenentatge traduïdes"
 
-#: core/ChangeLog.qml:57
+#: core/ChangeLog.qml:66
 msgctxt "ChangeLog|"
 msgid ""
 "Addition of a level to teach voltage source loop in analog electricity "
@@ -25698,69 +25969,59 @@ msgstr ""
 "S'ha afegit un nivell per a ensenyar el bucle de la font de voltatge en "
 "l'activitat electricitat analògica"
 
-#: core/ChangeLog.qml:59 core/ChangeLog.qml:62 core/ChangeLog.qml:68
-msgctxt "ChangeLog|"
-msgid "Many usability improvements"
-msgstr "Moltes millores en la usabilitat"
-
-#: core/ChangeLog.qml:64 core/ChangeLog.qml:70
-msgctxt "ChangeLog|"
-msgid "Many bug fixes"
-msgstr "Moltes esmenes d'errors"
-
-#: core/ChangeLog.qml:67
+#: core/ChangeLog.qml:76
 msgctxt "ChangeLog|"
 msgid "New Activity Settings menu, with dataset selection"
 msgstr ""
 "El nou menú Configuració de l'activitat, amb selecció del conjunt de dades"
 
-#: core/ChangeLog.qml:73
+#: core/ChangeLog.qml:82
 msgctxt "ChangeLog|"
 msgid "New sub-categories to organize activities"
 msgstr "Subcategories noves per a organitzar les activitats"
 
-#: core/ChangeLog.qml:74
+#: core/ChangeLog.qml:83
 msgctxt "ChangeLog|"
 msgid "Translation added for Macedonian."
 msgstr "S'han afegit les traduccions per al macedoni."
 
-#: core/ChangeLog.qml:75
+#: core/ChangeLog.qml:84
 msgctxt "ChangeLog|"
 msgid "New activities Programming Maze and Baby Tangram"
 msgstr "Activitats noves Programació en el laberint i Tangram"
 
-#: core/ChangeLog.qml:76
+#: core/ChangeLog.qml:85
 msgctxt "ChangeLog|"
 msgid "New background music and volume settings."
 msgstr "Configuració nova de la música de fons i el volum."
 
-#: core/ChangeLog.qml:77
+#: core/ChangeLog.qml:86
 msgctxt "ChangeLog|"
 msgid "New speed setting in several activities."
 msgstr "Configuració nova de la velocitat en diverses activitats."
 
-#: core/ChangeLog.qml:78
+#: core/ChangeLog.qml:87
 msgctxt "ChangeLog|"
 msgid "New option in chess to display captured pieces."
 msgstr "Opció nova en els escacs per a mostrar les peces capturades."
 
-#: core/ChangeLog.qml:79
+#: core/ChangeLog.qml:88
 msgctxt "ChangeLog|"
 msgid "New images in Colors, Advanced colors and Target game."
 msgstr "Imatges noves en els Colors, Colors avançats i el joc de destinació."
 
-#: core/ChangeLog.qml:80
+#: core/ChangeLog.qml:89
 msgctxt "ChangeLog|"
 msgid "New voices for US English."
 msgstr "Veus noves per a l'anglés nord-americà."
 
-#: core/ChangeLog.qml:81 core/ChangeLog.qml:89
+#: core/ChangeLog.qml:90 core/ChangeLog.qml:98
 msgctxt "ChangeLog|"
 msgid "Many little fixes and improvements."
 msgstr "Moltes xicotetes correccions i millores."
 
 # skip-rule: punctuation-period
-#: core/ChangeLog.qml:82
+#: core/ChangeLog.qml:91
 msgctxt "ChangeLog|"
 msgid ""
 "Translation updated for multiple languages (Breton, Brazilian Portuguese, "
@@ -25769,19 +26030,19 @@ msgstr ""
 "S'ha actualitzat la traducció per a múltiples idiomes (bretó, català, "
 "portugués brasiler, finlandés...)"
 
-#: core/ChangeLog.qml:83
+#: core/ChangeLog.qml:92
 msgctxt "ChangeLog|"
 msgid "Add Russian dataset for Click on letter activity."
 msgstr ""
 "S'ha afegit el conjunt de dades en rus per a l'activitat «Fes clic en una "
 "lletra»."
 
-#: core/ChangeLog.qml:84
+#: core/ChangeLog.qml:93
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in Dutch."
 msgstr "L'activitat «lang» ara està disponible en neerlandés."
 
-#: core/ChangeLog.qml:85
+#: core/ChangeLog.qml:94
 msgctxt "ChangeLog|"
 msgid ""
 "Merge Norwegian counties Nord-Trøndelag and Sør-Trøndelag into Trøndelag in "
@@ -25790,20 +26051,20 @@ msgstr ""
 "S'han fusionat els comtats noruecs de Nord-Trøndelag i Sør-Trøndelag a dins "
 "de Trøndelag en l'activitat ubica la regió."
 
-#: core/ChangeLog.qml:86
+#: core/ChangeLog.qml:95
 msgctxt "ChangeLog|"
 msgid "Fix in braille activities where the cells start at 1, not 0."
 msgstr ""
 "S'han corregit les activitats de braille on les cel·les comencen a l'1, no "
 "el 0."
 
-#: core/ChangeLog.qml:87
+#: core/ChangeLog.qml:96
 msgctxt "ChangeLog|"
 msgid "Translation added for Basque, Hungarian and Malayalam."
 msgstr "S'han afegit les traduccions per al basc, l'hongarés i el malaiàlam."
 
 # skip-rule: kct-box
-#: core/ChangeLog.qml:88
+#: core/ChangeLog.qml:97
 msgctxt "ChangeLog|"
 msgid ""
 "Loading/saving of creations (Baby Wordprocessor, Balance Box and Piano "
@@ -25812,47 +26073,47 @@ msgstr ""
 "Càrrega/guardada de les creacions (Un processador de textos, Inclina la "
 "capsa i Composició per a piano)."
 
-#: core/ChangeLog.qml:89
+#: core/ChangeLog.qml:98
 msgctxt "ChangeLog|"
 msgid "Translations added for Scottish Gaelic."
 msgstr "S'han afegit les traduccions per al gaèlic escocés."
 
-#: core/ChangeLog.qml:90
+#: core/ChangeLog.qml:99
 msgctxt "ChangeLog|"
 msgid "License page added in configuration."
 msgstr "La pàgina de la llicència ha sigut afegida a la configuració."
 
-#: core/ChangeLog.qml:90
+#: core/ChangeLog.qml:99
 msgctxt "ChangeLog|"
 msgid "Multiple changes on layouts to improve the ergonomy."
 msgstr "Múltiples canvis en les disposicions per a millorar l'ergonomia."
 
-#: core/ChangeLog.qml:91
+#: core/ChangeLog.qml:100
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in Polish, Swedish and Ukrainian."
 msgstr "L'activitat «lang» ara està disponible en polonés, suec i ucraïnés."
 
-#: core/ChangeLog.qml:92
+#: core/ChangeLog.qml:101
 msgctxt "ChangeLog|"
 msgid "Search feature."
 msgstr "Característica de busca."
 
-#: core/ChangeLog.qml:93
+#: core/ChangeLog.qml:102
 msgctxt "ChangeLog|"
 msgid "A Changelog."
 msgstr "Un registre de canvis."
 
-#: core/ChangeLog.qml:94
+#: core/ChangeLog.qml:103
 msgctxt "ChangeLog|"
 msgid "Many little fixes."
 msgstr "Moltes xicotetes correccions."
 
-#: core/ChangeLog.qml:94
+#: core/ChangeLog.qml:103
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in French."
 msgstr "L'activitat «lang» ara està disponible en francés."
 
-#: core/ChangeLog.qml:95
+#: core/ChangeLog.qml:104
 msgctxt "ChangeLog|"
 msgid ""
 "Adding a loading overlay to let the user know that some actions are taking "
@@ -25862,21 +26123,21 @@ msgstr ""
 "accions es duen a terme (la càrrega d'una activitat, per exemple) i que "
 "poden prendre alguns segons."
 
-#: core/ChangeLog.qml:95
+#: core/ChangeLog.qml:104
 msgctxt "ChangeLog|"
 msgid ""
 "Translations added for: Catalan (Valencian), Chinese Traditional, Finnish "
 "(92% translated), Russian (98% translated), Slovak (92% translated), Turkish."
 msgstr ""
 "S'afigen traduccions per a: català (valencià), xinés tradicional, finlandés "
-"(92% traduït), rus (98% traduït), eslové (92% traduït), turc."
+"(92% traduït), rus (98% traduït), eslovè (92% traduït), turc."
 
-#: core/ChangeLog.qml:96
+#: core/ChangeLog.qml:105
 msgctxt "ChangeLog|"
 msgid "Translations added for: Slovenian, German, Galician."
-msgstr "Traduccions afegides per a: eslové, alemany, gallec."
+msgstr "Traduccions afegides per a: eslovè, alemany, gallec."
 
-#: core/ChangeLog.qml:121
+#: core/ChangeLog.qml:130
 #, qt-format
 msgctxt "ChangeLog|"
 msgid "Version %1:"
@@ -25960,10 +26221,12 @@ msgid "GCompris %1"
 msgstr "GCompris %1"
 
 #: core/DialogAbout.qml:57
-#, qt-format
+#, fuzzy, qt-format
+#| msgctxt "DialogAbout|"
+#| msgid "Based on Qt %1"
 msgctxt "DialogAbout|"
 msgid "Based on Qt %1 and %2"
-msgstr "Basat en les Qt %1 i %2"
+msgstr "basat en les Qt %1"
 
 #: core/DialogAbout.qml:61
 msgctxt "DialogAbout|"
@@ -26396,13 +26659,18 @@ msgid "Enable the kiosk mode."
 msgstr "Habilita el mode quiosc."
 
 #: core/main.cpp:192
+#, fuzzy
+#| msgctxt "QObject|"
+#| msgid ""
+#| "Use software renderer instead of openGL (slower but should run with any "
+#| "graphical card, needs Qt 5.8 minimum)."
 msgctxt "QObject|"
 msgid ""
 "Use software renderer instead of openGL (slower but should run with any "
 "graphical card)."
 msgstr ""
 "Utilitza el renderitzador per programari en lloc d'openGL (més lent, però "
-"s'executa amb qualsevol targeta gràfica)."
+"s'executa amb qualsevol targeta gràfica, necessita com a mínim les Qt 5.8)."
 
 #: core/main.cpp:195
 msgctxt "QObject|"
@@ -26416,12 +26684,12 @@ msgstr ""
 #: core/main.cpp:199
 msgctxt "QObject|"
 msgid "Specify the activity when starting GCompris."
-msgstr "Especifica l'activitat en iniciar GCompris."
+msgstr ""
 
 #: core/main.cpp:204
 msgctxt "QObject|"
 msgid "Outputs all the available activities on the standard output."
-msgstr "Mostra totes les activitats disponibles en l'eixida estàndard."
+msgstr ""
 
 #: core/main.qml:233
 msgctxt "main|"
@@ -26514,3 +26782,184 @@ msgstr "Omet"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Inicia"
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid ""
+#~ "Play with the computer. Take turns to click the line in which you want to "
+#~ "drop a token. The first player to create a line of 4 tokens wins."
+#~ msgstr ""
+#~ "Jugueu amb l'ordinador. Per torns, feu clic damunt de la línia en la qual "
+#~ "afegireu una fitxa. El primer jugador que cree una línia de 4 fitxes "
+#~ "guanya."
+
+#~ msgctxt "Calendar|"
+#~ msgid "Sunday"
+#~ msgstr "Diumenge"
+
+#~ msgctxt "Calendar|"
+#~ msgid "Monday"
+#~ msgstr "Dilluns"
+
+#~ msgctxt "Calendar|"
+#~ msgid "Tuesday"
+#~ msgstr "Dimarts"
+
+#~ msgctxt "Calendar|"
+#~ msgid "Wednesday"
+#~ msgstr "Dimecres"
+
+#~ msgctxt "Calendar|"
+#~ msgid "Thursday"
+#~ msgstr "Dijous"
+
+#~ msgctxt "Calendar|"
+#~ msgid "Friday"
+#~ msgstr "Divendres"
+
+#~ msgctxt "Calendar|"
+#~ msgid "Saturday"
+#~ msgstr "Dissabte"
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Play checkers against the computer"
+#~ msgstr "Juga a les dames contra l'ordinador"
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Play chess against your friend"
+#~ msgstr "Juga als escacs contra un amic"
+
+#~ msgctxt "board1|"
+#~ msgid "The horse goes 'neigh! neigh!'. Horses usually sleep standing up."
+#~ msgstr ""
+#~ "El cavall fa hihihihi «renill, aïnada o eguí». Els cavalls solen dormir "
+#~ "drets."
+
+#~ msgctxt "board1|"
+#~ msgid "You can ride on the back of this animal!"
+#~ msgstr "Pots muntar en la gropa d'este animal!"
+
+#~ msgctxt "board1|"
+#~ msgid ""
+#~ "The chicken goes 'luck, cackle, cluck'. Chickens have over 200 different "
+#~ "noises they can use to communicate."
+#~ msgstr ""
+#~ "La gallina fa cloc-cloc «escataineig». Les gallines tenen més de 200 sons "
+#~ "diferents que poden utilitzar per a comunicar-se."
+
+#~ msgctxt "board1|"
+#~ msgid ""
+#~ "The cow goes 'moo! moo!'. Cows are herbivorous mammals. They graze all "
+#~ "day in the meadow."
+#~ msgstr ""
+#~ "La vaca fa muuu «mugit o bramul». Les vaques són mamífers herbívors. "
+#~ "Elles pasturen tot el dia al prat."
+
+#~ msgctxt "board1|"
+#~ msgid "You can drink the milk this animal produces."
+#~ msgstr "Pots beure la llet que produïx este animal."
+
+#~ msgctxt "board1|"
+#~ msgid ""
+#~ "The cat goes 'meow, meow'. Cats usually hate water because their fur "
+#~ "doesn't stay warm when it is wet."
+#~ msgstr ""
+#~ "El gat fa miau «miol o maula». Els gats en general odien l'aigua, ja que "
+#~ "la seua pell no es manté calenta quan estan mullats."
+
+#~ msgctxt "board1|"
+#~ msgid "This pet likes chasing mice."
+#~ msgstr "A esta mascota li agrada perseguir els ratolins."
+
+#~ msgctxt "board1|"
+#~ msgid "The pig goes 'oink, oink'. Pigs are the 4th most intelligent animal."
+#~ msgstr ""
+#~ "El porc fa rony «gruny o rondina». Els porcs són el quart animal més "
+#~ "intel·ligent."
+
+#~ msgctxt "board1|"
+#~ msgid "This animal likes to lie in the mud."
+#~ msgstr "A este animal li agrada estar en el fang."
+
+#~ msgctxt "board1|"
+#~ msgid ""
+#~ "The duck goes 'quack, quack'. Ducks have special features like webbed "
+#~ "feet and produce an oil to make their feathers 'waterproof'."
+#~ msgstr ""
+#~ "L'ànec fa quac-quac «claca». Els ànecs tenen característiques especials "
+#~ "com potes palmades i produïxen un oli per a fer «impermeable» les seues "
+#~ "plomes."
+
+#~ msgctxt "board1|"
+#~ msgid ""
+#~ "The dog goes 'bark! bark!'. Dogs are great human companions and usually "
+#~ "enjoy love and attention."
+#~ msgstr ""
+#~ "El gos fa bub-bub «lladra o borda». Els gossos són grans companys dels "
+#~ "humans i en general gaudixen d'amor i atenció."
+
+#~ msgctxt "board1|"
+#~ msgid "Rooster"
+#~ msgstr "Gall"
+
+#~ msgctxt "board1|"
+#~ msgid ""
+#~ "The rooster goes 'coc-a-doodle-doo!'. Roosters have been on farms for "
+#~ "about 5,000 years. Every morning it wakes the farm up with its noises."
+#~ msgstr ""
+#~ "El gall fa quicquiriquic «canta». Els galls han sigut a les granges des "
+#~ "de fa uns 5.000 anys. Cada matí desperta la granja amb els seus sorolls."
+
+#~ msgctxt "board1|"
+#~ msgid "This animal wakes the farm up in the morning."
+#~ msgstr "Este animal desperta la granja al matí."
+
+#~ msgctxt "board1|"
+#~ msgid ""
+#~ "The sheep is a mammal that bears a fleece of wool. It is a grazing "
+#~ "herbivore, bred for its wool, its meat, and its milk. The fleece can be "
+#~ "removed and used to produce articles of clothing and blankets, among "
+#~ "other things."
+#~ msgstr ""
+#~ "L'ovella és un mamífer que porta un velló de llana. És un herbívor que "
+#~ "pastura, criat per la seua llana, carn i llet. El velló es pot traure i "
+#~ "utilitzar, i es produïxen articles de roba i mantes, entre altres coses."
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Learn digits"
+#~ msgstr "Aprendre els dígits"
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid ""
+#~ "Play with the computer. First take turns to place nine pieces, and then "
+#~ "take turns to move your pieces."
+#~ msgstr ""
+#~ "Jugueu amb l'ordinador. En primer lloc feu torns per a posar les nou "
+#~ "peces, i després feu torns per a moure-les."
+
+#~ msgctxt "Data|"
+#~ msgid ""
+#~ "The|dog|barks.\n"
+#~ "The|house|is|red.\n"
+#~ "The boy|reads|a book.\n"
+#~ "Football|is|a|team|game."
+#~ msgstr ""
+#~ "El|gos|borda.\n"
+#~ "La|casa|és|roja.\n"
+#~ "El xiquet|llig|un llibre.\n"
+#~ "El futbol|és|un|joc|d'equip."
+
+#~ msgctxt "Data|"
+#~ msgid ""
+#~ "The|sun|is|shining|in|the|sky.\n"
+#~ "Kids|enjoy|playing|outside|in|the|evening."
+#~ msgstr ""
+#~ "El|Sol|brilla|intensament|en|el|cel.\n"
+#~ "Els|infants|gaudixen|de|nit|jugant|a|l'aire|lliure."
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid ""
+#~ "Play with the computer. Take turns to click on the square which you want "
+#~ "to mark. The first player to create a line of 3 marks wins."
+#~ msgstr ""
+#~ "Jugueu amb l'ordinador. Per torns, feu clic damunt del quadrat que voleu "
+#~ "marcar. El primer jugador que cree una línia de 3 marques guanya."

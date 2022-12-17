@@ -26,7 +26,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "PO-Revision-Date: 2022-05-10 14:29+0300\n"
 "Last-Translator: Alexander Yavorsky <kekcuha@gmail.com>\n"
-"Language-Team: Russian <kde-russian@lists.kde.ru>\n"
+"Language-Team: Russian <l10n@basealt.ru>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -4050,9 +4050,12 @@ msgstr "Чёрные победили"
 
 #. Activity title
 #: activities/checkers_2players/ActivityInfo.qml:15
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Play chess (with a friend)"
 msgctxt "ActivityInfo|"
 msgid "Play checkers (with a friend)"
-msgstr "Игра в шашки (вдвоём)"
+msgstr "Игра в шахматы (вдвоём)"
 
 #. Help manual
 #: activities/checkers_2players/ActivityInfo.qml:24
@@ -4098,6 +4101,9 @@ msgstr ""
 
 #. Activity title
 #: activities/chess/ActivityInfo.qml:15
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Play chess against Tux"
 msgctxt "ActivityInfo|"
 msgid "Play chess (against Tux)"
 msgstr "Игра в шахматы (против Тукса)"
@@ -8248,6 +8254,11 @@ msgid "Polar bear"
 msgstr "Белый медведь"
 
 #: activities/explore_world_animals/resource/board/board2.qml:31
+#, fuzzy
+#| msgctxt "board2|"
+#| msgid ""
+#| "The polar bear is one of the world's largest predatory mammals. It "
+#| "weights up to a ton and can be as long as 3 meters!"
 msgctxt "board2|"
 msgid ""
 "The polar bear is one of the world's largest predatory mammals. It weighs up "
@@ -15693,9 +15704,12 @@ msgstr "Включить воспроизведение голоса"
 
 #. Activity title
 #: activities/learn_digits/ActivityInfo.qml:15
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Count the items"
 msgctxt "ActivityInfo|"
-msgid "Learn digits"
-msgstr "Попрактиковаться в числах"
+msgid "Count and color the circles"
+msgstr "Счёт предметов"
 
 #. Help title
 #: activities/learn_digits/ActivityInfo.qml:17
@@ -19602,6 +19616,9 @@ msgstr ""
 
 #. Activity title
 #: activities/oware/ActivityInfo.qml:14
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Play oware against Tux"
 msgctxt "ActivityInfo|"
 msgid "Play oware (against Tux)"
 msgstr "Логическая игра «овари» (против Тукса)"
@@ -19696,6 +19713,9 @@ msgstr "Неверный ход!"
 
 #. Activity title
 #: activities/oware_2players/ActivityInfo.qml:14
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Play oware with a friend"
 msgctxt "ActivityInfo|"
 msgid "Play oware (with a friend)"
 msgstr "Логическая игра «овари» (вдвоём)"
@@ -25323,6 +25343,43 @@ msgid "Type the complete word as it falls, before it reaches the ground."
 msgstr "Набери слово полностью, пока оно не достигло земли"
 
 #: core/ChangeLog.qml:30
+#, fuzzy
+#| msgctxt "ChangeLog|"
+#| msgid "New maps and update of the maps for geography activities"
+msgctxt "ChangeLog|"
+msgid "Map of Spain added for geography activity"
+msgstr "Новые карты и обновление карт для упражнений по географии"
+
+#: core/ChangeLog.qml:31
+msgctxt "ChangeLog|"
+msgid "Voices added for Ukrainian"
+msgstr ""
+
+#: core/ChangeLog.qml:32
+msgctxt "ChangeLog|"
+msgid ""
+"New command-line option to list all the activities and start on a specific "
+"one"
+msgstr ""
+
+#: core/ChangeLog.qml:33 core/ChangeLog.qml:68 core/ChangeLog.qml:71
+#: core/ChangeLog.qml:77
+msgctxt "ChangeLog|"
+msgid "Many usability improvements"
+msgstr "Много небольших исправлений и улучшений"
+
+#: core/ChangeLog.qml:34 core/ChangeLog.qml:52 core/ChangeLog.qml:67
+#: core/ChangeLog.qml:72 core/ChangeLog.qml:78
+msgctxt "ChangeLog|"
+msgid "Many new images"
+msgstr "Много новых изображений"
+
+#: core/ChangeLog.qml:35 core/ChangeLog.qml:73 core/ChangeLog.qml:79
+msgctxt "ChangeLog|"
+msgid "Many bug fixes"
+msgstr "Множество исправлений ошибок"
+
+#: core/ChangeLog.qml:39
 msgctxt "ChangeLog|"
 msgid ""
 "Reduce the size of the packages for all platforms and of the external word "
@@ -25331,32 +25388,32 @@ msgstr ""
 "Уменьшение размера пакетов для всех платформ и внешнего набора изображений "
 "для слов"
 
-#: core/ChangeLog.qml:31
+#: core/ChangeLog.qml:40
 msgctxt "ChangeLog|"
 msgid "Improve images quality in several activities"
 msgstr "Улучшение качества изображений в нескольких упражнениях"
 
-#: core/ChangeLog.qml:32
+#: core/ChangeLog.qml:41
 msgctxt "ChangeLog|"
 msgid "Fix some transitions in renewable_energy/watercycle on some platforms"
 msgstr ""
 "Исправление нескольких переходов в разделе о возобновляемой энергии/"
 "круговороте воды на нескольких платформах"
 
-#: core/ChangeLog.qml:33
+#: core/ChangeLog.qml:42
 msgctxt "ChangeLog|"
 msgid "Fix dead keys ignored on Linux for typing activities"
 msgstr ""
 "Исправление игнорирования немых клавиш при выполнении упражнений с вводом "
 "текста в Linux"
 
-#: core/ChangeLog.qml:34
+#: core/ChangeLog.qml:43
 msgctxt "ChangeLog|"
 msgid "Fix level reset when changing level manually in Logical associations"
 msgstr ""
 "Исправление сброса уровня при ручной смене уровня в «Логических ассоциациях»"
 
-#: core/ChangeLog.qml:38
+#: core/ChangeLog.qml:47
 msgctxt "ChangeLog|"
 msgid ""
 "Fix Alphabet sequence, Even and odd numbers and Numbers in order activities"
@@ -25364,43 +25421,37 @@ msgstr ""
 "Исправление «Алфавитного порядка», «Чётных и нечётных чисел» и «Чисел» в "
 "разделе упражнений на упорядочивание"
 
-#: core/ChangeLog.qml:42 core/ChangeLog.qml:50
+#: core/ChangeLog.qml:51 core/ChangeLog.qml:59
 msgctxt "ChangeLog|"
 msgid "Several bug fixes"
 msgstr "Несколько исправлений ошибок"
 
-#: core/ChangeLog.qml:43 core/ChangeLog.qml:58 core/ChangeLog.qml:63
-#: core/ChangeLog.qml:69
-msgctxt "ChangeLog|"
-msgid "Many new images"
-msgstr "Много новых изображений"
-
-#: core/ChangeLog.qml:44
+#: core/ChangeLog.qml:53
 msgctxt "ChangeLog|"
 msgid "Translation updated for Russian"
 msgstr "Обновлён перевод на русский язык"
 
-#: core/ChangeLog.qml:45
+#: core/ChangeLog.qml:54
 msgctxt "ChangeLog|"
 msgid "New voices for Norwegian Nynorsk"
 msgstr "Новые звуки для новонорвежского (нюнорск)"
 
-#: core/ChangeLog.qml:49
+#: core/ChangeLog.qml:58
 msgctxt "ChangeLog|"
 msgid "Translations added for Breton, Czech and Macedonian"
 msgstr "Добавлен перевод на бретонский, чешский и македонский"
 
-#: core/ChangeLog.qml:54
+#: core/ChangeLog.qml:63
 msgctxt "ChangeLog|"
 msgid "Translation added for Azerbaijani"
 msgstr "Добавлен перевод на азербайджанский"
 
-#: core/ChangeLog.qml:55
+#: core/ChangeLog.qml:64
 msgctxt "ChangeLog|"
 msgid "New maps and update of the maps for geography activities"
 msgstr "Новые карты и обновление карт для упражнений по географии"
 
-#: core/ChangeLog.qml:56
+#: core/ChangeLog.qml:65
 msgctxt "ChangeLog|"
 msgid ""
 "New dataset containing loops operations for programming maze, and make "
@@ -25409,7 +25460,7 @@ msgstr ""
 "Новый набор данных, содержащий циклы для программирования лабиринта, "
 "возможность перевода картинок в учебнике"
 
-#: core/ChangeLog.qml:57
+#: core/ChangeLog.qml:66
 msgctxt "ChangeLog|"
 msgid ""
 "Addition of a level to teach voltage source loop in analog electricity "
@@ -25418,67 +25469,57 @@ msgstr ""
 "Добавление уровня для изучения замкнутых электрических цепей в упражнении по "
 "аналоговой электронике"
 
-#: core/ChangeLog.qml:59 core/ChangeLog.qml:62 core/ChangeLog.qml:68
-msgctxt "ChangeLog|"
-msgid "Many usability improvements"
-msgstr "Много небольших исправлений и улучшений"
-
-#: core/ChangeLog.qml:64 core/ChangeLog.qml:70
-msgctxt "ChangeLog|"
-msgid "Many bug fixes"
-msgstr "Множество исправлений ошибок"
-
-#: core/ChangeLog.qml:67
+#: core/ChangeLog.qml:76
 msgctxt "ChangeLog|"
 msgid "New Activity Settings menu, with dataset selection"
 msgstr "Новое меню свойств упражнения с выбором набора данных"
 
-#: core/ChangeLog.qml:73
+#: core/ChangeLog.qml:82
 msgctxt "ChangeLog|"
 msgid "New sub-categories to organize activities"
 msgstr "Новые подкатегории для группировки упражнений"
 
-#: core/ChangeLog.qml:74
+#: core/ChangeLog.qml:83
 msgctxt "ChangeLog|"
 msgid "Translation added for Macedonian."
 msgstr "Добавлен перевод на македонский"
 
-#: core/ChangeLog.qml:75
+#: core/ChangeLog.qml:84
 msgctxt "ChangeLog|"
 msgid "New activities Programming Maze and Baby Tangram"
 msgstr "Новые упражнения: программирование лабиринта и детский танграм"
 
-#: core/ChangeLog.qml:76
+#: core/ChangeLog.qml:85
 msgctxt "ChangeLog|"
 msgid "New background music and volume settings."
 msgstr "Новые параметры фоновой музыки и громкости"
 
-#: core/ChangeLog.qml:77
+#: core/ChangeLog.qml:86
 msgctxt "ChangeLog|"
 msgid "New speed setting in several activities."
 msgstr "Новые параметры скорости в нескольких упражнениях"
 
-#: core/ChangeLog.qml:78
+#: core/ChangeLog.qml:87
 msgctxt "ChangeLog|"
 msgid "New option in chess to display captured pieces."
 msgstr "Новая опция в шахматах для отображения сбитых фигур"
 
-#: core/ChangeLog.qml:79
+#: core/ChangeLog.qml:88
 msgctxt "ChangeLog|"
 msgid "New images in Colors, Advanced colors and Target game."
 msgstr "Новые изображения в «Цветах», «Сложных цветах» и «Дротиках»"
 
-#: core/ChangeLog.qml:80
+#: core/ChangeLog.qml:89
 msgctxt "ChangeLog|"
 msgid "New voices for US English."
 msgstr "Новые звуки для американского английского"
 
-#: core/ChangeLog.qml:81 core/ChangeLog.qml:89
+#: core/ChangeLog.qml:90 core/ChangeLog.qml:98
 msgctxt "ChangeLog|"
 msgid "Many little fixes and improvements."
 msgstr "Много небольших исправлений и улучшений"
 
-#: core/ChangeLog.qml:82
+#: core/ChangeLog.qml:91
 msgctxt "ChangeLog|"
 msgid ""
 "Translation updated for multiple languages (Breton, Brazilian Portuguese, "
@@ -25487,19 +25528,19 @@ msgstr ""
 "Обновлён перевод на несколько языков: бретонский, португальский (Бразилия), "
 "финский и другие"
 
-#: core/ChangeLog.qml:83
+#: core/ChangeLog.qml:92
 msgctxt "ChangeLog|"
 msgid "Add Russian dataset for Click on letter activity."
 msgstr ""
 "Добавлен набор данных для русского перевода упражнения на щелчок по букве."
 
-#: core/ChangeLog.qml:84
+#: core/ChangeLog.qml:93
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in Dutch."
 msgstr ""
 "Упражнения на обогащение словарного запаса переведены на голландский язык"
 
-#: core/ChangeLog.qml:85
+#: core/ChangeLog.qml:94
 msgctxt "ChangeLog|"
 msgid ""
 "Merge Norwegian counties Nord-Trøndelag and Sør-Trøndelag into Trøndelag in "
@@ -25508,20 +25549,20 @@ msgstr ""
 "В упражнении на знание географии провинции Нур-Трёнделаг и Сёр-Трёнделаг в "
 "Норвегии объединены в регион Трёнделаг"
 
-#: core/ChangeLog.qml:86
+#: core/ChangeLog.qml:95
 msgctxt "ChangeLog|"
 msgid "Fix in braille activities where the cells start at 1, not 0."
 msgstr ""
 "Исправлена ошибка в упражнениях на знание системы Брайля: ячейки начинались "
 "с 1, а не с 0"
 
-#: core/ChangeLog.qml:87
+#: core/ChangeLog.qml:96
 msgctxt "ChangeLog|"
 msgid "Translation added for Basque, Hungarian and Malayalam."
 msgstr ""
 "Добавлены переводы на баскский и венгерский языки, а также на язык малаялам"
 
-#: core/ChangeLog.qml:88
+#: core/ChangeLog.qml:97
 msgctxt "ChangeLog|"
 msgid ""
 "Loading/saving of creations (Baby Wordprocessor, Balance Box and Piano "
@@ -25530,59 +25571,59 @@ msgstr ""
 "Загрузка и сохранение работ (упражнения «Детский текстовый процессор», «Шар "
 "в лабиринте» и «Композиция на пианино»)"
 
-#: core/ChangeLog.qml:89
+#: core/ChangeLog.qml:98
 msgctxt "ChangeLog|"
 msgid "Translations added for Scottish Gaelic."
 msgstr "Добавлен перевод на гэльский (Шотландия)"
 
-#: core/ChangeLog.qml:90
+#: core/ChangeLog.qml:99
 msgctxt "ChangeLog|"
 msgid "License page added in configuration."
 msgstr "В диалог настройки добавлена страница с лицензией"
 
-#: core/ChangeLog.qml:90
+#: core/ChangeLog.qml:99
 msgctxt "ChangeLog|"
 msgid "Multiple changes on layouts to improve the ergonomy."
 msgstr ""
 "Множество изменений в расположении элементов для улучшения удобства "
 "использования"
 
-#: core/ChangeLog.qml:91
+#: core/ChangeLog.qml:100
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in Polish, Swedish and Ukrainian."
 msgstr ""
 "Упражнения на обогащение словарного запаса переведены на польский, шведский "
 "и украинский языки"
 
-#: core/ChangeLog.qml:92
+#: core/ChangeLog.qml:101
 msgctxt "ChangeLog|"
 msgid "Search feature."
 msgstr "Функция поиска"
 
-#: core/ChangeLog.qml:93
+#: core/ChangeLog.qml:102
 msgctxt "ChangeLog|"
 msgid "A Changelog."
 msgstr "Список изменений"
 
-#: core/ChangeLog.qml:94
+#: core/ChangeLog.qml:103
 msgctxt "ChangeLog|"
 msgid "Many little fixes."
 msgstr "Множество мелких исправлений"
 
-#: core/ChangeLog.qml:94
+#: core/ChangeLog.qml:103
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in French."
 msgstr ""
 "Упражнения на обогащение словарного запаса переведены на французский язык"
 
-#: core/ChangeLog.qml:95
+#: core/ChangeLog.qml:104
 msgctxt "ChangeLog|"
 msgid ""
 "Adding a loading overlay to let the user know that some actions are taking "
 "place (loading an activity for example) and can take some seconds."
 msgstr "Добавлен индикатор загрузки для продолжительных процессов"
 
-#: core/ChangeLog.qml:95
+#: core/ChangeLog.qml:104
 msgctxt "ChangeLog|"
 msgid ""
 "Translations added for: Catalan (Valencian), Chinese Traditional, Finnish "
@@ -25591,12 +25632,12 @@ msgstr ""
 "Добавлены переводы на каталонский, китайский традиционный, финский (92%), "
 "русский (98%), словацкий (92%), турецкий языки"
 
-#: core/ChangeLog.qml:96
+#: core/ChangeLog.qml:105
 msgctxt "ChangeLog|"
 msgid "Translations added for: Slovenian, German, Galician."
 msgstr "Добавлены переводы на словенский, немецкий и галисийский языки"
 
-#: core/ChangeLog.qml:121
+#: core/ChangeLog.qml:130
 #, qt-format
 msgctxt "ChangeLog|"
 msgid "Version %1:"
@@ -25678,10 +25719,12 @@ msgid "GCompris %1"
 msgstr "GCompris %1"
 
 #: core/DialogAbout.qml:57
-#, qt-format
+#, fuzzy, qt-format
+#| msgctxt "DialogAbout|"
+#| msgid "Based on Qt %1"
 msgctxt "DialogAbout|"
 msgid "Based on Qt %1 and %2"
-msgstr "на основе Qt %1 и %2"
+msgstr "на основе Qt %1"
 
 #: core/DialogAbout.qml:61
 msgctxt "DialogAbout|"
@@ -26240,6 +26283,55 @@ msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Начать"
 
+#~ msgctxt "ActivityInfo|"
+#~ msgid ""
+#~ "Play with the computer. Take turns to click the line in which you want to "
+#~ "drop a token. The first player to create a line of 4 tokens wins."
+#~ msgstr ""
+#~ "Игра с компьютером. В свой ход нажми линию, в которую нужно поместить "
+#~ "шарик. Выигрывает игрок, который первым создаст прямую линию из четырёх "
+#~ "своих шариков."
+
+#~ msgctxt "Calendar|"
+#~ msgid "Sunday"
+#~ msgstr "Воскресенье"
+
+#~ msgctxt "Calendar|"
+#~ msgid "Monday"
+#~ msgstr "Понедельник"
+
+#~ msgctxt "Calendar|"
+#~ msgid "Tuesday"
+#~ msgstr "Вторник"
+
+#~ msgctxt "Calendar|"
+#~ msgid "Wednesday"
+#~ msgstr "Среда"
+
+#~ msgctxt "Calendar|"
+#~ msgid "Thursday"
+#~ msgstr "Четверг"
+
+#~ msgctxt "Calendar|"
+#~ msgid "Friday"
+#~ msgstr "Пятница"
+
+#~ msgctxt "Calendar|"
+#~ msgid "Saturday"
+#~ msgstr "Суббота"
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Play checkers against the computer"
+#~ msgstr "Игра в шашки против компьютера"
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Play checkers with your friend"
+#~ msgstr "Игра в шашки (вдвоём)"
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Play chess against your friend"
+#~ msgstr "Игра в шахматы вдвоём"
+
 #~ msgctxt "board1|"
 #~ msgid "The horse goes 'neigh! neigh!'. Horses usually sleep standing up."
 #~ msgstr "Лошадь говорит «и-го-го». Лошадь обычно спит стоя."
@@ -26334,13 +26426,8 @@ msgstr "Начать"
 #~ "например, для изготовления одежды и одеял."
 
 #~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Play with the computer. Take turns to click the line in which you want to "
-#~ "drop a token. The first player to create a line of 4 tokens wins."
-#~ msgstr ""
-#~ "Игра с компьютером. В свой ход нажми линию, в которую нужно поместить "
-#~ "шарик. Выигрывает игрок, который первым создаст прямую линию из четырёх "
-#~ "своих шариков."
+#~ msgid "Learn digits"
+#~ msgstr "Попрактиковаться в числах"
 
 #~ msgctxt "ActivityInfo|"
 #~ msgid ""
@@ -26349,43 +26436,6 @@ msgstr "Начать"
 #~ msgstr ""
 #~ "Ты играешь против компьютера. Сначала вы по очереди располагаете по "
 #~ "девять фишек, затем по очереди двигаете их."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Play with the computer. Take turns to click on the square which you want "
-#~ "to mark. The first player to create a line of 3 marks wins."
-#~ msgstr ""
-#~ "Игра с компьютером. В свой ход нажми прямоугольник, в который нужно "
-#~ "поставить крестик. Выигрывает игрок, который первым создаст ряд из трёх "
-#~ "своих пометок."
-
-#~ msgctxt "Calendar|"
-#~ msgid "Sunday"
-#~ msgstr "Воскресенье"
-
-#~ msgctxt "Calendar|"
-#~ msgid "Monday"
-#~ msgstr "Понедельник"
-
-#~ msgctxt "Calendar|"
-#~ msgid "Tuesday"
-#~ msgstr "Вторник"
-
-#~ msgctxt "Calendar|"
-#~ msgid "Wednesday"
-#~ msgstr "Среда"
-
-#~ msgctxt "Calendar|"
-#~ msgid "Thursday"
-#~ msgstr "Четверг"
-
-#~ msgctxt "Calendar|"
-#~ msgid "Friday"
-#~ msgstr "Пятница"
-
-#~ msgctxt "Calendar|"
-#~ msgid "Saturday"
-#~ msgstr "Суббота"
 
 #~ msgctxt "Data|"
 #~ msgid ""
@@ -26408,6 +26458,15 @@ msgstr "Начать"
 #~ "На|уроке|учитель|помогал|ученикам|повторять|алфавит.\n"
 #~ "После|уроков|друзья|играли|в|компьютерные|игры.\n"
 #~ "В|Интернете|много|информации|о|правильном|уходе|за|домашними|животными."
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid ""
+#~ "Play with the computer. Take turns to click on the square which you want "
+#~ "to mark. The first player to create a line of 3 marks wins."
+#~ msgstr ""
+#~ "Игра с компьютером. В свой ход нажми прямоугольник, в который нужно "
+#~ "поставить крестик. Выигрывает игрок, который первым создаст ряд из трёх "
+#~ "своих пометок."
 
 #~ msgctxt "ActivityInfo|"
 #~ msgid ""
@@ -26437,14 +26496,6 @@ msgstr "Начать"
 #~ "Изображения и голоса взяты из проекта Art4Apps http://www.art4apps.org/."
 
 #~ msgctxt "ActivityInfo|"
-#~ msgid "Play checkers against the computer"
-#~ msgstr "Игра в шашки против компьютера"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Play chess against your friend"
-#~ msgstr "Игра в шахматы вдвоём"
-
-#~ msgctxt "ActivityInfo|"
 #~ msgid "Drawing by Stephane Cabaraux"
 #~ msgstr "Рисунок Стефана Кабаро"
 
@@ -26452,198 +26503,38 @@ msgstr "Начать"
 #~ msgid "Drawing by Stephane Cabaraux."
 #~ msgstr "Рисунок Стефана Кабаро."
 
-#, fuzzy
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Arrows: navigate inside selected area"
-#~ msgstr "Стрелки: навигация внутри области"
-
-#~ msgctxt "ProgrammingMaze|"
-#~ msgid ""
-#~ "Click on Tux or press the Enter key to reset it or click on the RELOAD "
-#~ "button to reload the level."
-#~ msgstr ""
-#~ "Нажми на Тукса или клавишу Ввод, чтобы сбросить или на кнопку "
-#~ "ПЕРЕЗАГРУЗИТЬ для перезагрузки уровня."
-
-#, fuzzy
-#~ msgctxt "Data|"
-#~ msgid "Basic decimal numbers."
-#~ msgstr "Изучение десятичных чисел"
-
 #~ msgctxt "ActivityInfo|"
 #~ msgid "Mouse-manipulation"
 #~ msgstr "Работа с мышью"
 
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Knowing alphabets"
-#~ msgstr "Знание алфавита"
+#~ msgctxt "TutorialDataset|"
+#~ msgid ""
+#~ "Use the gates so that the bulb glows only when the switch is turned off "
+#~ "and remains off when the switch is turned on."
+#~ msgstr ""
+#~ "Используй предложенные компоненты и сделай так, чтобы лампочка горела "
+#~ "только при выключенном выключателе. При включённом выключателе лампочка "
+#~ "не должна включаться."
 
-#, fuzzy
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Reading"
-#~ msgstr "Чтение"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Counting skills"
-#~ msgstr "Навыки счета"
-
-#, fuzzy
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Compare alphabets."
-#~ msgstr "Сравни числа"
-
-#, fuzzy
-#~ msgctxt "ordering|"
-#~ msgid "Drag and drop the letters in correct position in descending order."
-#~ msgstr "Перетаскивай элементы по убыванию."
-
-#~ msgctxt "board15_0|"
-#~ msgid "Northern Scotland"
-#~ msgstr "Северная Шотландия"
-
-#, fuzzy
-#~ msgctxt "board15_0|"
-#~ msgid "Shetland"
-#~ msgstr "Вестланн"
-
-#, fuzzy
-#~ msgctxt "board15_0|"
-#~ msgid "Sutherland"
-#~ msgstr "Швейцария"
-
-#, fuzzy
-#~ msgctxt "board15_1|"
-#~ msgid "Southern Scotland"
-#~ msgstr "Южная Шотландия"
-
-#~ msgctxt "board15_2|"
-#~ msgid "Northern Scotland"
-#~ msgstr "Северная Шотландия"
-
-#, fuzzy
-#~ msgctxt "board15_2|"
-#~ msgid "Shetland"
-#~ msgstr "Вестланн"
-
-#, fuzzy
-#~ msgctxt "board15_2|"
-#~ msgid "Sutherland"
-#~ msgstr "Швейцария"
-
-#~ msgctxt "board15_3|"
-#~ msgid "Southern Scotland"
-#~ msgstr "Южная Шотландия"
-
-#, fuzzy
-#~ msgctxt "board15_3|"
-#~ msgid "Scottish Borders"
-#~ msgstr "Шотландские границы"
-
-#, fuzzy
-#~ msgctxt "board15_3|"
-#~ msgid "South Ayrshire"
-#~ msgstr "Южный Эйршир"
-
-#, fuzzy
-#~ msgctxt "board15_3|"
-#~ msgid "East Ayrshire"
-#~ msgstr "Восточный Эйршир"
-
-#, fuzzy
-#~ msgctxt "board15_3|"
-#~ msgid "North Ayrshire"
-#~ msgstr "Северный Эйршир"
+#~ msgctxt "board10_1|"
+#~ msgid "United States of America"
+#~ msgstr "Соединённые Штаты Америки"
 
 #~ msgctxt "board11_1|"
 #~ msgid "Districts of Northern Italy"
 #~ msgstr "Провинции северной Италии"
 
-#, fuzzy
-#~ msgctxt "board11_1|"
-#~ msgid "Aosta"
-#~ msgstr "Реостат"
-
-#, fuzzy
-#~ msgctxt "board11_1|"
-#~ msgid "Verbania"
-#~ msgstr "Албания"
-
-#, fuzzy
-#~ msgctxt "board11_1|"
-#~ msgid "Padova"
-#~ msgstr "Молдавия"
-
-#, fuzzy
-#~ msgctxt "board11_1|"
-#~ msgid "Venezia"
-#~ msgstr "Венесуэла"
-
-#, fuzzy
-#~ msgctxt "board11_1|"
-#~ msgid "Treviso"
-#~ msgstr "Назад"
-
 #~ msgctxt "board11_2|"
 #~ msgid "Districts of Central Italy"
 #~ msgstr "Провинции центральной Италии"
-
-#, fuzzy
-#~ msgctxt "board11_2|"
-#~ msgid "Perugia"
-#~ msgstr "Перу"
-
-#, fuzzy
-#~ msgctxt "board11_2|"
-#~ msgid "Roma"
-#~ msgstr "Румыния"
 
 #~ msgctxt "board11_3|"
 #~ msgid "Districts of Southern Italy"
 #~ msgstr "Провинции южной Италии"
 
-#, fuzzy
-#~ msgctxt "board11_3|"
-#~ msgid "Oristano"
-#~ msgstr "Пакистан"
-
-#, fuzzy
-#~ msgctxt "board11_3|"
-#~ msgid "Trapani"
-#~ msgstr "Япония"
-
-#, fuzzy
-#~ msgctxt "board11_3|"
-#~ msgid "Agrigento"
-#~ msgstr "Аргентина"
-
-#, fuzzy
-#~ msgctxt "board11_3|"
-#~ msgid "Matera"
-#~ msgstr "тёрка"
-
-#, fuzzy
-#~ msgctxt "board11_3|"
-#~ msgid "Benevento"
-#~ msgstr "одиннадцать"
-
-#, fuzzy
-#~ msgctxt "board1_0|"
-#~ msgid "Districts of France"
-#~ msgstr "Воеводства Польши"
-
-#, fuzzy
-#~ msgctxt "board1_0|"
-#~ msgid "Bretagne"
-#~ msgstr "Бретонский"
-
-#~ msgctxt "board4_0|"
-#~ msgid "Districts of Poland"
-#~ msgstr "Воеводства Польши"
-
-#, fuzzy
-#~ msgctxt "board4_0|"
-#~ msgid "Slaskie"
-#~ msgstr "Подляское воеводство"
+#~ msgctxt "board12_0|"
+#~ msgid "States of India"
+#~ msgstr "Штаты и территории Индии"
 
 #~ msgctxt "board13_0|"
 #~ msgid "Districts of Australia"
@@ -26652,6 +26543,22 @@ msgstr "Начать"
 #~ msgctxt "board14_0|"
 #~ msgid "Districts of China"
 #~ msgstr "Провинции и районы Китая"
+
+#~ msgctxt "board15_0|"
+#~ msgid "Northern Scotland"
+#~ msgstr "Северная Шотландия"
+
+#~ msgctxt "board15_2|"
+#~ msgid "Northern Scotland"
+#~ msgstr "Северная Шотландия"
+
+#~ msgctxt "board15_3|"
+#~ msgid "Southern Scotland"
+#~ msgstr "Южная Шотландия"
+
+#~ msgctxt "board4_0|"
+#~ msgid "Districts of Poland"
+#~ msgstr "Воеводства Польши"
 
 #~ msgctxt "board5_0|"
 #~ msgid "Districts of Turkey"
@@ -26662,167 +26569,18 @@ msgstr "Начать"
 #~ msgstr "Илы Турции"
 
 #, fuzzy
-#~ msgctxt "board5_2|"
-#~ msgid "Van"
-#~ msgstr "Ван"
-
-#, fuzzy
-#~ msgctxt "board5_2|"
-#~ msgid "Tunceli"
-#~ msgstr "Тунджели"
-
-#, fuzzy
-#~ msgctxt "board5_2|"
-#~ msgid "Malatya"
-#~ msgstr "Малатья"
-
-#, fuzzy
-#~ msgctxt "board5_2|"
-#~ msgid "Yalova"
-#~ msgstr "Ялова"
-
-#, fuzzy
-#~ msgctxt "board5_2|"
-#~ msgid "Manisa"
-#~ msgstr "Маниса"
-
-#, fuzzy
-#~ msgctxt "board5_2|"
-#~ msgid "Antalya"
-#~ msgstr "Анталья"
-
-#~ msgctxt "board12_0|"
-#~ msgid "States of India"
-#~ msgstr "Штаты и территории Индии"
-
-#~ msgctxt "board10_1|"
-#~ msgid "United States of America"
-#~ msgstr "Соединённые Штаты Америки"
-
-#, fuzzy
-#~ msgctxt "board10_1|"
-#~ msgid "North Dakota"
-#~ msgstr "Северная Дакота"
-
-#, fuzzy
-#~ msgctxt "board10_1|"
-#~ msgid "South Dakota"
-#~ msgstr "Южная Дакота"
-
-#, fuzzy
-#~ msgctxt "board10_1|"
-#~ msgid "Colorado"
-#~ msgstr "Колорадо"
-
-#, fuzzy
-#~ msgctxt "board10_1|"
-#~ msgid "New Mexico"
-#~ msgstr "Нью-Мексико"
-
-#, fuzzy
-#~ msgctxt "board10_1|"
-#~ msgid "Alaska"
-#~ msgstr "Аляска"
-
-#, fuzzy
-#~ msgctxt "board10_1|"
-#~ msgid "Hawaii"
-#~ msgstr "Гавайи"
-
-#, fuzzy
-#~ msgctxt "board10_1|"
-#~ msgid "Louisiana"
-#~ msgstr "Луизиана"
-
-#, fuzzy
-#~ msgctxt "board10_1|"
-#~ msgid "Indiana"
-#~ msgstr "Индиана"
-
-#, fuzzy
-#~ msgctxt "board10_1|"
-#~ msgid "North Carolina"
-#~ msgstr "Северная Каролина"
-
-#, fuzzy
-#~ msgctxt "board10_1|"
-#~ msgid "South Carolina"
-#~ msgstr "Южная Каролина"
-
-#, fuzzy
-#~ msgctxt "board10_1|"
-#~ msgid "Georgia"
-#~ msgstr "Джорджия"
-
-#, fuzzy
-#~ msgctxt "board10_1|"
-#~ msgid "Florida"
-#~ msgstr "Флорида"
-
-#, fuzzy
-#~ msgctxt "board10_1|"
-#~ msgid "Maryland"
-#~ msgstr "Мэриленд"
-
-#, fuzzy
-#~ msgctxt "board10_1|"
-#~ msgid "Maine"
-#~ msgstr "Мэн"
-
-#, fuzzy
-#~ msgctxt "board10_1|"
-#~ msgid "Rhode Island"
-#~ msgstr "Род-Айленд"
-
-#, fuzzy
-#~ msgctxt "board14_0|"
-#~ msgid "Indonesia"
-#~ msgstr "Индонезия"
-
-#, fuzzy
-#~ msgctxt "board14_0|"
+#~ msgctxt "board10_0|"
 #~ msgid "Northern Mariana Islands"
 #~ msgstr "Северные Марианские острова"
 
 #, fuzzy
-#~ msgctxt "board14_0|"
+#~ msgctxt "board10_0|"
 #~ msgid "American Samoa"
 #~ msgstr "Американское Самоа"
 
 #~ msgctxt "board10_0|"
 #~ msgid "Australia"
 #~ msgstr "Австралия"
-
-#~ msgctxt "board9_0|"
-#~ msgid "Asia"
-#~ msgstr "Азия"
-
-#~ msgctxt "board9_0|"
-#~ msgid "Russia"
-#~ msgstr "Россия"
-
-#~ msgctxt "board9_0|"
-#~ msgid "Japan"
-#~ msgstr "Япония"
-
-#~ msgctxt "board9_0|"
-#~ msgid "Indonesia"
-#~ msgstr "Индонезия"
-
-#, fuzzy
-#~ msgctxt "board8_0|"
-#~ msgid "Swaziland"
-#~ msgstr "Таиланд"
-
-#, fuzzy
-#~ msgctxt "board2_0|"
-#~ msgid "Alaska"
-#~ msgstr "Аляска"
-
-#, fuzzy
-#~ msgctxt "board2_0|"
-#~ msgid "Iceland"
-#~ msgstr "Исландия"
 
 #~ msgctxt "board3_1|"
 #~ msgid "Central America"
@@ -26884,61 +26642,21 @@ msgstr "Начать"
 #~ msgid "Bahamas"
 #~ msgstr "Багамские Острова"
 
-#~ msgctxt "Dataset|"
-#~ msgid "433 days"
-#~ msgstr "433 дня"
+#~ msgctxt "board9_0|"
+#~ msgid "Asia"
+#~ msgstr "Азия"
 
-#~ msgctxt "Dataset|"
-#~ msgid "88 days"
-#~ msgstr "88 дней"
+#~ msgctxt "board9_0|"
+#~ msgid "Russia"
+#~ msgstr "Россия"
 
-#~ msgctxt "Dataset|"
-#~ msgid "107 days"
-#~ msgstr "107 дней"
+#~ msgctxt "board9_0|"
+#~ msgid "Japan"
+#~ msgstr "Япония"
 
-#~ msgctxt "Dataset|"
-#~ msgid "225 days"
-#~ msgstr "225 дней"
-
-#~ msgctxt "Dataset|"
-#~ msgid "116 days"
-#~ msgstr "116 дней"
-
-#~ msgctxt "Dataset|"
-#~ msgid "100 days"
-#~ msgstr "100 дней"
-
-#~ msgctxt "Dataset|"
-#~ msgid "687 days"
-#~ msgstr "687 дней"
-
-#~ msgctxt "Dataset|"
-#~ msgid "1 year"
-#~ msgstr "1 год"
-
-#~ msgctxt "Dataset|"
-#~ msgid "24 years"
-#~ msgstr "24 года"
-
-#~ msgctxt "Dataset|"
-#~ msgid "68 years"
-#~ msgstr "68 лет"
-
-#~ msgctxt "Dataset|"
-#~ msgid "84 years"
-#~ msgstr "84 года"
-
-#~ msgctxt "Dataset|"
-#~ msgid "165 years"
-#~ msgstr "165 лет"
-
-#~ msgctxt "Dataset|"
-#~ msgid "3 years"
-#~ msgstr "3 года"
-
-#~ msgctxt "Dataset|"
-#~ msgid "100 years"
-#~ msgstr "100 лет"
+#~ msgctxt "board9_0|"
+#~ msgid "Indonesia"
+#~ msgstr "Индонезия"
 
 #~ msgctxt "ActivityInfo|"
 #~ msgid "Gnumch Equality"
@@ -26948,235 +26666,9 @@ msgstr "Начать"
 #~ msgid "Image Name"
 #~ msgstr "Назови картинки"
 
-#~ msgctxt "TutorialDataset|"
-#~ msgid ""
-#~ "Use the gates so that the bulb glows only when the switch is turned off "
-#~ "and remains off when the switch is turned on."
-#~ msgstr ""
-#~ "Используй предложенные компоненты и сделай так, чтобы лампочка горела "
-#~ "только при выключенном выключателе. При включённом выключателе лампочка "
-#~ "не должна включаться."
-
-#, fuzzy
-#~ msgctxt "board6_0|"
-#~ msgid "Telemark"
-#~ msgstr "Дания"
-
-#, fuzzy
-#~ msgctxt "board6_0|"
-#~ msgid "Oppland"
-#~ msgstr "растения"
-
-#, fuzzy
-#~ msgctxt "board6_0|"
-#~ msgid "Hordaland"
-#~ msgstr "Нурланн"
-
-#, fuzzy
-#~ msgctxt "board6_0|"
-#~ msgid "Hedmark"
-#~ msgstr "Дания"
-
-#, fuzzy
-#~ msgctxt "Data|"
-#~ msgid ""
-#~ "Paul wants to equally share 2 pieces of candy between 2 of his girl "
-#~ "friends. Can you help him? First, place the children in the center, then "
-#~ "drag the pieces of candy to each of them."
-#~ msgstr ""
-#~ "Миша хочет поровну поделить 5 конфет между 5 его друзьями девочками. "
-#~ "Можешь помочь? Сначала перемести детей в центр, затем перетащи конфеты "
-#~ "каждому из них."
-
-#, fuzzy
-#~ msgctxt "Data|"
-#~ msgid "Now he wants to give 5 pieces of candy to his friends."
-#~ msgstr "Теперь он хочет поделить между друзьями 5 конфет."
-
-#, fuzzy
-#~ msgctxt "Data|"
-#~ msgid "Can you now give 7 of Paul's pieces of candy to his friends?"
-#~ msgstr "Теперь Гарри хочет отдать друзьям 8 конфет."
-
-#~ msgctxt "Data|"
-#~ msgid "He wants to give 8 more pieces of candy to his friends."
-#~ msgstr "Теперь он хочет дать друзьям ещё 8 конфет."
-
-#, fuzzy
-#~ msgctxt "Data|"
-#~ msgid ""
-#~ "Bob wants to give 3 pieces of candy to his girl friends. Can you help him "
-#~ "equally split the pieces of candy so that each friend will have the same "
-#~ "amount?"
-#~ msgstr ""
-#~ "Алиса хочет дать конфеты 4 друзьям. У некоторых из них уже есть несколько "
-#~ "конфет. Можешь помочь ей поделить 14 конфет так, чтобы у каждого друга "
-#~ "было одинаковое количество конфет?"
-
-#, fuzzy
-#~ msgctxt "Data|"
-#~ msgid ""
-#~ "Harry wants to equally share 8 pieces of candy between his friends: 1 boy "
-#~ "and 2 girls. Place the children in the center, then drag the pieces of "
-#~ "candy so that each of them has an equal number of it."
-#~ msgstr ""
-#~ "Миша хочет поровну поделить 5 конфет между 5 его друзьями девочками. "
-#~ "Можешь помочь? Сначала перемести детей в центр, затем перетащи конфеты "
-#~ "каждому из них."
-
-#~ msgctxt "Data|"
-#~ msgid "Can you now give 8 of Harry's pieces of candy to his friends?"
-#~ msgstr "Теперь Гарри хочет отдать друзьям 8 конфет."
-
-#~ msgctxt "Data|"
-#~ msgid ""
-#~ "Harry is left with 12 pieces of candy, can you share them between his "
-#~ "friends?"
-#~ msgstr "У Гарри осталось 12 конфет, можешь поделить их между его друзьями?"
-
-#~ msgctxt "Data|"
-#~ msgid ""
-#~ "Alice wants to equally share 4 pieces of candy between 4 of her girl "
-#~ "friends. Can you help her? First, place the children in the center, then "
-#~ "drag the pieces of candy to each of them."
-#~ msgstr ""
-#~ "Алиса хочет поровну поделить 4 конфеты между 4 друзьями девочками. Можешь "
-#~ "помочь ей? Сначала перемести детей в центр, затем перетащи конфеты "
-#~ "каждому из них."
-
-#, fuzzy
-#~ msgctxt "Data|"
-#~ msgid ""
-#~ "Charles wants to share his 6 pieces of candy with 2 of his girl friends. "
-#~ "Can he split the pieces of candy equally?"
-#~ msgstr ""
-#~ "Чарли хочет поровну поделить 6 конфет между 2 подругами. Поможешь ему?"
-
-#, fuzzy
-#~ msgctxt "Data|"
-#~ msgid ""
-#~ "Jason's father gave him 17 pieces of candy to share with his friends: 2 "
-#~ "boys and 2 girls. Help him give the pieces of candy to his friends."
-#~ msgstr ""
-#~ "Папа дал Джейсону 16 конфет, чтобы он подарил их своим друзьям: 2 "
-#~ "мальчикам и 2 девочкам. Помоги ему это сделать!"
-
-#~ msgctxt "Data|"
-#~ msgid ""
-#~ "George wants to equally share 14 pieces of candy between 4 of his "
-#~ "friends: 2 girls and 2 boys. Can he equally split the pieces of candy "
-#~ "between his friends? First, place the children in center, then drag the "
-#~ "pieces of candy to each of them. Be careful."
-#~ msgstr ""
-#~ "Жора хочет поровну поделить 14 конфет между 4 друзьями: 2 мальчиками и 2 "
-#~ "девочками. Может ли он это сделать? Сначала перемести детей в центр, "
-#~ "затем перетащи конфеты каждому из них. Будь внимателен."
-
-#~ msgctxt "Data|"
-#~ msgid ""
-#~ "Maria wants to equally share 23 pieces of candy between 5 of her friends: "
-#~ "3 girls and 2 boys. Can she equally split the pieces of candy between her "
-#~ "friends? First, place the children in center, then drag the pieces of "
-#~ "candy to each of them. Be careful, a rest will remain."
-#~ msgstr ""
-#~ "Маша хочет поровну поделить 23 конфеты между 5 друзьями: 3 девочками и 2 "
-#~ "мальчиками. Можешь помочь ей? Сначала перемести детей в центр, затем "
-#~ "перетащи конфеты каждому из них. Будь внимателен, часть останется."
-
-#~ msgctxt "Data|"
-#~ msgid "He wants to give 7 more pieces of candy to his friends."
-#~ msgstr "Теперь он хочет дать друзьям 7 конфет."
-
-#~ msgctxt "Data|"
-#~ msgid ""
-#~ "George wants to equally share 3 pieces of candy between 3 of his girl "
-#~ "friends. Can he equally split the pieces of candy? First, place the "
-#~ "children in the center, then drag the pieces of candy to each of them."
-#~ msgstr ""
-#~ "Жора хочет поровну поделить 10 конфет между 3 друзьями девочками.  Может "
-#~ "ли он это сделать? Сначала перемести детей в центр, затем перетащи "
-#~ "конфеты каждому из них."
-
-#~ msgctxt "Data|"
-#~ msgid ""
-#~ "Maria wants to equally share 6 pieces of candy between 3 of her friends: "
-#~ "1 girl and 2 boys. Can she equally split the pieces of candy? First, "
-#~ "place the children in the center, then drag the pieces of candy to each "
-#~ "of them."
-#~ msgstr ""
-#~ "Маша хочет поровну поделить 3 конфеты между 3 друзьями: девочкой и двумя "
-#~ "мальчиками. Можешь помочь ей? Сначала перемести детей в центр, затем "
-#~ "перетащи конфеты каждому из них."
-
-#~ msgctxt "Data|"
-#~ msgid ""
-#~ "Paul wants to equally share 12 pieces of candy between 3 of his friends: "
-#~ "2 boys and 1 girl. Can he equally split the pieces of candy? First, place "
-#~ "the children in the center, then drag the pieces of candy to each of them."
-#~ msgstr ""
-#~ "Паша хочет поровну поделить 12 конфет между 3 друзьями: 2 мальчиками и 1 "
-#~ "девочкой. Может ли он это сделать? Сначала перемести детей в центр, затем "
-#~ "перетащи конфеты каждому из них."
-
-#~ msgctxt "Data|"
-#~ msgid ""
-#~ "Can you help Alice give 10 pieces of candy to her friends, 1 girl and 3 "
-#~ "boys?"
-#~ msgstr ""
-#~ "Можешь помочь Алисе раздать её друзьям (девочке и 3 мальчикам) 10 конфет?"
-
-#~ msgctxt "Data|"
-#~ msgid ""
-#~ "Michael wants to equally share 5 pieces of candy between 5 of his girl "
-#~ "friends. Can you help him? First, place the children in the center, then "
-#~ "drag the pieces of candy to each of them."
-#~ msgstr ""
-#~ "Миша хочет поровну поделить 5 конфет между 5 его друзьями девочками. "
-#~ "Можешь помочь? Сначала перемести детей в центр, затем перетащи конфеты "
-#~ "каждому из них."
-
-#~ msgctxt "Data|"
-#~ msgid ""
-#~ "Paul wants to equally share 20 pieces of candy between 5 of his friends: "
-#~ "2 girls and 3 boys. Can you help him? First, place the children in the "
-#~ "center, then drag the pieces of candy to each of them."
-#~ msgstr ""
-#~ "Паша хочет поровну поделить 20 конфет между 5 друзьями: 2 девочками и 3 "
-#~ "мальчиками. Можешь помочь? Сначала перемести детей в центр, затем "
-#~ "перетащи по конфете каждому из них."
-
-#~ msgctxt "Data|"
-#~ msgid ""
-#~ "For her birthday, Elizabeth has 8 pieces of candy to share with 3 of her "
-#~ "friends: 2 girls and 1 boy. How should she split the pieces of candy?"
-#~ msgstr ""
-#~ "В свой день рождения Лиза хочет поделить 8 конфет между 3 друзьями: двумя "
-#~ "девочками и одним мальчиком. Как она должна это сделать?"
-
-#~ msgctxt "Data|"
-#~ msgid ""
-#~ "Maria wants to equally share 25 pieces of candy between 5 of her friends: "
-#~ "3 girls and 2 boys. Can she equally split the pieces of candy? First, "
-#~ "place the children in the center, then drag the pieces of candy to each "
-#~ "of them."
-#~ msgstr ""
-#~ "Маша хочет поровну поделить 25 конфет между 5 друзьями: 3 девочками и 2 "
-#~ "мальчиками. Можешь помочь ей? Сначала перемести детей в центр, затем "
-#~ "перетащи конфеты каждому из них."
-
-#, fuzzy
-#~ msgctxt "board5_1|"
-#~ msgid "Mus"
-#~ msgstr "Музыка"
-
-#, fuzzy
-#~ msgctxt "board5_2|"
-#~ msgid "Mus"
-#~ msgstr "Музыка"
-
-#~ msgctxt "Data|"
-#~ msgid "Balance up to 5."
-#~ msgstr "Баланс вплоть до 5"
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Knowing alphabets"
+#~ msgstr "Знание алфавита"
 
 #~ msgctxt "ActivityInfo|"
 #~ msgid "1. To navigate through the instructions in the selected area:"
@@ -27239,6 +26731,205 @@ msgstr "Начать"
 #~ msgctxt "ActivityInfo|"
 #~ msgid "Press ENTER or RETURN."
 #~ msgstr "Нажми ВВОД или ВОЗВРАТ."
+
+#~ msgctxt "ProgrammingMaze|"
+#~ msgid ""
+#~ "Click on Tux or press the Enter key to reset it or click on the RELOAD "
+#~ "button to reload the level."
+#~ msgstr ""
+#~ "Нажми на Тукса или клавишу Ввод, чтобы сбросить или на кнопку "
+#~ "ПЕРЕЗАГРУЗИТЬ для перезагрузки уровня."
+
+#~ msgctxt "Data|"
+#~ msgid "Balance up to 5."
+#~ msgstr "Баланс вплоть до 5"
+
+#~ msgctxt "Data|"
+#~ msgid "He wants to give 7 more pieces of candy to his friends."
+#~ msgstr "Теперь он хочет дать друзьям 7 конфет."
+
+#~ msgctxt "Data|"
+#~ msgid ""
+#~ "George wants to equally share 3 pieces of candy between 3 of his girl "
+#~ "friends. Can he equally split the pieces of candy? First, place the "
+#~ "children in the center, then drag the pieces of candy to each of them."
+#~ msgstr ""
+#~ "Жора хочет поровну поделить 10 конфет между 3 друзьями девочками.  Может "
+#~ "ли он это сделать? Сначала перемести детей в центр, затем перетащи "
+#~ "конфеты каждому из них."
+
+#~ msgctxt "Data|"
+#~ msgid ""
+#~ "Maria wants to equally share 6 pieces of candy between 3 of her friends: "
+#~ "1 girl and 2 boys. Can she equally split the pieces of candy? First, "
+#~ "place the children in the center, then drag the pieces of candy to each "
+#~ "of them."
+#~ msgstr ""
+#~ "Маша хочет поровну поделить 3 конфеты между 3 друзьями: девочкой и двумя "
+#~ "мальчиками. Можешь помочь ей? Сначала перемести детей в центр, затем "
+#~ "перетащи конфеты каждому из них."
+
+#~ msgctxt "Data|"
+#~ msgid ""
+#~ "Paul wants to equally share 12 pieces of candy between 3 of his friends: "
+#~ "2 boys and 1 girl. Can he equally split the pieces of candy? First, place "
+#~ "the children in the center, then drag the pieces of candy to each of them."
+#~ msgstr ""
+#~ "Паша хочет поровну поделить 12 конфет между 3 друзьями: 2 мальчиками и 1 "
+#~ "девочкой. Может ли он это сделать? Сначала перемести детей в центр, затем "
+#~ "перетащи конфеты каждому из них."
+
+#~ msgctxt "Data|"
+#~ msgid ""
+#~ "Alice wants to equally share 4 pieces of candy between 4 of her girl "
+#~ "friends. Can you help her? First, place the children in the center, then "
+#~ "drag the pieces of candy to each of them."
+#~ msgstr ""
+#~ "Алиса хочет поровну поделить 4 конфеты между 4 друзьями девочками. Можешь "
+#~ "помочь ей? Сначала перемести детей в центр, затем перетащи конфеты "
+#~ "каждому из них."
+
+#~ msgctxt "Data|"
+#~ msgid ""
+#~ "Can you help Alice give 10 pieces of candy to her friends, 1 girl and 3 "
+#~ "boys?"
+#~ msgstr ""
+#~ "Можешь помочь Алисе раздать её друзьям (девочке и 3 мальчикам) 10 конфет?"
+
+#~ msgctxt "Data|"
+#~ msgid ""
+#~ "Michael wants to equally share 5 pieces of candy between 5 of his girl "
+#~ "friends. Can you help him? First, place the children in the center, then "
+#~ "drag the pieces of candy to each of them."
+#~ msgstr ""
+#~ "Миша хочет поровну поделить 5 конфет между 5 его друзьями девочками. "
+#~ "Можешь помочь? Сначала перемести детей в центр, затем перетащи конфеты "
+#~ "каждому из них."
+
+#~ msgctxt "Data|"
+#~ msgid ""
+#~ "Paul wants to equally share 20 pieces of candy between 5 of his friends: "
+#~ "2 girls and 3 boys. Can you help him? First, place the children in the "
+#~ "center, then drag the pieces of candy to each of them."
+#~ msgstr ""
+#~ "Паша хочет поровну поделить 20 конфет между 5 друзьями: 2 девочками и 3 "
+#~ "мальчиками. Можешь помочь? Сначала перемести детей в центр, затем "
+#~ "перетащи по конфете каждому из них."
+
+#~ msgctxt "Data|"
+#~ msgid ""
+#~ "For her birthday, Elizabeth has 8 pieces of candy to share with 3 of her "
+#~ "friends: 2 girls and 1 boy. How should she split the pieces of candy?"
+#~ msgstr ""
+#~ "В свой день рождения Лиза хочет поделить 8 конфет между 3 друзьями: двумя "
+#~ "девочками и одним мальчиком. Как она должна это сделать?"
+
+#~ msgctxt "Data|"
+#~ msgid ""
+#~ "Maria wants to equally share 25 pieces of candy between 5 of her friends: "
+#~ "3 girls and 2 boys. Can she equally split the pieces of candy? First, "
+#~ "place the children in the center, then drag the pieces of candy to each "
+#~ "of them."
+#~ msgstr ""
+#~ "Маша хочет поровну поделить 25 конфет между 5 друзьями: 3 девочками и 2 "
+#~ "мальчиками. Можешь помочь ей? Сначала перемести детей в центр, затем "
+#~ "перетащи конфеты каждому из них."
+
+#~ msgctxt "Data|"
+#~ msgid "He wants to give 8 more pieces of candy to his friends."
+#~ msgstr "Теперь он хочет дать друзьям ещё 8 конфет."
+
+#~ msgctxt "Data|"
+#~ msgid "Can you now give 8 of Harry's pieces of candy to his friends?"
+#~ msgstr "Теперь Гарри хочет отдать друзьям 8 конфет."
+
+#~ msgctxt "Data|"
+#~ msgid ""
+#~ "Harry is left with 12 pieces of candy, can you share them between his "
+#~ "friends?"
+#~ msgstr "У Гарри осталось 12 конфет, можешь поделить их между его друзьями?"
+
+#~ msgctxt "Data|"
+#~ msgid ""
+#~ "George wants to equally share 14 pieces of candy between 4 of his "
+#~ "friends: 2 girls and 2 boys. Can he equally split the pieces of candy "
+#~ "between his friends? First, place the children in center, then drag the "
+#~ "pieces of candy to each of them. Be careful."
+#~ msgstr ""
+#~ "Жора хочет поровну поделить 14 конфет между 4 друзьями: 2 мальчиками и 2 "
+#~ "девочками. Может ли он это сделать? Сначала перемести детей в центр, "
+#~ "затем перетащи конфеты каждому из них. Будь внимателен."
+
+#~ msgctxt "Data|"
+#~ msgid ""
+#~ "Maria wants to equally share 23 pieces of candy between 5 of her friends: "
+#~ "3 girls and 2 boys. Can she equally split the pieces of candy between her "
+#~ "friends? First, place the children in center, then drag the pieces of "
+#~ "candy to each of them. Be careful, a rest will remain."
+#~ msgstr ""
+#~ "Маша хочет поровну поделить 23 конфеты между 5 друзьями: 3 девочками и 2 "
+#~ "мальчиками. Можешь помочь ей? Сначала перемести детей в центр, затем "
+#~ "перетащи конфеты каждому из них. Будь внимателен, часть останется."
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Counting skills"
+#~ msgstr "Навыки счета"
+
+#~ msgctxt "Dataset|"
+#~ msgid "433 days"
+#~ msgstr "433 дня"
+
+#~ msgctxt "Dataset|"
+#~ msgid "88 days"
+#~ msgstr "88 дней"
+
+#~ msgctxt "Dataset|"
+#~ msgid "107 days"
+#~ msgstr "107 дней"
+
+#~ msgctxt "Dataset|"
+#~ msgid "225 days"
+#~ msgstr "225 дней"
+
+#~ msgctxt "Dataset|"
+#~ msgid "116 days"
+#~ msgstr "116 дней"
+
+#~ msgctxt "Dataset|"
+#~ msgid "100 days"
+#~ msgstr "100 дней"
+
+#~ msgctxt "Dataset|"
+#~ msgid "687 days"
+#~ msgstr "687 дней"
+
+#~ msgctxt "Dataset|"
+#~ msgid "1 year"
+#~ msgstr "1 год"
+
+#~ msgctxt "Dataset|"
+#~ msgid "24 years"
+#~ msgstr "24 года"
+
+#~ msgctxt "Dataset|"
+#~ msgid "68 years"
+#~ msgstr "68 лет"
+
+#~ msgctxt "Dataset|"
+#~ msgid "84 years"
+#~ msgstr "84 года"
+
+#~ msgctxt "Dataset|"
+#~ msgid "165 years"
+#~ msgstr "165 лет"
+
+#~ msgctxt "Dataset|"
+#~ msgid "3 years"
+#~ msgstr "3 года"
+
+#~ msgctxt "Dataset|"
+#~ msgid "100 years"
+#~ msgstr "100 лет"
 
 #~ msgctxt "ChangeLog|"
 #~ msgid "Multiple dataset"
@@ -28389,11 +28080,6 @@ msgstr "Начать"
 #~ msgid "Do you want to download the corresponding sound files now?"
 #~ msgstr "Загрузить соответствующие звуковые файлы сейчас?"
 
-#, fuzzy
-#~ msgctxt "Data|"
-#~ msgid "Countries of Australia."
-#~ msgstr "Страны Азии."
-
 #~ msgctxt "ActivityInfo|"
 #~ msgid ""
 #~ "A letter is spoken. Click on the matching letter in the main area. You "
@@ -28625,6 +28311,11 @@ msgstr "Начать"
 #~ msgctxt "Reversecount|"
 #~ msgid "Numbers"
 #~ msgstr "Числа"
+
+#, fuzzy
+#~ msgctxt "Reversecount|"
+#~ msgid "Romans"
+#~ msgstr "Румыния"
 
 #~ msgctxt "Dataset|"
 #~ msgid "1000 degrees celsius"
@@ -29213,6 +28904,11 @@ msgstr "Начать"
 #~ msgctxt "DialogConfig|"
 #~ msgid "English (United States)"
 #~ msgstr "Английский (США)"
+
+#, fuzzy
+#~ msgctxt "DialogConfig|"
+#~ msgid "Breton"
+#~ msgstr "Бретонский"
 
 #~ msgctxt "DialogConfig|"
 #~ msgid "Spanish"
@@ -30295,3 +29991,358 @@ msgstr "Начать"
 #~ "Notre Dame de Paris cathedral on the Île de la Cité island in Paris, "
 #~ "France."
 #~ msgstr "Собор Парижской Богоматери на острове Сите в Париже, Франция"
+
+#, fuzzy
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Arrows: navigate inside selected area"
+#~ msgstr "Стрелки: навигация внутри области"
+
+#, fuzzy
+#~ msgctxt "Data|"
+#~ msgid "Basic decimal numbers."
+#~ msgstr "Изучение десятичных чисел"
+
+#, fuzzy
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Reading"
+#~ msgstr "Чтение"
+
+#, fuzzy
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Compare alphabets."
+#~ msgstr "Сравни числа"
+
+#, fuzzy
+#~ msgctxt "ordering|"
+#~ msgid "Drag and drop the letters in correct position in descending order."
+#~ msgstr "Перетаскивай элементы по убыванию."
+
+#, fuzzy
+#~ msgctxt "board15_0|"
+#~ msgid "Shetland"
+#~ msgstr "Вестланн"
+
+#, fuzzy
+#~ msgctxt "board15_0|"
+#~ msgid "Sutherland"
+#~ msgstr "Швейцария"
+
+#, fuzzy
+#~ msgctxt "board15_1|"
+#~ msgid "Southern Scotland"
+#~ msgstr "Южная Шотландия"
+
+#, fuzzy
+#~ msgctxt "board15_2|"
+#~ msgid "Shetland"
+#~ msgstr "Вестланн"
+
+#, fuzzy
+#~ msgctxt "board15_2|"
+#~ msgid "Sutherland"
+#~ msgstr "Швейцария"
+
+#, fuzzy
+#~ msgctxt "board15_3|"
+#~ msgid "Scottish Borders"
+#~ msgstr "Шотландские границы"
+
+#, fuzzy
+#~ msgctxt "board15_3|"
+#~ msgid "South Ayrshire"
+#~ msgstr "Южный Эйршир"
+
+#, fuzzy
+#~ msgctxt "board15_3|"
+#~ msgid "East Ayrshire"
+#~ msgstr "Восточный Эйршир"
+
+#, fuzzy
+#~ msgctxt "board15_3|"
+#~ msgid "North Ayrshire"
+#~ msgstr "Северный Эйршир"
+
+#, fuzzy
+#~ msgctxt "board11_1|"
+#~ msgid "Aosta"
+#~ msgstr "Реостат"
+
+#, fuzzy
+#~ msgctxt "board11_1|"
+#~ msgid "Verbania"
+#~ msgstr "Албания"
+
+#, fuzzy
+#~ msgctxt "board11_1|"
+#~ msgid "Padova"
+#~ msgstr "Молдавия"
+
+#, fuzzy
+#~ msgctxt "board11_1|"
+#~ msgid "Venezia"
+#~ msgstr "Венесуэла"
+
+#, fuzzy
+#~ msgctxt "board11_1|"
+#~ msgid "Treviso"
+#~ msgstr "Назад"
+
+#, fuzzy
+#~ msgctxt "board11_2|"
+#~ msgid "Perugia"
+#~ msgstr "Перу"
+
+#, fuzzy
+#~ msgctxt "board11_3|"
+#~ msgid "Oristano"
+#~ msgstr "Пакистан"
+
+#, fuzzy
+#~ msgctxt "board11_3|"
+#~ msgid "Trapani"
+#~ msgstr "Япония"
+
+#, fuzzy
+#~ msgctxt "board11_3|"
+#~ msgid "Agrigento"
+#~ msgstr "Аргентина"
+
+#, fuzzy
+#~ msgctxt "board11_3|"
+#~ msgid "Matera"
+#~ msgstr "тёрка"
+
+#, fuzzy
+#~ msgctxt "board11_3|"
+#~ msgid "Benevento"
+#~ msgstr "одиннадцать"
+
+#, fuzzy
+#~ msgctxt "board1_0|"
+#~ msgid "Districts of France"
+#~ msgstr "Воеводства Польши"
+
+#, fuzzy
+#~ msgctxt "board4_0|"
+#~ msgid "Slaskie"
+#~ msgstr "Подляское воеводство"
+
+#, fuzzy
+#~ msgctxt "board5_2|"
+#~ msgid "Van"
+#~ msgstr "Ван"
+
+#, fuzzy
+#~ msgctxt "board5_2|"
+#~ msgid "Tunceli"
+#~ msgstr "Тунджели"
+
+#, fuzzy
+#~ msgctxt "board5_2|"
+#~ msgid "Malatya"
+#~ msgstr "Малатья"
+
+#, fuzzy
+#~ msgctxt "board5_2|"
+#~ msgid "Yalova"
+#~ msgstr "Ялова"
+
+#, fuzzy
+#~ msgctxt "board5_2|"
+#~ msgid "Manisa"
+#~ msgstr "Маниса"
+
+#, fuzzy
+#~ msgctxt "board5_2|"
+#~ msgid "Antalya"
+#~ msgstr "Анталья"
+
+#, fuzzy
+#~ msgctxt "board10_1|"
+#~ msgid "North Dakota"
+#~ msgstr "Северная Дакота"
+
+#, fuzzy
+#~ msgctxt "board10_1|"
+#~ msgid "South Dakota"
+#~ msgstr "Южная Дакота"
+
+#, fuzzy
+#~ msgctxt "board10_1|"
+#~ msgid "Colorado"
+#~ msgstr "Колорадо"
+
+#, fuzzy
+#~ msgctxt "board10_1|"
+#~ msgid "New Mexico"
+#~ msgstr "Нью-Мексико"
+
+#, fuzzy
+#~ msgctxt "board10_1|"
+#~ msgid "Alaska"
+#~ msgstr "Аляска"
+
+#, fuzzy
+#~ msgctxt "board10_1|"
+#~ msgid "Hawaii"
+#~ msgstr "Гавайи"
+
+#, fuzzy
+#~ msgctxt "board10_1|"
+#~ msgid "Louisiana"
+#~ msgstr "Луизиана"
+
+#, fuzzy
+#~ msgctxt "board10_1|"
+#~ msgid "Indiana"
+#~ msgstr "Индиана"
+
+#, fuzzy
+#~ msgctxt "board10_1|"
+#~ msgid "North Carolina"
+#~ msgstr "Северная Каролина"
+
+#, fuzzy
+#~ msgctxt "board10_1|"
+#~ msgid "South Carolina"
+#~ msgstr "Южная Каролина"
+
+#, fuzzy
+#~ msgctxt "board10_1|"
+#~ msgid "Georgia"
+#~ msgstr "Джорджия"
+
+#, fuzzy
+#~ msgctxt "board10_1|"
+#~ msgid "Florida"
+#~ msgstr "Флорида"
+
+#, fuzzy
+#~ msgctxt "board10_1|"
+#~ msgid "Maryland"
+#~ msgstr "Мэриленд"
+
+#, fuzzy
+#~ msgctxt "board10_1|"
+#~ msgid "Maine"
+#~ msgstr "Мэн"
+
+#, fuzzy
+#~ msgctxt "board10_1|"
+#~ msgid "Rhode Island"
+#~ msgstr "Род-Айленд"
+
+#, fuzzy
+#~ msgctxt "board14_0|"
+#~ msgid "Indonesia"
+#~ msgstr "Индонезия"
+
+#, fuzzy
+#~ msgctxt "board8_0|"
+#~ msgid "Swaziland"
+#~ msgstr "Таиланд"
+
+#, fuzzy
+#~ msgctxt "board2_0|"
+#~ msgid "Alaska"
+#~ msgstr "Аляска"
+
+#, fuzzy
+#~ msgctxt "board2_0|"
+#~ msgid "Iceland"
+#~ msgstr "Исландия"
+
+#, fuzzy
+#~ msgctxt "board6_0|"
+#~ msgid "Telemark"
+#~ msgstr "Дания"
+
+#, fuzzy
+#~ msgctxt "board6_0|"
+#~ msgid "Oppland"
+#~ msgstr "растения"
+
+#, fuzzy
+#~ msgctxt "board6_0|"
+#~ msgid "Hordaland"
+#~ msgstr "Нурланн"
+
+#, fuzzy
+#~ msgctxt "board6_0|"
+#~ msgid "Hedmark"
+#~ msgstr "Дания"
+
+#, fuzzy
+#~ msgctxt "Data|"
+#~ msgid ""
+#~ "Paul wants to equally share 2 pieces of candy between 2 of his girl "
+#~ "friends. Can you help him? First, place the children in the center, then "
+#~ "drag the pieces of candy to each of them."
+#~ msgstr ""
+#~ "Миша хочет поровну поделить 5 конфет между 5 его друзьями девочками. "
+#~ "Можешь помочь? Сначала перемести детей в центр, затем перетащи конфеты "
+#~ "каждому из них."
+
+#, fuzzy
+#~ msgctxt "Data|"
+#~ msgid "Now he wants to give 5 pieces of candy to his friends."
+#~ msgstr "Теперь он хочет поделить между друзьями 5 конфет."
+
+#, fuzzy
+#~ msgctxt "Data|"
+#~ msgid "Can you now give 7 of Paul's pieces of candy to his friends?"
+#~ msgstr "Теперь Гарри хочет отдать друзьям 8 конфет."
+
+#, fuzzy
+#~ msgctxt "Data|"
+#~ msgid ""
+#~ "Bob wants to give 3 pieces of candy to his girl friends. Can you help him "
+#~ "equally split the pieces of candy so that each friend will have the same "
+#~ "amount?"
+#~ msgstr ""
+#~ "Алиса хочет дать конфеты 4 друзьям. У некоторых из них уже есть несколько "
+#~ "конфет. Можешь помочь ей поделить 14 конфет так, чтобы у каждого друга "
+#~ "было одинаковое количество конфет?"
+
+#, fuzzy
+#~ msgctxt "Data|"
+#~ msgid ""
+#~ "Harry wants to equally share 8 pieces of candy between his friends: 1 boy "
+#~ "and 2 girls. Place the children in the center, then drag the pieces of "
+#~ "candy so that each of them has an equal number of it."
+#~ msgstr ""
+#~ "Миша хочет поровну поделить 5 конфет между 5 его друзьями девочками. "
+#~ "Можешь помочь? Сначала перемести детей в центр, затем перетащи конфеты "
+#~ "каждому из них."
+
+#, fuzzy
+#~ msgctxt "Data|"
+#~ msgid ""
+#~ "Charles wants to share his 6 pieces of candy with 2 of his girl friends. "
+#~ "Can he split the pieces of candy equally?"
+#~ msgstr ""
+#~ "Чарли хочет поровну поделить 6 конфет между 2 подругами. Поможешь ему?"
+
+#, fuzzy
+#~ msgctxt "Data|"
+#~ msgid ""
+#~ "Jason's father gave him 17 pieces of candy to share with his friends: 2 "
+#~ "boys and 2 girls. Help him give the pieces of candy to his friends."
+#~ msgstr ""
+#~ "Папа дал Джейсону 16 конфет, чтобы он подарил их своим друзьям: 2 "
+#~ "мальчикам и 2 девочкам. Помоги ему это сделать!"
+
+#, fuzzy
+#~ msgctxt "board5_1|"
+#~ msgid "Mus"
+#~ msgstr "Музыка"
+
+#, fuzzy
+#~ msgctxt "board5_2|"
+#~ msgid "Mus"
+#~ msgstr "Музыка"
+
+#, fuzzy
+#~ msgctxt "Data|"
+#~ msgid "Countries of Australia."
+#~ msgstr "Страны Азии."

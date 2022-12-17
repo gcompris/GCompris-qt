@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-12-13 00:48+0000\n"
+"POT-Creation-Date: 2022-12-17 02:40+0000\n"
 "PO-Revision-Date: 2022-01-04 16:56+0100\n"
 "Last-Translator: Vit Pelcak <vpelcak@suse.cz>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
@@ -197,9 +197,10 @@ msgstr "Zařazuj prvky do správné skupiny"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "checkers"
 #: activities/checkers/ActivityInfo.qml:18
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "play chess against Tux"
 msgid "play checkers against Tux"
-msgstr ""
+msgstr "hrát šachy proti Tuxovi"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "checkers_2players"
 #: activities/checkers_2players/ActivityInfo.qml:18
@@ -1134,3 +1135,6 @@ msgstr ""
 #, kde-format
 msgid "Type the words on your keyboard before they reach the ground."
 msgstr ""
+
+#~ msgid "play checkers against the computer"
+#~ msgstr "prát šachy proti počítači"

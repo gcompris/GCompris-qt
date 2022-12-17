@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2022-12-11 22:18+0100\n"
+"PO-Revision-Date: 2022-04-11 10:44+0200\n"
 "Last-Translator: giovanni <g.sora@tiscali.it>\n"
 "Language-Team: Interlingua <kde-i18n-doc@kde.org>\n"
 "Language: ia\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Qt-Contexts: true\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 22.12.0\n"
+"X-Generator: Lokalize 20.04.2\n"
 
 #. Activity title
 #: activities/advanced_colors/ActivityInfo.qml:15
@@ -194,7 +194,7 @@ msgstr ""
 #: activities/money_cents/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Space or Enter: select an item"
-msgstr "Spatio o Enter: Selectiona un elemento"
+msgstr "Spatioo o Enter: Selectiona un elemento"
 
 #. Look at https://gcompris.net/wiki/Advanced_color_translation to see all the advanced colors Color #FF7F50
 #. ----------
@@ -3803,11 +3803,17 @@ msgid "Do you really want to undo all the moves?"
 msgstr ""
 
 #: activities/chess/Chess.qml:124
+#, fuzzy
+#| msgctxt "balanceboxeditor|"
+#| msgid "Yes"
 msgctxt "Chess|"
 msgid "Yes"
 msgstr "Si"
 
 #: activities/chess/Chess.qml:125
+#, fuzzy
+#| msgctxt "balanceboxeditor|"
+#| msgid "No"
 msgctxt "Chess|"
 msgid "No"
 msgstr "No"
@@ -4743,9 +4749,12 @@ msgstr "Continua"
 
 #. Activity title
 #: activities/comparator/ActivityInfo.qml:17
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Compare numbers."
 msgctxt "ActivityInfo|"
 msgid "Compare numbers"
-msgstr "Compara numeros"
+msgstr "Comparar numeros"
 
 #. Help title
 #: activities/comparator/ActivityInfo.qml:19
@@ -4755,9 +4764,12 @@ msgstr ""
 
 #. Help goal
 #: activities/comparator/ActivityInfo.qml:22
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Learn additions with decimal numbers."
 msgctxt "ActivityInfo|"
 msgid "Learn how to compare number values."
-msgstr "Apprende como comparar valores de numero."
+msgstr "Apprende additiones con numeros decimal."
 
 #. Help manual
 #: activities/comparator/ActivityInfo.qml:26
@@ -4791,9 +4803,12 @@ msgid "Space: if a symbol button is selected, enter this symbol"
 msgstr ""
 
 #: activities/comparator/ActivityInfo.qml:32
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Enter: validate your answer"
 msgctxt "ActivityInfo|"
 msgid "Return: validate the answers"
-msgstr "Retorna: valida le responsas"
+msgstr "Enter: valida tu responsa"
 
 #: activities/comparator/ActivityInfo.qml:33
 msgctxt "ActivityInfo|"
@@ -8061,9 +8076,12 @@ msgid ""
 msgstr ""
 
 #: activities/fractions_create/fractions_create.js:79
+#, fuzzy
+#| msgctxt "colors|"
+#| msgid "Find the green duck"
 msgctxt "fractions_create|"
 msgid "Find the represented fraction."
-msgstr "Trova le fraction representate"
+msgstr "Trova le anate verde"
 
 #: activities/fractions_create/resource/1/Data.qml:9
 msgctxt "Data|"
@@ -8094,9 +8112,12 @@ msgstr ""
 
 #: activities/fractions_create/resource/1/Data.qml:36
 #: activities/fractions_create/resource/3/Data.qml:61
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Select the butterfly of the correct color."
 msgctxt "Data|"
 msgid "Select one-quarter of the pie."
-msgstr "Selige un quarto de torta"
+msgstr "Selige le papilion del color correcte."
 
 #: activities/fractions_create/resource/1/Data.qml:42
 #: activities/fractions_create/resource/3/Data.qml:67
@@ -8151,29 +8172,41 @@ msgstr ""
 #: activities/fractions_create/resource/4/Data.qml:17
 #: activities/fractions_create/resource/4/Data.qml:23
 #: activities/fractions_create/resource/4/Data.qml:29
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Select the butterfly of the correct color."
 msgctxt "Data|"
 msgid "Select one half of the rectangle."
-msgstr "Selige un medietate del rectangulo."
+msgstr "Selige le papilion del color correcte."
 
 #: activities/fractions_create/resource/2/Data.qml:24
 #: activities/fractions_create/resource/4/Data.qml:35
 #: activities/fractions_create/resource/4/Data.qml:49
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Select the butterfly of the correct color."
 msgctxt "Data|"
 msgid "Select one-third of the rectangle."
-msgstr "Selige un tertio del rectangulo."
+msgstr "Selige le papilion del color correcte."
 
 #: activities/fractions_create/resource/2/Data.qml:30
 #: activities/fractions_create/resource/4/Data.qml:41
 #: activities/fractions_create/resource/4/Data.qml:55
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Select the butterfly of the correct color."
 msgctxt "Data|"
 msgid "Select two-thirds of the rectangle."
-msgstr "Selige duo tertios del rectangulo."
+msgstr "Selige le papilion del color correcte."
 
 #: activities/fractions_create/resource/2/Data.qml:36
 #: activities/fractions_create/resource/4/Data.qml:61
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Select the butterfly of the correct color."
 msgctxt "Data|"
 msgid "Select one-quarter of the rectangle."
-msgstr "Selige un quarto del rectangulo."
+msgstr "Selige le papilion del color correcte."
 
 #: activities/fractions_create/resource/2/Data.qml:42
 #: activities/fractions_create/resource/4/Data.qml:67
@@ -8212,9 +8245,12 @@ msgid "Non-simplified fractions with a pie."
 msgstr ""
 
 #: activities/fractions_create/resource/3/Data.qml:73
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Select the butterfly of the correct color."
 msgctxt "Data|"
 msgid "Select three-fifths of the pie."
-msgstr "Selige ltres quintos del torta."
+msgstr "Selige le papilion del color correcte."
 
 #: activities/fractions_create/resource/4/Data.qml:9
 msgctxt "Data|"
@@ -8222,19 +8258,28 @@ msgid "Non-simplified fractions with a rectangle."
 msgstr ""
 
 #: activities/fractions_create/resource/4/Data.qml:73
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Select the butterfly of the correct color."
 msgctxt "Data|"
 msgid "Select three-fifths of the rectangle."
-msgstr "Selige tres quintos del rectangulo."
+msgstr "Selige le papilion del color correcte."
 
 #: activities/fractions_create/resource/5/Data.qml:9
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Numbers with dice"
 msgctxt "Data|"
 msgid "Decimal numbers with a pie."
-msgstr "Numeros decimal conun torta."
+msgstr "Numeros con datos"
 
 #: activities/fractions_create/resource/5/Data.qml:18
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 0.5 pie."
-msgstr "Selectiona torta de 0.5."
+msgstr "Selectionate"
 
 #: activities/fractions_create/resource/5/Data.qml:24
 msgctxt "Data|"
@@ -8242,9 +8287,12 @@ msgid "Select 0.25 pie."
 msgstr ""
 
 #: activities/fractions_create/resource/5/Data.qml:30
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 0.4 pie."
-msgstr "Selectiona tort.a de 0.4"
+msgstr "Selectionate"
 
 #: activities/fractions_create/resource/5/Data.qml:36
 msgctxt "Data|"
@@ -8252,9 +8300,12 @@ msgid "Select 0.75 pie."
 msgstr ""
 
 #: activities/fractions_create/resource/5/Data.qml:42
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 0.8 pie."
-msgstr "Selectiona torta de 0.8."
+msgstr "Selectionate"
 
 #: activities/fractions_create/resource/5/Data.qml:50
 msgctxt "Data|"
@@ -8285,27 +8336,27 @@ msgstr ""
 #: activities/fractions_create/resource/6/Data.qml:18
 msgctxt "Data|"
 msgid "Select 0.5 rectangle."
-msgstr "Selectiona rectangulo de 0.5"
+msgstr ""
 
 #: activities/fractions_create/resource/6/Data.qml:24
 msgctxt "Data|"
 msgid "Select 0.25 rectangle."
-msgstr "Selectiona rectangulo de 0.25"
+msgstr ""
 
 #: activities/fractions_create/resource/6/Data.qml:30
 msgctxt "Data|"
 msgid "Select 0.4 rectangle."
-msgstr "Selectiona rectangulo de 0.4"
+msgstr ""
 
 #: activities/fractions_create/resource/6/Data.qml:36
 msgctxt "Data|"
 msgid "Select 0.75 rectangle."
-msgstr "Selectiona rectangulo de 0.75"
+msgstr ""
 
 #: activities/fractions_create/resource/6/Data.qml:42
 msgctxt "Data|"
 msgid "Select 0.8 rectangle."
-msgstr "Selectiona rectangulo de 0.8"
+msgstr ""
 
 #: activities/fractions_create/resource/6/Data.qml:50
 msgctxt "Data|"
@@ -8378,9 +8429,12 @@ msgstr ""
 
 #. Activity title
 #: activities/fractions_find/ActivityInfo.qml:14
+#, fuzzy
+#| msgctxt "colors|"
+#| msgid "Find the brown duck"
 msgctxt "ActivityInfo|"
 msgid "Find the fractions"
-msgstr "Trova le frctiones"
+msgstr "Trova le anate brun"
 
 #. Help title
 #: activities/fractions_find/ActivityInfo.qml:16
@@ -9664,7 +9718,7 @@ msgstr ""
 #: activities/geo-country/resource/board/board18_0.qml:29
 msgctxt "board18_0|"
 msgid "Madrid"
-msgstr "Madrid"
+msgstr ""
 
 #. Autonomous communities of Spain: Galicia
 #: activities/geo-country/resource/board/board18_0.qml:36
@@ -9686,21 +9740,30 @@ msgstr ""
 
 #. Autonomous communities of Spain: Catalonia
 #: activities/geo-country/resource/board/board18_0.qml:57
+#, fuzzy
+#| msgctxt "board14_0|"
+#| msgid "New Caledonia"
 msgctxt "board18_0|"
 msgid "Catalonia"
-msgstr "Catalonia"
+msgstr "Nove Caledonia"
 
 #. Autonomous communities of Spain: Aragon
 #: activities/geo-country/resource/board/board18_0.qml:64
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Hexagon"
 msgctxt "board18_0|"
 msgid "Aragon"
-msgstr "Aragon"
+msgstr "Hexagono"
 
 #. Autonomous communities of Spain: Valencia
 #: activities/geo-country/resource/board/board18_0.qml:71
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Calendar"
 msgctxt "board18_0|"
 msgid "Valencia"
-msgstr "Valencia"
+msgstr "Calendario"
 
 #. Autonomous communities of Spain: Murcia
 #: activities/geo-country/resource/board/board18_0.qml:78
@@ -9722,6 +9785,9 @@ msgstr ""
 
 #. Autonomous communities of Spain: La Rioja
 #: activities/geo-country/resource/board/board18_0.qml:99
+#, fuzzy
+#| msgctxt "board3_0|"
+#| msgid "La Rioja"
 msgctxt "board18_0|"
 msgid "La Rioja"
 msgstr "La Rioja"
@@ -9734,9 +9800,12 @@ msgstr ""
 
 #. Autonomous communities of Spain: Navarre
 #: activities/geo-country/resource/board/board18_0.qml:113
+#, fuzzy
+#| msgctxt "board5|"
+#| msgid "Navajo"
 msgctxt "board18_0|"
 msgid "Navarre"
-msgstr "Navarre"
+msgstr "Navajo"
 
 #. Autonomous communities of Spain: Extremadura
 #: activities/geo-country/resource/board/board18_0.qml:120
@@ -9746,21 +9815,27 @@ msgstr ""
 
 #. Autonomous communities of Spain: Canary Islands
 #: activities/geo-country/resource/board/board18_0.qml:127
+#, fuzzy
+#| msgctxt "board14_0|"
+#| msgid "Mariana Islands"
 msgctxt "board18_0|"
 msgid "Canary Islands"
-msgstr "Insulas Canarias"
+msgstr "Insulas Mariana"
 
 #. Autonomous communities of Spain: Balearic Islands
 #: activities/geo-country/resource/board/board18_0.qml:134
+#, fuzzy
+#| msgctxt "board14_0|"
+#| msgid "Mariana Islands"
 msgctxt "board18_0|"
 msgid "Balearic Islands"
-msgstr "Insulas Balearic"
+msgstr "Insulas Mariana"
 
 #. Autonomous communities of Spain: Ceuta
 #: activities/geo-country/resource/board/board18_0.qml:141
 msgctxt "board18_0|"
 msgid "Ceuta"
-msgstr "Ceuta"
+msgstr ""
 
 #. Autonomous communities of Spain: Melilla
 #: activities/geo-country/resource/board/board18_0.qml:148
@@ -11767,7 +11842,7 @@ msgstr ""
 #: activities/geography/resource/board/board5_0.qml:73
 msgctxt "board5_0|"
 msgid "Luxembourg"
-msgstr "Luxembourg"
+msgstr ""
 
 #: activities/geography/resource/board/board5_0.qml:81
 msgctxt "board5_0|"
@@ -11820,6 +11895,9 @@ msgid "Eastern Europe"
 msgstr ""
 
 #: activities/geography/resource/board/board6_0.qml:24
+#, fuzzy
+#| msgctxt "board9_0|"
+#| msgid "Cyprus"
 msgctxt "board6_0|"
 msgid "Cyprus"
 msgstr "Cypro"
@@ -14279,7 +14357,7 @@ msgstr ""
 #. Activity title
 #: activities/learn_digits/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
-msgid "Learn digits"
+msgid "Count and color the circles"
 msgstr ""
 
 #. Help title
@@ -16240,22 +16318,22 @@ msgstr ""
 #: activities/memory/math_util.js:15 activities/memory/math_util.js:18
 msgctxt "math_util|"
 msgid "+"
-msgstr "+"
+msgstr ""
 
 #: activities/memory/math_util.js:28
 msgctxt "math_util|"
 msgid "−"
-msgstr "−"
+msgstr ""
 
 #: activities/memory/math_util.js:39 activities/memory/math_util.js:42
 msgctxt "math_util|"
 msgid "×"
-msgstr "×"
+msgstr ""
 
 #: activities/memory/math_util.js:52
 msgctxt "math_util|"
 msgid "÷"
-msgstr "÷"
+msgstr ""
 
 #: activities/memory/MemoryCommon.qml:324
 msgctxt "MemoryCommon|"
@@ -17087,21 +17165,26 @@ msgid "When you are ready, click on Tux and we will converse in Morse code."
 msgstr ""
 
 #: activities/morse_code/MorseCode.qml:346
-#, qt-format
+#, fuzzy, qt-format
+#| msgctxt "Data|"
+#| msgid "Maximum value: 10."
 msgctxt "MorseCode|"
 msgid "Morse value: %1"
-msgstr "Valor Morse: %1"
+msgstr "Valor maxime: 10."
 
 #: activities/morse_code/MorseCode.qml:347
 #, qt-format
 msgctxt "MorseCode|"
 msgid "Alphabet/Numeric value: %1"
-msgstr "Alphabet/Valor numeric: %1"
+msgstr ""
 
 #: activities/morse_code/resource/1/Data.qml:13
+#, fuzzy
+#| msgctxt "Menu|"
+#| msgid "Letters"
 msgctxt "Data|"
 msgid "Letters."
-msgstr "Litteras."
+msgstr "Litteras"
 
 #: activities/morse_code/resource/1/Data.qml:18
 #: activities/morse_code/resource/1/Data.qml:34
@@ -17128,14 +17211,17 @@ msgstr ""
 #: activities/morse_code/resource/1/Data.qml:44
 #: activities/morse_code/resource/1/Data.qml:60
 #: activities/morse_code/resource/1/Data.qml:76
+#, fuzzy
+#| msgctxt "advanced_colors|"
+#| msgid "Find the coral butterfly"
 msgctxt "Data|"
 msgid "Find the corresponding letter."
-msgstr "Trova le littera correspondente."
+msgstr "Trova le papilion Corallo"
 
 #: activities/morse_code/resource/2/Data.qml:13
 msgctxt "Data|"
 msgid "Digits."
-msgstr "Digitos."
+msgstr ""
 
 #: activities/morse_code/resource/2/Data.qml:23
 #: activities/morse_code/resource/2/Data.qml:39
@@ -17146,14 +17232,20 @@ msgstr ""
 
 #: activities/morse_code/resource/2/Data.qml:28
 #: activities/morse_code/resource/2/Data.qml:44
+#, fuzzy
+#| msgctxt "colors|"
+#| msgid "Find the orange duck"
 msgctxt "Data|"
 msgid "Find the corresponding digit."
-msgstr "Trova le digito correspondente"
+msgstr "Trova le anate orange"
 
 #: activities/morse_code/resource/3/Data.qml:13
+#, fuzzy
+#| msgctxt "Menu|"
+#| msgid "Words"
 msgctxt "Data|"
 msgid "Words."
-msgstr "Parolas."
+msgstr "Parolas"
 
 #: activities/morse_code/resource/3/Data.qml:24
 msgctxt "Data|"
@@ -17571,13 +17663,13 @@ msgstr ""
 #: activities/ordering_alphabets/resource/1/Data.qml:22
 msgctxt "Data|"
 msgid "a|b|c|d|e"
-msgstr "a|b|c|d|e"
+msgstr ""
 
 #. Add 5 letters in ascending lexicographical order, separated by | character. The objective is to give children these letters in random order and ask them to sort in ascending lexicographical order.
 #: activities/ordering_alphabets/resource/1/Data.qml:28
 msgctxt "Data|"
 msgid "c|f|g|l|m"
-msgstr "c|f|g|l|m"
+msgstr ""
 
 #: activities/ordering_alphabets/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -17588,13 +17680,13 @@ msgstr ""
 #: activities/ordering_alphabets/resource/2/Data.qml:22
 msgctxt "Data|"
 msgid "v|w|x|y|z"
-msgstr "v|w|x|y|z"
+msgstr ""
 
 #. Add 5 letters in ascending lexicographical order, separated by | character. The objective is to give children these letters in random order and ask them to sort in descending lexicographical order.
 #: activities/ordering_alphabets/resource/2/Data.qml:28
 msgctxt "Data|"
 msgid "a|b|d|f|g"
-msgstr "a|b|d|f|g"
+msgstr ""
 
 #: activities/ordering_alphabets/resource/3/Data.qml:13
 msgctxt "Data|"
@@ -17610,7 +17702,7 @@ msgstr ""
 #: activities/ordering_alphabets/resource/6/Data.qml:21
 msgctxt "Data|"
 msgid "a|b|c|d|e|f|g|h|i|j|k|l|m|n|o|p|q|r|s|t|u|v|w|x|y|z"
-msgstr "a|b|c|d|e|f|g|h|i|j|k|l|m|n|o|p|q|r|s|t|u|v|w|x|y|z"
+msgstr ""
 
 #: activities/ordering_alphabets/resource/4/Data.qml:13
 msgctxt "Data|"
@@ -22080,7 +22172,7 @@ msgstr "Preciion: %1%"
 #, qt-format
 msgctxt "QuizScreen|"
 msgid "%1%"
-msgstr "%1%"
+msgstr ""
 
 #: activities/solar_system/QuizScreen.qml:274
 #, qt-format
@@ -22978,248 +23070,266 @@ msgstr ""
 
 #: core/ChangeLog.qml:30
 msgctxt "ChangeLog|"
+msgid "Map of Spain added for geography activity"
+msgstr ""
+
+#: core/ChangeLog.qml:31
+msgctxt "ChangeLog|"
+msgid "Voices added for Ukrainian"
+msgstr ""
+
+#: core/ChangeLog.qml:32
+msgctxt "ChangeLog|"
+msgid ""
+"New command-line option to list all the activities and start on a specific "
+"one"
+msgstr ""
+
+#: core/ChangeLog.qml:33 core/ChangeLog.qml:68 core/ChangeLog.qml:71
+#: core/ChangeLog.qml:77
+msgctxt "ChangeLog|"
+msgid "Many usability improvements"
+msgstr ""
+
+#: core/ChangeLog.qml:34 core/ChangeLog.qml:52 core/ChangeLog.qml:67
+#: core/ChangeLog.qml:72 core/ChangeLog.qml:78
+msgctxt "ChangeLog|"
+msgid "Many new images"
+msgstr ""
+
+#: core/ChangeLog.qml:35 core/ChangeLog.qml:73 core/ChangeLog.qml:79
+msgctxt "ChangeLog|"
+msgid "Many bug fixes"
+msgstr ""
+
+#: core/ChangeLog.qml:39
+msgctxt "ChangeLog|"
 msgid ""
 "Reduce the size of the packages for all platforms and of the external word "
 "images set"
 msgstr ""
 
-#: core/ChangeLog.qml:31
+#: core/ChangeLog.qml:40
 msgctxt "ChangeLog|"
 msgid "Improve images quality in several activities"
 msgstr ""
 
-#: core/ChangeLog.qml:32
+#: core/ChangeLog.qml:41
 msgctxt "ChangeLog|"
 msgid "Fix some transitions in renewable_energy/watercycle on some platforms"
 msgstr ""
 
-#: core/ChangeLog.qml:33
+#: core/ChangeLog.qml:42
 msgctxt "ChangeLog|"
 msgid "Fix dead keys ignored on Linux for typing activities"
 msgstr ""
 
-#: core/ChangeLog.qml:34
+#: core/ChangeLog.qml:43
 msgctxt "ChangeLog|"
 msgid "Fix level reset when changing level manually in Logical associations"
 msgstr ""
 
-#: core/ChangeLog.qml:38
+#: core/ChangeLog.qml:47
 msgctxt "ChangeLog|"
 msgid ""
 "Fix Alphabet sequence, Even and odd numbers and Numbers in order activities"
 msgstr ""
 
-#: core/ChangeLog.qml:42 core/ChangeLog.qml:50
+#: core/ChangeLog.qml:51 core/ChangeLog.qml:59
 msgctxt "ChangeLog|"
 msgid "Several bug fixes"
 msgstr ""
 
-#: core/ChangeLog.qml:43 core/ChangeLog.qml:58 core/ChangeLog.qml:63
-#: core/ChangeLog.qml:69
-msgctxt "ChangeLog|"
-msgid "Many new images"
-msgstr ""
-
-#: core/ChangeLog.qml:44
+#: core/ChangeLog.qml:53
 msgctxt "ChangeLog|"
 msgid "Translation updated for Russian"
 msgstr ""
 
-#: core/ChangeLog.qml:45
+#: core/ChangeLog.qml:54
 msgctxt "ChangeLog|"
 msgid "New voices for Norwegian Nynorsk"
 msgstr ""
 
-#: core/ChangeLog.qml:49
+#: core/ChangeLog.qml:58
 msgctxt "ChangeLog|"
 msgid "Translations added for Breton, Czech and Macedonian"
 msgstr ""
 
-#: core/ChangeLog.qml:54
+#: core/ChangeLog.qml:63
 msgctxt "ChangeLog|"
 msgid "Translation added for Azerbaijani"
 msgstr ""
 
-#: core/ChangeLog.qml:55
+#: core/ChangeLog.qml:64
 msgctxt "ChangeLog|"
 msgid "New maps and update of the maps for geography activities"
 msgstr ""
 
-#: core/ChangeLog.qml:56
+#: core/ChangeLog.qml:65
 msgctxt "ChangeLog|"
 msgid ""
 "New dataset containing loops operations for programming maze, and make "
 "tutorial images translated"
 msgstr ""
 
-#: core/ChangeLog.qml:57
+#: core/ChangeLog.qml:66
 msgctxt "ChangeLog|"
 msgid ""
 "Addition of a level to teach voltage source loop in analog electricity "
 "activity"
 msgstr ""
 
-#: core/ChangeLog.qml:59 core/ChangeLog.qml:62 core/ChangeLog.qml:68
-msgctxt "ChangeLog|"
-msgid "Many usability improvements"
-msgstr ""
-
-#: core/ChangeLog.qml:64 core/ChangeLog.qml:70
-msgctxt "ChangeLog|"
-msgid "Many bug fixes"
-msgstr ""
-
-#: core/ChangeLog.qml:67
+#: core/ChangeLog.qml:76
 msgctxt "ChangeLog|"
 msgid "New Activity Settings menu, with dataset selection"
 msgstr ""
 
-#: core/ChangeLog.qml:73
+#: core/ChangeLog.qml:82
 msgctxt "ChangeLog|"
 msgid "New sub-categories to organize activities"
 msgstr ""
 
-#: core/ChangeLog.qml:74
+#: core/ChangeLog.qml:83
 msgctxt "ChangeLog|"
 msgid "Translation added for Macedonian."
 msgstr ""
 
-#: core/ChangeLog.qml:75
+#: core/ChangeLog.qml:84
 msgctxt "ChangeLog|"
 msgid "New activities Programming Maze and Baby Tangram"
 msgstr ""
 
-#: core/ChangeLog.qml:76
+#: core/ChangeLog.qml:85
 msgctxt "ChangeLog|"
 msgid "New background music and volume settings."
 msgstr ""
 
-#: core/ChangeLog.qml:77
+#: core/ChangeLog.qml:86
 msgctxt "ChangeLog|"
 msgid "New speed setting in several activities."
 msgstr ""
 
-#: core/ChangeLog.qml:78
+#: core/ChangeLog.qml:87
 msgctxt "ChangeLog|"
 msgid "New option in chess to display captured pieces."
 msgstr ""
 
-#: core/ChangeLog.qml:79
+#: core/ChangeLog.qml:88
 msgctxt "ChangeLog|"
 msgid "New images in Colors, Advanced colors and Target game."
 msgstr ""
 
-#: core/ChangeLog.qml:80
+#: core/ChangeLog.qml:89
 msgctxt "ChangeLog|"
 msgid "New voices for US English."
 msgstr ""
 
-#: core/ChangeLog.qml:81 core/ChangeLog.qml:89
+#: core/ChangeLog.qml:90 core/ChangeLog.qml:98
 msgctxt "ChangeLog|"
 msgid "Many little fixes and improvements."
 msgstr ""
 
-#: core/ChangeLog.qml:82
+#: core/ChangeLog.qml:91
 msgctxt "ChangeLog|"
 msgid ""
 "Translation updated for multiple languages (Breton, Brazilian Portuguese, "
 "Finnish...)."
 msgstr ""
 
-#: core/ChangeLog.qml:83
+#: core/ChangeLog.qml:92
 msgctxt "ChangeLog|"
 msgid "Add Russian dataset for Click on letter activity."
 msgstr ""
 
-#: core/ChangeLog.qml:84
+#: core/ChangeLog.qml:93
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in Dutch."
 msgstr ""
 
-#: core/ChangeLog.qml:85
+#: core/ChangeLog.qml:94
 msgctxt "ChangeLog|"
 msgid ""
 "Merge Norwegian counties Nord-Trøndelag and Sør-Trøndelag into Trøndelag in "
 "geo-country activity."
 msgstr ""
 
-#: core/ChangeLog.qml:86
+#: core/ChangeLog.qml:95
 msgctxt "ChangeLog|"
 msgid "Fix in braille activities where the cells start at 1, not 0."
 msgstr ""
 
-#: core/ChangeLog.qml:87
+#: core/ChangeLog.qml:96
 msgctxt "ChangeLog|"
 msgid "Translation added for Basque, Hungarian and Malayalam."
 msgstr ""
 
-#: core/ChangeLog.qml:88
+#: core/ChangeLog.qml:97
 msgctxt "ChangeLog|"
 msgid ""
 "Loading/saving of creations (Baby Wordprocessor, Balance Box and Piano "
 "Composition)."
 msgstr ""
 
-#: core/ChangeLog.qml:89
+#: core/ChangeLog.qml:98
 msgctxt "ChangeLog|"
 msgid "Translations added for Scottish Gaelic."
 msgstr ""
 
-#: core/ChangeLog.qml:90
+#: core/ChangeLog.qml:99
 msgctxt "ChangeLog|"
 msgid "License page added in configuration."
 msgstr ""
 
-#: core/ChangeLog.qml:90
+#: core/ChangeLog.qml:99
 msgctxt "ChangeLog|"
 msgid "Multiple changes on layouts to improve the ergonomy."
 msgstr ""
 
-#: core/ChangeLog.qml:91
+#: core/ChangeLog.qml:100
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in Polish, Swedish and Ukrainian."
 msgstr ""
 
-#: core/ChangeLog.qml:92
+#: core/ChangeLog.qml:101
 msgctxt "ChangeLog|"
 msgid "Search feature."
 msgstr ""
 
-#: core/ChangeLog.qml:93
+#: core/ChangeLog.qml:102
 msgctxt "ChangeLog|"
 msgid "A Changelog."
 msgstr ""
 
-#: core/ChangeLog.qml:94
+#: core/ChangeLog.qml:103
 msgctxt "ChangeLog|"
 msgid "Many little fixes."
 msgstr ""
 
-#: core/ChangeLog.qml:94
+#: core/ChangeLog.qml:103
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in French."
 msgstr ""
 
-#: core/ChangeLog.qml:95
+#: core/ChangeLog.qml:104
 msgctxt "ChangeLog|"
 msgid ""
 "Adding a loading overlay to let the user know that some actions are taking "
 "place (loading an activity for example) and can take some seconds."
 msgstr ""
 
-#: core/ChangeLog.qml:95
+#: core/ChangeLog.qml:104
 msgctxt "ChangeLog|"
 msgid ""
 "Translations added for: Catalan (Valencian), Chinese Traditional, Finnish "
 "(92% translated), Russian (98% translated), Slovak (92% translated), Turkish."
 msgstr ""
 
-#: core/ChangeLog.qml:96
+#: core/ChangeLog.qml:105
 msgctxt "ChangeLog|"
 msgid "Translations added for: Slovenian, German, Galician."
 msgstr ""
 
-#: core/ChangeLog.qml:121
+#: core/ChangeLog.qml:130
 #, qt-format
 msgctxt "ChangeLog|"
 msgid "Version %1:"
@@ -23817,10 +23927,6 @@ msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Initia"
 
-#~ msgctxt "board1|"
-#~ msgid "Rooster"
-#~ msgstr "Gallo"
-
 #~ msgctxt "Calendar|"
 #~ msgid "Sunday"
 #~ msgstr "Dominica"
@@ -23849,221 +23955,25 @@ msgstr "Initia"
 #~ msgid "Saturday"
 #~ msgstr "Sabbato"
 
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Division of small numbers."
-#~ msgctxt "Data|"
-#~ msgid "Basic decimal numbers."
-#~ msgstr "Division de parve numeros."
-
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Reading."
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Reading"
-#~ msgstr "Leger."
-
-#~ msgctxt "board15_0|"
-#~ msgid "Shetland"
-#~ msgstr "Shetland"
-
-#~ msgctxt "board15_0|"
-#~ msgid "Sutherland"
-#~ msgstr "Sutherland"
-
-#~ msgctxt "board15_2|"
-#~ msgid "Shetland"
-#~ msgstr "Shetland"
-
-#~ msgctxt "board15_2|"
-#~ msgid "Sutherland"
-#~ msgstr "Sutherland"
-
-#~ msgctxt "board15_3|"
-#~ msgid "South Ayrshire"
-#~ msgstr "Ayrshire Sud"
-
-#~ msgctxt "board15_3|"
-#~ msgid "East Ayrshire"
-#~ msgstr "Ayrshire Est"
-
-#~ msgctxt "board15_3|"
-#~ msgid "North Ayrshire"
-#~ msgstr "Ayrshire Nord"
-
-#~ msgctxt "board11_1|"
-#~ msgid "Verbania"
-#~ msgstr "Verbania"
-
-#~ msgctxt "board11_1|"
-#~ msgid "Padova"
-#~ msgstr "Padova"
-
-#~ msgctxt "board11_1|"
-#~ msgid "Venezia"
-#~ msgstr "Venezia"
-
-#~ msgctxt "board11_1|"
-#~ msgid "Treviso"
-#~ msgstr "Treviso"
-
-#~ msgctxt "board11_2|"
-#~ msgid "Perugia"
-#~ msgstr "Perugia"
-
-#~ msgctxt "board11_2|"
-#~ msgid "Roma"
-#~ msgstr "Roma"
-
-#~ msgctxt "board11_3|"
-#~ msgid "Oristano"
-#~ msgstr "Oristano"
-
-#~ msgctxt "board11_3|"
-#~ msgid "Trapani"
-#~ msgstr "Trapani"
-
-#~ msgctxt "board11_3|"
-#~ msgid "Agrigento"
-#~ msgstr "Agrigento"
-
-#~ msgctxt "board11_3|"
-#~ msgid "Bari"
-#~ msgstr "Bari"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Van"
-#~ msgstr "Van"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Tunceli"
-#~ msgstr "Tunceli"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Malatya"
-#~ msgstr "Malatya"
-
-#~ msgctxt "board5_2|"
-#~ msgid "İstanbul"
-#~ msgstr "Istanbul"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Antalya"
-#~ msgstr "Antalya"
+#~ msgctxt "board1|"
+#~ msgid "Rooster"
+#~ msgstr "Gallo"
 
 #~ msgctxt "board10_1|"
 #~ msgid "United States of America"
 #~ msgstr "Statos Unite de America"
 
-#~ msgctxt "board10_1|"
-#~ msgid "North Dakota"
-#~ msgstr "Dakota del Nord"
-
-#~ msgctxt "board10_1|"
-#~ msgid "South Dakota"
-#~ msgstr "Dakota del Sud"
-
-#~ msgctxt "board10_1|"
-#~ msgid "Colorado"
-#~ msgstr "Colorado"
-
-#~ msgctxt "board10_1|"
-#~ msgid "New Mexico"
-#~ msgstr "Nove Mexico"
-
-#~ msgctxt "board10_1|"
-#~ msgid "Hawaii"
-#~ msgstr "Hawaii"
-
-#~ msgctxt "board10_1|"
-#~ msgid "Louisiana"
-#~ msgstr "Louisiana"
-
-#~ msgctxt "board10_1|"
-#~ msgid "Indiana"
-#~ msgstr "Indiana"
-
-#~ msgctxt "board10_1|"
-#~ msgid "North Carolina"
-#~ msgstr "Carolina del Nord"
-
-#~ msgctxt "board10_1|"
-#~ msgid "South Carolina"
-#~ msgstr "Carolina del Sud"
-
-#~ msgctxt "board10_1|"
-#~ msgid "Georgia"
-#~ msgstr "Georgia"
-
-#~ msgctxt "board10_1|"
-#~ msgid "Florida"
-#~ msgstr "Florida"
-
-#~ msgctxt "board10_1|"
-#~ msgid "Maryland"
-#~ msgstr "Maryland"
-
-#~ msgctxt "board10_1|"
-#~ msgid "New York"
-#~ msgstr "New York"
-
-#~ msgctxt "board10_1|"
-#~ msgid "Maine"
-#~ msgstr "Maine"
-
-#~ msgctxt "board10_1|"
-#~ msgid "Rhode Island"
-#~ msgstr "Rhode Island"
-
-#~ msgctxt "board12_0|"
-#~ msgid "Timor-Leste"
-#~ msgstr "Timor del Est (Timor-Leste)"
-
-#~| msgctxt "board10_0|"
-#~| msgid "Indonesia"
-#~ msgctxt "board14_0|"
-#~ msgid "Indonesia"
-#~ msgstr "Indonesia"
-
-#~| msgctxt "board10_0|"
-#~| msgid "Northern Mariana Islands"
-#~ msgctxt "board14_0|"
+#~ msgctxt "board10_0|"
 #~ msgid "Northern Mariana Islands"
 #~ msgstr "Insulas Mariana Septentrional"
 
-#~| msgctxt "board10_0|"
-#~| msgid "American Samoa"
-#~ msgctxt "board14_0|"
+#~ msgctxt "board10_0|"
 #~ msgid "American Samoa"
 #~ msgstr "Samoa American"
 
 #~ msgctxt "board10_0|"
 #~ msgid "Australia"
 #~ msgstr "Australia"
-
-#~ msgctxt "board9_0|"
-#~ msgid "Asia"
-#~ msgstr "Asia"
-
-#~ msgctxt "board9_0|"
-#~ msgid "Russia"
-#~ msgstr "Russia"
-
-#~ msgctxt "board9_0|"
-#~ msgid "Japan"
-#~ msgstr "Japon"
-
-#~ msgctxt "board9_0|"
-#~ msgid "Indonesia"
-#~ msgstr "Indonesia"
-
-#~ msgctxt "board8_0|"
-#~ msgid "Swaziland"
-#~ msgstr "Swaziland"
-
-#~ msgctxt "board2_0|"
-#~ msgid "Iceland"
-#~ msgstr "Islanda"
 
 #~ msgctxt "board3_1|"
 #~ msgid "Puerto Rico"
@@ -24121,6 +24031,26 @@ msgstr "Initia"
 #~ msgid "Bahamas"
 #~ msgstr "Bahamas"
 
+#~ msgctxt "board9_0|"
+#~ msgid "Asia"
+#~ msgstr "Asia"
+
+#~ msgctxt "board9_0|"
+#~ msgid "Russia"
+#~ msgstr "Russia"
+
+#~ msgctxt "board9_0|"
+#~ msgid "Japan"
+#~ msgstr "Japon"
+
+#~ msgctxt "board9_0|"
+#~ msgid "Indonesia"
+#~ msgstr "Indonesia"
+
+#~ msgctxt "Dataset|"
+#~ msgid "433 days"
+#~ msgstr "433 dies"
+
 #~ msgctxt "Dataset|"
 #~ msgid "88 days"
 #~ msgstr "88 dies"
@@ -24134,29 +24064,41 @@ msgstr "Initia"
 #~ msgstr "225 dies"
 
 #~ msgctxt "Dataset|"
+#~ msgid "116 days"
+#~ msgstr "1165 dies"
+
+#~ msgctxt "Dataset|"
+#~ msgid "100 days"
+#~ msgstr "100 dies"
+
+#~ msgctxt "Dataset|"
+#~ msgid "687 days"
+#~ msgstr "65 dies"
+
+#~ msgctxt "Dataset|"
 #~ msgid "1 year"
 #~ msgstr "1 Anno"
 
-#~ msgctxt "board6_0|"
-#~ msgid "Telemark"
-#~ msgstr "Telemark"
+#~ msgctxt "Dataset|"
+#~ msgid "24 years"
+#~ msgstr "24 Annos"
 
-#~ msgctxt "board6_0|"
-#~ msgid "Oppland"
-#~ msgstr "Oppland"
+#~ msgctxt "Dataset|"
+#~ msgid "68 years"
+#~ msgstr "68 Annos"
 
-#~ msgctxt "board6_0|"
-#~ msgid "Hordaland"
-#~ msgstr "Hordaland"
+#~ msgctxt "Dataset|"
+#~ msgid "84 years"
+#~ msgstr "84 Annos"
 
-#~ msgctxt "board6_0|"
-#~ msgid "Hedmark"
-#~ msgstr "Hedmark"
+#~ msgctxt "Dataset|"
+#~ msgid "165 years"
+#~ msgstr "165 Annos"
 
-#~ msgctxt "board5_1|"
-#~ msgid "Mus"
-#~ msgstr "Mus"
+#~ msgctxt "Dataset|"
+#~ msgid "3 years"
+#~ msgstr "3 Annos"
 
-#~ msgctxt "board5_2|"
-#~ msgid "Mus"
-#~ msgstr "Mus"
+#~ msgctxt "Dataset|"
+#~ msgid "100 years"
+#~ msgstr "100 Annos"

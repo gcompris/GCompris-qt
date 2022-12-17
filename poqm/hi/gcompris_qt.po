@@ -2,12 +2,11 @@
 # G Karunakar <karunakar@indlinux.org>, 2017, 2018, 2020.
 # Utkarsh Tiwari <iamutkarshtiwari@gmail.com>, 2017.
 # Raghavendra Kamath <raghu@raghukamath.com>, 2021, 2022.
-# Raashi Saigal <raashisaigal26@gmail.com>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2022-02-26 11:47+0530\n"
+"PO-Revision-Date: 2022-02-26 11:44+0530\n"
 "Last-Translator: Raghavendra Kamath <raghu@raghukamath.com>\n"
 "Language-Team: Hindi <kde-l10n-hi@kde.org>\n"
 "Language: hi\n"
@@ -8105,8 +8104,8 @@ msgstr ""
 "उत्तर-पश्चिमी भाग में स्थित है, जो पैतृक पुएब्लोन लोगों के तीन अच्छी तरह से संरक्षित चट्टानों "
 "के आवासों को संरक्षित करने के लिए स्थापित किया गया था: कीट सील (किट) (बेट्स), बेटाटकिन "
 "(बिटैट'हाकिन) और शिलालेख हाउस (तसः बी किन)। स्नोमर, शिंटो पठार पर उच्च है, "
-"केएसएन्टा, एरिज़ोना के पश्चिम में, सेस्गी कैन्यन तंत्र को देखते हुए। इसमें एक संग्रहालय के साथ एक "
-"आगंतुक केंद्र है, दो लघु स्व-निर्देशित मेसा शीर्ष ट्रेल्स, दो छोटे कैम्प ग्राउंड और एक पिकनिक "
+"केएसएन्टा, एरिज़ोना के पश्चिम में, सेस्गी कैन्यन सिस्टम को देखते हुए। इसमें एक संग्रहालय के साथ "
+"एक आगंतुक केंद्र है, दो लघु स्व-निर्देशित मेसा शीर्ष ट्रेल्स, दो छोटे कैम्प ग्राउंड और एक पिकनिक "
 "क्षेत्र है। रेंजर्स कीट सील और बीटाटाकिन चट्टान के घरों के मुफ्त पर्यटन स्थलों पर मार्गदर्शन "
 "करते हैं। इंस्क्रिप्शन हाउस साइट, आगे पश्चिम, वर्तमान में सार्वजनिक पहुंच के लिए बंद है।"
 
@@ -10155,24 +10154,33 @@ msgstr ""
 
 #. State of America: Colorado
 #: activities/geo-country/resource/board/board10_0.qml:80
+#, fuzzy
+#| msgctxt "category_colors|"
+#| msgid "Colors"
 msgctxt "board10_0|"
 msgid "Colorado"
-msgstr "कोलोरेडो"
+msgstr "रंग"
 
 #. State of America: New Mexico
 #: activities/geo-country/resource/board/board10_0.qml:87
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "Mexico"
 msgctxt "board10_0|"
 msgid "New Mexico"
-msgstr "न्यू मेक्सिको"
+msgstr "मेक्सिको"
 
 #. State of America: Arizona
 #: activities/geo-country/resource/board/board10_0.qml:94
 msgctxt "board10_0|"
 msgid "Arizona"
-msgstr "अरिजोना"
+msgstr ""
 
 #. State of America: Alaska
 #: activities/geo-country/resource/board/board10_0.qml:101
+#, fuzzy
+#| msgctxt "board2_0|"
+#| msgid "Alaska"
 msgctxt "board10_0|"
 msgid "Alaska"
 msgstr "अलास्का"
@@ -10187,240 +10195,270 @@ msgstr "हवाई"
 #: activities/geo-country/resource/board/board10_0.qml:115
 msgctxt "board10_0|"
 msgid "Texas"
-msgstr "टेक्सास"
+msgstr ""
 
 #. State of America: Oklahoma
 #: activities/geo-country/resource/board/board10_0.qml:122
 msgctxt "board10_0|"
 msgid "Oklahoma"
-msgstr "ओक्लाहामा"
+msgstr ""
 
 #. State of America: Minnesota
 #: activities/geo-country/resource/board/board10_0.qml:129
 msgctxt "board10_0|"
 msgid "Minnesota"
-msgstr "मिनेसोटा"
+msgstr ""
 
 #. State of America: Iowa
 #: activities/geo-country/resource/board/board10_0.qml:136
 msgctxt "board10_0|"
 msgid "Iowa"
-msgstr "आयोवा"
+msgstr ""
 
 #. State of America: Missouri
 #: activities/geo-country/resource/board/board10_0.qml:143
 msgctxt "board10_0|"
 msgid "Missouri"
-msgstr "मिसूरी"
+msgstr ""
 
 #. State of America: Arkansas
 #: activities/geo-country/resource/board/board10_0.qml:150
 msgctxt "board10_0|"
 msgid "Arkansas"
-msgstr "अरकंसास"
+msgstr ""
 
 #. State of America: Louisiana
 #: activities/geo-country/resource/board/board10_0.qml:157
+#, fuzzy
+#| msgctxt "board7_0|"
+#| msgid "Tunisia"
 msgctxt "board10_0|"
 msgid "Louisiana"
-msgstr "लुसियाना"
+msgstr "ट्यूनीशिया"
 
 #. State of America: Mississippi
 #: activities/geo-country/resource/board/board10_0.qml:164
 msgctxt "board10_0|"
 msgid "Mississippi"
-msgstr "मिसिसिपी"
+msgstr ""
 
 #. State of America: Tennessee
 #: activities/geo-country/resource/board/board10_0.qml:171
 msgctxt "board10_0|"
 msgid "Tennessee"
-msgstr "टेनेसी"
+msgstr ""
 
 #. State of America: Kentucky
 #: activities/geo-country/resource/board/board10_0.qml:178
 msgctxt "board10_0|"
 msgid "Kentucky"
-msgstr "कैंटुकी"
+msgstr ""
 
 #. State of America: Indiana
 #: activities/geo-country/resource/board/board10_0.qml:185
+#, fuzzy
+#| msgctxt "board9_0|"
+#| msgid "India"
 msgctxt "board10_0|"
 msgid "Indiana"
-msgstr "इंडियाना"
+msgstr "भारत"
 
 #. State of America: Illinois
 #: activities/geo-country/resource/board/board10_0.qml:192
 msgctxt "board10_0|"
 msgid "Illinois"
-msgstr "इलिनॉइस"
+msgstr ""
 
 #. State of America: Wisconsin
 #: activities/geo-country/resource/board/board10_0.qml:199
 msgctxt "board10_0|"
 msgid "Wisconsin"
-msgstr "विस्कांसिन"
+msgstr ""
 
 #. State of America: Michigan
 #: activities/geo-country/resource/board/board10_0.qml:206
 msgctxt "board10_0|"
 msgid "Michigan"
-msgstr "मिशिगन"
+msgstr ""
 
 #. State of America: Ohio
 #: activities/geo-country/resource/board/board10_0.qml:213
 msgctxt "board10_0|"
 msgid "Ohio"
-msgstr "ओहियो"
+msgstr ""
 
 #. State of America: West Virginia
 #: activities/geo-country/resource/board/board10_0.qml:220
 msgctxt "board10_0|"
 msgid "West Virginia"
-msgstr "पश्चिम वर्जीनिया"
+msgstr ""
 
 #. State of America: Virginia
 #: activities/geo-country/resource/board/board10_0.qml:227
 msgctxt "board10_0|"
 msgid "Virginia"
-msgstr "वर्जीनिया"
+msgstr ""
 
 #. State of America: North Carolina
 #: activities/geo-country/resource/board/board10_0.qml:234
+#, fuzzy
+#| msgctxt "board2_0|"
+#| msgid "North America"
 msgctxt "board10_0|"
 msgid "North Carolina"
-msgstr "उत्तरी कैरोलिना"
+msgstr "अमेरिका, उत्तरी"
 
 #. State of America: South Carolina
 #: activities/geo-country/resource/board/board10_0.qml:241
+#, fuzzy
+#| msgctxt "board8_0|"
+#| msgid "South Africa"
 msgctxt "board10_0|"
 msgid "South Carolina"
-msgstr "दक्षिणी केरोलिना"
+msgstr "दक्षिणी अफ्रीका"
 
 #. State of America: Georgia
 #: activities/geo-country/resource/board/board10_0.qml:248
+#, fuzzy
+#| msgctxt "board9_0|"
+#| msgid "Asia|Georgia"
 msgctxt "board10_0|"
 msgid "Georgia"
-msgstr "ज्यार्जिया"
+msgstr "एशिया | जॉर्जिया"
 
 #. State of America: Florida
 #: activities/geo-country/resource/board/board10_0.qml:255
+#, fuzzy
+#| msgctxt "Calendar|"
+#| msgid "Friday"
 msgctxt "board10_0|"
 msgid "Florida"
-msgstr "फ्लोरिडा"
+msgstr "शुक्रवार"
 
 #. State of America: Alabama
 #: activities/geo-country/resource/board/board10_0.qml:262
 msgctxt "board10_0|"
 msgid "Alabama"
-msgstr "अलबामा"
+msgstr ""
 
 #. State of America: Maryland
 #: activities/geo-country/resource/board/board10_0.qml:269
+#, fuzzy
+#| msgctxt "board5_0|"
+#| msgid "Ireland"
 msgctxt "board10_0|"
 msgid "Maryland"
-msgstr "मेरीलैंड"
+msgstr "आयरलैंड"
 
 #. State of America: New Jersey
 #: activities/geo-country/resource/board/board10_0.qml:276
 msgctxt "board10_0|"
 msgid "New Jersey"
-msgstr "न्यू जर्सी"
+msgstr ""
 
 #. State of America: Delaware
 #: activities/geo-country/resource/board/board10_0.qml:283
 msgctxt "board10_0|"
 msgid "Delaware"
-msgstr "देलावरे"
+msgstr ""
 
 #. State of America: Pennsylvania
 #: activities/geo-country/resource/board/board10_0.qml:290
 msgctxt "board10_0|"
 msgid "Pennsylvania"
-msgstr "पेंसिल्वेनिया"
+msgstr ""
 
 #. State of America: New York
 #: activities/geo-country/resource/board/board10_0.qml:297
 msgctxt "board10_0|"
 msgid "New York"
-msgstr "न्यूयॉर्क"
+msgstr ""
 
 #. State of America: Vermont
 #: activities/geo-country/resource/board/board10_0.qml:304
 msgctxt "board10_0|"
 msgid "Vermont"
-msgstr "वर्मांन्ट"
+msgstr ""
 
 #. State of America: New Hampshire
 #: activities/geo-country/resource/board/board10_0.qml:311
 msgctxt "board10_0|"
 msgid "New Hampshire"
-msgstr "न्यू हैम्पशायर"
+msgstr ""
 
 #. State of America: Maine
 #: activities/geo-country/resource/board/board10_0.qml:318
+#, fuzzy
+#| msgctxt "board6_0|"
+#| msgid "Ukraine"
 msgctxt "board10_0|"
 msgid "Maine"
-msgstr "मेने"
+msgstr "उक्रेन"
 
 #. State of America: California
 #: activities/geo-country/resource/board/board10_0.qml:325
 msgctxt "board10_0|"
 msgid "California"
-msgstr "केलिफ़ोर्निया"
+msgstr ""
 
 #. State of America: Nevada
 #: activities/geo-country/resource/board/board10_0.qml:332
 msgctxt "board10_0|"
 msgid "Nevada"
-msgstr "नेवादा"
+msgstr ""
 
 #. State of America: Utah
 #: activities/geo-country/resource/board/board10_0.qml:339
 msgctxt "board10_0|"
 msgid "Utah"
-msgstr "उटा"
+msgstr ""
 
 #. State of America: Wyoming
 #: activities/geo-country/resource/board/board10_0.qml:346
 msgctxt "board10_0|"
 msgid "Wyoming"
-msgstr "व्योमिंग"
+msgstr ""
 
 #. State of America: Massachusetts
 #: activities/geo-country/resource/board/board10_0.qml:353
 msgctxt "board10_0|"
 msgid "Massachusetts"
-msgstr "मेसाचुसेट्स"
+msgstr ""
 
 #. State of America: Rhode Island
 #: activities/geo-country/resource/board/board10_0.qml:360
+#, fuzzy
+#| msgctxt "board10_0|"
+#| msgid "Cook Islands"
 msgctxt "board10_0|"
 msgid "Rhode Island"
-msgstr "रोड आइलैंड"
+msgstr "कूक द्वीप"
 
 #. State of America: Connecticut
 #: activities/geo-country/resource/board/board10_0.qml:367
 msgctxt "board10_0|"
 msgid "Connecticut"
-msgstr "कनेक्टिकट"
+msgstr ""
 
 #: activities/geo-country/resource/board/board11_0.qml:15
+#, fuzzy
+#| msgctxt "board11_0|"
+#| msgid "Districts of Italy"
 msgctxt "board11_0|"
 msgid "Regions of Italy"
-msgstr "इटली के क्षेत्र"
+msgstr "इटली के जिले"
 
 #. Region of Italy: Liguria
 #: activities/geo-country/resource/board/board11_0.qml:24
 msgctxt "board11_0|"
 msgid "Liguria"
-msgstr "लिगुरिया"
+msgstr ""
 
 #. Region of Italy: Piedmont
 #: activities/geo-country/resource/board/board11_0.qml:31
 msgctxt "board11_0|"
 msgid "Piedmont"
-msgstr "पीएडमाँट"
+msgstr ""
 
 #. Region of Italy: Aosta Valley
 #: activities/geo-country/resource/board/board11_0.qml:38
@@ -10432,7 +10470,7 @@ msgstr ""
 #: activities/geo-country/resource/board/board11_0.qml:45
 msgctxt "board11_0|"
 msgid "Lombardy"
-msgstr "लोम्बार्दी"
+msgstr ""
 
 #. Region of Italy: Trentino-South Tyrol
 #: activities/geo-country/resource/board/board11_0.qml:52
@@ -10444,31 +10482,31 @@ msgstr ""
 #: activities/geo-country/resource/board/board11_0.qml:59
 msgctxt "board11_0|"
 msgid "Veneto"
-msgstr "वेनेटो"
+msgstr ""
 
 #. Region of Italy: Friuli Venezia Giulia
 #: activities/geo-country/resource/board/board11_0.qml:66
 msgctxt "board11_0|"
 msgid "Friuli Venezia Giulia"
-msgstr "फ्रियुलि वेनेजिया गियुलिया"
+msgstr ""
 
 #. Region of Italy: Emilia-Romagna
 #: activities/geo-country/resource/board/board11_0.qml:73
 msgctxt "board11_0|"
 msgid "Emilia-Romagna"
-msgstr "एमिलिया रोमाग्ना"
+msgstr ""
 
 #. Region of Italy: Tuscany
 #: activities/geo-country/resource/board/board11_0.qml:80
 msgctxt "board11_0|"
 msgid "Tuscany"
-msgstr "टुस्केनी"
+msgstr ""
 
 #. Region of Italy: Umbria
 #: activities/geo-country/resource/board/board11_0.qml:87
 msgctxt "board11_0|"
 msgid "Umbria"
-msgstr "अम्ब्रिया"
+msgstr ""
 
 #. Region of Italy: Marche
 #: activities/geo-country/resource/board/board11_0.qml:94
@@ -10486,275 +10524,296 @@ msgstr ""
 #: activities/geo-country/resource/board/board11_0.qml:108
 msgctxt "board11_0|"
 msgid "Abruzzo"
-msgstr "अब्रूजू"
+msgstr ""
 
 #. Region of Italy: Molise
 #: activities/geo-country/resource/board/board11_0.qml:115
 msgctxt "board11_0|"
 msgid "Molise"
-msgstr "मोलिस"
+msgstr ""
 
 #. Region of Italy: Campania
 #: activities/geo-country/resource/board/board11_0.qml:122
+#, fuzzy
+#| msgctxt "board6_0|"
+#| msgid "Romania"
 msgctxt "board11_0|"
 msgid "Campania"
-msgstr "कैम्पेनिया"
+msgstr "रोमानिया"
 
 #. Region of Italy: Apulia
 #: activities/geo-country/resource/board/board11_0.qml:129
 msgctxt "board11_0|"
 msgid "Apulia"
-msgstr "अपुलिया"
+msgstr ""
 
 #. Region of Italy: Basilicata
 #: activities/geo-country/resource/board/board11_0.qml:136
 msgctxt "board11_0|"
 msgid "Basilicata"
-msgstr "बासिलिकता"
+msgstr ""
 
 #. Region of Italy: Calabria
 #: activities/geo-country/resource/board/board11_0.qml:143
+#, fuzzy
+#| msgctxt "board5|"
+#| msgid "Cabrillo"
 msgctxt "board11_0|"
 msgid "Calabria"
-msgstr "कालाब्रिया"
+msgstr "कैब्रिल्लो"
 
 #. Region of Italy: Sicily
 #: activities/geo-country/resource/board/board11_0.qml:150
 msgctxt "board11_0|"
 msgid "Sicily"
-msgstr "सिसिली"
+msgstr ""
 
 #. Region of Italy: Sardinia
 #: activities/geo-country/resource/board/board11_0.qml:157
 msgctxt "board11_0|"
 msgid "Sardinia"
-msgstr "सार्दिनिया"
+msgstr ""
 
 #: activities/geo-country/resource/board/board12_0.qml:15
 msgctxt "board12_0|"
 msgid "States and Union Territories of India"
-msgstr "भारत के राज्य एवं केंद्रशासित क्षेत्र"
+msgstr ""
 
 #. State of India: Himachal Pradesh
 #: activities/geo-country/resource/board/board12_0.qml:24
 msgctxt "board12_0|"
 msgid "Himachal Pradesh"
-msgstr "हिमाचल प्रदेश\t"
+msgstr ""
 
 #. State of India: Punjab
 #: activities/geo-country/resource/board/board12_0.qml:31
 msgctxt "board12_0|"
 msgid "Punjab"
-msgstr "पंजाब"
+msgstr ""
 
 #. State of India: Uttarakhand
 #: activities/geo-country/resource/board/board12_0.qml:38
 msgctxt "board12_0|"
 msgid "Uttarakhand"
-msgstr "उत्तराखंड"
+msgstr ""
 
 #. State of India: Rajasthan
 #: activities/geo-country/resource/board/board12_0.qml:45
 msgctxt "board12_0|"
 msgid "Rajasthan"
-msgstr "राजस्थान"
+msgstr ""
 
 #. State of India: Uttar Pradesh
 #: activities/geo-country/resource/board/board12_0.qml:52
 msgctxt "board12_0|"
 msgid "Uttar Pradesh"
-msgstr "उत्तरप्रदेश"
+msgstr ""
 
 #. State of India: Bihar
 #: activities/geo-country/resource/board/board12_0.qml:59
 msgctxt "board12_0|"
 msgid "Bihar"
-msgstr "बिहार"
+msgstr ""
 
 #. State of India: Gujarat
 #: activities/geo-country/resource/board/board12_0.qml:66
 msgctxt "board12_0|"
 msgid "Gujarat"
-msgstr "गुजरात"
+msgstr ""
 
 #. State of India: Haryana
 #: activities/geo-country/resource/board/board12_0.qml:73
+#, fuzzy
+#| msgctxt "board4_0|"
+#| msgid "Guyana"
 msgctxt "board12_0|"
 msgid "Haryana"
-msgstr "हरियाणा"
+msgstr "गुयाना"
 
 #. State of India: Madhya Pradesh
 #: activities/geo-country/resource/board/board12_0.qml:80
 msgctxt "board12_0|"
 msgid "Madhya Pradesh"
-msgstr "मध्य प्रदेश"
+msgstr ""
 
 #. State of India: Jharkhand
 #: activities/geo-country/resource/board/board12_0.qml:87
 msgctxt "board12_0|"
 msgid "Jharkhand"
-msgstr "झारखंड"
+msgstr ""
 
 #. State of India: Maharashtra
 #: activities/geo-country/resource/board/board12_0.qml:94
 msgctxt "board12_0|"
 msgid "Maharashtra"
-msgstr "महाराष्ट्र"
+msgstr ""
 
 #. State of India: Chhattisgarh
 #: activities/geo-country/resource/board/board12_0.qml:101
 msgctxt "board12_0|"
 msgid "Chhattisgarh"
-msgstr "छत्तीसगढ़"
+msgstr ""
 
 #. State of India: Goa
 #: activities/geo-country/resource/board/board12_0.qml:108
+#, fuzzy
+#| msgctxt "DialogHelp|"
+#| msgid "Goal:"
 msgctxt "board12_0|"
 msgid "Goa"
-msgstr "गोवा"
+msgstr "गोल:"
 
 #. State of India: Karnataka
 #: activities/geo-country/resource/board/board12_0.qml:115
 msgctxt "board12_0|"
 msgid "Karnataka"
-msgstr "कर्नाटक"
+msgstr ""
 
 #. State of India: Telangana
 #: activities/geo-country/resource/board/board12_0.qml:122
 msgctxt "board12_0|"
 msgid "Telangana"
-msgstr "तेलंगाना"
+msgstr ""
 
 #. State of India: Andhra Pradesh
 #: activities/geo-country/resource/board/board12_0.qml:130
 msgctxt "board12_0|"
 msgid "Andhra Pradesh"
-msgstr "आंध्रप्रदेश"
+msgstr ""
 
 #. State of India: Kerala
 #: activities/geo-country/resource/board/board12_0.qml:137
 msgctxt "board12_0|"
 msgid "Kerala"
-msgstr "केरल"
+msgstr ""
 
 #. State of India: Tamil Nadu
 #: activities/geo-country/resource/board/board12_0.qml:144
 msgctxt "board12_0|"
 msgid "Tamil Nadu"
-msgstr "तमिलनाडु"
+msgstr ""
 
 #. State of India: West Bengal
 #: activities/geo-country/resource/board/board12_0.qml:151
 msgctxt "board12_0|"
 msgid "West Bengal"
-msgstr "पश्चिम बंगाल"
+msgstr ""
 
 #. State of India: Sikkim
 #: activities/geo-country/resource/board/board12_0.qml:158
 msgctxt "board12_0|"
 msgid "Sikkim"
-msgstr "सिक्किम"
+msgstr ""
 
 #. State of India: Assam
 #: activities/geo-country/resource/board/board12_0.qml:165
 msgctxt "board12_0|"
 msgid "Assam"
-msgstr "असम"
+msgstr ""
 
 #. State of India: Arunachal Pradesh
 #: activities/geo-country/resource/board/board12_0.qml:172
 msgctxt "board12_0|"
 msgid "Arunachal Pradesh"
-msgstr "अरुणाचल प्रदेश"
+msgstr ""
 
 #. State of India: Nagaland
 #: activities/geo-country/resource/board/board12_0.qml:179
+#, fuzzy
+#| msgctxt "board10_0|"
+#| msgid "New Zealand"
 msgctxt "board12_0|"
 msgid "Nagaland"
-msgstr "नागालैंड"
+msgstr "न्यूजीलैंड"
 
 #. State of India: Odisha
 #: activities/geo-country/resource/board/board12_0.qml:186
 msgctxt "board12_0|"
 msgid "Odisha"
-msgstr "ओडिशा"
+msgstr ""
 
 #. State of India: Manipur
 #: activities/geo-country/resource/board/board12_0.qml:193
 msgctxt "board12_0|"
 msgid "Manipur"
-msgstr "मणिपुर"
+msgstr ""
 
 #. State of India: Mizoram
 #: activities/geo-country/resource/board/board12_0.qml:200
 msgctxt "board12_0|"
 msgid "Mizoram"
-msgstr "मिज़ोरम"
+msgstr ""
 
 #. State of India: Tripura
 #: activities/geo-country/resource/board/board12_0.qml:207
 msgctxt "board12_0|"
 msgid "Tripura"
-msgstr "त्रिपुरा"
+msgstr ""
 
 #. State of India: Meghalaya
 #: activities/geo-country/resource/board/board12_0.qml:214
+#, fuzzy
+#| msgctxt "board9_0|"
+#| msgid "Malaysia"
 msgctxt "board12_0|"
 msgid "Meghalaya"
-msgstr "मेघालय"
+msgstr "मलेशिया"
 
 #. Union Territory of India: Andaman and Nicobar Islands
 #: activities/geo-country/resource/board/board12_0.qml:221
 msgctxt "board12_0|"
 msgid "Andaman and Nicobar Islands"
-msgstr "अंडमान और निकोबार द्वीपसमूह"
+msgstr ""
 
 #. Union Territory of India: Delhi
 #: activities/geo-country/resource/board/board12_0.qml:228
 msgctxt "board12_0|"
 msgid "Delhi"
-msgstr "दिल्ली"
+msgstr ""
 
 #. Union Territory of India: Chandigarh
 #: activities/geo-country/resource/board/board12_0.qml:235
 msgctxt "board12_0|"
 msgid "Chandigarh"
-msgstr "चंडीगढ़"
+msgstr ""
 
 #. Union Territory of India: Dadra and Nagar Haveli and Daman and Diu
 #: activities/geo-country/resource/board/board12_0.qml:243
 msgctxt "board12_0|"
 msgid "Dadra and Nagar Haveli and Daman and Diu"
-msgstr "दादरा और नगर हवेली"
+msgstr ""
 
 #. Union Territory of India: Ladakh
 #: activities/geo-country/resource/board/board12_0.qml:251
 msgctxt "board12_0|"
 msgid "Ladakh"
-msgstr "लद्दाख"
+msgstr ""
 
 #. Union Territory of India: Lakshadweep
 #: activities/geo-country/resource/board/board12_0.qml:258
 msgctxt "board12_0|"
 msgid "Lakshadweep"
-msgstr "लक्षद्वीप"
+msgstr ""
 
 #. Union Territory of India: Jammu and Kashmir
 #: activities/geo-country/resource/board/board12_0.qml:265
 msgctxt "board12_0|"
 msgid "Jammu and Kashmir"
-msgstr "जम्मू और कश्मीर"
+msgstr ""
 
 #. Union Territory of India: Puducherry
 #: activities/geo-country/resource/board/board12_0.qml:272
 msgctxt "board12_0|"
 msgid "Puducherry"
-msgstr "पुडुचेरी"
+msgstr ""
 
 #: activities/geo-country/resource/board/board13_0.qml:15
+#, fuzzy
+#| msgctxt "board13_0|"
+#| msgid "Districts of Australia"
 msgctxt "board13_0|"
 msgid "States and Territories of Australia"
-msgstr "आस्ट्रेलिया के राज्य एवं केंद्रशासित क्षेत्र"
+msgstr "ऑस्ट्रेलिया के जिले"
 
 #. State of Australia: Western Australia
 #: activities/geo-country/resource/board/board13_0.qml:24
@@ -10824,11 +10883,11 @@ msgstr ""
 
 #: activities/geo-country/resource/board/board14_0.qml:15
 #, fuzzy
-#| msgctxt "board3_0|"
-#| msgid "Districts of Argentina"
+#| msgctxt "board14_0|"
+#| msgid "Districts of China"
 msgctxt "board14_0|"
 msgid "Provinces of China"
-msgstr "अर्जेंटीना के जिले"
+msgstr "चीन के जिले"
 
 #. Province of China: Xinjiang
 #: activities/geo-country/resource/board/board14_0.qml:24
@@ -10918,7 +10977,7 @@ msgstr ""
 #: activities/geo-country/resource/board/board14_0.qml:115
 msgctxt "board14_0|"
 msgid "Tibet"
-msgstr "तिब्बत"
+msgstr ""
 
 #. Province of China: Sichuan
 #: activities/geo-country/resource/board/board14_0.qml:122
@@ -11395,11 +11454,11 @@ msgstr ""
 #. Autonomous communities of Spain: Catalonia
 #: activities/geo-country/resource/board/board18_0.qml:57
 #, fuzzy
-#| msgctxt "board7_0|"
-#| msgid "Mauritania"
+#| msgctxt "board10_0|"
+#| msgid "New Caledonia"
 msgctxt "board18_0|"
 msgid "Catalonia"
-msgstr "मारीतानिया"
+msgstr "न्यू केलेदूनिया"
 
 #. Autonomous communities of Spain: Aragon
 #: activities/geo-country/resource/board/board18_0.qml:64
@@ -11446,11 +11505,11 @@ msgstr ""
 #. Autonomous communities of Spain: Cantabria
 #: activities/geo-country/resource/board/board18_0.qml:106
 #, fuzzy
-#| msgctxt "board11_0|"
-#| msgid "Calabria"
+#| msgctxt "board5|"
+#| msgid "Cabrillo"
 msgctxt "board18_0|"
 msgid "Cantabria"
-msgstr "कालाब्रिया"
+msgstr "कैब्रिल्लो"
 
 #. Autonomous communities of Spain: Navarre
 #: activities/geo-country/resource/board/board18_0.qml:113
@@ -11507,12 +11566,9 @@ msgstr "फ्रांस के स्मारक"
 
 #. Region of France: Corsica
 #: activities/geo-country/resource/board/board1_0.qml:27
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "Horse"
 msgctxt "board1_0|"
 msgid "Corsica"
-msgstr "घोड़ा"
+msgstr ""
 
 #. Region of France: Nouvelle-Aquitaine
 #: activities/geo-country/resource/board/board1_0.qml:35
@@ -11582,12 +11638,9 @@ msgstr "फ्रांस के स्मारक"
 
 #. Region of France: Grand est
 #: activities/geo-country/resource/board/board1_0.qml:115
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "Grandmother"
 msgctxt "board1_0|"
 msgid "Grand est"
-msgstr "दादी"
+msgstr ""
 
 #. Region of France: Bourgogne-Franche-Comté
 #: activities/geo-country/resource/board/board1_0.qml:123
@@ -11868,29 +11921,23 @@ msgstr ""
 
 #: activities/geo-country/resource/board/board4_0.qml:15
 #, fuzzy
-#| msgctxt "board3_0|"
-#| msgid "Districts of Argentina"
+#| msgctxt "board4_0|"
+#| msgid "Districts of Poland"
 msgctxt "board4_0|"
 msgid "Provinces of Poland"
-msgstr "अर्जेंटीना के जिले"
+msgstr "पोलैण्ड के जिले"
 
 #. Province of Poland: Lower Silesian
 #: activities/geo-country/resource/board/board4_0.qml:24
-#, fuzzy
-#| msgctxt "board7_0|"
-#| msgid "Tunisia"
 msgctxt "board4_0|"
 msgid "Lower Silesian"
-msgstr "ट्यूनीशिया"
+msgstr ""
 
 #. Province of Poland: West Pomeranian
 #: activities/geo-country/resource/board/board4_0.qml:31
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "Australia"
 msgctxt "board4_0|"
 msgid "West Pomeranian"
-msgstr "आस्ट्रेलिया"
+msgstr ""
 
 #. Province of Poland: Greater Poland
 #: activities/geo-country/resource/board/board4_0.qml:38
@@ -12527,12 +12574,9 @@ msgstr "पोलैंड"
 
 #. County of Norway: Troms og Finnmark
 #: activities/geo-country/resource/board/board6_0.qml:47
-#, fuzzy
-#| msgctxt "board5_0|"
-#| msgid "Denmark"
 msgctxt "board6_0|"
 msgid "Troms og Finnmark"
-msgstr "डेनमार्क"
+msgstr ""
 
 #. County of Norway: Trøndelag
 #: activities/geo-country/resource/board/board6_0.qml:54
@@ -14244,11 +14288,11 @@ msgstr "अंगोला"
 
 #: activities/geography/resource/board/board9_0.qml:15
 #, fuzzy
-#| msgctxt "board1|"
-#| msgid "Australia"
+#| msgctxt "board7_0|"
+#| msgid "Western Sahara"
 msgctxt "board9_0|"
 msgid "Western Asia"
-msgstr "आस्ट्रेलिया"
+msgstr "पश्चिमी सहारा"
 
 #: activities/geography/resource/board/board9_0.qml:24
 msgctxt "board9_0|"
@@ -16526,19 +16570,11 @@ msgid ""
 msgstr ""
 
 #: activities/learn_decimals/learn_decimals.js:48
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Drag each image from the (vertical) box on the left to its "
-#| "(corresponding) name on the right. Click the OK button to check your "
-#| "answer."
 msgctxt "learn_decimals|"
 msgid ""
 "Click on the squares to subtract them and display the result of the "
 "operation, and click on the OK button to validate your answer."
 msgstr ""
-"प्रत्येक छवि को (ऊर्ध्वाधर) बॉक्स से बाईं ओर उसके (संबंधित) नाम के दाईं ओर खींचें। अपना जवाब "
-"जांचने के लिए ठीक है बटन पर क्लिक करें"
 
 #: activities/learn_decimals/learn_decimals.js:52
 #: activities/learn_decimals/learn_decimals.js:67
@@ -16722,7 +16758,7 @@ msgstr "0 से 9 संख्या बनाने के लिए बिन
 #: activities/learn_decimals_subtractions/ActivityInfo.qml:14
 #, fuzzy
 #| msgctxt "ActivityInfo|"
-#| msgid "Subtraction of small numbers."
+#| msgid "Subtraction of small numbers"
 msgctxt "ActivityInfo|"
 msgid "Subtractions with decimal numbers"
 msgstr "छोटी संख्या के घटाव"
@@ -16819,10 +16855,10 @@ msgstr "ऑडियो आवाज चालू करें"
 #: activities/learn_digits/ActivityInfo.qml:15
 #, fuzzy
 #| msgctxt "ActivityInfo|"
-#| msgid "Learning Clock"
+#| msgid "Count the items"
 msgctxt "ActivityInfo|"
-msgid "Learn digits"
-msgstr "घड़ी देखना सीखना"
+msgid "Count and color the circles"
+msgstr "वस्तुएँ गिनें"
 
 #. Help title
 #: activities/learn_digits/ActivityInfo.qml:17
@@ -17517,7 +17553,7 @@ msgstr ""
 #| "Louis trimmed Barbier's 12 dots into 6 and invented the Braille system."
 msgctxt "louis_braille_data|"
 msgid "Louis trimmed Barbier's 12 dots into 6 and invented the braille system."
-msgstr "लुई ने बारबियर के 12 डॉट्स को 6 में छंटनी करके ब्रेल तंत्र का आविष्कार किया।"
+msgstr "लुई ने बारबियर के 12 डॉट्स को 6 में छंटनी करके ब्रेल सिस्टम का आविष्कार किया।"
 
 #: activities/louis-braille/louis_braille_data.js:47
 msgctxt "louis_braille_data|"
@@ -21061,11 +21097,11 @@ msgstr ""
 #. Activity title
 #: activities/ordering_alphabets/ActivityInfo.qml:21
 #, fuzzy
-#| msgctxt "category_alphabets|"
-#| msgid "Alphabets"
+#| msgctxt "ActivityInfo|"
+#| msgid "Missing Letter"
 msgctxt "ActivityInfo|"
 msgid "Ordering letters"
-msgstr "अक्षर"
+msgstr "छूटे शब्द"
 
 #. Help title
 #: activities/ordering_alphabets/ActivityInfo.qml:23
@@ -21215,13 +21251,10 @@ msgstr "सम और विषम संख्याएँ"
 
 #. Help title
 #: activities/ordering_numbers/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Touch the numbers in the right sequence."
 msgctxt "ActivityInfo|"
 msgid ""
 "Arrange the given numbers in ascending or descending order as requested."
-msgstr "सही क्रम में संख्या को स्पर्श करें।"
+msgstr ""
 
 #. intro: "Arrange the numbers in the correct order." Help goal
 #: activities/ordering_numbers/ActivityInfo.qml:25
@@ -21235,11 +21268,11 @@ msgstr "रोमन अंक"
 #. Help prerequisite
 #: activities/ordering_numbers/ActivityInfo.qml:27
 #, fuzzy
-#| msgctxt "FindIt|"
-#| msgid "Continue"
+#| msgctxt "ActivityInfo|"
+#| msgid "Counting skills"
 msgctxt "ActivityInfo|"
 msgid "Counting."
-msgstr "जारी रखें"
+msgstr "गिनने की दक्षता"
 
 #. Help manual
 #: activities/ordering_numbers/ActivityInfo.qml:29
@@ -21260,34 +21293,34 @@ msgstr "वस्तुओं को खींच लाएँ तथा छो�
 #: activities/ordering_numbers/ordering.js:68
 #, fuzzy
 #| msgctxt "ActivityInfo|"
-#| msgid "Drag and Drop the items to redraw the whole map"
+#| msgid "Drag and Drop the items to match them."
 msgctxt "ordering|"
 msgid "Drag and drop the items in descending order."
-msgstr "पूरे नक्शे को पुनः बनाने के लिए वस्तुओं को खींचें और छोडें"
+msgstr "वस्तुओं को खींच लाएँ तथा छोड़ें ताकि उनके जोड़ बनाए जा सकें"
 
 #: activities/ordering_numbers/ordering.js:69
 #, fuzzy
 #| msgctxt "ActivityInfo|"
-#| msgid "Drag and Drop the items to redraw the whole map"
+#| msgid "Drag and Drop the items to match them."
 msgctxt "ordering|"
 msgid "Drag and drop the letters in alphabetical order."
-msgstr "पूरे नक्शे को पुनः बनाने के लिए वस्तुओं को खींचें और छोडें"
+msgstr "वस्तुओं को खींच लाएँ तथा छोड़ें ताकि उनके जोड़ बनाए जा सकें"
 
 #: activities/ordering_numbers/ordering.js:70
 #, fuzzy
 #| msgctxt "ActivityInfo|"
-#| msgid "Drag and Drop the items to redraw the whole map"
+#| msgid "Drag and Drop the items to organize the story"
 msgctxt "ordering|"
 msgid "Drag and drop the letters in reverse alphabetical order."
-msgstr "पूरे नक्शे को पुनः बनाने के लिए वस्तुओं को खींचें और छोडें"
+msgstr "कहानी सही करने हेतु वस्तुओं को खींच लाएँ और छोड़ें"
 
 #: activities/ordering_numbers/ordering.js:71
 #, fuzzy
 #| msgctxt "ActivityInfo|"
-#| msgid "Drag and Drop the items to redraw the whole map"
+#| msgid "Drag and Drop the items to match them."
 msgctxt "ordering|"
 msgid "Drag and drop the items in chronological order."
-msgstr "पूरे नक्शे को पुनः बनाने के लिए वस्तुओं को खींचें और छोडें"
+msgstr "वस्तुओं को खींच लाएँ तथा छोड़ें ताकि उनके जोड़ बनाए जा सकें"
 
 #: activities/ordering_numbers/ordering.js:72
 msgctxt "ordering|"
@@ -21914,12 +21947,9 @@ msgstr "दो छवियों के बीच अंतरों पर क
 
 #. Activity title
 #: activities/piano_composition/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Addition"
 msgctxt "ActivityInfo|"
 msgid "Piano composition"
-msgstr "जोड़ना"
+msgstr ""
 
 #. Help title
 #: activities/piano_composition/ActivityInfo.qml:18
@@ -23585,9 +23615,9 @@ msgid ""
 "the system is back up and Tux is in his home, push the light button for him. "
 "To win you must switch on all the consumers while all the producers are up."
 msgstr ""
-"पूरे इलेक्ट्रिकल तंत्र को पुन: सक्रिय करने के लिए विभिन्न सक्रिय तत्वों पर क्लिक करें: सूर्य, "
-"बादल, बांध, सौर सरणी, पवन खेत और ट्रांसफार्मर। जब तंत्र का बैकअप लिया जाता है और टक्स "
-"उसके घर में है, उसके लिए प्रकाश बटन दबाएं। जीतने के लिए आपको सभी उपभोक्ताओं पर स्विच "
+"पूरे इलेक्ट्रिकल सिस्टम को पुन: सक्रिय करने के लिए विभिन्न सक्रिय तत्वों पर क्लिक करें: सूर्य, "
+"बादल, बांध, सौर सरणी, पवन खेत और ट्रांसफार्मर। जब सिस्टम का बैकअप लिया जाता है और "
+"टक्स उसके घर में है, उसके लिए प्रकाश बटन दबाएं। जीतने के लिए आपको सभी उपभोक्ताओं पर स्विच "
 "करना होगा, जबकि सभी उत्पादक ऊपर हैं।"
 
 #: activities/renewable_energy/RenewableEnergy.qml:281
@@ -23611,8 +23641,8 @@ msgid ""
 "Click on different active elements: sun, cloud, dam, solar array, wind farm "
 "and transformers, in order to reactivate the entire electrical system."
 msgstr ""
-"पूरे इलेक्ट्रिकल तंत्र को पुन: सक्रिय करने के लिए विभिन्न सक्रिय तत्वों पर क्लिक करें जैसे: सूर्य, "
-"बादल, बांध, सौर सरणी, पवन खेत और ट्रांसफार्मर।"
+"पूरे इलेक्ट्रिकल सिस्टम को पुन: सक्रिय करने के लिए विभिन्न सक्रिय तत्वों पर क्लिक करें जैसे: "
+"सूर्य, बादल, बांध, सौर सरणी, पवन खेत और ट्रांसफार्मर।"
 
 #: activities/renewable_energy/RenewableEnergy.qml:285
 msgctxt "RenewableEnergy|"
@@ -23621,7 +23651,7 @@ msgid ""
 "him. To win you must switch on all the consumers while all the producers are "
 "up."
 msgstr ""
-"जब तंत्र चालू हो जाये और टक्स अपने घर में हो तब उसके लिए प्रकाश बटन दबाएं। जीतने के लिए "
+"जब सिस्टम चालू हो जाये और टक्स अपने घर में हो तब उसके लिए प्रकाश बटन दबाएं। जीतने के लिए "
 "आपको सभी उपभोक्ताओं पर स्विच करना होगा, जब सभी उत्पादक चलो हों।"
 
 #: activities/renewable_energy/RenewableEnergy.qml:287
@@ -24672,20 +24702,11 @@ msgid ""
 msgstr "क्या अब आप पॉल के 6 कैंडी उसके दोस्तों को दे सकते हैं?"
 
 #: activities/share/resource/1/Data.qml:48
-#, fuzzy
-#| msgctxt "board5|"
-#| msgid ""
-#| "Bob wants to give 5 candies to his friends: two boys and one girl, his "
-#| "girlfriend already has one candy. Can you help him equally split the "
-#| "candies so that each friend will have the same amount of candies?"
 msgctxt "Data|"
 msgid ""
 "Some of his friends already have pieces of candy. He wants to give them 7 "
 "more pieces so that they all have the same amount."
 msgstr ""
-"बॉब अपने दोस्तों को 5 कैंडीज देना चाहता है: दो लड़के और एक लड़की, उसकी प्रेमिका में पहले से "
-"ही एक कैंडी है। क्या आप उसे कैंडियों को समान रूप से विभाजित करने में मदद कर सकते हैं ताकि "
-"प्रत्येक दोस्त को कैंडी के समान मात्रा मिल सके?"
 
 #: activities/share/resource/1/Data.qml:58
 #, fuzzy
@@ -24801,18 +24822,19 @@ msgstr "अब, ऐलिस अपने दोस्तों को 6 कै�
 
 #: activities/share/resource/1/Data.qml:142
 #, fuzzy
-#| msgctxt "board3|"
+#| msgctxt "board6|"
 #| msgid ""
-#| "Michelle has 9 candies and wants to split them with two brothers and two "
-#| "sisters. Help her share the candies!"
+#| "Jon wants to share the rest of his candies with his brother and his "
+#| "sister. Can you split them equally, knowing that his brother already has "
+#| "two candies?"
 msgctxt "Data|"
 msgid ""
 "Alice wants to give 10 pieces of candy to her friends, 1 girl and 3 boys, so "
 "that they all have the same amount. The girls already have some pieces of "
 "candy."
 msgstr ""
-"मिशेल की 9 कैंडीज हैं और उन्हें दो भाइयों और दो बहनों के साथ विभाजित करना है। उसे कैंडीज "
-"साझा करने में मदद करें!"
+"जॉन अपने बाकी के कैंडीज़ को अपने भाई और उसकी बहन के साथ साझा करना चाहता है। क्या आप "
+"उन्हें समान रूप से विभाजित कर सकते हैं, जानते हुए कि उनके भाई के पास पहले से दो कैंडीज़ हैं?"
 
 #: activities/share/resource/1/Data.qml:152
 #, fuzzy
@@ -24898,17 +24920,17 @@ msgstr ""
 
 #: activities/share/resource/1/Data.qml:214
 #, fuzzy
-#| msgctxt "board3|"
+#| msgctxt "board4|"
 #| msgid ""
-#| "Thomas wants to share his 11 candies with his friends: three boys and one "
-#| "girl. Can you help him?"
+#| "Charles wants to share his 8 candies with 3 of his friends: one boy and "
+#| "two girls. Can he split the candies equally?"
 msgctxt "Data|"
 msgid ""
 "Paul wants to share 20 pieces of candy equally between 5 of his friends. "
 "They already have one piece of candy each. Can you help him?"
 msgstr ""
-"थॉमस अपने 11 कैंडीज अपने दोस्तों के साथ साझा करना चाहते हैं: तीन लड़के और एक लड़की। क्या "
-"आप उसकी मदद कर सकते हैं?"
+"चार्ल्स अपने 8 दोस्तों को अपने दोस्तों के साथ साझा करना चाहते हैं: एक लड़का और दो लड़कियां। "
+"क्या वह कैंडियों को समान रूप से विभाजित कर सकता है?"
 
 #: activities/share/resource/1/Data.qml:226
 #, fuzzy
@@ -25047,21 +25069,19 @@ msgstr ""
 
 #: activities/share/resource/2/Data.qml:80
 #, fuzzy
-#| msgctxt "board1|"
+#| msgctxt "board5|"
 #| msgid ""
-#| "John wants to equally share 10 candies between 3 of his friends: one boy "
-#| "and two girls. Can he equally split the candies between his friends? "
-#| "First, place the children in center, then drag the candies to each of "
-#| "them."
+#| "Harry wants to equally share 8 candies between his friends: one boy and "
+#| "two girls. Place the children in center, then drag the candies to each of "
+#| "them so that each of them has an equal number of candies."
 msgctxt "Data|"
 msgid ""
 "Harry wants to share 8 pieces of candy between 3 of his friends: 1 boy and 2 "
 "girls. The boy already has one piece of candy. Can he split the pieces of "
 "candy so that they all have the same amount?"
 msgstr ""
-"जॉन अपने तीन दोस्तों के बीच समान रूप से 10 कैंडीज साझा करना चाहता है: एक लड़का और दो "
-"लड़कियां। क्या वह समान रूप से अपने दोस्तों के बीच कैंडीज को विभाजित कर सकता है? सबसे पहले, "
-"बच्चों को बीच में रखें, फिर उनमें से प्रत्येक को कैंडीज खींचें।"
+"हैरी अपने मित्रों के बीच 8 कैंडीज साझा करना चाहता है: एक लड़का और दो लड़कियां। बच्चों को "
+"केंद्र में रखें, फिर उनमें से प्रत्येक को कैंडीज खींचें जिससे कि उनमें से प्रत्येक के बराबर कैंडीज हों।"
 
 #: activities/share/resource/2/Data.qml:90
 #, fuzzy
@@ -25083,29 +25103,27 @@ msgstr ""
 
 #: activities/share/resource/2/Data.qml:100
 #, fuzzy
-#| msgctxt "board1|"
+#| msgctxt "board5|"
 #| msgid ""
-#| "John wants to equally share 10 candies between 3 of his friends: one boy "
-#| "and two girls. Can he equally split the candies between his friends? "
-#| "First, place the children in center, then drag the candies to each of "
-#| "them."
+#| "Harry wants to equally share 8 candies between his friends: one boy and "
+#| "two girls. Place the children in center, then drag the candies to each of "
+#| "them so that each of them has an equal number of candies."
 msgctxt "Data|"
 msgid ""
 "Harry wants to share 12 pieces of candy between 3 of his friends: 1 boy and "
 "2 girls. The boy already has some pieces of candy. Can he split the pieces "
 "of candy so that they all have the same amount?"
 msgstr ""
-"जॉन अपने तीन दोस्तों के बीच समान रूप से 10 कैंडीज साझा करना चाहता है: एक लड़का और दो "
-"लड़कियां। क्या वह समान रूप से अपने दोस्तों के बीच कैंडीज को विभाजित कर सकता है? सबसे पहले, "
-"बच्चों को बीच में रखें, फिर उनमें से प्रत्येक को कैंडीज खींचें।"
+"हैरी अपने मित्रों के बीच 8 कैंडीज साझा करना चाहता है: एक लड़का और दो लड़कियां। बच्चों को "
+"केंद्र में रखें, फिर उनमें से प्रत्येक को कैंडीज खींचें जिससे कि उनमें से प्रत्येक के बराबर कैंडीज हों।"
 
 #: activities/share/resource/2/Data.qml:122
 #, fuzzy
-#| msgctxt "board0|"
-#| msgid "Now he wants to give 4 candies to his friends."
+#| msgctxt "board2|"
+#| msgid "Now, Alice wants to give 6 candies to her friends"
 msgctxt "Data|"
 msgid "Now, Alice wants to share 8 pieces of candy equally among her friends."
-msgstr "अब वह अपने दोस्तों को 4 कैंडीज देना चाहता है।"
+msgstr "अब, ऐलिस अपने दोस्तों को 6 कैंडीज देना चाहती है"
 
 #: activities/share/resource/2/Data.qml:132
 #, fuzzy
@@ -25121,11 +25139,11 @@ msgstr ""
 
 #: activities/share/resource/2/Data.qml:142
 #, fuzzy
-#| msgctxt "board0|"
-#| msgid "Now he wants to give 4 candies to his friends."
+#| msgctxt "board2|"
+#| msgid "Now, Alice wants to give 6 candies to her friends"
 msgctxt "Data|"
 msgid "Alice wants to share 16 pieces of candy equally among her friends."
-msgstr "अब वह अपने दोस्तों को 4 कैंडीज देना चाहता है।"
+msgstr "अब, ऐलिस अपने दोस्तों को 6 कैंडीज देना चाहती है"
 
 #: activities/share/resource/2/Data.qml:152
 #, fuzzy
@@ -25244,18 +25262,21 @@ msgstr ""
 
 #: activities/share/resource/2/Data.qml:236
 #, fuzzy
-#| msgctxt "board4|"
+#| msgctxt "board1|"
 #| msgid ""
-#| "Charles wants to share his 8 candies with 3 of his friends: one boy and "
-#| "two girls. Can he split the candies equally?"
+#| "John wants to equally share 10 candies between 3 of his friends: one boy "
+#| "and two girls. Can he equally split the candies between his friends? "
+#| "First, place the children in center, then drag the candies to each of "
+#| "them."
 msgctxt "Data|"
 msgid ""
 "George wants to share 14 pieces of candy equally between 4 of his friends: 2 "
 "girls and 2 boys. Can he equally split the pieces of candy between his "
 "friends?"
 msgstr ""
-"चार्ल्स अपने 8 दोस्तों को अपने दोस्तों के साथ साझा करना चाहते हैं: एक लड़का और दो लड़कियां। "
-"क्या वह कैंडियों को समान रूप से विभाजित कर सकता है?"
+"जॉन अपने तीन दोस्तों के बीच समान रूप से 10 कैंडीज साझा करना चाहता है: एक लड़का और दो "
+"लड़कियां। क्या वह समान रूप से अपने दोस्तों के बीच कैंडीज को विभाजित कर सकता है? सबसे पहले, "
+"बच्चों को बीच में रखें, फिर उनमें से प्रत्येक को कैंडीज खींचें।"
 
 #: activities/share/resource/2/Data.qml:246
 #, fuzzy
@@ -27818,7 +27839,7 @@ msgid ""
 "him."
 msgstr ""
 "विभिन्न सक्रिय तत्वों पर क्लिक करें: पूरे पानी की व्यवस्था को पुन: सक्रिय करने के लिए सूर्य, "
-"बादल, पम्पिंग स्टेशन और सीवेज ट्रीटमेंट प्लांट। जब तंत्र बैक अप हो जाता है और टक्स शॉवर में "
+"बादल, पम्पिंग स्टेशन और सीवेज ट्रीटमेंट प्लांट। जब सिस्टम बैक अप हो जाता है और टक्स शॉवर में "
 "है, उसके लिए शॉवर बटन दबाएं।"
 
 #: activities/watercycle/Watercycle.qml:78
@@ -27994,100 +28015,23 @@ msgstr "इससे पहले कि जमीन में गिर जा
 
 #: core/ChangeLog.qml:30
 msgctxt "ChangeLog|"
-msgid ""
-"Reduce the size of the packages for all platforms and of the external word "
-"images set"
+msgid "Map of Spain added for geography activity"
 msgstr ""
 
 #: core/ChangeLog.qml:31
 msgctxt "ChangeLog|"
-msgid "Improve images quality in several activities"
+msgid "Voices added for Ukrainian"
 msgstr ""
 
 #: core/ChangeLog.qml:32
 msgctxt "ChangeLog|"
-msgid "Fix some transitions in renewable_energy/watercycle on some platforms"
-msgstr ""
-
-#: core/ChangeLog.qml:33
-msgctxt "ChangeLog|"
-msgid "Fix dead keys ignored on Linux for typing activities"
-msgstr ""
-
-#: core/ChangeLog.qml:34
-msgctxt "ChangeLog|"
-msgid "Fix level reset when changing level manually in Logical associations"
-msgstr ""
-
-#: core/ChangeLog.qml:38
-msgctxt "ChangeLog|"
 msgid ""
-"Fix Alphabet sequence, Even and odd numbers and Numbers in order activities"
+"New command-line option to list all the activities and start on a specific "
+"one"
 msgstr ""
 
-#: core/ChangeLog.qml:42 core/ChangeLog.qml:50
-msgctxt "ChangeLog|"
-msgid "Several bug fixes"
-msgstr ""
-
-#: core/ChangeLog.qml:43 core/ChangeLog.qml:58 core/ChangeLog.qml:63
-#: core/ChangeLog.qml:69
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Memory Game with images"
-msgctxt "ChangeLog|"
-msgid "Many new images"
-msgstr "छवियों के साथ स्मरण के खेल"
-
-#: core/ChangeLog.qml:44
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translations added for: Slovenian, German, Galician."
-msgctxt "ChangeLog|"
-msgid "Translation updated for Russian"
-msgstr "स्लोवेनियाई, जर्मन, गैलिशियन् के लिए अनुवाद शामिल किया गया।"
-
-#: core/ChangeLog.qml:45
-msgctxt "ChangeLog|"
-msgid "New voices for Norwegian Nynorsk"
-msgstr ""
-
-#: core/ChangeLog.qml:49
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translations added for: Slovenian, German, Galician."
-msgctxt "ChangeLog|"
-msgid "Translations added for Breton, Czech and Macedonian"
-msgstr "स्लोवेनियाई, जर्मन, गैलिशियन् के लिए अनुवाद शामिल किया गया।"
-
-#: core/ChangeLog.qml:54
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translations added for: Slovenian, German, Galician."
-msgctxt "ChangeLog|"
-msgid "Translation added for Azerbaijani"
-msgstr "स्लोवेनियाई, जर्मन, गैलिशियन् के लिए अनुवाद शामिल किया गया।"
-
-#: core/ChangeLog.qml:55
-msgctxt "ChangeLog|"
-msgid "New maps and update of the maps for geography activities"
-msgstr ""
-
-#: core/ChangeLog.qml:56
-msgctxt "ChangeLog|"
-msgid ""
-"New dataset containing loops operations for programming maze, and make "
-"tutorial images translated"
-msgstr ""
-
-#: core/ChangeLog.qml:57
-msgctxt "ChangeLog|"
-msgid ""
-"Addition of a level to teach voltage source loop in analog electricity "
-"activity"
-msgstr ""
-
-#: core/ChangeLog.qml:59 core/ChangeLog.qml:62 core/ChangeLog.qml:68
+#: core/ChangeLog.qml:33 core/ChangeLog.qml:68 core/ChangeLog.qml:71
+#: core/ChangeLog.qml:77
 #, fuzzy
 #| msgctxt "ChangeLog|"
 #| msgid "Many little fixes. Lang activity now available in French."
@@ -28095,12 +28039,107 @@ msgctxt "ChangeLog|"
 msgid "Many usability improvements"
 msgstr "कई छोटे-मोटे सुधार। भाषा गतिविधि अब फ्रेंच में उपलब्ध है।"
 
-#: core/ChangeLog.qml:64 core/ChangeLog.qml:70
+#: core/ChangeLog.qml:34 core/ChangeLog.qml:52 core/ChangeLog.qml:67
+#: core/ChangeLog.qml:72 core/ChangeLog.qml:78
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Memory Game with images"
+msgctxt "ChangeLog|"
+msgid "Many new images"
+msgstr "छवियों के साथ स्मरण के खेल"
+
+#: core/ChangeLog.qml:35 core/ChangeLog.qml:73 core/ChangeLog.qml:79
 msgctxt "ChangeLog|"
 msgid "Many bug fixes"
 msgstr ""
 
-#: core/ChangeLog.qml:67
+#: core/ChangeLog.qml:39
+msgctxt "ChangeLog|"
+msgid ""
+"Reduce the size of the packages for all platforms and of the external word "
+"images set"
+msgstr ""
+
+#: core/ChangeLog.qml:40
+msgctxt "ChangeLog|"
+msgid "Improve images quality in several activities"
+msgstr ""
+
+#: core/ChangeLog.qml:41
+msgctxt "ChangeLog|"
+msgid "Fix some transitions in renewable_energy/watercycle on some platforms"
+msgstr ""
+
+#: core/ChangeLog.qml:42
+msgctxt "ChangeLog|"
+msgid "Fix dead keys ignored on Linux for typing activities"
+msgstr ""
+
+#: core/ChangeLog.qml:43
+msgctxt "ChangeLog|"
+msgid "Fix level reset when changing level manually in Logical associations"
+msgstr ""
+
+#: core/ChangeLog.qml:47
+msgctxt "ChangeLog|"
+msgid ""
+"Fix Alphabet sequence, Even and odd numbers and Numbers in order activities"
+msgstr ""
+
+#: core/ChangeLog.qml:51 core/ChangeLog.qml:59
+msgctxt "ChangeLog|"
+msgid "Several bug fixes"
+msgstr ""
+
+#: core/ChangeLog.qml:53
+#, fuzzy
+#| msgctxt "ChangeLog|"
+#| msgid "Translations added for: Slovenian, German, Galician."
+msgctxt "ChangeLog|"
+msgid "Translation updated for Russian"
+msgstr "स्लोवेनियाई, जर्मन, गैलिशियन् के लिए अनुवाद शामिल किया गया।"
+
+#: core/ChangeLog.qml:54
+msgctxt "ChangeLog|"
+msgid "New voices for Norwegian Nynorsk"
+msgstr ""
+
+#: core/ChangeLog.qml:58
+#, fuzzy
+#| msgctxt "ChangeLog|"
+#| msgid "Translations added for: Slovenian, German, Galician."
+msgctxt "ChangeLog|"
+msgid "Translations added for Breton, Czech and Macedonian"
+msgstr "स्लोवेनियाई, जर्मन, गैलिशियन् के लिए अनुवाद शामिल किया गया।"
+
+#: core/ChangeLog.qml:63
+#, fuzzy
+#| msgctxt "ChangeLog|"
+#| msgid "Translations added for: Slovenian, German, Galician."
+msgctxt "ChangeLog|"
+msgid "Translation added for Azerbaijani"
+msgstr "स्लोवेनियाई, जर्मन, गैलिशियन् के लिए अनुवाद शामिल किया गया।"
+
+#: core/ChangeLog.qml:64
+msgctxt "ChangeLog|"
+msgid "New maps and update of the maps for geography activities"
+msgstr ""
+
+#: core/ChangeLog.qml:65
+msgctxt "ChangeLog|"
+msgid ""
+"New dataset containing loops operations for programming maze, and make "
+"tutorial images translated"
+msgstr ""
+
+#: core/ChangeLog.qml:66
+msgctxt "ChangeLog|"
+msgid ""
+"Addition of a level to teach voltage source loop in analog electricity "
+"activity"
+msgstr ""
+
+#: core/ChangeLog.qml:76
 #, fuzzy
 #| msgctxt "ConfigurationItem|"
 #| msgid "The activity section menu is visible"
@@ -28108,12 +28147,12 @@ msgctxt "ChangeLog|"
 msgid "New Activity Settings menu, with dataset selection"
 msgstr "गतिविधि अनुभाग मेनू दिखाई दे रहा है"
 
-#: core/ChangeLog.qml:73
+#: core/ChangeLog.qml:82
 msgctxt "ChangeLog|"
 msgid "New sub-categories to organize activities"
 msgstr ""
 
-#: core/ChangeLog.qml:74
+#: core/ChangeLog.qml:83
 #, fuzzy
 #| msgctxt "ChangeLog|"
 #| msgid "Translations added for: Slovenian, German, Galician."
@@ -28121,12 +28160,12 @@ msgctxt "ChangeLog|"
 msgid "Translation added for Macedonian."
 msgstr "स्लोवेनियाई, जर्मन, गैलिशियन् के लिए अनुवाद शामिल किया गया।"
 
-#: core/ChangeLog.qml:75
+#: core/ChangeLog.qml:84
 msgctxt "ChangeLog|"
 msgid "New activities Programming Maze and Baby Tangram"
 msgstr ""
 
-#: core/ChangeLog.qml:76
+#: core/ChangeLog.qml:85
 #, fuzzy
 #| msgctxt "DownloadDialog|"
 #| msgid "Background"
@@ -28134,27 +28173,27 @@ msgctxt "ChangeLog|"
 msgid "New background music and volume settings."
 msgstr "पृष्ठभूमि"
 
-#: core/ChangeLog.qml:77
+#: core/ChangeLog.qml:86
 msgctxt "ChangeLog|"
 msgid "New speed setting in several activities."
 msgstr ""
 
-#: core/ChangeLog.qml:78
+#: core/ChangeLog.qml:87
 msgctxt "ChangeLog|"
 msgid "New option in chess to display captured pieces."
 msgstr ""
 
-#: core/ChangeLog.qml:79
+#: core/ChangeLog.qml:88
 msgctxt "ChangeLog|"
 msgid "New images in Colors, Advanced colors and Target game."
 msgstr ""
 
-#: core/ChangeLog.qml:80
+#: core/ChangeLog.qml:89
 msgctxt "ChangeLog|"
 msgid "New voices for US English."
 msgstr ""
 
-#: core/ChangeLog.qml:81 core/ChangeLog.qml:89
+#: core/ChangeLog.qml:90 core/ChangeLog.qml:98
 #, fuzzy
 #| msgctxt "ChangeLog|"
 #| msgid "Many little fixes. Lang activity now available in French."
@@ -28162,19 +28201,19 @@ msgctxt "ChangeLog|"
 msgid "Many little fixes and improvements."
 msgstr "कई छोटे-मोटे सुधार। भाषा गतिविधि अब फ्रेंच में उपलब्ध है।"
 
-#: core/ChangeLog.qml:82
+#: core/ChangeLog.qml:91
 msgctxt "ChangeLog|"
 msgid ""
 "Translation updated for multiple languages (Breton, Brazilian Portuguese, "
 "Finnish...)."
 msgstr ""
 
-#: core/ChangeLog.qml:83
+#: core/ChangeLog.qml:92
 msgctxt "ChangeLog|"
 msgid "Add Russian dataset for Click on letter activity."
 msgstr ""
 
-#: core/ChangeLog.qml:84
+#: core/ChangeLog.qml:93
 #, fuzzy
 #| msgctxt "ChangeLog|"
 #| msgid "Many little fixes. Lang activity now available in French."
@@ -28182,19 +28221,19 @@ msgctxt "ChangeLog|"
 msgid "Lang activity now available in Dutch."
 msgstr "कई छोटे-मोटे सुधार। भाषा गतिविधि अब फ्रेंच में उपलब्ध है।"
 
-#: core/ChangeLog.qml:85
+#: core/ChangeLog.qml:94
 msgctxt "ChangeLog|"
 msgid ""
 "Merge Norwegian counties Nord-Trøndelag and Sør-Trøndelag into Trøndelag in "
 "geo-country activity."
 msgstr ""
 
-#: core/ChangeLog.qml:86
+#: core/ChangeLog.qml:95
 msgctxt "ChangeLog|"
 msgid "Fix in braille activities where the cells start at 1, not 0."
 msgstr ""
 
-#: core/ChangeLog.qml:87
+#: core/ChangeLog.qml:96
 #, fuzzy
 #| msgctxt "ChangeLog|"
 #| msgid "Translations added for: Slovenian, German, Galician."
@@ -28202,14 +28241,14 @@ msgctxt "ChangeLog|"
 msgid "Translation added for Basque, Hungarian and Malayalam."
 msgstr "स्लोवेनियाई, जर्मन, गैलिशियन् के लिए अनुवाद शामिल किया गया।"
 
-#: core/ChangeLog.qml:88
+#: core/ChangeLog.qml:97
 msgctxt "ChangeLog|"
 msgid ""
 "Loading/saving of creations (Baby Wordprocessor, Balance Box and Piano "
 "Composition)."
 msgstr ""
 
-#: core/ChangeLog.qml:89
+#: core/ChangeLog.qml:98
 #, fuzzy
 #| msgctxt "ChangeLog|"
 #| msgid "Translations added for: Slovenian, German, Galician."
@@ -28217,37 +28256,37 @@ msgctxt "ChangeLog|"
 msgid "Translations added for Scottish Gaelic."
 msgstr "स्लोवेनियाई, जर्मन, गैलिशियन् के लिए अनुवाद शामिल किया गया।"
 
-#: core/ChangeLog.qml:90
+#: core/ChangeLog.qml:99
 msgctxt "ChangeLog|"
 msgid "License page added in configuration."
 msgstr ""
 
-#: core/ChangeLog.qml:90
+#: core/ChangeLog.qml:99
 msgctxt "ChangeLog|"
 msgid "Multiple changes on layouts to improve the ergonomy."
 msgstr ""
 
-#: core/ChangeLog.qml:91
+#: core/ChangeLog.qml:100
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in Polish, Swedish and Ukrainian."
 msgstr ""
 
-#: core/ChangeLog.qml:92
+#: core/ChangeLog.qml:101
 msgctxt "ChangeLog|"
 msgid "Search feature."
 msgstr "खोज सुविधा."
 
-#: core/ChangeLog.qml:93
+#: core/ChangeLog.qml:102
 msgctxt "ChangeLog|"
 msgid "A Changelog."
 msgstr "एक परिवर्तन सूची।"
 
-#: core/ChangeLog.qml:94
+#: core/ChangeLog.qml:103
 msgctxt "ChangeLog|"
 msgid "Many little fixes."
 msgstr ""
 
-#: core/ChangeLog.qml:94
+#: core/ChangeLog.qml:103
 #, fuzzy
 #| msgctxt "ChangeLog|"
 #| msgid "Many little fixes. Lang activity now available in French."
@@ -28255,7 +28294,7 @@ msgctxt "ChangeLog|"
 msgid "Lang activity now available in French."
 msgstr "कई छोटे-मोटे सुधार। भाषा गतिविधि अब फ्रेंच में उपलब्ध है।"
 
-#: core/ChangeLog.qml:95
+#: core/ChangeLog.qml:104
 #, fuzzy
 #| msgctxt "ChangeLog|"
 #| msgid ""
@@ -28274,7 +28313,7 @@ msgstr ""
 "कातालान (वैलेंशियान), चीनी पारंपरिक, फिनिश (92% अनुवादित), रूसी (98% अनुवादित), "
 "स्लोवाक (92% अनुवाद), तुर्की।"
 
-#: core/ChangeLog.qml:95
+#: core/ChangeLog.qml:104
 #, fuzzy
 #| msgctxt "ChangeLog|"
 #| msgid ""
@@ -28293,12 +28332,12 @@ msgstr ""
 "कातालान (वैलेंशियान), चीनी पारंपरिक, फिनिश (92% अनुवादित), रूसी (98% अनुवादित), "
 "स्लोवाक (92% अनुवाद), तुर्की।"
 
-#: core/ChangeLog.qml:96
+#: core/ChangeLog.qml:105
 msgctxt "ChangeLog|"
 msgid "Translations added for: Slovenian, German, Galician."
 msgstr "स्लोवेनियाई, जर्मन, गैलिशियन् के लिए अनुवाद शामिल किया गया।"
 
-#: core/ChangeLog.qml:121
+#: core/ChangeLog.qml:130
 #, qt-format
 msgctxt "ChangeLog|"
 msgid "Version %1:"
@@ -28315,7 +28354,7 @@ msgid ""
 "This activity uses language sound files, that are not yet installed on your "
 "system."
 msgstr ""
-"यह गतिविधि उन ध्वनि फ़ाइलों का उपयोग करता है जो आपके तंत्र में अब तक इंस्टाल नहीं हैं।"
+"यह गतिविधि उन ध्वनि फ़ाइलों का उपयोग करता है जो आपके सिस्टम में अब तक इंस्टाल नहीं हैं।"
 
 #: core/core.js:182
 msgctxt "core|"
@@ -28440,7 +28479,7 @@ msgid ""
 msgstr ""
 "सॉफ्टवेयर में हमेशा सुधार किया जा सकता है, और केडीई टीम ऐसा करने के लिए तैयार है। "
 "हालांकि, आप - उपयोगकर्ता - हमें अवश्य बताएं कि जब कुछ अपेक्षा के अनुरूप काम नहीं करता है "
-"या बेहतर किया जा सकता है।<br/><br/>केडीई का बग ट्रैकिंग तंत्र है बग की रिपोर्ट करने के "
+"या बेहतर किया जा सकता है।<br/><br/>केडीई का बग ट्रैकिंग सिस्टम है बग की रिपोर्ट करने के "
 "लिए <a href=“%1”>%1</a> पर जाएं।<br/><br/> यदि आपके पास सुधार के लिए कोई सुझाव है "
 "तो आप अपनी इच्छा को पंजीकृत करने के लिए बग ट्रैकिंग प्रणाली का उपयोग करने के लिए आपका "
 "स्वागत है । सुनिश्चित करें कि आप “विशलिस्ट” नामक गंभीरता का उपयोग करते हैं।"
@@ -28650,7 +28689,7 @@ msgstr "आपका डाउनलोड सफलतापूर्वक स
 #: core/DownloadDialog.qml:396
 msgctxt "DownloadDialog|"
 msgid "Restart any currently active activity."
-msgstr "वर्तमान में सक्रिय किसी गतिविधि को पुनः प्रारंभ करें"
+msgstr "वर्तमान में सक्रिय किसी गतिविधि को पुनः चालू करें"
 
 #: core/DownloadDialog.qml:398
 msgctxt "DownloadDialog|"
@@ -28801,7 +28840,7 @@ msgstr "जीकोंप्रिस मुख्य मेनू "
 #: core/main.cpp:162
 msgctxt "QObject|"
 msgid "Run GCompris with the default system cursor."
-msgstr "जीकॉम्प्रिस को डिफ़ॉल्ट तंत्र संकेतक के साथ चलाएँ।"
+msgstr "जीकॉम्प्रिस को डिफ़ॉल्ट सिस्टम संकेतक के साथ चलाएँ।"
 
 #: core/main.cpp:166
 msgctxt "QObject|"
@@ -28966,6 +29005,58 @@ msgctxt "Tutorial|"
 msgid "Start"
 msgstr ""
 
+#, fuzzy
+#~| msgctxt "ActivityInfo|"
+#~| msgid ""
+#~| "Play with the computer. Take turns to click on the square which you want "
+#~| "to mark. First player to create a line of 3 marks wins"
+#~ msgctxt "ActivityInfo|"
+#~ msgid ""
+#~ "Play with the computer. Take turns to click the line in which you want to "
+#~ "drop a token. The first player to create a line of 4 tokens wins."
+#~ msgstr ""
+#~ "कंप्यूटर के साथ खेलें। उस वर्ग पर क्लिक करने के लिए ले जाएं जिसे आप चिह्नित करना चाहते हैं। "
+#~ "3 अंक जीतने वाली लाइन बनाने के लिए पहला खिलाड़ी विजेता होगा।"
+
+#~ msgctxt "Calendar|"
+#~ msgid "Sunday"
+#~ msgstr "रविवार"
+
+#~ msgctxt "Calendar|"
+#~ msgid "Monday"
+#~ msgstr "सोमवार"
+
+#~ msgctxt "Calendar|"
+#~ msgid "Tuesday"
+#~ msgstr "मंगलवार"
+
+#~ msgctxt "Calendar|"
+#~ msgid "Wednesday"
+#~ msgstr "बुधवार"
+
+#~ msgctxt "Calendar|"
+#~ msgid "Thursday"
+#~ msgstr "गुरुवार"
+
+#~ msgctxt "Calendar|"
+#~ msgid "Friday"
+#~ msgstr "शुक्रवार"
+
+#~ msgctxt "Calendar|"
+#~ msgid "Saturday"
+#~ msgstr "शनिवार"
+
+#, fuzzy
+#~| msgctxt "ActivityInfo|"
+#~| msgid "Play chess against Tux"
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Play checkers against the computer"
+#~ msgstr "टक्स के विरुद्ध शतरंज खेलें"
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Play chess against your friend"
+#~ msgstr "अपने मित्र के विरुद्ध शतरंज खेलें"
+
 #~ msgctxt "board1|"
 #~ msgid "The horse goes 'neigh! neigh!'. Horses usually sleep standing up."
 #~ msgstr "घोड़े 'हिनहिनाते' हैं । घोड़े आमतौर पर खड़े होके सोते हैं।"
@@ -29064,16 +29155,10 @@ msgstr ""
 
 #, fuzzy
 #~| msgctxt "ActivityInfo|"
-#~| msgid ""
-#~| "Play with the computer. Take turns to click on the square which you want "
-#~| "to mark. First player to create a line of 3 marks wins"
+#~| msgid "Learning Clock"
 #~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Play with the computer. Take turns to click the line in which you want to "
-#~ "drop a token. The first player to create a line of 4 tokens wins."
-#~ msgstr ""
-#~ "कंप्यूटर के साथ खेलें। उस वर्ग पर क्लिक करने के लिए ले जाएं जिसे आप चिह्नित करना चाहते हैं। "
-#~ "3 अंक जीतने वाली लाइन बनाने के लिए पहला खिलाड़ी विजेता होगा।"
+#~ msgid "Learn digits"
+#~ msgstr "घड़ी देखना सीखना"
 
 #, fuzzy
 #~| msgctxt "ActivityInfo|"
@@ -29101,34 +29186,6 @@ msgstr ""
 #~ "कंप्यूटर के साथ खेलें। उस वर्ग पर क्लिक करने के लिए ले जाएं जिसे आप चिह्नित करना चाहते हैं। "
 #~ "3 अंक जीतने वाली लाइन बनाने के लिए पहला खिलाड़ी विजेता होगा।"
 
-#~ msgctxt "Calendar|"
-#~ msgid "Sunday"
-#~ msgstr "रविवार"
-
-#~ msgctxt "Calendar|"
-#~ msgid "Monday"
-#~ msgstr "सोमवार"
-
-#~ msgctxt "Calendar|"
-#~ msgid "Tuesday"
-#~ msgstr "मंगलवार"
-
-#~ msgctxt "Calendar|"
-#~ msgid "Wednesday"
-#~ msgstr "बुधवार"
-
-#~ msgctxt "Calendar|"
-#~ msgid "Thursday"
-#~ msgstr "गुरुवार"
-
-#~ msgctxt "Calendar|"
-#~ msgid "Friday"
-#~ msgstr "शुक्रवार"
-
-#~ msgctxt "Calendar|"
-#~ msgid "Saturday"
-#~ msgstr "शनिवार"
-
 #~ msgctxt "ActivityInfo|"
 #~ msgid ""
 #~ "Fish are taken from the Unix utility xfishtank. All image credits belong "
@@ -29152,17 +29209,6 @@ msgstr ""
 #~ "आप http://gcompris.net/activity/lang पर ऑनलाइन इस गतिविधि का उपयोग कर सकते "
 #~ "हैं।"
 
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Play chess against Tux"
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Play checkers against the computer"
-#~ msgstr "टक्स के विरुद्ध शतरंज खेलें"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Play chess against your friend"
-#~ msgstr "अपने मित्र के विरुद्ध शतरंज खेलें"
-
 #~ msgctxt "ActivityInfo|"
 #~ msgid "Drawing by Stephane Cabaraux"
 #~ msgstr "ड्राइंग - स्टीफन काबाराक्स द्वारा"
@@ -29171,427 +29217,65 @@ msgstr ""
 #~ msgid "Drawing by Stephane Cabaraux."
 #~ msgstr "ड्राइंग - स्टीफन काबाराक्स द्वारा"
 
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Basic enumeration."
-#~ msgctxt "Data|"
-#~ msgid "Basic decimal numbers."
-#~ msgstr "मूल एनुमरेशन"
-
 #~ msgctxt "ActivityInfo|"
 #~ msgid "Mouse-manipulation"
 #~ msgstr "माउस चलाकर"
-
-#, fuzzy
-#~| msgctxt "category_alphabets|"
-#~| msgid "Alphabets"
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Knowing alphabets"
-#~ msgstr "अक्षर"
-
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Reading"
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Reading"
-#~ msgstr "पढ़ रहा है"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Counting skills"
-#~ msgstr "गिनने की दक्षता"
-
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Braille alphabet."
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Compare alphabets."
-#~ msgstr "ब्रेल वर्णमाला"
-
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Drag and Drop the items to redraw the whole map"
-#~ msgctxt "ordering|"
-#~ msgid "Drag and drop the letters in correct position in descending order."
-#~ msgstr "पूरे नक्शे को पुनः बनाने के लिए वस्तुओं को खींचें और छोडें"
-
-#~ msgctxt "board15_0|"
-#~ msgid "Northern Scotland"
-#~ msgstr "उत्तरी स्कॉटलैण्ड"
-
-#, fuzzy
-#~| msgctxt "board2_0|"
-#~| msgid "Iceland"
-#~ msgctxt "board15_0|"
-#~ msgid "Shetland"
-#~ msgstr "आइसलैंड"
-
-#, fuzzy
-#~| msgctxt "board5_0|"
-#~| msgid "Switzerland"
-#~ msgctxt "board15_0|"
-#~ msgid "Sutherland"
-#~ msgstr "स्विट्जरलैंड"
-
-#~ msgctxt "board15_1|"
-#~ msgid "Southern Scotland"
-#~ msgstr "दक्षिणी स्कॉटलैण्ड"
-
-#~ msgctxt "board15_2|"
-#~ msgid "Northern Scotland"
-#~ msgstr "उत्तरी स्कॉटलैण्ड"
-
-#, fuzzy
-#~| msgctxt "board2_0|"
-#~| msgid "Iceland"
-#~ msgctxt "board15_2|"
-#~ msgid "Shetland"
-#~ msgstr "आइसलैंड"
-
-#, fuzzy
-#~| msgctxt "board5_0|"
-#~| msgid "Switzerland"
-#~ msgctxt "board15_2|"
-#~ msgid "Sutherland"
-#~ msgstr "स्विट्जरलैंड"
-
-#~ msgctxt "board15_3|"
-#~ msgid "Southern Scotland"
-#~ msgstr "दक्षिणी स्कॉटलैण्ड"
-
-#, fuzzy
-#~| msgctxt "board8_0|"
-#~| msgid "South Africa"
-#~ msgctxt "board15_3|"
-#~ msgid "South Ayrshire"
-#~ msgstr "दक्षिणी अफ्रीका"
-
-#, fuzzy
-#~| msgctxt "board10_0|"
-#~| msgid "East Timor"
-#~ msgctxt "board15_3|"
-#~ msgid "East Ayrshire"
-#~ msgstr "पूर्वी तिमोर"
-
-#, fuzzy
-#~| msgctxt "board2_0|"
-#~| msgid "North America"
-#~ msgctxt "board15_3|"
-#~ msgid "North Ayrshire"
-#~ msgstr "अमेरिका, उत्तरी"
-
-#~ msgctxt "board11_1|"
-#~ msgid "Districts of Northern Italy"
-#~ msgstr "उत्तरी इटली के जिले"
-
-#, fuzzy
-#~| msgctxt "board6_0|"
-#~| msgid "Albania"
-#~ msgctxt "board11_1|"
-#~ msgid "Verbania"
-#~ msgstr "अल्बानिया"
-
-#, fuzzy
-#~| msgctxt "board6_0|"
-#~| msgid "Moldova"
-#~ msgctxt "board11_1|"
-#~ msgid "Padova"
-#~ msgstr "मॉल्दोवा"
-
-#, fuzzy
-#~| msgctxt "board4_0|"
-#~| msgid "Venezuela"
-#~ msgctxt "board11_1|"
-#~ msgid "Venezia"
-#~ msgstr "वेनेजुएला"
-
-#, fuzzy
-#~| msgctxt "IntroMessage|"
-#~| msgid "Previous"
-#~ msgctxt "board11_1|"
-#~ msgid "Treviso"
-#~ msgstr "पिछला"
-
-#~ msgctxt "board11_2|"
-#~ msgid "Districts of Central Italy"
-#~ msgstr "मध्य इटली के जिले"
-
-#, fuzzy
-#~| msgctxt "board4_0|"
-#~| msgid "Peru"
-#~ msgctxt "board11_2|"
-#~ msgid "Perugia"
-#~ msgstr "पेरू"
-
-#, fuzzy
-#~| msgctxt "board6_0|"
-#~| msgid "Romania"
-#~ msgctxt "board11_2|"
-#~ msgid "Roma"
-#~ msgstr "रोमानिया"
-
-#~ msgctxt "board11_3|"
-#~ msgid "Districts of Southern Italy"
-#~ msgstr "दक्षिणी इटली के जिले"
-
-#, fuzzy
-#~| msgctxt "board9_0|"
-#~| msgid "Pakistan"
-#~ msgctxt "board11_3|"
-#~ msgid "Oristano"
-#~ msgstr "पाकिस्तान"
-
-#, fuzzy
-#~| msgctxt "board1|"
-#~| msgid "Japan"
-#~ msgctxt "board11_3|"
-#~ msgid "Trapani"
-#~ msgstr "जापान"
-
-#, fuzzy
-#~| msgctxt "board4_0|"
-#~| msgid "Argentina"
-#~ msgctxt "board11_3|"
-#~ msgid "Agrigento"
-#~ msgstr "अर्जेंटीना"
-
-#, fuzzy
-#~| msgctxt "board4_0|"
-#~| msgid "grater"
-#~ msgctxt "board11_3|"
-#~ msgid "Matera"
-#~ msgstr "ग्रेटर"
-
-#, fuzzy
-#~| msgctxt "dataset|"
-#~| msgid "eleven"
-#~ msgctxt "board11_3|"
-#~ msgid "Benevento"
-#~ msgstr "ग्यारह"
-
-#~ msgctxt "board1_0|"
-#~ msgid "Districts of France"
-#~ msgstr "फ्रांस के जिले"
-
-#~ msgctxt "board4_0|"
-#~ msgid "Districts of Poland"
-#~ msgstr "पोलैण्ड के जिले"
-
-#, fuzzy
-#~| msgctxt "board2_0|"
-#~| msgid "Alaska"
-#~ msgctxt "board4_0|"
-#~ msgid "Slaskie"
-#~ msgstr "अलास्का"
-
-#~ msgctxt "board13_0|"
-#~ msgid "Districts of Australia"
-#~ msgstr "ऑस्ट्रेलिया के जिले"
-
-#~ msgctxt "board14_0|"
-#~ msgid "Districts of China"
-#~ msgstr "चीन के जिले"
-
-#~ msgctxt "board5_0|"
-#~ msgid "Districts of Turkey"
-#~ msgstr "तुर्की  के जिले"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Districts of Turkey"
-#~ msgstr "तुर्की  के जिले"
-
-#, fuzzy
-#~| msgctxt "Warning|"
-#~| msgid "and"
-#~ msgctxt "board5_2|"
-#~ msgid "Van"
-#~ msgstr "और"
-
-#, fuzzy
-#~| msgctxt "board5_0|"
-#~| msgid "France"
-#~ msgctxt "board5_2|"
-#~ msgid "Tunceli"
-#~ msgstr "फ्रांस"
-
-#, fuzzy
-#~| msgctxt "board9_0|"
-#~| msgid "Malaysia"
-#~ msgctxt "board5_2|"
-#~ msgid "Malatya"
-#~ msgstr "मलेशिया"
-
-#, fuzzy
-#~| msgctxt "board1|"
-#~| msgid "Italy"
-#~ msgctxt "board5_2|"
-#~ msgid "Antalya"
-#~ msgstr "इटली"
-
-#~ msgctxt "board12_0|"
-#~ msgid "States of India"
-#~ msgstr "भारत के राज्य"
 
 #~ msgctxt "board10_1|"
 #~ msgid "United States of America"
 #~ msgstr "संयुक्त राज्य अमेरिका"
 
-#, fuzzy
-#~| msgctxt "board9_0|"
-#~| msgid "North Korea"
-#~ msgctxt "board10_1|"
-#~ msgid "North Dakota"
-#~ msgstr "उत्तरी कोरिया"
+#~ msgctxt "board11_1|"
+#~ msgid "Districts of Northern Italy"
+#~ msgstr "उत्तरी इटली के जिले"
 
-#, fuzzy
-#~| msgctxt "board9_0|"
-#~| msgid "South Korea"
-#~ msgctxt "board10_1|"
-#~ msgid "South Dakota"
-#~ msgstr "दक्षिणी कोरिया"
+#~ msgctxt "board11_2|"
+#~ msgid "Districts of Central Italy"
+#~ msgstr "मध्य इटली के जिले"
 
-#, fuzzy
-#~| msgctxt "category_colors|"
-#~| msgid "Colors"
-#~ msgctxt "board10_1|"
-#~ msgid "Colorado"
-#~ msgstr "रंग"
+#~ msgctxt "board11_3|"
+#~ msgid "Districts of Southern Italy"
+#~ msgstr "दक्षिणी इटली के जिले"
 
-#, fuzzy
-#~| msgctxt "board1|"
-#~| msgid "Mexico"
-#~ msgctxt "board10_1|"
-#~ msgid "New Mexico"
-#~ msgstr "मेक्सिको"
+#~ msgctxt "board12_0|"
+#~ msgid "States of India"
+#~ msgstr "भारत के राज्य"
 
-#, fuzzy
-#~| msgctxt "board2_0|"
-#~| msgid "Alaska"
-#~ msgctxt "board10_1|"
-#~ msgid "Alaska"
-#~ msgstr "अलास्का"
+#~ msgctxt "board13_0|"
+#~ msgid "Districts of Australia"
+#~ msgstr "ऑस्ट्रेलिया के जिले"
 
-#, fuzzy
-#~| msgctxt "board10_0|"
-#~| msgid "Hawaii"
-#~ msgctxt "board10_1|"
-#~ msgid "Hawaii"
-#~ msgstr "हवाई"
+#~ msgctxt "board15_0|"
+#~ msgid "Northern Scotland"
+#~ msgstr "उत्तरी स्कॉटलैण्ड"
 
-#, fuzzy
-#~| msgctxt "board7_0|"
-#~| msgid "Tunisia"
-#~ msgctxt "board10_1|"
-#~ msgid "Louisiana"
-#~ msgstr "ट्यूनीशिया"
+#~ msgctxt "board15_2|"
+#~ msgid "Northern Scotland"
+#~ msgstr "उत्तरी स्कॉटलैण्ड"
 
-#, fuzzy
-#~| msgctxt "board9_0|"
-#~| msgid "India"
-#~ msgctxt "board10_1|"
-#~ msgid "Indiana"
-#~ msgstr "भारत"
+#~ msgctxt "board15_3|"
+#~ msgid "Southern Scotland"
+#~ msgstr "दक्षिणी स्कॉटलैण्ड"
 
-#, fuzzy
-#~| msgctxt "board2_0|"
-#~| msgid "North America"
-#~ msgctxt "board10_1|"
-#~ msgid "North Carolina"
-#~ msgstr "अमेरिका, उत्तरी"
+#~ msgctxt "board5_0|"
+#~ msgid "Districts of Turkey"
+#~ msgstr "तुर्की के जिले"
 
-#, fuzzy
-#~| msgctxt "board8_0|"
-#~| msgid "South Africa"
-#~ msgctxt "board10_1|"
-#~ msgid "South Carolina"
-#~ msgstr "दक्षिणी अफ्रीका"
+#~ msgctxt "board5_2|"
+#~ msgid "Districts of Turkey"
+#~ msgstr "तुर्की के जिले"
 
-#, fuzzy
-#~| msgctxt "board9_0|"
-#~| msgid "Asia|Georgia"
-#~ msgctxt "board10_1|"
-#~ msgid "Georgia"
-#~ msgstr "एशिया | जॉर्जिया"
-
-#, fuzzy
-#~| msgctxt "Calendar|"
-#~| msgid "Friday"
-#~ msgctxt "board10_1|"
-#~ msgid "Florida"
-#~ msgstr "शुक्रवार"
-
-#, fuzzy
-#~| msgctxt "board5_0|"
-#~| msgid "Ireland"
-#~ msgctxt "board10_1|"
-#~ msgid "Maryland"
-#~ msgstr "आयरलैंड"
-
-#, fuzzy
-#~| msgctxt "board6_0|"
-#~| msgid "Ukraine"
-#~ msgctxt "board10_1|"
-#~ msgid "Maine"
-#~ msgstr "उक्रेन"
-
-#, fuzzy
-#~| msgctxt "board10_0|"
-#~| msgid "Cook Islands"
-#~ msgctxt "board10_1|"
-#~ msgid "Rhode Island"
-#~ msgstr "कूक द्वीप"
-
-#, fuzzy
-#~| msgctxt "board10_0|"
-#~| msgid "Indonesia"
-#~ msgctxt "board14_0|"
-#~ msgid "Indonesia"
-#~ msgstr "इंडोनेशिया"
-
-#, fuzzy
-#~| msgctxt "board10_0|"
-#~| msgid "Northern Mariana Islands"
-#~ msgctxt "board14_0|"
+#~ msgctxt "board10_0|"
 #~ msgid "Northern Mariana Islands"
 #~ msgstr "उत्तरी मरीआना आइलैंड"
 
-#, fuzzy
-#~| msgctxt "board10_0|"
-#~| msgid "American Samoa"
-#~ msgctxt "board14_0|"
+#~ msgctxt "board10_0|"
 #~ msgid "American Samoa"
 #~ msgstr "अमेरिकी सामोआ"
 
 #~ msgctxt "board10_0|"
 #~ msgid "Australia"
 #~ msgstr "आस्ट्रेलिया"
-
-#~ msgctxt "board9_0|"
-#~ msgid "Asia"
-#~ msgstr "एशिया"
-
-#~ msgctxt "board9_0|"
-#~ msgid "Russia"
-#~ msgstr "रुस"
-
-#~ msgctxt "board9_0|"
-#~ msgid "Japan"
-#~ msgstr "जापान"
-
-#~ msgctxt "board9_0|"
-#~ msgid "Indonesia"
-#~ msgstr "इंडोनेशिया"
-
-#~ msgctxt "board8_0|"
-#~ msgid "Swaziland"
-#~ msgstr "स्वाजीलैंड"
-
-#~ msgctxt "board2_0|"
-#~ msgid "Alaska"
-#~ msgstr "अलास्का"
-
-#~ msgctxt "board2_0|"
-#~ msgid "Iceland"
-#~ msgstr "आइसलैंड"
 
 #~ msgctxt "board3_1|"
 #~ msgid "Central America"
@@ -29653,6 +29337,22 @@ msgstr ""
 #~ msgid "Bahamas"
 #~ msgstr "बहामा"
 
+#~ msgctxt "board9_0|"
+#~ msgid "Asia"
+#~ msgstr "एशिया"
+
+#~ msgctxt "board9_0|"
+#~ msgid "Russia"
+#~ msgstr "रुस"
+
+#~ msgctxt "board9_0|"
+#~ msgid "Japan"
+#~ msgstr "जापान"
+
+#~ msgctxt "board9_0|"
+#~ msgid "Indonesia"
+#~ msgstr "इंडोनेशिया"
+
 #~ msgctxt "ActivityInfo|"
 #~ msgid "Gnumch Equality"
 #~ msgstr "ग्नूम समानता"
@@ -29662,185 +29362,18 @@ msgstr ""
 #~ msgstr "छवि नाम"
 
 #, fuzzy
-#~| msgctxt "board5_0|"
-#~| msgid "Denmark"
-#~ msgctxt "board6_0|"
-#~ msgid "Telemark"
-#~ msgstr "डेनमार्क"
+#~| msgctxt "category_alphabets|"
+#~| msgid "Alphabets"
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Knowing alphabets"
+#~ msgstr "अक्षर"
 
 #, fuzzy
-#~| msgctxt "Lang|"
-#~| msgid "plant"
-#~ msgctxt "board6_0|"
-#~ msgid "Oppland"
-#~ msgstr "पौधा"
-
-#, fuzzy
-#~| msgctxt "board6_0|"
-#~| msgid "Poland"
-#~ msgctxt "board6_0|"
-#~ msgid "Hordaland"
-#~ msgstr "पोलैंड"
-
-#, fuzzy
-#~| msgctxt "board5_0|"
-#~| msgid "Denmark"
-#~ msgctxt "board6_0|"
-#~ msgid "Hedmark"
-#~ msgstr "डेनमार्क"
-
-#, fuzzy
-#~| msgctxt "board0|"
-#~| msgid ""
-#~| "Paul wants to equally share 2 candies between 2 of his friends: one girl "
-#~| "and one boy. Can you help him? First, place the children in center, then "
-#~| "drag the candies to each of them."
+#~| msgctxt "ActivityInfo|"
+#~| msgid "Balance Box"
 #~ msgctxt "Data|"
-#~ msgid ""
-#~ "Paul wants to equally share 2 pieces of candy between 2 of his girl "
-#~ "friends. Can you help him? First, place the children in the center, then "
-#~ "drag the pieces of candy to each of them."
-#~ msgstr ""
-#~ "पॉल दो दोस्तों के बीच 2 कैंडीज साझा करना चाहता है: एक लड़की और एक लड़का क्या आप "
-#~ "उसकी मदद कर सकते हैं? सबसे पहले, बच्चों को बीच में रखें, फिर उनमें से प्रत्येक को कैंडीज खींचें।"
-
-#, fuzzy
-#~| msgctxt "board0|"
-#~| msgid "Now he wants to give 4 candies to his friends."
-#~ msgctxt "Data|"
-#~ msgid "Now he wants to give 5 pieces of candy to his friends."
-#~ msgstr "अब वह अपने दोस्तों को 4 कैंडीज देना चाहता है।"
-
-#, fuzzy
-#~| msgctxt "board0|"
-#~| msgid "Can you now give 6 of Paul's candies to his friends?"
-#~ msgctxt "Data|"
-#~ msgid "Can you now give 7 of Paul's pieces of candy to his friends?"
-#~ msgstr "क्या अब आप पॉल के 6 कैंडी उसके दोस्तों को दे सकते हैं?"
-
-#, fuzzy
-#~| msgctxt "board0|"
-#~| msgid "Now he wants to give 4 candies to his friends."
-#~ msgctxt "Data|"
-#~ msgid "He wants to give 8 more pieces of candy to his friends."
-#~ msgstr "अब वह अपने दोस्तों को 4 कैंडीज देना चाहता है।"
-
-#, fuzzy
-#~| msgctxt "board5|"
-#~| msgid ""
-#~| "Bob wants to give 5 candies to his friends: two boys and one girl, his "
-#~| "girlfriend already has one candy. Can you help him equally split the "
-#~| "candies so that each friend will have the same amount of candies?"
-#~ msgctxt "Data|"
-#~ msgid ""
-#~ "Bob wants to give 3 pieces of candy to his girl friends. Can you help him "
-#~ "equally split the pieces of candy so that each friend will have the same "
-#~ "amount?"
-#~ msgstr ""
-#~ "बॉब अपने दोस्तों को 5 कैंडीज देना चाहता है: दो लड़के और एक लड़की, उसकी प्रेमिका में पहले "
-#~ "से ही एक कैंडी है। क्या आप उसे कैंडियों को समान रूप से विभाजित करने में मदद कर सकते हैं "
-#~ "ताकि प्रत्येक दोस्त को कैंडी के समान मात्रा मिल सके?"
-
-#, fuzzy
-#~| msgctxt "board5|"
-#~| msgid ""
-#~| "Harry wants to equally share 8 candies between his friends: one boy and "
-#~| "two girls. Place the children in center, then drag the candies to each "
-#~| "of them so that each of them has an equal number of candies."
-#~ msgctxt "Data|"
-#~ msgid ""
-#~ "Harry wants to equally share 8 pieces of candy between his friends: 1 boy "
-#~ "and 2 girls. Place the children in the center, then drag the pieces of "
-#~ "candy so that each of them has an equal number of it."
-#~ msgstr ""
-#~ "हैरी अपने मित्रों के बीच 8 कैंडीज साझा करना चाहता है: एक लड़का और दो लड़कियां। बच्चों "
-#~ "को केंद्र में रखें, फिर उनमें से प्रत्येक को कैंडीज खींचें जिससे कि उनमें से प्रत्येक के बराबर कैंडीज "
-#~ "हों।"
-
-#, fuzzy
-#~| msgctxt "board5|"
-#~| msgid "Can you now give 6 of Harry's candies to his friends?"
-#~ msgctxt "Data|"
-#~ msgid "Can you now give 8 of Harry's pieces of candy to his friends?"
-#~ msgstr "क्या अब आप हैरी के 6 कैंडी उसके दोस्तों को दे सकते हैं?"
-
-#, fuzzy
-#~| msgctxt "board2|"
-#~| msgid ""
-#~| "Alice wants to equally share 3 candies between 3 of her friends: one "
-#~| "girl and two boys. Can you help her? First, place the children in the "
-#~| "center, then drag the candies to each of them."
-#~ msgctxt "Data|"
-#~ msgid ""
-#~ "Alice wants to equally share 4 pieces of candy between 4 of her girl "
-#~ "friends. Can you help her? First, place the children in the center, then "
-#~ "drag the pieces of candy to each of them."
-#~ msgstr ""
-#~ "ऐलिस 3 कैंडीज अपने दोस्तों के बीच समान रूप से साझा करना चाहता है: एक लड़की और दो "
-#~ "लड़कों। क्या आप उसकी मदद कर सकते हैं? सबसे पहले, बच्चों को केंद्र में रखें, फिर उनमें से "
-#~ "प्रत्येक को कैंडीज खींचें।"
-
-#, fuzzy
-#~| msgctxt "board4|"
-#~| msgid ""
-#~| "Charles wants to share his 8 candies with 3 of his friends: one boy and "
-#~| "two girls. Can he split the candies equally?"
-#~ msgctxt "Data|"
-#~ msgid ""
-#~ "Charles wants to share his 6 pieces of candy with 2 of his girl friends. "
-#~ "Can he split the pieces of candy equally?"
-#~ msgstr ""
-#~ "चार्ल्स अपने 8 दोस्तों को अपने दोस्तों के साथ साझा करना चाहते हैं: एक लड़का और दो "
-#~ "लड़कियां। क्या वह कैंडियों को समान रूप से विभाजित कर सकता है?"
-
-#, fuzzy
-#~| msgctxt "board4|"
-#~| msgid ""
-#~| "Jason's father gave him 14 candies to share with his friends: two boys "
-#~| "and three girls. Help him give the candies to his friends!"
-#~ msgctxt "Data|"
-#~ msgid ""
-#~ "Jason's father gave him 17 pieces of candy to share with his friends: 2 "
-#~ "boys and 2 girls. Help him give the pieces of candy to his friends."
-#~ msgstr ""
-#~ "जेसन के पिता ने उन्हें अपने दोस्तों के साथ साझा करने के लिए 14 कैंडीज दिए: दो लड़के और "
-#~ "तीन लड़कियां। उसे अपने मित्रों को कैंडीज़ दें!"
-
-#, fuzzy
-#~| msgctxt "board1|"
-#~| msgid ""
-#~| "George wants to equally share 3 candies between 2 of his friends: one "
-#~| "girl and one boy. Can he equally split the candies between his friends? "
-#~| "First, place the children in center, then drag the candies to each of "
-#~| "them. Be careful, a rest will remain!"
-#~ msgctxt "Data|"
-#~ msgid ""
-#~ "George wants to equally share 14 pieces of candy between 4 of his "
-#~ "friends: 2 girls and 2 boys. Can he equally split the pieces of candy "
-#~ "between his friends? First, place the children in center, then drag the "
-#~ "pieces of candy to each of them. Be careful."
-#~ msgstr ""
-#~ "जॉर्ज अपने दो दोस्तों के बीच 3 कैंडीज साझा करना चाहता है: एक लड़की और एक लड़का क्या "
-#~ "वह समान रूप से अपने दोस्तों के बीच कैंडीज को विभाजित कर सकता है? सबसे पहले, बच्चों को "
-#~ "बीच में रखें, फिर उनमें से प्रत्येक को कैंडीज खींचें। सावधान रहो, बाकी रह जाएगी!"
-
-#, fuzzy
-#~| msgctxt "board1|"
-#~| msgid ""
-#~| "Maria wants to equally share 5 candies between 3 of her friends: one "
-#~| "girl and two boys. Can she equally split the candies between her "
-#~| "friends? First, place the children in center, then drag the candies to "
-#~| "each of them. Be careful, a rest will remain!"
-#~ msgctxt "Data|"
-#~ msgid ""
-#~ "Maria wants to equally share 23 pieces of candy between 5 of her friends: "
-#~ "3 girls and 2 boys. Can she equally split the pieces of candy between her "
-#~ "friends? First, place the children in center, then drag the pieces of "
-#~ "candy to each of them. Be careful, a rest will remain."
-#~ msgstr ""
-#~ "मारिया अपने दोस्तों के 3 में से 5 कैंडीज साझा करना चाहती है: एक लड़की और दो लड़कों क्या "
-#~ "वह समान रूप से अपने दोस्तों के बीच कैंडीज़ को विभाजित कर सकती है? सबसे पहले, बच्चों को "
-#~ "बीच में रखें, फिर उनमें से प्रत्येक को कैंडीज खींचें। सावधान रहो, बाकी रह जाएगी!"
+#~ msgid "Balance up to 5."
+#~ msgstr "संतुलन डब्बा"
 
 #, fuzzy
 #~| msgctxt "board0|"
@@ -29900,6 +29433,22 @@ msgstr ""
 #~ "जॉन अपने तीन दोस्तों के बीच समान रूप से 10 कैंडीज साझा करना चाहता है: एक लड़का और "
 #~ "दो लड़कियां। क्या वह समान रूप से अपने दोस्तों के बीच कैंडीज को विभाजित कर सकता है? "
 #~ "सबसे पहले, बच्चों को बीच में रखें, फिर उनमें से प्रत्येक को कैंडीज खींचें।"
+
+#, fuzzy
+#~| msgctxt "board2|"
+#~| msgid ""
+#~| "Alice wants to equally share 3 candies between 3 of her friends: one "
+#~| "girl and two boys. Can you help her? First, place the children in the "
+#~| "center, then drag the candies to each of them."
+#~ msgctxt "Data|"
+#~ msgid ""
+#~ "Alice wants to equally share 4 pieces of candy between 4 of her girl "
+#~ "friends. Can you help her? First, place the children in the center, then "
+#~ "drag the pieces of candy to each of them."
+#~ msgstr ""
+#~ "ऐलिस 3 कैंडीज अपने दोस्तों के बीच समान रूप से साझा करना चाहता है: एक लड़की और दो "
+#~ "लड़कों। क्या आप उसकी मदद कर सकते हैं? सबसे पहले, बच्चों को केंद्र में रखें, फिर उनमें से "
+#~ "प्रत्येक को कैंडीज खींचें।"
 
 #, fuzzy
 #~| msgctxt "board2|"
@@ -29975,11 +29524,58 @@ msgstr ""
 #~ "बीच में रखें, फिर उनमें से प्रत्येक को कैंडीज खींचें। सावधान रहो, बाकी रह जाएगी!"
 
 #, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Balance Box"
+#~| msgctxt "board0|"
+#~| msgid "Now he wants to give 4 candies to his friends."
 #~ msgctxt "Data|"
-#~ msgid "Balance up to 5."
-#~ msgstr "संतुलन डब्बा"
+#~ msgid "He wants to give 8 more pieces of candy to his friends."
+#~ msgstr "अब वह अपने दोस्तों को 4 कैंडीज देना चाहता है।"
+
+#, fuzzy
+#~| msgctxt "board5|"
+#~| msgid "Can you now give 6 of Harry's candies to his friends?"
+#~ msgctxt "Data|"
+#~ msgid "Can you now give 8 of Harry's pieces of candy to his friends?"
+#~ msgstr "क्या अब आप हैरी के 6 कैंडी उसके दोस्तों को दे सकते हैं?"
+
+#, fuzzy
+#~| msgctxt "board1|"
+#~| msgid ""
+#~| "George wants to equally share 3 candies between 2 of his friends: one "
+#~| "girl and one boy. Can he equally split the candies between his friends? "
+#~| "First, place the children in center, then drag the candies to each of "
+#~| "them. Be careful, a rest will remain!"
+#~ msgctxt "Data|"
+#~ msgid ""
+#~ "George wants to equally share 14 pieces of candy between 4 of his "
+#~ "friends: 2 girls and 2 boys. Can he equally split the pieces of candy "
+#~ "between his friends? First, place the children in center, then drag the "
+#~ "pieces of candy to each of them. Be careful."
+#~ msgstr ""
+#~ "जॉर्ज अपने दो दोस्तों के बीच 3 कैंडीज साझा करना चाहता है: एक लड़की और एक लड़का क्या "
+#~ "वह समान रूप से अपने दोस्तों के बीच कैंडीज को विभाजित कर सकता है? सबसे पहले, बच्चों को "
+#~ "बीच में रखें, फिर उनमें से प्रत्येक को कैंडीज खींचें। सावधान रहो, बाकी रह जाएगी!"
+
+#, fuzzy
+#~| msgctxt "board1|"
+#~| msgid ""
+#~| "Maria wants to equally share 5 candies between 3 of her friends: one "
+#~| "girl and two boys. Can she equally split the candies between her "
+#~| "friends? First, place the children in center, then drag the candies to "
+#~| "each of them. Be careful, a rest will remain!"
+#~ msgctxt "Data|"
+#~ msgid ""
+#~ "Maria wants to equally share 23 pieces of candy between 5 of her friends: "
+#~ "3 girls and 2 boys. Can she equally split the pieces of candy between her "
+#~ "friends? First, place the children in center, then drag the pieces of "
+#~ "candy to each of them. Be careful, a rest will remain."
+#~ msgstr ""
+#~ "मारिया अपने दोस्तों के 3 में से 5 कैंडीज साझा करना चाहती है: एक लड़की और दो लड़कों क्या "
+#~ "वह समान रूप से अपने दोस्तों के बीच कैंडीज़ को विभाजित कर सकती है? सबसे पहले, बच्चों को "
+#~ "बीच में रखें, फिर उनमें से प्रत्येक को कैंडीज खींचें। सावधान रहो, बाकी रह जाएगी!"
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Counting skills"
+#~ msgstr "गिनने की दक्षता"
 
 #~ msgctxt "MagicHat|"
 #~ msgid "+"
@@ -31139,13 +30735,6 @@ msgstr ""
 #~ msgid "Do you want to download the corresponding sound files now?"
 #~ msgstr "क्या आप अभी संबंधित ध्वनि फ़ाइलों को डाउनलोड करना चाहते हैं?"
 
-#, fuzzy
-#~| msgctxt "board13_0|"
-#~| msgid "Districts of Australia"
-#~ msgctxt "Data|"
-#~ msgid "Countries of Australia."
-#~ msgstr "ऑस्ट्रेलिया के जिले"
-
 #~ msgctxt "ActivityInfo|"
 #~ msgid ""
 #~ "A letter is spoken. Click on the matching letter in the main area. You "
@@ -31379,6 +30968,13 @@ msgstr ""
 #~ msgctxt "Reversecount|"
 #~ msgid "Numbers"
 #~ msgstr "संख्याएँ"
+
+#, fuzzy
+#~| msgctxt "board6_0|"
+#~| msgid "Romania"
+#~ msgctxt "Reversecount|"
+#~ msgid "Romans"
+#~ msgstr "रोमानिया"
 
 #~ msgctxt "balanceboxeditor|"
 #~ msgid "Error saving %n level(s) to your levels file (%1)"

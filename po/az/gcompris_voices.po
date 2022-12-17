@@ -1,21 +1,21 @@
 # Copyright (C) YEAR This file is copyright:
 # This file is distributed under the same license as the gcompris package.
 #
-# Kheyyam <xxmn77@gmail.com>, 2021, 2022.
+# Kheyyam <xxmn77@gmail.com>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-12-13 00:48+0000\n"
-"PO-Revision-Date: 2022-11-11 15:02+0400\n"
-"Last-Translator: Kheyyam <xxmn77@gmail.com>\n"
+"POT-Creation-Date: 2022-12-17 02:40+0000\n"
+"PO-Revision-Date: 2021-11-07 11:52+0400\n"
+"Last-Translator: Kheyyam Gojayev <xxmn77@gmail.com>\n"
 "Language-Team: Azerbaijani <kde-i18n-doc@kde.org>\n"
 "Language: az\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 22.08.3\n"
+"X-Generator: Lokalize 21.08.2\n"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "advanced_colors"
 #: activities/advanced_colors/ActivityInfo.qml:18
@@ -215,7 +215,8 @@ msgstr "Elementləri düzgün qrup daxilində paylaşdırın"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "checkers"
 #: activities/checkers/ActivityInfo.qml:18
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "play chess against Tux"
 msgid "play checkers against Tux"
 msgstr "Tuks ilə şahmat oynayın"
 
@@ -447,13 +448,13 @@ msgstr ""
 #, kde-format
 msgid ""
 "Select the appropriate number of parts as described in the instructions."
-msgstr "Təlimatda göstərildiyi kimi müvafiq sayda hissələri seçin."
+msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "fractions_find"
 #: activities/fractions_find/ActivityInfo.qml:17
 #, kde-format
 msgid "Find the correct numerator and denominator of the represented fraction"
-msgstr "Təqdim olunan kəsrin düzgün payını və məxrəcini tapın"
+msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "geo-country"
 #: activities/geo-country/ActivityInfo.qml:22
@@ -675,8 +676,6 @@ msgstr ""
 msgid ""
 "Move animals to their homes using a left click or right click on your mouse."
 msgstr ""
-"Siçanın sağ və ya sol düyməsindən istifadə edərək heyvanları evlərində "
-"yerləşdirin."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "leftright"
 #: activities/leftright/ActivityInfo.qml:18
@@ -875,9 +874,10 @@ msgstr "Ödəniş etmək üçün pul işarəsinə vurun."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "morse_code"
 #: activities/morse_code/ActivityInfo.qml:21
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Learn and practice roman to arabic numerals conversion"
 msgid "Learn and practice the International Morse code"
-msgstr "Beynəlxalq Morze kodunu öyrənin"
+msgstr "Rum rəqəmlərindən ərəb rəqəmlərinə çevirməni öyrənin və məşq edin"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "mosaic"
 #: activities/mosaic/ActivityInfo.qml:18

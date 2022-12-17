@@ -1,17 +1,17 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: gcompris_qt\n"
+"Project-Id-Version: \n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
-"Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
+"Language-Team: \n"
 "Language: ka\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Qt-Contexts: true\n"
-"X-Generator: Poedit 3.2\n"
+"X-Generator: Poedit 3.1.1\n"
 
 #. Activity title
 #: activities/advanced_colors/ActivityInfo.qml:15
@@ -23,20 +23,20 @@ msgstr "დამატებითი ფერები"
 #: activities/advanced_colors/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Select the butterfly of the correct color."
-msgstr "აირჩიეთ სწორი ფერის პეპელა."
+msgstr ""
 
 #. Help goal
 #: activities/advanced_colors/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Learn to recognize unusual colors."
-msgstr "ისწავლეთ, როგორ გამოიცნოთ უცნაური ფერები."
+msgstr ""
 
 #. Help prerequisite
 #: activities/advanced_colors/ActivityInfo.qml:22
 #: activities/positions/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid "Can read."
-msgstr "შეუძლია წაკითხვა."
+msgstr ""
 
 #. Help manual
 #: activities/advanced_colors/ActivityInfo.qml:24
@@ -45,8 +45,6 @@ msgid ""
 "You will see dancing butterflies of different colors and a question. You "
 "have to find the correct butterfly and touch it."
 msgstr ""
-"დანახავთ სხვადასხვა ფერის მქონე მოცეკვავე პეპლებს და კითხვას. იპოვეთ სწორი "
-"პეპელა და შეეხეთ მას."
 
 #: activities/advanced_colors/ActivityInfo.qml:25
 #: activities/algebra_by/ActivityInfo.qml:25
@@ -137,7 +135,7 @@ msgstr ""
 #: activities/submarine/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "<b>Keyboard controls:</b>"
-msgstr "<b>კლავიატურით კონტროლი:</b>"
+msgstr ""
 
 #: activities/advanced_colors/ActivityInfo.qml:26
 #: activities/algorithm/ActivityInfo.qml:24
@@ -185,7 +183,7 @@ msgstr "<b>კლავიატურით კონტროლი:</b>"
 #: activities/solar_system/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid "Arrows: navigate"
-msgstr "ისრები: ნავიგაცია"
+msgstr ""
 
 #: activities/advanced_colors/ActivityInfo.qml:27
 #: activities/algorithm/ActivityInfo.qml:25
@@ -196,7 +194,7 @@ msgstr "ისრები: ნავიგაცია"
 #: activities/money_cents/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Space or Enter: select an item"
-msgstr "გამოტოვება ან Enter: ელემენტის არჩევა"
+msgstr ""
 
 #. Look at https://gcompris.net/wiki/Advanced_color_translation to see all the advanced colors Color #FF7F50
 #. ----------
@@ -205,7 +203,7 @@ msgstr "გამოტოვება ან Enter: ელემენტის
 #: activities/advanced_colors/advanced_colors.js:530
 msgctxt "advanced_colors|"
 msgid "Find the coral butterfly"
-msgstr "იპოვეთ მარჯნისფერი პეპელა"
+msgstr ""
 
 #. Color #7F1734
 #: activities/advanced_colors/advanced_colors.js:20
@@ -217,7 +215,7 @@ msgstr "იპოვეთ მარჯნისფერი პეპელა"
 #: activities/advanced_colors/advanced_colors.js:849
 msgctxt "advanced_colors|"
 msgid "Find the claret butterfly"
-msgstr "იპოვეთ ბორდოსფერი პეპელა"
+msgstr ""
 
 #. Color #000080
 #: activities/advanced_colors/advanced_colors.js:25
@@ -225,21 +223,21 @@ msgstr "იპოვეთ ბორდოსფერი პეპელა"
 #: activities/advanced_colors/advanced_colors.js:562
 msgctxt "advanced_colors|"
 msgid "Find the navy butterfly"
-msgstr "იპოვეთ მუქი ლურჯი პეპელა"
+msgstr ""
 
 #. Color #FBEC5D
 #: activities/advanced_colors/advanced_colors.js:30
 #: activities/advanced_colors/advanced_colors.js:67
 msgctxt "advanced_colors|"
 msgid "Find the corn butterfly"
-msgstr "იპოვეთ ოქროსფერი პეპელა"
+msgstr ""
 
 #. Color #0047AB
 #: activities/advanced_colors/advanced_colors.js:35
 #: activities/advanced_colors/advanced_colors.js:72
 msgctxt "advanced_colors|"
 msgid "Find the cobalt butterfly"
-msgstr "იპოვეთ კობალტისფერი პეპელა"
+msgstr ""
 
 #. Color #00FFFF
 #: activities/advanced_colors/advanced_colors.js:40
@@ -247,7 +245,7 @@ msgstr "იპოვეთ კობალტისფერი პეპელ�
 #: activities/advanced_colors/advanced_colors.js:483
 msgctxt "advanced_colors|"
 msgid "Find the cyan butterfly"
-msgstr "იპოვეთ ცისფერი პეპელა"
+msgstr ""
 
 #. Color #954535
 #: activities/advanced_colors/advanced_colors.js:45
@@ -258,41 +256,41 @@ msgstr "იპოვეთ ცისფერი პეპელა"
 #: activities/advanced_colors/advanced_colors.js:688
 msgctxt "advanced_colors|"
 msgid "Find the chestnut butterfly"
-msgstr "იპოვეთ წაბლისფერი პეპელა"
+msgstr ""
 
 #. Color #AB784E
 #: activities/advanced_colors/advanced_colors.js:50
 #: activities/advanced_colors/advanced_colors.js:87
 msgctxt "advanced_colors|"
 msgid "Find the almond butterfly"
-msgstr "იპოვეთ ნუშისფერი პეპელა"
+msgstr ""
 
 #. Color #0F52BA
 #: activities/advanced_colors/advanced_colors.js:62
 #: activities/advanced_colors/advanced_colors.js:844
 msgctxt "advanced_colors|"
 msgid "Find the sapphire butterfly"
-msgstr "იპოვეთ საფირისფერი პეპელა"
+msgstr ""
 
 #. Color #E0115F
 #: activities/advanced_colors/advanced_colors.js:92
 #: activities/advanced_colors/advanced_colors.js:213
 msgctxt "advanced_colors|"
 msgid "Find the ruby butterfly"
-msgstr "იპოვეთ ლალისფერი პეპელა"
+msgstr ""
 
 #. Color #882D17
 #: activities/advanced_colors/advanced_colors.js:99
 #: activities/advanced_colors/advanced_colors.js:824
 msgctxt "advanced_colors|"
 msgid "Find the sienna butterfly"
-msgstr "იპოვეთ სიენისფერი პეპელა"
+msgstr ""
 
 #. Color #BCB88A
 #: activities/advanced_colors/advanced_colors.js:104
 msgctxt "advanced_colors|"
 msgid "Find the sage butterfly"
-msgstr "იპოვეთ სალბისფერი პეპელა"
+msgstr ""
 
 #. Color #FF8C69
 #: activities/advanced_colors/advanced_colors.js:109
@@ -300,7 +298,7 @@ msgstr "იპოვეთ სალბისფერი პეპელა"
 #: activities/advanced_colors/advanced_colors.js:703
 msgctxt "advanced_colors|"
 msgid "Find the salmon butterfly"
-msgstr "იპოვეთ ნარინჯისფერ-ვარდისფერი პეპელა"
+msgstr ""
 
 #. Color #704214
 #: activities/advanced_colors/advanced_colors.js:114
@@ -308,71 +306,71 @@ msgstr "იპოვეთ ნარინჯისფერ-ვარდის�
 #: activities/advanced_colors/advanced_colors.js:787
 msgctxt "advanced_colors|"
 msgid "Find the sepia butterfly"
-msgstr "იპოვეთ სეპიისფერი პეპელა"
+msgstr ""
 
 #. Color #E4BB25
 #: activities/advanced_colors/advanced_colors.js:119
 msgctxt "advanced_colors|"
 msgid "Find the sulfur butterfly"
-msgstr "იპოვეთ გოგირდისფერი პეპელა"
+msgstr ""
 
 #. Color #DB6D7B
 #: activities/advanced_colors/advanced_colors.js:124
 #: activities/advanced_colors/advanced_colors.js:814
 msgctxt "advanced_colors|"
 msgid "Find the tea butterfly"
-msgstr "იპოვეთ ჩაისფერი პეპელა"
+msgstr ""
 
 #. Color #BFFF00
 #: activities/advanced_colors/advanced_colors.js:129
 msgctxt "advanced_colors|"
 msgid "Find the lime butterfly"
-msgstr "იპოვეთ კირისფერი პეპელა"
+msgstr ""
 
 #. Color #40E0D0
 #: activities/advanced_colors/advanced_colors.js:134
 msgctxt "advanced_colors|"
 msgid "Find the turquoise butterfly"
-msgstr "იპოვეთ ფირუზისფერი პეპელა"
+msgstr ""
 
 #. Color #73B881
 #: activities/advanced_colors/advanced_colors.js:141
 msgctxt "advanced_colors|"
 msgid "Find the absinthe butterfly"
-msgstr "იპოვეთ მოყვითალო მწვანე პეპელა"
+msgstr ""
 
 #. Color #C04000
 #: activities/advanced_colors/advanced_colors.js:146
 msgctxt "advanced_colors|"
 msgid "Find the mahogany butterfly"
-msgstr "იპოვეთ მოწითალო-მოყავისფრო პეპელა"
+msgstr ""
 
 #. Color #7FFFD4
 #: activities/advanced_colors/advanced_colors.js:151
 #: activities/advanced_colors/advanced_colors.js:760
 msgctxt "advanced_colors|"
 msgid "Find the aquamarine butterfly"
-msgstr "იპოვეთ ზღვის ფერი პეპელა"
+msgstr ""
 
 #. Color #F2F0E6
 #: activities/advanced_colors/advanced_colors.js:156
 #: activities/advanced_colors/advanced_colors.js:520
 msgctxt "advanced_colors|"
 msgid "Find the alabaster butterfly"
-msgstr "იპოვეთ რძისფერი პეპელა"
+msgstr ""
 
 #. Color #FFBF00
 #: activities/advanced_colors/advanced_colors.js:161
 #: activities/advanced_colors/advanced_colors.js:708
 msgctxt "advanced_colors|"
 msgid "Find the amber butterfly"
-msgstr "იპოვეტ ქარვისფერი პეპელა"
+msgstr ""
 
 #. Color #9966CC
 #: activities/advanced_colors/advanced_colors.js:166
 msgctxt "advanced_colors|"
 msgid "Find the amethyst butterfly"
-msgstr "იპოვეთ იისფერი პეპელა"
+msgstr ""
 
 #. Color #F5EACC
 #: activities/advanced_colors/advanced_colors.js:171
@@ -380,7 +378,7 @@ msgstr "იპოვეთ იისფერი პეპელა"
 #: activities/advanced_colors/advanced_colors.js:772
 msgctxt "advanced_colors|"
 msgid "Find the anise butterfly"
-msgstr "იპოვეთ ანისულისფერი პეპელა"
+msgstr ""
 
 #. Color #E34234
 #: activities/advanced_colors/advanced_colors.js:176
@@ -388,13 +386,13 @@ msgstr "იპოვეთ ანისულისფერი პეპელ�
 #: activities/advanced_colors/advanced_colors.js:555
 msgctxt "advanced_colors|"
 msgid "Find the vermilion butterfly"
-msgstr "იპოვეთ მეწამული პეპელა"
+msgstr ""
 
 #. Color #EEEBEB
 #: activities/advanced_colors/advanced_colors.js:183
 msgctxt "advanced_colors|"
 msgid "Find the ceruse butterfly"
-msgstr "იპოვეთ ტყვიის თეთრის ფერის პეპელა"
+msgstr ""
 
 #. Color #E5AA70
 #: activities/advanced_colors/advanced_colors.js:188
@@ -403,20 +401,20 @@ msgstr "იპოვეთ ტყვიის თეთრის ფერის
 #: activities/advanced_colors/advanced_colors.js:651
 msgctxt "advanced_colors|"
 msgid "Find the fawn butterfly"
-msgstr "იპოვეთ მოყვითალო-მოყავისფრო ფერის პეპელა"
+msgstr ""
 
 #. Color #7FFF00
 #: activities/advanced_colors/advanced_colors.js:193
 #: activities/advanced_colors/advanced_colors.js:713
 msgctxt "advanced_colors|"
 msgid "Find the chartreuse butterfly"
-msgstr "იპოვეთ ბაცი მწვანე პეპელა"
+msgstr ""
 
 #. Color #50C878
 #: activities/advanced_colors/advanced_colors.js:198
 msgctxt "advanced_colors|"
 msgid "Find the emerald butterfly"
-msgstr "იპოვეთ ზურმუხტისფერი პეპელა"
+msgstr ""
 
 #. Color #614051
 #: activities/advanced_colors/advanced_colors.js:203
@@ -1048,52 +1046,52 @@ msgstr ""
 #: activities/algebra_plus/resource/1/Data.qml:13
 msgctxt "Data|"
 msgid "Learn addition table of 1."
-msgstr "ისწავლეთ 1-ის დამატების ცხრილი."
+msgstr ""
 
 #: activities/algebra_plus/resource/10/Data.qml:13
 msgctxt "Data|"
 msgid "Learn addition table of 10."
-msgstr "ისწავლეთ 10-ის დამატების ცხრილი."
+msgstr ""
 
 #: activities/algebra_plus/resource/2/Data.qml:13
 msgctxt "Data|"
 msgid "Learn addition table of 2."
-msgstr "ისწავლეთ 2-ის დამატების ცხრილი."
+msgstr ""
 
 #: activities/algebra_plus/resource/3/Data.qml:13
 msgctxt "Data|"
 msgid "Learn addition table of 3."
-msgstr "ისწავლეთ 3-ის დამატების ცხრილი."
+msgstr ""
 
 #: activities/algebra_plus/resource/4/Data.qml:13
 msgctxt "Data|"
 msgid "Learn addition table of 4."
-msgstr "ისწავლეთ 4-ის დამატების ცხრილი."
+msgstr ""
 
 #: activities/algebra_plus/resource/5/Data.qml:13
 msgctxt "Data|"
 msgid "Learn addition table of 5."
-msgstr "ისწავლეთ 5-ის დამატების ცხრილი."
+msgstr ""
 
 #: activities/algebra_plus/resource/6/Data.qml:13
 msgctxt "Data|"
 msgid "Learn addition table of 6."
-msgstr "ისწავლეთ 6-ის დამატების ცხრილი."
+msgstr ""
 
 #: activities/algebra_plus/resource/7/Data.qml:13
 msgctxt "Data|"
 msgid "Learn addition table of 7."
-msgstr "ისწავლეთ 7-ის დამატების ცხრილი."
+msgstr ""
 
 #: activities/algebra_plus/resource/8/Data.qml:13
 msgctxt "Data|"
 msgid "Learn addition table of 8."
-msgstr "ისწავლეთ 8-ის დამატების ცხრილი."
+msgstr ""
 
 #: activities/algebra_plus/resource/9/Data.qml:13
 msgctxt "Data|"
 msgid "Learn addition table of 9."
-msgstr "ისწავლეთ 9-ის დამატების ცხრილი."
+msgstr ""
 
 #. Activity title
 #: activities/algorithm/ActivityInfo.qml:15
@@ -2284,7 +2282,7 @@ msgstr ""
 #: activities/balancebox/Balancebox.qml:74
 msgctxt "Balancebox|"
 msgid "Ok"
-msgstr "დიახ"
+msgstr "Ok"
 
 #: activities/balancebox/editor/balanceboxeditor.js:254
 msgctxt "balanceboxeditor|"
@@ -2296,7 +2294,7 @@ msgstr ""
 #: activities/balancebox/editor/balanceboxeditor.js:256
 msgctxt "balanceboxeditor|"
 msgid "Yes"
-msgstr "დიახ"
+msgstr "კი"
 
 #: activities/balancebox/editor/balanceboxeditor.js:261
 msgctxt "balanceboxeditor|"
@@ -3441,7 +3439,7 @@ msgstr ""
 #: activities/categorization/resource/board/category_shapes.qml:21
 msgctxt "category_shapes|"
 msgid "Shapes"
-msgstr "მოყვანილობები"
+msgstr ""
 
 #: activities/categorization/resource/board/category_shapes.qml:25
 msgctxt "category_shapes|"
@@ -3805,11 +3803,17 @@ msgid "Do you really want to undo all the moves?"
 msgstr ""
 
 #: activities/chess/Chess.qml:124
+#, fuzzy
+#| msgctxt "balanceboxeditor|"
+#| msgid "Yes"
 msgctxt "Chess|"
 msgid "Yes"
-msgstr "დიახ"
+msgstr "კი"
 
 #: activities/chess/Chess.qml:125
+#, fuzzy
+#| msgctxt "balanceboxeditor|"
+#| msgid "No"
 msgctxt "Chess|"
 msgid "No"
 msgstr "არა"
@@ -4734,7 +4738,7 @@ msgstr ""
 #: activities/colors/FindIt.qml:236
 msgctxt "FindIt|"
 msgid "Quit"
-msgstr "გასვლა"
+msgstr "დატოვება"
 
 #: activities/colors/FindIt.qml:237
 msgctxt "FindIt|"
@@ -4745,7 +4749,7 @@ msgstr "გაგრძელება"
 #: activities/comparator/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Compare numbers"
-msgstr "რიცხვების შედარება"
+msgstr ""
 
 #. Help title
 #: activities/comparator/ActivityInfo.qml:19
@@ -6010,7 +6014,7 @@ msgstr ""
 #: activities/explore_farm_animals/ExploreLevels.qml:304
 msgctxt "ExploreLevels|"
 msgid "Quit"
-msgstr "გასვლა"
+msgstr "დატოვება"
 
 #: activities/explore_farm_animals/ExploreLevels.qml:305
 msgctxt "ExploreLevels|"
@@ -8232,9 +8236,12 @@ msgid "Decimal numbers with a pie."
 msgstr ""
 
 #: activities/fractions_create/resource/5/Data.qml:18
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 0.5 pie."
-msgstr "აირჩიეთ 0.5 ნამცხვარი."
+msgstr "მონიშნული"
 
 #: activities/fractions_create/resource/5/Data.qml:24
 msgctxt "Data|"
@@ -8242,9 +8249,12 @@ msgid "Select 0.25 pie."
 msgstr ""
 
 #: activities/fractions_create/resource/5/Data.qml:30
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 0.4 pie."
-msgstr "აირჩიეთ 0.4 ნამცხვარი."
+msgstr "მონიშნული"
 
 #: activities/fractions_create/resource/5/Data.qml:36
 msgctxt "Data|"
@@ -8252,9 +8262,12 @@ msgid "Select 0.75 pie."
 msgstr ""
 
 #: activities/fractions_create/resource/5/Data.qml:42
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 0.8 pie."
-msgstr "აირჩიეთ 0.8 ნამცხვარი."
+msgstr "მონიშნული"
 
 #: activities/fractions_create/resource/5/Data.qml:50
 msgctxt "Data|"
@@ -8342,10 +8355,12 @@ msgstr ""
 #: activities/fractions_create/resource/7/Data.qml:56
 #: activities/fractions_create/resource/7/Data.qml:63
 #: activities/fractions_create/resource/7/Data.qml:70
-#, qt-format
+#, fuzzy, qt-format
+#| msgctxt "calendar_dataset|"
+#| msgid "Select the 1st"
 msgctxt "Data|"
 msgid "Select %1% of the pie."
-msgstr "აირჩიეთ ნამცხვრის %1%."
+msgstr "აირჩიეთ 1-ლი"
 
 #: activities/fractions_create/resource/8/Data.qml:9
 msgctxt "Data|"
@@ -9415,7 +9430,7 @@ msgstr "ანგუსი"
 #: activities/geo-country/resource/board/board15_1.qml:31
 msgctxt "board15_1|"
 msgid "Dundee"
-msgstr "დანდი"
+msgstr ""
 
 #. Council area of Scotland: Perth and Kinross
 #: activities/geo-country/resource/board/board15_1.qml:38
@@ -9658,19 +9673,19 @@ msgstr ""
 #: activities/geo-country/resource/board/board18_0.qml:22
 msgctxt "board18_0|"
 msgid "Andalusia"
-msgstr "ანდალუსია"
+msgstr ""
 
 #. Autonomous communities of Spain: Madrid
 #: activities/geo-country/resource/board/board18_0.qml:29
 msgctxt "board18_0|"
 msgid "Madrid"
-msgstr "მადრიდი"
+msgstr ""
 
 #. Autonomous communities of Spain: Galicia
 #: activities/geo-country/resource/board/board18_0.qml:36
 msgctxt "board18_0|"
 msgid "Galicia"
-msgstr "გალისია"
+msgstr ""
 
 #. Autonomous communities of Spain: Castile and León
 #: activities/geo-country/resource/board/board18_0.qml:43
@@ -9686,87 +9701,108 @@ msgstr ""
 
 #. Autonomous communities of Spain: Catalonia
 #: activities/geo-country/resource/board/board18_0.qml:57
+#, fuzzy
+#| msgctxt "board14_0|"
+#| msgid "New Caledonia"
 msgctxt "board18_0|"
 msgid "Catalonia"
-msgstr "კატალონია"
+msgstr "ახალი კალედონია"
 
 #. Autonomous communities of Spain: Aragon
 #: activities/geo-country/resource/board/board18_0.qml:64
 msgctxt "board18_0|"
 msgid "Aragon"
-msgstr "არაგონი"
+msgstr ""
 
 #. Autonomous communities of Spain: Valencia
 #: activities/geo-country/resource/board/board18_0.qml:71
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Calendar"
 msgctxt "board18_0|"
 msgid "Valencia"
-msgstr "ვალენსია"
+msgstr "კალენდარი"
 
 #. Autonomous communities of Spain: Murcia
 #: activities/geo-country/resource/board/board18_0.qml:78
 msgctxt "board18_0|"
 msgid "Murcia"
-msgstr "მურსია"
+msgstr ""
 
 #. Autonomous communities of Spain: Asturias
 #: activities/geo-country/resource/board/board18_0.qml:85
 msgctxt "board18_0|"
 msgid "Asturias"
-msgstr "ასტურია"
+msgstr ""
 
 #. Autonomous communities of Spain: Basque Country
 #: activities/geo-country/resource/board/board18_0.qml:92
 msgctxt "board18_0|"
 msgid "Basque Country"
-msgstr "ბასკეთის ქვეყანა"
+msgstr ""
 
 #. Autonomous communities of Spain: La Rioja
 #: activities/geo-country/resource/board/board18_0.qml:99
+#, fuzzy
+#| msgctxt "board3_0|"
+#| msgid "La Rioja"
 msgctxt "board18_0|"
 msgid "La Rioja"
 msgstr "ლა რიოხა"
 
 #. Autonomous communities of Spain: Cantabria
 #: activities/geo-country/resource/board/board18_0.qml:106
+#, fuzzy
+#| msgctxt "board11_0|"
+#| msgid "Calabria"
 msgctxt "board18_0|"
 msgid "Cantabria"
-msgstr "კანტარბია"
+msgstr "კალაბრია"
 
 #. Autonomous communities of Spain: Navarre
 #: activities/geo-country/resource/board/board18_0.qml:113
+#, fuzzy
+#| msgctxt "board5|"
+#| msgid "Navajo"
 msgctxt "board18_0|"
 msgid "Navarre"
-msgstr "ნავარა"
+msgstr "ნავაიო"
 
 #. Autonomous communities of Spain: Extremadura
 #: activities/geo-country/resource/board/board18_0.qml:120
 msgctxt "board18_0|"
 msgid "Extremadura"
-msgstr "ექსტრემადურა"
+msgstr ""
 
 #. Autonomous communities of Spain: Canary Islands
 #: activities/geo-country/resource/board/board18_0.qml:127
+#, fuzzy
+#| msgctxt "board14_0|"
+#| msgid "Cook Islands"
 msgctxt "board18_0|"
 msgid "Canary Islands"
-msgstr "კანარის კუნძულები"
+msgstr "კუკის კუნძულები (ახალი ზელანდია)"
 
 #. Autonomous communities of Spain: Balearic Islands
 #: activities/geo-country/resource/board/board18_0.qml:134
+#, fuzzy
+#| msgctxt "board14_0|"
+#| msgid "Pitcairn Islands"
 msgctxt "board18_0|"
 msgid "Balearic Islands"
-msgstr "ბალეარიის კუნძულები"
+msgstr "პიტკერნის კუნძულები"
 
 #. Autonomous communities of Spain: Ceuta
 #: activities/geo-country/resource/board/board18_0.qml:141
 msgctxt "board18_0|"
 msgid "Ceuta"
-msgstr "სეუტა"
+msgstr ""
 
 #. Autonomous communities of Spain: Melilla
 #: activities/geo-country/resource/board/board18_0.qml:148
 msgctxt "board18_0|"
 msgid "Melilla"
-msgstr "მელილა"
+msgstr ""
 
 #: activities/geo-country/resource/board/board1_0.qml:15
 msgctxt "board1_0|"
@@ -11767,7 +11803,7 @@ msgstr "ჰოლანდია"
 #: activities/geography/resource/board/board5_0.qml:73
 msgctxt "board5_0|"
 msgid "Luxembourg"
-msgstr "ლუქსემბურგი"
+msgstr ""
 
 #: activities/geography/resource/board/board5_0.qml:81
 msgctxt "board5_0|"
@@ -11820,6 +11856,9 @@ msgid "Eastern Europe"
 msgstr ""
 
 #: activities/geography/resource/board/board6_0.qml:24
+#, fuzzy
+#| msgctxt "board9_0|"
+#| msgid "Cyprus"
 msgctxt "board6_0|"
 msgid "Cyprus"
 msgstr "კვიპროსი"
@@ -12660,7 +12699,7 @@ msgstr "ფერები"
 #: activities/superbrain/ActivityConfig.qml:22
 msgctxt "ActivityConfig|"
 msgid "Shapes"
-msgstr "მოყვანილობები"
+msgstr ""
 
 #. Activity title
 #: activities/graph-coloring/ActivityInfo.qml:15
@@ -12706,7 +12745,7 @@ msgstr ""
 #: activities/gravity/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Gravity"
-msgstr "მიზიდულობა"
+msgstr ""
 
 #. Help title
 #: activities/gravity/ActivityInfo.qml:21
@@ -12794,7 +12833,7 @@ msgstr "მონიშნული"
 #: activities/guesscount/ActivityConfig.qml:70
 msgctxt "ActivityConfig|"
 msgid "Not Selected"
-msgstr "მოუნიშნავი"
+msgstr ""
 
 #. Activity title
 #: activities/guesscount/ActivityInfo.qml:19
@@ -13140,7 +13179,7 @@ msgstr ""
 #: activities/hexagon/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Hexagon"
-msgstr "ექვსკუთხედი"
+msgstr ""
 
 #. Help title
 #: activities/hexagon/ActivityInfo.qml:17
@@ -13257,7 +13296,7 @@ msgstr ""
 #: activities/imagename/resource/board/board2_0.qml:90
 msgctxt "board2_0|"
 msgid "flower"
-msgstr "ყვავილი"
+msgstr "flower"
 
 #: activities/imagename/resource/board/board2_0.qml:98
 msgctxt "board2_0|"
@@ -13412,7 +13451,7 @@ msgstr "ბოთლი"
 #: activities/imagename/resource/board/board7_0.qml:98
 msgctxt "board7_0|"
 msgid "flower"
-msgstr "ყვავილი"
+msgstr "flower"
 
 #. Activity title
 #: activities/instruments/ActivityInfo.qml:15
@@ -13863,7 +13902,7 @@ msgstr "ფერი"
 #: activities/lang/Lang.qml:194
 msgctxt "Lang|"
 msgid "number"
-msgstr "ნომერი"
+msgstr "რიცხვი"
 
 #: activities/lang/Lang.qml:195
 msgctxt "Lang|"
@@ -14279,7 +14318,7 @@ msgstr ""
 #. Activity title
 #: activities/learn_digits/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
-msgid "Learn digits"
+msgid "Count and color the circles"
 msgstr ""
 
 #. Help title
@@ -14561,12 +14600,12 @@ msgstr ""
 #: activities/letter-in-word/ActivityConfig.qml:63
 msgctxt "ActivityConfig|"
 msgid "Upper Case"
-msgstr "მაღალი რეგისტრი"
+msgstr ""
 
 #: activities/letter-in-word/ActivityConfig.qml:64
 msgctxt "ActivityConfig|"
 msgid "Lower Case"
-msgstr "ქვედა რეგისტრი"
+msgstr ""
 
 #. Activity title
 #: activities/letter-in-word/ActivityInfo.qml:15
@@ -15155,7 +15194,7 @@ msgstr ""
 #: activities/melody/Melody.qml:286
 msgctxt "Melody|"
 msgid "Quit"
-msgstr "გასვლა"
+msgstr "დატოვება"
 
 #: activities/melody/Melody.qml:287
 msgctxt "Melody|"
@@ -16240,22 +16279,22 @@ msgstr ""
 #: activities/memory/math_util.js:15 activities/memory/math_util.js:18
 msgctxt "math_util|"
 msgid "+"
-msgstr ""
+msgstr "+"
 
 #: activities/memory/math_util.js:28
 msgctxt "math_util|"
 msgid "−"
-msgstr ""
+msgstr "−"
 
 #: activities/memory/math_util.js:39 activities/memory/math_util.js:42
 msgctxt "math_util|"
 msgid "×"
-msgstr ""
+msgstr "×"
 
 #: activities/memory/math_util.js:52
 msgctxt "math_util|"
 msgid "÷"
-msgstr ""
+msgstr "÷"
 
 #: activities/memory/MemoryCommon.qml:324
 msgctxt "MemoryCommon|"
@@ -16267,7 +16306,7 @@ msgstr ""
 #: activities/memory/MemoryCommon.qml:325
 msgctxt "MemoryCommon|"
 msgid "Quit"
-msgstr "გასვლა"
+msgstr "დატოვება"
 
 #: activities/memory/MemoryCommon.qml:326
 msgctxt "MemoryCommon|"
@@ -16425,7 +16464,7 @@ msgstr ""
 #, qt-format
 msgctxt "BackgroundMusicList|"
 msgid "Title: %1"
-msgstr "სათაური: %1"
+msgstr ""
 
 #. Artist of the current background music playing
 #: activities/menu/BackgroundMusicList.qml:175
@@ -16573,7 +16612,7 @@ msgstr "ფონტის ზომა"
 #: activities/menu/ConfigurationItem.qml:366
 msgctxt "ConfigurationItem|"
 msgid "Default"
-msgstr "ნაგულისხმები"
+msgstr ""
 
 #: activities/menu/ConfigurationItem.qml:341
 msgctxt "ConfigurationItem|"
@@ -16615,7 +16654,7 @@ msgstr ""
 #: activities/menu/Menu.qml:86
 msgctxt "Menu|"
 msgid "Yes"
-msgstr "დიახ"
+msgstr "კი"
 
 #: activities/menu/Menu.qml:92
 msgctxt "Menu|"
@@ -16660,7 +16699,7 @@ msgstr ""
 #: activities/menu/Menu.qml:143
 msgctxt "Menu|"
 msgid "Arithmetic"
-msgstr "არითმეტიკა"
+msgstr ""
 
 #: activities/menu/Menu.qml:144
 msgctxt "Menu|"
@@ -17099,9 +17138,12 @@ msgid "Alphabet/Numeric value: %1"
 msgstr ""
 
 #: activities/morse_code/resource/1/Data.qml:13
+#, fuzzy
+#| msgctxt "Menu|"
+#| msgid "Letters"
 msgctxt "Data|"
 msgid "Letters."
-msgstr "წერილი."
+msgstr "წერილები"
 
 #: activities/morse_code/resource/1/Data.qml:18
 #: activities/morse_code/resource/1/Data.qml:34
@@ -17151,9 +17193,12 @@ msgid "Find the corresponding digit."
 msgstr ""
 
 #: activities/morse_code/resource/3/Data.qml:13
+#, fuzzy
+#| msgctxt "Menu|"
+#| msgid "Words"
 msgctxt "Data|"
 msgid "Words."
-msgstr "სიტყვა."
+msgstr "სიტყვა"
 
 #: activities/morse_code/resource/3/Data.qml:24
 msgctxt "Data|"
@@ -17375,7 +17420,7 @@ msgstr ""
 #, qt-format
 msgctxt "NoteNames|"
 msgid "%1%"
-msgstr ""
+msgstr "%1%"
 
 #: activities/note_names/NoteNames.qml:453
 msgctxt "NoteNames|"
@@ -17387,7 +17432,7 @@ msgstr ""
 #: activities/note_names/NoteNames.qml:454
 msgctxt "NoteNames|"
 msgid "Quit"
-msgstr "გასვლა"
+msgstr "დატოვება"
 
 #: activities/note_names/NoteNames.qml:455
 msgctxt "NoteNames|"
@@ -17905,7 +17950,7 @@ msgstr ""
 #: activities/oware/oware.js:107
 msgctxt "oware|"
 msgid "Invalid Move!"
-msgstr "არასწორი სვლა!"
+msgstr ""
 
 #. Activity title
 #: activities/oware_2players/ActivityInfo.qml:14
@@ -18108,7 +18153,7 @@ msgstr ""
 #, qt-format
 msgctxt "Data|"
 msgid "%1x%2 grids."
-msgstr "%1x%2 ბადეები."
+msgstr ""
 
 #. Activity title
 #: activities/path_decoding_relative/ActivityInfo.qml:14
@@ -18167,7 +18212,7 @@ msgstr ""
 #, qt-format
 msgctxt "GridPath|"
 msgid "Errors: %1"
-msgstr "შეცდომები: %1"
+msgstr ""
 
 #. Activity title
 #: activities/path_encoding_relative/ActivityInfo.qml:14
@@ -18401,7 +18446,7 @@ msgstr ""
 #, qt-format
 msgctxt "LyricsArea|"
 msgid "Title: %1"
-msgstr "სათაური: %1"
+msgstr ""
 
 #: activities/piano_composition/LyricsArea.qml:65
 #, qt-format
@@ -18499,7 +18544,7 @@ msgstr "სერბია"
 #: activities/piano_composition/melodies.js:249
 msgctxt "melodies|"
 msgid "Britain"
-msgstr "ბრიტანეთი"
+msgstr ""
 
 #: activities/piano_composition/melodies.js:179
 msgctxt "melodies|"
@@ -18530,28 +18575,28 @@ msgstr "ფინეთი"
 #: activities/piano_composition/MelodyList.qml:61
 msgctxt "MelodyList|"
 msgid "Melodies"
-msgstr "მელოდიები"
+msgstr ""
 
 #. Whole note, Half note, Quarter note and Eighth note are the different length notes in the musical notation.
 #: activities/piano_composition/OptionsRow.qml:23
 msgctxt "OptionsRow|"
 msgid "Whole note"
-msgstr "თეთრი ნოტა"
+msgstr ""
 
 #: activities/piano_composition/OptionsRow.qml:23
 msgctxt "OptionsRow|"
 msgid "Half note"
-msgstr "ნახევარი ნოტა"
+msgstr ""
 
 #: activities/piano_composition/OptionsRow.qml:23
 msgctxt "OptionsRow|"
 msgid "Quarter note"
-msgstr "მეოთხედი ნოტა"
+msgstr ""
 
 #: activities/piano_composition/OptionsRow.qml:23
 msgctxt "OptionsRow|"
 msgid "Eighth note"
-msgstr "მერვედი ნოტა"
+msgstr ""
 
 #. Whole rest, Half rest, Quarter rest and Eighth rest are the different length rests (silences) in the musical notation.
 #: activities/piano_composition/OptionsRow.qml:26
@@ -18597,7 +18642,7 @@ msgstr ""
 #: activities/piano_composition/OptionsRow.qml:28
 msgctxt "OptionsRow|"
 msgid "Piano"
-msgstr "პიანინო"
+msgstr ""
 
 #: activities/piano_composition/OptionsRow.qml:28
 msgctxt "OptionsRow|"
@@ -18685,12 +18730,12 @@ msgstr ""
 #: activities/piano_composition/Piano_composition.qml:361
 msgctxt "Piano_composition|"
 msgid "Yes"
-msgstr "დიახ"
+msgstr "კი"
 
 #: activities/piano_composition/Piano_composition.qml:367
 msgctxt "Piano_composition|"
 msgid "No"
-msgstr "არა"
+msgstr ""
 
 #: activities/piano_composition/Piano_composition.qml:418
 msgctxt "Piano_composition|"
@@ -18717,7 +18762,7 @@ msgstr ""
 #: activities/piano_composition/Piano_composition.qml:549
 msgctxt "Piano_composition|"
 msgid "Quit"
-msgstr "გასვლა"
+msgstr "დატოვება"
 
 #: activities/piano_composition/Piano_composition.qml:550
 msgctxt "Piano_composition|"
@@ -18886,7 +18931,7 @@ msgstr "B♭%1"
 #: activities/planegame/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Numbers in order"
-msgstr "რიცხვები რიგში"
+msgstr ""
 
 #. Help title
 #: activities/planegame/ActivityInfo.qml:17
@@ -18907,18 +18952,18 @@ msgstr ""
 #: activities/play_piano/ActivityConfig.qml:35
 msgctxt "ActivityConfig|"
 msgid "Display colored notes."
-msgstr "გაფერადებული ნოტების ჩვენება."
+msgstr ""
 
 #: activities/play_piano/ActivityConfig.qml:48
 msgctxt "ActivityConfig|"
 msgid "Display colorless notes."
-msgstr "გაუფერადებელი ნოტების ჩვენება."
+msgstr ""
 
 #. Activity title
 #: activities/play_piano/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Play piano"
-msgstr "პიანინოს დაკვრა"
+msgstr ""
 
 #. Help goal
 #: activities/play_piano/ActivityInfo.qml:24
@@ -18969,7 +19014,7 @@ msgstr ""
 #: activities/play_piano/PlayPiano.qml:280
 msgctxt "PlayPiano|"
 msgid "Quit"
-msgstr "გასვლა"
+msgstr "დატოვება"
 
 #: activities/play_piano/PlayPiano.qml:281
 msgctxt "PlayPiano|"
@@ -18980,7 +19025,7 @@ msgstr "გაგრძელება"
 #: activities/play_rhythm/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Play rhythm"
-msgstr "რითმის დაკვრა"
+msgstr ""
 
 #. Help goal
 #: activities/play_rhythm/ActivityInfo.qml:24
@@ -19067,7 +19112,7 @@ msgstr ""
 #: activities/play_rhythm/PlayRhythm.qml:360
 msgctxt "PlayRhythm|"
 msgid "Quit"
-msgstr "გასვლა"
+msgstr "დატოვება"
 
 #: activities/play_rhythm/PlayRhythm.qml:361
 msgctxt "PlayRhythm|"
@@ -19179,7 +19224,7 @@ msgstr ""
 #: activities/positions/resource/2/Data.qml:56
 msgctxt "Data|"
 msgid "under"
-msgstr "ქვეშ"
+msgstr ""
 
 #: activities/positions/resource/1/Data.qml:51
 #: activities/positions/resource/2/Data.qml:57
@@ -19207,7 +19252,7 @@ msgstr ""
 #: activities/positions/resource/2/Data.qml:26
 msgctxt "Data|"
 msgid "left"
-msgstr "მარცხნივ"
+msgstr ""
 
 #: activities/positions/resource/2/Data.qml:27
 msgctxt "Data|"
@@ -19359,7 +19404,7 @@ msgstr ""
 #: activities/programmingMaze/programmingMaze.js:114
 msgctxt "programmingMaze|"
 msgid "Procedure:"
-msgstr "პროცედურა:"
+msgstr ""
 
 #: activities/programmingMaze/programmingMaze.js:115
 msgctxt "programmingMaze|"
@@ -19379,7 +19424,7 @@ msgstr ""
 #: activities/programmingMaze/programmingMaze.js:123
 msgctxt "programmingMaze|"
 msgid "Loop:"
-msgstr "მარყუჟი:"
+msgstr ""
 
 #: activities/programmingMaze/programmingMaze.js:124
 msgctxt "programmingMaze|"
@@ -19405,7 +19450,7 @@ msgstr ""
 #: activities/programmingMaze/ProgrammingMaze.qml:254
 msgctxt "ProgrammingMaze|"
 msgid "Main function"
-msgstr "მთავარი ფუნქცია"
+msgstr ""
 
 #: activities/programmingMaze/ProgrammingMaze.qml:282
 msgctxt "ProgrammingMaze|"
@@ -19448,7 +19493,7 @@ msgstr ""
 #: activities/railroad/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid "Memory training."
-msgstr "მეხსიერების ვარჯიში."
+msgstr ""
 
 #. Help manual
 #: activities/railroad/ActivityInfo.qml:26
@@ -19462,7 +19507,7 @@ msgstr ""
 #: activities/railroad/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "<b>Keyboard Controls:</b>"
-msgstr "<b>კლავიატურის კონტროლი:</b>"
+msgstr ""
 
 #: activities/railroad/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
@@ -19537,12 +19582,12 @@ msgstr ""
 #: activities/readingh/Readingh.qml:197
 msgctxt "Readingh|"
 msgid "Yes, I saw it!"
-msgstr "დიახ, დავინახე!"
+msgstr ""
 
 #: activities/readingh/Readingh.qml:211
 msgctxt "Readingh|"
 msgid "No, it was not there!"
-msgstr "არა, ის იქ არაა!"
+msgstr ""
 
 #. Activity title
 #: activities/readingv/ActivityInfo.qml:15
@@ -20242,7 +20287,7 @@ msgstr ""
 #, qt-format
 msgctxt "Data|"
 msgid "%1 kg"
-msgstr "%1 კგ"
+msgstr ""
 
 #: activities/scalesboard_weight/resource/4/Data.qml:26
 msgctxt "Data|"
@@ -21118,7 +21163,7 @@ msgstr ""
 #: activities/solar_system/Dataset.js:14
 msgctxt "Dataset|"
 msgid "Sun"
-msgstr "კვი"
+msgstr "მზე"
 
 #: activities/solar_system/Dataset.js:18
 msgctxt "Dataset|"
@@ -21280,7 +21325,7 @@ msgstr ""
 #: activities/solar_system/Dataset.js:391
 msgctxt "Dataset|"
 msgid "Seventh"
-msgstr "მეშვიდე"
+msgstr ""
 
 #: activities/solar_system/Dataset.js:58 activities/solar_system/Dataset.js:103
 #: activities/solar_system/Dataset.js:154
@@ -21289,7 +21334,7 @@ msgstr "მეშვიდე"
 #: activities/solar_system/Dataset.js:301
 msgctxt "Dataset|"
 msgid "Sixth"
-msgstr "მეექვსე"
+msgstr ""
 
 #: activities/solar_system/Dataset.js:58 activities/solar_system/Dataset.js:154
 #: activities/solar_system/Dataset.js:205
@@ -21375,23 +21420,23 @@ msgstr ""
 #: activities/solar_system/Dataset.js:235
 msgctxt "Dataset|"
 msgid "365 Earth days"
-msgstr "365 დედამიწის დღე"
+msgstr ""
 
 #: activities/solar_system/Dataset.js:82
 msgctxt "Dataset|"
 msgid "433 Earth days"
-msgstr "433 დედამიწის დღე"
+msgstr ""
 
 #: activities/solar_system/Dataset.js:82 activities/solar_system/Dataset.js:127
 msgctxt "Dataset|"
 msgid "88 Earth days"
-msgstr "88 დედამიწის დღე"
+msgstr ""
 
 #: activities/solar_system/Dataset.js:82 activities/solar_system/Dataset.js:88
 #: activities/solar_system/Dataset.js:127
 msgctxt "Dataset|"
 msgid "107 Earth days"
-msgstr "107 დედამიწის დღე"
+msgstr ""
 
 #: activities/solar_system/Dataset.js:87
 msgctxt "Dataset|"
@@ -21401,12 +21446,12 @@ msgstr ""
 #: activities/solar_system/Dataset.js:88
 msgctxt "Dataset|"
 msgid "50 Earth days"
-msgstr "50 დედამიწის დღე"
+msgstr ""
 
 #: activities/solar_system/Dataset.js:88
 msgctxt "Dataset|"
 msgid "59 Earth days"
-msgstr "59 დედამიწის დღე"
+msgstr ""
 
 #: activities/solar_system/Dataset.js:96
 msgctxt "Dataset|"
@@ -21436,22 +21481,22 @@ msgstr ""
 #: activities/solar_system/Dataset.js:109
 msgctxt "Dataset|"
 msgid "0.7 Earths"
-msgstr "0.7 დედამიწა"
+msgstr ""
 
 #: activities/solar_system/Dataset.js:109
 msgctxt "Dataset|"
 msgid "0.8 Earths"
-msgstr "0.8 დედამიწა"
+msgstr ""
 
 #: activities/solar_system/Dataset.js:109
 msgctxt "Dataset|"
 msgid "1.3 Earths"
-msgstr "1.3 დედამიწა"
+msgstr ""
 
 #: activities/solar_system/Dataset.js:109
 msgctxt "Dataset|"
 msgid "2.5 Earths"
-msgstr "2.5 დედამიწა"
+msgstr ""
 
 #: activities/solar_system/Dataset.js:114
 msgctxt "Dataset|"
@@ -21481,17 +21526,17 @@ msgstr ""
 #: activities/solar_system/Dataset.js:121
 msgctxt "Dataset|"
 msgid "225 Earth days"
-msgstr "225 დედამიწის დღე"
+msgstr ""
 
 #: activities/solar_system/Dataset.js:121
 msgctxt "Dataset|"
 msgid "116 Earth days"
-msgstr "116 დედამიწის დღე"
+msgstr ""
 
 #: activities/solar_system/Dataset.js:121
 msgctxt "Dataset|"
 msgid "100 Earth days"
-msgstr "100 დედამიწის დღე"
+msgstr ""
 
 #: activities/solar_system/Dataset.js:126
 msgctxt "Dataset|"
@@ -21501,7 +21546,7 @@ msgstr ""
 #: activities/solar_system/Dataset.js:127
 msgctxt "Dataset|"
 msgid "243 Earth days"
-msgstr "243 დედამიწის დღე"
+msgstr ""
 
 #: activities/solar_system/Dataset.js:132
 msgctxt "Dataset|"
@@ -21570,7 +21615,7 @@ msgstr "მესამე"
 #: activities/solar_system/Dataset.js:391
 msgctxt "Dataset|"
 msgid "Fifth"
-msgstr "მეხუთე"
+msgstr ""
 
 #: activities/solar_system/Dataset.js:159
 msgctxt "Dataset|"
@@ -21580,7 +21625,7 @@ msgstr ""
 #: activities/solar_system/Dataset.js:160
 msgctxt "Dataset|"
 msgid "200 days"
-msgstr "200 დღე"
+msgstr ""
 
 #: activities/solar_system/Dataset.js:160
 msgctxt "Dataset|"
@@ -21595,7 +21640,7 @@ msgstr "7 დღე"
 #: activities/solar_system/Dataset.js:160
 msgctxt "Dataset|"
 msgid "365 days"
-msgstr "365 დღე"
+msgstr ""
 
 #: activities/solar_system/Dataset.js:165
 msgctxt "Dataset|"
@@ -21626,7 +21671,7 @@ msgstr "24 საათი"
 #: activities/solar_system/Dataset.js:172
 msgctxt "Dataset|"
 msgid "365 hours"
-msgstr "365 საათი"
+msgstr ""
 
 #: activities/solar_system/Dataset.js:172
 #: activities/solar_system/Dataset.js:229
@@ -21636,7 +21681,7 @@ msgstr "365 საათი"
 #: activities/solar_system/Dataset.js:409
 msgctxt "Dataset|"
 msgid "48 hours"
-msgstr "48 საათი"
+msgstr ""
 
 #: activities/solar_system/Dataset.js:177
 msgctxt "Dataset|"
@@ -21692,7 +21737,7 @@ msgstr ""
 #: activities/solar_system/Dataset.js:217
 msgctxt "Dataset|"
 msgid "The same"
-msgstr "იგივე"
+msgstr ""
 
 #: activities/solar_system/Dataset.js:217
 msgctxt "Dataset|"
@@ -21702,12 +21747,12 @@ msgstr "ნახევარი"
 #: activities/solar_system/Dataset.js:217
 msgctxt "Dataset|"
 msgid "Two times"
-msgstr "ორჯერ"
+msgstr ""
 
 #: activities/solar_system/Dataset.js:217
 msgctxt "Dataset|"
 msgid "Three times"
-msgstr "სამჯერ"
+msgstr ""
 
 #: activities/solar_system/Dataset.js:222
 msgctxt "Dataset|"
@@ -21722,7 +21767,7 @@ msgstr ""
 #: activities/solar_system/Dataset.js:229
 msgctxt "Dataset|"
 msgid "24.5 hours"
-msgstr "24.5 საათი"
+msgstr ""
 
 #: activities/solar_system/Dataset.js:234
 msgctxt "Dataset|"
@@ -21732,17 +21777,17 @@ msgstr ""
 #: activities/solar_system/Dataset.js:235
 msgctxt "Dataset|"
 msgid "687 Earth days"
-msgstr "687 დედამიწის დღე"
+msgstr ""
 
 #: activities/solar_system/Dataset.js:235
 msgctxt "Dataset|"
 msgid "30 Earth days"
-msgstr "30 დედამიწის დღე"
+msgstr ""
 
 #: activities/solar_system/Dataset.js:235
 msgctxt "Dataset|"
 msgid "7 Earth days"
-msgstr "7 დედამიწის დღე"
+msgstr ""
 
 #: activities/solar_system/Dataset.js:240
 msgctxt "Dataset|"
@@ -21807,7 +21852,7 @@ msgstr ""
 #: activities/solar_system/Dataset.js:364
 msgctxt "Dataset|"
 msgid "10 hours"
-msgstr "10 საათი"
+msgstr ""
 
 #: activities/solar_system/Dataset.js:285
 msgctxt "Dataset|"
@@ -21818,17 +21863,17 @@ msgstr ""
 #: activities/solar_system/Dataset.js:286
 msgctxt "Dataset|"
 msgid "5 Earth years"
-msgstr "5 დედამიწის წელიწადი"
+msgstr ""
 
 #: activities/solar_system/Dataset.js:286
 msgctxt "Dataset|"
 msgid "12 Earth years"
-msgstr "12 დედამიწის წელიწადი"
+msgstr ""
 
 #: activities/solar_system/Dataset.js:286
 msgctxt "Dataset|"
 msgid "30 Earth years"
-msgstr "30 დედამიწის წელიწადი"
+msgstr ""
 
 #: activities/solar_system/Dataset.js:286
 #: activities/solar_system/Dataset.js:331
@@ -21836,7 +21881,7 @@ msgstr "30 დედამიწის წელიწადი"
 #: activities/solar_system/Dataset.js:397
 msgctxt "Dataset|"
 msgid "1 Earth year"
-msgstr "1 დედამიწის წელიწადი"
+msgstr ""
 
 #: activities/solar_system/Dataset.js:294
 msgctxt "Dataset|"
@@ -21876,7 +21921,7 @@ msgstr ""
 #: activities/solar_system/Dataset.js:319
 msgctxt "Dataset|"
 msgid "10.5 hours"
-msgstr "10.5 საათი"
+msgstr ""
 
 #: activities/solar_system/Dataset.js:324
 msgctxt "Dataset|"
@@ -21909,17 +21954,17 @@ msgstr ""
 #: activities/solar_system/Dataset.js:331
 msgctxt "Dataset|"
 msgid "29.5 Earth years"
-msgstr "29.5 დედამიწის წელიწადი"
+msgstr ""
 
 #: activities/solar_system/Dataset.js:331
 msgctxt "Dataset|"
 msgid "20 Earth years"
-msgstr "20 დედამიწის წელიწადი"
+msgstr ""
 
 #: activities/solar_system/Dataset.js:331
 msgctxt "Dataset|"
 msgid "10 Earth years"
-msgstr "10 დედამიწის წელიწადი"
+msgstr ""
 
 #: activities/solar_system/Dataset.js:339
 msgctxt "Dataset|"
@@ -21940,7 +21985,7 @@ msgstr ""
 #: activities/solar_system/Dataset.js:391
 msgctxt "Dataset|"
 msgid "Eighth"
-msgstr "მერვე"
+msgstr ""
 
 #: activities/solar_system/Dataset.js:351
 msgctxt "Dataset|"
@@ -21950,17 +21995,17 @@ msgstr ""
 #: activities/solar_system/Dataset.js:352
 msgctxt "Dataset|"
 msgid "24 Earth years"
-msgstr "24 დედამიწის წელიწადი"
+msgstr ""
 
 #: activities/solar_system/Dataset.js:352
 msgctxt "Dataset|"
 msgid "68 Earth years"
-msgstr "68 დედამიწის წელიწადი"
+msgstr ""
 
 #: activities/solar_system/Dataset.js:352
 msgctxt "Dataset|"
 msgid "84 Earth years"
-msgstr "84 დედამიწის წელიწადი"
+msgstr ""
 
 #: activities/solar_system/Dataset.js:357
 msgctxt "Dataset|"
@@ -21976,13 +22021,13 @@ msgstr ""
 #: activities/solar_system/Dataset.js:409
 msgctxt "Dataset|"
 msgid "27 hours"
-msgstr "27 საათი"
+msgstr ""
 
 #: activities/solar_system/Dataset.js:364
 #: activities/solar_system/Dataset.js:409
 msgctxt "Dataset|"
 msgid "17 hours"
-msgstr "17 საათი"
+msgstr ""
 
 #: activities/solar_system/Dataset.js:369
 msgctxt "Dataset|"
@@ -22028,17 +22073,17 @@ msgstr ""
 #: activities/solar_system/Dataset.js:397
 msgctxt "Dataset|"
 msgid "165 Earth years"
-msgstr "165 დედამიწის წელიწადი"
+msgstr ""
 
 #: activities/solar_system/Dataset.js:397
 msgctxt "Dataset|"
 msgid "3 Earth years"
-msgstr "3 დედამიწის წელიწადი"
+msgstr ""
 
 #: activities/solar_system/Dataset.js:397
 msgctxt "Dataset|"
 msgid "100 Earth years"
-msgstr "100 დედამიწის წელიწადი"
+msgstr ""
 
 #: activities/solar_system/Dataset.js:402
 msgctxt "Dataset|"
@@ -22053,7 +22098,7 @@ msgstr ""
 #: activities/solar_system/Dataset.js:409
 msgctxt "Dataset|"
 msgid "16 hours"
-msgstr "16 საათი"
+msgstr ""
 
 #: activities/solar_system/Dataset.js:414
 msgctxt "Dataset|"
@@ -22074,7 +22119,7 @@ msgstr ""
 #, qt-format
 msgctxt "QuizScreen|"
 msgid "Accuracy: %1%"
-msgstr "სიზუსტე: %1%"
+msgstr ""
 
 #: activities/solar_system/QuizScreen.qml:239
 #, qt-format
@@ -22122,7 +22167,7 @@ msgstr "შეფასება"
 #: activities/solar_system/SolarSystem.qml:155
 msgctxt "SolarSystem|"
 msgid "Learning"
-msgstr "სწავლა"
+msgstr ""
 
 #: activities/solar_system/SolarSystem.qml:159
 msgctxt "SolarSystem|"
@@ -22234,7 +22279,7 @@ msgstr ""
 #: activities/submarine/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "<b>Engine</b>"
-msgstr "<b>ძრავა</b>"
+msgstr ""
 
 #: activities/submarine/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
@@ -22975,248 +23020,266 @@ msgstr ""
 
 #: core/ChangeLog.qml:30
 msgctxt "ChangeLog|"
+msgid "Map of Spain added for geography activity"
+msgstr ""
+
+#: core/ChangeLog.qml:31
+msgctxt "ChangeLog|"
+msgid "Voices added for Ukrainian"
+msgstr ""
+
+#: core/ChangeLog.qml:32
+msgctxt "ChangeLog|"
+msgid ""
+"New command-line option to list all the activities and start on a specific "
+"one"
+msgstr ""
+
+#: core/ChangeLog.qml:33 core/ChangeLog.qml:68 core/ChangeLog.qml:71
+#: core/ChangeLog.qml:77
+msgctxt "ChangeLog|"
+msgid "Many usability improvements"
+msgstr "მრავალი გაუმჯობესება"
+
+#: core/ChangeLog.qml:34 core/ChangeLog.qml:52 core/ChangeLog.qml:67
+#: core/ChangeLog.qml:72 core/ChangeLog.qml:78
+msgctxt "ChangeLog|"
+msgid "Many new images"
+msgstr ""
+
+#: core/ChangeLog.qml:35 core/ChangeLog.qml:73 core/ChangeLog.qml:79
+msgctxt "ChangeLog|"
+msgid "Many bug fixes"
+msgstr ""
+
+#: core/ChangeLog.qml:39
+msgctxt "ChangeLog|"
 msgid ""
 "Reduce the size of the packages for all platforms and of the external word "
 "images set"
 msgstr ""
 
-#: core/ChangeLog.qml:31
+#: core/ChangeLog.qml:40
 msgctxt "ChangeLog|"
 msgid "Improve images quality in several activities"
 msgstr ""
 
-#: core/ChangeLog.qml:32
+#: core/ChangeLog.qml:41
 msgctxt "ChangeLog|"
 msgid "Fix some transitions in renewable_energy/watercycle on some platforms"
 msgstr ""
 
-#: core/ChangeLog.qml:33
+#: core/ChangeLog.qml:42
 msgctxt "ChangeLog|"
 msgid "Fix dead keys ignored on Linux for typing activities"
 msgstr ""
 
-#: core/ChangeLog.qml:34
+#: core/ChangeLog.qml:43
 msgctxt "ChangeLog|"
 msgid "Fix level reset when changing level manually in Logical associations"
 msgstr ""
 
-#: core/ChangeLog.qml:38
+#: core/ChangeLog.qml:47
 msgctxt "ChangeLog|"
 msgid ""
 "Fix Alphabet sequence, Even and odd numbers and Numbers in order activities"
 msgstr ""
 
-#: core/ChangeLog.qml:42 core/ChangeLog.qml:50
+#: core/ChangeLog.qml:51 core/ChangeLog.qml:59
 msgctxt "ChangeLog|"
 msgid "Several bug fixes"
 msgstr ""
 
-#: core/ChangeLog.qml:43 core/ChangeLog.qml:58 core/ChangeLog.qml:63
-#: core/ChangeLog.qml:69
-msgctxt "ChangeLog|"
-msgid "Many new images"
-msgstr ""
-
-#: core/ChangeLog.qml:44
+#: core/ChangeLog.qml:53
 msgctxt "ChangeLog|"
 msgid "Translation updated for Russian"
 msgstr ""
 
-#: core/ChangeLog.qml:45
+#: core/ChangeLog.qml:54
 msgctxt "ChangeLog|"
 msgid "New voices for Norwegian Nynorsk"
 msgstr ""
 
-#: core/ChangeLog.qml:49
+#: core/ChangeLog.qml:58
 msgctxt "ChangeLog|"
 msgid "Translations added for Breton, Czech and Macedonian"
 msgstr ""
 
-#: core/ChangeLog.qml:54
+#: core/ChangeLog.qml:63
 msgctxt "ChangeLog|"
 msgid "Translation added for Azerbaijani"
 msgstr ""
 
-#: core/ChangeLog.qml:55
+#: core/ChangeLog.qml:64
 msgctxt "ChangeLog|"
 msgid "New maps and update of the maps for geography activities"
 msgstr ""
 
-#: core/ChangeLog.qml:56
+#: core/ChangeLog.qml:65
 msgctxt "ChangeLog|"
 msgid ""
 "New dataset containing loops operations for programming maze, and make "
 "tutorial images translated"
 msgstr ""
 
-#: core/ChangeLog.qml:57
+#: core/ChangeLog.qml:66
 msgctxt "ChangeLog|"
 msgid ""
 "Addition of a level to teach voltage source loop in analog electricity "
 "activity"
 msgstr ""
 
-#: core/ChangeLog.qml:59 core/ChangeLog.qml:62 core/ChangeLog.qml:68
-msgctxt "ChangeLog|"
-msgid "Many usability improvements"
-msgstr "მრავალი გაუმჯობესება"
-
-#: core/ChangeLog.qml:64 core/ChangeLog.qml:70
-msgctxt "ChangeLog|"
-msgid "Many bug fixes"
-msgstr ""
-
-#: core/ChangeLog.qml:67
+#: core/ChangeLog.qml:76
 msgctxt "ChangeLog|"
 msgid "New Activity Settings menu, with dataset selection"
 msgstr ""
 
-#: core/ChangeLog.qml:73
+#: core/ChangeLog.qml:82
 msgctxt "ChangeLog|"
 msgid "New sub-categories to organize activities"
 msgstr ""
 
-#: core/ChangeLog.qml:74
+#: core/ChangeLog.qml:83
 msgctxt "ChangeLog|"
 msgid "Translation added for Macedonian."
 msgstr ""
 
-#: core/ChangeLog.qml:75
+#: core/ChangeLog.qml:84
 msgctxt "ChangeLog|"
 msgid "New activities Programming Maze and Baby Tangram"
 msgstr ""
 
-#: core/ChangeLog.qml:76
+#: core/ChangeLog.qml:85
 msgctxt "ChangeLog|"
 msgid "New background music and volume settings."
 msgstr ""
 
-#: core/ChangeLog.qml:77
+#: core/ChangeLog.qml:86
 msgctxt "ChangeLog|"
 msgid "New speed setting in several activities."
 msgstr ""
 
-#: core/ChangeLog.qml:78
+#: core/ChangeLog.qml:87
 msgctxt "ChangeLog|"
 msgid "New option in chess to display captured pieces."
 msgstr ""
 
-#: core/ChangeLog.qml:79
+#: core/ChangeLog.qml:88
 msgctxt "ChangeLog|"
 msgid "New images in Colors, Advanced colors and Target game."
 msgstr ""
 
-#: core/ChangeLog.qml:80
+#: core/ChangeLog.qml:89
 msgctxt "ChangeLog|"
 msgid "New voices for US English."
 msgstr ""
 
-#: core/ChangeLog.qml:81 core/ChangeLog.qml:89
+#: core/ChangeLog.qml:90 core/ChangeLog.qml:98
 msgctxt "ChangeLog|"
 msgid "Many little fixes and improvements."
 msgstr ""
 
-#: core/ChangeLog.qml:82
+#: core/ChangeLog.qml:91
 msgctxt "ChangeLog|"
 msgid ""
 "Translation updated for multiple languages (Breton, Brazilian Portuguese, "
 "Finnish...)."
 msgstr ""
 
-#: core/ChangeLog.qml:83
+#: core/ChangeLog.qml:92
 msgctxt "ChangeLog|"
 msgid "Add Russian dataset for Click on letter activity."
 msgstr ""
 
-#: core/ChangeLog.qml:84
+#: core/ChangeLog.qml:93
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in Dutch."
 msgstr ""
 
-#: core/ChangeLog.qml:85
+#: core/ChangeLog.qml:94
 msgctxt "ChangeLog|"
 msgid ""
 "Merge Norwegian counties Nord-Trøndelag and Sør-Trøndelag into Trøndelag in "
 "geo-country activity."
 msgstr ""
 
-#: core/ChangeLog.qml:86
+#: core/ChangeLog.qml:95
 msgctxt "ChangeLog|"
 msgid "Fix in braille activities where the cells start at 1, not 0."
 msgstr ""
 
-#: core/ChangeLog.qml:87
+#: core/ChangeLog.qml:96
 msgctxt "ChangeLog|"
 msgid "Translation added for Basque, Hungarian and Malayalam."
 msgstr ""
 
-#: core/ChangeLog.qml:88
+#: core/ChangeLog.qml:97
 msgctxt "ChangeLog|"
 msgid ""
 "Loading/saving of creations (Baby Wordprocessor, Balance Box and Piano "
 "Composition)."
 msgstr ""
 
-#: core/ChangeLog.qml:89
+#: core/ChangeLog.qml:98
 msgctxt "ChangeLog|"
 msgid "Translations added for Scottish Gaelic."
 msgstr ""
 
-#: core/ChangeLog.qml:90
+#: core/ChangeLog.qml:99
 msgctxt "ChangeLog|"
 msgid "License page added in configuration."
 msgstr ""
 
-#: core/ChangeLog.qml:90
+#: core/ChangeLog.qml:99
 msgctxt "ChangeLog|"
 msgid "Multiple changes on layouts to improve the ergonomy."
 msgstr ""
 
-#: core/ChangeLog.qml:91
+#: core/ChangeLog.qml:100
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in Polish, Swedish and Ukrainian."
 msgstr ""
 
-#: core/ChangeLog.qml:92
+#: core/ChangeLog.qml:101
 msgctxt "ChangeLog|"
 msgid "Search feature."
 msgstr ""
 
-#: core/ChangeLog.qml:93
+#: core/ChangeLog.qml:102
 msgctxt "ChangeLog|"
 msgid "A Changelog."
 msgstr ""
 
-#: core/ChangeLog.qml:94
+#: core/ChangeLog.qml:103
 msgctxt "ChangeLog|"
 msgid "Many little fixes."
 msgstr ""
 
-#: core/ChangeLog.qml:94
+#: core/ChangeLog.qml:103
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in French."
 msgstr ""
 
-#: core/ChangeLog.qml:95
+#: core/ChangeLog.qml:104
 msgctxt "ChangeLog|"
 msgid ""
 "Adding a loading overlay to let the user know that some actions are taking "
 "place (loading an activity for example) and can take some seconds."
 msgstr ""
 
-#: core/ChangeLog.qml:95
+#: core/ChangeLog.qml:104
 msgctxt "ChangeLog|"
 msgid ""
 "Translations added for: Catalan (Valencian), Chinese Traditional, Finnish "
 "(92% translated), Russian (98% translated), Slovak (92% translated), Turkish."
 msgstr ""
 
-#: core/ChangeLog.qml:96
+#: core/ChangeLog.qml:105
 msgctxt "ChangeLog|"
 msgid "Translations added for: Slovenian, German, Galician."
 msgstr ""
 
-#: core/ChangeLog.qml:121
+#: core/ChangeLog.qml:130
 #, qt-format
 msgctxt "ChangeLog|"
 msgid "Version %1:"
@@ -23242,7 +23305,7 @@ msgstr ""
 #: core/core.js:210
 msgctxt "core|"
 msgid "Download in progress"
-msgstr "მიმდინარეობს გადმოწერა"
+msgstr ""
 
 #: core/core.js:212
 msgctxt "core|"
@@ -23252,17 +23315,17 @@ msgstr ""
 #: core/core.js:222
 msgctxt "core|"
 msgid "Quit?"
-msgstr "გავიდე?"
+msgstr ""
 
 #: core/core.js:224
 msgctxt "core|"
 msgid "Do you really want to quit GCompris?"
-msgstr "მართლა გნებავთ GCompris-დან გასვლა?"
+msgstr ""
 
 #: core/core.js:225
 msgctxt "core|"
 msgid "Yes"
-msgstr "დიახ"
+msgstr "კი"
 
 #: core/core.js:226
 msgctxt "core|"
@@ -23272,7 +23335,7 @@ msgstr "არა"
 #: core/DialogAbout.qml:22
 msgctxt "DialogAbout|"
 msgid "About GCompris"
-msgstr "GCompris-ის შესახებ"
+msgstr ""
 
 #: core/DialogAbout.qml:23 core/DialogAbout.qml:36
 msgctxt "DialogAbout|"
@@ -23289,7 +23352,7 @@ msgstr "თემური დოღონაძე"
 #, qt-format
 msgctxt "DialogAbout|"
 msgid "GCompris %1"
-msgstr "GCompris %1"
+msgstr ""
 
 #: core/DialogAbout.qml:57
 #, qt-format
@@ -23389,7 +23452,7 @@ msgstr ""
 #, qt-format
 msgctxt "DialogActivityConfig|"
 msgid "%1 configuration"
-msgstr "%1 -ის მორგება"
+msgstr ""
 
 #: core/DialogActivityConfig.qml:86
 msgctxt "DialogActivityConfig|"
@@ -23400,7 +23463,7 @@ msgstr "გამართვა"
 #, qt-format
 msgctxt "DialogChooseLevel|"
 msgid "%1 settings"
-msgstr "%1 -ის მორგება"
+msgstr ""
 
 #: core/DialogChooseLevel.qml:205
 msgctxt "DialogChooseLevel|"
@@ -23410,22 +23473,22 @@ msgstr ""
 #: core/DialogChooseLevel.qml:218
 msgctxt "DialogChooseLevel|"
 msgid "Options"
-msgstr "პარამეტრები"
+msgstr ""
 
 #: core/DialogChooseLevel.qml:349
 msgctxt "DialogChooseLevel|"
 msgid "Cancel"
-msgstr "გაუქმება"
+msgstr "_გაუქმება"
 
 #: core/DialogChooseLevel.qml:357
 msgctxt "DialogChooseLevel|"
 msgid "Save"
-msgstr "შენახვა"
+msgstr ""
 
 #: core/DialogChooseLevel.qml:371
 msgctxt "DialogChooseLevel|"
 msgid "Save and start"
-msgstr "შენახვა და გაშვება"
+msgstr ""
 
 #: core/DialogHelp.qml:49
 msgctxt "DialogHelp|"
@@ -23435,27 +23498,27 @@ msgstr "ავტორი:"
 #: core/DialogHelp.qml:53
 msgctxt "DialogHelp|"
 msgid "Prerequisite:"
-msgstr "წინასწარი მოთხოვნები:"
+msgstr ""
 
 #: core/DialogHelp.qml:58
 msgctxt "DialogHelp|"
 msgid "Goal:"
-msgstr "მიზანი:"
+msgstr ""
 
 #: core/DialogHelp.qml:63
 msgctxt "DialogHelp|"
 msgid "Manual:"
-msgstr "ხელით:"
+msgstr ""
 
 #: core/DialogHelp.qml:67
 msgctxt "DialogHelp|"
 msgid "Credit:"
-msgstr "კრედიტი:"
+msgstr ""
 
 #: core/DialogHelp.qml:71
 msgctxt "DialogHelp|"
 msgid "Section:"
-msgstr "სექცია:"
+msgstr ""
 
 #. "Dots" is for representation of the points in a domino in the form of dots
 #: core/Domino.qml:57
@@ -23467,13 +23530,13 @@ msgstr "წერტილები"
 #: core/Domino.qml:59
 msgctxt "Domino|"
 msgid "Arabic Numbers"
-msgstr "არაბული რიცხვები"
+msgstr ""
 
 #. "Roman Numbers" is for representation of the points in a domino in the form of roman numbers
 #: core/Domino.qml:61
 msgctxt "Domino|"
 msgid "Roman Numbers"
-msgstr "რომაული რიცხვები"
+msgstr ""
 
 #. "Images" is for representation of the points in a domino in the form of an image (containing a specific count of same elements)
 #: core/Domino.qml:63
@@ -23561,7 +23624,7 @@ msgstr ""
 #: core/GCCreationHandler.qml:181
 msgctxt "GCCreationHandler|"
 msgid "Ok"
-msgstr "დიახ"
+msgstr "Ok"
 
 #: core/GCCreationHandler.qml:139
 #, qt-format
@@ -23577,7 +23640,7 @@ msgstr ""
 #: core/GCCreationHandler.qml:173
 msgctxt "GCCreationHandler|"
 msgid "Yes"
-msgstr "დიახ"
+msgstr "კი"
 
 #: core/GCCreationHandler.qml:173
 msgctxt "GCCreationHandler|"
@@ -23731,12 +23794,12 @@ msgstr ""
 #: core/main.qml:245
 msgctxt "main|"
 msgid "Yes"
-msgstr "დიახ"
+msgstr "კი"
 
 #: core/main.qml:255
 msgctxt "main|"
 msgid "No"
-msgstr "არა"
+msgstr ""
 
 #: core/main.qml:280
 msgctxt "main|"
@@ -23759,13 +23822,13 @@ msgstr ""
 #: core/main.qml:284
 msgctxt "main|"
 msgid "Have Fun!"
-msgstr "გაერთე!"
+msgstr ""
 
 #: core/main.qml:286
 #, qt-format
 msgctxt "main|"
 msgid "Your current language is %1 (%2)."
-msgstr "თქვენი მიმდინარე ენაა %1 (%2)."
+msgstr ""
 
 #: core/main.qml:317
 msgctxt "main|"
@@ -23797,10 +23860,6 @@ msgctxt "Tutorial|"
 msgid "Start"
 msgstr "დაწყება"
 
-#~ msgctxt "board1|"
-#~ msgid "Rooster"
-#~ msgstr "მამალი"
-
 #~ msgctxt "Calendar|"
 #~ msgid "Sunday"
 #~ msgstr "კვირა"
@@ -23828,3 +23887,7 @@ msgstr "დაწყება"
 #~ msgctxt "Calendar|"
 #~ msgid "Saturday"
 #~ msgstr "შაბათი"
+
+#~ msgctxt "board1|"
+#~ msgid "Rooster"
+#~ msgstr "მამალი"

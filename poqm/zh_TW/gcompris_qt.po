@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2022-06-12 15:07+0800\n"
+"PO-Revision-Date: 2022-06-12 15:00+0800\n"
 "Last-Translator: Franklin Weng <franklin@goodhorse.idv.tw>\n"
 "Language-Team: Chinese <zh-l10n@lists.linux.org.tw>\n"
 "Language: zh_TW\n"
@@ -2553,7 +2553,7 @@ msgstr "這個遊戲讓您學習十進位數字轉成二進位數字的觀念。
 #: activities/binary_bulb/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "To get familiar with the binary number system."
-msgstr "熟悉二進位數值系統。"
+msgstr "熟悉二進制數值系統。"
 
 #. Help prerequisite
 #: activities/binary_bulb/ActivityInfo.qml:22
@@ -2582,7 +2582,7 @@ msgid ""
 "and 1. Mathematically, these states are represented by 0 and 1, which makes "
 "up the binary system of numeration."
 msgstr ""
-"電腦內部使用電晶體來計數。電晶體只有兩種狀態：0 與 1。這也是數學上二進位數值"
+"電腦內部使用電晶體來計數。電晶體只有兩種狀態：0 與 1。這也是數學上二進制數值"
 "系統所使用的數字。"
 
 #: activities/binary_bulb/binary_bulb.js:28
@@ -2595,7 +2595,7 @@ msgctxt "binary_bulb|"
 msgid ""
 "Binary system uses these numbers very efficiently, allowing to count from 0 "
 "to 255 with 8 bits only."
-msgstr "二進位系統是很有效率的，只要 8 個位元就可以從 0 數到 255。"
+msgstr "二進制系統是很有效率的，只要 8 個位元就可以從 0 數到 255。"
 
 #: activities/binary_bulb/binary_bulb.js:36
 msgctxt "binary_bulb|"
@@ -2612,7 +2612,7 @@ msgstr ""
 #: activities/binary_bulb/binary_bulb.js:40
 msgctxt "binary_bulb|"
 msgid "To convert a decimal 5 to a binary value, 1 and 4 are added."
-msgstr "要把十進位的 5 換成二進位，就把 1 跟 4 相加。"
+msgstr "要把十進制的 5 換成二進制，就把 1 跟 4 相加。"
 
 #: activities/binary_bulb/binary_bulb.js:44
 msgctxt "binary_bulb|"
@@ -3847,6 +3847,9 @@ msgstr "黑方贏了"
 
 #. Activity title
 #: activities/checkers_2players/ActivityInfo.qml:15
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Play chess (with a friend)"
 msgctxt "ActivityInfo|"
 msgid "Play checkers (with a friend)"
 msgstr "跟朋友下西洋棋"
@@ -3886,6 +3889,9 @@ msgstr ""
 
 #. Activity title
 #: activities/chess/ActivityInfo.qml:15
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Play chess against Tux"
 msgctxt "ActivityInfo|"
 msgid "Play chess (against Tux)"
 msgstr "跟小企鵝下西洋棋"
@@ -3955,8 +3961,6 @@ msgid ""
 "will redo one move. To undo all the moves, press and hold the undo button "
 "for 3 seconds."
 msgstr ""
-"點擊「復原」會往回退一步。點擊「重做」會重做一步。要復原所有移動，持續按住"
-"「復原」鍵三秒。"
 
 #: activities/chess/ActivityInfo.qml:33
 #: activities/chess_partyend/ActivityInfo.qml:33
@@ -5488,7 +5492,7 @@ msgid ""
 "A BCD counter usually takes a signal generator as input. The output is a BCD "
 "number starting from 0 which is increased by one at each tick."
 msgstr ""
-"二進碼十進位（Binary-Coded Decimal, BCD）計數器通常會用一個信號產生器來當輸"
+"二進碼十進制（Binary-Coded Decimal, BCD）計數器通常會用一個信號產生器來當輸"
 "入。輸出則是 BCD 碼，從 0 開始，每一次信號輸入就加 1。"
 
 #: activities/digital_electricity/components/BCDToSevenSegment.qml:29
@@ -5499,7 +5503,7 @@ msgid ""
 "display numbers between 0 and 9. The output for a BCD To 7 Segment converter "
 "is:"
 msgstr ""
-"BCD 轉換七段顯示器（BCD to 7 segment converter）有四個二進位輸入與七個二進位"
+"BCD 轉換七段顯示器（BCD to 7 segment converter）有四個二進制輸入與七個二進制"
 "輸出，將 BCD 碼的 0 到 9 轉換到七段顯示器上顯示出數字。BCD 轉換七段顯示器的輸"
 "出為："
 
@@ -5601,7 +5605,7 @@ msgid ""
 "numbers from 0 to 9 and a few letters. The diagram is:"
 msgstr ""
 "七段顯示器（7 segment display）有七個輸入端子。顯示組件由七個線段組成，根據輸"
-"入的數字決定哪一個線段會亮起來。根據七個輸入的二進位組合，顯示端可以顯示出 0 "
+"入的數字決定哪一個線段會亮起來。根據七個輸入的二進制組合，顯示端可以顯示出 0 "
 "到 9 的數字以及一些字母。它的圖形為："
 
 #: activities/digital_electricity/components/SignalGenerator.qml:22
@@ -5796,12 +5800,12 @@ msgstr "用這裡提供的組件來打開數位燈。"
 msgctxt "TutorialDataset|"
 msgid ""
 "The NOT gate takes a single binary input and flips the value in the output."
-msgstr "NOT 閘接受單一一個二進位輸入，並反轉它的值以後輸出。"
+msgstr "NOT 閘接受單一一個二進制輸入，並反轉它的值以後輸出。"
 
 #: activities/digital_electricity/TutorialDataset.qml:215
 msgctxt "TutorialDataset|"
 msgid "The NAND gate takes two binary inputs and produces one binary output."
-msgstr "NAND 閘接受兩個二進位輸入，並且產生一個二進位輸出。"
+msgstr "NAND 閘接受兩個二進制輸入，並且產生一個二進制輸出。"
 
 #: activities/digital_electricity/TutorialDataset.qml:216
 msgctxt "TutorialDataset|"
@@ -5861,7 +5865,7 @@ msgstr "用這些邏輯閘，讓開關開啟時燈泡才會亮起來。"
 #: activities/digital_electricity/TutorialDataset.qml:308
 msgctxt "TutorialDataset|"
 msgid "The XOR Gate takes two binary inputs and produces one binary output."
-msgstr "XOR 閘接受兩個二進位輸入，並且產生一個二進位輸出。"
+msgstr "XOR 閘接受兩個二進制輸入，並且產生一個二進制輸出。"
 
 #: activities/digital_electricity/TutorialDataset.qml:309
 msgctxt "TutorialDataset|"
@@ -5895,7 +5899,7 @@ msgid ""
 "A NOR gate takes 2 binary inputs and outputs 1 if both of them are 0, "
 "otherwise produces an output of 0."
 msgstr ""
-"NOR 閘接受兩個二進位輸入，並且在兩個輸入都是 0 的時候輸出 1，不然就輸出 0。"
+"NOR 閘接受兩個二進制輸入，並且在兩個輸入都是 0 的時候輸出 1，不然就輸出 0。"
 
 #: activities/digital_electricity/TutorialDataset.qml:356
 msgctxt "TutorialDataset|"
@@ -5985,7 +5989,7 @@ msgid ""
 "It takes 4 bits as input represented in the binary coded decimal (BCD) "
 "format and converts the BCD number into a seven segment code."
 msgstr ""
-"它有四個位元的輸入，以二進位表示十進位數字（BCD），並將此數字轉換到七段顯示器"
+"它有四個位元的輸入，以二進位表示十進制數字（BCD），並將此數字轉換到七段顯示器"
 "顯示出來。"
 
 #: activities/digital_electricity/TutorialDataset.qml:527
@@ -7773,6 +7777,11 @@ msgid "Polar bear"
 msgstr "北極熊"
 
 #: activities/explore_world_animals/resource/board/board2.qml:31
+#, fuzzy
+#| msgctxt "board2|"
+#| msgid ""
+#| "The polar bear is one of the world's largest predatory mammals. It "
+#| "weights up to a ton and can be as long as 3 meters!"
 msgctxt "board2|"
 msgid ""
 "The polar bear is one of the world's largest predatory mammals. It weighs up "
@@ -15064,9 +15073,12 @@ msgstr "開啟語音"
 
 #. Activity title
 #: activities/learn_digits/ActivityInfo.qml:15
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Count the items"
 msgctxt "ActivityInfo|"
-msgid "Learn digits"
-msgstr "學習數字"
+msgid "Count and color the circles"
+msgstr "數一數物品"
 
 #. Help title
 #: activities/learn_digits/ActivityInfo.qml:17
@@ -15261,38 +15273,33 @@ msgstr "學習 1, 2, 3, 4 與 5 的減法。"
 
 #. Activity title
 #: activities/left_right_click/ActivityInfo.qml:14
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Numeration training"
 msgctxt "ActivityInfo|"
 msgid "Mouse click training"
-msgstr "滑鼠點擊訓練"
+msgstr "數量訓練"
 
 #. Help title
 #: activities/left_right_click/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid ""
 "Move animals to their homes using a left click or right click on your mouse."
-msgstr "用滑鼠左鍵或右鍵點擊，把動物帶回牠們的家。"
+msgstr ""
 
 #. Help goal
 #: activities/left_right_click/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Using the mouse. Left and right click training."
-msgstr "使用滑鼠。左鍵或右鍵點擊的訓練。"
+msgstr ""
 
 #. Help manual
 #: activities/left_right_click/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "A left click on a horse will move it to the stable. A right click on a "
-#| "monkey will move it to the tree. A message will show if you make the "
-#| "wrong click."
 msgctxt "ActivityInfo|"
 msgid ""
 "A left click on a fish will move it to the pond. A right click on a monkey "
 "will move it to the tree. A message will show if you make the wrong click."
 msgstr ""
-"用滑鼠左鍵點擊馬會將馬帶回馬房。用滑鼠右鍵點擊猴子會將牠帶回樹上。如果點擊錯"
-"了會有訊息提示。"
 
 #. Activity title
 #: activities/leftright/ActivityInfo.qml:15
@@ -17426,7 +17433,7 @@ msgstr "活動區塊選單可見"
 #: activities/menu/ConfigurationItem.qml:296
 msgctxt "ConfigurationItem|"
 msgid "Ask for confirmation to exit"
-msgstr "離開時確認"
+msgstr ""
 
 #: activities/menu/ConfigurationItem.qml:307
 msgctxt "ConfigurationItem|"
@@ -18777,16 +18784,6 @@ msgid ""
 "Tigers|live|in|forests.\n"
 "Football|is|a|team|game."
 msgstr ""
-"The|dog|barks.\n"
-"The|house|is|red.\n"
-"The|boy|reads|a book.\n"
-"My|friend|is|nice.\n"
-"What|a|beautiful|sight!\n"
-"Steve|jumps|into|the|pool.\n"
-"Jessica|wants|a|new|book.\n"
-"Mom|made|me|a|sandwich.\n"
-"Tigers|live|in|forests.\n"
-"Football|is|a|team|game."
 
 #: activities/ordering_sentences/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -18808,19 +18805,12 @@ msgid ""
 "Mom|has|asked|me|to|play|in|the|room.\n"
 "I|think|we|are|going|to|have|a|good|day."
 msgstr ""
-"The|sun|is|shining|in|the|sky.\n"
-"Kids|enjoy|playing|outside|in|the|evening.\n"
-"Are|you|going|out|for|lunch?\n"
-"The|girl|tied|her|tennis|shoes|and|went|outside.\n"
-"Sam|felt|sick|after|eating|five|huge|candy|bars.\n"
-"Our|family|takes|a|vacation|to|the|beach|every|year.\n"
-"Uncle|Joe|gave|me|a|red|toy|truck.\n"
-"When|you|finish|your|rice|you|can|eat|dessert.\n"
-"Mom|has|asked|me|to|play|in|the|room.\n"
-"I|think|we|are|going|to|have|a|good|day."
 
 #. Activity title
 #: activities/oware/ActivityInfo.qml:14
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Play oware against Tux"
 msgctxt "ActivityInfo|"
 msgid "Play oware (against Tux)"
 msgstr "跟小企鵝下西非播棋"
@@ -18903,6 +18893,9 @@ msgstr "移動不合規則！"
 
 #. Activity title
 #: activities/oware_2players/ActivityInfo.qml:14
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Play oware with a friend"
 msgctxt "ActivityInfo|"
 msgid "Play oware (with a friend)"
 msgstr "跟朋友下西非播棋"
@@ -24227,231 +24220,252 @@ msgid "Type the complete word as it falls, before it reaches the ground."
 msgstr "在單字掉到地面以前輸入完整的單字。"
 
 #: core/ChangeLog.qml:30
+#, fuzzy
+#| msgctxt "ChangeLog|"
+#| msgid "New maps and update of the maps for geography activities"
+msgctxt "ChangeLog|"
+msgid "Map of Spain added for geography activity"
+msgstr "地理活動新增與更新地圖"
+
+#: core/ChangeLog.qml:31
+msgctxt "ChangeLog|"
+msgid "Voices added for Ukrainian"
+msgstr ""
+
+#: core/ChangeLog.qml:32
+msgctxt "ChangeLog|"
+msgid ""
+"New command-line option to list all the activities and start on a specific "
+"one"
+msgstr ""
+
+#: core/ChangeLog.qml:33 core/ChangeLog.qml:68 core/ChangeLog.qml:71
+#: core/ChangeLog.qml:77
+msgctxt "ChangeLog|"
+msgid "Many usability improvements"
+msgstr "許多功能上的改進"
+
+#: core/ChangeLog.qml:34 core/ChangeLog.qml:52 core/ChangeLog.qml:67
+#: core/ChangeLog.qml:72 core/ChangeLog.qml:78
+msgctxt "ChangeLog|"
+msgid "Many new images"
+msgstr "新增許多圖片"
+
+#: core/ChangeLog.qml:35 core/ChangeLog.qml:73 core/ChangeLog.qml:79
+msgctxt "ChangeLog|"
+msgid "Many bug fixes"
+msgstr "許多小修正"
+
+#: core/ChangeLog.qml:39
 msgctxt "ChangeLog|"
 msgid ""
 "Reduce the size of the packages for all platforms and of the external word "
 "images set"
 msgstr "降低所有平台上套件還有外部單字影像集的大小"
 
-#: core/ChangeLog.qml:31
+#: core/ChangeLog.qml:40
 msgctxt "ChangeLog|"
 msgid "Improve images quality in several activities"
 msgstr "在一些活動中改善影像品質。"
 
-#: core/ChangeLog.qml:32
+#: core/ChangeLog.qml:41
 msgctxt "ChangeLog|"
 msgid "Fix some transitions in renewable_energy/watercycle on some platforms"
 msgstr "修正某些平台上水循環活動的問題"
 
-#: core/ChangeLog.qml:33
+#: core/ChangeLog.qml:42
 msgctxt "ChangeLog|"
 msgid "Fix dead keys ignored on Linux for typing activities"
 msgstr "修正 Linux 版中打字活動某些鍵被忽略的問題"
 
-#: core/ChangeLog.qml:34
+#: core/ChangeLog.qml:43
 msgctxt "ChangeLog|"
 msgid "Fix level reset when changing level manually in Logical associations"
 msgstr "修正邏輯相關活動中手動變更關卡時重置的問題"
 
-#: core/ChangeLog.qml:38
+#: core/ChangeLog.qml:47
 msgctxt "ChangeLog|"
 msgid ""
 "Fix Alphabet sequence, Even and odd numbers and Numbers in order activities"
 msgstr ""
 "修正排序活動中「排列字母順序」、「數字排序」、「奇數與偶數」等活動的錯誤"
 
-#: core/ChangeLog.qml:42 core/ChangeLog.qml:50
+#: core/ChangeLog.qml:51 core/ChangeLog.qml:59
 msgctxt "ChangeLog|"
 msgid "Several bug fixes"
 msgstr "許多小修正"
 
-#: core/ChangeLog.qml:43 core/ChangeLog.qml:58 core/ChangeLog.qml:63
-#: core/ChangeLog.qml:69
-msgctxt "ChangeLog|"
-msgid "Many new images"
-msgstr "新增許多圖片"
-
-#: core/ChangeLog.qml:44
+#: core/ChangeLog.qml:53
 msgctxt "ChangeLog|"
 msgid "Translation updated for Russian"
 msgstr "更新俄文翻譯。"
 
-#: core/ChangeLog.qml:45
+#: core/ChangeLog.qml:54
 msgctxt "ChangeLog|"
 msgid "New voices for Norwegian Nynorsk"
 msgstr "新增挪威語音。"
 
-#: core/ChangeLog.qml:49
+#: core/ChangeLog.qml:58
 msgctxt "ChangeLog|"
 msgid "Translations added for Breton, Czech and Macedonian"
 msgstr "新增捷克、馬其頓等翻譯。"
 
-#: core/ChangeLog.qml:54
+#: core/ChangeLog.qml:63
 msgctxt "ChangeLog|"
 msgid "Translation added for Azerbaijani"
 msgstr "新增亞塞拜然翻譯。"
 
-#: core/ChangeLog.qml:55
+#: core/ChangeLog.qml:64
 msgctxt "ChangeLog|"
 msgid "New maps and update of the maps for geography activities"
 msgstr "地理活動新增與更新地圖"
 
-#: core/ChangeLog.qml:56
+#: core/ChangeLog.qml:65
 msgctxt "ChangeLog|"
 msgid ""
 "New dataset containing loops operations for programming maze, and make "
 "tutorial images translated"
 msgstr "程式遊戲中新增包含迴圈操作的資料集，並將教學圖片做為可翻譯"
 
-#: core/ChangeLog.qml:57
+#: core/ChangeLog.qml:66
 msgctxt "ChangeLog|"
 msgid ""
 "Addition of a level to teach voltage source loop in analog electricity "
 "activity"
 msgstr "類比電路中新增教導電壓來源迴路的關卡"
 
-#: core/ChangeLog.qml:59 core/ChangeLog.qml:62 core/ChangeLog.qml:68
-msgctxt "ChangeLog|"
-msgid "Many usability improvements"
-msgstr "許多功能上的改進"
-
-#: core/ChangeLog.qml:64 core/ChangeLog.qml:70
-msgctxt "ChangeLog|"
-msgid "Many bug fixes"
-msgstr "許多小修正"
-
-#: core/ChangeLog.qml:67
+#: core/ChangeLog.qml:76
 msgctxt "ChangeLog|"
 msgid "New Activity Settings menu, with dataset selection"
 msgstr "新增活動設定選單，可以選擇資料集"
 
-#: core/ChangeLog.qml:73
+#: core/ChangeLog.qml:82
 msgctxt "ChangeLog|"
 msgid "New sub-categories to organize activities"
 msgstr "增加新的子類別"
 
-#: core/ChangeLog.qml:74
+#: core/ChangeLog.qml:83
 msgctxt "ChangeLog|"
 msgid "Translation added for Macedonian."
 msgstr "新增馬其頓翻譯。"
 
-#: core/ChangeLog.qml:75
+#: core/ChangeLog.qml:84
 msgctxt "ChangeLog|"
 msgid "New activities Programming Maze and Baby Tangram"
 msgstr "新增寫程式與重組形狀遊戲"
 
-#: core/ChangeLog.qml:76
+#: core/ChangeLog.qml:85
 msgctxt "ChangeLog|"
 msgid "New background music and volume settings."
 msgstr "新增背景音樂與音量設定。"
 
-#: core/ChangeLog.qml:77
+#: core/ChangeLog.qml:86
 msgctxt "ChangeLog|"
 msgid "New speed setting in several activities."
 msgstr "在一些活動中新增速度設定。"
 
-#: core/ChangeLog.qml:78
+#: core/ChangeLog.qml:87
 msgctxt "ChangeLog|"
 msgid "New option in chess to display captured pieces."
 msgstr "西洋棋遊戲中新增選項顯示被吃掉的子。"
 
-#: core/ChangeLog.qml:79
+#: core/ChangeLog.qml:88
 msgctxt "ChangeLog|"
 msgid "New images in Colors, Advanced colors and Target game."
 msgstr "在「認識顏色」、「認識更多的顏色」與「射飛鏢」等遊戲加上新圖片。"
 
-#: core/ChangeLog.qml:80
+#: core/ChangeLog.qml:89
 msgctxt "ChangeLog|"
 msgid "New voices for US English."
 msgstr "新增美式英文語音。"
 
-#: core/ChangeLog.qml:81 core/ChangeLog.qml:89
+#: core/ChangeLog.qml:90 core/ChangeLog.qml:98
 msgctxt "ChangeLog|"
 msgid "Many little fixes and improvements."
 msgstr "許多小修正與改進。"
 
-#: core/ChangeLog.qml:82
+#: core/ChangeLog.qml:91
 msgctxt "ChangeLog|"
 msgid ""
 "Translation updated for multiple languages (Breton, Brazilian Portuguese, "
 "Finnish...)."
 msgstr "更新多個語言翻譯。"
 
-#: core/ChangeLog.qml:83
+#: core/ChangeLog.qml:92
 msgctxt "ChangeLog|"
 msgid "Add Russian dataset for Click on letter activity."
 msgstr "字母遊戲新增俄文資料集。"
 
-#: core/ChangeLog.qml:84
+#: core/ChangeLog.qml:93
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in Dutch."
 msgstr "語言遊戲現在可以用荷蘭文進行。"
 
-#: core/ChangeLog.qml:85
+#: core/ChangeLog.qml:94
 msgctxt "ChangeLog|"
 msgid ""
 "Merge Norwegian counties Nord-Trøndelag and Sør-Trøndelag into Trøndelag in "
 "geo-country activity."
 msgstr "在地理國家遊戲中將 Nord-Trøndelag 與 Sør-Trøndelag 併入 Trøndelag 中。"
 
-#: core/ChangeLog.qml:86
+#: core/ChangeLog.qml:95
 msgctxt "ChangeLog|"
 msgid "Fix in braille activities where the cells start at 1, not 0."
 msgstr "修正布拉耶遊戲中的問題。"
 
-#: core/ChangeLog.qml:87
+#: core/ChangeLog.qml:96
 msgctxt "ChangeLog|"
 msgid "Translation added for Basque, Hungarian and Malayalam."
 msgstr "增加 Basque、匈牙利語、馬來語的翻譯。"
 
-#: core/ChangeLog.qml:88
+#: core/ChangeLog.qml:97
 msgctxt "ChangeLog|"
 msgid ""
 "Loading/saving of creations (Baby Wordprocessor, Balance Box and Piano "
 "Composition)."
 msgstr "載入/儲存創作（從小寶寶的文書處理器、平衡盒、鋼琴作曲家等遊戲）"
 
-#: core/ChangeLog.qml:89
+#: core/ChangeLog.qml:98
 msgctxt "ChangeLog|"
 msgid "Translations added for Scottish Gaelic."
 msgstr "增加 Scottish Gaelic 的翻譯。"
 
-#: core/ChangeLog.qml:90
+#: core/ChangeLog.qml:99
 msgctxt "ChangeLog|"
 msgid "License page added in configuration."
 msgstr "在設定中加入授權頁。"
 
-#: core/ChangeLog.qml:90
+#: core/ChangeLog.qml:99
 msgctxt "ChangeLog|"
 msgid "Multiple changes on layouts to improve the ergonomy."
 msgstr "對佈局進行多項更改，以改善人體工學。"
 
-#: core/ChangeLog.qml:91
+#: core/ChangeLog.qml:100
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in Polish, Swedish and Ukrainian."
 msgstr "Lang activity now available in Polish, Swedish and Ukrainian."
 
-#: core/ChangeLog.qml:92
+#: core/ChangeLog.qml:101
 msgctxt "ChangeLog|"
 msgid "Search feature."
 msgstr "搜尋功能。"
 
-#: core/ChangeLog.qml:93
+#: core/ChangeLog.qml:102
 msgctxt "ChangeLog|"
 msgid "A Changelog."
 msgstr "變更紀錄。"
 
-#: core/ChangeLog.qml:94
+#: core/ChangeLog.qml:103
 msgctxt "ChangeLog|"
 msgid "Many little fixes."
 msgstr "許多小修正。"
 
-#: core/ChangeLog.qml:94
+#: core/ChangeLog.qml:103
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in French."
 msgstr "語言遊戲現在可以用法文進行。"
 
-#: core/ChangeLog.qml:95
+#: core/ChangeLog.qml:104
 msgctxt "ChangeLog|"
 msgid ""
 "Adding a loading overlay to let the user know that some actions are taking "
@@ -24460,7 +24474,7 @@ msgstr ""
 "加上一個載入的進度條，讓使用者知道正在進行一些事情（像是載入遊戲），可能要花"
 "上一些時間。"
 
-#: core/ChangeLog.qml:95
+#: core/ChangeLog.qml:104
 msgctxt "ChangeLog|"
 msgid ""
 "Translations added for: Catalan (Valencian), Chinese Traditional, Finnish "
@@ -24469,12 +24483,12 @@ msgstr ""
 "新增翻譯包括：加泰羅尼亞語、正體中文、芬蘭語、俄羅斯語、斯洛伐克語、土耳其語"
 "等等。"
 
-#: core/ChangeLog.qml:96
+#: core/ChangeLog.qml:105
 msgctxt "ChangeLog|"
 msgid "Translations added for: Slovenian, German, Galician."
 msgstr "增加新語言的翻譯：斯洛伐尼亞、德文、加利西亞"
 
-#: core/ChangeLog.qml:121
+#: core/ChangeLog.qml:130
 #, qt-format
 msgctxt "ChangeLog|"
 msgid "Version %1:"
@@ -24552,10 +24566,12 @@ msgid "GCompris %1"
 msgstr "GCompris %1"
 
 #: core/DialogAbout.qml:57
-#, qt-format
+#, fuzzy, qt-format
+#| msgctxt "DialogAbout|"
+#| msgid "Based on Qt %1"
 msgctxt "DialogAbout|"
 msgid "Based on Qt %1 and %2"
-msgstr "基於 Qt %1 與 %2"
+msgstr "基於 Qt %1"
 
 #: core/DialogAbout.qml:61
 msgctxt "DialogAbout|"
@@ -24991,12 +25007,12 @@ msgstr "使用 OpenGL 算繪（比較快，但您的顯卡未必支援）。"
 #: core/main.cpp:199
 msgctxt "QObject|"
 msgid "Specify the activity when starting GCompris."
-msgstr "啟動 GCompris 時指定活動。"
+msgstr ""
 
 #: core/main.cpp:204
 msgctxt "QObject|"
 msgid "Outputs all the available activities on the standard output."
-msgstr "將所有活動的輸出導到標準輸出。"
+msgstr ""
 
 #: core/main.qml:233
 msgctxt "main|"
@@ -25089,6 +25105,54 @@ msgctxt "Tutorial|"
 msgid "Start"
 msgstr "開始"
 
+#~ msgctxt "ActivityInfo|"
+#~ msgid ""
+#~ "Play with the computer. Take turns to click the line in which you want to "
+#~ "drop a token. The first player to create a line of 4 tokens wins."
+#~ msgstr ""
+#~ "這個遊戲可以跟電腦一起玩。輪到您時，在想要下的地方點一下。誰先完成四個排成"
+#~ "一列的就獲勝。"
+
+#~ msgctxt "Calendar|"
+#~ msgid "Sunday"
+#~ msgstr "星期日"
+
+#~ msgctxt "Calendar|"
+#~ msgid "Monday"
+#~ msgstr "星期一"
+
+#~ msgctxt "Calendar|"
+#~ msgid "Tuesday"
+#~ msgstr "星期二"
+
+#~ msgctxt "Calendar|"
+#~ msgid "Wednesday"
+#~ msgstr "星期三"
+
+#~ msgctxt "Calendar|"
+#~ msgid "Thursday"
+#~ msgstr "星期四"
+
+#~ msgctxt "Calendar|"
+#~ msgid "Friday"
+#~ msgstr "星期五"
+
+#~ msgctxt "Calendar|"
+#~ msgid "Saturday"
+#~ msgstr "星期六"
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Play checkers against the computer"
+#~ msgstr "跟電腦下棋"
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Play checkers with your friend"
+#~ msgstr "與朋友下跳棋"
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Play chess against your friend"
+#~ msgstr "與朋友下棋"
+
 #~ msgctxt "board1|"
 #~ msgid "The horse goes 'neigh! neigh!'. Horses usually sleep standing up."
 #~ msgstr "馬的叫聲是「嘶~ 嘶~」。馬通常是站著睡覺的。"
@@ -25176,18 +25240,34 @@ msgstr "開始"
 #~ "等許多東西。"
 
 #~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Play with the computer. Take turns to click the line in which you want to "
-#~ "drop a token. The first player to create a line of 4 tokens wins."
-#~ msgstr ""
-#~ "這個遊戲可以跟電腦一起玩。輪到您時，在想要下的地方點一下。誰先完成四個排成"
-#~ "一列的就獲勝。"
+#~ msgid "Learn digits"
+#~ msgstr "學習數字"
 
 #~ msgctxt "ActivityInfo|"
 #~ msgid ""
 #~ "Play with the computer. First take turns to place nine pieces, and then "
 #~ "take turns to move your pieces."
 #~ msgstr "跟電腦下棋。一開始輪流放棋子，棋子都放完了就可以輪流移動棋子。"
+
+#~ msgctxt "Data|"
+#~ msgid ""
+#~ "The|dog|barks.\n"
+#~ "The|house|is|red.\n"
+#~ "The boy|reads|a book.\n"
+#~ "Football|is|a|team|game."
+#~ msgstr ""
+#~ "The|dog|barks.\n"
+#~ "The|house|is|red.\n"
+#~ "The boy|reads|a book.\n"
+#~ "Football|is|a|team|game."
+
+#~ msgctxt "Data|"
+#~ msgid ""
+#~ "The|sun|is|shining|in|the|sky.\n"
+#~ "Kids|enjoy|playing|outside|in|the|evening."
+#~ msgstr ""
+#~ "The|sun|is|shining|in|the|sky.\n"
+#~ "Kids|enjoy|playing|outside|in|the|evening."
 
 #~ msgctxt "ActivityInfo|"
 #~ msgid ""
@@ -25196,66 +25276,6 @@ msgstr "開始"
 #~ msgstr ""
 #~ "這個遊戲可以跟電腦一起玩。輪到您時，在想要下的地方點一下。誰先完成三個排成"
 #~ "一列的就獲勝。"
-
-#~ msgctxt "Calendar|"
-#~ msgid "Sunday"
-#~ msgstr "星期日"
-
-#~ msgctxt "Calendar|"
-#~ msgid "Monday"
-#~ msgstr "星期一"
-
-#~ msgctxt "Calendar|"
-#~ msgid "Tuesday"
-#~ msgstr "星期二"
-
-#~ msgctxt "Calendar|"
-#~ msgid "Wednesday"
-#~ msgstr "星期三"
-
-#~ msgctxt "Calendar|"
-#~ msgid "Thursday"
-#~ msgstr "星期四"
-
-#~ msgctxt "Calendar|"
-#~ msgid "Friday"
-#~ msgstr "星期五"
-
-#~ msgctxt "Calendar|"
-#~ msgid "Saturday"
-#~ msgstr "星期六"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Play checkers against the computer"
-#~ msgstr "跟電腦下棋"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Play checkers with your friend"
-#~ msgstr "與朋友下跳棋"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Play chess against your friend"
-#~ msgstr "與朋友下棋"
-
-#~ msgctxt "Data|"
-#~ msgid ""
-#~ "The|dog|barks.\n"
-#~ "The|house|is|red.\n"
-#~ "The boy|reads|a book.\n"
-#~ "Football|is|a|team|game."
-#~ msgstr ""
-#~ "The|dog|barks.\n"
-#~ "The|house|is|red.\n"
-#~ "The boy|reads|a book.\n"
-#~ "Football|is|a|team|game."
-
-#~ msgctxt "Data|"
-#~ msgid ""
-#~ "The|sun|is|shining|in|the|sky.\n"
-#~ "Kids|enjoy|playing|outside|in|the|evening."
-#~ msgstr ""
-#~ "The|sun|is|shining|in|the|sky.\n"
-#~ "Kids|enjoy|playing|outside|in|the|evening."
 
 #~ msgctxt "ActivityInfo|"
 #~ msgid ""

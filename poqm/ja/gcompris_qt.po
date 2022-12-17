@@ -1634,19 +1634,19 @@ msgstr "電気回路に電流が流れ過ぎると接続された部品が損傷
 
 #: activities/analog_electricity/TutorialDataset.qml:134
 #, fuzzy
-#| msgctxt "TutorialDataset|"
+#| msgctxt "ActivityInfo|"
 #| msgid ""
-#| "To repair a broken bulb in this activity, click on it after disconnecting "
-#| "from the circuit. Don't forget to disable the delete button after "
-#| "removing the connected wires."
+#| "In order to repair a broken bulb or LED, click on it after disconnecting "
+#| "it from the circuit. The simulation is updated in real time by any user "
+#| "action."
 msgctxt "TutorialDataset|"
 msgid ""
 "To repair a broken bulb in this activity, click on it after disconnecting it "
 "from the circuit. Don't forget to disable the delete button after removing "
 "the connected wires."
 msgstr ""
-"このアクティビティで壊れた電球を直すには、回路から外した後にクリックします。"
-"配線を消すのに使った削除ボタンを無効にするのを忘れないようにしてください。"
+"壊れた電球や LED を直すためには、回路から外した後にクリックします。このシミュ"
+"レーションはどんな操作もリアルタイムで更新します。"
 
 #: activities/analog_electricity/TutorialDataset.qml:135
 msgctxt "TutorialDataset|"
@@ -5155,10 +5155,10 @@ msgstr "Shift + 矢印: テキストの一部を選択"
 #: activities/comparator/ActivityInfo.qml:30
 #, fuzzy
 #| msgctxt "ActivityInfo|"
-#| msgid "Arrows: navigate inside selected area"
+#| msgid "Arrows: navigate inside the text"
 msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: select a symbol button"
-msgstr "矢印: 選択されたエリア内で移動します"
+msgstr "矢印: テキスト内を移動"
 
 #: activities/comparator/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
@@ -8960,12 +8960,9 @@ msgstr ""
 
 #. Activity title
 #: activities/fractions_find/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "advanced_colors|"
-#| msgid "Find the crimson butterfly"
 msgctxt "ActivityInfo|"
 msgid "Find the fractions"
-msgstr "あかね色のちょうちょを見つけよう"
+msgstr ""
 
 #. Help title
 #: activities/fractions_find/ActivityInfo.qml:16
@@ -9372,12 +9369,9 @@ msgstr "リグーリア"
 
 #. Region of Italy: Piedmont
 #: activities/geo-country/resource/board/board11_0.qml:31
-#, fuzzy
-#| msgctxt "board11_0|"
-#| msgid "Piemonte"
 msgctxt "board11_0|"
 msgid "Piedmont"
-msgstr "ピエモンテ"
+msgstr ""
 
 #. Region of Italy: Aosta Valley
 #: activities/geo-country/resource/board/board11_0.qml:38
@@ -9387,12 +9381,9 @@ msgstr ""
 
 #. Region of Italy: Lombardy
 #: activities/geo-country/resource/board/board11_0.qml:45
-#, fuzzy
-#| msgctxt "board11_0|"
-#| msgid "Lombardia"
 msgctxt "board11_0|"
 msgid "Lombardy"
-msgstr "ロンバルディア"
+msgstr ""
 
 #. Region of Italy: Trentino-South Tyrol
 #: activities/geo-country/resource/board/board11_0.qml:52
@@ -9414,21 +9405,15 @@ msgstr "フリウリ＝ヴェネツィア・ジュリア"
 
 #. Region of Italy: Emilia-Romagna
 #: activities/geo-country/resource/board/board11_0.qml:73
-#, fuzzy
-#| msgctxt "board11_0|"
-#| msgid "Emilia Romagna"
 msgctxt "board11_0|"
 msgid "Emilia-Romagna"
-msgstr "エミリア＝ロマーニャ"
+msgstr ""
 
 #. Region of Italy: Tuscany
 #: activities/geo-country/resource/board/board11_0.qml:80
-#, fuzzy
-#| msgctxt "board11_0|"
-#| msgid "Toscana"
 msgctxt "board11_0|"
 msgid "Tuscany"
-msgstr "トスカーナ"
+msgstr ""
 
 #. Region of Italy: Umbria
 #: activities/geo-country/resource/board/board11_0.qml:87
@@ -9486,29 +9471,20 @@ msgstr "カラブリア"
 
 #. Region of Italy: Sicily
 #: activities/geo-country/resource/board/board11_0.qml:150
-#, fuzzy
-#| msgctxt "board11_0|"
-#| msgid "Sicilia"
 msgctxt "board11_0|"
 msgid "Sicily"
-msgstr "シチリア"
+msgstr ""
 
 #. Region of Italy: Sardinia
 #: activities/geo-country/resource/board/board11_0.qml:157
-#, fuzzy
-#| msgctxt "board11_0|"
-#| msgid "Sardegna"
 msgctxt "board11_0|"
 msgid "Sardinia"
-msgstr "サルデーニャ"
+msgstr ""
 
 #: activities/geo-country/resource/board/board12_0.qml:15
-#, fuzzy
-#| msgctxt "board8_0|"
-#| msgid "Districts of Canada"
 msgctxt "board12_0|"
 msgid "States and Union Territories of India"
-msgstr "カナダの地域"
+msgstr ""
 
 #. State of India: Himachal Pradesh
 #: activities/geo-country/resource/board/board12_0.qml:24
@@ -9555,11 +9531,11 @@ msgstr "グジャラート"
 #. State of India: Haryana
 #: activities/geo-country/resource/board/board12_0.qml:73
 #, fuzzy
-#| msgctxt "board12_0|"
-#| msgid "Harayana"
+#| msgctxt "board4_0|"
+#| msgid "Guyana"
 msgctxt "board12_0|"
 msgid "Haryana"
-msgstr "ハリヤーナー"
+msgstr "ガイアナ"
 
 #. State of India: Madhya Pradesh
 #: activities/geo-country/resource/board/board12_0.qml:80
@@ -9695,12 +9671,9 @@ msgstr "デリー"
 
 #. Union Territory of India: Chandigarh
 #: activities/geo-country/resource/board/board12_0.qml:235
-#, fuzzy
-#| msgctxt "board12_0|"
-#| msgid "Chhattisgarh"
 msgctxt "board12_0|"
 msgid "Chandigarh"
-msgstr "チャッティースガル"
+msgstr ""
 
 #. Union Territory of India: Dadra and Nagar Haveli and Daman and Diu
 #: activities/geo-country/resource/board/board12_0.qml:243
@@ -9716,12 +9689,9 @@ msgstr ""
 
 #. Union Territory of India: Lakshadweep
 #: activities/geo-country/resource/board/board12_0.qml:258
-#, fuzzy
-#| msgctxt "board12_0|"
-#| msgid "Lakshadweep Islands"
 msgctxt "board12_0|"
 msgid "Lakshadweep"
-msgstr "ラクシャディープ諸島"
+msgstr ""
 
 #. Union Territory of India: Jammu and Kashmir
 #: activities/geo-country/resource/board/board12_0.qml:265
@@ -9737,11 +9707,11 @@ msgstr ""
 
 #: activities/geo-country/resource/board/board13_0.qml:15
 #, fuzzy
-#| msgctxt "board8_0|"
-#| msgid "Districts of Canada"
+#| msgctxt "board13_0|"
+#| msgid "Districts of Australia"
 msgctxt "board13_0|"
 msgid "States and Territories of Australia"
-msgstr "カナダの地域"
+msgstr "オーストラリアの地域"
 
 #. State of Australia: Western Australia
 #: activities/geo-country/resource/board/board13_0.qml:24
@@ -9793,11 +9763,11 @@ msgstr ""
 
 #: activities/geo-country/resource/board/board14_0.qml:15
 #, fuzzy
-#| msgctxt "board3_0|"
-#| msgid "Districts of Argentina"
+#| msgctxt "board14_0|"
+#| msgid "Districts of China"
 msgctxt "board14_0|"
 msgid "Provinces of China"
-msgstr "アルゼンチンの地域"
+msgstr "中国の地域"
 
 #. Province of China: Xinjiang
 #: activities/geo-country/resource/board/board14_0.qml:24
@@ -10228,29 +10198,26 @@ msgstr "北アフリカ"
 #. Historical Region of Romania: Moldavia
 #: activities/geo-country/resource/board/board16_0.qml:45
 #, fuzzy
-#| msgctxt "board16_0|"
+#| msgctxt "board6_0|"
 #| msgid "Moldova"
 msgctxt "board16_0|"
 msgid "Moldavia"
-msgstr "Moldova"
+msgstr "モルドバ"
 
 #. Historical Region of Romania: Bukovina
 #: activities/geo-country/resource/board/board16_0.qml:52
-#, fuzzy
-#| msgctxt "board16_0|"
-#| msgid "Bucovina"
 msgctxt "board16_0|"
 msgid "Bukovina"
-msgstr "ブコヴィナ"
+msgstr ""
 
 #. Historical Region of Romania: Transylvania
 #: activities/geo-country/resource/board/board16_0.qml:59
 #, fuzzy
-#| msgctxt "board16_0|"
-#| msgid "Transilvania"
+#| msgctxt "board8_0|"
+#| msgid "Tanzania"
 msgctxt "board16_0|"
 msgid "Transylvania"
-msgstr "トランシルヴァニア"
+msgstr "タンザニア"
 
 #. Historical Region of Romania: Maramureș
 #: activities/geo-country/resource/board/board16_0.qml:66
@@ -10452,12 +10419,9 @@ msgstr "フランスの地域"
 
 #. Region of France: Corsica
 #: activities/geo-country/resource/board/board1_0.qml:27
-#, fuzzy
-#| msgctxt "board1_0|"
-#| msgid "Corse"
 msgctxt "board1_0|"
 msgid "Corsica"
-msgstr "コルス"
+msgstr ""
 
 #. Region of France: Nouvelle-Aquitaine
 #: activities/geo-country/resource/board/board1_0.qml:35
@@ -10497,12 +10461,9 @@ msgstr "ペイ・ド・ラ・ロワール地域圏"
 
 #. Region of France: Île-de-France
 #: activities/geo-country/resource/board/board1_0.qml:83
-#, fuzzy
-#| msgctxt "board1_0|"
-#| msgid "Île-de-france"
 msgctxt "board1_0|"
 msgid "Île-de-France"
-msgstr "イル＝ド＝フランス地域圏"
+msgstr ""
 
 #. Region of France: Brittany
 #: activities/geo-country/resource/board/board1_0.qml:91
@@ -10513,20 +10474,17 @@ msgstr ""
 #. Region of France: Normandy
 #: activities/geo-country/resource/board/board1_0.qml:99
 #, fuzzy
-#| msgctxt "board1_0|"
-#| msgid "Normandie"
+#| msgctxt "board5_0|"
+#| msgid "Germany"
 msgctxt "board1_0|"
 msgid "Normandy"
-msgstr "ノルマンディー地域圏"
+msgstr "ドイツ"
 
 #. Region of France: Hauts de France
 #: activities/geo-country/resource/board/board1_0.qml:107
-#, fuzzy
-#| msgctxt "board1_0|"
-#| msgid "Haut de France"
 msgctxt "board1_0|"
 msgid "Hauts de France"
-msgstr "オー＝ド＝フランス地域圏"
+msgstr ""
 
 #. Region of France: Grand est
 #: activities/geo-country/resource/board/board1_0.qml:115
@@ -10550,12 +10508,9 @@ msgstr "ドイツの地域"
 
 #. State of Germany: Thuringia
 #: activities/geo-country/resource/board/board2_0.qml:24
-#, fuzzy
-#| msgctxt "board2_0|"
-#| msgid "Thüringen"
 msgctxt "board2_0|"
 msgid "Thuringia"
-msgstr "テューリンゲン自由州"
+msgstr ""
 
 #. State of Germany: Schleswig-Holstein
 #: activities/geo-country/resource/board/board2_0.qml:31
@@ -10571,12 +10526,9 @@ msgstr ""
 
 #. State of Germany: Saxony-Anhalt
 #: activities/geo-country/resource/board/board2_0.qml:45
-#, fuzzy
-#| msgctxt "board2_0|"
-#| msgid "Sachsen-Anhalt"
 msgctxt "board2_0|"
 msgid "Saxony-Anhalt"
-msgstr "ザクセン＝アンハルト州"
+msgstr ""
 
 #. State of Germany: Saarland
 #: activities/geo-country/resource/board/board2_0.qml:52
@@ -10586,21 +10538,15 @@ msgstr "ザールラント州"
 
 #. State of Germany: Rhineland-Palatinate
 #: activities/geo-country/resource/board/board2_0.qml:59
-#, fuzzy
-#| msgctxt "board2_0|"
-#| msgid "Rheinland-Pfalz"
 msgctxt "board2_0|"
 msgid "Rhineland-Palatinate"
-msgstr "ラインラント＝プファルツ州"
+msgstr ""
 
 #. State of Germany: North Rhine-Westphalia
 #: activities/geo-country/resource/board/board2_0.qml:66
-#, fuzzy
-#| msgctxt "board2_0|"
-#| msgid "Nordrhein-Westfalen"
 msgctxt "board2_0|"
 msgid "North Rhine-Westphalia"
-msgstr "ノルトライン＝ヴェストファーレン州"
+msgstr ""
 
 #. State of Germany: Lower Saxony
 #: activities/geo-country/resource/board/board2_0.qml:73
@@ -10616,12 +10562,9 @@ msgstr "メクレンブルク＝フォアポンメルン州"
 
 #. State of Germany: Hesse
 #: activities/geo-country/resource/board/board2_0.qml:87
-#, fuzzy
-#| msgctxt "board2_0|"
-#| msgid "Hessen"
 msgctxt "board2_0|"
 msgid "Hesse"
-msgstr "ヘッセン州"
+msgstr ""
 
 #. State of Germany: Hamburg
 #: activities/geo-country/resource/board/board2_0.qml:94
@@ -10672,12 +10615,9 @@ msgstr "アルゼンチンの地域"
 
 #. Province of Argentina: Tucumán
 #: activities/geo-country/resource/board/board3_0.qml:24
-#, fuzzy
-#| msgctxt "board3_0|"
-#| msgid "Tucuman"
 msgctxt "board3_0|"
 msgid "Tucumán"
-msgstr "トゥクマン州"
+msgstr ""
 
 #. Province of Argentina: Tierra del Fuego
 #: activities/geo-country/resource/board/board3_0.qml:31
@@ -10723,21 +10663,15 @@ msgstr "サルタ州"
 
 #. Province of Argentina: Río Negro
 #: activities/geo-country/resource/board/board3_0.qml:80
-#, fuzzy
-#| msgctxt "board3_0|"
-#| msgid "Rio Negro"
 msgctxt "board3_0|"
 msgid "Río Negro"
-msgstr "リオネグロ州"
+msgstr ""
 
 #. Province of Argentina: Neuquén
 #: activities/geo-country/resource/board/board3_0.qml:87
-#, fuzzy
-#| msgctxt "board3_0|"
-#| msgid "Neuquen"
 msgctxt "board3_0|"
 msgid "Neuquén"
-msgstr "ネウケン州"
+msgstr ""
 
 #. Province of Argentina: Misiones
 #: activities/geo-country/resource/board/board3_0.qml:94
@@ -10789,12 +10723,9 @@ msgstr "コリエンテス州"
 
 #. Province of Argentina: Córdoba
 #: activities/geo-country/resource/board/board3_0.qml:150
-#, fuzzy
-#| msgctxt "board3_0|"
-#| msgid "Cordoba"
 msgctxt "board3_0|"
 msgid "Córdoba"
-msgstr "コルドバ州"
+msgstr ""
 
 #. Province of Argentina: Chubut
 #: activities/geo-country/resource/board/board3_0.qml:157
@@ -10822,29 +10753,23 @@ msgstr "ブエノスアイレス"
 
 #: activities/geo-country/resource/board/board4_0.qml:15
 #, fuzzy
-#| msgctxt "board3_0|"
-#| msgid "Districts of Argentina"
+#| msgctxt "board4_0|"
+#| msgid "Districts of Poland"
 msgctxt "board4_0|"
 msgid "Provinces of Poland"
-msgstr "アルゼンチンの地域"
+msgstr "ポーランドの地域"
 
 #. Province of Poland: Lower Silesian
 #: activities/geo-country/resource/board/board4_0.qml:24
-#, fuzzy
-#| msgctxt "board10_0|"
-#| msgid "Louisiana"
 msgctxt "board4_0|"
 msgid "Lower Silesian"
-msgstr "ルイジアナ"
+msgstr ""
 
 #. Province of Poland: West Pomeranian
 #: activities/geo-country/resource/board/board4_0.qml:31
-#, fuzzy
-#| msgctxt "board15_1|"
-#| msgid "West Lothian"
 msgctxt "board4_0|"
 msgid "West Pomeranian"
-msgstr "ウェスト・ロージアン"
+msgstr ""
 
 #. Province of Poland: Greater Poland
 #: activities/geo-country/resource/board/board4_0.qml:38
@@ -10857,12 +10782,9 @@ msgstr "グリーンランド"
 
 #. Province of Poland: Warmian-Masurian
 #: activities/geo-country/resource/board/board4_0.qml:45
-#, fuzzy
-#| msgctxt "board4_0|"
-#| msgid "Warminsko-Mazurskie"
 msgctxt "board4_0|"
 msgid "Warmian-Masurian"
-msgstr "ヴァルミア・マズールィ県"
+msgstr ""
 
 #. Province of Poland: Holy Cross
 #: activities/geo-country/resource/board/board4_0.qml:52
@@ -10899,12 +10821,9 @@ msgstr ""
 
 #. Province of Poland: Opole
 #: activities/geo-country/resource/board/board4_0.qml:87
-#, fuzzy
-#| msgctxt "board4_0|"
-#| msgid "Opolskie"
 msgctxt "board4_0|"
 msgid "Opole"
-msgstr "オポーレ県"
+msgstr ""
 
 #. Province of Poland: Masovian
 #: activities/geo-country/resource/board/board4_0.qml:94
@@ -10929,12 +10848,9 @@ msgstr ""
 
 #. Province of Poland: Lubusz
 #: activities/geo-country/resource/board/board4_0.qml:115
-#, fuzzy
-#| msgctxt "board4_0|"
-#| msgid "Lubuskie"
 msgctxt "board4_0|"
 msgid "Lubusz"
-msgstr "ルブシュ県"
+msgstr ""
 
 #. Province of Poland: Lublin
 #: activities/geo-country/resource/board/board4_0.qml:122
@@ -11505,15 +11421,21 @@ msgstr ""
 
 #. County of Norway: Innlandet
 #: activities/geo-country/resource/board/board6_0.qml:82
+#, fuzzy
+#| msgctxt "board5_0|"
+#| msgid "Finland"
 msgctxt "board6_0|"
 msgid "Innlandet"
-msgstr ""
+msgstr "フィンランド"
 
 #. County of Norway: Vestland
 #: activities/geo-country/resource/board/board6_0.qml:89
+#, fuzzy
+#| msgctxt "board2_0|"
+#| msgid "Iceland"
 msgctxt "board6_0|"
 msgid "Vestland"
-msgstr ""
+msgstr "アイスランド"
 
 #. County of Norway: Rogaland
 #: activities/geo-country/resource/board/board6_0.qml:96
@@ -11793,12 +11715,9 @@ msgstr "サカテカス州"
 
 #. State of Mexico: Yucatán
 #: activities/geo-country/resource/board/board9_0.qml:31
-#, fuzzy
-#| msgctxt "board9_0|"
-#| msgid "Yucatan"
 msgctxt "board9_0|"
 msgid "Yucatán"
-msgstr "ユカタン州"
+msgstr ""
 
 #. State of Mexico: Veracruz
 #: activities/geo-country/resource/board/board9_0.qml:38
@@ -11838,12 +11757,9 @@ msgstr "シナロア州"
 
 #. State of Mexico: San Luis Potosí
 #: activities/geo-country/resource/board/board9_0.qml:80
-#, fuzzy
-#| msgctxt "board9_0|"
-#| msgid "San Luis Potosi"
 msgctxt "board9_0|"
 msgid "San Luis Potosí"
-msgstr "サン・ルイス・ポトシ州"
+msgstr ""
 
 #. State of Mexico: Quintana Roo
 #: activities/geo-country/resource/board/board9_0.qml:87
@@ -11853,12 +11769,9 @@ msgstr "キンターナ・ロー州"
 
 #. State of Mexico: Querétaro
 #: activities/geo-country/resource/board/board9_0.qml:94
-#, fuzzy
-#| msgctxt "board9_0|"
-#| msgid "Queretaro"
 msgctxt "board9_0|"
 msgid "Querétaro"
-msgstr "ケレタロ州"
+msgstr ""
 
 #. State of Mexico: Puebla
 #: activities/geo-country/resource/board/board9_0.qml:101
@@ -11874,12 +11787,9 @@ msgstr "オアハカ州"
 
 #. State of Mexico: Nuevo León
 #: activities/geo-country/resource/board/board9_0.qml:115
-#, fuzzy
-#| msgctxt "board9_0|"
-#| msgid "Nuevo Leon"
 msgctxt "board9_0|"
 msgid "Nuevo León"
-msgstr "ヌエボ・レオン州"
+msgstr ""
 
 #. State of Mexico: Nayarit
 #: activities/geo-country/resource/board/board9_0.qml:122
@@ -11895,12 +11805,9 @@ msgstr "モレロス州"
 
 #. State of Mexico: Michoacán
 #: activities/geo-country/resource/board/board9_0.qml:136
-#, fuzzy
-#| msgctxt "board9_0|"
-#| msgid "Michoacan"
 msgctxt "board9_0|"
 msgid "Michoacán"
-msgstr "ミチョアカン州"
+msgstr ""
 
 #. State of Mexico: Jalisco
 #: activities/geo-country/resource/board/board9_0.qml:143
@@ -11928,12 +11835,9 @@ msgstr "グアナフアト州"
 
 #. State of Mexico: Estado de México
 #: activities/geo-country/resource/board/board9_0.qml:171
-#, fuzzy
-#| msgctxt "board9_0|"
-#| msgid "Estado de Mexico"
 msgctxt "board9_0|"
 msgid "Estado de México"
-msgstr "メヒコ州"
+msgstr ""
 
 #. State of Mexico: Durango
 #: activities/geo-country/resource/board/board9_0.qml:178
@@ -11944,11 +11848,11 @@ msgstr "ドゥランゴ州"
 #. State of Mexico: Districto Federal
 #: activities/geo-country/resource/board/board9_0.qml:185
 #, fuzzy
-#| msgctxt "board9_0|"
-#| msgid "Distrito Federal"
+#| msgctxt "board1_0|"
+#| msgid "Districts of France"
 msgctxt "board9_0|"
 msgid "Districto Federal"
-msgstr "連邦区"
+msgstr "フランスの地域"
 
 #. State of Mexico: Coahuila
 #: activities/geo-country/resource/board/board9_0.qml:192
@@ -11976,12 +11880,9 @@ msgstr "カンペチェ州"
 
 #. State of Mexico: Baja California
 #: activities/geo-country/resource/board/board9_0.qml:220
-#, fuzzy
-#| msgctxt "board9_0|"
-#| msgid "Baja California Sur"
 msgctxt "board9_0|"
 msgid "Baja California"
-msgstr "バハ・カリフォルニア・スル州"
+msgstr ""
 
 #. State of Mexico: Baja California Sur
 #: activities/geo-country/resource/board/board9_0.qml:227
@@ -12229,11 +12130,11 @@ msgstr "フィリピン"
 
 #: activities/geography/resource/board/board13_0.qml:15
 #, fuzzy
-#| msgctxt "board15_1|"
-#| msgid "East Ayrshire"
+#| msgctxt "board10_0|"
+#| msgid "East Timor"
 msgctxt "board13_0|"
 msgid "East Asia"
-msgstr "イースト・エアシャー"
+msgstr "東ティモール"
 
 #: activities/geography/resource/board/board13_0.qml:24
 #, fuzzy
@@ -13183,11 +13084,11 @@ msgstr "アンゴラ"
 
 #: activities/geography/resource/board/board9_0.qml:15
 #, fuzzy
-#| msgctxt "board13_0|"
-#| msgid "Western Australia"
+#| msgctxt "board7_0|"
+#| msgid "Western Sahara"
 msgctxt "board9_0|"
 msgid "Western Asia"
-msgstr "西オーストラリア"
+msgstr "西サハラ"
 
 #: activities/geography/resource/board/board9_0.qml:24
 msgctxt "board9_0|"
@@ -15038,33 +14939,19 @@ msgid ""
 msgstr ""
 
 #: activities/learn_decimals/learn_decimals.js:48
-#, fuzzy
-#| msgctxt "ProgrammingMaze|"
-#| msgid ""
-#| "Click on Tux or press the Enter key to reset it or click on the RELOAD "
-#| "button to reload the level."
 msgctxt "learn_decimals|"
 msgid ""
 "Click on the squares to subtract them and display the result of the "
 "operation, and click on the OK button to validate your answer."
 msgstr ""
-"エンターキーかタックスをクリックすることでリセットし、またはリロードボタンを"
-"押してステージ全体を再読み込みします。"
 
 #: activities/learn_decimals/learn_decimals.js:52
 #: activities/learn_decimals/learn_decimals.js:67
-#, fuzzy
-#| msgctxt "ProgrammingMaze|"
-#| msgid ""
-#| "Click on Tux or press the Enter key to reset it or click on the RELOAD "
-#| "button to reload the level."
 msgctxt "learn_decimals|"
 msgid ""
 "If the answer is correct, type the corresponding result, and click on the OK "
 "button to validate your answer."
 msgstr ""
-"エンターキーかタックスをクリックすることでリセットし、またはリロードボタンを"
-"押してステージ全体を再読み込みします。"
 
 #: activities/learn_decimals/learn_decimals.js:59
 msgctxt "learn_decimals|"
@@ -15176,18 +15063,11 @@ msgstr ""
 
 #: activities/learn_decimals_additions/ActivityInfo.qml:24
 #: activities/learn_decimals_subtractions/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ProgrammingMaze|"
-#| msgid ""
-#| "Click on Tux or press the Enter key to reset it or click on the RELOAD "
-#| "button to reload the level."
 msgctxt "ActivityInfo|"
 msgid ""
 "If the answer is correct, type the corresponding result, and click on the OK "
 "button to validate your answer."
 msgstr ""
-"エンターキーかタックスをクリックすることでリセットし、またはリロードボタンを"
-"押してステージ全体を再読み込みします。"
 
 #: activities/learn_decimals_additions/ActivityInfo.qml:27
 #: activities/learn_decimals_subtractions/ActivityInfo.qml:27
@@ -15310,7 +15190,7 @@ msgstr ""
 #. Activity title
 #: activities/learn_digits/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
-msgid "Learn digits"
+msgid "Count and color the circles"
 msgstr ""
 
 #. Help title
@@ -15961,20 +15841,14 @@ msgid ""
 msgstr ""
 
 #: activities/magic-hat-plus/resource/1/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Decimal number system."
 msgctxt "Data|"
 msgid "Add stars up to 3."
-msgstr "十進数。"
+msgstr ""
 
 #: activities/magic-hat-plus/resource/2/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Decimal number system."
 msgctxt "Data|"
 msgid "Add stars up to 4."
-msgstr "十進数。"
+msgstr ""
 
 #: activities/magic-hat-plus/resource/3/Data.qml:13
 msgctxt "Data|"
@@ -17101,9 +16975,12 @@ msgstr ""
 
 #. Activity title
 #: activities/memory-tux/ActivityInfo.qml:15
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Bargame (against Tux)"
 msgctxt "ActivityInfo|"
 msgid "Memory game with images against Tux"
-msgstr ""
+msgstr "ボールゲーム(タックスと)"
 
 #. Help title
 #: activities/memory-tux/ActivityInfo.qml:17
@@ -18590,12 +18467,9 @@ msgstr ""
 
 #. Activity title
 #: activities/ordering_alphabets/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Braille alphabet."
 msgctxt "ActivityInfo|"
 msgid "Ordering letters"
-msgstr "点字アルファベット。"
+msgstr ""
 
 #. Help title
 #: activities/ordering_alphabets/ActivityInfo.qml:23
@@ -18607,9 +18481,12 @@ msgstr ""
 
 #. Help goal
 #: activities/ordering_alphabets/ActivityInfo.qml:26
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Learn the water cycle."
 msgctxt "ActivityInfo|"
 msgid "Learn the alphabetical order."
-msgstr ""
+msgstr "水の循環を学ぶ。"
 
 #. Help manual
 #: activities/ordering_alphabets/ActivityInfo.qml:30
@@ -18728,11 +18605,11 @@ msgstr ""
 #. Activity title
 #: activities/ordering_numbers/ActivityInfo.qml:20
 #, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Addition of numbers"
+#| msgctxt "Data|"
+#| msgid "Large grids using numbers."
 msgctxt "ActivityInfo|"
 msgid "Ordering numbers"
-msgstr "たしざん"
+msgstr "数字を使った大きい表。"
 
 #. Help title
 #: activities/ordering_numbers/ActivityInfo.qml:22
@@ -18775,42 +18652,34 @@ msgstr "アイテムをドラッグ＆ドロップして合わせよう。"
 #: activities/ordering_numbers/ordering.js:68
 #, fuzzy
 #| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Drag and drop the map pieces to their correct locations to complete the "
-#| "map."
+#| msgid "Drag and Drop the items to match them."
 msgctxt "ordering|"
 msgid "Drag and drop the items in descending order."
-msgstr "地図のピースを正しい場所にドラッグ＆ドロップして完成させよう。"
+msgstr "アイテムをドラッグ＆ドロップして合わせよう。"
 
 #: activities/ordering_numbers/ordering.js:69
 #, fuzzy
 #| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Drag and drop the map pieces to their correct locations to complete the "
-#| "map."
+#| msgid "Drag and Drop the items to match them."
 msgctxt "ordering|"
 msgid "Drag and drop the letters in alphabetical order."
-msgstr "地図のピースを正しい場所にドラッグ＆ドロップして完成させよう。"
+msgstr "アイテムをドラッグ＆ドロップして合わせよう。"
 
 #: activities/ordering_numbers/ordering.js:70
 #, fuzzy
 #| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Drag and drop the map pieces to their correct locations to complete the "
-#| "map."
+#| msgid "Drag and Drop the shapes on their respective targets."
 msgctxt "ordering|"
 msgid "Drag and drop the letters in reverse alphabetical order."
-msgstr "地図のピースを正しい場所にドラッグ＆ドロップして完成させよう。"
+msgstr "図形を正しい場所にドラッグ＆ドロップしよう。"
 
 #: activities/ordering_numbers/ordering.js:71
 #, fuzzy
 #| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Drag and drop the map pieces to their correct locations to complete the "
-#| "map."
+#| msgid "Drag and Drop the items to match them."
 msgctxt "ordering|"
 msgid "Drag and drop the items in chronological order."
-msgstr "地図のピースを正しい場所にドラッグ＆ドロップして完成させよう。"
+msgstr "アイテムをドラッグ＆ドロップして合わせよう。"
 
 #: activities/ordering_numbers/ordering.js:72
 msgctxt "ordering|"
@@ -20174,9 +20043,12 @@ msgstr ""
 
 #. Activity title
 #: activities/positions/ActivityInfo.qml:15
+#, fuzzy
+#| msgctxt "DialogChooseLevel|"
+#| msgid "Options"
 msgctxt "ActivityInfo|"
 msgid "Positions"
-msgstr ""
+msgstr "オプション"
 
 #. Help title
 #: activities/positions/ActivityInfo.qml:17
@@ -20202,10 +20074,10 @@ msgstr ""
 #: activities/positions/ActivityInfo.qml:27
 #, fuzzy
 #| msgctxt "ActivityInfo|"
-#| msgid "Space or Enter: select an item"
+#| msgid "Space or Enter: validate your answer"
 msgctxt "ActivityInfo|"
 msgid "Space or Enter: validate selected answer"
-msgstr "スペースやエンター: アイテムをえらぶ"
+msgstr "スペースまたはエンター: 答えを決定"
 
 #: activities/positions/resource/1/Data.qml:14
 msgctxt "Data|"
@@ -20278,12 +20150,9 @@ msgstr ""
 #. it refers to the beneath position
 #: activities/positions/resource/1/Data.qml:50
 #: activities/positions/resource/2/Data.qml:56
-#, fuzzy
-#| msgctxt "board15_1|"
-#| msgid "Dundee"
 msgctxt "Data|"
 msgid "under"
-msgstr "ダンディー"
+msgstr ""
 
 #: activities/positions/resource/1/Data.qml:51
 #: activities/positions/resource/2/Data.qml:57
@@ -20364,10 +20233,10 @@ msgstr ""
 #: activities/programmingMaze/ActivityInfo.qml:27
 #, fuzzy
 #| msgctxt "ActivityInfo|"
-#| msgid "Arrows: navigate inside selected area"
+#| msgid "Arrows: navigate inside the text"
 msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: navigate inside selected area"
-msgstr "矢印: 選択されたエリア内で移動します"
+msgstr "矢印: テキスト内を移動"
 
 #: activities/programmingMaze/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
@@ -20380,30 +20249,29 @@ msgstr ""
 #, fuzzy
 #| msgctxt "ActivityInfo|"
 #| msgid ""
-#| "Space: select an instruction or append selected instruction in main/"
-#| "procedure area"
+#| "4. To delete the selected instruction in the main/procedure code area:"
 msgctxt "ActivityInfo|"
 msgid ""
 "Space: select an instruction or append selected instruction in main/"
 "procedure/loop area"
-msgstr ""
-"スペース: 指示を選ぶか、選択された指示をメイン/処理エリアに割り当てます。"
+msgstr "4. メイン/処理エリアの指示を削除するには:"
 
 #: activities/programmingMaze/ActivityInfo.qml:30
 #, fuzzy
 #| msgctxt "ActivityInfo|"
-#| msgid "Tab: switch between instructions area and main/procedure area"
+#| msgid "5. To edit an instruction in the main/procedure code area:"
 msgctxt "ActivityInfo|"
 msgid "Tab: switch between instructions area and main/procedure/loop area"
-msgstr "Tab: 指示エリアとメイン/処理エリアを切り替えます"
+msgstr "5. メイン/処理エリア内の指示を編集するには:"
 
 #: activities/programmingMaze/ActivityInfo.qml:31
 #, fuzzy
 #| msgctxt "ActivityInfo|"
-#| msgid "Delete: remove selected instruction from main/procedure area"
+#| msgid ""
+#| "4. To delete the selected instruction in the main/procedure code area:"
 msgctxt "ActivityInfo|"
 msgid "Delete: remove selected instruction from main/procedure/loop area"
-msgstr "Delete: メイン/処理エリアから選択された指示を削除します。"
+msgstr "4. メイン/処理エリアの指示を削除するには:"
 
 #: activities/programmingMaze/ActivityInfo.qml:32
 msgctxt "ActivityInfo|"
@@ -20416,32 +20284,22 @@ msgstr ""
 #, fuzzy
 #| msgctxt "ActivityInfo|"
 #| msgid ""
-#| "To add an instruction in main/procedure area, select it from instructions "
-#| "area, then switch to the main/procedure area and press Space."
+#| "2. To append an instruction from the instruction area to the main/"
+#| "procedure code area:"
 msgctxt "ActivityInfo|"
 msgid ""
 "To add an instruction in main/procedure/loop area, select it from "
 "instructions area, then switch to the main/procedure/loop area and press "
 "Space."
-msgstr ""
-"メイン/処理エリアに指示を追加するには、指示エリアから選択し、メイン/処理エリ"
-"アに切り替えてスペースキーを押します。"
+msgstr "2. 指示エリアから指示をメイン/処理エリアに割り当てるには:"
 
 #: activities/programmingMaze/ActivityInfo.qml:34
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "To modify an instruction in main/procedure area, select it from main/"
-#| "procedure area, then switch to instructions area, choose the new "
-#| "instruction and press Space."
 msgctxt "ActivityInfo|"
 msgid ""
 "To modify an instruction in main/procedure/loop area, select it from main/"
 "procedure/loop area, then switch to instructions area, choose the new "
 "instruction and press Space."
 msgstr ""
-"メイン/処理エリアの指示を編集するには、メイン/処理エリアから選択し、指示エリ"
-"アに切り替え、新しい指示を選択してスペースキーを押します。"
 
 #: activities/programmingMaze/InstructionArea.qml:28
 msgctxt "InstructionArea|"
@@ -20582,12 +20440,9 @@ msgid "Using the main area only."
 msgstr ""
 
 #: activities/programmingMaze/resource/2/Data.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Tab: switch between instructions area and main/procedure area"
 msgctxt "Data|"
 msgid "Using both the main area and the procedure area."
-msgstr "Tab: 指示エリアとメイン/処理エリアを切り替えます"
+msgstr ""
 
 #: activities/programmingMaze/resource/3/Data.qml:14
 msgctxt "Data|"
@@ -21118,10 +20973,12 @@ msgstr ""
 #: activities/scalesboard/resource/3/Data.qml:13
 #: activities/scalesboard/resource/4/Data.qml:13
 #: activities/scalesboard/resource/5/Data.qml:13
-#, qt-format
+#, fuzzy, qt-format
+#| msgctxt "ActivityInfo|"
+#| msgid "Balance Box"
 msgctxt "Data|"
 msgid "Balance up to %1."
-msgstr ""
+msgstr "バランスボックス"
 
 #: activities/scalesboard/resource/1/Data.qml:20
 #: activities/scalesboard/resource/2/Data.qml:20
@@ -23779,10 +23636,15 @@ msgstr "ダーツを的に投げて点数を数えよう。"
 
 #. Help prerequisite
 #: activities/target/ActivityInfo.qml:22
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "Can move the mouse, can read numbers and count up to 15 for the first "
+#| "level"
 msgctxt "ActivityInfo|"
 msgid ""
 "Can move the mouse, can read numbers and count up to 15 for the first level."
-msgstr ""
+msgstr "マウスを動かせ、数字を読め、最初の15までの数字がわかること"
 
 #. Help manual
 #: activities/target/ActivityInfo.qml:24
@@ -23840,12 +23702,9 @@ msgstr ""
 
 #. Help prerequisite
 #: activities/tens_complement_find/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplication tables from 1 to 10."
 msgctxt "ActivityInfo|"
 msgid "Numbers from 1 to 10 and additions."
-msgstr "1から10の九九表。"
+msgstr ""
 
 #: activities/tens_complement_find/ActivityInfo.qml:23
 #: activities/tens_complement_use/ActivityInfo.qml:24
@@ -23866,20 +23725,14 @@ msgid ""
 msgstr ""
 
 #: activities/tens_complement_find/resource/1/Data.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplication tables from 1 to 10."
 msgctxt "Data|"
 msgid "First number from 1 to 4."
-msgstr "1から10の九九表。"
+msgstr ""
 
 #: activities/tens_complement_find/resource/2/Data.qml:9
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplication tables from 1 to 10."
 msgctxt "Data|"
 msgid "First number from 5 to 9."
-msgstr "1から10の九九表。"
+msgstr ""
 
 #: activities/tens_complement_find/resource/4/Data.qml:9
 #, fuzzy
@@ -23911,12 +23764,9 @@ msgstr ""
 
 #. Help prerequisite
 #: activities/tens_complement_swap/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplication tables from 1 to 10."
 msgctxt "ActivityInfo|"
 msgid "Numbers from 1 to 30 and additions."
-msgstr "1から10の九九表。"
+msgstr ""
 
 #. Help manual
 #: activities/tens_complement_swap/ActivityInfo.qml:23
@@ -23964,12 +23814,9 @@ msgstr ""
 
 #. Help prerequisite
 #: activities/tens_complement_use/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplication tables from 1 to 10."
 msgctxt "ActivityInfo|"
 msgid "Numbers from 1 to 50 and additions."
-msgstr "1から10の九九表。"
+msgstr ""
 
 #. Help manual
 #: activities/tens_complement_use/ActivityInfo.qml:23
@@ -23999,10 +23846,10 @@ msgstr ""
 #: activities/tic_tac_toe/ActivityInfo.qml:18
 #, fuzzy
 #| msgctxt "ActivityInfo|"
-#| msgid "Bargame (against Tux)"
+#| msgid "Tic Tac Toe (against Tux)"
 msgctxt "ActivityInfo|"
 msgid "Tic tac toe (against Tux)"
-msgstr "ボールゲーム(タックスと)"
+msgstr "三目並べ (タックスと)"
 
 #. Help title
 #: activities/tic_tac_toe/ActivityInfo.qml:20
@@ -24045,10 +23892,10 @@ msgstr ""
 #: activities/tic_tac_toe_2players/ActivityInfo.qml:18
 #, fuzzy
 #| msgctxt "ActivityInfo|"
-#| msgid "Bargame (with a friend)"
+#| msgid "Tic Tac Toe (with a friend)"
 msgctxt "ActivityInfo|"
 msgid "Tic tac toe (with a friend)"
-msgstr "ボールゲーム(ともだちと)"
+msgstr "三目並べ (ともだちと)"
 
 #. Help manual
 #: activities/tic_tac_toe_2players/ActivityInfo.qml:27
@@ -24247,248 +24094,266 @@ msgstr "英単語が地面まで落ちる前に入力します。"
 
 #: core/ChangeLog.qml:30
 msgctxt "ChangeLog|"
+msgid "Map of Spain added for geography activity"
+msgstr ""
+
+#: core/ChangeLog.qml:31
+msgctxt "ChangeLog|"
+msgid "Voices added for Ukrainian"
+msgstr ""
+
+#: core/ChangeLog.qml:32
+msgctxt "ChangeLog|"
+msgid ""
+"New command-line option to list all the activities and start on a specific "
+"one"
+msgstr ""
+
+#: core/ChangeLog.qml:33 core/ChangeLog.qml:68 core/ChangeLog.qml:71
+#: core/ChangeLog.qml:77
+msgctxt "ChangeLog|"
+msgid "Many usability improvements"
+msgstr ""
+
+#: core/ChangeLog.qml:34 core/ChangeLog.qml:52 core/ChangeLog.qml:67
+#: core/ChangeLog.qml:72 core/ChangeLog.qml:78
+msgctxt "ChangeLog|"
+msgid "Many new images"
+msgstr ""
+
+#: core/ChangeLog.qml:35 core/ChangeLog.qml:73 core/ChangeLog.qml:79
+msgctxt "ChangeLog|"
+msgid "Many bug fixes"
+msgstr ""
+
+#: core/ChangeLog.qml:39
+msgctxt "ChangeLog|"
 msgid ""
 "Reduce the size of the packages for all platforms and of the external word "
 "images set"
 msgstr ""
 
-#: core/ChangeLog.qml:31
+#: core/ChangeLog.qml:40
 msgctxt "ChangeLog|"
 msgid "Improve images quality in several activities"
 msgstr ""
 
-#: core/ChangeLog.qml:32
+#: core/ChangeLog.qml:41
 msgctxt "ChangeLog|"
 msgid "Fix some transitions in renewable_energy/watercycle on some platforms"
 msgstr ""
 
-#: core/ChangeLog.qml:33
+#: core/ChangeLog.qml:42
 msgctxt "ChangeLog|"
 msgid "Fix dead keys ignored on Linux for typing activities"
 msgstr ""
 
-#: core/ChangeLog.qml:34
+#: core/ChangeLog.qml:43
 msgctxt "ChangeLog|"
 msgid "Fix level reset when changing level manually in Logical associations"
 msgstr ""
 
-#: core/ChangeLog.qml:38
+#: core/ChangeLog.qml:47
 msgctxt "ChangeLog|"
 msgid ""
 "Fix Alphabet sequence, Even and odd numbers and Numbers in order activities"
 msgstr ""
 
-#: core/ChangeLog.qml:42 core/ChangeLog.qml:50
+#: core/ChangeLog.qml:51 core/ChangeLog.qml:59
 msgctxt "ChangeLog|"
 msgid "Several bug fixes"
 msgstr ""
 
-#: core/ChangeLog.qml:43 core/ChangeLog.qml:58 core/ChangeLog.qml:63
-#: core/ChangeLog.qml:69
-msgctxt "ChangeLog|"
-msgid "Many new images"
-msgstr ""
-
-#: core/ChangeLog.qml:44
+#: core/ChangeLog.qml:53
 msgctxt "ChangeLog|"
 msgid "Translation updated for Russian"
 msgstr ""
 
-#: core/ChangeLog.qml:45
+#: core/ChangeLog.qml:54
 msgctxt "ChangeLog|"
 msgid "New voices for Norwegian Nynorsk"
 msgstr ""
 
-#: core/ChangeLog.qml:49
+#: core/ChangeLog.qml:58
 msgctxt "ChangeLog|"
 msgid "Translations added for Breton, Czech and Macedonian"
 msgstr ""
 
-#: core/ChangeLog.qml:54
+#: core/ChangeLog.qml:63
 msgctxt "ChangeLog|"
 msgid "Translation added for Azerbaijani"
 msgstr ""
 
-#: core/ChangeLog.qml:55
+#: core/ChangeLog.qml:64
 msgctxt "ChangeLog|"
 msgid "New maps and update of the maps for geography activities"
 msgstr ""
 
-#: core/ChangeLog.qml:56
+#: core/ChangeLog.qml:65
 msgctxt "ChangeLog|"
 msgid ""
 "New dataset containing loops operations for programming maze, and make "
 "tutorial images translated"
 msgstr ""
 
-#: core/ChangeLog.qml:57
+#: core/ChangeLog.qml:66
 msgctxt "ChangeLog|"
 msgid ""
 "Addition of a level to teach voltage source loop in analog electricity "
 "activity"
 msgstr ""
 
-#: core/ChangeLog.qml:59 core/ChangeLog.qml:62 core/ChangeLog.qml:68
-msgctxt "ChangeLog|"
-msgid "Many usability improvements"
-msgstr ""
-
-#: core/ChangeLog.qml:64 core/ChangeLog.qml:70
-msgctxt "ChangeLog|"
-msgid "Many bug fixes"
-msgstr ""
-
-#: core/ChangeLog.qml:67
+#: core/ChangeLog.qml:76
 msgctxt "ChangeLog|"
 msgid "New Activity Settings menu, with dataset selection"
 msgstr ""
 
-#: core/ChangeLog.qml:73
+#: core/ChangeLog.qml:82
 msgctxt "ChangeLog|"
 msgid "New sub-categories to organize activities"
 msgstr ""
 
-#: core/ChangeLog.qml:74
+#: core/ChangeLog.qml:83
 msgctxt "ChangeLog|"
 msgid "Translation added for Macedonian."
 msgstr ""
 
-#: core/ChangeLog.qml:75
+#: core/ChangeLog.qml:84
 msgctxt "ChangeLog|"
 msgid "New activities Programming Maze and Baby Tangram"
 msgstr ""
 
-#: core/ChangeLog.qml:76
+#: core/ChangeLog.qml:85
 msgctxt "ChangeLog|"
 msgid "New background music and volume settings."
 msgstr ""
 
-#: core/ChangeLog.qml:77
+#: core/ChangeLog.qml:86
 msgctxt "ChangeLog|"
 msgid "New speed setting in several activities."
 msgstr ""
 
-#: core/ChangeLog.qml:78
+#: core/ChangeLog.qml:87
 msgctxt "ChangeLog|"
 msgid "New option in chess to display captured pieces."
 msgstr ""
 
-#: core/ChangeLog.qml:79
+#: core/ChangeLog.qml:88
 msgctxt "ChangeLog|"
 msgid "New images in Colors, Advanced colors and Target game."
 msgstr ""
 
-#: core/ChangeLog.qml:80
+#: core/ChangeLog.qml:89
 msgctxt "ChangeLog|"
 msgid "New voices for US English."
 msgstr ""
 
-#: core/ChangeLog.qml:81 core/ChangeLog.qml:89
+#: core/ChangeLog.qml:90 core/ChangeLog.qml:98
 msgctxt "ChangeLog|"
 msgid "Many little fixes and improvements."
 msgstr ""
 
-#: core/ChangeLog.qml:82
+#: core/ChangeLog.qml:91
 msgctxt "ChangeLog|"
 msgid ""
 "Translation updated for multiple languages (Breton, Brazilian Portuguese, "
 "Finnish...)."
 msgstr ""
 
-#: core/ChangeLog.qml:83
+#: core/ChangeLog.qml:92
 msgctxt "ChangeLog|"
 msgid "Add Russian dataset for Click on letter activity."
 msgstr ""
 
-#: core/ChangeLog.qml:84
+#: core/ChangeLog.qml:93
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in Dutch."
 msgstr ""
 
-#: core/ChangeLog.qml:85
+#: core/ChangeLog.qml:94
 msgctxt "ChangeLog|"
 msgid ""
 "Merge Norwegian counties Nord-Trøndelag and Sør-Trøndelag into Trøndelag in "
 "geo-country activity."
 msgstr ""
 
-#: core/ChangeLog.qml:86
+#: core/ChangeLog.qml:95
 msgctxt "ChangeLog|"
 msgid "Fix in braille activities where the cells start at 1, not 0."
 msgstr ""
 
-#: core/ChangeLog.qml:87
+#: core/ChangeLog.qml:96
 msgctxt "ChangeLog|"
 msgid "Translation added for Basque, Hungarian and Malayalam."
 msgstr ""
 
-#: core/ChangeLog.qml:88
+#: core/ChangeLog.qml:97
 msgctxt "ChangeLog|"
 msgid ""
 "Loading/saving of creations (Baby Wordprocessor, Balance Box and Piano "
 "Composition)."
 msgstr ""
 
-#: core/ChangeLog.qml:89
+#: core/ChangeLog.qml:98
 msgctxt "ChangeLog|"
 msgid "Translations added for Scottish Gaelic."
 msgstr ""
 
-#: core/ChangeLog.qml:90
+#: core/ChangeLog.qml:99
 msgctxt "ChangeLog|"
 msgid "License page added in configuration."
 msgstr ""
 
-#: core/ChangeLog.qml:90
+#: core/ChangeLog.qml:99
 msgctxt "ChangeLog|"
 msgid "Multiple changes on layouts to improve the ergonomy."
 msgstr ""
 
-#: core/ChangeLog.qml:91
+#: core/ChangeLog.qml:100
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in Polish, Swedish and Ukrainian."
 msgstr ""
 
-#: core/ChangeLog.qml:92
+#: core/ChangeLog.qml:101
 msgctxt "ChangeLog|"
 msgid "Search feature."
 msgstr ""
 
-#: core/ChangeLog.qml:93
+#: core/ChangeLog.qml:102
 msgctxt "ChangeLog|"
 msgid "A Changelog."
 msgstr ""
 
-#: core/ChangeLog.qml:94
+#: core/ChangeLog.qml:103
 msgctxt "ChangeLog|"
 msgid "Many little fixes."
 msgstr ""
 
-#: core/ChangeLog.qml:94
+#: core/ChangeLog.qml:103
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in French."
 msgstr ""
 
-#: core/ChangeLog.qml:95
+#: core/ChangeLog.qml:104
 msgctxt "ChangeLog|"
 msgid ""
 "Adding a loading overlay to let the user know that some actions are taking "
 "place (loading an activity for example) and can take some seconds."
 msgstr ""
 
-#: core/ChangeLog.qml:95
+#: core/ChangeLog.qml:104
 msgctxt "ChangeLog|"
 msgid ""
 "Translations added for: Catalan (Valencian), Chinese Traditional, Finnish "
 "(92% translated), Russian (98% translated), Slovak (92% translated), Turkish."
 msgstr ""
 
-#: core/ChangeLog.qml:96
+#: core/ChangeLog.qml:105
 msgctxt "ChangeLog|"
 msgid "Translations added for: Slovenian, German, Galician."
 msgstr ""
 
-#: core/ChangeLog.qml:121
+#: core/ChangeLog.qml:130
 #, qt-format
 msgctxt "ChangeLog|"
 msgid "Version %1:"
@@ -25116,3 +24981,55 @@ msgstr "スキップ"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "スタート"
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid ""
+#~ "Play with the computer. Take turns to click the line in which you want to "
+#~ "drop a token. The first player to create a line of 4 tokens wins."
+#~ msgstr ""
+#~ "コンピュータと遊びます。自分の順番が来たらコマを落としたい列をクリックしま"
+#~ "す。最初に4つ並べた方が勝ちです。"
+
+#~ msgctxt "Calendar|"
+#~ msgid "Sunday"
+#~ msgstr "日曜日"
+
+#~ msgctxt "Calendar|"
+#~ msgid "Monday"
+#~ msgstr "月曜日"
+
+#~ msgctxt "Calendar|"
+#~ msgid "Tuesday"
+#~ msgstr "火曜日"
+
+#~ msgctxt "Calendar|"
+#~ msgid "Wednesday"
+#~ msgstr "水曜日"
+
+#~ msgctxt "Calendar|"
+#~ msgid "Thursday"
+#~ msgstr "木曜日"
+
+#~ msgctxt "Calendar|"
+#~ msgid "Friday"
+#~ msgstr "金曜日"
+
+#~ msgctxt "Calendar|"
+#~ msgid "Saturday"
+#~ msgstr "土曜日"
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Play checkers against the computer"
+#~ msgstr "コンピュータとチェッカーで遊ぶ"
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Play chess against your friend"
+#~ msgstr "友達とチェスで遊ぶ"
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid ""
+#~ "Play with the computer. Take turns to click on the square which you want "
+#~ "to mark. The first player to create a line of 3 marks wins."
+#~ msgstr ""
+#~ "コンピュータと遊びます。順番が来たらマークを置きたい四角の場所をクリックし"
+#~ "ます。3つのマークを最初に1列に並べた方が勝ちです。"

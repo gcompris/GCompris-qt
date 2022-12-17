@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-12-13 00:48+0000\n"
+"POT-Creation-Date: 2022-12-17 02:40+0000\n"
 "PO-Revision-Date: 2019-10-07 11:34+0200\n"
 "Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.io>\n"
 "Language-Team: Galician <proxecto@trasno.gal>\n"
@@ -648,10 +648,9 @@ msgstr ""
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "learn_subtractions"
 #: activities/learn_additions/ActivityInfo.qml:18
 #: activities/learn_subtractions/ActivityInfo.qml:18
-#, fuzzy, kde-format
-#| msgid "Click on the lamps to turn them off."
+#, kde-format
 msgid "Click on the circles to give the operation's result."
-msgstr "Preme as lámpadas para apagalas."
+msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "learn_decimals"
 #: activities/learn_decimals/ActivityInfo.qml:17
@@ -671,10 +670,9 @@ msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "learn_decimals_subtractions"
 #: activities/learn_decimals_subtractions/ActivityInfo.qml:17
-#, fuzzy, kde-format
-#| msgid "Click on the lamps to turn them off."
+#, kde-format
 msgid "Click on the squares to represent the result of the subtraction."
-msgstr "Preme as lámpadas para apagalas."
+msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "learn_digits"
 #: activities/learn_digits/ActivityInfo.qml:18

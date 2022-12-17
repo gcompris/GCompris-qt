@@ -1797,10 +1797,10 @@ msgstr ""
 #: activities/analog_electricity/TutorialDataset.qml:135
 #, fuzzy
 #| msgctxt "ActivityInfo|"
-#| msgid "Draw the picture by clicking on each numbers in the right order."
+#| msgid "Move the helicopter to catch the clouds in the correct order"
 msgctxt "TutorialDataset|"
 msgid "Break the bulb by connecting it with the two batteries."
-msgstr "Zīmē attēlu, klikšķinot pareizā secībā uz skaitļiem."
+msgstr "Kustini helikopteri, lai noķertu mākoņus pareizā secībā"
 
 #: activities/analog_electricity/TutorialDataset.qml:148
 msgctxt "TutorialDataset|"
@@ -2371,12 +2371,9 @@ msgstr ""
 
 #. Activity title
 #: activities/balancebox/ActivityInfo.qml:18
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Balance the scales properly"
 msgctxt "ActivityInfo|"
 msgid "Balance box"
-msgstr "Līdzsvaro svarus pareizi"
+msgstr ""
 
 #. Help title
 #: activities/balancebox/ActivityInfo.qml:20
@@ -2768,12 +2765,9 @@ msgid ""
 msgstr ""
 
 #: activities/binary_bulb/binary_bulb.js:48
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "The aim is to switch off all the lights."
 msgctxt "binary_bulb|"
 msgid "This image will help you to compute bits' value."
-msgstr "Mērķis ir izslēgt visas gaismas."
+msgstr ""
 
 #: activities/binary_bulb/BinaryBulb.qml:121
 #, qt-format
@@ -3825,10 +3819,10 @@ msgstr "Zīmē attēlu, klikšķinot pareizā secībā uz skaitļiem."
 #: activities/categorization/resource/board/category_numbers.qml:19
 #, fuzzy
 #| msgctxt "ActivityInfo|"
-#| msgid "Simple Letters"
+#| msgid "Numbers in Order"
 msgctxt "category_numbers|"
 msgid "Numbers"
-msgstr "Vienkārši burti"
+msgstr "Skaitļi secībā"
 
 #: activities/categorization/resource/board/category_numbers.qml:23
 #: activities/categorization/resource/board/category_numbers.qml:32
@@ -3874,13 +3868,10 @@ msgstr ""
 #: activities/categorization/resource/board/category_renewable.qml:68
 #: activities/categorization/resource/board/category_renewable.qml:77
 #: activities/categorization/resource/board/category_renewable.qml:86
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Draw the picture by clicking on each numbers in the right order."
 msgctxt "category_renewable|"
 msgid ""
 "Place the RENEWABLE energy sources to the right and other objects to the left"
-msgstr "Zīmē attēlu, klikšķinot pareizā secībā uz skaitļiem."
+msgstr ""
 
 #: activities/categorization/resource/board/category_shapes.qml:21
 msgctxt "category_shapes|"
@@ -4090,13 +4081,10 @@ msgstr ""
 #: activities/categorization/resource/board/category_transports.qml:87
 #: activities/categorization/resource/board/category_transports.qml:96
 #: activities/categorization/resource/board/category_transports.qml:105
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Draw the picture by clicking on each numbers in the right order."
 msgctxt "category_transports|"
 msgid ""
 "Place the MEANS OF TRANSPORTATION to the right and other objects to the left"
-msgstr "Zīmē attēlu, klikšķinot pareizā secībā uz skaitļiem."
+msgstr ""
 
 #: activities/categorization/resource/board/category_vegetables.qml:19
 msgctxt "category_vegetables|"
@@ -4426,10 +4414,13 @@ msgstr ""
 
 #. Help manual
 #: activities/chronos/ActivityInfo.qml:28
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Draw the picture by clicking on each numbers in the right order."
 msgctxt "ActivityInfo|"
 msgid ""
 "Pick the pictures on the side and put them on the dots in the right order."
-msgstr ""
+msgstr "Zīmē attēlu, klikšķinot pareizā secībā uz skaitļiem."
 
 #: activities/chronos/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
@@ -5408,12 +5399,9 @@ msgid "Up and Down arrows: select a pair of numbers in the list"
 msgstr ""
 
 #: activities/comparator/ActivityInfo.qml:30
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Draw the picture by clicking on each numbers in the right order."
 msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: select a symbol button"
-msgstr "Zīmē attēlu, klikšķinot pareizā secībā uz skaitļiem."
+msgstr ""
 
 #: activities/comparator/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
@@ -5434,10 +5422,10 @@ msgstr ""
 #: activities/tens_complement_find/resource/3/Data.qml:9
 #, fuzzy
 #| msgctxt "ActivityInfo|"
-#| msgid "Subtraction memory game"
+#| msgid "Numbers With Dice"
 msgctxt "Data|"
 msgid "Numbers from 1 to 9."
-msgstr "Atņemšanas atmiņas spēle"
+msgstr "Skaitļi ar kauliņu"
 
 #: activities/comparator/resource/10/Data.qml:14
 msgctxt "Data|"
@@ -5447,42 +5435,42 @@ msgstr ""
 #: activities/comparator/resource/2/Data.qml:14
 #, fuzzy
 #| msgctxt "ActivityInfo|"
-#| msgid "Subtraction memory game"
+#| msgid "Numbers With Dice"
 msgctxt "Data|"
 msgid "Numbers from 1 to 19."
-msgstr "Atņemšanas atmiņas spēle"
+msgstr "Skaitļi ar kauliņu"
 
 #: activities/comparator/resource/3/Data.qml:14
 #, fuzzy
 #| msgctxt "ActivityInfo|"
-#| msgid "Subtraction memory game"
+#| msgid "Numbers from 1 to 1000 for the last level."
 msgctxt "Data|"
 msgid "Numbers from 1 to 100."
-msgstr "Atņemšanas atmiņas spēle"
+msgstr "Skaitļi no 1 līdz 1000 pēdējam līmenim."
 
 #: activities/comparator/resource/4/Data.qml:14
 #, fuzzy
 #| msgctxt "ActivityInfo|"
-#| msgid "Subtraction memory game"
+#| msgid "Numbers from 1 to 1000 for the last level."
 msgctxt "Data|"
 msgid "Numbers from 1 to 1000."
-msgstr "Atņemšanas atmiņas spēle"
+msgstr "Skaitļi no 1 līdz 1000 pēdējam līmenim."
 
 #: activities/comparator/resource/5/Data.qml:14
 #, fuzzy
 #| msgctxt "ActivityInfo|"
-#| msgid "Subtraction memory game"
+#| msgid "Numbers from 1 to 1000 for the last level."
 msgctxt "Data|"
 msgid "Numbers from 1 to 1000000."
-msgstr "Atņemšanas atmiņas spēle"
+msgstr "Skaitļi no 1 līdz 1000 pēdējam līmenim."
 
 #: activities/comparator/resource/6/Data.qml:14
 #, fuzzy
 #| msgctxt "ActivityInfo|"
-#| msgid "Subtraction memory game"
+#| msgid "Numbers from 1 to 1000 for the last level."
 msgctxt "Data|"
 msgid "Numbers from 1 to 1 billion."
-msgstr "Atņemšanas atmiņas spēle"
+msgstr "Skaitļi no 1 līdz 1000 pēdējam līmenim."
 
 #: activities/comparator/resource/7/Data.qml:14
 msgctxt "Data|"
@@ -5546,12 +5534,9 @@ msgid ""
 msgstr ""
 
 #: activities/crane/ActivityInfo.qml:31
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Draw the picture by clicking on each numbers in the right order."
 msgctxt "ActivityInfo|"
 msgid "Arrows: move the selected item"
-msgstr "Zīmē attēlu, klikšķinot pareizā secībā uz skaitļiem."
+msgstr ""
 
 #: activities/crane/ActivityInfo.qml:32
 msgctxt "ActivityInfo|"
@@ -5627,20 +5612,14 @@ msgid "The images are from Wikimedia Commons."
 msgstr ""
 
 #: activities/details/resource/1/Data.qml:13
-#, fuzzy
-#| msgctxt "instruments|"
-#| msgid "Find the triangle"
 msgctxt "Data|"
 msgid "Play with paintings."
-msgstr "Atrodi trijstūri"
+msgstr ""
 
 #: activities/details/resource/2/Data.qml:13
-#, fuzzy
-#| msgctxt "instruments|"
-#| msgid "Find the triangle"
 msgctxt "Data|"
 msgid "Play with simple photographs."
-msgstr "Atrodi trijstūri"
+msgstr ""
 
 #: activities/details/resource/3/Data.qml:13
 msgctxt "Data|"
@@ -5847,13 +5826,10 @@ msgid ""
 msgstr ""
 
 #: activities/digital_electricity/ActivityInfo.qml:34
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Find the strawberry by clicking on the blue fields"
 msgctxt "ActivityInfo|"
 msgid ""
 "You can pan the working area by clicking on an empty area and dragging it."
-msgstr "Atrodi zemeni, spiežot uz zilajiem lauciņiem"
+msgstr ""
 
 #: activities/digital_electricity/ActivityInfo.qml:35
 msgctxt "ActivityInfo|"
@@ -6407,19 +6383,19 @@ msgstr ""
 #: activities/drawletters/ActivityInfo.qml:24
 #, fuzzy
 #| msgctxt "ActivityInfo|"
-#| msgid "Draw the picture by clicking on each numbers in the right order."
+#| msgid "Move the helicopter to catch the clouds in the correct order"
 msgctxt "ActivityInfo|"
 msgid "Draw the letters by connecting the dots in the correct order."
-msgstr "Zīmē attēlu, klikšķinot pareizā secībā uz skaitļiem."
+msgstr "Kustini helikopteri, lai noķertu mākoņus pareizā secībā"
 
 #. Activity title
 #: activities/drawnumbers/ActivityInfo.qml:15
 #, fuzzy
 #| msgctxt "ActivityInfo|"
-#| msgid "Simple Letters"
+#| msgid "Subtraction memory game"
 msgctxt "ActivityInfo|"
 msgid "Draw numbers"
-msgstr "Vienkārši burti"
+msgstr "Atņemšanas atmiņas spēle"
 
 #. Help title
 #: activities/drawnumbers/ActivityInfo.qml:17
@@ -6437,10 +6413,10 @@ msgstr ""
 #: activities/drawnumbers/ActivityInfo.qml:24
 #, fuzzy
 #| msgctxt "ActivityInfo|"
-#| msgid "Draw the picture by clicking on each numbers in the right order."
+#| msgid "Move the helicopter to catch the clouds in the correct order"
 msgctxt "ActivityInfo|"
 msgid "Draw the numbers by connecting the dots in the correct order."
-msgstr "Zīmē attēlu, klikšķinot pareizā secībā uz skaitļiem."
+msgstr "Kustini helikopteri, lai noķertu mākoņus pareizā secībā"
 
 #: activities/enumerate/ActivityConfig.qml:22
 msgctxt "ActivityConfig|"
@@ -6859,12 +6835,9 @@ msgid ""
 msgstr ""
 
 #: activities/explore_farm_animals/resource/board/board1.qml:85
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "The aim is to switch off all the lights."
 msgctxt "board1|"
 msgid "This animal has webbed feet and can swim on the water."
-msgstr "Mērķis ir izslēgt visas gaismas."
+msgstr ""
 
 #: activities/explore_farm_animals/resource/board/board1.qml:93
 msgctxt "board1|"
@@ -6924,28 +6897,19 @@ msgid "This animal produces wool."
 msgstr ""
 
 #: activities/explore_farm_animals/resource/board/board1.qml:131
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Kick the ball into the goal"
 msgctxt "board1|"
 msgid "Click on each farm animal to discover them."
-msgstr "Iesper bumbu vārtos"
+msgstr ""
 
 #: activities/explore_farm_animals/resource/board/board1.qml:134
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Kick the ball into the goal"
 msgctxt "board1|"
 msgid "Click on the farm animal that makes the sound you hear."
-msgstr "Iesper bumbu vārtos"
+msgstr ""
 
 #: activities/explore_farm_animals/resource/board/board1.qml:137
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Kick the ball into the goal"
 msgctxt "board1|"
 msgid "Click the animal that matches the description."
-msgstr "Iesper bumbu vārtos"
+msgstr ""
 
 #. Activity title
 #: activities/explore_monuments/ActivityInfo.qml:15
@@ -8333,12 +8297,9 @@ msgid "Explore world music. Click on the suitcases."
 msgstr ""
 
 #: activities/explore_world_music/resource/board/board1.qml:133
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Kick the ball into the goal"
 msgctxt "board1|"
 msgid "Click on the location that matches the music you hear."
-msgstr "Iesper bumbu vārtos"
+msgstr ""
 
 #: activities/explore_world_music/resource/board/board1.qml:136
 #, fuzzy
@@ -8648,12 +8609,9 @@ msgstr ""
 "pārvietots tukšajā lauciņā."
 
 #: activities/fifteen/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Draw the picture by clicking on each numbers in the right order."
 msgctxt "ActivityInfo|"
 msgid "Arrows: move a piece to the empty space."
-msgstr "Zīmē attēlu, klikšķinot pareizā secībā uz skaitļiem."
+msgstr ""
 
 #. Activity title
 #: activities/find_the_day/ActivityInfo.qml:15
@@ -9187,18 +9145,15 @@ msgstr "Spiediet uz pareizās krāsas"
 #: activities/fractions_create/resource/5/Data.qml:9
 #, fuzzy
 #| msgctxt "ActivityInfo|"
-#| msgid "Learn addition"
+#| msgid "Numbers With Dice"
 msgctxt "Data|"
 msgid "Decimal numbers with a pie."
-msgstr "Mācies saskaitīšanu"
+msgstr "Skaitļi ar kauliņu"
 
 #: activities/fractions_create/resource/5/Data.qml:18
-#, fuzzy
-#| msgctxt "Clockgame|"
-#| msgid "Set the watch to:"
 msgctxt "Data|"
 msgid "Select 0.5 pie."
-msgstr "Iestatīt pulksteni uz:"
+msgstr ""
 
 #: activities/fractions_create/resource/5/Data.qml:24
 msgctxt "Data|"
@@ -9206,12 +9161,9 @@ msgid "Select 0.25 pie."
 msgstr ""
 
 #: activities/fractions_create/resource/5/Data.qml:30
-#, fuzzy
-#| msgctxt "Clockgame|"
-#| msgid "Set the watch to:"
 msgctxt "Data|"
 msgid "Select 0.4 pie."
-msgstr "Iestatīt pulksteni uz:"
+msgstr ""
 
 #: activities/fractions_create/resource/5/Data.qml:36
 msgctxt "Data|"
@@ -9219,12 +9171,9 @@ msgid "Select 0.75 pie."
 msgstr ""
 
 #: activities/fractions_create/resource/5/Data.qml:42
-#, fuzzy
-#| msgctxt "Clockgame|"
-#| msgid "Set the watch to:"
 msgctxt "Data|"
 msgid "Select 0.8 pie."
-msgstr "Iestatīt pulksteni uz:"
+msgstr ""
 
 #: activities/fractions_create/resource/5/Data.qml:50
 msgctxt "Data|"
@@ -10384,21 +10333,15 @@ msgstr ""
 
 #. Council area of Scotland: Orkney Islands
 #: activities/geo-country/resource/board/board15_0.qml:53
-#, fuzzy
-#| msgctxt "DialogConfig|"
-#| msgid "Thai"
 msgctxt "board15_0|"
 msgid "Orkney Islands"
-msgstr "Taju"
+msgstr ""
 
 #. Council area of Scotland: Shetland Islands
 #: activities/geo-country/resource/board/board15_0.qml:60
-#, fuzzy
-#| msgctxt "DialogConfig|"
-#| msgid "Thai"
 msgctxt "board15_0|"
 msgid "Shetland Islands"
-msgstr "Taju"
+msgstr ""
 
 #. Council area of Scotland: Highland
 #: activities/geo-country/resource/board/board15_0.qml:67
@@ -10707,12 +10650,9 @@ msgstr ""
 
 #. Autonomous communities of Spain: Catalonia
 #: activities/geo-country/resource/board/board18_0.qml:57
-#, fuzzy
-#| msgctxt "DialogConfig|"
-#| msgid "Lithuanian"
 msgctxt "board18_0|"
 msgid "Catalonia"
-msgstr "Lietuviešu"
+msgstr ""
 
 #. Autonomous communities of Spain: Aragon
 #: activities/geo-country/resource/board/board18_0.qml:64
@@ -10782,12 +10722,9 @@ msgstr "Taju"
 
 #. Autonomous communities of Spain: Balearic Islands
 #: activities/geo-country/resource/board/board18_0.qml:134
-#, fuzzy
-#| msgctxt "DialogConfig|"
-#| msgid "Thai"
 msgctxt "board18_0|"
 msgid "Balearic Islands"
-msgstr "Taju"
+msgstr ""
 
 #. Autonomous communities of Spain: Ceuta
 #: activities/geo-country/resource/board/board18_0.qml:141
@@ -11807,12 +11744,9 @@ msgstr "Taju"
 
 #. County of Norway: Vestland
 #: activities/geo-country/resource/board/board6_0.qml:89
-#, fuzzy
-#| msgctxt "DialogConfig|"
-#| msgid "Thai"
 msgctxt "board6_0|"
 msgid "Vestland"
-msgstr "Taju"
+msgstr ""
 
 #. County of Norway: Rogaland
 #: activities/geo-country/resource/board/board6_0.qml:96
@@ -12500,20 +12434,14 @@ msgid "Palau"
 msgstr ""
 
 #: activities/geography/resource/board/board14_0.qml:52
-#, fuzzy
-#| msgctxt "DialogConfig|"
-#| msgid "Thai"
 msgctxt "board14_0|"
 msgid "Mariana Islands"
-msgstr "Taju"
+msgstr ""
 
 #: activities/geography/resource/board/board14_0.qml:59
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Division"
 msgctxt "board14_0|"
 msgid "Micronesia"
-msgstr "Dalīšana"
+msgstr ""
 
 #: activities/geography/resource/board/board14_0.qml:66
 msgctxt "board14_0|"
@@ -12564,12 +12492,9 @@ msgid "Solomon Islands"
 msgstr ""
 
 #: activities/geography/resource/board/board14_0.qml:130
-#, fuzzy
-#| msgctxt "DialogConfig|"
-#| msgid "Thai"
 msgctxt "board14_0|"
 msgid "New Zealand"
-msgstr "Taju"
+msgstr ""
 
 #: activities/geography/resource/board/board14_0.qml:137
 msgctxt "board14_0|"
@@ -12577,12 +12502,9 @@ msgid "Cook Islands"
 msgstr ""
 
 #: activities/geography/resource/board/board14_0.qml:144
-#, fuzzy
-#| msgctxt "DialogConfig|"
-#| msgid "Thai"
 msgctxt "board14_0|"
 msgid "Samoan Islands"
-msgstr "Taju"
+msgstr ""
 
 #: activities/geography/resource/board/board14_0.qml:151
 msgctxt "board14_0|"
@@ -13931,12 +13853,9 @@ msgid ""
 msgstr ""
 
 #: activities/gravity/ActivityInfo.qml:30
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Draw the picture by clicking on each numbers in the right order."
 msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: move the spaceship"
-msgstr "Zīmē attēlu, klikšķinot pareizā secībā uz skaitļiem."
+msgstr ""
 
 #: activities/gravity/Gravity.qml:210
 msgctxt "Gravity|"
@@ -13989,12 +13908,9 @@ msgid "BuiltIn"
 msgstr ""
 
 #: activities/guesscount/ActivityConfig.qml:70
-#, fuzzy
-#| msgctxt "Clockgame|"
-#| msgid "Set the watch to:"
 msgctxt "ActivityConfig|"
 msgid "Selected"
-msgstr "Iestatīt pulksteni uz:"
+msgstr ""
 
 #: activities/guesscount/ActivityConfig.qml:70
 msgctxt "ActivityConfig|"
@@ -14066,10 +13982,10 @@ msgstr ""
 #: activities/guesscount/OperandRow.qml:40
 #, fuzzy
 #| msgctxt "ActivityInfo|"
-#| msgid "Simple Letters"
+#| msgid "Numbers in Order"
 msgctxt "OperandRow|"
 msgid "Numbers"
-msgstr "Vienkārši burti"
+msgstr "Skaitļi secībā"
 
 #: activities/guesscount/OperatorRow.qml:42
 msgctxt "OperatorRow|"
@@ -14093,20 +14009,17 @@ msgid "Practice algebraic calculations with two operators."
 msgstr "Trenējies atņemt"
 
 #: activities/guesscount/resource/3/Data.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice the subtraction operation"
 msgctxt "Data|"
 msgid "Practice algebraic calculations with three operators."
-msgstr "Trenējies atņemt"
+msgstr ""
 
 #: activities/guesscount/resource/4/Data.qml:14
 #, fuzzy
 #| msgctxt "ActivityInfo|"
-#| msgid "Practice the subtraction operation"
+#| msgid "Practice subtraction with a fun game"
 msgctxt "Data|"
 msgid "Practice algebraic calculations with four operators."
-msgstr "Trenējies atņemt"
+msgstr "Trenējies atņemšanā ar aizraujošu spēli"
 
 #. Activity title
 #: activities/guessnumber/ActivityInfo.qml:15
@@ -14128,10 +14041,10 @@ msgstr ""
 #: activities/guessnumber/ActivityInfo.qml:22
 #, fuzzy
 #| msgctxt "ActivityInfo|"
-#| msgid "Simple Letters"
+#| msgid "Numbers in Order"
 msgctxt "ActivityInfo|"
 msgid "Numbers."
-msgstr "Vienkārši burti"
+msgstr "Skaitļi secībā"
 
 #. Help manual
 #: activities/guessnumber/ActivityInfo.qml:24
@@ -15281,12 +15194,9 @@ msgstr "Atņemšanas atmiņas spēle"
 
 #. Help goal
 #: activities/learn_additions/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn subtraction"
 msgctxt "ActivityInfo|"
 msgid "Learn additions by counting their result."
-msgstr "Apgūsti atņemšanu"
+msgstr ""
 
 #. Help manual
 #: activities/learn_additions/ActivityInfo.qml:24
@@ -15304,20 +15214,14 @@ msgid "Space: select or deselect a circle"
 msgstr ""
 
 #: activities/learn_additions/resource/1/Data.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn addition"
 msgctxt "Data|"
 msgid "Additions with 1 and 2."
-msgstr "Mācies saskaitīšanu"
+msgstr ""
 
 #: activities/learn_additions/resource/2/Data.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn addition"
 msgctxt "Data|"
 msgid "Additions with 1, 2 and 3."
-msgstr "Mācies saskaitīšanu"
+msgstr ""
 
 #: activities/learn_additions/resource/3/Data.qml:14
 msgctxt "Data|"
@@ -15530,10 +15434,10 @@ msgstr ""
 #: activities/learn_decimals_additions/resource/1/Data.qml:13
 #, fuzzy
 #| msgctxt "ActivityInfo|"
-#| msgid "Learn addition"
+#| msgid "Numbers With Dice"
 msgctxt "Data|"
 msgid "Add decimal numbers up to 1."
-msgstr "Mācies saskaitīšanu"
+msgstr "Skaitļi ar kauliņu"
 
 #: activities/learn_decimals_additions/resource/2/Data.qml:13
 #, fuzzy
@@ -15615,10 +15519,10 @@ msgstr "Atņemšanas atmiņas spēle"
 #: activities/learn_digits/ActivityConfig.qml:23
 #, fuzzy
 #| msgctxt "ActivityInfo|"
-#| msgid "Simple Letters"
+#| msgid "Subtraction memory game"
 msgctxt "ActivityConfig|"
 msgid "Arabic numerals"
-msgstr "Vienkārši burti"
+msgstr "Atņemšanas atmiņas spēle"
 
 #: activities/learn_digits/ActivityConfig.qml:24
 #: activities/reversecount/ActivityConfig.qml:21
@@ -15646,28 +15550,25 @@ msgstr ""
 #: activities/learn_digits/ActivityInfo.qml:15
 #, fuzzy
 #| msgctxt "ActivityInfo|"
-#| msgid "Learning Clock"
+#| msgid "Count the items"
 msgctxt "ActivityInfo|"
-msgid "Learn digits"
-msgstr "Pulksteņa apguve"
+msgid "Count and color the circles"
+msgstr "Saskaiti objektus"
 
 #. Help title
 #: activities/learn_digits/ActivityInfo.qml:17
 #, fuzzy
 #| msgctxt "ActivityInfo|"
-#| msgid "Subtraction memory game"
+#| msgid "Can count from 1 to 50."
 msgctxt "ActivityInfo|"
 msgid "Learn digits from 0 to 9."
-msgstr "Atņemšanas atmiņas spēle"
+msgstr "Prot skaitīt no 1 līdz 50"
 
 #. Help goal
 #: activities/learn_digits/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn subtraction"
 msgctxt "ActivityInfo|"
 msgid "Learn digits by counting their corresponding value."
-msgstr "Apgūsti atņemšanu"
+msgstr ""
 
 #. Help manual
 #: activities/learn_digits/ActivityInfo.qml:24
@@ -15852,12 +15753,9 @@ msgstr "Atņemšanas atmiņas spēle"
 
 #. Help goal
 #: activities/learn_subtractions/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn subtraction"
 msgctxt "ActivityInfo|"
 msgid "Learn subtractions by counting their result."
-msgstr "Apgūsti atņemšanu"
+msgstr ""
 
 #. Help manual
 #: activities/learn_subtractions/ActivityInfo.qml:24
@@ -15868,20 +15766,14 @@ msgid ""
 msgstr ""
 
 #: activities/learn_subtractions/resource/1/Data.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn subtraction"
 msgctxt "Data|"
 msgid "Subtractions with 1, 2 and 3."
-msgstr "Apgūsti atņemšanu"
+msgstr ""
 
 #: activities/learn_subtractions/resource/2/Data.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn subtraction"
 msgctxt "Data|"
 msgid "Subtractions with 1, 2, 3 and 4."
-msgstr "Apgūsti atņemšanu"
+msgstr ""
 
 #: activities/learn_subtractions/resource/3/Data.qml:14
 msgctxt "Data|"
@@ -15889,29 +15781,23 @@ msgid "Subtractions with 1, 2, 3, 4 and 5."
 msgstr ""
 
 #: activities/learn_subtractions/resource/4/Data.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn subtraction"
 msgctxt "Data|"
 msgid "Subtractions with 1, 2, 3, 4, 5, 6 and 7."
-msgstr "Apgūsti atņemšanu"
+msgstr ""
 
 #: activities/learn_subtractions/resource/5/Data.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn subtraction"
 msgctxt "Data|"
 msgid "Subtractions with 1, 2, 3, 4, 5, 6, 7, 8 and 9."
-msgstr "Apgūsti atņemšanu"
+msgstr ""
 
 #. Activity title
 #: activities/left_right_click/ActivityInfo.qml:14
 #, fuzzy
 #| msgctxt "ActivityInfo|"
-#| msgid "Numeration training"
+#| msgid "Keyboard training"
 msgctxt "ActivityInfo|"
 msgid "Mouse click training"
-msgstr "Skaitīšanas apmācība"
+msgstr "Tastatūras treniņš"
 
 #. Help title
 #: activities/left_right_click/ActivityInfo.qml:16
@@ -16193,12 +16079,9 @@ msgstr ""
 
 #. Help title
 #: activities/louis-braille/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Let kids discover the Braille system."
 msgctxt "ActivityInfo|"
 msgid "Review the major dates of the inventor of the braille system."
-msgstr "Ļauj bērniem iepazīt Braila rakstību."
+msgstr ""
 
 #. Help manual
 #: activities/louis-braille/ActivityInfo.qml:24
@@ -16467,18 +16350,18 @@ msgstr ""
 #: activities/magic-hat-plus/resource/1/Data.qml:13
 #, fuzzy
 #| msgctxt "ActivityInfo|"
-#| msgid "Learn addition"
+#| msgid "Numbers With Dice"
 msgctxt "Data|"
 msgid "Add stars up to 3."
-msgstr "Mācies saskaitīšanu"
+msgstr "Skaitļi ar kauliņu"
 
 #: activities/magic-hat-plus/resource/2/Data.qml:13
 #, fuzzy
 #| msgctxt "ActivityInfo|"
-#| msgid "Learn addition"
+#| msgid "Numbers With Dice"
 msgctxt "Data|"
 msgid "Add stars up to 4."
-msgstr "Mācies saskaitīšanu"
+msgstr "Skaitļi ar kauliņu"
 
 #: activities/magic-hat-plus/resource/3/Data.qml:13
 msgctxt "Data|"
@@ -16486,12 +16369,9 @@ msgid "Add stars up to 5."
 msgstr ""
 
 #: activities/magic-hat-plus/resource/4/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn addition"
 msgctxt "Data|"
 msgid "Add stars up to 10."
-msgstr "Mācies saskaitīšanu"
+msgstr ""
 
 #: activities/magic-hat-plus/resource/5/Data.qml:13
 msgctxt "Data|"
@@ -16750,12 +16630,9 @@ msgstr ""
 #. Help prerequisite
 #: activities/memory-case-association-tux/ActivityInfo.qml:22
 #: activities/memory-case-association/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "FirstScreen|"
-#| msgid "Braille : Unlocking the Code"
 msgctxt "ActivityInfo|"
 msgid "Knowing alphabets."
-msgstr "Brails — koda atkošana"
+msgstr ""
 
 #. Help manual
 #: activities/memory-case-association-tux/ActivityInfo.qml:24
@@ -16973,12 +16850,9 @@ msgstr ""
 #: activities/memory-math-add-minus-mult-div/resource/1/Data.qml:15
 #: activities/memory-math-add-minus-tux/resource/1/Data.qml:15
 #: activities/memory-math-add-minus/resource/1/Data.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn addition"
 msgctxt "Data|"
 msgid "Table of 1."
-msgstr "Mācies saskaitīšanu"
+msgstr ""
 
 #: activities/memory-math-add-minus-mult-div-tux/resource/10/Data.qml:15
 #: activities/memory-math-add-minus-mult-div/resource/10/Data.qml:15
@@ -16986,12 +16860,9 @@ msgstr "Mācies saskaitīšanu"
 #: activities/memory-math-add-minus/resource/10/Data.qml:15
 #: activities/memory-math-mult-div-tux/resource/9/Data.qml:15
 #: activities/memory-math-mult-div/resource/9/Data.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn addition"
 msgctxt "Data|"
 msgid "Table of 10."
-msgstr "Mācies saskaitīšanu"
+msgstr ""
 
 #: activities/memory-math-add-minus-mult-div-tux/resource/2/Data.qml:15
 #: activities/memory-math-add-minus-mult-div/resource/2/Data.qml:15
@@ -16999,12 +16870,9 @@ msgstr "Mācies saskaitīšanu"
 #: activities/memory-math-add-minus/resource/2/Data.qml:15
 #: activities/memory-math-mult-div-tux/resource/1/Data.qml:15
 #: activities/memory-math-mult-div/resource/1/Data.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn addition"
 msgctxt "Data|"
 msgid "Table of 2."
-msgstr "Mācies saskaitīšanu"
+msgstr ""
 
 #: activities/memory-math-add-minus-mult-div-tux/resource/3/Data.qml:15
 #: activities/memory-math-add-minus-mult-div/resource/3/Data.qml:15
@@ -17012,12 +16880,9 @@ msgstr "Mācies saskaitīšanu"
 #: activities/memory-math-add-minus/resource/3/Data.qml:15
 #: activities/memory-math-mult-div-tux/resource/2/Data.qml:15
 #: activities/memory-math-mult-div/resource/2/Data.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn addition"
 msgctxt "Data|"
 msgid "Table of 3."
-msgstr "Mācies saskaitīšanu"
+msgstr ""
 
 #: activities/memory-math-add-minus-mult-div-tux/resource/4/Data.qml:15
 #: activities/memory-math-add-minus-mult-div/resource/4/Data.qml:15
@@ -17025,12 +16890,9 @@ msgstr "Mācies saskaitīšanu"
 #: activities/memory-math-add-minus/resource/4/Data.qml:15
 #: activities/memory-math-mult-div-tux/resource/3/Data.qml:15
 #: activities/memory-math-mult-div/resource/3/Data.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn addition"
 msgctxt "Data|"
 msgid "Table of 4."
-msgstr "Mācies saskaitīšanu"
+msgstr ""
 
 #: activities/memory-math-add-minus-mult-div-tux/resource/5/Data.qml:15
 #: activities/memory-math-add-minus-mult-div/resource/5/Data.qml:15
@@ -17038,12 +16900,9 @@ msgstr "Mācies saskaitīšanu"
 #: activities/memory-math-add-minus/resource/5/Data.qml:15
 #: activities/memory-math-mult-div-tux/resource/4/Data.qml:15
 #: activities/memory-math-mult-div/resource/4/Data.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn addition"
 msgctxt "Data|"
 msgid "Table of 5."
-msgstr "Mācies saskaitīšanu"
+msgstr ""
 
 #: activities/memory-math-add-minus-mult-div-tux/resource/6/Data.qml:15
 #: activities/memory-math-add-minus-mult-div/resource/6/Data.qml:15
@@ -17051,12 +16910,9 @@ msgstr "Mācies saskaitīšanu"
 #: activities/memory-math-add-minus/resource/6/Data.qml:15
 #: activities/memory-math-mult-div-tux/resource/5/Data.qml:15
 #: activities/memory-math-mult-div/resource/5/Data.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn addition"
 msgctxt "Data|"
 msgid "Table of 6."
-msgstr "Mācies saskaitīšanu"
+msgstr ""
 
 #: activities/memory-math-add-minus-mult-div-tux/resource/7/Data.qml:15
 #: activities/memory-math-add-minus-mult-div/resource/7/Data.qml:15
@@ -17064,12 +16920,9 @@ msgstr "Mācies saskaitīšanu"
 #: activities/memory-math-add-minus/resource/7/Data.qml:15
 #: activities/memory-math-mult-div-tux/resource/6/Data.qml:15
 #: activities/memory-math-mult-div/resource/6/Data.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn addition"
 msgctxt "Data|"
 msgid "Table of 7."
-msgstr "Mācies saskaitīšanu"
+msgstr ""
 
 #: activities/memory-math-add-minus-mult-div-tux/resource/8/Data.qml:15
 #: activities/memory-math-add-minus-mult-div/resource/8/Data.qml:15
@@ -17077,12 +16930,9 @@ msgstr "Mācies saskaitīšanu"
 #: activities/memory-math-add-minus/resource/8/Data.qml:15
 #: activities/memory-math-mult-div-tux/resource/7/Data.qml:15
 #: activities/memory-math-mult-div/resource/7/Data.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn addition"
 msgctxt "Data|"
 msgid "Table of 8."
-msgstr "Mācies saskaitīšanu"
+msgstr ""
 
 #: activities/memory-math-add-minus-mult-div-tux/resource/9/Data.qml:15
 #: activities/memory-math-add-minus-mult-div/resource/9/Data.qml:15
@@ -17090,12 +16940,9 @@ msgstr "Mācies saskaitīšanu"
 #: activities/memory-math-add-minus/resource/9/Data.qml:15
 #: activities/memory-math-mult-div-tux/resource/8/Data.qml:15
 #: activities/memory-math-mult-div/resource/8/Data.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn addition"
 msgctxt "Data|"
 msgid "Table of 9."
-msgstr "Mācies saskaitīšanu"
+msgstr ""
 
 #. Activity title
 #: activities/memory-math-add-minus-mult-div/ActivityInfo.qml:15
@@ -17209,91 +17056,88 @@ msgstr ""
 #: activities/memory-math-add/resource/1/Data.qml:15
 #, fuzzy
 #| msgctxt "ActivityInfo|"
-#| msgid "Learn addition"
+#| msgid "Subtraction memory game"
 msgctxt "Data|"
 msgid "Addition table of 1."
-msgstr "Mācies saskaitīšanu"
+msgstr "Atņemšanas atmiņas spēle"
 
 #: activities/memory-math-add-tux/resource/10/Data.qml:15
 #: activities/memory-math-add/resource/10/Data.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn addition"
 msgctxt "Data|"
 msgid "Addition table of 10."
-msgstr "Mācies saskaitīšanu"
+msgstr ""
 
 #: activities/memory-math-add-tux/resource/2/Data.qml:15
 #: activities/memory-math-add/resource/2/Data.qml:15
 #, fuzzy
 #| msgctxt "ActivityInfo|"
-#| msgid "Learn addition"
+#| msgid "Subtraction memory game"
 msgctxt "Data|"
 msgid "Addition table of 2."
-msgstr "Mācies saskaitīšanu"
+msgstr "Atņemšanas atmiņas spēle"
 
 #: activities/memory-math-add-tux/resource/3/Data.qml:15
 #: activities/memory-math-add/resource/3/Data.qml:15
 #, fuzzy
 #| msgctxt "ActivityInfo|"
-#| msgid "Learn addition"
+#| msgid "Subtraction memory game"
 msgctxt "Data|"
 msgid "Addition table of 3."
-msgstr "Mācies saskaitīšanu"
+msgstr "Atņemšanas atmiņas spēle"
 
 #: activities/memory-math-add-tux/resource/4/Data.qml:15
 #: activities/memory-math-add/resource/4/Data.qml:15
 #, fuzzy
 #| msgctxt "ActivityInfo|"
-#| msgid "Learn addition"
+#| msgid "Subtraction memory game"
 msgctxt "Data|"
 msgid "Addition table of 4."
-msgstr "Mācies saskaitīšanu"
+msgstr "Atņemšanas atmiņas spēle"
 
 #: activities/memory-math-add-tux/resource/5/Data.qml:15
 #: activities/memory-math-add/resource/5/Data.qml:15
 #, fuzzy
 #| msgctxt "ActivityInfo|"
-#| msgid "Learn addition"
+#| msgid "Subtraction memory game"
 msgctxt "Data|"
 msgid "Addition table of 5."
-msgstr "Mācies saskaitīšanu"
+msgstr "Atņemšanas atmiņas spēle"
 
 #: activities/memory-math-add-tux/resource/6/Data.qml:15
 #: activities/memory-math-add/resource/6/Data.qml:15
 #, fuzzy
 #| msgctxt "ActivityInfo|"
-#| msgid "Learn addition"
+#| msgid "Subtraction memory game"
 msgctxt "Data|"
 msgid "Addition table of 6."
-msgstr "Mācies saskaitīšanu"
+msgstr "Atņemšanas atmiņas spēle"
 
 #: activities/memory-math-add-tux/resource/7/Data.qml:15
 #: activities/memory-math-add/resource/7/Data.qml:15
 #, fuzzy
 #| msgctxt "ActivityInfo|"
-#| msgid "Learn addition"
+#| msgid "Subtraction memory game"
 msgctxt "Data|"
 msgid "Addition table of 7."
-msgstr "Mācies saskaitīšanu"
+msgstr "Atņemšanas atmiņas spēle"
 
 #: activities/memory-math-add-tux/resource/8/Data.qml:15
 #: activities/memory-math-add/resource/8/Data.qml:15
 #, fuzzy
 #| msgctxt "ActivityInfo|"
-#| msgid "Learn addition"
+#| msgid "Subtraction memory game"
 msgctxt "Data|"
 msgid "Addition table of 8."
-msgstr "Mācies saskaitīšanu"
+msgstr "Atņemšanas atmiņas spēle"
 
 #: activities/memory-math-add-tux/resource/9/Data.qml:15
 #: activities/memory-math-add/resource/9/Data.qml:15
 #, fuzzy
 #| msgctxt "ActivityInfo|"
-#| msgid "Learn addition"
+#| msgid "Subtraction memory game"
 msgctxt "Data|"
 msgid "Addition table of 9."
-msgstr "Mācies saskaitīšanu"
+msgstr "Atņemšanas atmiņas spēle"
 
 #. Activity title
 #: activities/memory-math-add/ActivityInfo.qml:15
@@ -17365,12 +17209,9 @@ msgstr "Atņemšanas atmiņas spēle"
 
 #: activities/memory-math-div-tux/resource/10/Data.qml:15
 #: activities/memory-math-div/resource/10/Data.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Subtraction memory game"
 msgctxt "Data|"
 msgid "Division table of 10."
-msgstr "Atņemšanas atmiņas spēle"
+msgstr ""
 
 #: activities/memory-math-div-tux/resource/2/Data.qml:15
 #: activities/memory-math-div/resource/2/Data.qml:15
@@ -17510,91 +17351,91 @@ msgstr ""
 #: activities/memory-math-minus/resource/1/Data.qml:15
 #, fuzzy
 #| msgctxt "ActivityInfo|"
-#| msgid "Learn subtraction"
+#| msgid "Subtraction memory game"
 msgctxt "Data|"
 msgid "Subtraction table of 1."
-msgstr "Apgūsti atņemšanu"
+msgstr "Atņemšanas atmiņas spēle"
 
 #: activities/memory-math-minus-tux/resource/10/Data.qml:15
 #: activities/memory-math-minus/resource/10/Data.qml:15
 #, fuzzy
 #| msgctxt "ActivityInfo|"
-#| msgid "Learn subtraction"
+#| msgid "Subtraction memory game"
 msgctxt "Data|"
 msgid "Subtraction table of 10."
-msgstr "Apgūsti atņemšanu"
+msgstr "Atņemšanas atmiņas spēle"
 
 #: activities/memory-math-minus-tux/resource/2/Data.qml:15
 #: activities/memory-math-minus/resource/2/Data.qml:15
 #, fuzzy
 #| msgctxt "ActivityInfo|"
-#| msgid "Learn subtraction"
+#| msgid "Subtraction memory game"
 msgctxt "Data|"
 msgid "Subtraction table of 2."
-msgstr "Apgūsti atņemšanu"
+msgstr "Atņemšanas atmiņas spēle"
 
 #: activities/memory-math-minus-tux/resource/3/Data.qml:15
 #: activities/memory-math-minus/resource/3/Data.qml:15
 #, fuzzy
 #| msgctxt "ActivityInfo|"
-#| msgid "Learn subtraction"
+#| msgid "Subtraction memory game"
 msgctxt "Data|"
 msgid "Subtraction table of 3."
-msgstr "Apgūsti atņemšanu"
+msgstr "Atņemšanas atmiņas spēle"
 
 #: activities/memory-math-minus-tux/resource/4/Data.qml:15
 #: activities/memory-math-minus/resource/4/Data.qml:15
 #, fuzzy
 #| msgctxt "ActivityInfo|"
-#| msgid "Learn subtraction"
+#| msgid "Subtraction memory game"
 msgctxt "Data|"
 msgid "Subtraction table of 4."
-msgstr "Apgūsti atņemšanu"
+msgstr "Atņemšanas atmiņas spēle"
 
 #: activities/memory-math-minus-tux/resource/5/Data.qml:15
 #: activities/memory-math-minus/resource/5/Data.qml:15
 #, fuzzy
 #| msgctxt "ActivityInfo|"
-#| msgid "Learn subtraction"
+#| msgid "Subtraction memory game"
 msgctxt "Data|"
 msgid "Subtraction table of 5."
-msgstr "Apgūsti atņemšanu"
+msgstr "Atņemšanas atmiņas spēle"
 
 #: activities/memory-math-minus-tux/resource/6/Data.qml:15
 #: activities/memory-math-minus/resource/6/Data.qml:15
 #, fuzzy
 #| msgctxt "ActivityInfo|"
-#| msgid "Learn subtraction"
+#| msgid "Subtraction memory game"
 msgctxt "Data|"
 msgid "Subtraction table of 6."
-msgstr "Apgūsti atņemšanu"
+msgstr "Atņemšanas atmiņas spēle"
 
 #: activities/memory-math-minus-tux/resource/7/Data.qml:15
 #: activities/memory-math-minus/resource/7/Data.qml:15
 #, fuzzy
 #| msgctxt "ActivityInfo|"
-#| msgid "Learn subtraction"
+#| msgid "Subtraction memory game"
 msgctxt "Data|"
 msgid "Subtraction table of 7."
-msgstr "Apgūsti atņemšanu"
+msgstr "Atņemšanas atmiņas spēle"
 
 #: activities/memory-math-minus-tux/resource/8/Data.qml:15
 #: activities/memory-math-minus/resource/8/Data.qml:15
 #, fuzzy
 #| msgctxt "ActivityInfo|"
-#| msgid "Learn subtraction"
+#| msgid "Subtraction memory game"
 msgctxt "Data|"
 msgid "Subtraction table of 8."
-msgstr "Apgūsti atņemšanu"
+msgstr "Atņemšanas atmiņas spēle"
 
 #: activities/memory-math-minus-tux/resource/9/Data.qml:15
 #: activities/memory-math-minus/resource/9/Data.qml:15
 #, fuzzy
 #| msgctxt "ActivityInfo|"
-#| msgid "Learn subtraction"
+#| msgid "Subtraction memory game"
 msgctxt "Data|"
 msgid "Subtraction table of 9."
-msgstr "Apgūsti atņemšanu"
+msgstr "Atņemšanas atmiņas spēle"
 
 #. Activity title
 #: activities/memory-math-minus/ActivityInfo.qml:15
@@ -17630,10 +17471,10 @@ msgstr ""
 #: activities/memory-math-mult-div/ActivityInfo.qml:20
 #, fuzzy
 #| msgctxt "ActivityInfo|"
-#| msgid "Practice the multiplication operation"
+#| msgid "Practice addition, subtraction, multiplication and division."
 msgctxt "ActivityInfo|"
 msgid "Practice multiplications and divisions."
-msgstr "Trenējies reizināt"
+msgstr "Trenējies skaitīšanu, atņemšanu, reizināšanu un dalīšanu."
 
 #. Help prerequisite
 #: activities/memory-math-mult-div-tux/ActivityInfo.qml:22
@@ -19025,12 +18866,9 @@ msgstr ""
 
 #. Help prerequisite
 #: activities/morse_code/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "FirstScreen|"
-#| msgid "Braille : Unlocking the Code"
 msgctxt "ActivityInfo|"
 msgid "Knowledge of alphabets and digits."
-msgstr "Brails — koda atkošana"
+msgstr ""
 
 #. Help manual
 #: activities/morse_code/ActivityInfo.qml:27
@@ -19423,10 +19261,10 @@ msgstr "Zīmē attēlu, klikšķinot pareizā secībā uz skaitļiem."
 #: activities/number_sequence/ActivityInfo.qml:24
 #, fuzzy
 #| msgctxt "ActivityInfo|"
-#| msgid "Draw the picture by clicking on the blue points."
+#| msgid "Draw the picture by clicking on each numbers in the right order."
 msgctxt "ActivityInfo|"
 msgid "Draw the picture by clicking on each number in the right order."
-msgstr "Zīmē, klikšķinot uz zilajiem punktiem."
+msgstr "Zīmē attēlu, klikšķinot pareizā secībā uz skaitļiem."
 
 #. Activity title
 #: activities/numbers-odd-even/ActivityInfo.qml:15
@@ -19553,11 +19391,11 @@ msgstr ""
 #. Activity title
 #: activities/ordering_alphabets/ActivityInfo.qml:21
 #, fuzzy
-#| msgctxt "FirstScreen|"
-#| msgid "Braille : Unlocking the Code"
+#| msgctxt "ActivityInfo|"
+#| msgid "Missing Letter"
 msgctxt "ActivityInfo|"
 msgid "Ordering letters"
-msgstr "Brails — koda atkošana"
+msgstr "Trūkstošais burts"
 
 #. Help title
 #: activities/ordering_alphabets/ActivityInfo.qml:23
@@ -19701,13 +19539,10 @@ msgstr "Atņemšanas atmiņas spēle"
 
 #. Help title
 #: activities/ordering_numbers/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Draw the picture by clicking on each numbers in the right order."
 msgctxt "ActivityInfo|"
 msgid ""
 "Arrange the given numbers in ascending or descending order as requested."
-msgstr "Zīmē attēlu, klikšķinot pareizā secībā uz skaitļiem."
+msgstr ""
 
 #. intro: "Arrange the numbers in the correct order." Help goal
 #: activities/ordering_numbers/ActivityInfo.qml:25
@@ -20371,12 +20206,9 @@ msgstr "Nospied uz vārda, kurš atbilst parādītajam attēlam."
 
 #. Activity title
 #: activities/piano_composition/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Addition"
 msgctxt "ActivityInfo|"
 msgid "Piano composition"
-msgstr "Saskaitīšana"
+msgstr ""
 
 #. Help title
 #: activities/piano_composition/ActivityInfo.qml:18
@@ -20686,11 +20518,11 @@ msgstr ""
 
 #: activities/piano_composition/OptionsRow.qml:23
 #, fuzzy
-#| msgctxt "dataset|"
-#| msgid "eight"
+#| msgctxt "ActivityInfo|"
+#| msgid "Click the mouse"
 msgctxt "OptionsRow|"
 msgid "Eighth note"
-msgstr "astoņi"
+msgstr "Klikšķini peli"
 
 #. Whole rest, Half rest, Quarter rest and Eighth rest are the different length rests (silences) in the musical notation.
 #: activities/piano_composition/OptionsRow.qml:26
@@ -20710,11 +20542,11 @@ msgstr ""
 
 #: activities/piano_composition/OptionsRow.qml:26
 #, fuzzy
-#| msgctxt "dataset|"
-#| msgid "eight"
+#| msgctxt "ActivityInfo|"
+#| msgid "Click the mouse"
 msgctxt "OptionsRow|"
 msgid "Eighth rest added"
-msgstr "astoņi"
+msgstr "Klikšķini peli"
 
 #: activities/piano_composition/OptionsRow.qml:27
 msgctxt "OptionsRow|"
@@ -20732,12 +20564,9 @@ msgid "Quarter rest"
 msgstr ""
 
 #: activities/piano_composition/OptionsRow.qml:27
-#, fuzzy
-#| msgctxt "dataset|"
-#| msgid "eight"
 msgctxt "OptionsRow|"
 msgid "Eighth rest"
-msgstr "astoņi"
+msgstr ""
 
 #: activities/piano_composition/OptionsRow.qml:28
 msgctxt "OptionsRow|"
@@ -21184,12 +21013,9 @@ msgid "Click on the reload button if you want to replay the rhythm."
 msgstr "Iesper bumbu vārtos"
 
 #: activities/play_rhythm/ActivityInfo.qml:33
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Move and click the mouse"
 msgctxt "ActivityInfo|"
 msgid "Space bar: click on the drum"
-msgstr "Pārvieto un klikšķini peli"
+msgstr ""
 
 #: activities/play_rhythm/ActivityInfo.qml:34
 msgctxt "ActivityInfo|"
@@ -21357,12 +21183,9 @@ msgid "Select the image where the child is under the box."
 msgstr ""
 
 #: activities/positions/resource/2/Data.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn addition"
 msgctxt "Data|"
 msgid "All positions (with left and right)."
-msgstr "Mācies saskaitīšanu"
+msgstr ""
 
 #. it refers to the position on the right side
 #: activities/positions/resource/2/Data.qml:20
@@ -21431,12 +21254,9 @@ msgid ""
 msgstr ""
 
 #: activities/programmingMaze/ActivityInfo.qml:27
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Draw the picture by clicking on each numbers in the right order."
 msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: navigate inside selected area"
-msgstr "Zīmē attēlu, klikšķinot pareizā secībā uz skaitļiem."
+msgstr ""
 
 #: activities/programmingMaze/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
@@ -21935,10 +21755,10 @@ msgstr ""
 #: activities/smallnumbers2/ActivityConfig.qml:21
 #, fuzzy
 #| msgctxt "ActivityInfo|"
-#| msgid "Simple Letters"
+#| msgid "Subtraction memory game"
 msgctxt "ActivityConfig|"
 msgid "Arabic numbers"
-msgstr "Vienkārši burti"
+msgstr "Atņemšanas atmiņas spēle"
 
 #: activities/reversecount/ActivityConfig.qml:23
 #: activities/smallnumbers2/ActivityConfig.qml:22
@@ -22057,12 +21877,9 @@ msgid ""
 msgstr ""
 
 #: activities/roman_numerals/ActivityInfo.qml:27
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Simple Letters"
 msgctxt "ActivityInfo|"
 msgid "Digits: type arabic numerals"
-msgstr "Vienkārši burti"
+msgstr ""
 
 #: activities/roman_numerals/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
@@ -22209,12 +22026,10 @@ msgstr ""
 #: activities/scalesboard/resource/3/Data.qml:13
 #: activities/scalesboard/resource/4/Data.qml:13
 #: activities/scalesboard/resource/5/Data.qml:13
-#, fuzzy, qt-format
-#| msgctxt "ActivityInfo|"
-#| msgid "Balance the scales properly"
+#, qt-format
 msgctxt "Data|"
 msgid "Balance up to %1."
-msgstr "Līdzsvaro svarus pareizi"
+msgstr ""
 
 #: activities/scalesboard/resource/1/Data.qml:20
 #: activities/scalesboard/resource/2/Data.qml:20
@@ -22383,28 +22198,19 @@ msgid "Enter the weight of the gift: %1"
 msgstr ""
 
 #: activities/scalesboard/resource/6/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Balance the scales properly"
 msgctxt "Data|"
 msgid "Balance up to 20."
-msgstr "Līdzsvaro svarus pareizi"
+msgstr ""
 
 #: activities/scalesboard/resource/7/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Balance the scales properly"
 msgctxt "Data|"
 msgid "Balance up to 50."
-msgstr "Līdzsvaro svarus pareizi"
+msgstr ""
 
 #: activities/scalesboard/resource/8/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Balance the scales properly"
 msgctxt "Data|"
 msgid "Balance up to 100."
-msgstr "Līdzsvaro svarus pareizi"
+msgstr ""
 
 #. Activity title
 #: activities/scalesboard_weight/ActivityInfo.qml:15
@@ -22452,12 +22258,9 @@ msgstr ""
 "var tikt salikti jebkādā secībā."
 
 #: activities/scalesboard_weight/resource/1/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Balance the scales properly"
 msgctxt "Data|"
 msgid "Balance up to 5 grams."
-msgstr "Līdzsvaro svarus pareizi"
+msgstr ""
 
 #: activities/scalesboard_weight/resource/1/Data.qml:18
 #: activities/scalesboard_weight/resource/2/Data.qml:18
@@ -22489,24 +22292,18 @@ msgid "Enter the weight of the gift in grams: %1"
 msgstr ""
 
 #: activities/scalesboard_weight/resource/2/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Balance the scales properly"
 msgctxt "Data|"
 msgid "Balance up to 10 grams."
-msgstr "Līdzsvaro svarus pareizi"
+msgstr ""
 
 #: activities/scalesboard_weight/resource/2/Data.qml:26
 #: activities/scalesboard_weight/resource/3/Data.qml:26
 #: activities/scalesboard_weight/resource/5/Data.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Drag and Drop weights to balance the scales"
 msgctxt "Data|"
 msgid ""
 "The \"g\" symbol at the end of a number means gram. \n"
 " Drop weights on the left side to balance the scales."
-msgstr "Velc un nomet atsvarus, lai līdzsvarotu svarus"
+msgstr ""
 
 #: activities/scalesboard_weight/resource/2/Data.qml:45
 #: activities/scalesboard_weight/resource/2/Data.qml:52
@@ -22525,20 +22322,14 @@ msgid "Enter the weight of the gift in gram: %1"
 msgstr ""
 
 #: activities/scalesboard_weight/resource/3/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Balance the scales properly"
 msgctxt "Data|"
 msgid "Balance up to 20 grams."
-msgstr "Līdzsvaro svarus pareizi"
+msgstr ""
 
 #: activities/scalesboard_weight/resource/4/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Balance the scales properly"
 msgctxt "Data|"
 msgid "Balance up to 10 kilograms."
-msgstr "Līdzsvaro svarus pareizi"
+msgstr ""
 
 #: activities/scalesboard_weight/resource/4/Data.qml:18
 #: activities/scalesboard_weight/resource/6/Data.qml:23
@@ -22572,12 +22363,9 @@ msgid "Enter the weight of the gift in kilogram: %1"
 msgstr ""
 
 #: activities/scalesboard_weight/resource/5/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Balance the scales properly"
 msgctxt "Data|"
 msgid "Balance up to 100 grams."
-msgstr "Līdzsvaro svarus pareizi"
+msgstr ""
 
 #: activities/scalesboard_weight/resource/6/Data.qml:13
 msgctxt "Data|"
@@ -22595,14 +22383,11 @@ msgstr ""
 
 #: activities/scalesboard_weight/resource/6/Data.qml:44
 #: activities/scalesboard_weight/resource/6/Data.qml:50
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Drag and Drop weights to balance the scales"
 msgctxt "Data|"
 msgid ""
 "Remember, one kilogram (\"kg\") equals 1000 grams (\"g\"). \n"
 " Drop weights on the left side to balance the scales."
-msgstr "Velc un nomet atsvarus, lai līdzsvarotu svarus"
+msgstr ""
 
 #. Activity title
 #: activities/scalesboard_weight_avoirdupois/ActivityInfo.qml:15
@@ -22629,12 +22414,9 @@ msgstr ""
 "var tikt salikti jebkādā secībā."
 
 #: activities/scalesboard_weight_avoirdupois/resource/1/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Balance the scales properly"
 msgctxt "Data|"
 msgid "Balance up to 5 ounces."
-msgstr "Līdzsvaro svarus pareizi"
+msgstr ""
 
 #: activities/scalesboard_weight_avoirdupois/resource/1/Data.qml:18
 #: activities/scalesboard_weight_avoirdupois/resource/2/Data.qml:18
@@ -22674,28 +22456,19 @@ msgid "Enter the weight of the gift in ounce: %1"
 msgstr ""
 
 #: activities/scalesboard_weight_avoirdupois/resource/2/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Balance the scales properly"
 msgctxt "Data|"
 msgid "Balance up to 10 ounces."
-msgstr "Līdzsvaro svarus pareizi"
+msgstr ""
 
 #: activities/scalesboard_weight_avoirdupois/resource/3/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Balance the scales properly"
 msgctxt "Data|"
 msgid "Balance up to 20 ounces."
-msgstr "Līdzsvaro svarus pareizi"
+msgstr ""
 
 #: activities/scalesboard_weight_avoirdupois/resource/4/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Balance the scales properly"
 msgctxt "Data|"
 msgid "Balance up to 10 pounds."
-msgstr "Līdzsvaro svarus pareizi"
+msgstr ""
 
 #: activities/scalesboard_weight_avoirdupois/resource/4/Data.qml:18
 #: activities/scalesboard_weight_avoirdupois/resource/6/Data.qml:23
@@ -22725,30 +22498,21 @@ msgid "Enter the weight of the gift in pound: %1"
 msgstr ""
 
 #: activities/scalesboard_weight_avoirdupois/resource/5/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Balance the scales properly"
 msgctxt "Data|"
 msgid "Balance up to 100 ounces."
-msgstr "Līdzsvaro svarus pareizi"
+msgstr ""
 
 #: activities/scalesboard_weight_avoirdupois/resource/5/Data.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Drag and Drop weights to balance the scales"
 msgctxt "Data|"
 msgid ""
 "The \"oz\" symbol at the end of a number means ounce. \n"
 " Drop weights on the left side to balance the scales."
-msgstr "Velc un nomet atsvarus, lai līdzsvarotu svarus"
+msgstr ""
 
 #: activities/scalesboard_weight_avoirdupois/resource/6/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Balance the scales properly"
 msgctxt "Data|"
 msgid "Balance up to 10 pounds including ounces."
-msgstr "Līdzsvaro svarus pareizi"
+msgstr ""
 
 #: activities/scalesboard_weight_avoirdupois/resource/6/Data.qml:48
 #: activities/scalesboard_weight_avoirdupois/resource/6/Data.qml:54
@@ -23280,18 +23044,15 @@ msgstr "Skaitļi ar kauliņu"
 #: activities/smallnumbers/resource/1/Data.qml:18
 #, fuzzy
 #| msgctxt "ActivityInfo|"
-#| msgid "Click on the correct color"
+#| msgid "Draw the picture by clicking on each numbers in the right order."
 msgctxt "Data|"
 msgid "Type the number on the dice, 1 or 2."
-msgstr "Spiediet uz pareizās krāsas"
+msgstr "Zīmē attēlu, klikšķinot pareizā secībā uz skaitļiem."
 
 #: activities/smallnumbers/resource/1/Data.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Click on the correct color"
 msgctxt "Data|"
 msgid "Type the number on the dice, from 1 to 3."
-msgstr "Spiediet uz pareizās krāsas"
+msgstr ""
 
 #: activities/smallnumbers/resource/2/Data.qml:14
 #: activities/smallnumbers2/resource/2/Data.qml:14
@@ -23303,12 +23064,9 @@ msgid "Numbers up to 4."
 msgstr "Skaitļi ar kauliņu"
 
 #: activities/smallnumbers/resource/2/Data.qml:18
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Click on the correct color"
 msgctxt "Data|"
 msgid "Type the number on the dice, from 1 to 4."
-msgstr "Spiediet uz pareizās krāsas"
+msgstr ""
 
 #: activities/smallnumbers/resource/3/Data.qml:14
 #: activities/smallnumbers2/resource/3/Data.qml:14
@@ -23320,12 +23078,9 @@ msgid "Numbers up to 5."
 msgstr "Skaitļi ar kauliņu"
 
 #: activities/smallnumbers/resource/3/Data.qml:18
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Click on the correct color"
 msgctxt "Data|"
 msgid "Type the number on the dice, from 1 to 5."
-msgstr "Spiediet uz pareizās krāsas"
+msgstr ""
 
 #: activities/smallnumbers/resource/4/Data.qml:14
 #: activities/smallnumbers2/resource/4/Data.qml:14
@@ -23337,12 +23092,9 @@ msgid "Numbers up to 6."
 msgstr "Skaitļi ar kauliņu"
 
 #: activities/smallnumbers/resource/4/Data.qml:18
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Click on the correct color"
 msgctxt "Data|"
 msgid "Type the number on the dice, from 1 to 6."
-msgstr "Spiediet uz pareizās krāsas"
+msgstr ""
 
 #: activities/smallnumbers/resource/5/Data.qml:14
 #: activities/smallnumbers2/resource/5/Data.qml:14
@@ -23354,12 +23106,9 @@ msgid "Numbers up to 7."
 msgstr "Skaitļi ar kauliņu"
 
 #: activities/smallnumbers/resource/5/Data.qml:18
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Click on the correct color"
 msgctxt "Data|"
 msgid "Type the number on the dice, from 1 to 7."
-msgstr "Spiediet uz pareizās krāsas"
+msgstr ""
 
 #: activities/smallnumbers/resource/6/Data.qml:14
 #: activities/smallnumbers2/resource/6/Data.qml:14
@@ -23371,12 +23120,9 @@ msgid "Numbers up to 8."
 msgstr "Skaitļi ar kauliņu"
 
 #: activities/smallnumbers/resource/6/Data.qml:18
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Click on the correct color"
 msgctxt "Data|"
 msgid "Type the number on the dice, from 1 to 8."
-msgstr "Spiediet uz pareizās krāsas"
+msgstr ""
 
 #: activities/smallnumbers/resource/7/Data.qml:14
 #: activities/smallnumbers2/resource/7/Data.qml:14
@@ -23388,29 +23134,20 @@ msgid "Numbers up to 9."
 msgstr "Skaitļi ar kauliņu"
 
 #: activities/smallnumbers/resource/7/Data.qml:18
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Click on the correct color"
 msgctxt "Data|"
 msgid "Type the number on the dice, from 1 to 9."
-msgstr "Spiediet uz pareizās krāsas"
+msgstr ""
 
 #: activities/smallnumbers/resource/8/Data.qml:13
 #: activities/smallnumbers2/resource/8/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Subtraction memory game"
 msgctxt "Data|"
 msgid "Numbers from 0 to 9."
-msgstr "Atņemšanas atmiņas spēle"
+msgstr ""
 
 #: activities/smallnumbers/resource/8/Data.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Click on the correct color"
 msgctxt "Data|"
 msgid "Type the number on the dice, from 0 to 9."
-msgstr "Spiediet uz pareizās krāsas"
+msgstr ""
 
 #. Activity title
 #: activities/smallnumbers2/ActivityInfo.qml:15
@@ -23432,12 +23169,9 @@ msgstr "Saskaiti punktus uz kauliņiem, pirms tie sasniedz zemi"
 
 #. Help goal
 #: activities/smallnumbers2/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "In a limited time, find the difference between two numbers"
 msgctxt "ActivityInfo|"
 msgid "Count a number in a limited time."
-msgstr "Ierobežotā laikā atrast divu skaitļu starpību"
+msgstr ""
 
 #. Help manual
 #: activities/smallnumbers2/ActivityInfo.qml:24
@@ -23450,76 +23184,49 @@ msgid "Type the number you see on each falling domino."
 msgstr "Ar tastatūras palīdzību ievadi saskaitīto punktu daudzumu uz kauliņa."
 
 #: activities/smallnumbers2/resource/1/Data.qml:18
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Click on the correct color"
 msgctxt "Data|"
 msgid "Type the number on the domino, 1 or 2."
-msgstr "Spiediet uz pareizās krāsas"
+msgstr ""
 
 #: activities/smallnumbers2/resource/1/Data.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Click on the correct color"
 msgctxt "Data|"
 msgid "Type the number on the domino, from 1 to 3."
-msgstr "Spiediet uz pareizās krāsas"
+msgstr ""
 
 #: activities/smallnumbers2/resource/2/Data.qml:18
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Click on the correct color"
 msgctxt "Data|"
 msgid "Type the number on the domino, from 1 to 4."
-msgstr "Spiediet uz pareizās krāsas"
+msgstr ""
 
 #: activities/smallnumbers2/resource/3/Data.qml:18
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Click on the correct color"
 msgctxt "Data|"
 msgid "Type the number on the domino, from 1 to 5."
-msgstr "Spiediet uz pareizās krāsas"
+msgstr ""
 
 #: activities/smallnumbers2/resource/4/Data.qml:18
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Click on the correct color"
 msgctxt "Data|"
 msgid "Type the number on the domino, from 1 to 6."
-msgstr "Spiediet uz pareizās krāsas"
+msgstr ""
 
 #: activities/smallnumbers2/resource/5/Data.qml:18
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Click on the correct color"
 msgctxt "Data|"
 msgid "Type the number on the domino, from 1 to 7."
-msgstr "Spiediet uz pareizās krāsas"
+msgstr ""
 
 #: activities/smallnumbers2/resource/6/Data.qml:18
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Click on the correct color"
 msgctxt "Data|"
 msgid "Type the number on the domino, from 1 to 8."
-msgstr "Spiediet uz pareizās krāsas"
+msgstr ""
 
 #: activities/smallnumbers2/resource/7/Data.qml:18
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Click on the correct color"
 msgctxt "Data|"
 msgid "Type the number on the domino, from 1 to 9."
-msgstr "Spiediet uz pareizās krāsas"
+msgstr ""
 
 #: activities/smallnumbers2/resource/8/Data.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Click on the correct color"
 msgctxt "Data|"
 msgid "Type the number on the domino, from 0 to 9."
-msgstr "Spiediet uz pareizās krāsas"
+msgstr ""
 
 #: activities/solar_system/ActivityConfig.qml:21
 #, fuzzy
@@ -25002,10 +24709,10 @@ msgstr ""
 #: activities/superbrain/ActivityInfo.qml:20
 #, fuzzy
 #| msgctxt "ActivityInfo|"
-#| msgid "Draw the picture by clicking on each numbers in the right order."
+#| msgid "Move the helicopter to catch the clouds in the correct order"
 msgctxt "ActivityInfo|"
 msgid "Tux has hidden several items. Find them in the correct order."
-msgstr "Zīmē attēlu, klikšķinot pareizā secībā uz skaitļiem."
+msgstr "Kustini helikopteri, lai noķertu mākoņus pareizā secībā"
 
 #. Help manual
 #: activities/superbrain/ActivityInfo.qml:24
@@ -25183,10 +24890,10 @@ msgstr ""
 #: activities/tens_complement_find/ActivityInfo.qml:21
 #, fuzzy
 #| msgctxt "ActivityInfo|"
-#| msgid "Subtraction memory game"
+#| msgid "Numbers from 1 to 1000 for the last level."
 msgctxt "ActivityInfo|"
 msgid "Numbers from 1 to 10 and additions."
-msgstr "Atņemšanas atmiņas spēle"
+msgstr "Skaitļi no 1 līdz 1000 pēdējam līmenim."
 
 #: activities/tens_complement_find/ActivityInfo.qml:23
 #: activities/tens_complement_use/ActivityInfo.qml:24
@@ -25209,18 +24916,18 @@ msgstr ""
 #: activities/tens_complement_find/resource/1/Data.qml:25
 #, fuzzy
 #| msgctxt "ActivityInfo|"
-#| msgid "Subtraction memory game"
+#| msgid "Can count from 1 to 50."
 msgctxt "Data|"
 msgid "First number from 1 to 4."
-msgstr "Atņemšanas atmiņas spēle"
+msgstr "Prot skaitīt no 1 līdz 50"
 
 #: activities/tens_complement_find/resource/2/Data.qml:9
 #, fuzzy
 #| msgctxt "ActivityInfo|"
-#| msgid "Subtraction memory game"
+#| msgid "Can count from 1 to 50."
 msgctxt "Data|"
 msgid "First number from 5 to 9."
-msgstr "Atņemšanas atmiņas spēle"
+msgstr "Prot skaitīt no 1 līdz 50"
 
 #: activities/tens_complement_find/resource/4/Data.qml:9
 #, fuzzy
@@ -25254,10 +24961,10 @@ msgstr ""
 #: activities/tens_complement_swap/ActivityInfo.qml:21
 #, fuzzy
 #| msgctxt "ActivityInfo|"
-#| msgid "Subtraction memory game"
+#| msgid "Numbers from 1 to 1000 for the last level."
 msgctxt "ActivityInfo|"
 msgid "Numbers from 1 to 30 and additions."
-msgstr "Atņemšanas atmiņas spēle"
+msgstr "Skaitļi no 1 līdz 1000 pēdējam līmenim."
 
 #. Help manual
 #: activities/tens_complement_swap/ActivityInfo.qml:23
@@ -25316,10 +25023,10 @@ msgstr ""
 #: activities/tens_complement_use/ActivityInfo.qml:21
 #, fuzzy
 #| msgctxt "ActivityInfo|"
-#| msgid "Subtraction memory game"
+#| msgid "Numbers from 1 to 1000 for the last level."
 msgctxt "ActivityInfo|"
 msgid "Numbers from 1 to 50 and additions."
-msgstr "Atņemšanas atmiņas spēle"
+msgstr "Skaitļi no 1 līdz 1000 pēdējam līmenim."
 
 #. Help manual
 #: activities/tens_complement_use/ActivityInfo.qml:23
@@ -25366,12 +25073,9 @@ msgstr "Audio atmiņas spēle pret Tuksi"
 #. Help title
 #: activities/tic_tac_toe/ActivityInfo.qml:20
 #: activities/tic_tac_toe_2players/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Arrange four coins in a row"
 msgctxt "ActivityInfo|"
 msgid "Place three marks in a row."
-msgstr "Izkārto četras monētas vienā rindā"
+msgstr ""
 
 #. Help goal
 #: activities/tic_tac_toe/ActivityInfo.qml:23
@@ -25608,57 +25312,85 @@ msgstr "Ieraksti pilnu krītošo vārdu, pirms tas sasniedz zemi"
 
 #: core/ChangeLog.qml:30
 msgctxt "ChangeLog|"
+msgid "Map of Spain added for geography activity"
+msgstr ""
+
+#: core/ChangeLog.qml:31
+msgctxt "ChangeLog|"
+msgid "Voices added for Ukrainian"
+msgstr ""
+
+#: core/ChangeLog.qml:32
+msgctxt "ChangeLog|"
+msgid ""
+"New command-line option to list all the activities and start on a specific "
+"one"
+msgstr ""
+
+#: core/ChangeLog.qml:33 core/ChangeLog.qml:68 core/ChangeLog.qml:71
+#: core/ChangeLog.qml:77
+msgctxt "ChangeLog|"
+msgid "Many usability improvements"
+msgstr ""
+
+#: core/ChangeLog.qml:34 core/ChangeLog.qml:52 core/ChangeLog.qml:67
+#: core/ChangeLog.qml:72 core/ChangeLog.qml:78
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Memory Game with images"
+msgctxt "ChangeLog|"
+msgid "Many new images"
+msgstr "Attēlu atmiņas spēle"
+
+#: core/ChangeLog.qml:35 core/ChangeLog.qml:73 core/ChangeLog.qml:79
+msgctxt "ChangeLog|"
+msgid "Many bug fixes"
+msgstr ""
+
+#: core/ChangeLog.qml:39
+msgctxt "ChangeLog|"
 msgid ""
 "Reduce the size of the packages for all platforms and of the external word "
 "images set"
 msgstr ""
 
-#: core/ChangeLog.qml:31
+#: core/ChangeLog.qml:40
 msgctxt "ChangeLog|"
 msgid "Improve images quality in several activities"
 msgstr ""
 
-#: core/ChangeLog.qml:32
+#: core/ChangeLog.qml:41
 msgctxt "ChangeLog|"
 msgid "Fix some transitions in renewable_energy/watercycle on some platforms"
 msgstr ""
 
-#: core/ChangeLog.qml:33
+#: core/ChangeLog.qml:42
 msgctxt "ChangeLog|"
 msgid "Fix dead keys ignored on Linux for typing activities"
 msgstr ""
 
-#: core/ChangeLog.qml:34
+#: core/ChangeLog.qml:43
 msgctxt "ChangeLog|"
 msgid "Fix level reset when changing level manually in Logical associations"
 msgstr ""
 
-#: core/ChangeLog.qml:38
+#: core/ChangeLog.qml:47
 msgctxt "ChangeLog|"
 msgid ""
 "Fix Alphabet sequence, Even and odd numbers and Numbers in order activities"
 msgstr ""
 
-#: core/ChangeLog.qml:42 core/ChangeLog.qml:50
+#: core/ChangeLog.qml:51 core/ChangeLog.qml:59
 msgctxt "ChangeLog|"
 msgid "Several bug fixes"
 msgstr ""
 
-#: core/ChangeLog.qml:43 core/ChangeLog.qml:58 core/ChangeLog.qml:63
-#: core/ChangeLog.qml:69
-#, fuzzy
-#| msgctxt "instruments|"
-#| msgid "Find the triangle"
-msgctxt "ChangeLog|"
-msgid "Many new images"
-msgstr "Atrodi trijstūri"
-
-#: core/ChangeLog.qml:44
+#: core/ChangeLog.qml:53
 msgctxt "ChangeLog|"
 msgid "Translation updated for Russian"
 msgstr ""
 
-#: core/ChangeLog.qml:45
+#: core/ChangeLog.qml:54
 #, fuzzy
 #| msgctxt "DialogConfig|"
 #| msgid "Norwegian Nynorsk"
@@ -25666,196 +25398,186 @@ msgctxt "ChangeLog|"
 msgid "New voices for Norwegian Nynorsk"
 msgstr "Jaunnorvēģu"
 
-#: core/ChangeLog.qml:49
+#: core/ChangeLog.qml:58
 msgctxt "ChangeLog|"
 msgid "Translations added for Breton, Czech and Macedonian"
 msgstr ""
 
-#: core/ChangeLog.qml:54
+#: core/ChangeLog.qml:63
 msgctxt "ChangeLog|"
 msgid "Translation added for Azerbaijani"
 msgstr ""
 
-#: core/ChangeLog.qml:55
+#: core/ChangeLog.qml:64
 msgctxt "ChangeLog|"
 msgid "New maps and update of the maps for geography activities"
 msgstr ""
 
-#: core/ChangeLog.qml:56
+#: core/ChangeLog.qml:65
 msgctxt "ChangeLog|"
 msgid ""
 "New dataset containing loops operations for programming maze, and make "
 "tutorial images translated"
 msgstr ""
 
-#: core/ChangeLog.qml:57
+#: core/ChangeLog.qml:66
 msgctxt "ChangeLog|"
 msgid ""
 "Addition of a level to teach voltage source loop in analog electricity "
 "activity"
 msgstr ""
 
-#: core/ChangeLog.qml:59 core/ChangeLog.qml:62 core/ChangeLog.qml:68
-msgctxt "ChangeLog|"
-msgid "Many usability improvements"
-msgstr ""
-
-#: core/ChangeLog.qml:64 core/ChangeLog.qml:70
-msgctxt "ChangeLog|"
-msgid "Many bug fixes"
-msgstr ""
-
-#: core/ChangeLog.qml:67
+#: core/ChangeLog.qml:76
 msgctxt "ChangeLog|"
 msgid "New Activity Settings menu, with dataset selection"
 msgstr ""
 
-#: core/ChangeLog.qml:73
+#: core/ChangeLog.qml:82
 msgctxt "ChangeLog|"
 msgid "New sub-categories to organize activities"
 msgstr ""
 
-#: core/ChangeLog.qml:74
+#: core/ChangeLog.qml:83
 msgctxt "ChangeLog|"
 msgid "Translation added for Macedonian."
 msgstr ""
 
-#: core/ChangeLog.qml:75
+#: core/ChangeLog.qml:84
 msgctxt "ChangeLog|"
 msgid "New activities Programming Maze and Baby Tangram"
 msgstr ""
 
-#: core/ChangeLog.qml:76
+#: core/ChangeLog.qml:85
 msgctxt "ChangeLog|"
 msgid "New background music and volume settings."
 msgstr ""
 
-#: core/ChangeLog.qml:77
+#: core/ChangeLog.qml:86
 msgctxt "ChangeLog|"
 msgid "New speed setting in several activities."
 msgstr ""
 
-#: core/ChangeLog.qml:78
+#: core/ChangeLog.qml:87
 msgctxt "ChangeLog|"
 msgid "New option in chess to display captured pieces."
 msgstr ""
 
-#: core/ChangeLog.qml:79
+#: core/ChangeLog.qml:88
 msgctxt "ChangeLog|"
 msgid "New images in Colors, Advanced colors and Target game."
 msgstr ""
 
-#: core/ChangeLog.qml:80
+#: core/ChangeLog.qml:89
 msgctxt "ChangeLog|"
 msgid "New voices for US English."
 msgstr ""
 
-#: core/ChangeLog.qml:81 core/ChangeLog.qml:89
+#: core/ChangeLog.qml:90 core/ChangeLog.qml:98
 msgctxt "ChangeLog|"
 msgid "Many little fixes and improvements."
 msgstr ""
 
-#: core/ChangeLog.qml:82
+#: core/ChangeLog.qml:91
 msgctxt "ChangeLog|"
 msgid ""
 "Translation updated for multiple languages (Breton, Brazilian Portuguese, "
 "Finnish...)."
 msgstr ""
 
-#: core/ChangeLog.qml:83
+#: core/ChangeLog.qml:92
 msgctxt "ChangeLog|"
 msgid "Add Russian dataset for Click on letter activity."
 msgstr ""
 
-#: core/ChangeLog.qml:84
+#: core/ChangeLog.qml:93
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in Dutch."
 msgstr ""
 
-#: core/ChangeLog.qml:85
+#: core/ChangeLog.qml:94
 msgctxt "ChangeLog|"
 msgid ""
 "Merge Norwegian counties Nord-Trøndelag and Sør-Trøndelag into Trøndelag in "
 "geo-country activity."
 msgstr ""
 
-#: core/ChangeLog.qml:86
+#: core/ChangeLog.qml:95
 msgctxt "ChangeLog|"
 msgid "Fix in braille activities where the cells start at 1, not 0."
 msgstr ""
 
-#: core/ChangeLog.qml:87
+#: core/ChangeLog.qml:96
 msgctxt "ChangeLog|"
 msgid "Translation added for Basque, Hungarian and Malayalam."
 msgstr ""
 
-#: core/ChangeLog.qml:88
+#: core/ChangeLog.qml:97
 msgctxt "ChangeLog|"
 msgid ""
 "Loading/saving of creations (Baby Wordprocessor, Balance Box and Piano "
 "Composition)."
 msgstr ""
 
-#: core/ChangeLog.qml:89
+#: core/ChangeLog.qml:98
 msgctxt "ChangeLog|"
 msgid "Translations added for Scottish Gaelic."
 msgstr ""
 
-#: core/ChangeLog.qml:90
+#: core/ChangeLog.qml:99
 msgctxt "ChangeLog|"
 msgid "License page added in configuration."
 msgstr ""
 
-#: core/ChangeLog.qml:90
+#: core/ChangeLog.qml:99
 msgctxt "ChangeLog|"
 msgid "Multiple changes on layouts to improve the ergonomy."
 msgstr ""
 
-#: core/ChangeLog.qml:91
+#: core/ChangeLog.qml:100
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in Polish, Swedish and Ukrainian."
 msgstr ""
 
-#: core/ChangeLog.qml:92
+#: core/ChangeLog.qml:101
 msgctxt "ChangeLog|"
 msgid "Search feature."
 msgstr ""
 
-#: core/ChangeLog.qml:93
+#: core/ChangeLog.qml:102
 msgctxt "ChangeLog|"
 msgid "A Changelog."
 msgstr ""
 
-#: core/ChangeLog.qml:94
+#: core/ChangeLog.qml:103
 msgctxt "ChangeLog|"
 msgid "Many little fixes."
 msgstr ""
 
-#: core/ChangeLog.qml:94
+#: core/ChangeLog.qml:103
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in French."
 msgstr ""
 
-#: core/ChangeLog.qml:95
+#: core/ChangeLog.qml:104
 msgctxt "ChangeLog|"
 msgid ""
 "Adding a loading overlay to let the user know that some actions are taking "
 "place (loading an activity for example) and can take some seconds."
 msgstr ""
 
-#: core/ChangeLog.qml:95
+#: core/ChangeLog.qml:104
 msgctxt "ChangeLog|"
 msgid ""
 "Translations added for: Catalan (Valencian), Chinese Traditional, Finnish "
 "(92% translated), Russian (98% translated), Slovak (92% translated), Turkish."
 msgstr ""
 
-#: core/ChangeLog.qml:96
+#: core/ChangeLog.qml:105
 msgctxt "ChangeLog|"
 msgid "Translations added for: Slovenian, German, Galician."
 msgstr ""
 
-#: core/ChangeLog.qml:121
+#: core/ChangeLog.qml:130
 #, qt-format
 msgctxt "ChangeLog|"
 msgid "Version %1:"
@@ -26137,10 +25859,10 @@ msgstr ""
 #: core/Domino.qml:59
 #, fuzzy
 #| msgctxt "ActivityInfo|"
-#| msgid "Simple Letters"
+#| msgid "Subtraction memory game"
 msgctxt "Domino|"
 msgid "Arabic Numbers"
-msgstr "Vienkārši burti"
+msgstr "Atņemšanas atmiņas spēle"
 
 #. "Roman Numbers" is for representation of the points in a domino in the form of roman numbers
 #: core/Domino.qml:61
@@ -26357,20 +26079,14 @@ msgid "Run GCompris without sound."
 msgstr ""
 
 #: core/main.cpp:185
-#, fuzzy
-#| msgctxt "instruments|"
-#| msgid "Find the snare drum"
 msgctxt "QObject|"
 msgid "Disable the kiosk mode (default)."
-msgstr "Atrodi mazās bungas"
+msgstr ""
 
 #: core/main.cpp:188
-#, fuzzy
-#| msgctxt "instruments|"
-#| msgid "Find the snare drum"
 msgctxt "QObject|"
 msgid "Enable the kiosk mode."
-msgstr "Atrodi mazās bungas"
+msgstr ""
 
 #: core/main.cpp:192
 msgctxt "QObject|"
@@ -26490,13 +26206,6 @@ msgstr ""
 
 #, fuzzy
 #~| msgctxt "ActivityInfo|"
-#~| msgid "The aim is to switch off all the lights."
-#~ msgctxt "board1|"
-#~ msgid "This animal likes to lie in the mud."
-#~ msgstr "Mērķis ir izslēgt visas gaismas."
-
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
 #~| msgid ""
 #~| "Click the position in the line where you want to drop a piece. You can "
 #~| "also use the arrow keys to move the piece left or right, and the down or "
@@ -26509,6 +26218,13 @@ msgstr ""
 #~ "Noklikšķi vietā, kur vēlies novietot objektu. Tu vari izmantot arī "
 #~ "virziena taustiņus, lai norādītu, kur novietot objektu. Uz leju un "
 #~ "atstarpes (garais) taustiņš paredzēts objekta novietošanai."
+
+#, fuzzy
+#~| msgctxt "ActivityInfo|"
+#~| msgid "Learn addition"
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Learn digits"
+#~ msgstr "Mācies saskaitīšanu"
 
 #, fuzzy
 #~| msgctxt "ActivityInfo|"
@@ -26544,111 +26260,9 @@ msgstr ""
 #~ msgid "Drawing by Stephane Cabaraux."
 #~ msgstr "Zīmējusi Stephane Cabaraux."
 
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Basic enumeration"
-#~ msgctxt "Data|"
-#~ msgid "Basic decimal numbers."
-#~ msgstr "Pamata uzskaitījums"
-
 #~ msgctxt "ActivityInfo|"
 #~ msgid "Mouse-manipulation"
 #~ msgstr "Peles manipulācijas"
-
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Reading"
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Reading"
-#~ msgstr "Lasīšana"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Counting skills"
-#~ msgstr "Skaitīšanas prasmes"
-
-#, fuzzy
-#~| msgctxt "FirstScreen|"
-#~| msgid "Braille : Unlocking the Code"
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Compare alphabets."
-#~ msgstr "Brails — koda atkošana"
-
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Drag and Drop weights to balance the scales"
-#~ msgctxt "ordering|"
-#~ msgid "Drag and drop the letters in correct position in descending order."
-#~ msgstr "Velc un nomet atsvarus, lai līdzsvarotu svarus"
-
-#, fuzzy
-#~| msgctxt "DialogConfig|"
-#~| msgid "Thai"
-#~ msgctxt "board15_0|"
-#~ msgid "Shetland"
-#~ msgstr "Taju"
-
-#, fuzzy
-#~| msgctxt "DialogConfig|"
-#~| msgid "Thai"
-#~ msgctxt "board15_2|"
-#~ msgid "Shetland"
-#~ msgstr "Taju"
-
-#, fuzzy
-#~| msgctxt "DialogConfig|"
-#~| msgid "Scottish Gaelic"
-#~ msgctxt "board15_3|"
-#~ msgid "Scottish Borders"
-#~ msgstr "Skotu gēlu"
-
-#, fuzzy
-#~| msgctxt "dataset|"
-#~| msgid "seven"
-#~ msgctxt "board11_3|"
-#~ msgid "Benevento"
-#~ msgstr "septiņi"
-
-#, fuzzy
-#~| msgctxt "DialogConfig|"
-#~| msgid "Breton"
-#~ msgctxt "board1_0|"
-#~ msgid "Bretagne"
-#~ msgstr "Bretoņu"
-
-#, fuzzy
-#~| msgctxt "DialogConfig|"
-#~| msgid "Slovak"
-#~ msgctxt "board5_2|"
-#~ msgid "Yalova"
-#~ msgstr "Slovāku"
-
-#, fuzzy
-#~| msgctxt "DialogConfig|"
-#~| msgid "Danish"
-#~ msgctxt "board5_2|"
-#~ msgid "Manisa"
-#~ msgstr "Dāņu"
-
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Colors"
-#~ msgctxt "board10_1|"
-#~ msgid "Colorado"
-#~ msgstr "Krāsas"
-
-#, fuzzy
-#~| msgctxt "DialogConfig|"
-#~| msgid "Thai"
-#~ msgctxt "board10_1|"
-#~ msgid "Maryland"
-#~ msgstr "Taju"
-
-#, fuzzy
-#~| msgctxt "DialogConfig|"
-#~| msgid "Russian"
-#~ msgctxt "board9_0|"
-#~ msgid "Russia"
-#~ msgstr "Krievu"
 
 #, fuzzy
 #~| msgctxt "DialogConfig|"
@@ -26658,15 +26272,82 @@ msgstr ""
 #~ msgstr "Čehija"
 
 #, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Multiplication"
-#~ msgctxt "ChangeLog|"
-#~ msgid "Multiple dataset"
-#~ msgstr "Reizināšana"
+#~| msgctxt "DialogConfig|"
+#~| msgid "Russian"
+#~ msgctxt "board9_0|"
+#~ msgid "Russia"
+#~ msgstr "Krievu"
 
 #~ msgctxt "ActivityInfo|"
-#~ msgid "Mental calculation, arithmetic equality, unit conversion"
-#~ msgstr "Rēķināšana galvā, aritmētiskā vienlīdzība, mērvienību pārveidošana"
+#~ msgid "Counting skills"
+#~ msgstr "Skaitīšanas prasmes"
+
+#, fuzzy
+#~| msgctxt "ActivityInfo|"
+#~| msgid ""
+#~| "Click the position in the line where you want to drop a piece. You can "
+#~| "also use the arrow keys to move the piece left or right, and the down or "
+#~| "space key to drop a piece."
+#~ msgctxt "ActivityInfo|"
+#~ msgid ""
+#~ "Play with a friend. Take turns to click the line in which you want to "
+#~ "drop a token. You can also use the arrow keys to move the token left or "
+#~ "right, and the down or space key to drop a token. First player to create "
+#~ "a line of 4 tokens wins"
+#~ msgstr ""
+#~ "Noklikšķi vietā, kur vēlies novietot objektu. Tu vari izmantot arī "
+#~ "virziena taustiņus, lai norādītu, kur novietot objektu. Uz leju un "
+#~ "atstarpes (garais) taustiņš paredzēts objekta novietošanai."
+
+#, fuzzy
+#~| msgctxt "ActivityInfo|"
+#~| msgid ""
+#~| "Click the position in the line where you want to drop a piece. You can "
+#~| "also use the arrow keys to move the piece left or right, and the down or "
+#~| "space key to drop a piece."
+#~ msgctxt "ActivityInfo|"
+#~ msgid ""
+#~ "Play with the computer. Take turns to click the line in which you want to "
+#~ "drop a token. You can also use the arrow keys to move the token left or "
+#~ "right, and the down or space key to drop a token. First player to create "
+#~ "a line of 4 tokens wins"
+#~ msgstr ""
+#~ "Noklikšķi vietā, kur vēlies novietot objektu. Tu vari izmantot arī "
+#~ "virziena taustiņus, lai norādītu, kur novietot objektu. Uz leju un "
+#~ "atstarpes (garais) taustiņš paredzēts objekta novietošanai."
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid ""
+#~ "A letter is spoken. Click on the matching letter in the main area. You "
+#~ "can listen to the letter again, by clicking on the mouth icon in the "
+#~ "bottom box."
+#~ msgstr ""
+#~ "Burts tika izrunāts. Klikšķini pamata laukumā uz atbilstošā burta. Burta "
+#~ "izrunāšanu var atkārtot, klikšķinot uz mutes ikonas apakšējā laukumā."
+
+#, fuzzy
+#~| msgctxt "ActivityInfo|"
+#~| msgid ""
+#~| "Set the clock to the time given, in the time-units shown (hours:minutes "
+#~| "or hours:minutes:seconds). Click on the different arrows, and move the "
+#~| "mouse, to make the numbers go up or down."
+#~ msgctxt "ActivityInfo|"
+#~ msgid ""
+#~ "Set the clock to the given time, in the time-units shown (hours:minutes "
+#~ "or hours:minutes:seconds). Drag the different arrows, to make the "
+#~ "respective time unit go up or down."
+#~ msgstr ""
+#~ "Iestatiet pulksteni dotajā laikā laika mērvienībās, kas tiek rādītas "
+#~ "(stundas:minūtes vai stundas:minūtes:sekundes). Spiediet uz bultiņām un "
+#~ "pārvietojiet peli, lai cipari mainītos."
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Mixing color of paint"
+#~ msgstr "Krāsu jaukšana"
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Mix the primary colors to match to the given color"
+#~ msgstr "Jaukt primārās krāsas, lai atbilstu dotajām krāsām"
 
 #, fuzzy
 #~| msgctxt "ActivityInfo|"
@@ -26675,9 +26356,12 @@ msgstr ""
 #~ msgid "Drag and Drop the items to redraw the whole map"
 #~ msgstr "Velc un nomet atsvarus, lai līdzsvarotu svarus"
 
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Numbers from 1 to 1000 for the last level."
-#~ msgstr "Skaitļi no 1 līdz 1000 pēdējam līmenim."
+#, fuzzy
+#~| msgctxt "ActivityInfo|"
+#~| msgid "Colors"
+#~ msgctxt "GraphColoring|"
+#~ msgid "Colors"
+#~ msgstr "Krāsas"
 
 #, fuzzy
 #~| msgctxt "ActivityInfo|"
@@ -26703,14 +26387,6 @@ msgstr ""
 #~ msgstr ""
 #~ "Saskaiti cik priekšmetu ir zem burvju cepures pēc tam, kad daži no tās "
 #~ "aizkļuva prom"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Learn subtraction"
-#~ msgstr "Apgūsti atņemšanu"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Learn addition"
-#~ msgstr "Mācies saskaitīšanu"
 
 #, fuzzy
 #~| msgctxt "ActivityInfo|"
@@ -26964,10 +26640,6 @@ msgstr ""
 #~ "    ctrl-f — pārslēgties starp pilnekrāna režīmu\n"
 #~ "    ctrl-m — atslēgt/ieslēgt skaņu fona mūzikai"
 
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Can count from 1 to 50."
-#~ msgstr "Prot skaitīt no 1 līdz 50"
-
 #, fuzzy
 #~| msgctxt "ActivityInfo|"
 #~| msgid ""
@@ -26980,122 +26652,6 @@ msgstr ""
 #~ msgstr ""
 #~ "Prot kustināt peli, lasīt skaitļus un atņemt skaitļus līdz pat 10 "
 #~ "pirmajam līmenim"
-
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Practice addition with a target game"
-#~ msgctxt "Data|"
-#~ msgid "Practice addition on targets with max value 10."
-#~ msgstr "Trenējies saskaitīšanā ar mērķa spēli"
-
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Practice addition with a target game"
-#~ msgctxt "Data|"
-#~ msgid "Practice addition on targets with max value 50."
-#~ msgstr "Trenējies saskaitīšanā ar mērķa spēli"
-
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Practice addition with a target game"
-#~ msgctxt "Data|"
-#~ msgid "Practice addition on targets with max value 500."
-#~ msgstr "Trenējies saskaitīšanā ar mērķa spēli"
-
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Practice addition with a target game"
-#~ msgctxt "Data|"
-#~ msgid "Practice addition on targets with max value 50000."
-#~ msgstr "Trenējies saskaitīšanā ar mērķa spēli"
-
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Practice addition with a target game"
-#~ msgctxt "Data|"
-#~ msgid "Practice addition on targets with max value 500000."
-#~ msgstr "Trenējies saskaitīšanā ar mērķa spēli"
-
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid ""
-#~| "Set the clock to the time given, in the time-units shown (hours:minutes "
-#~| "or hours:minutes:seconds). Click on the different arrows, and move the "
-#~| "mouse, to make the numbers go up or down."
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Set the clock to the given time, in the time-units shown (hours:minutes "
-#~ "or hours:minutes:seconds). Drag the different arrows, to make the "
-#~ "respective time unit go up or down."
-#~ msgstr ""
-#~ "Iestatiet pulksteni dotajā laikā laika mērvienībās, kas tiek rādītas "
-#~ "(stundas:minūtes vai stundas:minūtes:sekundes). Spiediet uz bultiņām un "
-#~ "pārvietojiet peli, lai cipari mainītos."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Mixing color of paint"
-#~ msgstr "Krāsu jaukšana"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Mix the primary colors to match to the given color"
-#~ msgstr "Jaukt primārās krāsas, lai atbilstu dotajām krāsām"
-
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Drag and Drop weights to balance the scales"
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Drag and Drop the shapes on their respective targets"
-#~ msgstr "Velc un nomet atsvarus, lai līdzsvarotu svarus"
-
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid ""
-#~| "Click the position in the line where you want to drop a piece. You can "
-#~| "also use the arrow keys to move the piece left or right, and the down or "
-#~| "space key to drop a piece."
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Play with a friend. Take turns to click the line in which you want to "
-#~ "drop a token. You can also use the arrow keys to move the token left or "
-#~ "right, and the down or space key to drop a token. First player to create "
-#~ "a line of 4 tokens wins"
-#~ msgstr ""
-#~ "Noklikšķi vietā, kur vēlies novietot objektu. Tu vari izmantot arī "
-#~ "virziena taustiņus, lai norādītu, kur novietot objektu. Uz leju un "
-#~ "atstarpes (garais) taustiņš paredzēts objekta novietošanai."
-
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid ""
-#~| "Click the position in the line where you want to drop a piece. You can "
-#~| "also use the arrow keys to move the piece left or right, and the down or "
-#~| "space key to drop a piece."
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Play with the computer. Take turns to click the line in which you want to "
-#~ "drop a token. You can also use the arrow keys to move the token left or "
-#~ "right, and the down or space key to drop a token. First player to create "
-#~ "a line of 4 tokens wins"
-#~ msgstr ""
-#~ "Noklikšķi vietā, kur vēlies novietot objektu. Tu vari izmantot arī "
-#~ "virziena taustiņus, lai norādītu, kur novietot objektu. Uz leju un "
-#~ "atstarpes (garais) taustiņš paredzēts objekta novietošanai."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "A letter is spoken. Click on the matching letter in the main area. You "
-#~ "can listen to the letter again, by clicking on the mouth icon in the "
-#~ "bottom box."
-#~ msgstr ""
-#~ "Burts tika izrunāts. Klikšķini pamata laukumā uz atbilstošā burta. Burta "
-#~ "izrunāšanu var atkārtot, klikšķinot uz mutes ikonas apakšējā laukumā."
-
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Colors"
-#~ msgctxt "GraphColoring|"
-#~ msgid "Colors"
-#~ msgstr "Krāsas"
 
 #~ msgctxt "ScalesboardWeight|"
 #~ msgid "Take care, you can drop weights on both sides of the scale."
@@ -27124,10 +26680,10 @@ msgstr ""
 
 #, fuzzy
 #~| msgctxt "ActivityInfo|"
-#~| msgid "Simple Letters"
+#~| msgid "Numbers in Order"
 #~ msgctxt "Reversecount|"
 #~ msgid "Numbers"
-#~ msgstr "Vienkārši burti"
+#~ msgstr "Skaitļi secībā"
 
 #, fuzzy
 #~| msgctxt "ActivityInfo|"
@@ -27158,10 +26714,17 @@ msgstr ""
 
 #, fuzzy
 #~| msgctxt "ActivityInfo|"
-#~| msgid "Simple subtraction"
-#~ msgctxt "IntroMessage|"
-#~ msgid "Skip Instruction"
-#~ msgstr "Vienkārša atņemšana"
+#~| msgid "Draw the picture by clicking on each numbers in the right order."
+#~ msgctxt "category_alphabets|"
+#~ msgid "Place the ALPHABETS to the right and others objects to the left"
+#~ msgstr "Zīmē attēlu, klikšķinot pareizā secībā uz skaitļiem."
+
+#, fuzzy
+#~| msgctxt "ActivityInfo|"
+#~| msgid "Draw the picture by clicking on each numbers in the right order."
+#~ msgctxt "category_tools|"
+#~ msgid "Place the TOOLS to the right and others to the left"
+#~ msgstr "Zīmē attēlu, klikšķinot pareizā secībā uz skaitļiem."
 
 #, fuzzy
 #~| msgctxt "ActivityInfo|"
@@ -27179,17 +26742,10 @@ msgstr ""
 
 #, fuzzy
 #~| msgctxt "ActivityInfo|"
-#~| msgid "Draw the picture by clicking on each numbers in the right order."
-#~ msgctxt "category_tools|"
-#~ msgid "Place the TOOLS to the right and others to the left"
-#~ msgstr "Zīmē attēlu, klikšķinot pareizā secībā uz skaitļiem."
-
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Draw the picture by clicking on each numbers in the right order."
-#~ msgctxt "category_alphabets|"
-#~ msgid "Place the ALPHABETS to the right and others objects to the left"
-#~ msgstr "Zīmē attēlu, klikšķinot pareizā secībā uz skaitļiem."
+#~| msgid "Simple subtraction"
+#~ msgctxt "IntroMessage|"
+#~ msgid "Skip Instruction"
+#~ msgstr "Vienkārša atņemšana"
 
 #, fuzzy
 #~| msgctxt "DialogConfig|"
@@ -27213,14 +26769,6 @@ msgstr ""
 #~ msgstr "Atrodi trijstūri"
 
 #~ msgctxt "ActivityInfo|"
-#~ msgid "Numbers with pairs of dice"
-#~ msgstr "Skaitļi ar diviem metamajiem kauliņiem"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Reading practice"
-#~ msgstr "Lasīšanas praktizēšana"
-
-#~ msgctxt "ActivityInfo|"
 #~ msgid "Practice reading by finding the word matching an image"
 #~ msgstr "Praktizē lasīšanu, meklējot attēlā atbilstošus vārdus "
 
@@ -27228,12 +26776,9 @@ msgstr ""
 #~ msgid "Find the flute traversiere"
 #~ msgstr "flautu"
 
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Addition"
-#~ msgctxt "board4_1|"
-#~ msgid "Aviation"
-#~ msgstr "Saskaitīšana"
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Numbers with pairs of dice"
+#~ msgstr "Skaitļi ar diviem metamajiem kauliņiem"
 
 #, fuzzy
 #~| msgid ""
@@ -27259,6 +26804,10 @@ msgstr ""
 #~ msgctxt "DialogConfig|"
 #~ msgid "English (United States)"
 #~ msgstr "Angļu (ASV)"
+
+#~ msgctxt "DialogConfig|"
+#~ msgid "Breton"
+#~ msgstr "Bretoņu"
 
 #~ msgctxt "DialogConfig|"
 #~ msgid "Spanish"

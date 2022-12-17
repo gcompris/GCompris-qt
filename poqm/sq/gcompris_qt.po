@@ -1,22 +1,22 @@
+# SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR This file is copyright:
 # This file is distributed under the same license as the gcompris package.
-#
 # Besnik Bleta <besnik@programeshqip.org>, 2020,2021,2022.
-# Falënderime Dashamir Hoxhës për një numër sugjerimesh të vlefshme <dashohoxha@gmail.com>, 2021.
-# Agron Selimaj <as9902613@gmail.com>, 2022.
+# Falënderime Dashamir Hoxhës për një numër sugjerimesh të vlefshme <dashohoxha@gmail.com>, 2021
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2022-02-22 02:12-0500\n"
-"Last-Translator: Agron Selimaj <as9902613@gmail.com>\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Besnik Bleta <besnik@programeshqip.org>\n"
 "Language-Team: Albanian <kde-i18n-doc@kde.org>\n"
 "Language: sq\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Qt-Contexts: true\n"
-"X-Generator: Lokalize 21.12.2\n"
+"X-Generator: Poedit 2.4.2\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 #. Activity title
@@ -1396,6 +1396,7 @@ msgid "The electric simulation engine is from edX: "
 msgstr "Mekanizmi i simulimit elektrik është prej edX: "
 
 #: activities/analog_electricity/cktsim.js:138
+#, fuzzy
 msgctxt "cktsim|"
 msgid ""
 "Warning! Circuit has a voltage source loop or a source shorted by a wire, "
@@ -1630,6 +1631,7 @@ msgstr ""
 "krijohet një qark i shkurtër (i quajtur edhe “në të shkurtër”)."
 
 #: activities/analog_electricity/TutorialDataset.qml:118
+#, fuzzy
 msgctxt "TutorialDataset|"
 msgid ""
 "If both terminals of some batteries are directly connected together or they "
@@ -1641,6 +1643,7 @@ msgstr ""
 "të luajnë rolin e një burimi voltazhi për qarkun."
 
 #: activities/analog_electricity/TutorialDataset.qml:119
+#, fuzzy
 msgctxt "TutorialDataset|"
 msgid ""
 "For example, if two terminals of one battery are directly connected "
@@ -1650,6 +1653,7 @@ msgstr ""
 "tjetrin, krijohet një qerthull burimi voltazhi."
 
 #: activities/analog_electricity/TutorialDataset.qml:119
+#, fuzzy
 msgctxt "TutorialDataset|"
 msgid ""
 "Or, if two batteries are forming a closed circuit together, it creates a "
@@ -1659,6 +1663,7 @@ msgstr ""
 "burimi voltazhi."
 
 #: activities/analog_electricity/TutorialDataset.qml:120
+#, fuzzy
 msgctxt "TutorialDataset|"
 msgid ""
 "Create a voltage source loop with the provided batteries. Then click on the "
@@ -15782,9 +15787,12 @@ msgstr "Aktivizo zëra"
 
 #. Activity title
 #: activities/learn_digits/ActivityInfo.qml:15
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Count the items"
 msgctxt "ActivityInfo|"
-msgid "Learn digits"
-msgstr "Mësoni shifrat"
+msgid "Count and color the circles"
+msgstr "Numëroni objektet"
 
 #. Help title
 #: activities/learn_digits/ActivityInfo.qml:17
@@ -25440,13 +25448,50 @@ msgid "Type the complete word as it falls, before it reaches the ground."
 msgstr "Shtypni fjalën e plotë, teksa ajo bie, përpara se të mbërrijë përdhe."
 
 #: core/ChangeLog.qml:30
+#, fuzzy
+#| msgctxt "ChangeLog|"
+#| msgid "New maps and update of the maps for geography activities"
+msgctxt "ChangeLog|"
+msgid "Map of Spain added for geography activity"
+msgstr "Harta të reja dhe përditësim hartash për veprimtari gjeografie"
+
+#: core/ChangeLog.qml:31
+msgctxt "ChangeLog|"
+msgid "Voices added for Ukrainian"
+msgstr ""
+
+#: core/ChangeLog.qml:32
+msgctxt "ChangeLog|"
+msgid ""
+"New command-line option to list all the activities and start on a specific "
+"one"
+msgstr ""
+
+#: core/ChangeLog.qml:33 core/ChangeLog.qml:68 core/ChangeLog.qml:71
+#: core/ChangeLog.qml:77
+msgctxt "ChangeLog|"
+msgid "Many usability improvements"
+msgstr "Mjaft përmirësime përdorimi"
+
+#: core/ChangeLog.qml:34 core/ChangeLog.qml:52 core/ChangeLog.qml:67
+#: core/ChangeLog.qml:72 core/ChangeLog.qml:78
+msgctxt "ChangeLog|"
+msgid "Many new images"
+msgstr "Mjaft figura të reja"
+
+#: core/ChangeLog.qml:35 core/ChangeLog.qml:73 core/ChangeLog.qml:79
+msgctxt "ChangeLog|"
+msgid "Many bug fixes"
+msgstr "Mjaft ndreqje të metash"
+
+#: core/ChangeLog.qml:39
 msgctxt "ChangeLog|"
 msgid ""
 "Reduce the size of the packages for all platforms and of the external word "
 "images set"
 msgstr ""
 
-#: core/ChangeLog.qml:31
+#: core/ChangeLog.qml:40
 #, fuzzy
 #| msgctxt "ChangeLog|"
 #| msgid "New speed setting in several activities."
@@ -25454,22 +25499,22 @@ msgctxt "ChangeLog|"
 msgid "Improve images quality in several activities"
 msgstr "Rregullim i ri shpejtësie në disa veprimtari."
 
-#: core/ChangeLog.qml:32
+#: core/ChangeLog.qml:41
 msgctxt "ChangeLog|"
 msgid "Fix some transitions in renewable_energy/watercycle on some platforms"
 msgstr ""
 
-#: core/ChangeLog.qml:33
+#: core/ChangeLog.qml:42
 msgctxt "ChangeLog|"
 msgid "Fix dead keys ignored on Linux for typing activities"
 msgstr ""
 
-#: core/ChangeLog.qml:34
+#: core/ChangeLog.qml:43
 msgctxt "ChangeLog|"
 msgid "Fix level reset when changing level manually in Logical associations"
 msgstr ""
 
-#: core/ChangeLog.qml:38
+#: core/ChangeLog.qml:47
 msgctxt "ChangeLog|"
 msgid ""
 "Fix Alphabet sequence, Even and odd numbers and Numbers in order activities"
@@ -25477,43 +25522,37 @@ msgstr ""
 "Ndreqje e veprimtarive Sekuencë alfabeti, Numra tek dhe çift, si dhe asaj "
 "Numra sipas radhës"
 
-#: core/ChangeLog.qml:42 core/ChangeLog.qml:50
+#: core/ChangeLog.qml:51 core/ChangeLog.qml:59
 msgctxt "ChangeLog|"
 msgid "Several bug fixes"
 msgstr "Mjaft ndreqje të metash"
 
-#: core/ChangeLog.qml:43 core/ChangeLog.qml:58 core/ChangeLog.qml:63
-#: core/ChangeLog.qml:69
-msgctxt "ChangeLog|"
-msgid "Many new images"
-msgstr "Mjaft figura të reja"
-
-#: core/ChangeLog.qml:44
+#: core/ChangeLog.qml:53
 msgctxt "ChangeLog|"
 msgid "Translation updated for Russian"
 msgstr "U përditësua përkthimi për rusishten"
 
-#: core/ChangeLog.qml:45
+#: core/ChangeLog.qml:54
 msgctxt "ChangeLog|"
 msgid "New voices for Norwegian Nynorsk"
 msgstr "Zëra të rinj norvegjishten Nynorsk"
 
-#: core/ChangeLog.qml:49
+#: core/ChangeLog.qml:58
 msgctxt "ChangeLog|"
 msgid "Translations added for Breton, Czech and Macedonian"
 msgstr "U shtuan përkthime për Bretonishten, Çekishten dhe Maqedonishten"
 
-#: core/ChangeLog.qml:54
+#: core/ChangeLog.qml:63
 msgctxt "ChangeLog|"
 msgid "Translation added for Azerbaijani"
 msgstr "U shtua përkthim në azerbajxhanase"
 
-#: core/ChangeLog.qml:55
+#: core/ChangeLog.qml:64
 msgctxt "ChangeLog|"
 msgid "New maps and update of the maps for geography activities"
 msgstr "Harta të reja dhe përditësim hartash për veprimtari gjeografie"
 
-#: core/ChangeLog.qml:56
+#: core/ChangeLog.qml:65
 msgctxt "ChangeLog|"
 msgid ""
 "New dataset containing loops operations for programming maze, and make "
@@ -25522,7 +25561,8 @@ msgstr ""
 "Grup i ri të dhënash që përmbajnë veprime qerthujsh për labirintin e "
 "programimit dhe bërje të përkthyeshme e figurave të përkujdesores"
 
-#: core/ChangeLog.qml:57
+#: core/ChangeLog.qml:66
+#, fuzzy
 msgctxt "ChangeLog|"
 msgid ""
 "Addition of a level to teach voltage source loop in analog electricity "
@@ -25531,67 +25571,57 @@ msgstr ""
 "Shtimi i një niveli për dhënien mësim të qerthullit të burimit të voltazhit, "
 "te veprimtaria e elektricitetit analog"
 
-#: core/ChangeLog.qml:59 core/ChangeLog.qml:62 core/ChangeLog.qml:68
-msgctxt "ChangeLog|"
-msgid "Many usability improvements"
-msgstr "Mjaft përmirësime përdorimi"
-
-#: core/ChangeLog.qml:64 core/ChangeLog.qml:70
-msgctxt "ChangeLog|"
-msgid "Many bug fixes"
-msgstr "Mjaft ndreqje të metash"
-
-#: core/ChangeLog.qml:67
+#: core/ChangeLog.qml:76
 msgctxt "ChangeLog|"
 msgid "New Activity Settings menu, with dataset selection"
 msgstr "Menu e re Rregullimesh Veprimtarish, me përzgjedhje grupi të dhënash"
 
-#: core/ChangeLog.qml:73
+#: core/ChangeLog.qml:82
 msgctxt "ChangeLog|"
 msgid "New sub-categories to organize activities"
 msgstr "Nënkategori të reja për të sistemuar veprimtaritë"
 
-#: core/ChangeLog.qml:74
+#: core/ChangeLog.qml:83
 msgctxt "ChangeLog|"
 msgid "Translation added for Macedonian."
 msgstr "U shtuan përkthime për Maqedonishten."
 
-#: core/ChangeLog.qml:75
+#: core/ChangeLog.qml:84
 msgctxt "ChangeLog|"
 msgid "New activities Programming Maze and Baby Tangram"
 msgstr "Veprimtari të reja Labirint Programimi dhe Tangram për Bebe"
 
-#: core/ChangeLog.qml:76
+#: core/ChangeLog.qml:85
 msgctxt "ChangeLog|"
 msgid "New background music and volume settings."
 msgstr "Muzikë e re në sfond dhe rregullime të reja volumi."
 
-#: core/ChangeLog.qml:77
+#: core/ChangeLog.qml:86
 msgctxt "ChangeLog|"
 msgid "New speed setting in several activities."
 msgstr "Rregullim i ri shpejtësie në disa veprimtari."
 
-#: core/ChangeLog.qml:78
+#: core/ChangeLog.qml:87
 msgctxt "ChangeLog|"
 msgid "New option in chess to display captured pieces."
 msgstr "Mundësi e re në shah për të shfaqur gurët e ngrënë."
 
-#: core/ChangeLog.qml:79
+#: core/ChangeLog.qml:88
 msgctxt "ChangeLog|"
 msgid "New images in Colors, Advanced colors and Target game."
 msgstr "Figura të reja në Ngjyra, ngjyra të Thelluara dhe lojë Objektiv."
 
-#: core/ChangeLog.qml:80
+#: core/ChangeLog.qml:89
 msgctxt "ChangeLog|"
 msgid "New voices for US English."
 msgstr "Zëra të rinj për anglishten e ShBA-ve."
 
-#: core/ChangeLog.qml:81 core/ChangeLog.qml:89
+#: core/ChangeLog.qml:90 core/ChangeLog.qml:98
 msgctxt "ChangeLog|"
 msgid "Many little fixes and improvements."
 msgstr "Mjaft ndreqje dhe përmirësime të vockla."
 
-#: core/ChangeLog.qml:82
+#: core/ChangeLog.qml:91
 msgctxt "ChangeLog|"
 msgid ""
 "Translation updated for multiple languages (Breton, Brazilian Portuguese, "
@@ -25600,18 +25630,18 @@ msgstr ""
 "U përditësua përkthimi për disa gjuhë (Bretone, Portugeze Braziliane, "
 "Finlandeze…)."
 
-#: core/ChangeLog.qml:83
+#: core/ChangeLog.qml:92
 msgctxt "ChangeLog|"
 msgid "Add Russian dataset for Click on letter activity."
 msgstr ""
 "U shtua grup të dhënash rusisht për veprimtarinë “Klikoni mbi një shkronjë”."
 
-#: core/ChangeLog.qml:84
+#: core/ChangeLog.qml:93
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in Dutch."
 msgstr "Veprimtaria e gjuhës tani e gatshme në holandishte."
 
-#: core/ChangeLog.qml:85
+#: core/ChangeLog.qml:94
 msgctxt "ChangeLog|"
 msgid ""
 "Merge Norwegian counties Nord-Trøndelag and Sør-Trøndelag into Trøndelag in "
@@ -25620,17 +25650,17 @@ msgstr ""
 "Shkrirje e konteve norvegjeze Nord-Trøndelag dhe Sør-Trøndelag në një, "
 "Trøndelag, te veprimtaria e gjeografisë së vende."
 
-#: core/ChangeLog.qml:86
+#: core/ChangeLog.qml:95
 msgctxt "ChangeLog|"
 msgid "Fix in braille activities where the cells start at 1, not 0."
 msgstr "Ndreqje në veprimtaritë për braj, ku kutitë fillojnë në 1, jo 0."
 
-#: core/ChangeLog.qml:87
+#: core/ChangeLog.qml:96
 msgctxt "ChangeLog|"
 msgid "Translation added for Basque, Hungarian and Malayalam."
 msgstr "U shtua përkthim për gjuhën baske, hungareze dhe malajalame."
 
-#: core/ChangeLog.qml:88
+#: core/ChangeLog.qml:97
 msgctxt "ChangeLog|"
 msgid ""
 "Loading/saving of creations (Baby Wordprocessor, Balance Box and Piano "
@@ -25639,48 +25669,48 @@ msgstr ""
 "Ngarkim/ruajtje për krijime (Përpunues Tekstesh Për të Mitur, Balance Box "
 "dhe Kompozim Në Piano)."
 
-#: core/ChangeLog.qml:89
+#: core/ChangeLog.qml:98
 msgctxt "ChangeLog|"
 msgid "Translations added for Scottish Gaelic."
 msgstr "U shtuan përkthime për gjuhën skoceze gaelike."
 
-#: core/ChangeLog.qml:90
+#: core/ChangeLog.qml:99
 msgctxt "ChangeLog|"
 msgid "License page added in configuration."
 msgstr "U shtua faqe licence te formësimi."
 
-#: core/ChangeLog.qml:90
+#: core/ChangeLog.qml:99
 msgctxt "ChangeLog|"
 msgid "Multiple changes on layouts to improve the ergonomy."
 msgstr "Një numër ndryshimesh në skema, për të përmirësuar ergonominë."
 
-#: core/ChangeLog.qml:91
+#: core/ChangeLog.qml:100
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in Polish, Swedish and Ukrainian."
 msgstr ""
 "Veprimtaria Gjuhë tani është gati në polonisht, suedisht dhe ukrainisht."
 
-#: core/ChangeLog.qml:92
+#: core/ChangeLog.qml:101
 msgctxt "ChangeLog|"
 msgid "Search feature."
 msgstr "Veçori kërkimi."
 
-#: core/ChangeLog.qml:93
+#: core/ChangeLog.qml:102
 msgctxt "ChangeLog|"
 msgid "A Changelog."
 msgstr "Regjistër ndryshimesh."
 
-#: core/ChangeLog.qml:94
+#: core/ChangeLog.qml:103
 msgctxt "ChangeLog|"
 msgid "Many little fixes."
 msgstr "Mjaft ndreqje të vockla."
 
-#: core/ChangeLog.qml:94
+#: core/ChangeLog.qml:103
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in French."
 msgstr "Veprimtaria Gjuhë tani është gati frëngjisht."
 
-#: core/ChangeLog.qml:95
+#: core/ChangeLog.qml:104
 msgctxt "ChangeLog|"
 msgid ""
 "Adding a loading overlay to let the user know that some actions are taking "
@@ -25690,7 +25720,7 @@ msgstr ""
 "veprime (ngarkimi i një veprimtarie, për shembull) dhe kjo mund të hajë disa "
 "sekonda."
 
-#: core/ChangeLog.qml:95
+#: core/ChangeLog.qml:104
 msgctxt "ChangeLog|"
 msgid ""
 "Translations added for: Catalan (Valencian), Chinese Traditional, Finnish "
@@ -25700,12 +25730,12 @@ msgstr ""
 "finlandisht (92% e përkthyer), rusisht (98% e përkthyer), sllovakisht (92% e "
 "përkthyer), turqisht."
 
-#: core/ChangeLog.qml:96
+#: core/ChangeLog.qml:105
 msgctxt "ChangeLog|"
 msgid "Translations added for: Slovenian, German, Galician."
 msgstr "U shtuan përkthime për: sllovenisht, gjermanisht, galiciase."
 
-#: core/ChangeLog.qml:121
+#: core/ChangeLog.qml:130
 #, qt-format
 msgctxt "ChangeLog|"
 msgid "Version %1:"
@@ -26343,6 +26373,50 @@ msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Fillo"
 
+#~ msgctxt "ActivityInfo|"
+#~ msgid ""
+#~ "Play with the computer. Take turns to click the line in which you want to "
+#~ "drop a token. The first player to create a line of 4 tokens wins."
+#~ msgstr ""
+#~ "Luajeni me kompjuterin. Klikoni, me radhë, mbi rreshtin në të cilin doni "
+#~ "të lihet një pullë. Fiton ai që krijon i pari një rresht me 4 pulla."
+
+#~ msgctxt "Calendar|"
+#~ msgid "Sunday"
+#~ msgstr "E diel"
+
+#~ msgctxt "Calendar|"
+#~ msgid "Monday"
+#~ msgstr "E hënë"
+
+#~ msgctxt "Calendar|"
+#~ msgid "Tuesday"
+#~ msgstr "E martë"
+
+#~ msgctxt "Calendar|"
+#~ msgid "Wednesday"
+#~ msgstr "E mërkurë"
+
+#~ msgctxt "Calendar|"
+#~ msgid "Thursday"
+#~ msgstr "E enjte"
+
+#~ msgctxt "Calendar|"
+#~ msgid "Friday"
+#~ msgstr "E premte"
+
+#~ msgctxt "Calendar|"
+#~ msgid "Saturday"
+#~ msgstr "E shtunë"
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Play checkers against the computer"
+#~ msgstr "Luani damë kundër kompjuterit"
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Play chess against your friend"
+#~ msgstr "Luani shah me shokun tuaj"
+
 #~ msgctxt "board1|"
 #~ msgid "The horse goes 'neigh! neigh!'. Horses usually sleep standing up."
 #~ msgstr "Kali bën “Hiiiiiiih! Hiiiiiiih!”. Zakonisht kali flenë në këmbë."
@@ -26439,12 +26513,8 @@ msgstr "Fillo"
 #~ "mes gjërash të tjera."
 
 #~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Play with the computer. Take turns to click the line in which you want to "
-#~ "drop a token. The first player to create a line of 4 tokens wins."
-#~ msgstr ""
-#~ "Luajeni me kompjuterin. Klikoni, me radhë, mbi rreshtin në të cilin doni "
-#~ "të lihet një pullë. Fiton ai që krijon i pari një rresht me 4 pulla."
+#~ msgid "Learn digits"
+#~ msgstr "Mësoni shifrat"
 
 #~ msgctxt "ActivityInfo|"
 #~ msgid ""
@@ -26453,42 +26523,6 @@ msgstr "Fillo"
 #~ msgstr ""
 #~ "Luani me kompjuterin. Së pari, pullat vendosen një herë njëri, një herë "
 #~ "tjetri, dhe mandej, po sipas asaj radhe, lëvizni pullat tuaja."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Play with the computer. Take turns to click on the square which you want "
-#~ "to mark. The first player to create a line of 3 marks wins."
-#~ msgstr ""
-#~ "Luani me kompjuterin. Një herë njëri, një herë tjetri, klikoni mbi kutinë "
-#~ "ku doni të vendosni. I pari që krijon një vijë me 3 gurë fiton."
-
-#~ msgctxt "Calendar|"
-#~ msgid "Sunday"
-#~ msgstr "E diel"
-
-#~ msgctxt "Calendar|"
-#~ msgid "Monday"
-#~ msgstr "E hënë"
-
-#~ msgctxt "Calendar|"
-#~ msgid "Tuesday"
-#~ msgstr "E martë"
-
-#~ msgctxt "Calendar|"
-#~ msgid "Wednesday"
-#~ msgstr "E mërkurë"
-
-#~ msgctxt "Calendar|"
-#~ msgid "Thursday"
-#~ msgstr "E enjte"
-
-#~ msgctxt "Calendar|"
-#~ msgid "Friday"
-#~ msgstr "E premte"
-
-#~ msgctxt "Calendar|"
-#~ msgid "Saturday"
-#~ msgstr "E shtunë"
 
 #~ msgctxt "Data|"
 #~ msgid ""
@@ -26509,6 +26543,14 @@ msgstr "Fillo"
 #~ msgstr ""
 #~ "Dielli|ndrit|në|qiellin|e ftohtë|të|vjeshtës.\n"
 #~ "Kalamajtë|gëzohen|kur|luajnë|jashtë|në|mbrëmje."
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid ""
+#~ "Play with the computer. Take turns to click on the square which you want "
+#~ "to mark. The first player to create a line of 3 marks wins."
+#~ msgstr ""
+#~ "Luani me kompjuterin. Një herë njëri, një herë tjetri, klikoni mbi kutinë "
+#~ "ku doni të vendosni. I pari që krijon një vijë me 3 gurë fiton."
 
 #~ msgctxt "ActivityInfo|"
 #~ msgid ""
@@ -26536,14 +26578,6 @@ msgstr "Fillo"
 #~ "art4apps.org/."
 #~ msgstr ""
 #~ "Figurat dhe zërat janë nga projekti Art4Apps: https://www.art4apps.org/."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Play checkers against the computer"
-#~ msgstr "Luani damë kundër kompjuterit"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Play chess against your friend"
-#~ msgstr "Luani shah me shokun tuaj"
 
 #~ msgctxt "ActivityInfo|"
 #~ msgid "Drawing by Stephane Cabaraux"

@@ -16456,9 +16456,12 @@ msgstr "Activează vocile audio"
 
 #. Activity title
 #: activities/learn_digits/ActivityInfo.qml:15
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Count the items"
 msgctxt "ActivityInfo|"
-msgid "Learn digits"
-msgstr "Învață cifrele"
+msgid "Count and color the circles"
+msgstr "Numără elementele"
 
 #. Help title
 #: activities/learn_digits/ActivityInfo.qml:17
@@ -26351,6 +26354,41 @@ msgstr "Scrie tot cuvântul care cade, înainte ca el să atingă pământul."
 #: core/ChangeLog.qml:30
 #, fuzzy
 msgctxt "ChangeLog|"
+msgid "Map of Spain added for geography activity"
+msgstr "Hărți noi și actualizarea hărților pentru activitățile geografice"
+
+#: core/ChangeLog.qml:31
+msgctxt "ChangeLog|"
+msgid "Voices added for Ukrainian"
+msgstr ""
+
+#: core/ChangeLog.qml:32
+msgctxt "ChangeLog|"
+msgid ""
+"New command-line option to list all the activities and start on a specific "
+"one"
+msgstr ""
+
+#: core/ChangeLog.qml:33 core/ChangeLog.qml:68 core/ChangeLog.qml:71
+#: core/ChangeLog.qml:77
+msgctxt "ChangeLog|"
+msgid "Many usability improvements"
+msgstr "Multe îmbunătățiri de uzabilitate"
+
+#: core/ChangeLog.qml:34 core/ChangeLog.qml:52 core/ChangeLog.qml:67
+#: core/ChangeLog.qml:72 core/ChangeLog.qml:78
+msgctxt "ChangeLog|"
+msgid "Many new images"
+msgstr "Multe imagini noi"
+
+#: core/ChangeLog.qml:35 core/ChangeLog.qml:73 core/ChangeLog.qml:79
+msgctxt "ChangeLog|"
+msgid "Many bug fixes"
+msgstr "Multe corecții de erori"
+
+#: core/ChangeLog.qml:39
+#, fuzzy
+msgctxt "ChangeLog|"
 msgid ""
 "Reduce the size of the packages for all platforms and of the external word "
 "images set"
@@ -26358,13 +26396,13 @@ msgstr ""
 "Reduc mărimea pachetelor pentru toate platformele, și pe cea a setului de "
 "imagini extern pentru cuvinte"
 
-#: core/ChangeLog.qml:31
+#: core/ChangeLog.qml:40
 #, fuzzy
 msgctxt "ChangeLog|"
 msgid "Improve images quality in several activities"
 msgstr "Îmbunătățesc calitatea imaginilor în câteva activități"
 
-#: core/ChangeLog.qml:32
+#: core/ChangeLog.qml:41
 #, fuzzy
 msgctxt "ChangeLog|"
 msgid "Fix some transitions in renewable_energy/watercycle on some platforms"
@@ -26372,13 +26410,13 @@ msgstr ""
 "Repară câteva tranziții în activitățile renewable_energy/watercycle, pe "
 "câteva platforme"
 
-#: core/ChangeLog.qml:33
+#: core/ChangeLog.qml:42
 #, fuzzy
 msgctxt "ChangeLog|"
 msgid "Fix dead keys ignored on Linux for typing activities"
 msgstr "Repară tastele moarte ignorate pe Linux pentru activitățile de scriere"
 
-#: core/ChangeLog.qml:34
+#: core/ChangeLog.qml:43
 #, fuzzy
 msgctxt "ChangeLog|"
 msgid "Fix level reset when changing level manually in Logical associations"
@@ -26386,7 +26424,7 @@ msgstr ""
 "Repară resetarea nivelului  la schimbarea manuală a acestuia, în activitatea "
 "Asocieri Logice"
 
-#: core/ChangeLog.qml:38
+#: core/ChangeLog.qml:47
 #, fuzzy
 msgctxt "ChangeLog|"
 msgid ""
@@ -26395,49 +26433,43 @@ msgstr ""
 "Corectează activitățile de ordonare Ordinea alfabetică, Numere pare și "
 "impare, respectiv Numere"
 
-#: core/ChangeLog.qml:42 core/ChangeLog.qml:50
+#: core/ChangeLog.qml:51 core/ChangeLog.qml:59
 #, fuzzy
 msgctxt "ChangeLog|"
 msgid "Several bug fixes"
 msgstr "Câteva corecții de erori"
 
-#: core/ChangeLog.qml:43 core/ChangeLog.qml:58 core/ChangeLog.qml:63
-#: core/ChangeLog.qml:69
-msgctxt "ChangeLog|"
-msgid "Many new images"
-msgstr "Multe imagini noi"
-
-#: core/ChangeLog.qml:44
+#: core/ChangeLog.qml:53
 #, fuzzy
 msgctxt "ChangeLog|"
 msgid "Translation updated for Russian"
 msgstr "S-a actualizat traducerea pentru limba rusă"
 
-#: core/ChangeLog.qml:45
+#: core/ChangeLog.qml:54
 #, fuzzy
 msgctxt "ChangeLog|"
 msgid "New voices for Norwegian Nynorsk"
 msgstr "Voci noi pentru norvegiană Nynorsk"
 
-#: core/ChangeLog.qml:49
+#: core/ChangeLog.qml:58
 #, fuzzy
 msgctxt "ChangeLog|"
 msgid "Translations added for Breton, Czech and Macedonian"
 msgstr "S-au adăugat traduceri pentru limbile bretonă, cehă și macedoneană"
 
-#: core/ChangeLog.qml:54
+#: core/ChangeLog.qml:63
 #, fuzzy
 msgctxt "ChangeLog|"
 msgid "Translation added for Azerbaijani"
 msgstr "S-a adăugat traducerea pentru limba azeră"
 
-#: core/ChangeLog.qml:55
+#: core/ChangeLog.qml:64
 #, fuzzy
 msgctxt "ChangeLog|"
 msgid "New maps and update of the maps for geography activities"
 msgstr "Hărți noi și actualizarea hărților pentru activitățile geografice"
 
-#: core/ChangeLog.qml:56
+#: core/ChangeLog.qml:65
 #, fuzzy
 msgctxt "ChangeLog|"
 msgid ""
@@ -26447,7 +26479,7 @@ msgstr ""
 "Set nou de date conținând operații în buclă pentru labirintul programabil, "
 "și traducerea imaginilor tutoriale"
 
-#: core/ChangeLog.qml:57
+#: core/ChangeLog.qml:66
 #, fuzzy
 msgctxt "ChangeLog|"
 msgid ""
@@ -26457,67 +26489,57 @@ msgstr ""
 "Adăugarea unui nivel pentru a preda șuntarea sursei de curent, la "
 "activitatea de electricitate analogă"
 
-#: core/ChangeLog.qml:59 core/ChangeLog.qml:62 core/ChangeLog.qml:68
-msgctxt "ChangeLog|"
-msgid "Many usability improvements"
-msgstr "Multe îmbunătățiri de uzabilitate"
-
-#: core/ChangeLog.qml:64 core/ChangeLog.qml:70
-msgctxt "ChangeLog|"
-msgid "Many bug fixes"
-msgstr "Multe corecții de erori"
-
-#: core/ChangeLog.qml:67
+#: core/ChangeLog.qml:76
 msgctxt "ChangeLog|"
 msgid "New Activity Settings menu, with dataset selection"
 msgstr "Meniu nou cu Configurări ale activității, cu alegerea setului de date"
 
-#: core/ChangeLog.qml:73
+#: core/ChangeLog.qml:82
 msgctxt "ChangeLog|"
 msgid "New sub-categories to organize activities"
 msgstr "Noi subcategorii pentru organizarea activităților"
 
-#: core/ChangeLog.qml:74
+#: core/ChangeLog.qml:83
 msgctxt "ChangeLog|"
 msgid "Translation added for Macedonian."
 msgstr "S-a adăugat traducerea pentru limba macedoneană."
 
-#: core/ChangeLog.qml:75
+#: core/ChangeLog.qml:84
 msgctxt "ChangeLog|"
 msgid "New activities Programming Maze and Baby Tangram"
 msgstr "Activități noi: Labirintul Programabil și Baby Tangram"
 
-#: core/ChangeLog.qml:76
+#: core/ChangeLog.qml:85
 msgctxt "ChangeLog|"
 msgid "New background music and volume settings."
 msgstr "Muzică de fundal nouă și reglaje de volum."
 
-#: core/ChangeLog.qml:77
+#: core/ChangeLog.qml:86
 msgctxt "ChangeLog|"
 msgid "New speed setting in several activities."
 msgstr "Reglaje de viteză în câteva activități."
 
-#: core/ChangeLog.qml:78
+#: core/ChangeLog.qml:87
 msgctxt "ChangeLog|"
 msgid "New option in chess to display captured pieces."
 msgstr "O nouă opțiune la șah: afișarea piesele capturate."
 
-#: core/ChangeLog.qml:79
+#: core/ChangeLog.qml:88
 msgctxt "ChangeLog|"
 msgid "New images in Colors, Advanced colors and Target game."
 msgstr "Noi imagini în activitățile Culori, Culori avansate și jocul de Țintă."
 
-#: core/ChangeLog.qml:80
+#: core/ChangeLog.qml:89
 msgctxt "ChangeLog|"
 msgid "New voices for US English."
 msgstr "Voci noi pentru engleza americană."
 
-#: core/ChangeLog.qml:81 core/ChangeLog.qml:89
+#: core/ChangeLog.qml:90 core/ChangeLog.qml:98
 msgctxt "ChangeLog|"
 msgid "Many little fixes and improvements."
 msgstr "Multe corecții mici și îmbunătățiri."
 
-#: core/ChangeLog.qml:82
+#: core/ChangeLog.qml:91
 msgctxt "ChangeLog|"
 msgid ""
 "Translation updated for multiple languages (Breton, Brazilian Portuguese, "
@@ -26526,17 +26548,17 @@ msgstr ""
 "S-au actualizat traducerile pentru mai multe limbi (bretonă, portugheză "
 "braziliană, finlandeză...)."
 
-#: core/ChangeLog.qml:83
+#: core/ChangeLog.qml:92
 msgctxt "ChangeLog|"
 msgid "Add Russian dataset for Click on letter activity."
 msgstr "S-a adăugat setul de date în rusă pentru activitatea Click on Letter."
 
-#: core/ChangeLog.qml:84
+#: core/ChangeLog.qml:93
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in Dutch."
 msgstr "Activitatea Lang e disponibilă acum în olandeză."
 
-#: core/ChangeLog.qml:85
+#: core/ChangeLog.qml:94
 msgctxt "ChangeLog|"
 msgid ""
 "Merge Norwegian counties Nord-Trøndelag and Sør-Trøndelag into Trøndelag in "
@@ -26545,19 +26567,19 @@ msgstr ""
 "În activitatea geo-country, s-au unit comitatele norvegiene Trøndelag-Nord "
 "și Trøndelag-Sud într-un singur comitat, Trøndelag."
 
-#: core/ChangeLog.qml:86
+#: core/ChangeLog.qml:95
 msgctxt "ChangeLog|"
 msgid "Fix in braille activities where the cells start at 1, not 0."
 msgstr ""
 "S-a făcut o corecție în activitățile Braille unde celulele încep la 1, nu la "
 "0."
 
-#: core/ChangeLog.qml:87
+#: core/ChangeLog.qml:96
 msgctxt "ChangeLog|"
 msgid "Translation added for Basque, Hungarian and Malayalam."
 msgstr "Traduceri adăugate pentru limbile bască, maghiară și malaieză."
 
-#: core/ChangeLog.qml:88
+#: core/ChangeLog.qml:97
 msgctxt "ChangeLog|"
 msgid ""
 "Loading/saving of creations (Baby Wordprocessor, Balance Box and Piano "
@@ -26566,48 +26588,48 @@ msgstr ""
 "Încărcarea/salvarea creațiilor proprii (pentru activitățile Procesor de Text "
 "Infantil, Cutia de Balans și Compoziție la Pian)."
 
-#: core/ChangeLog.qml:89
+#: core/ChangeLog.qml:98
 msgctxt "ChangeLog|"
 msgid "Translations added for Scottish Gaelic."
 msgstr "Traduceri adăugate pentru limba galeză scoțiană."
 
-#: core/ChangeLog.qml:90
+#: core/ChangeLog.qml:99
 msgctxt "ChangeLog|"
 msgid "License page added in configuration."
 msgstr "Pagina de licență adăugată în configurație."
 
-#: core/ChangeLog.qml:90
+#: core/ChangeLog.qml:99
 msgctxt "ChangeLog|"
 msgid "Multiple changes on layouts to improve the ergonomy."
 msgstr "Schimbări multiple ale formatelor, pentru îmbunătățirea ergonomiei."
 
-#: core/ChangeLog.qml:91
+#: core/ChangeLog.qml:100
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in Polish, Swedish and Ukrainian."
 msgstr ""
 "Activitatea Lang este disponibilă acum în poloneză, suedeză și ucrainiană."
 
-#: core/ChangeLog.qml:92
+#: core/ChangeLog.qml:101
 msgctxt "ChangeLog|"
 msgid "Search feature."
 msgstr "Caracteristica de căutare."
 
-#: core/ChangeLog.qml:93
+#: core/ChangeLog.qml:102
 msgctxt "ChangeLog|"
 msgid "A Changelog."
 msgstr "Jurnalul modificărilor."
 
-#: core/ChangeLog.qml:94
+#: core/ChangeLog.qml:103
 msgctxt "ChangeLog|"
 msgid "Many little fixes."
 msgstr "Multe corecții mărunte."
 
-#: core/ChangeLog.qml:94
+#: core/ChangeLog.qml:103
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in French."
 msgstr "Activitatea Lang e disponibilă acum în română și franceză."
 
-#: core/ChangeLog.qml:95
+#: core/ChangeLog.qml:104
 msgctxt "ChangeLog|"
 msgid ""
 "Adding a loading overlay to let the user know that some actions are taking "
@@ -26617,7 +26639,7 @@ msgstr ""
 "fundal au loc niște procese (de exemplu încărcarea unei activități) care pot "
 "dura câteva secunde."
 
-#: core/ChangeLog.qml:95
+#: core/ChangeLog.qml:104
 msgctxt "ChangeLog|"
 msgid ""
 "Translations added for: Catalan (Valencian), Chinese Traditional, Finnish "
@@ -26627,12 +26649,12 @@ msgstr ""
 "tradițională, finlandeză (98%), rusă (98% tradusă), slovacă (92% tradusă), "
 "turcă și română (100% tradusă)."
 
-#: core/ChangeLog.qml:96
+#: core/ChangeLog.qml:105
 msgctxt "ChangeLog|"
 msgid "Translations added for: Slovenian, German, Galician."
 msgstr "Traduceri adăugate pentru limbile slovenă, germană și galiciană."
 
-#: core/ChangeLog.qml:121
+#: core/ChangeLog.qml:130
 #, qt-format
 msgctxt "ChangeLog|"
 msgid "Version %1:"
@@ -27278,6 +27300,51 @@ msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Start"
 
+#~ msgctxt "ActivityInfo|"
+#~ msgid ""
+#~ "Play with the computer. Take turns to click the line in which you want to "
+#~ "drop a token. The first player to create a line of 4 tokens wins."
+#~ msgstr ""
+#~ "Joacă cu calculatorul. Fă clic pe rând pe linia pe care vrei să pui "
+#~ "jetonul. Câștigă primul jucător care reușește să creeze o linie de patru "
+#~ "jetoane."
+
+#~ msgctxt "Calendar|"
+#~ msgid "Sunday"
+#~ msgstr "Duminică"
+
+#~ msgctxt "Calendar|"
+#~ msgid "Monday"
+#~ msgstr "Luni"
+
+#~ msgctxt "Calendar|"
+#~ msgid "Tuesday"
+#~ msgstr "Marți"
+
+#~ msgctxt "Calendar|"
+#~ msgid "Wednesday"
+#~ msgstr "Miercuri"
+
+#~ msgctxt "Calendar|"
+#~ msgid "Thursday"
+#~ msgstr "Joi"
+
+#~ msgctxt "Calendar|"
+#~ msgid "Friday"
+#~ msgstr "Vineri"
+
+#~ msgctxt "Calendar|"
+#~ msgid "Saturday"
+#~ msgstr "Sâmbătă"
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Play checkers against the computer"
+#~ msgstr "Joacă dame contra sistemului de calcul"
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Play chess against your friend"
+#~ msgstr "Joacă șah contra unui prieten"
+
 #~ msgctxt "board1|"
 #~ msgid "The horse goes 'neigh! neigh!'. Horses usually sleep standing up."
 #~ msgstr "Calul face „i-ha-ha!” și doarme de obicei în picioare."
@@ -27373,13 +27440,8 @@ msgstr "Start"
 #~ "produc printre altele articole de îmbrăcăminte și pături."
 
 #~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Play with the computer. Take turns to click the line in which you want to "
-#~ "drop a token. The first player to create a line of 4 tokens wins."
-#~ msgstr ""
-#~ "Joacă cu calculatorul. Fă clic pe rând pe linia pe care vrei să pui "
-#~ "jetonul. Câștigă primul jucător care reușește să creeze o linie de patru "
-#~ "jetoane."
+#~ msgid "Learn digits"
+#~ msgstr "Învață cifrele"
 
 #~ msgctxt "ActivityInfo|"
 #~ msgid ""
@@ -27388,43 +27450,6 @@ msgstr "Start"
 #~ msgstr ""
 #~ "Joacă cu sistemul de calcul. Plasați prima dată pe rând cele nouă piese, "
 #~ "și apoi faceți pe rând mutări."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Play with the computer. Take turns to click on the square which you want "
-#~ "to mark. The first player to create a line of 3 marks wins."
-#~ msgstr ""
-#~ "Joacă cu sistemul de calcul. Fă clic pe rând pe pătratele pe care vrei să "
-#~ "pui simbolul X. Câștigă primul jucător care reușește să creeze o linie de "
-#~ "trei simboluri."
-
-#~ msgctxt "Calendar|"
-#~ msgid "Sunday"
-#~ msgstr "Duminică"
-
-#~ msgctxt "Calendar|"
-#~ msgid "Monday"
-#~ msgstr "Luni"
-
-#~ msgctxt "Calendar|"
-#~ msgid "Tuesday"
-#~ msgstr "Marți"
-
-#~ msgctxt "Calendar|"
-#~ msgid "Wednesday"
-#~ msgstr "Miercuri"
-
-#~ msgctxt "Calendar|"
-#~ msgid "Thursday"
-#~ msgstr "Joi"
-
-#~ msgctxt "Calendar|"
-#~ msgid "Friday"
-#~ msgstr "Vineri"
-
-#~ msgctxt "Calendar|"
-#~ msgid "Saturday"
-#~ msgstr "Sâmbătă"
 
 #, fuzzy
 #~ msgctxt "Data|"
@@ -27449,12 +27474,13 @@ msgstr "Start"
 #~ "Copiilor|le|place|să|se|joace|afară."
 
 #~ msgctxt "ActivityInfo|"
-#~ msgid "Play checkers against the computer"
-#~ msgstr "Joacă dame contra sistemului de calcul"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Play chess against your friend"
-#~ msgstr "Joacă șah contra unui prieten"
+#~ msgid ""
+#~ "Play with the computer. Take turns to click on the square which you want "
+#~ "to mark. The first player to create a line of 3 marks wins."
+#~ msgstr ""
+#~ "Joacă cu sistemul de calcul. Fă clic pe rând pe pătratele pe care vrei să "
+#~ "pui simbolul X. Câștigă primul jucător care reușește să creeze o linie de "
+#~ "trei simboluri."
 
 #~ msgctxt "ActivityInfo|"
 #~ msgid ""

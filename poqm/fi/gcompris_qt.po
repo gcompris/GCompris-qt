@@ -5283,10 +5283,10 @@ msgstr ""
 #: activities/comparator/ActivityInfo.qml:32
 #, fuzzy
 #| msgctxt "ActivityInfo|"
-#| msgid "2. Use Enter or Return key to submit the answers.<br>"
+#| msgid "Enter: validate your answer"
 msgctxt "ActivityInfo|"
 msgid "Return: validate the answers"
-msgstr "2. Vahvista vastaus Enter- tai Return-näppäimellä.<br>"
+msgstr "Vahvista vastausksesi"
 
 #: activities/comparator/ActivityInfo.qml:33
 msgctxt "ActivityInfo|"
@@ -10974,11 +10974,11 @@ msgstr ""
 #. Autonomous communities of Spain: Catalonia
 #: activities/geo-country/resource/board/board18_0.qml:57
 #, fuzzy
-#| msgctxt "board7_0|"
-#| msgid "Mauritania"
+#| msgctxt "board14_0|"
+#| msgid "New Caledonia"
 msgctxt "board18_0|"
 msgid "Catalonia"
-msgstr "Mauritania"
+msgstr "Uusi-Kaledonia"
 
 #. Autonomous communities of Spain: Aragon
 #: activities/geo-country/resource/board/board18_0.qml:64
@@ -15772,9 +15772,12 @@ msgstr "Käytä puheääniä"
 
 #. Activity title
 #: activities/learn_digits/ActivityInfo.qml:15
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Count the items"
 msgctxt "ActivityInfo|"
-msgid "Learn digits"
-msgstr "Opi numerot"
+msgid "Count and color the circles"
+msgstr "Laske esineet"
 
 #. Help title
 #: activities/learn_digits/ActivityInfo.qml:17
@@ -15977,10 +15980,10 @@ msgstr "Vähennyslaskut 1:llä, 2:lla, 3:lla, 4:llä ja 5:llä."
 #: activities/left_right_click/ActivityInfo.qml:14
 #, fuzzy
 #| msgctxt "ActivityInfo|"
-#| msgid "Numeration training"
+#| msgid "Memory training."
 msgctxt "ActivityInfo|"
 msgid "Mouse click training"
-msgstr "Järjestyksen harjoittelu"
+msgstr "Muistiharjoitus."
 
 #. Help title
 #: activities/left_right_click/ActivityInfo.qml:16
@@ -25325,13 +25328,50 @@ msgid "Type the complete word as it falls, before it reaches the ground."
 msgstr "Kirjoita koko putoava sana ennen kuin se osuu maahan."
 
 #: core/ChangeLog.qml:30
+#, fuzzy
+#| msgctxt "ChangeLog|"
+#| msgid "New maps and update of the maps for geography activities"
+msgctxt "ChangeLog|"
+msgid "Map of Spain added for geography activity"
+msgstr "Uudet kartat ja karttojen päivitys maantietotehtäviin"
+
+#: core/ChangeLog.qml:31
+msgctxt "ChangeLog|"
+msgid "Voices added for Ukrainian"
+msgstr ""
+
+#: core/ChangeLog.qml:32
+msgctxt "ChangeLog|"
+msgid ""
+"New command-line option to list all the activities and start on a specific "
+"one"
+msgstr ""
+
+#: core/ChangeLog.qml:33 core/ChangeLog.qml:68 core/ChangeLog.qml:71
+#: core/ChangeLog.qml:77
+msgctxt "ChangeLog|"
+msgid "Many usability improvements"
+msgstr "Monia käytettävyysparannuksia"
+
+#: core/ChangeLog.qml:34 core/ChangeLog.qml:52 core/ChangeLog.qml:67
+#: core/ChangeLog.qml:72 core/ChangeLog.qml:78
+msgctxt "ChangeLog|"
+msgid "Many new images"
+msgstr "Monia uusia kuvia"
+
+#: core/ChangeLog.qml:35 core/ChangeLog.qml:73 core/ChangeLog.qml:79
+msgctxt "ChangeLog|"
+msgid "Many bug fixes"
+msgstr "Monia virheenkorjauksia"
+
+#: core/ChangeLog.qml:39
 msgctxt "ChangeLog|"
 msgid ""
 "Reduce the size of the packages for all platforms and of the external word "
 "images set"
 msgstr ""
 
-#: core/ChangeLog.qml:31
+#: core/ChangeLog.qml:40
 #, fuzzy
 #| msgctxt "ChangeLog|"
 #| msgid "New speed setting in several activities."
@@ -25339,28 +25379,28 @@ msgctxt "ChangeLog|"
 msgid "Improve images quality in several activities"
 msgstr "Uusi nopeusasetus useissa toiminnoissa."
 
-#: core/ChangeLog.qml:32
+#: core/ChangeLog.qml:41
 msgctxt "ChangeLog|"
 msgid "Fix some transitions in renewable_energy/watercycle on some platforms"
 msgstr ""
 
-#: core/ChangeLog.qml:33
+#: core/ChangeLog.qml:42
 msgctxt "ChangeLog|"
 msgid "Fix dead keys ignored on Linux for typing activities"
 msgstr ""
 
-#: core/ChangeLog.qml:34
+#: core/ChangeLog.qml:43
 msgctxt "ChangeLog|"
 msgid "Fix level reset when changing level manually in Logical associations"
 msgstr ""
 
-#: core/ChangeLog.qml:38
+#: core/ChangeLog.qml:47
 msgctxt "ChangeLog|"
 msgid ""
 "Fix Alphabet sequence, Even and odd numbers and Numbers in order activities"
 msgstr ""
 
-#: core/ChangeLog.qml:42 core/ChangeLog.qml:50
+#: core/ChangeLog.qml:51 core/ChangeLog.qml:59
 #, fuzzy
 #| msgctxt "ChangeLog|"
 #| msgid "Many bug fixes"
@@ -25368,13 +25408,7 @@ msgctxt "ChangeLog|"
 msgid "Several bug fixes"
 msgstr "Monia virheenkorjauksia"
 
-#: core/ChangeLog.qml:43 core/ChangeLog.qml:58 core/ChangeLog.qml:63
-#: core/ChangeLog.qml:69
-msgctxt "ChangeLog|"
-msgid "Many new images"
-msgstr "Monia uusia kuvia"
-
-#: core/ChangeLog.qml:44
+#: core/ChangeLog.qml:53
 #, fuzzy
 #| msgctxt "ChangeLog|"
 #| msgid "Translation added for Azerbaijani"
@@ -25382,7 +25416,7 @@ msgctxt "ChangeLog|"
 msgid "Translation updated for Russian"
 msgstr "Makedoniannos lisätty"
 
-#: core/ChangeLog.qml:45
+#: core/ChangeLog.qml:54
 #, fuzzy
 #| msgctxt "DialogConfig|"
 #| msgid "Norwegian Nynorsk"
@@ -25390,7 +25424,7 @@ msgctxt "ChangeLog|"
 msgid "New voices for Norwegian Nynorsk"
 msgstr "Norja (Nynorsk)"
 
-#: core/ChangeLog.qml:49
+#: core/ChangeLog.qml:58
 #, fuzzy
 #| msgctxt "ChangeLog|"
 #| msgid "Translation added for Macedonian."
@@ -25398,17 +25432,17 @@ msgctxt "ChangeLog|"
 msgid "Translations added for Breton, Czech and Macedonian"
 msgstr "Makedoniannos lisätty."
 
-#: core/ChangeLog.qml:54
+#: core/ChangeLog.qml:63
 msgctxt "ChangeLog|"
 msgid "Translation added for Azerbaijani"
 msgstr "Makedoniannos lisätty"
 
-#: core/ChangeLog.qml:55
+#: core/ChangeLog.qml:64
 msgctxt "ChangeLog|"
 msgid "New maps and update of the maps for geography activities"
 msgstr "Uudet kartat ja karttojen päivitys maantietotehtäviin"
 
-#: core/ChangeLog.qml:56
+#: core/ChangeLog.qml:65
 msgctxt "ChangeLog|"
 msgid ""
 "New dataset containing loops operations for programming maze, and make "
@@ -25417,7 +25451,7 @@ msgstr ""
 "Uusi tietojoukko, joka sisältää silmukkaoperaatioita ohjelmointi "
 "labyrinttiin ja ohjekuvien kääntämiseen"
 
-#: core/ChangeLog.qml:57
+#: core/ChangeLog.qml:66
 msgctxt "ChangeLog|"
 msgid ""
 "Addition of a level to teach voltage source loop in analog electricity "
@@ -25425,67 +25459,57 @@ msgid ""
 msgstr ""
 "Tason lisäys jännitelähdesilmukan opettamiseen analogisessa sähkötoiminnassa"
 
-#: core/ChangeLog.qml:59 core/ChangeLog.qml:62 core/ChangeLog.qml:68
-msgctxt "ChangeLog|"
-msgid "Many usability improvements"
-msgstr "Monia käytettävyysparannuksia"
-
-#: core/ChangeLog.qml:64 core/ChangeLog.qml:70
-msgctxt "ChangeLog|"
-msgid "Many bug fixes"
-msgstr "Monia virheenkorjauksia"
-
-#: core/ChangeLog.qml:67
+#: core/ChangeLog.qml:76
 msgctxt "ChangeLog|"
 msgid "New Activity Settings menu, with dataset selection"
 msgstr "Uusi Toimintoasetukset-valikko, jossa on tietojoukon valinta"
 
-#: core/ChangeLog.qml:73
+#: core/ChangeLog.qml:82
 msgctxt "ChangeLog|"
 msgid "New sub-categories to organize activities"
 msgstr "Uusia alakategorioita toimintojen järjestämiseen"
 
-#: core/ChangeLog.qml:74
+#: core/ChangeLog.qml:83
 msgctxt "ChangeLog|"
 msgid "Translation added for Macedonian."
 msgstr "Makedoniannos lisätty."
 
-#: core/ChangeLog.qml:75
+#: core/ChangeLog.qml:84
 msgctxt "ChangeLog|"
 msgid "New activities Programming Maze and Baby Tangram"
 msgstr "Uusia aktiviteetteja, Ohjelmointilabyrintti ja Vauvojen Tangram"
 
-#: core/ChangeLog.qml:76
+#: core/ChangeLog.qml:85
 msgctxt "ChangeLog|"
 msgid "New background music and volume settings."
 msgstr "Uusi taustamusiikki ja äänenvoimakkuusasetukset."
 
-#: core/ChangeLog.qml:77
+#: core/ChangeLog.qml:86
 msgctxt "ChangeLog|"
 msgid "New speed setting in several activities."
 msgstr "Uusi nopeusasetus useissa toiminnoissa."
 
-#: core/ChangeLog.qml:78
+#: core/ChangeLog.qml:87
 msgctxt "ChangeLog|"
 msgid "New option in chess to display captured pieces."
 msgstr "Uusi vaihtoehto shakissa kaapattujen nappuloiden näyttämiseen."
 
-#: core/ChangeLog.qml:79
+#: core/ChangeLog.qml:88
 msgctxt "ChangeLog|"
 msgid "New images in Colors, Advanced colors and Target game."
 msgstr "Uusia kuvia Väreissä, Edistyneissä väreissä ja Kohdepelissä."
 
-#: core/ChangeLog.qml:80
+#: core/ChangeLog.qml:89
 msgctxt "ChangeLog|"
 msgid "New voices for US English."
 msgstr "Uudet äänet Yhdysvaltain englannin kielelle."
 
-#: core/ChangeLog.qml:81 core/ChangeLog.qml:89
+#: core/ChangeLog.qml:90 core/ChangeLog.qml:98
 msgctxt "ChangeLog|"
 msgid "Many little fixes and improvements."
 msgstr "Monet pikku korjaukset ja parannukset."
 
-#: core/ChangeLog.qml:82
+#: core/ChangeLog.qml:91
 msgctxt "ChangeLog|"
 msgid ""
 "Translation updated for multiple languages (Breton, Brazilian Portuguese, "
@@ -25493,17 +25517,17 @@ msgid ""
 msgstr ""
 "Käännös päivitetty useille kielille (bretonia, brasilianportugali, suomi...)."
 
-#: core/ChangeLog.qml:83
+#: core/ChangeLog.qml:92
 msgctxt "ChangeLog|"
 msgid "Add Russian dataset for Click on letter activity."
 msgstr "Lisää venäläinen tietojoukko Click on letter -toiminnalle."
 
-#: core/ChangeLog.qml:84
+#: core/ChangeLog.qml:93
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in Dutch."
 msgstr "Kielitehtävä nyt saatavilla hollanniksi."
 
-#: core/ChangeLog.qml:85
+#: core/ChangeLog.qml:94
 msgctxt "ChangeLog|"
 msgid ""
 "Merge Norwegian counties Nord-Trøndelag and Sør-Trøndelag into Trøndelag in "
@@ -25512,17 +25536,17 @@ msgstr ""
 "Yhdistetty Norjan maakunnat Nord-Trøndelag ja Sør-Trøndelag Trøndelagiksi "
 "maantiedetoiminnossa."
 
-#: core/ChangeLog.qml:86
+#: core/ChangeLog.qml:95
 msgctxt "ChangeLog|"
 msgid "Fix in braille activities where the cells start at 1, not 0."
 msgstr "Korjaus pistekirjoitustoimintoihin, joissa solu alkaa 1:stä, ei 0:sta."
 
-#: core/ChangeLog.qml:87
+#: core/ChangeLog.qml:96
 msgctxt "ChangeLog|"
 msgid "Translation added for Basque, Hungarian and Malayalam."
 msgstr "Lisätty käännöksiä: baski, unkari ja malajalam."
 
-#: core/ChangeLog.qml:88
+#: core/ChangeLog.qml:97
 msgctxt "ChangeLog|"
 msgid ""
 "Loading/saving of creations (Baby Wordprocessor, Balance Box and Piano "
@@ -25531,47 +25555,47 @@ msgstr ""
 "Luomusten lataus/tallennus (Vauvojen Tekstinkäsittelyohjelma, "
 "Tasapainolaatikko ja Pianosävellys)."
 
-#: core/ChangeLog.qml:89
+#: core/ChangeLog.qml:98
 msgctxt "ChangeLog|"
 msgid "Translations added for Scottish Gaelic."
 msgstr "Skotlanningaelinnös lisätty."
 
-#: core/ChangeLog.qml:90
+#: core/ChangeLog.qml:99
 msgctxt "ChangeLog|"
 msgid "License page added in configuration."
 msgstr "Asetuksiin lisätty lisenssisivu."
 
-#: core/ChangeLog.qml:90
+#: core/ChangeLog.qml:99
 msgctxt "ChangeLog|"
 msgid "Multiple changes on layouts to improve the ergonomy."
 msgstr "Useita asettelumuutoksia ergonomian parantamiseksi."
 
-#: core/ChangeLog.qml:91
+#: core/ChangeLog.qml:100
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in Polish, Swedish and Ukrainian."
 msgstr "Lang-tehtävä nyt saatavilla puolaksi, ruotsiksi ja ukrainaksi."
 
-#: core/ChangeLog.qml:92
+#: core/ChangeLog.qml:101
 msgctxt "ChangeLog|"
 msgid "Search feature."
 msgstr "Hakuominaisuus."
 
-#: core/ChangeLog.qml:93
+#: core/ChangeLog.qml:102
 msgctxt "ChangeLog|"
 msgid "A Changelog."
 msgstr "Muutosloki."
 
-#: core/ChangeLog.qml:94
+#: core/ChangeLog.qml:103
 msgctxt "ChangeLog|"
 msgid "Many little fixes."
 msgstr "Monet pikku korjaukset."
 
-#: core/ChangeLog.qml:94
+#: core/ChangeLog.qml:103
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in French."
 msgstr "Lang-tehtävä nyt saatavilla ranskaksi."
 
-#: core/ChangeLog.qml:95
+#: core/ChangeLog.qml:104
 msgctxt "ChangeLog|"
 msgid ""
 "Adding a loading overlay to let the user know that some actions are taking "
@@ -25581,7 +25605,7 @@ msgstr ""
 "toimintoja on meneillään (esimerkiksi toiminnon lataaminen), ja se voi "
 "kestää muutaman sekunnin."
 
-#: core/ChangeLog.qml:95
+#: core/ChangeLog.qml:104
 msgctxt "ChangeLog|"
 msgid ""
 "Translations added for: Catalan (Valencian), Chinese Traditional, Finnish "
@@ -25590,12 +25614,12 @@ msgstr ""
 "Lisätty käännöksiä: katalaani (Valencia), perinteinen kiina, suomi (92 % "
 "käännetty), venäjä (98 % käännetty), slovakki (92 % käännetty), turkki."
 
-#: core/ChangeLog.qml:96
+#: core/ChangeLog.qml:105
 msgctxt "ChangeLog|"
 msgid "Translations added for: Slovenian, German, Galician."
 msgstr "Uusia käännöksiä lisätty: slovenia, saksa, galitsia."
 
-#: core/ChangeLog.qml:121
+#: core/ChangeLog.qml:130
 #, qt-format
 msgctxt "ChangeLog|"
 msgid "Version %1:"
@@ -26239,6 +26263,50 @@ msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Käynnistä"
 
+#~ msgctxt "ActivityInfo|"
+#~ msgid ""
+#~ "Play with the computer. Take turns to click the line in which you want to "
+#~ "drop a token. The first player to create a line of 4 tokens wins."
+#~ msgstr ""
+#~ "Pelaa tietokonetta vastaan. Napsauta vuorotellen riviä, jolle haluat "
+#~ "pudottaa merkin. Ensimmäinen pelaaja, joka luo 4 merkin rivin, voittaa."
+
+#~ msgctxt "Calendar|"
+#~ msgid "Sunday"
+#~ msgstr "Sunnuntai"
+
+#~ msgctxt "Calendar|"
+#~ msgid "Monday"
+#~ msgstr "Maanantai"
+
+#~ msgctxt "Calendar|"
+#~ msgid "Tuesday"
+#~ msgstr "Tiistai"
+
+#~ msgctxt "Calendar|"
+#~ msgid "Wednesday"
+#~ msgstr "Weskiviikko"
+
+#~ msgctxt "Calendar|"
+#~ msgid "Thursday"
+#~ msgstr "Torstai"
+
+#~ msgctxt "Calendar|"
+#~ msgid "Friday"
+#~ msgstr "Perjantai"
+
+#~ msgctxt "Calendar|"
+#~ msgid "Saturday"
+#~ msgstr "Lauantai"
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Play checkers against the computer"
+#~ msgstr "Pelaa tammea tietokonetta vastaan"
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Play chess against your friend"
+#~ msgstr "Pelaa šakkia kaveria vastaan"
+
 #~ msgctxt "board1|"
 #~ msgid "The horse goes 'neigh! neigh!'. Horses usually sleep standing up."
 #~ msgstr "Hevonen sanoo ”ihaa ihaa”. Hevoset nukkuvat yleensä seisaallaan."
@@ -26342,12 +26410,8 @@ msgstr "Käynnistä"
 #~ "valmistukseen."
 
 #~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Play with the computer. Take turns to click the line in which you want to "
-#~ "drop a token. The first player to create a line of 4 tokens wins."
-#~ msgstr ""
-#~ "Pelaa tietokonetta vastaan. Napsauta vuorotellen riviä, jolle haluat "
-#~ "pudottaa merkin. Ensimmäinen pelaaja, joka luo 4 merkin rivin, voittaa."
+#~ msgid "Learn digits"
+#~ msgstr "Opi numerot"
 
 #~ msgctxt "ActivityInfo|"
 #~ msgid ""
@@ -26356,42 +26420,6 @@ msgstr "Käynnistä"
 #~ msgstr ""
 #~ "Pelaa tietokonetta vastaan. Aseta ensin vuorotellen yhdeksän nappulaa ja "
 #~ "siirrä sitten nappuloita vuorotellen."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Play with the computer. Take turns to click on the square which you want "
-#~ "to mark. The first player to create a line of 3 marks wins."
-#~ msgstr ""
-#~ "Pelaa tietokonetta vastaan. Napsauta vuorollasi ruutua, jonka haluat "
-#~ "merkitä. Pelaaja, joka ensimmäisenä saa kolme merkkiä riviin, voittaa."
-
-#~ msgctxt "Calendar|"
-#~ msgid "Sunday"
-#~ msgstr "Sunnuntai"
-
-#~ msgctxt "Calendar|"
-#~ msgid "Monday"
-#~ msgstr "Maanantai"
-
-#~ msgctxt "Calendar|"
-#~ msgid "Tuesday"
-#~ msgstr "Tiistai"
-
-#~ msgctxt "Calendar|"
-#~ msgid "Wednesday"
-#~ msgstr "Weskiviikko"
-
-#~ msgctxt "Calendar|"
-#~ msgid "Thursday"
-#~ msgstr "Torstai"
-
-#~ msgctxt "Calendar|"
-#~ msgid "Friday"
-#~ msgstr "Perjantai"
-
-#~ msgctxt "Calendar|"
-#~ msgid "Saturday"
-#~ msgstr "Lauantai"
 
 #~ msgctxt "Data|"
 #~ msgid ""
@@ -26412,6 +26440,14 @@ msgstr "Käynnistä"
 #~ msgstr ""
 #~ "Aurinko|paistaa|taivaalla.\n"
 #~ "Lapset|nauttavat|leikkimisestä|ulkona|illalla."
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid ""
+#~ "Play with the computer. Take turns to click on the square which you want "
+#~ "to mark. The first player to create a line of 3 marks wins."
+#~ msgstr ""
+#~ "Pelaa tietokonetta vastaan. Napsauta vuorollasi ruutua, jonka haluat "
+#~ "merkitä. Pelaaja, joka ensimmäisenä saa kolme merkkiä riviin, voittaa."
 
 #~ msgctxt "ActivityInfo|"
 #~ msgid ""
@@ -26439,14 +26475,6 @@ msgstr "Käynnistä"
 #~ msgstr "Kuvat ja äänet ovat Art4Apps-projektista: http://www.art4apps.org/."
 
 #~ msgctxt "ActivityInfo|"
-#~ msgid "Play checkers against the computer"
-#~ msgstr "Pelaa tammea tietokonetta vastaan"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Play chess against your friend"
-#~ msgstr "Pelaa šakkia kaveria vastaan"
-
-#~ msgctxt "ActivityInfo|"
 #~ msgid "Drawing by Stephane Cabaraux"
 #~ msgstr "Piirrokset: Stephane Cabaraux"
 
@@ -26454,234 +26482,41 @@ msgstr "Käynnistä"
 #~ msgid "Drawing by Stephane Cabaraux."
 #~ msgstr "Piirrokset: Stephane Cabaraux."
 
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Decimal number system."
-#~ msgctxt "Data|"
-#~ msgid "Basic decimal numbers."
-#~ msgstr "Desimaalilukujärjestelmä."
-
 #~ msgctxt "ActivityInfo|"
 #~ msgid "Mouse-manipulation"
 #~ msgstr "Hiiren käyttö"
 
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Knowing alphabets"
-#~ msgstr "Aakkosten tuntemus"
-
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Reading"
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Reading"
-#~ msgstr "Lukutaito"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Counting skills"
-#~ msgstr "Laskutaidot"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Compare alphabets."
-#~ msgstr "Aakkosten vertailu."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Move, drag and drop using mouse."
-#~ msgstr "Siirrä, vedä ja pudota hiirellä."
-
-#~ msgctxt "ordering|"
-#~ msgid "Drag and drop the letters in correct position in descending order."
-#~ msgstr "Vedä ja pudota kirjaimet oikeaan käänteisjärjestykseen."
-
-#~ msgctxt "board15_0|"
-#~ msgid "Northern Scotland"
-#~ msgstr "Pohjois-Skotlanti"
-
-#, fuzzy
-#~| msgctxt "board2_0|"
-#~| msgid "Iceland"
-#~ msgctxt "board15_0|"
-#~ msgid "Shetland"
-#~ msgstr "Islanti"
-
-#, fuzzy
-#~| msgctxt "board5_0|"
-#~| msgid "Switzerland"
-#~ msgctxt "board15_0|"
-#~ msgid "Sutherland"
-#~ msgstr "Sveitsi"
-
-#~ msgctxt "board15_1|"
-#~ msgid "Southern Scotland"
-#~ msgstr "Etelä-Skotlanti"
-
-#~ msgctxt "board15_2|"
-#~ msgid "Northern Scotland"
-#~ msgstr "Pohjois-Skotlanti"
-
-#, fuzzy
-#~| msgctxt "board2_0|"
-#~| msgid "Iceland"
-#~ msgctxt "board15_2|"
-#~ msgid "Shetland"
-#~ msgstr "Islanti"
-
-#, fuzzy
-#~| msgctxt "board5_0|"
-#~| msgid "Switzerland"
-#~ msgctxt "board15_2|"
-#~ msgid "Sutherland"
-#~ msgstr "Sveitsi"
-
-#~ msgctxt "board15_3|"
-#~ msgid "Southern Scotland"
-#~ msgstr "Etelä-Skotlanti"
-
-#, fuzzy
-#~| msgctxt "DialogConfig|"
-#~| msgid "Scottish Gaelic"
-#~ msgctxt "board15_3|"
-#~ msgid "Scottish Borders"
-#~ msgstr "Iiri (Gaeli)"
-
-#, fuzzy
-#~| msgctxt "board8_0|"
-#~| msgid "South Africa"
-#~ msgctxt "board15_3|"
-#~ msgid "South Ayrshire"
-#~ msgstr "Etelä-Afrikka"
-
-#, fuzzy
-#~| msgctxt "board10_0|"
-#~| msgid "East Timor"
-#~ msgctxt "board15_3|"
-#~ msgid "East Ayrshire"
-#~ msgstr "Itä-Timor"
-
-#, fuzzy
-#~| msgctxt "board2_0|"
-#~| msgid "North America"
-#~ msgctxt "board15_3|"
-#~ msgid "North Ayrshire"
-#~ msgstr "Pohjois-Amerikka"
+#~ msgctxt "board10_1|"
+#~ msgid "United States of America"
+#~ msgstr "Yhdysvallat"
 
 #~ msgctxt "board11_1|"
 #~ msgid "Districts of Northern Italy"
 #~ msgstr "Pohjois-Italian alueet"
 
-#, fuzzy
-#~| msgctxt "board6_0|"
-#~| msgid "Albania"
-#~ msgctxt "board11_1|"
-#~ msgid "Verbania"
-#~ msgstr "Albania"
-
-#, fuzzy
-#~| msgctxt "board6_0|"
-#~| msgid "Moldova"
-#~ msgctxt "board11_1|"
-#~ msgid "Padova"
-#~ msgstr "Moldova"
-
-#, fuzzy
-#~| msgctxt "board4_0|"
-#~| msgid "Venezuela"
-#~ msgctxt "board11_1|"
-#~ msgid "Venezia"
-#~ msgstr "Venezuela"
-
-#, fuzzy
-#~| msgctxt "IntroMessage|"
-#~| msgid "Previous"
-#~ msgctxt "board11_1|"
-#~ msgid "Treviso"
-#~ msgstr "Edellinen"
-
 #~ msgctxt "board11_2|"
 #~ msgid "Districts of Central Italy"
 #~ msgstr "Keski-Italian alueet"
-
-#, fuzzy
-#~| msgctxt "board4_0|"
-#~| msgid "Peru"
-#~ msgctxt "board11_2|"
-#~ msgid "Perugia"
-#~ msgstr "Peru"
-
-#, fuzzy
-#~| msgctxt "board6_0|"
-#~| msgid "Romania"
-#~ msgctxt "board11_2|"
-#~ msgid "Roma"
-#~ msgstr "Romania"
 
 #~ msgctxt "board11_3|"
 #~ msgid "Districts of Southern Italy"
 #~ msgstr "Etelä-Italian alueet"
 
-#, fuzzy
-#~| msgctxt "board9_0|"
-#~| msgid "Pakistan"
-#~ msgctxt "board11_3|"
-#~ msgid "Oristano"
-#~ msgstr "Pakistan"
+#~ msgctxt "board12_0|"
+#~ msgid "States of India"
+#~ msgstr "Intian osavaltiot"
 
-#, fuzzy
-#~| msgctxt "board1|"
-#~| msgid "Japan"
-#~ msgctxt "board11_3|"
-#~ msgid "Trapani"
-#~ msgstr "Japani"
+#~ msgctxt "board15_0|"
+#~ msgid "Northern Scotland"
+#~ msgstr "Pohjois-Skotlanti"
 
-#, fuzzy
-#~| msgctxt "board4_0|"
-#~| msgid "Argentina"
-#~ msgctxt "board11_3|"
-#~ msgid "Agrigento"
-#~ msgstr "Argentiina"
+#~ msgctxt "board15_2|"
+#~ msgid "Northern Scotland"
+#~ msgstr "Pohjois-Skotlanti"
 
-#, fuzzy
-#~| msgctxt "board4_0|"
-#~| msgid "grater"
-#~ msgctxt "board11_3|"
-#~ msgid "Matera"
-#~ msgstr "raastin"
-
-#, fuzzy
-#~| msgctxt "dataset|"
-#~| msgid "eleven"
-#~ msgctxt "board11_3|"
-#~ msgid "Benevento"
-#~ msgstr "yksitoista"
-
-#~ msgctxt "board1_0|"
-#~ msgid "Districts of France"
-#~ msgstr "Ranskan alueet"
-
-#, fuzzy
-#~| msgctxt "DialogConfig|"
-#~| msgid "Breton"
-#~ msgctxt "board1_0|"
-#~ msgid "Bretagne"
-#~ msgstr "Bretoni"
-
-#~ msgctxt "board4_0|"
-#~ msgid "Districts of Poland"
-#~ msgstr "Puolan alueet"
-
-#, fuzzy
-#~| msgctxt "board2_0|"
-#~| msgid "Alaska"
-#~ msgctxt "board4_0|"
-#~ msgid "Slaskie"
-#~ msgstr "Alaska"
-
-#~ msgctxt "board13_0|"
-#~ msgid "Districts of Australia"
-#~ msgstr "Australian alueet"
-
-#~ msgctxt "board14_0|"
-#~ msgid "Districts of China"
-#~ msgstr "Kiinan alueet"
+#~ msgctxt "board15_3|"
+#~ msgid "Southern Scotland"
+#~ msgstr "Etelä-Skotlanti"
 
 #~ msgctxt "board5_0|"
 #~ msgid "Districts of Turkey"
@@ -26691,217 +26526,17 @@ msgstr "Käynnistä"
 #~ msgid "Districts of Turkey"
 #~ msgstr "Turkin alueet"
 
-#, fuzzy
-#~| msgctxt "Warning|"
-#~| msgid "and"
-#~ msgctxt "board5_2|"
-#~ msgid "Van"
-#~ msgstr "ja"
-
-#, fuzzy
-#~| msgctxt "board5_0|"
-#~| msgid "France"
-#~ msgctxt "board5_2|"
-#~ msgid "Tunceli"
-#~ msgstr "Ranska"
-
-#, fuzzy
-#~| msgctxt "board9_0|"
-#~| msgid "Malaysia"
-#~ msgctxt "board5_2|"
-#~ msgid "Malatya"
-#~ msgstr "Malesia"
-
-#, fuzzy
-#~| msgctxt "DialogConfig|"
-#~| msgid "Slovak"
-#~ msgctxt "board5_2|"
-#~ msgid "Yalova"
-#~ msgstr "Slovakki"
-
-#, fuzzy
-#~| msgctxt "DialogConfig|"
-#~| msgid "Danish"
-#~ msgctxt "board5_2|"
-#~ msgid "Manisa"
-#~ msgstr "Tanska"
-
-#, fuzzy
-#~| msgctxt "board1|"
-#~| msgid "Italy"
-#~ msgctxt "board5_2|"
-#~ msgid "Antalya"
-#~ msgstr "Italia"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Ankara"
-#~ msgstr "Ankara"
-
-#~ msgctxt "board12_0|"
-#~ msgid "States of India"
-#~ msgstr "Intian osavaltiot"
-
-#~ msgctxt "board10_1|"
-#~ msgid "United States of America"
-#~ msgstr "Yhdysvallat"
-
-#, fuzzy
-#~| msgctxt "board9_0|"
-#~| msgid "North Korea"
-#~ msgctxt "board10_1|"
-#~ msgid "North Dakota"
-#~ msgstr "Pohjois-Korea"
-
-#, fuzzy
-#~| msgctxt "board9_0|"
-#~| msgid "South Korea"
-#~ msgctxt "board10_1|"
-#~ msgid "South Dakota"
-#~ msgstr "Etelä-Korea"
-
-#, fuzzy
-#~| msgctxt "category_colors|"
-#~| msgid "Colors"
-#~ msgctxt "board10_1|"
-#~ msgid "Colorado"
-#~ msgstr "Värit"
-
-#, fuzzy
-#~| msgctxt "board1|"
-#~| msgid "Mexico"
-#~ msgctxt "board10_1|"
-#~ msgid "New Mexico"
-#~ msgstr "Meksiko"
-
-#, fuzzy
-#~| msgctxt "board2_0|"
-#~| msgid "Alaska"
-#~ msgctxt "board10_1|"
-#~ msgid "Alaska"
-#~ msgstr "Alaska"
-
-#, fuzzy
-#~| msgctxt "board10_0|"
-#~| msgid "Hawaii"
-#~ msgctxt "board10_1|"
-#~ msgid "Hawaii"
-#~ msgstr "Havaiji"
-
-#, fuzzy
-#~| msgctxt "board7_0|"
-#~| msgid "Tunisia"
-#~ msgctxt "board10_1|"
-#~ msgid "Louisiana"
-#~ msgstr "Tunisia"
-
-#, fuzzy
-#~| msgctxt "board9_0|"
-#~| msgid "India"
-#~ msgctxt "board10_1|"
-#~ msgid "Indiana"
-#~ msgstr "Intia"
-
-#, fuzzy
-#~| msgctxt "board2_0|"
-#~| msgid "North America"
-#~ msgctxt "board10_1|"
-#~ msgid "North Carolina"
-#~ msgstr "Pohjois-Amerikka"
-
-#, fuzzy
-#~| msgctxt "board8_0|"
-#~| msgid "South Africa"
-#~ msgctxt "board10_1|"
-#~ msgid "South Carolina"
-#~ msgstr "Etelä-Afrikka"
-
-#, fuzzy
-#~| msgctxt "board9_0|"
-#~| msgid "Asia|Georgia"
-#~ msgctxt "board10_1|"
-#~ msgid "Georgia"
-#~ msgstr "Aasia|Georgia"
-
-#, fuzzy
-#~| msgctxt "Calendar|"
-#~| msgid "Friday"
-#~ msgctxt "board10_1|"
-#~ msgid "Florida"
-#~ msgstr "perjantai"
-
-#, fuzzy
-#~| msgctxt "board5_0|"
-#~| msgid "Ireland"
-#~ msgctxt "board10_1|"
-#~ msgid "Maryland"
-#~ msgstr "Irlanti"
-
-#, fuzzy
-#~| msgctxt "board6_0|"
-#~| msgid "Ukraine"
-#~ msgctxt "board10_1|"
-#~ msgid "Maine"
-#~ msgstr "Ukraina"
-
-#, fuzzy
-#~| msgctxt "board10_0|"
-#~| msgid "Cook Islands"
-#~ msgctxt "board10_1|"
-#~ msgid "Rhode Island"
-#~ msgstr "Cookinsaaret"
-
-#, fuzzy
-#~| msgctxt "board10_0|"
-#~| msgid "Indonesia"
-#~ msgctxt "board14_0|"
-#~ msgid "Indonesia"
-#~ msgstr "Indonesia"
-
-#, fuzzy
-#~| msgctxt "board10_0|"
-#~| msgid "Northern Mariana Islands"
-#~ msgctxt "board14_0|"
+#~ msgctxt "board10_0|"
 #~ msgid "Northern Mariana Islands"
 #~ msgstr "Pohjois-Mariaanit"
 
-#, fuzzy
-#~| msgctxt "board10_0|"
-#~| msgid "American Samoa"
-#~ msgctxt "board14_0|"
+#~ msgctxt "board10_0|"
 #~ msgid "American Samoa"
 #~ msgstr "Amerikan Samoa"
 
 #~ msgctxt "board10_0|"
 #~ msgid "Australia"
 #~ msgstr "Australia"
-
-#~ msgctxt "board9_0|"
-#~ msgid "Asia"
-#~ msgstr "Aasia"
-
-#~ msgctxt "board9_0|"
-#~ msgid "Russia"
-#~ msgstr "Venäjä"
-
-#~ msgctxt "board9_0|"
-#~ msgid "Japan"
-#~ msgstr "Japani"
-
-#~ msgctxt "board9_0|"
-#~ msgid "Indonesia"
-#~ msgstr "Indonesia"
-
-#~ msgctxt "board8_0|"
-#~ msgid "Swaziland"
-#~ msgstr "Swazimaa"
-
-#~ msgctxt "board2_0|"
-#~ msgid "Alaska"
-#~ msgstr "Alaska"
-
-#~ msgctxt "board2_0|"
-#~ msgid "Iceland"
-#~ msgstr "Islanti"
 
 #~ msgctxt "board3_1|"
 #~ msgid "Central America"
@@ -26963,61 +26598,21 @@ msgstr "Käynnistä"
 #~ msgid "Bahamas"
 #~ msgstr "Bahama"
 
-#~ msgctxt "Dataset|"
-#~ msgid "433 days"
-#~ msgstr "433 päivää"
+#~ msgctxt "board9_0|"
+#~ msgid "Asia"
+#~ msgstr "Aasia"
 
-#~ msgctxt "Dataset|"
-#~ msgid "88 days"
-#~ msgstr "88 päivää"
+#~ msgctxt "board9_0|"
+#~ msgid "Russia"
+#~ msgstr "Venäjä"
 
-#~ msgctxt "Dataset|"
-#~ msgid "107 days"
-#~ msgstr "107 päivää"
+#~ msgctxt "board9_0|"
+#~ msgid "Japan"
+#~ msgstr "Japani"
 
-#~ msgctxt "Dataset|"
-#~ msgid "225 days"
-#~ msgstr "225 päivää"
-
-#~ msgctxt "Dataset|"
-#~ msgid "116 days"
-#~ msgstr "116 päivää"
-
-#~ msgctxt "Dataset|"
-#~ msgid "100 days"
-#~ msgstr "100 päivää"
-
-#~ msgctxt "Dataset|"
-#~ msgid "687 days"
-#~ msgstr "687 päivää"
-
-#~ msgctxt "Dataset|"
-#~ msgid "1 year"
-#~ msgstr "1 vuoden"
-
-#~ msgctxt "Dataset|"
-#~ msgid "24 years"
-#~ msgstr "24 vuotta"
-
-#~ msgctxt "Dataset|"
-#~ msgid "68 years"
-#~ msgstr "68 vuotta"
-
-#~ msgctxt "Dataset|"
-#~ msgid "84 years"
-#~ msgstr "84 vuotta"
-
-#~ msgctxt "Dataset|"
-#~ msgid "165 years"
-#~ msgstr "165 vuotta"
-
-#~ msgctxt "Dataset|"
-#~ msgid "3 years"
-#~ msgstr "3 vuotta"
-
-#~ msgctxt "Dataset|"
-#~ msgid "100 years"
-#~ msgstr "100 vuotta"
+#~ msgctxt "board9_0|"
+#~ msgid "Indonesia"
+#~ msgstr "Indonesia"
 
 #~ msgctxt "ActivityInfo|"
 #~ msgid "Gnumch Equality"
@@ -27027,202 +26622,36 @@ msgstr "Käynnistä"
 #~ msgid "Image Name"
 #~ msgstr "Kuvan nimi"
 
-#, fuzzy
-#~| msgctxt "board5_0|"
-#~| msgid "Denmark"
-#~ msgctxt "board6_0|"
-#~ msgid "Telemark"
-#~ msgstr "Tanska"
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Knowing alphabets"
+#~ msgstr "Aakkosten tuntemus"
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Use the ARROW keys"
+#~ msgstr "Käytä NUOLInäppäimiä"
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Select an instruction from the instruction area by pressing SPACE."
+#~ msgstr "Valitse ohjealueelta ohje painamalla VÄLILYÖNTIÄ."
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Press DELETE."
+#~ msgstr "Paina DEL."
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Press SPACE to select it."
+#~ msgstr "Valitse se painamalla VÄLILYÖNTIÄ."
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Press ENTER or RETURN."
+#~ msgstr "Paina ENTER tai RETURN."
 
 #, fuzzy
-#~| msgctxt "Lang|"
-#~| msgid "plant"
-#~ msgctxt "board6_0|"
-#~ msgid "Oppland"
-#~ msgstr "kasvi"
-
-#, fuzzy
-#~| msgctxt "board6_0|"
-#~| msgid "Poland"
-#~ msgctxt "board6_0|"
-#~ msgid "Hordaland"
-#~ msgstr "Puola"
-
-#~ msgctxt "board6_0|"
-#~ msgid "Troms"
-#~ msgstr "Tromssa"
-
-#, fuzzy
-#~| msgctxt "board5_0|"
-#~| msgid "Denmark"
-#~ msgctxt "board6_0|"
-#~ msgid "Hedmark"
-#~ msgstr "Tanska"
-
+#~| msgctxt "ActivityInfo|"
+#~| msgid "Balance Box"
 #~ msgctxt "Data|"
-#~ msgid ""
-#~ "Paul wants to equally share 2 pieces of candy between 2 of his girl "
-#~ "friends. Can you help him? First, place the children in the center, then "
-#~ "drag the pieces of candy to each of them."
-#~ msgstr ""
-#~ "Pasi haluaa jakaa 2 karkkia 2 tyttöystävälleen. Osaatko auttaa häntä? "
-#~ "Aseta ensin lapset keskelle ja vedä sitten karkit jokaiselle."
-
-#, fuzzy
-#~| msgctxt "board0|"
-#~| msgid "Now he wants to give 4 pieces of candy to his friends."
-#~ msgctxt "Data|"
-#~ msgid "Now he wants to give 5 pieces of candy to his friends."
-#~ msgstr "Nyt hän haluaa antaa ystävilleen 4 karkkia."
-
-#, fuzzy
-#~| msgctxt "board0|"
-#~| msgid "Can you now give 6 of Paul's pieces of candy to his friends?"
-#~ msgctxt "Data|"
-#~ msgid "Can you now give 7 of Paul's pieces of candy to his friends?"
-#~ msgstr "Osaatko nyt jakaa Paulin 6 karkkia hänen ystävilleen?"
-
-#, fuzzy
-#~| msgctxt "board0|"
-#~| msgid "Now he wants to give 4 pieces of candy to his friends."
-#~ msgctxt "Data|"
-#~ msgid "He wants to give 8 more pieces of candy to his friends."
-#~ msgstr "Nyt hän haluaa antaa ystävilleen 4 karkkia."
-
-#, fuzzy
-#~| msgctxt "board5|"
-#~| msgid ""
-#~| "Bob wants to give 5 pieces of candy to his friends: two boys and one "
-#~| "girl, his girlfriend already has one candy. Can you help him equally "
-#~| "split the pieces of candy so that each friend will have the same amount "
-#~| "of pieces of candy?"
-#~ msgctxt "Data|"
-#~ msgid ""
-#~ "Bob wants to give 3 pieces of candy to his girl friends. Can you help him "
-#~ "equally split the pieces of candy so that each friend will have the same "
-#~ "amount?"
-#~ msgstr ""
-#~ "Pekka haluaa antaa 5 karkkia ystävilleen: kahdelle pojalle ja yhdelle "
-#~ "tytölle, joista tytöllä on jo yksi karkki. Osaatko auttaa häntä jakamaan "
-#~ "karkit tasan niin, että kullakin on yhtä monta karkkia?Pekka haluaa antaa "
-#~ "5 karkkia ystävilleen: kahdelle pojalle ja yhdelle tytölle, joista "
-#~ "tytöllä on jo yksi karkki. Osaatko auttaa häntä jakamaan karkit tasan "
-#~ "niin, että kullakin on yhtä monta karkkia?"
-
-#, fuzzy
-#~| msgctxt "board5|"
-#~| msgid ""
-#~| "Harry wants to equally share 8 pieces of candy between his friends: one "
-#~| "boy and two girls. Place the children in center, then drag the pieces of "
-#~| "candy to each of them so that each of them has an equal number of pieces "
-#~| "of candy."
-#~ msgctxt "Data|"
-#~ msgid ""
-#~ "Harry wants to equally share 8 pieces of candy between his friends: 1 boy "
-#~ "and 2 girls. Place the children in the center, then drag the pieces of "
-#~ "candy so that each of them has an equal number of it."
-#~ msgstr ""
-#~ "Harri haluaa jakaa 8 karkkia ystävilleen: yhdelle tytölle ja kahdelle "
-#~ "pojalle. Aseta ensin lapset keskelle ja vedä sitten karkit kullekin niin "
-#~ "että jokainen saa yhtä monta karkkia."
-
-#, fuzzy
-#~| msgctxt "board5|"
-#~| msgid "Can you now give 6 of Harry's pieces of candy to his friends?"
-#~ msgctxt "Data|"
-#~ msgid "Can you now give 8 of Harry's pieces of candy to his friends?"
-#~ msgstr "Osaatko nyt antaa Harrin 6 karkkia hänen ystävilleen?"
-
-#~ msgctxt "Data|"
-#~ msgid ""
-#~ "Harry is left with 12 pieces of candy, can you share them between his "
-#~ "friends?"
-#~ msgstr ""
-#~ "Harrilla on jäljellä 12 karkkia: osaatko jakaa ne hänen ystävilleen?"
-
-#, fuzzy
-#~| msgctxt "board2|"
-#~| msgid ""
-#~| "Alice wants to equally share 3 pieces of candy between 3 of her friends: "
-#~| "one girl and two boys. Can you help her? First, place the children in "
-#~| "the center, then drag the pieces of candy to each of them."
-#~ msgctxt "Data|"
-#~ msgid ""
-#~ "Alice wants to equally share 4 pieces of candy between 4 of her girl "
-#~ "friends. Can you help her? First, place the children in the center, then "
-#~ "drag the pieces of candy to each of them."
-#~ msgstr ""
-#~ "Liisa haluaa jakaa 3 karkkia tasan 3 kaverilleen: yhdelle tytölle ja "
-#~ "kahdelle pojalle. Osaatko auttaa häntä? Aseta ensin lapset keskelle ja "
-#~ "vedä sitten karkit kullekin."
-
-#, fuzzy
-#~| msgctxt "board4|"
-#~| msgid ""
-#~| "Charles wants to share his 8 pieces of candy with 3 of his friends: one "
-#~| "boy and two girls. Can he split the pieces of candy equally?"
-#~ msgctxt "Data|"
-#~ msgid ""
-#~ "Charles wants to share his 6 pieces of candy with 2 of his girl friends. "
-#~ "Can he split the pieces of candy equally?"
-#~ msgstr ""
-#~ "Kalle haluaa jakaa 8 karkkia 3 ystävälleen: yhdelle pojalle ja kahdelle "
-#~ "tytölle. Voiko hän jakaa karkit tasan?Kalle haluaa jakaa 8 karkkia 3 "
-#~ "ystävälleen: yhdelle pojalle ja kahdelle tytölle. Voiko hän jakaa karkit "
-#~ "tasan?"
-
-#, fuzzy
-#~| msgctxt "board4|"
-#~| msgid ""
-#~| "Jason's father gave him 14 pieces of candy to share with his friends: "
-#~| "two boys and three girls. Help him give the pieces of candy to his "
-#~| "friends!"
-#~ msgctxt "Data|"
-#~ msgid ""
-#~ "Jason's father gave him 17 pieces of candy to share with his friends: 2 "
-#~ "boys and 2 girls. Help him give the pieces of candy to his friends."
-#~ msgstr ""
-#~ "Jaakon isä antoi hänelle 14 karkkia jaettavaksi ystävilleen: kahdelle "
-#~ "pojalle ja kolmelle tytölle. Auta häntä antamaan karkit ystävilleen!"
-#~ "Jaakon isä antoi hänelle 14 karkkia jaettavaksi ystävilleen: kahdelle "
-#~ "pojalle ja kolmelle tytölle. Auta häntä antamaan karkit ystävilleen!"
-
-#, fuzzy
-#~| msgctxt "board1|"
-#~| msgid ""
-#~| "George wants to equally share 3 pieces of candy between 2 of his "
-#~| "friends: one girl and one boy. Can he equally split the pieces of candy "
-#~| "between his friends? First, place the children in center, then drag the "
-#~| "pieces of candy to each of them. Be careful, a rest will remain!"
-#~ msgctxt "Data|"
-#~ msgid ""
-#~ "George wants to equally share 14 pieces of candy between 4 of his "
-#~ "friends: 2 girls and 2 boys. Can he equally split the pieces of candy "
-#~ "between his friends? First, place the children in center, then drag the "
-#~ "pieces of candy to each of them. Be careful."
-#~ msgstr ""
-#~ "Jukka haluaa jakaa 3 karkkia 2 ystävälleen: tytölle ja pojalle. Voiko hän "
-#~ "jakaa karkit tasan ystäviensä kesken? Aseta ensin lapset keskelle ja vedä "
-#~ "sitten karkit kullekin. Varo: jotakin jää jäljelle!"
-
-#, fuzzy
-#~| msgctxt "board1|"
-#~| msgid ""
-#~| "Maria wants to equally share 5 pieces of candy between 3 of her friends: "
-#~| "one girl and two boys. Can she equally split the pieces of candy between "
-#~| "her friends? First, place the children in center, then drag the pieces "
-#~| "of candy to each of them. Be careful, a rest will remain!"
-#~ msgctxt "Data|"
-#~ msgid ""
-#~ "Maria wants to equally share 23 pieces of candy between 5 of her friends: "
-#~ "3 girls and 2 boys. Can she equally split the pieces of candy between her "
-#~ "friends? First, place the children in center, then drag the pieces of "
-#~ "candy to each of them. Be careful, a rest will remain."
-#~ msgstr ""
-#~ "Maija haluaa jakaa 5 karkkia tasan 3 ystävälleen: yhdelle tytölle ja "
-#~ "kahdelle pojalle. Voiko hän jakaa karkit tasan ystäviensä kesken? Aseta "
-#~ "ensin lapset keskelle ja vedä sitten karkit kullekin. Varo: jotakin jää "
-#~ "jäljelle!"
+#~ msgid "Balance up to 5."
+#~ msgstr "Tasapainolaatikko"
 
 #~ msgctxt "Data|"
 #~ msgid "He wants to give 7 more pieces of candy to his friends."
@@ -27265,6 +26694,22 @@ msgstr "Käynnistä"
 #~ "Jouko haluaa jakaa 10 karkkia 3 ystävälleen: yhdelle pojalle ja kahdelle "
 #~ "tytölle. Voiko hän jakaa karkit tasan ystäviensä kesken? Aseta ensin "
 #~ "lapset keskelle ja vedä sitten karkit kullekin."
+
+#, fuzzy
+#~| msgctxt "board2|"
+#~| msgid ""
+#~| "Alice wants to equally share 3 pieces of candy between 3 of her friends: "
+#~| "one girl and two boys. Can you help her? First, place the children in "
+#~| "the center, then drag the pieces of candy to each of them."
+#~ msgctxt "Data|"
+#~ msgid ""
+#~ "Alice wants to equally share 4 pieces of candy between 4 of her girl "
+#~ "friends. Can you help her? First, place the children in the center, then "
+#~ "drag the pieces of candy to each of them."
+#~ msgstr ""
+#~ "Liisa haluaa jakaa 3 karkkia tasan 3 kaverilleen: yhdelle tytölle ja "
+#~ "kahdelle pojalle. Osaatko auttaa häntä? Aseta ensin lapset keskelle ja "
+#~ "vedä sitten karkit kullekin."
 
 #, fuzzy
 #~| msgctxt "board2|"
@@ -27329,6 +26774,45 @@ msgstr "Käynnistä"
 #~ "karkit tasan ystävilleen?"
 
 #, fuzzy
+#~| msgctxt "board0|"
+#~| msgid "Now he wants to give 4 pieces of candy to his friends."
+#~ msgctxt "Data|"
+#~ msgid "He wants to give 8 more pieces of candy to his friends."
+#~ msgstr "Nyt hän haluaa antaa ystävilleen 4 karkkia."
+
+#, fuzzy
+#~| msgctxt "board5|"
+#~| msgid "Can you now give 6 of Harry's pieces of candy to his friends?"
+#~ msgctxt "Data|"
+#~ msgid "Can you now give 8 of Harry's pieces of candy to his friends?"
+#~ msgstr "Osaatko nyt antaa Harrin 6 karkkia hänen ystävilleen?"
+
+#~ msgctxt "Data|"
+#~ msgid ""
+#~ "Harry is left with 12 pieces of candy, can you share them between his "
+#~ "friends?"
+#~ msgstr ""
+#~ "Harrilla on jäljellä 12 karkkia: osaatko jakaa ne hänen ystävilleen?"
+
+#, fuzzy
+#~| msgctxt "board1|"
+#~| msgid ""
+#~| "George wants to equally share 3 pieces of candy between 2 of his "
+#~| "friends: one girl and one boy. Can he equally split the pieces of candy "
+#~| "between his friends? First, place the children in center, then drag the "
+#~| "pieces of candy to each of them. Be careful, a rest will remain!"
+#~ msgctxt "Data|"
+#~ msgid ""
+#~ "George wants to equally share 14 pieces of candy between 4 of his "
+#~ "friends: 2 girls and 2 boys. Can he equally split the pieces of candy "
+#~ "between his friends? First, place the children in center, then drag the "
+#~ "pieces of candy to each of them. Be careful."
+#~ msgstr ""
+#~ "Jukka haluaa jakaa 3 karkkia 2 ystävälleen: tytölle ja pojalle. Voiko hän "
+#~ "jakaa karkit tasan ystäviensä kesken? Aseta ensin lapset keskelle ja vedä "
+#~ "sitten karkit kullekin. Varo: jotakin jää jäljelle!"
+
+#, fuzzy
 #~| msgctxt "board1|"
 #~| msgid ""
 #~| "Maria wants to equally share 5 pieces of candy between 3 of her friends: "
@@ -27337,22 +26821,75 @@ msgstr "Käynnistä"
 #~| "of candy to each of them. Be careful, a rest will remain!"
 #~ msgctxt "Data|"
 #~ msgid ""
-#~ "Maria wants to equally share 25 pieces of candy between 5 of her friends: "
-#~ "3 girls and 2 boys. Can she equally split the pieces of candy? First, "
-#~ "place the children in the center, then drag the pieces of candy to each "
-#~ "of them."
+#~ "Maria wants to equally share 23 pieces of candy between 5 of her friends: "
+#~ "3 girls and 2 boys. Can she equally split the pieces of candy between her "
+#~ "friends? First, place the children in center, then drag the pieces of "
+#~ "candy to each of them. Be careful, a rest will remain."
 #~ msgstr ""
 #~ "Maija haluaa jakaa 5 karkkia tasan 3 ystävälleen: yhdelle tytölle ja "
 #~ "kahdelle pojalle. Voiko hän jakaa karkit tasan ystäviensä kesken? Aseta "
 #~ "ensin lapset keskelle ja vedä sitten karkit kullekin. Varo: jotakin jää "
 #~ "jäljelle!"
 
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Balance Box"
-#~ msgctxt "Data|"
-#~ msgid "Balance up to 5."
-#~ msgstr "Tasapainolaatikko"
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Counting skills"
+#~ msgstr "Laskutaidot"
+
+#~ msgctxt "Dataset|"
+#~ msgid "433 days"
+#~ msgstr "433 päivää"
+
+#~ msgctxt "Dataset|"
+#~ msgid "88 days"
+#~ msgstr "88 päivää"
+
+#~ msgctxt "Dataset|"
+#~ msgid "107 days"
+#~ msgstr "107 päivää"
+
+#~ msgctxt "Dataset|"
+#~ msgid "225 days"
+#~ msgstr "225 päivää"
+
+#~ msgctxt "Dataset|"
+#~ msgid "116 days"
+#~ msgstr "116 päivää"
+
+#~ msgctxt "Dataset|"
+#~ msgid "100 days"
+#~ msgstr "100 päivää"
+
+#~ msgctxt "Dataset|"
+#~ msgid "687 days"
+#~ msgstr "687 päivää"
+
+#~ msgctxt "Dataset|"
+#~ msgid "1 year"
+#~ msgstr "1 vuoden"
+
+#~ msgctxt "Dataset|"
+#~ msgid "24 years"
+#~ msgstr "24 vuotta"
+
+#~ msgctxt "Dataset|"
+#~ msgid "68 years"
+#~ msgstr "68 vuotta"
+
+#~ msgctxt "Dataset|"
+#~ msgid "84 years"
+#~ msgstr "84 vuotta"
+
+#~ msgctxt "Dataset|"
+#~ msgid "165 years"
+#~ msgstr "165 vuotta"
+
+#~ msgctxt "Dataset|"
+#~ msgid "3 years"
+#~ msgstr "3 vuotta"
+
+#~ msgctxt "Dataset|"
+#~ msgid "100 years"
+#~ msgstr "100 vuotta"
 
 #~ msgctxt "MagicHat|"
 #~ msgid "−"
@@ -27362,12 +26899,114 @@ msgstr "Käynnistä"
 #~ msgid "+"
 #~ msgstr "+"
 
+#~ msgctxt "ActivityInfo|"
+#~ msgid ""
+#~ "Play with a friend. Take turns to click the line in which you want to "
+#~ "drop a token. You can also use the arrow keys to move the token left or "
+#~ "right, and the down or space key to drop a token. First player to create "
+#~ "a line of 4 tokens wins"
+#~ msgstr ""
+#~ "Pelaa kaverin kanssa. Napauttakaa vuorotellen riviä, jolle haluatte "
+#~ "pudottaa merkin. Merkkiä voi liikuttaa myös nuolinäppäimin ja pudottaa "
+#~ "välilyönti- tai alanuolinäppäimellä. Ensimmäinen neljän merkin rivin "
+#~ "tekevä pelaaja voittaa"
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid ""
+#~ "Play with the computer. Take turns to click the line in which you want to "
+#~ "drop a token. You can also use the arrow keys to move the token left or "
+#~ "right, and the down or space key to drop a token. First player to create "
+#~ "a line of 4 tokens wins"
+#~ msgstr ""
+#~ "Pelaa tietokonetta vastaan. Napsauta vuorollasi riviä, jolle haluat "
+#~ "pudottaa merkin. Merkkiä voi liikuttaa myös nuolinäppäimin ja pudottaa "
+#~ "välilyönti- tai alanuolinäppäimellä. Ensimmäinen neljän merkin rivin "
+#~ "tekevä pelaaja voittaa"
+
 #, fuzzy
 #~| msgctxt "ActivityInfo|"
-#~| msgid "Multiplication"
-#~ msgctxt "ChangeLog|"
-#~ msgid "Multiple dataset"
-#~ msgstr "Kertolasku"
+#~| msgid "Assemble the puzzle"
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Reassemble the shapes"
+#~ msgstr "Kokoa palapeli"
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid ""
+#~ "Navigate the ball to the door. Be careful not to make it fall into the "
+#~ "holes. Numbered-contact buttons in the box need to be touched in the "
+#~ "correct order to unlock the door. You can move the ball by tilting your "
+#~ "mobile device. On desktop platforms use the arrow keys to simulate "
+#~ "tilting.\n"
+#~ "\n"
+#~ "In the <b>configuration dialog</b> you can choose between the default "
+#~ "'Built-in' level set and one that you can define yourself ('User'). A "
+#~ "user-defined level set can be created by choosing the 'user' level set "
+#~ "and start the level editor by clicking on the corresponding button.\n"
+#~ "\n"
+#~ "In the <b>level editor</b> you can create your own levels. Choose one of "
+#~ "the editing tools on the left side to modify the map cells of the "
+#~ "currently active level in the editor:\n"
+#~ "    Cross: Clear a map cell completely\n"
+#~ "    Horizontal Wall: Set/remove a horizontal wall on the lower edge of a "
+#~ "cell\n"
+#~ "    Vertical Wall: Set/remove a vertical wall on the right edge of a "
+#~ "cell\n"
+#~ "    Hole: Set/remove a hole on a cell\n"
+#~ "    Ball: Set the starting position of the ball\n"
+#~ "    Door: Set the door position\n"
+#~ "    Contact: Set/remove a contact button. With the spin-box you can "
+#~ "adjust the value of the contact button. It is not possible to set a value "
+#~ "more than once on a map.\n"
+#~ "All tools (except the clear-tool) toggle their respective target on the "
+#~ "clicked cell: An item can be placed by clicking on an empty cell, and by "
+#~ "clicking again on the same cell with the same tool, you can remove it "
+#~ "again.\n"
+#~ "You can test a modified level by clicking on the 'Test' button on the "
+#~ "right side of the editor view. You can return from testing mode by "
+#~ "clicking on the home-button on the bar or by pressing escape on your "
+#~ "keyboard or the back-button on your mobile device.\n"
+#~ "In the editor you can change the level currently edited by using the "
+#~ "arrow buttons on the bar. Back in the editor you can continue editing the "
+#~ "current level and test it again if needed.\n"
+#~ "When your level is finished you can save it to the user level file by "
+#~ "clicking on the 'Save' button on the right side.\n"
+#~ "To return to the configuration dialog click on the home-button on the bar "
+#~ "or press Escape on your keyboard or the back button on your mobile device."
+#~ msgstr ""
+#~ "Ohjaa pallo ovelle. Varo pudottamasta sitä kuoppiin. Laatikon numeroituja "
+#~ "painikkeita pitää koskettaa oikeassa järjestyksessä, jotta ovi avautuisi. "
+#~ "Palloa voi liikuttaa kallistamalla mobiililaitetta tai työpöytäkoneissa "
+#~ "nuolinäppäimin.\n"
+#~ "\n"
+#~ "<b>Asetusikkunassa</b> voit valita joko ”sisäänrakennetun” tasoston tai "
+#~ "määrittää omasi (”Käyttäjä”). Käyttäjän määrittämän tasoston voi luoda "
+#~ "valitsemalla ensin ”käyttäjän” tasoston ja käynnistämällä sitten "
+#~ "tasomuokkaimen napsauttamalla sen painiketta.\n"
+#~ "\n"
+#~ "<b>Tasomuokkaimessa</b> voit luoda omia tasojasi. Valitse muokkaustyökalu "
+#~ "vasemmalta tehdäksesi muutoksia muokkaimessa näkyvään tasoon:\n"
+#~ "    risti: poista karttasolu kokonaan\n"
+#~ "    vaakaseinä: aseta tai poista vaakaseinä solun alalaidasta\n"
+#~ "    pystyseinä: aseta tai poista pystyseinä solun oikeasta laidasta\n"
+#~ "    kuoppa: aseta tai poista solun kuoppa\n"
+#~ "    pallo: aseta pallon alkusijainti\n"
+#~ "    ovi: aseta oven sijainti\n"
+#~ "    painike: aseta tai poista painike. Säätimestä voit muuttaa painikkeen "
+#~ "arvoa. Kutakin arvoa voi käyttää kartassa vain kerran.\n"
+#~ "Kaikki työkalut (paitsi tyhjennystyökalu) toimivat niin, että ne "
+#~ "painettaessa vuoroon asettavat soluun, vuoroon poistavat solusta työkalun "
+#~ "tarkoittaman kohteen.\n"
+#~ "Muokattua tasoa voi kokeilla painamalla ”Kokeile”-painiketta muokkaimen "
+#~ "oikeasta laidasta. Kokeilutilasta voi palata työkalurivin Koti-"
+#~ "painiketta, näppäimistön Esc-näppäintä tai mobiililaitteen "
+#~ "kotipainiketta.\n"
+#~ "Muokkaimessa muokattavaa tasoa voi vaihtaa työkalurivin "
+#~ "nuolipainikkeista. Muokkaimeen palattaessa voi jatkaa valitun tason "
+#~ "muokkausta ja kokeilla sitä taas uudelleen.\n"
+#~ "Kun taso on valmis, voit tallentaa sen käyttäjän tiedostoon painamalla "
+#~ "Tallenna-painiketta (oikealla).\n"
+#~ "Asetusikkunaan voi palata työkalurivin Koti-painikkeella, näppäimistön "
+#~ "Esc-näppäimellä tai mobiililaitteen kotipainikkeella."
 
 #~ msgctxt "Balancebox|"
 #~ msgid ""
@@ -27379,53 +27018,48 @@ msgstr "Käynnistä"
 #~ "olemassa!<br/> Voit joko luoda käyttäjän tasoja käynnistämällä muokkaimen "
 #~ "tai valita sisäänrakennetun tasojoukon."
 
-#~ msgctxt "Admin|"
-#~ msgid "empty"
-#~ msgstr "tyhjä"
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Read the instructions and select the correct date on the calendar"
+#~ msgstr "Lue ohjeet ja valitse oikea päivämäärä kalenterista"
 
-#~ msgctxt "Guesscount|"
-#~ msgid "Select your mode"
+#~ msgctxt "calendar_dataset|"
+#~ msgid "What day of week is the 4th of given month?"
+#~ msgstr "Mikä viikonpäivä on annetun kuun 4. päivä?"
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid ""
+#~ "A letter is spoken. Click on the matching letter in the main area. You "
+#~ "can listen to the letter again, by clicking on the mouth icon in the "
+#~ "bottom box."
+#~ msgstr ""
+#~ "Kuulet lausutun kirjaimen. Napsauta vastaavaa kirjainta ruudussa. Voit "
+#~ "kuulla saman kirjaimen uudestaan napsauttamalla suun kuvaa alareunassa."
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid ""
+#~ "Set the clock to the given time, in the time-units shown (hours:minutes "
+#~ "or hours:minutes:seconds). Drag the different arrows, to make the "
+#~ "respective time unit go up or down."
+#~ msgstr ""
+#~ "Aseta kello annettuun aikaan (voi olla joko tunteja:minuutteja tai "
+#~ "tunteja:minuutteja:sekunteja). Kun vedät nuolia, vastaava aikayksikkö "
+#~ "kasvaa tai pienenee."
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Mixing color of paint"
+#~ msgstr "Värin sekoittaminen"
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Mix the primary colors to match to the given color"
+#~ msgstr "Sekoita päävärejä saadaksesi niistä sama annettu väri."
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Images from http://openclipart.org"
+#~ msgstr "Kuvat: http://openclipart.org/"
+
+#~ msgctxt "DigitalElectricity|"
+#~ msgid "Select your Mode"
 #~ msgstr "Valitse tila"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Tux has come back from fishing on his boat. Bring the electrical system "
-#~ "back up so he can have light in his home. "
-#~ msgstr ""
-#~ "Tux on palannut veneellään kalasta. Palauta sähköjärjestelmä kuntoon, "
-#~ "jotta hän saa kotiinsa valot.Tux on palannut veneellään kalasta. Palauta "
-#~ "sähköjärjestelmä kuntoon, jotta hän saa kotiinsa valot."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Mental calculation, arithmetic equality, unit conversion"
-#~ msgstr "Päässälaskua, aritmeettinen yhtäsuuruus, yksikköjen muunto"
-
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Connect the dots to draw numbers from 0 to 9"
-#~ msgctxt "Data|"
-#~ msgid "Nubmers up to 6."
-#~ msgstr "Piirrä numerot 0:sta 9:ään yhdistämällä pisteet"
-
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid ""
-#~| "Place three respective marks in any horizontal, vertical, or diagonal "
-#~| "row to win the game"
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Place three marks in any horizontal, vertical, or diagonal row to win the "
-#~ "game"
-#~ msgstr ""
-#~ "Pelin voittaa sijoittamalla kolme samaa merkkiä riviin mihin tahansa "
-#~ "suuntaan – vaakaan, pystyyn tai vinoon"
-
-#, fuzzy
-#~| msgctxt "braille_alphabets|"
-#~| msgid "Now it's a little bit harder without the braille map."
-#~ msgctxt "braille_alphabets|"
-#~ msgid "Now it's a little bit harder without the reference"
-#~ msgstr "Ilman Braille-merkkikarttaa tämä on vähän vaikeampi."
 
 #~ msgctxt "ActivityInfo|"
 #~ msgid ""
@@ -27459,6 +27093,24 @@ msgstr "Käynnistä"
 #~ "Kolmannella tasolla näytetään satunnainen teksti, ja sinun pitää yhdistää "
 #~ "teksti oikeaan eläimeen. Voit yhdistettyäsi kaikki tekstit eläimiin "
 #~ "oikein!\n"
+
+#~ msgctxt "board2|"
+#~ msgid "Taj Mahal"
+#~ msgstr "Taj Mahal"
+
+#~ msgctxt "board2|"
+#~ msgid ""
+#~ "The Taj Mahal is a white marble mausoleum located on the southern bank of "
+#~ "the Yamuna River in the Indian city of Agra. It was commissioned in 1632 "
+#~ "by the Mughal emperor Shah Jahan reigned to house the tomb of his "
+#~ "favorite wife of three, Mumtaz Mahal."
+#~ msgstr ""
+#~ "Taj Mahal on valkomarmorinen mausoleumi Yamunajoen etelärannalla Agran "
+#~ "kaupungissa Intiassa. Sen rakennetti vuonna 1632 mughalkeisari Shah Jahan "
+#~ "kolmesta vaimostaan eniten suosimalleen Mumtaz Mahalille.Taj Mahal on "
+#~ "valkomarmorinen mausoleumi Yamunajoen etelärannalla Agran kaupungissa "
+#~ "Intiassa. Sen rakennetti vuonna 1632 mughalkeisari Shah Jahan kolmesta "
+#~ "vaimostaan eniten suosimalleen Mumtaz Mahalille."
 
 #~ msgctxt "ActivityInfo|"
 #~ msgid ""
@@ -27498,6 +27150,33 @@ msgstr "Käynnistä"
 #~ msgid "Drag and Drop the items to redraw the whole map"
 #~ msgstr "Piirrä kartta uudelleen vetämällä ja pudottamalla kohteita"
 
+#~ msgctxt "Gletters|"
+#~ msgid "Select your locale"
+#~ msgstr "Valitse kielesi"
+
+#, fuzzy
+#~| msgctxt "GraphColoring|"
+#~| msgid "Select your mode"
+#~ msgctxt "Gletters|"
+#~ msgid "Select Domino mode"
+#~ msgstr "Valitse tila"
+
+#~ msgctxt "GraphColoring|"
+#~ msgid "Colors"
+#~ msgstr "Värit"
+
+#~ msgctxt "GraphColoring|"
+#~ msgid "Shapes"
+#~ msgstr "Kuviot"
+
+#~ msgctxt "Admin|"
+#~ msgid "empty"
+#~ msgstr "tyhjä"
+
+#~ msgctxt "Guesscount|"
+#~ msgid "Select your mode"
+#~ msgstr "Valitse tila"
+
 #~ msgctxt "ActivityInfo|"
 #~ msgid "Numbers from 1 to 1000 for the last level."
 #~ msgstr "Numerot yhdestä tuhanteen viimeisellä tasolla."
@@ -27505,6 +27184,10 @@ msgstr "Käynnistä"
 #~ msgctxt "guessnumber|"
 #~ msgid "Number found!"
 #~ msgstr "Oikea luku löytyi!"
+
+#~ msgctxt "Hangman|"
+#~ msgid "Select your locale"
+#~ msgstr "Valitse kielesi"
 
 #~ msgctxt "board1_0|"
 #~ msgid "Drag and Drop each item onto its name"
@@ -27515,17 +27198,25 @@ msgstr "Käynnistä"
 #~ msgstr "Napsauta oikeaa väriä"
 
 #~ msgctxt "ActivityInfo|"
+#~ msgid "Intro gravity"
+#~ msgstr "Johdatus painovoimaan"
+
+#~ msgctxt "IntroGravity|"
+#~ msgid "Avoid the asteroid and join the space shuttle to win."
+#~ msgstr "Vältä asteroidia ja mene avaruussukkulaan voittaaksesi."
+
+#~ msgctxt "Lang|"
+#~ msgid "Select your locale"
+#~ msgstr "Valitse kielesi"
+
+#~ msgctxt "LetterInWord|"
+#~ msgid "Select your locale"
+#~ msgstr "Valitse maa-asetuksesi"
+
+#~ msgctxt "ActivityInfo|"
 #~ msgid ""
 #~ "Count how many items are under the magic hat after some have got away"
 #~ msgstr "Laske, monta esinettä on taikurin hatun alla, kun osa on poistettu"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Learn subtraction"
-#~ msgstr "Opi vähennyslaskua"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Learn addition"
-#~ msgstr "Opi yhteenlaskua"
 
 #~ msgctxt "ActivityInfo|"
 #~ msgid ""
@@ -27984,6 +27675,69 @@ msgstr "Käynnistä"
 #~ "    Ctrl+S Toimintoryhmien palkki päälle/pois\n"
 #~ "    "
 
+#~ msgctxt "ConfigurationItem|"
+#~ msgid "You have the full version"
+#~ msgstr "Omistat täysversion"
+
+#~ msgctxt "ConfigurationItem|"
+#~ msgid "Buy the full version"
+#~ msgstr "Osta täysversio"
+
+#~ msgctxt "ConfigurationItem|"
+#~ msgid ""
+#~ "On <a href='https://gcompris.net'>https://gcompris.net</a> you will find "
+#~ "the instructions to obtain an activation code."
+#~ msgstr ""
+#~ "Sivulta <a href='https://gcompris.net'>https://gcompris.net</a> löydät "
+#~ "ohjeet aktivointikoodin hankkimiseksi.Sivulta <a href='https://gcompris."
+#~ "net'>https://gcompris.net</a> löydät ohjeet aktivointikoodin "
+#~ "hankkimiseksi."
+
+#~ msgctxt "ConfigurationItem|"
+#~ msgid "Enter your activation code"
+#~ msgstr "Anna aktivointikoodisi"
+
+#~ msgctxt "ConfigurationItem|"
+#~ msgid "Sorry, your code is too old for this version of GCompris"
+#~ msgstr "Koodisi on valitettavasti liian vanha tälle GComprisin versiolle"
+
+#~ msgctxt "ConfigurationItem|"
+#~ msgid "Your code is valid, thanks a lot for your support"
+#~ msgstr "Koodisi on kelvollinen: suuret kiitokset tuestasi"
+
+#~ msgctxt "ConfigurationItem|"
+#~ msgid "Show locked activities"
+#~ msgstr "Näytä lukitut toiminnot"
+
+#~ msgctxt "ConfigurationItem|"
+#~ msgid "Yes"
+#~ msgstr "Kyllä"
+
+#~ msgctxt "ConfigurationItem|"
+#~ msgid "No"
+#~ msgstr "Ei"
+
+#, fuzzy
+#~| msgctxt "main|"
+#~| msgid "The images for several activities are not yet installed."
+#~ msgctxt "ConfigurationItem|"
+#~ msgid "The images for several activities are not yet installed. "
+#~ msgstr "Useiden toimintojen kuvia ei ole vielä asennettu."
+
+#, fuzzy
+#~| msgctxt "main|"
+#~| msgid "The images for several activities are not yet installed."
+#~ msgctxt "ConfigurationItem|"
+#~ msgid "The background music is not yet installed. "
+#~ msgstr "Useiden toimintojen kuvia ei ole vielä asennettu."
+
+#, fuzzy
+#~| msgctxt "ConfigurationItem|"
+#~| msgid "Do you want to download them now?"
+#~ msgctxt "ConfigurationItem|"
+#~ msgid "Do you want to download it now?"
+#~ msgstr "Haluatko ladata ne nyt?"
+
 #~ msgctxt "ActivityInfo|"
 #~ msgid ""
 #~ "Thanks to the Tuxpaint team for providing the following sounds under "
@@ -27996,44 +27750,9 @@ msgstr "Käynnistä"
 #~ "– realrainbow.ogg – käytetään, kun uusi kultajyvä ilmestyy\n"
 #~ "– metalpaint.wav – käytetään uudelleen miksattuna, kun kultajyvä kerätään"
 
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Learn how to control a submarine"
-#~ msgctxt "Data|"
-#~ msgid "Learn how to calculate change when amount paid is up to 10 units."
-#~ msgstr "Opi ohjaamaan sukellusvenettä"
-
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Learn how to control a submarine"
-#~ msgctxt "Data|"
-#~ msgid "Learn how to calculate change when amount paid is up to 100 units."
-#~ msgstr "Opi ohjaamaan sukellusvenettä"
-
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Learn how to control a submarine"
-#~ msgctxt "Data|"
-#~ msgid "Learn how to calculate change when amount paid is up to 1000 units."
-#~ msgstr "Opi ohjaamaan sukellusvenettä"
-
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Learn how to control a submarine"
-#~ msgctxt "Data|"
-#~ msgid "Learn how to pay up to 100 units including cents."
-#~ msgstr "Opi ohjaamaan sukellusvenettä"
-
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Learn how to control a submarine"
-#~ msgctxt "Data|"
-#~ msgid "Learn how to pay up to 1000 units including cents."
-#~ msgstr "Opi ohjaamaan sukellusvenettä"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Can count from 1 to 50."
-#~ msgstr "Osaa laskea 1:stä 50:een."
+#~ msgctxt "MissingLetter|"
+#~ msgid "Select your locale"
+#~ msgstr "Valitse kielesi"
 
 #~ msgctxt "ActivityInfo|"
 #~ msgid ""
@@ -28060,12 +27779,55 @@ msgstr "Käynnistä"
 #~ msgid "Added Bass clef"
 #~ msgstr "Lisätty bassoavain"
 
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "<b>Keyboard Controls:</b><br><br>"
 #~ msgctxt "ActivityInfo|"
-#~ msgid "<b>Keyboard Controls:</b><br>"
-#~ msgstr "<b>Näppäimistöohjaus:</b><br><br>"
+#~ msgid ""
+#~ "Rebuild the displayed train at the top of the screen by dragging the "
+#~ "appropriate carriages and locomotive. Deselect an item by dragging it "
+#~ "down."
+#~ msgstr ""
+#~ "Rakenna näytetty juna uudelleen näytön yläosaan vetämällä sinne sopivat "
+#~ "vaunut ja veturi. Poista valinta vetämällä se takaisin alas.Rakenna "
+#~ "näytetty juna uudelleen näytön yläosaan vetämällä sinne sopivat vaunut ja "
+#~ "veturi. Poista valinta vetämällä se takaisin alas."
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "1. Use arrow keys to move in the answer or sample zone.<br>"
+#~ msgstr "1. Siirry vastauksiin tai näytealueelle nuolinäppäimin.<br>"
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid ""
+#~ "3. Use Space key to swap two wagons or locomotives in answer zone.<br>"
+#~ msgstr ""
+#~ "3. Vaihda vaunut tai veturit keskenään vastausalueella "
+#~ "välilyöntinäppäimellä.<br>3. Vaihda vaunut tai veturit keskenään "
+#~ "vastausalueella välilyöntinäppäimellä.<br>"
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid ""
+#~ "4. Use Space key to add a wagon or locomotive from samples to answer list."
+#~ "<br>"
+#~ msgstr ""
+#~ "4. Lisää vaunu tai veturi näytteistä vastaukseen välilyöntinäppäimellä."
+#~ "<br>4. Lisää vaunu tai veturi näytteistä vastaukseen "
+#~ "välilyöntinäppäimellä.<br>"
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid ""
+#~ "5. Use Delete key to remove a wagon or locomotive from answer zone.<br>"
+#~ msgstr "5. Poista vaunu tai veturi vastausalueelta Del-näppäimellä.<br>"
+
+#~ msgctxt "Readingh|"
+#~ msgid "Select your locale"
+#~ msgstr "Valitse kielesi"
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid ""
+#~ "Tux has come back from fishing on his boat. Bring the electrical system "
+#~ "back up so he can have light in his home. "
+#~ msgstr ""
+#~ "Tux on palannut veneellään kalasta. Palauta sähköjärjestelmä kuntoon, "
+#~ "jotta hän saa kotiinsa valot.Tux on palannut veneellään kalasta. Palauta "
+#~ "sähköjärjestelmä kuntoon, jotta hän saa kotiinsa valot."
 
 #, fuzzy
 #~| msgctxt "ActivityInfo|"
@@ -28125,33 +27887,28 @@ msgstr "Käynnistä"
 #~ "100 = 900), kymmenet (XL = 50 – 10 = 40) ja lopuksi ykköset (IX = 10 – 1 "
 #~ "= 9), mikä desimaalisena kirjoitetaan näin: 3949."
 
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Balance the scales properly"
-#~ msgctxt "Data|"
-#~ msgid "Balance the scales until 5."
-#~ msgstr "Tasapainota vaa'at oikein"
+#~ msgctxt "ScalesboardWeight|"
+#~ msgid ""
+#~ "The kilogram is a unit of mass, a property which corresponds to the "
+#~ "common perception of how \"heavy\" an object is."
+#~ msgstr ""
+#~ "Kilogramma on massan yksikkö. Massa vastaa yleistä käsitystä siitä, "
+#~ "kuinka ”painava” esine on."
+
+#~ msgctxt "ScalesboardWeight|"
+#~ msgid "Take care, you can drop weights on both sides of the scale."
+#~ msgstr "Siirrä painoja tasapainottaaksesi vaa'an"
+
+#~ msgctxt "ScalesboardWeight|"
+#~ msgid "Now you have to guess the weight of the gift."
+#~ msgstr "Nyt sinun on arvattava lahjan paino."
 
 #, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Balance the scales properly"
-#~ msgctxt "Data|"
-#~ msgid "Balance the scales until 10."
-#~ msgstr "Tasapainota vaa'at oikein"
-
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Balance the scales properly"
-#~ msgctxt "Data|"
-#~ msgid "Balance the scales until 20."
-#~ msgstr "Tasapainota vaa'at oikein"
-
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Balance the scales properly"
-#~ msgctxt "Data|"
-#~ msgid "Balance the scales until 50."
-#~ msgstr "Tasapainota vaa'at oikein"
+#~| msgctxt "ScalesboardWeight|"
+#~| msgid "Remember, one kilo ('kg') equals 1000 grams ('g')."
+#~ msgctxt "ScalesboardWeight|"
+#~ msgid "Remember, one kilogram ('kg') equals 1000 grams ('g')."
+#~ msgstr "Muista: yksi kilo (”kg”) on 1000 grammaa (”g”)."
 
 #~ msgctxt "ActivityInfo|"
 #~ msgid ""
@@ -28161,131 +27918,9 @@ msgstr "Käynnistä"
 #~ "Vedä ja pudota painoja tasapainottaaksesi vaa’an ja laskeaksesi painon "
 #~ "paunoina ja unsseina"
 
-#, fuzzy
-#~| msgctxt "board6|"
-#~| msgid ""
-#~| "Help Tux split some pieces of candies to his friends: 9 pieces of "
-#~| "candies to one boy and two girls."
-#~ msgctxt "Data|"
-#~ msgid ""
-#~ "Help Tux split some pieces of candies to his friends: 19 pieces of candy "
-#~ "to four boys and one girl."
-#~ msgstr ""
-#~ "Auta Tuxia jakamaan karkkia ystävilleen: 9 karkkia yhdelle pojalle ja "
-#~ "kahdelle tytölle.Auta Tuxia jakamaan karkkia ystävilleen: 9 karkkia "
-#~ "yhdelle pojalle ja kahdelle tytölle."
-
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Connect the dots to draw numbers from 0 to 9"
-#~ msgctxt "Data|"
-#~ msgid "Select a number on dice up to 3."
-#~ msgstr "Piirrä numerot 0:sta 9:ään yhdistämällä pisteet"
-
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Connect the dots to draw numbers from 0 to 9"
-#~ msgctxt "Data|"
-#~ msgid "Select the numbers 1 and 2."
-#~ msgstr "Piirrä numerot 0:sta 9:ään yhdistämällä pisteet"
-
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Connect the dots to draw numbers from 0 to 9"
-#~ msgctxt "Data|"
-#~ msgid "Select a number on dice up to 4."
-#~ msgstr "Piirrä numerot 0:sta 9:ään yhdistämällä pisteet"
-
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Connect the dots to draw numbers from 0 to 9"
-#~ msgctxt "Data|"
-#~ msgid "Select a number on dice up to 5."
-#~ msgstr "Piirrä numerot 0:sta 9:ään yhdistämällä pisteet"
-
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Connect the dots to draw numbers from 0 to 9"
-#~ msgctxt "Data|"
-#~ msgid "Select a number on dice up to 6."
-#~ msgstr "Piirrä numerot 0:sta 9:ään yhdistämällä pisteet"
-
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Connect the dots to draw numbers from 0 to 9"
-#~ msgctxt "Data|"
-#~ msgid "Select a number on dice up to 7."
-#~ msgstr "Piirrä numerot 0:sta 9:ään yhdistämällä pisteet"
-
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Connect the dots to draw numbers from 0 to 9"
-#~ msgctxt "Data|"
-#~ msgid "Select a number on dice up to 8."
-#~ msgstr "Piirrä numerot 0:sta 9:ään yhdistämällä pisteet"
-
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Connect the dots to draw numbers from 0 to 9"
-#~ msgctxt "Data|"
-#~ msgid "Select a number on dice up to 9."
-#~ msgstr "Piirrä numerot 0:sta 9:ään yhdistämällä pisteet"
-
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Connect the dots to draw numbers from 0 to 9"
-#~ msgctxt "Data|"
-#~ msgid "Select a number on dice from 0 to 9."
-#~ msgstr "Piirrä numerot 0:sta 9:ään yhdistämällä pisteet"
-
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Connect the dots to draw numbers from 0 to 9"
-#~ msgctxt "Data|"
-#~ msgid "Select a number on dominoes up to 4."
-#~ msgstr "Piirrä numerot 0:sta 9:ään yhdistämällä pisteet"
-
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Connect the dots to draw numbers from 0 to 9"
-#~ msgctxt "Data|"
-#~ msgid "Select a number on dominoes up to 5."
-#~ msgstr "Piirrä numerot 0:sta 9:ään yhdistämällä pisteet"
-
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Connect the dots to draw numbers from 0 to 9"
-#~ msgctxt "Data|"
-#~ msgid "Select a number on dominoes up to 6."
-#~ msgstr "Piirrä numerot 0:sta 9:ään yhdistämällä pisteet"
-
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Connect the dots to draw numbers from 0 to 9"
-#~ msgctxt "Data|"
-#~ msgid "Select a number on dominoes up to 7."
-#~ msgstr "Piirrä numerot 0:sta 9:ään yhdistämällä pisteet"
-
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Connect the dots to draw numbers from 0 to 9"
-#~ msgctxt "Data|"
-#~ msgid "Select a number on dominoes up to 8."
-#~ msgstr "Piirrä numerot 0:sta 9:ään yhdistämällä pisteet"
-
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Connect the dots to draw numbers from 0 to 9"
-#~ msgctxt "Data|"
-#~ msgid "Select a number on dominoes up to 9."
-#~ msgstr "Piirrä numerot 0:sta 9:ään yhdistämällä pisteet"
-
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Connect the dots to draw numbers from 0 to 9"
-#~ msgctxt "Data|"
-#~ msgid "Select a number on dominoes from 0 to 9."
-#~ msgstr "Piirrä numerot 0:sta 9:ään yhdistämällä pisteet"
+#~ msgctxt "ScalesboardWeight|"
+#~ msgid "The \"lb\" symbol at the end of a number means pound."
+#~ msgstr "”lb”-merkintä luvun lopussa tarkoittaa paunoja."
 
 #~ msgctxt "Dataset|"
 #~ msgid "How many days make a year on Mercury?"
@@ -28364,432 +27999,6 @@ msgstr "Käynnistä"
 #~ " +: kasvata sukellustason kulmaa\n"
 #~ " -: pienennä sukellustason kulmaa"
 
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Practice addition with a target game"
-#~ msgctxt "Data|"
-#~ msgid "Practice addition on targets with max value 10."
-#~ msgstr "Yhteenlaskua tikkapelin avulla"
-
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Practice addition with a target game"
-#~ msgctxt "Data|"
-#~ msgid "Practice addition on targets with max value 50."
-#~ msgstr "Yhteenlaskua tikkapelin avulla"
-
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Practice addition with a target game"
-#~ msgctxt "Data|"
-#~ msgid "Practice addition on targets with max value 500."
-#~ msgstr "Yhteenlaskua tikkapelin avulla"
-
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Practice addition with a target game"
-#~ msgctxt "Data|"
-#~ msgid "Practice addition on targets with max value 50000."
-#~ msgstr "Yhteenlaskua tikkapelin avulla"
-
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Practice addition with a target game"
-#~ msgctxt "Data|"
-#~ msgid "Practice addition on targets with max value 500000."
-#~ msgstr "Yhteenlaskua tikkapelin avulla"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Set the clock to the given time, in the time-units shown (hours:minutes "
-#~ "or hours:minutes:seconds). Drag the different arrows, to make the "
-#~ "respective time unit go up or down."
-#~ msgstr ""
-#~ "Aseta kello annettuun aikaan (voi olla joko tunteja:minuutteja tai "
-#~ "tunteja:minuutteja:sekunteja). Kun vedät nuolia, vastaava aikayksikkö "
-#~ "kasvaa tai pienenee."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Mixing color of paint"
-#~ msgstr "Värin sekoittaminen"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Mix the primary colors to match to the given color"
-#~ msgstr "Sekoita päävärejä saadaksesi niistä sama annettu väri."
-
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Images from http://openclipart.org"
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Images from https://openclipart.org"
-#~ msgstr "Kuvat: http://openclipart.org/"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Drag and Drop the shapes on their respective targets"
-#~ msgstr "Vedä ja pudota hahmoja oikeille kohdin"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Complete the puzzle by dragging each piece from the set of pieces on the "
-#~ "left, to the matching space in the puzzle."
-#~ msgstr ""
-#~ "Täydennä palapeli vetämällä jokainen vasemmalla olevista palasista "
-#~ "oikealle paikalleen palapelissä."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Read the instructions and select the correct date on the calendar"
-#~ msgstr "Lue ohjeet ja valitse oikea päivämäärä kalenterista"
-
-#~ msgctxt "calendar_dataset|"
-#~ msgid "What day of week is the 4th of given month?"
-#~ msgstr "Mikä viikonpäivä on annetun kuun 4. päivä?"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Navigate the ball to the door. Be careful not to make it fall into the "
-#~ "holes. Numbered-contact buttons in the box need to be touched in the "
-#~ "correct order to unlock the door. You can move the ball by tilting your "
-#~ "mobile device. On desktop platforms use the arrow keys to simulate "
-#~ "tilting.\n"
-#~ "\n"
-#~ "In the <b>configuration dialog</b> you can choose between the default "
-#~ "'Built-in' level set and one that you can define yourself ('User'). A "
-#~ "user-defined level set can be created by choosing the 'user' level set "
-#~ "and start the level editor by clicking on the corresponding button.\n"
-#~ "\n"
-#~ "In the <b>level editor</b> you can create your own levels. Choose one of "
-#~ "the editing tools on the left side to modify the map cells of the "
-#~ "currently active level in the editor:\n"
-#~ "    Cross: Clear a map cell completely\n"
-#~ "    Horizontal Wall: Set/remove a horizontal wall on the lower edge of a "
-#~ "cell\n"
-#~ "    Vertical Wall: Set/remove a vertical wall on the right edge of a "
-#~ "cell\n"
-#~ "    Hole: Set/remove a hole on a cell\n"
-#~ "    Ball: Set the starting position of the ball\n"
-#~ "    Door: Set the door position\n"
-#~ "    Contact: Set/remove a contact button. With the spin-box you can "
-#~ "adjust the value of the contact button. It is not possible to set a value "
-#~ "more than once on a map.\n"
-#~ "All tools (except the clear-tool) toggle their respective target on the "
-#~ "clicked cell: An item can be placed by clicking on an empty cell, and by "
-#~ "clicking again on the same cell with the same tool, you can remove it "
-#~ "again.\n"
-#~ "You can test a modified level by clicking on the 'Test' button on the "
-#~ "right side of the editor view. You can return from testing mode by "
-#~ "clicking on the home-button on the bar or by pressing escape on your "
-#~ "keyboard or the back-button on your mobile device.\n"
-#~ "In the editor you can change the level currently edited by using the "
-#~ "arrow buttons on the bar. Back in the editor you can continue editing the "
-#~ "current level and test it again if needed.\n"
-#~ "When your level is finished you can save it to the user level file by "
-#~ "clicking on the 'Save' button on the right side.\n"
-#~ "To return to the configuration dialog click on the home-button on the bar "
-#~ "or press Escape on your keyboard or the back button on your mobile device."
-#~ msgstr ""
-#~ "Ohjaa pallo ovelle. Varo pudottamasta sitä kuoppiin. Laatikon numeroituja "
-#~ "painikkeita pitää koskettaa oikeassa järjestyksessä, jotta ovi avautuisi. "
-#~ "Palloa voi liikuttaa kallistamalla mobiililaitetta tai työpöytäkoneissa "
-#~ "nuolinäppäimin.\n"
-#~ "\n"
-#~ "<b>Asetusikkunassa</b> voit valita joko ”sisäänrakennetun” tasoston tai "
-#~ "määrittää omasi (”Käyttäjä”). Käyttäjän määrittämän tasoston voi luoda "
-#~ "valitsemalla ensin ”käyttäjän” tasoston ja käynnistämällä sitten "
-#~ "tasomuokkaimen napsauttamalla sen painiketta.\n"
-#~ "\n"
-#~ "<b>Tasomuokkaimessa</b> voit luoda omia tasojasi. Valitse muokkaustyökalu "
-#~ "vasemmalta tehdäksesi muutoksia muokkaimessa näkyvään tasoon:\n"
-#~ "    risti: poista karttasolu kokonaan\n"
-#~ "    vaakaseinä: aseta tai poista vaakaseinä solun alalaidasta\n"
-#~ "    pystyseinä: aseta tai poista pystyseinä solun oikeasta laidasta\n"
-#~ "    kuoppa: aseta tai poista solun kuoppa\n"
-#~ "    pallo: aseta pallon alkusijainti\n"
-#~ "    ovi: aseta oven sijainti\n"
-#~ "    painike: aseta tai poista painike. Säätimestä voit muuttaa painikkeen "
-#~ "arvoa. Kutakin arvoa voi käyttää kartassa vain kerran.\n"
-#~ "Kaikki työkalut (paitsi tyhjennystyökalu) toimivat niin, että ne "
-#~ "painettaessa vuoroon asettavat soluun, vuoroon poistavat solusta työkalun "
-#~ "tarkoittaman kohteen.\n"
-#~ "Muokattua tasoa voi kokeilla painamalla ”Kokeile”-painiketta muokkaimen "
-#~ "oikeasta laidasta. Kokeilutilasta voi palata työkalurivin Koti-"
-#~ "painiketta, näppäimistön Esc-näppäintä tai mobiililaitteen "
-#~ "kotipainiketta.\n"
-#~ "Muokkaimessa muokattavaa tasoa voi vaihtaa työkalurivin "
-#~ "nuolipainikkeista. Muokkaimeen palattaessa voi jatkaa valitun tason "
-#~ "muokkausta ja kokeilla sitä taas uudelleen.\n"
-#~ "Kun taso on valmis, voit tallentaa sen käyttäjän tiedostoon painamalla "
-#~ "Tallenna-painiketta (oikealla).\n"
-#~ "Asetusikkunaan voi palata työkalurivin Koti-painikkeella, näppäimistön "
-#~ "Esc-näppäimellä tai mobiililaitteen kotipainikkeella."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Play with a friend. Take turns to click the line in which you want to "
-#~ "drop a token. You can also use the arrow keys to move the token left or "
-#~ "right, and the down or space key to drop a token. First player to create "
-#~ "a line of 4 tokens wins"
-#~ msgstr ""
-#~ "Pelaa kaverin kanssa. Napauttakaa vuorotellen riviä, jolle haluatte "
-#~ "pudottaa merkin. Merkkiä voi liikuttaa myös nuolinäppäimin ja pudottaa "
-#~ "välilyönti- tai alanuolinäppäimellä. Ensimmäinen neljän merkin rivin "
-#~ "tekevä pelaaja voittaa"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Play with the computer. Take turns to click the line in which you want to "
-#~ "drop a token. You can also use the arrow keys to move the token left or "
-#~ "right, and the down or space key to drop a token. First player to create "
-#~ "a line of 4 tokens wins"
-#~ msgstr ""
-#~ "Pelaa tietokonetta vastaan. Napsauta vuorollasi riviä, jolle haluat "
-#~ "pudottaa merkin. Merkkiä voi liikuttaa myös nuolinäppäimin ja pudottaa "
-#~ "välilyönti- tai alanuolinäppäimellä. Ensimmäinen neljän merkin rivin "
-#~ "tekevä pelaaja voittaa"
-
-#~ msgctxt "Lang|"
-#~ msgid "Select your locale"
-#~ msgstr "Valitse kielesi"
-
-#~ msgctxt "LetterInWord|"
-#~ msgid "Select your locale"
-#~ msgstr "Valitse maa-asetuksesi"
-
-#~ msgctxt "ConfigurationItem|"
-#~ msgid "Yes"
-#~ msgstr "Kyllä"
-
-#~ msgctxt "ConfigurationItem|"
-#~ msgid "No"
-#~ msgstr "Ei"
-
-#, fuzzy
-#~| msgctxt "main|"
-#~| msgid "The images for several activities are not yet installed."
-#~ msgctxt "ConfigurationItem|"
-#~ msgid "The images for several activities are not yet installed. "
-#~ msgstr "Useiden toimintojen kuvia ei ole vielä asennettu."
-
-#, fuzzy
-#~| msgctxt "main|"
-#~| msgid "The images for several activities are not yet installed."
-#~ msgctxt "ConfigurationItem|"
-#~ msgid "The background music is not yet installed. "
-#~ msgstr "Useiden toimintojen kuvia ei ole vielä asennettu."
-
-#, fuzzy
-#~| msgctxt "ConfigurationItem|"
-#~| msgid "Do you want to download them now?"
-#~ msgctxt "ConfigurationItem|"
-#~ msgid "Do you want to download it now?"
-#~ msgstr "Haluatko ladata ne nyt?"
-
-#~ msgctxt "main|"
-#~ msgid ""
-#~ "The images for several activities are not yet installed. Do you want to "
-#~ "download them now?"
-#~ msgstr ""
-#~ "Useiden toimintojen kuvia ei ole vielä asennettu. Haluatko ladata ne nyt?"
-
-#, fuzzy
-#~| msgctxt "ConfigurationItem|"
-#~| msgid "Do you want to download them now?"
-#~ msgctxt "main|"
-#~ msgid "Do you want to download it now?"
-#~ msgstr "Haluatko ladata ne nyt?"
-
-#~ msgctxt "main|"
-#~ msgid "Do you want to download the corresponding sound files now?"
-#~ msgstr "Haluatko nyt ladata uuden kielen äänitiedostot?"
-
-#, fuzzy
-#~| msgctxt "board13_0|"
-#~| msgid "Districts of Australia"
-#~ msgctxt "Data|"
-#~ msgid "Countries of Australia."
-#~ msgstr "Australian alueet"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Rebuild the displayed train at the top of the screen by dragging the "
-#~ "appropriate carriages and locomotive. Deselect an item by dragging it "
-#~ "down."
-#~ msgstr ""
-#~ "Rakenna näytetty juna uudelleen näytön yläosaan vetämällä sinne sopivat "
-#~ "vaunut ja veturi. Poista valinta vetämällä se takaisin alas.Rakenna "
-#~ "näytetty juna uudelleen näytön yläosaan vetämällä sinne sopivat vaunut ja "
-#~ "veturi. Poista valinta vetämällä se takaisin alas."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "The synthesizer original code is https://github.com/vsr83/miniSynth"
-#~ msgstr ""
-#~ "Syntetisaattorin alkuperäiskoodi löytyy osoitteesta https://github.com/"
-#~ "vsr83/miniSynthSyntetisaattorin alkuperäiskoodi löytyy osoitteesta "
-#~ "https://github.com/vsr83/miniSynth"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "<b>Keyboard Controls:</b><br><br>"
-#~ msgstr "<b>Näppäimistöohjaus:</b><br><br>"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "3. Use Space key to swap two wagons or locomotives in answer zone.<br>"
-#~ msgstr ""
-#~ "3. Vaihda vaunut tai veturit keskenään vastausalueella "
-#~ "välilyöntinäppäimellä.<br>3. Vaihda vaunut tai veturit keskenään "
-#~ "vastausalueella välilyöntinäppäimellä.<br>"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "4. Use Space key to add a wagon or locomotive from samples to answer list."
-#~ "<br>"
-#~ msgstr ""
-#~ "4. Lisää vaunu tai veturi näytteistä vastaukseen välilyöntinäppäimellä."
-#~ "<br>4. Lisää vaunu tai veturi näytteistä vastaukseen "
-#~ "välilyöntinäppäimellä.<br>"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "A letter is spoken. Click on the matching letter in the main area. You "
-#~ "can listen to the letter again, by clicking on the mouth icon in the "
-#~ "bottom box."
-#~ msgstr ""
-#~ "Kuulet lausutun kirjaimen. Napsauta vastaavaa kirjainta ruudussa. Voit "
-#~ "kuulla saman kirjaimen uudestaan napsauttamalla suun kuvaa alareunassa."
-
-#~ msgctxt "board2|"
-#~ msgid "Taj Mahal"
-#~ msgstr "Taj Mahal"
-
-#~ msgctxt "board2|"
-#~ msgid ""
-#~ "The Taj Mahal is a white marble mausoleum located on the southern bank of "
-#~ "the Yamuna River in the Indian city of Agra. It was commissioned in 1632 "
-#~ "by the Mughal emperor Shah Jahan reigned to house the tomb of his "
-#~ "favorite wife of three, Mumtaz Mahal."
-#~ msgstr ""
-#~ "Taj Mahal on valkomarmorinen mausoleumi Yamunajoen etelärannalla Agran "
-#~ "kaupungissa Intiassa. Sen rakennetti vuonna 1632 mughalkeisari Shah Jahan "
-#~ "kolmesta vaimostaan eniten suosimalleen Mumtaz Mahalille.Taj Mahal on "
-#~ "valkomarmorinen mausoleumi Yamunajoen etelärannalla Agran kaupungissa "
-#~ "Intiassa. Sen rakennetti vuonna 1632 mughalkeisari Shah Jahan kolmesta "
-#~ "vaimostaan eniten suosimalleen Mumtaz Mahalille."
-
-#~ msgctxt "MissingLetter|"
-#~ msgid "Select your locale"
-#~ msgstr "Valitse kielesi"
-
-#~ msgctxt "ConfigurationItem|"
-#~ msgid "You have the full version"
-#~ msgstr "Omistat täysversion"
-
-#~ msgctxt "ConfigurationItem|"
-#~ msgid "Buy the full version"
-#~ msgstr "Osta täysversio"
-
-#~ msgctxt "ConfigurationItem|"
-#~ msgid ""
-#~ "On <a href='https://gcompris.net'>https://gcompris.net</a> you will find "
-#~ "the instructions to obtain an activation code."
-#~ msgstr ""
-#~ "Sivulta <a href='https://gcompris.net'>https://gcompris.net</a> löydät "
-#~ "ohjeet aktivointikoodin hankkimiseksi.Sivulta <a href='https://gcompris."
-#~ "net'>https://gcompris.net</a> löydät ohjeet aktivointikoodin "
-#~ "hankkimiseksi."
-
-#~ msgctxt "ConfigurationItem|"
-#~ msgid "Enter your activation code"
-#~ msgstr "Anna aktivointikoodisi"
-
-#~ msgctxt "ConfigurationItem|"
-#~ msgid "Sorry, your code is too old for this version of GCompris"
-#~ msgstr "Koodisi on valitettavasti liian vanha tälle GComprisin versiolle"
-
-#~ msgctxt "ConfigurationItem|"
-#~ msgid "Your code is valid, thanks a lot for your support"
-#~ msgstr "Koodisi on kelvollinen: suuret kiitokset tuestasi"
-
-#~ msgctxt "ConfigurationItem|"
-#~ msgid "Show locked activities"
-#~ msgstr "Näytä lukitut toiminnot"
-
-#~ msgctxt "BuyMeOverlay|"
-#~ msgid ""
-#~ "This activity is only available in the full version of GCompris.<br/>On "
-#~ "<a href='https://gcompris.net'>https://gcompris.net</a> you will find the "
-#~ "instructions to obtain an activation code. Then go to the main "
-#~ "configuration dialog to enter the code."
-#~ msgstr ""
-#~ "Tämä toiminto on saatavilla vain GComprisin täydessä versiossa.<br/"
-#~ ">Sivulta <a href='https://gcompris.net/'>https://gcompris.net/</a> löydät "
-#~ "ohjeet aktivointikoodin saamiseksi. Kirjoita koodi sitten "
-#~ "pääasetusikkunaan."
-
-#~ msgctxt "BuyMeOverlayInapp|"
-#~ msgid "This activity is only available in the full version of GCompris."
-#~ msgstr "Tämä toiminto on vain GComprisin täysversiossa."
-
-#~ msgctxt "BuyMeOverlayInapp|"
-#~ msgid "Buy the full version"
-#~ msgstr "Osta täysversio"
-
-#~ msgctxt "DigitalElectricity|"
-#~ msgid "Select your Mode"
-#~ msgstr "Valitse tila"
-
-#~ msgctxt "Gletters|"
-#~ msgid "Select your locale"
-#~ msgstr "Valitse kielesi"
-
-#, fuzzy
-#~| msgctxt "GraphColoring|"
-#~| msgid "Select your mode"
-#~ msgctxt "Gletters|"
-#~ msgid "Select Domino mode"
-#~ msgstr "Valitse tila"
-
-#~ msgctxt "GraphColoring|"
-#~ msgid "Colors"
-#~ msgstr "Värit"
-
-#~ msgctxt "GraphColoring|"
-#~ msgid "Shapes"
-#~ msgstr "Kuviot"
-
-#~ msgctxt "Hangman|"
-#~ msgid "Select your locale"
-#~ msgstr "Valitse kielesi"
-
-#~ msgctxt "Readingh|"
-#~ msgid "Select your locale"
-#~ msgstr "Valitse kielesi"
-
-#~ msgctxt "ScalesboardWeight|"
-#~ msgid ""
-#~ "The kilogram is a unit of mass, a property which corresponds to the "
-#~ "common perception of how \"heavy\" an object is."
-#~ msgstr ""
-#~ "Kilogramma on massan yksikkö. Massa vastaa yleistä käsitystä siitä, "
-#~ "kuinka ”painava” esine on."
-
-#~ msgctxt "ScalesboardWeight|"
-#~ msgid "Take care, you can drop weights on both sides of the scale."
-#~ msgstr "Siirrä painoja tasapainottaaksesi vaa'an"
-
-#~ msgctxt "ScalesboardWeight|"
-#~ msgid "Now you have to guess the weight of the gift."
-#~ msgstr "Nyt sinun on arvattava lahjan paino."
-
-#, fuzzy
-#~| msgctxt "ScalesboardWeight|"
-#~| msgid "Remember, one kilo ('kg') equals 1000 grams ('g')."
-#~ msgctxt "ScalesboardWeight|"
-#~ msgid "Remember, one kilogram ('kg') equals 1000 grams ('g')."
-#~ msgstr "Muista: yksi kilo (”kg”) on 1000 grammaa (”g”)."
-
-#~ msgctxt "ScalesboardWeight|"
-#~ msgid "The \"lb\" symbol at the end of a number means pound."
-#~ msgstr "”lb”-merkintä luvun lopussa tarkoittaa paunoja."
-
 #~ msgctxt "Superbrain|"
 #~ msgid "Colors"
 #~ msgstr "Värit"
@@ -28814,20 +28023,43 @@ msgstr "Käynnistä"
 #~ msgid "Select your mode"
 #~ msgstr "Valitse tila"
 
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Intro gravity"
-#~ msgstr "Johdatus painovoimaan"
+#~ msgctxt "BuyMeOverlay|"
+#~ msgid ""
+#~ "This activity is only available in the full version of GCompris.<br/>On "
+#~ "<a href='https://gcompris.net'>https://gcompris.net</a> you will find the "
+#~ "instructions to obtain an activation code. Then go to the main "
+#~ "configuration dialog to enter the code."
+#~ msgstr ""
+#~ "Tämä toiminto on saatavilla vain GComprisin täydessä versiossa.<br/"
+#~ ">Sivulta <a href='https://gcompris.net/'>https://gcompris.net/</a> löydät "
+#~ "ohjeet aktivointikoodin saamiseksi. Kirjoita koodi sitten "
+#~ "pääasetusikkunaan."
 
-#~ msgctxt "IntroGravity|"
-#~ msgid "Avoid the asteroid and join the space shuttle to win."
-#~ msgstr "Vältä asteroidia ja mene avaruussukkulaan voittaaksesi."
+#~ msgctxt "BuyMeOverlayInapp|"
+#~ msgid "This activity is only available in the full version of GCompris."
+#~ msgstr "Tämä toiminto on vain GComprisin täysversiossa."
+
+#~ msgctxt "BuyMeOverlayInapp|"
+#~ msgid "Buy the full version"
+#~ msgstr "Osta täysversio"
+
+#~ msgctxt "main|"
+#~ msgid ""
+#~ "The images for several activities are not yet installed. Do you want to "
+#~ "download them now?"
+#~ msgstr ""
+#~ "Useiden toimintojen kuvia ei ole vielä asennettu. Haluatko ladata ne nyt?"
 
 #, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Assemble the puzzle"
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Reassemble the shapes"
-#~ msgstr "Kokoa palapeli"
+#~| msgctxt "ConfigurationItem|"
+#~| msgid "Do you want to download them now?"
+#~ msgctxt "main|"
+#~ msgid "Do you want to download it now?"
+#~ msgstr "Haluatko ladata ne nyt?"
+
+#~ msgctxt "main|"
+#~ msgid "Do you want to download the corresponding sound files now?"
+#~ msgstr "Haluatko nyt ladata uuden kielen äänitiedostot?"
 
 #~ msgctxt "Dataset|"
 #~ msgid "How long does it take for Earth to complete one year?"
@@ -28865,6 +28097,10 @@ msgstr "Käynnistä"
 #~ "kimppuun puista.Jaguaarin nimi tulee Amerikan intiaanien sanasta, joka "
 #~ "tarkoittaa ’yhdellä loikalla tappavaa’, koska jaguaarit hyökkäävät "
 #~ "saaliinsa kimppuun puista."
+
+#~ msgctxt "melodies|"
+#~ msgid "German"
+#~ msgstr "Saksa"
 
 #~ msgctxt "PianoOctaveKeyboard|"
 #~ msgid "C#%1"
@@ -28906,47 +28142,153 @@ msgstr "Käynnistä"
 #~ msgid "Bb%1"
 #~ msgstr "Bb%1"
 
-#~ msgctxt "Checkers|"
-#~ msgid "Undo"
-#~ msgstr "Kumoa"
-
-#~ msgctxt "Checkers|"
-#~ msgid "Redo"
-#~ msgstr "Tee uudelleen"
-
-#~ msgctxt "Chess|"
-#~ msgid "Undo"
-#~ msgstr "Kumoa"
-
-#~ msgctxt "Chess|"
-#~ msgid "Redo"
-#~ msgstr "Tee uudelleen"
-
-#, fuzzy
-#~| msgctxt "board5_0|"
-#~| msgid "Germany"
-#~ msgctxt "melodies|"
-#~ msgid "German"
-#~ msgstr "Saksa"
-
-#, fuzzy
-#~| msgctxt "category_numbers|"
-#~| msgid "Numbers"
 #~ msgctxt "Reversecount|"
 #~ msgid "Numbers"
 #~ msgstr "Numerot"
 
-#~ msgctxt "balanceboxeditor|"
-#~ msgid "Error saving %n level(s) to your levels file (%1)"
-#~ msgid_plural "Error saving %n level(s) to your levels file (%1)"
-#~ msgstr[0] "Virhe tallennettaessa %n taso tasojen tiedostoosi (%1)"
-#~ msgstr[1] "Virhe tallennettaessa %n tasoa tasojen tiedostoosi (%1)"
+#~ msgctxt "Reversecount|"
+#~ msgid "Romans"
+#~ msgstr "Roomalaiset"
 
-#~ msgctxt "balanceboxeditor|"
-#~ msgid "Saved %n level(s) to your levels file (%1)"
-#~ msgid_plural "Saved %n level(s) to your levels file (%1)"
-#~ msgstr[0] "Tallennettiin %n taso tasojen tiedostoosi (%1)"
-#~ msgstr[1] "Tallennettiin %n tasoa tasojen tiedostoosi (%1)"
+#~ msgctxt "Dataset|"
+#~ msgid "1000 degrees celsius"
+#~ msgstr "1000 °C"
+
+#~ msgctxt "Dataset|"
+#~ msgid "4500 degrees celsius"
+#~ msgstr "4500 °C"
+
+#~ msgctxt "Dataset|"
+#~ msgid "5505 degrees celsius"
+#~ msgstr "5505 °C"
+
+#~ msgctxt "Dataset|"
+#~ msgid "3638 degrees celsius"
+#~ msgstr "3638 °C"
+
+#~ msgctxt "Dataset|"
+#~ msgid "The maximum temperature on Earth is 58 degrees celsius."
+#~ msgstr "Maapallon ylin lämpötila on 58 °C."
+
+#~ msgctxt "Dataset|"
+#~ msgid "50 degrees celsius"
+#~ msgstr "50 °C"
+
+#~ msgctxt "Dataset|"
+#~ msgid "35 degrees celsius"
+#~ msgstr "35 °C"
+
+#~ msgctxt "Dataset|"
+#~ msgid "427 degrees celsius"
+#~ msgstr "427 °C"
+
+#~ msgctxt "Dataset|"
+#~ msgid "273 degrees celsius"
+#~ msgstr "273 °C"
+
+#~ msgctxt "Dataset|"
+#~ msgid "100 degrees celsius"
+#~ msgstr "100 °C"
+
+#~ msgctxt "Dataset|"
+#~ msgid "20 degrees celsius"
+#~ msgstr "20 °C"
+
+#~ msgctxt "Dataset|"
+#~ msgid "467 degrees celsius"
+#~ msgstr "467 °C"
+
+#~ msgctxt "Dataset|"
+#~ msgid "45 degrees celsius"
+#~ msgstr "45 °C"
+
+#~ msgctxt "Dataset|"
+#~ msgid "The maximum temperature on Mars is 20 degrees celsius."
+#~ msgstr "Marsin ylin lämpötila on 20 °C."
+
+#~ msgctxt "Dataset|"
+#~ msgid "58 degrees celsius"
+#~ msgstr "58 °C"
+
+#~ msgctxt "Dataset|"
+#~ msgid "30 degrees celsius"
+#~ msgstr "30 °C"
+
+#~ msgctxt "Dataset|"
+#~ msgid "60 degrees celsius"
+#~ msgstr "60 °C"
+
+#~ msgctxt "Dataset|"
+#~ msgid "-145 degrees celsius"
+#~ msgstr "–145 °C"
+
+#~ msgctxt "Dataset|"
+#~ msgid "-180 degrees celsius"
+#~ msgstr "–180 °C"
+
+#~ msgctxt "Dataset|"
+#~ msgid "The minimum temperature on Jupiter is -145 degrees celsius."
+#~ msgstr "Jupiterin alin lämpötila on –145 °C."
+
+#~ msgctxt "Dataset|"
+#~ msgid "0 degrees celsius"
+#~ msgstr "0 °C"
+
+#~ msgctxt "Dataset|"
+#~ msgid "-178 degrees celsius"
+#~ msgstr "–178 °C"
+
+#~ msgctxt "Dataset|"
+#~ msgid "-100 degrees celsius"
+#~ msgstr "–100 °C"
+
+#~ msgctxt "Dataset|"
+#~ msgid "-216 degrees celsius"
+#~ msgstr "–216 °C"
+
+#~ msgctxt "Dataset|"
+#~ msgid "-210 degrees celsius"
+#~ msgstr "–210 °C"
+
+#~ msgctxt "Checkers|"
+#~ msgid "Undo"
+#~ msgstr "Kumoa"
+
+#~ msgctxt "Checkers|"
+#~ msgid "Redo"
+#~ msgstr "Tee uudelleen"
+
+#~ msgctxt "Chess|"
+#~ msgid "Undo"
+#~ msgstr "Kumoa"
+
+#~ msgctxt "Chess|"
+#~ msgid "Redo"
+#~ msgstr "Tee uudelleen"
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid ""
+#~ "Two numbers are displayed on the screen. Quickly find the difference "
+#~ "between them and use your computer's keyboard or the on-screen keypad to "
+#~ "type it. You have to be fast and submit the answer before the penguins in "
+#~ "their balloon land!"
+#~ msgstr ""
+#~ "Näytöllä näytetään kaksi lukua. Laske nopeasti niiden erotus ja kirjoita "
+#~ "se näppäimistöllä (erillisellä laitteella tai ruutunäppäimistöllä). Sinun "
+#~ "on oltava nopea ja annettava vastauksesi ennen kuin ilmapallopingviinit "
+#~ "laskeutuvat!"
+
+#~ msgctxt "Categorization|"
+#~ msgid "Instructions and score visible"
+#~ msgstr "Ohjeet ja pisteet näkyvissä"
+
+#~ msgctxt "Categorization|"
+#~ msgid "Instructions visible and score invisible"
+#~ msgstr "Ohjeet näkyvissä ja pisteet piilossa"
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Double click or double tap on the ball to score a goal."
+#~ msgstr "Tee maali kaksoisnapsauttamalla tai -napauttamalla palloa."
 
 #~ msgctxt "ActivityInfo|"
 #~ msgid ""
@@ -29027,22 +28369,6 @@ msgstr "Käynnistä"
 
 #~ msgctxt "ActivityInfo|"
 #~ msgid ""
-#~ "Two numbers are displayed on the screen. Quickly find the difference "
-#~ "between them and use your computer's keyboard or the on-screen keypad to "
-#~ "type it. You have to be fast and submit the answer before the penguins in "
-#~ "their balloon land!"
-#~ msgstr ""
-#~ "Näytöllä näytetään kaksi lukua. Laske nopeasti niiden erotus ja kirjoita "
-#~ "se näppäimistöllä (erillisellä laitteella tai ruutunäppäimistöllä). Sinun "
-#~ "on oltava nopea ja annettava vastauksesi ennen kuin ilmapallopingviinit "
-#~ "laskeutuvat!"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Double click or double tap on the ball to score a goal."
-#~ msgstr "Tee maali kaksoisnapsauttamalla tai -napauttamalla palloa."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
 #~ "The map of Germany comes from Wikipedia and is released under the GNU "
 #~ "Free Documentation License. Olaf Ronneberger and his children Lina and "
 #~ "Julia Ronneberger created the German level."
@@ -29064,33 +28390,17 @@ msgstr "Käynnistä"
 #~ "kuinka monta tähteä hattuun jäi. Syötä vastauksesi alhaalla olevaan "
 #~ "kohtaan."
 
-#~ msgctxt "Categorization|"
-#~ msgid "Instructions and score visible"
-#~ msgstr "Ohjeet ja pisteet näkyvissä"
+#~ msgctxt "category_alphabets|"
+#~ msgid "Place the ALPHABETS to the right and others objects to the left"
+#~ msgstr "Sijoita AAKKOSET oikealle ja kaikki muu vasemmalle"
 
-#~ msgctxt "Categorization|"
-#~ msgid "Instructions visible and score invisible"
-#~ msgstr "Ohjeet näkyvissä ja pisteet piilossa"
-
-#~ msgctxt "ListWidget|"
-#~ msgid "Tools"
-#~ msgstr "Työkalut"
-
-#~ msgctxt "ListWidget|"
-#~ msgid "+"
-#~ msgstr "+"
-
-#~ msgctxt "ListWidget|"
-#~ msgid "-"
-#~ msgstr "−"
-
-#~ msgctxt "IntroMessage|"
-#~ msgid "Let's go"
-#~ msgstr "Aloitetaan"
-
-#~ msgctxt "IntroMessage|"
-#~ msgid "Skip Instruction"
-#~ msgstr "Ohita johdatus"
+#, fuzzy
+#~| msgctxt "ActivityInfo|"
+#~| msgid "Reproduce the tower on the right in the empty space on the left"
+#~ msgctxt "category_tools|"
+#~ msgid "Place the TOOLS to the right and others to the left"
+#~ msgstr ""
+#~ "Tee uudelleen oikealla oleva torni vasemmalla olevaan tyhjään tilaan"
 
 #, fuzzy
 #~| msgctxt "IntroMessage|"
@@ -29103,21 +28413,13 @@ msgstr "Käynnistä"
 #~ msgid "Double click or double tap on the ball to kick it."
 #~ msgstr "Potkaise palloa kaksoisnapsauttamalla tai -napauttamalla sitä."
 
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Reproduce the tower on the right in the empty space on the left"
-#~ msgctxt "category_tools|"
-#~ msgid "Place the TOOLS to the right and others to the left"
-#~ msgstr ""
-#~ "Tee uudelleen oikealla oleva torni vasemmalla olevaan tyhjään tilaan"
+#~ msgctxt "IntroMessage|"
+#~ msgid "Let's go"
+#~ msgstr "Aloitetaan"
 
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Reproduce the tower on the right in the empty space on the left"
-#~ msgctxt "category_alphabets|"
-#~ msgid "Place the ALPHABETS to the right and others objects to the left"
-#~ msgstr ""
-#~ "Tee uudelleen oikealla oleva torni vasemmalla olevaan tyhjään tilaan"
+#~ msgctxt "IntroMessage|"
+#~ msgid "Skip Instruction"
+#~ msgstr "Ohita johdatus"
 
 #~ msgctxt "board6_0|"
 #~ msgid "Czech Republic"
@@ -29307,35 +28609,21 @@ msgstr "Käynnistä"
 #~ msgid "Download the images"
 #~ msgstr "Lataa kuvat"
 
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Read training in a limited time"
+#~ msgstr "Lukemisharjoitus rajoitetussa ajassa"
+
 #~ msgctxt "BuyMeOverlay|"
 #~ msgid "Buy the full version"
 #~ msgstr "Osta täysversio"
 
 #~ msgctxt "ActivityInfo|"
-#~ msgid "Just type on the real or virtual keyboard like in a wordprocessor."
-#~ msgstr ""
-#~ "Kirjoita oikealla tai virtuaalisella näppäimistöllä niin kuin "
-#~ "tekstinkäsittelyohjelmassa."
+#~ msgid "Practice reading by finding the word matching an image"
+#~ msgstr "Harjoittele lukemista löytämällä kuvaa vastaava sana"
 
 #~ msgctxt "ActivityInfo|"
 #~ msgid "Numbers with pairs of dice"
 #~ msgstr "Numerot noppaparilla"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Reading practice"
-#~ msgstr "Lukemisen harjoittelu"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Practice reading by finding the word matching an image"
-#~ msgstr "Harjoittele lukemista löytämällä kuvaa vastaava sana"
-
-#~ msgctxt "ConfigurationItem|"
-#~ msgid "You selected a new locale."
-#~ msgstr "Valitsit uuden kielen."
-
-#~ msgctxt "ConfigurationItem|"
-#~ msgid "Do you want to download the corresponding sound files now?"
-#~ msgstr "Haluatko ladata uuden kielen äänitiedostot nyt?"
 
 #, fuzzy
 #~| msgctxt "board7_3|"
@@ -29344,6 +28632,20 @@ msgstr "Käynnistä"
 #~ msgid "Paul Gauguin, Bedroom in Arles - 1888"
 #~ msgstr "Paul Gauguin, Arearea – 1892"
 
+#, fuzzy
+#~| msgctxt "DialogConfig|"
+#~| msgid "You selected a new locale"
+#~ msgctxt "ConfigurationItem|"
+#~ msgid "You selected a new locale."
+#~ msgstr "Valitsit uuden kielen"
+
+#, fuzzy
+#~| msgctxt "DialogConfig|"
+#~| msgid "Do you want to download the corresponding sound files now?"
+#~ msgctxt "ConfigurationItem|"
+#~ msgid "Do you want to download the corresponding sound files now?"
+#~ msgstr "Haluatko ladata uuden kielen äänitiedostot nyt?"
+
 #~ msgctxt "board17_0|"
 #~ msgid ""
 #~ "Notre Dame de Paris cathedral on the Île de la Cité island in Paris, "
@@ -29351,17 +28653,14 @@ msgstr "Käynnistä"
 #~ msgstr ""
 #~ "Notre Dame de Paris -katedraali Île de la Citén saarella, Pariisi, Ranska"
 
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Addition"
-#~ msgctxt "board4_1|"
-#~ msgid "Aviation"
-#~ msgstr "Yhteenlasku"
+#~ msgctxt "DialogConfig|"
+#~ msgid "Buy the full version"
+#~ msgstr "Osta täysversio"
 
 #, fuzzy
 #~| msgctxt "DialogConfig|"
 #~| msgid "Sounds"
-#~ msgctxt "ConfigurationItem|"
+#~ msgctxt "DialogConfig|"
 #~ msgid "Sounds"
 #~ msgstr "Äänet"
 
@@ -29389,10 +28688,6 @@ msgstr "Käynnistä"
 #~ "X-Qt-Contexts: true\n"
 #~ "X-Generator: Lokalize 1.5\n"
 
-#~ msgctxt "DialogConfig|"
-#~ msgid "Buy the full version"
-#~ msgstr "Osta täysversio"
-
 #~ msgctxt "DownloadDialog|"
 #~ msgid "Download finished"
 #~ msgstr "Lataus valmis"
@@ -29415,6 +28710,10 @@ msgstr "Käynnistä"
 #~ msgctxt "DialogConfig|"
 #~ msgid "English (United States)"
 #~ msgstr "Englanti (Yhdysvallat)"
+
+#~ msgctxt "DialogConfig|"
+#~ msgid "Breton"
+#~ msgstr "Bretoni"
 
 #~ msgctxt "DialogConfig|"
 #~ msgid "Spanish"

@@ -1,13 +1,13 @@
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
 #
-# Stefan Asserhäll <stefan.asserhall@bredband.net>, 2017, 2018, 2019, 2020, 2021, 2022.
+# Stefan Asserhäll <stefan.asserhall@bredband.net>, 2017, 2018, 2019, 2020, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-12-13 00:48+0000\n"
-"PO-Revision-Date: 2022-09-26 20:18+0200\n"
+"POT-Creation-Date: 2022-12-17 02:40+0000\n"
+"PO-Revision-Date: 2021-09-25 10:33+0200\n"
 "Last-Translator: Stefan Asserhäll <stefan.asserhall@bredband.net>\n"
 "Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
 "Language: sv\n"
@@ -221,9 +221,10 @@ msgstr "Kategorisera sakerna i rätt grupp"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "checkers"
 #: activities/checkers/ActivityInfo.qml:18
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "play chess against Tux"
 msgid "play checkers against Tux"
-msgstr "spela dam mot Tux"
+msgstr "spela schack mot Tux"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "checkers_2players"
 #: activities/checkers_2players/ActivityInfo.qml:18
@@ -450,13 +451,13 @@ msgstr "Dra en linje från bollen för att ange sparkens hastighet och riktning.
 #, kde-format
 msgid ""
 "Select the appropriate number of parts as described in the instructions."
-msgstr "Välj lämpligt antal delar enligt beskrivningen i instruktionerna."
+msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "fractions_find"
 #: activities/fractions_find/ActivityInfo.qml:17
 #, kde-format
 msgid "Find the correct numerator and denominator of the represented fraction"
-msgstr "Bestäm den riktiga täljaren och nämnaren för det angivna bråket."
+msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "geo-country"
 #: activities/geo-country/ActivityInfo.qml:22
@@ -675,7 +676,7 @@ msgstr ""
 #, kde-format
 msgid ""
 "Move animals to their homes using a left click or right click on your mouse."
-msgstr "Flytta hem djur genom att använda vänster- eller högerklick med musen."
+msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "leftright"
 #: activities/leftright/ActivityInfo.qml:18

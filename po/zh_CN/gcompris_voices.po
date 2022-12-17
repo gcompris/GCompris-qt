@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-12-13 00:48+0000\n"
-"PO-Revision-Date: 2022-12-13 12:20\n"
+"POT-Creation-Date: 2022-12-17 02:40+0000\n"
+"PO-Revision-Date: 2022-12-13 12:24\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
@@ -14,8 +14,8 @@ msgstr ""
 "X-Crowdin-Project: kdeorg\n"
 "X-Crowdin-Project-ID: 269464\n"
 "X-Crowdin-Language: zh-CN\n"
-"X-Crowdin-File: /kf5-trunk/messages/gcompris/gcompris_voices.pot\n"
-"X-Crowdin-File-ID: 6174\n"
+"X-Crowdin-File: /kf5-stable/messages/gcompris/gcompris_voices.pot\n"
+"X-Crowdin-File-ID: 6241\n"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "advanced_colors"
 #: activities/advanced_colors/ActivityInfo.qml:18
@@ -200,9 +200,10 @@ msgstr "将这些项目归类到正确的组中"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "checkers"
 #: activities/checkers/ActivityInfo.qml:18
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "play chess against Tux"
 msgid "play checkers against Tux"
-msgstr "和 Tux 玩 checkers"
+msgstr "与Tux下棋"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "checkers_2players"
 #: activities/checkers_2players/ActivityInfo.qml:18
@@ -799,9 +800,10 @@ msgstr "点击钱支付。"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "morse_code"
 #: activities/morse_code/ActivityInfo.qml:21
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Learn and practice roman to arabic numerals conversion"
 msgid "Learn and practice the International Morse code"
-msgstr ""
+msgstr "学习和练习罗马数字到阿拉伯数字的转换"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "mosaic"
 #: activities/mosaic/ActivityInfo.qml:18
@@ -1148,3 +1150,6 @@ msgstr "单击构成供水的各种活动元素。然后按下Tux的淋浴按钮
 #, kde-format
 msgid "Type the words on your keyboard before they reach the ground."
 msgstr "在他们落到地面之前，先在键盘上输入单词。"
+
+#~ msgid "play checkers against the computer"
+#~ msgstr "在电脑上玩跳棋"
