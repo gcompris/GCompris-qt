@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2022-12-15 10:39+0100\n"
+"PO-Revision-Date: 2022-12-16 10:56+0100\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -25150,17 +25150,14 @@ msgid "Type the complete word as it falls, before it reaches the ground."
 msgstr "Typ het hele woord terwijl het valt, voor het de grond raakt."
 
 #: core/ChangeLog.qml:30
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "New maps and update of the maps for geography activities"
 msgctxt "ChangeLog|"
 msgid "Map of Spain added for geography activity"
-msgstr "Nieuwe kaarten en de kaarten voor geografische activiteiten bijgewerkt"
+msgstr "Kaart van Spanje toegevoegd voor geografische activiteit"
 
 #: core/ChangeLog.qml:31
 msgctxt "ChangeLog|"
 msgid "Voices added for Ukrainian"
-msgstr ""
+msgstr "Stemmen voor Oekraïens toegevoegd"
 
 #: core/ChangeLog.qml:32
 msgctxt "ChangeLog|"
@@ -25168,6 +25165,8 @@ msgid ""
 "New command-line option to list all the activities and start on a specific "
 "one"
 msgstr ""
+"Nieuwe optie voor de opdrachtregel om een lijst te tonen van alle "
+"activiteiten en een specifieke te starten"
 
 #: core/ChangeLog.qml:33 core/ChangeLog.qml:68 core/ChangeLog.qml:71
 #: core/ChangeLog.qml:77
