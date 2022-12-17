@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-03-19 02:06+0000\n"
-"PO-Revision-Date: 2022-02-17 20:00+0100\n"
+"POT-Creation-Date: 2022-12-17 02:40+0000\n"
+"PO-Revision-Date: 2022-07-02 14:36+0200\n"
 "Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
 "Language-Team: Norwegian Nynorsk <l10n-no@lister.huftis.org>\n"
 "Language: nn\n"
@@ -170,7 +170,7 @@ msgstr ""
 # Merk forskjellig uttale av hòla = bunden form eintal av hòle (= bokmål hulen), og hòla = buden form fleirtal av hòl (= bokmål hullene).
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "bargame"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "bargame_2players"
-#: activities/bargame/ActivityInfo.qml:18
+#: activities/bargame/ActivityInfo.qml:19
 #: activities/bargame_2players/ActivityInfo.qml:18
 #, kde-format
 msgid ""
@@ -230,7 +230,7 @@ msgstr "Kategoriser gjenstandane i rette grupper."
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "checkers"
 #: activities/checkers/ActivityInfo.qml:18
 #, kde-format
-msgid "play checkers against the computer"
+msgid "play checkers against Tux"
 msgstr "Spel dam mot Tux."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "checkers_2players"
@@ -315,6 +315,13 @@ msgstr "Bland rett farge ved å dra lysnivå-markørane på lommelyktene."
 #, kde-format
 msgid "Click on the right color"
 msgstr "Trykk på rett farge."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "comparator"
+#: activities/comparator/ActivityInfo.qml:20
+#, kde-format
+msgid ""
+"Select the correct comparator sign for each pair of numbers in the list."
+msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "crane"
 #: activities/crane/ActivityInfo.qml:23
@@ -450,6 +457,19 @@ msgstr ""
 msgid "Drag a line from the ball to set the speed and direction of your kick."
 msgstr "Dra ei linje frå ballen for å velja fart og skotretning."
 
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "fractions_create"
+#: activities/fractions_create/ActivityInfo.qml:19
+#, kde-format
+msgid ""
+"Select the appropriate number of parts as described in the instructions."
+msgstr ""
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "fractions_find"
+#: activities/fractions_find/ActivityInfo.qml:17
+#, kde-format
+msgid "Find the correct numerator and denominator of the represented fraction"
+msgstr ""
+
 # Er her snakk om regionar, provinsar, fylke og slikt.
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "geo-country"
 #: activities/geo-country/ActivityInfo.qml:22
@@ -552,8 +572,8 @@ msgstr ""
 #, kde-format
 msgid "Find out the number by typing a number from the range proposed."
 msgstr ""
-"Hjelp Tux å komma seg ut av <phoneme alphabet=\"CereProc\" ph=\"h oaa3 l a"
-"\">hòla</phoneme> ved å gjetta det hemmelege talet."
+"Hjelp Tux å komma seg ut av <phoneme alphabet=\"CereProc\" ph=\"h oaa3 l "
+"a\">hòla</phoneme> ved å gjetta det hemmelege talet."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "hangman"
 #: activities/hangman/ActivityInfo.qml:22
@@ -670,6 +690,13 @@ msgstr ""
 "Dra pila for å velja like mange appelsinar som det talet viser til. Dra så "
 "appelsinane til det tomme området. Gjenta til talet på appelsinar svarar til "
 "det viste talet."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "left_right_click"
+#: activities/left_right_click/ActivityInfo.qml:17
+#, kde-format
+msgid ""
+"Move animals to their homes using a left click or right click on your mouse."
+msgstr "Flytt dyra dit dei bur ved å venstreklikka eller høgreklikka med musa."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "leftright"
 #: activities/leftright/ActivityInfo.qml:18
@@ -864,6 +891,12 @@ msgstr "Trykk på pengane for å gje Tux pengar tilbake på kjøpet."
 #, kde-format
 msgid "Click on the money to pay."
 msgstr "Trykk på pengane for å betala."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "morse_code"
+#: activities/morse_code/ActivityInfo.qml:21
+#, kde-format
+msgid "Learn and practice the International Morse code"
+msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "mosaic"
 #: activities/mosaic/ActivityInfo.qml:18
@@ -1182,6 +1215,31 @@ msgstr ""
 #, kde-format
 msgid "Click on the target to launch darts, then count your final score!"
 msgstr "Trykk for å treffa målskiva, og tel til slutt kor mange poeng du fekk."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "tens_complement_find"
+#: activities/tens_complement_find/ActivityInfo.qml:17
+#, kde-format
+msgid ""
+"Create pairs of numbers equal to ten. Select a number in the list, then "
+"select an empty spot of an operation to move the selected number there."
+msgstr ""
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "tens_complement_swap"
+#: activities/tens_complement_swap/ActivityInfo.qml:17
+#, kde-format
+msgid ""
+"Create pairs of numbers equal to ten. Select a number, then select another "
+"number of the same operation to swap their position."
+msgstr ""
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "tens_complement_use"
+#: activities/tens_complement_use/ActivityInfo.qml:17
+#, kde-format
+msgid ""
+"Decompose the operations to include a pair of numbers equal to ten. Select a "
+"number in the list, then select an empty spot of an operation to move the "
+"selected number there."
+msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "tic_tac_toe_2players"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "tic_tac_toe"
