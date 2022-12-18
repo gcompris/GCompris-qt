@@ -3,13 +3,13 @@
 # This file is distributed under the license LGPL version 2.1 or
 # version 3 or later versions approved by the membership of KDE e.V.
 #
-# Yuri Chornoivan <yurchor@ukr.net>, 2017, 2018, 2019, 2020, 2021.
+# Yuri Chornoivan <yurchor@ukr.net>, 2017, 2018, 2019, 2020, 2021, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_voices\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-12-17 02:40+0000\n"
-"PO-Revision-Date: 2021-10-14 19:12+0300\n"
+"PO-Revision-Date: 2022-12-17 21:39+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
 "Language: uk\n"
@@ -231,10 +231,10 @@ msgstr "Розберіть елементи на відповідні групи
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "checkers"
 #: activities/checkers/ActivityInfo.qml:18
-#, fuzzy, kde-format
+#, kde-format
 #| msgid "play chess against Tux"
 msgid "play checkers against Tux"
-msgstr "зіграйте у шахи з Туксом"
+msgstr "зіграйте у шашки з Туксом"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "checkers_2players"
 #: activities/checkers_2players/ActivityInfo.qml:18
@@ -324,7 +324,7 @@ msgstr "Клацніть на правильному кольорі"
 #, kde-format
 msgid ""
 "Select the correct comparator sign for each pair of numbers in the list."
-msgstr ""
+msgstr "Виберіть належний знак порівняння для кожної з пар чисел у списку."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "crane"
 #: activities/crane/ActivityInfo.qml:23
@@ -466,13 +466,13 @@ msgstr ""
 #, kde-format
 msgid ""
 "Select the appropriate number of parts as described in the instructions."
-msgstr ""
+msgstr "Виберіть відповідну кількість частин, як це описано у настановах."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "fractions_find"
 #: activities/fractions_find/ActivityInfo.qml:17
 #, kde-format
 msgid "Find the correct numerator and denominator of the represented fraction"
-msgstr ""
+msgstr "Знайдіть належні чисельник і знаменник відповідного дробу"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "geo-country"
 #: activities/geo-country/ActivityInfo.qml:22
@@ -693,6 +693,8 @@ msgstr ""
 msgid ""
 "Move animals to their homes using a left click or right click on your mouse."
 msgstr ""
+"Розмістіть тварин там, де слід, за допомогою клацання лівою і правою "
+"кнопками миші."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "leftright"
 #: activities/leftright/ActivityInfo.qml:18
@@ -895,12 +897,10 @@ msgstr "Натисніть на зображеннях грошей, які сл
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "morse_code"
 #: activities/morse_code/ActivityInfo.qml:21
-#, fuzzy, kde-format
+#, kde-format
 #| msgid "Learn and practice roman to arabic numerals conversion"
 msgid "Learn and practice the International Morse code"
-msgstr ""
-"Ознайомтеся з правилами та повправляйтеся у перетворенні чисел з римського "
-"запису до арабського, і навпаки."
+msgstr "Вивчайте міжнародну азбуку Морзе та вправляйтеся у ній"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "mosaic"
 #: activities/mosaic/ActivityInfo.qml:18
@@ -1245,6 +1245,8 @@ msgid ""
 "Create pairs of numbers equal to ten. Select a number in the list, then "
 "select an empty spot of an operation to move the selected number there."
 msgstr ""
+"Створіть пари чисел, які разом складають десять. Виберіть число зі списку, "
+"потім виберіть порожнє місце у дії, що пересунути вибране число на це місце."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "tens_complement_swap"
 #: activities/tens_complement_swap/ActivityInfo.qml:17
@@ -1253,6 +1255,8 @@ msgid ""
 "Create pairs of numbers equal to ten. Select a number, then select another "
 "number of the same operation to swap their position."
 msgstr ""
+"Створіть пари чисел, які разом складають десять. Виберіть число, потім "
+"виберіть інше число у тій самій дії, щоб поміняти числа місцями."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "tens_complement_use"
 #: activities/tens_complement_use/ActivityInfo.qml:17
@@ -1262,6 +1266,9 @@ msgid ""
 "number in the list, then select an empty spot of an operation to move the "
 "selected number there."
 msgstr ""
+"Розкладіть дії так, щоб включити пари чисел, які разом складають десять. "
+"Виберіть число зі списку, потім виберіть порожнє місце у дії, що пересунути "
+"вибране число на це місце."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "tic_tac_toe_2players"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "tic_tac_toe"

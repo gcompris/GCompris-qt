@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2022-12-11 20:15+0300\n"
+"PO-Revision-Date: 2022-12-17 18:36+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -18802,7 +18802,7 @@ msgstr ""
 #: activities/menu/ConfigurationItem.qml:307
 msgctxt "ConfigurationItem|"
 msgid "Font selector"
-msgstr "Yazı tipi seçici"
+msgstr "Yazıtipi seçici"
 
 #: activities/menu/ConfigurationItem.qml:312
 msgctxt "ConfigurationItem|"
@@ -18818,12 +18818,12 @@ msgstr "Varsayılan"
 #: activities/menu/ConfigurationItem.qml:341
 msgctxt "ConfigurationItem|"
 msgid "Font Capitalization"
-msgstr "Yazı Tipi Büyük Harf Kullanımı"
+msgstr "Yazıtipi Büyük Harf Yapımı"
 
 #: activities/menu/ConfigurationItem.qml:346
 msgctxt "ConfigurationItem|"
 msgid "Font letter spacing"
-msgstr "Yazı tipi harf aralığı"
+msgstr "Yazıtipi harf boşluklandırması"
 
 #: activities/menu/ConfigurationItem.qml:372
 msgctxt "ConfigurationItem|"
