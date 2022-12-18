@@ -14,8 +14,8 @@ msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2014-12-25 01:10+0000\n"
-"PO-Revision-Date: 2022-12-16 14:33+0100\n"
-"Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
+"PO-Revision-Date: 2022-12-17 16:05+0100\n"
+"Last-Translator: Antoni Bella <antonibella5@yahoo.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
 "MIME-Version: 1.0\n"
@@ -23,7 +23,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Accelerator-Marker: &\n"
-"X-Generator: Lokalize 20.12.0\n"
+"X-Generator: Kate 22.08.3\n"
 "X-Qt-Contexts: true\n"
 
 #. Activity title
@@ -1268,7 +1268,7 @@ msgid ""
 "Play with Tux. Take turns to click the line in which you want to drop a "
 "token. The first player to create a line of 4 tokens wins."
 msgstr ""
-"Jugueu amb el Tux. Per torns, feu clic sobre la línia en la qual afegireu "
+"Jugueu amb en Tux. Per torns, feu clic sobre la línia en la qual afegireu "
 "una fitxa. El primer jugador que creï una línia de 4 fitxes guanya."
 
 #: activities/align4/ActivityInfo.qml:23 activities/bargame/ActivityInfo.qml:26
@@ -1766,8 +1766,7 @@ msgid ""
 "warning box to make it disappear and click on the OK button."
 msgstr ""
 "Crea un bucle de la font de voltatge amb les bateries proporcionades. "
-"Després fes clic al quadre d'avís perquè desaparegui i fes clic al botó "
-"D'acord."
+"Després fes clic al quadre d'avís perquè desaparegui i fes clic al botó «OK»."
 
 # skip-rule: ff-current
 #: activities/analog_electricity/TutorialDataset.qml:133
@@ -4184,7 +4183,7 @@ msgstr ""
 "obligatòria. El jugador sense peces, o que no les pugui moure a causa "
 "d'estar bloquejat, perdrà el joc.\n"
 "Quan alguna peça abasti la primera fila de l'oponent (casa), es convertirà "
-"en un rei, i es caracteritza per a la col·locació d'una peça addicional a la "
+"en un rei, i es caracteritza per la col·locació d'una peça addicional a la "
 "part superior d'aquesta, i adquirirà poders addicionals, incloent-hi la "
 "capacitat de moure i capturar cap enrere. Si hi ha una peça en una diagonal "
 "que un rei pot capturar, aquest podrà moure's qualsevol distància al llarg "
@@ -5457,7 +5456,7 @@ msgid ""
 msgstr ""
 "Seleccioneu un parell de números de la llista. A continuació, seleccioneu el "
 "símbol de comparació correcte per a aquest parell. Quan cada línia contingui "
-"un símbol, seleccioneu el botó D'acord per a validar les respostes."
+"un símbol, seleccioneu el botó «OK» per a validar les respostes."
 
 #: activities/comparator/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
@@ -5466,7 +5465,7 @@ msgid ""
 "lines. Correct the errors, then select the OK button again."
 msgstr ""
 "Si alguna resposta és incorrecta, apareixerà una icona de creu a les línies "
-"corresponents. Corregiu els errors i seleccioneu el botó D'acord de nou."
+"corresponents. Corregiu els errors i seleccioneu el botó «OK» de nou."
 
 #: activities/comparator/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
@@ -6543,7 +6542,7 @@ msgid ""
 msgstr ""
 "El generador de senyals de l'esquerra s'usa per a generar senyals alterns "
 "entre 0 i 1 en un període de temps indicat pres com a entrada. El període de "
-"temps per omissió és d'1 segon, però es pot canviar entre 0,25 i 2 s."
+"temps predeterminat és d'1 segon, però es pot canviar entre 0,25 i 2 s."
 
 #: activities/digital_electricity/TutorialDataset.qml:542
 msgctxt "TutorialDataset|"
@@ -6626,7 +6625,7 @@ msgstr "Dibuixeu els números connectant els punts en l'ordre correcte."
 #: activities/enumerate/ActivityConfig.qml:22
 msgctxt "ActivityConfig|"
 msgid "OK button"
-msgstr "Botó OK (D'acord)"
+msgstr "Botó «OK» (D'acord)"
 
 #: activities/enumerate/ActivityConfig.qml:32
 msgctxt "ActivityConfig|"
@@ -9425,7 +9424,7 @@ msgstr ""
 #: activities/fractions_create/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Create the fractions"
-msgstr "Crear les fraccions"
+msgstr "Crea les fraccions"
 
 #. Help title
 #: activities/fractions_create/ActivityInfo.qml:16
@@ -16097,7 +16096,7 @@ msgstr "Restes amb l'1, 2, 3, 4, 5, 6, 7, 8 i 9."
 #: activities/left_right_click/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Mouse click training"
-msgstr "Entrenar el clic del ratolí"
+msgstr "Entrena el clic del ratolí"
 
 #. Help title
 #: activities/left_right_click/ActivityInfo.qml:16
@@ -18380,7 +18379,7 @@ msgstr "Mida del tipus de lletra"
 #: activities/menu/ConfigurationItem.qml:366
 msgctxt "ConfigurationItem|"
 msgid "Default"
-msgstr "Omissió"
+msgstr "Predeterminat"
 
 #: activities/menu/ConfigurationItem.qml:341
 msgctxt "ConfigurationItem|"
@@ -18400,7 +18399,7 @@ msgstr "Filtre de dificultat:"
 #: activities/menu/ConfigurationItem.qml:664
 msgctxt "ConfigurationItem|"
 msgid "Mixed case (default)"
-msgstr "Combinat (omissió)"
+msgstr "Combinat (predeterminat)"
 
 #: activities/menu/ConfigurationItem.qml:665
 msgctxt "ConfigurationItem|"
@@ -18962,7 +18961,7 @@ msgstr ""
 msgctxt "FirstScreen|"
 msgid "When you are ready, click on Tux and we will converse in Morse code."
 msgstr ""
-"Quan estiguis preparat, fes clic sobre el Tux i conversarem en codi Morse."
+"Quan estiguis preparat, fes clic sobre en Tux i conversarem en codi Morse."
 
 #: activities/morse_code/MorseCode.qml:346
 #, qt-format
@@ -19127,7 +19126,7 @@ msgid ""
 "Play with Tux. First take turns to place nine pieces, and then take turns to "
 "move your pieces."
 msgstr ""
-"Jugueu amb el Tux. En primer lloc feu torns per a posar les nou peces, i "
+"Jugueu amb en Tux. En primer lloc feu torns per a posar les nou peces, i "
 "després feu torns per a moure-les."
 
 #: activities/nine_men_morris/nine_men_morris.js:29
@@ -19639,7 +19638,7 @@ msgstr ""
 #: activities/ordering_numbers/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "Compare numbers."
-msgstr "Comparar els números."
+msgstr "Compara els números."
 
 #. Help prerequisite
 #: activities/ordering_numbers/ActivityInfo.qml:27
@@ -25180,7 +25179,7 @@ msgid ""
 "corresponding lines. To correct the errors, click on the wrong numbers to "
 "remove them and repeat the previous steps."
 msgstr ""
-"Quan totes les línies estiguin completades, premeu el botó D'acord per a "
+"Quan totes les línies estiguin completades, premeu el botó «OK» per a "
 "validar les respostes. Si algunes respostes són incorrectes, apareixerà una "
 "icona de creu a les línies corresponents. Per a corregir els errors, feu "
 "clic en els números incorrectes per a eliminar-los i repetir els passos "
@@ -25253,9 +25252,9 @@ msgstr ""
 "Crea parells de nombres iguals a deu dins de cada parèntesi. Seleccioneu un "
 "nombre i, a continuació, seleccioneu un altre nombre de la mateixa operació "
 "per a intercanviar la seva posició. Quan totes les línies estiguin "
-"completades, premeu el botó D'acord per a validar les respostes. Si algunes "
+"completades, premeu el botó «OK» per a validar les respostes. Si algunes "
 "respostes són incorrectes, apareixerà una icona de creu a les línies "
-"corresponents. Corregiu els errors, després torneu a prémer el botó D'acord."
+"corresponents. Corregiu els errors, després torneu a prémer el botó «OK»."
 
 #: activities/tens_complement_swap/resource/1/Data.qml:36
 msgctxt "Data|"
@@ -25355,13 +25354,13 @@ msgid ""
 "Play with Tux. Take turns to click on the square which you want to mark. The "
 "first player to create a line of 3 marks wins."
 msgstr ""
-"Jugueu amb el Tux. Per torns, feu clic sobre el quadrat que voleu marcar. El "
+"Jugueu amb en Tux. Per torns, feu clic sobre el quadrat que voleu marcar. El "
 "primer jugador que creï una línia de 3 marques guanya."
 
 #: activities/tic_tac_toe/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Tux will play better when you increase the level."
-msgstr "El Tux jugarà millor a mesura que augmenteu el nivell."
+msgstr "En Tux jugarà millor a mesura que augmenteu el nivell."
 
 #. Activity title
 #: activities/tic_tac_toe_2players/ActivityInfo.qml:18
@@ -25383,7 +25382,7 @@ msgstr ""
 #: activities/traffic/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "A sliding-block puzzle game"
-msgstr "Un joc de trencaclosques amb blocs que es desplacen"
+msgstr "Trencaclosques amb blocs que es desplacen"
 
 #. Help title
 #: activities/traffic/ActivityInfo.qml:17
@@ -25582,7 +25581,7 @@ msgstr "Mapa d'Espanya afegit per a l'activitat de geografia"
 #: core/ChangeLog.qml:31
 msgctxt "ChangeLog|"
 msgid "Voices added for Ukrainian"
-msgstr "Veus afegides per a l'Ucraïnès"
+msgstr "Veus afegides per a l'ucraïnès"
 
 #: core/ChangeLog.qml:32
 msgctxt "ChangeLog|"
@@ -26337,7 +26336,7 @@ msgstr "Inicia"
 #: core/LanguageList.qml:34
 msgctxt "LanguageList|"
 msgid "Your system default"
-msgstr "Per omissió del sistema"
+msgstr "Predeterminat del sistema"
 
 #: core/LanguageList.qml:34
 msgctxt "LanguageList|"
@@ -26347,7 +26346,7 @@ msgstr "Idioma del GCompris"
 #: core/main.cpp:162
 msgctxt "QObject|"
 msgid "Run GCompris with the default system cursor."
-msgstr "Executa el GCompris amb el cursor per omissió del sistema."
+msgstr "Executa el GCompris amb el cursor predeterminat del sistema."
 
 #: core/main.cpp:166
 msgctxt "QObject|"
@@ -26377,7 +26376,7 @@ msgstr "Executa el GCompris sense so."
 #: core/main.cpp:185
 msgctxt "QObject|"
 msgid "Disable the kiosk mode (default)."
-msgstr "Inhabilita el mode quiosc (omissió)."
+msgstr "Inhabilita el mode quiosc (predeterminat)."
 
 #: core/main.cpp:188
 msgctxt "QObject|"
