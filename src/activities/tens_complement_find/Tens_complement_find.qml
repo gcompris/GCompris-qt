@@ -71,7 +71,7 @@ ActivityBase {
 
         Item {
             id: numberContainerArea
-            height: layoutArea.height * 0.4
+            height: width * 0.67
             width: (layoutArea.width - background.layoutMargins * 3) * 0.32
             anchors.left: layoutArea.left
             anchors.verticalCenter: answerHolderArea.verticalCenter
@@ -178,8 +178,8 @@ ActivityBase {
                         leftMargin: background.layoutMargins
                         bottomMargin: 0
                     }
-                    height: parent.height * 0.4
-                    width: (parent.width - background.layoutMargins * 3) * 0.32
+                    height: width * 0.67
+                    width: (layoutArea.width - background.layoutMargins * 3) * 0.32
                 }
                 AnchorChanges {
                     target: numberContainer
@@ -217,8 +217,9 @@ ActivityBase {
                         leftMargin: 0
                         bottomMargin: background.layoutMargins
                     }
-                    width: layoutArea.width
-                    height: Math.min(width * 0.4, (layoutArea.height - score.height) * 0.4)
+                    width: Math.min(layoutArea.width - score.width * 2 - background.layoutMargins * 4,
+                                    layoutArea.height * 0.5)
+                    height: width * 0.67
                 }
                 AnchorChanges {
                     target: numberContainer
