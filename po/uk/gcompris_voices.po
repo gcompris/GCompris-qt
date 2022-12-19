@@ -232,7 +232,6 @@ msgstr "Розберіть елементи на відповідні групи
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "checkers"
 #: activities/checkers/ActivityInfo.qml:18
 #, kde-format
-#| msgid "play chess against Tux"
 msgid "play checkers against Tux"
 msgstr "зіграйте у шашки з Туксом"
 
@@ -898,7 +897,6 @@ msgstr "Натисніть на зображеннях грошей, які сл
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "morse_code"
 #: activities/morse_code/ActivityInfo.qml:21
 #, kde-format
-#| msgid "Learn and practice roman to arabic numerals conversion"
 msgid "Learn and practice the International Morse code"
 msgstr "Вивчайте міжнародну азбуку Морзе та вправляйтеся у ній"
 

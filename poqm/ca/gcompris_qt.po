@@ -1766,8 +1766,7 @@ msgid ""
 "warning box to make it disappear and click on the OK button."
 msgstr ""
 "Crea un bucle de la font de voltatge amb les bateries proporcionades. "
-"Després fes clic al quadre d'avís perquè desaparegui i fes clic al botó "
-"«OK»."
+"Després fes clic al quadre d'avís perquè desaparegui i fes clic al botó «OK»."
 
 # skip-rule: ff-current
 #: activities/analog_electricity/TutorialDataset.qml:133

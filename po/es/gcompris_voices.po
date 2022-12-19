@@ -228,7 +228,6 @@ msgstr "Categoriza los elementos en el grupo correcto"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "checkers"
 #: activities/checkers/ActivityInfo.qml:18
 #, kde-format
-#| msgid "play chess against Tux"
 msgid "play checkers against Tux"
 msgstr "Juega a las damas contra Tux"
 
@@ -905,7 +904,6 @@ msgstr "Pulsa sobre el dinero para pagar."
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "morse_code"
 #: activities/morse_code/ActivityInfo.qml:21
 #, kde-format
-#| msgid "Learn and practice roman to arabic numerals conversion"
 msgid "Learn and practice the International Morse code"
 msgstr "Aprende y practica el código morse internacional"
 

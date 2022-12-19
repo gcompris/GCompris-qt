@@ -21717,13 +21717,11 @@ msgstr ""
 #, qt-format
 msgctxt "Readingh|"
 msgid ""
-"<font color=\"#373737\">Check if the word<br/></font><b><font "
-"color=\"#315AAA\">%1</font></b><br/><font color=\"#373737\">is displayed</"
-"font>"
+"<font color=\"#373737\">Check if the word<br/></font><b><font color=\"#315AAA"
+"\">%1</font></b><br/><font color=\"#373737\">is displayed</font>"
 msgstr ""
-"<font color=\"#373737\">Comprova si es mostra<br/></font><font "
-"color=\"#373737\">la paraula</font><br/><b><font color=\"#315AAA\">%1</"
-"font></b>"
+"<font color=\"#373737\">Comprova si es mostra<br/></font><font color="
+"\"#373737\">la paraula</font><br/><b><font color=\"#315AAA\">%1</font></b>"
 
 #: activities/readingh/Readingh.qml:197
 msgctxt "Readingh|"
@@ -24519,8 +24517,8 @@ msgstr "%1%"
 msgctxt "QuizScreen|"
 msgid "Your final score is: <font color=\"#3bb0de\">%1%</font>.<br><br>%2"
 msgstr ""
-"La vostra puntuació final és de: <font color=\"#3bb0de\">%1%</font>."
-"<br><br>%2"
+"La vostra puntuació final és de: <font color=\"#3bb0de\">%1%</font>.<br><br>"
+"%2"
 
 #: activities/solar_system/QuizScreen.qml:274
 msgctxt "QuizScreen|"
@@ -25949,9 +25947,8 @@ msgstr ""
 ">Francesc Vilches &lt;francesc.vilches AT gmail DOT com&gt; (2007-2008)<br/"
 ">i Antoni Bella &lt;antonibella5 AT yahoo DOT com&gt; (2015-2022).<br /"
 "><b>Atenció</b>: Cal ajuda per a la seva traducció al valencià. Volem que "
-"esta siga correcta i potser voldreu que les veus també estiguen en "
-"valencià. Escriviu-nos a la llista de correu &lt;kde-i18n-ca@kde.org&gt; i "
-"en parlarem."
+"esta siga correcta i potser voldreu que les veus també estiguen en valencià. "
+"Escriviu-nos a la llista de correu &lt;kde-i18n-ca@kde.org&gt; i en parlarem."
 
 #: core/DialogAbout.qml:55
 #, qt-format

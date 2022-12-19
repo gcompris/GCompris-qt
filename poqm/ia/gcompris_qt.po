@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2022-04-11 10:44+0200\n"
+"PO-Revision-Date: 2022-12-18 22:30+0100\n"
 "Last-Translator: giovanni <g.sora@tiscali.it>\n"
 "Language-Team: Interlingua <kde-i18n-doc@kde.org>\n"
 "Language: ia\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Qt-Contexts: true\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 20.04.2\n"
+"X-Generator: Lokalize 22.12.0\n"
 
 #. Activity title
 #: activities/advanced_colors/ActivityInfo.qml:15
@@ -3803,17 +3803,11 @@ msgid "Do you really want to undo all the moves?"
 msgstr ""
 
 #: activities/chess/Chess.qml:124
-#, fuzzy
-#| msgctxt "balanceboxeditor|"
-#| msgid "Yes"
 msgctxt "Chess|"
 msgid "Yes"
 msgstr "Si"
 
 #: activities/chess/Chess.qml:125
-#, fuzzy
-#| msgctxt "balanceboxeditor|"
-#| msgid "No"
 msgctxt "Chess|"
 msgid "No"
 msgstr "No"
@@ -4749,12 +4743,9 @@ msgstr "Continua"
 
 #. Activity title
 #: activities/comparator/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Compare numbers."
 msgctxt "ActivityInfo|"
 msgid "Compare numbers"
-msgstr "Comparar numeros"
+msgstr "Compara numeros"
 
 #. Help title
 #: activities/comparator/ActivityInfo.qml:19
@@ -4764,12 +4755,9 @@ msgstr ""
 
 #. Help goal
 #: activities/comparator/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn additions with decimal numbers."
 msgctxt "ActivityInfo|"
 msgid "Learn how to compare number values."
-msgstr "Apprende additiones con numeros decimal."
+msgstr "Apprende como comparar valores de numero."
 
 #. Help manual
 #: activities/comparator/ActivityInfo.qml:26
@@ -4803,12 +4791,9 @@ msgid "Space: if a symbol button is selected, enter this symbol"
 msgstr ""
 
 #: activities/comparator/ActivityInfo.qml:32
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Enter: validate your answer"
 msgctxt "ActivityInfo|"
 msgid "Return: validate the answers"
-msgstr "Enter: valida tu responsa"
+msgstr "Retorna: valida le responsas"
 
 #: activities/comparator/ActivityInfo.qml:33
 msgctxt "ActivityInfo|"
@@ -8076,12 +8061,9 @@ msgid ""
 msgstr ""
 
 #: activities/fractions_create/fractions_create.js:79
-#, fuzzy
-#| msgctxt "colors|"
-#| msgid "Find the green duck"
 msgctxt "fractions_create|"
 msgid "Find the represented fraction."
-msgstr "Trova le anate verde"
+msgstr "Trova le fraction representate"
 
 #: activities/fractions_create/resource/1/Data.qml:9
 msgctxt "Data|"
@@ -8112,12 +8094,9 @@ msgstr ""
 
 #: activities/fractions_create/resource/1/Data.qml:36
 #: activities/fractions_create/resource/3/Data.qml:61
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Select the butterfly of the correct color."
 msgctxt "Data|"
 msgid "Select one-quarter of the pie."
-msgstr "Selige le papilion del color correcte."
+msgstr "Selige un quarto de torta"
 
 #: activities/fractions_create/resource/1/Data.qml:42
 #: activities/fractions_create/resource/3/Data.qml:67
@@ -8172,41 +8151,29 @@ msgstr ""
 #: activities/fractions_create/resource/4/Data.qml:17
 #: activities/fractions_create/resource/4/Data.qml:23
 #: activities/fractions_create/resource/4/Data.qml:29
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Select the butterfly of the correct color."
 msgctxt "Data|"
 msgid "Select one half of the rectangle."
-msgstr "Selige le papilion del color correcte."
+msgstr "Selige un medietate del rectangulo."
 
 #: activities/fractions_create/resource/2/Data.qml:24
 #: activities/fractions_create/resource/4/Data.qml:35
 #: activities/fractions_create/resource/4/Data.qml:49
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Select the butterfly of the correct color."
 msgctxt "Data|"
 msgid "Select one-third of the rectangle."
-msgstr "Selige le papilion del color correcte."
+msgstr "Selige un tertio del rectangulo."
 
 #: activities/fractions_create/resource/2/Data.qml:30
 #: activities/fractions_create/resource/4/Data.qml:41
 #: activities/fractions_create/resource/4/Data.qml:55
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Select the butterfly of the correct color."
 msgctxt "Data|"
 msgid "Select two-thirds of the rectangle."
-msgstr "Selige le papilion del color correcte."
+msgstr "Selige duo tertios del rectangulo."
 
 #: activities/fractions_create/resource/2/Data.qml:36
 #: activities/fractions_create/resource/4/Data.qml:61
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Select the butterfly of the correct color."
 msgctxt "Data|"
 msgid "Select one-quarter of the rectangle."
-msgstr "Selige le papilion del color correcte."
+msgstr "Selige un quarto del rectangulo."
 
 #: activities/fractions_create/resource/2/Data.qml:42
 #: activities/fractions_create/resource/4/Data.qml:67
@@ -8245,12 +8212,9 @@ msgid "Non-simplified fractions with a pie."
 msgstr ""
 
 #: activities/fractions_create/resource/3/Data.qml:73
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Select the butterfly of the correct color."
 msgctxt "Data|"
 msgid "Select three-fifths of the pie."
-msgstr "Selige le papilion del color correcte."
+msgstr "Selige ltres quintos del torta."
 
 #: activities/fractions_create/resource/4/Data.qml:9
 msgctxt "Data|"
@@ -8258,54 +8222,39 @@ msgid "Non-simplified fractions with a rectangle."
 msgstr ""
 
 #: activities/fractions_create/resource/4/Data.qml:73
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Select the butterfly of the correct color."
 msgctxt "Data|"
 msgid "Select three-fifths of the rectangle."
-msgstr "Selige le papilion del color correcte."
+msgstr "Selige tres quintos del rectangulo."
 
 #: activities/fractions_create/resource/5/Data.qml:9
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Numbers with dice"
 msgctxt "Data|"
 msgid "Decimal numbers with a pie."
-msgstr "Numeros con datos"
+msgstr "Numeros decimal conun torta."
 
 #: activities/fractions_create/resource/5/Data.qml:18
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 0.5 pie."
-msgstr "Selectionate"
+msgstr "Selectiona torta de 0.5."
 
 #: activities/fractions_create/resource/5/Data.qml:24
 msgctxt "Data|"
 msgid "Select 0.25 pie."
-msgstr ""
+msgstr "Selectiona 0.25 pie"
 
 #: activities/fractions_create/resource/5/Data.qml:30
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 0.4 pie."
-msgstr "Selectionate"
+msgstr "Selectiona tort.a de 0.4"
 
 #: activities/fractions_create/resource/5/Data.qml:36
 msgctxt "Data|"
 msgid "Select 0.75 pie."
-msgstr ""
+msgstr "Selectiona 0.75 pie."
 
 #: activities/fractions_create/resource/5/Data.qml:42
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 0.8 pie."
-msgstr "Selectionate"
+msgstr "Selectiona torta de 0.8."
 
 #: activities/fractions_create/resource/5/Data.qml:50
 msgctxt "Data|"
@@ -8336,27 +8285,27 @@ msgstr ""
 #: activities/fractions_create/resource/6/Data.qml:18
 msgctxt "Data|"
 msgid "Select 0.5 rectangle."
-msgstr ""
+msgstr "Selectiona rectangulo de 0.5"
 
 #: activities/fractions_create/resource/6/Data.qml:24
 msgctxt "Data|"
 msgid "Select 0.25 rectangle."
-msgstr ""
+msgstr "Selectiona rectangulo de 0.25"
 
 #: activities/fractions_create/resource/6/Data.qml:30
 msgctxt "Data|"
 msgid "Select 0.4 rectangle."
-msgstr ""
+msgstr "Selectiona rectangulo de 0.4"
 
 #: activities/fractions_create/resource/6/Data.qml:36
 msgctxt "Data|"
 msgid "Select 0.75 rectangle."
-msgstr ""
+msgstr "Selectiona rectangulo de 0.75"
 
 #: activities/fractions_create/resource/6/Data.qml:42
 msgctxt "Data|"
 msgid "Select 0.8 rectangle."
-msgstr ""
+msgstr "Selectiona rectangulo de 0.8"
 
 #: activities/fractions_create/resource/6/Data.qml:50
 msgctxt "Data|"
@@ -8429,12 +8378,9 @@ msgstr ""
 
 #. Activity title
 #: activities/fractions_find/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "colors|"
-#| msgid "Find the brown duck"
 msgctxt "ActivityInfo|"
 msgid "Find the fractions"
-msgstr "Trova le anate brun"
+msgstr "Trova le frctiones"
 
 #. Help title
 #: activities/fractions_find/ActivityInfo.qml:16
@@ -9718,7 +9664,7 @@ msgstr ""
 #: activities/geo-country/resource/board/board18_0.qml:29
 msgctxt "board18_0|"
 msgid "Madrid"
-msgstr ""
+msgstr "Madrid"
 
 #. Autonomous communities of Spain: Galicia
 #: activities/geo-country/resource/board/board18_0.qml:36
@@ -9740,30 +9686,21 @@ msgstr ""
 
 #. Autonomous communities of Spain: Catalonia
 #: activities/geo-country/resource/board/board18_0.qml:57
-#, fuzzy
-#| msgctxt "board14_0|"
-#| msgid "New Caledonia"
 msgctxt "board18_0|"
 msgid "Catalonia"
-msgstr "Nove Caledonia"
+msgstr "Catalonia"
 
 #. Autonomous communities of Spain: Aragon
 #: activities/geo-country/resource/board/board18_0.qml:64
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Hexagon"
 msgctxt "board18_0|"
 msgid "Aragon"
-msgstr "Hexagono"
+msgstr "Aragon"
 
 #. Autonomous communities of Spain: Valencia
 #: activities/geo-country/resource/board/board18_0.qml:71
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Calendar"
 msgctxt "board18_0|"
 msgid "Valencia"
-msgstr "Calendario"
+msgstr "Valencia"
 
 #. Autonomous communities of Spain: Murcia
 #: activities/geo-country/resource/board/board18_0.qml:78
@@ -9785,9 +9722,6 @@ msgstr ""
 
 #. Autonomous communities of Spain: La Rioja
 #: activities/geo-country/resource/board/board18_0.qml:99
-#, fuzzy
-#| msgctxt "board3_0|"
-#| msgid "La Rioja"
 msgctxt "board18_0|"
 msgid "La Rioja"
 msgstr "La Rioja"
@@ -9800,12 +9734,9 @@ msgstr ""
 
 #. Autonomous communities of Spain: Navarre
 #: activities/geo-country/resource/board/board18_0.qml:113
-#, fuzzy
-#| msgctxt "board5|"
-#| msgid "Navajo"
 msgctxt "board18_0|"
 msgid "Navarre"
-msgstr "Navajo"
+msgstr "Navarre"
 
 #. Autonomous communities of Spain: Extremadura
 #: activities/geo-country/resource/board/board18_0.qml:120
@@ -9815,27 +9746,21 @@ msgstr ""
 
 #. Autonomous communities of Spain: Canary Islands
 #: activities/geo-country/resource/board/board18_0.qml:127
-#, fuzzy
-#| msgctxt "board14_0|"
-#| msgid "Mariana Islands"
 msgctxt "board18_0|"
 msgid "Canary Islands"
-msgstr "Insulas Mariana"
+msgstr "Insulas Canarias"
 
 #. Autonomous communities of Spain: Balearic Islands
 #: activities/geo-country/resource/board/board18_0.qml:134
-#, fuzzy
-#| msgctxt "board14_0|"
-#| msgid "Mariana Islands"
 msgctxt "board18_0|"
 msgid "Balearic Islands"
-msgstr "Insulas Mariana"
+msgstr "Insulas Balearic"
 
 #. Autonomous communities of Spain: Ceuta
 #: activities/geo-country/resource/board/board18_0.qml:141
 msgctxt "board18_0|"
 msgid "Ceuta"
-msgstr ""
+msgstr "Ceuta"
 
 #. Autonomous communities of Spain: Melilla
 #: activities/geo-country/resource/board/board18_0.qml:148
@@ -11842,7 +11767,7 @@ msgstr ""
 #: activities/geography/resource/board/board5_0.qml:73
 msgctxt "board5_0|"
 msgid "Luxembourg"
-msgstr ""
+msgstr "Luxembourg"
 
 #: activities/geography/resource/board/board5_0.qml:81
 msgctxt "board5_0|"
@@ -11895,9 +11820,6 @@ msgid "Eastern Europe"
 msgstr ""
 
 #: activities/geography/resource/board/board6_0.qml:24
-#, fuzzy
-#| msgctxt "board9_0|"
-#| msgid "Cyprus"
 msgctxt "board6_0|"
 msgid "Cyprus"
 msgstr "Cypro"
@@ -12928,7 +12850,7 @@ msgstr ""
 #, qt-format
 msgctxt "Guesscount|"
 msgid "%1/%2"
-msgstr ""
+msgstr "%1/%2"
 
 #: activities/guesscount/Guesscount.qml:165
 #, qt-format
@@ -16318,7 +16240,7 @@ msgstr ""
 #: activities/memory/math_util.js:15 activities/memory/math_util.js:18
 msgctxt "math_util|"
 msgid "+"
-msgstr ""
+msgstr "+"
 
 #: activities/memory/math_util.js:28
 msgctxt "math_util|"
@@ -17165,12 +17087,10 @@ msgid "When you are ready, click on Tux and we will converse in Morse code."
 msgstr ""
 
 #: activities/morse_code/MorseCode.qml:346
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Maximum value: 10."
+#, qt-format
 msgctxt "MorseCode|"
 msgid "Morse value: %1"
-msgstr "Valor maxime: 10."
+msgstr "Valor Morse: %1"
 
 #: activities/morse_code/MorseCode.qml:347
 #, qt-format
@@ -17179,12 +17099,9 @@ msgid "Alphabet/Numeric value: %1"
 msgstr ""
 
 #: activities/morse_code/resource/1/Data.qml:13
-#, fuzzy
-#| msgctxt "Menu|"
-#| msgid "Letters"
 msgctxt "Data|"
 msgid "Letters."
-msgstr "Litteras"
+msgstr "Litteras."
 
 #: activities/morse_code/resource/1/Data.qml:18
 #: activities/morse_code/resource/1/Data.qml:34
@@ -17211,17 +17128,14 @@ msgstr ""
 #: activities/morse_code/resource/1/Data.qml:44
 #: activities/morse_code/resource/1/Data.qml:60
 #: activities/morse_code/resource/1/Data.qml:76
-#, fuzzy
-#| msgctxt "advanced_colors|"
-#| msgid "Find the coral butterfly"
 msgctxt "Data|"
 msgid "Find the corresponding letter."
-msgstr "Trova le papilion Corallo"
+msgstr "Trova le littera correspondente."
 
 #: activities/morse_code/resource/2/Data.qml:13
 msgctxt "Data|"
 msgid "Digits."
-msgstr ""
+msgstr "Digitos."
 
 #: activities/morse_code/resource/2/Data.qml:23
 #: activities/morse_code/resource/2/Data.qml:39
@@ -17232,20 +17146,14 @@ msgstr ""
 
 #: activities/morse_code/resource/2/Data.qml:28
 #: activities/morse_code/resource/2/Data.qml:44
-#, fuzzy
-#| msgctxt "colors|"
-#| msgid "Find the orange duck"
 msgctxt "Data|"
 msgid "Find the corresponding digit."
-msgstr "Trova le anate orange"
+msgstr "Trova le digito correspondente"
 
 #: activities/morse_code/resource/3/Data.qml:13
-#, fuzzy
-#| msgctxt "Menu|"
-#| msgid "Words"
 msgctxt "Data|"
 msgid "Words."
-msgstr "Parolas"
+msgstr "Parolas."
 
 #: activities/morse_code/resource/3/Data.qml:24
 msgctxt "Data|"
@@ -17467,7 +17375,7 @@ msgstr "Nove Nota:%1"
 #, qt-format
 msgctxt "NoteNames|"
 msgid "%1%"
-msgstr ""
+msgstr "%1%"
 
 #: activities/note_names/NoteNames.qml:453
 msgctxt "NoteNames|"
@@ -18466,7 +18374,7 @@ msgstr ""
 #, qt-format
 msgctxt "BpmMeter|"
 msgid "%1 BPM"
-msgstr ""
+msgstr "%1 BPM"
 
 #. Treble clef and Bass clef are the notations to indicate the pitch of the sound written on it.
 #: activities/piano_composition/KeyOption.qml:47
@@ -21155,7 +21063,7 @@ msgstr ""
 #: activities/solar_system/ActivityConfig.qml:21
 msgctxt "ActivityConfig|"
 msgid "Learning Mode"
-msgstr ""
+msgstr "Modo de apprender"
 
 #: activities/solar_system/ActivityConfig.qml:22
 msgctxt "ActivityConfig|"
@@ -21221,7 +21129,7 @@ msgstr ""
 #: activities/solar_system/Dataset.js:190
 msgctxt "Dataset|"
 msgid "Sixth largest"
-msgstr ""
+msgstr "Le sexte plus grande"
 
 #: activities/solar_system/Dataset.js:19 activities/solar_system/Dataset.js:262
 #: activities/solar_system/Dataset.js:307
@@ -21229,7 +21137,7 @@ msgstr ""
 #: activities/solar_system/Dataset.js:421
 msgctxt "Dataset|"
 msgid "Third largest"
-msgstr ""
+msgstr "Le tertie plus grande"
 
 #: activities/solar_system/Dataset.js:19 activities/solar_system/Dataset.js:262
 #: activities/solar_system/Dataset.js:307
@@ -21244,7 +21152,7 @@ msgstr "Le plus grande"
 #: activities/solar_system/Dataset.js:370
 msgctxt "Dataset|"
 msgid "Seventh largest"
-msgstr ""
+msgstr "Le septime plus grande"
 
 #: activities/solar_system/Dataset.js:24
 msgctxt "Dataset|"
@@ -21324,7 +21232,7 @@ msgstr "15 minutas"
 #: activities/solar_system/Dataset.js:42
 msgctxt "Dataset|"
 msgid "The Sun is as big as:"
-msgstr ""
+msgstr "Le Sol es grande como:"
 
 #: activities/solar_system/Dataset.js:43
 msgctxt "Dataset|"
@@ -21372,7 +21280,7 @@ msgstr ""
 #: activities/solar_system/Dataset.js:391
 msgctxt "Dataset|"
 msgid "Seventh"
-msgstr ""
+msgstr "Septime"
 
 #: activities/solar_system/Dataset.js:58 activities/solar_system/Dataset.js:103
 #: activities/solar_system/Dataset.js:154
@@ -21381,7 +21289,7 @@ msgstr ""
 #: activities/solar_system/Dataset.js:301
 msgctxt "Dataset|"
 msgid "Sixth"
-msgstr ""
+msgstr "Sexte"
 
 #: activities/solar_system/Dataset.js:58 activities/solar_system/Dataset.js:154
 #: activities/solar_system/Dataset.js:205
@@ -21399,7 +21307,7 @@ msgstr "Prime"
 #: activities/solar_system/Dataset.js:391
 msgctxt "Dataset|"
 msgid "Fourth"
-msgstr ""
+msgstr "Quarte"
 
 #: activities/solar_system/Dataset.js:63
 msgctxt "Dataset|"
@@ -21414,17 +21322,17 @@ msgstr "Le plus parve"
 #: activities/solar_system/Dataset.js:64 activities/solar_system/Dataset.js:241
 msgctxt "Dataset|"
 msgid "Second smallest"
-msgstr ""
+msgstr "Le secunde plus parve"
 
 #: activities/solar_system/Dataset.js:64 activities/solar_system/Dataset.js:241
 msgctxt "Dataset|"
 msgid "Third smallest"
-msgstr ""
+msgstr "Le tertie plus parve"
 
 #: activities/solar_system/Dataset.js:64 activities/solar_system/Dataset.js:241
 msgctxt "Dataset|"
 msgid "Fifth smallest"
-msgstr ""
+msgstr "Le quinte plus parve"
 
 #: activities/solar_system/Dataset.js:69
 msgctxt "Dataset|"
@@ -21556,14 +21464,14 @@ msgstr ""
 #: activities/solar_system/Dataset.js:307
 msgctxt "Dataset|"
 msgid "Fifth largest"
-msgstr ""
+msgstr "Le quinte plus grande"
 
 #: activities/solar_system/Dataset.js:115
 #: activities/solar_system/Dataset.js:190
 #: activities/solar_system/Dataset.js:421
 msgctxt "Dataset|"
 msgid "Fourth largest"
-msgstr ""
+msgstr "Le quarte plus grande"
 
 #: activities/solar_system/Dataset.js:120
 msgctxt "Dataset|"
@@ -21662,7 +21570,7 @@ msgstr "Tertie"
 #: activities/solar_system/Dataset.js:391
 msgctxt "Dataset|"
 msgid "Fifth"
-msgstr ""
+msgstr "Quinte"
 
 #: activities/solar_system/Dataset.js:159
 msgctxt "Dataset|"
@@ -21784,7 +21692,7 @@ msgstr ""
 #: activities/solar_system/Dataset.js:217
 msgctxt "Dataset|"
 msgid "The same"
-msgstr ""
+msgstr "Le mesme"
 
 #: activities/solar_system/Dataset.js:217
 msgctxt "Dataset|"
@@ -21794,12 +21702,12 @@ msgstr "Medietate"
 #: activities/solar_system/Dataset.js:217
 msgctxt "Dataset|"
 msgid "Two times"
-msgstr ""
+msgstr "Duo vices"
 
 #: activities/solar_system/Dataset.js:217
 msgctxt "Dataset|"
 msgid "Three times"
-msgstr ""
+msgstr "Tres vices"
 
 #: activities/solar_system/Dataset.js:222
 msgctxt "Dataset|"
@@ -21868,7 +21776,7 @@ msgstr ""
 #: activities/solar_system/Dataset.js:421
 msgctxt "Dataset|"
 msgid "Second largest"
-msgstr ""
+msgstr "Le secunde plus grande"
 
 #: activities/solar_system/Dataset.js:267
 msgctxt "Dataset|"
@@ -21928,7 +21836,7 @@ msgstr "30 annos de Terra"
 #: activities/solar_system/Dataset.js:397
 msgctxt "Dataset|"
 msgid "1 Earth year"
-msgstr ""
+msgstr "1 anno de Terra"
 
 #: activities/solar_system/Dataset.js:294
 msgctxt "Dataset|"
@@ -22032,7 +21940,7 @@ msgstr ""
 #: activities/solar_system/Dataset.js:391
 msgctxt "Dataset|"
 msgid "Eighth"
-msgstr ""
+msgstr "Octave"
 
 #: activities/solar_system/Dataset.js:351
 msgctxt "Dataset|"
@@ -22172,7 +22080,7 @@ msgstr "Preciion: %1%"
 #, qt-format
 msgctxt "QuizScreen|"
 msgid "%1%"
-msgstr ""
+msgstr "%1%"
 
 #: activities/solar_system/QuizScreen.qml:274
 #, qt-format
@@ -22214,7 +22122,7 @@ msgstr ""
 #: activities/solar_system/SolarSystem.qml:155
 msgctxt "SolarSystem|"
 msgid "Learning"
-msgstr ""
+msgstr "Apprendente"
 
 #: activities/solar_system/SolarSystem.qml:159
 msgctxt "SolarSystem|"
@@ -22284,7 +22192,7 @@ msgstr ""
 #: activities/solar_system/SolarSystem.qml:355
 msgctxt "SolarSystem|"
 msgid "Hint"
-msgstr ""
+msgstr "Suggerentia"
 
 #: activities/solar_system/SolarSystem.qml:363
 msgctxt "SolarSystem|"
@@ -22562,7 +22470,7 @@ msgstr ""
 #: activities/superbrain/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Super brain"
-msgstr ""
+msgstr "Super cerebro"
 
 #. Help title
 #. ----------
@@ -22754,12 +22662,9 @@ msgid "First number from 5 to 9."
 msgstr ""
 
 #: activities/tens_complement_find/resource/4/Data.qml:9
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Division of numbers"
 msgctxt "Data|"
 msgid "Find both numbers."
-msgstr "Division de numeros"
+msgstr "Trova ambe numeros"
 
 #. Activity title
 #: activities/tens_complement_swap/ActivityInfo.qml:14
