@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: kstars\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2015-05-27 08:46+0000\n"
-"PO-Revision-Date: 2022-12-15 09:34+0000\n"
+"PO-Revision-Date: 2022-12-18 12:07+0000\n"
 "Last-Translator: Pedro Morais <morais@kde.org>\n"
 "Language-Team: pt <kde-i18n-pt@kde.org>\n"
 "Language: pt\n"
@@ -25925,17 +25925,14 @@ msgstr ""
 "Escreva a palavra completa, à medida que vai caindo, antes de chegar ao chão."
 
 #: core/ChangeLog.qml:30
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "New maps and update of the maps for geography activities"
 msgctxt "ChangeLog|"
 msgid "Map of Spain added for geography activity"
-msgstr "Novo mapas e actualização dos mesmos para as actividades de geografia"
+msgstr "Mapa de Espanha adicionado para a actividade de geografia"
 
 #: core/ChangeLog.qml:31
 msgctxt "ChangeLog|"
 msgid "Voices added for Ukrainian"
-msgstr ""
+msgstr "Vozes em Ucraniano adicionadas"
 
 #: core/ChangeLog.qml:32
 msgctxt "ChangeLog|"
@@ -25943,6 +25940,8 @@ msgid ""
 "New command-line option to list all the activities and start on a specific "
 "one"
 msgstr ""
+"Nova opção da linha de comandos para apresentar todas as actividades e "
+"iniciar uma específica"
 
 #: core/ChangeLog.qml:33 core/ChangeLog.qml:68 core/ChangeLog.qml:71
 #: core/ChangeLog.qml:77

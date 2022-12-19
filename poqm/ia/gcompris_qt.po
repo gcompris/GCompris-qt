@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2022-12-14 15:35+0100\n"
+"PO-Revision-Date: 2022-12-18 22:37+0100\n"
 "Last-Translator: giovanni <g.sora@tiscali.it>\n"
 "Language-Team: Interlingua <kde-i18n-doc@kde.org>\n"
 "Language: ia\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Qt-Contexts: true\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 21.12.3\n"
+"X-Generator: Lokalize 22.12.0\n"
 
 #. Activity title
 #: activities/advanced_colors/ActivityInfo.qml:15
@@ -8239,7 +8239,7 @@ msgstr "Selectiona torta de 0.5."
 #: activities/fractions_create/resource/5/Data.qml:24
 msgctxt "Data|"
 msgid "Select 0.25 pie."
-msgstr ""
+msgstr "Selectiona 0.25 pie"
 
 #: activities/fractions_create/resource/5/Data.qml:30
 msgctxt "Data|"
@@ -8249,7 +8249,7 @@ msgstr "Selectiona tort.a de 0.4"
 #: activities/fractions_create/resource/5/Data.qml:36
 msgctxt "Data|"
 msgid "Select 0.75 pie."
-msgstr ""
+msgstr "Selectiona 0.75 pie."
 
 #: activities/fractions_create/resource/5/Data.qml:42
 msgctxt "Data|"
@@ -17148,7 +17148,7 @@ msgstr ""
 #: activities/morse_code/resource/2/Data.qml:44
 msgctxt "Data|"
 msgid "Find the corresponding digit."
-msgstr "Trova le digito correspondente"
+msgstr "Trova le digito correspondente."
 
 #: activities/morse_code/resource/3/Data.qml:13
 msgctxt "Data|"
@@ -18374,7 +18374,7 @@ msgstr ""
 #, qt-format
 msgctxt "BpmMeter|"
 msgid "%1 BPM"
-msgstr ""
+msgstr "%1 BPM"
 
 #. Treble clef and Bass clef are the notations to indicate the pitch of the sound written on it.
 #: activities/piano_composition/KeyOption.qml:47
@@ -21063,7 +21063,7 @@ msgstr ""
 #: activities/solar_system/ActivityConfig.qml:21
 msgctxt "ActivityConfig|"
 msgid "Learning Mode"
-msgstr ""
+msgstr "Modo de apprender"
 
 #: activities/solar_system/ActivityConfig.qml:22
 msgctxt "ActivityConfig|"
@@ -21129,7 +21129,7 @@ msgstr ""
 #: activities/solar_system/Dataset.js:190
 msgctxt "Dataset|"
 msgid "Sixth largest"
-msgstr ""
+msgstr "Le sexte plus grande"
 
 #: activities/solar_system/Dataset.js:19 activities/solar_system/Dataset.js:262
 #: activities/solar_system/Dataset.js:307
@@ -21137,7 +21137,7 @@ msgstr ""
 #: activities/solar_system/Dataset.js:421
 msgctxt "Dataset|"
 msgid "Third largest"
-msgstr ""
+msgstr "Le tertie plus grande"
 
 #: activities/solar_system/Dataset.js:19 activities/solar_system/Dataset.js:262
 #: activities/solar_system/Dataset.js:307
@@ -21152,7 +21152,7 @@ msgstr "Le plus grande"
 #: activities/solar_system/Dataset.js:370
 msgctxt "Dataset|"
 msgid "Seventh largest"
-msgstr ""
+msgstr "Le septime plus grande"
 
 #: activities/solar_system/Dataset.js:24
 msgctxt "Dataset|"
@@ -21280,7 +21280,7 @@ msgstr ""
 #: activities/solar_system/Dataset.js:391
 msgctxt "Dataset|"
 msgid "Seventh"
-msgstr ""
+msgstr "Septime"
 
 #: activities/solar_system/Dataset.js:58 activities/solar_system/Dataset.js:103
 #: activities/solar_system/Dataset.js:154
@@ -21289,7 +21289,7 @@ msgstr ""
 #: activities/solar_system/Dataset.js:301
 msgctxt "Dataset|"
 msgid "Sixth"
-msgstr ""
+msgstr "Sexte"
 
 #: activities/solar_system/Dataset.js:58 activities/solar_system/Dataset.js:154
 #: activities/solar_system/Dataset.js:205
@@ -21307,7 +21307,7 @@ msgstr "Prime"
 #: activities/solar_system/Dataset.js:391
 msgctxt "Dataset|"
 msgid "Fourth"
-msgstr ""
+msgstr "Quarte"
 
 #: activities/solar_system/Dataset.js:63
 msgctxt "Dataset|"
@@ -21322,17 +21322,17 @@ msgstr "Le plus parve"
 #: activities/solar_system/Dataset.js:64 activities/solar_system/Dataset.js:241
 msgctxt "Dataset|"
 msgid "Second smallest"
-msgstr ""
+msgstr "Le secunde plus parve"
 
 #: activities/solar_system/Dataset.js:64 activities/solar_system/Dataset.js:241
 msgctxt "Dataset|"
 msgid "Third smallest"
-msgstr ""
+msgstr "Le tertie plus parve"
 
 #: activities/solar_system/Dataset.js:64 activities/solar_system/Dataset.js:241
 msgctxt "Dataset|"
 msgid "Fifth smallest"
-msgstr ""
+msgstr "Le quinte plus parve"
 
 #: activities/solar_system/Dataset.js:69
 msgctxt "Dataset|"
@@ -21464,14 +21464,14 @@ msgstr ""
 #: activities/solar_system/Dataset.js:307
 msgctxt "Dataset|"
 msgid "Fifth largest"
-msgstr ""
+msgstr "Le quinte plus grande"
 
 #: activities/solar_system/Dataset.js:115
 #: activities/solar_system/Dataset.js:190
 #: activities/solar_system/Dataset.js:421
 msgctxt "Dataset|"
 msgid "Fourth largest"
-msgstr ""
+msgstr "Le quarte plus grande"
 
 #: activities/solar_system/Dataset.js:120
 msgctxt "Dataset|"
@@ -21570,7 +21570,7 @@ msgstr "Tertie"
 #: activities/solar_system/Dataset.js:391
 msgctxt "Dataset|"
 msgid "Fifth"
-msgstr ""
+msgstr "Quinte"
 
 #: activities/solar_system/Dataset.js:159
 msgctxt "Dataset|"
@@ -21692,7 +21692,7 @@ msgstr ""
 #: activities/solar_system/Dataset.js:217
 msgctxt "Dataset|"
 msgid "The same"
-msgstr ""
+msgstr "Le mesme"
 
 #: activities/solar_system/Dataset.js:217
 msgctxt "Dataset|"
@@ -21702,12 +21702,12 @@ msgstr "Medietate"
 #: activities/solar_system/Dataset.js:217
 msgctxt "Dataset|"
 msgid "Two times"
-msgstr ""
+msgstr "Duo vices"
 
 #: activities/solar_system/Dataset.js:217
 msgctxt "Dataset|"
 msgid "Three times"
-msgstr ""
+msgstr "Tres vices"
 
 #: activities/solar_system/Dataset.js:222
 msgctxt "Dataset|"
@@ -21776,7 +21776,7 @@ msgstr ""
 #: activities/solar_system/Dataset.js:421
 msgctxt "Dataset|"
 msgid "Second largest"
-msgstr ""
+msgstr "Le secunde plus grande"
 
 #: activities/solar_system/Dataset.js:267
 msgctxt "Dataset|"
@@ -21836,7 +21836,7 @@ msgstr "30 annos de Terra"
 #: activities/solar_system/Dataset.js:397
 msgctxt "Dataset|"
 msgid "1 Earth year"
-msgstr ""
+msgstr "1 anno de Terra"
 
 #: activities/solar_system/Dataset.js:294
 msgctxt "Dataset|"
@@ -21940,7 +21940,7 @@ msgstr ""
 #: activities/solar_system/Dataset.js:391
 msgctxt "Dataset|"
 msgid "Eighth"
-msgstr ""
+msgstr "Octave"
 
 #: activities/solar_system/Dataset.js:351
 msgctxt "Dataset|"
@@ -22122,7 +22122,7 @@ msgstr ""
 #: activities/solar_system/SolarSystem.qml:155
 msgctxt "SolarSystem|"
 msgid "Learning"
-msgstr ""
+msgstr "Apprendente"
 
 #: activities/solar_system/SolarSystem.qml:159
 msgctxt "SolarSystem|"
@@ -22192,7 +22192,7 @@ msgstr ""
 #: activities/solar_system/SolarSystem.qml:355
 msgctxt "SolarSystem|"
 msgid "Hint"
-msgstr ""
+msgstr "Suggerentia"
 
 #: activities/solar_system/SolarSystem.qml:363
 msgctxt "SolarSystem|"
@@ -22470,7 +22470,7 @@ msgstr ""
 #: activities/superbrain/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Super brain"
-msgstr ""
+msgstr "Super cerebro"
 
 #. Help title
 #. ----------
