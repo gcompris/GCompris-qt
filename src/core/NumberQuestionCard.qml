@@ -22,7 +22,7 @@ Item {
         width: height
         color: isSignSymbol || !clickable ? "transparent" : "white"
         border.color: isSignSymbol || !clickable ? "transparent" : "#9FB8E3"
-        border.width: selected ? 9 : 3
+        border.width: selected ? 12 : 3
         radius: 15
         anchors.centerIn: parent
     }
