@@ -12,32 +12,37 @@ Item {
     visible: visibility
 
     property bool selected: false
+    property int cardSize: Math.min(width, height)
 
     signal clicked
 
     Rectangle {
-        height: selected ? parent.height : parent.height * 0.9
+        id: cardBg
+        height: selected ? cardSize * 0.9 : cardSize * 0.7
         width: height
-        color: isSignSymbol ? "transparent" : (clickable ? "#FFFB9A" : "orange")
-        border.color: isSignSymbol ? "transparent" : "black"
-        border.width: 3
+        color: isSignSymbol || !clickable ? "transparent" : "white"
+        border.color: isSignSymbol || !clickable ? "transparent" : "#9FB8E3"
+        border.width: selected ? 9 : 3
         radius: 15
         anchors.centerIn: parent
     }
     GCText {
         id: numberText
-        width: parent.width
-        height: parent.height
+        width: cardBg.height
+        height: cardBg.height
         anchors.centerIn: parent
-        color: "black"
+        color: "#373737"
         text: value
+        fontSize: Math.max(1, height) // avoid value of 0 during init
         fontSizeMode: Text.Fit
         verticalAlignment: Text.AlignVCenter
         horizontalAlignment: Text.AlignHCenter
     }
 
     MouseArea {
-        anchors.fill: parent
+        width: numberCard.height
+        height: numberCard.height
+        anchors.centerIn: parent
         enabled: clickable
         onClicked: {
             numberCard.clicked();

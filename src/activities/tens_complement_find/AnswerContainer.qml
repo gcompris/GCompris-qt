@@ -15,29 +15,31 @@ Item {
 
     Rectangle {
         id: answerRectangle
-        color: "#95F2F8"
-        border.width: 2
-        border.color: "black"
-        radius: 30
+        color: "#EBEBEB"
+        radius: 15
         anchors {
             left: parent.left
             right: parent.right
             top: parent.top
             bottom: parent.bottom
-            margins: 10
+            leftMargin: background.layoutMargins
+            topMargin: background.layoutMargins
+            bottomMargin: background.layoutMargins
+            rightMargin: background.layoutMargins + validationImage.height
+
         }
 
         ListView {
             id: additionList
-            height: parent.height * 0.9
-            width: parent.width * 0.9
+            height: parent.height
+            width: parent.width
             interactive: false
             anchors.centerIn: parent
             orientation: ListView.Horizontal
             model: addition
             delegate: NumberQuestionCard {
-                height: additionList.height * 0.8
-                width: additionList.width / 5
+                height: additionList.height
+                width: additionList.width / 5 // 5 instead of addition.count to avoid TypeError on level load
                 enabled: isAnswerCard
                 onClicked: {
                     if(value != "?") {
@@ -55,11 +57,13 @@ Item {
     Image {
         id: validationImage
         visible: tickVisibility
-        sourceSize.height: answerContainer.height
+        height: answerRectangle.height
+        width: height
+        sourceSize.height: height
         source: isCorrect ? correctAnswerImage : wrongAnswerImage
         anchors {
             left: answerRectangle.right
-            leftMargin: 5
+            leftMargin: background.layoutMargins * 0.5
             verticalCenter: answerRectangle.verticalCenter
         }
     }

@@ -31,6 +31,7 @@ function initLevel() {
     items.okButton.visible = false;
     items.cardListModel.clear();
     items.holderListModel.clear();
+    items.selectedIndex = -1;
 
     var currentDataset = items.levels[currentLevel];
     var equations = [];
