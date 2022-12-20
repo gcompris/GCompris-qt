@@ -28,8 +28,8 @@ Item {
     }
     GCText {
         id: numberText
-        width: cardBg.height
-        height: cardBg.height
+        width: isSignSymbol ? numberCard.height : cardBg.height
+        height: isSignSymbol ? numberCard.width : cardBg.height
         anchors.centerIn: parent
         color: "#373737"
         text: value

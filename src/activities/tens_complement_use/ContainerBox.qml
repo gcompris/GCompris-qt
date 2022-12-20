@@ -1,75 +1,93 @@
-/* GCompris - Card.qml
+/* GCompris - ContainerBox.qml
  *
  * SPDX-FileCopyrightText: 2022 Samarth Raj <mailforsamarth@gmail.com>
+ * SPDX-FileCopyrightText: 2022 Timothée Giet <animtim@gmail.com>
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 import QtQuick 2.12
 import "../../core"
 import "tens_complement_use.js" as Activity
 
-Rectangle {
+Item {
     id: cardContainer
     readonly property string correctAnswerImage: "qrc:/gcompris/src/core/resource/apply.svg"
     readonly property string wrongAnswerImage:  "qrc:/gcompris/src/core/resource/cancel.svg"
 
-    color: "#F0CB38"
-    border.color: "black"
-    border.width: 3
-    radius: 15
+    // add 1 for numbers and 0.5 for sign symbols
+    function numberOfItemsInModel(modelToCheck) {
+        var numberOfItems = 0;
+        for (var i = 0; i < modelToCheck.count; i++) {
+            if (modelToCheck.get(i).isSignSymbol) {
+                numberOfItems += 0.5;
+            } else {
+                numberOfItems += 1;
+            }
+        }
+        return numberOfItems;
+    }
+
+    Rectangle {
+        id: containerBg
+        color: "#33FFFFFF"
+        radius: 15
+        anchors {
+            left: parent.left
+            right: parent.right
+            top: parent.top
+            bottom: parent.bottom
+            margins: background.layoutMargins
+        }
+    }
 
     Rectangle {
         id: questionContainer
-        height: parent.height * 0.4
-        width: parent.width * 0.6
-        color: "#88A2FE"
+        height: containerBg.height * 0.5
+        width: containerBg.width * 0.6
+        color: "#C8D6EF"
         anchors {
-            top: parent.top
-            horizontalCenter: parent.horizontalCenter
-            topMargin: 15
+            top: containerBg.top
+            horizontalCenter: containerBg.horizontalCenter
         }
-        border.width: 3
-        border.color: "black"
-        radius: 30
+        radius: 15
+        property int cardWidth: questionContainer.width / numberOfItemsInModel(addition)
+
 
         ListView {
-            height: parent.height * 0.9
-            width: parent.width * 0.9
+            height: parent.height
+            width: parent.width
             interactive: false
             anchors.centerIn: parent
             orientation: ListView.Horizontal
             model: addition
             delegate: NumberQuestionCard {
-                height: questionContainer.height * 0.8
-                width: questionContainer.width / 6
+                height: questionContainer.height
+                width: isSignSymbol ? questionContainer.cardWidth * 0.5 : questionContainer.cardWidth
             }
         }
     }
 
     Rectangle {
         id: answerContainer
-        height: parent.height * 0.4
-        width: parent.width * 0.8
-        color: "#95F2F8"
+        height: containerBg.height * 0.5
+        width: containerBg.width
+        color: "#EBEBEB"
         anchors {
             top: questionContainer.bottom
-            left: parent.left
-            leftMargin: answerContainer.width * 0.05
-            topMargin: 15
+            left: containerBg.left
         }
-        border.width: 3
-        border.color: "black"
-        radius: 30
+        radius: 15
+        property int cardWidth: questionContainer.width / numberOfItemsInModel(secondRow)
 
         ListView {
-            height: parent.height * 0.9
-            width: parent.width * 0.9
+            height: parent.height
+            width: parent.width
             interactive: false
             anchors.centerIn: parent
             orientation: ListView.Horizontal
             model: secondRow
             delegate: NumberQuestionCard {
-                height: answerContainer.height * 0.8
-                width: answerContainer.width / 10
+                height: answerContainer.height
+                width: isSignSymbol ? questionContainer.cardWidth * 0.5 : questionContainer.cardWidth
                 onClicked: {
                     if(value != "?") {
                         Activity.reappearNumberCard(value);
@@ -88,9 +106,8 @@ Rectangle {
         sourceSize.height: answerContainer.height
         source: isGood === true ? correctAnswerImage : wrongAnswerImage
         anchors {
-            right: cardContainer.right
-            leftMargin: 5
-            verticalCenter: cardContainer.verticalCenter
+            left: questionContainer.right
+            bottom: answerContainer.top
         }
     }
 }

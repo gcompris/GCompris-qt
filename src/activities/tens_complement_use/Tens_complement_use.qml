@@ -1,6 +1,7 @@
 /* GCompris - tens_complement_use.qml
  *
  * SPDX-FileCopyrightText: 2022 Samarth Raj <mailforsamarth@gmail.com>
+ * SPDX-FileCopyrightText: 2022 Timothée Giet <animtim@gmail.com>
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 import QtQuick 2.12
@@ -17,12 +18,16 @@ ActivityBase {
     onStart: focus = true
     onStop: {}
 
-    pageComponent: Rectangle {
+    pageComponent: Image {
         id: background
+        source: "qrc:/gcompris/src/activities/checkers/resource/background-wood.svg"
         anchors.fill: parent
-        color: "white"
+        fillMode: Image.PreserveAspectCrop
+        sourceSize.height: height
         signal start
         signal stop
+
+        property int layoutMargins: 10 * ApplicationInfo.ratio
 
         Component.onCompleted: {
             activity.start.connect(start)
@@ -42,7 +47,8 @@ ActivityBase {
             property alias score: score
             property alias okButton: okButton
             readonly property var levels: activity.datasetLoader.data
-            property double cardSize: Core.fitItems(numberContainer.width, numberContainer.height, 6)
+            property double cardSize: Core.fitItems(numberContainerArea.width, numberContainerArea.height, 6)
+            property bool isHorizontal: background.width >= background.height
         }
 
         onStart: { Activity.start(items) }
@@ -55,94 +61,183 @@ ActivityBase {
             anchors.bottomMargin: bar.height * 0.2
             anchors.left: parent.left
             anchors.right: parent.right
+        }
 
-            ListModel {
-                id: cardListModel
-            }
+        ListModel {
+            id: cardListModel
+        }
 
-            Rectangle {
-                id: numberContainer
-                height: parent.height * 0.4
-                width: parent.width * 0.32
-                anchors {
-                    left: layoutArea.left
-                    verticalCenter: parent.verticalCenter
-                    leftMargin: layoutArea.width * 0.02
-                }
-                color: "pink"
-                border.width: 2
-                border.color: "black"
-                radius: 30
+        Item {
+            id: numberContainerArea
+            height: width * 0.67
+            width: (layoutArea.width - background.layoutMargins * 3) * 0.32
+            anchors.left: layoutArea.left
+            anchors.verticalCenter: answerHolderArea.verticalCenter
+            anchors.leftMargin: background.layoutMargins
+        }
 
-                GridView {
-                    id: container
-                    height: parent.height
-                    width: parent.width
-                    interactive: false
-                    anchors.centerIn: parent
-                    cellHeight: items.cardSize
-                    cellWidth: items.cardSize
-                    model: cardListModel
-                    delegate: NumberQuestionCard {
-                        height: items.cardSize
-                        width: items.cardSize
-                        selected: index == items.selectedIndex
-                        onClicked: {
-                            items.selectedIndex = index;
-                        }
-                    }
-                }
-            }
+        Rectangle {
+            id: numberContainer
+            width: items.cardSize * 3
+            height: items.cardSize * Math.ceil(cardListModel.count / 3)
+            anchors.verticalCenter: numberContainerArea.verticalCenter
+            anchors.left: numberContainerArea.left
+            color: "#80FFFFFF"
+            radius: 15
 
-            ListModel {
-                id: holderListModel
-            }
-
-            Rectangle {
-                id: activityArea
+            GridView {
+                id: container
                 height: parent.height
-                width: parent.width * 0.65
-                anchors.left: numberContainer.right
-
-                ListView {
-                    height: parent.height
-                    width: parent.width
-                    interactive: false
-                    anchors.centerIn: parent
-                    model: holderListModel
-                    delegate: ContainerBox {
-                        height: activityArea.height * 0.4
-                        width: activityArea.width
+                width: parent.width
+                interactive: false
+                anchors.centerIn: parent
+                cellHeight: items.cardSize
+                cellWidth: items.cardSize
+                model: cardListModel
+                delegate: NumberQuestionCard {
+                    height: items.cardSize
+                    width: items.cardSize
+                    selected: index == items.selectedIndex
+                    onClicked: {
+                        items.selectedIndex = index;
                     }
-                }
-
-                BarButton {
-                    id: okButton
-                    visible: false
-                    z: 10
-                    source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
-                    anchors {
-                        horizontalCenter: parent.horizontalCenter
-                        bottom: parent.bottom
-                    }
-                    sourceSize.height: Math.min(layoutArea.height * 0.15, layoutArea.width * 0.15)
-                    sourceSize.width: Math.min(layoutArea.height * 0.15, layoutArea.width * 0.15)
-                    height: sourceSize.height
-                    width: sourceSize.width
-                    enabled: !bonus.isPlaying
-                    onClicked: Activity.checkAnswer()
-                }
-            }
-            
-            Score {
-                id: score
-                color: "#76F361"
-                anchors {
-                    bottomMargin: 5
-                    rightMargin: 5
                 }
             }
         }
+
+        ListModel {
+            id: holderListModel
+        }
+
+        Item {
+            id: answerHolderArea
+            anchors {
+                left: numberContainer.right
+                top: layoutArea.top
+                bottom: score.top
+                right: score.left
+            }
+
+            ListView {
+                height: Math.min((items.cardSize * holderListModel.count + background.layoutMargins) * 2 , answerHolderArea.height)
+                width: parent.width
+                interactive: false
+                anchors.centerIn: parent
+                model: holderListModel
+                delegate: ContainerBox {
+                    height: Math.min((items.cardSize + background.layoutMargins) * 2, answerHolderArea.height / 2)
+                    width: Math.min(height * 5, parent.width)
+                }
+            }
+        }
+
+        BarButton {
+            id: okButton
+            visible: false
+            z: 10
+            source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
+            anchors {
+                bottom: score.top
+                bottomMargin: background.layoutMargins
+                horizontalCenter: score.horizontalCenter
+            }
+            sourceSize.width: 60 * ApplicationInfo.ratio
+            enabled: !bonus.isPlaying
+            onClicked: Activity.checkAnswer()
+        }
+
+        Score {
+            id: score
+            anchors {
+                right: layoutArea.right
+                bottom: layoutArea.bottom
+                rightMargin: background.layoutMargins
+                bottomMargin: background.layoutMargins
+            }
+        }
+
+        states: [
+            State {
+                name: "horizontalLayout"
+                when: items.isHorizontal
+                AnchorChanges {
+                    target: numberContainerArea
+                    anchors {
+                        left: parent.left
+                        verticalCenter: answerHolderArea.verticalCenter
+                        horizontalCenter: undefined
+                        bottom: undefined
+                    }
+                }
+                PropertyChanges {
+                    target: numberContainerArea
+                    anchors {
+                        leftMargin: background.layoutMargins
+                        bottomMargin: 0
+                    }
+                    height: width * 0.67
+                    width: (layoutArea.width - background.layoutMargins * 3) * 0.32
+                }
+                AnchorChanges {
+                    target: numberContainer
+                    anchors {
+                        verticalCenter: numberContainerArea.verticalCenter
+                        left: numberContainerArea.left
+                        horizontalCenter: undefined
+                    }
+                }
+                AnchorChanges {
+                    target: answerHolderArea
+                    anchors {
+                        left: numberContainer.right
+                        top: parent.top
+                        bottom: score.top
+                        right: score.left
+                    }
+                }
+            },
+            State {
+                name: "verticalLayout"
+                when: !items.isHorizontal
+                AnchorChanges {
+                    target: numberContainerArea
+                    anchors {
+                        left: undefined
+                        verticalCenter: undefined
+                        horizontalCenter: layoutArea.horizontalCenter
+                        bottom: score.top
+                    }
+                }
+                PropertyChanges {
+                    target: numberContainerArea
+                    anchors {
+                        leftMargin: 0
+                        bottomMargin: background.layoutMargins
+                    }
+                    width: Math.min(layoutArea.width - score.width * 2 - background.layoutMargins * 4,
+                                    layoutArea.height * 0.35)
+                    height: width * 0.67
+                }
+                AnchorChanges {
+                    target: numberContainer
+                    anchors {
+                        verticalCenter: numberContainerArea.verticalCenter
+                        left: undefined
+                        horizontalCenter: numberContainerArea.horizontalCenter
+                    }
+                }
+                AnchorChanges {
+                    target: answerHolderArea
+                    anchors {
+                        left: layoutArea.left
+                        top: parent.top
+                        bottom: numberContainerArea.top
+                        right: layoutArea.right
+                    }
+                }
+            }
+        ]
+
         MouseArea {
             id: clickMask
             anchors.fill: layoutArea
