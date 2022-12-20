@@ -13,6 +13,19 @@ Item {
     readonly property string correctAnswerImage: "qrc:/gcompris/src/core/resource/apply.svg"
     readonly property string wrongAnswerImage: "qrc:/gcompris/src/core/resource/cancel.svg"
 
+    // add 1 for numbers and 0.5 for sign symbols
+    function numberOfItemsInModel(modelToCheck) {
+        var numberOfItems = 0;
+        for (var i = 0; i < modelToCheck.count; i++) {
+            if (modelToCheck.get(i).isSignSymbol) {
+                numberOfItems += 0.5;
+            } else {
+                numberOfItems += 1;
+            }
+        }
+        return numberOfItems;
+    }
+
     Rectangle {
         id: answerRectangle
         color: "#EBEBEB"
@@ -28,6 +41,8 @@ Item {
             rightMargin: background.layoutMargins + validationImage.height
 
         }
+        property int cardWidth: answerRectangle.width / numberOfItemsInModel(addition)
+
 
         ListView {
             id: additionList
@@ -39,7 +54,7 @@ Item {
             model: addition
             delegate: NumberQuestionCard {
                 height: additionList.height
-                width: additionList.width / 5 // 5 instead of addition.count to avoid TypeError on level load
+                width: isSignSymbol ? answerRectangle.cardWidth * 0.5 : answerRectangle.cardWidth
                 enabled: isAnswerCard
                 onClicked: {
                     if(value != "?") {
