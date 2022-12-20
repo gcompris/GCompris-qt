@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: gcompris_voices\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-12-17 02:40+0000\n"
-"PO-Revision-Date: 2017-05-28 14:07+0100\n"
+"PO-Revision-Date: 2022-12-14 09:43+0000\n"
 "Last-Translator: José Nuno Coelho Pires <zepires@gmail.com>\n"
 "Language-Team: Portuguese <kde-i18n-pt@kde.org>\n"
 "Language: pt\n"
@@ -227,8 +227,7 @@ msgstr "Classificar os elementos pelo grupo correcto"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "checkers"
 #: activities/checkers/ActivityInfo.qml:18
-#, fuzzy, kde-format
-#| msgid "play chess against Tux"
+#, kde-format
 msgid "play checkers against Tux"
 msgstr "jogue xadrez contra o Tux"
 
@@ -321,6 +320,7 @@ msgstr "Carregue na cor correcta"
 msgid ""
 "Select the correct comparator sign for each pair of numbers in the list."
 msgstr ""
+"Seleccione o sinal de comparação correcto para cada par de números na lista."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "crane"
 #: activities/crane/ActivityInfo.qml:23
@@ -460,13 +460,13 @@ msgstr ""
 #, kde-format
 msgid ""
 "Select the appropriate number of parts as described in the instructions."
-msgstr ""
+msgstr "Seleccione o número apropriado de peças, como descrito nas instruções."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "fractions_find"
 #: activities/fractions_find/ActivityInfo.qml:17
 #, kde-format
 msgid "Find the correct numerator and denominator of the represented fraction"
-msgstr ""
+msgstr "Descubra o numerador e denominador correctos da fracção representada"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "geo-country"
 #: activities/geo-country/ActivityInfo.qml:22
@@ -689,6 +689,8 @@ msgstr ""
 msgid ""
 "Move animals to their homes using a left click or right click on your mouse."
 msgstr ""
+"Mover os animais para as suas casas com um 'click' do botão esquerdo ou "
+"direito do seu rato."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "leftright"
 #: activities/leftright/ActivityInfo.qml:18
@@ -889,10 +891,9 @@ msgstr "Carregue no dinheiro para pagar."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "morse_code"
 #: activities/morse_code/ActivityInfo.qml:21
-#, fuzzy, kde-format
-#| msgid "Learn and practice roman to arabic numerals conversion"
+#, kde-format
 msgid "Learn and practice the International Morse code"
-msgstr "Aprenda e pratique a conversão de números romanos para árabes"
+msgstr "Aprenda e pratique o código Morse internacional"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "mosaic"
 #: activities/mosaic/ActivityInfo.qml:18
@@ -1228,6 +1229,9 @@ msgid ""
 "Create pairs of numbers equal to ten. Select a number in the list, then "
 "select an empty spot of an operation to move the selected number there."
 msgstr ""
+"Criar pares de números iguais a dez. Seleccione um número na lista, depois "
+"seleccione um lugar vazio de uma operação para mover o número seleccionado "
+"para lá."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "tens_complement_swap"
 #: activities/tens_complement_swap/ActivityInfo.qml:17
@@ -1236,6 +1240,8 @@ msgid ""
 "Create pairs of numbers equal to ten. Select a number, then select another "
 "number of the same operation to swap their position."
 msgstr ""
+"Criar pares de números iguais a dez. Seleccione um número e depois "
+"seleccione outro número da mesma operação para trocar as suas posições."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "tens_complement_use"
 #: activities/tens_complement_use/ActivityInfo.qml:17
@@ -1245,6 +1251,9 @@ msgid ""
 "number in the list, then select an empty spot of an operation to move the "
 "selected number there."
 msgstr ""
+"Decompor as operações para incluir um par de números igual a dez. Seleccione "
+"um número na lista, depois seleccione um lugar de operação vazio para mover "
+"o número seleccionado para lá."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "tic_tac_toe_2players"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "tic_tac_toe"
@@ -1282,25 +1291,3 @@ msgstr ""
 #, kde-format
 msgid "Type the words on your keyboard before they reach the ground."
 msgstr "Escreva as palavras no seu teclado antes de elas chegarem ao chão."
-
-#~ msgid "play checkers against the computer"
-#~ msgstr "jogue às damas contra o computador"
-
-#~ msgid "put here in comment the text for the intro voice"
-#~ msgstr "coloque aqui no comentário o texto para a voz introdutória"
-
-#~ msgid ""
-#~ "Change the planets' gravitational force by moving the sliders up and "
-#~ "down. Be careful not to crash Tux's spaceship."
-#~ msgstr ""
-#~ "Mude a força gravítica dos planetas, movendo as barras para cima e para "
-#~ "baixo. Tenha cuidado em não destruir a nave do Tux."
-
-#~ msgid "Match the alphabet with its upper);"
-#~ msgstr "Corresponder ao alfabeto às maiúsculas);"
-
-#~ msgid ""
-#~ "Use the drawing tools to reproduce the right-hand side symmetrical figure."
-#~ msgstr ""
-#~ "Use as ferramentas de desenho para reproduzir a imagem simétrica do lado "
-#~ "direito."
