@@ -16,14 +16,18 @@ Item {
     // add 1 for numbers and 0.5 for sign symbols
     function numberOfItemsInModel(modelToCheck) {
         var numberOfItems = 0;
-        for (var i = 0; i < modelToCheck.count; i++) {
-            if (modelToCheck.get(i).isSignSymbol) {
-                numberOfItems += 0.5;
-            } else {
-                numberOfItems += 1;
+        if(modelToCheck) {
+            for (var i = 0; i < modelToCheck.count; i++) {
+                if(modelToCheck.get(i).isSignSymbol) {
+                    numberOfItems += 0.5;
+                } else {
+                    numberOfItems += 1;
+                }
             }
+            return numberOfItems;
+        } else {
+            return 1;
         }
-        return numberOfItems;
     }
 
     Rectangle {
@@ -55,7 +59,6 @@ Item {
             delegate: NumberQuestionCard {
                 height: additionList.height
                 width: isSignSymbol ? answerRectangle.cardWidth * 0.5 : answerRectangle.cardWidth
-                enabled: isAnswerCard
                 onClicked: {
                     if(value != "?") {
                         Activity.reappearNumberCard(value);

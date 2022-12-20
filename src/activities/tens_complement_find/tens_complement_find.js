@@ -65,8 +65,7 @@ function initLevel() {
                 "value": rightHandSide.toString(),
                 "visibility": true,
                 "isSignSymbol": false,
-                "clickable": true,
-                "isAnswerCard": true
+                "clickable": true
             }
             cards.push(card);
 
@@ -75,8 +74,7 @@ function initLevel() {
                     "value": leftHandSide.toString(),
                     "visibility": true,
                     "isSignSymbol": false,
-                    "clickable": true,
-                    "isAnswerCard": true
+                    "clickable": true
                 } 
                 cards.push(card);
             }
@@ -100,8 +98,7 @@ function initLevel() {
                 "value": randomNumber.toString(),
                 "visibility": true,
                 "isSignSymbol": false,
-                "clickable": true,
-                "isAnswerCard": true
+                "clickable": true
             } 
             cards.push(card);
         }
@@ -116,8 +113,7 @@ function initLevel() {
                 "value": sublevel.numberValue[cardToDisplayIndex].toString(),
                 "visibility": true,
                 "isSignSymbol": false,
-                "clickable": true,
-                "isAnswerCard": true
+                "clickable": true
             }
             cards.push(card);
         }
@@ -151,36 +147,31 @@ function createEquation(values) {
                 "value": values[0],
                 "visibility": true,
                 "clickable": values[0] === "?",
-                "isSignSymbol": false,
-                "isAnswerCard": values[0] === "?"
+                "isSignSymbol": false
             },
             {
                 "value": "+",
                 "visibility": true,
                 "clickable": false,
-                "isSignSymbol": true,
-                "isAnswerCard": false
+                "isSignSymbol": true
             },
             {
                 "value": values[1],
                 "visibility": true,
                 "clickable": values[1] === "?",
-                "isSignSymbol": false,
-                "isAnswerCard": values[1] === "?"
+                "isSignSymbol": false
             },
             {
                 "value": "=",
                 "visibility": true,
                 "clickable": false,
-                "isSignSymbol": true,
-                "isAnswerCard": false
+                "isSignSymbol": true
             },
             {
                 "value": "10",
                 "visibility": true,
                 "clickable": false,
-                "isSignSymbol": false,
-                "isAnswerCard": false
+                "isSignSymbol": false
             }
         ],
         "firstCardClickable": values[0] == "?" ? true : false,
