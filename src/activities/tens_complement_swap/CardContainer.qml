@@ -25,14 +25,18 @@ Item {
         // add 1 for numberCard or resultCard, else add 0.5
         function numberOfItemsInModel() {
             var numberOfItems = 0;
-            for (var i = 0; i < listmodel.count; i++) {
-                if (listmodel.get(i).type == "symbolCard") {
-                    numberOfItems += 0.5;
-                } else {
-                    numberOfItems += 1;
+            if(listmodel) {
+                for (var i = 0; i < listmodel.count; i++) {
+                    if (listmodel.get(i).type == "symbolCard") {
+                        numberOfItems += 0.5;
+                    } else {
+                        numberOfItems += 1;
+                    }
                 }
+                return numberOfItems;
+            } else {
+                return 1;
             }
-            return numberOfItems;
         }
 
         ListView {

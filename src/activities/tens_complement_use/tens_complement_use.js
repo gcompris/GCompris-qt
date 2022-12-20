@@ -53,8 +53,7 @@ function initLevel() {
                 "value": (resultToFind-10).toString(),
                 "visibility": true,
                 "isSignSymbol": false,
-                "clickable": true,
-                "isAnswerCard": false
+                "clickable": true
             });
             // Ensure we have at least two numbers where the sum is ten
             var firstNumberOfSum = Math.floor(Math.random() * 9) + 1;
@@ -63,8 +62,7 @@ function initLevel() {
                 "value": counterpart,
                 "visibility": true,
                 "isSignSymbol": false,
-                "clickable": true,
-                "isAnswerCard": false
+                "clickable": true
             });
 
             var indexCounter = 0;
@@ -82,8 +80,7 @@ function initLevel() {
                     "value": questionArrayValue[i].toString(),
                     "visibility": true,
                     "isSignSymbol": !isNumber,
-                    "clickable": false,
-                    "isAnswerCard": false
+                    "clickable": false
                 }
                 questionsModel.addition.push(card);
             }
@@ -102,8 +99,7 @@ function initLevel() {
                     "value": answerArrayValue[i].toString(),
                     "visibility": true,
                     "clickable": (answerArrayValue[i] === "?"),
-                    "isSignSymbol": !isNumber,
-                    "isAnswerCard": answerArrayValue[i] === "?"
+                    "isSignSymbol": !isNumber
                 }
                 questionsModel.secondRow.push(card);
             }
@@ -117,8 +113,7 @@ function initLevel() {
                 "value": randomNumber.toString(),
                 "visibility": true,
                 "isSignSymbol": false,
-                "clickable": true,
-                "isAnswerCard": false
+                "clickable": true
             }
             cards.push(card);
         }
@@ -139,8 +134,7 @@ function initLevel() {
                 "value": numberValue[i].toString(),
                 "visibility": true,
                 "isSignSymbol": false,
-                "clickable": true,
-                "isAnswerCard": false
+                "clickable": true
             }
             items.cardListModel.append(card);
         }
@@ -168,8 +162,7 @@ function initLevel() {
                     "value": questionArrayValue[i].toString(),
                     "visibility": true,
                     "isSignSymbol": !isNumber,
-                    "clickable": false,
-                    "isAnswerCard": false
+                    "clickable": false
                 }
                 questionsModel.addition.push(card);
             }
@@ -187,8 +180,7 @@ function initLevel() {
                     "value": answerArrayValue[i].toString(),
                     "visibility": true,
                     "clickable": (answerArrayValue[i] === "?"),
-                    "isSignSymbol": !isNumber,
-                    "isAnswerCard": answerArrayValue[i] === "?"
+                    "isSignSymbol": !isNumber
                 }
                 questionsModel.secondRow.push(card);
             }
