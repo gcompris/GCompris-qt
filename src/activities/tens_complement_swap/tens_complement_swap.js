@@ -36,6 +36,7 @@ function stop() {
 function initLevel() {
     items.bar.level = currentLevel + 1;
     clearListModels();
+    previousSelectedCard = undefined;
     for(var indexOfListModel = 0; indexOfListModel < datasets[currentLevel].length; indexOfListModel++) {
         var model = [];
         var valueArray = getValueArray(datasets[currentLevel][indexOfListModel]);
