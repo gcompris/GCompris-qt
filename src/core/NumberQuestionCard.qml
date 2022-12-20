@@ -7,6 +7,17 @@
 import QtQuick 2.12
 import GCompris 1.0
 
+/**
+ * A QML component used in tens_complement_find and tens_complement_use
+ *
+ * It's meant to be used in a Flickable (GridView, ListView ...) with a ListModel
+ * containing the following properties:
+ *     "value": a string to display on the card
+ *     "visibility": a bool telling if the card is visible or hidden
+ *     "clickable": a bool telling if the card is clickable or not
+ *     "isSignSymbol": a bool set to true if the value is a math symbol and not a number
+ */
+
 Item {
     id: numberCard
     visible: visibility
