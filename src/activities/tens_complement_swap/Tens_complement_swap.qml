@@ -1,6 +1,7 @@
 /* GCompris - tens_complement_swap.qml
  *
  * SPDX-FileCopyrightText: 2022 Samarth Raj <mailforsamarth@gmail.com>
+ * SPDX-FileCopyrightText: 2022 Timothée Giet <animtim@gmail.com>
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 import QtQuick 2.12
@@ -18,12 +19,16 @@ ActivityBase {
     onStart: focus = true
     onStop: {}
 
-    pageComponent: Rectangle {
+    pageComponent: Image {
         id: background
+        source: "qrc:/gcompris/src/activities/checkers/resource/background-wood.svg"
         anchors.fill: parent
-        color: "white"
+        fillMode: Image.PreserveAspectCrop
+        sourceSize.height: height
         signal start
         signal stop
+
+        property int layoutMargins: 10 * ApplicationInfo.ratio
 
         Component.onCompleted: {
             activity.start.connect(start)
@@ -39,6 +44,7 @@ ActivityBase {
             property alias bonus: bonus
             property alias equations: equations
             readonly property var levels: activity.datasetLoader.data
+            property bool isHorizontal: background.width >= background.height
         }
 
         onStart: { Activity.start(items) }
@@ -63,27 +69,32 @@ ActivityBase {
                 id: equations
             }
 
-            Rectangle {
+            Item {
                 id: containerHolder
-                height: layoutArea.height * 0.7
-                width: layoutArea.width * 0.9
-                color: "white"
-                radius: 20
-                anchors.centerIn: parent
+                height: layoutArea.height - okButton.height * 2 - background.layoutMargins
+                width: layoutArea.width - (background.layoutMargins * 2)
+                anchors.top: parent.top
+                anchors.topMargin: background.layoutMargins
+                anchors.horizontalCenter: parent.horizontalCenter
                 Column {
                     Repeater {
                         model: items.equations
                         delegate: CardContainer {
-                            height: containerHolder.height / (items.equations.count + 1)
-                            width: containerHolder.width
+                            height: Math.min(containerHolder.height / items.equations.count,
+                                             okButton.height * 2)
+                            width: items.isHorizontal ? containerHolder.width - height :
+                                                            containerHolder.width
                         }
                     }
                 }
             }
 
-            Score {
-                id: score
-                color: "black"
+            Item {
+                id: okButtonArea
+                anchors.top: containerHolder.bottom
+                anchors.bottom: layoutArea.bottom
+                anchors.left: layoutArea.left
+                anchors.right: layoutArea.right
             }
 
             BarButton {
@@ -91,8 +102,8 @@ ActivityBase {
                 sourceSize.width: 60 * ApplicationInfo.ratio
                 source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
                 anchors {
-                    horizontalCenter: layoutArea.horizontalCenter
-                    bottom: parent.bottom
+                    horizontalCenter: okButtonArea.horizontalCenter
+                    verticalCenter: okButtonArea.verticalCenter
                 }
                 enabled: !bonus.isPlaying
                 onClicked: Activity.checkAnswer()
