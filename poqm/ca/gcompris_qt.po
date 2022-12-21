@@ -6945,6 +6945,7 @@ msgctxt "board1|"
 msgid "Chicken"
 msgstr "Gallina"
 
+# skip-rule: ff-domestic
 #: activities/explore_farm_animals/resource/board/board1.qml:34
 msgctxt "board1|"
 msgid ""

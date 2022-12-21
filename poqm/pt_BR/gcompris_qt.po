@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_qt\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2022-04-13 11:40-0300\n"
+"PO-Revision-Date: 2022-12-20 11:28-0300\n"
 "Last-Translator: Luiz Fernando Ranghetti <elchevive@opensuse.org>\n"
 "Language-Team: Portuguese <kde-i18n-pt_BR@kde.org>\n"
 "Language: pt_BR\n"
@@ -21,7 +21,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Language: pt_BR\n"
 "X-Qt-Contexts: true\n"
-"X-Generator: Lokalize 20.04.2\n"
+"X-Generator: Lokalize 21.12.3\n"
 
 #. Activity title
 #: activities/advanced_colors/ActivityInfo.qml:15
@@ -2055,7 +2055,7 @@ msgid ""
 "drag gesture on a touchscreen makes the blue duck move."
 msgstr ""
 "A área central contém um pato azul. Ao mover o mouse ou fazer um movimento "
-"de arraste em uma tela touchscreen, o pato azul irá se mover."
+"de arraste em uma tela sensível ao toque, o pato azul irá se mover."
 
 #: activities/baby_mouse/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
@@ -3456,7 +3456,8 @@ msgstr "Desenvolver o pensamento conceitual e enriquecer o conhecimento."
 #: activities/categorization/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid "Can drag items using a mouse or touchscreen."
-msgstr "Conseguir arrastar itens utilizando o mouse ou a tela de toque."
+msgstr ""
+"Conseguir arrastar itens utilizando o mouse ou a tela sensível ao toque."
 
 #. Help manual
 #: activities/categorization/ActivityInfo.qml:24
@@ -5849,7 +5850,7 @@ msgid ""
 msgstr ""
 "Você pode aumentar ou diminuir o zoom da área de trabalho usando as teclas + "
 "e -, usando os botões de zoom no menu de ferramentas, ou usando gestos de "
-"pinçamento, em uma tela de toque."
+"pinçamento, em uma tela sensível ao toque."
 
 #: activities/digital_electricity/ActivityInfo.qml:34
 msgctxt "ActivityInfo|"
