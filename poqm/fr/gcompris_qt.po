@@ -8,8 +8,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2022-12-17 09:33+0100\n"
-"Last-Translator: Johnny Jazeix <jazeix@gmail.com>\n"
+"PO-Revision-Date: 2022-12-21 20:47+0100\n"
+"Last-Translator: charruau <echarruau@gmail.com>\n"
 "Language-Team: French <kde-francophone@kde.org>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
@@ -19,7 +19,7 @@ msgstr ""
 "X-Language: fr\n"
 "X-Qt-Contexts: true\n"
 "X-Qt-Contexts: true\n"
-"X-Generator: Lokalize 21.12.3\n"
+"X-Generator: Lokalize 22.12.0\n"
 "X-Environment: kde\n"
 "X-Accelerator-Marker: &\n"
 "X-Text-Markup: qtrich\n"
@@ -1197,6 +1197,8 @@ msgid ""
 "You can use the arrow buttons to manually select the difficulty level. Tux "
 "will play better when you increase the level."
 msgstr ""
+"Tu peux utiliser les flèches du clavier pour sélectionner manuellement le "
+"niveau de difficulté. Tux jouera mieux lorsque tu augmenteras le niveau."
 
 #: activities/align4/ActivityInfo.qml:25
 #: activities/align4_2players/ActivityInfo.qml:24
@@ -6828,14 +6830,14 @@ msgid ""
 "escape predators, and possess an excellent sense of balance. They have "
 "single-toed hooves."
 msgstr ""
+"Le cheval hennit. Les chevaux sont adaptés à la course, ce qui leur permet "
+"d'échapper rapidement aux prédateurs, ils possèdent un excellent sens de "
+"l'équilibre. Ils ont des sabots à un seul doigt."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:25
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal's ancestors were wolves."
 msgctxt "board1|"
 msgid "This animal has single-toed hooves."
-msgstr "Les ancêtres de cet animal étaient les loups."
+msgstr "Cet animal a des sabots à un seul doigt."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:33
 msgctxt "board1|"
@@ -6848,14 +6850,13 @@ msgid ""
 "The chicken goes 'cluck'. Domestic chickens have wings, but are not capable "
 "of long-distance flight. They have a comb on their head."
 msgstr ""
+"Le poulet glousse. Les poulets domestiques ont des ailes, mais ne sont pas "
+"capables de voler sur de longues distances. Ils ont une crête sur la tête."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:37
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal likes to come out at night."
 msgctxt "board1|"
 msgid "This animal has a comb on its head."
-msgstr "Cet animal aime sortir la nuit."
+msgstr "Cet animal a une crête sur la tête."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:45
 msgctxt "board1|"
@@ -6869,11 +6870,14 @@ msgid ""
 "developed sense of taste, with around 20,000 taste buds. They can detect "
 "odours 8km away."
 msgstr ""
+"La vache meugle : « meuh ». Les vaches ont un large champ de vision de 330°. "
+"Elles ont un sens du goût bien développé, avec environ 20 000 papilles "
+"gustatives. Elles peuvent détecter des odeurs à 8 km de distance."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:49
 msgctxt "board1|"
 msgid "This animal has around 20,000 taste buds."
-msgstr ""
+msgstr "Cet animal possède environ 20 000 papilles gustatives."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:57
 msgctxt "board1|"
@@ -6887,14 +6891,14 @@ msgid ""
 "ability to chase mice and other rodents. They purr to communicate various "
 "emotions."
 msgstr ""
+"Le chat miaule : « miaou ». Les chats sont appréciés par les humains pour "
+"leur compagnie et leur capacité à chasser les souris et autres rongeurs. Ils "
+"ronronnent pour communiquer diverses émotions."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:61
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal lays eggs."
 msgctxt "board1|"
 msgid "This animal can purr."
-msgstr "Cet animal pond des œufs."
+msgstr "Cet animal ronronne."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:69
 msgctxt "board1|"
@@ -6907,11 +6911,14 @@ msgid ""
 "The pig goes 'oink'. Pigs wallow in the mud, mainly to control their body "
 "temperature."
 msgstr ""
+"Le cochon couine. Les porcs se vautrent dans la boue, principalement pour "
+"contrôler leur température corporelle."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:73
 msgctxt "board1|"
 msgid "This animal wallows in the mud to control its body temperature."
 msgstr ""
+"Cet animal se vautre dans la boue pour contrôler sa température corporelle."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:81
 msgctxt "board1|"
@@ -6924,11 +6931,11 @@ msgid ""
 "The duck goes 'quack'. Ducks are mostly aquatic birds. They have waterproof "
 "feathers and webbed feet which enable them to swim on the water."
 msgstr ""
+"Le canard cancane : « coin-coin ». Les canards sont principalement des "
+"oiseaux aquatiques. Ils ont des plumes imperméables et des pieds palmés qui "
+"leur permettent d'avancer dans l'eau."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:85
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal has webbed feet so it can swim in the water."
 msgctxt "board1|"
 msgid "This animal has webbed feet and can swim on the water."
 msgstr ""
@@ -6940,23 +6947,15 @@ msgid "Owl"
 msgstr "La chouette"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:94
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid ""
-#| "The owl goes 'hoo. hoo.' The owl has excellent vision and hearing at "
-#| "night."
 msgctxt "board1|"
 msgid ""
 "The owl goes 'hoot'. Owls are nocturnal birds, they have excellent vision "
 "and hearing at night."
 msgstr ""
-"La chouette hulule « Houuu, Houuu ». La chouette a une excellente vision et "
-"une excellente audition de nuit."
+"La chouette hulule « Houuu, Houuu ». La chouette a une excellente vision de "
+"nuit et une excellente audition."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:97
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal likes to come out at night."
 msgctxt "board1|"
 msgid "This animal is a nocturnal bird."
 msgstr "Cet animal aime sortir la nuit."
@@ -6972,14 +6971,13 @@ msgid ""
 "The dog goes 'woof'. Dogs are probably the oldest domesticated species. They "
 "are descendants of the wolf."
 msgstr ""
+"Le chien aboie : « woof ». Les chiens sont probablement la plus ancienne "
+"espèce domestiquée. Ils sont les descendants du loup."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:109
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal is a close relative to the goat."
 msgctxt "board1|"
 msgid "This animal is a descendant of the wolf."
-msgstr "Cet animal est un parent proche de la chèvre."
+msgstr "Cet animal descend du loup."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:117
 msgctxt "board1|"
@@ -6992,14 +6990,14 @@ msgid ""
 "The sheep goes 'baa'. Most sheep breeds bear a fleece of wool. The fleece "
 "can be sheared and used to produce textile fibre."
 msgstr ""
+"Le mouton bêle. La plupart des races de moutons produisent une toison de "
+"laine. Cette toison peut être tondue et utilisée pour produire des fibres "
+"textiles."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:121
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal's ancestors were wolves."
 msgctxt "board1|"
 msgid "This animal produces wool."
-msgstr "Les ancêtres de cet animal étaient les loups."
+msgstr "Cet animal produit de la laine."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:131
 msgctxt "board1|"
@@ -7749,7 +7747,7 @@ msgstr ""
 "par quatre chevaux. Se tenant sur la Pariser Platz, située à côté du "
 "Bundestag et de l'ambassade de France, elle domine la grande avenue Unter "
 "den Linden, qui signifie « Sous les tilleuls ». On la voit depuis le bout de "
-"l'avenue. "
+"l'avenue."
 
 #: activities/explore_monuments/resource/board/board4.qml:51
 #: activities/explore_monuments/resource/board/board4.qml:54
@@ -9274,12 +9272,9 @@ msgstr ""
 
 #. Activity title
 #: activities/fractions_create/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice subtractions."
 msgctxt "ActivityInfo|"
 msgid "Create the fractions"
-msgstr "Entraînement à la soustraction."
+msgstr "Ecris les fractions"
 
 #. Help title
 #: activities/fractions_create/ActivityInfo.qml:16
@@ -9294,17 +9289,14 @@ msgid ""
 msgstr "Sélectionne le nombre de parts indiqué dans les instructions."
 
 #: activities/fractions_create/fractions_create.js:79
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Digits representation"
 msgctxt "fractions_create|"
 msgid "Find the represented fraction."
-msgstr "Représentation numérique"
+msgstr "Trouve les fractions affichées."
 
 #: activities/fractions_create/resource/1/Data.qml:9
 msgctxt "Data|"
 msgid "Simplified fractions with a pie."
-msgstr ""
+msgstr "Fraction simplifiée d'un disque."
 
 #: activities/fractions_create/resource/1/Data.qml:18
 #: activities/fractions_create/resource/3/Data.qml:17
@@ -9312,80 +9304,63 @@ msgstr ""
 #: activities/fractions_create/resource/3/Data.qml:29
 msgctxt "Data|"
 msgid "Select one half of the pie."
-msgstr ""
+msgstr "Sélectionne un demi disque."
 
 #: activities/fractions_create/resource/1/Data.qml:24
 #: activities/fractions_create/resource/3/Data.qml:35
 #: activities/fractions_create/resource/3/Data.qml:49
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Select the fifth Thursday of the given month"
 msgctxt "Data|"
 msgid "Select one-third of the pie."
-msgstr "Sélectionne le cinquième jeudi du mois proposé"
+msgstr "Sélectionne un tiers du disque."
 
 #: activities/fractions_create/resource/1/Data.qml:30
 #: activities/fractions_create/resource/3/Data.qml:41
 #: activities/fractions_create/resource/3/Data.qml:55
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Select the fourth Sunday of the given month"
 msgctxt "Data|"
 msgid "Select two-thirds of the pie."
-msgstr "Sélectionne le quatrième dimanche du mois proposé"
+msgstr "Sélectionne deux tiers du disque."
 
 #: activities/fractions_create/resource/1/Data.qml:36
 #: activities/fractions_create/resource/3/Data.qml:61
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Select the butterfly of the correct color."
 msgctxt "Data|"
 msgid "Select one-quarter of the pie."
-msgstr "Trouve le papillon de la bonne couleur."
+msgstr "Sélectionne un quart du disque."
 
 #: activities/fractions_create/resource/1/Data.qml:42
 #: activities/fractions_create/resource/3/Data.qml:67
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Select the fifth Thursday of the given month"
 msgctxt "Data|"
 msgid "Select two-fifths of the pie."
-msgstr "Sélectionne le cinquième jeudi du mois proposé"
+msgstr "Sélectionne deux cinquièmes du disque."
 
 #: activities/fractions_create/resource/1/Data.qml:50
 msgctxt "Data|"
 msgid "Select one pie and one-quarter of a pie."
-msgstr ""
+msgstr "Sélectionne un disque et un quart de disque."
 
 #: activities/fractions_create/resource/1/Data.qml:56
 msgctxt "Data|"
 msgid "Select one pie and two-fifths of a pie."
-msgstr ""
+msgstr "Sélectionne un disque et deux cinquièmes d'un disque."
 
 #: activities/fractions_create/resource/1/Data.qml:62
 msgctxt "Data|"
 msgid "Select one pie and one-third of a pie."
-msgstr ""
+msgstr "Selectionne un disque entier et un tiers de disque."
 
 #: activities/fractions_create/resource/1/Data.qml:68
 msgctxt "Data|"
 msgid "Select one pie and one half of a pie."
-msgstr ""
+msgstr "Selectionne un disque entier et un demi disque."
 
 #: activities/fractions_create/resource/1/Data.qml:74
 msgctxt "Data|"
 msgid "Select one pie and three-quarters of a pie."
-msgstr ""
+msgstr "Selectionne un disque entier et trois quarts de disque."
 
 #: activities/fractions_create/resource/10/Data.qml:9
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Answer the questions with a correctness of 100%."
 msgctxt "Data|"
 msgid "Specific questions with a rectangle."
-msgstr ""
-"Réponds aux questions affichées et obtient un score de 100 % en choisissant "
-"parmi les propositions."
+msgstr "Questions précises avec un rectangle."
 
 #: activities/fractions_create/resource/10/Data.qml:18
 #: activities/fractions_create/resource/10/Data.qml:24
@@ -9394,11 +9369,13 @@ msgid ""
 "Select as many parts as you can without taking more than half of the "
 "rectangle."
 msgstr ""
+"Sélectionne autant de parts que tu le peux sans prendre plus de la moitié du "
+"rectangle."
 
 #: activities/fractions_create/resource/2/Data.qml:9
 msgctxt "Data|"
 msgid "Simplified fractions with a rectangle."
-msgstr ""
+msgstr "Fractions simplifiées avec un rectangle."
 
 #: activities/fractions_create/resource/2/Data.qml:18
 #: activities/fractions_create/resource/4/Data.qml:17
@@ -9462,159 +9439,129 @@ msgstr "Sélectionne un rectangle et trois quarts de rectangle."
 #: activities/fractions_create/resource/3/Data.qml:9
 msgctxt "Data|"
 msgid "Non-simplified fractions with a pie."
-msgstr ""
+msgstr "Fractions non simplifiées avec un disque."
 
 #: activities/fractions_create/resource/3/Data.qml:73
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Select the fifth Thursday of the given month"
 msgctxt "Data|"
 msgid "Select three-fifths of the pie."
-msgstr "Sélectionne le cinquième jeudi du mois proposé"
+msgstr "Sélectionne trois cinquièmes du disque."
 
 #: activities/fractions_create/resource/4/Data.qml:9
 msgctxt "Data|"
 msgid "Non-simplified fractions with a rectangle."
-msgstr ""
+msgstr "Fractions non simplifiées avec un rectangle."
 
 #: activities/fractions_create/resource/4/Data.qml:73
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Select the butterfly of the correct color."
 msgctxt "Data|"
 msgid "Select three-fifths of the rectangle."
-msgstr "Trouve le papillon de la bonne couleur."
+msgstr "Sélectionne trois cinquièmes du rectangle."
 
 #: activities/fractions_create/resource/5/Data.qml:9
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Decimal number system."
 msgctxt "Data|"
 msgid "Decimal numbers with a pie."
-msgstr "Le système décimal."
+msgstr "Nombre décimal avec un disque."
 
 #: activities/fractions_create/resource/5/Data.qml:18
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 0.5 pie."
-msgstr "Sélectionné"
+msgstr "Sélectionne 0,5 disque."
 
 #: activities/fractions_create/resource/5/Data.qml:24
 msgctxt "Data|"
 msgid "Select 0.25 pie."
-msgstr ""
+msgstr "Selectionne 0,25 disque."
 
 #: activities/fractions_create/resource/5/Data.qml:30
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 0.4 pie."
-msgstr "Sélectionné"
+msgstr "Sélectionne 0,4 disque."
 
 #: activities/fractions_create/resource/5/Data.qml:36
 msgctxt "Data|"
 msgid "Select 0.75 pie."
-msgstr ""
+msgstr "Selectionne 0,75 disque."
 
 #: activities/fractions_create/resource/5/Data.qml:42
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 0.8 pie."
-msgstr "Sélectionné"
+msgstr "Sélectionne 0,8 disque."
 
 #: activities/fractions_create/resource/5/Data.qml:50
 msgctxt "Data|"
 msgid "Select 1.25 pies."
-msgstr ""
+msgstr "Selectionne 1,25 disques."
 
 #: activities/fractions_create/resource/5/Data.qml:56
 msgctxt "Data|"
 msgid "Select 1.4 pies."
-msgstr ""
+msgstr "Selectionne 1,4 disques."
 
 #: activities/fractions_create/resource/5/Data.qml:62
 #: activities/fractions_create/resource/5/Data.qml:68
 msgctxt "Data|"
 msgid "Select 1.5 pies."
-msgstr ""
+msgstr "Selectionne 1,5 disques."
 
 #: activities/fractions_create/resource/5/Data.qml:74
 msgctxt "Data|"
 msgid "Select 1.75 pies."
-msgstr ""
+msgstr "Selectionne 1,75 disques."
 
 #: activities/fractions_create/resource/6/Data.qml:9
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Decimal number system."
 msgctxt "Data|"
 msgid "Decimal numbers with a rectangle."
-msgstr "Le système décimal."
+msgstr "Nombre décimal avec un rectangle."
 
 #: activities/fractions_create/resource/6/Data.qml:18
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Select your locale"
 msgctxt "Data|"
 msgid "Select 0.5 rectangle."
-msgstr "Choisis ta langue"
+msgstr "Sélectionne 0,5 rectangle."
 
 #: activities/fractions_create/resource/6/Data.qml:24
 msgctxt "Data|"
 msgid "Select 0.25 rectangle."
-msgstr ""
+msgstr "Selectionne 0,25 rectangle."
 
 #: activities/fractions_create/resource/6/Data.qml:30
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Select your locale"
 msgctxt "Data|"
 msgid "Select 0.4 rectangle."
-msgstr "Choisis ta langue"
+msgstr "Sélectionne 0,4 rectangle."
 
 #: activities/fractions_create/resource/6/Data.qml:36
 msgctxt "Data|"
 msgid "Select 0.75 rectangle."
-msgstr ""
+msgstr "Selectionne 0,75 rectangle."
 
 #: activities/fractions_create/resource/6/Data.qml:42
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Select your locale"
 msgctxt "Data|"
 msgid "Select 0.8 rectangle."
-msgstr "Choisis ta langue"
+msgstr "Sélectionne 0,8 rectangle."
 
 #: activities/fractions_create/resource/6/Data.qml:50
 msgctxt "Data|"
 msgid "Select 1.25 rectangles."
-msgstr ""
+msgstr "Selectionne 1,25 rectangles."
 
 #: activities/fractions_create/resource/6/Data.qml:56
 msgctxt "Data|"
 msgid "Select 1.4 rectangles."
-msgstr ""
+msgstr "Selectionne 1,4 rectangles."
 
 #: activities/fractions_create/resource/6/Data.qml:62
 #: activities/fractions_create/resource/6/Data.qml:68
 msgctxt "Data|"
 msgid "Select 1.5 rectangles."
-msgstr ""
+msgstr "Selectionne 1,5 rectangles."
 
 #: activities/fractions_create/resource/6/Data.qml:74
 msgctxt "Data|"
 msgid "Select 1.75 rectangles."
-msgstr ""
+msgstr "Selectionne 1,75 rectangles."
 
 #: activities/fractions_create/resource/7/Data.qml:9
 msgctxt "Data|"
 msgid "Percentages with a pie."
-msgstr ""
+msgstr "Pourcentages d'un disque."
 
 #. Select %1 percent of the pie.
 #: activities/fractions_create/resource/7/Data.qml:19
@@ -9625,17 +9572,15 @@ msgstr ""
 #: activities/fractions_create/resource/7/Data.qml:56
 #: activities/fractions_create/resource/7/Data.qml:63
 #: activities/fractions_create/resource/7/Data.qml:70
-#, fuzzy, qt-format
-#| msgctxt "calendar_dataset|"
-#| msgid "Select the 1st"
+#, qt-format
 msgctxt "Data|"
 msgid "Select %1% of the pie."
-msgstr "Sélectionne le premier jour"
+msgstr "Selectionne %1% du disque."
 
 #: activities/fractions_create/resource/8/Data.qml:9
 msgctxt "Data|"
 msgid "Percentages with a rectangle."
-msgstr ""
+msgstr "Pourcentages d'un rectangle."
 
 #. Select %1 percent of the rectangle.
 #: activities/fractions_create/resource/8/Data.qml:19
@@ -9647,12 +9592,12 @@ msgstr ""
 #, qt-format
 msgctxt "Data|"
 msgid "Select %1% of the rectangle."
-msgstr ""
+msgstr "Sélectionne %1% d'un rectangle."
 
 #: activities/fractions_create/resource/9/Data.qml:9
 msgctxt "Data|"
 msgid "Specific questions with a pie."
-msgstr ""
+msgstr "Questions précises avec un disque."
 
 #: activities/fractions_create/resource/9/Data.qml:18
 #: activities/fractions_create/resource/9/Data.qml:24
@@ -9660,63 +9605,50 @@ msgctxt "Data|"
 msgid ""
 "Select as many parts as you can without taking more than half of the pie."
 msgstr ""
+"Sélectionne autant de parties que tu le peux sans prendre plus de la moitié "
+"du disque."
 
 #. Activity title
 #: activities/fractions_find/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "instruments|"
-#| msgid "Find the accordion"
 msgctxt "ActivityInfo|"
 msgid "Find the fractions"
-msgstr "Trouve l'accordéon"
+msgstr "Trouve les fractions"
 
 #. Help title
 #: activities/fractions_find/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Find the correct date and select it on the calendar."
 msgctxt "ActivityInfo|"
 msgid "Find the correct numerator and denominator of the represented fraction."
-msgstr "Sélectionne la date recherchée dans le calendrier."
+msgstr "Trouvez le numérateur et le dénominateur de la fraction représentée."
 
 #: activities/fractions_find/resource/1/Data.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Nine men's morris (with a friend)"
 msgctxt "Data|"
 msgid "Find denominator (with a pie)."
-msgstr "Jeu du moulin (avec un ami)"
+msgstr "Trouve le dénominateur (avec un disque)."
 
 #: activities/fractions_find/resource/2/Data.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Nine men's morris (with a friend)"
 msgctxt "Data|"
 msgid "Find denominator (with a rectangle)."
-msgstr "Jeu du moulin (avec un ami)"
+msgstr "Trouve le dénominateur (avec un rectangle)."
 
 #: activities/fractions_find/resource/3/Data.qml:9
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Align four (with a friend)"
 msgctxt "Data|"
 msgid "Find numerator (with a pie)."
-msgstr "Puissance 4 (avec un ami)"
+msgstr "Trouve le numérateur (avec un disque)."
 
 #: activities/fractions_find/resource/4/Data.qml:9
 msgctxt "Data|"
 msgid "Find numerator (with a rectangle)."
-msgstr ""
+msgstr "Trouve le numérateur (avec un rectangle)."
 
 #: activities/fractions_find/resource/5/Data.qml:9
 msgctxt "Data|"
 msgid "Find numerator and denominator (with a pie)."
-msgstr ""
+msgstr "Trouve le numérateur et le dénominateur (avec un disque)."
 
 #: activities/fractions_find/resource/6/Data.qml:9
 msgctxt "Data|"
 msgid "Find numerator and denominator (with a rectangle)."
-msgstr ""
+msgstr "Trouve le numérateur et le dénominateur (avec un rectangle)."
 
 #. Activity title
 #: activities/geo-country/ActivityInfo.qml:19
@@ -15809,12 +15741,9 @@ msgstr "Activer les voix"
 
 #. Activity title
 #: activities/learn_digits/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Count the items"
 msgctxt "ActivityInfo|"
 msgid "Count and color the circles"
-msgstr "Compte les éléments"
+msgstr "Compte et colorie les cercles."
 
 #. Help title
 #: activities/learn_digits/ActivityInfo.qml:17
@@ -18852,11 +18781,15 @@ msgid ""
 "have a look at the translation map which contains the code for all the "
 "letters and digits."
 msgstr ""
+"On te demande soit d'envoyer un message en Morse, soit de convertir le "
+"message Morse reçu en lettres ou en chiffres. Pour apprendre le code Morse, "
+"tu  peux consulter la carte de traduction qui contient le code de toutes les "
+"lettres et de tous les chiffres."
 
 #: activities/morse_code/FirstScreen.qml:25
 msgctxt "FirstScreen|"
 msgid "Exploring Morse Code"
-msgstr ""
+msgstr "Exploration du code morse"
 
 #: activities/morse_code/FirstScreen.qml:64
 msgctxt "FirstScreen|"
@@ -18864,6 +18797,9 @@ msgid ""
 "Morse code was developed by Samuel Morse. It is a method of transmitting "
 "text information as a series of on-off tones, lights, or clicks."
 msgstr ""
+"Le code Morse a été développé par Samuel Morse. Il s'agit d'une méthode de "
+"transmission d'informations textuelles sous la forme d'une série de "
+"tonalités on-off, de lumières ou de clics."
 
 #: activities/morse_code/FirstScreen.qml:65
 msgctxt "FirstScreen|"
@@ -18876,17 +18812,19 @@ msgid ""
 "For example, the most common letter in English, the letter \"E\", has the "
 "shortest code, a single dot."
 msgstr ""
+"Chaque symbole du code Morse représente soit un caractère de texte (lettre "
+"ou chiffre), soit un prosigne et est représenté par une séquence unique de "
+"points et de tirets. La durée d'un tiret est trois fois plus longue que "
+"celle d'un point. Afin d'augmenter la vitesse de communication, le code a "
+"été conçu de manière à ce que les lettres les plus courantes aient les "
+"séquences de points et de tirets les plus courtes.Par exemple, la lettre la "
+"plus courante en anglais, la lettre « E », a le code le plus court, un seul "
+"point."
 
 #: activities/morse_code/FirstScreen.qml:90
-#, fuzzy
-#| msgctxt "FirstScreen|"
-#| msgid ""
-#| "When you are ready, click on me and try reproducing braille characters."
 msgctxt "FirstScreen|"
 msgid "When you are ready, click on Tux and we will converse in Morse code."
-msgstr ""
-"Dès que tu es prêt, clique-moi dessus et essaie de reproduire les caractères "
-"braille."
+msgstr "Dès que tu es prêt, appuie sur Tux, nous allons communiquer en Morse."
 
 #: activities/morse_code/MorseCode.qml:346
 #, qt-format
@@ -19727,6 +19665,17 @@ msgid ""
 "Mom|has|asked|me|to|play|in|the|room.\n"
 "I|think|we|are|going|to|have|a|good|day."
 msgstr ""
+"Le|soleil|brille|dans|le|ciel.\n"
+"Les|enfants|s'amusent|à|jouer|dehors|pendant|la|soirée.\n"
+"Tu|vas|sortir|pour|le|déjeuner?\n"
+"La|jeune|fille|a|attaché|ses|chaussures|de|tennis|et|est|allée|à|"
+"l'extérieur.\n"
+"Sam|s'est|senti|malade|après|avoir|mangé|cinq|énormes|barres|de|chocolat.\n"
+"Notre|famille|prend|des|vacances|à|la|plage|tous|les|ans.\n"
+"L'oncle|Joe|m'a|offert|un|jouet|rouge.\n"
+"Quand|tu|auras|fini|ton|riz,|nous|pourrons|manger|un|dessert.\n"
+"Maman|m'a|demandé|de|jouer|dans|la|chambre.\n"
+"Je|pense|que|nous|allons|passer|une|bonne|journée."
 
 #. Activity title
 #: activities/oware/ActivityInfo.qml:14
@@ -22328,7 +22277,7 @@ msgstr ""
 "Pour équilibrer la balance, déplace les masses sur le plateau de gauche. Les "
 "masses peuvent être placées dans n'importe quel ordre. Attention aux masses "
 "et à leurs unités, rappelle-toi qu'un kilogramme (kg) représente 1000 "
-"grammes (g). "
+"grammes (g)."
 
 #: activities/scalesboard_weight/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -25099,24 +25048,21 @@ msgstr "Valeur maximale : 500000."
 
 #. Activity title
 #: activities/tens_complement_find/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "instruments|"
-#| msgid "Find the trumpet"
 msgctxt "ActivityInfo|"
 msgid "Find ten's complement"
-msgstr "Trouve la trompette"
+msgstr "Trouve le complément à 10."
 
 #. Help title
 #: activities/tens_complement_find/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Find the ten's complement of each number."
-msgstr ""
+msgstr "Trouve le complément à 10 de chaque nombre."
 
 #. Help goal
 #: activities/tens_complement_find/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Learn to find ten's complement."
-msgstr ""
+msgstr "Apprends à trouver les compléments à 10."
 
 #. Help prerequisite
 #: activities/tens_complement_find/ActivityInfo.qml:21
@@ -25133,6 +25079,11 @@ msgid ""
 "corresponding lines. To correct the errors, click on the wrong numbers to "
 "remove them and repeat the previous steps."
 msgstr ""
+"Lorsque toutes les lignes sont remplies, appuie sur le bouton OK pour "
+"valider les réponses. Si certaines réponses sont incorrectes, une icône en "
+"forme de croix apparaîtra sur les lignes correspondantes. Pour corriger les "
+"erreurs, clique sur les mauvaises réponses pour les supprimer et répète les "
+"étapes précédentes."
 
 #. Help manual
 #: activities/tens_complement_find/ActivityInfo.qml:23
@@ -25141,6 +25092,9 @@ msgid ""
 "Create pairs of numbers equal to ten. Select a number in the list, then "
 "select an empty spot of an operation to move the selected number there."
 msgstr ""
+"Crée des paires de nombres égales à dix. Sélectionne un nombre dans la "
+"liste, puis sélectionne un emplacement vide d'une opération pour y déplacer "
+"le nombre sélectionné."
 
 #: activities/tens_complement_find/resource/1/Data.qml:25
 msgctxt "Data|"
@@ -25161,13 +25115,13 @@ msgstr "Trouver les deux nombres."
 #: activities/tens_complement_swap/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Swap ten's complement"
-msgstr ""
+msgstr "Permuter pour obtenir des compléments à 10"
 
 #. Help title
 #: activities/tens_complement_swap/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Swap the numbers to create pairs equal to ten."
-msgstr ""
+msgstr "Permuter les chiffres pour créer des paires égales à dix."
 
 #. Help goal
 #: activities/tens_complement_swap/ActivityInfo.qml:19
@@ -25176,6 +25130,8 @@ msgid ""
 "Learn to use ten's complement to optimize the order of numbers in an "
 "operation."
 msgstr ""
+"Apprends à utiliser les compléments à dix pour optimiser l'ordre des nombres "
+"dans une opération."
 
 #. Help prerequisite
 #: activities/tens_complement_swap/ActivityInfo.qml:21
@@ -25193,6 +25149,12 @@ msgid ""
 "the answers. If some answers are incorrect, a cross icon will appear on the "
 "corresponding lines. Correct the errors, then press the OK button again."
 msgstr ""
+"Crée des paires de nombres égales à dix à l'intérieur de chaque parenthèse. "
+"Sélectionne un nombre, puis sélectionne un autre nombre de la même opération "
+"pour intervertir leurs positions. Lorsque toutes les lignes sont remplies, "
+"appuie sur le bouton OK pour valider les réponses. Si certaines réponses "
+"sont incorrectes, une icône en forme de croix apparaît sur les lignes "
+"correspondantes. Corrige les erreurs, puis appuie à nouveau sur le bouton OK."
 
 #: activities/tens_complement_swap/resource/1/Data.qml:36
 msgctxt "Data|"
@@ -25213,19 +25175,19 @@ msgstr "3 paires à faire à partir de 6 nombres."
 #: activities/tens_complement_use/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Use ten's complement"
-msgstr ""
+msgstr "Utilise les compléments à 10"
 
 #. Help title
 #: activities/tens_complement_use/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Use a ten's complement to simplify the operation."
-msgstr ""
+msgstr "Utilise les compléments à 10 pour simplifier une opération."
 
 #. Help goal
 #: activities/tens_complement_use/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Learn a practical use of ten's complement."
-msgstr ""
+msgstr "Apprends une utilisation futée du complément à dix."
 
 #. Help prerequisite
 #: activities/tens_complement_use/ActivityInfo.qml:21
@@ -25241,6 +25203,9 @@ msgid ""
 "parentheses. Select a number in the list, then select an empty spot of an "
 "operation to move the selected number there."
 msgstr ""
+"Décompose les additions pour créer des paires de nombres égales à dix entre "
+"chaque parenthèse. Sélectionne un nombre dans la liste, puis sélectionne un "
+"emplacement vide d'une opération pour y déplacer le nombre sélectionné."
 
 #: activities/tens_complement_use/resource/1/Data.qml:43
 msgctxt "Data|"
@@ -25296,7 +25261,7 @@ msgstr ""
 #: activities/tic_tac_toe/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Tux will play better when you increase the level."
-msgstr ""
+msgstr "Tux jouera mieux si tu augmentes le niveau."
 
 #. Activity title
 #: activities/tic_tac_toe_2players/ActivityInfo.qml:18

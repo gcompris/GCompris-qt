@@ -1,42 +1,43 @@
+# Kishore G <kishore96@gmail.com>, 2022.
 msgid ""
 msgstr ""
+"Project-Id-Version: \n"
+"PO-Revision-Date: 2022-12-22 21:46+0530\n"
+"Last-Translator: Kishore G <kishore96@gmail.com>\n"
+"Language-Team: Tamil <kde-i18n-doc@kde.org>\n"
+"Language: ta\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Language: ta\n"
 "X-Qt-Contexts: true\n"
+"X-Generator: Lokalize 22.12.0\n"
 
 #. Activity title
 #: activities/advanced_colors/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Advanced colors"
-msgstr "அதிகமான வண்ணங்கள்"
+msgstr "மேம்பட்ட நிறங்கள்"
 
 #. Help title
 #: activities/advanced_colors/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Click on the correct color"
 msgctxt "ActivityInfo|"
 msgid "Select the butterfly of the correct color."
-msgstr "சரியான வண்ணத்தில் சொடுக்கவும்"
+msgstr "சரியான நிறத்தைக்கொண்ட வண்ணத்துப்பூச்சியைத் தேர்ந்தெடுங்கள்."
 
 #. Help goal
 #: activities/advanced_colors/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Learn to recognize unusual colors."
-msgstr "வழக்கமில்லாத வண்ணங்களை தெரிந்து கொள்வோம்."
+msgstr "வழக்கமில்லாத நிறங்களை அடையாளங்காண சொல்லிகொடுக்கும்."
 
 #. Help prerequisite
 #: activities/advanced_colors/ActivityInfo.qml:22
 #: activities/positions/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Can read"
 msgctxt "ActivityInfo|"
 msgid "Can read."
-msgstr "படிக்க முடியும்"
+msgstr "படிக்க தெரிந்திருக்க வேண்டும்."
 
 #. Help manual
 #: activities/advanced_colors/ActivityInfo.qml:24
@@ -45,6 +46,8 @@ msgid ""
 "You will see dancing butterflies of different colors and a question. You "
 "have to find the correct butterfly and touch it."
 msgstr ""
+"வெவேறு நிறங்களையுடைய வண்ணத்துப்பூச்சிகளையும், ஓர் கேள்வியையும் காண்பீர்கள். சரியான "
+"வண்ணத்துப்பூச்சியைக் கண்டுபிடித்து, அதைத் தொட வேண்டும்."
 
 #: activities/advanced_colors/ActivityInfo.qml:25
 #: activities/algebra_by/ActivityInfo.qml:25
@@ -135,7 +138,7 @@ msgstr ""
 #: activities/submarine/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "<b>Keyboard controls:</b>"
-msgstr ""
+msgstr "<b>கட்டுப்பாட்டு விசைகள்:</b>"
 
 #: activities/advanced_colors/ActivityInfo.qml:26
 #: activities/algorithm/ActivityInfo.qml:24
@@ -183,7 +186,7 @@ msgstr ""
 #: activities/solar_system/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid "Arrows: navigate"
-msgstr ""
+msgstr "அம்புக்குறிகள்: உலாவுவது"
 
 #: activities/advanced_colors/ActivityInfo.qml:27
 #: activities/algorithm/ActivityInfo.qml:25
@@ -194,7 +197,7 @@ msgstr ""
 #: activities/money_cents/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Space or Enter: select an item"
-msgstr ""
+msgstr "இடைவெளி அல்லது Enter: ஓர் உருப்படியைத் தேர்ந்தெடுக்கும்"
 
 #. Look at https://gcompris.net/wiki/Advanced_color_translation to see all the advanced colors Color #FF7F50
 #. ----------
@@ -203,7 +206,7 @@ msgstr ""
 #: activities/advanced_colors/advanced_colors.js:530
 msgctxt "advanced_colors|"
 msgid "Find the coral butterfly"
-msgstr "பவழம் பட்டாம் பூச்சி கண்டு பிடி "
+msgstr "பவழ வண்ணத்துப்பூச்சியைக் கண்டுபிடியுங்கள்"
 
 #. Color #7F1734
 #: activities/advanced_colors/advanced_colors.js:20
@@ -215,7 +218,7 @@ msgstr "பவழம் பட்டாம் பூச்சி கண்டு
 #: activities/advanced_colors/advanced_colors.js:849
 msgctxt "advanced_colors|"
 msgid "Find the claret butterfly"
-msgstr "க்ளாரட் பட்டாம் பூச்சி கண்டு பிடி "
+msgstr "க்ளாரட் வண்ணத்துப்பூச்சியைக் கண்டுபிடியுங்கள்"
 
 #. Color #000080
 #: activities/advanced_colors/advanced_colors.js:25
@@ -223,21 +226,21 @@ msgstr "க்ளாரட் பட்டாம் பூச்சி கண்
 #: activities/advanced_colors/advanced_colors.js:562
 msgctxt "advanced_colors|"
 msgid "Find the navy butterfly"
-msgstr "நேவி பட்டாம் பூச்சி கண்டு பிடி "
+msgstr "நேவி வண்ணத்துப்பூச்சியைக் கண்டுபிடியுங்கள்"
 
 #. Color #FBEC5D
 #: activities/advanced_colors/advanced_colors.js:30
 #: activities/advanced_colors/advanced_colors.js:67
 msgctxt "advanced_colors|"
 msgid "Find the corn butterfly"
-msgstr "சோளம் பட்டாம் பூச்சி கண்டு பிடி "
+msgstr "சோளநிற வண்ணத்துப்பூச்சியைக் கண்டுபிடியுங்கள்"
 
 #. Color #0047AB
 #: activities/advanced_colors/advanced_colors.js:35
 #: activities/advanced_colors/advanced_colors.js:72
 msgctxt "advanced_colors|"
 msgid "Find the cobalt butterfly"
-msgstr "கோபால்ட் பட்டாம் பூச்சி கண்டு பிடி "
+msgstr "கோபால்ட் வண்ணத்துப்பூச்சியைக் கண்டுபிடியுங்கள்"
 
 #. Color #00FFFF
 #: activities/advanced_colors/advanced_colors.js:40
@@ -245,7 +248,7 @@ msgstr "கோபால்ட் பட்டாம் பூச்சி கண
 #: activities/advanced_colors/advanced_colors.js:483
 msgctxt "advanced_colors|"
 msgid "Find the cyan butterfly"
-msgstr "சியான் பட்டாம் பூச்சி கண்டு பிடி "
+msgstr "சியான் வண்ணத்துப்பூச்சியைக் கண்டுபிடியுங்கள்"
 
 #. Color #954535
 #: activities/advanced_colors/advanced_colors.js:45
@@ -256,41 +259,41 @@ msgstr "சியான் பட்டாம் பூச்சி கண்ட
 #: activities/advanced_colors/advanced_colors.js:688
 msgctxt "advanced_colors|"
 msgid "Find the chestnut butterfly"
-msgstr "செஸ்ட்நட் பட்டாம் பூச்சி கண்டு பிடி "
+msgstr "செஸ்ட்நட் வண்ணத்துப்பூச்சியைக் கண்டுபிடியுங்கள்"
 
 #. Color #AB784E
 #: activities/advanced_colors/advanced_colors.js:50
 #: activities/advanced_colors/advanced_colors.js:87
 msgctxt "advanced_colors|"
 msgid "Find the almond butterfly"
-msgstr "பாதாம்  பட்டாம் பூச்சி கண்டு பிடி "
+msgstr "பாதாம்நிற வண்ணத்துப்பூச்சியைக் கண்டுபிடியுங்கள்"
 
 #. Color #0F52BA
 #: activities/advanced_colors/advanced_colors.js:62
 #: activities/advanced_colors/advanced_colors.js:844
 msgctxt "advanced_colors|"
 msgid "Find the sapphire butterfly"
-msgstr "நீலக் கல் பட்டாம் பூச்சி கண்டு பிடி "
+msgstr "நீலக்கல்நிற வண்ணத்துப்பூச்சியைக் கண்டுபிடியுங்கள்"
 
 #. Color #E0115F
 #: activities/advanced_colors/advanced_colors.js:92
 #: activities/advanced_colors/advanced_colors.js:213
 msgctxt "advanced_colors|"
 msgid "Find the ruby butterfly"
-msgstr "மாணிக்கம் பட்டாம் பூச்சி கண்டு பிடி "
+msgstr "மாணிக்கநிற வண்ணத்துப்பூச்சியைக் கண்டுபிடியுங்கள்"
 
 #. Color #882D17
 #: activities/advanced_colors/advanced_colors.js:99
 #: activities/advanced_colors/advanced_colors.js:824
 msgctxt "advanced_colors|"
 msgid "Find the sienna butterfly"
-msgstr "சையென்னா பட்டாம் பூச்சி கண்டு பிடி "
+msgstr "சையென்னா வண்ணத்துப்பூச்சியைக் கண்டுபிடியுங்கள்"
 
 #. Color #BCB88A
 #: activities/advanced_colors/advanced_colors.js:104
 msgctxt "advanced_colors|"
 msgid "Find the sage butterfly"
-msgstr "சேஜ் பட்டாம் பூச்சி கண்டு பிடி "
+msgstr "சேஜ் வண்ணத்துப்பூச்சியைக் கண்டுபிடியுங்கள்"
 
 #. Color #FF8C69
 #: activities/advanced_colors/advanced_colors.js:109
@@ -298,7 +301,7 @@ msgstr "சேஜ் பட்டாம் பூச்சி கண்டு �
 #: activities/advanced_colors/advanced_colors.js:703
 msgctxt "advanced_colors|"
 msgid "Find the salmon butterfly"
-msgstr "சால்மன் மீன் பட்டாம் பூச்சி கண்டு பிடி "
+msgstr "சால்மன் மீன் நிற வண்ணத்துப்பூச்சியைக் கண்டுபிடியுங்கள்"
 
 #. Color #704214
 #: activities/advanced_colors/advanced_colors.js:114
@@ -306,71 +309,71 @@ msgstr "சால்மன் மீன் பட்டாம் பூச்ச
 #: activities/advanced_colors/advanced_colors.js:787
 msgctxt "advanced_colors|"
 msgid "Find the sepia butterfly"
-msgstr "செபியா பட்டாம் பூச்சி கண்டு பிடி "
+msgstr "செப்பியா வண்ணத்துப்பூச்சியைக் கண்டுபிடியுங்கள்"
 
 #. Color #E4BB25
 #: activities/advanced_colors/advanced_colors.js:119
 msgctxt "advanced_colors|"
 msgid "Find the sulfur butterfly"
-msgstr "கந்தகம் பட்டாம் பூச்சி கண்டு பிடி "
+msgstr "கந்தகநிற வண்ணத்துப்பூச்சியைக் கண்டுபிடியுங்கள்"
 
 #. Color #DB6D7B
 #: activities/advanced_colors/advanced_colors.js:124
 #: activities/advanced_colors/advanced_colors.js:814
 msgctxt "advanced_colors|"
 msgid "Find the tea butterfly"
-msgstr "தேநீர் பட்டாம் பூச்சி கண்டு பிடி "
+msgstr "தேநீர்நிற் வண்ணத்துப்பூச்சியைக் கண்டுபிடியுங்கள்"
 
 #. Color #BFFF00
 #: activities/advanced_colors/advanced_colors.js:129
 msgctxt "advanced_colors|"
 msgid "Find the lime butterfly"
-msgstr "எலுமிச்சை பட்டாம் பூச்சி கண்டு பிடி "
+msgstr "எலுமிச்சைநிற் வண்ணத்துப்பூச்சியைக் கண்டுபிடியுங்கள்"
 
 #. Color #40E0D0
 #: activities/advanced_colors/advanced_colors.js:134
 msgctxt "advanced_colors|"
 msgid "Find the turquoise butterfly"
-msgstr "இரத்தின நீலம் பட்டாம் பூச்சி கண்டு பிடி "
+msgstr "இரத்தின நீலநிற வண்ணத்துப்பூச்சியைக் கண்டுபிடியுங்கள்"
 
 #. Color #73B881
 #: activities/advanced_colors/advanced_colors.js:141
 msgctxt "advanced_colors|"
 msgid "Find the absinthe butterfly"
-msgstr "எட்டி பட்டாம் பூச்சி கண்டு பிடி "
+msgstr "அப்ஸிந்து வண்ணத்துப்பூச்சியைக் கண்டுபிடியுங்கள்"
 
 #. Color #C04000
 #: activities/advanced_colors/advanced_colors.js:146
 msgctxt "advanced_colors|"
 msgid "Find the mahogany butterfly"
-msgstr "மஹகணி பட்டாம் பூச்சி கண்டு பிடி "
+msgstr "மஹகணி வண்ணத்துப்பூச்சியைக் கண்டுபிடியுங்கள்"
 
 #. Color #7FFFD4
 #: activities/advanced_colors/advanced_colors.js:151
 #: activities/advanced_colors/advanced_colors.js:760
 msgctxt "advanced_colors|"
 msgid "Find the aquamarine butterfly"
-msgstr "கடல் வண்ணக் கல் பட்டாம் பூச்சி கண்டு பிடி "
+msgstr "கடல் வண்ண வண்ணத்துப்பூச்சியைக் கண்டுபிடியுங்கள்"
 
 #. Color #F2F0E6
 #: activities/advanced_colors/advanced_colors.js:156
 #: activities/advanced_colors/advanced_colors.js:520
 msgctxt "advanced_colors|"
 msgid "Find the alabaster butterfly"
-msgstr "நிலா காந்தக் கல் பட்டாம் பூச்சி கண்டு பிடி "
+msgstr "நிலா காந்தக் கல் வண்ணத்துப்பூச்சியைக் கண்டுபிடியுங்கள்"
 
 #. Color #FFBF00
 #: activities/advanced_colors/advanced_colors.js:161
 #: activities/advanced_colors/advanced_colors.js:708
 msgctxt "advanced_colors|"
 msgid "Find the amber butterfly"
-msgstr "ஓர்கோலை பட்டாம் பூச்சி கண்டு பிடி "
+msgstr "அம்பர் வண்ணத்துப்பூச்சியைக் கண்டுபிடியுங்கள்"
 
 #. Color #9966CC
 #: activities/advanced_colors/advanced_colors.js:166
 msgctxt "advanced_colors|"
 msgid "Find the amethyst butterfly"
-msgstr "செவ்வந்திக் கல் பட்டாம் பூச்சி கண்டு பிடி "
+msgstr "செவ்வந்திக்கல்நிற வண்ணத்துப்பூச்சியைக் கண்டுபிடியுங்கள்"
 
 #. Color #F5EACC
 #: activities/advanced_colors/advanced_colors.js:171
@@ -378,7 +381,7 @@ msgstr "செவ்வந்திக் கல் பட்டாம் பூ
 #: activities/advanced_colors/advanced_colors.js:772
 msgctxt "advanced_colors|"
 msgid "Find the anise butterfly"
-msgstr "சோம்பு பட்டாம் பூச்சி கண்டு பிடி "
+msgstr "சோம்புநிற வண்ணத்துப்பூச்சியைக் கண்டுபிடியுங்கள்"
 
 #. Color #E34234
 #: activities/advanced_colors/advanced_colors.js:176
@@ -386,13 +389,13 @@ msgstr "சோம்பு பட்டாம் பூச்சி கண்ட
 #: activities/advanced_colors/advanced_colors.js:555
 msgctxt "advanced_colors|"
 msgid "Find the vermilion butterfly"
-msgstr "செந்தூரம் பட்டாம் பூச்சி கண்டு பிடி "
+msgstr "செந்தூரநிற வண்ணத்துப்பூச்சியைக் கண்டுபிடியுங்கள்"
 
 #. Color #EEEBEB
 #: activities/advanced_colors/advanced_colors.js:183
 msgctxt "advanced_colors|"
 msgid "Find the ceruse butterfly"
-msgstr "ஈய வெள்ளை பட்டாம் பூச்சி கண்டு பிடி "
+msgstr "ஈய வெள்ளை நிற வண்ணத்துப்பூச்சியைக் கண்டுபிடியுங்கள்"
 
 #. Color #E5AA70
 #: activities/advanced_colors/advanced_colors.js:188
@@ -401,20 +404,20 @@ msgstr "ஈய வெள்ளை பட்டாம் பூச்சி க�
 #: activities/advanced_colors/advanced_colors.js:651
 msgctxt "advanced_colors|"
 msgid "Find the fawn butterfly"
-msgstr "இளமஞ்சள் பட்டாம் பூச்சி கண்டு பிடி "
+msgstr "இளமஞ்சள் வண்ணத்துப்பூச்சியைக் கண்டுபிடியுங்கள்"
 
 #. Color #7FFF00
 #: activities/advanced_colors/advanced_colors.js:193
 #: activities/advanced_colors/advanced_colors.js:713
 msgctxt "advanced_colors|"
 msgid "Find the chartreuse butterfly"
-msgstr "வெளிர்பச்சை பட்டாம் பூச்சி கண்டு பிடி "
+msgstr "வெளிர்பச்சை வண்ணத்துப்பூச்சியைக் கண்டுபிடியுங்கள்"
 
 #. Color #50C878
 #: activities/advanced_colors/advanced_colors.js:198
 msgctxt "advanced_colors|"
 msgid "Find the emerald butterfly"
-msgstr "மரகதம் பட்டாம் பூச்சி கண்டு பிடி "
+msgstr "மரகதநிற வண்ணத்துப்பூச்சியைக் கண்டுபிடியுங்கள்"
 
 #. Color #614051
 #: activities/advanced_colors/advanced_colors.js:203
@@ -426,14 +429,14 @@ msgstr "மரகதம் பட்டாம் பூச்சி கண்ட
 #: activities/advanced_colors/advanced_colors.js:829
 msgctxt "advanced_colors|"
 msgid "Find the aubergine butterfly"
-msgstr "அபர்ஜைன் பட்டாம் பூச்சி கண்டு பிடி "
+msgstr "கத்திரிக்காய்நிற வண்ணத்துப்பூச்சியைக் கண்டுபிடியுங்கள்"
 
 #. Color #CC397B
 #: activities/advanced_colors/advanced_colors.js:208
 #: activities/advanced_colors/advanced_colors.js:797
 msgctxt "advanced_colors|"
 msgid "Find the fuchsia butterfly"
-msgstr "பக்ஸியா பட்டாம் பூச்சி கண்டு பிடி "
+msgstr "ஃபக்ஸியா வண்ணத்துப்பூச்சியைக் கண்டுபிடியுங்கள்"
 
 #. Color #6082B6
 #: activities/advanced_colors/advanced_colors.js:218
@@ -721,43 +724,31 @@ msgstr "கரும் ஊதா பட்டாம் பூச்சி க�
 #: activities/wordsgame/ActivityConfig.qml:50
 msgctxt "ActivityConfig|"
 msgid "Speed"
-msgstr ""
+msgstr "வேகம்"
 
 #. Activity title
 #: activities/algebra_by/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplication table"
 msgctxt "ActivityInfo|"
 msgid "Multiplication of numbers"
-msgstr "பெருக்கல் வாய்ப்பாடு"
+msgstr "எண்களைப் பெருக்கல்"
 
 #. Help title
 #: activities/algebra_by/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice the multiplication operation"
 msgctxt "ActivityInfo|"
 msgid "Practice the multiplication operation."
-msgstr "பெருக்கல் பழகுவோம்"
+msgstr "எண்களைப் பெருக்கிப் பழகுங்கள்."
 
 #. Help goal
 #: activities/algebra_by/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "In a limited time, find the difference between two numbers"
 msgctxt "ActivityInfo|"
 msgid "Learn to multiply numbers within a limited period of time."
-msgstr "கொடுத்த நேரத்தில் இரண்டு எண்களின் வித்தியாசத்தை கண்டு பிடிப்போம்."
+msgstr "குறிப்பிட்ட நேரத்திற்குள் இரண்டு எண்களின் பெருக்கும் பயிற்சி தரும்."
 
 #. Help prerequisite
 #: activities/algebra_by/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplication table"
 msgctxt "ActivityInfo|"
 msgid "Multiplication tables from 1 to 10."
-msgstr "பெருக்கல் வாய்ப்பாடு"
+msgstr "1-இலிருந்து 10 வரையான பெருக்கல் வாய்ப்பாடு"
 
 #. Help manual
 #: activities/algebra_by/ActivityInfo.qml:24
@@ -777,7 +768,7 @@ msgstr ""
 #: activities/smallnumbers2/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Digits: type your answer"
-msgstr ""
+msgstr "எண்கள்: விடையை உள்ளிடுவது"
 
 #: activities/algebra_by/ActivityInfo.qml:27
 #: activities/algebra_div/ActivityInfo.qml:27
@@ -785,7 +776,7 @@ msgstr ""
 #: activities/algebra_plus/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Backspace: delete the last digit in your answer"
-msgstr ""
+msgstr "Backspace: கடைசியாக உள்ளிட்ட எண்ணை நீக்கும்"
 
 #: activities/algebra_by/ActivityInfo.qml:28
 #: activities/algebra_div/ActivityInfo.qml:28
@@ -802,7 +793,7 @@ msgstr ""
 #: activities/roman_numerals/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid "Enter: validate your answer"
-msgstr ""
+msgstr "Enter: விடையை சரிபார்க்கும்"
 
 #: activities/algebra_by/resource/1/Data.qml:13
 #, fuzzy
