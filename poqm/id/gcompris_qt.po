@@ -21,7 +21,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris 2.0\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2022-08-26 23:44+0700\n"
+"PO-Revision-Date: 2022-09-29 10:40+0700\n"
 "Last-Translator: Wantoyèk <wantoyek@gmail.com>\n"
 "Language-Team: Indonesian <kde-i18n-doc@kde.org>\n"
 "Language: id\n"
@@ -4019,12 +4019,9 @@ msgstr "Pindahkan SAYURAN ke kanan dan objek-objek lainya ke kiri"
 
 #. Activity title
 #: activities/checkers/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Play chess against Tux"
 msgctxt "ActivityInfo|"
 msgid "Play checkers (against Tux)"
-msgstr "Mainkan catur melawan Penguin"
+msgstr "Mainkan halma (melawan Penguin Tux)"
 
 #. Help title
 #: activities/checkers/ActivityInfo.qml:17
@@ -4137,12 +4134,9 @@ msgstr "Hitam menang"
 
 #. Activity title
 #: activities/checkers_2players/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Play checkers with your friend"
 msgctxt "ActivityInfo|"
 msgid "Play checkers (with a friend)"
-msgstr "Mainkan dengan teman-temanmu"
+msgstr "Mainkan halma (dengan teman-teman)"
 
 #. Help manual
 #: activities/checkers_2players/ActivityInfo.qml:24
@@ -4185,12 +4179,9 @@ msgstr ""
 
 #. Activity title
 #: activities/chess/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Play chess against Tux"
 msgctxt "ActivityInfo|"
 msgid "Play chess (against Tux)"
-msgstr "Mainkan catur melawan Penguin"
+msgstr "Mainkan catur (melawan Penguin Tux)"
 
 #. Help manual Much of this string is shared across the three activities "chess", "chess_partyend", and "chess_2players".
 #: activities/chess/ActivityInfo.qml:25
@@ -4263,6 +4254,9 @@ msgid ""
 "will redo one move. To undo all the moves, press and hold the undo button "
 "for 3 seconds."
 msgstr ""
+"Klik tunggal pada tombol undo akan membatalkan satu gerakan. Klik tunggal "
+"pada tombol redo akan mengulang satu gerakan. Untuk membatalkan semua "
+"gerakan, tekan dan tahan tombol undo selama 3 detik."
 
 #: activities/chess/ActivityInfo.qml:33
 #: activities/chess_partyend/ActivityInfo.qml:33
@@ -4314,37 +4308,25 @@ msgstr "Tidak boleh, rajamu diskak"
 
 #. Translators: undo all the moves in chess activity
 #: activities/chess/Chess.qml:123
-#, fuzzy
-#| msgctxt "core|"
-#| msgid "Do you really want to quit GCompris?"
 msgctxt "Chess|"
 msgid "Do you really want to undo all the moves?"
-msgstr "Kamu yakin ingin keluar dari GCompris?"
+msgstr "Apakah kamu yakin ingin mengurungkan semua langkah?"
 
 #: activities/chess/Chess.qml:124
-#, fuzzy
-#| msgctxt "balanceboxeditor|"
-#| msgid "Yes"
 msgctxt "Chess|"
 msgid "Yes"
 msgstr "Ya"
 
 #: activities/chess/Chess.qml:125
-#, fuzzy
-#| msgctxt "balanceboxeditor|"
-#| msgid "No"
 msgctxt "Chess|"
 msgid "No"
 msgstr "Tidak"
 
 #. Activity title
 #: activities/chess_2players/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Play oware with a friend"
 msgctxt "ActivityInfo|"
 msgid "Play chess (with a friend)"
-msgstr "Bermain congklak dengan teman"
+msgstr "Mainkan catur (dengan teman)"
 
 #. Help manual Much of this string is shared across the three activities "chess", "chess_partyend", and "chess_2players".
 #: activities/chess_2players/ActivityInfo.qml:25
@@ -8369,18 +8351,13 @@ msgid "Polar bear"
 msgstr "Beruang kutub"
 
 #: activities/explore_world_animals/resource/board/board2.qml:31
-#, fuzzy
-#| msgctxt "board2|"
-#| msgid ""
-#| "The polar bear is one of the world's largest predatory mammals. It "
-#| "weights up to a ton and can be as long as 3 meters!"
 msgctxt "board2|"
 msgid ""
 "The polar bear is one of the world's largest predatory mammals. It weighs up "
 "to a ton and can be as long as 3 meters!"
 msgstr ""
 "Beruang kutub adalah salah satu mamalia predator terbesar. Beratnya bisa "
-"lebih dari 1 ton dan tingginya bisa lebih dari 3 meter!"
+"mencapai 1 ton dan tingginya bisa lebih dari 3 meter!"
 
 #: activities/explore_world_animals/resource/board/board2.qml:41
 #: activities/explore_world_animals/resource/board/board2.qml:44
@@ -9291,30 +9268,20 @@ msgid "A shape split in equal parts is displayed on screen."
 msgstr ""
 
 #: activities/fractions_create/ActivityInfo.qml:18
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Drag the appropriate numbers and the operators to the boxes to obtain the "
-#| "number to guess in the instruction."
 msgctxt "ActivityInfo|"
 msgid ""
 "Select the appropriate number of parts as described in the instructions."
-msgstr ""
-"Seret angka dan lambang operasi hitung yang sesuai ke dalam kotak untuk "
-"mendapatkan angka yang ditebak pada instruksi."
+msgstr "Pilih angka yang sesuai pada bagian yang dijelaskan sesuai intruksi."
 
 #: activities/fractions_create/fractions_create.js:79
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Digits representation"
 msgctxt "fractions_create|"
 msgid "Find the represented fraction."
-msgstr "Representasi digit"
+msgstr "Temukan pecahan yang diwakili."
 
 #: activities/fractions_create/resource/1/Data.qml:9
 msgctxt "Data|"
 msgid "Simplified fractions with a pie."
-msgstr ""
+msgstr "Pecahan sederhana dengan pai."
 
 #: activities/fractions_create/resource/1/Data.qml:18
 #: activities/fractions_create/resource/3/Data.qml:17
@@ -9322,78 +9289,63 @@ msgstr ""
 #: activities/fractions_create/resource/3/Data.qml:29
 msgctxt "Data|"
 msgid "Select one half of the pie."
-msgstr ""
+msgstr "Pilih satu setengah dari pai."
 
 #: activities/fractions_create/resource/1/Data.qml:24
 #: activities/fractions_create/resource/3/Data.qml:35
 #: activities/fractions_create/resource/3/Data.qml:49
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Select the fifth Thursday of the given month"
 msgctxt "Data|"
 msgid "Select one-third of the pie."
-msgstr "Pilih hari Kamis kelima pada bulan yang disebutkan"
+msgstr "Pilih sepertiga dari pai."
 
 #: activities/fractions_create/resource/1/Data.qml:30
 #: activities/fractions_create/resource/3/Data.qml:41
 #: activities/fractions_create/resource/3/Data.qml:55
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Select the fourth Sunday of the given month"
 msgctxt "Data|"
 msgid "Select two-thirds of the pie."
-msgstr "Pilih hari Minggu keempat pada bulan yang disebutkan"
+msgstr "Pilih dua pertiga dari pai."
 
 #: activities/fractions_create/resource/1/Data.qml:36
 #: activities/fractions_create/resource/3/Data.qml:61
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Select the butterfly of the correct color."
 msgctxt "Data|"
 msgid "Select one-quarter of the pie."
-msgstr "Pilih kupu-kupu sesuai warna yang tepat."
+msgstr "Pilih seperempat pai."
 
 #: activities/fractions_create/resource/1/Data.qml:42
 #: activities/fractions_create/resource/3/Data.qml:67
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Select the fifth Thursday of the given month"
 msgctxt "Data|"
 msgid "Select two-fifths of the pie."
-msgstr "Pilih hari Kamis kelima pada bulan yang disebutkan"
+msgstr "Pilih dua perlima dari pai."
 
 #: activities/fractions_create/resource/1/Data.qml:50
 msgctxt "Data|"
 msgid "Select one pie and one-quarter of a pie."
-msgstr ""
+msgstr "Pilih satu pai dan seperempat pai."
 
 #: activities/fractions_create/resource/1/Data.qml:56
 msgctxt "Data|"
 msgid "Select one pie and two-fifths of a pie."
-msgstr ""
+msgstr "Pilih satu pai dan dua per lima pai."
 
 #: activities/fractions_create/resource/1/Data.qml:62
 msgctxt "Data|"
 msgid "Select one pie and one-third of a pie."
-msgstr ""
+msgstr "Pilih satu pai dan sepertiga pai."
 
 #: activities/fractions_create/resource/1/Data.qml:68
 msgctxt "Data|"
 msgid "Select one pie and one half of a pie."
-msgstr ""
+msgstr "Pilih satu pai dan satu setengah pai."
 
 #: activities/fractions_create/resource/1/Data.qml:74
 msgctxt "Data|"
 msgid "Select one pie and three-quarters of a pie."
-msgstr ""
+msgstr "Pilih satu pai dan tiga perempat pai."
 
 #: activities/fractions_create/resource/10/Data.qml:9
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Answer the questions with a correctness of 100%."
 msgctxt "Data|"
 msgid "Specific questions with a rectangle."
-msgstr "Jawab pertanyaan dengan 100% benar."
+msgstr "Pertanyaan spesifik dengan persegi panjang."
 
 #: activities/fractions_create/resource/10/Data.qml:18
 #: activities/fractions_create/resource/10/Data.qml:24
@@ -9402,98 +9354,82 @@ msgid ""
 "Select as many parts as you can without taking more than half of the "
 "rectangle."
 msgstr ""
+"Pilih sebanyak mungkin bagian tanpa mengambil lebih dari setengah persegi "
+"panjang."
 
 #: activities/fractions_create/resource/2/Data.qml:9
 msgctxt "Data|"
 msgid "Simplified fractions with a rectangle."
-msgstr ""
+msgstr "Pecahan sederhana dengan persegi panjang."
 
 #: activities/fractions_create/resource/2/Data.qml:18
 #: activities/fractions_create/resource/4/Data.qml:17
 #: activities/fractions_create/resource/4/Data.qml:23
 #: activities/fractions_create/resource/4/Data.qml:29
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Select the butterfly of the correct color."
 msgctxt "Data|"
 msgid "Select one half of the rectangle."
-msgstr "Pilih kupu-kupu sesuai warna yang tepat."
+msgstr "Pilih satu setengah dari persegi panjang."
 
 #: activities/fractions_create/resource/2/Data.qml:24
 #: activities/fractions_create/resource/4/Data.qml:35
 #: activities/fractions_create/resource/4/Data.qml:49
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Select the butterfly of the correct color."
 msgctxt "Data|"
 msgid "Select one-third of the rectangle."
-msgstr "Pilih kupu-kupu sesuai warna yang tepat."
+msgstr "Pilih sepertiga dari persegi panjang."
 
 #: activities/fractions_create/resource/2/Data.qml:30
 #: activities/fractions_create/resource/4/Data.qml:41
 #: activities/fractions_create/resource/4/Data.qml:55
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Select the butterfly of the correct color."
 msgctxt "Data|"
 msgid "Select two-thirds of the rectangle."
-msgstr "Pilih kupu-kupu sesuai warna yang tepat."
+msgstr "Pilih dua pertiga dari persegi panjang."
 
 #: activities/fractions_create/resource/2/Data.qml:36
 #: activities/fractions_create/resource/4/Data.qml:61
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Select the butterfly of the correct color."
 msgctxt "Data|"
 msgid "Select one-quarter of the rectangle."
-msgstr "Pilih kupu-kupu sesuai warna yang tepat."
+msgstr "Pilih seperempat dari persegi panjang."
 
 #: activities/fractions_create/resource/2/Data.qml:42
 #: activities/fractions_create/resource/4/Data.qml:67
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Select the fifth Thursday of the given month"
 msgctxt "Data|"
 msgid "Select two-fifths of the rectangle."
-msgstr "Pilih hari Kamis kelima pada bulan yang disebutkan"
+msgstr "Pilih dua perlima dari persegi panjang."
 
 #: activities/fractions_create/resource/2/Data.qml:50
 msgctxt "Data|"
 msgid "Select one rectangle and one-quarter of a rectangle."
-msgstr ""
+msgstr "Pilih satu persegi panjang dan seperempat dari persegi panjang."
 
 #: activities/fractions_create/resource/2/Data.qml:56
 msgctxt "Data|"
 msgid "Select one rectangle and two-fifths of a rectangle."
-msgstr ""
+msgstr "Pilih satu persegi panjang dan dua seperlima dari persegi panjang."
 
 #: activities/fractions_create/resource/2/Data.qml:62
 msgctxt "Data|"
 msgid "Select one rectangle and one-third of a rectangle."
-msgstr ""
+msgstr "Pilih satu persegi panjang dan sepertiga dari persegi panjang."
 
 #: activities/fractions_create/resource/2/Data.qml:68
 msgctxt "Data|"
 msgid "Select one rectangle and one half of a rectangle."
-msgstr ""
+msgstr "Pilih satu persegi panjang dan satu setengah dari persegi panjang."
 
 #: activities/fractions_create/resource/2/Data.qml:74
 msgctxt "Data|"
 msgid "Select one rectangle and three-quarters of a rectangle."
-msgstr ""
+msgstr "Pilih satu persegi panjang dan tiga seperempat dari persegi panjang."
 
 #: activities/fractions_create/resource/3/Data.qml:9
 msgctxt "Data|"
 msgid "Non-simplified fractions with a pie."
-msgstr ""
+msgstr "Pecahan yang tidak disederhanakan dengan pai."
 
 #: activities/fractions_create/resource/3/Data.qml:73
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Select the fifth Thursday of the given month"
 msgctxt "Data|"
 msgid "Select three-fifths of the pie."
-msgstr "Pilih hari Kamis kelima pada bulan yang disebutkan"
+msgstr "Pilih tiga-perlima dari pai."
 
 #: activities/fractions_create/resource/4/Data.qml:9
 msgctxt "Data|"
@@ -10989,7 +10925,7 @@ msgstr ""
 #: activities/geo-country/resource/board/board18_0.qml:29
 msgctxt "board18_0|"
 msgid "Madrid"
-msgstr ""
+msgstr "Madrid"
 
 #. Autonomous communities of Spain: Galicia
 #: activities/geo-country/resource/board/board18_0.qml:36
@@ -11011,12 +10947,9 @@ msgstr ""
 
 #. Autonomous communities of Spain: Catalonia
 #: activities/geo-country/resource/board/board18_0.qml:57
-#, fuzzy
-#| msgctxt "board14_0|"
-#| msgid "New Caledonia"
 msgctxt "board18_0|"
 msgid "Catalonia"
-msgstr "Kaledonia Baru"
+msgstr "Catalonia"
 
 #. Autonomous communities of Spain: Aragon
 #: activities/geo-country/resource/board/board18_0.qml:64
@@ -11056,9 +10989,6 @@ msgstr ""
 
 #. Autonomous communities of Spain: La Rioja
 #: activities/geo-country/resource/board/board18_0.qml:99
-#, fuzzy
-#| msgctxt "board3_0|"
-#| msgid "La Rioja"
 msgctxt "board18_0|"
 msgid "La Rioja"
 msgstr "La Rioja"
@@ -11089,12 +11019,9 @@ msgstr ""
 
 #. Autonomous communities of Spain: Canary Islands
 #: activities/geo-country/resource/board/board18_0.qml:127
-#, fuzzy
-#| msgctxt "board14_0|"
-#| msgid "Mariana Islands"
 msgctxt "board18_0|"
 msgid "Canary Islands"
-msgstr "Kepulauan Mariana"
+msgstr "Kepulauan Canaria"
 
 #. Autonomous communities of Spain: Balearic Islands
 #: activities/geo-country/resource/board/board18_0.qml:134
@@ -11109,7 +11036,7 @@ msgstr "Kepulauan Mariana"
 #: activities/geo-country/resource/board/board18_0.qml:141
 msgctxt "board18_0|"
 msgid "Ceuta"
-msgstr ""
+msgstr "Ceuta"
 
 #. Autonomous communities of Spain: Melilla
 #: activities/geo-country/resource/board/board18_0.qml:148
@@ -13118,7 +13045,7 @@ msgstr "Belanda"
 #: activities/geography/resource/board/board5_0.qml:73
 msgctxt "board5_0|"
 msgid "Luxembourg"
-msgstr ""
+msgstr "Luxembourg"
 
 #: activities/geography/resource/board/board5_0.qml:81
 msgctxt "board5_0|"
@@ -13171,9 +13098,6 @@ msgid "Eastern Europe"
 msgstr "Eropa Timur"
 
 #: activities/geography/resource/board/board6_0.qml:24
-#, fuzzy
-#| msgctxt "board9_0|"
-#| msgid "Cyprus"
 msgctxt "board6_0|"
 msgid "Cyprus"
 msgstr "Siprus"
@@ -18289,7 +18213,7 @@ msgstr "Bagian menu kegiatan terlihat"
 #: activities/menu/ConfigurationItem.qml:296
 msgctxt "ConfigurationItem|"
 msgid "Ask for confirmation to exit"
-msgstr ""
+msgstr "Tanyakan konfirmasi untuk keluar"
 
 #: activities/menu/ConfigurationItem.qml:307
 msgctxt "ConfigurationItem|"
@@ -19728,6 +19652,16 @@ msgid ""
 "Tigers|live|in|forests.\n"
 "Football|is|a|team|game."
 msgstr ""
+"Anjing|menggonggong.\n"
+"Rumahnya|berwarna|merah.\n"
+"Bocah|itu|membaca|buku.\n"
+"Teman|aku|baik.\n"
+"Sungguh|pemandangan|yang|indah!\n"
+"Steve|melompat|ke|kolam.\n"
+"Jessica|menginginkan|buku|baru.\n"
+"Ibu|membuatkan|aku|roti.\n"
+"Harimau|tinggal|di|hutan.\n"
+"Sepak bola|adalah|permainan|regu."
 
 #: activities/ordering_sentences/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -19749,15 +19683,22 @@ msgid ""
 "Mom|has|asked|me|to|play|in|the|room.\n"
 "I|think|we|are|going|to|have|a|good|day."
 msgstr ""
+"Matahari|bersinar|di|langit.\n"
+"Anak-anak|senang|bermain|di|luar|pada|sore|hari.\n"
+"Apakah|kamu|pergi|keluar|untuk|makan siang?\n"
+"Gadis|itu|mengikat|sepatu|tenisnya|dan|pergi|ke|luar.\n"
+"Sam|merasa|sakit|setelah|makan|lima|biji|permen|besar.\n"
+"Kami|sekeluarga|beribur|ke|pantai|setiap|tahun.\n"
+"Paman|Joe|memberi|aku|mainan|truk|merah.\n"
+"Ketika|kamu|menghabiskan|nasi|kamu|bisa|makan|makanan|penutup.\n"
+"Ibu|telah|meminta|aku|untuk|bermain|di|kamar.\n"
+"Aku|pikir|kita|sedang|pergi|pada|hari|yang|baik."
 
 #. Activity title
 #: activities/oware/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Play oware against Tux"
 msgctxt "ActivityInfo|"
 msgid "Play oware (against Tux)"
-msgstr "Mainkan congklak melawan Tux"
+msgstr "Mainkan congklak (melawan Tux)"
 
 #. Help title
 #: activities/oware/ActivityInfo.qml:16
@@ -19849,12 +19790,9 @@ msgstr "Langkah tidak sah!"
 
 #. Activity title
 #: activities/oware_2players/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Play oware with a friend"
 msgctxt "ActivityInfo|"
 msgid "Play oware (with a friend)"
-msgstr "Bermain congklak dengan teman"
+msgstr "Bermain congklak (dengan teman)"
 
 #. Help title
 #: activities/oware_2players/ActivityInfo.qml:16
@@ -25275,7 +25213,7 @@ msgstr ""
 #: activities/tic_tac_toe/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Tux will play better when you increase the level."
-msgstr ""
+msgstr "Pinguin Tux akan bermain lebih baik ketika kamu meningkatkan level."
 
 #. Activity title
 #: activities/tic_tac_toe_2players/ActivityInfo.qml:18
@@ -25871,12 +25809,10 @@ msgid "GCompris %1"
 msgstr "GCompris %1"
 
 #: core/DialogAbout.qml:57
-#, fuzzy, qt-format
-#| msgctxt "DialogAbout|"
-#| msgid "Based on Qt %1"
+#, qt-format
 msgctxt "DialogAbout|"
 msgid "Based on Qt %1 and %2"
-msgstr "Berdasarkan Qt %1"
+msgstr "Berdasarkan Qt %1 dan %2"
 
 #: core/DialogAbout.qml:61
 msgctxt "DialogAbout|"
@@ -26334,12 +26270,12 @@ msgstr ""
 #: core/main.cpp:199
 msgctxt "QObject|"
 msgid "Specify the activity when starting GCompris."
-msgstr ""
+msgstr "Tentukan aktivitas ketika memulai GCompris."
 
 #: core/main.cpp:204
 msgctxt "QObject|"
 msgid "Outputs all the available activities on the standard output."
-msgstr ""
+msgstr "Keluaran semua aktivitas yang tersedia pada output standar."
 
 #: core/main.qml:233
 msgctxt "main|"

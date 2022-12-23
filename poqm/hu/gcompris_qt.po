@@ -6,7 +6,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2022-12-18 13:41+0100\n"
+"PO-Revision-Date: 2022-12-22 08:15+0100\n"
 "Last-Translator: István Lipták <elistvan@gmail.com>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
 "Language: hu\n"
@@ -5158,7 +5158,7 @@ msgstr "Folytatás"
 #: activities/comparator/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Compare numbers"
-msgstr "Számok összehaosnlítása"
+msgstr "Kisebb-nagyobb"
 
 #. Help title
 #: activities/comparator/ActivityInfo.qml:19
@@ -5216,7 +5216,7 @@ msgstr "Enter: Válasz véglegesítése"
 #: activities/comparator/ActivityInfo.qml:33
 msgctxt "ActivityInfo|"
 msgid "&lt;, &gt; or =: enter the corresponding symbol"
-msgstr "&lt;, &gt; vagy =: írd be a megfeleléő jelet!"
+msgstr "&lt;, &gt; vagy =: írd be a megfelelő jelet!"
 
 #: activities/comparator/resource/1/Data.qml:36
 #: activities/tens_complement_find/resource/3/Data.qml:9
@@ -15118,8 +15118,8 @@ msgid ""
 "A decimal number is displayed. The bar with the arrow represents a full "
 "unit, and each square in it represents one tenth of this unit."
 msgstr ""
-"Egy tizedes szám jelenik meg. A jelölő egy nyíllal egy teljes egységet "
-"jelöl, és minden kocka egy tizede a fenti egységnek."
+"Egy tizedes szám jelenik meg. A jel egy nyíllal egy teljes egységet jelöl, "
+"és minden kocka egy tizede a fenti egységnek."
 
 #: activities/learn_decimals/learn_decimals.js:37
 msgctxt "learn_decimals|"
@@ -15206,7 +15206,7 @@ msgstr ""
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the number: %1"
-msgstr "Mutassa a %1 számot."
+msgstr "Jelöld be a %1 értéket!"
 
 #: activities/learn_decimals/Learn_decimals.qml:113
 #, qt-format
@@ -15496,7 +15496,7 @@ msgid ""
 "number of dropped oranges corresponds to the requested quantity. Then click "
 "on the OK button to validate your answer."
 msgstr ""
-"Egy mennyiség szükséges. A nyíl segítségével válazsd ki a mnaeancsok "
+"Egy mennyiség szükséges. A nyíl segítségével válaszd ki a narancsok "
 "mennyiségét! Addig ismételd amíg a kiválasztott narancsok száma nem egyeznek "
 "a megadottakkal. majd az OK-val ellenőrizd a válaszodat!"
 
@@ -18354,7 +18354,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "You have to send and receive letters and digits in International Morse code."
 msgstr ""
-"Számokat és betűket kell küldenek és fogadnod a nemzetközi Morze-kód "
+"Számokat és betűket kell küldened és fogadnod a nemzetközi Morze-kód "
 "segítségével."
 
 #. Help prerequisite
@@ -18402,10 +18402,10 @@ msgid ""
 "For example, the most common letter in English, the letter \"E\", has the "
 "shortest code, a single dot."
 msgstr ""
-"Minden Morze-kód egy karaktert jelent (betűt vagy számot) vagy egy előjelet "
-"és egy egyedi pont vagy vonaljelnek felel meg. A vonal hosszúsága "
-"háromszorosa a ponténak. A kommunikáció felgyorsítása érdekében, a kód úgy "
-"lett megalkotva, hogy a leggyakoribb betűk jelei a legrövidebbek.\n"
+"Minden Morze-kód egy karaktert jelent (betűt vagy számot) amelyet egy egyedi "
+"pont vagy vonaljel szimbolizál. A vonal hosszúsága háromszorosa a ponténak. "
+"A kommunikáció felgyorsítása érdekében, a kód úgy lett megalkotva, hogy a "
+"leggyakoribb betűk jelei a legrövidebbek.\n"
 " Például az angol nyelvben a \"E\" betű a leggyakoribb, melynek a Morze-"
 "kódja egy pont."
 
@@ -19063,7 +19063,7 @@ msgstr "Rendezd sorba a megadott számokat ahogy a feladat kéri!"
 #: activities/ordering_numbers/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "Compare numbers."
-msgstr "Számok összehaosnlítása"
+msgstr "Kisebb-nagyobb"
 
 #. Help prerequisite
 #: activities/ordering_numbers/ActivityInfo.qml:27
@@ -24415,7 +24415,7 @@ msgstr "Maximális érték 500000."
 #: activities/tens_complement_find/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Find ten's complement"
-msgstr "Találd meg tíz bontását!"
+msgstr "A tíz bontása"
 
 #. Help title
 #: activities/tens_complement_find/ActivityInfo.qml:16
@@ -24433,7 +24433,7 @@ msgstr "Tanuljunk meg a tíz bontását!"
 #: activities/tens_complement_find/ActivityInfo.qml:21
 msgctxt "ActivityInfo|"
 msgid "Numbers from 1 to 10 and additions."
-msgstr "Számok 1-10-ig és össezadások."
+msgstr "Számok 1-10-ig és összeadások."
 
 #: activities/tens_complement_find/ActivityInfo.qml:23
 #: activities/tens_complement_use/ActivityInfo.qml:24
@@ -24444,9 +24444,9 @@ msgid ""
 "corresponding lines. To correct the errors, click on the wrong numbers to "
 "remove them and repeat the previous steps."
 msgstr ""
-"Ha minden sor kész, nyomd meg az Ok gombot a válaszok ellenőrzéséhez! Ha "
-"vannak helytelen válaszok, eg X jelenik meg a megfelelő sorokban. A "
-"javításhoz, kattints a rossz számokra, az elvételhez, majd ismételd meg az "
+"Ha minden sor kész, nyomd meg az OK gombot a válaszok ellenőrzéséhez! Ha "
+"vannak helytelen válaszok, egy X jelenik meg a megfelelő sorokban. A "
+"javításhoz, kattints a rossz számokra, a törléshez, majd ismételd meg az "
 "előző lépést!"
 
 #. Help manual
@@ -24457,7 +24457,7 @@ msgid ""
 "select an empty spot of an operation to move the selected number there."
 msgstr ""
 "Alkoss tízzel egyenlő számpárokat! Válassz egy számot a listáról, majd "
-"választd ki az üres mezőt egy műveletnél, hogy a kiválasztott számot beírd "
+"válaszd ki az üres mezőt egy műveletnél, hogy a kiválasztott számot beírd "
 "oda!"
 
 #: activities/tens_complement_find/resource/1/Data.qml:25
@@ -24479,7 +24479,7 @@ msgstr "Találd meg mindkét számot!"
 #: activities/tens_complement_swap/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Swap ten's complement"
-msgstr "Tíz bontásának cseréje"
+msgstr "Tíz bontása zárójellel"
 
 #. Help title
 #: activities/tens_complement_swap/ActivityInfo.qml:16
@@ -24517,7 +24517,7 @@ msgstr ""
 "másikat ugyanabban a műveletben, hogy felcseréld őket. Ha minden sor kész, "
 "nyomd meg az OK gombot a válaszok ellenőrzéséhez! Ha vannak helytelen "
 "válaszok a műveletek között, egy X jel jelenik meg, az adott sorokban. "
-"Javítsd ki a hibákat majd nyomfd meg újra az OK gombot!"
+"Javítsd ki a hibákat majd nyomd meg újra az OK gombot!"
 
 #: activities/tens_complement_swap/resource/1/Data.qml:36
 msgctxt "Data|"
@@ -24567,8 +24567,8 @@ msgid ""
 "operation to move the selected number there."
 msgstr ""
 "Bontsd szét az összeadásokat tíz értékű párokra a zárójelekben.Válassz egy "
-"számot a listáról majd válassz egy üres helyetegy műveletben, hogy elhelyezd "
-"a választott számot!"
+"számot a listáról majd válassz egy üres helyet egy műveletben, hogy "
+"elhelyezd a választott számot!"
 
 #: activities/tens_complement_use/resource/1/Data.qml:43
 msgctxt "Data|"
