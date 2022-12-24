@@ -24125,9 +24125,14 @@ msgid "As the sun rises, the water of the sea starts heating and evaporates."
 msgstr "太陽升起時，海裡的水會開始被加熱而蒸發。"
 
 #: activities/watercycle/Watercycle.qml:80
+#, fuzzy
+#| msgctxt "Watercycle|"
+#| msgid ""
+#| "Water vapor condenses to form cloud and when clouds become heavy, it "
+#| "rains. Click on the cloud."
 msgctxt "Watercycle|"
 msgid ""
-"Water vapor condenses to form cloud and when clouds become heavy, it rains. "
+"Water vapor condenses to form clouds and when clouds become heavy, it rains. "
 "Click on the cloud."
 msgstr "水蒸氣凝結成雲。當雲變重之後，就會下雨，點擊雲看看。"
 
@@ -24169,11 +24174,17 @@ msgstr ""
 "蒸發需要的能量。"
 
 #: activities/watercycle/Watercycle.qml:115
+#, fuzzy
+#| msgctxt "Watercycle|"
+#| msgid ""
+#| "Plants also lose water to the air through transpiration. The water vapor "
+#| "cools down forming tiny droplets in clouds. When the clouds meet cool air "
+#| "over the land, precipitation is triggered and fall down as rain."
 msgctxt "Watercycle|"
 msgid ""
 "Plants also lose water to the air through transpiration. The water vapor "
 "cools down forming tiny droplets in clouds. When the clouds meet cool air "
-"over the land, precipitation is triggered and fall down as rain."
+"over the land, precipitation is triggered and falls down as rain."
 msgstr ""
 "植物也會將水排出到空氣中。水蒸氣會冷卻，凝結成小水滴形成雲。當雲遇上更冷的空"
 "氣，就會形成降水，也就是下雨。"

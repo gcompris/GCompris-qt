@@ -25459,9 +25459,14 @@ msgstr ""
 "s'evapora."
 
 #: activities/watercycle/Watercycle.qml:80
+#, fuzzy
+#| msgctxt "Watercycle|"
+#| msgid ""
+#| "Water vapor condenses to form cloud and when clouds become heavy, it "
+#| "rains. Click on the cloud."
 msgctxt "Watercycle|"
 msgid ""
-"Water vapor condenses to form cloud and when clouds become heavy, it rains. "
+"Water vapor condenses to form clouds and when clouds become heavy, it rains. "
 "Click on the cloud."
 msgstr ""
 "El vapor d'aigua es condensa formant els núvols i quan esdevenen pesats, "
@@ -25512,11 +25517,17 @@ msgstr ""
 
 # Nota: https://ca.wikipedia.org/wiki/Transpiració_vegetal
 #: activities/watercycle/Watercycle.qml:115
+#, fuzzy
+#| msgctxt "Watercycle|"
+#| msgid ""
+#| "Plants also lose water to the air through transpiration. The water vapor "
+#| "cools down forming tiny droplets in clouds. When the clouds meet cool air "
+#| "over the land, precipitation is triggered and fall down as rain."
 msgctxt "Watercycle|"
 msgid ""
 "Plants also lose water to the air through transpiration. The water vapor "
 "cools down forming tiny droplets in clouds. When the clouds meet cool air "
-"over the land, precipitation is triggered and fall down as rain."
+"over the land, precipitation is triggered and falls down as rain."
 msgstr ""
 "Les plantes també perden aigua a l'aire a través de la transpiració. El "
 "vapor d'aigua, es refreda formant xicotetes gotes en els núvols. Quan els "
