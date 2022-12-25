@@ -129,7 +129,7 @@ ActivityBase {
                 model: holderListModel
                 delegate: AnswerContainer {
                     height: Math.min(items.cardSize, answerHolderArea.height / holderListModel.count)
-                    width: Math.min(height * 6, parent.width)
+                    width: Math.min(height * 6, ListView.view.width)
                 }
             }
         }
