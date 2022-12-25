@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2022-04-10 18:25+0300\n"
+"PO-Revision-Date: 2022-12-24 21:26+0200\n"
 "Last-Translator: Stelios <sstavra@gmail.com>\n"
 "Language-Team: Greek <kde-i18n-el@kde.org>\n"
 "Language: el\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Language: el\n"
 "X-Qt-Contexts: true\n"
-"X-Generator: Poedit 3.0.1\n"
+"X-Generator: Poedit 3.2.2\n"
 
 #. Activity title
 #: activities/advanced_colors/ActivityInfo.qml:15
@@ -1170,11 +1170,6 @@ msgstr ""
 
 #. Help manual
 #: activities/align4/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Play with a friend. Take turns to click the line in which you want to "
-#| "drop a token. The first player to create a line of 4 tokens wins."
 msgctxt "ActivityInfo|"
 msgid ""
 "Play with Tux. Take turns to click the line in which you want to drop a "
@@ -1192,6 +1187,8 @@ msgid ""
 "You can use the arrow buttons to manually select the difficulty level. Tux "
 "will play better when you increase the level."
 msgstr ""
+"Χρησιμοποίησε τα βελάκια για να επιλέξεις χειροκίνητα το επίπεδο δυσκολίας. "
+"Ο Tux θα παίζει καλύτερα όταν αυξήσεις το επίπεδο."
 
 #: activities/align4/ActivityInfo.qml:25
 #: activities/align4_2players/ActivityInfo.qml:24
@@ -2650,12 +2647,6 @@ msgstr "Ικανότητα στην αρίθμηση."
 
 #. Help manual
 #: activities/bargame/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Click on the ball icon to select a number of balls, then click on the OK "
-#| "button to place the balls in the holes. You win if the computer has to "
-#| "place the last ball. If you want Tux to begin, just click on him."
 msgctxt "ActivityInfo|"
 msgid ""
 "Click on the ball icon to select a number of balls, then click on the OK "
@@ -2663,7 +2654,7 @@ msgid ""
 "ball. If you want Tux to begin, just click on him."
 msgstr ""
 "Πάτησε στο εικονίδιο της μπάλας για να επιλέξεις πόσες θέλεις και μετά στο "
-"OK για να τις τοποθετήσεις στις τρύπες. Κερδίζεις αν ο υπολογιστής πρέπει να "
+"OK για να τις τοποθετήσεις στις τρύπες. Κερδίζεις αν ο Tux πρέπει να "
 "τοποθετήσει την τελευταία μπάλα. Αν θέλεις να ξεκινήσει ο Tux, κάνε κλικ "
 "επάνω του."
 
@@ -2746,8 +2737,8 @@ msgstr ""
 msgctxt "binary_bulb|"
 msgid "In the activity 0 and 1 are simulated by bulbs, switched on or off."
 msgstr ""
-"Στη δραστηριότητα το 0 και το 1 προσομοιώνονται από λάμπες που μπορείτε να "
-"ενεργοποιήσετε ή να απενεργοποιήσετε."
+"Στη δραστηριότητα το 0 και το 1 προσομοιώνονται από λάμπες που μπορείς να "
+"ενεργοποιήσεις ή να απενεργοποιήσεις."
 
 #: activities/binary_bulb/binary_bulb.js:32
 msgctxt "binary_bulb|"
@@ -4029,12 +4020,9 @@ msgstr ""
 
 #. Activity title
 #: activities/checkers/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Play chess against Tux"
 msgctxt "ActivityInfo|"
 msgid "Play checkers (against Tux)"
-msgstr "Σκάκι με τον Tux"
+msgstr "Ντάμα με τον Tux"
 
 #. Help title
 #: activities/checkers/ActivityInfo.qml:17
@@ -4055,27 +4043,6 @@ msgstr ""
 
 #. Help manual
 #: activities/checkers/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Checkers is played by two opponents, on opposite sides of the gameboard. "
-#| "One player has the dark pieces; the other has the light pieces. Players "
-#| "alternate turns. A player may not move an opponent's piece. A move "
-#| "consists of moving a piece diagonally to an adjacent unoccupied square. "
-#| "If the adjacent square contains an opponent's piece, and the square "
-#| "immediately beyond it is vacant, the piece may be captured (and removed "
-#| "from the game) by jumping over it.\n"
-#| "Only the dark squares of the checkered board are used. A piece may move "
-#| "only diagonally into an unoccupied square. Capturing is mandatory. The "
-#| "player without pieces remaining, or who cannot move due to being blocked, "
-#| "loses the game.\n"
-#| "When a man reaches the crownhead or kings row (the farthest row forward), "
-#| "it becomes a king, and is marked by placing an additional piece on top of "
-#| "the first man, and acquires additional powers including the ability to "
-#| "move backwards. If there is a piece in a diagonal that a king can "
-#| "capture, he can move any distance along the diagonal, and may capture an "
-#| "opposing man any distance away by jumping to any of the unoccupied "
-#| "squares immediately beyond it.\n"
 msgctxt "ActivityInfo|"
 msgid ""
 "Checkers is played by two opponents, on opposite sides of the gameboard. One "
@@ -4110,7 +4077,7 @@ msgstr ""
 "να ξεχωρίζει από τα υπόλοιπα. Η ντάμα πλέον μπορεί να μετακινείται όσες "
 "θέσεις θέλει διαγωνίως (εμπρός και πίσω).\n"
 "Ο παίκτης που χάνει όλα τα πούλια ή με όλα τα πούλια μπλοκαρισμένα, χάνει το "
-"παιχνίδι.\n"
+"παιχνίδι."
 
 #: activities/checkers/ActivityInfo.qml:29
 #: activities/checkers_2players/ActivityInfo.qml:28
@@ -4146,9 +4113,6 @@ msgstr "Τα μαύρα κερδίζουν"
 
 #. Activity title
 #: activities/checkers_2players/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Play checkers with your friend"
 msgctxt "ActivityInfo|"
 msgid "Play checkers (with a friend)"
 msgstr "Ντάμα με φίλο"
@@ -4193,35 +4157,12 @@ msgstr ""
 
 #. Activity title
 #: activities/chess/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Play chess against Tux"
 msgctxt "ActivityInfo|"
 msgid "Play chess (against Tux)"
 msgstr "Σκάκι με τον Tux"
 
 #. Help manual Much of this string is shared across the three activities "chess", "chess_partyend", and "chess_2players".
 #: activities/chess/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "In this activity you discover the chess game by playing against the "
-#| "computer. It displays the possible target positions for any selected "
-#| "piece which helps the children understand how pieces moves. At first "
-#| "level the computer is fully random to give more chances to the children. "
-#| "As level increases, the computer plays better.\n"
-#| "\n"
-#| "You can achieve a mate sooner if you follow these simple rules:\n"
-#| "    Trying to drive your opponent's king in the corner.\n"
-#| "<b>Explanation</b>: this way your opponent's king would have only 3 "
-#| "directions to move instead of 8 from a better position.\n"
-#| "    'Making a trap'. Use your pawns as baits.\n"
-#| "<b>Explanation</b>: this way you can lure your opponent out of his "
-#| "'comfort zone'.\n"
-#| "    Be patient enough.\n"
-#| "<b>Explanation</b>: don't rush too quick, be patient. Let yourself think "
-#| "a little bit and try to predict your opponent's future moves, so that you "
-#| "can catch him or secure your pieces from his attacks."
 msgctxt "ActivityInfo|"
 msgid ""
 "In this activity you discover the chess game by playing against the "
@@ -4247,7 +4188,7 @@ msgstr ""
 "αντίπαλο τον υπολογιστή σου. Καθώς επιλέγεις ένα πιόνι, εμφανίζονται όλες οι "
 "πιθανές θέσεις στις οποίες μπορεί αυτό να μετακινηθεί κι έτσι σε βοηθά να "
 "καταλάβεις πως κινούνται τα πιόνια. Στο πρώτο επίπεδο ο υπολογιστής ενεργεί "
-"τελείως τυχαία, για να σου δώσει περισσότερες ευκαιρίες. Καθώς ανεβαίνεις "
+"εντελώς τυχαία, για να σου δώσει περισσότερες ευκαιρίες. Καθώς ανεβαίνεις "
 "επίπεδα, ο υπολογιστής παίζει ολοένα και καλύτερα.\n"
 "\n"
 "Μπορείς να πετύχεις σύντομα ένα ματ εάν ακολουθήσεις τις παρακάτω τρεις "
@@ -4255,7 +4196,7 @@ msgstr ""
 "    Προσπαθώντας να οδηγήσεις τον βασιλιά του αντίπαλου στη γωνία.\n"
 "<b>Εξήγηση</b>: Με αυτόν τον τρόπο ο αντίπαλος μπορεί να κινηθεί μόνο σε 3 "
 "κατευθύνσεις, σε αντίθεση με τις 8 από μια καλύτερη θέση.\n"
-"    'Στήνοντας μια παγίδα.' Χρησιμοποιώντας τους στρατιώτες σου ως δόλωμα.\n"
+"    'Στήνοντας μια παγίδα'. Χρησιμοποίησε τους στρατιώτες σου ως δόλωμα.\n"
 "<b>Εξήγηση</b>: Έτσι μπορείς να παρασύρεις τον αντίπαλο έξω από την 'ασφαλή "
 "ζώνη'.\n"
 "    Να είσαι πολύ υπομονετικός.\n"
@@ -4272,6 +4213,10 @@ msgid ""
 "will redo one move. To undo all the moves, press and hold the undo button "
 "for 3 seconds."
 msgstr ""
+"Ένα κλικ στο κουμπί αναίρεσης θα αναιρέσει μία κίνηση. Ένα κλικ στο κουμπί "
+"ακύρωση αναίρεσης θα ακυρώσει μια αναίρεση. Για να αναιρέσεις όλες τις "
+"κινήσεις, πατήστε και κρατήστε πατημένο το κουμπί αναίρεσης για 3 "
+"δευτερόλεπτα."
 
 #: activities/chess/ActivityInfo.qml:33
 #: activities/chess_partyend/ActivityInfo.qml:33
@@ -4332,37 +4277,25 @@ msgstr "Μη έγκυρη κίνηση. Ο βασιλιάς σου μπορεί 
 
 #. Translators: undo all the moves in chess activity
 #: activities/chess/Chess.qml:123
-#, fuzzy
-#| msgctxt "core|"
-#| msgid "Do you really want to quit GCompris?"
 msgctxt "Chess|"
 msgid "Do you really want to undo all the moves?"
-msgstr "Θέλεις οπωσδήποτε να κλείσεις το GCompris;"
+msgstr "Θέλεις πραγματικά να αναιρέσεις όλες τις κινήσεις;"
 
 #: activities/chess/Chess.qml:124
-#, fuzzy
-#| msgctxt "balanceboxeditor|"
-#| msgid "Yes"
 msgctxt "Chess|"
 msgid "Yes"
 msgstr "Ναι"
 
 #: activities/chess/Chess.qml:125
-#, fuzzy
-#| msgctxt "balanceboxeditor|"
-#| msgid "No"
 msgctxt "Chess|"
 msgid "No"
 msgstr "Όχι"
 
 #. Activity title
 #: activities/chess_2players/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Play oware with a friend"
 msgctxt "ActivityInfo|"
 msgid "Play chess (with a friend)"
-msgstr "Παίζω Αβάρι με φιλικά πρόσωπα"
+msgstr "Σκάκι με φίλο"
 
 #. Help manual Much of this string is shared across the three activities "chess", "chess_partyend", and "chess_2players".
 #: activities/chess_2players/ActivityInfo.qml:25
@@ -5374,9 +5307,6 @@ msgstr "Συνέχεια"
 
 #. Activity title
 #: activities/comparator/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Compare numbers."
 msgctxt "ActivityInfo|"
 msgid "Compare numbers"
 msgstr "Συγκρίνω αριθμούς."
@@ -5385,16 +5315,13 @@ msgstr "Συγκρίνω αριθμούς."
 #: activities/comparator/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Compare the numbers and choose the corresponding sign."
-msgstr ""
+msgstr "Να συγκρίνεις τους αριθμούς και να επιλέξεις το κατάλληλο σύμβολο."
 
 #. Help goal
 #: activities/comparator/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn about prime numbers."
 msgctxt "ActivityInfo|"
 msgid "Learn how to compare number values."
-msgstr "Μάθε για τους πρώτους αριθμούς."
+msgstr "Μάθε πώς να συγκρίνεις τις τιμές των αριθμών."
 
 #. Help manual
 #: activities/comparator/ActivityInfo.qml:26
@@ -5404,6 +5331,9 @@ msgid ""
 "symbol for this pair. When each line contains a symbol, select the OK button "
 "to validate the answers."
 msgstr ""
+"Επίλεξε ένα ζευγάρι αριθμών από τη λίστα. Στη συνέχεια, επίλεξε το σωστό "
+"σύμβολο σύγκρισης για αυτό το ζευγάρι. Όταν κάθε γραμμή περιέχει ένα "
+"σύμβολο, επίλεξε το κουμπί OK για να επικυρώσεις τις απαντήσεις."
 
 #: activities/comparator/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
@@ -5411,109 +5341,86 @@ msgid ""
 "If some answers are incorrect, a cross icon will appear on the corresponding "
 "lines. Correct the errors, then select the OK button again."
 msgstr ""
+"Εάν ορισμένες απαντήσεις είναι λανθασμένες, θα εμφανιστεί ένα εικονίδιο "
+"σταυρού στις αντίστοιχες γραμμές. Διόρθωσε τα σφάλματα και, στη συνέχεια, "
+"επίλεξε πάλι το κουμπί OK."
 
 #: activities/comparator/ActivityInfo.qml:29
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Down arrow: select previous item"
 msgctxt "ActivityInfo|"
 msgid "Up and Down arrows: select a pair of numbers in the list"
-msgstr "Κάτω βελάκι: Επιλογή προηγούμενου αντικειμένου."
+msgstr "Πάνω και κάτω βελάκια: επιλογή ενός ζευγαριού αριθμών από τη λίστα"
 
 #: activities/comparator/ActivityInfo.qml:30
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Left and Right arrows: turn left and right"
 msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: select a symbol button"
-msgstr "Αριστερό και Δεξί βελάκι: Στροφή αριστερά ή δεξιά."
+msgstr "Αριστερό και δεξί βελάκι: επιλογή συμβόλου"
 
 #: activities/comparator/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
 msgid "Space: if a symbol button is selected, enter this symbol"
 msgstr ""
+"Πλήκτρο διαστήματος: εάν έχει επιλεγεί ένα σύμβολο, το εισάγει στη σύγκριση."
 
 #: activities/comparator/ActivityInfo.qml:32
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Enter: validate your answer"
 msgctxt "ActivityInfo|"
 msgid "Return: validate the answers"
-msgstr "Πλήκτρο Enter: Έλεγχος της απάντησης"
+msgstr "Πλήκτρο Enter: επικύρωση της απάντησης"
 
 #: activities/comparator/ActivityInfo.qml:33
 msgctxt "ActivityInfo|"
 msgid "&lt;, &gt; or =: enter the corresponding symbol"
-msgstr ""
+msgstr "&lt;, &gt; ή =: εισάγει το αντίστοιχο σύμβολο"
 
 #: activities/comparator/resource/1/Data.qml:36
 #: activities/tens_complement_find/resource/3/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "Data|"
 msgid "Numbers from 1 to 9."
-msgstr "Αριθμοί από το 0 ως το 9."
+msgstr "Αριθμοί από το 1 ως το 9."
 
 #: activities/comparator/resource/10/Data.qml:14
 msgctxt "Data|"
 msgid "3 decimal places between 0 and 999."
-msgstr ""
+msgstr "3 δεκαδικά ψηφία μεταξύ 0 και 999."
 
 #: activities/comparator/resource/2/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "Data|"
 msgid "Numbers from 1 to 19."
-msgstr "Αριθμοί από το 0 ως το 9."
+msgstr "Αριθμοί από το 1 ως το 19."
 
 #: activities/comparator/resource/3/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "Data|"
 msgid "Numbers from 1 to 100."
-msgstr "Αριθμοί από το 0 ως το 9."
+msgstr "Αριθμοί από το 1 ως το 100."
 
 #: activities/comparator/resource/4/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "Data|"
 msgid "Numbers from 1 to 1000."
-msgstr "Αριθμοί από το 0 ως το 9."
+msgstr "Αριθμοί από το 1 ως το 1000."
 
 #: activities/comparator/resource/5/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "Data|"
 msgid "Numbers from 1 to 1000000."
-msgstr "Αριθμοί από το 0 ως το 9."
+msgstr "Αριθμοί από το 1 ως το 1000000."
 
 #: activities/comparator/resource/6/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "Data|"
 msgid "Numbers from 1 to 1 billion."
-msgstr "Αριθμοί από το 0 ως το 9."
+msgstr "Αριθμοί από το 1 ως το 1 δισεκατομμύριο."
 
 #: activities/comparator/resource/7/Data.qml:14
 msgctxt "Data|"
 msgid "1 decimal place between 0 and 9, same integer part."
-msgstr ""
+msgstr "1 δεκαδικό ψηφίο μεταξύ 0 και 9, ίδιο ακέραιο μέρος."
 
 #: activities/comparator/resource/8/Data.qml:14
 msgctxt "Data|"
 msgid "1 decimal place between 0 and 9."
-msgstr ""
+msgstr "1 δεκαδικό ψηφίο μεταξύ 0 και 9."
 
 #: activities/comparator/resource/9/Data.qml:14
 msgctxt "Data|"
 msgid "2 decimal places between 0 and 99.99."
-msgstr ""
+msgstr "2 δεκαδικά ψηφία μεταξύ 0 και 99,99."
 
 #. Activity title
 #: activities/crane/ActivityInfo.qml:20
@@ -6914,14 +6821,14 @@ msgid ""
 "escape predators, and possess an excellent sense of balance. They have "
 "single-toed hooves."
 msgstr ""
+"Το άλογο χλιμιντρίζει. Τα άλογα τρέχουν κι αυτό τους επιτρέπει να ξεφεύγουν "
+"γρήγορα από τα αρπακτικά. Επίσης, έχουν εξαιρετική αίσθηση ισορροπίας. Σε "
+"κάθε πόδι έχουν μία οπλή."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:25
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal's ancestors were wolves."
 msgctxt "board1|"
 msgid "This animal has single-toed hooves."
-msgstr "Οι πρόγονοι αυτού του ζώου ήταν οι λύκοι."
+msgstr "Αυτό το ζώο στο κάθε πόδι έχει μία οπλή."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:33
 msgctxt "board1|"
@@ -6934,14 +6841,13 @@ msgid ""
 "The chicken goes 'cluck'. Domestic chickens have wings, but are not capable "
 "of long-distance flight. They have a comb on their head."
 msgstr ""
+"Η κότα κακαρίζει. Οι κότες έχουν φτερά, αλλά δεν μπορούν να πετάξουν σε "
+"μεγάλες αποστάσεις. Έχουν λειρί στο κεφάλι τους."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:37
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal likes to come out at night."
 msgctxt "board1|"
 msgid "This animal has a comb on its head."
-msgstr "Αυτό το ζώο συνηθίζει να βγαίνει έξω τη νύχτα."
+msgstr "Αυτό το ζώο έχει λειρί στο κεφάλι του."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:45
 msgctxt "board1|"
@@ -6955,11 +6861,14 @@ msgid ""
 "developed sense of taste, with around 20,000 taste buds. They can detect "
 "odours 8km away."
 msgstr ""
+"Η αγελάδα μουγκανίζει. Οι αγελάδες έχουν ευρύ οπτικό πεδίο 330°. Έχουν πολύ "
+"ανεπτυγμένη αίσθηση της γεύσης, με περίπου 20.000 γευστικούς κάλυκες. "
+"Μπορούν να ανιχνεύσουν οσμές σε απόσταση 8 χλμ."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:49
 msgctxt "board1|"
 msgid "This animal has around 20,000 taste buds."
-msgstr ""
+msgstr "Αυτό το ζώο έχει περίπου 20.000 γευστικούς κάλυκες."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:57
 msgctxt "board1|"
@@ -6973,14 +6882,14 @@ msgid ""
 "ability to chase mice and other rodents. They purr to communicate various "
 "emotions."
 msgstr ""
+"Η γάτα νιαουρίζει. Οι γάτες εκτιμώνται από τους ανθρώπους για τη "
+"συντροφικότητα και την ικανότητά τους να κυνηγούν ποντίκια και άλλα "
+"τρωκτικά. Γουργουρίζουν για να επικοινωνήσουν διάφορα συναισθήματα."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:61
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal lays eggs."
 msgctxt "board1|"
 msgid "This animal can purr."
-msgstr "Αυτό το ζώο γεννά αυγά."
+msgstr "Αυτό το ζώο μπορεί να γουργουρίζει."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:69
 msgctxt "board1|"
@@ -6993,11 +6902,14 @@ msgid ""
 "The pig goes 'oink'. Pigs wallow in the mud, mainly to control their body "
 "temperature."
 msgstr ""
+"Το γουρούνι γρυλίζει. Τα γουρούνια κυλιούνται στη λάσπη, κυρίως για να "
+"ελέγξουν τη θερμοκρασία του σώματός τους."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:73
 msgctxt "board1|"
 msgid "This animal wallows in the mud to control its body temperature."
 msgstr ""
+"Αυτό το ζώο κυλιέται στη λάσπη για να ελέγξει τη θερμοκρασία του σώματός του."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:81
 msgctxt "board1|"
@@ -7010,14 +6922,14 @@ msgid ""
 "The duck goes 'quack'. Ducks are mostly aquatic birds. They have waterproof "
 "feathers and webbed feet which enable them to swim on the water."
 msgstr ""
+"Η πάπια κάνει 'πα-πα-πα'. Οι πάπιες είναι κυρίως υδρόβια πουλιά. Διαθέτουν "
+"αδιάβροχα φτερά και πέλματα που τους επιτρέπουν να κολυμπούν στο νερό."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:85
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal has webbed feet so it can swim in the water."
 msgctxt "board1|"
 msgid "This animal has webbed feet and can swim on the water."
-msgstr "Έχει μεμβράνες στα πόδια και μπορεί να κολυμπά."
+msgstr ""
+"Αυτό το ζώο έχει μεμβράνες στα πέλματα και μπορεί να κολυμπήσει στο νερό."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:93
 msgctxt "board1|"
@@ -7025,26 +6937,18 @@ msgid "Owl"
 msgstr "Κουκουβάγια"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:94
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid ""
-#| "The owl goes 'hoo. hoo.' The owl has excellent vision and hearing at "
-#| "night."
 msgctxt "board1|"
 msgid ""
 "The owl goes 'hoot'. Owls are nocturnal birds, they have excellent vision "
 "and hearing at night."
 msgstr ""
-"Η κουκουβάγια ολολύζει \"κουκουβάου, κουκουβάου\". Η κουκουβάγια τη νύχτα "
-"έχει εξαιρετική όραση και ακοή."
+"Η κουκουβάγια 'ολολύζει'. Οι κουκουβάγιες είναι νυχτόβια πουλιά, έχουν "
+"εξαιρετική όραση και ακοή τη νύχτα."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:97
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal likes to come out at night."
 msgctxt "board1|"
 msgid "This animal is a nocturnal bird."
-msgstr "Αυτό το ζώο συνηθίζει να βγαίνει έξω τη νύχτα."
+msgstr "Αυτό το ζώο είναι ένα νυχτόβιο πουλί."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:105
 msgctxt "board1|"
@@ -7057,14 +6961,13 @@ msgid ""
 "The dog goes 'woof'. Dogs are probably the oldest domesticated species. They "
 "are descendants of the wolf."
 msgstr ""
+"Ο σκύλος γαβγίζει. Τα σκυλιά είναι πιθανότατα το αρχαιότερο εξημερωμένο "
+"είδος. Είναι απόγονοι του λύκου."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:109
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal is a close relative to the goat."
 msgctxt "board1|"
 msgid "This animal is a descendant of the wolf."
-msgstr "Αυτό το ζώο μοιάζει πολύ με την κατσίκα."
+msgstr "Αυτό το ζώο είναι απόγονος του λύκου."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:117
 msgctxt "board1|"
@@ -7077,19 +6980,20 @@ msgid ""
 "The sheep goes 'baa'. Most sheep breeds bear a fleece of wool. The fleece "
 "can be sheared and used to produce textile fibre."
 msgstr ""
+"Το πρόβατο βελάζει. Οι περισσότερες ράτσες προβάτων έχουν μάλλινη προβιά, η "
+"οποία όταν κοπεί χρησιμοποιείται για την παραγωγή κλωστοϋφαντουργικών "
+"νημάτων."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:121
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal's ancestors were wolves."
 msgctxt "board1|"
 msgid "This animal produces wool."
-msgstr "Οι πρόγονοι αυτού του ζώου ήταν οι λύκοι."
+msgstr "Αυτό το ζώο παράγει μαλλί."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:131
 msgctxt "board1|"
 msgid "Click on each farm animal to discover them."
-msgstr "Κάνε κλικ σε κάθε ζώο της φάρμας για να μάθεις για αυτό."
+msgstr ""
+"Κάνε κλικ σε κάθε ζώο της φάρμας για να δεις μερικές πληροφορίες γι' αυτό."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:134
 msgctxt "board1|"
@@ -8458,18 +8362,13 @@ msgid "Polar bear"
 msgstr "Πολική αρκούδα"
 
 #: activities/explore_world_animals/resource/board/board2.qml:31
-#, fuzzy
-#| msgctxt "board2|"
-#| msgid ""
-#| "The polar bear is one of the world's largest predatory mammals. It "
-#| "weights up to a ton and can be as long as 3 meters!"
 msgctxt "board2|"
 msgid ""
 "The polar bear is one of the world's largest predatory mammals. It weighs up "
 "to a ton and can be as long as 3 meters!"
 msgstr ""
-"Η πολική αρκούδα είναι ένα από τα μεγαλύτερα παγκοσμίως αρπακτικά θηλαστικά. "
-"Ζυγίζει μέχρι και έναν τόνο και μπορεί να φθάνει τα 3 μέτρα!"
+"Η πολική αρκούδα είναι ένα από τα μεγαλύτερα αρπακτικά θηλαστικά στον κόσμο. "
+"Ζυγίζει μέχρι έναν τόνο και το ύψος της μπορεί να φτάσει τα 3 μέτρα!"
 
 #: activities/explore_world_animals/resource/board/board2.qml:41
 #: activities/explore_world_animals/resource/board/board2.qml:44
@@ -9105,7 +9004,7 @@ msgstr ""
 "Οι κύκλοι ενώνονται με γραμμές για να δηλωθούν οι συγγενικές σχέσεις. Τα "
 "παντρεμένα ζευγάρια δηλώνονται με τις χρυσές βέρες που υπάρχουν πάνω στη "
 "γραμμή σύνδεσης.\n"
-"Κάντε κλικ στο ζευγάρι της οικογένειας που αντιστοιχεί στη δοσμένη συγγενική "
+"Κάνε κλικ στο ζευγάρι της οικογένειας που αντιστοιχεί στη δοσμένη συγγενική "
 "σχέση."
 
 #. Activity title
@@ -9397,44 +9296,31 @@ msgstr ""
 
 #. Activity title
 #: activities/fractions_create/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice subtractions."
 msgctxt "ActivityInfo|"
 msgid "Create the fractions"
-msgstr "Εξάσκηση στις αφαιρέσεις."
+msgstr "Δημιούργησε τα κλάσματα"
 
 #. Help title
 #: activities/fractions_create/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "A shape split in equal parts is displayed on screen."
-msgstr ""
+msgstr "Ένα σχήμα χωρισμένο σε ίσα μέρη εμφανίζεται στην οθόνη."
 
 #: activities/fractions_create/ActivityInfo.qml:18
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Drag the appropriate numbers and the operators to the boxes to obtain the "
-#| "number to guess in the instruction."
 msgctxt "ActivityInfo|"
 msgid ""
 "Select the appropriate number of parts as described in the instructions."
-msgstr ""
-"Σύρε τους κατάλληλους αριθμούς και τελεστές στα πλαίσια για να σχηματίσεις "
-"τον αριθμό που περιγράφει η οδηγία."
+msgstr "Επίλεξε τον κατάλληλο αριθμό τμημάτων όπως περιγράφεται στις οδηγίες."
 
 #: activities/fractions_create/fractions_create.js:79
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Digits representation"
 msgctxt "fractions_create|"
 msgid "Find the represented fraction."
-msgstr "Αναπαράσταση ψηφίων"
+msgstr "Βρες το κλάσμα που αναπαριστάται."
 
 #: activities/fractions_create/resource/1/Data.qml:9
 msgctxt "Data|"
 msgid "Simplified fractions with a pie."
-msgstr ""
+msgstr "Απλοποιημένα κλάσματα με γράφημα πίτας."
 
 #: activities/fractions_create/resource/1/Data.qml:18
 #: activities/fractions_create/resource/3/Data.qml:17
@@ -9442,80 +9328,63 @@ msgstr ""
 #: activities/fractions_create/resource/3/Data.qml:29
 msgctxt "Data|"
 msgid "Select one half of the pie."
-msgstr ""
+msgstr "Επίλεξε το μισό της πίτας."
 
 #: activities/fractions_create/resource/1/Data.qml:24
 #: activities/fractions_create/resource/3/Data.qml:35
 #: activities/fractions_create/resource/3/Data.qml:49
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Select the fifth Thursday of the given month"
 msgctxt "Data|"
 msgid "Select one-third of the pie."
-msgstr "Επίλεξε την πέμπτη Πέμπτη του συγκεκριμένου μήνα."
+msgstr "Επίλεξε το ένα τρίτο της πίτας."
 
 #: activities/fractions_create/resource/1/Data.qml:30
 #: activities/fractions_create/resource/3/Data.qml:41
 #: activities/fractions_create/resource/3/Data.qml:55
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Select the fourth Sunday of the given month"
 msgctxt "Data|"
 msgid "Select two-thirds of the pie."
-msgstr "Επίλεξε την τέταρτη Κυριακή του συγκεκριμένου μήνα."
+msgstr "Επίλεξε τα δύο τρίτα της πίτας."
 
 #: activities/fractions_create/resource/1/Data.qml:36
 #: activities/fractions_create/resource/3/Data.qml:61
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Select the butterfly of the correct color."
 msgctxt "Data|"
 msgid "Select one-quarter of the pie."
-msgstr "Επίλεξε την πεταλούδα με το σωστό χρώμα."
+msgstr "Επίλεξε το ένα τέταρτο της πίτας."
 
 #: activities/fractions_create/resource/1/Data.qml:42
 #: activities/fractions_create/resource/3/Data.qml:67
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Select the fifth Thursday of the given month"
 msgctxt "Data|"
 msgid "Select two-fifths of the pie."
-msgstr "Επίλεξε την πέμπτη Πέμπτη του συγκεκριμένου μήνα."
+msgstr "Επίλεξε τα δύο πέμπτα της πίτας."
 
 #: activities/fractions_create/resource/1/Data.qml:50
 msgctxt "Data|"
 msgid "Select one pie and one-quarter of a pie."
-msgstr ""
+msgstr "Επίλεξε μία πίτα και ένα τέταρτο της πίτας."
 
 #: activities/fractions_create/resource/1/Data.qml:56
 msgctxt "Data|"
 msgid "Select one pie and two-fifths of a pie."
-msgstr ""
+msgstr "Επίλεξε μία πίτα και δύο πέμπτα της πίτας."
 
 #: activities/fractions_create/resource/1/Data.qml:62
 msgctxt "Data|"
 msgid "Select one pie and one-third of a pie."
-msgstr ""
+msgstr "Επίλεξε μία πίτα και ένα τρίτο της πίτας."
 
 #: activities/fractions_create/resource/1/Data.qml:68
 msgctxt "Data|"
 msgid "Select one pie and one half of a pie."
-msgstr ""
+msgstr "Επίλεξε μια πίτα και το μισό της πίτας."
 
 #: activities/fractions_create/resource/1/Data.qml:74
 msgctxt "Data|"
 msgid "Select one pie and three-quarters of a pie."
-msgstr ""
+msgstr "Επίλεξε μια πίτα και τρία τέταρτα της πίτας."
 
 #: activities/fractions_create/resource/10/Data.qml:9
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Answer the questions with a correctness of 100%."
 msgctxt "Data|"
 msgid "Specific questions with a rectangle."
-msgstr ""
-"Απάντησε τις ερωτήσεις που εμφανίζονται φτάνοντας στο 100% της εγγύτητας σε "
-"κάθε απάντηση."
+msgstr "Ερωτήσεις με γράφημα ορθογωνίου."
 
 #: activities/fractions_create/resource/10/Data.qml:18
 #: activities/fractions_create/resource/10/Data.qml:24
@@ -9524,242 +9393,199 @@ msgid ""
 "Select as many parts as you can without taking more than half of the "
 "rectangle."
 msgstr ""
+"Επίλεξε όσα περισσότερα μέρη μπορείς, χωρίς να πάρεις περισσότερο από το "
+"μισό του ορθογωνίου."
 
 #: activities/fractions_create/resource/2/Data.qml:9
 msgctxt "Data|"
 msgid "Simplified fractions with a rectangle."
-msgstr ""
+msgstr "Απλοποιημένα κλάσματα με γράφημα ορθογωνίου."
 
 #: activities/fractions_create/resource/2/Data.qml:18
 #: activities/fractions_create/resource/4/Data.qml:17
 #: activities/fractions_create/resource/4/Data.qml:23
 #: activities/fractions_create/resource/4/Data.qml:29
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Select the butterfly of the correct color."
 msgctxt "Data|"
 msgid "Select one half of the rectangle."
-msgstr "Επίλεξε την πεταλούδα με το σωστό χρώμα."
+msgstr "Επίλεξε το μισό του ορθογωνίου."
 
 #: activities/fractions_create/resource/2/Data.qml:24
 #: activities/fractions_create/resource/4/Data.qml:35
 #: activities/fractions_create/resource/4/Data.qml:49
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Select the butterfly of the correct color."
 msgctxt "Data|"
 msgid "Select one-third of the rectangle."
-msgstr "Επίλεξε την πεταλούδα με το σωστό χρώμα."
+msgstr "Επίλεξε το ένα τρίτο του ορθογωνίου."
 
 #: activities/fractions_create/resource/2/Data.qml:30
 #: activities/fractions_create/resource/4/Data.qml:41
 #: activities/fractions_create/resource/4/Data.qml:55
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Select the butterfly of the correct color."
 msgctxt "Data|"
 msgid "Select two-thirds of the rectangle."
-msgstr "Επίλεξε την πεταλούδα με το σωστό χρώμα."
+msgstr "Επίλεξε τα δύο τρίτα του ορθογωνίου."
 
 #: activities/fractions_create/resource/2/Data.qml:36
 #: activities/fractions_create/resource/4/Data.qml:61
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Select the butterfly of the correct color."
 msgctxt "Data|"
 msgid "Select one-quarter of the rectangle."
-msgstr "Επίλεξε την πεταλούδα με το σωστό χρώμα."
+msgstr "Επίλεξε το ένα τέταρτο του ορθογωνίου."
 
 #: activities/fractions_create/resource/2/Data.qml:42
 #: activities/fractions_create/resource/4/Data.qml:67
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Select the fifth Thursday of the given month"
 msgctxt "Data|"
 msgid "Select two-fifths of the rectangle."
-msgstr "Επίλεξε την πέμπτη Πέμπτη του συγκεκριμένου μήνα."
+msgstr "Επίλεξε τα δύο πέμπτα του ορθογωνίου."
 
 #: activities/fractions_create/resource/2/Data.qml:50
 msgctxt "Data|"
 msgid "Select one rectangle and one-quarter of a rectangle."
-msgstr ""
+msgstr "Επίλεξε ένα ορθογώνιο και ένα τέταρτο του ορθογωνίου."
 
 #: activities/fractions_create/resource/2/Data.qml:56
 msgctxt "Data|"
 msgid "Select one rectangle and two-fifths of a rectangle."
-msgstr ""
+msgstr "Επίλεξε ένα ορθογώνιο και δύο πέμπτα του ορθογωνίου."
 
 #: activities/fractions_create/resource/2/Data.qml:62
 msgctxt "Data|"
 msgid "Select one rectangle and one-third of a rectangle."
-msgstr ""
+msgstr "Επίλεξε ένα ορθογώνιο και ένα τρίτο του ορθογωνίου."
 
 #: activities/fractions_create/resource/2/Data.qml:68
 msgctxt "Data|"
 msgid "Select one rectangle and one half of a rectangle."
-msgstr ""
+msgstr "Επίλεξε ένα ορθογώνιο και μισό του ορθογωνίου."
 
 #: activities/fractions_create/resource/2/Data.qml:74
 msgctxt "Data|"
 msgid "Select one rectangle and three-quarters of a rectangle."
-msgstr ""
+msgstr "Επίλεξε ένα ορθογώνιο και τρία τέταρτα του ορθογωνίου."
 
 #: activities/fractions_create/resource/3/Data.qml:9
 msgctxt "Data|"
 msgid "Non-simplified fractions with a pie."
-msgstr ""
+msgstr "Μη απλοποιημένα κλάσματα με γράφημα πίτας."
 
 #: activities/fractions_create/resource/3/Data.qml:73
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Select the fifth Thursday of the given month"
 msgctxt "Data|"
 msgid "Select three-fifths of the pie."
-msgstr "Επίλεξε την πέμπτη Πέμπτη του συγκεκριμένου μήνα."
+msgstr "Επίλεξε τα τρία πέμπτα της πίτας."
 
 #: activities/fractions_create/resource/4/Data.qml:9
 msgctxt "Data|"
 msgid "Non-simplified fractions with a rectangle."
-msgstr ""
+msgstr "Μη απλοποιημένα κλάσματα με γράφημα ορθογωνίου."
 
 #: activities/fractions_create/resource/4/Data.qml:73
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Select the butterfly of the correct color."
 msgctxt "Data|"
 msgid "Select three-fifths of the rectangle."
-msgstr "Επίλεξε την πεταλούδα με το σωστό χρώμα."
+msgstr "Επίλεξε τα τρία πέμπτα του ορθογωνίου."
 
 #: activities/fractions_create/resource/5/Data.qml:9
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Decimal number system."
 msgctxt "Data|"
 msgid "Decimal numbers with a pie."
-msgstr "Δεκαδικό σύστημα αρίθμησης."
+msgstr "Δεκαδικοί αριθμοί με γράφημα πίτας."
 
 #: activities/fractions_create/resource/5/Data.qml:18
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 0.5 pie."
-msgstr "Επιλεγμένα"
+msgstr "Επίλεξε το 0,5 της πίτας."
 
 #: activities/fractions_create/resource/5/Data.qml:24
 msgctxt "Data|"
 msgid "Select 0.25 pie."
-msgstr ""
+msgstr "Επίλεξε το 0,25 της πίτας."
 
 #: activities/fractions_create/resource/5/Data.qml:30
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 0.4 pie."
-msgstr "Επιλεγμένα"
+msgstr "Επίλεξε το 0,4 της πίτας."
 
 #: activities/fractions_create/resource/5/Data.qml:36
 msgctxt "Data|"
 msgid "Select 0.75 pie."
-msgstr ""
+msgstr "Επίλεξε το 0,75 της πίτας."
 
 #: activities/fractions_create/resource/5/Data.qml:42
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 0.8 pie."
-msgstr "Επιλεγμένα"
+msgstr "Επίλεξε το 0,8 της πίτας."
 
 #: activities/fractions_create/resource/5/Data.qml:50
 msgctxt "Data|"
 msgid "Select 1.25 pies."
-msgstr ""
+msgstr "Επίλεξε το 1,25 της πίτας."
 
 #: activities/fractions_create/resource/5/Data.qml:56
 msgctxt "Data|"
 msgid "Select 1.4 pies."
-msgstr ""
+msgstr "Επίλεξε το 1,4 της πίτας."
 
 #: activities/fractions_create/resource/5/Data.qml:62
 #: activities/fractions_create/resource/5/Data.qml:68
 msgctxt "Data|"
 msgid "Select 1.5 pies."
-msgstr ""
+msgstr "Επίλεξε το 1,5 της πίτας."
 
 #: activities/fractions_create/resource/5/Data.qml:74
 msgctxt "Data|"
 msgid "Select 1.75 pies."
-msgstr ""
+msgstr "Επίλεξε το 1,75 της πίτας."
 
 #: activities/fractions_create/resource/6/Data.qml:9
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Decimal number system."
 msgctxt "Data|"
 msgid "Decimal numbers with a rectangle."
-msgstr "Δεκαδικό σύστημα αρίθμησης."
+msgstr "Δεκαδικοί αριθμοί με γράφημα ορθογωνίου."
 
 #: activities/fractions_create/resource/6/Data.qml:18
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Select your locale"
 msgctxt "Data|"
 msgid "Select 0.5 rectangle."
-msgstr "Επιλογή γλώσσας"
+msgstr "Επίλεξε το 0,5 του ορθογωνίου."
 
 #: activities/fractions_create/resource/6/Data.qml:24
 msgctxt "Data|"
 msgid "Select 0.25 rectangle."
-msgstr ""
+msgstr "Επίλεξε το 0,25 του ορθογωνίου."
 
 #: activities/fractions_create/resource/6/Data.qml:30
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Select your locale"
 msgctxt "Data|"
 msgid "Select 0.4 rectangle."
-msgstr "Επιλογή γλώσσας"
+msgstr "Επίλεξε το 0,4 του ορθογωνίου."
 
 #: activities/fractions_create/resource/6/Data.qml:36
 msgctxt "Data|"
 msgid "Select 0.75 rectangle."
-msgstr ""
+msgstr "Επίλεξε το 0,75 του ορθογωνίου."
 
 #: activities/fractions_create/resource/6/Data.qml:42
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Select your locale"
 msgctxt "Data|"
 msgid "Select 0.8 rectangle."
-msgstr "Επιλογή γλώσσας"
+msgstr "Επίλεξε το 0,8 του ορθογωνίου."
 
 #: activities/fractions_create/resource/6/Data.qml:50
 msgctxt "Data|"
 msgid "Select 1.25 rectangles."
-msgstr ""
+msgstr "Επίλεξε το 1,25 του ορθογωνίου."
 
 #: activities/fractions_create/resource/6/Data.qml:56
 msgctxt "Data|"
 msgid "Select 1.4 rectangles."
-msgstr ""
+msgstr "Επίλεξε το 1,4 του ορθογωνίου."
 
 #: activities/fractions_create/resource/6/Data.qml:62
 #: activities/fractions_create/resource/6/Data.qml:68
 msgctxt "Data|"
 msgid "Select 1.5 rectangles."
-msgstr ""
+msgstr "Επίλεξε το 1,5 του ορθογωνίου."
 
 #: activities/fractions_create/resource/6/Data.qml:74
 msgctxt "Data|"
 msgid "Select 1.75 rectangles."
-msgstr ""
+msgstr "Επίλεξε το 1,75 του ορθογωνίου."
 
 #: activities/fractions_create/resource/7/Data.qml:9
 msgctxt "Data|"
 msgid "Percentages with a pie."
-msgstr ""
+msgstr "Ποσοστά με γράφημα πίτας."
 
 #. Select %1 percent of the pie.
 #: activities/fractions_create/resource/7/Data.qml:19
@@ -9770,17 +9596,15 @@ msgstr ""
 #: activities/fractions_create/resource/7/Data.qml:56
 #: activities/fractions_create/resource/7/Data.qml:63
 #: activities/fractions_create/resource/7/Data.qml:70
-#, fuzzy, qt-format
-#| msgctxt "calendar_dataset|"
-#| msgid "Select the 1st"
+#, qt-format
 msgctxt "Data|"
 msgid "Select %1% of the pie."
-msgstr "Επίλεξε την 1η ημέρα του μήνα."
+msgstr "Επίλεξε το %1% της πίτας."
 
 #: activities/fractions_create/resource/8/Data.qml:9
 msgctxt "Data|"
 msgid "Percentages with a rectangle."
-msgstr ""
+msgstr "Ποσοστά με γράφημα ορθογωνίου."
 
 #. Select %1 percent of the rectangle.
 #: activities/fractions_create/resource/8/Data.qml:19
@@ -9792,12 +9616,12 @@ msgstr ""
 #, qt-format
 msgctxt "Data|"
 msgid "Select %1% of the rectangle."
-msgstr ""
+msgstr "Επίλεξε το %1% του ορθογωνίου."
 
 #: activities/fractions_create/resource/9/Data.qml:9
 msgctxt "Data|"
 msgid "Specific questions with a pie."
-msgstr ""
+msgstr "Ερωτήσεις με γράφημα πίτας."
 
 #: activities/fractions_create/resource/9/Data.qml:18
 #: activities/fractions_create/resource/9/Data.qml:24
@@ -9805,63 +9629,51 @@ msgctxt "Data|"
 msgid ""
 "Select as many parts as you can without taking more than half of the pie."
 msgstr ""
+"Επίλεξε όσα περισσότερα μέρη μπορείς, χωρίς να πάρεις περισσότερο από το "
+"μισό της πίτας."
 
 #. Activity title
 #: activities/fractions_find/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "instruments|"
-#| msgid "Find the accordion"
 msgctxt "ActivityInfo|"
 msgid "Find the fractions"
-msgstr "Βρες το ακορντεόν"
+msgstr "Βρες τα κλάσματα"
 
 #. Help title
 #: activities/fractions_find/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Find the correct date and select it on the calendar."
 msgctxt "ActivityInfo|"
 msgid "Find the correct numerator and denominator of the represented fraction."
-msgstr "Βρες τη σωστή ημερομηνία και επίλεξέ τη στο ημερολόγιο."
+msgstr ""
+"Βρες τον σωστό αριθμητή και παρονομαστή του κλάσματος που αναπαριστάται."
 
 #: activities/fractions_find/resource/1/Data.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Nine men's morris (with a friend)"
 msgctxt "Data|"
 msgid "Find denominator (with a pie)."
-msgstr "Έχουμε από 9 με φίλο"
+msgstr "Βρες τον παρονομαστή (με γράφημα πίτας)."
 
 #: activities/fractions_find/resource/2/Data.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Nine men's morris (with a friend)"
 msgctxt "Data|"
 msgid "Find denominator (with a rectangle)."
-msgstr "Έχουμε από 9 με φίλο"
+msgstr "Βρες τον παρονομαστή (με γράφημα ορθογωνίου)."
 
 #: activities/fractions_find/resource/3/Data.qml:9
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Align four (with a friend)"
 msgctxt "Data|"
 msgid "Find numerator (with a pie)."
-msgstr "Τέσσερα με φίλο"
+msgstr "Βρες τον αριθμητή (με γράφημα πίτας)."
 
 #: activities/fractions_find/resource/4/Data.qml:9
 msgctxt "Data|"
 msgid "Find numerator (with a rectangle)."
-msgstr ""
+msgstr "Βρες τον αριθμητή (με ορθογώνιο)."
 
 #: activities/fractions_find/resource/5/Data.qml:9
 msgctxt "Data|"
 msgid "Find numerator and denominator (with a pie)."
-msgstr ""
+msgstr "Βρες τον αριθμητή και τον παρονομαστή (με πίτα)."
 
 #: activities/fractions_find/resource/6/Data.qml:9
 msgctxt "Data|"
 msgid "Find numerator and denominator (with a rectangle)."
-msgstr ""
+msgstr "Βρες τον αριθμητή και τον παρονομαστή (με ορθογώνιο)."
 
 #. Activity title
 #: activities/geo-country/ActivityInfo.qml:19
@@ -11100,146 +10912,121 @@ msgstr "Σουβαλκίτζα"
 #: activities/geo-country/resource/board/board18_0.qml:13
 msgctxt "board18_0|"
 msgid "Autonomous communities of Spain"
-msgstr ""
+msgstr "Αυτόνομες κοινότητες της Ισπανίας"
 
 #. Autonomous communities of Spain: Andalusia
 #: activities/geo-country/resource/board/board18_0.qml:22
 msgctxt "board18_0|"
 msgid "Andalusia"
-msgstr ""
+msgstr "Ανδαλουσία"
 
 #. Autonomous communities of Spain: Madrid
 #: activities/geo-country/resource/board/board18_0.qml:29
 msgctxt "board18_0|"
 msgid "Madrid"
-msgstr ""
+msgstr "Μαδρίτη"
 
 #. Autonomous communities of Spain: Galicia
 #: activities/geo-country/resource/board/board18_0.qml:36
-#, fuzzy
-#| msgctxt "DialogConfig|"
-#| msgid "Galician"
 msgctxt "board18_0|"
 msgid "Galicia"
-msgstr "Γαλικικά"
+msgstr "Γαλικία"
 
 #. Autonomous communities of Spain: Castile and León
 #: activities/geo-country/resource/board/board18_0.qml:43
 msgctxt "board18_0|"
 msgid "Castile and León"
-msgstr ""
+msgstr "Καστίλη και Λεόν"
 
 #. Autonomous communities of Spain: Castilla-La Mancha
 #: activities/geo-country/resource/board/board18_0.qml:50
 msgctxt "board18_0|"
 msgid "Castilla-La Mancha"
-msgstr ""
+msgstr "Καστίγια-Λα Μάντσα"
 
 #. Autonomous communities of Spain: Catalonia
 #: activities/geo-country/resource/board/board18_0.qml:57
-#, fuzzy
 msgctxt "board18_0|"
 msgid "Catalonia"
-msgstr "Μαυριτανία"
+msgstr "Καταλωνία"
 
 #. Autonomous communities of Spain: Aragon
 #: activities/geo-country/resource/board/board18_0.qml:64
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Hexagon"
 msgctxt "board18_0|"
 msgid "Aragon"
-msgstr "Εξάγωνο"
+msgstr "Αραγωνία"
 
 #. Autonomous communities of Spain: Valencia
 #: activities/geo-country/resource/board/board18_0.qml:71
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Calendar"
 msgctxt "board18_0|"
 msgid "Valencia"
-msgstr "Ημερολόγιο"
+msgstr "Βαλένθια"
 
 #. Autonomous communities of Spain: Murcia
 #: activities/geo-country/resource/board/board18_0.qml:78
 msgctxt "board18_0|"
 msgid "Murcia"
-msgstr ""
+msgstr "Μούρθια"
 
 #. Autonomous communities of Spain: Asturias
 #: activities/geo-country/resource/board/board18_0.qml:85
 msgctxt "board18_0|"
 msgid "Asturias"
-msgstr ""
+msgstr "Αστουρία"
 
 #. Autonomous communities of Spain: Basque Country
 #: activities/geo-country/resource/board/board18_0.qml:92
 msgctxt "board18_0|"
 msgid "Basque Country"
-msgstr ""
+msgstr "Χώρα των Βάσκων"
 
 #. Autonomous communities of Spain: La Rioja
 #: activities/geo-country/resource/board/board18_0.qml:99
-#, fuzzy
-#| msgctxt "board3_0|"
-#| msgid "La Rioja"
 msgctxt "board18_0|"
 msgid "La Rioja"
 msgstr "Λα Ριόχα"
 
 #. Autonomous communities of Spain: Cantabria
 #: activities/geo-country/resource/board/board18_0.qml:106
-#, fuzzy
-#| msgctxt "board11_0|"
-#| msgid "Calabria"
 msgctxt "board18_0|"
 msgid "Cantabria"
-msgstr "Καλαβρία"
+msgstr "Κανταβρία"
 
 #. Autonomous communities of Spain: Navarre
 #: activities/geo-country/resource/board/board18_0.qml:113
-#, fuzzy
-#| msgctxt "board5|"
-#| msgid "Navajo"
 msgctxt "board18_0|"
 msgid "Navarre"
-msgstr "Ναβάχο"
+msgstr "Ναβάρα"
 
 #. Autonomous communities of Spain: Extremadura
 #: activities/geo-country/resource/board/board18_0.qml:120
 msgctxt "board18_0|"
 msgid "Extremadura"
-msgstr ""
+msgstr "Εξτρεμαδούρα"
 
 #. Autonomous communities of Spain: Canary Islands
 #: activities/geo-country/resource/board/board18_0.qml:127
-#, fuzzy
-#| msgctxt "board14_0|"
-#| msgid "Mariana Islands"
 msgctxt "board18_0|"
 msgid "Canary Islands"
-msgstr "Νήσοι Μαριάνα"
+msgstr "Κανάρια Νησιά"
 
 #. Autonomous communities of Spain: Balearic Islands
 #: activities/geo-country/resource/board/board18_0.qml:134
-#, fuzzy
-#| msgctxt "board14_0|"
-#| msgid "Mariana Islands"
 msgctxt "board18_0|"
 msgid "Balearic Islands"
-msgstr "Νήσοι Μαριάνα"
+msgstr "Βαλεαρίδες Νήσοι"
 
 #. Autonomous communities of Spain: Ceuta
 #: activities/geo-country/resource/board/board18_0.qml:141
 msgctxt "board18_0|"
 msgid "Ceuta"
-msgstr ""
+msgstr "Θέουτα"
 
 #. Autonomous communities of Spain: Melilla
 #: activities/geo-country/resource/board/board18_0.qml:148
 msgctxt "board18_0|"
 msgid "Melilla"
-msgstr ""
+msgstr "Μελίγαι"
 
 #: activities/geo-country/resource/board/board1_0.qml:15
 msgctxt "board1_0|"
@@ -13242,7 +13029,7 @@ msgstr "Ολλανδία"
 #: activities/geography/resource/board/board5_0.qml:73
 msgctxt "board5_0|"
 msgid "Luxembourg"
-msgstr ""
+msgstr "Λουξεμβούργο"
 
 #: activities/geography/resource/board/board5_0.qml:81
 msgctxt "board5_0|"
@@ -13295,12 +13082,9 @@ msgid "Eastern Europe"
 msgstr "Ανατολική Ευρώπη"
 
 #: activities/geography/resource/board/board6_0.qml:24
-#, fuzzy
-#| msgctxt "board9_0|"
-#| msgid "Cyprus"
 msgctxt "board6_0|"
 msgid "Cyprus"
-msgstr "Κύπτος"
+msgstr "Κύπρος"
 
 #: activities/geography/resource/board/board6_0.qml:32
 msgctxt "board6_0|"
@@ -15982,12 +15766,9 @@ msgstr "Ενεργοποίηση ήχων"
 
 #. Activity title
 #: activities/learn_digits/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Count the items"
 msgctxt "ActivityInfo|"
 msgid "Count and color the circles"
-msgstr "Μετρώ τα αντικείμενα"
+msgstr "Μετρώ και χρωματίζω τους κύκλους"
 
 #. Help title
 #: activities/learn_digits/ActivityInfo.qml:17
@@ -16172,29 +15953,20 @@ msgid "Subtractions with 1, 2, 3, 4 and 5."
 msgstr "Αφαιρέσεις με το 1, 2, 3, 4 και 5."
 
 #: activities/learn_subtractions/resource/4/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2, 3, 4 and 5."
 msgctxt "Data|"
 msgid "Subtractions with 1, 2, 3, 4, 5, 6 and 7."
-msgstr "Αφαιρέσεις με το 1, 2, 3, 4 και 5."
+msgstr "Αφαιρέσεις με το 1, 2, 3, 4, 5, 6 και 7."
 
 #: activities/learn_subtractions/resource/5/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2, 3, 4 and 5."
 msgctxt "Data|"
 msgid "Subtractions with 1, 2, 3, 4, 5, 6, 7, 8 and 9."
-msgstr "Αφαιρέσεις με το 1, 2, 3, 4 και 5."
+msgstr "Αφαιρέσεις με το 1, 2, 3, 4, 5, 6, 7, 8 και 9."
 
 #. Activity title
 #: activities/left_right_click/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Memory training."
 msgctxt "ActivityInfo|"
 msgid "Mouse click training"
-msgstr "Εξάσκηση μνήμης."
+msgstr "Εξάσκηση στο ποντίκι"
 
 #. Help title
 #: activities/left_right_click/ActivityInfo.qml:16
@@ -16202,12 +15974,14 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Move animals to their homes using a left click or right click on your mouse."
 msgstr ""
+"Μετακίνησε τα ζώα στα σπίτια τους κάνοντας αριστερό ή δεξί κλικ με το "
+"ποντίκι."
 
 #. Help goal
 #: activities/left_right_click/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Using the mouse. Left and right click training."
-msgstr ""
+msgstr "Χρήση του ποντικιού. Εξάσκηση στο αριστερό και δεξί κλικ."
 
 #. Help manual
 #: activities/left_right_click/ActivityInfo.qml:23
@@ -16216,6 +15990,9 @@ msgid ""
 "A left click on a fish will move it to the pond. A right click on a monkey "
 "will move it to the tree. A message will show if you make the wrong click."
 msgstr ""
+"Ένα αριστερό κλικ σε ένα ψάρι θα το μετακινήσει στη λίμνη. Ένα δεξί κλικ σε "
+"έναν πίθηκο θα τον μετακινήσει στο δέντρο. Θα εμφανιστεί ένα μήνυμα εάν "
+"κάνεις λάθος κλικ."
 
 #. Activity title
 #: activities/leftright/ActivityInfo.qml:15
@@ -18227,7 +18004,7 @@ msgstr ""
 msgctxt "ActivityInfo|"
 msgid "Arrows - Display the current level. Click to select another level"
 msgstr ""
-"Βελάκια - Εμφάνιση του τρέχοντος επιπέδου. Επιλέξτε για να αλλάξετε επίπεδο."
+"Βελάκια - Εμφάνιση του τρέχοντος επιπέδου. Επιλέξτε για να αλλάξεις επίπεδο."
 
 #: activities/menu/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
@@ -18322,7 +18099,7 @@ msgstr "Μουσική παρασκηνίου"
 msgctxt "BackgroundMusicList|"
 msgid "Disable the background music if you don't want to play them."
 msgstr ""
-"Απενεργοποιήστε τη μουσική παρασκηνίου, αν δεν θέλετε να αναπαράγονται."
+"Απενεργοποιήστε τη μουσική παρασκηνίου, αν δεν θέλεις να αναπαράγονται."
 
 #. Current background music playing
 #: activities/menu/BackgroundMusicList.qml:157
@@ -19000,21 +18777,15 @@ msgstr ""
 
 #. Activity title
 #: activities/morse_code/ActivityInfo.qml:18
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Discover the braille system"
 msgctxt "ActivityInfo|"
 msgid "Discover the International Morse code"
-msgstr "Μαθαίνω Μπράιγ"
+msgstr "Ανακαλύψτε τον διεθνή Κώδικα Μορς"
 
 #. Help title
 #: activities/morse_code/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn how to tell the time on an analog clock."
 msgctxt "ActivityInfo|"
 msgid "Learn how to communicate with the International Morse code."
-msgstr "Εκμάθηση της ώρας σε αναλογικό ρολόι."
+msgstr "Μάθε πώς να επικοινωνείς με τον διεθνή Κώδικα Μορς."
 
 #. Help goal
 #: activities/morse_code/ActivityInfo.qml:23
@@ -19022,15 +18793,14 @@ msgctxt "ActivityInfo|"
 msgid ""
 "You have to send and receive letters and digits in International Morse code."
 msgstr ""
+"Πρέπει να στέλνεις και να λαμβάνεις γράμματα και αριθμούς με τον διεθνή "
+"Κώδικα Μορς."
 
 #. Help prerequisite
 #: activities/morse_code/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Knowledge of arithmetic operations."
 msgctxt "ActivityInfo|"
 msgid "Knowledge of alphabets and digits."
-msgstr "Γνώση αριθμητικών πράξεων."
+msgstr "Γνώση γραμμάτων και αριθμών."
 
 #. Help manual
 #: activities/morse_code/ActivityInfo.qml:27
@@ -19041,11 +18811,15 @@ msgid ""
 "have a look at the translation map which contains the code for all the "
 "letters and digits."
 msgstr ""
+"Αποστολή σου είναι είτε να στείλεις ένα μήνυμα με τον Κώδικα Μορς είτε να "
+"μετατρέψεις το κωδικοποιημένο μήνυμα Μορς που έχεις λάβει σε γράμματα και "
+"αριθμούς. Για να μάθεις τον Κώδικα Μορς, μπορείς να μελετήσεις τον χάρτη "
+"μετατροπής που περιέχει τον κώδικα για όλα τα γράμματα και τα ψηφία."
 
 #: activities/morse_code/FirstScreen.qml:25
 msgctxt "FirstScreen|"
 msgid "Exploring Morse Code"
-msgstr ""
+msgstr "Κώδικας Μορς"
 
 #: activities/morse_code/FirstScreen.qml:64
 msgctxt "FirstScreen|"
@@ -19053,6 +18827,9 @@ msgid ""
 "Morse code was developed by Samuel Morse. It is a method of transmitting "
 "text information as a series of on-off tones, lights, or clicks."
 msgstr ""
+"Ο Κώδικας Μορς αναπτύχθηκε από τον Samuel Morse. Είναι μια μέθοδος μετάδοσης "
+"πληροφοριών κειμένου ως μια σειρά από τόνους, φώτα και κλικ ενεργοποίησης - "
+"απενεργοποίησης."
 
 #: activities/morse_code/FirstScreen.qml:65
 msgctxt "FirstScreen|"
@@ -19065,38 +18842,33 @@ msgid ""
 "For example, the most common letter in English, the letter \"E\", has the "
 "shortest code, a single dot."
 msgstr ""
+"Κάθε σύμβολο του Κώδικα Μορς αντιπροσωπεύει είτε έναν χαρακτήρα κειμένου "
+"(γράμμα ή αριθμό) είτε ένα πρόσημο και αποτελείται από κουκκίδες και παύλες "
+"σε μια ακολουθία. Η διάρκεια μιας παύλας είναι τριπλάσια της διάρκειας μιας "
+"τελείας. Για να αυξηθεί η ταχύτητα της επικοινωνίας, ο Κώδικας σχεδιάστηκε "
+"έτσι ώστε τα πιο κοινά γράμματα να έχουν συντομότερες ακολουθίες.\n"
+"Για παράδειγμα, το πιο κοινό γράμμα στα Αγγλικά, το γράμμα \"E\", έχει τον "
+"συντομότερο κωδικό, μια μόνο κουκκίδα."
 
 #: activities/morse_code/FirstScreen.qml:90
-#, fuzzy
-#| msgctxt "FirstScreen|"
-#| msgid ""
-#| "When you are ready, click on me and try reproducing braille characters."
 msgctxt "FirstScreen|"
 msgid "When you are ready, click on Tux and we will converse in Morse code."
 msgstr ""
-"Όταν είσαι έτοιμος πάτησε επάνω μου και προσπάθησε να αναπαράγεις τους "
-"χαρακτήρες Μπράιγ."
+"Όταν είσαι έτοιμος, κάνε κλικ στον Tux και θα συνομιλήσουμε με Κώδικα Μορς."
 
 #: activities/morse_code/MorseCode.qml:346
-#, fuzzy, qt-format
-#| msgctxt "RomanNumerals|"
-#| msgid "Roman value: %1"
+#, qt-format
 msgctxt "MorseCode|"
 msgid "Morse value: %1"
-msgstr "Ρωμαϊκή γραφή: %1"
+msgstr "Τιμή Μορς: %1"
 
 #: activities/morse_code/MorseCode.qml:347
-#, fuzzy, qt-format
-#| msgctxt "RomanNumerals|"
-#| msgid "Arabic value: %1"
+#, qt-format
 msgctxt "MorseCode|"
 msgid "Alphabet/Numeric value: %1"
-msgstr "Αραβική γραφή: %1"
+msgstr "Αλφαβητική/Αριθμητική τιμή: %1"
 
 #: activities/morse_code/resource/1/Data.qml:13
-#, fuzzy
-#| msgctxt "Menu|"
-#| msgid "Letters"
 msgctxt "Data|"
 msgid "Letters."
 msgstr "Γράμματα"
@@ -19111,57 +18883,44 @@ msgstr "Γράμματα"
 #, qt-format
 msgctxt "Data|"
 msgid "Send the message %1 in Morse code."
-msgstr ""
+msgstr "Στείλε το μήνυμα %1 σε Κώδικα Μορς."
 
 #: activities/morse_code/resource/1/Data.qml:23
 #: activities/morse_code/resource/1/Data.qml:39
 #: activities/morse_code/resource/1/Data.qml:55
 #: activities/morse_code/resource/1/Data.qml:71
-#, fuzzy, qt-format
-#| msgctxt "RomanNumerals|"
-#| msgid "Convert the roman number %1 to arabic."
+#, qt-format
 msgctxt "Data|"
 msgid "Convert the message %1 to letters."
-msgstr "Μετατροπή του ρωμαϊκού αριθμού %1 σε αραβικό."
+msgstr "Μετατροπή μηνυμάτων %1 σε γράμματα."
 
 #: activities/morse_code/resource/1/Data.qml:28
 #: activities/morse_code/resource/1/Data.qml:44
 #: activities/morse_code/resource/1/Data.qml:60
 #: activities/morse_code/resource/1/Data.qml:76
-#, fuzzy
-#| msgctxt "advanced_colors|"
-#| msgid "Find the corn butterfly"
 msgctxt "Data|"
 msgid "Find the corresponding letter."
-msgstr "Βρες την κεχριμπαρί πεταλούδα"
+msgstr "Βρες το αντίστοιχο γράμμα."
 
 #: activities/morse_code/resource/2/Data.qml:13
 msgctxt "Data|"
 msgid "Digits."
-msgstr ""
+msgstr "Ψηφία."
 
 #: activities/morse_code/resource/2/Data.qml:23
 #: activities/morse_code/resource/2/Data.qml:39
-#, fuzzy, qt-format
-#| msgctxt "RomanNumerals|"
-#| msgid "Convert the roman number %1 to arabic."
+#, qt-format
 msgctxt "Data|"
 msgid "Convert the message %1 to digits."
-msgstr "Μετατροπή του ρωμαϊκού αριθμού %1 σε αραβικό."
+msgstr "Μετατροπή του μηνύματος %1 σε ψηφία."
 
 #: activities/morse_code/resource/2/Data.qml:28
 #: activities/morse_code/resource/2/Data.qml:44
-#, fuzzy
-#| msgctxt "instruments|"
-#| msgid "Find the accordion"
 msgctxt "Data|"
 msgid "Find the corresponding digit."
-msgstr "Βρες το ακορντεόν"
+msgstr "Βρες το αντίστοιχο αριθμητικό ψηφίο."
 
 #: activities/morse_code/resource/3/Data.qml:13
-#, fuzzy
-#| msgctxt "Menu|"
-#| msgid "Words"
 msgctxt "Data|"
 msgid "Words."
 msgstr "Λέξεις"
@@ -19169,15 +18928,12 @@ msgstr "Λέξεις"
 #: activities/morse_code/resource/3/Data.qml:24
 msgctxt "Data|"
 msgid "Write the Morse code you hear."
-msgstr ""
+msgstr "Γράψε τον Κώδικα Μορς που ακούς."
 
 #: activities/morse_code/resource/3/Data.qml:34
-#, fuzzy
-#| msgctxt "RomanNumerals|"
-#| msgid "Convert the roman number %1 to arabic."
 msgctxt "Data|"
 msgid "Convert the message in a word."
-msgstr "Μετατροπή του ρωμαϊκού αριθμού %1 σε αραβικό."
+msgstr "Μετατροπή του μηνύματος σε μια λέξη"
 
 #. Activity title
 #: activities/mosaic/ActivityInfo.qml:15
@@ -19254,18 +19010,13 @@ msgstr ""
 
 #. Help manual
 #: activities/nine_men_morris/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Play with a friend. First take turns to place nine pieces, and then take "
-#| "turns to move your pieces."
 msgctxt "ActivityInfo|"
 msgid ""
 "Play with Tux. First take turns to place nine pieces, and then take turns to "
 "move your pieces."
 msgstr ""
-"Παίξε με έναν φίλο ή μια φίλη. Πρώτα τοποθέτησε εννιά πιόνια και μετά "
-"μετακίνησέ τα."
+"Παίξε με τον Tux. Πρώτα τοποθετήστε εναλλάξ εννέα κομμάτια και μετά "
+"μετακινήστε τα."
 
 #: activities/nine_men_morris/nine_men_morris.js:29
 msgctxt "nine_men_morris|"
@@ -19911,6 +19662,16 @@ msgid ""
 "Tigers|live|in|forests.\n"
 "Football|is|a|team|game."
 msgstr ""
+"Ο|σκύλος|γαβγίζει.\n"
+"Το|σπίτι|είναι|κόκκινο.\n"
+"Το|αγόρι|διαβάζει|ένα βιβλίο.\n"
+"Ο|φίλος μου|είναι|καλός.\n"
+"Τι|όμορφο|θέαμα!\n"
+"Ο Σταύρος|πηδά|στην|πισίνα.\n"
+"Η Τζούλια|θέλει|ένα|καινούριο|βιβλίο.\n"
+"Η μαμά|μου|έφτιαξε|ένα|σάντουιτς.\n"
+"Οι τίγρεις|ζουν|στα|δάση.\n"
+"Το ποδόσφαιρο|είναι|ένα|ομαδικό|παιχνίδι."
 
 #: activities/ordering_sentences/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -19932,15 +19693,22 @@ msgid ""
 "Mom|has|asked|me|to|play|in|the|room.\n"
 "I|think|we|are|going|to|have|a|good|day."
 msgstr ""
+"Ο|ήλιος|λάμπει|στον|ουρανό.\n"
+"Τα παιδιά|απολαμβάνουν|να|παίζουν|έξω|το|βράδυ.\n"
+"Θα|βγεις|έξω|για|μεσημεριανό|γεύμα;\n"
+"Το|κορίτσι|έδεσε|τα|παπούτσια|του|τένις|και|βγήκε|έξω.\n"
+"Ο Σίμος|αισθάνθηκε|άρρωστος|αφού|έφαγε|πέντε|τεράστιες|μπάρες|καραμέλας.\n"
+"Η|οικογένειά|μας|κάνει|διακοπές|στη|παραλία|κάθε|χρόνο.\n"
+"Ο θείος|Τζο|μου|έκανε|δώρο|ένα|κόκκινο|φορτηγό.\n"
+"Όταν|τελειώσεις|το|φαγητό|σου|μπορείς|να|φας|γλυκό.\n"
+"Η μαμά|μού|ζήτησε|να|παίξω|στο|δωμάτιο.\n"
+"Νομίζω|ότι|ο|καιρός|θα|είναι|πολύ|καλός."
 
 #. Activity title
 #: activities/oware/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Play oware against Tux"
 msgctxt "ActivityInfo|"
 msgid "Play oware (against Tux)"
-msgstr "Παίζω Αβάρι με τον Tux"
+msgstr "Παίζω Αβάρι (αντίπαλος ο Tux)"
 
 #. Help title
 #: activities/oware/ActivityInfo.qml:16
@@ -20029,12 +19797,9 @@ msgstr "Μη έγκυρη κίνηση!"
 
 #. Activity title
 #: activities/oware_2players/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Play oware with a friend"
 msgctxt "ActivityInfo|"
 msgid "Play oware (with a friend)"
-msgstr "Παίζω Αβάρι με φιλικά πρόσωπα"
+msgstr "Παίζω Αβάρι (με φίλο/φίλη)"
 
 #. Help title
 #: activities/oware_2players/ActivityInfo.qml:16
@@ -25277,33 +25042,27 @@ msgstr "Μέγιστη τιμή: 500000."
 
 #. Activity title
 #: activities/tens_complement_find/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "instruments|"
-#| msgid "Find the trumpet"
 msgctxt "ActivityInfo|"
 msgid "Find ten's complement"
-msgstr "Βρες την τρομπέτα"
+msgstr "Βρες το συμπλήρωμα του δέκα"
 
 #. Help title
 #: activities/tens_complement_find/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Find the ten's complement of each number."
-msgstr ""
+msgstr "Βρες το συμπλήρωμα του δέκα σε κάθε αριθμό."
 
 #. Help goal
 #: activities/tens_complement_find/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Learn to find ten's complement."
-msgstr ""
+msgstr "Μάθε να βρίσκεις το συμπλήρωμα του δέκα."
 
 #. Help prerequisite
 #: activities/tens_complement_find/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "ActivityInfo|"
 msgid "Numbers from 1 to 10 and additions."
-msgstr "Αριθμοί από το 0 ως το 9."
+msgstr "Αριθμοί από το 1 ως το 10 και προσθέσεις."
 
 #: activities/tens_complement_find/ActivityInfo.qml:23
 #: activities/tens_complement_use/ActivityInfo.qml:24
@@ -25314,6 +25073,11 @@ msgid ""
 "corresponding lines. To correct the errors, click on the wrong numbers to "
 "remove them and repeat the previous steps."
 msgstr ""
+"Όταν ολοκληρωθούν όλες οι γραμμές, πάτα το κουμπί OK για να επικυρώσεις τις "
+"απαντήσεις. Εάν κάποιες απαντήσεις είναι λανθασμένες, θα εμφανιστεί ένα "
+"εικονίδιο σταυρού στις αντίστοιχες γραμμές. Για να διορθώσεις τα σφάλματα, "
+"κάνε κλικ σε λάθος αριθμούς για να τα αφαιρέσεις και επανέλαβε τα "
+"προηγούμενα βήματα."
 
 #. Help manual
 #: activities/tens_complement_find/ActivityInfo.qml:23
@@ -25322,42 +25086,36 @@ msgid ""
 "Create pairs of numbers equal to ten. Select a number in the list, then "
 "select an empty spot of an operation to move the selected number there."
 msgstr ""
+"Φτιάξε ζεύγη αριθμών που να ισούνται με το δέκα. Επίλεξε έναν αριθμό στη "
+"λίστα και στη συνέχεια, επίλεξε ένα κενό σημείο μιας λειτουργίας για να "
+"μετακινήσεις τον επιλεγμένο αριθμό εκεί."
 
 #: activities/tens_complement_find/resource/1/Data.qml:25
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "Data|"
 msgid "First number from 1 to 4."
-msgstr "Αριθμοί από το 0 ως το 9."
+msgstr "Πρώτος αριθμός από το 1 μέχρι το 4."
 
 #: activities/tens_complement_find/resource/2/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "Data|"
 msgid "First number from 5 to 9."
-msgstr "Αριθμοί από το 0 ως το 9."
+msgstr "Πρώτος αριθμός από το 5 μέχρι το 9."
 
 #: activities/tens_complement_find/resource/4/Data.qml:9
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Division of numbers"
 msgctxt "Data|"
 msgid "Find both numbers."
-msgstr "Διαίρεση"
+msgstr "Βρες και τους δύο αριθμούς."
 
 #. Activity title
 #: activities/tens_complement_swap/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Swap ten's complement"
-msgstr ""
+msgstr "Αντάλλαξε το συμπλήρωμα του δέκα."
 
 #. Help title
 #: activities/tens_complement_swap/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Swap the numbers to create pairs equal to ten."
-msgstr ""
+msgstr "Αντάλλαξε τους αριθμούς για να δημιουργήσεις ζεύγη ίσα με δέκα."
 
 #. Help goal
 #: activities/tens_complement_swap/ActivityInfo.qml:19
@@ -25366,15 +25124,14 @@ msgid ""
 "Learn to use ten's complement to optimize the order of numbers in an "
 "operation."
 msgstr ""
+"Μάθε να χρησιμοποιείς το συμπλήρωμα του δέκα για να βελτιώσεις τη σειρά των "
+"αριθμών σε μια πράξη."
 
 #. Help prerequisite
 #: activities/tens_complement_swap/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "ActivityInfo|"
 msgid "Numbers from 1 to 30 and additions."
-msgstr "Αριθμοί από το 0 ως το 9."
+msgstr "Αριθμοί από 1 έως 30 και προσθέσεις."
 
 #. Help manual
 #: activities/tens_complement_swap/ActivityInfo.qml:23
@@ -25386,57 +25143,51 @@ msgid ""
 "the answers. If some answers are incorrect, a cross icon will appear on the "
 "corresponding lines. Correct the errors, then press the OK button again."
 msgstr ""
+"Μέσα σε κάθε παρένθεση φτιάξε ζεύγη αριθμών που να είναι ίσα με το δέκα. "
+"Επίλεξε έναν αριθμό και στη συνέχεια έναν άλλο αριθμό της ίδιας πράξης για "
+"να αλλάξεις τη θέση τους. Όταν ολοκληρωθούν όλες οι γραμμές, πάτησε το "
+"κουμπί OK για να επικυρώσεις τις απαντήσεις. Εάν κάποιες απαντήσεις είναι "
+"λανθασμένες, θα εμφανιστεί ένα εικονίδιο σταυρού στις αντίστοιχες γραμμές. "
+"Διόρθωσε τα σφάλματα και, στη συνέχεια, πάτησε ξανά το κουμπί OK."
 
 #: activities/tens_complement_swap/resource/1/Data.qml:36
-#, fuzzy
-#| msgctxt "Warning|"
-#| msgid "1 is not a prime number."
 msgctxt "Data|"
 msgid "2 pairs to make from 4 numbers."
-msgstr "Το 1 δεν είναι πρώτος αριθμός."
+msgstr "2 ζεύγη από 4 αριθμούς."
 
 #: activities/tens_complement_swap/resource/2/Data.qml:9
-#, fuzzy
-#| msgctxt "Warning|"
-#| msgid "1 is not a prime number."
 msgctxt "Data|"
 msgid "2 pairs to make from 5 numbers."
-msgstr "Το 1 δεν είναι πρώτος αριθμός."
+msgstr "2 ζεύγη από 5 αριθμούς."
 
 #: activities/tens_complement_swap/resource/3/Data.qml:9
-#, fuzzy
-#| msgctxt "Warning|"
-#| msgid "1 is not a prime number."
 msgctxt "Data|"
 msgid "3 pairs to make from 6 numbers."
-msgstr "Το 1 δεν είναι πρώτος αριθμός."
+msgstr "3 ζεύγη από 6 αριθμούς."
 
 #. Activity title
 #: activities/tens_complement_use/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Use ten's complement"
-msgstr ""
+msgstr "Χρησιμοποιώ το συμπλήρωμα του δέκα"
 
 #. Help title
 #: activities/tens_complement_use/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Use a ten's complement to simplify the operation."
-msgstr ""
+msgstr "Χρησιμοποιώ το συμπλήρωμα του δέκα για να απλοποιήσω την πράξη."
 
 #. Help goal
 #: activities/tens_complement_use/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Learn a practical use of ten's complement."
-msgstr ""
+msgstr "Μαθαίνουμε μια πρακτική χρήση του συμπληρώματος του δέκα."
 
 #. Help prerequisite
 #: activities/tens_complement_use/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "ActivityInfo|"
 msgid "Numbers from 1 to 50 and additions."
-msgstr "Αριθμοί από το 0 ως το 9."
+msgstr "Αριθμοί από το 1 ως το 50 και προσθέσεις."
 
 #. Help manual
 #: activities/tens_complement_use/ActivityInfo.qml:23
@@ -25446,30 +25197,25 @@ msgid ""
 "parentheses. Select a number in the list, then select an empty spot of an "
 "operation to move the selected number there."
 msgstr ""
+"Αποσυνθέτουμε τις προσθέσεις για να δημιουργήσουμε μέσα σε κάθε παρένθεση "
+"ζευγάρια αριθμών που ισούνται με δέκα. Επιλέγουμε έναν αριθμό στη λίστα και "
+"στη συνέχεια ένα κενό σημείο μιας πράξης για να μετακινήσουμε τον επιλεγμένο "
+"αριθμό εκεί."
 
 #: activities/tens_complement_use/resource/1/Data.qml:43
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Between 1 and 10."
 msgctxt "Data|"
 msgid "Result between 11 and 19."
-msgstr "Μεταξύ 1 και 10."
+msgstr "Αποτελέσματα μεταξύ 11 και 19."
 
 #: activities/tens_complement_use/resource/2/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Result between 20 and 29."
-msgstr "Αριθμοί μεταξύ %1 και %2."
+msgstr "Αποτελέσματα μεταξύ 20 και 29."
 
 #: activities/tens_complement_use/resource/3/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Between 20 and 50."
 msgctxt "Data|"
 msgid "Result between 30 and 50."
-msgstr "Μεταξύ 20 και 50."
+msgstr "Αποτελέσματα μεταξύ 30 και 50."
 
 #. Activity title
 #: activities/tic_tac_toe/ActivityInfo.qml:18
@@ -25497,24 +25243,19 @@ msgstr ""
 
 #. Help manual
 #: activities/tic_tac_toe/ActivityInfo.qml:27
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Play with a friend. Take turns to click on the square which you want to "
-#| "mark. The first player to create a line of 3 marks wins."
 msgctxt "ActivityInfo|"
 msgid ""
 "Play with Tux. Take turns to click on the square which you want to mark. The "
 "first player to create a line of 3 marks wins."
 msgstr ""
-"Παίζοντας με έναν φίλο. Ο ένας μετά τον άλλο, κάνει κλικ στο πλαίσιο που "
-"θέλει να τοποθετήσει ένα σχήμα. Αυτός που πρώτος θα σχηματίσει μια γραμμή "
-"τριών σημαδιών κερδίζει."
+"Παίζοντας με τον Tux. Ο ένας μετά τον άλλο, κάνει κλικ στο πλαίσιο που θέλει "
+"να τοποθετήσει ένα σχήμα. Αυτός που πρώτος θα σχηματίσει μια γραμμή τριών "
+"σημαδιών κερδίζει."
 
 #: activities/tic_tac_toe/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Tux will play better when you increase the level."
-msgstr ""
+msgstr "Ο Tux θα παίζει καλύτερα όταν αυξήσεις το επίπεδο."
 
 #. Activity title
 #: activities/tic_tac_toe_2players/ActivityInfo.qml:18
@@ -25733,17 +25474,14 @@ msgid "Type the complete word as it falls, before it reaches the ground."
 msgstr "Πληκτρολόγησε τη λέξη πριν αυτή πέσει στο έδαφος."
 
 #: core/ChangeLog.qml:30
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "New maps and update of the maps for geography activities"
 msgctxt "ChangeLog|"
 msgid "Map of Spain added for geography activity"
-msgstr "Νέοι χάρτες και ενημέρωση χαρτών για τις δραστηριότητες της γεωγραφίας"
+msgstr "Ο χάρτης της Ισπανίας προστέθηκε στη γεωγραφική δραστηριότητα."
 
 #: core/ChangeLog.qml:31
 msgctxt "ChangeLog|"
 msgid "Voices added for Ukrainian"
-msgstr ""
+msgstr "Προστέθηκαν ήχοι για τα Ουκρανικά"
 
 #: core/ChangeLog.qml:32
 msgctxt "ChangeLog|"
@@ -25751,6 +25489,8 @@ msgid ""
 "New command-line option to list all the activities and start on a specific "
 "one"
 msgstr ""
+"Νέα επιλογή γραμμής εντολών για τη λίστα όλων των δραστηριοτήτων και την "
+"έναρξη μιας συγκεκριμένης."
 
 #: core/ChangeLog.qml:33 core/ChangeLog.qml:68 core/ChangeLog.qml:71
 #: core/ChangeLog.qml:77
@@ -26111,12 +25851,10 @@ msgid "GCompris %1"
 msgstr "GCompris %1"
 
 #: core/DialogAbout.qml:57
-#, fuzzy, qt-format
-#| msgctxt "DialogAbout|"
-#| msgid "Based on Qt %1"
+#, qt-format
 msgctxt "DialogAbout|"
 msgid "Based on Qt %1 and %2"
-msgstr "Βασίζεται στην Qt %1"
+msgstr "Βασίζεται στην Qt %1 και %2"
 
 #: core/DialogAbout.qml:61
 msgctxt "DialogAbout|"
@@ -26131,8 +25869,8 @@ msgid ""
 "please visit <a href='https://gcompris.net/donate-en.html'>https://gcompris."
 "net/donate-en.html</a>."
 msgstr ""
-"Αν θέλετε να παρέχετε χρηματοδοτική υποστήριξη για την ανάπτυξη του "
-"<b>GCompris</b>, επισκεφθείτε το <a href='https://gcompris.net/donate-en."
+"Αν θέλεις να παρέχεις χρηματοδοτική υποστήριξη για την ανάπτυξη του "
+"<b>GCompris</b>, επισκέψου το <a href='https://gcompris.net/donate-en."
 "html'>https://gcompris.net/donate-en.html</a>."
 
 #: core/DialogAbout.qml:75
@@ -26548,18 +26286,13 @@ msgid "Enable the kiosk mode."
 msgstr "Ενεργοποίηση περιορισμένης λειτουργίας."
 
 #: core/main.cpp:192
-#, fuzzy
-#| msgctxt "QObject|"
-#| msgid ""
-#| "Use software renderer instead of openGL (slower but should run with any "
-#| "graphical card, needs Qt 5.8 minimum)."
 msgctxt "QObject|"
 msgid ""
 "Use software renderer instead of openGL (slower but should run with any "
 "graphical card)."
 msgstr ""
-"Χρησιμοποιήστε λογισμικό απόδοσης αντί του openGL (είναι πιο αργό αλλά θα "
-"λειτουργεί μα κάθε κάρτα γραφικών, ελάχιστη απαίτηση Qt 5.8)."
+"Χρησιμοποιήστε πρόγραμμα απόδοσης λογισμικού αντί για openGL (πιο αργό αλλά "
+"θα πρέπει να εκτελείται με οποιαδήποτε κάρτα γραφικών)."
 
 #: core/main.cpp:195
 msgctxt "QObject|"
@@ -26573,12 +26306,12 @@ msgstr ""
 #: core/main.cpp:199
 msgctxt "QObject|"
 msgid "Specify the activity when starting GCompris."
-msgstr ""
+msgstr "Καθορίστε τη δραστηριότητα κατά την εκκίνηση του GCompris."
 
 #: core/main.cpp:204
 msgctxt "QObject|"
 msgid "Outputs all the available activities on the standard output."
-msgstr ""
+msgstr "Εξάγει όλες τις διαθέσιμες δραστηριότητες στην τυπική έξοδο."
 
 #: core/main.qml:233
 msgctxt "main|"

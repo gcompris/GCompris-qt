@@ -1,5 +1,5 @@
 # Translation for gcompris_voices.po to Euskara/Basque (eu).
-# Copyright (C) 2019-2021, This file is copyright:
+# Copyright (C) 2019-2022, This file is copyright:
 # This file is distributed under the same license as the gcompris package.
 # KDE euskaratzeko proiektuko arduraduna <xalba@ni.eus>.
 #
@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-12-17 02:40+0000\n"
-"PO-Revision-Date: 2022-04-15 13:43+0200\n"
+"PO-Revision-Date: 2022-11-25 20:30+0100\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
 "Language: eu\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 21.12.3\n"
+"X-Generator: Lokalize 22.08.3\n"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "advanced_colors"
 #: activities/advanced_colors/ActivityInfo.qml:18
@@ -222,10 +222,9 @@ msgstr "Elementuak talde egokian kategoriaka sailkatzea"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "checkers"
 #: activities/checkers/ActivityInfo.qml:18
-#, fuzzy, kde-format
-#| msgid "play chess against Tux"
+#, kde-format
 msgid "play checkers against Tux"
-msgstr "xakean Tux-en aurka jokatzea"
+msgstr "dama-jokoan Tux-en aurka jokatzea"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "checkers_2players"
 #: activities/checkers_2players/ActivityInfo.qml:18
@@ -316,6 +315,7 @@ msgstr "Egin klik dagokion kolorean"
 msgid ""
 "Select the correct comparator sign for each pair of numbers in the list."
 msgstr ""
+"Hautatu zerrendako zenbaki pare bakoitzari dagokion zeinu konparadore egokia."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "crane"
 #: activities/crane/ActivityInfo.qml:23
@@ -454,13 +454,13 @@ msgstr ""
 #, kde-format
 msgid ""
 "Select the appropriate number of parts as described in the instructions."
-msgstr ""
+msgstr "AukeratuAukeratu, jarraibideetan azaldu bezala, atal kopuru egokia."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "fractions_find"
 #: activities/fractions_find/ActivityInfo.qml:17
 #, kde-format
 msgid "Find the correct numerator and denominator of the represented fraction"
-msgstr ""
+msgstr "Aurkitu irudikatutako zatikiaren zenbakitzaile eta izendatzaile egokia"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "geo-country"
 #: activities/geo-country/ActivityInfo.qml:22
@@ -681,6 +681,8 @@ msgstr ""
 msgid ""
 "Move animals to their homes using a left click or right click on your mouse."
 msgstr ""
+"Eraman animaliak haien etxeetara saguaren ezkerreko edo eskuineko klik bat "
+"erabiliz."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "leftright"
 #: activities/leftright/ActivityInfo.qml:18
@@ -883,12 +885,9 @@ msgstr "Egin klik ordaindu beharreko diruan."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "morse_code"
 #: activities/morse_code/ActivityInfo.qml:21
-#, fuzzy, kde-format
-#| msgid "Learn and practice roman to arabic numerals conversion"
+#, kde-format
 msgid "Learn and practice the International Morse code"
-msgstr ""
-"Ikasi eta praktikatu zenbaki erromatarretatik arabiarretarako bihurketak "
-"egiten"
+msgstr "Ikasi eta praktikatu Nazioarteko Morse kodea"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "mosaic"
 #: activities/mosaic/ActivityInfo.qml:18

@@ -2,8 +2,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2022-03-24 15:09+0400\n"
-"Last-Translator: Kheyyam Gojayev <xxmn77@gmail.com>\n"
+"PO-Revision-Date: 2022-11-11 17:33+0400\n"
+"Last-Translator: Kheyyam <xxmn77@gmail.com>\n"
 "Language-Team: Azerbaijani <kde-i18n-doc@kde.org>\n"
 "Language: az\n"
 "MIME-Version: 1.0\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Qt-Contexts: true\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 21.12.3\n"
+"X-Generator: Lokalize 22.08.3\n"
 
 #. Activity title
 #: activities/advanced_colors/ActivityInfo.qml:15
@@ -1164,18 +1164,13 @@ msgstr ""
 
 #. Help manual
 #: activities/align4/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Play with a friend. Take turns to click the line in which you want to "
-#| "drop a token. The first player to create a line of 4 tokens wins."
 msgctxt "ActivityInfo|"
 msgid ""
 "Play with Tux. Take turns to click the line in which you want to drop a "
 "token. The first player to create a line of 4 tokens wins."
 msgstr ""
-"Dostunuzla oynayın. Düymə atmaq istədiyiniz sətirə növbə ilə vurun. 4 "
-"düymədən ibarət sətir yaradan ilk oyunçu qalib gəlir."
+"Tuks ilə oyna. Düymə atmaq istədiyiniz sətirə növbə ilə vurun. 4 düymədən "
+"ibarət sətir yaradan ilk oyunçu qalib gəlir."
 
 #: activities/align4/ActivityInfo.qml:23 activities/bargame/ActivityInfo.qml:26
 #: activities/checkers/ActivityInfo.qml:27
@@ -2624,12 +2619,6 @@ msgstr "Saymaq bacarığı."
 
 #. Help manual
 #: activities/bargame/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Click on the ball icon to select a number of balls, then click on the OK "
-#| "button to place the balls in the holes. You win if the computer has to "
-#| "place the last ball. If you want Tux to begin, just click on him."
 msgctxt "ActivityInfo|"
 msgid ""
 "Click on the ball icon to select a number of balls, then click on the OK "
@@ -3906,12 +3895,9 @@ msgstr "TƏRƏVƏZLƏRİ sağa, digərilərini isə sola yerləşdirin"
 
 #. Activity title
 #: activities/checkers/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Play chess against Tux"
 msgctxt "ActivityInfo|"
 msgid "Play checkers (against Tux)"
-msgstr "Şahmat oynayın (Tuks ilə)"
+msgstr "Şahmatı oynayın (Tuks ilə)"
 
 #. Help title
 #: activities/checkers/ActivityInfo.qml:17
@@ -3932,27 +3918,6 @@ msgstr ""
 
 #. Help manual
 #: activities/checkers/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Checkers is played by two opponents, on opposite sides of the gameboard. "
-#| "One player has the dark pieces; the other has the light pieces. Players "
-#| "alternate turns. A player may not move an opponent's piece. A move "
-#| "consists of moving a piece diagonally to an adjacent unoccupied square. "
-#| "If the adjacent square contains an opponent's piece, and the square "
-#| "immediately beyond it is vacant, the piece may be captured (and removed "
-#| "from the game) by jumping over it.\n"
-#| "Only the dark squares of the checkered board are used. A piece may move "
-#| "only diagonally into an unoccupied square. Capturing is mandatory. The "
-#| "player without pieces remaining, or who cannot move due to being blocked, "
-#| "loses the game.\n"
-#| "When a man reaches the crownhead or kings row (the farthest row forward), "
-#| "it becomes a king, and is marked by placing an additional piece on top of "
-#| "the first man, and acquires additional powers including the ability to "
-#| "move backwards. If there is a piece in a diagonal that a king can "
-#| "capture, he can move any distance along the diagonal, and may capture an "
-#| "opposing man any distance away by jumping to any of the unoccupied "
-#| "squares immediately beyond it.\n"
 msgctxt "ActivityInfo|"
 msgid ""
 "Checkers is played by two opponents, on opposite sides of the gameboard. One "
@@ -3990,7 +3955,7 @@ msgstr ""
 "edə bilir. Ancaq dama rəqib daşının üzərindən atıldıqda o mütləq həmin daşın "
 "arxasında dayanmalıdır. Bi Damanın ələ keçirə biləcəyi diaqonalda bir rəqib "
 "daşı varsa, həmin diaqnalda istənilən məsafəni qət edərək rəqib daşının "
-"arxasına keçməklə onu oyundan çıxara bilər.\n"
+"arxasına keçməklə onu oyundan çıxara bilər."
 
 #: activities/checkers/ActivityInfo.qml:29
 #: activities/checkers_2players/ActivityInfo.qml:28
@@ -4026,9 +3991,6 @@ msgstr "Qaralar qazandı"
 
 #. Activity title
 #: activities/checkers_2players/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Play checkers with your friend"
 msgctxt "ActivityInfo|"
 msgid "Play checkers (with a friend)"
 msgstr "Dama oynayın (dostunuz ilə)"
@@ -4076,9 +4038,6 @@ msgstr ""
 
 #. Activity title
 #: activities/chess/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Play chess against Tux"
 msgctxt "ActivityInfo|"
 msgid "Play chess (against Tux)"
 msgstr "Şahmat oynayın (Tuks ilə)"
@@ -4153,6 +4112,9 @@ msgid ""
 "will redo one move. To undo all the moves, press and hold the undo button "
 "for 3 seconds."
 msgstr ""
+"\"Geriyə\" düyməsinə tək vuruş bir hərəkəti geri qaytarır. \"Təkrar\" "
+"düyməsinə tək vuruşla bir irəli hərəkət edir. Bütün hərəkətləri geri "
+"qaytarmaq üçün \"Geri\" düyməsini 3 saniyə basılı saxlayın."
 
 #: activities/chess/ActivityInfo.qml:33
 #: activities/chess_partyend/ActivityInfo.qml:33
@@ -4205,37 +4167,25 @@ msgstr "Səhv gediş, Şahınız tutla bilər"
 
 #. Translators: undo all the moves in chess activity
 #: activities/chess/Chess.qml:123
-#, fuzzy
-#| msgctxt "core|"
-#| msgid "Do you really want to quit GCompris?"
 msgctxt "Chess|"
 msgid "Do you really want to undo all the moves?"
-msgstr "Siz GCompris-dən çıxmaq istəyirsiniz?"
+msgstr "Bütün hərəkətləri geri qaytarmaq istəyirsiniz?"
 
 #: activities/chess/Chess.qml:124
-#, fuzzy
-#| msgctxt "balanceboxeditor|"
-#| msgid "Yes"
 msgctxt "Chess|"
 msgid "Yes"
 msgstr "Bəli"
 
 #: activities/chess/Chess.qml:125
-#, fuzzy
-#| msgctxt "balanceboxeditor|"
-#| msgid "No"
 msgctxt "Chess|"
 msgid "No"
 msgstr "Xeyr"
 
 #. Activity title
 #: activities/chess_2players/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Play oware with a friend"
 msgctxt "ActivityInfo|"
 msgid "Play chess (with a friend)"
-msgstr "Dostunuz ilə oynayın"
+msgstr "Şahmat oynayın (dostunuz ilə)"
 
 #. Help manual Much of this string is shared across the three activities "chess", "chess_partyend", and "chess_2players".
 #: activities/chess_2players/ActivityInfo.qml:25
@@ -8221,11 +8171,6 @@ msgid "Polar bear"
 msgstr "Ağ ayı"
 
 #: activities/explore_world_animals/resource/board/board2.qml:31
-#, fuzzy
-#| msgctxt "board2|"
-#| msgid ""
-#| "The polar bear is one of the world's largest predatory mammals. It "
-#| "weights up to a ton and can be as long as 3 meters!"
 msgctxt "board2|"
 msgid ""
 "The polar bear is one of the world's largest predatory mammals. It weighs up "
@@ -9124,43 +9069,31 @@ msgstr ""
 
 #. Activity title
 #: activities/fractions_create/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice subtractions."
 msgctxt "ActivityInfo|"
 msgid "Create the fractions"
-msgstr "Çıxma ilə çalışmalar."
+msgstr "Kəsrlər yarat"
 
 #. Help title
 #: activities/fractions_create/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "A shape split in equal parts is displayed on screen."
-msgstr ""
+msgstr "Ekranda bərabər hissələrə bölünmüş forma göstərilir."
 
 #: activities/fractions_create/ActivityInfo.qml:18
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Drag the appropriate numbers and the operators to the boxes to obtain the "
-#| "number to guess in the instruction."
 msgctxt "ActivityInfo|"
 msgid ""
 "Select the appropriate number of parts as described in the instructions."
-msgstr ""
-"Bilinməyən ədədi tapmaq üçün, uyğun ədədləri və əməlləri qutuya yerləşdirin."
+msgstr "Təlimatda göstərildiyi kimi müvafiq sayda hissələri seçin."
 
 #: activities/fractions_create/fractions_create.js:79
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Digits representation"
 msgctxt "fractions_create|"
 msgid "Find the represented fraction."
-msgstr "Ədədləri göstərmək"
+msgstr "Təqdim olunmuş kəsrləri tap."
 
 #: activities/fractions_create/resource/1/Data.qml:9
 msgctxt "Data|"
 msgid "Simplified fractions with a pie."
-msgstr ""
+msgstr "Piroq ilə sadələşdirilmiş kəsrlər"
 
 #: activities/fractions_create/resource/1/Data.qml:18
 #: activities/fractions_create/resource/3/Data.qml:17
@@ -9168,78 +9101,63 @@ msgstr ""
 #: activities/fractions_create/resource/3/Data.qml:29
 msgctxt "Data|"
 msgid "Select one half of the pie."
-msgstr ""
+msgstr "Piroqun bir hissəsiniu seç."
 
 #: activities/fractions_create/resource/1/Data.qml:24
 #: activities/fractions_create/resource/3/Data.qml:35
 #: activities/fractions_create/resource/3/Data.qml:49
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Select the fifth Thursday of the given month"
 msgctxt "Data|"
 msgid "Select one-third of the pie."
-msgstr "Verilmiş ayın Çərşənbə axşamı gününü seçin"
+msgstr "Piroqun üçdə bir hissəsini seç."
 
 #: activities/fractions_create/resource/1/Data.qml:30
 #: activities/fractions_create/resource/3/Data.qml:41
 #: activities/fractions_create/resource/3/Data.qml:55
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Select the fourth Sunday of the given month"
 msgctxt "Data|"
 msgid "Select two-thirds of the pie."
-msgstr "Verilmiş ayın dördüncü Bazar gününü seçin"
+msgstr "Piroqun üçdə iki hissəsini seç."
 
 #: activities/fractions_create/resource/1/Data.qml:36
 #: activities/fractions_create/resource/3/Data.qml:61
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Select the butterfly of the correct color."
 msgctxt "Data|"
 msgid "Select one-quarter of the pie."
-msgstr "Düzgün rəngdəki kəpənəyi seçin."
+msgstr "Piroqun dörddə bir hissəsini seç."
 
 #: activities/fractions_create/resource/1/Data.qml:42
 #: activities/fractions_create/resource/3/Data.qml:67
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Select the fifth Thursday of the given month"
 msgctxt "Data|"
 msgid "Select two-fifths of the pie."
-msgstr "Verilmiş ayın Çərşənbə axşamı gününü seçin"
+msgstr "Piroqun beşdə iki hissəsini seç."
 
 #: activities/fractions_create/resource/1/Data.qml:50
 msgctxt "Data|"
 msgid "Select one pie and one-quarter of a pie."
-msgstr ""
+msgstr "Bir piroq və piroqun dörddə bir hissəsini seç."
 
 #: activities/fractions_create/resource/1/Data.qml:56
 msgctxt "Data|"
 msgid "Select one pie and two-fifths of a pie."
-msgstr ""
+msgstr "Bir piroq və piroqun beşdə iki hissəsini seç."
 
 #: activities/fractions_create/resource/1/Data.qml:62
 msgctxt "Data|"
 msgid "Select one pie and one-third of a pie."
-msgstr ""
+msgstr "Bir piroq və piroqun üçdə bir hissəsini seç."
 
 #: activities/fractions_create/resource/1/Data.qml:68
 msgctxt "Data|"
 msgid "Select one pie and one half of a pie."
-msgstr ""
+msgstr "Bir piroq və piroqun bir yarısını seç."
 
 #: activities/fractions_create/resource/1/Data.qml:74
 msgctxt "Data|"
 msgid "Select one pie and three-quarters of a pie."
-msgstr ""
+msgstr "Bir piroq və piroqun dörddə üç hissəsini seç."
 
 #: activities/fractions_create/resource/10/Data.qml:9
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Answer the questions with a correctness of 100%."
 msgctxt "Data|"
 msgid "Specific questions with a rectangle."
-msgstr "Suala tam dəqiq cavab verin."
+msgstr "Dördbucaqlı ilə verilmiş suallar."
 
 #: activities/fractions_create/resource/10/Data.qml:18
 #: activities/fractions_create/resource/10/Data.qml:24
@@ -9248,242 +9166,199 @@ msgid ""
 "Select as many parts as you can without taking more than half of the "
 "rectangle."
 msgstr ""
+"Düzbucaqlının yarısından çoxu olmamaq şərti ilə onun mümkün olan bütün "
+"hissələrini seçin."
 
 #: activities/fractions_create/resource/2/Data.qml:9
 msgctxt "Data|"
 msgid "Simplified fractions with a rectangle."
-msgstr ""
+msgstr "Düzbucaqlı ilə sadələşdirilmiş kəsrlər."
 
 #: activities/fractions_create/resource/2/Data.qml:18
 #: activities/fractions_create/resource/4/Data.qml:17
 #: activities/fractions_create/resource/4/Data.qml:23
 #: activities/fractions_create/resource/4/Data.qml:29
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Select the butterfly of the correct color."
 msgctxt "Data|"
 msgid "Select one half of the rectangle."
-msgstr "Düzgün rəngdəki kəpənəyi seçin."
+msgstr "Düzbucaqlının bir yarısını seç."
 
 #: activities/fractions_create/resource/2/Data.qml:24
 #: activities/fractions_create/resource/4/Data.qml:35
 #: activities/fractions_create/resource/4/Data.qml:49
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Select the butterfly of the correct color."
 msgctxt "Data|"
 msgid "Select one-third of the rectangle."
-msgstr "Düzgün rəngdəki kəpənəyi seçin."
+msgstr "Düzbucaqlının üçdə birini seç."
 
 #: activities/fractions_create/resource/2/Data.qml:30
 #: activities/fractions_create/resource/4/Data.qml:41
 #: activities/fractions_create/resource/4/Data.qml:55
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Select the butterfly of the correct color."
 msgctxt "Data|"
 msgid "Select two-thirds of the rectangle."
-msgstr "Düzgün rəngdəki kəpənəyi seçin."
+msgstr "Düzbucaqlının üçdə ikisini seç."
 
 #: activities/fractions_create/resource/2/Data.qml:36
 #: activities/fractions_create/resource/4/Data.qml:61
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Select the butterfly of the correct color."
 msgctxt "Data|"
 msgid "Select one-quarter of the rectangle."
-msgstr "Düzgün rəngdəki kəpənəyi seçin."
+msgstr "Düzbucaqlının dörddə birini seç."
 
 #: activities/fractions_create/resource/2/Data.qml:42
 #: activities/fractions_create/resource/4/Data.qml:67
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Select the fifth Thursday of the given month"
 msgctxt "Data|"
 msgid "Select two-fifths of the rectangle."
-msgstr "Verilmiş ayın Çərşənbə axşamı gününü seçin"
+msgstr "Düzbucaqlının beşdə ikisini seç."
 
 #: activities/fractions_create/resource/2/Data.qml:50
 msgctxt "Data|"
 msgid "Select one rectangle and one-quarter of a rectangle."
-msgstr ""
+msgstr "Bir düzbucaqlı və düzbucaqlının dörddə birini seç."
 
 #: activities/fractions_create/resource/2/Data.qml:56
 msgctxt "Data|"
 msgid "Select one rectangle and two-fifths of a rectangle."
-msgstr ""
+msgstr "Bir düzbucaqlı seç və düzbucaqlının beşdə ikisini seç."
 
 #: activities/fractions_create/resource/2/Data.qml:62
 msgctxt "Data|"
 msgid "Select one rectangle and one-third of a rectangle."
-msgstr ""
+msgstr "Bir düzbucaqlı seç və düzbucaqlının üçdə birini seç."
 
 #: activities/fractions_create/resource/2/Data.qml:68
 msgctxt "Data|"
 msgid "Select one rectangle and one half of a rectangle."
-msgstr ""
+msgstr "Bir düzbucaqlı və düzbucaqlının bir yarısını seç."
 
 #: activities/fractions_create/resource/2/Data.qml:74
 msgctxt "Data|"
 msgid "Select one rectangle and three-quarters of a rectangle."
-msgstr ""
+msgstr "Bir düzbucaqlı və düzbucaqlının dörddə üçünü seç."
 
 #: activities/fractions_create/resource/3/Data.qml:9
 msgctxt "Data|"
 msgid "Non-simplified fractions with a pie."
-msgstr ""
+msgstr "Piroq ilə sadə olmayan kəsr."
 
 #: activities/fractions_create/resource/3/Data.qml:73
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Select the fifth Thursday of the given month"
 msgctxt "Data|"
 msgid "Select three-fifths of the pie."
-msgstr "Verilmiş ayın Çərşənbə axşamı gününü seçin"
+msgstr "Piroqun beşdə dördünü seç."
 
 #: activities/fractions_create/resource/4/Data.qml:9
 msgctxt "Data|"
 msgid "Non-simplified fractions with a rectangle."
-msgstr ""
+msgstr "Düzbucaqlə ilə sadə olmayan kəsr."
 
 #: activities/fractions_create/resource/4/Data.qml:73
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Select the butterfly of the correct color."
 msgctxt "Data|"
 msgid "Select three-fifths of the rectangle."
-msgstr "Düzgün rəngdəki kəpənəyi seçin."
+msgstr "Düzbucaqlının beşdə üçünü seç."
 
 #: activities/fractions_create/resource/5/Data.qml:9
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Decimal number system."
 msgctxt "Data|"
 msgid "Decimal numbers with a pie."
-msgstr "Onlu say sistemi."
+msgstr "Piroq ilə onlu saylar."
 
 #: activities/fractions_create/resource/5/Data.qml:18
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 0.5 pie."
-msgstr "Seçildi"
+msgstr "Piroqun 0.5 hisəsini seç."
 
 #: activities/fractions_create/resource/5/Data.qml:24
 msgctxt "Data|"
 msgid "Select 0.25 pie."
-msgstr ""
+msgstr "Piroqun 0.25 hissəsini seç."
 
 #: activities/fractions_create/resource/5/Data.qml:30
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 0.4 pie."
-msgstr "Seçildi"
+msgstr "Piroqun 0.4 hissəsini seç."
 
 #: activities/fractions_create/resource/5/Data.qml:36
 msgctxt "Data|"
 msgid "Select 0.75 pie."
-msgstr ""
+msgstr "Piroqun 0.75 hissəsini seç."
 
 #: activities/fractions_create/resource/5/Data.qml:42
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 0.8 pie."
-msgstr "Seçildi"
+msgstr "Piroqun 0.8 hissəsini seç."
 
 #: activities/fractions_create/resource/5/Data.qml:50
 msgctxt "Data|"
 msgid "Select 1.25 pies."
-msgstr ""
+msgstr "Piroqun 1.25 hissəsini seç."
 
 #: activities/fractions_create/resource/5/Data.qml:56
 msgctxt "Data|"
 msgid "Select 1.4 pies."
-msgstr ""
+msgstr "Piroqun 1.4 hissəsini seç."
 
 #: activities/fractions_create/resource/5/Data.qml:62
 #: activities/fractions_create/resource/5/Data.qml:68
 msgctxt "Data|"
 msgid "Select 1.5 pies."
-msgstr ""
+msgstr "Piroqun 1.5 hissəsini seç."
 
 #: activities/fractions_create/resource/5/Data.qml:74
 msgctxt "Data|"
 msgid "Select 1.75 pies."
-msgstr ""
+msgstr "Piroqun 1.75 hissəsini seç."
 
 #: activities/fractions_create/resource/6/Data.qml:9
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Decimal number system."
 msgctxt "Data|"
 msgid "Decimal numbers with a rectangle."
-msgstr "Onlu say sistemi."
+msgstr "Düzbucaqlı ilə onıu saylar."
 
 #: activities/fractions_create/resource/6/Data.qml:18
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Select your locale"
 msgctxt "Data|"
 msgid "Select 0.5 rectangle."
-msgstr "Yerinizi seçin"
+msgstr "Düzbucalının 0.5 hissəsini seç."
 
 #: activities/fractions_create/resource/6/Data.qml:24
 msgctxt "Data|"
 msgid "Select 0.25 rectangle."
-msgstr ""
+msgstr "Düzbucalının 0.25 hissəsini seç."
 
 #: activities/fractions_create/resource/6/Data.qml:30
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Select your locale"
 msgctxt "Data|"
 msgid "Select 0.4 rectangle."
-msgstr "Yerinizi seçin"
+msgstr "Düzbucalının 0.4 hissəsini seç."
 
 #: activities/fractions_create/resource/6/Data.qml:36
 msgctxt "Data|"
 msgid "Select 0.75 rectangle."
-msgstr ""
+msgstr "Düzbucalının 0.75 hissəsini seç."
 
 #: activities/fractions_create/resource/6/Data.qml:42
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Select your locale"
 msgctxt "Data|"
 msgid "Select 0.8 rectangle."
-msgstr "Yerinizi seçin"
+msgstr "Düzbucalının 0.8 hissəsini seç."
 
 #: activities/fractions_create/resource/6/Data.qml:50
 msgctxt "Data|"
 msgid "Select 1.25 rectangles."
-msgstr ""
+msgstr "Düzbucaqlının 1.25 hissəsini seç."
 
 #: activities/fractions_create/resource/6/Data.qml:56
 msgctxt "Data|"
 msgid "Select 1.4 rectangles."
-msgstr ""
+msgstr "Düzbucaqlının 1.4 hissəsini seç."
 
 #: activities/fractions_create/resource/6/Data.qml:62
 #: activities/fractions_create/resource/6/Data.qml:68
 msgctxt "Data|"
 msgid "Select 1.5 rectangles."
-msgstr ""
+msgstr "Düzbucaqlının 1.5 hissəsini seç."
 
 #: activities/fractions_create/resource/6/Data.qml:74
 msgctxt "Data|"
 msgid "Select 1.75 rectangles."
-msgstr ""
+msgstr "Düzbucaqlının 1.75 hissəsini seç."
 
 #: activities/fractions_create/resource/7/Data.qml:9
 msgctxt "Data|"
 msgid "Percentages with a pie."
-msgstr ""
+msgstr "Faiz piroq ilə."
 
 #. Select %1 percent of the pie.
 #: activities/fractions_create/resource/7/Data.qml:19
@@ -9494,17 +9369,15 @@ msgstr ""
 #: activities/fractions_create/resource/7/Data.qml:56
 #: activities/fractions_create/resource/7/Data.qml:63
 #: activities/fractions_create/resource/7/Data.qml:70
-#, fuzzy, qt-format
-#| msgctxt "calendar_dataset|"
-#| msgid "Select the 1st"
+#, qt-format
 msgctxt "Data|"
 msgid "Select %1% of the pie."
-msgstr "1-ci günü seçin"
+msgstr "Piroqun %1%-ni seç."
 
 #: activities/fractions_create/resource/8/Data.qml:9
 msgctxt "Data|"
 msgid "Percentages with a rectangle."
-msgstr ""
+msgstr "Düzbucaqlı ilə faiz."
 
 #. Select %1 percent of the rectangle.
 #: activities/fractions_create/resource/8/Data.qml:19
@@ -9516,12 +9389,12 @@ msgstr ""
 #, qt-format
 msgctxt "Data|"
 msgid "Select %1% of the rectangle."
-msgstr ""
+msgstr "Düzbucaqlının %1%-ni seç."
 
 #: activities/fractions_create/resource/9/Data.qml:9
 msgctxt "Data|"
 msgid "Specific questions with a pie."
-msgstr ""
+msgstr "Piroq ilə verilmiş suallar."
 
 #: activities/fractions_create/resource/9/Data.qml:18
 #: activities/fractions_create/resource/9/Data.qml:24
@@ -9529,63 +9402,50 @@ msgctxt "Data|"
 msgid ""
 "Select as many parts as you can without taking more than half of the pie."
 msgstr ""
+"Piroqun yarısından çox olmamaq şərti ilə onun mümkün qədər çox hissələrini "
+"seç"
 
 #. Activity title
 #: activities/fractions_find/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "instruments|"
-#| msgid "Find the accordion"
 msgctxt "ActivityInfo|"
 msgid "Find the fractions"
-msgstr "Akkordeonu tapın"
+msgstr "Kəsri tap."
 
 #. Help title
 #: activities/fractions_find/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Find the correct date and select it on the calendar."
 msgctxt "ActivityInfo|"
 msgid "Find the correct numerator and denominator of the represented fraction."
-msgstr "Doğru tarixi tapın ə onu təqvimdə seçin."
+msgstr "Təqdim olunan kəsrin düzgün payını və məxrəcini tap."
 
 #: activities/fractions_find/resource/1/Data.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Nine men's morris (with a friend)"
 msgctxt "Data|"
 msgid "Find denominator (with a pie)."
-msgstr "Doqquz daş (dostunuzla)"
+msgstr "Məxrəci tapın (piroqdan istifadə edərək)"
 
 #: activities/fractions_find/resource/2/Data.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Nine men's morris (with a friend)"
 msgctxt "Data|"
 msgid "Find denominator (with a rectangle)."
-msgstr "Doqquz daş (dostunuzla)"
+msgstr "Məxrəci tapın (düzbucaqlıdan istifadə edərək)"
 
 #: activities/fractions_find/resource/3/Data.qml:9
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Align four (with a friend)"
 msgctxt "Data|"
 msgid "Find numerator (with a pie)."
-msgstr "Dördü sıralayın (dostunuzla birgə)"
+msgstr "Məxrəci tapın (piroq ilə)"
 
 #: activities/fractions_find/resource/4/Data.qml:9
 msgctxt "Data|"
 msgid "Find numerator (with a rectangle)."
-msgstr ""
+msgstr "Məxrəci tapın (düzbucaqlı ilə)"
 
 #: activities/fractions_find/resource/5/Data.qml:9
 msgctxt "Data|"
 msgid "Find numerator and denominator (with a pie)."
-msgstr ""
+msgstr "Kəsrin surətini və məxrəcini tapın (piroq ilə)"
 
 #: activities/fractions_find/resource/6/Data.qml:9
 msgctxt "Data|"
 msgid "Find numerator and denominator (with a rectangle)."
-msgstr ""
+msgstr "Kəsrin surətini və məxrəcini tapın (düzbucaqlı ilə)"
 
 #. Activity title
 #: activities/geo-country/ActivityInfo.qml:19
@@ -10823,145 +10683,121 @@ msgstr "Suvalkija"
 #: activities/geo-country/resource/board/board18_0.qml:13
 msgctxt "board18_0|"
 msgid "Autonomous communities of Spain"
-msgstr ""
+msgstr "İspaniyanın muxtar icmaları"
 
 #. Autonomous communities of Spain: Andalusia
 #: activities/geo-country/resource/board/board18_0.qml:22
 msgctxt "board18_0|"
 msgid "Andalusia"
-msgstr ""
+msgstr "Əndəlus"
 
 #. Autonomous communities of Spain: Madrid
 #: activities/geo-country/resource/board/board18_0.qml:29
 msgctxt "board18_0|"
 msgid "Madrid"
-msgstr ""
+msgstr "Madrid"
 
 #. Autonomous communities of Spain: Galicia
 #: activities/geo-country/resource/board/board18_0.qml:36
 msgctxt "board18_0|"
 msgid "Galicia"
-msgstr ""
+msgstr "Qalisiya"
 
 #. Autonomous communities of Spain: Castile and León
 #: activities/geo-country/resource/board/board18_0.qml:43
 msgctxt "board18_0|"
 msgid "Castile and León"
-msgstr ""
+msgstr "Kastiliya və Leon"
 
 #. Autonomous communities of Spain: Castilla-La Mancha
 #: activities/geo-country/resource/board/board18_0.qml:50
 msgctxt "board18_0|"
 msgid "Castilla-La Mancha"
-msgstr ""
+msgstr "Kastiliya-la-Manş"
 
 #. Autonomous communities of Spain: Catalonia
 #: activities/geo-country/resource/board/board18_0.qml:57
-#, fuzzy
-#| msgctxt "board14_0|"
-#| msgid "New Caledonia"
 msgctxt "board18_0|"
 msgid "Catalonia"
-msgstr "Yeni Kaledoniya"
+msgstr "Kataloniya"
 
 #. Autonomous communities of Spain: Aragon
 #: activities/geo-country/resource/board/board18_0.qml:64
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Hexagon"
 msgctxt "board18_0|"
 msgid "Aragon"
-msgstr "Altıbucaqlı"
+msgstr "Araqon"
 
 #. Autonomous communities of Spain: Valencia
 #: activities/geo-country/resource/board/board18_0.qml:71
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Calendar"
 msgctxt "board18_0|"
 msgid "Valencia"
-msgstr "Təqvim"
+msgstr "Valensiya"
 
 #. Autonomous communities of Spain: Murcia
 #: activities/geo-country/resource/board/board18_0.qml:78
 msgctxt "board18_0|"
 msgid "Murcia"
-msgstr ""
+msgstr "Mursiya"
 
 #. Autonomous communities of Spain: Asturias
 #: activities/geo-country/resource/board/board18_0.qml:85
 msgctxt "board18_0|"
 msgid "Asturias"
-msgstr ""
+msgstr "Asturiya"
 
 #. Autonomous communities of Spain: Basque Country
 #: activities/geo-country/resource/board/board18_0.qml:92
 msgctxt "board18_0|"
 msgid "Basque Country"
-msgstr ""
+msgstr "Basklar ölkəsi"
 
 #. Autonomous communities of Spain: La Rioja
 #: activities/geo-country/resource/board/board18_0.qml:99
-#, fuzzy
-#| msgctxt "board3_0|"
-#| msgid "La Rioja"
 msgctxt "board18_0|"
 msgid "La Rioja"
 msgstr "La Rioja"
 
 #. Autonomous communities of Spain: Cantabria
 #: activities/geo-country/resource/board/board18_0.qml:106
-#, fuzzy
-#| msgctxt "board11_0|"
-#| msgid "Calabria"
 msgctxt "board18_0|"
 msgid "Cantabria"
-msgstr "Calabria"
+msgstr "Kantabria"
 
 #. Autonomous communities of Spain: Navarre
 #: activities/geo-country/resource/board/board18_0.qml:113
-#, fuzzy
-#| msgctxt "board5|"
-#| msgid "Navajo"
 msgctxt "board18_0|"
 msgid "Navarre"
-msgstr "Navaxo Milli Abidəsi"
+msgstr "Navarra"
 
 #. Autonomous communities of Spain: Extremadura
 #: activities/geo-country/resource/board/board18_0.qml:120
 msgctxt "board18_0|"
 msgid "Extremadura"
-msgstr ""
+msgstr "Extremadura"
 
 #. Autonomous communities of Spain: Canary Islands
 #: activities/geo-country/resource/board/board18_0.qml:127
-#, fuzzy
-#| msgctxt "board14_0|"
-#| msgid "Mariana Islands"
 msgctxt "board18_0|"
 msgid "Canary Islands"
-msgstr "Maryana adaları"
+msgstr "Kanar adaları"
 
 #. Autonomous communities of Spain: Balearic Islands
 #: activities/geo-country/resource/board/board18_0.qml:134
-#, fuzzy
-#| msgctxt "board14_0|"
-#| msgid "Mariana Islands"
 msgctxt "board18_0|"
 msgid "Balearic Islands"
-msgstr "Maryana adaları"
+msgstr "Balearik adaları"
 
 #. Autonomous communities of Spain: Ceuta
 #: activities/geo-country/resource/board/board18_0.qml:141
 msgctxt "board18_0|"
 msgid "Ceuta"
-msgstr ""
+msgstr "Kueta"
 
 #. Autonomous communities of Spain: Melilla
 #: activities/geo-country/resource/board/board18_0.qml:148
 msgctxt "board18_0|"
 msgid "Melilla"
-msgstr ""
+msgstr "Melilla"
 
 #: activities/geo-country/resource/board/board1_0.qml:15
 msgctxt "board1_0|"
@@ -12963,7 +12799,7 @@ msgstr "Hollandiya"
 #: activities/geography/resource/board/board5_0.qml:73
 msgctxt "board5_0|"
 msgid "Luxembourg"
-msgstr ""
+msgstr "Lüksemburq"
 
 #: activities/geography/resource/board/board5_0.qml:81
 msgctxt "board5_0|"
@@ -13016,9 +12852,6 @@ msgid "Eastern Europe"
 msgstr "Şərqi Avropa"
 
 #: activities/geography/resource/board/board6_0.qml:24
-#, fuzzy
-#| msgctxt "board9_0|"
-#| msgid "Cyprus"
 msgctxt "board6_0|"
 msgid "Cyprus"
 msgstr "Kipr"
@@ -13829,18 +13662,28 @@ msgid ""
 "over. So 8 isn't a multiple of 5, nor is 23. Only 5, 10, 15, 20, 25 ... are "
 "multiples (or families or steps) of 5."
 msgstr ""
+"Bir ədədin tam bölünənlərii o ədədə bərabər olan bütün ədədlərdir. Məsələn, "
+"24, 36, 48 və 60, 12-nin tam bölünənidir. 25, 12-nin tam bölünəni deyil. "
+"çünki elə bir rəqəm yoxdur ki, 12-yə vurmaqla 25 alınsın. Bir ədəd ikinci "
+"bir ədədin vuruğudursa, o zaman ikinci ədəd birinci ədədin tam bölünənidir. "
+"Tam bölünənləri bir ailə, vuruqları isə bir ailənin üzvləri kimi təsəvvür "
+"edin. Vuruq 5, valideyinlər 10, baba və nənə 15, ulu baba və ulu nənə 20, "
+"ulu babanın atası və ulu nənənin anası 25 və s. Lakin, 5 ədədi 8 və 23 "
+"ailəsinə aid deyillər. 5-i 8 ilə 23 arasında elə yerləşdirmək mümkün deyil "
+"ki, qalıq qalmasın. Beləliklə 8, 5-in tam böləni deyil. Yalnız 5, 10, 15, "
+"20, 25 5-in tam bölənidir."
 
 #. Activity title
 #: activities/gnumch-primes/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Gnumch primes"
-msgstr "Sadə ədədləri udmaq"
+msgstr "Sadə ədədlər yeyən"
 
 #. Help title
 #: activities/gnumch-primes/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Guide the Number Muncher to all the prime numbers."
-msgstr "Rəqəmyeyəni sadəədədlərə yönəldin."
+msgstr "Rəqəmyeyəni sadə ədədlərə yönəldin."
 
 #. Help goal
 #: activities/gnumch-primes/ActivityInfo.qml:20
@@ -15833,29 +15676,20 @@ msgid "Subtractions with 1, 2, 3, 4 and 5."
 msgstr "1, 2, 3, 4 və 5 ilə çıxma əməli."
 
 #: activities/learn_subtractions/resource/4/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2, 3, 4 and 5."
 msgctxt "Data|"
 msgid "Subtractions with 1, 2, 3, 4, 5, 6 and 7."
-msgstr "1, 2, 3, 4 və 5 ilə çıxma əməli."
+msgstr "1, 2, 3, 4, 5, 6 və 7 ilə çıxma əməlləri."
 
 #: activities/learn_subtractions/resource/5/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2, 3, 4 and 5."
 msgctxt "Data|"
 msgid "Subtractions with 1, 2, 3, 4, 5, 6, 7, 8 and 9."
-msgstr "1, 2, 3, 4 və 5 ilə çıxma əməli."
+msgstr "1, 2, 3, 4, 5, 6,7,8 və 9 ilə çıxma əməlləri."
 
 #. Activity title
 #: activities/left_right_click/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Memory training."
 msgctxt "ActivityInfo|"
 msgid "Mouse click training"
-msgstr "Yaddaş məşqi"
+msgstr "Siçan düymələrindən istifadə məşqi"
 
 #. Help title
 #: activities/left_right_click/ActivityInfo.qml:16
@@ -15863,12 +15697,14 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Move animals to their homes using a left click or right click on your mouse."
 msgstr ""
+"Siçanın sağ və ya sol düyməsindən istifadə edərək heyvanları evlərində "
+"yerləşdirin."
 
 #. Help goal
 #: activities/left_right_click/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Using the mouse. Left and right click training."
-msgstr ""
+msgstr "Siçan düymələrindən istifadə edin. Sol və sağ düyməyə vurma məşqi."
 
 #. Help manual
 #: activities/left_right_click/ActivityInfo.qml:23
@@ -15877,6 +15713,9 @@ msgid ""
 "A left click on a fish will move it to the pond. A right click on a monkey "
 "will move it to the tree. A message will show if you make the wrong click."
 msgstr ""
+"Balığın üzərinə sol düymə ilə vurmaq onu gölməçəyə aparacaq. Meymunun "
+"üzərinə sağ düymə ilə vurmaq onu ağaca çıxaracaq. Səhv etdiyinizdə bildiriş "
+"göstəriləcək."
 
 #. Activity title
 #: activities/leftright/ActivityInfo.qml:15
@@ -18083,7 +17922,7 @@ msgstr "Çalışma bölmələri menyusunu göstərmək"
 #: activities/menu/ConfigurationItem.qml:296
 msgctxt "ConfigurationItem|"
 msgid "Ask for confirmation to exit"
-msgstr ""
+msgstr "Çıxışın təsdiqlənməsini soruşmaq"
 
 #: activities/menu/ConfigurationItem.qml:307
 msgctxt "ConfigurationItem|"
@@ -18608,21 +18447,15 @@ msgstr ""
 
 #. Activity title
 #: activities/morse_code/ActivityInfo.qml:18
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Discover the braille system"
 msgctxt "ActivityInfo|"
 msgid "Discover the International Morse code"
-msgstr "Brayl sisteminin öyrənilməsi"
+msgstr "Beynəlxalq Morze kodunu kəşf et."
 
 #. Help title
 #: activities/morse_code/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn how to tell the time on an analog clock."
 msgctxt "ActivityInfo|"
 msgid "Learn how to communicate with the International Morse code."
-msgstr "Əqrəbli saatda vaxtın necə deyilməsini öyrənmək."
+msgstr "Beynəlxalq Morze kodu ilə rabitənin necə yaradılmasını öyrən."
 
 #. Help goal
 #: activities/morse_code/ActivityInfo.qml:23
@@ -18630,15 +18463,14 @@ msgctxt "ActivityInfo|"
 msgid ""
 "You have to send and receive letters and digits in International Morse code."
 msgstr ""
+"Siz beynəlxalq Morze kodu ilə hərfləri və rəqəmləri göndərməli və qəbul "
+"etməlisiniz."
 
 #. Help prerequisite
 #: activities/morse_code/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Knowledge of arithmetic operations."
 msgctxt "ActivityInfo|"
 msgid "Knowledge of alphabets and digits."
-msgstr "Arifmetik əməliyyatlar haqqında biliklər."
+msgstr "Əlifba və rəqəmlər üzrə biliklər."
 
 #. Help manual
 #: activities/morse_code/ActivityInfo.qml:27
@@ -18649,11 +18481,15 @@ msgid ""
 "have a look at the translation map which contains the code for all the "
 "letters and digits."
 msgstr ""
+"Sizdən Morze kodu ilə ya ismarıc göndərməniz ya da Morze kodu ilə "
+"göndərilmiş ismarıcı hərf və rəqəmlərə çevirməniz xahiş olunacaq. Morze "
+"kodunu öyrənməniz üçün bütün hərf və rəqəmlərdən ibarət tərcüməyə baxa "
+"bilərsiniz."
 
 #: activities/morse_code/FirstScreen.qml:25
 msgctxt "FirstScreen|"
 msgid "Exploring Morse Code"
-msgstr ""
+msgstr "Morze kodunun öyrənilməsi"
 
 #: activities/morse_code/FirstScreen.qml:64
 msgctxt "FirstScreen|"
@@ -18661,6 +18497,9 @@ msgid ""
 "Morse code was developed by Samuel Morse. It is a method of transmitting "
 "text information as a series of on-off tones, lights, or clicks."
 msgstr ""
+"Morze kodu Samuel Morze tərəfindən tərtib olunub. Bu mətnin sözlərindəki "
+"hərflərin uzun-qısa siqnallar (işıq, səs və s.) ardıcıllığı ilə göndərilməsi "
+"üsuludur."
 
 #: activities/morse_code/FirstScreen.qml:65
 msgctxt "FirstScreen|"
@@ -18673,41 +18512,36 @@ msgid ""
 "For example, the most common letter in English, the letter \"E\", has the "
 "shortest code, a single dot."
 msgstr ""
+"Hər bir Morze kodu simvolu, ya mətn simvolunu (hərf və ya rəqəm) və ya durğu "
+"işarəsini təmsil edir və unikal nöqtə və tire ardıcıllığı ilə təmsil olunur. "
+"Bir tirenin müddəti bir nöqtənin müddətindən üç dəfə çoxdur. Əlaqənin "
+"sürətini artırmaq üçün kod elə təşkil olunmuşdur ki, ən çox istifadə olunan "
+"hərflər qısa nöqtə ilə verilsin. Məsələn, ingilis dilində ən çox yayılmış "
+"hərf olan \"E\" hərfinin ən qısa kod ilə, tək nöqtə ilə təyin olunur."
 
 #: activities/morse_code/FirstScreen.qml:90
-#, fuzzy
-#| msgctxt "FirstScreen|"
-#| msgid ""
-#| "When you are ready, click on me and try reproducing braille characters."
 msgctxt "FirstScreen|"
 msgid "When you are ready, click on Tux and we will converse in Morse code."
 msgstr ""
-"Hazır olduğunuzda mənə vurun və brayl simvollarını yenidən yaratmağa cəhd "
-"edin."
+"Hazır olduğunuzda Tuksun üzərinə vurun və biz hərfləri Morze koduna "
+"çevirəcəyik."
 
 #: activities/morse_code/MorseCode.qml:346
-#, fuzzy, qt-format
-#| msgctxt "RomanNumerals|"
-#| msgid "Roman value: %1"
+#, qt-format
 msgctxt "MorseCode|"
 msgid "Morse value: %1"
-msgstr "Rum rəqəmi ilə yazı: %1"
+msgstr "Morze kodu: %1"
 
 #: activities/morse_code/MorseCode.qml:347
-#, fuzzy, qt-format
-#| msgctxt "RomanNumerals|"
-#| msgid "Arabic value: %1"
+#, qt-format
 msgctxt "MorseCode|"
 msgid "Alphabet/Numeric value: %1"
-msgstr "Ərəb rəqəmi ilə yazı: %1"
+msgstr "Hərflər və rəqəmlər: %1"
 
 #: activities/morse_code/resource/1/Data.qml:13
-#, fuzzy
-#| msgctxt "Menu|"
-#| msgid "Letters"
 msgctxt "Data|"
 msgid "Letters."
-msgstr "Hərflər"
+msgstr "Hərflər."
 
 #: activities/morse_code/resource/1/Data.qml:18
 #: activities/morse_code/resource/1/Data.qml:34
@@ -18719,73 +18553,57 @@ msgstr "Hərflər"
 #, qt-format
 msgctxt "Data|"
 msgid "Send the message %1 in Morse code."
-msgstr ""
+msgstr "%1 ismarıcını Morze kodu ilə göndər."
 
 #: activities/morse_code/resource/1/Data.qml:23
 #: activities/morse_code/resource/1/Data.qml:39
 #: activities/morse_code/resource/1/Data.qml:55
 #: activities/morse_code/resource/1/Data.qml:71
-#, fuzzy, qt-format
-#| msgctxt "RomanNumerals|"
-#| msgid "Convert the roman number %1 to arabic."
+#, qt-format
 msgctxt "Data|"
 msgid "Convert the message %1 to letters."
-msgstr "%1 rum rəqəmini ərəb rəqəminə çevirin."
+msgstr "%1 ismarıcını hərflərə çevir."
 
 #: activities/morse_code/resource/1/Data.qml:28
 #: activities/morse_code/resource/1/Data.qml:44
 #: activities/morse_code/resource/1/Data.qml:60
 #: activities/morse_code/resource/1/Data.qml:76
-#, fuzzy
-#| msgctxt "advanced_colors|"
-#| msgid "Find the corn butterfly"
 msgctxt "Data|"
 msgid "Find the corresponding letter."
-msgstr "Qarğıdalı rəngli kəpənəyi tapın"
+msgstr "Uyğun hərfi tap."
 
 #: activities/morse_code/resource/2/Data.qml:13
 msgctxt "Data|"
 msgid "Digits."
-msgstr ""
+msgstr "Rəqəmlər."
 
 #: activities/morse_code/resource/2/Data.qml:23
 #: activities/morse_code/resource/2/Data.qml:39
-#, fuzzy, qt-format
-#| msgctxt "RomanNumerals|"
-#| msgid "Convert the roman number %1 to arabic."
+#, qt-format
 msgctxt "Data|"
 msgid "Convert the message %1 to digits."
-msgstr "%1 rum rəqəmini ərəb rəqəminə çevirin."
+msgstr "%1 ismarıcını rəqəmlərə çevir."
 
 #: activities/morse_code/resource/2/Data.qml:28
 #: activities/morse_code/resource/2/Data.qml:44
-#, fuzzy
-#| msgctxt "instruments|"
-#| msgid "Find the accordion"
 msgctxt "Data|"
 msgid "Find the corresponding digit."
-msgstr "Akkordeonu tapın"
+msgstr "Uyğun rəqəmi tap."
 
 #: activities/morse_code/resource/3/Data.qml:13
-#, fuzzy
-#| msgctxt "Menu|"
-#| msgid "Words"
 msgctxt "Data|"
 msgid "Words."
-msgstr "Sözlər"
+msgstr "Sözlər."
 
 #: activities/morse_code/resource/3/Data.qml:24
 msgctxt "Data|"
 msgid "Write the Morse code you hear."
-msgstr ""
+msgstr "Eşitdiyiniz Morze kodunu yazın."
 
 #: activities/morse_code/resource/3/Data.qml:34
-#, fuzzy
-#| msgctxt "RomanNumerals|"
-#| msgid "Convert the roman number %1 to arabic."
 msgctxt "Data|"
 msgid "Convert the message in a word."
-msgstr "%1 rum rəqəmini ərəb rəqəminə çevirin."
+msgstr "İsmarıcı sözə çevir."
 
 #. Activity title
 #: activities/mosaic/ActivityInfo.qml:15
@@ -18862,18 +18680,13 @@ msgstr ""
 
 #. Help manual
 #: activities/nine_men_morris/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Play with a friend. First take turns to place nine pieces, and then take "
-#| "turns to move your pieces."
 msgctxt "ActivityInfo|"
 msgid ""
 "Play with Tux. First take turns to place nine pieces, and then take turns to "
 "move your pieces."
 msgstr ""
-"Dostunuz ilə oynayın. İlk öncə doqquz ədəd daşı yerləşdirin və sonra onları "
-"növbə ilə hərəkət etdirin."
+"Tuks ilə oynayın. İlk öncə doqquz daşı yerləşdirin və sonra onları növbə ilə "
+"hərəkət etdirin."
 
 #: activities/nine_men_morris/nine_men_morris.js:29
 msgctxt "nine_men_morris|"
@@ -19504,6 +19317,16 @@ msgid ""
 "Tigers|live|in|forests.\n"
 "Football|is|a|team|game."
 msgstr ""
+"İt|hürür.\n"
+"Ev|qırmızıdır.\n"
+"Oğlan|kitab|oxuyur.\n"
+"Mənim|dostum|qəşəngdir.\n"
+"Necə|gözəl|mənzərədir.\n"
+"Səməd|hovuza|atıldı.\n"
+"Jalə|yeni|kitab|istəyir.\n"
+"Anam|mənə|yağ-çörək|hazırladı.\n"
+"Pələng|meşədə|yaşayır.\n"
+"Futbol|komanda|oyunudur."
 
 #: activities/ordering_sentences/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -19525,12 +19348,18 @@ msgid ""
 "Mom|has|asked|me|to|play|in|the|room.\n"
 "I|think|we|are|going|to|have|a|good|day."
 msgstr ""
+"Günəş|səmada|parlayır.\n"
+"Uşaqlar|axşamlar|həyətdə|oynamağı|xoşlayır.\n"
+"Sən|nahara|gedirsən.\n"
+"Turan|çoxlu|şəkər|yedikdən|sonra|özünü|pis|hiss|elədi.\n"
+"Ailəmiz|ilə|hər|məzuniyyətdə|istirahətə|gedirik.\n"
+"Həmid|dayı|mənə|qırmızı|oyuncaq|maşın|verdi.\n"
+"Düyü|ilə|birlikdə|salat|yeyə|bilərsən.\n"
+"Anam|məndən|otağımda|oynamağı|xahiş|etdi.\n"
+"Yaxşı|bir|gün|keçirəcəyimizi|düşünürəm."
 
 #. Activity title
 #: activities/oware/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Play oware against Tux"
 msgctxt "ActivityInfo|"
 msgid "Play oware (against Tux)"
 msgstr "Tuks ilə oynayın"
@@ -19620,9 +19449,6 @@ msgstr "Səhv yerdəyişmə"
 
 #. Activity title
 #: activities/oware_2players/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Play oware with a friend"
 msgctxt "ActivityInfo|"
 msgid "Play oware (with a friend)"
 msgstr "Dostunuz ilə oynayın"
@@ -24994,23 +24820,18 @@ msgstr ""
 
 #. Help manual
 #: activities/tic_tac_toe/ActivityInfo.qml:27
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Play with a friend. Take turns to click on the square which you want to "
-#| "mark. The first player to create a line of 3 marks wins."
 msgctxt "ActivityInfo|"
 msgid ""
 "Play with Tux. Take turns to click on the square which you want to mark. The "
 "first player to create a line of 3 marks wins."
 msgstr ""
-"Dostunuz ilə oynayın Öz gedişinizdə İşarə qoymaq istədiyiniz xananı vurun. "
-"Bir sırada ilk üç işarəni birinci yerləşdirə bilən oyunu qazanır."
+"Tuks ilə oynayın Öz gedişinizdə işarə qoymaq istədiyiniz xananı vurun. Bir "
+"sırada ilk üç işarəni birinci yerləşdirə bilən oyunu qazanır."
 
 #: activities/tic_tac_toe/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Tux will play better when you increase the level."
-msgstr ""
+msgstr "Səviyyə artdıqca Tuks daha yaxşı oynayacaq"
 
 #. Activity title
 #: activities/tic_tac_toe_2players/ActivityInfo.qml:18
@@ -25100,6 +24921,11 @@ msgid "As the sun rises, the water of the sea starts heating and evaporates."
 msgstr "Günəş yüksəldikcə dənizin suyu isinməyə və buxarlaşmağa başlayır."
 
 #: activities/watercycle/Watercycle.qml:80
+#, fuzzy
+#| msgctxt "Watercycle|"
+#| msgid ""
+#| "Water vapor condenses to form cloud and when clouds become heavy, it "
+#| "rains. Click on the cloud."
 msgctxt "Watercycle|"
 msgid ""
 "Water vapor condenses to form cloud and when clouds become heavy, it rains. "
@@ -25151,6 +24977,12 @@ msgstr ""
 "okeanlar kimi su hövzələrindən susyun buxarlanması üçün enerji qaynağıdır."
 
 #: activities/watercycle/Watercycle.qml:115
+#, fuzzy
+#| msgctxt "Watercycle|"
+#| msgid ""
+#| "Plants also lose water to the air through transpiration. The water vapor "
+#| "cools down forming tiny droplets in clouds. When the clouds meet cool air "
+#| "over the land, precipitation is triggered and fall down as rain."
 msgctxt "Watercycle|"
 msgid ""
 "Plants also lose water to the air through transpiration. The water vapor "
@@ -25260,29 +25092,32 @@ msgid ""
 "Reduce the size of the packages for all platforms and of the external word "
 "images set"
 msgstr ""
+"Bütün platformalar və sözlərin xarici şəkil dəstləri üçün paketlərin "
+"ölçüsünü azaldın"
 
 #: core/ChangeLog.qml:40
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "New speed setting in several activities."
 msgctxt "ChangeLog|"
 msgid "Improve images quality in several activities"
-msgstr "Bəzi çalışmalarda sürətin ayarlanması."
+msgstr "Bəzi çalışmalarda şəkillərin keyfiyyətinin yaxşılaşdırılması"
 
 #: core/ChangeLog.qml:41
 msgctxt "ChangeLog|"
 msgid "Fix some transitions in renewable_energy/watercycle on some platforms"
 msgstr ""
+"Bəzi platformalarda bərpa olunan enerjidəki/su dövriyyəsindəki keçidlərin "
+"düzəldilməsi"
 
 #: core/ChangeLog.qml:42
 msgctxt "ChangeLog|"
 msgid "Fix dead keys ignored on Linux for typing activities"
-msgstr ""
+msgstr "Linuxda yazı çalışması üçün ölü düymələrin buraxılmasının düzəldilməsi"
 
 #: core/ChangeLog.qml:43
 msgctxt "ChangeLog|"
 msgid "Fix level reset when changing level manually in Logical associations"
 msgstr ""
+"\"Məntiqi birliklər\"də səviyyə əl ilə dəyişdirildikdə səviyyənin "
+"sıfırlanmasının düzəldilməsi"
 
 #: core/ChangeLog.qml:47
 msgctxt "ChangeLog|"
@@ -25582,12 +25417,10 @@ msgid "GCompris %1"
 msgstr "GCompris %1"
 
 #: core/DialogAbout.qml:57
-#, fuzzy, qt-format
-#| msgctxt "DialogAbout|"
-#| msgid "Based on Qt %1"
+#, qt-format
 msgctxt "DialogAbout|"
 msgid "Based on Qt %1 and %2"
-msgstr "Qt %1 əsasında"
+msgstr "Qt %1 və %2 əsasında"
 
 #: core/DialogAbout.qml:61
 msgctxt "DialogAbout|"
@@ -26017,19 +25850,13 @@ msgid "Enable the kiosk mode."
 msgstr "Köşk rejimini aktiv edin."
 
 #: core/main.cpp:192
-#, fuzzy
-#| msgctxt "QObject|"
-#| msgid ""
-#| "Use software renderer instead of openGL (slower but should run with any "
-#| "graphical card, needs Qt 5.8 minimum)."
 msgctxt "QObject|"
 msgid ""
 "Use software renderer instead of openGL (slower but should run with any "
 "graphical card)."
 msgstr ""
-"OpenGL əvəzinə proqram təminatının görüntünü işləməsi funksiyasından "
-"istifadə etmək (yavaş, lakin bütün qrafik kartlarla işləməlidir; bunun üçün "
-"Qt 5.8 versiyasından aşağı olmamalıdır)."
+"OpenGL əvəzəinə proqram təminatının görüntünü işləmə imkanından istifadə "
+"edin (zəif işləyir, lakin əksəriyyət video kartkar ilə uyğundur)."
 
 #: core/main.cpp:195
 msgctxt "QObject|"
@@ -26037,18 +25864,18 @@ msgid ""
 "Use openGL renderer instead of software (faster but crash potentially "
 "depending on your graphical card)."
 msgstr ""
-"Proqram təminatının görüntünü işləməsi imkanı əvəzinə OpenGL istifadə etmək "
+"Proqram təminatının görüntünü işləmə imkanı əvəzinə OpenGL istifadə etmək "
 "(cəld işləyir, lakin iş keyfiyyəti qrafik kartdan asılıdr)."
 
 #: core/main.cpp:199
 msgctxt "QObject|"
 msgid "Specify the activity when starting GCompris."
-msgstr ""
+msgstr "GCompris açıldıqda çalışma göstərilsin."
 
 #: core/main.cpp:204
 msgctxt "QObject|"
 msgid "Outputs all the available activities on the standard output."
-msgstr ""
+msgstr "Standart çıxışda bütün əlçatan çalışmaların siyahısını çıxarır."
 
 #: core/main.qml:233
 msgctxt "main|"
@@ -26143,48 +25970,8 @@ msgid "Start"
 msgstr "Başladın"
 
 #~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Play with the computer. Take turns to click the line in which you want to "
-#~ "drop a token. The first player to create a line of 4 tokens wins."
-#~ msgstr ""
-#~ "Kompyuter ilə oynayın Düymə atmaq istədiyiniz sətirə növbə ilə vurun. 4 "
-#~ "düymədən ibarət sətir yaradan ilk oyunçu qalib gəlir."
-
-#~ msgctxt "Calendar|"
-#~ msgid "Sunday"
-#~ msgstr "Bazar"
-
-#~ msgctxt "Calendar|"
-#~ msgid "Monday"
-#~ msgstr "Baza ertəsi"
-
-#~ msgctxt "Calendar|"
-#~ msgid "Tuesday"
-#~ msgstr "Çərşənbə axşamı"
-
-#~ msgctxt "Calendar|"
-#~ msgid "Wednesday"
-#~ msgstr "Çərşənbə"
-
-#~ msgctxt "Calendar|"
-#~ msgid "Thursday"
-#~ msgstr "Cümə axşamı"
-
-#~ msgctxt "Calendar|"
-#~ msgid "Friday"
-#~ msgstr "Cümə"
-
-#~ msgctxt "Calendar|"
-#~ msgid "Saturday"
-#~ msgstr "Şənbə"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Play checkers against the computer"
-#~ msgstr "Şahmatı oynayın (Tuks ilə)"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Play chess against your friend"
-#~ msgstr "Şahmat oynayın (dostunuz ilə)"
+#~ msgid "Learn digits"
+#~ msgstr "Ədədləri öyrənin"
 
 #~ msgctxt "board1|"
 #~ msgid "The horse goes 'neigh! neigh!'. Horses usually sleep standing up."
@@ -26280,8 +26067,12 @@ msgstr "Başladın"
 #~ "hazırlanması üçün istifadə olunur."
 
 #~ msgctxt "ActivityInfo|"
-#~ msgid "Learn digits"
-#~ msgstr "Ədədləri öyrənin"
+#~ msgid ""
+#~ "Play with the computer. Take turns to click the line in which you want to "
+#~ "drop a token. The first player to create a line of 4 tokens wins."
+#~ msgstr ""
+#~ "Kompyuter ilə oynayın Düymə atmaq istədiyiniz sətirə növbə ilə vurun. 4 "
+#~ "düymədən ibarət sətir yaradan ilk oyunçu qalib gəlir."
 
 #~ msgctxt "ActivityInfo|"
 #~ msgid ""
@@ -26290,6 +26081,42 @@ msgstr "Başladın"
 #~ msgstr ""
 #~ "Kompyuter ilə oynayın. İlk öncə doqquz ədəd daşı yerləşdirin və sonra "
 #~ "onları növbə ilə hərəkət etdirin."
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid ""
+#~ "Play with the computer. Take turns to click on the square which you want "
+#~ "to mark. The first player to create a line of 3 marks wins."
+#~ msgstr ""
+#~ "Kompyuter ilə oynayın. Öz gedişinizdə İşarə qoymaq istədiyiniz xananı "
+#~ "vurun. Bir sırada ilk üç işarəni birinci yerləşdirə bilən oyunu qazanır."
+
+#~ msgctxt "Calendar|"
+#~ msgid "Sunday"
+#~ msgstr "Bazar"
+
+#~ msgctxt "Calendar|"
+#~ msgid "Monday"
+#~ msgstr "Baza ertəsi"
+
+#~ msgctxt "Calendar|"
+#~ msgid "Tuesday"
+#~ msgstr "Çərşənbə axşamı"
+
+#~ msgctxt "Calendar|"
+#~ msgid "Wednesday"
+#~ msgstr "Çərşənbə"
+
+#~ msgctxt "Calendar|"
+#~ msgid "Thursday"
+#~ msgstr "Cümə axşamı"
+
+#~ msgctxt "Calendar|"
+#~ msgid "Friday"
+#~ msgstr "Cümə"
+
+#~ msgctxt "Calendar|"
+#~ msgid "Saturday"
+#~ msgstr "Şənbə"
 
 #~ msgctxt "Data|"
 #~ msgid ""
@@ -26310,14 +26137,6 @@ msgstr "Başladın"
 #~ msgstr ""
 #~ "Günəş|hər|zaman|səhərdən|axşamadək|səmada|parıldayır.\n"
 #~ "Uşaqlar|hər|gün|axşamlar|birlikdə|həyətdə|oynayırlar."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Play with the computer. Take turns to click on the square which you want "
-#~ "to mark. The first player to create a line of 3 marks wins."
-#~ msgstr ""
-#~ "Kompyuter ilə oynayın. Öz gedişinizdə İşarə qoymaq istədiyiniz xananı "
-#~ "vurun. Bir sırada ilk üç işarəni birinci yerləşdirə bilən oyunu qazanır."
 
 #~ msgctxt "ActivityInfo|"
 #~ msgid ""
@@ -26346,6 +26165,14 @@ msgstr "Başladın"
 #~ msgstr ""
 #~ "Şəkillər və səslər Art4Apps layihəsindən alınıb: https://www.art4apps."
 #~ "org/."
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Play checkers against the computer"
+#~ msgstr "Kompyuter ilə dama oyunu"
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Play chess against your friend"
+#~ msgstr "Şahmatı dostunuzla oynayın"
 
 #~ msgctxt "ActivityInfo|"
 #~ msgid "Drawing by Stephane Cabaraux"

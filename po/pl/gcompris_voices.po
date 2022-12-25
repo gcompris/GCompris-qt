@@ -1,14 +1,15 @@
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
 #
-# Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>, 2017, 2018, 2019, 2020, 2021.
+# Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>, 2017, 2018, 2019, 2020, 2021, 2022.
+# Grzegorz Koryga <rehork@tutamail.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-12-17 02:40+0000\n"
-"PO-Revision-Date: 2021-10-16 08:04+0200\n"
-"Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
+"PO-Revision-Date: 2022-10-08 11:13+0200\n"
+"Last-Translator: Grzegorz Koryga <rehork@tutamail.com>\n"
 "Language-Team: Polish <kde-i18n-doc@kde.org>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
@@ -16,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2);\n"
-"X-Generator: Lokalize 20.12.1\n"
+"X-Generator: Lokalize 22.04.1\n"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "advanced_colors"
 #: activities/advanced_colors/ActivityInfo.qml:18
@@ -197,7 +198,7 @@ msgstr "Utwórz znak Braille'a dla litery."
 #: activities/calendar/ActivityInfo.qml:18
 #, kde-format
 msgid "Select the asked date on the calendar"
-msgstr "Wskaż pytaną datę na kalendarzu"
+msgstr "Na kalendarzu zaznacz datę, o którą jest pytanie"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "canal_lock"
 #: activities/canal_lock/ActivityInfo.qml:18
@@ -219,10 +220,9 @@ msgstr "Przypisz elementy do poprawnej grupy"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "checkers"
 #: activities/checkers/ActivityInfo.qml:18
-#, fuzzy, kde-format
-#| msgid "play chess against Tux"
+#, kde-format
 msgid "play checkers against Tux"
-msgstr "zagraj w szachy z Tuksem"
+msgstr "zagraj w warcaby z Tuksem"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "checkers_2players"
 #: activities/checkers_2players/ActivityInfo.qml:18
@@ -403,13 +403,13 @@ msgstr "Klikaj na walizkach, aby dowiedzieć się o muzyce z całego świata."
 #: activities/family/ActivityInfo.qml:18
 #, kde-format
 msgid "Let us understand what to call our relatives"
-msgstr "Pomóż nam zrozumieć jak nazywać naszą rodzinę"
+msgstr "Umożliwia poznanie nazw na naszych krewnych"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "family_find_relative"
 #: activities/family_find_relative/ActivityInfo.qml:18
 #, kde-format
 msgid "Click on a pair that defines the given relation"
-msgstr "Kliknij na parę, która określa dany związek"
+msgstr "Kliknij na parę, która określa daną relację"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "fifteen"
 #: activities/fifteen/ActivityInfo.qml:18
@@ -446,13 +446,13 @@ msgstr "Przeciągnij linię od piłki, aby nadać szybkość i kierunek kopnięc
 #, kde-format
 msgid ""
 "Select the appropriate number of parts as described in the instructions."
-msgstr ""
+msgstr "Wybierz odpowiednią liczbę części zgodnie z opisem w instrukcji."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "fractions_find"
 #: activities/fractions_find/ActivityInfo.qml:17
 #, kde-format
 msgid "Find the correct numerator and denominator of the represented fraction"
-msgstr ""
+msgstr "Znajdź właściwy licznik i mianownik przedstawionego ułamka"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "geo-country"
 #: activities/geo-country/ActivityInfo.qml:22
@@ -674,6 +674,7 @@ msgstr ""
 msgid ""
 "Move animals to their homes using a left click or right click on your mouse."
 msgstr ""
+"Przenieś zwierzęta do ich domów, używając lewego lub prawego przycisku myszy."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "leftright"
 #: activities/leftright/ActivityInfo.qml:18
@@ -1154,8 +1155,8 @@ msgid ""
 "Drive the submarine to the right end of the screen without colliding with "
 "any objects"
 msgstr ""
-"Przepłyń łodzią podwodną na prawą stronę ekranu bez zderzenia z jakimkolwiek "
-"obiektem"
+"Przepłyń łodzią podwodną na prawą stronę ekranu bez zderzenia z innymi "
+"obiektami"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "sudoku"
 #: activities/sudoku/ActivityInfo.qml:18
@@ -1270,7 +1271,7 @@ msgstr "Pisz słowa na swojej klawiaturze zanim dotrą na ziemię."
 #~ "dół. Uważaj, aby nie rozbić statku kosmicznego Tuksa."
 
 #~ msgid "Match the alphabet with its upper);"
-#~ msgstr "Dopasuj małe litery do wielkich liter);"
+#~ msgstr "Dopasuj do alfabetu pisanego wielkimi literami);"
 
 #~ msgid ""
 #~ "Use the drawing tools to reproduce the right-hand side symmetrical figure."

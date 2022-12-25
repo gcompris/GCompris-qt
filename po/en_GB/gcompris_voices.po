@@ -1,13 +1,13 @@
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
 #
-# Steve Allewell <steve.allewell@gmail.com>, 2017, 2018, 2019, 2020, 2021.
+# Steve Allewell <steve.allewell@gmail.com>, 2017, 2018, 2019, 2020, 2021, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-12-17 02:40+0000\n"
-"PO-Revision-Date: 2021-10-17 11:33+0100\n"
+"PO-Revision-Date: 2022-11-26 14:32+0000\n"
 "Last-Translator: Steve Allewell <steve.allewell@gmail.com>\n"
 "Language-Team: British English <kde-l10n-en_gb@kde.org>\n"
 "Language: en_GB\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 21.08.1\n"
+"X-Generator: Lokalize 21.12.3\n"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "advanced_colors"
 #: activities/advanced_colors/ActivityInfo.qml:18
@@ -221,10 +221,9 @@ msgstr "Categorise the items into the correct group"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "checkers"
 #: activities/checkers/ActivityInfo.qml:18
-#, fuzzy, kde-format
-#| msgid "play chess against Tux"
+#, kde-format
 msgid "play checkers against Tux"
-msgstr "play chess against Tux"
+msgstr "play draughts against Tux"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "checkers_2players"
 #: activities/checkers_2players/ActivityInfo.qml:18
@@ -314,6 +313,7 @@ msgstr "Click on the right colour"
 msgid ""
 "Select the correct comparator sign for each pair of numbers in the list."
 msgstr ""
+"Select the correct comparator sign for each pair of numbers in the list."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "crane"
 #: activities/crane/ActivityInfo.qml:23
@@ -449,12 +449,13 @@ msgstr "Drag a line from the ball to set the speed and direction of your kick."
 msgid ""
 "Select the appropriate number of parts as described in the instructions."
 msgstr ""
+"Select the appropriate number of parts as described in the instructions."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "fractions_find"
 #: activities/fractions_find/ActivityInfo.qml:17
 #, kde-format
 msgid "Find the correct numerator and denominator of the represented fraction"
-msgstr ""
+msgstr "Find the correct numerator and denominator of the represented fraction"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "geo-country"
 #: activities/geo-country/ActivityInfo.qml:22
@@ -673,6 +674,7 @@ msgstr ""
 msgid ""
 "Move animals to their homes using a left click or right click on your mouse."
 msgstr ""
+"Move animals to their homes using a left click or right click on your mouse."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "leftright"
 #: activities/leftright/ActivityInfo.qml:18
@@ -870,10 +872,9 @@ msgstr "Click on the money to pay."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "morse_code"
 #: activities/morse_code/ActivityInfo.qml:21
-#, fuzzy, kde-format
-#| msgid "Learn and practice roman to arabic numerals conversion"
+#, kde-format
 msgid "Learn and practice the International Morse code"
-msgstr "Learn and practice roman to arabic numerals conversion"
+msgstr "Learn and practice the International Morse code"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "mosaic"
 #: activities/mosaic/ActivityInfo.qml:18
@@ -1258,6 +1259,27 @@ msgstr "Type the words on your keyboard before they reach the ground."
 
 #~ msgid "play checkers against the computer"
 #~ msgstr "play draughts against the computer"
+
+#~ msgid ""
+#~ "Drag the arrow to select a part of the bar then drop it in the empty area "
+#~ "to represent the decimal number."
+#~ msgstr ""
+#~ "Drag the arrow to select a part of the bar then drop it in the empty area "
+#~ "to represent the decimal number."
+
+#~ msgid ""
+#~ "Arrange the alphabets in the correct order by placing an alphabet in its "
+#~ "correct position"
+#~ msgstr ""
+#~ "Arrange the alphabets in the correct order by placing an alphabet in its "
+#~ "correct position"
+
+#~ msgid ""
+#~ "Arrange the numbers in the correct order by placing a number in its "
+#~ "correct position"
+#~ msgstr ""
+#~ "Arrange the numbers in the correct order by placing a number in its "
+#~ "correct position"
 
 #~ msgid "put here in comment the text for the intro voice"
 #~ msgstr "put here in comment the text for the intro voice"
