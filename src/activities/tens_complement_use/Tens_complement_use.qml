@@ -126,7 +126,7 @@ ActivityBase {
                 model: holderListModel
                 delegate: ContainerBox {
                     height: Math.min((items.cardSize + background.layoutMargins) * 2, answerHolderArea.height / 2)
-                    width: Math.min(height * 5, parent.width)
+                    width: Math.min(height * 5, ListView.view.width)
                 }
             }
         }
