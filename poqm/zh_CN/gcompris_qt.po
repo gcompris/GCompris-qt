@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
-"PO-Revision-Date: 2022-12-13 12:20\n"
+"PO-Revision-Date: 2022-12-24 11:42\n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
@@ -14638,12 +14638,9 @@ msgstr "启用声音"
 
 #. Activity title
 #: activities/learn_digits/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Count the items"
 msgctxt "ActivityInfo|"
 msgid "Count and color the circles"
-msgstr "物件计数"
+msgstr ""
 
 #. Help title
 #: activities/learn_digits/ActivityInfo.qml:17
@@ -23018,12 +23015,9 @@ msgstr "最大值：500000。"
 
 #. Activity title
 #: activities/tens_complement_find/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "instruments|"
-#| msgid "Find the trumpet"
 msgctxt "ActivityInfo|"
 msgid "Find ten's complement"
-msgstr "找出小号"
+msgstr ""
 
 #. Help title
 #: activities/tens_complement_find/ActivityInfo.qml:16
@@ -23062,28 +23056,19 @@ msgid ""
 msgstr ""
 
 #: activities/tens_complement_find/resource/1/Data.qml:25
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Digits from 1 to 4."
 msgctxt "Data|"
 msgid "First number from 1 to 4."
-msgstr "1到4的数字。"
+msgstr ""
 
 #: activities/tens_complement_find/resource/2/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Digits from 1 to 9."
 msgctxt "Data|"
 msgid "First number from 5 to 9."
-msgstr "1到9的数字。"
+msgstr ""
 
 #: activities/tens_complement_find/resource/4/Data.qml:9
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Division of numbers"
 msgctxt "Data|"
 msgid "Find both numbers."
-msgstr "数字除法"
+msgstr ""
 
 #. Activity title
 #: activities/tens_complement_swap/ActivityInfo.qml:14
@@ -23123,28 +23108,19 @@ msgid ""
 msgstr ""
 
 #: activities/tens_complement_swap/resource/1/Data.qml:36
-#, fuzzy
-#| msgctxt "Warning|"
-#| msgid "1 is not a prime number."
 msgctxt "Data|"
 msgid "2 pairs to make from 4 numbers."
-msgstr "1 不是质数。"
+msgstr ""
 
 #: activities/tens_complement_swap/resource/2/Data.qml:9
-#, fuzzy
-#| msgctxt "Warning|"
-#| msgid "1 is not a prime number."
 msgctxt "Data|"
 msgid "2 pairs to make from 5 numbers."
-msgstr "1 不是质数。"
+msgstr ""
 
 #: activities/tens_complement_swap/resource/3/Data.qml:9
-#, fuzzy
-#| msgctxt "Warning|"
-#| msgid "1 is not a prime number."
 msgctxt "Data|"
 msgid "3 pairs to make from 6 numbers."
-msgstr "1 不是质数。"
+msgstr ""
 
 #. Activity title
 #: activities/tens_complement_use/ActivityInfo.qml:14
@@ -23180,28 +23156,19 @@ msgid ""
 msgstr ""
 
 #: activities/tens_complement_use/resource/1/Data.qml:43
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Between 1 and 10."
 msgctxt "Data|"
 msgid "Result between 11 and 19."
-msgstr "介于1和10之间。"
+msgstr ""
 
 #: activities/tens_complement_use/resource/2/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Between 20 and 50."
 msgctxt "Data|"
 msgid "Result between 20 and 29."
-msgstr "介于20和50之间。"
+msgstr ""
 
 #: activities/tens_complement_use/resource/3/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Between 20 and 50."
 msgctxt "Data|"
 msgid "Result between 30 and 50."
-msgstr "介于20和50之间。"
+msgstr ""
 
 #. Activity title
 #: activities/tic_tac_toe/ActivityInfo.qml:18
@@ -24283,7 +24250,3 @@ msgstr "跳过"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "开始"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Learn digits"
-#~ msgstr "学习数字"
