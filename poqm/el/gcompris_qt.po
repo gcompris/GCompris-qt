@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2022-12-24 21:26+0200\n"
+"PO-Revision-Date: 2022-12-25 12:24+0200\n"
 "Last-Translator: Stelios <sstavra@gmail.com>\n"
 "Language-Team: Greek <kde-i18n-el@kde.org>\n"
 "Language: el\n"
@@ -5309,7 +5309,7 @@ msgstr "Συνέχεια"
 #: activities/comparator/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Compare numbers"
-msgstr "Συγκρίνω αριθμούς."
+msgstr "Συγκρίνω αριθμούς"
 
 #. Help title
 #: activities/comparator/ActivityInfo.qml:19
@@ -9298,7 +9298,7 @@ msgstr ""
 #: activities/fractions_create/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Create the fractions"
-msgstr "Δημιούργησε τα κλάσματα"
+msgstr "Δημιουργώ τα κλάσματα"
 
 #. Help title
 #: activities/fractions_create/ActivityInfo.qml:16
@@ -9636,7 +9636,7 @@ msgstr ""
 #: activities/fractions_find/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Find the fractions"
-msgstr "Βρες τα κλάσματα"
+msgstr "Βρίσκω τα κλάσματα"
 
 #. Help title
 #: activities/fractions_find/ActivityInfo.qml:16
@@ -11026,7 +11026,7 @@ msgstr "Θέουτα"
 #: activities/geo-country/resource/board/board18_0.qml:148
 msgctxt "board18_0|"
 msgid "Melilla"
-msgstr "Μελίγαι"
+msgstr "Μελίγια"
 
 #: activities/geo-country/resource/board/board1_0.qml:15
 msgctxt "board1_0|"
@@ -15465,7 +15465,7 @@ msgid ""
 "decimal number."
 msgstr ""
 "Μάθε τους δεκαδικούς αριθμούς μετρώντας τα τετράγωνα που απαιτούνται για την "
-"αναπαράσταση του δεκαδικού αριθμού"
+"αναπαράσταση του δεκαδικού αριθμού."
 
 #. Help manual
 #: activities/learn_decimals/ActivityInfo.qml:23
@@ -15476,10 +15476,11 @@ msgid ""
 "until the number of dropped bars corresponds to the displayed decimal "
 "number. Then click on the OK button to validate your answer."
 msgstr ""
-"Ένας δεκαδικός αριθμός είναι στην οθόνη. Μετακίνησε το βέλος για να "
-"επιλέξεις ένα τμήμα της στήλης και μετέφερέ το στην κενή περιοχή. Επανέλαβε "
-"μέχρι το πλήθος των τμημάτων που μεταφέρθηκαν να αντιστοιχεί στον δεκαδικό "
-"αριθμό. Τότε κάνε κλικ στο πλήκτρο OK για να επιβεβαιώσεις την απάντησή σου."
+"Ένας δεκαδικός αριθμός εμφανίζεται στο επάνω μέρος της οθόνης. Μετακίνησε το "
+"βέλος για να επιλέξεις ένα τμήμα της μπάρας και μετέφερέ το στην επάνω κενή "
+"περιοχή. Επανέλαβε μέχρι το πλήθος των τμημάτων που μεταφέρθηκαν να "
+"αντιστοιχεί στον δεκαδικό αριθμό. Τότε κάνε κλικ στο πλήκτρο OK για να "
+"ελέγξεις την απάντησή σου."
 
 #: activities/learn_decimals/learn_decimals.js:33
 msgctxt "learn_decimals|"
@@ -15487,9 +15488,9 @@ msgid ""
 "A decimal number is displayed. The bar with the arrow represents a full "
 "unit, and each square in it represents one tenth of this unit."
 msgstr ""
-"Ένας δεκαδικός αριθμός εμφανίζεται στην οθόνη. Η στήλη με το βέλος "
-"αναπαριστά μία πλήρη μονάδα και κάθε τετράγωνο στη στήλη αναπαριστά ένα "
-"δέκατο της μονάδας."
+"Ένας δεκαδικός αριθμός εμφανίζεται στην οθόνη. Μια ολόκληρη μπάρα αναπαριστά "
+"μία πλήρη μονάδα και κάθε τετράγωνο στη μπάρα αναπαριστά ένα δέκατο της "
+"μονάδας."
 
 #: activities/learn_decimals/learn_decimals.js:37
 msgctxt "learn_decimals|"
@@ -15499,10 +15500,10 @@ msgid ""
 "bars corresponds to the displayed decimal number. Then click on the OK "
 "button to validate your answer."
 msgstr ""
-"Μετακίνησε το βέλος για να επιλέξεις ένα τμήμα της στήλης και μετέφερέ το "
-"στην κενή περιοχή. Επανέλαβε μέχρι το πλήθος των τμημάτων που μεταφέρθηκαν "
-"να αντιστοιχεί στον δεκαδικό αριθμό. Τότε κάνε κλικ στο πλήκτρο OK για να "
-"ελέγξεις την απάντησή σου."
+"Μετακίνησε το βέλος για να επιλέξεις ένα τμήμα της μπάρας και μετέφερέ το "
+"στην επάνω κενή περιοχή. Επανέλαβε μέχρι το πλήθος των τμημάτων που "
+"μεταφέρθηκαν να αντιστοιχεί στον δεκαδικό αριθμό. Τότε κάνε κλικ στο πλήκτρο "
+"OK για να ελέγξεις την απάντησή σου."
 
 #: activities/learn_decimals/learn_decimals.js:44
 msgctxt "learn_decimals|"
@@ -15511,9 +15512,9 @@ msgid ""
 "number from the subtraction is represented with bars. One bar represents a "
 "full unit, and each square in it represents one tenth of this unit."
 msgstr ""
-"Στην οθόνη παρουσιάζεται η αφαίρεση δύο δεκαδικών αριθμών. Από κάτω, ο "
-"πρώτος αριθμός αναπαριστάται με στήλες. Μία στήλη αναπαριστά μια πλήρη "
-"μονάδα και κάθε τετράγωνο στη στήλη αναπαριστά ένα δέκατο της μονάδας."
+"Στην οθόνη εμφανίζεται η αφαίρεση δύο δεκαδικών αριθμών. Ο πρώτος αριθμός, ο "
+"μειωτέος, αναπαριστάται με μπάρες. Μια ολόκληρη μπάρα αναπαριστά μία πλήρη "
+"μονάδα και κάθε τετράγωνο στη μπάρα αναπαριστά ένα δέκατο της μονάδας."
 
 #: activities/learn_decimals/learn_decimals.js:48
 msgctxt "learn_decimals|"
@@ -15521,8 +15522,10 @@ msgid ""
 "Click on the squares to subtract them and display the result of the "
 "operation, and click on the OK button to validate your answer."
 msgstr ""
-"Κάνε κλικ στα τετράγωνα για να τα αφαιρέσεις και να εμφανίσεις το αποτέλεσμα "
-"της πράξης και κάνε κλικ στο OK για να ελέγξεις την απάντησή σου."
+"Ο δεύτερος αριθμός, ο αφαιρετέος, δηλώνει το ποσό που πρέπει να αφαιρεθεί. "
+"Ξεκινώντας από το τέλος και με τη σειρά, κάνε κλικ σε όσα τετράγωνα δηλώνει "
+"ο αφαιρετέος για να τα αφαιρέσεις και να εμφανίσεις το αποτέλεσμα της "
+"πράξης. Κάνε κλικ στο OK για να ελέγξεις την απάντησή σου."
 
 #: activities/learn_decimals/learn_decimals.js:52
 #: activities/learn_decimals/learn_decimals.js:67
@@ -15531,8 +15534,8 @@ msgid ""
 "If the answer is correct, type the corresponding result, and click on the OK "
 "button to validate your answer."
 msgstr ""
-"Αν η απάντηση είναι σωστή, πληκτρολόγησε το αποτέλεσμα και κάνε κλικ στο OK "
-"για να ελέγξεις την απάντησή σου."
+"Αν η απάντηση είναι σωστή, στο επόμενο βήμα πληκτρολόγησε το αποτέλεσμα και "
+"κάνε κλικ στο OK για να ελέγξεις την απάντησή σου."
 
 #: activities/learn_decimals/learn_decimals.js:59
 msgctxt "learn_decimals|"
@@ -15541,9 +15544,9 @@ msgid ""
 "represents a full unit, and each square in it represents one tenth of this "
 "unit."
 msgstr ""
-"Εμφανίζεται η πράξη της πρόσθεσης δύο δεκαδικών αριθμών. αναπαριστάται με "
-"στήλες. Η στήλη με το βέλος αναπαριστά μία πλήρη μονάδα και κάθε τετράγωνο "
-"στη στήλη αναπαριστά ένα δέκατο αυτής της μονάδας."
+"Στην οθόνη εμφανίζεται η πρόσθεση δύο δεκαδικών αριθμών. Μια ολόκληρη μπάρα "
+"αναπαριστά μία πλήρη μονάδα και κάθε τετράγωνο στη μπάρα αναπαριστά ένα "
+"δέκατο της μονάδας."
 
 #: activities/learn_decimals/learn_decimals.js:63
 msgctxt "learn_decimals|"
@@ -15553,15 +15556,15 @@ msgid ""
 "bars corresponds to the result of the addition, and click on the OK button "
 "to validate your answer."
 msgstr ""
-"Μετακίνησε το βέλος για να επιλέξεις ένα τμήμα της στήλης και μετέφερέ το "
-"στην κενή περιοχή. Επανέλαβε μέχρι το πλήθος των τμημάτων που μεταφέρθηκαν "
-"να αντιστοιχεί στο αποτέλεσμα της πρόσθεσης και κάνε κλικ στο OK για να "
-"ελέγξεις την απάντησή σου."
+"Μετακίνησε το βέλος για να επιλέξεις ένα τμήμα της μπάρας και μετέφερέ το "
+"στην επάνω κενή περιοχή. Επανέλαβε μέχρι το πλήθος των τμημάτων που "
+"μεταφέρθηκαν να αντιστοιχεί στο αποτέλεσμα της πρόσθεσης και κάνε κλικ στο "
+"πλήκτρο OK για να ελέγξεις την απάντησή σου."
 
 #: activities/learn_decimals/learn_decimals.js:74
 msgctxt "learn_decimals|"
 msgid "A quantity is requested. The arrow allows to select up to 10 oranges."
-msgstr "Ζητείται μία ποσότητα. Με το βέλος επιλέγονται μέχρι 10 πορτοκάλια."
+msgstr "Ζητείται μια ποσότητα. Με το βέλος επιλέγονται μέχρι 10 πορτοκάλια."
 
 #: activities/learn_decimals/learn_decimals.js:78
 msgctxt "learn_decimals|"
@@ -15573,7 +15576,7 @@ msgid ""
 msgstr ""
 "Μετακίνησε το βέλος για να επιλέξεις ένα πλήθος από πορτοκάλια και μετέφερέ "
 "τα στην κενή περιοχή. Επανέλαβε μέχρι το πλήθος των πορτοκαλιών να "
-"αντιστοιχεί στην απαιτούμενη ποσότητα. Τότε κάνε κλικ στο OK για να ελέγξεις "
+"αντιστοιχεί στη ζητούμενη ποσότητα. Τότε κάνε κλικ στο OK για να ελέγξεις "
 "την απάντησή σου."
 
 #: activities/learn_decimals/Learn_decimals.qml:112
@@ -18779,7 +18782,7 @@ msgstr ""
 #: activities/morse_code/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
 msgid "Discover the International Morse code"
-msgstr "Ανακαλύψτε τον διεθνή Κώδικα Μορς"
+msgstr "Κώδικας Μορς"
 
 #. Help title
 #: activities/morse_code/ActivityInfo.qml:20
@@ -18792,9 +18795,7 @@ msgstr "Μάθε πώς να επικοινωνείς με τον διεθνή �
 msgctxt "ActivityInfo|"
 msgid ""
 "You have to send and receive letters and digits in International Morse code."
-msgstr ""
-"Πρέπει να στέλνεις και να λαμβάνεις γράμματα και αριθμούς με τον διεθνή "
-"Κώδικα Μορς."
+msgstr "Να στέλνεις και να λαμβάνεις μηνύματα με τον διεθνή Κώδικα Μορς."
 
 #. Help prerequisite
 #: activities/morse_code/ActivityInfo.qml:25
@@ -18828,8 +18829,7 @@ msgid ""
 "text information as a series of on-off tones, lights, or clicks."
 msgstr ""
 "Ο Κώδικας Μορς αναπτύχθηκε από τον Samuel Morse. Είναι μια μέθοδος μετάδοσης "
-"πληροφοριών κειμένου ως μια σειρά από τόνους, φώτα και κλικ ενεργοποίησης - "
-"απενεργοποίησης."
+"πληροφοριών με τη χρήση ηλεκτρικών παλμών."
 
 #: activities/morse_code/FirstScreen.qml:65
 msgctxt "FirstScreen|"
@@ -18843,12 +18843,13 @@ msgid ""
 "shortest code, a single dot."
 msgstr ""
 "Κάθε σύμβολο του Κώδικα Μορς αντιπροσωπεύει είτε έναν χαρακτήρα κειμένου "
-"(γράμμα ή αριθμό) είτε ένα πρόσημο και αποτελείται από κουκκίδες και παύλες "
-"σε μια ακολουθία. Η διάρκεια μιας παύλας είναι τριπλάσια της διάρκειας μιας "
-"τελείας. Για να αυξηθεί η ταχύτητα της επικοινωνίας, ο Κώδικας σχεδιάστηκε "
-"έτσι ώστε τα πιο κοινά γράμματα να έχουν συντομότερες ακολουθίες.\n"
-"Για παράδειγμα, το πιο κοινό γράμμα στα Αγγλικά, το γράμμα \"E\", έχει τον "
-"συντομότερο κωδικό, μια μόνο κουκκίδα."
+"(γράμμα ή αριθμό) είτε σημείο στίξης είτε ένα διαδικαστικό σήμα (π.χ. SOS) "
+"και αποτελείται από κουκκίδες και παύλες σε μια ακολουθία. Η διάρκεια μιας "
+"παύλας είναι τριπλάσια της διάρκειας μιας τελείας.\n"
+"Για να αυξηθεί η ταχύτητα της επικοινωνίας, ο Κώδικας σχεδιάστηκε έτσι ώστε "
+"τα πιο κοινά γράμματα να έχουν συντομότερες ακολουθίες. Για παράδειγμα, το "
+"πιο κοινό γράμμα στα Αγγλικά, το γράμμα \"E\", έχει τον συντομότερο κωδικό, "
+"μια μόνο κουκκίδα."
 
 #: activities/morse_code/FirstScreen.qml:90
 msgctxt "FirstScreen|"
@@ -19524,13 +19525,13 @@ msgstr "Τοποθέτησε τους αριθμούς σε αύξουσα ή φ
 #: activities/ordering_numbers/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "Compare numbers."
-msgstr "Συγκρίνω αριθμούς."
+msgstr "Ταξινομώ αριθμούς."
 
 #. Help prerequisite
 #: activities/ordering_numbers/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Counting."
-msgstr "Καταμέτρηση."
+msgstr "Αρίθμηση."
 
 #. Help manual
 #: activities/ordering_numbers/ActivityInfo.qml:29
@@ -19539,8 +19540,8 @@ msgid ""
 "You are provided with some numbers. Drag and drop them to the upper area in "
 "ascending or descending order as requested."
 msgstr ""
-"Σας δίνονται κάποιοι αριθμοί. Μετακίνησέ τους και τοποθέτησέ τους στην άνω "
-"περιοχή σε αύξουσα ή φθίνουσα σειρά όπως ζητείται."
+"Σας δίνονται κάποιοι αριθμοί. Μετακίνησε και τοποθέτησέ τους στην πάνω "
+"περιοχή, σε αύξουσα ή φθίνουσα σειρά, ανάλογα με την οδηγία."
 
 #: activities/ordering_numbers/ordering.js:67
 msgctxt "ordering|"
@@ -19577,12 +19578,12 @@ msgstr ""
 #: activities/ordering_numbers/resource/1/Data.qml:13
 msgctxt "Data|"
 msgid "Ascending order, 5 defined numbers between 1 and 5."
-msgstr "Αύξουσα σειρά, 5 ορισμένοι αριθμοί μεταξύ του 1 και του 5."
+msgstr "Αύξουσα σειρά, αριθμοί από το 1 ως το 5."
 
 #: activities/ordering_numbers/resource/2/Data.qml:13
 msgctxt "Data|"
 msgid "Descending order, 5 defined numbers between 1 and 5."
-msgstr "Φθίνουσα σειρά, 5 ορισμένοι αριθμοί μεταξύ του 1 και του 5."
+msgstr "Φθίνουσα σειρά, αριθμοί από το 1 ως το 5."
 
 #: activities/ordering_numbers/resource/3/Data.qml:13
 msgctxt "Data|"
@@ -25044,7 +25045,7 @@ msgstr "Μέγιστη τιμή: 500000."
 #: activities/tens_complement_find/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Find ten's complement"
-msgstr "Βρες το συμπλήρωμα του δέκα"
+msgstr "Βρες το συμπλήρωμα του 10"
 
 #. Help title
 #: activities/tens_complement_find/ActivityInfo.qml:16
@@ -25073,11 +25074,11 @@ msgid ""
 "corresponding lines. To correct the errors, click on the wrong numbers to "
 "remove them and repeat the previous steps."
 msgstr ""
-"Όταν ολοκληρωθούν όλες οι γραμμές, πάτα το κουμπί OK για να επικυρώσεις τις "
-"απαντήσεις. Εάν κάποιες απαντήσεις είναι λανθασμένες, θα εμφανιστεί ένα "
-"εικονίδιο σταυρού στις αντίστοιχες γραμμές. Για να διορθώσεις τα σφάλματα, "
-"κάνε κλικ σε λάθος αριθμούς για να τα αφαιρέσεις και επανέλαβε τα "
-"προηγούμενα βήματα."
+"Όταν κάνεις τις αλλαγές σε όλες τις πράξεις, πάτησε το κουμπί OK για να "
+"επικυρώσεις τις απαντήσεις. Εάν κάποιες απαντήσεις είναι λανθασμένες, θα "
+"εμφανιστεί ένα εικονίδιο σταυρού στις αντίστοιχες γραμμές. Για να διορθώσεις "
+"τα σφάλματα, κάνε κλικ στους λάθος αριθμούς για να αφαιρεθούν και τοποθέτησέ "
+"τους πάλι στις σωστές θέσεις."
 
 #. Help manual
 #: activities/tens_complement_find/ActivityInfo.qml:23
@@ -25086,8 +25087,8 @@ msgid ""
 "Create pairs of numbers equal to ten. Select a number in the list, then "
 "select an empty spot of an operation to move the selected number there."
 msgstr ""
-"Φτιάξε ζεύγη αριθμών που να ισούνται με το δέκα. Επίλεξε έναν αριθμό στη "
-"λίστα και στη συνέχεια, επίλεξε ένα κενό σημείο μιας λειτουργίας για να "
+"Φτιάξε ζεύγη αριθμών που να ισούνται με το δέκα. Επίλεξε έναν αριθμό από τη "
+"λίστα αριστερά και στη συνέχεια ένα κενό σε μια από τις πράξεις δεξιά για να "
 "μετακινήσεις τον επιλεγμένο αριθμό εκεί."
 
 #: activities/tens_complement_find/resource/1/Data.qml:25
@@ -25109,7 +25110,7 @@ msgstr "Βρες και τους δύο αριθμούς."
 #: activities/tens_complement_swap/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Swap ten's complement"
-msgstr "Αντάλλαξε το συμπλήρωμα του δέκα."
+msgstr "Αντάλλαξε το συμπλήρωμα του 10"
 
 #. Help title
 #: activities/tens_complement_swap/ActivityInfo.qml:16
@@ -25143,12 +25144,14 @@ msgid ""
 "the answers. If some answers are incorrect, a cross icon will appear on the "
 "corresponding lines. Correct the errors, then press the OK button again."
 msgstr ""
-"Μέσα σε κάθε παρένθεση φτιάξε ζεύγη αριθμών που να είναι ίσα με το δέκα. "
-"Επίλεξε έναν αριθμό και στη συνέχεια έναν άλλο αριθμό της ίδιας πράξης για "
-"να αλλάξεις τη θέση τους. Όταν ολοκληρωθούν όλες οι γραμμές, πάτησε το "
-"κουμπί OK για να επικυρώσεις τις απαντήσεις. Εάν κάποιες απαντήσεις είναι "
-"λανθασμένες, θα εμφανιστεί ένα εικονίδιο σταυρού στις αντίστοιχες γραμμές. "
-"Διόρθωσε τα σφάλματα και, στη συνέχεια, πάτησε ξανά το κουμπί OK."
+"Τα ζευγάρια αριθμών σε κάθε παρένθεση θα πρέπει να είναι ίσα με το δέκα. Αν "
+"αυτό δεν συμβαίνει, τότε πρέπει να αλλάξεις τις θέσεις τους. Αυτό γίνεται "
+"πατώντας πάνω σε δυο αριθμούς που το άθροισμά τους είναι δέκα. Όταν κάνεις "
+"τις αλλαγές σε όλες τις πράξεις, πάτησε το κουμπί OK για να επικυρώσεις τις "
+"απαντήσεις. Εάν κάποιες απαντήσεις είναι λανθασμένες, θα εμφανιστεί ένα "
+"εικονίδιο σταυρού στις αντίστοιχες γραμμές. Για να διορθώσεις τα σφάλματα, "
+"κάνε κλικ στους λάθος αριθμούς για να αφαιρεθούν και τοποθέτησέ τους πάλι "
+"στις σωστές θέσεις."
 
 #: activities/tens_complement_swap/resource/1/Data.qml:36
 msgctxt "Data|"
@@ -25169,7 +25172,7 @@ msgstr "3 ζεύγη από 6 αριθμούς."
 #: activities/tens_complement_use/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Use ten's complement"
-msgstr "Χρησιμοποιώ το συμπλήρωμα του δέκα"
+msgstr "Χρησιμοποιώ το συμπλήρωμα του 10"
 
 #. Help title
 #: activities/tens_complement_use/ActivityInfo.qml:16
@@ -25197,10 +25200,10 @@ msgid ""
 "parentheses. Select a number in the list, then select an empty spot of an "
 "operation to move the selected number there."
 msgstr ""
-"Αποσυνθέτουμε τις προσθέσεις για να δημιουργήσουμε μέσα σε κάθε παρένθεση "
-"ζευγάρια αριθμών που ισούνται με δέκα. Επιλέγουμε έναν αριθμό στη λίστα και "
-"στη συνέχεια ένα κενό σημείο μιας πράξης για να μετακινήσουμε τον επιλεγμένο "
-"αριθμό εκεί."
+"Αριστερά εμφανίζονται οι αριθμοί που θα τοποθετηθούν στις πράξεις δεξιά, "
+"ώστε μέσα σε κάθε παρένθεση το άθροισμα των αριθμών να είναι δέκα. "
+"Επιλέγουμε έναν αριθμό από αριστερά και στη συνέχεια ένα κενό σημείο μιας "
+"πράξης για να μετακινήσουμε τον επιλεγμένο αριθμό εκεί."
 
 #: activities/tens_complement_use/resource/1/Data.qml:43
 msgctxt "Data|"
