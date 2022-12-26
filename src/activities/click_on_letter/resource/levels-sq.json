@@ -1,0 +1,14 @@
+[
+    { "level": 1, "questions": "aeëiouy", "answers": "aeëiouy" },
+    { "level": 2, "questions": "aeëiouy", "answers": "aeëiouycs" },
+    { "level": 3, "questions": "aeëiouy", "answers": "aeëiouycksvxz" },
+    { "level": 4, "questions": "ckpsvxz", "answers": "ckpsvxz" },
+    { "level": 5, "questions": "bfglmnqt", "answers": "bfglmnqt" },
+    { "level": 6, "questions": "bdgqpnmu", "answers": "bdgqpnmu" },
+    { "level": 7, "questions": "ilthwvae", "answers": "ilthwvae" },
+    { "level": 8, "questions": "abcdefgh", "answers": "abcdefgh" },
+    { "level": 9, "questions": "ijklmnop", "answers": "ijklmnop" },
+    { "level": 10, "questions": "qrstuvwxyz", "answers": "qrstuvwxyz" },
+    { "level": 11, "questions": "bcdfghjklmnpqrstvwxz", "answers": "bcdfghjklmnpqrstvwxz" },
+]
+
