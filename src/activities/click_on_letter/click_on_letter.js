@@ -101,7 +101,7 @@ function stop()
 
 function shuffleString(s)
 {
-    var a = s.split("");
+    var a = s.split("|");
     var n = a.length;
 
     for(var i = n-1; i>0; i--) {
@@ -110,20 +110,20 @@ function shuffleString(s)
         a[i] = a[j];
         a[j] = tmp;
     }
-    return a.join("");
+    return a.join("|");
 }
 
 function initLevel() {
     items.bar.level = currentLevel + 1;
     if (currentSubLevel == 0) {
         level = levels[currentLevel];
-        maxSubLevel = level.questions.length;
+        maxSubLevel = level.questions.split("|").length;
         items.score.numberOfSubLevels = maxSubLevel;
         items.score.currentSubLevel = 1;
         questions = shuffleString(level.questions);
         answers = shuffleString(level.answers);
 
-        var answerArr = answers.split("");
+        var answerArr = answers.split("|");
         items.trainModel.clear();
         for (var i = 0; i < answerArr.length; i++) {                
             items.trainModel.append({
@@ -135,7 +135,7 @@ function initLevel() {
     }
 
     var locale = GCompris.ApplicationInfo.getVoicesLocale(items.locale);
-    currentLetter = questions.split("")[currentSubLevel];
+    currentLetter = questions.split("|")[currentSubLevel];
     if (GCompris.ApplicationSettings.isAudioVoicesEnabled &&
             GCompris.DownloadManager.haveLocalResource(
                 GCompris.DownloadManager.getVoicesResourceForLocale(locale))) {
@@ -190,8 +190,7 @@ function nextSubLevel() {
     }
 }
 
-function checkAnswer(index)
-{
+function checkAnswer(index) {
     var modelEntry = items.trainModel.get(index);
     if (modelEntry.letter === currentLetter) {
         playLetter(modelEntry.letter);

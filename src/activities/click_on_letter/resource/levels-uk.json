@@ -1,14 +1,14 @@
 [
-    { "level": 1, "questions": "аеєоіу", "answers": "аеєоіу" },
-    { "level": 2, "questions": "аеєоіу", "answers": "аеєоіучс" },
-    { "level": 3, "questions": "аеєоіу", "answers": "аеєоіусчшщ" },
-    { "level": 4, "questions": "пробчкзї", "answers": "пробчкзї" },
-    { "level": 5, "questions": "йцулдяйє", "answers": "йцулдяйє" },
-    { "level": 6, "questions": "недушксж", "answers": "недушксж" },
-    { "level": 7, "questions": "итьзцчяй", "answers": "итьзцчяй" },
-    { "level": 8, "questions": "абвгґдеє", "answers": "абвгґеє" },
-    { "level": 9, "questions": "іїйклмноп", "answers": "іїйклмноп" },
-    { "level": 10, "questions": "рстуфхцчшщьюя", "answers": "рстуфхцчшщьюя" },
-    { "level": 11, "questions": "аеєіїоуюя", "answers": "аеєіїоуюя" },
-    { "level": 12, "questions": "бвгґдйклмнпрстфхцчшщь", "answers": "бвгґдйклмнпрстфхцчшщь" }
+    { "level": 1, "questions": "а|е|є|о|і|у", "answers": "а|е|є|о|і|у" },
+    { "level": 2, "questions": "а|е|є|о|і|у", "answers": "а|е|є|о|і|у|ч|с" },
+    { "level": 3, "questions": "а|е|є|о|і|у", "answers": "а|е|є|о|і|у|с|ч|ш|щ" },
+    { "level": 4, "questions": "п|р|о|б|ч|к|з|ї", "answers": "п|р|о|б|ч|к|з|ї" },
+    { "level": 5, "questions": "й|ц|у|л|д|я|й|є", "answers": "й|ц|у|л|д|я|й|є" },
+    { "level": 6, "questions": "н|е|д|у|ш|к|с|ж", "answers": "н|е|д|у|ш|к|с|ж" },
+    { "level": 7, "questions": "и|т|ь|з|ц|ч|я|й", "answers": "и|т|ь|з|ц|ч|я|й" },
+    { "level": 8, "questions": "а|б|в|г|ґ|д|е|є", "answers": "а|б|в|г|ґ|е|є" },
+    { "level": 9, "questions": "і|ї|й|к|л|м|н|о|п", "answers": "і|ї|й|к|л|м|н|о|п" },
+    { "level": 10, "questions": "р|с|т|у|ф|х|ц|ч|ш|щ|ь|ю|я", "answers": "р|с|т|у|ф|х|ц|ч|ш|щ|ь|ю|я" },
+    { "level": 11, "questions": "а|е|є|і|ї|о|у|ю|я", "answers": "а|е|є|і|ї|о|у|ю|я" },
+    { "level": 12, "questions": "б|в|г|ґ|д|й|к|л|м|н|п|р|с|т|ф|х|ц|ч|ш|щ|ь", "answers": "б|в|г|ґ|д|й|к|л|м|н|п|р|с|т|ф|х|ц|ч|ш|щ|ь" }
 ]

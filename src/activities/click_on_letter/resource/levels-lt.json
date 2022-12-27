@@ -1,14 +1,14 @@
 [
-    { "level": 1, "questions": "aeiouy", "answers": "aeiouy" },
-    { "level": 2, "questions": "aeiouy", "answers": "aeiouybcs" },
-    { "level": 3, "questions": "aeiouy", "answers": "aeiouycksvd" },
-    { "level": 4, "questions": "ckpsvčzū", "answers": "ckpsvčzūį" },
-    { "level": 5, "questions": "bfglmnįt", "answers": "bfglmnįti" },
-    { "level": 6, "questions": "bdgūpnmu", "answers": "bdgūpnmut" },
-    { "level": 7, "questions": "ilthėvae", "answers": "ilthėvaeį" },
-    { "level": 8, "questions": "aąbcdeęėfgh", "answers": "aąbcdeęėfgh" },
-    { "level": 9, "questions": "iįjklmnop", "answers": "iįjklmnopč" },
-    { "level": 10, "questions": "rsštuųūvyzž", "answers": "rsštuųūvyzžx" },
-    { "level": 11, "questions": "bcdfghjklmnpčrstvįšzž", "answers": "bcdfghjklmnpčrstvįšzž" },
-    { "level": 12, "questions": "aącčeęėiįsšuųūzž", "answers": "aącčeęėiįsšuųūzžxqw" }
+    { "level": 1, "questions": "a|e|i|o|u|y", "answers": "a|e|i|o|u|y" },
+    { "level": 2, "questions": "a|e|i|o|u|y", "answers": "a|e|i|o|u|y|b|c|s" },
+    { "level": 3, "questions": "a|e|i|o|u|y", "answers": "a|e|i|o|u|y|c|k|s|v|d" },
+    { "level": 4, "questions": "c|k|p|s|v|č|z|ū", "answers": "c|k|p|s|v|č|z|ū|į" },
+    { "level": 5, "questions": "b|f|g|l|m|n|į|t", "answers": "b|f|g|l|m|n|į|t|i" },
+    { "level": 6, "questions": "b|d|g|ū|p|n|m|u", "answers": "b|d|g|ū|p|n|m|u|t" },
+    { "level": 7, "questions": "i|l|t|h|ė|v|a|e", "answers": "i|l|t|h|ė|v|a|e|į" },
+    { "level": 8, "questions": "a|ą|b|c|d|e|ę|ė|f|g|h", "answers": "a|ą|b|c|d|e|ę|ė|f|g|h" },
+    { "level": 9, "questions": "i|į|j|k|l|m|n|o|p", "answers": "i|į|j|k|l|m|n|o|p|č" },
+    { "level": 10, "questions": "r|s|š|t|u|ų|ū|v|y|z|ž", "answers": "r|s|š|t|u|ų|ū|v|y|z|ž|x" },
+    { "level": 11, "questions": "b|c|d|f|g|h|j|k|l|m|n|p|č|r|s|t|v|į|š|z|ž", "answers": "b|c|d|f|g|h|j|k|l|m|n|p|č|r|s|t|v|į|š|z|ž" },
+    { "level": 12, "questions": "a|ą|c|č|e|ę|ė|i|į|s|š|u|ų|ū|z|ž", "answers": "a|ą|c|č|e|ę|ė|i|į|s|š|u|ų|ū|z|ž|x|q|w" }
 ]
