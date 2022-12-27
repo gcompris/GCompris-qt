@@ -481,6 +481,10 @@ function nextSubLevel() {
         // Stop having more words dropping once we have won
         items.wordDropTimer.stop();
         items.inputLocked = true;
+        // In case we have no audio voices for the locale, we directly play the bonus, else it is played at the end of the audio
+        if(items.audioVoices.files.length == 0) {
+            items.bonus.good("lion");
+        }
     } else {
         items.score.playWinAnimation();
     }
