@@ -73,19 +73,13 @@ Item {
         if (wonState)
             return
 
-        if(word.mode === 'letter') {
-            // Only highlight letter if it is the good one
-            unmatchedIndex = text === c ? c.length : 0
-            return (text === c)
+        var chars = text.split("");
+        if (chars[unmatchedIndex] === c) {
+            unmatchedIndex++;
+            return true;
         } else {
-            var chars = text.split("");
-            if (chars[unmatchedIndex] === c) {
-                unmatchedIndex++;
-                return true;
-            } else {
-                unmatchedIndex = 0;
-                return false;
-            }
+            unmatchedIndex = 0;
+            return false;
         }
     }
 
