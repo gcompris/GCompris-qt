@@ -1,13 +1,13 @@
 [
-    { "level": 1, "questions": "aeiouy", "answers": "aeiouy" },
-    { "level": 2, "questions": "aeiouy", "answers": "aeiouycs" },
-    { "level": 3, "questions": "aeiouy", "answers": "aeiouycksvxzž" },
-    { "level": 4, "questions": "ckpsvxwz", "answers": "ckpsvxwzž" },
-    { "level": 5, "questions": "bfglmnqt", "answers": "bfglmnqt" },
-    { "level": 6, "questions": "bdgqpnmu", "answers": "bdgqpnmu" },
-    { "level": 7, "questions": "ilthwvaeäü", "answers": "ilthwvaeöäüõ" },
-    { "level": 8, "questions": "abcdefgh", "answers": "abcdefghžüõ" },
-    { "level": 9, "questions": "ijklmnop", "answers": "ijklmnopõöä" },
-    { "level": 10, "questions": "qrstuvwxyzõüöäž", "answers": "qrstuvwxyzüõöäž" },
-    { "level": 11, "questions": "bcdfghjklmnpqrstvwxzöäü", "answers": "bcdfghjklmnpqrstvwxzöäü" }
+    { "level": 1, "questions": "a|e|i|o|u|y", "answers": "a|e|i|o|u|y" },
+    { "level": 2, "questions": "a|e|i|o|u|y", "answers": "a|e|i|o|u|y|c|s" },
+    { "level": 3, "questions": "a|e|i|o|u|y", "answers": "a|e|i|o|u|y|c|k|s|v|x|z|ž" },
+    { "level": 4, "questions": "c|k|p|s|v|x|w|z", "answers": "c|k|p|s|v|x|w|z|ž" },
+    { "level": 5, "questions": "b|f|g|l|m|n|q|t", "answers": "b|f|g|l|m|n|q|t" },
+    { "level": 6, "questions": "b|d|g|q|p|n|m|u", "answers": "b|d|g|q|p|n|m|u" },
+    { "level": 7, "questions": "i|l|t|h|w|v|a|e|ä|ü", "answers": "i|l|t|h|w|v|a|e|ö|ä|ü|õ" },
+    { "level": 8, "questions": "a|b|c|d|e|f|g|h", "answers": "a|b|c|d|e|f|g|h|ž|ü|õ" },
+    { "level": 9, "questions": "i|j|k|l|m|n|o|p", "answers": "i|j|k|l|m|n|o|p|õ|ö|ä" },
+    { "level": 10, "questions": "q|r|s|t|u|v|w|x|y|z|õ|ü|ö|ä|ž", "answers": "q|r|s|t|u|v|w|x|y|z|ü|õ|ö|ä|ž" },
+    { "level": 11, "questions": "b|c|d|f|g|h|j|k|l|m|n|p|q|r|s|t|v|w|x|z|ö|ä|ü", "answers": "b|c|d|f|g|h|j|k|l|m|n|p|q|r|s|t|v|w|x|z|ö|ä|ü" }
 ]
