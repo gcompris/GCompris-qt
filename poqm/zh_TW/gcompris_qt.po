@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2022-06-12 15:07+0800\n"
+"PO-Revision-Date: 2022-12-27 14:44+0800\n"
 "Last-Translator: Franklin Weng <franklin@goodhorse.idv.tw>\n"
 "Language-Team: Chinese <zh-l10n@lists.linux.org.tw>\n"
 "Language: zh_TW\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Language: zh_TW\n"
 "X-Qt-Contexts: true\n"
-"X-Generator: Lokalize 21.12.3\n"
+"X-Generator: Lokalize 22.12.0\n"
 
 #. Activity title
 #: activities/advanced_colors/ActivityInfo.qml:15
@@ -1159,18 +1159,13 @@ msgstr "想辦法將四個棋子排成一列，可以是水平(躺著)或是垂�
 
 #. Help manual
 #: activities/align4/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Play with a friend. Take turns to click the line in which you want to "
-#| "drop a token. The first player to create a line of 4 tokens wins."
 msgctxt "ActivityInfo|"
 msgid ""
 "Play with Tux. Take turns to click the line in which you want to drop a "
 "token. The first player to create a line of 4 tokens wins."
 msgstr ""
-"這個遊戲可以跟朋友一起玩。輪到您時，在想要下的地方點一下。誰先完成四個排成一"
-"列的就獲勝。"
+"這個遊戲可以跟小企鵝一起玩。輪到您時，在想要下的地方點一下。誰先完成四個排成"
+"一列的就獲勝。"
 
 #: activities/align4/ActivityInfo.qml:23 activities/bargame/ActivityInfo.qml:26
 #: activities/checkers/ActivityInfo.qml:27
@@ -1179,7 +1174,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "You can use the arrow buttons to manually select the difficulty level. Tux "
 "will play better when you increase the level."
-msgstr ""
+msgstr "您可以用箭頭按鍵調整困難度。困難度越高小企鵝就會越厲害。"
 
 #: activities/align4/ActivityInfo.qml:25
 #: activities/align4_2players/ActivityInfo.qml:24
@@ -2503,20 +2498,14 @@ msgstr "計數的能力。"
 
 #. Help manual
 #: activities/bargame/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Click on the ball icon to select a number of balls, then click on the OK "
-#| "button to place the balls in the holes. You win if the computer has to "
-#| "place the last ball. If you want Tux to begin, just click on him."
 msgctxt "ActivityInfo|"
 msgid ""
 "Click on the ball icon to select a number of balls, then click on the OK "
 "button to place the balls in the holes. You win if Tux has to place the last "
 "ball. If you want Tux to begin, just click on him."
 msgstr ""
-"點擊球的圖示來選擇球數，然後按下「確定」把球放進洞裡。如果電腦被迫把球放進紅"
-"色洞裡，那麼您就贏了。如果您要小企鵝先開始，只要在它身上點擊一下即可。"
+"點擊球的圖示來選擇球數，然後按下「確定」把球放進洞裡。如果小企鵝被迫把球放進"
+"紅色洞裡，那麼您就贏了。如果您要小企鵝先開始，只要在它身上點擊一下即可。"
 
 #. Activity title
 #: activities/bargame_2players/ActivityInfo.qml:15
@@ -2553,7 +2542,7 @@ msgstr "這個遊戲讓您學習十進位數字轉成二進位數字的觀念。
 #: activities/binary_bulb/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "To get familiar with the binary number system."
-msgstr "熟悉二進位數值系統。"
+msgstr "熟悉二進制數值系統。"
 
 #. Help prerequisite
 #: activities/binary_bulb/ActivityInfo.qml:22
@@ -2582,7 +2571,7 @@ msgid ""
 "and 1. Mathematically, these states are represented by 0 and 1, which makes "
 "up the binary system of numeration."
 msgstr ""
-"電腦內部使用電晶體來計數。電晶體只有兩種狀態：0 與 1。這也是數學上二進位數值"
+"電腦內部使用電晶體來計數。電晶體只有兩種狀態：0 與 1。這也是數學上二進制數值"
 "系統所使用的數字。"
 
 #: activities/binary_bulb/binary_bulb.js:28
@@ -2595,7 +2584,7 @@ msgctxt "binary_bulb|"
 msgid ""
 "Binary system uses these numbers very efficiently, allowing to count from 0 "
 "to 255 with 8 bits only."
-msgstr "二進位系統是很有效率的，只要 8 個位元就可以從 0 數到 255。"
+msgstr "二進制系統是很有效率的，只要 8 個位元就可以從 0 數到 255。"
 
 #: activities/binary_bulb/binary_bulb.js:36
 msgctxt "binary_bulb|"
@@ -2612,7 +2601,7 @@ msgstr ""
 #: activities/binary_bulb/binary_bulb.js:40
 msgctxt "binary_bulb|"
 msgid "To convert a decimal 5 to a binary value, 1 and 4 are added."
-msgstr "要把十進位的 5 換成二進位，就把 1 跟 4 相加。"
+msgstr "要把十進制的 5 換成二進制，就把 1 跟 4 相加。"
 
 #: activities/binary_bulb/binary_bulb.js:44
 msgctxt "binary_bulb|"
@@ -3762,27 +3751,6 @@ msgstr "吃掉對方所有的棋子就贏了。"
 
 #. Help manual
 #: activities/checkers/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Checkers is played by two opponents, on opposite sides of the gameboard. "
-#| "One player has the dark pieces; the other has the light pieces. Players "
-#| "alternate turns. A player may not move an opponent's piece. A move "
-#| "consists of moving a piece diagonally to an adjacent unoccupied square. "
-#| "If the adjacent square contains an opponent's piece, and the square "
-#| "immediately beyond it is vacant, the piece may be captured (and removed "
-#| "from the game) by jumping over it.\n"
-#| "Only the dark squares of the checkered board are used. A piece may move "
-#| "only diagonally into an unoccupied square. Capturing is mandatory. The "
-#| "player without pieces remaining, or who cannot move due to being blocked, "
-#| "loses the game.\n"
-#| "When a man reaches the crownhead or kings row (the farthest row forward), "
-#| "it becomes a king, and is marked by placing an additional piece on top of "
-#| "the first man, and acquires additional powers including the ability to "
-#| "move backwards. If there is a piece in a diagonal that a king can "
-#| "capture, he can move any distance along the diagonal, and may capture an "
-#| "opposing man any distance away by jumping to any of the unoccupied "
-#| "squares immediately beyond it.\n"
 msgctxt "ActivityInfo|"
 msgid ""
 "Checkers is played by two opponents, on opposite sides of the gameboard. One "
@@ -3812,7 +3780,7 @@ msgstr ""
 "的時候，就必須吃。如果玩家棋子都被吃光了，或是找不到任何可以移動的方式，就算"
 "輸了。\n"
 "當棋子移到皇冠或王列（最上面那一排時）時，它就「成王」。成王的棋子上面會加一"
-"個棋子做為標示。成王的棋子才能向後走，並且可以一次跳過多格去吃對方的棋子。\n"
+"個棋子做為標示。成王的棋子才能向後走，並且可以一次跳過多格去吃對方的棋子。"
 
 #: activities/checkers/ActivityInfo.qml:29
 #: activities/checkers_2players/ActivityInfo.qml:28
@@ -3849,7 +3817,7 @@ msgstr "黑方贏了"
 #: activities/checkers_2players/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Play checkers (with a friend)"
-msgstr "跟朋友下西洋棋"
+msgstr "跟朋友下跳棋"
 
 #. Help manual
 #: activities/checkers_2players/ActivityInfo.qml:24
@@ -3892,26 +3860,6 @@ msgstr "跟小企鵝下西洋棋"
 
 #. Help manual Much of this string is shared across the three activities "chess", "chess_partyend", and "chess_2players".
 #: activities/chess/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "In this activity you discover the chess game by playing against the "
-#| "computer. It displays the possible target positions for any selected "
-#| "piece which helps the children understand how pieces moves. At first "
-#| "level the computer is fully random to give more chances to the children. "
-#| "As level increases, the computer plays better.\n"
-#| "\n"
-#| "You can achieve a mate sooner if you follow these simple rules:\n"
-#| "    Trying to drive your opponent's king in the corner.\n"
-#| "<b>Explanation</b>: this way your opponent's king would have only 3 "
-#| "directions to move instead of 8 from a better position.\n"
-#| "    'Making a trap'. Use your pawns as baits.\n"
-#| "<b>Explanation</b>: this way you can lure your opponent out of his "
-#| "'comfort zone'.\n"
-#| "    Be patient enough.\n"
-#| "<b>Explanation</b>: don't rush too quick, be patient. Let yourself think "
-#| "a little bit and try to predict your opponent's future moves, so that you "
-#| "can catch him or secure your pieces from his attacks."
 msgctxt "ActivityInfo|"
 msgid ""
 "In this activity you discover the chess game by playing against the "
@@ -3935,7 +3883,8 @@ msgid ""
 msgstr ""
 "這個遊戲讓孩子們探索怎麼下西洋棋。當選擇要下的棋子時，該棋子可以移動到哪裡會"
 "被標示出來，幫助孩子們瞭解棋子移動的規則。在第一關裡，電腦完全是隨機下棋，讓"
-"孩子們有多一點的機會可以獲勝。不過當關卡越高，電腦的棋力就越強。\n"
+"孩子們有多一點的機會可以獲勝。不過當關卡越高，電腦的棋力就越強。您可以用方向"
+"鍵來選擇困難度。\n"
 "\n"
 "只要掌握住以下幾個原則，你很快就能獲勝：\n"
 "    試著把敵方的國王逼到角落。\n"
@@ -4984,9 +4933,6 @@ msgstr "繼續"
 
 #. Activity title
 #: activities/comparator/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Compare numbers."
 msgctxt "ActivityInfo|"
 msgid "Compare numbers"
 msgstr "比較數字"
@@ -4995,16 +4941,13 @@ msgstr "比較數字"
 #: activities/comparator/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Compare the numbers and choose the corresponding sign."
-msgstr ""
+msgstr "比較數字，並選擇相關的記號。"
 
 #. Help goal
 #: activities/comparator/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn about prime numbers."
 msgctxt "ActivityInfo|"
 msgid "Learn how to compare number values."
-msgstr "學習何謂質數。"
+msgstr "學習如何比較數字。"
 
 #. Help manual
 #: activities/comparator/ActivityInfo.qml:26
@@ -5014,116 +4957,91 @@ msgid ""
 "symbol for this pair. When each line contains a symbol, select the OK button "
 "to validate the answers."
 msgstr ""
+"在清單中選擇一對數字，然後選擇正確的比較符號。每一行的符號都選擇完之後，按下"
+"「確定」來檢查答案是否正確。"
 
 #: activities/comparator/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid ""
 "If some answers are incorrect, a cross icon will appear on the corresponding "
 "lines. Correct the errors, then select the OK button again."
-msgstr ""
+msgstr "如果某些題目答錯了，會出現錯誤的符號。修正答案以後再按下「確定」。"
 
 #: activities/comparator/ActivityInfo.qml:29
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Down arrow: select previous item"
 msgctxt "ActivityInfo|"
 msgid "Up and Down arrows: select a pair of numbers in the list"
-msgstr "下方向鍵：選擇前一個物品"
+msgstr "上、下鍵：在清單中選擇一對數字"
 
 #: activities/comparator/ActivityInfo.qml:30
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Left and Right arrows: turn left and right"
 msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: select a symbol button"
-msgstr "左、右鍵：左轉或右轉"
+msgstr "左、右鍵：選擇比較符號"
 
 #: activities/comparator/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
 msgid "Space: if a symbol button is selected, enter this symbol"
-msgstr ""
+msgstr "空白鍵：選擇符號以後，按下空白鍵輸入此符號"
 
 #: activities/comparator/ActivityInfo.qml:32
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "2. Use Enter or Return key to submit the answers.<br>"
 msgctxt "ActivityInfo|"
 msgid "Return: validate the answers"
-msgstr "2. 用 Enter 或 Return 鍵來送出您的答案。<br/>"
+msgstr "Enter 或 Return 鍵：檢查答案"
 
 #: activities/comparator/ActivityInfo.qml:33
 msgctxt "ActivityInfo|"
 msgid "&lt;, &gt; or =: enter the corresponding symbol"
-msgstr ""
+msgstr "&lt; 、 &gt; 或 = ： 輸入比較符號"
 
 #: activities/comparator/resource/1/Data.qml:36
 #: activities/tens_complement_find/resource/3/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "Data|"
 msgid "Numbers from 1 to 9."
-msgstr "從 0 到 9 的數字。"
+msgstr "從 1 到 9 的數字。"
 
 #: activities/comparator/resource/10/Data.qml:14
 msgctxt "Data|"
 msgid "3 decimal places between 0 and 999."
-msgstr ""
+msgstr "從 0 到 999 的三位數。"
 
 #: activities/comparator/resource/2/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "Data|"
 msgid "Numbers from 1 to 19."
-msgstr "從 0 到 9 的數字。"
+msgstr "從 1 到 19 的數字。"
 
 #: activities/comparator/resource/3/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "Data|"
 msgid "Numbers from 1 to 100."
-msgstr "從 0 到 9 的數字。"
+msgstr "從 1 到 100 的數字。"
 
 #: activities/comparator/resource/4/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "Data|"
 msgid "Numbers from 1 to 1000."
-msgstr "從 0 到 9 的數字。"
+msgstr "從 1 到 1000 的數字。"
 
 #: activities/comparator/resource/5/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "Data|"
 msgid "Numbers from 1 to 1000000."
-msgstr "從 0 到 9 的數字。"
+msgstr "從 1 到 1000000 的數字。"
 
 #: activities/comparator/resource/6/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "Data|"
 msgid "Numbers from 1 to 1 billion."
-msgstr "從 0 到 9 的數字。"
+msgstr "從 1 到 10億 的數字。"
 
 #: activities/comparator/resource/7/Data.qml:14
 msgctxt "Data|"
 msgid "1 decimal place between 0 and 9, same integer part."
-msgstr ""
+msgstr "從 0 到 9 的一位小數，整數部份相同。"
 
 #: activities/comparator/resource/8/Data.qml:14
 msgctxt "Data|"
 msgid "1 decimal place between 0 and 9."
-msgstr ""
+msgstr "從 0 到 9 的一位數。"
 
 #: activities/comparator/resource/9/Data.qml:14
 msgctxt "Data|"
 msgid "2 decimal places between 0 and 99.99."
-msgstr ""
+msgstr "從 0 到 99.99 的兩位小數。"
 
 #. Activity title
 #: activities/crane/ActivityInfo.qml:20
@@ -5488,7 +5406,7 @@ msgid ""
 "A BCD counter usually takes a signal generator as input. The output is a BCD "
 "number starting from 0 which is increased by one at each tick."
 msgstr ""
-"二進碼十進位（Binary-Coded Decimal, BCD）計數器通常會用一個信號產生器來當輸"
+"二進碼十進制（Binary-Coded Decimal, BCD）計數器通常會用一個信號產生器來當輸"
 "入。輸出則是 BCD 碼，從 0 開始，每一次信號輸入就加 1。"
 
 #: activities/digital_electricity/components/BCDToSevenSegment.qml:29
@@ -5499,7 +5417,7 @@ msgid ""
 "display numbers between 0 and 9. The output for a BCD To 7 Segment converter "
 "is:"
 msgstr ""
-"BCD 轉換七段顯示器（BCD to 7 segment converter）有四個二進位輸入與七個二進位"
+"BCD 轉換七段顯示器（BCD to 7 segment converter）有四個二進制輸入與七個二進制"
 "輸出，將 BCD 碼的 0 到 9 轉換到七段顯示器上顯示出數字。BCD 轉換七段顯示器的輸"
 "出為："
 
@@ -5601,7 +5519,7 @@ msgid ""
 "numbers from 0 to 9 and a few letters. The diagram is:"
 msgstr ""
 "七段顯示器（7 segment display）有七個輸入端子。顯示組件由七個線段組成，根據輸"
-"入的數字決定哪一個線段會亮起來。根據七個輸入的二進位組合，顯示端可以顯示出 0 "
+"入的數字決定哪一個線段會亮起來。根據七個輸入的二進制組合，顯示端可以顯示出 0 "
 "到 9 的數字以及一些字母。它的圖形為："
 
 #: activities/digital_electricity/components/SignalGenerator.qml:22
@@ -5796,12 +5714,12 @@ msgstr "用這裡提供的組件來打開數位燈。"
 msgctxt "TutorialDataset|"
 msgid ""
 "The NOT gate takes a single binary input and flips the value in the output."
-msgstr "NOT 閘接受單一一個二進位輸入，並反轉它的值以後輸出。"
+msgstr "NOT 閘接受單一一個二進制輸入，並反轉它的值以後輸出。"
 
 #: activities/digital_electricity/TutorialDataset.qml:215
 msgctxt "TutorialDataset|"
 msgid "The NAND gate takes two binary inputs and produces one binary output."
-msgstr "NAND 閘接受兩個二進位輸入，並且產生一個二進位輸出。"
+msgstr "NAND 閘接受兩個二進制輸入，並且產生一個二進制輸出。"
 
 #: activities/digital_electricity/TutorialDataset.qml:216
 msgctxt "TutorialDataset|"
@@ -5861,7 +5779,7 @@ msgstr "用這些邏輯閘，讓開關開啟時燈泡才會亮起來。"
 #: activities/digital_electricity/TutorialDataset.qml:308
 msgctxt "TutorialDataset|"
 msgid "The XOR Gate takes two binary inputs and produces one binary output."
-msgstr "XOR 閘接受兩個二進位輸入，並且產生一個二進位輸出。"
+msgstr "XOR 閘接受兩個二進制輸入，並且產生一個二進制輸出。"
 
 #: activities/digital_electricity/TutorialDataset.qml:309
 msgctxt "TutorialDataset|"
@@ -5895,7 +5813,7 @@ msgid ""
 "A NOR gate takes 2 binary inputs and outputs 1 if both of them are 0, "
 "otherwise produces an output of 0."
 msgstr ""
-"NOR 閘接受兩個二進位輸入，並且在兩個輸入都是 0 的時候輸出 1，不然就輸出 0。"
+"NOR 閘接受兩個二進制輸入，並且在兩個輸入都是 0 的時候輸出 1，不然就輸出 0。"
 
 #: activities/digital_electricity/TutorialDataset.qml:356
 msgctxt "TutorialDataset|"
@@ -5985,7 +5903,7 @@ msgid ""
 "It takes 4 bits as input represented in the binary coded decimal (BCD) "
 "format and converts the BCD number into a seven segment code."
 msgstr ""
-"它有四個位元的輸入，以二進位表示十進位數字（BCD），並將此數字轉換到七段顯示器"
+"它有四個位元的輸入，以二進位表示十進制數字（BCD），並將此數字轉換到七段顯示器"
 "顯示出來。"
 
 #: activities/digital_electricity/TutorialDataset.qml:527
@@ -6374,14 +6292,13 @@ msgid ""
 "escape predators, and possess an excellent sense of balance. They have "
 "single-toed hooves."
 msgstr ""
+"馬的叫聲是「嘶~ 嘶~」。馬很會奔跑，使牠們能夠迅速逃離捕食者，並具有出色的平衡"
+"感。牠們有單趾蹄。"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:25
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal's ancestors were wolves."
 msgctxt "board1|"
 msgid "This animal has single-toed hooves."
-msgstr "這種動物的祖先是狼。"
+msgstr "這個動物有單趾蹄。"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:33
 msgctxt "board1|"
@@ -6393,15 +6310,12 @@ msgctxt "board1|"
 msgid ""
 "The chicken goes 'cluck'. Domestic chickens have wings, but are not capable "
 "of long-distance flight. They have a comb on their head."
-msgstr ""
+msgstr "雞的叫聲是「咯~ 咯~ 」。 家雞有翅膀，但不能長途飛行。 牠們頭上有雞冠。"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:37
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal likes to come out at night."
 msgctxt "board1|"
 msgid "This animal has a comb on its head."
-msgstr "這個動物喜歡在夜晚出現。"
+msgstr "這個動物頭上有像梳子的冠。"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:45
 msgctxt "board1|"
@@ -6415,11 +6329,13 @@ msgid ""
 "developed sense of taste, with around 20,000 taste buds. They can detect "
 "odours 8km away."
 msgstr ""
+"母牛的叫聲是「哞~ 哞~ 」。母牛擁有 330° 的廣闊視野。牠們的味覺十分發達，大約"
+"有 20,000 個味蕾。牠們可以檢測到 8 公里外的氣味。"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:49
 msgctxt "board1|"
 msgid "This animal has around 20,000 taste buds."
-msgstr ""
+msgstr "這個動物有約 20,000 個味蕾。"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:57
 msgctxt "board1|"
@@ -6433,14 +6349,13 @@ msgid ""
 "ability to chase mice and other rodents. They purr to communicate various "
 "emotions."
 msgstr ""
+"貓的叫聲是「喵~ 喵~」。貓因陪伴和追逐老鼠和其他囓齒動物的能力而受到人類的重"
+"視。牠們會從喉嚨發出咕嚕咕嚕的聲音來傳達各種情緒。"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:61
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal lays eggs."
 msgctxt "board1|"
 msgid "This animal can purr."
-msgstr "這種動物會生蛋。"
+msgstr "這種動物會從喉嚨發出咕嚕咕嚕的聲音。"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:69
 msgctxt "board1|"
@@ -6453,11 +6368,13 @@ msgid ""
 "The pig goes 'oink'. Pigs wallow in the mud, mainly to control their body "
 "temperature."
 msgstr ""
+"豬的叫聲是... \"oink\"（中文表達不出來）。 豬在泥巴裡打滾，主要是為了控制體"
+"溫。"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:73
 msgctxt "board1|"
 msgid "This animal wallows in the mud to control its body temperature."
-msgstr ""
+msgstr "這個動物會在泥巴裡打滾，主要是為了控制體溫。"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:81
 msgctxt "board1|"
@@ -6470,14 +6387,13 @@ msgid ""
 "The duck goes 'quack'. Ducks are mostly aquatic birds. They have waterproof "
 "feathers and webbed feet which enable them to swim on the water."
 msgstr ""
+"鴨子的叫聲是「呱~ 呱~ 」。鴨子主要是水鳥。牠們有防水的羽毛和蹼足，使牠們能夠"
+"在水上游泳。"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:85
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal has webbed feet so it can swim in the water."
 msgctxt "board1|"
 msgid "This animal has webbed feet and can swim on the water."
-msgstr "這個動物的腳有蹼，所以可以在水裡游泳。"
+msgstr "這個動物的腳上有蹼，能夠在水上游泳。"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:93
 msgctxt "board1|"
@@ -6485,24 +6401,17 @@ msgid "Owl"
 msgstr "貓頭鷹"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:94
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid ""
-#| "The owl goes 'hoo. hoo.' The owl has excellent vision and hearing at "
-#| "night."
 msgctxt "board1|"
 msgid ""
 "The owl goes 'hoot'. Owls are nocturnal birds, they have excellent vision "
 "and hearing at night."
-msgstr "貓頭鷹的叫聲是「互~ 互~」。貓頭鷹的在夜間有很好的視力跟聽力。"
+msgstr ""
+"貓頭鷹的叫聲是「互~ 互~」。貓頭鷹是夜行性的鳥類，在夜間有很好的視力跟聽力。"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:97
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal likes to come out at night."
 msgctxt "board1|"
 msgid "This animal is a nocturnal bird."
-msgstr "這個動物喜歡在夜晚出現。"
+msgstr "這個動物是夜行性的鳥類。"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:105
 msgctxt "board1|"
@@ -6514,15 +6423,12 @@ msgctxt "board1|"
 msgid ""
 "The dog goes 'woof'. Dogs are probably the oldest domesticated species. They "
 "are descendants of the wolf."
-msgstr ""
+msgstr "狗的叫聲是「汪~ 汪~」。狗可能是最古老的馴化物種。牠們是狼的後代。"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:109
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal is a close relative to the goat."
 msgctxt "board1|"
 msgid "This animal is a descendant of the wolf."
-msgstr "這個動物是山羊的親戚。"
+msgstr "這個動物是狼的後代。"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:117
 msgctxt "board1|"
@@ -6535,14 +6441,13 @@ msgid ""
 "The sheep goes 'baa'. Most sheep breeds bear a fleece of wool. The fleece "
 "can be sheared and used to produce textile fibre."
 msgstr ""
+"綿羊的叫聲是「咩~ 咩~ 」。大多數綿羊品種都有羊毛。羊毛可以剪下來並用於生產紡"
+"織纖維。"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:121
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal's ancestors were wolves."
 msgctxt "board1|"
 msgid "This animal produces wool."
-msgstr "這種動物的祖先是狼。"
+msgstr "這種動物會生產羊毛。"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:131
 msgctxt "board1|"
@@ -8634,42 +8539,31 @@ msgstr "從球這端拖曳一條線，以設定速度與方向，放開就會踢
 
 #. Activity title
 #: activities/fractions_create/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice subtractions."
 msgctxt "ActivityInfo|"
 msgid "Create the fractions"
-msgstr "練習減法運算。"
+msgstr "建立分數"
 
 #. Help title
 #: activities/fractions_create/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "A shape split in equal parts is displayed on screen."
-msgstr ""
+msgstr "一個形狀會切成等分並顯示在螢幕上。"
 
 #: activities/fractions_create/ActivityInfo.qml:18
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Drag the appropriate numbers and the operators to the boxes to obtain the "
-#| "number to guess in the instruction."
 msgctxt "ActivityInfo|"
 msgid ""
 "Select the appropriate number of parts as described in the instructions."
-msgstr "拖曳適當的數字與操作子以取得指示中要猜的數字。"
+msgstr "依照說明指示選擇適當的分數。"
 
 #: activities/fractions_create/fractions_create.js:79
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Digits representation"
 msgctxt "fractions_create|"
 msgid "Find the represented fraction."
-msgstr "數字的表達"
+msgstr "找出適當的分數。"
 
 #: activities/fractions_create/resource/1/Data.qml:9
 msgctxt "Data|"
 msgid "Simplified fractions with a pie."
-msgstr ""
+msgstr "用圓餅來選擇最簡分數。"
 
 #: activities/fractions_create/resource/1/Data.qml:18
 #: activities/fractions_create/resource/3/Data.qml:17
@@ -8677,78 +8571,63 @@ msgstr ""
 #: activities/fractions_create/resource/3/Data.qml:29
 msgctxt "Data|"
 msgid "Select one half of the pie."
-msgstr ""
+msgstr "選擇圓餅的一半。"
 
 #: activities/fractions_create/resource/1/Data.qml:24
 #: activities/fractions_create/resource/3/Data.qml:35
 #: activities/fractions_create/resource/3/Data.qml:49
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Select the fifth Thursday of the given month"
 msgctxt "Data|"
 msgid "Select one-third of the pie."
-msgstr "指出這個月的第五個星期四是哪一天"
+msgstr "選擇圓餅的三分之一。"
 
 #: activities/fractions_create/resource/1/Data.qml:30
 #: activities/fractions_create/resource/3/Data.qml:41
 #: activities/fractions_create/resource/3/Data.qml:55
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Select the fourth Sunday of the given month"
 msgctxt "Data|"
 msgid "Select two-thirds of the pie."
-msgstr "指出這個月份的第四個星期日是哪一天"
+msgstr "選擇圓餅的三分之二。"
 
 #: activities/fractions_create/resource/1/Data.qml:36
 #: activities/fractions_create/resource/3/Data.qml:61
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Select the butterfly of the correct color."
 msgctxt "Data|"
 msgid "Select one-quarter of the pie."
-msgstr "選擇正確顏色的蝴蝶。"
+msgstr "選擇圓餅的四分之一。"
 
 #: activities/fractions_create/resource/1/Data.qml:42
 #: activities/fractions_create/resource/3/Data.qml:67
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Select the fifth Thursday of the given month"
 msgctxt "Data|"
 msgid "Select two-fifths of the pie."
-msgstr "指出這個月的第五個星期四是哪一天"
+msgstr "選擇圓餅的五分之二。"
 
 #: activities/fractions_create/resource/1/Data.qml:50
 msgctxt "Data|"
 msgid "Select one pie and one-quarter of a pie."
-msgstr ""
+msgstr "選擇一又四分之一個圓餅。"
 
 #: activities/fractions_create/resource/1/Data.qml:56
 msgctxt "Data|"
 msgid "Select one pie and two-fifths of a pie."
-msgstr ""
+msgstr "選擇一又五分之二個圓餅。"
 
 #: activities/fractions_create/resource/1/Data.qml:62
 msgctxt "Data|"
 msgid "Select one pie and one-third of a pie."
-msgstr ""
+msgstr "選擇一又三分之一個圓餅。"
 
 #: activities/fractions_create/resource/1/Data.qml:68
 msgctxt "Data|"
 msgid "Select one pie and one half of a pie."
-msgstr ""
+msgstr "選擇一又二分之一個圓餅。"
 
 #: activities/fractions_create/resource/1/Data.qml:74
 msgctxt "Data|"
 msgid "Select one pie and three-quarters of a pie."
-msgstr ""
+msgstr "選擇一又四分之三個圓餅。"
 
 #: activities/fractions_create/resource/10/Data.qml:9
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Answer the questions with a correctness of 100%."
 msgctxt "Data|"
 msgid "Specific questions with a rectangle."
-msgstr "回答問題，在選項中選出完全正確的答案。"
+msgstr "用矩形來學習分數"
 
 #: activities/fractions_create/resource/10/Data.qml:18
 #: activities/fractions_create/resource/10/Data.qml:24
@@ -8756,243 +8635,198 @@ msgctxt "Data|"
 msgid ""
 "Select as many parts as you can without taking more than half of the "
 "rectangle."
-msgstr ""
+msgstr "盡可能選擇不超過一半矩形的部份。"
 
 #: activities/fractions_create/resource/2/Data.qml:9
 msgctxt "Data|"
 msgid "Simplified fractions with a rectangle."
-msgstr ""
+msgstr "用矩形來選擇最簡分數。"
 
 #: activities/fractions_create/resource/2/Data.qml:18
 #: activities/fractions_create/resource/4/Data.qml:17
 #: activities/fractions_create/resource/4/Data.qml:23
 #: activities/fractions_create/resource/4/Data.qml:29
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Select the butterfly of the correct color."
 msgctxt "Data|"
 msgid "Select one half of the rectangle."
-msgstr "選擇正確顏色的蝴蝶。"
+msgstr "選擇矩形的一半。"
 
 #: activities/fractions_create/resource/2/Data.qml:24
 #: activities/fractions_create/resource/4/Data.qml:35
 #: activities/fractions_create/resource/4/Data.qml:49
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Select the butterfly of the correct color."
 msgctxt "Data|"
 msgid "Select one-third of the rectangle."
-msgstr "選擇正確顏色的蝴蝶。"
+msgstr "選擇矩形的三分之一。"
 
 #: activities/fractions_create/resource/2/Data.qml:30
 #: activities/fractions_create/resource/4/Data.qml:41
 #: activities/fractions_create/resource/4/Data.qml:55
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Select the butterfly of the correct color."
 msgctxt "Data|"
 msgid "Select two-thirds of the rectangle."
-msgstr "選擇正確顏色的蝴蝶。"
+msgstr "選擇矩形的三分之二。"
 
 #: activities/fractions_create/resource/2/Data.qml:36
 #: activities/fractions_create/resource/4/Data.qml:61
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Select the butterfly of the correct color."
 msgctxt "Data|"
 msgid "Select one-quarter of the rectangle."
-msgstr "選擇正確顏色的蝴蝶。"
+msgstr "選擇矩形的四分之一。"
 
 #: activities/fractions_create/resource/2/Data.qml:42
 #: activities/fractions_create/resource/4/Data.qml:67
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Select the fifth Thursday of the given month"
 msgctxt "Data|"
 msgid "Select two-fifths of the rectangle."
-msgstr "指出這個月的第五個星期四是哪一天"
+msgstr "選擇矩形的五分之二。"
 
 #: activities/fractions_create/resource/2/Data.qml:50
 msgctxt "Data|"
 msgid "Select one rectangle and one-quarter of a rectangle."
-msgstr ""
+msgstr "選擇一又四分之一個矩形。"
 
 #: activities/fractions_create/resource/2/Data.qml:56
 msgctxt "Data|"
 msgid "Select one rectangle and two-fifths of a rectangle."
-msgstr ""
+msgstr "選擇一又五分之二個矩形。"
 
 #: activities/fractions_create/resource/2/Data.qml:62
 msgctxt "Data|"
 msgid "Select one rectangle and one-third of a rectangle."
-msgstr ""
+msgstr "選擇一又三分之一個矩形。"
 
 #: activities/fractions_create/resource/2/Data.qml:68
 msgctxt "Data|"
 msgid "Select one rectangle and one half of a rectangle."
-msgstr ""
+msgstr "選擇一又二分之一個矩形。"
 
 #: activities/fractions_create/resource/2/Data.qml:74
 msgctxt "Data|"
 msgid "Select one rectangle and three-quarters of a rectangle."
-msgstr ""
+msgstr "選擇一又四分之三個矩形。"
 
 #: activities/fractions_create/resource/3/Data.qml:9
 msgctxt "Data|"
 msgid "Non-simplified fractions with a pie."
-msgstr ""
+msgstr "用圓餅來選擇非最簡的分數。"
 
 #: activities/fractions_create/resource/3/Data.qml:73
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Select the fifth Thursday of the given month"
 msgctxt "Data|"
 msgid "Select three-fifths of the pie."
-msgstr "指出這個月的第五個星期四是哪一天"
+msgstr "選擇圓餅的五分之三。"
 
 #: activities/fractions_create/resource/4/Data.qml:9
 msgctxt "Data|"
 msgid "Non-simplified fractions with a rectangle."
-msgstr ""
+msgstr "用矩形來選擇非最簡分數。"
 
 #: activities/fractions_create/resource/4/Data.qml:73
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Select the butterfly of the correct color."
 msgctxt "Data|"
 msgid "Select three-fifths of the rectangle."
-msgstr "選擇正確顏色的蝴蝶。"
+msgstr "選擇矩形的五分之三。"
 
 #: activities/fractions_create/resource/5/Data.qml:9
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Decimal number system."
 msgctxt "Data|"
 msgid "Decimal numbers with a pie."
-msgstr "十進位數值系統。"
+msgstr "用圓餅來學習小數。"
 
 #: activities/fractions_create/resource/5/Data.qml:18
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 0.5 pie."
-msgstr "已選擇"
+msgstr "選擇 0.5 個圓餅。"
 
 #: activities/fractions_create/resource/5/Data.qml:24
 msgctxt "Data|"
 msgid "Select 0.25 pie."
-msgstr ""
+msgstr "選擇 0.25 個圓餅。"
 
 #: activities/fractions_create/resource/5/Data.qml:30
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 0.4 pie."
-msgstr "已選擇"
+msgstr "選擇 0.4 個圓餅。"
 
 #: activities/fractions_create/resource/5/Data.qml:36
 msgctxt "Data|"
 msgid "Select 0.75 pie."
-msgstr ""
+msgstr "選擇 0.75 個圓餅。"
 
 #: activities/fractions_create/resource/5/Data.qml:42
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 0.8 pie."
-msgstr "已選擇"
+msgstr "選擇 0.8 個圓餅。"
 
 #: activities/fractions_create/resource/5/Data.qml:50
 msgctxt "Data|"
 msgid "Select 1.25 pies."
-msgstr ""
+msgstr "選擇 1.25 個圓餅。"
 
 #: activities/fractions_create/resource/5/Data.qml:56
 msgctxt "Data|"
 msgid "Select 1.4 pies."
-msgstr ""
+msgstr "選擇 1.4 個圓餅。"
 
 #: activities/fractions_create/resource/5/Data.qml:62
 #: activities/fractions_create/resource/5/Data.qml:68
 msgctxt "Data|"
 msgid "Select 1.5 pies."
-msgstr ""
+msgstr "選擇 1.5 個圓餅。"
 
 #: activities/fractions_create/resource/5/Data.qml:74
 msgctxt "Data|"
 msgid "Select 1.75 pies."
-msgstr ""
+msgstr "選擇 1.75 個圓餅。"
 
 #: activities/fractions_create/resource/6/Data.qml:9
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Decimal number system."
 msgctxt "Data|"
 msgid "Decimal numbers with a rectangle."
-msgstr "十進位數值系統。"
+msgstr "用矩形來學習小數。"
 
 #: activities/fractions_create/resource/6/Data.qml:18
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Select your locale"
 msgctxt "Data|"
 msgid "Select 0.5 rectangle."
-msgstr "選擇您的地區"
+msgstr "選擇 0.5 個矩形。"
 
 #: activities/fractions_create/resource/6/Data.qml:24
 msgctxt "Data|"
 msgid "Select 0.25 rectangle."
-msgstr ""
+msgstr "選擇 0.25 個矩形。"
 
 #: activities/fractions_create/resource/6/Data.qml:30
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Select your locale"
 msgctxt "Data|"
 msgid "Select 0.4 rectangle."
-msgstr "選擇您的地區"
+msgstr "選擇 0.4 個矩形。"
 
 #: activities/fractions_create/resource/6/Data.qml:36
 msgctxt "Data|"
 msgid "Select 0.75 rectangle."
-msgstr ""
+msgstr "選擇 0.75 個矩形。"
 
 #: activities/fractions_create/resource/6/Data.qml:42
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Select your locale"
 msgctxt "Data|"
 msgid "Select 0.8 rectangle."
-msgstr "選擇您的地區"
+msgstr "選擇 0.8 個矩形。"
 
 #: activities/fractions_create/resource/6/Data.qml:50
 msgctxt "Data|"
 msgid "Select 1.25 rectangles."
-msgstr ""
+msgstr "選擇 1.25 個矩形。"
 
 #: activities/fractions_create/resource/6/Data.qml:56
 msgctxt "Data|"
 msgid "Select 1.4 rectangles."
-msgstr ""
+msgstr "選擇 1.4 個矩形。"
 
 #: activities/fractions_create/resource/6/Data.qml:62
 #: activities/fractions_create/resource/6/Data.qml:68
 msgctxt "Data|"
 msgid "Select 1.5 rectangles."
-msgstr ""
+msgstr "選擇 1.5 個矩形。"
 
 #: activities/fractions_create/resource/6/Data.qml:74
 msgctxt "Data|"
 msgid "Select 1.75 rectangles."
-msgstr ""
+msgstr "選擇 1.75 個矩形。"
 
 #: activities/fractions_create/resource/7/Data.qml:9
 msgctxt "Data|"
 msgid "Percentages with a pie."
-msgstr ""
+msgstr "用圓餅來學習百分比。"
 
 #. Select %1 percent of the pie.
 #: activities/fractions_create/resource/7/Data.qml:19
@@ -9003,17 +8837,15 @@ msgstr ""
 #: activities/fractions_create/resource/7/Data.qml:56
 #: activities/fractions_create/resource/7/Data.qml:63
 #: activities/fractions_create/resource/7/Data.qml:70
-#, fuzzy, qt-format
-#| msgctxt "calendar_dataset|"
-#| msgid "Select the 1st"
+#, qt-format
 msgctxt "Data|"
 msgid "Select %1% of the pie."
-msgstr "選擇 1 日"
+msgstr "選擇 %1% 個圓餅。"
 
 #: activities/fractions_create/resource/8/Data.qml:9
 msgctxt "Data|"
 msgid "Percentages with a rectangle."
-msgstr ""
+msgstr "用矩形來學習百分比。"
 
 #. Select %1 percent of the rectangle.
 #: activities/fractions_create/resource/8/Data.qml:19
@@ -9025,76 +8857,61 @@ msgstr ""
 #, qt-format
 msgctxt "Data|"
 msgid "Select %1% of the rectangle."
-msgstr ""
+msgstr "選擇 %1% 個矩形。"
 
 #: activities/fractions_create/resource/9/Data.qml:9
 msgctxt "Data|"
 msgid "Specific questions with a pie."
-msgstr ""
+msgstr "用圓餅來練習。"
 
 #: activities/fractions_create/resource/9/Data.qml:18
 #: activities/fractions_create/resource/9/Data.qml:24
 msgctxt "Data|"
 msgid ""
 "Select as many parts as you can without taking more than half of the pie."
-msgstr ""
+msgstr "盡可能選擇不超過一半圓餅的部份。"
 
 #. Activity title
 #: activities/fractions_find/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "instruments|"
-#| msgid "Find the accordion"
 msgctxt "ActivityInfo|"
 msgid "Find the fractions"
-msgstr "找出手風琴"
+msgstr "找出分數"
 
 #. Help title
 #: activities/fractions_find/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Find the correct date and select it on the calendar."
 msgctxt "ActivityInfo|"
 msgid "Find the correct numerator and denominator of the represented fraction."
-msgstr "在日曆上找到並選擇正確的日期。"
+msgstr "找出所表示分數的正確分子和分母。"
 
 #: activities/fractions_find/resource/1/Data.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Nine men's morris (with a friend)"
 msgctxt "Data|"
 msgid "Find denominator (with a pie)."
-msgstr "跟朋友玩九子直棋"
+msgstr "用圓餅來找出分母。"
 
 #: activities/fractions_find/resource/2/Data.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Nine men's morris (with a friend)"
 msgctxt "Data|"
 msgid "Find denominator (with a rectangle)."
-msgstr "跟朋友玩九子直棋"
+msgstr "用矩形來找出分母。"
 
 #: activities/fractions_find/resource/3/Data.qml:9
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Align four (with a friend)"
 msgctxt "Data|"
 msgid "Find numerator (with a pie)."
-msgstr "四子棋（兩個玩家）"
+msgstr "用圓餅來找出分子。"
 
 #: activities/fractions_find/resource/4/Data.qml:9
 msgctxt "Data|"
 msgid "Find numerator (with a rectangle)."
-msgstr ""
+msgstr "用矩形來找出分子。"
 
 #: activities/fractions_find/resource/5/Data.qml:9
 msgctxt "Data|"
 msgid "Find numerator and denominator (with a pie)."
-msgstr ""
+msgstr "用圓餅來找出分母與分子。"
 
 #: activities/fractions_find/resource/6/Data.qml:9
 msgctxt "Data|"
 msgid "Find numerator and denominator (with a rectangle)."
-msgstr ""
+msgstr "用矩形來找出分母與分子。"
 
 #. Activity title
 #: activities/geo-country/ActivityInfo.qml:19
@@ -10330,145 +10147,121 @@ msgstr "Suvalkija"
 #: activities/geo-country/resource/board/board18_0.qml:13
 msgctxt "board18_0|"
 msgid "Autonomous communities of Spain"
-msgstr ""
+msgstr "西班牙的自治區"
 
 #. Autonomous communities of Spain: Andalusia
 #: activities/geo-country/resource/board/board18_0.qml:22
 msgctxt "board18_0|"
 msgid "Andalusia"
-msgstr ""
+msgstr "Andalusia"
 
 #. Autonomous communities of Spain: Madrid
 #: activities/geo-country/resource/board/board18_0.qml:29
 msgctxt "board18_0|"
 msgid "Madrid"
-msgstr ""
+msgstr "馬德里"
 
 #. Autonomous communities of Spain: Galicia
 #: activities/geo-country/resource/board/board18_0.qml:36
 msgctxt "board18_0|"
 msgid "Galicia"
-msgstr ""
+msgstr "加里西亞"
 
 #. Autonomous communities of Spain: Castile and León
 #: activities/geo-country/resource/board/board18_0.qml:43
 msgctxt "board18_0|"
 msgid "Castile and León"
-msgstr ""
+msgstr "Castile and León"
 
 #. Autonomous communities of Spain: Castilla-La Mancha
 #: activities/geo-country/resource/board/board18_0.qml:50
 msgctxt "board18_0|"
 msgid "Castilla-La Mancha"
-msgstr ""
+msgstr "Castilla-La Mancha"
 
 #. Autonomous communities of Spain: Catalonia
 #: activities/geo-country/resource/board/board18_0.qml:57
-#, fuzzy
-#| msgctxt "board14_0|"
-#| msgid "New Caledonia"
 msgctxt "board18_0|"
 msgid "Catalonia"
-msgstr "新喀里多尼亞島"
+msgstr "Catalonia"
 
 #. Autonomous communities of Spain: Aragon
 #: activities/geo-country/resource/board/board18_0.qml:64
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Hexagon"
 msgctxt "board18_0|"
 msgid "Aragon"
-msgstr "六角形"
+msgstr "Aragon"
 
 #. Autonomous communities of Spain: Valencia
 #: activities/geo-country/resource/board/board18_0.qml:71
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Calendar"
 msgctxt "board18_0|"
 msgid "Valencia"
-msgstr "日曆"
+msgstr "Valencia"
 
 #. Autonomous communities of Spain: Murcia
 #: activities/geo-country/resource/board/board18_0.qml:78
 msgctxt "board18_0|"
 msgid "Murcia"
-msgstr ""
+msgstr "Murcia"
 
 #. Autonomous communities of Spain: Asturias
 #: activities/geo-country/resource/board/board18_0.qml:85
 msgctxt "board18_0|"
 msgid "Asturias"
-msgstr ""
+msgstr "Asturias"
 
 #. Autonomous communities of Spain: Basque Country
 #: activities/geo-country/resource/board/board18_0.qml:92
 msgctxt "board18_0|"
 msgid "Basque Country"
-msgstr ""
+msgstr "Basque Country"
 
 #. Autonomous communities of Spain: La Rioja
 #: activities/geo-country/resource/board/board18_0.qml:99
-#, fuzzy
-#| msgctxt "board3_0|"
-#| msgid "La Rioja"
 msgctxt "board18_0|"
 msgid "La Rioja"
 msgstr "La Rioja"
 
 #. Autonomous communities of Spain: Cantabria
 #: activities/geo-country/resource/board/board18_0.qml:106
-#, fuzzy
-#| msgctxt "board11_0|"
-#| msgid "Calabria"
 msgctxt "board18_0|"
 msgid "Cantabria"
-msgstr "卡拉布里亞"
+msgstr "Cantabria"
 
 #. Autonomous communities of Spain: Navarre
 #: activities/geo-country/resource/board/board18_0.qml:113
-#, fuzzy
-#| msgctxt "board5|"
-#| msgid "Navajo"
 msgctxt "board18_0|"
 msgid "Navarre"
-msgstr "納瓦霍紀念碑（Navajo）"
+msgstr "Navarre"
 
 #. Autonomous communities of Spain: Extremadura
 #: activities/geo-country/resource/board/board18_0.qml:120
 msgctxt "board18_0|"
 msgid "Extremadura"
-msgstr ""
+msgstr "Extremadura"
 
 #. Autonomous communities of Spain: Canary Islands
 #: activities/geo-country/resource/board/board18_0.qml:127
-#, fuzzy
-#| msgctxt "board14_0|"
-#| msgid "Mariana Islands"
 msgctxt "board18_0|"
 msgid "Canary Islands"
-msgstr "馬里亞納群島"
+msgstr "加那利群島"
 
 #. Autonomous communities of Spain: Balearic Islands
 #: activities/geo-country/resource/board/board18_0.qml:134
-#, fuzzy
-#| msgctxt "board14_0|"
-#| msgid "Mariana Islands"
 msgctxt "board18_0|"
 msgid "Balearic Islands"
-msgstr "馬里亞納群島"
+msgstr "Balearic Islands"
 
 #. Autonomous communities of Spain: Ceuta
 #: activities/geo-country/resource/board/board18_0.qml:141
 msgctxt "board18_0|"
 msgid "Ceuta"
-msgstr ""
+msgstr "Ceuta"
 
 #. Autonomous communities of Spain: Melilla
 #: activities/geo-country/resource/board/board18_0.qml:148
 msgctxt "board18_0|"
 msgid "Melilla"
-msgstr ""
+msgstr "Melilla"
 
 #: activities/geo-country/resource/board/board1_0.qml:15
 msgctxt "board1_0|"
@@ -15064,12 +14857,9 @@ msgstr "開啟語音"
 
 #. Activity title
 #: activities/learn_digits/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Count the items"
 msgctxt "ActivityInfo|"
 msgid "Count and color the circles"
-msgstr "數一數物品"
+msgstr "數一數圓圈並著色"
 
 #. Help title
 #: activities/learn_digits/ActivityInfo.qml:17
@@ -15247,20 +15037,14 @@ msgid "Subtractions with 1, 2, 3, 4 and 5."
 msgstr "學習 1, 2, 3, 4 與 5 的減法。"
 
 #: activities/learn_subtractions/resource/4/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2, 3, 4 and 5."
 msgctxt "Data|"
 msgid "Subtractions with 1, 2, 3, 4, 5, 6 and 7."
-msgstr "學習 1, 2, 3, 4 與 5 的減法。"
+msgstr "學習 1, 2, 3, 4, 5, 6 與 7 的減法。"
 
 #: activities/learn_subtractions/resource/5/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2, 3, 4 and 5."
 msgctxt "Data|"
 msgid "Subtractions with 1, 2, 3, 4, 5, 6, 7, 8 and 9."
-msgstr "學習 1, 2, 3, 4 與 5 的減法。"
+msgstr "學習 1, 2, 3, 4, 5, 6, 7, 8 與 9 的減法。"
 
 #. Activity title
 #: activities/left_right_click/ActivityInfo.qml:14
@@ -15273,29 +15057,23 @@ msgstr "滑鼠點擊訓練"
 msgctxt "ActivityInfo|"
 msgid ""
 "Move animals to their homes using a left click or right click on your mouse."
-msgstr "用滑鼠左鍵或右鍵點擊，把動物帶回牠們的家。"
+msgstr "用滑鼠點擊左鍵或右鍵來將動物移到牠們的家中。"
 
 #. Help goal
 #: activities/left_right_click/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Using the mouse. Left and right click training."
-msgstr "使用滑鼠。左鍵或右鍵點擊的訓練。"
+msgstr "使用滑鼠，點擊左鍵或右鍵的訓練。"
 
 #. Help manual
 #: activities/left_right_click/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "A left click on a horse will move it to the stable. A right click on a "
-#| "monkey will move it to the tree. A message will show if you make the "
-#| "wrong click."
 msgctxt "ActivityInfo|"
 msgid ""
 "A left click on a fish will move it to the pond. A right click on a monkey "
 "will move it to the tree. A message will show if you make the wrong click."
 msgstr ""
-"用滑鼠左鍵點擊馬會將馬帶回馬房。用滑鼠右鍵點擊猴子會將牠帶回樹上。如果點擊錯"
-"了會有訊息提示。"
+"在魚上點左鍵會將牠移到池塘中。在猴子上點擊右鍵會將牠移到樹上。如果點錯了會出"
+"現訊息告訴您。"
 
 #. Activity title
 #: activities/leftright/ActivityInfo.qml:15
@@ -17925,37 +17703,28 @@ msgstr ""
 
 #. Activity title
 #: activities/morse_code/ActivityInfo.qml:18
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Discover the braille system"
 msgctxt "ActivityInfo|"
 msgid "Discover the International Morse code"
-msgstr "了解點字系統"
+msgstr "了解國際摩斯電碼"
 
 #. Help title
 #: activities/morse_code/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn how to tell the time on an analog clock."
 msgctxt "ActivityInfo|"
 msgid "Learn how to communicate with the International Morse code."
-msgstr "學習如何看一般的時鐘。"
+msgstr "學習如何使用國際摩斯電碼來溝通。"
 
 #. Help goal
 #: activities/morse_code/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid ""
 "You have to send and receive letters and digits in International Morse code."
-msgstr ""
+msgstr "您要用國際摩斯電碼來傳送字母與數字。"
 
 #. Help prerequisite
 #: activities/morse_code/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Knowledge of arithmetic operations."
 msgctxt "ActivityInfo|"
 msgid "Knowledge of alphabets and digits."
-msgstr "運算符的知識。"
+msgstr "字母與數字的知識。"
 
 #. Help manual
 #: activities/morse_code/ActivityInfo.qml:27
@@ -17966,11 +17735,13 @@ msgid ""
 "have a look at the translation map which contains the code for all the "
 "letters and digits."
 msgstr ""
+"您會被要求以摩斯電碼發送訊息，或是將收到的摩斯電碼訊息轉換為字母或數字。要學"
+"習摩斯電碼，您可以查看翻譯圖表，其中包含所有字母和數字的代碼。"
 
 #: activities/morse_code/FirstScreen.qml:25
 msgctxt "FirstScreen|"
 msgid "Exploring Morse Code"
-msgstr ""
+msgstr "探索摩斯電碼"
 
 #: activities/morse_code/FirstScreen.qml:64
 msgctxt "FirstScreen|"
@@ -17978,6 +17749,8 @@ msgid ""
 "Morse code was developed by Samuel Morse. It is a method of transmitting "
 "text information as a series of on-off tones, lights, or clicks."
 msgstr ""
+"摩斯電碼是由 Samuel Morse 發明的。它是將文字資訊轉換為一連串的開關聲音、光或"
+"卡搭聲來傳輸的方法。"
 
 #: activities/morse_code/FirstScreen.qml:65
 msgctxt "FirstScreen|"
@@ -17990,39 +17763,32 @@ msgid ""
 "For example, the most common letter in English, the letter \"E\", has the "
 "shortest code, a single dot."
 msgstr ""
+"每個摩斯電碼符號代表一個字元（字母或數字）或一個信號，並由獨特的點和破折號序"
+"列表示。破折號的持續時間是點的持續時間的三倍。為了提高通信速度，代碼的設計使"
+"得最常見的字母具有較短的點和破折號序列。例如，英文中最常見的字母 \"E\" 的代碼"
+"最短，只有一個點。"
 
 #: activities/morse_code/FirstScreen.qml:90
-#, fuzzy
-#| msgctxt "FirstScreen|"
-#| msgid ""
-#| "When you are ready, click on me and try reproducing braille characters."
 msgctxt "FirstScreen|"
 msgid "When you are ready, click on Tux and we will converse in Morse code."
-msgstr "當您準備好後，請按我來練習點字。"
+msgstr "當您準備好後，請點擊小企鵝，我們來用摩斯電碼來交談。"
 
 #: activities/morse_code/MorseCode.qml:346
-#, fuzzy, qt-format
-#| msgctxt "RomanNumerals|"
-#| msgid "Roman value: %1"
+#, qt-format
 msgctxt "MorseCode|"
 msgid "Morse value: %1"
-msgstr "羅馬數字：%1"
+msgstr "摩斯碼：%1"
 
 #: activities/morse_code/MorseCode.qml:347
-#, fuzzy, qt-format
-#| msgctxt "RomanNumerals|"
-#| msgid "Arabic value: %1"
+#, qt-format
 msgctxt "MorseCode|"
 msgid "Alphabet/Numeric value: %1"
-msgstr "阿拉伯數字：%1"
+msgstr "字母或數字：%1"
 
 #: activities/morse_code/resource/1/Data.qml:13
-#, fuzzy
-#| msgctxt "Menu|"
-#| msgid "Letters"
 msgctxt "Data|"
 msgid "Letters."
-msgstr "字母"
+msgstr "字母。"
 
 #: activities/morse_code/resource/1/Data.qml:18
 #: activities/morse_code/resource/1/Data.qml:34
@@ -18034,73 +17800,57 @@ msgstr "字母"
 #, qt-format
 msgctxt "Data|"
 msgid "Send the message %1 in Morse code."
-msgstr ""
+msgstr "用摩斯電碼來傳送訊息「%1」。"
 
 #: activities/morse_code/resource/1/Data.qml:23
 #: activities/morse_code/resource/1/Data.qml:39
 #: activities/morse_code/resource/1/Data.qml:55
 #: activities/morse_code/resource/1/Data.qml:71
-#, fuzzy, qt-format
-#| msgctxt "RomanNumerals|"
-#| msgid "Convert the roman number %1 to arabic."
+#, qt-format
 msgctxt "Data|"
 msgid "Convert the message %1 to letters."
-msgstr "將羅馬數字 %1 改用阿拉伯數字來表示。"
+msgstr "將訊息「%1」轉為字母。"
 
 #: activities/morse_code/resource/1/Data.qml:28
 #: activities/morse_code/resource/1/Data.qml:44
 #: activities/morse_code/resource/1/Data.qml:60
 #: activities/morse_code/resource/1/Data.qml:76
-#, fuzzy
-#| msgctxt "advanced_colors|"
-#| msgid "Find the corn butterfly"
 msgctxt "Data|"
 msgid "Find the corresponding letter."
-msgstr "尋找玉米色的蝴蝶"
+msgstr "找到相對應的字母。"
 
 #: activities/morse_code/resource/2/Data.qml:13
 msgctxt "Data|"
 msgid "Digits."
-msgstr ""
+msgstr "數字。"
 
 #: activities/morse_code/resource/2/Data.qml:23
 #: activities/morse_code/resource/2/Data.qml:39
-#, fuzzy, qt-format
-#| msgctxt "RomanNumerals|"
-#| msgid "Convert the roman number %1 to arabic."
+#, qt-format
 msgctxt "Data|"
 msgid "Convert the message %1 to digits."
-msgstr "將羅馬數字 %1 改用阿拉伯數字來表示。"
+msgstr "將訊息「%1」轉為數字。"
 
 #: activities/morse_code/resource/2/Data.qml:28
 #: activities/morse_code/resource/2/Data.qml:44
-#, fuzzy
-#| msgctxt "instruments|"
-#| msgid "Find the accordion"
 msgctxt "Data|"
 msgid "Find the corresponding digit."
-msgstr "找出手風琴"
+msgstr "找到相對應的數字。"
 
 #: activities/morse_code/resource/3/Data.qml:13
-#, fuzzy
-#| msgctxt "Menu|"
-#| msgid "Words"
 msgctxt "Data|"
 msgid "Words."
-msgstr "單字"
+msgstr "單字。"
 
 #: activities/morse_code/resource/3/Data.qml:24
 msgctxt "Data|"
 msgid "Write the Morse code you hear."
-msgstr ""
+msgstr "寫下您聽到的摩斯電碼。"
 
 #: activities/morse_code/resource/3/Data.qml:34
-#, fuzzy
-#| msgctxt "RomanNumerals|"
-#| msgid "Convert the roman number %1 to arabic."
 msgctxt "Data|"
 msgid "Convert the message in a word."
-msgstr "將羅馬數字 %1 改用阿拉伯數字來表示。"
+msgstr "將訊息轉成一個單字。"
 
 #. Activity title
 #: activities/mosaic/ActivityInfo.qml:15
@@ -18175,16 +17925,11 @@ msgstr ""
 
 #. Help manual
 #: activities/nine_men_morris/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Play with a friend. First take turns to place nine pieces, and then take "
-#| "turns to move your pieces."
 msgctxt "ActivityInfo|"
 msgid ""
 "Play with Tux. First take turns to place nine pieces, and then take turns to "
 "move your pieces."
-msgstr "跟朋友下棋。一開始輪流放棋子，棋子都放完了就可以輪流移動棋子。"
+msgstr "跟小企鵝下棋。一開始輪流放棋子，棋子都放完了就可以輪流移動棋子。"
 
 #: activities/nine_men_morris/nine_men_morris.js:29
 msgctxt "nine_men_morris|"
@@ -23807,33 +23552,27 @@ msgstr "最大值：500000。"
 
 #. Activity title
 #: activities/tens_complement_find/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "instruments|"
-#| msgid "Find the trumpet"
 msgctxt "ActivityInfo|"
 msgid "Find ten's complement"
-msgstr "找出喇叭"
+msgstr "找出十的補數"
 
 #. Help title
 #: activities/tens_complement_find/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Find the ten's complement of each number."
-msgstr ""
+msgstr "找出每個數字的十的補數。"
 
 #. Help goal
 #: activities/tens_complement_find/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Learn to find ten's complement."
-msgstr ""
+msgstr "學習如何找出十的補數。"
 
 #. Help prerequisite
 #: activities/tens_complement_find/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "ActivityInfo|"
 msgid "Numbers from 1 to 10 and additions."
-msgstr "從 0 到 9 的數字。"
+msgstr "從 1 到 10 的數字與加法。"
 
 #: activities/tens_complement_find/ActivityInfo.qml:23
 #: activities/tens_complement_use/ActivityInfo.qml:24
@@ -23844,6 +23583,8 @@ msgid ""
 "corresponding lines. To correct the errors, click on the wrong numbers to "
 "remove them and repeat the previous steps."
 msgstr ""
+"完成所有題目後，按下「確定」來驗證答案。如果某些答案不正確，相對應的行上會出"
+"現叉叉。 要更正錯誤，請點擊錯誤的數字將其刪除並重複前面的步驟。"
 
 #. Help manual
 #: activities/tens_complement_find/ActivityInfo.qml:23
@@ -23852,42 +23593,35 @@ msgid ""
 "Create pairs of numbers equal to ten. Select a number in the list, then "
 "select an empty spot of an operation to move the selected number there."
 msgstr ""
+"建立一對加起來等於 10 的數字。在清單中選擇一個數字，然後選擇等式的空白位置將"
+"所選數字移動到那裡。"
 
 #: activities/tens_complement_find/resource/1/Data.qml:25
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "Data|"
 msgid "First number from 1 to 4."
-msgstr "從 0 到 9 的數字。"
+msgstr "第一個數字從 1 到 4。"
 
 #: activities/tens_complement_find/resource/2/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "Data|"
 msgid "First number from 5 to 9."
-msgstr "從 0 到 9 的數字。"
+msgstr "第一個數字從 5 到 9。"
 
 #: activities/tens_complement_find/resource/4/Data.qml:9
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Division of numbers"
 msgctxt "Data|"
 msgid "Find both numbers."
-msgstr "除法遊戲"
+msgstr "找出這兩個數字。"
 
 #. Activity title
 #: activities/tens_complement_swap/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Swap ten's complement"
-msgstr ""
+msgstr "交換十的補數"
 
 #. Help title
 #: activities/tens_complement_swap/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Swap the numbers to create pairs equal to ten."
-msgstr ""
+msgstr "交換數字來建立加起來等於十的兩個數字。"
 
 #. Help goal
 #: activities/tens_complement_swap/ActivityInfo.qml:19
@@ -23895,16 +23629,13 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Learn to use ten's complement to optimize the order of numbers in an "
 "operation."
-msgstr ""
+msgstr "學習使用十的補數來最佳化運算中數字的順序。"
 
 #. Help prerequisite
 #: activities/tens_complement_swap/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "ActivityInfo|"
 msgid "Numbers from 1 to 30 and additions."
-msgstr "從 0 到 9 的數字。"
+msgstr "從 1 到 30 的數字與加法。"
 
 #. Help manual
 #: activities/tens_complement_swap/ActivityInfo.qml:23
@@ -23916,57 +23647,48 @@ msgid ""
 "the answers. If some answers are incorrect, a cross icon will appear on the "
 "corresponding lines. Correct the errors, then press the OK button again."
 msgstr ""
+"在每個括號內建立一對加起來等於 10 的數字。選擇一個數字，再選擇另一個相同等式"
+"中的數字來調換他們的位置。 完成所有行後，按下「確定」以驗證答案。 如果某些答"
+"案不正確，相應行上會出現叉叉。更正錯誤，然後再次按「確定」鍵。"
 
 #: activities/tens_complement_swap/resource/1/Data.qml:36
-#, fuzzy
-#| msgctxt "Warning|"
-#| msgid "1 is not a prime number."
 msgctxt "Data|"
 msgid "2 pairs to make from 4 numbers."
-msgstr "1 並不是個質數。"
+msgstr "4 個數字組成兩對。"
 
 #: activities/tens_complement_swap/resource/2/Data.qml:9
-#, fuzzy
-#| msgctxt "Warning|"
-#| msgid "1 is not a prime number."
 msgctxt "Data|"
 msgid "2 pairs to make from 5 numbers."
-msgstr "1 並不是個質數。"
+msgstr "5 個數字組成兩對。"
 
 #: activities/tens_complement_swap/resource/3/Data.qml:9
-#, fuzzy
-#| msgctxt "Warning|"
-#| msgid "1 is not a prime number."
 msgctxt "Data|"
 msgid "3 pairs to make from 6 numbers."
-msgstr "1 並不是個質數。"
+msgstr "6 個數字組成兩對。"
 
 #. Activity title
 #: activities/tens_complement_use/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Use ten's complement"
-msgstr ""
+msgstr "使用十的補數"
 
 #. Help title
 #: activities/tens_complement_use/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Use a ten's complement to simplify the operation."
-msgstr ""
+msgstr "使用十的補數來簡化運算。"
 
 #. Help goal
 #: activities/tens_complement_use/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Learn a practical use of ten's complement."
-msgstr ""
+msgstr "學習如何使用十的補數。"
 
 #. Help prerequisite
 #: activities/tens_complement_use/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "ActivityInfo|"
 msgid "Numbers from 1 to 50 and additions."
-msgstr "從 0 到 9 的數字。"
+msgstr "從 1 到 50 的數字與加法。"
 
 #. Help manual
 #: activities/tens_complement_use/ActivityInfo.qml:23
@@ -23976,30 +23698,23 @@ msgid ""
 "parentheses. Select a number in the list, then select an empty spot of an "
 "operation to move the selected number there."
 msgstr ""
+"分解加法，並在刮號內建立一對加起來等於十的數字。在清單中選擇一個數字，然後選"
+"擇等式中的空白位置將所選數字移動到那裡。"
 
 #: activities/tens_complement_use/resource/1/Data.qml:43
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Between 1 and 10."
 msgctxt "Data|"
 msgid "Result between 11 and 19."
-msgstr "1 到 10 之間。"
+msgstr "運算結果在 11 到 19 之間。"
 
 #: activities/tens_complement_use/resource/2/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Result between 20 and 29."
-msgstr "%1 到 %2 之間的數字。"
+msgstr "運算結果在 20 到 29 之間。"
 
 #: activities/tens_complement_use/resource/3/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Between 20 and 50."
 msgctxt "Data|"
 msgid "Result between 30 and 50."
-msgstr "20 到 50 之間。"
+msgstr "運算結果在 30 到 50 之間。"
 
 #. Activity title
 #: activities/tic_tac_toe/ActivityInfo.qml:18
@@ -24025,23 +23740,18 @@ msgstr "三個記號連成垂直、水平或對角的一條線。"
 
 #. Help manual
 #: activities/tic_tac_toe/ActivityInfo.qml:27
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Play with a friend. Take turns to click on the square which you want to "
-#| "mark. The first player to create a line of 3 marks wins."
 msgctxt "ActivityInfo|"
 msgid ""
 "Play with Tux. Take turns to click on the square which you want to mark. The "
 "first player to create a line of 3 marks wins."
 msgstr ""
-"這個遊戲可以跟朋友一起玩。輪到您時，在想要下的地方點一下。誰先完成三個排成一"
-"列的就獲勝。"
+"這個遊戲可以跟小企鵝一起玩。輪到您時，在想要下的地方點一下。誰先完成三個排成"
+"一列的就獲勝。"
 
 #: activities/tic_tac_toe/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Tux will play better when you increase the level."
-msgstr ""
+msgstr "困難度越高小企鵝就會越厲害。"
 
 #. Activity title
 #: activities/tic_tac_toe_2players/ActivityInfo.qml:18
@@ -24241,24 +23951,21 @@ msgid "Type the complete word as it falls, before it reaches the ground."
 msgstr "在單字掉到地面以前輸入完整的單字。"
 
 #: core/ChangeLog.qml:30
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "New maps and update of the maps for geography activities"
 msgctxt "ChangeLog|"
 msgid "Map of Spain added for geography activity"
-msgstr "地理活動新增與更新地圖"
+msgstr "地理活動新增西班牙地圖"
 
 #: core/ChangeLog.qml:31
 msgctxt "ChangeLog|"
 msgid "Voices added for Ukrainian"
-msgstr ""
+msgstr "新增烏克蘭發音"
 
 #: core/ChangeLog.qml:32
 msgctxt "ChangeLog|"
 msgid ""
 "New command-line option to list all the activities and start on a specific "
 "one"
-msgstr ""
+msgstr "新增命令列參數列出所有的活動並啟動特定活動"
 
 #: core/ChangeLog.qml:33 core/ChangeLog.qml:68 core/ChangeLog.qml:71
 #: core/ChangeLog.qml:77
@@ -25003,18 +24710,11 @@ msgid "Enable the kiosk mode."
 msgstr "開啟特別設定模式。"
 
 #: core/main.cpp:192
-#, fuzzy
-#| msgctxt "QObject|"
-#| msgid ""
-#| "Use software renderer instead of openGL (slower but should run with any "
-#| "graphical card, needs Qt 5.8 minimum)."
 msgctxt "QObject|"
 msgid ""
 "Use software renderer instead of openGL (slower but should run with any "
 "graphical card)."
-msgstr ""
-"使用軟體算繪而非 OpenGL（會比較慢，但在任何顯示卡上應該都可以用，需要至少 Qt "
-"5.8 版）。"
+msgstr "使用軟體算繪而非 OpenGL（會比較慢，但在任何顯示卡上應該都可以用）。"
 
 #: core/main.cpp:195
 msgctxt "QObject|"
@@ -25026,12 +24726,12 @@ msgstr "使用 OpenGL 算繪（比較快，但您的顯卡未必支援）。"
 #: core/main.cpp:199
 msgctxt "QObject|"
 msgid "Specify the activity when starting GCompris."
-msgstr "啟動 GCompris 時指定活動。"
+msgstr "啟動 GCompris 時指定要玩的活動。"
 
 #: core/main.cpp:204
 msgctxt "QObject|"
 msgid "Outputs all the available activities on the standard output."
-msgstr "將所有活動的輸出導到標準輸出。"
+msgstr "輸出所有可用的活動到標準輸出。"
 
 #: core/main.qml:233
 msgctxt "main|"
@@ -25125,8 +24825,52 @@ msgid "Start"
 msgstr "開始"
 
 #~ msgctxt "ActivityInfo|"
-#~ msgid "Learn digits"
-#~ msgstr "學習數字"
+#~ msgid ""
+#~ "Play with the computer. Take turns to click the line in which you want to "
+#~ "drop a token. The first player to create a line of 4 tokens wins."
+#~ msgstr ""
+#~ "這個遊戲可以跟電腦一起玩。輪到您時，在想要下的地方點一下。誰先完成四個排成"
+#~ "一列的就獲勝。"
+
+#~ msgctxt "Calendar|"
+#~ msgid "Sunday"
+#~ msgstr "星期日"
+
+#~ msgctxt "Calendar|"
+#~ msgid "Monday"
+#~ msgstr "星期一"
+
+#~ msgctxt "Calendar|"
+#~ msgid "Tuesday"
+#~ msgstr "星期二"
+
+#~ msgctxt "Calendar|"
+#~ msgid "Wednesday"
+#~ msgstr "星期三"
+
+#~ msgctxt "Calendar|"
+#~ msgid "Thursday"
+#~ msgstr "星期四"
+
+#~ msgctxt "Calendar|"
+#~ msgid "Friday"
+#~ msgstr "星期五"
+
+#~ msgctxt "Calendar|"
+#~ msgid "Saturday"
+#~ msgstr "星期六"
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Play checkers against the computer"
+#~ msgstr "跟電腦下棋"
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Play checkers with your friend"
+#~ msgstr "與朋友下跳棋"
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Play chess against your friend"
+#~ msgstr "與朋友下棋"
 
 #~ msgctxt "board1|"
 #~ msgid "The horse goes 'neigh! neigh!'. Horses usually sleep standing up."
@@ -25215,18 +24959,34 @@ msgstr "開始"
 #~ "等許多東西。"
 
 #~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Play with the computer. Take turns to click the line in which you want to "
-#~ "drop a token. The first player to create a line of 4 tokens wins."
-#~ msgstr ""
-#~ "這個遊戲可以跟電腦一起玩。輪到您時，在想要下的地方點一下。誰先完成四個排成"
-#~ "一列的就獲勝。"
+#~ msgid "Learn digits"
+#~ msgstr "學習數字"
 
 #~ msgctxt "ActivityInfo|"
 #~ msgid ""
 #~ "Play with the computer. First take turns to place nine pieces, and then "
 #~ "take turns to move your pieces."
 #~ msgstr "跟電腦下棋。一開始輪流放棋子，棋子都放完了就可以輪流移動棋子。"
+
+#~ msgctxt "Data|"
+#~ msgid ""
+#~ "The|dog|barks.\n"
+#~ "The|house|is|red.\n"
+#~ "The boy|reads|a book.\n"
+#~ "Football|is|a|team|game."
+#~ msgstr ""
+#~ "The|dog|barks.\n"
+#~ "The|house|is|red.\n"
+#~ "The boy|reads|a book.\n"
+#~ "Football|is|a|team|game."
+
+#~ msgctxt "Data|"
+#~ msgid ""
+#~ "The|sun|is|shining|in|the|sky.\n"
+#~ "Kids|enjoy|playing|outside|in|the|evening."
+#~ msgstr ""
+#~ "The|sun|is|shining|in|the|sky.\n"
+#~ "Kids|enjoy|playing|outside|in|the|evening."
 
 #~ msgctxt "ActivityInfo|"
 #~ msgid ""
@@ -25235,66 +24995,6 @@ msgstr "開始"
 #~ msgstr ""
 #~ "這個遊戲可以跟電腦一起玩。輪到您時，在想要下的地方點一下。誰先完成三個排成"
 #~ "一列的就獲勝。"
-
-#~ msgctxt "Calendar|"
-#~ msgid "Sunday"
-#~ msgstr "星期日"
-
-#~ msgctxt "Calendar|"
-#~ msgid "Monday"
-#~ msgstr "星期一"
-
-#~ msgctxt "Calendar|"
-#~ msgid "Tuesday"
-#~ msgstr "星期二"
-
-#~ msgctxt "Calendar|"
-#~ msgid "Wednesday"
-#~ msgstr "星期三"
-
-#~ msgctxt "Calendar|"
-#~ msgid "Thursday"
-#~ msgstr "星期四"
-
-#~ msgctxt "Calendar|"
-#~ msgid "Friday"
-#~ msgstr "星期五"
-
-#~ msgctxt "Calendar|"
-#~ msgid "Saturday"
-#~ msgstr "星期六"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Play checkers against the computer"
-#~ msgstr "跟電腦下棋"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Play checkers with your friend"
-#~ msgstr "與朋友下跳棋"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Play chess against your friend"
-#~ msgstr "與朋友下棋"
-
-#~ msgctxt "Data|"
-#~ msgid ""
-#~ "The|dog|barks.\n"
-#~ "The|house|is|red.\n"
-#~ "The boy|reads|a book.\n"
-#~ "Football|is|a|team|game."
-#~ msgstr ""
-#~ "The|dog|barks.\n"
-#~ "The|house|is|red.\n"
-#~ "The boy|reads|a book.\n"
-#~ "Football|is|a|team|game."
-
-#~ msgctxt "Data|"
-#~ msgid ""
-#~ "The|sun|is|shining|in|the|sky.\n"
-#~ "Kids|enjoy|playing|outside|in|the|evening."
-#~ msgstr ""
-#~ "The|sun|is|shining|in|the|sky.\n"
-#~ "Kids|enjoy|playing|outside|in|the|evening."
 
 #~ msgctxt "ActivityInfo|"
 #~ msgid ""
