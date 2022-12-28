@@ -25050,7 +25050,7 @@ msgstr "Valeur maximale : 500000."
 #: activities/tens_complement_find/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Find ten's complement"
-msgstr "Trouve le complément à 10."
+msgstr "Trouve le complément à 10"
 
 #. Help title
 #: activities/tens_complement_find/ActivityInfo.qml:16
