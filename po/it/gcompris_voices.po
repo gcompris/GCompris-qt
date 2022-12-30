@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: gcompris_voices\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-12-17 02:40+0000\n"
-"PO-Revision-Date: 2021-09-27 08:36+0200\n"
+"PO-Revision-Date: 2022-12-16 10:51+0100\n"
 "Last-Translator: Vincenzo Reale <smart2128vr@gmail.com>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
 "Language: it\n"
@@ -221,10 +221,9 @@ msgstr "Categorizza gli elementi nel gruppo corretto"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "checkers"
 #: activities/checkers/ActivityInfo.qml:18
-#, fuzzy, kde-format
-#| msgid "play chess against Tux"
+#, kde-format
 msgid "play checkers against Tux"
-msgstr "gioca a scacchi contro Tux"
+msgstr "gioca a scacchi con Tux"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "checkers_2players"
 #: activities/checkers_2players/ActivityInfo.qml:18
@@ -317,6 +316,8 @@ msgstr "Fai clic sul colore giusto"
 msgid ""
 "Select the correct comparator sign for each pair of numbers in the list."
 msgstr ""
+"Seleziona il segno di comparazione corretto per ciascuna coppia di numeri "
+"nell'elenco."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "crane"
 #: activities/crane/ActivityInfo.qml:23
@@ -454,12 +455,14 @@ msgstr ""
 msgid ""
 "Select the appropriate number of parts as described in the instructions."
 msgstr ""
+"Seleziona il numero appropriato di parti come descritto nelle istruzioni."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "fractions_find"
 #: activities/fractions_find/ActivityInfo.qml:17
 #, kde-format
 msgid "Find the correct numerator and denominator of the represented fraction"
 msgstr ""
+"Trova il numeratore e il denominatore corretti della frazione rappresentata"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "geo-country"
 #: activities/geo-country/ActivityInfo.qml:22
@@ -687,6 +690,8 @@ msgstr ""
 msgid ""
 "Move animals to their homes using a left click or right click on your mouse."
 msgstr ""
+"Sposta gli animali nelle loro case usando un clic sinistro o un clic destro "
+"del mouse."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "leftright"
 #: activities/leftright/ActivityInfo.qml:18
@@ -890,11 +895,9 @@ msgstr "Fai clic sui soldi per pagare."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "morse_code"
 #: activities/morse_code/ActivityInfo.qml:21
-#, fuzzy, kde-format
-#| msgid "Learn and practice roman to arabic numerals conversion"
+#, kde-format
 msgid "Learn and practice the International Morse code"
-msgstr ""
-"Impara e fai pratica con la conversione dei numeri romanzi in numeri arabi"
+msgstr "Impara e fai pratica con il codice Morse internazionale"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "mosaic"
 #: activities/mosaic/ActivityInfo.qml:18
@@ -1236,6 +1239,9 @@ msgid ""
 "Create pairs of numbers equal to ten. Select a number in the list, then "
 "select an empty spot of an operation to move the selected number there."
 msgstr ""
+"Crea coppie di numeri uguali a dieci. Seleziona un numero nell'elenco, "
+"quindi seleziona un punto vuoto di un'operazione per spostare lì il numero "
+"selezionato."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "tens_complement_swap"
 #: activities/tens_complement_swap/ActivityInfo.qml:17
@@ -1244,6 +1250,8 @@ msgid ""
 "Create pairs of numbers equal to ten. Select a number, then select another "
 "number of the same operation to swap their position."
 msgstr ""
+"Crea coppie di numeri uguali a dieci. Seleziona un numero, quindi seleziona "
+"un altro numero della stessa operazione per scambiare la loro posizione."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "tens_complement_use"
 #: activities/tens_complement_use/ActivityInfo.qml:17
@@ -1253,6 +1261,9 @@ msgid ""
 "number in the list, then select an empty spot of an operation to move the "
 "selected number there."
 msgstr ""
+"Scomponi le operazioni per includere una coppia di numeri uguali a dieci. "
+"Seleziona un numero nell'elenco, quindi seleziona un punto vuoto di "
+"un'operazione per spostare lì il numero selezionato."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "tic_tac_toe_2players"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "tic_tac_toe"
