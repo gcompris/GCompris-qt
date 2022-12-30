@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2022-12-22 21:46+0530\n"
+"PO-Revision-Date: 2022-12-29 21:29+0530\n"
 "Last-Translator: Kishore G <kishore96@gmail.com>\n"
 "Language-Team: Tamil <kde-i18n-doc@kde.org>\n"
 "Language: ta\n"
@@ -742,7 +742,7 @@ msgstr "எண்களைப் பெருக்கிப் பழகுங�
 #: activities/algebra_by/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Learn to multiply numbers within a limited period of time."
-msgstr "குறிப்பிட்ட நேரத்திற்குள் இரண்டு எண்களின் பெருக்கும் பயிற்சி தரும்."
+msgstr "குறிப்பிட்ட நேரத்திற்குள் இரண்டு எண்களை பெருக்கும் பயிற்சி தரும்."
 
 #. Help prerequisite
 #: activities/algebra_by/ActivityInfo.qml:22
@@ -759,6 +759,9 @@ msgid ""
 "numbers. You have to be fast and submit the answer before the penguins in "
 "their balloon land!"
 msgstr ""
+"திரையில் ஓர் பெருக்கல் கணக்கு காட்டப்படும். விடையை கணக்கிட்டு, விசைப்பலகையையோ "
+"திரையிலுள்ள பட்டன்களையோ பயன்படுத்தி அதை உள்ளிடுங்கள். பெங்குவின்கள் தரையிறங்குமுன் சரியான "
+"விடையை கண்டுபிடியுங்கள்."
 
 #: activities/algebra_by/ActivityInfo.qml:26
 #: activities/algebra_div/ActivityInfo.qml:26
@@ -796,120 +799,78 @@ msgid "Enter: validate your answer"
 msgstr "Enter: விடையை சரிபார்க்கும்"
 
 #: activities/algebra_by/resource/1/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplication table"
 msgctxt "Data|"
 msgid "Learn multiplication table of 1."
-msgstr "பெருக்கல் வாய்ப்பாடு"
+msgstr "1-இன் பெருக்கல் வாய்ப்பாட்டை கற்றுத்தரும்."
 
 #: activities/algebra_by/resource/10/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplication table"
 msgctxt "Data|"
 msgid "Learn multiplication table of 10."
-msgstr "பெருக்கல் வாய்ப்பாடு"
+msgstr "10-இன் பெருக்கல் வாய்ப்பாட்டை கற்றுத்தரும்."
 
 #: activities/algebra_by/resource/2/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplication table"
 msgctxt "Data|"
 msgid "Learn multiplication table of 2."
-msgstr "பெருக்கல் வாய்ப்பாடு"
+msgstr "2-இன் பெருக்கல் வாய்ப்பாட்டை கற்றுத்தரும்."
 
 #: activities/algebra_by/resource/3/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplication table"
 msgctxt "Data|"
 msgid "Learn multiplication table of 3."
-msgstr "பெருக்கல் வாய்ப்பாடு"
+msgstr "3-இன் பெருக்கல் வாய்ப்பாட்டை கற்றுத்தரும்."
 
 #: activities/algebra_by/resource/4/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplication table"
 msgctxt "Data|"
 msgid "Learn multiplication table of 4."
-msgstr "பெருக்கல் வாய்ப்பாடு"
+msgstr "4-இன் பெருக்கல் வாய்ப்பாட்டை கற்றுத்தரும்."
 
 #: activities/algebra_by/resource/5/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplication table"
 msgctxt "Data|"
 msgid "Learn multiplication table of 5."
-msgstr "பெருக்கல் வாய்ப்பாடு"
+msgstr "5-இன் பெருக்கல் வாய்ப்பாட்டை கற்றுத்தரும்."
 
 #: activities/algebra_by/resource/6/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplication table"
 msgctxt "Data|"
 msgid "Learn multiplication table of 6."
-msgstr "பெருக்கல் வாய்ப்பாடு"
+msgstr "6-இன் பெருக்கல் வாய்ப்பாட்டை கற்றுத்தரும்."
 
 #: activities/algebra_by/resource/7/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplication table"
 msgctxt "Data|"
 msgid "Learn multiplication table of 7."
-msgstr "பெருக்கல் வாய்ப்பாடு"
+msgstr "7-இன் பெருக்கல் வாய்ப்பாட்டை கற்றுத்தரும்."
 
 #: activities/algebra_by/resource/8/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplication table"
 msgctxt "Data|"
 msgid "Learn multiplication table of 8."
-msgstr "பெருக்கல் வாய்ப்பாடு"
+msgstr "8-இன் பெருக்கல் வாய்ப்பாட்டை கற்றுத்தரும்."
 
 #: activities/algebra_by/resource/9/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplication table"
 msgctxt "Data|"
 msgid "Learn multiplication table of 9."
-msgstr "பெருக்கல் வாய்ப்பாடு"
+msgstr "9-இன் பெருக்கல் வாய்ப்பாட்டை கற்றுத்தரும்."
 
 #. Activity title
 #: activities/algebra_div/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Subtraction memory game"
 msgctxt "ActivityInfo|"
 msgid "Division of numbers"
-msgstr "கழித்தல் நினைவாற்றல் விளையாட்டு"
+msgstr "எண்களை வகுத்தல்"
 
 #. Help title
 #: activities/algebra_div/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice the subtraction operation"
 msgctxt "ActivityInfo|"
 msgid "Practice the division operation."
-msgstr "கழித்தல் பழகுவோம்"
+msgstr "எண்களை வகுக்க பழகுங்கள்."
 
 #. Help goal
 #: activities/algebra_div/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "In a limited time, find the difference between two numbers"
 msgctxt "ActivityInfo|"
 msgid "Find the result of the division within a limited period of time."
-msgstr "கொடுத்த நேரத்தில் இரண்டு எண்களின் வித்தியாசத்தை கண்டு பிடிப்போம்."
+msgstr "குறிப்பிட்ட நேரத்திற்குள் எண்களின் வகுக்கும் பயிற்சி தரும்."
 
 #. Help prerequisite
 #: activities/algebra_div/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Subtraction memory game"
 msgctxt "ActivityInfo|"
 msgid "Division of small numbers."
-msgstr "கழித்தல் நினைவாற்றல் விளையாட்டு"
+msgstr "சிறிய எண்களை வகுக்க தெரிந்திருக்க வேண்டும்."
 
 #. Help manual
 #: activities/algebra_div/ActivityInfo.qml:24
@@ -919,86 +880,59 @@ msgid ""
 "computer's keyboard or the on-screen keypad to type it. You have to be fast "
 "and submit the answer before the penguins in their balloon land!"
 msgstr ""
+"திரையில் ஓர் வகுத்தல் கணக்கு காட்டப்படும் விடையை கணக்கிட்டு, விசைப்பலகையையோ திரையிலுள்ள "
+"பட்டன்களையோ பயன்படுத்தி அதை உள்ளிடுங்கள். பெங்குவின்கள் தரையிறங்குமுன் சரியான விடையை "
+"கண்டுபிடியுங்கள்."
 
 #: activities/algebra_div/resource/1/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Subtraction memory game"
 msgctxt "Data|"
 msgid "Learn division table of 1."
-msgstr "கழித்தல் நினைவாற்றல் விளையாட்டு"
+msgstr "1-இன் வகுத்தல் வாய்ப்பாட்டை கற்றுத்தரும்."
 
 #: activities/algebra_div/resource/10/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Subtraction memory game"
 msgctxt "Data|"
 msgid "Learn division table of 10."
-msgstr "கழித்தல் நினைவாற்றல் விளையாட்டு"
+msgstr "10-இன் வகுத்தல் வாய்ப்பாட்டை கற்றுத்தரும்."
 
 #: activities/algebra_div/resource/2/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Subtraction memory game"
 msgctxt "Data|"
 msgid "Learn division table of 2."
-msgstr "கழித்தல் நினைவாற்றல் விளையாட்டு"
+msgstr "2-இன் வகுத்தல் வாய்ப்பாட்டை கற்றுத்தரும்."
 
 #: activities/algebra_div/resource/3/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Subtraction memory game"
 msgctxt "Data|"
 msgid "Learn division table of 3."
-msgstr "கழித்தல் நினைவாற்றல் விளையாட்டு"
+msgstr "3-இன் வகுத்தல் வாய்ப்பாட்டை கற்றுத்தரும்."
 
 #: activities/algebra_div/resource/4/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Subtraction memory game"
 msgctxt "Data|"
 msgid "Learn division table of 4."
-msgstr "கழித்தல் நினைவாற்றல் விளையாட்டு"
+msgstr "4-இன் வகுத்தல் வாய்ப்பாட்டை கற்றுத்தரும்."
 
 #: activities/algebra_div/resource/5/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Subtraction memory game"
 msgctxt "Data|"
 msgid "Learn division table of 5."
-msgstr "கழித்தல் நினைவாற்றல் விளையாட்டு"
+msgstr "5-இன் வகுத்தல் வாய்ப்பாட்டை கற்றுத்தரும்."
 
 #: activities/algebra_div/resource/6/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Subtraction memory game"
 msgctxt "Data|"
 msgid "Learn division table of 6."
-msgstr "கழித்தல் நினைவாற்றல் விளையாட்டு"
+msgstr "6-இன் வகுத்தல் வாய்ப்பாட்டை கற்றுத்தரும்."
 
 #: activities/algebra_div/resource/7/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Subtraction memory game"
 msgctxt "Data|"
 msgid "Learn division table of 7."
-msgstr "கழித்தல் நினைவாற்றல் விளையாட்டு"
+msgstr "7-இன் வகுத்தல் வாய்ப்பாட்டை கற்றுத்தரும்."
 
 #: activities/algebra_div/resource/8/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Subtraction memory game"
 msgctxt "Data|"
 msgid "Learn division table of 8."
-msgstr "கழித்தல் நினைவாற்றல் விளையாட்டு"
+msgstr "8-இன் வகுத்தல் வாய்ப்பாட்டை கற்றுத்தரும்."
 
 #: activities/algebra_div/resource/9/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Subtraction memory game"
 msgctxt "Data|"
 msgid "Learn division table of 9."
-msgstr "கழித்தல் நினைவாற்றல் விளையாட்டு"
+msgstr "9-இன் வகுத்தல் வாய்ப்பாட்டை கற்றுத்தரும்."
 
 #. Activity title
 #: activities/algebra_minus/ActivityInfo.qml:15

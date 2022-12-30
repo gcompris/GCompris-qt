@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_qt\n"
-"PO-Revision-Date: 2022-12-16 11:13+0100\n"
+"PO-Revision-Date: 2022-12-25 01:54+0100\n"
 "Last-Translator: Vincenzo Reale <smart2128vr@gmail.com>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
 "Language: it\n"
@@ -25164,11 +25164,6 @@ msgstr ""
 "Quando il sole sorge, l'acqua del mare inizia a riscaldarsi ed evapora."
 
 #: activities/watercycle/Watercycle.qml:80
-#, fuzzy
-#| msgctxt "Watercycle|"
-#| msgid ""
-#| "Water vapor condenses to form cloud and when clouds become heavy, it "
-#| "rains. Click on the cloud."
 msgctxt "Watercycle|"
 msgid ""
 "Water vapor condenses to form clouds and when clouds become heavy, it rains. "
@@ -25221,12 +25216,6 @@ msgstr ""
 "energia per far evaporare l'acqua da corpi idrici come gli oceani."
 
 #: activities/watercycle/Watercycle.qml:115
-#, fuzzy
-#| msgctxt "Watercycle|"
-#| msgid ""
-#| "Plants also lose water to the air through transpiration. The water vapor "
-#| "cools down forming tiny droplets in clouds. When the clouds meet cool air "
-#| "over the land, precipitation is triggered and fall down as rain."
 msgctxt "Watercycle|"
 msgid ""
 "Plants also lose water to the air through transpiration. The water vapor "
@@ -25294,17 +25283,14 @@ msgid "Type the complete word as it falls, before it reaches the ground."
 msgstr "Digita la parola completa mentre cade, prima che tocchi terra."
 
 #: core/ChangeLog.qml:30
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "New maps and update of the maps for geography activities"
 msgctxt "ChangeLog|"
 msgid "Map of Spain added for geography activity"
-msgstr "Nuove mappe e aggiornamento delle mappe per le attività di geografia"
+msgstr "Mappa della Spagna aggiunta per l'attività di geografia"
 
 #: core/ChangeLog.qml:31
 msgctxt "ChangeLog|"
 msgid "Voices added for Ukrainian"
-msgstr ""
+msgstr "Voci aggiunte per l'ucraino"
 
 #: core/ChangeLog.qml:32
 msgctxt "ChangeLog|"
@@ -25312,6 +25298,8 @@ msgid ""
 "New command-line option to list all the activities and start on a specific "
 "one"
 msgstr ""
+"Nuova opzione della riga di comando per elencare tutte le attività e "
+"avviarne una specifica"
 
 #: core/ChangeLog.qml:33 core/ChangeLog.qml:68 core/ChangeLog.qml:71
 #: core/ChangeLog.qml:77
