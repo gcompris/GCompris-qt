@@ -22,6 +22,9 @@ msgstr "Cores avanzadas"
 
 #. Help title
 #: activities/advanced_colors/ActivityInfo.qml:17
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Select the butterfly of the correct color."
 msgctxt "ActivityInfo|"
 msgid "Select the butterfly of the correct color."
 msgstr "Selecciona a bolboreta da cor correcta."
@@ -35,6 +38,9 @@ msgstr "Aprende a recoñecer cores pouco comúns."
 #. Help prerequisite
 #: activities/advanced_colors/ActivityInfo.qml:22
 #: activities/positions/ActivityInfo.qml:22
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Can read."
 msgctxt "ActivityInfo|"
 msgid "Can read."
 msgstr "Podes ler."
@@ -136,6 +142,9 @@ msgstr ""
 #: activities/smallnumbers2/ActivityInfo.qml:25
 #: activities/solar_system/ActivityInfo.qml:28
 #: activities/submarine/ActivityInfo.qml:25
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "<b>Keyboard controls:</b>"
 msgctxt "ActivityInfo|"
 msgid "<b>Keyboard controls:</b>"
 msgstr "<b>Controis de teclado:</b>"
@@ -722,6 +731,9 @@ msgstr "Atopa a bolboreta púrpura escuro"
 #: activities/smallnumbers/ActivityConfig.qml:27
 #: activities/smallnumbers2/ActivityConfig.qml:40
 #: activities/wordsgame/ActivityConfig.qml:50
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Speed"
 msgctxt "ActivityConfig|"
 msgid "Speed"
 msgstr "Velocidade"
@@ -734,18 +746,27 @@ msgstr "Multiplicación de números"
 
 #. Help title
 #: activities/algebra_by/ActivityInfo.qml:17
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Practice the multiplication operation."
 msgctxt "ActivityInfo|"
 msgid "Practice the multiplication operation."
 msgstr "Practica a operación de multiplicar."
 
 #. Help goal
 #: activities/algebra_by/ActivityInfo.qml:20
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Learn to multiply numbers within a limited period of time."
 msgctxt "ActivityInfo|"
 msgid "Learn to multiply numbers within a limited period of time."
 msgstr "Aprende a multiplicar números nun período de tempo limitado."
 
 #. Help prerequisite
 #: activities/algebra_by/ActivityInfo.qml:22
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Multiplication tables from 1 to 10."
 msgctxt "ActivityInfo|"
 msgid "Multiplication tables from 1 to 10."
 msgstr "Táboas de multiplicar do 1 ao 10."
@@ -886,18 +907,27 @@ msgstr "División de números"
 
 #. Help title
 #: activities/algebra_div/ActivityInfo.qml:17
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Practice the division operation."
 msgctxt "ActivityInfo|"
 msgid "Practice the division operation."
 msgstr "Practicar a operación de división."
 
 #. Help goal
 #: activities/algebra_div/ActivityInfo.qml:20
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Find the result of the division within a limited period of time."
 msgctxt "ActivityInfo|"
 msgid "Find the result of the division within a limited period of time."
 msgstr "Atopar o resultado da división nun tempo limitado."
 
 #. Help prerequisite
 #: activities/algebra_div/ActivityInfo.qml:22
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Division of small numbers."
 msgctxt "ActivityInfo|"
 msgid "Division of small numbers."
 msgstr "División de números pequenos."
@@ -1002,12 +1032,20 @@ msgstr "Resta de números"
 
 #. Help title
 #: activities/algebra_minus/ActivityInfo.qml:17
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Practice the subtraction operation."
 msgctxt "ActivityInfo|"
 msgid "Practice the subtraction operation."
 msgstr "Practicar a operación de resta."
 
 #. Help goal
 #: activities/algebra_minus/ActivityInfo.qml:20
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "Learn to find the difference between two numbers within a limited period "
+#| "of time."
 msgctxt "ActivityInfo|"
 msgid ""
 "Learn to find the difference between two numbers within a limited period of "
@@ -1016,6 +1054,9 @@ msgstr "Aprende a atopar a diferenza entre dous números nun tempo limitado."
 
 #. Help prerequisite
 #: activities/algebra_minus/ActivityInfo.qml:22
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Subtraction of small numbers."
 msgctxt "ActivityInfo|"
 msgid "Subtraction of small numbers."
 msgstr "Resta de números pequenos."
@@ -1129,12 +1170,19 @@ msgstr "Practicar a suma de números"
 
 #. Help goal
 #: activities/algebra_plus/ActivityInfo.qml:20
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "Learn to find the sum of two numbers within a limited period of time."
 msgctxt "ActivityInfo|"
 msgid "Learn to find the sum of two numbers within a limited period of time."
 msgstr "Aprende a atopar a suma de dous números nun tempo limitado."
 
 #. Help prerequisite
 #: activities/algebra_plus/ActivityInfo.qml:22
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Simple addition. Can recognize written numbers."
 msgctxt "ActivityInfo|"
 msgid "Simple addition. Can recognize written numbers."
 msgstr "Suma sinxela. Podes recoñecer os números escritos."
@@ -1248,12 +1296,21 @@ msgstr "Ordena as froitas"
 
 #. Help goal
 #: activities/algorithm/ActivityInfo.qml:20
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Logic training activity."
 msgctxt "ActivityInfo|"
 msgid "Logic training activity."
 msgstr "Actividade de adestramento lóxico."
 
 #. Help manual
 #: activities/algorithm/ActivityInfo.qml:22
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "Look at the two sequences. Each fruit in the first sequence has been "
+#| "replaced by another fruit in the second sequence. Complete the second "
+#| "sequence by using the correct fruit, after studying this pattern."
 msgctxt "ActivityInfo|"
 msgid ""
 "Look at the two sequences. Each fruit in the first sequence has been "
@@ -1273,6 +1330,9 @@ msgstr "Catro en liña (contra Tux)"
 #. Help title
 #: activities/align4/ActivityInfo.qml:17
 #: activities/align4_2players/ActivityInfo.qml:17
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Arrange four tokens in a row."
 msgctxt "ActivityInfo|"
 msgid "Arrange four tokens in a row."
 msgstr "Coloca catro fichas en liña."
@@ -1362,6 +1422,11 @@ msgstr "Secuencia alfabética"
 
 #. Help title
 #: activities/alphabet-sequence/ActivityInfo.qml:17
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "Move the helicopter to catch the clouds following the order of the "
+#| "alphabet."
 msgctxt "ActivityInfo|"
 msgid ""
 "Move the helicopter to catch the clouds following the order of the alphabet."
@@ -1369,12 +1434,18 @@ msgstr "Move o helicóptero para coller as nubes en orde alfabética."
 
 #. Help goal
 #: activities/alphabet-sequence/ActivityInfo.qml:20
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Alphabet sequence."
 msgctxt "ActivityInfo|"
 msgid "Alphabet sequence."
 msgstr "Secuencia alfabética."
 
 #. Help prerequisite
 #: activities/alphabet-sequence/ActivityInfo.qml:22
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Can decode letters."
 msgctxt "ActivityInfo|"
 msgid "Can decode letters."
 msgstr "Podo decodificar letras."
@@ -1407,12 +1478,18 @@ msgstr "a/b/c/c/d/e/f/g/h/i/l/m/n/ñ/o/p/q/r/s/t/u/v/x/z"
 
 #: activities/analog_electricity/ActivityConfig.qml:22
 #: activities/digital_electricity/ActivityConfig.qml:22
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Tutorial Mode"
 msgctxt "ActivityConfig|"
 msgid "Tutorial Mode"
 msgstr "Modo de titorial"
 
 #: activities/analog_electricity/ActivityConfig.qml:23
 #: activities/digital_electricity/ActivityConfig.qml:23
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Free Mode"
 msgctxt "ActivityConfig|"
 msgid "Free Mode"
 msgstr "Modo libre"
@@ -1424,6 +1501,9 @@ msgstr "Modo libre"
 #: activities/solar_system/ActivityConfig.qml:31
 #: activities/superbrain/ActivityConfig.qml:31
 #: activities/traffic/ActivityConfig.qml:31
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Select your mode"
 msgctxt "ActivityConfig|"
 msgid "Select your mode"
 msgstr "Selecciona un modo"
@@ -2062,6 +2142,9 @@ msgstr ""
 #: activities/left_right_click/ActivityInfo.qml:21
 #: activities/memory-tux/ActivityInfo.qml:22
 #: activities/memory/ActivityInfo.qml:22 activities/tangram/ActivityInfo.qml:29
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Mouse-manipulation."
 msgctxt "ActivityInfo|"
 msgid "Mouse-manipulation."
 msgstr "Manexo do rato."
@@ -2141,6 +2224,9 @@ msgstr ""
 
 #. Activity title
 #: activities/baby_wordprocessor/ActivityInfo.qml:15
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "A baby word processor"
 msgctxt "ActivityInfo|"
 msgid "A baby word processor"
 msgstr "Un procesador de texto para bebés"
@@ -2163,6 +2249,13 @@ msgstr "Descubre o teclado e as letras."
 
 #. Help manual
 #: activities/baby_wordprocessor/ActivityInfo.qml:24
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "Just type on the real or virtual keyboard like in a word processor.\n"
+#| "    Clicking on the 'Title' button will make the text bigger. Similarly, "
+#| "the 'subtitle' button will make the text slightly less bigger. Clicking "
+#| "on 'paragraph' will remove the formatting."
 msgctxt "ActivityInfo|"
 msgid ""
 "Just type on the real or virtual keyboard like in a word processor.\n"
@@ -2322,6 +2415,9 @@ msgstr "Completa o quebracabezas"
 #. Help title
 #: activities/babyshapes/ActivityInfo.qml:21
 #: activities/details/ActivityInfo.qml:20
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Drag and Drop the shapes on their respective targets."
 msgctxt "ActivityInfo|"
 msgid "Drag and Drop the shapes on their respective targets."
 msgstr "Arrastra e solta as formas onde corresponda."
@@ -2389,21 +2485,33 @@ msgid "Ambrosius Bosschaert the Elder, Flower Still Life - 1614"
 msgstr "Ambrosius Bosschaert o Vello, Flor natureza morta - 1614"
 
 #: activities/balancebox/ActivityConfig.qml:23
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Built-in"
 msgctxt "ActivityConfig|"
 msgid "Built-in"
 msgstr "Incorporado"
 
 #: activities/balancebox/ActivityConfig.qml:24
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "User"
 msgctxt "ActivityConfig|"
 msgid "User"
 msgstr "Usuario"
 
 #: activities/balancebox/ActivityConfig.qml:34
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Select your level set"
 msgctxt "ActivityConfig|"
 msgid "Select your level set"
 msgstr "Selecciona un grupo de niveis"
 
 #: activities/balancebox/ActivityConfig.qml:40
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Start the editor"
 msgctxt "ActivityConfig|"
 msgid "Start the editor"
 msgstr "Iniciar o editor"
@@ -2414,6 +2522,9 @@ msgid "Start the activity to access the editor"
 msgstr ""
 
 #: activities/balancebox/ActivityConfig.qml:49
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Load saved levels"
 msgctxt "ActivityConfig|"
 msgid "Load saved levels"
 msgstr "Cargar os niveis gardados"
@@ -2581,6 +2692,11 @@ msgid "Ok"
 msgstr "Aceptar"
 
 #: activities/balancebox/editor/balanceboxeditor.js:254
+#, fuzzy
+#| msgctxt "balanceboxeditor|"
+#| msgid ""
+#| "You have unsaved changes!<br/> Do you really want to leave this level and "
+#| "lose your changes?"
 msgctxt "balanceboxeditor|"
 msgid ""
 "You have unsaved changes!<br/> Do you really want to leave this level and "
@@ -2665,24 +2781,36 @@ msgstr ""
 
 #: activities/bargame/ActivityConfig.qml:21
 #: activities/bargame_2players/ActivityConfig.qml:21
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Easy"
 msgctxt "ActivityConfig|"
 msgid "Easy"
 msgstr "Doado"
 
 #: activities/bargame/ActivityConfig.qml:22
 #: activities/bargame_2players/ActivityConfig.qml:22
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Medium"
 msgctxt "ActivityConfig|"
 msgid "Medium"
 msgstr "Normal"
 
 #: activities/bargame/ActivityConfig.qml:23
 #: activities/bargame_2players/ActivityConfig.qml:23
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Difficult"
 msgctxt "ActivityConfig|"
 msgid "Difficult"
 msgstr "Difícil"
 
 #: activities/bargame/ActivityConfig.qml:32
 #: activities/bargame_2players/ActivityConfig.qml:32
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Select your difficulty"
 msgctxt "ActivityConfig|"
 msgid "Select your difficulty"
 msgstr "Selecciona a túa dificultade"
@@ -2714,6 +2842,9 @@ msgstr ""
 #. Help goal
 #: activities/bargame/ActivityInfo.qml:21
 #: activities/bargame_2players/ActivityInfo.qml:20
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Don't put the ball in the last hole."
 msgctxt "ActivityInfo|"
 msgid "Don't put the ball in the last hole."
 msgstr "Non poñas a bóla no último buraco."
@@ -2721,6 +2852,9 @@ msgstr "Non poñas a bóla no último buraco."
 #. Help prerequisite
 #: activities/bargame/ActivityInfo.qml:23
 #: activities/bargame_2players/ActivityInfo.qml:22
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Ability to count."
 msgctxt "ActivityInfo|"
 msgid "Ability to count."
 msgstr "Habilidade para contar."
@@ -2786,12 +2920,18 @@ msgstr ""
 
 #. Help goal
 #: activities/binary_bulb/ActivityInfo.qml:20
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "To get familiar with the binary number system."
 msgctxt "ActivityInfo|"
 msgid "To get familiar with the binary number system."
 msgstr "Para familiarizarse co sistema de números binarios."
 
 #. Help prerequisite
 #: activities/binary_bulb/ActivityInfo.qml:22
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Decimal number system."
 msgctxt "ActivityInfo|"
 msgid "Decimal number system."
 msgstr "Sistema de numeración binario."
@@ -2856,6 +2996,11 @@ msgid "To convert a decimal 5 to a binary value, 1 and 4 are added."
 msgstr "Para converter un decimal 5 a un valor binario, súmanse 1 e 4."
 
 #: activities/binary_bulb/binary_bulb.js:44
+#, fuzzy
+#| msgctxt "binary_bulb|"
+#| msgid ""
+#| "Their corresponding bits are set to 1, the others are set to 0. Decimal 5 "
+#| "is equal to binary 101."
 msgctxt "binary_bulb|"
 msgid ""
 "Their corresponding bits are set to 1, the others are set to 0. Decimal 5 is "
@@ -2887,18 +3032,27 @@ msgstr "De 0 a 255 con"
 
 #. Activity title
 #: activities/braille_alphabets/ActivityInfo.qml:15
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Discover the braille system"
 msgctxt "ActivityInfo|"
 msgid "Discover the braille system"
 msgstr "Descobre o sistema braille"
 
 #. Help title
 #: activities/braille_alphabets/ActivityInfo.qml:17
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Learn and memorize the braille system."
 msgctxt "ActivityInfo|"
 msgid "Learn and memorize the braille system."
 msgstr "Aprende e memoriza o sistema braille."
 
 #. Help goal
 #: activities/braille_alphabets/ActivityInfo.qml:20
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Let children discover the braille system."
 msgctxt "ActivityInfo|"
 msgid "Let children discover the braille system."
 msgstr "Deixa que os nenos descubran o sistema braille."
@@ -2998,6 +3152,11 @@ msgid "Braille: Unlocking the Code"
 msgstr "Braille: Desbloqueando o código"
 
 #: activities/braille_alphabets/FirstScreen.qml:53
+#, fuzzy
+#| msgctxt "FirstScreen|"
+#| msgid ""
+#| "The braille system is a method that is used by blind people to read and "
+#| "write."
 msgctxt "FirstScreen|"
 msgid ""
 "The braille system is a method that is used by blind people to read and "
@@ -3007,6 +3166,12 @@ msgstr ""
 "visual para ler e escribir."
 
 #: activities/braille_alphabets/FirstScreen.qml:54
+#, fuzzy
+#| msgctxt "FirstScreen|"
+#| msgid ""
+#| "Each braille character, or cell, is made up of six dot positions, "
+#| "arranged in a rectangle containing two columns of three dots each. As "
+#| "seen on the left, each dot is referenced by a number from 1 to 6."
 msgctxt "FirstScreen|"
 msgid ""
 "Each braille character, or cell, is made up of six dot positions, arranged "
@@ -3019,6 +3184,10 @@ msgstr ""
 "seis."
 
 #: activities/braille_alphabets/FirstScreen.qml:78
+#, fuzzy
+#| msgctxt "FirstScreen|"
+#| msgid ""
+#| "When you are ready, click on me and try reproducing braille characters."
 msgctxt "FirstScreen|"
 msgid "When you are ready, click on me and try reproducing braille characters."
 msgstr ""
@@ -3144,12 +3313,18 @@ msgstr "Le as instrucións e selecciona a data correcta no calendario."
 
 #. Help goal
 #: activities/calendar/ActivityInfo.qml:20
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Learn how to use a calendar."
 msgctxt "ActivityInfo|"
 msgid "Learn how to use a calendar."
 msgstr "Aprende a usar un calendario."
 
 #. Help prerequisite
 #: activities/calendar/ActivityInfo.qml:22
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Concept of week, month and year."
 msgctxt "ActivityInfo|"
 msgid "Concept of week, month and year."
 msgstr "Conceptos de semana, mes e ano."
@@ -3242,91 +3417,145 @@ msgid "Which day of the week is the 4th of the given month?"
 msgstr "Que día da semana é o 12º do mes indicado?"
 
 #: activities/calendar/calendar_dataset.js:79
+#, fuzzy
+#| msgctxt "calendar_dataset|"
+#| msgid "Which day of the week is the 12th of the given month?"
 msgctxt "calendar_dataset|"
 msgid "Which day of the week is the 12th of the given month?"
 msgstr "Que día da semana é o 12º do mes indicado?"
 
 #: activities/calendar/calendar_dataset.js:83
+#, fuzzy
+#| msgctxt "calendar_dataset|"
+#| msgid "Which day of the week is the 20th of the given month?"
 msgctxt "calendar_dataset|"
 msgid "Which day of the week is the 20th of the given month?"
 msgstr "Que día da semana é o 20º do mes indicado?"
 
 #: activities/calendar/calendar_dataset.js:87
+#, fuzzy
+#| msgctxt "calendar_dataset|"
+#| msgid "Which day of the week is the 28th of the given month?"
 msgctxt "calendar_dataset|"
 msgid "Which day of the week is the 28th of the given month?"
 msgstr "Que día da semana é o 28º do mes indicado?"
 
 #: activities/calendar/calendar_dataset.js:91
+#, fuzzy
+#| msgctxt "calendar_dataset|"
+#| msgid "Which day of the week is the 22nd of the given month?"
 msgctxt "calendar_dataset|"
 msgid "Which day of the week is the 22nd of the given month?"
 msgstr "Que día da semana é o 22º do mes indicado?"
 
 #: activities/calendar/calendar_dataset.js:95
+#, fuzzy
+#| msgctxt "calendar_dataset|"
+#| msgid "Which day of the week is the 16th of the given month?"
 msgctxt "calendar_dataset|"
 msgid "Which day of the week is the 16th of the given month?"
 msgstr "Que día da semana é o 16º do mes indicado?"
 
 #: activities/calendar/calendar_dataset.js:99
+#, fuzzy
+#| msgctxt "calendar_dataset|"
+#| msgid "Which day of the week is the 10th of the given month?"
 msgctxt "calendar_dataset|"
 msgid "Which day of the week is the 10th of the given month?"
 msgstr "Que día da semana é o 10º do mes indicado?"
 
 #: activities/calendar/calendar_dataset.js:119
+#, fuzzy
+#| msgctxt "calendar_dataset|"
+#| msgid "Select a Monday between days 1 and 7 of the given month"
 msgctxt "calendar_dataset|"
 msgid "Select a Monday between days 1 and 7 of the given month"
 msgstr "Selecciona un luns entre os días 1 e 7 do mes indicado"
 
 #: activities/calendar/calendar_dataset.js:123
+#, fuzzy
+#| msgctxt "calendar_dataset|"
+#| msgid "Select a Tuesday between days 8 and 16 of the given month"
 msgctxt "calendar_dataset|"
 msgid "Select a Tuesday between days 8 and 16 of the given month"
 msgstr "Selecciona un martes entre os días 8 e 16 do mes indicado"
 
 #: activities/calendar/calendar_dataset.js:127
+#, fuzzy
+#| msgctxt "calendar_dataset|"
+#| msgid "Select a Wednesday between days 15 and 22 of the given month"
 msgctxt "calendar_dataset|"
 msgid "Select a Wednesday between days 15 and 22 of the given month"
 msgstr "Selecciona un mércores entre os días 15 e 22 do mes indicado"
 
 #: activities/calendar/calendar_dataset.js:131
+#, fuzzy
+#| msgctxt "calendar_dataset|"
+#| msgid "Select a Thursday between days 26 and 31 of the given month"
 msgctxt "calendar_dataset|"
 msgid "Select a Thursday between days 26 and 31 of the given month"
 msgstr "Selecciona un xoves entre os días 26 e 31 do mes indicado"
 
 #: activities/calendar/calendar_dataset.js:135
+#, fuzzy
+#| msgctxt "calendar_dataset|"
+#| msgid "Select a Friday between days 20 and 25 of the given month"
 msgctxt "calendar_dataset|"
 msgid "Select a Friday between days 20 and 25 of the given month"
 msgstr "Selecciona un venres entre os días 20 e 25 do mes indicado"
 
 #: activities/calendar/calendar_dataset.js:139
+#, fuzzy
+#| msgctxt "calendar_dataset|"
+#| msgid "Select a Saturday between days 13 and 23 of the given month"
 msgctxt "calendar_dataset|"
 msgid "Select a Saturday between days 13 and 23 of the given month"
 msgstr "Selecciona un sábado entre os días 13 e 23 do mes indicado"
 
 #: activities/calendar/calendar_dataset.js:143
+#, fuzzy
+#| msgctxt "calendar_dataset|"
+#| msgid "Select a Sunday between days 5 and 17 of the given month"
 msgctxt "calendar_dataset|"
 msgid "Select a Sunday between days 5 and 17 of the given month"
 msgstr "Selecciona un domingo entre os días 5 e 17 do mes indicado"
 
 #: activities/calendar/calendar_dataset.js:162
+#, fuzzy
+#| msgctxt "calendar_dataset|"
+#| msgid "Select the second day before the 15th of the given month"
 msgctxt "calendar_dataset|"
 msgid "Select the second day before the 15th of the given month"
 msgstr "Selecciona o segundo día antes do día 15 do mes indicado"
 
 #: activities/calendar/calendar_dataset.js:166
+#, fuzzy
+#| msgctxt "calendar_dataset|"
+#| msgid "Select the fourth Sunday of the given month"
 msgctxt "calendar_dataset|"
 msgid "Select the fourth Sunday of the given month"
 msgstr "Seleccione o cuarto domingo do mes indicado"
 
 #: activities/calendar/calendar_dataset.js:170
+#, fuzzy
+#| msgctxt "calendar_dataset|"
+#| msgid "Select the day one week after 13th of the given month"
 msgctxt "calendar_dataset|"
 msgid "Select the day one week after 13th of the given month"
 msgstr "Selecciona o día unha semana despois do día 13 do mes indicado"
 
 #: activities/calendar/calendar_dataset.js:174
+#, fuzzy
+#| msgctxt "calendar_dataset|"
+#| msgid "Select the fifth Thursday of the given month"
 msgctxt "calendar_dataset|"
 msgid "Select the fifth Thursday of the given month"
 msgstr "Selecciona o quinto xoves do mes indicado"
 
 #: activities/calendar/calendar_dataset.js:178
+#, fuzzy
+#| msgctxt "calendar_dataset|"
+#| msgid "Select the third day after 27th of the given month"
 msgctxt "calendar_dataset|"
 msgid "Select the third day after 27th of the given month"
 msgstr "Selecciona o terceiro día despois do 27 do mes indicado"
@@ -3466,6 +3695,11 @@ msgstr ""
 "<br>Atopa a data do día internacional da muller en 2018."
 
 #: activities/calendar/calendar_dataset.js:300
+#, fuzzy
+#| msgctxt "calendar_dataset|"
+#| msgid ""
+#| "The sports competition was held on last Friday of September 2017.<br> "
+#| "Select the date of the sports competition on the calendar."
 msgctxt "calendar_dataset|"
 msgid ""
 "The sports competition was held on last Friday of September 2017.<br> Select "
@@ -3498,6 +3732,11 @@ msgstr ""
 
 #. Help manual
 #: activities/canal_lock/ActivityInfo.qml:24
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "You are in charge of the canal lock. Open the gates and the locks in the "
+#| "right order, so that Tux can travel through the gates in both directions."
 msgctxt "ActivityInfo|"
 msgid ""
 "You are in charge of the canal lock. Open the gates and the locks in the "
@@ -3522,6 +3761,12 @@ msgstr ""
 "dispoñíbeis."
 
 #: activities/canal_lock/CanalLock.qml:56
+#, fuzzy
+#| msgctxt "CanalLock|"
+#| msgid ""
+#| "The vertical colored bars represent the water locks, which can be "
+#| "operated by clicking on them. Two locks of the same type cannot be "
+#| "operated simultaneously."
 msgctxt "CanalLock|"
 msgid ""
 "The vertical colored bars represent the water locks, which can be operated "
@@ -3532,6 +3777,11 @@ msgstr ""
 "preméndoas. Dúas esclusas do mesmo tipo non poden operarse simultaneamente."
 
 #: activities/canal_lock/CanalLock.qml:58
+#, fuzzy
+#| msgctxt "CanalLock|"
+#| msgid ""
+#| "The water level inside the lock will change according to the side of the "
+#| "canal it is connected to. Use this property to help Tux get the job done."
 msgctxt "CanalLock|"
 msgid ""
 "The water level inside the lock will change according to the side of the "
@@ -3541,16 +3791,25 @@ msgstr ""
 "está conectada. Use esta propiedade para axudar a Tux a completar o traballo."
 
 #: activities/categorization/ActivityConfig.qml:39
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Put together all the items from a category (with score)"
 msgctxt "ActivityConfig|"
 msgid "Put together all the items from a category (with score)"
 msgstr "Xuntar todos os elementos dunha categoría (con puntuación)"
 
 #: activities/categorization/ActivityConfig.qml:52
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Put together all the items from a category (without score)"
 msgctxt "ActivityConfig|"
 msgid "Put together all the items from a category (without score)"
 msgstr "Xuntar todos os elementos dunha categoría (sen puntuación)"
 
 #: activities/categorization/ActivityConfig.qml:65
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Discover a category, grouping items together"
 msgctxt "ActivityConfig|"
 msgid "Discover a category, grouping items together"
 msgstr "Descubre unha categoría agrupando elementos"
@@ -3563,12 +3822,18 @@ msgstr "Agrupar"
 
 #. Help title
 #: activities/categorization/ActivityInfo.qml:17
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Categorize the items into correct and incorrect groups."
 msgctxt "ActivityInfo|"
 msgid "Categorize the items into correct and incorrect groups."
 msgstr "Agrupa os elementos correctos e incorrectos."
 
 #. Help goal
 #: activities/categorization/ActivityInfo.qml:20
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Build conceptual thinking and enrich knowledge."
 msgctxt "ActivityInfo|"
 msgid "Build conceptual thinking and enrich knowledge."
 msgstr "Practica o pensamento conceptual e adquire novos coñecementos."
@@ -3584,6 +3849,10 @@ msgstr "Podes arrastrar elementos co rato"
 
 #. Help manual
 #: activities/categorization/ActivityInfo.qml:24
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "Review the instructions and then drag and drop the items as specified."
 msgctxt "ActivityInfo|"
 msgid "Review the instructions and then drag and drop the items as specified."
 msgstr ""
@@ -3701,6 +3970,10 @@ msgid "Colors"
 msgstr "Cores"
 
 #: activities/categorization/resource/board/category_colors.qml:23
+#, fuzzy
+#| msgctxt "category_colors|"
+#| msgid ""
+#| "Place the objects matching GREEN color to the right and others to the left"
 msgctxt "category_colors|"
 msgid ""
 "Place the objects matching GREEN color to the right and others to the left"
@@ -3709,6 +3982,10 @@ msgstr ""
 "esquerda"
 
 #: activities/categorization/resource/board/category_colors.qml:32
+#, fuzzy
+#| msgctxt "category_colors|"
+#| msgid ""
+#| "Place the objects matching WHITE color to the right and others to the left"
 msgctxt "category_colors|"
 msgid ""
 "Place the objects matching WHITE color to the right and others to the left"
@@ -3717,6 +3994,10 @@ msgstr ""
 "na esquerda"
 
 #: activities/categorization/resource/board/category_colors.qml:41
+#, fuzzy
+#| msgctxt "category_colors|"
+#| msgid ""
+#| "Place the objects matching PINK color to the right and others to the left"
 msgctxt "category_colors|"
 msgid ""
 "Place the objects matching PINK color to the right and others to the left"
@@ -3725,6 +4006,10 @@ msgstr ""
 "esquerda"
 
 #: activities/categorization/resource/board/category_colors.qml:51
+#, fuzzy
+#| msgctxt "category_colors|"
+#| msgid ""
+#| "Place the objects matching RED color to the right and others to the left"
 msgctxt "category_colors|"
 msgid ""
 "Place the objects matching RED color to the right and others to the left"
@@ -3733,6 +4018,10 @@ msgstr ""
 "na esquerda"
 
 #: activities/categorization/resource/board/category_colors.qml:60
+#, fuzzy
+#| msgctxt "category_colors|"
+#| msgid ""
+#| "Place the objects matching BROWN color to the right and others to the left"
 msgctxt "category_colors|"
 msgid ""
 "Place the objects matching BROWN color to the right and others to the left"
@@ -3741,6 +4030,11 @@ msgstr ""
 "na esquerda"
 
 #: activities/categorization/resource/board/category_colors.qml:69
+#, fuzzy
+#| msgctxt "category_colors|"
+#| msgid ""
+#| "Place the objects matching PURPLE color to the right and others to the "
+#| "left"
 msgctxt "category_colors|"
 msgid ""
 "Place the objects matching PURPLE color to the right and others to the left"
@@ -3749,6 +4043,10 @@ msgstr ""
 "na esquerda"
 
 #: activities/categorization/resource/board/category_colors.qml:79
+#, fuzzy
+#| msgctxt "category_colors|"
+#| msgid ""
+#| "Place the objects matching GREY color to the right and others to the left"
 msgctxt "category_colors|"
 msgid ""
 "Place the objects matching GREY color to the right and others to the left"
@@ -3757,6 +4055,11 @@ msgstr ""
 "esquerda"
 
 #: activities/categorization/resource/board/category_colors.qml:88
+#, fuzzy
+#| msgctxt "category_colors|"
+#| msgid ""
+#| "Place the objects matching ORANGE color to the right and others to the "
+#| "left"
 msgctxt "category_colors|"
 msgid ""
 "Place the objects matching ORANGE color to the right and others to the left"
@@ -3765,6 +4068,11 @@ msgstr ""
 "na esquerda"
 
 #: activities/categorization/resource/board/category_colors.qml:97
+#, fuzzy
+#| msgctxt "category_colors|"
+#| msgid ""
+#| "Place the objects matching YELLOW color to the right and others to the "
+#| "left"
 msgctxt "category_colors|"
 msgid ""
 "Place the objects matching YELLOW color to the right and others to the left"
@@ -3948,6 +4256,9 @@ msgstr "Números pares e impares"
 #: activities/categorization/resource/board/category_odd_even.qml:51
 #: activities/categorization/resource/board/category_odd_even.qml:60
 #: activities/categorization/resource/board/category_odd_even.qml:69
+#, fuzzy
+#| msgctxt "category_odd_even|"
+#| msgid "Place the EVEN Numbers to the right and the ODD Numbers to the left"
 msgctxt "category_odd_even|"
 msgid "Place the EVEN Numbers to the right and the ODD Numbers to the left"
 msgstr "Coloca os números PARES na dereita e os números IMPARES na esquerda"
@@ -3985,6 +4296,10 @@ msgstr ""
 "esquerda"
 
 #: activities/categorization/resource/board/category_shapes.qml:34
+#, fuzzy
+#| msgctxt "category_shapes|"
+#| msgid ""
+#| "Place the objects matching a RECTANGLE to the right and others to the left"
 msgctxt "category_shapes|"
 msgid ""
 "Place the objects matching a RECTANGLE to the right and others to the left"
@@ -3993,6 +4308,10 @@ msgstr ""
 "na esquerda"
 
 #: activities/categorization/resource/board/category_shapes.qml:43
+#, fuzzy
+#| msgctxt "category_shapes|"
+#| msgid ""
+#| "Place the objects matching a SPHERE to the right and others to the left"
 msgctxt "category_shapes|"
 msgid "Place the objects matching a SPHERE to the right and others to the left"
 msgstr ""
@@ -4000,6 +4319,10 @@ msgstr ""
 "esquerda"
 
 #: activities/categorization/resource/board/category_shapes.qml:52
+#, fuzzy
+#| msgctxt "category_shapes|"
+#| msgid ""
+#| "Place the objects matching a TRAPEZOID to the right and others to the left"
 msgctxt "category_shapes|"
 msgid ""
 "Place the objects matching a TRAPEZOID to the right and others to the left"
@@ -4008,6 +4331,10 @@ msgstr ""
 "na esquerda"
 
 #: activities/categorization/resource/board/category_shapes.qml:61
+#, fuzzy
+#| msgctxt "category_shapes|"
+#| msgid ""
+#| "Place the objects matching a TRIANGLE to the right and others to the left"
 msgctxt "category_shapes|"
 msgid ""
 "Place the objects matching a TRIANGLE to the right and others to the left"
@@ -4016,6 +4343,11 @@ msgstr ""
 "esquerda"
 
 #: activities/categorization/resource/board/category_shapes.qml:70
+#, fuzzy
+#| msgctxt "category_shapes|"
+#| msgid ""
+#| "Place the objects matching a SEMICIRCLE to the right and others to the "
+#| "left"
 msgctxt "category_shapes|"
 msgid ""
 "Place the objects matching a SEMICIRCLE to the right and others to the left"
@@ -4024,6 +4356,10 @@ msgstr ""
 "na esquerda"
 
 #: activities/categorization/resource/board/category_shapes.qml:79
+#, fuzzy
+#| msgctxt "category_shapes|"
+#| msgid ""
+#| "Place the objects matching a PENTAGON to the right and others to the left"
 msgctxt "category_shapes|"
 msgid ""
 "Place the objects matching a PENTAGON to the right and others to the left"
@@ -4032,6 +4368,10 @@ msgstr ""
 "esquerda"
 
 #: activities/categorization/resource/board/category_shapes.qml:88
+#, fuzzy
+#| msgctxt "category_shapes|"
+#| msgid ""
+#| "Place the objects matching a SQUARE to the right and others to the left"
 msgctxt "category_shapes|"
 msgid "Place the objects matching a SQUARE to the right and others to the left"
 msgstr ""
@@ -4039,6 +4379,10 @@ msgstr ""
 "esquerda"
 
 #: activities/categorization/resource/board/category_shapes.qml:97
+#, fuzzy
+#| msgctxt "category_shapes|"
+#| msgid ""
+#| "Place the objects matching a CONE to the right and others to the left"
 msgctxt "category_shapes|"
 msgid "Place the objects matching a CONE to the right and others to the left"
 msgstr ""
@@ -4046,6 +4390,11 @@ msgstr ""
 "esquerda"
 
 #: activities/categorization/resource/board/category_shapes.qml:106
+#, fuzzy
+#| msgctxt "category_shapes|"
+#| msgid ""
+#| "Place the objects matching a PARALLELOGRAM to the right and others to the "
+#| "left"
 msgctxt "category_shapes|"
 msgid ""
 "Place the objects matching a PARALLELOGRAM to the right and others to the "
@@ -4055,6 +4404,10 @@ msgstr ""
 "resto na esquerda"
 
 #: activities/categorization/resource/board/category_shapes.qml:115
+#, fuzzy
+#| msgctxt "category_shapes|"
+#| msgid ""
+#| "Place the objects matching a HEPTAGON to the right and others to the left"
 msgctxt "category_shapes|"
 msgid ""
 "Place the objects matching a HEPTAGON to the right and others to the left"
@@ -4063,6 +4416,10 @@ msgstr ""
 "esquerda"
 
 #: activities/categorization/resource/board/category_shapes.qml:124
+#, fuzzy
+#| msgctxt "category_shapes|"
+#| msgid ""
+#| "Place the objects matching a CUBE to the right and others to the left"
 msgctxt "category_shapes|"
 msgid "Place the objects matching a CUBE to the right and others to the left"
 msgstr ""
@@ -4070,6 +4427,10 @@ msgstr ""
 "esquerda"
 
 #: activities/categorization/resource/board/category_shapes.qml:133
+#, fuzzy
+#| msgctxt "category_shapes|"
+#| msgid ""
+#| "Place the objects matching a RHOMBUS to the right and others to the left"
 msgctxt "category_shapes|"
 msgid ""
 "Place the objects matching a RHOMBUS to the right and others to the left"
@@ -4078,6 +4439,10 @@ msgstr ""
 "esquerda"
 
 #: activities/categorization/resource/board/category_shapes.qml:142
+#, fuzzy
+#| msgctxt "category_shapes|"
+#| msgid ""
+#| "Place the objects matching a NONAGON to the right and others to the left"
 msgctxt "category_shapes|"
 msgid ""
 "Place the objects matching a NONAGON to the right and others to the left"
@@ -4086,6 +4451,10 @@ msgstr ""
 "esquerda"
 
 #: activities/categorization/resource/board/category_shapes.qml:151
+#, fuzzy
+#| msgctxt "category_shapes|"
+#| msgid ""
+#| "Place the objects matching a CUBOID to the right and others to the left"
 msgctxt "category_shapes|"
 msgid "Place the objects matching a CUBOID to the right and others to the left"
 msgstr ""
@@ -4093,6 +4462,10 @@ msgstr ""
 "esquerda"
 
 #: activities/categorization/resource/board/category_shapes.qml:160
+#, fuzzy
+#| msgctxt "category_shapes|"
+#| msgid ""
+#| "Place the objects matching a HEXAGON to the right and others to the left"
 msgctxt "category_shapes|"
 msgid ""
 "Place the objects matching a HEXAGON to the right and others to the left"
@@ -4101,6 +4474,10 @@ msgstr ""
 "esquerda"
 
 #: activities/categorization/resource/board/category_shapes.qml:169
+#, fuzzy
+#| msgctxt "category_shapes|"
+#| msgid ""
+#| "Place the objects matching an OCTAGON to the right and others to the left"
 msgctxt "category_shapes|"
 msgid ""
 "Place the objects matching an OCTAGON to the right and others to the left"
@@ -4109,6 +4486,10 @@ msgstr ""
 "esquerda"
 
 #: activities/categorization/resource/board/category_shapes.qml:178
+#, fuzzy
+#| msgctxt "category_shapes|"
+#| msgid ""
+#| "Place the objects matching a CYLINDER to the right and others to the left"
 msgctxt "category_shapes|"
 msgid ""
 "Place the objects matching a CYLINDER to the right and others to the left"
@@ -4117,6 +4498,10 @@ msgstr ""
 "esquerda"
 
 #: activities/categorization/resource/board/category_shapes.qml:187
+#, fuzzy
+#| msgctxt "category_shapes|"
+#| msgid ""
+#| "Place the objects matching a DECAGON to the right and others to the left"
 msgctxt "category_shapes|"
 msgid ""
 "Place the objects matching a DECAGON to the right and others to the left"
@@ -4575,6 +4960,9 @@ msgstr "Final dunha partida de xadrez"
 
 #. Help title
 #: activities/chess_partyend/ActivityInfo.qml:17
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Play the end of the chess game against Tux."
 msgctxt "ActivityInfo|"
 msgid "Play the end of the chess game against Tux."
 msgstr "Xogar o final dunha partida de xadrez contra Tux."
@@ -4641,12 +5029,18 @@ msgstr "Cronos"
 
 #. Help title
 #: activities/chronos/ActivityInfo.qml:21
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Drag and Drop the items to organize the story."
 msgctxt "ActivityInfo|"
 msgid "Drag and Drop the items to organize the story."
 msgstr "Arrastra e solta os elementos para organizar a historia."
 
 #. Help goal
 #: activities/chronos/ActivityInfo.qml:24
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Sort the pictures into the order that tells the story."
 msgctxt "ActivityInfo|"
 msgid "Sort the pictures into the order that tells the story."
 msgstr "Coloca as imaxes na orde na que narran a historia."
@@ -4654,6 +5048,9 @@ msgstr "Coloca as imaxes na orde na que narran a historia."
 #. Help prerequisite
 #: activities/chronos/ActivityInfo.qml:26
 #: activities/ordering_chronology/ActivityInfo.qml:28
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Tell a short story."
 msgctxt "ActivityInfo|"
 msgid "Tell a short story."
 msgstr "Narra unha historia curta."
@@ -4674,6 +5071,13 @@ msgid "Then, click on the OK button to validate your answer."
 msgstr ""
 
 #: activities/chronos/ActivityInfo.qml:29
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "Moon photo is copyright NASA. The space sounds come from Tuxpaint and "
+#| "Vegastrike which are released under the GPL license. The transportation "
+#| "images are copyright Franck Doucet. Dates of Transportation are based on "
+#| "those found in &lt;https://www.wikipedia.org&gt;."
 msgctxt "ActivityInfo|"
 msgid ""
 "Moon photo is copyright NASA. The space sounds come from Tuxpaint and "
@@ -4990,6 +5394,9 @@ msgstr "Citroën DS 19 de 1955"
 #: activities/readingh/ActivityConfig.qml:38
 #: activities/readingv/ActivityConfig.qml:38
 #: activities/wordsgame/ActivityConfig.qml:40
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Select your locale"
 msgctxt "ActivityConfig|"
 msgid "Select your locale"
 msgstr "Selecciona a túa configuración rexional"
@@ -5013,6 +5420,9 @@ msgstr "Escoita unha letra e preme a correcta"
 #. Help goal
 #: activities/click_on_letter/ActivityInfo.qml:20
 #: activities/click_on_letter_up/ActivityInfo.qml:20
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Letter-name recognition."
 msgctxt "ActivityInfo|"
 msgid "Letter-name recognition."
 msgstr "Recoñecemento dos nomes das letras."
@@ -5027,6 +5437,11 @@ msgstr "Recoñecemento visual das letras."
 #. Help manual
 #: activities/click_on_letter/ActivityInfo.qml:24
 #: activities/click_on_letter_up/ActivityInfo.qml:24
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "A letter is spoken. Click on the matching letter in the main area. You "
+#| "can listen to the letter again by clicking on the mouth icon."
 msgctxt "ActivityInfo|"
 msgid ""
 "A letter is spoken. Click on the matching letter in the main area. You can "
@@ -5064,6 +5479,9 @@ msgstr "Preme nunha letra en maiúscula"
 #: activities/erase_2clic/ActivityConfig.qml:21
 #: activities/erase_clic/ActivityConfig.qml:21
 #: activities/number_sequence/ActivityConfig.qml:21
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Automatic"
 msgctxt "ActivityConfig|"
 msgid "Automatic"
 msgstr "Automático"
@@ -5075,6 +5493,9 @@ msgstr "Automático"
 #: activities/erase_2clic/ActivityConfig.qml:22
 #: activities/erase_clic/ActivityConfig.qml:22
 #: activities/number_sequence/ActivityConfig.qml:22
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Manual"
 msgctxt "ActivityConfig|"
 msgid "Manual"
 msgstr "Manual"
@@ -5086,6 +5507,9 @@ msgstr "Manual"
 #: activities/erase_2clic/ActivityConfig.qml:31
 #: activities/erase_clic/ActivityConfig.qml:31
 #: activities/number_sequence/ActivityConfig.qml:31
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Go to the next level"
 msgctxt "ActivityConfig|"
 msgid "Go to the next level"
 msgstr "Ir ao seguinte nivel"
@@ -5129,6 +5553,9 @@ msgstr "Preme min"
 
 #. Help title
 #: activities/clickgame/ActivityInfo.qml:17
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Catch all the swimming fish before they leave the fish tank."
 msgctxt "ActivityInfo|"
 msgid "Catch all the swimming fish before they leave the fish tank."
 msgstr "Colle todos os peixes antes de que saian do acuario."
@@ -5141,6 +5568,9 @@ msgstr "Coordinación motriz: mover a man con precisión."
 
 #. Help prerequisite
 #: activities/clickgame/ActivityInfo.qml:22
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Can move mouse and click on the correct place."
 msgctxt "ActivityInfo|"
 msgid "Can move mouse and click on the correct place."
 msgstr "Podes mover o rato e premer o lugar correcto."
@@ -5192,6 +5622,9 @@ msgstr "Aprendendo o reloxo"
 
 #. Help title
 #: activities/clockgame/ActivityInfo.qml:17
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Learn how to tell the time on an analog clock."
 msgctxt "ActivityInfo|"
 msgid "Learn how to tell the time on an analog clock."
 msgstr "Aprende a dicir a hora nun reloxo analóxico."
@@ -5318,6 +5751,9 @@ msgstr "Descubre a mestura de cores."
 #. Help goal
 #: activities/color_mix/ActivityInfo.qml:20
 #: activities/color_mix_light/ActivityInfo.qml:20
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Mix primary colors to match the given color."
 msgctxt "ActivityInfo|"
 msgid "Mix primary colors to match the given color."
 msgstr "Mestura as cores primarias para coincidir coa cor indicada."
@@ -5501,6 +5937,9 @@ msgstr "Cores"
 
 #. Help title
 #: activities/colors/ActivityInfo.qml:17
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Click on the right color."
 msgctxt "ActivityInfo|"
 msgid "Click on the right color."
 msgstr "Preme a cor correcta."
@@ -5516,6 +5955,9 @@ msgstr "A actividade ensina os números pares e impares."
 
 #. Help prerequisite
 #: activities/colors/ActivityInfo.qml:22
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Identifying colors."
 msgctxt "ActivityInfo|"
 msgid "Identifying colors."
 msgstr "Identificar cores."
@@ -5599,6 +6041,9 @@ msgid ""
 msgstr ""
 
 #: activities/colors/FindIt.qml:236
+#, fuzzy
+#| msgctxt "FindIt|"
+#| msgid "Quit"
 msgctxt "FindIt|"
 msgid "Quit"
 msgstr "Saír"
@@ -5753,6 +6198,9 @@ msgstr "Constrúe o mesmo modelo"
 
 #. Help title
 #: activities/crane/ActivityInfo.qml:22
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Drive the crane and copy the model."
 msgctxt "ActivityInfo|"
 msgid "Drive the crane and copy the model."
 msgstr "Copia o modelo conducindo o guindastre."
@@ -5768,6 +6216,9 @@ msgstr "Coordinación motriz fina"
 
 #. Help prerequisite
 #: activities/crane/ActivityInfo.qml:27
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Mouse/keyboard manipulation."
 msgctxt "ActivityInfo|"
 msgid "Mouse/keyboard manipulation."
 msgstr "Manexo do rato e o teclado."
@@ -6006,6 +6457,10 @@ msgid "Vincent van Gogh, Portrait of Pere Tanguy 1887-8"
 msgstr "Vincent van Gogh, Retrato de Pere Tanguy 1887-8"
 
 #: activities/details/resource/board/board9_0.qml:14
+#, fuzzy
+#| msgctxt "board9_0|"
+#| msgid ""
+#| "Notre Dame de Paris cathedral on the Île de la Cité in Paris, France."
 msgctxt "board9_0|"
 msgid "Notre Dame de Paris cathedral on the Île de la Cité in Paris, France."
 msgstr ""
@@ -6022,12 +6477,18 @@ msgstr "Electricidade dixital"
 
 #. Help title
 #: activities/digital_electricity/ActivityInfo.qml:17
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Create and simulate a digital electric schema."
 msgctxt "ActivityInfo|"
 msgid "Create and simulate a digital electric schema."
 msgstr "Crear e simular un esquema eléctrico dixital."
 
 #. Help goal
 #: activities/digital_electricity/ActivityInfo.qml:20
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Create a digital electric schema with a real time simulation of it."
 msgctxt "ActivityInfo|"
 msgid "Create a digital electric schema with a real time simulation of it."
 msgstr "Crear un esquema eléctrico dixital cunha simulación súa en tempo real."
@@ -6182,6 +6643,13 @@ msgstr ""
 "entre o 0 e o 9. A saída do convertedor de BCD a 7 segmentos é:"
 
 #: activities/digital_electricity/components/Comparator.qml:22
+#, fuzzy
+#| msgctxt "Comparator|"
+#| msgid ""
+#| "A comparator takes 2 numbers as input, A and B. It compares them and "
+#| "outputs 3 values. The first output is 1 if A < B, otherwise it's 0. The "
+#| "second output is 1 if A = B, otherwise it's 0. The third output is 1 if A "
+#| "> B, otherwise it's 0. "
 msgctxt "Comparator|"
 msgid ""
 "A comparator takes 2 numbers as input, A and B. It compares them and outputs "
@@ -6195,6 +6663,11 @@ msgstr ""
 "contrario."
 
 #: activities/digital_electricity/components/DigitalLight.qml:21
+#, fuzzy
+#| msgctxt "DigitalLight|"
+#| msgid ""
+#| "A digital light is used to check the output of other digital components. "
+#| "It turns green if the input is 1, and turns red if the input is 0."
 msgctxt "DigitalLight|"
 msgid ""
 "A digital light is used to check the output of other digital components. It "
@@ -6204,6 +6677,12 @@ msgstr ""
 "Vólvese verde se a entrada é 1, e vólvese vermello se a entrada é 0."
 
 #: activities/digital_electricity/components/NandGate.qml:21
+#, fuzzy
+#| msgctxt "NandGate|"
+#| msgid ""
+#| "A NAND gate outputs the opposite of an AND gate. If all the inputs are 1, "
+#| "the output is equal to 0 and as soon as one input is equal to 0 it gives "
+#| "a 1:"
 msgctxt "NandGate|"
 msgid ""
 "A NAND gate outputs the opposite of an AND gate. If all the inputs are 1, "
@@ -6218,6 +6697,12 @@ msgid "NOT (A AND B)"
 msgstr "NOT (A AND B)"
 
 #: activities/digital_electricity/components/NorGate.qml:21
+#, fuzzy
+#| msgctxt "NorGate|"
+#| msgid ""
+#| "A NOR gate outputs the opposite of an OR gate. As soon as there is a 1 in "
+#| "an input the output is equal to 0. To obtain a 1 all the inputs must be "
+#| "equal to 0:"
 msgctxt "NorGate|"
 msgid ""
 "A NOR gate outputs the opposite of an OR gate. As soon as there is a 1 in an "
@@ -6233,6 +6718,11 @@ msgid "NOT (A OR B)"
 msgstr "NOT (A OR B)"
 
 #: activities/digital_electricity/components/NotGate.qml:20
+#, fuzzy
+#| msgctxt "NotGate|"
+#| msgid ""
+#| "A Not gate (also known as inverter) outputs the opposite of the input. An "
+#| "input 0 gives an output 1. An Input 1 gives an output 0:"
 msgctxt "NotGate|"
 msgid ""
 "A Not gate (also known as inverter) outputs the opposite of the input. An "
@@ -6406,71 +6896,113 @@ msgid "Output"
 msgstr "Saída"
 
 #: activities/digital_electricity/TutorialDataset.qml:19
+#, fuzzy
+#| msgctxt "TutorialDataset|"
+#| msgid "Zero input"
 msgctxt "TutorialDataset|"
 msgid "Zero input"
 msgstr "Cero entradas"
 
 #: activities/digital_electricity/TutorialDataset.qml:26
+#, fuzzy
+#| msgctxt "TutorialDataset|"
+#| msgid "One input"
 msgctxt "TutorialDataset|"
 msgid "One input"
 msgstr "Unha entrada"
 
 #: activities/digital_electricity/TutorialDataset.qml:33
+#, fuzzy
+#| msgctxt "TutorialDataset|"
+#| msgid "Digital light"
 msgctxt "TutorialDataset|"
 msgid "Digital light"
 msgstr "Luz dixital"
 
 #: activities/digital_electricity/TutorialDataset.qml:40
+#, fuzzy
+#| msgctxt "TutorialDataset|"
+#| msgid "AND gate"
 msgctxt "TutorialDataset|"
 msgid "AND gate"
 msgstr "Porta AND"
 
 #: activities/digital_electricity/TutorialDataset.qml:47
+#, fuzzy
+#| msgctxt "TutorialDataset|"
+#| msgid "OR gate"
 msgctxt "TutorialDataset|"
 msgid "OR gate"
 msgstr "Porta OR"
 
 #: activities/digital_electricity/TutorialDataset.qml:54
+#, fuzzy
+#| msgctxt "TutorialDataset|"
+#| msgid "NOT gate"
 msgctxt "TutorialDataset|"
 msgid "NOT gate"
 msgstr "Porta NOT"
 
 #: activities/digital_electricity/TutorialDataset.qml:61
+#, fuzzy
+#| msgctxt "TutorialDataset|"
+#| msgid "XOR gate"
 msgctxt "TutorialDataset|"
 msgid "XOR gate"
 msgstr "Porta XOR"
 
 #: activities/digital_electricity/TutorialDataset.qml:68
+#, fuzzy
+#| msgctxt "TutorialDataset|"
+#| msgid "NAND gate"
 msgctxt "TutorialDataset|"
 msgid "NAND gate"
 msgstr "Porta NAND"
 
 #: activities/digital_electricity/TutorialDataset.qml:75
+#, fuzzy
+#| msgctxt "TutorialDataset|"
+#| msgid "NOR gate"
 msgctxt "TutorialDataset|"
 msgid "NOR gate"
 msgstr "Porta NOR"
 
 #: activities/digital_electricity/TutorialDataset.qml:89
+#, fuzzy
+#| msgctxt "TutorialDataset|"
+#| msgid "Comparator"
 msgctxt "TutorialDataset|"
 msgid "Comparator"
 msgstr "Comparador"
 
 #: activities/digital_electricity/TutorialDataset.qml:96
+#, fuzzy
+#| msgctxt "TutorialDataset|"
+#| msgid "BCD to 7 segment"
 msgctxt "TutorialDataset|"
 msgid "BCD to 7 segment"
 msgstr "BCD a 7 segmentos"
 
 #: activities/digital_electricity/TutorialDataset.qml:103
+#, fuzzy
+#| msgctxt "TutorialDataset|"
+#| msgid "7 segment display"
 msgctxt "TutorialDataset|"
 msgid "7 segment display"
 msgstr "Pantalla de 7 segmentos"
 
 #: activities/digital_electricity/TutorialDataset.qml:110
+#, fuzzy
+#| msgctxt "TutorialDataset|"
+#| msgid "Signal generator"
 msgctxt "TutorialDataset|"
 msgid "Signal generator"
 msgstr "Xerador de sinal"
 
 #: activities/digital_electricity/TutorialDataset.qml:117
+#, fuzzy
+#| msgctxt "TutorialDataset|"
+#| msgid "BCD counter"
 msgctxt "TutorialDataset|"
 msgid "BCD counter"
 msgstr "Contador de BCD"
@@ -6518,11 +7050,19 @@ msgstr ""
 "son de valor 1."
 
 #: activities/digital_electricity/TutorialDataset.qml:160
+#, fuzzy
+#| msgctxt "TutorialDataset|"
+#| msgid "Turn on the digital light using an AND gate and the provided inputs."
 msgctxt "TutorialDataset|"
 msgid "Turn on the digital light using an AND gate and the provided inputs."
 msgstr "Acende a luz dixital usando unha porta AND e as entradas fornecidas."
 
 #: activities/digital_electricity/TutorialDataset.qml:173
+#, fuzzy
+#| msgctxt "TutorialDataset|"
+#| msgid ""
+#| "The OR gate produces an output of 1 when at least one of its input "
+#| "terminals is of value 1."
 msgctxt "TutorialDataset|"
 msgid ""
 "The OR gate produces an output of 1 when at least one of its input terminals "
@@ -6532,22 +7072,36 @@ msgstr ""
 "entrada é de valor 1."
 
 #: activities/digital_electricity/TutorialDataset.qml:174
+#, fuzzy
+#| msgctxt "TutorialDataset|"
+#| msgid "Turn on the digital light using an OR gate and the provided inputs."
 msgctxt "TutorialDataset|"
 msgid "Turn on the digital light using an OR gate and the provided inputs."
 msgstr "Acende a luz dixital usando unha porta OR e as entradas fornecidas."
 
 #: activities/digital_electricity/TutorialDataset.qml:187
+#, fuzzy
+#| msgctxt "TutorialDataset|"
+#| msgid "You can draw multiple wires from the output terminal of a component."
 msgctxt "TutorialDataset|"
 msgid "You can draw multiple wires from the output terminal of a component."
 msgstr ""
 "Nota: Podes debuxar varios cables desde o terminal de saída dun compoñente."
 
 #: activities/digital_electricity/TutorialDataset.qml:188
+#, fuzzy
+#| msgctxt "TutorialDataset|"
+#| msgid "Turn on the digital light using the provided components."
 msgctxt "TutorialDataset|"
 msgid "Turn on the digital light using the provided components."
 msgstr "Acende a luz dixital usando as compoñentes fornecidas."
 
 #: activities/digital_electricity/TutorialDataset.qml:201
+#, fuzzy
+#| msgctxt "TutorialDataset|"
+#| msgid ""
+#| "The NOT gate takes a single binary input and flips the value in the "
+#| "output."
 msgctxt "TutorialDataset|"
 msgid ""
 "The NOT gate takes a single binary input and flips the value in the output."
@@ -6555,6 +7109,10 @@ msgstr ""
 "A porta NOT recibe unha única entrada binaria e inverte o valor na saída."
 
 #: activities/digital_electricity/TutorialDataset.qml:215
+#, fuzzy
+#| msgctxt "TutorialDataset|"
+#| msgid ""
+#| "The NAND gate takes two binary inputs and produces one binary output."
 msgctxt "TutorialDataset|"
 msgid "The NAND gate takes two binary inputs and produces one binary output."
 msgstr ""
@@ -6575,6 +7133,11 @@ msgstr ""
 "contrario, a saída será un."
 
 #: activities/digital_electricity/TutorialDataset.qml:217
+#, fuzzy
+#| msgctxt "TutorialDataset|"
+#| msgid ""
+#| "For a more detailed description about the NAND gate, select it and click "
+#| "on the info button."
 msgctxt "TutorialDataset|"
 msgid ""
 "For a more detailed description about the NAND gate, select it and click on "
@@ -6584,6 +7147,9 @@ msgstr ""
 "botón de información."
 
 #: activities/digital_electricity/TutorialDataset.qml:218
+#, fuzzy
+#| msgctxt "TutorialDataset|"
+#| msgid "Light the bulb using the provided NAND gate."
 msgctxt "TutorialDataset|"
 msgid "Light the bulb using the provided NAND gate."
 msgstr "Ilumina a lámpada usando a porta NAND fornecida."
@@ -6719,6 +7285,11 @@ msgstr ""
 "ilumine cando se acende un número impar de conmutadores."
 
 #: activities/digital_electricity/TutorialDataset.qml:355
+#, fuzzy
+#| msgctxt "TutorialDataset|"
+#| msgid ""
+#| "A NOR gate takes 2 binary inputs and outputs 1 if both of them are 0, "
+#| "otherwise produces an output of 0."
 msgctxt "TutorialDataset|"
 msgid ""
 "A NOR gate takes 2 binary inputs and outputs 1 if both of them are 0, "
@@ -6728,6 +7299,11 @@ msgstr ""
 "entradas son 0, ou produce unha saída de 0 en caso contrario."
 
 #: activities/digital_electricity/TutorialDataset.qml:356
+#, fuzzy
+#| msgctxt "TutorialDataset|"
+#| msgid ""
+#| "For a more detailed description about the NOR gate, select it and click "
+#| "on the info button."
 msgctxt "TutorialDataset|"
 msgid ""
 "For a more detailed description about the NOR gate, select it and click on "
@@ -6737,6 +7313,9 @@ msgstr ""
 "de información."
 
 #: activities/digital_electricity/TutorialDataset.qml:357
+#, fuzzy
+#| msgctxt "TutorialDataset|"
+#| msgid "Light the bulb using the provided NOR gate."
 msgctxt "TutorialDataset|"
 msgid "Light the bulb using the provided NOR gate."
 msgstr "Ilumina a lámpada usando a porta NOR fornecida."
@@ -6865,11 +7444,19 @@ msgstr ""
 "menor ou igual que o  que circula polo segundo conmutador."
 
 #: activities/digital_electricity/TutorialDataset.qml:525
+#, fuzzy
+#| msgctxt "TutorialDataset|"
+#| msgid "The component in the middle is a BCD to seven segment converter."
 msgctxt "TutorialDataset|"
 msgid "The component in the middle is a BCD to seven segment converter."
 msgstr "O compoñente do medio é un convertedor de BCD a sete segmentos."
 
 #: activities/digital_electricity/TutorialDataset.qml:526
+#, fuzzy
+#| msgctxt "TutorialDataset|"
+#| msgid ""
+#| "It takes 4 bits as input represented in the binary coded decimal (BCD) "
+#| "format and converts the BCD number into a seven segment code."
 msgctxt "TutorialDataset|"
 msgid ""
 "It takes 4 bits as input represented in the binary coded decimal (BCD) "
@@ -6879,6 +7466,11 @@ msgstr ""
 "binario (BCD) e converte o número BCD nun código de sete segmentos."
 
 #: activities/digital_electricity/TutorialDataset.qml:527
+#, fuzzy
+#| msgctxt "TutorialDataset|"
+#| msgid ""
+#| "The output of the converter is connected to the seven segment display, to "
+#| "view the value of the input provided."
 msgctxt "TutorialDataset|"
 msgid ""
 "The output of the converter is connected to the seven segment display, to "
@@ -6888,11 +7480,20 @@ msgstr ""
 "ver o valor da entrada fornecida."
 
 #: activities/digital_electricity/TutorialDataset.qml:528
+#, fuzzy
+#| msgctxt "TutorialDataset|"
+#| msgid "Display the number 6 in the seven segment display."
 msgctxt "TutorialDataset|"
 msgid "Display the number 6 in the seven segment display."
 msgstr "Mostra o número 6 na pantalla de sete segmentos."
 
 #: activities/digital_electricity/TutorialDataset.qml:541
+#, fuzzy
+#| msgctxt "TutorialDataset|"
+#| msgid ""
+#| "The signal generator on the left is used to generate alternating signals "
+#| "between 0 and 1 in a given time period taken as input. The time period by "
+#| "default is 1 second, but it can be changed between 0.25 and 2s."
 msgctxt "TutorialDataset|"
 msgid ""
 "The signal generator on the left is used to generate alternating signals "
@@ -6906,6 +7507,11 @@ msgstr ""
 
 # skip-rule: trasno-app
 #: activities/digital_electricity/TutorialDataset.qml:542
+#, fuzzy
+#| msgctxt "TutorialDataset|"
+#| msgid ""
+#| "The BCD counter placed under it is a special type of counter which can "
+#| "count from 0 to 9 and back to 0 on application of a clock signal."
 msgctxt "TutorialDataset|"
 msgid ""
 "The BCD counter placed under it is a special type of counter which can count "
@@ -6915,6 +7521,11 @@ msgstr ""
 "pode contar de 0 a 9 e de volta a 0 tras a aplicación dun sinal de reloxo."
 
 #: activities/digital_electricity/TutorialDataset.qml:543
+#, fuzzy
+#| msgctxt "TutorialDataset|"
+#| msgid ""
+#| "Connect the components to make sure that the count of 0 to 9 is visible "
+#| "in the provided seven segment display."
 msgctxt "TutorialDataset|"
 msgid ""
 "Connect the components to make sure that the count of 0 to 9 is visible in "
@@ -6951,6 +7562,9 @@ msgstr "Debuxa letras"
 
 #. Help title
 #: activities/drawletters/ActivityInfo.qml:17
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Connect the dots to draw the letters."
 msgctxt "ActivityInfo|"
 msgid "Connect the dots to draw the letters."
 msgstr "Conecta os puntos para debuxar letras."
@@ -6984,18 +7598,27 @@ msgstr "Debuxa números"
 
 #. Help title
 #: activities/drawnumbers/ActivityInfo.qml:17
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Connect the dots to draw numbers from 0 to 9."
 msgctxt "ActivityInfo|"
 msgid "Connect the dots to draw numbers from 0 to 9."
 msgstr "Conecta os puntos para debuxar números do 0 ao 9."
 
 #. Help goal
 #: activities/drawnumbers/ActivityInfo.qml:20
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Learning how to draw numbers in a funny way."
 msgctxt "ActivityInfo|"
 msgid "Learning how to draw numbers in a funny way."
 msgstr "Aprender a debuxar os números de maneira divertida."
 
 #. Help manual
 #: activities/drawnumbers/ActivityInfo.qml:24
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Draw the numbers by connecting the dots in the correct order."
 msgctxt "ActivityInfo|"
 msgid "Draw the numbers by connecting the dots in the correct order."
 msgstr "Conecta os puntos na orde correcta para debuxar os números."
@@ -7018,6 +7641,9 @@ msgstr "Contar os elementos"
 
 #. Help title
 #: activities/enumerate/ActivityInfo.qml:17
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Place the items in the best way to count them."
 msgctxt "ActivityInfo|"
 msgid "Place the items in the best way to count them."
 msgstr "Coloca os elementos do mellor xeito para contalos."
@@ -7026,12 +7652,18 @@ msgstr "Coloca os elementos do mellor xeito para contalos."
 #: activities/enumerate/ActivityInfo.qml:20
 #: activities/numbers-odd-even/ActivityInfo.qml:20
 #: activities/planegame/ActivityInfo.qml:20
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Numeration training."
 msgctxt "ActivityInfo|"
 msgid "Numeration training."
 msgstr "Adestramento da numeración."
 
 #. Help prerequisite
 #: activities/enumerate/ActivityInfo.qml:22
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Basic enumeration."
 msgctxt "ActivityInfo|"
 msgid "Basic enumeration."
 msgstr "Enumeración básica."
@@ -7154,6 +7786,11 @@ msgstr "Move o rato ou a pantalla táctil."
 
 #. Help title
 #: activities/erase/ActivityInfo.qml:17
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "Move the mouse or touch the screen to erase the area and discover the "
+#| "background."
 msgctxt "ActivityInfo|"
 msgid ""
 "Move the mouse or touch the screen to erase the area and discover the "
@@ -7165,6 +7802,9 @@ msgstr ""
 #: activities/erase/ActivityInfo.qml:20
 #: activities/erase_2clic/ActivityInfo.qml:20
 #: activities/erase_clic/ActivityInfo.qml:20
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Motor-coordination."
 msgctxt "ActivityInfo|"
 msgid "Motor-coordination."
 msgstr "Coordinación motora."
@@ -7187,6 +7827,11 @@ msgstr "Toca ou preme dúas veces seguidas."
 
 #. Help title
 #: activities/erase_2clic/ActivityInfo.qml:17
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "Double tap or double click to erase the area and discover the background "
+#| "image."
 msgctxt "ActivityInfo|"
 msgid ""
 "Double tap or double click to erase the area and discover the background "
@@ -7216,6 +7861,9 @@ msgstr "Preme ou toca"
 
 #. Help title
 #: activities/erase_clic/ActivityInfo.qml:17
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Click or tap to erase the area and discover the background."
 msgctxt "ActivityInfo|"
 msgid "Click or tap to erase the area and discover the background."
 msgstr "Preme ou toca para borrar a zona e descubrir o fondo."
@@ -7314,6 +7962,9 @@ msgid ""
 msgstr ""
 
 #: activities/explore_farm_animals/ExploreLevels.qml:304
+#, fuzzy
+#| msgctxt "ExploreLevels|"
+#| msgid "Quit"
 msgctxt "ExploreLevels|"
 msgid "Quit"
 msgstr "Saír"
@@ -7607,6 +8258,15 @@ msgid "Colosseum"
 msgstr "Coliseo"
 
 #: activities/explore_monuments/resource/board/board1.qml:31
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid ""
+#| "The Colosseum or Coliseum is today the most recognizable of Rome's "
+#| "Classical buildings. Even 2000 years after it was built, and despite "
+#| "centuries when the abandoned building was pillaged for building "
+#| "materials, it is instantly recognizable as a classical template for the "
+#| "stadia of today. It was the first permanent amphitheatre to be raised in "
+#| "Rome, and the most impressive arena the Classical world had yet seen."
 msgctxt "board1|"
 msgid ""
 "The Colosseum or Coliseum is today the most recognizable of Rome's Classical "
@@ -7648,6 +8308,13 @@ msgid "The Great Wall of China"
 msgstr "A Gran Muralla Chinesa"
 
 #: activities/explore_monuments/resource/board/board1.qml:53
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid ""
+#| "The Great Wall was listed as a World Heritage by UNESCO in 1987. Just "
+#| "like a gigantic dragon, it winds up and down across deserts, grasslands, "
+#| "mountains and plateaus, stretching approximately 13170 miles (21196 "
+#| "kilometers) from east to west of China."
 msgctxt "board1|"
 msgid ""
 "The Great Wall was listed as a World Heritage by UNESCO in 1987. Just like a "
@@ -7667,6 +8334,16 @@ msgid "Machu Picchu"
 msgstr "Machu Picchu"
 
 #: activities/explore_monuments/resource/board/board1.qml:64
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid ""
+#| "The Machu Picchu stands 2430 meters above sea-level, in the middle of a "
+#| "tropical mountain forest, in an extraordinarily beautiful setting. It was "
+#| "probably the most amazing urban creation of the Inca Empire at its "
+#| "height, its giant walls, terraces and ramps seem as if they had been cut "
+#| "naturally in the continuous rock escarpments. The natural setting, on the "
+#| "eastern slopes of the Andes, encompasses the upper Amazon basin with its "
+#| "rich diversity of flora and fauna."
 msgctxt "board1|"
 msgid ""
 "The Machu Picchu stands 2430 meters above sea-level, in the middle of a "
@@ -7729,6 +8406,9 @@ msgid "Taj Mahal"
 msgstr "Taj Mahal"
 
 #: activities/explore_monuments/resource/board/board1.qml:98
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "The New 7 Wonders of the World."
 msgctxt "board1|"
 msgid "The New 7 Wonders of the World."
 msgstr "As novas sete marabillas do mundo."
@@ -7767,6 +8447,14 @@ msgid "Hawa Mahal"
 msgstr "Hawa Mahal"
 
 #: activities/explore_monuments/resource/board/board2.qml:30
+#, fuzzy
+#| msgctxt "board2|"
+#| msgid ""
+#| "Hawa Mahal is a palace in Jaipur, India, so named because it was "
+#| "essentially a high screen wall built so that the women of the royal "
+#| "household could observe street festivals while unseen from the outside. "
+#| "Constructed of red and pink sandstone, the palace sits on the edge of the "
+#| "City Palace, and extends to the zenana, or women's chambers."
 msgctxt "board2|"
 msgid ""
 "Hawa Mahal is a palace in Jaipur, India, so named because it was essentially "
@@ -7834,6 +8522,16 @@ msgid "Ajanta Caves"
 msgstr "Covas de Axanta"
 
 #: activities/explore_monuments/resource/board/board2.qml:63
+#, fuzzy
+#| msgctxt "board2|"
+#| msgid ""
+#| "The Ajanta Caves are about 29 rock-cut Buddhist cave monuments which date "
+#| "from the 2nd century BCE to about 480 CE in Aurangabad district of "
+#| "Maharashtra state of India. The caves include paintings and rock cut "
+#| "sculptures described as among the finest surviving examples of ancient "
+#| "Indian art, particularly expressive paintings that present emotion "
+#| "through gesture, pose and form. Since 1983, the caves have been a UNESCO "
+#| "World Heritage Site."
 msgctxt "board2|"
 msgid ""
 "The Ajanta Caves are about 29 rock-cut Buddhist cave monuments which date "
@@ -7954,6 +8652,14 @@ msgid "Qutub Minar"
 msgstr "Qutb Minar"
 
 #: activities/explore_monuments/resource/board/board2.qml:129
+#, fuzzy
+#| msgctxt "board2|"
+#| msgid ""
+#| "Qutub Minar, at 74 meters, is the tallest brick minaret in the world, and "
+#| "the second tallest minar in India after Fateh Burj at Mohali. Along with "
+#| "the ancient and medieval monuments surrounding it, they form the Qutb "
+#| "Complex, which is a UNESCO World Heritage Site. The tower, located in the "
+#| "Mehrauli area of Delhi, is made of red sandstone and marble."
 msgctxt "board2|"
 msgid ""
 "Qutub Minar, at 74 meters, is the tallest brick minaret in the world, and "
@@ -7988,6 +8694,15 @@ msgid "Mont-Saint-Michel"
 msgstr "Monte Saint-Michel"
 
 #: activities/explore_monuments/resource/board/board3.qml:19
+#, fuzzy
+#| msgctxt "board3|"
+#| msgid ""
+#| "Mont Saint-Michel is a rocky tidal island located in Normandy, at the "
+#| "mouth of the Couesnon River, near the city of Avranches. The highest "
+#| "point of the island is the spire at the top of the Abbey’s bell tower, "
+#| "170 meters above sea level. There are currently less than 50 people "
+#| "living on the island. The unique feature of Mont Saint-Michel is that it "
+#| "is completely surrounded by water and can only be accessed at low tide."
 msgctxt "board3|"
 msgid ""
 "Mont Saint-Michel is a rocky tidal island located in Normandy, at the mouth "
@@ -8033,6 +8748,15 @@ msgid "Reims Cathedral"
 msgstr "Catedral de Reims"
 
 #: activities/explore_monuments/resource/board/board3.qml:41
+#, fuzzy
+#| msgctxt "board3|"
+#| msgid ""
+#| "By size, Reims Cathedral is quite an extraordinary construction: designed "
+#| "to accommodate huge crowds, its gigantic dimensions include a surface "
+#| "area of 6650 m2 and a length of 122m. A Gothic art masterpiece and the "
+#| "coronation site of the Kings of France, it has been listed as a UNESCO "
+#| "World Heritage Site since 1991. The Mecca for tourists in the Champagne "
+#| "region welcomes 1500000 visitors every year."
 msgctxt "board3|"
 msgid ""
 "By size, Reims Cathedral is quite an extraordinary construction: designed to "
@@ -8096,6 +8820,15 @@ msgid "Château de Chambord"
 msgstr "Castelo de Chambord"
 
 #: activities/explore_monuments/resource/board/board3.qml:74
+#, fuzzy
+#| msgctxt "board3|"
+#| msgid ""
+#| "Prestigious, majestic, colossal, extravagant, are these adjectives enough "
+#| "to fully describe the splendour of Chambord? The largest château of the "
+#| "Loire Valley is indeed full of surprises for those who are lucky enough "
+#| "to explore its domain. This remarkable piece of architecture is certainly "
+#| "more than just a castle: it is the dream of a king, transformed into "
+#| "reality."
 msgctxt "board3|"
 msgid ""
 "Prestigious, majestic, colossal, extravagant, are these adjectives enough to "
@@ -8157,6 +8890,15 @@ msgid "Château de Chenonceau"
 msgstr "Castelo de Chenonceau"
 
 #: activities/explore_monuments/resource/board/board3.qml:107
+#, fuzzy
+#| msgctxt "board3|"
+#| msgid ""
+#| "The Château de Chenonceau is among many of Loire Valley Châteaux that "
+#| "boast amazing architecture and historical significance drawing thousands "
+#| "of tourists from all over the world. Château de Chenonceau is sometimes "
+#| "called the Ladies Castle by some historians due to feminine figures "
+#| "having greatly influenced the construction and development of this French "
+#| "Château over the centuries."
 msgctxt "board3|"
 msgid ""
 "The Château de Chenonceau is among many of Loire Valley Châteaux that boast "
@@ -8385,6 +9127,16 @@ msgid "Canyon de Chelly"
 msgstr "Canón de Chelly"
 
 #: activities/explore_monuments/resource/board/board5.qml:30
+#, fuzzy
+#| msgctxt "board5|"
+#| msgid ""
+#| "The stoic red ruins of Canyon de Chelly in northeastern Arizona are at "
+#| "once part of the National Park Service and the Navajo Nation, having been "
+#| "established as a national monument in 1931. A number of important early "
+#| "Native American sites are preserved in the nearly 84000 acres of "
+#| "parkland, and Canyon de Chelly also offers an array of Southwestern "
+#| "geological formations, including Spider Rock, an 800-foot-tall sandstone "
+#| "spire that rises eerily from the bottom of the canyon floor."
 msgctxt "board5|"
 msgid ""
 "The stoic red ruins of Canyon de Chelly in northeastern Arizona are at once "
@@ -8608,6 +9360,19 @@ msgid "Great Pyramid of Giza"
 msgstr "Gran Pirámide de Gizeh"
 
 #: activities/explore_monuments/resource/board/board6.qml:18
+#, fuzzy
+#| msgctxt "board6|"
+#| msgid ""
+#| "The Great Pyramid of Giza is also known as the Pyramid of Khufu or the "
+#| "Pyramid of Cheops. It is considered to be the oldest of all the Seven "
+#| "Wonders of the Ancient World. It is also the largest of all the three "
+#| "pyramids in Giza. It is situated in the Giza Necropolis, in Egypt. The "
+#| "initial construction has been started by Egyptian Pharaoh Khufu, then it "
+#| "was continued by his son Khafre and finally completed by Menkaure. It "
+#| "took almost 20 years to build the pyramid and approximately 2 million "
+#| "blocks of stone have been used in the construction. The height of the "
+#| "pyramid is approximately 139 meters making it the highest pyramid of "
+#| "Egypt."
 msgctxt "board6|"
 msgid ""
 "The Great Pyramid of Giza is also known as the Pyramid of Khufu or the "
@@ -8663,6 +9428,17 @@ msgid "Pyramid of Meidum"
 msgstr "Pirámide de Meidum"
 
 #: activities/explore_monuments/resource/board/board6.qml:40
+#, fuzzy
+#| msgctxt "board6|"
+#| msgid ""
+#| "Five miles south of Saqqara in Egypt stands the mysterious tower-like "
+#| "pyramid of Meidum, which today scarcely resembles a typical pyramid at "
+#| "all. This pyramid was probably built during the reign of the 4th Dynasty "
+#| "pharaoh Sneferu, although it is believed by some that the pyramid may "
+#| "have been started by Sneferu’s predecessor, Huni. At some point during "
+#| "its construction the steps of the pyramid were filled with limestone "
+#| "encasing marking the first attempt by the ancient Egyptians at the "
+#| "construction of a true pyramid."
 msgctxt "board6|"
 msgid ""
 "Five miles south of Saqqara in Egypt stands the mysterious tower-like "
@@ -8689,6 +9465,15 @@ msgid "Red Pyramid"
 msgstr "Pirámide Vermella"
 
 #: activities/explore_monuments/resource/board/board6.qml:51
+#, fuzzy
+#| msgctxt "board6|"
+#| msgid ""
+#| "The Red Pyramid was one of the finest and most successful attempts by "
+#| "Pharaoh Sneferu in building world’s first ever smooth sided pyramid "
+#| "during the Ancient Egypt period. The height of the pyramid is 104 meters "
+#| "making it the world’s 4th largest pyramid in Egypt. The pyramid has been "
+#| "built with red limestone stones, hence the name. The local people of "
+#| "Egypt called it as el-heram el-watwaat meaning the Bat Pyramid."
 msgctxt "board6|"
 msgid ""
 "The Red Pyramid was one of the finest and most successful attempts by "
@@ -8843,6 +9628,11 @@ msgid "Bison"
 msgstr "Bisonte americano"
 
 #: activities/explore_world_animals/resource/board/board1.qml:53
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid ""
+#| "Bisons live on the plains of North America and were hunted by the Native "
+#| "Americans for food."
 msgctxt "board1|"
 msgid ""
 "Bisons live on the plains of North America and were hunted by the Native "
@@ -8889,6 +9679,11 @@ msgid "Chameleon"
 msgstr "Camaleón"
 
 #: activities/explore_world_animals/resource/board/board2.qml:20
+#, fuzzy
+#| msgctxt "board2|"
+#| msgid ""
+#| "The chameleon lives in Africa and Madagascar and is well-known for its "
+#| "ability to change its skin color in a couple of seconds."
 msgctxt "board2|"
 msgid ""
 "The chameleon lives in Africa and Madagascar and is well-known for its "
@@ -8924,6 +9719,11 @@ msgid "Kangaroo"
 msgstr "Canguro"
 
 #: activities/explore_world_animals/resource/board/board2.qml:42
+#, fuzzy
+#| msgctxt "board2|"
+#| msgid ""
+#| "The kangaroo lives in Australia and is well-known for the pouch on its "
+#| "belly used to cradle baby kangaroos."
 msgctxt "board2|"
 msgid ""
 "The kangaroo lives in Australia and is well-known for the pouch on its belly "
@@ -8939,6 +9739,11 @@ msgid "Scarlet macaw"
 msgstr "Arara macao"
 
 #: activities/explore_world_animals/resource/board/board2.qml:53
+#, fuzzy
+#| msgctxt "board2|"
+#| msgid ""
+#| "The scarlet macaw lives in South America and is a big and bright colored "
+#| "parrot, able to learn up to 100 words!"
 msgctxt "board2|"
 msgid ""
 "The scarlet macaw lives in South America and is a big and bright colored "
@@ -8954,6 +9759,12 @@ msgid "Moose"
 msgstr "Alce"
 
 #: activities/explore_world_animals/resource/board/board2.qml:64
+#, fuzzy
+#| msgctxt "board2|"
+#| msgid ""
+#| "Being the largest of all the deers, the moose eats as much as 25 kg per "
+#| "day. However, it's not easy, so sometimes the moose has to stand on its "
+#| "hind legs to reach branches up to 4 meters!"
 msgctxt "board2|"
 msgid ""
 "Being the largest of all the deers, the moose eats as much as 25 kg per day. "
@@ -8987,6 +9798,11 @@ msgid "Crocodile"
 msgstr "Crocodilo"
 
 #: activities/explore_world_animals/resource/board/board3.qml:20
+#, fuzzy
+#| msgctxt "board3|"
+#| msgid ""
+#| "The crocodile is a large amphibious reptile. It lives mostly in large "
+#| "tropical rivers, where it is an ambush predator."
 msgctxt "board3|"
 msgid ""
 "The crocodile is a large amphibious reptile. It lives mostly in large "
@@ -9002,6 +9818,11 @@ msgid "Komodo dragon"
 msgstr "Dragón de Komodo"
 
 #: activities/explore_world_animals/resource/board/board3.qml:31
+#, fuzzy
+#| msgctxt "board3|"
+#| msgid ""
+#| "The Komodo dragon is the largest living lizard (up to 3 meters). It lives "
+#| "in the Indonesian islands."
 msgctxt "board3|"
 msgid ""
 "The Komodo dragon is the largest living lizard (up to 3 meters). It lives in "
@@ -9052,6 +9873,11 @@ msgid "Panda"
 msgstr "Panda"
 
 #: activities/explore_world_animals/resource/board/board3.qml:64
+#, fuzzy
+#| msgctxt "board3|"
+#| msgid ""
+#| "The panda is a bear with black and white fur that lives in a few mountain "
+#| "ranges in central China. Pandas mostly eat bamboo."
 msgctxt "board3|"
 msgid ""
 "The panda is a bear with black and white fur that lives in a few mountain "
@@ -9094,6 +9920,11 @@ msgstr "Aprende sobre a música do mundo."
 
 #. Help goal
 #: activities/explore_world_music/ActivityInfo.qml:20
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "Develop a better understanding of the variety of music present in the "
+#| "world."
 msgctxt "ActivityInfo|"
 msgid ""
 "Develop a better understanding of the variety of music present in the world."
@@ -9131,6 +9962,9 @@ msgid ""
 msgstr ""
 
 #: activities/explore_world_music/ActivityInfo.qml:28
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Images from https://commons.wikimedia.org/wiki, https://archive.org"
 msgctxt "ActivityInfo|"
 msgid "Images from https://commons.wikimedia.org/wiki, https://archive.org"
 msgstr "Imaxes de https://commons.wikimedia.org/wiki e https://archive.org"
@@ -9294,6 +10128,9 @@ msgstr ""
 "con vocalistas, guitarras e percusión."
 
 #: activities/explore_world_music/resource/board/board1.qml:130
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "Explore world music. Click on the suitcases."
 msgctxt "board1|"
 msgid "Explore world music. Click on the suitcases."
 msgstr "Explora a música do mundo. Preme as maletas."
@@ -9316,6 +10153,9 @@ msgstr "Familia"
 
 #. Help title
 #: activities/family/ActivityInfo.qml:17
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Select the name you should call this family member."
 msgctxt "ActivityInfo|"
 msgid "Select the name you should call this family member."
 msgstr "Selecciona o nome co que deberías referirte a este membro da familia."
@@ -9323,6 +10163,11 @@ msgstr "Selecciona o nome co que deberías referirte a este membro da familia."
 #. Help goal
 #: activities/family/ActivityInfo.qml:20
 #: activities/family_find_relative/ActivityInfo.qml:20
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "Learn the relationships in a family, according to the lineal system used "
+#| "in most Western societies."
 msgctxt "ActivityInfo|"
 msgid ""
 "Learn the relationships in a family, according to the lineal system used in "
@@ -9333,6 +10178,9 @@ msgstr ""
 
 #. Help prerequisite
 #: activities/family/ActivityInfo.qml:22
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Reading skills."
 msgctxt "ActivityInfo|"
 msgid "Reading skills."
 msgstr "Habilidades de lectura."
@@ -9373,6 +10221,9 @@ msgstr "Selecciona unha das parellas que denota: %1"
 
 #: activities/family/FamilyDataset.qml:125
 #: activities/family/FamilyDataset.qml:126
+#, fuzzy
+#| msgctxt "FamilyDataset|"
+#| msgid "Father"
 msgctxt "FamilyDataset|"
 msgid "Father"
 msgstr "Pai"
@@ -9383,6 +10234,9 @@ msgstr "Pai"
 #: activities/family/FamilyDataset.qml:271
 #: activities/family/FamilyDataset.qml:304
 #: activities/family/FamilyDataset.qml:337
+#, fuzzy
+#| msgctxt "FamilyDataset|"
+#| msgid "Grandfather"
 msgctxt "FamilyDataset|"
 msgid "Grandfather"
 msgstr "Avó"
@@ -9393,12 +10247,18 @@ msgstr "Avó"
 #: activities/family/FamilyDataset.qml:414
 #: activities/family/FamilyDataset.qml:441
 #: activities/family/FamilyDataset.qml:468
+#, fuzzy
+#| msgctxt "FamilyDataset|"
+#| msgid "Uncle"
 msgctxt "FamilyDataset|"
 msgid "Uncle"
 msgstr "Tío"
 
 #: activities/family/FamilyDataset.qml:148
 #: activities/family/FamilyDataset.qml:149
+#, fuzzy
+#| msgctxt "FamilyDataset|"
+#| msgid "Mother"
 msgctxt "FamilyDataset|"
 msgid "Mother"
 msgstr "Nai"
@@ -9409,6 +10269,9 @@ msgstr "Nai"
 #: activities/family/FamilyDataset.qml:271
 #: activities/family/FamilyDataset.qml:304
 #: activities/family/FamilyDataset.qml:337
+#, fuzzy
+#| msgctxt "FamilyDataset|"
+#| msgid "Grandmother"
 msgctxt "FamilyDataset|"
 msgid "Grandmother"
 msgstr "Avoa"
@@ -9419,6 +10282,9 @@ msgstr "Avoa"
 #: activities/family/FamilyDataset.qml:440
 #: activities/family/FamilyDataset.qml:441
 #: activities/family/FamilyDataset.qml:468
+#, fuzzy
+#| msgctxt "FamilyDataset|"
+#| msgid "Aunt"
 msgctxt "FamilyDataset|"
 msgid "Aunt"
 msgstr "Tía"
@@ -9427,6 +10293,9 @@ msgstr "Tía"
 #: activities/family/FamilyDataset.qml:176
 #: activities/family/FamilyDataset.qml:205
 #: activities/family/FamilyDataset.qml:364
+#, fuzzy
+#| msgctxt "FamilyDataset|"
+#| msgid "Brother"
 msgctxt "FamilyDataset|"
 msgid "Brother"
 msgstr "Irmán"
@@ -9435,6 +10304,9 @@ msgstr "Irmán"
 #: activities/family/FamilyDataset.qml:205
 #: activities/family/FamilyDataset.qml:363
 #: activities/family/FamilyDataset.qml:364
+#, fuzzy
+#| msgctxt "FamilyDataset|"
+#| msgid "Cousin"
 msgctxt "FamilyDataset|"
 msgid "Cousin"
 msgstr "Curmán"
@@ -9443,6 +10315,9 @@ msgstr "Curmán"
 #: activities/family/FamilyDataset.qml:204
 #: activities/family/FamilyDataset.qml:205
 #: activities/family/FamilyDataset.qml:364
+#, fuzzy
+#| msgctxt "FamilyDataset|"
+#| msgid "Sister"
 msgctxt "FamilyDataset|"
 msgid "Sister"
 msgstr "Irmá"
@@ -9452,6 +10327,9 @@ msgstr "Irmá"
 #: activities/family/FamilyDataset.qml:303
 #: activities/family/FamilyDataset.qml:304
 #: activities/family/FamilyDataset.qml:337
+#, fuzzy
+#| msgctxt "FamilyDataset|"
+#| msgid "Granddaughter"
 msgctxt "FamilyDataset|"
 msgid "Granddaughter"
 msgstr "Neta"
@@ -9461,6 +10339,9 @@ msgstr "Neta"
 #: activities/family/FamilyDataset.qml:304
 #: activities/family/FamilyDataset.qml:336
 #: activities/family/FamilyDataset.qml:337
+#, fuzzy
+#| msgctxt "FamilyDataset|"
+#| msgid "Grandson"
 msgctxt "FamilyDataset|"
 msgid "Grandson"
 msgstr "Neto"
@@ -9470,6 +10351,9 @@ msgstr "Neto"
 #: activities/family/FamilyDataset.qml:414
 #: activities/family/FamilyDataset.qml:441
 #: activities/family/FamilyDataset.qml:468
+#, fuzzy
+#| msgctxt "FamilyDataset|"
+#| msgid "Nephew"
 msgctxt "FamilyDataset|"
 msgid "Nephew"
 msgstr "Sobriño"
@@ -9479,6 +10363,9 @@ msgstr "Sobriño"
 #: activities/family/FamilyDataset.qml:441
 #: activities/family/FamilyDataset.qml:467
 #: activities/family/FamilyDataset.qml:468
+#, fuzzy
+#| msgctxt "FamilyDataset|"
+#| msgid "Niece"
 msgctxt "FamilyDataset|"
 msgid "Niece"
 msgstr "Sobriña"
@@ -9488,6 +10375,9 @@ msgstr "Sobriña"
 #: activities/family/FamilyDataset.qml:522
 #: activities/family/FamilyDataset.qml:549
 #: activities/family/FamilyDataset.qml:578
+#, fuzzy
+#| msgctxt "FamilyDataset|"
+#| msgid "Father-in-law"
 msgctxt "FamilyDataset|"
 msgid "Father-in-law"
 msgstr "Sogro"
@@ -9498,6 +10388,9 @@ msgstr "Sogro"
 #: activities/family/FamilyDataset.qml:549
 #: activities/family/FamilyDataset.qml:578
 #: activities/family/FamilyDataset.qml:605
+#, fuzzy
+#| msgctxt "FamilyDataset|"
+#| msgid "Mother-in-law"
 msgctxt "FamilyDataset|"
 msgid "Mother-in-law"
 msgstr "Sogra"
@@ -9508,6 +10401,9 @@ msgstr "Sogra"
 #: activities/family/FamilyDataset.qml:577
 #: activities/family/FamilyDataset.qml:578
 #: activities/family/FamilyDataset.qml:605
+#, fuzzy
+#| msgctxt "FamilyDataset|"
+#| msgid "Sister-in-law"
 msgctxt "FamilyDataset|"
 msgid "Sister-in-law"
 msgstr "Cuñada"
@@ -9518,6 +10414,9 @@ msgstr "Cuñada"
 #: activities/family/FamilyDataset.qml:549
 #: activities/family/FamilyDataset.qml:578
 #: activities/family/FamilyDataset.qml:605
+#, fuzzy
+#| msgctxt "FamilyDataset|"
+#| msgid "Brother-in-law"
 msgctxt "FamilyDataset|"
 msgid "Brother-in-law"
 msgstr "Cuñado"
@@ -9527,12 +10426,18 @@ msgstr "Cuñado"
 #: activities/family/FamilyDataset.qml:549
 #: activities/family/FamilyDataset.qml:578
 #: activities/family/FamilyDataset.qml:605
+#, fuzzy
+#| msgctxt "FamilyDataset|"
+#| msgid "Daughter-in-law"
 msgctxt "FamilyDataset|"
 msgid "Daughter-in-law"
 msgstr "Nora"
 
 #: activities/family/FamilyDataset.qml:604
 #: activities/family/FamilyDataset.qml:605
+#, fuzzy
+#| msgctxt "FamilyDataset|"
+#| msgid "Son-in-law"
 msgctxt "FamilyDataset|"
 msgid "Son-in-law"
 msgstr "Xenro"
@@ -9551,6 +10456,9 @@ msgstr ""
 
 #. Help prerequisite
 #: activities/family_find_relative/ActivityInfo.qml:22
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Reading, moving and clicking with the mouse."
 msgctxt "ActivityInfo|"
 msgid "Reading, moving and clicking with the mouse."
 msgstr "Ler, mover e premer co rato."
@@ -9631,6 +10539,9 @@ msgstr "Aprende a contar os días e atopa a data no calendario."
 
 #. Help prerequisite
 #: activities/find_the_day/ActivityInfo.qml:22
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Basics of calendar."
 msgctxt "ActivityInfo|"
 msgid "Basics of calendar."
 msgstr "Fundamentos de calendario."
@@ -9652,131 +10563,209 @@ msgstr ""
 "continuación selecciona a data no calendario."
 
 #: activities/find_the_day/find_the_day_dataset.js:35
+#, fuzzy
+#| msgctxt "find_the_day_dataset|"
+#| msgid "Find the date 13 days after May 3rd."
 msgctxt "find_the_day_dataset|"
 msgid "Find the date 13 days after May 3rd."
 msgstr "Atopa a data 13 días despois do 3 de maio."
 
 #: activities/find_the_day/find_the_day_dataset.js:39
+#, fuzzy
+#| msgctxt "find_the_day_dataset|"
+#| msgid "Find the date 7 days after October 1st."
 msgctxt "find_the_day_dataset|"
 msgid "Find the date 7 days after October 1st."
 msgstr "Atopa a data 7 días despois do 1 de outubro."
 
 #: activities/find_the_day/find_the_day_dataset.js:43
+#, fuzzy
+#| msgctxt "find_the_day_dataset|"
+#| msgid "Find the date 31 days after July 12th."
 msgctxt "find_the_day_dataset|"
 msgid "Find the date 31 days after July 12th."
 msgstr "Atopa a data 31 días despois do 12 de xullo."
 
 #: activities/find_the_day/find_the_day_dataset.js:47
+#, fuzzy
+#| msgctxt "find_the_day_dataset|"
+#| msgid "Find the date two weeks after November 27th."
 msgctxt "find_the_day_dataset|"
 msgid "Find the date two weeks after November 27th."
 msgstr "Atopa a data dúas semanas despois do 27 de novembro."
 
 #: activities/find_the_day/find_the_day_dataset.js:51
+#, fuzzy
+#| msgctxt "find_the_day_dataset|"
+#| msgid "Find the date 19 days before September 1st."
 msgctxt "find_the_day_dataset|"
 msgid "Find the date 19 days before September 1st."
 msgstr "Atopa a data 19 días antes do 1 de setembro."
 
 #: activities/find_the_day/find_the_day_dataset.js:55
+#, fuzzy
+#| msgctxt "find_the_day_dataset|"
+#| msgid "Find the date 5 days before December 8th."
 msgctxt "find_the_day_dataset|"
 msgid "Find the date 5 days before December 8th."
 msgstr "Atopa a data 5 días antes do 8 de decembro."
 
 #: activities/find_the_day/find_the_day_dataset.js:75
+#, fuzzy
+#| msgctxt "find_the_day_dataset|"
+#| msgid "Find the day of the week 3 days after December 5th."
 msgctxt "find_the_day_dataset|"
 msgid "Find the day of the week 3 days after December 5th."
 msgstr "Atopa o día da semana 3 días despois do 5 de decembro."
 
 #: activities/find_the_day/find_the_day_dataset.js:79
+#, fuzzy
+#| msgctxt "find_the_day_dataset|"
+#| msgid "Find the day of the week 12 days before November 12th."
 msgctxt "find_the_day_dataset|"
 msgid "Find the day of the week 12 days before November 12th."
 msgstr "Atopa o día da semana 12 días antes do 12 de novembro."
 
 #: activities/find_the_day/find_the_day_dataset.js:83
+#, fuzzy
+#| msgctxt "find_the_day_dataset|"
+#| msgid "Find the day of the week 32 days after January 5th."
 msgctxt "find_the_day_dataset|"
 msgid "Find the day of the week 32 days after January 5th."
 msgstr "Atopa o día da semana 32 días despois do 5 de xaneiro."
 
 #: activities/find_the_day/find_the_day_dataset.js:87
+#, fuzzy
+#| msgctxt "find_the_day_dataset|"
+#| msgid "Find the day of the week 5 days after February 23rd."
 msgctxt "find_the_day_dataset|"
 msgid "Find the day of the week 5 days after February 23rd."
 msgstr "Atopa o día da semana 5 días despois do 23 de febreiro."
 
 #: activities/find_the_day/find_the_day_dataset.js:91
+#, fuzzy
+#| msgctxt "find_the_day_dataset|"
+#| msgid "Find the day of the week 17 days before August 16th."
 msgctxt "find_the_day_dataset|"
 msgid "Find the day of the week 17 days before August 16th."
 msgstr "Atopa o día da semana 17 días antes do 16 de agosto."
 
 #: activities/find_the_day/find_the_day_dataset.js:112
+#, fuzzy
+#| msgctxt "find_the_day_dataset|"
+#| msgid "Find the date 2 weeks and 3 days after January 12th."
 msgctxt "find_the_day_dataset|"
 msgid "Find the date 2 weeks and 3 days after January 12th."
 msgstr "Atopa a data 2 semanas e 3 días despois do 12 de xaneiro."
 
 #: activities/find_the_day/find_the_day_dataset.js:116
+#, fuzzy
+#| msgctxt "find_the_day_dataset|"
+#| msgid "Find the date 3 weeks and 2 days after March 22nd."
 msgctxt "find_the_day_dataset|"
 msgid "Find the date 3 weeks and 2 days after March 22nd."
 msgstr "Atopa a data 3 semanas e 2 días despois do 22 de marzo."
 
 #: activities/find_the_day/find_the_day_dataset.js:120
+#, fuzzy
+#| msgctxt "find_the_day_dataset|"
+#| msgid "Find the date 5 weeks and 6 days after October 5th."
 msgctxt "find_the_day_dataset|"
 msgid "Find the date 5 weeks and 6 days after October 5th."
 msgstr "Atopa a data 5 semanas e 6 días despois do 5 de outubro."
 
 #: activities/find_the_day/find_the_day_dataset.js:124
+#, fuzzy
+#| msgctxt "find_the_day_dataset|"
+#| msgid "Find the date 1 week and 1 day before August 8th."
 msgctxt "find_the_day_dataset|"
 msgid "Find the date 1 week and 1 day before August 8th."
 msgstr "Atopa a data 1 semana e 1 día antes do 8 de agosto."
 
 #: activities/find_the_day/find_the_day_dataset.js:128
+#, fuzzy
+#| msgctxt "find_the_day_dataset|"
+#| msgid "Find the date 2 weeks and 5 days before July 2nd."
 msgctxt "find_the_day_dataset|"
 msgid "Find the date 2 weeks and 5 days before July 2nd."
 msgstr "Atopar a data 2 semanas e 5 días antes do 2 de xullo."
 
 #: activities/find_the_day/find_the_day_dataset.js:148
+#, fuzzy
+#| msgctxt "find_the_day_dataset|"
+#| msgid "Find the day of the week 5 months and 2 days after July 3rd."
 msgctxt "find_the_day_dataset|"
 msgid "Find the day of the week 5 months and 2 days after July 3rd."
 msgstr "Atopa o día da semana 5 meses e 2 días despois do 3 de xullo."
 
 #: activities/find_the_day/find_the_day_dataset.js:152
+#, fuzzy
+#| msgctxt "find_the_day_dataset|"
+#| msgid "Find the day of the week 2 months and 4 days after October 8th."
 msgctxt "find_the_day_dataset|"
 msgid "Find the day of the week 2 months and 4 days after October 8th."
 msgstr "Atopa o día da semana 2 meses e 4 días despois do 8 de outubro."
 
 #: activities/find_the_day/find_the_day_dataset.js:156
+#, fuzzy
+#| msgctxt "find_the_day_dataset|"
+#| msgid "Find the day of the week 1 month and 3 days before December 28th."
 msgctxt "find_the_day_dataset|"
 msgid "Find the day of the week 1 month and 3 days before December 28th."
 msgstr "Atopa o día da semana 1 mes e 3 días antes do 28 de decembro."
 
 #: activities/find_the_day/find_the_day_dataset.js:160
+#, fuzzy
+#| msgctxt "find_the_day_dataset|"
+#| msgid "Find the day of the week 8 months and 7 days after February 28th."
 msgctxt "find_the_day_dataset|"
 msgid "Find the day of the week 8 months and 7 days after February 28th."
 msgstr "Atopa o día da semana 8 meses e 7 días despois do 28 de febreiro."
 
 #: activities/find_the_day/find_the_day_dataset.js:164
+#, fuzzy
+#| msgctxt "find_the_day_dataset|"
+#| msgid "Find the day of the week 3 months and 3 days before September 15th."
 msgctxt "find_the_day_dataset|"
 msgid "Find the day of the week 3 months and 3 days before September 15th."
 msgstr "Atopa o día da semana 3 meses e 3 días antes do 15 de setembro."
 
 #: activities/find_the_day/find_the_day_dataset.js:183
+#, fuzzy
+#| msgctxt "find_the_day_dataset|"
+#| msgid "Find the date 2 months, 1 week and 5 days after January 12th."
 msgctxt "find_the_day_dataset|"
 msgid "Find the date 2 months, 1 week and 5 days after January 12th."
 msgstr "Atopa a data 2 meses, 1 semana e 5 días despois do 12 de xaneiro."
 
 #: activities/find_the_day/find_the_day_dataset.js:187
+#, fuzzy
+#| msgctxt "find_the_day_dataset|"
+#| msgid "Find the date 3 months, 2 weeks and 1 day after August 23rd."
 msgctxt "find_the_day_dataset|"
 msgid "Find the date 3 months, 2 weeks and 1 day after August 23rd."
 msgstr "Atopa a data 3 meses, 2 semanas e 1 día despois do 23 de agosto."
 
 #: activities/find_the_day/find_the_day_dataset.js:191
+#, fuzzy
+#| msgctxt "find_the_day_dataset|"
+#| msgid "Find the date 5 months, 3 weeks and 2 days after March 20th."
 msgctxt "find_the_day_dataset|"
 msgid "Find the date 5 months, 3 weeks and 2 days after March 20th."
 msgstr "Atopa a data 5 meses, 3 semanas e 2 días despois do 20 de marzo."
 
 #: activities/find_the_day/find_the_day_dataset.js:195
+#, fuzzy
+#| msgctxt "find_the_day_dataset|"
+#| msgid "Find the date 1 month 1 week and 1 day before September 10th."
 msgctxt "find_the_day_dataset|"
 msgid "Find the date 1 month 1 week and 1 day before September 10th."
 msgstr "Atopa a data 1 mes, 1 semana e 1 día antes do 10 de setembro."
 
 #: activities/find_the_day/find_the_day_dataset.js:199
+#, fuzzy
+#| msgctxt "find_the_day_dataset|"
+#| msgid "Find the date 2 months, 1 week and 8 days before April 7th."
 msgctxt "find_the_day_dataset|"
 msgid "Find the date 2 months, 1 week and 8 days before April 7th."
 msgstr "Atopa a data 2 meses, 1 semana e 8 días antes do 7 de abril."
@@ -9795,6 +10784,9 @@ msgstr "O bombeiro ten que apagar o lume, pero a mangueira está atoada."
 
 #. Help goal
 #: activities/followline/ActivityInfo.qml:20
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Fine motor coordination."
 msgctxt "ActivityInfo|"
 msgid "Fine motor coordination."
 msgstr "Coordinación motriz fina."
@@ -9819,12 +10811,18 @@ msgstr "O xogo do fútbol"
 
 #. Help title
 #: activities/football/ActivityInfo.qml:17
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Kick the ball into the goal."
 msgctxt "ActivityInfo|"
 msgid "Kick the ball into the goal."
 msgstr "Mete a bóla na portaría."
 
 #. Help goal
 #: activities/football/ActivityInfo.qml:20
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Kick the ball behind the goal keeper on the right."
 msgctxt "ActivityInfo|"
 msgid "Kick the ball behind the goal keeper on the right."
 msgstr "Lanza a bóla tras o gardameta da dereita."
@@ -14692,6 +15690,9 @@ msgid "Yemen"
 msgstr "Iemen"
 
 #: activities/geography/resource/board/board9_0.qml:152
+#, fuzzy
+#| msgctxt "board9_0|"
+#| msgid "Egypt"
 msgctxt "board9_0|"
 msgid "Egypt"
 msgstr "Exipto"
@@ -14703,6 +15704,9 @@ msgstr ""
 
 #: activities/gletters/ActivityConfig.qml:45
 #: activities/wordsgame/ActivityConfig.qml:45
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Uppercase only mode"
 msgctxt "ActivityConfig|"
 msgid "Uppercase only mode"
 msgstr "Modo de só maiúsculas"
@@ -14721,12 +15725,18 @@ msgstr "Letras simples"
 #. Help manual
 #: activities/gletters/ActivityInfo.qml:17
 #: activities/gletters/ActivityInfo.qml:24
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Type the falling letters before they reach the ground."
 msgctxt "ActivityInfo|"
 msgid "Type the falling letters before they reach the ground."
 msgstr "Escribe as letras que están a caer antes de que cheguen ao chan."
 
 #. Help goal
 #: activities/gletters/ActivityInfo.qml:20
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Letter association between the screen and the keyboard."
 msgctxt "ActivityInfo|"
 msgid "Letter association between the screen and the keyboard."
 msgstr "Asociación de letras entre a pantalla e o teclado."
@@ -15129,12 +16139,18 @@ msgstr ""
 #: activities/graph-coloring/ActivityConfig.qml:21
 #: activities/superbrain/ActivityConfig.qml:21
 #: activities/traffic/ActivityConfig.qml:21
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Colors"
 msgctxt "ActivityConfig|"
 msgid "Colors"
 msgstr "Cores"
 
 #: activities/graph-coloring/ActivityConfig.qml:22
 #: activities/superbrain/ActivityConfig.qml:22
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Shapes"
 msgctxt "ActivityConfig|"
 msgid "Shapes"
 msgstr "Formas"
@@ -15167,6 +16183,9 @@ msgstr ""
 
 #. Help prerequisite
 #: activities/graph-coloring/ActivityInfo.qml:22
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Ability to distinguish different colors/shapes, sense of positions."
 msgctxt "ActivityInfo|"
 msgid "Ability to distinguish different colors/shapes, sense of positions."
 msgstr ""
@@ -15188,12 +16207,18 @@ msgstr ""
 
 #. Activity title
 #: activities/gravity/ActivityInfo.qml:19
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Gravity"
 msgctxt "ActivityInfo|"
 msgid "Gravity"
 msgstr "Gravidade"
 
 #. Help title
 #: activities/gravity/ActivityInfo.qml:21
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Introduction to the concept of gravity."
 msgctxt "ActivityInfo|"
 msgid "Introduction to the concept of gravity."
 msgstr "Introdución do concepto de gravidade."
@@ -15310,21 +16335,33 @@ msgid ""
 msgstr ""
 
 #: activities/guesscount/ActivityConfig.qml:26
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Admin"
 msgctxt "ActivityConfig|"
 msgid "Admin"
 msgstr "Administrador"
 
 #: activities/guesscount/ActivityConfig.qml:27
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "BuiltIn"
 msgctxt "ActivityConfig|"
 msgid "BuiltIn"
 msgstr "Incorporado"
 
 #: activities/guesscount/ActivityConfig.qml:70
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Selected"
 msgctxt "ActivityConfig|"
 msgid "Selected"
 msgstr "Seleccionado"
 
 #: activities/guesscount/ActivityConfig.qml:70
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Not Selected"
 msgctxt "ActivityConfig|"
 msgid "Not Selected"
 msgstr "Non seleccionado"
@@ -15353,6 +16390,9 @@ msgstr "Intuición e práctica de cálculos de álxebra."
 
 #. Help prerequisite
 #: activities/guesscount/ActivityInfo.qml:26
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Knowledge of arithmetic operations."
 msgctxt "ActivityInfo|"
 msgid "Knowledge of arithmetic operations."
 msgstr "Coñecemento de operacións aritméticas."
@@ -15452,6 +16492,9 @@ msgstr ""
 
 #. Help prerequisite
 #: activities/guessnumber/ActivityInfo.qml:22
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Numbers."
 msgctxt "ActivityInfo|"
 msgid "Numbers."
 msgstr "Números."
@@ -15499,11 +16542,17 @@ msgstr ""
 
 #: activities/guessnumber/guessnumber.js:62
 #: activities/guessnumber/guessnumber.js:66
+#, fuzzy
+#| msgctxt "guessnumber|"
+#| msgid "Your number is too high"
 msgctxt "guessnumber|"
 msgid "Your number is too high"
 msgstr "O número é demasiado grande"
 
 #: activities/guessnumber/guessnumber.js:69
+#, fuzzy
+#| msgctxt "guessnumber|"
+#| msgid "Your number is too low"
 msgctxt "guessnumber|"
 msgid "Your number is too low"
 msgstr "O número é demasiado pequeno"
@@ -15538,12 +16587,17 @@ msgstr "Escolle o número par:"
 #: activities/guessnumber/resource/5/Data.qml:28
 #: activities/guessnumber/resource/5/Data.qml:32
 #: activities/guessnumber/resource/5/Data.qml:36
-#, qt-format
+#, fuzzy, qt-format
+#| msgctxt "Data|"
+#| msgid "Guess a number between 1 and %1."
 msgctxt "Data|"
 msgid "Guess a number between 1 and %1."
 msgstr "Adiviña un número entre 1 e %1."
 
 #: activities/hangman/ActivityConfig.qml:43
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Display the image to find as hint"
 msgctxt "ActivityConfig|"
 msgid "Display the image to find as hint"
 msgstr "Mostrar a imaxe para atopar como consello"
@@ -15644,6 +16698,9 @@ msgstr "Torre de Hanoi simplificada"
 
 #. Help title
 #: activities/hanoi/ActivityInfo.qml:17
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Reproduce the given tower."
 msgctxt "ActivityInfo|"
 msgid "Reproduce the given tower."
 msgstr "Reproduce a torre."
@@ -15717,6 +16774,17 @@ msgstr ""
 "torre da esquerda no pau baleiro da dereita."
 
 #: activities/hanoi_real/ActivityInfo.qml:28
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "The puzzle was invented by the French mathematician Edouard Lucas in "
+#| "1883. There is a legend about a Hindu temple whose priests were "
+#| "constantly engaged in moving a set of 64 discs according to the rules of "
+#| "the Tower of Hanoi puzzle. According to the legend, the world would end "
+#| "when the priests finished their work. The puzzle is therefore also known "
+#| "as the Tower of Brahma puzzle. It is not clear whether Lucas invented "
+#| "this legend or was inspired by it. (source Wikipedia: https://en."
+#| "wikipedia.org/wiki/Tower_of_hanoi)"
 msgctxt "ActivityInfo|"
 msgid ""
 "The puzzle was invented by the French mathematician Edouard Lucas in 1883. "
@@ -15757,12 +16825,18 @@ msgstr "Hexágono"
 
 #. Help title
 #: activities/hexagon/ActivityInfo.qml:17
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Find the strawberry by clicking on the blue fields."
 msgctxt "ActivityInfo|"
 msgid "Find the strawberry by clicking on the blue fields."
 msgstr "Atopa o amorodo premendo os campos azuis."
 
 #. Help goal
 #: activities/hexagon/ActivityInfo.qml:20
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Logic-training activity."
 msgctxt "ActivityInfo|"
 msgid "Logic-training activity."
 msgstr "Actividade de adestramento lóxico."
@@ -15788,12 +16862,18 @@ msgstr "Actualizar o grupo de imaxes"
 
 #. Help title
 #: activities/imagename/ActivityInfo.qml:20
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Drag and Drop each item above its name."
 msgctxt "ActivityInfo|"
 msgid "Drag and Drop each item above its name."
 msgstr "Arrastra e solta cada elemento sobre o seu nome."
 
 #. Help goal
 #: activities/imagename/ActivityInfo.qml:23
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Vocabulary and reading."
 msgctxt "ActivityInfo|"
 msgid "Vocabulary and reading."
 msgstr "Vocabulario e lectura."
@@ -15805,6 +16885,9 @@ msgstr "Vocabulario e lectura."
 #: activities/ordering_sentences/ActivityInfo.qml:27
 #: activities/readingh/ActivityInfo.qml:22
 #: activities/readingv/ActivityInfo.qml:22
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Reading."
 msgctxt "ActivityInfo|"
 msgid "Reading."
 msgstr "Lectura."
@@ -15827,6 +16910,9 @@ msgstr ""
 "resposta é correcta."
 
 #: activities/imagename/resource/board/board1_0.qml:14
+#, fuzzy
+#| msgctxt "board1_0|"
+#| msgid "Drag and Drop each item above its name"
 msgctxt "board1_0|"
 msgid "Drag and Drop each item above its name"
 msgstr "Arrastra e solta cada elemento sobre o seu nome."
@@ -16049,6 +17135,9 @@ msgstr "Instrumentos musicais"
 
 #. Help title
 #: activities/instruments/ActivityInfo.qml:17
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Click on the correct musical instruments."
 msgctxt "ActivityInfo|"
 msgid "Click on the correct musical instruments."
 msgstr "Preme os instrumentos musicais correctos."
@@ -16345,11 +17434,21 @@ msgstr ""
 
 #: activities/land_safe/resource/1/Data.qml:17
 #: activities/land_safe/resource/2/Data.qml:17
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Ceres"
 msgctxt "Data|"
 msgid "Ceres"
 msgstr "Ceres"
 
 #: activities/land_safe/resource/1/Data.qml:24
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid ""
+#| "Use the up and down keys to control the thrust.<br/>Use the right and "
+#| "left keys to control the direction.<br/>You must drive Tux's ship towards "
+#| "the landing platform.<br/>The landing platform turns green when the "
+#| "velocity is safe to land."
 msgctxt "Data|"
 msgid ""
 "Use the up and down keys to control the thrust.<br/>Use the right and left "
@@ -16364,36 +17463,54 @@ msgstr ""
 
 #: activities/land_safe/resource/1/Data.qml:30
 #: activities/land_safe/resource/2/Data.qml:29
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Pluto"
 msgctxt "Data|"
 msgid "Pluto"
 msgstr "Plutón"
 
 #: activities/land_safe/resource/1/Data.qml:39
 #: activities/land_safe/resource/2/Data.qml:38
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Titan"
 msgctxt "Data|"
 msgid "Titan"
 msgstr "Titán"
 
 #: activities/land_safe/resource/1/Data.qml:48
 #: activities/land_safe/resource/2/Data.qml:47
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Moon"
 msgctxt "Data|"
 msgid "Moon"
 msgstr "Lúa"
 
 #: activities/land_safe/resource/1/Data.qml:57
 #: activities/land_safe/resource/2/Data.qml:56
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Mars"
 msgctxt "Data|"
 msgid "Mars"
 msgstr "Marte"
 
 #: activities/land_safe/resource/1/Data.qml:66
 #: activities/land_safe/resource/2/Data.qml:65
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Venus"
 msgctxt "Data|"
 msgid "Venus"
 msgstr "Venus"
 
 #: activities/land_safe/resource/1/Data.qml:75
 #: activities/land_safe/resource/2/Data.qml:74
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Earth"
 msgctxt "Data|"
 msgid "Earth"
 msgstr "Terra"
@@ -16983,6 +18100,9 @@ msgid "Subtract decimal numbers up to 5."
 msgstr "Resta de números pequenos."
 
 #: activities/learn_digits/ActivityConfig.qml:23
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Arabic numerals"
 msgctxt "ActivityConfig|"
 msgid "Arabic numerals"
 msgstr "Números arábigos"
@@ -16990,6 +18110,9 @@ msgstr "Números arábigos"
 #: activities/learn_digits/ActivityConfig.qml:24
 #: activities/reversecount/ActivityConfig.qml:21
 #: activities/smallnumbers2/ActivityConfig.qml:20
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Dots"
 msgctxt "ActivityConfig|"
 msgid "Dots"
 msgstr "Puntos"
@@ -17297,12 +18420,20 @@ msgstr "Atopa as túas mans esquerda e dereita"
 
 #. Help title
 #: activities/leftright/ActivityInfo.qml:17
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Determine if a hand is a right or a left hand."
 msgctxt "ActivityInfo|"
 msgid "Determine if a hand is a right or a left hand."
 msgstr "Determina se a man é a dereita ou a esquerda."
 
 #. Help goal
 #: activities/leftright/ActivityInfo.qml:20
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "Distinguish right and left hands from different points of view. Spatial "
+#| "representation."
 msgctxt "ActivityInfo|"
 msgid ""
 "Distinguish right and left hands from different points of view. Spatial "
@@ -17342,11 +18473,17 @@ msgid "Right hand"
 msgstr "A man dereita"
 
 #: activities/letter-in-word/ActivityConfig.qml:41
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "All the words"
 msgctxt "ActivityConfig|"
 msgid "All the words"
 msgstr "Todas as palabras"
 
 #: activities/letter-in-word/ActivityConfig.qml:49
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Only 5 words"
 msgctxt "ActivityConfig|"
 msgid "Only 5 words"
 msgstr "Só 5 palabras"
@@ -17360,16 +18497,25 @@ msgid "Select the case for the letters to search"
 msgstr "Selecciona se a letra para buscar é en maiúsculas ou en minúsculas"
 
 #: activities/letter-in-word/ActivityConfig.qml:62
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Mixed Case"
 msgctxt "ActivityConfig|"
 msgid "Mixed Case"
 msgstr "Mestura"
 
 #: activities/letter-in-word/ActivityConfig.qml:63
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Upper Case"
 msgctxt "ActivityConfig|"
 msgid "Upper Case"
 msgstr "Maiúsculas"
 
 #: activities/letter-in-word/ActivityConfig.qml:64
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Lower Case"
 msgctxt "ActivityConfig|"
 msgid "Lower Case"
 msgstr "Minúsculas"
@@ -17382,6 +18528,11 @@ msgstr "Letra en que palabra"
 
 #. Help title
 #: activities/letter-in-word/ActivityInfo.qml:17
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "A letter is written. Some words are displayed, and you must find the word "
+#| "or the words in which this letter appears."
 msgctxt "ActivityInfo|"
 msgid ""
 "A letter is written. Some words are displayed, and you must find the word or "
@@ -17489,6 +18640,11 @@ msgstr ""
 "móstrase a solución."
 
 #: activities/lightsoff/ActivityInfo.qml:25
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "The solver algorithm is described on Wikipedia. To know more about the "
+#| "Lights Off game: &lt;https://en.wikipedia.org/wiki/Lights_Out_(game)&gt;"
 msgctxt "ActivityInfo|"
 msgid ""
 "The solver algorithm is described on Wikipedia. To know more about the "
@@ -17555,6 +18711,9 @@ msgstr "A historia de Louis Braille"
 
 #. Help title
 #: activities/louis-braille/ActivityInfo.qml:17
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Review the major dates of the inventor of the braille system."
 msgctxt "ActivityInfo|"
 msgid "Review the major dates of the inventor of the braille system."
 msgstr "Descobre as datas principais na vida do inventor do sistema braille."
@@ -17562,6 +18721,13 @@ msgstr "Descobre as datas principais na vida do inventor do sistema braille."
 # skip-rule: trasno-history
 #. Help manual
 #: activities/louis-braille/ActivityInfo.qml:24
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "Read the history of Louis Braille, his biography, and the invention of "
+#| "the braille system. Click on the previous and next buttons to move "
+#| "between the story pages. At the end, arrange the sequence in "
+#| "chronological order."
 msgctxt "ActivityInfo|"
 msgid ""
 "Read the history of Louis Braille, his biography, and the invention of the "
@@ -17579,6 +18745,10 @@ msgid "Space or Enter: select an item and change its position"
 msgstr ""
 
 #: activities/louis-braille/ActivityInfo.qml:28
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "Louis Braille Video: &lt;https://www.youtube.com/watch?v=9bdfC2j_4x4&gt;"
 msgctxt "ActivityInfo|"
 msgid ""
 "Louis Braille Video: &lt;https://www.youtube.com/watch?v=9bdfC2j_4x4&gt;"
@@ -17633,6 +18803,10 @@ msgstr ""
 "para compartir información no campo de batalla."
 
 #: activities/louis-braille/louis_braille_data.js:42
+#, fuzzy
+#| msgctxt "louis_braille_data|"
+#| msgid ""
+#| "Louis trimmed Barbier's 12 dots into 6 and invented the braille system."
 msgctxt "louis_braille_data|"
 msgid "Louis trimmed Barbier's 12 dots into 6 and invented the braille system."
 msgstr ""
@@ -17697,6 +18871,9 @@ msgstr "O sombreiro máxico"
 
 #. Help title
 #: activities/magic-hat-minus/ActivityInfo.qml:17
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Calculate how many stars are under the magic hat."
 msgctxt "ActivityInfo|"
 msgid "Calculate how many stars are under the magic hat."
 msgstr "Conta cantos elementos están debaixo do sombreiro máxico."
@@ -17795,13 +18972,18 @@ msgstr ""
 
 #. text displaying coefficient with which the set of stars is to be multiplied along with multiplication symbol.
 #: activities/magic-hat-minus/StarsBar.qml:38
-#, qt-format
+#, fuzzy, qt-format
+#| msgctxt "StarsBar|"
+#| msgid "%1x"
 msgctxt "StarsBar|"
 msgid "%1x"
 msgstr "%1x"
 
 #. Help title
 #: activities/magic-hat-plus/ActivityInfo.qml:17
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Count how many stars are under the magic hat."
 msgctxt "ActivityInfo|"
 msgid "Count how many stars are under the magic hat."
 msgstr "Conta cantos elementos están debaixo do sombreiro máxico."
@@ -17901,6 +19083,9 @@ msgstr "Labirinto"
 
 #. Help title
 #: activities/maze/ActivityInfo.qml:17
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Help Tux get out of this maze."
 msgctxt "ActivityInfo|"
 msgid "Help Tux get out of this maze."
 msgstr "Axuda a Tux a saír deste labirinto."
@@ -18006,6 +19191,9 @@ msgstr "O labirinto invisíbel"
 
 #. Help title
 #: activities/mazeinvisible/ActivityInfo.qml:17
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Guide Tux out of the invisible maze."
 msgctxt "ActivityInfo|"
 msgid "Guide Tux out of the invisible maze."
 msgstr "Saca a Tux do labirinto invisíbel."
@@ -18117,18 +19305,27 @@ msgstr "Melodía"
 
 #. Help title
 #: activities/melody/ActivityInfo.qml:17
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Reproduce a sound sequence."
 msgctxt "ActivityInfo|"
 msgid "Reproduce a sound sequence."
 msgstr "Reproduce unha secuencia de sons."
 
 #. Help goal
 #: activities/melody/ActivityInfo.qml:20
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Ear-training activity."
 msgctxt "ActivityInfo|"
 msgid "Ear-training activity."
 msgstr "Actividade de adestramento acústico."
 
 #. Help prerequisite
 #: activities/melody/ActivityInfo.qml:22
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Move and click the mouse."
 msgctxt "ActivityInfo|"
 msgid "Move and click the mouse."
 msgstr "Mover e premer co rato."
@@ -18157,6 +19354,9 @@ msgid ""
 msgstr ""
 
 #: activities/melody/Melody.qml:286
+#, fuzzy
+#| msgctxt "Melody|"
+#| msgid "Quit"
 msgctxt "Melody|"
 msgid "Quit"
 msgstr "Saír"
@@ -18190,6 +19390,9 @@ msgstr ""
 #. Help goal
 #: activities/memory-case-association-tux/ActivityInfo.qml:20
 #: activities/memory-case-association/ActivityInfo.qml:20
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Learning lowercase and uppercase letters, memory."
 msgctxt "ActivityInfo|"
 msgid "Learning lowercase and uppercase letters, memory."
 msgstr "Aprender o alfabeto en maiúsculas e minúsculas, memoria."
@@ -18197,6 +19400,9 @@ msgstr "Aprender o alfabeto en maiúsculas e minúsculas, memoria."
 #. Help prerequisite
 #: activities/memory-case-association-tux/ActivityInfo.qml:22
 #: activities/memory-case-association/ActivityInfo.qml:22
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Knowing alphabets."
 msgctxt "ActivityInfo|"
 msgid "Knowing alphabets."
 msgstr "Saber os alfabetos."
@@ -19254,6 +20460,9 @@ msgstr ""
 #. Help goal
 #: activities/memory-sound-tux/ActivityInfo.qml:20
 #: activities/memory-sound/ActivityInfo.qml:20
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Train your audio memory."
 msgctxt "ActivityInfo|"
 msgid "Train your audio memory."
 msgstr "Adestra a túa memoria sonora."
@@ -19321,6 +20530,9 @@ msgstr ""
 #. Help goal
 #: activities/memory-tux/ActivityInfo.qml:20
 #: activities/memory/ActivityInfo.qml:20
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Train your memory and remove all the cards."
 msgctxt "ActivityInfo|"
 msgid "Train your memory and remove all the cards."
 msgstr "Adestra a túa memoria e retira todas as tarxetas."
@@ -19533,6 +20745,9 @@ msgid ""
 msgstr ""
 
 #: activities/memory/MemoryCommon.qml:325
+#, fuzzy
+#| msgctxt "MemoryCommon|"
+#| msgid "Quit"
 msgctxt "MemoryCommon|"
 msgid "Quit"
 msgstr "Saír"
@@ -19922,11 +21137,17 @@ msgstr ""
 "ficheiros de son correspondentes?"
 
 #: activities/menu/Menu.qml:86
+#, fuzzy
+#| msgctxt "Menu|"
+#| msgid "Yes"
 msgctxt "Menu|"
 msgid "Yes"
 msgstr "Si"
 
 #: activities/menu/Menu.qml:92
+#, fuzzy
+#| msgctxt "Menu|"
+#| msgid "No"
 msgctxt "Menu|"
 msgid "No"
 msgstr "Non"
@@ -20156,12 +21377,18 @@ msgstr ""
 
 #. Help goal
 #: activities/missing-letter/ActivityInfo.qml:21
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Training reading skills."
 msgctxt "ActivityInfo|"
 msgid "Training reading skills."
 msgstr "Practica as habilidades de lectura."
 
 #. Help prerequisite
 #: activities/missing-letter/ActivityInfo.qml:23
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Word reading."
 msgctxt "ActivityInfo|"
 msgid "Word reading."
 msgstr "Lectura de palabras."
@@ -20214,6 +21441,9 @@ msgstr "Diñeiro"
 
 #. Help title
 #: activities/money/ActivityInfo.qml:17
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Practice money usage."
 msgctxt "ActivityInfo|"
 msgid "Practice money usage."
 msgstr "Practica o uso do diñeiro."
@@ -20243,6 +21473,9 @@ msgstr ""
 #: activities/money_back_cents/ActivityInfo.qml:22
 #: activities/money_cents/ActivityInfo.qml:22
 #: activities/number_sequence/ActivityInfo.qml:20
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Can count."
 msgctxt "ActivityInfo|"
 msgid "Can count."
 msgstr "Podes contar."
@@ -20339,6 +21572,9 @@ msgstr "Dálle a volta a Tux"
 #. Help title
 #: activities/money_back/ActivityInfo.qml:17
 #: activities/money_back_cents/ActivityInfo.qml:17
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Practice money usage by giving Tux his change."
 msgctxt "ActivityInfo|"
 msgid "Practice money usage by giving Tux his change."
 msgstr "Practica o uso do diñeiro dándolle a Tux o seu cambio."
@@ -20388,6 +21624,9 @@ msgstr "Diñeiro con céntimos"
 
 #. Help title
 #: activities/money_cents/ActivityInfo.qml:17
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Practice money usage including cents."
 msgctxt "ActivityInfo|"
 msgid "Practice money usage including cents."
 msgstr "Practica o uso do diñeiro incluíndo céntimos."
@@ -20886,6 +22125,9 @@ msgid ""
 msgstr ""
 
 #: activities/note_names/NoteNames.qml:454
+#, fuzzy
+#| msgctxt "NoteNames|"
+#| msgid "Quit"
 msgctxt "NoteNames|"
 msgid "Quit"
 msgstr "Saír"
@@ -20926,6 +22168,9 @@ msgstr "Secuencia numérica"
 
 #. Help title
 #: activities/number_sequence/ActivityInfo.qml:17
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Touch the numbers in the right order."
 msgctxt "ActivityInfo|"
 msgid "Touch the numbers in the right order."
 msgstr "Toca os números na orde correcta."
@@ -20950,6 +22195,9 @@ msgstr "Números pares e impares"
 
 #. Help title
 #: activities/numbers-odd-even/ActivityInfo.qml:17
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Move the helicopter to catch the clouds having even or odd numbers."
 msgctxt "ActivityInfo|"
 msgid "Move the helicopter to catch the clouds having even or odd numbers."
 msgstr ""
@@ -20984,17 +22232,29 @@ msgstr "A actividade ensina os números pares e impares."
 
 #: activities/numbers-odd-even/NumbersOddEven.qml:40
 #: activities/numbers-odd-even/NumbersOddEven.qml:50
+#, fuzzy
+#| msgctxt "NumbersOddEven|"
+#| msgid ""
+#| "Even numbers are numbers which leave a remainder of 0 when divided by 2."
 msgctxt "NumbersOddEven|"
 msgid ""
 "Even numbers are numbers which leave a remainder of 0 when divided by 2."
 msgstr "Os números pares son os que teñen resto 0 ao dividilos entre 2."
 
 #: activities/numbers-odd-even/NumbersOddEven.qml:45
+#, fuzzy
+#| msgctxt "NumbersOddEven|"
+#| msgid "What is meant by remainder?"
 msgctxt "NumbersOddEven|"
 msgid "What is meant by remainder?"
 msgstr "Que é o resto?"
 
 #: activities/numbers-odd-even/NumbersOddEven.qml:54
+#, fuzzy
+#| msgctxt "NumbersOddEven|"
+#| msgid ""
+#| "Odd numbers are numbers which do not leave a remainder of 0 when divided "
+#| "by 2."
 msgctxt "NumbersOddEven|"
 msgid ""
 "Odd numbers are numbers which do not leave a remainder of 0 when divided by "
@@ -21028,6 +22288,12 @@ msgstr ""
 " Ao dividir 7 entre 2 o resultado é 3 e o resto é 1."
 
 #: activities/numbers-odd-even/resource/Tutorial2.qml:22
+#, fuzzy
+#| msgctxt "Tutorial2|"
+#| msgid ""
+#| "For example: 12, 38, 52, 68, 102, 118, 168, 188, 502, 532, 700, 798, 842, "
+#| "892, 1000. All of these numbers are even numbers as they leave a "
+#| "remainder of 0 when divided by 2."
 msgctxt "Tutorial2|"
 msgid ""
 "For example: 12, 38, 52, 68, 102, 118, 168, 188, 502, 532, 700, 798, 842, "
@@ -21039,6 +22305,12 @@ msgstr ""
 "entre 2."
 
 #: activities/numbers-odd-even/resource/Tutorial3.qml:22
+#, fuzzy
+#| msgctxt "Tutorial3|"
+#| msgid ""
+#| "For example: 15, 19, 51, 65, 103, 119, 169, 185, 505, 533, 701, 799, 845, "
+#| "897, 1001. All of these numbers are odd numbers as they do not leave a "
+#| "remainder of 0 when divided by 2."
 msgctxt "Tutorial3|"
 msgid ""
 "For example: 15, 19, 51, 65, 103, 119, 169, 185, 505, 533, 701, 799, 845, "
@@ -21562,18 +22834,27 @@ msgstr "Completa o quebracabezas"
 
 #. Help title
 #: activities/paintings/ActivityInfo.qml:22
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Drag and Drop the pieces to rebuild the original paintings."
 msgctxt "ActivityInfo|"
 msgid "Drag and Drop the pieces to rebuild the original paintings."
 msgstr "Arrastra e solta os elementos para reconstruír os cadros orixinais."
 
 #. Help goal
 #: activities/paintings/ActivityInfo.qml:25
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Spatial representation."
 msgctxt "ActivityInfo|"
 msgid "Spatial representation."
 msgstr "Representación espacial."
 
 #. Help prerequisite
 #: activities/paintings/ActivityInfo.qml:27
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Mouse-manipulation: movement, drag and drop."
 msgctxt "ActivityInfo|"
 msgid "Mouse-manipulation: movement, drag and drop."
 msgstr "Manexo do rato: movemento, arrastrar e soltar."
@@ -21893,6 +23174,9 @@ msgstr "Cazador de fotos"
 
 #. Help title
 #: activities/photo_hunter/ActivityInfo.qml:17
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Find the differences between the two pictures."
 msgctxt "ActivityInfo|"
 msgid "Find the differences between the two pictures."
 msgstr "Atopa as diferenzas entre as dúas imaxes."
@@ -21917,11 +23201,17 @@ msgstr ""
 "Cando atopes unha, prémea."
 
 #: activities/photo_hunter/PhotoHunter.qml:94
+#, fuzzy
+#| msgctxt "PhotoHunter|"
+#| msgid "Drag the slider to show the differences."
 msgctxt "PhotoHunter|"
 msgid "Drag the slider to show the differences."
 msgstr "Arrastra os controis desprazábeis para mostrar as diferenzas."
 
 #: activities/photo_hunter/PhotoHunter.qml:95
+#, fuzzy
+#| msgctxt "PhotoHunter|"
+#| msgid "Click on the differences between the two images."
 msgctxt "PhotoHunter|"
 msgid "Click on the differences between the two images."
 msgstr "Preme as diferenzas entre as dúas imaxes."
@@ -21982,6 +23272,9 @@ msgstr ""
 
 #. Help prerequisite
 #: activities/piano_composition/ActivityInfo.qml:23
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Familiarity with note naming conventions."
 msgctxt "ActivityInfo|"
 msgid "Familiarity with note naming conventions."
 msgstr "Familiaridade con convencións de nome de notas."
@@ -22458,6 +23751,9 @@ msgid ""
 msgstr ""
 
 #: activities/piano_composition/Piano_composition.qml:549
+#, fuzzy
+#| msgctxt "Piano_composition|"
+#| msgid "Quit"
 msgctxt "Piano_composition|"
 msgid "Quit"
 msgstr "Saír"
@@ -22639,6 +23935,9 @@ msgstr "Números en orde"
 
 #. Help title
 #: activities/planegame/ActivityInfo.qml:17
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Move the helicopter to catch the clouds in the correct order."
 msgctxt "ActivityInfo|"
 msgid "Move the helicopter to catch the clouds in the correct order."
 msgstr "Move o helicóptero para capturar nubes na orde correcta."
@@ -22665,11 +23964,17 @@ msgstr ""
 "comprobalo na esquina inferior dereita."
 
 #: activities/play_piano/ActivityConfig.qml:35
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Display colored notes."
 msgctxt "ActivityConfig|"
 msgid "Display colored notes."
 msgstr "Mostrar notas coloradas."
 
 #: activities/play_piano/ActivityConfig.qml:48
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Display colorless notes."
 msgctxt "ActivityConfig|"
 msgid "Display colorless notes."
 msgstr "Mostrar notas sen cores."
@@ -22736,6 +24041,9 @@ msgid ""
 msgstr ""
 
 #: activities/play_piano/PlayPiano.qml:280
+#, fuzzy
+#| msgctxt "PlayPiano|"
+#| msgid "Quit"
 msgctxt "PlayPiano|"
 msgid "Quit"
 msgstr "Saír"
@@ -22762,6 +24070,9 @@ msgstr ""
 
 #. Help prerequisite
 #: activities/play_rhythm/ActivityInfo.qml:26
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Simple understanding of musical rhythm."
 msgctxt "ActivityInfo|"
 msgid "Simple understanding of musical rhythm."
 msgstr "Comprensión básica de ritmo musical."
@@ -22849,6 +24160,9 @@ msgid ""
 msgstr ""
 
 #: activities/play_rhythm/PlayRhythm.qml:360
+#, fuzzy
+#| msgctxt "PlayRhythm|"
+#| msgid "Quit"
 msgctxt "PlayRhythm|"
 msgid "Quit"
 msgstr "Saír"
@@ -23338,6 +24652,9 @@ msgstr "Move o submarino ao outro lado da pantalla."
 
 #. Help goal
 #: activities/railroad/ActivityInfo.qml:22
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Memory training."
 msgctxt "ActivityInfo|"
 msgid "Memory training."
 msgstr "Adestramento de memoria."
@@ -23363,6 +24680,9 @@ msgstr ""
 "dun elemento arrastrándoo abaixo.<br><br>"
 
 #: activities/railroad/ActivityInfo.qml:27
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "<b>Keyboard Controls:</b>"
 msgctxt "ActivityInfo|"
 msgid "<b>Keyboard Controls:</b>"
 msgstr "<b>Controis de teclado:</b>"
@@ -23431,6 +24751,9 @@ msgstr "Le unha lista de palabras e lembra se unha palabra está nela."
 #. Help goal
 #: activities/readingh/ActivityInfo.qml:20
 #: activities/readingv/ActivityInfo.qml:20
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Reading training in a limited time."
 msgctxt "ActivityInfo|"
 msgid "Reading training in a limited time."
 msgstr "Práctica de lectura con tempo limitado."
@@ -23473,6 +24796,9 @@ msgstr "Non a vin!"
 
 #. Activity title
 #: activities/readingv/ActivityInfo.qml:15
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Vertical reading practice"
 msgctxt "ActivityInfo|"
 msgid "Vertical reading practice"
 msgstr "Práctica de lectura vertical"
@@ -23612,6 +24938,11 @@ msgstr "Enerxía renobábel"
 
 #. Help title
 #: activities/renewable_energy/ActivityInfo.qml:17
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "Tux has come back from fishing on his boat. Bring the electrical system "
+#| "back up so he can have light in his home."
 msgctxt "ActivityInfo|"
 msgid ""
 "Tux has come back from fishing on his boat. Bring the electrical system back "
@@ -23622,6 +24953,9 @@ msgstr ""
 
 #. Help goal
 #: activities/renewable_energy/ActivityInfo.qml:20
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Learn about an electrical system based on renewable energy."
 msgctxt "ActivityInfo|"
 msgid "Learn about an electrical system based on renewable energy."
 msgstr "Aprende sobre o sistema eléctrico baseado en enerxías renovábeis."
@@ -23708,12 +25042,18 @@ msgstr ""
 
 #: activities/reversecount/ActivityConfig.qml:22
 #: activities/smallnumbers2/ActivityConfig.qml:21
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Arabic numbers"
 msgctxt "ActivityConfig|"
 msgid "Arabic numbers"
 msgstr "Números arábigos"
 
 #: activities/reversecount/ActivityConfig.qml:23
 #: activities/smallnumbers2/ActivityConfig.qml:22
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Roman numbers"
 msgctxt "ActivityConfig|"
 msgid "Roman numbers"
 msgstr "Números romanos"
@@ -23721,12 +25061,18 @@ msgstr "Números romanos"
 #: activities/reversecount/ActivityConfig.qml:24
 #: activities/smallnumbers2/ActivityConfig.qml:23
 #: activities/traffic/ActivityConfig.qml:22
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Images"
 msgctxt "ActivityConfig|"
 msgid "Images"
 msgstr "Imaxes"
 
 #: activities/reversecount/ActivityConfig.qml:33
 #: activities/smallnumbers2/ActivityConfig.qml:36
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Select Domino Representation"
 msgctxt "ActivityConfig|"
 msgid "Select Domino Representation"
 msgstr "Selecciona a representación de dominós"
@@ -23991,12 +25337,18 @@ msgstr "Equilibra a balanza de forma axeitada"
 
 #. Help title
 #: activities/scalesboard/ActivityInfo.qml:17
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Drag and Drop some weights to balance the scales."
 msgctxt "ActivityInfo|"
 msgid "Drag and Drop some weights to balance the scales."
 msgstr "Arrastra e solta os pesos para que equilibren as balanzas."
 
 #. Help goal
 #: activities/scalesboard/ActivityInfo.qml:20
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Mental calculation, arithmetic equality."
 msgctxt "ActivityInfo|"
 msgid "Mental calculation, arithmetic equality."
 msgstr "Cálculo mental, igualdade aritmética."
@@ -24192,7 +25544,9 @@ msgstr "Agora tes que adiviñar o peso do agasallo."
 #: activities/scalesboard/resource/8/Data.qml:77
 #: activities/scalesboard/resource/8/Data.qml:84
 #: activities/scalesboard/resource/8/Data.qml:91
-#, qt-format
+#, fuzzy, qt-format
+#| msgctxt "Data|"
+#| msgid "Enter the weight of the gift: %1"
 msgctxt "Data|"
 msgid "Enter the weight of the gift: %1"
 msgstr "Insire o peso do agasallo: %1"
@@ -24242,6 +25596,9 @@ msgstr ""
 #. Help goal
 #: activities/scalesboard_weight/ActivityInfo.qml:20
 #: activities/scalesboard_weight_avoirdupois/ActivityInfo.qml:20
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Mental calculation, arithmetic equality, unit conversion."
 msgctxt "ActivityInfo|"
 msgid "Mental calculation, arithmetic equality, unit conversion."
 msgstr "Cálculo mental, igualdade aritmética, conversión de unidades."
@@ -24275,23 +25632,33 @@ msgstr ""
 #: activities/scalesboard_weight/resource/3/Data.qml:18
 #: activities/scalesboard_weight/resource/5/Data.qml:18
 #: activities/scalesboard_weight/resource/6/Data.qml:18
-#, qt-format
+#, fuzzy, qt-format
+#| msgctxt "Data|"
+#| msgid "%1 g"
 msgctxt "Data|"
 msgid "%1 g"
 msgstr "%1 g"
 
 #: activities/scalesboard_weight/resource/1/Data.qml:26
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "The \"g\" symbol at the end of a number means gram."
 msgctxt "Data|"
 msgid "The \"g\" symbol at the end of a number means gram."
 msgstr "O símbolo «g» ao final dun número significa «gramo»."
 
 #: activities/scalesboard_weight/resource/1/Data.qml:32
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Take care, you can drop weights on both sides of the scale."
 msgctxt "Data|"
 msgid "Take care, you can drop weights on both sides of the scale."
 msgstr "Coidado, podes botar os pesos en ambos os lados da balanza."
 
 #: activities/scalesboard_weight/resource/1/Data.qml:39
-#, qt-format
+#, fuzzy, qt-format
+#| msgctxt "Data|"
+#| msgid "Enter the weight of the gift in grams: %1"
 msgctxt "Data|"
 msgid "Enter the weight of the gift in grams: %1"
 msgstr "Insire o peso do agasallo en gramos: %1"
@@ -24328,7 +25695,9 @@ msgstr ""
 #: activities/scalesboard_weight/resource/5/Data.qml:97
 #: activities/scalesboard_weight/resource/6/Data.qml:71
 #: activities/scalesboard_weight/resource/6/Data.qml:78
-#, qt-format
+#, fuzzy, qt-format
+#| msgctxt "Data|"
+#| msgid "Enter the weight of the gift in gram: %1"
 msgctxt "Data|"
 msgid "Enter the weight of the gift in gram: %1"
 msgstr "Insire o peso do agasallo en gramos: %1"
@@ -24345,12 +25714,17 @@ msgstr ""
 
 #: activities/scalesboard_weight/resource/4/Data.qml:18
 #: activities/scalesboard_weight/resource/6/Data.qml:23
-#, qt-format
+#, fuzzy, qt-format
+#| msgctxt "Data|"
+#| msgid "%1 kg"
 msgctxt "Data|"
 msgid "%1 kg"
 msgstr "%1 kg"
 
 #: activities/scalesboard_weight/resource/4/Data.qml:26
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "The \"kg\" symbol at the end of a number means kilogram."
 msgctxt "Data|"
 msgid "The \"kg\" symbol at the end of a number means kilogram."
 msgstr "O símbolo «kg» ao final dun número significa «quilogramo»."
@@ -24377,7 +25751,9 @@ msgstr ""
 #: activities/scalesboard_weight/resource/4/Data.qml:101
 #: activities/scalesboard_weight/resource/6/Data.qml:57
 #: activities/scalesboard_weight/resource/6/Data.qml:64
-#, qt-format
+#, fuzzy, qt-format
+#| msgctxt "Data|"
+#| msgid "Enter the weight of the gift in kilogram: %1"
 msgctxt "Data|"
 msgid "Enter the weight of the gift in kilogram: %1"
 msgstr "Insire o peso do agasallo en quilogramos: %1"
@@ -24455,7 +25831,9 @@ msgstr ""
 #: activities/scalesboard_weight_avoirdupois/resource/3/Data.qml:18
 #: activities/scalesboard_weight_avoirdupois/resource/5/Data.qml:18
 #: activities/scalesboard_weight_avoirdupois/resource/6/Data.qml:18
-#, qt-format
+#, fuzzy, qt-format
+#| msgctxt "Data|"
+#| msgid "%1 oz"
 msgctxt "Data|"
 msgid "%1 oz"
 msgstr "%1 oz"
@@ -24489,7 +25867,9 @@ msgstr ""
 #: activities/scalesboard_weight_avoirdupois/resource/5/Data.qml:97
 #: activities/scalesboard_weight_avoirdupois/resource/6/Data.qml:68
 #: activities/scalesboard_weight_avoirdupois/resource/6/Data.qml:82
-#, qt-format
+#, fuzzy, qt-format
+#| msgctxt "Data|"
+#| msgid "Enter the weight of the gift in ounce: %1"
 msgctxt "Data|"
 msgid "Enter the weight of the gift in ounce: %1"
 msgstr "Insire o peso do agasallo en onzas: %1"
@@ -24511,7 +25891,9 @@ msgstr ""
 
 #: activities/scalesboard_weight_avoirdupois/resource/4/Data.qml:18
 #: activities/scalesboard_weight_avoirdupois/resource/6/Data.qml:23
-#, qt-format
+#, fuzzy, qt-format
+#| msgctxt "Data|"
+#| msgid "%1 lb"
 msgctxt "Data|"
 msgid "%1 lb"
 msgstr "%1 lb"
@@ -24606,12 +25988,18 @@ msgstr "Intenta repartir os doces entre o número indicado de nenas e nenos"
 
 #. Help goal
 #: activities/share/ActivityInfo.qml:20
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Learn division of numbers."
 msgctxt "ActivityInfo|"
 msgid "Learn division of numbers."
 msgstr "Aprende a dividir números."
 
 #. Help prerequisite
 #: activities/share/ActivityInfo.qml:22
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Know how to count."
 msgctxt "ActivityInfo|"
 msgid "Know how to count."
 msgstr "Sabe como contar."
@@ -25583,9 +26971,6 @@ msgstr ""
 
 #. Activity title
 #: activities/smallnumbers2/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Numbers with dominoes"
 msgctxt "ActivityInfo|"
 msgid "Numbers with dominoes"
 msgstr "Números con fichas de dominó"
