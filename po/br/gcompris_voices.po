@@ -1,21 +1,21 @@
 # Copyright (C) YEAR This file is copyright:
 # This file is distributed under the same license as the gcompris package.
 #
-# KERVOAS <envelkervoas@free.fr>, 2019, 2020, 2021.
+# KERVOAS <envelkervoas@free.fr>, 2019, 2020, 2021, 2022, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-12-17 02:40+0000\n"
-"PO-Revision-Date: 2021-12-16 21:22+0100\n"
-"Last-Translator: Envel KERVOAS <envelkervoas@free.fr>\n"
+"PO-Revision-Date: 2023-01-01 14:49+0100\n"
+"Last-Translator: Kervoas <envelkervoas@free.fr>\n"
 "Language-Team: Breton <kde-i18n-doc@kde.org>\n"
 "Language: br\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 19.12.3\n"
+"X-Generator: Lokalize 21.12.3\n"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "advanced_colors"
 #: activities/advanced_colors/ActivityInfo.qml:18
@@ -225,10 +225,9 @@ msgstr "Renk an traoù er rummad a-feson"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "checkers"
 #: activities/checkers/ActivityInfo.qml:18
-#, fuzzy, kde-format
-#| msgid "play chess against Tux"
+#, kde-format
 msgid "play checkers against Tux"
-msgstr "C'hoari echedoù a-enep Tuks"
+msgstr "C'hoari damoù a-enep Tuks"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "checkers_2players"
 #: activities/checkers_2players/ActivityInfo.qml:18
@@ -320,7 +319,7 @@ msgstr "Klik war al liv dereat"
 #, kde-format
 msgid ""
 "Select the correct comparator sign for each pair of numbers in the list."
-msgstr ""
+msgstr "Dibab ar sin keñveriañ reizh evit pep koublad niveroù er roll."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "crane"
 #: activities/crane/ActivityInfo.qml:23
@@ -456,13 +455,13 @@ msgstr "Rikl ul linenn diwar ar vell en ur zibab tizh ha tu da daol-troad."
 #, kde-format
 msgid ""
 "Select the appropriate number of parts as described in the instructions."
-msgstr ""
+msgstr "Dibab an niveroù reizh a bep tu evel deskrivet en urzhioù. "
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "fractions_find"
 #: activities/fractions_find/ActivityInfo.qml:17
 #, kde-format
 msgid "Find the correct numerator and denominator of the represented fraction"
-msgstr ""
+msgstr "Kav an niverer hag an anver reizh evit ar gevrenn diskouezet."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "geo-country"
 #: activities/geo-country/ActivityInfo.qml:22
@@ -685,6 +684,8 @@ msgstr ""
 msgid ""
 "Move animals to their homes using a left click or right click on your mouse."
 msgstr ""
+"Diblas al loened betek o zi en ur implijout ur c'hlik-kleiz pe  ur c'hlik-"
+"dehou gant al logodenn."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "leftright"
 #: activities/leftright/ActivityInfo.qml:18
@@ -887,10 +888,9 @@ msgstr "Klik war an arc'hant evit paeañ."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "morse_code"
 #: activities/morse_code/ActivityInfo.qml:21
-#, fuzzy, kde-format
-#| msgid "Learn and practice roman to arabic numerals conversion"
+#, kde-format
 msgid "Learn and practice the International Morse code"
-msgstr "Desk penaos kemm niveroù roman hag arab kenetreze."
+msgstr "Desk ober gant kod etrevroadel Morse"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "mosaic"
 #: activities/mosaic/ActivityInfo.qml:18
@@ -1221,6 +1221,8 @@ msgid ""
 "Create pairs of numbers equal to ten. Select a number in the list, then "
 "select an empty spot of an operation to move the selected number there."
 msgstr ""
+"Krou koubladoù niveroù par da zek. Dibab un niver er roll, choaz goude ul "
+"lec'h goullo er jedadenn evit kas an niver dibabet aze."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "tens_complement_swap"
 #: activities/tens_complement_swap/ActivityInfo.qml:17
@@ -1229,6 +1231,8 @@ msgid ""
 "Create pairs of numbers equal to ten. Select a number, then select another "
 "number of the same operation to swap their position."
 msgstr ""
+"Krou koubladoù niveroù par da zek. Dibab un niver, choaz goude un niver all "
+"er memes jedadenn a-benn eskemm o flas."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "tens_complement_use"
 #: activities/tens_complement_use/ActivityInfo.qml:17
@@ -1238,6 +1242,9 @@ msgid ""
 "number in the list, then select an empty spot of an operation to move the "
 "selected number there."
 msgstr ""
+"Gra en-dro ar jedadennoù a-benn kaout ur c'houblad niveroù par da zek. Dibab "
+"un niver er roll, choaz goude ul lec'h goullo er jedadenn evit kas an niver "
+"dibabet aze."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "tic_tac_toe_2players"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "tic_tac_toe"
