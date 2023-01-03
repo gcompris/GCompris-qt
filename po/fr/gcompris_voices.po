@@ -1,20 +1,21 @@
 # Jazeix Johnny <jazeix@gmail.com>, 2017.
 # Timothée Giet <animtim@gmail.com>, 2020.
 # Xavier Besnard <xavier.besnard@neuf.fr>, 2020, 2021, 2022.
+# charruau <echarruau@gmail.com>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: gcompris voices\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-12-13 00:48+0000\n"
-"PO-Revision-Date: 2022-03-16 19:30+0100\n"
-"Last-Translator: Xavier Besnard <xavier.besnard@neuf.fr>\n"
+"PO-Revision-Date: 2023-01-02 12:18+0100\n"
+"Last-Translator: charruau <echarruau@gmail.com>\n"
 "Language-Team: French <kde-francophone@kde.org>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 21.12.3\n"
+"X-Generator: Lokalize 22.12.0\n"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "advanced_colors"
 #: activities/advanced_colors/ActivityInfo.qml:18
@@ -323,6 +324,8 @@ msgstr "Sélectionne la couleur énoncée oralement."
 msgid ""
 "Select the correct comparator sign for each pair of numbers in the list."
 msgstr ""
+"Sélectionne le signe de comparaison qui convient pour chaque paire de "
+"chiffres de la liste."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "crane"
 #: activities/crane/ActivityInfo.qml:23
@@ -463,13 +466,13 @@ msgstr ""
 #, kde-format
 msgid ""
 "Select the appropriate number of parts as described in the instructions."
-msgstr ""
+msgstr "Choisis le bon nombre de parts demandé par la consigne."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "fractions_find"
 #: activities/fractions_find/ActivityInfo.qml:17
 #, kde-format
 msgid "Find the correct numerator and denominator of the represented fraction"
-msgstr ""
+msgstr "Trouve le numérateur et le dénominateur de la fraction présentée."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "geo-country"
 #: activities/geo-country/ActivityInfo.qml:22
@@ -696,6 +699,8 @@ msgstr ""
 msgid ""
 "Move animals to their homes using a left click or right click on your mouse."
 msgstr ""
+"Déplace les animaux vers leurs maisons en utilisant le clic gauche ou le "
+"clic droit de ta souris."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "leftright"
 #: activities/leftright/ActivityInfo.qml:18
@@ -898,10 +903,9 @@ msgstr "Choisis les pièces ou les billets dont tu as besoin pour payer."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "morse_code"
 #: activities/morse_code/ActivityInfo.qml:21
-#, fuzzy, kde-format
-#| msgid "Learn and practice roman to arabic numerals conversion"
+#, kde-format
 msgid "Learn and practice the International Morse code"
-msgstr "Apprends à convertir les nombres romains."
+msgstr "Apprends puis entraine-toi à utiliser le code Morse."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "mosaic"
 #: activities/mosaic/ActivityInfo.qml:18
@@ -1242,6 +1246,9 @@ msgid ""
 "Create pairs of numbers equal to ten. Select a number in the list, then "
 "select an empty spot of an operation to move the selected number there."
 msgstr ""
+"Crée des paires de nombres égaux à dix. Sélectionne un nombre dans la liste, "
+"puis sélectionne un emplacement vide d'une opération pour y déplacer le "
+"nombre sélectionné."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "tens_complement_swap"
 #: activities/tens_complement_swap/ActivityInfo.qml:17
@@ -1250,6 +1257,9 @@ msgid ""
 "Create pairs of numbers equal to ten. Select a number, then select another "
 "number of the same operation to swap their position."
 msgstr ""
+"Crée des paires de nombres égaux à dix. Sélectionnez un nombre, puis "
+"sélectionne un autre nombre de la même opération pour permuter leurs "
+"positions."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "tens_complement_use"
 #: activities/tens_complement_use/ActivityInfo.qml:17
@@ -1259,6 +1269,9 @@ msgid ""
 "number in the list, then select an empty spot of an operation to move the "
 "selected number there."
 msgstr ""
+"Décompose les opérations pour former une paire de nombres égale à dix. "
+"Sélectionne un nombre dans la liste, puis sélectionne un emplacement vide "
+"d'une opération pour y déplacer le nombre sélectionné."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "tic_tac_toe_2players"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "tic_tac_toe"
