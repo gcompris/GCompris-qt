@@ -41,7 +41,7 @@ done
 
 git add -f ../poqm
 # Remove the po from po/ folder, they are unused
-git rm -f ../po
+git rm -rf ../po
 git commit -a -m "PO INTEGRATED / DO NOT PUSH ME"
 make dist
 git checkout ${curbranch}
