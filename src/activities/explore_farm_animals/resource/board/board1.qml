@@ -65,18 +65,6 @@ QtObject {
             "height": 0.1
         },
         {
-            "image": "qrc:/gcompris/src/activities/explore_farm_animals/resource/animals/pig.svg",
-            "title": qsTr("Pig"),
-            "text": qsTr("The pig goes 'oink'. Pigs wallow in the mud, mainly to control their body temperature."),
-            "audio": GCompris.ApplicationInfo.getAudioFilePath("qrc:/gcompris/src/activities/explore_farm_animals/resource/animals/pig.$CA"),
-            "image2": "qrc:/gcompris/src/activities/explore_farm_animals/resource/animals/pig.webp",
-            "text2": qsTr("This animal wallows in the mud to control its body temperature."),
-            "x": 0.38,
-            "y": 0.65,
-            "width": 0.18,
-            "height": 0.14
-        },
-        {
             "image": "qrc:/gcompris/src/activities/explore_farm_animals/resource/animals/duck.svg",
             "title": qsTr("Duck"),
             "text": qsTr("The duck goes 'quack'. Ducks are mostly aquatic birds. They have waterproof feathers and webbed feet which enable them to swim on the water."),
