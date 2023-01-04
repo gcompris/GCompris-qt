@@ -1,5 +1,5 @@
 # Vít Pelčák <vit@pelcak.org>, 2014, 2015, 2016, 2017, 2018, 2019, 2020.
-# Vit Pelcak <vpelcak@suse.cz>, 2021, 2022.
+# Vit Pelcak <vit@pelcak.org>, 2021, 2022, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Lokalize 22.08.1\n"
+"X-Generator: Lokalize 22.12.0\n"
 "X-Qt-Contexts: true\n"
 
 #. Activity title
@@ -4010,26 +4010,6 @@ msgstr "Hrát šachy proti Tuxovi"
 
 #. Help manual Much of this string is shared across the three activities "chess", "chess_partyend", and "chess_2players".
 #: activities/chess/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "In this activity you discover the chess game by playing against the "
-#| "computer. It displays the possible target positions for any selected "
-#| "piece which helps the children understand how pieces moves. At first "
-#| "level the computer is fully random to give more chances to the children. "
-#| "As level increases, the computer plays better.\n"
-#| "\n"
-#| "You can achieve a mate sooner if you follow these simple rules:\n"
-#| "    Trying to drive your opponent's king in the corner.\n"
-#| "<b>Explanation</b>: this way your opponent's king would have only 3 "
-#| "directions to move instead of 8 from a better position.\n"
-#| "    'Making a trap'. Use your pawns as baits.\n"
-#| "<b>Explanation</b>: this way you can lure your opponent out of his "
-#| "'comfort zone'.\n"
-#| "    Be patient enough.\n"
-#| "<b>Explanation</b>: don't rush too quick, be patient. Let yourself think "
-#| "a little bit and try to predict your opponent's future moves, so that you "
-#| "can catch him or secure your pieces from his attacks."
 msgctxt "ActivityInfo|"
 msgid ""
 "In this activity you discover the chess game by playing against the "
@@ -4051,23 +4031,6 @@ msgid ""
 "little bit and try to predict your opponent's future moves, so that you can "
 "catch him or secure your pieces from his attacks."
 msgstr ""
-"V této aktivitě poznáte hru šachy hraním proti počítači. Aktivita zobrazuje "
-"možné cílové pozice pro libovolnou vybranou figuru, což dětem pomáhá "
-"pochopit, jak se figury pohybují. Na první úrovni je počítač zcela náhodný, "
-"aby dal dětem větší šanci. Jak se úroveň zvyšuje, počítač hraje lépe.\n"
-"\n"
-"Matu můžete dosáhnout dříve, pokud budete postupovat podle těchto "
-"jednoduchých pravidel:\n"
-"     Pokusíte se zahnat soupeřova krále do rohu.\n"
-"<b>Vysvětlení</b>: takto by král vašeho soupeře měl jen 3směry k pohybu "
-"místo 8 z lepší polohy.\n"
-"     'Výroba pasti'. Použijte své pěšce jako návnady.\n"
-"<b>Vysvětlení</b>: tímto způsobem můžete svého soupeře vylákat z jeho "
-"'komfortní zóny'.\n"
-"     Buďte dost trpěliví.\n"
-"<b>Vysvětlení</b>: příliš nespěchejte, buďte trpěliví. Přemýšlejtea pokuste "
-"se předvídat budoucí tahy soupeře, abyste ho mohlinachytat nebo ochránit své "
-"figury před jeho útoky."
 
 #: activities/chess/ActivityInfo.qml:32
 #: activities/chess_2players/ActivityInfo.qml:32
@@ -5140,12 +5103,9 @@ msgstr "Pokračovat"
 
 #. Activity title
 #: activities/comparator/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Compare numbers."
 msgctxt "ActivityInfo|"
 msgid "Compare numbers"
-msgstr "Porovnej čísla."
+msgstr ""
 
 #. Help title
 #: activities/comparator/ActivityInfo.qml:19
@@ -5155,12 +5115,9 @@ msgstr ""
 
 #. Help goal
 #: activities/comparator/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn about prime numbers."
 msgctxt "ActivityInfo|"
 msgid "Learn how to compare number values."
-msgstr "Nauč se prvočísla."
+msgstr ""
 
 #. Help manual
 #: activities/comparator/ActivityInfo.qml:26
@@ -5179,20 +5136,14 @@ msgid ""
 msgstr ""
 
 #: activities/comparator/ActivityInfo.qml:29
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Down arrow: select previous item"
 msgctxt "ActivityInfo|"
 msgid "Up and Down arrows: select a pair of numbers in the list"
-msgstr "Šipka dolů: výběr předchozí položky"
+msgstr ""
 
 #: activities/comparator/ActivityInfo.qml:30
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Left and Right arrows: turn left and right"
 msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: select a symbol button"
-msgstr "Šipky vlevo a vpravo: otočení doleva a doprava"
+msgstr ""
 
 #: activities/comparator/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
@@ -5200,12 +5151,9 @@ msgid "Space: if a symbol button is selected, enter this symbol"
 msgstr ""
 
 #: activities/comparator/ActivityInfo.qml:32
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Enter: validate your answer"
 msgctxt "ActivityInfo|"
 msgid "Return: validate the answers"
-msgstr "Enter: zkontrolovat tvoji odpověď"
+msgstr ""
 
 #: activities/comparator/ActivityInfo.qml:33
 msgctxt "ActivityInfo|"
@@ -5214,12 +5162,9 @@ msgstr ""
 
 #: activities/comparator/resource/1/Data.qml:36
 #: activities/tens_complement_find/resource/3/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Digits from 1 to 9."
 msgctxt "Data|"
 msgid "Numbers from 1 to 9."
-msgstr "Číslice od 1 do 9."
+msgstr ""
 
 #: activities/comparator/resource/10/Data.qml:14
 msgctxt "Data|"
@@ -5227,28 +5172,19 @@ msgid "3 decimal places between 0 and 999."
 msgstr ""
 
 #: activities/comparator/resource/2/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Digits from 1 to 9."
 msgctxt "Data|"
 msgid "Numbers from 1 to 19."
-msgstr "Číslice od 1 do 9."
+msgstr ""
 
 #: activities/comparator/resource/3/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Digits from 1 to 2."
 msgctxt "Data|"
 msgid "Numbers from 1 to 100."
-msgstr "Číslice od 1 do 2."
+msgstr ""
 
 #: activities/comparator/resource/4/Data.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplication tables from 1 to 10."
 msgctxt "Data|"
 msgid "Numbers from 1 to 1000."
-msgstr "Tabulky násobení od 1 do 10."
+msgstr ""
 
 #: activities/comparator/resource/5/Data.qml:14
 msgctxt "Data|"
@@ -6602,12 +6538,9 @@ msgid ""
 msgstr ""
 
 #: activities/explore_farm_animals/resource/board/board1.qml:25
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal's ancestors were wolves."
 msgctxt "board1|"
 msgid "This animal has single-toed hooves."
-msgstr "Předkové těchto zvířat jsou vlci."
+msgstr ""
 
 #: activities/explore_farm_animals/resource/board/board1.qml:33
 msgctxt "board1|"
@@ -6622,12 +6555,9 @@ msgid ""
 msgstr ""
 
 #: activities/explore_farm_animals/resource/board/board1.qml:37
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal likes to come out at night."
 msgctxt "board1|"
 msgid "This animal has a comb on its head."
-msgstr "Toto zvíře rádo vychází ven v noci."
+msgstr ""
 
 #: activities/explore_farm_animals/resource/board/board1.qml:45
 msgctxt "board1|"
@@ -6661,12 +6591,9 @@ msgid ""
 msgstr ""
 
 #: activities/explore_farm_animals/resource/board/board1.qml:61
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal lays eggs."
 msgctxt "board1|"
 msgid "This animal can purr."
-msgstr "Toto zvíře klade vejce."
+msgstr ""
 
 #: activities/explore_farm_animals/resource/board/board1.qml:69
 msgctxt "board1|"
@@ -6698,12 +6625,9 @@ msgid ""
 msgstr ""
 
 #: activities/explore_farm_animals/resource/board/board1.qml:85
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal has webbed feet so it can swim in the water."
 msgctxt "board1|"
 msgid "This animal has webbed feet and can swim on the water."
-msgstr "Toto zvíře má plovací blány, aby mohlo plavat ve vodě."
+msgstr ""
 
 #: activities/explore_farm_animals/resource/board/board1.qml:93
 msgctxt "board1|"
@@ -6711,24 +6635,16 @@ msgid "Owl"
 msgstr "Sova"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:94
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid ""
-#| "The owl goes 'hoo. hoo.' The owl has excellent vision and hearing at "
-#| "night."
 msgctxt "board1|"
 msgid ""
 "The owl goes 'hoot'. Owls are nocturnal birds, they have excellent vision "
 "and hearing at night."
-msgstr "Sova dělá 'hu hůů'. Sova v výborně vidí a slyší v noci."
+msgstr ""
 
 #: activities/explore_farm_animals/resource/board/board1.qml:97
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal likes to come out at night."
 msgctxt "board1|"
 msgid "This animal is a nocturnal bird."
-msgstr "Toto zvíře rádo vychází ven v noci."
+msgstr ""
 
 #: activities/explore_farm_animals/resource/board/board1.qml:105
 msgctxt "board1|"
@@ -6743,12 +6659,9 @@ msgid ""
 msgstr ""
 
 #: activities/explore_farm_animals/resource/board/board1.qml:109
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal is a close relative to the goat."
 msgctxt "board1|"
 msgid "This animal is a descendant of the wolf."
-msgstr "Tohle zvíře je blízký příbuzný kozy."
+msgstr ""
 
 #: activities/explore_farm_animals/resource/board/board1.qml:117
 msgctxt "board1|"
@@ -6763,12 +6676,9 @@ msgid ""
 msgstr ""
 
 #: activities/explore_farm_animals/resource/board/board1.qml:121
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal's ancestors were wolves."
 msgctxt "board1|"
 msgid "This animal produces wool."
-msgstr "Předkové těchto zvířat jsou vlci."
+msgstr ""
 
 #: activities/explore_farm_animals/resource/board/board1.qml:131
 msgctxt "board1|"
@@ -9073,12 +8983,9 @@ msgstr ""
 
 #. Activity title
 #: activities/fractions_find/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "instruments|"
-#| msgid "Find the accordion"
 msgctxt "ActivityInfo|"
 msgid "Find the fractions"
-msgstr "Najdi tahací harmoniku"
+msgstr ""
 
 #. Help title
 #: activities/fractions_find/ActivityInfo.qml:16
@@ -15029,12 +14936,9 @@ msgstr "Povolit hlasy"
 
 #. Activity title
 #: activities/learn_digits/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Count the items"
 msgctxt "ActivityInfo|"
 msgid "Count and color the circles"
-msgstr "Spočítej položky"
+msgstr ""
 
 #. Help title
 #: activities/learn_digits/ActivityInfo.qml:17
@@ -15213,20 +15117,14 @@ msgid "Subtractions with 1, 2, 3, 4 and 5."
 msgstr "Odčítání s 1, 2, 3, 4 a 5."
 
 #: activities/learn_subtractions/resource/4/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2, 3, 4 and 5."
 msgctxt "Data|"
 msgid "Subtractions with 1, 2, 3, 4, 5, 6 and 7."
-msgstr "Odčítání s 1, 2, 3, 4 a 5."
+msgstr ""
 
 #: activities/learn_subtractions/resource/5/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2, 3, 4 and 5."
 msgctxt "Data|"
 msgid "Subtractions with 1, 2, 3, 4, 5, 6, 7, 8 and 9."
-msgstr "Odčítání s 1, 2, 3, 4 a 5."
+msgstr ""
 
 #. Activity title
 #: activities/left_right_click/ActivityInfo.qml:14
@@ -17924,21 +17822,15 @@ msgstr ""
 
 #. Activity title
 #: activities/morse_code/ActivityInfo.qml:18
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Discover the braille system"
 msgctxt "ActivityInfo|"
 msgid "Discover the International Morse code"
-msgstr "Poznej Braillovo písmo"
+msgstr ""
 
 #. Help title
 #: activities/morse_code/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn how to tell the time on an analog clock."
 msgctxt "ActivityInfo|"
 msgid "Learn how to communicate with the International Morse code."
-msgstr "Nauč se, jak zjistit čas na ručičkových hodinách."
+msgstr ""
 
 #. Help goal
 #: activities/morse_code/ActivityInfo.qml:23
@@ -17949,12 +17841,9 @@ msgstr ""
 
 #. Help prerequisite
 #: activities/morse_code/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Knowledge of arithmetic operations."
 msgctxt "ActivityInfo|"
 msgid "Knowledge of alphabets and digits."
-msgstr "Znalost matematických operací."
+msgstr ""
 
 #. Help manual
 #: activities/morse_code/ActivityInfo.qml:27
@@ -17991,38 +17880,26 @@ msgid ""
 msgstr ""
 
 #: activities/morse_code/FirstScreen.qml:90
-#, fuzzy
-#| msgctxt "FirstScreen|"
-#| msgid ""
-#| "When you are ready, click on me and try reproducing braille characters."
 msgctxt "FirstScreen|"
 msgid "When you are ready, click on Tux and we will converse in Morse code."
 msgstr ""
-"Až budeš připraven, klikni na mě a zkus po mně opakovat Braillovo písmena."
 
 #: activities/morse_code/MorseCode.qml:346
-#, fuzzy, qt-format
-#| msgctxt "RomanNumerals|"
-#| msgid "Roman value: %1"
+#, qt-format
 msgctxt "MorseCode|"
 msgid "Morse value: %1"
-msgstr "Hodnota římského čísla: %1"
+msgstr ""
 
 #: activities/morse_code/MorseCode.qml:347
-#, fuzzy, qt-format
-#| msgctxt "RomanNumerals|"
-#| msgid "Arabic value: %1"
+#, qt-format
 msgctxt "MorseCode|"
 msgid "Alphabet/Numeric value: %1"
-msgstr "Hodnota arabského čísla: %1"
+msgstr ""
 
 #: activities/morse_code/resource/1/Data.qml:13
-#, fuzzy
-#| msgctxt "Menu|"
-#| msgid "Letters"
 msgctxt "Data|"
 msgid "Letters."
-msgstr "Znaky"
+msgstr ""
 
 #: activities/morse_code/resource/1/Data.qml:18
 #: activities/morse_code/resource/1/Data.qml:34
@@ -18040,23 +17917,18 @@ msgstr ""
 #: activities/morse_code/resource/1/Data.qml:39
 #: activities/morse_code/resource/1/Data.qml:55
 #: activities/morse_code/resource/1/Data.qml:71
-#, fuzzy, qt-format
-#| msgctxt "RomanNumerals|"
-#| msgid "Convert the roman number %1 to arabic."
+#, qt-format
 msgctxt "Data|"
 msgid "Convert the message %1 to letters."
-msgstr "Převeď římské číslo %1 na číslo arabské."
+msgstr ""
 
 #: activities/morse_code/resource/1/Data.qml:28
 #: activities/morse_code/resource/1/Data.qml:44
 #: activities/morse_code/resource/1/Data.qml:60
 #: activities/morse_code/resource/1/Data.qml:76
-#, fuzzy
-#| msgctxt "advanced_colors|"
-#| msgid "Find the corn butterfly"
 msgctxt "Data|"
 msgid "Find the corresponding letter."
-msgstr "Najdi motýla, který má kukuřicovou barvu"
+msgstr ""
 
 #: activities/morse_code/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -18065,29 +17937,21 @@ msgstr ""
 
 #: activities/morse_code/resource/2/Data.qml:23
 #: activities/morse_code/resource/2/Data.qml:39
-#, fuzzy, qt-format
-#| msgctxt "RomanNumerals|"
-#| msgid "Convert the roman number %1 to arabic."
+#, qt-format
 msgctxt "Data|"
 msgid "Convert the message %1 to digits."
-msgstr "Převeď římské číslo %1 na číslo arabské."
+msgstr ""
 
 #: activities/morse_code/resource/2/Data.qml:28
 #: activities/morse_code/resource/2/Data.qml:44
-#, fuzzy
-#| msgctxt "instruments|"
-#| msgid "Find the accordion"
 msgctxt "Data|"
 msgid "Find the corresponding digit."
-msgstr "Najdi tahací harmoniku"
+msgstr ""
 
 #: activities/morse_code/resource/3/Data.qml:13
-#, fuzzy
-#| msgctxt "Menu|"
-#| msgid "Words"
 msgctxt "Data|"
 msgid "Words."
-msgstr "Slova"
+msgstr ""
 
 #: activities/morse_code/resource/3/Data.qml:24
 msgctxt "Data|"
@@ -18095,12 +17959,9 @@ msgid "Write the Morse code you hear."
 msgstr ""
 
 #: activities/morse_code/resource/3/Data.qml:34
-#, fuzzy
-#| msgctxt "RomanNumerals|"
-#| msgid "Convert the roman number %1 to arabic."
 msgctxt "Data|"
 msgid "Convert the message in a word."
-msgstr "Převeď římské číslo %1 na číslo arabské."
+msgstr ""
 
 #. Activity title
 #: activities/mosaic/ActivityInfo.qml:15
@@ -23779,12 +23640,9 @@ msgstr "Maximální hodnota: 500000."
 
 #. Activity title
 #: activities/tens_complement_find/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "instruments|"
-#| msgid "Find the trumpet"
 msgctxt "ActivityInfo|"
 msgid "Find ten's complement"
-msgstr "Najdi trubku"
+msgstr ""
 
 #. Help title
 #: activities/tens_complement_find/ActivityInfo.qml:16
@@ -23800,12 +23658,9 @@ msgstr ""
 
 #. Help prerequisite
 #: activities/tens_complement_find/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Digits from 1 to 2."
 msgctxt "ActivityInfo|"
 msgid "Numbers from 1 to 10 and additions."
-msgstr "Číslice od 1 do 2."
+msgstr ""
 
 #: activities/tens_complement_find/ActivityInfo.qml:23
 #: activities/tens_complement_use/ActivityInfo.qml:24
@@ -23826,28 +23681,19 @@ msgid ""
 msgstr ""
 
 #: activities/tens_complement_find/resource/1/Data.qml:25
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Digits from 1 to 9."
 msgctxt "Data|"
 msgid "First number from 1 to 4."
-msgstr "Číslice od 1 do 9."
+msgstr ""
 
 #: activities/tens_complement_find/resource/2/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Digits from 1 to 9."
 msgctxt "Data|"
 msgid "First number from 5 to 9."
-msgstr "Číslice od 1 do 9."
+msgstr ""
 
 #: activities/tens_complement_find/resource/4/Data.qml:9
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Division of numbers"
 msgctxt "Data|"
 msgid "Find both numbers."
-msgstr "Dělení čísel"
+msgstr ""
 
 #. Activity title
 #: activities/tens_complement_swap/ActivityInfo.qml:14
@@ -23871,12 +23717,9 @@ msgstr ""
 
 #. Help prerequisite
 #: activities/tens_complement_swap/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Digits from 1 to 2."
 msgctxt "ActivityInfo|"
 msgid "Numbers from 1 to 30 and additions."
-msgstr "Číslice od 1 do 2."
+msgstr ""
 
 #. Help manual
 #: activities/tens_complement_swap/ActivityInfo.qml:23
@@ -23890,28 +23733,19 @@ msgid ""
 msgstr ""
 
 #: activities/tens_complement_swap/resource/1/Data.qml:36
-#, fuzzy
-#| msgctxt "Warning|"
-#| msgid "1 is not a prime number."
 msgctxt "Data|"
 msgid "2 pairs to make from 4 numbers."
-msgstr "1 není prvočíslo."
+msgstr ""
 
 #: activities/tens_complement_swap/resource/2/Data.qml:9
-#, fuzzy
-#| msgctxt "Warning|"
-#| msgid "1 is not a prime number."
 msgctxt "Data|"
 msgid "2 pairs to make from 5 numbers."
-msgstr "1 není prvočíslo."
+msgstr ""
 
 #: activities/tens_complement_swap/resource/3/Data.qml:9
-#, fuzzy
-#| msgctxt "Warning|"
-#| msgid "1 is not a prime number."
 msgctxt "Data|"
 msgid "3 pairs to make from 6 numbers."
-msgstr "1 není prvočíslo."
+msgstr ""
 
 #. Activity title
 #: activities/tens_complement_use/ActivityInfo.qml:14
@@ -23933,12 +23767,9 @@ msgstr ""
 
 #. Help prerequisite
 #: activities/tens_complement_use/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Digits from 1 to 2."
 msgctxt "ActivityInfo|"
 msgid "Numbers from 1 to 50 and additions."
-msgstr "Číslice od 1 do 2."
+msgstr ""
 
 #. Help manual
 #: activities/tens_complement_use/ActivityInfo.qml:23
@@ -23950,28 +23781,19 @@ msgid ""
 msgstr ""
 
 #: activities/tens_complement_use/resource/1/Data.qml:43
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Between 1 and 10."
 msgctxt "Data|"
 msgid "Result between 11 and 19."
-msgstr "Mezi 1 a 10."
+msgstr ""
 
 #: activities/tens_complement_use/resource/2/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Result between 20 and 29."
-msgstr "Čísla mezi %1 a %2."
+msgstr ""
 
 #: activities/tens_complement_use/resource/3/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Between 20 and 50."
 msgctxt "Data|"
 msgid "Result between 30 and 50."
-msgstr "Mezi 20 a 50."
+msgstr ""
 
 #. Activity title
 #: activities/tic_tac_toe/ActivityInfo.qml:18
@@ -24098,18 +23920,11 @@ msgid "As the sun rises, the water of the sea starts heating and evaporates."
 msgstr "Když vyjde slunce, mořská voda se začne ohřívat a vypařuje se."
 
 #: activities/watercycle/Watercycle.qml:80
-#, fuzzy
-#| msgctxt "Watercycle|"
-#| msgid ""
-#| "Water vapor condenses to form cloud and when clouds become heavy, it "
-#| "rains. Click on the cloud."
 msgctxt "Watercycle|"
 msgid ""
 "Water vapor condenses to form clouds and when clouds become heavy, it rains. "
 "Click on the cloud."
 msgstr ""
-"Vodní páry kondenzují a vytvoří mraky. Když mraky dostatečně ztěžknou, "
-"přijde déšť. Klikni na mrak."
 
 #: activities/watercycle/Watercycle.qml:81
 msgctxt "Watercycle|"
@@ -24153,21 +23968,12 @@ msgstr ""
 "poskytuje energii pro odpaření vody z vodních ploch, například z oceánů."
 
 #: activities/watercycle/Watercycle.qml:115
-#, fuzzy
-#| msgctxt "Watercycle|"
-#| msgid ""
-#| "Plants also lose water to the air through transpiration. The water vapor "
-#| "cools down forming tiny droplets in clouds. When the clouds meet cool air "
-#| "over the land, precipitation is triggered and fall down as rain."
 msgctxt "Watercycle|"
 msgid ""
 "Plants also lose water to the air through transpiration. The water vapor "
 "cools down forming tiny droplets in clouds. When the clouds meet cool air "
 "over the land, precipitation is triggered and falls down as rain."
 msgstr ""
-"Rostliny také ztrácejí vodu do vzduchu vypařováním. Vodní pára se ochlazuje "
-"a tvoří malé kapičky v mracích. Když se mraky setkají se studeným vzduchem "
-"nad zemí, spouští se srážky a padají jako déšť."
 
 #: activities/watercycle/Watercycle.qml:118
 msgctxt "Watercycle|"
@@ -25115,98 +24921,3 @@ msgstr "Přeskočit"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Spustit"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Learn digits"
-#~ msgstr "Nauč se číslice"
-
-#~ msgctxt "board1|"
-#~ msgid "The horse goes 'neigh! neigh!'. Horses usually sleep standing up."
-#~ msgstr "Kůň dělá 'íhahááá!' a obvykle spí ve stoje."
-
-#~ msgctxt "board1|"
-#~ msgid "You can ride on the back of this animal!"
-#~ msgstr "Na zádech tohoto zvířete můžeš jezdit!"
-
-#~ msgctxt "board1|"
-#~ msgid ""
-#~ "The chicken goes 'luck, cackle, cluck'. Chickens have over 200 different "
-#~ "noises they can use to communicate."
-#~ msgstr ""
-#~ "Kuře dělá 'pí pí píp'. Kuřata dělají více než 200 různých zvuků, kterými "
-#~ "komunikují s ostatními."
-
-#~ msgctxt "board1|"
-#~ msgid ""
-#~ "The cow goes 'moo! moo!'. Cows are herbivorous mammals. They graze all "
-#~ "day in the meadow."
-#~ msgstr ""
-#~ "Kráva dělá 'bůů!'. Krávy jsou býložraví savci, kteří se celý den pasou na "
-#~ "louce."
-
-#~ msgctxt "board1|"
-#~ msgid "You can drink the milk this animal produces."
-#~ msgstr "Od tohoto zvířete můžeš pít mléko."
-
-#~ msgctxt "board1|"
-#~ msgid ""
-#~ "The cat goes 'meow, meow'. Cats usually hate water because their fur "
-#~ "doesn't stay warm when it is wet."
-#~ msgstr ""
-#~ "Kočka dělá 'mňau'. Kočky nemají rády vodu, protože jejich kožich nehřeje, "
-#~ "když se namočí."
-
-#~ msgctxt "board1|"
-#~ msgid "This pet likes chasing mice."
-#~ msgstr "Toto zvíře rádo loví myši."
-
-#~ msgctxt "board1|"
-#~ msgid "The pig goes 'oink, oink'. Pigs are the 4th most intelligent animal."
-#~ msgstr "Prase dělá 'chro, chro'. Prase je 4 nejinteligentnější zvíře."
-
-#~ msgctxt "board1|"
-#~ msgid "This animal likes to lie in the mud."
-#~ msgstr "Toto zvíře má rádo válení v blátě."
-
-#~ msgctxt "board1|"
-#~ msgid ""
-#~ "The duck goes 'quack, quack'. Ducks have special features like webbed "
-#~ "feet and produce an oil to make their feathers 'waterproof'."
-#~ msgstr ""
-#~ "Kachna dělá 'kvák, kvák'. Kachny mají plovací blány a produkují maz, "
-#~ "který dělá její pírka 'voděodolná'."
-
-#~ msgctxt "board1|"
-#~ msgid ""
-#~ "The dog goes 'bark! bark!'. Dogs are great human companions and usually "
-#~ "enjoy love and attention."
-#~ msgstr ""
-#~ "Pes dělá 'haf! haf!'. Psi jsou skvělí parťáci lidí a velice si užívají "
-#~ "jejich lásku a pozornost."
-
-#~ msgctxt "board1|"
-#~ msgid "Rooster"
-#~ msgstr "Kohout"
-
-#~ msgctxt "board1|"
-#~ msgid ""
-#~ "The rooster goes 'coc-a-doodle-doo!'. Roosters have been on farms for "
-#~ "about 5,000 years. Every morning it wakes the farm up with its noises."
-#~ msgstr ""
-#~ "Kohout dělá 'kokodák!'. Kohouti jsou na farmách již zhruba 5000 let. "
-#~ "Každé ráno budí farmu svým kdákáním."
-
-#~ msgctxt "board1|"
-#~ msgid "This animal wakes the farm up in the morning."
-#~ msgstr "Toto zvíře budí ráno hospodářství."
-
-#~ msgctxt "board1|"
-#~ msgid ""
-#~ "The sheep is a mammal that bears a fleece of wool. It is a grazing "
-#~ "herbivore, bred for its wool, its meat, and its milk. The fleece can be "
-#~ "removed and used to produce articles of clothing and blankets, among "
-#~ "other things."
-#~ msgstr ""
-#~ "Ovce je savec, který má na sobě vlněné rouno. Je to býložravec, který je "
-#~ "chován pro vlnu, maso a mléko. Rouno se stříhá a používá mimo jiné pro "
-#~ "výrobu oblečení a přikrývek."

@@ -24763,11 +24763,9 @@ msgstr "Når sola står opp, vert vatnet i havet varmare og tek til å fordampa.
 #: activities/watercycle/Watercycle.qml:80
 msgctxt "Watercycle|"
 msgid ""
-"Water vapor condenses to form cloud and when clouds become heavy, it rains. "
+"Water vapor condenses to form clouds and when clouds become heavy, it rains. "
 "Click on the cloud."
 msgstr ""
-"Vassdamp vert kondensert til skyer, og når skyene vert tunge, regnar dei. "
-"Trykk på skya."
 
 #: activities/watercycle/Watercycle.qml:81
 msgctxt "Watercycle|"
@@ -24819,11 +24817,8 @@ msgctxt "Watercycle|"
 msgid ""
 "Plants also lose water to the air through transpiration. The water vapor "
 "cools down forming tiny droplets in clouds. When the clouds meet cool air "
-"over the land, precipitation is triggered and fall down as rain."
+"over the land, precipitation is triggered and falls down as rain."
 msgstr ""
-"Planter mistar òg vatn til lufta gjennom fordamping. Vassdampen vert kjølt "
-"ned og dannar små vassdropar i skyene. Når skyene møter kald luft over land, "
-"fell vatnet som regn."
 
 #: activities/watercycle/Watercycle.qml:118
 msgctxt "Watercycle|"
