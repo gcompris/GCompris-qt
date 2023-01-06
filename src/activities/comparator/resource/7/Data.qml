@@ -19,7 +19,7 @@ Data {
             random: true,
             sameInteger: true,
             numberOfSublevels: 5,
-            maxDistanceBetweenNumbers: 1,
+            maxDistanceBetweenNumbers: 0.1,
             precision: 0.1,
             minValue: 0.0,
             maxValue: 9.0,
