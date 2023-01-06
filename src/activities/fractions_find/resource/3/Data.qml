@@ -6,7 +6,7 @@
 import GCompris 1.0
 
 Data {
-    objective: qsTr("Find numerator (with a pie).")
+    objective: qsTr("Find denominator (with a pie).")
     difficulty: 5
 
     data: [
