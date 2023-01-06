@@ -10,7 +10,7 @@
 import QtQuick 2.12
 
 QtObject {
-   property string instruction: qsTr("Autonomous communities of Spain")
+   property string instruction: qsTr("Autonomous communities or cities of Spain")
    property var levels: [
       {
          "pixmapfile" : "spain/spain_spain.svgz",
