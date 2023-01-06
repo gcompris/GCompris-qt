@@ -16,7 +16,7 @@ import GCompris 1.0
         },
 */
 Data {
-    objective: qsTr("Find denominator (with a rectangle).")
+    objective: qsTr("Find denominator (with a square).")
     difficulty: 5
 
     data: [

@@ -6,7 +6,7 @@
 import GCompris 1.0
 
 Data {
-    objective: qsTr("Find numerator and denominator (with a rectangle).")
+    objective: qsTr("Find numerator and denominator (with a square).")
     difficulty: 5
 
     data: [
