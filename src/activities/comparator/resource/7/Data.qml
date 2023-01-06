@@ -11,7 +11,7 @@
 import GCompris 1.0
 
 Data {
-    objective: qsTr("1 decimal place between 0 and 9, same integer part.")
+    objective: qsTr("1 decimal place between 0 and 9.9, same integer part.")
     difficulty: 4
 
     data: [
@@ -22,7 +22,7 @@ Data {
             maxDistanceBetweenNumbers: 0.1,
             precision: 0.1,
             minValue: 0.0,
-            maxValue: 9.0,
+            maxValue: 9.9,
             numberOfEquations: 5
         }
     ]

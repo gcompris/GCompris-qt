@@ -11,7 +11,7 @@
 import GCompris 1.0
 
 Data {
-    objective: qsTr("3 decimal places between 0 and 999.")
+    objective: qsTr("3 decimal places between 0 and 999.999.")
     difficulty: 6
 
     data: [
@@ -21,7 +21,7 @@ Data {
             maxDistanceBetweenNumbers: 0.05,
             precision: 0.001,
             minValue: 0.0,
-            maxValue: 999.0,
+            maxValue: 999.999,
             numberOfEquations: 5
         },
         {
@@ -30,7 +30,7 @@ Data {
             maxDistanceBetweenNumbers: 0.5,
             precision: 0.001,
             minValue: 0.0,
-            maxValue: 999.0,
+            maxValue: 999.999,
             numberOfEquations: 5
         },
         {
@@ -39,7 +39,7 @@ Data {
             maxDistanceBetweenNumbers: 1,
             precision: 0.001,
             minValue: 0.0,
-            maxValue: 999.0,
+            maxValue: 999.999,
             numberOfEquations: 5
         }
     ]
