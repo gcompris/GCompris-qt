@@ -5489,7 +5489,7 @@ msgstr "संख्याओं में भाग करना सीखे�
 
 #: activities/comparator/resource/10/Data.qml:14
 msgctxt "Data|"
-msgid "3 decimal places between 0 and 999."
+msgid "3 decimal places between 0 and 999.999."
 msgstr ""
 
 #: activities/comparator/resource/2/Data.qml:14
@@ -5534,13 +5534,16 @@ msgstr "संख्याओं में भाग करना सीखे�
 
 #: activities/comparator/resource/7/Data.qml:14
 msgctxt "Data|"
-msgid "1 decimal place between 0 and 9, same integer part."
+msgid "1 decimal place between 0 and 9.9, same integer part."
 msgstr ""
 
 #: activities/comparator/resource/8/Data.qml:14
+#, fuzzy
+#| msgctxt "guessnumber|"
+#| msgid "Guess a number between 1 and %1"
 msgctxt "Data|"
-msgid "1 decimal place between 0 and 9."
-msgstr ""
+msgid "1 decimal place between 0 and 9.9."
+msgstr "1 और %1 के बीच एक संख्या का अनुमान लगाएँ"
 
 #: activities/comparator/resource/9/Data.qml:14
 msgctxt "Data|"
@@ -9695,20 +9698,19 @@ msgstr ""
 
 #: activities/fractions_create/resource/10/Data.qml:9
 msgctxt "Data|"
-msgid "Specific questions with a rectangle."
+msgid "Specific questions with a square."
 msgstr ""
 
 #: activities/fractions_create/resource/10/Data.qml:18
 #: activities/fractions_create/resource/10/Data.qml:24
 msgctxt "Data|"
 msgid ""
-"Select as many parts as you can without taking more than half of the "
-"rectangle."
+"Select as many parts as you can without taking more than half of the square."
 msgstr ""
 
 #: activities/fractions_create/resource/2/Data.qml:9
 msgctxt "Data|"
-msgid "Simplified fractions with a rectangle."
+msgid "Simplified fractions with a square."
 msgstr ""
 
 #: activities/fractions_create/resource/2/Data.qml:18
@@ -9719,7 +9721,7 @@ msgstr ""
 #| msgctxt "ActivityInfo|"
 #| msgid "Select the butterfly of the correct color"
 msgctxt "Data|"
-msgid "Select one half of the rectangle."
+msgid "Select one half of the square."
 msgstr "सही रंग की तितली चुनें"
 
 #: activities/fractions_create/resource/2/Data.qml:24
@@ -9729,7 +9731,7 @@ msgstr "सही रंग की तितली चुनें"
 #| msgctxt "ActivityInfo|"
 #| msgid "Select the butterfly of the correct color"
 msgctxt "Data|"
-msgid "Select one-third of the rectangle."
+msgid "Select one-third of the square."
 msgstr "सही रंग की तितली चुनें"
 
 #: activities/fractions_create/resource/2/Data.qml:30
@@ -9739,7 +9741,7 @@ msgstr "सही रंग की तितली चुनें"
 #| msgctxt "ActivityInfo|"
 #| msgid "Select the butterfly of the correct color"
 msgctxt "Data|"
-msgid "Select two-thirds of the rectangle."
+msgid "Select two-thirds of the square."
 msgstr "सही रंग की तितली चुनें"
 
 #: activities/fractions_create/resource/2/Data.qml:36
@@ -9748,39 +9750,57 @@ msgstr "सही रंग की तितली चुनें"
 #| msgctxt "ActivityInfo|"
 #| msgid "Select the butterfly of the correct color"
 msgctxt "Data|"
-msgid "Select one-quarter of the rectangle."
+msgid "Select one-quarter of the square."
 msgstr "सही रंग की तितली चुनें"
 
 #: activities/fractions_create/resource/2/Data.qml:42
 #: activities/fractions_create/resource/4/Data.qml:67
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Select the butterfly of the correct color"
 msgctxt "Data|"
-msgid "Select two-fifths of the rectangle."
-msgstr ""
+msgid "Select two-fifths of the square."
+msgstr "सही रंग की तितली चुनें"
 
 #: activities/fractions_create/resource/2/Data.qml:50
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Select the butterfly of the correct color"
 msgctxt "Data|"
-msgid "Select one rectangle and one-quarter of a rectangle."
-msgstr ""
+msgid "Select one square and one-quarter of a square."
+msgstr "सही रंग की तितली चुनें"
 
 #: activities/fractions_create/resource/2/Data.qml:56
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Select the butterfly of the correct color"
 msgctxt "Data|"
-msgid "Select one rectangle and two-fifths of a rectangle."
-msgstr ""
+msgid "Select one square and two-fifths of a square."
+msgstr "सही रंग की तितली चुनें"
 
 #: activities/fractions_create/resource/2/Data.qml:62
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Select the butterfly of the correct color"
 msgctxt "Data|"
-msgid "Select one rectangle and one-third of a rectangle."
-msgstr ""
+msgid "Select one square and one-third of a square."
+msgstr "सही रंग की तितली चुनें"
 
 #: activities/fractions_create/resource/2/Data.qml:68
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Select the butterfly of the correct color"
 msgctxt "Data|"
-msgid "Select one rectangle and one half of a rectangle."
-msgstr ""
+msgid "Select one square and one half of a square."
+msgstr "सही रंग की तितली चुनें"
 
 #: activities/fractions_create/resource/2/Data.qml:74
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Select the butterfly of the correct color"
 msgctxt "Data|"
-msgid "Select one rectangle and three-quarters of a rectangle."
-msgstr ""
+msgid "Select one square and three-quarters of a square."
+msgstr "सही रंग की तितली चुनें"
 
 #: activities/fractions_create/resource/3/Data.qml:9
 msgctxt "Data|"
@@ -9797,7 +9817,7 @@ msgstr "सही रंग की तितली चुनें"
 
 #: activities/fractions_create/resource/4/Data.qml:9
 msgctxt "Data|"
-msgid "Non-simplified fractions with a rectangle."
+msgid "Non-simplified fractions with a square."
 msgstr ""
 
 #: activities/fractions_create/resource/4/Data.qml:73
@@ -9805,7 +9825,7 @@ msgstr ""
 #| msgctxt "ActivityInfo|"
 #| msgid "Select the butterfly of the correct color"
 msgctxt "Data|"
-msgid "Select three-fifths of the rectangle."
+msgid "Select three-fifths of the square."
 msgstr "सही रंग की तितली चुनें"
 
 #: activities/fractions_create/resource/5/Data.qml:9
@@ -9872,64 +9892,85 @@ msgid "Select 1.75 pies."
 msgstr ""
 
 #: activities/fractions_create/resource/6/Data.qml:9
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Learn addition"
 msgctxt "Data|"
-msgid "Decimal numbers with a rectangle."
-msgstr ""
+msgid "Decimal numbers with a square."
+msgstr "जोड़ना सीखें"
 
 #: activities/fractions_create/resource/6/Data.qml:18
 #, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Select your locale"
+#| msgctxt "Guesscount|"
+#| msgid "Selected"
 msgctxt "Data|"
-msgid "Select 0.5 rectangle."
-msgstr "अपनी भाषा चुनें"
+msgid "Select 0.5 square."
+msgstr "चयनित"
 
 #: activities/fractions_create/resource/6/Data.qml:24
+#, fuzzy
+#| msgctxt "Guesscount|"
+#| msgid "Selected"
 msgctxt "Data|"
-msgid "Select 0.25 rectangle."
-msgstr ""
+msgid "Select 0.25 square."
+msgstr "चयनित"
 
 #: activities/fractions_create/resource/6/Data.qml:30
 #, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Select your locale"
+#| msgctxt "Guesscount|"
+#| msgid "Selected"
 msgctxt "Data|"
-msgid "Select 0.4 rectangle."
-msgstr "अपनी भाषा चुनें"
+msgid "Select 0.4 square."
+msgstr "चयनित"
 
 #: activities/fractions_create/resource/6/Data.qml:36
+#, fuzzy
+#| msgctxt "Guesscount|"
+#| msgid "Selected"
 msgctxt "Data|"
-msgid "Select 0.75 rectangle."
-msgstr ""
+msgid "Select 0.75 square."
+msgstr "चयनित"
 
 #: activities/fractions_create/resource/6/Data.qml:42
 #, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Select your locale"
+#| msgctxt "Guesscount|"
+#| msgid "Selected"
 msgctxt "Data|"
-msgid "Select 0.8 rectangle."
-msgstr "अपनी भाषा चुनें"
+msgid "Select 0.8 square."
+msgstr "चयनित"
 
 #: activities/fractions_create/resource/6/Data.qml:50
+#, fuzzy
+#| msgctxt "Guesscount|"
+#| msgid "Selected"
 msgctxt "Data|"
-msgid "Select 1.25 rectangles."
-msgstr ""
+msgid "Select 1.25 squares."
+msgstr "चयनित"
 
 #: activities/fractions_create/resource/6/Data.qml:56
+#, fuzzy
+#| msgctxt "Guesscount|"
+#| msgid "Selected"
 msgctxt "Data|"
-msgid "Select 1.4 rectangles."
-msgstr ""
+msgid "Select 1.4 squares."
+msgstr "चयनित"
 
 #: activities/fractions_create/resource/6/Data.qml:62
 #: activities/fractions_create/resource/6/Data.qml:68
+#, fuzzy
+#| msgctxt "Guesscount|"
+#| msgid "Selected"
 msgctxt "Data|"
-msgid "Select 1.5 rectangles."
-msgstr ""
+msgid "Select 1.5 squares."
+msgstr "चयनित"
 
 #: activities/fractions_create/resource/6/Data.qml:74
+#, fuzzy
+#| msgctxt "Guesscount|"
+#| msgid "Selected"
 msgctxt "Data|"
-msgid "Select 1.75 rectangles."
-msgstr ""
+msgid "Select 1.75 squares."
+msgstr "चयनित"
 
 #: activities/fractions_create/resource/7/Data.qml:9
 msgctxt "Data|"
@@ -9954,20 +9995,22 @@ msgstr "चयनित"
 
 #: activities/fractions_create/resource/8/Data.qml:9
 msgctxt "Data|"
-msgid "Percentages with a rectangle."
+msgid "Percentages with a square."
 msgstr ""
 
-#. Select %1 percent of the rectangle.
+#. Select %1 percent of the square.
 #: activities/fractions_create/resource/8/Data.qml:19
 #: activities/fractions_create/resource/8/Data.qml:26
 #: activities/fractions_create/resource/8/Data.qml:33
 #: activities/fractions_create/resource/8/Data.qml:42
 #: activities/fractions_create/resource/8/Data.qml:49
 #: activities/fractions_create/resource/8/Data.qml:56
-#, qt-format
+#, fuzzy, qt-format
+#| msgctxt "Guesscount|"
+#| msgid "Selected"
 msgctxt "Data|"
-msgid "Select %1% of the rectangle."
-msgstr ""
+msgid "Select %1% of the square."
+msgstr "चयनित"
 
 #: activities/fractions_create/resource/9/Data.qml:9
 msgctxt "Data|"
@@ -10003,31 +10046,34 @@ msgstr "निर्देशों की समीक्षा करें �
 #: activities/fractions_find/resource/1/Data.qml:19
 #, fuzzy
 #| msgctxt "ActivityInfo|"
-#| msgid "Nine men's morris (with a friend)"
-msgctxt "Data|"
-msgid "Find denominator (with a pie)."
-msgstr "नाइन मैन्स मॉरिस (एक दोस्त के साथ)"
-
-#: activities/fractions_find/resource/2/Data.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Nine men's morris (with a friend)"
-msgctxt "Data|"
-msgid "Find denominator (with a rectangle)."
-msgstr "नाइन मैन्स मॉरिस (एक दोस्त के साथ)"
-
-#: activities/fractions_find/resource/3/Data.qml:9
-#, fuzzy
-#| msgctxt "ActivityInfo|"
 #| msgid "Align four (with a friend)"
 msgctxt "Data|"
 msgid "Find numerator (with a pie)."
 msgstr "चार जमाएँ (मित्र के विरुद्ध)"
 
-#: activities/fractions_find/resource/4/Data.qml:9
+#: activities/fractions_find/resource/2/Data.qml:19
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Align four (with a friend)"
 msgctxt "Data|"
-msgid "Find numerator (with a rectangle)."
-msgstr ""
+msgid "Find numerator (with a square)."
+msgstr "चार जमाएँ (मित्र के विरुद्ध)"
+
+#: activities/fractions_find/resource/3/Data.qml:9
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Nine men's morris (with a friend)"
+msgctxt "Data|"
+msgid "Find denominator (with a pie)."
+msgstr "नाइन मैन्स मॉरिस (एक दोस्त के साथ)"
+
+#: activities/fractions_find/resource/4/Data.qml:9
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Nine men's morris (with a friend)"
+msgctxt "Data|"
+msgid "Find denominator (with a square)."
+msgstr "नाइन मैन्स मॉरिस (एक दोस्त के साथ)"
 
 #: activities/fractions_find/resource/5/Data.qml:9
 msgctxt "Data|"
@@ -10035,9 +10081,12 @@ msgid "Find numerator and denominator (with a pie)."
 msgstr ""
 
 #: activities/fractions_find/resource/6/Data.qml:9
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Nine men's morris (with a friend)"
 msgctxt "Data|"
-msgid "Find numerator and denominator (with a rectangle)."
-msgstr ""
+msgid "Find numerator and denominator (with a square)."
+msgstr "नाइन मैन्स मॉरिस (एक दोस्त के साथ)"
 
 #. Activity title
 #: activities/geo-country/ActivityInfo.qml:19
@@ -11359,7 +11408,7 @@ msgstr ""
 
 #: activities/geo-country/resource/board/board18_0.qml:13
 msgctxt "board18_0|"
-msgid "Autonomous communities of Spain"
+msgid "Autonomous communities or cities of Spain"
 msgstr ""
 
 #. Autonomous communities of Spain: Andalusia
@@ -28983,6 +29032,48 @@ msgstr ""
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr ""
+
+#, fuzzy
+#~| msgctxt "ActivityInfo|"
+#~| msgid "Select the butterfly of the correct color"
+#~ msgctxt "Data|"
+#~ msgid "Select one-quarter of the rectangle."
+#~ msgstr "सही रंग की तितली चुनें"
+
+#, fuzzy
+#~| msgctxt "ActivityInfo|"
+#~| msgid "Select the butterfly of the correct color"
+#~ msgctxt "Data|"
+#~ msgid "Select three-fifths of the rectangle."
+#~ msgstr "सही रंग की तितली चुनें"
+
+#, fuzzy
+#~| msgctxt "ActivityConfig|"
+#~| msgid "Select your locale"
+#~ msgctxt "Data|"
+#~ msgid "Select 0.5 rectangle."
+#~ msgstr "अपनी भाषा चुनें"
+
+#, fuzzy
+#~| msgctxt "ActivityConfig|"
+#~| msgid "Select your locale"
+#~ msgctxt "Data|"
+#~ msgid "Select 0.4 rectangle."
+#~ msgstr "अपनी भाषा चुनें"
+
+#, fuzzy
+#~| msgctxt "ActivityConfig|"
+#~| msgid "Select your locale"
+#~ msgctxt "Data|"
+#~ msgid "Select 0.8 rectangle."
+#~ msgstr "अपनी भाषा चुनें"
+
+#, fuzzy
+#~| msgctxt "ActivityInfo|"
+#~| msgid "Nine men's morris (with a friend)"
+#~ msgctxt "Data|"
+#~ msgid "Find denominator (with a rectangle)."
+#~ msgstr "नाइन मैन्स मॉरिस (एक दोस्त के साथ)"
 
 #, fuzzy
 #~| msgctxt "ActivityInfo|"

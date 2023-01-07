@@ -11,7 +11,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Qt-Contexts: true\n"
-"X-Generator: Poedit 3.2\n"
+"X-Generator: Poedit 3.2.2\n"
 
 #. Activity title
 #: activities/advanced_colors/ActivityInfo.qml:15
@@ -4808,7 +4808,7 @@ msgstr ""
 
 #: activities/comparator/resource/10/Data.qml:14
 msgctxt "Data|"
-msgid "3 decimal places between 0 and 999."
+msgid "3 decimal places between 0 and 999.999."
 msgstr ""
 
 #: activities/comparator/resource/2/Data.qml:14
@@ -4838,12 +4838,12 @@ msgstr ""
 
 #: activities/comparator/resource/7/Data.qml:14
 msgctxt "Data|"
-msgid "1 decimal place between 0 and 9, same integer part."
+msgid "1 decimal place between 0 and 9.9, same integer part."
 msgstr ""
 
 #: activities/comparator/resource/8/Data.qml:14
 msgctxt "Data|"
-msgid "1 decimal place between 0 and 9."
+msgid "1 decimal place between 0 and 9.9."
 msgstr ""
 
 #: activities/comparator/resource/9/Data.qml:14
@@ -8131,79 +8131,93 @@ msgstr ""
 
 #: activities/fractions_create/resource/10/Data.qml:9
 msgctxt "Data|"
-msgid "Specific questions with a rectangle."
+msgid "Specific questions with a square."
 msgstr ""
 
 #: activities/fractions_create/resource/10/Data.qml:18
 #: activities/fractions_create/resource/10/Data.qml:24
 msgctxt "Data|"
 msgid ""
-"Select as many parts as you can without taking more than half of the "
-"rectangle."
+"Select as many parts as you can without taking more than half of the square."
 msgstr ""
 
 #: activities/fractions_create/resource/2/Data.qml:9
 msgctxt "Data|"
-msgid "Simplified fractions with a rectangle."
+msgid "Simplified fractions with a square."
 msgstr ""
 
 #: activities/fractions_create/resource/2/Data.qml:18
 #: activities/fractions_create/resource/4/Data.qml:17
 #: activities/fractions_create/resource/4/Data.qml:23
 #: activities/fractions_create/resource/4/Data.qml:29
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select %1% of the pie."
 msgctxt "Data|"
-msgid "Select one half of the rectangle."
-msgstr ""
+msgid "Select one half of the square."
+msgstr "აირჩიეთ ნამცხვრის %1%."
 
 #: activities/fractions_create/resource/2/Data.qml:24
 #: activities/fractions_create/resource/4/Data.qml:35
 #: activities/fractions_create/resource/4/Data.qml:49
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select %1% of the pie."
 msgctxt "Data|"
-msgid "Select one-third of the rectangle."
-msgstr ""
+msgid "Select one-third of the square."
+msgstr "აირჩიეთ ნამცხვრის %1%."
 
 #: activities/fractions_create/resource/2/Data.qml:30
 #: activities/fractions_create/resource/4/Data.qml:41
 #: activities/fractions_create/resource/4/Data.qml:55
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select %1% of the pie."
 msgctxt "Data|"
-msgid "Select two-thirds of the rectangle."
-msgstr ""
+msgid "Select two-thirds of the square."
+msgstr "აირჩიეთ ნამცხვრის %1%."
 
 #: activities/fractions_create/resource/2/Data.qml:36
 #: activities/fractions_create/resource/4/Data.qml:61
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select %1% of the pie."
 msgctxt "Data|"
-msgid "Select one-quarter of the rectangle."
-msgstr ""
+msgid "Select one-quarter of the square."
+msgstr "აირჩიეთ ნამცხვრის %1%."
 
 #: activities/fractions_create/resource/2/Data.qml:42
 #: activities/fractions_create/resource/4/Data.qml:67
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select %1% of the pie."
 msgctxt "Data|"
-msgid "Select two-fifths of the rectangle."
-msgstr ""
+msgid "Select two-fifths of the square."
+msgstr "აირჩიეთ ნამცხვრის %1%."
 
 #: activities/fractions_create/resource/2/Data.qml:50
 msgctxt "Data|"
-msgid "Select one rectangle and one-quarter of a rectangle."
+msgid "Select one square and one-quarter of a square."
 msgstr ""
 
 #: activities/fractions_create/resource/2/Data.qml:56
 msgctxt "Data|"
-msgid "Select one rectangle and two-fifths of a rectangle."
+msgid "Select one square and two-fifths of a square."
 msgstr ""
 
 #: activities/fractions_create/resource/2/Data.qml:62
 msgctxt "Data|"
-msgid "Select one rectangle and one-third of a rectangle."
+msgid "Select one square and one-third of a square."
 msgstr ""
 
 #: activities/fractions_create/resource/2/Data.qml:68
 msgctxt "Data|"
-msgid "Select one rectangle and one half of a rectangle."
+msgid "Select one square and one half of a square."
 msgstr ""
 
 #: activities/fractions_create/resource/2/Data.qml:74
 msgctxt "Data|"
-msgid "Select one rectangle and three-quarters of a rectangle."
+msgid "Select one square and three-quarters of a square."
 msgstr ""
 
 #: activities/fractions_create/resource/3/Data.qml:9
@@ -8218,13 +8232,16 @@ msgstr ""
 
 #: activities/fractions_create/resource/4/Data.qml:9
 msgctxt "Data|"
-msgid "Non-simplified fractions with a rectangle."
+msgid "Non-simplified fractions with a square."
 msgstr ""
 
 #: activities/fractions_create/resource/4/Data.qml:73
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select %1% of the pie."
 msgctxt "Data|"
-msgid "Select three-fifths of the rectangle."
-msgstr ""
+msgid "Select three-fifths of the square."
+msgstr "აირჩიეთ ნამცხვრის %1%."
 
 #: activities/fractions_create/resource/5/Data.qml:9
 msgctxt "Data|"
@@ -8279,54 +8296,81 @@ msgstr ""
 
 #: activities/fractions_create/resource/6/Data.qml:9
 msgctxt "Data|"
-msgid "Decimal numbers with a rectangle."
+msgid "Decimal numbers with a square."
 msgstr ""
 
 #: activities/fractions_create/resource/6/Data.qml:18
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select 0.5 pie."
 msgctxt "Data|"
-msgid "Select 0.5 rectangle."
-msgstr ""
+msgid "Select 0.5 square."
+msgstr "აირჩიეთ 0.5 ნამცხვარი."
 
 #: activities/fractions_create/resource/6/Data.qml:24
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select 0.5 pie."
 msgctxt "Data|"
-msgid "Select 0.25 rectangle."
-msgstr ""
+msgid "Select 0.25 square."
+msgstr "აირჩიეთ 0.5 ნამცხვარი."
 
 #: activities/fractions_create/resource/6/Data.qml:30
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select 0.4 pie."
 msgctxt "Data|"
-msgid "Select 0.4 rectangle."
-msgstr ""
+msgid "Select 0.4 square."
+msgstr "აირჩიეთ 0.4 ნამცხვარი."
 
 #: activities/fractions_create/resource/6/Data.qml:36
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select 0.5 pie."
 msgctxt "Data|"
-msgid "Select 0.75 rectangle."
-msgstr ""
+msgid "Select 0.75 square."
+msgstr "აირჩიეთ 0.5 ნამცხვარი."
 
 #: activities/fractions_create/resource/6/Data.qml:42
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select 0.8 pie."
 msgctxt "Data|"
-msgid "Select 0.8 rectangle."
-msgstr ""
+msgid "Select 0.8 square."
+msgstr "აირჩიეთ 0.8 ნამცხვარი."
 
 #: activities/fractions_create/resource/6/Data.qml:50
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select 0.5 pie."
 msgctxt "Data|"
-msgid "Select 1.25 rectangles."
-msgstr ""
+msgid "Select 1.25 squares."
+msgstr "აირჩიეთ 0.5 ნამცხვარი."
 
 #: activities/fractions_create/resource/6/Data.qml:56
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select 0.4 pie."
 msgctxt "Data|"
-msgid "Select 1.4 rectangles."
-msgstr ""
+msgid "Select 1.4 squares."
+msgstr "აირჩიეთ 0.4 ნამცხვარი."
 
 #: activities/fractions_create/resource/6/Data.qml:62
 #: activities/fractions_create/resource/6/Data.qml:68
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select 0.5 pie."
 msgctxt "Data|"
-msgid "Select 1.5 rectangles."
-msgstr ""
+msgid "Select 1.5 squares."
+msgstr "აირჩიეთ 0.5 ნამცხვარი."
 
 #: activities/fractions_create/resource/6/Data.qml:74
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select 0.5 pie."
 msgctxt "Data|"
-msgid "Select 1.75 rectangles."
-msgstr ""
+msgid "Select 1.75 squares."
+msgstr "აირჩიეთ 0.5 ნამცხვარი."
 
 #: activities/fractions_create/resource/7/Data.qml:9
 msgctxt "Data|"
@@ -8349,20 +8393,22 @@ msgstr "აირჩიეთ ნამცხვრის %1%."
 
 #: activities/fractions_create/resource/8/Data.qml:9
 msgctxt "Data|"
-msgid "Percentages with a rectangle."
+msgid "Percentages with a square."
 msgstr ""
 
-#. Select %1 percent of the rectangle.
+#. Select %1 percent of the square.
 #: activities/fractions_create/resource/8/Data.qml:19
 #: activities/fractions_create/resource/8/Data.qml:26
 #: activities/fractions_create/resource/8/Data.qml:33
 #: activities/fractions_create/resource/8/Data.qml:42
 #: activities/fractions_create/resource/8/Data.qml:49
 #: activities/fractions_create/resource/8/Data.qml:56
-#, qt-format
+#, fuzzy, qt-format
+#| msgctxt "Data|"
+#| msgid "Select %1% of the pie."
 msgctxt "Data|"
-msgid "Select %1% of the rectangle."
-msgstr ""
+msgid "Select %1% of the square."
+msgstr "აირჩიეთ ნამცხვრის %1%."
 
 #: activities/fractions_create/resource/9/Data.qml:9
 msgctxt "Data|"
@@ -8390,22 +8436,22 @@ msgstr ""
 
 #: activities/fractions_find/resource/1/Data.qml:19
 msgctxt "Data|"
-msgid "Find denominator (with a pie)."
+msgid "Find numerator (with a pie)."
 msgstr ""
 
 #: activities/fractions_find/resource/2/Data.qml:19
 msgctxt "Data|"
-msgid "Find denominator (with a rectangle)."
+msgid "Find numerator (with a square)."
 msgstr ""
 
 #: activities/fractions_find/resource/3/Data.qml:9
 msgctxt "Data|"
-msgid "Find numerator (with a pie)."
+msgid "Find denominator (with a pie)."
 msgstr ""
 
 #: activities/fractions_find/resource/4/Data.qml:9
 msgctxt "Data|"
-msgid "Find numerator (with a rectangle)."
+msgid "Find denominator (with a square)."
 msgstr ""
 
 #: activities/fractions_find/resource/5/Data.qml:9
@@ -8415,7 +8461,7 @@ msgstr ""
 
 #: activities/fractions_find/resource/6/Data.qml:9
 msgctxt "Data|"
-msgid "Find numerator and denominator (with a rectangle)."
+msgid "Find numerator and denominator (with a square)."
 msgstr ""
 
 #. Activity title
@@ -9651,7 +9697,7 @@ msgstr ""
 
 #: activities/geo-country/resource/board/board18_0.qml:13
 msgctxt "board18_0|"
-msgid "Autonomous communities of Spain"
+msgid "Autonomous communities or cities of Spain"
 msgstr ""
 
 #. Autonomous communities of Spain: Andalusia
@@ -13262,7 +13308,7 @@ msgstr "ყვავილი"
 #: activities/imagename/resource/board/board2_0.qml:98
 msgctxt "board2_0|"
 msgid "vase"
-msgstr ""
+msgstr "ვაზა"
 
 #: activities/imagename/resource/board/board3_0.qml:58
 msgctxt "board3_0|"
@@ -13297,7 +13343,7 @@ msgstr ""
 #: activities/imagename/resource/board/board4_0.qml:58
 msgctxt "board4_0|"
 msgid "apple"
-msgstr ""
+msgstr "ვაშლი"
 
 #: activities/imagename/resource/board/board4_0.qml:66
 msgctxt "board4_0|"
@@ -13312,7 +13358,7 @@ msgstr ""
 #: activities/imagename/resource/board/board4_0.qml:82
 msgctxt "board4_0|"
 msgid "car"
-msgstr ""
+msgstr "მანქანა"
 
 #: activities/imagename/resource/board/board4_0.qml:90
 msgctxt "board4_0|"
@@ -13327,7 +13373,7 @@ msgstr ""
 #: activities/imagename/resource/board/board5_0.qml:58
 msgctxt "board5_0|"
 msgid "pencil"
-msgstr ""
+msgstr "ფანქარი"
 
 #: activities/imagename/resource/board/board5_0.qml:66
 msgctxt "board5_0|"
@@ -13347,22 +13393,22 @@ msgstr "ვარსკვლავი"
 #: activities/imagename/resource/board/board5_0.qml:90
 msgctxt "board5_0|"
 msgid "truck"
-msgstr ""
+msgstr "სატვირთო"
 
 #: activities/imagename/resource/board/board5_0.qml:98
 msgctxt "board5_0|"
 msgid "van"
-msgstr ""
+msgstr "ფურგონი"
 
 #: activities/imagename/resource/board/board6_0.qml:58
 msgctxt "board6_0|"
 msgid "castle"
-msgstr ""
+msgstr "სასახლე"
 
 #: activities/imagename/resource/board/board6_0.qml:66
 msgctxt "board6_0|"
 msgid "crown"
-msgstr ""
+msgstr "გვირგვინი"
 
 #: activities/imagename/resource/board/board6_0.qml:74
 msgctxt "board6_0|"
@@ -13382,7 +13428,7 @@ msgstr ""
 #: activities/imagename/resource/board/board6_0.qml:98
 msgctxt "board6_0|"
 msgid "ball"
-msgstr ""
+msgstr "ბურთი"
 
 #: activities/imagename/resource/board/board7_0.qml:58
 msgctxt "board7_0|"
@@ -13893,7 +13939,7 @@ msgstr "დავალება"
 #: activities/lang/Lang.qml:197
 msgctxt "Lang|"
 msgid "sport"
-msgstr ""
+msgstr "სპორტი"
 
 #: activities/lang/Lang.qml:198
 msgctxt "Lang|"
@@ -13903,17 +13949,17 @@ msgstr "ბუნება"
 #: activities/lang/Lang.qml:198
 msgctxt "Lang|"
 msgid "animal"
-msgstr ""
+msgstr "ცხოველი"
 
 #: activities/lang/Lang.qml:199
 msgctxt "Lang|"
 msgid "fruit"
-msgstr ""
+msgstr "ნაყოფი"
 
 #: activities/lang/Lang.qml:199
 msgctxt "Lang|"
 msgid "plant"
-msgstr ""
+msgstr "მცენარე"
 
 #: activities/lang/Lang.qml:200
 msgctxt "Lang|"
@@ -13943,7 +13989,7 @@ msgstr ""
 #: activities/lang/Lang.qml:203
 msgctxt "Lang|"
 msgid "tool"
-msgstr ""
+msgstr "ხელსაწყო"
 
 #: activities/lang/Lang.qml:203
 msgctxt "Lang|"
@@ -16203,7 +16249,7 @@ msgstr ""
 #: activities/memory-wordnumber/dataset.js:27
 msgctxt "dataset|"
 msgid "sixteen"
-msgstr ""
+msgstr "თექვსმეტი"
 
 #: activities/memory-wordnumber/dataset.js:28
 msgctxt "dataset|"

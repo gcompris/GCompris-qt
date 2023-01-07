@@ -5260,7 +5260,7 @@ msgstr "0-dan 9-a qədər saylar."
 
 #: activities/comparator/resource/10/Data.qml:14
 msgctxt "Data|"
-msgid "3 decimal places between 0 and 999."
+msgid "3 decimal places between 0 and 999.999."
 msgstr ""
 
 #: activities/comparator/resource/2/Data.qml:14
@@ -5305,13 +5305,16 @@ msgstr "0-dan 9-a qədər saylar."
 
 #: activities/comparator/resource/7/Data.qml:14
 msgctxt "Data|"
-msgid "1 decimal place between 0 and 9, same integer part."
+msgid "1 decimal place between 0 and 9.9, same integer part."
 msgstr ""
 
 #: activities/comparator/resource/8/Data.qml:14
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
-msgid "1 decimal place between 0 and 9."
-msgstr ""
+msgid "1 decimal place between 0 and 9.9."
+msgstr "%1 və %2 arasındakı rəqəmlər."
 
 #: activities/comparator/resource/9/Data.qml:14
 msgctxt "Data|"
@@ -9155,83 +9158,122 @@ msgid "Select one pie and three-quarters of a pie."
 msgstr "Bir piroq və piroqun dörddə üç hissəsini seç."
 
 #: activities/fractions_create/resource/10/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Specific questions with a pie."
 msgctxt "Data|"
-msgid "Specific questions with a rectangle."
-msgstr "Dördbucaqlı ilə verilmiş suallar."
+msgid "Specific questions with a square."
+msgstr "Piroq ilə verilmiş suallar."
 
 #: activities/fractions_create/resource/10/Data.qml:18
 #: activities/fractions_create/resource/10/Data.qml:24
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid ""
+#| "Select as many parts as you can without taking more than half of the pie."
 msgctxt "Data|"
 msgid ""
-"Select as many parts as you can without taking more than half of the "
-"rectangle."
+"Select as many parts as you can without taking more than half of the square."
 msgstr ""
-"Düzbucaqlının yarısından çoxu olmamaq şərti ilə onun mümkün olan bütün "
-"hissələrini seçin."
+"Piroqun yarısından çox olmamaq şərti ilə onun mümkün qədər çox hissələrini "
+"seç"
 
 #: activities/fractions_create/resource/2/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Simplified fractions with a pie."
 msgctxt "Data|"
-msgid "Simplified fractions with a rectangle."
-msgstr "Düzbucaqlı ilə sadələşdirilmiş kəsrlər."
+msgid "Simplified fractions with a square."
+msgstr "Piroq ilə sadələşdirilmiş kəsrlər"
 
 #: activities/fractions_create/resource/2/Data.qml:18
 #: activities/fractions_create/resource/4/Data.qml:17
 #: activities/fractions_create/resource/4/Data.qml:23
 #: activities/fractions_create/resource/4/Data.qml:29
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select one half of the pie."
 msgctxt "Data|"
-msgid "Select one half of the rectangle."
-msgstr "Düzbucaqlının bir yarısını seç."
+msgid "Select one half of the square."
+msgstr "Piroqun bir hissəsiniu seç."
 
 #: activities/fractions_create/resource/2/Data.qml:24
 #: activities/fractions_create/resource/4/Data.qml:35
 #: activities/fractions_create/resource/4/Data.qml:49
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select one-third of the pie."
 msgctxt "Data|"
-msgid "Select one-third of the rectangle."
-msgstr "Düzbucaqlının üçdə birini seç."
+msgid "Select one-third of the square."
+msgstr "Piroqun üçdə bir hissəsini seç."
 
 #: activities/fractions_create/resource/2/Data.qml:30
 #: activities/fractions_create/resource/4/Data.qml:41
 #: activities/fractions_create/resource/4/Data.qml:55
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select two-thirds of the pie."
 msgctxt "Data|"
-msgid "Select two-thirds of the rectangle."
-msgstr "Düzbucaqlının üçdə ikisini seç."
+msgid "Select two-thirds of the square."
+msgstr "Piroqun üçdə iki hissəsini seç."
 
 #: activities/fractions_create/resource/2/Data.qml:36
 #: activities/fractions_create/resource/4/Data.qml:61
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select one-quarter of the pie."
 msgctxt "Data|"
-msgid "Select one-quarter of the rectangle."
-msgstr "Düzbucaqlının dörddə birini seç."
+msgid "Select one-quarter of the square."
+msgstr "Piroqun dörddə bir hissəsini seç."
 
 #: activities/fractions_create/resource/2/Data.qml:42
 #: activities/fractions_create/resource/4/Data.qml:67
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select two-fifths of the pie."
 msgctxt "Data|"
-msgid "Select two-fifths of the rectangle."
-msgstr "Düzbucaqlının beşdə ikisini seç."
+msgid "Select two-fifths of the square."
+msgstr "Piroqun beşdə iki hissəsini seç."
 
 #: activities/fractions_create/resource/2/Data.qml:50
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select one pie and one-quarter of a pie."
 msgctxt "Data|"
-msgid "Select one rectangle and one-quarter of a rectangle."
-msgstr "Bir düzbucaqlı və düzbucaqlının dörddə birini seç."
+msgid "Select one square and one-quarter of a square."
+msgstr "Bir piroq və piroqun dörddə bir hissəsini seç."
 
 #: activities/fractions_create/resource/2/Data.qml:56
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select one pie and two-fifths of a pie."
 msgctxt "Data|"
-msgid "Select one rectangle and two-fifths of a rectangle."
-msgstr "Bir düzbucaqlı seç və düzbucaqlının beşdə ikisini seç."
+msgid "Select one square and two-fifths of a square."
+msgstr "Bir piroq və piroqun beşdə iki hissəsini seç."
 
 #: activities/fractions_create/resource/2/Data.qml:62
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select one pie and one-third of a pie."
 msgctxt "Data|"
-msgid "Select one rectangle and one-third of a rectangle."
-msgstr "Bir düzbucaqlı seç və düzbucaqlının üçdə birini seç."
+msgid "Select one square and one-third of a square."
+msgstr "Bir piroq və piroqun üçdə bir hissəsini seç."
 
 #: activities/fractions_create/resource/2/Data.qml:68
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select one pie and one half of a pie."
 msgctxt "Data|"
-msgid "Select one rectangle and one half of a rectangle."
-msgstr "Bir düzbucaqlı və düzbucaqlının bir yarısını seç."
+msgid "Select one square and one half of a square."
+msgstr "Bir piroq və piroqun bir yarısını seç."
 
 #: activities/fractions_create/resource/2/Data.qml:74
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select one pie and three-quarters of a pie."
 msgctxt "Data|"
-msgid "Select one rectangle and three-quarters of a rectangle."
-msgstr "Bir düzbucaqlı və düzbucaqlının dörddə üçünü seç."
+msgid "Select one square and three-quarters of a square."
+msgstr "Bir piroq və piroqun dörddə üç hissəsini seç."
 
 #: activities/fractions_create/resource/3/Data.qml:9
 msgctxt "Data|"
@@ -9244,14 +9286,20 @@ msgid "Select three-fifths of the pie."
 msgstr "Piroqun beşdə dördünü seç."
 
 #: activities/fractions_create/resource/4/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Non-simplified fractions with a pie."
 msgctxt "Data|"
-msgid "Non-simplified fractions with a rectangle."
-msgstr "Düzbucaqlə ilə sadə olmayan kəsr."
+msgid "Non-simplified fractions with a square."
+msgstr "Piroq ilə sadə olmayan kəsr."
 
 #: activities/fractions_create/resource/4/Data.qml:73
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select three-fifths of the pie."
 msgctxt "Data|"
-msgid "Select three-fifths of the rectangle."
-msgstr "Düzbucaqlının beşdə üçünü seç."
+msgid "Select three-fifths of the square."
+msgstr "Piroqun beşdə dördünü seç."
 
 #: activities/fractions_create/resource/5/Data.qml:9
 msgctxt "Data|"
@@ -9305,55 +9353,85 @@ msgid "Select 1.75 pies."
 msgstr "Piroqun 1.75 hissəsini seç."
 
 #: activities/fractions_create/resource/6/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Decimal numbers with a pie."
 msgctxt "Data|"
-msgid "Decimal numbers with a rectangle."
-msgstr "Düzbucaqlı ilə onıu saylar."
+msgid "Decimal numbers with a square."
+msgstr "Piroq ilə onlu saylar."
 
 #: activities/fractions_create/resource/6/Data.qml:18
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select 0.5 pie."
 msgctxt "Data|"
-msgid "Select 0.5 rectangle."
-msgstr "Düzbucalının 0.5 hissəsini seç."
+msgid "Select 0.5 square."
+msgstr "Piroqun 0.5 hisəsini seç."
 
 #: activities/fractions_create/resource/6/Data.qml:24
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select 0.25 pie."
 msgctxt "Data|"
-msgid "Select 0.25 rectangle."
-msgstr "Düzbucalının 0.25 hissəsini seç."
+msgid "Select 0.25 square."
+msgstr "Piroqun 0.25 hissəsini seç."
 
 #: activities/fractions_create/resource/6/Data.qml:30
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select 0.4 pie."
 msgctxt "Data|"
-msgid "Select 0.4 rectangle."
-msgstr "Düzbucalının 0.4 hissəsini seç."
+msgid "Select 0.4 square."
+msgstr "Piroqun 0.4 hissəsini seç."
 
 #: activities/fractions_create/resource/6/Data.qml:36
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select 0.75 pie."
 msgctxt "Data|"
-msgid "Select 0.75 rectangle."
-msgstr "Düzbucalının 0.75 hissəsini seç."
+msgid "Select 0.75 square."
+msgstr "Piroqun 0.75 hissəsini seç."
 
 #: activities/fractions_create/resource/6/Data.qml:42
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select 0.8 pie."
 msgctxt "Data|"
-msgid "Select 0.8 rectangle."
-msgstr "Düzbucalının 0.8 hissəsini seç."
+msgid "Select 0.8 square."
+msgstr "Piroqun 0.8 hissəsini seç."
 
 #: activities/fractions_create/resource/6/Data.qml:50
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select 1.25 pies."
 msgctxt "Data|"
-msgid "Select 1.25 rectangles."
-msgstr "Düzbucaqlının 1.25 hissəsini seç."
+msgid "Select 1.25 squares."
+msgstr "Piroqun 1.25 hissəsini seç."
 
 #: activities/fractions_create/resource/6/Data.qml:56
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select 1.4 pies."
 msgctxt "Data|"
-msgid "Select 1.4 rectangles."
-msgstr "Düzbucaqlının 1.4 hissəsini seç."
+msgid "Select 1.4 squares."
+msgstr "Piroqun 1.4 hissəsini seç."
 
 #: activities/fractions_create/resource/6/Data.qml:62
 #: activities/fractions_create/resource/6/Data.qml:68
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select 1.5 pies."
 msgctxt "Data|"
-msgid "Select 1.5 rectangles."
-msgstr "Düzbucaqlının 1.5 hissəsini seç."
+msgid "Select 1.5 squares."
+msgstr "Piroqun 1.5 hissəsini seç."
 
 #: activities/fractions_create/resource/6/Data.qml:74
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select 1.75 pies."
 msgctxt "Data|"
-msgid "Select 1.75 rectangles."
-msgstr "Düzbucaqlının 1.75 hissəsini seç."
+msgid "Select 1.75 squares."
+msgstr "Piroqun 1.75 hissəsini seç."
 
 #: activities/fractions_create/resource/7/Data.qml:9
 msgctxt "Data|"
@@ -9375,21 +9453,26 @@ msgid "Select %1% of the pie."
 msgstr "Piroqun %1%-ni seç."
 
 #: activities/fractions_create/resource/8/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Percentages with a pie."
 msgctxt "Data|"
-msgid "Percentages with a rectangle."
-msgstr "Düzbucaqlı ilə faiz."
+msgid "Percentages with a square."
+msgstr "Faiz piroq ilə."
 
-#. Select %1 percent of the rectangle.
+#. Select %1 percent of the square.
 #: activities/fractions_create/resource/8/Data.qml:19
 #: activities/fractions_create/resource/8/Data.qml:26
 #: activities/fractions_create/resource/8/Data.qml:33
 #: activities/fractions_create/resource/8/Data.qml:42
 #: activities/fractions_create/resource/8/Data.qml:49
 #: activities/fractions_create/resource/8/Data.qml:56
-#, qt-format
+#, fuzzy, qt-format
+#| msgctxt "Data|"
+#| msgid "Select %1% of the pie."
 msgctxt "Data|"
-msgid "Select %1% of the rectangle."
-msgstr "Düzbucaqlının %1%-ni seç."
+msgid "Select %1% of the square."
+msgstr "Piroqun %1%-ni seç."
 
 #: activities/fractions_create/resource/9/Data.qml:9
 msgctxt "Data|"
@@ -9419,23 +9502,29 @@ msgstr "Təqdim olunan kəsrin düzgün payını və məxrəcini tap."
 
 #: activities/fractions_find/resource/1/Data.qml:19
 msgctxt "Data|"
-msgid "Find denominator (with a pie)."
-msgstr "Məxrəci tapın (piroqdan istifadə edərək)"
-
-#: activities/fractions_find/resource/2/Data.qml:19
-msgctxt "Data|"
-msgid "Find denominator (with a rectangle)."
-msgstr "Məxrəci tapın (düzbucaqlıdan istifadə edərək)"
-
-#: activities/fractions_find/resource/3/Data.qml:9
-msgctxt "Data|"
 msgid "Find numerator (with a pie)."
 msgstr "Məxrəci tapın (piroq ilə)"
 
-#: activities/fractions_find/resource/4/Data.qml:9
+#: activities/fractions_find/resource/2/Data.qml:19
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Find numerator (with a pie)."
 msgctxt "Data|"
-msgid "Find numerator (with a rectangle)."
-msgstr "Məxrəci tapın (düzbucaqlı ilə)"
+msgid "Find numerator (with a square)."
+msgstr "Məxrəci tapın (piroq ilə)"
+
+#: activities/fractions_find/resource/3/Data.qml:9
+msgctxt "Data|"
+msgid "Find denominator (with a pie)."
+msgstr "Məxrəci tapın (piroqdan istifadə edərək)"
+
+#: activities/fractions_find/resource/4/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Find denominator (with a pie)."
+msgctxt "Data|"
+msgid "Find denominator (with a square)."
+msgstr "Məxrəci tapın (piroqdan istifadə edərək)"
 
 #: activities/fractions_find/resource/5/Data.qml:9
 msgctxt "Data|"
@@ -9443,9 +9532,12 @@ msgid "Find numerator and denominator (with a pie)."
 msgstr "Kəsrin surətini və məxrəcini tapın (piroq ilə)"
 
 #: activities/fractions_find/resource/6/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Find numerator and denominator (with a pie)."
 msgctxt "Data|"
-msgid "Find numerator and denominator (with a rectangle)."
-msgstr "Kəsrin surətini və məxrəcini tapın (düzbucaqlı ilə)"
+msgid "Find numerator and denominator (with a square)."
+msgstr "Kəsrin surətini və məxrəcini tapın (piroq ilə)"
 
 #. Activity title
 #: activities/geo-country/ActivityInfo.qml:19
@@ -10681,8 +10773,11 @@ msgid "Suvalkija"
 msgstr "Suvalkija"
 
 #: activities/geo-country/resource/board/board18_0.qml:13
+#, fuzzy
+#| msgctxt "board18_0|"
+#| msgid "Autonomous communities of Spain"
 msgctxt "board18_0|"
-msgid "Autonomous communities of Spain"
+msgid "Autonomous communities or cities of Spain"
 msgstr "İspaniyanın muxtar icmaları"
 
 #. Autonomous communities of Spain: Andalusia
@@ -25968,6 +26063,130 @@ msgstr "Ötürün"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Başladın"
+
+#~ msgctxt "Data|"
+#~ msgid "Specific questions with a rectangle."
+#~ msgstr "Dördbucaqlı ilə verilmiş suallar."
+
+#~ msgctxt "Data|"
+#~ msgid ""
+#~ "Select as many parts as you can without taking more than half of the "
+#~ "rectangle."
+#~ msgstr ""
+#~ "Düzbucaqlının yarısından çoxu olmamaq şərti ilə onun mümkün olan bütün "
+#~ "hissələrini seçin."
+
+#~ msgctxt "Data|"
+#~ msgid "Simplified fractions with a rectangle."
+#~ msgstr "Düzbucaqlı ilə sadələşdirilmiş kəsrlər."
+
+#~ msgctxt "Data|"
+#~ msgid "Select one half of the rectangle."
+#~ msgstr "Düzbucaqlının bir yarısını seç."
+
+#~ msgctxt "Data|"
+#~ msgid "Select one-third of the rectangle."
+#~ msgstr "Düzbucaqlının üçdə birini seç."
+
+#~ msgctxt "Data|"
+#~ msgid "Select two-thirds of the rectangle."
+#~ msgstr "Düzbucaqlının üçdə ikisini seç."
+
+#~ msgctxt "Data|"
+#~ msgid "Select one-quarter of the rectangle."
+#~ msgstr "Düzbucaqlının dörddə birini seç."
+
+#~ msgctxt "Data|"
+#~ msgid "Select two-fifths of the rectangle."
+#~ msgstr "Düzbucaqlının beşdə ikisini seç."
+
+#~ msgctxt "Data|"
+#~ msgid "Select one rectangle and one-quarter of a rectangle."
+#~ msgstr "Bir düzbucaqlı və düzbucaqlının dörddə birini seç."
+
+#~ msgctxt "Data|"
+#~ msgid "Select one rectangle and two-fifths of a rectangle."
+#~ msgstr "Bir düzbucaqlı seç və düzbucaqlının beşdə ikisini seç."
+
+#~ msgctxt "Data|"
+#~ msgid "Select one rectangle and one-third of a rectangle."
+#~ msgstr "Bir düzbucaqlı seç və düzbucaqlının üçdə birini seç."
+
+#~ msgctxt "Data|"
+#~ msgid "Select one rectangle and one half of a rectangle."
+#~ msgstr "Bir düzbucaqlı və düzbucaqlının bir yarısını seç."
+
+#~ msgctxt "Data|"
+#~ msgid "Select one rectangle and three-quarters of a rectangle."
+#~ msgstr "Bir düzbucaqlı və düzbucaqlının dörddə üçünü seç."
+
+#~ msgctxt "Data|"
+#~ msgid "Non-simplified fractions with a rectangle."
+#~ msgstr "Düzbucaqlə ilə sadə olmayan kəsr."
+
+#~ msgctxt "Data|"
+#~ msgid "Select three-fifths of the rectangle."
+#~ msgstr "Düzbucaqlının beşdə üçünü seç."
+
+#~ msgctxt "Data|"
+#~ msgid "Decimal numbers with a rectangle."
+#~ msgstr "Düzbucaqlı ilə onıu saylar."
+
+#~ msgctxt "Data|"
+#~ msgid "Select 0.5 rectangle."
+#~ msgstr "Düzbucalının 0.5 hissəsini seç."
+
+#~ msgctxt "Data|"
+#~ msgid "Select 0.25 rectangle."
+#~ msgstr "Düzbucalının 0.25 hissəsini seç."
+
+#~ msgctxt "Data|"
+#~ msgid "Select 0.4 rectangle."
+#~ msgstr "Düzbucalının 0.4 hissəsini seç."
+
+#~ msgctxt "Data|"
+#~ msgid "Select 0.75 rectangle."
+#~ msgstr "Düzbucalının 0.75 hissəsini seç."
+
+#~ msgctxt "Data|"
+#~ msgid "Select 0.8 rectangle."
+#~ msgstr "Düzbucalının 0.8 hissəsini seç."
+
+#~ msgctxt "Data|"
+#~ msgid "Select 1.25 rectangles."
+#~ msgstr "Düzbucaqlının 1.25 hissəsini seç."
+
+#~ msgctxt "Data|"
+#~ msgid "Select 1.4 rectangles."
+#~ msgstr "Düzbucaqlının 1.4 hissəsini seç."
+
+#~ msgctxt "Data|"
+#~ msgid "Select 1.5 rectangles."
+#~ msgstr "Düzbucaqlının 1.5 hissəsini seç."
+
+#~ msgctxt "Data|"
+#~ msgid "Select 1.75 rectangles."
+#~ msgstr "Düzbucaqlının 1.75 hissəsini seç."
+
+#~ msgctxt "Data|"
+#~ msgid "Percentages with a rectangle."
+#~ msgstr "Düzbucaqlı ilə faiz."
+
+#~ msgctxt "Data|"
+#~ msgid "Select %1% of the rectangle."
+#~ msgstr "Düzbucaqlının %1%-ni seç."
+
+#~ msgctxt "Data|"
+#~ msgid "Find denominator (with a rectangle)."
+#~ msgstr "Məxrəci tapın (düzbucaqlıdan istifadə edərək)"
+
+#~ msgctxt "Data|"
+#~ msgid "Find numerator (with a rectangle)."
+#~ msgstr "Məxrəci tapın (düzbucaqlı ilə)"
+
+#~ msgctxt "Data|"
+#~ msgid "Find numerator and denominator (with a rectangle)."
+#~ msgstr "Kəsrin surətini və məxrəcini tapın (düzbucaqlı ilə)"
 
 #~ msgctxt "ActivityInfo|"
 #~ msgid "Learn digits"

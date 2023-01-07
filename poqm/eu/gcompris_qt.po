@@ -5254,9 +5254,12 @@ msgid "Numbers from 1 to 9."
 msgstr "0tik 9ra arteko zenbakiak."
 
 #: activities/comparator/resource/10/Data.qml:14
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "2 decimal places between 0 and 99.99."
 msgctxt "Data|"
-msgid "3 decimal places between 0 and 999."
-msgstr "3 hamartar-leku 0 eta 999 artean."
+msgid "3 decimal places between 0 and 999.999."
+msgstr "2 leku-hamartar 0 eta 99,99 artean."
 
 #: activities/comparator/resource/2/Data.qml:14
 msgctxt "Data|"
@@ -5284,13 +5287,19 @@ msgid "Numbers from 1 to 1 billion."
 msgstr "1etik 1000 milioira arteko zenbakiak."
 
 #: activities/comparator/resource/7/Data.qml:14
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "1 decimal place between 0 and 9, same integer part."
 msgctxt "Data|"
-msgid "1 decimal place between 0 and 9, same integer part."
+msgid "1 decimal place between 0 and 9.9, same integer part."
 msgstr "Hamartar-leku 1 0 eta 9 artean, zati oso berdina."
 
 #: activities/comparator/resource/8/Data.qml:14
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "1 decimal place between 0 and 9."
 msgctxt "Data|"
-msgid "1 decimal place between 0 and 9."
+msgid "1 decimal place between 0 and 9.9."
 msgstr "Hamartar-leku 1 0 eta 999 artean."
 
 #: activities/comparator/resource/9/Data.qml:14
@@ -9151,83 +9160,122 @@ msgid "Select one pie and three-quarters of a pie."
 msgstr "Aukeratu tarta bat eta hiru laurden."
 
 #: activities/fractions_create/resource/10/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Specific questions with a pie."
 msgctxt "Data|"
-msgid "Specific questions with a rectangle."
-msgstr "Galdera zehatzak laukizuzen bat erabiliz."
+msgid "Specific questions with a square."
+msgstr "Galdera zehatzak tarta bat erabiliz."
 
 #: activities/fractions_create/resource/10/Data.qml:18
 #: activities/fractions_create/resource/10/Data.qml:24
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid ""
+#| "Select as many parts as you can without taking more than half of the pie."
 msgctxt "Data|"
 msgid ""
-"Select as many parts as you can without taking more than half of the "
-"rectangle."
+"Select as many parts as you can without taking more than half of the square."
 msgstr ""
-"Aukeratu ahal duzun atal kopuru handiena, laukizuzenaren erdia baino gehiago "
-"hartu gabe."
+"Aukeratu ahal duzun atal kopuru handiena, tartaren erdia baino gehiago hartu "
+"gabe."
 
 #: activities/fractions_create/resource/2/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Simplified fractions with a pie."
 msgctxt "Data|"
-msgid "Simplified fractions with a rectangle."
-msgstr "Zatiki erraztuak laukizuzen bat erabiliz."
+msgid "Simplified fractions with a square."
+msgstr "Zatiki erraztuak tarta bat erabiliz."
 
 #: activities/fractions_create/resource/2/Data.qml:18
 #: activities/fractions_create/resource/4/Data.qml:17
 #: activities/fractions_create/resource/4/Data.qml:23
 #: activities/fractions_create/resource/4/Data.qml:29
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select one half of the pie."
 msgctxt "Data|"
-msgid "Select one half of the rectangle."
-msgstr "Aukeratu laukizuzenaren erdia."
+msgid "Select one half of the square."
+msgstr "Aukeratu tartaren erdi bat."
 
 #: activities/fractions_create/resource/2/Data.qml:24
 #: activities/fractions_create/resource/4/Data.qml:35
 #: activities/fractions_create/resource/4/Data.qml:49
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select one-third of the pie."
 msgctxt "Data|"
-msgid "Select one-third of the rectangle."
-msgstr "Aukeratu laukizuzenaren herena."
+msgid "Select one-third of the square."
+msgstr "Aukeratu tartaren heren bat."
 
 #: activities/fractions_create/resource/2/Data.qml:30
 #: activities/fractions_create/resource/4/Data.qml:41
 #: activities/fractions_create/resource/4/Data.qml:55
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select two-thirds of the pie."
 msgctxt "Data|"
-msgid "Select two-thirds of the rectangle."
-msgstr "Aukeratu laukizuzenaren bi heren."
+msgid "Select two-thirds of the square."
+msgstr "Aukeratu tartaren bi heren."
 
 #: activities/fractions_create/resource/2/Data.qml:36
 #: activities/fractions_create/resource/4/Data.qml:61
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select one-quarter of the pie."
 msgctxt "Data|"
-msgid "Select one-quarter of the rectangle."
-msgstr "Aukeratu laukizuzenaren laurdena."
+msgid "Select one-quarter of the square."
+msgstr "Aukeratu tartaren laurden bat."
 
 #: activities/fractions_create/resource/2/Data.qml:42
 #: activities/fractions_create/resource/4/Data.qml:67
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select two-fifths of the pie."
 msgctxt "Data|"
-msgid "Select two-fifths of the rectangle."
-msgstr "Aukeratu laukizuzenaren bi bosten."
+msgid "Select two-fifths of the square."
+msgstr "Aukeratu tartaren bi bosten."
 
 #: activities/fractions_create/resource/2/Data.qml:50
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select one pie and one-quarter of a pie."
 msgctxt "Data|"
-msgid "Select one rectangle and one-quarter of a rectangle."
-msgstr "Aukeratu laukizuzen bat eta laurdena."
+msgid "Select one square and one-quarter of a square."
+msgstr "Aukeratu tarta bat eta laurden."
 
 #: activities/fractions_create/resource/2/Data.qml:56
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select one pie and two-fifths of a pie."
 msgctxt "Data|"
-msgid "Select one rectangle and two-fifths of a rectangle."
-msgstr "Aukeratu laukizuzen bat eta bi bosten."
+msgid "Select one square and two-fifths of a square."
+msgstr "Aukeratu tarta bat eta bi bosten."
 
 #: activities/fractions_create/resource/2/Data.qml:62
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select one pie and one-third of a pie."
 msgctxt "Data|"
-msgid "Select one rectangle and one-third of a rectangle."
-msgstr "Aukeratu laukizuzen bat eta heren."
+msgid "Select one square and one-third of a square."
+msgstr "Aukeratu tarta bat eta heren."
 
 #: activities/fractions_create/resource/2/Data.qml:68
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select one pie and one half of a pie."
 msgctxt "Data|"
-msgid "Select one rectangle and one half of a rectangle."
-msgstr "Aukeratu laukizuzen bat eta erdi."
+msgid "Select one square and one half of a square."
+msgstr "Aukeratu tarta bat eta erdi."
 
 #: activities/fractions_create/resource/2/Data.qml:74
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select one pie and three-quarters of a pie."
 msgctxt "Data|"
-msgid "Select one rectangle and three-quarters of a rectangle."
-msgstr "Aukeratu laukizuzen bat eta hiru laurden."
+msgid "Select one square and three-quarters of a square."
+msgstr "Aukeratu tarta bat eta hiru laurden."
 
 #: activities/fractions_create/resource/3/Data.qml:9
 msgctxt "Data|"
@@ -9240,14 +9288,20 @@ msgid "Select three-fifths of the pie."
 msgstr "Aukeratu tartaren hiru bosten."
 
 #: activities/fractions_create/resource/4/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Non-simplified fractions with a pie."
 msgctxt "Data|"
-msgid "Non-simplified fractions with a rectangle."
-msgstr "Erraztu gabeko zatikiak laukizuzen bat erabiliz."
+msgid "Non-simplified fractions with a square."
+msgstr "Erraztu gabeko zatikiak tarta bat erabiliz."
 
 #: activities/fractions_create/resource/4/Data.qml:73
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select three-fifths of the pie."
 msgctxt "Data|"
-msgid "Select three-fifths of the rectangle."
-msgstr "Aukeratu laukizuzenaren hiru bosten."
+msgid "Select three-fifths of the square."
+msgstr "Aukeratu tartaren hiru bosten."
 
 #: activities/fractions_create/resource/5/Data.qml:9
 msgctxt "Data|"
@@ -9301,55 +9355,85 @@ msgid "Select 1.75 pies."
 msgstr "Aukeratu 1,75 tarta."
 
 #: activities/fractions_create/resource/6/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Decimal numbers with a pie."
 msgctxt "Data|"
-msgid "Decimal numbers with a rectangle."
-msgstr "Zenbaki hamartarrak laukizuzen bat erabiliz."
+msgid "Decimal numbers with a square."
+msgstr "Zenbaki hamartarrak tarta bat erabiliz."
 
 #: activities/fractions_create/resource/6/Data.qml:18
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select 0.5 pie."
 msgctxt "Data|"
-msgid "Select 0.5 rectangle."
-msgstr "Aukeratu 0,5 laukizuzen."
+msgid "Select 0.5 square."
+msgstr "Aukeratua 0,5 tarta."
 
 #: activities/fractions_create/resource/6/Data.qml:24
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select 0.25 pie."
 msgctxt "Data|"
-msgid "Select 0.25 rectangle."
-msgstr "Aukeratu 0,25 laukizuzen."
+msgid "Select 0.25 square."
+msgstr "Aukeratu 0,25 tarta."
 
 #: activities/fractions_create/resource/6/Data.qml:30
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select 0.4 pie."
 msgctxt "Data|"
-msgid "Select 0.4 rectangle."
-msgstr "Aukeratu 0,4 laukizuzen."
+msgid "Select 0.4 square."
+msgstr "Aukeratua 0,4 tarta."
 
 #: activities/fractions_create/resource/6/Data.qml:36
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select 0.75 pie."
 msgctxt "Data|"
-msgid "Select 0.75 rectangle."
-msgstr "Aukeratu 0,75 laukizuzen."
+msgid "Select 0.75 square."
+msgstr "Aukeratu 0,75 tarta."
 
 #: activities/fractions_create/resource/6/Data.qml:42
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select 0.8 pie."
 msgctxt "Data|"
-msgid "Select 0.8 rectangle."
-msgstr "Aukeratu 0,8 laukizuzen."
+msgid "Select 0.8 square."
+msgstr "Aukeratu 0,8 tarta."
 
 #: activities/fractions_create/resource/6/Data.qml:50
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select 1.25 pies."
 msgctxt "Data|"
-msgid "Select 1.25 rectangles."
-msgstr "Aukeratu 1,25 laukizuzen."
+msgid "Select 1.25 squares."
+msgstr "Aukeratu 1.25 tarta."
 
 #: activities/fractions_create/resource/6/Data.qml:56
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select 1.4 pies."
 msgctxt "Data|"
-msgid "Select 1.4 rectangles."
-msgstr "Aukeratu 1.4 laukizuzen."
+msgid "Select 1.4 squares."
+msgstr "Aukeratu 1.4 tarta."
 
 #: activities/fractions_create/resource/6/Data.qml:62
 #: activities/fractions_create/resource/6/Data.qml:68
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select 1.5 pies."
 msgctxt "Data|"
-msgid "Select 1.5 rectangles."
-msgstr "Aukeratu 1,5 laukizuzen."
+msgid "Select 1.5 squares."
+msgstr "Aukeratu 1.5 tarta."
 
 #: activities/fractions_create/resource/6/Data.qml:74
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select 1.75 pies."
 msgctxt "Data|"
-msgid "Select 1.75 rectangles."
-msgstr "Aukeratu 1,75 laukizuzen."
+msgid "Select 1.75 squares."
+msgstr "Aukeratu 1,75 tarta."
 
 #: activities/fractions_create/resource/7/Data.qml:9
 msgctxt "Data|"
@@ -9371,21 +9455,26 @@ msgid "Select %1% of the pie."
 msgstr "Aukeratu tartaren %%1."
 
 #: activities/fractions_create/resource/8/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Percentages with a pie."
 msgctxt "Data|"
-msgid "Percentages with a rectangle."
-msgstr "Ehunekoak laukizuzen bat erabiliz."
+msgid "Percentages with a square."
+msgstr "Ehunekoak tarta bat erabiliz."
 
-#. Select %1 percent of the rectangle.
+#. Select %1 percent of the square.
 #: activities/fractions_create/resource/8/Data.qml:19
 #: activities/fractions_create/resource/8/Data.qml:26
 #: activities/fractions_create/resource/8/Data.qml:33
 #: activities/fractions_create/resource/8/Data.qml:42
 #: activities/fractions_create/resource/8/Data.qml:49
 #: activities/fractions_create/resource/8/Data.qml:56
-#, qt-format
+#, fuzzy, qt-format
+#| msgctxt "Data|"
+#| msgid "Select %1% of the pie."
 msgctxt "Data|"
-msgid "Select %1% of the rectangle."
-msgstr "Aukeratu laukizuzenaren %%1."
+msgid "Select %1% of the square."
+msgstr "Aukeratu tartaren %%1."
 
 #: activities/fractions_create/resource/9/Data.qml:9
 msgctxt "Data|"
@@ -9416,23 +9505,29 @@ msgstr ""
 
 #: activities/fractions_find/resource/1/Data.qml:19
 msgctxt "Data|"
-msgid "Find denominator (with a pie)."
-msgstr "Izendatzailea aurkitu (tarta bat erabiliz)"
-
-#: activities/fractions_find/resource/2/Data.qml:19
-msgctxt "Data|"
-msgid "Find denominator (with a rectangle)."
-msgstr "Izendatzailea aurkitu (laukizuzen bat erabiliz)."
-
-#: activities/fractions_find/resource/3/Data.qml:9
-msgctxt "Data|"
 msgid "Find numerator (with a pie)."
 msgstr "Zenbakitzailea aurkitu (tarta bat erabiliz)."
 
-#: activities/fractions_find/resource/4/Data.qml:9
+#: activities/fractions_find/resource/2/Data.qml:19
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Find numerator (with a pie)."
 msgctxt "Data|"
-msgid "Find numerator (with a rectangle)."
-msgstr "Zenbakitzailea aurkitu (laukizuzen bat erabiliz)."
+msgid "Find numerator (with a square)."
+msgstr "Zenbakitzailea aurkitu (tarta bat erabiliz)."
+
+#: activities/fractions_find/resource/3/Data.qml:9
+msgctxt "Data|"
+msgid "Find denominator (with a pie)."
+msgstr "Izendatzailea aurkitu (tarta bat erabiliz)"
+
+#: activities/fractions_find/resource/4/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Find denominator (with a pie)."
+msgctxt "Data|"
+msgid "Find denominator (with a square)."
+msgstr "Izendatzailea aurkitu (tarta bat erabiliz)"
 
 #: activities/fractions_find/resource/5/Data.qml:9
 msgctxt "Data|"
@@ -9440,9 +9535,12 @@ msgid "Find numerator and denominator (with a pie)."
 msgstr "Zenbakitzailea eta izendatzailea aurkitu (tarta bat erabiliz)."
 
 #: activities/fractions_find/resource/6/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Find numerator and denominator (with a pie)."
 msgctxt "Data|"
-msgid "Find numerator and denominator (with a rectangle)."
-msgstr "Zenbakitzailea eta izendatzailea aurkitu (laukizuzen bat erabiliz)."
+msgid "Find numerator and denominator (with a square)."
+msgstr "Zenbakitzailea eta izendatzailea aurkitu (tarta bat erabiliz)."
 
 #. Activity title
 #: activities/geo-country/ActivityInfo.qml:19
@@ -10678,8 +10776,11 @@ msgid "Suvalkija"
 msgstr "Suvalkija"
 
 #: activities/geo-country/resource/board/board18_0.qml:13
+#, fuzzy
+#| msgctxt "board18_0|"
+#| msgid "Autonomous communities of Spain"
 msgctxt "board18_0|"
-msgid "Autonomous communities of Spain"
+msgid "Autonomous communities or cities of Spain"
 msgstr "Espainiako erkidego autonomoak"
 
 #. Autonomous communities of Spain: Andalusia
@@ -26008,6 +26109,134 @@ msgstr "Saihestu"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Hasi"
+
+#~ msgctxt "Data|"
+#~ msgid "3 decimal places between 0 and 999."
+#~ msgstr "3 hamartar-leku 0 eta 999 artean."
+
+#~ msgctxt "Data|"
+#~ msgid "Specific questions with a rectangle."
+#~ msgstr "Galdera zehatzak laukizuzen bat erabiliz."
+
+#~ msgctxt "Data|"
+#~ msgid ""
+#~ "Select as many parts as you can without taking more than half of the "
+#~ "rectangle."
+#~ msgstr ""
+#~ "Aukeratu ahal duzun atal kopuru handiena, laukizuzenaren erdia baino "
+#~ "gehiago hartu gabe."
+
+#~ msgctxt "Data|"
+#~ msgid "Simplified fractions with a rectangle."
+#~ msgstr "Zatiki erraztuak laukizuzen bat erabiliz."
+
+#~ msgctxt "Data|"
+#~ msgid "Select one half of the rectangle."
+#~ msgstr "Aukeratu laukizuzenaren erdia."
+
+#~ msgctxt "Data|"
+#~ msgid "Select one-third of the rectangle."
+#~ msgstr "Aukeratu laukizuzenaren herena."
+
+#~ msgctxt "Data|"
+#~ msgid "Select two-thirds of the rectangle."
+#~ msgstr "Aukeratu laukizuzenaren bi heren."
+
+#~ msgctxt "Data|"
+#~ msgid "Select one-quarter of the rectangle."
+#~ msgstr "Aukeratu laukizuzenaren laurdena."
+
+#~ msgctxt "Data|"
+#~ msgid "Select two-fifths of the rectangle."
+#~ msgstr "Aukeratu laukizuzenaren bi bosten."
+
+#~ msgctxt "Data|"
+#~ msgid "Select one rectangle and one-quarter of a rectangle."
+#~ msgstr "Aukeratu laukizuzen bat eta laurdena."
+
+#~ msgctxt "Data|"
+#~ msgid "Select one rectangle and two-fifths of a rectangle."
+#~ msgstr "Aukeratu laukizuzen bat eta bi bosten."
+
+#~ msgctxt "Data|"
+#~ msgid "Select one rectangle and one-third of a rectangle."
+#~ msgstr "Aukeratu laukizuzen bat eta heren."
+
+#~ msgctxt "Data|"
+#~ msgid "Select one rectangle and one half of a rectangle."
+#~ msgstr "Aukeratu laukizuzen bat eta erdi."
+
+#~ msgctxt "Data|"
+#~ msgid "Select one rectangle and three-quarters of a rectangle."
+#~ msgstr "Aukeratu laukizuzen bat eta hiru laurden."
+
+#~ msgctxt "Data|"
+#~ msgid "Non-simplified fractions with a rectangle."
+#~ msgstr "Erraztu gabeko zatikiak laukizuzen bat erabiliz."
+
+#~ msgctxt "Data|"
+#~ msgid "Select three-fifths of the rectangle."
+#~ msgstr "Aukeratu laukizuzenaren hiru bosten."
+
+#~ msgctxt "Data|"
+#~ msgid "Decimal numbers with a rectangle."
+#~ msgstr "Zenbaki hamartarrak laukizuzen bat erabiliz."
+
+#~ msgctxt "Data|"
+#~ msgid "Select 0.5 rectangle."
+#~ msgstr "Aukeratu 0,5 laukizuzen."
+
+#~ msgctxt "Data|"
+#~ msgid "Select 0.25 rectangle."
+#~ msgstr "Aukeratu 0,25 laukizuzen."
+
+#~ msgctxt "Data|"
+#~ msgid "Select 0.4 rectangle."
+#~ msgstr "Aukeratu 0,4 laukizuzen."
+
+#~ msgctxt "Data|"
+#~ msgid "Select 0.75 rectangle."
+#~ msgstr "Aukeratu 0,75 laukizuzen."
+
+#~ msgctxt "Data|"
+#~ msgid "Select 0.8 rectangle."
+#~ msgstr "Aukeratu 0,8 laukizuzen."
+
+#~ msgctxt "Data|"
+#~ msgid "Select 1.25 rectangles."
+#~ msgstr "Aukeratu 1,25 laukizuzen."
+
+#~ msgctxt "Data|"
+#~ msgid "Select 1.4 rectangles."
+#~ msgstr "Aukeratu 1.4 laukizuzen."
+
+#~ msgctxt "Data|"
+#~ msgid "Select 1.5 rectangles."
+#~ msgstr "Aukeratu 1,5 laukizuzen."
+
+#~ msgctxt "Data|"
+#~ msgid "Select 1.75 rectangles."
+#~ msgstr "Aukeratu 1,75 laukizuzen."
+
+#~ msgctxt "Data|"
+#~ msgid "Percentages with a rectangle."
+#~ msgstr "Ehunekoak laukizuzen bat erabiliz."
+
+#~ msgctxt "Data|"
+#~ msgid "Select %1% of the rectangle."
+#~ msgstr "Aukeratu laukizuzenaren %%1."
+
+#~ msgctxt "Data|"
+#~ msgid "Find denominator (with a rectangle)."
+#~ msgstr "Izendatzailea aurkitu (laukizuzen bat erabiliz)."
+
+#~ msgctxt "Data|"
+#~ msgid "Find numerator (with a rectangle)."
+#~ msgstr "Zenbakitzailea aurkitu (laukizuzen bat erabiliz)."
+
+#~ msgctxt "Data|"
+#~ msgid "Find numerator and denominator (with a rectangle)."
+#~ msgstr "Zenbakitzailea eta izendatzailea aurkitu (laukizuzen bat erabiliz)."
 
 #~ msgctxt "ActivityInfo|"
 #~ msgid "Learn digits"

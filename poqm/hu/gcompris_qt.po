@@ -5225,9 +5225,12 @@ msgid "Numbers from 1 to 9."
 msgstr "Számok 1-9-ig."
 
 #: activities/comparator/resource/10/Data.qml:14
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "2 decimal places between 0 and 99.99."
 msgctxt "Data|"
-msgid "3 decimal places between 0 and 999."
-msgstr "3 tizedeshely 0 és 999 között."
+msgid "3 decimal places between 0 and 999.999."
+msgstr "2 tizedeshely 0 és 99,99 között."
 
 #: activities/comparator/resource/2/Data.qml:14
 msgctxt "Data|"
@@ -5255,13 +5258,19 @@ msgid "Numbers from 1 to 1 billion."
 msgstr "Számok 1-1 millióig."
 
 #: activities/comparator/resource/7/Data.qml:14
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "1 decimal place between 0 and 9, same integer part."
 msgctxt "Data|"
-msgid "1 decimal place between 0 and 9, same integer part."
+msgid "1 decimal place between 0 and 9.9, same integer part."
 msgstr "1 tizedeshely 0 és 9,ugyanez az egész részen."
 
 #: activities/comparator/resource/8/Data.qml:14
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "1 decimal place between 0 and 9."
 msgctxt "Data|"
-msgid "1 decimal place between 0 and 9."
+msgid "1 decimal place between 0 and 9.9."
 msgstr "1 tizedeshely 0 és 9 között."
 
 #: activities/comparator/resource/9/Data.qml:14
@@ -9062,81 +9071,121 @@ msgid "Select one pie and three-quarters of a pie."
 msgstr "Válassz egy egész plusz három-negyed pitét!"
 
 #: activities/fractions_create/resource/10/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Specific questions with a pie."
 msgctxt "Data|"
-msgid "Specific questions with a rectangle."
-msgstr "Konkrét kérdések téglalapokról."
+msgid "Specific questions with a square."
+msgstr "Konkrét kérdések pitével."
 
 #: activities/fractions_create/resource/10/Data.qml:18
 #: activities/fractions_create/resource/10/Data.qml:24
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid ""
+#| "Select as many parts as you can without taking more than half of the pie."
 msgctxt "Data|"
 msgid ""
-"Select as many parts as you can without taking more than half of the "
-"rectangle."
-msgstr "Válassz minél több részt úgy, hogy ne élegyen több a négyzet felénél!"
+"Select as many parts as you can without taking more than half of the square."
+msgstr ""
+"Válassz ki annyi részt amennyit csak tudsz, de ne legyen több a pite felénél!"
 
 #: activities/fractions_create/resource/2/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Simplified fractions with a pie."
 msgctxt "Data|"
-msgid "Simplified fractions with a rectangle."
-msgstr "Egyszerű törtek négyzettel."
+msgid "Simplified fractions with a square."
+msgstr "Egyszerű törtek pite segítségével."
 
 #: activities/fractions_create/resource/2/Data.qml:18
 #: activities/fractions_create/resource/4/Data.qml:17
 #: activities/fractions_create/resource/4/Data.qml:23
 #: activities/fractions_create/resource/4/Data.qml:29
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select one half of the pie."
 msgctxt "Data|"
-msgid "Select one half of the rectangle."
-msgstr "Válaszd ki a téglalap felét!"
+msgid "Select one half of the square."
+msgstr "Válaszd ki a pite felét!"
 
 #: activities/fractions_create/resource/2/Data.qml:24
 #: activities/fractions_create/resource/4/Data.qml:35
 #: activities/fractions_create/resource/4/Data.qml:49
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select one-third of the pie."
 msgctxt "Data|"
-msgid "Select one-third of the rectangle."
-msgstr "Válaszd ki a téglalap egy-harmadát!"
+msgid "Select one-third of the square."
+msgstr "Válaszd ki a pite egy-harmadát!"
 
 #: activities/fractions_create/resource/2/Data.qml:30
 #: activities/fractions_create/resource/4/Data.qml:41
 #: activities/fractions_create/resource/4/Data.qml:55
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select two-thirds of the pie."
 msgctxt "Data|"
-msgid "Select two-thirds of the rectangle."
-msgstr "Válaszd ki a téglalap két-harmadát!"
+msgid "Select two-thirds of the square."
+msgstr "Válaszd ki a pite két-harmadát!"
 
 #: activities/fractions_create/resource/2/Data.qml:36
 #: activities/fractions_create/resource/4/Data.qml:61
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select one-quarter of the pie."
 msgctxt "Data|"
-msgid "Select one-quarter of the rectangle."
-msgstr "Válaszd ki a téglalap egy-negyedét!"
+msgid "Select one-quarter of the square."
+msgstr "Válaszd ki a pite negyedét!"
 
 #: activities/fractions_create/resource/2/Data.qml:42
 #: activities/fractions_create/resource/4/Data.qml:67
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select two-fifths of the pie."
 msgctxt "Data|"
-msgid "Select two-fifths of the rectangle."
-msgstr "Válaszd ki a téglalap két-ötödét!"
+msgid "Select two-fifths of the square."
+msgstr "Válaszd ki a pite két-ötödét!"
 
 #: activities/fractions_create/resource/2/Data.qml:50
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select one pie and one-quarter of a pie."
 msgctxt "Data|"
-msgid "Select one rectangle and one-quarter of a rectangle."
-msgstr "Válassz egy és egy negyedet a négyzetekből!"
+msgid "Select one square and one-quarter of a square."
+msgstr "Válaszd ki a pite negyedét!"
 
 #: activities/fractions_create/resource/2/Data.qml:56
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select one pie and two-fifths of a pie."
 msgctxt "Data|"
-msgid "Select one rectangle and two-fifths of a rectangle."
-msgstr "Válassz egy és két-ötödöt a négyzetekből!"
+msgid "Select one square and two-fifths of a square."
+msgstr "Válaszd ki a pite két-ötödét!"
 
 #: activities/fractions_create/resource/2/Data.qml:62
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select one pie and one-third of a pie."
 msgctxt "Data|"
-msgid "Select one rectangle and one-third of a rectangle."
-msgstr "Válassz egy és egy-harmadot a négyzetekből!"
+msgid "Select one square and one-third of a square."
+msgstr "Válassz egy egész plusz egy harmad pitét!"
 
 #: activities/fractions_create/resource/2/Data.qml:68
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select one pie and one half of a pie."
 msgctxt "Data|"
-msgid "Select one rectangle and one half of a rectangle."
-msgstr "Válassz egy és egy felet a négyzetekből!"
+msgid "Select one square and one half of a square."
+msgstr "Válassz egy egész plusz egy fél pitét!"
 
 #: activities/fractions_create/resource/2/Data.qml:74
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select one pie and three-quarters of a pie."
 msgctxt "Data|"
-msgid "Select one rectangle and three-quarters of a rectangle."
-msgstr "Válassz egy és három-negyedet a négyzetekből!"
+msgid "Select one square and three-quarters of a square."
+msgstr "Válassz egy egész plusz három-negyed pitét!"
 
 #: activities/fractions_create/resource/3/Data.qml:9
 msgctxt "Data|"
@@ -9149,14 +9198,20 @@ msgid "Select three-fifths of the pie."
 msgstr "Válaszd ki a pite három ötödét!"
 
 #: activities/fractions_create/resource/4/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Non-simplified fractions with a pie."
 msgctxt "Data|"
-msgid "Non-simplified fractions with a rectangle."
-msgstr "Bonyolultabb törtek négyzetekkel."
+msgid "Non-simplified fractions with a square."
+msgstr "Bonyolultabb törtek pitével."
 
 #: activities/fractions_create/resource/4/Data.qml:73
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select three-fifths of the pie."
 msgctxt "Data|"
-msgid "Select three-fifths of the rectangle."
-msgstr "Válaszd ki a téglalap három-ötödét!"
+msgid "Select three-fifths of the square."
+msgstr "Válaszd ki a pite három ötödét!"
 
 #: activities/fractions_create/resource/5/Data.qml:9
 msgctxt "Data|"
@@ -9210,55 +9265,85 @@ msgid "Select 1.75 pies."
 msgstr "Válaszd ki a pite 1,75-öd részét!"
 
 #: activities/fractions_create/resource/6/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Decimal numbers with a pie."
 msgctxt "Data|"
-msgid "Decimal numbers with a rectangle."
-msgstr "Tizedes számok téglalappal."
+msgid "Decimal numbers with a square."
+msgstr "Tizedes számok pitével."
 
 #: activities/fractions_create/resource/6/Data.qml:18
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select 0.5 pie."
 msgctxt "Data|"
-msgid "Select 0.5 rectangle."
-msgstr "Válaszd ki a téglalap 0,5-ödét!"
+msgid "Select 0.5 square."
+msgstr "Válaszd ki a pite 0,5-ödét!"
 
 #: activities/fractions_create/resource/6/Data.qml:24
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select 0.25 pie."
 msgctxt "Data|"
-msgid "Select 0.25 rectangle."
-msgstr "Válaszd ki a téglalap 0,25-öd részét!"
+msgid "Select 0.25 square."
+msgstr "Válaszd ki a pite 0,25-öd részét!"
 
 #: activities/fractions_create/resource/6/Data.qml:30
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select 0.4 pie."
 msgctxt "Data|"
-msgid "Select 0.4 rectangle."
-msgstr "Válaszd ki a téglalap 0,4-edét!"
+msgid "Select 0.4 square."
+msgstr "Válaszd ki a pite 0,4-edét!"
 
 #: activities/fractions_create/resource/6/Data.qml:36
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select 0.75 pie."
 msgctxt "Data|"
-msgid "Select 0.75 rectangle."
-msgstr "Válaszd ki a téglalap 0,75-öd részét!"
+msgid "Select 0.75 square."
+msgstr "Válaszd ki a pite 0,75-öd részét!"
 
 #: activities/fractions_create/resource/6/Data.qml:42
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select 0.8 pie."
 msgctxt "Data|"
-msgid "Select 0.8 rectangle."
-msgstr "Válaszd ki a téglalap 0,8-adát!"
+msgid "Select 0.8 square."
+msgstr "Válaszd ki a pite 0,8-adát!"
 
 #: activities/fractions_create/resource/6/Data.qml:50
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select 1.25 pies."
 msgctxt "Data|"
-msgid "Select 1.25 rectangles."
-msgstr "Válaszd ki a téglalap 1,25-öd részét!"
+msgid "Select 1.25 squares."
+msgstr "Válassz ki 1,25-öd részt a pitéből!"
 
 #: activities/fractions_create/resource/6/Data.qml:56
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select 1.4 pies."
 msgctxt "Data|"
-msgid "Select 1.4 rectangles."
-msgstr "Válaszd ki a téglalap 1,4-ed részét!"
+msgid "Select 1.4 squares."
+msgstr "Válasz ki  1,4-ed részt a pitéből!"
 
 #: activities/fractions_create/resource/6/Data.qml:62
 #: activities/fractions_create/resource/6/Data.qml:68
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select 1.5 pies."
 msgctxt "Data|"
-msgid "Select 1.5 rectangles."
-msgstr "Válaszd ki a téglalap 1,5-öd részét!"
+msgid "Select 1.5 squares."
+msgstr "Válasz ki 1,5-öd részt a pitéből!"
 
 #: activities/fractions_create/resource/6/Data.qml:74
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select 1.75 pies."
 msgctxt "Data|"
-msgid "Select 1.75 rectangles."
-msgstr "Válaszd ki a téglalap 1,75-öd részét!"
+msgid "Select 1.75 squares."
+msgstr "Válaszd ki a pite 1,75-öd részét!"
 
 #: activities/fractions_create/resource/7/Data.qml:9
 msgctxt "Data|"
@@ -9280,21 +9365,26 @@ msgid "Select %1% of the pie."
 msgstr "Válaszd ki a pite %1% -t!"
 
 #: activities/fractions_create/resource/8/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Percentages with a pie."
 msgctxt "Data|"
-msgid "Percentages with a rectangle."
-msgstr "Szézalékok négyzetekkel"
+msgid "Percentages with a square."
+msgstr "Százalékok pitével"
 
-#. Select %1 percent of the rectangle.
+#. Select %1 percent of the square.
 #: activities/fractions_create/resource/8/Data.qml:19
 #: activities/fractions_create/resource/8/Data.qml:26
 #: activities/fractions_create/resource/8/Data.qml:33
 #: activities/fractions_create/resource/8/Data.qml:42
 #: activities/fractions_create/resource/8/Data.qml:49
 #: activities/fractions_create/resource/8/Data.qml:56
-#, qt-format
+#, fuzzy, qt-format
+#| msgctxt "Data|"
+#| msgid "Select %1% of the pie."
 msgctxt "Data|"
-msgid "Select %1% of the rectangle."
-msgstr "Válaszd ki a négyzet %1% %-át."
+msgid "Select %1% of the square."
+msgstr "Válaszd ki a pite %1% -t!"
 
 #: activities/fractions_create/resource/9/Data.qml:9
 msgctxt "Data|"
@@ -9323,23 +9413,29 @@ msgstr "Keresd meg a megfelelő számlálót és nevezőt a jelölt törtben!"
 
 #: activities/fractions_find/resource/1/Data.qml:19
 msgctxt "Data|"
-msgid "Find denominator (with a pie)."
-msgstr "Nevező megtalálása (pitével)"
-
-#: activities/fractions_find/resource/2/Data.qml:19
-msgctxt "Data|"
-msgid "Find denominator (with a rectangle)."
-msgstr "Nevező megtalálása (téglalappal)"
-
-#: activities/fractions_find/resource/3/Data.qml:9
-msgctxt "Data|"
 msgid "Find numerator (with a pie)."
 msgstr "Számláló megkeresése (pitével)."
 
-#: activities/fractions_find/resource/4/Data.qml:9
+#: activities/fractions_find/resource/2/Data.qml:19
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Find numerator (with a pie)."
 msgctxt "Data|"
-msgid "Find numerator (with a rectangle)."
-msgstr "Számláló megkeresése (négyzettel)."
+msgid "Find numerator (with a square)."
+msgstr "Számláló megkeresése (pitével)."
+
+#: activities/fractions_find/resource/3/Data.qml:9
+msgctxt "Data|"
+msgid "Find denominator (with a pie)."
+msgstr "Nevező megtalálása (pitével)"
+
+#: activities/fractions_find/resource/4/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Find denominator (with a pie)."
+msgctxt "Data|"
+msgid "Find denominator (with a square)."
+msgstr "Nevező megtalálása (pitével)"
 
 #: activities/fractions_find/resource/5/Data.qml:9
 msgctxt "Data|"
@@ -9347,9 +9443,12 @@ msgid "Find numerator and denominator (with a pie)."
 msgstr "Számláló és nevező megtalálása (pitével)."
 
 #: activities/fractions_find/resource/6/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Find numerator and denominator (with a pie)."
 msgctxt "Data|"
-msgid "Find numerator and denominator (with a rectangle)."
-msgstr "Számláló és nevező megtalálása (négyzettel)."
+msgid "Find numerator and denominator (with a square)."
+msgstr "Számláló és nevező megtalálása (pitével)."
 
 #. Activity title
 #: activities/geo-country/ActivityInfo.qml:19
@@ -10583,8 +10682,11 @@ msgid "Suvalkija"
 msgstr "Suvalkija"
 
 #: activities/geo-country/resource/board/board18_0.qml:13
+#, fuzzy
+#| msgctxt "board18_0|"
+#| msgid "Autonomous communities of Spain"
 msgctxt "board18_0|"
-msgid "Autonomous communities of Spain"
+msgid "Autonomous communities or cities of Spain"
 msgstr "Spanyolország autonóm közösségei"
 
 #. Autonomous communities of Spain: Andalusia
@@ -25748,6 +25850,133 @@ msgstr "Kihagyás"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Indítás"
+
+#~ msgctxt "Data|"
+#~ msgid "3 decimal places between 0 and 999."
+#~ msgstr "3 tizedeshely 0 és 999 között."
+
+#~ msgctxt "Data|"
+#~ msgid "Specific questions with a rectangle."
+#~ msgstr "Konkrét kérdések téglalapokról."
+
+#~ msgctxt "Data|"
+#~ msgid ""
+#~ "Select as many parts as you can without taking more than half of the "
+#~ "rectangle."
+#~ msgstr ""
+#~ "Válassz minél több részt úgy, hogy ne élegyen több a négyzet felénél!"
+
+#~ msgctxt "Data|"
+#~ msgid "Simplified fractions with a rectangle."
+#~ msgstr "Egyszerű törtek négyzettel."
+
+#~ msgctxt "Data|"
+#~ msgid "Select one half of the rectangle."
+#~ msgstr "Válaszd ki a téglalap felét!"
+
+#~ msgctxt "Data|"
+#~ msgid "Select one-third of the rectangle."
+#~ msgstr "Válaszd ki a téglalap egy-harmadát!"
+
+#~ msgctxt "Data|"
+#~ msgid "Select two-thirds of the rectangle."
+#~ msgstr "Válaszd ki a téglalap két-harmadát!"
+
+#~ msgctxt "Data|"
+#~ msgid "Select one-quarter of the rectangle."
+#~ msgstr "Válaszd ki a téglalap egy-negyedét!"
+
+#~ msgctxt "Data|"
+#~ msgid "Select two-fifths of the rectangle."
+#~ msgstr "Válaszd ki a téglalap két-ötödét!"
+
+#~ msgctxt "Data|"
+#~ msgid "Select one rectangle and one-quarter of a rectangle."
+#~ msgstr "Válassz egy és egy negyedet a négyzetekből!"
+
+#~ msgctxt "Data|"
+#~ msgid "Select one rectangle and two-fifths of a rectangle."
+#~ msgstr "Válassz egy és két-ötödöt a négyzetekből!"
+
+#~ msgctxt "Data|"
+#~ msgid "Select one rectangle and one-third of a rectangle."
+#~ msgstr "Válassz egy és egy-harmadot a négyzetekből!"
+
+#~ msgctxt "Data|"
+#~ msgid "Select one rectangle and one half of a rectangle."
+#~ msgstr "Válassz egy és egy felet a négyzetekből!"
+
+#~ msgctxt "Data|"
+#~ msgid "Select one rectangle and three-quarters of a rectangle."
+#~ msgstr "Válassz egy és három-negyedet a négyzetekből!"
+
+#~ msgctxt "Data|"
+#~ msgid "Non-simplified fractions with a rectangle."
+#~ msgstr "Bonyolultabb törtek négyzetekkel."
+
+#~ msgctxt "Data|"
+#~ msgid "Select three-fifths of the rectangle."
+#~ msgstr "Válaszd ki a téglalap három-ötödét!"
+
+#~ msgctxt "Data|"
+#~ msgid "Decimal numbers with a rectangle."
+#~ msgstr "Tizedes számok téglalappal."
+
+#~ msgctxt "Data|"
+#~ msgid "Select 0.5 rectangle."
+#~ msgstr "Válaszd ki a téglalap 0,5-ödét!"
+
+#~ msgctxt "Data|"
+#~ msgid "Select 0.25 rectangle."
+#~ msgstr "Válaszd ki a téglalap 0,25-öd részét!"
+
+#~ msgctxt "Data|"
+#~ msgid "Select 0.4 rectangle."
+#~ msgstr "Válaszd ki a téglalap 0,4-edét!"
+
+#~ msgctxt "Data|"
+#~ msgid "Select 0.75 rectangle."
+#~ msgstr "Válaszd ki a téglalap 0,75-öd részét!"
+
+#~ msgctxt "Data|"
+#~ msgid "Select 0.8 rectangle."
+#~ msgstr "Válaszd ki a téglalap 0,8-adát!"
+
+#~ msgctxt "Data|"
+#~ msgid "Select 1.25 rectangles."
+#~ msgstr "Válaszd ki a téglalap 1,25-öd részét!"
+
+#~ msgctxt "Data|"
+#~ msgid "Select 1.4 rectangles."
+#~ msgstr "Válaszd ki a téglalap 1,4-ed részét!"
+
+#~ msgctxt "Data|"
+#~ msgid "Select 1.5 rectangles."
+#~ msgstr "Válaszd ki a téglalap 1,5-öd részét!"
+
+#~ msgctxt "Data|"
+#~ msgid "Select 1.75 rectangles."
+#~ msgstr "Válaszd ki a téglalap 1,75-öd részét!"
+
+#~ msgctxt "Data|"
+#~ msgid "Percentages with a rectangle."
+#~ msgstr "Szézalékok négyzetekkel"
+
+#~ msgctxt "Data|"
+#~ msgid "Select %1% of the rectangle."
+#~ msgstr "Válaszd ki a négyzet %1% %-át."
+
+#~ msgctxt "Data|"
+#~ msgid "Find denominator (with a rectangle)."
+#~ msgstr "Nevező megtalálása (téglalappal)"
+
+#~ msgctxt "Data|"
+#~ msgid "Find numerator (with a rectangle)."
+#~ msgstr "Számláló megkeresése (négyzettel)."
+
+#~ msgctxt "Data|"
+#~ msgid "Find numerator and denominator (with a rectangle)."
+#~ msgstr "Számláló és nevező megtalálása (négyzettel)."
 
 #~ msgctxt "ActivityInfo|"
 #~ msgid ""

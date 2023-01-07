@@ -5083,9 +5083,12 @@ msgid "Numbers from 1 to 9."
 msgstr "מספרים מ־0 עד 9."
 
 #: activities/comparator/resource/10/Data.qml:14
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "2 decimal places between 0 and 99.99."
 msgctxt "Data|"
-msgid "3 decimal places between 0 and 999."
-msgstr "שלושה מקומות עשרוניים בין 0 ל־999."
+msgid "3 decimal places between 0 and 999.999."
+msgstr "שני מקומות עשרוניים בין 0 ו־99.99."
 
 #: activities/comparator/resource/2/Data.qml:14
 msgctxt "Data|"
@@ -5113,13 +5116,19 @@ msgid "Numbers from 1 to 1 billion."
 msgstr "מספרים מ־0 עד מיליארד."
 
 #: activities/comparator/resource/7/Data.qml:14
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "1 decimal place between 0 and 9, same integer part."
 msgctxt "Data|"
-msgid "1 decimal place between 0 and 9, same integer part."
+msgid "1 decimal place between 0 and 9.9, same integer part."
 msgstr "מקום עשרוני אחד בין 0 ו־9, אותו חלק שלם."
 
 #: activities/comparator/resource/8/Data.qml:14
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "1 decimal place between 0 and 9."
 msgctxt "Data|"
-msgid "1 decimal place between 0 and 9."
+msgid "1 decimal place between 0 and 9.9."
 msgstr "מקום עשרוני אחד בין 0 ו‏־9."
 
 #: activities/comparator/resource/9/Data.qml:14
@@ -8780,81 +8789,120 @@ msgid "Select one pie and three-quarters of a pie."
 msgstr "בחרו עוגה ושלושה רבעים."
 
 #: activities/fractions_create/resource/10/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Specific questions with a pie."
 msgctxt "Data|"
-msgid "Specific questions with a rectangle."
-msgstr "שאלות ספציפיות עם מלבן."
+msgid "Specific questions with a square."
+msgstr "שאלות ספציפיות עם עוגה."
 
 #: activities/fractions_create/resource/10/Data.qml:18
 #: activities/fractions_create/resource/10/Data.qml:24
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid ""
+#| "Select as many parts as you can without taking more than half of the pie."
 msgctxt "Data|"
 msgid ""
-"Select as many parts as you can without taking more than half of the "
-"rectangle."
-msgstr "בחרו כמה חלקים שאפשר מבלי לבחור יותר מחצי מהמלבן."
+"Select as many parts as you can without taking more than half of the square."
+msgstr "בחרו כמה חלקים שאפשר מבלי לבחור יותר מחצי מהעוגה."
 
 #: activities/fractions_create/resource/2/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Simplified fractions with a pie."
 msgctxt "Data|"
-msgid "Simplified fractions with a rectangle."
-msgstr "שברים פשוטים עם מלבן."
+msgid "Simplified fractions with a square."
+msgstr "שברים פשוטים עם עוגה."
 
 #: activities/fractions_create/resource/2/Data.qml:18
 #: activities/fractions_create/resource/4/Data.qml:17
 #: activities/fractions_create/resource/4/Data.qml:23
 #: activities/fractions_create/resource/4/Data.qml:29
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select one half of the pie."
 msgctxt "Data|"
-msgid "Select one half of the rectangle."
-msgstr "בחרו חצי מהמלבן."
+msgid "Select one half of the square."
+msgstr "בחרו חצי מהעוגה."
 
 #: activities/fractions_create/resource/2/Data.qml:24
 #: activities/fractions_create/resource/4/Data.qml:35
 #: activities/fractions_create/resource/4/Data.qml:49
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select one-third of the pie."
 msgctxt "Data|"
-msgid "Select one-third of the rectangle."
-msgstr "בחרו שליש מהמלבן."
+msgid "Select one-third of the square."
+msgstr "בחרו שליש מהעוגה."
 
 #: activities/fractions_create/resource/2/Data.qml:30
 #: activities/fractions_create/resource/4/Data.qml:41
 #: activities/fractions_create/resource/4/Data.qml:55
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select two-thirds of the pie."
 msgctxt "Data|"
-msgid "Select two-thirds of the rectangle."
-msgstr "בחרו שני שלישים מהמלבן."
+msgid "Select two-thirds of the square."
+msgstr "בחרו שני שלישים מהעוגה."
 
 #: activities/fractions_create/resource/2/Data.qml:36
 #: activities/fractions_create/resource/4/Data.qml:61
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select one-quarter of the pie."
 msgctxt "Data|"
-msgid "Select one-quarter of the rectangle."
-msgstr "בחרו רבע מהמלבן."
+msgid "Select one-quarter of the square."
+msgstr "בחרו רבע מהעוגה."
 
 #: activities/fractions_create/resource/2/Data.qml:42
 #: activities/fractions_create/resource/4/Data.qml:67
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select two-fifths of the pie."
 msgctxt "Data|"
-msgid "Select two-fifths of the rectangle."
-msgstr "בחרו שתי חמישיות מהמלבן."
+msgid "Select two-fifths of the square."
+msgstr "בחרו שתי חמישיות מהעוגה."
 
 #: activities/fractions_create/resource/2/Data.qml:50
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select one pie and one-quarter of a pie."
 msgctxt "Data|"
-msgid "Select one rectangle and one-quarter of a rectangle."
-msgstr "בחרו מלבן וָרבע."
+msgid "Select one square and one-quarter of a square."
+msgstr "בחרו עוגה וָרבע."
 
 #: activities/fractions_create/resource/2/Data.qml:56
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select one pie and two-fifths of a pie."
 msgctxt "Data|"
-msgid "Select one rectangle and two-fifths of a rectangle."
-msgstr "בחרו מלבן ושתי חמישיות."
+msgid "Select one square and two-fifths of a square."
+msgstr "בחרו עוגה ושתי חמישיות."
 
 #: activities/fractions_create/resource/2/Data.qml:62
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select one pie and one-third of a pie."
 msgctxt "Data|"
-msgid "Select one rectangle and one-third of a rectangle."
-msgstr "בחרו מלבן ושליש."
+msgid "Select one square and one-third of a square."
+msgstr "בחרו עוגה ושליש."
 
 #: activities/fractions_create/resource/2/Data.qml:68
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select one pie and one half of a pie."
 msgctxt "Data|"
-msgid "Select one rectangle and one half of a rectangle."
-msgstr "בחרו מלבן וחצי."
+msgid "Select one square and one half of a square."
+msgstr "בחרו עוגה וחצי."
 
 #: activities/fractions_create/resource/2/Data.qml:74
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select one pie and three-quarters of a pie."
 msgctxt "Data|"
-msgid "Select one rectangle and three-quarters of a rectangle."
-msgstr "בחרו מלבן ושלושה רבעים."
+msgid "Select one square and three-quarters of a square."
+msgstr "בחרו עוגה ושלושה רבעים."
 
 #: activities/fractions_create/resource/3/Data.qml:9
 msgctxt "Data|"
@@ -8867,14 +8915,20 @@ msgid "Select three-fifths of the pie."
 msgstr "בחרו שלוש חמישיות מהעוגה."
 
 #: activities/fractions_create/resource/4/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Non-simplified fractions with a pie."
 msgctxt "Data|"
-msgid "Non-simplified fractions with a rectangle."
-msgstr "שברים עשרוניים עם מלבן."
+msgid "Non-simplified fractions with a square."
+msgstr "שברים עשרוניים עם עוגה."
 
 #: activities/fractions_create/resource/4/Data.qml:73
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select three-fifths of the pie."
 msgctxt "Data|"
-msgid "Select three-fifths of the rectangle."
-msgstr "בחרו שלוש חמישיות מהמלבן."
+msgid "Select three-fifths of the square."
+msgstr "בחרו שלוש חמישיות מהעוגה."
 
 #: activities/fractions_create/resource/5/Data.qml:9
 msgctxt "Data|"
@@ -8928,55 +8982,85 @@ msgid "Select 1.75 pies."
 msgstr "בחרו 1.75 עוגות."
 
 #: activities/fractions_create/resource/6/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Decimal numbers with a pie."
 msgctxt "Data|"
-msgid "Decimal numbers with a rectangle."
-msgstr "מספרים עשרוניים עם מלבן."
+msgid "Decimal numbers with a square."
+msgstr "מספרים עשרוניים עם עוגה."
 
 #: activities/fractions_create/resource/6/Data.qml:18
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select 0.5 pie."
 msgctxt "Data|"
-msgid "Select 0.5 rectangle."
-msgstr "בחרו 0.5 מלבנים."
+msgid "Select 0.5 square."
+msgstr "בחרו 0.5 עוגות."
 
 #: activities/fractions_create/resource/6/Data.qml:24
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select 0.25 pie."
 msgctxt "Data|"
-msgid "Select 0.25 rectangle."
-msgstr "בחרו 0.25 מלבנים."
+msgid "Select 0.25 square."
+msgstr "בחרו 0.25 עוגות."
 
 #: activities/fractions_create/resource/6/Data.qml:30
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select 0.4 pie."
 msgctxt "Data|"
-msgid "Select 0.4 rectangle."
-msgstr "בחרו 0.4 מלבנים."
+msgid "Select 0.4 square."
+msgstr "בחרו 0.4 עוגות."
 
 #: activities/fractions_create/resource/6/Data.qml:36
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select 0.75 pie."
 msgctxt "Data|"
-msgid "Select 0.75 rectangle."
-msgstr "בחרו 0.75 מלבנים."
+msgid "Select 0.75 square."
+msgstr "בחרו 0.75 עוגות."
 
 #: activities/fractions_create/resource/6/Data.qml:42
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select 0.8 pie."
 msgctxt "Data|"
-msgid "Select 0.8 rectangle."
-msgstr "בחרו 0.8 מלבנים."
+msgid "Select 0.8 square."
+msgstr "בחרו 0.8 עוגות."
 
 #: activities/fractions_create/resource/6/Data.qml:50
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select 1.25 pies."
 msgctxt "Data|"
-msgid "Select 1.25 rectangles."
-msgstr "בחרו 1.25 מלבנים."
+msgid "Select 1.25 squares."
+msgstr "בחרו 1.25 עוגות."
 
 #: activities/fractions_create/resource/6/Data.qml:56
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select 1.4 pies."
 msgctxt "Data|"
-msgid "Select 1.4 rectangles."
-msgstr "בחרו 1.4 מלבנים."
+msgid "Select 1.4 squares."
+msgstr "בחרו 1.4 עוגות."
 
 #: activities/fractions_create/resource/6/Data.qml:62
 #: activities/fractions_create/resource/6/Data.qml:68
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select 1.5 pies."
 msgctxt "Data|"
-msgid "Select 1.5 rectangles."
-msgstr "בחרו 1.5 מלבנים."
+msgid "Select 1.5 squares."
+msgstr "בחרו 1.5 עוגות."
 
 #: activities/fractions_create/resource/6/Data.qml:74
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select 1.75 pies."
 msgctxt "Data|"
-msgid "Select 1.75 rectangles."
-msgstr "בחרו 1.75 מלבנים."
+msgid "Select 1.75 squares."
+msgstr "בחרו 1.75 עוגות."
 
 #: activities/fractions_create/resource/7/Data.qml:9
 msgctxt "Data|"
@@ -8998,21 +9082,26 @@ msgid "Select %1% of the pie."
 msgstr "בחרו %1% מהעוגה."
 
 #: activities/fractions_create/resource/8/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Percentages with a pie."
 msgctxt "Data|"
-msgid "Percentages with a rectangle."
-msgstr "אחוזים עם מלבן."
+msgid "Percentages with a square."
+msgstr "אחוזים עם עוגה."
 
-#. Select %1 percent of the rectangle.
+#. Select %1 percent of the square.
 #: activities/fractions_create/resource/8/Data.qml:19
 #: activities/fractions_create/resource/8/Data.qml:26
 #: activities/fractions_create/resource/8/Data.qml:33
 #: activities/fractions_create/resource/8/Data.qml:42
 #: activities/fractions_create/resource/8/Data.qml:49
 #: activities/fractions_create/resource/8/Data.qml:56
-#, qt-format
+#, fuzzy, qt-format
+#| msgctxt "Data|"
+#| msgid "Select %1% of the pie."
 msgctxt "Data|"
-msgid "Select %1% of the rectangle."
-msgstr "בחרו %1% מהמלבן."
+msgid "Select %1% of the square."
+msgstr "בחרו %1% מהעוגה."
 
 #: activities/fractions_create/resource/9/Data.qml:9
 msgctxt "Data|"
@@ -9040,23 +9129,29 @@ msgstr "מִצאו את המונה והמכנה של השבר המיוצג"
 
 #: activities/fractions_find/resource/1/Data.qml:19
 msgctxt "Data|"
-msgid "Find denominator (with a pie)."
-msgstr "מציאת מְכַנֶּה (עם עוגה)."
-
-#: activities/fractions_find/resource/2/Data.qml:19
-msgctxt "Data|"
-msgid "Find denominator (with a rectangle)."
-msgstr "מציאת מְכַנֶּה (עם מלבן)."
-
-#: activities/fractions_find/resource/3/Data.qml:9
-msgctxt "Data|"
 msgid "Find numerator (with a pie)."
 msgstr "מציאת מוֹנֶה (עם עוגה)."
 
-#: activities/fractions_find/resource/4/Data.qml:9
+#: activities/fractions_find/resource/2/Data.qml:19
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Find numerator (with a pie)."
 msgctxt "Data|"
-msgid "Find numerator (with a rectangle)."
-msgstr "מציאת מוֹנֶה (עם מלבן)"
+msgid "Find numerator (with a square)."
+msgstr "מציאת מוֹנֶה (עם עוגה)."
+
+#: activities/fractions_find/resource/3/Data.qml:9
+msgctxt "Data|"
+msgid "Find denominator (with a pie)."
+msgstr "מציאת מְכַנֶּה (עם עוגה)."
+
+#: activities/fractions_find/resource/4/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Find denominator (with a pie)."
+msgctxt "Data|"
+msgid "Find denominator (with a square)."
+msgstr "מציאת מְכַנֶּה (עם עוגה)."
 
 #: activities/fractions_find/resource/5/Data.qml:9
 msgctxt "Data|"
@@ -9064,9 +9159,12 @@ msgid "Find numerator and denominator (with a pie)."
 msgstr "מציאת מוֹנֶה וּמְכַנֶּה (עם עוגה)"
 
 #: activities/fractions_find/resource/6/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Find numerator and denominator (with a pie)."
 msgctxt "Data|"
-msgid "Find numerator and denominator (with a rectangle)."
-msgstr "מציאת מוֹנֶה וּמְכַנֶּה (עם מלבן)"
+msgid "Find numerator and denominator (with a square)."
+msgstr "מציאת מוֹנֶה וּמְכַנֶּה (עם עוגה)"
 
 #. Activity title
 #: activities/geo-country/ActivityInfo.qml:19
@@ -10301,8 +10399,11 @@ msgid "Suvalkija"
 msgstr "סובלקיג'ה"
 
 #: activities/geo-country/resource/board/board18_0.qml:13
+#, fuzzy
+#| msgctxt "board18_0|"
+#| msgid "Autonomous communities of Spain"
 msgctxt "board18_0|"
-msgid "Autonomous communities of Spain"
+msgid "Autonomous communities or cities of Spain"
 msgstr "קהילות אוטונומיות של ספרד"
 
 #. Autonomous communities of Spain: Andalusia
@@ -25237,6 +25338,132 @@ msgstr "לדלג"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "להתחיל"
+
+#~ msgctxt "Data|"
+#~ msgid "3 decimal places between 0 and 999."
+#~ msgstr "שלושה מקומות עשרוניים בין 0 ל־999."
+
+#~ msgctxt "Data|"
+#~ msgid "Specific questions with a rectangle."
+#~ msgstr "שאלות ספציפיות עם מלבן."
+
+#~ msgctxt "Data|"
+#~ msgid ""
+#~ "Select as many parts as you can without taking more than half of the "
+#~ "rectangle."
+#~ msgstr "בחרו כמה חלקים שאפשר מבלי לבחור יותר מחצי מהמלבן."
+
+#~ msgctxt "Data|"
+#~ msgid "Simplified fractions with a rectangle."
+#~ msgstr "שברים פשוטים עם מלבן."
+
+#~ msgctxt "Data|"
+#~ msgid "Select one half of the rectangle."
+#~ msgstr "בחרו חצי מהמלבן."
+
+#~ msgctxt "Data|"
+#~ msgid "Select one-third of the rectangle."
+#~ msgstr "בחרו שליש מהמלבן."
+
+#~ msgctxt "Data|"
+#~ msgid "Select two-thirds of the rectangle."
+#~ msgstr "בחרו שני שלישים מהמלבן."
+
+#~ msgctxt "Data|"
+#~ msgid "Select one-quarter of the rectangle."
+#~ msgstr "בחרו רבע מהמלבן."
+
+#~ msgctxt "Data|"
+#~ msgid "Select two-fifths of the rectangle."
+#~ msgstr "בחרו שתי חמישיות מהמלבן."
+
+#~ msgctxt "Data|"
+#~ msgid "Select one rectangle and one-quarter of a rectangle."
+#~ msgstr "בחרו מלבן וָרבע."
+
+#~ msgctxt "Data|"
+#~ msgid "Select one rectangle and two-fifths of a rectangle."
+#~ msgstr "בחרו מלבן ושתי חמישיות."
+
+#~ msgctxt "Data|"
+#~ msgid "Select one rectangle and one-third of a rectangle."
+#~ msgstr "בחרו מלבן ושליש."
+
+#~ msgctxt "Data|"
+#~ msgid "Select one rectangle and one half of a rectangle."
+#~ msgstr "בחרו מלבן וחצי."
+
+#~ msgctxt "Data|"
+#~ msgid "Select one rectangle and three-quarters of a rectangle."
+#~ msgstr "בחרו מלבן ושלושה רבעים."
+
+#~ msgctxt "Data|"
+#~ msgid "Non-simplified fractions with a rectangle."
+#~ msgstr "שברים עשרוניים עם מלבן."
+
+#~ msgctxt "Data|"
+#~ msgid "Select three-fifths of the rectangle."
+#~ msgstr "בחרו שלוש חמישיות מהמלבן."
+
+#~ msgctxt "Data|"
+#~ msgid "Decimal numbers with a rectangle."
+#~ msgstr "מספרים עשרוניים עם מלבן."
+
+#~ msgctxt "Data|"
+#~ msgid "Select 0.5 rectangle."
+#~ msgstr "בחרו 0.5 מלבנים."
+
+#~ msgctxt "Data|"
+#~ msgid "Select 0.25 rectangle."
+#~ msgstr "בחרו 0.25 מלבנים."
+
+#~ msgctxt "Data|"
+#~ msgid "Select 0.4 rectangle."
+#~ msgstr "בחרו 0.4 מלבנים."
+
+#~ msgctxt "Data|"
+#~ msgid "Select 0.75 rectangle."
+#~ msgstr "בחרו 0.75 מלבנים."
+
+#~ msgctxt "Data|"
+#~ msgid "Select 0.8 rectangle."
+#~ msgstr "בחרו 0.8 מלבנים."
+
+#~ msgctxt "Data|"
+#~ msgid "Select 1.25 rectangles."
+#~ msgstr "בחרו 1.25 מלבנים."
+
+#~ msgctxt "Data|"
+#~ msgid "Select 1.4 rectangles."
+#~ msgstr "בחרו 1.4 מלבנים."
+
+#~ msgctxt "Data|"
+#~ msgid "Select 1.5 rectangles."
+#~ msgstr "בחרו 1.5 מלבנים."
+
+#~ msgctxt "Data|"
+#~ msgid "Select 1.75 rectangles."
+#~ msgstr "בחרו 1.75 מלבנים."
+
+#~ msgctxt "Data|"
+#~ msgid "Percentages with a rectangle."
+#~ msgstr "אחוזים עם מלבן."
+
+#~ msgctxt "Data|"
+#~ msgid "Select %1% of the rectangle."
+#~ msgstr "בחרו %1% מהמלבן."
+
+#~ msgctxt "Data|"
+#~ msgid "Find denominator (with a rectangle)."
+#~ msgstr "מציאת מְכַנֶּה (עם מלבן)."
+
+#~ msgctxt "Data|"
+#~ msgid "Find numerator (with a rectangle)."
+#~ msgstr "מציאת מוֹנֶה (עם מלבן)"
+
+#~ msgctxt "Data|"
+#~ msgid "Find numerator and denominator (with a rectangle)."
+#~ msgstr "מציאת מוֹנֶה וּמְכַנֶּה (עם מלבן)"
 
 #~ msgctxt "ActivityInfo|"
 #~ msgid "Learn digits"

@@ -5406,7 +5406,7 @@ msgstr "Angka dari 0 sampai 9."
 
 #: activities/comparator/resource/10/Data.qml:14
 msgctxt "Data|"
-msgid "3 decimal places between 0 and 999."
+msgid "3 decimal places between 0 and 999.999."
 msgstr ""
 
 #: activities/comparator/resource/2/Data.qml:14
@@ -5451,13 +5451,16 @@ msgstr "Angka dari 0 sampai 9."
 
 #: activities/comparator/resource/7/Data.qml:14
 msgctxt "Data|"
-msgid "1 decimal place between 0 and 9, same integer part."
+msgid "1 decimal place between 0 and 9.9, same integer part."
 msgstr ""
 
 #: activities/comparator/resource/8/Data.qml:14
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
-msgid "1 decimal place between 0 and 9."
-msgstr ""
+msgid "1 decimal place between 0 and 9.9."
+msgstr "Angka antara %1 dan %2."
 
 #: activities/comparator/resource/9/Data.qml:14
 msgctxt "Data|"
@@ -9346,83 +9349,123 @@ msgid "Select one pie and three-quarters of a pie."
 msgstr "Pilih satu pai dan tiga perempat pai."
 
 #: activities/fractions_create/resource/10/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Specific questions with a rectangle."
 msgctxt "Data|"
-msgid "Specific questions with a rectangle."
+msgid "Specific questions with a square."
 msgstr "Pertanyaan spesifik dengan persegi panjang."
 
 #: activities/fractions_create/resource/10/Data.qml:18
 #: activities/fractions_create/resource/10/Data.qml:24
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid ""
+#| "Select as many parts as you can without taking more than half of the "
+#| "rectangle."
 msgctxt "Data|"
 msgid ""
-"Select as many parts as you can without taking more than half of the "
-"rectangle."
+"Select as many parts as you can without taking more than half of the square."
 msgstr ""
 "Pilih sebanyak mungkin bagian tanpa mengambil lebih dari setengah persegi "
 "panjang."
 
 #: activities/fractions_create/resource/2/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Simplified fractions with a pie."
 msgctxt "Data|"
-msgid "Simplified fractions with a rectangle."
-msgstr "Pecahan sederhana dengan persegi panjang."
+msgid "Simplified fractions with a square."
+msgstr "Pecahan sederhana dengan pai."
 
 #: activities/fractions_create/resource/2/Data.qml:18
 #: activities/fractions_create/resource/4/Data.qml:17
 #: activities/fractions_create/resource/4/Data.qml:23
 #: activities/fractions_create/resource/4/Data.qml:29
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select one half of the pie."
 msgctxt "Data|"
-msgid "Select one half of the rectangle."
-msgstr "Pilih satu setengah dari persegi panjang."
+msgid "Select one half of the square."
+msgstr "Pilih satu setengah dari pai."
 
 #: activities/fractions_create/resource/2/Data.qml:24
 #: activities/fractions_create/resource/4/Data.qml:35
 #: activities/fractions_create/resource/4/Data.qml:49
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select one-third of the pie."
 msgctxt "Data|"
-msgid "Select one-third of the rectangle."
-msgstr "Pilih sepertiga dari persegi panjang."
+msgid "Select one-third of the square."
+msgstr "Pilih sepertiga dari pai."
 
 #: activities/fractions_create/resource/2/Data.qml:30
 #: activities/fractions_create/resource/4/Data.qml:41
 #: activities/fractions_create/resource/4/Data.qml:55
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select two-thirds of the pie."
 msgctxt "Data|"
-msgid "Select two-thirds of the rectangle."
-msgstr "Pilih dua pertiga dari persegi panjang."
+msgid "Select two-thirds of the square."
+msgstr "Pilih dua pertiga dari pai."
 
 #: activities/fractions_create/resource/2/Data.qml:36
 #: activities/fractions_create/resource/4/Data.qml:61
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select one-quarter of the pie."
 msgctxt "Data|"
-msgid "Select one-quarter of the rectangle."
-msgstr "Pilih seperempat dari persegi panjang."
+msgid "Select one-quarter of the square."
+msgstr "Pilih seperempat pai."
 
 #: activities/fractions_create/resource/2/Data.qml:42
 #: activities/fractions_create/resource/4/Data.qml:67
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select two-fifths of the pie."
 msgctxt "Data|"
-msgid "Select two-fifths of the rectangle."
-msgstr "Pilih dua perlima dari persegi panjang."
+msgid "Select two-fifths of the square."
+msgstr "Pilih dua perlima dari pai."
 
 #: activities/fractions_create/resource/2/Data.qml:50
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select one pie and one-quarter of a pie."
 msgctxt "Data|"
-msgid "Select one rectangle and one-quarter of a rectangle."
-msgstr "Pilih satu persegi panjang dan seperempat dari persegi panjang."
+msgid "Select one square and one-quarter of a square."
+msgstr "Pilih satu pai dan seperempat pai."
 
 #: activities/fractions_create/resource/2/Data.qml:56
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select one pie and two-fifths of a pie."
 msgctxt "Data|"
-msgid "Select one rectangle and two-fifths of a rectangle."
-msgstr "Pilih satu persegi panjang dan dua seperlima dari persegi panjang."
+msgid "Select one square and two-fifths of a square."
+msgstr "Pilih satu pai dan dua per lima pai."
 
 #: activities/fractions_create/resource/2/Data.qml:62
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select one pie and one-third of a pie."
 msgctxt "Data|"
-msgid "Select one rectangle and one-third of a rectangle."
-msgstr "Pilih satu persegi panjang dan sepertiga dari persegi panjang."
+msgid "Select one square and one-third of a square."
+msgstr "Pilih satu pai dan sepertiga pai."
 
 #: activities/fractions_create/resource/2/Data.qml:68
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select one pie and one half of a pie."
 msgctxt "Data|"
-msgid "Select one rectangle and one half of a rectangle."
-msgstr "Pilih satu persegi panjang dan satu setengah dari persegi panjang."
+msgid "Select one square and one half of a square."
+msgstr "Pilih satu pai dan satu setengah pai."
 
 #: activities/fractions_create/resource/2/Data.qml:74
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select one pie and three-quarters of a pie."
 msgctxt "Data|"
-msgid "Select one rectangle and three-quarters of a rectangle."
-msgstr "Pilih satu persegi panjang dan tiga seperempat dari persegi panjang."
+msgid "Select one square and three-quarters of a square."
+msgstr "Pilih satu pai dan tiga perempat pai."
 
 #: activities/fractions_create/resource/3/Data.qml:9
 msgctxt "Data|"
@@ -9435,17 +9478,20 @@ msgid "Select three-fifths of the pie."
 msgstr "Pilih tiga-perlima dari pai."
 
 #: activities/fractions_create/resource/4/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Non-simplified fractions with a pie."
 msgctxt "Data|"
-msgid "Non-simplified fractions with a rectangle."
-msgstr ""
+msgid "Non-simplified fractions with a square."
+msgstr "Pecahan yang tidak disederhanakan dengan pai."
 
 #: activities/fractions_create/resource/4/Data.qml:73
 #, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Select the butterfly of the correct color."
+#| msgctxt "Data|"
+#| msgid "Select three-fifths of the pie."
 msgctxt "Data|"
-msgid "Select three-fifths of the rectangle."
-msgstr "Pilih kupu-kupu sesuai warna yang tepat."
+msgid "Select three-fifths of the square."
+msgstr "Pilih tiga-perlima dari pai."
 
 #: activities/fractions_create/resource/5/Data.qml:9
 #, fuzzy
@@ -9515,63 +9561,81 @@ msgstr ""
 #| msgctxt "ActivityInfo|"
 #| msgid "Decimal number system."
 msgctxt "Data|"
-msgid "Decimal numbers with a rectangle."
+msgid "Decimal numbers with a square."
 msgstr "Sistem bilangan desimal."
 
 #: activities/fractions_create/resource/6/Data.qml:18
 #, fuzzy
 #| msgctxt "ActivityConfig|"
-#| msgid "Select your locale"
+#| msgid "Selected"
 msgctxt "Data|"
-msgid "Select 0.5 rectangle."
-msgstr "Pilih bahasa lokal kamu"
+msgid "Select 0.5 square."
+msgstr "Terpilih"
 
 #: activities/fractions_create/resource/6/Data.qml:24
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Selected"
 msgctxt "Data|"
-msgid "Select 0.25 rectangle."
-msgstr ""
+msgid "Select 0.25 square."
+msgstr "Terpilih"
 
 #: activities/fractions_create/resource/6/Data.qml:30
 #, fuzzy
 #| msgctxt "ActivityConfig|"
-#| msgid "Select your locale"
+#| msgid "Selected"
 msgctxt "Data|"
-msgid "Select 0.4 rectangle."
-msgstr "Pilih bahasa lokal kamu"
+msgid "Select 0.4 square."
+msgstr "Terpilih"
 
 #: activities/fractions_create/resource/6/Data.qml:36
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Selected"
 msgctxt "Data|"
-msgid "Select 0.75 rectangle."
-msgstr ""
+msgid "Select 0.75 square."
+msgstr "Terpilih"
 
 #: activities/fractions_create/resource/6/Data.qml:42
 #, fuzzy
 #| msgctxt "ActivityConfig|"
-#| msgid "Select your locale"
+#| msgid "Selected"
 msgctxt "Data|"
-msgid "Select 0.8 rectangle."
-msgstr "Pilih bahasa lokal kamu"
+msgid "Select 0.8 square."
+msgstr "Terpilih"
 
 #: activities/fractions_create/resource/6/Data.qml:50
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Selected"
 msgctxt "Data|"
-msgid "Select 1.25 rectangles."
-msgstr ""
+msgid "Select 1.25 squares."
+msgstr "Terpilih"
 
 #: activities/fractions_create/resource/6/Data.qml:56
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Selected"
 msgctxt "Data|"
-msgid "Select 1.4 rectangles."
-msgstr ""
+msgid "Select 1.4 squares."
+msgstr "Terpilih"
 
 #: activities/fractions_create/resource/6/Data.qml:62
 #: activities/fractions_create/resource/6/Data.qml:68
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Selected"
 msgctxt "Data|"
-msgid "Select 1.5 rectangles."
-msgstr ""
+msgid "Select 1.5 squares."
+msgstr "Terpilih"
 
 #: activities/fractions_create/resource/6/Data.qml:74
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Selected"
 msgctxt "Data|"
-msgid "Select 1.75 rectangles."
-msgstr ""
+msgid "Select 1.75 squares."
+msgstr "Terpilih"
 
 #: activities/fractions_create/resource/7/Data.qml:9
 msgctxt "Data|"
@@ -9596,20 +9660,22 @@ msgstr "Pilih hari ke 1"
 
 #: activities/fractions_create/resource/8/Data.qml:9
 msgctxt "Data|"
-msgid "Percentages with a rectangle."
+msgid "Percentages with a square."
 msgstr ""
 
-#. Select %1 percent of the rectangle.
+#. Select %1 percent of the square.
 #: activities/fractions_create/resource/8/Data.qml:19
 #: activities/fractions_create/resource/8/Data.qml:26
 #: activities/fractions_create/resource/8/Data.qml:33
 #: activities/fractions_create/resource/8/Data.qml:42
 #: activities/fractions_create/resource/8/Data.qml:49
 #: activities/fractions_create/resource/8/Data.qml:56
-#, qt-format
+#, fuzzy, qt-format
+#| msgctxt "calendar_dataset|"
+#| msgid "Select the 1st"
 msgctxt "Data|"
-msgid "Select %1% of the rectangle."
-msgstr ""
+msgid "Select %1% of the square."
+msgstr "Pilih hari ke 1"
 
 #: activities/fractions_create/resource/9/Data.qml:9
 msgctxt "Data|"
@@ -9644,31 +9710,34 @@ msgstr "Temukan tanggal yang tepat dan pilih di kalender."
 #: activities/fractions_find/resource/1/Data.qml:19
 #, fuzzy
 #| msgctxt "ActivityInfo|"
-#| msgid "Nine men's morris (with a friend)"
-msgctxt "Data|"
-msgid "Find denominator (with a pie)."
-msgstr "Sembilan pria morris (dengan seorang teman)"
-
-#: activities/fractions_find/resource/2/Data.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Nine men's morris (with a friend)"
-msgctxt "Data|"
-msgid "Find denominator (with a rectangle)."
-msgstr "Sembilan pria morris (dengan seorang teman)"
-
-#: activities/fractions_find/resource/3/Data.qml:9
-#, fuzzy
-#| msgctxt "ActivityInfo|"
 #| msgid "Align four (with a friend)"
 msgctxt "Data|"
 msgid "Find numerator (with a pie)."
 msgstr "Sejajarkan empat (dengan teman)"
 
-#: activities/fractions_find/resource/4/Data.qml:9
+#: activities/fractions_find/resource/2/Data.qml:19
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Align four (with a friend)"
 msgctxt "Data|"
-msgid "Find numerator (with a rectangle)."
-msgstr ""
+msgid "Find numerator (with a square)."
+msgstr "Sejajarkan empat (dengan teman)"
+
+#: activities/fractions_find/resource/3/Data.qml:9
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Nine men's morris (with a friend)"
+msgctxt "Data|"
+msgid "Find denominator (with a pie)."
+msgstr "Sembilan pria morris (dengan seorang teman)"
+
+#: activities/fractions_find/resource/4/Data.qml:9
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Nine men's morris (with a friend)"
+msgctxt "Data|"
+msgid "Find denominator (with a square)."
+msgstr "Sembilan pria morris (dengan seorang teman)"
 
 #: activities/fractions_find/resource/5/Data.qml:9
 msgctxt "Data|"
@@ -9676,9 +9745,12 @@ msgid "Find numerator and denominator (with a pie)."
 msgstr ""
 
 #: activities/fractions_find/resource/6/Data.qml:9
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Nine men's morris (with a friend)"
 msgctxt "Data|"
-msgid "Find numerator and denominator (with a rectangle)."
-msgstr ""
+msgid "Find numerator and denominator (with a square)."
+msgstr "Sembilan pria morris (dengan seorang teman)"
 
 #. Activity title
 #: activities/geo-country/ActivityInfo.qml:19
@@ -10915,7 +10987,7 @@ msgstr "Suvalkija"
 
 #: activities/geo-country/resource/board/board18_0.qml:13
 msgctxt "board18_0|"
-msgid "Autonomous communities of Spain"
+msgid "Autonomous communities or cities of Spain"
 msgstr ""
 
 #. Autonomous communities of Spain: Andalusia
@@ -26385,6 +26457,93 @@ msgstr "Lewati"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Mulai"
+
+#~ msgctxt "Data|"
+#~ msgid "Simplified fractions with a rectangle."
+#~ msgstr "Pecahan sederhana dengan persegi panjang."
+
+#~ msgctxt "Data|"
+#~ msgid "Select one half of the rectangle."
+#~ msgstr "Pilih satu setengah dari persegi panjang."
+
+#~ msgctxt "Data|"
+#~ msgid "Select one-third of the rectangle."
+#~ msgstr "Pilih sepertiga dari persegi panjang."
+
+#~ msgctxt "Data|"
+#~ msgid "Select two-thirds of the rectangle."
+#~ msgstr "Pilih dua pertiga dari persegi panjang."
+
+#~ msgctxt "Data|"
+#~ msgid "Select one-quarter of the rectangle."
+#~ msgstr "Pilih seperempat dari persegi panjang."
+
+#~ msgctxt "Data|"
+#~ msgid "Select two-fifths of the rectangle."
+#~ msgstr "Pilih dua perlima dari persegi panjang."
+
+#~ msgctxt "Data|"
+#~ msgid "Select one rectangle and one-quarter of a rectangle."
+#~ msgstr "Pilih satu persegi panjang dan seperempat dari persegi panjang."
+
+#~ msgctxt "Data|"
+#~ msgid "Select one rectangle and two-fifths of a rectangle."
+#~ msgstr "Pilih satu persegi panjang dan dua seperlima dari persegi panjang."
+
+#~ msgctxt "Data|"
+#~ msgid "Select one rectangle and one-third of a rectangle."
+#~ msgstr "Pilih satu persegi panjang dan sepertiga dari persegi panjang."
+
+#~ msgctxt "Data|"
+#~ msgid "Select one rectangle and one half of a rectangle."
+#~ msgstr "Pilih satu persegi panjang dan satu setengah dari persegi panjang."
+
+#~ msgctxt "Data|"
+#~ msgid "Select one rectangle and three-quarters of a rectangle."
+#~ msgstr ""
+#~ "Pilih satu persegi panjang dan tiga seperempat dari persegi panjang."
+
+#, fuzzy
+#~| msgctxt "ActivityInfo|"
+#~| msgid "Select the butterfly of the correct color."
+#~ msgctxt "Data|"
+#~ msgid "Select three-fifths of the rectangle."
+#~ msgstr "Pilih kupu-kupu sesuai warna yang tepat."
+
+#, fuzzy
+#~| msgctxt "ActivityInfo|"
+#~| msgid "Decimal number system."
+#~ msgctxt "Data|"
+#~ msgid "Decimal numbers with a rectangle."
+#~ msgstr "Sistem bilangan desimal."
+
+#, fuzzy
+#~| msgctxt "ActivityConfig|"
+#~| msgid "Select your locale"
+#~ msgctxt "Data|"
+#~ msgid "Select 0.5 rectangle."
+#~ msgstr "Pilih bahasa lokal kamu"
+
+#, fuzzy
+#~| msgctxt "ActivityConfig|"
+#~| msgid "Select your locale"
+#~ msgctxt "Data|"
+#~ msgid "Select 0.4 rectangle."
+#~ msgstr "Pilih bahasa lokal kamu"
+
+#, fuzzy
+#~| msgctxt "ActivityConfig|"
+#~| msgid "Select your locale"
+#~ msgctxt "Data|"
+#~ msgid "Select 0.8 rectangle."
+#~ msgstr "Pilih bahasa lokal kamu"
+
+#, fuzzy
+#~| msgctxt "ActivityInfo|"
+#~| msgid "Nine men's morris (with a friend)"
+#~ msgctxt "Data|"
+#~ msgid "Find denominator (with a rectangle)."
+#~ msgstr "Sembilan pria morris (dengan seorang teman)"
 
 #~ msgctxt "ActivityInfo|"
 #~ msgid "Learn digits"

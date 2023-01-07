@@ -5267,9 +5267,12 @@ msgid "Numbers from 1 to 9."
 msgstr "Getallen van 1 tot 9."
 
 #: activities/comparator/resource/10/Data.qml:14
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "2 decimal places between 0 and 99.99."
 msgctxt "Data|"
-msgid "3 decimal places between 0 and 999."
-msgstr "3 decimale posities tussen 0 en 999."
+msgid "3 decimal places between 0 and 999.999."
+msgstr "2 decimale posities tussen 0 en 99,99."
 
 #: activities/comparator/resource/2/Data.qml:14
 msgctxt "Data|"
@@ -5297,13 +5300,19 @@ msgid "Numbers from 1 to 1 billion."
 msgstr "Getallen van 1 tot 1 miljard."
 
 #: activities/comparator/resource/7/Data.qml:14
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "1 decimal place between 0 and 9, same integer part."
 msgctxt "Data|"
-msgid "1 decimal place between 0 and 9, same integer part."
+msgid "1 decimal place between 0 and 9.9, same integer part."
 msgstr "1 decimale positie tussen 0 en 9, zelfde deel met geheel getal."
 
 #: activities/comparator/resource/8/Data.qml:14
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "1 decimal place between 0 and 9."
 msgctxt "Data|"
-msgid "1 decimal place between 0 and 9."
+msgid "1 decimal place between 0 and 9.9."
 msgstr "1 decimale positie tussen 0 en 9."
 
 #: activities/comparator/resource/9/Data.qml:14
@@ -9183,83 +9192,122 @@ msgid "Select one pie and three-quarters of a pie."
 msgstr "Selecteer een taart en drie kwart van een taart."
 
 #: activities/fractions_create/resource/10/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Specific questions with a pie."
 msgctxt "Data|"
-msgid "Specific questions with a rectangle."
-msgstr "Specifieke vragen met een rechthoek."
+msgid "Specific questions with a square."
+msgstr "Specifieke vragen met een taart."
 
 #: activities/fractions_create/resource/10/Data.qml:18
 #: activities/fractions_create/resource/10/Data.qml:24
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid ""
+#| "Select as many parts as you can without taking more than half of the pie."
 msgctxt "Data|"
 msgid ""
-"Select as many parts as you can without taking more than half of the "
-"rectangle."
+"Select as many parts as you can without taking more than half of the square."
 msgstr ""
-"Selecteer zo veel mogelijk delen zonder meer dan de helft van de rechthoek "
-"te nemen."
+"Selecteer zo veel mogelijk delen zonder meer dan de helft van de taart te "
+"nemen."
 
 #: activities/fractions_create/resource/2/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Simplified fractions with a pie."
 msgctxt "Data|"
-msgid "Simplified fractions with a rectangle."
-msgstr "Vereenvoudigde breuken met een rechthoek."
+msgid "Simplified fractions with a square."
+msgstr "Vereenvoudigde breuken met een taart."
 
 #: activities/fractions_create/resource/2/Data.qml:18
 #: activities/fractions_create/resource/4/Data.qml:17
 #: activities/fractions_create/resource/4/Data.qml:23
 #: activities/fractions_create/resource/4/Data.qml:29
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select one half of the pie."
 msgctxt "Data|"
-msgid "Select one half of the rectangle."
-msgstr "Selecteer de helft van de rechthoek."
+msgid "Select one half of the square."
+msgstr "Selecteer een halve taart."
 
 #: activities/fractions_create/resource/2/Data.qml:24
 #: activities/fractions_create/resource/4/Data.qml:35
 #: activities/fractions_create/resource/4/Data.qml:49
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select one-third of the pie."
 msgctxt "Data|"
-msgid "Select one-third of the rectangle."
-msgstr "Selecteer een derde van de rechthoek."
+msgid "Select one-third of the square."
+msgstr "Selecteer een derde van de taart."
 
 #: activities/fractions_create/resource/2/Data.qml:30
 #: activities/fractions_create/resource/4/Data.qml:41
 #: activities/fractions_create/resource/4/Data.qml:55
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select two-thirds of the pie."
 msgctxt "Data|"
-msgid "Select two-thirds of the rectangle."
-msgstr "Selecteer twee derde van de rechthoek."
+msgid "Select two-thirds of the square."
+msgstr "Selecteer twee derde van de taart."
 
 #: activities/fractions_create/resource/2/Data.qml:36
 #: activities/fractions_create/resource/4/Data.qml:61
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select one-quarter of the pie."
 msgctxt "Data|"
-msgid "Select one-quarter of the rectangle."
-msgstr "Selecteer een kwart van de rechthoek."
+msgid "Select one-quarter of the square."
+msgstr "Selecteer een kwart van de taart."
 
 #: activities/fractions_create/resource/2/Data.qml:42
 #: activities/fractions_create/resource/4/Data.qml:67
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select two-fifths of the pie."
 msgctxt "Data|"
-msgid "Select two-fifths of the rectangle."
-msgstr "Selecteer twee vijfde van de rechthoek."
+msgid "Select two-fifths of the square."
+msgstr "Selecteer twee vijfde van de taart."
 
 #: activities/fractions_create/resource/2/Data.qml:50
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select one pie and one-quarter of a pie."
 msgctxt "Data|"
-msgid "Select one rectangle and one-quarter of a rectangle."
-msgstr "Selecteer één rechthoek en een kwart van een rechthoek."
+msgid "Select one square and one-quarter of a square."
+msgstr "Selecteer één taart en een kwart van een taart."
 
 #: activities/fractions_create/resource/2/Data.qml:56
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select one pie and two-fifths of a pie."
 msgctxt "Data|"
-msgid "Select one rectangle and two-fifths of a rectangle."
-msgstr "Selecteer één rechthoek en twee vijfde van een rechthoek."
+msgid "Select one square and two-fifths of a square."
+msgstr "Selecteer één taart en twee vijfde van een taart."
 
 #: activities/fractions_create/resource/2/Data.qml:62
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select one pie and one-third of a pie."
 msgctxt "Data|"
-msgid "Select one rectangle and one-third of a rectangle."
-msgstr "Selecteer één rechthoek een derde van een rechthoek."
+msgid "Select one square and one-third of a square."
+msgstr "Selecteer één taart een derde van een taart."
 
 #: activities/fractions_create/resource/2/Data.qml:68
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select one pie and one half of a pie."
 msgctxt "Data|"
-msgid "Select one rectangle and one half of a rectangle."
-msgstr "Selecteer één rechthoek een halve rechthoek."
+msgid "Select one square and one half of a square."
+msgstr "Selecteer één taart een halve taart."
 
 #: activities/fractions_create/resource/2/Data.qml:74
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select one pie and three-quarters of a pie."
 msgctxt "Data|"
-msgid "Select one rectangle and three-quarters of a rectangle."
-msgstr "Selecteer één rechthoek een drie kwart van een rechthoek."
+msgid "Select one square and three-quarters of a square."
+msgstr "Selecteer een taart en drie kwart van een taart."
 
 #: activities/fractions_create/resource/3/Data.qml:9
 msgctxt "Data|"
@@ -9272,14 +9320,20 @@ msgid "Select three-fifths of the pie."
 msgstr "Selecteer drie vijfde van de taart."
 
 #: activities/fractions_create/resource/4/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Non-simplified fractions with a pie."
 msgctxt "Data|"
-msgid "Non-simplified fractions with a rectangle."
-msgstr "Niet vereenvoudigde breuken met een rechthoek."
+msgid "Non-simplified fractions with a square."
+msgstr "Niet vereenvoudigde breuken met een taart."
 
 #: activities/fractions_create/resource/4/Data.qml:73
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select three-fifths of the pie."
 msgctxt "Data|"
-msgid "Select three-fifths of the rectangle."
-msgstr "Selecteer drie vijfde van de rechthoek."
+msgid "Select three-fifths of the square."
+msgstr "Selecteer drie vijfde van de taart."
 
 #: activities/fractions_create/resource/5/Data.qml:9
 msgctxt "Data|"
@@ -9333,55 +9387,85 @@ msgid "Select 1.75 pies."
 msgstr "Selecteer 1,75 taarten."
 
 #: activities/fractions_create/resource/6/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Decimal numbers with a pie."
 msgctxt "Data|"
-msgid "Decimal numbers with a rectangle."
-msgstr "Decimale getallen met een rechthoek."
+msgid "Decimal numbers with a square."
+msgstr "Decimale getallen met een taart."
 
 #: activities/fractions_create/resource/6/Data.qml:18
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select 0.5 pie."
 msgctxt "Data|"
-msgid "Select 0.5 rectangle."
-msgstr "Selecteer 0,5 rechthoek."
+msgid "Select 0.5 square."
+msgstr "Selecteer 0,5 taart."
 
 #: activities/fractions_create/resource/6/Data.qml:24
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select 0.25 pie."
 msgctxt "Data|"
-msgid "Select 0.25 rectangle."
-msgstr "Selecteer 0,25 rechthoek."
+msgid "Select 0.25 square."
+msgstr "Selecteer 0,25 taart."
 
 #: activities/fractions_create/resource/6/Data.qml:30
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select 0.4 pie."
 msgctxt "Data|"
-msgid "Select 0.4 rectangle."
-msgstr "Selecteer 0,4 rechthoek."
+msgid "Select 0.4 square."
+msgstr "Selecteer 0,4 taart."
 
 #: activities/fractions_create/resource/6/Data.qml:36
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select 0.75 pie."
 msgctxt "Data|"
-msgid "Select 0.75 rectangle."
-msgstr "Selecteer 0,75 rechthoek."
+msgid "Select 0.75 square."
+msgstr "Selecteer 0,75 taart."
 
 #: activities/fractions_create/resource/6/Data.qml:42
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select 0.8 pie."
 msgctxt "Data|"
-msgid "Select 0.8 rectangle."
-msgstr "Selecteer 0,8 rechthoek."
+msgid "Select 0.8 square."
+msgstr "Selecteer 0,8 taart."
 
 #: activities/fractions_create/resource/6/Data.qml:50
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select 1.25 pies."
 msgctxt "Data|"
-msgid "Select 1.25 rectangles."
-msgstr "Selecteer 1,25 rechthoeken."
+msgid "Select 1.25 squares."
+msgstr "Selecteer 1,25 taarten."
 
 #: activities/fractions_create/resource/6/Data.qml:56
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select 1.4 pies."
 msgctxt "Data|"
-msgid "Select 1.4 rectangles."
-msgstr "Selecteer 1,4 rechthoeken."
+msgid "Select 1.4 squares."
+msgstr "Selecteer 1,4 taarten."
 
 #: activities/fractions_create/resource/6/Data.qml:62
 #: activities/fractions_create/resource/6/Data.qml:68
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select 1.5 pies."
 msgctxt "Data|"
-msgid "Select 1.5 rectangles."
-msgstr "Selecteer 1,5 rechthoeken."
+msgid "Select 1.5 squares."
+msgstr "Selecteer 1,5 taarten."
 
 #: activities/fractions_create/resource/6/Data.qml:74
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select 1.75 pies."
 msgctxt "Data|"
-msgid "Select 1.75 rectangles."
-msgstr "Selecteer 1,75 rechthoeken."
+msgid "Select 1.75 squares."
+msgstr "Selecteer 1,75 taarten."
 
 #: activities/fractions_create/resource/7/Data.qml:9
 msgctxt "Data|"
@@ -9403,21 +9487,26 @@ msgid "Select %1% of the pie."
 msgstr "Selecteer %1% van de taart."
 
 #: activities/fractions_create/resource/8/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Percentages with a pie."
 msgctxt "Data|"
-msgid "Percentages with a rectangle."
-msgstr "Percentages met een rechthoek."
+msgid "Percentages with a square."
+msgstr "Percentages met een taart."
 
-#. Select %1 percent of the rectangle.
+#. Select %1 percent of the square.
 #: activities/fractions_create/resource/8/Data.qml:19
 #: activities/fractions_create/resource/8/Data.qml:26
 #: activities/fractions_create/resource/8/Data.qml:33
 #: activities/fractions_create/resource/8/Data.qml:42
 #: activities/fractions_create/resource/8/Data.qml:49
 #: activities/fractions_create/resource/8/Data.qml:56
-#, qt-format
+#, fuzzy, qt-format
+#| msgctxt "Data|"
+#| msgid "Select %1% of the pie."
 msgctxt "Data|"
-msgid "Select %1% of the rectangle."
-msgstr "Selecteer %1% van de rechthoek."
+msgid "Select %1% of the square."
+msgstr "Selecteer %1% van de taart."
 
 #: activities/fractions_create/resource/9/Data.qml:9
 msgctxt "Data|"
@@ -9447,23 +9536,29 @@ msgstr "Zoek de juiste teller en deler van de getoonde breuk."
 
 #: activities/fractions_find/resource/1/Data.qml:19
 msgctxt "Data|"
-msgid "Find denominator (with a pie)."
-msgstr "Zoek de deler (met een taart)."
-
-#: activities/fractions_find/resource/2/Data.qml:19
-msgctxt "Data|"
-msgid "Find denominator (with a rectangle)."
-msgstr "Zoek de deler (met een rechthoek)."
-
-#: activities/fractions_find/resource/3/Data.qml:9
-msgctxt "Data|"
 msgid "Find numerator (with a pie)."
 msgstr "Zoek de teller (met een taart)."
 
-#: activities/fractions_find/resource/4/Data.qml:9
+#: activities/fractions_find/resource/2/Data.qml:19
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Find numerator (with a pie)."
 msgctxt "Data|"
-msgid "Find numerator (with a rectangle)."
-msgstr "Zoek de teller (met een rechthoek)."
+msgid "Find numerator (with a square)."
+msgstr "Zoek de teller (met een taart)."
+
+#: activities/fractions_find/resource/3/Data.qml:9
+msgctxt "Data|"
+msgid "Find denominator (with a pie)."
+msgstr "Zoek de deler (met een taart)."
+
+#: activities/fractions_find/resource/4/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Find denominator (with a pie)."
+msgctxt "Data|"
+msgid "Find denominator (with a square)."
+msgstr "Zoek de deler (met een taart)."
 
 #: activities/fractions_find/resource/5/Data.qml:9
 msgctxt "Data|"
@@ -9471,9 +9566,12 @@ msgid "Find numerator and denominator (with a pie)."
 msgstr "Zoek de teller en deler (met een taart)."
 
 #: activities/fractions_find/resource/6/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Find numerator and denominator (with a pie)."
 msgctxt "Data|"
-msgid "Find numerator and denominator (with a rectangle)."
-msgstr "Zoek de teller en deler (met een rechthoek)."
+msgid "Find numerator and denominator (with a square)."
+msgstr "Zoek de teller en deler (met een taart)."
 
 #. Activity title
 #: activities/geo-country/ActivityInfo.qml:19
@@ -10710,8 +10808,11 @@ msgid "Suvalkija"
 msgstr "Suvalkija"
 
 #: activities/geo-country/resource/board/board18_0.qml:13
+#, fuzzy
+#| msgctxt "board18_0|"
+#| msgid "Autonomous communities of Spain"
 msgctxt "board18_0|"
-msgid "Autonomous communities of Spain"
+msgid "Autonomous communities or cities of Spain"
 msgstr "Autonome gemeenschappen van Spanje"
 
 #. Autonomous communities of Spain: Andalusia
@@ -26076,6 +26177,134 @@ msgstr "Overslaan"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Begin"
+
+#~ msgctxt "Data|"
+#~ msgid "3 decimal places between 0 and 999."
+#~ msgstr "3 decimale posities tussen 0 en 999."
+
+#~ msgctxt "Data|"
+#~ msgid "Specific questions with a rectangle."
+#~ msgstr "Specifieke vragen met een rechthoek."
+
+#~ msgctxt "Data|"
+#~ msgid ""
+#~ "Select as many parts as you can without taking more than half of the "
+#~ "rectangle."
+#~ msgstr ""
+#~ "Selecteer zo veel mogelijk delen zonder meer dan de helft van de "
+#~ "rechthoek te nemen."
+
+#~ msgctxt "Data|"
+#~ msgid "Simplified fractions with a rectangle."
+#~ msgstr "Vereenvoudigde breuken met een rechthoek."
+
+#~ msgctxt "Data|"
+#~ msgid "Select one half of the rectangle."
+#~ msgstr "Selecteer de helft van de rechthoek."
+
+#~ msgctxt "Data|"
+#~ msgid "Select one-third of the rectangle."
+#~ msgstr "Selecteer een derde van de rechthoek."
+
+#~ msgctxt "Data|"
+#~ msgid "Select two-thirds of the rectangle."
+#~ msgstr "Selecteer twee derde van de rechthoek."
+
+#~ msgctxt "Data|"
+#~ msgid "Select one-quarter of the rectangle."
+#~ msgstr "Selecteer een kwart van de rechthoek."
+
+#~ msgctxt "Data|"
+#~ msgid "Select two-fifths of the rectangle."
+#~ msgstr "Selecteer twee vijfde van de rechthoek."
+
+#~ msgctxt "Data|"
+#~ msgid "Select one rectangle and one-quarter of a rectangle."
+#~ msgstr "Selecteer één rechthoek en een kwart van een rechthoek."
+
+#~ msgctxt "Data|"
+#~ msgid "Select one rectangle and two-fifths of a rectangle."
+#~ msgstr "Selecteer één rechthoek en twee vijfde van een rechthoek."
+
+#~ msgctxt "Data|"
+#~ msgid "Select one rectangle and one-third of a rectangle."
+#~ msgstr "Selecteer één rechthoek een derde van een rechthoek."
+
+#~ msgctxt "Data|"
+#~ msgid "Select one rectangle and one half of a rectangle."
+#~ msgstr "Selecteer één rechthoek een halve rechthoek."
+
+#~ msgctxt "Data|"
+#~ msgid "Select one rectangle and three-quarters of a rectangle."
+#~ msgstr "Selecteer één rechthoek een drie kwart van een rechthoek."
+
+#~ msgctxt "Data|"
+#~ msgid "Non-simplified fractions with a rectangle."
+#~ msgstr "Niet vereenvoudigde breuken met een rechthoek."
+
+#~ msgctxt "Data|"
+#~ msgid "Select three-fifths of the rectangle."
+#~ msgstr "Selecteer drie vijfde van de rechthoek."
+
+#~ msgctxt "Data|"
+#~ msgid "Decimal numbers with a rectangle."
+#~ msgstr "Decimale getallen met een rechthoek."
+
+#~ msgctxt "Data|"
+#~ msgid "Select 0.5 rectangle."
+#~ msgstr "Selecteer 0,5 rechthoek."
+
+#~ msgctxt "Data|"
+#~ msgid "Select 0.25 rectangle."
+#~ msgstr "Selecteer 0,25 rechthoek."
+
+#~ msgctxt "Data|"
+#~ msgid "Select 0.4 rectangle."
+#~ msgstr "Selecteer 0,4 rechthoek."
+
+#~ msgctxt "Data|"
+#~ msgid "Select 0.75 rectangle."
+#~ msgstr "Selecteer 0,75 rechthoek."
+
+#~ msgctxt "Data|"
+#~ msgid "Select 0.8 rectangle."
+#~ msgstr "Selecteer 0,8 rechthoek."
+
+#~ msgctxt "Data|"
+#~ msgid "Select 1.25 rectangles."
+#~ msgstr "Selecteer 1,25 rechthoeken."
+
+#~ msgctxt "Data|"
+#~ msgid "Select 1.4 rectangles."
+#~ msgstr "Selecteer 1,4 rechthoeken."
+
+#~ msgctxt "Data|"
+#~ msgid "Select 1.5 rectangles."
+#~ msgstr "Selecteer 1,5 rechthoeken."
+
+#~ msgctxt "Data|"
+#~ msgid "Select 1.75 rectangles."
+#~ msgstr "Selecteer 1,75 rechthoeken."
+
+#~ msgctxt "Data|"
+#~ msgid "Percentages with a rectangle."
+#~ msgstr "Percentages met een rechthoek."
+
+#~ msgctxt "Data|"
+#~ msgid "Select %1% of the rectangle."
+#~ msgstr "Selecteer %1% van de rechthoek."
+
+#~ msgctxt "Data|"
+#~ msgid "Find denominator (with a rectangle)."
+#~ msgstr "Zoek de deler (met een rechthoek)."
+
+#~ msgctxt "Data|"
+#~ msgid "Find numerator (with a rectangle)."
+#~ msgstr "Zoek de teller (met een rechthoek)."
+
+#~ msgctxt "Data|"
+#~ msgid "Find numerator and denominator (with a rectangle)."
+#~ msgstr "Zoek de teller en deler (met een rechthoek)."
 
 #~ msgctxt "ActivityInfo|"
 #~ msgid "Learn digits"
