@@ -1,11 +1,11 @@
 # Translation of gcompris_qt to Norwegian Nynorsk
 #
-# Karl Ove Hufthammer <karl@huftis.org>, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2012, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022.
+# Karl Ove Hufthammer <karl@huftis.org>, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2012, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023.
 # Øystein Steffensen-Alværvik <oysteins.omsetting@protonmail.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_qt\n"
-"PO-Revision-Date: 2022-08-07 11:23+0200\n"
+"PO-Revision-Date: 2023-01-06 22:43+0100\n"
 "Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
 "Language-Team: Norwegian Nynorsk <l10n-no@lister.huftis.org>\n"
 "Language: nn\n"
@@ -18,7 +18,7 @@ msgstr ""
 "X-Environment: kde, gcompris\n"
 "X-Accelerator-Marker: &\n"
 "X-Text-Markup: qtrich\n"
-"X-Generator: Lokalize 22.04.3\n"
+"X-Generator: Lokalize 22.12.0\n"
 
 #. Activity title
 #: activities/advanced_colors/ActivityInfo.qml:15
@@ -1179,6 +1179,8 @@ msgid ""
 "Play with Tux. Take turns to click the line in which you want to drop a "
 "token. The first player to create a line of 4 tokens wins."
 msgstr ""
+"Spel mot Tux. De byter på å velja kva linje de vil sleppa ei kule i. Den "
+"første spelaren som får fire på rad, vinn."
 
 #: activities/align4/ActivityInfo.qml:23 activities/bargame/ActivityInfo.qml:26
 #: activities/checkers/ActivityInfo.qml:27
@@ -1188,6 +1190,8 @@ msgid ""
 "You can use the arrow buttons to manually select the difficulty level. Tux "
 "will play better when you increase the level."
 msgstr ""
+"Du kan bruka pilknappane til å velja vanskegrad sjølv. Tux spelar betre ved "
+"høgare vanskegradar."
 
 #: activities/align4/ActivityInfo.qml:25
 #: activities/align4_2players/ActivityInfo.qml:24
@@ -2631,6 +2635,9 @@ msgid ""
 "button to place the balls in the holes. You win if Tux has to place the last "
 "ball. If you want Tux to begin, just click on him."
 msgstr ""
+"Trykk på kuleikonet for å velja talet på kuler, og trykk så «OK» for å "
+"plassera dei i hòla. Du vinn viss Tux må plassera den siste kula. Trykk på "
+"Tux viss du vil at han skal byrja."
 
 #. Activity title
 #: activities/bargame_2players/ActivityInfo.qml:15
@@ -3907,6 +3914,7 @@ msgid ""
 "yours."
 msgstr "Slå ut alle brikkene til motspelaren før han slår ut alle dine."
 
+# Trur denne omsettinga er lettare å forstå enn originalen, men kan likevel klart forbetrast.
 #. Help manual
 #: activities/checkers/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
@@ -3930,6 +3938,23 @@ msgid ""
 "distance away by jumping to any of the unoccupied squares immediately beyond "
 "it."
 msgstr ""
+"Dam er eit brettspel for to spelarar, som startar på kvar side av eit "
+"sjakkbrett. Éin spelar har mørke brikker, den andre lyse brikker, og de "
+"byter på å gjera trekk. Ved kvart trekk flyttar du éi av brikkene dine eitt "
+"steg på skrå framover, til eit ledig felt. Viss ei av brikkene til "
+"motspelaren står på eit felt som er på skrå (framover eller bakover), men "
+"neste felt på skrå i same retning er ledig, kan du hoppa over brikka hans – "
+"slå ho ut. Ho vert då fjerna frå spelet. Viss det er fleire motspelar­brikker "
+"på skrå (i valfri retning) når du landar, kan du halda fram med å hoppa over "
+"dei i same trekk.\n"
+"Det er slagtvang, så viss du kan slå ut ei av brikkene til motstandaren, må "
+"du gjera det. Du tapar når du ikkje har fleire brikker att eller viss du "
+"vert innesperra, slik at du ikkje kan gjera eit trekk.\n"
+"Når ei brikke kjem til rada lengst vekke frå startposisjonen, vert ho «dam», "
+"som vert markert ved å leggja ei ekstra brikke på ho. Ho kan då flytta på "
+"skrått både bakover og framover. Og viss det står ei motspelarbrikke ein "
+"eller annan stad langs ein diagonal, kan du hoppa over denne, og vidare i "
+"same retning så langt du vil, så lenge felta er ledige."
 
 #: activities/checkers/ActivityInfo.qml:29
 #: activities/checkers_2players/ActivityInfo.qml:28
@@ -4040,6 +4065,22 @@ msgid ""
 "little bit and try to predict your opponent's future moves, so that you can "
 "catch him or secure your pieces from his attacks."
 msgstr ""
+"Her skal du læra sjakk ved å spela mot Tux. Alle lovlege trekk vert viste "
+"når du vel ei sjakkbrikke, noko som gjer det lettare å læra reglane. På det "
+"første nivået flyttar Tux brikkene heilt tilfeldig, for å gjera det lettast "
+"mogleg å vinna. På seinare nivå spelar han betre. Du kan bruka pilknappane "
+"til å velja vanskegrad sjølv.\n"
+"\n"
+"Du kan setja matt tidlegare viss du følgjer desse enkle reglane:\n"
+"    Prøv å tvinga kongen til motspelaren til eit hjørne.\n"
+"<b>Forklaring</b>: Då vil kongen berre ha tre retningar å flytta, i staden "
+"for (opptil) åtte.\n"
+"    «Legg ei felle» med bøndene som lokkemat.\n"
+"<b>Forklaring</b>: Slik kan du lokka motspelaren ut av «komfortsona».\n"
+"    Ver tolmodig.\n"
+"<b>Forklaring</b>: Ikkje forhast deg. Tenk heller litt grundigare, og prøv å "
+"gjetta kva trekk motspelaren vil gjera, slik at du kan ta han eller tryggja "
+"brikkene dine."
 
 #: activities/chess/ActivityInfo.qml:32
 #: activities/chess_2players/ActivityInfo.qml:32
@@ -5111,19 +5152,19 @@ msgstr "Hald fram"
 #: activities/comparator/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Compare numbers"
-msgstr ""
+msgstr "Samanlikna tal"
 
 #. Help title
 #: activities/comparator/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Compare the numbers and choose the corresponding sign."
-msgstr ""
+msgstr "Samanlikna tala og vel rett samanlikningsteikn."
 
 #. Help goal
 #: activities/comparator/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid "Learn how to compare number values."
-msgstr ""
+msgstr "Læra å samanlikna talverdiar."
 
 #. Help manual
 #: activities/comparator/ActivityInfo.qml:26
@@ -5133,6 +5174,8 @@ msgid ""
 "symbol for this pair. When each line contains a symbol, select the OK button "
 "to validate the answers."
 msgstr ""
+"Vel eit talpar. Trykk så på likskaps- eller ulikskaps­teiknet som passar til "
+"talparet. Trykk på «OK» når du har valt teikn for alle talpara."
 
 #: activities/comparator/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
@@ -5140,82 +5183,88 @@ msgid ""
 "If some answers are incorrect, a cross icon will appear on the corresponding "
 "lines. Correct the errors, then select the OK button again."
 msgstr ""
+"Viss nokre svar er feil, vert det vist ein kross på desse. Rett feila og "
+"trykk «OK»."
 
 #: activities/comparator/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid "Up and Down arrows: select a pair of numbers in the list"
-msgstr ""
+msgstr "Pil opp/ned: Vel talpar i lista"
 
 #: activities/comparator/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: select a symbol button"
-msgstr ""
+msgstr "Pil venstre/høgre: Vel samanlikningsteikn"
 
 #: activities/comparator/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
 msgid "Space: if a symbol button is selected, enter this symbol"
-msgstr ""
+msgstr "Mellomrom: Bruk det merkte samanlikningsteiknet"
 
 #: activities/comparator/ActivityInfo.qml:32
 msgctxt "ActivityInfo|"
 msgid "Return: validate the answers"
-msgstr ""
+msgstr "Enter: Kontroller svara"
 
 #: activities/comparator/ActivityInfo.qml:33
 msgctxt "ActivityInfo|"
 msgid "&lt;, &gt; or =: enter the corresponding symbol"
-msgstr ""
+msgstr "Tastane «&lt;», «&gt;» og «=»: Bruk tilhøyrande samanlikningsteikn"
 
 #: activities/comparator/resource/1/Data.qml:36
 #: activities/tens_complement_find/resource/3/Data.qml:9
 msgctxt "Data|"
 msgid "Numbers from 1 to 9."
-msgstr ""
+msgstr "Tal frå 1 til 9"
 
+# Her er 999 maks – inkluderer altså ikkje tal som 999,567.
 #: activities/comparator/resource/10/Data.qml:14
 msgctxt "Data|"
 msgid "3 decimal places between 0 and 999."
-msgstr ""
+msgstr "Tal frå 0 til 999 – 3 desimalar"
 
 #: activities/comparator/resource/2/Data.qml:14
 msgctxt "Data|"
 msgid "Numbers from 1 to 19."
-msgstr ""
+msgstr "Tal frå 1 til 19"
 
 #: activities/comparator/resource/3/Data.qml:14
 msgctxt "Data|"
 msgid "Numbers from 1 to 100."
-msgstr ""
+msgstr "Tal frå 1 til 100"
 
 #: activities/comparator/resource/4/Data.qml:14
 msgctxt "Data|"
 msgid "Numbers from 1 to 1000."
-msgstr ""
+msgstr "Tal frå 1 til 1 000"
 
 #: activities/comparator/resource/5/Data.qml:14
 msgctxt "Data|"
 msgid "Numbers from 1 to 1000000."
-msgstr ""
+msgstr "Tal frå 1 til 1 000 000"
 
 #: activities/comparator/resource/6/Data.qml:14
 msgctxt "Data|"
 msgid "Numbers from 1 to 1 billion."
-msgstr ""
+msgstr "Tal frå 1 til 1 000 000 000"
 
+# Her er 9 maks – inkluderer ikkje tal som for eksempel 9,3.
 #: activities/comparator/resource/7/Data.qml:14
 msgctxt "Data|"
 msgid "1 decimal place between 0 and 9, same integer part."
-msgstr ""
+msgstr "Tal frå 0 til 9 – 1 desimal, men same siffer før kommaet"
 
+# Her er 9 maks – inkluderer ikkje tal som for eksempel 9,3.
 #: activities/comparator/resource/8/Data.qml:14
 msgctxt "Data|"
 msgid "1 decimal place between 0 and 9."
-msgstr ""
+msgstr "Tal frå 0 til 9 – 1 desimal"
 
+# Her er 99,99 faktisk maks. Er altså inkonsistent med nivå for 1 og 3 desimalar (der maksen er 9,0, ikkje 9,9, og 999,000, ikkje 999,999).
 #: activities/comparator/resource/9/Data.qml:14
 msgctxt "Data|"
 msgid "2 decimal places between 0 and 99.99."
-msgstr ""
+msgstr "Tal frå 0 til 99,99 – 2 desimalar"
 
 #. Activity title
 #: activities/crane/ActivityInfo.qml:20
@@ -6559,11 +6608,14 @@ msgid ""
 "escape predators, and possess an excellent sense of balance. They have "
 "single-toed hooves."
 msgstr ""
+"Hesten seier «knegg». For å kunna unngå rovdyr har hestar utvikla seg til å "
+"vera flinke å springa, og dei har svært god balanse. Hestar har berre éi "
+"«tå» (ein hov)."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:25
 msgctxt "board1|"
 msgid "This animal has single-toed hooves."
-msgstr ""
+msgstr "Dette dyret har berre éi tå (ein hov)."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:33
 msgctxt "board1|"
@@ -6576,11 +6628,13 @@ msgid ""
 "The chicken goes 'cluck'. Domestic chickens have wings, but are not capable "
 "of long-distance flight. They have a comb on their head."
 msgstr ""
+"Høna seier «klukk». Tamhøns har vengjer, men kan berre fly korte avstandar. "
+"Dei har ein «kam» – ein raud kjøtlapp – på hovudet."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:37
 msgctxt "board1|"
 msgid "This animal has a comb on its head."
-msgstr ""
+msgstr "Dette dyret har ein kam på hovudet."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:45
 msgctxt "board1|"
@@ -6594,11 +6648,14 @@ msgid ""
 "developed sense of taste, with around 20,000 taste buds. They can detect "
 "odours 8km away."
 msgstr ""
+"Kua seier «mø». Kyr har eit synsfelt på heile 330°, så dei kan sjå rundt "
+"nesten heile seg. Dei har god smakssans, med rundt 20 000 smaksløkar. Dei "
+"kan òg lukta ting som er heile 8 km unna."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:49
 msgctxt "board1|"
 msgid "This animal has around 20,000 taste buds."
-msgstr ""
+msgstr "Dette dyret har rundt 20 000 smaksløkar."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:57
 msgctxt "board1|"
@@ -6612,11 +6669,14 @@ msgid ""
 "ability to chase mice and other rodents. They purr to communicate various "
 "emotions."
 msgstr ""
+"Katten seier «mjau». Menneske likar å ha kattar som kjæledyr, og fordi dei "
+"kan fanga mus og andre skadedyr. Dei «mel» – lagar ein durelyd – for å "
+"kommunisera kjensler."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:61
 msgctxt "board1|"
 msgid "This animal can purr."
-msgstr ""
+msgstr "Dette dyret kan mala."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:69
 msgctxt "board1|"
@@ -6629,11 +6689,13 @@ msgid ""
 "The pig goes 'oink'. Pigs wallow in the mud, mainly to control their body "
 "temperature."
 msgstr ""
+"Grisen seier «nøff». Grisar likar å bada i gjørme, hovudsakleg for å kjøla "
+"seg ned."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:73
 msgctxt "board1|"
 msgid "This animal wallows in the mud to control its body temperature."
-msgstr ""
+msgstr "Dette dyret badar i gjørme for å kjøla seg ned."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:81
 msgctxt "board1|"
@@ -6646,11 +6708,14 @@ msgid ""
 "The duck goes 'quack'. Ducks are mostly aquatic birds. They have waterproof "
 "feathers and webbed feet which enable them to swim on the water."
 msgstr ""
+"Anda seier «kvakk». Ender held seg helst ved vatn. Dei har fjør som er "
+"vasstette og symjehud mellom tærne, slik at det vert lettare å symja."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:85
 msgctxt "board1|"
 msgid "This animal has webbed feet and can swim on the water."
 msgstr ""
+"Dette dyret har symjehud mellom tærne, slik at det vert lettare å symja."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:93
 msgctxt "board1|"
@@ -6663,11 +6728,13 @@ msgid ""
 "The owl goes 'hoot'. Owls are nocturnal birds, they have excellent vision "
 "and hearing at night."
 msgstr ""
+"Ugla seier «uhu». Dei fleste ugler søv om dagen og er vakne om natta. Dei "
+"kan både høyra og sjå godt – også om natta."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:97
 msgctxt "board1|"
 msgid "This animal is a nocturnal bird."
-msgstr ""
+msgstr "Dette dyret er ofte vake om natta."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:105
 msgctxt "board1|"
@@ -6680,11 +6747,13 @@ msgid ""
 "The dog goes 'woof'. Dogs are probably the oldest domesticated species. They "
 "are descendants of the wolf."
 msgstr ""
+"Hunden seier «voff». Han er truleg det dyret som først vart temma av "
+"menneske. Hundar er etterkommarar av ulv."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:109
 msgctxt "board1|"
 msgid "This animal is a descendant of the wolf."
-msgstr ""
+msgstr "Dette dyret er etterkommar av ulv."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:117
 msgctxt "board1|"
@@ -6697,11 +6766,13 @@ msgid ""
 "The sheep goes 'baa'. Most sheep breeds bear a fleece of wool. The fleece "
 "can be sheared and used to produce textile fibre."
 msgstr ""
+"Sauen seier «bæ». Dei fleste saueartar har ull – eit slags hårdekke. Ein kan "
+"klippa av ulla og laga blant anna klede av ho."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:121
 msgctxt "board1|"
 msgid "This animal produces wool."
-msgstr ""
+msgstr "Dette dyret har ull."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:131
 msgctxt "board1|"
@@ -8915,93 +8986,94 @@ msgstr ""
 #: activities/fractions_create/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Create the fractions"
-msgstr ""
+msgstr "Skriv brøken"
 
 #. Help title
 #: activities/fractions_create/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "A shape split in equal parts is displayed on screen."
-msgstr ""
+msgstr "Ein figur delt inn i fleire like store delar vert vist."
 
 #: activities/fractions_create/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
 msgid ""
 "Select the appropriate number of parts as described in the instructions."
-msgstr ""
+msgstr "Vel så mange figurdelar som instruksjonane ber deg om."
 
 #: activities/fractions_create/fractions_create.js:79
 msgctxt "fractions_create|"
 msgid "Find the represented fraction."
-msgstr ""
+msgstr "Finn brøken som vert vist."
 
 #: activities/fractions_create/resource/1/Data.qml:9
 msgctxt "Data|"
 msgid "Simplified fractions with a pie."
-msgstr ""
+msgstr "Brøker på forkorta form – kakediagram"
 
+# Litt varierande korleis det formuleringane vert på norsk, men gjer det jo berre meir utfordrande.
 #: activities/fractions_create/resource/1/Data.qml:18
 #: activities/fractions_create/resource/3/Data.qml:17
 #: activities/fractions_create/resource/3/Data.qml:23
 #: activities/fractions_create/resource/3/Data.qml:29
 msgctxt "Data|"
 msgid "Select one half of the pie."
-msgstr ""
+msgstr "Vel ei halv kake."
 
 #: activities/fractions_create/resource/1/Data.qml:24
 #: activities/fractions_create/resource/3/Data.qml:35
 #: activities/fractions_create/resource/3/Data.qml:49
 msgctxt "Data|"
 msgid "Select one-third of the pie."
-msgstr ""
+msgstr "Vel éin tredel av kaka."
 
 #: activities/fractions_create/resource/1/Data.qml:30
 #: activities/fractions_create/resource/3/Data.qml:41
 #: activities/fractions_create/resource/3/Data.qml:55
 msgctxt "Data|"
 msgid "Select two-thirds of the pie."
-msgstr ""
+msgstr "Vel to tredelar av kaka."
 
 #: activities/fractions_create/resource/1/Data.qml:36
 #: activities/fractions_create/resource/3/Data.qml:61
 msgctxt "Data|"
 msgid "Select one-quarter of the pie."
-msgstr ""
+msgstr "Vel éin firedel av kaka."
 
 #: activities/fractions_create/resource/1/Data.qml:42
 #: activities/fractions_create/resource/3/Data.qml:67
 msgctxt "Data|"
 msgid "Select two-fifths of the pie."
-msgstr ""
+msgstr "Vel to femdelar av kaka."
 
 #: activities/fractions_create/resource/1/Data.qml:50
 msgctxt "Data|"
 msgid "Select one pie and one-quarter of a pie."
-msgstr ""
+msgstr "Vel ei heil kake og éin firedel."
 
 #: activities/fractions_create/resource/1/Data.qml:56
 msgctxt "Data|"
 msgid "Select one pie and two-fifths of a pie."
-msgstr ""
+msgstr "Vel ei heil kake og to femdelar."
 
 #: activities/fractions_create/resource/1/Data.qml:62
 msgctxt "Data|"
 msgid "Select one pie and one-third of a pie."
-msgstr ""
+msgstr "Vel ei heil kake og éin tredel."
 
 #: activities/fractions_create/resource/1/Data.qml:68
 msgctxt "Data|"
 msgid "Select one pie and one half of a pie."
-msgstr ""
+msgstr "Vel éi og ei halv kake."
 
 #: activities/fractions_create/resource/1/Data.qml:74
 msgctxt "Data|"
 msgid "Select one pie and three-quarters of a pie."
-msgstr ""
+msgstr "Vel ei heil kake og tre firedelar."
 
 #: activities/fractions_create/resource/10/Data.qml:9
 msgctxt "Data|"
 msgid "Specific questions with a rectangle."
-msgstr ""
+msgstr "Spesifikt spørsmål – kvadratdiagram"
 
 #: activities/fractions_create/resource/10/Data.qml:18
 #: activities/fractions_create/resource/10/Data.qml:24
@@ -9009,12 +9081,12 @@ msgctxt "Data|"
 msgid ""
 "Select as many parts as you can without taking more than half of the "
 "rectangle."
-msgstr ""
+msgstr "Vel så mange delar du kan utan å ta meir enn halvparten av kvadratet."
 
 #: activities/fractions_create/resource/2/Data.qml:9
 msgctxt "Data|"
 msgid "Simplified fractions with a rectangle."
-msgstr ""
+msgstr "Brøker på forkorta form – kvadratdiagram"
 
 #: activities/fractions_create/resource/2/Data.qml:18
 #: activities/fractions_create/resource/4/Data.qml:17
@@ -9022,186 +9094,187 @@ msgstr ""
 #: activities/fractions_create/resource/4/Data.qml:29
 msgctxt "Data|"
 msgid "Select one half of the rectangle."
-msgstr ""
+msgstr "Vel halvparten av kvadratet."
 
 #: activities/fractions_create/resource/2/Data.qml:24
 #: activities/fractions_create/resource/4/Data.qml:35
 #: activities/fractions_create/resource/4/Data.qml:49
 msgctxt "Data|"
 msgid "Select one-third of the rectangle."
-msgstr ""
+msgstr "Vel éin tredel av kvadratet."
 
 #: activities/fractions_create/resource/2/Data.qml:30
 #: activities/fractions_create/resource/4/Data.qml:41
 #: activities/fractions_create/resource/4/Data.qml:55
 msgctxt "Data|"
 msgid "Select two-thirds of the rectangle."
-msgstr ""
+msgstr "Vel to tredelar av kvadratet."
 
 #: activities/fractions_create/resource/2/Data.qml:36
 #: activities/fractions_create/resource/4/Data.qml:61
 msgctxt "Data|"
 msgid "Select one-quarter of the rectangle."
-msgstr ""
+msgstr "Vel éin firedel av kvadratet."
 
 #: activities/fractions_create/resource/2/Data.qml:42
 #: activities/fractions_create/resource/4/Data.qml:67
 msgctxt "Data|"
 msgid "Select two-fifths of the rectangle."
-msgstr ""
+msgstr "Vel to femdelar av kvadratet."
 
 #: activities/fractions_create/resource/2/Data.qml:50
 msgctxt "Data|"
 msgid "Select one rectangle and one-quarter of a rectangle."
-msgstr ""
+msgstr "Vel eitt kvadrat og éin firedel av eit kvadrat."
 
 #: activities/fractions_create/resource/2/Data.qml:56
 msgctxt "Data|"
 msgid "Select one rectangle and two-fifths of a rectangle."
-msgstr ""
+msgstr "Vel eitt kvadrat og to femdelar av eit kvadrat."
 
 #: activities/fractions_create/resource/2/Data.qml:62
 msgctxt "Data|"
 msgid "Select one rectangle and one-third of a rectangle."
-msgstr ""
+msgstr "Vel eitt kvadrat og éin tredel av eit kvadrat."
 
 #: activities/fractions_create/resource/2/Data.qml:68
 msgctxt "Data|"
 msgid "Select one rectangle and one half of a rectangle."
-msgstr ""
+msgstr "Vel eitt og eit halvt kvadrat."
 
 #: activities/fractions_create/resource/2/Data.qml:74
 msgctxt "Data|"
 msgid "Select one rectangle and three-quarters of a rectangle."
-msgstr ""
+msgstr "Vel eitt kvadrat og tre firedelar av eit kvadrat."
 
 #: activities/fractions_create/resource/3/Data.qml:9
 msgctxt "Data|"
 msgid "Non-simplified fractions with a pie."
-msgstr ""
+msgstr "Brøker på ikkje-forkorta form – kakediagram"
 
 #: activities/fractions_create/resource/3/Data.qml:73
 msgctxt "Data|"
 msgid "Select three-fifths of the pie."
-msgstr ""
+msgstr "Vel tre femdelar av kaka."
 
 #: activities/fractions_create/resource/4/Data.qml:9
 msgctxt "Data|"
 msgid "Non-simplified fractions with a rectangle."
-msgstr ""
+msgstr "Brøker på ikkje-forkorta form – kvadratdiagram"
 
 #: activities/fractions_create/resource/4/Data.qml:73
 msgctxt "Data|"
 msgid "Select three-fifths of the rectangle."
-msgstr ""
+msgstr "Vel tre femdelar av kvadratet."
 
 #: activities/fractions_create/resource/5/Data.qml:9
 msgctxt "Data|"
 msgid "Decimal numbers with a pie."
-msgstr ""
+msgstr "Desimaltal – kakediagram"
 
 #: activities/fractions_create/resource/5/Data.qml:18
 msgctxt "Data|"
 msgid "Select 0.5 pie."
-msgstr ""
+msgstr "Vel 0,5 kaker."
 
 #: activities/fractions_create/resource/5/Data.qml:24
 msgctxt "Data|"
 msgid "Select 0.25 pie."
-msgstr ""
+msgstr "Vel 0,25 kaker."
 
 #: activities/fractions_create/resource/5/Data.qml:30
 msgctxt "Data|"
 msgid "Select 0.4 pie."
-msgstr ""
+msgstr "Vel 0,4 kaker."
 
 #: activities/fractions_create/resource/5/Data.qml:36
 msgctxt "Data|"
 msgid "Select 0.75 pie."
-msgstr ""
+msgstr "Vel 0,75 kaker."
 
 #: activities/fractions_create/resource/5/Data.qml:42
 msgctxt "Data|"
 msgid "Select 0.8 pie."
-msgstr ""
+msgstr "Vel 0,8 kaker."
 
 #: activities/fractions_create/resource/5/Data.qml:50
 msgctxt "Data|"
 msgid "Select 1.25 pies."
-msgstr ""
+msgstr "Vel 1,25 kaker."
 
 #: activities/fractions_create/resource/5/Data.qml:56
 msgctxt "Data|"
 msgid "Select 1.4 pies."
-msgstr ""
+msgstr "Vel 1,4 kaker."
 
 #: activities/fractions_create/resource/5/Data.qml:62
 #: activities/fractions_create/resource/5/Data.qml:68
 msgctxt "Data|"
 msgid "Select 1.5 pies."
-msgstr ""
+msgstr "Vel 1,5 kaker."
 
 #: activities/fractions_create/resource/5/Data.qml:74
 msgctxt "Data|"
 msgid "Select 1.75 pies."
-msgstr ""
+msgstr "Vel 1,75 kaker."
 
 #: activities/fractions_create/resource/6/Data.qml:9
 msgctxt "Data|"
 msgid "Decimal numbers with a rectangle."
-msgstr ""
+msgstr "Desimaltal – kvadratdiagram"
 
 #: activities/fractions_create/resource/6/Data.qml:18
 msgctxt "Data|"
 msgid "Select 0.5 rectangle."
-msgstr ""
+msgstr "Vel 0,5 kvadrat."
 
 #: activities/fractions_create/resource/6/Data.qml:24
 msgctxt "Data|"
 msgid "Select 0.25 rectangle."
-msgstr ""
+msgstr "Vel 0,25 kvadrat."
 
 #: activities/fractions_create/resource/6/Data.qml:30
 msgctxt "Data|"
 msgid "Select 0.4 rectangle."
-msgstr ""
+msgstr "Vel 0,4 kvadrat."
 
 #: activities/fractions_create/resource/6/Data.qml:36
 msgctxt "Data|"
 msgid "Select 0.75 rectangle."
-msgstr ""
+msgstr "Vel 0,75 kvadrat."
 
 #: activities/fractions_create/resource/6/Data.qml:42
 msgctxt "Data|"
 msgid "Select 0.8 rectangle."
-msgstr ""
+msgstr "Vel 0,8 kvadrat."
 
 #: activities/fractions_create/resource/6/Data.qml:50
 msgctxt "Data|"
 msgid "Select 1.25 rectangles."
-msgstr ""
+msgstr "Vel 1,25 kvadrat."
 
 #: activities/fractions_create/resource/6/Data.qml:56
 msgctxt "Data|"
 msgid "Select 1.4 rectangles."
-msgstr ""
+msgstr "Vel 1,4 kvadrat."
 
 #: activities/fractions_create/resource/6/Data.qml:62
 #: activities/fractions_create/resource/6/Data.qml:68
 msgctxt "Data|"
 msgid "Select 1.5 rectangles."
-msgstr ""
+msgstr "Vel 1,5 kvadrat."
 
 #: activities/fractions_create/resource/6/Data.qml:74
 msgctxt "Data|"
 msgid "Select 1.75 rectangles."
-msgstr ""
+msgstr "Vel 1,75 kvadrat."
 
 #: activities/fractions_create/resource/7/Data.qml:9
 msgctxt "Data|"
 msgid "Percentages with a pie."
-msgstr ""
+msgstr "Prosentar – kakediagram"
 
+# Vert forvirrande viss fomruleringa er «av kaka», då det kan verta vist meir enn éi kake (eks. to dersom det er «150 % av ei kake»). Brukar derfor «av ei kake».
 #. Select %1 percent of the pie.
 #: activities/fractions_create/resource/7/Data.qml:19
 #: activities/fractions_create/resource/7/Data.qml:26
@@ -9214,13 +9287,14 @@ msgstr ""
 #, qt-format
 msgctxt "Data|"
 msgid "Select %1% of the pie."
-msgstr ""
+msgstr "Vel %1 % av ei kake."
 
 #: activities/fractions_create/resource/8/Data.qml:9
 msgctxt "Data|"
 msgid "Percentages with a rectangle."
-msgstr ""
+msgstr "Prosentar – kvadratdiagram"
 
+# Vert forvirrande viss fomruleringa er «av kvadratet, då det kan verta vist meir enn eitt kvadrat (eks. to dersom det er «150 % av eit kvadrat»). Brukar derfor «av eit kvadrat».
 #. Select %1 percent of the rectangle.
 #: activities/fractions_create/resource/8/Data.qml:19
 #: activities/fractions_create/resource/8/Data.qml:26
@@ -9231,61 +9305,61 @@ msgstr ""
 #, qt-format
 msgctxt "Data|"
 msgid "Select %1% of the rectangle."
-msgstr ""
+msgstr "Vel %1 % av eit kvadrat."
 
 #: activities/fractions_create/resource/9/Data.qml:9
 msgctxt "Data|"
 msgid "Specific questions with a pie."
-msgstr ""
+msgstr "Spesifikt spørsmål – kakediagram"
 
 #: activities/fractions_create/resource/9/Data.qml:18
 #: activities/fractions_create/resource/9/Data.qml:24
 msgctxt "Data|"
 msgid ""
 "Select as many parts as you can without taking more than half of the pie."
-msgstr ""
+msgstr "Vel så mange delar du kan utan å ta meir enn halvparten av kaka."
 
 #. Activity title
 #: activities/fractions_find/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Find the fractions"
-msgstr ""
+msgstr "Finn brøken"
 
 #. Help title
 #: activities/fractions_find/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Find the correct numerator and denominator of the represented fraction."
-msgstr ""
+msgstr "Finn rett teljar og nemnar til brøken som vert vist."
 
 #: activities/fractions_find/resource/1/Data.qml:19
 msgctxt "Data|"
 msgid "Find denominator (with a pie)."
-msgstr ""
+msgstr "Finn nemnaren – kakediagram"
 
 #: activities/fractions_find/resource/2/Data.qml:19
 msgctxt "Data|"
 msgid "Find denominator (with a rectangle)."
-msgstr ""
+msgstr "Finn nemnaren – kvadratdiagram"
 
 #: activities/fractions_find/resource/3/Data.qml:9
 msgctxt "Data|"
 msgid "Find numerator (with a pie)."
-msgstr ""
+msgstr "Finn teljaren – kakediagram"
 
 #: activities/fractions_find/resource/4/Data.qml:9
 msgctxt "Data|"
 msgid "Find numerator (with a rectangle)."
-msgstr ""
+msgstr "Finn teljaren – kvadratdiagram"
 
 #: activities/fractions_find/resource/5/Data.qml:9
 msgctxt "Data|"
 msgid "Find numerator and denominator (with a pie)."
-msgstr ""
+msgstr "Finn teljaren og nemnaren – kakediagram"
 
 #: activities/fractions_find/resource/6/Data.qml:9
 msgctxt "Data|"
 msgid "Find numerator and denominator (with a rectangle)."
-msgstr ""
+msgstr "Finn teljaren og nemnaren – kvadratdiagram"
 
 #. Activity title
 #: activities/geo-country/ActivityInfo.qml:19
@@ -10534,124 +10608,151 @@ msgctxt "board17_0|"
 msgid "Suvalkija"
 msgstr "Sūduva"
 
+# Sjå https://bugs.kde.org/show_bug.cgi?id=463938 for korfor eg har med «og byar».
 #: activities/geo-country/resource/board/board18_0.qml:13
 msgctxt "board18_0|"
 msgid "Autonomous communities of Spain"
-msgstr ""
+msgstr "Autonome regionar og byar i Spania"
 
+# https://snl.no/Andaluc%C3%ADa
 #. Autonomous communities of Spain: Andalusia
 #: activities/geo-country/resource/board/board18_0.qml:22
 msgctxt "board18_0|"
 msgid "Andalusia"
-msgstr ""
+msgstr "Andalucía"
 
+# https://snl.no/Madrid_-_region
 #. Autonomous communities of Spain: Madrid
 #: activities/geo-country/resource/board/board18_0.qml:29
 msgctxt "board18_0|"
 msgid "Madrid"
-msgstr ""
+msgstr "Madrid"
 
+# https://snl.no/Galicia
 #. Autonomous communities of Spain: Galicia
 #: activities/geo-country/resource/board/board18_0.qml:36
 msgctxt "board18_0|"
 msgid "Galicia"
-msgstr ""
+msgstr "Galicia"
 
+# https://snl.no/Castilla-Le%C3%B3n
 #. Autonomous communities of Spain: Castile and León
 #: activities/geo-country/resource/board/board18_0.qml:43
 msgctxt "board18_0|"
 msgid "Castile and León"
-msgstr ""
+msgstr "Castilla-León"
 
+# https://snl.no/Castilla-La_Mancha
 #. Autonomous communities of Spain: Castilla-La Mancha
 #: activities/geo-country/resource/board/board18_0.qml:50
 msgctxt "board18_0|"
 msgid "Castilla-La Mancha"
-msgstr ""
+msgstr "Castilla-La Mancha"
 
+# https://snl.no/Catalonia
 #. Autonomous communities of Spain: Catalonia
 #: activities/geo-country/resource/board/board18_0.qml:57
 msgctxt "board18_0|"
 msgid "Catalonia"
-msgstr ""
+msgstr "Catalonia"
 
+# https://snl.no/Arag%C3%B3n_-_autonom_region_i_Spania
 #. Autonomous communities of Spain: Aragon
 #: activities/geo-country/resource/board/board18_0.qml:64
 msgctxt "board18_0|"
 msgid "Aragon"
-msgstr ""
+msgstr "Aragón"
 
+# https://snl.no/Valencia_-_autonom_region
 #. Autonomous communities of Spain: Valencia
 #: activities/geo-country/resource/board/board18_0.qml:71
 msgctxt "board18_0|"
 msgid "Valencia"
-msgstr ""
+msgstr "Valencia"
 
+# https://snl.no/Murcia_-_region
 #. Autonomous communities of Spain: Murcia
 #: activities/geo-country/resource/board/board18_0.qml:78
 msgctxt "board18_0|"
 msgid "Murcia"
-msgstr ""
+msgstr "Murcia"
 
+# https://snl.no/Asturias
 #. Autonomous communities of Spain: Asturias
 #: activities/geo-country/resource/board/board18_0.qml:85
 msgctxt "board18_0|"
 msgid "Asturias"
-msgstr ""
+msgstr "Asturias"
 
+# https://nn.wikipedia.org/wiki/Baskarland
+# https://snl.no/Baskerland
 #. Autonomous communities of Spain: Basque Country
 #: activities/geo-country/resource/board/board18_0.qml:92
 msgctxt "board18_0|"
 msgid "Basque Country"
-msgstr ""
+msgstr "Baskarland"
 
+# https://snl.no/La_Rioja_-_region_i_Spania
 #. Autonomous communities of Spain: La Rioja
 #: activities/geo-country/resource/board/board18_0.qml:99
 msgctxt "board18_0|"
 msgid "La Rioja"
-msgstr ""
+msgstr "La Rioja"
 
+# https://snl.no/Cantabria
 #. Autonomous communities of Spain: Cantabria
 #: activities/geo-country/resource/board/board18_0.qml:106
 msgctxt "board18_0|"
 msgid "Cantabria"
-msgstr ""
+msgstr "Cantabria"
 
+# https://snl.no/Navarra
 #. Autonomous communities of Spain: Navarre
 #: activities/geo-country/resource/board/board18_0.qml:113
 msgctxt "board18_0|"
 msgid "Navarre"
-msgstr ""
+msgstr "Navarra"
 
+# https://snl.no/Extremadura
 #. Autonomous communities of Spain: Extremadura
 #: activities/geo-country/resource/board/board18_0.qml:120
 msgctxt "board18_0|"
 msgid "Extremadura"
-msgstr ""
+msgstr "Extremadura"
 
+# skip-rule: klammeform
+# (Me brukar «hokjønnsbøying» av «øy», altså -øyene, ikkje -øyane.)
+# https://nn.wikipedia.org/wiki/Kanari%C3%B8yane
+# https://snl.no/Kanari%C3%B8yene
 #. Autonomous communities of Spain: Canary Islands
 #: activities/geo-country/resource/board/board18_0.qml:127
 msgctxt "board18_0|"
 msgid "Canary Islands"
-msgstr ""
+msgstr "Kanariøyene"
 
+# https://nn.wikipedia.org/wiki/Balearane
+# https://snl.no/Balearene
 #. Autonomous communities of Spain: Balearic Islands
 #: activities/geo-country/resource/board/board18_0.qml:134
 msgctxt "board18_0|"
 msgid "Balearic Islands"
-msgstr ""
+msgstr "Balearane"
 
+# Strengt tatt ikkje ein autonum region, men ein autonom by.
+# https://snl.no/Ceuta
 #. Autonomous communities of Spain: Ceuta
 #: activities/geo-country/resource/board/board18_0.qml:141
 msgctxt "board18_0|"
 msgid "Ceuta"
-msgstr ""
+msgstr "Ceuta"
 
+# Strengt tatt ikkje ein autonum region, men ein autonom by.
+# https://snl.no/Melilla
 #. Autonomous communities of Spain: Melilla
 #: activities/geo-country/resource/board/board18_0.qml:148
 msgctxt "board18_0|"
 msgid "Melilla"
-msgstr ""
+msgstr "Melilla"
 
 #: activities/geo-country/resource/board/board1_0.qml:15
 msgctxt "board1_0|"
@@ -15380,7 +15481,7 @@ msgstr "Bruk tale"
 #: activities/learn_digits/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Count and color the circles"
-msgstr ""
+msgstr "Tel og fargelegg sirklar"
 
 #. Help title
 #: activities/learn_digits/ActivityInfo.qml:17
@@ -15566,12 +15667,12 @@ msgstr "Subtraksjon med 1, 2, 3, 4 og 5"
 #: activities/learn_subtractions/resource/4/Data.qml:14
 msgctxt "Data|"
 msgid "Subtractions with 1, 2, 3, 4, 5, 6 and 7."
-msgstr ""
+msgstr "Subtraksjon med 1, 2, 3, 4, 5, 6 og 7"
 
 #: activities/learn_subtractions/resource/5/Data.qml:14
 msgctxt "Data|"
 msgid "Subtractions with 1, 2, 3, 4, 5, 6, 7, 8 and 9."
-msgstr ""
+msgstr "Subtraksjon med 1, 2, 3, 4, 5, 6, 7, 8 og 9"
 
 #. Activity title
 #: activities/left_right_click/ActivityInfo.qml:14
@@ -15599,6 +15700,9 @@ msgid ""
 "A left click on a fish will move it to the pond. A right click on a monkey "
 "will move it to the tree. A message will show if you make the wrong click."
 msgstr ""
+"Venstreklikk på fisken for å flytta han til innsjøen. Høgreklikk på "
+"apekatten for å flytta han til treet. Du får ei melding dersom du trykkjer "
+"feil."
 
 #. Activity title
 #: activities/leftright/ActivityInfo.qml:15
@@ -18338,26 +18442,26 @@ msgstr ""
 #: activities/morse_code/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
 msgid "Discover the International Morse code"
-msgstr ""
+msgstr "Lær morse­alfabetet"
 
 #. Help title
 #: activities/morse_code/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Learn how to communicate with the International Morse code."
-msgstr ""
+msgstr "Lær å kommunisera med det internasjonale morsealfabetet."
 
 #. Help goal
 #: activities/morse_code/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid ""
 "You have to send and receive letters and digits in International Morse code."
-msgstr ""
+msgstr "Læra å senda og ta imot bokstavar og siffer i morsealfabetet."
 
 #. Help prerequisite
 #: activities/morse_code/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "Knowledge of alphabets and digits."
-msgstr ""
+msgstr "Kjennskap til alfabetet og siffer."
 
 #. Help manual
 #: activities/morse_code/ActivityInfo.qml:27
@@ -18368,11 +18472,14 @@ msgid ""
 "have a look at the translation map which contains the code for all the "
 "letters and digits."
 msgstr ""
+"Du vert bedt om å senda ei melding i morse­alfabetet eller til å tolka "
+"morseteikn om til bokstavar og siffer. For å læra morsealfabetet kan du sjå "
+"på diagrammet over morseteikn."
 
 #: activities/morse_code/FirstScreen.qml:25
 msgctxt "FirstScreen|"
 msgid "Exploring Morse Code"
-msgstr ""
+msgstr "Utforsk morsealfabetet"
 
 #: activities/morse_code/FirstScreen.qml:64
 msgctxt "FirstScreen|"
@@ -18380,6 +18487,9 @@ msgid ""
 "Morse code was developed by Samuel Morse. It is a method of transmitting "
 "text information as a series of on-off tones, lights, or clicks."
 msgstr ""
+"Morsealfabetet vart utvikla av Samuel Morse. Ein brukar det til å senda og "
+"ta imot tekst via lyd-, lys-, radio- eller elektriske signal med to ulike "
+"lengder."
 
 #: activities/morse_code/FirstScreen.qml:65
 msgctxt "FirstScreen|"
@@ -18392,28 +18502,35 @@ msgid ""
 "For example, the most common letter in English, the letter \"E\", has the "
 "shortest code, a single dot."
 msgstr ""
+"Kvart morseteikn representerer anten eit skriftteikn eller eit såkalla "
+"prosedyreteikn, og vert uttrykt som «prikkar» og «strekar». Ein strek varer "
+"tre gongar så lenge som ein prikk. For å gjera kommunikasjonen snøggare vart "
+"alfabetet utforma slik at dei bokstavane som er vanlegast (på engelsk), har "
+"færrast prikkar/strekar.\n"
+"For eksempel er E den vanlegaste bokstaven på engelsk (og norsk), og E har "
+"òg det kortaste morseteiknet – ein enkelt prikk."
 
 #: activities/morse_code/FirstScreen.qml:90
 msgctxt "FirstScreen|"
 msgid "When you are ready, click on Tux and we will converse in Morse code."
-msgstr ""
+msgstr "Trykk på Tux når du er klar, så skal me kommunisera med morseteikn."
 
 #: activities/morse_code/MorseCode.qml:346
 #, qt-format
 msgctxt "MorseCode|"
 msgid "Morse value: %1"
-msgstr ""
+msgstr "Morseteikn: %1"
 
 #: activities/morse_code/MorseCode.qml:347
 #, qt-format
 msgctxt "MorseCode|"
 msgid "Alphabet/Numeric value: %1"
-msgstr ""
+msgstr "Bokstav/siffer: %1"
 
 #: activities/morse_code/resource/1/Data.qml:13
 msgctxt "Data|"
 msgid "Letters."
-msgstr ""
+msgstr "Bokstavar"
 
 #: activities/morse_code/resource/1/Data.qml:18
 #: activities/morse_code/resource/1/Data.qml:34
@@ -18425,7 +18542,7 @@ msgstr ""
 #, qt-format
 msgctxt "Data|"
 msgid "Send the message %1 in Morse code."
-msgstr ""
+msgstr "Send meldinga %1 med morseteikn."
 
 #: activities/morse_code/resource/1/Data.qml:23
 #: activities/morse_code/resource/1/Data.qml:39
@@ -18434,7 +18551,7 @@ msgstr ""
 #, qt-format
 msgctxt "Data|"
 msgid "Convert the message %1 to letters."
-msgstr ""
+msgstr "Tolk morsemeldinga %1 som bokstavar."
 
 #: activities/morse_code/resource/1/Data.qml:28
 #: activities/morse_code/resource/1/Data.qml:44
@@ -18442,40 +18559,40 @@ msgstr ""
 #: activities/morse_code/resource/1/Data.qml:76
 msgctxt "Data|"
 msgid "Find the corresponding letter."
-msgstr ""
+msgstr "Finn tilhøyrande bokstav."
 
 #: activities/morse_code/resource/2/Data.qml:13
 msgctxt "Data|"
 msgid "Digits."
-msgstr ""
+msgstr "Siffer"
 
 #: activities/morse_code/resource/2/Data.qml:23
 #: activities/morse_code/resource/2/Data.qml:39
 #, qt-format
 msgctxt "Data|"
 msgid "Convert the message %1 to digits."
-msgstr ""
+msgstr "Tolk morsemeldinga %1 som siffer."
 
 #: activities/morse_code/resource/2/Data.qml:28
 #: activities/morse_code/resource/2/Data.qml:44
 msgctxt "Data|"
 msgid "Find the corresponding digit."
-msgstr ""
+msgstr "Finn tilhøyrande siffer."
 
 #: activities/morse_code/resource/3/Data.qml:13
 msgctxt "Data|"
 msgid "Words."
-msgstr ""
+msgstr "Ord"
 
 #: activities/morse_code/resource/3/Data.qml:24
 msgctxt "Data|"
 msgid "Write the Morse code you hear."
-msgstr ""
+msgstr "Skriv ned morseteiknet du høyrer."
 
 #: activities/morse_code/resource/3/Data.qml:34
 msgctxt "Data|"
 msgid "Convert the message in a word."
-msgstr ""
+msgstr "Skriv ordet som morseteikn."
 
 #. Activity title
 #: activities/mosaic/ActivityInfo.qml:15
@@ -18557,6 +18674,8 @@ msgid ""
 "Play with Tux. First take turns to place nine pieces, and then take turns to "
 "move your pieces."
 msgstr ""
+"Spel mot Tux. Først byter de på å leggja ut ni brikker, og så flyttar de på "
+"dei."
 
 #: activities/nine_men_morris/nine_men_morris.js:29
 msgctxt "nine_men_morris|"
@@ -19166,6 +19285,7 @@ msgctxt "Data|"
 msgid "Below 5 words."
 msgstr "Færre enn fem ord"
 
+# skip-rule: personifisering
 #. These sentences should not need to be translated word by word. Please add at least 10 sentences, each one being between 3 and 5 words. Use | to separate group of words. The aim of the string is to shuffle the group of words and let the child reorder them correctly. We should not be able to form a correct sentence by shuffling some words in the final sentence.
 #: activities/ordering_sentences/resource/1/Data.qml:18
 msgctxt "Data|"
@@ -24482,25 +24602,25 @@ msgstr "Høgaste verdi: 500 000"
 #: activities/tens_complement_find/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Find ten's complement"
-msgstr ""
+msgstr "Finn tiar­komplement"
 
 #. Help title
 #: activities/tens_complement_find/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Find the ten's complement of each number."
-msgstr ""
+msgstr "Finn tiarkomplementet til kvart tal."
 
 #. Help goal
 #: activities/tens_complement_find/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Learn to find ten's complement."
-msgstr ""
+msgstr "Læra å finna tiarkomplement."
 
 #. Help prerequisite
 #: activities/tens_complement_find/ActivityInfo.qml:21
 msgctxt "ActivityInfo|"
 msgid "Numbers from 1 to 10 and additions."
-msgstr ""
+msgstr "Kjennskap til tala 1–10 og addisjon."
 
 #: activities/tens_complement_find/ActivityInfo.qml:23
 #: activities/tens_complement_use/ActivityInfo.qml:24
@@ -24511,6 +24631,9 @@ msgid ""
 "corresponding lines. To correct the errors, click on the wrong numbers to "
 "remove them and repeat the previous steps."
 msgstr ""
+"Når alle reknestykka er fylte ut, trykk på «OK»-knappen for å sjekka svaret. "
+"Viss eit stykke er feil, vert det vist ein kross ved sida av det. Trykk då "
+"på tala som er feil, for å fjerna dei, og vel så dei rette tala."
 
 #. Help manual
 #: activities/tens_complement_find/ActivityInfo.qml:23
@@ -24519,33 +24642,35 @@ msgid ""
 "Create pairs of numbers equal to ten. Select a number in the list, then "
 "select an empty spot of an operation to move the selected number there."
 msgstr ""
+"Lag talpar som til saman vert ti. Vel eit tal i lista, og trykk på eit ledig "
+"talfelt for å flytta talet dit."
 
 #: activities/tens_complement_find/resource/1/Data.qml:25
 msgctxt "Data|"
 msgid "First number from 1 to 4."
-msgstr ""
+msgstr "Første tal frå 1 til 4"
 
 #: activities/tens_complement_find/resource/2/Data.qml:9
 msgctxt "Data|"
 msgid "First number from 5 to 9."
-msgstr ""
+msgstr "Første tal frå 5 til 9"
 
 #: activities/tens_complement_find/resource/4/Data.qml:9
 msgctxt "Data|"
 msgid "Find both numbers."
-msgstr ""
+msgstr "Finn begge tala"
 
 #. Activity title
 #: activities/tens_complement_swap/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Swap ten's complement"
-msgstr ""
+msgstr "Byt tiar­komplement"
 
 #. Help title
 #: activities/tens_complement_swap/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Swap the numbers to create pairs equal to ten."
-msgstr ""
+msgstr "Byt om tala for å laga par som til saman vert ti."
 
 #. Help goal
 #: activities/tens_complement_swap/ActivityInfo.qml:19
@@ -24554,12 +24679,14 @@ msgid ""
 "Learn to use ten's complement to optimize the order of numbers in an "
 "operation."
 msgstr ""
+"Læra å brukar tiarkomplement for å optimera rekkjefølgja på tal i ei "
+"utrekning."
 
 #. Help prerequisite
 #: activities/tens_complement_swap/ActivityInfo.qml:21
 msgctxt "ActivityInfo|"
 msgid "Numbers from 1 to 30 and additions."
-msgstr ""
+msgstr "Kjennskap til tala 1–30 og addisjon."
 
 #. Help manual
 #: activities/tens_complement_swap/ActivityInfo.qml:23
@@ -24571,45 +24698,50 @@ msgid ""
 "the answers. If some answers are incorrect, a cross icon will appear on the "
 "corresponding lines. Correct the errors, then press the OK button again."
 msgstr ""
+"Lag talpar som til saman vert ti innanfor kvar parentes. Byt om på to tal i "
+"same reknestykke ved å trykkja på dei. Når alle reknestykka er fylte ut, "
+"trykk på «OK»-knappen for å sjekka svaret. Viss eit stykke er feil, vert det "
+"vist ein kross ved sida av det. Trykk då på tala som er feil, for å fjerna "
+"dei, og vel så dei rette tala."
 
 #: activities/tens_complement_swap/resource/1/Data.qml:36
 msgctxt "Data|"
 msgid "2 pairs to make from 4 numbers."
-msgstr ""
+msgstr "2 par frå 4 tal"
 
 #: activities/tens_complement_swap/resource/2/Data.qml:9
 msgctxt "Data|"
 msgid "2 pairs to make from 5 numbers."
-msgstr ""
+msgstr "2 par frå 5 tal"
 
 #: activities/tens_complement_swap/resource/3/Data.qml:9
 msgctxt "Data|"
 msgid "3 pairs to make from 6 numbers."
-msgstr ""
+msgstr "3 par frå 6 tal"
 
 #. Activity title
 #: activities/tens_complement_use/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Use ten's complement"
-msgstr ""
+msgstr "Bruk tiar­komplement"
 
 #. Help title
 #: activities/tens_complement_use/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Use a ten's complement to simplify the operation."
-msgstr ""
+msgstr "Bruk tiarkomplement for å forenkla reknestykke."
 
 #. Help goal
 #: activities/tens_complement_use/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Learn a practical use of ten's complement."
-msgstr ""
+msgstr "Læra om ei praktiske nytte av tiarkomplement."
 
 #. Help prerequisite
 #: activities/tens_complement_use/ActivityInfo.qml:21
 msgctxt "ActivityInfo|"
 msgid "Numbers from 1 to 50 and additions."
-msgstr ""
+msgstr "Kjennskap til tala 1–50 og addisjon."
 
 #. Help manual
 #: activities/tens_complement_use/ActivityInfo.qml:23
@@ -24619,21 +24751,24 @@ msgid ""
 "parentheses. Select a number in the list, then select an empty spot of an "
 "operation to move the selected number there."
 msgstr ""
+"Del opp reknestykka for å laga talpar som til saman vert ti innanfor kvar "
+"parentes. Vel eit tal i lista, og trykk på eit ledig talfelt for å flytta "
+"talet dit."
 
 #: activities/tens_complement_use/resource/1/Data.qml:43
 msgctxt "Data|"
 msgid "Result between 11 and 19."
-msgstr ""
+msgstr "Svar frå 11 til 19"
 
 #: activities/tens_complement_use/resource/2/Data.qml:9
 msgctxt "Data|"
 msgid "Result between 20 and 29."
-msgstr ""
+msgstr "Svar frå 20 til 29"
 
 #: activities/tens_complement_use/resource/3/Data.qml:9
 msgctxt "Data|"
 msgid "Result between 30 and 50."
-msgstr ""
+msgstr "Svar frå 30 til 50"
 
 #. Activity title
 #: activities/tic_tac_toe/ActivityInfo.qml:18
@@ -24666,11 +24801,13 @@ msgid ""
 "Play with Tux. Take turns to click on the square which you want to mark. The "
 "first player to create a line of 3 marks wins."
 msgstr ""
+"Spel mot Tux. De byter på å velja kva rute de vil markera. Den første "
+"spelaren som får tre på rad, vinn."
 
 #: activities/tic_tac_toe/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Tux will play better when you increase the level."
-msgstr ""
+msgstr "Tux spelar betre ved høgare vanskegradar."
 
 #. Activity title
 #: activities/tic_tac_toe_2players/ActivityInfo.qml:18
@@ -24880,12 +25017,12 @@ msgstr "Skriv inn heile orda mens dei dalar ned, før dei når bakken."
 #: core/ChangeLog.qml:30
 msgctxt "ChangeLog|"
 msgid "Map of Spain added for geography activity"
-msgstr ""
+msgstr "Kart over Spania i geografi-aktiviteten"
 
 #: core/ChangeLog.qml:31
 msgctxt "ChangeLog|"
 msgid "Voices added for Ukrainian"
-msgstr ""
+msgstr "Ukrainske talefiler"
 
 #: core/ChangeLog.qml:32
 msgctxt "ChangeLog|"
@@ -24893,6 +25030,8 @@ msgid ""
 "New command-line option to list all the activities and start on a specific "
 "one"
 msgstr ""
+"Kommandolinje-val for å visa oversikt over aktivitetar og starta ein "
+"aktivitet direkte"
 
 #: core/ChangeLog.qml:33 core/ChangeLog.qml:68 core/ChangeLog.qml:71
 #: core/ChangeLog.qml:77
