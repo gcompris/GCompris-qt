@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-12-13 00:48+0000\n"
-"PO-Revision-Date: 2022-09-14 05:14+0200\n"
+"PO-Revision-Date: 2023-01-07 10:07+0100\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
 "Language: ka\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.1.1\n"
+"X-Generator: Poedit 3.2.2\n"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "advanced_colors"
 #: activities/advanced_colors/ActivityInfo.qml:18
@@ -929,13 +929,13 @@ msgstr ""
 #: activities/play_rhythm/ActivityInfo.qml:22
 #, kde-format
 msgid "Click the drum to recreate the rhythm"
-msgstr ""
+msgstr "რიტმის თავიდან შესაქმნელად დააჭირეთ დოლს"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "positions"
 #: activities/positions/ActivityInfo.qml:18
 #, kde-format
 msgid "Find the correct position"
-msgstr ""
+msgstr "იპოვეთ სწორი მდებარეობა"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "programmingMaze"
 #: activities/programmingMaze/ActivityInfo.qml:19

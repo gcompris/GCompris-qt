@@ -4814,7 +4814,7 @@ msgstr ""
 
 #: activities/comparator/resource/10/Data.qml:14
 msgctxt "Data|"
-msgid "3 decimal places between 0 and 999."
+msgid "3 decimal places between 0 and 999.999."
 msgstr ""
 
 #: activities/comparator/resource/2/Data.qml:14
@@ -4844,12 +4844,12 @@ msgstr ""
 
 #: activities/comparator/resource/7/Data.qml:14
 msgctxt "Data|"
-msgid "1 decimal place between 0 and 9, same integer part."
+msgid "1 decimal place between 0 and 9.9, same integer part."
 msgstr ""
 
 #: activities/comparator/resource/8/Data.qml:14
 msgctxt "Data|"
-msgid "1 decimal place between 0 and 9."
+msgid "1 decimal place between 0 and 9.9."
 msgstr ""
 
 #: activities/comparator/resource/9/Data.qml:14
@@ -8137,20 +8137,19 @@ msgstr ""
 
 #: activities/fractions_create/resource/10/Data.qml:9
 msgctxt "Data|"
-msgid "Specific questions with a rectangle."
+msgid "Specific questions with a square."
 msgstr ""
 
 #: activities/fractions_create/resource/10/Data.qml:18
 #: activities/fractions_create/resource/10/Data.qml:24
 msgctxt "Data|"
 msgid ""
-"Select as many parts as you can without taking more than half of the "
-"rectangle."
+"Select as many parts as you can without taking more than half of the square."
 msgstr ""
 
 #: activities/fractions_create/resource/2/Data.qml:9
 msgctxt "Data|"
-msgid "Simplified fractions with a rectangle."
+msgid "Simplified fractions with a square."
 msgstr ""
 
 #: activities/fractions_create/resource/2/Data.qml:18
@@ -8158,58 +8157,58 @@ msgstr ""
 #: activities/fractions_create/resource/4/Data.qml:23
 #: activities/fractions_create/resource/4/Data.qml:29
 msgctxt "Data|"
-msgid "Select one half of the rectangle."
+msgid "Select one half of the square."
 msgstr ""
 
 #: activities/fractions_create/resource/2/Data.qml:24
 #: activities/fractions_create/resource/4/Data.qml:35
 #: activities/fractions_create/resource/4/Data.qml:49
 msgctxt "Data|"
-msgid "Select one-third of the rectangle."
+msgid "Select one-third of the square."
 msgstr ""
 
 #: activities/fractions_create/resource/2/Data.qml:30
 #: activities/fractions_create/resource/4/Data.qml:41
 #: activities/fractions_create/resource/4/Data.qml:55
 msgctxt "Data|"
-msgid "Select two-thirds of the rectangle."
+msgid "Select two-thirds of the square."
 msgstr ""
 
 #: activities/fractions_create/resource/2/Data.qml:36
 #: activities/fractions_create/resource/4/Data.qml:61
 msgctxt "Data|"
-msgid "Select one-quarter of the rectangle."
+msgid "Select one-quarter of the square."
 msgstr ""
 
 #: activities/fractions_create/resource/2/Data.qml:42
 #: activities/fractions_create/resource/4/Data.qml:67
 msgctxt "Data|"
-msgid "Select two-fifths of the rectangle."
+msgid "Select two-fifths of the square."
 msgstr ""
 
 #: activities/fractions_create/resource/2/Data.qml:50
 msgctxt "Data|"
-msgid "Select one rectangle and one-quarter of a rectangle."
+msgid "Select one square and one-quarter of a square."
 msgstr ""
 
 #: activities/fractions_create/resource/2/Data.qml:56
 msgctxt "Data|"
-msgid "Select one rectangle and two-fifths of a rectangle."
+msgid "Select one square and two-fifths of a square."
 msgstr ""
 
 #: activities/fractions_create/resource/2/Data.qml:62
 msgctxt "Data|"
-msgid "Select one rectangle and one-third of a rectangle."
+msgid "Select one square and one-third of a square."
 msgstr ""
 
 #: activities/fractions_create/resource/2/Data.qml:68
 msgctxt "Data|"
-msgid "Select one rectangle and one half of a rectangle."
+msgid "Select one square and one half of a square."
 msgstr ""
 
 #: activities/fractions_create/resource/2/Data.qml:74
 msgctxt "Data|"
-msgid "Select one rectangle and three-quarters of a rectangle."
+msgid "Select one square and three-quarters of a square."
 msgstr ""
 
 #: activities/fractions_create/resource/3/Data.qml:9
@@ -8224,12 +8223,12 @@ msgstr ""
 
 #: activities/fractions_create/resource/4/Data.qml:9
 msgctxt "Data|"
-msgid "Non-simplified fractions with a rectangle."
+msgid "Non-simplified fractions with a square."
 msgstr ""
 
 #: activities/fractions_create/resource/4/Data.qml:73
 msgctxt "Data|"
-msgid "Select three-fifths of the rectangle."
+msgid "Select three-fifths of the square."
 msgstr ""
 
 #: activities/fractions_create/resource/5/Data.qml:9
@@ -8285,53 +8284,53 @@ msgstr ""
 
 #: activities/fractions_create/resource/6/Data.qml:9
 msgctxt "Data|"
-msgid "Decimal numbers with a rectangle."
+msgid "Decimal numbers with a square."
 msgstr ""
 
 #: activities/fractions_create/resource/6/Data.qml:18
 msgctxt "Data|"
-msgid "Select 0.5 rectangle."
+msgid "Select 0.5 square."
 msgstr ""
 
 #: activities/fractions_create/resource/6/Data.qml:24
 msgctxt "Data|"
-msgid "Select 0.25 rectangle."
+msgid "Select 0.25 square."
 msgstr ""
 
 #: activities/fractions_create/resource/6/Data.qml:30
 msgctxt "Data|"
-msgid "Select 0.4 rectangle."
+msgid "Select 0.4 square."
 msgstr ""
 
 #: activities/fractions_create/resource/6/Data.qml:36
 msgctxt "Data|"
-msgid "Select 0.75 rectangle."
+msgid "Select 0.75 square."
 msgstr ""
 
 #: activities/fractions_create/resource/6/Data.qml:42
 msgctxt "Data|"
-msgid "Select 0.8 rectangle."
+msgid "Select 0.8 square."
 msgstr ""
 
 #: activities/fractions_create/resource/6/Data.qml:50
 msgctxt "Data|"
-msgid "Select 1.25 rectangles."
+msgid "Select 1.25 squares."
 msgstr ""
 
 #: activities/fractions_create/resource/6/Data.qml:56
 msgctxt "Data|"
-msgid "Select 1.4 rectangles."
+msgid "Select 1.4 squares."
 msgstr ""
 
 #: activities/fractions_create/resource/6/Data.qml:62
 #: activities/fractions_create/resource/6/Data.qml:68
 msgctxt "Data|"
-msgid "Select 1.5 rectangles."
+msgid "Select 1.5 squares."
 msgstr ""
 
 #: activities/fractions_create/resource/6/Data.qml:74
 msgctxt "Data|"
-msgid "Select 1.75 rectangles."
+msgid "Select 1.75 squares."
 msgstr ""
 
 #: activities/fractions_create/resource/7/Data.qml:9
@@ -8355,10 +8354,10 @@ msgstr ""
 
 #: activities/fractions_create/resource/8/Data.qml:9
 msgctxt "Data|"
-msgid "Percentages with a rectangle."
+msgid "Percentages with a square."
 msgstr ""
 
-#. Select %1 percent of the rectangle.
+#. Select %1 percent of the square.
 #: activities/fractions_create/resource/8/Data.qml:19
 #: activities/fractions_create/resource/8/Data.qml:26
 #: activities/fractions_create/resource/8/Data.qml:33
@@ -8367,7 +8366,7 @@ msgstr ""
 #: activities/fractions_create/resource/8/Data.qml:56
 #, qt-format
 msgctxt "Data|"
-msgid "Select %1% of the rectangle."
+msgid "Select %1% of the square."
 msgstr ""
 
 #: activities/fractions_create/resource/9/Data.qml:9
@@ -8396,22 +8395,22 @@ msgstr ""
 
 #: activities/fractions_find/resource/1/Data.qml:19
 msgctxt "Data|"
-msgid "Find denominator (with a pie)."
+msgid "Find numerator (with a pie)."
 msgstr ""
 
 #: activities/fractions_find/resource/2/Data.qml:19
 msgctxt "Data|"
-msgid "Find denominator (with a rectangle)."
+msgid "Find numerator (with a square)."
 msgstr ""
 
 #: activities/fractions_find/resource/3/Data.qml:9
 msgctxt "Data|"
-msgid "Find numerator (with a pie)."
+msgid "Find denominator (with a pie)."
 msgstr ""
 
 #: activities/fractions_find/resource/4/Data.qml:9
 msgctxt "Data|"
-msgid "Find numerator (with a rectangle)."
+msgid "Find denominator (with a square)."
 msgstr ""
 
 #: activities/fractions_find/resource/5/Data.qml:9
@@ -8421,7 +8420,7 @@ msgstr ""
 
 #: activities/fractions_find/resource/6/Data.qml:9
 msgctxt "Data|"
-msgid "Find numerator and denominator (with a rectangle)."
+msgid "Find numerator and denominator (with a square)."
 msgstr ""
 
 #. Activity title
@@ -9657,7 +9656,7 @@ msgstr ""
 
 #: activities/geo-country/resource/board/board18_0.qml:13
 msgctxt "board18_0|"
-msgid "Autonomous communities of Spain"
+msgid "Autonomous communities or cities of Spain"
 msgstr ""
 
 #. Autonomous communities of Spain: Andalusia

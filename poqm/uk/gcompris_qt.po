@@ -4,14 +4,14 @@
 # version 3 or later versions approved by the membership of KDE e.V.
 #
 # Ivan Onyshchuk <onivan@mail.ru>, 2008, 2009, 2010.
-# Yuri Chornoivan <yurchor@ukr.net>, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022.
+# Yuri Chornoivan <yurchor@ukr.net>, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_qt\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=gcompris&keywords=I18N+L10N&component=general\n"
 "POT-Creation-Date: 2014-11-09 17:30+0000\n"
-"PO-Revision-Date: 2022-12-24 08:46+0200\n"
+"PO-Revision-Date: 2023-01-07 08:50+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
 "Language: uk\n"
@@ -5304,12 +5304,9 @@ msgid "Numbers from 1 to 9."
 msgstr "Числа від 1 до 9."
 
 #: activities/comparator/resource/10/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "2 decimal places between 0 and 99.99."
 msgctxt "Data|"
 msgid "3 decimal places between 0 and 999.999."
-msgstr "2 десяткових позиції між 0 і 99.99."
+msgstr "3 десяткових позиції між 0 і 999,999."
 
 #: activities/comparator/resource/2/Data.qml:14
 msgctxt "Data|"
@@ -5337,20 +5334,14 @@ msgid "Numbers from 1 to 1 billion."
 msgstr "Числа від 1 до мільярда."
 
 #: activities/comparator/resource/7/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "1 decimal place between 0 and 9, same integer part."
 msgctxt "Data|"
 msgid "1 decimal place between 0 and 9.9, same integer part."
-msgstr "1 десяткова позиція між 0 і 9, однакова ціла частина."
+msgstr "1 десяткова позиція між 0 і 9,9, однакова ціла частина."
 
 #: activities/comparator/resource/8/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "1 decimal place between 0 and 9."
 msgctxt "Data|"
 msgid "1 decimal place between 0 and 9.9."
-msgstr "1 десяткова позиція між 0 і 9."
+msgstr "1 десяткова позиція між 0 і 9,9."
 
 #: activities/comparator/resource/9/Data.qml:14
 msgctxt "Data|"
@@ -9224,122 +9215,82 @@ msgid "Select one pie and three-quarters of a pie."
 msgstr "Виберіть один пиріг і ще три четвертих пирога."
 
 #: activities/fractions_create/resource/10/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Specific questions with a pie."
 msgctxt "Data|"
 msgid "Specific questions with a square."
-msgstr "Особливі питання із пирогом."
+msgstr "Особливі питання із квадратом."
 
 #: activities/fractions_create/resource/10/Data.qml:18
 #: activities/fractions_create/resource/10/Data.qml:24
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid ""
-#| "Select as many parts as you can without taking more than half of the pie."
 msgctxt "Data|"
 msgid ""
 "Select as many parts as you can without taking more than half of the square."
 msgstr ""
 "Виберіть якомога більше частин пирога так, щоб вийшло не більше половини "
-"пирога."
+"квадрата."
 
 #: activities/fractions_create/resource/2/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Simplified fractions with a pie."
 msgctxt "Data|"
 msgid "Simplified fractions with a square."
-msgstr "Спрощені дроби на основі пирога."
+msgstr "Спрощені дроби на основі квадрата."
 
 #: activities/fractions_create/resource/2/Data.qml:18
 #: activities/fractions_create/resource/4/Data.qml:17
 #: activities/fractions_create/resource/4/Data.qml:23
 #: activities/fractions_create/resource/4/Data.qml:29
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select one half of the pie."
 msgctxt "Data|"
 msgid "Select one half of the square."
-msgstr "Виберіть половину пирога."
+msgstr "Виберіть половину квадрата."
 
 #: activities/fractions_create/resource/2/Data.qml:24
 #: activities/fractions_create/resource/4/Data.qml:35
 #: activities/fractions_create/resource/4/Data.qml:49
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select one-third of the pie."
 msgctxt "Data|"
 msgid "Select one-third of the square."
-msgstr "Виберіть одну третю пирога."
+msgstr "Виберіть одну третю квадрата."
 
 #: activities/fractions_create/resource/2/Data.qml:30
 #: activities/fractions_create/resource/4/Data.qml:41
 #: activities/fractions_create/resource/4/Data.qml:55
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select two-thirds of the pie."
 msgctxt "Data|"
 msgid "Select two-thirds of the square."
-msgstr "Виберіть дві третини пирога."
+msgstr "Виберіть дві третини квадрата."
 
 #: activities/fractions_create/resource/2/Data.qml:36
 #: activities/fractions_create/resource/4/Data.qml:61
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select one-quarter of the pie."
 msgctxt "Data|"
 msgid "Select one-quarter of the square."
-msgstr "Виберіть чверть пирога."
+msgstr "Виберіть чверть квадрата."
 
 #: activities/fractions_create/resource/2/Data.qml:42
 #: activities/fractions_create/resource/4/Data.qml:67
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select two-fifths of the pie."
 msgctxt "Data|"
 msgid "Select two-fifths of the square."
-msgstr "Виберіть дві п'ятих пирога."
+msgstr "Виберіть дві п'ятих квадрата."
 
 #: activities/fractions_create/resource/2/Data.qml:50
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select one pie and one-quarter of a pie."
 msgctxt "Data|"
 msgid "Select one square and one-quarter of a square."
-msgstr "Виберіть один пиріг і ще одну четверту пирога."
+msgstr "Виберіть один квадрат і ще одну четверту квадрата."
 
 #: activities/fractions_create/resource/2/Data.qml:56
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select one pie and two-fifths of a pie."
 msgctxt "Data|"
 msgid "Select one square and two-fifths of a square."
-msgstr "Виберіть один пиріг і ще дві п'ятих пирога."
+msgstr "Виберіть один квадрат і ще дві п'ятих квадрата."
 
 #: activities/fractions_create/resource/2/Data.qml:62
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select one pie and one-third of a pie."
 msgctxt "Data|"
 msgid "Select one square and one-third of a square."
-msgstr "Виберіть один пиріг і ще одну третю пирога."
+msgstr "Виберіть один квадрат і ще одну третю квадрата."
 
 #: activities/fractions_create/resource/2/Data.qml:68
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select one pie and one half of a pie."
 msgctxt "Data|"
 msgid "Select one square and one half of a square."
-msgstr "Виберіть один пиріг і ще половину пирога."
+msgstr "Виберіть один квадрат і ще половину квадрата."
 
 #: activities/fractions_create/resource/2/Data.qml:74
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select one pie and three-quarters of a pie."
 msgctxt "Data|"
 msgid "Select one square and three-quarters of a square."
-msgstr "Виберіть один пиріг і ще три четвертих пирога."
+msgstr "Виберіть один квадрат і ще три четвертих квадрата."
 
 #: activities/fractions_create/resource/3/Data.qml:9
 msgctxt "Data|"
@@ -9352,20 +9303,14 @@ msgid "Select three-fifths of the pie."
 msgstr "Виберіть три п'ятих пирога."
 
 #: activities/fractions_create/resource/4/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Non-simplified fractions with a pie."
 msgctxt "Data|"
 msgid "Non-simplified fractions with a square."
-msgstr "Неспрощені дроби на основі пирога."
+msgstr "Неспрощені дроби на основі квадрата."
 
 #: activities/fractions_create/resource/4/Data.qml:73
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select three-fifths of the pie."
 msgctxt "Data|"
 msgid "Select three-fifths of the square."
-msgstr "Виберіть три п'ятих пирога."
+msgstr "Виберіть три п'ятих квадрата."
 
 #: activities/fractions_create/resource/5/Data.qml:9
 msgctxt "Data|"
@@ -9419,85 +9364,55 @@ msgid "Select 1.75 pies."
 msgstr "Виберіть 1,75 пирога."
 
 #: activities/fractions_create/resource/6/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Decimal numbers with a pie."
 msgctxt "Data|"
 msgid "Decimal numbers with a square."
-msgstr "Десяткові числа на основі пирога."
+msgstr "Десяткові числа на основі квадрата."
 
 #: activities/fractions_create/resource/6/Data.qml:18
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select 0.5 pie."
 msgctxt "Data|"
 msgid "Select 0.5 square."
-msgstr "Виберіть 0,5 пирога."
+msgstr "Виберіть 0,5 квадрата."
 
 #: activities/fractions_create/resource/6/Data.qml:24
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select 0.25 pie."
 msgctxt "Data|"
 msgid "Select 0.25 square."
-msgstr "Виберіть 0,25 пирога."
+msgstr "Виберіть 0,25 квадрата."
 
 #: activities/fractions_create/resource/6/Data.qml:30
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select 0.4 pie."
 msgctxt "Data|"
 msgid "Select 0.4 square."
-msgstr "Виберіть 0,4 пирога."
+msgstr "Виберіть 0,4 квадрата."
 
 #: activities/fractions_create/resource/6/Data.qml:36
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select 0.75 pie."
 msgctxt "Data|"
 msgid "Select 0.75 square."
-msgstr "Виберіть 0,75 пирога."
+msgstr "Виберіть 0,75 квадрата."
 
 #: activities/fractions_create/resource/6/Data.qml:42
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select 0.8 pie."
 msgctxt "Data|"
 msgid "Select 0.8 square."
-msgstr "Виберіть 0,8 пирога."
+msgstr "Виберіть 0,8 квадрата."
 
 #: activities/fractions_create/resource/6/Data.qml:50
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select 1.25 pies."
 msgctxt "Data|"
 msgid "Select 1.25 squares."
-msgstr "Виберіть 1,25 пирога."
+msgstr "Виберіть 1,25 квадрата."
 
 #: activities/fractions_create/resource/6/Data.qml:56
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select 1.4 pies."
 msgctxt "Data|"
 msgid "Select 1.4 squares."
-msgstr "Виберіть 1,4 пирога."
+msgstr "Виберіть 1,4 квадрата."
 
 #: activities/fractions_create/resource/6/Data.qml:62
 #: activities/fractions_create/resource/6/Data.qml:68
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select 1.5 pies."
 msgctxt "Data|"
 msgid "Select 1.5 squares."
-msgstr "Виберіть 1,5 пирога."
+msgstr "Виберіть 1,5 квадрата."
 
 #: activities/fractions_create/resource/6/Data.qml:74
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select 1.75 pies."
 msgctxt "Data|"
 msgid "Select 1.75 squares."
-msgstr "Виберіть 1,75 пирога."
+msgstr "Виберіть 1,75 квадрата."
 
 #: activities/fractions_create/resource/7/Data.qml:9
 msgctxt "Data|"
@@ -9519,12 +9434,9 @@ msgid "Select %1% of the pie."
 msgstr "Виберіть %1% пирога."
 
 #: activities/fractions_create/resource/8/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Percentages with a pie."
 msgctxt "Data|"
 msgid "Percentages with a square."
-msgstr "Відсотки на основі пирога."
+msgstr "Відсотки на основі квадрата."
 
 #. Select %1 percent of the square.
 #: activities/fractions_create/resource/8/Data.qml:19
@@ -9533,12 +9445,10 @@ msgstr "Відсотки на основі пирога."
 #: activities/fractions_create/resource/8/Data.qml:42
 #: activities/fractions_create/resource/8/Data.qml:49
 #: activities/fractions_create/resource/8/Data.qml:56
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Select %1% of the pie."
+#, qt-format
 msgctxt "Data|"
 msgid "Select %1% of the square."
-msgstr "Виберіть %1% пирога."
+msgstr "Виберіть %1% квадрата."
 
 #: activities/fractions_create/resource/9/Data.qml:9
 msgctxt "Data|"
@@ -9572,12 +9482,9 @@ msgid "Find numerator (with a pie)."
 msgstr "Знайдіть чисельник (за допомогою пирога)."
 
 #: activities/fractions_find/resource/2/Data.qml:19
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find numerator (with a pie)."
 msgctxt "Data|"
 msgid "Find numerator (with a square)."
-msgstr "Знайдіть чисельник (за допомогою пирога)."
+msgstr "Знайдіть чисельник (за допомогою квадрата)."
 
 #: activities/fractions_find/resource/3/Data.qml:9
 msgctxt "Data|"
@@ -9585,12 +9492,9 @@ msgid "Find denominator (with a pie)."
 msgstr "Знайдіть знаменник (за допомогою пирога)"
 
 #: activities/fractions_find/resource/4/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find denominator (with a pie)."
 msgctxt "Data|"
 msgid "Find denominator (with a square)."
-msgstr "Знайдіть знаменник (за допомогою пирога)"
+msgstr "Знайдіть знаменник (за допомогою квадрата)"
 
 #: activities/fractions_find/resource/5/Data.qml:9
 msgctxt "Data|"
@@ -9598,12 +9502,9 @@ msgid "Find numerator and denominator (with a pie)."
 msgstr "Знайдіть чисельних і знаменник (за допомогою пирога)."
 
 #: activities/fractions_find/resource/6/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find numerator and denominator (with a pie)."
 msgctxt "Data|"
 msgid "Find numerator and denominator (with a square)."
-msgstr "Знайдіть чисельних і знаменник (за допомогою пирога)."
+msgstr "Знайдіть чисельних і знаменник (за допомогою квадрата)."
 
 #. Activity title
 #: activities/geo-country/ActivityInfo.qml:19
@@ -10839,12 +10740,9 @@ msgid "Suvalkija"
 msgstr "Сувалкія"
 
 #: activities/geo-country/resource/board/board18_0.qml:13
-#, fuzzy
-#| msgctxt "board18_0|"
-#| msgid "Autonomous communities of Spain"
 msgctxt "board18_0|"
 msgid "Autonomous communities or cities of Spain"
-msgstr "Автономні спільноти Іспанії"
+msgstr "Автономні спільноти або міста Іспанії"
 
 #. Autonomous communities of Spain: Andalusia
 #: activities/geo-country/resource/board/board18_0.qml:22

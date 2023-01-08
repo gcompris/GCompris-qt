@@ -729,13 +729,13 @@ msgstr "სიჩქარე"
 #: activities/algebra_by/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Multiplication of numbers"
-msgstr ""
+msgstr "რიცხვების გამრავლება"
 
 #. Help title
 #: activities/algebra_by/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Practice the multiplication operation."
-msgstr ""
+msgstr "რიცხვების გამრავლების მეცადინეობა."
 
 #. Help goal
 #: activities/algebra_by/ActivityInfo.qml:20
@@ -767,7 +767,7 @@ msgstr ""
 #: activities/smallnumbers2/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Digits: type your answer"
-msgstr ""
+msgstr "ციფრები: აკრიფეთ თქვენი პასუხი"
 
 #: activities/algebra_by/ActivityInfo.qml:27
 #: activities/algebra_div/ActivityInfo.qml:27
@@ -792,7 +792,7 @@ msgstr ""
 #: activities/roman_numerals/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid "Enter: validate your answer"
-msgstr ""
+msgstr "შეყვანა: გადაამოწმეთ თქვენი პასუხი"
 
 #: activities/algebra_by/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -848,7 +848,7 @@ msgstr "ისწავლეთ 9-ზე გამრავლების ც�
 #: activities/algebra_div/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Division of numbers"
-msgstr ""
+msgstr "რიცხვების გაყოფა"
 
 #. Help title
 #: activities/algebra_div/ActivityInfo.qml:17
@@ -866,7 +866,7 @@ msgstr ""
 #: activities/algebra_div/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid "Division of small numbers."
-msgstr ""
+msgstr "პატარა რიცხვების გაყოფა."
 
 #. Help manual
 #: activities/algebra_div/ActivityInfo.qml:24
@@ -931,7 +931,7 @@ msgstr "ისწავლეთ 9-ზე გაყოფის ცხრილ�
 #: activities/algebra_minus/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Subtraction of numbers"
-msgstr ""
+msgstr "რიცხვების გამოკლება"
 
 #. Help title
 #: activities/algebra_minus/ActivityInfo.qml:17
@@ -1197,7 +1197,7 @@ msgstr ""
 #: activities/alphabet-sequence/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Alphabet sequence"
-msgstr ""
+msgstr "ანბანის თანმიმდევრობა"
 
 #. Help title
 #: activities/alphabet-sequence/ActivityInfo.qml:17
@@ -1216,7 +1216,7 @@ msgstr "ანბანის თანმიმდევრობა."
 #: activities/alphabet-sequence/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid "Can decode letters."
-msgstr ""
+msgstr "ასოების დეკოდირების პრობლემა."
 
 #. Help manual
 #: activities/alphabet-sequence/ActivityInfo.qml:24
@@ -1233,7 +1233,7 @@ msgstr ""
 #: activities/planegame/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Arrows: move the helicopter"
-msgstr ""
+msgstr "ისრები: გადააადგილეთ ვერტმფრენი"
 
 #: activities/alphabet-sequence/AlphabetSequence.qml:18
 msgctxt "AlphabetSequence|"
@@ -1785,7 +1785,7 @@ msgstr ""
 #: activities/baby_keyboard/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Discover the keyboard."
-msgstr ""
+msgstr "აღმოაჩინეთ კლავიატურა."
 
 #. Help manual
 #: activities/baby_keyboard/ActivityInfo.qml:24
@@ -1804,7 +1804,7 @@ msgstr ""
 #: activities/baby_mouse/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Baby mouse"
-msgstr ""
+msgstr "წრუწუნა"
 
 #. Help title
 #: activities/baby_mouse/ActivityInfo.qml:16

@@ -8,14 +8,14 @@
 # Francesc Vilches Batet <francesc-vilches@gmail.com>, 2007, 2008.
 # Pau Iranzo <paugnu@gmail.com>, 2010.
 # Antoni Bella Pérez <antonibella5@yahoo.com>, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023.
-# Josep M. Ferrer <txemaq@gmail.com>, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022.
+# Josep M. Ferrer <txemaq@gmail.com>, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2014-12-25 01:10+0000\n"
-"PO-Revision-Date: 2023-01-01 12:03+0100\n"
-"Last-Translator: Antoni Bella <antonibella5@yahoo.com>\n"
+"PO-Revision-Date: 2023-01-07 10:48+0100\n"
+"Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
 "MIME-Version: 1.0\n"
@@ -23,7 +23,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Accelerator-Marker: &\n"
-"X-Generator: Kate 22.08.3\n"
+"X-Generator: Lokalize 20.12.0\n"
 "X-Qt-Contexts: true\n"
 
 #. Activity title
@@ -5499,12 +5499,9 @@ msgid "Numbers from 1 to 9."
 msgstr "Números des de l'1 fins al 9."
 
 #: activities/comparator/resource/10/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "2 decimal places between 0 and 99.99."
 msgctxt "Data|"
 msgid "3 decimal places between 0 and 999.999."
-msgstr "2 posicions decimals entre 0 i 99,99."
+msgstr "3 posicions decimals entre 0 i 999,999."
 
 #: activities/comparator/resource/2/Data.qml:14
 msgctxt "Data|"
@@ -5532,20 +5529,14 @@ msgid "Numbers from 1 to 1 billion."
 msgstr "Números des de l'1 fins a 1 miliard."
 
 #: activities/comparator/resource/7/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "1 decimal place between 0 and 9, same integer part."
 msgctxt "Data|"
 msgid "1 decimal place between 0 and 9.9, same integer part."
-msgstr "1 posició decimal entre 0 i 9, la mateixa part entera."
+msgstr "1 posició decimal entre 0 i 9,9, la mateixa part entera."
 
 #: activities/comparator/resource/8/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "1 decimal place between 0 and 9."
 msgctxt "Data|"
 msgid "1 decimal place between 0 and 9.9."
-msgstr "1 posició decimal entre 0 i 9."
+msgstr "1 posició decimal entre 0 i 9,9."
 
 #: activities/comparator/resource/9/Data.qml:14
 msgctxt "Data|"
@@ -9518,121 +9509,81 @@ msgid "Select one pie and three-quarters of a pie."
 msgstr "Selecciona un pastís i tres quarts d'un altre pastís."
 
 #: activities/fractions_create/resource/10/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Specific questions with a pie."
 msgctxt "Data|"
 msgid "Specific questions with a square."
-msgstr "Preguntes específiques amb un pastís."
+msgstr "Preguntes específiques amb un quadrat."
 
 #: activities/fractions_create/resource/10/Data.qml:18
 #: activities/fractions_create/resource/10/Data.qml:24
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid ""
-#| "Select as many parts as you can without taking more than half of the pie."
 msgctxt "Data|"
 msgid ""
 "Select as many parts as you can without taking more than half of the square."
 msgstr ""
-"Selecciona tantes parts com puguis sense agafar més de la meitat del pastís."
+"Selecciona tantes parts com puguis sense agafar més de la meitat del quadrat."
 
 #: activities/fractions_create/resource/2/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Simplified fractions with a pie."
 msgctxt "Data|"
 msgid "Simplified fractions with a square."
-msgstr "Fraccions simplificades amb un pastís."
+msgstr "Fraccions simplificades amb un quadrat."
 
 #: activities/fractions_create/resource/2/Data.qml:18
 #: activities/fractions_create/resource/4/Data.qml:17
 #: activities/fractions_create/resource/4/Data.qml:23
 #: activities/fractions_create/resource/4/Data.qml:29
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select one half of the pie."
 msgctxt "Data|"
 msgid "Select one half of the square."
-msgstr "Selecciona una meitat del pastís."
+msgstr "Selecciona una meitat del quadrat."
 
 #: activities/fractions_create/resource/2/Data.qml:24
 #: activities/fractions_create/resource/4/Data.qml:35
 #: activities/fractions_create/resource/4/Data.qml:49
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select one-third of the pie."
 msgctxt "Data|"
 msgid "Select one-third of the square."
-msgstr "Selecciona un terç del pastís."
+msgstr "Selecciona un terç del quadrat."
 
 #: activities/fractions_create/resource/2/Data.qml:30
 #: activities/fractions_create/resource/4/Data.qml:41
 #: activities/fractions_create/resource/4/Data.qml:55
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select two-thirds of the pie."
 msgctxt "Data|"
 msgid "Select two-thirds of the square."
-msgstr "Selecciona dos terços del pastís."
+msgstr "Selecciona dos terços del quadrat."
 
 #: activities/fractions_create/resource/2/Data.qml:36
 #: activities/fractions_create/resource/4/Data.qml:61
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select one-quarter of the pie."
 msgctxt "Data|"
 msgid "Select one-quarter of the square."
-msgstr "Selecciona un quart del pastís."
+msgstr "Selecciona un quart del quadrat."
 
 #: activities/fractions_create/resource/2/Data.qml:42
 #: activities/fractions_create/resource/4/Data.qml:67
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select two-fifths of the pie."
 msgctxt "Data|"
 msgid "Select two-fifths of the square."
-msgstr "Selecciona dos cinquens del pastís."
+msgstr "Selecciona dos cinquens del quadrat."
 
 #: activities/fractions_create/resource/2/Data.qml:50
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select one pie and one-quarter of a pie."
 msgctxt "Data|"
 msgid "Select one square and one-quarter of a square."
-msgstr "Selecciona un pastís i un quart d'un altre pastís."
+msgstr "Selecciona un quadrat i un quart d'un altre quadrat."
 
 #: activities/fractions_create/resource/2/Data.qml:56
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select one pie and two-fifths of a pie."
 msgctxt "Data|"
 msgid "Select one square and two-fifths of a square."
-msgstr "Selecciona un pastís i dos cinquens d'un altre pastís."
+msgstr "Selecciona un quadrat i dos cinquens d'un altre quadrat."
 
 #: activities/fractions_create/resource/2/Data.qml:62
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select one pie and one-third of a pie."
 msgctxt "Data|"
 msgid "Select one square and one-third of a square."
-msgstr "Selecciona un pastís i un terç d'un altre pastís."
+msgstr "Selecciona un quadrat i un terç d'un altre quadrat."
 
 #: activities/fractions_create/resource/2/Data.qml:68
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select one pie and one half of a pie."
 msgctxt "Data|"
 msgid "Select one square and one half of a square."
-msgstr "Selecciona un pastís i una meitat d'un altre pastís."
+msgstr "Selecciona un quadrat i una meitat d'un altre quadrat."
 
 #: activities/fractions_create/resource/2/Data.qml:74
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select one pie and three-quarters of a pie."
 msgctxt "Data|"
 msgid "Select one square and three-quarters of a square."
-msgstr "Selecciona un pastís i tres quarts d'un altre pastís."
+msgstr "Selecciona un quadrat i tres quarts d'un altre quadrat."
 
 #: activities/fractions_create/resource/3/Data.qml:9
 msgctxt "Data|"
@@ -9645,20 +9596,14 @@ msgid "Select three-fifths of the pie."
 msgstr "Selecciona tres cinquens del pastís."
 
 #: activities/fractions_create/resource/4/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Non-simplified fractions with a pie."
 msgctxt "Data|"
 msgid "Non-simplified fractions with a square."
-msgstr "Fraccions no simplificades amb un pastís."
+msgstr "Fraccions no simplificades amb un quadrat."
 
 #: activities/fractions_create/resource/4/Data.qml:73
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select three-fifths of the pie."
 msgctxt "Data|"
 msgid "Select three-fifths of the square."
-msgstr "Selecciona tres cinquens del pastís."
+msgstr "Selecciona tres cinquens del quadrat."
 
 #: activities/fractions_create/resource/5/Data.qml:9
 msgctxt "Data|"
@@ -9712,85 +9657,55 @@ msgid "Select 1.75 pies."
 msgstr "Selecciona 1,75 pastissos."
 
 #: activities/fractions_create/resource/6/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Decimal numbers with a pie."
 msgctxt "Data|"
 msgid "Decimal numbers with a square."
-msgstr "Nombres decimals amb un pastís."
+msgstr "Nombres decimals amb un quadrat."
 
 #: activities/fractions_create/resource/6/Data.qml:18
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select 0.5 pie."
 msgctxt "Data|"
 msgid "Select 0.5 square."
-msgstr "Selecciona 0,5 pastissos."
+msgstr "Selecciona 0,5 quadrats."
 
 #: activities/fractions_create/resource/6/Data.qml:24
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select 0.25 pie."
 msgctxt "Data|"
 msgid "Select 0.25 square."
-msgstr "Selecciona 0,25 pastissos."
+msgstr "Selecciona 0,25 quadrats."
 
 #: activities/fractions_create/resource/6/Data.qml:30
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select 0.4 pie."
 msgctxt "Data|"
 msgid "Select 0.4 square."
-msgstr "Selecciona 0,4 pastissos."
+msgstr "Selecciona 0,4 quadrats."
 
 #: activities/fractions_create/resource/6/Data.qml:36
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select 0.75 pie."
 msgctxt "Data|"
 msgid "Select 0.75 square."
-msgstr "Selecciona 0,75 pastissos."
+msgstr "Selecciona 0,75 quadrats."
 
 #: activities/fractions_create/resource/6/Data.qml:42
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select 0.8 pie."
 msgctxt "Data|"
 msgid "Select 0.8 square."
-msgstr "Selecciona 0,8 pastissos."
+msgstr "Selecciona 0,8 quadrats."
 
 #: activities/fractions_create/resource/6/Data.qml:50
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select 1.25 pies."
 msgctxt "Data|"
 msgid "Select 1.25 squares."
-msgstr "Selecciona 1,25 pastissos."
+msgstr "Selecciona 1,25 quadrats."
 
 #: activities/fractions_create/resource/6/Data.qml:56
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select 1.4 pies."
 msgctxt "Data|"
 msgid "Select 1.4 squares."
-msgstr "Selecciona 1,4 pastissos."
+msgstr "Selecciona 1,4 quadrats."
 
 #: activities/fractions_create/resource/6/Data.qml:62
 #: activities/fractions_create/resource/6/Data.qml:68
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select 1.5 pies."
 msgctxt "Data|"
 msgid "Select 1.5 squares."
-msgstr "Selecciona 1,5 pastissos."
+msgstr "Selecciona 1,5 quadrats."
 
 #: activities/fractions_create/resource/6/Data.qml:74
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select 1.75 pies."
 msgctxt "Data|"
 msgid "Select 1.75 squares."
-msgstr "Selecciona 1,75 pastissos."
+msgstr "Selecciona 1,75 quadrats."
 
 #: activities/fractions_create/resource/7/Data.qml:9
 msgctxt "Data|"
@@ -9812,12 +9727,9 @@ msgid "Select %1% of the pie."
 msgstr "Selecciona el %1% del pastís."
 
 #: activities/fractions_create/resource/8/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Percentages with a pie."
 msgctxt "Data|"
 msgid "Percentages with a square."
-msgstr "Tants per cent amb un pastís."
+msgstr "Tants per cent amb un quadrat."
 
 #. Select %1 percent of the square.
 #: activities/fractions_create/resource/8/Data.qml:19
@@ -9826,12 +9738,10 @@ msgstr "Tants per cent amb un pastís."
 #: activities/fractions_create/resource/8/Data.qml:42
 #: activities/fractions_create/resource/8/Data.qml:49
 #: activities/fractions_create/resource/8/Data.qml:56
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Select %1% of the pie."
+#, qt-format
 msgctxt "Data|"
 msgid "Select %1% of the square."
-msgstr "Selecciona el %1% del pastís."
+msgstr "Selecciona el %1% del quadrat."
 
 #: activities/fractions_create/resource/9/Data.qml:9
 msgctxt "Data|"
@@ -9865,12 +9775,9 @@ msgid "Find numerator (with a pie)."
 msgstr "Troba el numerador (amb un pastís)."
 
 #: activities/fractions_find/resource/2/Data.qml:19
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find numerator (with a pie)."
 msgctxt "Data|"
 msgid "Find numerator (with a square)."
-msgstr "Troba el numerador (amb un pastís)."
+msgstr "Troba el numerador (amb un quadrat)."
 
 #: activities/fractions_find/resource/3/Data.qml:9
 msgctxt "Data|"
@@ -9878,12 +9785,9 @@ msgid "Find denominator (with a pie)."
 msgstr "Troba el denominador (amb un pastís)."
 
 #: activities/fractions_find/resource/4/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find denominator (with a pie)."
 msgctxt "Data|"
 msgid "Find denominator (with a square)."
-msgstr "Troba el denominador (amb un pastís)."
+msgstr "Troba el denominador (amb un quadrat)."
 
 #: activities/fractions_find/resource/5/Data.qml:9
 msgctxt "Data|"
@@ -9891,12 +9795,9 @@ msgid "Find numerator and denominator (with a pie)."
 msgstr "Troba el numerador i el denominador (amb un pastís)."
 
 #: activities/fractions_find/resource/6/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find numerator and denominator (with a pie)."
 msgctxt "Data|"
 msgid "Find numerator and denominator (with a square)."
-msgstr "Troba el numerador i el denominador (amb un pastís)."
+msgstr "Troba el numerador i el denominador (amb un quadrat)."
 
 #. Activity title
 #: activities/geo-country/ActivityInfo.qml:19
@@ -11137,12 +11038,9 @@ msgid "Suvalkija"
 msgstr "Suvalkija"
 
 #: activities/geo-country/resource/board/board18_0.qml:13
-#, fuzzy
-#| msgctxt "board18_0|"
-#| msgid "Autonomous communities of Spain"
 msgctxt "board18_0|"
 msgid "Autonomous communities or cities of Spain"
-msgstr "Comunitats autònomes d'Espanya"
+msgstr "Comunitats autònomes o ciutats d'Espanya"
 
 #. Autonomous communities of Spain: Andalusia
 #: activities/geo-country/resource/board/board18_0.qml:22
@@ -26602,131 +26500,3 @@ msgstr "Omet"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Inicia"
-
-#~ msgctxt "Data|"
-#~ msgid "3 decimal places between 0 and 999."
-#~ msgstr "3 posicions decimals entre 0 i 999."
-
-#~ msgctxt "Data|"
-#~ msgid "Specific questions with a rectangle."
-#~ msgstr "Preguntes específiques amb un rectangle."
-
-#~ msgctxt "Data|"
-#~ msgid ""
-#~ "Select as many parts as you can without taking more than half of the "
-#~ "rectangle."
-#~ msgstr ""
-#~ "Selecciona tantes parts com puguis sense agafar més de la meitat del "
-#~ "rectangle."
-
-#~ msgctxt "Data|"
-#~ msgid "Simplified fractions with a rectangle."
-#~ msgstr "Fraccions simplificades amb un rectangle."
-
-#~ msgctxt "Data|"
-#~ msgid "Select one half of the rectangle."
-#~ msgstr "Selecciona una meitat del rectangle."
-
-#~ msgctxt "Data|"
-#~ msgid "Select one-third of the rectangle."
-#~ msgstr "Selecciona un terç del rectangle."
-
-#~ msgctxt "Data|"
-#~ msgid "Select two-thirds of the rectangle."
-#~ msgstr "Selecciona dos terços del rectangle."
-
-#~ msgctxt "Data|"
-#~ msgid "Select one-quarter of the rectangle."
-#~ msgstr "Selecciona un quart del rectangle."
-
-#~ msgctxt "Data|"
-#~ msgid "Select two-fifths of the rectangle."
-#~ msgstr "Selecciona dos cinquens del rectangle."
-
-#~ msgctxt "Data|"
-#~ msgid "Select one rectangle and one-quarter of a rectangle."
-#~ msgstr "Selecciona un rectangle i un quart d'un altre rectangle."
-
-#~ msgctxt "Data|"
-#~ msgid "Select one rectangle and two-fifths of a rectangle."
-#~ msgstr "Selecciona un rectangle i dos cinquens d'un altre rectangle."
-
-#~ msgctxt "Data|"
-#~ msgid "Select one rectangle and one-third of a rectangle."
-#~ msgstr "Selecciona un rectangle i un terç d'un altre rectangle."
-
-#~ msgctxt "Data|"
-#~ msgid "Select one rectangle and one half of a rectangle."
-#~ msgstr "Selecciona un rectangle i una meitat d'un altre rectangle."
-
-#~ msgctxt "Data|"
-#~ msgid "Select one rectangle and three-quarters of a rectangle."
-#~ msgstr "Selecciona un rectangle i tres quarts d'un altre rectangle."
-
-#~ msgctxt "Data|"
-#~ msgid "Non-simplified fractions with a rectangle."
-#~ msgstr "Fraccions no simplificades amb un rectangle."
-
-#~ msgctxt "Data|"
-#~ msgid "Select three-fifths of the rectangle."
-#~ msgstr "Selecciona tres cinquens del rectangle."
-
-#~ msgctxt "Data|"
-#~ msgid "Decimal numbers with a rectangle."
-#~ msgstr "Nombres decimals amb un rectangle."
-
-#~ msgctxt "Data|"
-#~ msgid "Select 0.5 rectangle."
-#~ msgstr "Selecciona 0,5 rectangles."
-
-#~ msgctxt "Data|"
-#~ msgid "Select 0.25 rectangle."
-#~ msgstr "Selecciona 0,25 rectangles."
-
-#~ msgctxt "Data|"
-#~ msgid "Select 0.4 rectangle."
-#~ msgstr "Selecciona 0,4 rectangles."
-
-#~ msgctxt "Data|"
-#~ msgid "Select 0.75 rectangle."
-#~ msgstr "Selecciona 0,75 rectangles."
-
-#~ msgctxt "Data|"
-#~ msgid "Select 0.8 rectangle."
-#~ msgstr "Selecciona 0,8 rectangles."
-
-#~ msgctxt "Data|"
-#~ msgid "Select 1.25 rectangles."
-#~ msgstr "Selecciona 1,25 rectangles."
-
-#~ msgctxt "Data|"
-#~ msgid "Select 1.4 rectangles."
-#~ msgstr "Selecciona 1,4 rectangles."
-
-#~ msgctxt "Data|"
-#~ msgid "Select 1.5 rectangles."
-#~ msgstr "Selecciona 1,5 rectangles."
-
-#~ msgctxt "Data|"
-#~ msgid "Select 1.75 rectangles."
-#~ msgstr "Selecciona 1,75 rectangles."
-
-#~ msgctxt "Data|"
-#~ msgid "Percentages with a rectangle."
-#~ msgstr "Tants per cent amb un rectangle."
-
-#~ msgctxt "Data|"
-#~ msgid "Select %1% of the rectangle."
-#~ msgstr "Selecciona el %1% del rectangle."
-
-#~ msgctxt "Data|"
-#~ msgid "Find denominator (with a rectangle)."
-#~ msgstr "Troba el denominador (amb un rectangle)."
-
-#~ msgctxt "Data|"
-#~ msgid "Find numerator (with a rectangle)."
-#~ msgstr "Troba el numerador (amb un rectangle)."
-
-#~ msgctxt "Data|"
-#~ msgid "Find numerator and denominator (with a rectangle)."
-#~ msgstr "Troba el numerador i el denominador (amb un rectangle)."
