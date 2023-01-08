@@ -1,10 +1,10 @@
-# Eloy Cuadra <ecuadra@eloihr.net>, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022.
+# Eloy Cuadra <ecuadra@eloihr.net>, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023.
 # Zohra Coudoin <zohra.coudoin@gcompris.net>, 2015.
 # Antoni Bella Pérez <antonibella5@yahoo.com>, 2018.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2022-12-17 18:49+0100\n"
+"PO-Revision-Date: 2023-01-07 22:43+0100\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Language: es\n"
 "X-Qt-Contexts: true\n"
-"X-Generator: Lokalize 22.12.0\n"
+"X-Generator: Lokalize 22.12.1\n"
 "X-Qt-Contexts: true\n"
 
 #. Activity title
@@ -9506,7 +9506,7 @@ msgctxt "Data|"
 msgid ""
 "Select as many parts as you can without taking more than half of the pie."
 msgstr ""
-"Selecciona tantas partes como puedas sin tomar más de la mitad de la tarta."
+"Selecciona tantas partes como puedas sin ocupar más de la mitad de la tarta."
 
 #. Activity title
 #: activities/fractions_find/ActivityInfo.qml:14
