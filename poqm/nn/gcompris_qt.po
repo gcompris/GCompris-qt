@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_qt\n"
-"PO-Revision-Date: 2023-01-06 22:43+0100\n"
+"PO-Revision-Date: 2023-01-08 11:34+0100\n"
 "Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
 "Language-Team: Norwegian Nynorsk <l10n-no@lister.huftis.org>\n"
 "Language: nn\n"
@@ -5217,10 +5217,11 @@ msgctxt "Data|"
 msgid "Numbers from 1 to 9."
 msgstr "Tal frå 1 til 9"
 
+# Avsluttande 0-desimalar vert viste. Skriv derfor 0,000 i staden for berre 0.
 #: activities/comparator/resource/10/Data.qml:14
 msgctxt "Data|"
 msgid "3 decimal places between 0 and 999.999."
-msgstr ""
+msgstr "Tal frå 0,000 til 999,999 – 3 desimalar"
 
 #: activities/comparator/resource/2/Data.qml:14
 msgctxt "Data|"
@@ -5250,18 +5251,17 @@ msgstr "Tal frå 1 til 1 000 000 000"
 #: activities/comparator/resource/7/Data.qml:14
 msgctxt "Data|"
 msgid "1 decimal place between 0 and 9.9, same integer part."
-msgstr ""
+msgstr "Tal frå 0,0 til 9,9 – 1 desimal, men same siffer før kommaet"
 
 #: activities/comparator/resource/8/Data.qml:14
 msgctxt "Data|"
 msgid "1 decimal place between 0 and 9.9."
-msgstr ""
+msgstr "Tal frå 0,0 til 9,9 – 1 desimal"
 
-# Her er 99,99 faktisk maks. Er altså inkonsistent med nivå for 1 og 3 desimalar (der maksen er 9,0, ikkje 9,9, og 999,000, ikkje 999,999).
 #: activities/comparator/resource/9/Data.qml:14
 msgctxt "Data|"
 msgid "2 decimal places between 0 and 99.99."
-msgstr "Tal frå 0 til 99,99 – 2 desimalar"
+msgstr "Tal frå 0,00 til 99,99 – 2 desimalar"
 
 #. Activity title
 #: activities/crane/ActivityInfo.qml:20
@@ -9070,78 +9070,79 @@ msgstr "Vel ei heil kake og tre firedelar."
 #: activities/fractions_create/resource/10/Data.qml:9
 msgctxt "Data|"
 msgid "Specific questions with a square."
-msgstr ""
+msgstr "Spesifikt spørsmål – kvadratdiagram"
 
 #: activities/fractions_create/resource/10/Data.qml:18
 #: activities/fractions_create/resource/10/Data.qml:24
 msgctxt "Data|"
 msgid ""
 "Select as many parts as you can without taking more than half of the square."
-msgstr ""
+msgstr "Vel så mange delar du kan utan å ta meir enn halvparten av kvadratet."
 
 #: activities/fractions_create/resource/2/Data.qml:9
 msgctxt "Data|"
 msgid "Simplified fractions with a square."
-msgstr ""
+msgstr "Brøker på forkorta form – kvadratdiagram"
 
+# Litt varierande korleis det formuleringane vert på norsk, men gjer det jo berre meir utfordrande.
 #: activities/fractions_create/resource/2/Data.qml:18
 #: activities/fractions_create/resource/4/Data.qml:17
 #: activities/fractions_create/resource/4/Data.qml:23
 #: activities/fractions_create/resource/4/Data.qml:29
 msgctxt "Data|"
 msgid "Select one half of the square."
-msgstr ""
+msgstr "Vel halvparten av kvadratet."
 
 #: activities/fractions_create/resource/2/Data.qml:24
 #: activities/fractions_create/resource/4/Data.qml:35
 #: activities/fractions_create/resource/4/Data.qml:49
 msgctxt "Data|"
 msgid "Select one-third of the square."
-msgstr ""
+msgstr "Vel éin tredel av kvadratet."
 
 #: activities/fractions_create/resource/2/Data.qml:30
 #: activities/fractions_create/resource/4/Data.qml:41
 #: activities/fractions_create/resource/4/Data.qml:55
 msgctxt "Data|"
 msgid "Select two-thirds of the square."
-msgstr ""
+msgstr "Vel to tredelar av kvadratet."
 
 #: activities/fractions_create/resource/2/Data.qml:36
 #: activities/fractions_create/resource/4/Data.qml:61
 msgctxt "Data|"
 msgid "Select one-quarter of the square."
-msgstr ""
+msgstr "Vel éin firedel av kvadratet."
 
 #: activities/fractions_create/resource/2/Data.qml:42
 #: activities/fractions_create/resource/4/Data.qml:67
 msgctxt "Data|"
 msgid "Select two-fifths of the square."
-msgstr ""
+msgstr "Vel to femdelar av kvadratet."
 
 #: activities/fractions_create/resource/2/Data.qml:50
 msgctxt "Data|"
 msgid "Select one square and one-quarter of a square."
-msgstr ""
+msgstr "Vel eitt kvadrat og éin firedel av eit kvadrat."
 
 #: activities/fractions_create/resource/2/Data.qml:56
 msgctxt "Data|"
 msgid "Select one square and two-fifths of a square."
-msgstr ""
+msgstr "Vel eitt kvadrat og to femdelar av eit kvadrat."
 
 #: activities/fractions_create/resource/2/Data.qml:62
 msgctxt "Data|"
 msgid "Select one square and one-third of a square."
-msgstr ""
+msgstr "Vel eitt kvadrat og éin tredel av eit kvadrat."
 
 #: activities/fractions_create/resource/2/Data.qml:68
 msgctxt "Data|"
 msgid "Select one square and one half of a square."
-msgstr ""
+msgstr "Vel eitt og eit halvt kvadrat."
 
 #: activities/fractions_create/resource/2/Data.qml:74
 msgctxt "Data|"
 msgid "Select one square and three-quarters of a square."
-msgstr ""
+msgstr "Vel eitt kvadrat og tre firedelar av eit kvadrat."
 
 #: activities/fractions_create/resource/3/Data.qml:9
 msgctxt "Data|"
@@ -9156,12 +9157,12 @@ msgstr "Vel tre femdelar av kaka."
 #: activities/fractions_create/resource/4/Data.qml:9
 msgctxt "Data|"
 msgid "Non-simplified fractions with a square."
-msgstr ""
+msgstr "Brøker på ikkje-forkorta form – kvadratdiagram"
 
 #: activities/fractions_create/resource/4/Data.qml:73
 msgctxt "Data|"
 msgid "Select three-fifths of the square."
-msgstr ""
+msgstr "Vel tre femdelar av kvadratet."
 
 #: activities/fractions_create/resource/5/Data.qml:9
 msgctxt "Data|"
@@ -9217,53 +9218,53 @@ msgstr "Vel 1,75 kaker."
 #: activities/fractions_create/resource/6/Data.qml:9
 msgctxt "Data|"
 msgid "Decimal numbers with a square."
-msgstr ""
+msgstr "Desimaltal – kvadratdiagram"
 
 #: activities/fractions_create/resource/6/Data.qml:18
 msgctxt "Data|"
 msgid "Select 0.5 square."
-msgstr ""
+msgstr "Vel 0,5 kvadrat."
 
 #: activities/fractions_create/resource/6/Data.qml:24
 msgctxt "Data|"
 msgid "Select 0.25 square."
-msgstr ""
+msgstr "Vel 0,25 kvadrat."
 
 #: activities/fractions_create/resource/6/Data.qml:30
 msgctxt "Data|"
 msgid "Select 0.4 square."
-msgstr ""
+msgstr "Vel 0,4 kvadrat."
 
 #: activities/fractions_create/resource/6/Data.qml:36
 msgctxt "Data|"
 msgid "Select 0.75 square."
-msgstr ""
+msgstr "Vel 0,75 kvadrat."
 
 #: activities/fractions_create/resource/6/Data.qml:42
 msgctxt "Data|"
 msgid "Select 0.8 square."
-msgstr ""
+msgstr "Vel 0,8 kvadrat."
 
 #: activities/fractions_create/resource/6/Data.qml:50
 msgctxt "Data|"
 msgid "Select 1.25 squares."
-msgstr ""
+msgstr "Vel 1,25 kvadrat."
 
 #: activities/fractions_create/resource/6/Data.qml:56
 msgctxt "Data|"
 msgid "Select 1.4 squares."
-msgstr ""
+msgstr "Vel 1,4 kvadrat."
 
 #: activities/fractions_create/resource/6/Data.qml:62
 #: activities/fractions_create/resource/6/Data.qml:68
 msgctxt "Data|"
 msgid "Select 1.5 squares."
-msgstr ""
+msgstr "Vel 1,5 kvadrat."
 
 #: activities/fractions_create/resource/6/Data.qml:74
 msgctxt "Data|"
 msgid "Select 1.75 squares."
-msgstr ""
+msgstr "Vel 1,75 kvadrat."
 
 #: activities/fractions_create/resource/7/Data.qml:9
 msgctxt "Data|"
@@ -9288,8 +9289,9 @@ msgstr "Vel %1 % av ei kake."
 #: activities/fractions_create/resource/8/Data.qml:9
 msgctxt "Data|"
 msgid "Percentages with a square."
-msgstr ""
+msgstr "Prosentar – kvadratdiagram"
 
+# Vert forvirrande viss fomruleringa er «av kaka», då det kan verta vist meir enn éi kake (eks. to dersom det er «150 % av ei kake»). Brukar derfor «av ei kake».
 #. Select %1 percent of the square.
 #: activities/fractions_create/resource/8/Data.qml:19
 #: activities/fractions_create/resource/8/Data.qml:26
@@ -9300,7 +9302,7 @@ msgstr ""
 #, qt-format
 msgctxt "Data|"
 msgid "Select %1% of the square."
-msgstr ""
+msgstr "Vel %1 % av eit kvadrat."
 
 #: activities/fractions_create/resource/9/Data.qml:9
 msgctxt "Data|"
@@ -9334,7 +9336,7 @@ msgstr "Finn teljaren – kakediagram"
 #: activities/fractions_find/resource/2/Data.qml:19
 msgctxt "Data|"
 msgid "Find numerator (with a square)."
-msgstr ""
+msgstr "Finn teljaren – kvadratdiagram"
 
 #: activities/fractions_find/resource/3/Data.qml:9
 msgctxt "Data|"
@@ -9344,7 +9346,7 @@ msgstr "Finn nemnaren – kakediagram"
 #: activities/fractions_find/resource/4/Data.qml:9
 msgctxt "Data|"
 msgid "Find denominator (with a square)."
-msgstr ""
+msgstr "Finn nemnaren – kvadratdiagram"
 
 #: activities/fractions_find/resource/5/Data.qml:9
 msgctxt "Data|"
@@ -9354,7 +9356,7 @@ msgstr "Finn teljaren og nemnaren – kakediagram"
 #: activities/fractions_find/resource/6/Data.qml:9
 msgctxt "Data|"
 msgid "Find numerator and denominator (with a square)."
-msgstr ""
+msgstr "Finn teljaren og nemnaren – kvadratdiagram"
 
 #. Activity title
 #: activities/geo-country/ActivityInfo.qml:19
@@ -10603,10 +10605,11 @@ msgctxt "board17_0|"
 msgid "Suvalkija"
 msgstr "Sūduva"
 
+# Sjå https://bugs.kde.org/show_bug.cgi?id=463938 for korfor eg har med «og byar».
 #: activities/geo-country/resource/board/board18_0.qml:13
 msgctxt "board18_0|"
 msgid "Autonomous communities or cities of Spain"
-msgstr ""
+msgstr "Autonome regionar og byar i Spania"
 
 # https://snl.no/Andaluc%C3%ADa
 #. Autonomous communities of Spain: Andalusia

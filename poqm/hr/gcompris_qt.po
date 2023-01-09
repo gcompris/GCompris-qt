@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2022-12-17 20:47+0100\n"
-"PO-Revision-Date: 2022-12-17 20:47+0100\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
 "Last-Translator: Igor Dobrača <igor.dobraca@gmail.com>\n"
 "Language-Team: Croatian\n"
 "Language: hr\n"
@@ -1906,7 +1906,7 @@ msgstr "Jednostavna aktivnost za otkrivanje tipkovnice."
 #: activities/baby_keyboard/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Discover the keyboard."
-msgstr "Otkrijte tipkovnicu."
+msgstr "Otkrij tipkovnicu."
 
 #. Help manual
 #: activities/baby_keyboard/ActivityInfo.qml:24
@@ -2150,7 +2150,7 @@ msgstr "Podudarajući predmeti"
 #: activities/babymatch/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Drag and drop the items to match them."
-msgstr "Povuci i ispusti stavke kako bi ih uskladio."
+msgstr "Povuci i ispusti predmete da ih upariš."
 
 #. Help goal
 #: activities/babymatch/ActivityInfo.qml:23
@@ -2201,13 +2201,12 @@ msgstr "Povuci i ispusti oblike na njihove ciljeve."
 msgctxt "ActivityInfo|"
 msgid ""
 "Complete the puzzle by dragging each piece on the side to the matching spot."
-msgstr ""
-"Dovrši slagalicu povlačenjem svakog dijela sa strane na odgovarajuće mjesto."
+msgstr "Dovrši slagalicu povlačenjem svakog predmeta na odgovarajuće mjesto."
 
 #: activities/babyshapes/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid "The dog is provided by Andre Connes and released under the GPL"
-msgstr "Psa je omogućio Andre Connes i objavljen je pod GPL"
+msgstr "Psa je omogućio Andre Connes i objavljen je pod licencom GPL"
 
 #: activities/babyshapes/resource/board/board1_0.qml:14
 msgctxt "board1_0|"
@@ -2531,14 +2530,15 @@ msgid ""
 "same time."
 msgstr ""
 "Istovremeno pritisni lijevu i desnu tipku sa strelicama kako bi lopta išla u "
-"ravnoj liniji. Na ekranu osjetljivom na dodir moraš dodirnuti dvije ruke u "
-"isto vrijeme."
+"ravnoj liniji. Na ekranu osjetljivom na dodir moraš dodirnuti sličice dvije "
+"ruke u isto vrijeme."
 
 #: activities/ballcatch/Ballcatch.qml:220
 msgctxt "Ballcatch|"
 msgid ""
 "Tap both hands at the same time, to make the ball go in a straight line."
-msgstr "Lupi s obje ruke u isto vrijeme kako bi lopta išla u ravnoj liniji."
+msgstr ""
+"Klikni na obje ruke u isto vrijeme kako bi lopta išla ravno prema Tuxu."
 
 #: activities/ballcatch/Ballcatch.qml:222
 msgctxt "Ballcatch|"
@@ -2754,7 +2754,7 @@ msgstr "0 do 255 s"
 #: activities/braille_alphabets/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Discover the braille system"
-msgstr "Otkrijte Brailleov sustav"
+msgstr "Otkrij Brailleov sustav"
 
 #. Help title
 #: activities/braille_alphabets/ActivityInfo.qml:17
@@ -3472,7 +3472,8 @@ msgctxt "category_colors|"
 msgid ""
 "Place the objects matching PINK color to the right and others to the left"
 msgstr ""
-"Postavi objekte koji odgovaraju ROZA boji na desnu, a ostale na lijevu stranu"
+"Postavi objekte koji odgovaraju RUŽIČASTOJ boji na desnu, a ostale na lijevu "
+"stranu"
 
 #: activities/categorization/resource/board/category_colors.qml:51
 msgctxt "category_colors|"
@@ -5159,7 +5160,7 @@ msgstr "Pronađi ljubičastu patku"
 #: activities/colors/colors.js:117
 msgctxt "colors|"
 msgid "Find the pink duck"
-msgstr "Pronađi roza patku"
+msgstr "Pronađi ružičastu patku"
 
 #: activities/colors/FindIt.qml:235
 msgctxt "FindIt|"
@@ -5173,7 +5174,7 @@ msgstr ""
 #: activities/colors/FindIt.qml:236
 msgctxt "FindIt|"
 msgid "Quit"
-msgstr "Napusti"
+msgstr "Zatvori"
 
 #: activities/colors/FindIt.qml:237
 msgctxt "FindIt|"
@@ -6301,7 +6302,7 @@ msgstr "Nacrtaj slova spajajući točkice pravilnim redoslijedom."
 #: activities/drawnumbers/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Draw numbers"
-msgstr "Izvlačenje brojeva"
+msgstr "Crtanje brojeva"
 
 #. Help title
 #: activities/drawnumbers/ActivityInfo.qml:17
@@ -6605,7 +6606,7 @@ msgstr ""
 #: activities/explore_farm_animals/ExploreLevels.qml:304
 msgctxt "ExploreLevels|"
 msgid "Quit"
-msgstr "Završi"
+msgstr "Zatvori"
 
 #: activities/explore_farm_animals/ExploreLevels.qml:305
 msgctxt "ExploreLevels|"
@@ -8481,7 +8482,7 @@ msgstr "Klikni na mjesto koje odgovara tekstu."
 #: activities/family/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Family"
-msgstr "Family"
+msgstr "Obitelj"
 
 #. Help title
 #: activities/family/ActivityInfo.qml:17
@@ -12586,7 +12587,7 @@ msgstr "Azija"
 #: activities/geography/resource/board/board1_0.qml:45
 msgctxt "board1_0|"
 msgid "Antarctica"
-msgstr "Antarktik"
+msgstr "Antarktika"
 
 #: activities/geography/resource/board/board1_0.qml:52
 msgctxt "board1_0|"
@@ -13081,7 +13082,7 @@ msgstr "Kenija"
 #: activities/geography/resource/board/board7_0.qml:150
 msgctxt "board7_0|"
 msgid "Ivory Coast"
-msgstr "Obala Slonovače"
+msgstr "Obala Bjelokosti"
 
 #: activities/geography/resource/board/board7_0.qml:157
 msgctxt "board7_0|"
@@ -13191,7 +13192,7 @@ msgstr "Tanzanija"
 #: activities/geography/resource/board/board8_0.qml:52
 msgctxt "board8_0|"
 msgid "Eswatini"
-msgstr "Eswatini"
+msgstr "Svazi"
 
 #: activities/geography/resource/board/board8_0.qml:59
 msgctxt "board8_0|"
@@ -13405,7 +13406,7 @@ msgstr "Povezanost slova između ekrana i tipkovnice."
 #: activities/gnumch-equality/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Gnumch equality"
-msgstr "Grickanje jednakosti"
+msgstr "Grickalica jednakosti"
 
 #. Help title
 #. ----------
@@ -13905,7 +13906,7 @@ msgstr "Nije odabrano"
 #: activities/guesscount/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Guesscount"
-msgstr "Guesscount"
+msgstr "Pogodi izraz"
 
 #. Help title
 #: activities/guesscount/ActivityInfo.qml:21
@@ -15729,7 +15730,7 @@ msgstr ""
 #: activities/leftright/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Find your left and right hands"
-msgstr "Pronađi svoju lijevu i desnu ruku"
+msgstr "Odaberi svoju lijevu i desnu ruku"
 
 #. Help title
 #: activities/leftright/ActivityInfo.qml:17
@@ -16467,7 +16468,7 @@ msgstr ""
 #: activities/melody/Melody.qml:286
 msgctxt "Melody|"
 msgid "Quit"
-msgstr "Izlaz"
+msgstr "Zatvori"
 
 #: activities/melody/Melody.qml:287
 msgctxt "Melody|"
@@ -17369,7 +17370,7 @@ msgstr "Okreni karte kako bi spojio množenje s njegovim rezultatom."
 #: activities/memory-sound-tux/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Audio memory game against Tux"
-msgstr "Igra audio memorije protiv Tuxa"
+msgstr "Igra audio pamćenja protiv Tuxa"
 
 #. Help title
 #: activities/memory-sound-tux/ActivityInfo.qml:17
@@ -17382,7 +17383,7 @@ msgstr "Okreni karte kako bi otkrio zvučne parove, igrajući protiv Tuxa."
 #: activities/memory-sound/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Train your audio memory."
-msgstr "Treniraj svoju audio memoriju."
+msgstr "Treniraj svoje audio pamćenje."
 
 #. Help manual
 #: activities/memory-sound-tux/ActivityInfo.qml:24
@@ -17405,7 +17406,7 @@ msgstr ""
 #: activities/memory-sound/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Audio memory game"
-msgstr "Audio igra memorije"
+msgstr "Igra audio pamćenja"
 
 #. Help title
 #: activities/memory-sound/ActivityInfo.qml:17
@@ -18063,8 +18064,8 @@ msgid ""
 "Put your favorite activities here by clicking on the sun at the top right of "
 "that activity."
 msgstr ""
-"Ovdje možeš postaviti omiljene aktivnosti tako da klikneš na simbol sunca u "
-"gornjem desnom kutu navedene aktivnosti."
+"Ovdje postavi tvoje omiljene aktivnosti klikom na simbol sunca u gornjem "
+"desnom kutu željene aktivnosti."
 
 #: activities/menu/Menu.qml:774
 msgctxt "Menu|"
@@ -18095,7 +18096,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Learn to use the mousewheel or the zoom / pinch gesture to zoom in and out."
 msgstr ""
-"Nauči koristiti kotačić miša ili gestu zumiranja/štipanja za povećavanje i "
+"Nauči koristiti kotačić miša ili gestu zumiranja za povećavanje i "
 "smanjivanje."
 
 #. Help prerequisite
@@ -18138,8 +18139,8 @@ msgid ""
 "of already collected nuggets and the total number of nuggets to collect in "
 "this level."
 msgstr ""
-"Vagon a u donjem desnom kutu zaslona prikazuje broj već prikupljenih grumena "
-"i ukupan broj grumena koje treba sakupiti na ovoj razini."
+"Vagon u donjem desnom kutu zaslona prikazuje broj prikupljenih grumena i "
+"ukupan broj grumena koje treba sakupiti na ovoj razini."
 
 #: activities/mining/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
@@ -18417,7 +18418,7 @@ msgstr ""
 #: activities/money_back_cents/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Give Tux his change, including cents"
-msgstr "Vrati Tuxu njegov ostatak, uključujući i cente"
+msgstr "Vrati Tuxu ostatak i u centima"
 
 #. Activity title
 #: activities/money_cents/ActivityInfo.qml:15
@@ -18848,7 +18849,7 @@ msgstr ""
 #: activities/note_names/NoteNames.qml:454
 msgctxt "NoteNames|"
 msgid "Quit"
-msgstr "Napusti"
+msgstr "Zatvori"
 
 #: activities/note_names/NoteNames.qml:455
 msgctxt "NoteNames|"
@@ -19658,7 +19659,7 @@ msgstr "%1x%2 mreža."
 #: activities/path_decoding_relative/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Path decoding relative"
-msgstr "Dekodiranje puta relativno"
+msgstr "Dekodiranje puta (relativno)"
 
 #: activities/path_decoding_relative/ActivityInfo.qml:24
 #: activities/path_encoding_relative/ActivityInfo.qml:24
@@ -19720,7 +19721,7 @@ msgstr "Pogreške: %1"
 #: activities/path_encoding_relative/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Path encoding relative"
-msgstr "Path encoding relative"
+msgstr "Kodiranje putanje (relativno)"
 
 #. Activity title
 #: activities/penalty/ActivityInfo.qml:15
@@ -20301,7 +20302,7 @@ msgstr ""
 #: activities/piano_composition/Piano_composition.qml:549
 msgctxt "Piano_composition|"
 msgid "Quit"
-msgstr "Napusti"
+msgstr "Zatvori"
 
 #: activities/piano_composition/Piano_composition.qml:550
 msgctxt "Piano_composition|"
@@ -20565,7 +20566,7 @@ msgstr ""
 #: activities/play_piano/PlayPiano.qml:280
 msgctxt "PlayPiano|"
 msgid "Quit"
-msgstr "Napusti"
+msgstr "Zatvori"
 
 #: activities/play_piano/PlayPiano.qml:281
 msgctxt "PlayPiano|"
@@ -20677,7 +20678,7 @@ msgstr ""
 #: activities/play_rhythm/PlayRhythm.qml:360
 msgctxt "PlayRhythm|"
 msgid "Quit"
-msgstr "Napusti"
+msgstr "Zatvori"
 
 #: activities/play_rhythm/PlayRhythm.qml:361
 msgctxt "PlayRhythm|"
@@ -24337,7 +24338,7 @@ msgstr "Provjeri izbornik pomoći za kontrolu tipkovnice."
 #: activities/sudoku/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Sudoku, place unique symbols in a grid"
-msgstr "Sudoku, postavi jedinstvene simbole u mrežu"
+msgstr "Sudoku"
 
 #. Help title
 #: activities/sudoku/ActivityInfo.qml:17
@@ -25328,7 +25329,7 @@ msgstr "Preuzimanje u tijeku.<br/>'Prekinite' ga da odmah napustite."
 #: core/core.js:222
 msgctxt "core|"
 msgid "Quit?"
-msgstr "Izlaz?"
+msgstr "Zatvori?"
 
 #: core/core.js:224
 msgctxt "core|"
@@ -25494,7 +25495,7 @@ msgstr "<b>Veliko hvala razvojnom timu:</b> %1"
 #, qt-format
 msgctxt "DialogAbout|"
 msgid "<b>A big thanks to the translation team:</b> %1"
-msgstr "<b>Veliko hvala prevoditeljskom timu:</b> %1"
+msgstr "<b>Veliko hvala prevoditelju:</b> %1"
 
 #: core/DialogActivityConfig.qml:84
 #, qt-format
@@ -25556,7 +25557,7 @@ msgstr "Cilj:"
 #: core/DialogHelp.qml:63
 msgctxt "DialogHelp|"
 msgid "Manual:"
-msgstr "Priručnik:"
+msgstr "Uputa:"
 
 #: core/DialogHelp.qml:67
 msgctxt "DialogHelp|"
@@ -25566,7 +25567,7 @@ msgstr "Zahvala:"
 #: core/DialogHelp.qml:71
 msgctxt "DialogHelp|"
 msgid "Section:"
-msgstr "Odjeljak:"
+msgstr "Kategorija:"
 
 #. "Dots" is for representation of the points in a domino in the form of dots
 #: core/Domino.qml:57

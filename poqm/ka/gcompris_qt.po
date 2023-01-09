@@ -8150,50 +8150,35 @@ msgstr ""
 #: activities/fractions_create/resource/4/Data.qml:17
 #: activities/fractions_create/resource/4/Data.qml:23
 #: activities/fractions_create/resource/4/Data.qml:29
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select %1% of the pie."
 msgctxt "Data|"
 msgid "Select one half of the square."
-msgstr "აირჩიეთ ნამცხვრის %1%."
+msgstr "აირჩიეთ ოთხკუთხედის ნახევარი."
 
 #: activities/fractions_create/resource/2/Data.qml:24
 #: activities/fractions_create/resource/4/Data.qml:35
 #: activities/fractions_create/resource/4/Data.qml:49
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select %1% of the pie."
 msgctxt "Data|"
 msgid "Select one-third of the square."
-msgstr "აირჩიეთ ნამცხვრის %1%."
+msgstr "აირჩიეთ ოთხკუთხედის ერთი მესამედი."
 
 #: activities/fractions_create/resource/2/Data.qml:30
 #: activities/fractions_create/resource/4/Data.qml:41
 #: activities/fractions_create/resource/4/Data.qml:55
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select %1% of the pie."
 msgctxt "Data|"
 msgid "Select two-thirds of the square."
-msgstr "აირჩიეთ ნამცხვრის %1%."
+msgstr "აირჩიეთ ოთხკუთხედის ორი მესამედი."
 
 #: activities/fractions_create/resource/2/Data.qml:36
 #: activities/fractions_create/resource/4/Data.qml:61
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select %1% of the pie."
 msgctxt "Data|"
 msgid "Select one-quarter of the square."
-msgstr "აირჩიეთ ნამცხვრის %1%."
+msgstr "აირჩიეთ ოთხკუთხედის ერთი მეოთხედი."
 
 #: activities/fractions_create/resource/2/Data.qml:42
 #: activities/fractions_create/resource/4/Data.qml:67
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select %1% of the pie."
 msgctxt "Data|"
 msgid "Select two-fifths of the square."
-msgstr "აირჩიეთ ნამცხვრის %1%."
+msgstr "აირჩიეთ ოთხკუთხედის ორი მეხუთედი."
 
 #: activities/fractions_create/resource/2/Data.qml:50
 msgctxt "Data|"
@@ -8236,12 +8221,9 @@ msgid "Non-simplified fractions with a square."
 msgstr ""
 
 #: activities/fractions_create/resource/4/Data.qml:73
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select %1% of the pie."
 msgctxt "Data|"
 msgid "Select three-fifths of the square."
-msgstr "აირჩიეთ ნამცხვრის %1%."
+msgstr "აირჩიეთ ოთხკუთხედის სამი მეხუთედი."
 
 #: activities/fractions_create/resource/5/Data.qml:9
 msgctxt "Data|"
@@ -8300,77 +8282,50 @@ msgid "Decimal numbers with a square."
 msgstr ""
 
 #: activities/fractions_create/resource/6/Data.qml:18
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select 0.5 pie."
 msgctxt "Data|"
 msgid "Select 0.5 square."
-msgstr "აირჩიეთ 0.5 ნამცხვარი."
+msgstr "აირჩიეთ 0.5 ოთხკუთხედი."
 
 #: activities/fractions_create/resource/6/Data.qml:24
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select 0.5 pie."
 msgctxt "Data|"
 msgid "Select 0.25 square."
-msgstr "აირჩიეთ 0.5 ნამცხვარი."
+msgstr "აირჩიეთ 0.25 ოთხკუთხედი."
 
 #: activities/fractions_create/resource/6/Data.qml:30
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select 0.4 pie."
 msgctxt "Data|"
 msgid "Select 0.4 square."
-msgstr "აირჩიეთ 0.4 ნამცხვარი."
+msgstr "აირჩიეთ 0.4 ოთხკუთხედი."
 
 #: activities/fractions_create/resource/6/Data.qml:36
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select 0.5 pie."
 msgctxt "Data|"
 msgid "Select 0.75 square."
-msgstr "აირჩიეთ 0.5 ნამცხვარი."
+msgstr "აირჩიეთ 0.75 ოთხკუთხედი."
 
 #: activities/fractions_create/resource/6/Data.qml:42
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select 0.8 pie."
 msgctxt "Data|"
 msgid "Select 0.8 square."
-msgstr "აირჩიეთ 0.8 ნამცხვარი."
+msgstr "აირჩიეთ 0.8 ოთხკუთხედი."
 
 #: activities/fractions_create/resource/6/Data.qml:50
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select 0.5 pie."
 msgctxt "Data|"
 msgid "Select 1.25 squares."
-msgstr "აირჩიეთ 0.5 ნამცხვარი."
+msgstr "აირჩიეთ 1.25 ოთხკუთხედი."
 
 #: activities/fractions_create/resource/6/Data.qml:56
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select 0.4 pie."
 msgctxt "Data|"
 msgid "Select 1.4 squares."
-msgstr "აირჩიეთ 0.4 ნამცხვარი."
+msgstr "აირჩიეთ 1.4 ოთხკუთხედი."
 
 #: activities/fractions_create/resource/6/Data.qml:62
 #: activities/fractions_create/resource/6/Data.qml:68
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select 0.5 pie."
 msgctxt "Data|"
 msgid "Select 1.5 squares."
-msgstr "აირჩიეთ 0.5 ნამცხვარი."
+msgstr "აირჩიეთ 1.5 ოთხკუთხედი."
 
 #: activities/fractions_create/resource/6/Data.qml:74
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select 0.5 pie."
 msgctxt "Data|"
 msgid "Select 1.75 squares."
-msgstr "აირჩიეთ 0.5 ნამცხვარი."
+msgstr "აირჩიეთ 1.75 ოთხკუთხედი."
 
 #: activities/fractions_create/resource/7/Data.qml:9
 msgctxt "Data|"
@@ -8403,12 +8358,10 @@ msgstr ""
 #: activities/fractions_create/resource/8/Data.qml:42
 #: activities/fractions_create/resource/8/Data.qml:49
 #: activities/fractions_create/resource/8/Data.qml:56
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Select %1% of the pie."
+#, qt-format
 msgctxt "Data|"
 msgid "Select %1% of the square."
-msgstr "აირჩიეთ ნამცხვრის %1%."
+msgstr "აირჩიეთ ოთხკუთხედის %1."
 
 #: activities/fractions_create/resource/9/Data.qml:9
 msgctxt "Data|"
@@ -23775,7 +23728,7 @@ msgstr ""
 #: core/main.qml:233
 msgctxt "main|"
 msgid "Voices for your language"
-msgstr ""
+msgstr "ხმები თქვენი ენისთვის"
 
 #: core/main.qml:234
 msgctxt "main|"
@@ -23785,7 +23738,7 @@ msgstr ""
 #: core/main.qml:235
 msgctxt "main|"
 msgid "Background music"
-msgstr ""
+msgstr "ფონის მუსიკა"
 
 #: core/main.qml:240
 msgctxt "main|"
@@ -23805,7 +23758,7 @@ msgstr "არა"
 #: core/main.qml:280
 msgctxt "main|"
 msgid "Welcome to GCompris!"
-msgstr ""
+msgstr "მოგესალმებათ GCompris!"
 
 #: core/main.qml:281
 msgctxt "main|"
@@ -23839,7 +23792,7 @@ msgstr ""
 #: core/ReadyButton.qml:67
 msgctxt "ReadyButton|"
 msgid "I am Ready"
-msgstr ""
+msgstr "მზად ვარ"
 
 #: core/Tutorial.qml:175
 msgctxt "Tutorial|"
