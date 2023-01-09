@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2022-12-17 20:47+0100\n"
-"PO-Revision-Date: 2022-12-17 20:47+0100\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
 "Last-Translator: Igor Dobrača <igor.dobraca@gmail.com>\n"
 "Language-Team: Croatian\n"
 "Language: hr\n"
@@ -1906,7 +1906,7 @@ msgstr "Jednostavna aktivnost za otkrivanje tipkovnice."
 #: activities/baby_keyboard/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Discover the keyboard."
-msgstr "Otkrijte tipkovnicu."
+msgstr "Otkrij tipkovnicu."
 
 #. Help manual
 #: activities/baby_keyboard/ActivityInfo.qml:24
@@ -2150,7 +2150,7 @@ msgstr "Podudarajući predmeti"
 #: activities/babymatch/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Drag and drop the items to match them."
-msgstr "Povuci i ispusti stavke kako bi ih uskladio."
+msgstr "Povuci i ispusti predmete da ih upariš."
 
 #. Help goal
 #: activities/babymatch/ActivityInfo.qml:23
@@ -2201,13 +2201,12 @@ msgstr "Povuci i ispusti oblike na njihove ciljeve."
 msgctxt "ActivityInfo|"
 msgid ""
 "Complete the puzzle by dragging each piece on the side to the matching spot."
-msgstr ""
-"Dovrši slagalicu povlačenjem svakog dijela sa strane na odgovarajuće mjesto."
+msgstr "Dovrši slagalicu povlačenjem svakog predmeta na odgovarajuće mjesto."
 
 #: activities/babyshapes/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid "The dog is provided by Andre Connes and released under the GPL"
-msgstr "Psa je omogućio Andre Connes i objavljen je pod GPL"
+msgstr "Psa je omogućio Andre Connes i objavljen je pod licencom GPL"
 
 #: activities/babyshapes/resource/board/board1_0.qml:14
 msgctxt "board1_0|"
@@ -2531,14 +2530,15 @@ msgid ""
 "same time."
 msgstr ""
 "Istovremeno pritisni lijevu i desnu tipku sa strelicama kako bi lopta išla u "
-"ravnoj liniji. Na ekranu osjetljivom na dodir moraš dodirnuti dvije ruke u "
-"isto vrijeme."
+"ravnoj liniji. Na ekranu osjetljivom na dodir moraš dodirnuti sličice dvije "
+"ruke u isto vrijeme."
 
 #: activities/ballcatch/Ballcatch.qml:220
 msgctxt "Ballcatch|"
 msgid ""
 "Tap both hands at the same time, to make the ball go in a straight line."
-msgstr "Lupi s obje ruke u isto vrijeme kako bi lopta išla u ravnoj liniji."
+msgstr ""
+"Klikni na obje ruke u isto vrijeme kako bi lopta išla ravno prema Tuxu."
 
 #: activities/ballcatch/Ballcatch.qml:222
 msgctxt "Ballcatch|"
@@ -2754,7 +2754,7 @@ msgstr "0 do 255 s"
 #: activities/braille_alphabets/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Discover the braille system"
-msgstr "Otkrijte Brailleov sustav"
+msgstr "Otkrij Brailleov sustav"
 
 #. Help title
 #: activities/braille_alphabets/ActivityInfo.qml:17
@@ -3472,7 +3472,8 @@ msgctxt "category_colors|"
 msgid ""
 "Place the objects matching PINK color to the right and others to the left"
 msgstr ""
-"Postavi objekte koji odgovaraju ROZA boji na desnu, a ostale na lijevu stranu"
+"Postavi objekte koji odgovaraju RUŽIČASTOJ boji na desnu, a ostale na lijevu "
+"stranu"
 
 #: activities/categorization/resource/board/category_colors.qml:51
 msgctxt "category_colors|"
@@ -5159,7 +5160,7 @@ msgstr "Pronađi ljubičastu patku"
 #: activities/colors/colors.js:117
 msgctxt "colors|"
 msgid "Find the pink duck"
-msgstr "Pronađi roza patku"
+msgstr "Pronađi ružičastu patku"
 
 #: activities/colors/FindIt.qml:235
 msgctxt "FindIt|"
@@ -5173,7 +5174,7 @@ msgstr ""
 #: activities/colors/FindIt.qml:236
 msgctxt "FindIt|"
 msgid "Quit"
-msgstr "Napusti"
+msgstr "Zatvori"
 
 #: activities/colors/FindIt.qml:237
 msgctxt "FindIt|"
@@ -5251,9 +5252,12 @@ msgid "Numbers from 1 to 9."
 msgstr "Brojevi od 1 do 9."
 
 #: activities/comparator/resource/10/Data.qml:14
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "2 decimal places between 0 and 99.99."
 msgctxt "Data|"
-msgid "3 decimal places between 0 and 999."
-msgstr "3 decimalna mjesta između 0 i 999."
+msgid "3 decimal places between 0 and 999.999."
+msgstr "2 decimalna mjesta između 0 i 99,99."
 
 #: activities/comparator/resource/2/Data.qml:14
 msgctxt "Data|"
@@ -5281,13 +5285,19 @@ msgid "Numbers from 1 to 1 billion."
 msgstr "Brojevi od 1 do 1 milijarde."
 
 #: activities/comparator/resource/7/Data.qml:14
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "1 decimal place between 0 and 9, same integer part."
 msgctxt "Data|"
-msgid "1 decimal place between 0 and 9, same integer part."
+msgid "1 decimal place between 0 and 9.9, same integer part."
 msgstr "1 decimalno mjesto između 0 i 9, isti cijeli broj."
 
 #: activities/comparator/resource/8/Data.qml:14
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "1 decimal place between 0 and 9."
 msgctxt "Data|"
-msgid "1 decimal place between 0 and 9."
+msgid "1 decimal place between 0 and 9.9."
 msgstr "1 decimalno mjesto između 0 i 9."
 
 #: activities/comparator/resource/9/Data.qml:14
@@ -6292,7 +6302,7 @@ msgstr "Nacrtaj slova spajajući točkice pravilnim redoslijedom."
 #: activities/drawnumbers/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Draw numbers"
-msgstr "Izvlačenje brojeva"
+msgstr "Crtanje brojeva"
 
 #. Help title
 #: activities/drawnumbers/ActivityInfo.qml:17
@@ -6596,7 +6606,7 @@ msgstr ""
 #: activities/explore_farm_animals/ExploreLevels.qml:304
 msgctxt "ExploreLevels|"
 msgid "Quit"
-msgstr "Završi"
+msgstr "Zatvori"
 
 #: activities/explore_farm_animals/ExploreLevels.qml:305
 msgctxt "ExploreLevels|"
@@ -8472,7 +8482,7 @@ msgstr "Klikni na mjesto koje odgovara tekstu."
 #: activities/family/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Family"
-msgstr "Family"
+msgstr "Obitelj"
 
 #. Help title
 #: activities/family/ActivityInfo.qml:17
@@ -9072,83 +9082,121 @@ msgid "Select one pie and three-quarters of a pie."
 msgstr "Odaberi jednu tortu i tri četvrtine torte."
 
 #: activities/fractions_create/resource/10/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Specific questions with a pie."
 msgctxt "Data|"
-msgid "Specific questions with a rectangle."
-msgstr "Posebna pitanja s pravokutnikom."
+msgid "Specific questions with a square."
+msgstr "Konkretna pitanja u vezi torte."
 
 #: activities/fractions_create/resource/10/Data.qml:18
 #: activities/fractions_create/resource/10/Data.qml:24
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid ""
+#| "Select as many parts as you can without taking more than half of the pie."
 msgctxt "Data|"
 msgid ""
-"Select as many parts as you can without taking more than half of the "
-"rectangle."
+"Select as many parts as you can without taking more than half of the square."
 msgstr ""
-"Odaberi onoliko dijelova koliko možeš, a da ne zauzmeš više od polovice "
-"pravokutnika."
+"Odaberi onoliko dijelova koliko možeš, a da ne uzmeš više od polovice torte."
 
 #: activities/fractions_create/resource/2/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Simplified fractions with a pie."
 msgctxt "Data|"
-msgid "Simplified fractions with a rectangle."
-msgstr "Pojednostavljeni razlomci s pravokutnikom."
+msgid "Simplified fractions with a square."
+msgstr "Pojednostavljeni razlomci s tortom."
 
 #: activities/fractions_create/resource/2/Data.qml:18
 #: activities/fractions_create/resource/4/Data.qml:17
 #: activities/fractions_create/resource/4/Data.qml:23
 #: activities/fractions_create/resource/4/Data.qml:29
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select one half of the pie."
 msgctxt "Data|"
-msgid "Select one half of the rectangle."
-msgstr "Odaberi jednu polovicu pravokutnika."
+msgid "Select one half of the square."
+msgstr "Odaberi jednu polovicu torte."
 
 #: activities/fractions_create/resource/2/Data.qml:24
 #: activities/fractions_create/resource/4/Data.qml:35
 #: activities/fractions_create/resource/4/Data.qml:49
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select one-third of the pie."
 msgctxt "Data|"
-msgid "Select one-third of the rectangle."
-msgstr "Odaberi jednu trećinu pravokutnika."
+msgid "Select one-third of the square."
+msgstr "Odaberi jednu trećinu torte."
 
 #: activities/fractions_create/resource/2/Data.qml:30
 #: activities/fractions_create/resource/4/Data.qml:41
 #: activities/fractions_create/resource/4/Data.qml:55
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select two-thirds of the pie."
 msgctxt "Data|"
-msgid "Select two-thirds of the rectangle."
-msgstr "Odaberi dvije trećine pravokutnika."
+msgid "Select two-thirds of the square."
+msgstr "Odaberi dvije trećine torte."
 
 #: activities/fractions_create/resource/2/Data.qml:36
 #: activities/fractions_create/resource/4/Data.qml:61
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select one-quarter of the pie."
 msgctxt "Data|"
-msgid "Select one-quarter of the rectangle."
-msgstr "Odaberi jednu četvrtinu pravokutnika."
+msgid "Select one-quarter of the square."
+msgstr "Odaberi jednu četvrtinu pite."
 
 #: activities/fractions_create/resource/2/Data.qml:42
 #: activities/fractions_create/resource/4/Data.qml:67
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select two-fifths of the pie."
 msgctxt "Data|"
-msgid "Select two-fifths of the rectangle."
-msgstr "Odaberi dvije petine pravokutnika."
+msgid "Select two-fifths of the square."
+msgstr "Odaberi dvije petine torte."
 
 #: activities/fractions_create/resource/2/Data.qml:50
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select one pie and one-quarter of a pie."
 msgctxt "Data|"
-msgid "Select one rectangle and one-quarter of a rectangle."
-msgstr "Odaberi jedan pravokutnik i jednu četvrtinu pravokutnika."
+msgid "Select one square and one-quarter of a square."
+msgstr "Odaberi jednu tortu i jednu četvrtinu torte."
 
 #: activities/fractions_create/resource/2/Data.qml:56
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select one pie and two-fifths of a pie."
 msgctxt "Data|"
-msgid "Select one rectangle and two-fifths of a rectangle."
-msgstr "Odaberi jedan pravokutnik i dvije petine pravokutnika."
+msgid "Select one square and two-fifths of a square."
+msgstr "Odaberi jednu tortu i dvije petine torte."
 
 #: activities/fractions_create/resource/2/Data.qml:62
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select one pie and one-third of a pie."
 msgctxt "Data|"
-msgid "Select one rectangle and one-third of a rectangle."
-msgstr "Odaberi jedan pravokutnik i jednu trećinu pravokutnika."
+msgid "Select one square and one-third of a square."
+msgstr "Odaberi jednu tortu i jednu trećinu torte."
 
 #: activities/fractions_create/resource/2/Data.qml:68
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select one pie and one half of a pie."
 msgctxt "Data|"
-msgid "Select one rectangle and one half of a rectangle."
-msgstr "Odaberi jedan pravokutnik i jednu polovicu pravokutnika."
+msgid "Select one square and one half of a square."
+msgstr "Odaberi jednu tortu i jednu polovicu torte."
 
 #: activities/fractions_create/resource/2/Data.qml:74
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select one pie and three-quarters of a pie."
 msgctxt "Data|"
-msgid "Select one rectangle and three-quarters of a rectangle."
-msgstr "Odaberi jedan pravokutnik i tri četvrtine pravokutnika."
+msgid "Select one square and three-quarters of a square."
+msgstr "Odaberi jednu tortu i tri četvrtine torte."
 
 #: activities/fractions_create/resource/3/Data.qml:9
 msgctxt "Data|"
@@ -9161,14 +9209,20 @@ msgid "Select three-fifths of the pie."
 msgstr "Odaberite tri petine torte."
 
 #: activities/fractions_create/resource/4/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Non-simplified fractions with a pie."
 msgctxt "Data|"
-msgid "Non-simplified fractions with a rectangle."
-msgstr "Nepojednostavljeni razlomci s pravokutnikom."
+msgid "Non-simplified fractions with a square."
+msgstr "Nepojednostavljeni razlomci s tortom."
 
 #: activities/fractions_create/resource/4/Data.qml:73
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select three-fifths of the pie."
 msgctxt "Data|"
-msgid "Select three-fifths of the rectangle."
-msgstr "Odaberite tri petine pravokutnika."
+msgid "Select three-fifths of the square."
+msgstr "Odaberite tri petine torte."
 
 #: activities/fractions_create/resource/5/Data.qml:9
 msgctxt "Data|"
@@ -9222,55 +9276,85 @@ msgid "Select 1.75 pies."
 msgstr "Odaberi 1,75 torte."
 
 #: activities/fractions_create/resource/6/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Decimal numbers with a pie."
 msgctxt "Data|"
-msgid "Decimal numbers with a rectangle."
-msgstr "Decimalni brojevi s pravokutnikom."
+msgid "Decimal numbers with a square."
+msgstr "Decimalni brojevi s tortom."
 
 #: activities/fractions_create/resource/6/Data.qml:18
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select 0.5 pie."
 msgctxt "Data|"
-msgid "Select 0.5 rectangle."
-msgstr "Odaberi pravokutnik veličine 0,5."
+msgid "Select 0.5 square."
+msgstr "Odaberi 0,5 torte."
 
 #: activities/fractions_create/resource/6/Data.qml:24
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select 0.25 pie."
 msgctxt "Data|"
-msgid "Select 0.25 rectangle."
-msgstr "Odaberi pravokutnik veličine 0,25."
+msgid "Select 0.25 square."
+msgstr "Odaberi 0,25 torte."
 
 #: activities/fractions_create/resource/6/Data.qml:30
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select 0.4 pie."
 msgctxt "Data|"
-msgid "Select 0.4 rectangle."
-msgstr "Odaberi pravokutnik veličine 0,4."
+msgid "Select 0.4 square."
+msgstr "Odaberi 0,4 torte."
 
 #: activities/fractions_create/resource/6/Data.qml:36
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select 0.75 pie."
 msgctxt "Data|"
-msgid "Select 0.75 rectangle."
-msgstr "Odaberi pravokutnik veličine 0,75."
+msgid "Select 0.75 square."
+msgstr "Odaberi 0,75 torte."
 
 #: activities/fractions_create/resource/6/Data.qml:42
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select 0.8 pie."
 msgctxt "Data|"
-msgid "Select 0.8 rectangle."
-msgstr "Odaberi pravokutnik veličine 0,8."
+msgid "Select 0.8 square."
+msgstr "Odaberi 0,8 torte."
 
 #: activities/fractions_create/resource/6/Data.qml:50
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select 1.25 pies."
 msgctxt "Data|"
-msgid "Select 1.25 rectangles."
-msgstr "Odaberi pravokutnik veličine 1,25."
+msgid "Select 1.25 squares."
+msgstr "Odaberi 1,25 torte."
 
 #: activities/fractions_create/resource/6/Data.qml:56
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select 1.4 pies."
 msgctxt "Data|"
-msgid "Select 1.4 rectangles."
-msgstr "Odaberi pravokutnik veličine 1,4."
+msgid "Select 1.4 squares."
+msgstr "Odaberi 1,4 torte."
 
 #: activities/fractions_create/resource/6/Data.qml:62
 #: activities/fractions_create/resource/6/Data.qml:68
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select 1.5 pies."
 msgctxt "Data|"
-msgid "Select 1.5 rectangles."
-msgstr "Odaberi pravokutnik veličine 1,5."
+msgid "Select 1.5 squares."
+msgstr "Odaberi 1,5 torte."
 
 #: activities/fractions_create/resource/6/Data.qml:74
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select 1.75 pies."
 msgctxt "Data|"
-msgid "Select 1.75 rectangles."
-msgstr "Odaberi pravokutnik veličine 1,75."
+msgid "Select 1.75 squares."
+msgstr "Odaberi 1,75 torte."
 
 #: activities/fractions_create/resource/7/Data.qml:9
 msgctxt "Data|"
@@ -9292,21 +9376,26 @@ msgid "Select %1% of the pie."
 msgstr "Odaberite %1% torte."
 
 #: activities/fractions_create/resource/8/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Percentages with a pie."
 msgctxt "Data|"
-msgid "Percentages with a rectangle."
-msgstr "Postoci s pravokutnikom."
+msgid "Percentages with a square."
+msgstr "Postoci s tortom."
 
-#. Select %1 percent of the rectangle.
+#. Select %1 percent of the square.
 #: activities/fractions_create/resource/8/Data.qml:19
 #: activities/fractions_create/resource/8/Data.qml:26
 #: activities/fractions_create/resource/8/Data.qml:33
 #: activities/fractions_create/resource/8/Data.qml:42
 #: activities/fractions_create/resource/8/Data.qml:49
 #: activities/fractions_create/resource/8/Data.qml:56
-#, qt-format
+#, fuzzy, qt-format
+#| msgctxt "Data|"
+#| msgid "Select %1% of the pie."
 msgctxt "Data|"
-msgid "Select %1% of the rectangle."
-msgstr "Odaberi %1% pravokutnika."
+msgid "Select %1% of the square."
+msgstr "Odaberite %1% torte."
 
 #: activities/fractions_create/resource/9/Data.qml:9
 msgctxt "Data|"
@@ -9335,23 +9424,29 @@ msgstr "Odredi točan brojnik i nazivnik predstavljenog razlomka."
 
 #: activities/fractions_find/resource/1/Data.qml:19
 msgctxt "Data|"
-msgid "Find denominator (with a pie)."
-msgstr "Pronađi nazivnik (s tortom)."
-
-#: activities/fractions_find/resource/2/Data.qml:19
-msgctxt "Data|"
-msgid "Find denominator (with a rectangle)."
-msgstr "Pronađi nazivnik (s pravokutnikom)."
-
-#: activities/fractions_find/resource/3/Data.qml:9
-msgctxt "Data|"
 msgid "Find numerator (with a pie)."
 msgstr "Pronađi brojnik (s tortom)."
 
-#: activities/fractions_find/resource/4/Data.qml:9
+#: activities/fractions_find/resource/2/Data.qml:19
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Find numerator (with a pie)."
 msgctxt "Data|"
-msgid "Find numerator (with a rectangle)."
-msgstr "Pronađi brojnik (s pravokutnikom)."
+msgid "Find numerator (with a square)."
+msgstr "Pronađi brojnik (s tortom)."
+
+#: activities/fractions_find/resource/3/Data.qml:9
+msgctxt "Data|"
+msgid "Find denominator (with a pie)."
+msgstr "Pronađi nazivnik (s tortom)."
+
+#: activities/fractions_find/resource/4/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Find denominator (with a pie)."
+msgctxt "Data|"
+msgid "Find denominator (with a square)."
+msgstr "Pronađi nazivnik (s tortom)."
 
 #: activities/fractions_find/resource/5/Data.qml:9
 msgctxt "Data|"
@@ -9359,9 +9454,12 @@ msgid "Find numerator and denominator (with a pie)."
 msgstr "Pronađi brojnik i nazivnik (s tortom)."
 
 #: activities/fractions_find/resource/6/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Find numerator and denominator (with a pie)."
 msgctxt "Data|"
-msgid "Find numerator and denominator (with a rectangle)."
-msgstr "Pronađi brojnik i nazivnik (s pravokutnikom)."
+msgid "Find numerator and denominator (with a square)."
+msgstr "Pronađi brojnik i nazivnik (s tortom)."
 
 #. Activity title
 #: activities/geo-country/ActivityInfo.qml:19
@@ -10597,8 +10695,11 @@ msgid "Suvalkija"
 msgstr "Suvalkija"
 
 #: activities/geo-country/resource/board/board18_0.qml:13
+#, fuzzy
+#| msgctxt "board18_0|"
+#| msgid "Autonomous communities of Spain"
 msgctxt "board18_0|"
-msgid "Autonomous communities of Spain"
+msgid "Autonomous communities or cities of Spain"
 msgstr "Španjolske autonomne zajednice"
 
 #. Autonomous communities of Spain: Andalusia
@@ -12486,7 +12587,7 @@ msgstr "Azija"
 #: activities/geography/resource/board/board1_0.qml:45
 msgctxt "board1_0|"
 msgid "Antarctica"
-msgstr "Antarktik"
+msgstr "Antarktika"
 
 #: activities/geography/resource/board/board1_0.qml:52
 msgctxt "board1_0|"
@@ -12981,7 +13082,7 @@ msgstr "Kenija"
 #: activities/geography/resource/board/board7_0.qml:150
 msgctxt "board7_0|"
 msgid "Ivory Coast"
-msgstr "Obala Slonovače"
+msgstr "Obala Bjelokosti"
 
 #: activities/geography/resource/board/board7_0.qml:157
 msgctxt "board7_0|"
@@ -13091,7 +13192,7 @@ msgstr "Tanzanija"
 #: activities/geography/resource/board/board8_0.qml:52
 msgctxt "board8_0|"
 msgid "Eswatini"
-msgstr "Eswatini"
+msgstr "Svazi"
 
 #: activities/geography/resource/board/board8_0.qml:59
 msgctxt "board8_0|"
@@ -13305,7 +13406,7 @@ msgstr "Povezanost slova između ekrana i tipkovnice."
 #: activities/gnumch-equality/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Gnumch equality"
-msgstr "Grickanje jednakosti"
+msgstr "Grickalica jednakosti"
 
 #. Help title
 #. ----------
@@ -13805,7 +13906,7 @@ msgstr "Nije odabrano"
 #: activities/guesscount/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Guesscount"
-msgstr "Guesscount"
+msgstr "Pogodi izraz"
 
 #. Help title
 #: activities/guesscount/ActivityInfo.qml:21
@@ -15629,7 +15730,7 @@ msgstr ""
 #: activities/leftright/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Find your left and right hands"
-msgstr "Pronađi svoju lijevu i desnu ruku"
+msgstr "Odaberi svoju lijevu i desnu ruku"
 
 #. Help title
 #: activities/leftright/ActivityInfo.qml:17
@@ -16367,7 +16468,7 @@ msgstr ""
 #: activities/melody/Melody.qml:286
 msgctxt "Melody|"
 msgid "Quit"
-msgstr "Izlaz"
+msgstr "Zatvori"
 
 #: activities/melody/Melody.qml:287
 msgctxt "Melody|"
@@ -17269,7 +17370,7 @@ msgstr "Okreni karte kako bi spojio množenje s njegovim rezultatom."
 #: activities/memory-sound-tux/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Audio memory game against Tux"
-msgstr "Igra audio memorije protiv Tuxa"
+msgstr "Igra audio pamćenja protiv Tuxa"
 
 #. Help title
 #: activities/memory-sound-tux/ActivityInfo.qml:17
@@ -17282,7 +17383,7 @@ msgstr "Okreni karte kako bi otkrio zvučne parove, igrajući protiv Tuxa."
 #: activities/memory-sound/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Train your audio memory."
-msgstr "Treniraj svoju audio memoriju."
+msgstr "Treniraj svoje audio pamćenje."
 
 #. Help manual
 #: activities/memory-sound-tux/ActivityInfo.qml:24
@@ -17305,7 +17406,7 @@ msgstr ""
 #: activities/memory-sound/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Audio memory game"
-msgstr "Audio igra memorije"
+msgstr "Igra audio pamćenja"
 
 #. Help title
 #: activities/memory-sound/ActivityInfo.qml:17
@@ -17963,8 +18064,8 @@ msgid ""
 "Put your favorite activities here by clicking on the sun at the top right of "
 "that activity."
 msgstr ""
-"Ovdje možeš postaviti omiljene aktivnosti tako da klikneš na simbol sunca u "
-"gornjem desnom kutu navedene aktivnosti."
+"Ovdje postavi tvoje omiljene aktivnosti klikom na simbol sunca u gornjem "
+"desnom kutu željene aktivnosti."
 
 #: activities/menu/Menu.qml:774
 msgctxt "Menu|"
@@ -17995,7 +18096,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Learn to use the mousewheel or the zoom / pinch gesture to zoom in and out."
 msgstr ""
-"Nauči koristiti kotačić miša ili gestu zumiranja/štipanja za povećavanje i "
+"Nauči koristiti kotačić miša ili gestu zumiranja za povećavanje i "
 "smanjivanje."
 
 #. Help prerequisite
@@ -18038,8 +18139,8 @@ msgid ""
 "of already collected nuggets and the total number of nuggets to collect in "
 "this level."
 msgstr ""
-"Vagon a u donjem desnom kutu zaslona prikazuje broj već prikupljenih grumena "
-"i ukupan broj grumena koje treba sakupiti na ovoj razini."
+"Vagon u donjem desnom kutu zaslona prikazuje broj prikupljenih grumena i "
+"ukupan broj grumena koje treba sakupiti na ovoj razini."
 
 #: activities/mining/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
@@ -18317,7 +18418,7 @@ msgstr ""
 #: activities/money_back_cents/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Give Tux his change, including cents"
-msgstr "Vrati Tuxu njegov ostatak, uključujući i cente"
+msgstr "Vrati Tuxu ostatak i u centima"
 
 #. Activity title
 #: activities/money_cents/ActivityInfo.qml:15
@@ -18748,7 +18849,7 @@ msgstr ""
 #: activities/note_names/NoteNames.qml:454
 msgctxt "NoteNames|"
 msgid "Quit"
-msgstr "Napusti"
+msgstr "Zatvori"
 
 #: activities/note_names/NoteNames.qml:455
 msgctxt "NoteNames|"
@@ -19558,7 +19659,7 @@ msgstr "%1x%2 mreža."
 #: activities/path_decoding_relative/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Path decoding relative"
-msgstr "Dekodiranje puta relativno"
+msgstr "Dekodiranje puta (relativno)"
 
 #: activities/path_decoding_relative/ActivityInfo.qml:24
 #: activities/path_encoding_relative/ActivityInfo.qml:24
@@ -19620,7 +19721,7 @@ msgstr "Pogreške: %1"
 #: activities/path_encoding_relative/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Path encoding relative"
-msgstr "Path encoding relative"
+msgstr "Kodiranje putanje (relativno)"
 
 #. Activity title
 #: activities/penalty/ActivityInfo.qml:15
@@ -20201,7 +20302,7 @@ msgstr ""
 #: activities/piano_composition/Piano_composition.qml:549
 msgctxt "Piano_composition|"
 msgid "Quit"
-msgstr "Napusti"
+msgstr "Zatvori"
 
 #: activities/piano_composition/Piano_composition.qml:550
 msgctxt "Piano_composition|"
@@ -20465,7 +20566,7 @@ msgstr ""
 #: activities/play_piano/PlayPiano.qml:280
 msgctxt "PlayPiano|"
 msgid "Quit"
-msgstr "Napusti"
+msgstr "Zatvori"
 
 #: activities/play_piano/PlayPiano.qml:281
 msgctxt "PlayPiano|"
@@ -20577,7 +20678,7 @@ msgstr ""
 #: activities/play_rhythm/PlayRhythm.qml:360
 msgctxt "PlayRhythm|"
 msgid "Quit"
-msgstr "Napusti"
+msgstr "Zatvori"
 
 #: activities/play_rhythm/PlayRhythm.qml:361
 msgctxt "PlayRhythm|"
@@ -24237,7 +24338,7 @@ msgstr "Provjeri izbornik pomoći za kontrolu tipkovnice."
 #: activities/sudoku/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Sudoku, place unique symbols in a grid"
-msgstr "Sudoku, postavi jedinstvene simbole u mrežu"
+msgstr "Sudoku"
 
 #. Help title
 #: activities/sudoku/ActivityInfo.qml:17
@@ -24782,9 +24883,14 @@ msgid "As the sun rises, the water of the sea starts heating and evaporates."
 msgstr "Kako sunce izlazi, morska voda se počinje zagrijavati i isparavati."
 
 #: activities/watercycle/Watercycle.qml:80
+#, fuzzy
+#| msgctxt "Watercycle|"
+#| msgid ""
+#| "Water vapor condenses to form cloud and when clouds become heavy, it "
+#| "rains. Click on the cloud."
 msgctxt "Watercycle|"
 msgid ""
-"Water vapor condenses to form cloud and when clouds become heavy, it rains. "
+"Water vapor condenses to form clouds and when clouds become heavy, it rains. "
 "Click on the cloud."
 msgstr ""
 "Vodena para se kondenzira stvarajući oblak, a kada oblaci postanu teški, "
@@ -24833,11 +24939,17 @@ msgstr ""
 "energiju za isparavanje vode iz vodenih tijela poput oceana."
 
 #: activities/watercycle/Watercycle.qml:115
+#, fuzzy
+#| msgctxt "Watercycle|"
+#| msgid ""
+#| "Plants also lose water to the air through transpiration. The water vapor "
+#| "cools down forming tiny droplets in clouds. When the clouds meet cool air "
+#| "over the land, precipitation is triggered and fall down as rain."
 msgctxt "Watercycle|"
 msgid ""
 "Plants also lose water to the air through transpiration. The water vapor "
 "cools down forming tiny droplets in clouds. When the clouds meet cool air "
-"over the land, precipitation is triggered and fall down as rain."
+"over the land, precipitation is triggered and falls down as rain."
 msgstr ""
 "Biljke također gube vodu u zrak transpiracijom. Vodena para se hladi "
 "stvarajući sitne kapljice u oblacima. Kada se oblaci susretnu s hladnim "
@@ -25217,7 +25329,7 @@ msgstr "Preuzimanje u tijeku.<br/>'Prekinite' ga da odmah napustite."
 #: core/core.js:222
 msgctxt "core|"
 msgid "Quit?"
-msgstr "Izlaz?"
+msgstr "Zatvori?"
 
 #: core/core.js:224
 msgctxt "core|"
@@ -25383,7 +25495,7 @@ msgstr "<b>Veliko hvala razvojnom timu:</b> %1"
 #, qt-format
 msgctxt "DialogAbout|"
 msgid "<b>A big thanks to the translation team:</b> %1"
-msgstr "<b>Veliko hvala prevoditeljskom timu:</b> %1"
+msgstr "<b>Veliko hvala prevoditelju:</b> %1"
 
 #: core/DialogActivityConfig.qml:84
 #, qt-format
@@ -25445,7 +25557,7 @@ msgstr "Cilj:"
 #: core/DialogHelp.qml:63
 msgctxt "DialogHelp|"
 msgid "Manual:"
-msgstr "Priručnik:"
+msgstr "Uputa:"
 
 #: core/DialogHelp.qml:67
 msgctxt "DialogHelp|"
@@ -25455,7 +25567,7 @@ msgstr "Zahvala:"
 #: core/DialogHelp.qml:71
 msgctxt "DialogHelp|"
 msgid "Section:"
-msgstr "Odjeljak:"
+msgstr "Kategorija:"
 
 #. "Dots" is for representation of the points in a domino in the form of dots
 #: core/Domino.qml:57
@@ -25804,3 +25916,131 @@ msgstr "Preskoči"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Start"
+
+#~ msgctxt "Data|"
+#~ msgid "3 decimal places between 0 and 999."
+#~ msgstr "3 decimalna mjesta između 0 i 999."
+
+#~ msgctxt "Data|"
+#~ msgid "Specific questions with a rectangle."
+#~ msgstr "Posebna pitanja s pravokutnikom."
+
+#~ msgctxt "Data|"
+#~ msgid ""
+#~ "Select as many parts as you can without taking more than half of the "
+#~ "rectangle."
+#~ msgstr ""
+#~ "Odaberi onoliko dijelova koliko možeš, a da ne zauzmeš više od polovice "
+#~ "pravokutnika."
+
+#~ msgctxt "Data|"
+#~ msgid "Simplified fractions with a rectangle."
+#~ msgstr "Pojednostavljeni razlomci s pravokutnikom."
+
+#~ msgctxt "Data|"
+#~ msgid "Select one half of the rectangle."
+#~ msgstr "Odaberi jednu polovicu pravokutnika."
+
+#~ msgctxt "Data|"
+#~ msgid "Select one-third of the rectangle."
+#~ msgstr "Odaberi jednu trećinu pravokutnika."
+
+#~ msgctxt "Data|"
+#~ msgid "Select two-thirds of the rectangle."
+#~ msgstr "Odaberi dvije trećine pravokutnika."
+
+#~ msgctxt "Data|"
+#~ msgid "Select one-quarter of the rectangle."
+#~ msgstr "Odaberi jednu četvrtinu pravokutnika."
+
+#~ msgctxt "Data|"
+#~ msgid "Select two-fifths of the rectangle."
+#~ msgstr "Odaberi dvije petine pravokutnika."
+
+#~ msgctxt "Data|"
+#~ msgid "Select one rectangle and one-quarter of a rectangle."
+#~ msgstr "Odaberi jedan pravokutnik i jednu četvrtinu pravokutnika."
+
+#~ msgctxt "Data|"
+#~ msgid "Select one rectangle and two-fifths of a rectangle."
+#~ msgstr "Odaberi jedan pravokutnik i dvije petine pravokutnika."
+
+#~ msgctxt "Data|"
+#~ msgid "Select one rectangle and one-third of a rectangle."
+#~ msgstr "Odaberi jedan pravokutnik i jednu trećinu pravokutnika."
+
+#~ msgctxt "Data|"
+#~ msgid "Select one rectangle and one half of a rectangle."
+#~ msgstr "Odaberi jedan pravokutnik i jednu polovicu pravokutnika."
+
+#~ msgctxt "Data|"
+#~ msgid "Select one rectangle and three-quarters of a rectangle."
+#~ msgstr "Odaberi jedan pravokutnik i tri četvrtine pravokutnika."
+
+#~ msgctxt "Data|"
+#~ msgid "Non-simplified fractions with a rectangle."
+#~ msgstr "Nepojednostavljeni razlomci s pravokutnikom."
+
+#~ msgctxt "Data|"
+#~ msgid "Select three-fifths of the rectangle."
+#~ msgstr "Odaberite tri petine pravokutnika."
+
+#~ msgctxt "Data|"
+#~ msgid "Decimal numbers with a rectangle."
+#~ msgstr "Decimalni brojevi s pravokutnikom."
+
+#~ msgctxt "Data|"
+#~ msgid "Select 0.5 rectangle."
+#~ msgstr "Odaberi pravokutnik veličine 0,5."
+
+#~ msgctxt "Data|"
+#~ msgid "Select 0.25 rectangle."
+#~ msgstr "Odaberi pravokutnik veličine 0,25."
+
+#~ msgctxt "Data|"
+#~ msgid "Select 0.4 rectangle."
+#~ msgstr "Odaberi pravokutnik veličine 0,4."
+
+#~ msgctxt "Data|"
+#~ msgid "Select 0.75 rectangle."
+#~ msgstr "Odaberi pravokutnik veličine 0,75."
+
+#~ msgctxt "Data|"
+#~ msgid "Select 0.8 rectangle."
+#~ msgstr "Odaberi pravokutnik veličine 0,8."
+
+#~ msgctxt "Data|"
+#~ msgid "Select 1.25 rectangles."
+#~ msgstr "Odaberi pravokutnik veličine 1,25."
+
+#~ msgctxt "Data|"
+#~ msgid "Select 1.4 rectangles."
+#~ msgstr "Odaberi pravokutnik veličine 1,4."
+
+#~ msgctxt "Data|"
+#~ msgid "Select 1.5 rectangles."
+#~ msgstr "Odaberi pravokutnik veličine 1,5."
+
+#~ msgctxt "Data|"
+#~ msgid "Select 1.75 rectangles."
+#~ msgstr "Odaberi pravokutnik veličine 1,75."
+
+#~ msgctxt "Data|"
+#~ msgid "Percentages with a rectangle."
+#~ msgstr "Postoci s pravokutnikom."
+
+#~ msgctxt "Data|"
+#~ msgid "Select %1% of the rectangle."
+#~ msgstr "Odaberi %1% pravokutnika."
+
+#~ msgctxt "Data|"
+#~ msgid "Find denominator (with a rectangle)."
+#~ msgstr "Pronađi nazivnik (s pravokutnikom)."
+
+#~ msgctxt "Data|"
+#~ msgid "Find numerator (with a rectangle)."
+#~ msgstr "Pronađi brojnik (s pravokutnikom)."
+
+#~ msgctxt "Data|"
+#~ msgid "Find numerator and denominator (with a rectangle)."
+#~ msgstr "Pronađi brojnik i nazivnik (s pravokutnikom)."

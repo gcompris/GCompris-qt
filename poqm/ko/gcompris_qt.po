@@ -4883,7 +4883,7 @@ msgstr ""
 
 #: activities/comparator/resource/10/Data.qml:14
 msgctxt "Data|"
-msgid "3 decimal places between 0 and 999."
+msgid "3 decimal places between 0 and 999.999."
 msgstr ""
 
 #: activities/comparator/resource/2/Data.qml:14
@@ -4913,12 +4913,12 @@ msgstr ""
 
 #: activities/comparator/resource/7/Data.qml:14
 msgctxt "Data|"
-msgid "1 decimal place between 0 and 9, same integer part."
+msgid "1 decimal place between 0 and 9.9, same integer part."
 msgstr ""
 
 #: activities/comparator/resource/8/Data.qml:14
 msgctxt "Data|"
-msgid "1 decimal place between 0 and 9."
+msgid "1 decimal place between 0 and 9.9."
 msgstr ""
 
 #: activities/comparator/resource/9/Data.qml:14
@@ -8260,79 +8260,93 @@ msgstr ""
 
 #: activities/fractions_create/resource/10/Data.qml:9
 msgctxt "Data|"
-msgid "Specific questions with a rectangle."
+msgid "Specific questions with a square."
 msgstr ""
 
 #: activities/fractions_create/resource/10/Data.qml:18
 #: activities/fractions_create/resource/10/Data.qml:24
 msgctxt "Data|"
 msgid ""
-"Select as many parts as you can without taking more than half of the "
-"rectangle."
+"Select as many parts as you can without taking more than half of the square."
 msgstr ""
 
 #: activities/fractions_create/resource/2/Data.qml:9
 msgctxt "Data|"
-msgid "Simplified fractions with a rectangle."
+msgid "Simplified fractions with a square."
 msgstr ""
 
 #: activities/fractions_create/resource/2/Data.qml:18
 #: activities/fractions_create/resource/4/Data.qml:17
 #: activities/fractions_create/resource/4/Data.qml:23
 #: activities/fractions_create/resource/4/Data.qml:29
+#, fuzzy
+#| msgctxt "Traffic|"
+#| msgid "Select your mode"
 msgctxt "Data|"
-msgid "Select one half of the rectangle."
-msgstr ""
+msgid "Select one half of the square."
+msgstr "모드 선택"
 
 #: activities/fractions_create/resource/2/Data.qml:24
 #: activities/fractions_create/resource/4/Data.qml:35
 #: activities/fractions_create/resource/4/Data.qml:49
+#, fuzzy
+#| msgctxt "Traffic|"
+#| msgid "Select your mode"
 msgctxt "Data|"
-msgid "Select one-third of the rectangle."
-msgstr ""
+msgid "Select one-third of the square."
+msgstr "모드 선택"
 
 #: activities/fractions_create/resource/2/Data.qml:30
 #: activities/fractions_create/resource/4/Data.qml:41
 #: activities/fractions_create/resource/4/Data.qml:55
+#, fuzzy
+#| msgctxt "Traffic|"
+#| msgid "Select your mode"
 msgctxt "Data|"
-msgid "Select two-thirds of the rectangle."
-msgstr ""
+msgid "Select two-thirds of the square."
+msgstr "모드 선택"
 
 #: activities/fractions_create/resource/2/Data.qml:36
 #: activities/fractions_create/resource/4/Data.qml:61
+#, fuzzy
+#| msgctxt "Traffic|"
+#| msgid "Select your mode"
 msgctxt "Data|"
-msgid "Select one-quarter of the rectangle."
-msgstr ""
+msgid "Select one-quarter of the square."
+msgstr "모드 선택"
 
 #: activities/fractions_create/resource/2/Data.qml:42
 #: activities/fractions_create/resource/4/Data.qml:67
+#, fuzzy
+#| msgctxt "Traffic|"
+#| msgid "Select your mode"
 msgctxt "Data|"
-msgid "Select two-fifths of the rectangle."
-msgstr ""
+msgid "Select two-fifths of the square."
+msgstr "모드 선택"
 
 #: activities/fractions_create/resource/2/Data.qml:50
 msgctxt "Data|"
-msgid "Select one rectangle and one-quarter of a rectangle."
+msgid "Select one square and one-quarter of a square."
 msgstr ""
 
 #: activities/fractions_create/resource/2/Data.qml:56
 msgctxt "Data|"
-msgid "Select one rectangle and two-fifths of a rectangle."
+msgid "Select one square and two-fifths of a square."
 msgstr ""
 
 #: activities/fractions_create/resource/2/Data.qml:62
 msgctxt "Data|"
-msgid "Select one rectangle and one-third of a rectangle."
+msgid "Select one square and one-third of a square."
 msgstr ""
 
 #: activities/fractions_create/resource/2/Data.qml:68
 msgctxt "Data|"
-msgid "Select one rectangle and one half of a rectangle."
+msgid "Select one square and one half of a square."
 msgstr ""
 
 #: activities/fractions_create/resource/2/Data.qml:74
 msgctxt "Data|"
-msgid "Select one rectangle and three-quarters of a rectangle."
+msgid "Select one square and three-quarters of a square."
 msgstr ""
 
 #: activities/fractions_create/resource/3/Data.qml:9
@@ -8347,13 +8361,16 @@ msgstr ""
 
 #: activities/fractions_create/resource/4/Data.qml:9
 msgctxt "Data|"
-msgid "Non-simplified fractions with a rectangle."
+msgid "Non-simplified fractions with a square."
 msgstr ""
 
 #: activities/fractions_create/resource/4/Data.qml:73
+#, fuzzy
+#| msgctxt "Traffic|"
+#| msgid "Select your mode"
 msgctxt "Data|"
-msgid "Select three-fifths of the rectangle."
-msgstr ""
+msgid "Select three-fifths of the square."
+msgstr "모드 선택"
 
 #: activities/fractions_create/resource/5/Data.qml:9
 msgctxt "Data|"
@@ -8417,7 +8434,7 @@ msgstr ""
 
 #: activities/fractions_create/resource/6/Data.qml:9
 msgctxt "Data|"
-msgid "Decimal numbers with a rectangle."
+msgid "Decimal numbers with a square."
 msgstr ""
 
 #: activities/fractions_create/resource/6/Data.qml:18
@@ -8425,55 +8442,73 @@ msgstr ""
 #| msgctxt "Traffic|"
 #| msgid "Select your mode"
 msgctxt "Data|"
-msgid "Select 0.5 rectangle."
+msgid "Select 0.5 square."
 msgstr "모드 선택"
 
 #: activities/fractions_create/resource/6/Data.qml:24
+#, fuzzy
+#| msgctxt "Traffic|"
+#| msgid "Select your mode"
 msgctxt "Data|"
-msgid "Select 0.25 rectangle."
-msgstr ""
+msgid "Select 0.25 square."
+msgstr "모드 선택"
 
 #: activities/fractions_create/resource/6/Data.qml:30
 #, fuzzy
 #| msgctxt "Traffic|"
 #| msgid "Select your mode"
 msgctxt "Data|"
-msgid "Select 0.4 rectangle."
+msgid "Select 0.4 square."
 msgstr "모드 선택"
 
 #: activities/fractions_create/resource/6/Data.qml:36
+#, fuzzy
+#| msgctxt "Traffic|"
+#| msgid "Select your mode"
 msgctxt "Data|"
-msgid "Select 0.75 rectangle."
-msgstr ""
+msgid "Select 0.75 square."
+msgstr "모드 선택"
 
 #: activities/fractions_create/resource/6/Data.qml:42
 #, fuzzy
 #| msgctxt "Traffic|"
 #| msgid "Select your mode"
 msgctxt "Data|"
-msgid "Select 0.8 rectangle."
+msgid "Select 0.8 square."
 msgstr "모드 선택"
 
 #: activities/fractions_create/resource/6/Data.qml:50
+#, fuzzy
+#| msgctxt "Traffic|"
+#| msgid "Select your mode"
 msgctxt "Data|"
-msgid "Select 1.25 rectangles."
-msgstr ""
+msgid "Select 1.25 squares."
+msgstr "모드 선택"
 
 #: activities/fractions_create/resource/6/Data.qml:56
+#, fuzzy
+#| msgctxt "Traffic|"
+#| msgid "Select your mode"
 msgctxt "Data|"
-msgid "Select 1.4 rectangles."
-msgstr ""
+msgid "Select 1.4 squares."
+msgstr "모드 선택"
 
 #: activities/fractions_create/resource/6/Data.qml:62
 #: activities/fractions_create/resource/6/Data.qml:68
+#, fuzzy
+#| msgctxt "Traffic|"
+#| msgid "Select your mode"
 msgctxt "Data|"
-msgid "Select 1.5 rectangles."
-msgstr ""
+msgid "Select 1.5 squares."
+msgstr "모드 선택"
 
 #: activities/fractions_create/resource/6/Data.qml:74
+#, fuzzy
+#| msgctxt "Traffic|"
+#| msgid "Select your mode"
 msgctxt "Data|"
-msgid "Select 1.75 rectangles."
-msgstr ""
+msgid "Select 1.75 squares."
+msgstr "모드 선택"
 
 #: activities/fractions_create/resource/7/Data.qml:9
 msgctxt "Data|"
@@ -8498,20 +8533,22 @@ msgstr "모드 선택"
 
 #: activities/fractions_create/resource/8/Data.qml:9
 msgctxt "Data|"
-msgid "Percentages with a rectangle."
+msgid "Percentages with a square."
 msgstr ""
 
-#. Select %1 percent of the rectangle.
+#. Select %1 percent of the square.
 #: activities/fractions_create/resource/8/Data.qml:19
 #: activities/fractions_create/resource/8/Data.qml:26
 #: activities/fractions_create/resource/8/Data.qml:33
 #: activities/fractions_create/resource/8/Data.qml:42
 #: activities/fractions_create/resource/8/Data.qml:49
 #: activities/fractions_create/resource/8/Data.qml:56
-#, qt-format
+#, fuzzy, qt-format
+#| msgctxt "Traffic|"
+#| msgid "Select your mode"
 msgctxt "Data|"
-msgid "Select %1% of the rectangle."
-msgstr ""
+msgid "Select %1% of the square."
+msgstr "모드 선택"
 
 #: activities/fractions_create/resource/9/Data.qml:9
 msgctxt "Data|"
@@ -8539,22 +8576,22 @@ msgstr ""
 
 #: activities/fractions_find/resource/1/Data.qml:19
 msgctxt "Data|"
-msgid "Find denominator (with a pie)."
+msgid "Find numerator (with a pie)."
 msgstr ""
 
 #: activities/fractions_find/resource/2/Data.qml:19
 msgctxt "Data|"
-msgid "Find denominator (with a rectangle)."
+msgid "Find numerator (with a square)."
 msgstr ""
 
 #: activities/fractions_find/resource/3/Data.qml:9
 msgctxt "Data|"
-msgid "Find numerator (with a pie)."
+msgid "Find denominator (with a pie)."
 msgstr ""
 
 #: activities/fractions_find/resource/4/Data.qml:9
 msgctxt "Data|"
-msgid "Find numerator (with a rectangle)."
+msgid "Find denominator (with a square)."
 msgstr ""
 
 #: activities/fractions_find/resource/5/Data.qml:9
@@ -8564,7 +8601,7 @@ msgstr ""
 
 #: activities/fractions_find/resource/6/Data.qml:9
 msgctxt "Data|"
-msgid "Find numerator and denominator (with a rectangle)."
+msgid "Find numerator and denominator (with a square)."
 msgstr ""
 
 #. Activity title
@@ -9899,7 +9936,7 @@ msgstr ""
 
 #: activities/geo-country/resource/board/board18_0.qml:13
 msgctxt "board18_0|"
-msgid "Autonomous communities of Spain"
+msgid "Autonomous communities or cities of Spain"
 msgstr ""
 
 #. Autonomous communities of Spain: Andalusia
@@ -23626,7 +23663,7 @@ msgstr ""
 #: activities/watercycle/Watercycle.qml:80
 msgctxt "Watercycle|"
 msgid ""
-"Water vapor condenses to form cloud and when clouds become heavy, it rains. "
+"Water vapor condenses to form clouds and when clouds become heavy, it rains. "
 "Click on the cloud."
 msgstr ""
 
@@ -23669,7 +23706,7 @@ msgctxt "Watercycle|"
 msgid ""
 "Plants also lose water to the air through transpiration. The water vapor "
 "cools down forming tiny droplets in clouds. When the clouds meet cool air "
-"over the land, precipitation is triggered and fall down as rain."
+"over the land, precipitation is triggered and falls down as rain."
 msgstr ""
 
 #: activities/watercycle/Watercycle.qml:118
@@ -24651,6 +24688,27 @@ msgstr ""
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr ""
+
+#, fuzzy
+#~| msgctxt "Traffic|"
+#~| msgid "Select your mode"
+#~ msgctxt "Data|"
+#~ msgid "Select 0.5 rectangle."
+#~ msgstr "모드 선택"
+
+#, fuzzy
+#~| msgctxt "Traffic|"
+#~| msgid "Select your mode"
+#~ msgctxt "Data|"
+#~ msgid "Select 0.4 rectangle."
+#~ msgstr "모드 선택"
+
+#, fuzzy
+#~| msgctxt "Traffic|"
+#~| msgid "Select your mode"
+#~ msgctxt "Data|"
+#~ msgid "Select 0.8 rectangle."
+#~ msgstr "모드 선택"
 
 #~ msgctxt "board10_1|"
 #~ msgid "United States of America"

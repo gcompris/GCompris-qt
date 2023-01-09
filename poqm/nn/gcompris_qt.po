@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_qt\n"
-"PO-Revision-Date: 2023-01-06 22:43+0100\n"
+"PO-Revision-Date: 2023-01-08 11:34+0100\n"
 "Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
 "Language-Team: Norwegian Nynorsk <l10n-no@lister.huftis.org>\n"
 "Language: nn\n"
@@ -5217,11 +5217,10 @@ msgctxt "Data|"
 msgid "Numbers from 1 to 9."
 msgstr "Tal frå 1 til 9"
 
-# Her er 999 maks – inkluderer altså ikkje tal som 999,567.
 #: activities/comparator/resource/10/Data.qml:14
 msgctxt "Data|"
 msgid "3 decimal places between 0 and 999."
-msgstr "Tal frå 0 til 999 – 3 desimalar"
+msgstr "Tal frå 0,000 til 999,999 – 3 desimalar"
 
 #: activities/comparator/resource/2/Data.qml:14
 msgctxt "Data|"
@@ -5248,23 +5247,20 @@ msgctxt "Data|"
 msgid "Numbers from 1 to 1 billion."
 msgstr "Tal frå 1 til 1 000 000 000"
 
-# Her er 9 maks – inkluderer ikkje tal som for eksempel 9,3.
 #: activities/comparator/resource/7/Data.qml:14
 msgctxt "Data|"
 msgid "1 decimal place between 0 and 9, same integer part."
-msgstr "Tal frå 0 til 9 – 1 desimal, men same siffer før kommaet"
+msgstr "Tal frå 0,0 til 9,9 – 1 desimal, men same siffer før kommaet"
 
-# Her er 9 maks – inkluderer ikkje tal som for eksempel 9,3.
 #: activities/comparator/resource/8/Data.qml:14
 msgctxt "Data|"
 msgid "1 decimal place between 0 and 9."
-msgstr "Tal frå 0 til 9 – 1 desimal"
+msgstr "Tal frå 0,0 til 9,9 – 1 desimal"
 
-# Her er 99,99 faktisk maks. Er altså inkonsistent med nivå for 1 og 3 desimalar (der maksen er 9,0, ikkje 9,9, og 999,000, ikkje 999,999).
 #: activities/comparator/resource/9/Data.qml:14
 msgctxt "Data|"
 msgid "2 decimal places between 0 and 99.99."
-msgstr "Tal frå 0 til 99,99 – 2 desimalar"
+msgstr "Tal frå 0,00 til 99,99 – 2 desimalar"
 
 #. Activity title
 #: activities/crane/ActivityInfo.qml:20

@@ -5303,9 +5303,12 @@ msgid "Numbers from 1 to 9."
 msgstr "Числа від 1 до 9."
 
 #: activities/comparator/resource/10/Data.qml:14
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "2 decimal places between 0 and 99.99."
 msgctxt "Data|"
-msgid "3 decimal places between 0 and 999."
-msgstr "3 десяткових позиції між 0 і 999."
+msgid "3 decimal places between 0 and 999.999."
+msgstr "2 десяткових позиції між 0 і 99.99."
 
 #: activities/comparator/resource/2/Data.qml:14
 msgctxt "Data|"
@@ -5333,13 +5336,19 @@ msgid "Numbers from 1 to 1 billion."
 msgstr "Числа від 1 до мільярда."
 
 #: activities/comparator/resource/7/Data.qml:14
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "1 decimal place between 0 and 9, same integer part."
 msgctxt "Data|"
-msgid "1 decimal place between 0 and 9, same integer part."
+msgid "1 decimal place between 0 and 9.9, same integer part."
 msgstr "1 десяткова позиція між 0 і 9, однакова ціла частина."
 
 #: activities/comparator/resource/8/Data.qml:14
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "1 decimal place between 0 and 9."
 msgctxt "Data|"
-msgid "1 decimal place between 0 and 9."
+msgid "1 decimal place between 0 and 9.9."
 msgstr "1 десяткова позиція між 0 і 9."
 
 #: activities/comparator/resource/9/Data.qml:14
@@ -9214,83 +9223,122 @@ msgid "Select one pie and three-quarters of a pie."
 msgstr "Виберіть один пиріг і ще три четвертих пирога."
 
 #: activities/fractions_create/resource/10/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Specific questions with a pie."
 msgctxt "Data|"
-msgid "Specific questions with a rectangle."
-msgstr "Особливі питання із прямокутником."
+msgid "Specific questions with a square."
+msgstr "Особливі питання із пирогом."
 
 #: activities/fractions_create/resource/10/Data.qml:18
 #: activities/fractions_create/resource/10/Data.qml:24
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid ""
+#| "Select as many parts as you can without taking more than half of the pie."
 msgctxt "Data|"
 msgid ""
-"Select as many parts as you can without taking more than half of the "
-"rectangle."
+"Select as many parts as you can without taking more than half of the square."
 msgstr ""
 "Виберіть якомога більше частин пирога так, щоб вийшло не більше половини "
-"прямокутника."
+"пирога."
 
 #: activities/fractions_create/resource/2/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Simplified fractions with a pie."
 msgctxt "Data|"
-msgid "Simplified fractions with a rectangle."
-msgstr "Спрощені дроби на основі прямокутника."
+msgid "Simplified fractions with a square."
+msgstr "Спрощені дроби на основі пирога."
 
 #: activities/fractions_create/resource/2/Data.qml:18
 #: activities/fractions_create/resource/4/Data.qml:17
 #: activities/fractions_create/resource/4/Data.qml:23
 #: activities/fractions_create/resource/4/Data.qml:29
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select one half of the pie."
 msgctxt "Data|"
-msgid "Select one half of the rectangle."
-msgstr "Виберіть половину прямокутника."
+msgid "Select one half of the square."
+msgstr "Виберіть половину пирога."
 
 #: activities/fractions_create/resource/2/Data.qml:24
 #: activities/fractions_create/resource/4/Data.qml:35
 #: activities/fractions_create/resource/4/Data.qml:49
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select one-third of the pie."
 msgctxt "Data|"
-msgid "Select one-third of the rectangle."
-msgstr "Виберіть одну третину прямокутника."
+msgid "Select one-third of the square."
+msgstr "Виберіть одну третю пирога."
 
 #: activities/fractions_create/resource/2/Data.qml:30
 #: activities/fractions_create/resource/4/Data.qml:41
 #: activities/fractions_create/resource/4/Data.qml:55
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select two-thirds of the pie."
 msgctxt "Data|"
-msgid "Select two-thirds of the rectangle."
-msgstr "Виберіть дві третини прямокутника."
+msgid "Select two-thirds of the square."
+msgstr "Виберіть дві третини пирога."
 
 #: activities/fractions_create/resource/2/Data.qml:36
 #: activities/fractions_create/resource/4/Data.qml:61
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select one-quarter of the pie."
 msgctxt "Data|"
-msgid "Select one-quarter of the rectangle."
-msgstr "Виберіть чвертину прямокутника."
+msgid "Select one-quarter of the square."
+msgstr "Виберіть чверть пирога."
 
 #: activities/fractions_create/resource/2/Data.qml:42
 #: activities/fractions_create/resource/4/Data.qml:67
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select two-fifths of the pie."
 msgctxt "Data|"
-msgid "Select two-fifths of the rectangle."
-msgstr "Виберіть дві п'ятих прямокутника."
+msgid "Select two-fifths of the square."
+msgstr "Виберіть дві п'ятих пирога."
 
 #: activities/fractions_create/resource/2/Data.qml:50
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select one pie and one-quarter of a pie."
 msgctxt "Data|"
-msgid "Select one rectangle and one-quarter of a rectangle."
-msgstr "Виберіть один прямокутник і ще одну четверту прямокутника."
+msgid "Select one square and one-quarter of a square."
+msgstr "Виберіть один пиріг і ще одну четверту пирога."
 
 #: activities/fractions_create/resource/2/Data.qml:56
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select one pie and two-fifths of a pie."
 msgctxt "Data|"
-msgid "Select one rectangle and two-fifths of a rectangle."
-msgstr "Виберіть один прямокутник і ще дві п'ятих прямокутника."
+msgid "Select one square and two-fifths of a square."
+msgstr "Виберіть один пиріг і ще дві п'ятих пирога."
 
 #: activities/fractions_create/resource/2/Data.qml:62
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select one pie and one-third of a pie."
 msgctxt "Data|"
-msgid "Select one rectangle and one-third of a rectangle."
-msgstr "Виберіть один прямокутник і ще одну третину прямокутника."
+msgid "Select one square and one-third of a square."
+msgstr "Виберіть один пиріг і ще одну третю пирога."
 
 #: activities/fractions_create/resource/2/Data.qml:68
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select one pie and one half of a pie."
 msgctxt "Data|"
-msgid "Select one rectangle and one half of a rectangle."
-msgstr "Виберіть один прямокутник і ще половину прямокутника."
+msgid "Select one square and one half of a square."
+msgstr "Виберіть один пиріг і ще половину пирога."
 
 #: activities/fractions_create/resource/2/Data.qml:74
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select one pie and three-quarters of a pie."
 msgctxt "Data|"
-msgid "Select one rectangle and three-quarters of a rectangle."
-msgstr "Виберіть один прямокутник і ще три четвертих прямокутника."
+msgid "Select one square and three-quarters of a square."
+msgstr "Виберіть один пиріг і ще три четвертих пирога."
 
 #: activities/fractions_create/resource/3/Data.qml:9
 msgctxt "Data|"
@@ -9303,14 +9351,20 @@ msgid "Select three-fifths of the pie."
 msgstr "Виберіть три п'ятих пирога."
 
 #: activities/fractions_create/resource/4/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Non-simplified fractions with a pie."
 msgctxt "Data|"
-msgid "Non-simplified fractions with a rectangle."
-msgstr "Неспрощені дроби на основі прямокутника."
+msgid "Non-simplified fractions with a square."
+msgstr "Неспрощені дроби на основі пирога."
 
 #: activities/fractions_create/resource/4/Data.qml:73
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select three-fifths of the pie."
 msgctxt "Data|"
-msgid "Select three-fifths of the rectangle."
-msgstr "Виберіть три п'ятих прямокутника."
+msgid "Select three-fifths of the square."
+msgstr "Виберіть три п'ятих пирога."
 
 #: activities/fractions_create/resource/5/Data.qml:9
 msgctxt "Data|"
@@ -9364,55 +9418,85 @@ msgid "Select 1.75 pies."
 msgstr "Виберіть 1,75 пирога."
 
 #: activities/fractions_create/resource/6/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Decimal numbers with a pie."
 msgctxt "Data|"
-msgid "Decimal numbers with a rectangle."
-msgstr "Десяткові числа на основі прямокутника."
+msgid "Decimal numbers with a square."
+msgstr "Десяткові числа на основі пирога."
 
 #: activities/fractions_create/resource/6/Data.qml:18
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select 0.5 pie."
 msgctxt "Data|"
-msgid "Select 0.5 rectangle."
-msgstr "Виберіть 0,5 прямокутника."
+msgid "Select 0.5 square."
+msgstr "Виберіть 0,5 пирога."
 
 #: activities/fractions_create/resource/6/Data.qml:24
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select 0.25 pie."
 msgctxt "Data|"
-msgid "Select 0.25 rectangle."
-msgstr "Виберіть 0,25 прямокутника."
+msgid "Select 0.25 square."
+msgstr "Виберіть 0,25 пирога."
 
 #: activities/fractions_create/resource/6/Data.qml:30
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select 0.4 pie."
 msgctxt "Data|"
-msgid "Select 0.4 rectangle."
-msgstr "Виберіть 0,4 прямокутника."
+msgid "Select 0.4 square."
+msgstr "Виберіть 0,4 пирога."
 
 #: activities/fractions_create/resource/6/Data.qml:36
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select 0.75 pie."
 msgctxt "Data|"
-msgid "Select 0.75 rectangle."
-msgstr "Виберіть 0,75 прямокутника."
+msgid "Select 0.75 square."
+msgstr "Виберіть 0,75 пирога."
 
 #: activities/fractions_create/resource/6/Data.qml:42
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select 0.8 pie."
 msgctxt "Data|"
-msgid "Select 0.8 rectangle."
-msgstr "Виберіть 0,8 прямокутника."
+msgid "Select 0.8 square."
+msgstr "Виберіть 0,8 пирога."
 
 #: activities/fractions_create/resource/6/Data.qml:50
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select 1.25 pies."
 msgctxt "Data|"
-msgid "Select 1.25 rectangles."
-msgstr "Виберіть 1,25 прямокутника."
+msgid "Select 1.25 squares."
+msgstr "Виберіть 1,25 пирога."
 
 #: activities/fractions_create/resource/6/Data.qml:56
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select 1.4 pies."
 msgctxt "Data|"
-msgid "Select 1.4 rectangles."
-msgstr "Виберіть 1,4 прямокутника."
+msgid "Select 1.4 squares."
+msgstr "Виберіть 1,4 пирога."
 
 #: activities/fractions_create/resource/6/Data.qml:62
 #: activities/fractions_create/resource/6/Data.qml:68
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select 1.5 pies."
 msgctxt "Data|"
-msgid "Select 1.5 rectangles."
-msgstr "Виберіть 1,5 прямокутника."
+msgid "Select 1.5 squares."
+msgstr "Виберіть 1,5 пирога."
 
 #: activities/fractions_create/resource/6/Data.qml:74
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select 1.75 pies."
 msgctxt "Data|"
-msgid "Select 1.75 rectangles."
-msgstr "Виберіть 1,75 прямокутника."
+msgid "Select 1.75 squares."
+msgstr "Виберіть 1,75 пирога."
 
 #: activities/fractions_create/resource/7/Data.qml:9
 msgctxt "Data|"
@@ -9434,21 +9518,26 @@ msgid "Select %1% of the pie."
 msgstr "Виберіть %1% пирога."
 
 #: activities/fractions_create/resource/8/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Percentages with a pie."
 msgctxt "Data|"
-msgid "Percentages with a rectangle."
-msgstr "Відсотки на основі прямокутника."
+msgid "Percentages with a square."
+msgstr "Відсотки на основі пирога."
 
-#. Select %1 percent of the rectangle.
+#. Select %1 percent of the square.
 #: activities/fractions_create/resource/8/Data.qml:19
 #: activities/fractions_create/resource/8/Data.qml:26
 #: activities/fractions_create/resource/8/Data.qml:33
 #: activities/fractions_create/resource/8/Data.qml:42
 #: activities/fractions_create/resource/8/Data.qml:49
 #: activities/fractions_create/resource/8/Data.qml:56
-#, qt-format
+#, fuzzy, qt-format
+#| msgctxt "Data|"
+#| msgid "Select %1% of the pie."
 msgctxt "Data|"
-msgid "Select %1% of the rectangle."
-msgstr "Виберіть %1% прямокутника."
+msgid "Select %1% of the square."
+msgstr "Виберіть %1% пирога."
 
 #: activities/fractions_create/resource/9/Data.qml:9
 msgctxt "Data|"
@@ -9478,23 +9567,29 @@ msgstr "Знайдіть належні чисельник і знаменник
 
 #: activities/fractions_find/resource/1/Data.qml:19
 msgctxt "Data|"
-msgid "Find denominator (with a pie)."
-msgstr "Знайдіть знаменник (за допомогою пирога)"
-
-#: activities/fractions_find/resource/2/Data.qml:19
-msgctxt "Data|"
-msgid "Find denominator (with a rectangle)."
-msgstr "Знайдіть знаменник (за допомогою прямокутника)."
-
-#: activities/fractions_find/resource/3/Data.qml:9
-msgctxt "Data|"
 msgid "Find numerator (with a pie)."
 msgstr "Знайдіть чисельник (за допомогою пирога)."
 
-#: activities/fractions_find/resource/4/Data.qml:9
+#: activities/fractions_find/resource/2/Data.qml:19
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Find numerator (with a pie)."
 msgctxt "Data|"
-msgid "Find numerator (with a rectangle)."
-msgstr "Знайдіть чисельник (за допомогою прямокутника)"
+msgid "Find numerator (with a square)."
+msgstr "Знайдіть чисельник (за допомогою пирога)."
+
+#: activities/fractions_find/resource/3/Data.qml:9
+msgctxt "Data|"
+msgid "Find denominator (with a pie)."
+msgstr "Знайдіть знаменник (за допомогою пирога)"
+
+#: activities/fractions_find/resource/4/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Find denominator (with a pie)."
+msgctxt "Data|"
+msgid "Find denominator (with a square)."
+msgstr "Знайдіть знаменник (за допомогою пирога)"
 
 #: activities/fractions_find/resource/5/Data.qml:9
 msgctxt "Data|"
@@ -9502,9 +9597,12 @@ msgid "Find numerator and denominator (with a pie)."
 msgstr "Знайдіть чисельних і знаменник (за допомогою пирога)."
 
 #: activities/fractions_find/resource/6/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Find numerator and denominator (with a pie)."
 msgctxt "Data|"
-msgid "Find numerator and denominator (with a rectangle)."
-msgstr "Знайдіть чисельних і знаменник (за допомогою прямокутника)."
+msgid "Find numerator and denominator (with a square)."
+msgstr "Знайдіть чисельних і знаменник (за допомогою пирога)."
 
 #. Activity title
 #: activities/geo-country/ActivityInfo.qml:19
@@ -10740,8 +10838,11 @@ msgid "Suvalkija"
 msgstr "Сувалкія"
 
 #: activities/geo-country/resource/board/board18_0.qml:13
+#, fuzzy
+#| msgctxt "board18_0|"
+#| msgid "Autonomous communities of Spain"
 msgctxt "board18_0|"
-msgid "Autonomous communities of Spain"
+msgid "Autonomous communities or cities of Spain"
 msgstr "Автономні спільноти Іспанії"
 
 #. Autonomous communities of Spain: Andalusia
@@ -25051,9 +25152,14 @@ msgid "As the sun rises, the water of the sea starts heating and evaporates."
 msgstr "Зі сходом сонця вода у морі починає розігріватися і випаровуватися."
 
 #: activities/watercycle/Watercycle.qml:80
+#, fuzzy
+#| msgctxt "Watercycle|"
+#| msgid ""
+#| "Water vapor condenses to form cloud and when clouds become heavy, it "
+#| "rains. Click on the cloud."
 msgctxt "Watercycle|"
 msgid ""
-"Water vapor condenses to form cloud and when clouds become heavy, it rains. "
+"Water vapor condenses to form clouds and when clouds become heavy, it rains. "
 "Click on the cloud."
 msgstr ""
 " Випарувана вода конденсується у формі хмари і стає важкою. Потім випадає як "
@@ -25102,11 +25208,17 @@ msgstr ""
 "випаровування води із масивів води, зокрема океанів."
 
 #: activities/watercycle/Watercycle.qml:115
+#, fuzzy
+#| msgctxt "Watercycle|"
+#| msgid ""
+#| "Plants also lose water to the air through transpiration. The water vapor "
+#| "cools down forming tiny droplets in clouds. When the clouds meet cool air "
+#| "over the land, precipitation is triggered and fall down as rain."
 msgctxt "Watercycle|"
 msgid ""
 "Plants also lose water to the air through transpiration. The water vapor "
 "cools down forming tiny droplets in clouds. When the clouds meet cool air "
-"over the land, precipitation is triggered and fall down as rain."
+"over the land, precipitation is triggered and falls down as rain."
 msgstr ""
 "Рослини також випаровують воду у повітря під час дихання. Випарувана вода "
 "охолоджується, конденсується і формує невеличкі краплинки у хмарах. Коли "
@@ -26090,6 +26202,134 @@ msgstr "Пропустити"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Почати"
+
+#~ msgctxt "Data|"
+#~ msgid "3 decimal places between 0 and 999."
+#~ msgstr "3 десяткових позиції між 0 і 999."
+
+#~ msgctxt "Data|"
+#~ msgid "Specific questions with a rectangle."
+#~ msgstr "Особливі питання із прямокутником."
+
+#~ msgctxt "Data|"
+#~ msgid ""
+#~ "Select as many parts as you can without taking more than half of the "
+#~ "rectangle."
+#~ msgstr ""
+#~ "Виберіть якомога більше частин пирога так, щоб вийшло не більше половини "
+#~ "прямокутника."
+
+#~ msgctxt "Data|"
+#~ msgid "Simplified fractions with a rectangle."
+#~ msgstr "Спрощені дроби на основі прямокутника."
+
+#~ msgctxt "Data|"
+#~ msgid "Select one half of the rectangle."
+#~ msgstr "Виберіть половину прямокутника."
+
+#~ msgctxt "Data|"
+#~ msgid "Select one-third of the rectangle."
+#~ msgstr "Виберіть одну третину прямокутника."
+
+#~ msgctxt "Data|"
+#~ msgid "Select two-thirds of the rectangle."
+#~ msgstr "Виберіть дві третини прямокутника."
+
+#~ msgctxt "Data|"
+#~ msgid "Select one-quarter of the rectangle."
+#~ msgstr "Виберіть чвертину прямокутника."
+
+#~ msgctxt "Data|"
+#~ msgid "Select two-fifths of the rectangle."
+#~ msgstr "Виберіть дві п'ятих прямокутника."
+
+#~ msgctxt "Data|"
+#~ msgid "Select one rectangle and one-quarter of a rectangle."
+#~ msgstr "Виберіть один прямокутник і ще одну четверту прямокутника."
+
+#~ msgctxt "Data|"
+#~ msgid "Select one rectangle and two-fifths of a rectangle."
+#~ msgstr "Виберіть один прямокутник і ще дві п'ятих прямокутника."
+
+#~ msgctxt "Data|"
+#~ msgid "Select one rectangle and one-third of a rectangle."
+#~ msgstr "Виберіть один прямокутник і ще одну третину прямокутника."
+
+#~ msgctxt "Data|"
+#~ msgid "Select one rectangle and one half of a rectangle."
+#~ msgstr "Виберіть один прямокутник і ще половину прямокутника."
+
+#~ msgctxt "Data|"
+#~ msgid "Select one rectangle and three-quarters of a rectangle."
+#~ msgstr "Виберіть один прямокутник і ще три четвертих прямокутника."
+
+#~ msgctxt "Data|"
+#~ msgid "Non-simplified fractions with a rectangle."
+#~ msgstr "Неспрощені дроби на основі прямокутника."
+
+#~ msgctxt "Data|"
+#~ msgid "Select three-fifths of the rectangle."
+#~ msgstr "Виберіть три п'ятих прямокутника."
+
+#~ msgctxt "Data|"
+#~ msgid "Decimal numbers with a rectangle."
+#~ msgstr "Десяткові числа на основі прямокутника."
+
+#~ msgctxt "Data|"
+#~ msgid "Select 0.5 rectangle."
+#~ msgstr "Виберіть 0,5 прямокутника."
+
+#~ msgctxt "Data|"
+#~ msgid "Select 0.25 rectangle."
+#~ msgstr "Виберіть 0,25 прямокутника."
+
+#~ msgctxt "Data|"
+#~ msgid "Select 0.4 rectangle."
+#~ msgstr "Виберіть 0,4 прямокутника."
+
+#~ msgctxt "Data|"
+#~ msgid "Select 0.75 rectangle."
+#~ msgstr "Виберіть 0,75 прямокутника."
+
+#~ msgctxt "Data|"
+#~ msgid "Select 0.8 rectangle."
+#~ msgstr "Виберіть 0,8 прямокутника."
+
+#~ msgctxt "Data|"
+#~ msgid "Select 1.25 rectangles."
+#~ msgstr "Виберіть 1,25 прямокутника."
+
+#~ msgctxt "Data|"
+#~ msgid "Select 1.4 rectangles."
+#~ msgstr "Виберіть 1,4 прямокутника."
+
+#~ msgctxt "Data|"
+#~ msgid "Select 1.5 rectangles."
+#~ msgstr "Виберіть 1,5 прямокутника."
+
+#~ msgctxt "Data|"
+#~ msgid "Select 1.75 rectangles."
+#~ msgstr "Виберіть 1,75 прямокутника."
+
+#~ msgctxt "Data|"
+#~ msgid "Percentages with a rectangle."
+#~ msgstr "Відсотки на основі прямокутника."
+
+#~ msgctxt "Data|"
+#~ msgid "Select %1% of the rectangle."
+#~ msgstr "Виберіть %1% прямокутника."
+
+#~ msgctxt "Data|"
+#~ msgid "Find denominator (with a rectangle)."
+#~ msgstr "Знайдіть знаменник (за допомогою прямокутника)."
+
+#~ msgctxt "Data|"
+#~ msgid "Find numerator (with a rectangle)."
+#~ msgstr "Знайдіть чисельник (за допомогою прямокутника)"
+
+#~ msgctxt "Data|"
+#~ msgid "Find numerator and denominator (with a rectangle)."
+#~ msgstr "Знайдіть чисельних і знаменник (за допомогою прямокутника)."
 
 #~ msgctxt "ActivityInfo|"
 #~ msgid ""

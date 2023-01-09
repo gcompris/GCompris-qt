@@ -5253,9 +5253,12 @@ msgid "Numbers from 1 to 9."
 msgstr "Niveroù adalek 1 betek 9."
 
 #: activities/comparator/resource/10/Data.qml:14
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "2 decimal places between 0 and 99.99."
 msgctxt "Data|"
-msgid "3 decimal places between 0 and 999."
-msgstr "3 niver dekrannel etre 0 ha 999."
+msgid "3 decimal places between 0 and 999.999."
+msgstr "2 niver dekrannel etre 0 ha .99,99."
 
 #: activities/comparator/resource/2/Data.qml:14
 msgctxt "Data|"
@@ -5283,13 +5286,19 @@ msgid "Numbers from 1 to 1 billion."
 msgstr "Niveroù adalek 1 betek 1 miliard."
 
 #: activities/comparator/resource/7/Data.qml:14
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "1 decimal place between 0 and 9, same integer part."
 msgctxt "Data|"
-msgid "1 decimal place between 0 and 9, same integer part."
+msgid "1 decimal place between 0 and 9.9, same integer part."
 msgstr "1 niver dekrannel etre 0 ha 9, gant an hevelep rann anterin."
 
 #: activities/comparator/resource/8/Data.qml:14
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "1 decimal place between 0 and 9."
 msgctxt "Data|"
-msgid "1 decimal place between 0 and 9."
+msgid "1 decimal place between 0 and 9.9."
 msgstr "1 niver dekrannel etre 0 ha 9."
 
 #: activities/comparator/resource/9/Data.qml:14
@@ -9164,83 +9173,122 @@ msgid "Select one pie and three-quarters of a pie."
 msgstr "Dibab un dartezenn ha tri c'hard un dartezenn ouzhpenn "
 
 #: activities/fractions_create/resource/10/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Specific questions with a pie."
 msgctxt "Data|"
-msgid "Specific questions with a rectangle."
-msgstr "Goulennoù resis gant ur skouergorneg."
+msgid "Specific questions with a square."
+msgstr "Goulennoù resis gant un dartezenn."
 
 #: activities/fractions_create/resource/10/Data.qml:18
 #: activities/fractions_create/resource/10/Data.qml:24
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid ""
+#| "Select as many parts as you can without taking more than half of the pie."
 msgctxt "Data|"
 msgid ""
-"Select as many parts as you can without taking more than half of the "
-"rectangle."
+"Select as many parts as you can without taking more than half of the square."
 msgstr ""
-"Dibab kement ha dammoù ma c'hellez hep kemer muioc'h eget an hanter eus ar "
-"skouergorneg."
+"Dibab kement ha dammoù ma c'hellez hep kemer muioc'h eget an hanter eus an "
+"dartezenn."
 
 #: activities/fractions_create/resource/2/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Simplified fractions with a pie."
 msgctxt "Data|"
-msgid "Simplified fractions with a rectangle."
-msgstr "Kevrennoù eeunaet gant ur skouergorneg."
+msgid "Simplified fractions with a square."
+msgstr "Kevrennoù eeunaet gant un dartezenn."
 
 #: activities/fractions_create/resource/2/Data.qml:18
 #: activities/fractions_create/resource/4/Data.qml:17
 #: activities/fractions_create/resource/4/Data.qml:23
 #: activities/fractions_create/resource/4/Data.qml:29
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select one half of the pie."
 msgctxt "Data|"
-msgid "Select one half of the rectangle."
-msgstr "Dibab un hanter eus ar skouergorneg."
+msgid "Select one half of the square."
+msgstr "Dibab an hanter eus an dartezenn."
 
 #: activities/fractions_create/resource/2/Data.qml:24
 #: activities/fractions_create/resource/4/Data.qml:35
 #: activities/fractions_create/resource/4/Data.qml:49
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select one-third of the pie."
 msgctxt "Data|"
-msgid "Select one-third of the rectangle."
-msgstr "Dibab un drederenn eus ar skouergorneg."
+msgid "Select one-third of the square."
+msgstr "Dibab un drederenn tartezenn."
 
 #: activities/fractions_create/resource/2/Data.qml:30
 #: activities/fractions_create/resource/4/Data.qml:41
 #: activities/fractions_create/resource/4/Data.qml:55
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select two-thirds of the pie."
 msgctxt "Data|"
-msgid "Select two-thirds of the rectangle."
-msgstr "Dibab div drederenn eus ar skouergorneg."
+msgid "Select two-thirds of the square."
+msgstr "Dibab div drederenn tartezenn."
 
 #: activities/fractions_create/resource/2/Data.qml:36
 #: activities/fractions_create/resource/4/Data.qml:61
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select one-quarter of the pie."
 msgctxt "Data|"
-msgid "Select one-quarter of the rectangle."
-msgstr "Dibab ur c'hard eus ar skouergorneg."
+msgid "Select one-quarter of the square."
+msgstr "Dibab ur c'hard tartezenn."
 
 #: activities/fractions_create/resource/2/Data.qml:42
 #: activities/fractions_create/resource/4/Data.qml:67
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select two-fifths of the pie."
 msgctxt "Data|"
-msgid "Select two-fifths of the rectangle."
-msgstr "Dibab div bempvet eus ar skouergorneg."
+msgid "Select two-fifths of the square."
+msgstr "Dibab daou bempvet tartezenn."
 
 #: activities/fractions_create/resource/2/Data.qml:50
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select one pie and one-quarter of a pie."
 msgctxt "Data|"
-msgid "Select one rectangle and one-quarter of a rectangle."
-msgstr "Dibab ur skouergorneg hag ur c'hard skouergorneg ouzhpenn."
+msgid "Select one square and one-quarter of a square."
+msgstr "Dibab un dartezenn hag ur c'hard tartezenn ouzhpenn."
 
 #: activities/fractions_create/resource/2/Data.qml:56
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select one pie and two-fifths of a pie."
 msgctxt "Data|"
-msgid "Select one rectangle and two-fifths of a rectangle."
-msgstr "Dibab ur skouergorneg hag daou bempvet eus ur skouergorneg ouzhpenn."
+msgid "Select one square and two-fifths of a square."
+msgstr "Dibab un dartezenn ha daou bempvet un dartezenn ouzhpenn."
 
 #: activities/fractions_create/resource/2/Data.qml:62
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select one pie and one-third of a pie."
 msgctxt "Data|"
-msgid "Select one rectangle and one-third of a rectangle."
-msgstr "Dibab ur skouergorneg hag un drederenn eus ur skouergorneg ouzhpenn."
+msgid "Select one square and one-third of a square."
+msgstr "Dibab un dartezenn hag un drederenn eus un dartezenn ouzhpenn. "
 
 #: activities/fractions_create/resource/2/Data.qml:68
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select one pie and one half of a pie."
 msgctxt "Data|"
-msgid "Select one rectangle and one half of a rectangle."
-msgstr "Dibab ur skouergorneg hag un hanter skouergorneg ouzhpenn."
+msgid "Select one square and one half of a square."
+msgstr "Dibab un dartezenn hag un hanter dartezenn ouzhpenn."
 
 #: activities/fractions_create/resource/2/Data.qml:74
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select one pie and three-quarters of a pie."
 msgctxt "Data|"
-msgid "Select one rectangle and three-quarters of a rectangle."
-msgstr "Dibab ur skouergorneg ha tri c'hard ur skouergorneg ouzhpenn."
+msgid "Select one square and three-quarters of a square."
+msgstr "Dibab un dartezenn ha tri c'hard un dartezenn ouzhpenn "
 
 #: activities/fractions_create/resource/3/Data.qml:9
 msgctxt "Data|"
@@ -9253,14 +9301,20 @@ msgid "Select three-fifths of the pie."
 msgstr "Dibab tri fempvet tartezenn."
 
 #: activities/fractions_create/resource/4/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Non-simplified fractions with a pie."
 msgctxt "Data|"
-msgid "Non-simplified fractions with a rectangle."
-msgstr "Kevrennoù nann-eeunaet gant ur skouergorneg."
+msgid "Non-simplified fractions with a square."
+msgstr "Kevrennoù nann-eeunaet gant un dartezenn."
 
 #: activities/fractions_create/resource/4/Data.qml:73
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select three-fifths of the pie."
 msgctxt "Data|"
-msgid "Select three-fifths of the rectangle."
-msgstr "Dibab tri fempvet eus ar skouergorneg."
+msgid "Select three-fifths of the square."
+msgstr "Dibab tri fempvet tartezenn."
 
 #: activities/fractions_create/resource/5/Data.qml:9
 msgctxt "Data|"
@@ -9314,55 +9368,85 @@ msgid "Select 1.75 pies."
 msgstr "Dibab 1,75 eus un dartezenn."
 
 #: activities/fractions_create/resource/6/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Decimal numbers with a pie."
 msgctxt "Data|"
-msgid "Decimal numbers with a rectangle."
-msgstr "Niveriñ dekredel gant ur skouergorneg."
+msgid "Decimal numbers with a square."
+msgstr "Niveriñ dekredel gant un tartezenn."
 
 #: activities/fractions_create/resource/6/Data.qml:18
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select 0.5 pie."
 msgctxt "Data|"
-msgid "Select 0.5 rectangle."
-msgstr "Dibab 0,5 eus ar skouergorneg."
+msgid "Select 0.5 square."
+msgstr "Dibab 0,5 tartezenn."
 
 #: activities/fractions_create/resource/6/Data.qml:24
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select 0.25 pie."
 msgctxt "Data|"
-msgid "Select 0.25 rectangle."
-msgstr "Dibab 0,25 eus ur skouergorneg."
+msgid "Select 0.25 square."
+msgstr "Dibab 0,25 eus un dartezenn."
 
 #: activities/fractions_create/resource/6/Data.qml:30
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select 0.4 pie."
 msgctxt "Data|"
-msgid "Select 0.4 rectangle."
-msgstr "Dibab 0,4 eus ar skouergorneg."
+msgid "Select 0.4 square."
+msgstr "Dibab 0,4 tartezenn."
 
 #: activities/fractions_create/resource/6/Data.qml:36
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select 0.75 pie."
 msgctxt "Data|"
-msgid "Select 0.75 rectangle."
-msgstr "Dibab 0,75 eus ur skouergorneg."
+msgid "Select 0.75 square."
+msgstr "Dibab 0,25 eus un dartezenn."
 
 #: activities/fractions_create/resource/6/Data.qml:42
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select 0.8 pie."
 msgctxt "Data|"
-msgid "Select 0.8 rectangle."
-msgstr "Dibab 0,8 eus ar skouergorneg."
+msgid "Select 0.8 square."
+msgstr "Dibab 0,8 tartezenn."
 
 #: activities/fractions_create/resource/6/Data.qml:50
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select 1.25 pies."
 msgctxt "Data|"
-msgid "Select 1.25 rectangles."
-msgstr "Dibab 1,25 eus ur skouergorneg."
+msgid "Select 1.25 squares."
+msgstr "Dibab 1,25 eus un dartezenn."
 
 #: activities/fractions_create/resource/6/Data.qml:56
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select 1.4 pies."
 msgctxt "Data|"
-msgid "Select 1.4 rectangles."
-msgstr "Dibab 1,4 eus ur skouergorneg."
+msgid "Select 1.4 squares."
+msgstr "Dibab 1,4 eus un dartezenn."
 
 #: activities/fractions_create/resource/6/Data.qml:62
 #: activities/fractions_create/resource/6/Data.qml:68
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select 1.5 pies."
 msgctxt "Data|"
-msgid "Select 1.5 rectangles."
-msgstr "Dibab 1,5 eus ur skouergorneg."
+msgid "Select 1.5 squares."
+msgstr "Dibab 1,5 eus un dartezenn."
 
 #: activities/fractions_create/resource/6/Data.qml:74
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Select 1.75 pies."
 msgctxt "Data|"
-msgid "Select 1.75 rectangles."
-msgstr "Dibab 1,75 eus ur skouergorneg."
+msgid "Select 1.75 squares."
+msgstr "Dibab 1,75 eus un dartezenn."
 
 #: activities/fractions_create/resource/7/Data.qml:9
 msgctxt "Data|"
@@ -9384,21 +9468,26 @@ msgid "Select %1% of the pie."
 msgstr "Dibab %1% tartezenn."
 
 #: activities/fractions_create/resource/8/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Percentages with a pie."
 msgctxt "Data|"
-msgid "Percentages with a rectangle."
-msgstr "Dregantachoù gant ur skouergorneg."
+msgid "Percentages with a square."
+msgstr "Dregantachoù gant un dartezenn."
 
-#. Select %1 percent of the rectangle.
+#. Select %1 percent of the square.
 #: activities/fractions_create/resource/8/Data.qml:19
 #: activities/fractions_create/resource/8/Data.qml:26
 #: activities/fractions_create/resource/8/Data.qml:33
 #: activities/fractions_create/resource/8/Data.qml:42
 #: activities/fractions_create/resource/8/Data.qml:49
 #: activities/fractions_create/resource/8/Data.qml:56
-#, qt-format
+#, fuzzy, qt-format
+#| msgctxt "Data|"
+#| msgid "Select %1% of the pie."
 msgctxt "Data|"
-msgid "Select %1% of the rectangle."
-msgstr "Dibab %1% eus ar skouergorneg."
+msgid "Select %1% of the square."
+msgstr "Dibab %1% tartezenn."
 
 #: activities/fractions_create/resource/9/Data.qml:9
 msgctxt "Data|"
@@ -9428,23 +9517,29 @@ msgstr "Kav an niverer hag an anver reizh evit ar gevrenn diskouezet."
 
 #: activities/fractions_find/resource/1/Data.qml:19
 msgctxt "Data|"
-msgid "Find denominator (with a pie)."
-msgstr "Kav an anver (gant un dartezenn)."
-
-#: activities/fractions_find/resource/2/Data.qml:19
-msgctxt "Data|"
-msgid "Find denominator (with a rectangle)."
-msgstr "Kav an anver (gant ur skouergorneg)."
-
-#: activities/fractions_find/resource/3/Data.qml:9
-msgctxt "Data|"
 msgid "Find numerator (with a pie)."
 msgstr "Kav an niverer (gant un dartezenn)."
 
-#: activities/fractions_find/resource/4/Data.qml:9
+#: activities/fractions_find/resource/2/Data.qml:19
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Find numerator (with a pie)."
 msgctxt "Data|"
-msgid "Find numerator (with a rectangle)."
-msgstr "Kav an niverer (gant ur skouergorneg)."
+msgid "Find numerator (with a square)."
+msgstr "Kav an niverer (gant un dartezenn)."
+
+#: activities/fractions_find/resource/3/Data.qml:9
+msgctxt "Data|"
+msgid "Find denominator (with a pie)."
+msgstr "Kav an anver (gant un dartezenn)."
+
+#: activities/fractions_find/resource/4/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Find denominator (with a pie)."
+msgctxt "Data|"
+msgid "Find denominator (with a square)."
+msgstr "Kav an anver (gant un dartezenn)."
 
 #: activities/fractions_find/resource/5/Data.qml:9
 msgctxt "Data|"
@@ -9452,9 +9547,12 @@ msgid "Find numerator and denominator (with a pie)."
 msgstr "Kav an niverer hag an anver (gant un dartezenn)."
 
 #: activities/fractions_find/resource/6/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Find numerator and denominator (with a pie)."
 msgctxt "Data|"
-msgid "Find numerator and denominator (with a rectangle)."
-msgstr "Kav an niverer hag an anver (gant ur skouergorneg)."
+msgid "Find numerator and denominator (with a square)."
+msgstr "Kav an niverer hag an anver (gant un dartezenn)."
 
 #. Activity title
 #: activities/geo-country/ActivityInfo.qml:19
@@ -10690,8 +10788,11 @@ msgid "Suvalkija"
 msgstr "Suvalkija"
 
 #: activities/geo-country/resource/board/board18_0.qml:13
+#, fuzzy
+#| msgctxt "board18_0|"
+#| msgid "Autonomous communities of Spain"
 msgctxt "board18_0|"
-msgid "Autonomous communities of Spain"
+msgid "Autonomous communities or cities of Spain"
 msgstr "Kumuniezhioù emren bro Spagn."
 
 #. Autonomous communities of Spain: Andalusia
@@ -24925,9 +25026,14 @@ msgid "As the sun rises, the water of the sea starts heating and evaporates."
 msgstr "Pa sav an heol e krog an dour da dommañ ha da vont da aezhenn."
 
 #: activities/watercycle/Watercycle.qml:80
+#, fuzzy
+#| msgctxt "Watercycle|"
+#| msgid ""
+#| "Water vapor condenses to form cloud and when clouds become heavy, it "
+#| "rains. Click on the cloud."
 msgctxt "Watercycle|"
 msgid ""
-"Water vapor condenses to form cloud and when clouds become heavy, it rains. "
+"Water vapor condenses to form clouds and when clouds become heavy, it rains. "
 "Click on the cloud."
 msgstr ""
 " Glizhenniñ a ra an aezhenn da sevel koumoul ha pa ya ar c'houmoul da "
@@ -24976,11 +25082,17 @@ msgstr ""
 "lakaat an dour da aezhenniñ diouzh tachadoù dour evel ar morioù."
 
 #: activities/watercycle/Watercycle.qml:115
+#, fuzzy
+#| msgctxt "Watercycle|"
+#| msgid ""
+#| "Plants also lose water to the air through transpiration. The water vapor "
+#| "cools down forming tiny droplets in clouds. When the clouds meet cool air "
+#| "over the land, precipitation is triggered and fall down as rain."
 msgctxt "Watercycle|"
 msgid ""
 "Plants also lose water to the air through transpiration. The water vapor "
 "cools down forming tiny droplets in clouds. When the clouds meet cool air "
-"over the land, precipitation is triggered and fall down as rain."
+"over the land, precipitation is triggered and falls down as rain."
 msgstr ""
 "Ar plant ivez a goll dour en aer dre ar c'hweziñ. An aezhenn a ya da yen ha "
 "sevel a ra takennoùigoù dour er c'houmoul. Pa gej ar c'houmoul ouzh aer yen "
@@ -25963,6 +26075,136 @@ msgstr "Tremen hepti"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Kregiñ"
+
+#~ msgctxt "Data|"
+#~ msgid "3 decimal places between 0 and 999."
+#~ msgstr "3 niver dekrannel etre 0 ha 999."
+
+#~ msgctxt "Data|"
+#~ msgid "Specific questions with a rectangle."
+#~ msgstr "Goulennoù resis gant ur skouergorneg."
+
+#~ msgctxt "Data|"
+#~ msgid ""
+#~ "Select as many parts as you can without taking more than half of the "
+#~ "rectangle."
+#~ msgstr ""
+#~ "Dibab kement ha dammoù ma c'hellez hep kemer muioc'h eget an hanter eus "
+#~ "ar skouergorneg."
+
+#~ msgctxt "Data|"
+#~ msgid "Simplified fractions with a rectangle."
+#~ msgstr "Kevrennoù eeunaet gant ur skouergorneg."
+
+#~ msgctxt "Data|"
+#~ msgid "Select one half of the rectangle."
+#~ msgstr "Dibab un hanter eus ar skouergorneg."
+
+#~ msgctxt "Data|"
+#~ msgid "Select one-third of the rectangle."
+#~ msgstr "Dibab un drederenn eus ar skouergorneg."
+
+#~ msgctxt "Data|"
+#~ msgid "Select two-thirds of the rectangle."
+#~ msgstr "Dibab div drederenn eus ar skouergorneg."
+
+#~ msgctxt "Data|"
+#~ msgid "Select one-quarter of the rectangle."
+#~ msgstr "Dibab ur c'hard eus ar skouergorneg."
+
+#~ msgctxt "Data|"
+#~ msgid "Select two-fifths of the rectangle."
+#~ msgstr "Dibab div bempvet eus ar skouergorneg."
+
+#~ msgctxt "Data|"
+#~ msgid "Select one rectangle and one-quarter of a rectangle."
+#~ msgstr "Dibab ur skouergorneg hag ur c'hard skouergorneg ouzhpenn."
+
+#~ msgctxt "Data|"
+#~ msgid "Select one rectangle and two-fifths of a rectangle."
+#~ msgstr ""
+#~ "Dibab ur skouergorneg hag daou bempvet eus ur skouergorneg ouzhpenn."
+
+#~ msgctxt "Data|"
+#~ msgid "Select one rectangle and one-third of a rectangle."
+#~ msgstr ""
+#~ "Dibab ur skouergorneg hag un drederenn eus ur skouergorneg ouzhpenn."
+
+#~ msgctxt "Data|"
+#~ msgid "Select one rectangle and one half of a rectangle."
+#~ msgstr "Dibab ur skouergorneg hag un hanter skouergorneg ouzhpenn."
+
+#~ msgctxt "Data|"
+#~ msgid "Select one rectangle and three-quarters of a rectangle."
+#~ msgstr "Dibab ur skouergorneg ha tri c'hard ur skouergorneg ouzhpenn."
+
+#~ msgctxt "Data|"
+#~ msgid "Non-simplified fractions with a rectangle."
+#~ msgstr "Kevrennoù nann-eeunaet gant ur skouergorneg."
+
+#~ msgctxt "Data|"
+#~ msgid "Select three-fifths of the rectangle."
+#~ msgstr "Dibab tri fempvet eus ar skouergorneg."
+
+#~ msgctxt "Data|"
+#~ msgid "Decimal numbers with a rectangle."
+#~ msgstr "Niveriñ dekredel gant ur skouergorneg."
+
+#~ msgctxt "Data|"
+#~ msgid "Select 0.5 rectangle."
+#~ msgstr "Dibab 0,5 eus ar skouergorneg."
+
+#~ msgctxt "Data|"
+#~ msgid "Select 0.25 rectangle."
+#~ msgstr "Dibab 0,25 eus ur skouergorneg."
+
+#~ msgctxt "Data|"
+#~ msgid "Select 0.4 rectangle."
+#~ msgstr "Dibab 0,4 eus ar skouergorneg."
+
+#~ msgctxt "Data|"
+#~ msgid "Select 0.75 rectangle."
+#~ msgstr "Dibab 0,75 eus ur skouergorneg."
+
+#~ msgctxt "Data|"
+#~ msgid "Select 0.8 rectangle."
+#~ msgstr "Dibab 0,8 eus ar skouergorneg."
+
+#~ msgctxt "Data|"
+#~ msgid "Select 1.25 rectangles."
+#~ msgstr "Dibab 1,25 eus ur skouergorneg."
+
+#~ msgctxt "Data|"
+#~ msgid "Select 1.4 rectangles."
+#~ msgstr "Dibab 1,4 eus ur skouergorneg."
+
+#~ msgctxt "Data|"
+#~ msgid "Select 1.5 rectangles."
+#~ msgstr "Dibab 1,5 eus ur skouergorneg."
+
+#~ msgctxt "Data|"
+#~ msgid "Select 1.75 rectangles."
+#~ msgstr "Dibab 1,75 eus ur skouergorneg."
+
+#~ msgctxt "Data|"
+#~ msgid "Percentages with a rectangle."
+#~ msgstr "Dregantachoù gant ur skouergorneg."
+
+#~ msgctxt "Data|"
+#~ msgid "Select %1% of the rectangle."
+#~ msgstr "Dibab %1% eus ar skouergorneg."
+
+#~ msgctxt "Data|"
+#~ msgid "Find denominator (with a rectangle)."
+#~ msgstr "Kav an anver (gant ur skouergorneg)."
+
+#~ msgctxt "Data|"
+#~ msgid "Find numerator (with a rectangle)."
+#~ msgstr "Kav an niverer (gant ur skouergorneg)."
+
+#~ msgctxt "Data|"
+#~ msgid "Find numerator and denominator (with a rectangle)."
+#~ msgstr "Kav an niverer hag an anver (gant ur skouergorneg)."
 
 #~ msgctxt "ActivityInfo|"
 #~ msgid ""
