@@ -6,7 +6,7 @@
 #
 #   SPDX-License-Identifier: GPL-3.0-or-later
 
-Qt5_BaseDIR=~/Qt/5.12.6
+Qt5_BaseDIR=~/Qt/5.12.12
 export ANDROID_NDK_ROOT=$ANDROID_NDK
 
 if [ "$#" -eq 1 ]; then
