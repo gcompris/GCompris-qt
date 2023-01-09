@@ -11,7 +11,7 @@
 import QtQuick 2.12
 import QtQuick.Controls 2.12
 import QtQuick.Layouts 1.12
-@CALENDAR_IMPORT@
+import Qt.labs.calendar 1.0
 import GCompris 1.0
 
 import "calendar.js" as Activity
