@@ -3125,6 +3125,41 @@ msgctxt "ActivityInfo|"
 msgid "Space or Enter: validate your answer"
 msgstr ""
 
+#: activities/calendar/Calendar.qml:309
+msgctxt "Calendar|"
+msgid "Sunday"
+msgstr "Søndag"
+
+#: activities/calendar/Calendar.qml:310
+msgctxt "Calendar|"
+msgid "Monday"
+msgstr "Mandag"
+
+#: activities/calendar/Calendar.qml:311
+msgctxt "Calendar|"
+msgid "Tuesday"
+msgstr "Tirsdag"
+
+#: activities/calendar/Calendar.qml:312
+msgctxt "Calendar|"
+msgid "Wednesday"
+msgstr "Onsdag"
+
+#: activities/calendar/Calendar.qml:313
+msgctxt "Calendar|"
+msgid "Thursday"
+msgstr "Torsdag"
+
+#: activities/calendar/Calendar.qml:314
+msgctxt "Calendar|"
+msgid "Friday"
+msgstr "Fredag"
+
+#: activities/calendar/Calendar.qml:315
+msgctxt "Calendar|"
+msgid "Saturday"
+msgstr "Lørdag"
+
 #: activities/calendar/calendar_dataset.js:35
 #, fuzzy
 msgctxt "calendar_dataset|"
@@ -26800,34 +26835,6 @@ msgstr "Start"
 #~ "Klik på positionen i linjen hvor du vil lægge en kugle. Du kan også bruge "
 #~ "piletasterne, til at flytte venstre/højre, og nedad-tasten eller "
 #~ "mellemrum til at lægge kuglen."
-
-#~ msgctxt "Calendar|"
-#~ msgid "Sunday"
-#~ msgstr "Søndag"
-
-#~ msgctxt "Calendar|"
-#~ msgid "Monday"
-#~ msgstr "Mandag"
-
-#~ msgctxt "Calendar|"
-#~ msgid "Tuesday"
-#~ msgstr "Tirsdag"
-
-#~ msgctxt "Calendar|"
-#~ msgid "Wednesday"
-#~ msgstr "Onsdag"
-
-#~ msgctxt "Calendar|"
-#~ msgid "Thursday"
-#~ msgstr "Torsdag"
-
-#~ msgctxt "Calendar|"
-#~ msgid "Friday"
-#~ msgstr "Fredag"
-
-#~ msgctxt "Calendar|"
-#~ msgid "Saturday"
-#~ msgstr "Lørdag"
 
 #, fuzzy
 #~| msgctxt "ActivityInfo|"

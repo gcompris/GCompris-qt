@@ -3000,6 +3000,41 @@ msgctxt "ActivityInfo|"
 msgid "Space or Enter: validate your answer"
 msgstr "സ്പെയ്സോ എന്ററോ: ഉത്തരം സ്ഥിരീകരിക്കാൻ"
 
+#: activities/calendar/Calendar.qml:309
+msgctxt "Calendar|"
+msgid "Sunday"
+msgstr "ഞായർ"
+
+#: activities/calendar/Calendar.qml:310
+msgctxt "Calendar|"
+msgid "Monday"
+msgstr "തിങ്കൾ"
+
+#: activities/calendar/Calendar.qml:311
+msgctxt "Calendar|"
+msgid "Tuesday"
+msgstr "ചൊവ്വ"
+
+#: activities/calendar/Calendar.qml:312
+msgctxt "Calendar|"
+msgid "Wednesday"
+msgstr "ബുധൻ"
+
+#: activities/calendar/Calendar.qml:313
+msgctxt "Calendar|"
+msgid "Thursday"
+msgstr "വ്യാഴം"
+
+#: activities/calendar/Calendar.qml:314
+msgctxt "Calendar|"
+msgid "Friday"
+msgstr "വെള്ളി"
+
+#: activities/calendar/Calendar.qml:315
+msgctxt "Calendar|"
+msgid "Saturday"
+msgstr "ശനി"
+
 #: activities/calendar/calendar_dataset.js:35
 msgctxt "calendar_dataset|"
 msgid "Select the 23rd"
@@ -25998,34 +26033,6 @@ msgstr "തുടങ്ങാം"
 #~ msgstr ""
 #~ "കംപ്യൂട്ടറിന്റെ കൂടെ കളിക്കാം. മാറി മാറി നിങ്ങൾക്കു മാർക്ക് ചെയ്യേണ്ട വരിയിൽ ക്ലിക്ക് "
 #~ "ചെയ്യൂ. 4 മാർക്കുകളുടെ ഒരു വരി ആദ്യം നിർമ്മിക്കുന്ന ആൾ ജയിക്കും."
-
-#~ msgctxt "Calendar|"
-#~ msgid "Sunday"
-#~ msgstr "ഞായർ"
-
-#~ msgctxt "Calendar|"
-#~ msgid "Monday"
-#~ msgstr "തിങ്കൾ"
-
-#~ msgctxt "Calendar|"
-#~ msgid "Tuesday"
-#~ msgstr "ചൊവ്വ"
-
-#~ msgctxt "Calendar|"
-#~ msgid "Wednesday"
-#~ msgstr "ബുധൻ"
-
-#~ msgctxt "Calendar|"
-#~ msgid "Thursday"
-#~ msgstr "വ്യാഴം"
-
-#~ msgctxt "Calendar|"
-#~ msgid "Friday"
-#~ msgstr "വെള്ളി"
-
-#~ msgctxt "Calendar|"
-#~ msgid "Saturday"
-#~ msgstr "ശനി"
 
 #~ msgctxt "ActivityInfo|"
 #~ msgid "Play checkers against the computer"

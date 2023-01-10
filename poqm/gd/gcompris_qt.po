@@ -3329,6 +3329,41 @@ msgctxt "ActivityInfo|"
 msgid "Space or Enter: validate your answer"
 msgstr ""
 
+#: activities/calendar/Calendar.qml:309
+msgctxt "Calendar|"
+msgid "Sunday"
+msgstr "DiDòmhnaich"
+
+#: activities/calendar/Calendar.qml:310
+msgctxt "Calendar|"
+msgid "Monday"
+msgstr "DiLuain"
+
+#: activities/calendar/Calendar.qml:311
+msgctxt "Calendar|"
+msgid "Tuesday"
+msgstr "DiMàirt"
+
+#: activities/calendar/Calendar.qml:312
+msgctxt "Calendar|"
+msgid "Wednesday"
+msgstr "DiCiadain"
+
+#: activities/calendar/Calendar.qml:313
+msgctxt "Calendar|"
+msgid "Thursday"
+msgstr "DiarDaoin"
+
+#: activities/calendar/Calendar.qml:314
+msgctxt "Calendar|"
+msgid "Friday"
+msgstr "DihAoine"
+
+#: activities/calendar/Calendar.qml:315
+msgctxt "Calendar|"
+msgid "Saturday"
+msgstr "DiSathairne"
+
 #: activities/calendar/calendar_dataset.js:35
 #, fuzzy
 #| msgctxt "calendar_dataset|"
@@ -29641,34 +29676,6 @@ msgstr ""
 #~ "Cluich an aghaigh a’ choimpiutair. Dèan briogadh airson comharran a chur "
 #~ "air na ceàrnagan, neach mu seach. Buannaichidh a’ chiad chluicheadair a "
 #~ "chuireas trì ann an sreath."
-
-#~ msgctxt "Calendar|"
-#~ msgid "Sunday"
-#~ msgstr "DiDòmhnaich"
-
-#~ msgctxt "Calendar|"
-#~ msgid "Monday"
-#~ msgstr "DiLuain"
-
-#~ msgctxt "Calendar|"
-#~ msgid "Tuesday"
-#~ msgstr "DiMàirt"
-
-#~ msgctxt "Calendar|"
-#~ msgid "Wednesday"
-#~ msgstr "DiCiadain"
-
-#~ msgctxt "Calendar|"
-#~ msgid "Thursday"
-#~ msgstr "DiarDaoin"
-
-#~ msgctxt "Calendar|"
-#~ msgid "Friday"
-#~ msgstr "DihAoine"
-
-#~ msgctxt "Calendar|"
-#~ msgid "Saturday"
-#~ msgstr "DiSathairne"
 
 #~ msgctxt "ActivityInfo|"
 #~ msgid "Play checkers against the computer"

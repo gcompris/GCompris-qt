@@ -729,13 +729,13 @@ msgstr "სიჩქარე"
 #: activities/algebra_by/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Multiplication of numbers"
-msgstr ""
+msgstr "რიცხვების გამრავლება"
 
 #. Help title
 #: activities/algebra_by/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Practice the multiplication operation."
-msgstr ""
+msgstr "რიცხვების გამრავლების მეცადინეობა."
 
 #. Help goal
 #: activities/algebra_by/ActivityInfo.qml:20
@@ -767,7 +767,7 @@ msgstr ""
 #: activities/smallnumbers2/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Digits: type your answer"
-msgstr ""
+msgstr "ციფრები: აკრიფეთ თქვენი პასუხი"
 
 #: activities/algebra_by/ActivityInfo.qml:27
 #: activities/algebra_div/ActivityInfo.qml:27
@@ -792,7 +792,7 @@ msgstr ""
 #: activities/roman_numerals/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid "Enter: validate your answer"
-msgstr ""
+msgstr "შეყვანა: გადაამოწმეთ თქვენი პასუხი"
 
 #: activities/algebra_by/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -848,7 +848,7 @@ msgstr "ისწავლეთ 9-ზე გამრავლების ც�
 #: activities/algebra_div/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Division of numbers"
-msgstr ""
+msgstr "რიცხვების გაყოფა"
 
 #. Help title
 #: activities/algebra_div/ActivityInfo.qml:17
@@ -866,7 +866,7 @@ msgstr ""
 #: activities/algebra_div/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid "Division of small numbers."
-msgstr ""
+msgstr "პატარა რიცხვების გაყოფა."
 
 #. Help manual
 #: activities/algebra_div/ActivityInfo.qml:24
@@ -931,7 +931,7 @@ msgstr "ისწავლეთ 9-ზე გაყოფის ცხრილ�
 #: activities/algebra_minus/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Subtraction of numbers"
-msgstr ""
+msgstr "რიცხვების გამოკლება"
 
 #. Help title
 #: activities/algebra_minus/ActivityInfo.qml:17
@@ -1197,7 +1197,7 @@ msgstr ""
 #: activities/alphabet-sequence/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Alphabet sequence"
-msgstr ""
+msgstr "ანბანის თანმიმდევრობა"
 
 #. Help title
 #: activities/alphabet-sequence/ActivityInfo.qml:17
@@ -1216,7 +1216,7 @@ msgstr "ანბანის თანმიმდევრობა."
 #: activities/alphabet-sequence/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid "Can decode letters."
-msgstr ""
+msgstr "ასოების დეკოდირების პრობლემა."
 
 #. Help manual
 #: activities/alphabet-sequence/ActivityInfo.qml:24
@@ -1233,7 +1233,7 @@ msgstr ""
 #: activities/planegame/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Arrows: move the helicopter"
-msgstr ""
+msgstr "ისრები: გადააადგილეთ ვერტმფრენი"
 
 #: activities/alphabet-sequence/AlphabetSequence.qml:18
 msgctxt "AlphabetSequence|"
@@ -1785,7 +1785,7 @@ msgstr ""
 #: activities/baby_keyboard/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Discover the keyboard."
-msgstr ""
+msgstr "აღმოაჩინეთ კლავიატურა."
 
 #. Help manual
 #: activities/baby_keyboard/ActivityInfo.qml:24
@@ -1804,7 +1804,7 @@ msgstr ""
 #: activities/baby_mouse/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Baby mouse"
-msgstr ""
+msgstr "წრუწუნა"
 
 #. Help title
 #: activities/baby_mouse/ActivityInfo.qml:16
@@ -2767,6 +2767,41 @@ msgstr ""
 msgctxt "ActivityInfo|"
 msgid "Space or Enter: validate your answer"
 msgstr ""
+
+#: activities/calendar/Calendar.qml:309
+msgctxt "Calendar|"
+msgid "Sunday"
+msgstr "კვირა"
+
+#: activities/calendar/Calendar.qml:310
+msgctxt "Calendar|"
+msgid "Monday"
+msgstr "ორშაბათი"
+
+#: activities/calendar/Calendar.qml:311
+msgctxt "Calendar|"
+msgid "Tuesday"
+msgstr "სამშაბათი"
+
+#: activities/calendar/Calendar.qml:312
+msgctxt "Calendar|"
+msgid "Wednesday"
+msgstr "ოთხშაბათი"
+
+#: activities/calendar/Calendar.qml:313
+msgctxt "Calendar|"
+msgid "Thursday"
+msgstr "ხუთშაბათი"
+
+#: activities/calendar/Calendar.qml:314
+msgctxt "Calendar|"
+msgid "Friday"
+msgstr "პარასკევი"
+
+#: activities/calendar/Calendar.qml:315
+msgctxt "Calendar|"
+msgid "Saturday"
+msgstr "შაბათი"
 
 #: activities/calendar/calendar_dataset.js:35
 msgctxt "calendar_dataset|"
@@ -8150,50 +8185,35 @@ msgstr ""
 #: activities/fractions_create/resource/4/Data.qml:17
 #: activities/fractions_create/resource/4/Data.qml:23
 #: activities/fractions_create/resource/4/Data.qml:29
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select %1% of the pie."
 msgctxt "Data|"
 msgid "Select one half of the square."
-msgstr "აირჩიეთ ნამცხვრის %1%."
+msgstr "აირჩიეთ ოთხკუთხედის ნახევარი."
 
 #: activities/fractions_create/resource/2/Data.qml:24
 #: activities/fractions_create/resource/4/Data.qml:35
 #: activities/fractions_create/resource/4/Data.qml:49
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select %1% of the pie."
 msgctxt "Data|"
 msgid "Select one-third of the square."
-msgstr "აირჩიეთ ნამცხვრის %1%."
+msgstr "აირჩიეთ ოთხკუთხედის ერთი მესამედი."
 
 #: activities/fractions_create/resource/2/Data.qml:30
 #: activities/fractions_create/resource/4/Data.qml:41
 #: activities/fractions_create/resource/4/Data.qml:55
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select %1% of the pie."
 msgctxt "Data|"
 msgid "Select two-thirds of the square."
-msgstr "აირჩიეთ ნამცხვრის %1%."
+msgstr "აირჩიეთ ოთხკუთხედის ორი მესამედი."
 
 #: activities/fractions_create/resource/2/Data.qml:36
 #: activities/fractions_create/resource/4/Data.qml:61
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select %1% of the pie."
 msgctxt "Data|"
 msgid "Select one-quarter of the square."
-msgstr "აირჩიეთ ნამცხვრის %1%."
+msgstr "აირჩიეთ ოთხკუთხედის ერთი მეოთხედი."
 
 #: activities/fractions_create/resource/2/Data.qml:42
 #: activities/fractions_create/resource/4/Data.qml:67
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select %1% of the pie."
 msgctxt "Data|"
 msgid "Select two-fifths of the square."
-msgstr "აირჩიეთ ნამცხვრის %1%."
+msgstr "აირჩიეთ ოთხკუთხედის ორი მეხუთედი."
 
 #: activities/fractions_create/resource/2/Data.qml:50
 msgctxt "Data|"
@@ -8236,12 +8256,9 @@ msgid "Non-simplified fractions with a square."
 msgstr ""
 
 #: activities/fractions_create/resource/4/Data.qml:73
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select %1% of the pie."
 msgctxt "Data|"
 msgid "Select three-fifths of the square."
-msgstr "აირჩიეთ ნამცხვრის %1%."
+msgstr "აირჩიეთ ოთხკუთხედის სამი მეხუთედი."
 
 #: activities/fractions_create/resource/5/Data.qml:9
 msgctxt "Data|"
@@ -8300,77 +8317,50 @@ msgid "Decimal numbers with a square."
 msgstr ""
 
 #: activities/fractions_create/resource/6/Data.qml:18
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select 0.5 pie."
 msgctxt "Data|"
 msgid "Select 0.5 square."
-msgstr "აირჩიეთ 0.5 ნამცხვარი."
+msgstr "აირჩიეთ 0.5 ოთხკუთხედი."
 
 #: activities/fractions_create/resource/6/Data.qml:24
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select 0.5 pie."
 msgctxt "Data|"
 msgid "Select 0.25 square."
-msgstr "აირჩიეთ 0.5 ნამცხვარი."
+msgstr "აირჩიეთ 0.25 ოთხკუთხედი."
 
 #: activities/fractions_create/resource/6/Data.qml:30
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select 0.4 pie."
 msgctxt "Data|"
 msgid "Select 0.4 square."
-msgstr "აირჩიეთ 0.4 ნამცხვარი."
+msgstr "აირჩიეთ 0.4 ოთხკუთხედი."
 
 #: activities/fractions_create/resource/6/Data.qml:36
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select 0.5 pie."
 msgctxt "Data|"
 msgid "Select 0.75 square."
-msgstr "აირჩიეთ 0.5 ნამცხვარი."
+msgstr "აირჩიეთ 0.75 ოთხკუთხედი."
 
 #: activities/fractions_create/resource/6/Data.qml:42
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select 0.8 pie."
 msgctxt "Data|"
 msgid "Select 0.8 square."
-msgstr "აირჩიეთ 0.8 ნამცხვარი."
+msgstr "აირჩიეთ 0.8 ოთხკუთხედი."
 
 #: activities/fractions_create/resource/6/Data.qml:50
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select 0.5 pie."
 msgctxt "Data|"
 msgid "Select 1.25 squares."
-msgstr "აირჩიეთ 0.5 ნამცხვარი."
+msgstr "აირჩიეთ 1.25 ოთხკუთხედი."
 
 #: activities/fractions_create/resource/6/Data.qml:56
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select 0.4 pie."
 msgctxt "Data|"
 msgid "Select 1.4 squares."
-msgstr "აირჩიეთ 0.4 ნამცხვარი."
+msgstr "აირჩიეთ 1.4 ოთხკუთხედი."
 
 #: activities/fractions_create/resource/6/Data.qml:62
 #: activities/fractions_create/resource/6/Data.qml:68
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select 0.5 pie."
 msgctxt "Data|"
 msgid "Select 1.5 squares."
-msgstr "აირჩიეთ 0.5 ნამცხვარი."
+msgstr "აირჩიეთ 1.5 ოთხკუთხედი."
 
 #: activities/fractions_create/resource/6/Data.qml:74
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select 0.5 pie."
 msgctxt "Data|"
 msgid "Select 1.75 squares."
-msgstr "აირჩიეთ 0.5 ნამცხვარი."
+msgstr "აირჩიეთ 1.75 ოთხკუთხედი."
 
 #: activities/fractions_create/resource/7/Data.qml:9
 msgctxt "Data|"
@@ -8403,12 +8393,10 @@ msgstr ""
 #: activities/fractions_create/resource/8/Data.qml:42
 #: activities/fractions_create/resource/8/Data.qml:49
 #: activities/fractions_create/resource/8/Data.qml:56
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Select %1% of the pie."
+#, qt-format
 msgctxt "Data|"
 msgid "Select %1% of the square."
-msgstr "აირჩიეთ ნამცხვრის %1%."
+msgstr "აირჩიეთ ოთხკუთხედის %1."
 
 #: activities/fractions_create/resource/9/Data.qml:9
 msgctxt "Data|"
@@ -13308,7 +13296,7 @@ msgstr "flower"
 #: activities/imagename/resource/board/board2_0.qml:98
 msgctxt "board2_0|"
 msgid "vase"
-msgstr ""
+msgstr "ვაზა"
 
 #: activities/imagename/resource/board/board3_0.qml:58
 msgctxt "board3_0|"
@@ -13343,7 +13331,7 @@ msgstr ""
 #: activities/imagename/resource/board/board4_0.qml:58
 msgctxt "board4_0|"
 msgid "apple"
-msgstr ""
+msgstr "ვაშლი"
 
 #: activities/imagename/resource/board/board4_0.qml:66
 msgctxt "board4_0|"
@@ -13358,7 +13346,7 @@ msgstr ""
 #: activities/imagename/resource/board/board4_0.qml:82
 msgctxt "board4_0|"
 msgid "car"
-msgstr ""
+msgstr "მანქანა"
 
 #: activities/imagename/resource/board/board4_0.qml:90
 msgctxt "board4_0|"
@@ -13373,7 +13361,7 @@ msgstr ""
 #: activities/imagename/resource/board/board5_0.qml:58
 msgctxt "board5_0|"
 msgid "pencil"
-msgstr ""
+msgstr "ფანქარი"
 
 #: activities/imagename/resource/board/board5_0.qml:66
 msgctxt "board5_0|"
@@ -13393,22 +13381,22 @@ msgstr "ვარსკვლავი"
 #: activities/imagename/resource/board/board5_0.qml:90
 msgctxt "board5_0|"
 msgid "truck"
-msgstr ""
+msgstr "სატვირთო"
 
 #: activities/imagename/resource/board/board5_0.qml:98
 msgctxt "board5_0|"
 msgid "van"
-msgstr ""
+msgstr "ფურგონი"
 
 #: activities/imagename/resource/board/board6_0.qml:58
 msgctxt "board6_0|"
 msgid "castle"
-msgstr ""
+msgstr "სასახლე"
 
 #: activities/imagename/resource/board/board6_0.qml:66
 msgctxt "board6_0|"
 msgid "crown"
-msgstr ""
+msgstr "გვირგვინი"
 
 #: activities/imagename/resource/board/board6_0.qml:74
 msgctxt "board6_0|"
@@ -13428,7 +13416,7 @@ msgstr ""
 #: activities/imagename/resource/board/board6_0.qml:98
 msgctxt "board6_0|"
 msgid "ball"
-msgstr ""
+msgstr "ბურთი"
 
 #: activities/imagename/resource/board/board7_0.qml:58
 msgctxt "board7_0|"
@@ -13939,7 +13927,7 @@ msgstr "დავალება"
 #: activities/lang/Lang.qml:197
 msgctxt "Lang|"
 msgid "sport"
-msgstr ""
+msgstr "სპორტი"
 
 #: activities/lang/Lang.qml:198
 msgctxt "Lang|"
@@ -13949,17 +13937,17 @@ msgstr "ბუნება"
 #: activities/lang/Lang.qml:198
 msgctxt "Lang|"
 msgid "animal"
-msgstr ""
+msgstr "ცხოველი"
 
 #: activities/lang/Lang.qml:199
 msgctxt "Lang|"
 msgid "fruit"
-msgstr ""
+msgstr "ნაყოფი"
 
 #: activities/lang/Lang.qml:199
 msgctxt "Lang|"
 msgid "plant"
-msgstr ""
+msgstr "მცენარე"
 
 #: activities/lang/Lang.qml:200
 msgctxt "Lang|"
@@ -13989,7 +13977,7 @@ msgstr ""
 #: activities/lang/Lang.qml:203
 msgctxt "Lang|"
 msgid "tool"
-msgstr ""
+msgstr "ხელსაწყო"
 
 #: activities/lang/Lang.qml:203
 msgctxt "Lang|"
@@ -16249,7 +16237,7 @@ msgstr ""
 #: activities/memory-wordnumber/dataset.js:27
 msgctxt "dataset|"
 msgid "sixteen"
-msgstr ""
+msgstr "თექვსმეტი"
 
 #: activities/memory-wordnumber/dataset.js:28
 msgctxt "dataset|"
@@ -16453,7 +16441,7 @@ msgstr ""
 #: activities/menu/BackgroundMusicList.qml:55
 msgctxt "BackgroundMusicList|"
 msgid "Background music"
-msgstr ""
+msgstr "ფონის მუსიკა"
 
 #: activities/menu/BackgroundMusicList.qml:117
 msgctxt "BackgroundMusicList|"
@@ -16644,12 +16632,12 @@ msgstr ""
 #: activities/menu/ConfigurationItem.qml:665
 msgctxt "ConfigurationItem|"
 msgid "All uppercase"
-msgstr ""
+msgstr "ყველა მაღალი რეგისტრით"
 
 #: activities/menu/ConfigurationItem.qml:666
 msgctxt "ConfigurationItem|"
 msgid "All lowercase"
-msgstr ""
+msgstr "ყველა დაბალი რეგისტრითა"
 
 #: activities/menu/Menu.qml:85
 msgctxt "Menu|"
@@ -23775,7 +23763,7 @@ msgstr ""
 #: core/main.qml:233
 msgctxt "main|"
 msgid "Voices for your language"
-msgstr ""
+msgstr "ხმები თქვენი ენისთვის"
 
 #: core/main.qml:234
 msgctxt "main|"
@@ -23785,7 +23773,7 @@ msgstr ""
 #: core/main.qml:235
 msgctxt "main|"
 msgid "Background music"
-msgstr ""
+msgstr "ფონის მუსიკა"
 
 #: core/main.qml:240
 msgctxt "main|"
@@ -23805,7 +23793,7 @@ msgstr ""
 #: core/main.qml:280
 msgctxt "main|"
 msgid "Welcome to GCompris!"
-msgstr ""
+msgstr "მოგესალმებათ GCompris!"
 
 #: core/main.qml:281
 msgctxt "main|"
@@ -23839,7 +23827,7 @@ msgstr ""
 #: core/ReadyButton.qml:67
 msgctxt "ReadyButton|"
 msgid "I am Ready"
-msgstr ""
+msgstr "მზად ვარ"
 
 #: core/Tutorial.qml:175
 msgctxt "Tutorial|"
@@ -23860,34 +23848,6 @@ msgstr "გამოტოვება"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "დაწყება"
-
-#~ msgctxt "Calendar|"
-#~ msgid "Sunday"
-#~ msgstr "კვირა"
-
-#~ msgctxt "Calendar|"
-#~ msgid "Monday"
-#~ msgstr "ორშაბათი"
-
-#~ msgctxt "Calendar|"
-#~ msgid "Tuesday"
-#~ msgstr "სამშაბათი"
-
-#~ msgctxt "Calendar|"
-#~ msgid "Wednesday"
-#~ msgstr "ოთხშაბათი"
-
-#~ msgctxt "Calendar|"
-#~ msgid "Thursday"
-#~ msgstr "ხუთშაბათი"
-
-#~ msgctxt "Calendar|"
-#~ msgid "Friday"
-#~ msgstr "პარასკევი"
-
-#~ msgctxt "Calendar|"
-#~ msgid "Saturday"
-#~ msgstr "შაბათი"
 
 #~ msgctxt "board1|"
 #~ msgid "Rooster"

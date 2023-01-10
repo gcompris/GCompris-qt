@@ -3135,6 +3135,41 @@ msgctxt "ActivityInfo|"
 msgid "Space or Enter: validate your answer"
 msgstr "Spațiu sau Enter: îți validează răspunsul"
 
+#: activities/calendar/Calendar.qml:309
+msgctxt "Calendar|"
+msgid "Sunday"
+msgstr "Duminică"
+
+#: activities/calendar/Calendar.qml:310
+msgctxt "Calendar|"
+msgid "Monday"
+msgstr "Luni"
+
+#: activities/calendar/Calendar.qml:311
+msgctxt "Calendar|"
+msgid "Tuesday"
+msgstr "Marți"
+
+#: activities/calendar/Calendar.qml:312
+msgctxt "Calendar|"
+msgid "Wednesday"
+msgstr "Miercuri"
+
+#: activities/calendar/Calendar.qml:313
+msgctxt "Calendar|"
+msgid "Thursday"
+msgstr "Joi"
+
+#: activities/calendar/Calendar.qml:314
+msgctxt "Calendar|"
+msgid "Friday"
+msgstr "Vineri"
+
+#: activities/calendar/Calendar.qml:315
+msgctxt "Calendar|"
+msgid "Saturday"
+msgstr "Sâmbătă"
+
 #: activities/calendar/calendar_dataset.js:35
 msgctxt "calendar_dataset|"
 msgid "Select the 23rd"
@@ -27433,34 +27468,6 @@ msgstr "Start"
 #~ "Joacă cu calculatorul. Fă clic pe rând pe linia pe care vrei să pui "
 #~ "jetonul. Câștigă primul jucător care reușește să creeze o linie de patru "
 #~ "jetoane."
-
-#~ msgctxt "Calendar|"
-#~ msgid "Sunday"
-#~ msgstr "Duminică"
-
-#~ msgctxt "Calendar|"
-#~ msgid "Monday"
-#~ msgstr "Luni"
-
-#~ msgctxt "Calendar|"
-#~ msgid "Tuesday"
-#~ msgstr "Marți"
-
-#~ msgctxt "Calendar|"
-#~ msgid "Wednesday"
-#~ msgstr "Miercuri"
-
-#~ msgctxt "Calendar|"
-#~ msgid "Thursday"
-#~ msgstr "Joi"
-
-#~ msgctxt "Calendar|"
-#~ msgid "Friday"
-#~ msgstr "Vineri"
-
-#~ msgctxt "Calendar|"
-#~ msgid "Saturday"
-#~ msgstr "Sâmbătă"
 
 #~ msgctxt "ActivityInfo|"
 #~ msgid "Play checkers against the computer"
