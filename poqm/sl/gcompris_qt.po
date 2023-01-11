@@ -3009,6 +3009,41 @@ msgctxt "ActivityInfo|"
 msgid "Space or Enter: validate your answer"
 msgstr "Preslednica ali Enter: preverite vaš odgovor"
 
+#: activities/calendar/Calendar.qml:309
+msgctxt "Calendar|"
+msgid "Sunday"
+msgstr "Nedelja"
+
+#: activities/calendar/Calendar.qml:310
+msgctxt "Calendar|"
+msgid "Monday"
+msgstr "Ponedeljek"
+
+#: activities/calendar/Calendar.qml:311
+msgctxt "Calendar|"
+msgid "Tuesday"
+msgstr "Torek"
+
+#: activities/calendar/Calendar.qml:312
+msgctxt "Calendar|"
+msgid "Wednesday"
+msgstr "Sreda"
+
+#: activities/calendar/Calendar.qml:313
+msgctxt "Calendar|"
+msgid "Thursday"
+msgstr "Četrtek"
+
+#: activities/calendar/Calendar.qml:314
+msgctxt "Calendar|"
+msgid "Friday"
+msgstr "Petek"
+
+#: activities/calendar/Calendar.qml:315
+msgctxt "Calendar|"
+msgid "Saturday"
+msgstr "Sobota"
+
 #: activities/calendar/calendar_dataset.js:35
 msgctxt "calendar_dataset|"
 msgid "Select the 23rd"
@@ -26045,34 +26080,6 @@ msgstr "Zaženi"
 #~ msgstr ""
 #~ "Igrajte se z računalnikom. Izmenično kliknite na kvadratek, ki ga želite "
 #~ "označiti. Zmaga prvi igralec, ki ustvari vrsto 3 oznak."
-
-#~ msgctxt "Calendar|"
-#~ msgid "Sunday"
-#~ msgstr "Nedelja"
-
-#~ msgctxt "Calendar|"
-#~ msgid "Monday"
-#~ msgstr "Ponedeljek"
-
-#~ msgctxt "Calendar|"
-#~ msgid "Tuesday"
-#~ msgstr "Torek"
-
-#~ msgctxt "Calendar|"
-#~ msgid "Wednesday"
-#~ msgstr "Sreda"
-
-#~ msgctxt "Calendar|"
-#~ msgid "Thursday"
-#~ msgstr "Četrtek"
-
-#~ msgctxt "Calendar|"
-#~ msgid "Friday"
-#~ msgstr "Petek"
-
-#~ msgctxt "Calendar|"
-#~ msgid "Saturday"
-#~ msgstr "Sobota"
 
 #~ msgctxt "Data|"
 #~ msgid ""

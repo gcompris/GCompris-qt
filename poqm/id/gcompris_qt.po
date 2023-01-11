@@ -3068,6 +3068,41 @@ msgctxt "ActivityInfo|"
 msgid "Space or Enter: validate your answer"
 msgstr "Spasi atau Enter: sahkan jawaban kamu"
 
+#: activities/calendar/Calendar.qml:309
+msgctxt "Calendar|"
+msgid "Sunday"
+msgstr "Minggu"
+
+#: activities/calendar/Calendar.qml:310
+msgctxt "Calendar|"
+msgid "Monday"
+msgstr "Senin"
+
+#: activities/calendar/Calendar.qml:311
+msgctxt "Calendar|"
+msgid "Tuesday"
+msgstr "Selasa"
+
+#: activities/calendar/Calendar.qml:312
+msgctxt "Calendar|"
+msgid "Wednesday"
+msgstr "Rabu"
+
+#: activities/calendar/Calendar.qml:313
+msgctxt "Calendar|"
+msgid "Thursday"
+msgstr "Kamis"
+
+#: activities/calendar/Calendar.qml:314
+msgctxt "Calendar|"
+msgid "Friday"
+msgstr "Jumat"
+
+#: activities/calendar/Calendar.qml:315
+msgctxt "Calendar|"
+msgid "Saturday"
+msgstr "Sabtu"
+
 #: activities/calendar/calendar_dataset.js:35
 msgctxt "calendar_dataset|"
 msgid "Select the 23rd"
@@ -26669,34 +26704,6 @@ msgstr "Mulai"
 #~ "Bermain dengan komputer. Main secara bergiliran untuk mengeklik kotak "
 #~ "yang ingin kamu tandai. Pemain pertama yang menciptakan baris dengan 3 "
 #~ "tanda menang."
-
-#~ msgctxt "Calendar|"
-#~ msgid "Sunday"
-#~ msgstr "Minggu"
-
-#~ msgctxt "Calendar|"
-#~ msgid "Monday"
-#~ msgstr "Senin"
-
-#~ msgctxt "Calendar|"
-#~ msgid "Tuesday"
-#~ msgstr "Selasa"
-
-#~ msgctxt "Calendar|"
-#~ msgid "Wednesday"
-#~ msgstr "Rabu"
-
-#~ msgctxt "Calendar|"
-#~ msgid "Thursday"
-#~ msgstr "Kamis"
-
-#~ msgctxt "Calendar|"
-#~ msgid "Friday"
-#~ msgstr "Jumat"
-
-#~ msgctxt "Calendar|"
-#~ msgid "Saturday"
-#~ msgstr "Sabtu"
 
 #~ msgctxt "Data|"
 #~ msgid ""

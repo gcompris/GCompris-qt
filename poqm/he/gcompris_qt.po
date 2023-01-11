@@ -2931,6 +2931,41 @@ msgctxt "ActivityInfo|"
 msgid "Space or Enter: validate your answer"
 msgstr "רווח או אנטר: לאשר את התשובה שלך"
 
+#: activities/calendar/Calendar.qml:309
+msgctxt "Calendar|"
+msgid "Sunday"
+msgstr "ראשון"
+
+#: activities/calendar/Calendar.qml:310
+msgctxt "Calendar|"
+msgid "Monday"
+msgstr "שני"
+
+#: activities/calendar/Calendar.qml:311
+msgctxt "Calendar|"
+msgid "Tuesday"
+msgstr "שלישי"
+
+#: activities/calendar/Calendar.qml:312
+msgctxt "Calendar|"
+msgid "Wednesday"
+msgstr "רביעי"
+
+#: activities/calendar/Calendar.qml:313
+msgctxt "Calendar|"
+msgid "Thursday"
+msgstr "חמישי"
+
+#: activities/calendar/Calendar.qml:314
+msgctxt "Calendar|"
+msgid "Friday"
+msgstr "שישי"
+
+#: activities/calendar/Calendar.qml:315
+msgctxt "Calendar|"
+msgid "Saturday"
+msgstr "שבת"
+
 #: activities/calendar/calendar_dataset.js:35
 msgctxt "calendar_dataset|"
 msgid "Select the 23rd"
@@ -4482,7 +4517,7 @@ msgstr "לבחור את המיקום שלך"
 #: activities/click_on_letter/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Click on a lowercase letter"
-msgstr "אותיות"
+msgstr "אותיות לטיניות קטנות"
 
 #. Help title
 #: activities/click_on_letter/ActivityInfo.qml:17
@@ -4535,7 +4570,7 @@ msgstr "טאב: לחזור על השאלה"
 #: activities/click_on_letter_up/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Click on an uppercase letter"
-msgstr "אותיות"
+msgstr "אותיות לטיניות גדולות"
 
 #: activities/clickanddraw/ActivityConfig.qml:21
 #: activities/drawletters/ActivityConfig.qml:21
@@ -15472,12 +15507,12 @@ msgstr "רק 5 מילים"
 #: activities/letter-in-word/ActivityConfig.qml:59
 msgctxt "ActivityConfig|"
 msgid "Select the case for the letters to search"
-msgstr "לבחור מצב לחפש בו אותיות"
+msgstr "האם לחפש אותיות גדולות או קטנות?"
 
 #: activities/letter-in-word/ActivityConfig.qml:62
 msgctxt "ActivityConfig|"
 msgid "Mixed Case"
-msgstr "מצב מעורבב"
+msgstr "שתיהן"
 
 #: activities/letter-in-word/ActivityConfig.qml:63
 msgctxt "ActivityConfig|"
@@ -16255,7 +16290,7 @@ msgstr "משחק זכרון: אותיות גדולות וקטנות"
 #: activities/memory-case-association/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Flip the cards to find the uppercase and lowercase of the same letter."
-msgstr "להפוך את הקלפים כדי למ"
+msgstr "להפוך את הקלפים כדי למצוא זוגות של אות קטנה ואות גדולה"
 
 #. Activity title
 #: activities/memory-enumerate/ActivityInfo.qml:15
@@ -20916,11 +20951,11 @@ msgid ""
 "equipment can shut down which, in the worst cases, can lead to a major "
 "regional blackout."
 msgstr ""
-"זה בלתי אפשרי לצרוך יותר אנרגיה ממה שמיוצר. יש הגבלה בסיסית בהולכה של חשמל, "
-"עם מעט יוצאי דופן, לא ניתן לאגור אנרגיה חשמלית ולכן יש לייצר אותה כשהיא "
-"נדרשת. מערכת שליטה מתוחכמת נדרשת כדי להבטיח יצור חשמל בהתאמה קרובה מאוד "
-"לביקוש. אם האספקה והביקוש אינם באיזון, תחנות כח וציוד הולכה עלולים להכבות, "
-"מה שבמקרים גרועים עלול להוביל להפסקת חשמל אזורית גדולה."
+"זה בלתי אפשרי לצרוך יותר חשמל ממה שמיוצר. יש הגבלה בסיסית בהולכה של חשמל, עם "
+"מעט יוצאי דופן, לא ניתן לאגור אנרגיה חשמלית ולכן יש לייצר אותה כשהיא נדרשת. "
+"מערכת שליטה מתוחכמת נדרשת כדי להבטיח יצור חשמל בהתאמה קרובה מאוד לביקוש. אם "
+"האספקה והביקוש אינם באיזון, תחנות כח וציוד הולכה עלולים להכבות, מה שבתרחיש "
+"הגרוע ביותר עלול להוביל להפסקת חשמל אזורית גדולה."
 
 #: activities/reversecount/ActivityConfig.qml:22
 #: activities/smallnumbers2/ActivityConfig.qml:21
@@ -23813,7 +23848,7 @@ msgid ""
 "'givens'). Each row, column and region must contain only one instance of "
 "each symbol or numeral (Source &lt;https://en.wikipedia.org/wiki/Sudoku&gt;)."
 msgstr ""
-"מטרת המשחק היא להציב סמלים או מספרים מ1 עד 9 בכל תא של הרשת. בסודוקו הרשמי "
+"מטרת המשחק היא להציב סמלים או מספרים מ־1 עד 9 בכל תא של הרשת. בסודוקו הרשמי "
 "הרשת היא של 9x9 ולה 3x3 רשתות משנה (שנקראות 'אזורים'). ב־GCompris אנחנו "
 "מתחילים בשלבים הנמוכים בגירסא פשוטה יותר ומשתמשים בסמלים וללא אזורים. בכל "
 "המקרים הרשת מוצגת עם סמלים שונים או ספרות שנתונים בחלק מהתאים ('הנתונים'). "
@@ -25582,34 +25617,6 @@ msgstr "להתחיל"
 #~ msgstr ""
 #~ "לשחק עם המחשב. בתורות להקיש על הריבוע שרוצים לסמן. הראשון/ה ליצור שורה של "
 #~ "3 סימונים זוכה."
-
-#~ msgctxt "Calendar|"
-#~ msgid "Sunday"
-#~ msgstr "ראשון"
-
-#~ msgctxt "Calendar|"
-#~ msgid "Monday"
-#~ msgstr "שני"
-
-#~ msgctxt "Calendar|"
-#~ msgid "Tuesday"
-#~ msgstr "שלישי"
-
-#~ msgctxt "Calendar|"
-#~ msgid "Wednesday"
-#~ msgstr "רביעי"
-
-#~ msgctxt "Calendar|"
-#~ msgid "Thursday"
-#~ msgstr "חמישי"
-
-#~ msgctxt "Calendar|"
-#~ msgid "Friday"
-#~ msgstr "שישי"
-
-#~ msgctxt "Calendar|"
-#~ msgid "Saturday"
-#~ msgstr "שבת"
 
 #~ msgctxt "Data|"
 #~ msgid ""
