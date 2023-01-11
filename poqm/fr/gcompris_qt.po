@@ -3103,36 +3103,57 @@ msgid "Space or Enter: validate your answer"
 msgstr "Espace ou Entrée : valider ta réponse"
 
 #: activities/calendar/Calendar.qml:309
+#, fuzzy
+#| msgctxt "Calendar|"
+#| msgid "Sunday"
 msgctxt "Calendar|"
 msgid "Sunday"
 msgstr "Dimanche"
 
 #: activities/calendar/Calendar.qml:310
+#, fuzzy
+#| msgctxt "Calendar|"
+#| msgid "Monday"
 msgctxt "Calendar|"
 msgid "Monday"
 msgstr "Lundi"
 
 #: activities/calendar/Calendar.qml:311
+#, fuzzy
+#| msgctxt "Calendar|"
+#| msgid "Tuesday"
 msgctxt "Calendar|"
 msgid "Tuesday"
 msgstr "Mardi"
 
 #: activities/calendar/Calendar.qml:312
+#, fuzzy
+#| msgctxt "Calendar|"
+#| msgid "Wednesday"
 msgctxt "Calendar|"
 msgid "Wednesday"
 msgstr "Mercredi"
 
 #: activities/calendar/Calendar.qml:313
+#, fuzzy
+#| msgctxt "Calendar|"
+#| msgid "Thursday"
 msgctxt "Calendar|"
 msgid "Thursday"
 msgstr "Jeudi"
 
 #: activities/calendar/Calendar.qml:314
+#, fuzzy
+#| msgctxt "Calendar|"
+#| msgid "Friday"
 msgctxt "Calendar|"
 msgid "Friday"
 msgstr "Vendredi"
 
 #: activities/calendar/Calendar.qml:315
+#, fuzzy
+#| msgctxt "Calendar|"
+#| msgid "Saturday"
 msgctxt "Calendar|"
 msgid "Saturday"
 msgstr "Samedi"

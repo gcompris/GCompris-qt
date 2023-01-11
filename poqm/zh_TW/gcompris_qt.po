@@ -5034,12 +5034,9 @@ msgid "Numbers from 1 to 9."
 msgstr "從 1 到 9 的數字。"
 
 #: activities/comparator/resource/10/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "2 decimal places between 0 and 99.99."
 msgctxt "Data|"
 msgid "3 decimal places between 0 and 999.999."
-msgstr "從 0 到 99.99 的兩位小數。"
+msgstr "從 0 到 999.999 的三位小數。"
 
 #: activities/comparator/resource/2/Data.qml:14
 msgctxt "Data|"
@@ -5067,20 +5064,14 @@ msgid "Numbers from 1 to 1 billion."
 msgstr "從 1 到 10億 的數字。"
 
 #: activities/comparator/resource/7/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "1 decimal place between 0 and 9, same integer part."
 msgctxt "Data|"
 msgid "1 decimal place between 0 and 9.9, same integer part."
-msgstr "從 0 到 9 的一位小數，整數部份相同。"
+msgstr "從 0 到 9.9 的一位小數，整數部份相同。"
 
 #: activities/comparator/resource/8/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "1 decimal place between 0 and 9."
 msgctxt "Data|"
 msgid "1 decimal place between 0 and 9.9."
-msgstr "從 0 到 9 的一位數。"
+msgstr "從 0 到 9.9 的一位小數。"
 
 #: activities/comparator/resource/9/Data.qml:14
 msgctxt "Data|"
@@ -8669,120 +8660,80 @@ msgid "Select one pie and three-quarters of a pie."
 msgstr "選擇一又四分之三個圓餅。"
 
 #: activities/fractions_create/resource/10/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Specific questions with a pie."
 msgctxt "Data|"
 msgid "Specific questions with a square."
-msgstr "用圓餅來練習。"
+msgstr "用方塊來練習。"
 
 #: activities/fractions_create/resource/10/Data.qml:18
 #: activities/fractions_create/resource/10/Data.qml:24
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid ""
-#| "Select as many parts as you can without taking more than half of the pie."
 msgctxt "Data|"
 msgid ""
 "Select as many parts as you can without taking more than half of the square."
-msgstr "盡可能選擇不超過一半圓餅的部份。"
+msgstr "盡可能選擇不超過一半方塊的部份。"
 
 #: activities/fractions_create/resource/2/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Simplified fractions with a pie."
 msgctxt "Data|"
 msgid "Simplified fractions with a square."
-msgstr "用圓餅來選擇最簡分數。"
+msgstr "用方塊來選擇最簡分數。"
 
 #: activities/fractions_create/resource/2/Data.qml:18
 #: activities/fractions_create/resource/4/Data.qml:17
 #: activities/fractions_create/resource/4/Data.qml:23
 #: activities/fractions_create/resource/4/Data.qml:29
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select one half of the pie."
 msgctxt "Data|"
 msgid "Select one half of the square."
-msgstr "選擇圓餅的一半。"
+msgstr "選擇方塊的一半。"
 
 #: activities/fractions_create/resource/2/Data.qml:24
 #: activities/fractions_create/resource/4/Data.qml:35
 #: activities/fractions_create/resource/4/Data.qml:49
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select one-third of the pie."
 msgctxt "Data|"
 msgid "Select one-third of the square."
-msgstr "選擇圓餅的三分之一。"
+msgstr "選擇方塊的三分之一。"
 
 #: activities/fractions_create/resource/2/Data.qml:30
 #: activities/fractions_create/resource/4/Data.qml:41
 #: activities/fractions_create/resource/4/Data.qml:55
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select two-thirds of the pie."
 msgctxt "Data|"
 msgid "Select two-thirds of the square."
-msgstr "選擇圓餅的三分之二。"
+msgstr "選擇方塊的三分之二。"
 
 #: activities/fractions_create/resource/2/Data.qml:36
 #: activities/fractions_create/resource/4/Data.qml:61
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select one-quarter of the pie."
 msgctxt "Data|"
 msgid "Select one-quarter of the square."
-msgstr "選擇圓餅的四分之一。"
+msgstr "選擇方塊的四分之一。"
 
 #: activities/fractions_create/resource/2/Data.qml:42
 #: activities/fractions_create/resource/4/Data.qml:67
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select two-fifths of the pie."
 msgctxt "Data|"
 msgid "Select two-fifths of the square."
-msgstr "選擇圓餅的五分之二。"
+msgstr "選擇方塊的五分之二。"
 
 #: activities/fractions_create/resource/2/Data.qml:50
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select one pie and one-quarter of a pie."
 msgctxt "Data|"
 msgid "Select one square and one-quarter of a square."
-msgstr "選擇一又四分之一個圓餅。"
+msgstr "選擇一又四分之一個方塊。"
 
 #: activities/fractions_create/resource/2/Data.qml:56
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select one pie and two-fifths of a pie."
 msgctxt "Data|"
 msgid "Select one square and two-fifths of a square."
-msgstr "選擇一又五分之二個圓餅。"
+msgstr "選擇一又五分之二個方塊。"
 
 #: activities/fractions_create/resource/2/Data.qml:62
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select one pie and one-third of a pie."
 msgctxt "Data|"
 msgid "Select one square and one-third of a square."
-msgstr "選擇一又三分之一個圓餅。"
+msgstr "選擇一又三分之一個方塊。"
 
 #: activities/fractions_create/resource/2/Data.qml:68
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select one pie and one half of a pie."
 msgctxt "Data|"
 msgid "Select one square and one half of a square."
-msgstr "選擇一又二分之一個圓餅。"
+msgstr "選擇一又二分之一個方塊。"
 
 #: activities/fractions_create/resource/2/Data.qml:74
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select one pie and three-quarters of a pie."
 msgctxt "Data|"
 msgid "Select one square and three-quarters of a square."
-msgstr "選擇一又四分之三個圓餅。"
+msgstr "選擇一又四分之三個方塊。"
 
 #: activities/fractions_create/resource/3/Data.qml:9
 msgctxt "Data|"
@@ -8795,20 +8746,14 @@ msgid "Select three-fifths of the pie."
 msgstr "選擇圓餅的五分之三。"
 
 #: activities/fractions_create/resource/4/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Non-simplified fractions with a pie."
 msgctxt "Data|"
 msgid "Non-simplified fractions with a square."
-msgstr "用圓餅來選擇非最簡的分數。"
+msgstr "用方塊來選擇非最簡的分數。"
 
 #: activities/fractions_create/resource/4/Data.qml:73
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select three-fifths of the pie."
 msgctxt "Data|"
 msgid "Select three-fifths of the square."
-msgstr "選擇圓餅的五分之三。"
+msgstr "選擇方塊的五分之三。"
 
 #: activities/fractions_create/resource/5/Data.qml:9
 msgctxt "Data|"
@@ -8862,85 +8807,55 @@ msgid "Select 1.75 pies."
 msgstr "選擇 1.75 個圓餅。"
 
 #: activities/fractions_create/resource/6/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Decimal numbers with a pie."
 msgctxt "Data|"
 msgid "Decimal numbers with a square."
-msgstr "用圓餅來學習小數。"
+msgstr "用方塊來學習小數。"
 
 #: activities/fractions_create/resource/6/Data.qml:18
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select 0.5 pie."
 msgctxt "Data|"
 msgid "Select 0.5 square."
-msgstr "選擇 0.5 個圓餅。"
+msgstr "選擇 0.5 個方塊。"
 
 #: activities/fractions_create/resource/6/Data.qml:24
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select 0.25 pie."
 msgctxt "Data|"
 msgid "Select 0.25 square."
-msgstr "選擇 0.25 個圓餅。"
+msgstr "選擇 0.25 個方塊。"
 
 #: activities/fractions_create/resource/6/Data.qml:30
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select 0.4 pie."
 msgctxt "Data|"
 msgid "Select 0.4 square."
-msgstr "選擇 0.4 個圓餅。"
+msgstr "選擇 0.4 個方塊。"
 
 #: activities/fractions_create/resource/6/Data.qml:36
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select 0.75 pie."
 msgctxt "Data|"
 msgid "Select 0.75 square."
-msgstr "選擇 0.75 個圓餅。"
+msgstr "選擇 0.75 個方塊。"
 
 #: activities/fractions_create/resource/6/Data.qml:42
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select 0.8 pie."
 msgctxt "Data|"
 msgid "Select 0.8 square."
-msgstr "選擇 0.8 個圓餅。"
+msgstr "選擇 0.8 個方塊。"
 
 #: activities/fractions_create/resource/6/Data.qml:50
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select 1.25 pies."
 msgctxt "Data|"
 msgid "Select 1.25 squares."
-msgstr "選擇 1.25 個圓餅。"
+msgstr "選擇 1.25 個方塊。"
 
 #: activities/fractions_create/resource/6/Data.qml:56
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select 1.4 pies."
 msgctxt "Data|"
 msgid "Select 1.4 squares."
-msgstr "選擇 1.4 個圓餅。"
+msgstr "選擇 1.4 個方塊。"
 
 #: activities/fractions_create/resource/6/Data.qml:62
 #: activities/fractions_create/resource/6/Data.qml:68
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select 1.5 pies."
 msgctxt "Data|"
 msgid "Select 1.5 squares."
-msgstr "選擇 1.5 個圓餅。"
+msgstr "選擇 1.5 個方塊。"
 
 #: activities/fractions_create/resource/6/Data.qml:74
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select 1.75 pies."
 msgctxt "Data|"
 msgid "Select 1.75 squares."
-msgstr "選擇 1.75 個圓餅。"
+msgstr "選擇 1.75 個方塊。"
 
 #: activities/fractions_create/resource/7/Data.qml:9
 msgctxt "Data|"
@@ -8962,12 +8877,9 @@ msgid "Select %1% of the pie."
 msgstr "選擇 %1% 個圓餅。"
 
 #: activities/fractions_create/resource/8/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Percentages with a pie."
 msgctxt "Data|"
 msgid "Percentages with a square."
-msgstr "用圓餅來學習百分比。"
+msgstr "用方塊來學習百分比。"
 
 #. Select %1 percent of the square.
 #: activities/fractions_create/resource/8/Data.qml:19
@@ -8976,12 +8888,10 @@ msgstr "用圓餅來學習百分比。"
 #: activities/fractions_create/resource/8/Data.qml:42
 #: activities/fractions_create/resource/8/Data.qml:49
 #: activities/fractions_create/resource/8/Data.qml:56
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Select %1% of the pie."
+#, qt-format
 msgctxt "Data|"
 msgid "Select %1% of the square."
-msgstr "選擇 %1% 個圓餅。"
+msgstr "選擇 %1% 個方塊。"
 
 #: activities/fractions_create/resource/9/Data.qml:9
 msgctxt "Data|"
@@ -9013,12 +8923,9 @@ msgid "Find numerator (with a pie)."
 msgstr "用圓餅來找出分子。"
 
 #: activities/fractions_find/resource/2/Data.qml:19
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find numerator (with a pie)."
 msgctxt "Data|"
 msgid "Find numerator (with a square)."
-msgstr "用圓餅來找出分子。"
+msgstr "用方塊來找出分子。"
 
 #: activities/fractions_find/resource/3/Data.qml:9
 msgctxt "Data|"
@@ -9026,12 +8933,9 @@ msgid "Find denominator (with a pie)."
 msgstr "用圓餅來找出分母。"
 
 #: activities/fractions_find/resource/4/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find denominator (with a pie)."
 msgctxt "Data|"
 msgid "Find denominator (with a square)."
-msgstr "用圓餅來找出分母。"
+msgstr "用方塊來找出分母。"
 
 #: activities/fractions_find/resource/5/Data.qml:9
 msgctxt "Data|"
@@ -9039,12 +8943,9 @@ msgid "Find numerator and denominator (with a pie)."
 msgstr "用圓餅來找出分母與分子。"
 
 #: activities/fractions_find/resource/6/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find numerator and denominator (with a pie)."
 msgctxt "Data|"
 msgid "Find numerator and denominator (with a square)."
-msgstr "用圓餅來找出分母與分子。"
+msgstr "用方塊來找出分母與分子。"
 
 #. Activity title
 #: activities/geo-country/ActivityInfo.qml:19
@@ -10278,12 +10179,9 @@ msgid "Suvalkija"
 msgstr "Suvalkija"
 
 #: activities/geo-country/resource/board/board18_0.qml:13
-#, fuzzy
-#| msgctxt "board18_0|"
-#| msgid "Autonomous communities of Spain"
 msgctxt "board18_0|"
 msgid "Autonomous communities or cities of Spain"
-msgstr "西班牙的自治區"
+msgstr "西班牙的自治區或城市"
 
 #. Autonomous communities of Spain: Andalusia
 #: activities/geo-country/resource/board/board18_0.qml:22
@@ -23971,11 +23869,6 @@ msgid "As the sun rises, the water of the sea starts heating and evaporates."
 msgstr "太陽升起時，海裡的水會開始被加熱而蒸發。"
 
 #: activities/watercycle/Watercycle.qml:80
-#, fuzzy
-#| msgctxt "Watercycle|"
-#| msgid ""
-#| "Water vapor condenses to form cloud and when clouds become heavy, it "
-#| "rains. Click on the cloud."
 msgctxt "Watercycle|"
 msgid ""
 "Water vapor condenses to form clouds and when clouds become heavy, it rains. "
@@ -24020,12 +23913,6 @@ msgstr ""
 "蒸發需要的能量。"
 
 #: activities/watercycle/Watercycle.qml:115
-#, fuzzy
-#| msgctxt "Watercycle|"
-#| msgid ""
-#| "Plants also lose water to the air through transpiration. The water vapor "
-#| "cools down forming tiny droplets in clouds. When the clouds meet cool air "
-#| "over the land, precipitation is triggered and fall down as rain."
 msgctxt "Watercycle|"
 msgid ""
 "Plants also lose water to the air through transpiration. The water vapor "
