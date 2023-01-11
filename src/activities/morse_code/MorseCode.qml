@@ -183,14 +183,14 @@ ActivityBase {
             property string alpha
             property string morse
             // TODO Need to double check the values just in case...
-            property var table : {
+            property var table: {
              "A" : ".-", "B" : "-...", "C" : "-.-.", "D" : "-..",  "E" : ".", "F" : "..-.", "G" : "--.",
              "H" : "....", "I" : "..", "J" : ".---", "K" : "-.-",  "L" : ".-..","M" : "--","N" : "-.",
              "O" : "---", "P" : ".--.", "Q" : "--.-", "R" : ".-.",  "S" : "...","T" : "-", "U" : "..-",
              "V" : "...-", "W" : ".--",  "X" : "-..-",  "Y" : "-.--","Z" : "--..","1" : ".----","2" : "..---",
              "3" : "...--",  "4" : "....-", "5" : ".....", "6" : "-....",  "7" : "--...",  "8" : "---..",
              "9" : "----." , "0" : "-----"
-            };
+            }
             function morse2alpha(str) {
                 var letters = ""
                 var input = []
