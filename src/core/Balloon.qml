@@ -59,7 +59,19 @@ Image {
      */
     property bool disabled
 
-    onParentHeightChanged: startMoving(duration)
+    /**
+     * type:boolean
+     * To know if the activity is running or not
+     * Is set to false in stopBalloon, which should be called by activity's onStop
+     * to avoid restarting the animation in onParentHeightChanged.
+     */
+    property bool activityRunning: true
+
+    onParentHeightChanged: {
+        if(activityRunning) {
+            startMoving(duration)
+        }
+    }
 
     // Starts the countdown and down animation starts.
     function startMoving(durationIncoming)
@@ -74,8 +86,17 @@ Image {
     function stopMoving()
     {
         disabled = true
-        reinit.start()
         down.stop()
+        reinit.start()
+    }
+
+    // Completely stop the ballon when the activity stops.
+    function stopBalloon()
+    {
+        activityRunning = false
+        disabled = true
+        down.stop()
+        reinit.stop()
     }
 
     ParallelAnimation {
