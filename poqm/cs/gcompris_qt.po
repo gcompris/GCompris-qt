@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2022-09-21 15:56+0200\n"
-"Last-Translator: Vit Pelcak <vpelcak@suse.cz>\n"
+"PO-Revision-Date: 2023-01-03 15:50+0100\n"
+"Last-Translator: Vit Pelcak <vit@pelcak.org>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
@@ -2995,43 +2995,37 @@ msgstr "Mezerník nebo Enter: ověření odpovědi"
 #: activities/calendar/Calendar.qml:309
 msgctxt "Calendar|"
 msgid "Sunday"
-msgstr ""
+msgstr "Neděle"
 
 #: activities/calendar/Calendar.qml:310
 msgctxt "Calendar|"
 msgid "Monday"
-msgstr ""
+msgstr "Pondělí"
 
 #: activities/calendar/Calendar.qml:311
 msgctxt "Calendar|"
 msgid "Tuesday"
-msgstr ""
+msgstr "Úterý"
 
 #: activities/calendar/Calendar.qml:312
 msgctxt "Calendar|"
 msgid "Wednesday"
-msgstr ""
+msgstr "Středa"
 
 #: activities/calendar/Calendar.qml:313
 msgctxt "Calendar|"
 msgid "Thursday"
-msgstr ""
+msgstr "Čtvrtek"
 
 #: activities/calendar/Calendar.qml:314
-#, fuzzy
-#| msgctxt "board10_0|"
-#| msgid "Florida"
 msgctxt "Calendar|"
 msgid "Friday"
-msgstr "Florida"
+msgstr "Pátek"
 
 #: activities/calendar/Calendar.qml:315
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "Saturn"
 msgctxt "Calendar|"
 msgid "Saturday"
-msgstr "Saturn"
+msgstr "Sobota"
 
 #: activities/calendar/calendar_dataset.js:35
 msgctxt "calendar_dataset|"

@@ -15585,8 +15585,8 @@ msgid ""
 "An addition is displayed on the screen. Calculate the result, fill the "
 "corresponding number of circles and validate your answer."
 msgstr ""
-"En la pantalla es mostra una suma. Calculeu el resultat, ompliu el nombre de "
-"cercles corresponent i valideu la resposta."
+"En la pantalla es mostra una suma. Calculeu el resultat, empleneu el nombre "
+"de cercles corresponent i valideu la resposta."
 
 #: activities/learn_additions/ActivityInfo.qml:27
 #: activities/learn_digits/ActivityInfo.qml:27
@@ -15956,8 +15956,8 @@ msgid ""
 "A digit is displayed on the screen. Fill the corresponding number of circles "
 "and validate your answer."
 msgstr ""
-"En la pantalla es mostra un dígit. Ompliu el nombre de cercles corresponent "
-"i valideu la resposta."
+"En la pantalla es mostra un dígit. Empleneu el nombre de cercles "
+"corresponent i valideu la resposta."
 
 #: activities/learn_digits/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
@@ -16100,7 +16100,7 @@ msgid ""
 "A subtraction is displayed on the screen. Calculate the result, fill the "
 "corresponding number of circles and validate your answer."
 msgstr ""
-"En la pantalla es mostra una resta. Calculeu el resultat, ompliu el nombre "
+"En la pantalla es mostra una resta. Calculeu el resultat, empleneu el nombre "
 "de cercles corresponent i valideu la resposta."
 
 #: activities/learn_subtractions/resource/1/Data.qml:14
