@@ -22941,7 +22941,7 @@ msgstr[1] "Plasează %n băieți "
 msgstr[2] "Așează %n băieți "
 
 #: activities/share/share.js:101
-#, fuzzy, qt-format
+#, qt-format
 msgctxt ""
 "share|Second part of Place %n boy(s) and %n girl(s) in the center. Then "
 "split %n pieces of candy equally between them."
@@ -22952,7 +22952,7 @@ msgstr[1] "și %n fete în centru. "
 msgstr[2] "și %n fete în centru. "
 
 #: activities/share/share.js:105
-#, fuzzy, qt-format
+#, qt-format
 msgctxt ""
 "share|Third part of Place %n boy(s) and %n girl(s) in the center. Then split "
 "%n pieces of candy equally between them."
