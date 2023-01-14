@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2022-12-25 12:24+0200\n"
+"PO-Revision-Date: 2023-01-14 14:21+0200\n"
 "Last-Translator: Stelios <sstavra@gmail.com>\n"
 "Language-Team: Greek <kde-i18n-el@kde.org>\n"
 "Language: el\n"
@@ -5413,12 +5413,9 @@ msgid "Numbers from 1 to 9."
 msgstr "Αριθμοί από το 1 ως το 9."
 
 #: activities/comparator/resource/10/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "2 decimal places between 0 and 99.99."
 msgctxt "Data|"
 msgid "3 decimal places between 0 and 999.999."
-msgstr "2 δεκαδικά ψηφία μεταξύ 0 και 99,99."
+msgstr "3 δεκαδικά ψηφία μεταξύ 0 και 999,999."
 
 #: activities/comparator/resource/2/Data.qml:14
 msgctxt "Data|"
@@ -5446,20 +5443,14 @@ msgid "Numbers from 1 to 1 billion."
 msgstr "Αριθμοί από το 1 ως το 1 δισεκατομμύριο."
 
 #: activities/comparator/resource/7/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "1 decimal place between 0 and 9, same integer part."
 msgctxt "Data|"
 msgid "1 decimal place between 0 and 9.9, same integer part."
-msgstr "1 δεκαδικό ψηφίο μεταξύ 0 και 9, ίδιο ακέραιο μέρος."
+msgstr "1 δεκαδικό ψηφίο μεταξύ 0 και 9,9, ίδιο ακέραιο μέρος."
 
 #: activities/comparator/resource/8/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "1 decimal place between 0 and 9."
 msgctxt "Data|"
 msgid "1 decimal place between 0 and 9.9."
-msgstr "1 δεκαδικό ψηφίο μεταξύ 0 και 9."
+msgstr "1 δεκαδικό ψηφίο μεταξύ 0 και 9,9."
 
 #: activities/comparator/resource/9/Data.qml:14
 msgctxt "Data|"
@@ -9364,7 +9355,7 @@ msgstr "Βρες το κλάσμα που αναπαριστάται."
 #: activities/fractions_create/resource/1/Data.qml:9
 msgctxt "Data|"
 msgid "Simplified fractions with a pie."
-msgstr "Απλοποιημένα κλάσματα με γράφημα πίτας."
+msgstr "Απλοποιημένα κλάσματα με πίτα."
 
 #: activities/fractions_create/resource/1/Data.qml:18
 #: activities/fractions_create/resource/3/Data.qml:17
@@ -9426,127 +9417,87 @@ msgid "Select one pie and three-quarters of a pie."
 msgstr "Επίλεξε μια πίτα και τρία τέταρτα της πίτας."
 
 #: activities/fractions_create/resource/10/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Specific questions with a pie."
 msgctxt "Data|"
 msgid "Specific questions with a square."
-msgstr "Ερωτήσεις με γράφημα πίτας."
+msgstr "Συγκεκριμένες ερωτήσεις με τετράγωνο."
 
 #: activities/fractions_create/resource/10/Data.qml:18
 #: activities/fractions_create/resource/10/Data.qml:24
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid ""
-#| "Select as many parts as you can without taking more than half of the pie."
 msgctxt "Data|"
 msgid ""
 "Select as many parts as you can without taking more than half of the square."
 msgstr ""
-"Επίλεξε όσα περισσότερα μέρη μπορείς, χωρίς να πάρεις περισσότερο από το "
-"μισό της πίτας."
+"Επίλεξε όσο περισσότερα μέρη μπορείς, χωρίς όμως να επιλέξεις περισσότερο "
+"από το μισό του τετραγώνου."
 
 #: activities/fractions_create/resource/2/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Simplified fractions with a pie."
 msgctxt "Data|"
 msgid "Simplified fractions with a square."
-msgstr "Απλοποιημένα κλάσματα με γράφημα πίτας."
+msgstr "Απλοποιημένα κλάσματα με τετράγωνο."
 
 #: activities/fractions_create/resource/2/Data.qml:18
 #: activities/fractions_create/resource/4/Data.qml:17
 #: activities/fractions_create/resource/4/Data.qml:23
 #: activities/fractions_create/resource/4/Data.qml:29
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select one half of the pie."
 msgctxt "Data|"
 msgid "Select one half of the square."
-msgstr "Επίλεξε το μισό της πίτας."
+msgstr "Επίλεξε το μισό του τετραγώνου."
 
 #: activities/fractions_create/resource/2/Data.qml:24
 #: activities/fractions_create/resource/4/Data.qml:35
 #: activities/fractions_create/resource/4/Data.qml:49
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select one-third of the pie."
 msgctxt "Data|"
 msgid "Select one-third of the square."
-msgstr "Επίλεξε το ένα τρίτο της πίτας."
+msgstr "Επίλεξε το ένα τρίτο του τετραγώνου."
 
 #: activities/fractions_create/resource/2/Data.qml:30
 #: activities/fractions_create/resource/4/Data.qml:41
 #: activities/fractions_create/resource/4/Data.qml:55
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select two-thirds of the pie."
 msgctxt "Data|"
 msgid "Select two-thirds of the square."
-msgstr "Επίλεξε τα δύο τρίτα της πίτας."
+msgstr "Επίλεξε τα δύο τρίτα του τετραγώνου."
 
 #: activities/fractions_create/resource/2/Data.qml:36
 #: activities/fractions_create/resource/4/Data.qml:61
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select one-quarter of the pie."
 msgctxt "Data|"
 msgid "Select one-quarter of the square."
-msgstr "Επίλεξε το ένα τέταρτο της πίτας."
+msgstr "Επίλεξε το ένα τέταρτο του τετραγώνου."
 
 #: activities/fractions_create/resource/2/Data.qml:42
 #: activities/fractions_create/resource/4/Data.qml:67
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select two-fifths of the pie."
 msgctxt "Data|"
 msgid "Select two-fifths of the square."
-msgstr "Επίλεξε τα δύο πέμπτα της πίτας."
+msgstr "Επίλεξε τα δύο πέμπτα του τετραγώνου."
 
 #: activities/fractions_create/resource/2/Data.qml:50
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select one pie and one-quarter of a pie."
 msgctxt "Data|"
 msgid "Select one square and one-quarter of a square."
-msgstr "Επίλεξε μία πίτα και ένα τέταρτο της πίτας."
+msgstr "Επίλεξε ένα τετράγωνο και ένα τέταρτο του τετραγώνου."
 
 #: activities/fractions_create/resource/2/Data.qml:56
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select one pie and two-fifths of a pie."
 msgctxt "Data|"
 msgid "Select one square and two-fifths of a square."
-msgstr "Επίλεξε μία πίτα και δύο πέμπτα της πίτας."
+msgstr "Επίλεξε ένα τετράγωνο και δύο πέμπτα του τετραγώνου."
 
 #: activities/fractions_create/resource/2/Data.qml:62
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select one pie and one-third of a pie."
 msgctxt "Data|"
 msgid "Select one square and one-third of a square."
-msgstr "Επίλεξε μία πίτα και ένα τρίτο της πίτας."
+msgstr "Επίλεξε ένα τετράγωνο και ένα τρίτο του τετραγώνου."
 
 #: activities/fractions_create/resource/2/Data.qml:68
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select one pie and one half of a pie."
 msgctxt "Data|"
 msgid "Select one square and one half of a square."
-msgstr "Επίλεξε μια πίτα και το μισό της πίτας."
+msgstr "Επίλεξε ένα τετράγωνο και το ένα δεύτερο του τετραγώνου."
 
 #: activities/fractions_create/resource/2/Data.qml:74
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select one pie and three-quarters of a pie."
 msgctxt "Data|"
 msgid "Select one square and three-quarters of a square."
-msgstr "Επίλεξε μια πίτα και τρία τέταρτα της πίτας."
+msgstr "Επίλεξε ένα τετράγωνο και τρία τέταρτα του τετραγώνου."
 
 #: activities/fractions_create/resource/3/Data.qml:9
 msgctxt "Data|"
 msgid "Non-simplified fractions with a pie."
-msgstr "Μη απλοποιημένα κλάσματα με γράφημα πίτας."
+msgstr "Μη απλοποιημένα κλάσματα με πίτα."
 
 #: activities/fractions_create/resource/3/Data.qml:73
 msgctxt "Data|"
@@ -9554,25 +9505,19 @@ msgid "Select three-fifths of the pie."
 msgstr "Επίλεξε τα τρία πέμπτα της πίτας."
 
 #: activities/fractions_create/resource/4/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Non-simplified fractions with a pie."
 msgctxt "Data|"
 msgid "Non-simplified fractions with a square."
-msgstr "Μη απλοποιημένα κλάσματα με γράφημα πίτας."
+msgstr "Μη απλοποιημένα κλάσματα με τετράγωνο."
 
 #: activities/fractions_create/resource/4/Data.qml:73
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select three-fifths of the pie."
 msgctxt "Data|"
 msgid "Select three-fifths of the square."
-msgstr "Επίλεξε τα τρία πέμπτα της πίτας."
+msgstr "Επίλεξε τα τρία πέμπτα του τετραγώνου."
 
 #: activities/fractions_create/resource/5/Data.qml:9
 msgctxt "Data|"
 msgid "Decimal numbers with a pie."
-msgstr "Δεκαδικοί αριθμοί με γράφημα πίτας."
+msgstr "Δεκαδικοί αριθμοί με πίτα."
 
 #: activities/fractions_create/resource/5/Data.qml:18
 msgctxt "Data|"
@@ -9621,90 +9566,60 @@ msgid "Select 1.75 pies."
 msgstr "Επίλεξε το 1,75 της πίτας."
 
 #: activities/fractions_create/resource/6/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Decimal numbers with a pie."
 msgctxt "Data|"
 msgid "Decimal numbers with a square."
-msgstr "Δεκαδικοί αριθμοί με γράφημα πίτας."
+msgstr "Δεκαδικοί αριθμοί με τετράγωνο."
 
 #: activities/fractions_create/resource/6/Data.qml:18
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select 0.5 pie."
 msgctxt "Data|"
 msgid "Select 0.5 square."
-msgstr "Επίλεξε το 0,5 της πίτας."
+msgstr "Επίλεξε το 0,5 του τετραγώνου."
 
 #: activities/fractions_create/resource/6/Data.qml:24
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select 0.25 pie."
 msgctxt "Data|"
 msgid "Select 0.25 square."
-msgstr "Επίλεξε το 0,25 της πίτας."
+msgstr "Επίλεξε το 0,25 του τετραγώνου."
 
 #: activities/fractions_create/resource/6/Data.qml:30
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select 0.4 pie."
 msgctxt "Data|"
 msgid "Select 0.4 square."
-msgstr "Επίλεξε το 0,4 της πίτας."
+msgstr "Επίλεξε το 0,4 του τετραγώνου."
 
 #: activities/fractions_create/resource/6/Data.qml:36
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select 0.75 pie."
 msgctxt "Data|"
 msgid "Select 0.75 square."
-msgstr "Επίλεξε το 0,75 της πίτας."
+msgstr "Επίλεξε το 0,75 του τετραγώνου."
 
 #: activities/fractions_create/resource/6/Data.qml:42
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select 0.8 pie."
 msgctxt "Data|"
 msgid "Select 0.8 square."
-msgstr "Επίλεξε το 0,8 της πίτας."
+msgstr "Επίλεξε το 0,8 του τετραγώνου."
 
 #: activities/fractions_create/resource/6/Data.qml:50
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select 1.25 pies."
 msgctxt "Data|"
 msgid "Select 1.25 squares."
-msgstr "Επίλεξε το 1,25 της πίτας."
+msgstr "Επίλεξε το 1,25 του τετραγώνου."
 
 #: activities/fractions_create/resource/6/Data.qml:56
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select 1.4 pies."
 msgctxt "Data|"
 msgid "Select 1.4 squares."
-msgstr "Επίλεξε το 1,4 της πίτας."
+msgstr "Επίλεξε το 1,4 του τετραγώνου."
 
 #: activities/fractions_create/resource/6/Data.qml:62
 #: activities/fractions_create/resource/6/Data.qml:68
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select 1.5 pies."
 msgctxt "Data|"
 msgid "Select 1.5 squares."
-msgstr "Επίλεξε το 1,5 της πίτας."
+msgstr "Επίλεξε το 1,5 του τετραγώνου."
 
 #: activities/fractions_create/resource/6/Data.qml:74
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select 1.75 pies."
 msgctxt "Data|"
 msgid "Select 1.75 squares."
-msgstr "Επίλεξε το 1,75 της πίτας."
+msgstr "Επίλεξε το 1,75 του τετραγώνου."
 
 #: activities/fractions_create/resource/7/Data.qml:9
 msgctxt "Data|"
 msgid "Percentages with a pie."
-msgstr "Ποσοστά με γράφημα πίτας."
+msgstr "Ποσοστά με πίτα."
 
 #. Select %1 percent of the pie.
 #: activities/fractions_create/resource/7/Data.qml:19
@@ -9721,12 +9636,9 @@ msgid "Select %1% of the pie."
 msgstr "Επίλεξε το %1% της πίτας."
 
 #: activities/fractions_create/resource/8/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Percentages with a pie."
 msgctxt "Data|"
 msgid "Percentages with a square."
-msgstr "Ποσοστά με γράφημα πίτας."
+msgstr "Ποσοστά με τετράγωνο."
 
 #. Select %1 percent of the square.
 #: activities/fractions_create/resource/8/Data.qml:19
@@ -9735,17 +9647,15 @@ msgstr "Ποσοστά με γράφημα πίτας."
 #: activities/fractions_create/resource/8/Data.qml:42
 #: activities/fractions_create/resource/8/Data.qml:49
 #: activities/fractions_create/resource/8/Data.qml:56
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Select %1% of the pie."
+#, qt-format
 msgctxt "Data|"
 msgid "Select %1% of the square."
-msgstr "Επίλεξε το %1% της πίτας."
+msgstr "Επίλεξε το %1% του τετραγώνου."
 
 #: activities/fractions_create/resource/9/Data.qml:9
 msgctxt "Data|"
 msgid "Specific questions with a pie."
-msgstr "Ερωτήσεις με γράφημα πίτας."
+msgstr "Ερωτήσεις με πίτα."
 
 #: activities/fractions_create/resource/9/Data.qml:18
 #: activities/fractions_create/resource/9/Data.qml:24
@@ -9772,28 +9682,22 @@ msgstr ""
 #: activities/fractions_find/resource/1/Data.qml:19
 msgctxt "Data|"
 msgid "Find numerator (with a pie)."
-msgstr "Βρες τον αριθμητή (με γράφημα πίτας)."
+msgstr "Βρες τον αριθμητή (με πίτα)."
 
 #: activities/fractions_find/resource/2/Data.qml:19
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find numerator (with a pie)."
 msgctxt "Data|"
 msgid "Find numerator (with a square)."
-msgstr "Βρες τον αριθμητή (με γράφημα πίτας)."
+msgstr "Βρες τον αριθμητή (με τετράγωνο)."
 
 #: activities/fractions_find/resource/3/Data.qml:9
 msgctxt "Data|"
 msgid "Find denominator (with a pie)."
-msgstr "Βρες τον παρονομαστή (με γράφημα πίτας)."
+msgstr "Βρες τον παρονομαστή (με πίτα)."
 
 #: activities/fractions_find/resource/4/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find denominator (with a pie)."
 msgctxt "Data|"
 msgid "Find denominator (with a square)."
-msgstr "Βρες τον παρονομαστή (με γράφημα πίτας)."
+msgstr "Βρες τον παρανομαστή (με τετράγωνο)."
 
 #: activities/fractions_find/resource/5/Data.qml:9
 msgctxt "Data|"
@@ -9801,12 +9705,9 @@ msgid "Find numerator and denominator (with a pie)."
 msgstr "Βρες τον αριθμητή και τον παρονομαστή (με πίτα)."
 
 #: activities/fractions_find/resource/6/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find numerator and denominator (with a pie)."
 msgctxt "Data|"
 msgid "Find numerator and denominator (with a square)."
-msgstr "Βρες τον αριθμητή και τον παρονομαστή (με πίτα)."
+msgstr "Βρες τον αριθμητή και τον παρονομαστή (με τετράγωνο)."
 
 #. Activity title
 #: activities/geo-country/ActivityInfo.qml:19
@@ -11043,12 +10944,9 @@ msgid "Suvalkija"
 msgstr "Σουβαλκίτζα"
 
 #: activities/geo-country/resource/board/board18_0.qml:13
-#, fuzzy
-#| msgctxt "board18_0|"
-#| msgid "Autonomous communities of Spain"
 msgctxt "board18_0|"
 msgid "Autonomous communities or cities of Spain"
-msgstr "Αυτόνομες κοινότητες της Ισπανίας"
+msgstr "Αυτόνομες κοινότητες ή πόλεις της Ισπανίας"
 
 #. Autonomous communities of Spain: Andalusia
 #: activities/geo-country/resource/board/board18_0.qml:22
@@ -25492,11 +25390,6 @@ msgstr ""
 "ζεσταίνεται και να εξατμίζεται."
 
 #: activities/watercycle/Watercycle.qml:80
-#, fuzzy
-#| msgctxt "Watercycle|"
-#| msgid ""
-#| "Water vapor condenses to form cloud and when clouds become heavy, it "
-#| "rains. Click on the cloud."
 msgctxt "Watercycle|"
 msgid ""
 "Water vapor condenses to form clouds and when clouds become heavy, it rains. "
@@ -25552,12 +25445,6 @@ msgstr ""
 "και των ωκεανών."
 
 #: activities/watercycle/Watercycle.qml:115
-#, fuzzy
-#| msgctxt "Watercycle|"
-#| msgid ""
-#| "Plants also lose water to the air through transpiration. The water vapor "
-#| "cools down forming tiny droplets in clouds. When the clouds meet cool air "
-#| "over the land, precipitation is triggered and fall down as rain."
 msgctxt "Watercycle|"
 msgid ""
 "Plants also lose water to the air through transpiration. The water vapor "
