@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2023-01-12 22:35+0200\n"
+"PO-Revision-Date: 2023-01-13 22:42+0200\n"
 "Last-Translator: Horia PELLE <horricane@gmail.com>\n"
 "Language-Team: English <kde-i18n-doc@kde.org>\n"
 "Language: ro\n"
@@ -5348,12 +5348,9 @@ msgid "Numbers from 1 to 9."
 msgstr "Numere de la 0 la 9."
 
 #: activities/comparator/resource/10/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "2 decimal places between 0 and 99.99."
 msgctxt "Data|"
 msgid "3 decimal places between 0 and 999.999."
-msgstr "două zecimale între 0 și 99.99"
+msgstr "trei zecimale între 0 și 999,999."
 
 #: activities/comparator/resource/2/Data.qml:14
 msgctxt "Data|"
@@ -5381,25 +5378,19 @@ msgid "Numbers from 1 to 1 billion."
 msgstr "Numere de la 1 la 1 miliard."
 
 #: activities/comparator/resource/7/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "1 decimal place between 0 and 9, same integer part."
 msgctxt "Data|"
 msgid "1 decimal place between 0 and 9.9, same integer part."
-msgstr "o zecimală între 0 și 9, aceeași parte întreagă."
+msgstr "o zecimală între 0 și 9,9 , aceeași parte întreagă."
 
 #: activities/comparator/resource/8/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "1 decimal place between 0 and 9."
 msgctxt "Data|"
 msgid "1 decimal place between 0 and 9.9."
-msgstr "o zecimală între 0 și 9"
+msgstr "o zecimală între 0 și 9,9."
 
 #: activities/comparator/resource/9/Data.qml:14
 msgctxt "Data|"
 msgid "2 decimal places between 0 and 99.99."
-msgstr "două zecimale între 0 și 99.99"
+msgstr "două zecimale între 0 și 99,99"
 
 #. Activity title
 #: activities/crane/ActivityInfo.qml:20
@@ -9309,122 +9300,82 @@ msgid "Select one pie and three-quarters of a pie."
 msgstr "Selectează o plăcintă și trei sferturi."
 
 #: activities/fractions_create/resource/10/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Specific questions with a pie."
 msgctxt "Data|"
 msgid "Specific questions with a square."
-msgstr "Întrebări specifice cu o plăcintă."
+msgstr "Întrebări specifice cu un pătrat."
 
 #: activities/fractions_create/resource/10/Data.qml:18
 #: activities/fractions_create/resource/10/Data.qml:24
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid ""
-#| "Select as many parts as you can without taking more than half of the pie."
 msgctxt "Data|"
 msgid ""
 "Select as many parts as you can without taking more than half of the square."
 msgstr ""
 "Selectează cât de multe părți poți, fără să depășești mai mult de jumătate "
-"din plăcintă."
+"din pătrat."
 
 #: activities/fractions_create/resource/2/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Simplified fractions with a pie."
 msgctxt "Data|"
 msgid "Simplified fractions with a square."
-msgstr "Fracții ordinare cu o plăcintă."
+msgstr "Fracții ordinare cu un pătrat."
 
 #: activities/fractions_create/resource/2/Data.qml:18
 #: activities/fractions_create/resource/4/Data.qml:17
 #: activities/fractions_create/resource/4/Data.qml:23
 #: activities/fractions_create/resource/4/Data.qml:29
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select one half of the pie."
 msgctxt "Data|"
 msgid "Select one half of the square."
-msgstr "Selectează jumătate de plăcintă."
+msgstr "Selectează jumătate de pătrat."
 
 #: activities/fractions_create/resource/2/Data.qml:24
 #: activities/fractions_create/resource/4/Data.qml:35
 #: activities/fractions_create/resource/4/Data.qml:49
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select one-third of the pie."
 msgctxt "Data|"
 msgid "Select one-third of the square."
-msgstr "Selectează o treime din plăcintă."
+msgstr "Selectează o treime din pătrat."
 
 #: activities/fractions_create/resource/2/Data.qml:30
 #: activities/fractions_create/resource/4/Data.qml:41
 #: activities/fractions_create/resource/4/Data.qml:55
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select two-thirds of the pie."
 msgctxt "Data|"
 msgid "Select two-thirds of the square."
-msgstr "Selectează două treimi din plăcintă."
+msgstr "Selectează două treimi din pătrat."
 
 #: activities/fractions_create/resource/2/Data.qml:36
 #: activities/fractions_create/resource/4/Data.qml:61
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select one-quarter of the pie."
 msgctxt "Data|"
 msgid "Select one-quarter of the square."
-msgstr "Selectează o pătrime de plăcintă."
+msgstr "Selectează o pătrime din pătrat."
 
 #: activities/fractions_create/resource/2/Data.qml:42
 #: activities/fractions_create/resource/4/Data.qml:67
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select two-fifths of the pie."
 msgctxt "Data|"
 msgid "Select two-fifths of the square."
-msgstr "Selectează două cincimi din plăcintă."
+msgstr "Selectează două cincimi din pătrat."
 
 #: activities/fractions_create/resource/2/Data.qml:50
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select one pie and one-quarter of a pie."
 msgctxt "Data|"
 msgid "Select one square and one-quarter of a square."
-msgstr "Selectează o plăcintă și un sfert."
+msgstr "Selectează un pătrat și un sfert."
 
 #: activities/fractions_create/resource/2/Data.qml:56
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select one pie and two-fifths of a pie."
 msgctxt "Data|"
 msgid "Select one square and two-fifths of a square."
-msgstr "Selectează o plăcintă și două cincimi."
+msgstr "Selectează un pătrat și două cincimi."
 
 #: activities/fractions_create/resource/2/Data.qml:62
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select one pie and one-third of a pie."
 msgctxt "Data|"
 msgid "Select one square and one-third of a square."
-msgstr "Selectează o plăcintă și o treime."
+msgstr "Selectează un pătrat și o treime."
 
 #: activities/fractions_create/resource/2/Data.qml:68
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select one pie and one half of a pie."
 msgctxt "Data|"
 msgid "Select one square and one half of a square."
-msgstr "Selectează o plăcintă și jumătate."
+msgstr "Selectează un pătrat și jumătate."
 
 #: activities/fractions_create/resource/2/Data.qml:74
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select one pie and three-quarters of a pie."
 msgctxt "Data|"
 msgid "Select one square and three-quarters of a square."
-msgstr "Selectează o plăcintă și trei sferturi."
+msgstr "Selectează un pătrat și trei sferturi."
 
 #: activities/fractions_create/resource/3/Data.qml:9
 msgctxt "Data|"
@@ -9437,20 +9388,14 @@ msgid "Select three-fifths of the pie."
 msgstr "Selectează trei cincimi din plăcintă."
 
 #: activities/fractions_create/resource/4/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Non-simplified fractions with a pie."
 msgctxt "Data|"
 msgid "Non-simplified fractions with a square."
-msgstr "Fracții nesimplificate, cu o plăcintă."
+msgstr "Fracții nesimplificate, cu un pătrat."
 
 #: activities/fractions_create/resource/4/Data.qml:73
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select three-fifths of the pie."
 msgctxt "Data|"
 msgid "Select three-fifths of the square."
-msgstr "Selectează trei cincimi din plăcintă."
+msgstr "Selectează trei cincimi din pătrat."
 
 #: activities/fractions_create/resource/5/Data.qml:9
 msgctxt "Data|"
@@ -9504,85 +9449,55 @@ msgid "Select 1.75 pies."
 msgstr "Selectează 1,75 plăcinte."
 
 #: activities/fractions_create/resource/6/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Decimal numbers with a pie."
 msgctxt "Data|"
 msgid "Decimal numbers with a square."
-msgstr "Fracții zecimale cu o plăcintă."
+msgstr "Fracții zecimale cu un pătrat."
 
 #: activities/fractions_create/resource/6/Data.qml:18
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select 0.5 pie."
 msgctxt "Data|"
 msgid "Select 0.5 square."
-msgstr "Selectează 0,5 plăcinte."
+msgstr "Selectează 0,5 pătrate."
 
 #: activities/fractions_create/resource/6/Data.qml:24
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select 0.25 pie."
 msgctxt "Data|"
 msgid "Select 0.25 square."
-msgstr "Selectează 0,25 plăcinte."
+msgstr "Selectează 0,25 pătrate."
 
 #: activities/fractions_create/resource/6/Data.qml:30
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select 0.4 pie."
 msgctxt "Data|"
 msgid "Select 0.4 square."
-msgstr "Selectează 0,4 plăcinte."
+msgstr "Selectează 0,4 pătrate."
 
 #: activities/fractions_create/resource/6/Data.qml:36
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select 0.75 pie."
 msgctxt "Data|"
 msgid "Select 0.75 square."
-msgstr "Selectează 0,75 plăcinte."
+msgstr "Selectează 0,75 pătrate."
 
 #: activities/fractions_create/resource/6/Data.qml:42
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select 0.8 pie."
 msgctxt "Data|"
 msgid "Select 0.8 square."
-msgstr "Selectează 0,8 plăcinte."
+msgstr "Selectează 0,8 pătrate."
 
 #: activities/fractions_create/resource/6/Data.qml:50
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select 1.25 pies."
 msgctxt "Data|"
 msgid "Select 1.25 squares."
-msgstr "Selectează 1,25 plăcinte."
+msgstr "Selectează 1,25 pătrate."
 
 #: activities/fractions_create/resource/6/Data.qml:56
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select 1.4 pies."
 msgctxt "Data|"
 msgid "Select 1.4 squares."
-msgstr "Selectează 1,4 plăcinte."
+msgstr "Selectează 1,4 pătrate."
 
 #: activities/fractions_create/resource/6/Data.qml:62
 #: activities/fractions_create/resource/6/Data.qml:68
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select 1.5 pies."
 msgctxt "Data|"
 msgid "Select 1.5 squares."
-msgstr "Selectează 1,5 plăcinte."
+msgstr "Selectează 1,5 pătrate."
 
 #: activities/fractions_create/resource/6/Data.qml:74
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select 1.75 pies."
 msgctxt "Data|"
 msgid "Select 1.75 squares."
-msgstr "Selectează 1,75 plăcinte."
+msgstr "Selectează 1,75 pătrate."
 
 #: activities/fractions_create/resource/7/Data.qml:9
 msgctxt "Data|"
@@ -9604,12 +9519,9 @@ msgid "Select %1% of the pie."
 msgstr "Selectează %1% din plăcintă."
 
 #: activities/fractions_create/resource/8/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Percentages with a pie."
 msgctxt "Data|"
 msgid "Percentages with a square."
-msgstr "Procente cu o plăcintă."
+msgstr "Procente cu un pătrat."
 
 #. Select %1 percent of the square.
 #: activities/fractions_create/resource/8/Data.qml:19
@@ -9618,12 +9530,10 @@ msgstr "Procente cu o plăcintă."
 #: activities/fractions_create/resource/8/Data.qml:42
 #: activities/fractions_create/resource/8/Data.qml:49
 #: activities/fractions_create/resource/8/Data.qml:56
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Select %1% of the pie."
+#, qt-format
 msgctxt "Data|"
 msgid "Select %1% of the square."
-msgstr "Selectează %1% din plăcintă."
+msgstr "Selectează %1% din pătrat."
 
 #: activities/fractions_create/resource/9/Data.qml:9
 msgctxt "Data|"
@@ -9657,12 +9567,9 @@ msgid "Find numerator (with a pie)."
 msgstr "Află numărătorul (cu o plăcintă)."
 
 #: activities/fractions_find/resource/2/Data.qml:19
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find numerator (with a pie)."
 msgctxt "Data|"
 msgid "Find numerator (with a square)."
-msgstr "Află numărătorul (cu o plăcintă)."
+msgstr "Află numărătorul (cu un pătrat)."
 
 #: activities/fractions_find/resource/3/Data.qml:9
 msgctxt "Data|"
@@ -9670,12 +9577,9 @@ msgid "Find denominator (with a pie)."
 msgstr "Află numitorul (cu o plăcintă)."
 
 #: activities/fractions_find/resource/4/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find denominator (with a pie)."
 msgctxt "Data|"
 msgid "Find denominator (with a square)."
-msgstr "Află numitorul (cu o plăcintă)."
+msgstr "Află numitorul (cu un pătrat)."
 
 #: activities/fractions_find/resource/5/Data.qml:9
 msgctxt "Data|"
@@ -9683,12 +9587,9 @@ msgid "Find numerator and denominator (with a pie)."
 msgstr "Află numărătorul și numitorul (cu o plăcintă)."
 
 #: activities/fractions_find/resource/6/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find numerator and denominator (with a pie)."
 msgctxt "Data|"
 msgid "Find numerator and denominator (with a square)."
-msgstr "Află numărătorul și numitorul (cu o plăcintă)."
+msgstr "Află numărătorul și numitorul (cu un pătrat)."
 
 #. Activity title
 #: activities/geo-country/ActivityInfo.qml:19
@@ -10924,12 +10825,9 @@ msgid "Suvalkija"
 msgstr "Suvalkija"
 
 #: activities/geo-country/resource/board/board18_0.qml:13
-#, fuzzy
-#| msgctxt "board18_0|"
-#| msgid "Autonomous communities of Spain"
 msgctxt "board18_0|"
 msgid "Autonomous communities or cities of Spain"
-msgstr "Comunități autonome ale Spaniei"
+msgstr "Comunități autonome sau orașe ale Spaniei"
 
 #. Autonomous communities of Spain: Andalusia
 #: activities/geo-country/resource/board/board18_0.qml:22
@@ -25296,18 +25194,13 @@ msgstr ""
 "Când soarele răsare, apa din mare începe să se încălzească și se evaporă."
 
 #: activities/watercycle/Watercycle.qml:80
-#, fuzzy
-#| msgctxt "Watercycle|"
-#| msgid ""
-#| "Water vapor condenses to form cloud and when clouds become heavy, it "
-#| "rains. Click on the cloud."
 msgctxt "Watercycle|"
 msgid ""
 "Water vapor condenses to form clouds and when clouds become heavy, it rains. "
 "Click on the cloud."
 msgstr ""
-"Vaporii de apă se condensează în mici picături și formează nori, iar când "
-"aceștia se aglomerează și se măresc, atunci începe să plouă. Fă clic pe nor."
+"Vaporii de apă se condensează pentru a forma nori, iar când norii devin "
+"grei, plouă. Fă clic pe nor."
 
 #: activities/watercycle/Watercycle.qml:81
 msgctxt "Watercycle|"
@@ -25352,12 +25245,6 @@ msgstr ""
 "marile rezervoare naturale, cum sunt oceanele."
 
 #: activities/watercycle/Watercycle.qml:115
-#, fuzzy
-#| msgctxt "Watercycle|"
-#| msgid ""
-#| "Plants also lose water to the air through transpiration. The water vapor "
-#| "cools down forming tiny droplets in clouds. When the clouds meet cool air "
-#| "over the land, precipitation is triggered and fall down as rain."
 msgctxt "Watercycle|"
 msgid ""
 "Plants also lose water to the air through transpiration. The water vapor "
