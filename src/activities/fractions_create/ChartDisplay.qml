@@ -32,6 +32,8 @@ Flow {
             height: gridContainer.gridItemHeight
             asynchronous: false
             source: items.chartType === "pie" ? "PieChart.qml" : "RectangleChart.qml"
+            property bool horizontalLayout: items.horizontalLayout
+            property int numberOfCharts: repeater.model
         }
     }
     function initLevel() {

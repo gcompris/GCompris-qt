@@ -14,8 +14,11 @@ Item {
 
     Item {
         id: chartContainer
-        width: parent.width - 60 * ApplicationInfo.ratio
-        height: parent.height - 60 * ApplicationInfo.ratio
+        // reduce the margin only in case it's vertical and there's more than one rectangle
+        height: !chart.parent.horizontalLayout && chart.parent.numberOfCharts > 1 ?
+            parent.height - 20 * ApplicationInfo.ratio :
+            parent.height - 60 * ApplicationInfo.ratio
+        width: height
         anchors.centerIn: parent
 
         GridView {
@@ -24,8 +27,8 @@ Item {
             model: ListModel {
                 id: listModel
             }
-            cellWidth: parent.width / model.count
-            cellHeight: parent.height
+            cellWidth: Math.floor(parent.width / model.count)
+            cellHeight: cellWidth * model.count
             interactive: false
             anchors.verticalCenter: parent.verticalCenter
             anchors.horizontalCenter: parent.horizontalCenter
@@ -36,7 +39,8 @@ Item {
                 color: selected ? gridContainer.selectedColor : gridContainer.unselectedColor
                 // add border.width as an offset to avoid double-sized separation lines
                 width: chartGrid.cellWidth + border.width
-                height: chartGrid.cellHeight
+                // also add border.width to height to keep it square
+                height: chartGrid.cellHeight + border.width
 
                 MouseArea {
                     anchors.fill: parent

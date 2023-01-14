@@ -8,13 +8,13 @@ import QtCharts 2.0
 
 ChartView {
     id: chart
-    backgroundColor: "#00000000"
+    backgroundColor: "transparent"
     legend.visible: false
     antialiasing: true
     property alias pieSeries: pieSeries
     PieSeries {
         id: pieSeries
-        size: 0.9
+        size: 0.95
 
         PieSlice {
             value: 1
