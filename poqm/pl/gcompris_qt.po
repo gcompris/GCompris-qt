@@ -1,10 +1,10 @@
-# Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022.
+# Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023.
 # Marcin Stanclik <mstanclik@yahoo.com>, 2021.
 # Grzegorz Koryga <rehork@tutamail.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2022-12-25 18:49+0100\n"
+"PO-Revision-Date: 2023-01-14 17:47+0100\n"
 "Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
 "Language-Team: Polish <kde-i18n-doc@kde.org>\n"
 "Language: pl\n"
@@ -15,13 +15,13 @@ msgstr ""
 "|| n%100>=20) ? 1 : 2);\n"
 "X-Language: pl\n"
 "X-Qt-Contexts: true\n"
-"X-Generator: Lokalize 22.08.3\n"
+"X-Generator: Lokalize 22.12.1\n"
 
 #. Activity title
 #: activities/advanced_colors/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Advanced colors"
-msgstr "Barwy rozszerzone"
+msgstr "Barwy dla zaawansowanych"
 
 #. Help title
 #: activities/advanced_colors/ActivityInfo.qml:17
@@ -5275,12 +5275,9 @@ msgid "Numbers from 1 to 9."
 msgstr "Liczby od 1 do 9."
 
 #: activities/comparator/resource/10/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "2 decimal places between 0 and 99.99."
 msgctxt "Data|"
 msgid "3 decimal places between 0 and 999.999."
-msgstr "2 miejsca dziesiętne pomiędzy 0 a 99,99."
+msgstr "3 miejsca dziesiętne pomiędzy 0 a 999,999."
 
 #: activities/comparator/resource/2/Data.qml:14
 msgctxt "Data|"
@@ -5308,21 +5305,15 @@ msgid "Numbers from 1 to 1 billion."
 msgstr "Liczby od 1 do 1 biliona."
 
 #: activities/comparator/resource/7/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "1 decimal place between 0 and 9, same integer part."
 msgctxt "Data|"
 msgid "1 decimal place between 0 and 9.9, same integer part."
 msgstr ""
-"1 miejsce dziesiętne z zakresu od 0 do 9, tej samej liczby dziesiętnej."
+"1 miejsce dziesiętne z zakresu od 0 do 9,9, tej samej liczby dziesiętnej."
 
 #: activities/comparator/resource/8/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "1 decimal place between 0 and 9."
 msgctxt "Data|"
 msgid "1 decimal place between 0 and 9.9."
-msgstr "1 miejsce dziesiętne z zakresu od 0 do 9."
+msgstr "1 miejsce dziesiętne z zakresu od 0 do 9,9."
 
 #: activities/comparator/resource/9/Data.qml:14
 msgctxt "Data|"
@@ -9191,120 +9182,81 @@ msgid "Select one pie and three-quarters of a pie."
 msgstr "Zaznacz jeden tort i trzy czwarte tortu."
 
 #: activities/fractions_create/resource/10/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Specific questions with a pie."
 msgctxt "Data|"
 msgid "Specific questions with a square."
-msgstr "Konkretne pytania z tortem."
+msgstr "Konkretne pytania na torcie."
 
 #: activities/fractions_create/resource/10/Data.qml:18
 #: activities/fractions_create/resource/10/Data.qml:24
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid ""
-#| "Select as many parts as you can without taking more than half of the pie."
 msgctxt "Data|"
 msgid ""
 "Select as many parts as you can without taking more than half of the square."
-msgstr "Wybierz tyle części, ile możesz, nie biorąc więcej niż połowy tortu."
+msgstr ""
+"Zaznacz tyle części, ile możesz, nie biorąc więcej niż połowy kwadratu."
 
 #: activities/fractions_create/resource/2/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Simplified fractions with a pie."
 msgctxt "Data|"
 msgid "Simplified fractions with a square."
-msgstr "Uproszczone ułamki z tortem."
+msgstr "Uproszczone ułamki na torcie."
 
 #: activities/fractions_create/resource/2/Data.qml:18
 #: activities/fractions_create/resource/4/Data.qml:17
 #: activities/fractions_create/resource/4/Data.qml:23
 #: activities/fractions_create/resource/4/Data.qml:29
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select one half of the pie."
 msgctxt "Data|"
 msgid "Select one half of the square."
-msgstr "Zaznacz jedną połowę tortu."
+msgstr "Zaznacz połówkę kwadratu."
 
 #: activities/fractions_create/resource/2/Data.qml:24
 #: activities/fractions_create/resource/4/Data.qml:35
 #: activities/fractions_create/resource/4/Data.qml:49
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select one-third of the pie."
 msgctxt "Data|"
 msgid "Select one-third of the square."
-msgstr "Zaznacz jedną trzecią tortu."
+msgstr "Zaznacz jedną trzecią kwadratu."
 
 #: activities/fractions_create/resource/2/Data.qml:30
 #: activities/fractions_create/resource/4/Data.qml:41
 #: activities/fractions_create/resource/4/Data.qml:55
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select two-thirds of the pie."
 msgctxt "Data|"
 msgid "Select two-thirds of the square."
-msgstr "Zaznacz dwie trzecie tortu."
+msgstr "Zaznacz dwie trzecie kwadratu."
 
 #: activities/fractions_create/resource/2/Data.qml:36
 #: activities/fractions_create/resource/4/Data.qml:61
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select one-quarter of the pie."
 msgctxt "Data|"
 msgid "Select one-quarter of the square."
-msgstr "Zaznacz jedną czwartą tortu."
+msgstr "Zaznacz jedną czwartą kwadratu."
 
 #: activities/fractions_create/resource/2/Data.qml:42
 #: activities/fractions_create/resource/4/Data.qml:67
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select two-fifths of the pie."
 msgctxt "Data|"
 msgid "Select two-fifths of the square."
-msgstr "Zaznacz dwie piąte tortu."
+msgstr "Zaznacz dwie piąte kwadratu."
 
 #: activities/fractions_create/resource/2/Data.qml:50
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select one pie and one-quarter of a pie."
 msgctxt "Data|"
 msgid "Select one square and one-quarter of a square."
-msgstr "Zaznacz jeden tort i jedną czwartą tortu."
+msgstr "Zaznacz jeden kwadrat i jedną czwartą kwadratu."
 
 #: activities/fractions_create/resource/2/Data.qml:56
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select one pie and two-fifths of a pie."
 msgctxt "Data|"
 msgid "Select one square and two-fifths of a square."
-msgstr "Zaznacz jeden tort i dwie piąte tortu."
+msgstr "Zaznacz jeden kwadrat i dwie piąte kwadratu."
 
 #: activities/fractions_create/resource/2/Data.qml:62
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select one pie and one-third of a pie."
 msgctxt "Data|"
 msgid "Select one square and one-third of a square."
-msgstr "Zaznacz jeden tort i jedną trzecią tortu."
+msgstr "Zaznacz jeden kwadrat i jedną trzecią kwadratu."
 
 #: activities/fractions_create/resource/2/Data.qml:68
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select one pie and one half of a pie."
 msgctxt "Data|"
 msgid "Select one square and one half of a square."
-msgstr "Zaznacz jeden tort i jedną połówkę tortu."
+msgstr "Zaznacz jeden kwadrat i połowę kwadratu."
 
 #: activities/fractions_create/resource/2/Data.qml:74
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select one pie and three-quarters of a pie."
 msgctxt "Data|"
 msgid "Select one square and three-quarters of a square."
-msgstr "Zaznacz jeden tort i trzy czwarte tortu."
+msgstr "Zaznacz jeden kwadrat i trzy czwarte kwadratu."
 
 #: activities/fractions_create/resource/3/Data.qml:9
 msgctxt "Data|"
@@ -9317,20 +9269,14 @@ msgid "Select three-fifths of the pie."
 msgstr "Zaznacz trzy piąte tortu."
 
 #: activities/fractions_create/resource/4/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Non-simplified fractions with a pie."
 msgctxt "Data|"
 msgid "Non-simplified fractions with a square."
-msgstr "Ułamki zwykłe nie uproszczone z tortem."
+msgstr "Nieuproszczone ułamki na kwadracie."
 
 #: activities/fractions_create/resource/4/Data.qml:73
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select three-fifths of the pie."
 msgctxt "Data|"
 msgid "Select three-fifths of the square."
-msgstr "Zaznacz trzy piąte tortu."
+msgstr "Zaznacz trzy piąte kwadratu."
 
 #: activities/fractions_create/resource/5/Data.qml:9
 msgctxt "Data|"
@@ -9384,85 +9330,55 @@ msgid "Select 1.75 pies."
 msgstr "Zaznacz 1,75 tortu."
 
 #: activities/fractions_create/resource/6/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Decimal numbers with a pie."
 msgctxt "Data|"
 msgid "Decimal numbers with a square."
-msgstr "Liczby dziesiętne z tortem."
+msgstr "Liczby dziesiętne na torcie."
 
 #: activities/fractions_create/resource/6/Data.qml:18
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select 0.5 pie."
 msgctxt "Data|"
 msgid "Select 0.5 square."
-msgstr "Zaznacz 0,5 tortu."
+msgstr "Zaznacz 0,5 kwadratu."
 
 #: activities/fractions_create/resource/6/Data.qml:24
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select 0.25 pie."
 msgctxt "Data|"
 msgid "Select 0.25 square."
-msgstr "Zaznacz 0,25 tortu."
+msgstr "Zaznacz 0,25 kwadratu."
 
 #: activities/fractions_create/resource/6/Data.qml:30
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select 0.4 pie."
 msgctxt "Data|"
 msgid "Select 0.4 square."
-msgstr "Zaznacz 0,4 tortu."
+msgstr "Zaznacz 0,4 kwadratu."
 
 #: activities/fractions_create/resource/6/Data.qml:36
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select 0.75 pie."
 msgctxt "Data|"
 msgid "Select 0.75 square."
-msgstr "Zaznacz 0,75 tortu."
+msgstr "Zaznacz 0,75 kwadratu."
 
 #: activities/fractions_create/resource/6/Data.qml:42
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select 0.8 pie."
 msgctxt "Data|"
 msgid "Select 0.8 square."
-msgstr "Zaznacz 0,8 tortu."
+msgstr "Zaznacz 0,8 kwadratu."
 
 #: activities/fractions_create/resource/6/Data.qml:50
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select 1.25 pies."
 msgctxt "Data|"
 msgid "Select 1.25 squares."
-msgstr "Zaznacz 1,25 tortu."
+msgstr "Zaznacz 1,25 kwadratów."
 
 #: activities/fractions_create/resource/6/Data.qml:56
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select 1.4 pies."
 msgctxt "Data|"
 msgid "Select 1.4 squares."
-msgstr "Zaznacz 1,4 tortu."
+msgstr "Zaznacz 1,4 kwadratów."
 
 #: activities/fractions_create/resource/6/Data.qml:62
 #: activities/fractions_create/resource/6/Data.qml:68
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select 1.5 pies."
 msgctxt "Data|"
 msgid "Select 1.5 squares."
-msgstr "Zaznacz 1,5 tortu."
+msgstr "Zaznacz 1,5 kwadratów."
 
 #: activities/fractions_create/resource/6/Data.qml:74
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select 1.75 pies."
 msgctxt "Data|"
 msgid "Select 1.75 squares."
-msgstr "Zaznacz 1,75 tortu."
+msgstr "Zaznacz 1,75 kwadratów."
 
 #: activities/fractions_create/resource/7/Data.qml:9
 msgctxt "Data|"
@@ -9484,12 +9400,9 @@ msgid "Select %1% of the pie."
 msgstr "Zaznacz %1% tortu."
 
 #: activities/fractions_create/resource/8/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Percentages with a pie."
 msgctxt "Data|"
 msgid "Percentages with a square."
-msgstr "Procenty z tortem."
+msgstr "Procenty na kwadracie."
 
 #. Select %1 percent of the square.
 #: activities/fractions_create/resource/8/Data.qml:19
@@ -9498,12 +9411,10 @@ msgstr "Procenty z tortem."
 #: activities/fractions_create/resource/8/Data.qml:42
 #: activities/fractions_create/resource/8/Data.qml:49
 #: activities/fractions_create/resource/8/Data.qml:56
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Select %1% of the pie."
+#, qt-format
 msgctxt "Data|"
 msgid "Select %1% of the square."
-msgstr "Zaznacz %1% tortu."
+msgstr "Zaznacz %1% kwadratu."
 
 #: activities/fractions_create/resource/9/Data.qml:9
 msgctxt "Data|"
@@ -9535,12 +9446,9 @@ msgid "Find numerator (with a pie)."
 msgstr "Znajdź licznik (na przykładzie tortu)."
 
 #: activities/fractions_find/resource/2/Data.qml:19
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find numerator (with a pie)."
 msgctxt "Data|"
 msgid "Find numerator (with a square)."
-msgstr "Znajdź licznik (na przykładzie tortu)."
+msgstr "Znajdź licznik (na przykładzie kwadratu)."
 
 #: activities/fractions_find/resource/3/Data.qml:9
 msgctxt "Data|"
@@ -9548,12 +9456,9 @@ msgid "Find denominator (with a pie)."
 msgstr "Znajdź mianownik (na przykładzie tortu)."
 
 #: activities/fractions_find/resource/4/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find denominator (with a pie)."
 msgctxt "Data|"
 msgid "Find denominator (with a square)."
-msgstr "Znajdź mianownik (na przykładzie tortu)."
+msgstr "Znajdź mianownik (na przykładzie kwadratu)."
 
 #: activities/fractions_find/resource/5/Data.qml:9
 msgctxt "Data|"
@@ -9561,12 +9466,9 @@ msgid "Find numerator and denominator (with a pie)."
 msgstr "Znajdź licznik i mianownik (na przykładzie tortu)."
 
 #: activities/fractions_find/resource/6/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find numerator and denominator (with a pie)."
 msgctxt "Data|"
 msgid "Find numerator and denominator (with a square)."
-msgstr "Znajdź licznik i mianownik (na przykładzie tortu)."
+msgstr "Znajdź licznik i mianownik (na przykładzie kwadratu)."
 
 #. Activity title
 #: activities/geo-country/ActivityInfo.qml:19
@@ -10802,12 +10704,9 @@ msgid "Suvalkija"
 msgstr "Suvalkija"
 
 #: activities/geo-country/resource/board/board18_0.qml:13
-#, fuzzy
-#| msgctxt "board18_0|"
-#| msgid "Autonomous communities of Spain"
 msgctxt "board18_0|"
 msgid "Autonomous communities or cities of Spain"
-msgstr "Wspólnoty autonomiczne Hiszpanii"
+msgstr "Wspólnoty autonomiczne lub miasta Hiszpanii"
 
 #. Autonomous communities of Spain: Andalusia
 #: activities/geo-country/resource/board/board18_0.qml:22
@@ -25078,11 +24977,6 @@ msgid "As the sun rises, the water of the sea starts heating and evaporates."
 msgstr "Gdy słońce wstaje, woda w morzach staje się cieplejsza i paruje."
 
 #: activities/watercycle/Watercycle.qml:80
-#, fuzzy
-#| msgctxt "Watercycle|"
-#| msgid ""
-#| "Water vapor condenses to form cloud and when clouds become heavy, it "
-#| "rains. Click on the cloud."
 msgctxt "Watercycle|"
 msgid ""
 "Water vapor condenses to form clouds and when clouds become heavy, it rains. "
@@ -25134,12 +25028,6 @@ msgstr ""
 "parowania wody ze zbiorników takich jak oceany."
 
 #: activities/watercycle/Watercycle.qml:115
-#, fuzzy
-#| msgctxt "Watercycle|"
-#| msgid ""
-#| "Plants also lose water to the air through transpiration. The water vapor "
-#| "cools down forming tiny droplets in clouds. When the clouds meet cool air "
-#| "over the land, precipitation is triggered and fall down as rain."
 msgctxt "Watercycle|"
 msgid ""
 "Plants also lose water to the air through transpiration. The water vapor "
