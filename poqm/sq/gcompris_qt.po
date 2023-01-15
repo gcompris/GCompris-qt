@@ -1,22 +1,21 @@
 # Copyright (C) YEAR This file is copyright:
 # This file is distributed under the same license as the gcompris package.
 #
-# Besnik Bleta <besnik@programeshqip.org>, 2020,2021,2022.
+# Besnik Bleta <besnik@programeshqip.org>, 2020,2021,2022,2023.
 # Falënderime Dashamir Hoxhës për një numër sugjerimesh të vlefshme <dashohoxha@gmail.com>, 2021.
-# Agron Selimaj <as9902613@gmail.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2022-02-22 02:12-0500\n"
-"Last-Translator: Agron Selimaj <as9902613@gmail.com>\n"
+"PO-Revision-Date: 2023-01-14 20:05+0200\n"
+"Last-Translator: Besnik Bleta <besnik@programeshqip.org>\n"
 "Language-Team: Albanian <kde-i18n-doc@kde.org>\n"
 "Language: sq\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Qt-Contexts: true\n"
-"X-Generator: Lokalize 21.12.2\n"
+"X-Generator: Poedit 2.4.2\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 #. Activity title
@@ -1176,18 +1175,13 @@ msgstr ""
 
 #. Help manual
 #: activities/align4/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Play with a friend. Take turns to click the line in which you want to "
-#| "drop a token. The first player to create a line of 4 tokens wins."
 msgctxt "ActivityInfo|"
 msgid ""
 "Play with Tux. Take turns to click the line in which you want to drop a "
 "token. The first player to create a line of 4 tokens wins."
 msgstr ""
-"Luajeni me një shok. Klikoni, me radhë, mbi rreshtin në të cilin doni të "
-"lihet një pullë. Fiton lojtari i parë që krijon një rresht me 4 pulla."
+"Luajeni me Tux-in. Klikoni, me radhë, mbi rreshtin në të cilin doni të lihet "
+"një pullë. Fiton ai që krijon i pari një rresht me 4 pulla."
 
 #: activities/align4/ActivityInfo.qml:23 activities/bargame/ActivityInfo.qml:26
 #: activities/checkers/ActivityInfo.qml:27
@@ -1197,6 +1191,8 @@ msgid ""
 "You can use the arrow buttons to manually select the difficulty level. Tux "
 "will play better when you increase the level."
 msgstr ""
+"Mund të përdorni butonat shigjetë për të përzgjedhur dorazi shkallën e "
+"vështirësisë. Tux-i do të luajë më mirë, kur rritni shkallën tuaj."
 
 #: activities/align4/ActivityInfo.qml:25
 #: activities/align4_2players/ActivityInfo.qml:24
@@ -1396,6 +1392,7 @@ msgid "The electric simulation engine is from edX: "
 msgstr "Mekanizmi i simulimit elektrik është prej edX: "
 
 #: activities/analog_electricity/cktsim.js:138
+#, fuzzy
 msgctxt "cktsim|"
 msgid ""
 "Warning! Circuit has a voltage source loop or a source shorted by a wire, "
@@ -1630,6 +1627,7 @@ msgstr ""
 "krijohet një qark i shkurtër (i quajtur edhe “në të shkurtër”)."
 
 #: activities/analog_electricity/TutorialDataset.qml:118
+#, fuzzy
 msgctxt "TutorialDataset|"
 msgid ""
 "If both terminals of some batteries are directly connected together or they "
@@ -1641,6 +1639,7 @@ msgstr ""
 "të luajnë rolin e një burimi voltazhi për qarkun."
 
 #: activities/analog_electricity/TutorialDataset.qml:119
+#, fuzzy
 msgctxt "TutorialDataset|"
 msgid ""
 "For example, if two terminals of one battery are directly connected "
@@ -1650,6 +1649,7 @@ msgstr ""
 "tjetrin, krijohet një qerthull burimi voltazhi."
 
 #: activities/analog_electricity/TutorialDataset.qml:119
+#, fuzzy
 msgctxt "TutorialDataset|"
 msgid ""
 "Or, if two batteries are forming a closed circuit together, it creates a "
@@ -1659,6 +1659,7 @@ msgstr ""
 "burimi voltazhi."
 
 #: activities/analog_electricity/TutorialDataset.qml:120
+#, fuzzy
 msgctxt "TutorialDataset|"
 msgid ""
 "Create a voltage source loop with the provided batteries. Then click on the "
@@ -1864,7 +1865,7 @@ msgid ""
 msgstr ""
 "Kushti i parë është që rrjedhja e rrymës në të duhet të ndodhë sipas "
 "drejtimit të shigjetës. Kjo do të thotë se poli pozitiv i baterisë duhet "
-"lidhur te poli në bisht të shigjetës së treguar, dhe poli negativ te ana e "
+"lidhur te poli në bisht të shigjetës së treguar dhe poli negativ te ana e "
 "kokës së shigjetës. Ky kusht quhet polaritet i drejtë."
 
 #: activities/analog_electricity/TutorialDataset.qml:253
@@ -2643,12 +2644,6 @@ msgstr "Aftësi për të numëruar."
 
 #. Help manual
 #: activities/bargame/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Click on the ball icon to select a number of balls, then click on the OK "
-#| "button to place the balls in the holes. You win if the computer has to "
-#| "place the last ball. If you want Tux to begin, just click on him."
 msgctxt "ActivityInfo|"
 msgid ""
 "Click on the ball icon to select a number of balls, then click on the OK "
@@ -2656,9 +2651,9 @@ msgid ""
 "ball. If you want Tux to begin, just click on him."
 msgstr ""
 "Klikoni mbi ikonën e topthit që të përzgjidhni një numër topthash, mandej "
-"klikoni mbi butonin OK që topthat të vendosen te vrimat. Fitoni nëse "
-"kompjuterit i duhet të vendosë topthin e fundit. Nëse doni që të fillojë Tux-"
-"i i pari, thjesht klikoni mbi të."
+"klikoni mbi butonin OK që topthat të vendosen te vrimat. Fitoni nëse Tux-it "
+"i duhet të vendosë topthin e fundit. Nëse doni që të fillojë Tux-i i pari, "
+"thjesht klikoni mbi të."
 
 #. Activity title
 #: activities/bargame_2players/ActivityInfo.qml:15
@@ -3342,7 +3337,7 @@ msgid ""
 "Tux is in trouble, and needs to take his boat through a lock. Help Tux and "
 "find out how a canal lock works."
 msgstr ""
-"Tux-i e ka punën pisk, dhe i duhet ta kalojë varkën e tij përmes një pende. "
+"Tux-i e ka punën pisk dhe i duhet ta kalojë varkën e tij përmes një pende. "
 "Ndihmojeni Tux-ni dhe shihni se si funksionon një pendë kanali."
 
 #. Help goal
@@ -4014,12 +4009,9 @@ msgstr "ZARZAVATET vendosini në të djathtë dhe të tjerët në të majtë"
 
 #. Activity title
 #: activities/checkers/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Play chess against Tux"
 msgctxt "ActivityInfo|"
 msgid "Play checkers (against Tux)"
-msgstr "Luani shah me Tux-in"
+msgstr "Luani damë (kundër Tux-it)"
 
 #. Help title
 #: activities/checkers/ActivityInfo.qml:17
@@ -4040,27 +4032,6 @@ msgstr ""
 
 #. Help manual
 #: activities/checkers/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Checkers is played by two opponents, on opposite sides of the gameboard. "
-#| "One player has the dark pieces; the other has the light pieces. Players "
-#| "alternate turns. A player may not move an opponent's piece. A move "
-#| "consists of moving a piece diagonally to an adjacent unoccupied square. "
-#| "If the adjacent square contains an opponent's piece, and the square "
-#| "immediately beyond it is vacant, the piece may be captured (and removed "
-#| "from the game) by jumping over it.\n"
-#| "Only the dark squares of the checkered board are used. A piece may move "
-#| "only diagonally into an unoccupied square. Capturing is mandatory. The "
-#| "player without pieces remaining, or who cannot move due to being blocked, "
-#| "loses the game.\n"
-#| "When a man reaches the crownhead or kings row (the farthest row forward), "
-#| "it becomes a king, and is marked by placing an additional piece on top of "
-#| "the first man, and acquires additional powers including the ability to "
-#| "move backwards. If there is a piece in a diagonal that a king can "
-#| "capture, he can move any distance along the diagonal, and may capture an "
-#| "opposing man any distance away by jumping to any of the unoccupied "
-#| "squares immediately beyond it.\n"
 msgctxt "ActivityInfo|"
 msgid ""
 "Checkers is played by two opponents, on opposite sides of the gameboard. One "
@@ -4086,20 +4057,20 @@ msgstr ""
 "lojtar ka pullat e errëta; tjetri ka pullat e çelëta. Lojtarët luajnë me "
 "radhë. Një lojtar s’mund të lëvizë një pullë të kundërshtarit. Lëvizje do të "
 "thotë të lëvizësh një pullë në mënyrë diagonale te një kuti ngjitur e "
-"pazënë. Nëse kutia ngjitur përmban një pullë të kundërshtarit, dhe kutia "
+"pazënë. Nëse kutia ngjitur përmban një pullë të kundërshtarit dhe kutia "
 "menjëherë pas saj është e lirë, pulla mund të përlahet (dhe të hiqet nga "
 "loja) duke e kapërcyer.\n"
-"Përdoren vetëm kutitë e errëta të fushës me kuti. Një pullë mund të lëvizë "
-"vetëm në mënyrë diagonale te një kuti e pazënë. Përlarja është e "
-"detyrueshme. Lojtari që mbetet pa pulla, ose që s’mund të lëvizë, ngaqë "
-"është bllokuar, humb lojën.\n"
+"Përdoren vetëm kutitë e errëta të fushës. Një pullë mund të lëvizë vetëm në "
+"mënyrë diagonale te një kuti e pazënë. Përlarja është e detyrueshme. Lojtari "
+"që mbetet pa pulla, ose që s’mund të lëvizë, ngaqë është bllokuar, humb "
+"lojën.\n"
 "Kur një ushtar mbërrin rreshtin e mbretit (rreshti më i largët përpara), "
-"bëhet mbret, dhe kjo tregohet përmes një pulle shtesë që vihet sipër "
-"ushtarit, dhe fiton fuqi shtesë, përfshi këtu aftësinë për të lëvizur së "
-"prapthi. Nëse ka një pullë në një diagonale që mbreti mund ta përlajë, ai "
-"mund të lëvizë në çfarëdo largësie te diagonalja, dhe mund të përlajë një "
-"pullë të kundërshtarit sado larg, duke kapërcyer mbi çfarëdo kutish të "
-"pazëna menjëherë pas saj.\n"
+"bëhet mbret dhe kjo tregohet përmes një pulle shtesë që vihet sipër ushtarit "
+"dhe fiton fuqi shtesë, përfshi këtu aftësinë për të lëvizur së prapthi. Nëse "
+"ka një pullë në një diagonale që mbreti mund ta përlajë, ai mund të lëvizë "
+"në çfarëdo largësie te diagonalja dhe mund të përlajë një pullë të "
+"kundërshtarit sado larg, duke kapërcyer mbi çfarëdo kutish të pazëna "
+"menjëherë pas saj."
 
 #: activities/checkers/ActivityInfo.qml:29
 #: activities/checkers_2players/ActivityInfo.qml:28
@@ -4135,12 +4106,9 @@ msgstr "Fiton i ziu"
 
 #. Activity title
 #: activities/checkers_2players/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Play checkers with your friend"
 msgctxt "ActivityInfo|"
 msgid "Play checkers (with a friend)"
-msgstr "Luani damë me shokun tuaj"
+msgstr "Luani damë (me një shok)"
 
 #. Help manual
 #: activities/checkers_2players/ActivityInfo.qml:24
@@ -4169,7 +4137,7 @@ msgstr ""
 "lojtar ka pullat e errëta; tjetri ka pullat e çelëta. Lojtarët luajnë me "
 "radhë. Një lojtar s’mund të lëvizë një pullë të kundërshtarit. Lëvizje do të "
 "thotë të lëvizësh një pullë në mënyrë diagonale te një kuti ngjitur e "
-"pazënë. Nëse kutia ngjitur përmban një pullë të kundërshtarit, dhe kutia "
+"pazënë. Nëse kutia ngjitur përmban një pullë të kundërshtarit dhe kutia "
 "menjëherë pas saj është e lirë, pulla mund të përlahet (dhe të hiqet nga "
 "loja) duke e kapërcyer.\n"
 "Përdoren vetëm kutitë e errëta të fushës me kuti. Një pullë mund të lëvizë "
@@ -4186,35 +4154,12 @@ msgstr ""
 
 #. Activity title
 #: activities/chess/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Play chess against Tux"
 msgctxt "ActivityInfo|"
 msgid "Play chess (against Tux)"
-msgstr "Luani shah me Tux-in"
+msgstr "Luani shah (kundër Tux-it)"
 
 #. Help manual Much of this string is shared across the three activities "chess", "chess_partyend", and "chess_2players".
 #: activities/chess/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "In this activity you discover the chess game by playing against the "
-#| "computer. It displays the possible target positions for any selected "
-#| "piece which helps the children understand how pieces moves. At first "
-#| "level the computer is fully random to give more chances to the children. "
-#| "As level increases, the computer plays better.\n"
-#| "\n"
-#| "You can achieve a mate sooner if you follow these simple rules:\n"
-#| "    Trying to drive your opponent's king in the corner.\n"
-#| "<b>Explanation</b>: this way your opponent's king would have only 3 "
-#| "directions to move instead of 8 from a better position.\n"
-#| "    'Making a trap'. Use your pawns as baits.\n"
-#| "<b>Explanation</b>: this way you can lure your opponent out of his "
-#| "'comfort zone'.\n"
-#| "    Be patient enough.\n"
-#| "<b>Explanation</b>: don't rush too quick, be patient. Let yourself think "
-#| "a little bit and try to predict your opponent's future moves, so that you "
-#| "can catch him or secure your pieces from his attacks."
 msgctxt "ActivityInfo|"
 msgid ""
 "In this activity you discover the chess game by playing against the "
@@ -4241,10 +4186,11 @@ msgstr ""
 "guri të përzgjedhur, çka i ndihmon fëmijët të kuptojnë se si lëvizin gurët e "
 "shahut. Në nivelin e parë, kompjuteri është plotësisht kuturu, për t’u dhënë "
 "më tepër shanse fëmijëve. Dora-dorës që rritet niveli, kompjuteri luan më "
-"mirë.\n"
+"mirë. Mund të përdorni butonat shigjetë për të përzgjedhur dorazi nivelin e "
+"vështirësisë.\n"
 "\n"
 "Mund të arrini kapjen mat më shpejt, nëse ndiqni këto rregulla të thjeshta:\n"
-"    Të përpiqeni ta shpini mbretin e kundërshtarit tuaj në qoshe.\n"
+"    Përpiquni ta shpini mbretin e kundërshtarit tuaj në qoshe.\n"
 "<b>Shpjegim</b>: në këtë mënyrë, mbreti i kundërshtarit tuaj do të kishte "
 "vetëm 3 drejtime lëvizjeje, në vend se 8 prej nga një pozicion më i mirë.\n"
 "    “Bërja e një kurthi”. Përdorni ushtarët tuaj si karrem.\n"
@@ -4252,7 +4198,7 @@ msgstr ""
 "“zonës së rehatisë” së tij.\n"
 "    Bëni durim.\n"
 "<b>Shpjegim</b>: mos u nxitoni shumë shpejt, jini i duruar. Jepini kohë "
-"vetes të mendoheni pakëz dhe provoni të parashikoni lëvizjet e ardhshme të "
+"vetes të mendoheni pakëz dhe përpiquni të parashikoni lëvizjet e ardhshme të "
 "kundërshtarit tuaj, që të mund ta kapni ose të siguroni gurët tuaj nga "
 "sulmet e tij."
 
@@ -4265,6 +4211,9 @@ msgid ""
 "will redo one move. To undo all the moves, press and hold the undo button "
 "for 3 seconds."
 msgstr ""
+"Një klikim mbi butonin e zhbërjes do të zhbëjë një lëvizje. Një klikim mbi "
+"butonin e ribërjes do të ribëjë një lëvizje. Për të zhbërë krejt lëvizjet, "
+"shtypni dhe mbani të shtypur butonin për 3 sekonda."
 
 #: activities/chess/ActivityInfo.qml:33
 #: activities/chess_partyend/ActivityInfo.qml:33
@@ -4317,37 +4266,25 @@ msgstr "E pavlerë, mbreti juaj mund të jetë shah"
 
 #. Translators: undo all the moves in chess activity
 #: activities/chess/Chess.qml:123
-#, fuzzy
-#| msgctxt "core|"
-#| msgid "Do you really want to quit GCompris?"
 msgctxt "Chess|"
 msgid "Do you really want to undo all the moves?"
-msgstr "Doni vërtet të dilet nga GCompris??"
+msgstr "Doni vërtet të zhbëhen krejt lëvizjet?"
 
 #: activities/chess/Chess.qml:124
-#, fuzzy
-#| msgctxt "balanceboxeditor|"
-#| msgid "Yes"
 msgctxt "Chess|"
 msgid "Yes"
 msgstr "Po"
 
 #: activities/chess/Chess.qml:125
-#, fuzzy
-#| msgctxt "balanceboxeditor|"
-#| msgid "No"
 msgctxt "Chess|"
 msgid "No"
 msgstr "Jo"
 
 #. Activity title
 #: activities/chess_2players/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Play oware with a friend"
 msgctxt "ActivityInfo|"
 msgid "Play chess (with a friend)"
-msgstr "Luani ouare një shok"
+msgstr "Luani shah (me një shok)"
 
 #. Help manual Much of this string is shared across the three activities "chess", "chess_partyend", and "chess_2players".
 #: activities/chess_2players/ActivityInfo.qml:25
@@ -5008,8 +4945,8 @@ msgid ""
 "The shortest hand indicates the hours, a longer hand indicates the minutes, "
 "and the longest hand indicates the seconds."
 msgstr ""
-"Akrepi më i shkurtër tregon orët, një pak më i gjatë tregon minutat, dhe më "
-"i gjati tregon sekondat."
+"Akrepi më i shkurtër tregon orët, një pak më i gjatë tregon minutat dhe më i "
+"gjati tregon sekondat."
 
 #: activities/clockgame/Clockgame.qml:106
 msgctxt "Clockgame|"
@@ -5112,10 +5049,10 @@ msgid ""
 msgstr ""
 "Bojërat dhe ngjyrat përthithin tone të ndryshme të dritës që bie mbi to, "
 "duke i hequr prej çfarë shihni. Sa më shumë ngjyrë që të shtoni, aq më tepër "
-"dritë përthithet, dhe aq më e errët bëhet ngjyra e përftuar. Mund të "
+"dritë përthithet dhe aq më e errët bëhet ngjyra e përftuar. Mund të "
 "përziejmë thjesht tre ngjyra themelore për të krijuar mjaft ngjyra të reja. "
 "Ngjyrat themelore për bojëra janë cian (një ton special i blusë), magenta "
-"(një ton special i së trëndafiltës), dhe e verdha."
+"(një ton special i së trëndafiltës) dhe e verdha."
 
 #: activities/color_mix/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
@@ -5349,27 +5286,21 @@ msgstr "Vazhdoni"
 
 #. Activity title
 #: activities/comparator/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Compare numbers."
 msgctxt "ActivityInfo|"
 msgid "Compare numbers"
-msgstr "Krahasoni numra."
+msgstr "Krahasoni numra"
 
 #. Help title
 #: activities/comparator/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Compare the numbers and choose the corresponding sign."
-msgstr ""
+msgstr "Krahasoni numrat dhe zgjidhni shenjën përgjegjëse."
 
 #. Help goal
 #: activities/comparator/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn about prime numbers."
 msgctxt "ActivityInfo|"
 msgid "Learn how to compare number values."
-msgstr "Mësoni rreth numrave të thjeshtë."
+msgstr "Mësoni si të krahasoni vlera numrash."
 
 #. Help manual
 #: activities/comparator/ActivityInfo.qml:26
@@ -5379,6 +5310,9 @@ msgid ""
 "symbol for this pair. When each line contains a symbol, select the OK button "
 "to validate the answers."
 msgstr ""
+"Përzgjidhni një dyshe numrash te lista. Mandej përzgjidhni simbolin e saktë "
+"të krahasimit për këtë dyshe. Kur çdo rresht të ketë një simbol, përzgjidhni "
+"butonin OK që të vlerësohen përgjigjet."
 
 #: activities/comparator/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
@@ -5386,112 +5320,87 @@ msgid ""
 "If some answers are incorrect, a cross icon will appear on the corresponding "
 "lines. Correct the errors, then select the OK button again."
 msgstr ""
+"Nëse disa nga përgjigjet janë të pasakta, te rreshtat përgjegjës do të "
+"shfaqet një ikonë kryqi. Ndreqni gabimet, mandej përzgjidhni sërish butonin "
+"OK."
 
 #: activities/comparator/ActivityInfo.qml:29
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Down arrow: select previous item"
 msgctxt "ActivityInfo|"
 msgid "Up and Down arrows: select a pair of numbers in the list"
-msgstr "Tasti Down: përzgjidhni objektin e mëparshëm"
+msgstr ""
+"Tastet shigjetë Sipër dhe Poshtë: përzgjidhni te lista një dyshe numrash"
 
 #: activities/comparator/ActivityInfo.qml:30
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Left and Right arrows: turn left and right"
 msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: select a symbol button"
-msgstr "Tastet shigjetë Majtas dhe Djathtas: lëvizni majtas dhe djathtas"
+msgstr "Tastet shigjetë Majtas dhe Djathtas: përzgjidhni një buton simboli"
 
 #: activities/comparator/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
 msgid "Space: if a symbol button is selected, enter this symbol"
 msgstr ""
+"Tasti hapësirë: nëse është përzgjedhur një buton simboli, fut këtë simbol"
 
 #: activities/comparator/ActivityInfo.qml:32
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Enter: validate your answer"
 msgctxt "ActivityInfo|"
 msgid "Return: validate the answers"
-msgstr "Tasti Enter: shihni vlefshmërinë e përgjigjes tuaj"
+msgstr "Tasti Return: vlerësoji përgjigjet"
 
 #: activities/comparator/ActivityInfo.qml:33
 msgctxt "ActivityInfo|"
 msgid "&lt;, &gt; or =: enter the corresponding symbol"
-msgstr ""
+msgstr "&lt;, &gt; ose =: fut simbolin përkatës"
 
 #: activities/comparator/resource/1/Data.qml:36
 #: activities/tens_complement_find/resource/3/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "Data|"
 msgid "Numbers from 1 to 9."
-msgstr "Numra nga 0 deri në 9."
+msgstr "Numra nga 1 deri në 9."
 
 #: activities/comparator/resource/10/Data.qml:14
 msgctxt "Data|"
 msgid "3 decimal places between 0 and 999.999."
-msgstr ""
+msgstr "3 vende dhjetore mes 0 dhe 999,999."
 
 #: activities/comparator/resource/2/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "Data|"
 msgid "Numbers from 1 to 19."
-msgstr "Numra nga 0 deri në 9."
+msgstr "Numra nga 1 deri në 19."
 
 #: activities/comparator/resource/3/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "Data|"
 msgid "Numbers from 1 to 100."
-msgstr "Numra nga 0 deri në 9."
+msgstr "Numra nga 1 në 100."
 
 #: activities/comparator/resource/4/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "Data|"
 msgid "Numbers from 1 to 1000."
-msgstr "Numra nga 0 deri në 9."
+msgstr "Numra nga 1 në 1000."
 
 #: activities/comparator/resource/5/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "Data|"
 msgid "Numbers from 1 to 1000000."
-msgstr "Numra nga 0 deri në 9."
+msgstr "Numra nga 1 në 1000000."
 
 #: activities/comparator/resource/6/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "Data|"
 msgid "Numbers from 1 to 1 billion."
-msgstr "Numra nga 0 deri në 9."
+msgstr "Numra nga 1 në 1 miliard."
 
 #: activities/comparator/resource/7/Data.qml:14
 msgctxt "Data|"
 msgid "1 decimal place between 0 and 9.9, same integer part."
-msgstr ""
+msgstr "1 vend dhjetor mes 0 dhe 9,9, e njëjta pjesë e plotë."
 
 #: activities/comparator/resource/8/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "1 decimal place between 0 and 9.9."
-msgstr "Numra mes %1 dhe %2."
+msgstr "1 vend dhjetor mes 0 dhe 9,9."
 
 #: activities/comparator/resource/9/Data.qml:14
 msgctxt "Data|"
 msgid "2 decimal places between 0 and 99.99."
-msgstr ""
+msgstr "2 vende dhjetore mes 0 dhe 99,99."
 
 #. Activity title
 #: activities/crane/ActivityInfo.qml:20
@@ -5652,7 +5561,7 @@ msgstr "Kulla Eifel, parë nga fusha e Marsit, Paris, Francë"
 #: activities/details/resource/board/board15_0.qml:14
 msgctxt "board15_0|"
 msgid "Courtyard of the Museum of Louvre, and its pyramid"
-msgstr "Oborr i Muzeut të Luvrit, dhe piramida e tij"
+msgstr "Oborr i Muzeut të Luvrit dhe piramida e tij"
 
 #: activities/details/resource/board/board16_0.qml:14
 msgctxt "board16_0|"
@@ -5800,8 +5709,8 @@ msgid ""
 "the tool menu, and click on the component or on the wire you want to delete."
 msgstr ""
 "Që të fshini një element ose një tel, përzgjidhni mjetin e fshirjes (ikona "
-"kryq) që nga menuja e mjeteve, dhe mandej klikoni mbi elementin ose mbi "
-"telin që doni të fshihet."
+"kryq) që nga menuja e mjeteve dhe mandej klikoni mbi elementin ose mbi telin "
+"që doni të fshihet."
 
 #: activities/digital_electricity/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
@@ -5908,8 +5817,8 @@ msgid ""
 "turns green if the input is 1, and turns red if the input is 0."
 msgstr ""
 "Për të kontrolluar ç’japin përbërësit e tjetër dixhitalë, përdoret një "
-"llambë dixhitale. Bëhet e gjelbër, nëse sinjali në hyrje është 1, dhe bëhet "
-"e kuqe, nëse sinjali në hyrje është 0."
+"llambë dixhitale. Bëhet e gjelbër, nëse sinjali në hyrje është 1 dhe bëhet e "
+"kuqe, nëse sinjali në hyrje është 0."
 
 #: activities/digital_electricity/components/NandGate.qml:21
 msgctxt "NandGate|"
@@ -6035,8 +5944,8 @@ msgid ""
 "of 1 in inputs is even. In this activity, a 2 inputs XOR gate is shown. The "
 "output for a 2 inputs XOR gate is:"
 msgstr ""
-"Një portë XOSE prodhon 1 nëse numri i 1-shave te sinjalet në hyrje është "
-"tek, dhe 0, nëse numri i 1-shave te sinjalet në hyrje është çift. Në këtë "
+"Një portë XOSE prodhon 1 nëse numri i 1-shave te sinjalet në hyrje është tek "
+"dhe 0, nëse numri i 1-shave te sinjalet në hyrje është çift. Në këtë "
 "veprimtari, shfaqet një portë XOSE me dy vende sinjalesh në hyrje. Sinjali "
 "në dalje për portën XOSE me 2 sinjale në hyrje është:"
 
@@ -6763,7 +6672,7 @@ msgstr "Eksploroni kafshë bujqësore"
 msgctxt "ActivityInfo|"
 msgid "Learn about farm animals, what sounds they make, and interesting facts."
 msgstr ""
-"Mësoni rreth kafshëve bujqësore, ç’tinguj prodhojnë, dhe fakte interesante."
+"Mësoni rreth kafshëve bujqësore, ç’tinguj prodhojnë dhe fakte interesante."
 
 #. Help goal
 #: activities/explore_farm_animals/ActivityInfo.qml:20
@@ -6845,14 +6754,14 @@ msgid ""
 "escape predators, and possess an excellent sense of balance. They have "
 "single-toed hooves."
 msgstr ""
+"Kali bën “ihihhihihi”. Kuajt janë të zotë të vrapojnë, çka u lejon t’u "
+"shpëtojnë me shpejtësi grabitqarëve, si dhe zotërojnë një ndjesi të "
+"shkëlqyer të baraspeshimit. Kanë thundra me një gisht."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:25
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal's ancestors were wolves."
 msgctxt "board1|"
 msgid "This animal has single-toed hooves."
-msgstr "Të parët e kësaj kafshe qenë ujqit."
+msgstr "Kjo kafshë ka thundra me një gisht të vetëm."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:33
 msgctxt "board1|"
@@ -6865,14 +6774,13 @@ msgid ""
 "The chicken goes 'cluck'. Domestic chickens have wings, but are not capable "
 "of long-distance flight. They have a comb on their head."
 msgstr ""
+"Pula bën “kluk-kluk”. Pulat shtëpiake kanë krahë, por s’janë të zonjat për "
+"fluturime në largësi të mëdha. Kanë një lafshë mbi krye."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:37
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal likes to come out at night."
 msgctxt "board1|"
 msgid "This animal has a comb on its head."
-msgstr "Kjo kafshë bredh natën."
+msgstr "Ky shpend ka një lafshë mbi krye."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:45
 msgctxt "board1|"
@@ -6886,11 +6794,14 @@ msgid ""
 "developed sense of taste, with around 20,000 taste buds. They can detect "
 "odours 8km away."
 msgstr ""
+"Lopa bën “muuuuuu”. Lopët kanë fushë të gjerë vështrimi, 330°. Kanë një "
+"ndjesi të zhvilluar shijeje, me afërsisht 20 mijë puprra shijuese. Mund të "
+"nuhasin aroma 8km larg."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:49
 msgctxt "board1|"
 msgid "This animal has around 20,000 taste buds."
-msgstr ""
+msgstr "Kjo kafshë ka rreth 20 mijë puprra shijuese."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:57
 msgctxt "board1|"
@@ -6904,14 +6815,14 @@ msgid ""
 "ability to chase mice and other rodents. They purr to communicate various "
 "emotions."
 msgstr ""
+"Macja bën “mjau”. Macet vlerësohen nga njerëzit për shoqërinë që u bëjnë dhe "
+"aftësinë e tyre për të gjuajtur minj dhe brejtës të tjerë. Për të komunikuar "
+"emocione të ndryshme ato përdorin një si murmurimë të brendshme."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:61
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal lays eggs."
 msgctxt "board1|"
 msgid "This animal can purr."
-msgstr "Kjo kafshë shtron vezë."
+msgstr "Kjo kafshë mund të mjaullijë."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:69
 msgctxt "board1|"
@@ -6924,11 +6835,15 @@ msgid ""
 "The pig goes 'oink'. Pigs wallow in the mud, mainly to control their body "
 "temperature."
 msgstr ""
+"Derri bën “ëing, ëing”. Derrat zhgërryhen në llucë, kryesisht për të "
+"rregulluar temperaturën e tyre trupore."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:73
 msgctxt "board1|"
 msgid "This animal wallows in the mud to control its body temperature."
 msgstr ""
+"Kjo kafshë zhgërryhet në llucë, për të rregulluar temperaturën e tyre "
+"trupore."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:81
 msgctxt "board1|"
@@ -6941,14 +6856,13 @@ msgid ""
 "The duck goes 'quack'. Ducks are mostly aquatic birds. They have waterproof "
 "feathers and webbed feet which enable them to swim on the water."
 msgstr ""
+"Rosa bën “kuak kuak”. Rosat janë kryesisht zogj ujorë. Kanë pupla që s’lagen "
+"dhe këmbë me cipë, që i ndihmojnë të notojnë në ujë."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:85
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal has webbed feet so it can swim in the water."
 msgctxt "board1|"
 msgid "This animal has webbed feet and can swim on the water."
-msgstr "Kjo kafshë i këmbët me cipë, që të mund të notojë në ujë."
+msgstr "Kjo kafshë ka këmbë me cipë dhe mund të notojë në ujë."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:93
 msgctxt "board1|"
@@ -6956,26 +6870,18 @@ msgid "Owl"
 msgstr "Buf"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:94
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid ""
-#| "The owl goes 'hoo. hoo.' The owl has excellent vision and hearing at "
-#| "night."
 msgctxt "board1|"
 msgid ""
 "The owl goes 'hoot'. Owls are nocturnal birds, they have excellent vision "
 "and hearing at night."
 msgstr ""
-"Bufi bën “hu-huuu, hu-huuu”. Bufi ka të parë dhe të dëgjuar të shkëlqyer "
-"natën."
+"Bufi bën “hu-huuu, hu-huuu”. Bufat janë zogj nate, kanë të parë dhe të "
+"dëgjuar të shkëlqyer natën."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:97
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal likes to come out at night."
 msgctxt "board1|"
 msgid "This animal is a nocturnal bird."
-msgstr "Kjo kafshë bredh natën."
+msgstr "Kjo kafshë është një zog nate."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:105
 msgctxt "board1|"
@@ -6988,14 +6894,13 @@ msgid ""
 "The dog goes 'woof'. Dogs are probably the oldest domesticated species. They "
 "are descendants of the wolf."
 msgstr ""
+"Qeni bën “ham hum”. Qentë ka shumë mundësi të jenë specia më e vjetër e "
+"zbutur. Ata rrjedhin nga ujku."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:109
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal is a close relative to the goat."
 msgctxt "board1|"
 msgid "This animal is a descendant of the wolf."
-msgstr "Kjo kafshë është kushërirë e afërt me dhinë."
+msgstr "Kjo kafshë rrjedh nga ujku."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:117
 msgctxt "board1|"
@@ -7008,14 +6913,13 @@ msgid ""
 "The sheep goes 'baa'. Most sheep breeds bear a fleece of wool. The fleece "
 "can be sheared and used to produce textile fibre."
 msgstr ""
+"Delja bën “beeee”. Shumica e kryqëzimeve të deles kanë një lëkurë me lesh. "
+"Ky mund të qethet dhe të përdoret për të prodhuar fibër tekstilesh."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:121
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal's ancestors were wolves."
 msgctxt "board1|"
 msgid "This animal produces wool."
-msgstr "Të parët e kësaj kafshe qenë ujqit."
+msgstr "Kjo kafshë prodhon lesh."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:131
 msgctxt "board1|"
@@ -7111,10 +7015,10 @@ msgid ""
 "arena the Classical world had yet seen."
 msgstr ""
 "Koloseu, ose Koliseu, sot është ndërtimi më i dallueshëm i Romës Klasike. "
-"Edhe 2000 mijë vjet pasi qe ndërtuar, dhe edhe pse për ca shekuj qe "
-"braktisur dhe u vodh për material ndërtimi, është e dallueshme menjëherë si "
-"një gjedhe klasike për stadiumet sot. Qe amfiteatri i parë permanent që u "
-"ngrit në Romë, dje arena më mbresëlënëse që ka parë bota klasike."
+"Edhe 2000 mijë vjet pasi qe ndërtuar dhe edhe pse për ca shekuj qe braktisur "
+"dhe u vodh për material ndërtimi, është e dallueshme menjëherë si një gjedhe "
+"klasike për stadiumet sot. Qe amfiteatri i parë permanent që u ngrit në "
+"Romë, dhe arena më mbresëlënëse që ka parë bota klasike."
 
 #: activities/explore_monuments/resource/board/board1.qml:41
 #: activities/explore_monuments/resource/board/board1.qml:44
@@ -7269,7 +7173,7 @@ msgstr ""
 "thelb qe një mur i lartë fshehës, i ndërtuar që gratë e familjes mbretërore "
 "të mund të shihnin festimet e zhvilluara në rrugë, pa u parë vetë nga "
 "jashtë. I ngritur me shkëmb ranor të kuq dhe të trëndafiltë, the pallati "
-"gjendet në skaj të City Palace, dhe shtrihet te zenanatë, ose dhomat e grave."
+"gjendet në skaj të City Palace dhe shtrihet te zenanatë, ose dhomat e grave."
 
 #: activities/explore_monuments/resource/board/board2.qml:40
 #: activities/explore_monuments/resource/board/board2.qml:43
@@ -7453,7 +7357,7 @@ msgid ""
 "area of Delhi, is made of red sandstone and marble."
 msgstr ""
 "Minarja e Kutubit, 74 metra e lartë, është minarja me tulla më e lartë në "
-"botë, dhe e dyta për nga lartësia në Indi, pas Fateh Burxhit në Mohali. Tok "
+"botë dhe e dyta për nga lartësia në Indi, pas Fateh Burxhit në Mohali. Tok "
 "me monumente të lashta dhe mesjetare që e rrethojnë, formojnë Kompleksin e "
 "Kutbit, i cili është Trashëgimi Botërore e UNESCO-s. Kulla, që gjendet në "
 "zonën Mehrauli të Delhit, është ngritur me shkëmb ranor të kuq dhe mermer."
@@ -7768,8 +7672,8 @@ msgid ""
 "beyond the borders of the parish and of Berlin, the cathedral attracts "
 "thousands of visitors, year after year, from Germany and abroad."
 msgstr ""
-"Katedralja e Berlinit është kisha më e madhe e qytetit, dhe shërben si "
-"qendra jetike për kishën protestante të Gjermanisë. Duke u shtrirë goxha tej "
+"Katedralja e Berlinit është kisha më e madhe e qytetit dhe shërben si qendra "
+"jetike për kishën protestante të Gjermanisë. Duke u shtrirë goxha tej "
 "kufijve të famullisë dhe të Berlinit, katedralja tërheq mijëra vizitorë, vit "
 "pas viti, nga Gjermania dhe nga jashtë saj."
 
@@ -7882,7 +7786,7 @@ msgstr ""
 "pjesë e Shërbimit të Parqeve Kombëtare dhe e Kombit Navaho njëkohësisht, "
 "pasi janë përcaktuar si monument kombëtar më 1931-shin. Një numër parqesh të "
 "rëndësishëm të hershëm të indigjenëve të Amerikës ruhen në gati 349 "
-"kilometra katrorë sipërfaqe parqesh, dhe Lugarja e Shellit ofron gjithashtu "
+"kilometra katrorë sipërfaqe parqesh dhe Lugarja e Shellit ofron gjithashtu "
 "një varg formacionesh gjeologjike të Jugperëndimit, përfshi Shkëmbin e "
 "Akrepit, një kulm 243 metra i lartë prej shkëmbi ranor që ngrihet frikshëm "
 "që nga fundi i shtratit të lugares."
@@ -7925,7 +7829,7 @@ msgstr ""
 "ishullit Manhatan, daton 50 vjet para asaj të Ellis Island si pika e parë e "
 "kontrollit të emigracionit në Sh.B.A. Kështjella Klinton (nps.gov/cacl) "
 "fillimisht u ndërtua si një fortesë për të mbrojtur Nju Jorkun nga një "
-"mësymje britanike gjatë Luftës së 1812-s, dhe i regjistrua si monument "
+"mësymje britanike gjatë Luftës së 1812-s dhe i regjistruar si monument "
 "kombëtar më 1946-n."
 
 #: activities/explore_monuments/resource/board/board5.qml:62
@@ -7969,7 +7873,7 @@ msgstr ""
 "Ngritur me gur të bardhë me 36 shtylla të mirënjohura, Përmendorja e "
 "Linkolnit është një nga strukturat më të njohura në Shtetet e Bashkuara të "
 "Amerikës. Përmendorja gjendet në anën perëndimore të National Mall, në "
-"Parkun e Potomakut Perëndimor, dhe është një shembull i arkitekturës "
+"Parkun e Potomakut Perëndimor dhe është një shembull i arkitekturës "
 "neoklasike. Përmban vetëm një statujë 5.8m të lartë të Abraham Linkolnit "
 "ulur mendueshëm, me hapësirat në të dy anët e saj me mbishkrime me pjesë nga "
 "Fjala e Inaugurimit të Dytë si president i Linkolnit dhe asaj që mbahet si "
@@ -8021,13 +7925,13 @@ msgstr ""
 "Monumenti Kombëtar i Navahos është një monument kombëtar që gjendet brenda "
 "pjesës veriperëndimore të territorit të Kombit Navaho në Arizonën veriore, "
 "që u krijua për të ruajtur tre vendbanime shkëmbore të ruajtur mirë të "
-"popullit të lashtë të Pueblos: Keet Seel (Kitsʼiil), Betatakin "
-"(Bitátʼahkin), dhe Shtëpinë e Mbishkrimeve (Tsʼah Biiʼ Kin). Monumenti "
-"gjendet sipër në pllajën Shonto, me pamje për nga grupi i Lugareve Cegi, në "
-"perëndim të Kajentas, Arizonë. Përmban një qendër vizitorësh me një muze, dy "
-"shtigje për te ngritje shkëmbore për tur personal, dy fusha të vogla "
-"kampingu, dhe një zonë pikniku. Rojat i udhëheqin vizitorët në ture falas te "
-"vendbanimet shkëmbore të Keet Seel-it dhe Betatakin-it. Pjesa e Shtëpisë së "
+"popullit të lashtë të Pueblos: Keet Seel (Kitsʼiil), Betatakin (Bitátʼahkin) "
+"dhe Shtëpinë e Mbishkrimeve (Tsʼah Biiʼ Kin). Monumenti gjendet sipër në "
+"pllajën Shonto, me pamje për nga grupi i Lugareve Cegi, në perëndim të "
+"Kajentas, Arizonë. Përmban një qendër vizitorësh me një muze, dy shtigje për "
+"te ngritje shkëmbore për tur personal, dy fusha të vogla kampingu dhe një "
+"zonë pikniku. Rojat i udhëheqin vizitorët në ture falas te vendbanimet "
+"shkëmbore të Keet Seel-it dhe Betatakin-it. Pjesa e Shtëpisë së "
 "Mbishkrimeve, më tej në perëndim, aktualisht është e mbyllur për publikun."
 
 #: activities/explore_monuments/resource/board/board5.qml:106
@@ -8236,7 +8140,7 @@ msgid ""
 "2."
 msgstr ""
 "Në nivelin e parë, lojtarët do të kënaqen duke eksploruar çdo kafshë në "
-"ekran. Klikoni mbi pikëpyetjen dhe mësoni gjëra rreth kafshës, si quhet, dhe "
+"ekran. Klikoni mbi pikëpyetjen dhe mësoni gjëra rreth kafshës, si quhet dhe "
 "si duket. Mësojini mirë këto informacione, ngaqë do të merreni në provë në "
 "nivelin e dytë."
 
@@ -8360,18 +8264,13 @@ msgid "Polar bear"
 msgstr "Ari polar"
 
 #: activities/explore_world_animals/resource/board/board2.qml:31
-#, fuzzy
-#| msgctxt "board2|"
-#| msgid ""
-#| "The polar bear is one of the world's largest predatory mammals. It "
-#| "weights up to a ton and can be as long as 3 meters!"
 msgctxt "board2|"
 msgid ""
 "The polar bear is one of the world's largest predatory mammals. It weighs up "
 "to a ton and can be as long as 3 meters!"
 msgstr ""
-"Ariu polar është një nga gjitarët më të mëdhenj grabitqarë. Peshon deri në "
-"një ton dhe mund të jetë deri në 3 metra i lartë!"
+"Ariu polar është një nga gjitarët grabitqarë më të mëdhenj të botës. Peshon "
+"deri në një ton dhe mund të jetë deri në 3 metra i lartë!"
 
 #: activities/explore_world_animals/resource/board/board2.qml:41
 #: activities/explore_world_animals/resource/board/board2.qml:44
@@ -8560,8 +8459,8 @@ msgid ""
 "location that corresponds to this music. Click on the play button if you'd "
 "like to hear the music again."
 msgstr ""
-"Në nivelin e dytë do të dëgjoni një copë muzikore, dhe duhet të përzgjidhni "
-"vendndodhjen që i përgjigjet kësaj muzike. Nëse doni ta dëgjoni prapë pjesën "
+"Në nivelin e dytë do të dëgjoni një copë muzikore dhe duhet të përzgjidhni "
+"vendndodhjen që përkon me këtë muzikë. Nëse doni ta dëgjoni prapë pjesën "
 "muzikore, klikoni mbi butonin e luajtjes."
 
 #: activities/explore_world_music/ActivityInfo.qml:27
@@ -8570,8 +8469,8 @@ msgid ""
 "In the third level, you must select the location that matches the text "
 "description on the screen."
 msgstr ""
-"Në nivelin e tretë, duhet të përzgjidhni vendndodhjen që i përgjigjet "
-"përshkrimit tekst në ekran."
+"Në nivelin e tretë, duhet të përzgjidhni vendndodhjen që përkon me "
+"përshkrimin tekst në ekran."
 
 #: activities/explore_world_music/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
@@ -8608,7 +8507,7 @@ msgid ""
 "variety of drums, and they believe it is a sacred and magical instrument."
 msgstr ""
 "Muzika është pjesë e jetës së përditshme në Afrikë. Muzika afrikane përmban "
-"një larmi të madhe daullesh, dhe besojnë se është një instrument i shenjtë "
+"një larmi të madhe daullesh dhe besojnë se është një instrument i shenjtë "
 "dhe magjik."
 
 #: activities/explore_world_music/resource/board/board1.qml:44
@@ -8642,7 +8541,7 @@ msgid ""
 "exciting with crowds cheering and performers yelling!"
 msgstr ""
 "Daullet taiko vijnë nga Japonia. Këto lloj daullesh fillimisht përdoreshin "
-"për të trembur armiqtë në betejë. Tingulli i tyre është shumë i fortë, dhe "
+"për të trembur armiqtë në betejë. Tingulli i tyre është shumë i fortë dhe "
 "shfaqjet janë shumë tërheqëse me turma që gëzohen dhe pjesëmarrës që "
 "bërtasin!"
 
@@ -8661,7 +8560,7 @@ msgid ""
 msgstr ""
 "Muzika folklorike e kësaj zone quhet muzikë kelte. Shpesh përmban një poemë "
 "ose histori që rrëfehet. Në veglat tipike përfshihen gajdet, violinat, "
-"fyejt, harpat, dhe fizarmonikat."
+"fyejt, harpat dhe fizarmonikat."
 
 #: activities/explore_world_music/resource/board/board1.qml:80
 #: activities/explore_world_music/resource/board/board1.qml:84
@@ -8693,7 +8592,7 @@ msgid ""
 "Beethoven, and Mozart forever changed music history."
 msgstr ""
 "Evropa është vatra e muzikës klasike. Kompozitorë të famshëm si Bahu, "
-"Betoveni, dhe Moxarti ndryshuan përgjithnjë historinë e muzikës."
+"Betoveni dhe Moxarti ndryshuan përgjithnjë historinë e muzikës."
 
 #: activities/explore_world_music/resource/board/board1.qml:104
 #: activities/explore_world_music/resource/board/board1.qml:108
@@ -8801,7 +8700,7 @@ msgstr "?"
 #, qt-format
 msgctxt "Family|"
 msgid "Select one of the pairs corresponding to: %1"
-msgstr "Përzgjidhni një nga çiftet që i përgjigjet: %1"
+msgstr "Përzgjidhni një nga dyshet që përkon me: %1"
 
 #: activities/family/FamilyDataset.qml:125
 #: activities/family/FamilyDataset.qml:126
@@ -8979,7 +8878,7 @@ msgstr "Tregoni të afërmit"
 #: activities/family_find_relative/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Click on a pair corresponding to the given relation."
-msgstr "Klikoni mbi një çift që i përgjigjet marrëdhënies së dhënë."
+msgstr "Klikoni mbi një dyshe që përkon me marrëdhënien e dhënë."
 
 #. Help prerequisite
 #: activities/family_find_relative/ActivityInfo.qml:22
@@ -8999,7 +8898,7 @@ msgstr ""
 "Ju tregohet një familje, me disa udhëzime.\n"
 "Qarqet janë të lidhur me segmente për të treguar marrëdhëniet. Çiftet e "
 "martuar tregohen me një unazë te segmenti.\n"
-"Klikoni mbi një çift anëtarësh të familjes që i përgjigjet marrëdhënies së "
+"Klikoni mbi një dyshe anëtarësh të familjes që i përgjigjet marrëdhënies së "
 "dhënë."
 
 #. Activity title
@@ -9027,8 +8926,8 @@ msgid ""
 "Click or drag on any piece next to the empty space, and it will move to the "
 "empty space."
 msgstr ""
-"Klikoni ose tërhiqni cilëndo pjesë në krah të hapësirës së zbrazët, dhe do "
-"të kalojë te hapësira e zbrazët."
+"Klikoni ose tërhiqni cilëndo pjesë në krah të hapësirës së zbrazët dhe do të "
+"kalojë te hapësira e zbrazët."
 
 #: activities/fifteen/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
@@ -9262,44 +9161,31 @@ msgstr ""
 
 #. Activity title
 #: activities/fractions_create/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice subtractions."
 msgctxt "ActivityInfo|"
 msgid "Create the fractions"
-msgstr "Ushtrohuni në zbritje."
+msgstr "Krijoni thyesa"
 
 #. Help title
 #: activities/fractions_create/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "A shape split in equal parts is displayed on screen."
-msgstr ""
+msgstr "Në ekran shfaqet një formë e ndarë në pjesë të barabarta."
 
 #: activities/fractions_create/ActivityInfo.qml:18
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Drag the appropriate numbers and the operators to the boxes to obtain the "
-#| "number to guess in the instruction."
 msgctxt "ActivityInfo|"
 msgid ""
 "Select the appropriate number of parts as described in the instructions."
-msgstr ""
-"Tërhiqni te kutitë numrat dhe veprimet e duhura që të përftoni numrin që "
-"duhet hamendësuar te udhëzimi."
+msgstr "Përzgjidhni numrin e duhur të pjesëve, siç përshkruhet te udhëzimet."
 
 #: activities/fractions_create/fractions_create.js:79
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Digits representation"
 msgctxt "fractions_create|"
 msgid "Find the represented fraction."
-msgstr "Paraqitje shifrash"
+msgstr "Gjeni thyesën e paraqitur."
 
 #: activities/fractions_create/resource/1/Data.qml:9
 msgctxt "Data|"
 msgid "Simplified fractions with a pie."
-msgstr ""
+msgstr "Thyesa të thjeshtuara me një byrek."
 
 #: activities/fractions_create/resource/1/Data.qml:18
 #: activities/fractions_create/resource/3/Data.qml:17
@@ -9307,78 +9193,63 @@ msgstr ""
 #: activities/fractions_create/resource/3/Data.qml:29
 msgctxt "Data|"
 msgid "Select one half of the pie."
-msgstr ""
+msgstr "Përzgjidhni gjysmën e byrekut."
 
 #: activities/fractions_create/resource/1/Data.qml:24
 #: activities/fractions_create/resource/3/Data.qml:35
 #: activities/fractions_create/resource/3/Data.qml:49
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Select the fifth Thursday of the given month"
 msgctxt "Data|"
 msgid "Select one-third of the pie."
-msgstr "Përzgjidhni të enjten e pestë të muajit të dhënë"
+msgstr "Përzgjidhni një të tretën e byrekut."
 
 #: activities/fractions_create/resource/1/Data.qml:30
 #: activities/fractions_create/resource/3/Data.qml:41
 #: activities/fractions_create/resource/3/Data.qml:55
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Select the fourth Sunday of the given month"
 msgctxt "Data|"
 msgid "Select two-thirds of the pie."
-msgstr "Përzgjidhni të shtunën e katër të muajit të dhënë"
+msgstr "Përzgjidhni dy të tretat e byrekut."
 
 #: activities/fractions_create/resource/1/Data.qml:36
 #: activities/fractions_create/resource/3/Data.qml:61
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Select the butterfly of the correct color."
 msgctxt "Data|"
 msgid "Select one-quarter of the pie."
-msgstr "Përzgjidhni fluturën me ngjyrën e saktë."
+msgstr "Përzgjidhni një të katërtën e byrekut."
 
 #: activities/fractions_create/resource/1/Data.qml:42
 #: activities/fractions_create/resource/3/Data.qml:67
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Select the fifth Thursday of the given month"
 msgctxt "Data|"
 msgid "Select two-fifths of the pie."
-msgstr "Përzgjidhni të enjten e pestë të muajit të dhënë"
+msgstr "Përzgjidhni dy të pestat e byrekut."
 
 #: activities/fractions_create/resource/1/Data.qml:50
 msgctxt "Data|"
 msgid "Select one pie and one-quarter of a pie."
-msgstr ""
+msgstr "Përzgjidhni një byrek dhe një të katërtën e byrekut."
 
 #: activities/fractions_create/resource/1/Data.qml:56
 msgctxt "Data|"
 msgid "Select one pie and two-fifths of a pie."
-msgstr ""
+msgstr "Përzgjidhni një byrek dhe dy të pestat e byrekut."
 
 #: activities/fractions_create/resource/1/Data.qml:62
 msgctxt "Data|"
 msgid "Select one pie and one-third of a pie."
-msgstr ""
+msgstr "Përzgjidhni një byrek dhe një të tretën e byrekut."
 
 #: activities/fractions_create/resource/1/Data.qml:68
 msgctxt "Data|"
 msgid "Select one pie and one half of a pie."
-msgstr ""
+msgstr "Përzgjidhni një byrek dhe gjysmën e byrekut."
 
 #: activities/fractions_create/resource/1/Data.qml:74
 msgctxt "Data|"
 msgid "Select one pie and three-quarters of a pie."
-msgstr ""
+msgstr "Përzgjidhni një byrek dhe tre të katërtat e byrekut."
 
 #: activities/fractions_create/resource/10/Data.qml:9
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Answer the questions with a correctness of 100%."
 msgctxt "Data|"
 msgid "Specific questions with a square."
-msgstr "Përgjigjuni pyetjeve me saktësi 100%."
+msgstr "Pyetje specifike me një drejtkëndësh."
 
 #: activities/fractions_create/resource/10/Data.qml:18
 #: activities/fractions_create/resource/10/Data.qml:24
@@ -9386,278 +9257,198 @@ msgctxt "Data|"
 msgid ""
 "Select as many parts as you can without taking more than half of the square."
 msgstr ""
+"Përzgjidhni aq pjesë sa mundeni, pa marrë më shumë se gjysmën e katrorit."
 
 #: activities/fractions_create/resource/2/Data.qml:9
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Answer the questions with a correctness of 100%."
 msgctxt "Data|"
 msgid "Simplified fractions with a square."
-msgstr "Përgjigjuni pyetjeve me saktësi 100%."
+msgstr "Thyesa të thjeshtuara me një katror."
 
 #: activities/fractions_create/resource/2/Data.qml:18
 #: activities/fractions_create/resource/4/Data.qml:17
 #: activities/fractions_create/resource/4/Data.qml:23
 #: activities/fractions_create/resource/4/Data.qml:29
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Select the butterfly of the correct color."
 msgctxt "Data|"
 msgid "Select one half of the square."
-msgstr "Përzgjidhni fluturën me ngjyrën e saktë."
+msgstr "Përzgjidhni gjysmën e katrorit."
 
 #: activities/fractions_create/resource/2/Data.qml:24
 #: activities/fractions_create/resource/4/Data.qml:35
 #: activities/fractions_create/resource/4/Data.qml:49
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Select the fifth Thursday of the given month"
 msgctxt "Data|"
 msgid "Select one-third of the square."
-msgstr "Përzgjidhni të enjten e pestë të muajit të dhënë"
+msgstr "Përzgjidhni një të tretën e katrorit."
 
 #: activities/fractions_create/resource/2/Data.qml:30
 #: activities/fractions_create/resource/4/Data.qml:41
 #: activities/fractions_create/resource/4/Data.qml:55
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Select the fourth Sunday of the given month"
 msgctxt "Data|"
 msgid "Select two-thirds of the square."
-msgstr "Përzgjidhni të shtunën e katër të muajit të dhënë"
+msgstr "Përzgjidhni dy të tretat e katrorit."
 
 #: activities/fractions_create/resource/2/Data.qml:36
 #: activities/fractions_create/resource/4/Data.qml:61
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Select the butterfly of the correct color."
 msgctxt "Data|"
 msgid "Select one-quarter of the square."
-msgstr "Përzgjidhni fluturën me ngjyrën e saktë."
+msgstr "Përzgjidhni një të katërtën e katrorit."
 
 #: activities/fractions_create/resource/2/Data.qml:42
 #: activities/fractions_create/resource/4/Data.qml:67
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Select the fifth Thursday of the given month"
 msgctxt "Data|"
 msgid "Select two-fifths of the square."
-msgstr "Përzgjidhni të enjten e pestë të muajit të dhënë"
+msgstr "Përzgjidhni dy të pestat e katrorit."
 
 #: activities/fractions_create/resource/2/Data.qml:50
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Select the butterfly of the correct color."
 msgctxt "Data|"
 msgid "Select one square and one-quarter of a square."
-msgstr "Përzgjidhni fluturën me ngjyrën e saktë."
+msgstr "Përzgjidhni një katror dhe një të katërtën e katrorit."
 
 #: activities/fractions_create/resource/2/Data.qml:56
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Select the fifth Thursday of the given month"
 msgctxt "Data|"
 msgid "Select one square and two-fifths of a square."
-msgstr "Përzgjidhni të enjten e pestë të muajit të dhënë"
+msgstr "Përzgjidhni një katror dhe dy të pestat e katrorit."
 
 #: activities/fractions_create/resource/2/Data.qml:62
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Select the fifth Thursday of the given month"
 msgctxt "Data|"
 msgid "Select one square and one-third of a square."
-msgstr "Përzgjidhni të enjten e pestë të muajit të dhënë"
+msgstr "Përzgjidhni një katror dhe një të tretën e katrorit."
 
 #: activities/fractions_create/resource/2/Data.qml:68
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Select the butterfly of the correct color."
 msgctxt "Data|"
 msgid "Select one square and one half of a square."
-msgstr "Përzgjidhni fluturën me ngjyrën e saktë."
+msgstr "Përzgjidhni një katror dhe gjysmën e katrorit."
 
 #: activities/fractions_create/resource/2/Data.qml:74
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Select the butterfly of the correct color."
 msgctxt "Data|"
 msgid "Select one square and three-quarters of a square."
-msgstr "Përzgjidhni fluturën me ngjyrën e saktë."
+msgstr "Përzgjidhni një katror dhe tre të katërtat e katrorit."
 
 #: activities/fractions_create/resource/3/Data.qml:9
 msgctxt "Data|"
 msgid "Non-simplified fractions with a pie."
-msgstr ""
+msgstr "Thyesa jo të thjeshtuara me një byrek."
 
 #: activities/fractions_create/resource/3/Data.qml:73
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Select the fifth Thursday of the given month"
 msgctxt "Data|"
 msgid "Select three-fifths of the pie."
-msgstr "Përzgjidhni të enjten e pestë të muajit të dhënë"
+msgstr "Përzgjidhni tre të pestat e byrekut."
 
 #: activities/fractions_create/resource/4/Data.qml:9
 msgctxt "Data|"
 msgid "Non-simplified fractions with a square."
-msgstr ""
+msgstr "Thyesa jo të thjeshtuara, me një katror."
 
 #: activities/fractions_create/resource/4/Data.qml:73
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Select the fifth Thursday of the given month"
 msgctxt "Data|"
 msgid "Select three-fifths of the square."
-msgstr "Përzgjidhni të enjten e pestë të muajit të dhënë"
+msgstr "Përzgjidhni tre të pestat e katrorit."
 
 #: activities/fractions_create/resource/5/Data.qml:9
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Decimal number system."
 msgctxt "Data|"
 msgid "Decimal numbers with a pie."
-msgstr "Sistemi dhjetor i numrave."
+msgstr "Numra dhjetorë me një byrek."
 
 #: activities/fractions_create/resource/5/Data.qml:18
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 0.5 pie."
-msgstr "E përzgjedhur"
+msgstr "Përzgjidhni 0.5 të byrekut."
 
 #: activities/fractions_create/resource/5/Data.qml:24
 msgctxt "Data|"
 msgid "Select 0.25 pie."
-msgstr ""
+msgstr "Përzgjidhni 0.25 të byrekut."
 
 #: activities/fractions_create/resource/5/Data.qml:30
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 0.4 pie."
-msgstr "E përzgjedhur"
+msgstr "Përzgjidhni 0.4 të byrekut."
 
 #: activities/fractions_create/resource/5/Data.qml:36
 msgctxt "Data|"
 msgid "Select 0.75 pie."
-msgstr ""
+msgstr "Përzgjidhni 0.75 të byrekut."
 
 #: activities/fractions_create/resource/5/Data.qml:42
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 0.8 pie."
-msgstr "E përzgjedhur"
+msgstr "Përzgjidhni 0.8 të byrekut."
 
 #: activities/fractions_create/resource/5/Data.qml:50
 msgctxt "Data|"
 msgid "Select 1.25 pies."
-msgstr ""
+msgstr "Përzgjidhni 1.25 byreqe."
 
 #: activities/fractions_create/resource/5/Data.qml:56
 msgctxt "Data|"
 msgid "Select 1.4 pies."
-msgstr ""
+msgstr "Përzgjidhni 1.4 byreqe."
 
 #: activities/fractions_create/resource/5/Data.qml:62
 #: activities/fractions_create/resource/5/Data.qml:68
 msgctxt "Data|"
 msgid "Select 1.5 pies."
-msgstr ""
+msgstr "Përzgjidhni 1.5 byreqe."
 
 #: activities/fractions_create/resource/5/Data.qml:74
 msgctxt "Data|"
 msgid "Select 1.75 pies."
-msgstr ""
+msgstr "Përzgjidhni 1.75 byreqe."
 
 #: activities/fractions_create/resource/6/Data.qml:9
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Decimal number system."
 msgctxt "Data|"
 msgid "Decimal numbers with a square."
-msgstr "Sistemi dhjetor i numrave."
+msgstr "Numra dhjetorë me një katror."
 
 #: activities/fractions_create/resource/6/Data.qml:18
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 0.5 square."
-msgstr "E përzgjedhur"
+msgstr "Përzgjidhni 0.5 të katrorit."
 
 #: activities/fractions_create/resource/6/Data.qml:24
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 0.25 square."
-msgstr "E përzgjedhur"
+msgstr "Përzgjidhni 0.25 të katrorit."
 
 #: activities/fractions_create/resource/6/Data.qml:30
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 0.4 square."
-msgstr "E përzgjedhur"
+msgstr "Përzgjidhni 0.4 të katrorit."
 
 #: activities/fractions_create/resource/6/Data.qml:36
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 0.75 square."
-msgstr "E përzgjedhur"
+msgstr "Përzgjidhni 0.75 të katrorit."
 
 #: activities/fractions_create/resource/6/Data.qml:42
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 0.8 square."
-msgstr "E përzgjedhur"
+msgstr "Përzgjidhni 0.8 të katrorit."
 
 #: activities/fractions_create/resource/6/Data.qml:50
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 1.25 squares."
-msgstr "E përzgjedhur"
+msgstr "Përzgjidhni 1.25 katrorë."
 
 #: activities/fractions_create/resource/6/Data.qml:56
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 1.4 squares."
-msgstr "E përzgjedhur"
+msgstr "Përzgjidhni 1.4 katrorë."
 
 #: activities/fractions_create/resource/6/Data.qml:62
 #: activities/fractions_create/resource/6/Data.qml:68
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 1.5 squares."
-msgstr "E përzgjedhur"
+msgstr "Përzgjidhni 1.5 katrorë."
 
 #: activities/fractions_create/resource/6/Data.qml:74
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 1.75 squares."
-msgstr "E përzgjedhur"
+msgstr "Përzgjidhni 1.75 katror."
 
 #: activities/fractions_create/resource/7/Data.qml:9
 msgctxt "Data|"
 msgid "Percentages with a pie."
-msgstr ""
+msgstr "Përqindje me një byrek."
 
 #. Select %1 percent of the pie.
 #: activities/fractions_create/resource/7/Data.qml:19
@@ -9668,17 +9459,15 @@ msgstr ""
 #: activities/fractions_create/resource/7/Data.qml:56
 #: activities/fractions_create/resource/7/Data.qml:63
 #: activities/fractions_create/resource/7/Data.qml:70
-#, fuzzy, qt-format
-#| msgctxt "calendar_dataset|"
-#| msgid "Select the 1st"
+#, qt-format
 msgctxt "Data|"
 msgid "Select %1% of the pie."
-msgstr "Përzgjidhni të 1-ën"
+msgstr "Përzgjidhni %1% të byrekut."
 
 #: activities/fractions_create/resource/8/Data.qml:9
 msgctxt "Data|"
 msgid "Percentages with a square."
-msgstr ""
+msgstr "Përqindje me një katror."
 
 #. Select %1 percent of the square.
 #: activities/fractions_create/resource/8/Data.qml:19
@@ -9687,17 +9476,15 @@ msgstr ""
 #: activities/fractions_create/resource/8/Data.qml:42
 #: activities/fractions_create/resource/8/Data.qml:49
 #: activities/fractions_create/resource/8/Data.qml:56
-#, fuzzy, qt-format
-#| msgctxt "calendar_dataset|"
-#| msgid "Select the 1st"
+#, qt-format
 msgctxt "Data|"
 msgid "Select %1% of the square."
-msgstr "Përzgjidhni të 1-ën"
+msgstr "Përzgjidhni %1% të katrorit."
 
 #: activities/fractions_create/resource/9/Data.qml:9
 msgctxt "Data|"
 msgid "Specific questions with a pie."
-msgstr ""
+msgstr "Pyetje specifike me një byrek."
 
 #: activities/fractions_create/resource/9/Data.qml:18
 #: activities/fractions_create/resource/9/Data.qml:24
@@ -9705,69 +9492,49 @@ msgctxt "Data|"
 msgid ""
 "Select as many parts as you can without taking more than half of the pie."
 msgstr ""
+"Përzgjidhni aq pjesë sa mundeni, pa marrë më shumë se gjysmën e byrekut."
 
 #. Activity title
 #: activities/fractions_find/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "instruments|"
-#| msgid "Find the accordion"
 msgctxt "ActivityInfo|"
 msgid "Find the fractions"
-msgstr "Gjeni fizarmonikën"
+msgstr "Gjeni thyesat"
 
 #. Help title
 #: activities/fractions_find/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Find the correct date and select it on the calendar."
 msgctxt "ActivityInfo|"
 msgid "Find the correct numerator and denominator of the represented fraction."
-msgstr "Gjeni datën e saktë dhe përzgjidheni te kalendari."
+msgstr "Gjeni numëruesin dhe emëruesin e saktë të thyesës së paraqitur."
 
 #: activities/fractions_find/resource/1/Data.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Align four (with a friend)"
 msgctxt "Data|"
 msgid "Find numerator (with a pie)."
-msgstr "Katër në një vijë (me një shok)."
+msgstr "Gjeni numëruesin (me një byrek)."
 
 #: activities/fractions_find/resource/2/Data.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Align four (with a friend)"
 msgctxt "Data|"
 msgid "Find numerator (with a square)."
-msgstr "Katër në një vijë (me një shok)."
+msgstr "Gjeni numëruesin (me një katror)."
 
 #: activities/fractions_find/resource/3/Data.qml:9
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Nine men's morris (with a friend)"
 msgctxt "Data|"
 msgid "Find denominator (with a pie)."
-msgstr "Nëntësh (me një shok)"
+msgstr "Gjeni emërtuesin (me një byrek)."
 
 #: activities/fractions_find/resource/4/Data.qml:9
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Nine men's morris (with a friend)"
 msgctxt "Data|"
 msgid "Find denominator (with a square)."
-msgstr "Nëntësh (me një shok)"
+msgstr "Gjeni emërtuesin (me një katror)."
 
 #: activities/fractions_find/resource/5/Data.qml:9
 msgctxt "Data|"
 msgid "Find numerator and denominator (with a pie)."
-msgstr ""
+msgstr "Gjeni numëruesin dhe emërtuesin (me një byrek)."
 
 #: activities/fractions_find/resource/6/Data.qml:9
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Nine men's morris (with a friend)"
 msgctxt "Data|"
 msgid "Find numerator and denominator (with a square)."
-msgstr "Nëntësh (me një shok)"
+msgstr "Gjeni numëruesin dhe emërtuesin (me një katror)."
 
 #. Activity title
 #: activities/geo-country/ActivityInfo.qml:19
@@ -11005,145 +10772,121 @@ msgstr "Suvalkija"
 #: activities/geo-country/resource/board/board18_0.qml:13
 msgctxt "board18_0|"
 msgid "Autonomous communities or cities of Spain"
-msgstr ""
+msgstr "Bashkësi ose qytete autonome të Spanjës"
 
 #. Autonomous communities of Spain: Andalusia
 #: activities/geo-country/resource/board/board18_0.qml:22
 msgctxt "board18_0|"
 msgid "Andalusia"
-msgstr ""
+msgstr "Andaluzi"
 
 #. Autonomous communities of Spain: Madrid
 #: activities/geo-country/resource/board/board18_0.qml:29
 msgctxt "board18_0|"
 msgid "Madrid"
-msgstr ""
+msgstr "Madrid"
 
 #. Autonomous communities of Spain: Galicia
 #: activities/geo-country/resource/board/board18_0.qml:36
 msgctxt "board18_0|"
 msgid "Galicia"
-msgstr ""
+msgstr "Galicia"
 
 #. Autonomous communities of Spain: Castile and León
 #: activities/geo-country/resource/board/board18_0.qml:43
 msgctxt "board18_0|"
 msgid "Castile and León"
-msgstr ""
+msgstr "Kastilje dhe Leon"
 
 #. Autonomous communities of Spain: Castilla-La Mancha
 #: activities/geo-country/resource/board/board18_0.qml:50
 msgctxt "board18_0|"
 msgid "Castilla-La Mancha"
-msgstr ""
+msgstr "Kastija-La Mança"
 
 #. Autonomous communities of Spain: Catalonia
 #: activities/geo-country/resource/board/board18_0.qml:57
-#, fuzzy
-#| msgctxt "board11_3|"
-#| msgid "Catania"
 msgctxt "board18_0|"
 msgid "Catalonia"
-msgstr "Katania"
+msgstr "Katalonjë"
 
 #. Autonomous communities of Spain: Aragon
 #: activities/geo-country/resource/board/board18_0.qml:64
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Hexagon"
 msgctxt "board18_0|"
 msgid "Aragon"
-msgstr "Gjashtëkëndësh"
+msgstr "Aragonë"
 
 #. Autonomous communities of Spain: Valencia
 #: activities/geo-country/resource/board/board18_0.qml:71
-#, fuzzy
-#| msgctxt "board11_3|"
-#| msgid "Vibo Valentia"
 msgctxt "board18_0|"
 msgid "Valencia"
-msgstr "Vibo Valentia"
+msgstr "Valencie"
 
 #. Autonomous communities of Spain: Murcia
 #: activities/geo-country/resource/board/board18_0.qml:78
 msgctxt "board18_0|"
 msgid "Murcia"
-msgstr ""
+msgstr "Murcia"
 
 #. Autonomous communities of Spain: Asturias
 #: activities/geo-country/resource/board/board18_0.qml:85
 msgctxt "board18_0|"
 msgid "Asturias"
-msgstr ""
+msgstr "Asturias"
 
 #. Autonomous communities of Spain: Basque Country
 #: activities/geo-country/resource/board/board18_0.qml:92
 msgctxt "board18_0|"
 msgid "Basque Country"
-msgstr ""
+msgstr "Vendi i Baskëve"
 
 #. Autonomous communities of Spain: La Rioja
 #: activities/geo-country/resource/board/board18_0.qml:99
-#, fuzzy
-#| msgctxt "board3_0|"
-#| msgid "La Rioja"
 msgctxt "board18_0|"
 msgid "La Rioja"
 msgstr "La Rioha"
 
 #. Autonomous communities of Spain: Cantabria
 #: activities/geo-country/resource/board/board18_0.qml:106
-#, fuzzy
-#| msgctxt "board11_0|"
-#| msgid "Calabria"
 msgctxt "board18_0|"
 msgid "Cantabria"
-msgstr "Kalabria"
+msgstr "Kantabria"
 
 #. Autonomous communities of Spain: Navarre
 #: activities/geo-country/resource/board/board18_0.qml:113
-#, fuzzy
-#| msgctxt "board5|"
-#| msgid "Navajo"
 msgctxt "board18_0|"
 msgid "Navarre"
-msgstr "Navaho"
+msgstr "Navarrë"
 
 #. Autonomous communities of Spain: Extremadura
 #: activities/geo-country/resource/board/board18_0.qml:120
 msgctxt "board18_0|"
 msgid "Extremadura"
-msgstr ""
+msgstr "Ekstremadura"
 
 #. Autonomous communities of Spain: Canary Islands
 #: activities/geo-country/resource/board/board18_0.qml:127
-#, fuzzy
-#| msgctxt "board14_0|"
-#| msgid "Mariana Islands"
 msgctxt "board18_0|"
 msgid "Canary Islands"
-msgstr "Ishujt Veriorë Mariana"
+msgstr "Ishujt Kanarie"
 
 #. Autonomous communities of Spain: Balearic Islands
 #: activities/geo-country/resource/board/board18_0.qml:134
-#, fuzzy
-#| msgctxt "board14_0|"
-#| msgid "Mariana Islands"
 msgctxt "board18_0|"
 msgid "Balearic Islands"
-msgstr "Ishujt Veriorë Mariana"
+msgstr "Ishujt Baleare"
 
 #. Autonomous communities of Spain: Ceuta
 #: activities/geo-country/resource/board/board18_0.qml:141
 msgctxt "board18_0|"
 msgid "Ceuta"
-msgstr ""
+msgstr "Ceuta"
 
 #. Autonomous communities of Spain: Melilla
 #: activities/geo-country/resource/board/board18_0.qml:148
 msgctxt "board18_0|"
 msgid "Melilla"
-msgstr ""
+msgstr "Melila"
 
 #: activities/geo-country/resource/board/board1_0.qml:15
 msgctxt "board1_0|"
@@ -13146,7 +12889,7 @@ msgstr "Holandë"
 #: activities/geography/resource/board/board5_0.qml:73
 msgctxt "board5_0|"
 msgid "Luxembourg"
-msgstr ""
+msgstr "Luksemburg"
 
 #: activities/geography/resource/board/board5_0.qml:81
 msgctxt "board5_0|"
@@ -13199,9 +12942,6 @@ msgid "Eastern Europe"
 msgstr "Europë Lindore"
 
 #: activities/geography/resource/board/board6_0.qml:24
-#, fuzzy
-#| msgctxt "board9_0|"
-#| msgid "Cyprus"
 msgctxt "board6_0|"
 msgid "Cyprus"
 msgstr "Qipro"
@@ -13940,7 +13680,7 @@ msgstr ""
 "Për shembull, faktorët e 6-s janë 1, 2, 3 dhe 6. 4-a s’është faktor i 6-s, "
 "ngaqë 6 s’mund të ndahet në pjesë 4 pjesë të plota të barabarta. Nëse një "
 "numër është një shumëfish i një tjetri, ky i dyti është një faktor i numrit "
-"të parë. Shumëfishat mund t’i mendoni si familje, dhe faktorët si njerëzit e "
+"të parë. Shumëfishat mund t’i mendoni si familje dhe faktorët si njerëzit e "
 "këtyre familjeve. Pra 1-i, 2-i, 3-i dhe 6-a që të tërë hyjnë te familja e 6-"
 "s, ndërsa 4 bën pjesë te një tjetër familje."
 
@@ -14024,9 +13764,9 @@ msgstr ""
 "shumëfishë të 12-s. 25 s’është shumëfish i 12-së, ngaqë s’ka ndonjë numër që "
 "të mund të shumëzohet me 12 dhe të janë 25. Nëse një numër është një faktor "
 "i një tjetri, atëherë ky i dyti është një shumëfish i të parit. Shumëfishët "
-"mund t’i mendoni si familje, dhe faktorët janë njerëzit që u takojnë këtyre "
+"mund t’i mendoni si familje dhe faktorët janë njerëzit që u takojnë këtyre "
 "familjeve. Faktori 5, ka për prind 10,për gjysh 15, për stërgjysh 20, për "
-"stër-stërgjysh 25, dhe çdo hap i mëtejshëm prej 5 shton një tjetër stër- "
+"stër-stërgjysh 25 dhe çdo hap i mëtejshëm prej 5 shton një tjetër stër- "
 "përpara! Por numri 5 nuk i përket familjeve 8 ose 23. S’gjeni dot ndonjë "
 "numër 5-ash te 8 ose 23 pa mbetje. Pra, 8 s’është shumëfish i 5-s, as 23 "
 "s’është. Vetëm 5, 10, 15, 20, 25 … janë shumëfishë (ose familje ose hapa) të "
@@ -14489,7 +14229,7 @@ msgid ""
 "corresponding voice is available, you will hear the word to find when three "
 "attempts are remaining."
 msgstr ""
-"Nëse është aktivizuar mundësia “Shqiptoji fjalët që duhen gjetur…”, dhe zëri "
+"Nëse është aktivizuar mundësia “Shqiptoji fjalët që duhen gjetur…” dhe zëri "
 "përkatës është instaluar, do të dëgjoni fjalën që duhet të gjeni, kur ju "
 "mbeten edhe tre përpjekje."
 
@@ -15169,7 +14909,7 @@ msgstr ""
 "Akselerometri në anën e djathtës shfaq përshpejtimin e përgjithshëm vertikal "
 "të raketës tuaj, përfshi forcën e rëndesës. Në zonën e sipërme të gjelbër të "
 "akselerometrit, përshpejtimi juaj është më i madh se sa forca e rëndesë, në "
-"zonën e poshtme të kuqe është më i vogël, dhe në vijën blu në zonën e verdhë "
+"zonën e poshtme të kuqe është më i vogël dhe në vijën blu në zonën e verdhë "
 "në mes, dy forcat anulojnë njëra-tjetrën."
 
 #: activities/land_safe/ActivityInfo.qml:30
@@ -15327,7 +15067,7 @@ msgid ""
 msgstr ""
 "Shqyrtoni një grup fjalësh. Çdo fjalë paraqitet me një zë, një tekst dhe një "
 "figurë.<br/>Kur të keni mbaruar, do të keni ca ushtrime për të dalluar "
-"tekstin nga zëri dhe figura, mandej vetëm nga zëri, dhe në fund një ushtrim "
+"tekstin nga zëri dhe figura, mandej vetëm nga zëri dhe në fund një ushtrim "
 "për të shtypur tekst."
 
 #: activities/lang/ActivityInfo.qml:32
@@ -15539,7 +15279,7 @@ msgstr "Mbledhje me 1, 2 dhe 3."
 #: activities/learn_additions/resource/3/Data.qml:14
 msgctxt "Data|"
 msgid "Additions with 1, 2, 3 and 4."
-msgstr "Mbledhje me 1, 2, 3, dhe 4."
+msgstr "Mbledhje me 1, 2, 3 dhe 4."
 
 #. Activity title
 #: activities/learn_decimals/ActivityInfo.qml:14
@@ -15609,7 +15349,7 @@ msgid ""
 "full unit, and each square in it represents one tenth of this unit."
 msgstr ""
 "Shfaqet një zbritje me dy numra dhjetorë. Nën të, numri i parë prej zbritjes "
-"paraqitet me shtylla. Një shtyllë përfaqëson një njësi të plotë, dhe çdo "
+"paraqitet me shtylla. Një shtyllë përfaqëson një njësi të plotë dhe çdo "
 "katror në të përfaqëson një të dhjetën e kësaj njësie."
 
 #: activities/learn_decimals/learn_decimals.js:48
@@ -15863,12 +15603,9 @@ msgstr "Aktivizo zëra"
 
 #. Activity title
 #: activities/learn_digits/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Count the items"
 msgctxt "ActivityInfo|"
 msgid "Count and color the circles"
-msgstr "Numëroni objektet"
+msgstr "Numëroni dhe ngjyrosni rrathët"
 
 #. Help title
 #: activities/learn_digits/ActivityInfo.qml:17
@@ -16052,29 +15789,20 @@ msgid "Subtractions with 1, 2, 3, 4 and 5."
 msgstr "Zbritje me 1, 2, 3, 4 dhe 5."
 
 #: activities/learn_subtractions/resource/4/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2, 3, 4 and 5."
 msgctxt "Data|"
 msgid "Subtractions with 1, 2, 3, 4, 5, 6 and 7."
-msgstr "Zbritje me 1, 2, 3, 4 dhe 5."
+msgstr "Zbritje me 1, 2, 3, 4, 5, 6 dhe 7."
 
 #: activities/learn_subtractions/resource/5/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2, 3, 4 and 5."
 msgctxt "Data|"
 msgid "Subtractions with 1, 2, 3, 4, 5, 6, 7, 8 and 9."
-msgstr "Zbritje me 1, 2, 3, 4 dhe 5."
+msgstr "Zbritje me 1, 2, 3, 4, 5, 6, 7, 8 dhe 9."
 
 #. Activity title
 #: activities/left_right_click/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Memory training."
 msgctxt "ActivityInfo|"
 msgid "Mouse click training"
-msgstr "Stërvitje kujtese."
+msgstr "Stërvitje klikimi me miun"
 
 #. Help title
 #: activities/left_right_click/ActivityInfo.qml:16
@@ -16082,12 +15810,14 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Move animals to their homes using a left click or right click on your mouse."
 msgstr ""
+"Shpjerini kafshët në vathët e tyre duke përdorur një klikim me të majtin ose "
+"të djathtin e miut tuaj."
 
 #. Help goal
 #: activities/left_right_click/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Using the mouse. Left and right click training."
-msgstr ""
+msgstr "Përdorim miu. Stërvitje klikimi me të majtin dhe të djathtin."
 
 #. Help manual
 #: activities/left_right_click/ActivityInfo.qml:23
@@ -16096,6 +15826,9 @@ msgid ""
 "A left click on a fish will move it to the pond. A right click on a monkey "
 "will move it to the tree. A message will show if you make the wrong click."
 msgstr ""
+"Një klikim majtas mbi një peshk do ta hedhë në pellg. Një klikim djathtas "
+"mbi një majmun do ta ngjisë te pema. Nëse bëni klikim të gabuar, do të "
+"shfaqet një mesazh."
 
 #. Activity title
 #: activities/leftright/ActivityInfo.qml:15
@@ -16193,7 +15926,7 @@ msgid ""
 "A letter is written. Some words are displayed, and you must find the word or "
 "the words in which this letter appears."
 msgstr ""
-"Shkruhet një shkronjë. Shfaqen disa fjalë, dhe ju duhet të gjeni fjalën ose "
+"Shkruhet një shkronjë. Shfaqen disa fjalë dhe ju duhet të gjeni fjalën ose "
 "fjalët në të cilën shfaqet kjo shkronjë."
 
 #. Help goal
@@ -16265,7 +15998,7 @@ msgid ""
 "of its immediate vertical and horizontal neighbors. You must turn off all "
 "the lights. If you click on Tux, the solution is shown."
 msgstr ""
-"Efekti i shtypjes së një dritareje është ndryshimi i gjendjes së saj, dhe i "
+"Efekti i shtypjes së një dritareje është ndryshimi i gjendjes së saj dhe i "
 "fqinjëve të tij të menjëhershëm vertikalë dhe horizontalë. Duhet të fikni "
 "krejt dritat. Nëse klikoni mbi Tux-in, shfaqet zgjidhja."
 
@@ -16413,7 +16146,7 @@ msgstr ""
 msgctxt "louis_braille_data|"
 msgid "Louis trimmed Barbier's 12 dots into 6 and invented the braille system."
 msgstr ""
-"Lui i shkurtoi 12 pikat e Barbiesë në 6, dhe shpiku kështu sistemin braj."
+"Lui i shkurtoi 12 pikat e Barbiesë në 6 dhe shpiku kështu sistemin braj."
 
 #: activities/louis-braille/louis_braille_data.js:47
 msgctxt "louis_braille_data|"
@@ -16421,7 +16154,7 @@ msgid ""
 "He became a teacher after graduating and promoted his method while secretly "
 "teaching it at the Institute."
 msgstr ""
-"Pas përfundimit të shkollës, u bë mësues, dhe përhapi metodën e tij, teksa "
+"Pas përfundimit të shkollës, u bë mësues dhe përhapi metodën e tij, teksa "
 "jepte fshehtas mësim në Institut."
 
 #: activities/louis-braille/louis_braille_data.js:52
@@ -16781,7 +16514,7 @@ msgid ""
 "to turn and up to move forward."
 msgstr ""
 "Në këtë labirint, lëvizjet janë relative (në vetë të parë). Tastet shigjetë "
-"majtas dhe djathtas përdoren për t’u kthyer majtas ose djathtas, dhe tasti "
+"majtas dhe djathtas përdoren për t’u kthyer majtas ose djathtas dhe tasti "
 "shigjetë për sipër për të ecur përpara."
 
 #: activities/mazerelative/ActivityInfo.qml:31
@@ -16831,9 +16564,9 @@ msgid ""
 "xylophone's bars. You can listen again the sound sequence by clicking on the "
 "repeat button."
 msgstr ""
-"Dëgjoni sekuencën e tingujve që luhet, dhe përsëriteni duke klikuar mbi "
-"notat e ksilofonit. Duke klikuar mbi butonin e përsëritjes, mund të dëgjoni "
-"sërish sekuencën e tingujve."
+"Dëgjoni sekuencën e tingujve që luhet dhe përsëriteni duke klikuar mbi notat "
+"e ksilofonit. Duke klikuar mbi butonin e përsëritjes, mund të dëgjoni sërish "
+"sekuencën e tingujve."
 
 #: activities/melody/Melody.qml:285
 msgctxt "Melody|"
@@ -17773,7 +17506,7 @@ msgstr "Lojë kujtese tingujsh, kundër Tux-it"
 msgctxt "ActivityInfo|"
 msgid "Flip the cards to match the sound pairs, playing against Tux."
 msgstr ""
-"Ktheni letrat në anën tjetër, që të përputhen çiftet e tingujve, duke "
+"Ktheni letrat në anën tjetër, që të përputhen dyshet e tingujve, duke "
 "luajtur kundër Tux-it."
 
 #. Help goal
@@ -17794,9 +17527,9 @@ msgid ""
 "remember where a sound is, while you search for its twin. When you flip the "
 "twins, they both disappear."
 msgstr ""
-"Për çdo letër do të luhet një tingull, kur kthehet në anën tjetër, dhe çdo "
+"Për çdo letër do të luhet një tingull, kur kthehet në anën tjetër dhe çdo "
 "letër ka një binjake me po atë tingull. Klikoni mbi një kartë që të dëgjoni "
-"tingullin e fshehur, dhe provoni të gjeni binjaket. Mund të ktheni në anë "
+"tingullin e fshehur dhe provoni të gjeni binjaket. Mund të ktheni në anë "
 "tjetër vetëm dy letra në herë, ndaj ju duhet të mbani mend ku ishte një "
 "tingull, ndërkohë që kërkoni për binjakun e tij. Kur keni kthyer në anë "
 "tjetër binjaket, zhduken që të dyja nga ekrani."
@@ -17811,7 +17544,7 @@ msgstr "Lojë kujtese zanore"
 #: activities/memory-sound/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Flip the cards to match the sound pairs."
-msgstr "Ktheni letrat në anën tjetër, që të përputhen çiftet e tingujve."
+msgstr "Ktheni letrat në anën tjetër, që të përputhen dyshet e tingujve."
 
 #. Activity title
 #: activities/memory-tux/ActivityInfo.qml:15
@@ -17824,7 +17557,7 @@ msgstr "Lojë kujtese me figura, kundër Tux-it"
 msgctxt "ActivityInfo|"
 msgid "Flip the cards to find the matching pairs, playing against Tux."
 msgstr ""
-"Ktheni letrat në anën tjetër, që të gjeni çiftet me përputhje, duke luajtur "
+"Ktheni letrat në anën tjetër, që të gjeni dyshet me përputhje, duke luajtur "
 "kundër Tux-it."
 
 #. Help goal
@@ -17845,12 +17578,12 @@ msgid ""
 "remember where a picture is, while you look for its twin. When you flip the "
 "twins, they both disappear."
 msgstr ""
-"Çdo letër ka një figurë në anën e fshehur, dhe çdo letër ka një binjake me "
-"po atë figurë. Klikoni mbi një kartë që të shihni figurën e fshehur në të, "
-"dhe provoni të gjeni binjaket. Mund të ktheni në anë tjetër vetëm dy letra "
-"në herë, ndaj ju duhet të mbani mend ku ishte një figurë, ndërkohë që "
-"kërkoni për binjaken e saj. Kur keni kthyer në anë tjetër binjaket, zhduken "
-"që të dyja nga ekrani."
+"Çdo letër ka një figurë në anën e fshehur dhe çdo letër ka një binjake me po "
+"atë figurë. Klikoni mbi një kartë që të shihni figurën e fshehur në të, dhe "
+"provoni të gjeni binjaket. Mund të ktheni në anë tjetër vetëm dy letra në "
+"herë, ndaj ju duhet të mbani mend ku ishte një figurë, ndërkohë që kërkoni "
+"për binjaken e saj. Kur keni kthyer në anë tjetër binjaket, zhduken që të "
+"dyja nga ekrani."
 
 #. Activity title
 #: activities/memory-wordnumber/ActivityInfo.qml:15
@@ -18161,7 +17894,7 @@ msgid ""
 "the minimum difficulty, and the second one the maximum difficulty."
 msgstr ""
 "Nëse në një veprimtari ka dy ikona të ndryshme yjesh, e para tregon "
-"minimumin e vështirësisë, dhe e dyta maksimumin e vështirësisë."
+"minimumin e vështirësisë dhe e dyta maksimumin e vështirësisë."
 
 #: activities/menu/ActivityInfo.qml:38
 msgctxt "ActivityInfo|"
@@ -18336,7 +18069,7 @@ msgstr "Menuja e pjesës mbi veprimtaritë është e dukshme"
 #: activities/menu/ConfigurationItem.qml:296
 msgctxt "ConfigurationItem|"
 msgid "Ask for confirmation to exit"
-msgstr ""
+msgstr "Pyet për ripohim daljeje"
 
 #: activities/menu/ConfigurationItem.qml:307
 msgctxt "ConfigurationItem|"
@@ -18655,7 +18388,7 @@ msgid ""
 "under the picture. Click on the missing letter to complete the word, or type "
 "the letter on your keyboard."
 msgstr ""
-"Në fushën kryesore shfaqet një figurë, dhe nën figurën shfaqet një fjalë e "
+"Në fushën kryesore shfaqet një figurë dhe nën figurën shfaqet një fjalë e "
 "paplotësuar. Klikoni mbi shkronjën që mungon për të plotësuar fjalën, ose "
 "shtypeni shkronjën në tastierën tuaj."
 
@@ -18860,21 +18593,15 @@ msgstr ""
 
 #. Activity title
 #: activities/morse_code/ActivityInfo.qml:18
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Discover the braille system"
 msgctxt "ActivityInfo|"
 msgid "Discover the International Morse code"
-msgstr "Njihuni me sistemin Braj"
+msgstr "Njihuni me kodin Ndërkombëtar Mors"
 
 #. Help title
 #: activities/morse_code/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn how to tell the time on an analog clock."
 msgctxt "ActivityInfo|"
 msgid "Learn how to communicate with the International Morse code."
-msgstr "Mësoni si të rrëfeni orën në një sahat analog."
+msgstr "Mësoni si të komunikoni me kodin Ndërkombëtar Mors."
 
 #. Help goal
 #: activities/morse_code/ActivityInfo.qml:23
@@ -18882,15 +18609,13 @@ msgctxt "ActivityInfo|"
 msgid ""
 "You have to send and receive letters and digits in International Morse code."
 msgstr ""
+"Në kodin Ndërkombëtar Mors duhet të dërgoni dhe merrni shkronja dhe numra."
 
 #. Help prerequisite
 #: activities/morse_code/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Knowledge of arithmetic operations."
 msgctxt "ActivityInfo|"
 msgid "Knowledge of alphabets and digits."
-msgstr "Njohuri veprimesh aritmetikore."
+msgstr "Njohuri alfabetesh dhe numrash."
 
 #. Help manual
 #: activities/morse_code/ActivityInfo.qml:27
@@ -18901,11 +18626,15 @@ msgid ""
 "have a look at the translation map which contains the code for all the "
 "letters and digits."
 msgstr ""
+"Ju kërkohet ose të dërgoni një mesazh në kodin Mors, ose ta shndërroni "
+"mesazhin e marrë më kod Mors në shkronja dhe shifra. Që të mësoni kodin "
+"Mors, mund t’i hidhni një sy tabelës së përkthimit që përmban kodin për "
+"krejt shkronjat dhe shifrat."
 
 #: activities/morse_code/FirstScreen.qml:25
 msgctxt "FirstScreen|"
 msgid "Exploring Morse Code"
-msgstr ""
+msgstr "Eksplorim Kodi Mors"
 
 #: activities/morse_code/FirstScreen.qml:64
 msgctxt "FirstScreen|"
@@ -18913,6 +18642,8 @@ msgid ""
 "Morse code was developed by Samuel Morse. It is a method of transmitting "
 "text information as a series of on-off tones, lights, or clicks."
 msgstr ""
+"Kodi Mors u hartua nga Samuel Morse. Është një metodë transmetimi "
+"informacionesh tekst si një varg tonesh on-off, dritash ose kërcitjesh."
 
 #: activities/morse_code/FirstScreen.qml:65
 msgctxt "FirstScreen|"
@@ -18925,40 +18656,36 @@ msgid ""
 "For example, the most common letter in English, the letter \"E\", has the "
 "shortest code, a single dot."
 msgstr ""
+"Çdo simbol kodi Mors përfaqëson ose një shenjë teksti (shkronjë ose numër), "
+"ose një shenjë procedurale dhe përfaqësohet nga një varg unik pikash dhe "
+"vijash. Kohëzgjatja e vijës është tre herë ajo e gjatësisë së një pike. Për "
+"të rritur shpejtësinë e komunikimit, kodi qe hartuar në mënyrë që shkronjat "
+"më të rëndomta të kenë vargjet më të shkurtër të pikave dhe vijave.\n"
+"Për shembull, shkronja më e rëndomtë e anglishtes, shkronja “E”, ka kodin më "
+"të shkurtër, një pikë e vetme."
 
 #: activities/morse_code/FirstScreen.qml:90
-#, fuzzy
-#| msgctxt "FirstScreen|"
-#| msgid ""
-#| "When you are ready, click on me and try reproducing braille characters."
 msgctxt "FirstScreen|"
 msgid "When you are ready, click on Tux and we will converse in Morse code."
 msgstr ""
-"Kur të jeni gati, klikoni mbi mua dhe provoni të riprodhoni shenjat braj."
+"Kur të jeni gati, klikoni mbi Tux-in dhe do të bisedojmë përmes kodi Mors."
 
 #: activities/morse_code/MorseCode.qml:346
-#, fuzzy, qt-format
-#| msgctxt "RomanNumerals|"
-#| msgid "Roman value: %1"
+#, qt-format
 msgctxt "MorseCode|"
 msgid "Morse value: %1"
-msgstr "Vlera romake: %1"
+msgstr "Vlerë Mors: %1"
 
 #: activities/morse_code/MorseCode.qml:347
-#, fuzzy, qt-format
-#| msgctxt "RomanNumerals|"
-#| msgid "Arabic value: %1"
+#, qt-format
 msgctxt "MorseCode|"
 msgid "Alphabet/Numeric value: %1"
-msgstr "Vlera arabe: %1"
+msgstr "Vlerë Alfabetike/Numerike: %1"
 
 #: activities/morse_code/resource/1/Data.qml:13
-#, fuzzy
-#| msgctxt "Menu|"
-#| msgid "Letters"
 msgctxt "Data|"
 msgid "Letters."
-msgstr "Shkronja"
+msgstr "Shkronja."
 
 #: activities/morse_code/resource/1/Data.qml:18
 #: activities/morse_code/resource/1/Data.qml:34
@@ -18970,73 +18697,57 @@ msgstr "Shkronja"
 #, qt-format
 msgctxt "Data|"
 msgid "Send the message %1 in Morse code."
-msgstr ""
+msgstr "Dërgojeni mesazhin %1 në kodin Morse."
 
 #: activities/morse_code/resource/1/Data.qml:23
 #: activities/morse_code/resource/1/Data.qml:39
 #: activities/morse_code/resource/1/Data.qml:55
 #: activities/morse_code/resource/1/Data.qml:71
-#, fuzzy, qt-format
-#| msgctxt "RomanNumerals|"
-#| msgid "Convert the roman number %1 to arabic."
+#, qt-format
 msgctxt "Data|"
 msgid "Convert the message %1 to letters."
-msgstr "Shndërroni numrin romak %1 në arab."
+msgstr "Shndërrojeni mesazhin %1 në shkronja."
 
 #: activities/morse_code/resource/1/Data.qml:28
 #: activities/morse_code/resource/1/Data.qml:44
 #: activities/morse_code/resource/1/Data.qml:60
 #: activities/morse_code/resource/1/Data.qml:76
-#, fuzzy
-#| msgctxt "advanced_colors|"
-#| msgid "Find the corn butterfly"
 msgctxt "Data|"
 msgid "Find the corresponding letter."
-msgstr "Gjeni fluturën ngjyrë misri"
+msgstr "Gjeni shkronjën përkatëse."
 
 #: activities/morse_code/resource/2/Data.qml:13
 msgctxt "Data|"
 msgid "Digits."
-msgstr ""
+msgstr "Shifra."
 
 #: activities/morse_code/resource/2/Data.qml:23
 #: activities/morse_code/resource/2/Data.qml:39
-#, fuzzy, qt-format
-#| msgctxt "RomanNumerals|"
-#| msgid "Convert the roman number %1 to arabic."
+#, qt-format
 msgctxt "Data|"
 msgid "Convert the message %1 to digits."
-msgstr "Shndërroni numrin romak %1 në arab."
+msgstr "Shndërrojeni mesazhin %1 në shifra."
 
 #: activities/morse_code/resource/2/Data.qml:28
 #: activities/morse_code/resource/2/Data.qml:44
-#, fuzzy
-#| msgctxt "instruments|"
-#| msgid "Find the accordion"
 msgctxt "Data|"
 msgid "Find the corresponding digit."
-msgstr "Gjeni fizarmonikën"
+msgstr "Gjeni shifrën përkatëse."
 
 #: activities/morse_code/resource/3/Data.qml:13
-#, fuzzy
-#| msgctxt "Menu|"
-#| msgid "Words"
 msgctxt "Data|"
 msgid "Words."
-msgstr "Fjalë"
+msgstr "Fjalë."
 
 #: activities/morse_code/resource/3/Data.qml:24
 msgctxt "Data|"
 msgid "Write the Morse code you hear."
-msgstr ""
+msgstr "Shkruani kodin Mors që dëgjoni."
 
 #: activities/morse_code/resource/3/Data.qml:34
-#, fuzzy
-#| msgctxt "RomanNumerals|"
-#| msgid "Convert the roman number %1 to arabic."
 msgctxt "Data|"
 msgid "Convert the message in a word."
-msgstr "Shndërroni numrin romak %1 në arab."
+msgstr "Shndërrojeni mesazhin në një fjalë."
 
 #. Activity title
 #: activities/mosaic/ActivityInfo.qml:15
@@ -19113,17 +18824,12 @@ msgstr ""
 
 #. Help manual
 #: activities/nine_men_morris/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Play with a friend. First take turns to place nine pieces, and then take "
-#| "turns to move your pieces."
 msgctxt "ActivityInfo|"
 msgid ""
 "Play with Tux. First take turns to place nine pieces, and then take turns to "
 "move your pieces."
 msgstr ""
-"Luani me një shok. pari, pullat vendosen një herë njëri, një herë tjetri, "
+"Luani me Tux-ni. Së pari, pullat vendosen një herë njëri, një herë tjetri "
 "dhe mandej, po sipas asaj radhe, lëvizni pullat tuaja."
 
 #: activities/nine_men_morris/nine_men_morris.js:29
@@ -19132,7 +18838,7 @@ msgid ""
 "You and Tux start with 9 pieces each, and take turns to place your pieces on "
 "the empty spots of the board (by clicking on the spots)."
 msgstr ""
-"Ju dhe Tux-i filloni me 9 gurë secili, dhe mund t’i vendosni te vendet e "
+"Ju dhe Tux-i filloni me 9 gurë secili dhe mund t’i vendosni te vendet e "
 "pazëna te fusha, një herë njëri, një herë tjetri (duke klikuar mbi vendet)."
 
 #: activities/nine_men_morris/nine_men_morris.js:33
@@ -19154,7 +18860,7 @@ msgid ""
 "there. Green color spots indicates where you can move."
 msgstr ""
 "Pasi të jenë vendosur krejt gurët, ju dhe Tux-i do t’i hiqni, një herë "
-"njëri, një herë tjetri. Klikoni mbi një nga gurët tuaj, dhe më pas në një "
+"njëri, një herë tjetri. Klikoni mbi një nga gurët tuaj dhe më pas në një "
 "vend të zbrazët ngjitur, që të kalohet atje. Vendet me ngjyrë të gjelbër "
 "tregojnë se ku mund të lëvizni."
 
@@ -19765,6 +19471,16 @@ msgid ""
 "Tigers|live|in|forests.\n"
 "Football|is|a|team|game."
 msgstr ""
+"Qeni|leh.\n"
+"Shtëpia|është|e kuqe.\n"
+"Djali|lexon|një|libër.\n"
+"Shoku|im|është|i mirë.\n"
+"Ç’pamje|e|bukur!\n"
+"Koli|hidhet|në|pishinë.\n"
+"Mira|do|libër|të ri.\n"
+"Mami|më|bëri|një|omëletë.\n"
+"Tigrat|rrojnë|në|pyll.\n"
+"Futbolli|është|lojë|ekipesh."
 
 #: activities/ordering_sentences/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -19786,15 +19502,22 @@ msgid ""
 "Mom|has|asked|me|to|play|in|the|room.\n"
 "I|think|we|are|going|to|have|a|good|day."
 msgstr ""
+"Dielli|shkëlqen|në|qiell.\n"
+"Fëmijëve|u|pëlqen|të luajnë|jashtë|në|mbrëmje.\n"
+"A|do të hani|drekë|jashtë|sot?\n"
+"Çupa|lidhi|atletet|e veta|dhe|doli|jashtë.\n"
+"Goni|u|sëmur|pasi|hëngri|pesë|kallamsheqeri|të mëdhenj.\n"
+"Familja|jonë|bën|një|palë|pushime|në|plazh|çdo|vit.\n"
+"Dajë|Petriti|më|bëri|dhuratë|një|makinë|lodër|të kuqe.\n"
+"Kur|të kesh|mbaruar|orizin|mund|të hash|ëmbëlsirë.\n"
+"Mamaja|më|kërkoi|të shkoj|të luaj|në|dhomë.\n"
+"Më|duket|se|do të kemi|një|ditë|të mbarë."
 
 #. Activity title
 #: activities/oware/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Play oware against Tux"
 msgctxt "ActivityInfo|"
 msgid "Play oware (against Tux)"
-msgstr "Luani ouare me Tux-in"
+msgstr "Luani ouare (kundër Tux-it)"
 
 #. Help title
 #: activities/oware/ActivityInfo.qml:16
@@ -19836,7 +19559,7 @@ msgstr ""
 "gjashtë foletë që ka nën kontroll. Lojtari i heq krejt farat prej asaj "
 "foleje dhe i shpërndan ato, duke lënë një të tillë në çdo fole, sipas kahut "
 "kundërorar duke nisur nga ajo fole. Foleja nga fillohet është përherë e "
-"zbrazët; nëse përmbante 12 (ose më shumë) fara, ajo anashkalohet, dhe fara e "
+"zbrazët; nëse përmbante 12 (ose më shumë) fara, ajo anashkalohet dhe fara e "
 "dymbëdhjetë vendoset në folenë pasuese."
 
 #: activities/oware/ActivityInfo.qml:24
@@ -19884,12 +19607,9 @@ msgstr "Lëvizje e Pavlefshme!"
 
 #. Activity title
 #: activities/oware_2players/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Play oware with a friend"
 msgctxt "ActivityInfo|"
 msgid "Play oware (with a friend)"
-msgstr "Luani ouare një shok"
+msgstr "Luani ouare (me një shok)"
 
 #. Help title
 #: activities/oware_2players/ActivityInfo.qml:16
@@ -20254,7 +19974,7 @@ msgid ""
 "Learn how the piano keyboard works, and how notes are written on a musical "
 "staff."
 msgstr ""
-"Mësoni se si funksionon tastiera e pianos, dhe se si shkruhen notat në një "
+"Mësoni se si funksionon tastiera e pianos dhe se si shkruhen notat në një "
 "pentagram."
 
 #. Help goal
@@ -21303,7 +21023,7 @@ msgstr ""
 msgctxt "ActivityInfo|"
 msgid "Can read instructions, and think logically to find a path."
 msgstr ""
-"Mund të lexojë udhëzime, dhe të mendojë logjikisht si të gjejë një shteg."
+"Mund të lexojë udhëzime dhe të mendojë logjikisht si të gjejë një shteg."
 
 #. Help manual
 #: activities/programmingMaze/ActivityInfo.qml:25
@@ -21312,8 +21032,8 @@ msgid ""
 "Choose the instructions from the menu, and arrange them in order to lead Tux "
 "to his goal."
 msgstr ""
-"Zgjidhni udhëzimet prej menusë, dhe renditini në mënyrë që ta drejtoni Tux-"
-"in drejt synimit të tij."
+"Zgjidhni udhëzimet prej menusë dhe renditini në mënyrë që ta drejtoni Tux-in "
+"drejt synimit të tij."
 
 #: activities/programmingMaze/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
@@ -23439,7 +23159,7 @@ msgid ""
 "Each question contains 4 options. One of those is 100% correct. Try to "
 "answer the questions until you get 100% in the closeness meter."
 msgstr ""
-"Klikoni mbi një planet ose mbi Diellin, dhe përgjigjuni pyetjeve përkatëse. "
+"Klikoni mbi një planet ose mbi Diellin dhe përgjigjuni pyetjeve përkatëse. "
 "Çdo pyetje përmban 4 mundësi. Një nga këto është 100% e saktë. Përpiquni t’u "
 "përgjigjeni pyetjeve derisa të shihni 100% te matësi i afërsisë."
 
@@ -24837,7 +24557,7 @@ msgid ""
 "Symbols must be unique in a row, in a column, and (if defined) in each "
 "region."
 msgstr ""
-"Simbolet duhet të jenë unikë në një rresht, në një shtyllë, dhe (në u "
+"Simbolet duhet të jenë unikë në një rresht, në një shtyllë dhe (në u "
 "përcaktoftë) në çdo zona."
 
 #. Help goal
@@ -24935,10 +24655,10 @@ msgstr ""
 "objektin e duhur në pozicionin e saktë, ndërsa një pikë e bardhë do të thotë "
 "se një objekt është i saktë, por gjendet në pozicion të gabuar. Në nivele më "
 "të ulët, Tux-i ju jep një ide, përmes një kuadrati të zi për objektet e "
-"saktë në pozicionin e saktë, dhe përmes një kuadrati të bardhë për objekte "
-"të saktë, në pozicionin e gabuar. Në nivelet 4 dhe 8, një objekt mund të "
-"jetë i fshehur disa herë.<br/>Mund të përdorni butonin e djathtë të miut që "
-"të rrotulloni objektet në kah të kundërt, ose zgjedhësin e objekteve, për ta "
+"saktë në pozicionin e saktë dhe përmes një kuadrati të bardhë për objekte të "
+"saktë, në pozicionin e gabuar. Në nivelet 4 dhe 8, një objekt mund të jetë i "
+"fshehur disa herë.<br/>Mund të përdorni butonin e djathtë të miut që të "
+"rrotulloni objektet në kah të kundërt, ose zgjedhësin e objekteve, për ta "
 "zgjedhur një objekt drejt e nga lista. Shtypni për dy sekonda mbi një "
 "objekt, që të zgjidhet automatikisht objekti i fundit i përzgjedhur në këtë "
 "pozicion. Dyklikoni mbi një objekt të përzgjedhur më parë në historikun tuaj "
@@ -25079,33 +24799,27 @@ msgstr "Vlerë maksimum: 500000."
 
 #. Activity title
 #: activities/tens_complement_find/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "instruments|"
-#| msgid "Find the trumpet"
 msgctxt "ActivityInfo|"
 msgid "Find ten's complement"
-msgstr "Gjeni trombën"
+msgstr "Gjeni plotësuesin e dhjetës"
 
 #. Help title
 #: activities/tens_complement_find/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Find the ten's complement of each number."
-msgstr ""
+msgstr "Gjeni për çdo numër plotësuesin për të dhënë dhjetë."
 
 #. Help goal
 #: activities/tens_complement_find/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Learn to find ten's complement."
-msgstr ""
+msgstr "Mësoni si të gjeni plotësuesin e dhjetës."
 
 #. Help prerequisite
 #: activities/tens_complement_find/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "ActivityInfo|"
 msgid "Numbers from 1 to 10 and additions."
-msgstr "Numra nga 0 deri në 9."
+msgstr "Numra nga 1 deri në 10 dhe mbledhje."
 
 #: activities/tens_complement_find/ActivityInfo.qml:23
 #: activities/tens_complement_use/ActivityInfo.qml:24
@@ -25116,6 +24830,10 @@ msgid ""
 "corresponding lines. To correct the errors, click on the wrong numbers to "
 "remove them and repeat the previous steps."
 msgstr ""
+"Kur të jenë plotësuar krejt rreshtat, shtypni butonin OK që të vlerësohet "
+"përgjigja. Nëse disa përgjigje janë të pasakta, te rreshtat përkatës do të "
+"shfaqet një ikonë kryqi. Që të ndreqni gabimet, klikoni mbi numrat gabim për "
+"t’i hequr dhe përsëritni hapat e mëparshëm."
 
 #. Help manual
 #: activities/tens_complement_find/ActivityInfo.qml:23
@@ -25124,42 +24842,36 @@ msgid ""
 "Create pairs of numbers equal to ten. Select a number in the list, then "
 "select an empty spot of an operation to move the selected number there."
 msgstr ""
+"Krijoni dyshe numrash që japin dhjetë. Përzgjidhni një numër te lista, "
+"mandej përzgjidhni një vend të zbrazët te një veprim, për ta shpënë atje "
+"numrin e përzgjedhur."
 
 #: activities/tens_complement_find/resource/1/Data.qml:25
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "Data|"
 msgid "First number from 1 to 4."
-msgstr "Numra nga 0 deri në 9."
+msgstr "Numri i parë nga 1 deri në 4."
 
 #: activities/tens_complement_find/resource/2/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "Data|"
 msgid "First number from 5 to 9."
-msgstr "Numra nga 0 deri në 9."
+msgstr "Numri i parë nga 5 deri në 9."
 
 #: activities/tens_complement_find/resource/4/Data.qml:9
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Division of numbers"
 msgctxt "Data|"
 msgid "Find both numbers."
-msgstr "Pjesëtim numrash"
+msgstr "Gjejini të dy numrat."
 
 #. Activity title
 #: activities/tens_complement_swap/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Swap ten's complement"
-msgstr ""
+msgstr "Këmbeni plotësuesin e dhjetës"
 
 #. Help title
 #: activities/tens_complement_swap/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Swap the numbers to create pairs equal to ten."
-msgstr ""
+msgstr "Këmbeni numrat për të krijuar dyshe që japin dhjetë."
 
 #. Help goal
 #: activities/tens_complement_swap/ActivityInfo.qml:19
@@ -25168,15 +24880,14 @@ msgid ""
 "Learn to use ten's complement to optimize the order of numbers in an "
 "operation."
 msgstr ""
+"Mësoni si të përdorni plotësuesin e dhjetës, për të optimizuar renditjen e "
+"numrave në një veprim."
 
 #. Help prerequisite
 #: activities/tens_complement_swap/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "ActivityInfo|"
 msgid "Numbers from 1 to 30 and additions."
-msgstr "Numra nga 0 deri në 9."
+msgstr "Numra nga 1 deri në 30 dhe mbledhje."
 
 #. Help manual
 #: activities/tens_complement_swap/ActivityInfo.qml:23
@@ -25188,57 +24899,51 @@ msgid ""
 "the answers. If some answers are incorrect, a cross icon will appear on the "
 "corresponding lines. Correct the errors, then press the OK button again."
 msgstr ""
+"Krijoni dyshe numrash që japin dhjetë brenda çdo dysheje kllapash. "
+"Përzgjidhni një numër, mandej përzgjidhni një numër tjetër të të njëjtit "
+"veprim për t’u ndërruar vendet. Kur të jenë plotësuar krejt rreshtat, "
+"shtypni butonin OK, që të vlerësohen përgjigjet. Nëse disa përgjigje janë të "
+"pasakta, te rreshtat përkatës do të shfaqet një ikonë kryqi. Ndreqni "
+"përgjigjet, mandej shtypni sërish butonin OK."
 
 #: activities/tens_complement_swap/resource/1/Data.qml:36
-#, fuzzy
-#| msgctxt "Warning|"
-#| msgid "1 is not a prime number."
 msgctxt "Data|"
 msgid "2 pairs to make from 4 numbers."
-msgstr "1 s’është numër i thjeshtë."
+msgstr "2 dyshe për t’u krijuar nga 4 numra."
 
 #: activities/tens_complement_swap/resource/2/Data.qml:9
-#, fuzzy
-#| msgctxt "Warning|"
-#| msgid "1 is not a prime number."
 msgctxt "Data|"
 msgid "2 pairs to make from 5 numbers."
-msgstr "1 s’është numër i thjeshtë."
+msgstr "2 dyshe për t’u krijuar nga 5 numra."
 
 #: activities/tens_complement_swap/resource/3/Data.qml:9
-#, fuzzy
-#| msgctxt "Warning|"
-#| msgid "1 is not a prime number."
 msgctxt "Data|"
 msgid "3 pairs to make from 6 numbers."
-msgstr "1 s’është numër i thjeshtë."
+msgstr "3 dyshe për t’u krijuar nga 6 numra."
 
 #. Activity title
 #: activities/tens_complement_use/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Use ten's complement"
-msgstr ""
+msgstr "Përdorni plotësuesin e dhjetës"
 
 #. Help title
 #: activities/tens_complement_use/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Use a ten's complement to simplify the operation."
-msgstr ""
+msgstr "Përdorni një plotësues të dhjetës për të thjeshtuar veprimin."
 
 #. Help goal
 #: activities/tens_complement_use/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Learn a practical use of ten's complement."
-msgstr ""
+msgstr "Mësoni një përdorim praktik të plotësuesit të dhjetës."
 
 #. Help prerequisite
 #: activities/tens_complement_use/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "ActivityInfo|"
 msgid "Numbers from 1 to 50 and additions."
-msgstr "Numra nga 0 deri në 9."
+msgstr "Numra nga 1 deri në 50 dhe mbledhje."
 
 #. Help manual
 #: activities/tens_complement_use/ActivityInfo.qml:23
@@ -25248,30 +24953,24 @@ msgid ""
 "parentheses. Select a number in the list, then select an empty spot of an "
 "operation to move the selected number there."
 msgstr ""
+"Shpërbëni mbledhje për të krijuar dyshe numrash që japin dhjetë brenda çdo "
+"dysheje kllapash. Përzgjidhni një numër te lista, mandej përzgjidhni një "
+"vend të zbrazët të një veprimi ku të shpihet numri i përzgjedhur."
 
 #: activities/tens_complement_use/resource/1/Data.qml:43
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Between 1 and 10."
 msgctxt "Data|"
 msgid "Result between 11 and 19."
-msgstr "Mes 1 dhe 10."
+msgstr "Përfundim mes 11 dhe 19."
 
 #: activities/tens_complement_use/resource/2/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Result between 20 and 29."
-msgstr "Numra mes %1 dhe %2."
+msgstr "Përfundim mes 20 dhe 29."
 
 #: activities/tens_complement_use/resource/3/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Between 20 and 50."
 msgctxt "Data|"
 msgid "Result between 30 and 50."
-msgstr "Mes 20 dhe 50."
+msgstr "Përfundim mes 30 dhe 50."
 
 #. Activity title
 #: activities/tic_tac_toe/ActivityInfo.qml:18
@@ -25299,23 +24998,18 @@ msgstr ""
 
 #. Help manual
 #: activities/tic_tac_toe/ActivityInfo.qml:27
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Play with a friend. Take turns to click on the square which you want to "
-#| "mark. The first player to create a line of 3 marks wins."
 msgctxt "ActivityInfo|"
 msgid ""
 "Play with Tux. Take turns to click on the square which you want to mark. The "
 "first player to create a line of 3 marks wins."
 msgstr ""
-"Luani me një shok. Një herë njëri, një herë tjetri, klikoni mbi kutinë ku "
-"doni të vendosni. I pari që krijon një vijë me 3 gurë fiton."
+"Luani me Tux-in. Një herë njëri, një herë tjetri, klikoni mbi kutinë ku doni "
+"të vendosni. I pari që krijon një vijë me 3 gurë fiton."
 
 #: activities/tic_tac_toe/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Tux will play better when you increase the level."
-msgstr ""
+msgstr "Tux-i do të luajë më mirë, kur të rritni shkallën tuaj."
 
 #. Activity title
 #: activities/tic_tac_toe_2players/ActivityInfo.qml:18
@@ -25387,7 +25081,7 @@ msgid ""
 "the system is back up and Tux is in the shower, push the shower button for "
 "him."
 msgstr ""
-"Klikoni mbi elementë të ndryshëm aktivë: diell, re, stacion pompimi, dhe "
+"Klikoni mbi elementë të ndryshëm aktivë: diell, re, stacion pompimi dhe "
 "stacioni të trajtimit të ujërave të zeza, që të mund të riaktivizoni krejt "
 "sistemin ujor. Kur sistemi të jetë sërish në punë dhe Tux-i në dush, shtypni "
 "për të butonin e dushit."
@@ -25407,11 +25101,6 @@ msgid "As the sun rises, the water of the sea starts heating and evaporates."
 msgstr "Teksa dielli ngrihet, uji i detit fillon të nxehet dhe të avullojë."
 
 #: activities/watercycle/Watercycle.qml:80
-#, fuzzy
-#| msgctxt "Watercycle|"
-#| msgid ""
-#| "Water vapor condenses to form cloud and when clouds become heavy, it "
-#| "rains. Click on the cloud."
 msgctxt "Watercycle|"
 msgid ""
 "Water vapor condenses to form clouds and when clouds become heavy, it rains. "
@@ -25463,12 +25152,6 @@ msgstr ""
 "furnizon energjinë që avullin ujin nga masa ujore të tilla si oqeanet."
 
 #: activities/watercycle/Watercycle.qml:115
-#, fuzzy
-#| msgctxt "Watercycle|"
-#| msgid ""
-#| "Plants also lose water to the air through transpiration. The water vapor "
-#| "cools down forming tiny droplets in clouds. When the clouds meet cool air "
-#| "over the land, precipitation is triggered and fall down as rain."
 msgctxt "Watercycle|"
 msgid ""
 "Plants also lose water to the air through transpiration. The water vapor "
@@ -25476,7 +25159,7 @@ msgid ""
 "over the land, precipitation is triggered and falls down as rain."
 msgstr ""
 "Edhe bimët humbasin ujë përmes djersitjes. Avulli i ujit ftohet duke formuar "
-"bulëza të vockla në re. Kur re takojnë ajër të ftohtë përmbi tokë, "
+"bulëza të vockla në re. Kur retë takojnë ajër të ftohtë përmbi tokë, "
 "shkaktohen reshjet dhe rënia poshtë në formë shiu."
 
 #: activities/watercycle/Watercycle.qml:118
@@ -25501,7 +25184,7 @@ msgstr ""
 "Synimi juaj është të plotësoni ciklin ujor përpara se Tux-i të mbërrijë në "
 "shtëpi. Klikoni mbi përbërësit e ndryshëm që përbëjnë ciklin ujor. Klikoni "
 "së pari mbi diellin, mandej mbi renë, stacionin e pompimit të ujit pranë "
-"lumit, trajtimin e ujërave të zeza, dhe në fund rregulloni çelësin në mënyrë "
+"lumit, trajtimin e ujërave të zeza dhe në fund rregulloni çelësin në mënyrë "
 "që të furnizoni uji për dushin e Tux-it."
 
 #. Activity title
@@ -25535,17 +25218,14 @@ msgid "Type the complete word as it falls, before it reaches the ground."
 msgstr "Shtypni fjalën e plotë, teksa ajo bie, përpara se të mbërrijë përdhe."
 
 #: core/ChangeLog.qml:30
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "New maps and update of the maps for geography activities"
 msgctxt "ChangeLog|"
 msgid "Map of Spain added for geography activity"
-msgstr "Harta të reja dhe përditësim hartash për veprimtari gjeografie"
+msgstr "Hartë e Spanjës shtuar për veprimtari gjeografie"
 
 #: core/ChangeLog.qml:31
 msgctxt "ChangeLog|"
 msgid "Voices added for Ukrainian"
-msgstr ""
+msgstr "U shtun zërat për ukrainishten"
 
 #: core/ChangeLog.qml:32
 msgctxt "ChangeLog|"
@@ -25553,6 +25233,8 @@ msgid ""
 "New command-line option to list all the activities and start on a specific "
 "one"
 msgstr ""
+"Mundësi e re rreshti urdhrash për të paraqitur krejt veprimtaritë dhe për të "
+"nisur një të caktuar"
 
 #: core/ChangeLog.qml:33 core/ChangeLog.qml:68 core/ChangeLog.qml:71
 #: core/ChangeLog.qml:77
@@ -25577,29 +25259,34 @@ msgid ""
 "Reduce the size of the packages for all platforms and of the external word "
 "images set"
 msgstr ""
+"Reduktim i madhësisë së paketave për krejt platformat dhe e grupit të "
+"jashtëm të figurave për fjalët"
 
 #: core/ChangeLog.qml:40
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "New speed setting in several activities."
 msgctxt "ChangeLog|"
 msgid "Improve images quality in several activities"
-msgstr "Rregullim i ri shpejtësie në disa veprimtari."
+msgstr "Përmirësim cilësie figurash në disa veprimtari"
 
 #: core/ChangeLog.qml:41
 msgctxt "ChangeLog|"
 msgid "Fix some transitions in renewable_energy/watercycle on some platforms"
 msgstr ""
+"Ndreqje në disa platforma e disa tranzicioneve te energji_e_rinovueshme/"
+"cikël_ujor"
 
 #: core/ChangeLog.qml:42
 msgctxt "ChangeLog|"
 msgid "Fix dead keys ignored on Linux for typing activities"
 msgstr ""
+"Ndreqje tastesh të vdekur të shpërfillur te veprimtaritë për shtypje në "
+"tastierë në Linux"
 
 #: core/ChangeLog.qml:43
 msgctxt "ChangeLog|"
 msgid "Fix level reset when changing level manually in Logical associations"
 msgstr ""
+"Ndreqje riujdisjeje niveli, kur niveli ndryshohet dorazi, te përshoqërime "
+"Logjike"
 
 #: core/ChangeLog.qml:47
 msgctxt "ChangeLog|"
@@ -25646,9 +25333,10 @@ msgid ""
 "tutorial images translated"
 msgstr ""
 "Grup i ri të dhënash që përmbajnë veprime qerthujsh për labirintin e "
-"programimit dhe bërje të përkthyeshme e figurave të përkujdesores"
+"programimit dhe bërje të përkthyeshme të figurave të përkujdesores"
 
 #: core/ChangeLog.qml:66
+#, fuzzy
 msgctxt "ChangeLog|"
 msgid ""
 "Addition of a level to teach voltage source loop in analog electricity "
@@ -25902,12 +25590,10 @@ msgid "GCompris %1"
 msgstr "GCompris %1"
 
 #: core/DialogAbout.qml:57
-#, fuzzy, qt-format
-#| msgctxt "DialogAbout|"
-#| msgid "Based on Qt %1"
+#, qt-format
 msgctxt "DialogAbout|"
 msgid "Based on Qt %1 and %2"
-msgstr "Bazuar në Qt %1"
+msgstr "Bazuar në Qt %1 dhe %2"
 
 #: core/DialogAbout.qml:61
 msgctxt "DialogAbout|"
@@ -25968,7 +25654,7 @@ msgid ""
 "system to register your wish. Make sure you use the severity called "
 "\"Wishlist\"."
 msgstr ""
-"Software-i mund të përmirësohet përherë, dhe ekipi i KDE-së është gati ta "
+"Software-i mund të përmirësohet përherë dhe ekipi i KDE-së është gati ta "
 "bëjë këtë. Por, ju - përdoruesi - duhet të na tregojë kur diçka nuk "
 "funksionon si pritet ose mund të ishte bërë më mirë.<br /><br />KDE-ja ka "
 "një sistem ndjekje të metash. Që të njoftoni një të metë, vizitoni <a href="
@@ -25990,7 +25676,7 @@ msgid ""
 msgstr ""
 "S’duhet doemos të jeni zhvillues software-i, që të jeni një anëtar i ekipit "
 "KDE. Mund të bëheni pjesë e ekipeve kombëtare që përkthejnë ndërfaqe "
-"programesh. Mund të furnizoni art grafik, tema, tinguj, dhe dokumentim të "
+"programesh. Mund të furnizoni art grafik, tema, tinguj dhe dokumentim të "
 "përmirësuar. Vendoseni vetë!<br />Për informacion mbi disa projekte në të "
 "cilët mund të merrni pjesë, <br />vizitoni <a href=\"%1\">%1</a>.<br /><br /"
 ">Nëse ju duhet më tepër informacion ose dokumentim, atëherë një vizitë te <a "
@@ -26335,18 +26021,13 @@ msgid "Enable the kiosk mode."
 msgstr "Aktivizo mënyrën kioskë."
 
 #: core/main.cpp:192
-#, fuzzy
-#| msgctxt "QObject|"
-#| msgid ""
-#| "Use software renderer instead of openGL (slower but should run with any "
-#| "graphical card, needs Qt 5.8 minimum)."
 msgctxt "QObject|"
 msgid ""
 "Use software renderer instead of openGL (slower but should run with any "
 "graphical card)."
 msgstr ""
 "Përdor vizatues të software-it, në vend se openGL (më e ngadaltë, por duhet "
-"të punojë me çfarëdo karte grafike, lyp si minimum Qt 5.8)."
+"të punojë me çfarëdo karte grafike)."
 
 #: core/main.cpp:195
 msgctxt "QObject|"
@@ -26360,7 +26041,7 @@ msgstr ""
 #: core/main.cpp:199
 msgctxt "QObject|"
 msgid "Specify the activity when starting GCompris."
-msgstr ""
+msgstr "Përcaktoni veprimtarinë kur niset GCompris."
 
 #: core/main.cpp:204
 msgctxt "QObject|"
@@ -26415,7 +26096,7 @@ msgid ""
 "can do this in the Preferences Dialog."
 msgstr ""
 "Duhet të verifikoni se rregullimet tuaja për aplikacionin, veçanërisht ato "
-"të gjuhës, janë ujdisur saktë, dhe se janë instaluar krejt kartelat zanore "
+"të gjuhës, janë ujdisur saktë dhe se janë instaluar krejt kartelat zanore "
 "specifike të gjuhës. Këtë mund ta bëni te Dialogu i Parapëlqimeve."
 
 #: core/main.qml:284
@@ -26458,2026 +26139,3 @@ msgstr "Anashkaloje"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Fillo"
-
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Select the butterfly of the correct color."
-#~ msgctxt "Data|"
-#~ msgid "Select one-third of the rectangle."
-#~ msgstr "Përzgjidhni fluturën me ngjyrën e saktë."
-
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Select the butterfly of the correct color."
-#~ msgctxt "Data|"
-#~ msgid "Select two-thirds of the rectangle."
-#~ msgstr "Përzgjidhni fluturën me ngjyrën e saktë."
-
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Select the butterfly of the correct color."
-#~ msgctxt "Data|"
-#~ msgid "Select one-quarter of the rectangle."
-#~ msgstr "Përzgjidhni fluturën me ngjyrën e saktë."
-
-#, fuzzy
-#~| msgctxt "calendar_dataset|"
-#~| msgid "Select the fifth Thursday of the given month"
-#~ msgctxt "Data|"
-#~ msgid "Select two-fifths of the rectangle."
-#~ msgstr "Përzgjidhni të enjten e pestë të muajit të dhënë"
-
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Select the butterfly of the correct color."
-#~ msgctxt "Data|"
-#~ msgid "Select three-fifths of the rectangle."
-#~ msgstr "Përzgjidhni fluturën me ngjyrën e saktë."
-
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Decimal number system."
-#~ msgctxt "Data|"
-#~ msgid "Decimal numbers with a rectangle."
-#~ msgstr "Sistemi dhjetor i numrave."
-
-#, fuzzy
-#~| msgctxt "ActivityConfig|"
-#~| msgid "Select your locale"
-#~ msgctxt "Data|"
-#~ msgid "Select 0.5 rectangle."
-#~ msgstr "Përzgjidhni vendoren tuaj"
-
-#, fuzzy
-#~| msgctxt "ActivityConfig|"
-#~| msgid "Select your locale"
-#~ msgctxt "Data|"
-#~ msgid "Select 0.4 rectangle."
-#~ msgstr "Përzgjidhni vendoren tuaj"
-
-#, fuzzy
-#~| msgctxt "ActivityConfig|"
-#~| msgid "Select your locale"
-#~ msgctxt "Data|"
-#~ msgid "Select 0.8 rectangle."
-#~ msgstr "Përzgjidhni vendoren tuaj"
-
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Nine men's morris (with a friend)"
-#~ msgctxt "Data|"
-#~ msgid "Find denominator (with a rectangle)."
-#~ msgstr "Nëntësh (me një shok)"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Learn digits"
-#~ msgstr "Mësoni shifrat"
-
-#~ msgctxt "board1|"
-#~ msgid "The horse goes 'neigh! neigh!'. Horses usually sleep standing up."
-#~ msgstr "Kali bën “Hiiiiiiih! Hiiiiiiih!”. Zakonisht kali flenë në këmbë."
-
-#~ msgctxt "board1|"
-#~ msgid "You can ride on the back of this animal!"
-#~ msgstr "Mund të hipni në kurriz të kësaj kafshe dhe të kalëroni!"
-
-#~ msgctxt "board1|"
-#~ msgid ""
-#~ "The chicken goes 'luck, cackle, cluck'. Chickens have over 200 different "
-#~ "noises they can use to communicate."
-#~ msgstr ""
-#~ "Pula bën “klok, klok, klok”. Pulat kanë mbi 200 zhurma të ndryshme të "
-#~ "cilat i përdorin për të komunikuar."
-
-#~ msgctxt "board1|"
-#~ msgid ""
-#~ "The cow goes 'moo! moo!'. Cows are herbivorous mammals. They graze all "
-#~ "day in the meadow."
-#~ msgstr ""
-#~ "Lopa bën “Muuuu! Muuu!”. Lopët janë kafshë mishngrënëse. Kullosin gjithë "
-#~ "ditën në livadh."
-
-#~ msgctxt "board1|"
-#~ msgid "You can drink the milk this animal produces."
-#~ msgstr "Mund të pini qumështin që prodhon kjo kafshë."
-
-#~ msgctxt "board1|"
-#~ msgid ""
-#~ "The cat goes 'meow, meow'. Cats usually hate water because their fur "
-#~ "doesn't stay warm when it is wet."
-#~ msgstr ""
-#~ "Macja bën “Miau, miau”. Zakonisht macet nuk e kanë qejf ujin, ngaqë "
-#~ "gëzofi i tyre nuk qëndron i ngrohtë, po u lag."
-
-#~ msgctxt "board1|"
-#~ msgid "This pet likes chasing mice."
-#~ msgstr "Kësaj kafshe shtëpiake i pëlqen të gjuajë minj."
-
-#~ msgctxt "board1|"
-#~ msgid "The pig goes 'oink, oink'. Pigs are the 4th most intelligent animal."
-#~ msgstr ""
-#~ "Derri bën “ngrroh, ngrroh!”. Derrat janë kafsha e 4-t për nga "
-#~ "inteligjenca."
-
-#~ msgctxt "board1|"
-#~ msgid "This animal likes to lie in the mud."
-#~ msgstr "Kësaj kafshe i pëlqen të zhgërryhet në baltë."
-
-#~ msgctxt "board1|"
-#~ msgid ""
-#~ "The duck goes 'quack, quack'. Ducks have special features like webbed "
-#~ "feet and produce an oil to make their feathers 'waterproof'."
-#~ msgstr ""
-#~ "Rosa bën “pak, pak”. Rosat kanë veçori speciale, bie fjala, këmbët me "
-#~ "cipa dhe prodhimin e një vaji për t’i bërë puplat e tyre të "
-#~ "papërshkueshme nga uji."
-
-#~ msgctxt "board1|"
-#~ msgid ""
-#~ "The dog goes 'bark! bark!'. Dogs are great human companions and usually "
-#~ "enjoy love and attention."
-#~ msgstr ""
-#~ "Qeni bën “Ham, ham”. Qentë janë shokë të shkëlqyer të njerëzve dhe "
-#~ "zakonisht u pëlqen kur i duan dhe u kushtojnë vëmendje."
-
-#~ msgctxt "board1|"
-#~ msgid "Rooster"
-#~ msgstr "Këndes"
-
-#~ msgctxt "board1|"
-#~ msgid ""
-#~ "The rooster goes 'coc-a-doodle-doo!'. Roosters have been on farms for "
-#~ "about 5,000 years. Every morning it wakes the farm up with its noises."
-#~ msgstr ""
-#~ "Këndesi bën “Ki-ki-riii-kiiiiii”. Këndesat janë pjesë e oborreve për "
-#~ "rreth 5000 vjet. Zgjon krejt mëhallën me këngën e tij."
-
-#~ msgctxt "board1|"
-#~ msgid "This animal wakes the farm up in the morning."
-#~ msgstr "Kjo kafshë zgjon mëhallën në mëngjes."
-
-#~ msgctxt "board1|"
-#~ msgid ""
-#~ "The sheep is a mammal that bears a fleece of wool. It is a grazing "
-#~ "herbivore, bred for its wool, its meat, and its milk. The fleece can be "
-#~ "removed and used to produce articles of clothing and blankets, among "
-#~ "other things."
-#~ msgstr ""
-#~ "Delja është një gjitar që ka përsipër një gëzof leshi. Është një "
-#~ "barngrënës që kullot, rritet për leshin e saj, mishin dhe qumështin. "
-#~ "Gëzofi mund të qethet dhe të përdoret për të prodhuar veshje dhe mbulesa, "
-#~ "mes gjërash të tjera."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Play with the computer. Take turns to click the line in which you want to "
-#~ "drop a token. The first player to create a line of 4 tokens wins."
-#~ msgstr ""
-#~ "Luajeni me kompjuterin. Klikoni, me radhë, mbi rreshtin në të cilin doni "
-#~ "të lihet një pullë. Fiton ai që krijon i pari një rresht me 4 pulla."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Play with the computer. First take turns to place nine pieces, and then "
-#~ "take turns to move your pieces."
-#~ msgstr ""
-#~ "Luani me kompjuterin. Së pari, pullat vendosen një herë njëri, një herë "
-#~ "tjetri, dhe mandej, po sipas asaj radhe, lëvizni pullat tuaja."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Play with the computer. Take turns to click on the square which you want "
-#~ "to mark. The first player to create a line of 3 marks wins."
-#~ msgstr ""
-#~ "Luani me kompjuterin. Një herë njëri, një herë tjetri, klikoni mbi kutinë "
-#~ "ku doni të vendosni. I pari që krijon një vijë me 3 gurë fiton."
-
-#~ msgctxt "Data|"
-#~ msgid ""
-#~ "The|dog|barks.\n"
-#~ "The|house|is|red.\n"
-#~ "The boy|reads|a book.\n"
-#~ "Football|is|a|team|game."
-#~ msgstr ""
-#~ "Qeni|balash|leh.\n"
-#~ "Shtëpia|jonë|është|e ngrohtë.\n"
-#~ "Djali|lexon|një libër.\n"
-#~ "Futbolli|është|lojë|ekipesh."
-
-#~ msgctxt "Data|"
-#~ msgid ""
-#~ "The|sun|is|shining|in|the|sky.\n"
-#~ "Kids|enjoy|playing|outside|in|the|evening."
-#~ msgstr ""
-#~ "Dielli|ndrit|në|qiellin|e ftohtë|të|vjeshtës.\n"
-#~ "Kalamajtë|gëzohen|kur|luajnë|jashtë|në|mbrëmje."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Fish are taken from the Unix utility xfishtank. All image credits belong "
-#~ "to Guillaume Rousse."
-#~ msgstr ""
-#~ "Peshqit janë marrë nga mjeti Unix xfishtank. Krejt kreditet për fotot i "
-#~ "përkasin Guillaume Rousse."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "The map of the counties of Norway is © Kartverket (the Norwegian Mapping "
-#~ "Authority) and is released under the CC BY 4.0 license. Download links "
-#~ "can be found at &lt;https://www.kartverket.no/til-lands/kart/"
-#~ "illustrasjonskart&gt;."
-#~ msgstr ""
-#~ "Harta e konteve të Norvegjisë është e drejtë kopjimi e © Kartverket "
-#~ "(Autoriteti Norvegjez i Hartave) dhe qarkullon nën një licencë CC BY 4.0. "
-#~ "Lidhje shkarkimi mund të gjenden te &lt;https://www.kartverket.no/til-"
-#~ "lands/kart/illustrasjonskart&gt;."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "The images and voices come from the Art4Apps project: https://www."
-#~ "art4apps.org/."
-#~ msgstr ""
-#~ "Figurat dhe zërat janë nga projekti Art4Apps: https://www.art4apps.org/."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Play checkers against the computer"
-#~ msgstr "Luani damë kundër kompjuterit"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Play chess against your friend"
-#~ msgstr "Luani shah me shokun tuaj"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Drawing by Stephane Cabaraux"
-#~ msgstr "Vizatimi nga Stephane Cabaraux"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Drawing by Stephane Cabaraux."
-#~ msgstr "Vizatim nga Stephane Cabaraux."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Mouse-manipulation"
-#~ msgstr "Përdorim i miut"
-
-#~ msgctxt "TutorialDataset|"
-#~ msgid ""
-#~ "Use the gates so that the bulb glows only when the switch is turned off "
-#~ "and remains off when the switch is turned on."
-#~ msgstr ""
-#~ "Përdorni portat që llamba të ndizet vetëm kur çelësi është i hapur dhe "
-#~ "mbetet e fikur, kur çelësi mbyllet."
-
-#~ msgctxt "board10_0|"
-#~ msgid "Washington D.C."
-#~ msgstr "Uashington D.C."
-
-#~ msgctxt "board10_1|"
-#~ msgid "United States of America"
-#~ msgstr "Shtetet e Bashkuara të Amerikës"
-
-#~ msgctxt "board10_1|"
-#~ msgid "Washington"
-#~ msgstr "Uashington"
-
-#~ msgctxt "board10_1|"
-#~ msgid "Oregon"
-#~ msgstr "Oregon"
-
-#~ msgctxt "board10_1|"
-#~ msgid "Idaho"
-#~ msgstr "Idaho"
-
-#~ msgctxt "board10_1|"
-#~ msgid "Montana"
-#~ msgstr "Montana"
-
-#~ msgctxt "board10_1|"
-#~ msgid "North Dakota"
-#~ msgstr "Dakota e Veriut"
-
-#~ msgctxt "board10_1|"
-#~ msgid "South Dakota"
-#~ msgstr "Dakota e Jugut"
-
-#~ msgctxt "board10_1|"
-#~ msgid "Nebraska"
-#~ msgstr "Nebraska"
-
-#~ msgctxt "board10_1|"
-#~ msgid "Kansas"
-#~ msgstr "Kansas"
-
-#~ msgctxt "board10_1|"
-#~ msgid "Colorado"
-#~ msgstr "Kolorado"
-
-#~ msgctxt "board10_1|"
-#~ msgid "New Mexico"
-#~ msgstr "Nju Meksiko"
-
-#~ msgctxt "board10_1|"
-#~ msgid "Arizona"
-#~ msgstr "Arizonë"
-
-#~ msgctxt "board10_1|"
-#~ msgid "Alaska"
-#~ msgstr "Alaskë"
-
-#~ msgctxt "board10_1|"
-#~ msgid "Hawaii"
-#~ msgstr "Havai"
-
-#~ msgctxt "board10_1|"
-#~ msgid "Texas"
-#~ msgstr "Teksas"
-
-#~ msgctxt "board10_1|"
-#~ msgid "Oklahoma"
-#~ msgstr "Oklahoma"
-
-#~ msgctxt "board10_1|"
-#~ msgid "Minnesota"
-#~ msgstr "Minesota"
-
-#~ msgctxt "board10_1|"
-#~ msgid "Iowa"
-#~ msgstr "Ajoua"
-
-#~ msgctxt "board10_1|"
-#~ msgid "Missouri"
-#~ msgstr "Mizuri"
-
-#~ msgctxt "board10_1|"
-#~ msgid "Arkansas"
-#~ msgstr "Arkansas"
-
-#~ msgctxt "board10_1|"
-#~ msgid "Louisiana"
-#~ msgstr "Luiziana"
-
-#~ msgctxt "board10_1|"
-#~ msgid "Mississippi"
-#~ msgstr "Misisipi"
-
-#~ msgctxt "board10_1|"
-#~ msgid "Tennessee"
-#~ msgstr "Tenesi"
-
-#~ msgctxt "board10_1|"
-#~ msgid "Kentucky"
-#~ msgstr "Kentaki"
-
-#~ msgctxt "board10_1|"
-#~ msgid "Indiana"
-#~ msgstr "Indiana"
-
-#~ msgctxt "board10_1|"
-#~ msgid "Illinois"
-#~ msgstr "Ilinois"
-
-#~ msgctxt "board10_1|"
-#~ msgid "Wisconsin"
-#~ msgstr "Uiskonsin"
-
-#~ msgctxt "board10_1|"
-#~ msgid "Michigan"
-#~ msgstr "Miçigan"
-
-#~ msgctxt "board10_1|"
-#~ msgid "Ohio"
-#~ msgstr "Ohajo"
-
-#~ msgctxt "board10_1|"
-#~ msgid "West Virginia"
-#~ msgstr "Uest Virxhinia"
-
-#~ msgctxt "board10_1|"
-#~ msgid "Virginia"
-#~ msgstr "Virxhinia"
-
-#~ msgctxt "board10_1|"
-#~ msgid "North Carolina"
-#~ msgstr "Karolinë e Veriut"
-
-#~ msgctxt "board10_1|"
-#~ msgid "South Carolina"
-#~ msgstr "Karolinë e Jugut"
-
-#~ msgctxt "board10_1|"
-#~ msgid "Georgia"
-#~ msgstr "Xhorxhia"
-
-#~ msgctxt "board10_1|"
-#~ msgid "Florida"
-#~ msgstr "Florida"
-
-#~ msgctxt "board10_1|"
-#~ msgid "Alabama"
-#~ msgstr "Alabama"
-
-#~ msgctxt "board10_1|"
-#~ msgid "Maryland"
-#~ msgstr "Meriland"
-
-#~ msgctxt "board10_1|"
-#~ msgid "New Jersey"
-#~ msgstr "Nju Xhërsi"
-
-#~ msgctxt "board10_1|"
-#~ msgid "Delaware"
-#~ msgstr "Delëuer"
-
-#~ msgctxt "board10_1|"
-#~ msgid "Pennsylvania"
-#~ msgstr "Pensilvania"
-
-#~ msgctxt "board10_1|"
-#~ msgid "New York"
-#~ msgstr "Nju Jork"
-
-#~ msgctxt "board10_1|"
-#~ msgid "Vermont"
-#~ msgstr "Vermont"
-
-#~ msgctxt "board10_1|"
-#~ msgid "New Hampshire"
-#~ msgstr "Nju Hampshajër"
-
-#~ msgctxt "board10_1|"
-#~ msgid "Maine"
-#~ msgstr "Mein"
-
-#~ msgctxt "board10_1|"
-#~ msgid "Washington D.C."
-#~ msgstr "Uashington D.C."
-
-#~ msgctxt "board10_1|"
-#~ msgid "California"
-#~ msgstr "Kaliforni"
-
-#~ msgctxt "board10_1|"
-#~ msgid "Nevada"
-#~ msgstr "Nevada"
-
-#~ msgctxt "board10_1|"
-#~ msgid "Utah"
-#~ msgstr "Juta"
-
-#~ msgctxt "board10_1|"
-#~ msgid "Wyoming"
-#~ msgstr "Uajoming"
-
-#~ msgctxt "board10_1|"
-#~ msgid "Massachusetts"
-#~ msgstr "Masaçusets"
-
-#~ msgctxt "board10_1|"
-#~ msgid "Rhode Island"
-#~ msgstr "Rod Ajlënd"
-
-#~ msgctxt "board10_1|"
-#~ msgid "Connecticut"
-#~ msgstr "Konektikat"
-
-#~ msgctxt "board11_0|"
-#~ msgid "Valle d'Aosta"
-#~ msgstr "Vale d’Aosta"
-
-#~ msgctxt "board11_0|"
-#~ msgid "Trentino Alto Adige"
-#~ msgstr "Trentino Alto Adixhe"
-
-#~ msgctxt "board11_0|"
-#~ msgid "Puglia"
-#~ msgstr "Pulia"
-
-#~ msgctxt "board11_1|"
-#~ msgid "Districts of Northern Italy"
-#~ msgstr "Distrikte të Italisë së Veriut"
-
-#~ msgctxt "board11_1|"
-#~ msgid "Aosta"
-#~ msgstr "Aosta"
-
-#~ msgctxt "board11_1|"
-#~ msgid "Imperia"
-#~ msgstr "Imperia"
-
-#~ msgctxt "board11_1|"
-#~ msgid "Savona"
-#~ msgstr "Savona"
-
-#~ msgctxt "board11_1|"
-#~ msgid "Genova"
-#~ msgstr "Xhenova"
-
-#~ msgctxt "board11_1|"
-#~ msgid "La Spezia"
-#~ msgstr "La Specia"
-
-#~| msgctxt "board6_0|"
-#~| msgid "Albania"
-#~ msgctxt "board11_1|"
-#~ msgid "Verbania"
-#~ msgstr "Verbania"
-
-#~ msgctxt "board11_1|"
-#~ msgid "Vercelli"
-#~ msgstr "Verçeli"
-
-#~ msgctxt "board11_1|"
-#~ msgid "Biella"
-#~ msgstr "Biela"
-
-#~ msgctxt "board11_1|"
-#~ msgid "Novara"
-#~ msgstr "Novara"
-
-#~ msgctxt "board11_1|"
-#~ msgid "Torino"
-#~ msgstr "Torino"
-
-#~ msgctxt "board11_1|"
-#~ msgid "Cuneo"
-#~ msgstr "Kuneo"
-
-#~ msgctxt "board11_1|"
-#~ msgid "Asti"
-#~ msgstr "Asti"
-
-#~ msgctxt "board11_1|"
-#~ msgid "Alessandria"
-#~ msgstr "Alesandria"
-
-#~ msgctxt "board11_1|"
-#~ msgid "Piacenza"
-#~ msgstr "Piaçenza"
-
-#~ msgctxt "board11_1|"
-#~ msgid "Parma"
-#~ msgstr "Parma"
-
-#~ msgctxt "board11_1|"
-#~ msgid "Reggio Emilia"
-#~ msgstr "Rexhio Emilia"
-
-#~ msgctxt "board11_1|"
-#~ msgid "Modena"
-#~ msgstr "Modena"
-
-#~ msgctxt "board11_1|"
-#~ msgid "Bologna"
-#~ msgstr "Bolonja"
-
-#~ msgctxt "board11_1|"
-#~ msgid "Ferrara"
-#~ msgstr "Ferrara"
-
-#~ msgctxt "board11_1|"
-#~ msgid "Ravenna"
-#~ msgstr "Ravena"
-
-#~ msgctxt "board11_1|"
-#~ msgid "Forli-Cesena"
-#~ msgstr "Forli-Çezena"
-
-#~ msgctxt "board11_1|"
-#~ msgid "Rimini"
-#~ msgstr "Rimini"
-
-#~ msgctxt "board11_1|"
-#~ msgid "Varese"
-#~ msgstr "Vareze"
-
-#~ msgctxt "board11_1|"
-#~ msgid "Milano"
-#~ msgstr "Milano"
-
-#~ msgctxt "board11_1|"
-#~ msgid "Pavia"
-#~ msgstr "Pavia"
-
-#~ msgctxt "board11_1|"
-#~ msgid "Como"
-#~ msgstr "Komo"
-
-#~ msgctxt "board11_1|"
-#~ msgid "Lecco"
-#~ msgstr "Leko"
-
-#~ msgctxt "board11_1|"
-#~ msgid "Sondrio"
-#~ msgstr "Sondrio"
-
-#~ msgctxt "board11_1|"
-#~ msgid "Bergamo"
-#~ msgstr "Bergamo"
-
-#~ msgctxt "board11_1|"
-#~ msgid "Brescia"
-#~ msgstr "Breshia"
-
-#~ msgctxt "board11_1|"
-#~ msgid "Lodi"
-#~ msgstr "Lodi"
-
-#~ msgctxt "board11_1|"
-#~ msgid "Cremona"
-#~ msgstr "Kremona"
-
-#~ msgctxt "board11_1|"
-#~ msgid "Mantova"
-#~ msgstr "Mantova"
-
-#~ msgctxt "board11_1|"
-#~ msgid "Bolzano"
-#~ msgstr "Bolcano"
-
-#~ msgctxt "board11_1|"
-#~ msgid "Trento"
-#~ msgstr "Trento"
-
-#~ msgctxt "board11_1|"
-#~ msgid "Verona"
-#~ msgstr "Verona"
-
-#~ msgctxt "board11_1|"
-#~ msgid "Vicenza"
-#~ msgstr "Vicença"
-
-#~ msgctxt "board11_1|"
-#~ msgid "Padova"
-#~ msgstr "Padova"
-
-#~ msgctxt "board11_1|"
-#~ msgid "Rovigo"
-#~ msgstr "Rovigo"
-
-#~ msgctxt "board11_1|"
-#~ msgid "Venezia"
-#~ msgstr "Venecie"
-
-#~ msgctxt "board11_1|"
-#~ msgid "Treviso"
-#~ msgstr "Trevizo"
-
-#~ msgctxt "board11_1|"
-#~ msgid "Belluno"
-#~ msgstr "Beluno"
-
-#~ msgctxt "board11_1|"
-#~ msgid "Pordenone"
-#~ msgstr "Pordenone"
-
-#~ msgctxt "board11_1|"
-#~ msgid "Udine"
-#~ msgstr "Udine"
-
-#~ msgctxt "board11_1|"
-#~ msgid "Gorizia"
-#~ msgstr "Goricia"
-
-#~ msgctxt "board11_1|"
-#~ msgid "Trieste"
-#~ msgstr "Trieste"
-
-#~ msgctxt "board11_2|"
-#~ msgid "Districts of Central Italy"
-#~ msgstr "Distrikte të Italisë Qendrore"
-
-#~ msgctxt "board11_2|"
-#~ msgid "Massa-Carrara"
-#~ msgstr "Masa-Karrara"
-
-#~ msgctxt "board11_2|"
-#~ msgid "Lucca"
-#~ msgstr "Luka"
-
-#~ msgctxt "board11_2|"
-#~ msgid "Pistoia"
-#~ msgstr "Pistoia"
-
-#~ msgctxt "board11_2|"
-#~ msgid "Prato"
-#~ msgstr "Prato"
-
-#~ msgctxt "board11_2|"
-#~ msgid "Firenze"
-#~ msgstr "Firence"
-
-#~ msgctxt "board11_2|"
-#~ msgid "Pisa"
-#~ msgstr "Piza"
-
-#~ msgctxt "board11_2|"
-#~ msgid "Livorno"
-#~ msgstr "Livorno"
-
-#~ msgctxt "board11_2|"
-#~ msgid "Arezzo"
-#~ msgstr "Areco"
-
-#~ msgctxt "board11_2|"
-#~ msgid "Siena"
-#~ msgstr "Siena"
-
-#~ msgctxt "board11_2|"
-#~ msgid "Grosseto"
-#~ msgstr "Groseto"
-
-#~ msgctxt "board11_2|"
-#~ msgid "Terni"
-#~ msgstr "Terni"
-
-#~ msgctxt "board11_2|"
-#~ msgid "Perugia"
-#~ msgstr "Peruxhia"
-
-#~ msgctxt "board11_2|"
-#~ msgid "Pesaro-Urbino"
-#~ msgstr "Pezaro-Urbino"
-
-#~ msgctxt "board11_2|"
-#~ msgid "Ancona"
-#~ msgstr "Ankona"
-
-#~ msgctxt "board11_2|"
-#~ msgid "Macerata"
-#~ msgstr "Maçerata"
-
-#~ msgctxt "board11_2|"
-#~ msgid "Fermo"
-#~ msgstr "Fermo"
-
-#~ msgctxt "board11_2|"
-#~ msgid "Ascoli Piceno"
-#~ msgstr "Askoli Piçeno"
-
-#~ msgctxt "board11_2|"
-#~ msgid "Viterbo"
-#~ msgstr "Viterbo"
-
-#~ msgctxt "board11_2|"
-#~ msgid "Rieti"
-#~ msgstr "Rieti"
-
-#~ msgctxt "board11_2|"
-#~ msgid "Roma"
-#~ msgstr "Romë"
-
-#~ msgctxt "board11_2|"
-#~ msgid "Frosinone"
-#~ msgstr "Frozinone"
-
-#~ msgctxt "board11_2|"
-#~ msgid "Latina"
-#~ msgstr "Latina"
-
-#~ msgctxt "board11_2|"
-#~ msgid "Teramo"
-#~ msgstr "Teramo"
-
-#~ msgctxt "board11_2|"
-#~ msgid "Pescara"
-#~ msgstr "Peskara"
-
-#~ msgctxt "board11_2|"
-#~ msgid "Chieti"
-#~ msgstr "Kieti"
-
-#~ msgctxt "board11_2|"
-#~ msgid "L Aquila"
-#~ msgstr "Shqiponja"
-
-#~ msgctxt "board11_3|"
-#~ msgid "Districts of Southern Italy"
-#~ msgstr "Distrikte të Italisë së Jugut"
-
-#~ msgctxt "board11_3|"
-#~ msgid "Sassari"
-#~ msgstr "Sasari"
-
-#~ msgctxt "board11_3|"
-#~ msgid "Olbia-Tempio"
-#~ msgstr "Olbia-Tempio"
-
-#~ msgctxt "board11_3|"
-#~ msgid "Nuoro"
-#~ msgstr "Nuoro"
-
-#~ msgctxt "board11_3|"
-#~ msgid "Oristano"
-#~ msgstr "Oristano"
-
-#~ msgctxt "board11_3|"
-#~ msgid "Ogliastra"
-#~ msgstr "Oliastra"
-
-#~ msgctxt "board11_3|"
-#~ msgid "Cagliari"
-#~ msgstr "Kaliari"
-
-#~ msgctxt "board11_3|"
-#~ msgid "Medio Campidano"
-#~ msgstr "Medio Kampidano"
-
-#~ msgctxt "board11_3|"
-#~ msgid "Carbonia-Iglesias"
-#~ msgstr "Karbonia-Iglesias"
-
-#~ msgctxt "board11_3|"
-#~ msgid "Trapani"
-#~ msgstr "Trapani"
-
-#~ msgctxt "board11_3|"
-#~ msgid "Palermo"
-#~ msgstr "Palermo"
-
-#~ msgctxt "board11_3|"
-#~ msgid "Agrigento"
-#~ msgstr "Agrixhento"
-
-#~ msgctxt "board11_3|"
-#~ msgid "Caltanissetta"
-#~ msgstr "Kaltaniseta"
-
-#~ msgctxt "board11_3|"
-#~ msgid "Enna"
-#~ msgstr "Ena"
-
-#~ msgctxt "board11_3|"
-#~ msgid "Siracusa"
-#~ msgstr "Sirakuza"
-
-#~ msgctxt "board11_3|"
-#~ msgid "Ragusa"
-#~ msgstr "Raguza"
-
-#~ msgctxt "board11_3|"
-#~ msgid "Messina"
-#~ msgstr "Mesina"
-
-#~ msgctxt "board11_3|"
-#~ msgid "Reggio Calabria"
-#~ msgstr "Rexhio Kalabria"
-
-#~ msgctxt "board11_3|"
-#~ msgid "Catanzaro"
-#~ msgstr "Katanxaro"
-
-#~ msgctxt "board11_3|"
-#~ msgid "Crotone"
-#~ msgstr "Krotone"
-
-#~ msgctxt "board11_3|"
-#~ msgid "Cosenza"
-#~ msgstr "Kozenca"
-
-#~ msgctxt "board11_3|"
-#~ msgid "Potenza"
-#~ msgstr "Potenca"
-
-#~ msgctxt "board11_3|"
-#~ msgid "Matera"
-#~ msgstr "Matera"
-
-#~ msgctxt "board11_3|"
-#~ msgid "Foggia"
-#~ msgstr "Foxhia"
-
-#~ msgctxt "board11_3|"
-#~ msgid "Barletta-Andria-Trani"
-#~ msgstr "Barleta-Andria-Trani"
-
-#~ msgctxt "board11_3|"
-#~ msgid "Bari"
-#~ msgstr "Bari"
-
-#~ msgctxt "board11_3|"
-#~ msgid "Taranto"
-#~ msgstr "Taranto"
-
-#~ msgctxt "board11_3|"
-#~ msgid "Brindisi"
-#~ msgstr "Brindizi"
-
-#~ msgctxt "board11_3|"
-#~ msgid "Lecce"
-#~ msgstr "Leçe"
-
-#~ msgctxt "board11_3|"
-#~ msgid "Isernia"
-#~ msgstr "Izernia"
-
-#~ msgctxt "board11_3|"
-#~ msgid "Campobasso"
-#~ msgstr "Kampobaso"
-
-#~ msgctxt "board11_3|"
-#~ msgid "Caserta"
-#~ msgstr "Kazerta"
-
-#~ msgctxt "board11_3|"
-#~ msgid "Benevento"
-#~ msgstr "Benevento"
-
-#~ msgctxt "board11_3|"
-#~ msgid "Avellino"
-#~ msgstr "Avelino"
-
-#~ msgctxt "board11_3|"
-#~ msgid "Napoli"
-#~ msgstr "Napoli"
-
-#~ msgctxt "board11_3|"
-#~ msgid "Salerno"
-#~ msgstr "Salerno"
-
-#~ msgctxt "board12_0|"
-#~ msgid "States of India"
-#~ msgstr "Shtete të Indisë"
-
-#~ msgctxt "board12_0|"
-#~ msgid "Orrisa"
-#~ msgstr "Orrisa"
-
-#~ msgctxt "board14_0|"
-#~ msgid "Xizang"
-#~ msgstr "Xizang"
-
-#~ msgctxt "board15_0|"
-#~ msgid "Northern Scotland"
-#~ msgstr "Skocia Veriore"
-
-#~ msgctxt "board15_0|"
-#~ msgid "Orkney"
-#~ msgstr "Orkni"
-
-#~ msgctxt "board15_0|"
-#~ msgid "Shetland"
-#~ msgstr "Shetland"
-
-#~ msgctxt "board15_0|"
-#~ msgid "Caithness"
-#~ msgstr "Kaitnes"
-
-#~ msgctxt "board15_0|"
-#~ msgid "Sutherland"
-#~ msgstr "Sathërland"
-
-#~ msgctxt "board15_0|"
-#~ msgid "Ross"
-#~ msgstr "Ros"
-
-#~ msgctxt "board15_0|"
-#~ msgid "Inverness and Nairn"
-#~ msgstr "Invernes end Neërn"
-
-#~ msgctxt "board15_0|"
-#~ msgid "Lochalsh, Badenoch, Cromarty and Strathspey"
-#~ msgstr "Lokalsh, Badenok, Kromërti and Strathspej"
-
-#~ msgctxt "board15_0|"
-#~ msgid "Lochaber"
-#~ msgstr "Lokabër"
-
-#~ msgctxt "board15_0|"
-#~ msgid "Skye"
-#~ msgstr "Skaj"
-
-#~ msgctxt "board15_2|"
-#~ msgid "Northern Scotland"
-#~ msgstr "Skocia Veriore"
-
-#~ msgctxt "board15_2|"
-#~ msgid "Aberdeenshire"
-#~ msgstr "Aberdinshajër"
-
-#~ msgctxt "board15_2|"
-#~ msgid "Aberdeen"
-#~ msgstr "Aberdin"
-
-#~ msgctxt "board15_2|"
-#~ msgid "Moray"
-#~ msgstr "Marri"
-
-#~ msgctxt "board15_2|"
-#~ msgid "Na h-Eileanan Siar"
-#~ msgstr "Në Helanën Shiër"
-
-#~ msgctxt "board15_2|"
-#~ msgid "Orkney"
-#~ msgstr "Orkni"
-
-#~ msgctxt "board15_2|"
-#~ msgid "Shetland"
-#~ msgstr "Shetland"
-
-#~ msgctxt "board15_2|"
-#~ msgid "Caithness"
-#~ msgstr "Kaitnes"
-
-#~ msgctxt "board15_2|"
-#~ msgid "Sutherland"
-#~ msgstr "Sathërland"
-
-#~ msgctxt "board15_2|"
-#~ msgid "Ross"
-#~ msgstr "Ros"
-
-#~ msgctxt "board15_2|"
-#~ msgid "Inverness and Nairn"
-#~ msgstr "Invernes end Neërn"
-
-#~ msgctxt "board15_2|"
-#~ msgid "Lochalsh, Badenoch, Cromarty and Strathspey"
-#~ msgstr "Lokalsh, Badenok, Kromërti and Strathspej"
-
-#~ msgctxt "board15_2|"
-#~ msgid "Lochaber"
-#~ msgstr "Lokabër"
-
-#~ msgctxt "board15_2|"
-#~ msgid "Skye"
-#~ msgstr "Skaj"
-
-#~ msgctxt "board15_3|"
-#~ msgid "Southern Scotland"
-#~ msgstr "Skocia Jugore"
-
-#~ msgctxt "board15_3|"
-#~ msgid "Scottish Borders"
-#~ msgstr "Skotish Bordërs"
-
-#~ msgctxt "board15_3|"
-#~ msgid "East Lothian"
-#~ msgstr "Ist Louthiën"
-
-#~ msgctxt "board15_3|"
-#~ msgid "Midlothian"
-#~ msgstr "Midlëuthiën"
-
-#~ msgctxt "board15_3|"
-#~ msgid "West Lothian"
-#~ msgstr "Uest Louthiën"
-
-#~ msgctxt "board15_3|"
-#~ msgid "Edinburgh"
-#~ msgstr "Edinburg"
-
-#~ msgctxt "board15_3|"
-#~ msgid "Falkirk"
-#~ msgstr "Folkërk"
-
-#~ msgctxt "board15_3|"
-#~ msgid "South Lanarkshire"
-#~ msgstr "Sauth Lanarkshajër"
-
-#~ msgctxt "board15_3|"
-#~ msgid "North Lanarkshire"
-#~ msgstr "North Lanarkshajër"
-
-#~ msgctxt "board15_3|"
-#~ msgid "Dumfries and Galloway"
-#~ msgstr "Damfris end Galëuej"
-
-#~ msgctxt "board15_3|"
-#~ msgid "South Ayrshire"
-#~ msgstr "Sauth Ejërshajër"
-
-#~ msgctxt "board15_3|"
-#~ msgid "East Ayrshire"
-#~ msgstr "Ist Ejërshajër"
-
-#~ msgctxt "board15_3|"
-#~ msgid "Glasgow"
-#~ msgstr "Glasgou"
-
-#~ msgctxt "board15_3|"
-#~ msgid "East Dunbartonshire"
-#~ msgstr "Ist Dunbartonshajër"
-
-#~ msgctxt "board15_3|"
-#~ msgid "West Dunbartonshire"
-#~ msgstr "Uest Dunbartonshajër"
-
-#~ msgctxt "board15_3|"
-#~ msgid "East Renfrewshire"
-#~ msgstr "Ist Renfrjushajër"
-
-#~ msgctxt "board15_3|"
-#~ msgid "Renfrewshire"
-#~ msgstr "Renfrjushajër"
-
-#~ msgctxt "board15_3|"
-#~ msgid "Inverclyde"
-#~ msgstr "Inverklajd"
-
-#~ msgctxt "board15_3|"
-#~ msgid "North Ayrshire"
-#~ msgstr "North Ejërshajër"
-
-#~ msgctxt "board15_3|"
-#~ msgid "Clackmannanshire"
-#~ msgstr "Klakmënshajër"
-
-#~ msgctxt "board15_3|"
-#~ msgid "Fife"
-#~ msgstr "Faif"
-
-#~ msgctxt "board15_3|"
-#~ msgid "Dundee"
-#~ msgstr "Dandi"
-
-#~ msgctxt "board15_3|"
-#~ msgid "Angus"
-#~ msgstr "Angës"
-
-#~ msgctxt "board15_3|"
-#~ msgid "Perth and Kinross"
-#~ msgstr "Përth dhe Kinros"
-
-#~ msgctxt "board15_3|"
-#~ msgid "Stirling"
-#~ msgstr "Stërling"
-
-#~ msgctxt "board15_3|"
-#~ msgid "Argyll and Bute"
-#~ msgstr "Argill end Bjut"
-
-#~ msgctxt "board16_0|"
-#~ msgid "Dobrogea"
-#~ msgstr "Dobruzha"
-
-#~ msgctxt "board1_0|"
-#~ msgid "Districts of France"
-#~ msgstr "Distrikte të Francës"
-
-#~ msgctxt "board1_0|"
-#~ msgid "Bretagne"
-#~ msgstr "Bretanjë"
-
-#~ msgctxt "board2_0|"
-#~ msgid "Sachsen"
-#~ msgstr "Saksoni"
-
-#~ msgctxt "board2_0|"
-#~ msgid "Niedersachsen"
-#~ msgstr "Saksoni e Poshtme"
-
-#~ msgctxt "board2_0|"
-#~ msgid "Bayern"
-#~ msgstr "Bajern"
-
-#~ msgctxt "board4_0|"
-#~ msgid "Dolnoslaskie"
-#~ msgstr "Provinca e Silezisë së Poshtme"
-
-#~ msgctxt "board4_0|"
-#~ msgid "Zachodnio Pomorskie"
-#~ msgstr "Provinca e Pomeranisë Perëndimore"
-
-#~ msgctxt "board4_0|"
-#~ msgid "Wielkopolskie"
-#~ msgstr "Provinca e Polonisë së Madhe"
-
-#~ msgctxt "board4_0|"
-#~ msgid "Swietokrzyskie"
-#~ msgstr "Provinca e Kryqit të Shenjtë"
-
-#~ msgctxt "board4_0|"
-#~ msgid "Slaskie"
-#~ msgstr "Provinca e Silezisë"
-
-#~ msgctxt "board4_0|"
-#~ msgid "Pomorskie"
-#~ msgstr "Provinca e Pomeranisë"
-
-#~ msgctxt "board4_0|"
-#~ msgid "Podkarpackie"
-#~ msgstr "Provinca e Karpateve të Poshtme"
-
-#~ msgctxt "board4_0|"
-#~ msgid "Mazowieckie"
-#~ msgstr "Provinca e Mazovisë"
-
-#~ msgctxt "board4_0|"
-#~ msgid "Malopolskie"
-#~ msgstr "Provinca e Polonisë së Vogël"
-
-#~ msgctxt "board4_0|"
-#~ msgid "Lódzkie"
-#~ msgstr "Provinca e Loxit"
-
-#~ msgctxt "board4_0|"
-#~ msgid "Lubelskie"
-#~ msgstr "Provinca e Lublinit"
-
-#~ msgctxt "board4_0|"
-#~ msgid "Kujawsko-Pomorskie"
-#~ msgstr "Provinca e Kujavi-Pomeranisë"
-
-#~ msgctxt "board5_0|"
-#~ msgid "Districts of Turkey"
-#~ msgstr "Distrikte të Turqisë"
-
-#~ msgctxt "board5_0|"
-#~ msgid "Usak"
-#~ msgstr "Ushak"
-
-#~ msgctxt "board5_0|"
-#~ msgid "Osmaniye"
-#~ msgstr "Osmanije"
-
-#~ msgctxt "board5_0|"
-#~ msgid "Nigde"
-#~ msgstr "Nigde"
-
-#~ msgctxt "board5_0|"
-#~ msgid "Mugla"
-#~ msgstr "Muglla"
-
-#~ msgctxt "board5_0|"
-#~ msgid "Hatay"
-#~ msgstr "Hataj"
-
-#~ msgctxt "board5_0|"
-#~ msgid "Aydin"
-#~ msgstr "Ajdin"
-
-#~ msgctxt "board5_1|"
-#~ msgid "Sirnak"
-#~ msgstr "Shërnak"
-
-#~ msgctxt "board5_1|"
-#~ msgid "Mus"
-#~ msgstr "Mush"
-
-#~ msgctxt "board5_1|"
-#~ msgid "Igdir"
-#~ msgstr "Igdir"
-
-#~ msgctxt "board5_1|"
-#~ msgid "Elazig"
-#~ msgstr "Elazig"
-
-#~ msgctxt "board5_1|"
-#~ msgid "Agri"
-#~ msgstr "Agri"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Districts of Turkey"
-#~ msgstr "Distrikte të Turqisë"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Van"
-#~ msgstr "Van"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Tunceli"
-#~ msgstr "Tunxheli"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Trabzon"
-#~ msgstr "Trabzon"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Tokat"
-#~ msgstr "Tokat"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Sivas"
-#~ msgstr "Sivas"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Sirnak"
-#~ msgstr "Shërnak"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Siirt"
-#~ msgstr "Siirt"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Sanliurfa"
-#~ msgstr "Shanlëufra"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Rize"
-#~ msgstr "Rize"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Ordu"
-#~ msgstr "Ordu"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Mus"
-#~ msgstr "Mush"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Mardin"
-#~ msgstr "Mardin"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Malatya"
-#~ msgstr "Malatja"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Kilis"
-#~ msgstr "Kilis"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Kars"
-#~ msgstr "Kars"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Kahramanmaras"
-#~ msgstr "Kahremanmarash"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Igdir"
-#~ msgstr "Igdir"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Hatay"
-#~ msgstr "Hataj"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Hakkari"
-#~ msgstr "Hakari"
-
-#~ msgctxt "board5_2|"
-#~ msgid "gümüshane"
-#~ msgstr "gümüshane"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Giresun"
-#~ msgstr "Giresun"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Gaziantep"
-#~ msgstr "Gaziadep"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Erzurum"
-#~ msgstr "Erzurum"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Erzincan"
-#~ msgstr "Erzinxhan"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Elazig"
-#~ msgstr "Elazig"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Diyarbakir"
-#~ msgstr "Dijarbakër"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Bitlis"
-#~ msgstr "Bitlis"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Bingöl"
-#~ msgstr "Bingol"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Bayburt"
-#~ msgstr "Bajburt"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Batman"
-#~ msgstr "Batman"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Artvin"
-#~ msgstr "Artvin"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Ardahan"
-#~ msgstr "Ardahan"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Agri"
-#~ msgstr "Agri"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Adiyaman"
-#~ msgstr "Adijaman"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Zonguldak"
-#~ msgstr "Zongulldak"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Yozgat"
-#~ msgstr "Jozgat"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Yalova"
-#~ msgstr "Jalova"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Usak"
-#~ msgstr "Ushak"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Tekirdag"
-#~ msgstr "Tekirdag"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Sinop"
-#~ msgstr "Sinop"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Samsun"
-#~ msgstr "Samsun"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Sakarya"
-#~ msgstr "Sakarja"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Osmaniye"
-#~ msgstr "Osmanije"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Nigde"
-#~ msgstr "Nigde"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Nevsehir"
-#~ msgstr "Nevshehir"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Mugla"
-#~ msgstr "Muglla"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Mersin"
-#~ msgstr "Mersin"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Manisa"
-#~ msgstr "Manisa"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Kütahya"
-#~ msgstr "Kytahja"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Konya"
-#~ msgstr "Konja"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Kocaeli"
-#~ msgstr "Koxhaeli"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Kirsehir"
-#~ msgstr "Kërshehir"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Kirklareli"
-#~ msgstr "Kërkareli"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Kirikkale"
-#~ msgstr "Kërëkale"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Kayseri"
-#~ msgstr "Kajseri"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Kastamonu"
-#~ msgstr "Kastamonu"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Karaman"
-#~ msgstr "Karaman"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Karabuk"
-#~ msgstr "Karabyk"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Izmir"
-#~ msgstr "Izmir"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Istanbul"
-#~ msgstr "Stamboll"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Isparta"
-#~ msgstr "Ësparta"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Eskisehir"
-#~ msgstr "Eskishehir"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Edirne"
-#~ msgstr "Edirne"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Düzce"
-#~ msgstr "Dyzxhe"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Denizli"
-#~ msgstr "Denizli"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Çorum"
-#~ msgstr "Çorum"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Çankiri"
-#~ msgstr "Çankërë"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Çanakkale"
-#~ msgstr "Çanakala"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Bursa"
-#~ msgstr "Bursa"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Burdur"
-#~ msgstr "Burdur"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Bolu"
-#~ msgstr "Bollu"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Bilecik"
-#~ msgstr "Bilexhik"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Bartin"
-#~ msgstr "Bartën"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Balikesir"
-#~ msgstr "Balëkesir"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Aydin"
-#~ msgstr "Ajydin"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Antalya"
-#~ msgstr "Antalja"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Ankara"
-#~ msgstr "Ankara"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Amasya"
-#~ msgstr "Amasja"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Aksaray"
-#~ msgstr "Aksaraj"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Afyon"
-#~ msgstr "Afjon"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Adana"
-#~ msgstr "Adana"
-
-#~ msgctxt "board6_0|"
-#~ msgid "Telemark"
-#~ msgstr "Telemark"
-
-#~ msgctxt "board6_0|"
-#~ msgid "Østfold"
-#~ msgstr "Ëstfolt"
-
-#~ msgctxt "board6_0|"
-#~ msgid "Buskerud"
-#~ msgstr "Byskery"
-
-#~ msgctxt "board6_0|"
-#~ msgid "Sogn og Fjordane"
-#~ msgstr "Sogn og Fjordane"
-
-#~| msgctxt "Lang|"
-#~| msgid "plant"
-#~ msgctxt "board6_0|"
-#~ msgid "Oppland"
-#~ msgstr "Opland"
-
-#~| msgctxt "board6_0|"
-#~| msgid "Poland"
-#~ msgctxt "board6_0|"
-#~ msgid "Hordaland"
-#~ msgstr "Hordaland"
-
-#~ msgctxt "board6_0|"
-#~ msgid "Aust-Agder"
-#~ msgstr "Ost-Agder"
-
-#~ msgctxt "board6_0|"
-#~ msgid "Troms"
-#~ msgstr "Troms"
-
-#~| msgctxt "board5_0|"
-#~| msgid "Denmark"
-#~ msgctxt "board6_0|"
-#~ msgid "Hedmark"
-#~ msgstr "Hedmark"
-
-#~ msgctxt "board6_0|"
-#~ msgid "Akershus"
-#~ msgstr "Akershys"
-
-#~ msgctxt "board9_0|"
-#~ msgid "Baja California Norte"
-#~ msgstr "Gjiri i Kalifornisë së Veriut"
-
-#~ msgctxt "board10_0|"
-#~ msgid "Northern Mariana Islands"
-#~ msgstr "Ishujt Veriorë Mariana"
-
-#~ msgctxt "board10_0|"
-#~ msgid "American Samoa"
-#~ msgstr "Samoa Amerikane"
-
-#~ msgctxt "board10_0|"
-#~ msgid "Australia"
-#~ msgstr "Australi"
-
-#~ msgctxt "board2_0|"
-#~ msgid "Alaska"
-#~ msgstr "Alaskë"
-
-#~ msgctxt "board2_0|"
-#~ msgid "Iceland"
-#~ msgstr "Islandë"
-
-#~ msgctxt "board3_1|"
-#~ msgid "Central America"
-#~ msgstr "Amerika Qendrore"
-
-#~ msgctxt "board3_1|"
-#~ msgid "Puerto Rico"
-#~ msgstr "Porto Riko"
-
-#~ msgctxt "board3_1|"
-#~ msgid "Panama"
-#~ msgstr "Panama"
-
-#~ msgctxt "board3_1|"
-#~ msgid "Nicaragua"
-#~ msgstr "Nikaragua"
-
-#~ msgctxt "board3_1|"
-#~ msgid "Mexico"
-#~ msgstr "Meksikë"
-
-#~ msgctxt "board3_1|"
-#~ msgid "Jamaica"
-#~ msgstr "Xhamajkë"
-
-#~ msgctxt "board3_1|"
-#~ msgid "Honduras"
-#~ msgstr "Honduras"
-
-#~ msgctxt "board3_1|"
-#~ msgid "Haiti"
-#~ msgstr "Haiti"
-
-#~ msgctxt "board3_1|"
-#~ msgid "Guatemala"
-#~ msgstr "Guatemalë"
-
-#~ msgctxt "board3_1|"
-#~ msgid "El Salvador"
-#~ msgstr "Salvador"
-
-#~ msgctxt "board3_1|"
-#~ msgid "Dominican Republic"
-#~ msgstr "Republika Dominikane"
-
-#~ msgctxt "board3_1|"
-#~ msgid "Cuba"
-#~ msgstr "Kubë"
-
-#~ msgctxt "board3_1|"
-#~ msgid "Costa Rica"
-#~ msgstr "Kosta Rika"
-
-#~ msgctxt "board3_1|"
-#~ msgid "Belize"
-#~ msgstr "Belize"
-
-#~ msgctxt "board3_1|"
-#~ msgid "Bahamas"
-#~ msgstr "Bahamas"
-
-#~ msgctxt "board8_0|"
-#~ msgid "Swaziland"
-#~ msgstr "Svaziland"
-
-#~ msgctxt "board9_0|"
-#~ msgid "Asia"
-#~ msgstr "Azi"
-
-#~ msgctxt "board9_0|"
-#~ msgid "Russia"
-#~ msgstr "Rusi"
-
-#~ msgctxt "board9_0|"
-#~ msgid "Japan"
-#~ msgstr "Japoni"
-
-#~ msgctxt "board9_0|"
-#~ msgid "Indonesia"
-#~ msgstr "Indonezi"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Gnumch Equality"
-#~ msgstr "Barazime Gnumch"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Image Name"
-#~ msgstr "Emër Figure"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Knowing alphabets"
-#~ msgstr "Njohje alfabetesh"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Arrows: navigate inside selected area"
-#~ msgstr "Tastet shigjetë: lëvizni brenda një zone të përzgjedhur"
-
-#~ msgctxt "ProgrammingMaze|"
-#~ msgid ""
-#~ "Click on Tux or press the Enter key to reset it or click on the RELOAD "
-#~ "button to reload the level."
-#~ msgstr ""
-#~ "Klikoni mbi Tux-in ose shtypni tastin Enter, që ta ktheni në fillim, ose "
-#~ "klikoni mbi butonin Ringarkoje, që niveli të rifillohet."
-
-#~ msgctxt "Data|"
-#~ msgid "He wants to give 7 more pieces of candy to his friends."
-#~ msgstr "Ai dëshiron t’u japë 7 copa të tjera kallamsheqer shokëve të tij."
-
-#~ msgctxt "Data|"
-#~ msgid ""
-#~ "George wants to equally share 3 pieces of candy between 3 of his girl "
-#~ "friends. Can he equally split the pieces of candy? First, place the "
-#~ "children in the center, then drag the pieces of candy to each of them."
-#~ msgstr ""
-#~ "Gimi dëshiron të ndajë në mënyrë të barabartë 3 copa kallamsheqeri mes 3 "
-#~ "nga shoqet e tij. I ndan dot në mënyrë të barabartë ai copat e "
-#~ "kallamsheqerit? Së pari, vendosni fëmijët në qendër, mandej tërhiqni "
-#~ "copat e kallamsheqerit te secili prej tyre."
-
-#~ msgctxt "Data|"
-#~ msgid ""
-#~ "Maria wants to equally share 6 pieces of candy between 3 of her friends: "
-#~ "1 girl and 2 boys. Can she equally split the pieces of candy? First, "
-#~ "place the children in the center, then drag the pieces of candy to each "
-#~ "of them."
-#~ msgstr ""
-#~ "Moza dëshiron të ndajë në mënyrë të barabartë 6 copa kallamsheqeri mes 3 "
-#~ "nga shokët e saj: 1 vajzë dhe 2 djem. I ndan dot në mënyrë të barabartë "
-#~ "ajo copat e kallamsheqerit? Së pari, vendosni fëmijët në qendër, mandej "
-#~ "tërhiqni copat e kallamsheqerit te secili prej tyre."
-
-#~ msgctxt "Data|"
-#~ msgid ""
-#~ "Paul wants to equally share 12 pieces of candy between 3 of his friends: "
-#~ "2 boys and 1 girl. Can he equally split the pieces of candy? First, place "
-#~ "the children in the center, then drag the pieces of candy to each of them."
-#~ msgstr ""
-#~ "Pali dëshiron të ndajë në mënyrë të barabartë 12 copa kallamsheqeri mes 3 "
-#~ "nga shokët e tij: 2 djem dhe një vajzë. I ndan dot në mënyrë të barabartë "
-#~ "ai copat e kallamsheqerit? Së pari, vendosni fëmijët në qendër, mandej "
-#~ "tërhiqni copat e kallamsheqerit te secili prej tyre."
-
-#~ msgctxt "Data|"
-#~ msgid ""
-#~ "Alice wants to equally share 4 pieces of candy between 4 of her girl "
-#~ "friends. Can you help her? First, place the children in the center, then "
-#~ "drag the pieces of candy to each of them."
-#~ msgstr ""
-#~ "Lulja dëshiron të ndajë në mënyrë të barabartë 4 copa kallamsheqeri mes 4 "
-#~ "nga shoqet e saj. E ndihmoni dot? Së pari, vendosni fëmijët në qendër, "
-#~ "mandej tërhiqni copat e kallamsheqerit te secili prej tyre."
-
-#~ msgctxt "Data|"
-#~ msgid ""
-#~ "Can you help Alice give 10 pieces of candy to her friends, 1 girl and 3 "
-#~ "boys?"
-#~ msgstr ""
-#~ "E ndihmoni dot Lulen t’u japë 10 copa kallamsheqeri shokëve të saj, 1 "
-#~ "vajzë dhe 3 djem?"
-
-#~ msgctxt "Data|"
-#~ msgid ""
-#~ "Michael wants to equally share 5 pieces of candy between 5 of his girl "
-#~ "friends. Can you help him? First, place the children in the center, then "
-#~ "drag the pieces of candy to each of them."
-#~ msgstr ""
-#~ "Miri dëshiron të ndajë në mënyrë të barabartë 5 copa kallamsheqeri mes 5 "
-#~ "nga shoqet e tij. E ndihmoni dot? Së pari, vendosni fëmijët në qendër, "
-#~ "mandej tërhiqni copat e kallamsheqerit te secili prej tyre."
-
-#~ msgctxt "Data|"
-#~ msgid ""
-#~ "Paul wants to equally share 20 pieces of candy between 5 of his friends: "
-#~ "2 girls and 3 boys. Can you help him? First, place the children in the "
-#~ "center, then drag the pieces of candy to each of them."
-#~ msgstr ""
-#~ "Pali dëshiron të ndajë në mënyrë të barabartë 20 copa kallamsheqeri mes 5 "
-#~ "nga shokët e tij: 2 vajza dhe 3 djem. E ndihmoni dot? Së pari, vendosni "
-#~ "fëmijët në qendër, mandej tërhiqni copat e kallamsheqerit te secili prej "
-#~ "tyre."
-
-#~ msgctxt "Data|"
-#~ msgid ""
-#~ "For her birthday, Elizabeth has 8 pieces of candy to share with 3 of her "
-#~ "friends: 2 girls and 1 boy. How should she split the pieces of candy?"
-#~ msgstr ""
-#~ "Për ditëlindjen e saj, Bona ka 8 copa kallamsheqeri për të ndarë me 3 nga "
-#~ "shokët e saj: 2 vajza dhe 1 djalë. Si duhet t’i ndajë copat e "
-#~ "kallamsheqerit mes tyre?"
-
-#~ msgctxt "Data|"
-#~ msgid "He wants to give 8 more pieces of candy to his friends."
-#~ msgstr "Ai dëshiron të ndajë 8 copa të tjera kallamsheqeri shokëve të tij."
-
-#~ msgctxt "Data|"
-#~ msgid "Can you now give 8 of Harry's pieces of candy to his friends?"
-#~ msgstr ""
-#~ "A mund t’u jepni tani shokëve të Torit 8 nga copat e kallamsheqerit të "
-#~ "tij?"
-
-#~ msgctxt "Data|"
-#~ msgid ""
-#~ "Harry is left with 12 pieces of candy, can you share them between his "
-#~ "friends?"
-#~ msgstr ""
-#~ "Torit i kanë mbetur 12 copa kallamsheqeri, a mund t’ua ndani shokëve të "
-#~ "tij?"
-
-#~ msgctxt "Data|"
-#~ msgid ""
-#~ "George wants to equally share 14 pieces of candy between 4 of his "
-#~ "friends: 2 girls and 2 boys. Can he equally split the pieces of candy "
-#~ "between his friends? First, place the children in center, then drag the "
-#~ "pieces of candy to each of them. Be careful."
-#~ msgstr ""
-#~ "Gimi dëshiron të ndajë në mënyrë të barabartë 14 copa kallamsheqeri mes 4 "
-#~ "nga shokët e tij: 2 vajza dhe 2 djem. I ndan dot në mënyrë të barabartë "
-#~ "ai copat e kallamsheqerit? Së pari, vendosni fëmijët në qendër, mandej "
-#~ "tërhiqni copat e kallamsheqerit te secili prej tyre. Bëni kujdes."
-
-#~ msgctxt "Data|"
-#~ msgid ""
-#~ "Maria wants to equally share 23 pieces of candy between 5 of her friends: "
-#~ "3 girls and 2 boys. Can she equally split the pieces of candy between her "
-#~ "friends? First, place the children in center, then drag the pieces of "
-#~ "candy to each of them. Be careful, a rest will remain."
-#~ msgstr ""
-#~ "Moza dëshiron të ndajë në mënyrë të barabartë 23 copa kallamsheqeri mes 5 "
-#~ "nga shokët e saj: 3 vajza dhe 2 djem. I ndan dot në mënyrë të barabartë "
-#~ "ajo copat e kallamsheqerit? Së pari, vendosni fëmijët në qendër, mandej "
-#~ "tërhiqni copat e kallamsheqerit te secili prej tyre. Bëni kujdes, do të "
-#~ "ketë mbetje."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Counting skills"
-#~ msgstr "Aftësi numërimi"
-
-#~ msgctxt "Dataset|"
-#~ msgid "433 days"
-#~ msgstr "433 ditë"
-
-#~ msgctxt "Dataset|"
-#~ msgid "88 days"
-#~ msgstr "88 ditë"
-
-#~ msgctxt "Dataset|"
-#~ msgid "107 days"
-#~ msgstr "107 ditë"
-
-#~ msgctxt "Dataset|"
-#~ msgid "225 days"
-#~ msgstr "225 ditë"
-
-#~ msgctxt "Dataset|"
-#~ msgid "116 days"
-#~ msgstr "116 ditë"
-
-#~ msgctxt "Dataset|"
-#~ msgid "100 days"
-#~ msgstr "100 ditë"
-
-#~ msgctxt "Dataset|"
-#~ msgid "687 days"
-#~ msgstr "687 ditë"
-
-#~ msgctxt "Dataset|"
-#~ msgid "1 year"
-#~ msgstr "1 vit"
-
-#~ msgctxt "Dataset|"
-#~ msgid "24 years"
-#~ msgstr "24 vjet"
-
-#~ msgctxt "Dataset|"
-#~ msgid "68 years"
-#~ msgstr "68 vjet"
-
-#~ msgctxt "Dataset|"
-#~ msgid "84 years"
-#~ msgstr "84 vjet"
-
-#~ msgctxt "Dataset|"
-#~ msgid "165 years"
-#~ msgstr "165 vjet"
-
-#~ msgctxt "Dataset|"
-#~ msgid "3 years"
-#~ msgstr "3 vjet"
-
-#~ msgctxt "Dataset|"
-#~ msgid "100 years"
-#~ msgstr "100 vjet"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "1. To navigate through the instructions in the selected area:"
-#~ msgstr "1. Që të lëvizni përmes udhëzimeve te fusha e përzgjedhur:"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Use the ARROW keys"
-#~ msgstr "Përdorni tastet SHIGJETË"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Select an instruction from the instruction area by pressing SPACE."
-#~ msgstr ""
-#~ "Përzgjidhni një udhëzim prej fushës së udhëzimeve duke shtypur tastin "
-#~ "SPACE."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Navigate to the code area by pressing TAB, then press SPACE to append the "
-#~ "instruction."
-#~ msgstr ""
-#~ "Kaloni te fusha e kodit duke shtypur tastin TAB, mandej shtypni tastin "
-#~ "SPACE që të hidhet udhëzimi."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "3. To add an instruction at any particular position in the main/procedure "
-#~ "code area:"
-#~ msgstr ""
-#~ "3. Për të shtuar një udhëzim në çfarëdo pozicioni te fusha e kodit "
-#~ "kryesor/të veprimit:"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Navigate to the instruction at this position and press SPACE to add the "
-#~ "selected instruction from the instruction area."
-#~ msgstr ""
-#~ "Kaloni te udhëzimi në këtë pozicion dhe shtypni tastin HAPËSIRË që të "
-#~ "shtoni udhëzimin e përzgjedhur te fusha e udhëzimeve."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Press DELETE."
-#~ msgstr "Shtypni tastin DELETE."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Navigate to the instruction to edit using the ARROW keys."
-#~ msgstr "Kaloni te udhëzimi për t’u përpunuar duke përdorur tastet SHIGJETË."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Press SPACE to select it."
-#~ msgstr "Që ta përzgjidhni, shtypni tastin SPACE."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Then navigate to the instruction area using TAB and select the new "
-#~ "instruction by pressing SPACE."
-#~ msgstr ""
-#~ "Mandej kaloni te fusha e udhëzimeve duke përdorur tastin TAB dhe "
-#~ "përzgjidhni udhëzimin e ri duke shtypur tastin HAPËSIRË."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Press ENTER or RETURN."
-#~ msgstr "Shtypni tastin ENTER ose RETURN."
-
-#~ msgctxt "Data|"
-#~ msgid "Balance up to 5."
-#~ msgstr "Baraspeshoni deri në 5."

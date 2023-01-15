@@ -1,8 +1,8 @@
-# Kheyyam Gojayev <xxmn77@gmail.com>, 2021, 2022.
+# Kheyyam Gojayev <xxmn77@gmail.com>, 2021, 2022, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2022-11-11 17:33+0400\n"
+"PO-Revision-Date: 2023-01-14 23:33+0400\n"
 "Last-Translator: Kheyyam <xxmn77@gmail.com>\n"
 "Language-Team: Azerbaijani <kde-i18n-doc@kde.org>\n"
 "Language: az\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Qt-Contexts: true\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 22.08.3\n"
+"X-Generator: Lokalize 22.12.1\n"
 
 #. Activity title
 #: activities/advanced_colors/ActivityInfo.qml:15
@@ -1180,6 +1180,8 @@ msgid ""
 "You can use the arrow buttons to manually select the difficulty level. Tux "
 "will play better when you increase the level."
 msgstr ""
+"Çətinlik səviyyəsini əl ilə seçmək üçün oxlardan istifadə edə bilərsiniz. "
+"Səviyyəni artırtığınızda Tuks daha yaxşı oynayacaq."
 
 #: activities/align4/ActivityInfo.qml:25
 #: activities/align4_2players/ActivityInfo.qml:24
@@ -4079,26 +4081,6 @@ msgstr "Şahmat oynayın (Tuks ilə)"
 
 #. Help manual Much of this string is shared across the three activities "chess", "chess_partyend", and "chess_2players".
 #: activities/chess/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "In this activity you discover the chess game by playing against the "
-#| "computer. It displays the possible target positions for any selected "
-#| "piece which helps the children understand how pieces moves. At first "
-#| "level the computer is fully random to give more chances to the children. "
-#| "As level increases, the computer plays better.\n"
-#| "\n"
-#| "You can achieve a mate sooner if you follow these simple rules:\n"
-#| "    Trying to drive your opponent's king in the corner.\n"
-#| "<b>Explanation</b>: this way your opponent's king would have only 3 "
-#| "directions to move instead of 8 from a better position.\n"
-#| "    'Making a trap'. Use your pawns as baits.\n"
-#| "<b>Explanation</b>: this way you can lure your opponent out of his "
-#| "'comfort zone'.\n"
-#| "    Be patient enough.\n"
-#| "<b>Explanation</b>: don't rush too quick, be patient. Let yourself think "
-#| "a little bit and try to predict your opponent's future moves, so that you "
-#| "can catch him or secure your pieces from his attacks."
 msgctxt "ActivityInfo|"
 msgid ""
 "In this activity you discover the chess game by playing against the "
@@ -4123,7 +4105,8 @@ msgstr ""
 "Bu çalışmada siz kompyuterə qarşı oynamaq qaydalarını öyrənəcəksiniz. "
 "Gedişlərin işıqlanması sayəsində hansı gedişin edildiyini biləcəksiniz. "
 "Kompyuter birinci səviyyədə gedişini təsadüfi olaraq seçir və oynamaq çox "
-"asandır. Səviyyə artdıqca kompyuter daha güclü oynamağa başlayır.\n"
+"asandır. Səviyyə artdıqca kompyuter daha güclü oynamağa başlayır. Siz 0x "
+"düymələrindən istifadə edərək çətinlik səviyyəsini əl ilə seçə bilərsiniz.\n"
 "\n"
 "Əgər bu o qədər də çətin olmayan qaydalara əməl etsəniz tez vaxtda mat edə "
 "bilərsiniz:\n"
@@ -5212,27 +5195,21 @@ msgstr "Davam edin"
 
 #. Activity title
 #: activities/comparator/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Compare numbers."
 msgctxt "ActivityInfo|"
 msgid "Compare numbers"
-msgstr "Sayları müqayisə edin."
+msgstr "Sayları müqayisə edin"
 
 #. Help title
 #: activities/comparator/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Compare the numbers and choose the corresponding sign."
-msgstr ""
+msgstr "Sayları müqayisə edin və uyğun işarəni seçin."
 
 #. Help goal
 #: activities/comparator/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn about prime numbers."
 msgctxt "ActivityInfo|"
 msgid "Learn how to compare number values."
-msgstr "Sadə ədədləri öyrənin."
+msgstr "Sayları necə müqayisə edəcəyinizi öyrənin."
 
 #. Help manual
 #: activities/comparator/ActivityInfo.qml:26
@@ -5242,6 +5219,9 @@ msgid ""
 "symbol for this pair. When each line contains a symbol, select the OK button "
 "to validate the answers."
 msgstr ""
+"Siyahıdan bir cüt say seçin. Sonra bu cüt üçün düzgün müqayisə simvolunu "
+"seçin. Hər iki sətirdə simvol olduqda cavabı təsdiq etmək üçün OLDU "
+"düyməsini seçin."
 
 #: activities/comparator/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
@@ -5249,112 +5229,84 @@ msgid ""
 "If some answers are incorrect, a cross icon will appear on the corresponding "
 "lines. Correct the errors, then select the OK button again."
 msgstr ""
+"Əgər hər hansı bir səhv cavab olarsa, müvafiq sətirdə \"X\" nişanı "
+"görünəcək. Səhvi düzəldin və sonra OLDU düyməsivi seçin."
 
 #: activities/comparator/ActivityInfo.qml:29
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Down arrow: select previous item"
 msgctxt "ActivityInfo|"
 msgid "Up and Down arrows: select a pair of numbers in the list"
-msgstr "Aşağı ox: əvvəlki elementi seçin"
+msgstr "Aşağı və Yuxarı oxlar ilə siyahıdan bir say cütü seçin"
 
 #: activities/comparator/ActivityInfo.qml:30
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Left and Right arrows: turn left and right"
 msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: select a symbol button"
-msgstr "Sol və Sağ oxlar: sola və sağa dönmək"
+msgstr "Sol və Sağ oxlar ilə bir simvol düyməsi seçin"
 
 #: activities/comparator/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
 msgid "Space: if a symbol button is selected, enter this symbol"
-msgstr ""
+msgstr "Boşluq ilə, əgər bir soimvol düyməsi seçilibsə bu simvolu daxil edilir"
 
 #: activities/comparator/ActivityInfo.qml:32
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Enter: validate your answer"
 msgctxt "ActivityInfo|"
 msgid "Return: validate the answers"
-msgstr "Daxiletmə: cavabınızı yoxlayın"
+msgstr "Enter düyməsi cavabları təsdiq edir"
 
 #: activities/comparator/ActivityInfo.qml:33
 msgctxt "ActivityInfo|"
 msgid "&lt;, &gt; or =: enter the corresponding symbol"
-msgstr ""
+msgstr "&lt;, &gt; və ya = düymələri müvafiq simvolu daxil edir"
 
 #: activities/comparator/resource/1/Data.qml:36
 #: activities/tens_complement_find/resource/3/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "Data|"
 msgid "Numbers from 1 to 9."
-msgstr "0-dan 9-a qədər saylar."
+msgstr "1-dən 9-a qədər saylar."
 
 #: activities/comparator/resource/10/Data.qml:14
 msgctxt "Data|"
 msgid "3 decimal places between 0 and 999.999."
-msgstr ""
+msgstr "0 ilə 999.999 arasında 3 onluqlu yerlər"
 
 #: activities/comparator/resource/2/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "Data|"
 msgid "Numbers from 1 to 19."
-msgstr "0-dan 9-a qədər saylar."
+msgstr "1-dən 9-a qədər saylar."
 
 #: activities/comparator/resource/3/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "Data|"
 msgid "Numbers from 1 to 100."
-msgstr "0-dan 9-a qədər saylar."
+msgstr "1-dən 100-ə qədər saylar."
 
 #: activities/comparator/resource/4/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "Data|"
 msgid "Numbers from 1 to 1000."
-msgstr "0-dan 9-a qədər saylar."
+msgstr "1-dən 1000-ə qədər saylar."
 
 #: activities/comparator/resource/5/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "Data|"
 msgid "Numbers from 1 to 1000000."
-msgstr "0-dan 9-a qədər saylar."
+msgstr "1-dən 1000000-a qədər saylar."
 
 #: activities/comparator/resource/6/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "Data|"
 msgid "Numbers from 1 to 1 billion."
-msgstr "0-dan 9-a qədər saylar."
+msgstr "1-dən 1 milyarda qədər saylar."
 
 #: activities/comparator/resource/7/Data.qml:14
 msgctxt "Data|"
 msgid "1 decimal place between 0 and 9.9, same integer part."
-msgstr ""
+msgstr "1 ilə 9.9 arasında 1 onluq yer, eyni tam hissə."
 
 #: activities/comparator/resource/8/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "1 decimal place between 0 and 9.9."
-msgstr "%1 və %2 arasındakı rəqəmlər."
+msgstr "1 ilə 9.9 arasındakı 1 onlu yer."
 
 #: activities/comparator/resource/9/Data.qml:14
 msgctxt "Data|"
 msgid "2 decimal places between 0 and 99.99."
-msgstr ""
+msgstr "0 ilə 99.99 arasındakı 2 onluq yer."
 
 #. Activity title
 #: activities/crane/ActivityInfo.qml:20
@@ -6720,14 +6672,14 @@ msgid ""
 "escape predators, and possess an excellent sense of balance. They have "
 "single-toed hooves."
 msgstr ""
+"Atlar kişnəyir. Atlar qaçmağa uyğunlaşmışlar ki, bu da onların vəhşi "
+"heyvanlardan qurtulmasına imkan verir və onların çox güclü tarazlığı saxlama "
+"hissi var. Onlar təkdırnaqlıdırlar."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:25
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal's ancestors were wolves."
 msgctxt "board1|"
 msgid "This animal has single-toed hooves."
-msgstr "Bu heyvanın əcdadları canavarlar olub."
+msgstr "Bu heyvanın tək dırnağı var."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:33
 msgctxt "board1|"
@@ -6740,14 +6692,13 @@ msgid ""
 "The chicken goes 'cluck'. Domestic chickens have wings, but are not capable "
 "of long-distance flight. They have a comb on their head."
 msgstr ""
+"Toyuqlar qaqqıldayır. Ev toyuqlarının qanadları var, lakin onlar uzaq "
+"məsafəyə uçmaq qabiliyyətinə malik deyillər. Onların başında pipikləri var."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:37
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal likes to come out at night."
 msgctxt "board1|"
 msgid "This animal has a comb on its head."
-msgstr "Bu heyvan gecələri çölə çıxmağı xoşlayır."
+msgstr "Bu heyvanın başında pipik var."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:45
 msgctxt "board1|"
@@ -6761,11 +6712,14 @@ msgid ""
 "developed sense of taste, with around 20,000 taste buds. They can detect "
 "odours 8km away."
 msgstr ""
+"İnəklər movuldayırlar. İnəklər 330° geniş görmə sahəsinə sahibdirlər. Onlar "
+"20.000-ə qədər dadbilmə reseptorları ilə inkişaf etmiş dadbilmə "
+"qabiliyyətinə malikdirlər. Onlar 8 km uzaqdan iyi aşkar edə bilirlər."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:49
 msgctxt "board1|"
 msgid "This animal has around 20,000 taste buds."
-msgstr ""
+msgstr "Bu heyvanın 20.000-ə qədər dadbilmə reseptorları var."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:57
 msgctxt "board1|"
@@ -6779,14 +6733,14 @@ msgid ""
 "ability to chase mice and other rodents. They purr to communicate various "
 "emotions."
 msgstr ""
+"Pişik miyavuldayır. Pişiklər insanlar tərəfindən onlar siçanları və başqa "
+"gəmiriciləri ovladığı üçün əhilləşdirmişlər. Onlarmüxtəlif emosiyaları "
+"ötürmək üçün mırıldanırlar."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:61
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal lays eggs."
 msgctxt "board1|"
 msgid "This animal can purr."
-msgstr "Bu heyvan yumurta qoyur."
+msgstr "Bu heyvan mırıldaya bilər."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:69
 msgctxt "board1|"
@@ -6799,11 +6753,14 @@ msgid ""
 "The pig goes 'oink'. Pigs wallow in the mud, mainly to control their body "
 "temperature."
 msgstr ""
+"Donuzlar xortuldayır. Donuzlar palçıqda yuvarlanır və bununla öz bədən "
+"tempereturlarını idarə edirlər."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:73
 msgctxt "board1|"
 msgid "This animal wallows in the mud to control its body temperature."
 msgstr ""
+"Bu heyvan palçıqda yuvarlanmaqla öz bədən temperaturlarını idarə edirlər."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:81
 msgctxt "board1|"
@@ -6816,14 +6773,14 @@ msgid ""
 "The duck goes 'quack'. Ducks are mostly aquatic birds. They have waterproof "
 "feathers and webbed feet which enable them to swim on the water."
 msgstr ""
+"Ördəklər qaqqıldayır. Ördəklər daha çox vaxtlarını suda keçirməyi "
+"xoşlayırlar. Su keçirməyən lələkləri və üzgəcli ayaqları onların suda "
+"asanlıqla üzməsinə imkan verir."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:85
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal has webbed feet so it can swim in the water."
 msgctxt "board1|"
 msgid "This animal has webbed feet and can swim on the water."
-msgstr "Bu heyvanın barmaqları arasında pərdə var və suda üzə bilirlər."
+msgstr "Bu heyvanın üzgəcli ayaqları var və suda üzə bilirlər."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:93
 msgctxt "board1|"
@@ -6831,25 +6788,18 @@ msgid "Owl"
 msgstr "Bayquş"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:94
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid ""
-#| "The owl goes 'hoo. hoo.' The owl has excellent vision and hearing at "
-#| "night."
 msgctxt "board1|"
 msgid ""
 "The owl goes 'hoot'. Owls are nocturnal birds, they have excellent vision "
 "and hearing at night."
 msgstr ""
-"Bayquş \"huu huu!\" deyə səs çıxarır. Bayquş gecə çox yaxşı görür və eşidir."
+"Bayquş \"huu huu!\" deyə səs çıxarır. Bayquşlar gecə həyat tərzi keçirən "
+"heyvanlardaır. Onlar güclü eşitmə və gecə görmə qabiliyyətinə malikdirlər."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:97
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal likes to come out at night."
 msgctxt "board1|"
 msgid "This animal is a nocturnal bird."
-msgstr "Bu heyvan gecələri çölə çıxmağı xoşlayır."
+msgstr "Bu heyvan gecə quşudur."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:105
 msgctxt "board1|"
@@ -6862,14 +6812,13 @@ msgid ""
 "The dog goes 'woof'. Dogs are probably the oldest domesticated species. They "
 "are descendants of the wolf."
 msgstr ""
+"İtlər hamıldayır. İtlər ən qədim ev heyvanı hesab olunur. Onların əcdadı "
+"canavarlardır."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:109
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal is a close relative to the goat."
 msgctxt "board1|"
 msgid "This animal is a descendant of the wolf."
-msgstr "Bu heyvan keçilərin yaxın qohumları sayılır."
+msgstr "Bu heyvanın əcdadı canavardır."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:117
 msgctxt "board1|"
@@ -6882,14 +6831,13 @@ msgid ""
 "The sheep goes 'baa'. Most sheep breeds bear a fleece of wool. The fleece "
 "can be sheared and used to produce textile fibre."
 msgstr ""
+"Qoyunlar mələyir. Əksər qoyunlar yun örtüyünə malikdir. Yunu qırxmaq və onu "
+"sap və ya iplik hazırlanmasında istifadə etmək olar."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:121
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal's ancestors were wolves."
 msgctxt "board1|"
 msgid "This animal produces wool."
-msgstr "Bu heyvanın əcdadları canavarlar olub."
+msgstr "Bu heyvandan biz yun qırxırıq."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:131
 msgctxt "board1|"
@@ -9193,122 +9141,80 @@ msgid "Select one pie and three-quarters of a pie."
 msgstr "Bir piroq və piroqun dörddə üç hissəsini seç."
 
 #: activities/fractions_create/resource/10/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Specific questions with a pie."
 msgctxt "Data|"
 msgid "Specific questions with a square."
-msgstr "Piroq ilə verilmiş suallar."
+msgstr "Kvadrat ilə xüsusi suallar."
 
 #: activities/fractions_create/resource/10/Data.qml:18
 #: activities/fractions_create/resource/10/Data.qml:24
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid ""
-#| "Select as many parts as you can without taking more than half of the pie."
 msgctxt "Data|"
 msgid ""
 "Select as many parts as you can without taking more than half of the square."
-msgstr ""
-"Piroqun yarısından çox olmamaq şərti ilə onun mümkün qədər çox hissələrini "
-"seç"
+msgstr "Kvadratın yarısından çox olmamaqla bacardığın qədər çox hissə seç."
 
 #: activities/fractions_create/resource/2/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Simplified fractions with a pie."
 msgctxt "Data|"
 msgid "Simplified fractions with a square."
-msgstr "Piroq ilə sadələşdirilmiş kəsrlər"
+msgstr "Kvadrat ilə sadələşdirilmiş kəsirlər."
 
 #: activities/fractions_create/resource/2/Data.qml:18
 #: activities/fractions_create/resource/4/Data.qml:17
 #: activities/fractions_create/resource/4/Data.qml:23
 #: activities/fractions_create/resource/4/Data.qml:29
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select one half of the pie."
 msgctxt "Data|"
 msgid "Select one half of the square."
-msgstr "Piroqun bir hissəsiniu seç."
+msgstr "Kvadratın bir yarısını seç."
 
 #: activities/fractions_create/resource/2/Data.qml:24
 #: activities/fractions_create/resource/4/Data.qml:35
 #: activities/fractions_create/resource/4/Data.qml:49
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select one-third of the pie."
 msgctxt "Data|"
 msgid "Select one-third of the square."
-msgstr "Piroqun üçdə bir hissəsini seç."
+msgstr "Kvadratın üçdə birini seç."
 
 #: activities/fractions_create/resource/2/Data.qml:30
 #: activities/fractions_create/resource/4/Data.qml:41
 #: activities/fractions_create/resource/4/Data.qml:55
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select two-thirds of the pie."
 msgctxt "Data|"
 msgid "Select two-thirds of the square."
-msgstr "Piroqun üçdə iki hissəsini seç."
+msgstr "Kvadratın üçdə ikisini seç."
 
 #: activities/fractions_create/resource/2/Data.qml:36
 #: activities/fractions_create/resource/4/Data.qml:61
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select one-quarter of the pie."
 msgctxt "Data|"
 msgid "Select one-quarter of the square."
-msgstr "Piroqun dörddə bir hissəsini seç."
+msgstr "Kvadratın dörddə birini seç."
 
 #: activities/fractions_create/resource/2/Data.qml:42
 #: activities/fractions_create/resource/4/Data.qml:67
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select two-fifths of the pie."
 msgctxt "Data|"
 msgid "Select two-fifths of the square."
-msgstr "Piroqun beşdə iki hissəsini seç."
+msgstr "Kvadratın beşdə ikisini seç."
 
 #: activities/fractions_create/resource/2/Data.qml:50
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select one pie and one-quarter of a pie."
 msgctxt "Data|"
 msgid "Select one square and one-quarter of a square."
-msgstr "Bir piroq və piroqun dörddə bir hissəsini seç."
+msgstr "Bir kvadrat və kvadratın dörddə birini seç."
 
 #: activities/fractions_create/resource/2/Data.qml:56
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select one pie and two-fifths of a pie."
 msgctxt "Data|"
 msgid "Select one square and two-fifths of a square."
-msgstr "Bir piroq və piroqun beşdə iki hissəsini seç."
+msgstr "Bir kvadrat və kvadratın beşdə ikisini seç."
 
 #: activities/fractions_create/resource/2/Data.qml:62
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select one pie and one-third of a pie."
 msgctxt "Data|"
 msgid "Select one square and one-third of a square."
-msgstr "Bir piroq və piroqun üçdə bir hissəsini seç."
+msgstr "Bir kvadrat və kvadratın üçdə ikisini seç."
 
 #: activities/fractions_create/resource/2/Data.qml:68
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select one pie and one half of a pie."
 msgctxt "Data|"
 msgid "Select one square and one half of a square."
-msgstr "Bir piroq və piroqun bir yarısını seç."
+msgstr "Bir kvadrat və kvadratın bir yarısını seç."
 
 #: activities/fractions_create/resource/2/Data.qml:74
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select one pie and three-quarters of a pie."
 msgctxt "Data|"
 msgid "Select one square and three-quarters of a square."
-msgstr "Bir piroq və piroqun dörddə üç hissəsini seç."
+msgstr "Bir kvadrat və kvadratın dörddə üçünü seç."
 
 #: activities/fractions_create/resource/3/Data.qml:9
 msgctxt "Data|"
@@ -9321,20 +9227,14 @@ msgid "Select three-fifths of the pie."
 msgstr "Piroqun beşdə dördünü seç."
 
 #: activities/fractions_create/resource/4/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Non-simplified fractions with a pie."
 msgctxt "Data|"
 msgid "Non-simplified fractions with a square."
-msgstr "Piroq ilə sadə olmayan kəsr."
+msgstr "Kvadrat ilə sadələşdirilməmiş kəsirlər."
 
 #: activities/fractions_create/resource/4/Data.qml:73
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select three-fifths of the pie."
 msgctxt "Data|"
 msgid "Select three-fifths of the square."
-msgstr "Piroqun beşdə dördünü seç."
+msgstr "Kvadratın beşdə üçünü seç."
 
 #: activities/fractions_create/resource/5/Data.qml:9
 msgctxt "Data|"
@@ -9388,85 +9288,55 @@ msgid "Select 1.75 pies."
 msgstr "Piroqun 1.75 hissəsini seç."
 
 #: activities/fractions_create/resource/6/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Decimal numbers with a pie."
 msgctxt "Data|"
 msgid "Decimal numbers with a square."
-msgstr "Piroq ilə onlu saylar."
+msgstr "Kvadrat ilə onlu saylar."
 
 #: activities/fractions_create/resource/6/Data.qml:18
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select 0.5 pie."
 msgctxt "Data|"
 msgid "Select 0.5 square."
-msgstr "Piroqun 0.5 hisəsini seç."
+msgstr "Kvadratın 0,5 hissəsini seç."
 
 #: activities/fractions_create/resource/6/Data.qml:24
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select 0.25 pie."
 msgctxt "Data|"
 msgid "Select 0.25 square."
-msgstr "Piroqun 0.25 hissəsini seç."
+msgstr "Kvadratın 0,25 hissəsini seç."
 
 #: activities/fractions_create/resource/6/Data.qml:30
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select 0.4 pie."
 msgctxt "Data|"
 msgid "Select 0.4 square."
-msgstr "Piroqun 0.4 hissəsini seç."
+msgstr "Kvadratın 0.4 hissəsini seç."
 
 #: activities/fractions_create/resource/6/Data.qml:36
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select 0.75 pie."
 msgctxt "Data|"
 msgid "Select 0.75 square."
-msgstr "Piroqun 0.75 hissəsini seç."
+msgstr "Kvadratın 0.75 hissəsini seç."
 
 #: activities/fractions_create/resource/6/Data.qml:42
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select 0.8 pie."
 msgctxt "Data|"
 msgid "Select 0.8 square."
-msgstr "Piroqun 0.8 hissəsini seç."
+msgstr "Kvadratın 0,8 hissəsini seç."
 
 #: activities/fractions_create/resource/6/Data.qml:50
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select 1.25 pies."
 msgctxt "Data|"
 msgid "Select 1.25 squares."
-msgstr "Piroqun 1.25 hissəsini seç."
+msgstr "Kvadratın 1.25 hissəsini seç."
 
 #: activities/fractions_create/resource/6/Data.qml:56
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select 1.4 pies."
 msgctxt "Data|"
 msgid "Select 1.4 squares."
-msgstr "Piroqun 1.4 hissəsini seç."
+msgstr "Kvadratın 1.4 hissəsini seç."
 
 #: activities/fractions_create/resource/6/Data.qml:62
 #: activities/fractions_create/resource/6/Data.qml:68
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select 1.5 pies."
 msgctxt "Data|"
 msgid "Select 1.5 squares."
-msgstr "Piroqun 1.5 hissəsini seç."
+msgstr "Kvadratın 1.5 hissəsini seç."
 
 #: activities/fractions_create/resource/6/Data.qml:74
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select 1.75 pies."
 msgctxt "Data|"
 msgid "Select 1.75 squares."
-msgstr "Piroqun 1.75 hissəsini seç."
+msgstr "Kvadratın 1.75 hissəsini seç."
 
 #: activities/fractions_create/resource/7/Data.qml:9
 msgctxt "Data|"
@@ -9488,12 +9358,9 @@ msgid "Select %1% of the pie."
 msgstr "Piroqun %1%-ni seç."
 
 #: activities/fractions_create/resource/8/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Percentages with a pie."
 msgctxt "Data|"
 msgid "Percentages with a square."
-msgstr "Faiz piroq ilə."
+msgstr "Kvadrat ilə faizlər."
 
 #. Select %1 percent of the square.
 #: activities/fractions_create/resource/8/Data.qml:19
@@ -9502,12 +9369,10 @@ msgstr "Faiz piroq ilə."
 #: activities/fractions_create/resource/8/Data.qml:42
 #: activities/fractions_create/resource/8/Data.qml:49
 #: activities/fractions_create/resource/8/Data.qml:56
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Select %1% of the pie."
+#, qt-format
 msgctxt "Data|"
 msgid "Select %1% of the square."
-msgstr "Piroqun %1%-ni seç."
+msgstr "Kvadratın %1%-ni seç."
 
 #: activities/fractions_create/resource/9/Data.qml:9
 msgctxt "Data|"
@@ -9533,33 +9398,27 @@ msgstr "Kəsri tap."
 #: activities/fractions_find/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Find the correct numerator and denominator of the represented fraction."
-msgstr "Təqdim olunan kəsrin düzgün payını və məxrəcini tap."
+msgstr "Təqdim olunan kəsrin düzgün surətini və məxrəcini tapın."
 
 #: activities/fractions_find/resource/1/Data.qml:19
 msgctxt "Data|"
 msgid "Find numerator (with a pie)."
-msgstr "Məxrəci tapın (piroq ilə)"
+msgstr "Kəsrin surətini tapın (piroq ilə)"
 
 #: activities/fractions_find/resource/2/Data.qml:19
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find numerator (with a pie)."
 msgctxt "Data|"
 msgid "Find numerator (with a square)."
-msgstr "Məxrəci tapın (piroq ilə)"
+msgstr "Kəsrin surətini tapın (kvadrat ilə)"
 
 #: activities/fractions_find/resource/3/Data.qml:9
 msgctxt "Data|"
 msgid "Find denominator (with a pie)."
-msgstr "Məxrəci tapın (piroqdan istifadə edərək)"
+msgstr "Məxrəci tapın (kvadrat ilə)"
 
 #: activities/fractions_find/resource/4/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find denominator (with a pie)."
 msgctxt "Data|"
 msgid "Find denominator (with a square)."
-msgstr "Məxrəci tapın (piroqdan istifadə edərək)"
+msgstr "Məxrəci tapın (kvadrat ilə)"
 
 #: activities/fractions_find/resource/5/Data.qml:9
 msgctxt "Data|"
@@ -9567,12 +9426,9 @@ msgid "Find numerator and denominator (with a pie)."
 msgstr "Kəsrin surətini və məxrəcini tapın (piroq ilə)"
 
 #: activities/fractions_find/resource/6/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find numerator and denominator (with a pie)."
 msgctxt "Data|"
 msgid "Find numerator and denominator (with a square)."
-msgstr "Kəsrin surətini və məxrəcini tapın (piroq ilə)"
+msgstr "Kəsrin surətini və məxrəcini tapın (kvadrat ilə)"
 
 #. Activity title
 #: activities/geo-country/ActivityInfo.qml:19
@@ -10808,12 +10664,9 @@ msgid "Suvalkija"
 msgstr "Suvalkija"
 
 #: activities/geo-country/resource/board/board18_0.qml:13
-#, fuzzy
-#| msgctxt "board18_0|"
-#| msgid "Autonomous communities of Spain"
 msgctxt "board18_0|"
 msgid "Autonomous communities or cities of Spain"
-msgstr "İspaniyanın muxtar icmaları"
+msgstr "İspaniyanın muxtar icmaları və ya şəhərləri"
 
 #. Autonomous communities of Spain: Andalusia
 #: activities/geo-country/resource/board/board18_0.qml:22
@@ -15617,12 +15470,9 @@ msgstr "Səsi açın"
 
 #. Activity title
 #: activities/learn_digits/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Count the items"
 msgctxt "ActivityInfo|"
 msgid "Count and color the circles"
-msgstr "Elementləri sayın"
+msgstr "Dairələri sayın və rəngləin"
 
 #. Help title
 #: activities/learn_digits/ActivityInfo.qml:17
@@ -24731,33 +24581,27 @@ msgstr "Ən çox xal: 500000."
 
 #. Activity title
 #: activities/tens_complement_find/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "instruments|"
-#| msgid "Find the trumpet"
 msgctxt "ActivityInfo|"
 msgid "Find ten's complement"
-msgstr "Borunu tapın"
+msgstr "Onluğun tamamlayıcısını tapın"
 
 #. Help title
 #: activities/tens_complement_find/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Find the ten's complement of each number."
-msgstr ""
+msgstr "Hər sayın onluğunun tamamlayıcısını tapın."
 
 #. Help goal
 #: activities/tens_complement_find/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Learn to find ten's complement."
-msgstr ""
+msgstr "Onluğun tamamlayıcısını tapmağı öyrənin."
 
 #. Help prerequisite
 #: activities/tens_complement_find/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "ActivityInfo|"
 msgid "Numbers from 1 to 10 and additions."
-msgstr "0-dan 9-a qədər saylar."
+msgstr "0-dan 10-a qədər və əlavə saylar."
 
 #: activities/tens_complement_find/ActivityInfo.qml:23
 #: activities/tens_complement_use/ActivityInfo.qml:24
@@ -24768,6 +24612,10 @@ msgid ""
 "corresponding lines. To correct the errors, click on the wrong numbers to "
 "remove them and repeat the previous steps."
 msgstr ""
+"Bütün sətirlər tamamlandıqdan sonra cavabları təsdiqləmək üçün OLDU "
+"düyməsinə vurun. Əgər hər hansı bir səhv olarsa müvafiq sətirdə \"X\" "
+"işarəsi görünəcək. Səhvləri düzəltmək üçün səhv rəqəmlərin üzərinə vuraraq "
+"onları silin və əvvəlki mərhələləri təkrar keçin."
 
 #. Help manual
 #: activities/tens_complement_find/ActivityInfo.qml:23
@@ -24776,42 +24624,35 @@ msgid ""
 "Create pairs of numbers equal to ten. Select a number in the list, then "
 "select an empty spot of an operation to move the selected number there."
 msgstr ""
+"On bərabər sayda cütlər yarat. Siyahıdan sayı seç, sonra seçdiyin sayı "
+"köçürəcəyin boş yeri seç."
 
 #: activities/tens_complement_find/resource/1/Data.qml:25
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "Data|"
 msgid "First number from 1 to 4."
-msgstr "0-dan 9-a qədər saylar."
+msgstr "1-dən 4-ə ilk say."
 
 #: activities/tens_complement_find/resource/2/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "Data|"
 msgid "First number from 5 to 9."
-msgstr "0-dan 9-a qədər saylar."
+msgstr "5-dən 9-a ilk say."
 
 #: activities/tens_complement_find/resource/4/Data.qml:9
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Division of numbers"
 msgctxt "Data|"
 msgid "Find both numbers."
-msgstr "Sayların bölünməsi"
+msgstr "Hər iki sayları tap."
 
 #. Activity title
 #: activities/tens_complement_swap/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Swap ten's complement"
-msgstr ""
+msgstr "Ona qədər tamamlanmanın yerlərini dəyiş"
 
 #. Help title
 #: activities/tens_complement_swap/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Swap the numbers to create pairs equal to ten."
-msgstr ""
+msgstr "Ona bərabər cütlər yaratmaq üçün sayların yerini dəyiş."
 
 #. Help goal
 #: activities/tens_complement_swap/ActivityInfo.qml:19
@@ -24820,15 +24661,14 @@ msgid ""
 "Learn to use ten's complement to optimize the order of numbers in an "
 "operation."
 msgstr ""
+"Əməliyyatdakı sayların sırasını uyğunlaşdrmaq üçün ona qədər tamamlamadan "
+"istifadə etməyi öyrən."
 
 #. Help prerequisite
 #: activities/tens_complement_swap/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "ActivityInfo|"
 msgid "Numbers from 1 to 30 and additions."
-msgstr "0-dan 9-a qədər saylar."
+msgstr "1-dən 30-a qədər və əlavə saylar."
 
 #. Help manual
 #: activities/tens_complement_swap/ActivityInfo.qml:23
@@ -24840,57 +24680,50 @@ msgid ""
 "the answers. If some answers are incorrect, a cross icon will appear on the "
 "corresponding lines. Correct the errors, then press the OK button again."
 msgstr ""
+"Hər mötərizə daxilində ona bərabər say cütləri yarat. Bir say seç və onların "
+"yerini dəyişmək üçün eyni əməliyyatın başqa bir sayını seç. Bütün sətirlər "
+"tamamlandıqdan sonra cavabları təsdiq etmək üçün OLDU düyməsinə vur. Əgər "
+"hər hansı bir səhv olarsa müvafiq sətirdə \"X\" işarəsi görünəcək. Səhvi "
+"düzəlt və sonra OLDU süyməsinə vur."
 
 #: activities/tens_complement_swap/resource/1/Data.qml:36
-#, fuzzy
-#| msgctxt "Warning|"
-#| msgid "1 is not a prime number."
 msgctxt "Data|"
 msgid "2 pairs to make from 4 numbers."
-msgstr "1 sadə ədəd deyil."
+msgstr "4 saydan 2 cüt yarat"
 
 #: activities/tens_complement_swap/resource/2/Data.qml:9
-#, fuzzy
-#| msgctxt "Warning|"
-#| msgid "1 is not a prime number."
 msgctxt "Data|"
 msgid "2 pairs to make from 5 numbers."
-msgstr "1 sadə ədəd deyil."
+msgstr "5 saydan 2 cüt yarat."
 
 #: activities/tens_complement_swap/resource/3/Data.qml:9
-#, fuzzy
-#| msgctxt "Warning|"
-#| msgid "1 is not a prime number."
 msgctxt "Data|"
 msgid "3 pairs to make from 6 numbers."
-msgstr "1 sadə ədəd deyil."
+msgstr "6 saydan 3 cüt yarat."
 
 #. Activity title
 #: activities/tens_complement_use/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Use ten's complement"
-msgstr ""
+msgstr "Ona qədər tamamlamanı istifadə et"
 
 #. Help title
 #: activities/tens_complement_use/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Use a ten's complement to simplify the operation."
-msgstr ""
+msgstr "Əməliyyatı sadələşdirmək üçün ona qədər tamamlamadan istifadə et."
 
 #. Help goal
 #: activities/tens_complement_use/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Learn a practical use of ten's complement."
-msgstr ""
+msgstr "Ona qədər tamamlamanın praktiki istifdəsini öyrən."
 
 #. Help prerequisite
 #: activities/tens_complement_use/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "ActivityInfo|"
 msgid "Numbers from 1 to 50 and additions."
-msgstr "0-dan 9-a qədər saylar."
+msgstr "1-dən 50-yə qədər və əlavə saylar."
 
 #. Help manual
 #: activities/tens_complement_use/ActivityInfo.qml:23
@@ -24900,30 +24733,24 @@ msgid ""
 "parentheses. Select a number in the list, then select an empty spot of an "
 "operation to move the selected number there."
 msgstr ""
+"Hər mötərizə daxilindəki ona bərabər sayların cütlərini yaratmaq üçün əlavə "
+"sayları böl. Siyahıdan bir say seç və seçilmiş saylar köçürüləcək "
+"əməliyyatın boş yerini seç."
 
 #: activities/tens_complement_use/resource/1/Data.qml:43
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Between 1 and 10."
 msgctxt "Data|"
 msgid "Result between 11 and 19."
-msgstr "1 ilə 10 arasında."
+msgstr "11 ilə 19 arasındakı nəticə."
 
 #: activities/tens_complement_use/resource/2/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Result between 20 and 29."
-msgstr "%1 və %2 arasındakı rəqəmlər."
+msgstr "20 ilə 29 arasındakı nəticə."
 
 #: activities/tens_complement_use/resource/3/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Between 20 and 50."
 msgctxt "Data|"
 msgid "Result between 30 and 50."
-msgstr "20 ilə 50 arasında."
+msgstr "30 ilə 50 arasındakı nəticə."
 
 #. Activity title
 #: activities/tic_tac_toe/ActivityInfo.qml:18
@@ -25051,18 +24878,13 @@ msgid "As the sun rises, the water of the sea starts heating and evaporates."
 msgstr "Günəş yüksəldikcə dənizin suyu isinməyə və buxarlaşmağa başlayır."
 
 #: activities/watercycle/Watercycle.qml:80
-#, fuzzy
-#| msgctxt "Watercycle|"
-#| msgid ""
-#| "Water vapor condenses to form cloud and when clouds become heavy, it "
-#| "rains. Click on the cloud."
 msgctxt "Watercycle|"
 msgid ""
 "Water vapor condenses to form clouds and when clouds become heavy, it rains. "
 "Click on the cloud."
 msgstr ""
-"Su buxarları sıxlaşdıqda buludlar yaradır və onlar ağırlaşdığında yağış "
-"yağır. Buludun üzərinə vurun."
+"Su buxarları bulud yaratmaq üçün sıxlaşır və bulud ağırlaşdıqda yağış yağır. "
+"Buludun üzərinə vur."
 
 #: activities/watercycle/Watercycle.qml:81
 msgctxt "Watercycle|"
@@ -25107,12 +24929,6 @@ msgstr ""
 "okeanlar kimi su hövzələrindən susyun buxarlanması üçün enerji qaynağıdır."
 
 #: activities/watercycle/Watercycle.qml:115
-#, fuzzy
-#| msgctxt "Watercycle|"
-#| msgid ""
-#| "Plants also lose water to the air through transpiration. The water vapor "
-#| "cools down forming tiny droplets in clouds. When the clouds meet cool air "
-#| "over the land, precipitation is triggered and fall down as rain."
 msgctxt "Watercycle|"
 msgid ""
 "Plants also lose water to the air through transpiration. The water vapor "
@@ -25180,17 +24996,14 @@ msgid "Type the complete word as it falls, before it reaches the ground."
 msgstr "Yerə çatana qədər sözü tam şəkildə yazmağa çalışın."
 
 #: core/ChangeLog.qml:30
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "New maps and update of the maps for geography activities"
 msgctxt "ChangeLog|"
 msgid "Map of Spain added for geography activity"
-msgstr "Coğrafiya çalışmaları üçün yeni və yenilənmiş xəritələr"
+msgstr "Coğrafiya çalışmaları üçün İspaniya xəritəsi əlavə olundu"
 
 #: core/ChangeLog.qml:31
 msgctxt "ChangeLog|"
 msgid "Voices added for Ukrainian"
-msgstr ""
+msgstr "Ukrayna dili üçün səslər əlavə olundu"
 
 #: core/ChangeLog.qml:32
 msgctxt "ChangeLog|"
@@ -25198,6 +25011,8 @@ msgid ""
 "New command-line option to list all the activities and start on a specific "
 "one"
 msgstr ""
+"Bütün çalışmaların siyahısını göstərmək verilmiş bir əmri başlatmaq üçün "
+"yeni əmr sətri parametri"
 
 #: core/ChangeLog.qml:33 core/ChangeLog.qml:68 core/ChangeLog.qml:71
 #: core/ChangeLog.qml:77
@@ -25368,7 +25183,7 @@ msgctxt "ChangeLog|"
 msgid "Add Russian dataset for Click on letter activity."
 msgstr ""
 "\"Hərflərə vurmaq\" çalışmasının rus dilinə tərcüməsi üçün yeni məlumatlar "
-"dəsti əlaə olundu."
+"dəsti əlavə olundu."
 
 #: core/ChangeLog.qml:93
 msgctxt "ChangeLog|"
