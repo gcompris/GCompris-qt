@@ -1,9 +1,9 @@
 #
-# Aiswarya Kaitheri Kandoth <aiswaryakk29@gmail.com>, 2018, 2019, 2020, 2021, 2022.
+# Aiswarya Kaitheri Kandoth <aiswaryakk29@gmail.com>, 2018, 2019, 2020, 2021, 2022, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2022-03-31 13:40+0200\n"
+"PO-Revision-Date: 2023-01-15 18:11+0100\n"
 "Last-Translator: Aiswarya Kaitheri Kandoth <aiswaryakk29@gmail.com>\n"
 "Language-Team: Malayalam <kde-i18n-doc@kde.org>\n"
 "Language: ml\n"
@@ -1166,17 +1166,12 @@ msgstr ""
 
 #. Help manual
 #: activities/align4/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Play with a friend. Take turns to click the line in which you want to "
-#| "drop a token. The first player to create a line of 4 tokens wins."
 msgctxt "ActivityInfo|"
 msgid ""
 "Play with Tux. Take turns to click the line in which you want to drop a "
 "token. The first player to create a line of 4 tokens wins."
 msgstr ""
-"സുഹൃത്തിന്റെ കൂടെ കളിക്കൂ. മാറി മാറി നിങ്ങൾക്കു വേണ്ട കളത്തിൽ ക്ലിക്ക് ചെയ്ത് മാർക്ക് ചെയ്യൂ. 4 "
+"ടക്സിന്റെ കൂടെ കളിക്കൂ. മാറി മാറി നിങ്ങൾക്കു വേണ്ട കളത്തിൽ ക്ലിക്ക് ചെയ്ത് മാർക്ക് ചെയ്യൂ. 4 "
 "മാർക്കുകളുടെ ഒരു വരി ആദ്യം നിർമ്മിക്കുന്ന ആൾ ജയിക്കും."
 
 #: activities/align4/ActivityInfo.qml:23 activities/bargame/ActivityInfo.qml:26
@@ -1187,6 +1182,8 @@ msgid ""
 "You can use the arrow buttons to manually select the difficulty level. Tux "
 "will play better when you increase the level."
 msgstr ""
+"കാഠിന്യത്തിന്റെ തോത് തിരഞ്ഞെടുക്കുന്നതിന് ആരോ ബട്ടൺ ഉപയോഗിക്കാവുന്നതാണ്. ഓരോ ഘട്ടം കഴിയും "
+"തോറും ടക്സ് കൂടുതൽ നന്നായി കളിക്കും."
 
 #: activities/align4/ActivityInfo.qml:25
 #: activities/align4_2players/ActivityInfo.qml:24
@@ -2599,12 +2596,6 @@ msgstr "എണ്ണാനുള്ള കഴിവ്."
 
 #. Help manual
 #: activities/bargame/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Click on the ball icon to select a number of balls, then click on the OK "
-#| "button to place the balls in the holes. You win if the computer has to "
-#| "place the last ball. If you want Tux to begin, just click on him."
 msgctxt "ActivityInfo|"
 msgid ""
 "Click on the ball icon to select a number of balls, then click on the OK "
@@ -2612,7 +2603,7 @@ msgid ""
 "ball. If you want Tux to begin, just click on him."
 msgstr ""
 "പന്തിന്റെ ഐക്കണിൽ ക്ലിക്കു ചെയ്ത് പന്തുകളുടെ എണ്ണം തിരഞ്ഞെടുക്കുക, എന്നിട്ട് ഒകെ ബട്ടണിൽ ക്ലിക്കു "
-"ചെയ്ത് പന്തുകൾ കുഴികളിൽ ഇടാവുന്നതാണ്. കംപ്യൂട്ടറാണ് അവസാനത്തെ പന്ത് ഇടുന്നതെങ്കിൽ നിങ്ങൾ ജയിച്ചു. "
+"ചെയ്ത് പന്തുകൾ കുഴികളിൽ ഇടാവുന്നതാണ്. ടക്സാണ് അവസാനത്തെ പന്ത് ഇടുന്നതെങ്കിൽ നിങ്ങൾ ജയിച്ചു. "
 "ടക്സിൽ ക്ലിക്ക് ചെയ്താൽ, ടക്സ് കളി തുടങ്ങും."
 
 #. Activity title
@@ -3899,12 +3890,9 @@ msgstr "പച്ചക്കറികളെ വലതും മറ്റുള�
 
 #. Activity title
 #: activities/checkers/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Play chess against Tux"
 msgctxt "ActivityInfo|"
 msgid "Play checkers (against Tux)"
-msgstr "ടക്സിനെതിരെ ചെസ്സ് കളിക്കാം"
+msgstr "ചെക്കേർസ് കളിക്കാം (ടക്സിനെതിരെ)"
 
 #. Help title
 #: activities/checkers/ActivityInfo.qml:17
@@ -3924,27 +3912,6 @@ msgstr "നിങ്ങളുടെ കരുക്കളെല്ലാം പ�
 
 #. Help manual
 #: activities/checkers/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Checkers is played by two opponents, on opposite sides of the gameboard. "
-#| "One player has the dark pieces; the other has the light pieces. Players "
-#| "alternate turns. A player may not move an opponent's piece. A move "
-#| "consists of moving a piece diagonally to an adjacent unoccupied square. "
-#| "If the adjacent square contains an opponent's piece, and the square "
-#| "immediately beyond it is vacant, the piece may be captured (and removed "
-#| "from the game) by jumping over it.\n"
-#| "Only the dark squares of the checkered board are used. A piece may move "
-#| "only diagonally into an unoccupied square. Capturing is mandatory. The "
-#| "player without pieces remaining, or who cannot move due to being blocked, "
-#| "loses the game.\n"
-#| "When a man reaches the crownhead or kings row (the farthest row forward), "
-#| "it becomes a king, and is marked by placing an additional piece on top of "
-#| "the first man, and acquires additional powers including the ability to "
-#| "move backwards. If there is a piece in a diagonal that a king can "
-#| "capture, he can move any distance along the diagonal, and may capture an "
-#| "opposing man any distance away by jumping to any of the unoccupied "
-#| "squares immediately beyond it.\n"
 msgctxt "ActivityInfo|"
 msgid ""
 "Checkers is played by two opponents, on opposite sides of the gameboard. One "
@@ -3977,7 +3944,7 @@ msgstr ""
 "ഒരാൾ രാജാക്കന്മാരുടെ നിരയിൽ എത്തിയാൽ (ഏറ്റവും അകലെയുള്ള നിര) അയാൾ രാജാവാകും. മാത്രമല്ല, "
 "അയാൾക്ക് ഒരു കരു  കൂടുതലായി കിട്ടുകയും പുറകിലേക്ക് നീങ്ങാനുള്ള കഴിവ് പോലെയുള്ള അധികാരങ്ങൾ "
 "കൂടുതലായി ലഭിക്കുകയും ചെയ്യും. കോണോടുകോണായി എത്ര ദൂരം വേണമെങ്കിലും രാജാവിനു നീങ്ങാം. കൂടാതെ "
-"എത്ര ദൂരെയുള്ള എതിരാളിയെയും തൊട്ടടുത്തുള്ള ഒഴിഞ്ഞ കളത്തിലേക്ക് ചാടി വിഴുങ്ങാനും കഴിയും.\n"
+"എത്ര ദൂരെയുള്ള എതിരാളിയെയും തൊട്ടടുത്തുള്ള ഒഴിഞ്ഞ കളത്തിലേക്ക് ചാടി വിഴുങ്ങാനും കഴിയും."
 
 #: activities/checkers/ActivityInfo.qml:29
 #: activities/checkers_2players/ActivityInfo.qml:28
@@ -4013,12 +3980,9 @@ msgstr "കറുപ്പ് ജയിച്ചു"
 
 #. Activity title
 #: activities/checkers_2players/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Play checkers with your friend"
 msgctxt "ActivityInfo|"
 msgid "Play checkers (with a friend)"
-msgstr "സുഹൃത്തിന്റെ കൂടെ ചെക്കേർസ് കളിക്കാം"
+msgstr "ചെക്കേർസ് കളിക്കാം (സുഹൃത്തിന്റെ കൂടെ)"
 
 #. Help manual
 #: activities/checkers_2players/ActivityInfo.qml:24
@@ -4058,35 +4022,12 @@ msgstr ""
 
 #. Activity title
 #: activities/chess/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Play chess against Tux"
 msgctxt "ActivityInfo|"
 msgid "Play chess (against Tux)"
-msgstr "ടക്സിനെതിരെ ചെസ്സ് കളിക്കാം"
+msgstr "ചെസ്സ് കളിക്കാം (ടക്സിനെതിരെ )"
 
 #. Help manual Much of this string is shared across the three activities "chess", "chess_partyend", and "chess_2players".
 #: activities/chess/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "In this activity you discover the chess game by playing against the "
-#| "computer. It displays the possible target positions for any selected "
-#| "piece which helps the children understand how pieces moves. At first "
-#| "level the computer is fully random to give more chances to the children. "
-#| "As level increases, the computer plays better.\n"
-#| "\n"
-#| "You can achieve a mate sooner if you follow these simple rules:\n"
-#| "    Trying to drive your opponent's king in the corner.\n"
-#| "<b>Explanation</b>: this way your opponent's king would have only 3 "
-#| "directions to move instead of 8 from a better position.\n"
-#| "    'Making a trap'. Use your pawns as baits.\n"
-#| "<b>Explanation</b>: this way you can lure your opponent out of his "
-#| "'comfort zone'.\n"
-#| "    Be patient enough.\n"
-#| "<b>Explanation</b>: don't rush too quick, be patient. Let yourself think "
-#| "a little bit and try to predict your opponent's future moves, so that you "
-#| "can catch him or secure your pieces from his attacks."
 msgctxt "ActivityInfo|"
 msgid ""
 "In this activity you discover the chess game by playing against the "
@@ -4111,7 +4052,8 @@ msgstr ""
 "ഈ പ്രവർത്തനത്തിൽ നിങ്ങൾക്ക് കംപ്യൂട്ടറിനെതിരെ കളിച്ച് ചെസ്സ് കളി പഠിക്കാം. ഒരു കരു "
 "തിരഞ്ഞെടുക്കുമ്പോൾ അതിനു നീങ്ങാൻ കഴിയുന്ന എല്ലാ ലക്ഷ്യസ്ഥാനങ്ങളും കുട്ടികൾക്ക് കരുക്കളുടെ നീക്കം "
 "മനസിലാക്കിക്കൊടുക്കാനായി ഇതിൽ കാണിക്കും. ആദ്യ ഘട്ടങ്ങളിൽ എല്ലാ സാധ്യതകളും കുട്ടികൾക്ക് "
-"കൊടുത്തുകൊണ്ടാണ് കംപ്യൂട്ടർ കളിക്കുക. ഓരോ ഘട്ടം കൂടുംതോറും കംപ്യൂട്ടർ കൂടുതൽ നന്നായി കളിക്കും.\n"
+"കൊടുത്തുകൊണ്ടാണ് കംപ്യൂട്ടർ കളിക്കുക. ഓരോ ഘട്ടം കൂടുംതോറും കംപ്യൂട്ടർ കൂടുതൽ നന്നായി കളിക്കും. ആരോ "
+"ബട്ടൺ ഉപയോഗിച്ചും നിങ്ങൾക്ക് കാഠിന്യത്തിന്റെ തോത് തിരഞ്ഞെടുക്കാവുന്നതാണ്.\n"
 "\n"
 "താഴെ കൊടുത്തിരിക്കുന്ന എളുപ്പമുള്ള നിയമങ്ങൾ അനുസരിച്ചാൽ നിങ്ങൾക്ക് പെട്ടെന്ന് ജയിക്കാം:\n"
 "  എതിരാളിയുടെ രാജാവിനെ ഒരു മൂലയിലേക്ക് ആക്കാൻ ശ്രമിക്കുക.\n"
@@ -4134,6 +4076,9 @@ msgid ""
 "will redo one move. To undo all the moves, press and hold the undo button "
 "for 3 seconds."
 msgstr ""
+"അൺഡു ബട്ടണിൽ ഒരു ക്ലിക്ക് ചെയ്താൽ ഒരു നീക്കം പഴയപടിയാകും. റീഡു ബട്ടണിൽ ഒരു ക്ലിക്ക് ചെയ്താൽ "
+"ഒരു നീക്കം വീണ്ടും ചെയ്യും. എല്ലാ നീക്കങ്ങളും പഴയപടിയാക്കാൻ, അൺഡു ബട്ടൺ 3 സെക്കന്റ് നേരം "
+"അമർത്തിപ്പിടിക്കുക."
 
 #: activities/chess/ActivityInfo.qml:33
 #: activities/chess_partyend/ActivityInfo.qml:33
@@ -4184,37 +4129,25 @@ msgstr "സാധ്യമല്ല, നിങ്ങളുടെ രാജാവ
 
 #. Translators: undo all the moves in chess activity
 #: activities/chess/Chess.qml:123
-#, fuzzy
-#| msgctxt "core|"
-#| msgid "Do you really want to quit GCompris?"
 msgctxt "Chess|"
 msgid "Do you really want to undo all the moves?"
-msgstr "ജികോംപ്രി നിർത്തണമെന്ന് ഉറപ്പാണോ?"
+msgstr "എല്ലാ നീക്കങ്ങളും പഴയപടിയാക്കണമെന്ന് ഉറപ്പാണോ?"
 
 #: activities/chess/Chess.qml:124
-#, fuzzy
-#| msgctxt "balanceboxeditor|"
-#| msgid "Yes"
 msgctxt "Chess|"
 msgid "Yes"
 msgstr "വേണം"
 
 #: activities/chess/Chess.qml:125
-#, fuzzy
-#| msgctxt "balanceboxeditor|"
-#| msgid "No"
 msgctxt "Chess|"
 msgid "No"
 msgstr "വേണ്ട"
 
 #. Activity title
 #: activities/chess_2players/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Play oware with a friend"
 msgctxt "ActivityInfo|"
 msgid "Play chess (with a friend)"
-msgstr "പല്ലാങ്കുഴി (സുഹൃത്തിന്റെ കൂടെ)"
+msgstr "ചെസ്സ് കളിക്കാം (സുഹൃത്തിന്റെ കൂടെ)"
 
 #. Help manual Much of this string is shared across the three activities "chess", "chess_partyend", and "chess_2players".
 #: activities/chess_2players/ActivityInfo.qml:25
@@ -5202,27 +5135,21 @@ msgstr "തുടരുക"
 
 #. Activity title
 #: activities/comparator/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Compare numbers."
 msgctxt "ActivityInfo|"
 msgid "Compare numbers"
-msgstr "സംഖ്യകൾ താരതമ്യം ചെയ്യൽ."
+msgstr "സംഖ്യകൾ താരതമ്യം ചെയ്യാം"
 
 #. Help title
 #: activities/comparator/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Compare the numbers and choose the corresponding sign."
-msgstr ""
+msgstr "സംഖ്യകൾ താരതമ്യം ചെയ്ത് അനുയോജ്യമായ ചിഹ്നം തിരഞ്ഞെടുക്കുക."
 
 #. Help goal
 #: activities/comparator/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn about prime numbers."
 msgctxt "ActivityInfo|"
 msgid "Learn how to compare number values."
-msgstr "അഭാജ്യ സംഖ്യകളെ കുറിച്ച് പഠിക്കാൻ."
+msgstr "സംഖ്യകളുടെ മൂല്യം താരതമ്യം ചെയ്യന്നതെങ്ങനെയെന്നു പഠിക്കാം."
 
 #. Help manual
 #: activities/comparator/ActivityInfo.qml:26
@@ -5232,6 +5159,9 @@ msgid ""
 "symbol for this pair. When each line contains a symbol, select the OK button "
 "to validate the answers."
 msgstr ""
+"പട്ടികയിൽ നിന്നും ഒരു ജോടി സംഖ്യകൾ തിരഞ്ഞെടുക്കുക. എന്നിട്ട് ആ ജോടിയ്ക്ക് അനുയോജ്യമായ ചിഹ്നം "
+"തിരഞ്ഞെടുക്കുക. എല്ലാ വരിയിലും ചിഹ്നമിട്ടതിനു ശേഷം ഒകെ ബട്ടണിൽ അമർത്തി ഉത്തരങ്ങൾ "
+"സാധൂകരിക്കുക."
 
 #: activities/comparator/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
@@ -5239,32 +5169,25 @@ msgid ""
 "If some answers are incorrect, a cross icon will appear on the corresponding "
 "lines. Correct the errors, then select the OK button again."
 msgstr ""
+"തെറ്റായ ഉത്തരങ്ങൾ ഉണ്ടെങ്കിൽ, ആ വരികളിൽ ഒരു തെറ്റിന്റെ ചിഹ്നം കാണും. തെറ്റുകൾ തിരുത്തി, "
+"വീണ്ടും ഒകെ ബട്ടണിൽ അമർത്തുക."
 
 #: activities/comparator/ActivityInfo.qml:29
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Down arrow: select previous item"
 msgctxt "ActivityInfo|"
 msgid "Up and Down arrows: select a pair of numbers in the list"
-msgstr "താഴേക്കുള്ള ആരോ: മുമ്പത്തെ ഇനം തിരഞ്ഞെടുക്കാൻ"
+msgstr "മുകളിലേക്കും താഴേക്കുമുള്ള ആരോകൾ: പട്ടികയിൽ നിന്നും ഒരു ജോടി സംഖ്യകൾ തിരഞ്ഞെടുക്കാൻ"
 
 #: activities/comparator/ActivityInfo.qml:30
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Left and Right arrows: turn left and right"
 msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: select a symbol button"
-msgstr "ഇടതും വലതും ആരോകൾ: ഇടത്തേക്കും വലത്തേക്കും തിരിയാൻ"
+msgstr "ഇടതും വലതും ആരോകൾ: ഒരു ചിഹ്നത്തിന്റെ ബട്ടൺ തിരഞ്ഞെടുക്കാൻ"
 
 #: activities/comparator/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
 msgid "Space: if a symbol button is selected, enter this symbol"
-msgstr ""
+msgstr "സ്പെയ്സ്: ഒരു ചിഹ്നം തിരഞ്ഞെടുത്തിട്ടുണ്ടെങ്കിൽ, അത് എന്ററു ചെയ്യാൻ"
 
 #: activities/comparator/ActivityInfo.qml:32
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Enter: validate your answer"
 msgctxt "ActivityInfo|"
 msgid "Return: validate the answers"
 msgstr "എന്റർ: ഉത്തരം സ്ഥിരീകരിക്കാൻ"
@@ -5272,79 +5195,58 @@ msgstr "എന്റർ: ഉത്തരം സ്ഥിരീകരിക്ക
 #: activities/comparator/ActivityInfo.qml:33
 msgctxt "ActivityInfo|"
 msgid "&lt;, &gt; or =: enter the corresponding symbol"
-msgstr ""
+msgstr "&lt;, &gt; or =: അനുബന്ധ ചിഹ്നം എന്ററു ചെയ്യാൻ"
 
 #: activities/comparator/resource/1/Data.qml:36
 #: activities/tens_complement_find/resource/3/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "Data|"
 msgid "Numbers from 1 to 9."
-msgstr "0 തൊട്ട് 9 വരെയുള്ള സംഖ്യകൾ."
+msgstr "1 തൊട്ട് 9 വരെയുള്ള സംഖ്യകൾ."
 
 #: activities/comparator/resource/10/Data.qml:14
 msgctxt "Data|"
 msgid "3 decimal places between 0 and 999.999."
-msgstr ""
+msgstr "0-നും 999.999-നും ഇടയിലുള്ള 3 ദശാംശസ്ഥാനങ്ങൾ."
 
 #: activities/comparator/resource/2/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "Data|"
 msgid "Numbers from 1 to 19."
-msgstr "0 തൊട്ട് 9 വരെയുള്ള സംഖ്യകൾ."
+msgstr "1 തൊട്ട് 19 വരെയുള്ള സംഖ്യകൾ."
 
 #: activities/comparator/resource/3/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "Data|"
 msgid "Numbers from 1 to 100."
-msgstr "0 തൊട്ട് 9 വരെയുള്ള സംഖ്യകൾ."
+msgstr "1 തൊട്ട് 100 വരെയുള്ള സംഖ്യകൾ."
 
 #: activities/comparator/resource/4/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "Data|"
 msgid "Numbers from 1 to 1000."
-msgstr "0 തൊട്ട് 9 വരെയുള്ള സംഖ്യകൾ."
+msgstr "1 തൊട്ട് 1000 വരെയുള്ള സംഖ്യകൾ."
 
 #: activities/comparator/resource/5/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "Data|"
 msgid "Numbers from 1 to 1000000."
-msgstr "0 തൊട്ട് 9 വരെയുള്ള സംഖ്യകൾ."
+msgstr "1 തൊട്ട് 1000000 വരെയുള്ള സംഖ്യകൾ."
 
 #: activities/comparator/resource/6/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "Data|"
 msgid "Numbers from 1 to 1 billion."
-msgstr "0 തൊട്ട് 9 വരെയുള്ള സംഖ്യകൾ."
+msgstr "1 തൊട്ട് നൂറുകോടി വരെയുള്ള സംഖ്യകൾ."
 
 #: activities/comparator/resource/7/Data.qml:14
 msgctxt "Data|"
 msgid "1 decimal place between 0 and 9.9, same integer part."
-msgstr ""
+msgstr "0-നും 9.9-നും ഇടയിലുള്ള 1 ദശാംശസ്ഥാനവും അതേ പൂർണസംഖ്യയും."
 
 #: activities/comparator/resource/8/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "1 decimal place between 0 and 9.9."
-msgstr "%1-നും %2-നും ഇടയിലുള്ള സംഖ്യകൾ."
+msgstr "0-നും 9.9-നും ഇടയിലുള്ള 1 ദശാംശസ്ഥാനം."
 
 #: activities/comparator/resource/9/Data.qml:14
 msgctxt "Data|"
 msgid "2 decimal places between 0 and 99.99."
-msgstr ""
+msgstr "0-നും 99.99-നും ഇടയിലുള്ള 2 ദശാംശസ്ഥാനങ്ങൾ."
 
 #. Activity title
 #: activities/crane/ActivityInfo.qml:20
@@ -6655,14 +6557,13 @@ msgid ""
 "escape predators, and possess an excellent sense of balance. They have "
 "single-toed hooves."
 msgstr ""
+"കുതിര 'ഹീ! ഹീ!' എന്നു ചിനയ്ക്കുന്നു. കുതിരകൾ നല്ല ഓട്ടക്കാരാണ്. ഈ കഴിവുള്ളതുകൊണ്ടു തന്നെ "
+"വേട്ടക്കാരിൽ നിന്നും പെട്ടെന്ന് രക്ഷപ്പെടാൻ അവയ്ക്ക് സാധിക്കുന്നു. അവയ്ക്ക് ഒറ്റവിരലുള്ള കുളമ്പുകളുണ്ട്."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:25
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal's ancestors were wolves."
 msgctxt "board1|"
 msgid "This animal has single-toed hooves."
-msgstr "ചെന്നായകളായിരുന്നു ഈ മൃഗത്തിന്റെ പൂർവികർ."
+msgstr "ഈ ജീവിക്ക് ഒറ്റ വിരലുള്ള കുളമ്പുകളുണ്ട്."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:33
 msgctxt "board1|"
@@ -6675,14 +6576,13 @@ msgid ""
 "The chicken goes 'cluck'. Domestic chickens have wings, but are not capable "
 "of long-distance flight. They have a comb on their head."
 msgstr ""
+"പിടക്കോഴി 'കൊക്ക്, കൊക്ക് ' എന്ന് കൊക്കി വിളിക്കുന്നു. വളർത്തു കോഴികൾക്ക് ചിറകുകളുണ്ട്, എങ്കിലും "
+"ദീർഘദൂരം പറക്കാൻ കഴിയുകയില്ല. അവയുടെ തലയിൽ ഒരു പൂവുണ്ട്."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:37
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal likes to come out at night."
 msgctxt "board1|"
 msgid "This animal has a comb on its head."
-msgstr "ഇതിന് രാത്രി പുറത്തിറങ്ങാനാണ് ഇഷ്ടം."
+msgstr "ഈ ജീവിയുടെ തലയിൽ ഒരു പൂവുണ്ട്."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:45
 msgctxt "board1|"
@@ -6696,11 +6596,14 @@ msgid ""
 "developed sense of taste, with around 20,000 taste buds. They can detect "
 "odours 8km away."
 msgstr ""
+"പശു 'മ്പേ മ്പേ' എന്ന് അമറുന്നു. പശുക്കൾക്ക് 330° വിസ്തൃതിയിലുള്ള കാഴ്ചയുണ്ട്. ഏകദേശം 20,000 "
+"രസമുകുളങ്ങളുള്ള ഈ ജീവികൾക്ക് മികച്ച രുചിബോധമുണ്ട്. 8 കിലോമീറ്റർ അകലെയുള്ള മണം വരെ അവയ്ക്കു "
+"തിരിച്ചറിയാൻ കഴിയും."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:49
 msgctxt "board1|"
 msgid "This animal has around 20,000 taste buds."
-msgstr ""
+msgstr "ഈ ജീവിയ്ക്ക് ഏകദേശം 20,000 രസമുകുളങ്ങളുണ്ട്."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:57
 msgctxt "board1|"
@@ -6714,14 +6617,14 @@ msgid ""
 "ability to chase mice and other rodents. They purr to communicate various "
 "emotions."
 msgstr ""
+"പൂച്ച 'മ്യാവൂ, മ്യാവൂ' എന്നു കരയുന്നു. ചങ്ങാത്തത്തിനും എലികളെയും മൂഷികവർഗത്തിൽപെട്ട മറ്റു "
+"ജീവികളെയും തുരത്താനുള്ള ഇവയുടെ കഴിവുകൊണ്ടും മനുഷ്യർ പൂച്ചകളെ വിലമതിക്കുന്നു. അവർ മുരളിക്കൊണ്ട് "
+"വിവിധ വികാരങ്ങൾ പ്രകടിപ്പിക്കുന്നു."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:61
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal lays eggs."
 msgctxt "board1|"
 msgid "This animal can purr."
-msgstr "ഇതു മുട്ടകളിടും."
+msgstr "ഈ ജീവിക്ക് മുരളുവാൻ കഴിയും."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:69
 msgctxt "board1|"
@@ -6734,11 +6637,13 @@ msgid ""
 "The pig goes 'oink'. Pigs wallow in the mud, mainly to control their body "
 "temperature."
 msgstr ""
+"പന്നി 'ങ്റ്വ, ങ്റ്വ' എന്നു കരയുന്നു. പ്രധാനമായും ശരീരോഷ്മാവ് നിയന്ത്രിക്കാനാണ് പന്നികൾ ചെളിയിൽ "
+"കിടന്നുരുളുന്നത്."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:73
 msgctxt "board1|"
 msgid "This animal wallows in the mud to control its body temperature."
-msgstr ""
+msgstr "ശരീരോഷ്മാവ് നിയന്ത്രിക്കാനായി ഈ ജിവികൾ ചെളിയിൽ കിടന്നുരുളുന്നു."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:81
 msgctxt "board1|"
@@ -6751,14 +6656,16 @@ msgid ""
 "The duck goes 'quack'. Ducks are mostly aquatic birds. They have waterproof "
 "feathers and webbed feet which enable them to swim on the water."
 msgstr ""
+"താറാവ് 'ക്വാക്ക്, ക്വാക്ക്' എന്നു കരയുന്നു. താറാവുകൾ കൂടുതലും ജലവാസികളായ പക്ഷികളാണ്. അവയ്ക്ക് "
+"വെള്ളം കയറാത്ത തൂവലുകളും തൊലികൊണ്ടു ബന്ധിപ്പിച്ചിരിക്കുന്ന കാൽപാദങ്ങളുമുണ്ട്. ഈ പ്രത്യേകതകളാണ് "
+"അവയെ വെള്ളത്തിൽ നീന്താൻ പ്രാപ്തരാക്കുന്നത്."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:85
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal has webbed feet so it can swim in the water."
 msgctxt "board1|"
 msgid "This animal has webbed feet and can swim on the water."
-msgstr "തൊലി കൊണ്ടു ബന്ധിപ്പിച്ചിരിക്കുന്ന കാൽവിരലുകൾ അവയെ വെള്ളത്തിൽ നീന്താൻ സഹായിക്കുന്നു. "
+msgstr ""
+"ഈ ജീവിക്ക് തൊലി കൊണ്ടു ബന്ധിപ്പിച്ചിരിക്കുന്ന കാൽപാദങ്ങളുണ്ട്, മാത്രമല്ല ഇവയ്ക്ക് വെള്ളത്തിൽ "
+"നീന്താൻ കഴിയും. "
 
 #: activities/explore_farm_animals/resource/board/board1.qml:93
 msgctxt "board1|"
@@ -6766,29 +6673,23 @@ msgid "Owl"
 msgstr "മൂങ്ങ"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:94
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid ""
-#| "The owl goes 'hoo. hoo.' The owl has excellent vision and hearing at "
-#| "night."
 msgctxt "board1|"
 msgid ""
 "The owl goes 'hoot'. Owls are nocturnal birds, they have excellent vision "
 "and hearing at night."
-msgstr "മൂങ്ങ 'ഊ. ഊ.' എന്നു മൂളുന്നു. മൂങ്ങയുടെ രാത്രികാല കാഴ്ചയും കേൾവിയും മികച്ചതാണ്."
+msgstr ""
+"മൂങ്ങ 'ഊ. ഊ.' എന്നു മൂളുന്നു. മൂങ്ങകൾ രാത്രികാല പക്ഷികളാണ്. അവയ്ക്ക് രാത്രിയിൽ മികച്ച കാഴ്ചയും "
+"കേൾവിയും ഉണ്ട്."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:97
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal likes to come out at night."
 msgctxt "board1|"
 msgid "This animal is a nocturnal bird."
-msgstr "ഇതിന് രാത്രി പുറത്തിറങ്ങാനാണ് ഇഷ്ടം."
+msgstr "ഈ ജീവി ഒരു രാത്രികാല പക്ഷിയാണ്."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:105
 msgctxt "board1|"
 msgid "Dog"
-msgstr "പട്ടി"
+msgstr "നായ"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:106
 msgctxt "board1|"
@@ -6796,14 +6697,13 @@ msgid ""
 "The dog goes 'woof'. Dogs are probably the oldest domesticated species. They "
 "are descendants of the wolf."
 msgstr ""
+"നായ 'ബൗ! ബൗ!' എന്നു കുരയ്ക്കുന്നു. നായ്ക്കൾ ആയിരിക്കാം ഏറ്റവു പഴയ വളർത്തുമൃഗങ്ങൾ. അവ "
+"ചെന്നായകളുടെ പിൻഗാമികളാണ്."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:109
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal is a close relative to the goat."
 msgctxt "board1|"
 msgid "This animal is a descendant of the wolf."
-msgstr "ആടിന്റെ അടുത്ത ബന്ധുവാണ് ഈ മൃഗം."
+msgstr "ഈ ജീവി ചെന്നായയുടെ പിൻഗാമിയാണ്."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:117
 msgctxt "board1|"
@@ -6816,14 +6716,13 @@ msgid ""
 "The sheep goes 'baa'. Most sheep breeds bear a fleece of wool. The fleece "
 "can be sheared and used to produce textile fibre."
 msgstr ""
+"ചെമ്മരിയാട് 'ബാ ബാ' എന്നു കരയുന്നു. മിക്ക ചെമ്മരിയാടു വർഗത്തിനും കമ്പിളി രോമങ്ങളുണ്ട്. ഈ "
+"കമ്പിളി രോമം മുറിച്ചെടുത്ത് തുണി നിർമിക്കാൻ കഴിയും."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:121
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal's ancestors were wolves."
 msgctxt "board1|"
 msgid "This animal produces wool."
-msgstr "ചെന്നായകളായിരുന്നു ഈ മൃഗത്തിന്റെ പൂർവികർ."
+msgstr "ഈ ജീവി കമ്പിളി ഉത്പാദിപ്പിക്കുന്നു."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:131
 msgctxt "board1|"
@@ -8136,11 +8035,6 @@ msgid "Polar bear"
 msgstr "ധ്രുവ കരടി"
 
 #: activities/explore_world_animals/resource/board/board2.qml:31
-#, fuzzy
-#| msgctxt "board2|"
-#| msgid ""
-#| "The polar bear is one of the world's largest predatory mammals. It "
-#| "weights up to a ton and can be as long as 3 meters!"
 msgctxt "board2|"
 msgid ""
 "The polar bear is one of the world's largest predatory mammals. It weighs up "
@@ -9032,44 +8926,31 @@ msgstr ""
 
 #. Activity title
 #: activities/fractions_create/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice subtractions."
 msgctxt "ActivityInfo|"
 msgid "Create the fractions"
-msgstr "കുറയ്ക്കൽ പരിശീലിക്കൽ."
+msgstr "ഭിന്നസംഖ്യകൾ നിർമിക്കാം"
 
 #. Help title
 #: activities/fractions_create/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "A shape split in equal parts is displayed on screen."
-msgstr ""
+msgstr "ഒരു ആകൃതി തുല്യഭാഗങ്ങളായി വിഭജിച്ച് സ്ക്രീനിൽ കാണിച്ചിരിക്കുന്നു."
 
 #: activities/fractions_create/ActivityInfo.qml:18
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Drag the appropriate numbers and the operators to the boxes to obtain the "
-#| "number to guess in the instruction."
 msgctxt "ActivityInfo|"
 msgid ""
 "Select the appropriate number of parts as described in the instructions."
-msgstr ""
-"നിർദ്ദേശത്തിൽ തന്നിരിക്കുന്ന അനുമാനം ഉത്തരമായി കിട്ടുന്ന തരത്തിൽ ശരിയായ അക്കങ്ങളും ക്രിയകളും "
-"ഡ്രാഗു ചെയ്ത് പെട്ടികളിൽ വെക്കുക."
+msgstr "നിർദ്ദേശങ്ങളിൽ തന്നിരിക്കുന്നതനുസരിച്ച് ഉചിതമായ അത്രയും ഭാഗങ്ങൾ തിരഞ്ഞെടുക്കുക."
 
 #: activities/fractions_create/fractions_create.js:79
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Digits representation"
 msgctxt "fractions_create|"
 msgid "Find the represented fraction."
-msgstr "അക്കങ്ങൾ സൂചിപ്പിക്കൽ"
+msgstr "സൂചിപ്പിച്ചിരിക്കുന്ന ഭിന്നസംഖ്യ കണ്ടെത്തൂ."
 
 #: activities/fractions_create/resource/1/Data.qml:9
 msgctxt "Data|"
 msgid "Simplified fractions with a pie."
-msgstr ""
+msgstr "പൈ ഉപയോഗിച്ചുള്ള ചുരുക്കിയ ഭിന്നസംഖ്യകൾ."
 
 #: activities/fractions_create/resource/1/Data.qml:18
 #: activities/fractions_create/resource/3/Data.qml:17
@@ -9077,357 +8958,261 @@ msgstr ""
 #: activities/fractions_create/resource/3/Data.qml:29
 msgctxt "Data|"
 msgid "Select one half of the pie."
-msgstr ""
+msgstr "പൈയുടെ അരഭാഗം തിരഞ്ഞെടുക്കുക."
 
 #: activities/fractions_create/resource/1/Data.qml:24
 #: activities/fractions_create/resource/3/Data.qml:35
 #: activities/fractions_create/resource/3/Data.qml:49
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Select the fifth Thursday of the given month"
 msgctxt "Data|"
 msgid "Select one-third of the pie."
-msgstr "തന്നിരിക്കുന്ന മാസത്തിന്റെ അഞ്ചാം വ്യാഴം തിരഞ്ഞെടുക്കുക"
+msgstr "പൈയുടെ മൂന്നിലൊന്ന് ഭാഗം തിരഞ്ഞെടുക്കുക."
 
 #: activities/fractions_create/resource/1/Data.qml:30
 #: activities/fractions_create/resource/3/Data.qml:41
 #: activities/fractions_create/resource/3/Data.qml:55
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Select the fourth Sunday of the given month"
 msgctxt "Data|"
 msgid "Select two-thirds of the pie."
-msgstr "തന്നിരിക്കുന്ന മാസത്തിന്റെ നാലാം ഞായർ തിരഞ്ഞെടുക്കുക"
+msgstr "പൈയുടെ മൂന്നിൽ രണ്ട് ഭാഗം തിരഞ്ഞെടുക്കുക."
 
 #: activities/fractions_create/resource/1/Data.qml:36
 #: activities/fractions_create/resource/3/Data.qml:61
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Select the butterfly of the correct color."
 msgctxt "Data|"
 msgid "Select one-quarter of the pie."
-msgstr "ശരിയായ നിറമുള്ള പൂമ്പാറ്റയെ തിരഞ്ഞെടുക്കുക."
+msgstr "പൈയുടെ കാൽ ഭാഗം തിരഞ്ഞെടുക്കുക."
 
 #: activities/fractions_create/resource/1/Data.qml:42
 #: activities/fractions_create/resource/3/Data.qml:67
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Select the fifth Thursday of the given month"
 msgctxt "Data|"
 msgid "Select two-fifths of the pie."
-msgstr "തന്നിരിക്കുന്ന മാസത്തിന്റെ അഞ്ചാം വ്യാഴം തിരഞ്ഞെടുക്കുക"
+msgstr "പൈയുടെ അഞ്ചിൽ രണ്ട് ഭാഗം തിരഞ്ഞെടുക്കുക."
 
 #: activities/fractions_create/resource/1/Data.qml:50
 msgctxt "Data|"
 msgid "Select one pie and one-quarter of a pie."
-msgstr ""
+msgstr "ഒരു പൈയും ഒരു പൈയുടെ കാൽ ഭാഗവും തിരഞ്ഞെടുക്കുക."
 
 #: activities/fractions_create/resource/1/Data.qml:56
 msgctxt "Data|"
 msgid "Select one pie and two-fifths of a pie."
-msgstr ""
+msgstr "ഒരു പൈയും ഒരു പൈയുടെ അഞ്ചിൽ രണ്ടു ഭാഗവും തിരഞ്ഞെടുക്കുക."
 
 #: activities/fractions_create/resource/1/Data.qml:62
 msgctxt "Data|"
 msgid "Select one pie and one-third of a pie."
-msgstr ""
+msgstr "ഒരു പൈയും ഒരു പൈയുടെ മൂന്നിലൊന്നു ഭാഗവും തിരഞ്ഞെടുക്കുക."
 
 #: activities/fractions_create/resource/1/Data.qml:68
 msgctxt "Data|"
 msgid "Select one pie and one half of a pie."
-msgstr ""
+msgstr "ഒരു പൈയും ഒരു പൈയുടെ അര ഭാഗവും തിരഞ്ഞെടുക്കുക."
 
 #: activities/fractions_create/resource/1/Data.qml:74
 msgctxt "Data|"
 msgid "Select one pie and three-quarters of a pie."
-msgstr ""
+msgstr "ഒരു പൈയും ഒരു പൈയുടെ മുക്കാൽ ഭാഗവും തിരഞ്ഞെടുക്കുക."
 
 #: activities/fractions_create/resource/10/Data.qml:9
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Answer the questions with a correctness of 100%."
 msgctxt "Data|"
 msgid "Specific questions with a square."
-msgstr "തന്നിരിക്കുന്ന ചോദ്യങ്ങൾക്ക് 100% ശരിയായ ഉത്തരം കണ്ടെത്തൂ."
+msgstr "ഒരു സമചതുരം ഉപയോഗിച്ചുള്ള പ്രത്യേക ചോദ്യങ്ങൾ."
 
 #: activities/fractions_create/resource/10/Data.qml:18
 #: activities/fractions_create/resource/10/Data.qml:24
 msgctxt "Data|"
 msgid ""
 "Select as many parts as you can without taking more than half of the square."
-msgstr ""
+msgstr "സമചതുരത്തിന്റെ പകുതിയിൽ കൂടുതലാകാതെ നിങ്ങൾക്കു കഴിയുന്നത്രയും ഭാഗങ്ങൾ തിരഞ്ഞെടുക്കുക."
 
 #: activities/fractions_create/resource/2/Data.qml:9
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Answer the questions with a correctness of 100%."
 msgctxt "Data|"
 msgid "Simplified fractions with a square."
-msgstr "തന്നിരിക്കുന്ന ചോദ്യങ്ങൾക്ക് 100% ശരിയായ ഉത്തരം കണ്ടെത്തൂ."
+msgstr "സമചതുരം ഉപയോഗിച്ചുള്ള ചുരുക്കിയ ഭിന്നസംഖ്യകൾ."
 
 #: activities/fractions_create/resource/2/Data.qml:18
 #: activities/fractions_create/resource/4/Data.qml:17
 #: activities/fractions_create/resource/4/Data.qml:23
 #: activities/fractions_create/resource/4/Data.qml:29
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Select the butterfly of the correct color."
 msgctxt "Data|"
 msgid "Select one half of the square."
-msgstr "ശരിയായ നിറമുള്ള പൂമ്പാറ്റയെ തിരഞ്ഞെടുക്കുക."
+msgstr "സമചതുരത്തിന്റെ അരഭാഗം തിരഞ്ഞെടുക്കുക."
 
 #: activities/fractions_create/resource/2/Data.qml:24
 #: activities/fractions_create/resource/4/Data.qml:35
 #: activities/fractions_create/resource/4/Data.qml:49
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Select the fifth Thursday of the given month"
 msgctxt "Data|"
 msgid "Select one-third of the square."
-msgstr "തന്നിരിക്കുന്ന മാസത്തിന്റെ അഞ്ചാം വ്യാഴം തിരഞ്ഞെടുക്കുക"
+msgstr "സമചതുരത്തിന്റെ മൂന്നിലൊന്ന് ഭാഗം തിരഞ്ഞെടുക്കുക."
 
 #: activities/fractions_create/resource/2/Data.qml:30
 #: activities/fractions_create/resource/4/Data.qml:41
 #: activities/fractions_create/resource/4/Data.qml:55
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Select the fourth Sunday of the given month"
 msgctxt "Data|"
 msgid "Select two-thirds of the square."
-msgstr "തന്നിരിക്കുന്ന മാസത്തിന്റെ നാലാം ഞായർ തിരഞ്ഞെടുക്കുക"
+msgstr "സമചതുരത്തിന്റെ മൂന്നിൽ രണ്ട് ഭാഗം തിരഞ്ഞെടുക്കുക."
 
 #: activities/fractions_create/resource/2/Data.qml:36
 #: activities/fractions_create/resource/4/Data.qml:61
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Select the butterfly of the correct color."
 msgctxt "Data|"
 msgid "Select one-quarter of the square."
-msgstr "ശരിയായ നിറമുള്ള പൂമ്പാറ്റയെ തിരഞ്ഞെടുക്കുക."
+msgstr "സമചതുരത്തിന്റെ കാൽ ഭാഗം തിരഞ്ഞെടുക്കുക."
 
 #: activities/fractions_create/resource/2/Data.qml:42
 #: activities/fractions_create/resource/4/Data.qml:67
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Select the fifth Thursday of the given month"
 msgctxt "Data|"
 msgid "Select two-fifths of the square."
-msgstr "തന്നിരിക്കുന്ന മാസത്തിന്റെ അഞ്ചാം വ്യാഴം തിരഞ്ഞെടുക്കുക"
+msgstr "സമചതുരത്തിന്റെ അഞ്ചിൽ രണ്ട് ഭാഗം തിരഞ്ഞെടുക്കുക."
 
 #: activities/fractions_create/resource/2/Data.qml:50
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Select the butterfly of the correct color."
 msgctxt "Data|"
 msgid "Select one square and one-quarter of a square."
-msgstr "ശരിയായ നിറമുള്ള പൂമ്പാറ്റയെ തിരഞ്ഞെടുക്കുക."
+msgstr "ഒരു സമചതുരവും ഒരു സമചതുരത്തിന്റെ കാൽ ഭാഗവും തിരഞ്ഞെടുക്കുക."
 
 #: activities/fractions_create/resource/2/Data.qml:56
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Select the fifth Thursday of the given month"
 msgctxt "Data|"
 msgid "Select one square and two-fifths of a square."
-msgstr "തന്നിരിക്കുന്ന മാസത്തിന്റെ അഞ്ചാം വ്യാഴം തിരഞ്ഞെടുക്കുക"
+msgstr "ഒരു സമചതുരവും ഒരു സമചതുരത്തിന്റെ അഞ്ചിൽ രണ്ട് ഭാഗവും തിരഞ്ഞെടുക്കുക."
 
 #: activities/fractions_create/resource/2/Data.qml:62
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Select the fifth Thursday of the given month"
 msgctxt "Data|"
 msgid "Select one square and one-third of a square."
-msgstr "തന്നിരിക്കുന്ന മാസത്തിന്റെ അഞ്ചാം വ്യാഴം തിരഞ്ഞെടുക്കുക"
+msgstr "ഒരു സമചതുരവും ഒരു സമചതുരത്തിന്റെ മൂന്നിലൊന്ന് ഭാഗവും തിരഞ്ഞെടുക്കുക."
 
 #: activities/fractions_create/resource/2/Data.qml:68
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Select the butterfly of the correct color."
 msgctxt "Data|"
 msgid "Select one square and one half of a square."
-msgstr "ശരിയായ നിറമുള്ള പൂമ്പാറ്റയെ തിരഞ്ഞെടുക്കുക."
+msgstr "ഒരു സമചതുരവും ഒരു സമചതുരത്തിന്റെ അര ഭാഗവും തിരഞ്ഞെടുക്കുക."
 
 #: activities/fractions_create/resource/2/Data.qml:74
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Select the butterfly of the correct color."
 msgctxt "Data|"
 msgid "Select one square and three-quarters of a square."
-msgstr "ശരിയായ നിറമുള്ള പൂമ്പാറ്റയെ തിരഞ്ഞെടുക്കുക."
+msgstr "ഒരു സമചതുരവും ഒരു സമചതുരത്തിന്റെ മുക്കാൽ ഭാഗവും തിരഞ്ഞെടുക്കുക."
 
 #: activities/fractions_create/resource/3/Data.qml:9
 msgctxt "Data|"
 msgid "Non-simplified fractions with a pie."
-msgstr ""
+msgstr "പൈ ഉപയോഗിച്ചുള്ള ചുരുക്കാത്ത ഭിന്നസംഖ്യകൾ."
 
 #: activities/fractions_create/resource/3/Data.qml:73
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Select the fifth Thursday of the given month"
 msgctxt "Data|"
 msgid "Select three-fifths of the pie."
-msgstr "തന്നിരിക്കുന്ന മാസത്തിന്റെ അഞ്ചാം വ്യാഴം തിരഞ്ഞെടുക്കുക"
+msgstr "പൈയുടെ അഞ്ചിൽ മൂന്ന് ഭാഗം തിരഞ്ഞെടുക്കുക."
 
 #: activities/fractions_create/resource/4/Data.qml:9
 msgctxt "Data|"
 msgid "Non-simplified fractions with a square."
-msgstr ""
+msgstr "സമചതുരം ഉപയോഗിച്ചുള്ള ചുരുക്കാത്ത ഭിന്നസംഖ്യകൾ."
 
 #: activities/fractions_create/resource/4/Data.qml:73
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Select the fifth Thursday of the given month"
 msgctxt "Data|"
 msgid "Select three-fifths of the square."
-msgstr "തന്നിരിക്കുന്ന മാസത്തിന്റെ അഞ്ചാം വ്യാഴം തിരഞ്ഞെടുക്കുക"
+msgstr "സമചതുരത്തിന്റെ അഞ്ചിൽ മൂന്ന് ഭാഗം തിരഞ്ഞെടുക്കുക."
 
 #: activities/fractions_create/resource/5/Data.qml:9
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Decimal number system."
 msgctxt "Data|"
 msgid "Decimal numbers with a pie."
-msgstr "ദശാംശ സംഖ്യ വ്യവസ്ഥ."
+msgstr "പൈ ഉപയോഗിച്ച് ദശാംശസംഖ്യകൾ."
 
 #: activities/fractions_create/resource/5/Data.qml:18
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 0.5 pie."
-msgstr "തിരഞ്ഞെടുത്തത്"
+msgstr "0.5 പൈ തിരഞ്ഞെടുക്കുക."
 
 #: activities/fractions_create/resource/5/Data.qml:24
 msgctxt "Data|"
 msgid "Select 0.25 pie."
-msgstr ""
+msgstr "0.25 പൈ തിരഞ്ഞെടുക്കുക."
 
 #: activities/fractions_create/resource/5/Data.qml:30
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 0.4 pie."
-msgstr "തിരഞ്ഞെടുത്തത്"
+msgstr "0.4 പൈ തിരഞ്ഞെടുക്കുക."
 
 #: activities/fractions_create/resource/5/Data.qml:36
 msgctxt "Data|"
 msgid "Select 0.75 pie."
-msgstr ""
+msgstr "0.75 പൈ തിരഞ്ഞെടുക്കുക."
 
 #: activities/fractions_create/resource/5/Data.qml:42
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 0.8 pie."
-msgstr "തിരഞ്ഞെടുത്തത്"
+msgstr "0.8 പൈ തിരഞ്ഞെടുക്കുക."
 
 #: activities/fractions_create/resource/5/Data.qml:50
 msgctxt "Data|"
 msgid "Select 1.25 pies."
-msgstr ""
+msgstr "1.25 പൈകൾ തിരഞ്ഞെടുക്കുക."
 
 #: activities/fractions_create/resource/5/Data.qml:56
 msgctxt "Data|"
 msgid "Select 1.4 pies."
-msgstr ""
+msgstr "1.4 പൈകൾ തിരഞ്ഞെടുക്കുക."
 
 #: activities/fractions_create/resource/5/Data.qml:62
 #: activities/fractions_create/resource/5/Data.qml:68
 msgctxt "Data|"
 msgid "Select 1.5 pies."
-msgstr ""
+msgstr "1.5 പൈകൾ തിരഞ്ഞെടുക്കുക."
 
 #: activities/fractions_create/resource/5/Data.qml:74
 msgctxt "Data|"
 msgid "Select 1.75 pies."
-msgstr ""
+msgstr "1.75 പൈകൾ തിരഞ്ഞെടുക്കുക."
 
 #: activities/fractions_create/resource/6/Data.qml:9
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Decimal number system."
 msgctxt "Data|"
 msgid "Decimal numbers with a square."
-msgstr "ദശാംശ സംഖ്യ വ്യവസ്ഥ."
+msgstr "സമചതുരം ഉപയോഗിച്ച് ദശാംശസംഖ്യകൾ."
 
 #: activities/fractions_create/resource/6/Data.qml:18
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 0.5 square."
-msgstr "തിരഞ്ഞെടുത്തത്"
+msgstr "0.5 സമചതുരം തിരഞ്ഞെടുക്കുക."
 
 #: activities/fractions_create/resource/6/Data.qml:24
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 0.25 square."
-msgstr "തിരഞ്ഞെടുത്തത്"
+msgstr "0.25 സമചതുരം തിരഞ്ഞെടുക്കുക."
 
 #: activities/fractions_create/resource/6/Data.qml:30
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 0.4 square."
-msgstr "തിരഞ്ഞെടുത്തത്"
+msgstr "0.4 സമചതുരം തിരഞ്ഞെടുക്കുക."
 
 #: activities/fractions_create/resource/6/Data.qml:36
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 0.75 square."
-msgstr "തിരഞ്ഞെടുത്തത്"
+msgstr "0.75 സമചതുരം തിരഞ്ഞെടുക്കുക."
 
 #: activities/fractions_create/resource/6/Data.qml:42
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 0.8 square."
-msgstr "തിരഞ്ഞെടുത്തത്"
+msgstr "0.8 സമചതുരം തിരഞ്ഞെടുക്കുക."
 
 #: activities/fractions_create/resource/6/Data.qml:50
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 1.25 squares."
-msgstr "തിരഞ്ഞെടുത്തത്"
+msgstr "1.25 സമചതുരങ്ങൾ തിരഞ്ഞെടുക്കുക."
 
 #: activities/fractions_create/resource/6/Data.qml:56
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 1.4 squares."
-msgstr "തിരഞ്ഞെടുത്തത്"
+msgstr "1.4 സമചതുരങ്ങൾ തിരഞ്ഞെടുക്കുക."
 
 #: activities/fractions_create/resource/6/Data.qml:62
 #: activities/fractions_create/resource/6/Data.qml:68
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 1.5 squares."
-msgstr "തിരഞ്ഞെടുത്തത്"
+msgstr "1.5 സമചതുരങ്ങൾ തിരഞ്ഞെടുക്കുക."
 
 #: activities/fractions_create/resource/6/Data.qml:74
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 1.75 squares."
-msgstr "തിരഞ്ഞെടുത്തത്"
+msgstr "1.75 സമചതുരങ്ങൾ തിരഞ്ഞെടുക്കുക."
 
 #: activities/fractions_create/resource/7/Data.qml:9
 msgctxt "Data|"
 msgid "Percentages with a pie."
-msgstr ""
+msgstr "പൈ ഉപയോഗിച്ച് ശതമാനങ്ങൾ."
 
 #. Select %1 percent of the pie.
 #: activities/fractions_create/resource/7/Data.qml:19
@@ -9438,17 +9223,15 @@ msgstr ""
 #: activities/fractions_create/resource/7/Data.qml:56
 #: activities/fractions_create/resource/7/Data.qml:63
 #: activities/fractions_create/resource/7/Data.qml:70
-#, fuzzy, qt-format
-#| msgctxt "calendar_dataset|"
-#| msgid "Select the 1st"
+#, qt-format
 msgctxt "Data|"
 msgid "Select %1% of the pie."
-msgstr "1-ാമത്തേത് തിരഞ്ഞെടുക്കുക"
+msgstr "പൈയുടെ %1% തിരഞ്ഞെടുക്കുക."
 
 #: activities/fractions_create/resource/8/Data.qml:9
 msgctxt "Data|"
 msgid "Percentages with a square."
-msgstr ""
+msgstr "സമചതുരം ഉപയോഗിച്ച് ശതമാനങ്ങൾ."
 
 #. Select %1 percent of the square.
 #: activities/fractions_create/resource/8/Data.qml:19
@@ -9457,87 +9240,64 @@ msgstr ""
 #: activities/fractions_create/resource/8/Data.qml:42
 #: activities/fractions_create/resource/8/Data.qml:49
 #: activities/fractions_create/resource/8/Data.qml:56
-#, fuzzy, qt-format
-#| msgctxt "calendar_dataset|"
-#| msgid "Select the 1st"
+#, qt-format
 msgctxt "Data|"
 msgid "Select %1% of the square."
-msgstr "1-ാമത്തേത് തിരഞ്ഞെടുക്കുക"
+msgstr "സമചതുരത്തിന്റെ %1% തിരഞ്ഞെടുക്കുക."
 
 #: activities/fractions_create/resource/9/Data.qml:9
 msgctxt "Data|"
 msgid "Specific questions with a pie."
-msgstr ""
+msgstr "ഒരു പൈ ഉപയോഗിച്ചുള്ള പ്രത്യേക ചോദ്യങ്ങൾ."
 
 #: activities/fractions_create/resource/9/Data.qml:18
 #: activities/fractions_create/resource/9/Data.qml:24
 msgctxt "Data|"
 msgid ""
 "Select as many parts as you can without taking more than half of the pie."
-msgstr ""
+msgstr "പൈയുടെ പകുതിയിൽ കൂടുതലാകാതെ നിങ്ങൾക്കു കഴിയുന്നത്രയും ഭാഗങ്ങൾ തിരഞ്ഞെടുക്കുക."
 
 #. Activity title
 #: activities/fractions_find/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "instruments|"
-#| msgid "Find the accordion"
 msgctxt "ActivityInfo|"
 msgid "Find the fractions"
-msgstr "കൈക്കിന്നരം കണ്ടെത്തൂ"
+msgstr "ഭിന്നസംഖ്യകൾ കണ്ടെത്താം"
 
 #. Help title
 #: activities/fractions_find/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Find the correct date and select it on the calendar."
 msgctxt "ActivityInfo|"
 msgid "Find the correct numerator and denominator of the represented fraction."
-msgstr "ശരിയായ തീയതി കണ്ടെത്തി അത് കലണ്ടറിൽ തിരഞ്ഞെടുക്കുക."
+msgstr "സൂചിപ്പിച്ചിരിക്കുന്ന ഭിന്നസംഖ്യയുടെ അംശവും ഛേദവും കണ്ടെത്തൂ."
 
 #: activities/fractions_find/resource/1/Data.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Align four (with a friend)"
 msgctxt "Data|"
 msgid "Find numerator (with a pie)."
-msgstr "നാലെണ്ണം അണിനിരത്താം (സുഹൃത്തിന്റെ കൂടെ)"
+msgstr "അംശം കണ്ടെത്തുക (പൈ ഉപയോഗിച്ച്)."
 
 #: activities/fractions_find/resource/2/Data.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Align four (with a friend)"
 msgctxt "Data|"
 msgid "Find numerator (with a square)."
-msgstr "നാലെണ്ണം അണിനിരത്താം (സുഹൃത്തിന്റെ കൂടെ)"
+msgstr "അംശം കണ്ടെത്തുക (സമചതുരം ഉപയോഗിച്ച്)."
 
 #: activities/fractions_find/resource/3/Data.qml:9
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Nine men's morris (with a friend)"
 msgctxt "Data|"
 msgid "Find denominator (with a pie)."
-msgstr "നവകങ്കരി (സുഹൃത്തിന്റെ കൂടെ)"
+msgstr "ഛേദം കണ്ടെത്തുക (പൈ ഉപയോഗിച്ച്)."
 
 #: activities/fractions_find/resource/4/Data.qml:9
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Nine men's morris (with a friend)"
 msgctxt "Data|"
 msgid "Find denominator (with a square)."
-msgstr "നവകങ്കരി (സുഹൃത്തിന്റെ കൂടെ)"
+msgstr "ഛേദം കണ്ടെത്തുക (സമചതുരം ഉപയോഗിച്ച്)."
 
 #: activities/fractions_find/resource/5/Data.qml:9
 msgctxt "Data|"
 msgid "Find numerator and denominator (with a pie)."
-msgstr ""
+msgstr "അംശവും ഛേദവു കണ്ടെത്തുക (പൈ ഉപയോഗിച്ച്)."
 
 #: activities/fractions_find/resource/6/Data.qml:9
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Nine men's morris (with a friend)"
 msgctxt "Data|"
 msgid "Find numerator and denominator (with a square)."
-msgstr "നവകങ്കരി (സുഹൃത്തിന്റെ കൂടെ)"
+msgstr "അംശവും ഛേദവു കണ്ടെത്തുക (സമചതുരം ഉപയോഗിച്ച്)."
 
 #. Activity title
 #: activities/geo-country/ActivityInfo.qml:19
@@ -10773,145 +10533,121 @@ msgstr "സവാൽക്കീജ"
 #: activities/geo-country/resource/board/board18_0.qml:13
 msgctxt "board18_0|"
 msgid "Autonomous communities or cities of Spain"
-msgstr ""
+msgstr "സ്പെയിനിലെ സ്വയംഭരണ കമ്മ്യൂണിറ്റികളും നഗരങ്ങളും"
 
 #. Autonomous communities of Spain: Andalusia
 #: activities/geo-country/resource/board/board18_0.qml:22
 msgctxt "board18_0|"
 msgid "Andalusia"
-msgstr ""
+msgstr "ആൻഡലൂഷ്യ"
 
 #. Autonomous communities of Spain: Madrid
 #: activities/geo-country/resource/board/board18_0.qml:29
 msgctxt "board18_0|"
 msgid "Madrid"
-msgstr ""
+msgstr "മാഡ്രിഡ്"
 
 #. Autonomous communities of Spain: Galicia
 #: activities/geo-country/resource/board/board18_0.qml:36
 msgctxt "board18_0|"
 msgid "Galicia"
-msgstr ""
+msgstr "ഗലീസ്യ"
 
 #. Autonomous communities of Spain: Castile and León
 #: activities/geo-country/resource/board/board18_0.qml:43
 msgctxt "board18_0|"
 msgid "Castile and León"
-msgstr ""
+msgstr "കാസ്റ്റീലും ലെയോണും"
 
 #. Autonomous communities of Spain: Castilla-La Mancha
 #: activities/geo-country/resource/board/board18_0.qml:50
 msgctxt "board18_0|"
 msgid "Castilla-La Mancha"
-msgstr ""
+msgstr "കാസ്റ്റീയ-ല മാഞ്ച"
 
 #. Autonomous communities of Spain: Catalonia
 #: activities/geo-country/resource/board/board18_0.qml:57
-#, fuzzy
-#| msgctxt "board14_0|"
-#| msgid "New Caledonia"
 msgctxt "board18_0|"
 msgid "Catalonia"
-msgstr "ന്യൂ കാലിഡോണിയ"
+msgstr "കാറ്റലോണിയ"
 
 #. Autonomous communities of Spain: Aragon
 #: activities/geo-country/resource/board/board18_0.qml:64
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Hexagon"
 msgctxt "board18_0|"
 msgid "Aragon"
-msgstr "ഷഡ്ഭുജം"
+msgstr "അരഗോൺ"
 
 #. Autonomous communities of Spain: Valencia
 #: activities/geo-country/resource/board/board18_0.qml:71
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Calendar"
 msgctxt "board18_0|"
 msgid "Valencia"
-msgstr "കലണ്ടർ"
+msgstr "വലെൻസിയ"
 
 #. Autonomous communities of Spain: Murcia
 #: activities/geo-country/resource/board/board18_0.qml:78
 msgctxt "board18_0|"
 msgid "Murcia"
-msgstr ""
+msgstr "മൂർസിയ"
 
 #. Autonomous communities of Spain: Asturias
 #: activities/geo-country/resource/board/board18_0.qml:85
 msgctxt "board18_0|"
 msgid "Asturias"
-msgstr ""
+msgstr "അസ്തൂരിയാസ്"
 
 #. Autonomous communities of Spain: Basque Country
 #: activities/geo-country/resource/board/board18_0.qml:92
 msgctxt "board18_0|"
 msgid "Basque Country"
-msgstr ""
+msgstr "ബാസ്ഖ് കണ്ട്രി"
 
 #. Autonomous communities of Spain: La Rioja
 #: activities/geo-country/resource/board/board18_0.qml:99
-#, fuzzy
-#| msgctxt "board3_0|"
-#| msgid "La Rioja"
 msgctxt "board18_0|"
 msgid "La Rioja"
 msgstr "ല റിയോഹ"
 
 #. Autonomous communities of Spain: Cantabria
 #: activities/geo-country/resource/board/board18_0.qml:106
-#, fuzzy
-#| msgctxt "board11_0|"
-#| msgid "Calabria"
 msgctxt "board18_0|"
 msgid "Cantabria"
-msgstr "കലാബ്രിയ"
+msgstr "കന്താബ്രിയ"
 
 #. Autonomous communities of Spain: Navarre
 #: activities/geo-country/resource/board/board18_0.qml:113
-#, fuzzy
-#| msgctxt "board5|"
-#| msgid "Navajo"
 msgctxt "board18_0|"
 msgid "Navarre"
-msgstr "നവാഹൊ"
+msgstr "നവാറേ"
 
 #. Autonomous communities of Spain: Extremadura
 #: activities/geo-country/resource/board/board18_0.qml:120
 msgctxt "board18_0|"
 msgid "Extremadura"
-msgstr ""
+msgstr "എക്സ്ത്രെമദൂര"
 
 #. Autonomous communities of Spain: Canary Islands
 #: activities/geo-country/resource/board/board18_0.qml:127
-#, fuzzy
-#| msgctxt "board14_0|"
-#| msgid "Mariana Islands"
 msgctxt "board18_0|"
 msgid "Canary Islands"
-msgstr "മരിയാന ദ്വീപുകൾ"
+msgstr "കനേറി ദ്വീപുകൾ"
 
 #. Autonomous communities of Spain: Balearic Islands
 #: activities/geo-country/resource/board/board18_0.qml:134
-#, fuzzy
-#| msgctxt "board14_0|"
-#| msgid "Mariana Islands"
 msgctxt "board18_0|"
 msgid "Balearic Islands"
-msgstr "മരിയാന ദ്വീപുകൾ"
+msgstr "ബാലേയാറിക് ദ്വീപുകൾ"
 
 #. Autonomous communities of Spain: Ceuta
 #: activities/geo-country/resource/board/board18_0.qml:141
 msgctxt "board18_0|"
 msgid "Ceuta"
-msgstr ""
+msgstr "സെയൂത്ത"
 
 #. Autonomous communities of Spain: Melilla
 #: activities/geo-country/resource/board/board18_0.qml:148
 msgctxt "board18_0|"
 msgid "Melilla"
-msgstr ""
+msgstr "മെലീയ്യ"
 
 #: activities/geo-country/resource/board/board1_0.qml:15
 msgctxt "board1_0|"
@@ -12912,7 +12648,7 @@ msgstr "നെതർലാന്റ്സ്"
 #: activities/geography/resource/board/board5_0.qml:73
 msgctxt "board5_0|"
 msgid "Luxembourg"
-msgstr ""
+msgstr "ലക്സംബർഗ്"
 
 #: activities/geography/resource/board/board5_0.qml:81
 msgctxt "board5_0|"
@@ -12965,9 +12701,6 @@ msgid "Eastern Europe"
 msgstr "കിഴക്കേ യൂറോപ്പ്"
 
 #: activities/geography/resource/board/board6_0.qml:24
-#, fuzzy
-#| msgctxt "board9_0|"
-#| msgid "Cyprus"
 msgctxt "board6_0|"
 msgid "Cyprus"
 msgstr "സൈപ്രസ്"
@@ -15578,12 +15311,9 @@ msgstr "ശബ്ദങ്ങൾ സാധ്യമാക്കുക"
 
 #. Activity title
 #: activities/learn_digits/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Count the items"
 msgctxt "ActivityInfo|"
 msgid "Count and color the circles"
-msgstr "എത്രയെണ്ണം?"
+msgstr "എണ്ണാം നിറം കൊടുക്കാം"
 
 #. Help title
 #: activities/learn_digits/ActivityInfo.qml:17
@@ -15766,29 +15496,20 @@ msgid "Subtractions with 1, 2, 3, 4 and 5."
 msgstr "1, 2, 3, 4, 5 എന്നിവ കൊണ്ടുള്ള കുറയ്ക്കൽ."
 
 #: activities/learn_subtractions/resource/4/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2, 3, 4 and 5."
 msgctxt "Data|"
 msgid "Subtractions with 1, 2, 3, 4, 5, 6 and 7."
-msgstr "1, 2, 3, 4, 5 എന്നിവ കൊണ്ടുള്ള കുറയ്ക്കൽ."
+msgstr "1, 2, 3, 4, 5, 6, 7 എന്നിവ കൊണ്ടുള്ള കുറയ്ക്കൽ."
 
 #: activities/learn_subtractions/resource/5/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2, 3, 4 and 5."
 msgctxt "Data|"
 msgid "Subtractions with 1, 2, 3, 4, 5, 6, 7, 8 and 9."
-msgstr "1, 2, 3, 4, 5 എന്നിവ കൊണ്ടുള്ള കുറയ്ക്കൽ."
+msgstr "1, 2, 3, 4, 5, 6, 7, 8, 9 എന്നിവ കൊണ്ടുള്ള കുറയ്ക്കൽ."
 
 #. Activity title
 #: activities/left_right_click/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Memory training."
 msgctxt "ActivityInfo|"
 msgid "Mouse click training"
-msgstr "ഓർമ്മശക്തി പരിശീലനം."
+msgstr "മൗസ് ക്ലിക്ക് പരിശീലിക്കാം"
 
 #. Help title
 #: activities/left_right_click/ActivityInfo.qml:16
@@ -15796,12 +15517,13 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Move animals to their homes using a left click or right click on your mouse."
 msgstr ""
+"നിങ്ങളുടെ മൗസിൽ ഒരു ഇടതു ക്ലിക്കോ വലതു ക്ലിക്കോ ഉപയോഗിച്ച് ജീവികളെ അവയുടെ വീട്ടിലെത്തിക്കൂ."
 
 #. Help goal
 #: activities/left_right_click/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Using the mouse. Left and right click training."
-msgstr ""
+msgstr "മൗസ് ഉപയോഗിക്കൽ. ഇടതും വലതും ക്ലിക്ക് പരിശീലിക്കൽ."
 
 #. Help manual
 #: activities/left_right_click/ActivityInfo.qml:23
@@ -15810,6 +15532,8 @@ msgid ""
 "A left click on a fish will move it to the pond. A right click on a monkey "
 "will move it to the tree. A message will show if you make the wrong click."
 msgstr ""
+"ഒരു മീനിൽ ഇടതു ക്ലിക്കു ചെയ്താൽ അത് കുളത്തിലെത്തും. ഒരു കുരങ്ങനിൽ വലതു ക്ലിക്കു ചെയ്താൽ അത് "
+"മരത്തിനു മുകളിലേക്കെത്തും. നിങ്ങൾ തെറ്റായ ക്ലിക്കു ചെയ്താൽ ഒരു സന്ദേശം കാണാം."
 
 #. Activity title
 #: activities/leftright/ActivityInfo.qml:15
@@ -17998,7 +17722,7 @@ msgstr "പ്രവർത്തന വിഭാഗ മെനു കാണിക
 #: activities/menu/ConfigurationItem.qml:296
 msgctxt "ConfigurationItem|"
 msgid "Ask for confirmation to exit"
-msgstr ""
+msgstr "പുറത്തുകടക്കണോ എന്നത് ഉറപ്പുവരുത്താനായി ആവശ്യപ്പെടുക"
 
 #: activities/menu/ConfigurationItem.qml:307
 msgctxt "ConfigurationItem|"
@@ -18508,37 +18232,28 @@ msgstr ""
 
 #. Activity title
 #: activities/morse_code/ActivityInfo.qml:18
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Discover the braille system"
 msgctxt "ActivityInfo|"
 msgid "Discover the International Morse code"
-msgstr "ബ്രായി ലിപി പഠിക്കാം"
+msgstr "അന്താരാഷ്ട്ര മോഴ്സ് കോഡ് പഠിക്കാം"
 
 #. Help title
 #: activities/morse_code/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn how to tell the time on an analog clock."
 msgctxt "ActivityInfo|"
 msgid "Learn how to communicate with the International Morse code."
-msgstr "അനലോഗ് ക്ലോക്കിലെ സമയം പറയാൻ പഠിക്കാം."
+msgstr "അന്താരാഷ്ട്ര മോഴ്സ് കോഡിലൂടെയുള്ള ആശയവിനിമയം പഠിക്കാം."
 
 #. Help goal
 #: activities/morse_code/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid ""
 "You have to send and receive letters and digits in International Morse code."
-msgstr ""
+msgstr "അന്താരാഷ്ട്ര മോഴ്സ് കോഡിൽ അക്ഷരങ്ങളും അക്കങ്ങളും അയക്കുകയും സ്വീകരിക്കുകയും ചെയ്യാൻ."
 
 #. Help prerequisite
 #: activities/morse_code/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Knowledge of arithmetic operations."
 msgctxt "ActivityInfo|"
 msgid "Knowledge of alphabets and digits."
-msgstr "കണക്കിലെ ക്രിയകളെ കുറിച്ചുള്ള അറിവ്."
+msgstr "ഇംഗ്ലീഷ് അക്ഷരങ്ങളും അക്കങ്ങളും അറിയണം."
 
 #. Help manual
 #: activities/morse_code/ActivityInfo.qml:27
@@ -18549,11 +18264,14 @@ msgid ""
 "have a look at the translation map which contains the code for all the "
 "letters and digits."
 msgstr ""
+"ഒന്നുകിൽ മോഴ്സ് കോഡിൽ ഒരു സന്ദേശം അയക്കാനോ അല്ലെങ്കിൽ വന്നിരിക്കുന്ന മോഴ്സ് കോഡു സന്ദേശത്തെ "
+"അക്ഷരങ്ങളിലേക്കോ അക്കങ്ങളിലേക്കോ മാറ്റുവാനോ നിങ്ങളോടു ചോദിക്കും. മോഴ്സ് കോഡ് പഠിക്കുവാൻ, എല്ലാ "
+"അക്ഷരങ്ങൾക്കും അക്കങ്ങൾക്കുമുള്ള കോഡ് അടങ്ങിയിരിക്കുന്ന വിവർത്തന മാപ് ഉപയോഗിക്കാവുന്നതാണ്."
 
 #: activities/morse_code/FirstScreen.qml:25
 msgctxt "FirstScreen|"
 msgid "Exploring Morse Code"
-msgstr ""
+msgstr "മോഴ്സ് കോഡ് പഠിക്കാം"
 
 #: activities/morse_code/FirstScreen.qml:64
 msgctxt "FirstScreen|"
@@ -18561,6 +18279,8 @@ msgid ""
 "Morse code was developed by Samuel Morse. It is a method of transmitting "
 "text information as a series of on-off tones, lights, or clicks."
 msgstr ""
+"സാമുവൽ മോഴ്സ് ആണ് മോഴ്സ് കോഡ് വികസിപ്പിച്ചത്. ഓൺ-ഓഫ് ശബ്ദങ്ങളുടെയോ ലൈറ്റുകളുടെയോ ക്ലിക്കുകളുടെയോ "
+"ശ്രേണിയായി വാക്കുകൾ കൈമാറുന്ന ഒരു രീതിയാണിത്."
 
 #: activities/morse_code/FirstScreen.qml:65
 msgctxt "FirstScreen|"
@@ -18573,40 +18293,36 @@ msgid ""
 "For example, the most common letter in English, the letter \"E\", has the "
 "shortest code, a single dot."
 msgstr ""
+"ഓരോ മോഴ്സ് കോഡ് ചിഹ്നവും ഒന്നുകിൽ ഒരു ഇംഗ്ലീഷ് അക്ഷരത്തെയോ ഒരു അക്കത്തിനെയോ അല്ലെങ്കിൽ ഒരു "
+"പ്രോസൈനിനെയോ (ചുരുക്കിയെഴുതിയ ചിഹ്നങ്ങൾ) പ്രതിനിധാനം ചെയ്യുന്നു. ഈ ചിഹ്നങ്ങൾ ഡോട്ടുകളുടെയും "
+"ഡാഷുകളുടെയും ഒരു സവിശേഷ ശ്രേണിയായാണ് സൂചിപ്പിക്കുന്നത്. ഒരു ഡാഷിന് ഡോട്ടിനേക്കാൾ മൂന്നിരട്ടി "
+"ദൈർഘ്യമുണ്ട്. ആശയവിനിമയത്തിന്റെ വേഗത കൂട്ടുവാൻ, ഏറ്റവും സാധാരണമായ അക്ഷരങ്ങൾക്ക് ഡോട്ടുകളുടെയും "
+"ഡാഷുകളുടെയും ചെറിയ ശ്രേണിയുള്ള രീതിയിലാണ് ഇതിന്റെ രൂപകൽപ്പന ചെയ്തിരിക്കുന്നത്.\n"
+"ഉദാഹരണത്തിന്, ഇംഗ്ലീഷിലെ ഏറ്റവും സാധാരണമായ അക്ഷരമായ \"E\" -യ്ക്ക് ഏറ്റവു ചെറിയ "
+"കോഡാണുള്ളത്, ഒരൊറ്റ ഡോട്ട്."
 
 #: activities/morse_code/FirstScreen.qml:90
-#, fuzzy
-#| msgctxt "FirstScreen|"
-#| msgid ""
-#| "When you are ready, click on me and try reproducing braille characters."
 msgctxt "FirstScreen|"
 msgid "When you are ready, click on Tux and we will converse in Morse code."
 msgstr ""
-"നിങ്ങൾ തയ്യാറാണെങ്കിൽ, എന്നിൽ ക്ലിക്ക് ചെയ്ത് ബ്രായി ക്യാരക്ടറുകൾ നിർമ്മിക്കാൻ ശ്രമിക്കൂ."
+"നിങ്ങൾ തയ്യാറാണെങ്കിൽ ടക്സിൽ ക്ലിക്ക് ചെയ്യൂ. എന്നിട്ട് നമുക്ക് മോഴ്സ് കോഡിൽ സംസാരിക്കാം."
 
 #: activities/morse_code/MorseCode.qml:346
-#, fuzzy, qt-format
-#| msgctxt "RomanNumerals|"
-#| msgid "Roman value: %1"
+#, qt-format
 msgctxt "MorseCode|"
 msgid "Morse value: %1"
-msgstr "റോമൻ വില: %1"
+msgstr "മോഴ്സ് വില: %1"
 
 #: activities/morse_code/MorseCode.qml:347
-#, fuzzy, qt-format
-#| msgctxt "RomanNumerals|"
-#| msgid "Arabic value: %1"
+#, qt-format
 msgctxt "MorseCode|"
 msgid "Alphabet/Numeric value: %1"
-msgstr "അറബി വില: %1"
+msgstr "അക്ഷര/അക്ക വില: %1"
 
 #: activities/morse_code/resource/1/Data.qml:13
-#, fuzzy
-#| msgctxt "Menu|"
-#| msgid "Letters"
 msgctxt "Data|"
 msgid "Letters."
-msgstr "അക്ഷരങ്ങൾ"
+msgstr "അക്ഷരങ്ങൾ."
 
 #: activities/morse_code/resource/1/Data.qml:18
 #: activities/morse_code/resource/1/Data.qml:34
@@ -18618,73 +18334,57 @@ msgstr "അക്ഷരങ്ങൾ"
 #, qt-format
 msgctxt "Data|"
 msgid "Send the message %1 in Morse code."
-msgstr ""
+msgstr "%1 എന്ന സന്ദേശം മോഴ്സ് കോഡിൽ അയക്കുക."
 
 #: activities/morse_code/resource/1/Data.qml:23
 #: activities/morse_code/resource/1/Data.qml:39
 #: activities/morse_code/resource/1/Data.qml:55
 #: activities/morse_code/resource/1/Data.qml:71
-#, fuzzy, qt-format
-#| msgctxt "RomanNumerals|"
-#| msgid "Convert the roman number %1 to arabic."
+#, qt-format
 msgctxt "Data|"
 msgid "Convert the message %1 to letters."
-msgstr "റോമൻ അക്കം %1-നെ അറബി അക്കത്തിലേക്കു മാറ്റൂ."
+msgstr "%1 എന്ന സന്ദേശം അക്ഷരങ്ങളിലേക്കു മാറ്റൂ."
 
 #: activities/morse_code/resource/1/Data.qml:28
 #: activities/morse_code/resource/1/Data.qml:44
 #: activities/morse_code/resource/1/Data.qml:60
 #: activities/morse_code/resource/1/Data.qml:76
-#, fuzzy
-#| msgctxt "advanced_colors|"
-#| msgid "Find the corn butterfly"
 msgctxt "Data|"
 msgid "Find the corresponding letter."
-msgstr "ഇളം മഞ്ഞ പൂമ്പാറ്റയെ കണ്ടുപിടിക്കുക"
+msgstr "ഉചിതമായ അക്ഷരം കണ്ടെത്തുക."
 
 #: activities/morse_code/resource/2/Data.qml:13
 msgctxt "Data|"
 msgid "Digits."
-msgstr ""
+msgstr "അക്കങ്ങൾ."
 
 #: activities/morse_code/resource/2/Data.qml:23
 #: activities/morse_code/resource/2/Data.qml:39
-#, fuzzy, qt-format
-#| msgctxt "RomanNumerals|"
-#| msgid "Convert the roman number %1 to arabic."
+#, qt-format
 msgctxt "Data|"
 msgid "Convert the message %1 to digits."
-msgstr "റോമൻ അക്കം %1-നെ അറബി അക്കത്തിലേക്കു മാറ്റൂ."
+msgstr "%1 എന്ന സന്ദേശം അക്കങ്ങളിലേക്കു മാറ്റൂ."
 
 #: activities/morse_code/resource/2/Data.qml:28
 #: activities/morse_code/resource/2/Data.qml:44
-#, fuzzy
-#| msgctxt "instruments|"
-#| msgid "Find the accordion"
 msgctxt "Data|"
 msgid "Find the corresponding digit."
-msgstr "കൈക്കിന്നരം കണ്ടെത്തൂ"
+msgstr "ഉചിതമായ അക്കം കണ്ടെത്തുക."
 
 #: activities/morse_code/resource/3/Data.qml:13
-#, fuzzy
-#| msgctxt "Menu|"
-#| msgid "Words"
 msgctxt "Data|"
 msgid "Words."
-msgstr "വാക്കുകൾ"
+msgstr "വാക്കുകൾ."
 
 #: activities/morse_code/resource/3/Data.qml:24
 msgctxt "Data|"
 msgid "Write the Morse code you hear."
-msgstr ""
+msgstr "നിങ്ങൾ കേൾക്കുന്ന മോഴ്സ് കോഡ് എഴുതുക."
 
 #: activities/morse_code/resource/3/Data.qml:34
-#, fuzzy
-#| msgctxt "RomanNumerals|"
-#| msgid "Convert the roman number %1 to arabic."
 msgctxt "Data|"
 msgid "Convert the message in a word."
-msgstr "റോമൻ അക്കം %1-നെ അറബി അക്കത്തിലേക്കു മാറ്റൂ."
+msgstr "സന്ദേശം വാക്കുകളിലേക്കു മാറ്റൂ."
 
 #. Activity title
 #: activities/mosaic/ActivityInfo.qml:15
@@ -18761,17 +18461,12 @@ msgstr ""
 
 #. Help manual
 #: activities/nine_men_morris/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Play with a friend. First take turns to place nine pieces, and then take "
-#| "turns to move your pieces."
 msgctxt "ActivityInfo|"
 msgid ""
 "Play with Tux. First take turns to place nine pieces, and then take turns to "
 "move your pieces."
 msgstr ""
-"സുഹൃത്തിന്റെ കൂടെ കളിക്കൂ. ആദ്യം ഊഴമെടുത്ത് ഒൻപത് കഷണങ്ങൾ വെക്കുക, എന്നിട്ട് ഊഴമനുസരിച്ച് നിങ്ങളുടെ "
+"ടക്സിന്റെ കൂടെ കളിക്കൂ. ആദ്യം ഊഴമെടുത്ത് ഒൻപത് കഷണങ്ങൾ വെക്കുക, എന്നിട്ട് ഊഴമനുസരിച്ച് നിങ്ങളുടെ "
 "കഷണങ്ങൾ നീക്കുക."
 
 #: activities/nine_men_morris/nine_men_morris.js:29
@@ -19401,6 +19096,16 @@ msgid ""
 "Tigers|live|in|forests.\n"
 "Football|is|a|team|game."
 msgstr ""
+"കാക്ക|പറന്നു|വന്നു.\n"
+"മലയുടെ|മീതെ|മഴ|പെയ്തു.\n"
+"കുട്ടി|അരി|വിതറി.\n"
+"പശു|പുല്ല്|തിന്നു.\n"
+"തവള|ചാടിച്ചാടി|പോയി.\n"
+"അവർ|വീട്ടിലേക്ക്|മടങ്ങി.\n"
+"പരുന്ത്|കോഴിയെ|കണ്ടു.\n"
+"ആന|നടന്നുനടന്നു|വരുന്നു.\n"
+"കുഞ്ഞിത്താറാവ്|പേടിച്ചു|വിറച്ചു.\n"
+"ഉറുമ്പ്|വള്ളം|തുഴഞ്ഞു."
 
 #: activities/ordering_sentences/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -19422,12 +19127,19 @@ msgid ""
 "Mom|has|asked|me|to|play|in|the|room.\n"
 "I|think|we|are|going|to|have|a|good|day."
 msgstr ""
+"പൂമ്പാറ്റ പൂവിൽ|നിന്നും|തേൻ|നുകർന്ന്|പറന്നു|പോയി.\n"
+"കുട്ടി മാവിൽ|നിന്നും|മൂന്നു|മാങ്ങ|പറിച്ചു.\n"
+"സുന്ദരിയായ|പൂമ്പാറ്റേ,|ഇത്തിരി|നിറം|എനിക്കു|തരുമോ?\n"
+"കുറുക്കൻ|മുന്തിരിക്കുലയ്ക്കു|നേരെ|വായും|പൊളിച്ചു|ചാടി.\n"
+"എല്ലാവരും|ഒപ്പം കൂടി|പല|കളികളും|കളിച്ചു.\n"
+"ചക്ക ലോകത്തിലെ|ഏറ്റവും|വലിയ|പഴങ്ങളിൽ|ഒന്നാണ്.\n"
+"തേങ്ങ|വിളഞ്ഞു|പാകമാകുന്നതിനു|മുമ്പുള്ള|അവസ്ഥയിൽ|അതിനെ|കരിക്ക്|എന്നു|പറയുന്നു.\n"
+"ഞാൻ|പറഞ്ഞ|കഥ|കേട്ട്|എല്ലാവരും|ചിരിച്ചു.\n"
+"അമ്മ|അപ്പുവിന്|നാല്|കവിതകൾ|വായിച്ചു|കൊടുത്തു.\n"
+"ആഹാരത്തിന്|മുമ്പും ശേഷവും|വൃത്തിയായ|കൈകൾ|കഴുകണം."
 
 #. Activity title
 #: activities/oware/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Play oware against Tux"
 msgctxt "ActivityInfo|"
 msgid "Play oware (against Tux)"
 msgstr "പല്ലാങ്കുഴി (ടക്സിനെതിരെ)"
@@ -19519,9 +19231,6 @@ msgstr "അസാധുവായ നീക്കം!"
 
 #. Activity title
 #: activities/oware_2players/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Play oware with a friend"
 msgctxt "ActivityInfo|"
 msgid "Play oware (with a friend)"
 msgstr "പല്ലാങ്കുഴി (സുഹൃത്തിന്റെ കൂടെ)"
@@ -24594,33 +24303,27 @@ msgstr "പരമാവധി വില: 500000."
 
 #. Activity title
 #: activities/tens_complement_find/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "instruments|"
-#| msgid "Find the trumpet"
 msgctxt "ActivityInfo|"
 msgid "Find ten's complement"
-msgstr "ട്രമ്പെറ്റ് കണ്ടെത്തൂ"
+msgstr "പത്തിന്റെ പൂരകം കണ്ടെത്താം"
 
 #. Help title
 #: activities/tens_complement_find/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Find the ten's complement of each number."
-msgstr ""
+msgstr "ഓരോ സംഖ്യയുടെയും പത്തിന്റെ പൂരകം കണ്ടെത്തുക."
 
 #. Help goal
 #: activities/tens_complement_find/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Learn to find ten's complement."
-msgstr ""
+msgstr "പത്തിന്റെ പൂരകം കണ്ടെത്താൻ പഠിക്കാം."
 
 #. Help prerequisite
 #: activities/tens_complement_find/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "ActivityInfo|"
 msgid "Numbers from 1 to 10 and additions."
-msgstr "0 തൊട്ട് 9 വരെയുള്ള സംഖ്യകൾ."
+msgstr "1 തൊട്ട് 10 വരെയുള്ള സംഖ്യകളും കൂട്ടലും."
 
 #: activities/tens_complement_find/ActivityInfo.qml:23
 #: activities/tens_complement_use/ActivityInfo.qml:24
@@ -24631,6 +24334,9 @@ msgid ""
 "corresponding lines. To correct the errors, click on the wrong numbers to "
 "remove them and repeat the previous steps."
 msgstr ""
+"എല്ലാ വരികളും പൂർത്തിയായാൽ, ഒകെ ബട്ടണിൽ അമർത്തി ഉത്തരങ്ങൾ സാധൂകരിക്കുക. തെറ്റായ ഉത്തരങ്ങൾ "
+"ഉണ്ടെങ്കിൽ, ആ വരികളിൽ ഒരു തെറ്റിന്റെ ചിഹ്നം കാണും. തെറ്റുകൾ തിരുത്താൻ, തെറ്റായ സംഖ്യകളിൽ "
+"ക്ലിക്കു ചെയ്ത് അവ മായിച്ചുകളഞ്ഞ് മുമ്പത്തെ ഘട്ടങ്ങൾ ആവർത്തിക്കുക."
 
 #. Help manual
 #: activities/tens_complement_find/ActivityInfo.qml:23
@@ -24639,42 +24345,35 @@ msgid ""
 "Create pairs of numbers equal to ten. Select a number in the list, then "
 "select an empty spot of an operation to move the selected number there."
 msgstr ""
+"പത്തിനു തുല്യമായ സംഖ്യ ജോടികൾ നിർമിക്കുക. പട്ടികയിൽ നിന്നും ഒരു സംഖ്യ തിരഞ്ഞെടുക്കുക, എന്നിട്ട് "
+"ഒരു ക്രിയയുടെ ഒഴിഞ്ഞഭാഗം തിരഞ്ഞെടുത്ത് ആ സംഖ്യയെ അങ്ങോട്ടേക്കു നീക്കുക."
 
 #: activities/tens_complement_find/resource/1/Data.qml:25
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "Data|"
 msgid "First number from 1 to 4."
-msgstr "0 തൊട്ട് 9 വരെയുള്ള സംഖ്യകൾ."
+msgstr "ആദ്യസംഖ്യ 1 തൊട്ട് 4 വരെ."
 
 #: activities/tens_complement_find/resource/2/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "Data|"
 msgid "First number from 5 to 9."
-msgstr "0 തൊട്ട് 9 വരെയുള്ള സംഖ്യകൾ."
+msgstr "ആദ്യസംഖ്യ 5 തൊട്ട് 9 വരെ."
 
 #: activities/tens_complement_find/resource/4/Data.qml:9
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Division of numbers"
 msgctxt "Data|"
 msgid "Find both numbers."
-msgstr "സംഖ്യകളുടെ ഹരണം"
+msgstr "രണ്ടു സംഖ്യകളും കണ്ടെത്തൂക."
 
 #. Activity title
 #: activities/tens_complement_swap/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Swap ten's complement"
-msgstr ""
+msgstr "വച്ചുമാറാം പത്തിന്റെ പൂരകമാക്കാം"
 
 #. Help title
 #: activities/tens_complement_swap/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Swap the numbers to create pairs equal to ten."
-msgstr ""
+msgstr "സംഖ്യകൾ വച്ചുമാറി പത്തിനു തുല്യമായ ജോടികൾ നിർമിക്കൂ."
 
 #. Help goal
 #: activities/tens_complement_swap/ActivityInfo.qml:19
@@ -24683,15 +24382,14 @@ msgid ""
 "Learn to use ten's complement to optimize the order of numbers in an "
 "operation."
 msgstr ""
+"പത്തിന്റെ പൂരകമുപയോഗിച്ച് ഒരു ക്രിയയിലുള്ള സംഖ്യകളെ മെച്ചപ്പെട്ട രീതിയിൽ ക്രമീകരിക്കുവാൻ "
+"പഠിക്കാൻ."
 
 #. Help prerequisite
 #: activities/tens_complement_swap/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "ActivityInfo|"
 msgid "Numbers from 1 to 30 and additions."
-msgstr "0 തൊട്ട് 9 വരെയുള്ള സംഖ്യകൾ."
+msgstr "1 തൊട്ട് 30 വരെയുള്ള സംഖ്യകളും കൂട്ടലും."
 
 #. Help manual
 #: activities/tens_complement_swap/ActivityInfo.qml:23
@@ -24703,57 +24401,49 @@ msgid ""
 "the answers. If some answers are incorrect, a cross icon will appear on the "
 "corresponding lines. Correct the errors, then press the OK button again."
 msgstr ""
+"ഓരോ ബ്രാക്കറ്റിനകത്തും പത്തിനു തുല്യമായ സംഖ്യ ജോടികളാക്കുക. ഒരു സംഖ്യ തിരഞ്ഞെടുക്കുക, എന്നിട്ട് "
+"അതേ ക്രിയയിലെ മറ്റൊരു സംഖ്യ തിരഞ്ഞെടുത്ത് അവയുടെ സ്ഥാനം വച്ചുമാറാം. എല്ലാ വരികളും "
+"പൂർത്തിയായാൽ, ഒകെ ബട്ടണിൽ അമർത്തി ഉത്തരങ്ങൾ സാധൂകരിക്കുക. തെറ്റായ ഉത്തരങ്ങൾ ഉണ്ടെങ്കിൽ, ആ "
+"വരികളിൽ ഒരു തെറ്റിന്റെ ചിഹ്നം കാണും. തെറ്റുകൾ തിരുത്തി, വീണ്ടും ഒകെ ബട്ടണിൽ അമർത്തുക."
 
 #: activities/tens_complement_swap/resource/1/Data.qml:36
-#, fuzzy
-#| msgctxt "Warning|"
-#| msgid "1 is not a prime number."
 msgctxt "Data|"
 msgid "2 pairs to make from 4 numbers."
-msgstr "1 ഒരു അഭാജ്യ സംഖ്യയല്ല."
+msgstr "4 സംഖ്യകൾകൊണ്ട് 2 ജോടികൾ ഉണ്ടാക്കുക."
 
 #: activities/tens_complement_swap/resource/2/Data.qml:9
-#, fuzzy
-#| msgctxt "Warning|"
-#| msgid "1 is not a prime number."
 msgctxt "Data|"
 msgid "2 pairs to make from 5 numbers."
-msgstr "1 ഒരു അഭാജ്യ സംഖ്യയല്ല."
+msgstr "5 സംഖ്യകൾകൊണ്ട് 2 ജോടികൾ ഉണ്ടാക്കുക."
 
 #: activities/tens_complement_swap/resource/3/Data.qml:9
-#, fuzzy
-#| msgctxt "Warning|"
-#| msgid "1 is not a prime number."
 msgctxt "Data|"
 msgid "3 pairs to make from 6 numbers."
-msgstr "1 ഒരു അഭാജ്യ സംഖ്യയല്ല."
+msgstr "6 സംഖ്യകൾകൊണ്ട് 3 ജോടികൾ ഉണ്ടാക്കുക."
 
 #. Activity title
 #: activities/tens_complement_use/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Use ten's complement"
-msgstr ""
+msgstr "പത്തിന്റെ പൂരകം ഉപയോഗിക്കാം"
 
 #. Help title
 #: activities/tens_complement_use/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Use a ten's complement to simplify the operation."
-msgstr ""
+msgstr "ക്രിയ ലളിതമാക്കാനായി ഒരു പത്തിന്റെ പൂരകം ഉപയോഗിക്കുക."
 
 #. Help goal
 #: activities/tens_complement_use/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Learn a practical use of ten's complement."
-msgstr ""
+msgstr "പത്തിന്റെ പൂരകത്തിന്റെ ഒരു പ്രായോഗിക ഉപയോഗം പഠിക്കാൻ."
 
 #. Help prerequisite
 #: activities/tens_complement_use/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "ActivityInfo|"
 msgid "Numbers from 1 to 50 and additions."
-msgstr "0 തൊട്ട് 9 വരെയുള്ള സംഖ്യകൾ."
+msgstr "1 തൊട്ട് 50 വരെയുള്ള സംഖ്യകളും കൂട്ടലും."
 
 #. Help manual
 #: activities/tens_complement_use/ActivityInfo.qml:23
@@ -24763,30 +24453,24 @@ msgid ""
 "parentheses. Select a number in the list, then select an empty spot of an "
 "operation to move the selected number there."
 msgstr ""
+"കൂട്ടലുകളെ വേർപെടുത്തി ഓരോ ബ്രാക്കറ്റിലും പത്തിനു തുല്യമായ സംഖ്യ ജോടികൾ നിർമിക്കുക. "
+"തന്നിരിക്കുന്ന പട്ടികയിൽ നിന്നും ഒരു സംഖ്യ തിരഞ്ഞെടുക്കുക, എന്നിട്ട് ഒരു ക്രിയയുടെ ഒഴിഞ്ഞഭാഗം "
+"തിരഞ്ഞെടുത്ത് ആ സംഖ്യയെ അങ്ങോട്ടേക്കു നീക്കുക."
 
 #: activities/tens_complement_use/resource/1/Data.qml:43
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Between 1 and 10."
 msgctxt "Data|"
 msgid "Result between 11 and 19."
-msgstr "1-നും 10-നും ഇടയിൽ."
+msgstr "ഉത്തരം 11-നും 19-നും ഇടയിൽ."
 
 #: activities/tens_complement_use/resource/2/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Result between 20 and 29."
-msgstr "%1-നും %2-നും ഇടയിലുള്ള സംഖ്യകൾ."
+msgstr "ഉത്തരം 20-നും 29-നും ഇടയിൽ."
 
 #: activities/tens_complement_use/resource/3/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Between 20 and 50."
 msgctxt "Data|"
 msgid "Result between 30 and 50."
-msgstr "20-നും 50-നും ഇടയിൽ."
+msgstr "ഉത്തരം 30-നും 50-നും ഇടയിൽ."
 
 #. Activity title
 #: activities/tic_tac_toe/ActivityInfo.qml:18
@@ -24813,23 +24497,18 @@ msgstr ""
 
 #. Help manual
 #: activities/tic_tac_toe/ActivityInfo.qml:27
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Play with a friend. Take turns to click on the square which you want to "
-#| "mark. The first player to create a line of 3 marks wins."
 msgctxt "ActivityInfo|"
 msgid ""
 "Play with Tux. Take turns to click on the square which you want to mark. The "
 "first player to create a line of 3 marks wins."
 msgstr ""
-"സുഹൃത്തിന്റെ കൂടെ കളിക്കൂ. മാറി മാറി നിങ്ങൾക്കു വേണ്ട കളത്തിൽ ക്ലിക്ക് ചെയ്ത് മാർക്ക് ചെയ്യൂ. 3 "
+"ടക്സിന്റെ കൂടെ കളിക്കൂ. മാറി മാറി നിങ്ങൾക്കു വേണ്ട കളത്തിൽ ക്ലിക്ക് ചെയ്ത് മാർക്ക് ചെയ്യൂ. 3 "
 "മാർക്കുകളുള്ള ഒരു വരി ആദ്യം നിർമ്മിക്കുന്ന ആൾ വിജയി."
 
 #: activities/tic_tac_toe/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Tux will play better when you increase the level."
-msgstr ""
+msgstr "ഓരോ ഘട്ടം കൂടുംതോറും ടക്സ് കൂടുതൽ നന്നായി കളിക്കും."
 
 #. Activity title
 #: activities/tic_tac_toe_2players/ActivityInfo.qml:18
@@ -24917,11 +24596,6 @@ msgid "As the sun rises, the water of the sea starts heating and evaporates."
 msgstr "സൂര്യനുദിക്കുമ്പോൾ കടലിലെ വെള്ളം ചൂടായി ബാഷ്പീകരിക്കുന്നു."
 
 #: activities/watercycle/Watercycle.qml:80
-#, fuzzy
-#| msgctxt "Watercycle|"
-#| msgid ""
-#| "Water vapor condenses to form cloud and when clouds become heavy, it "
-#| "rains. Click on the cloud."
 msgctxt "Watercycle|"
 msgid ""
 "Water vapor condenses to form clouds and when clouds become heavy, it rains. "
@@ -24972,12 +24646,6 @@ msgstr ""
 "നിന്നും ജലം ബാഷ്പീകരിക്കാനുള്ള ഊർജ്ജം നല്കുന്നത്."
 
 #: activities/watercycle/Watercycle.qml:115
-#, fuzzy
-#| msgctxt "Watercycle|"
-#| msgid ""
-#| "Plants also lose water to the air through transpiration. The water vapor "
-#| "cools down forming tiny droplets in clouds. When the clouds meet cool air "
-#| "over the land, precipitation is triggered and fall down as rain."
 msgctxt "Watercycle|"
 msgid ""
 "Plants also lose water to the air through transpiration. The water vapor "
@@ -25043,17 +24711,14 @@ msgid "Type the complete word as it falls, before it reaches the ground."
 msgstr "വീണു കൊണ്ടിരിക്കുന്ന വാക്ക് താഴെയെത്തുന്നതിനു മുമ്പ് കീബോർഡിൽ ടൈപ്പ് ചെയ്യുക."
 
 #: core/ChangeLog.qml:30
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "New maps and update of the maps for geography activities"
 msgctxt "ChangeLog|"
 msgid "Map of Spain added for geography activity"
-msgstr "പുതിയ ഭൂപടങ്ങളും ഭൂമിശാസ്ത്ര ആക്റ്റിവിറ്റികളിലുള്ള ഭൂപടങ്ങളുടെ അപ്ഡേറ്റും"
+msgstr "ഭൂമിശാസ്ത്ര ആക്റ്റിവിറ്റിയിൽ സ്പെയിനിന്റെ ഭൂപടം ചേർത്തു"
 
 #: core/ChangeLog.qml:31
 msgctxt "ChangeLog|"
 msgid "Voices added for Ukrainian"
-msgstr ""
+msgstr "ഉക്രേനിയൻ ശബ്ദങ്ങൾ ചേർത്തിട്ടുണ്ട്"
 
 #: core/ChangeLog.qml:32
 msgctxt "ChangeLog|"
@@ -25061,6 +24726,8 @@ msgid ""
 "New command-line option to list all the activities and start on a specific "
 "one"
 msgstr ""
+"എല്ലാ പ്രവർത്തനങ്ങളു പട്ടികപ്പെടുത്തുന്നതിനും ഒരു പ്രത്യേക പ്രവർത്തനത്തിൽ തുടങ്ങുന്നതിനുമുള്ള പുതിയ "
+"കമാന്റ്-ലൈൻ ഓപ്ഷൻ"
 
 #: core/ChangeLog.qml:33 core/ChangeLog.qml:68 core/ChangeLog.qml:71
 #: core/ChangeLog.qml:77
@@ -25085,29 +24752,27 @@ msgid ""
 "Reduce the size of the packages for all platforms and of the external word "
 "images set"
 msgstr ""
+"എല്ലാ പ്ലാറ്റ്ഫോമുകൾക്കുമുള്ള പാക്കേജുകളുടെയും എക്സ്റ്റേർണൽ വേർഡ് ഇമേജുകളുടെയും വലിപ്പം കുറച്ചു"
 
 #: core/ChangeLog.qml:40
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "New speed setting in several activities."
 msgctxt "ChangeLog|"
 msgid "Improve images quality in several activities"
-msgstr "നിരവധി പ്രവർത്തനങ്ങളിൽ പുതുതായി വേഗത ക്രമീകരണം ഉൾപ്പെടുത്തിയിട്ടുണ്ട്."
+msgstr "നിരവധി പ്രവർത്തനങ്ങളിൽ ചിത്രങ്ങളുടെ ഗുണനിലവാരം മെച്ചപ്പെടുത്തിയിട്ടുണ്ട്"
 
 #: core/ChangeLog.qml:41
 msgctxt "ChangeLog|"
 msgid "Fix some transitions in renewable_energy/watercycle on some platforms"
-msgstr ""
+msgstr "പുനസ്ഥാപിക്കാവുന്ന ഊർജം/ജലചക്രം എന്നിവയിൽ ചില ട്രാൻസിഷനുകൾ ഫിക്സു ചെയ്തു"
 
 #: core/ChangeLog.qml:42
 msgctxt "ChangeLog|"
 msgid "Fix dead keys ignored on Linux for typing activities"
-msgstr ""
+msgstr "ലിനക്സിൽ വർക്കു ചെയ്യാതിരുന്ന ടൈപ്പു ചെയ്യാനുള്ള പ്രവർത്തനങ്ങളിലെ കീകൾ ഫിക്സു ചെയ്തു"
 
 #: core/ChangeLog.qml:43
 msgctxt "ChangeLog|"
 msgid "Fix level reset when changing level manually in Logical associations"
-msgstr ""
+msgstr "പട്ടിക പൂർത്തിയാക്കൂ എന്നതിൽ ഘട്ടങ്ങൾ മാറ്റുമ്പോൾ ഉണ്ടായിരുന്ന ലവൽ റീസെറ്റ് ഫിക്സു ചെയ്തു"
 
 #: core/ChangeLog.qml:47
 msgctxt "ChangeLog|"
@@ -25401,12 +25066,10 @@ msgid "GCompris %1"
 msgstr "ജികോംപ്രി %1"
 
 #: core/DialogAbout.qml:57
-#, fuzzy, qt-format
-#| msgctxt "DialogAbout|"
-#| msgid "Based on Qt %1"
+#, qt-format
 msgctxt "DialogAbout|"
 msgid "Based on Qt %1 and %2"
-msgstr "ക്യൂട്ട് %1 ഉപയോഗിച്ച്"
+msgstr "ക്യൂട്ട് %1-ഉം %2-ഉം ഉപയോഗിച്ച്"
 
 #: core/DialogAbout.qml:61
 msgctxt "DialogAbout|"
@@ -25794,56 +25457,51 @@ msgstr "ജികോംപ്രിയുടെ ഭാഷ"
 #: core/main.cpp:162
 msgctxt "QObject|"
 msgid "Run GCompris with the default system cursor."
-msgstr "ജികോംപ്രി ഡിഫോൾട്ടായുള്ള സിസ്റ്റം കഴ്സർ ഉപയോഗിച്ച് പ്രവർത്തിപ്പിക്കൂ."
+msgstr "Run GCompris with the default system cursor."
 
 #: core/main.cpp:166
 msgctxt "QObject|"
 msgid "Run GCompris without cursor (touch screen mode)."
-msgstr "ജികോംപ്രി കഴ്സർ ഇല്ലാതെ (ടച്ച് സ്ക്രീൻ മോ‍ഡ്) പ്രവർത്തിപ്പിക്കൂ."
+msgstr "Run GCompris without cursor (touch screen mode)."
 
 #: core/main.cpp:170
 msgctxt "QObject|"
 msgid "Run GCompris in fullscreen mode."
-msgstr "ജികോംപ്രി ഫുൾസ്ക്രീൻ മോ‍ഡിൽ പ്രവർത്തിപ്പിക്കൂ."
+msgstr "Run GCompris in fullscreen mode."
 
 #: core/main.cpp:174
 msgctxt "QObject|"
 msgid "Run GCompris in window mode."
-msgstr "ജികോംപ്രി വിൻഡോ മോ‍ഡിൽ പ്രവർത്തിപ്പിക്കൂ."
+msgstr "Run GCompris in window mode."
 
 #: core/main.cpp:178
 msgctxt "QObject|"
 msgid "Run GCompris with sound enabled."
-msgstr "ജികോംപ്രി ശബ്ദത്തോടുകൂടി പ്രവർത്തിപ്പിക്കൂ."
+msgstr "Run GCompris with sound enabled."
 
 #: core/main.cpp:182
 msgctxt "QObject|"
 msgid "Run GCompris without sound."
-msgstr "ജികോംപ്രി ശബ്ദമില്ലാതെ പ്രവർത്തിപ്പിക്കൂ."
+msgstr "Run GCompris without sound."
 
 #: core/main.cpp:185
 msgctxt "QObject|"
 msgid "Disable the kiosk mode (default)."
-msgstr "കിയോസ്ക് മോഡ് (ഡിഫോൾട്ട്) കളയുക."
+msgstr "Disable the kiosk mode (default)."
 
 #: core/main.cpp:188
 msgctxt "QObject|"
 msgid "Enable the kiosk mode."
-msgstr "കിയോസ്ക് മോഡ് സാധ്യമാക്കുക."
+msgstr "Enable the kiosk mode."
 
 #: core/main.cpp:192
-#, fuzzy
-#| msgctxt "QObject|"
-#| msgid ""
-#| "Use software renderer instead of openGL (slower but should run with any "
-#| "graphical card, needs Qt 5.8 minimum)."
 msgctxt "QObject|"
 msgid ""
 "Use software renderer instead of openGL (slower but should run with any "
 "graphical card)."
 msgstr ""
-"openGL-നു പകരം software renderer ഉപയോഗിക്കുക (വേഗത കുറവാണ് പക്ഷേ ഏതു ഗ്രാഫിക്കൽ കാർഡു "
-"വെച്ചും റൺ ആകും, ക്യൂട്ട് 5.8 എങ്കിലും വേണം)."
+"Use software renderer instead of openGL (slower but should run with any "
+"graphical card)."
 
 #: core/main.cpp:195
 msgctxt "QObject|"
@@ -25851,18 +25509,18 @@ msgid ""
 "Use openGL renderer instead of software (faster but crash potentially "
 "depending on your graphical card)."
 msgstr ""
-"സോഫ്റ്റ്‍വെയറിനു പകരം openGL renderer ഉപയോഗിക്കുക (വേഗത കൂടുതലാണ് പക്ഷേ നിങ്ങളുടെ "
-"ഗ്രാഫിക്കൽ കാർഡിനനുസരിച്ച് ക്രാഷ് ആകാൻ സാധ്യതയുണ്ട്)."
+"Use openGL renderer instead of software (faster but crash potentially "
+"depending on your graphical card)."
 
 #: core/main.cpp:199
 msgctxt "QObject|"
 msgid "Specify the activity when starting GCompris."
-msgstr ""
+msgstr "Specify the activity when starting GCompris."
 
 #: core/main.cpp:204
 msgctxt "QObject|"
 msgid "Outputs all the available activities on the standard output."
-msgstr ""
+msgstr "Outputs all the available activities on the standard output."
 
 #: core/main.qml:233
 msgctxt "main|"
