@@ -63,10 +63,11 @@ def generate_for_locale(changelog_qml, locale):
           if m:
             activityVersion = m.group(1)
             if int(activityVersion) == int(version):
+              po_title = po.find(title);
               if locale == "en-US":
                 translated_title = title;
-              elif po and po.find(title) and not po.find(title).fuzzy:
-                translated_title = po.find(title).msgstr;
+              elif po_title and po_title.translated():
+                translated_title = po_title.msgstr;
               else: # The translation is not complete, we skip the language
                 if verbose:
                   print("Skip %s because %s is not translated" % (locale, title));
@@ -82,9 +83,10 @@ def generate_for_locale(changelog_qml, locale):
     if version == str(version_data['versionCode']):
       content = version_data['content'];
       for feature in content:
+        po_feature = po.find(feature);
         if locale == "en-US":
           translated_feature = feature;
-        elif po and po.find(feature) and not po.find(feature).fuzzy:
+        elif po_feature and po_feature.translated():
           translated_feature = po.find(feature).msgstr;
         else: # The translation is not complete, we skip the language
           if verbose:
