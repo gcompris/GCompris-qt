@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GCompris-QT\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2023-01-11 23:24+0200\n"
+"PO-Revision-Date: 2023-01-15 18:50+0200\n"
 "Last-Translator: Rolandas Jakštys <rolandas@jakstys.lt>\n"
 "Language-Team: Lithuanian <kde-i18n-lt@kde.org>\n"
 "Language: lt\n"
@@ -9143,42 +9143,42 @@ msgstr "Pažymėk pusę skritulio."
 #: activities/fractions_create/resource/3/Data.qml:49
 msgctxt "Data|"
 msgid "Select one-third of the pie."
-msgstr "Pažymėk vieną trečiąją skritulio."
+msgstr "Pažymėk trečdalį skritulio."
 
 #: activities/fractions_create/resource/1/Data.qml:30
 #: activities/fractions_create/resource/3/Data.qml:41
 #: activities/fractions_create/resource/3/Data.qml:55
 msgctxt "Data|"
 msgid "Select two-thirds of the pie."
-msgstr "Pažymėk dvi trečiąsias skritulio."
+msgstr "Pažymėk du trečdalius skritulio."
 
 #: activities/fractions_create/resource/1/Data.qml:36
 #: activities/fractions_create/resource/3/Data.qml:61
 msgctxt "Data|"
 msgid "Select one-quarter of the pie."
-msgstr "Pažymėk vieną ketvirtąją skritulio."
+msgstr "Pažymėk ketvirtį skritulio."
 
 #: activities/fractions_create/resource/1/Data.qml:42
 #: activities/fractions_create/resource/3/Data.qml:67
 msgctxt "Data|"
 msgid "Select two-fifths of the pie."
-msgstr "Pažymėk dvi penktąsias skritulio."
+msgstr "Pažymėk du penktadalius skritulio."
 
 #: activities/fractions_create/resource/1/Data.qml:50
 msgctxt "Data|"
 msgid "Select one pie and one-quarter of a pie."
-msgstr "Pažymėk vieną pilną skritulį kartu su dar viena ketvirtąja skritulio."
+msgstr "Pažymėk vieną pilną skritulį kartu su dar ketvirčiu skritulio."
 
 #: activities/fractions_create/resource/1/Data.qml:56
 msgctxt "Data|"
 msgid "Select one pie and two-fifths of a pie."
 msgstr ""
-"Pažymėk vieną pilną skritulį kartu su dar dvejomis penktosiomis skritulio."
+"Pažymėk vieną pilną skritulį kartu su dar dviem penktadaliais skritulio."
 
 #: activities/fractions_create/resource/1/Data.qml:62
 msgctxt "Data|"
 msgid "Select one pie and one-third of a pie."
-msgstr "Pažymėk vieną pilną skritulį kartu su dar viena trečiąja skritulio."
+msgstr "Pažymėk vieną pilną skritulį kartu su dar trečdaliu skritulio."
 
 #: activities/fractions_create/resource/1/Data.qml:68
 msgctxt "Data|"
@@ -9189,7 +9189,7 @@ msgstr "Pažymėk pusantro skritulio."
 msgctxt "Data|"
 msgid "Select one pie and three-quarters of a pie."
 msgstr ""
-"Pažymėk vieną pilną skritulį kartu su dar trimis ketvirtosiomis skritulio."
+"Pažymėk vieną pilną skritulį kartu su dar trimis ketvirčiais skritulio."
 
 #: activities/fractions_create/resource/10/Data.qml:9
 msgctxt "Data|"
@@ -9221,53 +9221,52 @@ msgstr "Pažymėk pusę kvadrato."
 #: activities/fractions_create/resource/4/Data.qml:49
 msgctxt "Data|"
 msgid "Select one-third of the square."
-msgstr "Pažymėk vieną trečiąją kvadrato."
+msgstr "Pažymėk trečdalį kvadrato."
 
 #: activities/fractions_create/resource/2/Data.qml:30
 #: activities/fractions_create/resource/4/Data.qml:41
 #: activities/fractions_create/resource/4/Data.qml:55
 msgctxt "Data|"
 msgid "Select two-thirds of the square."
-msgstr "Pažymėk dvi trečiąsias kvadrato."
+msgstr "Pažymėk du trečdalius kvadrato."
 
 #: activities/fractions_create/resource/2/Data.qml:36
 #: activities/fractions_create/resource/4/Data.qml:61
 msgctxt "Data|"
 msgid "Select one-quarter of the square."
-msgstr "Pažymėk vieną ketvirtąją kvadrato."
+msgstr "Pažymėk ketvirtį kvadrato."
 
 #: activities/fractions_create/resource/2/Data.qml:42
 #: activities/fractions_create/resource/4/Data.qml:67
 msgctxt "Data|"
 msgid "Select two-fifths of the square."
-msgstr "Pažymėk dvi penktąsias kvadrato."
+msgstr "Pažymėk du penktadalius kvadrato."
 
 #: activities/fractions_create/resource/2/Data.qml:50
 msgctxt "Data|"
 msgid "Select one square and one-quarter of a square."
-msgstr "Pažymėk vieną pilną kvadratą kartu su dar viena ketvirtąja kvadrato."
+msgstr "Pažymėk vieną pilną kvadratą kartu su dar ketvirčiu kvadrato."
 
 #: activities/fractions_create/resource/2/Data.qml:56
 msgctxt "Data|"
 msgid "Select one square and two-fifths of a square."
 msgstr ""
-"Pažymėk vieną pilną kvadratą kartu su dar dvejomis penktosiomis kvadrato."
+"Pažymėk vieną pilną kvadratą kartu su dar dvies penktadaliais kvadrato."
 
 #: activities/fractions_create/resource/2/Data.qml:62
 msgctxt "Data|"
 msgid "Select one square and one-third of a square."
-msgstr "Pažymėk vieną pilną kvadratą kartu su dar viena trečiąja kvadrato."
+msgstr "Pažymėk vieną pilną kvadratą kartu su dar trečdaliu kvadrato."
 
 #: activities/fractions_create/resource/2/Data.qml:68
 msgctxt "Data|"
 msgid "Select one square and one half of a square."
-msgstr "Pažymėk vieną pilną kvadratą kartu su dar viena puse kvadrato."
+msgstr "Pažymėk pusantro kvadrato."
 
 #: activities/fractions_create/resource/2/Data.qml:74
 msgctxt "Data|"
 msgid "Select one square and three-quarters of a square."
-msgstr ""
-"Pažymėk vieną pilną kvadratą kartu su dar trimis ketvirtosiomis kvadrato."
+msgstr "Pažymėk vieną pilną kvadratą kartu su dar trimis ketvirčiais kvadrato."
 
 #: activities/fractions_create/resource/3/Data.qml:9
 msgctxt "Data|"
@@ -9277,7 +9276,7 @@ msgstr "Nesuprastintos trupmenos su skrituliu."
 #: activities/fractions_create/resource/3/Data.qml:73
 msgctxt "Data|"
 msgid "Select three-fifths of the pie."
-msgstr "Pažymėk tris penktąsias skritulio."
+msgstr "Pažymėk tris penktadalius skritulio."
 
 #: activities/fractions_create/resource/4/Data.qml:9
 msgctxt "Data|"
@@ -19363,8 +19362,8 @@ msgid ""
 "You are provided with some words. Drag and drop them to the upper area to "
 "form a meaningful sentence."
 msgstr ""
-"Pateikti keli žodžiai. Nuvilk juos į viršutinę sritį ir sudaryk prasmingą "
-"sakinį."
+"Prisimink Justino Marcinkevičiaus „Voro vestuves“, ir nuvilk žodžius į "
+"viršutinę sritį, sudarydamas sakinius iš šios eiliuotos pasakos."
 
 #: activities/ordering_sentences/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -19386,16 +19385,17 @@ msgid ""
 "Tigers|live|in|forests.\n"
 "Football|is|a|team|game."
 msgstr ""
-"Loja|mano|mylimiausias|šuo.\n"
-"Jokūbo|kelnės|su|kišenėmis.\n"
-"Mergaitė|skaito|labai|įdomią|knygą.\n"
-"Aš|turiu|malonų|draugą.\n"
-"Koks|gražus|vaizdas!\n"
-"Petriukas|įšoko|į|gilų|baseiną.\n"
-"Mikalojus|nori|naujos|knygos.\n"
-"Mama|Jonui|pagamino|didelį|sumuštinį.\n"
-"Briedis|gyvena|miške.\n"
-"Lietuvoje|krepšinis|yra|populiariausias|žaidimas."
+"Tabalai|saulutę|ves.\n"
+"Gal|reikėtų|perspėt|saulę?\n"
+"Vabalai|po|krūmu|laukė.\n"
+"Tik|staiga|šakelė|triokšt!\n"
+"Džiaugias|vabalas|be|ūsų.\n"
+"Kaip|pupa|kupra|iškilo.\n"
+"Vabalai|kasdien|jį|svėrė.\n"
+"Žvirblis|taškėsi|prie|klano.\n"
+"Ką|be|saulės|jis|darys?\n"
+"Jo|tinklai|muses|jam|gaudė.\n"
+"Tabalai|per|dieną|snaudė."
 
 #: activities/ordering_sentences/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -19417,17 +19417,16 @@ msgid ""
 "Mom|has|asked|me|to|play|in|the|room.\n"
 "I|think|we|are|going|to|have|a|good|day."
 msgstr ""
-"Vienas|turtingas|karalius|turėjo|tris|labai|gražias|dukteris\n"
-"Vieną|dieną|mama|priruošė|Raudonkepuraitei|pilną|krepšelį|įvairiausių|"
-"gėrybių.\n"
-"Ar|mūsų|pietums|užsakyti|tiktai|šaltų|sumuštinių?\n"
-"Mergina|užsirišo|teniso|batelius|ir|išėjo|į|lauką.\n"
-"Semas|suvalgė|penkis|didžiulius|saldainių|batonėlius|ir|jam|pasidarė|bloga.\n"
-"Mūsų|šeima|kiekvienais|metais|atostogauja|prie|jūros|ir|kalnuose.\n"
-"Dėdė|Bernardas|padovanojo|man|raudoną|žaislinį|sunkvežimį.\n"
-"Suvalgę|keptas|bulves|galėsite|valgyti|ledus|su|braškėmis.\n"
-"Mama|paprašė|manęs|žaisti|savo|kambaryje.\n"
-"Tikriausiai|mūsų|diena|bus|labai|gera."
+"Vyturiukai|ir|geniai|jau|nusiprausė|seniai.\n"
+"Viso|miško|vabalai|jį|vadino|Tabalai.\n"
+"Kaip|dabar|pagausi|ją|begaliniam|danguje?\n"
+"Mūs|valstybei|tarp|žolių|trūksta|saulės|spindulių.\n"
+"Tie|žiogeliai|tarp|žolių|grojo|vorui|smuikeliu.\n"
+"Ponas|voras|gal|truputį|ir|per|storas.\n"
+"Tegyvuoja|mūs|karalius|Ir|visa|karalija|Tabalai|Tabalija!\n"
+"Davė|jam|išgert|lašų|nuo|visokių|ten|šašų.\n"
+"Nes|be|saulės|šilumos|dar|baisiau|kaip|be|mamos.\n"
+"Kad|saulutė|skaisčiai|šviestų|virš|visų|laukų|ir|miestų."
 
 #. Activity title
 #: activities/oware/ActivityInfo.qml:14
@@ -22324,7 +22323,7 @@ msgid ""
 "Can you help him? First, place the children in the center, then drag the "
 "pieces of candy to each of them."
 msgstr ""
-"Paulius nori po lygiai padalinti 2 saldainius dviem savo draugėms. Ar gali "
+"Aleksas nori po lygiai padalinti 2 saldainius dviem savo draugėms. Ar gali "
 "jam padėti? Pradžioje, nutempk mergaites į ekrano vidurį, tada nutempk "
 "saldainius kiekvienai iš jų."
 
@@ -22416,13 +22415,13 @@ msgid ""
 "Alice wants to share 4 pieces of candy equally between 4 of her girl "
 "friends. Can you help her?"
 msgstr ""
-"Alisa nori po lygiai padalinti 4 saldainius keturioms savo draugėms. Ar gali "
-"jai padėti?"
+"Rugilė nori po lygiai padalinti 4 saldainius keturioms savo draugėms. Ar "
+"gali jai padėti?"
 
 #: activities/share/resource/1/Data.qml:132
 msgctxt "Data|"
 msgid "Now, Alice wants to give 8 pieces of candy to her friends."
-msgstr "Dabar Alisa savo draugams nori padalinti 8 saldainius."
+msgstr "Dabar Rugilė savo draugams nori padalinti 8 saldainius."
 
 #: activities/share/resource/1/Data.qml:142
 msgctxt "Data|"
@@ -22431,14 +22430,14 @@ msgid ""
 "that they all have the same amount. The girls already have some pieces of "
 "candy."
 msgstr ""
-"Alisos draugai turi saldainių. Ar gali padėti Alisai padalinti 10 saldainių "
-"draugams, kad jie turėtų po lygiai? Nutempk vaikus į ekrano vidurį ir "
-"pamatysi, kiek jie jau turi saldainių."
+"Rugilės draugai turi saldainių. Ar gali padėti Rugilei padalinti 10 "
+"saldainių draugams, kad jie turėtų po lygiai? Nutempk vaikus į ekrano vidurį "
+"ir pamatysi, kiek jie jau turi saldainių."
 
 #: activities/share/resource/1/Data.qml:152
 msgctxt "Data|"
 msgid "Alice wants to give 16 pieces of candy to her friends."
-msgstr "Alisa nori po lygiai padalinti 16 saldainių savo draugams."
+msgstr "Rugilė nori po lygiai padalinti 16 saldainių savo draugams."
 
 #: activities/share/resource/1/Data.qml:162
 msgctxt "Data|"
@@ -22447,7 +22446,7 @@ msgid ""
 "some pieces of candy. Can you help her split 14 pieces of candy so that all "
 "her friends have the same amount?"
 msgstr ""
-"Alisai liko 14 saldainių. Juos ji nori išdalinti savo draugams, kurie jau "
+"Rugilei liko 14 saldainių. Juos ji nori išdalinti savo draugams, kurie jau "
 "turi saldainių. Ar gali padėti jai išdalinti saldainius, kad draugai turėtų "
 "po lygiai? Nutempęs vaikus į ekrano vidurį pamatysi, kiek jie jau turi "
 "saldainių."
@@ -22506,7 +22505,7 @@ msgid ""
 "Charles wants to share his 6 pieces of candy equally with 2 of his girl "
 "friends. Can he split the pieces of candy equally?"
 msgstr ""
-"Čarlis nori padalinti 6 saldainius dviem draugėms. Ar jis gali padalinti "
+"Bernardas nori padalinti 6 saldainius dviem draugėms. Ar jis gali padalinti "
 "saldainius po lygiai?"
 
 #: activities/share/resource/1/Data.qml:236
@@ -22626,7 +22625,7 @@ msgstr ""
 #: activities/share/resource/2/Data.qml:122
 msgctxt "Data|"
 msgid "Now, Alice wants to share 8 pieces of candy equally among her friends."
-msgstr "Dabar Alisa savo draugams nori padalinti po lygiai 8 saldainius."
+msgstr "Dabar Rugilė savo draugams nori padalinti po lygiai 8 saldainius."
 
 #: activities/share/resource/2/Data.qml:132
 msgctxt "Data|"
@@ -22634,14 +22633,14 @@ msgid ""
 "Can you help Alice share 10 pieces of candy equally among her friends: 1 "
 "girl and 3 boys? The girl already has some pieces of candy."
 msgstr ""
-"Alisos draugė jau turi  saldainių. Ar gali padėti Alisai padalinti 10 "
+"Rugilės draugė jau turi  saldainių. Ar gali padėti Rugilei padalinti 10 "
 "saldainių jos draugams: vienai mergaitei ir trims berniukams, kad jie turėtų "
 "po lygiai?"
 
 #: activities/share/resource/2/Data.qml:142
 msgctxt "Data|"
 msgid "Alice wants to share 16 pieces of candy equally among her friends."
-msgstr "Alisa nori savo draugams po lygiai padalinti 16 saldainių."
+msgstr "Rugilė nori savo draugams po lygiai padalinti 16 saldainių."
 
 #: activities/share/resource/2/Data.qml:152
 msgctxt "Data|"
@@ -22650,7 +22649,7 @@ msgid ""
 "friends. The boys already have some pieces of candy. Can you help her split "
 "the pieces of candy equally?"
 msgstr ""
-"Alisai liko 14 saldainių. Juos ji nori išdalinti savo draugams, kurie jau "
+"Rugilei liko 14 saldainių. Juos ji nori išdalinti savo draugams, kurie jau "
 "turi saldainių. Ar gali padėti jai padalinti saldainius, kad draugai turėtų "
 "po lygiai? Nutempęs vaikus į ekrano vidurį pamatysi, kiek jie turi saldainių."
 
@@ -22695,7 +22694,7 @@ msgid ""
 "Charles wants to share his 6 pieces of candy equally between 2 of his girl "
 "friends. Can he split the pieces of candy equally?"
 msgstr ""
-"Čarlis nori padalinti 6 saldainius dviem draugėms. Ar jis gali padalinti "
+"Bernardas nori padalinti 6 saldainius dviem draugėms. Ar jis gali padalinti "
 "saldainius po lygiai?"
 
 #: activities/share/resource/2/Data.qml:216
