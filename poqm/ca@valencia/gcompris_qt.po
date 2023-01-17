@@ -18544,7 +18544,7 @@ msgstr "Busca activitats específiques"
 #: activities/menu/Menu.qml:801
 msgctxt "Menu|"
 msgid "Activity Settings"
-msgstr "Configuració de l'activitat"
+msgstr "Configureu l'activitat"
 
 #. Activity title
 #: activities/mining/ActivityInfo.qml:15
@@ -18964,7 +18964,7 @@ msgstr ""
 #: activities/morse_code/FirstScreen.qml:25
 msgctxt "FirstScreen|"
 msgid "Exploring Morse Code"
-msgstr "Exploració del codi Morse"
+msgstr "Exploreu el codi Morse"
 
 #: activities/morse_code/FirstScreen.qml:64
 msgctxt "FirstScreen|"
@@ -25742,8 +25742,7 @@ msgstr ""
 #: core/ChangeLog.qml:76
 msgctxt "ChangeLog|"
 msgid "New Activity Settings menu, with dataset selection"
-msgstr ""
-"El nou menú Configuració de l'activitat, amb selecció del conjunt de dades"
+msgstr "El menú nou Configureu l'activitat, amb selecció del conjunt de dades"
 
 #: core/ChangeLog.qml:82
 msgctxt "ChangeLog|"
