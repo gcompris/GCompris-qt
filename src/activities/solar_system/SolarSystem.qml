@@ -89,7 +89,7 @@ ActivityBase {
                     planetView.moveCurrentIndexUp();
                 } else if(event.key === Qt.Key_Left) {
                     planetView.moveCurrentIndexLeft();
-                } else if(event.key === Qt.Key_Enter || event.key === Qt.Key_Space || event.key === Qt.Key_Return) {
+                } else if((event.key === Qt.Key_Enter || event.key === Qt.Key_Space || event.key === Qt.Key_Return) && planetView.currentIndex !== -1) {
                     Activity.showQuizScreen(planetView.currentIndex);
                 }
             } else {
@@ -110,7 +110,7 @@ ActivityBase {
                         mainQuizScreen.optionListView.currentIndex =
                         mainQuizScreen.optionListView.count - 1;
                     }
-                } else if(event.key === Qt.Key_Enter || event.key === Qt.Key_Space || event.key === Qt.Key_Return) {
+                } else if((event.key === Qt.Key_Enter || event.key === Qt.Key_Space || event.key === Qt.Key_Return) && planetView.currentIndex !== -1) {
                     mainQuizScreen.optionListView.currentItem.pressed();
                 }
             }
