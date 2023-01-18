@@ -5353,7 +5353,7 @@ msgstr "Continuer"
 #: activities/comparator/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Compare numbers"
-msgstr "Comparer des nombres"
+msgstr "Compare les nombres"
 
 #. Help title
 #: activities/comparator/ActivityInfo.qml:19
@@ -5524,8 +5524,7 @@ msgctxt "crane|"
 msgid ""
 "cat;dog;win;red;yes;big;box;air;arm;car;bus;fun;day;eat;hat;leg;ice;old;egg"
 msgstr ""
-"six ; nez ; fil ; dos ; lit ; oui ; bus ; air ; sol ; car ; cil ; cou ; "
-"jeu ; oie ; jus ; roi ; lac ; une ; nid"
+"six;nez;fil;dos;lit;oui;bus;air;sol;car;cil;cou;jeu;oie;jus;roi;lac;une;nid"
 
 #. Translators: NOTE: Word list for crane activity. Translate this into a list of 10–20 simple 4-letter words separated by semi-colons. The words can only contain lowercase ASCII letters (a–z). Example: blue;best;good;area
 #: activities/crane/crane.js:52
@@ -5534,8 +5533,8 @@ msgid ""
 "blue;best;good;area;bell;coat;easy;farm;food;else;girl;give;hero;help;hour;"
 "sand;song"
 msgstr ""
-"chat ; nuit ; jour ; ciel ; gens ; paon ; faon ; rose ; vert ; lire ; toit ; "
-"rond ; voir ; fort ; gare ; roue ; deux"
+"chat;nuit;jour;ciel;gens;paon;faon;rose;vert;lire;toit;rond;voir;fort;gare;"
+"roue;deux"
 
 #. Translators: NOTE: Word list for crane activity. Translate this into a list of 10–20 simple 5-letter words separated by semi-colons. The words can only contain lowercase ASCII letters (a–z). Example: happy;child;white;apple
 #: activities/crane/crane.js:59
@@ -5544,8 +5543,8 @@ msgid ""
 "happy;child;white;apple;brown;truth;fresh;green;horse;hotel;house;paper;"
 "shape;shirt;study"
 msgstr ""
-"reine ; douze ; pomme ; jaune ; vache ; bulle ; wagon ; carte ; craie ; "
-"ville ; tissu ; clown ; forme ; froid ; chaud"
+"reine;douze;pomme;jaune;vache;bulle;wagon;carte;craie;ville;tissu;clown;"
+"forme;froid;chaud"
 
 #: activities/crane/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -9309,7 +9308,7 @@ msgstr ""
 #: activities/fractions_create/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Create the fractions"
-msgstr "Ecris les fractions"
+msgstr "Écris les fractions"
 
 #. Help title
 #: activities/fractions_create/ActivityInfo.qml:16
@@ -15777,7 +15776,7 @@ msgstr "Activer les voix"
 #: activities/learn_digits/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Count and color the circles"
-msgstr "Compte et colorie les cercles."
+msgstr "Compte et colorie les cercles"
 
 #. Help title
 #: activities/learn_digits/ActivityInfo.qml:17
@@ -25149,7 +25148,7 @@ msgstr "Trouver les deux nombres."
 #: activities/tens_complement_swap/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Swap ten's complement"
-msgstr "Permuter pour obtenir des compléments à 10"
+msgstr "Permute pour obtenir des compléments à 10"
 
 #. Help title
 #: activities/tens_complement_swap/ActivityInfo.qml:16
