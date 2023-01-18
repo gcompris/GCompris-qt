@@ -21,7 +21,8 @@
             android:configChanges="orientation|uiMode|screenLayout|screenSize|smallestScreenSize|layoutDirection|locale|fontScale|keyboard|keyboardHidden|navigation|mcc|mnc|density"
             android:label="@string/app_name"
             android:launchMode="singleTop"
-            android:screenOrientation="unspecified">
+            android:screenOrientation="unspecified"
+            android:exported="true">
 	    <intent-filter>
 	      <action android:name="android.intent.action.MAIN"/>
 	      <category android:name="android.intent.category.LAUNCHER"/>
