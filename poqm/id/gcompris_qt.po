@@ -19,9 +19,9 @@
 # Andika Triwidada <andika@gmail.com>, 2019-2021.
 msgid ""
 msgstr ""
-"Project-Id-Version: gcompris 2.0\n"
+"Project-Id-Version: gcompris-id\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2022-09-29 10:40+0700\n"
+"PO-Revision-Date: 2023-01-18 05:52\n"
 "Last-Translator: Wantoyèk <wantoyek@gmail.com>\n"
 "Language-Team: Indonesian <kde-i18n-doc@kde.org>\n"
 "Language: id\n"
@@ -31,6 +31,11 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Lokalize 21.12.3\n"
 "X-Qt-Contexts: true\n"
+"X-Crowdin-Project: gcompris-id\n"
+"X-Crowdin-Project-ID: 481873\n"
+"X-Crowdin-Language: id\n"
+"X-Crowdin-File: /gcompris-id/3.0/gcompris_qt.po\n"
+"X-Crowdin-File-ID: 59\n"
 
 #. Activity title
 #: activities/advanced_colors/ActivityInfo.qml:15
@@ -156,7 +161,7 @@ msgstr ""
 #: activities/submarine/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "<b>Keyboard controls:</b>"
-msgstr "<b>Kendali Keyboard:</b>"
+msgstr "<b>Kendali keyboard:</b>"
 
 #: activities/advanced_colors/ActivityInfo.qml:26
 #: activities/algorithm/ActivityInfo.qml:24
@@ -990,7 +995,7 @@ msgid ""
 "fast and submit the answer before the penguins in their balloon land!"
 msgstr ""
 "Suatu perhitungan pengurangan ditampilkan di layar. Segera hitung hasilnya "
-"dan gunakan keyboard komputer kamu atau papan nomor di layar untuk "
+"dan gunakan keyboard komputer atau papan nomor di layar kamu untuk "
 "mengetikkan jawaban dari bilangan tersebut. Kamu harus cepat dan kirim "
 "jawabannya sebelum para penguin di dalam balon mendarat!"
 
@@ -1077,7 +1082,7 @@ msgid ""
 "and submit the answer before the penguins land in their balloon!"
 msgstr ""
 "Suatu perhitungan penambahan ditampilkan di layar. Segera hitung hasilnya "
-"dan gunakan keyboard komputer kamu atau papan nomor di layar untuk "
+"dan gunakan keyboard komputer atau papan nomor di layar kamu untuk "
 "mengetikkan jawaban dari bilangan tersebut. Kamu harus cepat dan kirim "
 "jawabannya sebelum para penguin di dalam balon mendarat!"
 
@@ -1183,23 +1188,18 @@ msgid ""
 "(standing up) or diagonally."
 msgstr ""
 "Buat garis berupa 4 keping gambar secara horisontal (mendatar), vertikal "
-"(berdiri), atau melintang."
+"(tegak), atau diagonal (melintang)."
 
 #. Help manual
 #: activities/align4/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Play with a friend. Take turns to click the line in which you want to "
-#| "drop a token. The first player to create a line of 4 tokens wins."
 msgctxt "ActivityInfo|"
 msgid ""
 "Play with Tux. Take turns to click the line in which you want to drop a "
 "token. The first player to create a line of 4 tokens wins."
 msgstr ""
-"Bermain dengan seorang teman. Bergiliran untuk mengklik baris di mana kamu "
-"ingin menjatuhkan kepingan gambar. Pemain pertama yang membuat 4 baris "
-"kepingan gambar adalah pemenangnya."
+"Bermain dengan Tux. Bergiliran untuk mengklik baris di mana kamu ingin "
+"menjatuhkan kepingan gambar. Pemain pertama yang membuat 4 baris kepingan "
+"gambar adalah pemenangnya."
 
 #: activities/align4/ActivityInfo.qml:23 activities/bargame/ActivityInfo.qml:26
 #: activities/checkers/ActivityInfo.qml:27
@@ -1209,6 +1209,9 @@ msgid ""
 "You can use the arrow buttons to manually select the difficulty level. Tux "
 "will play better when you increase the level."
 msgstr ""
+"Kamu bisa menggunakan tombol panah untuk memilih tingkat yang lebih sulit "
+"secara manual. Tux akan bermain lebih baik ketika kamu menaikkan tingkat "
+"permainan."
 
 #: activities/align4/ActivityInfo.qml:25
 #: activities/align4_2players/ActivityInfo.qml:24
@@ -1335,7 +1338,7 @@ msgstr "Membuat dan meniru skema listrik analog."
 #: activities/analog_electricity/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Create an analog electric schema with a real time simulation."
-msgstr "Membuat skema listrik analog dengan cara meniru secara langsung."
+msgstr "Membuat skema listrik analog dengan cara menirunya secara langsung."
 
 #. Help prerequisite
 #: activities/analog_electricity/ActivityInfo.qml:22
@@ -1369,7 +1372,7 @@ msgid ""
 "or on the info button to get information about it."
 msgstr ""
 "Kamu bisa mengklik komponen dan kemudian klik tombol putar pada alat untuk "
-"memutarnya atau pada tombol info untuk mendapatkan informasi tentang hal "
+"memutarnya atau pada tombol info untuk mendapatkan informasi tentang alat "
 "tersebut."
 
 #: activities/analog_electricity/ActivityInfo.qml:24
@@ -1639,7 +1642,7 @@ msgid ""
 "When connecting two terminals which are not supposed to be connected, it "
 "creates a short circuit (also called short) in the electrical circuit."
 msgstr ""
-"Ketika menghubungkan dua terminal yang tidak boleh terhubung, itu "
+"Ketika menghubungkan dua terminal yang tidak boleh terhubung, hal itu "
 "menciptakan hubungan pendek (juga disebut korsleting) pada sirkuit listrik."
 
 #: activities/analog_electricity/TutorialDataset.qml:118
@@ -1778,7 +1781,7 @@ msgid ""
 "The conventional symbol for voltage is V. The unit of measure of voltage is "
 "volt under the International System of Units, which is denoted as V."
 msgstr ""
-"Simbol umum untuk tegangan adalah V. Satuan ukuran tegangan adalah volt di "
+"Simbol umum untuk voltase adalah V. Satuan ukuran tegangan adalah volt di "
 "bawah Satuan Sistem Internasional, yang dilambangkan sebagai V."
 
 #: activities/analog_electricity/TutorialDataset.qml:181
@@ -1802,7 +1805,7 @@ msgid ""
 "resistance is ohm under the International System of Units, which is denoted "
 "as Ω."
 msgstr ""
-"Simbol umum untuk resistansi adalah R. Satuan ukuran resistansi adalah ohm "
+"Simbol umum untuk resistor adalah R. Satuan ukuran resistansi adalah ohm "
 "berdasarkan Satuan Sistem Internasional, yang dilambangkan sebagai Ω."
 
 #: activities/analog_electricity/TutorialDataset.qml:196
@@ -2195,7 +2198,7 @@ msgstr "Seret dan lepaskan benda-benda untuk mencocokkannya."
 #: activities/babymatch/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid "Motor coordination. Conceptual matching."
-msgstr "Koordinasi motor. Pencocokan konseptual."
+msgstr "Koordinasi motorik. Pencocokan konseptual."
 
 #. Help prerequisite
 #: activities/babymatch/ActivityInfo.qml:25
@@ -2567,8 +2570,7 @@ msgid ""
 "Press the left and right arrow keys at the same time, to make the ball go in "
 "a straight line."
 msgstr ""
-"Tekan tombol panah kiri dan kanan bersamaan, agar bola bergerak dalam garis "
-"lurus."
+"Tekan tombol panah kiri dan kanan bersamaan, agar bola bergerak secara lurus."
 
 #. Help manual
 #: activities/ballcatch/ActivityInfo.qml:24
@@ -2578,7 +2580,7 @@ msgid ""
 "a straight line. On a touch screen you have to touch the two hands at the "
 "same time."
 msgstr ""
-"Tekan tombol panah kiri dan kanan bersamaan, agar bola bergerak dalam garis "
+"Tekan tombol panah kiri dan kanan bersamaan, agar bola bergerak secara "
 "lurus. Pada layar sentuh kamu harus menekan dengan kedua tangan bersamaan."
 
 #: activities/ballcatch/Ballcatch.qml:220
@@ -2586,8 +2588,8 @@ msgctxt "Ballcatch|"
 msgid ""
 "Tap both hands at the same time, to make the ball go in a straight line."
 msgstr ""
-"Ketuk dengan kedua tangan secara bersamaan, untuk membuat bola bergerak "
-"dalam garis lurus."
+"Ketuk dengan kedua jari secara bersamaan, untuk membuat bola bergerak secara "
+"lurus."
 
 #: activities/ballcatch/Ballcatch.qml:222
 msgctxt "Ballcatch|"
@@ -2596,7 +2598,7 @@ msgid ""
 "straight line."
 msgstr ""
 "Tekan tombol panah kiri dan kanan bersamaan, untuk membuat bola bergerak "
-"dalam garis lurus."
+"secara lurus."
 
 #: activities/bargame/ActivityConfig.qml:21
 #: activities/bargame_2players/ActivityConfig.qml:21
@@ -2638,7 +2640,7 @@ msgid ""
 msgstr ""
 "Klik jumlah bola yang ingin kamu letakkan di dalam lubang dan kemudian klik "
 "tombol OK. Pemenangnya adalah pemain yang tidak menempatkan bola ke dalam "
-"lubang berwarna merah.."
+"lubang berwarna merah."
 
 #. Help goal
 #: activities/bargame/ActivityInfo.qml:21
@@ -2656,12 +2658,6 @@ msgstr "Kemampuan untuk menghitung."
 
 #. Help manual
 #: activities/bargame/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Click on the ball icon to select a number of balls, then click on the OK "
-#| "button to place the balls in the holes. You win if the computer has to "
-#| "place the last ball. If you want Tux to begin, just click on him."
 msgctxt "ActivityInfo|"
 msgid ""
 "Click on the ball icon to select a number of balls, then click on the OK "
@@ -2669,8 +2665,8 @@ msgid ""
 "ball. If you want Tux to begin, just click on him."
 msgstr ""
 "Klik pada ikon bola untuk memilih sejumlah bola, lalu klik tombol OK untuk "
-"menempatkan bola pada lubang. Kamu menang jika komputer harus meletakkan "
-"bola yang terakhir. Jika kamu ingin Tux yang mulai, klik dia."
+"menempatkan bola pada lubang. Kamu menang jika Tux harus meletakkan bola "
+"yang terakhir. Jika kamu ingin Tux yang mulai, klik dia."
 
 #. Activity title
 #: activities/bargame_2players/ActivityInfo.qml:15
@@ -2710,7 +2706,7 @@ msgstr ""
 #: activities/binary_bulb/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "To get familiar with the binary number system."
-msgstr "Membiasakan dengan bilangan biner."
+msgstr "Membiasakan dengan sistem bilangan biner."
 
 #. Help prerequisite
 #: activities/binary_bulb/ActivityInfo.qml:22
@@ -2826,7 +2822,7 @@ msgstr "Mempelajari dan mengingat sistem Braille."
 #: activities/braille_alphabets/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Let children discover the braille system."
-msgstr "Persilakan anak-anak mempelajari sistem Braille."
+msgstr "Mengajak anak-anak mempelajari sistem Braille."
 
 #. Help manual
 #: activities/braille_alphabets/ActivityInfo.qml:24
@@ -2836,10 +2832,9 @@ msgid ""
 "telling you the character to reproduce, and at the top the braille "
 "characters to use as a reference. Each level teaches a set of 10 characters."
 msgstr ""
-"Layar memiliki 3 bagian: sel braille interaktif, sebuah petunjuk yang "
-"memberitahu kamu untuk membuat huruf, dan pada bagian atas huruf-huruf "
-"Braille untuk digunakan sebagai referensi. Setiap tingkatan mengajarkan "
-"kumpulan dari 10 huruf."
+"Layar memiliki 3 bagian: sel braille interaktif, sebuah petunjuk memberitahu "
+"kamu untuk membuat huruf, dan pada bagian atas huruf-huruf Braille digunakan "
+"sebagai referensi. Setiap tingkatan mengajarkan kumpulan dari 10 huruf."
 
 #: activities/braille_alphabets/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
@@ -3042,7 +3037,7 @@ msgid ""
 "Read the instructions and select the correct date on the calendar, and then "
 "validate your answer by clicking on the OK button."
 msgstr ""
-"Baca perintah dan pilih tanggal yang benar pada kalender, kemudian setujui "
+"Baca perintah dan pilih tanggal yang benar pada kalender, kemudian sahkan "
 "jawaban kamu dengan mengklik tombol OK."
 
 #: activities/calendar/ActivityInfo.qml:24
@@ -3171,12 +3166,13 @@ msgstr "Apa nama hari yang ke 10 pada bulan yang disebutkan?"
 #: activities/calendar/calendar_dataset.js:119
 msgctxt "calendar_dataset|"
 msgid "Select a Monday between days 1 and 7 of the given month"
-msgstr "Pilih hari Senin antara hari ke 1 dan 7 pada bulan yang disebutkan"
+msgstr "Pilih hari Senin antara tanggal 1 sampai 7 pada bulan yang disebutkan"
 
 #: activities/calendar/calendar_dataset.js:123
 msgctxt "calendar_dataset|"
 msgid "Select a Tuesday between days 8 and 16 of the given month"
-msgstr "Pilih hari Selasa antara hari ke 8 dan 16 pada bulan yang disebutkan"
+msgstr ""
+"Pilih hari Selasa antara tanggal 8 sampai 16 pada bulan yang disebutkan"
 
 #: activities/calendar/calendar_dataset.js:127
 msgctxt "calendar_dataset|"
@@ -3192,22 +3188,25 @@ msgstr ""
 #: activities/calendar/calendar_dataset.js:135
 msgctxt "calendar_dataset|"
 msgid "Select a Friday between days 20 and 25 of the given month"
-msgstr "Pilih hari Jumat antara hari ke 20 dan 25 pada bulan yang disebutkan"
+msgstr ""
+"Pilih hari Jumat antara tanggal 20 sampai 25 pada bulan yang disebutkan"
 
 #: activities/calendar/calendar_dataset.js:139
 msgctxt "calendar_dataset|"
 msgid "Select a Saturday between days 13 and 23 of the given month"
-msgstr "Pilih hari Sabtu antara hari ke 13 dan 23 pada bulan yang disebutkan"
+msgstr ""
+"Pilih hari Sabtu antara tanggal 13 sampai 23 pada bulan yang disebutkan"
 
 #: activities/calendar/calendar_dataset.js:143
 msgctxt "calendar_dataset|"
 msgid "Select a Sunday between days 5 and 17 of the given month"
-msgstr "Pilih hari Minggu antara hari ke 5 dan 17 pada bulan yang disebutkan"
+msgstr ""
+"Pilih hari Minggu antara tanggal 5 sampai 17 pada bulan yang disebutkan"
 
 #: activities/calendar/calendar_dataset.js:162
 msgctxt "calendar_dataset|"
 msgid "Select the second day before the 15th of the given month"
-msgstr "Pilih hari ke dua sebelum hari ke 15 pada bulan yang disebutkan"
+msgstr "Pilih hari ke dua sebelum tanggal 15 pada bulan yang disebutkan"
 
 #: activities/calendar/calendar_dataset.js:166
 msgctxt "calendar_dataset|"
@@ -3621,8 +3620,7 @@ msgctxt "category_colors|"
 msgid ""
 "Place the objects matching ORANGE color to the right and others to the left"
 msgstr ""
-"Pindahkan benda warna JINGGA ke sebelah kanan dan benda lainnya ke sebelah "
-"kiri"
+"Pindahkan benda warna OREN ke sebelah kanan dan benda lainnya ke sebelah kiri"
 
 #: activities/categorization/resource/board/category_colors.qml:97
 msgctxt "category_colors|"
@@ -3843,7 +3841,7 @@ msgctxt "category_renewable|"
 msgid ""
 "Place the RENEWABLE energy sources to the right and other objects to the left"
 msgstr ""
-"Pindahkan sumber energi TERBARUKAN ke sebelah kanan dan objek-objeklainnya "
+"Pindahkan sumber energi TERBARUKAN ke sebelah kanan dan objek-objek lainnya "
 "ke sebelah kiri"
 
 #: activities/categorization/resource/board/category_shapes.qml:21
@@ -4077,27 +4075,6 @@ msgstr ""
 
 #. Help manual
 #: activities/checkers/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Checkers is played by two opponents, on opposite sides of the gameboard. "
-#| "One player has the dark pieces; the other has the light pieces. Players "
-#| "alternate turns. A player may not move an opponent's piece. A move "
-#| "consists of moving a piece diagonally to an adjacent unoccupied square. "
-#| "If the adjacent square contains an opponent's piece, and the square "
-#| "immediately beyond it is vacant, the piece may be captured (and removed "
-#| "from the game) by jumping over it.\n"
-#| "Only the dark squares of the checkered board are used. A piece may move "
-#| "only diagonally into an unoccupied square. Capturing is mandatory. The "
-#| "player without pieces remaining, or who cannot move due to being blocked, "
-#| "loses the game.\n"
-#| "When a man reaches the crownhead or kings row (the farthest row forward), "
-#| "it becomes a king, and is marked by placing an additional piece on top of "
-#| "the first man, and acquires additional powers including the ability to "
-#| "move backwards. If there is a piece in a diagonal that a king can "
-#| "capture, he can move any distance along the diagonal, and may capture an "
-#| "opposing man any distance away by jumping to any of the unoccupied "
-#| "squares immediately beyond it.\n"
 msgctxt "ActivityInfo|"
 msgid ""
 "Checkers is played by two opponents, on opposite sides of the gameboard. One "
@@ -4122,18 +4099,18 @@ msgstr ""
 "Checkers dimainkan oleh dua pemain, pada sisi berlawanan papan permainan. "
 "Salah satu pemain memiliki bidak hitam; pemain lain memiliki bidak putih. "
 "Pemain bermain secara bergantian. Pemain tidak boleh memindah bidak lawan. "
-"Satu langkah adalah gerak diagonal ke kotak terdekat. Jika kotak terdekat "
+"Satu langkah merupakan gerak diagonal ke kotak terdekat. Jika kotak terdekat "
 "berisi bidak lawan dan kotak berikutnya kosong, bidak tersebut dapat dimakan "
-"(dikeluarkan dari papan) dengan melompatinya.\n"
-"Hanya kotak gelap yang dapat digunakan. Satu bidak hanya dapat bergerak "
-"diagonal ke kotak kosong. Pemain dianggap kalah bila kehabisan bidak, atau "
-"tidak dapat bergerak.\n"
+"(dikeluarkan dari papan) dengan cara melompatinya.\n"
+"Hanya kotak gelap yang dapat digunakan. Satu bidak hanya bisa bergerak "
+"diagonal ke kotak kosong. Pemain dianggap kalah jika kehabisan bidak, atau "
+"tidak dapat bergerak lagi.\n"
 "Ketika bidak sampai di baris ratu atau baris raja (baris terjauh) menjadi "
 "seorang raja, dan ditandai dengan menempatkan bidak tambahan pada baris "
 "pertama. Bidak tambahan ini mempunyai dan memperoleh kekuatan yaitu dapat "
 "bergerak mundur. Jika ada bidak yang dapat dimakan oleh raja, dia dapat "
 "bergerak beberapa langkah sepanjang diagonal dan boleh memakan bidak lawan "
-"dengan melompati beberapa kotak kosong di belakangnya.\n"
+"dengan melompati beberapa kotak kosong di belakangnya."
 
 #: activities/checkers/ActivityInfo.qml:29
 #: activities/checkers_2players/ActivityInfo.qml:28
@@ -4220,26 +4197,6 @@ msgstr "Mainkan catur (melawan Penguin Tux)"
 
 #. Help manual Much of this string is shared across the three activities "chess", "chess_partyend", and "chess_2players".
 #: activities/chess/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "In this activity you discover the chess game by playing against the "
-#| "computer. It displays the possible target positions for any selected "
-#| "piece which helps the children understand how pieces moves. At first "
-#| "level the computer is fully random to give more chances to the children. "
-#| "As level increases, the computer plays better.\n"
-#| "\n"
-#| "You can achieve a mate sooner if you follow these simple rules:\n"
-#| "    Trying to drive your opponent's king in the corner.\n"
-#| "<b>Explanation</b>: this way your opponent's king would have only 3 "
-#| "directions to move instead of 8 from a better position.\n"
-#| "    'Making a trap'. Use your pawns as baits.\n"
-#| "<b>Explanation</b>: this way you can lure your opponent out of his "
-#| "'comfort zone'.\n"
-#| "    Be patient enough.\n"
-#| "<b>Explanation</b>: don't rush too quick, be patient. Let yourself think "
-#| "a little bit and try to predict your opponent's future moves, so that you "
-#| "can catch him or secure your pieces from his attacks."
 msgctxt "ActivityInfo|"
 msgid ""
 "In this activity you discover the chess game by playing against the "
@@ -4261,24 +4218,26 @@ msgid ""
 "little bit and try to predict your opponent's future moves, so that you can "
 "catch him or secure your pieces from his attacks."
 msgstr ""
-"Dalam sesi ini kamu bermain catur melawan komputer. Sesi ini menampilkan "
+"Di sesi ini kamu bermain catur melawan komputer. Sesi ini menampilkan "
 "beberapa kemungkinan langkah untuk setiap bidak yang dipilih sehingga "
 "membantu anak-anak mengerti bagaimana gerak masing-masing bidak. Pada "
 "tingkat pertama, secara acak komputer memberikan kesempatan kepada anak "
-"anak. Seiring bertambahnya tingkatan, komputer akan bermain lebih baik.\n"
+"anak. Seiring bertambahnya tingkat permainan, komputer akan bermain lebih "
+"baik.\n"
 "\n"
-"Kamu dapat mencapai pasangan lebih cepat jika mengikuti aturan yang "
-"sederhana ini:\n"
+"Kamu bisa meraih kemenagan lebih cepat jika mengikuti aturan yang sederhana "
+"ini:\n"
 "    Coba arahkan raja lawan ke pojok.\n"
 "<b>Penjelasan</b>: dengan cara ini bidak lawan hanya akan melakukan 3 dari 8 "
 "gerakan dari posisi terbaik.\n"
 "    'Buat jebakan'. Gunakan pionmu sebagai umpan.\n"
-"<b>Penjelasan</b>: dengan cara ini kamu dapat memancing lawan untuk keluar "
-"dari 'daerah pertahanan'.\n"
+"<b>Penjelasan</b>: dengan cara ini kamu bisa memancing lawan untuk keluar "
+"\"\n"
+"\"dari 'daerah pertahanan'.\n"
 "    Bersabarlah.\n"
 "<b>Penjelasan</b> Jangan terlalu terburu-buru, bermainlah dengan sabar. "
-"Pikirkan sejenak untuk memperkirakan pergerakan selajutnya, jadi kamu dapat "
-"mengambil bagian lawan atau mempertahankan bidakmu."
+"Pikirkan sejenak untuk memperkirakan gerakan selajutnya, jadi kamu bisa "
+"memakan bidak lawan atau mempertahankan bidakmu."
 
 #: activities/chess/ActivityInfo.qml:32
 #: activities/chess_2players/ActivityInfo.qml:32
@@ -4289,9 +4248,9 @@ msgid ""
 "will redo one move. To undo all the moves, press and hold the undo button "
 "for 3 seconds."
 msgstr ""
-"Klik tunggal pada tombol undo akan membatalkan satu gerakan. Klik tunggal "
-"pada tombol redo akan mengulang satu gerakan. Untuk membatalkan semua "
-"gerakan, tekan dan tahan tombol undo selama 3 detik."
+"Klik sekali pada tombol undo akan membatalkan satu gerakan. Klik sekali pada "
+"tombol redo akan mengulang satu gerakan. Untuk membatalkan semua gerakan, "
+"tekan dan tahan tombol undo selama 3 detik."
 
 #: activities/chess/ActivityInfo.qml:33
 #: activities/chess_partyend/ActivityInfo.qml:33
@@ -4404,7 +4363,7 @@ msgstr ""
 #: activities/chess_partyend/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "End of chess game"
-msgstr "Akhiri dari permainan catur"
+msgstr "Akhiri permainan catur"
 
 #. Help title
 #: activities/chess_partyend/ActivityInfo.qml:17
@@ -4460,13 +4419,13 @@ msgstr "Kronos"
 #: activities/chronos/ActivityInfo.qml:21
 msgctxt "ActivityInfo|"
 msgid "Drag and Drop the items to organize the story."
-msgstr "Seret dan lepaskan benda untuk membuat cerita."
+msgstr "Seret dan lepaskan benda untuk merangkai cerita."
 
 #. Help goal
 #: activities/chronos/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid "Sort the pictures into the order that tells the story."
-msgstr "Menyusun gambar ke dalam urutan ceritanya."
+msgstr "Menyusun gambar sebagai urutan sebuah cerita."
 
 #. Help prerequisite
 #: activities/chronos/ActivityInfo.qml:26
@@ -4481,7 +4440,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Pick the pictures on the side and put them on the dots in the right order."
 msgstr ""
-"Ambil gambar dari kiri dan masukan ke titik-titik merah denga urutan yang "
+"Ambil gambar dari kiri dan letakkan ke titik-titik merah denga urutan yang "
 "benar."
 
 #: activities/chronos/ActivityInfo.qml:28
@@ -4498,9 +4457,9 @@ msgid ""
 "those found in &lt;https://www.wikipedia.org&gt;."
 msgstr ""
 "Hak cipta foto bulan milik NASA. Suara ruang angkasa berasal dari Tuxpaint "
-"dan Vegastrike yang dikeluarkan di bawah lisensi GPL. Hak cipta gambar "
-"kendaraan milik Franck Doucet. Tanggal transportasi berdasarkan tanggal "
-"penemuannya &lt;http://www.wikipedia.org&gt;."
+"dan Vegastrike yang dirilis di bawah lisensi GPL. Hak cipta gambar kendaraan "
+"milik Franck Doucet. Tanggal transportasi berdasarkan tanggal penemuannya "
+"&lt;http://www.wikipedia.org&gt;."
 
 #: activities/chronos/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -4590,7 +4549,7 @@ msgstr "4"
 #: activities/chronos/resource/board/board4_0.qml:14
 msgctxt "board4_0|"
 msgid "Tux and the apple tree"
-msgstr "Pinguin dan hierarki apel"
+msgstr "Pinguin dan pohon apel"
 
 #: activities/chronos/resource/board/board4_0.qml:45
 msgctxt "board4_0|"
@@ -5120,12 +5079,12 @@ msgid ""
 "cyan (a special shade of blue), magenta (a special shade of pink), and "
 "yellow."
 msgstr ""
-"Dalam kasus cat, tinta menyerap berbagai warna cahaya yang jatuh di atasnya, "
-"kurangi dari apa yang kamu lihat. Semakin banyak tinta yang kamu tambahkan, "
-"semakin banyak cahaya yang diserap, dan semakin gelap warna gabungannya. "
-"Kamu bisa mencampur hanya tiga warna primer untuk membuat banyak warna baru. "
-"Warna utama untuk cat/tinta adalah sian (warna biru khusus), magenta (warna "
-"khusus merah muda), dan kuning."
+"Dalam kejadian cat, tinta menyerap berbagai warna cahaya yang jatuh di "
+"atasnya, kurangi dari apa yang kamu lihat. Semakin banyak tinta yang kamu "
+"tambahkan, semakin banyak cahaya yang diserap, dan semakin gelap warna "
+"gabungannya. Kamu bisa mencampur hanya tiga warna primer untuk membuat "
+"banyak warna baru. Warna utama untuk cat/tinta adalah sian (warna biru "
+"khusus), magenta (warna khusus merah muda), dan kuning."
 
 #: activities/color_mix/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
@@ -5230,8 +5189,8 @@ msgid ""
 "light you add, the lighter the resulting color becomes. Primary colors of "
 "light are red, green and blue."
 msgstr ""
-"Dalam kasus cahaya, hal itu justru kebalikan dari pencampuran warna dengan "
-"cat! Semakin terang sinar yang dipancarkan semakin terang warna yang "
+"Dalam terjadinya cahaya, hal itu justru kebalikan dari pencampuran warna "
+"dengan cat! Semakin terang sinar yang dipancarkan semakin terang warna yang "
 "didapat. Warna utama sinar adalah merah, hijau dan biru."
 
 #: activities/color_mix_light/ActivityInfo.qml:26
@@ -5358,27 +5317,21 @@ msgstr "Lanjutkan"
 
 #. Activity title
 #: activities/comparator/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Compare numbers."
 msgctxt "ActivityInfo|"
 msgid "Compare numbers"
-msgstr "Membandingkan angka."
+msgstr "Komparator angka"
 
 #. Help title
 #: activities/comparator/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Compare the numbers and choose the corresponding sign."
-msgstr ""
+msgstr "Bandingkan angkanya dan pilih tanda yang sesuai."
 
 #. Help goal
 #: activities/comparator/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn about prime numbers."
 msgctxt "ActivityInfo|"
 msgid "Learn how to compare number values."
-msgstr "Belajar tentang bilangan prima."
+msgstr "Mempelajari cara membandingkan nilai angka."
 
 #. Help manual
 #: activities/comparator/ActivityInfo.qml:26
@@ -5388,6 +5341,9 @@ msgid ""
 "symbol for this pair. When each line contains a symbol, select the OK button "
 "to validate the answers."
 msgstr ""
+"Pilih sepasang angka dalam daftar. Kemudian pilih simbol perbandingan yang "
+"tepat untuk pasangan tersebut. Ketika semua baris telah berisi simbol, pilih "
+"tombol OK untuk mengesahkan jawaban."
 
 #: activities/comparator/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
@@ -5395,112 +5351,84 @@ msgid ""
 "If some answers are incorrect, a cross icon will appear on the corresponding "
 "lines. Correct the errors, then select the OK button again."
 msgstr ""
+"Jika terdapat jawaban yang salah, ikon silang akan muncul di baris yang "
+"salah tersebut. Perbaiki kesalahan, lalu pilih tombol OK lagi."
 
 #: activities/comparator/ActivityInfo.qml:29
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Down arrow: select previous item"
 msgctxt "ActivityInfo|"
 msgid "Up and Down arrows: select a pair of numbers in the list"
-msgstr "Panah bawah: pilih benda sebelumnya"
+msgstr "Panah Atas dan Bawah: untuk memilih sepasang angka dalam daftar"
 
 #: activities/comparator/ActivityInfo.qml:30
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Left and Right arrows: turn left and right"
 msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: select a symbol button"
-msgstr "Panah kiri dan kanan: belok kiri dan kanan"
+msgstr "Panah Kiri dan Kanan: untuk memilih tombol simbol"
 
 #: activities/comparator/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
 msgid "Space: if a symbol button is selected, enter this symbol"
-msgstr ""
+msgstr "Spasi: untuk memasukkan simbol, jika terdapat tombol simbol dipilih"
 
 #: activities/comparator/ActivityInfo.qml:32
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Enter: validate your answer"
 msgctxt "ActivityInfo|"
 msgid "Return: validate the answers"
-msgstr "Enter: sahkan jawaban kamu"
+msgstr "Enter: setujui jawaban"
 
 #: activities/comparator/ActivityInfo.qml:33
 msgctxt "ActivityInfo|"
 msgid "&lt;, &gt; or =: enter the corresponding symbol"
-msgstr ""
+msgstr "&lt;, &gt; atau =: masukkan simbol yang sesuai"
 
 #: activities/comparator/resource/1/Data.qml:36
 #: activities/tens_complement_find/resource/3/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "Data|"
 msgid "Numbers from 1 to 9."
-msgstr "Angka dari 0 sampai 9."
+msgstr "Angka dari 1 sampai 9."
 
 #: activities/comparator/resource/10/Data.qml:14
 msgctxt "Data|"
 msgid "3 decimal places between 0 and 999.999."
-msgstr ""
+msgstr "3 desimal antara 0 dan 999.999."
 
 #: activities/comparator/resource/2/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "Data|"
 msgid "Numbers from 1 to 19."
-msgstr "Angka dari 0 sampai 9."
+msgstr "Angka dari 1 sampai 19."
 
 #: activities/comparator/resource/3/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "Data|"
 msgid "Numbers from 1 to 100."
-msgstr "Angka dari 0 sampai 9."
+msgstr "Angka dari 1 sampai 100."
 
 #: activities/comparator/resource/4/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "Data|"
 msgid "Numbers from 1 to 1000."
-msgstr "Angka dari 0 sampai 9."
+msgstr "Angka dari 1 sampai 1000."
 
 #: activities/comparator/resource/5/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "Data|"
 msgid "Numbers from 1 to 1000000."
-msgstr "Angka dari 0 sampai 9."
+msgstr "Angka dari 1 sampai 1000000."
 
 #: activities/comparator/resource/6/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "Data|"
 msgid "Numbers from 1 to 1 billion."
-msgstr "Angka dari 0 sampai 9."
+msgstr "Angka dari 1 sampai 1 miliar."
 
 #: activities/comparator/resource/7/Data.qml:14
 msgctxt "Data|"
 msgid "1 decimal place between 0 and 9.9, same integer part."
-msgstr ""
+msgstr "1 desimal antara 0 dan 9.9, untuk bilangan bulat yang sama."
 
 #: activities/comparator/resource/8/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "1 decimal place between 0 and 9.9."
-msgstr "Angka antara %1 dan %2."
+msgstr "1 desimal antara 0 dan 9.9."
 
 #: activities/comparator/resource/9/Data.qml:14
 msgctxt "Data|"
 msgid "2 decimal places between 0 and 99.99."
-msgstr ""
+msgstr "2 desimal antara 0 dan 99.99."
 
 #. Activity title
 #: activities/crane/ActivityInfo.qml:20
@@ -5578,7 +5506,7 @@ msgid ""
 "happy;child;white;apple;brown;truth;fresh;green;horse;hotel;house;paper;"
 "shape;shirt;study"
 msgstr ""
-"riang;kecil;putih;nanas;coklat;benar;segar;hijau;domba;hotel;rumah;kertas;"
+"riang;kecil;putih;nanas;coklat;benar;segar;hijau;domba;hotel;rumah;surat;"
 "kotak;jaket;jambu"
 
 #: activities/crane/resource/1/Data.qml:13
@@ -5910,11 +5838,11 @@ msgid ""
 "output is 1 if A = B, otherwise it's 0. The third output is 1 if A > B, "
 "otherwise it's 0. "
 msgstr ""
-"Komparator mengambil 2 angka sebagai input, A dan B. Hal ini "
+"Sebuah komparator mengambil 2 angka sebagai input, A dan B. Hal ini "
 "membandingkannya output dengan nilai 3. Output pertama adalah 1 jika A < B, "
-"jika tidak maka hasilnya 0. Output kedua adalah 1 jika A = B,  jika tidak "
-"maka hasilnya 0. Output ketiga adalah 1 jika A > B,  jika tidak maka "
-"hasilnya 0. "
+"jika tidak maka hasilnya 0. Output kedua adalah 1 jika A = B, jika tidak "
+"maka hasilnya 0. Output ketiga adalah 1 jika A > B, jika tidak maka hasilnya "
+"0."
 
 #: activities/digital_electricity/components/DigitalLight.qml:21
 msgctxt "DigitalLight|"
@@ -6433,7 +6361,7 @@ msgid ""
 "second switch."
 msgstr ""
 "Buat sirkuit menggunakan komponen yang disediakan sehingga bola lampu "
-"bersinar saat output saklar pertama kurang dari atau sama dengan keluaran "
+"bersinar saat output saklar pertama kurang dari atau sama dengan output "
 "saklar kedua."
 
 #: activities/digital_electricity/TutorialDataset.qml:525
@@ -6827,9 +6755,9 @@ msgid ""
 "makes this sound. Click on the corresponding animal. If you'd like to hear "
 "the animal sound repeated, click on the play button."
 msgstr ""
-"Di tingkat dua, suara binatang secara acak dibunyikan dan kamu harus memilih "
-"hewan mana yang mengeluarkan suara itu. Klik pada hewan yang sesuai. Jika "
-"kamu ingin mendengar ulang suaranya, klik tombol putar."
+"Pada tingkat dua, suara binatang secara acak dibunyikan dan kamu harus "
+"memilih hewan mana yang mengeluarkan suara itu. Klik pada hewan yang sesuai. "
+"Jika kamu ingin mendengar ulang suaranya, klik ikon bergambar bibir."
 
 #: activities/explore_farm_animals/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
@@ -6871,14 +6799,14 @@ msgid ""
 "escape predators, and possess an excellent sense of balance. They have "
 "single-toed hooves."
 msgstr ""
+"Kuda suaranya 'meringkik'. Kuda diadaptasi untuk berlari, memungkinkan "
+"mereka melarikan diri dari pemangsa secara cepat, dan memiliki keseimbangan "
+"yang sangat baik. Kuda memiliki kuku yang ujungnya tunggal."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:25
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal's ancestors were wolves."
 msgctxt "board1|"
 msgid "This animal has single-toed hooves."
-msgstr "Nenek moyang hewan ini adalah serigala."
+msgstr "Hewan ini memiliki kuku berujung tunggal."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:33
 msgctxt "board1|"
@@ -6891,14 +6819,13 @@ msgid ""
 "The chicken goes 'cluck'. Domestic chickens have wings, but are not capable "
 "of long-distance flight. They have a comb on their head."
 msgstr ""
+"Ayam berbunyi 'keok, keok'. Ayam peliharaan memiliki sayap, tetapi tidak "
+"mampu terbang dengan jarak jauh. Ayam memiliki jengger di kepalanya."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:37
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal likes to come out at night."
 msgctxt "board1|"
 msgid "This animal has a comb on its head."
-msgstr "Hewan ini suka keluar pada malam hari."
+msgstr "Hewan ini memiliki jengger di kepalanya."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:45
 msgctxt "board1|"
@@ -6912,11 +6839,14 @@ msgid ""
 "developed sense of taste, with around 20,000 taste buds. They can detect "
 "odours 8km away."
 msgstr ""
+"Sapi berbunyi ''moo. moo.'. Sapi memiliki jarak pandang yang luasnya "
+"mencapai 330°. Mereka memiliki indera perasa yang berkembang dengan baik, "
+"yaitu sekitar 20.000 pengecap. Sapi dapat mendeteksi bau sejauh 8 km."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:49
 msgctxt "board1|"
 msgid "This animal has around 20,000 taste buds."
-msgstr ""
+msgstr "Hewan ini memiliki sekitar 20.000 pengecap."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:57
 msgctxt "board1|"
@@ -6930,14 +6860,14 @@ msgid ""
 "ability to chase mice and other rodents. They purr to communicate various "
 "emotions."
 msgstr ""
+"Kucing bersuara 'meong, meong'. Kucing dipelihara oleh manusia karena "
+"bersahabat dan kemampuannya mengejar tikus dan hewan pengerat lainnya. "
+"Kucing mendengkur untuk menyampaikan berbagai emosi."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:61
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal lays eggs."
 msgctxt "board1|"
 msgid "This animal can purr."
-msgstr "Hewan ini bertelur."
+msgstr "Hewan ini bisa mendengkur."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:69
 msgctxt "board1|"
@@ -6950,11 +6880,13 @@ msgid ""
 "The pig goes 'oink'. Pigs wallow in the mud, mainly to control their body "
 "temperature."
 msgstr ""
+"Babi bersuara 'oink, oink'. Babi berkubang di lumpur, terutama untuk "
+"mengontrol suhu tubuhnya."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:73
 msgctxt "board1|"
 msgid "This animal wallows in the mud to control its body temperature."
-msgstr ""
+msgstr "Hewan ini berkubang di lumpur untuk mengontrol suhu tubuhnya."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:81
 msgctxt "board1|"
@@ -6967,14 +6899,14 @@ msgid ""
 "The duck goes 'quack'. Ducks are mostly aquatic birds. They have waterproof "
 "feathers and webbed feet which enable them to swim on the water."
 msgstr ""
+"Bebek berbunyi 'kwek, kwek'. Bebek sebagian besar merupakan hewan air. "
+"Mereka memiliki bulu tahan air dan kaki berselaput yang mempermudah mereka "
+"berenang di air."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:85
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal has webbed feet so it can swim in the water."
 msgctxt "board1|"
 msgid "This animal has webbed feet and can swim on the water."
-msgstr "Hewan ini memiliki kaki berselaput sehingga bisa berenang di air."
+msgstr "Hewan ini memiliki kaki yang berselaput dan bisa berenang di air."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:93
 msgctxt "board1|"
@@ -6982,26 +6914,18 @@ msgid "Owl"
 msgstr "Burung hantu"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:94
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid ""
-#| "The owl goes 'hoo. hoo.' The owl has excellent vision and hearing at "
-#| "night."
 msgctxt "board1|"
 msgid ""
 "The owl goes 'hoot'. Owls are nocturnal birds, they have excellent vision "
 "and hearing at night."
 msgstr ""
-"Burung hantu bersuara 'hoo. hoo.' Burung hantu memiliki penglihatan dan "
-"pendengaran yang sempurna pada malam hari."
+"Burung hantu berbunyi 'hoo. hoo.'. Burung hantu adalah burung malam hari, "
+"mereka memiliki penglihatan dan pendengaran yang sangat baik di malam hari."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:97
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal likes to come out at night."
 msgctxt "board1|"
 msgid "This animal is a nocturnal bird."
-msgstr "Hewan ini suka keluar pada malam hari."
+msgstr "Burung ini adalah hewan malam hari."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:105
 msgctxt "board1|"
@@ -7014,14 +6938,13 @@ msgid ""
 "The dog goes 'woof'. Dogs are probably the oldest domesticated species. They "
 "are descendants of the wolf."
 msgstr ""
+"Anjing bersuara 'guk guk'. Anjing merupakan spesies peliharaan tertua. "
+"Anjing termasuk keturunan serigala."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:109
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal is a close relative to the goat."
 msgctxt "board1|"
 msgid "This animal is a descendant of the wolf."
-msgstr "Binatang ini kerabat dekat kambing."
+msgstr "Hewan ini adalah keturunan serigala."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:117
 msgctxt "board1|"
@@ -7034,14 +6957,13 @@ msgid ""
 "The sheep goes 'baa'. Most sheep breeds bear a fleece of wool. The fleece "
 "can be sheared and used to produce textile fibre."
 msgstr ""
+"Domba bersuara 'mbeek, mbeek'. Sebagian besar keturunan domba memiliki bulu "
+"tebal. Bulunya diambil dan digunakan untuk membuat serat tekstil."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:121
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal's ancestors were wolves."
 msgctxt "board1|"
 msgid "This animal produces wool."
-msgstr "Nenek moyang hewan ini adalah serigala."
+msgstr "Hewan ini menghasilkan wol."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:131
 msgctxt "board1|"
@@ -7273,7 +7195,7 @@ msgstr ""
 "Sri Harimandir Sahib, yang dikenal sebagai Kuil Emas di Amritsar, adalah "
 "salah satu situs spiritual Sikhisme yang paling dihormati. Bangunan tersebut "
 "digunakan sebagai tempat ibadah bagi pria dan wanita dari semua lapisan "
-"masyarakat dan semua agama untuk menyembah Tuhan secara setara."
+"masyarakat dan semua agama untuk menyembah Tuhan dengan setara."
 
 #: activities/explore_monuments/resource/board/board2.qml:29
 #: activities/explore_monuments/resource/board/board2.qml:32
@@ -7336,7 +7258,7 @@ msgid ""
 msgstr ""
 "Great Stupa di Sanchi adalah bangunan batu tertua di India dan pada awalnya "
 "dibuat atas perintah kaisar Ashoka Agung pada tahun ke-3 sebelum masehi. "
-"Intinya struktur bata hemispherical sederhana yang dibangun di atas "
+"Dasarnya dari struktur bata hemispherical sederhana yang dibangun di atas "
 "peninggalan Buddha. Stupa ini dimahkotai oleh chatra, sebuah struktur "
 "seperti payung yang melambangkan derajat yang tinggi, tujuannya adalah untuk "
 "menghormati dan melindungi relik di dalam stupa."
@@ -7361,10 +7283,10 @@ msgstr ""
 "Ajanta caves adalah gua batu karang berjumlah sekitar 29 monumen yang "
 "dibangun dari abad ke-2 SM hingga sekitar 480 M di wilayah Aurangabad, "
 "negara bagian Maharashtra, India. Di dalam gua-gua tersebut terdapat lukisan "
-"dan patung-patung batu yang digambarkan sebagai salah satu contoh seni India "
-"kuno terbaik yang masih bertahan, terutama lukisan-lukisan ekspresif yang "
-"menghadirkan emosi melalui isyarat, pose, dan bentuk. Sejak 1983, gua-gua "
-"tersebut telah menjadi Situs Warisan Dunia UNESCO."
+"dan patung-patung batu yang menggambarkan sebagai salah satu contoh seni "
+"India kuno terbaik yang masih bertahan, terutama lukisan-lukisan ekspresif "
+"yang menghadirkan emosi melalui isyarat, pose, dan bentuk. Sejak 1983, gua-"
+"gua tersebut telah menjadi Situs Warisan Dunia UNESCO."
 
 #: activities/explore_monuments/resource/board/board2.qml:73
 #: activities/explore_monuments/resource/board/board2.qml:76
@@ -7493,7 +7415,7 @@ msgstr "Monumen India"
 #: activities/explore_monuments/resource/board/board2.qml:144
 msgctxt "board2|"
 msgid "Click on the location of the given monument."
-msgstr "Klik sesuai lokasi di mana monumen yang tersebut berada."
+msgstr "Klik sesuai lokasi di mana monumen tersebut berada."
 
 #: activities/explore_monuments/resource/board/board3.qml:18
 #: activities/explore_monuments/resource/board/board3.qml:21
@@ -7600,8 +7522,8 @@ msgid ""
 "century."
 msgstr ""
 "Arles Amphitheatre dibuat pada abad pertama SM yang pada awalnya merupakan "
-"tempat pertempuran gladiator dan balap kereta selama zaman kuno. Bangunan "
-"ini dimodifikasi berkali-kali, hingga akhirnya direnovasi pada abad ke-19."
+"tempat pertempuran gladiator dan balap kereta pada zaman kuno. Bangunan ini "
+"dimodifikasi berkali-kali, hingga akhirnya direnovasi pada abad ke-19."
 
 #: activities/explore_monuments/resource/board/board3.qml:73
 #: activities/explore_monuments/resource/board/board3.qml:76
@@ -7618,7 +7540,7 @@ msgid ""
 "its domain. This remarkable piece of architecture is certainly more than "
 "just a castle: it is the dream of a king, transformed into reality."
 msgstr ""
-"Bergengsi, megah, kolosal, dan luarbiasa adalah kata yang tepat untuk "
+"Bergengsi, megah, kolosal, dan luar biasa adalah kata yang tepat untuk "
 "menggambarkan kemegahan Chambord. Chateau terbesar di lembah Loire ini "
 "memang penuh kejutan bagi mereka yang cukup beruntung bisa menjelajahinya. "
 "Arsitektur yang luar biasa ini tentunya lebih dari sekadar sebuah kastil. "
@@ -7663,7 +7585,7 @@ msgid ""
 "buildings in Europe."
 msgstr ""
 "Daya tarik utama Avignon adalah Palais des Papes (Istana para Paus), sebuah "
-"kastil luas yang memiliki sejarah religius dan arsitektural yang penting. "
+"kastil luas yang memiliki sejarah keagamaan dan arsitektural yang penting. "
 "Ini adalah salah satu bangunan gotik abad pertengahan terbesar dan "
 "terpenting di Eropa."
 
@@ -7837,7 +7759,7 @@ msgstr ""
 "Aula dengan struktur bata yang panjang dan beratap tinggi dahulunya menjadi "
 "singgasana kaisar Romawi hingga penghancuran kota oleh suku Jermanik. Suku "
 "penyerang membangun pemukiman di dalam reruntuhan tanpa atapnya. Pada abad "
-"Xii, bagian apse dari reruntuhan aula ini diubah menjadi menara untuk "
+"XII, bagian apse dari reruntuhan aula ini diubah menjadi menara untuk "
 "mengakomodir Uskup Agung di Trier."
 
 #: activities/explore_monuments/resource/board/board4.qml:84
@@ -8165,8 +8087,8 @@ msgstr ""
 "sudut asli, berat yang akan ditambahkan di atas ruang dalam dan lorong "
 "menjadi terlalu besar, memaksa pembangunan untuk mengadopsi sudut yang lebih "
 "dangkal. Saat ini, Piramida Bent adalah satu-satunya piramida di Mesir yang "
-"lapisan luarnya terbuat dari batu kapur yang dipoles, sebagian besar masih "
-"utuh."
+"lapisan luarnya terbuat dari batu kapur yang dipoles, dan sebagian besar "
+"masih utuh."
 
 #: activities/explore_monuments/resource/board/board6.qml:39
 #: activities/explore_monuments/resource/board/board6.qml:42
@@ -8191,8 +8113,8 @@ msgstr ""
 "pemerintahan Dinasti ke 4 Firaun Sneferu, meskipun diyakini oleh beberapa "
 "orang bahwa piramida tersebut mungkin telah dimulai pembangunannya sebelum "
 "Sneferu, Huni. Pada beberapa titik ketika masa pembangunan, tangga-tangga "
-"pada piramida dipenuhi dengan batu kapr, dan menjadi titik awal usaha Bangsa "
-"Mesir kuno untuk membuat bangunan berbentuk piramida sejati."
+"pada piramida dipenuhi dengan batu kapur, dan menjadi titik awal usaha "
+"Bangsa Mesir kuno untuk membuat bangunan berbentuk piramida sejati."
 
 #: activities/explore_monuments/resource/board/board6.qml:50
 #: activities/explore_monuments/resource/board/board6.qml:53
@@ -8291,7 +8213,7 @@ msgid ""
 "The jaguar's jaw is well developed. Because of this, it has the strongest "
 "bite of all the felines, being able to break even a tortoise shell!"
 msgstr ""
-"Rahang jaguar berkembang dengan baik. Karena ini, ia memiliki gigitan "
+"Rahang jaguar berkembang dengan baik. Karena itu, ia memiliki gigitan "
 "terkuat dari semua binatang jenis kucing, bahkan mampu menghancurkan kulit "
 "kura-kura!"
 
@@ -8512,7 +8434,7 @@ msgid ""
 "southwest Madagascar. Its striped tail makes it easy to recognize."
 msgstr ""
 "Lemur ekor cincin adalah primata yang hidup pada daerah kering di Madagascar "
-"barat daya. Ekornya yang belang membuatnya mudah dikenali.."
+"barat daya. Ekornya yang belang membuatnya mudah dikenali."
 
 #: activities/explore_world_animals/resource/board/board3.qml:63
 #: activities/explore_world_animals/resource/board/board3.qml:66
@@ -8585,7 +8507,7 @@ msgid ""
 "like to hear the music again."
 msgstr ""
 "Di tingkat dua kamu akan mendengar contoh musik, dan kamu harus memilih "
-"lokasi yang sesuai dengan musik tersebut. Klik pada tombol mainkan jika kamu "
+"lokasi yang sesuai dengan musik tersebut. Klik pada ikon bibir jika kamu "
 "ingin mendengarkan ulang musik."
 
 #: activities/explore_world_music/ActivityInfo.qml:27
@@ -9241,7 +9163,7 @@ msgstr "Kontrol selang"
 #: activities/followline/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "The fireman needs to stop the fire, but the hose is blocked."
-msgstr "Pemadam kebakaran perlu menghentikan api, tapi selangnya tersumbat."
+msgstr "Pemadam kebakaran perlu memadamikan api, tapi selangnya tersumbat."
 
 #. Help goal
 #: activities/followline/ActivityInfo.qml:20
@@ -9278,7 +9200,7 @@ msgstr "Tendang bola ke gawang."
 #: activities/football/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Kick the ball behind the goal keeper on the right."
-msgstr "Tendang bola ke belakang kiper yang di sebelah kanan."
+msgstr "Tendang bola ke belakang kiper di sebelah kanan."
 
 #. Help manual
 #: activities/football/ActivityInfo.qml:24
@@ -9292,21 +9214,15 @@ msgstr ""
 
 #. Activity title
 #: activities/fractions_create/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice subtractions."
 msgctxt "ActivityInfo|"
 msgid "Create the fractions"
-msgstr "Latihan pengurangan."
+msgstr "Belajar pecahan"
 
 #. Help title
 #: activities/fractions_create/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "A shape splitted in equal parts is displayed on screen."
 msgctxt "ActivityInfo|"
 msgid "A shape split in equal parts is displayed on screen."
-msgstr "Sebuah bentuk terbelah menjadi bagian yang sama ditampilkan di layar."
+msgstr "Bentuk pecahan dengan bagian yang sama ditampilkan di layar."
 
 #: activities/fractions_create/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
@@ -9317,12 +9233,12 @@ msgstr "Pilih angka yang sesuai pada bagian yang dijelaskan sesuai intruksi."
 #: activities/fractions_create/fractions_create.js:79
 msgctxt "fractions_create|"
 msgid "Find the represented fraction."
-msgstr "Temukan pecahan yang diwakili."
+msgstr "Temukan pecahan sesuai yang ditampilkan."
 
 #: activities/fractions_create/resource/1/Data.qml:9
 msgctxt "Data|"
 msgid "Simplified fractions with a pie."
-msgstr "Pecahan sederhana dengan pai."
+msgstr "Pecahan sederhana dengan lingkaran."
 
 #: activities/fractions_create/resource/1/Data.qml:18
 #: activities/fractions_create/resource/3/Data.qml:17
@@ -9330,352 +9246,262 @@ msgstr "Pecahan sederhana dengan pai."
 #: activities/fractions_create/resource/3/Data.qml:29
 msgctxt "Data|"
 msgid "Select one half of the pie."
-msgstr "Pilih satu setengah dari pai."
+msgstr "Pilih satu setengah dari lingkaran."
 
 #: activities/fractions_create/resource/1/Data.qml:24
 #: activities/fractions_create/resource/3/Data.qml:35
 #: activities/fractions_create/resource/3/Data.qml:49
 msgctxt "Data|"
 msgid "Select one-third of the pie."
-msgstr "Pilih sepertiga dari pai."
+msgstr "Pilih sepertiga dari lingkaran."
 
 #: activities/fractions_create/resource/1/Data.qml:30
 #: activities/fractions_create/resource/3/Data.qml:41
 #: activities/fractions_create/resource/3/Data.qml:55
 msgctxt "Data|"
 msgid "Select two-thirds of the pie."
-msgstr "Pilih dua pertiga dari pai."
+msgstr "Pilih dua pertiga dari lingkaran."
 
 #: activities/fractions_create/resource/1/Data.qml:36
 #: activities/fractions_create/resource/3/Data.qml:61
 msgctxt "Data|"
 msgid "Select one-quarter of the pie."
-msgstr "Pilih seperempat pai."
+msgstr "Pilih seperempat lingkaran."
 
 #: activities/fractions_create/resource/1/Data.qml:42
 #: activities/fractions_create/resource/3/Data.qml:67
 msgctxt "Data|"
 msgid "Select two-fifths of the pie."
-msgstr "Pilih dua perlima dari pai."
+msgstr "Pilih dua perlima dari lingkaran."
 
 #: activities/fractions_create/resource/1/Data.qml:50
 msgctxt "Data|"
 msgid "Select one pie and one-quarter of a pie."
-msgstr "Pilih satu pai dan seperempat pai."
+msgstr "Pilih satu pai dan seperempat lingkaran."
 
 #: activities/fractions_create/resource/1/Data.qml:56
 msgctxt "Data|"
 msgid "Select one pie and two-fifths of a pie."
-msgstr "Pilih satu pai dan dua per lima pai."
+msgstr "Pilih satu pai dan dua per lima lingkaran."
 
 #: activities/fractions_create/resource/1/Data.qml:62
 msgctxt "Data|"
 msgid "Select one pie and one-third of a pie."
-msgstr "Pilih satu pai dan sepertiga pai."
+msgstr "Pilih satu pai dan sepertiga lingkaran."
 
 #: activities/fractions_create/resource/1/Data.qml:68
 msgctxt "Data|"
 msgid "Select one pie and one half of a pie."
-msgstr "Pilih satu pai dan satu setengah pai."
+msgstr "Pilih satu pai dan satu setengah lingkaran."
 
 #: activities/fractions_create/resource/1/Data.qml:74
 msgctxt "Data|"
 msgid "Select one pie and three-quarters of a pie."
-msgstr "Pilih satu pai dan tiga perempat pai."
+msgstr "Pilih satu pai dan tiga perempat lingkaran."
 
 #: activities/fractions_create/resource/10/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Specific questions with a rectangle."
 msgctxt "Data|"
 msgid "Specific questions with a square."
-msgstr "Pertanyaan spesifik dengan persegi panjang."
+msgstr "Pertanyaan spesifik dengan persegi."
 
 #: activities/fractions_create/resource/10/Data.qml:18
 #: activities/fractions_create/resource/10/Data.qml:24
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid ""
-#| "Select as many parts as you can without taking more than half of the "
-#| "rectangle."
 msgctxt "Data|"
 msgid ""
 "Select as many parts as you can without taking more than half of the square."
 msgstr ""
-"Pilih sebanyak mungkin bagian tanpa mengambil lebih dari setengah persegi "
-"panjang."
+"Pilih pecahan sebanyak mungkin tanpa mengambil lebih dari setengah persegi."
 
 #: activities/fractions_create/resource/2/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Simplified fractions with a pie."
 msgctxt "Data|"
 msgid "Simplified fractions with a square."
-msgstr "Pecahan sederhana dengan pai."
+msgstr "Pecahan sederhana dengan persegi."
 
 #: activities/fractions_create/resource/2/Data.qml:18
 #: activities/fractions_create/resource/4/Data.qml:17
 #: activities/fractions_create/resource/4/Data.qml:23
 #: activities/fractions_create/resource/4/Data.qml:29
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select one half of the pie."
 msgctxt "Data|"
 msgid "Select one half of the square."
-msgstr "Pilih satu setengah dari pai."
+msgstr "Pilih satu setengah dari persegi."
 
 #: activities/fractions_create/resource/2/Data.qml:24
 #: activities/fractions_create/resource/4/Data.qml:35
 #: activities/fractions_create/resource/4/Data.qml:49
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select one-third of the pie."
 msgctxt "Data|"
 msgid "Select one-third of the square."
-msgstr "Pilih sepertiga dari pai."
+msgstr "Pilih sepertiga dari persegi."
 
 #: activities/fractions_create/resource/2/Data.qml:30
 #: activities/fractions_create/resource/4/Data.qml:41
 #: activities/fractions_create/resource/4/Data.qml:55
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select two-thirds of the pie."
 msgctxt "Data|"
 msgid "Select two-thirds of the square."
-msgstr "Pilih dua pertiga dari pai."
+msgstr "Pilih dua pertiga dari persegi."
 
 #: activities/fractions_create/resource/2/Data.qml:36
 #: activities/fractions_create/resource/4/Data.qml:61
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select one-quarter of the pie."
 msgctxt "Data|"
 msgid "Select one-quarter of the square."
-msgstr "Pilih seperempat pai."
+msgstr "Pilih seperempat dari persegi."
 
 #: activities/fractions_create/resource/2/Data.qml:42
 #: activities/fractions_create/resource/4/Data.qml:67
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select two-fifths of the pie."
 msgctxt "Data|"
 msgid "Select two-fifths of the square."
-msgstr "Pilih dua perlima dari pai."
+msgstr "Pilih dua perlima dari persegi."
 
 #: activities/fractions_create/resource/2/Data.qml:50
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select one pie and one-quarter of a pie."
 msgctxt "Data|"
 msgid "Select one square and one-quarter of a square."
-msgstr "Pilih satu pai dan seperempat pai."
+msgstr "Pilih satu persegi dan seperempat dari persegi."
 
 #: activities/fractions_create/resource/2/Data.qml:56
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select one pie and two-fifths of a pie."
 msgctxt "Data|"
 msgid "Select one square and two-fifths of a square."
-msgstr "Pilih satu pai dan dua per lima pai."
+msgstr "Pilih satu persegi dan dua seperlima dari persegi."
 
 #: activities/fractions_create/resource/2/Data.qml:62
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select one pie and one-third of a pie."
 msgctxt "Data|"
 msgid "Select one square and one-third of a square."
-msgstr "Pilih satu pai dan sepertiga pai."
+msgstr "Pilih satu persegi dan sepertiga dari persegi."
 
 #: activities/fractions_create/resource/2/Data.qml:68
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select one pie and one half of a pie."
 msgctxt "Data|"
 msgid "Select one square and one half of a square."
-msgstr "Pilih satu pai dan satu setengah pai."
+msgstr "Pilih satu persegi dan satu setengah dari persegi."
 
 #: activities/fractions_create/resource/2/Data.qml:74
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select one pie and three-quarters of a pie."
 msgctxt "Data|"
 msgid "Select one square and three-quarters of a square."
-msgstr "Pilih satu pai dan tiga perempat pai."
+msgstr "Pilih satu persegi dan tiga seperempat dari persegi."
 
 #: activities/fractions_create/resource/3/Data.qml:9
 msgctxt "Data|"
 msgid "Non-simplified fractions with a pie."
-msgstr "Pecahan yang tidak disederhanakan dengan pai."
+msgstr "Pecahan yang tidak disederhanakan dengan lingkaran."
 
 #: activities/fractions_create/resource/3/Data.qml:73
 msgctxt "Data|"
 msgid "Select three-fifths of the pie."
-msgstr "Pilih tiga-perlima dari pai."
+msgstr "Pilih tiga-perlima dari lingkaran."
 
 #: activities/fractions_create/resource/4/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Non-simplified fractions with a pie."
 msgctxt "Data|"
 msgid "Non-simplified fractions with a square."
-msgstr "Pecahan yang tidak disederhanakan dengan pai."
+msgstr "Pecahan persegi yang tidak sederhana."
 
 #: activities/fractions_create/resource/4/Data.qml:73
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select three-fifths of the pie."
 msgctxt "Data|"
 msgid "Select three-fifths of the square."
-msgstr "Pilih tiga-perlima dari pai."
+msgstr "Pilih tiga per lima persegi."
 
 #: activities/fractions_create/resource/5/Data.qml:9
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Decimal number system."
 msgctxt "Data|"
 msgid "Decimal numbers with a pie."
-msgstr "Sistem bilangan desimal."
+msgstr "Angka desimal dengan lingkaran."
 
 #: activities/fractions_create/resource/5/Data.qml:18
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 0.5 pie."
-msgstr "Terpilih"
+msgstr "Pilih 0,5 lingkaran."
 
 #: activities/fractions_create/resource/5/Data.qml:24
 msgctxt "Data|"
 msgid "Select 0.25 pie."
-msgstr ""
+msgstr "Pilih 0.25 lingkaran."
 
 #: activities/fractions_create/resource/5/Data.qml:30
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 0.4 pie."
-msgstr "Terpilih"
+msgstr "Pilih 0.4 lingkaran."
 
 #: activities/fractions_create/resource/5/Data.qml:36
 msgctxt "Data|"
 msgid "Select 0.75 pie."
-msgstr ""
+msgstr "Pilih 0.75 lingkaran."
 
 #: activities/fractions_create/resource/5/Data.qml:42
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 0.8 pie."
-msgstr "Terpilih"
+msgstr "Pilih 0.8 lingkaran."
 
 #: activities/fractions_create/resource/5/Data.qml:50
 msgctxt "Data|"
 msgid "Select 1.25 pies."
-msgstr ""
+msgstr "Pilih 1.25 dari 2 lingkaran."
 
 #: activities/fractions_create/resource/5/Data.qml:56
 msgctxt "Data|"
 msgid "Select 1.4 pies."
-msgstr ""
+msgstr "Pilih 1.4 dari 2 lingkaran."
 
 #: activities/fractions_create/resource/5/Data.qml:62
 #: activities/fractions_create/resource/5/Data.qml:68
 msgctxt "Data|"
 msgid "Select 1.5 pies."
-msgstr ""
+msgstr "Pilih 1.5 dari 2 lingkaran."
 
 #: activities/fractions_create/resource/5/Data.qml:74
 msgctxt "Data|"
 msgid "Select 1.75 pies."
-msgstr ""
+msgstr "Pilih 1.75 dari 2 lingkaran."
 
 #: activities/fractions_create/resource/6/Data.qml:9
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Decimal number system."
 msgctxt "Data|"
 msgid "Decimal numbers with a square."
-msgstr "Sistem bilangan desimal."
+msgstr "Angka desimal dengan persegi."
 
 #: activities/fractions_create/resource/6/Data.qml:18
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 0.5 square."
-msgstr "Terpilih"
+msgstr "Pilih 0.5 persegi."
 
 #: activities/fractions_create/resource/6/Data.qml:24
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 0.25 square."
-msgstr "Terpilih"
+msgstr "Pilih 0.4 persegi."
 
 #: activities/fractions_create/resource/6/Data.qml:30
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 0.4 square."
-msgstr "Terpilih"
+msgstr "Pilih 0.4 persegi."
 
 #: activities/fractions_create/resource/6/Data.qml:36
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 0.75 square."
-msgstr "Terpilih"
+msgstr "Pilih 0.75 persegi."
 
 #: activities/fractions_create/resource/6/Data.qml:42
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 0.8 square."
-msgstr "Terpilih"
+msgstr "Pilih 0.8 persegi."
 
 #: activities/fractions_create/resource/6/Data.qml:50
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 1.25 squares."
-msgstr "Terpilih"
+msgstr "Pilih 1.25 dari 2 persegi."
 
 #: activities/fractions_create/resource/6/Data.qml:56
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 1.4 squares."
-msgstr "Terpilih"
+msgstr "Pilih 1.4 dari 2 persegi."
 
 #: activities/fractions_create/resource/6/Data.qml:62
 #: activities/fractions_create/resource/6/Data.qml:68
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 1.5 squares."
-msgstr "Terpilih"
+msgstr "Pilih 1.5 dari 2 persegi."
 
 #: activities/fractions_create/resource/6/Data.qml:74
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 1.75 squares."
-msgstr "Terpilih"
+msgstr "Pilih 1.75 dari 2 persegi."
 
 #: activities/fractions_create/resource/7/Data.qml:9
 msgctxt "Data|"
 msgid "Percentages with a pie."
-msgstr ""
+msgstr "Persentase dengan lingkaran."
 
 #. Select %1 percent of the pie.
 #: activities/fractions_create/resource/7/Data.qml:19
@@ -9686,17 +9512,15 @@ msgstr ""
 #: activities/fractions_create/resource/7/Data.qml:56
 #: activities/fractions_create/resource/7/Data.qml:63
 #: activities/fractions_create/resource/7/Data.qml:70
-#, fuzzy, qt-format
-#| msgctxt "calendar_dataset|"
-#| msgid "Select the 1st"
+#, qt-format
 msgctxt "Data|"
 msgid "Select %1% of the pie."
-msgstr "Pilih hari ke 1"
+msgstr "Pilih %1% dari lingkaran."
 
 #: activities/fractions_create/resource/8/Data.qml:9
 msgctxt "Data|"
 msgid "Percentages with a square."
-msgstr ""
+msgstr "Persentase dengan persegi."
 
 #. Select %1 percent of the square.
 #: activities/fractions_create/resource/8/Data.qml:19
@@ -9705,17 +9529,15 @@ msgstr ""
 #: activities/fractions_create/resource/8/Data.qml:42
 #: activities/fractions_create/resource/8/Data.qml:49
 #: activities/fractions_create/resource/8/Data.qml:56
-#, fuzzy, qt-format
-#| msgctxt "calendar_dataset|"
-#| msgid "Select the 1st"
+#, qt-format
 msgctxt "Data|"
 msgid "Select %1% of the square."
-msgstr "Pilih hari ke 1"
+msgstr "Pilih %1% dengan persegi."
 
 #: activities/fractions_create/resource/9/Data.qml:9
 msgctxt "Data|"
 msgid "Specific questions with a pie."
-msgstr ""
+msgstr "Pertanyaan khusus dengan lingkaran."
 
 #: activities/fractions_create/resource/9/Data.qml:18
 #: activities/fractions_create/resource/9/Data.qml:24
@@ -9723,69 +9545,50 @@ msgctxt "Data|"
 msgid ""
 "Select as many parts as you can without taking more than half of the pie."
 msgstr ""
+"Pilih pecahan sebanyak mungkin tanpa mengambil lebih dari setengah lingkaran."
 
 #. Activity title
 #: activities/fractions_find/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "instruments|"
-#| msgid "Find the accordion"
 msgctxt "ActivityInfo|"
 msgid "Find the fractions"
-msgstr "Temukan akordeon"
+msgstr "Belajar pecahan"
 
 #. Help title
 #: activities/fractions_find/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Find the correct date and select it on the calendar."
 msgctxt "ActivityInfo|"
 msgid "Find the correct numerator and denominator of the represented fraction."
-msgstr "Temukan tanggal yang tepat dan pilih di kalender."
+msgstr ""
+"Temukan pembilang dan penyebut yang benar dari pecahan yang ditampilkan."
 
 #: activities/fractions_find/resource/1/Data.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Align four (with a friend)"
 msgctxt "Data|"
 msgid "Find numerator (with a pie)."
-msgstr "Sejajarkan empat (dengan teman)"
+msgstr "Temukan pembilang (dengan lingkaran)."
 
 #: activities/fractions_find/resource/2/Data.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Align four (with a friend)"
 msgctxt "Data|"
 msgid "Find numerator (with a square)."
-msgstr "Sejajarkan empat (dengan teman)"
+msgstr "Temukan pembilang (dengan persegi panajng)."
 
 #: activities/fractions_find/resource/3/Data.qml:9
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Nine men's morris (with a friend)"
 msgctxt "Data|"
 msgid "Find denominator (with a pie)."
-msgstr "Sembilan pria morris (dengan seorang teman)"
+msgstr "Temukan penyebut (dengan lingkaran)."
 
 #: activities/fractions_find/resource/4/Data.qml:9
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Nine men's morris (with a friend)"
 msgctxt "Data|"
 msgid "Find denominator (with a square)."
-msgstr "Sembilan pria morris (dengan seorang teman)"
+msgstr "Temukan penyebut (dengan persegi panajng)."
 
 #: activities/fractions_find/resource/5/Data.qml:9
 msgctxt "Data|"
 msgid "Find numerator and denominator (with a pie)."
-msgstr ""
+msgstr "Temukan pembilang dan penyebut (dengan lingkaran)."
 
 #: activities/fractions_find/resource/6/Data.qml:9
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Nine men's morris (with a friend)"
 msgctxt "Data|"
 msgid "Find numerator and denominator (with a square)."
-msgstr "Sembilan pria morris (dengan seorang teman)"
+msgstr "Temukan pembilang dan penyebut (dengan persegi panajng)."
 
 #. Activity title
 #: activities/geo-country/ActivityInfo.qml:19
@@ -11021,15 +10824,18 @@ msgid "Suvalkija"
 msgstr "Suvalkija"
 
 #: activities/geo-country/resource/board/board18_0.qml:13
+#, fuzzy
+#| msgctxt "board18_0|"
+#| msgid "Autonomous communities of Spain"
 msgctxt "board18_0|"
 msgid "Autonomous communities or cities of Spain"
-msgstr ""
+msgstr "Komunitas otonomi Spanyol"
 
 #. Autonomous communities of Spain: Andalusia
 #: activities/geo-country/resource/board/board18_0.qml:22
 msgctxt "board18_0|"
 msgid "Andalusia"
-msgstr ""
+msgstr "Andalusia"
 
 #. Autonomous communities of Spain: Madrid
 #: activities/geo-country/resource/board/board18_0.qml:29
@@ -11041,19 +10847,19 @@ msgstr "Madrid"
 #: activities/geo-country/resource/board/board18_0.qml:36
 msgctxt "board18_0|"
 msgid "Galicia"
-msgstr ""
+msgstr "Galicia"
 
 #. Autonomous communities of Spain: Castile and León
 #: activities/geo-country/resource/board/board18_0.qml:43
 msgctxt "board18_0|"
 msgid "Castile and León"
-msgstr ""
+msgstr "Castile dan León"
 
 #. Autonomous communities of Spain: Castilla-La Mancha
 #: activities/geo-country/resource/board/board18_0.qml:50
 msgctxt "board18_0|"
 msgid "Castilla-La Mancha"
-msgstr ""
+msgstr "Castilla-La Mancha"
 
 #. Autonomous communities of Spain: Catalonia
 #: activities/geo-country/resource/board/board18_0.qml:57
@@ -11063,39 +10869,33 @@ msgstr "Catalonia"
 
 #. Autonomous communities of Spain: Aragon
 #: activities/geo-country/resource/board/board18_0.qml:64
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Hexagon"
 msgctxt "board18_0|"
 msgid "Aragon"
-msgstr "Segi enam"
+msgstr "Aragon"
 
 #. Autonomous communities of Spain: Valencia
 #: activities/geo-country/resource/board/board18_0.qml:71
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Calendar"
 msgctxt "board18_0|"
 msgid "Valencia"
-msgstr "Kalender"
+msgstr "Valencia"
 
 #. Autonomous communities of Spain: Murcia
 #: activities/geo-country/resource/board/board18_0.qml:78
 msgctxt "board18_0|"
 msgid "Murcia"
-msgstr ""
+msgstr "Murcia"
 
 #. Autonomous communities of Spain: Asturias
 #: activities/geo-country/resource/board/board18_0.qml:85
 msgctxt "board18_0|"
 msgid "Asturias"
-msgstr ""
+msgstr "Asturias"
 
 #. Autonomous communities of Spain: Basque Country
 #: activities/geo-country/resource/board/board18_0.qml:92
 msgctxt "board18_0|"
 msgid "Basque Country"
-msgstr ""
+msgstr "Negara Basque"
 
 #. Autonomous communities of Spain: La Rioja
 #: activities/geo-country/resource/board/board18_0.qml:99
@@ -11105,27 +10905,21 @@ msgstr "La Rioja"
 
 #. Autonomous communities of Spain: Cantabria
 #: activities/geo-country/resource/board/board18_0.qml:106
-#, fuzzy
-#| msgctxt "board11_0|"
-#| msgid "Calabria"
 msgctxt "board18_0|"
 msgid "Cantabria"
-msgstr "Calabria"
+msgstr "Cantabria"
 
 #. Autonomous communities of Spain: Navarre
 #: activities/geo-country/resource/board/board18_0.qml:113
-#, fuzzy
-#| msgctxt "board5|"
-#| msgid "Navajo"
 msgctxt "board18_0|"
 msgid "Navarre"
-msgstr "Navajo"
+msgstr "Navarre"
 
 #. Autonomous communities of Spain: Extremadura
 #: activities/geo-country/resource/board/board18_0.qml:120
 msgctxt "board18_0|"
 msgid "Extremadura"
-msgstr ""
+msgstr "Extremadura"
 
 #. Autonomous communities of Spain: Canary Islands
 #: activities/geo-country/resource/board/board18_0.qml:127
@@ -11135,12 +10929,9 @@ msgstr "Kepulauan Canaria"
 
 #. Autonomous communities of Spain: Balearic Islands
 #: activities/geo-country/resource/board/board18_0.qml:134
-#, fuzzy
-#| msgctxt "board14_0|"
-#| msgid "Mariana Islands"
 msgctxt "board18_0|"
 msgid "Balearic Islands"
-msgstr "Kepulauan Mariana"
+msgstr "Kepulauan Balearic"
 
 #. Autonomous communities of Spain: Ceuta
 #: activities/geo-country/resource/board/board18_0.qml:141
@@ -11152,7 +10943,7 @@ msgstr "Ceuta"
 #: activities/geo-country/resource/board/board18_0.qml:148
 msgctxt "board18_0|"
 msgid "Melilla"
-msgstr ""
+msgstr "Melilla"
 
 #: activities/geo-country/resource/board/board1_0.qml:15
 msgctxt "board1_0|"
@@ -13779,11 +13570,11 @@ msgid ""
 "move and tap to swallow the numbers."
 msgstr ""
 "Jika kamu menggunakan keyboard, kamu bisa menggunakan tombol panah untuk "
-"bergerak dan menekan spasi untuk menelan angka. Dengan mouse, kamu bisa "
+"bergerak dan menekan spasi untuk memakan angka. Dengan mouse, kamu bisa "
 "mengklik pada blok di sebelah posisi kamu untuk bergerak, dan klik lagi "
-"untuk menelan angka. Dengan layar sentuh, kamu bisa melakukan seperti dengan "
+"untuk memakan angka. Dengan layar sentuh, kamu bisa melakukan seperti dengan "
 "mouse atau menggesek di mana saja ke arah yang Ingin kamu pindahkan dan "
-"tekan untuk menelan angka."
+"tekan untuk memakan angka."
 
 #: activities/gnumch-equality/ActivityInfo.qml:28
 #: activities/gnumch-factors/ActivityInfo.qml:28
@@ -13801,7 +13592,7 @@ msgstr "Berhati-hatilah untuk menghindari Troggles."
 #: activities/gnumch-primes/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
 msgid "Space: swallow the numbers"
-msgstr "Spasi: menelan angka"
+msgstr "Spasi: memakan angka"
 
 #: activities/gnumch-equality/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -14165,7 +13956,7 @@ msgid ""
 "anticipate by looking at the size and direction of the arrow showing the "
 "gravity force."
 msgstr ""
-"Pindahkan pesawat ruang angkasa dengan tombol panah kiri dan kanan, atau "
+"Pindahkan pesawat ruang angkasa dengan tombol panah kiri atau kanan, atau "
 "dengan tombol di layar jika menggunakan layar sentuh. Cobalah untuk tetap "
 "dekat dengan tengah layar dan mengantisipasinya dengan melihat ukuran dan "
 "arah panah yang menunjukkan gaya gravitasi."
@@ -14173,7 +13964,7 @@ msgstr ""
 #: activities/gravity/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: move the spaceship"
-msgstr "Panah kiri dan kanan: memindahkan pesawat ruang angkasa"
+msgstr "Panah kiri atau kanan: memindahkan pesawat ruang angkasa"
 
 #: activities/gravity/Gravity.qml:210
 msgctxt "Gravity|"
@@ -14219,8 +14010,8 @@ msgid ""
 "of the gravity on your ship."
 msgstr ""
 "Tujuan kamu adalah untuk memindahkan pesawat ruang angkasa dan menghindari "
-"tabrakan planet-planet sampai kamu mencapai stasiun ruang angkasa. Panah "
-"menunjukkan arah dan intensitas gravitasi di kapal kamu."
+"tabrakan dengan planet sampai kamu mencapai stasiun ruang angkasa. Panah "
+"menunjukkan arah dan intensitas gravitasi di pesawat kamu."
 
 #: activities/gravity/Gravity.qml:223
 msgctxt "Gravity|"
@@ -14286,7 +14077,7 @@ msgid ""
 "number to guess in the instruction."
 msgstr ""
 "Seret angka dan lambang operasi hitung yang sesuai ke dalam kotak untuk "
-"mendapatkan angka yang ditebak pada instruksi."
+"mendapatkan angka yang ditebak pada perintah."
 
 #: activities/guesscount/Admin.qml:30
 #, qt-format
@@ -14329,22 +14120,22 @@ msgstr "Operator"
 #: activities/guesscount/resource/1/Data.qml:20
 msgctxt "Data|"
 msgid "Practice algebraic calculations with a single operator."
-msgstr "Praktek perhitungan aljabar dengan operator tunggal."
+msgstr "Praktik perhitungan aljabar dengan operator tunggal."
 
 #: activities/guesscount/resource/2/Data.qml:14
 msgctxt "Data|"
 msgid "Practice algebraic calculations with two operators."
-msgstr "Praktek perhitungan aljabar dengan dua operator."
+msgstr "Praktik perhitungan aljabar dengan dua operator."
 
 #: activities/guesscount/resource/3/Data.qml:14
 msgctxt "Data|"
 msgid "Practice algebraic calculations with three operators."
-msgstr "Praktek perhitungan aljabar dengan tiga operator."
+msgstr "Praktik perhitungan aljabar dengan tiga operator."
 
 #: activities/guesscount/resource/4/Data.qml:14
 msgctxt "Data|"
 msgid "Practice algebraic calculations with four operators."
-msgstr "Praktek perhitungan aljabar dengan empat operator."
+msgstr "Praktik perhitungan aljabar dengan empat operator."
 
 #. Activity title
 #: activities/guessnumber/ActivityInfo.qml:15
@@ -14356,7 +14147,7 @@ msgstr "Tebak angka"
 #: activities/guessnumber/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Help Tux escape the cave by finding the hidden number."
-msgstr "Bantu Tux melarikan diri dari gua dengan menemukan nomor tersembunyi."
+msgstr "Bantu Tux untuk keluar dari gua dengan menemukan nomor tersembunyi."
 
 #. Help prerequisite
 #: activities/guessnumber/ActivityInfo.qml:22
@@ -14546,7 +14337,7 @@ msgstr "Membuat menara yang sama."
 #: activities/hanoi/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Reproduce the tower on the right in the empty area."
-msgstr "Mereproduksi menara di sebelah kanan di area kosong."
+msgstr "Menyusun menara di sebelah kanan di area kosong."
 
 #. Help manual
 #: activities/hanoi/ActivityInfo.qml:24
@@ -15060,7 +14851,7 @@ msgstr "Temukan harmonika"
 #: activities/instruments/instruments.js:254
 msgctxt "instruments|"
 msgid "Find the horn"
-msgstr "Temukan terompet lingkar"
+msgstr "Temukan terompet melingkar"
 
 #: activities/instruments/instruments.js:226
 #: activities/instruments/instruments.js:259
@@ -15179,7 +14970,7 @@ msgstr ""
 "keseluruhan peawat kamu termasuk gaya gravitasi. Di area hijau atas "
 "akselerometer, akselerasi kamu lebih tinggi dari gaya gravitasi, di area "
 "merah bawah tersebut lebih rendah, dan pada garis dasar biru di daerah "
-"tengah kuning kedua kekuatan membatalkan satu sama lain."
+"tengah kuning kedua kekuatannya membatalkan satu sama lain."
 
 #: activities/land_safe/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
@@ -15245,10 +15036,11 @@ msgid ""
 "landing platform.<br/>The landing platform turns green when the velocity is "
 "safe to land."
 msgstr ""
-"Gunakan tombol panah atas dan bawah untuk mengendalikan gaya dorong.<br/"
-">Gunakan tombol panah kanan dan kiri untuk mengendalikan gaya arah.<br/>Kamu "
-"harus mengarahkan kapal Tux ke tempat pendaratan.<br/>Tempat pendaratan akan "
-"berwarna hijau jika kecepatanmu pas untuk pendaratan yang aman."
+"Gunakan tombol panah atas atau bawah untuk mengendalikan gaya dorong.<br/"
+">Gunakan tombol panah kanan atau kiri untuk mengendalikan gaya arah.<br/"
+">Kamu harus mengarahkan pesawat Tux ke tempat pendaratan.<br/>Tempat "
+"pendaratan akan berwarna hijau jika kecepatanmu tepat untuk pendaratan yang "
+"aman."
 
 #: activities/land_safe/resource/1/Data.qml:30
 #: activities/land_safe/resource/2/Data.qml:29
@@ -15298,8 +15090,8 @@ msgid ""
 "and left keys now control the rotation of the ship.<br/>To move the ship in "
 "horizontal direction you must first rotate and then accelerate."
 msgstr ""
-"Tombol panah atas dan bawah mengendalikan gaya dorong mesin belakang.<br/"
-">Tombol panah kanan dan kiri sekarang untuk mengendalikan putaran pesawat."
+"Tombol panah atas atau bawah mengendalikan gaya dorong mesin belakang.<br/"
+">Tombol panah kanan atau kiri sekarang untuk mengendalikan putaran pesawat."
 "<br/>Untuk memindahkan pesawat ke arah horizontal kamu harus memutar "
 "terlebih dahulu dan kemudian mempercepatnya."
 
@@ -15331,14 +15123,14 @@ msgid ""
 "type the text."
 msgstr ""
 "Tinjau satu set kata-kata. Setiap kata ditampilkan dengan suara, teks, dan "
-"gambar.<br/>Setelah selesai, Kamu akan memiliki beberapa latihan untuk "
+"gambar.<br/>Setelah selesai, kamu akan memiliki beberapa latihan untuk "
 "mengenali teks dari suara dan gambar, kemudian hanya dari suara, dan "
 "akhirnya latihan untuk mengetik teks."
 
 #: activities/lang/ActivityInfo.qml:32
 msgctxt "ActivityInfo|"
 msgid "In the configuration, you can select the language you want to learn."
-msgstr "Pada pengaturan, Kamu bisa memilih bahasa yang ingin kamu pelajari."
+msgstr "Pada pengaturan, kamu bisa memilih bahasa yang ingin kamu pelajari."
 
 #: activities/lang/ActivityInfo.qml:35
 msgctxt "ActivityInfo|"
@@ -15348,7 +15140,7 @@ msgstr "Spasi atau Enter: pilih benda dari daftar"
 #: activities/lang/ActivityInfo.qml:36
 msgctxt "ActivityInfo|"
 msgid "Enter: validate your answer when the OK button is visible"
-msgstr "Masukkan: setujui jawaban kamu ketika tombol OK terlihat"
+msgstr "Enter: setujui jawaban kamu ketika tombol OK terlihat"
 
 #: activities/lang/ActivityInfo.qml:37
 #: activities/missing-letter/ActivityInfo.qml:27
@@ -15378,7 +15170,7 @@ msgid ""
 "in the configuration dialog."
 msgstr ""
 "Kami beralih ke Bahasa Inggris untuk kegiatan ini namun kamu dapat memilih "
-"bahasa lain pada dialog pengaturan."
+"bahasa lain lewat dialog pengaturan."
 
 #: activities/lang/Lang.qml:191 activities/lang/Lang.qml:192
 msgctxt "Lang|"
@@ -15511,7 +15303,7 @@ msgstr "Belajar penambahan dengan angka kecil."
 #: activities/learn_additions/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Learn additions by counting their result."
-msgstr "Belajar penambahan dengan mencacah hasilnya."
+msgstr "Belajar penambahan dengan menghitung hasilnya."
 
 #. Help manual
 #: activities/learn_additions/ActivityInfo.qml:24
@@ -15866,12 +15658,9 @@ msgstr "Mengaktifkan suara"
 
 #. Activity title
 #: activities/learn_digits/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Count the items"
 msgctxt "ActivityInfo|"
 msgid "Count and color the circles"
-msgstr "Menghitung benda"
+msgstr "Hitung dan warnai lingkarannya"
 
 #. Help title
 #: activities/learn_digits/ActivityInfo.qml:17
@@ -15955,7 +15744,7 @@ msgstr "Belajar kuantitas"
 #: activities/learn_quantities/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Learn to represent a quantity of objects."
-msgstr "Belajarlah untuk menggambarkan sejumlah objek."
+msgstr "Belajar berhitung dengan menggambar sejumlah objek."
 
 #. Help goal
 #: activities/learn_quantities/ActivityInfo.qml:19
@@ -16027,7 +15816,7 @@ msgstr "Belajar pengurangan dengan angka kecil."
 #: activities/learn_subtractions/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Learn subtractions by counting their result."
-msgstr "Belajar pengurangan dengan mencacah hasilnya."
+msgstr "Belajar pengurangan dengan menghitung hasilnya."
 
 #. Help manual
 #: activities/learn_subtractions/ActivityInfo.qml:24
@@ -16055,29 +15844,20 @@ msgid "Subtractions with 1, 2, 3, 4 and 5."
 msgstr "Pengurangan dengan 1, 2, 3, 4 dan 5."
 
 #: activities/learn_subtractions/resource/4/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2, 3, 4 and 5."
 msgctxt "Data|"
 msgid "Subtractions with 1, 2, 3, 4, 5, 6 and 7."
-msgstr "Pengurangan dengan 1, 2, 3, 4 dan 5."
+msgstr "Pengurangan dengan 1, 2, 3, 4, 5, 6 dan 7."
 
 #: activities/learn_subtractions/resource/5/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2, 3, 4 and 5."
 msgctxt "Data|"
 msgid "Subtractions with 1, 2, 3, 4, 5, 6, 7, 8 and 9."
-msgstr "Pengurangan dengan 1, 2, 3, 4 dan 5."
+msgstr "Pengurangan dengan 1, 2, 3, 4, 5, 6, 7, 8 dan 9."
 
 #. Activity title
 #: activities/left_right_click/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Memory training."
 msgctxt "ActivityInfo|"
 msgid "Mouse click training"
-msgstr "Latihan mengingat."
+msgstr "Belajar klik mouse"
 
 #. Help title
 #: activities/left_right_click/ActivityInfo.qml:16
@@ -16085,12 +15865,14 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Move animals to their homes using a left click or right click on your mouse."
 msgstr ""
+"Pindahkan hewan ke tempat tinggalnya dengan cara klik kiri atau klik kanan "
+"menggunakan mouse kamu."
 
 #. Help goal
 #: activities/left_right_click/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Using the mouse. Left and right click training."
-msgstr ""
+msgstr "Menggunakan mouse. Belajar klik kiri dan kanan."
 
 #. Help manual
 #: activities/left_right_click/ActivityInfo.qml:23
@@ -16099,6 +15881,9 @@ msgid ""
 "A left click on a fish will move it to the pond. A right click on a monkey "
 "will move it to the tree. A message will show if you make the wrong click."
 msgstr ""
+"Klik kiri pada ikan akan memindahkannya ke kolam. Klik kanan pada monyet "
+"akan memindahkannya ke pohon. Sebuah peringatan muncul jika kamu melakukan "
+"klik yang salah."
 
 #. Activity title
 #: activities/leftright/ActivityInfo.qml:15
@@ -16196,8 +15981,8 @@ msgid ""
 "A letter is written. Some words are displayed, and you must find the word or "
 "the words in which this letter appears."
 msgstr ""
-"Sebuah surat ditulis. Beberapa kata ditampilkan, dan kamu harus menemukan "
-"kata atau kata-kata di mana huruf tersebut muncul."
+"Sebuah huruf ditulis. Beberapa kata ditampilkan, dan kamu harus menemukan "
+"kata atau kata-kata di mana saja huruf tersebut berada."
 
 #. Help goal
 #: activities/letter-in-word/ActivityInfo.qml:20
@@ -16271,7 +16056,7 @@ msgstr ""
 "Efek menekan sebuah tombol adalah untuk menjungkit tombol tersebut, dan "
 "milik tetangga baik vertikal dan horizontal secara langsung. Matahari dan "
 "warna langit bergantung pada jumlah klik yang dibutuhkan untuk memecahkan "
-"teka-teki tersebut. Jika kamu mengeklik Tux, solusinya akan ditampilkan."
+"teka-teki tersebut. Jika kamu mengeklik Tux, sebuah solusi akan ditampilkan."
 
 #: activities/lightsoff/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
@@ -16411,7 +16196,7 @@ msgid ""
 msgstr ""
 "Charles Barbier, seorang tentara Perancis, mengunjungi sekolahnya dan "
 "membagikan penemuannya tentang tulisan malam, sebuah kode dari 12 titik yang "
-"diangkat untuk berbagi informasi tentang medan perang."
+"digunakan untuk berbagi informasi pada medan perang."
 
 #: activities/louis-braille/louis_braille_data.js:42
 msgctxt "louis_braille_data|"
@@ -16426,7 +16211,7 @@ msgid ""
 "He became a teacher after graduating and promoted his method while secretly "
 "teaching it at the Institute."
 msgstr ""
-"Ia menjadi guru setelah lulus dan mempromosikan metodenya sambil diam-diam "
+"Da menjadi guru setelah lulus dan mempromosikan metodenya sambil diam-diam "
 "mengajarkannya di Institut."
 
 #: activities/louis-braille/louis_braille_data.js:52
@@ -16598,45 +16383,45 @@ msgstr ""
 #: activities/magic-hat-plus/resource/1/Data.qml:13
 msgctxt "Data|"
 msgid "Add stars up to 3."
-msgstr "Tambahkan bintang hingga 3."
+msgstr "Penambahan bintang hingga 3."
 
 #: activities/magic-hat-plus/resource/2/Data.qml:13
 msgctxt "Data|"
 msgid "Add stars up to 4."
-msgstr "Tambahkan bintang hingga 4."
+msgstr "Penambahan bintang hingga 4."
 
 #: activities/magic-hat-plus/resource/3/Data.qml:13
 msgctxt "Data|"
 msgid "Add stars up to 5."
-msgstr "Tambahkan bintang hingga 5."
+msgstr "Penambahan bintang hingga 5."
 
 #: activities/magic-hat-plus/resource/4/Data.qml:13
 msgctxt "Data|"
 msgid "Add stars up to 10."
-msgstr "Tambahkan bintang hingga 10."
+msgstr "Penambahan bintang hingga 10."
 
 #: activities/magic-hat-plus/resource/5/Data.qml:13
 msgctxt "Data|"
 msgid "Add stars up to 30."
-msgstr "Tambahkan bintang hingga 30."
+msgstr "Penambahan bintang hingga 30."
 
 #. Coefficients are the numbers by which the numbers of stars are multiplied to get the total
 #: activities/magic-hat-plus/resource/6/Data.qml:14
 msgctxt "Data|"
 msgid "Add stars up to 100 with coefficients."
-msgstr "Tambahkan bintang hingga 100 dengan koefisien."
+msgstr "Penambahan bintang hingga 100 dengan koefisien."
 
 #. Coefficients are the numbers by which the numbers of stars are multiplied to get the total
 #: activities/magic-hat-plus/resource/7/Data.qml:14
 msgctxt "Data|"
 msgid "Add stars up to 1000 with coefficients."
-msgstr "Tambahkan bintang hingga 1000 dengan koefisien."
+msgstr "Penambahan bintang hingga 1000 dengan koefisien."
 
 #. Coefficients are the numbers by which the numbers of stars are multiplied to get the total
 #: activities/magic-hat-plus/resource/8/Data.qml:14
 msgctxt "Data|"
 msgid "Add stars up to 10000 with coefficients."
-msgstr "Tambahkan bintang hingga 10000 dengan koefisien."
+msgstr "Penambahan bintang hingga 10000 dengan koefisien."
 
 #. Activity title
 #: activities/maze/ActivityInfo.qml:15
@@ -16677,7 +16462,7 @@ msgid ""
 msgstr ""
 "Untuk labirin yang lebih besar, terdapat mode jalan khusus, yang disebut "
 "\"Mode lari cepat\". Jika mode lari cepat ini diaktifkan, Tux akan berjalan "
-"sepanjang jalan secara otomatis sampai dia mencapai cabang, dan kamu harus "
+"sepanjang jalan secara otomatis sampai dia mencapai belokan, dan kamu harus "
 "memutuskan jalan mana yang harus ditempuh lagi."
 
 #: activities/maze/ActivityInfo.qml:27
@@ -17277,7 +17062,7 @@ msgstr ""
 #: activities/memory-math-add/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Practice additions."
-msgstr "Praktek penambahan."
+msgstr "Praktik penambahan."
 
 #. Help manual
 #: activities/memory-math-add-tux/ActivityInfo.qml:24
@@ -17605,7 +17390,7 @@ msgstr ""
 #: activities/memory-math-mult-div/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Practice multiplications and divisions."
-msgstr "Praktek perkalian dan pembagian."
+msgstr "Praktik perkalian dan pembagian."
 
 #. Help prerequisite
 #: activities/memory-math-mult-div-tux/ActivityInfo.qml:22
@@ -17660,7 +17445,7 @@ msgstr ""
 #: activities/memory-math-mult/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Practice multiplications."
-msgstr "Praktek perkalian."
+msgstr "Praktik perkalian."
 
 #. Help prerequisite
 #: activities/memory-math-mult-tux/ActivityInfo.qml:22
@@ -18134,12 +17919,12 @@ msgstr ""
 #: activities/menu/ActivityInfo.qml:35
 msgctxt "ActivityInfo|"
 msgid "1, 2 or 3 yellow stars - from 2 to 6 years old"
-msgstr "1, 2, atau 3 bintang kuning - dari 2 hingga 6 tahun"
+msgstr "1, 2, atau 3 bintang kuning - untuk usia 2 hingga 6 tahun"
 
 #: activities/menu/ActivityInfo.qml:36
 msgctxt "ActivityInfo|"
 msgid "1, 2 or 3 red stars - 7 years and up"
-msgstr "1, 2, atau 3 bintang merah - 7 tahun ke atas"
+msgstr "1, 2, atau 3 bintang merah - untuk usia 7 tahun ke atas"
 
 #: activities/menu/ActivityInfo.qml:37
 msgctxt "ActivityInfo|"
@@ -18377,7 +18162,7 @@ msgid ""
 "You selected a new locale, you need to restart GCompris to use it.<br/>Do "
 "you want to download the corresponding sound files now?"
 msgstr ""
-"Kamu memilih bahasa lokal baru, kamu perlu menyalakan ualang GCompris untuk "
+"Kamu memilih bahasa lokal baru, kamu perlu menyalakan ulang GCompris untuk "
 "menggunakannya.<br/>Apakah kamu ingin mengunduh berkas suara yang sesuai "
 "sekarang?"
 
@@ -18534,7 +18319,8 @@ msgid ""
 "this level."
 msgstr ""
 "Gerobak di sudut kanan bawah layar akan memberitahu kamu jumlah bongkahan "
-"yang sudah dikumpulkan dan jumlah bongkahan untuk dikumpulkan di tingkat ini."
+"yang sudah dikumpulkan dan jumlah bongkahan untuk dikumpulkan pada tingkat "
+"ini."
 
 #: activities/mining/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
@@ -18705,7 +18491,7 @@ msgstr ""
 #: activities/number_sequence/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Can count."
-msgstr "Dapat menghitung."
+msgstr "Bisa menghitung."
 
 #. Help manual
 #: activities/money/ActivityInfo.qml:24
@@ -18850,21 +18636,15 @@ msgstr ""
 
 #. Activity title
 #: activities/morse_code/ActivityInfo.qml:18
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Discover the braille system"
 msgctxt "ActivityInfo|"
 msgid "Discover the International Morse code"
-msgstr "Mempelajari sistem Braille"
+msgstr "Temukan kode Morse Internasional"
 
 #. Help title
 #: activities/morse_code/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn how to tell the time on an analog clock."
 msgctxt "ActivityInfo|"
 msgid "Learn how to communicate with the International Morse code."
-msgstr "Pelajari cara membaca waktu pada jam analog."
+msgstr "Mempelajari cara berkomunikasi menggunakan kode Morse Internasional."
 
 #. Help goal
 #: activities/morse_code/ActivityInfo.qml:23
@@ -18872,15 +18652,14 @@ msgctxt "ActivityInfo|"
 msgid ""
 "You have to send and receive letters and digits in International Morse code."
 msgstr ""
+"Kamu harus mengirim dan menerima huruf dan angka dalam kode Morse "
+"Internasional."
 
 #. Help prerequisite
 #: activities/morse_code/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Knowledge of arithmetic operations."
 msgctxt "ActivityInfo|"
 msgid "Knowledge of alphabets and digits."
-msgstr "Pengetahuan tentang operasi aritmatika."
+msgstr "Pengetahuan tentang huruf dan angka."
 
 #. Help manual
 #: activities/morse_code/ActivityInfo.qml:27
@@ -18891,11 +18670,15 @@ msgid ""
 "have a look at the translation map which contains the code for all the "
 "letters and digits."
 msgstr ""
+"Kamu diminta untuk mengirim pesan dalam bentuk kode Morse atau mengonversi "
+"pesan kode Morse yang diterima menjadi huruf atau angka. Untuk mempelajari "
+"kode Morse, kamu bisa melihat peta terjemahan yang berisi kode untuk semua "
+"huruf dan angka."
 
 #: activities/morse_code/FirstScreen.qml:25
 msgctxt "FirstScreen|"
 msgid "Exploring Morse Code"
-msgstr ""
+msgstr "Jelajahi Kode Morse"
 
 #: activities/morse_code/FirstScreen.qml:64
 msgctxt "FirstScreen|"
@@ -18903,6 +18686,8 @@ msgid ""
 "Morse code was developed by Samuel Morse. It is a method of transmitting "
 "text information as a series of on-off tones, lights, or clicks."
 msgstr ""
+"Kode morse dikembangkan oleh Samuel Morse. Ini adalah metode pengiriman "
+"informasi teks berupa rangkaian nada hidup-mati, lampu, atau titik."
 
 #: activities/morse_code/FirstScreen.qml:65
 msgctxt "FirstScreen|"
@@ -18915,39 +18700,37 @@ msgid ""
 "For example, the most common letter in English, the letter \"E\", has the "
 "shortest code, a single dot."
 msgstr ""
+"Setiap simbol kode Morse mewakili karakter teks (huruf atau angka) atau "
+"tanda petunjuk dan diwakili oleh urutan titik dan garis yang unik. Durasi "
+"tanda hubung adalah tiga kali durasi titik. Untuk meningkatkan kecepatan "
+"komunikasi, kode dirancang sedemikian rupa sehingga huruf yang paling umum "
+"memiliki urutan titik dan garis yang lebih pendek.\n"
+"Misalnya, huruf paling umum dalam bahasa Inggris, huruf \"E\", memiliki kode "
+"terpendek, yaitu satu titik."
 
 #: activities/morse_code/FirstScreen.qml:90
-#, fuzzy
-#| msgctxt "FirstScreen|"
-#| msgid ""
-#| "When you are ready, click on me and try reproducing braille characters."
 msgctxt "FirstScreen|"
 msgid "When you are ready, click on Tux and we will converse in Morse code."
-msgstr "Jika kamu siap, klik aku dan cobalah membuat karakter Braille."
+msgstr ""
+"Jika kamu sudah siap, klik Tux dan kamu akan berkomunikasi menggunakan kode "
+"Morse."
 
 #: activities/morse_code/MorseCode.qml:346
-#, fuzzy, qt-format
-#| msgctxt "RomanNumerals|"
-#| msgid "Roman value: %1"
+#, qt-format
 msgctxt "MorseCode|"
 msgid "Morse value: %1"
-msgstr "Nilai angka romawi: %1"
+msgstr "Nilai morse: %1"
 
 #: activities/morse_code/MorseCode.qml:347
-#, fuzzy, qt-format
-#| msgctxt "RomanNumerals|"
-#| msgid "Arabic value: %1"
+#, qt-format
 msgctxt "MorseCode|"
 msgid "Alphabet/Numeric value: %1"
-msgstr "Nilai angka arab: %1"
+msgstr "Nilai Huruf/angka: %1"
 
 #: activities/morse_code/resource/1/Data.qml:13
-#, fuzzy
-#| msgctxt "Menu|"
-#| msgid "Letters"
 msgctxt "Data|"
 msgid "Letters."
-msgstr "Huruf"
+msgstr "Huruf."
 
 #: activities/morse_code/resource/1/Data.qml:18
 #: activities/morse_code/resource/1/Data.qml:34
@@ -18959,73 +18742,57 @@ msgstr "Huruf"
 #, qt-format
 msgctxt "Data|"
 msgid "Send the message %1 in Morse code."
-msgstr ""
+msgstr "Kirim pesan %1 dalam kode Morse."
 
 #: activities/morse_code/resource/1/Data.qml:23
 #: activities/morse_code/resource/1/Data.qml:39
 #: activities/morse_code/resource/1/Data.qml:55
 #: activities/morse_code/resource/1/Data.qml:71
-#, fuzzy, qt-format
-#| msgctxt "RomanNumerals|"
-#| msgid "Convert the roman number %1 to arabic."
+#, qt-format
 msgctxt "Data|"
 msgid "Convert the message %1 to letters."
-msgstr "Ubah angka Romawi %1 ke angka Arab."
+msgstr "Ubah pesan %1 menjadi huruf."
 
 #: activities/morse_code/resource/1/Data.qml:28
 #: activities/morse_code/resource/1/Data.qml:44
 #: activities/morse_code/resource/1/Data.qml:60
 #: activities/morse_code/resource/1/Data.qml:76
-#, fuzzy
-#| msgctxt "advanced_colors|"
-#| msgid "Find the corn butterfly"
 msgctxt "Data|"
 msgid "Find the corresponding letter."
-msgstr "Temukan kupu-kupu warna kuning jagung"
+msgstr "Cari huruf yang sesuai."
 
 #: activities/morse_code/resource/2/Data.qml:13
 msgctxt "Data|"
 msgid "Digits."
-msgstr ""
+msgstr "Digit."
 
 #: activities/morse_code/resource/2/Data.qml:23
 #: activities/morse_code/resource/2/Data.qml:39
-#, fuzzy, qt-format
-#| msgctxt "RomanNumerals|"
-#| msgid "Convert the roman number %1 to arabic."
+#, qt-format
 msgctxt "Data|"
 msgid "Convert the message %1 to digits."
-msgstr "Ubah angka Romawi %1 ke angka Arab."
+msgstr "Ubah pesan %1 menjadi digit."
 
 #: activities/morse_code/resource/2/Data.qml:28
 #: activities/morse_code/resource/2/Data.qml:44
-#, fuzzy
-#| msgctxt "instruments|"
-#| msgid "Find the accordion"
 msgctxt "Data|"
 msgid "Find the corresponding digit."
-msgstr "Temukan akordeon"
+msgstr "Cari digit yang sesuai."
 
 #: activities/morse_code/resource/3/Data.qml:13
-#, fuzzy
-#| msgctxt "Menu|"
-#| msgid "Words"
 msgctxt "Data|"
 msgid "Words."
-msgstr "Kata"
+msgstr "Kata-kata."
 
 #: activities/morse_code/resource/3/Data.qml:24
 msgctxt "Data|"
 msgid "Write the Morse code you hear."
-msgstr ""
+msgstr "Tulis kode Morse yang kamu dengar."
 
 #: activities/morse_code/resource/3/Data.qml:34
-#, fuzzy
-#| msgctxt "RomanNumerals|"
-#| msgid "Convert the roman number %1 to arabic."
 msgctxt "Data|"
 msgid "Convert the message in a word."
-msgstr "Ubah angka Romawi %1 ke angka Arab."
+msgstr "Ubah pesan dalam sebuah kata."
 
 #. Activity title
 #: activities/mosaic/ActivityInfo.qml:15
@@ -19103,18 +18870,13 @@ msgstr ""
 
 #. Help manual
 #: activities/nine_men_morris/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Play with a friend. First take turns to place nine pieces, and then take "
-#| "turns to move your pieces."
 msgctxt "ActivityInfo|"
 msgid ""
 "Play with Tux. First take turns to place nine pieces, and then take turns to "
 "move your pieces."
 msgstr ""
-"Bermain dengan seorang teman. Pertama ambil giliran menuju kepingan sembilan "
-"tempat, lalu bergiliran untuk memindahkan kepingan."
+"Bermain dengan Tux. Pertama ambil giliran menuju kepingan sembilan tempat, "
+"lalu bergiliran untuk memindahkan kepingan."
 
 #: activities/nine_men_morris/nine_men_morris.js:29
 msgctxt "nine_men_morris|"
@@ -19616,7 +19378,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Arrange the given numbers in ascending or descending order as requested."
 msgstr ""
-"Atur angka-angka yang diberikan dalam urutan naik atau turun seperti yang "
+"Atur angka-angka yang disebutkan dalam urutan naik atau turun seperti yang "
 "diminta."
 
 #. intro: "Arrange the numbers in the correct order." Help goal
@@ -19739,7 +19501,7 @@ msgid ""
 "You are provided with some words. Drag and drop them to the upper area to "
 "form a meaningful sentence."
 msgstr ""
-"Kamu diberi beberapa kata. Seret dan jatuhkan mereka ke wilayah atas untuk "
+"Kamu diberi beberapa kata. Seret dan jatuhkan mereka ke bagian atas untuk "
 "membentuk kalimat yang mempunyai arti."
 
 #: activities/ordering_sentences/resource/1/Data.qml:13
@@ -19852,7 +19614,7 @@ msgstr ""
 "lubang berlawanan arah jarum jam dari lubang, dalam proses yang disebut "
 "menabur. Biji tidak didistribusikan ke lubang skor akhir, atau ke lubang "
 "yang diambil bijinya. Lubang awal selalu dibiarkan kosong; jika lubang telah "
-"terisi 12 (atau lebih) biji, lubang tersebut dilewati, dan biji kedua belas "
+"terisi 12 biji (atau lebih), lubang tersebut dilewati, dan biji kedua belas "
 "ditempatkan di lubang berikutnya."
 
 #: activities/oware/ActivityInfo.qml:24
@@ -19870,7 +19632,7 @@ msgid ""
 "this would prevent the opponent from continuing the game, and the seeds are "
 "instead left on the board."
 msgstr ""
-"Penangkapan hanya terjadi ketika seorang pemain membuat cacah lubang lawan "
+"Penangkapan hanya terjadi ketika seorang pemain membuat jumlah lubang lawan "
 "tepat dua atau tiga dengan biji terakhir yang dia tebarkan dalam langkah "
 "tersebut. Ini selalu menangkap biji pada lubang yang bersangkutan, dan "
 "mungkin lebih: bila biji sebelum terakhir juga membuat lubang lawan menjadi "
@@ -19889,9 +19651,10 @@ msgid ""
 "that gives the opponent seeds. If no such move is possible, the current "
 "player captures all seeds in their own territory, ending the game."
 msgstr ""
-"Jika semua lubang lawan kosong, pemain saat ini harus melakukan langkah yang "
-"memberi lawan biji. Jika langkah seperti itu tidak mungkin, pemain saat ini "
-"menangkap semua bibit di wilayah mereka sendiri, maka permainan berakhir."
+"Jika semua lubang lawan kosong, pemain saat ini harus melakukan langkah "
+"dengan memberi lawan biji. Jika langkah seperti itu tidak mungkin, pemain "
+"saat ini menangkap semua bibit di wilayah mereka sendiri, maka permainan "
+"berakhir."
 
 #: activities/oware/oware.js:107
 msgctxt "oware|"
@@ -20114,7 +19877,7 @@ msgstr "%1x%2 kisi."
 #: activities/path_decoding_relative/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Path decoding relative"
-msgstr "Mengurai jalur relative"
+msgstr "Mengurai jalur relatif"
 
 #: activities/path_decoding_relative/ActivityInfo.qml:24
 #: activities/path_encoding_relative/ActivityInfo.qml:24
@@ -20223,7 +19986,7 @@ msgstr "Klik atau ketuk bola untuk mengembalikannya ke posisi semula."
 #: activities/photo_hunter/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Photo hunter"
-msgstr "Pemburu foto"
+msgstr "Cari perbedaan foto"
 
 #. Help title
 #: activities/photo_hunter/ActivityInfo.qml:17
@@ -20949,10 +20712,10 @@ msgid ""
 "location. To know which number you have to catch you can either remember it "
 "or check the number on the bottom right corner."
 msgstr ""
-"Tangkap awan berangka secara berurut. Dengan keyboard, gunakan tombol panah "
-"untuk memindahkan helikopter. Dengan mouse, arahkan kursor lokasi target "
-"kemudian klik. Untuk mengetahui nomor mana yang harus kamu tangkap, kamu "
-"bisa mengingatnya atau memeriksa nomor di pojok kanan bawah."
+"Tangkap awan berangka secara berurut. Menggunakan keyboard, gunakan tombol "
+"panah untuk memindahkan helikopter. Menggunakan mouse, arahkan kursor ke "
+"lokasi target kemudian klik. Untuk mengetahui nomor mana yang harus kamu "
+"tangkap, kamu bisa mengingatnya atau memeriksa nomor di pojok kanan bawah."
 
 #: activities/play_piano/ActivityConfig.qml:35
 msgctxt "ActivityConfig|"
@@ -21103,7 +20866,7 @@ msgstr "Enter atau Return: memutar ulang ritme"
 #: activities/play_rhythm/ActivityInfo.qml:35
 msgctxt "ActivityInfo|"
 msgid "Up and Down: increase or decrease the tempo"
-msgstr "Tombol panah atas dan bawah: menambah atau mengurangi tempo"
+msgstr "Tombol panah atas atau bawah: menambah atau mengurangi tempo"
 
 #: activities/play_rhythm/ActivityInfo.qml:36
 msgctxt "ActivityInfo|"
@@ -21196,7 +20959,7 @@ msgstr "di samping"
 #: activities/positions/resource/1/Data.qml:21
 msgctxt "Data|"
 msgid "Select the image where the child is beside the box."
-msgstr "Pilih gambar dimana anak berada di samping kotak."
+msgstr "Pilih gambar dengan anak berada di samping kotak."
 
 #. it refers to the behind position
 #: activities/positions/resource/1/Data.qml:26
@@ -21209,7 +20972,7 @@ msgstr "di belakang"
 #: activities/positions/resource/2/Data.qml:33
 msgctxt "Data|"
 msgid "Select the image where the child is behind the box."
-msgstr "Pilih gambar dimana anak berada di belakang kotak."
+msgstr "Pilih gambar dengan anak berada di belakang kotak."
 
 #. it refers to the in front of position
 #: activities/positions/resource/1/Data.qml:32
@@ -21222,7 +20985,7 @@ msgstr "di depan"
 #: activities/positions/resource/2/Data.qml:39
 msgctxt "Data|"
 msgid "Select the image where the child is in front of the box."
-msgstr "Pilih gambar dimana anak berada di depan kotak."
+msgstr "Pilih gambar dengan anak berada di depan kotak."
 
 #. it refers to the inside position
 #: activities/positions/resource/1/Data.qml:38
@@ -21235,7 +20998,7 @@ msgstr "di dalam"
 #: activities/positions/resource/2/Data.qml:45
 msgctxt "Data|"
 msgid "Select the image where the child is inside the box."
-msgstr "Pilih gambar dimana anak berada di dalam kotak."
+msgstr "Pilih gambar dengan anak berada di dalam kotak."
 
 #. it refers to the above position
 #: activities/positions/resource/1/Data.qml:44
@@ -21248,7 +21011,7 @@ msgstr "di atas"
 #: activities/positions/resource/2/Data.qml:51
 msgctxt "Data|"
 msgid "Select the image where the child is above the box."
-msgstr "Pilih gambar dimana anak berada di atas kotak."
+msgstr "Pilih gambar dengan anak berada di atas kotak."
 
 #. it refers to the beneath position
 #: activities/positions/resource/1/Data.qml:50
@@ -21261,7 +21024,7 @@ msgstr "di bawah"
 #: activities/positions/resource/2/Data.qml:57
 msgctxt "Data|"
 msgid "Select the image where the child is under the box."
-msgstr "Pilih gambar dimana anak berada di bawah kotak."
+msgstr "Pilih gambar dengan anak berada di bawah kotak."
 
 #: activities/positions/resource/2/Data.qml:14
 msgctxt "Data|"
@@ -21277,7 +21040,7 @@ msgstr "kanan"
 #: activities/positions/resource/2/Data.qml:21
 msgctxt "Data|"
 msgid "Select the image where the child is at the right of the box."
-msgstr "Pilih gambar dimana anak berada di kanan kotak."
+msgstr "Pilih gambar dengan anak berada di kanan kotak."
 
 #. it refers to the position on the left side
 #: activities/positions/resource/2/Data.qml:26
@@ -21288,7 +21051,7 @@ msgstr "kiri"
 #: activities/positions/resource/2/Data.qml:27
 msgctxt "Data|"
 msgid "Select the image where the child is at the left of the box."
-msgstr "Pilih gambar dimana anak berada di kiri kotak."
+msgstr "Pilih gambar dengan anak berada di kiri kotak."
 
 #. Activity title
 #: activities/programmingMaze/ActivityInfo.qml:16
@@ -21303,7 +21066,7 @@ msgid ""
 "This activity teaches to program Tux to reach its goal using simple "
 "instructions like move forward, turn left or right."
 msgstr ""
-"Kegiatan ini mengajarkan cara memrogram Tux untuk mencapai tujuannya "
+"Kegiatan ini mengajarkan cara kerja program Tux untuk mencapai tujuannya "
 "menggunakan petunjuk sederhana seperti bergerak maju, belok kiri atau kanan."
 
 #. Help goal
@@ -21327,12 +21090,12 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Choose the instructions from the menu, and arrange them in order to lead Tux "
 "to his goal."
-msgstr "Pilih petunjuk dari menu, dan atur untuk memimpin Tux ke tujuannya."
+msgstr "Pilih petunjuk dari menu, dan atur untuk memandu Tux ke tujuannya."
 
 #: activities/programmingMaze/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: navigate inside selected area"
-msgstr "Panah kiri dan kanan: menavigasi di dalam area yang dipilih"
+msgstr "Panah kiri dan kanan: melakukan navigasi di dalam area yang dipilih"
 
 #: activities/programmingMaze/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
@@ -21340,8 +21103,8 @@ msgid ""
 "Up and Down arrows: increase or decrease the loop counter if the loop area "
 "is selected"
 msgstr ""
-"Panah naik dan turun: menaikkan atau menurunkan pencacah pengulangan bila "
-"area pengulangan dipilih"
+"Panah Atas dan Bawah: menambah atau mengurangi jumlah putaran jika area "
+"putaran dipilih"
 
 #: activities/programmingMaze/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
@@ -21376,9 +21139,9 @@ msgid ""
 "instructions area, then switch to the main/procedure/loop area and press "
 "Space."
 msgstr ""
-"Untuk menambahkan instruksi dalam area utama/prosedur/pengulangan, pilih itu "
-"dari area petunjuk, lalu beralih ke area utama/prosedur/pengulangan dan "
-"tekan Spasi."
+"Untuk menambahkan perintah dalam area utama/prosedur/pengulangan, pilih "
+"perintah dari area petunjuk, lalu beralih ke area utama/prosedur/pengulangan "
+"dan tekan Spasi."
 
 #: activities/programmingMaze/ActivityInfo.qml:34
 msgctxt "ActivityInfo|"
@@ -21387,9 +21150,9 @@ msgid ""
 "procedure/loop area, then switch to instructions area, choose the new "
 "instruction and press Space."
 msgstr ""
-"Untuk mengubah suatu petunjuk dalam area utama/prosedur/pengulangan, pilih "
-"itu dari area utama/prosedur/pengulangan, lalu beralih ke area instruksi, "
-"pilih instruksi baru, dan tekan Spasi."
+"Untuk mengubah suatu perintah dalam area utama/prosedur/pengulangan, pilih "
+"perintah dari area utama/prosedur/pengulangan, lalu beralih ke area "
+"perintah, pilih perintah baru baru, dan tekan Spasi."
 
 #: activities/programmingMaze/InstructionArea.qml:28
 msgctxt "InstructionArea|"
@@ -21581,7 +21344,7 @@ msgstr "<b>Kendali Keyboard:</b>"
 #: activities/railroad/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Arrows: navigate in the sample area and in the answer area"
-msgstr "Panah: navigasikan di area sampel dan di area jawaban"
+msgstr "Panah: navigasi di area contoh dan di area jawaban"
 
 #: activities/railroad/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
@@ -21616,14 +21379,14 @@ msgctxt "Railroad|"
 msgid ""
 "If you forgot the model, you can click on the Hint button to view it again."
 msgstr ""
-"Jika kamu lupa model, kamu bisa mengklik tombol Petunjuk untuk melihatnya "
+"Jika kamu lupa modelnya, kamu bisa mengklik tombol Petunjuk untuk melihatnya "
 "kembali."
 
 #. Activity title
 #: activities/readingh/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Horizontal reading practice"
-msgstr "Praktek membaca mendatar"
+msgstr "Praktik membaca mendatar"
 
 #. Help title
 #: activities/readingh/ActivityInfo.qml:17
@@ -21682,8 +21445,8 @@ msgstr "Praktik membaca-menurun"
 msgctxt "ActivityInfo|"
 msgid "Read a vertical list of words and say if a given word is in it."
 msgstr ""
-"Bacalah daftar kata-kata menurun dan kerjakan jika ada kata tertentu di "
-"dalamnya."
+"Bacalah daftar kata-kata menurun dan periksa apakah terdapat kata tertentu "
+"di dalamnya."
 
 #. Help manual
 #: activities/readingv/ActivityInfo.qml:24
@@ -21817,7 +21580,7 @@ msgid ""
 "To win you must switch on all the consumers while all the producers are up."
 msgstr ""
 "Klik pada elemen aktif yang berbeda: matahari, awan, bendungan, sistem "
-"surya, kumpulan turbin angin dan transformator, untuk mengaktifkan kembali "
+"surya, kumpulan turbin angin dan trafo, untuk mengaktifkan kembali "
 "keseluruhan sistem kelistrikan. Saat sistem menyala kembali dan Tux ada di "
 "rumahnya, dorong tombol lampu untuknya. Agar menang kamu harus mengaktifkan "
 "semua peralatan dan energi yang diproduksi harus habis."
@@ -21848,7 +21611,7 @@ msgid ""
 "him. To win you must switch on all the consumers while all the producers are "
 "up."
 msgstr ""
-"Saat energi telah dicadangkan dan Tux berada di rumahnya, dorong tombol "
+"Saat energi telah dicadangkan dan Tux berada di rumahnya, pencet saklar "
 "lampu untuknya. Agar menang kamu harus mengaktifkan semua peralatan dan "
 "energi yang diproduksi harus habis."
 
@@ -21877,7 +21640,7 @@ msgstr ""
 "memastikan pembangkit listrik yang sangat sesuai dengan permintaan. Jika "
 "pasokan dan permintaan tidak seimbang, pabrik pembangkit dan peralatan "
 "transmisi bisa terhenti, dengan dampak terburuk, bisa menyebabkan pemadaman "
-"suatu wilayah yang besar."
+"suatu wilayah yang luas."
 
 #: activities/reversecount/ActivityConfig.qml:22
 #: activities/smallnumbers2/ActivityConfig.qml:21
@@ -21902,13 +21665,13 @@ msgstr "Gambar"
 #: activities/smallnumbers2/ActivityConfig.qml:36
 msgctxt "ActivityConfig|"
 msgid "Select Domino Representation"
-msgstr "Pilih Gambaran Domino"
+msgstr "Pilih Gambar Domino"
 
 #. Activity title
 #: activities/reversecount/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Count intervals"
-msgstr "Hitung interval"
+msgstr "Hitung jarak langkah"
 
 #. Help title
 #. ----------
@@ -21970,8 +21733,8 @@ msgid ""
 "Learn how to read roman numerals and do the conversion to and from arabic "
 "numerals."
 msgstr ""
-"Belajar cara membaca angka Romawi dan melakukan konversi ke dan dari angka "
-"Arab."
+"Belajar cara membaca angka Romawi dan mengubahnya ke angka arab atau "
+"sebaliknya."
 
 #. Help manual
 #: activities/roman_numerals/ActivityInfo.qml:24
@@ -21993,8 +21756,8 @@ msgid ""
 "Learn the rules to read Roman numerals and practice converting numbers to "
 "and from arabic numerals. Click on the OK button to validate your answer."
 msgstr ""
-"Pelajari aturan untuk membaca angka Romawi dan berlatih mengkonversi angka "
-"ke dan dari angka arab. Klik pada tombol OK untuk menyetujui jawaban kamu."
+"Pelajari aturan untuk membaca angka Romawi dan berlatih mengubahnya ke angka "
+"arab atau sebaliknya. Klik pada tombol OK untuk menyetujui jawaban kamu."
 
 #: activities/roman_numerals/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
@@ -22363,7 +22126,7 @@ msgstr ""
 #: activities/scalesboard_weight_avoirdupois/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Mental calculation, arithmetic equality, unit conversion."
-msgstr "Perhitungan mental, persamaan aritmatika, konversi satuan."
+msgstr "Perhitungan mental, persamaan aritmatika, mengubah satuan."
 
 #. Help manual
 #: activities/scalesboard_weight/ActivityInfo.qml:24
@@ -22522,7 +22285,7 @@ msgstr ""
 #: activities/scalesboard_weight_avoirdupois/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Balance using the imperial system of units"
-msgstr "Menyeimbangkan memakai satuan sistem imperial"
+msgstr "Seimbangkan dengan satuan sistem imperial"
 
 #. Help manual
 #: activities/scalesboard_weight_avoirdupois/ActivityInfo.qml:24
@@ -22693,7 +22456,7 @@ msgid ""
 "boys/girls to the center, then drag pieces of candy to each child's "
 "rectangle."
 msgstr ""
-"Ikuti perintah yang diperlihatkan di layar: pertama, seret gambar anak laki-"
+"Ikuti perintah yang ditampilkan di layar: pertama, seret gambar anak laki-"
 "laki / perempuan ke tengah, lalu seret permen ke persegi panjang di bawah "
 "setiap anak."
 
@@ -22758,7 +22521,7 @@ msgid ""
 "George wants to share 3 pieces of candy equally between 3 of his girl "
 "friends. Can he split the pieces of candy equally?"
 msgstr ""
-"George ingin membagi rata 3 permen kepada 3 teman perempuannya.. Bisakah ia "
+"George ingin membagi rata 3 permen kepada 3 teman perempuannya.. Bisakah dia "
 "membagi permen dengan merata?"
 
 #: activities/share/resource/1/Data.qml:80
@@ -22778,7 +22541,7 @@ msgid ""
 "have the same amount?"
 msgstr ""
 "John ingin membagi 8 permen ke 3 temannya: 1 anak laki-laki dan 2 anak "
-"perempuan. Anak laki-laki sudah memiliki satu permen. Bisakah ia memastikan "
+"perempuan. Anak laki-laki sudah memiliki satu permen. Bisakah dia memastikan "
 "mereka semua mendapatkan jumlah yang sama?"
 
 #: activities/share/resource/1/Data.qml:100
@@ -22788,7 +22551,7 @@ msgid ""
 "boys and 1 girl. Can he split the pieces of candy equally?"
 msgstr ""
 "Paul ingin membagi 12 permen ke 3 temannya: 2 anak laki-laki dan 1 anak "
-"perempuan. Bisakah ia membagi permen tersebut secara merata?"
+"perempuan. Bisakah dia membagi permen tersebut secara merata?"
 
 #: activities/share/resource/1/Data.qml:110
 msgctxt "Data|"
@@ -22896,7 +22659,7 @@ msgid ""
 "Charles wants to share his 6 pieces of candy equally with 2 of his girl "
 "friends. Can he split the pieces of candy equally?"
 msgstr ""
-"Charles ingin membagi rata 6 permen kepada 2 teman perempuannya. Bisakah ia "
+"Charles ingin membagi rata 6 permen kepada 2 teman perempuannya. Bisakah dia "
 "membagi permen secara merata?"
 
 #: activities/share/resource/1/Data.qml:236
@@ -22919,7 +22682,7 @@ msgid ""
 "friends."
 msgstr ""
 "Ayah Jason memberinya 16 permen untuk dibagikan kepada teman-temannya: 2 "
-"anak laki-laki dan 2 anak perempuan. Bantulah ia membagikan permen kepada "
+"anak laki-laki dan 2 anak perempuan. Bantulah dia membagikan permen kepada "
 "teman-temannya."
 
 #: activities/share/resource/1/Data.qml:256
@@ -22930,7 +22693,7 @@ msgid ""
 "them to have the same amount."
 msgstr ""
 "George ingin membagi 14 permen ke 4 temannya: 2 anak perempuan dan 2 anak "
-"laki-laki. Anak laki-laki sudah memiliki satu permen. Ia mau agar mereka "
+"laki-laki. Anak laki-laki sudah memiliki satu permen. Dia mau agar mereka "
 "semua mendapatkan jumlah yang sama."
 
 #: activities/share/resource/1/Data.qml:266
@@ -22950,7 +22713,7 @@ msgstr "Maksimal 25 permen dan 5 anak, mungkin terdapat sisa."
 #: activities/share/resource/2/Data.qml:28
 msgctxt "Data|"
 msgid "Now he wants to share 5 pieces of candy among his friends."
-msgstr "Sekarang ia ingin memberikan 5 permen ke teman-temannya."
+msgstr "Sekarang dia ingin memberikan 5 permen ke teman-temannya."
 
 #: activities/share/resource/2/Data.qml:38
 msgctxt "Data|"
@@ -22969,9 +22732,9 @@ msgid ""
 "gives the rest to his friends. Can you help him split equally the 9 "
 "remaining pieces of candy?"
 msgstr ""
-"Paul hanya memiliki 11 permen yang tersisa. Ia memakan 2 permen dan ia ingin "
-"membagikan sisanya kepada teman-temannya. Bisakah kamu membantunya membagi 9 "
-"permen yang tersisa sama rata?"
+"Paul hanya memiliki 11 permen yang tersisa. Dia memakan 2 permen dan dia "
+"ingin membagikan sisanya kepada teman-temannya. Bisakah kamu membantunya "
+"membagi 9 permen yang tersisa sama rata?"
 
 #: activities/share/resource/2/Data.qml:70
 msgctxt "Data|"
@@ -22979,7 +22742,7 @@ msgid ""
 "Bob wants to share 3 pieces of candy equally between 3 of his girl friends. "
 "Can he split the pieces of candy equally?"
 msgstr ""
-"Bob ingin membagi rata 3 permen kepada 3 teman perempuannya.. Bisakah ia "
+"Bob ingin membagi rata 3 permen kepada 3 teman perempuannya.. Bisakah dia "
 "membagi permen secara merata?"
 
 #: activities/share/resource/2/Data.qml:80
@@ -22990,7 +22753,7 @@ msgid ""
 "candy so that they all have the same amount?"
 msgstr ""
 "Harry ingin membagi 8 permen ke 3 temannya: 1 anak laki-laki dan 2 anak "
-"perempuan. Anak laki-laki sudah memiliki satu permen. Bisakah ia membagi "
+"perempuan. Anak laki-laki sudah memiliki satu permen. Bisakah dia membagi "
 "permen sehingga mereka semua mendapatkan jumlah yang sama?"
 
 #: activities/share/resource/2/Data.qml:90
@@ -23012,8 +22775,8 @@ msgid ""
 "of candy so that they all have the same amount?"
 msgstr ""
 "Harry ingin membagi 12 permen ke 3 temannya: 1 anak laki-laki dan 2 anak "
-"perempuan. Anak laki-laki sudah memiliki beberapa permen. Bisakah ia membagi "
-"permen sehingga mereka semua mendapatkan jumlah yang sama?"
+"perempuan. Anak laki-laki sudah memiliki beberapa permen. Bisakah dia "
+"membagi permen sehingga mereka semua mendapatkan jumlah yang sama?"
 
 #: activities/share/resource/2/Data.qml:122
 msgctxt "Data|"
@@ -23087,7 +22850,7 @@ msgid ""
 "Charles wants to share his 6 pieces of candy equally between 2 of his girl "
 "friends. Can he split the pieces of candy equally?"
 msgstr ""
-"Charles ingin membagi rata 6 permen kepada 2 teman perempuannya. Bisakah ia "
+"Charles ingin membagi rata 6 permen kepada 2 teman perempuannya. Bisakah dia "
 "membagi permen dengan merata?"
 
 #: activities/share/resource/2/Data.qml:216
@@ -23109,7 +22872,7 @@ msgid ""
 "friends."
 msgstr ""
 "Ayah Jason memberinya 17 permen untuk dibagikan kepada teman-temannya: 2 "
-"anak laki-laki dan 2 anak perempuan. Bantulah ia membagikan permen kepada "
+"anak laki-laki dan 2 anak perempuan. Bantulah dia membagikan permen kepada "
 "teman-temannya."
 
 #: activities/share/resource/2/Data.qml:236
@@ -23120,7 +22883,7 @@ msgid ""
 "friends?"
 msgstr ""
 "George ingin membagi 14 permen ke 4 temannya: 2 anak perempuan dan 2 anak "
-"laki-laki. Bisakah ia membagi permen tersebut secara merata?"
+"laki-laki. Bisakah dia membagi permen tersebut secara merata?"
 
 #: activities/share/resource/2/Data.qml:246
 msgctxt "Data|"
@@ -23164,8 +22927,8 @@ msgctxt ""
 "%n pieces of candy equally between them."
 msgid "Then split %n pieces of candy equally between them."
 msgid_plural "Then split %n pieces of candy equally between them."
-msgstr[0] "Lalu bagikan %n buah permen sama banyak di antara mereka."
-msgstr[1] "Lalu bagikan %n buah permen sama banyak di antara mereka."
+msgstr[0] "Lalu bagikan %n buah permen sama banyak diantara mereka."
+msgstr[1] "Lalu bagikan %n buah permen sama banyak diantara mereka."
 
 #: activities/share/Share.qml:340
 #, qt-format
@@ -23202,7 +22965,7 @@ msgstr "Pilih warna dan cat persegi yang sesuai untuk menggambar."
 #: activities/simplepaint/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Tab: switch between the color selector and the painting area"
-msgstr "Tab: beralih antara pemilih warna dan area gambar"
+msgstr "Tab: beralih dari pemilih warna ke area gambar atau sebaliknya"
 
 #. Activity title
 #: activities/smallnumbers/ActivityInfo.qml:15
@@ -24644,7 +24407,7 @@ msgstr "<b>Mesin</b>"
 #: activities/submarine/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "D or Right arrow: increase the velocity"
-msgstr "D atau Panah kanan: meningkatkan kecepatan"
+msgstr "D atau Panah kanan: tingkatkan kecepatan"
 
 #: activities/submarine/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
@@ -24728,7 +24491,7 @@ msgid ""
 "indicating the current speed of the submarine."
 msgstr ""
 "Benda paling kiri di panel pengatur adalah mesin kapal selam, yang "
-"menunjukkan kecepatan kapal selam saat ini."
+"menunjukkan kecepatan kapal selam tersebut."
 
 #: activities/submarine/submarine.js:23
 msgctxt "submarine|"
@@ -25037,7 +24800,7 @@ msgstr "Lemparlah sasaran dan hitung skormu."
 #: activities/target/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Throw darts at a target and count your score."
-msgstr "Lempar panah (dart) ke sasaran dan hitung skormu."
+msgstr "Lempar anak panah ke sasaran dan hitung skormu."
 
 #. Help prerequisite
 #: activities/target/ActivityInfo.qml:22
@@ -25057,8 +24820,8 @@ msgid ""
 "Enter the score with the keyboard."
 msgstr ""
 "Cek kecepatan dan arah angin, lalu klik lingkaran sasaran untuk melempar "
-"panah. Kalau semua panah sudah dilempar, sebuah kotak akan muncul memintamu "
-"menghitung skormu. Masukkan skor mengunakan keyboard."
+"anak panah. Kalau semua anak panah sudah dilempar, sebuah kotak akan muncul "
+"memintamu menghitung skormu. Masukkan skor mengunakan keyboard."
 
 #: activities/target/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -25087,33 +24850,27 @@ msgstr "Nilai maksimal: 500000."
 
 #. Activity title
 #: activities/tens_complement_find/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "instruments|"
-#| msgid "Find the trumpet"
 msgctxt "ActivityInfo|"
 msgid "Find ten's complement"
-msgstr "Temukan terompet"
+msgstr "Cari komplemen sepuluh"
 
 #. Help title
 #: activities/tens_complement_find/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Find the ten's complement of each number."
-msgstr ""
+msgstr "Cari komplemen sepuluh dari setiap angka."
 
 #. Help goal
 #: activities/tens_complement_find/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Learn to find ten's complement."
-msgstr ""
+msgstr "Belajar mencari komplemen sepuluh."
 
 #. Help prerequisite
 #: activities/tens_complement_find/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "ActivityInfo|"
 msgid "Numbers from 1 to 10 and additions."
-msgstr "Angka dari 0 sampai 9."
+msgstr "Penjumlahan dan angka dari 1 sampai 10."
 
 #: activities/tens_complement_find/ActivityInfo.qml:23
 #: activities/tens_complement_use/ActivityInfo.qml:24
@@ -25124,6 +24881,10 @@ msgid ""
 "corresponding lines. To correct the errors, click on the wrong numbers to "
 "remove them and repeat the previous steps."
 msgstr ""
+"Ketika semua baris selesai dikerjakan, tekan tombol OK untuk menyetujui "
+"jawaban. Jika terdapat jawaban yang salah, ikon silang akan muncul di baris "
+"yang salah tersebut. Untuk memperbaiki kesalahan, klik nomor yang salah "
+"untuk menghapusnya dan ulangi langkah sebelumnya."
 
 #. Help manual
 #: activities/tens_complement_find/ActivityInfo.qml:23
@@ -25132,42 +24893,36 @@ msgid ""
 "Create pairs of numbers equal to ten. Select a number in the list, then "
 "select an empty spot of an operation to move the selected number there."
 msgstr ""
+"Buat pasangan angka yang sama dengan sepuluh. Pilih nomor dalam daftar, lalu "
+"pilih tempat kosong dari suatu operasi untuk memindahkan nomor yang dipilih "
+"ke tempat tersebut."
 
 #: activities/tens_complement_find/resource/1/Data.qml:25
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "Data|"
 msgid "First number from 1 to 4."
-msgstr "Angka dari 0 sampai 9."
+msgstr "Satu angka dari 1 sampai 4."
 
 #: activities/tens_complement_find/resource/2/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "Data|"
 msgid "First number from 5 to 9."
-msgstr "Angka dari 0 sampai 9."
+msgstr "Satu angka dari 5 sampai 9."
 
 #: activities/tens_complement_find/resource/4/Data.qml:9
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Division of numbers"
 msgctxt "Data|"
 msgid "Find both numbers."
-msgstr "Pembagian bilangan"
+msgstr "Cari kedua angka."
 
 #. Activity title
 #: activities/tens_complement_swap/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Swap ten's complement"
-msgstr ""
+msgstr "Tukar komplemen sepuluh"
 
 #. Help title
 #: activities/tens_complement_swap/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Swap the numbers to create pairs equal to ten."
-msgstr ""
+msgstr "Tukar angka untuk membuat pasangan sama dengan sepuluh."
 
 #. Help goal
 #: activities/tens_complement_swap/ActivityInfo.qml:19
@@ -25176,15 +24931,14 @@ msgid ""
 "Learn to use ten's complement to optimize the order of numbers in an "
 "operation."
 msgstr ""
+"Belajar menggunakan komplemen sepuluh untuk mengoptimalkan urutan angka "
+"dalam suatu operasi."
 
 #. Help prerequisite
 #: activities/tens_complement_swap/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "ActivityInfo|"
 msgid "Numbers from 1 to 30 and additions."
-msgstr "Angka dari 0 sampai 9."
+msgstr "Penjumlahan angka dari 1 sampai 30."
 
 #. Help manual
 #: activities/tens_complement_swap/ActivityInfo.qml:23
@@ -25196,57 +24950,50 @@ msgid ""
 "the answers. If some answers are incorrect, a cross icon will appear on the "
 "corresponding lines. Correct the errors, then press the OK button again."
 msgstr ""
+"Buat pasangan angka yang sama dengan sepuluh di dalam setiap tanda kurung. "
+"Pilih nomor, lalu pilih nomor lain dari operasi yang sama untuk menukar "
+"posisinya. Ketika semua baris selesai, tekan tombol OK untuk menyetujui "
+"jawaban. Jika beberapa jawaban salah, ikon silang akan muncul di baris yang "
+"salah tersebut. Perbaiki kesalahan, lalu tekan kembali tombol OK."
 
 #: activities/tens_complement_swap/resource/1/Data.qml:36
-#, fuzzy
-#| msgctxt "Warning|"
-#| msgid "1 is not a prime number."
 msgctxt "Data|"
 msgid "2 pairs to make from 4 numbers."
-msgstr "1 bukan bilangan prima."
+msgstr "Untuk membuat 2 pasangan dengan 4 angka."
 
 #: activities/tens_complement_swap/resource/2/Data.qml:9
-#, fuzzy
-#| msgctxt "Warning|"
-#| msgid "1 is not a prime number."
 msgctxt "Data|"
 msgid "2 pairs to make from 5 numbers."
-msgstr "1 bukan bilangan prima."
+msgstr "Untuk membuat 2 pasangan dengan 5 angka."
 
 #: activities/tens_complement_swap/resource/3/Data.qml:9
-#, fuzzy
-#| msgctxt "Warning|"
-#| msgid "1 is not a prime number."
 msgctxt "Data|"
 msgid "3 pairs to make from 6 numbers."
-msgstr "1 bukan bilangan prima."
+msgstr "Untuk membuat 3 pasangan dengan 6 angka."
 
 #. Activity title
 #: activities/tens_complement_use/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Use ten's complement"
-msgstr ""
+msgstr "Gunakan komplemen sepuluh"
 
 #. Help title
 #: activities/tens_complement_use/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Use a ten's complement to simplify the operation."
-msgstr ""
+msgstr "Gunakan komplemen sepuluh untuk menyederhanakan operasi."
 
 #. Help goal
 #: activities/tens_complement_use/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Learn a practical use of ten's complement."
-msgstr ""
+msgstr "Belajar menggunakan komplemen sepuluh secara praktis."
 
 #. Help prerequisite
 #: activities/tens_complement_use/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "ActivityInfo|"
 msgid "Numbers from 1 to 50 and additions."
-msgstr "Angka dari 0 sampai 9."
+msgstr "Penjumlahan dan angka dari 1 sampai 50."
 
 #. Help manual
 #: activities/tens_complement_use/ActivityInfo.qml:23
@@ -25256,30 +25003,25 @@ msgid ""
 "parentheses. Select a number in the list, then select an empty spot of an "
 "operation to move the selected number there."
 msgstr ""
+"Mengurai suatu penjumlahan untuk membuat pasangan angka yang sama dengan "
+"sepuluh di dalam setiap tanda kurung. Pilih angka dalam daftar, lalu pilih "
+"tempat kosong dari suatu operasi untuk memindahkan nomor yang dipilih ke "
+"tempat tersebut."
 
 #: activities/tens_complement_use/resource/1/Data.qml:43
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Between 1 and 10."
 msgctxt "Data|"
 msgid "Result between 11 and 19."
-msgstr "Antara 1 dan 10."
+msgstr "Hasil antara 11 dan 19."
 
 #: activities/tens_complement_use/resource/2/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Result between 20 and 29."
-msgstr "Angka antara %1 dan %2."
+msgstr "Hasil antara 20 dan 29."
 
 #: activities/tens_complement_use/resource/3/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Between 20 and 50."
 msgctxt "Data|"
 msgid "Result between 30 and 50."
-msgstr "Antara 20 dan 50."
+msgstr "Hasil antara 30 dan 50."
 
 #. Activity title
 #: activities/tic_tac_toe/ActivityInfo.qml:18
@@ -25307,23 +25049,18 @@ msgstr ""
 
 #. Help manual
 #: activities/tic_tac_toe/ActivityInfo.qml:27
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Play with a friend. Take turns to click on the square which you want to "
-#| "mark. The first player to create a line of 3 marks wins."
 msgctxt "ActivityInfo|"
 msgid ""
 "Play with Tux. Take turns to click on the square which you want to mark. The "
 "first player to create a line of 3 marks wins."
 msgstr ""
-"Bermain bersama teman. Saling bergantian untuk mengeklik kotak yang ingin "
-"kamu tandai. Pemain pertama yang membuat 3 tanda segaris menang."
+"Bermain dengan Tux. Saling bergantian untuk mengeklik kotak yang ingin kamu "
+"tandai. Pemain pertama yang membuat 3 tanda segaris menang."
 
 #: activities/tic_tac_toe/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Tux will play better when you increase the level."
-msgstr "Pinguin Tux akan bermain lebih baik ketika kamu meningkatkan level."
+msgstr "Pinguin Tux akan bermain lebih baik ketika kamu menaikan tingkat."
 
 #. Activity title
 #: activities/tic_tac_toe_2players/ActivityInfo.qml:18
@@ -25345,7 +25082,7 @@ msgstr ""
 #: activities/traffic/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "A sliding-block puzzle game"
-msgstr "Permainan teka-teki menggeser balok"
+msgstr "Permainan teka-teki menggeser mobil"
 
 #. Help title
 #: activities/traffic/ActivityInfo.qml:17
@@ -25379,7 +25116,7 @@ msgid ""
 "so he can take a shower."
 msgstr ""
 "Tux telah kembali dari memancing dengan perahunya. Hidupkan lagi sistem "
-"penyaluran air supaya ia bisa mandi."
+"penyaluran air supaya dia bisa mandi."
 
 #. Help goal
 #: activities/watercycle/ActivityInfo.qml:20
@@ -25398,8 +25135,8 @@ msgid ""
 msgstr ""
 "Klik pada elemen aktif yang berbeda: matahari, awan, sistem pompa air, dan "
 "stasiun pengolah air kotor, secara berurutan untuk mengaktifkan lagi seluruh "
-"sistem penyaluran air. Ketika sistem sudah aktif dan Tux di kamar mandi, "
-"tekan tombol kran agar ia bisa mandi."
+"sistem penyaluran air. Ketika sistem sudah aktif dan Tux berada di kamar "
+"mandi, tekan tombol kran agar dia bisa mandi."
 
 #: activities/watercycle/Watercycle.qml:78
 msgctxt "Watercycle|"
@@ -25452,7 +25189,7 @@ msgstr ""
 #: activities/watercycle/Watercycle.qml:84
 msgctxt "Watercycle|"
 msgid "Great, click on the shower, as Tux arrives home."
-msgstr "Hebat, klik pancuran, saat Tux sampai di rumah."
+msgstr "Hebat, klik kran shower, saat Tux sampai di rumah."
 
 #: activities/watercycle/Watercycle.qml:85
 msgctxt "Watercycle|"
@@ -25487,7 +25224,7 @@ msgid ""
 "over the land, precipitation is triggered and falls down as rain."
 msgstr ""
 "Tanaman juga kehilangan air ke udara melalui proses transpirasi. Uap air "
-"pada akhirnya menjadi dingin membentuk tetesan kecil di awan. Saat awan "
+"pada akhirnya menjadi dingin membentuk tetesan kecil di awan. Ketika awan "
 "bertemu udara dingin di atas daratan, pengembunan terjadi kemudian jatuh "
 "sebagai air hujan."
 
@@ -25547,17 +25284,14 @@ msgid "Type the complete word as it falls, before it reaches the ground."
 msgstr "Ketiklah kata lengkap ketika jatuh, sebelum mencapai tanah."
 
 #: core/ChangeLog.qml:30
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "New maps and update of the maps for geography activities"
 msgctxt "ChangeLog|"
 msgid "Map of Spain added for geography activity"
-msgstr "Peta-peta baru dan pemutakhiran peta untuk kegiatan geografi"
+msgstr "Peta Spanyol ditambahkan untuk kegiatan geografi"
 
 #: core/ChangeLog.qml:31
 msgctxt "ChangeLog|"
 msgid "Voices added for Ukrainian"
-msgstr ""
+msgstr "Suara ditambahkan untuk bahasa Ukraina"
 
 #: core/ChangeLog.qml:32
 msgctxt "ChangeLog|"
@@ -25565,6 +25299,8 @@ msgid ""
 "New command-line option to list all the activities and start on a specific "
 "one"
 msgstr ""
+"Pilihan baris perintah baru untuk mencantumkan semua kegiatan dan memulai "
+"kegiatan tertentu"
 
 #: core/ChangeLog.qml:33 core/ChangeLog.qml:68 core/ChangeLog.qml:71
 #: core/ChangeLog.qml:77
@@ -25588,18 +25324,18 @@ msgctxt "ChangeLog|"
 msgid ""
 "Reduce the size of the packages for all platforms and of the external word "
 "images set"
-msgstr "Kurangi ukuran paket untuk semua platform dan set citra kata eksternal"
+msgstr "Kurangi ukuran paket untuk semua platform dan set kata gambar luar"
 
 #: core/ChangeLog.qml:40
 msgctxt "ChangeLog|"
 msgid "Improve images quality in several activities"
-msgstr "Tingkatkan kualitas citra dalam beberapa kegiatan"
+msgstr "Tingkatkan kualitas gambar dalam beberapa kegiatan"
 
 #: core/ChangeLog.qml:41
 msgctxt "ChangeLog|"
 msgid "Fix some transitions in renewable_energy/watercycle on some platforms"
 msgstr ""
-"Memperbaiki beberapa transisi dalam renewable_energy/watercycle pada "
+"Memperbaiki beberapa transisi dalam energi_terbarukan/siklus air untuk "
 "beberapa platform"
 
 #: core/ChangeLog.qml:42
@@ -25612,8 +25348,8 @@ msgstr ""
 msgctxt "ChangeLog|"
 msgid "Fix level reset when changing level manually in Logical associations"
 msgstr ""
-"Perbaikan level reset ketika mengubah level secara manual dalam asosiasi "
-"Logikal"
+"Perbaikan reset pada tingkatan ketika mengubah tingkat secara manual dalam "
+"asosiasi Logika"
 
 #: core/ChangeLog.qml:47
 msgctxt "ChangeLog|"
@@ -25651,7 +25387,7 @@ msgstr "Terjemahan ditambahkan untuk bahasa Azerbaijan"
 #: core/ChangeLog.qml:64
 msgctxt "ChangeLog|"
 msgid "New maps and update of the maps for geography activities"
-msgstr "Peta-peta baru dan pemutakhiran peta untuk kegiatan geografi"
+msgstr "Peta-peta baru dan pembaruan peta untuk kegiatan geografi"
 
 #: core/ChangeLog.qml:65
 msgctxt "ChangeLog|"
@@ -25668,7 +25404,7 @@ msgid ""
 "Addition of a level to teach voltage source loop in analog electricity "
 "activity"
 msgstr ""
-"Tambahan suatu tingkat untuk mengajari lingkaran sumber tegangan dalam "
+"Tambahan suatu tingkat untuk mempelajari lingkaran sumber tegangan dalam "
 "kegiatan listrik analog"
 
 #: core/ChangeLog.qml:76
@@ -25715,7 +25451,7 @@ msgstr ""
 #: core/ChangeLog.qml:89
 msgctxt "ChangeLog|"
 msgid "New voices for US English."
-msgstr "Suara baru untuk Inggris US."
+msgstr "Suara baru untuk bahasa Inggris US."
 
 #: core/ChangeLog.qml:90 core/ChangeLog.qml:98
 msgctxt "ChangeLog|"
@@ -25734,7 +25470,7 @@ msgstr ""
 #: core/ChangeLog.qml:92
 msgctxt "ChangeLog|"
 msgid "Add Russian dataset for Click on letter activity."
-msgstr "Tambahkan dataset bahasa Rusia untuk Klik pada kegiatan huruf."
+msgstr "Tambahkan kumpulan data bahasa Rusia untuk Klik pada kegiatan huruf."
 
 #: core/ChangeLog.qml:93
 msgctxt "ChangeLog|"
@@ -25748,7 +25484,7 @@ msgid ""
 "geo-country activity."
 msgstr ""
 "Gabungkan wilayah Norwegia Nord-Trøndelag dan Sør-Trøndelag menjadi "
-"Trøndelag dalam kegiatan geo-country."
+"Trøndelag dalam kegiatan peta negara."
 
 #: core/ChangeLog.qml:95
 msgctxt "ChangeLog|"
@@ -25906,7 +25642,7 @@ msgstr "Lisensi"
 msgctxt "DialogAbout|"
 msgid "translator-credits"
 msgstr ""
-"Sokibi &lt;istanalinux@gmail.com&gt;, (2017-2021).\n"
+"Sokibi &lt;istanalinux@gmail.com&gt;, (2017-2022).\n"
 "Iwan S. Tahari &lt;iwantahari@gmail.com&gt;, (2017-2021).\n"
 "Ahmad Haris &lt;ahmadharis1982@gmail.com&gt;, (2017, 2021).\n"
 "Ahmad Rasyid Salim &lt;ahmadrasyidsalim@outlook.com&gt;, (2017).\n"
@@ -25921,7 +25657,7 @@ msgstr ""
 "Syah Dwi Prihatmoko &lt;syahdwi92@gmail.com&gt;, (2017).\n"
 "Wantoyèk &lt;wantoyek@gmail.com&gt;, (2017, 2020).\n"
 "rhirye &lt;rhiryebatalipoe@gmail.com&gt;, (2017).\n"
-"Andika Triwidada &lt;andika@gmail.com&gt;, (2019-2022)."
+"Andika Triwidada &lt;andika@gmail.com&gt;, (2017-2022)."
 
 #: core/DialogAbout.qml:55
 #, qt-format
@@ -25979,7 +25715,7 @@ msgstr ""
 "membuat ratusan Perangkat Lunak Bebas sebagai bagian dari kerangka kerja, "
 "ruang kerja, dan aplikasi KDE.<br /><br /> KDE adalah komunitas bersama di "
 "mana tidak ada satu entitas pun yang mengendalikan usaha atau produk KDE "
-"dengan mengesampingkan yang lain. Semua orang dapat bergabung dan "
+"dengan mengesampingkan yang lain. Semua orang bisa bergabung dan "
 "berkontribusi pada KDE, termasuk kamu<br /><br />. Kunjungi <a href=\"%2\">"
 "%2</a>untuk informasi lebih lanjut tentang komunitas KDE dan perangkat lunak "
 "yang kami hasilkan."
@@ -26084,12 +25820,12 @@ msgstr "Pengaturan %1"
 #: core/DialogChooseLevel.qml:205
 msgctxt "DialogChooseLevel|"
 msgid "Dataset"
-msgstr "Dataset"
+msgstr "Kumpulan data"
 
 #: core/DialogChooseLevel.qml:218
 msgctxt "DialogChooseLevel|"
 msgid "Options"
-msgstr "Opsi"
+msgstr "Pilihan"
 
 #: core/DialogChooseLevel.qml:349
 msgctxt "DialogChooseLevel|"
@@ -26366,18 +26102,13 @@ msgid "Enable the kiosk mode."
 msgstr "Aktifkan mode kiosk."
 
 #: core/main.cpp:192
-#, fuzzy
-#| msgctxt "QObject|"
-#| msgid ""
-#| "Use software renderer instead of openGL (slower but should run with any "
-#| "graphical card, needs Qt 5.8 minimum)."
 msgctxt "QObject|"
 msgid ""
 "Use software renderer instead of openGL (slower but should run with any "
 "graphical card)."
 msgstr ""
-"Gunakan renderer perangkat lunak selain openGL (lebih lambat tetapi harus "
-"dijalankan dengan kartu grafis apa pun, membutuhkan Qt minimal 5.8)."
+"Gunakan render perangkat lunak selain openGL (lebih lambat tetapi harus "
+"dijalankan dengan kartu grafis apa pun)."
 
 #: core/main.cpp:195
 msgctxt "QObject|"
@@ -26386,17 +26117,17 @@ msgid ""
 "depending on your graphical card)."
 msgstr ""
 "Gunakan renderer perangkat lunak selain openGL (lebih cepat tetapi "
-"berpotensi terjadi kerusakan tergantung pada kartu grafis Anda)."
+"berpotensi terjadi kerusakan tergantung pada kartu grafis kamu)."
 
 #: core/main.cpp:199
 msgctxt "QObject|"
 msgid "Specify the activity when starting GCompris."
-msgstr "Tentukan aktivitas ketika memulai GCompris."
+msgstr "Tentukan kegiatan ketika memulai GCompris."
 
 #: core/main.cpp:204
 msgctxt "QObject|"
 msgid "Outputs all the available activities on the standard output."
-msgstr "Keluaran semua aktivitas yang tersedia pada output standar."
+msgstr "Keluaran semua kegiatan yang tersedia pada output standar."
 
 #: core/main.qml:233
 msgctxt "main|"
@@ -26492,93 +26223,6 @@ msgstr "Lewati"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Mulai"
-
-#~ msgctxt "Data|"
-#~ msgid "Simplified fractions with a rectangle."
-#~ msgstr "Pecahan sederhana dengan persegi panjang."
-
-#~ msgctxt "Data|"
-#~ msgid "Select one half of the rectangle."
-#~ msgstr "Pilih satu setengah dari persegi panjang."
-
-#~ msgctxt "Data|"
-#~ msgid "Select one-third of the rectangle."
-#~ msgstr "Pilih sepertiga dari persegi panjang."
-
-#~ msgctxt "Data|"
-#~ msgid "Select two-thirds of the rectangle."
-#~ msgstr "Pilih dua pertiga dari persegi panjang."
-
-#~ msgctxt "Data|"
-#~ msgid "Select one-quarter of the rectangle."
-#~ msgstr "Pilih seperempat dari persegi panjang."
-
-#~ msgctxt "Data|"
-#~ msgid "Select two-fifths of the rectangle."
-#~ msgstr "Pilih dua perlima dari persegi panjang."
-
-#~ msgctxt "Data|"
-#~ msgid "Select one rectangle and one-quarter of a rectangle."
-#~ msgstr "Pilih satu persegi panjang dan seperempat dari persegi panjang."
-
-#~ msgctxt "Data|"
-#~ msgid "Select one rectangle and two-fifths of a rectangle."
-#~ msgstr "Pilih satu persegi panjang dan dua seperlima dari persegi panjang."
-
-#~ msgctxt "Data|"
-#~ msgid "Select one rectangle and one-third of a rectangle."
-#~ msgstr "Pilih satu persegi panjang dan sepertiga dari persegi panjang."
-
-#~ msgctxt "Data|"
-#~ msgid "Select one rectangle and one half of a rectangle."
-#~ msgstr "Pilih satu persegi panjang dan satu setengah dari persegi panjang."
-
-#~ msgctxt "Data|"
-#~ msgid "Select one rectangle and three-quarters of a rectangle."
-#~ msgstr ""
-#~ "Pilih satu persegi panjang dan tiga seperempat dari persegi panjang."
-
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Select the butterfly of the correct color."
-#~ msgctxt "Data|"
-#~ msgid "Select three-fifths of the rectangle."
-#~ msgstr "Pilih kupu-kupu sesuai warna yang tepat."
-
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Decimal number system."
-#~ msgctxt "Data|"
-#~ msgid "Decimal numbers with a rectangle."
-#~ msgstr "Sistem bilangan desimal."
-
-#, fuzzy
-#~| msgctxt "ActivityConfig|"
-#~| msgid "Select your locale"
-#~ msgctxt "Data|"
-#~ msgid "Select 0.5 rectangle."
-#~ msgstr "Pilih bahasa lokal kamu"
-
-#, fuzzy
-#~| msgctxt "ActivityConfig|"
-#~| msgid "Select your locale"
-#~ msgctxt "Data|"
-#~ msgid "Select 0.4 rectangle."
-#~ msgstr "Pilih bahasa lokal kamu"
-
-#, fuzzy
-#~| msgctxt "ActivityConfig|"
-#~| msgid "Select your locale"
-#~ msgctxt "Data|"
-#~ msgid "Select 0.8 rectangle."
-#~ msgstr "Pilih bahasa lokal kamu"
-
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Nine men's morris (with a friend)"
-#~ msgctxt "Data|"
-#~ msgid "Find denominator (with a rectangle)."
-#~ msgstr "Sembilan pria morris (dengan seorang teman)"
 
 #~ msgctxt "ActivityInfo|"
 #~ msgid "Learn digits"
