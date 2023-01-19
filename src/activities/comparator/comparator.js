@@ -134,8 +134,8 @@ function checkAnswer() {
 
 
 function evaluateAnswer(equation) {
-    var leftHandSide = equation.leftHandSide;
-    var rightHandSide = equation.rightHandSide;
+    var leftHandSide = fromDecimalLocaleNumber(equation.leftHandSide);
+    var rightHandSide = fromDecimalLocaleNumber(equation.rightHandSide);
     var symbol = equation.symbol;
 
     var isCorrectAnswer = true;
@@ -199,4 +199,13 @@ function toDecimalLocaleNumber(decimalNumber, precision) {
     }
     var decimalLocale = decimalNumber.toLocaleString(Qt.locale(locale), 'f', precision);
     return decimalLocale;
+}
+
+function fromDecimalLocaleNumber(decimalNumberString) {
+    var locale = GCompris.ApplicationSettings.locale;
+    if(locale === "system") {
+        locale = Qt.locale().name === "C" ? "en_US" : Qt.locale().name;
+    }
+    var decimalValue = Number.fromLocaleString(Qt.locale(locale), decimalNumberString);
+    return decimalValue;
 }
