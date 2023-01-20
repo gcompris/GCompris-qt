@@ -52,7 +52,7 @@ QtObject{
                     "maxNumberOfGood": 4,
                     "maxNumberOfBad": 5,
                     "prefix": "qrc:/gcompris/data/words-webp/",
-                    "good": ["plants/plant3.webp","plants/tree3.webp","animals/snowcat.webp","animals/pig.webp"],
+                    "good": ["plants/plant3.webp","plants/tree3.webp","animals/snowcat.webp","animals/camel.webp"],
                     "bad": ["transport/plane.webp","food/frenchFries.webp","food/water.webp","others/street.webp","householdGoods/bed.webp"]
                 },
                 {

@@ -34,7 +34,7 @@ QtObject{
                     "maxNumberOfGood": 6,
                     "maxNumberOfBad": 6,
                     "prefix": "qrc:/gcompris/data/words-webp/",
-                    "good": ["animals/lion.webp","birds/bird7.webp","birds/bird8.webp","animals/mouse1.webp","animals/opossum.webp","animals/pig.webp"],
+                    "good": ["animals/lion.webp","birds/bird7.webp","birds/bird8.webp","animals/mouse1.webp","animals/opossum.webp","animals/camel.webp"],
                     "bad": ["nature/nature3.webp","food/milk.webp","food/butter.webp","fruits/apple.webp","transport/rickshaw.webp","transport/bus.webp"]
                 },
                 {
@@ -84,7 +84,7 @@ QtObject{
                 },
                 {
                     "instructions": qsTr("Place the ANIMALS to the right and other objects to the left"),
-                    "image": imagesPrefix + "pig.webp",
+                    "image": imagesPrefix + "koala.webp",
                     "maxNumberOfGood": 3,
                     "maxNumberOfBad": 3,
                     "prefix": "qrc:/gcompris/data/words-webp/",

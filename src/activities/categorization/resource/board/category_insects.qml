@@ -62,7 +62,7 @@ QtObject{
                     "maxNumberOfBad": 3,
                     "prefix": "qrc:/gcompris/data/words-webp/",
                     "good": ["insects/insect23.webp","insects/insect24.webp","insects/insect25.webp"],
-                    "bad": ["plants/tree3.webp","birds/bird29.webp","animals/pig.webp"]
+                    "bad": ["plants/tree3.webp","birds/bird29.webp","animals/camel.webp"]
                 },
                 {
                     "instructions": qsTr("Place the INSECTS to the right and other objects to the left"),
