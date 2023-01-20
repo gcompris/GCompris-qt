@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2023-01-08 10:06+0100\n"
+"PO-Revision-Date: 2023-01-19 11:07+0100\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
@@ -15,7 +15,7 @@ msgstr ""
 "%100<=4 ? 2 : 3);\n"
 "X-Language: sl\n"
 "X-Qt-Contexts: true\n"
-"X-Generator: Poedit 3.2.2\n"
+"X-Generator: Lokalize 22.12.1\n"
 
 #. Activity title
 #: activities/advanced_colors/ActivityInfo.qml:15
@@ -24507,19 +24507,19 @@ msgstr "Maksimalna vrednost: 500000."
 #: activities/tens_complement_find/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Find ten's complement"
-msgstr "Najdite komplement desetice"
+msgstr "Najdite dopolnilo števila deset"
 
 #. Help title
 #: activities/tens_complement_find/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Find the ten's complement of each number."
-msgstr "Najdite komplement desetice za vsako število."
+msgstr "Najdite dopolnilo števila deset za vsako število."
 
 #. Help goal
 #: activities/tens_complement_find/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Learn to find ten's complement."
-msgstr "Naučite se najti komplement desetice."
+msgstr "Naučite se najti dopolnilo števila deset."
 
 #. Help prerequisite
 #: activities/tens_complement_find/ActivityInfo.qml:21
@@ -24570,7 +24570,7 @@ msgstr "Najdi obe števili."
 #: activities/tens_complement_swap/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Swap ten's complement"
-msgstr "Zamenjajte med sabo komplementa desetice"
+msgstr "Zamenjajte med sabo dopolnili števila deset"
 
 #. Help title
 #: activities/tens_complement_swap/ActivityInfo.qml:16
@@ -24585,7 +24585,7 @@ msgid ""
 "Learn to use ten's complement to optimize the order of numbers in an "
 "operation."
 msgstr ""
-"Naučite se uporabiti komplemente desetice za optimiziranje razvrstitve "
+"Naučite se uporabiti dopolnila števila deset za optimiziranje razvrstitve "
 "števil v operaciji."
 
 #. Help prerequisite
@@ -24629,19 +24629,19 @@ msgstr "naredite 3 pare iz 6 števil."
 #: activities/tens_complement_use/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Use ten's complement"
-msgstr "Uporabite komplement desetice"
+msgstr "Uporabite dopolnilo števila deset"
 
 #. Help title
 #: activities/tens_complement_use/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Use a ten's complement to simplify the operation."
-msgstr "Uporabite komplement desetice, da poenostavite program."
+msgstr "Uporabite dopolnilo števila deset, da poenostavite operacijo."
 
 #. Help goal
 #: activities/tens_complement_use/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Learn a practical use of ten's complement."
-msgstr "Naučite se praktične rabe komplementa desetice."
+msgstr "Naučite se praktične rabe dopolnila števila deset."
 
 #. Help prerequisite
 #: activities/tens_complement_use/ActivityInfo.qml:21
@@ -24658,7 +24658,7 @@ msgid ""
 "operation to move the selected number there."
 msgstr ""
 "Razgradite seštevanja, da ustvarite pare številk, ki so enake deset v vsakem "
-"oklepaju. Na seznamu izberite številko, nato izberite prazno mestooperacije "
+"oklepaju. Na seznamu izberite številko, nato izberite prazno mesto operacije "
 "za premik izbrane številke tja."
 
 #: activities/tens_complement_use/resource/1/Data.qml:43

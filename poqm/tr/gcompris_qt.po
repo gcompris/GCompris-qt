@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2023-01-18 22:41+0300\n"
+"PO-Revision-Date: 2023-01-19 22:39+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -25479,7 +25479,7 @@ msgstr "<b>Motor</b>"
 #: activities/submarine/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "D or Right arrow: increase the velocity"
-msgstr "D veya Sağ ok: hızı arttır"
+msgstr "D veya Sağ ok: hızı artır"
 
 #: activities/submarine/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
@@ -25529,7 +25529,7 @@ msgstr "<b>Dalış uçakları</b>"
 #: activities/submarine/ActivityInfo.qml:37
 msgctxt "ActivityInfo|"
 msgid "+: increase diving planes angle"
-msgstr "+: dalış düzlemlerinin açısını arttır"
+msgstr "+: dalış düzlemlerinin açısını artır"
 
 #: activities/submarine/ActivityInfo.qml:38
 msgctxt "ActivityInfo|"
@@ -25568,14 +25568,14 @@ msgstr ""
 #: activities/submarine/submarine.js:23
 msgctxt "submarine|"
 msgid "Increase or decrease the velocity of the submarine using the engine."
-msgstr "Motoru kullanarak denizaltının hızını arttır veya azalt."
+msgstr "Motoru kullanarak denizaltının hızını artır veya azalt."
 
 #: activities/submarine/submarine.js:24
 msgctxt "submarine|"
 msgid ""
 "Press the + button to increase the velocity, or the - button to decrease the "
 "velocity."
-msgstr "Hızı arttırmak için + düğmesine, hızı azaltmak için - düğmesine bas."
+msgstr "Hızı artırmak için + düğmesine, hızı azaltmak için - düğmesine bas."
 
 #: activities/submarine/submarine.js:27
 msgctxt "submarine|"
