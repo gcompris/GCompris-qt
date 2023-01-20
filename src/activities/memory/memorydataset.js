@@ -9,7 +9,6 @@ var url = "qrc:/gcompris/src/activities/memory/resource/"
 
 var images = [
                 [url + '01_cat.svg', url + '01_cat.svg'],
-                [url + '02_pig.svg', url + '02_pig.svg'],
                 [url + '03_bear.svg', url + '03_bear.svg'],
                 [url + '04_hippopotamus.svg', url + '04_hippopotamus.svg'],
                 [url + '05_penguin.svg', url + '05_penguin.svg'],
