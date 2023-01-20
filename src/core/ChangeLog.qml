@@ -26,6 +26,10 @@ QtObject {
      *
      */
     property var changelog: [
+            { "versionCode": 30100, "content": [
+                qsTr("Fix issue in comparator activity")
+                ]
+            },
             { "versionCode": 30000, "content": [
                 qsTr("Map of Spain added for geography activity"),
                 qsTr("Voices added for Ukrainian"),
