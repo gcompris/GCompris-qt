@@ -6,10 +6,10 @@ Pre-requisite:
 
 in project's root directory run:
 
-`clickable -c platforms/ubuntutouch/clickable.json`
+`clickable build --libs -c platforms/ubuntutouch/clickable.yml`
 
-To get all translations before, run:
+then
 
-`python3 tools/l10n-fetch-po-files.py`
+`clickable -c platforms/ubuntutouch/clickable.yml`
 
 

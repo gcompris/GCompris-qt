@@ -11,5 +11,5 @@
     },
     "version": "@GCOMPRIS_MAJOR_VERSION@.@GCOMPRIS_MINOR_VERSION@",
     "maintainer": "lionel <lduboeuf@ouvaton.org>",
-    "framework" : "ubuntu-sdk-16.04"
+    "framework" : "@CLICK_FRAMEWORK@"
 }
