@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2023-01-14 20:05+0200\n"
+"PO-Revision-Date: 2023-01-19 11:49+0200\n"
 "Last-Translator: Besnik Bleta <besnik@programeshqip.org>\n"
 "Language-Team: Albanian <kde-i18n-doc@kde.org>\n"
 "Language: sq\n"
@@ -24801,19 +24801,19 @@ msgstr "Vlerë maksimum: 500000."
 #: activities/tens_complement_find/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Find ten's complement"
-msgstr "Gjeni plotësuesin e dhjetës"
+msgstr "Gjeni plotësorin e dhjetës"
 
 #. Help title
 #: activities/tens_complement_find/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Find the ten's complement of each number."
-msgstr "Gjeni për çdo numër plotësuesin për të dhënë dhjetë."
+msgstr "Gjeni për çdo numër plotësorin për të dhënë dhjetë."
 
 #. Help goal
 #: activities/tens_complement_find/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Learn to find ten's complement."
-msgstr "Mësoni si të gjeni plotësuesin e dhjetës."
+msgstr "Mësoni si të gjeni plotësorin e dhjetës."
 
 #. Help prerequisite
 #: activities/tens_complement_find/ActivityInfo.qml:21
@@ -24865,7 +24865,7 @@ msgstr "Gjejini të dy numrat."
 #: activities/tens_complement_swap/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Swap ten's complement"
-msgstr "Këmbeni plotësuesin e dhjetës"
+msgstr "Këmbeni plotësorin e dhjetës"
 
 #. Help title
 #: activities/tens_complement_swap/ActivityInfo.qml:16
@@ -24880,7 +24880,7 @@ msgid ""
 "Learn to use ten's complement to optimize the order of numbers in an "
 "operation."
 msgstr ""
-"Mësoni si të përdorni plotësuesin e dhjetës, për të optimizuar renditjen e "
+"Mësoni si të përdorni plotësorin e dhjetës, për të optimizuar renditjen e "
 "numrave në një veprim."
 
 #. Help prerequisite
@@ -24925,19 +24925,19 @@ msgstr "3 dyshe për t’u krijuar nga 6 numra."
 #: activities/tens_complement_use/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Use ten's complement"
-msgstr "Përdorni plotësuesin e dhjetës"
+msgstr "Përdorni plotësorin e dhjetës"
 
 #. Help title
 #: activities/tens_complement_use/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Use a ten's complement to simplify the operation."
-msgstr "Përdorni një plotësues të dhjetës për të thjeshtuar veprimin."
+msgstr "Përdorni një plotësor të dhjetës për të thjeshtuar veprimin."
 
 #. Help goal
 #: activities/tens_complement_use/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Learn a practical use of ten's complement."
-msgstr "Mësoni një përdorim praktik të plotësuesit të dhjetës."
+msgstr "Mësoni një përdorim praktik të plotësorit të dhjetës."
 
 #. Help prerequisite
 #: activities/tens_complement_use/ActivityInfo.qml:21
