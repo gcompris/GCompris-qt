@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GCompris\n"
 "POT-Creation-Date: 2019-09-04 13:03+0000\n"
-"PO-Revision-Date: 2023-01-12 00:04+0200\n"
+"PO-Revision-Date: 2023-01-20 01:28+0200\n"
 "Last-Translator: ami.g <amihaygal@gmail.com>\n"
 "Language-Team: Hebrew <kde-i18n-doc@kde.org>\n"
 "Language: he\n"
@@ -4974,58 +4974,58 @@ msgstr "רווח או אנטר: לבחור תשובה"
 #: activities/colors/colors.js:87
 msgctxt "colors|"
 msgid "Find the yellow duck"
-msgstr "מצא את הברווז הצהוב"
+msgstr "עליך למצוא את הברווז הצהוב"
 
 #: activities/colors/colors.js:18 activities/colors/colors.js:50
 msgctxt "colors|"
 msgid "Find the black duck"
-msgstr "מצא את הברווז השחור"
+msgstr "עליך למצוא את הברווז השחור"
 
 #: activities/colors/colors.js:23 activities/colors/colors.js:60
 #: activities/colors/colors.js:97
 msgctxt "colors|"
 msgid "Find the green duck"
-msgstr "מצא את הברווז הירוק"
+msgstr "עליך למצוא את הברווז הירוק"
 
 #: activities/colors/colors.js:28
 msgctxt "colors|"
 msgid "Find the red duck"
-msgstr "מצא את הברווז האדום"
+msgstr "עליך למצוא את הברווז האדום"
 
 #: activities/colors/colors.js:33 activities/colors/colors.js:80
 msgctxt "colors|"
 msgid "Find the white duck"
-msgstr "מצא את הברווז הלבן"
+msgstr "עליך למצוא את הברווז הלבן"
 
 #: activities/colors/colors.js:38 activities/colors/colors.js:122
 msgctxt "colors|"
 msgid "Find the blue duck"
-msgstr "מצא את הברווז הכחול"
+msgstr "עליך למצוא את הברווז הכחול"
 
 #: activities/colors/colors.js:55 activities/colors/colors.js:92
 msgctxt "colors|"
 msgid "Find the brown duck"
-msgstr "מצא את הברווז החום"
+msgstr "עליך למצוא את הברווז החום"
 
 #: activities/colors/colors.js:65 activities/colors/colors.js:102
 msgctxt "colors|"
 msgid "Find the grey duck"
-msgstr "מצא את הברווז האפור"
+msgstr "עליך למצוא את הברווז האפור"
 
 #: activities/colors/colors.js:70 activities/colors/colors.js:107
 msgctxt "colors|"
 msgid "Find the orange duck"
-msgstr "מצא את הברווז הכתום"
+msgstr "עליך למצוא את הברווז הכתום"
 
 #: activities/colors/colors.js:75 activities/colors/colors.js:112
 msgctxt "colors|"
 msgid "Find the purple duck"
-msgstr "מצא את הברווז הסגול"
+msgstr "עליך למצוא את הברווז הסגול"
 
 #: activities/colors/colors.js:117
 msgctxt "colors|"
 msgid "Find the pink duck"
-msgstr "למצוא את הברווז הוורוד"
+msgstr "עליך למצוא את הברווז הוורוד"
 
 #: activities/colors/FindIt.qml:235
 msgctxt "FindIt|"
@@ -5072,8 +5072,8 @@ msgid ""
 "symbol for this pair. When each line contains a symbol, select the OK button "
 "to validate the answers."
 msgstr ""
-"בחרו זוג מספרים מהרשימה, ואז בחרו את סימן ההשוואה הנכון עבור הזוג שבחרתם. "
-"לסיום, לחצו על OK כדי לבדוק את תשובותיכם."
+"לבחור זוג מספרים מהרשימה, ואז לבחור את סימן ההשוואה הנכון עבור הזוג שבחרת."
+"לסיום, ללחוץ על OK כדי לבדוק את תשובתך."
 
 #: activities/comparator/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
@@ -5081,7 +5081,7 @@ msgid ""
 "If some answers are incorrect, a cross icon will appear on the corresponding "
 "lines. Correct the errors, then select the OK button again."
 msgstr ""
-"אם חלק מהתשובות אינן נכונות, יופיע X לצידן. תקנו את השגיאות ולחצו על OK שוב."
+"אם חלק מהתשובות אינן נכונות, יופיע X לצידן. לתקן את השגיאות וללחוץ על OK שוב."
 
 #: activities/comparator/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
@@ -24364,102 +24364,107 @@ msgstr "להקליד את המילים לפני שהן מגיעות לקרקע."
 
 #: core/ChangeLog.qml:30
 msgctxt "ChangeLog|"
+msgid "Fix issue in comparator activity"
+msgstr ""
+
+#: core/ChangeLog.qml:34
+msgctxt "ChangeLog|"
 msgid "Map of Spain added for geography activity"
 msgstr "מפת ספרד נוספה לפעילויות הגאוגרפיה."
 
-#: core/ChangeLog.qml:31
+#: core/ChangeLog.qml:35
 msgctxt "ChangeLog|"
 msgid "Voices added for Ukrainian"
 msgstr "הוספו קולות לתרגום האוקראיני"
 
-#: core/ChangeLog.qml:32
+#: core/ChangeLog.qml:36
 msgctxt "ChangeLog|"
 msgid ""
 "New command-line option to list all the activities and start on a specific "
 "one"
 msgstr "אפשרות חדשה בשורת-הפקודה לרשום את כל הפעילויות ולהתחיל באחת ספציפית."
 
-#: core/ChangeLog.qml:33 core/ChangeLog.qml:68 core/ChangeLog.qml:71
-#: core/ChangeLog.qml:77
+#: core/ChangeLog.qml:37 core/ChangeLog.qml:72 core/ChangeLog.qml:75
+#: core/ChangeLog.qml:81
 msgctxt "ChangeLog|"
 msgid "Many usability improvements"
 msgstr "הרבה שיפורים בשימושיות"
 
-#: core/ChangeLog.qml:34 core/ChangeLog.qml:52 core/ChangeLog.qml:67
-#: core/ChangeLog.qml:72 core/ChangeLog.qml:78
+#: core/ChangeLog.qml:38 core/ChangeLog.qml:56 core/ChangeLog.qml:71
+#: core/ChangeLog.qml:76 core/ChangeLog.qml:82
 msgctxt "ChangeLog|"
 msgid "Many new images"
 msgstr "הרבה תמונות חדשות"
 
-#: core/ChangeLog.qml:35 core/ChangeLog.qml:73 core/ChangeLog.qml:79
+#: core/ChangeLog.qml:39 core/ChangeLog.qml:77 core/ChangeLog.qml:83
 msgctxt "ChangeLog|"
 msgid "Many bug fixes"
 msgstr "הרבה תיקוני שגיאות"
 
-#: core/ChangeLog.qml:39
+#: core/ChangeLog.qml:43
 msgctxt "ChangeLog|"
 msgid ""
 "Reduce the size of the packages for all platforms and of the external word "
 "images set"
 msgstr "החבילות בכל הפלטפורמות וערכות התמונות החיצוניות הוקטנו"
 
-#: core/ChangeLog.qml:40
+#: core/ChangeLog.qml:44
 msgctxt "ChangeLog|"
 msgid "Improve images quality in several activities"
 msgstr "שופרה איכות התמונה במספר פעילויות"
 
-#: core/ChangeLog.qml:41
+#: core/ChangeLog.qml:45
 msgctxt "ChangeLog|"
 msgid "Fix some transitions in renewable_energy/watercycle on some platforms"
 msgstr "תוקנו מספר מעברים באנרגיה מתחדשת ומחזור המים במספר פלטפורמות"
 
-#: core/ChangeLog.qml:42
+#: core/ChangeLog.qml:46
 msgctxt "ChangeLog|"
 msgid "Fix dead keys ignored on Linux for typing activities"
 msgstr "תוקנו מספר מקשים מתים שמושתקים בלינוקס לפעילויות ההקלדה"
 
-#: core/ChangeLog.qml:43
+#: core/ChangeLog.qml:47
 msgctxt "ChangeLog|"
 msgid "Fix level reset when changing level manually in Logical associations"
 msgstr "תוקן איפוס השלב כשמחליפים שלבים ידנית ב'קישורים לוגים'"
 
-#: core/ChangeLog.qml:47
+#: core/ChangeLog.qml:51
 msgctxt "ChangeLog|"
 msgid ""
 "Fix Alphabet sequence, Even and odd numbers and Numbers in order activities"
 msgstr "תוקנו פעילויות סדר הא-ב, מספרים זוגיים ואי-זוגיים ומספרים לפי הסדר"
 
-#: core/ChangeLog.qml:51 core/ChangeLog.qml:59
+#: core/ChangeLog.qml:55 core/ChangeLog.qml:63
 msgctxt "ChangeLog|"
 msgid "Several bug fixes"
 msgstr "מספר תיקוני שגיאות"
 
-#: core/ChangeLog.qml:53
+#: core/ChangeLog.qml:57
 msgctxt "ChangeLog|"
 msgid "Translation updated for Russian"
 msgstr "עודכן התרגום לרוסית"
 
-#: core/ChangeLog.qml:54
+#: core/ChangeLog.qml:58
 msgctxt "ChangeLog|"
 msgid "New voices for Norwegian Nynorsk"
 msgstr "קולות חדשים לנורווגית נינורסק"
 
-#: core/ChangeLog.qml:58
+#: core/ChangeLog.qml:62
 msgctxt "ChangeLog|"
 msgid "Translations added for Breton, Czech and Macedonian"
 msgstr "נוספו תרגומים לבְּרֶטוֹנית, צ'כית ומקדונית."
 
-#: core/ChangeLog.qml:63
+#: core/ChangeLog.qml:67
 msgctxt "ChangeLog|"
 msgid "Translation added for Azerbaijani"
 msgstr "נוסף תירגום לאזרביז'נית! מי היה מאמין."
 
-#: core/ChangeLog.qml:64
+#: core/ChangeLog.qml:68
 msgctxt "ChangeLog|"
 msgid "New maps and update of the maps for geography activities"
 msgstr "מפות חדשות ועידכונים למפות בפעילויות הגאוגרפיה"
 
-#: core/ChangeLog.qml:65
+#: core/ChangeLog.qml:69
 msgctxt "ChangeLog|"
 msgid ""
 "New dataset containing loops operations for programming maze, and make "
@@ -24468,81 +24473,81 @@ msgstr ""
 "ערכת נתונים חדשה המכילה לולאות והליכים למבוך התיכנות ותירגום של תמונות "
 "הוראות היצירה"
 
-#: core/ChangeLog.qml:66
+#: core/ChangeLog.qml:70
 msgctxt "ChangeLog|"
 msgid ""
 "Addition of a level to teach voltage source loop in analog electricity "
 "activity"
 msgstr "תוספת של שלב ללימוד לולאה במקור מתח בפעילות חשמל אנלוגי"
 
-#: core/ChangeLog.qml:76
+#: core/ChangeLog.qml:80
 msgctxt "ChangeLog|"
 msgid "New Activity Settings menu, with dataset selection"
 msgstr "תפריט הגדרות פעילות חדש, עם בחירת ערכת נתונים"
 
-#: core/ChangeLog.qml:82
+#: core/ChangeLog.qml:86
 msgctxt "ChangeLog|"
 msgid "New sub-categories to organize activities"
 msgstr "תת-קטגוריה חדשה לאירגון הפעילויות"
 
-#: core/ChangeLog.qml:83
+#: core/ChangeLog.qml:87
 msgctxt "ChangeLog|"
 msgid "Translation added for Macedonian."
 msgstr "נוסף תירגום למקדונית!"
 
-#: core/ChangeLog.qml:84
+#: core/ChangeLog.qml:88
 msgctxt "ChangeLog|"
 msgid "New activities Programming Maze and Baby Tangram"
 msgstr "פעילויות חדשות מבוך תיכנות וטנגרם לקטנטנים"
 
-#: core/ChangeLog.qml:85
+#: core/ChangeLog.qml:89
 msgctxt "ChangeLog|"
 msgid "New background music and volume settings."
 msgstr "מוזיקת רגע חדשה והגדרות קול."
 
-#: core/ChangeLog.qml:86
+#: core/ChangeLog.qml:90
 msgctxt "ChangeLog|"
 msgid "New speed setting in several activities."
 msgstr "הגדרות מהירות חדשות במספר פעילויות."
 
-#: core/ChangeLog.qml:87
+#: core/ChangeLog.qml:91
 msgctxt "ChangeLog|"
 msgid "New option in chess to display captured pieces."
 msgstr "אפשרות חדשה בשחמט להצגת כלים שנאכלו."
 
-#: core/ChangeLog.qml:88
+#: core/ChangeLog.qml:92
 msgctxt "ChangeLog|"
 msgid "New images in Colors, Advanced colors and Target game."
 msgstr "תמונות חדשות בצבע, צבעים מתקדמים ומשחק מטרה."
 
-#: core/ChangeLog.qml:89
+#: core/ChangeLog.qml:93
 msgctxt "ChangeLog|"
 msgid "New voices for US English."
 msgstr "קולות חדשים לאנגלית ארצות-הברית."
 
-#: core/ChangeLog.qml:90 core/ChangeLog.qml:98
+#: core/ChangeLog.qml:94 core/ChangeLog.qml:102
 msgctxt "ChangeLog|"
 msgid "Many little fixes and improvements."
 msgstr "תיקונים ושיפורים קטנים."
 
-#: core/ChangeLog.qml:91
+#: core/ChangeLog.qml:95
 msgctxt "ChangeLog|"
 msgid ""
 "Translation updated for multiple languages (Breton, Brazilian Portuguese, "
 "Finnish...)."
 msgstr "עודכן התירגום לכמה שפות (ברטון, פורטוגזית ברזילאית, פינית, עברית...)"
 
-#: core/ChangeLog.qml:92
+#: core/ChangeLog.qml:96
 msgctxt "ChangeLog|"
 msgid "Add Russian dataset for Click on letter activity."
 msgstr "להוסיף נתונים ברוסית לפעילות לחץ על האות."
 
-#: core/ChangeLog.qml:93
+#: core/ChangeLog.qml:97
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in Dutch."
 msgstr "פעילויות שפה אפשריות בגרמנית."
 
-#: core/ChangeLog.qml:94
+#: core/ChangeLog.qml:98
 msgctxt "ChangeLog|"
 msgid ""
 "Merge Norwegian counties Nord-Trøndelag and Sør-Trøndelag into Trøndelag in "
@@ -24551,17 +24556,17 @@ msgstr ""
 "בפעילות על גאוגרפיה של ארצות אוחדו המחוזות הנורווגים Nord-Trøndelag וSør-"
 "Trøndelag לTrøndelag! מי היה מאמין."
 
-#: core/ChangeLog.qml:95
+#: core/ChangeLog.qml:99
 msgctxt "ChangeLog|"
 msgid "Fix in braille activities where the cells start at 1, not 0."
 msgstr "תיקון בפעילויות הברייל כשהתאים מתחילים ב־1 ולא 0."
 
-#: core/ChangeLog.qml:96
+#: core/ChangeLog.qml:100
 msgctxt "ChangeLog|"
 msgid "Translation added for Basque, Hungarian and Malayalam."
 msgstr "נוסף תרגום לבאסקית\\ הונגרית ומלאית. חשוב מאוד."
 
-#: core/ChangeLog.qml:97
+#: core/ChangeLog.qml:101
 msgctxt "ChangeLog|"
 msgid ""
 "Loading/saving of creations (Baby Wordprocessor, Balance Box and Piano "
@@ -24569,47 +24574,47 @@ msgid ""
 msgstr ""
 "טעינה/שמירה של יצירות (מעבד תמלילים לתינוקות, קופסת איזון והלחנה לפסנתר)."
 
-#: core/ChangeLog.qml:98
+#: core/ChangeLog.qml:102
 msgctxt "ChangeLog|"
 msgid "Translations added for Scottish Gaelic."
 msgstr "נוסף תרגום לגאלית סקוטית. כן."
 
-#: core/ChangeLog.qml:99
+#: core/ChangeLog.qml:103
 msgctxt "ChangeLog|"
 msgid "License page added in configuration."
 msgstr "דף רשיון נוסף בהגדרות."
 
-#: core/ChangeLog.qml:99
+#: core/ChangeLog.qml:103
 msgctxt "ChangeLog|"
 msgid "Multiple changes on layouts to improve the ergonomy."
 msgstr "שינויים רבים בממשק כדי לשפר את הנוחות."
 
-#: core/ChangeLog.qml:100
+#: core/ChangeLog.qml:104
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in Polish, Swedish and Ukrainian."
 msgstr "פעילויות שפה קיימות עכשיו בפולניתף, שוודית ואוקראינית (בקרוב בעברית)."
 
-#: core/ChangeLog.qml:101
+#: core/ChangeLog.qml:105
 msgctxt "ChangeLog|"
 msgid "Search feature."
 msgstr "אפשרויות חיפוש."
 
-#: core/ChangeLog.qml:102
+#: core/ChangeLog.qml:106
 msgctxt "ChangeLog|"
 msgid "A Changelog."
 msgstr "יומן שינויים."
 
-#: core/ChangeLog.qml:103
+#: core/ChangeLog.qml:107
 msgctxt "ChangeLog|"
 msgid "Many little fixes."
 msgstr "שינויים קטנים רבים."
 
-#: core/ChangeLog.qml:103
+#: core/ChangeLog.qml:107
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in French."
 msgstr "פעילויות שפה אפשריות בצרפתית."
 
-#: core/ChangeLog.qml:104
+#: core/ChangeLog.qml:108
 msgctxt "ChangeLog|"
 msgid ""
 "Adding a loading overlay to let the user know that some actions are taking "
@@ -24618,7 +24623,7 @@ msgstr ""
 "הוספת שכבת \"טוען\" כדי לאפשר למשתמש/ת לדעת כשפעולה מתרחשת (טעינה של פעילות "
 "לדוגמא) ועלולה לקחת מספר שניות."
 
-#: core/ChangeLog.qml:104
+#: core/ChangeLog.qml:108
 msgctxt "ChangeLog|"
 msgid ""
 "Translations added for: Catalan (Valencian), Chinese Traditional, Finnish "
@@ -24627,12 +24632,12 @@ msgstr ""
 "נוסף תרגום ל: קולנית (ולנסיאנית), סינית מסורתית, פינית, רוסית, סלובקית "
 "ותורכית."
 
-#: core/ChangeLog.qml:105
+#: core/ChangeLog.qml:109
 msgctxt "ChangeLog|"
 msgid "Translations added for: Slovenian, German, Galician."
 msgstr "נוסף תרגום לסלובנית, גרמנית וגליציאנית."
 
-#: core/ChangeLog.qml:130
+#: core/ChangeLog.qml:134
 #, qt-format
 msgctxt "ChangeLog|"
 msgid "Version %1:"
@@ -24700,7 +24705,8 @@ msgstr "רשיון"
 msgctxt "DialogAbout|"
 msgid "translator-credits"
 msgstr ""
-"אילת בן אליהו &lt;eilaty_miso@hotmail.com&gt;, \n"
+"עמיחי גל - מחשבים חופשיים בחינוךאילת בן אליהו &lt;eilaty_miso@hotmail."
+"com&gt;, \n"
 "ויטלי פרצונוק  &lt;vitali_pe@yahoo.com&gt; ,\n"
 "יוסי זילברמן - דיבוב  &lt;yossizi@gmail.com&gt;,  \n"
 "ג'ורג' מריאנו &lt;mjminfo@yahoo.com&gt;, \n"
