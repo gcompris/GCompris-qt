@@ -46,13 +46,9 @@ if(NOT ${QML_BOX2D_MODULE} STREQUAL "disabled")
   if(_need_box2d_submodule)
     # build qml-box2d ourselves from submodule
     include(ExternalProject)
-    if(UBUNTU_TOUCH)
-        unset(QT_QMAKE_EXECUTABLE CACHE)
-        find_program(_qmake_program "qmake")
-        #set(_qmake_program ${QT_QMAKE_EXECUTABLE})
-    else()
-        get_property(_qmake_program TARGET Qt5::qmake PROPERTY IMPORT_LOCATION)
-    endif()
+
+    get_property(_qmake_program TARGET Qt5::qmake PROPERTY IMPORT_LOCATION)
+
     set(_box2d_source_dir ${CMAKE_CURRENT_SOURCE_DIR}/external/qml-box2d)
     if(WIN32)
       set(_box2d_library_dir "release/")

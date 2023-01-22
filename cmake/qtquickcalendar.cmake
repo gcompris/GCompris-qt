@@ -11,12 +11,9 @@ set(_calendar_system_dir "${_qt_qml_system_path}/QtQuick/Calendar")
 
 # build qtquickcalendar ourselves from submodule
 include(ExternalProject)
-if(UBUNTU_TOUCH)
-  unset(QT_QMAKE_EXECUTABLE CACHE)
-  find_program(_qmake_program "qmake")
-else()
-  get_property(_qmake_program TARGET Qt5::qmake PROPERTY IMPORT_LOCATION)
-endif()
+
+get_property(_qmake_program TARGET Qt5::qmake PROPERTY IMPORT_LOCATION)
+
 set(_calendar_source_dir ${CMAKE_SOURCE_DIR}/external/qtquickcalendar)
 set(_calendar_qml_files_dir ${_calendar_source_dir}/src/imports/calendar/)
 if(WIN32)
