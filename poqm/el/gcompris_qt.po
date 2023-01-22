@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2023-01-14 14:21+0200\n"
+"PO-Revision-Date: 2023-01-21 23:10+0200\n"
 "Last-Translator: Stelios <sstavra@gmail.com>\n"
 "Language-Team: Greek <kde-i18n-el@kde.org>\n"
 "Language: el\n"
@@ -5867,10 +5867,10 @@ msgid ""
 "output is 1 if A = B, otherwise it's 0. The third output is 1 if A > B, "
 "otherwise it's 0. "
 msgstr ""
-"Η Συσκευή Σύγκρισης λαμβάνει 2 αριθμούς, Α και Β. Τους συγκρίνει και εξάγει "
-"3 τιμές. Η πρώτη τιμή εξόδου είναι 1 εάν το Α < Β, διαφορετικά η τιμή είναι "
-"0. Η δεύτερη τιμή είναι 1 εάν Α = Β, διαφορετικά η τιμή είναι 0. Η τρίτη "
-"τιμή είναι 1 εάν Α > Β, διαφορετικά η τιμή είναι 0. "
+"Η δραστηριότητα Συγκρίνω αριθμούς λαμβάνει 2 αριθμούς, Α και Β, τους "
+"συγκρίνει και εξάγει 3 τιμές. Η πρώτη τιμή εξόδου είναι 1 εάν το Α < Β, "
+"διαφορετικά η τιμή είναι 0. Η δεύτερη τιμή είναι 1 εάν Α = Β, διαφορετικά η "
+"τιμή είναι 0. Η τρίτη τιμή είναι 1 εάν Α > Β, διαφορετικά η τιμή είναι 0. "
 
 #: activities/digital_electricity/components/DigitalLight.qml:21
 msgctxt "DigitalLight|"
@@ -6087,7 +6087,7 @@ msgstr "Πύλη NOR"
 #: activities/digital_electricity/TutorialDataset.qml:89
 msgctxt "TutorialDataset|"
 msgid "Comparator"
-msgstr "Συσκευή σύγκρισης"
+msgstr "Συγκρίνω αριθμούς"
 
 #: activities/digital_electricity/TutorialDataset.qml:96
 msgctxt "TutorialDataset|"
@@ -6386,9 +6386,9 @@ msgid ""
 "output. The first value is 1 if A < B, the second value is 1 if A = B and "
 "the third value is 1 if A > B."
 msgstr ""
-"Η Συσκευή Σύγκρισης λαμβάνει δύο αριθμούς (Α και Β) ως εισόδους και δίνει 3 "
-"τιμές στις εξόδους. Η πρώτη τιμή είναι 1 εάν Α < Β, η δεύτερα τιμή είναι 1 "
-"όταν Α = Β και η τρίτη τιμή είναι 1 όταν Α > Β."
+"Στη δραστηριότητα Συγκρίνω αριθμούς έχουμε δύο αριθμούς (Α και Β) στην "
+"είσοδο, οι οποίες δίνουν 3 τιμές στις εξόδους. Η πρώτη τιμή είναι 1 εάν Α < "
+"Β, η δεύτερη τιμή είναι 1 όταν Α = Β και η τρίτη τιμή είναι 1 όταν Α > Β."
 
 #: activities/digital_electricity/TutorialDataset.qml:512
 msgctxt "TutorialDataset|"
@@ -25079,19 +25079,19 @@ msgstr "Μέγιστη τιμή: 500000."
 #: activities/tens_complement_find/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Find ten's complement"
-msgstr "Βρες το συμπλήρωμα του 10"
+msgstr "Βρίσκω το συμπλήρωμα του 10"
 
 #. Help title
 #: activities/tens_complement_find/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Find the ten's complement of each number."
-msgstr "Βρες το συμπλήρωμα του δέκα σε κάθε αριθμό."
+msgstr "Βρίσκω το συμπλήρωμα του δέκα σε κάθε αριθμό."
 
 #. Help goal
 #: activities/tens_complement_find/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Learn to find ten's complement."
-msgstr "Μάθε να βρίσκεις το συμπλήρωμα του δέκα."
+msgstr "Μαθαίνω να βρίσκω το συμπλήρωμα του δέκα."
 
 #. Help prerequisite
 #: activities/tens_complement_find/ActivityInfo.qml:21
@@ -25144,7 +25144,7 @@ msgstr "Βρες και τους δύο αριθμούς."
 #: activities/tens_complement_swap/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Swap ten's complement"
-msgstr "Αντάλλαξε το συμπλήρωμα του 10"
+msgstr "Ανταλλάσσω το συμπλήρωμα του 10"
 
 #. Help title
 #: activities/tens_complement_swap/ActivityInfo.qml:16

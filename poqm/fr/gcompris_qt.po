@@ -9308,7 +9308,7 @@ msgstr ""
 #: activities/fractions_create/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Create the fractions"
-msgstr "Écris les fractions"
+msgstr "Représente les fractions"
 
 #. Help title
 #: activities/fractions_create/ActivityInfo.qml:16

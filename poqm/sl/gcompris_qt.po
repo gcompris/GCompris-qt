@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2023-01-11 07:55+0100\n"
+"PO-Revision-Date: 2023-01-21 10:19+0100\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
@@ -15,7 +15,7 @@ msgstr ""
 "%100<=4 ? 2 : 3);\n"
 "X-Language: sl\n"
 "X-Qt-Contexts: true\n"
-"X-Generator: Lokalize 22.12.0\n"
+"X-Generator: Lokalize 22.12.1\n"
 
 #. Activity title
 #: activities/advanced_colors/ActivityInfo.qml:15
@@ -24919,7 +24919,7 @@ msgstr "Natipkajte celo besedo, preden pade na tla."
 #: core/ChangeLog.qml:30
 msgctxt "ChangeLog|"
 msgid "Fix issue in comparator activity"
-msgstr ""
+msgstr "Popravek napake v dejavnosti primerjanja"
 
 #: core/ChangeLog.qml:34
 msgctxt "ChangeLog|"

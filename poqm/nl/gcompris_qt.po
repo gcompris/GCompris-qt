@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2023-01-09 10:35+0100\n"
+"PO-Revision-Date: 2023-01-21 10:45+0100\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: Dutch <kde-i18n-nl@kde.org>\n"
 "Language: nl\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Language: nl\n"
 "X-Qt-Contexts: true\n"
-"X-Generator: Lokalize 22.12.0\n"
+"X-Generator: Lokalize 22.12.1\n"
 
 #. Activity title
 #: activities/advanced_colors/ActivityInfo.qml:15
@@ -25186,7 +25186,7 @@ msgstr "Typ het hele woord terwijl het valt, voor het de grond raakt."
 #: core/ChangeLog.qml:30
 msgctxt "ChangeLog|"
 msgid "Fix issue in comparator activity"
-msgstr ""
+msgstr "Probleem repareren in activiteit vergelijken"
 
 #: core/ChangeLog.qml:34
 msgctxt "ChangeLog|"

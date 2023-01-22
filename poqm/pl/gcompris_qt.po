@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2023-01-14 17:47+0100\n"
+"PO-Revision-Date: 2023-01-21 10:00+0100\n"
 "Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
 "Language-Team: Polish <kde-i18n-doc@kde.org>\n"
 "Language: pl\n"
@@ -25097,7 +25097,7 @@ msgstr "Napisz całe spadające słowo, zanim spadnie na ziemię."
 #: core/ChangeLog.qml:30
 msgctxt "ChangeLog|"
 msgid "Fix issue in comparator activity"
-msgstr ""
+msgstr "Naprawiono błąd w aktywności porównywania"
 
 #: core/ChangeLog.qml:34
 msgctxt "ChangeLog|"
