@@ -1,0 +1,16 @@
+clickable_minimum_required: "7.6"
+builder: cmake
+kill: gcompris-qt
+build_args: "-DUBUNTU_TOUCH=ON"
+dependencies_target:
+  - libqt5charts5-dev
+  - qml-module-qt-labs-calendar
+install_qml:
+  - /usr/lib/${ARCH_TRIPLET}/qt5/qml/Qt/labs/calendar
+make_jobs: 4
+libraries:
+  Box2D:
+    builder: qmake
+    make_jobs: 2
+    src_dir: external/qml-box2d
+    prebuild: git submodule update --init --recursive
