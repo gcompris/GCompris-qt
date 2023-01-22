@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GCompris 5\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2023-01-15 16:19+0100\n"
+"PO-Revision-Date: 2023-01-21 15:49+0100\n"
 "Last-Translator: Envel Kervoas <envelkervoas@free.fr>\n"
 "Language-Team: Breton <kde-i18n-doc@kde.org>\n"
 "Language: br\n"
@@ -6256,7 +6256,7 @@ msgid ""
 "output. The first value is 1 if A < B, the second value is 1 if A = B and "
 "the third value is 1 if A > B."
 msgstr ""
-"Ar c'heñverier a zegemer div niverenn (A ha B) evel enank hag a ro 3 zalvoud "
+"Ur c'heñverier a zegemer div niverenn (A ha B) evel enank hag a ro 3 zalvoud "
 "d'an ec'hank. An talvoud kentañ zo par da 1 m'eo A <B, an eil talvoud a zo "
 "par da 1 m'eo A = B hag an trede talvoud a zo par da 1 m'eo A > B."
 
@@ -9113,7 +9113,7 @@ msgstr ""
 #: activities/fractions_create/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Create the fractions"
-msgstr "Krou ar c'hevrennoù."
+msgstr "Krou ar c'hevrennoù"
 
 #. Help title
 #: activities/fractions_create/ActivityInfo.qml:16
@@ -19246,7 +19246,7 @@ msgstr ""
 #: activities/ordering_numbers/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "Compare numbers."
-msgstr "Kenveriañ niveroù"
+msgstr "Keñverian niveroù"
 
 #. Help prerequisite
 #: activities/ordering_numbers/ActivityInfo.qml:27
@@ -24781,7 +24781,7 @@ msgstr "3 goublad ingal diwar 6 niverenn."
 #: activities/tens_complement_use/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Use ten's complement"
-msgstr "Ober gant ur glokadenn d'ober dek."
+msgstr "Ober gant ur glokadenn d'ober dek"
 
 #. Help title
 #: activities/tens_complement_use/ActivityInfo.qml:16
@@ -25076,7 +25076,7 @@ msgstr ""
 #: core/ChangeLog.qml:30
 msgctxt "ChangeLog|"
 msgid "Fix issue in comparator activity"
-msgstr ""
+msgstr "Kempenn en obererezh ar c'heñverier"
 
 #: core/ChangeLog.qml:34
 msgctxt "ChangeLog|"

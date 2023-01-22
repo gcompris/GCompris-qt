@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2023-01-19 22:39+0300\n"
+"PO-Revision-Date: 2023-01-21 23:31+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -2102,7 +2102,7 @@ msgstr "Yazmaya başladığında karakterlerin sesini oyna"
 #: activities/baby_wordprocessor/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "A baby word processor"
-msgstr "Bir bebek kelime işlemcisi"
+msgstr "Bir bebek sözcük işlemci"
 
 #. Help title
 #: activities/baby_wordprocessor/ActivityInfo.qml:17
@@ -2111,8 +2111,8 @@ msgid ""
 "A simplistic word processor to let the children play around with a keyboard "
 "and see letters."
 msgstr ""
-"Çocukların, bir klavye ile oynaması ve harfleri görebilmesine izin veren "
-"basit bir kelime işlemcisi."
+"Çocukların bir klavye ile oynamasına ve harfleri görebilmesine izin veren "
+"yalın bir sözcük işlemci."
 
 #. Help goal
 #: activities/baby_wordprocessor/ActivityInfo.qml:20
@@ -2129,9 +2129,11 @@ msgid ""
 "'subtitle' button will make the text slightly less bigger. Clicking on "
 "'paragraph' will remove the formatting."
 msgstr ""
-"Bir kelime işlemcideymiş gibi, gerçek veya sanal klavyede yaz.\n"
-"    'Başlık' düğmesi, metni daha büyük yapar. Bezer şekilde, 'alt başlık' "
-"düğmesi daha az büyütür. 'paragraf' düğmesi ise biçimlendirmeyi kaldırır."
+"Bir sözcük işlemcide olduğu gibi gerçek veya sanal klavyede yazmanız "
+"yeterlidir.\n"
+"     'Başlık' düğmesine tıklamak metni büyütür. Benzer şekilde,'altyazı' "
+"düğmesi metni biraz daha küçültecektir. 'paragraf'a tıklamak biçimlendirmeyi "
+"kaldırır."
 
 #: activities/baby_wordprocessor/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
@@ -3483,15 +3485,15 @@ msgid ""
 "set' to download the full word image set. Click on the cross or on 'Never "
 "show this dialog again' to play with the demo version."
 msgstr ""
-"Bu etkinlik için tüm resimlere sahip değilsin. Tam kelime görsel setini "
-"indirmek için 'Görsel setini güncelle' ye tıkla. Çarpı tuşuna basarak "
-"tanıtım sürümünü oynayabilir veya 'Bu pencereyi bir daha gösterme' düğmesine "
-"basarak iletişim penceresini kapatabilirsin."
+"Bu etkinlik için gereken tüm görsellere sahip değilsin. Görsel sözcük "
+"kümesinin tümünü indirmek için 'Görsel kümesini güncelle'ye tıkla. Tanıtım "
+"sürümüyle oynamak için çarpı işaretine veya 'Bu iletişim kutusunu bir daha "
+"gösterme' seçeneğine tıkla."
 
 #: activities/categorization/Categorization.qml:159
 msgctxt "Categorization|"
 msgid "Update the image set"
-msgstr "Görsel setini güncelle"
+msgstr "Görsel kümesini güncelle"
 
 #: activities/categorization/Categorization.qml:160
 msgctxt "Categorization|"
@@ -4467,7 +4469,7 @@ msgstr "Sayıları okuyabilen çocuklar için."
 #: activities/chronos/resource/2/Data.qml:13
 msgctxt "Data|"
 msgid "For children who can read words."
-msgstr "Kelimeleri okuyabilen çocuklar için."
+msgstr "Sözcükleri okuyabilen çocuklar için."
 
 #: activities/chronos/resource/board/board1_0.qml:14
 msgctxt "board1_0|"
@@ -5558,17 +5560,17 @@ msgstr "Resimlerle oyna."
 #: activities/crane/resource/2/Data.qml:13
 msgctxt "Data|"
 msgid "Play with words of 3 letters."
-msgstr "3 harfli kelimelerle oyna."
+msgstr "3 harfli sözcüklerle oyna."
 
 #: activities/crane/resource/3/Data.qml:13
 msgctxt "Data|"
 msgid "Play with words of 4 letters."
-msgstr "4 harfli kelimelerle oyna."
+msgstr "4 harfli sözcüklerle oyna."
 
 #: activities/crane/resource/4/Data.qml:13
 msgctxt "Data|"
 msgid "Play with words of 5 letters."
-msgstr "5 harfli kelimelerle oyna."
+msgstr "5 harfli sözcüklerle oyna."
 
 #. Activity title
 #: activities/details/ActivityInfo.qml:18
@@ -8384,8 +8386,8 @@ msgid ""
 "The scarlet macaw lives in South America and is a big and bright colored "
 "parrot, able to learn up to 100 words!"
 msgstr ""
-"Macaw papağanı, Güney Amerika'da yaşar ve 100 kelimeyi öğrenebilen büyük ve "
-"parlak bir papağandır!"
+"Kızıl Amerika papağanı Güney Amerika'da yaşar ve 100 sözcüğe kadar "
+"öğrenebilen büyük ve parlak renkli bir papağandır!"
 
 #: activities/explore_world_animals/resource/board/board2.qml:63
 #: activities/explore_world_animals/resource/board/board2.qml:66
@@ -14856,7 +14858,7 @@ msgstr "İpucu olarak, bulmak için resmi görüntüle"
 msgctxt "ActivityConfig|"
 msgid ""
 "Speak the words to find (if available) when three attempts are remaining"
-msgstr "Üç deneme kaldığında (varsa) bulmak için kelimeleri söyle"
+msgstr "Üç deneme kaldığında (varsa) bulmak için sözcükleri söyle"
 
 #. Activity title
 #: activities/hangman/ActivityInfo.qml:15
@@ -14868,7 +14870,7 @@ msgstr "Klasik adam asmaca oyunu"
 #: activities/hangman/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Guess the letters of the given word."
-msgstr "Verilen kelimenin harflerini tahmin et."
+msgstr "Verilen sözcüğün harflerini tahmin et."
 
 #. Help goal
 #: activities/hangman/ActivityInfo.qml:19
@@ -14903,8 +14905,8 @@ msgid ""
 "corresponding voice is available, you will hear the word to find when three "
 "attempts are remaining."
 msgstr ""
-"'Bulmak için kelimeleri söyle ...' seçeneği etkinleştirilirse ve ilgili ses "
-"mevcutsa, üç deneme kaldığında bulmak için kelimeyi duyarsınız."
+"'Bulmak için sözcükleri söyle...' seçeneği etkinleştirildiyse ve karşılık "
+"gelen ses varsa üç denemeniz kaldığında bulunacak sözcüğü duyacaksınız."
 
 #: activities/hangman/hangman.js:215
 #, qt-format
@@ -15085,7 +15087,7 @@ msgstr "Her ögeyi adının üzerine sürükleyip bırakın."
 #: activities/imagename/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid "Vocabulary and reading."
-msgstr "Kelime bilgisi ve okuma."
+msgstr "Sözcük dağarcığı ve okuma."
 
 #. Help prerequisite
 #: activities/imagename/ActivityInfo.qml:25 activities/lang/ActivityInfo.qml:28
@@ -15710,7 +15712,7 @@ msgstr ""
 #: activities/lang/ActivityInfo.qml:21
 msgctxt "ActivityInfo|"
 msgid "Enrich your vocabulary"
-msgstr "Kelime bilgini zenginleştir"
+msgstr "Sözcük dağarcığını zenginleştir"
 
 #. Help title
 #: activities/lang/ActivityInfo.qml:23
@@ -15722,7 +15724,7 @@ msgstr "Dil öğrenme etkinliklerini tamamla."
 #: activities/lang/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Enrich your vocabulary in your native language or in a foreign one."
-msgstr "Kelime dağarcığını ana dilinde veya yabancı bir dilde zenginleştir."
+msgstr "Ana dilindeki veya başka bir dildeki sözcük dağarcığını zenginleştir."
 
 #. Help manual
 #: activities/lang/ActivityInfo.qml:30
@@ -15733,10 +15735,10 @@ msgid ""
 "voice and the image, then only from the voice, and finally an exercise to "
 "type the text."
 msgstr ""
-"Bir dizi kelimeyi gözden geçir. Her kelime bir ses, bir metin ve bir resimle "
-"gösterilir. <br/> Bittiğinde, metni sesten ve görüntüden tanımak için bazı "
-"alıştırmalar yapacak, sonra yalnızca sesten ve son olarak da yazmak için bir "
-"alıştırma yapacaksın."
+"Bir dizi sözcüğü gözden geçir. Her sözcük bir ses, bir metin ve bir görselle "
+"gösterilir.<br/>Bittiğinde; metni ses ve görselden, ardından yalnızca sesten "
+"tanımak için bazı alıştırmalar yapacaksın ve son olarak da metni yazmak için "
+"bir alıştırma gelecek."
 
 #: activities/lang/ActivityInfo.qml:32
 msgctxt "ActivityInfo|"
@@ -15757,7 +15759,7 @@ msgstr "Enter: Tamam(OK) düğmesi göründüğünde cevabını doğrula"
 #: activities/missing-letter/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Tab: repeat the word"
-msgstr "Sekme: kelimeyi tekrarla"
+msgstr "Sekme: Sözcüğü yinele"
 
 #: activities/lang/Lang.qml:140
 msgctxt "Lang|"
@@ -16591,12 +16593,12 @@ msgstr "Sağ el"
 #: activities/letter-in-word/ActivityConfig.qml:41
 msgctxt "ActivityConfig|"
 msgid "All the words"
-msgstr "Tüm kelimeler"
+msgstr "Tüm sözcükler"
 
 #: activities/letter-in-word/ActivityConfig.qml:49
 msgctxt "ActivityConfig|"
 msgid "Only 5 words"
-msgstr "Yalnızca 5 kelime"
+msgstr "Yalnızca 5 sözcük"
 
 #: activities/letter-in-word/ActivityConfig.qml:59
 msgctxt "ActivityConfig|"
@@ -16622,7 +16624,7 @@ msgstr "Küçük Harf"
 #: activities/letter-in-word/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Letter in which word"
-msgstr "Kelimedeki harf"
+msgstr "Hangi sözcükteki harf"
 
 #. Help title
 #: activities/letter-in-word/ActivityInfo.qml:17
@@ -16638,7 +16640,7 @@ msgstr ""
 #: activities/letter-in-word/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Select all the words which contain the given letter."
-msgstr "Verilen harfi içeren tüm kelimeleri seç."
+msgstr "Verilen harfi içeren tüm sözcükleri seç."
 
 #. Help prerequisite
 #: activities/letter-in-word/ActivityInfo.qml:22
@@ -16653,8 +16655,8 @@ msgid ""
 "A letter is displayed on the flag attached to the plane. Select all the "
 "words in the list containing this letter and then press the OK button."
 msgstr ""
-"Uçağa iliştirilmiş bayrakta bir harf görüntüleniyor. Listedeki bu harfi "
-"içeren tüm kelimeleri seç ve ardından OK düğmesine bas."
+"Uçağa iliştirilmiş bayrakta bir harf görüntülenir. Bu harfi içeren listedeki "
+"tüm sözcükleri seç ve ardından Tamam düğmesine bas."
 
 #: activities/letter-in-word/LetterInWord.qml:298
 msgctxt "LetterInWord|"
@@ -18297,7 +18299,7 @@ msgstr ""
 #: activities/memory-wordnumber/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Wordnumber memory game"
-msgstr "Kelime sayısı hafıza oyunu"
+msgstr "Sözcük Sayısı bellek oyunu"
 
 #. Help title
 #: activities/memory-wordnumber/ActivityInfo.qml:17
@@ -18320,9 +18322,9 @@ msgid ""
 "number name (a number written in words). You have to match the numerals with "
 "the corresponding number names."
 msgstr ""
-"Her kart ya bir rakamı (rakamlarla yazılmış bir rakam) ya da bir rakam adını "
-"(kelimelerle yazılmış bir rakam) saklamaktadır. Rakamları ilgili numara "
-"isimleriyle eşleştirmen gerekir."
+"Her kartta ya bir rakam (rakamlarla yazılmış bir sayı) ya da bir sayı adı "
+"(sözcüklerle yazılmış bir sayı) gizlidir. Rakamları karşılık gelen numara "
+"adlarıyla eşleştirmen gerekir."
 
 #: activities/memory-wordnumber/dataset.js:11
 msgctxt "dataset|"
@@ -18766,17 +18768,17 @@ msgstr "Ses dosyalarının otomatik indirilmesini/güncellenmesini etkinleştir"
 #: activities/menu/ConfigurationItem.qml:246
 msgctxt "ConfigurationItem|"
 msgid "Download full word image set"
-msgstr "Tam kelime görsel setini indir"
+msgstr "Tam sözcük görsel kümesini indir"
 
 #: activities/menu/ConfigurationItem.qml:266
 msgctxt "ConfigurationItem|"
 msgid "Full word image set is installed"
-msgstr "Tam kelime resim seti yüklendi"
+msgstr "Tam sözcük görsel kümesi kurulu"
 
 #: activities/menu/ConfigurationItem.qml:266
 msgctxt "ConfigurationItem|"
 msgid "Full word image set is not installed"
-msgstr "Tam kelime resim kümesi yüklenmedi"
+msgstr "Tam sözcük görsel kümesi kurulu değil"
 
 #: activities/menu/ConfigurationItem.qml:287
 msgctxt "ConfigurationItem|"
@@ -18906,12 +18908,12 @@ msgstr "Harfler"
 #: activities/menu/Menu.qml:155
 msgctxt "Menu|"
 msgid "Words"
-msgstr "Kelimeler"
+msgstr "Sözcükler"
 
 #: activities/menu/Menu.qml:156
 msgctxt "Menu|"
 msgid "Vocabulary"
-msgstr "Kelime Bilgisi"
+msgstr "Sözcük Dağarcığı"
 
 #: activities/menu/Menu.qml:372
 msgctxt "Menu|"
@@ -19081,7 +19083,7 @@ msgstr "Eksik Harf"
 #: activities/missing-letter/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
 msgid "Find the missing letter to complete the word."
-msgstr "Kelimeyi tamamlamak için eksik harfi bul."
+msgstr "Sözcüğü tamamlamak için eksik harfi bul."
 
 #. Help goal
 #: activities/missing-letter/ActivityInfo.qml:21
@@ -19093,7 +19095,7 @@ msgstr "Okuma becerileri egzersizi."
 #: activities/missing-letter/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid "Word reading."
-msgstr "Kelime okuma."
+msgstr "Sözcük okuma."
 
 #. Help manual
 #: activities/missing-letter/ActivityInfo.qml:25
@@ -19103,8 +19105,8 @@ msgid ""
 "under the picture. Click on the missing letter to complete the word, or type "
 "the letter on your keyboard."
 msgstr ""
-"Ana ekranda bir resim görüntüleniyor ve resmin altında eksik bir kelime "
-"yazılı. Sözcüğü tamamlamak için eksik harfe tıkla veya klavyen ile harfi yaz."
+"Ana alanda bir resim görüntülenir ve resmin altına eksik bir sözcük yazılır. "
+"Sözcüğü tamamlamak için eksik harfe tıkla veya harfi klavyenle yaz."
 
 #: activities/missing-letter/MissingLetter.qml:316
 msgctxt "MissingLetter|"
@@ -19462,12 +19464,9 @@ msgid "Find the corresponding digit."
 msgstr "Akordiyonu bul"
 
 #: activities/morse_code/resource/3/Data.qml:13
-#, fuzzy
-#| msgctxt "Menu|"
-#| msgid "Words"
 msgctxt "Data|"
 msgid "Words."
-msgstr "Kelimeler"
+msgstr "Sözcükler."
 
 #: activities/morse_code/resource/3/Data.qml:24
 msgctxt "Data|"
@@ -20262,12 +20261,9 @@ msgid ""
 msgstr ""
 
 #: activities/ordering_sentences/resource/1/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Only 5 words"
 msgctxt "Data|"
 msgid "Below 5 words."
-msgstr "Yalnızca 5 kelime"
+msgstr "5 sözcüğün altında."
 
 #. These sentences should not need to be translated word by word. Please add at least 10 sentences, each one being between 3 and 5 words. Use | to separate group of words. The aim of the string is to shuffle the group of words and let the child reorder them correctly. We should not be able to form a correct sentence by shuffling some words in the final sentence.
 #: activities/ordering_sentences/resource/1/Data.qml:18
@@ -21662,12 +21658,9 @@ msgstr "Toplama işlemi."
 
 #. Help title
 #: activities/positions/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Find the missing letter to complete the word."
 msgctxt "ActivityInfo|"
 msgid "Find the boy's position in relation to the box."
-msgstr "Kelimeyi tamamlamak için eksik harfi bul."
+msgstr "Çocuğun kutuya göre konumunu bul."
 
 #. Help goal
 #: activities/positions/ActivityInfo.qml:20
@@ -22179,7 +22172,8 @@ msgstr "Yatay okuma alıştırması"
 msgctxt "ActivityInfo|"
 msgid "Read a list of words and say if a given word is in it."
 msgstr ""
-"Bir kelime listesi oku ve içinde belirli bir kelimenin olup olmadığını söyle."
+"Bir sözcük listesini oku ve belirli bir sözcüğün içinde olup olmadığını "
+"söyle."
 
 #. Help goal
 #: activities/readingh/ActivityInfo.qml:20
@@ -22195,8 +22189,8 @@ msgid ""
 "A word is shown on the board. A list of words, displayed horizontally, will "
 "appear and disappear. Did the given word appear in the list?"
 msgstr ""
-"Tahtada bir kelime gösterilir. Yatay olarak görüntülenen bir kelime listesi "
-"görünecek ve kaybolacaktır. Verilen kelimeyi listede göründü mü?"
+"Tahtada bir sözcük gösterilir. Yatay olarak görüntülenen bir sözcük listesi "
+"görünecek ve kaybolacaktır. Verilen sözcük listede göründü mü?"
 
 #: activities/readingh/Readingh.qml:171
 #, qt-format
@@ -22205,8 +22199,9 @@ msgid ""
 "<font color=\"#373737\">Check if the word<br/></font><b><font color=\"#315AAA"
 "\">%1</font></b><br/><font color=\"#373737\">is displayed</font>"
 msgstr ""
-"<font color=\"#373737\">kelimesini kontrol et<br/></font><b><font color="
-"\"#315AAA\">%1</font></b><br/><font color=\"#373737\">görüntüleniyorsa</font>"
+"<b><font color=\"#315AAA\">%1</font></b><br/><font color="
+"\"#373737\">sözcüğünün görüntülenip görüntülenmediğini<br/></font> <b><font "
+"color=\"#315AAA\">%1</font></b><br/><font color=\"#373737\">denetle</font>"
 
 #: activities/readingh/Readingh.qml:197
 msgctxt "Readingh|"
@@ -22229,8 +22224,8 @@ msgstr "Dikey okuma alıştırması"
 msgctxt "ActivityInfo|"
 msgid "Read a vertical list of words and say if a given word is in it."
 msgstr ""
-"Dikey bir kelime listesi oku ve içinde belirli bir kelimenin olup olmadığını "
-"söyle."
+"Dikey bir sözcük listesini oku ve belirli bir sözcüğün içinde olup "
+"olmadığını söyle."
 
 #. Help manual
 #: activities/readingv/ActivityInfo.qml:24
@@ -22239,8 +22234,8 @@ msgid ""
 "A word is shown on the board. A list of words, displayed vertically, will "
 "appear and disappear. Did the given word appear in the list?"
 msgstr ""
-"Tahtada bir kelime gösterilir. Dikey olarak görüntülenen bir sözcük listesi "
-"görünecek ve kaybolacaktır. Verilen kelimeyi listede göründü mü?"
+"Tahtada bir sözcük gösterilir. Dikey olarak görüntülenen bir sözcük listesi "
+"görünecek ve kaybolacaktır. Verilen sözcük listede göründü mü?"
 
 #. Activity title
 #: activities/redraw/ActivityInfo.qml:15
@@ -25406,23 +25401,16 @@ msgstr ""
 
 #. find an equivalent rhyme in your language where the first letter of each word corresponds to the first letter of the planet in proper sequence
 #: activities/solar_system/SolarSystem.qml:353
-#, fuzzy
-#| msgctxt "SolarSystem|"
-#| msgid ""
-#| "3. Always remember this rhyme to learn the position of planets, examine "
-#| "the first letter in each word - <b>M</b>y <b>V</b>ery <b>E</b>xcellent "
-#| "<b>M</b>other <b>J</b>ust <b>S</b>erved <b>U</b>s <b>N</b>oodles."
-#| "<br><font color=\"#3bb0de\">%1</font>"
 msgctxt "SolarSystem|"
 msgid ""
 "3. Always remember this rhyme to learn the position of planets, examine the "
 "first letter in each word - <b>M</b>y <b>V</b>ery <b>E</b>xcellent <b>M</"
 "b>other <b>J</b>ust <b>S</b>erved <b>U</b>s <b>N</b>oodles.<br>"
 msgstr ""
-"3. Gezegenlerin konumunu öğrenmek için her zaman bu kafiyeyi hatırla, her "
-"bir kelimenin ilk harfini incele- <b>B</b>enim <b>Ç</b>ok <b>Ş</b>ahane "
-"<b>A</b>nnem<b>Ş</b>imdi <b>B</b>ize<b>N</b>oodle<b>S</b>ervis etti."
-"<br><font color=\"#3bb0de\">%1</font>"
+"3. Gezegenlerin konumunu öğrenmek için bu uyağı her zaman anımsa, her bir "
+"sözcükteki ilk harfe dikkat et - <b>M</b>elis <b>v</b>e <b>E</b>mre <b>M</"
+"b>elis'in <b>j</b>etonlarını <b>s</b>allayıp <b>u</b>çurdu; <b>n</b>eden?."
+"<br>"
 
 #: activities/solar_system/SolarSystem.qml:355
 msgctxt "SolarSystem|"
@@ -25824,17 +25812,18 @@ msgid ""
 "    1 parallelogram (sides of 1 and square root of 2)\n"
 "    "
 msgstr ""
-"Vikipedi, özgür ansiklopedi. Tangram (Çince: kelimenin tam anlamıyla 'yedi "
-"kurnazlık tahtası') bir Çin bulmacasıdır. Tangramın genellikle eski olduğu "
-"söylense de, varlığı ancak 1800'lü yıllara kadar kanıtlanmıştır. Bir kare "
-"oluşturmak için birbirine uyan ve tans adı verilen 7 parçadan oluşur; Kare "
-"tarafı 1 birim olarak kullanan 7 parça şunları içerir:\n"
-"    Aşağıdakileri içeren 5 sağ ikizkenar üçgen:\n"
-"        - 2 küçük boy (1 bacak)\n"
-"        - 1 orta boy (2'lik karekök bacaklar)\n"
-"        - 2 büyük boy (2'li bacak)\n"
-"    1 kare (1'in kenarı) ve\n"
-"    1 paralelkenar (1'in kenarları ve 2'nin karekökü) "
+"Vikipedi'den. Tangram (Çince: Sözcüğün tam anlamıyla 'yedi kurnazlık "
+"tahtası') bir Çin bilmecesidir. Tangram'ın genellikle eski olduğu söylense "
+"de, varlığı yalnızca 1800 yılına kadar doğrulanmıştır. Tangram adı verilen "
+"ve bir kare oluşturacak şekilde birbirine uyan 7 parçadan oluşur; kare "
+"kenarı 1 birim olarak kullanırsak, 7 parça şunları içerir:\n"
+"     5 dik ikizkenar üçgen, aşağıdakileri içerir:\n"
+"         - 2 küçük boy (1 bacak)\n"
+"         - 1 orta boy (2'nin karekökünün bacakları)\n"
+"         - 2 büyük boy (2'li ayak)\n"
+"     1 kare (1'in kenarı) ve\n"
+"     1 paralelkenar (1'in kenarları ve 2'nin karekökü)\n"
+"    "
 
 #. Help manual
 #: activities/tangram/ActivityInfo.qml:31
@@ -26351,18 +26340,15 @@ msgstr ""
 
 #. Activity title
 #: activities/wordsgame/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Falling Words"
 msgctxt "ActivityInfo|"
 msgid "Falling words"
-msgstr "Düşen Kelimeler"
+msgstr "Düşen sözcükler"
 
 #. Help title
 #: activities/wordsgame/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Type the falling words before they reach the ground."
-msgstr "Düşen kelimeleri yere düşmeden yazmalısın."
+msgstr "Düşen sözcükleri yere ulaşmadan yaz."
 
 #. Help goal
 #: activities/wordsgame/ActivityInfo.qml:20
@@ -26380,7 +26366,7 @@ msgstr "Klavye kullanımı."
 #: activities/wordsgame/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid "Type the complete word as it falls, before it reaches the ground."
-msgstr "Düşen kelimelerin tamamını yere değmeden önce yaz."
+msgstr "Sözcüğün tamamını yere düşmeden önce yazın."
 
 #: core/ChangeLog.qml:30
 msgctxt "ChangeLog|"
@@ -26598,8 +26584,8 @@ msgid ""
 "Loading/saving of creations (Baby Wordprocessor, Balance Box and Piano "
 "Composition)."
 msgstr ""
-"Kreasyonların yüklenmesi / kaydedilmesi (Bebek Kelime İşlemcisi, Denge "
-"Kutusu ve Piyano Kompozisyonu)."
+"Yapıtların yüklenmesi/kaydedilmesi (Bebek Sözcük İşlemcisi, Denge Kutusu ve "
+"Piyano Kompozisyonu)."
 
 #: core/ChangeLog.qml:102
 msgctxt "ChangeLog|"
@@ -27212,7 +27198,7 @@ msgstr "Dilin için sesler"
 #: core/main.qml:234
 msgctxt "main|"
 msgid "Full word image set"
-msgstr "Tam kelime resim seti"
+msgstr "Tam sözcük görsel kümesi"
 
 #: core/main.qml:235
 msgctxt "main|"
@@ -27295,167 +27281,3 @@ msgstr "Atla"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Başla"
-
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Select the butterfly of the correct color."
-#~ msgctxt "Data|"
-#~ msgid "Select one-third of the rectangle."
-#~ msgstr "Doğru renkteki kelebeği seç."
-
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Select the butterfly of the correct color."
-#~ msgctxt "Data|"
-#~ msgid "Select two-thirds of the rectangle."
-#~ msgstr "Doğru renkteki kelebeği seç."
-
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Select the butterfly of the correct color."
-#~ msgctxt "Data|"
-#~ msgid "Select one-quarter of the rectangle."
-#~ msgstr "Doğru renkteki kelebeği seç."
-
-#, fuzzy
-#~| msgctxt "calendar_dataset|"
-#~| msgid "Select the fifth Thursday of the given month"
-#~ msgctxt "Data|"
-#~ msgid "Select two-fifths of the rectangle."
-#~ msgstr "Ayın beşinci Perşembesini seç"
-
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Select the butterfly of the correct color."
-#~ msgctxt "Data|"
-#~ msgid "Select three-fifths of the rectangle."
-#~ msgstr "Doğru renkteki kelebeği seç."
-
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Decimal number system."
-#~ msgctxt "Data|"
-#~ msgid "Decimal numbers with a rectangle."
-#~ msgstr "Ondalık sayı sistemi."
-
-#, fuzzy
-#~| msgctxt "ActivityConfig|"
-#~| msgid "Select your locale"
-#~ msgctxt "Data|"
-#~ msgid "Select 0.5 rectangle."
-#~ msgstr "Yerel ayarını seç"
-
-#, fuzzy
-#~| msgctxt "ActivityConfig|"
-#~| msgid "Select your locale"
-#~ msgctxt "Data|"
-#~ msgid "Select 0.4 rectangle."
-#~ msgstr "Yerel ayarını seç"
-
-#, fuzzy
-#~| msgctxt "ActivityConfig|"
-#~| msgid "Select your locale"
-#~ msgctxt "Data|"
-#~ msgid "Select 0.8 rectangle."
-#~ msgstr "Yerel ayarını seç"
-
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Nine men's morris (with a friend)"
-#~ msgctxt "Data|"
-#~ msgid "Find denominator (with a rectangle)."
-#~ msgstr "Dokuz taş (bir arkadaşınla)"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Learn digits"
-#~ msgstr "Rakamları öğren"
-
-#~ msgctxt "board1|"
-#~ msgid "The horse goes 'neigh! neigh!'. Horses usually sleep standing up."
-#~ msgstr "At kişniyor! 'neiiihh! neiiihh!'. Atlar genellikle ayakta uyurlar."
-
-#~ msgctxt "board1|"
-#~ msgid "You can ride on the back of this animal!"
-#~ msgstr "Bu hayvanın sırtına binebilirsin!"
-
-#~ msgctxt "board1|"
-#~ msgid ""
-#~ "The chicken goes 'luck, cackle, cluck'. Chickens have over 200 different "
-#~ "noises they can use to communicate."
-#~ msgstr ""
-#~ "Tavuklar 'gıt gıt gıdıklarlar!'. Tavukların iletişim kurmak için "
-#~ "kullanabilecekleri 200'den fazla farklı ses vardır."
-
-#~ msgctxt "board1|"
-#~ msgid ""
-#~ "The cow goes 'moo! moo!'. Cows are herbivorous mammals. They graze all "
-#~ "day in the meadow."
-#~ msgstr ""
-#~ "İnek 'mööler!'. İnekler otçul memelilerdir. Bütün gün çayırda otlanırlar."
-
-#~ msgctxt "board1|"
-#~ msgid "You can drink the milk this animal produces."
-#~ msgstr "Bu hayvanın ürettiği sütü içebilirsin."
-
-#~ msgctxt "board1|"
-#~ msgid ""
-#~ "The cat goes 'meow, meow'. Cats usually hate water because their fur "
-#~ "doesn't stay warm when it is wet."
-#~ msgstr ""
-#~ "Kedi 'miyavlar'. Kediler genellikle sudan nefret eder çünkü ıslak "
-#~ "olduklarında kürkleri ısınmaz."
-
-#~ msgctxt "board1|"
-#~ msgid "This pet likes chasing mice."
-#~ msgstr "Bu hayvan, fareleri kovalamayı sever."
-
-#~ msgctxt "board1|"
-#~ msgid "The pig goes 'oink, oink'. Pigs are the 4th most intelligent animal."
-#~ msgstr "Domuz 'oink, oink' sesi çıkarır. Domuzlar 4. en zeki hayvanlardır."
-
-#~ msgctxt "board1|"
-#~ msgid "This animal likes to lie in the mud."
-#~ msgstr "Bu hayvan, çamura uzanmayı sever."
-
-#~ msgctxt "board1|"
-#~ msgid ""
-#~ "The duck goes 'quack, quack'. Ducks have special features like webbed "
-#~ "feet and produce an oil to make their feathers 'waterproof'."
-#~ msgstr ""
-#~ "Ördek 'vak vaklar!'. Ördekler perdeli ayaklar gibi özelliklere "
-#~ "sahiptirler ve tüylerinin su geçirmemesi için özel bir yağ üretirler."
-
-#~ msgctxt "board1|"
-#~ msgid ""
-#~ "The dog goes 'bark! bark!'. Dogs are great human companions and usually "
-#~ "enjoy love and attention."
-#~ msgstr ""
-#~ "Köpek 'Hav havlar!'. Köpekler çok iyi birer insan yoldaşlarıdır, "
-#~ "genellikle sevgi ve ilgiden hoşlanırlar."
-
-#~ msgctxt "board1|"
-#~ msgid "Rooster"
-#~ msgstr "Horoz"
-
-#~ msgctxt "board1|"
-#~ msgid ""
-#~ "The rooster goes 'coc-a-doodle-doo!'. Roosters have been on farms for "
-#~ "about 5,000 years. Every morning it wakes the farm up with its noises."
-#~ msgstr ""
-#~ "Horoz, 'üüürü üüü' sesi çıkarır. Horozlar yaklaşık 5,000 yıldır "
-#~ "çiftliklerdedirler. Her sabah sesleriyle tüm çiftliği uyandırırlar."
-
-#~ msgctxt "board1|"
-#~ msgid "This animal wakes the farm up in the morning."
-#~ msgstr "Bu hayvan, sabahları tüm çiftliği uyandırır."
-
-#~ msgctxt "board1|"
-#~ msgid ""
-#~ "The sheep is a mammal that bears a fleece of wool. It is a grazing "
-#~ "herbivore, bred for its wool, its meat, and its milk. The fleece can be "
-#~ "removed and used to produce articles of clothing and blankets, among "
-#~ "other things."
-#~ msgstr ""
-#~ "Koyun, yün postu olan bir memelidir. Ot yerler, eti ve sütü için "
-#~ "yetiştirilen, ot ile beslenen bir otçuldur. Postu, başka şeylerin yanı "
-#~ "sıra, giyim eşyası ve battaniye ürünlerini üretmek için kullanılabilir."

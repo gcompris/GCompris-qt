@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2023-01-08 00:30+0100\n"
+"PO-Revision-Date: 2023-01-21 04:59+0100\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
@@ -25275,17 +25275,17 @@ msgstr "Teclea la palabra completa mientras cae, antes de que llegue al suelo."
 #: core/ChangeLog.qml:30
 msgctxt "ChangeLog|"
 msgid "Fix issue in comparator activity"
-msgstr ""
+msgstr "Se ha corregido un problema en la actividad del comparador."
 
 #: core/ChangeLog.qml:34
 msgctxt "ChangeLog|"
 msgid "Map of Spain added for geography activity"
-msgstr "Mapa de España añadido para la actividad de geografía"
+msgstr "Mapa de España añadido para la actividad de geografía."
 
 #: core/ChangeLog.qml:35
 msgctxt "ChangeLog|"
 msgid "Voices added for Ukrainian"
-msgstr "Voces añadidas para el ucraniano"
+msgstr "Voces añadidas para el ucraniano."
 
 #: core/ChangeLog.qml:36
 msgctxt "ChangeLog|"
@@ -25294,7 +25294,7 @@ msgid ""
 "one"
 msgstr ""
 "Nueva opción de la línea de órdenes para listar todas las actividades y "
-"empezar en la especificada"
+"empezar en la especificada."
 
 #: core/ChangeLog.qml:37 core/ChangeLog.qml:72 core/ChangeLog.qml:75
 #: core/ChangeLog.qml:81
@@ -25320,12 +25320,12 @@ msgid ""
 "images set"
 msgstr ""
 "Reducir el tamaño de los paquetes para todas las plataformas y del conjunto "
-"de imágenes de palabras externas"
+"de imágenes de palabras externas."
 
 #: core/ChangeLog.qml:44
 msgctxt "ChangeLog|"
 msgid "Improve images quality in several activities"
-msgstr "Mejora de la calidad de las imágenes en varias actividades"
+msgstr "Mejora de la calidad de las imágenes en varias actividades."
 
 #: core/ChangeLog.qml:45
 msgctxt "ChangeLog|"
@@ -25339,14 +25339,14 @@ msgctxt "ChangeLog|"
 msgid "Fix dead keys ignored on Linux for typing activities"
 msgstr ""
 "Corrección para las teclas muertas ignoradas en Linux para las actividades "
-"de tecleo"
+"de tecleo."
 
 #: core/ChangeLog.qml:47
 msgctxt "ChangeLog|"
 msgid "Fix level reset when changing level manually in Logical associations"
 msgstr ""
 "Corrección para el reinicio de nivel al cambiar de nivel manualmente en las "
-"asociaciones lógicas"
+"asociaciones lógicas."
 
 #: core/ChangeLog.qml:51
 msgctxt "ChangeLog|"
@@ -25354,7 +25354,7 @@ msgid ""
 "Fix Alphabet sequence, Even and odd numbers and Numbers in order activities"
 msgstr ""
 "Corrección para las actividades «Secuencia del alfabeto», «Números pares e "
-"impares» y «Números en orden»"
+"impares» y «Números en orden»."
 
 #: core/ChangeLog.qml:55 core/ChangeLog.qml:63
 msgctxt "ChangeLog|"
@@ -25369,7 +25369,7 @@ msgstr "Se ha actualizado la traducción para el ruso."
 #: core/ChangeLog.qml:58
 msgctxt "ChangeLog|"
 msgid "New voices for Norwegian Nynorsk"
-msgstr "Nuevas voces para el noruego Nynorsk"
+msgstr "Nuevas voces para el noruego Nynorsk."
 
 #: core/ChangeLog.qml:62
 msgctxt "ChangeLog|"
@@ -25385,7 +25385,7 @@ msgstr "Se han añadido traducciones para el azerbaiyano."
 msgctxt "ChangeLog|"
 msgid "New maps and update of the maps for geography activities"
 msgstr ""
-"Nuevos mapas y actualización de los mapas de las actividades de geografía"
+"Nuevos mapas y actualización de los mapas de las actividades de geografía."
 
 #: core/ChangeLog.qml:69
 msgctxt "ChangeLog|"
@@ -25394,7 +25394,7 @@ msgid ""
 "tutorial images translated"
 msgstr ""
 "Nuevo conjunto de datos que contiene operaciones de bucles para el laberinto "
-"de programación, y hacer que se puedan traducir las imágenes del tutorial"
+"de programación, y hacer que se puedan traducir las imágenes del tutorial."
 
 #: core/ChangeLog.qml:70
 msgctxt "ChangeLog|"
@@ -25403,18 +25403,18 @@ msgid ""
 "activity"
 msgstr ""
 "Adición de un nivel para enseñar el cierre de la fuente de voltaje en la "
-"actividad de electricidad analógica"
+"actividad de electricidad analógica."
 
 #: core/ChangeLog.qml:80
 msgctxt "ChangeLog|"
 msgid "New Activity Settings menu, with dataset selection"
 msgstr ""
-"Menú de preferencias de nueva actividad, con selección de conjunto de datos"
+"Menú de preferencias de nueva actividad, con selección de conjunto de datos."
 
 #: core/ChangeLog.qml:86
 msgctxt "ChangeLog|"
 msgid "New sub-categories to organize activities"
-msgstr "Nuevas subcategorías para organizar las actividades"
+msgstr "Nuevas subcategorías para organizar las actividades."
 
 #: core/ChangeLog.qml:87
 msgctxt "ChangeLog|"
@@ -25424,7 +25424,7 @@ msgstr "Se han añadido traducciones para el macedonio."
 #: core/ChangeLog.qml:88
 msgctxt "ChangeLog|"
 msgid "New activities Programming Maze and Baby Tangram"
-msgstr "Nuevas actividades «Laberinto de programación» y «Tangram para niños»"
+msgstr "Nuevas actividades «Laberinto de programación» y «Tangram para niños»."
 
 #: core/ChangeLog.qml:89
 msgctxt "ChangeLog|"

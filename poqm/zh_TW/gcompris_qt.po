@@ -1,10 +1,10 @@
-# Franklin Weng <franklin@goodhorse.idv.tw>, 2015, 2016, 2020, 2021, 2022.
+# Franklin Weng <franklin@goodhorse.idv.tw>, 2015, 2016, 2020, 2021, 2022, 2023.
 # pan93412 <pan93412@gmail.com>, 2019.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2022-12-27 14:44+0800\n"
+"PO-Revision-Date: 2023-01-21 22:30+0800\n"
 "Last-Translator: Franklin Weng <franklin@goodhorse.idv.tw>\n"
 "Language-Team: Chinese <zh-l10n@lists.linux.org.tw>\n"
 "Language: zh_TW\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Language: zh_TW\n"
 "X-Qt-Contexts: true\n"
-"X-Generator: Lokalize 22.12.0\n"
+"X-Generator: Lokalize 22.12.1\n"
 
 #. Activity title
 #: activities/advanced_colors/ActivityInfo.qml:15
@@ -23976,7 +23976,7 @@ msgstr "在單字掉到地面以前輸入完整的單字。"
 #: core/ChangeLog.qml:30
 msgctxt "ChangeLog|"
 msgid "Fix issue in comparator activity"
-msgstr ""
+msgstr "修正「比較器」活動中的錯誤"
 
 #: core/ChangeLog.qml:34
 msgctxt "ChangeLog|"
