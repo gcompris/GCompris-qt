@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: gcompris_voices\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-12-13 00:48+0000\n"
-"PO-Revision-Date: 2023-01-21 22:51+0300\n"
+"PO-Revision-Date: 2023-01-22 20:53+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -163,8 +163,8 @@ msgid ""
 "Select the number of balls you wish to place in the holes and then click on "
 "the OK button. The winner is the one who hasn't put a ball in the red hole."
 msgstr ""
-"Deliklere yerleştirmek istediğin top sayısını seç ve ardından Tamam "
-"düğmesine tıkla. Kazanan, kırmızı deliğe bir top koymayan kişidir."
+"Deliklere yerleştirmek istediğin top sayısını seç ve ardından OK düğmesine "
+"tıkla. Kazanan, kırmızı deliğe bir top koymayan kişidir."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "binary_bulb"
 #: activities/binary_bulb/ActivityInfo.qml:18
@@ -174,7 +174,7 @@ msgid ""
 "When you have achieved it, press OK"
 msgstr ""
 "Verilen ondalık sayının ikilisini temsil etmek için doğru ampulleri aç. Bunu "
-"başardığında Tamam'a bas"
+"başardığında OK'ye bas"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "braille_alphabets"
 #: activities/braille_alphabets/ActivityInfo.qml:18
@@ -805,7 +805,7 @@ msgstr "Hesaplamayı yanıtıyla eşleştirmek için iki kartı ters çevir."
 #: activities/memory-sound/ActivityInfo.qml:18
 #, kde-format
 msgid "Click on an audio card and find its double."
-msgstr "Bir ses kartına tıklayın ve onun çiftini bulun."
+msgstr "Bir ses kartına tıkla ve onun çiftini bul."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-tux"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "memory"
@@ -813,13 +813,13 @@ msgstr "Bir ses kartına tıklayın ve onun çiftini bulun."
 #: activities/memory/ActivityInfo.qml:18
 #, kde-format
 msgid "Click on a card and find its double."
-msgstr "Bir kartın üzerine tıkla ve çiftini bul."
+msgstr "Bir kartın üzerine tıkla ve onun çiftini bul."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-wordnumber"
 #: activities/memory-wordnumber/ActivityInfo.qml:18
 #, kde-format
 msgid "Match the numeric with the word."
-msgstr "Sayıyı kelime ile eşleştirin."
+msgstr "Sayıyı sözcükle eşleştir."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "mining"
 #: activities/mining/ActivityInfo.qml:18
@@ -829,9 +829,9 @@ msgid ""
 "cursor next to this sparkle and use the mousewheel or the zoom gesture to "
 "zoom in."
 msgstr ""
-"Rockwall'a baktığınızda, bir yerde bir ışıltı görebilirsiniz. Fare imlecini "
-"bu ışıltının yanına taşıyın ve yakınlaştırmak için fare tekerini veya "
-"yakınlaştırma hareketini kullanın."
+"Taş duvara baktığında bir yerde bir ışıltı görebilirsin. Fare imlecini bu "
+"ışıltının yanına getir ve yakınlaştırmak için fare tekerleğini veya "
+"yakınlaştırma hareketini kullan."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "missing-letter"
 #: activities/missing-letter/ActivityInfo.qml:19
@@ -840,14 +840,14 @@ msgid ""
 "Find the missing letter and complete the word by clicking on one of the "
 "letters proposed on the side."
 msgstr ""
-"Eksik harfi bulun ve yan tarafta önerilen harflerden birine tıklayarak "
-"sözcüğü tamamlayın."
+"Eksik harfi bul ve yanda önerilen harflerden birine tıklayarak sözcüğü "
+"tamamla."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "money"
 #: activities/money/ActivityInfo.qml:18
 #, kde-format
 msgid "Click or tap on the money to pay."
-msgstr "Parayı ödemek için tıklayın veya dokunun."
+msgstr "Parayı ödemek için tıkla veya dokun."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "money_back_cents"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "money_back"
@@ -855,26 +855,25 @@ msgstr "Parayı ödemek için tıklayın veya dokunun."
 #: activities/money_back_cents/ActivityInfo.qml:18
 #, kde-format
 msgid "Click on the money at the bottom of the screen to give Tux his change."
-msgstr "Tux'a para üstünü vermek için ekranın altındaki paraya tıklayın."
+msgstr "Tux'a para üstünü vermek için ekranın altındaki paraya tıkla."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "money_cents"
 #: activities/money_cents/ActivityInfo.qml:18
 #, kde-format
 msgid "Click on the money to pay."
-msgstr "Ödeme yapmak için paraya tıklayın."
+msgstr "Ödeme yapmak için paraya tıkla."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "morse_code"
 #: activities/morse_code/ActivityInfo.qml:21
-#, fuzzy, kde-format
-#| msgid "Learn and practice roman to arabic numerals conversion"
+#, kde-format
 msgid "Learn and practice the International Morse code"
-msgstr "Roma rakamından, arap rakamlarına dönümü öğrenin ve uygulayın"
+msgstr "Uluslararası Mors Kodunu öğren ve çalış"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "mosaic"
 #: activities/mosaic/ActivityInfo.qml:18
 #, kde-format
 msgid "Put each item at the same place as in the given example."
-msgstr "Verilen örnekte olduğun gibi, tüm ögeleri aynı yere koyun."
+msgstr "Her ögeyi verilen örnekteki gibi aynı yere koy."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "nine_men_morris"
 #: activities/nine_men_morris/ActivityInfo.qml:18
@@ -883,8 +882,8 @@ msgid ""
 "Click on the dot where you wish to place your piece and try to take all "
 "Tux's pieces."
 msgstr ""
-"Parçanızı yerleştirmek istediğiniz noktaya tıklayın ve Tux'un tüm "
-"parçalarını almaya çalışın."
+"Parcanı yerleştirmek istediğin noktaya tıkla ve Tux'un tüm taşlarını almaya "
+"çalış."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "nine_men_morris_2players"
 #: activities/nine_men_morris_2players/ActivityInfo.qml:18
@@ -893,8 +892,8 @@ msgid ""
 "Click on the dot where you wish to place your piece and try to take all your "
 "friend's pieces."
 msgstr ""
-"Parçayı yerleştirmek istediğiniz noktaya tıklayın ve tüm arkadaşınızın "
-"parçalarını almaya çalışın."
+"Taşını yerleştirmek istediğin noktaya tıkla ve arkadaşının tüm taşlarını "
+"almaya çalış."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "note_names"
 #: activities/note_names/ActivityInfo.qml:21
@@ -906,7 +905,7 @@ msgstr "Notayı tanımla ve doğru piyano tuşuna bas"
 #: activities/number_sequence/ActivityInfo.qml:18
 #, kde-format
 msgid "Draw the picture by touching the numbers in ascending order."
-msgstr "Rakamlara artan sırada dokunarak resmi çiz."
+msgstr "Sayılara artan sırayla dokunarak resmi çiz."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "numbers-odd-even"
 #: activities/numbers-odd-even/ActivityInfo.qml:18
@@ -915,8 +914,8 @@ msgid ""
 "Move the helicopter to catch the clouds having even or odd numbers, in the "
 "shown order."
 msgstr ""
-"Helikopteri gösterilen sırada tek veya çift sayılı bulutları yakalamak için "
-"hareket ettir."
+"Gösterilen sırada çift veya tek sayılara sahip bulutları yakalamak için "
+"helikopteri hareket ettir."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "ordering_alphabets"
 #: activities/ordering_alphabets/ActivityInfo.qml:24
@@ -928,7 +927,7 @@ msgstr "Harfleri doğru sırada düzenle."
 #: activities/ordering_chronology/ActivityInfo.qml:24
 #, kde-format
 msgid "Arrange the given events in their chronological order."
-msgstr "Verilen olayları kronolojik sıraya göre düzenle."
+msgstr "Verilen olayları zaman sırasına göre düzenle."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "ordering_numbers"
 #: activities/ordering_numbers/ActivityInfo.qml:23
@@ -940,7 +939,7 @@ msgstr "Sayıları doğru sırada düzenle."
 #: activities/ordering_sentences/ActivityInfo.qml:23
 #, kde-format
 msgid "Arrange the given words to form a meaningful sentence."
-msgstr "Verilen kelimeleri anlamlı bir cümle oluşturacak şekilde düzenle."
+msgstr "Verilen sözcükleri anlamlı bir cümle oluşturacak biçimde düzenle."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "oware_2players"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "oware"
@@ -954,7 +953,7 @@ msgstr "Oyunu kazanmak için en az 25 tohum yakala"
 #: activities/paintings/ActivityInfo.qml:23
 #, kde-format
 msgid "Catch and drop each piece on the points."
-msgstr "Noktalardaki her bir parçayı yakalayın ve bırakın."
+msgstr "Her parçayı yakala ve noktalara bırak."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "path_decoding"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "path_decoding_relative"
@@ -965,7 +964,7 @@ msgid ""
 "Click on the grid squares following the given directions to help Tux reach "
 "the target."
 msgstr ""
-"Tux'un hedefe ulaşmasına yardımcı olmak için verilen talimatları izleyerek "
+"Tux'un hedefe ulaşmasına yardımcı olmak için verilen yönergeleri izleyerek "
 "ızgara karelerine tıkla."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "path_encoding"
@@ -987,7 +986,7 @@ msgstr "Gol atmak için hedefe çift tıkla veya çift dokun."
 #: activities/photo_hunter/ActivityInfo.qml:18
 #, kde-format
 msgid "look at the two pictures carefully and click where you see a difference"
-msgstr "İki resime dikkatlice bakın ve fark gördüğünüz yere tıklayın"
+msgstr "İki resme dikkatlice bak ve fark gördüğün yere tıkla"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "piano_composition"
 #: activities/piano_composition/ActivityInfo.qml:19
@@ -996,8 +995,8 @@ msgid ""
 "Learn to compose piano music using the octaves and the tools presented above "
 "the staff."
 msgstr ""
-"Oktavları ve personelin üzerinde sunulan araçları kullanarak piyano müziği "
-"bestelemeyi öğren."
+"Oktavları ve nota çizgisinin üzerinde sunulan araçları kullanarak piyano "
+"müziği bestelemeyi öğren."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "planegame"
 #: activities/planegame/ActivityInfo.qml:18
@@ -1006,14 +1005,14 @@ msgid ""
 "Move the helicopter with the arrow keys and catch the numbers in the clouds, "
 "in ascending order."
 msgstr ""
-"Yön tuşları ile helikopteri hareket ettir ve artan sırada bulutlardaki "
-"sayıları yakala."
+"Yön düğmeleri ile helikopteri hareket ettir ve bulutlardaki sayıları artan "
+"sırada yakala."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "play_piano"
 #: activities/play_piano/ActivityInfo.qml:22
 #, kde-format
 msgid "Click on the keyboard keys that match the notes that you see and hear"
-msgstr "Gördüğün ve duyduğun notalarla eşleşen klavye tuşlarına tıkla"
+msgstr "Gördüğün ve duyduğun notalarla eşleşen klavye düğmelerine tıkla"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "play_rhythm"
 #: activities/play_rhythm/ActivityInfo.qml:22
@@ -1025,14 +1024,14 @@ msgstr "Ritmi yeniden oluşturmak için davula tıkla"
 #: activities/positions/ActivityInfo.qml:18
 #, kde-format
 msgid "Find the correct position"
-msgstr "Doğru pozisyonu bul"
+msgstr "Doğru konumu bul"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "programmingMaze"
 #: activities/programmingMaze/ActivityInfo.qml:19
 #, kde-format
 msgid ""
 "Arrange the instructions and traverse the correct path to reach the fish."
-msgstr "Talimatları düzenle ve balığa ulaşmak için doğru yolu geç."
+msgstr "Yönergeleri düzenle ve balığa ulaşmak için doğru yolu belirle."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "railroad"
 #: activities/railroad/ActivityInfo.qml:20
@@ -1047,14 +1046,14 @@ msgstr "Treni gözlemle ve ardından benzer bir tren kurmak için ögelere tıkl
 #, kde-format
 msgid "Read a list of words and say if a given word is in it."
 msgstr ""
-"Kelimelerin listesini okuyun ve içinde bulunan bir kelimenin olup olmadığını "
-"söyleyin."
+"Bir sözcük listesi oku ve verilen bir sözcüğün içinde olup olmadığını söyle."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "redraw"
 #: activities/redraw/ActivityInfo.qml:18
 #, kde-format
 msgid "Use the drawing tools to build an identical pattern on the right."
-msgstr "Sağda aynı deseni oluşturmak için çizim araçlarını kullan."
+msgstr ""
+"Sağdaki desen ile özdeş bir desen oluşturmak için çizim araçlarını kullan."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "redraw_symmetrical"
 #: activities/redraw_symmetrical/ActivityInfo.qml:18
@@ -1069,7 +1068,7 @@ msgstr ""
 #: activities/renewable_energy/ActivityInfo.qml:18
 #, kde-format
 msgid "Click on the different stages that go to make up the power supply."
-msgstr "Güç kaynağını oluşturan farklı aşamalara tıklayın."
+msgstr "Güç kaynağını oluşturan farklı aşamalara tıkla."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "reversecount"
 #: activities/reversecount/ActivityInfo.qml:18
@@ -1078,15 +1077,14 @@ msgid ""
 "Click on the domino and validate your choice with the OK button to indicate "
 "the number of ice blocks Tux will have to follow to eat a fish."
 msgstr ""
-"Dominoya tıklayın ve Tux'un bir balık yemek için takip etmesi gereken buz "
-"bloklarının sayısını belirtmek için TAMAM düğmesine basarak seçiminizi "
-"doğrulayın."
+"Domino taşına tıkla ve Tux'un balık yemek için izlemesi gereken buz "
+"bloklarının sayısını belirtmek için OK düğmesiyle seçimini onayla."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "roman_numerals"
 #: activities/roman_numerals/ActivityInfo.qml:18
 #, kde-format
 msgid "Learn and practice roman to arabic numerals conversion"
-msgstr "Roma rakamından, arap rakamlarına dönümü öğrenin ve uygulayın"
+msgstr "Roma rakamlarından Arap rakamlarına dönüştürmeyi öğren ve uygula"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "scalesboard"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "scalesboard_weight_avoirdupois"
@@ -1096,7 +1094,7 @@ msgstr "Roma rakamından, arap rakamlarına dönümü öğrenin ve uygulayın"
 #: activities/scalesboard_weight_avoirdupois/ActivityInfo.qml:18
 #, kde-format
 msgid "Drag the weights up to balance the scales."
-msgstr "Terazileri dengelemek için ağırlıkları yukarı doğru sürükleyin."
+msgstr "Terazileri dengelemek için ağırlıkları yukarı sürükle."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "share"
 #: activities/share/ActivityInfo.qml:18
@@ -1105,15 +1103,15 @@ msgid ""
 "Share the candies equally among the specified number of children and notice "
 "that there may be a rest left"
 msgstr ""
-"Şekerleri belirtilen sayıda çocuk arasında eşit paylaştırın ve bir kalan "
-"olabileceğini unutmayın"
+"Şekerleri belirtilen sayıda çocuk arasında eşit paylaştır ve kalan şekerler "
+"olabileceğini unutma"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "simplepaint"
 #: activities/simplepaint/ActivityInfo.qml:18
 #, kde-format
 msgid ""
 "Select a color and paint the rectangles as you like to create a drawing."
-msgstr "Bir renk seçin ve dikdörtgeni istediğiniz gibi boyayın."
+msgstr "Bir renk seç ve dikdörtgenleri istediğin gibi boya."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "smallnumbers"
 #: activities/smallnumbers/ActivityInfo.qml:18
@@ -1121,21 +1119,21 @@ msgstr "Bir renk seçin ve dikdörtgeni istediğiniz gibi boyayın."
 msgid ""
 "Count the number on the dice and type it on your keyboard before it reaches "
 "the ground."
-msgstr "Zarların üzerindeki sayıyı say ve yere ulaşmadan klavyene yaz."
+msgstr "Zarların üzerindeki sayıyı say ve yere ulaşmadan önce klavyende yaz."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "smallnumbers2"
 #: activities/smallnumbers2/ActivityInfo.qml:18
 #, kde-format
 msgid ""
 "Count the numbers on the dominoes then type the result on your keyboard."
-msgstr "Domino taşlarının üzerindeki sayıları say ve sonucu klavyenden yaz."
+msgstr "Domino taşlarının üzerindeki sayıları say ve sonucu klavyende yaz."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "solar_system"
 #: activities/solar_system/ActivityInfo.qml:21
 #, kde-format
 msgid ""
 "Answer the questions presented and get a 100% correctness among the options."
-msgstr "Sunulan soruları yanıtla ve seçeneklerin hepsini doğru yap"
+msgstr "Verilen soruların hepsini doğru olarak yanıtla."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "submarine"
 #: activities/submarine/ActivityInfo.qml:18
@@ -1143,8 +1141,7 @@ msgstr "Sunulan soruları yanıtla ve seçeneklerin hepsini doğru yap"
 msgid ""
 "Drive the submarine to the right end of the screen without colliding with "
 "any objects"
-msgstr ""
-"Denizaltını herhangi bir nesneyle çarpışmadan ekranın sağ ucuna doğru itin"
+msgstr "Denizaltıyı herhangi bir nesneye çarpmadan ekranın sağ ucuna doğru sür"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "sudoku"
 #: activities/sudoku/ActivityInfo.qml:18
@@ -1153,8 +1150,8 @@ msgid ""
 "Select a number or a symbol and click its target area. Each symbol must "
 "appear only once in a row, in a column and in a subregion if any."
 msgstr ""
-"Bir sayı veya sembol seçin ve hedef alanına tıklayın. Her simge yalnızca bir "
-"kere, bir sütunda, varsa bir alt bölgede görünmelidir."
+"Bir sayı veya sembol seç ve onun hedef alanına tıkla. Her sembol; bir "
+"satırda, bir sütunda ve varsa bir alt bölgede yalnızca bir kez görünmelidir."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "superbrain"
 #: activities/superbrain/ActivityInfo.qml:18
@@ -1167,7 +1164,7 @@ msgid ""
 msgstr ""
 "Doğru renk kombinasyonunu bul. Siyah kare çerçeveli bir nokta, doğru rengi "
 "doğru konumda bulduğun anlamına gelirken beyaz kare çerçeveli bir nokta, "
-"bunun doğru renk olduğu, ancak yanlış konumda olduğu anlamına gelir."
+"bunun doğru renk olduğu; ancak yanlış konumda olduğu anlamına gelir."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "tangram"
 #: activities/tangram/ActivityInfo.qml:18
@@ -1176,14 +1173,14 @@ msgid ""
 "Click on each object to obtain the same figure. You can change their "
 "orientation by clicking on the arrows."
 msgstr ""
-"Aynı şekli elde etmek için her nesneye tıklayın. Yönlerini, oklara "
-"tıklayarak değiştirebilirsiniz."
+"Aynı şekli elde etmek için her nesneye tıkla. Yönlerini, oklara tıklayarak "
+"değiştirebilirsin."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "target"
 #: activities/target/ActivityInfo.qml:18
 #, kde-format
 msgid "Click on the target to launch darts, then count your final score!"
-msgstr "Dart fırlatmak için hedefe tıkla, ardından son puanını say!"
+msgstr "Dartları atmak için hedefe tıkla, ardından bitiş puanını say!"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "tens_complement_find"
 #: activities/tens_complement_find/ActivityInfo.qml:17
@@ -1192,6 +1189,8 @@ msgid ""
 "Create pairs of numbers equal to ten. Select a number in the list, then "
 "select an empty spot of an operation to move the selected number there."
 msgstr ""
+"On sayısına eşit sayı çiftleri oluştur. Listeden bir numara seç, ardından "
+"seçilen numarayı oraya taşımak için bir işlemin boş bir noktasını seç."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "tens_complement_swap"
 #: activities/tens_complement_swap/ActivityInfo.qml:17
@@ -1200,6 +1199,8 @@ msgid ""
 "Create pairs of numbers equal to ten. Select a number, then select another "
 "number of the same operation to swap their position."
 msgstr ""
+"On sayısına eşit sayı çiftleri oluştur. Bir numara seç, ardından konumlarını "
+"değiştirmek için aynı işlemin başka bir numarasını seç."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "tens_complement_use"
 #: activities/tens_complement_use/ActivityInfo.qml:17
@@ -1209,6 +1210,9 @@ msgid ""
 "number in the list, then select an empty spot of an operation to move the "
 "selected number there."
 msgstr ""
+"On sayısına eşit bir çift sayı içerecek şekilde işlemleri ayrıştır. Listeden "
+"bir numara seç, ardından seçilen numarayı oraya taşımak için bir işlemin boş "
+"bir yerini seç."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "tic_tac_toe_2players"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "tic_tac_toe"
@@ -1219,8 +1223,8 @@ msgid ""
 "Click on the square which you wish to mark and try to mark 3 consecutive "
 "squares before Tux."
 msgstr ""
-"İşaretlemek istediğiniz kareye tıklayın ve Tux'tan önce üç ardışık kareyi "
-"işaretlemeye çalışın."
+"İşaretlemek istediğiniz kareye tıkla ve Tux'tan önce 3 ardışık kareyi "
+"işaretlemeye çalış."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "traffic"
 #: activities/traffic/ActivityInfo.qml:18
@@ -1228,8 +1232,7 @@ msgstr ""
 msgid ""
 "Slide the cars to make a space so that the red car can go out of the box."
 msgstr ""
-"Kırmızı arabanın kutudan çıkabilmesi için arabaları kaydırarak boşluk "
-"yaratın."
+"Kırmızı arabanın kutudan çıkabilmesi için arabaları kaydırarak boşluk yarat."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "watercycle"
 #: activities/watercycle/ActivityInfo.qml:18
@@ -1238,14 +1241,14 @@ msgid ""
 "Click on the various active elements that make up the water supply. Then "
 "press the shower button for Tux."
 msgstr ""
-"Su kaynağını oluşturan çeşitli aktif elementlere tıklayın. Tux için duş "
-"düğmesine basın."
+"Su kaynağını oluşturan çeşitli etkin elementlere tıkla. Sonrasında, Tux'a "
+"bir duş aldır."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "wordsgame"
 #: activities/wordsgame/ActivityInfo.qml:18
 #, kde-format
 msgid "Type the words on your keyboard before they reach the ground."
-msgstr "Kelimeleri yerde bulmadan önce klavyeniz ile yazın."
+msgstr "Sözcükler yere ulaşmadan önce onları klavyende yaz."
 
 #~ msgid "play checkers against the computer"
 #~ msgstr "bilgisayara karşı dama oyna"
