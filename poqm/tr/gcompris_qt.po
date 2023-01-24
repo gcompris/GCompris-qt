@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2023-01-18 22:40+0300\n"
+"PO-Revision-Date: 2023-01-22 21:26+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -40,7 +40,7 @@ msgstr "Farklı renkleri tanımayı öğrenme."
 #: activities/positions/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid "Can read."
-msgstr "Okuyabiliyorum."
+msgstr "Okuyabilir."
 
 #. Help manual
 #: activities/advanced_colors/ActivityInfo.qml:24
@@ -189,7 +189,7 @@ msgstr "<b>Klavye kontrolleri:</b>"
 #: activities/solar_system/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid "Arrows: navigate"
-msgstr "Oklar: gezinme"
+msgstr "Oklar: Dolaş"
 
 #: activities/advanced_colors/ActivityInfo.qml:27
 #: activities/algorithm/ActivityInfo.qml:25
@@ -209,7 +209,7 @@ msgstr "Boşluk veya Enter : bir öğe seçin"
 #: activities/advanced_colors/advanced_colors.js:530
 msgctxt "advanced_colors|"
 msgid "Find the coral butterfly"
-msgstr "Mercan rengi kelebeğini bul"
+msgstr "Mercan rengi kelebeği bul"
 
 #. Color #7F1734
 #: activities/advanced_colors/advanced_colors.js:20
@@ -221,7 +221,7 @@ msgstr "Mercan rengi kelebeğini bul"
 #: activities/advanced_colors/advanced_colors.js:849
 msgctxt "advanced_colors|"
 msgid "Find the claret butterfly"
-msgstr "Bordo kelebeğini bul"
+msgstr "Bordo kelebeği bul"
 
 #. Color #000080
 #: activities/advanced_colors/advanced_colors.js:25
@@ -243,7 +243,7 @@ msgstr "Mısır rengi kelebeği bul"
 #: activities/advanced_colors/advanced_colors.js:72
 msgctxt "advanced_colors|"
 msgid "Find the cobalt butterfly"
-msgstr "Kobalt kelebeğini bul"
+msgstr "Kobalt kelebeği bul"
 
 #. Color #00FFFF
 #: activities/advanced_colors/advanced_colors.js:40
@@ -337,13 +337,13 @@ msgstr "Kireç rengi kelebeği bul"
 #: activities/advanced_colors/advanced_colors.js:134
 msgctxt "advanced_colors|"
 msgid "Find the turquoise butterfly"
-msgstr "Turkuaz kelebeğini bul"
+msgstr "Turkuaz kelebeği bul"
 
 #. Color #73B881
 #: activities/advanced_colors/advanced_colors.js:141
 msgctxt "advanced_colors|"
 msgid "Find the absinthe butterfly"
-msgstr "Limoni rengi kelebeğini bul"
+msgstr "Limoni rengi kelebeği bul"
 
 #. Color #C04000
 #: activities/advanced_colors/advanced_colors.js:146
@@ -370,7 +370,7 @@ msgstr "Kaymak taşı rengi kelebeği bul"
 #: activities/advanced_colors/advanced_colors.js:708
 msgctxt "advanced_colors|"
 msgid "Find the amber butterfly"
-msgstr "Kehribar rengi kelebeğini bul"
+msgstr "Kehribar rengi kelebeği bul"
 
 #. Color #9966CC
 #: activities/advanced_colors/advanced_colors.js:166
@@ -452,21 +452,21 @@ msgstr "Mat mavi kelebeği bul"
 #: activities/advanced_colors/advanced_colors.js:441
 msgctxt "advanced_colors|"
 msgid "Find the auburn butterfly"
-msgstr "Koyu kestane kelebeğini bul"
+msgstr "Koyu kestane kelebeği bul"
 
 #. Color #458AC6
 #: activities/advanced_colors/advanced_colors.js:235
 #: activities/advanced_colors/advanced_colors.js:456
 msgctxt "advanced_colors|"
 msgid "Find the azure butterfly"
-msgstr "Gök mavisi kelebeğini bul"
+msgstr "Gök mavisi kelebeği bul"
 
 #. Color #9F7F58
 #: activities/advanced_colors/advanced_colors.js:240
 #: activities/advanced_colors/advanced_colors.js:681
 msgctxt "advanced_colors|"
 msgid "Find the grayish brown butterfly"
-msgstr "Grimsi kahverengi kelebeğini bul"
+msgstr "Grimsi kahverengi kelebeği bul"
 
 #. Color #3D2B1F
 #: activities/advanced_colors/advanced_colors.js:245
@@ -547,7 +547,7 @@ msgstr "Yosun rengi kelebeği bul"
 #: activities/advanced_colors/advanced_colors.js:624
 msgctxt "advanced_colors|"
 msgid "Find the wine butterfly"
-msgstr "Şarap rengi kelebeğini bul"
+msgstr "Şarap rengi kelebeği bul"
 
 #. Color #9955BB
 #: activities/advanced_colors/advanced_colors.js:309
@@ -589,7 +589,7 @@ msgstr "Mimoza rengi kelebeği bul"
 #: activities/advanced_colors/advanced_colors.js:498
 msgctxt "advanced_colors|"
 msgid "Find the ochre butterfly"
-msgstr "Koyu sarı kelebeğini bul"
+msgstr "Koyu sarı kelebeği bul"
 
 #. Color #808000
 #: activities/advanced_colors/advanced_colors.js:344
@@ -611,7 +611,7 @@ msgstr "Opal rengi kelebeği bul"
 #: activities/advanced_colors/advanced_colors.js:740
 msgctxt "advanced_colors|"
 msgid "Find the ultramarine butterfly"
-msgstr "Lacivert kelebeğini bul"
+msgstr "Lacivert kelebeği bul"
 
 #. Color #E0B0FF
 #: activities/advanced_colors/advanced_colors.js:366
@@ -751,7 +751,7 @@ msgstr "Sınırlı sürede sayıları nasıl çarpacağını öğren."
 #: activities/algebra_by/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid "Multiplication tables from 1 to 10."
-msgstr "1 den 10 a kadar çarpım tablosu."
+msgstr "1'den 10'a kadar çarpım tablosu."
 
 #. Help manual
 #: activities/algebra_by/ActivityInfo.qml:24
@@ -762,9 +762,9 @@ msgid ""
 "numbers. You have to be fast and submit the answer before the penguins in "
 "their balloon land!"
 msgstr ""
-"Ekranda bir çarpma işlemi görünüyor. Hızlıca onları çarp ve ekrandaki tuş "
+"Ekranda bir çarpma işlemi görünüyor. Hızlıca onları çarp ve ekrandaki düğme "
 "takımını veya bilgisayarın klavyesini kullanarak sayıların çarpımını gir. "
-"Hızlı olmalı ve balondaki penguenler aşağı düşmeden önce cevabı vermelisin!"
+"Hızlı olmalı ve balondaki penguenler aşağı düşmeden önce yanıtlamalısın!"
 
 #: activities/algebra_by/ActivityInfo.qml:26
 #: activities/algebra_div/ActivityInfo.qml:26
@@ -774,7 +774,7 @@ msgstr ""
 #: activities/smallnumbers2/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Digits: type your answer"
-msgstr "Rakamlar: cevabını yaz"
+msgstr "Basamaklar: Yanıtını yaz"
 
 #: activities/algebra_by/ActivityInfo.qml:27
 #: activities/algebra_div/ActivityInfo.qml:27
@@ -782,7 +782,7 @@ msgstr "Rakamlar: cevabını yaz"
 #: activities/algebra_plus/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Backspace: delete the last digit in your answer"
-msgstr "Geri tuşu: cevabındaki son rakamı sil"
+msgstr "Geri düğmesi: Yanıtındaki son basamağı sil"
 
 #: activities/algebra_by/ActivityInfo.qml:28
 #: activities/algebra_div/ActivityInfo.qml:28
@@ -799,7 +799,7 @@ msgstr "Geri tuşu: cevabındaki son rakamı sil"
 #: activities/roman_numerals/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid "Enter: validate your answer"
-msgstr "Enter: cevabını doğrula"
+msgstr "Enter: Yanıtını onayla"
 
 #: activities/algebra_by/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -883,9 +883,9 @@ msgid ""
 "computer's keyboard or the on-screen keypad to type it. You have to be fast "
 "and submit the answer before the penguins in their balloon land!"
 msgstr ""
-"Ekranda bir bölme işlemi görünüyor. Hızlıca sonucu bul ve ekrandaki tuş "
+"Ekranda bir bölme işlemi görünüyor. Hızlıca sonucu bul ve ekrandaki düğme "
 "takımını veya bilgisayarın klavyesini kullanarak sonucu gir. Hızlı olmalı ve "
-"balondaki penguenler aşağı inmeden önce cevabı vermelisin!"
+"balondaki penguenler aşağı inmeden önce yanıtlamalısın!"
 
 #: activities/algebra_div/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -971,9 +971,9 @@ msgid ""
 "your computer's keyboard or the on-screen keypad to type it. You have to be "
 "fast and submit the answer before the penguins in their balloon land!"
 msgstr ""
-"Ekranda bir çıkarma işlemi görünüyor. Hızlıca sonucu bul ve ekrandaki tuş "
+"Ekranda bir çıkarma işlemi görünüyor. Hızlıca sonucu bul ve ekrandaki düğme "
 "takımını veya bilgisayarın klavyesini kullanarak sonucu gir. Hızlı olmalı ve "
-"balondaki penguenler aşağı inmeden önce cevabı vermelisin!"
+"balondaki penguenler aşağı inmeden önce yanıtlamalısın!"
 
 #: activities/algebra_minus/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -1047,7 +1047,7 @@ msgstr "Sınırlı süre içinde iki sayının toplamını bul."
 #: activities/algebra_plus/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid "Simple addition. Can recognize written numbers."
-msgstr "Basit toplama. Yazılan sayıları tanıma."
+msgstr "Basit toplama. Yazılan sayıları tanıyabilir."
 
 #. Help manual
 #: activities/algebra_plus/ActivityInfo.qml:24
@@ -1058,8 +1058,8 @@ msgid ""
 "and submit the answer before the penguins land in their balloon!"
 msgstr ""
 "Ekranda bir toplama işlemi görünüyor. Hızlıca iki sayının toplamını bul ve "
-"ekrandaki tuş takımını veya bilgisayarın klavyesini kullanarak sonucu gir. "
-"Hızlı olmalı ve balondaki penguenler aşağı inmeden önce cevabı bulmalısın!"
+"ekrandaki düğme takımını veya bilgisayarın klavyesini kullanarak sonucu gir. "
+"Hızlı olmalı ve balondaki penguenler aşağı inmeden önce yanıtlamalısın!"
 
 #: activities/algebra_plus/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -1138,8 +1138,8 @@ msgid ""
 "sequence by using the correct fruit, after studying this pattern."
 msgstr ""
 "İki diziye bak. ilk dizideki her bir meyve, ikinci dizideki başka bir meyve "
-"ile yer değiştirmiştir. ilk dizideki meyve sıralamasına bakarak ikinci "
-"diziyi tamamla. ikinci diziyi tamamlamak için en alttaki meyvelere "
+"ile yer değiştirmiştir. İlk dizideki meyve sıralamasına bakarak ikinci "
+"diziyi tamamla. İkinci diziyi tamamlamak için en alttaki meyvelere "
 "dokunmalısın."
 
 #. Activity title
@@ -1163,22 +1163,17 @@ msgid ""
 "Create a line of 4 tokens either horizontally (lying down), vertically "
 "(standing up) or diagonally."
 msgstr ""
-"4 jetondan bir sıra oluştur, hem yatay hem dikey veya çapraz bir şekilde."
+"Hem yatay hem dikey veya çapraz bir şekilde 4 jetondan bir sıra oluştur."
 
 #. Help manual
 #: activities/align4/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Play with a friend. Take turns to click the line in which you want to "
-#| "drop a token. The first player to create a line of 4 tokens wins."
 msgctxt "ActivityInfo|"
 msgid ""
 "Play with Tux. Take turns to click the line in which you want to drop a "
 "token. The first player to create a line of 4 tokens wins."
 msgstr ""
-"Bir arkadaş ile oyna. Jetonu bırakmak istediğin satıra tıkla. 4 jeton ile "
-"bir sıra oluşturan ilk kişi kazanır."
+"Tux ile oyna. Jetonu bırakmak istediğin satıra tıkla. 4 jeton ile bir sıra "
+"oluşturan ilk kişi kazanır."
 
 #: activities/align4/ActivityInfo.qml:23 activities/bargame/ActivityInfo.qml:26
 #: activities/checkers/ActivityInfo.qml:27
@@ -1188,24 +1183,26 @@ msgid ""
 "You can use the arrow buttons to manually select the difficulty level. Tux "
 "will play better when you increase the level."
 msgstr ""
+"Zorluk düzeyini kendin seçmek için ok düğmelerini kullanabilirsin. Düzeyi "
+"yükselttiğinizde Tux daha iyi oynayacaktır."
 
 #: activities/align4/ActivityInfo.qml:25
 #: activities/align4_2players/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid "Left arrow: move the token to the left"
-msgstr "Sol ok: jetonu sola hareket ettirir"
+msgstr "Sol ok: Jetonu sola hareket ettirir"
 
 #: activities/align4/ActivityInfo.qml:26
 #: activities/align4_2players/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "Right arrow: move the token to the right"
-msgstr "Sağ ok: jetonu sağa hareket ettirir"
+msgstr "Sağ ok: Jetonu sağa hareket ettirir"
 
 #: activities/align4/ActivityInfo.qml:27
 #: activities/align4_2players/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Space or Down arrow: drop the token"
-msgstr "Boşluk veya Aşağı ok: jetonu bırakır"
+msgstr "Boşluk veya Aşağı ok: Jetonu bırakır"
 
 #. Activity title
 #: activities/align4_2players/ActivityInfo.qml:15
@@ -1227,7 +1224,7 @@ msgstr ""
 #: activities/alphabet-sequence/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Alphabet sequence"
-msgstr "Alfabe sıralaması"
+msgstr "Abece sıralaması"
 
 #. Help title
 #: activities/alphabet-sequence/ActivityInfo.qml:17
@@ -1235,20 +1232,20 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Move the helicopter to catch the clouds following the order of the alphabet."
 msgstr ""
-"Aşağıdaki bulutların içindeki harfleri alfabetik sıraya göre yakalamak için "
+"Aşağıdaki bulutların içindeki harfleri abecesel sıraya göre yakalaması için "
 "helikopteri buluta doğru hareket ettir."
 
 #. Help goal
 #: activities/alphabet-sequence/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Alphabet sequence."
-msgstr "Alfabe sıralaması."
+msgstr "Abece sıralaması."
 
 #. Help prerequisite
 #: activities/alphabet-sequence/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid "Can decode letters."
-msgstr "Harfler çözülebilir."
+msgstr "Harfleri çözebilir."
 
 #. Help manual
 #: activities/alphabet-sequence/ActivityInfo.qml:24
@@ -1259,7 +1256,7 @@ msgid ""
 "location. To know which letter you have to catch you can either remember it "
 "or check the bottom right corner."
 msgstr ""
-"Alfabe harflerini yakala. Ok tuşlarıyla helikopteri hareket ettir. İşaretçi "
+"Abece harflerini yakala. Ok düğmeleriyle helikopteri hareket ettir. İşaretçi "
 "aygıtla, hedef noktaya tıkla veya dokun. Hangi harfi yakalayacağını bilmek "
 "için, sıradaki harfi hatırlamalı veya sağ alt köşeyi kontrol etmelisin."
 
@@ -1268,24 +1265,24 @@ msgstr ""
 #: activities/planegame/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Arrows: move the helicopter"
-msgstr "Oklar: helikopteri hareket ettirir"
+msgstr "Oklar: Helikopteri hareket ettir"
 
 #: activities/alphabet-sequence/AlphabetSequence.qml:18
 msgctxt "AlphabetSequence|"
 msgid "a/b/c/d/e/f/g/h/i/j/k/l/m/n/o/p/q/r/s/t/u/v/w/x/y/z"
-msgstr "a/b/c/d/e/f/g/h/i/j/k/l/m/n/o/p/q/r/s/t/u/v/w/x/y/z"
+msgstr "a/b/c/ç/d/e/f/g/ğ/h/ı/i/j/k/l/m/n/o/ö/p/r/s/ş/t/u/ü/v/y/z"
 
 #: activities/analog_electricity/ActivityConfig.qml:22
 #: activities/digital_electricity/ActivityConfig.qml:22
 msgctxt "ActivityConfig|"
 msgid "Tutorial Mode"
-msgstr "Öğretici Mod"
+msgstr "Öğretici Kip"
 
 #: activities/analog_electricity/ActivityConfig.qml:23
 #: activities/digital_electricity/ActivityConfig.qml:23
 msgctxt "ActivityConfig|"
 msgid "Free Mode"
-msgstr "Serbest Mod"
+msgstr "Serbest Kip"
 
 #: activities/analog_electricity/ActivityConfig.qml:32
 #: activities/digital_electricity/ActivityConfig.qml:32
@@ -1296,13 +1293,10 @@ msgstr "Serbest Mod"
 #: activities/traffic/ActivityConfig.qml:31
 msgctxt "ActivityConfig|"
 msgid "Select your mode"
-msgstr "Modunu seç"
+msgstr "Kipini seç"
 
 #. Activity title
 #: activities/analog_electricity/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Analog Electricity"
 msgctxt "ActivityInfo|"
 msgid "Analog electricity"
 msgstr "Analog elektrik"
@@ -1311,7 +1305,7 @@ msgstr "Analog elektrik"
 #: activities/analog_electricity/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Create and simulate an analog electric schema."
-msgstr "Analog bir elektrik şeması oluştur ve simüle et."
+msgstr "Analog bir elektrik şeması oluştur ve onu simüle et."
 
 #. Help goal
 #: activities/analog_electricity/ActivityInfo.qml:20
@@ -1350,22 +1344,17 @@ msgid ""
 "You can click on the component and then on the rotate buttons to rotate it "
 "or on the info button to get information about it."
 msgstr ""
-"Bileşeni tıklayıp, döndürmek için döndür düğmelerine veya hakkında bilgi "
+"Bileşene tıklayıp döndürmek için döndür düğmelerine veya hakkında bilgi "
 "almak için bilgi düğmesine tıklayabilirsin."
 
 #: activities/analog_electricity/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "You can click on the switch to open and close it. You can change the "
-#| "rheostat value by dragging its slider."
 msgctxt "ActivityInfo|"
 msgid ""
 "You can click on the switch to open and close it. Likewise, you can change "
 "the rheostat value by dragging its slider."
 msgstr ""
-"Açmak ve kapatmak için anahtara tıklayabilirsin. Akım sağlayıcısı değerini "
-"sürükleyerek değiştirebilirsin."
+"Açmak ve kapatmak için anahtara tıklayabilirsin. Aynı zamanda, akım "
+"sağlayıcısı değerini sürükleyerek değiştirebilirsin."
 
 #: activities/analog_electricity/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
@@ -1373,29 +1362,24 @@ msgid ""
 "To connect two terminals, click on the first terminal, then on the second "
 "terminal. To deselect a terminal, click on any empty area."
 msgstr ""
-"İki terminali bağlamak için ilk terminale, ardından ikinci terminale tıkla. "
-"Bir terminalin seçimini kaldırmak için herhangi bir boş alana tıkla."
+"İki uçbirimi birbirine bağlamak için ilk uçbirime, ardından ikinci uçbirime "
+"tıkla. Bir uçbirimin seçimini kaldırmak için herhangi bir boş alana "
+"tıklayabilirsin."
 
 #: activities/analog_electricity/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "In order to repair a broken bulb or LED, click on it after disconnecting "
-#| "it from the circuit. The simulation is updated in real time by any user "
-#| "action."
 msgctxt "ActivityInfo|"
 msgid ""
 "For repairing a broken bulb or LED, click on it after disconnecting it from "
 "the circuit. The simulation is updated in real time by any user action."
 msgstr ""
-"Kırık bir ampulü veya LED'i onarmak için, devreden çıkardıktan sonra üzerine "
-"tıkla. Simülasyon, herhangi bir kullanıcı eylemiyle gerçek zamanlı olarak "
+"Bozuk bir ampulü veya LED'i onarmak için devreden çıkardıktan sonra üzerine "
+"tıkla. Simülasyon, herhangi bir kullanıcı işlemi ile gerçek zamanlı olarak "
 "güncellenir."
 
 #: activities/analog_electricity/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "The electric simulation engine is from edX: "
-msgstr "Elektrik simülasyon motoru edX'ten alınmıştır. "
+msgstr "Elektrik simülasyon işletkesi edX'ten alınmıştır. "
 
 #: activities/analog_electricity/cktsim.js:138
 msgctxt "cktsim|"
@@ -1404,7 +1388,7 @@ msgid ""
 "please remove the wire causing the short."
 msgstr ""
 "Uyarı! Devrede bir voltaj kaynağı döngüsü veya bir tel tarafından kısa devre "
-"yapılmış bir kaynak var, lütfen kısa devreye neden olan kabloyu çıkar."
+"yapılmış bir kaynak var; lütfen kısa devreye neden olan kabloyu çıkar."
 
 #: activities/analog_electricity/cktsim.js:139
 msgctxt "cktsim|"
@@ -1423,21 +1407,14 @@ msgid ""
 "from one terminal of the battery to the other."
 msgstr ""
 "Pil, elektrikli aygıtların çalıştırılması için kullanılır. Kapalı bir "
-"devrede voltaj sağlayabilir. Bu, akımın pilin bir uçbiriminden diğerine "
-"akması için bir yol olması gerektiği anlamına gelir."
+"devrede voltaj sağlayabilir. Bu, akımın pilin bir uçbirimden diğerine akması "
+"için bir yol olması gerektiği anlamına gelir."
 
 #: activities/analog_electricity/components/Battery.qml:19
-#, fuzzy
-#| msgctxt "Battery|"
-#| msgid ""
-#| "If the current in a circuit is too high then the battery can be damaged. "
-#| "Wires can be used to connect components and create the circuit."
 msgctxt "Battery|"
 msgid ""
 "If the current in a circuit is too high then the battery can be damaged."
-msgstr ""
-"Bir devredeki akım çok yüksekse, pil zarar görebilir. Bileşenleri bağlamak "
-"ve devreyi oluşturmak için teller kullanılabilir."
+msgstr "Bir devredeki akım çok yüksekse pil zarar görebilir."
 
 #. 1st V for Voltage, 2nd V for Volt
 #: activities/analog_electricity/components/Battery.qml:21
@@ -1460,8 +1437,8 @@ msgid ""
 "supplied voltage. It will be broken if there is a power greater than a "
 "certain limit."
 msgstr ""
-"Yeterli güce sahip olduğunda ampul yanar. Yoğunluğu, sağlanan voltajla "
-"orantılıdır. Belli bir limitin üzerinde bir güç varsa kırılır."
+"Ampul, yeterli güce sahip olduğunda yanar. Yoğunluğu, sağlanan voltajla "
+"orantılıdır. Belli bir sınırın üzerinde bir güç varsa kırılır."
 
 #. 1st V for Voltage, 2nd V for Volt
 #: activities/analog_electricity/components/Bulb.qml:21
@@ -1557,7 +1534,7 @@ msgstr ""
 #: activities/analog_electricity/TutorialDataset.qml:20
 msgctxt "TutorialDataset|"
 msgid "Battery"
-msgstr "Batarya"
+msgstr "Pil"
 
 #: activities/analog_electricity/TutorialDataset.qml:29
 msgctxt "TutorialDataset|"
@@ -1573,7 +1550,7 @@ msgstr "Anahtar"
 #: activities/analog_electricity/TutorialDataset.qml:47
 msgctxt "TutorialDataset|"
 msgid "3 points switch"
-msgstr "3 nokta anahtarı"
+msgstr "3 noktalı anahtar"
 
 #: activities/analog_electricity/TutorialDataset.qml:56
 msgctxt "TutorialDataset|"

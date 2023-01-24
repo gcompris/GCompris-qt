@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2014-12-25 01:10+0000\n"
-"PO-Revision-Date: 2023-01-10 09:38+0100\n"
+"PO-Revision-Date: 2023-01-21 12:07+0100\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca@valencia\n"
@@ -25616,7 +25616,7 @@ msgstr "Escriviu la paraula completa mentre cau, abans que arribe a terra."
 #: core/ChangeLog.qml:30
 msgctxt "ChangeLog|"
 msgid "Fix issue in comparator activity"
-msgstr ""
+msgstr "Corregir un problema en l'activitat del comparador"
 
 #: core/ChangeLog.qml:34
 msgctxt "ChangeLog|"

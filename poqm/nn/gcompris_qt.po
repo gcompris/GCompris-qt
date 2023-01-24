@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_qt\n"
-"PO-Revision-Date: 2023-01-08 11:34+0100\n"
+"PO-Revision-Date: 2023-01-22 13:21+0100\n"
 "Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
 "Language-Team: Norwegian Nynorsk <l10n-no@lister.huftis.org>\n"
 "Language: nn\n"
@@ -18,7 +18,7 @@ msgstr ""
 "X-Environment: kde, gcompris\n"
 "X-Accelerator-Marker: &\n"
 "X-Text-Markup: qtrich\n"
-"X-Generator: Lokalize 22.12.0\n"
+"X-Generator: Lokalize 22.12.1\n"
 
 #. Activity title
 #: activities/advanced_colors/ActivityInfo.qml:15
@@ -9018,7 +9018,7 @@ msgstr ""
 #: activities/fractions_create/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Create the fractions"
-msgstr "Skriv brøken"
+msgstr "Teikn brøken"
 
 #. Help title
 #: activities/fractions_create/ActivityInfo.qml:16
@@ -9355,7 +9355,7 @@ msgstr "Vel så mange delar du kan utan å ta meir enn halvparten av kaka."
 #: activities/fractions_find/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Find the fractions"
-msgstr "Finn brøken"
+msgstr "Skriv brøken"
 
 #. Help title
 #: activities/fractions_find/ActivityInfo.qml:16
@@ -25049,7 +25049,7 @@ msgstr "Skriv inn heile orda mens dei dalar ned, før dei når bakken."
 #: core/ChangeLog.qml:30
 msgctxt "ChangeLog|"
 msgid "Fix issue in comparator activity"
-msgstr ""
+msgstr "Retta feil i talsamanliknings­aktiviteten"
 
 #: core/ChangeLog.qml:34
 msgctxt "ChangeLog|"
