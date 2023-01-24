@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GCompris-QT\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2023-01-19 07:00+0200\n"
+"PO-Revision-Date: 2023-01-21 18:49+0200\n"
 "Last-Translator: Rolandas Jakštys <rolandas@jakstys.lt>\n"
 "Language-Team: Lithuanian <kde-i18n-lt@kde.org>\n"
 "Language: lt\n"
@@ -5224,7 +5224,7 @@ msgstr "Tęsti"
 #: activities/comparator/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Compare numbers"
-msgstr "Palygink skaičius."
+msgstr "Palygink skaičius"
 
 #. Help title
 #: activities/comparator/ActivityInfo.qml:19
@@ -9442,7 +9442,7 @@ msgstr "Pažymėk kuo daugiau dalių, bet ne daugiau nei pusę skritulio."
 #: activities/fractions_find/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Find the fractions"
-msgstr "Surask trupmenas."
+msgstr "Surask trupmenas"
 
 #. Help title
 #: activities/fractions_find/ActivityInfo.qml:16
@@ -15394,7 +15394,7 @@ msgstr "Skaičiai tarp 1 ir 5."
 #: activities/learn_decimals_additions/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Additions with decimal numbers"
-msgstr "Dešimtainių skaičių sudėtis."
+msgstr "Dešimtainių skaičių sudėtis"
 
 #. Help title
 #: activities/learn_decimals_additions/ActivityInfo.qml:16
@@ -15461,7 +15461,7 @@ msgstr "Sudėti dešimtainius skaičius iki 5."
 #: activities/learn_decimals_subtractions/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Subtractions with decimal numbers"
-msgstr "Dešimtainių skaičių atimtis."
+msgstr "Dešimtainių skaičių atimtis"
 
 #. Help title
 #: activities/learn_decimals_subtractions/ActivityInfo.qml:16
@@ -15540,7 +15540,7 @@ msgstr "Leisti pamokėles su garsu"
 #: activities/learn_digits/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Count and color the circles"
-msgstr "Suskaičiuok ir nuspalvink apskritimus."
+msgstr "Suskaičiuok ir nuspalvink apskritimus"
 
 #. Help title
 #: activities/learn_digits/ActivityInfo.qml:17
@@ -24814,7 +24814,7 @@ msgstr "2 poros iš 6 skaičių."
 #: activities/tens_complement_use/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Use ten's complement"
-msgstr "Naudok dešimties dėmenis."
+msgstr "Naudok dešimties dėmenis"
 
 #. Help title
 #: activities/tens_complement_use/ActivityInfo.qml:16
