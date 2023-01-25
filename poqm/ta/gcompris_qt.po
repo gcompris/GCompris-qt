@@ -1,8 +1,8 @@
-# Kishore G <kishore96@gmail.com>, 2022.
+# Kishore G <kishore96@gmail.com>, 2022, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2022-12-29 21:29+0530\n"
+"PO-Revision-Date: 2023-01-24 21:30+0530\n"
 "Last-Translator: Kishore G <kishore96@gmail.com>\n"
 "Language-Team: Tamil <kde-i18n-doc@kde.org>\n"
 "Language: ta\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Language: ta\n"
 "X-Qt-Contexts: true\n"
-"X-Generator: Lokalize 22.12.0\n"
+"X-Generator: Lokalize 22.12.1\n"
 
 #. Activity title
 #: activities/advanced_colors/ActivityInfo.qml:15
@@ -936,12 +936,9 @@ msgstr "9-இன் வகுத்தல் வாய்ப்பாட்ட�
 
 #. Activity title
 #: activities/algebra_minus/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Subtraction memory game"
 msgctxt "ActivityInfo|"
 msgid "Subtraction of numbers"
-msgstr "கழித்தல் நினைவாற்றல் விளையாட்டு"
+msgstr "எண்களைக் கழித்தல்"
 
 #. Help title
 #: activities/algebra_minus/ActivityInfo.qml:17

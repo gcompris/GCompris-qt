@@ -1,8 +1,8 @@
-# Giovanni Sora <g.sora@tiscali.it>, 2020, 2021, 2022.
+# Giovanni Sora <g.sora@tiscali.it>, 2020, 2021, 2022, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2022-12-19 12:26+0100\n"
+"PO-Revision-Date: 2023-01-24 11:32+0100\n"
 "Last-Translator: giovanni <g.sora@tiscali.it>\n"
 "Language-Team: Interlingua <kde-i18n-doc@kde.org>\n"
 "Language: ia\n"
@@ -17195,7 +17195,7 @@ msgstr "Valor Morse: %1"
 #, qt-format
 msgctxt "MorseCode|"
 msgid "Alphabet/Numeric value: %1"
-msgstr ""
+msgstr "Alphabet/Valor numeric: %1"
 
 #: activities/morse_code/resource/1/Data.qml:13
 msgctxt "Data|"
