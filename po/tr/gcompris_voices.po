@@ -560,7 +560,7 @@ msgstr "Gizli bir sözcük var; onu harf harf deneyerek bul."
 msgid ""
 "Rebuild the same tower in the empty area as the one you see on the right "
 "hand side."
-msgstr "Aynı kuleyi sağ tarafta gördüğün gibi boş alanda yeniden yap"
+msgstr "Aynı kuleyi sağ tarafta gördüğün gibi boş alanda yeniden yap."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "hanoi_real"
 #: activities/hanoi_real/ActivityInfo.qml:18
@@ -1249,20 +1249,3 @@ msgstr ""
 #, kde-format
 msgid "Type the words on your keyboard before they reach the ground."
 msgstr "Sözcükler yere ulaşmadan önce onları klavyende yaz."
-
-#~ msgid "play checkers against the computer"
-#~ msgstr "bilgisayara karşı dama oyna"
-
-#~ msgid "put here in comment the text for the intro voice"
-#~ msgstr "giriş sesinin metnini buraya eklemek için tıklayın"
-
-#~ msgid ""
-#~ "Change the planets' gravitational force by moving the sliders up and "
-#~ "down. Be careful not to crash Tux's spaceship."
-#~ msgstr ""
-#~ "Kaydırıcıları yukarı ve aşağı hareket ettirerek gezegenlerin yerçekimi "
-#~ "kuvvetini değiştirin. Tux'un uzay gemisine çarpmamasına özen gösterin."
-
-#~ msgid ""
-#~ "Use the drawing tools to reproduce the right-hand side symmetrical figure."
-#~ msgstr "Sağ tarafta simetrik şekil üretmek için çizim araçlarını kullanın."
