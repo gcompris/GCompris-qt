@@ -4018,7 +4018,7 @@ msgstr "ზამთარი"
 #: activities/chronos/resource/board/board3_0.qml:14
 msgctxt "board3_0|"
 msgid "Gardening"
-msgstr ""
+msgstr "მებაღეობა"
 
 #: activities/chronos/resource/board/board3_0.qml:45
 msgctxt "board3_0|"
@@ -16664,7 +16664,7 @@ msgstr "ლოგიკური"
 #: activities/menu/Menu.qml:123
 msgctxt "Menu|"
 msgid "Fine Arts"
-msgstr ""
+msgstr "სახვითი ხელოვნება"
 
 #: activities/menu/Menu.qml:124
 msgctxt "Menu|"
