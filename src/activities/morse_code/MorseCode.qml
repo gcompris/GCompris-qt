@@ -71,6 +71,7 @@ ActivityBase {
             property int currentLevel: 0
             property int numberOfLevel: dataset.length
             readonly property string middleDot: '·'
+            readonly property var regexSpaceReplace: new RegExp(keyboard.space, "g")
 
             onToAlphaChanged: {
                 textInput.text = ''
@@ -103,6 +104,7 @@ ActivityBase {
                 stopMorseSounds();
                 questionValue = dataset[currentLevel].values[1][score.currentSubLevel-1]
                 questionValue = questionValue.replace(/\./g, items.middleDot);
+                questionValue = questionValue.replace(items.regexSpaceReplace, ' ');
                 activity.audioVoices.clearQueue();
                 // Play the audio at start of the sublevel
                 if(items.audioMode) {
@@ -297,6 +299,7 @@ ActivityBase {
                 onTextChanged: {
                     if(text) {
                         text = text.replace(/\./g, items.middleDot);
+                        text = text.replace(items.regexSpaceReplace, ' ');
                         text = text.toUpperCase();
                         if(items.toAlpha) {
                             morseConverter.alpha = text.replace(/\W/g , '');
@@ -347,7 +350,8 @@ ActivityBase {
                 qsTr("Alphabet/Numeric value: %1").arg(value)
                 color: "#373737"
                 property string value: items.toAlpha ?
-                                           morseConverter.morse.replace(/\./g, items.middleDot) :
+                                           morseConverter.morse.replace(/\./g, items.middleDot).replace(items.regexSpaceReplace, ' ')
+ :
                                            morseConverter.alpha
                 verticalAlignment: Text.AlignVCenter
                 width: parent.width * 0.9
