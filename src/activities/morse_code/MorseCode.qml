@@ -540,6 +540,7 @@ ActivityBase {
                               { label: "S" },
                               { label: "T" },
                               { label: "U" },
+                              { label: "V" },
                               { label: "W" },
                               { label: "X" },
                               { label: "Y" },
