@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2023-01-25 21:28+0300\n"
+"PO-Revision-Date: 2023-01-26 20:15+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -2315,7 +2315,7 @@ msgstr "Kutuyu eğerek, topu kapıya doğru yönlendir."
 #: activities/balancebox/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid "Practice fine motor skills and basic counting."
-msgstr "İyi motor becerileri ve temel sayım alıştırmaları."
+msgstr "İnce motor becerileri ve temel sayım alıştırmaları."
 
 #. Help manual
 #: activities/balancebox/ActivityInfo.qml:27
@@ -2327,10 +2327,9 @@ msgid ""
 "device. On desktop platforms use the arrow keys to simulate tilting."
 msgstr ""
 "Topu kapıya doğru yönlendir. Deliklere düşmemesine dikkat et. Kapının "
-"kilidini açmak için kutudaki numaralı temas düğmelerine doğru sırada "
-"dokunulması gerekir. Taşınabilir aygıtını eğerek topu hareket "
-"ettirebilirsin. Masaüstü platformlarda, topları hareket ettirmek için ok "
-"düğmelerini kullan."
+"kilidini açmak için kutudaki numaralı temas düğmelerine doğru sırayla dokun. "
+"Taşınabilir aygıtını eğerek topu hareket ettirebilirsin. Masaüstü "
+"platformlarda, topları hareket ettirmek için ok düğmelerini kullan."
 
 #: activities/balancebox/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
@@ -2359,28 +2358,28 @@ msgstr ""
 #: activities/balancebox/ActivityInfo.qml:32
 msgctxt "ActivityInfo|"
 msgid "Cross: clear a map cell completely"
-msgstr "Çapraz: bir harita hücresini tamamen temizleme"
+msgstr "Çapraz: Bir harita hücresini tümüyle temizle"
 
 #: activities/balancebox/ActivityInfo.qml:33
 msgctxt "ActivityInfo|"
 msgid ""
 "Horizontal Wall: add/remove a horizontal wall on the lower edge of a cell"
-msgstr "Yatay Duvar: bir hücrenin alt kenarına yatay bir duvar ekle / kaldır"
+msgstr "Yatay Duvar: Bir hücrenin alt kenarına yatay bir duvar ekle/kaldır"
 
 #: activities/balancebox/ActivityInfo.qml:34
 msgctxt "ActivityInfo|"
 msgid "Vertical Wall: add/remove a vertical wall on the right edge of a cell"
-msgstr "Dikey Duvar: bir hücrenin sağ kenarına dikey bir duvar ekle/kaldır"
+msgstr "Dikey Duvar: Bir hücrenin sağ kenarına dikey bir duvar ekle/kaldır"
 
 #: activities/balancebox/ActivityInfo.qml:35
 msgctxt "ActivityInfo|"
 msgid "Hole: add/remove a hole on a cell"
-msgstr "Boşluk: hücreye boşluk ekleme / çıkarma"
+msgstr "Boşluk: Hücreye boşluk ekle çıkar"
 
 #: activities/balancebox/ActivityInfo.qml:36
 msgctxt "ActivityInfo|"
 msgid "Ball: set the starting position of the ball"
-msgstr "Top: topun başlangıç ​​konumunu ayarla"
+msgstr "Top: Topun başlangıç ​​konumunu ayarla"
 
 #: activities/balancebox/ActivityInfo.qml:37
 msgctxt "ActivityInfo|"
@@ -2394,9 +2393,9 @@ msgid ""
 "value of the contact button. It is not possible to set a value more than "
 "once on a map."
 msgstr ""
-"İletişim: bir iletişim düğmesi ekle / kaldır. Döndürme kutusu ile temas "
+"İletişim: Bir iletişim düğmesi ekle/kaldır. Döndürme kutusu ile temas "
 "düğmesinin değerini ayarlayabilirsin. Bir harita üzerinde bir defadan fazla "
-"değer ayarlamak mümkün değildir."
+"değer ayarlamak olanaklı değildir."
 
 #: activities/balancebox/ActivityInfo.qml:40
 msgctxt "ActivityInfo|"
@@ -2521,13 +2520,13 @@ msgstr "Kaydet"
 #: activities/balancebox/editor/BalanceboxEditor.qml:155
 msgctxt "BalanceboxEditor|"
 msgid "Test"
-msgstr "Test"
+msgstr "Sına"
 
 #. Activity title
 #: activities/ballcatch/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Make the ball go to Tux"
-msgstr "Topu Tux'a gönder"
+msgstr "Topun Tux'a gitmesini sağla"
 
 #. Help title
 #: activities/ballcatch/ActivityInfo.qml:17
@@ -2535,7 +2534,8 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Press the left and right arrow keys at the same time, to make the ball go in "
 "a straight line."
-msgstr "Topun düz gitmesi için sol ve sağ yön tuşlarının ikisine beraber bas."
+msgstr ""
+"Topun düz gitmesi için sol ve sağ yön düğmelerinin ikisine birlikte bas."
 
 #. Help manual
 #: activities/ballcatch/ActivityInfo.qml:24
@@ -2545,8 +2545,8 @@ msgid ""
 "a straight line. On a touch screen you have to touch the two hands at the "
 "same time."
 msgstr ""
-"Topun düz gitmesi için sol ve sağ yön tuşlarının ikisine beraber bas. "
-"Dokunmatik ekranda, iki parmağını birden kullanmalısın."
+"Topun düz gitmesi için sol ve sağ yön düğmelerinin ikisine birlikte bas. "
+"Dokunmatik ekranda iki parmağını birden kullanmalısın."
 
 #: activities/ballcatch/Ballcatch.qml:220
 msgctxt "Ballcatch|"
@@ -2560,7 +2560,8 @@ msgid ""
 "Press left and right arrow keys at the same time, to make the ball go in a "
 "straight line."
 msgstr ""
-"Topun düz çizgide gitmesi için sol ve sağ yön tuşlarının ikisine beraber bas."
+"Topun düz çizgide gitmesi için sol ve sağ yön düğmelerinin ikisine birlikte "
+"bas."
 
 #: activities/bargame/ActivityConfig.qml:21
 #: activities/bargame_2players/ActivityConfig.qml:21
@@ -2584,7 +2585,7 @@ msgstr "Zor"
 #: activities/bargame_2players/ActivityConfig.qml:32
 msgctxt "ActivityConfig|"
 msgid "Select your difficulty"
-msgstr "Zorluk derecesi seç"
+msgstr "Zorluk derecesini seç"
 
 #. Activity title
 #: activities/bargame/ActivityInfo.qml:15
@@ -2619,21 +2620,15 @@ msgstr "Sayma yeteneği."
 
 #. Help manual
 #: activities/bargame/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Click on the ball icon to select a number of balls, then click on the OK "
-#| "button to place the balls in the holes. You win if the computer has to "
-#| "place the last ball. If you want Tux to begin, just click on him."
 msgctxt "ActivityInfo|"
 msgid ""
 "Click on the ball icon to select a number of balls, then click on the OK "
 "button to place the balls in the holes. You win if Tux has to place the last "
 "ball. If you want Tux to begin, just click on him."
 msgstr ""
-"Bir top numarası seçmek için top simgesine tıkla, ardından topları deliklere "
-"yerleştirmek için Tamam düğmesine tıkla. Kazanman için son topu Tux'un "
-"yerleştirmesi gerek. Tux'un başlamasını istiyorsan, ona tıklaman yeterlidir."
+"Bir dizi top seçmek için top simgesine tıkla, ardından topları deliklere "
+"yerleştirmek için OK düğmesine tıkla. Tux'un son topu yerleştirmesi "
+"gerekiyorsa kazanırsın. Tux'un başlamasını istiyorsan, ona tıklaman yeterli."
 
 #. Activity title
 #: activities/bargame_2players/ActivityInfo.qml:15
@@ -2650,7 +2645,7 @@ msgid ""
 "the last ball."
 msgstr ""
 "Bir top numarası seçmek için top simgesine tıkla, ardından topları deliklere "
-"yerleştirmek için Tamam düğmesine tıkla. Arkadaşın son topu yerleştirmek "
+"yerleştirmek için OK düğmesine tıkla. Arkadaşın son topu yerleştirmek "
 "zorunda kalırsa kazanırsın."
 
 #. Activity title
@@ -2689,7 +2684,7 @@ msgid ""
 "When you have achieved it, press OK."
 msgstr ""
 "Verilen ondalık sayının ikili değerini gösteren doğru ampulleri aç. Bunu "
-"başardığında TAMAM tuşuna bas."
+"başardığında OK düğmesine bas."
 
 #: activities/binary_bulb/binary_bulb.js:20
 msgctxt "binary_bulb|"
@@ -2731,9 +2726,9 @@ msgid ""
 "bit 4 → 2³=8 , bit 5 → 2⁴=16 , bit 6 → 2⁵=32 , bit 7 → 2⁶=64 , bit 8 → "
 "2⁷=128."
 msgstr ""
-"Her parça(bit) bir aşamalı değer ekler, 2 gücüne karşılık gelen, sağdan sola "
-"doğru yükselen : bit 1 → 2⁰=1 , bit 2 → 2¹=2 , bit 3 → 2²=4 , bit 4 → 2³=8 , "
-"bit 5 → 2⁴=16 , bit 6 → 2⁵=32 , bit 7 → 2⁶=64 , bit 8 → 2⁷=128."
+"Her parça(bit) bir aşamalı değer ekler, 2 üssüne karşılık gelen, sağdan sola "
+"doğru yükselmeli: Bit 1 → 2⁰=1 , bit 2 → 2¹=2 , bit 3 → 2²=4 , bit 4 → "
+"2³=8 , bit 5 → 2⁴=16 , bit 6 → 2⁵=32 , bit 7 → 2⁶=64 , bit 8 → 2⁷=128."
 
 #: activities/binary_bulb/binary_bulb.js:40
 msgctxt "binary_bulb|"
@@ -2746,8 +2741,8 @@ msgid ""
 "Their corresponding bits are set to 1, the others are set to 0. Decimal 5 is "
 "equal to binary 101."
 msgstr ""
-"Onların uyan parçaları(bit) 1 olarak ayarlanır, diğerleri 0. 5 ondalık 101 "
-"ikilik' e eşittir."
+"Onların uyan parçaları (bit) 1 olarak, diğerleri 0'a ayarlanır. 5 ondalık "
+"101 ikiliye eşittir."
 
 #: activities/binary_bulb/binary_bulb.js:48
 msgctxt "binary_bulb|"
@@ -2758,17 +2753,17 @@ msgstr "Bu görsel, bit değerini hesaplamaya yardım eder."
 #, qt-format
 msgctxt "BinaryBulb|"
 msgid "What is the binary representation of %1?"
-msgstr "%1 ikili sistemde neyi temsil eder ?"
+msgstr "%1 ikili sistemde neyi temsil eder?"
 
 #: activities/binary_bulb/resource/tutorial4.qml:29
 msgctxt "tutorial4|"
 msgid "0 to 255 with"
-msgstr "0 dan 255 e"
+msgstr "0'dan 255'e"
 
 #: activities/binary_bulb/resource/tutorial5.qml:29
 msgctxt "tutorial5|"
 msgid "0 to 255 with"
-msgstr "0 dan 255 e"
+msgstr "0'dan 255'e"
 
 #. Activity title
 #: activities/braille_alphabets/ActivityInfo.qml:15
@@ -2803,24 +2798,24 @@ msgstr ""
 #: activities/braille_alphabets/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid "Reproduce the requested character in the interactive braille cell."
-msgstr "Etkileşimli braille hücresinde istenen karakteri yeniden oluştur."
+msgstr "Etkileşimli Braille hücresinde istenen karakteri yeniden oluştur."
 
 #: activities/braille_alphabets/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid ""
 "You can open the braille chart by clicking on the blue braille cell icon."
-msgstr "Mavi braille hücre simgesine tıklayarak braille tablosunu açabilirsin."
+msgstr "Mavi Braille hücre simgesine tıklayarak Braille tablosunu açabilirsin."
 
 #: activities/braille_alphabets/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Digits: 1 to 6 select/deselect the corresponding dots"
-msgstr "Basamaklar: 1 ila 6 ya karşılık gelen noktaları seç / seçimini kaldır"
+msgstr "Basamaklar: 1 ile 6 ya karşılık gelen noktaları seç/seçimi kaldır"
 
 #: activities/braille_alphabets/ActivityInfo.qml:28
 #: activities/braille_fun/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Space: open or close the braille chart"
-msgstr "Boşluk: Braille grafiğini aç veya kapat"
+msgstr "Boşluk: Braille grafiğini aç/kapat"
 
 #: activities/braille_alphabets/braille_alphabets.js:48
 #: activities/braille_alphabets/braille_alphabets.js:58
@@ -2846,7 +2841,8 @@ msgid ""
 "Again, similar to the first line in the character chart but take care, the "
 "'W' letter was added afterward."
 msgstr ""
-"Yeniden, ilk satır ile benzer ancak dikkat et, 'W' harfi sonradan eklenmiş."
+"Bir daha bakınca, ilk satır ile benzer; ancak dikkat et, 'W' harfi sonradan "
+"eklenmiş."
 
 #: activities/braille_alphabets/braille_alphabets.js:73
 msgctxt "braille_alphabets|"
@@ -2856,7 +2852,7 @@ msgstr "Bu kolay, sayılar A ve J arası harfler ile aynı."
 #: activities/braille_alphabets/FirstScreen.qml:26
 msgctxt "FirstScreen|"
 msgid "Braille: Unlocking the Code"
-msgstr "Braille: Kodun Kilidini Açma"
+msgstr "Braille: Kod Kilidini Açma"
 
 #: activities/braille_alphabets/FirstScreen.qml:53
 msgctxt "FirstScreen|"
@@ -2874,7 +2870,7 @@ msgid ""
 "in a rectangle containing two columns of three dots each. As seen on the "
 "left, each dot is referenced by a number from 1 to 6."
 msgstr ""
-"Her bir braille karakteri veya hücre, her biri üç noktadan oluşan iki sütun "
+"Her bir Braille karakteri veya hücre, her biri üç noktadan oluşan iki sütun "
 "içeren bir dikdörtgen şeklinde düzenlenmiş altı nokta konumundan oluşur. "
 "Solda görüldüğü gibi, her nokta 1'den 6'ya kadar bir sayı ile belirtilir."
 
@@ -2882,7 +2878,7 @@ msgstr ""
 msgctxt "FirstScreen|"
 msgid "When you are ready, click on me and try reproducing braille characters."
 msgstr ""
-"Hazır olduğunda, bana tıkla ve braille karakterlerini yeniden üretmeyi dene."
+"Hazır olduğunda, bana tıkla ve Braille karakterlerini yeniden üretmeyi dene."
 
 #: activities/braille_alphabets/questions.js:12
 #: activities/braille_alphabets/questions.js:16
@@ -2913,7 +2909,7 @@ msgstr ""
 #, qt-format
 msgctxt "questions|"
 msgid "Click on the dots in the braille cell area to produce the letter %1."
-msgstr "%1 harfini oluşturmak için braille hücre alanındaki noktalara tıkla."
+msgstr "%1 harfini oluşturmak için Braille hücre alanındaki noktalara tıkla."
 
 #: activities/braille_alphabets/questions.js:122
 #: activities/braille_alphabets/questions.js:126
@@ -2928,7 +2924,7 @@ msgstr "%1 harfini oluşturmak için braille hücre alanındaki noktalara tıkla
 #, qt-format
 msgctxt "questions|"
 msgid "Click on the dots in the braille cell area to produce the number %1."
-msgstr "%1 sayısını oluşturmak için braille hücre alanındaki noktalara tıkla."
+msgstr "%1 sayısını oluşturmak için Braille hücre alanındaki noktalara tıkla."
 
 #: activities/braille_alphabets/questions.js:165
 #: activities/braille_alphabets/questions.js:169
@@ -2938,28 +2934,25 @@ msgstr "%1 sayısını oluşturmak için braille hücre alanındaki noktalara t�
 #, qt-format
 msgctxt "questions|"
 msgid "Click on the dots in the braille cell area to produce the symbol %1."
-msgstr "%1 sembolünü oluşturmak için braille hücre alanındaki noktalara tıkla."
+msgstr "%1 sembolünü oluşturmak için Braille hücre alanındaki noktalara tıkla."
 
 #. Activity title
 #: activities/braille_fun/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Braille Fun"
 msgctxt "ActivityInfo|"
 msgid "Braille fun"
-msgstr "Braille Eğlencesi"
+msgstr "Braille eğlencesi"
 
 #. Help title
 #: activities/braille_fun/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Practice braille letters."
-msgstr "Braille harfleri pratiği yapma."
+msgstr "Braille harfleri pratiği."
 
 #. Help prerequisite
 #: activities/braille_fun/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid "Braille alphabet."
-msgstr "Braille Alfabesi."
+msgstr "Braille alfabesi."
 
 #. Help manual
 #: activities/braille_fun/ActivityInfo.qml:24
@@ -2968,9 +2961,9 @@ msgid ""
 "Create the braille cells for the letters on the banner. Check the braille "
 "chart by clicking on the blue braille cell icon if you need some help."
 msgstr ""
-"Afiş üzerindeki harfler için braille hücreleri oluştur. Yardıma ihtiyacın "
-"olursa mavi braille hücresi simgesine tıklayarak braille tablosunu kontrol "
-"edebilirsin."
+"Afiş üzerindeki harfler için Braille hücreleri oluştur. Yardıma gereksinimin "
+"olursa mavi Braille hücresi simgesine tıklayarak Braille tablosuna "
+"bakabilirsin."
 
 #. Activity title
 #: activities/calendar/ActivityInfo.qml:15
@@ -3031,43 +3024,37 @@ msgstr "Boşluk veya Giriş: Yanıtını doğrula"
 #: activities/calendar/Calendar.qml:309
 msgctxt "Calendar|"
 msgid "Sunday"
-msgstr ""
+msgstr "Pazar"
 
 #: activities/calendar/Calendar.qml:310
 msgctxt "Calendar|"
 msgid "Monday"
-msgstr ""
+msgstr "Pazartesi"
 
 #: activities/calendar/Calendar.qml:311
 msgctxt "Calendar|"
 msgid "Tuesday"
-msgstr ""
+msgstr "Salı"
 
 #: activities/calendar/Calendar.qml:312
 msgctxt "Calendar|"
 msgid "Wednesday"
-msgstr ""
+msgstr "Çarşamba"
 
 #: activities/calendar/Calendar.qml:313
 msgctxt "Calendar|"
 msgid "Thursday"
-msgstr ""
+msgstr "Perşembe"
 
 #: activities/calendar/Calendar.qml:314
-#, fuzzy
-#| msgctxt "Calendar|"
-#| msgid "Friday"
 msgctxt "Calendar|"
 msgid "Friday"
 msgstr "Cuma"
 
 #: activities/calendar/Calendar.qml:315
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "Saturn"
 msgctxt "Calendar|"
 msgid "Saturday"
-msgstr "Satürn"
+msgstr "Cumartesi"
 
 #: activities/calendar/calendar_dataset.js:35
 msgctxt "calendar_dataset|"
@@ -3279,7 +3266,7 @@ msgid ""
 "Braille Day is celebrated one day before January 5.<br> Find the date of "
 "Braille Day in 2018"
 msgstr ""
-"Braille Günü 5 Ocak'tan bir gün önce kutlanır. <br> 2018'deki Braille "
+"Braille Günü, 5 Ocak'tan bir gün önce kutlanır.<br> 2018'deki Braille "
 "Gününün tarihini bul"
 
 #: activities/calendar/calendar_dataset.js:292
@@ -3338,9 +3325,8 @@ msgid ""
 "You are in charge of the canal lock. Open the gates and the locks in the "
 "right order, so that Tux can travel through the gates in both directions."
 msgstr ""
-"Kanal kilitleri şu an senin yönetiminde. Kapalı geçitleri düzgün sırayla "
-"açman gerekiyor. Sonra Tux'u bu iki yoldan götürmelisin. Tux'u hareket "
-"ettirmek için onun üzerine tıklamayı unutma."
+"Kanal kilidinden sen sorumlusun. Kapıları ve kilitleri doğru sırayla aç, "
+"böylece Tux kapılardan her iki yönde de geçebilir."
 
 #: activities/canal_lock/CanalLock.qml:54
 msgctxt "CanalLock|"
@@ -3348,8 +3334,8 @@ msgid ""
 "Your goal is to lead Tux across the canal lock to get the wooden logs, using "
 "the different types of water locks available."
 msgstr ""
-"Senin hedefin, tux'un kanal kilidini geçmesi için ahşap sütunları almak. "
-"Kullanılabilir farklı tür su kilitleri mevcut."
+"Amacın, kullanılabilir farklı türde su kilitlerini kullanarak ahşap "
+"kütükleri almak için Tux'u kanal kilidi boyunca yönlendirmektir."
 
 #: activities/canal_lock/CanalLock.qml:56
 msgctxt "CanalLock|"
@@ -3358,8 +3344,8 @@ msgid ""
 "by clicking on them. Two locks of the same type cannot be operated "
 "simultaneously."
 msgstr ""
-"Dikey renkli çubuklar su kilitlerini temsil eder, bunlar tıklanarak "
-"çalıştırılabilir. Aynı türden iki kilit aynı anda çalışmaz."
+"Dikey renkli çubuklar, üzerilerine tıklayarak çalıştırılabilen su "
+"kilitlerini temsil eder. Aynı türden iki kilit aynı anda çalıştırılamaz."
 
 #: activities/canal_lock/CanalLock.qml:58
 msgctxt "CanalLock|"
@@ -3389,7 +3375,7 @@ msgstr "Bir kategori keşfet, öğeleri birlikte sınıflandırma"
 #: activities/categorization/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Categorization"
-msgstr "Sınıflandırma"
+msgstr "Kategorizasyon"
 
 #. Help title
 #: activities/categorization/ActivityInfo.qml:17
@@ -3401,7 +3387,7 @@ msgstr "Öğeleri doğru ve yanlış gruplara ayır."
 #: activities/categorization/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Build conceptual thinking and enrich knowledge."
-msgstr "Kavramsal düşünmeyi oluştur ve bilgiyi zenginleştir."
+msgstr "Kavramsal düşünme yap ve bilgiyi zenginleştir."
 
 #. Help prerequisite
 #: activities/categorization/ActivityInfo.qml:22
@@ -3462,7 +3448,7 @@ msgstr "Bilinmeyen kategoriler."
 #: activities/categorization/resource/board/category_alphabets.qml:18
 msgctxt "category_alphabets|"
 msgid "Alphabets"
-msgstr "Alfabe"
+msgstr "Abeceler"
 
 #: activities/categorization/resource/board/category_alphabets.qml:22
 #: activities/categorization/resource/board/category_alphabets.qml:31
@@ -3472,7 +3458,7 @@ msgstr "Alfabe"
 #: activities/categorization/resource/board/category_alphabets.qml:67
 msgctxt "category_alphabets|"
 msgid "Place the LETTERS to the right and other objects to the left"
-msgstr "HARFLERI sağ tarafa diğer nesneleri sol tarafa yerleştir"
+msgstr "HARFLERİ sağ tarafa, diğer nesneleri sol tarafa yerleştir"
 
 #: activities/categorization/resource/board/category_animals.qml:19
 msgctxt "category_animals|"
@@ -3490,7 +3476,7 @@ msgstr "Hayvanlar"
 #: activities/categorization/resource/board/category_animals.qml:95
 msgctxt "category_animals|"
 msgid "Place the ANIMALS to the right and other objects to the left"
-msgstr "HAYVANLARI sağ tarafa diğer nesneleri sol tarafa yerleştir"
+msgstr "HAYVANLARI sağ tarafa, diğer nesneleri sol tarafa yerleştir"
 
 #: activities/categorization/resource/board/category_birds.qml:19
 msgctxt "category_birds|"
@@ -3508,7 +3494,7 @@ msgstr "Kuşlar"
 #: activities/categorization/resource/board/category_birds.qml:95
 msgctxt "category_birds|"
 msgid "Place the BIRDS to the right and other objects to the left"
-msgstr "KUŞLARI sağ tarafa diğer nesneleri sol tarafa yerleştir"
+msgstr "KUŞLARI sağ tarafa, diğer nesneleri sol tarafa yerleştir"
 
 #: activities/categorization/resource/board/category_colors.qml:19
 msgctxt "category_colors|"
@@ -3582,7 +3568,7 @@ msgstr "Balıklar"
 #: activities/categorization/resource/board/category_fishes.qml:69
 msgctxt "category_fishes|"
 msgid "Place the FISHES to the right and other objects to the left"
-msgstr "BALIKLARI sağ tarafa diğer nesneleri sol tarafa yerleştir"
+msgstr "BALIKLARI sağ tarafa, diğer nesneleri sol tarafa yerleştir"
 
 #: activities/categorization/resource/board/category_flowers.qml:18
 msgctxt "category_flowers|"
@@ -3600,7 +3586,7 @@ msgstr "Çiçekler"
 #: activities/categorization/resource/board/category_flowers.qml:94
 msgctxt "category_flowers|"
 msgid "Place the FLOWERS to the right and other objects to the left"
-msgstr "ÇİÇEKLERİ sağ tarafa diğer nesneleri sol tarafa yerleştir"
+msgstr "ÇİÇEKLERİ sağ tarafa, diğer nesneleri sol tarafa yerleştir"
 
 #: activities/categorization/resource/board/category_food.qml:19
 msgctxt "category_food|"
@@ -3615,7 +3601,7 @@ msgstr "Yiyecekler"
 #: activities/categorization/resource/board/category_food.qml:68
 msgctxt "category_food|"
 msgid "Place the FOOD ITEMS to the right and other objects to the left"
-msgstr "YİYECEKLERİ sağ tarafa diğer nesneleri sol tarafa yerleştir"
+msgstr "YİYECEKLERİ sağ tarafa, diğer nesneleri sol tarafa yerleştir"
 
 #: activities/categorization/resource/board/category_fruits.qml:19
 msgctxt "category_fruits|"
@@ -3632,7 +3618,7 @@ msgstr "Meyveler"
 #: activities/categorization/resource/board/category_fruits.qml:86
 msgctxt "category_fruits|"
 msgid "Place the FRUITS to the right and other objects to the left"
-msgstr "MEYVELERİ sağ tarafa diğer nesneleri sol tarafa yerleştir"
+msgstr "MEYVELERİ sağ tarafa, diğer nesneleri sol tarafa yerleştir"
 
 #: activities/categorization/resource/board/category_household_goods.qml:19
 msgctxt "category_household_goods|"
@@ -3655,7 +3641,7 @@ msgstr "Ev eşyaları"
 #: activities/categorization/resource/board/category_household_goods.qml:141
 msgctxt "category_household_goods|"
 msgid "Place the HOUSEHOLD GOODS to the right and other objects to the left"
-msgstr "EV EŞYALARIINI sağ tarafa diğer nesneleri sol tarafa yerleştir"
+msgstr "EV EŞYALARINI sağ tarafa, diğer nesneleri sol tarafa yerleştir"
 
 #: activities/categorization/resource/board/category_insects.qml:19
 msgctxt "category_insects|"
@@ -3670,7 +3656,7 @@ msgstr "Böcekler"
 #: activities/categorization/resource/board/category_insects.qml:68
 msgctxt "category_insects|"
 msgid "Place the INSECTS to the right and other objects to the left"
-msgstr "BÖCEKLERİ sağ tarafa diğer nesneleri sol tarafa yerleştir"
+msgstr "BÖCEKLERİ sağ tarafa, diğer nesneleri sol tarafa yerleştir"
 
 #: activities/categorization/resource/board/category_living_beings.qml:19
 msgctxt "category_living_beings|"
@@ -3686,7 +3672,7 @@ msgstr "Canlı"
 #: activities/categorization/resource/board/category_living_beings.qml:77
 msgctxt "category_living_beings|"
 msgid "Place the living beings to the right and other objects to the left"
-msgstr "Canlı varlıklar sağ tarafa diğer nesneleri sol tarafa yerleştir"
+msgstr "Canlı varlıkları sağ tarafa, diğer nesneleri sol tarafa yerleştir"
 
 #: activities/categorization/resource/board/category_monuments.qml:19
 msgctxt "category_monuments|"
@@ -3701,7 +3687,7 @@ msgstr "Anıtlar"
 #: activities/categorization/resource/board/category_monuments.qml:68
 msgctxt "category_monuments|"
 msgid "Place the MONUMENTS to the right and other objects to the left"
-msgstr "ANITLARI sağ tarafa diğer nesneleri sol tarafa yerleştir"
+msgstr "ANITLARI sağ tarafa, diğer nesneleri sol tarafa yerleştir"
 
 #: activities/categorization/resource/board/category_nature.qml:19
 msgctxt "category_nature|"
@@ -3718,7 +3704,7 @@ msgstr "Doğa"
 #: activities/categorization/resource/board/category_nature.qml:86
 msgctxt "category_nature|"
 msgid "Place the NATURE images to the right and other objects to the left"
-msgstr "DOĞA resimlerini sağ tarafa, diğer nesneleri sol tarafa yerleştir"
+msgstr "DOĞA görsellerini sağ tarafa, diğer nesneleri sol tarafa yerleştir"
 
 #: activities/categorization/resource/board/category_numbers.qml:19
 msgctxt "category_numbers|"
@@ -3730,7 +3716,7 @@ msgstr "Sayılar"
 #: activities/categorization/resource/board/category_numbers.qml:41
 msgctxt "category_numbers|"
 msgid "Place the NUMBERS to the right and other objects to the left"
-msgstr "SAYILARI sağ tarafa diğer nesneleri sol tarafa yerleştir"
+msgstr "SAYILARI sağ tarafa, diğer nesneleri sol tarafa yerleştir"
 
 #: activities/categorization/resource/board/category_odd_even.qml:20
 msgctxt "category_odd_even|"
@@ -3745,12 +3731,12 @@ msgstr "Tek ve çift sayılar"
 #: activities/categorization/resource/board/category_odd_even.qml:69
 msgctxt "category_odd_even|"
 msgid "Place the EVEN Numbers to the right and the ODD Numbers to the left"
-msgstr "ÇİFT sayıları sağ tarafa TEK sayıları sol tarafa yerleştir"
+msgstr "ÇİFT sayıları sağ tarafa, TEK sayıları sol tarafa yerleştir"
 
 #: activities/categorization/resource/board/category_renewable.qml:19
 msgctxt "category_renewable|"
 msgid "Renewable"
-msgstr "Yenilenebilir"
+msgstr "Yenilenebilirler"
 
 #: activities/categorization/resource/board/category_renewable.qml:23
 #: activities/categorization/resource/board/category_renewable.qml:32
@@ -3764,7 +3750,7 @@ msgctxt "category_renewable|"
 msgid ""
 "Place the RENEWABLE energy sources to the right and other objects to the left"
 msgstr ""
-"YENİLENEBİLİR enerji kaynaklarını sağ tarafa diğer nesneleri sol tarafa "
+"YENİLENEBİLİR enerji kaynaklarını, sağ tarafa diğer nesneleri sol tarafa "
 "yerleştir"
 
 #: activities/categorization/resource/board/category_shapes.qml:21
@@ -3775,116 +3761,113 @@ msgstr "Şekiller"
 #: activities/categorization/resource/board/category_shapes.qml:25
 msgctxt "category_shapes|"
 msgid "Place the objects matching a CIRCLE to the right and others to the left"
-msgstr "ÇEMBER nesneleri sağ tarafa diğer nesneleri sol tarafa yerleştir"
+msgstr "ÇEMBER nesneleri sağ tarafa, diğer nesneleri sol tarafa yerleştir"
 
 #: activities/categorization/resource/board/category_shapes.qml:34
 msgctxt "category_shapes|"
 msgid ""
 "Place the objects matching a RECTANGLE to the right and others to the left"
-msgstr "DİKDÖRTGEN nesneleri sağ tarafa diğer nesneleri sol tarafa yerleştir"
+msgstr "DİKDÖRTGEN nesneleri sağ tarafa, diğer nesneleri sol tarafa yerleştir"
 
 #: activities/categorization/resource/board/category_shapes.qml:43
 msgctxt "category_shapes|"
 msgid "Place the objects matching a SPHERE to the right and others to the left"
-msgstr "KÜRE nesneleri sağ tarafa diğer nesneleri sol tarafa yerleştir"
+msgstr "KÜRE nesneleri sağ tarafa, diğer nesneleri sol tarafa yerleştir"
 
 #: activities/categorization/resource/board/category_shapes.qml:52
 msgctxt "category_shapes|"
 msgid ""
 "Place the objects matching a TRAPEZOID to the right and others to the left"
-msgstr "YAMUK nesneleri sağ tarafa diğer nesneleri sol tarafa yerleştir"
+msgstr "YAMUK nesneleri sağ tarafa, diğer nesneleri sol tarafa yerleştir"
 
 #: activities/categorization/resource/board/category_shapes.qml:61
 msgctxt "category_shapes|"
 msgid ""
 "Place the objects matching a TRIANGLE to the right and others to the left"
-msgstr "ÜÇGEN nesneleri sağ tarafa diğer nesneleri sol tarafa yerleştir"
+msgstr "ÜÇGEN nesneleri sağ tarafa, diğer nesneleri sol tarafa yerleştir"
 
 #: activities/categorization/resource/board/category_shapes.qml:70
 msgctxt "category_shapes|"
 msgid ""
 "Place the objects matching a SEMICIRCLE to the right and others to the left"
-msgstr "YARIM DAİRE nesneleri sağ tarafa diğer nesneleri sol tarafa yerleştir"
+msgstr "YARIM DAİRE nesneleri sağ tarafa, diğer nesneleri sol tarafa yerleştir"
 
 #: activities/categorization/resource/board/category_shapes.qml:79
 msgctxt "category_shapes|"
 msgid ""
 "Place the objects matching a PENTAGON to the right and others to the left"
-msgstr "BEŞGEN nesneleri sağ tarafa diğer nesneleri sol tarafa yerleştir"
+msgstr "BEŞGEN nesneleri sağ tarafa, diğer nesneleri sol tarafa yerleştir"
 
 #: activities/categorization/resource/board/category_shapes.qml:88
 msgctxt "category_shapes|"
 msgid "Place the objects matching a SQUARE to the right and others to the left"
-msgstr "KARE nesneleri sağ tarafa diğer nesneleri sol tarafa yerleştir"
+msgstr "KARE nesneleri sağ tarafa, diğer nesneleri sol tarafa yerleştir"
 
 #: activities/categorization/resource/board/category_shapes.qml:97
 msgctxt "category_shapes|"
 msgid "Place the objects matching a CONE to the right and others to the left"
-msgstr "KONİK nesneleri sağ tarafa diğer nesneleri sol tarafa yerleştir"
+msgstr "KONİK nesneleri sağ tarafa, diğer nesneleri sol tarafa yerleştir"
 
 #: activities/categorization/resource/board/category_shapes.qml:106
 msgctxt "category_shapes|"
 msgid ""
 "Place the objects matching a PARALLELOGRAM to the right and others to the "
 "left"
-msgstr "PARALELKENAR nesneleri sağ tarafa diğer nesneleri sol tarafa yerleştir"
+msgstr ""
+"PARALELKENAR nesneleri sağ tarafa, diğer nesneleri sol tarafa yerleştir"
 
 #: activities/categorization/resource/board/category_shapes.qml:115
 msgctxt "category_shapes|"
 msgid ""
 "Place the objects matching a HEPTAGON to the right and others to the left"
-msgstr "YEDİGEN nesneleri sağ tarafa diğer nesneleri sol tarafa yerleştir"
+msgstr "YEDİGEN nesneleri sağ tarafa, diğer nesneleri sol tarafa yerleştir"
 
 #: activities/categorization/resource/board/category_shapes.qml:124
 msgctxt "category_shapes|"
 msgid "Place the objects matching a CUBE to the right and others to the left"
-msgstr "KÜP olan nesneleri sağ tarafa diğer nesneleri sol tarafa yerleştir"
+msgstr "KÜP nesneleri sağ tarafa, diğer nesneleri sol tarafa yerleştir"
 
 #: activities/categorization/resource/board/category_shapes.qml:133
 msgctxt "category_shapes|"
 msgid ""
 "Place the objects matching a RHOMBUS to the right and others to the left"
 msgstr ""
-"EŞKENAR DÖRTGEN olan nesneleri sağ tarafa diğer nesneleri sol tarafa "
-"yerleştir"
+"EŞKENAR DÖRTGEN nesneleri sağ tarafa, diğer nesneleri sol tarafa yerleştir"
 
 #: activities/categorization/resource/board/category_shapes.qml:142
 msgctxt "category_shapes|"
 msgid ""
 "Place the objects matching a NONAGON to the right and others to the left"
-msgstr ""
-"DOKUZGEN olan nesneleri sağ tarafa diğer nesneleri sol tarafa yerleştir"
+msgstr "DOKUZGEN nesneleri sağ tarafa, diğer nesneleri sol tarafa yerleştir"
 
 #: activities/categorization/resource/board/category_shapes.qml:151
 msgctxt "category_shapes|"
 msgid "Place the objects matching a CUBOID to the right and others to the left"
-msgstr "KÜBOİD olan nesneleri sağ tarafa diğer nesneleri sol tarafa yerleştir"
+msgstr "KÜBOİD nesneleri sağ tarafa, diğer nesneleri sol tarafa yerleştir"
 
 #: activities/categorization/resource/board/category_shapes.qml:160
 msgctxt "category_shapes|"
 msgid ""
 "Place the objects matching a HEXAGON to the right and others to the left"
-msgstr "ALTIGEN olan nesneleri sağ tarafa diğer nesneleri sol tarafa yerleştir"
+msgstr "ALTIGEN nesneleri sağ tarafa, diğer nesneleri sol tarafa yerleştir"
 
 #: activities/categorization/resource/board/category_shapes.qml:169
 msgctxt "category_shapes|"
 msgid ""
 "Place the objects matching an OCTAGON to the right and others to the left"
-msgstr ""
-"SEKİZGEN olan nesneleri sağ tarafa diğer nesneleri sol tarafa yerleştir"
+msgstr "SEKİZGEN nesneleri sağ tarafa, diğer nesneleri sol tarafa yerleştir"
 
 #: activities/categorization/resource/board/category_shapes.qml:178
 msgctxt "category_shapes|"
 msgid ""
 "Place the objects matching a CYLINDER to the right and others to the left"
-msgstr ""
-"SİLİNDİR olan nesneleri sağ tarafa diğer nesneleri sol tarafa yerleştir"
+msgstr "SİLİNDİR nesneleri sağ tarafa, diğer nesneleri sol tarafa yerleştir"
 
 #: activities/categorization/resource/board/category_shapes.qml:187
 msgctxt "category_shapes|"
 msgid ""
 "Place the objects matching a DECAGON to the right and others to the left"
-msgstr "DEKAGON olan nesneleri sağ tarafa diğer nesneleri sol tarafa yerleştir"
+msgstr "DEKAGON nesneleri sağ tarafa, diğer nesneleri sol tarafa yerleştir"
 
 #: activities/categorization/resource/board/category_tools.qml:19
 msgctxt "category_tools|"
@@ -3903,7 +3886,7 @@ msgstr "Araçlar"
 #: activities/categorization/resource/board/category_tools.qml:104
 msgctxt "category_tools|"
 msgid "Place the TOOLS to the right and other objects to the left"
-msgstr "ALETLERİ sağ tarafa diğer nesneleri sol tarafa yerleştir"
+msgstr "ARAÇLARI sağ tarafa, diğer nesneleri sol tarafa yerleştir"
 
 #: activities/categorization/resource/board/category_transports.qml:19
 msgctxt "category_transports|"
@@ -3923,7 +3906,7 @@ msgstr "Ulaşım"
 msgctxt "category_transports|"
 msgid ""
 "Place the MEANS OF TRANSPORTATION to the right and other objects to the left"
-msgstr "ULAŞIM ARAÇLARINI sağ tarafa diğer nesneleri sol tarafa yerleştir"
+msgstr "ULAŞIM ARAÇLARINI sağ tarafa, diğer nesneleri sol tarafa yerleştir"
 
 #: activities/categorization/resource/board/category_vegetables.qml:19
 msgctxt "category_vegetables|"
@@ -3938,23 +3921,20 @@ msgstr "Sebzeler"
 #: activities/categorization/resource/board/category_vegetables.qml:68
 msgctxt "category_vegetables|"
 msgid "Place the VEGETABLES to the right and other objects to the left"
-msgstr "SEBZELERİ sağ tarafa diğer nesneleri sol tarafa yerleştir"
+msgstr "SEBZELERİ sağ tarafa, diğer nesneleri sol tarafa yerleştir"
 
 #. Activity title
 #: activities/checkers/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Play chess against Tux"
 msgctxt "ActivityInfo|"
 msgid "Play checkers (against Tux)"
-msgstr "Tux'a karşı satranç oyna"
+msgstr "Tux'a karşı dama oyna"
 
 #. Help title
 #: activities/checkers/ActivityInfo.qml:17
 #: activities/checkers_2players/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "The version in GCompris is the international draughts."
-msgstr "GCompris'deki sürüm uluslararası taslaklardır."
+msgstr "GCompris'deki sürüm uluslararası taslaklardadır."
 
 #. Help goal
 #: activities/checkers/ActivityInfo.qml:20
