@@ -18469,13 +18469,13 @@ msgstr ""
 "Ko boste pripravljeni, kliknite na Tuxa in se bomo pogovarjali v Morsejevi "
 "kodi."
 
-#: activities/morse_code/MorseCode.qml:346
+#: activities/morse_code/MorseCode.qml:349
 #, qt-format
 msgctxt "MorseCode|"
 msgid "Morse value: %1"
 msgstr "Morsejeva vrednost: %1"
 
-#: activities/morse_code/MorseCode.qml:347
+#: activities/morse_code/MorseCode.qml:350
 #, qt-format
 msgctxt "MorseCode|"
 msgid "Alphabet/Numeric value: %1"

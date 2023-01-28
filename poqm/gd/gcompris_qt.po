@@ -21111,7 +21111,7 @@ msgstr ""
 "Nuair a bhios tu deiseil, briog orm is feuch an ath-chruthaich thu na "
 "caractaran Braille."
 
-#: activities/morse_code/MorseCode.qml:346
+#: activities/morse_code/MorseCode.qml:349
 #, fuzzy, qt-format
 #| msgctxt "RomanNumerals|"
 #| msgid "Roman value: %1"
@@ -21119,7 +21119,7 @@ msgctxt "MorseCode|"
 msgid "Morse value: %1"
 msgstr "An luach Ròmanach: %1"
 
-#: activities/morse_code/MorseCode.qml:347
+#: activities/morse_code/MorseCode.qml:350
 #, fuzzy, qt-format
 #| msgctxt "RomanNumerals|"
 #| msgid "Arabic value: %1"

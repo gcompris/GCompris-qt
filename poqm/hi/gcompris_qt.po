@@ -20610,7 +20610,7 @@ msgctxt "FirstScreen|"
 msgid "When you are ready, click on Tux and we will converse in Morse code."
 msgstr "जब आप तैयार हों, तो मुझ पर क्लिक करें और ब्रेल वर्ण पुन: प्रस्तुत करने का प्रयास करें।"
 
-#: activities/morse_code/MorseCode.qml:346
+#: activities/morse_code/MorseCode.qml:349
 #, fuzzy, qt-format
 #| msgctxt "RomanNumerals|"
 #| msgid "Roman value: %1"
@@ -20618,7 +20618,7 @@ msgctxt "MorseCode|"
 msgid "Morse value: %1"
 msgstr "रोमन मूल्य:  %1"
 
-#: activities/morse_code/MorseCode.qml:347
+#: activities/morse_code/MorseCode.qml:350
 #, fuzzy, qt-format
 #| msgctxt "RomanNumerals|"
 #| msgid "Arabic value: %1"

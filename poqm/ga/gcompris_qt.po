@@ -19472,7 +19472,7 @@ msgstr ""
 "Nuair atá tú réidh, cliceáil orm agus bain triail as carachtair Braille a "
 "athdhéanamh."
 
-#: activities/morse_code/MorseCode.qml:346
+#: activities/morse_code/MorseCode.qml:349
 #, fuzzy, qt-format
 #| msgctxt "RomanNumerals|"
 #| msgid "Roman value: %1"
@@ -19480,7 +19480,7 @@ msgctxt "MorseCode|"
 msgid "Morse value: %1"
 msgstr "Luach Rómhánach: %1"
 
-#: activities/morse_code/MorseCode.qml:347
+#: activities/morse_code/MorseCode.qml:350
 #, fuzzy, qt-format
 #| msgctxt "RomanNumerals|"
 #| msgid "Arabic value: %1"

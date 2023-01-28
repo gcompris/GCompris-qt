@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_qt\n"
-"PO-Revision-Date: 2023-01-07 14:18+0100\n"
+"PO-Revision-Date: 2023-01-22 01:00+0100\n"
 "Last-Translator: Vincenzo Reale <smart2128vr@gmail.com>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
 "Language: it\n"
@@ -18753,13 +18753,13 @@ msgctxt "FirstScreen|"
 msgid "When you are ready, click on Tux and we will converse in Morse code."
 msgstr "Quando sei pronto, fai clic su Tux e converseremo in codice Morse."
 
-#: activities/morse_code/MorseCode.qml:346
+#: activities/morse_code/MorseCode.qml:349
 #, qt-format
 msgctxt "MorseCode|"
 msgid "Morse value: %1"
 msgstr "Valore Morse: %1"
 
-#: activities/morse_code/MorseCode.qml:347
+#: activities/morse_code/MorseCode.qml:350
 #, qt-format
 msgctxt "MorseCode|"
 msgid "Alphabet/Numeric value: %1"
@@ -25317,12 +25317,9 @@ msgid "Type the complete word as it falls, before it reaches the ground."
 msgstr "Digita la parola completa mentre cade, prima che tocchi terra."
 
 #: core/ChangeLog.qml:30
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Fix some categories in categorization activity."
 msgctxt "ChangeLog|"
 msgid "Fix issue in comparator activity"
-msgstr "Corrette alcune categorie nell'attività di categorizzazione."
+msgstr "Risolto il problema nell'attività dello strumento di confronto"
 
 #: core/ChangeLog.qml:34
 msgctxt "ChangeLog|"

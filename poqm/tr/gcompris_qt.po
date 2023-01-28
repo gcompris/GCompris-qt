@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2023-01-26 20:15+0300\n"
+"PO-Revision-Date: 2023-01-27 20:57+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -3943,7 +3943,8 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Capture all the pieces of your opponent before your opponent captures all of "
 "yours."
-msgstr "Rakibin tüm taşlarını almadan önce sen rakibinin taşlarını almalısın."
+msgstr ""
+"Rakibin senin tüm taşlarını almadan önce rakibinin tüm taşlarını ele geçir."
 
 #. Help manual
 #: activities/checkers/ActivityInfo.qml:24
@@ -4013,19 +4014,19 @@ msgid ""
 "draughts.js&gt;. Manual is from wikipedia &lt;https://en.wikipedia.org/wiki/"
 "Draughts&gt;"
 msgstr ""
-"Dama kitaplığı draughts.js &lt;https://github.com/shubhendusaurabh/draughts."
-"js&gt;. Wikipedia'daki kullanım kılavuzu &lt;https://en.wikipedia.org/wiki/"
+"Dama kitaplığı: draughts.js &lt;https://github.com/shubhendusaurabh/draughts."
+"js&gt;. Wikipedia'daki kullanım kılavuzu: &lt;https://en.wikipedia.org/wiki/"
 "Draughts&gt;"
 
 #: activities/checkers/checkers.js:75
 msgctxt "checkers|"
 msgid "Black's turn"
-msgstr "Sıra Siyahta"
+msgstr "Sıra siyahta"
 
 #: activities/checkers/checkers.js:75
 msgctxt "checkers|"
 msgid "White's turn"
-msgstr "Sıra Beyazda"
+msgstr "Sıra beyazda"
 
 #: activities/checkers/checkers.js:78
 msgctxt "checkers|"
@@ -4039,12 +4040,9 @@ msgstr "Siyah kazandı"
 
 #. Activity title
 #: activities/checkers_2players/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Play checkers with your friend"
 msgctxt "ActivityInfo|"
 msgid "Play checkers (with a friend)"
-msgstr "Bir arkadaşın ile dama oyna"
+msgstr "Dama oyna (arkadaşınla)"
 
 #. Help manual
 #: activities/checkers_2players/ActivityInfo.qml:24
@@ -4087,12 +4085,9 @@ msgstr ""
 
 #. Activity title
 #: activities/chess/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Play chess against Tux"
 msgctxt "ActivityInfo|"
 msgid "Play chess (against Tux)"
-msgstr "Tux'a karşı satranç oyna"
+msgstr "Satranç oyna (Tux'a karşı)"
 
 #. Help manual Much of this string is shared across the three activities "chess", "chess_partyend", and "chess_2players".
 #: activities/chess/ActivityInfo.qml:25
@@ -4163,6 +4158,9 @@ msgid ""
 "will redo one move. To undo all the moves, press and hold the undo button "
 "for 3 seconds."
 msgstr ""
+"Geri al düğmesine tek tıklama, bir hareketi geri alır. Yinele düğmesine tek "
+"tıklama, bir hareketi yeniden yapar. Tüm hareketleri geri almak için geri "
+"alma düğmesini 3 saniye basılı tut."
 
 #: activities/chess/ActivityInfo.qml:33
 #: activities/chess_partyend/ActivityInfo.qml:33
@@ -4170,7 +4168,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "The chess engine is p4wn &lt;https://github.com/douglasbagnall/p4wn&gt;."
 msgstr ""
-"Satranç motoru p4wn dir &lt;https://github.com/douglasbagnall/p4wn&gt;."
+"Satranç işletkesi: p4wn dir &lt;https://github.com/douglasbagnall/p4wn&gt;."
 
 #: activities/chess/chess.js:123
 msgctxt "chess|"
@@ -4210,41 +4208,29 @@ msgstr "Siyah şah çekti"
 #: activities/chess/chess.js:145
 msgctxt "chess|"
 msgid "Invalid, your king may be in check"
-msgstr "Geçersiz, kralın şah çekilebilir"
+msgstr "Geçersiz, kralına şah çekilebilir"
 
 #. Translators: undo all the moves in chess activity
 #: activities/chess/Chess.qml:123
-#, fuzzy
-#| msgctxt "core|"
-#| msgid "Do you really want to quit GCompris?"
 msgctxt "Chess|"
 msgid "Do you really want to undo all the moves?"
-msgstr "Gerçekten GCompris'ten çıkmak istiyor musun?"
+msgstr "Tüm hareketleri gerçekten geri almak istiyor musunuz?"
 
 #: activities/chess/Chess.qml:124
-#, fuzzy
-#| msgctxt "balanceboxeditor|"
-#| msgid "Yes"
 msgctxt "Chess|"
 msgid "Yes"
 msgstr "Evet"
 
 #: activities/chess/Chess.qml:125
-#, fuzzy
-#| msgctxt "balanceboxeditor|"
-#| msgid "No"
 msgctxt "Chess|"
 msgid "No"
 msgstr "Hayır"
 
 #. Activity title
 #: activities/chess_2players/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Bargame (with a friend)"
 msgctxt "ActivityInfo|"
 msgid "Play chess (with a friend)"
-msgstr "Bar oyunu (arkadaş ile)"
+msgstr "Satranç oyna (arkadaşınla)"
 
 #. Help manual Much of this string is shared across the three activities "chess", "chess_partyend", and "chess_2players".
 #: activities/chess_2players/ActivityInfo.qml:25
@@ -4337,7 +4323,7 @@ msgstr "Kronos (Zaman)"
 #: activities/chronos/ActivityInfo.qml:21
 msgctxt "ActivityInfo|"
 msgid "Drag and Drop the items to organize the story."
-msgstr "Hikayeyi düzenlemek için nesneleri sürükleyip bırak."
+msgstr "Hikayeyi düzenlemek için nesneleri sürükle ve bırak."
 
 #. Help goal
 #: activities/chronos/ActivityInfo.qml:24
@@ -4362,7 +4348,7 @@ msgstr "Yandaki resimleri seç ve doğru sırayla noktalara yerleştir."
 #: activities/chronos/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Then, click on the OK button to validate your answer."
-msgstr "Ardından, Yanıtını doğrulamak için OK düğmesine tıkla."
+msgstr "Ardından, yanıtını doğrulamak için OK düğmesine tıkla."
 
 #: activities/chronos/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
@@ -4490,12 +4476,12 @@ msgstr "4"
 #: activities/chronos/resource/board/board5_0.qml:15
 msgctxt "board5_0|"
 msgid "Place each object on the date it was invented."
-msgstr "Her nesneyi icat edildiği tarihe yerleştir."
+msgstr "Nesneleri icat edildikleri tarihlere yerleştir."
 
 #: activities/chronos/resource/board/board5_0.qml:32
 msgctxt "board5_0|"
 msgid "1829 Stephenson's Rocket Steam locomotive"
-msgstr "1829 Stefen'ın Roket Buharlı Lokomotifi"
+msgstr "1829 Stefenson'un Roket Buharlı Lokomotifi"
 
 #: activities/chronos/resource/board/board5_0.qml:40
 msgctxt "board5_0|"
@@ -4510,7 +4496,7 @@ msgstr "Ulaşım"
 #: activities/chronos/resource/board/board5_1.qml:14
 msgctxt "board5_1|"
 msgid "Transportation"
-msgstr "Taşıma"
+msgstr "Ulaşım"
 
 #: activities/chronos/resource/board/board5_1.qml:38
 msgctxt "board5_1|"
@@ -4520,7 +4506,7 @@ msgstr "1783 Montgolfier kardeşlerin sıcak hava balonu"
 #: activities/chronos/resource/board/board5_1.qml:46
 msgctxt "board5_1|"
 msgid "1880 Clement Ader's Eole"
-msgstr "1880 Clement Ader Eole uçağı"
+msgstr "1880 Clement Ader'in Eole uçağı"
 
 #: activities/chronos/resource/board/board5_1.qml:54
 msgctxt "board5_1|"
@@ -4545,7 +4531,7 @@ msgstr "1769 Cugnot'un buharlı vagonu"
 #: activities/chronos/resource/board/board5_2.qml:54
 msgctxt "board5_2|"
 msgid "1880 Clement Ader's Eole"
-msgstr "1880 Clement Ader'in Eole Uçağı"
+msgstr "1880 Clement Ader'in Eole uçağı"
 
 #: activities/chronos/resource/board/board5_3.qml:14
 msgctxt "board5_3|"
@@ -4555,7 +4541,7 @@ msgstr "Ulaşım"
 #: activities/chronos/resource/board/board5_3.qml:38
 msgctxt "board5_3|"
 msgid "1791 Comte de Sivrac's Celerifere"
-msgstr "1791 Comte de Sivrac'ın Celerifere"
+msgstr "1791 Comte de Sivrac'ın Celerifere'si (bisiklet)"
 
 #: activities/chronos/resource/board/board5_3.qml:46
 msgctxt "board5_3|"
@@ -4565,22 +4551,22 @@ msgstr "1783 Montgolfier kardeşlerin sıcak hava balonu"
 #: activities/chronos/resource/board/board5_3.qml:54
 msgctxt "board5_3|"
 msgid "1829 Stephenson's Rocket Steam locomotive"
-msgstr "1829 Stefen'ın Roket Buharlı lokomotifi"
+msgstr "1829 Stefen'ın Roket Buharlı Lokomotifi"
 
 #: activities/chronos/resource/board/board5_4.qml:14
 msgctxt "board5_4|"
 msgid "Transportation"
-msgstr "Taşımacılık"
+msgstr "Ulaşım"
 
 #: activities/chronos/resource/board/board5_4.qml:38
 msgctxt "board5_4|"
 msgid "1829 Stephenson's Rocket Steam locomotive"
-msgstr "1829 Stefen'ın Roket Buharlı lokomotifi"
+msgstr "1829 Stefen'ın Roket Buharlı Lokomotifi"
 
 #: activities/chronos/resource/board/board5_4.qml:46
 msgctxt "board5_4|"
 msgid "1880 Clement Ader's Eole"
-msgstr "1880 Clement Ader'in Eole Uçağı"
+msgstr "1880 Clement Ader'in Eole uçağı"
 
 #: activities/chronos/resource/board/board5_4.qml:54
 msgctxt "board5_4|"
@@ -4600,12 +4586,12 @@ msgstr "1880 Clement Ader'in Eole uçağı"
 #: activities/chronos/resource/board/board6_0.qml:47
 msgctxt "board6_0|"
 msgid "1903 The Wright brothers' Flyer III"
-msgstr "1903 Wright kardeşler Uçuş III"
+msgstr "1903 Wright kardeşler'in Flyear III'ü"
 
 #: activities/chronos/resource/board/board6_0.qml:55
 msgctxt "board6_0|"
 msgid "1909 Louis Bleriot crosses the English Channel"
-msgstr "1909'de Louis Bleriot İngiltere kanalını geçiyor"
+msgstr "1909'de Louis Bleriot İngiliz Kanalı'nı geçti"
 
 #: activities/chronos/resource/board/board6_1.qml:14
 msgctxt "board6_1|"
@@ -4620,12 +4606,12 @@ msgstr "1947 Chuck Yeager ses sınırını aştı"
 #: activities/chronos/resource/board/board6_1.qml:46
 msgctxt "board6_1|"
 msgid "1927 Charles Lindbergh crosses the Atlantic Ocean"
-msgstr "1927'de Charles Lindbergh Atlantik okyanusunu geçiyor"
+msgstr "1927'de Charles Lindbergh Atlantik okyanusunu geçti"
 
 #: activities/chronos/resource/board/board6_1.qml:54
 msgctxt "board6_1|"
 msgid "1934 Hélène Boucher's speed record of 444km/h"
-msgstr "1934'te Hélène Boucher'ın hız rekoru 444km/h"
+msgstr "1934'te Hélène Boucher'ın 444km/saatlik hız rekoru"
 
 #: activities/chronos/resource/board/board6_2.qml:14
 msgctxt "board6_2|"
@@ -4635,7 +4621,7 @@ msgstr "Arabalar"
 #: activities/chronos/resource/board/board6_2.qml:38
 msgctxt "board6_2|"
 msgid "1878 Amédée Bollée's La Mancelle"
-msgstr "1878 Léon Bollé'un La Mancelle"
+msgstr "1878 Léon Bollé'un La Mancelle'i"
 
 #: activities/chronos/resource/board/board6_2.qml:46
 msgctxt "board6_2|"
@@ -4645,7 +4631,7 @@ msgstr "1769 Cugnot'un buharlı vagonu"
 #: activities/chronos/resource/board/board6_2.qml:54
 msgctxt "board6_2|"
 msgid "1885 The first petrol car by Benz"
-msgstr "1885 Benz'in ilk benzinli arabası"
+msgstr "1885 Benz tarafından yapılan ilk benzinli araba"
 
 #: activities/chronos/resource/board/board6_3.qml:14
 msgctxt "board6_3|"
@@ -4685,21 +4671,21 @@ msgstr "Yerel ayarını seç"
 #: activities/click_on_letter/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Click on a lowercase letter"
-msgstr "Küçük bir harfin üzerine tıkla"
+msgstr "Bir küçük harfin üzerine tıkla"
 
 #. Help title
 #: activities/click_on_letter/ActivityInfo.qml:17
 #: activities/click_on_letter_up/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Listen to a letter and click on it."
-msgstr "Harfi dinle ve doğru olanın üzerine tıkla."
+msgstr "Bir harfi dinle ve doğru olanın üzerine tıkla."
 
 #. Help goal
 #: activities/click_on_letter/ActivityInfo.qml:20
 #: activities/click_on_letter_up/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Letter-name recognition."
-msgstr "Harfleri tanıma."
+msgstr "Harfleri tanı."
 
 #. Help prerequisite
 #: activities/click_on_letter/ActivityInfo.qml:22
@@ -4732,13 +4718,13 @@ msgstr "Boşluk: bir öğe seç"
 #: activities/colors/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Tab: repeat the question"
-msgstr "Sekme: soruyu tekrarla"
+msgstr "Sekme: Soruyu yinele"
 
 #. Activity title
 #: activities/click_on_letter_up/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Click on an uppercase letter"
-msgstr "Büyük bir harfe tıkla"
+msgstr "Bir büyük harfe tıkla"
 
 #: activities/clickanddraw/ActivityConfig.qml:21
 #: activities/drawletters/ActivityConfig.qml:21
@@ -4799,29 +4785,26 @@ msgid ""
 "Draw the picture by clicking on each point in sequence. Each time a point is "
 "selected the next blue one appears."
 msgstr ""
-"Sırayla her noktaya tıklayarak resmi çiz. Her nokta seçildiğinde bir sonraki "
-"mavi nokta belirir."
+"Sırayla her noktaya tıklayarak resmi çiz. Bir nokta her seçildiğinde bir "
+"sonraki mavi olan belirir."
 
 #. Activity title
 #: activities/clickgame/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Click On Me"
 msgctxt "ActivityInfo|"
 msgid "Click on me"
-msgstr "Bana tıkla"
+msgstr "Üzerime tıkla"
 
 #. Help title
 #: activities/clickgame/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Catch all the swimming fish before they leave the fish tank."
-msgstr "Balıklar akvaryumdan çıkmadan önce tüm yüzen balıkları yakala."
+msgstr "Balıklar akvaryumdan çıkmadan önce yüzen tüm balıkları yakala."
 
 #. Help goal
 #: activities/clickgame/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Motor coordination: moving the hand precisely."
-msgstr "Motor düzeni: elini düzenli olarak hareket ettir."
+msgstr "Motor koordinasyonu: Elini kesin hareketlerle hareket ettir."
 
 #. Help prerequisite
 #: activities/clickgame/ActivityInfo.qml:22
@@ -4838,37 +4821,25 @@ msgstr ""
 "Tıklayarak veya parmağınla dokunarak hareket eden tüm balıkları yakala."
 
 #: activities/clockgame/ActivityConfig.qml:23
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "12 hours"
 msgctxt "ActivityConfig|"
 msgid "12 hours"
 msgstr "12 saat"
 
 #: activities/clockgame/ActivityConfig.qml:24
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "24 hours"
 msgctxt "ActivityConfig|"
 msgid "24 hours"
 msgstr "24 saat"
 
 #: activities/clockgame/ActivityConfig.qml:33
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Select your locale"
 msgctxt "ActivityConfig|"
 msgid "Select a clock system"
-msgstr "Yerel ayarını seç"
+msgstr "Bir saat sistemi seç"
 
 #. Activity title
 #: activities/clockgame/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learning Clock"
 msgctxt "ActivityInfo|"
 msgid "Learning clock"
-msgstr "Saatleri öğrenme"
+msgstr "Saatleri öğren"
 
 #. Help title
 #: activities/clockgame/ActivityInfo.qml:17
@@ -4883,7 +4854,7 @@ msgid ""
 "Learn units of time (hours, minutes and seconds). Set the time on an analog "
 "clock."
 msgstr ""
-"Zaman birimlerini öğren (saat, dakika ve saniye). Zamanı analog bir saate "
+"Zaman birimlerini öğren (saat, dakika ve saniye). Analog bir saate saati "
 "ayarla."
 
 #. Help prerequisite
@@ -4899,8 +4870,8 @@ msgid ""
 "Set the clock to the given time. Drag the different hands to control their "
 "respective unit."
 msgstr ""
-"Saati verilen zamana ayarla. İlgili birimi kontrol etmek için farklı "
-"ibreleri sürükle."
+"Saati verilen saate ayarla. İlgili birimi denetlemek için farklı ibreleri "
+"sürükle."
 
 #: activities/clockgame/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
@@ -4908,7 +4879,7 @@ msgid ""
 "The shortest hand indicates the hours, a longer hand indicates the minutes, "
 "and the longest hand indicates the seconds."
 msgstr ""
-"En kısa ibre saatleri (Akrep), uzun ibre dakikaları (Yelkovan) ve en uzun "
+"En kısa ibre saatleri (akrep), uzun ibre dakikaları (yelkovan) ve en uzun "
 "ibre saniyeleri gösterir."
 
 #: activities/clockgame/Clockgame.qml:106
@@ -4943,27 +4914,27 @@ msgstr[1] "%n saniye"
 #: activities/clockgame/resource/1/Data.qml:13
 msgctxt "Data|"
 msgid "Full hours."
-msgstr "Tam."
+msgstr "Tam saatler."
 
 #: activities/clockgame/resource/2/Data.qml:13
 msgctxt "Data|"
 msgid "Half hours."
-msgstr "Yarım."
+msgstr "Yarım saatler."
 
 #: activities/clockgame/resource/3/Data.qml:13
 msgctxt "Data|"
 msgid "Quarters of an hour."
-msgstr "Çeyrek."
+msgstr "Çeyrek saatler."
 
 #: activities/clockgame/resource/4/Data.qml:13
 msgctxt "Data|"
 msgid "Time containing minutes."
-msgstr "Dakika içeren zaman."
+msgstr "Dakikaları içeren saat."
 
 #: activities/clockgame/resource/5/Data.qml:13
 msgctxt "Data|"
 msgid "Time containing minutes and seconds."
-msgstr "Dakika ve saniye içeren zaman."
+msgstr "Dakikaları ve saniyeleri içeren saat."
 
 #: activities/clockgame/resource/6/Data.qml:13
 msgctxt "Data|"
@@ -4974,13 +4945,13 @@ msgstr "İpucu yok."
 #: activities/color_mix/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Mixing paint colors"
-msgstr "Boya renklerini karıştırma"
+msgstr "Boya renklerini karıştır"
 
 #. Help title
 #: activities/color_mix/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Discover paint color mixing."
-msgstr "Boya renk karışımını keşfet."
+msgstr "Boya renklerini karıştırmayı keşfet."
 
 #. Help goal
 #: activities/color_mix/ActivityInfo.qml:20
@@ -5022,9 +4993,9 @@ msgid ""
 "Change the color by moving the sliders on the tubes of paint or by clicking "
 "on the + and - buttons. Then click on the OK button to validate your answer."
 msgstr ""
-"Kaydırıcıları boya tüpleri üzerinde hareket ettirerek veya + ve - "
-"düğmelerine tıklayarak rengi değiştir. Ardından yanıtını doğrulamak için OK "
-"düğmesine tıkla."
+"Sürgüleri boya tüpleri üzerinde hareket ettirerek veya + ve - düğmelerine "
+"tıklayarak rengi değiştir. Ardından yanıtını doğrulamak için OK düğmesine "
+"tıkla."
 
 #: activities/color_mix/ColorMix.qml:88
 msgctxt "ColorMix|"
@@ -5095,13 +5066,13 @@ msgstr "Camgöbeği çok fazla"
 #: activities/color_mix_light/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Mixing light colors"
-msgstr "Açık renkleri karıştırma"
+msgstr "Açık renkleri karıştır"
 
 #. Help title
 #: activities/color_mix_light/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Discover light color mixing."
-msgstr "Açık renk karışımını keşfet."
+msgstr "Açık renkleri karıştırmayı keşfet."
 
 #. Help manual
 #: activities/color_mix_light/ActivityInfo.qml:24
@@ -5121,7 +5092,7 @@ msgid ""
 "light are red, green and blue."
 msgstr ""
 "Açık renkleri karıştırmak, boya renklerini karıştırmanın tam tersidir. Ne "
-"kadar çok ışık eklersen, ortaya çıkan renk o kadar açık olur. Işığın ana "
+"kadar çok ışık eklersen ortaya çıkan renk o kadar açık olur. Işığın ana "
 "renkleri kırmızı, yeşil ve mavidir."
 
 #: activities/color_mix_light/ActivityInfo.qml:26
@@ -5130,7 +5101,7 @@ msgid ""
 "Change the color by moving the sliders on the torches or by clicking on the "
 "+ and - buttons. Then click on the OK button to validate your answer."
 msgstr ""
-"Meşaleler üzerindeki kaydırıcıları hareket ettirerek veya + ve - düğmelerine "
+"Meşaleler üzerindeki sürgüleri hareket ettirerek veya + ve - düğmelerine "
 "tıklayarak rengi değiştir. Ardından yanıtını doğrulamak için OK düğmesine "
 "tıkla."
 
@@ -5162,7 +5133,7 @@ msgstr "Renkleri tanımlama."
 #: activities/colors/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid "Listen to the color and click on the matching duck."
-msgstr "Rengi dinleyin ve eşleşen ördeğe tıkla."
+msgstr "Rengi dinle ve eşleşen ördeğe tıkla."
 
 #: activities/colors/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
@@ -5243,31 +5214,25 @@ msgstr "Çık"
 #: activities/colors/FindIt.qml:237
 msgctxt "FindIt|"
 msgid "Continue"
-msgstr "Devam et"
+msgstr "Sürdür"
 
 #. Activity title
 #: activities/comparator/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Roman numbers"
 msgctxt "ActivityInfo|"
 msgid "Compare numbers"
-msgstr "Roma rakamları"
+msgstr "Sayıları karşılaştır"
 
 #. Help title
 #: activities/comparator/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Compare the numbers and choose the corresponding sign."
-msgstr ""
+msgstr "Sayıları karşılaştır ve karşılık gelen işareti sez."
 
 #. Help goal
 #: activities/comparator/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn about prime numbers."
 msgctxt "ActivityInfo|"
 msgid "Learn how to compare number values."
-msgstr "Asal sayıları öğren."
+msgstr "Sayı değerlerini karşılaştırmayı öğren."
 
 #. Help manual
 #: activities/comparator/ActivityInfo.qml:26
@@ -5277,6 +5242,9 @@ msgid ""
 "symbol for this pair. When each line contains a symbol, select the OK button "
 "to validate the answers."
 msgstr ""
+"Listeden bir çift numara seç. Ardından bu çift için doğru karşılaştırma "
+"sembolünü seç. Her satır bir sembol içerdiğinde, yanıtları doğrulamak için "
+"Tamam düğmesine tıkla."
 
 #: activities/comparator/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
@@ -5284,6 +5252,8 @@ msgid ""
 "If some answers are incorrect, a cross icon will appear on the corresponding "
 "lines. Correct the errors, then select the OK button again."
 msgstr ""
+"Bazı yanıtlar yanlışsa ilgili satırlarda bir çarpı simgesi görünecektir. "
+"Hataları düzelt, ardından yeniden Tamam düğmesine tıkla."
 
 #: activities/comparator/ActivityInfo.qml:29
 #, fuzzy
@@ -5294,17 +5264,14 @@ msgid "Up and Down arrows: select a pair of numbers in the list"
 msgstr "Aşağı ok: önceki öğeyi seç"
 
 #: activities/comparator/ActivityInfo.qml:30
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Left and Right arrows: turn left and right"
 msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: select a symbol button"
-msgstr "Sol ve Sağ oklar: sola ve sağa dön"
+msgstr "Sol ve sağ ok: Bir sembol düğmesi seç"
 
 #: activities/comparator/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
 msgid "Space: if a symbol button is selected, enter this symbol"
-msgstr ""
+msgstr "Boşluk: Bir sembol düğmesi seçiliyse sembolü gir"
 
 #: activities/comparator/ActivityInfo.qml:32
 msgctxt "ActivityInfo|"
@@ -5314,85 +5281,64 @@ msgstr "Dönüş: Yanıtları doğrula"
 #: activities/comparator/ActivityInfo.qml:33
 msgctxt "ActivityInfo|"
 msgid "&lt;, &gt; or =: enter the corresponding symbol"
-msgstr ""
+msgstr "&lt;, &gt; veya =: Karşılık gelen sembolü gir"
 
 #: activities/comparator/resource/1/Data.qml:36
 #: activities/tens_complement_find/resource/3/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "Data|"
 msgid "Numbers from 1 to 9."
-msgstr "0'dan 9'a kadar sayılar."
+msgstr "1'den 0'a kadar rakamlar."
 
 #: activities/comparator/resource/10/Data.qml:14
 msgctxt "Data|"
 msgid "3 decimal places between 0 and 999.999."
-msgstr ""
+msgstr "0 ve 999,999 arasında 3 ondalık basamak."
 
 #: activities/comparator/resource/2/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "Data|"
 msgid "Numbers from 1 to 19."
-msgstr "0'dan 9'a kadar sayılar."
+msgstr "1'den 19'a kadar sayılar."
 
 #: activities/comparator/resource/3/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "Data|"
 msgid "Numbers from 1 to 100."
-msgstr "0'dan 9'a kadar sayılar."
+msgstr "1'den 100'e kadar sayılar."
 
 #: activities/comparator/resource/4/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "Data|"
 msgid "Numbers from 1 to 1000."
-msgstr "0'dan 9'a kadar sayılar."
+msgstr "1'den 1000'e kadar sayılar."
 
 #: activities/comparator/resource/5/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "Data|"
 msgid "Numbers from 1 to 1000000."
-msgstr "0'dan 9'a kadar sayılar."
+msgstr "1'den 1000000'e kadar sayılar."
 
 #: activities/comparator/resource/6/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "Data|"
 msgid "Numbers from 1 to 1 billion."
-msgstr "0'dan 9'a kadar sayılar."
+msgstr "1'den 1 milyara kadar rakamlar."
 
 #: activities/comparator/resource/7/Data.qml:14
 msgctxt "Data|"
 msgid "1 decimal place between 0 and 9.9, same integer part."
-msgstr ""
+msgstr "0 ile 9,9 arasında 1 ondalık basamak, aynı tamsayı kısım."
 
 #: activities/comparator/resource/8/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between 1 and 8."
 msgctxt "Data|"
 msgid "1 decimal place between 0 and 9.9."
-msgstr "1 ile 8 arası sayılar."
+msgstr "0 ile 9,9 arasında 1 ondalık basamak."
 
 #: activities/comparator/resource/9/Data.qml:14
 msgctxt "Data|"
 msgid "2 decimal places between 0 and 99.99."
-msgstr ""
+msgstr "0 ve 99,99 arasında 2 ondalık basamak."
 
 #. Activity title
 #: activities/crane/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Build the same model"
-msgstr "Aynı modeli oluştur"
+msgstr "Aynı modeli yap"
 
 #. Help title
 #: activities/crane/ActivityInfo.qml:22
@@ -5404,7 +5350,7 @@ msgstr "Vinci sür ve modeli kopyala."
 #: activities/crane/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "Practice motor-coordination."
-msgstr "Motor koordinasyonu uygula."
+msgstr "Motor koordinasyon pratiği yap."
 
 #. Help prerequisite
 #: activities/crane/ActivityInfo.qml:27
@@ -5442,8 +5388,8 @@ msgctxt "crane|"
 msgid ""
 "cat;dog;win;red;yes;big;box;air;arm;car;bus;fun;day;eat;hat;leg;ice;old;egg"
 msgstr ""
-"kedi; köpek; kazan; kırmızı; evet; büyük; kutu; hava; kol; araba; otobüs; "
-"eğlence; gün; yemek; şapka; bacak; buz; eski; yumurta"
+"kedi;köpek;kazan;kırmızı;evet;büyük;kutu;hava;kol;araba;otobüs;eğlence;gün;"
+"yemek;şapka;bacak buz;eski;yumurta"
 
 #. Translators: NOTE: Word list for crane activity. Translate this into a list of 10–20 simple 4-letter words separated by semi-colons. The words can only contain lowercase ASCII letters (a–z). Example: blue;best;good;area
 #: activities/crane/crane.js:52
@@ -5452,8 +5398,8 @@ msgid ""
 "blue;best;good;area;bell;coat;easy;farm;food;else;girl;give;hero;help;hour;"
 "sand;song"
 msgstr ""
-"mavi; en iyi; iyi; alan; zil; ceket; kolay; çiftlik; yiyecek; başka; kız; "
-"ver; kahraman; yardım; saat; kum; şarkı"
+"mavi;en iyi;iyi;alan;zil;ceket;kolay;çiftlik;yiyecek;başka;kız;ver;kahraman;"
+"yardım;saat;kum;şarkı"
 
 #. Translators: NOTE: Word list for crane activity. Translate this into a list of 10–20 simple 5-letter words separated by semi-colons. The words can only contain lowercase ASCII letters (a–z). Example: happy;child;white;apple
 #: activities/crane/crane.js:59
@@ -5462,8 +5408,8 @@ msgid ""
 "happy;child;white;apple;brown;truth;fresh;green;horse;hotel;house;paper;"
 "shape;shirt;study"
 msgstr ""
-"mutlu; çocuk; beyaz; elma; kahverengi; gerçek; taze; yeşil; at; otel; ev; "
-"kağıt; şekil; gömlek; çalışma"
+"mutlu;çocuk;beyaz;elma;kahverengi;gerçek;taze;yeşil;at;otel;ev;kağıt;şekil;"
+"gömlek;çalışma"
 
 #: activities/crane/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -5498,7 +5444,7 @@ msgid ""
 "Complete the puzzle by dragging each piece on the side to the matching space "
 "in the puzzle."
 msgstr ""
-"Yan taraftaki her bir parçayı yapboz'daki eşleşen alana sürükleyerek "
+"Yan taraftaki her bir parçayı yapbozdaki eşleşen alana sürükleyerek "
 "bulmacayı tamamla."
 
 #: activities/details/ActivityInfo.qml:28
@@ -5514,7 +5460,7 @@ msgstr "Resimlerle oyna."
 #: activities/details/resource/2/Data.qml:13
 msgctxt "Data|"
 msgid "Play with simple photographs."
-msgstr "Basit fotoğraflarla oyna."
+msgstr "Yalın fotoğraflarla oyna."
 
 #: activities/details/resource/3/Data.qml:13
 msgctxt "Data|"
@@ -5529,7 +5475,7 @@ msgstr "Eilean Donan kalesi"
 #: activities/details/resource/board/board11_0.qml:14
 msgctxt "board11_0|"
 msgid "Gizah Pyramids, Egypt"
-msgstr "Gize Piramitleri, Mısır"
+msgstr "Giza Piramitleri, Mısır"
 
 #: activities/details/resource/board/board12_0.qml:14
 msgctxt "board12_0|"
@@ -5544,12 +5490,12 @@ msgstr "Londra'daki Tower Bridge Köprüsü"
 #: activities/details/resource/board/board14_0.qml:14
 msgctxt "board14_0|"
 msgid "Eiffel Tower, seen from the champ de Mars, Paris, France"
-msgstr "Eyfel Kulesi, champ de Mars'tan görüldü, Paris, Fransa"
+msgstr "Eyfel Kulesi, Champ de Mars'tan görüldüğü biçimde; Paris, Fransa"
 
 #: activities/details/resource/board/board15_0.qml:14
 msgctxt "board15_0|"
 msgid "Courtyard of the Museum of Louvre, and its pyramid"
-msgstr "Louvre Müzesinin Avlusu ve piramidi"
+msgstr "Louvre Müzesi'nin avlusu ve piramidi"
 
 #: activities/details/resource/board/board16_0.qml:14
 msgctxt "board16_0|"
@@ -5564,7 +5510,7 @@ msgstr "Sønderho Rüzgar Gülü, Fanø, Denmark"
 #: activities/details/resource/board/board18_0.qml:14
 msgctxt "board18_0|"
 msgid "Nagoya Castle, Aichi Prefecture, Japan."
-msgstr "Nagoya Kalesi, Aichi Prefecture, Japonya."
+msgstr "Nagoya Kalesi, Aiçi İli, Japonya."
 
 #: activities/details/resource/board/board19_0.qml:14
 msgctxt "board19_0|"
@@ -5579,7 +5525,7 @@ msgstr "Vincent van Gogh, Saint-Paul Hastanesi Girişi - 1889"
 #: activities/details/resource/board/board20_0.qml:14
 msgctxt "board20_0|"
 msgid "Castle Neuschwanstein at Schwangau, Bavaria, Germany"
-msgstr "Schwangau'de Neuschwanstein Şatosu, Almanya"
+msgstr "Schwangau'daki Neuschwanstein Şatosu, Almanya"
 
 #: activities/details/resource/board/board21_0.qml:14
 msgctxt "board21_0|"
@@ -5603,7 +5549,7 @@ msgstr "Vincent van Gogh, Auvers-sur-Oise Kilisesi - 1890"
 #: activities/details/resource/board/board4_0.qml:14
 msgctxt "board4_0|"
 msgid "Vincent van Gogh, Painter on His Way to Work - 1888"
-msgstr "Vincent van Gogh, İşinin başındaki Ressam - 1888"
+msgstr "Vincent van Gogh, İşinin Başındaki Ressam - 1888"
 
 #: activities/details/resource/board/board5_0.qml:14
 msgctxt "board5_0|"
@@ -5623,7 +5569,7 @@ msgstr "Vincent van Gogh, The Night Café - 1888"
 #: activities/details/resource/board/board8_0.qml:14
 msgctxt "board8_0|"
 msgid "Vincent van Gogh, Portrait of Pere Tanguy 1887-8"
-msgstr "Vincent van Gogh, Père Tanguy'in Portresi 1887-8"
+msgstr "Vincent van Gogh, Père Tanguy'un Portresi 1887-8"
 
 #: activities/details/resource/board/board9_0.qml:14
 msgctxt "board9_0|"
@@ -5632,31 +5578,28 @@ msgstr "Paris, Fransa'daki Île de la Cité'deki Notre Dame de Paris Katedrali."
 
 #. Activity title
 #: activities/digital_electricity/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Digital Electricity"
 msgctxt "ActivityInfo|"
 msgid "Digital electricity"
-msgstr "Dijital elektrik"
+msgstr "Sayısal elektrik"
 
 #. Help title
 #: activities/digital_electricity/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Create and simulate a digital electric schema."
-msgstr "Dijital bir elektrik şeması oluşturun ve simüle et."
+msgstr "Sayısal bir elektrik şeması oluştur ve simüle et."
 
 #. Help goal
 #: activities/digital_electricity/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Create a digital electric schema with a real time simulation of it."
-msgstr "Gerçek zamanlı simülasyon ile bir dijital elektrik şeması oluştur."
+msgstr "Gerçek zamanlı simülasyon ile bir sayısal elektrik şeması oluştur."
 
 #. Help prerequisite
 #: activities/digital_electricity/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid ""
 "Requires some basic understanding of the concept of digital electronics."
-msgstr "Dijital elektronik konsepti bazı temel anlama becerisi gerektirir."
+msgstr "Sayısal elektronik konsepti bazı temel anlama becerileri gerektirir."
 
 #. Help manual
 #: activities/digital_electricity/ActivityInfo.qml:24
@@ -5672,14 +5615,14 @@ msgid ""
 "To connect two terminals with a wire, click on a first terminal, then on a "
 "second terminal."
 msgstr ""
-"İki terminali bir kabloyla bağlamak için ilk terminale, ardından ikinci "
-"terminale tıkla."
+"İki uçbirimi bir kabloyla bağlamak için önce ilk uçbirime, ardından ikinci "
+"uçbirime tıkla."
 
 #: activities/digital_electricity/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "The simulation is updated in real time by any user action."
 msgstr ""
-"Simülasyon, herhangi bir kullanıcı eylemi ile gerçek zamanlı olarak "
+"Simülasyon, herhangi bir kullanıcı eylemini izleyerek gerçek zamanlı olarak "
 "güncellenir."
 
 #: activities/digital_electricity/ActivityInfo.qml:27
@@ -5699,14 +5642,14 @@ msgid ""
 "To delete a component or a wire, select the delete tool (cross icon) from "
 "the tool menu, and click on the component or on the wire you want to delete."
 msgstr ""
-"Bir bileşeni veya bir kabloyu silmek için, araç menüsünden silme aracını "
-"(çarpı simgesi) seçin ve silmek istediğiniz bileşene veya kabloya tıkla."
+"Bir bileşeni veya bir kabloyu silmek için araç menüsünden silme aracını "
+"(çarpı simgesi) seç ve silmek istediğin bileşene veya kabloya tıkla."
 
 #: activities/digital_electricity/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
 msgid "To deselect a terminal or the delete tool, click on any empty area."
 msgstr ""
-"Bir terminalin veya silme aracının seçimini kaldırmak için, herhangi bir boş "
+"Bir uçbirimin veya silme aracının seçimini kaldırmak için herhangi bir boş "
 "alana tıkla."
 
 #: activities/digital_electricity/ActivityInfo.qml:31
@@ -5733,9 +5676,9 @@ msgid ""
 "You can zoom in or out the working area using the + and - keys, using the "
 "zoom buttons from the tool menu, or using pinch gestures on a touchscreen."
 msgstr ""
-"+ Ve - tuşlarını kullanarak, araç menüsündeki yakınlaştırma düğmelerini "
-"kullanarak veya dokunmatik ekrandaki kıstırma hareketlerini kullanarak "
-"çalışma alanını yakınlaştırabilir veya uzaklaştırabilirsin."
+"+ ve - düğmelerini ve araç menüsündeki yakınlaştırma düğmelerini kullanarak "
+"veya dokunmatik ekranda kıstırma hareketi yaparak çalışma alanını "
+"yakınlaştırabilir veya uzaklaştırabilirsin."
 
 #: activities/digital_electricity/ActivityInfo.qml:34
 msgctxt "ActivityInfo|"
@@ -5755,12 +5698,12 @@ msgid ""
 "input is equal to 0 the result is 0. The output for a 2 inputs AND gate is:"
 msgstr ""
 "Bir AND geçidi yalnızca tüm girişleri 1'e eşitse 1 çıkışı verir. Bir giriş "
-"0'a eşit olduğunda sonuç 0 olur. 2 girişli VE geçidi için çıkış:"
+"0'a eşit olduğunda sonuç 0 olur. 2 girişli AND geçidi için çıkış:"
 
 #: activities/digital_electricity/components/AndGate.qml:24
 msgctxt "AndGate|"
 msgid "A AND B"
-msgstr "A ve B"
+msgstr "A AND B"
 
 #: activities/digital_electricity/components/BcdCounter.qml:25
 msgctxt "BcdCounter|"
@@ -5769,7 +5712,7 @@ msgid ""
 "number starting from 0 which is increased by one at each tick."
 msgstr ""
 "Bir BCD sayacı genellikle giriş olarak bir sinyal oluşturucu alır. Çıktı, "
-"0'dan başlayan bir BCD numarasıdır ve her tikte bir artar."
+"0'dan başlayan bir BCD numarasıdır ve her çentikte bir artar."
 
 #: activities/digital_electricity/components/BCDToSevenSegment.qml:29
 msgctxt "BCDToSevenSegment|"
@@ -5780,7 +5723,7 @@ msgid ""
 "is:"
 msgstr ""
 "Bir BCD - 7 bölüt dönüştürücü, 4 ikili giriş alır ve 0 ile 9 arasındaki "
-"sayıları görüntülemek için BCD sayı segmentlerinin (ikili kodlu ondalık) "
+"sayıları görüntülemek için BCD sayı bölütlerinin (ikili kodlu ondalık) "
 "ışıklandırılmasına izin veren 7 ikili çıkış verir:"
 
 #: activities/digital_electricity/components/Comparator.qml:22
@@ -5791,12 +5734,10 @@ msgid ""
 "output is 1 if A = B, otherwise it's 0. The third output is 1 if A > B, "
 "otherwise it's 0. "
 msgstr ""
-"Bir BCD - 7 bölüt dönüştürücü karşılaştırıcısı, giriş olarak A ve B olmak "
-"üzere 2 sayıyı alır. Bunları karşılaştırır ve 3 değer çıkarır. İlk çıktı 1, "
-"eğer A <B ise, aksi halde 0. A = B ise ikinci çıktı 1, aksi halde 0. Üçüncü "
-"çıktı A> B ise 1, yoksa 0. cı, 4 ikili giriş alır ve 0 ile 9 arasındaki "
-"sayıları görüntüleme için BCD sayı bölütlerinin (ikili kodlu ondalık) "
-"ışıklandırılmasına izin veren 7 ikili çıkış verir."
+"Bir karşılaştırıcı, giriş olarak A ve B olmak üzere 2 sayı alır. Bunları "
+"karşılaştırır ve 3 değer çıkarır. A < B ilk çıktı 1'dir, ise aksi takdirde 0 "
+"olur. A = B ise ikinci çıktı 1'dir, aksi taktirde 0 olur. A > B ise üçüncü "
+"çıktı 1'dir, aksi taktirde 0 olur."
 
 #: activities/digital_electricity/components/DigitalLight.qml:21
 msgctxt "DigitalLight|"
@@ -5804,7 +5745,7 @@ msgid ""
 "A digital light is used to check the output of other digital components. It "
 "turns green if the input is 1, and turns red if the input is 0."
 msgstr ""
-"Diğer dijital bileşenlerin çıkışını kontrol etmek için dijital bir ışık "
+"Diğer sayısal bileşenlerin çıkışını denetlemek için sayısal bir ışık "
 "kullanılır. Giriş 1 ise yeşile, 0 ise kırmızıya döner."
 
 #: activities/digital_electricity/components/NandGate.qml:21
@@ -5813,13 +5754,13 @@ msgid ""
 "A NAND gate outputs the opposite of an AND gate. If all the inputs are 1, "
 "the output is equal to 0 and as soon as one input is equal to 0 it gives a 1:"
 msgstr ""
-"Bir NAND geçidi, bir AND geçidinin tersini verir. Tüm girişler 1 ise, çıkış "
+"Bir NAND geçidi, bir AND geçidinin tersini verir. Tüm girişler 1 ise çıkış "
 "0'a eşittir ve bir giriş 0'a eşit olduğunda 1 verir:"
 
 #: activities/digital_electricity/components/NandGate.qml:24
 msgctxt "NandGate|"
 msgid "NOT (A AND B)"
-msgstr "NOT (A ve B)"
+msgstr "NOT (A AND B)"
 
 #: activities/digital_electricity/components/NorGate.qml:21
 msgctxt "NorGate|"
@@ -5834,7 +5775,7 @@ msgstr ""
 #: activities/digital_electricity/components/NorGate.qml:24
 msgctxt "NorGate|"
 msgid "NOT (A OR B)"
-msgstr "NOT (A ya da B)"
+msgstr "NOT (A OR B)"
 
 #: activities/digital_electricity/components/NotGate.qml:20
 msgctxt "NotGate|"
@@ -5842,8 +5783,8 @@ msgid ""
 "A Not gate (also known as inverter) outputs the opposite of the input. An "
 "input 0 gives an output 1. An Input 1 gives an output 0:"
 msgstr ""
-"Bir Not kapısı (inverter olarak da bilinir) girişin tersini verir. Giriş 0, "
-"çıkış 1 verir. Giriş 1, çıkış 0 verir:"
+"Bir NOT kapısı (ters çevirici olarak da bilinir) girişin tersini verir. "
+"Giriş 0 ise çıkışı 1 verir. Giriş 1 ise çıkışı 0 verir:"
 
 #: activities/digital_electricity/components/NotGate.qml:23
 msgctxt "NotGate|"
@@ -7438,12 +7379,12 @@ msgid ""
 "Site since 1991. The Mecca for tourists in the Champagne region welcomes "
 "1500000 visitors every year."
 msgstr ""
-"Reims Katedrali, boyut olarak oldukça sıra dışı bir yapıdır: büyük "
-"kalabalığı barındırmak için tasarlanmış, devasa boyutları 6650 m2'lik bir "
+"Reims Katedrali, boyut olarak oldukça sıra dışı bir yapıdır: Büyük "
+"kalabalıkları barındırmak için tasarlanmış, devasa boyutları 6650 m2'lik bir "
 "yüzey alanı ve 122m'lik bir uzunluğu içermektedir. Bir Gotik sanat başyapıtı "
 "ve Fransa Krallarının taç giyme töreni alanı, 1991'den beri UNESCO Dünya "
-"Mirası Listesi'nde yer almaktadır. Champagne bölgesindeki turistler için "
-"Mekke, her yıl 1500.000 ziyaretçiyi ağırlamaktadır."
+"Mirası Listesi'nde yer almaktadır. Champagne bölgesindeki turistlerin "
+"Mekke'si sayılabilecek bu yer, her yıl 1500.000 ziyaretçiyi ağırlamaktadır."
 
 #: activities/explore_monuments/resource/board/board3.qml:51
 #: activities/explore_monuments/resource/board/board3.qml:54
@@ -14884,7 +14825,7 @@ msgstr "Deneme: %1"
 #: activities/hangman/Hangman.qml:400
 msgctxt "Hangman|"
 msgid "We are sorry, we don't have yet a translation for your language."
-msgstr "Özür dileriz, sizin diliniz için henüz çevirimiz bulunmamaktadır."
+msgstr "Özür dilerim, konuştuğun dil için bir çeviri henüz yok."
 
 #: activities/hangman/Hangman.qml:401
 #, qt-format
@@ -16049,12 +15990,10 @@ msgid "Represent the quantity: %1"
 msgstr ""
 
 #: activities/learn_decimals/Learn_decimals.qml:568
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Enter the weight of the gift: %1"
+#, qt-format
 msgctxt "Learn_decimals|"
 msgid "Enter the result: %1"
-msgstr "Hediyenin ağırlığını gir: %1"
+msgstr "Sonucu gir: %1"
 
 #: activities/learn_decimals/resource/1/Data.qml:13
 #, fuzzy
@@ -16609,7 +16548,7 @@ msgstr ""
 #: activities/letter-in-word/LetterInWord.qml:298
 msgctxt "LetterInWord|"
 msgid "We are sorry, we don't have yet a translation for your language."
-msgstr "Özür dileriz, sizin dilin için henüz çevirimiz bulunmamaktadır."
+msgstr "Özür dilerim, konuştuğun dil için bir çeviri henüz yok."
 
 #: activities/letter-in-word/LetterInWord.qml:299
 #, qt-format
@@ -17133,10 +17072,10 @@ msgid ""
 "mode just gives you an indication of your position, like a map. You cannot "
 "move Tux in visible mode."
 msgstr ""
-"Tux'u kapıya taşımak için ok tuşlarını kullan veya ekranı kaydır. Görünmez "
-"ve görünür modlar arasında geçiş yapmak için labirent simgesini veya boşluk "
-"çubuğunu kullan. Görünür mod, size bir harita gibi konumunun bir "
-"göstergesini verir. Tux'u görünür modda taşıyamazsın."
+"Tux'u kapıya taşımak için ok düğmelerini kullan veya ekranı kaydır. Görünmez "
+"ve görünür kipler arasında geçiş yapmak için labirent simgesini veya boşluk "
+"çubuğunu kullan. Görünür kip, sana haritaya benzer bir konumun bir "
+"göstergesini verir. Tux'u görünür kipte taşıyamazsın."
 
 #: activities/mazeinvisible/ActivityInfo.qml:25
 #: activities/mazerelative/ActivityInfo.qml:26
@@ -18740,7 +18679,7 @@ msgstr "Yazıtipi seçici"
 #: activities/menu/ConfigurationItem.qml:312
 msgctxt "ConfigurationItem|"
 msgid "Font size"
-msgstr "Yazı boyutu"
+msgstr "Yazıtipi boyutu"
 
 #: activities/menu/ConfigurationItem.qml:332
 #: activities/menu/ConfigurationItem.qml:366
@@ -19325,7 +19264,7 @@ msgid "When you are ready, click on Tux and we will converse in Morse code."
 msgstr ""
 "Hazır olduğunda, bana tıkla ve braille karakterlerini yeniden üretmeyi dene."
 
-#: activities/morse_code/MorseCode.qml:346
+#: activities/morse_code/MorseCode.qml:349
 #, fuzzy, qt-format
 #| msgctxt "RomanNumerals|"
 #| msgid "Roman value: %1"
@@ -19333,7 +19272,7 @@ msgctxt "MorseCode|"
 msgid "Morse value: %1"
 msgstr "Roma değer: %1"
 
-#: activities/morse_code/MorseCode.qml:347
+#: activities/morse_code/MorseCode.qml:350
 #, fuzzy, qt-format
 #| msgctxt "RomanNumerals|"
 #| msgid "Arabic value: %1"
@@ -22818,7 +22757,7 @@ msgstr "Dikkat et ! Terazinin her iki tarafına da ağırlık bırakabilirsin."
 #: activities/scalesboard_weight_avoirdupois/resource/6/Data.qml:81
 msgctxt "Data|"
 msgid "Now you have to guess the weight of the gift."
-msgstr "Şimdi hediyenin ağırlığını tahmin etmelisin."
+msgstr "Şimdi armağanın ağırlığını tahmin etmelisin."
 
 #: activities/scalesboard/resource/1/Data.qml:33
 #: activities/scalesboard/resource/2/Data.qml:45
@@ -22841,7 +22780,7 @@ msgstr "Şimdi hediyenin ağırlığını tahmin etmelisin."
 #, qt-format
 msgctxt "Data|"
 msgid "Enter the weight of the gift: %1"
-msgstr "Hediyenin ağırlığını gir: %1"
+msgstr "Armağanın ağırlığını gir: %1"
 
 #: activities/scalesboard/resource/6/Data.qml:13
 msgctxt "Data|"
@@ -23077,7 +23016,7 @@ msgid ""
 "sixteen ounces. \n"
 " Drop weights on the left side to balance the scales."
 msgstr ""
-"Bir sayının sonundaki \"oz\" sembolü ons anlamına gelir. Bir pound on altı "
+"Bir sayının sonundaki \"oz\" sembolü ons anlamına gelir. Bir libre, on altı "
 "onsa eşittir.\n"
 " Tartıları dengelemek için sol tarafa ağırlıkları bırak."
 
@@ -23111,7 +23050,7 @@ msgstr "20 onsa kadar dengele."
 #: activities/scalesboard_weight_avoirdupois/resource/4/Data.qml:13
 msgctxt "Data|"
 msgid "Balance up to 10 pounds."
-msgstr "10 pound'a kadar dengele."
+msgstr "10 libreye kadar dengele."
 
 #: activities/scalesboard_weight_avoirdupois/resource/4/Data.qml:18
 #: activities/scalesboard_weight_avoirdupois/resource/6/Data.qml:23
@@ -23128,7 +23067,7 @@ msgid ""
 "mass, a property which corresponds to the common perception of how \"heavy\" "
 "an object is. This unit is used in the USA."
 msgstr ""
-"Bir sayının sonundaki \"lb\" sembolü pound anlamına gelir. Pound, bir "
+"Bir sayının sonundaki \"lb\" sembolü libre anlamına gelir. Libre, bir "
 "nesnenin ne kadar \"ağır\" olduğuna dair ortak algıya karşılık gelen bir "
 "özellik olan bir kütle birimidir. Bu birim ABD'de kullanılmaktadır."
 
@@ -23160,7 +23099,7 @@ msgstr ""
 #: activities/scalesboard_weight_avoirdupois/resource/6/Data.qml:13
 msgctxt "Data|"
 msgid "Balance up to 10 pounds including ounces."
-msgstr "Ons dahil 10 pound'a kadar dengele."
+msgstr "Ons dahil 10 libreye kadar dengele."
 
 #: activities/scalesboard_weight_avoirdupois/resource/6/Data.qml:48
 #: activities/scalesboard_weight_avoirdupois/resource/6/Data.qml:54
@@ -23169,7 +23108,7 @@ msgid ""
 "Remember, one pound (\"lb\") equals sixteen ounces (\"oz\"). \n"
 " Drop the weights on the left side of the scales to balance it."
 msgstr ""
-"Unutmayın, bir pound (\"lb\") on altı onsa (\"oz\") eşittir.\n"
+"Unutma, bir libre (\"lb\"), on altı onsa (\"oz\") eşittir.\n"
 " Tartıyı dengelemek için tartının sol tarafındaki ağırlıkları bırak."
 
 #: activities/share/ActivityConfig.qml:27
@@ -24790,7 +24729,7 @@ msgstr "60 °C"
 #: activities/solar_system/Dataset.js:216
 msgctxt "Dataset|"
 msgid "How big is the size of Mars compared to Earth?"
-msgstr "Mars'ın büyüklüğü Dünya'ya kıyasla ne kadar büyük?"
+msgstr "Mars, Dünya'ya kıyasla ne kadar büyük?"
 
 #: activities/solar_system/Dataset.js:217
 msgctxt "Dataset|"
@@ -27244,7 +27183,7 @@ msgstr "Atla"
 #: core/Tutorial.qml:214
 msgctxt "Tutorial|"
 msgid "Start"
-msgstr "Başla"
+msgstr "Başlat"
 
 #, fuzzy
 #~| msgctxt "ActivityInfo|"
