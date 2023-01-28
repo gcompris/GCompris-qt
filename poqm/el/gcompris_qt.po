@@ -18891,13 +18891,13 @@ msgid "When you are ready, click on Tux and we will converse in Morse code."
 msgstr ""
 "Όταν είσαι έτοιμος, κάνε κλικ στον Tux και θα συνομιλήσουμε με Κώδικα Μορς."
 
-#: activities/morse_code/MorseCode.qml:346
+#: activities/morse_code/MorseCode.qml:349
 #, qt-format
 msgctxt "MorseCode|"
 msgid "Morse value: %1"
 msgstr "Τιμή Μορς: %1"
 
-#: activities/morse_code/MorseCode.qml:347
+#: activities/morse_code/MorseCode.qml:350
 #, qt-format
 msgctxt "MorseCode|"
 msgid "Alphabet/Numeric value: %1"
