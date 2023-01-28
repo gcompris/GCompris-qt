@@ -46,7 +46,7 @@ if(NOT ${QML_BOX2D_MODULE} STREQUAL "disabled")
   if(_need_box2d_submodule)
     # build qml-box2d ourselves from submodule
     include(ExternalProject)
-    get_property(_qmake_program TARGET ${QT_MAJOR}::qmake PROPERTY IMPORT_LOCATION)
+
     set(_box2d_source_dir ${CMAKE_CURRENT_SOURCE_DIR}/external/qml-box2d)
     if(WIN32)
       set(_box2d_library_dir "release/")
@@ -55,11 +55,12 @@ if(NOT ${QML_BOX2D_MODULE} STREQUAL "disabled")
       set(_box2d_library_dir "")
       set(_box2d_library_file "libBox2D.dylib")
     elseif(ANDROID AND ${QT_MAJOR}Widgets_VERSION VERSION_GREATER_EQUAL "5.14.0")
-      set(_box2d_library_dir "")
-      set(_box2d_library_file "libBox2D_${ANDROID_ABI}.so")
+      set(_box2d_library_dir "bin/plugins/Box2D/")
+      #set(_box2d_library_file "libBox2D_${ANDROID_ABI}.so")
+      set(_box2d_library_file "libqmlbox2d.so")
     else()
-      set(_box2d_library_dir "")
-      set(_box2d_library_file "libBox2D.so")
+      set(_box2d_library_dir "bin/plugins/Box2D/")
+      set(_box2d_library_file "libqmlbox2d.so")
     endif()
     set(_box2d_install_dir ${CMAKE_CURRENT_BINARY_DIR}/lib/qml/Box2D.2.0)
     # make sure submodule is up2date
@@ -68,12 +69,6 @@ if(NOT ${QML_BOX2D_MODULE} STREQUAL "disabled")
       execute_process(COMMAND ${GIT_EXECUTABLE} submodule update --init WORKING_DIRECTORY ${CMAKE_SOURCE_DIR})
     endif()
 
-    # for visual studio, we need to create a vcxproj
-    if(WIN32 AND NOT MINGW)
-      set(_qmake_options -spec win32-msvc -tp vc)
-    else()
-      set(_qmake_options "")
-    endif()
     set(BOX2D_MAKE_PROGRAM ${CMAKE_MAKE_PROGRAM})
     # Ninja is not supported by qmake.
     # In case Ninja is set as generator, use make on Linux, nmake on Windows
@@ -91,15 +86,14 @@ if(NOT ${QML_BOX2D_MODULE} STREQUAL "disabled")
       string(SUBSTRING ${ANDROID_ABI} 0 1 FIRST_LETTER)
       string(TOUPPER ${FIRST_LETTER} FIRST_LETTER)
       string(REGEX REPLACE "^.(.*)" "${FIRST_LETTER}\\1" ANDROID_ABI_CAP "${ANDROID_ABI}")
-      set(BOX2D_MAKE_PROGRAM ${BOX2D_MAKE_PROGRAM} -f Makefile.${ANDROID_ABI_CAP})
+      #set(BOX2D_MAKE_PROGRAM ${BOX2D_MAKE_PROGRAM} -f Makefile.${ANDROID_ABI_CAP})
       # I didn't find a better way to copy the libraries to the lib folder only on Android when doing an aab package...
-      set(EXTRA_INSTALL_ANDROID_BOX2D ${CMAKE_COMMAND} -E make_directory ${CMAKE_LIBRARY_OUTPUT_DIRECTORY} && ${CMAKE_COMMAND} -E copy ${_box2d_library_dir}${_box2d_library_file} ${CMAKE_LIBRARY_OUTPUT_DIRECTORY} && )
+      #set(EXTRA_INSTALL_ANDROID_BOX2D ${CMAKE_COMMAND} -E make_directory ${CMAKE_LIBRARY_OUTPUT_DIRECTORY} && ${CMAKE_COMMAND} -E copy ${_box2d_library_dir}${_box2d_library_file} ${CMAKE_LIBRARY_OUTPUT_DIRECTORY} && )
     endif()
 
     ExternalProject_Add(qml_box2d
       DOWNLOAD_COMMAND ""
       SOURCE_DIR ${_box2d_source_dir}
-      CONFIGURE_COMMAND ${_qmake_program} ${_qmake_options} ${_box2d_source_dir}/box2d.pro
       BUILD_COMMAND ${BOX2D_MAKE_PROGRAM}
       INSTALL_DIR ${_box2d_install_dir}
       INSTALL_COMMAND ${EXTRA_INSTALL_ANDROID_BOX2D} ${CMAKE_COMMAND} -E copy ${_box2d_library_dir}${_box2d_library_file} ${_box2d_source_dir}/qmldir ${_box2d_install_dir}

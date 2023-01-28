@@ -6,17 +6,17 @@
 buildscript {
     repositories {
         google()
-        jcenter()
+        mavenCentral()
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.6.0'
+        classpath 'com.android.tools.build:gradle:7.0.0'
     }
 }
 
 repositories {
     google()
-    jcenter()
+    mavenCentral()
 }
 
 apply plugin: 'com.android.application'
@@ -40,15 +40,18 @@ android {
      *******************************************************/
 
     compileSdkVersion androidCompileSdkVersion.toInteger()
+    buildToolsVersion androidBuildToolsVersion
+    ndkVersion androidNdkVersion
 
-    buildToolsVersion '28.0.3'
+    // Extract native libraries from the APK
+    packagingOptions.jniLibs.useLegacyPackaging true
 
     sourceSets {
         main {
             manifest.srcFile 'AndroidManifest.xml'
-            java.srcDirs = [qt5AndroidDir + '/src', 'src', 'java']
-            aidl.srcDirs = [qt5AndroidDir + '/src', 'src', 'aidl']
-            res.srcDirs = [qt5AndroidDir + '/res', 'res']
+            java.srcDirs = [qtAndroidDir + '/src', 'src', 'java']
+            aidl.srcDirs = [qtAndroidDir + '/src', 'src', 'aidl']
+            res.srcDirs = [qtAndroidDir + '/res', 'res']
             resources.srcDirs = ['resources']
             renderscript.srcDirs = ['src']
             assets.srcDirs = ['assets']
@@ -79,5 +82,6 @@ android {
         resConfig "en"
         minSdkVersion = qtMinSdkVersion
         targetSdkVersion = qtTargetSdkVersion
+        ndk.abiFilters = qtTargetAbiList.split(",")
     }
 }

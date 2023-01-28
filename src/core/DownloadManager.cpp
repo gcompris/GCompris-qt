@@ -40,7 +40,7 @@ DownloadManager::DownloadManager() :
     QFile file(":/gcompris/src/core/resource/isrgrootx1.pem");
     QIODevice::OpenMode openMode = QIODevice::ReadOnly | QIODevice::Text;
     if (!file.open(openMode)) {
-        qDebug() << "Error opening " << file;
+        qDebug() << "Error opening " << file.fileName();
     }
     else {
         certificates << QSslCertificate::fromData(file.readAll(), QSsl::Pem);

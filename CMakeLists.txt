@@ -96,13 +96,9 @@ if("${CMAKE_BINARY_DIR}" STREQUAL "${CMAKE_SOURCE_DIR}")
             directory and create a build directory and call \"${CMAKE_COMMAND} <path to the sources>\".")
 endif()
 
-find_package(Qt6 COMPONENTS Widgets QUIET)
 set(QT_MAJOR Qt6)
-if (NOT Qt6_FOUND)
-  set(QT_MAJOR Qt5)
-endif()
 
-set(QT_COMPONENTS Qml Quick Gui Multimedia Core Svg Network LinguistTools Sensors QuickControls2 QuickTemplates2 Charts Widgets Core5Compat)
+set(QT_COMPONENTS Qml Quick Gui Multimedia Core Svg Network LinguistTools Sensors QuickControls2 QuickTemplates2 Charts Widgets Core5Compat QmlWorkerScript)
 find_package(${QT_MAJOR} ${QT_REQUIRED_VERSION} COMPONENTS
     ${QT_COMPONENTS})
 
@@ -110,19 +106,6 @@ set_package_properties(${QT_MAJOR} PROPERTIES TYPE REQUIRED)
 foreach(COMPONENT ${QT_COMPONENTS})
   set_package_properties(${QT_MAJOR}${COMPONENT} PROPERTIES TYPE REQUIRED)
 endforeach()
-
-if(${QT_MAJOR}Widgets_VERSION VERSION_GREATER_EQUAL "5.15.0")
-  find_package(${QT_MAJOR} ${QT_REQUIRED_VERSION} REQUIRED QmlWorkerScript)
-  if(${QT_MAJOR}Widgets_VERSION VERSION_LESS "6.0.0")
-    find_package(${QT_MAJOR} ${QT_REQUIRED_VERSION} REQUIRED QuickParticles)
-  endif()
-endif()
-
-
-if(ANDROID)
-    find_package(${QT_MAJOR} ${QT_REQUIRED_VERSION} COMPONENTS AndroidExtras)
-    set_package_properties(${QT_MAJOR}AndroidExtras PROPERTIES TYPE REQUIRED)
-endif()
 
 # Starting C++20, emit() is a function in standard library. To avoid using Qt keywords like signals, slots, emit, we define this variable
 add_definitions(
@@ -142,7 +125,6 @@ if((UNIX AND NOT APPLE AND NOT ANDROID) OR WIN32)
     find_package(OpenSSL)
     set_package_properties(OpenSSL PROPERTIES TYPE REQUIRED)
 endif()
-
 
 option(COMPILE_DOC "Enable compilation of GCompris docbook" OFF)
 if(COMPILE_DOC)
@@ -194,9 +176,7 @@ else()
 endif()
 if(ANDROID)
   # Android .so output
-  if(${QT_MAJOR}Widgets_VERSION VERSION_LESS "5.14.0")
-    set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/android-build/libs/${ANDROID_ABI}/)
-  endif()
+  set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/android-build/libs/${ANDROID_ABI}/)
   set(GCOMPRIS_TRANSLATIONS_DIR ${CMAKE_BINARY_DIR}/${_data_dest_dir} CACHE INTERNAL "" FORCE)
   set(GCOMPRIS_RCC_DIR ${CMAKE_BINARY_DIR}/android-build/assets/${_data_dest_dir}/rcc CACHE INTERNAL "" FORCE)
   set(ANDROID_PACKAGE "net.gcompris.full")

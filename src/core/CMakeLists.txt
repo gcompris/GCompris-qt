@@ -90,7 +90,6 @@ endif()
 
 if(ANDROID)
   add_library(${GCOMPRIS_EXECUTABLE_NAME} SHARED ${gcompris_SRCS})
-  set(used_qt_modules ${used_qt_modules} ${QT_MAJOR}::AndroidExtras)
 elseif(CMAKE_HOST_APPLE)
   add_executable(${GCOMPRIS_EXECUTABLE_NAME} MACOSX_BUNDLE ${gcompris_SRCS} ${gcompris_RES})
 elseif(CMAKE_HOST_WIN32)
@@ -109,6 +108,9 @@ target_link_libraries(${GCOMPRIS_EXECUTABLE_NAME} ${used_qt_modules})
 
 GCOMPRIS_ADD_RCC(core *.qml *.js resource/*.${COMPRESSED_AUDIO} resource/*.gif resource/*.png resource/*.svg resource/*.pem resource/bonus/* resource/sounds/* resource/fonts/*.* qmldir COPYING)
 
+if(ANDROID)
+  set_property(TARGET ${GCOMPRIS_EXECUTABLE_NAME} PROPERTY SUFFIX "_${CMAKE_ANDROID_ARCH_ABI}.so")
+endif()
 # Installation
 # ============
 
