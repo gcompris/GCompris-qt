@@ -7,7 +7,10 @@
 #   SPDX-License-Identifier: GPL-3.0-or-later
 
 Qt5_BaseDIR=~/Qt/5.12.12
+export ANDROID_NDK=/opt/android-ndk-r23b/
 export ANDROID_NDK_ROOT=$ANDROID_NDK
+
+export JAVA_HOME=/usr/lib/jvm/java-11-openjdk/
 
 if [ "$#" -eq 1 ]; then
     Qt5_BaseDIR=$1
@@ -39,18 +42,19 @@ f_cmake()
     if [ -f CMakeCache.txt ]
     then
 	make clean
-	rm CMakeCache.txt
-	rm cmake_install.cmake
-        rm Makefile
+	rm -f CMakeCache.txt
+	rm -f cmake_install.cmake
+        rm -f Makefile
         rm -rf CMakeFiles
     fi
 
-    cmake -DCMAKE_TOOLCHAIN_FILE=/usr/share/ECM/toolchain/Android.cmake \
-	  -DCMAKE_ANDROID_API=16 \
+    cmake -DANDROID_USE_LEGACY_TOOLCHAIN_FILE=ON \
+          -DCMAKE_TOOLCHAIN_FILE=/usr/share/ECM/toolchain/Android.cmake \
+          -DCMAKE_ANDROID_API=23 \
 	  -DCMAKE_BUILD_TYPE=Release \
 	  -DANDROID_ABI=$1 \
 	  -DCMAKE_FIND_ROOT_PATH=${Qt5_BaseDIR}/${QtTarget}/lib/ \
-	  -DQt5_DIR=${Qt5_BaseDIR}/${QtTarget}/lib/cmake/Qt5 \
+	  -DQt6_DIR=${Qt5_BaseDIR}/${QtTarget}/lib/cmake/Qt6 \
 	  -Wno-dev \
 	  -DQML_BOX2D_MODULE=submodule \
 	  -DWITH_DOWNLOAD=$2 \

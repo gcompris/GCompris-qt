@@ -19,7 +19,7 @@ endforeach()
 
 add_custom_target(java_src DEPENDS ${TARGET_JAVA_FILES})
 
-find_program(ANDROID_DEPLOY_QT NAMES androiddeployqt PATHS ${_qt5Core_install_prefix}/bin/)
+find_program(ANDROID_DEPLOY_QT NAMES androiddeployqt PATHS ${QT_HOST_PATH}/${QT6_HOST_INFO_BINDIR})
 
 # Look for androiddeployqt program
 if(NOT ANDROID_DEPLOY_QT)
@@ -44,11 +44,7 @@ if(WITH_KIOSK_MODE)
   set(APK_SUFFIX "-kiosk${APK_SUFFIX}")
 endif()
 
-if(Qt5Widgets_VERSION VERSION_GREATER_EQUAL "5.14.0")
-  set(STDCPP_PATH "\"stdcpp-path\": \"${ANDROID_NDK}/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/\"")
-else()
-  set(STDCPP_PATH ",\"stdcpp-path\": \"${ANDROID_NDK}/sources/cxx-stl/llvm-libc++/libs/${ANDROID_ABI}/libc++_shared.so\"")
-endif()
+set(STDCPP_PATH "\"stdcpp-path\": \"${ANDROID_NDK}/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/\"")
 
 set(ANDROID_TOOLCHAIN arm-linux-androideabi)
 if("${CMAKE_ANDROID_ARCH}" STREQUAL "arm64")
@@ -59,16 +55,29 @@ endif()
 set(PACKAGE_SOURCE_ANDROID ${CMAKE_BINARY_DIR}/tmpAndroid)
 set(ANDROID_SDK_ROOT $ENV{ANDROID_SDK_ROOT})
 
-if(Qt5Widgets_VERSION VERSION_GREATER_EQUAL "5.14.0")
-  configure_file(${CMAKE_CURRENT_SOURCE_DIR}/AndroidManifest.xml.cmake ${PACKAGE_SOURCE_ANDROID}/AndroidManifest.xml @ONLY)
-  configure_file(${CMAKE_CURRENT_SOURCE_DIR}/configAndroid.json.cmake ${PACKAGE_SOURCE_ANDROID}/configAndroid.json @ONLY)
-  # TODO Remove this file as soon as we have moved to plugins instead of rcc files for activities
-  # This way, we'll use the one provided by Qt
-  configure_file(${CMAKE_CURRENT_SOURCE_DIR}/build_5.14.gradle ${PACKAGE_SOURCE_ANDROID}/build.gradle @ONLY)
-else()
-  configure_file(${CMAKE_CURRENT_SOURCE_DIR}/AndroidManifest_5.12.xml.cmake ${PACKAGE_SOURCE_ANDROID}/AndroidManifest.xml @ONLY)
-  configure_file(${CMAKE_CURRENT_SOURCE_DIR}/configAndroid_5.12.json.cmake ${PACKAGE_SOURCE_ANDROID}/configAndroid.json @ONLY)
-endif()
+# Copied from ~/Qt/6.4.2/android_armv7/lib/cmake/Qt6Core/Qt6AndroidMacros.cmake
+set(QT_ANDROID_ARCHITECTURES "")
+set(architecture_record_list "")
+foreach(abi IN LISTS qt_android_abis CMAKE_ANDROID_ARCH_ABI)
+  if(abi STREQUAL "x86")
+    set(arch_value "i686-linux-android")
+  elseif(abi STREQUAL "x86_64")
+    set(arch_value "x86_64-linux-android")
+  elseif(abi STREQUAL "arm64-v8a")
+    set(arch_value "aarch64-linux-android")
+  elseif(abi)
+    set(arch_value "arm-linux-androideabi")
+  endif()
+  list(APPEND architecture_record_list "\"${abi}\":\"${arch_value}\"")
+endforeach()
+
+list(JOIN architecture_record_list "," QT_ANDROID_ARCHITECTURES)
+
+configure_file(${CMAKE_CURRENT_SOURCE_DIR}/AndroidManifest.xml.cmake ${PACKAGE_SOURCE_ANDROID}/AndroidManifest.xml @ONLY)
+configure_file(${CMAKE_CURRENT_SOURCE_DIR}/configAndroid.json.cmake ${PACKAGE_SOURCE_ANDROID}/configAndroid.json @ONLY)
+# TODO Remove this file as soon as we have moved to plugins instead of rcc files for activities
+# This way, we'll use the one provided by Qt
+configure_file(${CMAKE_CURRENT_SOURCE_DIR}/build_5.14.gradle ${PACKAGE_SOURCE_ANDROID}/build.gradle @ONLY)
 
 # Get all po files in po/ to create the values-{locale} in order to have the locales available in android
 file(GLOB TRANSLATIONS_FILES RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} "../po/*.po")
@@ -101,7 +110,7 @@ add_custom_command(
   OUTPUT createApkFromAndroidDeployQtRelease
   DEPENDS ${PACKAGE_SOURCE_ANDROID}/AndroidManifest.xml
   COMMAND ${CMAKE_COMMAND} -E copy_directory ${CMAKE_CURRENT_SOURCE_DIR} ${PACKAGE_SOURCE_ANDROID}
-  COMMAND ${ANDROID_DEPLOY_QT} --output ${CMAKE_BINARY_DIR}/android-build/ --input ${PACKAGE_SOURCE_ANDROID}/configAndroid.json --release --gradle
+  COMMAND ${ANDROID_DEPLOY_QT} --output ${CMAKE_BINARY_DIR}/android-build/ --input ${PACKAGE_SOURCE_ANDROID}/configAndroid.json --release --gradle --verbose
   COMMAND ${CMAKE_COMMAND} -E rename ${CMAKE_BINARY_DIR}/android-build/build/outputs/apk/release/android-build-release-unsigned.apk ${CMAKE_BINARY_DIR}/android-build/GCompris-Android-release-${ANDROID_ABI}${APK_SUFFIX}${GCOMPRIS_VERSION}.apk
 )
 
@@ -156,14 +165,11 @@ add_custom_target(apk_install
 include(ExternalProject)
 set(OPENSSL_DIR "${CMAKE_BINARY_DIR}/external/openssl/")
 
-# For Qt 5.12.5 and above 5.13.0, it needs libcrypto_1_1.so and libssl_1_1.so
 set(suffix_libssl ".so")
-if(Qt5Core_VERSION VERSION_GREATER_EQUAL "5.12.5" AND NOT Qt5Core_VERSION MATCHES "5.13.0")
-  set(suffix_libssl "_1_1.so")
-endif()
 
 find_program(LLVM_STRIP NAMES llvm-strip PATHS ${ANDROID_NDK}/toolchains/llvm/prebuilt/linux-x86_64/bin/)
 
+# TODO Bump to openssl 3.0 once Qt6.5
 ExternalProject_Add(
   ext_openssl
   DOWNLOAD_DIR ${CMAKE_BINARY_DIR}
@@ -180,6 +186,7 @@ ExternalProject_Add(
   ${LLVM_STRIP} --strip-all libcrypto${suffix_libssl} &&
   ${LLVM_STRIP} --strip-all libcrypto${suffix_libssl}
   INSTALL_COMMAND
+  ${CMAKE_COMMAND} -E make_directory "${CMAKE_LIBRARY_OUTPUT_DIRECTORY}" &&
   ${CMAKE_COMMAND} -E copy "${OPENSSL_DIR}/libcrypto${suffix_libssl}" "${CMAKE_LIBRARY_OUTPUT_DIRECTORY}/" &&
   ${CMAKE_COMMAND} -E copy "${OPENSSL_DIR}/libssl${suffix_libssl}" "${CMAKE_LIBRARY_OUTPUT_DIRECTORY}/"
   )

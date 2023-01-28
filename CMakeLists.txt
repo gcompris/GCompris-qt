@@ -95,14 +95,9 @@ if("${CMAKE_BINARY_DIR}" STREQUAL "${CMAKE_SOURCE_DIR}")
             directory and create a build directory and call \"${CMAKE_COMMAND} <path to the sources>\".")
 endif()
 
-find_package(Qt6 COMPONENTS Widgets QUIET)
 set(QT_MAJOR Qt6)
-if (NOT Qt6_FOUND)
-  set(QT_MAJOR Qt5)
-endif()
-
 find_package(${QT_MAJOR} ${QT_REQUIRED_VERSION} REQUIRED
-    Qml Quick Gui Multimedia Core Svg LinguistTools Sensors QuickControls2 QuickTemplates2 Charts Core5Compat)
+    Qml Quick Gui Widgets Multimedia Core Svg LinguistTools Sensors QuickControls2 QuickTemplates2 Charts Core5Compat)
 
 if(${QT_MAJOR}Widgets_VERSION VERSION_GREATER_EQUAL "5.15.0")
   find_package(${QT_MAJOR} ${QT_REQUIRED_VERSION} REQUIRED QmlWorkerScript)
@@ -111,20 +106,9 @@ if(${QT_MAJOR}Widgets_VERSION VERSION_GREATER_EQUAL "5.15.0")
   endif()
 endif()
 
-
-if(ANDROID)
-    find_package(${QT_MAJOR} ${QT_REQUIRED_VERSION} REQUIRED AndroidExtras)
-endif()
-
-## For now we workaround CMAKE_ANDROID_NDK_TOOLCHAIN_VERSION to clang with a command variable, so not needed
-# if(ANDROID AND ECM_VERSION VERSION_LESS "5.56.0" AND Qt5Core_VERSION VERSION_GREATER "5.11.99")
-#   message(FATAL_ERROR "ECM ${ECM_VERSION} not compatible with Qt ${Qt5Core_VERSION} version for android.")
-# endif()
-
 if((UNIX AND NOT APPLE AND NOT ANDROID) OR WIN32)
     find_package(OpenSSL REQUIRED)
 endif()
-
 
 option(COMPILE_DOC "Enable compilation of GCompris docbook" OFF)
 if(COMPILE_DOC)
@@ -172,9 +156,7 @@ else()
 endif()
 if(ANDROID)
   # Android .so output
-  if(${QT_MAJOR}Widgets_VERSION VERSION_LESS "5.14.0")
-    set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/android-build/libs/${ANDROID_ABI}/)
-  endif()
+  set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/android-build/libs/${ANDROID_ABI}/)
   set(GCOMPRIS_TRANSLATIONS_DIR ${CMAKE_BINARY_DIR}/${_data_dest_dir} CACHE INTERNAL "" FORCE)
   set(GCOMPRIS_RCC_DIR ${CMAKE_BINARY_DIR}/android-build/assets/${_data_dest_dir}/rcc CACHE INTERNAL "" FORCE)
   set(ANDROID_PACKAGE "net.gcompris.full")
