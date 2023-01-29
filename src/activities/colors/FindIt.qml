@@ -12,9 +12,9 @@ import QtQuick 2.12
 import Qt5Compat.GraphicalEffects 1.0
 import GCompris 1.0
 
-import "../../core"
+import "../../core/GCompris"
 import "findit.js" as Activity
-import "qrc:/gcompris/src/core/core.js" as Core
+import "qrc:/gcompris/src/core/GCompris/core.js" as Core
 
 ActivityBase {
     id: activity
@@ -198,7 +198,7 @@ ActivityBase {
 
         BarButton {
             id: repeatItem
-            source: "qrc:/gcompris/src/core/resource/bar_repeat.svg";
+            source: "qrc:/gcompris/src/core/GCompris/resource/bar_repeat.svg";
             sourceSize.height: visible ? 80 * ApplicationInfo.ratio : 1
             z: bar.z + 1
             visible: items.audioOk

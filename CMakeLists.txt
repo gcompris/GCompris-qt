@@ -7,6 +7,8 @@ cmake_minimum_required(VERSION 3.7)
 
 project(gcompris-qt C CXX)
 
+cmake_policy(SET CMP0079 NEW)
+
 # get all the redist dll needed for windows when compiling with vc
 set(CMAKE_INSTALL_UCRT_LIBRARIES 1)
 include(InstallRequiredSystemLibraries)
@@ -428,5 +430,5 @@ if(BUILD_TESTING)
   add_subdirectory(tests)
 endif()
 
-add_custom_target(binaries)
-add_dependencies(binaries ${GCOMPRIS_EXECUTABLE_NAME} rcc_core rcc_menu rcc_activities all_activities)
+#add_custom_target(binaries)
+#add_dependencies(binaries ${GCOMPRIS_EXECUTABLE_NAME} rcc_core rcc_menu rcc_activities all_activities)

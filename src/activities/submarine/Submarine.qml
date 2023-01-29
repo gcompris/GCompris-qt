@@ -14,7 +14,7 @@ import Box2D 2.0
 import Qt5Compat.GraphicalEffects 1.0
 import GCompris 1.0
 
-import "../../core"
+import "../../core/GCompris"
 import "submarine.js" as Activity
 
 ActivityBase {

@@ -11,7 +11,7 @@
 import QtQuick 2.12
 import GCompris 1.0
 
-import "../../core"
+import "../../core/GCompris"
 import "."
 
 ActivityBase {
@@ -206,7 +206,7 @@ ActivityBase {
                             activity.audioEffects.play(activity.url + 'lock.wav')
                             lock1.state = 'close'
                         } else {
-                            activity.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav")
+                            activity.audioEffects.play("qrc:/gcompris/src/core/GCompris/resource/sounds/crash.wav")
                         }
                     }
                 }
@@ -240,7 +240,7 @@ ActivityBase {
                             activity.audioEffects.play(activity.url + 'lock.wav')
                             lock2.state = 'close'
                         } else {
-                            activity.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav")
+                            activity.audioEffects.play("qrc:/gcompris/src/core/GCompris/resource/sounds/crash.wav")
                         }
                     }
                 }
@@ -274,7 +274,7 @@ ActivityBase {
                             leftLight.state = 'red'
                             activity.audioEffects.play(activity.url + 'door_close.wav')
                         } else {
-                            activity.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav")
+                            activity.audioEffects.play("qrc:/gcompris/src/core/GCompris/resource/sounds/crash.wav")
                         }
                     }
                 }
@@ -307,7 +307,7 @@ ActivityBase {
                             rightLight.state = 'red'
                             activity.audioEffects.play(activity.url + 'door_close.wav')
                         } else {
-                            activity.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav")
+                            activity.audioEffects.play("qrc:/gcompris/src/core/GCompris/resource/sounds/crash.wav")
                         }
                     }
                 }
@@ -431,7 +431,7 @@ ActivityBase {
                             boat.state = "left"
 
                         if(prevState !== boat.state)
-                            activity.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/water.wav')
+                            activity.audioEffects.play('qrc:/gcompris/src/core/GCompris/resource/sounds/water.wav')
 
                     }
                 }

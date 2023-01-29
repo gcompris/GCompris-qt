@@ -11,7 +11,7 @@ var items;
 var duckImages = ["pink_duck", "green_duck", "yellow_duck", "orange_duck"];
 var clickSounds = ["bleep", "smudge", "flip", "completetask", "scroll"];
 
-var audioURL = "qrc:/gcompris/src/core/resource/sounds/";
+var audioURL = "qrc:/gcompris/src/core/GCompris/resource/sounds/";
 var arrowImageURL = "qrc:/gcompris/src/activities/baby_mouse/resource/arrow.svg";
 var duckColorURL = "qrc:/gcompris/src/activities/colors/resource/";
 

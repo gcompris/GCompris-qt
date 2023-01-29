@@ -14,7 +14,7 @@ import QtQml.Models 2.12
 import QtQuick.Controls 2.12
 
 import GCompris 1.0
-import "../../core/core.js" as Core
+import "../../core/GCompris/core.js" as Core
 
 Rectangle {
     id: orderingPlaceholder

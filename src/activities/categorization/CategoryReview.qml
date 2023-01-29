@@ -10,9 +10,9 @@
 import QtQuick 2.12
 import GCompris 1.0
 
-import "../../core"
+import "../../core/GCompris"
 import "categorization.js" as Activity
-import "qrc:/gcompris/src/core/core.js" as Core
+import "qrc:/gcompris/src/core/GCompris/core.js" as Core
 
 
 Item {
@@ -157,7 +157,7 @@ Item {
 
         BarButton {
             id: validate
-            source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
+            source: "qrc:/gcompris/src/core/GCompris/resource/bar_ok.svg"
             width: bar.height * 0.8
             height: width
             sourceSize.width: width

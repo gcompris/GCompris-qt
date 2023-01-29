@@ -11,8 +11,8 @@
 import QtQuick 2.12
 import GCompris 1.0
 
-import "../../core"
-import "qrc:/gcompris/src/core/core.js" as Core
+import "../../core/GCompris/"
+import "qrc:/gcompris/src/core/GCompris/core.js" as Core
 
 Rectangle {
     id: dialogBackground
@@ -130,7 +130,7 @@ Rectangle {
 
                                     Image {
                                         id: selectedIcon
-                                        source: "qrc:/gcompris/src/core/resource/apply.svg"
+                                        source: "qrc:/gcompris/src/core/GCompris/resource/apply.svg"
                                         sourceSize.width: height
                                         sourceSize.height: height
                                         width: height

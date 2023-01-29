@@ -11,7 +11,7 @@
  */
 import QtQuick 2.12
 
-import "../../core"
+import "../../core/GCompris"
 import "football.js" as Activity
 
 import GCompris 1.0
@@ -96,7 +96,7 @@ ActivityBase {
                             line.opacity = 0
                             Activity.startMotion(point1.x - ball.halfSize,
                                                  point1.y - ball.halfSize)
-                            activity.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/brick.wav")
+                            activity.audioEffects.play("qrc:/gcompris/src/core/GCompris/resource/sounds/brick.wav")
                         }
                         onPressed: line.opacity = 1
                         onTouchUpdated: {

@@ -11,9 +11,9 @@
 import QtQuick 2.12
 import GCompris 1.0
 
-import "../../core"
+import "../../core/GCompris"
 import "mosaic.js" as Activity
-import "qrc:/gcompris/src/core/core.js" as Core
+import "qrc:/gcompris/src/core/GCompris/core.js" as Core
 
 ActivityBase {
     id: activity
@@ -424,7 +424,7 @@ ActivityBase {
                     }
 
                     function selectCurrentCell(selectedCell) {
-                        items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/scroll.wav")
+                        items.audioEffects.play("qrc:/gcompris/src/core/GCompris/resource/sounds/scroll.wav")
                         items.selectedItem = selectedCell.imageName
                     }
 

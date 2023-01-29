@@ -13,7 +13,7 @@
  */
 import QtQuick 2.12
 import GCompris 1.0
-import "../../core"
+import "../../core/GCompris"
 import "railroad.js" as Activity
 
 ActivityBase {
@@ -71,7 +71,7 @@ ActivityBase {
         }
 
         function playSoundFX() {
-            activity.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/smudge.wav');
+            activity.audioEffects.play('qrc:/gcompris/src/core/GCompris/resource/sounds/smudge.wav');
         }
 
         // Countdown timer
@@ -148,7 +148,7 @@ ActivityBase {
                         }
                         if(globalCoordinates.y > (background.height / 8)) {
                             // Remove it if dropped in the lower section
-                            activity.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/smudge.wav')
+                            activity.audioEffects.play('qrc:/gcompris/src/core/GCompris/resource/sounds/smudge.wav')
                             listModel.remove(listModel.count - 1)
                         }
                     }
@@ -383,7 +383,7 @@ ActivityBase {
                     // total no. of wagons in correct answer + 2, before dropping the wagon
                     if(globalCoordinates.y <= (background.height / 12.5) &&
                             listModel.count < Activity.dataset["WagonsInCorrectAnswers"][bar.level - 1] + 2) {
-                        activity.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/smudge.wav')
+                        activity.audioEffects.play('qrc:/gcompris/src/core/GCompris/resource/sounds/smudge.wav')
                         var dropIndex = Activity.getDropIndex(globalCoordinates.x)
                         Activity.addWagon(uniqueID, dropIndex);
                     }
@@ -522,7 +522,7 @@ ActivityBase {
         // Answer Submission button
         BarButton {
             id: okButton
-            source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
+            source: "qrc:/gcompris/src/core/GCompris/resource/bar_ok.svg"
             height: score.height
             width: height
             sourceSize.width: width

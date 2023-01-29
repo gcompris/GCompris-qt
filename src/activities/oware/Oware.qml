@@ -11,7 +11,7 @@
 import QtQuick 2.12
 import GCompris 1.0
 
-import "../../core"
+import "../../core/GCompris"
 import "oware.js" as Activity
 
 ActivityBase {
@@ -88,7 +88,7 @@ ActivityBase {
                     left: topPanel.left
                     leftMargin: 5
                 }
-                playerImageSource: "qrc:/gcompris/src/core/resource/player_1.svg"
+                playerImageSource: "qrc:/gcompris/src/core/GCompris/resource/player_1.svg"
                 backgroundImageSource: "qrc:/gcompris/src/activities/bargame/resource/score_1.svg"
                 playerItem.source: Activity.url + "seed.svg"
                 playerItem.height: playerItem.parent.height * 0.35
@@ -178,7 +178,7 @@ ActivityBase {
                     right: topPanel.right
                     rightMargin: 5
                 }
-                playerImageSource: "qrc:/gcompris/src/core/resource/player_2.svg"
+                playerImageSource: "qrc:/gcompris/src/core/GCompris/resource/player_2.svg"
                 backgroundImageSource: "qrc:/gcompris/src/activities/bargame/resource/score_2.svg"
                 playerItem.source: Activity.url + "seed.svg"
                 playerItem.height: playerItem.parent.height * 0.35
@@ -265,7 +265,7 @@ ActivityBase {
                 }
 
                 onStopped: {
-                    audioEffects.play("qrc:/gcompris/src/core/resource/sounds/scroll.wav")
+                    audioEffects.play("qrc:/gcompris/src/core/GCompris/resource/sounds/scroll.wav")
                     animationSeed.visible = false
                     animationSeed.toPit.seeds = animationSeed.toPit.seeds + 1
                     if(items.forceStop  || items.gameOver)

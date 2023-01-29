@@ -12,7 +12,7 @@ import QtQuick 2.12
 import GCompris 1.0
 
 import "."
-import "../../core"
+import "../../core/GCompris"
 import "memory.js" as Activity
 
 ActivityBase {

@@ -7,7 +7,7 @@
  */
 .pragma library
 .import QtQuick 2.12 as Quick
-.import "../../core/core.js" as Core
+.import "../../core/GCompris/core.js" as Core
 
 var items;
 var currentLevel = 0;
@@ -104,5 +104,5 @@ function incrementCounter() {
 }
 
 function playWrongClickSound() {
-    items.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/crash.wav')
+    items.audioEffects.play('qrc:/gcompris/src/core/GCompris/resource/sounds/crash.wav')
 }

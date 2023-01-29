@@ -9,7 +9,7 @@
  */
 import QtQuick 2.12
 
-import "../../core"
+import "../../core/GCompris"
 import "nine_men_morris.js" as Activity
 
 import GCompris 1.0

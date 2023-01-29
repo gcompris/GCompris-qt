@@ -15,10 +15,10 @@ import GCompris 1.0
 import Box2D 2.0
 
 
-import "../../core"
+import "../../core/GCompris"
 import "editor/"
 import "balancebox.js" as Activity
-import "qrc:/gcompris/src/core/core.js" as Core
+import "qrc:/gcompris/src/core/GCompris/core.js" as Core
 
 ActivityBase {
     id: activity
@@ -303,7 +303,7 @@ ActivityBase {
                     else {
                         // sound-effect on each contact with a wall might be too annoying:
                         //items.audioEffects.stop();
-                        //items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/brick.wav");
+                        //items.audioEffects.play("qrc:/gcompris/src/core/GCompris/resource/sounds/brick.wav");
                     }
                 }
                 onEndContact: {
@@ -488,7 +488,7 @@ ActivityBase {
         Bonus {
             id: bonus
 
-            looseSound: "qrc:/gcompris/src/core/resource/sounds/crash.wav"
+            looseSound: "qrc:/gcompris/src/core/GCompris/resource/sounds/crash.wav"
             Component.onCompleted: {
                 win.connect(Activity.nextLevel);
                 loose.connect(Activity.initLevel);

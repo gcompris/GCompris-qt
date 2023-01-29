@@ -12,7 +12,7 @@
  */
 import QtQuick 2.12
 import GCompris 1.0
-import "../../core"
+import "../../core/GCompris"
 
 Item {
     id: hydro
@@ -311,7 +311,7 @@ Item {
         }
         function up() {
             isRaining = true;
-            items.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/water.wav');
+            items.audioEffects.play('qrc:/gcompris/src/core/GCompris/resource/sounds/water.wav');
             opacity = 1;
             rainAnim.start();
         }

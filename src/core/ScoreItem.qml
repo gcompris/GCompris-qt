@@ -191,7 +191,7 @@ Item {
                 anchors.verticalCenter: parent.verticalCenter
                 Image {
                     id: playerItem
-                    source: "qrc:/gcompris/src/core/resource/empty.svg"
+                    source: "qrc:/gcompris/src/core/GCompris/resource/empty.svg"
                     fillMode: Image.PreserveAspectFit
                     height: 0
                     sourceSize.height: height * 1.4
@@ -250,7 +250,7 @@ Item {
             name: "win"
             PropertyChanges {
                 target: playerImage
-                source: "qrc:/gcompris/src/core/resource/win.svg"
+                source: "qrc:/gcompris/src/core/GCompris/resource/win.svg"
             }
             PropertyChanges {
                 target: playerItem

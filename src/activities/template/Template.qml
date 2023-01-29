@@ -5,7 +5,7 @@
  */
 import QtQuick 2.12
 
-import "../../core"
+import "../../core/GCompris"
 import "template.js" as Activity
 
 ActivityBase {

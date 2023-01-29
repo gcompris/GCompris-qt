@@ -7,7 +7,7 @@
 
 .pragma library
 .import QtQuick 2.12 as Quick
-.import "qrc:/gcompris/src/core/core.js" as Core
+.import "qrc:/gcompris/src/core/GCompris/core.js" as Core
 
 var currentLevel
 var maxLevel
@@ -150,7 +150,7 @@ function questionsLeft() {
         items.numpad.answerFlag = true
 
         if(items.score.currentSubLevel < items.score.numberOfSubLevels) {
-            items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/win.wav")
+            items.audioEffects.play("qrc:/gcompris/src/core/GCompris/resource/sounds/win.wav")
             items.score.currentSubLevel++
             items.timer.start()
         } else {

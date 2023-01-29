@@ -6,7 +6,7 @@
  */
 import QtQuick 2.12
 
-import "../../core"
+import "../../core/GCompris"
 import "left_right_click.js" as Activity
 
 Item {

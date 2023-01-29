@@ -9,7 +9,7 @@
  */
 import QtQuick 2.12
 import GCompris 1.0
-import "../../core"
+import "../../core/GCompris"
 import "babymatch.js" as Activity
 
 Item {
@@ -52,7 +52,7 @@ Item {
 
     Image {
         id: ok
-        source:"qrc:/gcompris/src/core/resource/bar_ok.svg"
+        source:"qrc:/gcompris/src/core/GCompris/resource/bar_ok.svg"
         sourceSize.width: view.iconSize
         fillMode: Image.PreserveAspectFit
         anchors.horizontalCenter: parent.horizontalCenter
@@ -219,7 +219,7 @@ Item {
                 id: previous
                 opacity: (model.count > view.nbItemsByGroup &&
                           view.previousNavigation != 0 && view.currentDisplayedGroup != 0) ? 1 : 0
-                source:"qrc:/gcompris/src/core/resource/bar_previous.svg"
+                source:"qrc:/gcompris/src/core/GCompris/resource/bar_previous.svg"
                 sourceSize.width: view.iconSize * 0.35
                 fillMode: Image.PreserveAspectFit
                 MouseArea {
@@ -239,7 +239,7 @@ Item {
                 id: next
                 opacity: (model.count > view.nbItemsByGroup && view.nextNavigation != 0
                             && view.currentDisplayedGroup < view.nbDisplayedGroup - 1) ? 1 : 0
-                source:"qrc:/gcompris/src/core/resource/bar_next.svg"
+                source:"qrc:/gcompris/src/core/GCompris/resource/bar_next.svg"
                 sourceSize.width: view.iconSize * 0.35
                 fillMode: Image.PreserveAspectFit
                 MouseArea {

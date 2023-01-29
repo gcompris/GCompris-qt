@@ -372,7 +372,7 @@ function clickRight() {
             if (!(maze[getId(items.playerx, items.playery)] & EAST)) {
                 ++items.playerx
             } else {
-                items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/brick.wav")
+                items.audioEffects.play("qrc:/gcompris/src/core/GCompris/resource/sounds/brick.wav")
             }
         }
     }
@@ -397,7 +397,7 @@ function clickLeft() {
             if (!(maze[getId(items.playerx, items.playery)] & WEST)) {
                 --items.playerx
             } else {
-                items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/brick.wav")
+                items.audioEffects.play("qrc:/gcompris/src/core/GCompris/resource/sounds/brick.wav")
             }
         }
     }
@@ -426,7 +426,7 @@ function clickDown() {
             if (!(maze[getId(items.playerx, items.playery)] & SOUTH)) {
                 ++items.playery
             } else {
-                items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/brick.wav")
+                items.audioEffects.play("qrc:/gcompris/src/core/GCompris/resource/sounds/brick.wav")
             }
         }
     }
@@ -446,25 +446,25 @@ function clickUp() {
                 if (!(maze[getId(items.playerx, items.playery)] & EAST)) {
                     ++items.playerx
                 } else {
-                    items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/brick.wav")
+                    items.audioEffects.play("qrc:/gcompris/src/core/GCompris/resource/sounds/brick.wav")
                 }
             } else if (getPlayerRotation() === 180) {
                 if (!(maze[getId(items.playerx, items.playery)] & NORTH)) {
                     --items.playery
                 } else {
-                    items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/brick.wav")
+                    items.audioEffects.play("qrc:/gcompris/src/core/GCompris/resource/sounds/brick.wav")
                 }
             } else if (getPlayerRotation() === 90) {
                 if (!(maze[getId(items.playerx, items.playery)] & WEST)) {
                     --items.playerx
                 } else {
-                    items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/brick.wav")
+                    items.audioEffects.play("qrc:/gcompris/src/core/GCompris/resource/sounds/brick.wav")
                 }
             } else {
                 if (!(maze[getId(items.playerx, items.playery)] & SOUTH)) {
                     ++items.playery
                 } else {
-                    items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/brick.wav")
+                    items.audioEffects.play("qrc:/gcompris/src/core/GCompris/resource/sounds/brick.wav")
                 }
             }
         } else {
@@ -474,7 +474,7 @@ function clickUp() {
             if (!(maze[getId(items.playerx, items.playery)] & NORTH)) {
                 --items.playery
             } else {
-                items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/brick.wav")
+                items.audioEffects.play("qrc:/gcompris/src/core/GCompris/resource/sounds/brick.wav")
             }
         }
     }

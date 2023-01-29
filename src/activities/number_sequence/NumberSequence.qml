@@ -10,7 +10,7 @@
 */
 import QtQuick 2.12
 import GCompris 1.0
-import "../../core"
+import "../../core/GCompris"
 import "."
 import "number_sequence.js" as Activity
 import "number_sequence_dataset.js" as Dataset

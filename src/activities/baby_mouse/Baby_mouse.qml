@@ -6,9 +6,9 @@
 import QtQuick 2.12
 import GCompris 1.0
 
-import "../../core"
+import "../../core/GCompris"
 import "baby_mouse.js" as Activity
-import "qrc:/gcompris/src/core/core.js" as Core
+import "qrc:/gcompris/src/core/GCompris/core.js" as Core
 
 ActivityBase {
     id: activity

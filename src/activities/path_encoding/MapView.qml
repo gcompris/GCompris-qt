@@ -8,7 +8,7 @@ import QtQuick 2.12
 import GCompris 1.0
 import QtQml.Models 2.12
 
-import "../../core"
+import "../../core/GCompris"
 import "path.js" as Activity
 
 Rectangle {

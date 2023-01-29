@@ -13,7 +13,7 @@ import Box2D 2.0
 import QtQuick.Particles 2.12
 import GCompris 1.0
 
-import "../../core"
+import "../../core/GCompris"
 import "land_safe.js" as Activity
 
 ActivityBase {
@@ -662,14 +662,14 @@ ActivityBase {
 
             ControlButton {
                 id: upButton
-                source: "qrc:/gcompris/src/core/resource/arrow_up.svg"
+                source: "qrc:/gcompris/src/core/GCompris/resource/arrow_up.svg"
                 onPressed: Activity.processKeyPress({key: Qt.Key_Up});
                 exceed: upDownControl.spacing / 2
             }
 
             ControlButton {
                 id: downButton
-                source: "qrc:/gcompris/src/core/resource/arrow_down.svg"
+                source: "qrc:/gcompris/src/core/GCompris/resource/arrow_down.svg"
                 onPressed: Activity.processKeyPress({key: Qt.Key_Down});
                 exceed: upDownControl.spacing / 2
             }
@@ -690,7 +690,7 @@ ActivityBase {
 
             ControlButton {
                 id: leftButton
-                source: "qrc:/gcompris/src/core/resource/arrow_left.svg"
+                source: "qrc:/gcompris/src/core/GCompris/resource/arrow_left.svg"
                 onPressed: Activity.processKeyPress({key: Qt.Key_Left});
                 onReleased: Activity.processKeyRelease({key: Qt.Key_Left});
                 exceed: leftRightControl.spacing / 2
@@ -698,7 +698,7 @@ ActivityBase {
 
             ControlButton {
                 id: rightButton
-                source: "qrc:/gcompris/src/core/resource/arrow_right.svg"
+                source: "qrc:/gcompris/src/core/GCompris/resource/arrow_right.svg"
                 onPressed: Activity.processKeyPress({key: Qt.Key_Right});
                 onReleased: Activity.processKeyRelease({key: Qt.Key_Right});
                 exceed: leftRightControl.spacing / 2
@@ -779,7 +779,7 @@ ActivityBase {
 
         BarButton {
             id: ok
-            source: "qrc:/gcompris/src/core/resource/bar_ok.svg";
+            source: "qrc:/gcompris/src/core/GCompris/resource/bar_ok.svg";
             sourceSize.width: 75 * ApplicationInfo.ratio
             visible: false
             anchors.centerIn: background

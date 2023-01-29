@@ -10,7 +10,7 @@
  */
 .pragma library
 .import QtQuick 2.12 as Quick
-.import "qrc:/gcompris/src/core/core.js" as Core
+.import "qrc:/gcompris/src/core/GCompris/core.js" as Core
 
 var url = "qrc:/gcompris/src/activities/memory/resource/"
 
@@ -208,7 +208,7 @@ function reverseCardsIfNeeded() {
                 if(items.withTux && items.tuxTurn) {
                     tuxPlay()
                 } else {
-                    items.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/win.wav')
+                    items.audioEffects.play('qrc:/gcompris/src/core/GCompris/resource/sounds/win.wav')
                 }
             }
 

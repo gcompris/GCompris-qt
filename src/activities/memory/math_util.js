@@ -5,7 +5,7 @@
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-.import "qrc:/gcompris/src/core/core.js" as Core
+.import "qrc:/gcompris/src/core/GCompris/core.js" as Core
 
 function getAddTable(table) {
     var result = []

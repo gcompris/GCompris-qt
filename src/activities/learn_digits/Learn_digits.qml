@@ -10,7 +10,7 @@
 import QtQuick 2.12
 import GCompris 1.0
 
-import "../../core"
+import "../../core/GCompris"
 import "learn_digits.js" as Activity
 
 ActivityBase {
@@ -65,7 +65,7 @@ ActivityBase {
             readonly property var levels: activity.datasetLoader.data
             property int mode: 1 // default is arabic numerals
             property bool voicesEnabled: true
-            property string imageSource: "qrc:/gcompris/src/core/resource/empty.svg"
+            property string imageSource: "qrc:/gcompris/src/core/GCompris/resource/empty.svg"
         }
         property string locale: ApplicationSettings.locale
         property bool isHorizontal: layoutArea.width >= layoutArea.height
@@ -135,7 +135,7 @@ ActivityBase {
         BarButton {
             id: repeatItem
             visible: false
-            source: "qrc:/gcompris/src/core/resource/bar_repeat.svg"
+            source: "qrc:/gcompris/src/core/GCompris/resource/bar_repeat.svg"
             sourceSize.width: repeatArea.height > repeatArea.width ?
                                     repeatArea.width * 0.6 : repeatArea.height * 0.6
             anchors.centerIn: repeatArea
@@ -198,7 +198,7 @@ ActivityBase {
             }
             BarButton {
                 id: okButton
-                source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
+                source: "qrc:/gcompris/src/core/GCompris/resource/bar_ok.svg"
                 height: scoreArea.scoreItemsSize
                 width: scoreArea.scoreItemsSize
                 sourceSize.height: height

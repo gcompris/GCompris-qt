@@ -14,7 +14,7 @@
 import QtQuick 2.12
 import GCompris 1.0
 
-import "../../core"
+import "../../core/GCompris"
 import "piano_composition.js" as Activity
 
 Rectangle {
@@ -118,7 +118,7 @@ Rectangle {
                                     theme: "dark"
 
                                     Image {
-                                        source: "qrc:/gcompris/src/core/resource/apply.svg"
+                                        source: "qrc:/gcompris/src/core/GCompris/resource/apply.svg"
                                         sourceSize.width: height
                                         sourceSize.height: height
                                         width: height

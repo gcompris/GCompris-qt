@@ -9,7 +9,7 @@
  */
 import QtQuick 2.12
 
-import "../../core"
+import "../../core/GCompris"
 
 Item {
     id: question

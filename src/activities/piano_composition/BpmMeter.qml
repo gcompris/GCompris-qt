@@ -13,7 +13,7 @@
 import QtQuick 2.12
 import GCompris 1.0
 
-import "../../core"
+import "../../core/GCompris"
 
 Item {
     id: bpmMeter
@@ -55,7 +55,7 @@ Item {
     }
     Image {
         id: bpmDown
-        source: "qrc:/gcompris/src/core/resource/bar_down.svg"
+        source: "qrc:/gcompris/src/core/GCompris/resource/bar_down.svg"
         width: iconsWidth
         height: iconsWidth * 0.5
         sourceSize.width: width
@@ -120,7 +120,7 @@ Item {
     }
     Image {
         id: bpmUp
-        source: "qrc:/gcompris/src/core/resource/bar_up.svg"
+        source: "qrc:/gcompris/src/core/GCompris/resource/bar_up.svg"
         width: iconsWidth
         height: bpmDown.height
         sourceSize.width: width

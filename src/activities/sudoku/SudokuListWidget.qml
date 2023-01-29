@@ -11,7 +11,7 @@
 import QtQuick 2.12
 import GCompris 1.0
 import "sudoku.js" as Activity
-import "../../core"
+import "../../core/GCompris"
 
 Item {
     id: listWidget
@@ -132,7 +132,7 @@ Item {
                         anchors.fill: icon
                         hoverEnabled: true
                         onClicked: {
-                            listWidget.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/scroll.wav')
+                            listWidget.audioEffects.play('qrc:/gcompris/src/core/GCompris/resource/sounds/scroll.wav')
                             view.currentIndex = index
                         }
                     }

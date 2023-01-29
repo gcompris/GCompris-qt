@@ -11,7 +11,7 @@
 import QtQuick 2.12
 import GCompris 1.0
 
-import "../../core"
+import "../../core/GCompris"
 import "colormix.js" as Activity
 
 ActivityBase {
@@ -182,7 +182,7 @@ ActivityBase {
 
         BarButton {
             id: validate
-            source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
+            source: "qrc:/gcompris/src/core/GCompris/resource/bar_ok.svg"
             sourceSize.width: 66 * bar.barZoom
             visible: true
             enabled: items.okEnabled

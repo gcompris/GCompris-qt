@@ -21,8 +21,8 @@ Rectangle {
     border.color: "#9FB8E3"
     border.width: items.selectedLine == index ? 4 * ApplicationInfo.ratio : 0
 
-    readonly property string correctAnswerImage: "qrc:/gcompris/src/core/resource/apply.svg"
-    readonly property string wrongAnswerImage: "qrc:/gcompris/src/core/resource/cancel.svg"
+    readonly property string correctAnswerImage: "qrc:/gcompris/src/core/GCompris/resource/apply.svg"
+    readonly property string wrongAnswerImage: "qrc:/gcompris/src/core/GCompris/resource/cancel.svg"
 
     Rectangle {
         id: topLine

@@ -12,7 +12,7 @@
 .pragma library
 .import QtQuick 2.12 as Quick
 .import GCompris 1.0 as GCompris
-.import "qrc:/gcompris/src/core/core.js" as Core
+.import "qrc:/gcompris/src/core/GCompris/core.js" as Core
 
 var url = "qrc:/gcompris/src/activities/football/resource/"
 
@@ -147,7 +147,7 @@ function ballMotion() {
         velocityY *= -2
         velocityX *= -2
         tuxCollision = true
-        items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/brick.wav")
+        items.audioEffects.play("qrc:/gcompris/src/core/GCompris/resource/sounds/brick.wav")
     }
 
     // Friction

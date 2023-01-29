@@ -12,9 +12,9 @@
 
 import QtQuick 2.12
 import GCompris 1.0
-import "../../core"
+import "../../core/GCompris"
 import "click_on_letter.js" as Activity
-import "qrc:/gcompris/src/core/core.js" as Core
+import "qrc:/gcompris/src/core/GCompris/core.js" as Core
 
 ActivityBase {
     id: activity
@@ -177,7 +177,7 @@ ActivityBase {
 
         BarButton {
             id: repeatItem
-            source: "qrc:/gcompris/src/core/resource/bar_repeat.svg";
+            source: "qrc:/gcompris/src/core/GCompris/resource/bar_repeat.svg";
             sourceSize.width: 80 * ApplicationInfo.ratio
             anchors {
                 top: parent.top
@@ -298,20 +298,20 @@ ActivityBase {
 
         function handleKeys(event) {
             if(!items.keyNavigationMode) {
-                activity.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/smudge.wav');
+                activity.audioEffects.play('qrc:/gcompris/src/core/GCompris/resource/sounds/smudge.wav');
                 items.keyNavigationMode = true;
                 train.currentIndex = 0;
             } else if(event.key === Qt.Key_Right) {
-                activity.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/smudge.wav');
+                activity.audioEffects.play('qrc:/gcompris/src/core/GCompris/resource/sounds/smudge.wav');
                 train.moveCurrentIndexRight();
             } else if(event.key === Qt.Key_Left) {
-                activity.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/smudge.wav');
+                activity.audioEffects.play('qrc:/gcompris/src/core/GCompris/resource/sounds/smudge.wav');
                 train.moveCurrentIndexLeft();
             } else if(event.key === Qt.Key_Up) {
-                activity.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/smudge.wav');
+                activity.audioEffects.play('qrc:/gcompris/src/core/GCompris/resource/sounds/smudge.wav');
                 train.moveCurrentIndexUp();
             } else if(event.key === Qt.Key_Down) {
-                activity.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/smudge.wav');
+                activity.audioEffects.play('qrc:/gcompris/src/core/GCompris/resource/sounds/smudge.wav');
                 train.moveCurrentIndexDown();
             } else if(event.key === Qt.Key_Space && activity.audioVoices.playbackState != 1) {
                 if(Activity.checkAnswer(train.currentIndex)) {

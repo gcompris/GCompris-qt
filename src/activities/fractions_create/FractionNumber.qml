@@ -7,7 +7,7 @@
 import QtQuick 2.12
 import GCompris 1.0
 
-import "../../core"
+import "../../core/GCompris"
 
 Item {
     id: fractionNumber
@@ -19,7 +19,7 @@ Item {
 
     Image {
         id: shiftKeyboardLeft
-        source: "qrc:/gcompris/src/core/resource/bar_previous.svg"
+        source: "qrc:/gcompris/src/core/GCompris/resource/bar_previous.svg"
         height: 25 * ApplicationInfo.ratio
         width: height
         sourceSize.height: height
@@ -53,7 +53,7 @@ Item {
     }
     Image {
         id: shiftKeyboardRight
-        source: "qrc:/gcompris/src/core/resource/bar_next.svg"
+        source: "qrc:/gcompris/src/core/GCompris/resource/bar_next.svg"
         height: shiftKeyboardLeft.height
         width: height
         sourceSize.height: height

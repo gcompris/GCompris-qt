@@ -50,7 +50,7 @@ ParticleSystem {
     }
     ImageParticle {
         id: imageParticle
-        source: "qrc:/gcompris/src/core/resource/star.png"
+        source: "qrc:/gcompris/src/core/GCompris/resource/star.png"
         anchors.fill: parent
         color: "white"
         blueVariation: 0.5

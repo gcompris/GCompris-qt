@@ -12,9 +12,9 @@ import QtQuick 2.12
 import GCompris 1.0
 import Qt5Compat.GraphicalEffects 1.0
 
-import "../../core"
+import "../../core/GCompris"
 import "hangman.js" as Activity
-import "qrc:/gcompris/src/core/core.js" as Core
+import "qrc:/gcompris/src/core/GCompris/core.js" as Core
 
 ActivityBase {
     id: activity
@@ -111,7 +111,7 @@ ActivityBase {
 
         Image {
             id: goodIcon
-            source: "qrc:/gcompris/src/core/resource/apply.svg"
+            source: "qrc:/gcompris/src/core/GCompris/resource/apply.svg"
             anchors.top: score.bottom
             anchors.horizontalCenter: score.horizontalCenter
             anchors.topMargin: ok.anchors.bottomMargin
@@ -314,7 +314,7 @@ ActivityBase {
 
         BarButton {
             id: ok
-            source: "qrc:/gcompris/src/core/resource/bar_ok.svg";
+            source: "qrc:/gcompris/src/core/GCompris/resource/bar_ok.svg";
             sourceSize.width: Math.min(score.width, clock.width)
             visible: false
             anchors {

@@ -84,7 +84,7 @@ function moveTux(numberOfMovesToDo) {
     }
     else if (tuxIceBlockNumberGoal != fishIndex) {
         items.clockPosition--
-        items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/darken.wav")
+        items.audioEffects.play("qrc:/gcompris/src/core/GCompris/resource/sounds/darken.wav")
         if (items.clockPosition === 0) {
             lost()
             return

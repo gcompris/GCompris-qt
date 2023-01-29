@@ -63,3 +63,37 @@ function(GCOMPRIS_ADD_RCC resource_path)
   )
 
 endfunction()
+
+#
+# GCOMPRIS_ADD_PLUGIN(resource_path target <file list>)
+#
+function(GCOMPRIS_ADD_PLUGIN resource_path)
+
+  set(options)
+  set(oneValueArgs)
+  set(multiValueArgs QML_FILES RESOURCES)
+  cmake_parse_arguments(_RCC "${options}" "${oneValueArgs}" "${multiValueArgs}" ${ARGN})
+
+  get_filename_component(activity "${resource_path}" NAME)
+
+  file(GLOB core_qml_files RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} ${_RCC_QML_FILES})
+  file(GLOB core_resources_files RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} ${_RCC_RESOURCES})
+
+  add_library(${activity} SHARED)
+  qt_add_qml_module(
+    ${activity}
+    PLUGIN_TARGET ${activity}
+    URI ${activity}
+    RESOURCE_PREFIX /gcompris/src/activities/
+    VERSION 1.0
+    QML_FILES
+    ${core_qml_files}
+    RESOURCES
+    ${core_resources_files}
+    #ENABLE_TYPE_COMPILER # todo check if better than qmlcache https://doc.qt.io/qt-6/qt-add-qml-module.html#compiling-qml-to-c-with-qml-type-compiler
+    )
+
+  target_link_libraries(${GCOMPRIS_EXECUTABLE_NAME} PRIVATE ${activity})
+
+  install(TARGETS ${activity} LIBRARY DESTINATION lib)
+endfunction()

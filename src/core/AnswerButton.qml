@@ -120,11 +120,11 @@ Item {
     onPressed: {
         if (isCorrectAnswer) {
             if(audioEffects)
-                audioEffects.play("qrc:/gcompris/src/core/resource/sounds/win.wav")
+                audioEffects.play("qrc:/gcompris/src/core/GCompris/resource/sounds/win.wav")
             correctAnswerAnimation.start();
         } else {
             if(audioEffects)
-                audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav")
+                audioEffects.play("qrc:/gcompris/src/core/GCompris/resource/sounds/crash.wav")
             wrongAnswerAnimation.start();
         }
     }
@@ -139,7 +139,7 @@ Item {
         id: particles
     }
     Image {
-        source: "qrc:/gcompris/src/core/resource/button.svg"
+        source: "qrc:/gcompris/src/core/GCompris/resource/button.svg"
         sourceSize { height: parent.height; width: parent.width }
         width: sourceSize.width
         height: sourceSize.height

@@ -14,7 +14,7 @@ import QtQuick 2.12
 import GCompris 1.0
 import Qt5Compat.GraphicalEffects 1.0
 
-import "../../core"
+import "../../core/GCompris"
 import "lang.js" as Activity
 import "quiz.js" as QuizActivity
 
@@ -258,7 +258,7 @@ Item {
 
         BarButton {
             id: repeatItem
-            source: "qrc:/gcompris/src/core/resource/bar_repeat.svg";
+            source: "qrc:/gcompris/src/core/GCompris/resource/bar_repeat.svg";
             sourceSize.width: 80 * ApplicationInfo.ratio
 
             z: 12

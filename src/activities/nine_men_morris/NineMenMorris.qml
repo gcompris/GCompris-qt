@@ -9,7 +9,7 @@
 */
 import QtQuick 2.12
 
-import "../../core"
+import "../../core/GCompris"
 import "nine_men_morris.js" as Activity
 import "."
 
@@ -287,7 +287,7 @@ ActivityBase {
                 right: background.right
                 rightMargin: 5
             }
-            playerImageSource: "qrc:/gcompris/src/core/resource/player_2.svg"
+            playerImageSource: "qrc:/gcompris/src/core/GCompris/resource/player_2.svg"
             backgroundImageSource: Activity.url + "score_1.svg"
             playerScaleOriginX: player2score.width
             playerItem.source: Activity.url + "black_piece.svg"
@@ -307,7 +307,7 @@ ActivityBase {
                 left: background.left
                 leftMargin: 5
             }
-            playerImageSource: "qrc:/gcompris/src/core/resource/player_1.svg"
+            playerImageSource: "qrc:/gcompris/src/core/GCompris/resource/player_1.svg"
             backgroundImageSource: Activity.url + "score_2.svg"
             playerItem.source: Activity.url + "white_piece.svg"
             playerItem.height: playerItem.parent.height * 0.35

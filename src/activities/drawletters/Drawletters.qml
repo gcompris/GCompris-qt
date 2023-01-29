@@ -9,7 +9,7 @@
  */
 import QtQuick 2.12
 import "../number_sequence"
-import "../../core" as Core
+import "../../core/GCompris" as Core
 import "drawletters_dataset.js" as Dataset
 
 NumberSequence {

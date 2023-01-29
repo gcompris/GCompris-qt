@@ -19,7 +19,7 @@
 .import QtQuick 2.12 as Quick
 .import GCompris 1.0 as GCompris
 .import Box2D 2.0 as Box2D
-.import "qrc:/gcompris/src/core/core.js" as Core
+.import "qrc:/gcompris/src/core/GCompris/core.js" as Core
 .import QtQml 2.12 as Qml
 
 Qt.include("balancebox_common.js")
@@ -197,11 +197,11 @@ function checkBallContacts()
                     ballContacts[k].pressed = true;
                     lastContact = ballContacts[k].orderNum;
                     if (lastContact === contacts.length) {
-                        items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/win.wav");
+                        items.audioEffects.play("qrc:/gcompris/src/core/GCompris/resource/sounds/win.wav");
                         goalUnlocked = true;
                         goal.imageSource = baseUrl + "/door.svg";
                     } else
-                        items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/scroll.wav"); // bleep
+                        items.audioEffects.play("qrc:/gcompris/src/core/GCompris/resource/sounds/scroll.wav"); // bleep
                 }
             }
         }

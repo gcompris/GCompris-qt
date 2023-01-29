@@ -14,8 +14,8 @@
 import QtQuick 2.12
 import GCompris 1.0
 
-import "../../core"
-import "qrc:/gcompris/src/core/core.js" as Core
+import "../../core/GCompris"
+import "qrc:/gcompris/src/core/GCompris/core.js" as Core
 import "piano_composition.js" as Activity
 import "melodies.js" as Dataset
 
@@ -279,7 +279,7 @@ ActivityBase {
 
             Image {
                 id: shiftKeyboardLeft
-                source: "qrc:/gcompris/src/core/resource/bar_previous.svg"
+                source: "qrc:/gcompris/src/core/GCompris/resource/bar_previous.svg"
                 sourceSize.width: parent.width * 0.1
                 width: sourceSize.width
                 height: parent.height
@@ -295,7 +295,7 @@ ActivityBase {
 
             Image {
                 id: shiftKeyboardRight
-                source: "qrc:/gcompris/src/core/resource/bar_next.svg"
+                source: "qrc:/gcompris/src/core/GCompris/resource/bar_next.svg"
                 sourceSize.width: parent.width * 0.1
                 width: sourceSize.width
                 height: parent.height

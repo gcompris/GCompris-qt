@@ -9,7 +9,7 @@
  */
 import QtQuick 2.9
 import GCompris 1.0
-import "qrc:/gcompris/src/core/core.js" as Core
+import "qrc:/gcompris/src/core/GCompris/core.js" as Core
 
 /**
  * A QML component for GCompris' navigation bar.
@@ -281,7 +281,7 @@ Item {
 
     Image {
         id: openBar
-        source: "qrc:/gcompris/src/core/resource/bar_open.svg";
+        source: "qrc:/gcompris/src/core/GCompris/resource/bar_open.svg";
         anchors.bottom: parent.bottom
         anchors.left: parent.left
         sourceSize.width: fullButtonScaled
@@ -399,7 +399,7 @@ Item {
     Component {
         id: exit
         BarButton {
-            source: "qrc:/gcompris/src/core/resource/bar_exit.svg";
+            source: "qrc:/gcompris/src/core/GCompris/resource/bar_exit.svg";
             sourceSize.width: fullButtonScaled
             visible: barRow.isHidden === false
             onClicked: Core.quit(bar.parent.parent);
@@ -408,7 +408,7 @@ Item {
     Component {
         id: about
         BarButton {
-            source: "qrc:/gcompris/src/core/resource/bar_about.svg";
+            source: "qrc:/gcompris/src/core/GCompris/resource/bar_about.svg";
             sourceSize.width: fullButtonScaled
             visible: barRow.isHidden === false
             onClicked: bar.aboutClicked()
@@ -417,7 +417,7 @@ Item {
     Component {
         id: help
         BarButton {
-            source: "qrc:/gcompris/src/core/resource/bar_help.svg";
+            source: "qrc:/gcompris/src/core/GCompris/resource/bar_help.svg";
             sourceSize.width: fullButtonScaled
             visible: barRow.isHidden === false
             onClicked: bar.helpClicked()
@@ -426,7 +426,7 @@ Item {
     Component {
         id: previous
         BarButton {
-            source: "qrc:/gcompris/src/core/resource/bar_previous.svg";
+            source: "qrc:/gcompris/src/core/GCompris/resource/bar_previous.svg";
             sourceSize.width: halfButtonScaled
             visible: barRow.isHidden === false
             onClicked: {
@@ -457,7 +457,7 @@ Item {
     Component {
         id: next
         BarButton {
-            source: "qrc:/gcompris/src/core/resource/bar_next.svg";
+            source: "qrc:/gcompris/src/core/GCompris/resource/bar_next.svg";
             sourceSize.width: halfButtonScaled
             visible: barRow.isHidden === false
             onClicked: {
@@ -470,7 +470,7 @@ Item {
     Component {
         id: repeat
         BarButton {
-            source: "qrc:/gcompris/src/core/resource/bar_repeat.svg";
+            source: "qrc:/gcompris/src/core/GCompris/resource/bar_repeat.svg";
             sourceSize.width: fullButtonScaled
             visible: barRow.isHidden === false
             onClicked: bar.repeatClicked()
@@ -479,7 +479,7 @@ Item {
     Component {
         id: hint
         BarButton {
-            source: "qrc:/gcompris/src/core/resource/bar_hint.svg";
+            source: "qrc:/gcompris/src/core/GCompris/resource/bar_hint.svg";
             sourceSize.width: fullButtonScaled
             visible: barRow.isHidden === false
             onClicked: bar.hintClicked()
@@ -488,7 +488,7 @@ Item {
     Component {
         id: activityConfigImage
         BarButton {
-            source: "qrc:/gcompris/src/core/resource/bar_activity_config.svg";
+            source: "qrc:/gcompris/src/core/GCompris/resource/bar_activity_config.svg";
             sourceSize.width: fullButtonScaled
             visible: barRow.isHidden === false
             onClicked: bar.activityConfigClicked()
@@ -497,7 +497,7 @@ Item {
     Component {
         id: reload
         BarButton {
-            source: "qrc:/gcompris/src/core/resource/bar_reload.svg";
+            source: "qrc:/gcompris/src/core/GCompris/resource/bar_reload.svg";
             sourceSize.width: fullButtonScaled
             visible: barRow.isHidden === false
             onClicked: bar.reloadClicked()
@@ -506,7 +506,7 @@ Item {
     Component {
         id: config
         BarButton {
-            source: "qrc:/gcompris/src/core/resource/bar_config.svg";
+            source: "qrc:/gcompris/src/core/GCompris/resource/bar_config.svg";
             sourceSize.width: fullButtonScaled
             visible: barRow.isHidden === false
             onClicked: bar.configClicked()
@@ -515,7 +515,7 @@ Item {
     Component {
         id: home
         BarButton {
-            source: "qrc:/gcompris/src/core/resource/bar_home.svg";
+            source: "qrc:/gcompris/src/core/GCompris/resource/bar_home.svg";
             sourceSize.width: fullButtonScaled
             visible: barRow.isHidden === false
             onClicked: {
@@ -526,7 +526,7 @@ Item {
     Component {
         id: downloadImage
         AnimatedImage {
-            source: "qrc:/gcompris/src/core/resource/loader.gif"
+            source: "qrc:/gcompris/src/core/GCompris/resource/loader.gif"
             visible: barRow.isHidden === false
             MouseArea {
                 id: mouseArea

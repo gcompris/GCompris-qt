@@ -13,7 +13,7 @@
 
 import QtQuick 2.12
 import GCompris 1.0
-import "../../core"
+import "../../core/GCompris"
 import "calendar.js" as Activity
 
 Rectangle {
@@ -39,7 +39,7 @@ Rectangle {
     Image {
         id: cross
         z: 10
-        source: "qrc:/gcompris/src/core/resource/cancel.svg"
+        source: "qrc:/gcompris/src/core/GCompris/resource/cancel.svg"
         sourceSize.width: choiceBox.height
         sourceSize.height: choiceBox.height
         anchors.centerIn: parent

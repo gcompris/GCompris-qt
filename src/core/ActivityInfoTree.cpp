@@ -96,6 +96,7 @@ void ActivityInfoTree::menuTreeAppend(ActivityInfo *menu)
 void ActivityInfoTree::menuTreeAppend(QQmlEngine *engine,
                                       const QDir &menuDir, const QString &menuFile)
 {
+
     QQmlComponent component(engine,
                             QUrl::fromLocalFile(menuDir.absolutePath() + '/' + menuFile));
     QObject *object = component.create();
@@ -105,7 +106,7 @@ void ActivityInfoTree::menuTreeAppend(QQmlEngine *engine,
         }
     }
     else {
-        qDebug() << menuFile << ": Failed to load";
+        qDebug() << menuFile << ": Failed to load" << component.errors();
     }
 }
 
@@ -257,9 +258,13 @@ QObject *ActivityInfoTree::menuTreeProvider(QQmlEngine *engine, QJSEngine *scrip
     Q_UNUSED(scriptEngine)
 
     ActivityInfoTree *menuTree = new ActivityInfoTree(nullptr);
+
     QQmlComponent componentRoot(engine,
                                 QUrl("qrc:/gcompris/src/activities/menu/ActivityInfo.qml"));
     QObject *objectRoot = componentRoot.create();
+    if(!objectRoot) {
+        qDebug() << "ActivityInfoTree::menuTreeProvider:" << componentRoot.errors();
+    }
     menuTree->setRootMenu(qobject_cast<ActivityInfo *>(objectRoot));
 
     QStringList activities = getActivityList();
@@ -267,9 +272,9 @@ QObject *ActivityInfoTree::menuTreeProvider(QQmlEngine *engine, QJSEngine *scrip
     for (const QString &line: activities) {
         QString url = QString("qrc:/gcompris/src/activities/%1/ActivityInfo.qml").arg(line);
         if (!QResource::registerResource(
-                ApplicationInfo::getFilePath(line + ".rcc")))
+                ApplicationInfo::getFilePath(line + ".rcc"))) {
             qDebug() << "Failed to load the resource file " << line + ".rcc";
-
+        }
         QQmlComponent activityComponentRoot(engine, QUrl(url));
         QObject *activityObjectRoot = activityComponentRoot.create();
         if (activityObjectRoot != nullptr) {
@@ -302,8 +307,6 @@ QObject *ActivityInfoTree::menuTreeProvider(QQmlEngine *engine, QJSEngine *scrip
 
 void ActivityInfoTree::registerResources()
 {
-    if (!QResource::registerResource(ApplicationInfo::getFilePath("core.rcc")))
-        qDebug() << "Failed to load the resource file " << ApplicationInfo::getFilePath("core.rcc");
 
     if (!QResource::registerResource(ApplicationInfo::getFilePath("menu.rcc")))
         qDebug() << "Failed to load the resource file menu.rcc";

@@ -10,7 +10,7 @@
  */
 import QtQuick 2.12
 import "braille_alphabets.js" as Activity
-import "../../core"
+import "../../core/GCompris"
 import GCompris 1.0
 
 Item {
@@ -128,7 +128,7 @@ Item {
                     } else {
                         state = "on"
                     }
-                    activity.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/scroll.wav")
+                    activity.audioEffects.play("qrc:/gcompris/src/core/GCompris/resource/sounds/scroll.wav")
                     // On touch screens we don't get the exit event.
                     border.width = 2 * ApplicationInfo.ratio
                     brailleCharItem.updateBrailleCharFromDots()

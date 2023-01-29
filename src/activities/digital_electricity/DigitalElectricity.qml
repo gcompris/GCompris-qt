@@ -13,7 +13,7 @@
 import QtQuick 2.12
 import GCompris 1.0
 
-import "../../core"
+import "../../core/GCompris"
 import "digital_electricity.js" as Activity
 
 ActivityBase {
@@ -446,7 +446,7 @@ ActivityBase {
                 rightMargin: 10 * ApplicationInfo.ratio
                 bottomMargin: height * 0.5
             }
-            source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
+            source: "qrc:/gcompris/src/core/GCompris/resource/bar_ok.svg"
             sourceSize.width: 60 * ApplicationInfo.ratio
             enabled: !tutorialInstruction.visible && !bonus.isPlaying
             onClicked: Activity.checkAnswer()

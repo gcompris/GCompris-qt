@@ -43,7 +43,7 @@ Rectangle {
             progress.anim.running = false;
 
             /* Play sound */
-            activity.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/brick.wav")
+            activity.audioEffects.play("qrc:/gcompris/src/core/GCompris/resource/sounds/brick.wav")
 
             /* Success or not */
             if(progress.ratio < 100) {
@@ -59,7 +59,7 @@ Rectangle {
             progress.anim.running = true;
 
             /* Play sound */
-            activity.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/flip.wav")
+            activity.audioEffects.play("qrc:/gcompris/src/core/GCompris/resource/sounds/flip.wav")
         }
     }
 }

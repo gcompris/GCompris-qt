@@ -10,7 +10,7 @@
  */
 import QtQuick 2.12
 import "findit.js" as Activity
-import "../../core"
+import "../../core/GCompris"
 import GCompris 1.0
 
 Image {

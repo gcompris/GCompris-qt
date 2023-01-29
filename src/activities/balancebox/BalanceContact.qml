@@ -10,7 +10,7 @@
 import QtQuick 2.12
 import Box2D 2.0
 
-import "../../core"
+import "../../core/GCompris"
 import "balancebox.js" as Activity
 
 BalanceItem {

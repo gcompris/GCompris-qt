@@ -11,7 +11,7 @@
 import QtQuick 2.12
 import Qt5Compat.GraphicalEffects 1.0
 
-import "../../core"
+import "../../core/GCompris"
 import "fifteen.js" as Activity
 
 ActivityBase {
@@ -151,7 +151,7 @@ ActivityBase {
                         if(Activity.checkAnswer())
                             bonus.good('flower')
                         else
-                            activity.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/flip.wav")
+                            activity.audioEffects.play("qrc:/gcompris/src/core/GCompris/resource/sounds/flip.wav")
                     }
                 }
             }

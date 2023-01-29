@@ -12,7 +12,7 @@
 .pragma library
 .import QtQuick 2.12 as Quick
 .import GCompris 1.0 as GCompris
-.import "qrc:/gcompris/src/core/core.js" as Core
+.import "qrc:/gcompris/src/core/GCompris/core.js" as Core
 .import "qrc:/gcompris/src/activities/lang/lang_api.js" as Lang
 
 var currentLevel

@@ -12,7 +12,7 @@
 import QtQuick 2.12
 import Qt5Compat.GraphicalEffects 1.0
 import "hexagon.js" as Activity
-import "../../core"
+import "../../core/GCompris"
 import GCompris 1.0
 
 Item {
@@ -100,7 +100,7 @@ Item {
             border.opacity = 0
             isTouched = true
             strawberry.source = Activity.url + "strawberry.svg"
-            audioEffects.play("qrc:/gcompris/src/core/resource/sounds/win.wav")
+            audioEffects.play("qrc:/gcompris/src/core/GCompris/resource/sounds/win.wav")
             Activity.strawberryFound()
             particleLoader.item.burst(40)
         } else {

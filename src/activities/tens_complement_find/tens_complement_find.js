@@ -6,7 +6,7 @@
  *
  */
 .pragma library
-.import "../../core/core.js" as Core
+.import "../../core/GCompris/core.js" as Core
 
 var currentLevel = 0;
 var numberOfLevel;

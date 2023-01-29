@@ -42,8 +42,8 @@ CheckBox {
         sourceSize.height: indicatorImageHeight
         property string suffix: checkBox.enabled ? ".svg" : "_disabled.svg"
         source:
-        checkBox.checked ? "qrc:/gcompris/src/core/resource/apply" + suffix :
-        "qrc:/gcompris/src/core/resource/cancel" + suffix
+        checkBox.checked ? "qrc:/gcompris/src/core/GCompris/resource/apply" + suffix :
+        "qrc:/gcompris/src/core/GCompris/resource/cancel" + suffix
     }
     contentItem: GCText {
 	    anchors.left: indicator.right

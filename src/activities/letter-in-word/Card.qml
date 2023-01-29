@@ -13,7 +13,7 @@
 import QtQuick 2.12
 import GCompris 1.0
 import Qt5Compat.GraphicalEffects 1.0
-import "../../core"
+import "../../core/GCompris"
 import "letter-in-word.js" as Activity
 
 Rectangle {
@@ -61,7 +61,7 @@ Rectangle {
 
     Image {
         id: tick
-        source: "qrc:/gcompris/src/core/resource/apply.svg"
+        source: "qrc:/gcompris/src/core/GCompris/resource/apply.svg"
         sourceSize.width: cardBg.width / 3
         sourceSize.height: cardBg.width / 3
         visible: selected

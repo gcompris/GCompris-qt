@@ -10,7 +10,7 @@
  */
 import QtQuick 2.12
 import GCompris 1.0
-import "../../core"
+import "../../core/GCompris"
 import "learn_decimals.js" as Activity
 
 GridView {
@@ -64,7 +64,7 @@ GridView {
                     // helps to avoid it in most cases.
                     Image {
                         id: squareContainer
-                        source: items.isQuantityMode ? "qrc:/gcompris/src/core/resource/empty.svg" :
+                        source: items.isQuantityMode ? "qrc:/gcompris/src/core/GCompris/resource/empty.svg" :
                             "qrc:/gcompris/src/activities/learn_decimals/resource/rectDark.svg"
                         visible: singleBar.Drag.active && index >= selectedSquareNumbers ? false : true
                         width: singleBar.cellSize

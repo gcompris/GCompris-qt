@@ -10,11 +10,11 @@
  */
 import QtQuick 2.12
 import GCompris 1.0
-import "../../core"
+import "../../core/GCompris"
 import "../braille_alphabets"
 import "louis-braille.js" as Activity
 import "louis_braille_data.js" as Dataset
-import "qrc:/gcompris/src/core/core.js" as Core
+import "qrc:/gcompris/src/core/GCompris/core.js" as Core
 
 ActivityBase {
     id: activity
@@ -137,7 +137,7 @@ ActivityBase {
             anchors.right: img.left
             anchors.rightMargin: 20 * ApplicationInfo.ratio
             anchors.verticalCenter: img.verticalCenter
-            source: "qrc:/gcompris/src/core/resource/bar_previous.svg"
+            source: "qrc:/gcompris/src/core/GCompris/resource/bar_previous.svg"
             sourceSize.height: 80 * ApplicationInfo.ratio
             Behavior on scale { PropertyAnimation { duration: 100} }
             MouseArea {
@@ -218,7 +218,7 @@ ActivityBase {
             anchors.left: img.right
             anchors.leftMargin: 20 * ApplicationInfo.ratio
             anchors.verticalCenter: img.verticalCenter
-            source: "qrc:/gcompris/src/core/resource/bar_next.svg"
+            source: "qrc:/gcompris/src/core/GCompris/resource/bar_next.svg"
             sourceSize.height: 80 * ApplicationInfo.ratio
             Behavior on scale { PropertyAnimation { duration: 100} }
 

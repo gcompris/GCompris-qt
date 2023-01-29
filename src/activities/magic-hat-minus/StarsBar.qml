@@ -10,7 +10,7 @@
  */
 import QtQuick 2.12
 import "magic-hat.js" as Activity
-import "../../core"
+import "../../core/GCompris"
 
 Item {
     id: item
@@ -82,7 +82,7 @@ Item {
     }
 
     function moveStars() {
-        activity.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/smudge.wav")
+        activity.audioEffects.play("qrc:/gcompris/src/core/GCompris/resource/sounds/smudge.wav")
         for(var i=0; i<nbStarsOn; i++) {
             repeaterStars.itemAt(i).starToMove.state = "MoveUnderHat"
         }

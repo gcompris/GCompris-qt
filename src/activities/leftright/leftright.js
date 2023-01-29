@@ -9,7 +9,7 @@
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
 .import QtQuick 2.12 as Quick
-.import "qrc:/gcompris/src/core/core.js" as Core
+.import "qrc:/gcompris/src/core/GCompris/core.js" as Core
 
 var currentHands = []
 var levels = [

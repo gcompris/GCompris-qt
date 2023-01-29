@@ -11,7 +11,7 @@
 */
 .pragma library
 .import QtQuick 2.12 as Quick
-.import "qrc:/gcompris/src/core/core.js" as Core
+.import "qrc:/gcompris/src/core/GCompris/core.js" as Core
 
 var url = "qrc:/gcompris/src/activities/gravity/resource/"
 
@@ -207,7 +207,7 @@ function destroyPlanet() {
 }
 
 function crash() {
-    items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav");
+    items.audioEffects.play("qrc:/gcompris/src/core/GCompris/resource/sounds/crash.wav");
     items.explosion.show();
     items.spaceship.hide();
     stop();

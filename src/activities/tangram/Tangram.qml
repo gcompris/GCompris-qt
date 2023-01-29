@@ -12,7 +12,7 @@
 import QtQuick 2.12
 import GCompris 1.0
 
-import "../../core"
+import "../../core/GCompris"
 import "tangram.js" as Activity
 import "dataset.js" as Dataset
 import "."
@@ -245,7 +245,7 @@ ActivityBase {
 
                 Image {
                     id: rotateButton
-                    source: "qrc:/gcompris/src/core/resource/bar_reload.svg"
+                    source: "qrc:/gcompris/src/core/GCompris/resource/bar_reload.svg"
                     x: - width
                     y: parent.height / 2 - height / 2
                     visible: tansItem.selected && tansItem.rotable

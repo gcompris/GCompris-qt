@@ -8,7 +8,7 @@
 import QtQuick 2.12
 import GCompris 1.0
 
-import "../../core"
+import "../../core/GCompris"
 import "algebra.js" as Activity
 
 ActivityBase {
@@ -116,7 +116,7 @@ ActivityBase {
             id: okButton
             x: parent.width * 0.7
             z: 10
-            source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
+            source: "qrc:/gcompris/src/core/GCompris/resource/bar_ok.svg"
             anchors.verticalCenter: score.verticalCenter
             anchors.left: score.right
             anchors.leftMargin: 0.2 * height

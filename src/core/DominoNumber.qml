@@ -166,7 +166,7 @@ Item {
 
     // Increase the displayed integer value by one.
     function up() {
-        audioEffects.play('qrc:/gcompris/src/core/resource/sounds/scroll.wav')
+        audioEffects.play('qrc:/gcompris/src/core/GCompris/resource/sounds/scroll.wav')
         if(item.value == item.valueMax)
             item.value = 0
         else
@@ -175,7 +175,7 @@ Item {
 
     // Decrease the displayed integer by one.
     function down() {
-        audioEffects.play('qrc:/gcompris/src/core/resource/sounds/scroll.wav')
+        audioEffects.play('qrc:/gcompris/src/core/GCompris/resource/sounds/scroll.wav')
         if(item.value == 0)
             item.value = item.valueMax
         else

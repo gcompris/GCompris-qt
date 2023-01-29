@@ -49,5 +49,5 @@ Loader {
         }
     }
     onLoaded: item.clip = clip
-    source: "qrc:/gcompris/src/core/ParticleSystemStar.qml"
+    source: "qrc:/gcompris/src/core/GCompris/ParticleSystemStar.qml"
 }

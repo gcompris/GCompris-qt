@@ -16,8 +16,8 @@ var prevPos = [-1, -1]
 var map
 var decodeIndex
 
-var successSoundPath = 'qrc:/gcompris/src/core/resource/sounds/completetask.wav'
-var errorSoundPath = 'qrc:/gcompris/src/core/resource/sounds/crash.wav'
+var successSoundPath = 'qrc:/gcompris/src/core/GCompris/resource/sounds/completetask.wav'
+var errorSoundPath = 'qrc:/gcompris/src/core/GCompris/resource/sounds/crash.wav'
 
 var Directions = {
     UP: 'UP',

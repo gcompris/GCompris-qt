@@ -18,7 +18,7 @@
 .pragma library
 .import QtQuick 2.12 as Quick
 .import GCompris 1.0 as GCompris //for ApplicationInfo
-.import "qrc:/gcompris/src/core/core.js" as Core
+.import "qrc:/gcompris/src/core/GCompris/core.js" as Core
 
 var currentLevel = 0;
 var currentSubLevel = 0;
@@ -457,7 +457,7 @@ function appendRandomWord(word) {
 function audioCrashPlay() {
     if(successRate > 0.5)
         successRate -= 0.1
-    items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav")
+    items.audioEffects.play("qrc:/gcompris/src/core/GCompris/resource/sounds/crash.wav")
 }
 
 function nextLevel() {

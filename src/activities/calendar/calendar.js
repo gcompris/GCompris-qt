@@ -12,7 +12,7 @@
 .import QtQuick 2.12 as Quick
 .import QtQml 2.12 as Qml
 .import GCompris 1.0 as GCompris //for ApplicationInfo
-.import "qrc:/gcompris/src/core/core.js" as Core
+.import "qrc:/gcompris/src/core/GCompris/core.js" as Core
 
 var currentLevel = 0
 var numberOfLevel

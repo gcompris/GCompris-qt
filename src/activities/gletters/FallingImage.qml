@@ -13,7 +13,7 @@ import QtQuick 2.12
 import Qt5Compat.GraphicalEffects 1.0
 import GCompris 1.0
 
-import "../../core"
+import "../../core/GCompris"
 import "gletters.js" as Activity
 
 Item {

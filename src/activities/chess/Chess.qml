@@ -12,7 +12,7 @@
 import QtQuick 2.12
 import GCompris 1.0
 
-import "../../core"
+import "../../core/GCompris"
 import "."
 import "chess.js" as Activity
 
@@ -384,7 +384,7 @@ ActivityBase {
                 Behavior on rotation { PropertyAnimation { easing.type: Easing.InOutQuad; duration: 1400 } }
 
                 function swap() {
-                    items.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/flip.wav')
+                    items.audioEffects.play('qrc:/gcompris/src/core/GCompris/resource/sounds/flip.wav')
                     coordsOpacity = 0
                     timerSwap.start()
                     if(chessboard.rotation == 180)
@@ -558,7 +558,7 @@ ActivityBase {
                     var pawnPiece = getPieceAt(pos)
                     if(pos != from && state[i].img === "" &&
                        pawnPiece && pawnPiece.img[1] === 'p') {
-                           items.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/smudge.wav')
+                           items.audioEffects.play('qrc:/gcompris/src/core/GCompris/resource/sounds/smudge.wav')
                            if(pawnPiece.isWhite) {
                                whiteTakenPieces.takenPiecesModel.append(pawnPiece)
                                whiteTakenPieces.pushedLast.push(movesCount)
@@ -572,7 +572,7 @@ ActivityBase {
                 }
 
                 if(toPiece.img !== '') {
-                    items.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/smudge.wav')
+                    items.audioEffects.play('qrc:/gcompris/src/core/GCompris/resource/sounds/smudge.wav')
                     if(toPiece.isWhite) {
                         whiteTakenPieces.takenPiecesModel.append(toPiece)
                         whiteTakenPieces.pushedLast.push(movesCount)
@@ -582,7 +582,7 @@ ActivityBase {
                     }
                 }
                 else
-                    items.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/scroll.wav')
+                    items.audioEffects.play('qrc:/gcompris/src/core/GCompris/resource/sounds/scroll.wav')
                 toPiece.hide(from)
                 fromPiece.move(to)
             }

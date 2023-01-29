@@ -12,7 +12,7 @@ import QtQuick 2.12
 import GCompris 1.0
 // TextField
 import QtQuick.Controls 2.12
-import "qrc:/gcompris/src/core/core.js" as Core
+import "qrc:/gcompris/src/core/GCompris/core.js" as Core
 
 Rectangle {
     id: creationHandler
@@ -291,7 +291,7 @@ Rectangle {
                     height: parent.height / 1.5
                     anchors.top: parent.top
                     anchors.topMargin: 3
-                    source: "qrc:/gcompris/src/core/resource/file_icon.svg"
+                    source: "qrc:/gcompris/src/core/GCompris/resource/file_icon.svg"
                 }
 
                 GCText {

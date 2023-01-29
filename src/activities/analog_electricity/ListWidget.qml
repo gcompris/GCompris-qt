@@ -11,7 +11,7 @@
  */
 import QtQuick 2.12
 import GCompris 1.0
-import "../../core"
+import "../../core/GCompris"
 import "analog_electricity.js" as Activity
 
 Item {
@@ -356,7 +356,7 @@ Item {
                 id: previous
                 opacity: (model.count > view.nbItemsByGroup &&
                           view.previousNavigation != 0 && view.currentDisplayedGroup != 0) ? 1 : 0
-                source: "qrc:/gcompris/src/core/resource/bar_previous.svg"
+                source: "qrc:/gcompris/src/core/GCompris/resource/bar_previous.svg"
                 sourceSize.width: view.iconSize * 0.30
                 fillMode: Image.PreserveAspectFit
                 MouseArea {
@@ -375,7 +375,7 @@ Item {
                 id: next
                 visible: model.count > view.nbItemsByGroup && view.nextNavigation != 0 && view.currentDisplayedGroup <
                          view.nbDisplayedGroup - 1
-                source: "qrc:/gcompris/src/core/resource/bar_next.svg"
+                source: "qrc:/gcompris/src/core/GCompris/resource/bar_next.svg"
                 sourceSize.width: view.iconSize * 0.30
                 fillMode: Image.PreserveAspectFit
                 MouseArea {

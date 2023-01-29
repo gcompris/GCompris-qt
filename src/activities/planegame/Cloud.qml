@@ -9,7 +9,7 @@
 */
 import QtQuick 2.12
 import "planegame.js" as Activity
-import "../../core"
+import "../../core/GCompris"
 import GCompris 1.0
 
 Image {

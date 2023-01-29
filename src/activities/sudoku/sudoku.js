@@ -9,7 +9,7 @@
 
 .pragma library
 .import QtQuick 2.12 as Quick
-.import "qrc:/gcompris/src/core/core.js" as Core
+.import "qrc:/gcompris/src/core/GCompris/core.js" as Core
 
 var currentLevel = 0
 var numberOfLevel
@@ -125,15 +125,15 @@ function clickOn(caseX, caseY) {
         */
         if(items.sudokuModel.get(currentCase).textValue == '.') {
             if(isGood) {
-                items.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/win.wav')
+                items.audioEffects.play('qrc:/gcompris/src/core/GCompris/resource/sounds/win.wav')
                 items.sudokuModel.get(currentCase).textValue = currentSymbol.text
             } else {
-                items.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/smudge.wav')
+                items.audioEffects.play('qrc:/gcompris/src/core/GCompris/resource/sounds/smudge.wav')
             }
         }
         else {
             // Already a symbol in this case, we remove it
-            items.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/darken.wav')
+            items.audioEffects.play('qrc:/gcompris/src/core/GCompris/resource/sounds/darken.wav')
             items.sudokuModel.get(currentCase).textValue = '.'
         }
     }

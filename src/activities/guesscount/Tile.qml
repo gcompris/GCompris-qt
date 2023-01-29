@@ -10,7 +10,7 @@
  */
 import QtQuick 2.12
 import "guesscount.js" as Activity
-import "../../core"
+import "../../core/GCompris"
 
 MouseArea {
     id: mouseArea

@@ -12,8 +12,8 @@
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
 import QtQuick 2.15
-import "../../core"
-import "../../core/core.js" as Core
+import "../../core/GCompris"
+import "../../core/GCompris/core.js" as Core
 import GCompris 1.0
 
 ActivityBase {
@@ -594,7 +594,7 @@ ActivityBase {
         }
         BarButton {
             id: repeatItem
-            source: "qrc:/gcompris/src/core/resource/bar_repeat.svg"
+            source: "qrc:/gcompris/src/core/GCompris/resource/bar_repeat.svg"
             height: ledContainer.height
             width: height
             sourceSize.height: height
@@ -634,7 +634,7 @@ ActivityBase {
 
         BarButton {
             id: okButton
-            source: "qrc:/gcompris/src/core/resource/bar_ok.svg";
+            source: "qrc:/gcompris/src/core/GCompris/resource/bar_ok.svg";
             visible: !firstScreen.visible
             anchors.right: score.left
             anchors.verticalCenter: layoutArea.verticalCenter

@@ -7,7 +7,7 @@
 import QtQuick 2.12
 import Qt5Compat.GraphicalEffects 1.0
 
-import "../../core"
+import "../../core/GCompris"
 
 Item {
 

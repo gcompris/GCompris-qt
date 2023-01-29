@@ -14,9 +14,9 @@ import QtQuick 2.12
 import GCompris 1.0
 import Qt5Compat.GraphicalEffects 1.0
 
-import "../../core"
+import "../../core/GCompris"
 import "lang.js" as Activity
-import "qrc:/gcompris/src/core/core.js" as Core
+import "qrc:/gcompris/src/core/GCompris/core.js" as Core
 
 Item {
     id: imageReview
@@ -235,7 +235,7 @@ Item {
 
             Image {
                 id: previousWordButton
-                source: "qrc:/gcompris/src/core/resource/bar_previous.svg";
+                source: "qrc:/gcompris/src/core/GCompris/resource/bar_previous.svg";
                 sourceSize.width: 30 * 1.2 * ApplicationInfo.ratio
                 visible: score.currentSubLevel > 1 ? true : false
                 anchors {
@@ -253,7 +253,7 @@ Item {
 
             Image {
                 id: nextWordButton
-                source: "qrc:/gcompris/src/core/resource/bar_next.svg";
+                source: "qrc:/gcompris/src/core/GCompris/resource/bar_next.svg";
                 sourceSize.width: 30 * 1.2 * ApplicationInfo.ratio
                 anchors {
                     left: parent.right
@@ -329,7 +329,7 @@ Item {
         BarButton {
             id: repeatItem
             parent: rootItem
-            source: "qrc:/gcompris/src/core/resource/bar_repeat.svg";
+            source: "qrc:/gcompris/src/core/GCompris/resource/bar_repeat.svg";
             sourceSize.width: Math.min(imageFrame.x, 100 * ApplicationInfo.ratio) - 2 * anchors.margins
 
             z: 12

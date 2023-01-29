@@ -11,7 +11,7 @@
 import QtQuick 2.12
 import GCompris 1.0
 
-import "../../core"
+import "../../core/GCompris"
 
 Item {
     property int goal
@@ -102,7 +102,7 @@ Item {
             verticalCenter: muncherLife.verticalCenter
             margins: 12
         }
-        source: "qrc:/gcompris/src/core/resource/arrows_move.svg"
+        source: "qrc:/gcompris/src/core/GCompris/resource/arrows_move.svg"
         sourceSize.height: muncherLife.height
         opacity: topPanel.bar.level == 1 && ApplicationInfo.isMobile ? 1 : 0
     }

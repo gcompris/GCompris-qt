@@ -9,7 +9,7 @@
 import QtQuick 2.12
 import GCompris 1.0
 
-import "../../core"
+import "../../core/GCompris"
 import "../ballcatch"
 import "ballcatch.js" as Activity
 
@@ -229,7 +229,7 @@ ActivityBase {
         }
 
         function playSound(identifier) {
-            activity.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/"+ identifier + ".wav");
+            activity.audioEffects.play("qrc:/gcompris/src/core/GCompris/resource/sounds/"+ identifier + ".wav");
         }
 
         /* Timer starting when user first presses a first key.

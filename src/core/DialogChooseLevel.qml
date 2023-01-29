@@ -293,7 +293,7 @@ Rectangle {
                             visible: modelData.enabled
                             Image {
                                 id: difficultyIcon
-                                source: "qrc:/gcompris/src/core/resource/difficulty" +
+                                source: "qrc:/gcompris/src/core/GCompris/resource/difficulty" +
                                 modelData.difficulty + ".svg";
                                 sourceSize.height: objective.indicatorImageHeight
                                 sourceSize.width: height

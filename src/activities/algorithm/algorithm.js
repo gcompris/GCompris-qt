@@ -10,7 +10,7 @@
  */
 .pragma library
 .import QtQuick 2.12 as Quick
-.import "qrc:/gcompris/src/core/core.js" as Core
+.import "qrc:/gcompris/src/core/GCompris/core.js" as Core
 
 /*
 
@@ -133,7 +133,7 @@ function clickHandler(id){
     if(id === answerIndex[choiceCount]) {
         tempIndex = items.answer.model
         choiceCount++;
-        items.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/bleep.wav')
+        items.audioEffects.play('qrc:/gcompris/src/core/GCompris/resource/sounds/bleep.wav')
 
         if(choiceCount < max) {
             tempIndex.push('question_mark')
@@ -151,7 +151,7 @@ function clickHandler(id){
         }
         return 1
     } else { // Wrong answer, try again
-        items.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/brick.wav')
+        items.audioEffects.play('qrc:/gcompris/src/core/GCompris/resource/sounds/brick.wav')
     }
 }
 

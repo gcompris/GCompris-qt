@@ -12,7 +12,7 @@ import GCompris 1.0
 import Qt5Compat.GraphicalEffects 1.0
 import QtQuick.Controls 2.12
 
-import "../../core"
+import "../../core/GCompris"
 import "solar_system.js" as Activity
 
 Item {

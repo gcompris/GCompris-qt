@@ -38,7 +38,7 @@ Rectangle {
         id: scrollUp
         width: isHorizontal ? parent.height : parent.width
         height: width
-        source: "qrc:/gcompris/src/core/resource/scroll_down.svg";
+        source: "qrc:/gcompris/src/core/GCompris/resource/scroll_down.svg";
         sourceSize.width: scrollUp.width
         sourceSize.height: scrollUp.height
         rotation: 180
@@ -52,7 +52,7 @@ Rectangle {
         id: scrollDown
         width: isHorizontal ? parent.height : parent.width
         height: width
-        source: "qrc:/gcompris/src/core/resource/scroll_down.svg";
+        source: "qrc:/gcompris/src/core/GCompris/resource/scroll_down.svg";
         sourceSize.width: scrollDown.width
         sourceSize.height: scrollDown.height
         anchors.bottom: parent.bottom

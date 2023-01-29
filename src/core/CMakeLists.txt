@@ -104,9 +104,27 @@ if(BUILD_TESTING)
   target_link_libraries(gcompris_core ${used_qt_modules})
 endif()
 
-target_link_libraries(${GCOMPRIS_EXECUTABLE_NAME} ${used_qt_modules})
+target_link_libraries(${GCOMPRIS_EXECUTABLE_NAME} PRIVATE ${used_qt_modules})
 
-GCOMPRIS_ADD_RCC(core *.qml *.js resource/*.${COMPRESSED_AUDIO} resource/*.gif resource/*.png resource/*.svg resource/*.pem resource/bonus/* resource/sounds/* resource/fonts/*.* qmldir COPYING)
+#GCOMPRIS_ADD_RCC(core *.qml *.js resource/*.${COMPRESSED_AUDIO} resource/*.gif resource/*.png resource/*.svg resource/*.pem resource/bonus/* resource/sounds/* resource/fonts/*.* qmldir COPYING)
+
+file(GLOB core_qml_files RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} *.qml *.js)
+file(GLOB core_resources_files RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} resource/*.${COMPRESSED_AUDIO} resource/*.gif resource/*.png resource/*.svg resource/*.pem resource/bonus/* resource/sounds/* resource/fonts/*.*)
+
+set_source_files_properties(GCSingletonFontLoader.qml PROPERTIES
+    QT_QML_SINGLETON_TYPE TRUE
+)
+qt_add_qml_module(
+  ${GCOMPRIS_EXECUTABLE_NAME}
+  URI GCompris
+  RESOURCE_PREFIX /gcompris/src/core
+  VERSION 1.0
+  QML_FILES
+  ${core_qml_files}
+  RESOURCES
+  ${core_resources_files}
+  NO_LINT
+  )
 
 if(ANDROID)
   set_property(TARGET ${GCOMPRIS_EXECUTABLE_NAME} PROPERTY SUFFIX "_${CMAKE_ANDROID_ARCH_ABI}.so")

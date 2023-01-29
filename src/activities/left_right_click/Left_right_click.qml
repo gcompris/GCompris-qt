@@ -9,9 +9,9 @@ import QtQml.Models 2.12
 import QtQuick.Controls 2.12
 
 import GCompris 1.0
-import "../../core"
+import "../../core/GCompris"
 import "left_right_click.js" as Activity
-import "qrc:/gcompris/src/core/core.js" as Core
+import "qrc:/gcompris/src/core/GCompris/core.js" as Core
 
 ActivityBase {
     id: activity
@@ -159,7 +159,7 @@ ActivityBase {
                     sourceSize.height: height
                     anchors.horizontalCenter: parent.horizontalCenter
                     anchors.bottom: parent.bottom
-                    source: "qrc:/gcompris/src/core/resource/cancel.svg"
+                    source: "qrc:/gcompris/src/core/GCompris/resource/cancel.svg"
                     visible: false // only visible when a wrong click is pressed
                 }
             }

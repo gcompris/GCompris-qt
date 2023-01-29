@@ -11,7 +11,7 @@ import QtQuick 2.12
 import GCompris 1.0
 import QtQuick.Layouts 1.12
 import QtQuick.Controls 2.12
-import "qrc:/gcompris/src/core/core.js" as Core
+import "qrc:/gcompris/src/core/GCompris/core.js" as Core
 
 /**
  * A QML component visualizing download progress.

@@ -12,7 +12,7 @@
 .pragma library
 .import QtQuick 2.12 as Quick
 .import GCompris 1.0 as GCompris
-.import "../../core/core.js" as Core
+.import "../../core/GCompris/core.js" as Core
 
 var currentLevel = 0
 var numberOfLevel = 0

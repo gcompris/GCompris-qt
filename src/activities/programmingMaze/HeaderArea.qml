@@ -10,7 +10,7 @@
  */
 import QtQuick 2.12
 import GCompris 1.0
-import "../../core"
+import "../../core/GCompris"
 
 Rectangle {
     id: header
@@ -51,7 +51,7 @@ Rectangle {
         height: header.headerIcon === "" ? 0 : header.height * 0.6
         width: height
         sourceSize.height: height
-        source: header.headerIcon === "" ? "qrc:/gcompris/src/core/resource/empty.svg" :
+        source: header.headerIcon === "" ? "qrc:/gcompris/src/core/GCompris/resource/empty.svg" :
         "qrc:/gcompris/src/activities/programmingMaze/resource/" + header.headerIcon + ".svg"
     }
 

@@ -9,7 +9,7 @@
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
 .pragma library
-.import "qrc:/gcompris/src/core/core.js" as Core
+.import "qrc:/gcompris/src/core/GCompris/core.js" as Core
 .import GCompris 1.0 as GCompris
 .import "moneyConstants.js" as MoneyConstants
 

@@ -12,8 +12,8 @@ import QtQuick 2.12
 import GCompris 1.0
 import QtMultimedia 5.12
 
-import "../../core"
-import "qrc:/gcompris/src/core/core.js" as Core
+import "../../core/GCompris/"
+import "qrc:/gcompris/src/core/GCompris/core.js" as Core
 
 Item {
     id: dialogConfig
@@ -169,7 +169,7 @@ Item {
                         return qsTr("Not playing")
                     else if (backgroundMusic.metaDataMusic[0] !== undefined)
                         return (qsTr("Title: %1  Artist: %2").arg(backgroundMusic.metaDataMusic[0]).arg(backgroundMusic.metaDataMusic[1]))
-                    else if (String(backgroundMusic.source).slice(0, 37) === "qrc:/gcompris/src/core/resource/intro")
+                    else if (String(backgroundMusic.source).slice(0, 37) === "qrc:/gcompris/src/core/GCompris/resource/intro")
                         return qsTr("Introduction music")
                     return ""
                 }
@@ -179,7 +179,7 @@ Item {
                 }
             }
             Image {
-                source: "qrc:/gcompris/src/core/resource/bar_next.svg"
+                source: "qrc:/gcompris/src/core/GCompris/resource/bar_next.svg"
                 height: 30 * ApplicationInfo.ratio
                 sourceSize.width: height
                 visible: (backgroundMusic.playbackState === Audio.PlayingState && !backgroundMusic.muted)
@@ -382,7 +382,7 @@ Item {
             property int starsSize: Math.floor(dialogConfig.contentWidth * 0.11)
 
             Image {
-                source: "qrc:/gcompris/src/core/resource/bar_next.svg"
+                source: "qrc:/gcompris/src/core/GCompris/resource/bar_next.svg"
                 sourceSize.height: difficultyFlow.starsSize
                 sourceSize.width: difficultyFlow.starsSize
 
@@ -437,7 +437,7 @@ Item {
                 }
 
                 Image {
-                    source: "qrc:/gcompris/src/core/resource/difficulty" +
+                    source: "qrc:/gcompris/src/core/GCompris/resource/difficulty" +
                     (modelData + 1) + ".svg";
                     sourceSize.width: difficultyFlow.starsSize
                     opacity: modelData + 1 >= filterRepeater.minFilter &&
@@ -470,7 +470,7 @@ Item {
             }
 
             Image {
-                source: "qrc:/gcompris/src/core/resource/bar_previous.svg"
+                source: "qrc:/gcompris/src/core/GCompris/resource/bar_previous.svg"
                 sourceSize.height: difficultyFlow.starsSize
                 sourceSize.width: difficultyFlow.starsSize
 

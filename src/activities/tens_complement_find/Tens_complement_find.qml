@@ -8,9 +8,9 @@ import QtQuick 2.12
 import QtQml.Models 2.12
 import QtQuick.Controls 2.12
 import GCompris 1.0
-import "../../core"
+import "../../core/GCompris"
 import "tens_complement_find.js" as Activity
-import "qrc:/gcompris/src/core/core.js" as Core
+import "qrc:/gcompris/src/core/GCompris/core.js" as Core
 
 ActivityBase {
     id: activity
@@ -138,7 +138,7 @@ ActivityBase {
             id: okButton
             visible: false
             z: 2
-            source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
+            source: "qrc:/gcompris/src/core/GCompris/resource/bar_ok.svg"
             anchors {
                 bottom: score.top
                 bottomMargin: background.layoutMargins

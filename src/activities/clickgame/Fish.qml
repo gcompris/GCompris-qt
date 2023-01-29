@@ -12,7 +12,7 @@
 import QtQuick 2.12
 import QtQuick.Particles 2.12
 import "clickgame.js" as Activity
-import "../../core"
+import "../../core/GCompris"
 import GCompris 1.0
 
 AnimatedSprite {

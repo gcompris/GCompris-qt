@@ -11,7 +11,7 @@
 import QtQuick 2.12
 import GCompris 1.0
 
-import "../../core"
+import "../../core/GCompris"
 import "maze.js" as Activity
 
 ActivityBase {
@@ -204,7 +204,7 @@ ActivityBase {
                 bottom: parent.bottom
                 margins: 12
             }
-            source: "qrc:/gcompris/src/core/resource/arrows_move.svg"
+            source: "qrc:/gcompris/src/core/GCompris/resource/arrows_move.svg"
             sourceSize.width: 140
             opacity: bar.level == 1 && ApplicationInfo.isMobile ? 1 : 0
         }

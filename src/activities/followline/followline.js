@@ -164,5 +164,5 @@ function cursorMovedOut() {
 
 function playAudioFx() {
     if(!items.audioEffects.playing)
-        items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/darken.wav");
+        items.audioEffects.play("qrc:/gcompris/src/core/GCompris/resource/sounds/darken.wav");
 }

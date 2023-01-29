@@ -125,7 +125,7 @@ function initLevel() {
                 "imgName": levelData.levels[i].pixmapfile,
                 "imgSound": levelData.levels[i].soundFile ?
                      soundsUrl + levelData.levels[i].soundFile :
-                     "qrc:/gcompris/src/core/resource/sounds/scroll.wav",
+                     "qrc:/gcompris/src/core/GCompris/resource/sounds/scroll.wav",
                 "imgHeight": levelData.levels[i].height === undefined ? 0 : levelData.levels[i].height,
                 "imgWidth": levelData.levels[i].width === undefined ? 0 : levelData.levels[i].width,
                 "toolTipText":

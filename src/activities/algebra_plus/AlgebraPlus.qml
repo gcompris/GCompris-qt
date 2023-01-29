@@ -9,7 +9,7 @@
  */
 import QtQuick 2.12
 
-import "../../core"
+import "../../core/GCompris"
 import "../algebra_by/"
 import "../algebra_by/algebra.js" as Activity
 

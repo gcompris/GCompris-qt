@@ -12,7 +12,7 @@
  */
 import QtQuick 2.12
 import GCompris 1.0
-import "../../core"
+import "../../core/GCompris"
 
 ActivityBase {
     id: activity
@@ -215,7 +215,7 @@ ActivityBase {
                 Transition {
                     from: "sunDown"; to: "sunUp";
                     ScriptAction { script: {
-                            items.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/bleep.wav');
+                            items.audioEffects.play('qrc:/gcompris/src/core/GCompris/resource/sounds/bleep.wav');
                             hydro.item.vaporAnimLoop = true;
                             hydro.item.vaporIsUp = true;
                             hydro.item.cloudIsUp = true;

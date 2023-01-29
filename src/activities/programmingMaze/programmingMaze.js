@@ -341,7 +341,7 @@ function executeNextInstruction() {
 
 function deadEnd() {
     deadEndPoint = true
-    items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/brick.wav")
+    items.audioEffects.play("qrc:/gcompris/src/core/GCompris/resource/sounds/brick.wav")
     items.bonus.bad("tux")
 }
 

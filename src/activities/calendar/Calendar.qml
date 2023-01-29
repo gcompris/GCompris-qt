@@ -15,7 +15,7 @@ import GCompris 1.0
 
 import "calendar.js" as Activity
 import "calendar_dataset.js" as Dataset
-import "../../core"
+import "../../core/GCompris"
 
 ActivityBase {
     id: activity
@@ -101,7 +101,7 @@ ActivityBase {
                 anchors.verticalCenter: parent.verticalCenter
                 anchors.left: parent.left
                 anchors.leftMargin: parent.height * 0.1
-                source: "qrc:/gcompris/src/core/resource/scroll_down.svg"
+                source: "qrc:/gcompris/src/core/GCompris/resource/scroll_down.svg"
                 rotation: 90
                 visible: calendar.navigationBarVisible && (calendar.currentDate.getFullYear() > calendar.minimumDate.getFullYear() || (calendar.currentDate.getFullYear() == calendar.minimumDate.getFullYear() && calendar.currentDate.getMonth() > calendar.minimumDate.getMonth()))
                 onClicked: {
@@ -130,7 +130,7 @@ ActivityBase {
                 anchors.verticalCenter: parent.verticalCenter
                 anchors.right: parent.right
                 anchors.rightMargin: previousMonth.anchors.leftMargin
-                source: "qrc:/gcompris/src/core/resource/scroll_down.svg"
+                source: "qrc:/gcompris/src/core/GCompris/resource/scroll_down.svg"
                 rotation: 270
                 visible: calendar.navigationBarVisible && (calendar.currentDate.getFullYear() < calendar.maximumDate.getFullYear() || (calendar.currentDate.getFullYear() == calendar.maximumDate.getFullYear() && calendar.currentDate.getMonth() < calendar.maximumDate.getMonth()));
                 onClicked: {
@@ -417,7 +417,7 @@ ActivityBase {
         // Answer Submission button.
         BarButton {
             id: okButton
-            source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
+            source: "qrc:/gcompris/src/core/GCompris/resource/bar_ok.svg"
             height: bar.height * 0.8
             width: okButton.height
             sourceSize.width: okButton.width

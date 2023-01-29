@@ -10,7 +10,7 @@
  */
 import QtQuick 2.12
 
-import "../../core"
+import "../../core/GCompris"
 import "superbrain.js" as Activity
 import GCompris 1.0
 
@@ -379,7 +379,7 @@ if (targetY < 0) {
                 BarButton {
                     id: okButton
                     enabled: !bonus.isPlaying
-                    source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
+                    source: "qrc:/gcompris/src/core/GCompris/resource/bar_ok.svg"
                     sourceSize.width: 66 * bar.barZoom
                     width: guessColumn.guessSize * currentRow.factor
                     height: guessColumn.guessSize * currentRow.factor
@@ -530,7 +530,7 @@ if (targetY < 0) {
 
                                 anchors.centerIn: parent
 
-                                source: "qrc:/gcompris/src/core/resource/apply.svg"
+                                source: "qrc:/gcompris/src/core/GCompris/resource/apply.svg"
                             }
 
                             MouseArea {

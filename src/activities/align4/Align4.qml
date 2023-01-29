@@ -10,7 +10,7 @@
  */
 import QtQuick 2.12
 
-import "../../core"
+import "../../core/GCompris"
 import "../align4_2players"
 
 Align42players {

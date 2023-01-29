@@ -9,7 +9,7 @@
  */
 import QtQuick 2.12
 import GCompris 1.0
-import "qrc:/gcompris/src/core/core.js" as Core
+import "qrc:/gcompris/src/core/GCompris/core.js" as Core
 
 /**
  * The base QML component for activities in GCompris.

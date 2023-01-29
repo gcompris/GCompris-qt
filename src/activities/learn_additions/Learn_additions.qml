@@ -9,7 +9,7 @@
  */
 import QtQuick 2.12
 
-import "../../core"
+import "../../core/GCompris"
 import "../learn_digits/"
 import "../learn_digits/learn_digits.js" as Activity
 

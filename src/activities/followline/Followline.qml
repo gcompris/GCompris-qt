@@ -12,7 +12,7 @@
 import QtQuick 2.12
 import GCompris 1.0
 
-import "../../core"
+import "../../core/GCompris"
 import "followline.js" as Activity
 
 ActivityBase {
@@ -161,7 +161,7 @@ ActivityBase {
                                 items.currentLock = part.index
                                 if(items.currentLock >= items.lastLock) {
                                     background.win()
-                                    activity.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/water.wav")
+                                    activity.audioEffects.play("qrc:/gcompris/src/core/GCompris/resource/sounds/water.wav")
                                 } else {
                                     Activity.playAudioFx()
                                 }

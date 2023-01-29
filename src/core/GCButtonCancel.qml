@@ -18,7 +18,7 @@ import GCompris 1.0
  */
 Image {
     id: cancel
-    source: apply ? "qrc:/gcompris/src/core/resource/apply.svg" : "qrc:/gcompris/src/core/resource/cancel.svg";
+    source: apply ? "qrc:/gcompris/src/core/GCompris/resource/apply.svg" : "qrc:/gcompris/src/core/GCompris/resource/cancel.svg";
     anchors.right: parent.right
     anchors.top: parent.top
     smooth: true

@@ -14,7 +14,7 @@
 import QtQuick 2.12
 import GCompris 1.0
 
-import "../../core"
+import "../../core/GCompris"
 import "."
 
 ActivityBase {
@@ -333,7 +333,7 @@ ActivityBase {
                 Transition {
                     from: "sunDown"; to: "sunUp";
                     ScriptAction { script: {
-                            items.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/bleep.wav');
+                            items.audioEffects.play('qrc:/gcompris/src/core/GCompris/resource/sounds/bleep.wav');
                             info.setKey('sun');
                             sun.hasRun = true;
                             vapor.animLoop = true;
@@ -525,7 +525,7 @@ ActivityBase {
                 }
             }
             function up() {
-                items.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/water.wav');
+                items.audioEffects.play('qrc:/gcompris/src/core/GCompris/resource/sounds/water.wav');
                 info.setKey('rain');
                 opacity = 1;
                 rainAnim.start();

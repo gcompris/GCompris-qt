@@ -78,7 +78,7 @@ Image {
     }
 
     /// @cond INTERNAL_DOCS
-    property string url: "qrc:/gcompris/src/core/resource/"
+    property string url: "qrc:/gcompris/src/core/GCompris/resource/"
     property bool isWin: false
     property var winVoices: [
         "voices-$CA/$LOCALE/misc/congratulation.$CA",

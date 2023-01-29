@@ -5,11 +5,11 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 import QtQuick 2.12
-import "../../core"
+import "../../core/GCompris"
 
 Item {
-    readonly property string correctAnswerImage: "qrc:/gcompris/src/core/resource/apply.svg"
-    readonly property string wrongAnswerImage:  "qrc:/gcompris/src/core/resource/cancel.svg"
+    readonly property string correctAnswerImage: "qrc:/gcompris/src/core/GCompris/resource/apply.svg"
+    readonly property string wrongAnswerImage:  "qrc:/gcompris/src/core/GCompris/resource/cancel.svg"
 
     Rectangle {
         id: cardContainer

@@ -9,9 +9,9 @@
  */
 import QtQuick 2.12
 import GCompris 1.0
-import "../../core"
+import "../../core/GCompris"
 import "positions.js" as Activity
-import "qrc:/gcompris/src/core/core.js" as Core
+import "qrc:/gcompris/src/core/GCompris/core.js" as Core
 
 ActivityBase {
     id: activity
@@ -317,7 +317,7 @@ ActivityBase {
                 rightMargin: 10 * ApplicationInfo.ratio
                 bottomMargin: 10 * ApplicationInfo.ratio
             }
-            source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
+            source: "qrc:/gcompris/src/core/GCompris/resource/bar_ok.svg"
             width: (background.height - bar.height * 1.2) * 0.15
             sourceSize.width: width
             onClicked: Activity.verifyAnswer()

@@ -9,7 +9,7 @@
  */
 import QtQuick 2.12
 
-import "../../core"
+import "../../core/GCompris"
 import "money.js" as Activity
 
 Rectangle {

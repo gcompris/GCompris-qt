@@ -306,7 +306,7 @@ Item {
                     Image {
                         id: isSelectedIcon
                         visible: parent.GridView.isCurrentItem
-                        source: "qrc:/gcompris/src/core/resource/apply.svg"
+                        source: "qrc:/gcompris/src/core/GCompris/resource/apply.svg"
                         anchors.left: parent.left
                         anchors.verticalCenter: parent.verticalCenter
                         anchors.leftMargin: 10

@@ -55,8 +55,12 @@ bool isSupportedLocale(const QString &locale)
 {
     bool isSupported = false;
     QQmlEngine engine;
-    QQmlComponent component(&engine, QUrl("qrc:/gcompris/src/core/LanguageList.qml"));
+
+    QQmlComponent component(&engine, QUrl("qrc:/gcompris/src/core/GCompris/LanguageList.qml"));
     QObject *object = component.create();
+    if(!object) {
+        qDebug() << "isSupportedLocale:" << component.errors();
+    }
     QVariant variant = object->property("languages");
     QJSValue languagesList = variant.value<QJSValue>();
     const int length = languagesList.property("length").toInt();
@@ -237,7 +241,7 @@ int main(int argc, char *argv[])
 
         if (!defaultCursor && !parser.isSet(clDefaultCursor))
             QGuiApplication::setOverrideCursor(
-                QCursor(QPixmap(":/gcompris/src/core/resource/cursor.svg"),
+                QCursor(QPixmap(":/gcompris/src/core/GCompris/resource/cursor.svg"),
                         0, 0));
 
         // Hide the cursor
@@ -302,11 +306,16 @@ int main(int argc, char *argv[])
         ActivityInfoTree::setStartingActivity(startingActivity);
     }
 
-    QQmlApplicationEngine engine(QUrl("qrc:/gcompris/src/core/main.qml"));
+    QQmlApplicationEngine engine(QUrl("qrc:/gcompris/src/core/GCompris/main.qml"));
     QObject::connect(&engine, &QQmlApplicationEngine::quit, DownloadManager::getInstance(),
                      &DownloadManager::shutdown);
     // add import path for shipped qml modules:
     engine.addImportPath(QStringLiteral("%1/../lib/qml")
+                             .arg(QCoreApplication::applicationDirPath()));
+    // add import path for the core module:
+    engine.addImportPath(QStringLiteral("%1/../src/core/")
+                             .arg(QCoreApplication::applicationDirPath()));
+    engine.addImportPath(QStringLiteral("%1/../src/core/GCompris/")
                              .arg(QCoreApplication::applicationDirPath()));
 
 #if __ANDROID__ && QT_VERSION >= QT_VERSION_CHECK(5, 14, 0)
@@ -337,7 +346,7 @@ int main(int argc, char *argv[])
     }
     ApplicationInfo::setWindow(window);
 
-    window->setIcon(QIcon(QPixmap(QString::fromUtf8(":/gcompris/src/core/resource/gcompris-icon.png"))));
+    window->setIcon(QIcon(QPixmap(QString::fromUtf8(":/gcompris/src/core/GCompris/resource/gcompris-icon.png"))));
 
     if (isFullscreen) {
         window->showFullScreen();

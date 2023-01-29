@@ -11,8 +11,8 @@
 import QtQuick 2.12
 import GCompris 1.0
 
-import "../../core"
-import "qrc:/gcompris/src/core/core.js" as Core
+import "../../core/GCompris"
+import "qrc:/gcompris/src/core/GCompris/core.js" as Core
 import "missing-letter.js" as Activity
 
 ActivityBase {

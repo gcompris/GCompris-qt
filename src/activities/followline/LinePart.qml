@@ -8,7 +8,7 @@
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
 import QtQuick 2.12
-import "../../core"
+import "../../core/GCompris"
 import "followline.js" as Activity
 
 Item {
@@ -51,7 +51,7 @@ Item {
                 if(part.items.currentLock <= part.index && !Activity.movedOut) {
                     part.items.currentLock = part.index
                     if(part.items.currentLock >= part.items.lastLock) {
-                        audioEffects.play("qrc:/gcompris/src/core/resource/sounds/water.wav")
+                        audioEffects.play("qrc:/gcompris/src/core/GCompris/resource/sounds/water.wav")
                         items.background.win()
                     } else {
                         Activity.playAudioFx();

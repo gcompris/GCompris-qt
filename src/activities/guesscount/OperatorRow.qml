@@ -11,7 +11,7 @@
 
 
 import QtQuick 2.12
-import "../../core"
+import "../../core/GCompris"
 import "guesscount.js" as Activity
 
 Row {

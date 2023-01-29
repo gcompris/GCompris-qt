@@ -11,7 +11,7 @@
 import QtQuick 2.12
 import GCompris 1.0
 
-import "../../core"
+import "../../core/GCompris"
 import "."
 import "checkers.js" as Activity
 
@@ -276,7 +276,7 @@ ActivityBase {
                 Behavior on rotation { PropertyAnimation { easing.type: Easing.InOutQuad; duration: 1400 } }
 
                 function swap() {
-                    items.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/flip.wav')
+                    items.audioEffects.play('qrc:/gcompris/src/core/GCompris/resource/sounds/flip.wav')
                     if(chessboard.rotation == 180)
                         chessboard.rotation = 0
                         else
@@ -398,9 +398,9 @@ ActivityBase {
                 var toPiece = getPieceAt(to)
 
                 if(moves.jumps.length != 0)
-                    items.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/smudge.wav')
+                    items.audioEffects.play('qrc:/gcompris/src/core/GCompris/resource/sounds/smudge.wav')
                 else
-                    items.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/scroll.wav')
+                    items.audioEffects.play('qrc:/gcompris/src/core/GCompris/resource/sounds/scroll.wav')
 
                 toPiece.hide(from)
                 movingPiece = fromPiece

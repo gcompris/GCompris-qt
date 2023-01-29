@@ -15,7 +15,7 @@ import QtQuick 2.12
 import GCompris 1.0
 import QtQuick.Controls 2.12
 
-import "../../core"
+import "../../core/GCompris"
 import "explore-level.js" as Activity
 
 ActivityBase {
@@ -178,7 +178,7 @@ ActivityBase {
         Image {
             id: ok
             visible: progressbar.value === progressbar.to
-            source:"qrc:/gcompris/src/core/resource/bar_ok.svg"
+            source:"qrc:/gcompris/src/core/GCompris/resource/bar_ok.svg"
             sourceSize.width: questionText.height * 2
             fillMode: Image.PreserveAspectFit
             anchors.right: progress.left
@@ -262,7 +262,7 @@ ActivityBase {
 
                 BarButton {
                     id: repeatItem
-                    source: "qrc:/gcompris/src/core/resource/bar_repeat.svg";
+                    source: "qrc:/gcompris/src/core/GCompris/resource/bar_repeat.svg";
                     sourceSize.width: 60 * ApplicationInfo.ratio
                     anchors.right: parent.right
                     visible: items.score.currentSubLevel == 2 && activity.hasAudioQuestions //&& ApplicationSettings.isAudioVoicesEnabled

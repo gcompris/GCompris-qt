@@ -12,7 +12,7 @@
 import QtQuick 2.12
 import GCompris 1.0
 
-import "../../core"
+import "../../core/GCompris"
 import "simplepaint.js" as Activity
 
 ActivityBase {
@@ -348,7 +348,7 @@ ActivityBase {
                             anchors.fill: parent
                             hoverEnabled: true
                             onClicked: {
-                                activity.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/scroll.wav');
+                                activity.audioEffects.play('qrc:/gcompris/src/core/GCompris/resource/sounds/scroll.wav');
                                 items.keyboardControls = false;
                                 items.selectedColor = modelData;
                                 items.current_color = items.colors.indexOf(modelData);

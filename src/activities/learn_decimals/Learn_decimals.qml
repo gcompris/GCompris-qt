@@ -10,9 +10,9 @@
  */
 import QtQuick 2.12
 import GCompris 1.0
-import "../../core"
+import "../../core/GCompris"
 import "learn_decimals.js" as Activity
-import "qrc:/gcompris/src/core/core.js" as Core
+import "qrc:/gcompris/src/core/GCompris/core.js" as Core
 
 
 ActivityBase {
@@ -674,7 +674,7 @@ ActivityBase {
 
         Image {
             id: hint
-            source:"qrc:/gcompris/src/core/resource/bar_hint.svg"
+            source:"qrc:/gcompris/src/core/GCompris/resource/bar_hint.svg"
             visible: !isSubtractionMode && !items.typeResult
             sourceSize.width: okButton.width
             fillMode: Image.PreserveAspectFit
@@ -747,7 +747,7 @@ ActivityBase {
 
         BarButton {
             id: okButton
-            source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
+            source: "qrc:/gcompris/src/core/GCompris/resource/bar_ok.svg"
             width: 60 * ApplicationInfo.ratio
             sourceSize.width: width
             onClicked: items.typeResult? Activity.verifyNumberTyping(answerBackground.userEntry) : Activity.verifyNumberRepresentation()

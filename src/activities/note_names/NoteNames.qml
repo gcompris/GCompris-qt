@@ -11,7 +11,7 @@ import QtQuick 2.12
 import QtQuick.Controls 2.12
 import GCompris 1.0
 
-import "../../core"
+import "../../core/GCompris"
 import "../piano_composition"
 import "note_names.js" as Activity
 
@@ -359,7 +359,7 @@ ActivityBase {
 
         Image {
             id: shiftKeyboardLeft
-            source: "qrc:/gcompris/src/core/resource/bar_previous.svg"
+            source: "qrc:/gcompris/src/core/GCompris/resource/bar_previous.svg"
             sourceSize.width: horizontalLayout ? doubleOctave.width / 13 : doubleOctave.width / 6
             width: sourceSize.width
             height: width
@@ -383,7 +383,7 @@ ActivityBase {
 
         Image {
             id: shiftKeyboardRight
-            source: "qrc:/gcompris/src/core/resource/bar_next.svg"
+            source: "qrc:/gcompris/src/core/GCompris/resource/bar_next.svg"
             sourceSize.width: horizontalLayout ? doubleOctave.width / 13 : doubleOctave.width / 6
             width: sourceSize.width
             height: width

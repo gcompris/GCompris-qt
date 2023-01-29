@@ -13,7 +13,7 @@
 import QtQuick 2.12
 import GCompris 1.0
 
-import "../../core"
+import "../../core/GCompris"
 import "ordering.js" as Activity
 
 Item {

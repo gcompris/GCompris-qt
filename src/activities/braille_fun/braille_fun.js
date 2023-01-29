@@ -10,7 +10,7 @@
  */
 .pragma library
 .import QtQuick 2.12 as Quick
-.import "qrc:/gcompris/src/core/core.js" as Core
+.import "qrc:/gcompris/src/core/GCompris/core.js" as Core
 
 var currentLevel = 0
 var numberOfLevel = 3

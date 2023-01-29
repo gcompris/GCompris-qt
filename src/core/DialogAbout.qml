@@ -68,7 +68,7 @@ DialogBackground {
         "<br />" +
 
         "<img width='" + 320 * ApplicationInfo.ratio +
-        "' height='" + 114 * ApplicationInfo.ratio + "' src='qrc:/gcompris/src/core/resource/gcompris.png'/>" +
+        "' height='" + 114 * ApplicationInfo.ratio + "' src='qrc:/gcompris/src/core/GCompris/resource/gcompris.png'/>" +
 
         "<br />" +
 
@@ -89,7 +89,7 @@ DialogBackground {
         .arg("https://www.kde.org/") +
 
         "<img align='right' width='" + 138 * ApplicationInfo.ratio +
-        "' height='" + 202 * ApplicationInfo.ratio + "' src='qrc:/gcompris/src/core/resource/aboutkde.png'/>" +
+        "' height='" + 202 * ApplicationInfo.ratio + "' src='qrc:/gcompris/src/core/GCompris/resource/aboutkde.png'/>" +
 
         "<br /> <br />" +
 

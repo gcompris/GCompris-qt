@@ -12,7 +12,7 @@ import QtQuick 2.12
 import GCompris 1.0
 import "."
 
-import "../../core"
+import "../../core/GCompris"
 import "enumerate.js" as Activity
 
 ActivityBase {
@@ -268,7 +268,7 @@ ActivityBase {
                 rightMargin: 9 * ApplicationInfo.ratio
                 bottomMargin: 9 * ApplicationInfo.ratio
             }
-            source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
+            source: "qrc:/gcompris/src/core/GCompris/resource/bar_ok.svg"
             sourceSize.width: 80 * ApplicationInfo.ratio
             onClicked: Activity.checkAnswers();
         }

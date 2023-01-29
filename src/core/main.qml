@@ -13,7 +13,7 @@ import QtQuick.Window 2.12
 import QtQml 2.12
 
 import GCompris 1.0
-import "qrc:/gcompris/src/core/core.js" as Core
+import "qrc:/gcompris/src/core/GCompris/core.js" as Core
 
 /**
  * GCompris' main QML file defining the top level window.
@@ -156,7 +156,7 @@ Window {
 
         Component.onCompleted: {
             if(ApplicationSettings.isBackgroundMusicEnabled && ActivityInfoTree.startingActivity == "") {
-                backgroundMusic.append(ApplicationInfo.getAudioFilePath("qrc:/gcompris/src/core/resource/intro.$CA"))
+                backgroundMusic.append(ApplicationInfo.getAudioFilePath("qrc:/gcompris/src/core/GCompris/resource/intro.$CA"))
             }
             if(ApplicationSettings.isBackgroundMusicEnabled
                && DownloadManager.haveLocalResource(DownloadManager.getBackgroundMusicResources())) {

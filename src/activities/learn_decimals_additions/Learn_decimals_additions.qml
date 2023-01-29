@@ -5,7 +5,7 @@
  */
 import QtQuick 2.12
 
-import "../../core"
+import "../../core/GCompris"
 import "../learn_decimals/"
 import "../learn_decimals/learn_decimals.js" as Activity
 

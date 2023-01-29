@@ -11,7 +11,7 @@
 import QtQuick 2.12
 import GCompris 1.0
 
-import "../../core"
+import "../../core/GCompris"
 import "photo_hunter.js" as Activity
 
 Image {
@@ -77,7 +77,7 @@ Image {
         anchors.fill: parent
         enabled: !background.startedHelp
         onClicked: {
-            audioEffects.play('qrc:/gcompris/src/core/resource/sounds/brick.wav')
+            audioEffects.play('qrc:/gcompris/src/core/GCompris/resource/sounds/brick.wav')
             wrongAnim.start()
             wrong.x = mouseX - wrong.width/2
             wrong.y = mouseY - wrong.height/2
@@ -142,7 +142,7 @@ Image {
                 enabled: !background.startedHelp
                 onClicked: {
                     Activity.photoClicked(card,index)
-                    audioEffects.play('qrc:/gcompris/src/core/resource/sounds/bleep.wav')
+                    audioEffects.play('qrc:/gcompris/src/core/GCompris/resource/sounds/bleep.wav')
                 }
             }
         }

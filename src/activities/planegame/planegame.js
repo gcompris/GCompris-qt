@@ -12,7 +12,7 @@
 .pragma library
 .import QtQuick 2.12 as Quick
 .import GCompris 1.0 as GCompris //for ApplicationInfo
-.import "qrc:/gcompris/src/core/core.js" as Core
+.import "qrc:/gcompris/src/core/GCompris/core.js" as Core
 
 var url = "qrc:/gcompris/src/activities/planegame/"
 
@@ -300,7 +300,7 @@ function handleCollisionsWithCloud() {
                 } else {
                     /* Touched the wrong cloud */
                     if(!cloud.touched)
-                        items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav")
+                        items.audioEffects.play("qrc:/gcompris/src/core/GCompris/resource/sounds/crash.wav")
                     cloud.touch()
                 }
                 break;

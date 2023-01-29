@@ -12,7 +12,7 @@
 import QtQuick 2.12
 import GCompris 1.0
 
-import "../../core"
+import "../../core/GCompris"
 import "gravity.js" as Activity
 
 ActivityBase {
@@ -364,7 +364,7 @@ ActivityBase {
 
             ControlButton {
                 id: leftButton
-                source: "qrc:/gcompris/src/core/resource/arrow_left.svg"
+                source: "qrc:/gcompris/src/core/GCompris/resource/arrow_left.svg"
                 onPressed: Activity.processKeyPress({key: Qt.Key_Left});
                 onReleased: Activity.processKeyRelease({key: Qt.Key_Left});
                 exceed: height * 0.4
@@ -372,7 +372,7 @@ ActivityBase {
 
             ControlButton {
                 id: rightButton
-                source: "qrc:/gcompris/src/core/resource/arrow_right.svg"
+                source: "qrc:/gcompris/src/core/GCompris/resource/arrow_right.svg"
                 onPressed: Activity.processKeyPress({key: Qt.Key_Right});
                 onReleased: Activity.processKeyRelease({key: Qt.Key_Right});
                 exceed: leftButton.exceed

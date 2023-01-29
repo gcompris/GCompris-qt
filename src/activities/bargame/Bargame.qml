@@ -11,7 +11,7 @@
 import QtQuick 2.12
 import GCompris 1.0
 
-import "../../core"
+import "../../core/GCompris"
 import "bargame.js" as Activity
 
 ActivityBase {
@@ -334,7 +334,7 @@ ActivityBase {
                 left: rootWindow.left
                 leftMargin: 5
             }
-            playerImageSource: "qrc:/gcompris/src/core/resource/player_1.svg"
+            playerImageSource: "qrc:/gcompris/src/core/GCompris/resource/player_1.svg"
             backgroundImageSource: Activity.url + "score_1.svg"
             playerItem.source: Activity.url + "ball_1b.svg"
             playerItem.height: playerItem.parent.height * 0.3
@@ -353,7 +353,7 @@ ActivityBase {
                 right: rootWindow.right
                 rightMargin: 5
             }
-            playerImageSource: "qrc:/gcompris/src/core/resource/player_2.svg"
+            playerImageSource: "qrc:/gcompris/src/core/GCompris/resource/player_2.svg"
             backgroundImageSource: Activity.url + "score_2.svg"
             playerScaleOriginX: player2score.width
             playerItem.source: Activity.url + "ball_2b.svg"

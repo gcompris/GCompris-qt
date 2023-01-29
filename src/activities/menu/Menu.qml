@@ -8,10 +8,10 @@
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
 import QtQuick 2.12
-import "../../core"
+import "../../core/GCompris"
 import GCompris 1.0
 import Qt5Compat.GraphicalEffects
-import "qrc:/gcompris/src/core/core.js" as Core
+//import "qrc:/gcompris/src/core/GCompris/core.js" as Core
 
 // For TextField
 import QtQuick.Controls 2.12
@@ -218,7 +218,7 @@ ActivityBase {
 
         property var currentActiveGrid: activitiesGrid
         property bool keyboardMode: false
-        Keys.onPressed: {
+        Keys.onPressed: (event) => {
             if(loading.active) {
                 return;
             }
@@ -335,7 +335,7 @@ ActivityBase {
                     color:  "#5AFFFFFF"
                 }
                 Image {
-                    source: "qrc:/gcompris/src/core/resource/button.svg"
+                    source: "qrc:/gcompris/src/core/GCompris/resource/button.svg"
                     anchors.fill: parent
                 }
                 Behavior on x { SpringAnimation { spring: 2; damping: 0.2 } }
@@ -498,21 +498,21 @@ ActivityBase {
 
                     Image {
                         id: minimalDifficultyIcon
-                        source: "qrc:/gcompris/src/core/resource/difficulty" +
+                        source: "qrc:/gcompris/src/core/GCompris/resource/difficulty" +
                                 activityInfoTreeItem.minimalDifficulty + ".svg"
                         anchors.top: parent.top
                         sourceSize.width: iconWidth * 0.15
                     }
                     Image {
                         id: iconSeparator
-                        source: "qrc:/gcompris/src/core/resource/separator.svg"
+                        source: "qrc:/gcompris/src/core/GCompris/resource/separator.svg"
                         visible: activityInfoTreeItem.minimalDifficulty !== activityInfoTreeItem.maximalDifficulty
                         anchors.top: parent.top
                         anchors.left: minimalDifficultyIcon.right
                         sourceSize.height: minimalDifficultyIcon.height
                     }
                     Image {
-                        source: "qrc:/gcompris/src/core/resource/difficulty" +
+                        source: "qrc:/gcompris/src/core/GCompris/resource/difficulty" +
                                 activityInfoTreeItem.maximalDifficulty + ".svg"
                         visible: iconSeparator.visible
                         anchors.top: parent.top

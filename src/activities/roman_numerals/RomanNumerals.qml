@@ -11,7 +11,7 @@
 import QtQuick 2.15
 import GCompris 1.0
 
-import "../../core"
+import "../../core/GCompris"
 
 ActivityBase {
     id: activity
@@ -488,7 +488,7 @@ ActivityBase {
         }
         BarButton {
           id: okButton
-          source: "qrc:/gcompris/src/core/resource/bar_ok.svg";
+          source: "qrc:/gcompris/src/core/GCompris/resource/bar_ok.svg";
           visible: true
           anchors.right: background.right
           anchors.bottom: bar.top

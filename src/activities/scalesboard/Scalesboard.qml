@@ -11,7 +11,7 @@
 import QtQuick 2.12
 import GCompris 1.0
 
-import "../../core"
+import "../../core/GCompris"
 import "scalesboard.js" as Activity
 import "."
 
@@ -261,7 +261,7 @@ ActivityBase {
 
         BarButton {
             id: okButton
-            source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
+            source: "qrc:/gcompris/src/core/GCompris/resource/bar_ok.svg"
             sourceSize.width: 60 * ApplicationInfo.ratio
             enabled: !bonus.isPlaying && masseAreaLeft.weight != 0
             visible: (!question.text || items.question.userEntry) ? true : false

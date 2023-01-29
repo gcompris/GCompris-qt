@@ -16,9 +16,9 @@
 import QtQuick 2.12
 import Qt5Compat.GraphicalEffects 1.0
 import GCompris 1.0
-import "../../core"
+import "../../core/GCompris"
 import "letter-in-word.js" as Activity
-import "qrc:/gcompris/src/core/core.js" as Core
+import "qrc:/gcompris/src/core/GCompris/core.js" as Core
 
 ActivityBase {
     id: activity
@@ -195,7 +195,7 @@ ActivityBase {
 
         BarButton {
             id: repeatItem
-            source: "qrc:/gcompris/src/core/resource/bar_repeat.svg"
+            source: "qrc:/gcompris/src/core/GCompris/resource/bar_repeat.svg"
             sourceSize.width: 80 * ApplicationInfo.ratio
             anchors {
                 top: parent.top
@@ -273,7 +273,7 @@ ActivityBase {
 
         BarButton {
             id: ok
-            source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
+            source: "qrc:/gcompris/src/core/GCompris/resource/bar_ok.svg"
             width: repeatItem.width
             height: width
             sourceSize.width: width

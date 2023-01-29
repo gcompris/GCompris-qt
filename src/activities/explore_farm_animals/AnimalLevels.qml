@@ -13,7 +13,7 @@
 import QtQuick 2.12
 import GCompris 1.0
 
-import "../../core"
+import "../../core/GCompris"
 import "explore-level.js" as Activity
 
 Image {
@@ -56,7 +56,7 @@ Image {
         width: background.playWidth * 0.05
         height: width
         visible: false
-        source:"qrc:/gcompris/src/core/resource/star.png"
+        source:"qrc:/gcompris/src/core/GCompris/resource/star.png"
     }
 
     MultiPointTouchArea {
@@ -83,7 +83,7 @@ Image {
                 if (questionId === questionTargetId) {
                     animWin.start();
                     items.progressbar.value ++;
-                    items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/completetask.wav");
+                    items.audioEffects.play("qrc:/gcompris/src/core/GCompris/resource/sounds/completetask.wav");
                     Activity.nextSubSubLevel();
                 } else {
                     items.bonus.bad("smiley")
