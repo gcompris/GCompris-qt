@@ -6,23 +6,18 @@
 # Wantoyo <wantoyek@gmail.com>, 2020, 2022.
 msgid ""
 msgstr ""
-"Project-Id-Version: gcompris-id\n"
+"Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-12-13 00:48+0000\n"
-"PO-Revision-Date: 2023-01-18 05:53\n"
-"Last-Translator: Wantoyo <wantoyek@gmail.com>\n"
-"Language-Team: Indonesian\n"
+"PO-Revision-Date: 2022-04-03 21:24+0700\n"
+"Last-Translator: Wantoyèk <wantoyek@gmail.com>\n"
+"Language-Team: Indonesian <kde-i18n-doc@kde.org>\n"
 "Language: id\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Lokalize 21.12.3\n"
-"X-Crowdin-Project: gcompris-id\n"
-"X-Crowdin-Project-ID: 481873\n"
-"X-Crowdin-Language: id\n"
-"X-Crowdin-File: /gcompris-id/3.0/gcompris_voices.po\n"
-"X-Crowdin-File-ID: 63\n"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "advanced_colors"
 #: activities/advanced_colors/ActivityInfo.qml:18
@@ -233,13 +228,13 @@ msgstr "Kelompokkan benda ke dalam grup yang benar"
 #: activities/checkers/ActivityInfo.qml:18
 #, kde-format
 msgid "play checkers against Tux"
-msgstr "Mainkan halma melawan Tux"
+msgstr "mainkan halma melawan Tux"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "checkers_2players"
 #: activities/checkers_2players/ActivityInfo.qml:18
 #, kde-format
 msgid "play checkers with your friend"
-msgstr "Mainkan halma dengan temanmu"
+msgstr "Mainkan checkers dengan temanmu"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "chess"
 #: activities/chess/ActivityInfo.qml:18
@@ -320,7 +315,9 @@ msgstr "Klik pada warna yang tepat"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "comparator"
 #: activities/comparator/ActivityInfo.qml:20
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "Select the correct comparator sign for each pair of numbers in the list."
 msgid ""
 "Select the correct comparator sign for each pair of numbers in the list."
 msgstr "Pilih komparator yang benar untuk setiap pasangan angka dalam daftar."
@@ -462,7 +459,9 @@ msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "fractions_create"
 #: activities/fractions_create/ActivityInfo.qml:19
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "Select the appropriate number of parts as described in the instructions."
 msgid ""
 "Select the appropriate number of parts as described in the instructions."
 msgstr ""
@@ -470,7 +469,9 @@ msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "fractions_find"
 #: activities/fractions_find/ActivityInfo.qml:17
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "Find the correct numerator and denominator of the represented fraction"
 msgid "Find the correct numerator and denominator of the represented fraction"
 msgstr ""
 "Temukan pembilang dan penyebut yang benar dari pecahan yang ditampilkan"
@@ -695,7 +696,10 @@ msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "left_right_click"
 #: activities/left_right_click/ActivityInfo.qml:17
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "Move animals to their homes using a left click or right click on your "
+#| "mouse."
 msgid ""
 "Move animals to their homes using a left click or right click on your mouse."
 msgstr ""
@@ -903,7 +907,8 @@ msgstr "Klik pada uang untuk membayar."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "morse_code"
 #: activities/morse_code/ActivityInfo.qml:21
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Learn and practice the International Morse code"
 msgid "Learn and practice the International Morse code"
 msgstr "Belajar dan berlatih kode Morse Internasional"
 
@@ -1234,7 +1239,10 @@ msgstr "Klik pada sasaran untuk meluncurkan panah, lalu hitung skor kamu!"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "tens_complement_find"
 #: activities/tens_complement_find/ActivityInfo.qml:17
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "Create pairs of numbers equal to ten. Select a number in the list, then "
+#| "select an empty spot of an operation to move the selected number there."
 msgid ""
 "Create pairs of numbers equal to ten. Select a number in the list, then "
 "select an empty spot of an operation to move the selected number there."
@@ -1245,7 +1253,10 @@ msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "tens_complement_swap"
 #: activities/tens_complement_swap/ActivityInfo.qml:17
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "Create pairs of numbers equal to ten. Select a number, then select "
+#| "another number of the same operation to swap their position."
 msgid ""
 "Create pairs of numbers equal to ten. Select a number, then select another "
 "number of the same operation to swap their position."
@@ -1255,7 +1266,11 @@ msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "tens_complement_use"
 #: activities/tens_complement_use/ActivityInfo.qml:17
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "Decompose the operations to include a pair of numbers equal to ten. "
+#| "Select a number in the list, then select an empty spot of an operation to "
+#| "move the selected number there."
 msgid ""
 "Decompose the operations to include a pair of numbers equal to ten. Select a "
 "number in the list, then select an empty spot of an operation to move the "
