@@ -417,6 +417,7 @@ ActivityBase {
             SequentialAnimation {
                 id: dotAnim
                 PropertyAction { target: ledOn; property: "visible"; value: true }
+                ScriptAction { script: activity.audioVoices.append("qrc:/gcompris/src/activities/morse_code/resource/dot.wav") }
                 PauseAnimation { duration: 100 }
                 PropertyAction { target: ledOn; property: "visible"; value: false }
                 PauseAnimation { duration: 400 }
@@ -425,7 +426,8 @@ ActivityBase {
             SequentialAnimation {
                 id: dashAnim
                 PropertyAction { target: ledOn; property: "visible"; value: true }
-                PauseAnimation { duration: 280 }
+                ScriptAction { script: activity.audioVoices.append("qrc:/gcompris/src/activities/morse_code/resource/dash.wav") }
+                PauseAnimation { duration: 300 }
                 PropertyAction { target: ledOn; property: "visible"; value: false }
                 PauseAnimation { duration: 200 }
                 ScriptAction { script: ledContainer.playLedAnim() }
@@ -439,8 +441,6 @@ ActivityBase {
             function playLedAnim() {
                 if(ledContainer.soundList.length > 0) {
                     var soundType = soundList.shift();
-                    var audioFile = resourcesUrl + soundType;
-                    activity.audioVoices.append(audioFile);
                     if (soundType === "dot.wav") {
                         dotAnim.restart();
                     } else if (soundType === "dash.wav") {
