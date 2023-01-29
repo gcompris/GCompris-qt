@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2023-01-27 20:57+0300\n"
+"PO-Revision-Date: 2023-01-28 23:11+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -1528,8 +1528,8 @@ msgctxt "Switch2|"
 msgid ""
 "A three points switch can toggle a circuit between two connection points."
 msgstr ""
-"Üç noktalı bir anahtar, iki bağlantı noktası arasında bir devreyi "
-"değiştirebilir."
+"Üç noktalı bir anahtar, iki bağlantı noktası arasında bir devreyi açıp "
+"kapatabilir."
 
 #: activities/analog_electricity/TutorialDataset.qml:20
 msgctxt "TutorialDataset|"
@@ -5915,7 +5915,7 @@ msgstr "Bir giriş"
 #: activities/digital_electricity/TutorialDataset.qml:33
 msgctxt "TutorialDataset|"
 msgid "Digital light"
-msgstr "Dijital ışık"
+msgstr "Sayısal ışık"
 
 #: activities/digital_electricity/TutorialDataset.qml:40
 msgctxt "TutorialDataset|"
@@ -5965,7 +5965,7 @@ msgstr "7 bölütlü ekran"
 #: activities/digital_electricity/TutorialDataset.qml:110
 msgctxt "TutorialDataset|"
 msgid "Signal generator"
-msgstr "Sinyal üretici"
+msgstr "Sinyal üreteci"
 
 #: activities/digital_electricity/TutorialDataset.qml:117
 msgctxt "TutorialDataset|"
@@ -5976,7 +5976,7 @@ msgstr "BCD sayacı"
 msgctxt "TutorialDataset|"
 msgid ""
 "The digital light glows when its terminal is connected with an input of 1."
-msgstr "Dijital ışık, terminali 1 girişine bağlandığında yanar."
+msgstr "Sayısal ışık, uçbirimi 1 girişi ile bağlandığında yanar."
 
 #: activities/digital_electricity/TutorialDataset.qml:145
 #: activities/digital_electricity/TutorialDataset.qml:202
@@ -6055,8 +6055,8 @@ msgid ""
 "For a more detailed description about the NAND gate, select it and click on "
 "the info button."
 msgstr ""
-"NAND geçidi hakkında daha ayrıntılı bir açıklama için, NAND'I seç ve bilgi "
-"düğmesine tıklaya."
+"NAND geçidi hakkında daha ayrıntılı bir açıklama için NAND'ı seç ve bilgi "
+"düğmesine tıkla."
 
 #: activities/digital_electricity/TutorialDataset.qml:218
 msgctxt "TutorialDataset|"
@@ -6118,7 +6118,7 @@ msgid ""
 "The output of the XOR gate is one if the number of 1 in the input is odd. "
 "Else, the output is zero."
 msgstr ""
-"Girişteki 1 sayısı tek ise XOR geçidinin çıkışı birdir. Aksi takdirde çıktı "
+"Girişteki 1 sayısı tek ise XOR geçidinin çıkışı birdir. Aksi takdirde çıkış "
 "sıfırdır."
 
 #: activities/digital_electricity/TutorialDataset.qml:310
@@ -6159,13 +6159,13 @@ msgid ""
 "For a more detailed description about the NOR gate, select it and click on "
 "the info button."
 msgstr ""
-"NOR kapısı hakkında daha ayrıntılı bir açıklama için, NOR'u seç ve bilgi "
-"düğmesine tıklayın."
+"NOR kapısı hakkında daha ayrıntılı bir açıklama için NOR'u seç ve bilgi "
+"düğmesine tıkla."
 
 #: activities/digital_electricity/TutorialDataset.qml:357
 msgctxt "TutorialDataset|"
 msgid "Light the bulb using the provided NOR gate."
-msgstr "Ampulü, verilen NOR kapısını kullanarak yak."
+msgstr "Ampulü, verilen NOR geçidini kullanarak yak."
 
 #: activities/digital_electricity/TutorialDataset.qml:370
 msgctxt "TutorialDataset|"
@@ -6173,7 +6173,7 @@ msgid ""
 "Use the gates so that the bulb glows only when the switch is turned off and "
 "doesn't glow when the switch is turned on."
 msgstr ""
-"Kapıları, ampulün yalnızca anahtar kapatıldığında yanması ve anahtar "
+"Geçitleri, ampulün yalnızca anahtar kapatıldığında yanması ve anahtar "
 "açıldığında yanmaması için kullan."
 
 #: activities/digital_electricity/TutorialDataset.qml:418
@@ -6197,18 +6197,13 @@ msgstr ""
 "kullanarak yak."
 
 #: activities/digital_electricity/TutorialDataset.qml:447
-#, fuzzy
-#| msgctxt "TutorialDataset|"
-#| msgid ""
-#| "Use the gates so that the bulb glows only when the switch is turned off "
-#| "and doesn't glow when the switch is turned on."
 msgctxt "TutorialDataset|"
 msgid ""
 "Use the gates so that the bulb glows when the switch is turned off and "
 "doesn't glow when the switch is turned on."
 msgstr ""
-"Kapıları, ampulün yalnızca anahtar kapatıldığında yanması ve anahtar "
-"açıldığında yanmaması için kullan."
+"Geçitleri, anahtar kapatıldığında ampulun yanması ve anahtar açıldığında "
+"yanmaması için kullan."
 
 #: activities/digital_electricity/TutorialDataset.qml:479
 msgctxt "TutorialDataset|"
@@ -6216,7 +6211,7 @@ msgid ""
 "Create a circuit using the provided components so that the bulb glows when "
 "either of the switches are turned on."
 msgstr ""
-"Anahtarlardan biri açıldığında ampulün yanması için, sağlanan bileşenleri "
+"Anahtarlardan biri açıldığında ampulün yanması için sağlanan bileşenleri "
 "kullanarak bir devre oluştur."
 
 #: activities/digital_electricity/TutorialDataset.qml:495
@@ -6225,7 +6220,7 @@ msgid ""
 "Create a circuit using the provided components so that the bulb glows when "
 "at least one of the switches is turned off."
 msgstr ""
-"Anahtarlardan en az biri kapatıldığında ampulün yanması için, sağlanan "
+"Anahtarlardan en az biri kapatıldığında ampulün yanması için sağlanan "
 "bileşenleri kullanarak bir devre oluştur."
 
 #: activities/digital_electricity/TutorialDataset.qml:511
@@ -6235,26 +6230,20 @@ msgid ""
 "output. The first value is 1 if A < B, the second value is 1 if A = B and "
 "the third value is 1 if A > B."
 msgstr ""
-"Bir karşılaştırıcı, giriş olarak iki sayı (A ve B) alır ve çıkış olarak 3 "
-"değer üretir. A <B, ikinci değer A = B için 1, üçüncü değer A> B için 1 ise "
-"ilk değer 1'dir."
+"Bir karşılaştırıcı, giriş olarak A ve B olmak üzere 2 sayı alır. Bunları "
+"karşılaştırır ve 3 değer çıkarır. A < B ise ilk değer 1'dir, A = B ise "
+"ikinci değer 1'dir, A > B ise üçüncü değer 1'dir."
 
 #: activities/digital_electricity/TutorialDataset.qml:512
-#, fuzzy
-#| msgctxt "TutorialDataset|"
-#| msgid ""
-#| "Create a circuit using the provided components so that the bulb glows "
-#| "when the value of the current flowing through the first switch is less "
-#| "than or equal to the current in the second switch."
 msgctxt "TutorialDataset|"
 msgid ""
 "Create a circuit using the provided components so that the bulb glows when "
 "the output of the first switch is less than or equal to the output of the "
 "second switch."
 msgstr ""
-"Birinci anahtardan geçen akımın değeri, ikinci anahtarınkinden küçük veya "
-"ona eşit olduğunda, ampulün parlayacağı şekilde sağlanan bileşenleri "
-"kullanarak bir devre oluştur."
+"Birinci anahtarın çıkışı ikinci anahtarın çıkışına eşit veya ondan küçük "
+"olduğunda ampulün yanması için sağlanan bileşenleri kullanarak bir devre "
+"oluştur."
 
 #: activities/digital_electricity/TutorialDataset.qml:525
 msgctxt "TutorialDataset|"
@@ -6293,7 +6282,7 @@ msgid ""
 msgstr ""
 "Soldaki sinyal oluşturucu, girdi olarak alınan belirli bir süre içinde 0 ile "
 "1 arasında değişen sinyaller üretmek için kullanılır. Zaman periyodu "
-"varsayılan olarak 1 saniyedir ancak 0,25 ile 2 saniye arasında "
+"öntanımlı olarak 1 saniyedir; ancak 0,25 ile 2 saniye arasında "
 "değiştirilebilir."
 
 #: activities/digital_electricity/TutorialDataset.qml:542
@@ -6321,30 +6310,27 @@ msgid ""
 "either the first switch is on and the second switch is off, or when the "
 "first switch is off and the second switch is on."
 msgstr ""
-"Ampulü her iki düğmeyi de kullanarak yakmalısın. ampulün yalnızca birinci "
+"Ampulü her iki düğmeyi de kullanarak yakmalısın. Ampulün yalnızca birinci "
 "anahtar açıkken ve ikinci anahtar kapalıyken veya birinci anahtar kapalı ve "
-"ikinci anahtar açıkken yanmasını sağlayın."
+"ikinci anahtar açıkken yanmasını sağla."
 
 #. Activity title
 #: activities/drawletters/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Draw Letters"
 msgctxt "ActivityInfo|"
 msgid "Draw letters"
-msgstr "Harf Çiz"
+msgstr "Harfler çiz"
 
 #. Help title
 #: activities/drawletters/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Connect the dots to draw the letters."
-msgstr "Noktaları birleştirerek harfleri çiz."
+msgstr "Harfleri çizmek için noktaları birleştir."
 
 #. Help goal
 #: activities/drawletters/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Learning how to draw letters in a funny way."
-msgstr "Eğlenceli bir yol ile harfleri nasıl çizeceğini öğren."
+msgstr "Eğlenceli bir biçimde harfleri nasıl çizeceğini öğren."
 
 #. Help manual
 #: activities/drawletters/ActivityInfo.qml:24
@@ -6354,12 +6340,9 @@ msgstr "Noktaları doğru sırayla birleştirerek harfleri çiz."
 
 #. Activity title
 #: activities/drawnumbers/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Draw Numbers"
 msgctxt "ActivityInfo|"
 msgid "Draw numbers"
-msgstr "Sayıları çiz"
+msgstr "Sayılar çiz"
 
 #. Help title
 #: activities/drawnumbers/ActivityInfo.qml:17
@@ -6371,7 +6354,7 @@ msgstr "0'dan 9'a kadar olan sayıları çizmek için noktaları birleştir."
 #: activities/drawnumbers/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Learning how to draw numbers in a funny way."
-msgstr "Eğlenceli bir yol ile sayılarını nasıl çizeceğini öğren."
+msgstr "Eğlenceli bir biçimde sayılarını nasıl çizeceğini öğren."
 
 #. Help manual
 #: activities/drawnumbers/ActivityInfo.qml:24
@@ -6382,7 +6365,7 @@ msgstr "Noktaları doğru sırayla birleştirerek sayıları çiz."
 #: activities/enumerate/ActivityConfig.qml:22
 msgctxt "ActivityConfig|"
 msgid "OK button"
-msgstr "OK tuşu"
+msgstr "OK düğmesi"
 
 #: activities/enumerate/ActivityConfig.qml:32
 msgctxt "ActivityConfig|"
@@ -6399,7 +6382,7 @@ msgstr "Nesneleri say"
 #: activities/enumerate/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Place the items in the best way to count them."
-msgstr "Nesneleri saymak için en iyi şekilde yerleştir."
+msgstr "Nesneleri saymak için en iyi biçimde yerleştir."
 
 #. Help goal
 #: activities/enumerate/ActivityInfo.qml:20
@@ -6472,54 +6455,64 @@ msgstr "3 meyveye kadar numaralandır."
 #: activities/enumerate/resource/3/Data.qml:29
 msgctxt "Data|"
 msgid "Group 2 types of fruit and enumerate each group (5 fruit max)."
-msgstr "Grup 2 çeşit meyve ve her grubu say (en fazla 5 meyve)."
+msgstr ""
+"2 çeşit meyveyi gruplandır ve her bir grubu numaralandır (en çok 5 meyve)."
 
 #: activities/enumerate/resource/2/Data.qml:17
 msgctxt "Data|"
 msgid "Group 2 types of fruit and enumerate each group (3 fruit max)."
-msgstr "Grup 2 çeşit meyve ve her grubu say (en fazla 3 meyve)."
+msgstr ""
+"2 çeşit meyveyi gruplandır ve her bir grubu numaralandır (en çok 3 meyve)."
 
 #: activities/enumerate/resource/2/Data.qml:23
 msgctxt "Data|"
 msgid "Group 2 types of fruit and enumerate each group (4 fruit max)."
-msgstr "Grup 2 çeşit meyve ve her grubu say (en fazla 4 meyve)."
+msgstr ""
+"2 çeşit meyveyi gruplandır ve her bir grubu numaralandır (en çok 4 meyve)."
 
 #: activities/enumerate/resource/3/Data.qml:13
 #: activities/enumerate/resource/3/Data.qml:35
 msgctxt "Data|"
 msgid "Group 3 types of fruit and enumerate each group (6 fruit max)."
-msgstr "Grup 3 çeşit meyve ve her grubu say (en fazla 6 meyve)."
+msgstr ""
+"3 çeşit meyveyi gruplandır ve her bir grubu numaralandır (en çok 6 meyve)."
 
 #: activities/enumerate/resource/3/Data.qml:17
 msgctxt "Data|"
 msgid "Group 3 types of fruit and enumerate each group (3 fruit max)."
-msgstr "Grup 3 çeşit meyve ve her grubu say (en fazla 3 meyve)."
+msgstr ""
+"3 çeşit meyveyi gruplandır ve her bir grubu numaralandır (en çok 3 meyve)."
 
 #: activities/enumerate/resource/3/Data.qml:23
 msgctxt "Data|"
 msgid "Group 3 types of fruit and enumerate each group (4 fruit max)."
-msgstr "Grup 3 çeşit meyve ve her grubu say (en fazla 4 meyve)."
+msgstr ""
+"3 çeşit meyveyi gruplandır ve her bir grubu numaralandır (en çok 4 meyve)."
 
 #: activities/enumerate/resource/4/Data.qml:13
 #: activities/enumerate/resource/4/Data.qml:35
 msgctxt "Data|"
 msgid "Group 4 types of fruit and enumerate each group (9 fruit max)."
-msgstr "4 çeşit meyveyi grupla ve her grubu numaralandır (en fazla 9 meyve)."
+msgstr ""
+"4 çeşit meyveyi gruplandır ve her bir grubu numaralandır (en çok 9 meyve)."
 
 #: activities/enumerate/resource/4/Data.qml:17
 msgctxt "Data|"
 msgid "Group 4 types of fruit and enumerate each group (6 fruit max)."
-msgstr "Grup 4 çeşit meyve ve her grubu say (en fazla 6 meyve)."
+msgstr ""
+"4 çeşit meyveyi gruplandır ve her bir grubu numaralandır (en çok 6 meyve)."
 
 #: activities/enumerate/resource/4/Data.qml:23
 msgctxt "Data|"
 msgid "Group 4 types of fruit and enumerate each group (7 fruit max)."
-msgstr "Grup 4 çeşit meyve ve her grubu say (en fazla 7 meyve)."
+msgstr ""
+"4 çeşit meyveyi gruplandır ve her bir grubu numaralandır (en çok 7 meyve)."
 
 #: activities/enumerate/resource/4/Data.qml:29
 msgctxt "Data|"
 msgid "Group 4 types of fruit and enumerate each group (8 fruit max)."
-msgstr "Grup 4 çeşit meyve ve her grubu say (en fazla 8 meyve)."
+msgstr ""
+"4 çeşit meyveyi gruplandır ve her bir grubu numaralandır (en çok 8 meyve)."
 
 #. Activity title
 #: activities/erase/ActivityInfo.qml:15
@@ -6596,12 +6589,9 @@ msgstr "Kaybolmalarını sağlamak için bloklara tıkla veya dokun."
 
 #. Activity title
 #: activities/explore_farm_animals/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Explore Farm Animals"
 msgctxt "ActivityInfo|"
 msgid "Explore farm animals"
-msgstr "Çiftlik Hayvanlarını Keşfet"
+msgstr "Çiftlik hayvanlarını keşfet"
 
 #. Help title
 #: activities/explore_farm_animals/ActivityInfo.qml:17
@@ -6677,7 +6667,7 @@ msgstr "Çık"
 #: activities/explore_farm_animals/ExploreLevels.qml:305
 msgctxt "ExploreLevels|"
 msgid "Continue"
-msgstr "Devam et"
+msgstr "Sürdür"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:21
 msgctxt "board1|"
@@ -6691,14 +6681,14 @@ msgid ""
 "escape predators, and possess an excellent sense of balance. They have "
 "single-toed hooves."
 msgstr ""
+"Atlar 'kişner'. Atlar, yırtıcılardan hızla kaçmalarına ve mükemmel bir denge "
+"duygusuna sahip olmalarına izin verecek şekilde koşmaya uyarlanmıştır. Tek "
+"parmaklı toynakları vardır."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:25
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal's ancestors were wolves."
 msgctxt "board1|"
 msgid "This animal has single-toed hooves."
-msgstr "Bu hayvanın ataları kurtlardır."
+msgstr "Bu hayvanın tek parmaklı toynakları vardır."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:33
 msgctxt "board1|"
@@ -6711,14 +6701,13 @@ msgid ""
 "The chicken goes 'cluck'. Domestic chickens have wings, but are not capable "
 "of long-distance flight. They have a comb on their head."
 msgstr ""
+"Tavuklar 'gıdaklar'. Evcil tavukların kanatları vardır; ancak uzun mesafeli "
+"uçuş yapamazlar. Başlarında bir tarak vardır."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:37
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal likes to come out at night."
 msgctxt "board1|"
 msgid "This animal has a comb on its head."
-msgstr "Bu hayvan geceleri dışarı çıkmayı sever."
+msgstr "Bu hayvanın başında bir tarak vardır."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:45
 msgctxt "board1|"
@@ -6732,11 +6721,14 @@ msgid ""
 "developed sense of taste, with around 20,000 taste buds. They can detect "
 "odours 8km away."
 msgstr ""
+"İnekler 'möö' der. İnekler 330 derecelik geniş bir görüş alanına sahiptir. "
+"Yaklaşık 20.000 tat tomurcuğu ile iyi gelişmiş bir tat alma duyusuna "
+"sahiptirler. Kokuları 8 km öteden algılayabilirler."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:49
 msgctxt "board1|"
 msgid "This animal has around 20,000 taste buds."
-msgstr ""
+msgstr "Bu hayvanın yaklaşık 20.000 tat tomurcuğu vardır."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:57
 msgctxt "board1|"
@@ -6750,14 +6742,14 @@ msgid ""
 "ability to chase mice and other rodents. They purr to communicate various "
 "emotions."
 msgstr ""
+"Kediler 'miyav' der. Kediler, insanlar tarafından arkadaşlık ve fareleri ve "
+"diğer kemirgenleri kovalama yetenekleri için değerlidir. Çeşitli duyguları "
+"iletmek için mırlarlar."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:61
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal lays eggs."
 msgctxt "board1|"
 msgid "This animal can purr."
-msgstr "Bu hayvan yumurta bırakır."
+msgstr "Bu hayvan mırlayabilir."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:69
 msgctxt "board1|"
@@ -6770,11 +6762,13 @@ msgid ""
 "The pig goes 'oink'. Pigs wallow in the mud, mainly to control their body "
 "temperature."
 msgstr ""
+"Domuzlar 'hırt' derler. Domuzlar, esas olarak vücut sıcaklıklarını "
+"denetlemek için çamurda yuvarlanırlar."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:73
 msgctxt "board1|"
 msgid "This animal wallows in the mud to control its body temperature."
-msgstr ""
+msgstr "Bu hayvan, vücut ısısını kontrol etmek için çamurda yuvarlanır."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:81
 msgctxt "board1|"
@@ -6787,14 +6781,13 @@ msgid ""
 "The duck goes 'quack'. Ducks are mostly aquatic birds. They have waterproof "
 "feathers and webbed feet which enable them to swim on the water."
 msgstr ""
+"Ördekler 'vak vak' derler. Ördekler çoğunlukla su kuşlarıdır. Suda "
+"yüzmelerini sağlayan su geçirmez tüyleri ve perdeli ayakları vardır."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:85
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal has webbed feet so it can swim in the water."
 msgctxt "board1|"
 msgid "This animal has webbed feet and can swim on the water."
-msgstr "Bu hayvan perdeli ayaklara sahiptir, böylece suda yüzebilirler."
+msgstr "Bu hayvanın perdeli ayakları vardır ve suda yüzebilir."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:93
 msgctxt "board1|"
@@ -6802,26 +6795,18 @@ msgid "Owl"
 msgstr "Baykuş"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:94
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid ""
-#| "The owl goes 'hoo. hoo.' The owl has excellent vision and hearing at "
-#| "night."
 msgctxt "board1|"
 msgid ""
 "The owl goes 'hoot'. Owls are nocturnal birds, they have excellent vision "
 "and hearing at night."
 msgstr ""
-"Baykuş 'huu huu!' diye ses çıkarır. Baykuşlar geceleri çok iyi görür ve "
-"duyarlar."
+"Baykuşlar 'huu huu' derler. Baykuşlar gece kuşlarıdır, geceleri mükemmel "
+"görürler ve duyarlar."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:97
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal likes to come out at night."
 msgctxt "board1|"
 msgid "This animal is a nocturnal bird."
-msgstr "Bu hayvan geceleri dışarı çıkmayı sever."
+msgstr "Bu hayvan bir gece kuşudur."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:105
 msgctxt "board1|"
@@ -6834,14 +6819,13 @@ msgid ""
 "The dog goes 'woof'. Dogs are probably the oldest domesticated species. They "
 "are descendants of the wolf."
 msgstr ""
+"Köpekler 'hav hav' derler. Köpekler büyük olasılıkla en eski "
+"evcilleştirilmiş türlerdir. Onlar kurtların torunlarıdır."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:109
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal is a close relative to the goat."
 msgctxt "board1|"
 msgid "This animal is a descendant of the wolf."
-msgstr "Bu hayvan keçiye yakın bir akrabadır."
+msgstr "Bu hayvan, kurdun soyundan gelir."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:117
 msgctxt "board1|"
@@ -6854,14 +6838,13 @@ msgid ""
 "The sheep goes 'baa'. Most sheep breeds bear a fleece of wool. The fleece "
 "can be sheared and used to produce textile fibre."
 msgstr ""
+"Koyunlar 'mee' derler. Çoğu koyun ırkı bir yün yapağı taşır. Yapağı "
+"kesilebilir ve tekstil elyafı üretmek için kullanılabilir."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:121
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal's ancestors were wolves."
 msgctxt "board1|"
 msgid "This animal produces wool."
-msgstr "Bu hayvanın ataları kurtlardır."
+msgstr "Bu hayvan yün üretir."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:131
 msgctxt "board1|"
@@ -6871,30 +6854,24 @@ msgstr "Onları keşfetmek için her bir çiftlik hayvanına tıkla."
 #: activities/explore_farm_animals/resource/board/board1.qml:134
 msgctxt "board1|"
 msgid "Click on the farm animal that makes the sound you hear."
-msgstr "Duyduğun sesi çıkaran çiftlik hayvanının üstüne tıkla."
+msgstr "Duyduğun sesi çıkaran çiftlik hayvanına tıkla."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:137
 msgctxt "board1|"
 msgid "Click the animal that matches the description."
-msgstr "Açıklamasıyla eşleşen hayvanın üstüne tıkla."
+msgstr "Açıklamayla eşleşen hayvanın üstüne tıkla."
 
 #. Activity title
 #: activities/explore_monuments/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Explore Monuments"
 msgctxt "ActivityInfo|"
 msgid "Explore monuments"
-msgstr "Anıtları Keşfet"
+msgstr "Anıtları keşfet"
 
 #. Help title
 #: activities/explore_monuments/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Explore Monuments around the world."
 msgctxt "ActivityInfo|"
 msgid "Explore monuments around the world."
-msgstr "Dünyadaki Anıtları keşfet."
+msgstr "Dünyanın dört bir yanındaki anıtları keşfet"
 
 #. Help goal
 #: activities/explore_monuments/ActivityInfo.qml:20
@@ -6904,7 +6881,7 @@ msgid ""
 "location."
 msgstr ""
 "Dünyanın dört bir yanından çeşitli anıtlar hakkında bilgi edin ve yerlerini "
-"hatırla."
+"anımsa."
 
 #. Help prerequisite
 #: activities/explore_monuments/ActivityInfo.qml:22
@@ -6942,7 +6919,7 @@ msgid ""
 "the religion center of Yucatan for a while."
 msgstr ""
 "\"Itza kuyusunun ağzında\" anlamına gelen Chichen Itza, Meksika'daki Yucatan "
-"Yarımadası'nda, Valladolid ve Merida arasında bir Maya Şehri. Christopher "
+"Yarımadası'nda, Valladolid ve Merida arasında bir Maya şehridir. Christopher "
 "Colombus döneminden önce kurulmuş ve muhtemelen bir süre Yucatan'ın din "
 "merkezi olarak hizmet vermiştir."
 
@@ -6962,11 +6939,11 @@ msgid ""
 "first permanent amphitheatre to be raised in Rome, and the most impressive "
 "arena the Classical world had yet seen."
 msgstr ""
-"Kolezyum veya coliseum, bugün Roma'nın Klasik binalarının en tanınmışıdır. "
+"Kolezyum veya Coliseum, bugün Roma'nın klasik binalarının en tanınmışıdır. "
 "İnşa edildikten 2000 yıl sonra ve terk edilmiş binanın inşaat malzemeleri "
 "için yağmalandığı yüzyıllara rağmen, bugünün stadyumları için klasik bir "
-"şablon olarak anında tanınır. Roma'da yükselen ilk kalıcı amfitiyatro ve "
-"Klasik dünyanın gördüğü en etkileyici arenaydı.."
+"şablon olarak anında tanınır. Roma'da yükselen ilk kalıcı amfi tiyatro ve "
+"klasik dünyanın gördüğü en etkileyici arenaydı."
 
 #: activities/explore_monuments/resource/board/board1.qml:41
 #: activities/explore_monuments/resource/board/board1.qml:44
@@ -7002,14 +6979,14 @@ msgid ""
 msgstr ""
 "Çin Seddi, 1987 yılında UNESCO tarafından Dünya Mirası olarak "
 "listelenmiştir. Tıpkı dev bir ejderha gibi, çöllerde, çayırlarda, dağlarda "
-"ve platolarda aşağı yukarı Çin'in doğusundan batısına yaklaşık 13170 mil "
-"(21196 kilometre) kadar uzanır."
+"ve platolarda aşağı yukarı Çin'in doğusundan batısına yaklaşık 13.170 mil "
+"(21.196 kilometre) kadar uzanır."
 
 #: activities/explore_monuments/resource/board/board1.qml:63
 #: activities/explore_monuments/resource/board/board1.qml:66
 msgctxt "board1|"
 msgid "Machu Picchu"
-msgstr "Maçu Piçu"
+msgstr "Maçu Picçu"
 
 #: activities/explore_monuments/resource/board/board1.qml:64
 msgctxt "board1|"
@@ -7063,10 +7040,10 @@ msgid ""
 "the Mughal emperor Shah Jahan reigned to house the tomb of his favorite wife "
 "of three, Mumtaz Mahal."
 msgstr ""
-"Tac Mahal, Hindistan'ın Agra kentindeki Yamuna Nehri'nin güney kıyısında "
-"bulunan beyaz mermer bir türbedir. 1632'de Babür imparatoru Şah Jahan "
-"tarafından en sevdiği üç karısı Mumtaz Mahal'ın mezarına ev sahipliği yapmak "
-"için hüküm sürdü."
+"Tac Mahal, Hindistan'ın Agra şehrinde, Yamuna Nehri'nin güney kıyısında yer "
+"alan beyaz mermer bir anıt mezardır. 1632'de Babür imparatoru Şah Cihan "
+"tarafından üç eşi arasından en sevdiği olan Mümtaz Mahal'in mezarına ev "
+"sahipliği yapmak için yaptırılmıştır."
 
 #: activities/explore_monuments/resource/board/board1.qml:88
 msgctxt "board1|"
@@ -7087,7 +7064,7 @@ msgstr "Verilen anıtın bulunduğu yere tıkla."
 #: activities/explore_monuments/resource/board/board2.qml:21
 msgctxt "board2|"
 msgid "Golden Temple"
-msgstr "Altın Tapınak (Golden Temple)"
+msgstr "Altın Tapınak"
 
 #: activities/explore_monuments/resource/board/board2.qml:19
 msgctxt "board2|"
@@ -7106,7 +7083,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board2.qml:32
 msgctxt "board2|"
 msgid "Hawa Mahal"
-msgstr "Hawa Mahal"
+msgstr "Hava Mahal"
 
 #: activities/explore_monuments/resource/board/board2.qml:30
 msgctxt "board2|"
@@ -7117,7 +7094,7 @@ msgid ""
 "and pink sandstone, the palace sits on the edge of the City Palace, and "
 "extends to the zenana, or women's chambers."
 msgstr ""
-"Hawa Mahal, Hindistan'ın Jaipur kentinde bulunan bir saraydır, çünkü esasen "
+"Hava Mahal, Hindistan'ın Caypur kentinde bulunan bir saraydır; çünkü esasen "
 "kraliyet ailesinin kadınlarının dışarıdan görünmeden sokak festivallerini "
 "izleyebilmeleri için inşa edilmiş yüksek bir ekran duvarıydı. Kırmızı ve "
 "pembe kum taşından inşa edilen saray, Şehir Sarayı'nın kenarında yer alır ve "
@@ -7161,17 +7138,17 @@ msgid ""
 "relics of the Buddha. It was crowned by the chatra, a parasol-like structure "
 "symbolizing high rank, which was intended to honor and shelter the relics."
 msgstr ""
-"Sanchi'deki Büyük Stupa, Hindistan'daki en eski taş yapıdır ve aslen MÖ 3. "
+"Sançi'deki Büyük Stupa, Hindistan'daki en eski taş yapıdır ve aslen MÖ 3. "
 "yüzyılda İmparator Büyük Ashoka tarafından yaptırılmıştır. Çekirdeği, "
 "Buda'nın kalıntıları üzerine inşa edilmiş basit bir yarım küre şeklindeki "
 "tuğla yapıydı. Kalıntıları onurlandırmak ve barındırmak amacıyla yüksek "
-"rütbeyi simgeleyen şemsiye benzeri bir yapı olan chatra ile taçlandırıldı."
+"rütbeyi simgeleyen şemsiye benzeri bir yapı olan çatra ile taçlandırıldı."
 
 #: activities/explore_monuments/resource/board/board2.qml:62
 #: activities/explore_monuments/resource/board/board2.qml:65
 msgctxt "board2|"
 msgid "Ajanta Caves"
-msgstr "Ajanta Mağaraları"
+msgstr "Acanta Mağaraları"
 
 #: activities/explore_monuments/resource/board/board2.qml:63
 msgctxt "board2|"
@@ -7184,13 +7161,13 @@ msgid ""
 "gesture, pose and form. Since 1983, the caves have been a UNESCO World "
 "Heritage Site."
 msgstr ""
-"Ajanta Mağaraları, Hindistan'ın Maharashtra eyaletinin Aurangabad bölgesinde "
+"Acanta Mağaraları, Hindistan'ın Maharashtra eyaletinin Aurangabad bölgesinde "
 "MÖ 2. yüzyıldan MS 480 yılına kadar uzanan yaklaşık 29 adet kayaya oyulmuş "
 "Budist mağara anıtıdır. Mağaralar, eski Hint sanatının hayatta kalan en "
 "güzel örnekleri arasında olarak tanımlanan resimler ve kaya kesme "
 "heykelleri, özellikle duyguları jest, poz ve form aracılığıyla sunan "
 "etkileyici resimler içerir. 1983'ten beri mağaralar UNESCO Dünya Mirası "
-"Listesi'nde."
+"Listesi'ndedir."
 
 #: activities/explore_monuments/resource/board/board2.qml:73
 #: activities/explore_monuments/resource/board/board2.qml:76
@@ -7232,7 +7209,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board2.qml:98
 msgctxt "board2|"
 msgid "Charminar"
-msgstr "Charminar"
+msgstr "Çarminar"
 
 #: activities/explore_monuments/resource/board/board2.qml:96
 msgctxt "board2|"
@@ -7243,17 +7220,17 @@ msgid ""
 "become synonymous with the monument. The Charminar is a massive and "
 "impressive structure with four minarets."
 msgstr ""
-"Haydarabad'daki Charminar, 1591'de Mohammed Quli Qutab Shah tarafından inşa "
-"edildi. Haydarabad şehrinde vebanın sonunu işaretlemek için Charminar'ı inşa "
-"etti. Charminar'ın yapımından bu yana, Haydarabad şehri neredeyse anıtla "
-"eşanlamlı hale geldi. Charminar, dört minareli devasa ve etkileyici bir "
+"Haydarabad'daki Çarminar, 1591'de Mohammed Quli Qutab Shah tarafından inşa "
+"edildi. Haydarabad şehrinde vebanın sonunu işaretlemek için Çarminar'ı inşa "
+"etti. Çarminar'ın yapımından bu yana, Haydarabad şehri neredeyse anıtla "
+"eşanlamlı hale geldi. Çarminar, dört minareli devasa ve etkileyici bir "
 "yapıdır."
 
 #: activities/explore_monuments/resource/board/board2.qml:106
 #: activities/explore_monuments/resource/board/board2.qml:109
 msgctxt "board2|"
 msgid "Victoria Memorial"
-msgstr "Victoria Anıtı"
+msgstr "Viktoriya Anıtı"
 
 #: activities/explore_monuments/resource/board/board2.qml:107
 msgctxt "board2|"
@@ -7263,10 +7240,10 @@ msgid ""
 "blends the best of the British and Mughal architecture. The Victoria "
 "Memorial hall was built with white Makrana marbles."
 msgstr ""
-"Victoria Anıtı, Britanya İmparatorluğu'nun Hindistan'daki zirvesini anmak "
+"Viktoriya Anıtı, Britanya İmparatorluğu'nun Hindistan'daki zirvesini anmak "
 "için inşa edildi. Kolkata şehrinin mimari doruk noktasını temsil eder ve "
-"İngiliz ve Babür mimarisinin en iyi özelliklerini harmanlamaktadır. Victoria "
-"Anıt salonu beyaz Makrana mermerleri ile inşa edildi."
+"İngiliz ve Babür mimarisinin en iyi özelliklerini harmanlamaktadır. "
+"Viktoriya Anıt salonu beyaz Makrana mermerleri ile inşa edildi."
 
 #: activities/explore_monuments/resource/board/board2.qml:117
 #: activities/explore_monuments/resource/board/board2.qml:120
@@ -7282,16 +7259,16 @@ msgid ""
 "buffalo fights and other sports at Rupahi Pathar - particularly during the "
 "Rongali Bihu festival in the Ahom capital of Rangpur."
 msgstr ""
-"Rang Ghar, bir zamanlar Ahom krallarının ve soylularının Rupahi Pathar'da "
-"manda dövüşleri ve diğer sporlar gibi oyunlarda - özellikle Ahom'un başkenti "
-"Rangpur'daki Rongali Bihu festivalinde - seyirci oldukları kraliyet spor "
-"köşkü olarak hizmet veren iki katlı bir binadır."
+"Rang Ghar, bir zamanlar Ahom krallarının ve soylularının Rupahi Pathar'daki "
+"bufalo dövüşleri ve diğer sporlar gibi oyunlarda - özellikle Ahom'un "
+"başkenti Rangpur'daki Rongali Bihu festivali sırasında - seyirci oldukları "
+"kraliyet spor pavyonu olarak hizmet veren iki katlı bir binadır."
 
 #: activities/explore_monuments/resource/board/board2.qml:128
 #: activities/explore_monuments/resource/board/board2.qml:131
 msgctxt "board2|"
 msgid "Qutub Minar"
-msgstr "Kutub Minar"
+msgstr "Kütüb Minar"
 
 #: activities/explore_monuments/resource/board/board2.qml:129
 msgctxt "board2|"
@@ -7302,10 +7279,10 @@ msgid ""
 "which is a UNESCO World Heritage Site. The tower, located in the Mehrauli "
 "area of Delhi, is made of red sandstone and marble."
 msgstr ""
-"74 metre yüksekliğindeki Kutub Minar, dünyanın en uzun tuğla minaresi ve "
-"Mohali'deki Fateh Burj'dan sonra Hindistan'daki en uzun ikinci minar. "
-"Çevresindeki antik ve ortaçağ anıtlarının yanı sıra UNESCO Dünya Mirası "
-"Listesi olan Kutub Kompleksi'ni oluştururlar. Delhi'nin Mehrauli bölgesinde "
+"Kütüb Minar 74 metre ile dünyanın en yüksek tuğla minaresi ve Mohali'deki "
+"Fateh Burj'dan sonra Hindistan'daki en yüksek ikinci minaredir. Etrafını "
+"saran antik ve ortaçağ anıtlarıyla birlikte UNESCO Dünya Mirası Listesi'nde "
+"yer alan Kütüb Kompleksi'ni oluştururlar. Delhi'nin Mehrauli bölgesinde "
 "bulunan kule, kırmızı kumtaşı ve mermerden yapılmıştır."
 
 #: activities/explore_monuments/resource/board/board2.qml:141
@@ -7381,10 +7358,10 @@ msgid ""
 msgstr ""
 "Reims Katedrali, boyut olarak oldukça sıra dışı bir yapıdır: Büyük "
 "kalabalıkları barındırmak için tasarlanmış, devasa boyutları 6650 m2'lik bir "
-"yüzey alanı ve 122m'lik bir uzunluğu içermektedir. Bir Gotik sanat başyapıtı "
-"ve Fransa Krallarının taç giyme töreni alanı, 1991'den beri UNESCO Dünya "
-"Mirası Listesi'nde yer almaktadır. Champagne bölgesindeki turistlerin "
-"Mekke'si sayılabilecek bu yer, her yıl 1500.000 ziyaretçiyi ağırlamaktadır."
+"yüzey alanı ve 122 metrelik bir uzunluğu içermektedir. Bir Gotik sanat "
+"başyapıtı ve Fransa Krallarının taç giyme töreni alanı, 1991'den beri UNESCO "
+"Dünya Mirası Listesi'nde yer almaktadır. Champagne bölgesindeki turistlerin "
+"Mekke'si sayılabilecek bu yer, her yıl 1.500.000 ziyaretçiyi ağırlamaktadır."
 
 #: activities/explore_monuments/resource/board/board3.qml:51
 #: activities/explore_monuments/resource/board/board3.qml:54
@@ -7402,7 +7379,7 @@ msgid ""
 "– created a technical as well as an artistic masterpiece."
 msgstr ""
 "Pont du Gard, neredeyse 50 km uzunluğundaki Nîmes su kemerinin, Gardon "
-"nehrinden geçmesine izin vermek için, Hıristiyanlık döneminden kısa bir süre "
+"nehrinden geçmesine izin vermek için, Hristiyanlık döneminden kısa bir süre "
 "önce inşa edilmiştir. Yaklaşık 50 metre yükseklikte ve 275 metre "
 "uzunluğundaki en uzun ölçüye sahip olan bu köprüyü tasarlayan Roma mimarları "
 "ve hidrolik mühendisleri, fevkalade teknik ve sanatsal bir başyapıt "
@@ -7507,7 +7484,7 @@ msgstr ""
 "Chenonceau Şatosu, muhteşem mimarisi ve tarihi önemi ile dünyanın her "
 "yerinden binlerce turisti kendine çeken Loire Vadisi, Chateaux'nun bir "
 "parçasıdır. Chenonceau Şatosu bazen tarihçiler tarafından Ladies Kalesi "
-"olarak adlandırılır; kadınsı figürler yüzyıllar boyu Fransız Şato'nun "
+"olarak adlandırılır; kadınsı figürler yüzyıllar boyu Fransız Şatosunun "
 "yapısını ve gelişimini büyük ölçüde etkilemiştir."
 
 #: activities/explore_monuments/resource/board/board3.qml:117
@@ -7617,7 +7594,7 @@ msgid ""
 msgstr ""
 "Berlin Katedrali, kentin en büyük kilisesi ve Protestan Almanya Kilisesi "
 "için hayati bir merkez olarak hizmet vermektedir. Kilisenin sınırlarının "
-"ötesine uzanan katedral, Almanya ve yurtdışından her yıl binlerce "
+"ötesine uzanan katedral, Almanya ve yurt dışından her yıl binlerce "
 "ziyaretçiyi cezbetmektedir."
 
 #: activities/explore_monuments/resource/board/board4.qml:62
@@ -7653,7 +7630,7 @@ msgid ""
 msgstr ""
 "Uzun, yüksek tavanlı bu tuğla yapı, Germen kabileleri tarafından şehrin yok "
 "edilmesine kadar Roma imparatorunun tahtıydı. İşgalciler çatısız yıkıntıya "
-"bir yerleşim kurdular. 12. yüzyılda, Trier Başpiskoposunu barındıracak bir "
+"bir yerleşim kurdular. 12. yüzyılda Trier Başpiskoposunu barındıracak bir "
 "kule haline getirildi."
 
 #: activities/explore_monuments/resource/board/board4.qml:84
@@ -8024,7 +8001,7 @@ msgstr ""
 "girişimlerinden biriydi. Piramidin yüksekliği 104 metredir ve onu Mısır'daki "
 "dünyanın 4. en büyük piramidi yapar. Piramit kırmızı kireçtaşı taşlarla inşa "
 "edilmiştir, dolayısıyla Mısır yerel halkı onu Yarasa Piramidi anlamına gelen "
-"el-heram el-watwaat olarak adlandırdı."
+"el-heram el-vatvaat olarak adlandırdı."
 
 #: activities/explore_monuments/resource/board/board6.qml:63
 msgctxt "board6|"
@@ -8034,16 +8011,13 @@ msgstr "Mısır piramitleri"
 #: activities/explore_monuments/resource/board/board6.qml:66
 msgctxt "board6|"
 msgid "Click on the location of the given pyramid."
-msgstr "Verilen piramidin bulunduğu yere tıkl."
+msgstr "Verilen piramidin bulunduğu yere tıkla."
 
 #. Activity title
 #: activities/explore_world_animals/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Explore World Animals"
 msgctxt "ActivityInfo|"
 msgid "Explore world animals"
-msgstr "Dünyadaki Hayvanları Keşfet"
+msgstr "Dünya hayvanlarını keşfet"
 
 #. Help title
 #: activities/explore_world_animals/ActivityInfo.qml:21
@@ -8062,7 +8036,7 @@ msgid ""
 "they live."
 msgstr ""
 "Dünyanın dört bir yanında çeşitli vahşi hayvanlar hakkında bilgi edin ve "
-"nerede yaşadıklarını hatırla."
+"nerede yaşadıklarını anımsa."
 
 #. Help manual
 #: activities/explore_world_animals/ActivityInfo.qml:28
@@ -8136,8 +8110,8 @@ msgid ""
 "The giraffe lives in Africa and is the tallest mammal in the world. Just "
 "their legs, which are usually 1.8 meters long, are taller than most humans!"
 msgstr ""
-"Zürafalar, Afrika'da yaşar ve dünyadaki en uzun memelidirler. Genellikle 1,8 "
-"metre uzunluğundaki bacakları, çoğu insandan daha uzundur!"
+"Zürafalar, Afrika'da yaşar ve dünyadaki en uzun memelileridirler. Genellikle "
+"1,8 metre uzunluğundaki bacakları, çoğu insandan daha uzundur!"
 
 #: activities/explore_world_animals/resource/board/board1.qml:52
 #: activities/explore_world_animals/resource/board/board1.qml:55
@@ -8168,17 +8142,17 @@ msgid ""
 msgstr ""
 "Deniz gergedanları, Arktik Okyanusu'nda yaşayan ve uzun dişleri olan "
 "balinalardır. Bu dişler birçok insana efsanevi tek boynuzlu atın boynuzunu "
-"hatırlatıyor."
+"anımsatıyor."
 
 #: activities/explore_world_animals/resource/board/board1.qml:76
 msgctxt "board1|"
 msgid "Explore wild animals from around the world."
-msgstr "Dünyanın dört bir yanından vahşi hayvanları keşfedin."
+msgstr "Dünyanın dört bir yanından vahşi hayvanları keşfet."
 
 #: activities/explore_world_animals/resource/board/board1.qml:79
 msgctxt "board1|"
 msgid "Click on the location where the given animal lives."
-msgstr "Verilen hayvanın yaşadığı yere tıklay."
+msgstr "Verilen hayvanın yaşadığı yere tıkla."
 
 #: activities/explore_world_animals/resource/board/board2.qml:19
 #: activities/explore_world_animals/resource/board/board2.qml:22
@@ -8202,18 +8176,13 @@ msgid "Polar bear"
 msgstr "Kutup ayısı"
 
 #: activities/explore_world_animals/resource/board/board2.qml:31
-#, fuzzy
-#| msgctxt "board2|"
-#| msgid ""
-#| "The polar bear is one of the world's largest predatory mammals. It "
-#| "weights up to a ton and can be as long as 3 meters!"
 msgctxt "board2|"
 msgid ""
 "The polar bear is one of the world's largest predatory mammals. It weighs up "
 "to a ton and can be as long as 3 meters!"
 msgstr ""
-"Kutup ayısı, dünyanın en büyük yırtıcı memelilerinden biridir. Bir tona "
-"kadar ağırlıktadır ve 3 metreye kadar uzayabilir!"
+"Kutup ayısı, dünyanın en büyük yırtıcı memelilerinden biridir. Ağırlığı bir "
+"tona kadar çıkar ve 3 metreye kadar uzayabilir!"
 
 #: activities/explore_world_animals/resource/board/board2.qml:41
 #: activities/explore_world_animals/resource/board/board2.qml:44
@@ -8227,14 +8196,14 @@ msgid ""
 "The kangaroo lives in Australia and is well-known for the pouch on its belly "
 "used to cradle baby kangaroos."
 msgstr ""
-"Kanguru Avustralya'da yaşıyor ve karnındaki bebek kanguruları kucaklamak "
-"için kullanılan kesesiyle tanınıyor."
+"Kangurular Avustralya'da yaşar ve karnındaki bebek kanguruları kucaklamak "
+"için kullanılan kesesiyle tanınırlar."
 
 #: activities/explore_world_animals/resource/board/board2.qml:52
 #: activities/explore_world_animals/resource/board/board2.qml:55
 msgctxt "board2|"
 msgid "Scarlet macaw"
-msgstr "Kırmızı Macaw papağanı"
+msgstr "Kırmızı Macau papağanı"
 
 #: activities/explore_world_animals/resource/board/board2.qml:53
 msgctxt "board2|"
@@ -8265,7 +8234,7 @@ msgstr ""
 #: activities/explore_world_animals/resource/board/board2.qml:76
 msgctxt "board2|"
 msgid "Explore wild animals from around the world."
-msgstr "Dünyadaki vahşi hayvanları keşfet."
+msgstr "Dünyanın dört bir yanından vahşi hayvanları keşfet."
 
 #: activities/explore_world_animals/resource/board/board2.qml:79
 msgctxt "board2|"
@@ -8359,12 +8328,9 @@ msgstr "Verilen hayvanın yaşadığı yere tıkla."
 
 #. Activity title
 #: activities/explore_world_music/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Explore World Music"
 msgctxt "ActivityInfo|"
 msgid "Explore world music"
-msgstr "Dünya Müziklerini Keşfet"
+msgstr "Dünya müziklerini keşfet"
 
 #. Help title
 #: activities/explore_world_music/ActivityInfo.qml:17
@@ -8377,7 +8343,7 @@ msgstr "Dünya müzikleri hakkında bilgi edin."
 msgctxt "ActivityInfo|"
 msgid ""
 "Develop a better understanding of the variety of music present in the world."
-msgstr "Dünyadaki mevcut müzik çeşitliliğini daha iyi anlayabilirsin."
+msgstr "Dünyadaki var olan müzik çeşitliliğini daha iyi anlayabilirsin."
 
 #. Help manual
 #: activities/explore_world_music/ActivityInfo.qml:24
@@ -8451,7 +8417,7 @@ msgid ""
 "variety of drums, and they believe it is a sacred and magical instrument."
 msgstr ""
 "Müzik, Afrika'daki gündelik hayatın bir parçasıdır. Afrika müziğinde çok "
-"çeşitli vurmalı çalgılar bulunur ve kutsal, büyülü bir enstrüman olduğuna "
+"çeşitli vurmalı çalgılar bulunur ve kutsal, büyülü bir çalgı olduğuna "
 "inanılır."
 
 #: activities/explore_world_music/resource/board/board1.qml:44
@@ -8467,9 +8433,9 @@ msgid ""
 "played to call worshipers to prayer. The lute is an instrument invented "
 "thousands of years ago and still in use today."
 msgstr ""
-"Müzik, Ortadoğu kültürünün çok önemli bir parçasıdır. İbadet edenleri dua "
-"etmeye çağırmak için belirli şarkılar çalınır. Kopuz binlerce yıl önce icat "
-"edilen ve bugün hala kullanımda olan bir alettir."
+"Müzik, orta doğu kültürünün çok önemli bir parçasıdır. İbadet edenleri "
+"namaza çağırmak için belirli şarkılar çalınır. Ud, binlerce yıl önce icat "
+"edilmiş ve bugün hala kullanılan bir çalgıdır."
 
 #: activities/explore_world_music/resource/board/board1.qml:56
 #: activities/explore_world_music/resource/board/board1.qml:60
@@ -8484,7 +8450,7 @@ msgid ""
 "to scare enemies in battle. It is very loud, and performances are very "
 "exciting with crowds cheering and performers yelling!"
 msgstr ""
-"Taiko davulculuğu Japonya'dan geliyor. Bu tür davul çalma, başlangıçta "
+"Taiko davulculuğu Japonya'dan gelir. Bu davul çalma türü, başlangıçta "
 "savaşta düşmanları korkutmak için kullanılıyordu. Çok gürültülü ve "
 "performanslar, tezahürat yapan kalabalığın ve sanatçıların bağırmasıyla çok "
 "heyecan verici bir etki yaratırdı!"
@@ -8503,7 +8469,7 @@ msgid ""
 "flutes, harps, and accordions."
 msgstr ""
 "Bu bölgenin halk müziğine Kelt müziği denir. Genellikle bir anlatı şiiri "
-"veya öyküsü içerir. Tipik enstrümanlar arasında tulum, keman, flüt, harp ve "
+"veya öyküsü içerir. Tipik çalgılar arasında tulum, keman, flüt, harp ve "
 "akordeon bulunur."
 
 #: activities/explore_world_music/resource/board/board1.qml:80
@@ -8596,7 +8562,7 @@ msgstr "Aile"
 #: activities/family/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Select the name you should call this family member."
-msgstr "Araman gereken bir aile üyesinin adını seç."
+msgstr "Bu aile üyesini çağırırken kullanman gereken adı seç."
 
 #. Help goal
 #: activities/family/ActivityInfo.qml:20
@@ -8628,8 +8594,8 @@ msgstr ""
 "Bir aile ağacı gösterilmektedir.\n"
 "İlişkileri belirtmek için daireler çizgilerle bağlanmıştır. Evli çiftler "
 "bağlantıda bir yüzük ile işaretlenmiştir.\n"
-"Beyaz çemberdeki kişi sensin. Turuncu daire içindeki kişiyi araman gereken "
-"adı seç.\n"
+"Beyaz çemberdeki kişi sensin. Turuncu daire içindeki kişiyi çağırırken "
+"kullanman gereken adı seç.\n"
 
 #: activities/family/Family.qml:227
 msgctxt "Family|"
@@ -8661,7 +8627,7 @@ msgstr "Baba"
 #: activities/family/FamilyDataset.qml:337
 msgctxt "FamilyDataset|"
 msgid "Grandfather"
-msgstr "Büyükbaba"
+msgstr "Dede"
 
 #: activities/family/FamilyDataset.qml:126
 #: activities/family/FamilyDataset.qml:388
@@ -8687,7 +8653,7 @@ msgstr "Anne"
 #: activities/family/FamilyDataset.qml:337
 msgctxt "FamilyDataset|"
 msgid "Grandmother"
-msgstr "Büyükanne"
+msgstr "Anneanne"
 
 #: activities/family/FamilyDataset.qml:149
 #: activities/family/FamilyDataset.qml:389
@@ -8730,7 +8696,7 @@ msgstr "Kız kardeş"
 #: activities/family/FamilyDataset.qml:337
 msgctxt "FamilyDataset|"
 msgid "Granddaughter"
-msgstr "Kız Torun"
+msgstr "Kız torun"
 
 #: activities/family/FamilyDataset.qml:238
 #: activities/family/FamilyDataset.qml:271
@@ -8739,7 +8705,7 @@ msgstr "Kız Torun"
 #: activities/family/FamilyDataset.qml:337
 msgctxt "FamilyDataset|"
 msgid "Grandson"
-msgstr "Erkek Torun"
+msgstr "Erkek torun"
 
 #: activities/family/FamilyDataset.qml:389
 #: activities/family/FamilyDataset.qml:413
@@ -8748,7 +8714,7 @@ msgstr "Erkek Torun"
 #: activities/family/FamilyDataset.qml:468
 msgctxt "FamilyDataset|"
 msgid "Nephew"
-msgstr "Erkek Yeğen"
+msgstr "Erkek yeğen"
 
 #: activities/family/FamilyDataset.qml:389
 #: activities/family/FamilyDataset.qml:414
@@ -8757,7 +8723,7 @@ msgstr "Erkek Yeğen"
 #: activities/family/FamilyDataset.qml:468
 msgctxt "FamilyDataset|"
 msgid "Niece"
-msgstr "Kız Yeğen"
+msgstr "Kız yeğen"
 
 #: activities/family/FamilyDataset.qml:494
 #: activities/family/FamilyDataset.qml:495
@@ -8849,7 +8815,7 @@ msgstr ""
 #: activities/fifteen/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "The fifteen game"
-msgstr "On beş oyun"
+msgstr "On beş oyunu"
 
 #. Help title
 #: activities/fifteen/ActivityInfo.qml:17
@@ -9053,13 +9019,13 @@ msgstr "Hortumu kontrol et"
 #: activities/followline/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "The fireman needs to stop the fire, but the hose is blocked."
-msgstr "İtfaiyecinin yangını söndürmesi gerek, ancak hortum tıkalı."
+msgstr "İtfaiyecinin yangını söndürmesi gerek; ancak hortum tıkalı."
 
 #. Help goal
 #: activities/followline/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Fine motor coordination."
-msgstr "Düzgün motor koordinasyonu."
+msgstr "İnce motor koordinasyonu."
 
 #. Help manual
 #: activities/followline/ActivityInfo.qml:24
@@ -9104,36 +9070,26 @@ msgstr ""
 
 #. Activity title
 #: activities/fractions_create/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice subtractions."
 msgctxt "ActivityInfo|"
 msgid "Create the fractions"
-msgstr "Çıkarma işlemi üzerine alıştırma yap."
+msgstr "Kesirleri oluştur"
 
 #. Help title
 #: activities/fractions_create/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "A shape split in equal parts is displayed on screen."
-msgstr ""
+msgstr "Ekranda eşit parçalara bölünmüş bir şekil görüntülenir."
 
 #: activities/fractions_create/ActivityInfo.qml:18
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Drag the appropriate numbers and the operators to the boxes to obtain the "
-#| "number to guess in the instruction."
 msgctxt "ActivityInfo|"
 msgid ""
 "Select the appropriate number of parts as described in the instructions."
-msgstr ""
-"Talimatta tahmin edilecek sayıyı elde etmek için uygun numaraları ve "
-"operatörleri kutulara sürükle."
+msgstr "Talimatlarda açıklandığı gibi uygun parça sayısını seç."
 
 #: activities/fractions_create/fractions_create.js:79
 msgctxt "fractions_create|"
 msgid "Find the represented fraction."
-msgstr "Gösterilen kesiri bulun."
+msgstr "Gösterilen kesri bul."
 
 #: activities/fractions_create/resource/1/Data.qml:9
 #, fuzzy
@@ -9157,40 +9113,28 @@ msgstr "Ayın beşinci Perşembesini seç"
 #: activities/fractions_create/resource/1/Data.qml:24
 #: activities/fractions_create/resource/3/Data.qml:35
 #: activities/fractions_create/resource/3/Data.qml:49
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Select the fifth Thursday of the given month"
 msgctxt "Data|"
 msgid "Select one-third of the pie."
-msgstr "Ayın beşinci Perşembesini seç"
+msgstr "Pastanın üçte birini seç."
 
 #: activities/fractions_create/resource/1/Data.qml:30
 #: activities/fractions_create/resource/3/Data.qml:41
 #: activities/fractions_create/resource/3/Data.qml:55
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Select the fourth Sunday of the given month"
 msgctxt "Data|"
 msgid "Select two-thirds of the pie."
-msgstr "Ayın dördüncü Pazar gününü seç"
+msgstr "Pastanın üçte ikisini seç."
 
 #: activities/fractions_create/resource/1/Data.qml:36
 #: activities/fractions_create/resource/3/Data.qml:61
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Select the butterfly of the correct color."
 msgctxt "Data|"
 msgid "Select one-quarter of the pie."
-msgstr "Doğru renkteki kelebeği seç."
+msgstr "Pastanın dörtte birini seç."
 
 #: activities/fractions_create/resource/1/Data.qml:42
 #: activities/fractions_create/resource/3/Data.qml:67
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Select the fifth Thursday of the given month"
 msgctxt "Data|"
 msgid "Select two-fifths of the pie."
-msgstr "Ayın beşinci Perşembesini seç"
+msgstr "Pastanın beşte ikisini seç."
 
 #: activities/fractions_create/resource/1/Data.qml:50
 #, fuzzy
@@ -9242,7 +9186,7 @@ msgstr "Kare ile özel sorular."
 msgctxt "Data|"
 msgid ""
 "Select as many parts as you can without taking more than half of the square."
-msgstr ""
+msgstr "Karenin yarısından fazlasını almadan olabildiğince çok parça seç."
 
 #: activities/fractions_create/resource/2/Data.qml:9
 #, fuzzy
@@ -9266,64 +9210,43 @@ msgstr "Ayın beşinci Perşembesini seç"
 #: activities/fractions_create/resource/2/Data.qml:24
 #: activities/fractions_create/resource/4/Data.qml:35
 #: activities/fractions_create/resource/4/Data.qml:49
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Select the fifth Thursday of the given month"
 msgctxt "Data|"
 msgid "Select one-third of the square."
-msgstr "Ayın beşinci Perşembesini seç"
+msgstr "Karenin üçte birini seç."
 
 #: activities/fractions_create/resource/2/Data.qml:30
 #: activities/fractions_create/resource/4/Data.qml:41
 #: activities/fractions_create/resource/4/Data.qml:55
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Select the fourth Sunday of the given month"
 msgctxt "Data|"
 msgid "Select two-thirds of the square."
-msgstr "Ayın dördüncü Pazar gününü seç"
+msgstr "Karenin üçte ikisini seç."
 
 #: activities/fractions_create/resource/2/Data.qml:36
 #: activities/fractions_create/resource/4/Data.qml:61
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Select the butterfly of the correct color."
 msgctxt "Data|"
 msgid "Select one-quarter of the square."
-msgstr "Doğru renkteki kelebeği seç."
+msgstr "Karenin dörtte birini seç."
 
 #: activities/fractions_create/resource/2/Data.qml:42
 #: activities/fractions_create/resource/4/Data.qml:67
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Select the fifth Thursday of the given month"
 msgctxt "Data|"
 msgid "Select two-fifths of the square."
-msgstr "Ayın beşinci Perşembesini seç"
+msgstr "Karenin beşte ikisini seç."
 
 #: activities/fractions_create/resource/2/Data.qml:50
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Select the butterfly of the correct color."
 msgctxt "Data|"
 msgid "Select one square and one-quarter of a square."
-msgstr "Doğru renkteki kelebeği seç."
+msgstr "Bir kareyi ve bir karenin dörtte birini seç."
 
 #: activities/fractions_create/resource/2/Data.qml:56
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Select the fifth Thursday of the given month"
 msgctxt "Data|"
 msgid "Select one square and two-fifths of a square."
-msgstr "Ayın beşinci Perşembesini seç"
+msgstr "Bir kareyi ve bir karenin beşte ikisini seç."
 
 #: activities/fractions_create/resource/2/Data.qml:62
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Select the fifth Thursday of the given month"
 msgctxt "Data|"
 msgid "Select one square and one-third of a square."
-msgstr "Ayın beşinci Perşembesini seç"
+msgstr "Bir kareyi ve bir karenin üçte birini seç."
 
 #: activities/fractions_create/resource/2/Data.qml:68
 #, fuzzy
@@ -9334,25 +9257,19 @@ msgid "Select one square and one half of a square."
 msgstr "Ayın beşinci Perşembesini seç"
 
 #: activities/fractions_create/resource/2/Data.qml:74
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Select the butterfly of the correct color."
 msgctxt "Data|"
 msgid "Select one square and three-quarters of a square."
-msgstr "Doğru renkteki kelebeği seç."
+msgstr "Bir kareyi ve bir karenin dörtte üçünü seç."
 
 #: activities/fractions_create/resource/3/Data.qml:9
 msgctxt "Data|"
 msgid "Non-simplified fractions with a pie."
-msgstr ""
+msgstr "Pasta ile basitleştirilmemiş kesirler."
 
 #: activities/fractions_create/resource/3/Data.qml:73
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Select the fifth Thursday of the given month"
 msgctxt "Data|"
 msgid "Select three-fifths of the pie."
-msgstr "Ayın beşinci Perşembesini seç"
+msgstr "Pastanın beşte üçünü seç."
 
 #: activities/fractions_create/resource/4/Data.qml:9
 #, fuzzy
@@ -9363,28 +9280,19 @@ msgid "Non-simplified fractions with a square."
 msgstr "Soruları% 100 doğrulukla cevapla."
 
 #: activities/fractions_create/resource/4/Data.qml:73
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Select the fifth Thursday of the given month"
 msgctxt "Data|"
 msgid "Select three-fifths of the square."
-msgstr "Ayın beşinci Perşembesini seç"
+msgstr "Karenin beşte üçünü seç."
 
 #: activities/fractions_create/resource/5/Data.qml:9
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Decimal number system."
 msgctxt "Data|"
 msgid "Decimal numbers with a pie."
-msgstr "Ondalık sayı sistemi."
+msgstr "Pasta ile ondalık sayılar."
 
 #: activities/fractions_create/resource/5/Data.qml:18
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 0.5 pie."
-msgstr "Seçildi"
+msgstr "Pastanın 0,5'ini seç."
 
 #: activities/fractions_create/resource/5/Data.qml:24
 #, fuzzy
@@ -9395,12 +9303,9 @@ msgid "Select 0.25 pie."
 msgstr "Seçildi"
 
 #: activities/fractions_create/resource/5/Data.qml:30
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 0.4 pie."
-msgstr "Seçildi"
+msgstr "Pastanın 0,4'ünü seç."
 
 #: activities/fractions_create/resource/5/Data.qml:36
 #, fuzzy
@@ -9411,12 +9316,9 @@ msgid "Select 0.75 pie."
 msgstr "Seçildi"
 
 #: activities/fractions_create/resource/5/Data.qml:42
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 0.8 pie."
-msgstr "Seçildi"
+msgstr "Pastanın 0,8'ini seç."
 
 #: activities/fractions_create/resource/5/Data.qml:50
 #, fuzzy
@@ -9452,85 +9354,55 @@ msgid "Select 1.75 pies."
 msgstr "Seçildi"
 
 #: activities/fractions_create/resource/6/Data.qml:9
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Decimal number system."
 msgctxt "Data|"
 msgid "Decimal numbers with a square."
-msgstr "Ondalık sayı sistemi."
+msgstr "Bir kare ile ondalık sayılar."
 
 #: activities/fractions_create/resource/6/Data.qml:18
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 0.5 square."
-msgstr "Seçildi"
+msgstr "Karenin 0,5'ini seç."
 
 #: activities/fractions_create/resource/6/Data.qml:24
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 0.25 square."
-msgstr "Seçildi"
+msgstr "Karenin 0,25'ini seç."
 
 #: activities/fractions_create/resource/6/Data.qml:30
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 0.4 square."
-msgstr "Seçildi"
+msgstr "Karenin 0,4'ünü seç."
 
 #: activities/fractions_create/resource/6/Data.qml:36
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 0.75 square."
-msgstr "Seçildi"
+msgstr "Karenin 0,75'ini seç."
 
 #: activities/fractions_create/resource/6/Data.qml:42
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 0.8 square."
-msgstr "Seçildi"
+msgstr "Karenin 0,8'ini seç."
 
 #: activities/fractions_create/resource/6/Data.qml:50
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 1.25 squares."
-msgstr "Seçildi"
+msgstr "1,25 kare seç."
 
 #: activities/fractions_create/resource/6/Data.qml:56
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 1.4 squares."
-msgstr "Seçildi"
+msgstr "1,4 kare seç."
 
 #: activities/fractions_create/resource/6/Data.qml:62
 #: activities/fractions_create/resource/6/Data.qml:68
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 1.5 squares."
-msgstr "Seçildi"
+msgstr "1,5 kare seç."
 
 #: activities/fractions_create/resource/6/Data.qml:74
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 1.75 squares."
-msgstr "Seçildi"
+msgstr "1,75 kare seç."
 
 #: activities/fractions_create/resource/7/Data.qml:9
 #, fuzzy
@@ -9549,12 +9421,10 @@ msgstr "Ondalık sayı sistemi."
 #: activities/fractions_create/resource/7/Data.qml:56
 #: activities/fractions_create/resource/7/Data.qml:63
 #: activities/fractions_create/resource/7/Data.qml:70
-#, fuzzy, qt-format
-#| msgctxt "calendar_dataset|"
-#| msgid "Select the 1st"
+#, qt-format
 msgctxt "Data|"
 msgid "Select %1% of the pie."
-msgstr "1. günü seç"
+msgstr "Pastanın %​%1 kadarını seç."
 
 #: activities/fractions_create/resource/8/Data.qml:9
 #, fuzzy
@@ -9571,12 +9441,10 @@ msgstr "Ondalık sayı sistemi."
 #: activities/fractions_create/resource/8/Data.qml:42
 #: activities/fractions_create/resource/8/Data.qml:49
 #: activities/fractions_create/resource/8/Data.qml:56
-#, fuzzy, qt-format
-#| msgctxt "calendar_dataset|"
-#| msgid "Select the 1st"
+#, qt-format
 msgctxt "Data|"
 msgid "Select %1% of the square."
-msgstr "1. günü seç"
+msgstr "Karenin %​%1 kadarını seç."
 
 #: activities/fractions_create/resource/9/Data.qml:9
 #, fuzzy
@@ -9591,57 +9459,39 @@ msgstr "Soruları% 100 doğrulukla cevapla."
 msgctxt "Data|"
 msgid ""
 "Select as many parts as you can without taking more than half of the pie."
-msgstr ""
+msgstr "Pastanın yarısından fazlasını almadan olabildiğince çok parça seç."
 
 #. Activity title
 #: activities/fractions_find/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "instruments|"
-#| msgid "Find the accordion"
 msgctxt "ActivityInfo|"
 msgid "Find the fractions"
-msgstr "Akordiyonu bul"
+msgstr "Kesirleri bul"
 
 #. Help title
 #: activities/fractions_find/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Find the correct date and select it on the calendar."
 msgctxt "ActivityInfo|"
 msgid "Find the correct numerator and denominator of the represented fraction."
-msgstr "Doğru tarihi bul ve takvimden seç."
+msgstr "Gösterilen kesrin doğru payını ve paydasını bul."
 
 #: activities/fractions_find/resource/1/Data.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Align four (with a friend)"
 msgctxt "Data|"
 msgid "Find numerator (with a pie)."
-msgstr "Dördü hizala (bir arkadaş ile)"
+msgstr "Payı bul (pasta ile)."
 
 #: activities/fractions_find/resource/2/Data.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Align four (with a friend)"
 msgctxt "Data|"
 msgid "Find numerator (with a square)."
-msgstr "Dördü hizala (bir arkadaş ile)"
+msgstr "Payı bul (kare ile)."
 
 #: activities/fractions_find/resource/3/Data.qml:9
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Nine men's morris (with a friend)"
 msgctxt "Data|"
 msgid "Find denominator (with a pie)."
-msgstr "Dokuz taş (bir arkadaşınla)"
+msgstr "Paydayı bul (pasta ile)."
 
 #: activities/fractions_find/resource/4/Data.qml:9
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Nine men's morris (with a friend)"
 msgctxt "Data|"
 msgid "Find denominator (with a square)."
-msgstr "Dokuz taş (bir arkadaşınla)"
+msgstr "Paydayı bul (kare ile)."
 
 #: activities/fractions_find/resource/5/Data.qml:9
 #, fuzzy
@@ -9652,12 +9502,9 @@ msgid "Find numerator and denominator (with a pie)."
 msgstr "Dokuz taş (bir arkadaşınla)"
 
 #: activities/fractions_find/resource/6/Data.qml:9
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Nine men's morris (with a friend)"
 msgctxt "Data|"
 msgid "Find numerator and denominator (with a square)."
-msgstr "Dokuz taş (bir arkadaşınla)"
+msgstr "Payı ve paydayı bul (kare ile)."
 
 #. Activity title
 #: activities/geo-country/ActivityInfo.qml:19
@@ -9710,85 +9557,70 @@ msgstr "Amerika Birleşik Devletleri"
 #: activities/geo-country/resource/board/board10_0.qml:24
 msgctxt "board10_0|"
 msgid "Washington"
-msgstr ""
+msgstr "Vaşington"
 
 #. State of America: Oregon
 #: activities/geo-country/resource/board/board10_0.qml:31
 msgctxt "board10_0|"
 msgid "Oregon"
-msgstr ""
+msgstr "Oregon"
 
 #. State of America: Idaho
 #: activities/geo-country/resource/board/board10_0.qml:38
 msgctxt "board10_0|"
 msgid "Idaho"
-msgstr ""
+msgstr "İdaho"
 
 #. State of America: Montana
 #: activities/geo-country/resource/board/board10_0.qml:45
 msgctxt "board10_0|"
 msgid "Montana"
-msgstr ""
+msgstr "Montana"
 
 #. State of America: North Dakota
 #: activities/geo-country/resource/board/board10_0.qml:52
-#, fuzzy
-#| msgctxt "board9_0|"
-#| msgid "North Korea"
 msgctxt "board10_0|"
 msgid "North Dakota"
-msgstr "Kuzey Kore"
+msgstr "Kuzey Dakota"
 
 #. State of America: South Dakota
 #: activities/geo-country/resource/board/board10_0.qml:59
-#, fuzzy
-#| msgctxt "board9_0|"
-#| msgid "South Korea"
 msgctxt "board10_0|"
 msgid "South Dakota"
-msgstr "Güney Kore"
+msgstr "Güney Dakota"
 
 #. State of America: Nebraska
 #: activities/geo-country/resource/board/board10_0.qml:66
 msgctxt "board10_0|"
 msgid "Nebraska"
-msgstr ""
+msgstr "Nebraska"
 
 #. State of America: Kansas
 #: activities/geo-country/resource/board/board10_0.qml:73
 msgctxt "board10_0|"
 msgid "Kansas"
-msgstr ""
+msgstr "Kansas"
 
 #. State of America: Colorado
 #: activities/geo-country/resource/board/board10_0.qml:80
-#, fuzzy
-#| msgctxt "category_colors|"
-#| msgid "Colors"
 msgctxt "board10_0|"
 msgid "Colorado"
-msgstr "Renkler"
+msgstr "Kolorado"
 
 #. State of America: New Mexico
 #: activities/geo-country/resource/board/board10_0.qml:87
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "Mexico"
 msgctxt "board10_0|"
 msgid "New Mexico"
-msgstr "Meksika"
+msgstr "Yeni Meksika"
 
 #. State of America: Arizona
 #: activities/geo-country/resource/board/board10_0.qml:94
 msgctxt "board10_0|"
 msgid "Arizona"
-msgstr ""
+msgstr "Arizona"
 
 #. State of America: Alaska
 #: activities/geo-country/resource/board/board10_0.qml:101
-#, fuzzy
-#| msgctxt "board2_0|"
-#| msgid "Alaska"
 msgctxt "board10_0|"
 msgid "Alaska"
 msgstr "Alaska"
@@ -9797,261 +9629,231 @@ msgstr "Alaska"
 #: activities/geo-country/resource/board/board10_0.qml:108
 msgctxt "board10_0|"
 msgid "Hawaii"
-msgstr "Hawaii"
+msgstr "Havai"
 
 #. State of America: Texas
 #: activities/geo-country/resource/board/board10_0.qml:115
 msgctxt "board10_0|"
 msgid "Texas"
-msgstr ""
+msgstr "Teksas"
 
 #. State of America: Oklahoma
 #: activities/geo-country/resource/board/board10_0.qml:122
 msgctxt "board10_0|"
 msgid "Oklahoma"
-msgstr ""
+msgstr "Oklahoma"
 
 #. State of America: Minnesota
 #: activities/geo-country/resource/board/board10_0.qml:129
 msgctxt "board10_0|"
 msgid "Minnesota"
-msgstr ""
+msgstr "Minnesota"
 
 #. State of America: Iowa
 #: activities/geo-country/resource/board/board10_0.qml:136
 msgctxt "board10_0|"
 msgid "Iowa"
-msgstr ""
+msgstr "İova"
 
 #. State of America: Missouri
 #: activities/geo-country/resource/board/board10_0.qml:143
 msgctxt "board10_0|"
 msgid "Missouri"
-msgstr ""
+msgstr "Missouri"
 
 #. State of America: Arkansas
 #: activities/geo-country/resource/board/board10_0.qml:150
 msgctxt "board10_0|"
 msgid "Arkansas"
-msgstr ""
+msgstr "Arkansas"
 
 #. State of America: Louisiana
 #: activities/geo-country/resource/board/board10_0.qml:157
-#, fuzzy
-#| msgctxt "board7_0|"
-#| msgid "Tunisia"
 msgctxt "board10_0|"
 msgid "Louisiana"
-msgstr "Tunus"
+msgstr "Louisiana"
 
 #. State of America: Mississippi
 #: activities/geo-country/resource/board/board10_0.qml:164
 msgctxt "board10_0|"
 msgid "Mississippi"
-msgstr ""
+msgstr "Mississippi"
 
 #. State of America: Tennessee
 #: activities/geo-country/resource/board/board10_0.qml:171
 msgctxt "board10_0|"
 msgid "Tennessee"
-msgstr ""
+msgstr "Tennessee"
 
 #. State of America: Kentucky
 #: activities/geo-country/resource/board/board10_0.qml:178
 msgctxt "board10_0|"
 msgid "Kentucky"
-msgstr ""
+msgstr "Kentucky"
 
 #. State of America: Indiana
 #: activities/geo-country/resource/board/board10_0.qml:185
-#, fuzzy
-#| msgctxt "board9_0|"
-#| msgid "India"
 msgctxt "board10_0|"
 msgid "Indiana"
-msgstr "Hindistan"
+msgstr "İndiana"
 
 #. State of America: Illinois
 #: activities/geo-country/resource/board/board10_0.qml:192
 msgctxt "board10_0|"
 msgid "Illinois"
-msgstr ""
+msgstr "İlinois"
 
 #. State of America: Wisconsin
 #: activities/geo-country/resource/board/board10_0.qml:199
 msgctxt "board10_0|"
 msgid "Wisconsin"
-msgstr ""
+msgstr "Wisconsin"
 
 #. State of America: Michigan
 #: activities/geo-country/resource/board/board10_0.qml:206
 msgctxt "board10_0|"
 msgid "Michigan"
-msgstr ""
+msgstr "Michigan"
 
 #. State of America: Ohio
 #: activities/geo-country/resource/board/board10_0.qml:213
 msgctxt "board10_0|"
 msgid "Ohio"
-msgstr ""
+msgstr "Ohio"
 
 #. State of America: West Virginia
 #: activities/geo-country/resource/board/board10_0.qml:220
 msgctxt "board10_0|"
 msgid "West Virginia"
-msgstr ""
+msgstr "Batı Virginia"
 
 #. State of America: Virginia
 #: activities/geo-country/resource/board/board10_0.qml:227
 msgctxt "board10_0|"
 msgid "Virginia"
-msgstr ""
+msgstr "Virginia"
 
 #. State of America: North Carolina
 #: activities/geo-country/resource/board/board10_0.qml:234
-#, fuzzy
-#| msgctxt "board2_0|"
-#| msgid "North America"
 msgctxt "board10_0|"
 msgid "North Carolina"
-msgstr "Kuzey Amerika"
+msgstr "Kuzey Karolina"
 
 #. State of America: South Carolina
 #: activities/geo-country/resource/board/board10_0.qml:241
-#, fuzzy
-#| msgctxt "board8_0|"
-#| msgid "South Africa"
 msgctxt "board10_0|"
 msgid "South Carolina"
-msgstr "Güney Africa"
+msgstr "Güney Karolina"
 
 #. State of America: Georgia
 #: activities/geo-country/resource/board/board10_0.qml:248
-#, fuzzy
-#| msgctxt "board9_0|"
-#| msgid "Asia|Georgia"
 msgctxt "board10_0|"
 msgid "Georgia"
-msgstr "Asya|Gürcistan"
+msgstr "Georgia"
 
 #. State of America: Florida
 #: activities/geo-country/resource/board/board10_0.qml:255
-#, fuzzy
-#| msgctxt "Calendar|"
-#| msgid "Friday"
 msgctxt "board10_0|"
 msgid "Florida"
-msgstr "Cuma"
+msgstr "Florida"
 
 #. State of America: Alabama
 #: activities/geo-country/resource/board/board10_0.qml:262
 msgctxt "board10_0|"
 msgid "Alabama"
-msgstr ""
+msgstr "Alabama"
 
 #. State of America: Maryland
 #: activities/geo-country/resource/board/board10_0.qml:269
-#, fuzzy
-#| msgctxt "board5_0|"
-#| msgid "Ireland"
 msgctxt "board10_0|"
 msgid "Maryland"
-msgstr "İrlanda"
+msgstr "Maryland"
 
 #. State of America: New Jersey
 #: activities/geo-country/resource/board/board10_0.qml:276
 msgctxt "board10_0|"
 msgid "New Jersey"
-msgstr ""
+msgstr "Yeni Jersey"
 
 #. State of America: Delaware
 #: activities/geo-country/resource/board/board10_0.qml:283
 msgctxt "board10_0|"
 msgid "Delaware"
-msgstr ""
+msgstr "Delaware"
 
 #. State of America: Pennsylvania
 #: activities/geo-country/resource/board/board10_0.qml:290
 msgctxt "board10_0|"
 msgid "Pennsylvania"
-msgstr ""
+msgstr "Pensilvanya"
 
 #. State of America: New York
 #: activities/geo-country/resource/board/board10_0.qml:297
 msgctxt "board10_0|"
 msgid "New York"
-msgstr ""
+msgstr "New York"
 
 #. State of America: Vermont
 #: activities/geo-country/resource/board/board10_0.qml:304
 msgctxt "board10_0|"
 msgid "Vermont"
-msgstr ""
+msgstr "Vermont"
 
 #. State of America: New Hampshire
 #: activities/geo-country/resource/board/board10_0.qml:311
 msgctxt "board10_0|"
 msgid "New Hampshire"
-msgstr ""
+msgstr "New Hampshire"
 
 #. State of America: Maine
 #: activities/geo-country/resource/board/board10_0.qml:318
-#, fuzzy
-#| msgctxt "board6_0|"
-#| msgid "Ukraine"
 msgctxt "board10_0|"
 msgid "Maine"
-msgstr "Ukrayna"
+msgstr "Maine"
 
 #. State of America: California
 #: activities/geo-country/resource/board/board10_0.qml:325
 msgctxt "board10_0|"
 msgid "California"
-msgstr ""
+msgstr "Kaliforniya"
 
 #. State of America: Nevada
 #: activities/geo-country/resource/board/board10_0.qml:332
 msgctxt "board10_0|"
 msgid "Nevada"
-msgstr ""
+msgstr "Nevada"
 
 #. State of America: Utah
 #: activities/geo-country/resource/board/board10_0.qml:339
 msgctxt "board10_0|"
 msgid "Utah"
-msgstr ""
+msgstr "Utah"
 
 #. State of America: Wyoming
 #: activities/geo-country/resource/board/board10_0.qml:346
 msgctxt "board10_0|"
 msgid "Wyoming"
-msgstr ""
+msgstr "Wyoming"
 
 #. State of America: Massachusetts
 #: activities/geo-country/resource/board/board10_0.qml:353
 msgctxt "board10_0|"
 msgid "Massachusetts"
-msgstr ""
+msgstr "Massachusetts"
 
 #. State of America: Rhode Island
 #: activities/geo-country/resource/board/board10_0.qml:360
-#, fuzzy
-#| msgctxt "board10_0|"
-#| msgid "Cook Islands"
 msgctxt "board10_0|"
 msgid "Rhode Island"
-msgstr "Cook Adaları"
+msgstr "Rhode Island"
 
 #. State of America: Connecticut
 #: activities/geo-country/resource/board/board10_0.qml:367
 msgctxt "board10_0|"
 msgid "Connecticut"
-msgstr ""
+msgstr "Connecticut"
 
 #: activities/geo-country/resource/board/board11_0.qml:15
-#, fuzzy
-#| msgctxt "board11_0|"
-#| msgid "Districts of Italy"
 msgctxt "board11_0|"
 msgid "Regions of Italy"
 msgstr "İtalya'nın Bölgeleri"
@@ -10060,246 +9862,228 @@ msgstr "İtalya'nın Bölgeleri"
 #: activities/geo-country/resource/board/board11_0.qml:24
 msgctxt "board11_0|"
 msgid "Liguria"
-msgstr ""
+msgstr "Liguria"
 
 #. Region of Italy: Piedmont
 #: activities/geo-country/resource/board/board11_0.qml:31
 msgctxt "board11_0|"
 msgid "Piedmont"
-msgstr ""
+msgstr "Piedmont"
 
 #. Region of Italy: Aosta Valley
 #: activities/geo-country/resource/board/board11_0.qml:38
 msgctxt "board11_0|"
 msgid "Aosta Valley"
-msgstr ""
+msgstr "Aosta Vadisi"
 
 #. Region of Italy: Lombardy
 #: activities/geo-country/resource/board/board11_0.qml:45
 msgctxt "board11_0|"
 msgid "Lombardy"
-msgstr ""
+msgstr "Lombardy"
 
 #. Region of Italy: Trentino-South Tyrol
 #: activities/geo-country/resource/board/board11_0.qml:52
 msgctxt "board11_0|"
 msgid "Trentino-South Tyrol"
-msgstr ""
+msgstr "Trentino-Güney Tirol"
 
 #. Region of Italy: Veneto
 #: activities/geo-country/resource/board/board11_0.qml:59
 msgctxt "board11_0|"
 msgid "Veneto"
-msgstr ""
+msgstr "Veneto"
 
 #. Region of Italy: Friuli Venezia Giulia
 #: activities/geo-country/resource/board/board11_0.qml:66
 msgctxt "board11_0|"
 msgid "Friuli Venezia Giulia"
-msgstr ""
+msgstr "Friuli Venedik Giulia"
 
 #. Region of Italy: Emilia-Romagna
 #: activities/geo-country/resource/board/board11_0.qml:73
 msgctxt "board11_0|"
 msgid "Emilia-Romagna"
-msgstr ""
+msgstr "Emilia-Romagna"
 
 #. Region of Italy: Tuscany
 #: activities/geo-country/resource/board/board11_0.qml:80
 msgctxt "board11_0|"
 msgid "Tuscany"
-msgstr ""
+msgstr "Tuscany"
 
 #. Region of Italy: Umbria
 #: activities/geo-country/resource/board/board11_0.qml:87
 msgctxt "board11_0|"
 msgid "Umbria"
-msgstr ""
+msgstr "Umbria"
 
 #. Region of Italy: Marche
 #: activities/geo-country/resource/board/board11_0.qml:94
-#, fuzzy
-#| msgctxt "GCCreationHandler|"
-#| msgid "Search"
 msgctxt "board11_0|"
 msgid "Marche"
-msgstr "Ara"
+msgstr "Marche"
 
 #. Region of Italy: Lazio
 #: activities/geo-country/resource/board/board11_0.qml:101
 msgctxt "board11_0|"
 msgid "Lazio"
-msgstr ""
+msgstr "Lazio"
 
 #. Region of Italy: Abruzzo
 #: activities/geo-country/resource/board/board11_0.qml:108
 msgctxt "board11_0|"
 msgid "Abruzzo"
-msgstr ""
+msgstr "Abruzzo"
 
 #. Region of Italy: Molise
 #: activities/geo-country/resource/board/board11_0.qml:115
 msgctxt "board11_0|"
 msgid "Molise"
-msgstr ""
+msgstr "Molise"
 
 #. Region of Italy: Campania
 #: activities/geo-country/resource/board/board11_0.qml:122
-#, fuzzy
-#| msgctxt "board6_0|"
-#| msgid "Romania"
 msgctxt "board11_0|"
 msgid "Campania"
-msgstr "Romanya"
+msgstr "Campania"
 
 #. Region of Italy: Apulia
 #: activities/geo-country/resource/board/board11_0.qml:129
 msgctxt "board11_0|"
 msgid "Apulia"
-msgstr ""
+msgstr "Apulia"
 
 #. Region of Italy: Basilicata
 #: activities/geo-country/resource/board/board11_0.qml:136
 msgctxt "board11_0|"
 msgid "Basilicata"
-msgstr ""
+msgstr "Basilicata"
 
 #. Region of Italy: Calabria
 #: activities/geo-country/resource/board/board11_0.qml:143
-#, fuzzy
-#| msgctxt "board5|"
-#| msgid "Cabrillo"
 msgctxt "board11_0|"
 msgid "Calabria"
-msgstr "Cabrillo"
+msgstr "Calabria"
 
 #. Region of Italy: Sicily
 #: activities/geo-country/resource/board/board11_0.qml:150
 msgctxt "board11_0|"
 msgid "Sicily"
-msgstr ""
+msgstr "Sicilya"
 
 #. Region of Italy: Sardinia
 #: activities/geo-country/resource/board/board11_0.qml:157
 msgctxt "board11_0|"
 msgid "Sardinia"
-msgstr ""
+msgstr "Sardinya"
 
 #: activities/geo-country/resource/board/board12_0.qml:15
-#, fuzzy
-#| msgctxt "board8_0|"
-#| msgid "Districts of Canada"
 msgctxt "board12_0|"
 msgid "States and Union Territories of India"
-msgstr "Kanada'nın Bölgeleri"
+msgstr "Hindistan'ın eyaletleri ve birlik bölgeleri"
 
 #. State of India: Himachal Pradesh
 #: activities/geo-country/resource/board/board12_0.qml:24
 msgctxt "board12_0|"
 msgid "Himachal Pradesh"
-msgstr ""
+msgstr "Himaçal Pradeş"
 
 #. State of India: Punjab
 #: activities/geo-country/resource/board/board12_0.qml:31
 msgctxt "board12_0|"
 msgid "Punjab"
-msgstr ""
+msgstr "Pencap"
 
 #. State of India: Uttarakhand
 #: activities/geo-country/resource/board/board12_0.qml:38
 msgctxt "board12_0|"
 msgid "Uttarakhand"
-msgstr ""
+msgstr "Uttarahand"
 
 #. State of India: Rajasthan
 #: activities/geo-country/resource/board/board12_0.qml:45
 msgctxt "board12_0|"
 msgid "Rajasthan"
-msgstr ""
+msgstr "Rajasthan"
 
 #. State of India: Uttar Pradesh
 #: activities/geo-country/resource/board/board12_0.qml:52
 msgctxt "board12_0|"
 msgid "Uttar Pradesh"
-msgstr ""
+msgstr "Uttar Pradeş"
 
 #. State of India: Bihar
 #: activities/geo-country/resource/board/board12_0.qml:59
 msgctxt "board12_0|"
 msgid "Bihar"
-msgstr ""
+msgstr "Bihar"
 
 #. State of India: Gujarat
 #: activities/geo-country/resource/board/board12_0.qml:66
 msgctxt "board12_0|"
 msgid "Gujarat"
-msgstr ""
+msgstr "Gücerat"
 
 #. State of India: Haryana
 #: activities/geo-country/resource/board/board12_0.qml:73
-#, fuzzy
-#| msgctxt "board4_0|"
-#| msgid "Guyana"
 msgctxt "board12_0|"
 msgid "Haryana"
-msgstr "Guyana"
+msgstr "Haryana"
 
 #. State of India: Madhya Pradesh
 #: activities/geo-country/resource/board/board12_0.qml:80
 msgctxt "board12_0|"
 msgid "Madhya Pradesh"
-msgstr ""
+msgstr "Madya Pradeş"
 
 #. State of India: Jharkhand
 #: activities/geo-country/resource/board/board12_0.qml:87
 msgctxt "board12_0|"
 msgid "Jharkhand"
-msgstr ""
+msgstr "Jharhand"
 
 #. State of India: Maharashtra
 #: activities/geo-country/resource/board/board12_0.qml:94
 msgctxt "board12_0|"
 msgid "Maharashtra"
-msgstr ""
+msgstr "Maharaştra"
 
 #. State of India: Chhattisgarh
 #: activities/geo-country/resource/board/board12_0.qml:101
 msgctxt "board12_0|"
 msgid "Chhattisgarh"
-msgstr ""
+msgstr "Çhattisgarh"
 
 #. State of India: Goa
 #: activities/geo-country/resource/board/board12_0.qml:108
-#, fuzzy
-#| msgctxt "DialogHelp|"
-#| msgid "Goal:"
 msgctxt "board12_0|"
 msgid "Goa"
-msgstr "Hedef:"
+msgstr "Goa"
 
 #. State of India: Karnataka
 #: activities/geo-country/resource/board/board12_0.qml:115
 msgctxt "board12_0|"
 msgid "Karnataka"
-msgstr ""
+msgstr "Karnataka"
 
 #. State of India: Telangana
 #: activities/geo-country/resource/board/board12_0.qml:122
 msgctxt "board12_0|"
 msgid "Telangana"
-msgstr ""
+msgstr "Telangana"
 
 #. State of India: Andhra Pradesh
 #: activities/geo-country/resource/board/board12_0.qml:130
 msgctxt "board12_0|"
 msgid "Andhra Pradesh"
-msgstr ""
+msgstr "Andhra Pradeş"
 
 #. State of India: Kerala
 #: activities/geo-country/resource/board/board12_0.qml:137
 msgctxt "board12_0|"
 msgid "Kerala"
-msgstr ""
+msgstr "Kerala"
 
 #. State of India: Tamil Nadu
 #: activities/geo-country/resource/board/board12_0.qml:144
@@ -10311,801 +10095,714 @@ msgstr "Tamil Nadu"
 #: activities/geo-country/resource/board/board12_0.qml:151
 msgctxt "board12_0|"
 msgid "West Bengal"
-msgstr ""
+msgstr "Batı Bengal"
 
 #. State of India: Sikkim
 #: activities/geo-country/resource/board/board12_0.qml:158
 msgctxt "board12_0|"
 msgid "Sikkim"
-msgstr ""
+msgstr "Sikkim"
 
 #. State of India: Assam
 #: activities/geo-country/resource/board/board12_0.qml:165
 msgctxt "board12_0|"
 msgid "Assam"
-msgstr ""
+msgstr "Assam"
 
 #. State of India: Arunachal Pradesh
 #: activities/geo-country/resource/board/board12_0.qml:172
 msgctxt "board12_0|"
 msgid "Arunachal Pradesh"
-msgstr ""
+msgstr "Arunaçal Pradeş"
 
 #. State of India: Nagaland
 #: activities/geo-country/resource/board/board12_0.qml:179
-#, fuzzy
-#| msgctxt "board10_0|"
-#| msgid "New Zealand"
 msgctxt "board12_0|"
 msgid "Nagaland"
-msgstr "Yeni Zelanda"
+msgstr "Nagaland"
 
 #. State of India: Odisha
 #: activities/geo-country/resource/board/board12_0.qml:186
 msgctxt "board12_0|"
 msgid "Odisha"
-msgstr ""
+msgstr "Odişa"
 
 #. State of India: Manipur
 #: activities/geo-country/resource/board/board12_0.qml:193
 msgctxt "board12_0|"
 msgid "Manipur"
-msgstr ""
+msgstr "Manipur"
 
 #. State of India: Mizoram
 #: activities/geo-country/resource/board/board12_0.qml:200
 msgctxt "board12_0|"
 msgid "Mizoram"
-msgstr ""
+msgstr "Mizoram"
 
 #. State of India: Tripura
 #: activities/geo-country/resource/board/board12_0.qml:207
 msgctxt "board12_0|"
 msgid "Tripura"
-msgstr ""
+msgstr "Tripura"
 
 #. State of India: Meghalaya
 #: activities/geo-country/resource/board/board12_0.qml:214
-#, fuzzy
-#| msgctxt "board9_0|"
-#| msgid "Malaysia"
 msgctxt "board12_0|"
 msgid "Meghalaya"
-msgstr "Malezya"
+msgstr "Meğalaya"
 
 #. Union Territory of India: Andaman and Nicobar Islands
 #: activities/geo-country/resource/board/board12_0.qml:221
 msgctxt "board12_0|"
 msgid "Andaman and Nicobar Islands"
-msgstr ""
+msgstr "Andaman ve Nicobar Adaları"
 
 #. Union Territory of India: Delhi
 #: activities/geo-country/resource/board/board12_0.qml:228
 msgctxt "board12_0|"
 msgid "Delhi"
-msgstr ""
+msgstr "Delhi"
 
 #. Union Territory of India: Chandigarh
 #: activities/geo-country/resource/board/board12_0.qml:235
 msgctxt "board12_0|"
 msgid "Chandigarh"
-msgstr ""
+msgstr "Çandgarh"
 
 #. Union Territory of India: Dadra and Nagar Haveli and Daman and Diu
 #: activities/geo-country/resource/board/board12_0.qml:243
 msgctxt "board12_0|"
 msgid "Dadra and Nagar Haveli and Daman and Diu"
-msgstr ""
+msgstr "Dadra ve Nagar Haveli ve Daman ve Diu"
 
 #. Union Territory of India: Ladakh
 #: activities/geo-country/resource/board/board12_0.qml:251
 msgctxt "board12_0|"
 msgid "Ladakh"
-msgstr ""
+msgstr "Ladah"
 
 #. Union Territory of India: Lakshadweep
 #: activities/geo-country/resource/board/board12_0.qml:258
-#, fuzzy
-#| msgctxt "board10_0|"
-#| msgid "Marshall Islands"
 msgctxt "board12_0|"
 msgid "Lakshadweep"
-msgstr "Marşal Adaları"
+msgstr "Lakşadvip"
 
 #. Union Territory of India: Jammu and Kashmir
 #: activities/geo-country/resource/board/board12_0.qml:265
 msgctxt "board12_0|"
 msgid "Jammu and Kashmir"
-msgstr ""
+msgstr "Cemmu ve Keşmir"
 
 #. Union Territory of India: Puducherry
 #: activities/geo-country/resource/board/board12_0.qml:272
 msgctxt "board12_0|"
 msgid "Puducherry"
-msgstr ""
+msgstr "Puduçeri"
 
 #: activities/geo-country/resource/board/board13_0.qml:15
-#, fuzzy
-#| msgctxt "board8_0|"
-#| msgid "Districts of Canada"
 msgctxt "board13_0|"
 msgid "States and Territories of Australia"
-msgstr "Kanada'nın Bölgeleri"
+msgstr "Avustralya'nın eyaletleri ve bölgeleri"
 
 #. State of Australia: Western Australia
 #: activities/geo-country/resource/board/board13_0.qml:24
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "Australia"
 msgctxt "board13_0|"
 msgid "Western Australia"
-msgstr "Avustralya"
+msgstr "Batı Avustralya"
 
 #. Territory of Australia: Northern Territory
 #: activities/geo-country/resource/board/board13_0.qml:31
-#, fuzzy
-#| msgctxt "board7_0|"
-#| msgid "Northern Africa"
 msgctxt "board13_0|"
 msgid "Northern Territory"
-msgstr "Kuzey Afrika"
+msgstr "Kuzey Bölgeleri"
 
 #. State of Australia: South Australia
 #: activities/geo-country/resource/board/board13_0.qml:38
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "Australia"
 msgctxt "board13_0|"
 msgid "South Australia"
-msgstr "Avustralya"
+msgstr "Güney Avustralya"
 
 #. State of Australia: Queensland
 #: activities/geo-country/resource/board/board13_0.qml:45
-#, fuzzy
-#| msgctxt "board2_0|"
-#| msgid "Greenland"
 msgctxt "board13_0|"
 msgid "Queensland"
-msgstr "Grönland"
+msgstr "Queensland"
 
 #. State of Australia: New South Wales
 #: activities/geo-country/resource/board/board13_0.qml:52
 msgctxt "board13_0|"
 msgid "New South Wales"
-msgstr ""
+msgstr "Yeni Güney Galler"
 
 #. State of Australia: Victoria
 #: activities/geo-country/resource/board/board13_0.qml:59
-#, fuzzy
-#| msgctxt "board2|"
-#| msgid "Victoria Memorial"
 msgctxt "board13_0|"
 msgid "Victoria"
-msgstr "Victoria Anıtı"
+msgstr "Viktoriya"
 
 #. State of Australia: Tasmania
 #: activities/geo-country/resource/board/board13_0.qml:66
-#, fuzzy
-#| msgctxt "board8_0|"
-#| msgid "Tanzania"
 msgctxt "board13_0|"
 msgid "Tasmania"
-msgstr "Tanzanya"
+msgstr "Tazmanya"
 
 #. Territory of Australia: Australian Capital Territory
 #: activities/geo-country/resource/board/board13_0.qml:73
 msgctxt "board13_0|"
 msgid "Australian Capital Territory"
-msgstr ""
+msgstr "Avustralya başkent bölgesi"
 
 #: activities/geo-country/resource/board/board14_0.qml:15
-#, fuzzy
-#| msgctxt "board3_0|"
-#| msgid "Districts of Argentina"
 msgctxt "board14_0|"
 msgid "Provinces of China"
-msgstr "Arjantin'in Bölgeleri"
+msgstr "Çin'in eyaletleri"
 
 #. Province of China: Xinjiang
 #: activities/geo-country/resource/board/board14_0.qml:24
 msgctxt "board14_0|"
 msgid "Xinjiang"
-msgstr ""
+msgstr "Sincan"
 
 #. Province of China: Gansu
 #: activities/geo-country/resource/board/board14_0.qml:31
 msgctxt "board14_0|"
 msgid "Gansu"
-msgstr ""
+msgstr "Gansu"
 
 #. Province of China: Inner Mongolia
 #: activities/geo-country/resource/board/board14_0.qml:38
-#, fuzzy
-#| msgctxt "board9_0|"
-#| msgid "Mongolia"
 msgctxt "board14_0|"
 msgid "Inner Mongolia"
-msgstr "Moğolistan"
+msgstr "İç Moğolistan"
 
 #. Province of China: Ningxia
 #: activities/geo-country/resource/board/board14_0.qml:45
 msgctxt "board14_0|"
 msgid "Ningxia"
-msgstr ""
+msgstr "Ningşia"
 
 #. Province of China: Heilongjiang
 #: activities/geo-country/resource/board/board14_0.qml:52
 msgctxt "board14_0|"
 msgid "Heilongjiang"
-msgstr ""
+msgstr "Heilongcang"
 
 #. Province of China: Jilin
 #: activities/geo-country/resource/board/board14_0.qml:59
 msgctxt "board14_0|"
 msgid "Jilin"
-msgstr ""
+msgstr "Cilin"
 
 #. Province of China: Liaoning
 #: activities/geo-country/resource/board/board14_0.qml:66
-#, fuzzy
-#| msgctxt "SolarSystem|"
-#| msgid "Learning"
 msgctxt "board14_0|"
 msgid "Liaoning"
-msgstr "Öğrenme"
+msgstr "Liaoning"
 
 #. Province of China: Tianjin
 #: activities/geo-country/resource/board/board14_0.qml:73
 msgctxt "board14_0|"
 msgid "Tianjin"
-msgstr ""
+msgstr "Tiencin"
 
 #. Province of China: Beijing
 #: activities/geo-country/resource/board/board14_0.qml:80
 msgctxt "board14_0|"
 msgid "Beijing"
-msgstr ""
+msgstr "Pekin"
 
 #. Province of China: Shandong
 #: activities/geo-country/resource/board/board14_0.qml:87
 msgctxt "board14_0|"
 msgid "Shandong"
-msgstr ""
+msgstr "Şandong"
 
 #. Province of China: Shanxi
 #: activities/geo-country/resource/board/board14_0.qml:94
 msgctxt "board14_0|"
 msgid "Shanxi"
-msgstr ""
+msgstr "Şanşi"
 
 #. Province of China: Shaanxi
 #: activities/geo-country/resource/board/board14_0.qml:101
 msgctxt "board14_0|"
 msgid "Shaanxi"
-msgstr ""
+msgstr "Şaanşi"
 
 #. Province of China: Qinghai
 #: activities/geo-country/resource/board/board14_0.qml:108
 msgctxt "board14_0|"
 msgid "Qinghai"
-msgstr ""
+msgstr "Çinghai"
 
 #. Province of China: Tibet
 #: activities/geo-country/resource/board/board14_0.qml:115
 msgctxt "board14_0|"
 msgid "Tibet"
-msgstr ""
+msgstr "Tibet"
 
 #. Province of China: Sichuan
 #: activities/geo-country/resource/board/board14_0.qml:122
-#, fuzzy
-#| msgctxt "board6_0|"
-#| msgid "Lithuania"
 msgctxt "board14_0|"
 msgid "Sichuan"
-msgstr "Litvanya"
+msgstr "Siçuan"
 
 #. Province of China: Chongqing
 #: activities/geo-country/resource/board/board14_0.qml:129
 msgctxt "board14_0|"
 msgid "Chongqing"
-msgstr ""
+msgstr "Çonçing"
 
 #. Province of China: Henan
 #: activities/geo-country/resource/board/board14_0.qml:136
 msgctxt "board14_0|"
 msgid "Henan"
-msgstr ""
+msgstr "Henan"
 
 #. Province of China: Jiangsu
 #: activities/geo-country/resource/board/board14_0.qml:143
 msgctxt "board14_0|"
 msgid "Jiangsu"
-msgstr ""
+msgstr "Ciangsu"
 
 #. Province of China: Anhui
 #: activities/geo-country/resource/board/board14_0.qml:150
 msgctxt "board14_0|"
 msgid "Anhui"
-msgstr ""
+msgstr "Anhui"
 
 #. Province of China: Hubei
 #: activities/geo-country/resource/board/board14_0.qml:157
 msgctxt "board14_0|"
 msgid "Hubei"
-msgstr ""
+msgstr "Hubei"
 
 #. Province of China: Shanghai
 #: activities/geo-country/resource/board/board14_0.qml:164
 msgctxt "board14_0|"
 msgid "Shanghai"
-msgstr ""
+msgstr "Şanghay"
 
 #. Province of China: Zhejiang
 #: activities/geo-country/resource/board/board14_0.qml:171
 msgctxt "board14_0|"
 msgid "Zhejiang"
-msgstr ""
+msgstr "Jıcieng"
 
 #. Province of China: Fujian
 #: activities/geo-country/resource/board/board14_0.qml:178
 msgctxt "board14_0|"
 msgid "Fujian"
-msgstr ""
+msgstr "Fucien"
 
 #. Province of China: Jiangxi
 #: activities/geo-country/resource/board/board14_0.qml:185
 msgctxt "board14_0|"
 msgid "Jiangxi"
-msgstr ""
+msgstr "Ciengşi"
 
 #. Province of China: Hunan
 #: activities/geo-country/resource/board/board14_0.qml:192
 msgctxt "board14_0|"
 msgid "Hunan"
-msgstr ""
+msgstr "Hunan"
 
 #. Province of China: Guizhou
 #: activities/geo-country/resource/board/board14_0.qml:199
 msgctxt "board14_0|"
 msgid "Guizhou"
-msgstr ""
+msgstr "Guiju"
 
 #. Province of China: Yunnan
 #: activities/geo-country/resource/board/board14_0.qml:206
 msgctxt "board14_0|"
 msgid "Yunnan"
-msgstr ""
+msgstr "Yunnan"
 
 #. Province of China: Guangxi
 #: activities/geo-country/resource/board/board14_0.qml:213
 msgctxt "board14_0|"
 msgid "Guangxi"
-msgstr ""
+msgstr "Guangşi"
 
 #. Province of China: Guangdong
 #: activities/geo-country/resource/board/board14_0.qml:220
 msgctxt "board14_0|"
 msgid "Guangdong"
-msgstr ""
+msgstr "Guangdong"
 
 #. Province of China: Hainan
 #: activities/geo-country/resource/board/board14_0.qml:227
 msgctxt "board14_0|"
 msgid "Hainan"
-msgstr ""
+msgstr "Hainan"
 
 #. Province of China: Hebei
 #: activities/geo-country/resource/board/board14_0.qml:234
 msgctxt "board14_0|"
 msgid "Hebei"
-msgstr ""
+msgstr "Hebei"
 
 #: activities/geo-country/resource/board/board15_0.qml:16
 msgctxt "board15_0|"
 msgid "Council areas of Scotland (North)"
-msgstr ""
+msgstr "İskoçya'nın konsey alanları (kuzey)"
 
 #. Council area of Scotland: Aberdeenshire
 #: activities/geo-country/resource/board/board15_0.qml:25
 msgctxt "board15_0|"
 msgid "Aberdeenshire"
-msgstr ""
+msgstr "Aberdeenshire"
 
 #. Council area of Scotland: Aberdeen
 #: activities/geo-country/resource/board/board15_0.qml:32
 msgctxt "board15_0|"
 msgid "Aberdeen"
-msgstr ""
+msgstr "Aberdeen"
 
 #. Council area of Scotland: Moray
 #: activities/geo-country/resource/board/board15_0.qml:39
 msgctxt "board15_0|"
 msgid "Moray"
-msgstr ""
+msgstr "Moray"
 
 #. Council area of Scotland: Na h-Eileanan Siar
 #: activities/geo-country/resource/board/board15_0.qml:46
 msgctxt "board15_0|"
 msgid "Na h-Eileanan Siar"
-msgstr ""
+msgstr "Na h-Eileanan Siar"
 
 #. Council area of Scotland: Orkney Islands
 #: activities/geo-country/resource/board/board15_0.qml:53
-#, fuzzy
-#| msgctxt "board10_0|"
-#| msgid "Cook Islands"
 msgctxt "board15_0|"
 msgid "Orkney Islands"
-msgstr "Cook Adaları"
+msgstr "Orkney Adaları"
 
 #. Council area of Scotland: Shetland Islands
 #: activities/geo-country/resource/board/board15_0.qml:60
-#, fuzzy
-#| msgctxt "board10_0|"
-#| msgid "Solomon Islands"
 msgctxt "board15_0|"
 msgid "Shetland Islands"
-msgstr "Solomon Adaları"
+msgstr "Shetland Adaları"
 
 #. Council area of Scotland: Highland
 #: activities/geo-country/resource/board/board15_0.qml:67
-#, fuzzy
-#| msgctxt "board5_0|"
-#| msgid "Finland"
 msgctxt "board15_0|"
 msgid "Highland"
-msgstr "Finlandiya"
+msgstr "Highland"
 
 #: activities/geo-country/resource/board/board15_1.qml:15
 msgctxt "board15_1|"
 msgid "Council areas of Scotland (South)"
-msgstr ""
+msgstr "İskoçya'nın konsey alanları (güney)"
 
 #. Council area of Scotland: Angus
 #: activities/geo-country/resource/board/board15_1.qml:24
 msgctxt "board15_1|"
 msgid "Angus"
-msgstr ""
+msgstr "Angus"
 
 #. Council area of Scotland: Dundee
 #: activities/geo-country/resource/board/board15_1.qml:31
 msgctxt "board15_1|"
 msgid "Dundee"
-msgstr ""
+msgstr "Dundee"
 
 #. Council area of Scotland: Perth and Kinross
 #: activities/geo-country/resource/board/board15_1.qml:38
 msgctxt "board15_1|"
 msgid "Perth and Kinross"
-msgstr ""
+msgstr "Perth ve Kinross"
 
 #. Council area of Scotland: Stirling
 #: activities/geo-country/resource/board/board15_1.qml:45
 msgctxt "board15_1|"
 msgid "Stirling"
-msgstr ""
+msgstr "Stirling"
 
 #. Council area of Scotland: Argyll and Bute
 #: activities/geo-country/resource/board/board15_1.qml:52
 msgctxt "board15_1|"
 msgid "Argyll and Bute"
-msgstr ""
+msgstr "Argyll ve Bute"
 
 #. Council area of Scotland: Fife
 #: activities/geo-country/resource/board/board15_1.qml:59
 msgctxt "board15_1|"
 msgid "Fife"
-msgstr ""
+msgstr "Fife"
 
 #. Council areas of Scotland: Scottish Borders
 #: activities/geo-country/resource/board/board15_1.qml:66
 msgctxt "board15_1|"
 msgid "Scottish Borders"
-msgstr ""
+msgstr "İskoçya Sınırları"
 
 #. Council areas of Scotland: East Lothian
 #: activities/geo-country/resource/board/board15_1.qml:73
 msgctxt "board15_1|"
 msgid "East Lothian"
-msgstr ""
+msgstr "Doğu Lothian"
 
 #. Council areas of Scotland: Midlothian
 #: activities/geo-country/resource/board/board15_1.qml:80
 msgctxt "board15_1|"
 msgid "Midlothian"
-msgstr ""
+msgstr "Orta Lothian"
 
 #. Council areas of Scotland: West Lothian
 #: activities/geo-country/resource/board/board15_1.qml:87
 msgctxt "board15_1|"
 msgid "West Lothian"
-msgstr ""
+msgstr "Batı Lothian"
 
 #. Council areas of Scotland: Edinburgh
 #: activities/geo-country/resource/board/board15_1.qml:94
 msgctxt "board15_1|"
 msgid "Edinburgh"
-msgstr ""
+msgstr "Edinburgh"
 
 #. Council areas of Scotland: Falkirk
 #: activities/geo-country/resource/board/board15_1.qml:101
 msgctxt "board15_1|"
 msgid "Falkirk"
-msgstr ""
+msgstr "Falkirk"
 
 #. Council areas of Scotland: South Lanarkshire
 #: activities/geo-country/resource/board/board15_1.qml:108
 msgctxt "board15_1|"
 msgid "South Lanarkshire"
-msgstr ""
+msgstr "Güney Lanarkshire"
 
 #. Council areas of Scotland: North Lanarkshire
 #: activities/geo-country/resource/board/board15_1.qml:115
 msgctxt "board15_1|"
 msgid "North Lanarkshire"
-msgstr ""
+msgstr "Kuzey Lanarkshire"
 
 #. Council areas of Scotland: Dumfries and Galloway
 #: activities/geo-country/resource/board/board15_1.qml:122
 msgctxt "board15_1|"
 msgid "Dumfries and Galloway"
-msgstr ""
+msgstr "Kuzey Lanarkshire"
 
 #. Council areas of Scotland: South Ayrshire
 #: activities/geo-country/resource/board/board15_1.qml:129
-#, fuzzy
-#| msgctxt "board8_0|"
-#| msgid "South Africa"
 msgctxt "board15_1|"
 msgid "South Ayrshire"
-msgstr "Güney Africa"
+msgstr "Güney Ayrshire"
 
 #. Council areas of Scotland: East Ayrshire
 #: activities/geo-country/resource/board/board15_1.qml:136
-#, fuzzy
-#| msgctxt "board10_0|"
-#| msgid "East Timor"
 msgctxt "board15_1|"
 msgid "East Ayrshire"
-msgstr "Doğu Timor"
+msgstr "Doğu Ayrshire"
 
 #. Council areas of Scotland: Glasgow
 #: activities/geo-country/resource/board/board15_1.qml:143
 msgctxt "board15_1|"
 msgid "Glasgow"
-msgstr ""
+msgstr "Glasgow"
 
 #. Council areas of Scotland: East Dunbartonshire
 #: activities/geo-country/resource/board/board15_1.qml:150
 msgctxt "board15_1|"
 msgid "East Dunbartonshire"
-msgstr ""
+msgstr "Doğu Dunbartonshire"
 
 #. Council areas of Scotland: West Dunbartonshire
 #: activities/geo-country/resource/board/board15_1.qml:157
 msgctxt "board15_1|"
 msgid "West Dunbartonshire"
-msgstr ""
+msgstr "Batı Dunbartonshire"
 
 #. Council areas of Scotland: East Renfrewshire
 #: activities/geo-country/resource/board/board15_1.qml:164
 msgctxt "board15_1|"
 msgid "East Renfrewshire"
-msgstr ""
+msgstr "Doğu Renfrewshire"
 
 #. Council areas of Scotland: Renfrewshire
 #: activities/geo-country/resource/board/board15_1.qml:171
 msgctxt "board15_1|"
 msgid "Renfrewshire"
-msgstr ""
+msgstr "Renfrewshire"
 
 #. Council areas of Scotland: Inverclyde
 #: activities/geo-country/resource/board/board15_1.qml:178
 msgctxt "board15_1|"
 msgid "Inverclyde"
-msgstr ""
+msgstr "Inverclyde"
 
 #. Council areas of Scotland: North Ayrshire
 #: activities/geo-country/resource/board/board15_1.qml:185
-#, fuzzy
-#| msgctxt "board2_0|"
-#| msgid "North America"
 msgctxt "board15_1|"
 msgid "North Ayrshire"
-msgstr "Kuzey Amerika"
+msgstr "Kuzey Ayrshire"
 
 #. Council areas of Scotland: Clackmannanshire
 #: activities/geo-country/resource/board/board15_1.qml:192
 msgctxt "board15_1|"
 msgid "Clackmannanshire"
-msgstr ""
+msgstr "Clackmannanshire"
 
 #: activities/geo-country/resource/board/board16_0.qml:15
-#, fuzzy
-#| msgctxt "board16_0|"
-#| msgid "Historical provinces of Romania"
 msgctxt "board16_0|"
 msgid "Historical regions of Romania"
-msgstr "Romanya'nın Tarihi Şehirleri"
+msgstr "Romanya'nın tarihi bölgeleri"
 
 #. Historical Region of Romania: Oltenia
 #: activities/geo-country/resource/board/board16_0.qml:24
-#, fuzzy
-#| msgctxt "board6_0|"
-#| msgid "Slovenia"
 msgctxt "board16_0|"
 msgid "Oltenia"
-msgstr "Slovenya"
+msgstr "Oltenia"
 
 #. Historical Region of Romania: Muntenia
 #: activities/geo-country/resource/board/board16_0.qml:31
 msgctxt "board16_0|"
 msgid "Muntenia"
-msgstr ""
+msgstr "Muntenia"
 
 #. Historical Region of Romania: Northern Dobruja
 #: activities/geo-country/resource/board/board16_0.qml:38
-#, fuzzy
-#| msgctxt "board7_0|"
-#| msgid "Northern Africa"
 msgctxt "board16_0|"
 msgid "Northern Dobruja"
-msgstr "Kuzey Afrika"
+msgstr "Kuzey Dobruca"
 
 #. Historical Region of Romania: Moldavia
 #: activities/geo-country/resource/board/board16_0.qml:45
-#, fuzzy
-#| msgctxt "board6_0|"
-#| msgid "Moldova"
 msgctxt "board16_0|"
 msgid "Moldavia"
-msgstr "Moldovya"
+msgstr "Moldavya"
 
 #. Historical Region of Romania: Bukovina
 #: activities/geo-country/resource/board/board16_0.qml:52
 msgctxt "board16_0|"
 msgid "Bukovina"
-msgstr ""
+msgstr "Bukovina"
 
 #. Historical Region of Romania: Transylvania
 #: activities/geo-country/resource/board/board16_0.qml:59
-#, fuzzy
-#| msgctxt "board8_0|"
-#| msgid "Tanzania"
 msgctxt "board16_0|"
 msgid "Transylvania"
-msgstr "Tanzanya"
+msgstr "Transilvanya"
 
 #. Historical Region of Romania: Maramureș
 #: activities/geo-country/resource/board/board16_0.qml:66
 msgctxt "board16_0|"
 msgid "Maramureș"
-msgstr ""
+msgstr "Maramures"
 
 #. Historical Region of Romania: Crișana
 #: activities/geo-country/resource/board/board16_0.qml:73
 msgctxt "board16_0|"
 msgid "Crișana"
-msgstr ""
+msgstr "Krişana"
 
 #. Historical Region of Romania: Banat
 #: activities/geo-country/resource/board/board16_0.qml:80
 msgctxt "board16_0|"
 msgid "Banat"
-msgstr ""
+msgstr "Banat"
 
 #: activities/geo-country/resource/board/board17_0.qml:15
 msgctxt "board17_0|"
 msgid "Cultural regions of Lithuania"
-msgstr ""
+msgstr "Litvanya'nın kültürel bölgeleri"
 
 #. Cultural region of Lithuania: Aukštaitija
 #: activities/geo-country/resource/board/board17_0.qml:24
 msgctxt "board17_0|"
 msgid "Aukštaitija"
-msgstr ""
+msgstr "Aukštaitija"
 
 #. Cultural region of Lithuania: Dzūkija
 #: activities/geo-country/resource/board/board17_0.qml:31
 msgctxt "board17_0|"
 msgid "Dzūkija"
-msgstr ""
+msgstr "Dzūkija"
 
 #. Cultural region of Lithuania: Lithuania Minor
 #: activities/geo-country/resource/board/board17_0.qml:38
-#, fuzzy
-#| msgctxt "board6_0|"
-#| msgid "Lithuania"
 msgctxt "board17_0|"
 msgid "Lithuania Minor"
-msgstr "Litvanya"
+msgstr "Küçük Litvanya"
 
 #. Cultural region of Lithuania: Samogitia
 #: activities/geo-country/resource/board/board17_0.qml:45
 msgctxt "board17_0|"
 msgid "Samogitia"
-msgstr ""
+msgstr "Samogitia"
 
 #. Cultural region of Lithuania: Suvalkija
 #: activities/geo-country/resource/board/board17_0.qml:52
 msgctxt "board17_0|"
 msgid "Suvalkija"
-msgstr ""
+msgstr "Suvalkija"
 
 #: activities/geo-country/resource/board/board18_0.qml:13
 msgctxt "board18_0|"
 msgid "Autonomous communities or cities of Spain"
-msgstr ""
+msgstr "İspanya'nın özerk toplulukları veya şehirleri"
 
 #. Autonomous communities of Spain: Andalusia
 #: activities/geo-country/resource/board/board18_0.qml:22
 msgctxt "board18_0|"
 msgid "Andalusia"
-msgstr ""
+msgstr "Endülüs"
 
 #. Autonomous communities of Spain: Madrid
 #: activities/geo-country/resource/board/board18_0.qml:29
 msgctxt "board18_0|"
 msgid "Madrid"
-msgstr ""
+msgstr "Madrid"
 
 #. Autonomous communities of Spain: Galicia
 #: activities/geo-country/resource/board/board18_0.qml:36
 msgctxt "board18_0|"
 msgid "Galicia"
-msgstr ""
+msgstr "Galiçya"
 
 #. Autonomous communities of Spain: Castile and León
 #: activities/geo-country/resource/board/board18_0.qml:43
 msgctxt "board18_0|"
 msgid "Castile and León"
-msgstr ""
+msgstr "Kastilya ve Leon"
 
 #. Autonomous communities of Spain: Castilla-La Mancha
 #: activities/geo-country/resource/board/board18_0.qml:50
 msgctxt "board18_0|"
 msgid "Castilla-La Mancha"
-msgstr ""
+msgstr "Kastilya La Mancha"
 
 #. Autonomous communities of Spain: Catalonia
 #: activities/geo-country/resource/board/board18_0.qml:57
-#, fuzzy
-#| msgctxt "board7_0|"
-#| msgid "Mauritania"
 msgctxt "board18_0|"
 msgid "Catalonia"
-msgstr "Moritanya"
+msgstr "Katalonya"
 
 #. Autonomous communities of Spain: Aragon
 #: activities/geo-country/resource/board/board18_0.qml:64
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Hexagon"
 msgctxt "board18_0|"
 msgid "Aragon"
-msgstr "Altıgen"
+msgstr "Aragon"
 
 #. Autonomous communities of Spain: Valencia
 #: activities/geo-country/resource/board/board18_0.qml:71
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Calendar"
 msgctxt "board18_0|"
 msgid "Valencia"
-msgstr "Takvim"
+msgstr "Valensiya"
 
 #. Autonomous communities of Spain: Murcia
 #: activities/geo-country/resource/board/board18_0.qml:78
 msgctxt "board18_0|"
 msgid "Murcia"
-msgstr ""
+msgstr "Murcia"
 
 #. Autonomous communities of Spain: Asturias
 #: activities/geo-country/resource/board/board18_0.qml:85
 msgctxt "board18_0|"
 msgid "Asturias"
-msgstr ""
+msgstr "Asturias"
 
 #. Autonomous communities of Spain: Basque Country
 #: activities/geo-country/resource/board/board18_0.qml:92
@@ -11117,284 +10814,233 @@ msgstr ""
 #: activities/geo-country/resource/board/board18_0.qml:99
 msgctxt "board18_0|"
 msgid "La Rioja"
-msgstr ""
+msgstr "La Rioja"
 
 #. Autonomous communities of Spain: Cantabria
 #: activities/geo-country/resource/board/board18_0.qml:106
-#, fuzzy
-#| msgctxt "board5|"
-#| msgid "Cabrillo"
 msgctxt "board18_0|"
 msgid "Cantabria"
-msgstr "Cabrillo"
+msgstr "Kantabria"
 
 #. Autonomous communities of Spain: Navarre
 #: activities/geo-country/resource/board/board18_0.qml:113
-#, fuzzy
-#| msgctxt "board5|"
-#| msgid "Navajo"
 msgctxt "board18_0|"
 msgid "Navarre"
-msgstr "Navajo"
+msgstr "Navarre"
 
 #. Autonomous communities of Spain: Extremadura
 #: activities/geo-country/resource/board/board18_0.qml:120
 msgctxt "board18_0|"
 msgid "Extremadura"
-msgstr ""
+msgstr "Ekstremadura"
 
 #. Autonomous communities of Spain: Canary Islands
 #: activities/geo-country/resource/board/board18_0.qml:127
-#, fuzzy
-#| msgctxt "board10_0|"
-#| msgid "Marshall Islands"
 msgctxt "board18_0|"
 msgid "Canary Islands"
-msgstr "Marşal Adaları"
+msgstr "Kanarya Adaları"
 
 #. Autonomous communities of Spain: Balearic Islands
 #: activities/geo-country/resource/board/board18_0.qml:134
-#, fuzzy
-#| msgctxt "board10_0|"
-#| msgid "Marshall Islands"
 msgctxt "board18_0|"
 msgid "Balearic Islands"
-msgstr "Marşal Adaları"
+msgstr "Balear Adaları"
 
 #. Autonomous communities of Spain: Ceuta
 #: activities/geo-country/resource/board/board18_0.qml:141
 msgctxt "board18_0|"
 msgid "Ceuta"
-msgstr ""
+msgstr "Septe"
 
 #. Autonomous communities of Spain: Melilla
 #: activities/geo-country/resource/board/board18_0.qml:148
 msgctxt "board18_0|"
 msgid "Melilla"
-msgstr ""
+msgstr "Melilla"
 
 #: activities/geo-country/resource/board/board1_0.qml:15
-#, fuzzy
-#| msgctxt "board3|"
-#| msgid "Monuments of France"
 msgctxt "board1_0|"
 msgid "Regions of France"
-msgstr "Fransa'nın Anıtları"
+msgstr "Fransa'nın bölgeleri"
 
 #. Region of France: Corsica
 #: activities/geo-country/resource/board/board1_0.qml:27
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "Horse"
 msgctxt "board1_0|"
 msgid "Corsica"
-msgstr "At"
+msgstr "Korsika"
 
 #. Region of France: Nouvelle-Aquitaine
 #: activities/geo-country/resource/board/board1_0.qml:35
 msgctxt "board1_0|"
 msgid "Nouvelle-Aquitaine"
-msgstr ""
+msgstr "Nouvelle-Aquitaine"
 
 #. Region of France: Occitanie
 #: activities/geo-country/resource/board/board1_0.qml:43
 msgctxt "board1_0|"
 msgid "Occitanie"
-msgstr "Oksitanya"
+msgstr "Occitanie"
 
 #. Region of France: Provence-Alpes-Côte d'Azur
 #: activities/geo-country/resource/board/board1_0.qml:51
 msgctxt "board1_0|"
 msgid "Provence-Alpes-Côte d'Azur"
-msgstr ""
+msgstr "Provence-Alpes-Côte d'Azur"
 
 #. Region of France: Auvergne-Rhône-Alpes
 #: activities/geo-country/resource/board/board1_0.qml:59
 msgctxt "board1_0|"
 msgid "Auvergne-Rhône-Alpes"
-msgstr ""
+msgstr "Auvergne-Rhône-Alpes"
 
 #. Region of France: Centre-Val de Loire
 #: activities/geo-country/resource/board/board1_0.qml:67
 msgctxt "board1_0|"
 msgid "Centre-Val de Loire"
-msgstr ""
+msgstr "Merkez"
 
 #. Region of France: Pays de la Loire
 #: activities/geo-country/resource/board/board1_0.qml:75
 msgctxt "board1_0|"
 msgid "Pays de la Loire"
-msgstr ""
+msgstr "Pays de la Loire"
 
 #. Region of France: Île-de-France
 #: activities/geo-country/resource/board/board1_0.qml:83
 msgctxt "board1_0|"
 msgid "Île-de-France"
-msgstr ""
+msgstr "Île-de-France"
 
 #. Region of France: Brittany
 #: activities/geo-country/resource/board/board1_0.qml:91
-#, fuzzy
-#| msgctxt "melodies|"
-#| msgid "Britain"
 msgctxt "board1_0|"
 msgid "Brittany"
-msgstr "Britanya"
+msgstr "Bretonya"
 
 #. Region of France: Normandy
 #: activities/geo-country/resource/board/board1_0.qml:99
-#, fuzzy
-#| msgctxt "SolarSystem|"
-#| msgid "Normal"
 msgctxt "board1_0|"
 msgid "Normandy"
-msgstr "Normal"
+msgstr "Normandiya"
 
 #. Region of France: Hauts de France
 #: activities/geo-country/resource/board/board1_0.qml:107
-#, fuzzy
-#| msgctxt "board3|"
-#| msgid "Monuments of France"
 msgctxt "board1_0|"
 msgid "Hauts de France"
-msgstr "Fransa'nın Anıtları"
+msgstr "Hauts de France"
 
 #. Region of France: Grand est
 #: activities/geo-country/resource/board/board1_0.qml:115
-#, fuzzy
-#| msgctxt "FamilyDataset|"
-#| msgid "Grandson"
 msgctxt "board1_0|"
 msgid "Grand est"
-msgstr "Erkek Torun"
+msgstr "Grand Est"
 
 #. Region of France: Bourgogne-Franche-Comté
 #: activities/geo-country/resource/board/board1_0.qml:123
 msgctxt "board1_0|"
 msgid "Bourgogne-Franche-Comté"
-msgstr ""
+msgstr "Bourgogne-Franche-Comté"
 
 #: activities/geo-country/resource/board/board2_0.qml:15
-#, fuzzy
-#| msgctxt "board2_0|"
-#| msgid "Districts of Germany"
 msgctxt "board2_0|"
 msgid "States of Germany"
-msgstr "Almanya'nın Bölgeleri"
+msgstr "Almanya'nın eyaletleri"
 
 #. State of Germany: Thuringia
 #: activities/geo-country/resource/board/board2_0.qml:24
 msgctxt "board2_0|"
 msgid "Thuringia"
-msgstr ""
+msgstr "Thuringia"
 
 #. State of Germany: Schleswig-Holstein
 #: activities/geo-country/resource/board/board2_0.qml:31
 msgctxt "board2_0|"
 msgid "Schleswig-Holstein"
-msgstr ""
+msgstr "Schleswig-Holstein"
 
 #. State of Germany: Saxony
 #: activities/geo-country/resource/board/board2_0.qml:38
 msgctxt "board2_0|"
 msgid "Saxony"
-msgstr ""
+msgstr "Saksonya"
 
 #. State of Germany: Saxony-Anhalt
 #: activities/geo-country/resource/board/board2_0.qml:45
 msgctxt "board2_0|"
 msgid "Saxony-Anhalt"
-msgstr ""
+msgstr "Saksonya-Anhalt"
 
 #. State of Germany: Saarland
 #: activities/geo-country/resource/board/board2_0.qml:52
-#, fuzzy
-#| msgctxt "board8_0|"
-#| msgid "Swaziland"
 msgctxt "board2_0|"
 msgid "Saarland"
-msgstr "Svaziland"
+msgstr "Saarland"
 
 #. State of Germany: Rhineland-Palatinate
 #: activities/geo-country/resource/board/board2_0.qml:59
-#, fuzzy
-#| msgctxt "board4|"
-#| msgid "Aula Palatina"
 msgctxt "board2_0|"
 msgid "Rhineland-Palatinate"
-msgstr "Aula Palatina"
+msgstr "Rhineland-Palatinate"
 
 #. State of Germany: North Rhine-Westphalia
 #: activities/geo-country/resource/board/board2_0.qml:66
 msgctxt "board2_0|"
 msgid "North Rhine-Westphalia"
-msgstr ""
+msgstr "Kuzey Rhine-Westphalia"
 
 #. State of Germany: Lower Saxony
 #: activities/geo-country/resource/board/board2_0.qml:73
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Lower Case"
 msgctxt "board2_0|"
 msgid "Lower Saxony"
-msgstr "Küçük Harf"
+msgstr "Aşağı Saksonya"
 
 #. State of Germany: Mecklenburg-Vorpommern
 #: activities/geo-country/resource/board/board2_0.qml:80
 msgctxt "board2_0|"
 msgid "Mecklenburg-Vorpommern"
-msgstr ""
+msgstr "Mecklenburg-Vorpommern"
 
 #. State of Germany: Hesse
 #: activities/geo-country/resource/board/board2_0.qml:87
 msgctxt "board2_0|"
 msgid "Hesse"
-msgstr ""
+msgstr "Hesse"
 
 #. State of Germany: Hamburg
 #: activities/geo-country/resource/board/board2_0.qml:94
 msgctxt "board2_0|"
 msgid "Hamburg"
-msgstr ""
+msgstr "Hamburg"
 
 #. State of Germany: Bremen
 #: activities/geo-country/resource/board/board2_0.qml:101
-#, fuzzy
-#| msgctxt "board9_0|"
-#| msgid "Yemen"
 msgctxt "board2_0|"
 msgid "Bremen"
-msgstr "Yemen"
+msgstr "Bremen"
 
 #. State of Germany: Brandenburg
 #: activities/geo-country/resource/board/board2_0.qml:108
-#, fuzzy
-#| msgctxt "board4|"
-#| msgid "Brandenburg Gate"
 msgctxt "board2_0|"
 msgid "Brandenburg"
-msgstr "Brandenburg Kapısı"
+msgstr "Brandenburg"
 
 #. State of Germany: Berlin
 #: activities/geo-country/resource/board/board2_0.qml:115
 msgctxt "board2_0|"
 msgid "Berlin"
-msgstr ""
+msgstr "Berlin"
 
 #. State of Germany: Bavaria
 #: activities/geo-country/resource/board/board2_0.qml:122
-#, fuzzy
-#| msgctxt "board6_0|"
-#| msgid "Bulgaria"
 msgctxt "board2_0|"
 msgid "Bavaria"
-msgstr "Bulgaristan"
+msgstr "Bavarya"
 
 #. State of Germany: Baden-Württemberg
 #: activities/geo-country/resource/board/board2_0.qml:129
 msgctxt "board2_0|"
 msgid "Baden-Württemberg"
-msgstr ""
+msgstr "Baden-Württemberg"
 
 #: activities/geo-country/resource/board/board3_0.qml:15
 #, fuzzy
@@ -16596,8 +16242,8 @@ msgid ""
 "the lights. If you click on Tux, the solution is shown."
 msgstr ""
 "Bir pencereye tıklamanın etkisi, o pencerenin ve ona yakın dikey ve yatay "
-"komşularının ışık durumunu değiştirmektir. Tüm ışıkları kapatmalısın. Tux'a "
-"(penguen) tıklarsan, sana ipucu verecektir."
+"komşularının ışık durumunu açıp kapatmaktır. Tüm ışıkları kapatmalısın. "
+"Tux'a tıklarsan sana ipucu verecektir."
 
 #: activities/lightsoff/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
@@ -18128,7 +17774,7 @@ msgstr ""
 "Her kart, çevirdiğinde bir ses çalar ve her kartın tam olarak aynı sese "
 "sahip bir ikizi vardır. Gizli sesini duymak için bir karta tıkla ve ikizleri "
 "eşleştirmeye çalış. Aynı anda yalnızca iki kart çevirebilirsin, bu nedenle "
-"ikizini ararken bir sesin nerede olduğunu hatırlaman gerekir. İkizleri ters "
+"ikizini ararken bir sesin nerede olduğunu anımsaman gerekir. İkizleri ters "
 "çevirdiğinde ikisi de kaybolur."
 
 #. Activity title
@@ -18176,7 +17822,7 @@ msgstr ""
 "Her kartın gizli tarafında bir resim vardır ve her kartın tam olarak aynı "
 "resme sahip bir ikizi vardır. Gizli resmini görmek için bir karta tıkla ve "
 "ikizleri eşleştirmeye çalış. Aynı anda yalnızca iki kart çevirebilirsin, bu "
-"nedenle ikizini ararken bir resmin nerede olduğunu hatırlaman gerekir. "
+"nedenle ikizini ararken bir resmin nerede olduğunu anımsaman gerekir. "
 "İkizleri ters çevirdiğinde, ikisi de kaybolur."
 
 #. Activity title
@@ -18493,28 +18139,19 @@ msgid "<b>Keyboard shortcuts:</b>"
 msgstr "<b> Klavye kısayolları: </b>"
 
 #: activities/menu/ActivityInfo.qml:39
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Ctrl+B Show or Hide the control bar"
 msgctxt "ActivityInfo|"
 msgid "Ctrl+B: Show or Hide the control bar"
-msgstr "Ctrl + B Kontrol çubuğunu Göster veya Gizle"
+msgstr "Ctrl + B: Kontrol çubuğunu göster veya gizle"
 
 #: activities/menu/ActivityInfo.qml:40
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Ctrl+F Toggle full screen"
 msgctxt "ActivityInfo|"
 msgid "Ctrl+F: Toggle full screen"
-msgstr "Ctrl + F Tam ekranı değiştir"
+msgstr "Ctrl + F; Tam ekranı aç/kapat"
 
 #: activities/menu/ActivityInfo.qml:41
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Ctrl+S Toggle the activity section bar"
 msgctxt "ActivityInfo|"
 msgid "Ctrl+S: Toggle the activity section bar"
-msgstr "Ctrl + S Etkinlik bölümü çubuğunu değiştir"
+msgstr "Ctrl + S: Etkinlik bölümü çubuğunu aç/kapat"
 
 #: activities/menu/BackgroundMusicList.qml:55
 msgctxt "BackgroundMusicList|"
@@ -18530,7 +18167,7 @@ msgstr "Çalmak istemiyorsanız arka plan müziğini devre dışı bırakın."
 #: activities/menu/BackgroundMusicList.qml:157
 msgctxt "BackgroundMusicList|"
 msgid "Now Playing:"
-msgstr "Şimdi oynuyor:"
+msgstr "Şimdi Çalınıyor:"
 
 #. Title of the current background music playing
 #: activities/menu/BackgroundMusicList.qml:166
@@ -18613,7 +18250,7 @@ msgstr "Arka plan müziği"
 #: activities/menu/ConfigurationItem.qml:169
 msgctxt "ConfigurationItem|"
 msgid "Not playing"
-msgstr "Oynatılamıyor"
+msgstr "Çalmıyor"
 
 #: activities/menu/ConfigurationItem.qml:171
 #, qt-format
@@ -18634,7 +18271,7 @@ msgstr "Arka plan müziği sesi"
 #: activities/menu/ConfigurationItem.qml:214
 msgctxt "ConfigurationItem|"
 msgid "Fullscreen"
-msgstr "Tam Ekran"
+msgstr "Tam ekran"
 
 #: activities/menu/ConfigurationItem.qml:224
 msgctxt "ConfigurationItem|"
@@ -19699,7 +19336,7 @@ msgid ""
 msgstr ""
 "Tek veya çift numaralı bulutları doğru sıra ile yakala. Helikopteri hareket "
 "ettirmek için klavye ile ok tuşlarını kullan. Hedef konuma tıklaman veya "
-"dokunman yeterlidir. Hangi numarayı yakalaman gerektiğini hatırlamaya çalış "
+"dokunman yeterlidir. Hangi numarayı yakalaman gerektiğini anımsamaya çalış "
 "ya da öğrenmek için sağ alt köşedeki numarayı kontrol edebilirsin."
 
 #: activities/numbers-odd-even/NumbersOddEven.qml:36
@@ -21346,7 +20983,7 @@ msgstr ""
 "Bulutları artan sırayla yakala. Bir klavye ile helikopteri hareket ettirmek "
 "için ok düğmelerini kullan. Bir işaretleme aygıtı ile hedef konuma tıklaman "
 "veya dokunman yeterlidir. Hangi numarayı yakalaman gerektiğini öğrenmek için "
-"ya hatırlamayı deneyebilir ya da sağ alt köşedeki numarayı denetleyebilirsin."
+"ya anımsamayı deneyebilir ya da sağ alt köşedeki numarayı denetleyebilirsin."
 
 #: activities/play_piano/ActivityConfig.qml:35
 msgctxt "ActivityConfig|"
