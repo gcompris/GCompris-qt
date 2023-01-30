@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2023-01-28 23:11+0300\n"
+"PO-Revision-Date: 2023-01-29 20:55+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -10153,7 +10153,7 @@ msgstr "Avustralya başkent bölgesi"
 #: activities/geo-country/resource/board/board14_0.qml:15
 msgctxt "board14_0|"
 msgid "Provinces of China"
-msgstr "Çin'in eyaletleri"
+msgstr "Çin'in bölgeleri"
 
 #. Province of China: Xinjiang
 #: activities/geo-country/resource/board/board14_0.qml:24
@@ -10941,1349 +10941,1268 @@ msgid "Baden-Württemberg"
 msgstr "Baden-Württemberg"
 
 #: activities/geo-country/resource/board/board3_0.qml:15
-#, fuzzy
-#| msgctxt "board3_0|"
-#| msgid "Districts of Argentina"
 msgctxt "board3_0|"
 msgid "Provinces of Argentina"
-msgstr "Arjantin'in Bölgeleri"
+msgstr "Arjantin'in bölgeleri"
 
 #. Province of Argentina: Tucumán
 #: activities/geo-country/resource/board/board3_0.qml:24
 msgctxt "board3_0|"
 msgid "Tucumán"
-msgstr ""
+msgstr "Tucumán"
 
 #. Province of Argentina: Tierra del Fuego
 #: activities/geo-country/resource/board/board3_0.qml:31
 msgctxt "board3_0|"
 msgid "Tierra del Fuego"
-msgstr ""
+msgstr "Tierra del Fuego"
 
 #. Province of Argentina: Santiago del Estero
 #: activities/geo-country/resource/board/board3_0.qml:38
 msgctxt "board3_0|"
 msgid "Santiago del Estero"
-msgstr ""
+msgstr "Santiago del Estero"
 
 #. Province of Argentina: Santa Fe
 #: activities/geo-country/resource/board/board3_0.qml:45
 msgctxt "board3_0|"
 msgid "Santa Fe"
-msgstr ""
+msgstr "Santa Fe"
 
 #. Province of Argentina: Santa Cruz
 #: activities/geo-country/resource/board/board3_0.qml:52
 msgctxt "board3_0|"
 msgid "Santa Cruz"
-msgstr ""
+msgstr "Santa Cruz"
 
 #. Province of Argentina: San Luis
 #: activities/geo-country/resource/board/board3_0.qml:59
 msgctxt "board3_0|"
 msgid "San Luis"
-msgstr ""
+msgstr "San Luis"
 
 #. Province of Argentina: San Juan
 #: activities/geo-country/resource/board/board3_0.qml:66
 msgctxt "board3_0|"
 msgid "San Juan"
-msgstr ""
+msgstr "San Juan"
 
 #. Province of Argentina: Salta
 #: activities/geo-country/resource/board/board3_0.qml:73
 msgctxt "board3_0|"
 msgid "Salta"
-msgstr ""
+msgstr "Salta"
 
 #. Province of Argentina: Río Negro
 #: activities/geo-country/resource/board/board3_0.qml:80
 msgctxt "board3_0|"
 msgid "Río Negro"
-msgstr ""
+msgstr "Río Negro"
 
 #. Province of Argentina: Neuquén
 #: activities/geo-country/resource/board/board3_0.qml:87
 msgctxt "board3_0|"
 msgid "Neuquén"
-msgstr ""
+msgstr "Neuquén"
 
 #. Province of Argentina: Misiones
 #: activities/geo-country/resource/board/board3_0.qml:94
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Divisions"
 msgctxt "board3_0|"
 msgid "Misiones"
-msgstr "Bölme"
+msgstr "Misiones"
 
 #. Province of Argentina: Mendoza
 #: activities/geo-country/resource/board/board3_0.qml:101
 msgctxt "board3_0|"
 msgid "Mendoza"
-msgstr ""
+msgstr "Mendoza"
 
 #. Province of Argentina: La Rioja
 #: activities/geo-country/resource/board/board3_0.qml:108
 msgctxt "board3_0|"
 msgid "La Rioja"
-msgstr ""
+msgstr "La Rioja"
 
 #. Province of Argentina: La Pampa
 #: activities/geo-country/resource/board/board3_0.qml:115
 msgctxt "board3_0|"
 msgid "La Pampa"
-msgstr ""
+msgstr "La Pampa"
 
 #. Province of Argentina: Jujuy
 #: activities/geo-country/resource/board/board3_0.qml:122
 msgctxt "board3_0|"
 msgid "Jujuy"
-msgstr ""
+msgstr "Jujuy"
 
 #. Province of Argentina: Formosa
 #: activities/geo-country/resource/board/board3_0.qml:129
 msgctxt "board3_0|"
 msgid "Formosa"
-msgstr ""
+msgstr "Formosa"
 
 #. Province of Argentina: Entre Rios
 #: activities/geo-country/resource/board/board3_0.qml:136
 msgctxt "board3_0|"
 msgid "Entre Rios"
-msgstr ""
+msgstr "Entre Rios"
 
 #. Province of Argentina: Corrientes
 #: activities/geo-country/resource/board/board3_0.qml:143
 msgctxt "board3_0|"
 msgid "Corrientes"
-msgstr ""
+msgstr "Corrientes"
 
 #. Province of Argentina: Córdoba
 #: activities/geo-country/resource/board/board3_0.qml:150
 msgctxt "board3_0|"
 msgid "Córdoba"
-msgstr ""
+msgstr "Córdoba"
 
 #. Province of Argentina: Chubut
 #: activities/geo-country/resource/board/board3_0.qml:157
 msgctxt "board3_0|"
 msgid "Chubut"
-msgstr ""
+msgstr "Chubut"
 
 #. Province of Argentina: Chaco
 #: activities/geo-country/resource/board/board3_0.qml:164
 msgctxt "board3_0|"
 msgid "Chaco"
-msgstr ""
+msgstr "Chaco"
 
 #. Province of Argentina: Catamarca
 #: activities/geo-country/resource/board/board3_0.qml:171
 msgctxt "board3_0|"
 msgid "Catamarca"
-msgstr ""
+msgstr "Catamarca"
 
 #. Province of Argentina: Buenos Aires
 #: activities/geo-country/resource/board/board3_0.qml:186
 msgctxt "board3_0|"
 msgid "Buenos Aires"
-msgstr ""
+msgstr "Buenos Aires"
 
 #: activities/geo-country/resource/board/board4_0.qml:15
-#, fuzzy
-#| msgctxt "board3_0|"
-#| msgid "Districts of Argentina"
 msgctxt "board4_0|"
 msgid "Provinces of Poland"
-msgstr "Arjantin'in Bölgeleri"
+msgstr "Polonya'nın bölgeleri"
 
 #. Province of Poland: Lower Silesian
 #: activities/geo-country/resource/board/board4_0.qml:24
-#, fuzzy
-#| msgctxt "board7_0|"
-#| msgid "Tunisia"
 msgctxt "board4_0|"
 msgid "Lower Silesian"
-msgstr "Tunus"
+msgstr "Aşağı Silesian"
 
 #. Province of Poland: West Pomeranian
 #: activities/geo-country/resource/board/board4_0.qml:31
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "Australia"
 msgctxt "board4_0|"
 msgid "West Pomeranian"
-msgstr "Avustralya"
+msgstr "Batı Pomeranian"
 
 #. Province of Poland: Greater Poland
 #: activities/geo-country/resource/board/board4_0.qml:38
-#, fuzzy
-#| msgctxt "board2_0|"
-#| msgid "Greenland"
 msgctxt "board4_0|"
 msgid "Greater Poland"
-msgstr "Grönland"
+msgstr "Büyük Polonya"
 
 #. Province of Poland: Warmian-Masurian
 #: activities/geo-country/resource/board/board4_0.qml:45
 msgctxt "board4_0|"
 msgid "Warmian-Masurian"
-msgstr ""
+msgstr "Warmian-Masurian"
 
 #. Province of Poland: Holy Cross
 #: activities/geo-country/resource/board/board4_0.qml:52
 msgctxt "board4_0|"
 msgid "Holy Cross"
-msgstr ""
+msgstr "Holy Cross"
 
 #. Province of Poland: Silesian
 #: activities/geo-country/resource/board/board4_0.qml:59
 msgctxt "board4_0|"
 msgid "Silesian"
-msgstr ""
+msgstr "Silesian"
 
 #. Province of Poland: Pomeranian
 #: activities/geo-country/resource/board/board4_0.qml:66
-#, fuzzy
-#| msgctxt "board6_0|"
-#| msgid "Romania"
 msgctxt "board4_0|"
 msgid "Pomeranian"
-msgstr "Romanya"
+msgstr "Pomeranian"
 
 #. Province of Poland: Podlaskie
 #: activities/geo-country/resource/board/board4_0.qml:73
 msgctxt "board4_0|"
 msgid "Podlaskie"
-msgstr ""
+msgstr "Podlaskie"
 
 #. Province of Poland: Subcarpathian
 #: activities/geo-country/resource/board/board4_0.qml:80
 msgctxt "board4_0|"
 msgid "Subcarpathian"
-msgstr ""
+msgstr "Aşağı Karpatya"
 
 #. Province of Poland: Opole
 #: activities/geo-country/resource/board/board4_0.qml:87
 msgctxt "board4_0|"
 msgid "Opole"
-msgstr ""
+msgstr "Opole"
 
 #. Province of Poland: Masovian
 #: activities/geo-country/resource/board/board4_0.qml:94
 msgctxt "board4_0|"
 msgid "Masovian"
-msgstr ""
+msgstr "Masovian"
 
 #. Province of Poland: Lesser Poland
 #: activities/geo-country/resource/board/board4_0.qml:101
-#, fuzzy
-#| msgctxt "board6_0|"
-#| msgid "Poland"
 msgctxt "board4_0|"
 msgid "Lesser Poland"
-msgstr "Polanya"
+msgstr "Küçük Polonya"
 
 #. Province of Poland: Łódź
 #: activities/geo-country/resource/board/board4_0.qml:108
 msgctxt "board4_0|"
 msgid "Łódź"
-msgstr ""
+msgstr "Łódź"
 
 #. Province of Poland: Lubusz
 #: activities/geo-country/resource/board/board4_0.qml:115
 msgctxt "board4_0|"
 msgid "Lubusz"
-msgstr ""
+msgstr "Lubusz"
 
 #. Province of Poland: Lublin
 #: activities/geo-country/resource/board/board4_0.qml:122
 msgctxt "board4_0|"
 msgid "Lublin"
-msgstr ""
+msgstr "Lublin"
 
 #. Province of Poland: Kuyavian-Pomeranian
 #: activities/geo-country/resource/board/board4_0.qml:129
 msgctxt "board4_0|"
 msgid "Kuyavian-Pomeranian"
-msgstr ""
+msgstr "Kuyavian-Pomeranian"
 
 #: activities/geo-country/resource/board/board5_0.qml:16
-#, fuzzy
-#| msgctxt "board5_1|"
-#| msgid "Eastern Districts of Turkey"
 msgctxt "board5_0|"
 msgid "Western Provinces of Turkey"
-msgstr "Türkiye'nin Doğu Bölgeleri"
+msgstr "Türkiye'nin batı bölgeleri"
 
 #. Province of Turkey: Zonguldak
 #: activities/geo-country/resource/board/board5_0.qml:25
 msgctxt "board5_0|"
 msgid "Zonguldak"
-msgstr ""
+msgstr "Zonguldak"
 
 #. Province of Turkey: Yozgat
 #: activities/geo-country/resource/board/board5_0.qml:32
 msgctxt "board5_0|"
 msgid "Yozgat"
-msgstr ""
+msgstr "Yozgat"
 
 #. Province of Turkey: Yalova
 #: activities/geo-country/resource/board/board5_0.qml:39
 msgctxt "board5_0|"
 msgid "Yalova"
-msgstr ""
+msgstr "Yalova"
 
 #. Province of Turkey: Uşak
 #: activities/geo-country/resource/board/board5_0.qml:46
 msgctxt "board5_0|"
 msgid "Uşak"
-msgstr ""
+msgstr "Uşak"
 
 #. Province of Turkey: Tekirdağ
 #: activities/geo-country/resource/board/board5_0.qml:53
 msgctxt "board5_0|"
 msgid "Tekirdağ"
-msgstr ""
+msgstr "Tekirdağ"
 
 #. Province of Turkey: Sinop
 #: activities/geo-country/resource/board/board5_0.qml:60
 msgctxt "board5_0|"
 msgid "Sinop"
-msgstr ""
+msgstr "Sinop"
 
 #. Province of Turkey: Samsun
 #: activities/geo-country/resource/board/board5_0.qml:67
 msgctxt "board5_0|"
 msgid "Samsun"
-msgstr ""
+msgstr "Samsun"
 
 #. Province of Turkey: Sakarya
 #: activities/geo-country/resource/board/board5_0.qml:74
 msgctxt "board5_0|"
 msgid "Sakarya"
-msgstr ""
+msgstr "Sakarya"
 
 #. Province of Turkey: Niğde
 #: activities/geo-country/resource/board/board5_0.qml:81
 msgctxt "board5_0|"
 msgid "Niğde"
-msgstr ""
+msgstr "Niğde"
 
 #. Province of Turkey: Nevşehir
 #: activities/geo-country/resource/board/board5_0.qml:88
 msgctxt "board5_0|"
 msgid "Nevşehir"
-msgstr ""
+msgstr "Nevşehir"
 
 #. Province of Turkey: Muğla
 #: activities/geo-country/resource/board/board5_0.qml:95
 msgctxt "board5_0|"
 msgid "Muğla"
-msgstr ""
+msgstr "Muğla"
 
 #. Province of Turkey: Mersin
 #: activities/geo-country/resource/board/board5_0.qml:102
 msgctxt "board5_0|"
 msgid "Mersin"
-msgstr ""
+msgstr "Mersin"
 
 #. Province of Turkey: Manisa
 #: activities/geo-country/resource/board/board5_0.qml:109
 msgctxt "board5_0|"
 msgid "Manisa"
-msgstr ""
+msgstr "Manisa"
 
 #. Province of Turkey: Kütahya
 #: activities/geo-country/resource/board/board5_0.qml:116
 msgctxt "board5_0|"
 msgid "Kütahya"
-msgstr ""
+msgstr "Kütahya"
 
 #. Province of Turkey: Konya
 #: activities/geo-country/resource/board/board5_0.qml:123
 msgctxt "board5_0|"
 msgid "Konya"
-msgstr ""
+msgstr "Konya"
 
 #. Province of Turkey: Kocaeli
 #: activities/geo-country/resource/board/board5_0.qml:130
 msgctxt "board5_0|"
 msgid "Kocaeli"
-msgstr ""
+msgstr "Kocaeli"
 
 #. Province of Turkey: Kirsehir
 #: activities/geo-country/resource/board/board5_0.qml:137
 msgctxt "board5_0|"
 msgid "Kirsehir"
-msgstr ""
+msgstr "Kırşehir"
 
 #. Province of Turkey: Kırklareli
 #: activities/geo-country/resource/board/board5_0.qml:144
 msgctxt "board5_0|"
 msgid "Kırklareli"
-msgstr ""
+msgstr "Kırklareli"
 
 #. Province of Turkey: Kırıkkale
 #: activities/geo-country/resource/board/board5_0.qml:151
 msgctxt "board5_0|"
 msgid "Kırıkkale"
-msgstr ""
+msgstr "Kırıkkale"
 
 #. Province of Turkey: Kayseri
 #: activities/geo-country/resource/board/board5_0.qml:158
 msgctxt "board5_0|"
 msgid "Kayseri"
-msgstr ""
+msgstr "Kayseri"
 
 #. Province of Turkey: Kastamonu
 #: activities/geo-country/resource/board/board5_0.qml:165
 msgctxt "board5_0|"
 msgid "Kastamonu"
-msgstr ""
+msgstr "Kastamonu"
 
 #. Province of Turkey: Karaman
 #: activities/geo-country/resource/board/board5_0.qml:172
 msgctxt "board5_0|"
 msgid "Karaman"
-msgstr ""
+msgstr "Karaman"
 
 #. Province of Turkey: Karabük
 #: activities/geo-country/resource/board/board5_0.qml:179
 msgctxt "board5_0|"
 msgid "Karabük"
-msgstr ""
+msgstr "Karabük"
 
 #. Province of Turkey: İzmir
 #: activities/geo-country/resource/board/board5_0.qml:186
 msgctxt "board5_0|"
 msgid "İzmir"
-msgstr ""
+msgstr "İzmir"
 
 #. Province of Turkey: İstanbul
 #: activities/geo-country/resource/board/board5_0.qml:193
 msgctxt "board5_0|"
 msgid "İstanbul"
-msgstr ""
+msgstr "İstanbul"
 
 #. Province of Turkey: Isparta
 #: activities/geo-country/resource/board/board5_0.qml:200
 msgctxt "board5_0|"
 msgid "Isparta"
-msgstr ""
+msgstr "Isparta"
 
 #. Province of Turkey: Eskişehir
 #: activities/geo-country/resource/board/board5_0.qml:207
 msgctxt "board5_0|"
 msgid "Eskişehir"
-msgstr ""
+msgstr "Eskişehir"
 
 #. Province of Turkey: Edirne
 #: activities/geo-country/resource/board/board5_0.qml:214
 msgctxt "board5_0|"
 msgid "Edirne"
-msgstr ""
+msgstr "Edirne"
 
 #. Province of Turkey: Düzce
 #: activities/geo-country/resource/board/board5_0.qml:221
 msgctxt "board5_0|"
 msgid "Düzce"
-msgstr ""
+msgstr "Düzce"
 
 #. Province of Turkey: Denizli
 #: activities/geo-country/resource/board/board5_0.qml:228
 msgctxt "board5_0|"
 msgid "Denizli"
-msgstr ""
+msgstr "Denizli"
 
 #. Province of Turkey: Çorum
 #: activities/geo-country/resource/board/board5_0.qml:235
 msgctxt "board5_0|"
 msgid "Çorum"
-msgstr ""
+msgstr "Çorum"
 
 #. Province of Turkey: Çankırı
 #: activities/geo-country/resource/board/board5_0.qml:242
 msgctxt "board5_0|"
 msgid "Çankırı"
-msgstr ""
+msgstr "Çankırı"
 
 #. Province of Turkey: Çanakkale
 #: activities/geo-country/resource/board/board5_0.qml:249
 msgctxt "board5_0|"
 msgid "Çanakkale"
-msgstr ""
+msgstr "Çanakkale"
 
 #. Province of Turkey: Bursa
 #: activities/geo-country/resource/board/board5_0.qml:256
 msgctxt "board5_0|"
 msgid "Bursa"
-msgstr ""
+msgstr "Bursa"
 
 #. Province of Turkey: Burdur
 #: activities/geo-country/resource/board/board5_0.qml:263
 msgctxt "board5_0|"
 msgid "Burdur"
-msgstr ""
+msgstr "Burdur"
 
 #. Province of Turkey: Bolu
 #: activities/geo-country/resource/board/board5_0.qml:270
 msgctxt "board5_0|"
 msgid "Bolu"
-msgstr ""
+msgstr "Bolu"
 
 #. Province of Turkey: Bilecik
 #: activities/geo-country/resource/board/board5_0.qml:277
 msgctxt "board5_0|"
 msgid "Bilecik"
-msgstr ""
+msgstr "Bilecik"
 
 #. Province of Turkey: Bartın
 #: activities/geo-country/resource/board/board5_0.qml:284
 msgctxt "board5_0|"
 msgid "Bartın"
-msgstr ""
+msgstr "Bartın"
 
 #. Province of Turkey: Balıkesir
 #: activities/geo-country/resource/board/board5_0.qml:291
 msgctxt "board5_0|"
 msgid "Balıkesir"
-msgstr ""
+msgstr "Balıkesir"
 
 #. Province of Turkey: Aydın
 #: activities/geo-country/resource/board/board5_0.qml:298
 msgctxt "board5_0|"
 msgid "Aydın"
-msgstr ""
+msgstr "Aydın"
 
 #. Province of Turkey: Antalya
 #: activities/geo-country/resource/board/board5_0.qml:305
-#, fuzzy
-#| msgctxt "board5_0|"
-#| msgid "Italy"
 msgctxt "board5_0|"
 msgid "Antalya"
-msgstr "İtalya"
+msgstr "Antalya"
 
 #. Province of Turkey: Ankara
 #: activities/geo-country/resource/board/board5_0.qml:312
 msgctxt "board5_0|"
 msgid "Ankara"
-msgstr ""
+msgstr "Ankara"
 
 #. Province of Turkey: Amasya
 #: activities/geo-country/resource/board/board5_0.qml:319
 msgctxt "board5_0|"
 msgid "Amasya"
-msgstr ""
+msgstr "Amasya"
 
 #. Province of Turkey: Aksaray
 #: activities/geo-country/resource/board/board5_0.qml:326
 msgctxt "board5_0|"
 msgid "Aksaray"
-msgstr ""
+msgstr "Aksaray"
 
 #. Province of Turkey: Afyon
 #: activities/geo-country/resource/board/board5_0.qml:333
 msgctxt "board5_0|"
 msgid "Afyon"
-msgstr ""
+msgstr "Afyon"
 
 #. Province of Turkey: Adana
 #: activities/geo-country/resource/board/board5_0.qml:340
 msgctxt "board5_0|"
 msgid "Adana"
-msgstr ""
+msgstr "Adana"
 
 #: activities/geo-country/resource/board/board5_1.qml:15
-#, fuzzy
-#| msgctxt "board5_1|"
-#| msgid "Eastern Districts of Turkey"
 msgctxt "board5_1|"
 msgid "Eastern Provinces of Turkey"
-msgstr "Türkiye'nin Doğu Bölgeleri"
+msgstr "Türkiye'nin doğu bölgeleri"
 
 #. Province of Turkey: Van
 #: activities/geo-country/resource/board/board5_1.qml:24
-#, fuzzy
-#| msgctxt "Warning|"
-#| msgid "and"
 msgctxt "board5_1|"
 msgid "Van"
-msgstr "ve"
+msgstr "Van"
 
 #. Province of Turkey: Tunceli
 #: activities/geo-country/resource/board/board5_1.qml:31
-#, fuzzy
-#| msgctxt "DialogChooseLevel|"
-#| msgid "Cancel"
 msgctxt "board5_1|"
 msgid "Tunceli"
-msgstr "İptal"
+msgstr "Tunceli"
 
 #. Province of Turkey: Trabzon
 #: activities/geo-country/resource/board/board5_1.qml:38
 msgctxt "board5_1|"
 msgid "Trabzon"
-msgstr ""
+msgstr "Trabzon"
 
 #. Province of Turkey: Tokat
 #: activities/geo-country/resource/board/board5_1.qml:45
 msgctxt "board5_1|"
 msgid "Tokat"
-msgstr ""
+msgstr "Tokat"
 
 #. Province of Turkey: Sivas
 #: activities/geo-country/resource/board/board5_1.qml:52
 msgctxt "board5_1|"
 msgid "Sivas"
-msgstr ""
+msgstr "Sivas"
 
 #. Province of Turkey: Şırnak
 #: activities/geo-country/resource/board/board5_1.qml:59
 msgctxt "board5_1|"
 msgid "Şırnak"
-msgstr ""
+msgstr "Şırnak"
 
 #. Province of Turkey: Siirt
 #: activities/geo-country/resource/board/board5_1.qml:66
 msgctxt "board5_1|"
 msgid "Siirt"
-msgstr ""
+msgstr "Siirt"
 
 #. Province of Turkey: Şanlıurfa
 #: activities/geo-country/resource/board/board5_1.qml:73
 msgctxt "board5_1|"
 msgid "Şanlıurfa"
-msgstr ""
+msgstr "Şanlıurfa"
 
 #. Province of Turkey: Rize
 #: activities/geo-country/resource/board/board5_1.qml:80
 msgctxt "board5_1|"
 msgid "Rize"
-msgstr ""
+msgstr "Rize"
 
 #. Province of Turkey: Osmaniye
 #: activities/geo-country/resource/board/board5_1.qml:87
 msgctxt "board5_1|"
 msgid "Osmaniye"
-msgstr ""
+msgstr "Osmaniye"
 
 #. Province of Turkey: Ordu
 #: activities/geo-country/resource/board/board5_1.qml:94
 msgctxt "board5_1|"
 msgid "Ordu"
-msgstr ""
+msgstr "Ordu"
 
 #. Province of Turkey: Muş
 #: activities/geo-country/resource/board/board5_1.qml:101
 msgctxt "board5_1|"
 msgid "Muş"
-msgstr ""
+msgstr "Muş"
 
 #. Province of Turkey: Mardin
 #: activities/geo-country/resource/board/board5_1.qml:108
 msgctxt "board5_1|"
 msgid "Mardin"
-msgstr ""
+msgstr "Mardin"
 
 #. Province of Turkey: Malatya
 #: activities/geo-country/resource/board/board5_1.qml:115
-#, fuzzy
-#| msgctxt "board9_0|"
-#| msgid "Malaysia"
 msgctxt "board5_1|"
 msgid "Malatya"
-msgstr "Malezya"
+msgstr "Malatya"
 
 #. Province of Turkey: Kilis
 #: activities/geo-country/resource/board/board5_1.qml:122
 msgctxt "board5_1|"
 msgid "Kilis"
-msgstr ""
+msgstr "Kilis"
 
 #. Province of Turkey: Kars
 #: activities/geo-country/resource/board/board5_1.qml:129
 msgctxt "board5_1|"
 msgid "Kars"
-msgstr ""
+msgstr "Kars"
 
 #. Province of Turkey: Kahramanmaraş
 #: activities/geo-country/resource/board/board5_1.qml:136
 msgctxt "board5_1|"
 msgid "Kahramanmaraş"
-msgstr ""
+msgstr "Kahramanmaraş"
 
 #. Province of Turkey: Iğdır
 #: activities/geo-country/resource/board/board5_1.qml:143
 msgctxt "board5_1|"
 msgid "Iğdır"
-msgstr ""
+msgstr "Iğdır"
 
 #. Province of Turkey: Hatay
 #: activities/geo-country/resource/board/board5_1.qml:150
 msgctxt "board5_1|"
 msgid "Hatay"
-msgstr ""
+msgstr "Hatay"
 
 #. Province of Turkey: Hakkari
 #: activities/geo-country/resource/board/board5_1.qml:157
 msgctxt "board5_1|"
 msgid "Hakkari"
-msgstr ""
+msgstr "Hakkari"
 
 #. Province of Turkey: Gümüşhane
 #: activities/geo-country/resource/board/board5_1.qml:164
 msgctxt "board5_1|"
 msgid "Gümüşhane"
-msgstr ""
+msgstr "Gümüşhane"
 
 #. Province of Turkey: Giresun
 #: activities/geo-country/resource/board/board5_1.qml:171
 msgctxt "board5_1|"
 msgid "Giresun"
-msgstr ""
+msgstr "Giresun"
 
 #. Province of Turkey: Gaziantep
 #: activities/geo-country/resource/board/board5_1.qml:178
 msgctxt "board5_1|"
 msgid "Gaziantep"
-msgstr ""
+msgstr "Gaziantep"
 
 #. Province of Turkey: Erzurum
 #: activities/geo-country/resource/board/board5_1.qml:185
 msgctxt "board5_1|"
 msgid "Erzurum"
-msgstr ""
+msgstr "Erzurum"
 
 #. Province of Turkey: Erzincan
 #: activities/geo-country/resource/board/board5_1.qml:192
 msgctxt "board5_1|"
 msgid "Erzincan"
-msgstr ""
+msgstr "Erzincan"
 
 #. Province of Turkey: Elazığ
 #: activities/geo-country/resource/board/board5_1.qml:199
 msgctxt "board5_1|"
 msgid "Elazığ"
-msgstr ""
+msgstr "Elazığ"
 
 #. Province of Turkey: Diyarbakır
 #: activities/geo-country/resource/board/board5_1.qml:206
 msgctxt "board5_1|"
 msgid "Diyarbakır"
-msgstr ""
+msgstr "Diyarbakır"
 
 #. Province of Turkey: Bitlis
 #: activities/geo-country/resource/board/board5_1.qml:213
 msgctxt "board5_1|"
 msgid "Bitlis"
-msgstr ""
+msgstr "Bitlis"
 
 #. Province of Turkey: Bingöl
 #: activities/geo-country/resource/board/board5_1.qml:220
 msgctxt "board5_1|"
 msgid "Bingöl"
-msgstr ""
+msgstr "Bingöl"
 
 #. Province of Turkey: Bayburt
 #: activities/geo-country/resource/board/board5_1.qml:227
 msgctxt "board5_1|"
 msgid "Bayburt"
-msgstr ""
+msgstr "Bayburt"
 
 #. Province of Turkey: Batman
 #: activities/geo-country/resource/board/board5_1.qml:234
 msgctxt "board5_1|"
 msgid "Batman"
-msgstr ""
+msgstr "Batman"
 
 #. Province of Turkey: Artvin
 #: activities/geo-country/resource/board/board5_1.qml:241
 msgctxt "board5_1|"
 msgid "Artvin"
-msgstr ""
+msgstr "Artvin"
 
 #. Province of Turkey: Ardahan
 #: activities/geo-country/resource/board/board5_1.qml:248
 msgctxt "board5_1|"
 msgid "Ardahan"
-msgstr ""
+msgstr "Ardahan"
 
 #. Province of Turkey: Ağrı
 #: activities/geo-country/resource/board/board5_1.qml:255
 msgctxt "board5_1|"
 msgid "Ağrı"
-msgstr ""
+msgstr "Ağrı"
 
 #. Province of Turkey: Adıyaman
 #: activities/geo-country/resource/board/board5_1.qml:262
 msgctxt "board5_1|"
 msgid "Adıyaman"
-msgstr ""
+msgstr "Adıyaman"
 
 #: activities/geo-country/resource/board/board6_0.qml:17
 msgctxt "board6_0|"
 msgid "Counties of Norway"
-msgstr "Norveç'in Bölgeleri"
+msgstr "Norveç'in bölgeleri"
 
 #. County of Norway: Vestfold og Telemark
 #: activities/geo-country/resource/board/board6_0.qml:26
 msgctxt "board6_0|"
 msgid "Vestfold og Telemark"
-msgstr ""
+msgstr "Vestfold og Telemark"
 
 #. County of Norway: Viken
 #: activities/geo-country/resource/board/board6_0.qml:33
 msgctxt "board6_0|"
 msgid "Viken"
-msgstr ""
+msgstr "Viken"
 
 #. County of Norway: Nordland
 #: activities/geo-country/resource/board/board6_0.qml:40
-#, fuzzy
-#| msgctxt "board6_0|"
-#| msgid "Poland"
 msgctxt "board6_0|"
 msgid "Nordland"
-msgstr "Polanya"
+msgstr "Nordland"
 
 #. County of Norway: Troms og Finnmark
 #: activities/geo-country/resource/board/board6_0.qml:47
-#, fuzzy
-#| msgctxt "board5_0|"
-#| msgid "Denmark"
 msgctxt "board6_0|"
 msgid "Troms og Finnmark"
-msgstr "Danimarka"
+msgstr "Troms og Finnmark"
 
 #. County of Norway: Trøndelag
 #: activities/geo-country/resource/board/board6_0.qml:54
 msgctxt "board6_0|"
 msgid "Trøndelag"
-msgstr ""
+msgstr "Trøndelag"
 
 #. County of Norway: Oslo
 #: activities/geo-country/resource/board/board6_0.qml:61
 msgctxt "board6_0|"
 msgid "Oslo"
-msgstr ""
+msgstr "Oslo"
 
 #. County of Norway: Møre og Romsdal
 #: activities/geo-country/resource/board/board6_0.qml:68
 msgctxt "board6_0|"
 msgid "Møre og Romsdal"
-msgstr ""
+msgstr "Møre og Romsdal"
 
 #. County of Norway: Agder
 #: activities/geo-country/resource/board/board6_0.qml:75
 msgctxt "board6_0|"
 msgid "Agder"
-msgstr ""
+msgstr "Agder"
 
 #. County of Norway: Innlandet
 #: activities/geo-country/resource/board/board6_0.qml:82
-#, fuzzy
-#| msgctxt "board5_0|"
-#| msgid "Finland"
 msgctxt "board6_0|"
 msgid "Innlandet"
-msgstr "Finlandiya"
+msgstr "Innlandet"
 
 #. County of Norway: Vestland
 #: activities/geo-country/resource/board/board6_0.qml:89
-#, fuzzy
-#| msgctxt "board2_0|"
-#| msgid "Iceland"
 msgctxt "board6_0|"
 msgid "Vestland"
-msgstr "İzlanda"
+msgstr "Vestland"
 
 #. County of Norway: Rogaland
 #: activities/geo-country/resource/board/board6_0.qml:96
-#, fuzzy
-#| msgctxt "board6_0|"
-#| msgid "Poland"
 msgctxt "board6_0|"
 msgid "Rogaland"
-msgstr "Polanya"
+msgstr "Rogaland"
 
 #: activities/geo-country/resource/board/board7_0.qml:15
-#, fuzzy
-#| msgctxt "board7_0|"
-#| msgid "Counties of Brazil"
 msgctxt "board7_0|"
 msgid "Federative units of Brazil"
-msgstr "Brezilya'nın Bölgeleri"
+msgstr "Brezilya'nın federal birimleri"
 
 #. Federative unit of Brazil: Amazonas
 #: activities/geo-country/resource/board/board7_0.qml:24
 msgctxt "board7_0|"
 msgid "Amazonas"
-msgstr ""
+msgstr "Amazonas"
 
 #. Federative unit of Brazil: Pará
 #: activities/geo-country/resource/board/board7_0.qml:31
 msgctxt "board7_0|"
 msgid "Pará"
-msgstr ""
+msgstr "Pará"
 
 #. Federative unit of Brazil: Mato Grosso
 #: activities/geo-country/resource/board/board7_0.qml:38
 msgctxt "board7_0|"
 msgid "Mato Grosso"
-msgstr ""
+msgstr "Mato Grosso"
 
 #. Federative unit of Brazil: Minas Gerais
 #: activities/geo-country/resource/board/board7_0.qml:45
 msgctxt "board7_0|"
 msgid "Minas Gerais"
-msgstr ""
+msgstr "Minas Gerais"
 
 #. Federative unit of Brazil: Bahia
 #: activities/geo-country/resource/board/board7_0.qml:52
 msgctxt "board7_0|"
 msgid "Bahia"
-msgstr ""
+msgstr "Bahia"
 
 #. Federative unit of Brazil: Mato Grosso do Sul
 #: activities/geo-country/resource/board/board7_0.qml:59
 msgctxt "board7_0|"
 msgid "Mato Grosso do Sul"
-msgstr ""
+msgstr "Mato Grosso do Sul"
 
 #. Federative unit of Brazil: Goiás
 #: activities/geo-country/resource/board/board7_0.qml:66
 msgctxt "board7_0|"
 msgid "Goiás"
-msgstr ""
+msgstr "Goiás"
 
 #. Federative unit of Brazil: Maranhão
 #: activities/geo-country/resource/board/board7_0.qml:73
 msgctxt "board7_0|"
 msgid "Maranhão"
-msgstr ""
+msgstr "Maranhão"
 
 #. Federative unit of Brazil: Rio Grande do Sul
 #: activities/geo-country/resource/board/board7_0.qml:80
 msgctxt "board7_0|"
 msgid "Rio Grande do Sul"
-msgstr ""
+msgstr "Rio Grande do Sul"
 
 #. Federative unit of Brazil: Tocantins
 #: activities/geo-country/resource/board/board7_0.qml:87
-#, fuzzy
-#| msgctxt "board1_0|"
-#| msgid "Continents"
 msgctxt "board7_0|"
 msgid "Tocantins"
-msgstr "Kıtalar"
+msgstr "Tocantins"
 
 #. Federative unit of Brazil: Piauí
 #: activities/geo-country/resource/board/board7_0.qml:94
 msgctxt "board7_0|"
 msgid "Piauí"
-msgstr ""
+msgstr "Piauí"
 
 #. Federative unit of Brazil: São Paulo
 #: activities/geo-country/resource/board/board7_0.qml:101
 msgctxt "board7_0|"
 msgid "São Paulo"
-msgstr ""
+msgstr "São Paulo"
 
 #. Federative unit of Brazil: Rondônia
 #: activities/geo-country/resource/board/board7_0.qml:108
 msgctxt "board7_0|"
 msgid "Rondônia"
-msgstr ""
+msgstr "Rondônia"
 
 #. Federative unit of Brazil: Roraima
 #: activities/geo-country/resource/board/board7_0.qml:115
 msgctxt "board7_0|"
 msgid "Roraima"
-msgstr ""
+msgstr "Roraima"
 
 #. Federative unit of Brazil: Paraná
 #: activities/geo-country/resource/board/board7_0.qml:122
 msgctxt "board7_0|"
 msgid "Paraná"
-msgstr ""
+msgstr "Paraná"
 
 #. Federative unit of Brazil: Acre
 #: activities/geo-country/resource/board/board7_0.qml:129
 msgctxt "board7_0|"
 msgid "Acre"
-msgstr ""
+msgstr "Acre"
 
 #. Federative unit of Brazil: Ceará
 #: activities/geo-country/resource/board/board7_0.qml:136
 msgctxt "board7_0|"
 msgid "Ceará"
-msgstr ""
+msgstr "Ceará"
 
 #. Federative unit of Brazil: Amapá
 #: activities/geo-country/resource/board/board7_0.qml:143
 msgctxt "board7_0|"
 msgid "Amapá"
-msgstr ""
+msgstr "Amapá"
 
 #. Federative unit of Brazil: Pernambuco
 #: activities/geo-country/resource/board/board7_0.qml:150
 msgctxt "board7_0|"
 msgid "Pernambuco"
-msgstr ""
+msgstr "Pernambuco"
 
 #. Federative unit of Brazil: Santa Catarina
 #: activities/geo-country/resource/board/board7_0.qml:157
 msgctxt "board7_0|"
 msgid "Santa Catarina"
-msgstr ""
+msgstr "Santa Catarina"
 
 #. Federative unit of Brazil: Paraíba
 #: activities/geo-country/resource/board/board7_0.qml:164
-#, fuzzy
-#| msgctxt "board4_0|"
-#| msgid "Paraguay"
 msgctxt "board7_0|"
 msgid "Paraíba"
-msgstr "Paraguay"
+msgstr "Paraíba"
 
 #. Federative unit of Brazil: Rio Grande do Norte
 #: activities/geo-country/resource/board/board7_0.qml:171
 msgctxt "board7_0|"
 msgid "Rio Grande do Norte"
-msgstr ""
+msgstr "Rio Grande do Norte"
 
 #. Federative unit of Brazil: Espírito Santo
 #: activities/geo-country/resource/board/board7_0.qml:178
 msgctxt "board7_0|"
 msgid "Espírito Santo"
-msgstr ""
+msgstr "Espírito Santo"
 
 #. Federative unit of Brazil: Rio de Janeiro
 #: activities/geo-country/resource/board/board7_0.qml:185
 msgctxt "board7_0|"
 msgid "Rio de Janeiro"
-msgstr ""
+msgstr "Rio de Janeiro"
 
 #. Federative unit of Brazil: Alagoas
 #: activities/geo-country/resource/board/board7_0.qml:192
 msgctxt "board7_0|"
 msgid "Alagoas"
-msgstr ""
+msgstr "Alagoas"
 
 #. Federative unit of Brazil: Sergipe
 #: activities/geo-country/resource/board/board7_0.qml:199
 msgctxt "board7_0|"
 msgid "Sergipe"
-msgstr ""
+msgstr "Sergipe"
 
 #. Federative unit of Brazil: Distrito Federal
 #: activities/geo-country/resource/board/board7_0.qml:206
-#, fuzzy
-#| msgctxt "board1_0|"
-#| msgid "Districts of France"
 msgctxt "board7_0|"
 msgid "Distrito Federal"
-msgstr "Fransanın Bölgeleri"
+msgstr "Distrito Federal"
 
 #: activities/geo-country/resource/board/board8_0.qml:15
-#, fuzzy
-#| msgctxt "board8_0|"
-#| msgid "Districts of Canada"
 msgctxt "board8_0|"
 msgid "Provinces and territories of Canada"
-msgstr "Kanada'nın Bölgeleri"
+msgstr "Kanada'nın eyaletleri ve bölgeleri"
 
 #. Provinces and territories of Canada: Yukon
 #: activities/geo-country/resource/board/board8_0.qml:24
 msgctxt "board8_0|"
 msgid "Yukon"
-msgstr ""
+msgstr "Yukon"
 
 #. Provinces and territories of Canada: British Columbia
 #: activities/geo-country/resource/board/board8_0.qml:31
 msgctxt "board8_0|"
 msgid "British Columbia"
-msgstr ""
+msgstr "British Columbia"
 
 #. Provinces and territories of Canada: Northwest Territories
 #: activities/geo-country/resource/board/board8_0.qml:38
 msgctxt "board8_0|"
 msgid "Northwest Territories"
-msgstr ""
+msgstr "Northwest Territories"
 
 #. Provinces and territories of Canada: Nunavut
 #: activities/geo-country/resource/board/board8_0.qml:45
 msgctxt "board8_0|"
 msgid "Nunavut"
-msgstr ""
+msgstr "Nunavut"
 
 #. Provinces and territories of Canada: Alberta
 #: activities/geo-country/resource/board/board8_0.qml:52
 msgctxt "board8_0|"
 msgid "Alberta"
-msgstr ""
+msgstr "Alberta"
 
 #. Provinces and territories of Canada: Saskatchewan
 #: activities/geo-country/resource/board/board8_0.qml:59
 msgctxt "board8_0|"
 msgid "Saskatchewan"
-msgstr ""
+msgstr "Saskatchewan"
 
 #. Provinces and territories of Canada: Manitoba
 #: activities/geo-country/resource/board/board8_0.qml:66
 msgctxt "board8_0|"
 msgid "Manitoba"
-msgstr ""
+msgstr "Manitoba"
 
 #. Provinces and territories of Canada: Ontario
 #: activities/geo-country/resource/board/board8_0.qml:73
 msgctxt "board8_0|"
 msgid "Ontario"
-msgstr ""
+msgstr "Ontario"
 
 #. Provinces and territories of Canada: Quebec
 #: activities/geo-country/resource/board/board8_0.qml:80
 msgctxt "board8_0|"
 msgid "Quebec"
-msgstr ""
+msgstr "Quebec"
 
 #. Provinces and territories of Canada: Newfoundland and Labrador
 #: activities/geo-country/resource/board/board8_0.qml:87
 msgctxt "board8_0|"
 msgid "Newfoundland and Labrador"
-msgstr ""
+msgstr "Newfoundland and Labrador"
 
 #. Provinces and territories of Canada: New Brunswick
 #: activities/geo-country/resource/board/board8_0.qml:94
 msgctxt "board8_0|"
 msgid "New Brunswick"
-msgstr ""
+msgstr "New Brunswick"
 
 #. Provinces and territories of Canada: Nova Scotia
 #: activities/geo-country/resource/board/board8_0.qml:101
 msgctxt "board8_0|"
 msgid "Nova Scotia"
-msgstr ""
+msgstr "Nova Scotia"
 
 #. Provinces and territories of Canada: Prince Edward Island
 #: activities/geo-country/resource/board/board8_0.qml:108
-#, fuzzy
-#| msgctxt "board10_0|"
-#| msgid "Pitcairn Islands"
 msgctxt "board8_0|"
 msgid "Prince Edward Island"
-msgstr "Pitcairn Adaları"
+msgstr "Prince Edward Adası"
 
 #: activities/geo-country/resource/board/board9_0.qml:15
-#, fuzzy
-#| msgctxt "board9_0|"
-#| msgid "Districts of Mexico"
 msgctxt "board9_0|"
 msgid "States of Mexico"
-msgstr "Meksika'nın Bölgeleri"
+msgstr "Meksika'nın eyaletleri"
 
 #. State of Mexico: Zacatecas
 #: activities/geo-country/resource/board/board9_0.qml:24
 msgctxt "board9_0|"
 msgid "Zacatecas"
-msgstr ""
+msgstr "Zacatecas"
 
 #. State of Mexico: Yucatán
 #: activities/geo-country/resource/board/board9_0.qml:31
 msgctxt "board9_0|"
 msgid "Yucatán"
-msgstr ""
+msgstr "Yucatán"
 
 #. State of Mexico: Veracruz
 #: activities/geo-country/resource/board/board9_0.qml:38
 msgctxt "board9_0|"
 msgid "Veracruz"
-msgstr ""
+msgstr "Veracruz"
 
 #. State of Mexico: Tlaxcala
 #: activities/geo-country/resource/board/board9_0.qml:45
 msgctxt "board9_0|"
 msgid "Tlaxcala"
-msgstr ""
+msgstr "Tlaxcala"
 
 #. State of Mexico: Tamaulipas
 #: activities/geo-country/resource/board/board9_0.qml:52
 msgctxt "board9_0|"
 msgid "Tamaulipas"
-msgstr ""
+msgstr "Tamaulipas"
 
 #. State of Mexico: Tabasco
 #: activities/geo-country/resource/board/board9_0.qml:59
 msgctxt "board9_0|"
 msgid "Tabasco"
-msgstr ""
+msgstr "Tabasco"
 
 #. State of Mexico: Sonora
 #: activities/geo-country/resource/board/board9_0.qml:66
 msgctxt "board9_0|"
 msgid "Sonora"
-msgstr ""
+msgstr "Sonora"
 
 #. State of Mexico: Sinaloa
 #: activities/geo-country/resource/board/board9_0.qml:73
 msgctxt "board9_0|"
 msgid "Sinaloa"
-msgstr ""
+msgstr "Sinaloa"
 
 #. State of Mexico: San Luis Potosí
 #: activities/geo-country/resource/board/board9_0.qml:80
 msgctxt "board9_0|"
 msgid "San Luis Potosí"
-msgstr ""
+msgstr "San Luis Potosí"
 
 #. State of Mexico: Quintana Roo
 #: activities/geo-country/resource/board/board9_0.qml:87
 msgctxt "board9_0|"
 msgid "Quintana Roo"
-msgstr ""
+msgstr "Quintana Roo"
 
 #. State of Mexico: Querétaro
 #: activities/geo-country/resource/board/board9_0.qml:94
 msgctxt "board9_0|"
 msgid "Querétaro"
-msgstr ""
+msgstr "Querétaro"
 
 #. State of Mexico: Puebla
 #: activities/geo-country/resource/board/board9_0.qml:101
 msgctxt "board9_0|"
 msgid "Puebla"
-msgstr ""
+msgstr "Puebla"
 
 #. State of Mexico: Oaxaca
 #: activities/geo-country/resource/board/board9_0.qml:108
 msgctxt "board9_0|"
 msgid "Oaxaca"
-msgstr ""
+msgstr "Oaxaca"
 
 #. State of Mexico: Nuevo León
 #: activities/geo-country/resource/board/board9_0.qml:115
 msgctxt "board9_0|"
 msgid "Nuevo León"
-msgstr ""
+msgstr "Nuevo León"
 
 #. State of Mexico: Nayarit
 #: activities/geo-country/resource/board/board9_0.qml:122
 msgctxt "board9_0|"
 msgid "Nayarit"
-msgstr ""
+msgstr "Nayarit"
 
 #. State of Mexico: Morelos
 #: activities/geo-country/resource/board/board9_0.qml:129
 msgctxt "board9_0|"
 msgid "Morelos"
-msgstr ""
+msgstr "Morelos"
 
 #. State of Mexico: Michoacán
 #: activities/geo-country/resource/board/board9_0.qml:136
 msgctxt "board9_0|"
 msgid "Michoacán"
-msgstr ""
+msgstr "Michoacán"
 
 #. State of Mexico: Jalisco
 #: activities/geo-country/resource/board/board9_0.qml:143
 msgctxt "board9_0|"
 msgid "Jalisco"
-msgstr ""
+msgstr "Jalisco"
 
 #. State of Mexico: Hidalgo
 #: activities/geo-country/resource/board/board9_0.qml:150
 msgctxt "board9_0|"
 msgid "Hidalgo"
-msgstr ""
+msgstr "Hidalgo"
 
 #. State of Mexico: Guerrero
 #: activities/geo-country/resource/board/board9_0.qml:157
 msgctxt "board9_0|"
 msgid "Guerrero"
-msgstr ""
+msgstr "Guerrero"
 
 #. State of Mexico: Guanajuato
 #: activities/geo-country/resource/board/board9_0.qml:164
 msgctxt "board9_0|"
 msgid "Guanajuato"
-msgstr ""
+msgstr "Guanajuato"
 
 #. State of Mexico: Estado de México
 #: activities/geo-country/resource/board/board9_0.qml:171
 msgctxt "board9_0|"
 msgid "Estado de México"
-msgstr ""
+msgstr "Estado de México"
 
 #. State of Mexico: Durango
 #: activities/geo-country/resource/board/board9_0.qml:178
 msgctxt "board9_0|"
 msgid "Durango"
-msgstr ""
+msgstr "Durango"
 
 #. State of Mexico: Districto Federal
 #: activities/geo-country/resource/board/board9_0.qml:185
-#, fuzzy
-#| msgctxt "board1_0|"
-#| msgid "Districts of France"
 msgctxt "board9_0|"
 msgid "Districto Federal"
-msgstr "Fransanın Bölgeleri"
+msgstr "Districto Federal"
 
 #. State of Mexico: Coahuila
 #: activities/geo-country/resource/board/board9_0.qml:192
 msgctxt "board9_0|"
 msgid "Coahuila"
-msgstr ""
+msgstr "Coahuila"
 
 #. State of Mexico: Chiapas
 #: activities/geo-country/resource/board/board9_0.qml:199
 msgctxt "board9_0|"
 msgid "Chiapas"
-msgstr ""
+msgstr "Chiapas"
 
 #. State of Mexico: Chihuahua
 #: activities/geo-country/resource/board/board9_0.qml:206
 msgctxt "board9_0|"
 msgid "Chihuahua"
-msgstr ""
+msgstr "Chihuahua"
 
 #. State of Mexico: Campeche
 #: activities/geo-country/resource/board/board9_0.qml:213
 msgctxt "board9_0|"
 msgid "Campeche"
-msgstr ""
+msgstr "Campeche"
 
 #. State of Mexico: Baja California
 #: activities/geo-country/resource/board/board9_0.qml:220
 msgctxt "board9_0|"
 msgid "Baja California"
-msgstr ""
+msgstr "Baja California"
 
 #. State of Mexico: Baja California Sur
 #: activities/geo-country/resource/board/board9_0.qml:227
 msgctxt "board9_0|"
 msgid "Baja California Sur"
-msgstr ""
+msgstr "Baja California Sur"
 
 #. State of Mexico: Colima
 #: activities/geo-country/resource/board/board9_0.qml:234
 msgctxt "board9_0|"
 msgid "Colima"
-msgstr ""
+msgstr "Colima"
 
 #. State of Mexico: Aguascalientes
 #: activities/geo-country/resource/board/board9_0.qml:241
 msgctxt "board9_0|"
 msgid "Aguascalientes"
-msgstr ""
+msgstr "Aguascalientes"
 
 #. Activity title
 #: activities/geography/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Locate the countries"
-msgstr "Ülkeleri yerleştir"
+msgstr "Ülkeleri bul"
 
 #. Help title
 #: activities/geography/ActivityInfo.qml:21
@@ -12301,12 +12220,9 @@ msgstr ""
 "bırak."
 
 #: activities/geography/resource/board/board10_0.qml:15
-#, fuzzy
-#| msgctxt "board3_0|"
-#| msgid "Central America"
 msgctxt "board10_0|"
 msgid "Central Asia"
-msgstr "Orta Amerika"
+msgstr "Orta Asya"
 
 #: activities/geography/resource/board/board10_0.qml:24
 msgctxt "board10_0|"
@@ -12314,9 +12230,6 @@ msgid "Kazakhstan"
 msgstr "Kazakistan"
 
 #: activities/geography/resource/board/board10_0.qml:31
-#, fuzzy
-#| msgctxt "board9_0|"
-#| msgid "Kyrgyzstan"
 msgctxt "board10_0|"
 msgid "Kyrgyzstan"
 msgstr "Kırgızistan"
@@ -12327,9 +12240,6 @@ msgid "Tajikistan"
 msgstr "Tacikistan"
 
 #: activities/geography/resource/board/board10_0.qml:45
-#, fuzzy
-#| msgctxt "board9_0|"
-#| msgid "Turkmenistan"
 msgctxt "board10_0|"
 msgid "Turkmenistan"
 msgstr "Türkmenistan"
@@ -12340,65 +12250,41 @@ msgid "Uzbekistan"
 msgstr "Özbekistan"
 
 #: activities/geography/resource/board/board11_0.qml:15
-#, fuzzy
-#| msgctxt "board8_0|"
-#| msgid "South Africa"
 msgctxt "board11_0|"
 msgid "South Asia"
-msgstr "Güney Africa"
+msgstr "Güney Asya"
 
 #: activities/geography/resource/board/board11_0.qml:24
-#, fuzzy
-#| msgctxt "board9_0|"
-#| msgid "India"
 msgctxt "board11_0|"
 msgid "India"
 msgstr "Hindistan"
 
 #: activities/geography/resource/board/board11_0.qml:31
-#, fuzzy
-#| msgctxt "board9_0|"
-#| msgid "Sri Lanka"
 msgctxt "board11_0|"
 msgid "Sri Lanka"
 msgstr "Sri Lanka"
 
 #: activities/geography/resource/board/board11_0.qml:38
-#, fuzzy
-#| msgctxt "board9_0|"
-#| msgid "Pakistan"
 msgctxt "board11_0|"
 msgid "Pakistan"
 msgstr "Pakistan"
 
 #: activities/geography/resource/board/board11_0.qml:45
-#, fuzzy
-#| msgctxt "board9_0|"
-#| msgid "Afghanistan"
 msgctxt "board11_0|"
 msgid "Afghanistan"
 msgstr "Afganistan"
 
 #: activities/geography/resource/board/board11_0.qml:52
-#, fuzzy
-#| msgctxt "board9_0|"
-#| msgid "Nepal"
 msgctxt "board11_0|"
 msgid "Nepal"
 msgstr "Nepal"
 
 #: activities/geography/resource/board/board11_0.qml:59
-#, fuzzy
-#| msgctxt "board9_0|"
-#| msgid "Bangladesh"
 msgctxt "board11_0|"
 msgid "Bangladesh"
 msgstr "Bangladeş"
 
 #: activities/geography/resource/board/board11_0.qml:66
-#, fuzzy
-#| msgctxt "board9_0|"
-#| msgid "Bhutan"
 msgctxt "board11_0|"
 msgid "Bhutan"
 msgstr "Butan"
@@ -12406,36 +12292,27 @@ msgstr "Butan"
 #: activities/geography/resource/board/board11_0.qml:73
 msgctxt "board11_0|"
 msgid "Maldives"
-msgstr ""
+msgstr "Maldivler"
 
 #: activities/geography/resource/board/board12_0.qml:15
-#, fuzzy
-#| msgctxt "board8_0|"
-#| msgid "South Africa"
 msgctxt "board12_0|"
 msgid "Southeast Asia"
-msgstr "Güney Africa"
+msgstr "Güneydoğu Asya"
 
 #: activities/geography/resource/board/board12_0.qml:24
 msgctxt "board12_0|"
 msgid "Singapore"
-msgstr ""
+msgstr "Singapur"
 
 #: activities/geography/resource/board/board12_0.qml:32
-#, fuzzy
-#| msgctxt "board10_0|"
-#| msgid "Indonesia"
 msgctxt "board12_0|"
 msgid "Indonesia"
 msgstr "Endonezya"
 
 #: activities/geography/resource/board/board12_0.qml:39
-#, fuzzy
-#| msgctxt "board9_0|"
-#| msgid "Myanmar"
 msgctxt "board12_0|"
 msgid "Myanmar"
-msgstr "Miyanmar"
+msgstr "Myanmar"
 
 #: activities/geography/resource/board/board12_0.qml:46
 msgctxt "board12_0|"
@@ -12443,25 +12320,16 @@ msgid "Thailand"
 msgstr "Tayland"
 
 #: activities/geography/resource/board/board12_0.qml:53
-#, fuzzy
-#| msgctxt "board9_0|"
-#| msgid "Laos"
 msgctxt "board12_0|"
 msgid "Laos"
 msgstr "Laos"
 
 #: activities/geography/resource/board/board12_0.qml:60
-#, fuzzy
-#| msgctxt "board9_0|"
-#| msgid "Vietnam"
 msgctxt "board12_0|"
 msgid "Vietnam"
 msgstr "Vietnam"
 
 #: activities/geography/resource/board/board12_0.qml:67
-#, fuzzy
-#| msgctxt "board9_0|"
-#| msgid "Cambodia"
 msgctxt "board12_0|"
 msgid "Cambodia"
 msgstr "Kamboçya"
@@ -12474,132 +12342,84 @@ msgstr "Malezya"
 #: activities/geography/resource/board/board12_0.qml:81
 msgctxt "board12_0|"
 msgid "Brunei"
-msgstr ""
+msgstr "Brunei"
 
 #: activities/geography/resource/board/board12_0.qml:88
-#, fuzzy
-#| msgctxt "board10_0|"
-#| msgid "East Timor"
 msgctxt "board12_0|"
 msgid "East Timor"
 msgstr "Doğu Timor"
 
 #: activities/geography/resource/board/board12_0.qml:95
-#, fuzzy
-#| msgctxt "board9_0|"
-#| msgid "Philippines"
 msgctxt "board12_0|"
 msgid "Philippines"
 msgstr "Filipinler"
 
 #: activities/geography/resource/board/board13_0.qml:15
-#, fuzzy
-#| msgctxt "board10_0|"
-#| msgid "East Timor"
 msgctxt "board13_0|"
 msgid "East Asia"
-msgstr "Doğu Timor"
+msgstr "Doğu Asya"
 
 #: activities/geography/resource/board/board13_0.qml:24
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "Japan"
 msgctxt "board13_0|"
 msgid "Japan"
 msgstr "Japonya"
 
 #: activities/geography/resource/board/board13_0.qml:31
-#, fuzzy
-#| msgctxt "board9_0|"
-#| msgid "China"
 msgctxt "board13_0|"
 msgid "China"
 msgstr "Çin"
 
 #: activities/geography/resource/board/board13_0.qml:38
-#, fuzzy
-#| msgctxt "board9_0|"
-#| msgid "Mongolia"
 msgctxt "board13_0|"
 msgid "Mongolia"
 msgstr "Moğolistan"
 
 #: activities/geography/resource/board/board13_0.qml:45
-#, fuzzy
-#| msgctxt "board9_0|"
-#| msgid "North Korea"
 msgctxt "board13_0|"
 msgid "North Korea"
 msgstr "Kuzey Kore"
 
 #: activities/geography/resource/board/board13_0.qml:52
-#, fuzzy
-#| msgctxt "board9_0|"
-#| msgid "South Korea"
 msgctxt "board13_0|"
 msgid "South Korea"
 msgstr "Güney Kore"
 
 #: activities/geography/resource/board/board13_0.qml:59
-#, fuzzy
-#| msgctxt "board9_0|"
-#| msgid "Taiwan"
 msgctxt "board13_0|"
 msgid "Taiwan"
 msgstr "Tayvan"
 
 #: activities/geography/resource/board/board14_0.qml:15
-#, fuzzy
-#| msgctxt "board10_0|"
-#| msgid "Oceania"
 msgctxt "board14_0|"
 msgid "Oceania"
 msgstr "Okyanusya"
 
 #: activities/geography/resource/board/board14_0.qml:24
-#, fuzzy
-#| msgctxt "board10_0|"
-#| msgid "Pitcairn Islands"
 msgctxt "board14_0|"
 msgid "Pitcairn Islands"
 msgstr "Pitcairn Adaları"
 
 #: activities/geography/resource/board/board14_0.qml:31
-#, fuzzy
-#| msgctxt "board10_0|"
-#| msgid "French Polynesia"
 msgctxt "board14_0|"
 msgid "French Polynesia"
 msgstr "Fransız Polinezyası"
 
 #: activities/geography/resource/board/board14_0.qml:38
-#, fuzzy
-#| msgctxt "board10_0|"
-#| msgid "Papua New Guinea"
 msgctxt "board14_0|"
 msgid "Papua New Guinea"
 msgstr "Papua Yeni Gine"
 
 #: activities/geography/resource/board/board14_0.qml:45
-#, fuzzy
-#| msgctxt "board10_0|"
-#| msgid "Palau"
 msgctxt "board14_0|"
 msgid "Palau"
 msgstr "Palau"
 
 #: activities/geography/resource/board/board14_0.qml:52
-#, fuzzy
-#| msgctxt "board10_0|"
-#| msgid "Marshall Islands"
 msgctxt "board14_0|"
 msgid "Mariana Islands"
-msgstr "Marşal Adaları"
+msgstr "Mariana Adaları"
 
 #: activities/geography/resource/board/board14_0.qml:59
-#, fuzzy
-#| msgctxt "board10_0|"
-#| msgid "Micronesia"
 msgctxt "board14_0|"
 msgid "Micronesia"
 msgstr "Mikronezya"
@@ -12607,116 +12427,74 @@ msgstr "Mikronezya"
 #: activities/geography/resource/board/board14_0.qml:66
 msgctxt "board14_0|"
 msgid "Nauru"
-msgstr ""
+msgstr "Nauru"
 
 #: activities/geography/resource/board/board14_0.qml:74
-#, fuzzy
-#| msgctxt "board10_0|"
-#| msgid "Vanuatu"
 msgctxt "board14_0|"
 msgid "Vanuatu"
 msgstr "Vanuatu"
 
 #: activities/geography/resource/board/board14_0.qml:81
-#, fuzzy
-#| msgctxt "board10_0|"
-#| msgid "Tuvalu"
 msgctxt "board14_0|"
 msgid "Tuvalu"
 msgstr "Tuvalu"
 
 #: activities/geography/resource/board/board14_0.qml:88
-#, fuzzy
-#| msgctxt "board10_0|"
-#| msgid "Tonga"
 msgctxt "board14_0|"
 msgid "Tonga"
 msgstr "Tonga"
 
 #: activities/geography/resource/board/board14_0.qml:95
-#, fuzzy
-#| msgctxt "board10_0|"
-#| msgid "New Caledonia"
 msgctxt "board14_0|"
 msgid "New Caledonia"
 msgstr "Yeni Kaledonya"
 
 #: activities/geography/resource/board/board14_0.qml:102
-#, fuzzy
-#| msgctxt "board10_0|"
-#| msgid "Marshall Islands"
 msgctxt "board14_0|"
 msgid "Marshall Islands"
 msgstr "Marşal Adaları"
 
 #: activities/geography/resource/board/board14_0.qml:109
-#, fuzzy
-#| msgctxt "board10_0|"
-#| msgid "Kiribati"
 msgctxt "board14_0|"
 msgid "Kiribati"
 msgstr "Kiribati"
 
 #: activities/geography/resource/board/board14_0.qml:116
-#, fuzzy
-#| msgctxt "board10_0|"
-#| msgid "Fiji"
 msgctxt "board14_0|"
 msgid "Fiji"
 msgstr "Fiji"
 
 #: activities/geography/resource/board/board14_0.qml:123
-#, fuzzy
-#| msgctxt "board10_0|"
-#| msgid "Solomon Islands"
 msgctxt "board14_0|"
 msgid "Solomon Islands"
 msgstr "Solomon Adaları"
 
 #: activities/geography/resource/board/board14_0.qml:130
-#, fuzzy
-#| msgctxt "board10_0|"
-#| msgid "New Zealand"
 msgctxt "board14_0|"
 msgid "New Zealand"
 msgstr "Yeni Zelanda"
 
 #: activities/geography/resource/board/board14_0.qml:137
-#, fuzzy
-#| msgctxt "board10_0|"
-#| msgid "Cook Islands"
 msgctxt "board14_0|"
 msgid "Cook Islands"
 msgstr "Cook Adaları"
 
 #: activities/geography/resource/board/board14_0.qml:144
-#, fuzzy
-#| msgctxt "board10_0|"
-#| msgid "Solomon Islands"
 msgctxt "board14_0|"
 msgid "Samoan Islands"
-msgstr "Solomon Adaları"
+msgstr "Samoa Adaları"
 
 #: activities/geography/resource/board/board14_0.qml:151
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "Australia"
 msgctxt "board14_0|"
 msgid "Australia"
 msgstr "Avustralya"
 
 #: activities/geography/resource/board/board14_0.qml:158
-#, fuzzy
-#| msgctxt "board10_0|"
-#| msgid "United States Minor Outlying Islands"
 msgctxt "board14_0|"
 msgid "United States Minor Outlying Islands"
 msgstr "Amerika Birleşik Devletleri Küçük Dış Adaları"
 
 #: activities/geography/resource/board/board14_0.qml:165
-#, fuzzy
-#| msgctxt "board10_0|"
-#| msgid "Hawaii"
 msgctxt "board14_0|"
 msgid "Hawaii"
 msgstr "Hawaii"
@@ -12724,7 +12502,7 @@ msgstr "Hawaii"
 #: activities/geography/resource/board/board14_0.qml:172
 msgctxt "board14_0|"
 msgid "Wallis and Futuna"
-msgstr ""
+msgstr "Wallis ve Futuna"
 
 #: activities/geography/resource/board/board1_0.qml:15
 msgctxt "board1_0|"
@@ -12749,7 +12527,7 @@ msgstr "Asya"
 #: activities/geography/resource/board/board1_0.qml:45
 msgctxt "board1_0|"
 msgid "Antarctica"
-msgstr "Antartika"
+msgstr "Antarktika"
 
 #: activities/geography/resource/board/board1_0.qml:52
 msgctxt "board1_0|"
@@ -12904,7 +12682,7 @@ msgstr "Guyana"
 #: activities/geography/resource/board/board4_0.qml:73
 msgctxt "board4_0|"
 msgid "French Guiana"
-msgstr "Fransız Guanası"
+msgstr "Fransız Guyanası"
 
 #: activities/geography/resource/board/board4_0.qml:80
 msgctxt "board4_0|"
@@ -12979,7 +12757,7 @@ msgstr "Hollanda"
 #: activities/geography/resource/board/board5_0.qml:73
 msgctxt "board5_0|"
 msgid "Luxembourg"
-msgstr ""
+msgstr "Lüksemburg"
 
 #: activities/geography/resource/board/board5_0.qml:81
 msgctxt "board5_0|"
@@ -13034,7 +12812,7 @@ msgstr "Doğu Avrupa"
 #: activities/geography/resource/board/board6_0.qml:24
 msgctxt "board6_0|"
 msgid "Cyprus"
-msgstr ""
+msgstr "Kıbrıs"
 
 #: activities/geography/resource/board/board6_0.qml:32
 msgctxt "board6_0|"
@@ -13084,20 +12862,17 @@ msgstr "Romanya"
 #: activities/geography/resource/board/board6_0.qml:97
 msgctxt "board6_0|"
 msgid "Poland"
-msgstr "Polanya"
+msgstr "Polonya"
 
 #: activities/geography/resource/board/board6_0.qml:104
 msgctxt "board6_0|"
 msgid "Moldova"
-msgstr "Moldovya"
+msgstr "Moldova"
 
 #: activities/geography/resource/board/board6_0.qml:111
-#, fuzzy
-#| msgctxt "board6_0|"
-#| msgid "Macedonia"
 msgctxt "board6_0|"
 msgid "North Macedonia"
-msgstr "Makedonya"
+msgstr "Kuzey Makedonya"
 
 #: activities/geography/resource/board/board6_0.qml:119
 msgctxt "board6_0|"
@@ -13180,12 +12955,9 @@ msgid "Sudan"
 msgstr "Sudan"
 
 #: activities/geography/resource/board/board7_0.qml:59
-#, fuzzy
-#| msgctxt "board15_1|"
-#| msgid "Southern Scotland"
 msgctxt "board7_0|"
 msgid "South Sudan"
-msgstr "Güney İskoçya"
+msgstr "Güney Sudan"
 
 #: activities/geography/resource/board/board7_0.qml:66
 msgctxt "board7_0|"
@@ -13243,9 +13015,6 @@ msgid "Liberia"
 msgstr "Liberya"
 
 #: activities/geography/resource/board/board7_0.qml:143
-#, fuzzy
-#| msgctxt "board8_0|"
-#| msgid "Kenya"
 msgctxt "board7_0|"
 msgid "Kenya"
 msgstr "Kenya"
@@ -13278,7 +13047,7 @@ msgstr "Gambiya"
 #: activities/geography/resource/board/board7_0.qml:185
 msgctxt "board7_0|"
 msgid "Gabon"
-msgstr "Gabun"
+msgstr "Gabon"
 
 #: activities/geography/resource/board/board7_0.qml:192
 msgctxt "board7_0|"
@@ -13288,7 +13057,7 @@ msgstr "Eritre"
 #: activities/geography/resource/board/board7_0.qml:199
 msgctxt "board7_0|"
 msgid "Ethiopia"
-msgstr "Etyopya"
+msgstr "Etiyopya"
 
 #: activities/geography/resource/board/board7_0.qml:206
 msgctxt "board7_0|"
@@ -13363,12 +13132,12 @@ msgstr "Tanzanya"
 #: activities/geography/resource/board/board8_0.qml:52
 msgctxt "board8_0|"
 msgid "Eswatini"
-msgstr ""
+msgstr "Esvatini"
 
 #: activities/geography/resource/board/board8_0.qml:59
 msgctxt "board8_0|"
 msgid "South Africa"
-msgstr "Güney Africa"
+msgstr "Güney Afrika"
 
 #: activities/geography/resource/board/board8_0.qml:66
 msgctxt "board8_0|"
@@ -13376,9 +13145,6 @@ msgid "Rwanda"
 msgstr "Ruanda"
 
 #: activities/geography/resource/board/board8_0.qml:73
-#, fuzzy
-#| msgctxt "board8_0|"
-#| msgid "Republic of Congo"
 msgctxt "board8_0|"
 msgid "Republic of the Congo"
 msgstr "Kongo Cumhuriyeti"
@@ -13416,7 +13182,7 @@ msgstr "Kenya"
 #: activities/geography/resource/board/board8_0.qml:122
 msgctxt "board8_0|"
 msgid "Gabon"
-msgstr "Gabun"
+msgstr "Gabon"
 
 #: activities/geography/resource/board/board8_0.qml:129
 msgctxt "board8_0|"
@@ -13424,9 +13190,6 @@ msgid "Equatorial Guinea"
 msgstr "Ekvator Ginesi"
 
 #: activities/geography/resource/board/board8_0.qml:136
-#, fuzzy
-#| msgctxt "board8_0|"
-#| msgid "Democratic Republic of Congo"
 msgctxt "board8_0|"
 msgid "Democratic Republic of the Congo"
 msgstr "Kongo Demokratik Cumhuriyeti"
@@ -13447,12 +13210,9 @@ msgid "Angola"
 msgstr "Angola"
 
 #: activities/geography/resource/board/board9_0.qml:15
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "Australia"
 msgctxt "board9_0|"
 msgid "Western Asia"
-msgstr "Avustralya"
+msgstr "Batı Asya"
 
 #: activities/geography/resource/board/board9_0.qml:24
 msgctxt "board9_0|"
@@ -13462,7 +13222,7 @@ msgstr "Türkiye"
 #: activities/geography/resource/board/board9_0.qml:31
 msgctxt "board9_0|"
 msgid "Cyprus"
-msgstr ""
+msgstr "Kıbrıs"
 
 #. Translators: Strip Asia| and translate only Georgia
 #: activities/geography/resource/board/board9_0.qml:39
@@ -13473,15 +13233,12 @@ msgstr "Asya|Gürcistan"
 #: activities/geography/resource/board/board9_0.qml:46
 msgctxt "board9_0|"
 msgid "Azerbaijan"
-msgstr "Azerbeycan"
+msgstr "Azerbaycan"
 
 #: activities/geography/resource/board/board9_0.qml:53
-#, fuzzy
-#| msgctxt "board9_0|"
-#| msgid "Turkmenistan"
 msgctxt "board9_0|"
 msgid "Armenia"
-msgstr "Türkmenistan"
+msgstr "Ermenistan"
 
 #: activities/geography/resource/board/board9_0.qml:60
 msgctxt "board9_0|"
@@ -13506,17 +13263,17 @@ msgstr "Ürdün"
 #: activities/geography/resource/board/board9_0.qml:88
 msgctxt "board9_0|"
 msgid "Israel"
-msgstr ""
+msgstr "İsrail"
 
 #: activities/geography/resource/board/board9_0.qml:95
 msgctxt "board9_0|"
 msgid "Palestine"
-msgstr ""
+msgstr "Filistin"
 
 #: activities/geography/resource/board/board9_0.qml:103
 msgctxt "board9_0|"
 msgid "Lebanon"
-msgstr ""
+msgstr "Lübnan"
 
 #: activities/geography/resource/board/board9_0.qml:110
 msgctxt "board9_0|"
@@ -13526,12 +13283,12 @@ msgstr "Suudi Arabistan"
 #: activities/geography/resource/board/board9_0.qml:117
 msgctxt "board9_0|"
 msgid "Kuwait"
-msgstr ""
+msgstr "Kuveyt"
 
 #: activities/geography/resource/board/board9_0.qml:124
 msgctxt "board9_0|"
 msgid "Qatar"
-msgstr ""
+msgstr "Katar"
 
 #: activities/geography/resource/board/board9_0.qml:131
 msgctxt "board9_0|"
@@ -13556,7 +13313,7 @@ msgstr "Mısır"
 #: activities/geography/resource/board/board9_0.qml:159
 msgctxt "board9_0|"
 msgid "Bahrain"
-msgstr ""
+msgstr "Bahreyn"
 
 #: activities/gletters/ActivityConfig.qml:45
 #: activities/wordsgame/ActivityConfig.qml:45
@@ -13566,12 +13323,9 @@ msgstr "Yalnızca BÜYÜK harf kipi"
 
 #. Activity title
 #: activities/gletters/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Simple Letters"
 msgctxt "ActivityInfo|"
 msgid "Simple letters"
-msgstr "Basit Harfler"
+msgstr "Basit harfler"
 
 #. Help title
 #. ----------
@@ -13590,12 +13344,9 @@ msgstr "Ekran ve klavyedeki harflerin eşleştirilmesi."
 
 #. Activity title
 #: activities/gnumch-equality/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Gnumch Inequality"
 msgctxt "ActivityInfo|"
 msgid "Gnumch equality"
-msgstr "Gnumch Eşitsizliği"
+msgstr "Ham Ham eşitlik"
 
 #. Help title
 #. ----------
@@ -13607,8 +13358,7 @@ msgid ""
 "Guide the Number Muncher to the expressions that equal the number at the "
 "bottom of the screen."
 msgstr ""
-"Number Muncher'ı (Yeşil canavar), ekranın altındaki sayıya eşit olan "
-"ifadelere yönlendir."
+"Sayı Löpürdetici'yi, ekranın altındaki sayıya eşit olan ifadelere yönlendir."
 
 #. Help goal
 #: activities/gnumch-equality/ActivityInfo.qml:20
@@ -13630,12 +13380,12 @@ msgid ""
 "you can do like with a mouse or swipe anywhere in the direction you want to "
 "move and tap to swallow the numbers."
 msgstr ""
-"Klavyen varsa, hareket etmek için ok tuşlarını kullanabilir ve sayıları "
-"yutmak için boşluk tuşuna basabilirsin. Bir fare ile hareket etmek için "
-"konumunun yanındaki bloğa tıklayabilir ve sayıları yutmak için yeniden "
-"tıklayabilirsin. Dokunmatik ekran ile fareyi beğenebilir veya hareket "
-"ettirmek istediğin yönde herhangi bir yeri kaydırabilir ve sayıları yutmak "
-"için dokunabilirsin."
+"Klavyen varsa ok düğmelerini kullanarak hareket edebilir ve boşluk düğmesine "
+"basarak sayıları yutabilirsin. Bir fare ile hareket etmek için konumunun "
+"yanındaki bloka tıklayabilir ve sayıları yutmak için tekrar tıklayabilirsin. "
+"Dokunmatik ekran ile fare gibi hareketler yapabilir veya hareket ettirmek "
+"istediğin yönde herhangi bir yere dokunabilir ve sayıları yutmak için "
+"dokunabilirsin."
 
 #: activities/gnumch-equality/ActivityInfo.qml:28
 #: activities/gnumch-factors/ActivityInfo.qml:28
@@ -13644,7 +13394,7 @@ msgstr ""
 #: activities/gnumch-primes/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Take care to avoid the Troggles."
-msgstr "Troggle'lardan kaçınmaya özen göster."
+msgstr "Unga'lardan kaçınmaya özen göster."
 
 #: activities/gnumch-equality/ActivityInfo.qml:31
 #: activities/gnumch-factors/ActivityInfo.qml:31
@@ -13653,12 +13403,12 @@ msgstr "Troggle'lardan kaçınmaya özen göster."
 #: activities/gnumch-primes/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
 msgid "Space: swallow the numbers"
-msgstr "Boşluk: sayıları yut"
+msgstr "Boşluk: Sayıları yut"
 
 #: activities/gnumch-equality/resource/1/Data.qml:13
 msgctxt "Data|"
 msgid "Practice addition equality."
-msgstr "Çarpma eşitliği alıştırması yap."
+msgstr "Toplama eşitliği alıştırması yap."
 
 #: activities/gnumch-equality/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -13679,36 +13429,36 @@ msgstr "Bölme eşitliği alıştırması yap."
 #, qt-format
 msgctxt "TopPanel|"
 msgid "Equal to %1"
-msgstr "%1 e eşit"
+msgstr "%1 sayısına eşit"
 
 #: activities/gnumch-equality/TopPanel.qml:54
 #, qt-format
 msgctxt "TopPanel|"
 msgid "Not equal to %1"
-msgstr "%1 'e eşit değil"
+msgstr "%1 sayısına eşit değil"
 
 #: activities/gnumch-equality/TopPanel.qml:56
 #, qt-format
 msgctxt "TopPanel|"
 msgid "Factor of %1"
-msgstr "%1 faktörü"
+msgstr "%1 sayısını çarpanı"
 
 #: activities/gnumch-equality/TopPanel.qml:58
 #, qt-format
 msgctxt "TopPanel|"
 msgid "Multiple of %1"
-msgstr "%1 in katı"
+msgstr "%1 sayısının katı"
 
 #: activities/gnumch-equality/TopPanel.qml:60
 #, qt-format
 msgctxt "TopPanel|"
 msgid "Primes less than %1"
-msgstr "%1 'den küçük asal sayılar"
+msgstr "%1 sayısından küçük asal sayılar"
 
 #: activities/gnumch-equality/Warning.qml:39
 msgctxt "Warning|"
 msgid "You were eaten by a Troggle."
-msgstr "Troggle tarafından yendin."
+msgstr "Unga seni yedi."
 
 #: activities/gnumch-equality/Warning.qml:43
 msgctxt "Warning|"
@@ -13718,13 +13468,13 @@ msgstr "Yanlış bir sayıyı yedin."
 #: activities/gnumch-equality/Warning.qml:58
 msgctxt "Warning|"
 msgid "1 is not a prime number."
-msgstr "1 asal sayı değildir."
+msgstr "1, asal sayı değildir."
 
 #: activities/gnumch-equality/Warning.qml:68
 #, qt-format
 msgctxt "Warning|"
 msgid "%1 is divisible by %2"
-msgstr "%1, %2 tarafından bölünebilir"
+msgstr "%1, %2 ile bölünebilir"
 
 #: activities/gnumch-equality/Warning.qml:76
 msgctxt "Warning|"
@@ -13735,38 +13485,35 @@ msgstr "ve"
 #, qt-format
 msgctxt "Warning|"
 msgid "Multiples of %1 include %2, "
-msgstr "%1 'in çarpımları %2' yi içerir, "
+msgstr "%1 sayısının katları %2 sayısını içerir, "
 
 #: activities/gnumch-equality/Warning.qml:83
 #, qt-format
 msgctxt "Warning|"
 msgid "but %1 is not a multiple of %2."
-msgstr "ama %1 %2 nin katı değil."
+msgstr "ancak %1, %2 sayısının katı değildir."
 
 #: activities/gnumch-equality/Warning.qml:100
 #, qt-format
 msgctxt "Warning|"
 msgid "and %1 are the divisors of %2."
-msgstr "ve %1, %2 'nin bölenidir."
+msgstr "ve %1, %2 sayısının bölenidir."
 
 #: activities/gnumch-equality/Warning.qml:129
 msgctxt "Warning|"
 msgid "Press \"Return\" or click on me to continue."
-msgstr "Sürdürmek için \"Dönüş\" düğmesine bas."
+msgstr "Sürdürmek için \"Dönüş\" düğmesine veya buraya bas."
 
 #: activities/gnumch-equality/WarnMonster.qml:41
 msgctxt "WarnMonster|"
 msgid "Be careful, a troggle!"
-msgstr "Dikkatli ol, bir troggle var !"
+msgstr "Dikkatli ol, bir Unga var!"
 
 #. Activity title
 #: activities/gnumch-factors/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Gnumch Factors"
 msgctxt "ActivityInfo|"
 msgid "Gnumch factors"
-msgstr "Gnumch Çarpanları"
+msgstr "Ham Ham çarpanlar"
 
 #. Help title
 #: activities/gnumch-factors/ActivityInfo.qml:17
@@ -13775,7 +13522,7 @@ msgid ""
 "Guide the Number Muncher to all the factors of the number at the bottom of "
 "the screen."
 msgstr ""
-"Number Muncher'ı (yeşil canavar), ekranın altındaki sayının tüm çarpanlarına "
+"Sayı Löpürdetici'yi, ekranın altındaki sayının çarpanı olan tüm ifadelere "
 "yönlendir."
 
 #. Help goal
@@ -13783,7 +13530,7 @@ msgstr ""
 #: activities/gnumch-multiples/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Learn about multiples and factors."
-msgstr "Katlar ve çarpanları öğren."
+msgstr "Katları ve çarpanları öğren."
 
 #. Help manual
 #: activities/gnumch-factors/ActivityInfo.qml:24
@@ -13799,19 +13546,16 @@ msgid ""
 msgstr ""
 "Bir sayının çarpanları, o sayıyı eşit olarak bölen tüm sayılardır. Örneğin "
 "6'nın çarpanları 1, 2, 3 ve 6'dır. 4, 6'nın çarpanı değildir çünkü 6, 4 eşit "
-"parçaya bölünemez. Bir sayı, ikinci bir sayının katı ise, ikinci sayı, "
-"birinci sayının bir çarpanıdır. Katları aileler olarak düşünebilirsiniz ve "
-"faktörler bu ailelerdeki insanlardır. Yani 1, 2, 3 ve 6'nın tümü 6 ailesine "
-"uyuyor, ancak 4'ü başka bir aileye ait."
+"parçaya bölünemez. Bir sayı ikinci sayının katıysa ikinci sayı birinci "
+"sayının çarpanıdır. Katları aileler olarak düşünebilirsiniz ve çarpanlar bu "
+"ailelerdeki insanlardır. Yani 1, 2, 3 ve 6'nın hepsi 6 ailesine girer; ancak "
+"4 başka bir aileye aittir."
 
 #. Activity title
 #: activities/gnumch-inequality/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Gnumch Inequality"
 msgctxt "ActivityInfo|"
 msgid "Gnumch inequality"
-msgstr "Gnumch Eşitsizliği"
+msgstr "Ham Ham eşitsizlik"
 
 #. Help title
 #: activities/gnumch-inequality/ActivityInfo.qml:18
@@ -13820,8 +13564,8 @@ msgid ""
 "Guide the Number Muncher to all the expressions that do not equal the number "
 "at the bottom of the screen."
 msgstr ""
-"Number Muncher'ı, (yeşil canavar) ekranın altındaki verilen sayıya eşit "
-"olmayan tüm ifadelere yönlendir."
+"Sayı Löpürdetici'yi, ekranın altındaki sayıya eşit olmayan tüm ifadelere "
+"yönlendir."
 
 #. Help goal
 #: activities/gnumch-inequality/ActivityInfo.qml:21
@@ -13832,31 +13576,28 @@ msgstr "Toplama, çıkarma, çarpma ve bölme işlemi üzerine alıştırma yap.
 #: activities/gnumch-inequality/resource/1/Data.qml:13
 msgctxt "Data|"
 msgid "Practice addition inequality."
-msgstr "Toplama eşitsizliği üzerine alıştırma yap."
+msgstr "Eşit olmayan toplamalar üzerine alıştırma yap."
 
 #: activities/gnumch-inequality/resource/2/Data.qml:13
 msgctxt "Data|"
 msgid "Practice subtraction inequality."
-msgstr "Çıkarma eşitsizliği üzerine alıştırma yap."
+msgstr "Eşit olmayan çıkarmalar üzerine alıştırma yap."
 
 #: activities/gnumch-inequality/resource/3/Data.qml:13
 msgctxt "Data|"
 msgid "Practice multiplication inequality."
-msgstr "Çarpma işlemi eşitsizliği üzerine alıştırma yap."
+msgstr "Eşit olmayan çarpmalar üzerine alıştırma yap."
 
 #: activities/gnumch-inequality/resource/4/Data.qml:13
 msgctxt "Data|"
 msgid "Practice division inequality."
-msgstr "Bölme işlemi eşitsizliği üzerine alıştırma yap."
+msgstr "Eşit olmayan bölmeler üzerine alıştırma yap."
 
 #. Activity title
 #: activities/gnumch-multiples/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Gnumch Multiples"
 msgctxt "ActivityInfo|"
 msgid "Gnumch multiples"
-msgstr "Gnumch Çarpanları"
+msgstr "Ham Ham çarpanlar"
 
 #. Help title
 #: activities/gnumch-multiples/ActivityInfo.qml:17
@@ -13865,8 +13606,7 @@ msgid ""
 "Guide the Number Muncher to all the multiples of the number at the bottom of "
 "the screen."
 msgstr ""
-"Number Muncher'ı (yeşil canavar), ekranın altındaki sayının tüm katlarına "
-"yönlendir."
+"Sayı Löpürdetici'yi, ekranın altındaki sayının tüm katlarına yönlendir."
 
 #. Help manual
 #: activities/gnumch-multiples/ActivityInfo.qml:24
@@ -13885,32 +13625,30 @@ msgid ""
 "over. So 8 isn't a multiple of 5, nor is 23. Only 5, 10, 15, 20, 25 ... are "
 "multiples (or families or steps) of 5."
 msgstr ""
-"Bir sayının katları, o sayıya eşit olan tüm sayılardır. Örneğin, 24, 36, 48 "
-"ve 60, 12'nin katlarıdır. 25, 12'nin katı değildir çünkü 25'i elde etmek "
-"için 12 ile çarpılabilecek herhangi bir sayı yoktur. Bir sayı, ikinci bir "
-"sayının çarpanı ise, o zaman ikinci sayı birinci sayının katıdır. Katları "
-"aileler olarak düşünebilirsin ve çarpanlar bu ailelere ait kişilerdir. "
-"Çarpan 5, ebeveynler 10, büyükanne ve büyükbabalar 15, büyük büyükanne ve "
-"büyükbabalar 20, büyük büyük büyükanne 25 ve 5'in her fazladan adımı önde "
-"başka bir büyük! Ancak 5 rakamı 8 veya 23 aileye ait değil. Geriye hiçbir "
-"şey kalmadan 8 veya 23'e herhangi bir sayıda 5 sığdıramazsın. Yani 8, 5'in "
-"katı değildir, 23 de değildir. Yalnızca 5, 10, 15, 20, 25 ...5'in katlarıdır "
+"Bir sayının katları, özgün sayı ile başka bir sayının çarpımına eşit olan "
+"tüm sayılardır. Örneğin, 24, 36, 48 ve 60, 12'nin katlarıdır. 25, 12'nin "
+"katı değildir; çünkü 25'i elde etmek için 12 ile çarpılabilecek herhangi bir "
+"sayı yoktur. Bir sayı ikinci bir sayının çarpanıysa o zaman ikinci sayı "
+"birinci sayının katıdır. Katları aileler olarak düşünebilirsiniz ve "
+"çarpanlar bu ailelere ait insanlardır. 5 çarpanının anne-babasında 10, "
+"anneanne ve dedesinde 15, büyük anneanne ve dedesinde 20, büyük-büyük "
+"anneanne ve dedesinde 25 ve her bir üst kuşakta artı 5 ekleyerek gider! "
+"Ancak 5 sayısı 8 veya 23 ailelerine ait değildir. 8'e veya 23'e herhangi bir "
+"sayıda 5'i sığdıramazsınız, geriye hiçbir şey kalmaz. Yani 8, 5'in katı "
+"değildir, 23 de değildir. Yalnızca 5, 10, 15, 20, 25 ... 5'in katlarıdır "
 "(veya aileler veya adımlar)."
 
 #. Activity title
 #: activities/gnumch-primes/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Gnumch Primes"
 msgctxt "ActivityInfo|"
 msgid "Gnumch primes"
-msgstr "Gnumch Asal Sayılar"
+msgstr "Ham Ham asal sayılar"
 
 #. Help title
 #: activities/gnumch-primes/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Guide the Number Muncher to all the prime numbers."
-msgstr "Number Muncher'ı tüm asal sayılara yönlendir."
+msgstr "Sayı Löpürdetici'yi, tüm asal sayılara yönlendir."
 
 #. Help goal
 #: activities/gnumch-primes/ActivityInfo.qml:20
@@ -13930,13 +13668,13 @@ msgid ""
 "5), but you can see that 6 has 2 and 3 in its family as well (6 × 1 = 6, 2 × "
 "3 = 6). So 6 is not a prime number."
 msgstr ""
-"Asal sayılar, yalnızca kendi kendilerine bölünebilen sayılardır ve 1. Örnek, "
-"3 bir asal sayıdır, ancak 4 değildir (çünkü 4, 2'ye bölünebilir). Asal "
-"sayıları çok küçük aileler olarak düşünebilirsiniz: içlerinde yalnızca iki "
-"kişi var! Yalnızca kendileri ve 1. Onlara hiçbir şey kalmadan başka sayılar "
-"sığdıramazsınız. 5 bu yalnız sayılardan biridir (yalnızca 5 × 1 = 5), ancak "
-"6'nın da ailesinde 2 ve 3 olduğunu görebilirsiniz (6 × 1 = 6, 2 × 3 = 6). "
-"Yani 6 asal bir sayı değildir."
+"Asal sayılar yalnızca kendilerine ve 1'e bölünebilen sayılardır. Örneğin, 3 "
+"bir asal sayıdır; ancak 4 değildir (çünkü 4, 2'ye bölünebilir). Asal "
+"sayıları çok küçük aileler olarak düşünebilirsiniz: İçlerinde yalnızca iki "
+"kişi vardır! Yalnızca kendileri ve 1. Geriye hiçbir şey bırakmadan içlerine "
+"başka bir sayı sığdıramazsınız. 5, bu yalnız sayılardan biridir (yalnızca 5 "
+"× 1 = 5); ancak 6'nın ailesinde de 2 ve 3 olduğunu görebilirsiniz (6 × 1 = "
+"6, 2 × 3 = 6). Yani 6 asal sayı değildir."
 
 #: activities/graph-coloring/ActivityConfig.qml:21
 #: activities/superbrain/ActivityConfig.qml:21
@@ -13953,19 +13691,15 @@ msgstr "Şekiller"
 
 #. Activity title
 #: activities/graph-coloring/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Graph Coloring"
 msgctxt "ActivityInfo|"
 msgid "Graph coloring"
-msgstr "Grafik Renklendirme"
+msgstr "Grafik renklendirme"
 
 #. Help title
 #: activities/graph-coloring/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Color the graph so that no two adjacent nodes have the same color."
-msgstr ""
-"Grafiği, bitişik iki düğümün aynı renge sahip olmaması için renklendir."
+msgstr "Grafiği, bitişik iki düğüm aynı renk olmayacak biçimde renklendir."
 
 #. Help goal
 #: activities/graph-coloring/ActivityInfo.qml:20
@@ -13974,14 +13708,14 @@ msgid ""
 "Learn to distinguish between different colors/shapes and learn about "
 "relative positions."
 msgstr ""
-"Farklı renkleri / şekilleri ayırt etmeyi öğren ve ilişkili konumlar hakkında "
+"Farklı renkleri/şekilleri ayırt etmeyi öğren ve göreceli konumlar hakkında "
 "bilgi edin."
 
 #. Help prerequisite
 #: activities/graph-coloring/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid "Ability to distinguish different colors/shapes, sense of positions."
-msgstr "Farklı renkleri / şekilleri ayırt etme becerisi, konum duygusu."
+msgstr "Farklı renkleri/şekilleri ayırt etme becerisi, konum duygusu."
 
 #. Help manual
 #: activities/graph-coloring/ActivityInfo.qml:24
@@ -13991,14 +13725,14 @@ msgid ""
 "color. Select a node, then select an item in the list to place it on the "
 "node."
 msgstr ""
-"Renkleri / şekilleri grafiğe, bitişik iki düğümün aynı renge sahip olmaması "
-"için yerleştir. Bir düğüm seç, ardından düğüme yerleştirmek için listeden "
-"bir öge seç."
+"Renkleri/şekilleri grafiğe, bitişik iki düğüm aynı renk olmayacak biçimde "
+"yerleştir. Bir düğüm seç, ardından düğüme yerleştirmek için listeden bir öge "
+"seç."
 
 #: activities/graph-coloring/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Right and Left arrows: navigate"
-msgstr "Sağ ve Sol oklar: gezinme"
+msgstr "Sağ ve sol oklar: Dolaş"
 
 #. Activity title
 #: activities/gravity/ActivityInfo.qml:19
@@ -14037,7 +13771,7 @@ msgstr ""
 #: activities/gravity/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: move the spaceship"
-msgstr "Sol ve Sağ oklar: uzay gemisini hareket ettir"
+msgstr "Sağ ve sol oklar: Uzay gemisini hareket ettir"
 
 #: activities/gravity/Gravity.qml:210
 msgctxt "Gravity|"
@@ -14118,7 +13852,7 @@ msgstr "Seçilmedi"
 #: activities/guesscount/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Guesscount"
-msgstr "Sayıtahmin"
+msgstr "SayıTahmin"
 
 #. Help title
 #: activities/guesscount/ActivityInfo.qml:21
@@ -14127,7 +13861,7 @@ msgid ""
 "Guess the algebraic expression and drag the tiles to get a result equal to "
 "the Guesscount."
 msgstr ""
-"Cebirsel ifadeyi tahmin et ve Sayıtahmin'e eşit bir sonuç elde etmek için "
+"Cebirsel ifadeyi tahmin et ve SayıTahmin'e eşit bir sonuç elde etmek için "
 "karoları sürükle."
 
 #. Help goal
@@ -14150,7 +13884,7 @@ msgid ""
 "number to guess in the instruction."
 msgstr ""
 "Talimatta tahmin edilecek sayıyı elde etmek için uygun numaraları ve "
-"operatörleri kutulara sürükle."
+"işleçleri kutulara sürükle."
 
 #: activities/guesscount/Admin.qml:30
 #, qt-format
@@ -14178,7 +13912,7 @@ msgstr "%1/%2"
 #, qt-format
 msgctxt "Guesscount|"
 msgid "Guesscount: %1"
-msgstr "Sayıtahmin: %1"
+msgstr "SayıTahmin: %1"
 
 #: activities/guesscount/OperandRow.qml:40
 msgctxt "OperandRow|"
@@ -14188,27 +13922,27 @@ msgstr "Sayılar"
 #: activities/guesscount/OperatorRow.qml:42
 msgctxt "OperatorRow|"
 msgid "Operators"
-msgstr "Operatörler"
+msgstr "İşleçler"
 
 #: activities/guesscount/resource/1/Data.qml:20
 msgctxt "Data|"
 msgid "Practice algebraic calculations with a single operator."
-msgstr "Tek bir operatörle cebirsel hesaplamalar yap."
+msgstr "Tek bir işleçle cebirsel hesaplamalar yap."
 
 #: activities/guesscount/resource/2/Data.qml:14
 msgctxt "Data|"
 msgid "Practice algebraic calculations with two operators."
-msgstr "İki operatörle cebirsel hesaplamalar yap."
+msgstr "İki işleçle cebirsel hesaplamalar yap."
 
 #: activities/guesscount/resource/3/Data.qml:14
 msgctxt "Data|"
 msgid "Practice algebraic calculations with three operators."
-msgstr "Üç operatörle cebirsel hesaplamalar yap."
+msgstr "Üç işleçle cebirsel hesaplamalar yap."
 
 #: activities/guesscount/resource/4/Data.qml:14
 msgctxt "Data|"
 msgid "Practice algebraic calculations with four operators."
-msgstr "Dört operatörle cebirsel hesaplamalar yap."
+msgstr "Dört işleçle cebirsel hesaplamalar yap."
 
 #. Activity title
 #: activities/guessnumber/ActivityInfo.qml:15
@@ -14256,7 +13990,7 @@ msgstr "Basamaklar: Bir sayı gir"
 #: activities/guessnumber/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Backspace: erase a number"
-msgstr "Geri tuşu: bir sayıyı sil"
+msgstr "Geri: Bir sayı sil"
 
 #: activities/guessnumber/guessnumber.js:62
 #: activities/guessnumber/guessnumber.js:66
@@ -14329,7 +14063,7 @@ msgstr "Verilen sözcüğün harflerini tahmin et."
 msgctxt "ActivityInfo|"
 msgid "This is a good exercise to improve reading and spelling skills."
 msgstr ""
-"Bu oyun okuma ve konuşma yeteneğini geliştirmek için güzel bir alıştırma."
+"Bu oyun okuma ve konuşma yeteneğini geliştirmek için güzel bir alıştırmadır."
 
 #. Help manual
 #: activities/hangman/ActivityInfo.qml:24
@@ -14378,7 +14112,7 @@ msgid ""
 "GCompris is developed by the KDE community, you can translate GCompris by "
 "joining a translation team on <a href=\"%2\">%2</a>"
 msgstr ""
-"GCompris, KDE topluluğu tarafından geliştirilmiştir, <a href=\"%2\">%2</a> "
+"GCompris, KDE topluluğu tarafından geliştirilir, <a href=\"%2\">%2</a> "
 "üzerinden çeviri takımına katılarak GCompris'i çevirebilirsiniz"
 
 #: activities/hangman/Hangman.qml:403
@@ -14387,8 +14121,8 @@ msgid ""
 "We switched to English for this activity but you can select another language "
 "in the configuration dialog."
 msgstr ""
-"Bu etkinlik için İngilizceye geçtik, ancak ayarlar penceresinden başka bir "
-"dil seçebilirsiniz."
+"Bu etkinlik için İngilizceye döndük; ancak yapılandırma penceresinden başka "
+"bir dil seçebilirsin."
 
 #. Activity title
 #: activities/hanoi/ActivityInfo.qml:15
@@ -14421,7 +14155,7 @@ msgstr ""
 #: activities/hanoi/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "Concept taken from EPI games."
-msgstr "Konsept EPI oyunundan alınmıştır."
+msgstr "Konsept, EPI oyunlarından alınmıştır."
 
 #. Activity title
 #: activities/hanoi_real/ActivityInfo.qml:15
@@ -14446,7 +14180,7 @@ msgid ""
 msgstr ""
 "Oyunun amacı, aşağıdaki kurallara uyarak tüm diskleri başka bir direğe "
 "taşımaktır:\n"
-"    bir seferde yalnızca bir disk hareket ettirilebilir\n"
+"    bir kerede yalnızca bir disk hareket ettirilebilir\n"
 "    daha küçük bir diskin üzerine daha büyük disk yerleştirilemez\n"
 
 #. Help manual
@@ -14456,8 +14190,8 @@ msgid ""
 "Drag and drop the top pieces only from one peg to another, to reproduce the "
 "initial left side tower on the right peg."
 msgstr ""
-"Sağ mandaldaki ilk sol taraftaki kuleyi yeniden oluşturmak için üst "
-"parçaları yalnızca bir direkten diğerine sürükleyip bırak."
+"İlk sol yan kuleyi sağ mandalda yeniden oluşturmak için üst parçaları "
+"yalnızca bir mandaldan diğerine sürükleyip bırak."
 
 #: activities/hanoi_real/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
@@ -14477,7 +14211,7 @@ msgstr ""
 "hakkındaki bir efsaneye dayanıyor. Efsaneye göre, rahipler işlerini "
 "bitirdiğinde dünya sona erecekti. Bu nedenle bulmaca, Brahma Kulesi "
 "bulmacası olarak da bilinir. Lucas'ın bu efsaneyi icat edip etmediği veya "
-"ondan ilham alıp almadığı bilinmiyor. (kaynak Wikipedia: https://en."
+"ondan ilham alıp almadığı bilinmiyor. (Wikipedia kaynağı: https://en."
 "wikipedia.org/wiki/Tower_of_hanoi)"
 
 #: activities/hanoi_real/HanoiReal.qml:75
@@ -14490,7 +14224,7 @@ msgctxt "HanoiReal|"
 msgid ""
 "Build the same tower in the empty area as the one you see on the right-hand "
 "side"
-msgstr "Sağ tarafta gördüğünüz kuleyi boş alana inşa et"
+msgstr "Sağ tarafta gördüğün kuleyi boş alanda yeniden yap"
 
 #. Activity title
 #: activities/hexagon/ActivityInfo.qml:15
@@ -14592,7 +14326,7 @@ msgstr "balık teknesi"
 #: activities/imagename/resource/board/board1_0.qml:99
 msgctxt "board1_0|"
 msgid "bulb"
-msgstr "ampül"
+msgstr "ampul"
 
 #: activities/imagename/resource/board/board2_0.qml:58
 msgctxt "board2_0|"
@@ -14762,7 +14496,7 @@ msgstr "yelkenli"
 #: activities/imagename/resource/board/board7_0.qml:82
 msgctxt "board7_0|"
 msgid "bulb"
-msgstr "ampül"
+msgstr "ampul"
 
 #: activities/imagename/resource/board/board7_0.qml:90
 msgctxt "board7_0|"
@@ -14801,7 +14535,7 @@ msgstr "Doğru müzik aletinin üzerine tıkla."
 #: activities/instruments/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Tab: repeat the instrument sound"
-msgstr "Sekme: enstrüman sesini yinele"
+msgstr "Sekme: Çalgı sesini yinele"
 
 #: activities/instruments/instruments.js:13
 #: activities/instruments/instruments.js:62
@@ -14842,7 +14576,7 @@ msgstr "Piyanoyu bul"
 #: activities/instruments/instruments.js:129
 msgctxt "instruments|"
 msgid "Find the saxophone"
-msgstr "Saksofonu bul"
+msgstr "Saksafonu bul"
 
 #: activities/instruments/instruments.js:45
 #: activities/instruments/instruments.js:92
@@ -14868,7 +14602,7 @@ msgstr "Kemanı bul"
 #: activities/instruments/instruments.js:178
 msgctxt "instruments|"
 msgid "Find the drum kit"
-msgstr "Bateriyi bul"
+msgstr "Davulu bul"
 
 #: activities/instruments/instruments.js:151
 #: activities/instruments/instruments.js:183
@@ -14918,7 +14652,7 @@ msgstr "Mızıkayı bul"
 #: activities/instruments/instruments.js:254
 msgctxt "instruments|"
 msgid "Find the horn"
-msgstr "Korna'yı bul"
+msgstr "Kornayı bul"
 
 #: activities/instruments/instruments.js:226
 #: activities/instruments/instruments.js:259
@@ -14930,7 +14664,7 @@ msgstr "Marakas'ı bul"
 #: activities/instruments/instruments.js:264
 msgctxt "instruments|"
 msgid "Find the organ"
-msgstr "Org'u bul"
+msgstr "Orgu bul"
 
 #: activities/instruments/instruments.js:239
 #: activities/instruments/instruments.js:272
@@ -14953,21 +14687,18 @@ msgstr "Üçgeni bul"
 #: activities/instruments/instruments.js:287
 msgctxt "instruments|"
 msgid "Find the tambourine"
-msgstr "Tef'i bul"
+msgstr "Tefi bul"
 
 #: activities/instruments/instruments.js:292
 msgctxt "instruments|"
 msgid "Find the tuba"
-msgstr "Tuba'yı bul"
+msgstr "Tubayı bul"
 
 #. Activity title
 #: activities/land_safe/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Land Safe"
 msgctxt "ActivityInfo|"
 msgid "Land safe"
-msgstr "Güvenli İniş"
+msgstr "Güvenli iniş"
 
 #. Help title
 #: activities/land_safe/ActivityInfo.qml:17
@@ -14979,7 +14710,7 @@ msgstr "Uzay gemisini yeşil iniş alanına yönlendir."
 #: activities/land_safe/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Understand the acceleration caused by the gravity."
-msgstr "Yerçekiminin neden olduğu ivmeyi anlamaya çalış."
+msgstr "Yerçekimin neden olduğu ivmeyi anlamaya çalış."
 
 #. Help manual
 #: activities/land_safe/ActivityInfo.qml:24
@@ -14991,8 +14722,8 @@ msgid ""
 "every planet the acceleration will differ and as the spaceship comes closer "
 "and closer to the planet the acceleration increases."
 msgstr ""
-"Uzay gemisinin yaşadığı yerçekiminin neden olduğu ivme, gezegenin kütlesi "
-"ile doğru orantılıdır ve gezegenin merkezinden uzaklığın karesiyle ters "
+"Uzay gemisinin yaşadığı yerçekimin neden olduğu ivme, gezegenin kütlesi ile "
+"doğru orantılıdır ve gezegenin merkezinden uzaklığın karesiyle ters "
 "orantılıdır. Böylece, her gezegende ivme farklı olacak ve uzay gemisi "
 "gezegene yaklaştıkça ivme artacaktır."
 
@@ -15003,9 +14734,9 @@ msgid ""
 "left keys to control the direction. On touch screens you can control the "
 "rocket through the corresponding on-screen buttons."
 msgstr ""
-"İlk düzeylerde, itme gücünü kontrol etmek için yukarı / aşağı tuşlarını ve "
-"yönü kontrol etmek için sağ / sol tuşlarını kullan. Dokunmatik ekranlarda "
-"roketi ilgili ekrandaki düğmelerle kontrol edebilirsin."
+"İlk düzeylerde, itme gücünü denetim altında tutmak için yukarı/aşağı "
+"düğmelerini ve yönü denetlemek için sağ/sol düğmelerini kullan. Dokunmatik "
+"ekranlarda roketi ilgili ekrandaki düğmelerle yönlendirebilirsin."
 
 #: activities/land_safe/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
@@ -15014,8 +14745,8 @@ msgid ""
 "By rotating the spaceship you can trigger an acceleration in non-vertical "
 "direction using the up/down keys."
 msgstr ""
-"Daha ileri düzeylerde, uzay gemisini döndürmek için sağ / sol tuşlarını "
-"kullanabilirsin. Uzay gemisini döndürerek yukarı / aşağı tuşlarını "
+"Daha ileri düzeylerde, uzay gemisini döndürmek için sağ/sol düğmelerini "
+"kullanabilirsin. Uzay gemisini döndürerek yukarı/aşağı düğmelerini "
 "kullanarak dikey olmayan yönde bir ivme tetikleyebilirsin."
 
 #: activities/land_safe/ActivityInfo.qml:27
@@ -15040,7 +14771,7 @@ msgstr ""
 #: activities/land_safe/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
 msgid "Up and Down arrows: control the thrust of the rear engine"
-msgstr "Yukarı ve Aşağı oklar: arka motorun itme gücünü kontrol et"
+msgstr "Yukarı ve aşağı oklar: Arka motorun itme gücünü kontrol et"
 
 #: activities/land_safe/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
@@ -15048,7 +14779,7 @@ msgid ""
 "Left and Right arrows: at first levels, move to the sides; at higher levels, "
 "rotate the spaceship"
 msgstr ""
-"Sol ve Sağ oklar: ilk düzeylerde yanlara doğru hareket et; daha yüksek "
+"Sağ ve sol oklar: İlk düzeylerde yanlara doğru hareket et; daha yüksek "
 "düzeylerde uzay gemisini döndür"
 
 #: activities/land_safe/LandSafe.qml:580
@@ -15073,7 +14804,7 @@ msgstr "Hız: %1"
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Acceleration: %1"
-msgstr "Hızlanma: %1"
+msgstr "İvmelenme: %1"
 
 #: activities/land_safe/LandSafe.qml:645
 #, qt-format
@@ -15084,13 +14815,13 @@ msgstr "Yerçekimi: %1"
 #: activities/land_safe/resource/1/Data.qml:13
 msgctxt "Data|"
 msgid "The spaceship translates when you use the direction keys."
-msgstr "Yön tuşlarını kullandığında uzay gemisini çevirir."
+msgstr "Yön düğmelerini kullandığında uzay gemisini hareket ettirir."
 
 #: activities/land_safe/resource/1/Data.qml:17
 #: activities/land_safe/resource/2/Data.qml:17
 msgctxt "Data|"
 msgid "Ceres"
-msgstr "Ceres (cüce gezegen)"
+msgstr "Ceres"
 
 #: activities/land_safe/resource/1/Data.qml:24
 msgctxt "Data|"
@@ -15100,10 +14831,10 @@ msgid ""
 "landing platform.<br/>The landing platform turns green when the velocity is "
 "safe to land."
 msgstr ""
-"İtişi kontrol etmek için yukarı ve aşağı tuşlarını kullan. <br/> Yönü "
-"kontrol etmek için sağ ve sol tuşları kullan. <br/> Tux'un gemisini iniş "
-"platformuna doğru sürmelisin. <br/> İniş platformu yeşile döndüğünde hız "
-"iniş için güvenlidir."
+"İtişi kontrol etmek için yukarı ve aşağı düğmelerini kullan.<br/>Yönü "
+"kontrol etmek için sağ ve sol ok düğmelerini kullan.<br/>Tux'un gemisini "
+"iniş platformuna doğru sürmelisin. <br/> İniş platformu yeşile döndüğünde "
+"hız iniş için güvenlidir."
 
 #: activities/land_safe/resource/1/Data.qml:30
 #: activities/land_safe/resource/2/Data.qml:29
@@ -15144,7 +14875,7 @@ msgstr "Dünya"
 #: activities/land_safe/resource/2/Data.qml:13
 msgctxt "Data|"
 msgid "The spaceship rotates when you use the direction keys."
-msgstr "Yön tuşlarını kullandığında uzay gemisi döner."
+msgstr "Yön düğmelerini kullandığında uzay gemisi döner."
 
 #: activities/land_safe/resource/2/Data.qml:24
 msgctxt "Data|"
@@ -15153,9 +14884,9 @@ msgid ""
 "and left keys now control the rotation of the ship.<br/>To move the ship in "
 "horizontal direction you must first rotate and then accelerate."
 msgstr ""
-"Yukarı ve aşağı tuşları, arka motorun itişini kontrol eder. <br/> Sağ ve sol "
-"tuşlar artık geminin dönüşünü kontrol eder. <br/> Gemiyi yatay yönde hareket "
-"ettirmek için önce döndürmeli ve sonra hızlanmalısın."
+"Yukarı ve aşağı ok düğmeleri, arka motorun itişini denetler.<br/>Sağ ve sol "
+"düğmeler artık geminin dönüşünü denetler.<br/>Gemiyi yatay yönde hareket "
+"ettirmek için önce döndürmeli ve sonra ivmelenmelisin."
 
 #. Activity title
 #: activities/lang/ActivityInfo.qml:21
@@ -15197,7 +14928,7 @@ msgstr "Ayarlardan öğrenmek istediğin dili seçebilirsin."
 #: activities/lang/ActivityInfo.qml:35
 msgctxt "ActivityInfo|"
 msgid "Space or Enter: select an item from the list"
-msgstr "Boşluk veya Giriş: listeden bir öge seç"
+msgstr "Boşluk veya Giriş: Listeden bir öge seç"
 
 #: activities/lang/ActivityInfo.qml:36
 msgctxt "ActivityInfo|"
@@ -15222,7 +14953,7 @@ msgid ""
 "GCompris is developed by the KDE community, you can translate GCompris by "
 "joining a translation team on <a href=\"%2\">%2</a>"
 msgstr ""
-"GCompris, KDE topluluğu tarafından geliştirilmiştir, <a href=\"%2\">%2</a> "
+"GCompris, KDE topluluğu tarafından geliştirilir, <a href=\"%2\">%2</a> "
 "üzerinden çeviri takımına katılarak GCompris'i çevirebilirsiniz"
 
 #: activities/lang/Lang.qml:143
@@ -15231,8 +14962,8 @@ msgid ""
 "We switched to English for this activity but you can select another language "
 "in the configuration dialog."
 msgstr ""
-"Bu etkinlik için İngilizceye döndük, ancak ayarlar penceresinden başka bir "
-"dil seçebilirsin."
+"Bu etkinlik için İngilizceye döndük; ancak yapılandırma penceresinden başka "
+"bir dil seçebilirsin."
 
 #: activities/lang/Lang.qml:191 activities/lang/Lang.qml:192
 msgctxt "Lang|"
@@ -15242,12 +14973,12 @@ msgstr "diğer"
 #: activities/lang/Lang.qml:193
 msgctxt "Lang|"
 msgid "action"
-msgstr "hareket"
+msgstr "eylem"
 
 #: activities/lang/Lang.qml:193
 msgctxt "Lang|"
 msgid "adjective"
-msgstr "sıfat"
+msgstr "önad"
 
 #: activities/lang/Lang.qml:194
 msgctxt "Lang|"
@@ -15267,12 +14998,12 @@ msgstr "kişi"
 #: activities/lang/Lang.qml:195
 msgctxt "Lang|"
 msgid "bodyparts"
-msgstr "vücudun kısımları"
+msgstr "vücut kısımları"
 
 #: activities/lang/Lang.qml:196
 msgctxt "Lang|"
 msgid "clothes"
-msgstr "kıyafetler"
+msgstr "giysiler"
 
 #: activities/lang/Lang.qml:196
 msgctxt "Lang|"
@@ -15332,17 +15063,17 @@ msgstr "mobilya"
 #: activities/lang/Lang.qml:202
 msgctxt "Lang|"
 msgid "houseware"
-msgstr "ev eşyaları"
+msgstr "ev eşyası"
 
 #: activities/lang/Lang.qml:203
 msgctxt "Lang|"
 msgid "tool"
-msgstr "alet"
+msgstr "araç"
 
 #: activities/lang/Lang.qml:203
 msgctxt "Lang|"
 msgid "food"
-msgstr "yemek"
+msgstr "yiyecek"
 
 #: activities/lang/Lang.qml:204
 msgctxt "Lang|"
@@ -15382,7 +15113,7 @@ msgstr ""
 #: activities/learn_subtractions/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Space: select or deselect a circle"
-msgstr "Boşluk: bir daire seç veya seçimini kaldır"
+msgstr "Boşluk: Bir daire seç veya seçimini kaldır"
 
 #: activities/learn_additions/resource/1/Data.qml:14
 msgctxt "Data|"
@@ -15401,21 +15132,15 @@ msgstr "1, 2, 3 ve 4 ile toplama."
 
 #. Activity title
 #: activities/learn_decimals/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn division of numbers."
 msgctxt "ActivityInfo|"
 msgid "Learn decimal numbers"
-msgstr "Sayıların bölünmesini öğrenme."
+msgstr "Ondalık sayıları öğren."
 
 #. Help title
 #: activities/learn_decimals/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn additions with small numbers."
 msgctxt "ActivityInfo|"
 msgid "Learn decimals with small numbers."
-msgstr "Küçük sayılarla toplama işlemini öğren."
+msgstr "Küçük sayılarla ondalıkları öğren."
 
 #. Help goal
 #: activities/learn_decimals/ActivityInfo.qml:19
@@ -15424,6 +15149,8 @@ msgid ""
 "Learn decimals by counting how many squares are needed to represent the "
 "decimal number."
 msgstr ""
+"Ondalık sayıyı temsil etmek için kaç tane kare gerektiğini sayarak ondalık "
+"sayıları öğren."
 
 #. Help manual
 #: activities/learn_decimals/ActivityInfo.qml:23
@@ -15434,6 +15161,10 @@ msgid ""
 "until the number of dropped bars corresponds to the displayed decimal "
 "number. Then click on the OK button to validate your answer."
 msgstr ""
+"Bir ondalık sayı görüntüleniyor. Çubuğun bir bölümünü seçmek için oku "
+"sürükle ve çubuğun seçili bölümünü boş alana sürükle. Düşen çubukların "
+"sayısı görüntülenen ondalık sayıya karşılık gelene kadar bu adımları yinele. "
+"Ardından, yanıtını doğrulamak için OK düğmesine tıkla."
 
 #: activities/learn_decimals/learn_decimals.js:33
 msgctxt "learn_decimals|"
@@ -15441,6 +15172,8 @@ msgid ""
 "A decimal number is displayed. The bar with the arrow represents a full "
 "unit, and each square in it represents one tenth of this unit."
 msgstr ""
+"Bir ondalık sayı görüntüleniyor. Oklu çubuk tam bir birimi temsil eder ve "
+"içindeki her kare bu birimin onda birini temsil eder."
 
 #: activities/learn_decimals/learn_decimals.js:37
 msgctxt "learn_decimals|"
@@ -15450,6 +15183,10 @@ msgid ""
 "bars corresponds to the displayed decimal number. Then click on the OK "
 "button to validate your answer."
 msgstr ""
+"Çubuğun bir bölümünü seçmek için oku sürükle ve çubuğun seçili bölümünü boş "
+"alana sürükle. Düşen çubukların sayısı görüntülenen ondalık sayıya karşılık "
+"gelene kadar bu adımları yinele. Ardından, yanıtını doğrulamak için OK "
+"düğmesine tıkla."
 
 #: activities/learn_decimals/learn_decimals.js:44
 msgctxt "learn_decimals|"
@@ -15458,6 +15195,9 @@ msgid ""
 "number from the subtraction is represented with bars. One bar represents a "
 "full unit, and each square in it represents one tenth of this unit."
 msgstr ""
+"İki ondalık sayı içeren bir çıkarma görüntüleniyor. Altında, çıkarmadan elde "
+"edilen ilk sayı çubuklarla gösterilir. Bir çubuk tam bir birimi temsil eder "
+"ve içindeki her kare bu birimin onda birini temsil eder."
 
 #: activities/learn_decimals/learn_decimals.js:48
 msgctxt "learn_decimals|"
@@ -15485,6 +15225,8 @@ msgid ""
 "represents a full unit, and each square in it represents one tenth of this "
 "unit."
 msgstr ""
+"İki ondalık sayı içeren bir ek görüntüleniyor. Oklu çubuk tam bir birimi "
+"temsil eder ve içindeki her kare bu birimin onda birini temsil eder."
 
 #: activities/learn_decimals/learn_decimals.js:63
 msgctxt "learn_decimals|"
@@ -15494,11 +15236,16 @@ msgid ""
 "bars corresponds to the result of the addition, and click on the OK button "
 "to validate your answer."
 msgstr ""
+"Çubuğun bir bölümünü seçmek için oku sürükle ve çubuğun seçili bölümünü boş "
+"alana sürükle. Düşen çubukların sayısı toplamanın sonucuna karşılık gelene "
+"kadar bu adımları yinele ve yanıtını doğrulamak için OK düğmesine tıkla."
 
 #: activities/learn_decimals/learn_decimals.js:74
 msgctxt "learn_decimals|"
 msgid "A quantity is requested. The arrow allows to select up to 10 oranges."
 msgstr ""
+"Bir nicelik talep edilir. Ok, 10 adede kadar portakalın seçilmesine izin "
+"verir."
 
 #: activities/learn_decimals/learn_decimals.js:78
 msgctxt "learn_decimals|"
@@ -15508,71 +15255,62 @@ msgid ""
 "corresponds to the requested quantity. Then click on the OK button to "
 "validate your answer."
 msgstr ""
+"Bir dizi portakal seçmek için oku sürükle ve seçili portakalları boş alana "
+"sürükle. Portakal sayısı istenen niceliğe gelene kadar bu adımları yinele. "
+"Ardından, yanıtını doğrulamak için OK düğmesine tıkla."
 
 #: activities/learn_decimals/Learn_decimals.qml:112
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the number: %1"
-msgstr ""
+msgstr "%1 sayısını görüntüle"
 
 #: activities/learn_decimals/Learn_decimals.qml:113
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the result of: %1 + %2"
-msgstr ""
+msgstr "%1 + %2 işleminin sonucunu görüntüle"
 
 #: activities/learn_decimals/Learn_decimals.qml:114
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the result of: %1 - %2"
-msgstr ""
+msgstr "%1 - %2 işleminin sonucunu görüntüle"
 
 #: activities/learn_decimals/Learn_decimals.qml:115
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Represent the quantity: %1"
-msgstr ""
+msgstr "%1 niceliğini temsil et"
 
 #: activities/learn_decimals/Learn_decimals.qml:568
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Enter the result: %1"
-msgstr "Sonucu gir: %1"
+msgstr "%1 sonucunu gir"
 
 #: activities/learn_decimals/resource/1/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between 2 and 18."
 msgctxt "Data|"
 msgid "Between 0.1 and 1."
-msgstr "2 ile 18 arası sayılar."
+msgstr "0,1 ve 1 arasında."
 
 #: activities/learn_decimals/resource/2/Data.qml:13
 #: activities/learn_quantities/resource/3/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between 1 and 8."
 msgctxt "Data|"
 msgid "Between 1 and 5."
-msgstr "1 ile 8 arası sayılar."
+msgstr "1 ile 5 arasında."
 
 #. Activity title
 #: activities/learn_decimals_additions/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn additions with small numbers."
 msgctxt "ActivityInfo|"
 msgid "Additions with decimal numbers"
-msgstr "Küçük sayılarla toplama işlemini öğren."
+msgstr "Ondalık sayılarla toplama"
 
 #. Help title
 #: activities/learn_decimals_additions/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn additions with small numbers."
 msgctxt "ActivityInfo|"
 msgid "Learn additions with decimal numbers."
-msgstr "Küçük sayılarla toplama işlemini öğren."
+msgstr "Ondalık sayılarla toplama işlemini öğren."
 
 #. Help goal
 #: activities/learn_decimals_additions/ActivityInfo.qml:19
@@ -15581,6 +15319,8 @@ msgid ""
 "Learn additions with decimal numbers by counting how many squares are needed "
 "to represent the result."
 msgstr ""
+"Sonucu temsil etmek için kaç tane kare gerektiğini sayarak ondalık sayılarla "
+"toplamayı öğren."
 
 #. Help manual
 #: activities/learn_decimals_additions/ActivityInfo.qml:23
@@ -15591,6 +15331,10 @@ msgid ""
 "Repeat these steps until the number of dropped bars corresponds to the "
 "result of the addition, and click on the OK button to validate your answer."
 msgstr ""
+"İki ondalık sayı içeren bir toplama görüntüleniyor. Çubuğun bir bölümünü "
+"seçmek için oku sürükle ve çubuğun seçili bölümünü boş alana sürükle. Düşen "
+"çubukların sayısı toplamanın sonucuna karşılık gelene kadar bu adımları "
+"yinele ve yanıtını doğrulamak için OK düğmesine tıkla."
 
 #: activities/learn_decimals_additions/ActivityInfo.qml:24
 #: activities/learn_decimals_subtractions/ActivityInfo.qml:24
@@ -15599,56 +15343,41 @@ msgid ""
 "If the answer is correct, type the corresponding result, and click on the OK "
 "button to validate your answer."
 msgstr ""
-"If the answer is correct, type the corresponding result, and click on the OK "
-"button to validate your answer."
+"Yanıt doğruysa ilgili sonucu yaz ve yanıtını doğrulamak için OK düğmesine "
+"tıkla."
 
 #: activities/learn_decimals_additions/ActivityInfo.qml:27
 #: activities/learn_decimals_subtractions/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Numbers: type the result"
-msgstr ""
+msgstr "Sayılar: Sonucu yaz"
 
 #: activities/learn_decimals_additions/resource/1/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Add stars up to 10."
 msgctxt "Data|"
 msgid "Add decimal numbers up to 1."
-msgstr "10'a kadar yıldız ekle."
+msgstr "1'e kadar olan ondalık sayıları topla."
 
 #: activities/learn_decimals_additions/resource/2/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Match the numbers up to 3."
 msgctxt "Data|"
 msgid "Add decimal numbers up to 3."
-msgstr "3'e kadar sayıları eşleştir."
+msgstr "3'e kadar olan ondalık sayıları topla."
 
 #: activities/learn_decimals_additions/resource/3/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Match the numbers up to 5."
 msgctxt "Data|"
 msgid "Add decimal numbers up to 5."
-msgstr "5'e kadar sayıları eşleştir."
+msgstr "5'e kadar olan ondalık sayıları topla."
 
 #. Activity title
 #: activities/learn_decimals_subtractions/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Subtraction of small numbers."
 msgctxt "ActivityInfo|"
 msgid "Subtractions with decimal numbers"
-msgstr "Küçük sayılar ile çıkarma işlemi."
+msgstr "Ondalık sayılarla çıkarma"
 
 #. Help title
 #: activities/learn_decimals_subtractions/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn subtractions with small numbers."
 msgctxt "ActivityInfo|"
 msgid "Learn subtractions with decimal numbers."
-msgstr "Küçük sayılarla çıkarma işlemini öğren."
+msgstr "Ondalık sayılarla çıkarma işlemini öğren."
 
 #. Help goal
 #: activities/learn_decimals_subtractions/ActivityInfo.qml:19
@@ -15657,6 +15386,8 @@ msgid ""
 "Learn subtractions with decimal numbers by counting how many squares need to "
 "be subtracted to represent the result."
 msgstr ""
+"Sonucu temsil etmek için kaç karenin çıkarılması gerektiğini sayarak ondalık "
+"sayılarla çıkarma yapmayı öğren."
 
 #. Help manual
 #: activities/learn_decimals_subtractions/ActivityInfo.qml:23
@@ -15668,35 +15399,30 @@ msgid ""
 "squares to subtract the second number and represent the result of the "
 "operation"
 msgstr ""
+"İki ondalık sayı içeren bir çıkarma görüntüleniyor. Çıkarmadan elde edilen "
+"ilk sayı çubuklarla gösterilir. Her çubuk bir birimi temsil eder ve "
+"çubuktaki her kare bu birimin onda birini temsil eder. İkinci sayıyı "
+"çıkarmak ve işlemin sonucunu temsil etmek için karelere tıkla"
 
 #: activities/learn_decimals_subtractions/resource/1/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Match the numbers up to 2."
 msgctxt "Data|"
 msgid "Subtract decimal numbers up to 1."
-msgstr "2'ye kadar sayıları eşleştir."
+msgstr "1'e kadar olan ondalık sayıları çıkar."
 
 #: activities/learn_decimals_subtractions/resource/2/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Match the numbers up to 3."
 msgctxt "Data|"
 msgid "Subtract decimal numbers up to 3."
-msgstr "3'e kadar sayıları eşleştir."
+msgstr "3'e kadar olan ondalık sayıları çıkar."
 
 #: activities/learn_decimals_subtractions/resource/3/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Match the numbers up to 5."
 msgctxt "Data|"
 msgid "Subtract decimal numbers up to 5."
-msgstr "5'e kadar sayıları eşleştir."
+msgstr "5'e kadar olan ondalık sayıları çıkar."
 
 #: activities/learn_digits/ActivityConfig.qml:23
 msgctxt "ActivityConfig|"
 msgid "Arabic numerals"
-msgstr "Arapça rakamlar"
+msgstr "Arap rakamları"
 
 #: activities/learn_digits/ActivityConfig.qml:24
 #: activities/reversecount/ActivityConfig.qml:21
@@ -15722,12 +15448,9 @@ msgstr "Sesleri etkinleştir"
 
 #. Activity title
 #: activities/learn_digits/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Count the items"
 msgctxt "ActivityInfo|"
 msgid "Count and color the circles"
-msgstr "Nesneleri say"
+msgstr "Daireleri say ve renklendir"
 
 #. Help title
 #: activities/learn_digits/ActivityInfo.qml:17
@@ -15754,7 +15477,7 @@ msgstr ""
 #: activities/learn_digits/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid "Tab: say the digit again"
-msgstr "Sekme: rakamı yeniden söyle"
+msgstr "Sekme: Rakamı yeniden söyle"
 
 #: activities/learn_digits/resource/1/Data.qml:14
 msgctxt "Data|"
@@ -15803,18 +15526,15 @@ msgstr "0 - 9 arası rakamlar."
 
 #. Activity title
 #: activities/learn_quantities/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn additions"
 msgctxt "ActivityInfo|"
 msgid "Learn quantities"
-msgstr "Toplama işlemlerini öğren"
+msgstr "Miktarları öğren"
 
 #. Help title
 #: activities/learn_quantities/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Learn to represent a quantity of objects."
-msgstr ""
+msgstr "Bir miktar nesneyi temsil etmeyi öğren."
 
 #. Help goal
 #: activities/learn_quantities/ActivityInfo.qml:19
@@ -15823,6 +15543,8 @@ msgid ""
 "Learn quantities by counting how many oranges are needed to represent the "
 "requested quantity."
 msgstr ""
+"İstenen miktarı temsil etmek için kaç portakal gerektiğini sayarak "
+"miktarları öğren."
 
 #. Help manual
 #: activities/learn_quantities/ActivityInfo.qml:23
@@ -15833,54 +15555,40 @@ msgid ""
 "number of dropped oranges corresponds to the requested quantity. Then click "
 "on the OK button to validate your answer."
 msgstr ""
+"Bir miktar talep ediliyor. Bir dizi portakal seçmek için oku sürükle ve "
+"seçili portakalları boş alana sürükle. Düşen portakal sayısı istenen "
+"niceliğe gelene kadar bu adımları yinele. Ardından, yanıtını doğrulamak için "
+"OK düğmesine tıkla."
 
 #: activities/learn_quantities/resource/1/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between 1 and 8."
 msgctxt "Data|"
 msgid "Between 1 and 3."
-msgstr "1 ile 8 arası sayılar."
+msgstr "1 ile 3 arasında."
 
 #: activities/learn_quantities/resource/2/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between 1 and 8."
 msgctxt "Data|"
 msgid "Between 1 and 4."
-msgstr "1 ile 8 arası sayılar."
+msgstr "1 ile 4 arasında."
 
 #: activities/learn_quantities/resource/4/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between 1 and 8."
 msgctxt "Data|"
 msgid "Between 1 and 6."
-msgstr "1 ile 8 arası sayılar."
+msgstr "1 ile 6 arasında."
 
 #: activities/learn_quantities/resource/5/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between 2 and 18."
 msgctxt "Data|"
 msgid "Between 1 and 10."
-msgstr "2 ile 18 arası sayılar."
+msgstr "1 ile 10 arasında."
 
 #: activities/learn_quantities/resource/6/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between 1 and 8."
 msgctxt "Data|"
 msgid "Between 10 and 20."
-msgstr "1 ile 8 arası sayılar."
+msgstr "10 ile 20 arasında."
 
 #: activities/learn_quantities/resource/7/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between 2 and 18."
 msgctxt "Data|"
 msgid "Between 20 and 50."
-msgstr "2 ile 18 arası sayılar."
+msgstr "20 ile 50 arasında."
 
 #. Activity title
 #: activities/learn_subtractions/ActivityInfo.qml:15
@@ -15926,42 +15634,33 @@ msgid "Subtractions with 1, 2, 3, 4 and 5."
 msgstr "1, 2, 3 ve 4 ile çıkarma işlemi."
 
 #: activities/learn_subtractions/resource/4/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2, 3, 4 and 5."
 msgctxt "Data|"
 msgid "Subtractions with 1, 2, 3, 4, 5, 6 and 7."
-msgstr "1, 2, 3 ve 4 ile çıkarma işlemi."
+msgstr "1, 2, 3, 4, 5, 6 ve 7 ile çıkarma işlemi."
 
 #: activities/learn_subtractions/resource/5/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2, 3, 4 and 5."
 msgctxt "Data|"
 msgid "Subtractions with 1, 2, 3, 4, 5, 6, 7, 8 and 9."
-msgstr "1, 2, 3 ve 4 ile çıkarma işlemi."
+msgstr "1, 2, 3, 4, 5, 6, 7, 8 ve 9 ile çıkarma işlemi."
 
 #. Activity title
 #: activities/left_right_click/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Memory training."
 msgctxt "ActivityInfo|"
 msgid "Mouse click training"
-msgstr "Hafıza eğitimi."
+msgstr "Fare tıklaması eğitimi"
 
 #. Help title
 #: activities/left_right_click/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid ""
 "Move animals to their homes using a left click or right click on your mouse."
-msgstr ""
+msgstr "Farenin sol veya sağ tıklamasını kullanarak hayvanları evlerine taşı."
 
 #. Help goal
 #: activities/left_right_click/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Using the mouse. Left and right click training."
-msgstr ""
+msgstr "Fareyi kullanma. Sol ve sağ tıklama alıştırması."
 
 #. Help manual
 #: activities/left_right_click/ActivityInfo.qml:23
@@ -15970,12 +15669,14 @@ msgid ""
 "A left click on a fish will move it to the pond. A right click on a monkey "
 "will move it to the tree. A message will show if you make the wrong click."
 msgstr ""
+"Bir balığa sol tıklama onu gölete götürür. Bir maymuna sağ tıklamak onu "
+"ağaca taşır. Yanlış tıklama yaparsanız bir ileti gösterilir."
 
 #. Activity title
 #: activities/leftright/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Find your left and right hands"
-msgstr "Sol ve sağ ellerini bul"
+msgstr "Sol ve sağ elini bul"
 
 #. Help title
 #: activities/leftright/ActivityInfo.qml:17
@@ -15989,7 +15690,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Distinguish right and left hands from different points of view. Spatial "
 "representation."
-msgstr "Farklı bakış açılarından sağ ve sol eli ayırt et. Mekansal temsil."
+msgstr "Farklı bakış açılarından sağ ve sol eli ayırt et. Uzamsal simgeleme."
 
 #. Help manual
 #: activities/leftright/ActivityInfo.qml:24
@@ -16004,12 +15705,12 @@ msgstr ""
 #: activities/leftright/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Left arrow: left hand answer"
-msgstr "Sol ok: sol el yanıtı"
+msgstr "Sol ok: Sol el yanıtı"
 
 #: activities/leftright/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Right arrow: right hand answer"
-msgstr "Sağ ok: Sağdaki yanıt"
+msgstr "Sağ ok: Sağ el yanıtı"
 
 #: activities/leftright/Leftright.qml:144
 msgctxt "Leftright|"
@@ -16044,12 +15745,12 @@ msgstr "Karışık Harf"
 #: activities/letter-in-word/ActivityConfig.qml:63
 msgctxt "ActivityConfig|"
 msgid "Upper Case"
-msgstr "Büyük Harf"
+msgstr "BÜYÜK Harf"
 
 #: activities/letter-in-word/ActivityConfig.qml:64
 msgctxt "ActivityConfig|"
 msgid "Lower Case"
-msgstr "Küçük Harf"
+msgstr "küçük Harf"
 
 #. Activity title
 #: activities/letter-in-word/ActivityInfo.qml:15
@@ -16087,7 +15788,7 @@ msgid ""
 "words in the list containing this letter and then press the OK button."
 msgstr ""
 "Uçağa iliştirilmiş bayrakta bir harf görüntülenir. Bu harfi içeren listedeki "
-"tüm sözcükleri seç ve ardından Tamam düğmesine bas."
+"tüm sözcükleri seç ve ardından OK düğmesine bas."
 
 #: activities/letter-in-word/LetterInWord.qml:298
 msgctxt "LetterInWord|"
@@ -16110,17 +15811,14 @@ msgid ""
 "We switched to English for this activity but you can select another language "
 "in the configuration dialog."
 msgstr ""
-"Bu etkinlik için İngilizceye dönüldü, ancak ayarlar penceresinden başka bir "
-"dil seçebilirsin."
+"Bu etkinlik için İngilizceye döndük; ancak yapılandırma penceresinden başka "
+"bir dil seçebilirsin."
 
 #. Activity title
 #: activities/lightsoff/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Lights Off"
 msgctxt "ActivityInfo|"
 msgid "Lights off"
-msgstr "Işıkları Kapat"
+msgstr "Işıklar kapalı"
 
 #. Help title
 #. ----------
@@ -16149,69 +15847,66 @@ msgid ""
 "The solver algorithm is described on Wikipedia. To know more about the "
 "Lights Off game: &lt;https://en.wikipedia.org/wiki/Lights_Out_(game)&gt;"
 msgstr ""
-"Çözüm algoritması, Wikipedia'da açıklanmıştır. Işıkları Kapat oyunu hakkında "
-"daha fazla bilgi için şuraya göz atın: &lt;http://en.wikipedia.org/wiki/"
-"Lights_Out_(game)&gt;"
+"Çözüm algoritması, Wikipedia'da ayrıntılı olarak açıklanmıştır. Işıklar "
+"Kapalı oyunu hakkında daha fazla bilgi için şuraya göz atabilirsin: &lt;"
+"http://en.wikipedia.org/wiki/Lights_Out_(game)&gt;"
 
 #: activities/lightsoff/resource/1/Data.qml:13
 msgctxt "Data|"
 msgid "5×5 grids, Very easy."
-msgstr "5 × 5 daire, Çok kolay."
+msgstr "5 × 5 ızgara, çok kolay."
 
 #: activities/lightsoff/resource/2/Data.qml:13
 msgctxt "Data|"
 msgid "5×5 grids, Easy."
-msgstr "5×5 daire, Kolay."
+msgstr "5 × 5 ızgara, kolay."
 
 #: activities/lightsoff/resource/3/Data.qml:13
 msgctxt "Data|"
 msgid "5×5 grids, Medium."
-msgstr "5×5 daire, Orta."
+msgstr "5 × 5  ızgara, orta."
 
 #: activities/lightsoff/resource/4/Data.qml:13
 msgctxt "Data|"
 msgid "5×5 grids, Difficult."
-msgstr "5×5 daire, Zor."
+msgstr "5 × 5 ızgara, zor."
 
 #: activities/lightsoff/resource/5/Data.qml:13
 msgctxt "Data|"
 msgid "5×5 grids, Very Difficult."
-msgstr "5×5 daire, Çok Zor."
+msgstr "5 × 5 ızgara, çok zor."
 
 #: activities/lightsoff/resource/6/Data.qml:13
 msgctxt "Data|"
 msgid "6×6 grids, Very Difficult."
-msgstr "6×6 Daire, Çok Zor."
+msgstr "6 × 6 ızgara, çok zor."
 
 #: activities/lightsoff/resource/7/Data.qml:13
 msgctxt "Data|"
 msgid "7×7 grids, Very Difficult."
-msgstr "7×7 daire, Çok Zor."
+msgstr "7 × 7 ızgara, çok zor."
 
 #: activities/lightsoff/resource/8/Data.qml:13
 msgctxt "Data|"
 msgid "8×8 grids, Very Difficult."
-msgstr "8×8 daire, Çok Zor."
+msgstr "8 × 8 ızgara, çok zor."
 
 #: activities/lightsoff/resource/9/Data.qml:13
 msgctxt "Data|"
 msgid "9×9 grids, Very Difficult."
-msgstr "9×9 daire, Çok Zor."
+msgstr "9 × 9 ızgara, çok zor."
 
 #. Activity title
 #: activities/louis-braille/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "The History of Louis Braille"
 msgctxt "ActivityInfo|"
 msgid "The history of Louis Braille"
-msgstr "Louis Braille'nin Tarihi"
+msgstr "Louis Braille'nin geçmişi"
 
 #. Help title
 #: activities/louis-braille/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Review the major dates of the inventor of the braille system."
-msgstr "Braille sisteminin mucidinin başlıca tarihlerini gözden geçir."
+msgstr "Braille sisteminin mucidinin başlıca geçmişini gözden geçir."
 
 #. Help manual
 #: activities/louis-braille/ActivityInfo.qml:24
@@ -16221,26 +15916,26 @@ msgid ""
 "braille system. Click on the previous and next buttons to move between the "
 "story pages. At the end, arrange the sequence in chronological order."
 msgstr ""
-"Louis Braille'in tarihini, biyografisini ve braille sisteminin icadını oku. "
-"Hikaye sayfaları arasında geçiş yapmak için önceki ve sonraki butonlara "
+"Louis Braille'in tarihini, biyografisini ve Braille sisteminin icadını oku. "
+"Hikaye sayfaları arasında geçiş yapmak için önceki ve sonraki düğmelerine "
 "tıkla. Sonrasında, sıralamayı kronolojik sıraya göre düzenle."
 
 #: activities/louis-braille/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Space or Enter: select an item and change its position"
-msgstr "Boşluk veya Giriş: bir öge seç ve konumunu değiştir"
+msgstr "Boşluk veya Giriş: Bir öge seç ve konumunu değiştir"
 
 #: activities/louis-braille/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid ""
 "Louis Braille Video: &lt;https://www.youtube.com/watch?v=9bdfC2j_4x4&gt;"
 msgstr ""
-"Louis Braille Videosu: &lt;http://www.youtube.com/watch?v=9bdfC2j_4x4&gt;"
+"Louis Braille videosu: &lt;http://www.youtube.com/watch?v=9bdfC2j_4x4&gt;"
 
 #: activities/louis-braille/louis_braille_data.js:12
 msgctxt "louis_braille_data|"
 msgid "Born on January 4th 1809 in Coupvray near Paris in France."
-msgstr "4 Ocak 1809'da Fransa'da Paris yakınlarında Coupvray'de doğdu."
+msgstr "4 Ocak 1809'da Fransa'da Paris yakınlarındaki Coupvray'de doğdu."
 
 #: activities/louis-braille/louis_braille_data.js:17
 msgctxt "louis_braille_data|"
@@ -16248,7 +15943,7 @@ msgid ""
 "Louis Braille injured his right eye with a stitching awl from his father's "
 "workshop."
 msgstr ""
-"Louis Braille, babasının atölyesinde dikilmiş bir baykuşla sağ gözünü "
+"Louis Braille, babasının atölyesinde gözüne batırdığı bir bızla sağ gözünü "
 "yaraladı."
 
 #: activities/louis-braille/louis_braille_data.js:22
@@ -16257,7 +15952,7 @@ msgid ""
 "At the age of three, Louis became blind due to a severe infection that "
 "spread to his left eye."
 msgstr ""
-"Louis üç yaşındayken sol gözünde yayılan ciddi bir enfeksiyon nedeniyle kör "
+"Louis üç yaşındayken sol gözünden yayılan ciddi bir enfeksiyon nedeniyle kör "
 "oldu."
 
 #: activities/louis-braille/louis_braille_data.js:27
@@ -16323,7 +16018,7 @@ msgid ""
 "you have motivation you can do incredible things."
 msgstr ""
 "Braille, dünya çapında bir standart olarak kabul edildi. Louis Braille, bir "
-"motivasyonun olursa, inanılmaz şeyler yapılabileceğini kanıtladı."
+"motivasyonun olursa inanılmaz şeyler yapılabileceğini kanıtladı."
 
 #: activities/louis-braille/ReorderList.qml:161
 msgctxt "ReorderList|"
@@ -16331,7 +16026,7 @@ msgid ""
 "Arrange the events in the order in which they happened. Select the line to "
 "move, then select its target position."
 msgstr ""
-"Olayları meydana geldikleri sıraya göre düzenle. Taşınacak hattı seçin, "
+"Olayları meydana geldikleri sıraya göre düzenle. Taşınacak hattı seç, "
 "ardından hedef konumunu seç."
 
 #. Activity title
@@ -16339,7 +16034,7 @@ msgstr ""
 #: activities/magic-hat-plus/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "The magician hat"
-msgstr "Sihirbazın şapkası"
+msgstr "Sihirbaz şapkası"
 
 #. Help title
 #: activities/magic-hat-minus/ActivityInfo.qml:17
@@ -16379,30 +16074,24 @@ msgid "Click on the hat to begin the game"
 msgstr "Şapkaya tıklayarak oyuna başla"
 
 #: activities/magic-hat-minus/resource/1/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Calculate remaining stars up to 30."
 msgctxt "Data|"
 msgid "Calculate remaining stars up to 3."
-msgstr "Kalan yıldızları 30'a kadar hesapla."
+msgstr "Kalan yıldızları 3'e kadar hesapla."
 
 #: activities/magic-hat-minus/resource/2/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Calculate remaining stars up to 5."
 msgctxt "Data|"
 msgid "Calculate remaining stars up to 4."
-msgstr "Kalan yıldızları 5'e kadar say."
+msgstr "Kalan yıldızları 4'e kadar hesapla."
 
 #: activities/magic-hat-minus/resource/3/Data.qml:13
 msgctxt "Data|"
 msgid "Calculate remaining stars up to 5."
-msgstr "Kalan yıldızları 5'e kadar say."
+msgstr "Kalan yıldızları 5'e kadar hesapla."
 
 #: activities/magic-hat-minus/resource/4/Data.qml:13
 msgctxt "Data|"
 msgid "Calculate remaining stars up to 10."
-msgstr "10'a kadar kalan yıldızları say."
+msgstr "Kalan yıldızları 10'a kadar hesapla."
 
 #: activities/magic-hat-minus/resource/5/Data.qml:13
 msgctxt "Data|"
@@ -16419,13 +16108,13 @@ msgstr "Katsayılarla 100'e kadar kalan yıldızları hesapla."
 #: activities/magic-hat-minus/resource/7/Data.qml:14
 msgctxt "Data|"
 msgid "Calculate remaining stars up to 1000 with coefficients."
-msgstr "Katsayılarla 1000'e kadar kalan yıldızları hesapla."
+msgstr "Katsayılarla 1.000'e kadar kalan yıldızları hesapla."
 
 #. Coefficients are the numbers by which the numbers of stars are multiplied to get the total
 #: activities/magic-hat-minus/resource/8/Data.qml:14
 msgctxt "Data|"
 msgid "Calculate remaining stars up to 10000 with coefficients."
-msgstr "Katsayılarla 10000'e kadar kalan yıldızları hesapla."
+msgstr "Katsayılarla 10.000'e kadar kalan yıldızları hesapla."
 
 #. text displaying coefficient with which the set of stars is to be multiplied along with multiplication symbol.
 #: activities/magic-hat-minus/StarsBar.qml:38
@@ -16463,23 +16152,17 @@ msgid ""
 "validate it."
 msgstr ""
 "Açmak için şapkaya tıkla. Şapkanın altına kaç yıldız girdi? Dikkatlice say. "
-"Yanıtını girmek için alt alana ve doğrulamak için OK düğmesine tıkla."
+"Yanıtını girmek için alt alana ve onu doğrulamak için OK düğmesine tıkla."
 
 #: activities/magic-hat-plus/resource/1/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Add stars up to 30."
 msgctxt "Data|"
 msgid "Add stars up to 3."
-msgstr "30'a kadar yıldız ekle."
+msgstr "3'e kadar yıldız ekle."
 
 #: activities/magic-hat-plus/resource/2/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Add stars up to 5."
 msgctxt "Data|"
 msgid "Add stars up to 4."
-msgstr "5'e kadar yıldız ekle."
+msgstr "4'e kadar yıldız ekle."
 
 #: activities/magic-hat-plus/resource/3/Data.qml:13
 msgctxt "Data|"
@@ -16506,13 +16189,13 @@ msgstr "Katsayılarla 100'e kadar yıldız ekle."
 #: activities/magic-hat-plus/resource/7/Data.qml:14
 msgctxt "Data|"
 msgid "Add stars up to 1000 with coefficients."
-msgstr "Katsayılarla 1000'e kadar yıldız ekleyin."
+msgstr "Katsayılarla 1.000'e kadar yıldız ekleyin."
 
 #. Coefficients are the numbers by which the numbers of stars are multiplied to get the total
 #: activities/magic-hat-plus/resource/8/Data.qml:14
 msgctxt "Data|"
 msgid "Add stars up to 10000 with coefficients."
-msgstr "Katsayılarla 10000'e kadar yıldız ekle."
+msgstr "Katsayılarla 10.000'e kadar yıldız ekle."
 
 #. Activity title
 #: activities/maze/ActivityInfo.qml:15
@@ -18536,8 +18219,8 @@ msgid ""
 "GCompris is developed by the KDE community, you can translate GCompris by "
 "joining a translation team on <a href=\"%2\">%2</a>"
 msgstr ""
-"GCompris, KDE topluluğu tarafından geliştirilmiştir, <a href=\"%2\">%2</a> "
-"üzerinden çeviri takımına katılarak GCompris'i çevirebilirsin"
+"GCompris, KDE topluluğu tarafından geliştirilir, <a href=\"%2\">%2</a> "
+"üzerinden çeviri takımına katılarak GCompris'i çevirebilirsiniz"
 
 #: activities/missing-letter/MissingLetter.qml:319
 msgctxt "MissingLetter|"
@@ -18545,8 +18228,8 @@ msgid ""
 "We switched to English for this activity but you can select another language "
 "in the configuration dialog."
 msgstr ""
-"Bu etkinlik için İngilizceye döndük, ancak ayarlar penceresinden başka bir "
-"dil seçebilirsin."
+"Bu etkinlik için İngilizceye döndük; ancak yapılandırma penceresinden başka "
+"bir dil seçebilirsin."
 
 #. Activity title
 #: activities/money/ActivityInfo.qml:15
