@@ -57,6 +57,10 @@ bool isSupportedLocale(const QString &locale)
     QQmlEngine engine;
     QQmlComponent component(&engine, QUrl("qrc:/gcompris/src/core/LanguageList.qml"));
     QObject *object = component.create();
+    if(!object) {
+        qWarning() << "isSupportedLocale:" << component.errors();
+        return false;
+    }
     QVariant variant = object->property("languages");
     QJSValue languagesList = variant.value<QJSValue>();
     const int length = languagesList.property("length").toInt();
