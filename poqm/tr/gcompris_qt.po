@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2023-01-29 20:55+0300\n"
+"PO-Revision-Date: 2023-01-31 00:57+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -1208,7 +1208,7 @@ msgstr "Boşluk veya Aşağı ok: Jetonu bırakır"
 #: activities/align4_2players/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Align four (with a friend)"
-msgstr "Dördü hizala (bir arkadaş ile)"
+msgstr "Dördü hizala (bir arkadaşla)"
 
 #. Help manual
 #: activities/align4_2players/ActivityInfo.qml:22
@@ -1217,8 +1217,8 @@ msgid ""
 "Play with a friend. Take turns to click the line in which you want to drop a "
 "token. The first player to create a line of 4 tokens wins."
 msgstr ""
-"Bir arkadaş ile oyna. Jetonu bırakmak istediğin satıra tıkla. 4 jeton ile "
-"bir sıra oluşturan ilk kişi kazanır."
+"Bir arkadaşla oyna. Jetonu bırakmak istediğin satıra tıkla. 4 jeton ile bir "
+"sıra oluşturan ilk kişi kazanır."
 
 #. Activity title
 #: activities/alphabet-sequence/ActivityInfo.qml:15
@@ -2636,7 +2636,7 @@ msgstr ""
 #: activities/bargame_2players/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Bargame (with a friend)"
-msgstr "Bar oyunu (arkadaş ile)"
+msgstr "Bar oyunu (bir arkadaşla)"
 
 #. Help manual
 #: activities/bargame_2players/ActivityInfo.qml:24
@@ -2978,7 +2978,7 @@ msgstr "Takvim"
 #: activities/calendar/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Read the instructions and select the correct date on the calendar."
-msgstr "Talimatları gözden geçir ve doğru tarihi takvim üzerinde seç."
+msgstr "Yönergeleri gözden geçir ve doğru tarihi takvim üzerinde seç."
 
 #. Help goal
 #: activities/calendar/ActivityInfo.qml:20
@@ -3403,7 +3403,7 @@ msgstr "Fareyi veya dokunmatik ekranı kullanarak ögeleri sürükleyebilirsin."
 msgctxt "ActivityInfo|"
 msgid "Review the instructions and then drag and drop the items as specified."
 msgstr ""
-"Talimatları gözden geçir ve belirtildiği gibi ögeleri sürükleyip bırak."
+"Yönergeleri gözden geçir ve belirtildiği gibi ögeleri sürükleyip bırak."
 
 #: activities/categorization/Categorization.qml:156
 msgctxt "Categorization|"
@@ -4024,7 +4024,7 @@ msgstr "Siyah kazandı"
 #: activities/checkers_2players/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Play checkers (with a friend)"
-msgstr "Dama oyna (arkadaşınla)"
+msgstr "Dama oyna (bir arkadaşla)"
 
 #. Help manual
 #: activities/checkers_2players/ActivityInfo.qml:24
@@ -4193,7 +4193,7 @@ msgstr "Hayır"
 #: activities/chess_2players/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Play chess (with a friend)"
-msgstr "Satranç oyna (arkadaşınla)"
+msgstr "Satranç oyna (bir arkadaşla)"
 
 #. Help manual Much of this string is shared across the three activities "chess", "chess_partyend", and "chess_2players".
 #: activities/chess_2players/ActivityInfo.qml:25
@@ -8767,7 +8767,7 @@ msgid ""
 "marked with a ring on the link.\n"
 "Click on a pair of family members which corresponds to the given relation."
 msgstr ""
-"Bazı talimatlarla birlikte bir soy ağacı gösterilir.\n"
+"Bazı yönergelerle birlikte bir soy ağacı gösterilir.\n"
 "İlişkileri işaretlemek için daireler çizgilerle bağlanmıştır. Evli çiftler "
 "bağlantıda bir yüzük ile işaretlenmiştir.\n"
 "Verilen ilişkiye karşılık gelen bir çift aile üyesine tıkla."
@@ -9045,7 +9045,7 @@ msgstr "Ekranda eşit parçalara bölünmüş bir şekil görüntülenir."
 msgctxt "ActivityInfo|"
 msgid ""
 "Select the appropriate number of parts as described in the instructions."
-msgstr "Talimatlarda açıklandığı gibi uygun parça sayısını seç."
+msgstr "Yönergelerde açıklandığı gibi uygun parça sayısını seç."
 
 #: activities/fractions_create/fractions_create.js:79
 msgctxt "fractions_create|"
@@ -13883,7 +13883,7 @@ msgid ""
 "Drag the appropriate numbers and the operators to the boxes to obtain the "
 "number to guess in the instruction."
 msgstr ""
-"Talimatta tahmin edilecek sayıyı elde etmek için uygun numaraları ve "
+"Yönergede tahmin edilecek sayıyı elde etmek için uygun numaraları ve "
 "işleçleri kutulara sürükle."
 
 #: activities/guesscount/Admin.qml:30
@@ -15690,7 +15690,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Distinguish right and left hands from different points of view. Spatial "
 "representation."
-msgstr "Farklı bakış açılarından sağ ve sol eli ayırt et. Uzamsal simgeleme."
+msgstr "Farklı bakış açılarından sağ ve sol eli ayırt et. Uzamsal temsil."
 
 #. Help manual
 #: activities/leftright/ActivityInfo.qml:24
@@ -16214,16 +16214,14 @@ msgstr "Tux'un bu labirentten çıkmasına yardım et."
 #: activities/mazerelative/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid "Use the arrow keys or swipe the screen to move Tux to the door."
-msgstr "Tux'u kapıya ulaştırmak için ok tuşlarını kullan veya ekranı kaydır."
+msgstr "Tux'u kapıya ulaştırmak için ok düğmelerini kullan veya ekranı kaydır."
 
 #: activities/maze/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid ""
 "In first levels, Tux walks comfortably, one step on each move request, "
 "through the maze."
-msgstr ""
-"İlk düzeylerde Tux, labirentte her hareket isteği üzerine bir adım rahatça "
-"yürür."
+msgstr "İlk düzeylerde, Tux labirentte her adımını rahatlıkla atar."
 
 #: activities/maze/ActivityInfo.qml:26
 #: activities/mazeinvisible/ActivityInfo.qml:26
@@ -16234,10 +16232,9 @@ msgid ""
 "If this run-fast-mode is enabled, Tux will run all the way automatically "
 "until he reaches a fork and you have to decide which way to go further."
 msgstr ""
-"Büyük labirentlerde, \"hızlı-yürüme-kipi\" denen özel bir yürüme kipi "
-"vardır. hızlı-yürüme-kipi etkinse, Tux çatala ulaşana kadar tüm yolu "
-"otomatik olarak alacaktır ve hangi yöne gitmek istediğine karar vermen "
-"gerekir."
+"Büyük labirentlerde, \"Hızlı Koş Kipi\" denen özel bir yürüme kipi vardır. "
+"Hızlı Koş Kipi etkinse Tux bir çatala ulaşana kadar tüm yolu otomatik olarak "
+"alacaktır ve hangi yöne gitmek istediğine karar vermen gerekir."
 
 #: activities/maze/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
@@ -16247,8 +16244,8 @@ msgid ""
 "shoes, \"run-fast-mode\" is enabled."
 msgstr ""
 "Bu kipin etkin olup olmadığını Tux'un ayaklarına bakarak anlayabilirsin: Tux "
-"yalınayak ise \"hızlı koş kipi\" devre dışıdır; kırmızı spor ayakkabı "
-"giyiyorsa \"hızlı koş kipi\" etkindir."
+"yalınayaksa \"Hızlı Koş Kipi\" devre dışıdır; kırmızı spor ayakkabı "
+"giyiyorsa etkindir."
 
 #: activities/maze/ActivityInfo.qml:28
 #: activities/mazeinvisible/ActivityInfo.qml:28
@@ -16260,11 +16257,10 @@ msgid ""
 "levels, click on the \"barefoot / sportshoe\" icon in the upper left corner "
 "of the screen to toggle the run-fast-mode.\t"
 msgstr ""
-"Daha üst düzeylerde, hızlı-yürüme-kipi otomatik olarak etkinleştirilir. Bu "
+"Daha üst düzeylerde, Hızlı Koş Kipi otomatik olarak etkinleştirilir. Bu "
 "özelliği daha alt düzeylerde yapmak istiyorsan veya gelişmiş düzeylerde "
 "kapatmak istiyorsan ekranın sol üst köşesindeki \"yalın ayak/spor ayakkabı\" "
-"simgesine tıkla ve hızlı-yürüme-kipi'ni aç/kapat.\n"
-"\t"
+"simgesine tıkla ve Hızlı Koş Kipi'ni aç/kapat.\t"
 
 #: activities/maze/Maze.qml:314
 msgctxt "Maze|"
@@ -16272,17 +16268,14 @@ msgid ""
 "Look at your position, then switch back to invisible mode to continue your "
 "moves"
 msgstr ""
-"Kendi pozisyonuna bak, daha sonra hareket etmeye devam etmek için görünmez "
-"moda geri dön"
+"Kendi pozisyonuna bak, daha sonra hareket etmeyi sürdürmek için görünmez "
+"kipe geri dön"
 
 #. Activity title
 #: activities/mazeinvisible/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Invisible Maze"
 msgctxt "ActivityInfo|"
 msgid "Invisible maze"
-msgstr "Görünmez Labirent"
+msgstr "Görünmez labirent"
 
 #. Help title
 #: activities/mazeinvisible/ActivityInfo.qml:17
@@ -16310,9 +16303,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "At the first levels, Tux walks comfortably, one step on each move request, "
 "through the maze."
-msgstr ""
-"İlk düzeylerde, Tux rahatça yürür, her bir ilerleme isteğinde labirent "
-"içinde bir adım atar."
+msgstr "İlk düzeylerde, Tux labirentte her adımını rahatlıkla atar."
 
 #: activities/mazeinvisible/ActivityInfo.qml:27
 #: activities/mazerelative/ActivityInfo.qml:28
@@ -16323,32 +16314,25 @@ msgid ""
 "sport shoes, \"run-fast-mode\" is enabled."
 msgstr ""
 "Bu kipin etkin olup olmadığını Tux'un ayaklarına bakarak anlayabilirsin: Tux "
-"yalınayak ise \"hızlı koş kipi\" devre dışıdır; kırmızı spor ayakkabı "
-"giyiyorsa \"hızlı koş kipi\" etkindir."
+"yalınayaksa \"Hızlı Koş Kipi\" devre dışıdır; kırmızı spor ayakkabı "
+"giyiyorsa etkindir."
 
 #: activities/mazeinvisible/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
 msgid "Space: switch between invisible and visible modes"
-msgstr "Boşluk: görünmez ve görünür modlar arasında geçiş yap"
+msgstr "Boşluk: Görünür ve görünmez kipler arasında geçiş yap"
 
 #. Activity title
 #: activities/mazerelative/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Relative Maze"
 msgctxt "ActivityInfo|"
 msgid "Relative maze"
-msgstr "Bağıntılı Labirent"
+msgstr "Göreceli labirent"
 
 #. Help title
 #: activities/mazerelative/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Help Tux get out of this maze (Moves are relative)."
 msgctxt "ActivityInfo|"
 msgid "Help Tux get out of this maze (moves are relative)."
-msgstr ""
-"Tux'un bu labirentten çıkmasına yardım edin (Hareketler bağlantılıdır)."
+msgstr "Tux'un bu labirentten çıkmasına yardım et (hareketler görecelidir)."
 
 #: activities/mazerelative/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
@@ -16362,17 +16346,17 @@ msgstr ""
 #: activities/mazerelative/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: turn left and right"
-msgstr "Sol ve Sağ oklar: sola ve sağa dön"
+msgstr "Sol ve Sağ oklar: Sola ve sağa dön"
 
 #: activities/mazerelative/ActivityInfo.qml:32
 msgctxt "ActivityInfo|"
 msgid "Down arrow: turn backward"
-msgstr "Aşağı ok: geri dön"
+msgstr "Aşağı ok: Geri dön"
 
 #: activities/mazerelative/ActivityInfo.qml:33
 msgctxt "ActivityInfo|"
 msgid "Up arrow: move forward"
-msgstr "Yukarı ok: ileri git"
+msgstr "Yukarı ok: İleri git"
 
 #. Activity title
 #: activities/melody/ActivityInfo.qml:15
@@ -16426,13 +16410,13 @@ msgstr "Çık"
 #: activities/melody/Melody.qml:287
 msgctxt "Melody|"
 msgid "Continue"
-msgstr "Devam et"
+msgstr "Sürdür"
 
 #. Activity title
 #: activities/memory-case-association-tux/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Case association memory game against Tux"
-msgstr "Tux'a karşı durum ilişkilendirme hafıza oyunu"
+msgstr "Tux'a karşı durum ilişkilendirme bellek oyunu"
 
 #. Help title
 #: activities/memory-case-association-tux/ActivityInfo.qml:17
@@ -16449,14 +16433,14 @@ msgstr ""
 #: activities/memory-case-association/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Learning lowercase and uppercase letters, memory."
-msgstr "Küçük ve büyük harf alfabeyi öğrenme."
+msgstr "BÜYÜK ve küçük harfleri öğrenme, bellek."
 
 #. Help prerequisite
 #: activities/memory-case-association-tux/ActivityInfo.qml:22
 #: activities/memory-case-association/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid "Knowing alphabets."
-msgstr "Alfabeyi öğrenme."
+msgstr "Abeceleri öğrenme."
 
 #. Help manual
 #: activities/memory-case-association-tux/ActivityInfo.qml:24
@@ -16466,7 +16450,7 @@ msgid ""
 "Each card is hiding a letter, lowercase or uppercase. You have to match the "
 "lowercase and uppercase of the same letter."
 msgstr ""
-"Her kart, küçük veya büyük harf gizler. Aynı harfin küçük ve büyük "
+"Her kart, küçük veya BÜYÜK harf gizler. Aynı harfin küçük ve BÜYÜK "
 "harflerini eşleştirmelisin."
 
 #: activities/memory-case-association-tux/ActivityInfo.qml:27
@@ -16493,7 +16477,7 @@ msgstr ""
 #: activities/memory/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Space or Enter: flip the selected card"
-msgstr "Boşluk veya Giriş: seçili kartı çevir"
+msgstr "Boşluk veya Giriş: Seçili kartı çevir"
 
 #: activities/memory-case-association/ActivityConfig.qml:23
 #: activities/memory-enumerate/ActivityConfig.qml:23
@@ -16509,7 +16493,7 @@ msgstr "Boşluk veya Giriş: seçili kartı çevir"
 #: activities/memory/ActivityConfig.qml:23
 msgctxt "ActivityConfig|"
 msgid "1 player"
-msgstr ""
+msgstr "1 oyuncu"
 
 #: activities/memory-case-association/ActivityConfig.qml:24
 #: activities/memory-enumerate/ActivityConfig.qml:24
@@ -16525,7 +16509,7 @@ msgstr ""
 #: activities/memory/ActivityConfig.qml:24
 msgctxt "ActivityConfig|"
 msgid "2 players"
-msgstr ""
+msgstr "2 oyuncu"
 
 #: activities/memory-case-association/ActivityConfig.qml:33
 #: activities/memory-enumerate/ActivityConfig.qml:33
@@ -16541,25 +16525,25 @@ msgstr ""
 #: activities/memory/ActivityConfig.qml:33
 msgctxt "ActivityConfig|"
 msgid "Choose number of players"
-msgstr ""
+msgstr "Oyuncu sayısı seç"
 
 #. Activity title
 #: activities/memory-case-association/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Case association memory game"
-msgstr "Durum ilişkilendirme hafıza oyunu"
+msgstr "Durum ilişkilendirme bellek oyunu"
 
 #. Help title
 #: activities/memory-case-association/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Flip the cards to find the uppercase and lowercase of the same letter."
-msgstr "Aynı harfin büyük ve küçük harflerini bulmak için kartları çevir."
+msgstr "Aynı harfin BÜYÜK ve küçük harflerini bulmak için kartları çevir."
 
 #. Activity title
 #: activities/memory-enumerate/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Enumeration memory game"
-msgstr "Numaralandırma hafıza oyunu"
+msgstr "Numaralandırma bellek oyunu"
 
 #. Help title
 #: activities/memory-enumerate/ActivityInfo.qml:17
@@ -16571,7 +16555,7 @@ msgstr "Bir sayıyı bir resimle eşleştirmek için kartları çevir."
 #: activities/memory-enumerate/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Numeration training, memory."
-msgstr "Numaralandırma eğitimi, hafıza."
+msgstr "Numaralandırma eğitimi, bellek."
 
 #. Help manual
 #: activities/memory-enumerate/ActivityInfo.qml:24
@@ -16580,7 +16564,7 @@ msgid ""
 "Each card is hiding either a picture with a number of items, or a number. "
 "You have to match the numbers with the corresponding pictures."
 msgstr ""
-"Her kart, birkaç öge içeren bir resmi veya bir sayıyı saklıyor. Rakamları "
+"Her kart, birkaç öge içeren bir resmi veya bir sayıyı saklar. Rakamları "
 "ilgili resimlerle eşleştirmelisin."
 
 #: activities/memory-enumerate/resource/1/Data.qml:15
@@ -16627,7 +16611,7 @@ msgstr "9'a kadar sayıları eşleştir."
 #: activities/memory-math-add-minus-mult-div-tux/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "All operations memory game against Tux"
-msgstr "Tux'a karşı tüm operasyonlar hafıza oyunu"
+msgstr "Tux'a karşı tüm işlemler bellek oyunu"
 
 #. Help title
 #: activities/memory-math-add-minus-mult-div-tux/ActivityInfo.qml:17
@@ -16647,12 +16631,9 @@ msgstr "Toplama, çıkarma, çarpma ve bölme işlemi üzerine alıştırma yap.
 #. Help prerequisite
 #: activities/memory-math-add-minus-mult-div-tux/ActivityInfo.qml:22
 #: activities/memory-math-add-minus-mult-div/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Additions, subtractions, multiplications, divisions"
 msgctxt "ActivityInfo|"
 msgid "Additions, subtractions, multiplications, divisions."
-msgstr "Toplama, çıkarma, çarpma, bölme"
+msgstr "Toplama, çıkarma, çarpma, bölme."
 
 #. Help manual
 #: activities/memory-math-add-minus-mult-div-tux/ActivityInfo.qml:24
@@ -16662,7 +16643,7 @@ msgid ""
 "Each card is hiding either an operation, or a result. You have to match the "
 "operations with their result."
 msgstr ""
-"Her kart, bir işlemi veya bir sonucu saklıyor. İşlemleri sonuçları ile "
+"Her kart, bir işlemi veya bir sonucu saklar. İşlemleri sonuçları ile "
 "eşleştirmelisin."
 
 #: activities/memory-math-add-minus-mult-div-tux/resource/1/Data.qml:15
@@ -16767,7 +16748,7 @@ msgstr "Tablo 9."
 #: activities/memory-math-add-minus-mult-div/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "All operations memory game"
-msgstr "Tüm işlemlerle hafıza oyunu"
+msgstr "Tüm işlemler bellek oyunu"
 
 #. Help title
 #: activities/memory-math-add-minus-mult-div/ActivityInfo.qml:17
@@ -16779,7 +16760,7 @@ msgstr "Bir işlemi sonucuyla eşleştirmek için kartları çevir."
 #: activities/memory-math-add-minus-tux/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Addition and subtraction memory game against Tux"
-msgstr "Tux'a karşı toplama, çıkarma hafıza oyunu"
+msgstr "Tux'a karşı toplama, çıkarma bellek oyunu"
 
 #. Help title
 #: activities/memory-math-add-minus-tux/ActivityInfo.qml:17
@@ -16796,7 +16777,7 @@ msgstr ""
 #: activities/memory-math-add-minus/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Practice additions and subtractions."
-msgstr "Toplama ve çıkarma alıştırması."
+msgstr "Toplama ve çıkarma alıştırması yap."
 
 #. Help prerequisite
 #: activities/memory-math-add-minus-tux/ActivityInfo.qml:22
@@ -16813,14 +16794,14 @@ msgid ""
 "Each card is hiding either an operation (an addition or a subtraction), or a "
 "result. You have to match the operations with their result."
 msgstr ""
-"Her kart bir işlemi (bir toplama veya çıkarma) veya bir sonucu saklıyor. "
+"Her kart bir işlemi (bir toplama veya çıkarma) veya bir sonucu saklar. "
 "İşlemleri sonuçları ile eşleştirmelisin."
 
 #. Activity title
 #: activities/memory-math-add-minus/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Addition and subtraction memory game"
-msgstr "Toplama ve çıkarma hafıza oyunu"
+msgstr "Toplama ve çıkarma bellek oyunu"
 
 #. Help title
 #: activities/memory-math-add-minus/ActivityInfo.qml:17
@@ -16833,7 +16814,7 @@ msgstr ""
 #: activities/memory-math-add-tux/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Addition memory game against Tux"
-msgstr "Tux'a karşı bir toplama işlemi hafıza oyunu"
+msgstr "Tux'a karşı toplama işlemi bellek oyunu"
 
 #. Help title
 #: activities/memory-math-add-tux/ActivityInfo.qml:17
@@ -16849,7 +16830,7 @@ msgstr ""
 #: activities/memory-math-add/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Practice additions."
-msgstr "Toplama işlemi üzerine alıştırma yap."
+msgstr "Toplama alıştırması yap."
 
 #. Help manual
 #: activities/memory-math-add-tux/ActivityInfo.qml:24
@@ -16859,8 +16840,8 @@ msgid ""
 "Each card is hiding either an addition, or a result. You have to match the "
 "additions with their result."
 msgstr ""
-"Her kart, bir toplama işlemini veya bir sonucu saklıyor. Toplama sonuçları "
-"ile eşleştirmelisin."
+"Her kart, bir toplama işlemini veya bir sonucu saklar. Toplama sonuçları ile "
+"eşleştirmelisin."
 
 #: activities/memory-math-add-tux/resource/1/Data.qml:15
 #: activities/memory-math-add/resource/1/Data.qml:15
@@ -16872,7 +16853,7 @@ msgstr "1'in toplama tablosu."
 #: activities/memory-math-add/resource/10/Data.qml:15
 msgctxt "Data|"
 msgid "Addition table of 10."
-msgstr "10'nun toplama tablosu."
+msgstr "10'un toplama tablosu."
 
 #: activities/memory-math-add-tux/resource/2/Data.qml:15
 #: activities/memory-math-add/resource/2/Data.qml:15
@@ -16926,7 +16907,7 @@ msgstr "9'un toplama tablosu."
 #: activities/memory-math-add/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Addition memory game"
-msgstr "Toplama işlemi hafıza oyunu"
+msgstr "Toplama işlemi bellek oyunu"
 
 #. Help title
 #: activities/memory-math-add/ActivityInfo.qml:17
@@ -16938,7 +16919,7 @@ msgstr "Bir toplama sonucuyla eşleştirmek için kartları çevir."
 #: activities/memory-math-div-tux/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Division memory game against Tux"
-msgstr "Tux'a karşı bölme işlemi hafıza oyunu"
+msgstr "Tux'a karşı bölme işlemi bellek oyunu"
 
 #. Help title
 #: activities/memory-math-div-tux/ActivityInfo.qml:17
@@ -16946,15 +16927,14 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Flip the cards to match a division with its result, playing against Tux."
 msgstr ""
-"Tux'a karşı oynayarak, bir bölümeyi sonucuyla eşleştirmek için kartları "
-"çevir."
+"Tux'a karşı oynayarak, bir bölmeyi sonucuyla eşleştirmek için kartları çevir."
 
 #. Help goal
 #: activities/memory-math-div-tux/ActivityInfo.qml:20
 #: activities/memory-math-div/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Practice divisions."
-msgstr "Bölme işlemi üzerine alıştırma yap."
+msgstr "Bölme alıştırması yap."
 
 #. Help prerequisite
 #: activities/memory-math-div-tux/ActivityInfo.qml:22
@@ -16970,74 +16950,74 @@ msgid ""
 "Each card is hiding either a division, or a result. You have to match the "
 "divisions with their result."
 msgstr ""
-"Her kart ya bir bölmeyi ya da sonucu saklıyor. Bölmeleri sonuçlarıyla "
+"Her kart ya bir bölmeyi ya da sonucu saklar. Bölmeleri sonuçlarıyla "
 "eşleştirmelisin."
 
 #: activities/memory-math-div-tux/resource/1/Data.qml:15
 #: activities/memory-math-div/resource/1/Data.qml:15
 msgctxt "Data|"
 msgid "Division table of 1."
-msgstr "Bölme tablosu 1."
+msgstr "1'in bölme tablosu."
 
 #: activities/memory-math-div-tux/resource/10/Data.qml:15
 #: activities/memory-math-div/resource/10/Data.qml:15
 msgctxt "Data|"
 msgid "Division table of 10."
-msgstr "Bölme tablosu 10."
+msgstr "10'un bölme tablosu."
 
 #: activities/memory-math-div-tux/resource/2/Data.qml:15
 #: activities/memory-math-div/resource/2/Data.qml:15
 msgctxt "Data|"
 msgid "Division table of 2."
-msgstr "Bölme tablosu 2."
+msgstr "2'nin bölme tablosu."
 
 #: activities/memory-math-div-tux/resource/3/Data.qml:15
 #: activities/memory-math-div/resource/3/Data.qml:15
 msgctxt "Data|"
 msgid "Division table of 3."
-msgstr "Bölme tablosu 3."
+msgstr "3'ün bölme tablosu."
 
 #: activities/memory-math-div-tux/resource/4/Data.qml:15
 #: activities/memory-math-div/resource/4/Data.qml:15
 msgctxt "Data|"
 msgid "Division table of 4."
-msgstr "Bölme tablosu 4."
+msgstr "4'ün bölme tablosu."
 
 #: activities/memory-math-div-tux/resource/5/Data.qml:15
 #: activities/memory-math-div/resource/5/Data.qml:15
 msgctxt "Data|"
 msgid "Division table of 5."
-msgstr "Bölme tablosu 5."
+msgstr "5'in bölme tablosu."
 
 #: activities/memory-math-div-tux/resource/6/Data.qml:15
 #: activities/memory-math-div/resource/6/Data.qml:15
 msgctxt "Data|"
 msgid "Division table of 6."
-msgstr "Bölme tablosu 6."
+msgstr "6'nın bölme tablosu."
 
 #: activities/memory-math-div-tux/resource/7/Data.qml:15
 #: activities/memory-math-div/resource/7/Data.qml:15
 msgctxt "Data|"
 msgid "Division table of 7."
-msgstr "Bölme tablosu 7."
+msgstr "7'nin bölme tablosu."
 
 #: activities/memory-math-div-tux/resource/8/Data.qml:15
 #: activities/memory-math-div/resource/8/Data.qml:15
 msgctxt "Data|"
 msgid "Division table of 8."
-msgstr "Bölme tablosu 8."
+msgstr "8'in bölme tablosu."
 
 #: activities/memory-math-div-tux/resource/9/Data.qml:15
 #: activities/memory-math-div/resource/9/Data.qml:15
 msgctxt "Data|"
 msgid "Division table of 9."
-msgstr "Bölme tablosu 9."
+msgstr "9'un bölme tablosu."
 
 #. Activity title
 #: activities/memory-math-div/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Division memory game"
-msgstr "Bölme hafıza oyunu"
+msgstr "Bölme bellek oyunu"
 
 #. Help title
 #: activities/memory-math-div/ActivityInfo.qml:17
@@ -17055,7 +17035,7 @@ msgstr "Bölme"
 #: activities/memory-math-minus-tux/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Subtraction memory game against Tux"
-msgstr "Tux'a karşı çıkarma işlemi hafıza oyunu"
+msgstr "Tux'a karşı çıkarma işlemi bellek oyunu"
 
 #. Help title
 #: activities/memory-math-minus-tux/ActivityInfo.qml:17
@@ -17071,7 +17051,7 @@ msgstr ""
 #: activities/memory-math-minus/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Practice subtractions."
-msgstr "Çıkarma işlemi üzerine alıştırma yap."
+msgstr "Çıkarma işlemi alıştırması yap."
 
 #. Help manual
 #: activities/memory-math-minus-tux/ActivityInfo.qml:24
@@ -17081,68 +17061,68 @@ msgid ""
 "Each card is hiding either a subtraction, or a result. You have to match the "
 "subtractions with their result."
 msgstr ""
-"Her bir kart, bir çıkarma işlemini veya bir sonucu saklıyor. Çıkarma "
-"işlemini sonuçlarıyla eşleştirmelisin."
+"Her bir kart, bir çıkarma işlemini veya bir sonucu saklar. Çıkarma işlemini "
+"sonuçlarıyla eşleştirmelisin."
 
 #: activities/memory-math-minus-tux/resource/1/Data.qml:15
 #: activities/memory-math-minus/resource/1/Data.qml:15
 msgctxt "Data|"
 msgid "Subtraction table of 1."
-msgstr "Çıkarma tablosu 1."
+msgstr "1'in çıkarma tablosu."
 
 #: activities/memory-math-minus-tux/resource/10/Data.qml:15
 #: activities/memory-math-minus/resource/10/Data.qml:15
 msgctxt "Data|"
 msgid "Subtraction table of 10."
-msgstr "Çıkarma tablosu 10."
+msgstr "10'un çıkarma tablosu."
 
 #: activities/memory-math-minus-tux/resource/2/Data.qml:15
 #: activities/memory-math-minus/resource/2/Data.qml:15
 msgctxt "Data|"
 msgid "Subtraction table of 2."
-msgstr "Çıkarma tablosu 2."
+msgstr "2'nin çıkarma tablosu."
 
 #: activities/memory-math-minus-tux/resource/3/Data.qml:15
 #: activities/memory-math-minus/resource/3/Data.qml:15
 msgctxt "Data|"
 msgid "Subtraction table of 3."
-msgstr "Çıkarma tablosu 3."
+msgstr "3'ün çıkarma tablosu."
 
 #: activities/memory-math-minus-tux/resource/4/Data.qml:15
 #: activities/memory-math-minus/resource/4/Data.qml:15
 msgctxt "Data|"
 msgid "Subtraction table of 4."
-msgstr "Çıkarma tablosu 4."
+msgstr "4'ün çıkarma tablosu."
 
 #: activities/memory-math-minus-tux/resource/5/Data.qml:15
 #: activities/memory-math-minus/resource/5/Data.qml:15
 msgctxt "Data|"
 msgid "Subtraction table of 5."
-msgstr "Çıkarma tablosu 5."
+msgstr "5'in çıkarma tablosu."
 
 #: activities/memory-math-minus-tux/resource/6/Data.qml:15
 #: activities/memory-math-minus/resource/6/Data.qml:15
 msgctxt "Data|"
 msgid "Subtraction table of 6."
-msgstr "Çıkarma tablosu 6."
+msgstr "6'nın çıkarma tablosu."
 
 #: activities/memory-math-minus-tux/resource/7/Data.qml:15
 #: activities/memory-math-minus/resource/7/Data.qml:15
 msgctxt "Data|"
 msgid "Subtraction table of 7."
-msgstr "Çıkarma tablosu 7."
+msgstr "7'nin çıkarma tablosu."
 
 #: activities/memory-math-minus-tux/resource/8/Data.qml:15
 #: activities/memory-math-minus/resource/8/Data.qml:15
 msgctxt "Data|"
 msgid "Subtraction table of 8."
-msgstr "Çıkarma tablosu 8."
+msgstr "8'in çıkarma tablosu."
 
 #: activities/memory-math-minus-tux/resource/9/Data.qml:15
 #: activities/memory-math-minus/resource/9/Data.qml:15
 msgctxt "Data|"
 msgid "Subtraction table of 9."
-msgstr "Çıkarma tablosu 9."
+msgstr "9'un çıkarma tablosu."
 
 #. Activity title
 #: activities/memory-math-minus/ActivityInfo.qml:15
@@ -17160,7 +17140,7 @@ msgstr "Çıkarma işlemini sonucuyla eşleştirmek için kartları çevir."
 #: activities/memory-math-mult-div-tux/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Multiplication and division memory game against Tux"
-msgstr "Tux'a karşı çarpma ve bölme hafıza oyunu"
+msgstr "Tux'a karşı çarpma ve bölme bellek oyunu"
 
 #. Help title
 #: activities/memory-math-mult-div-tux/ActivityInfo.qml:17
@@ -17194,14 +17174,14 @@ msgid ""
 "Each card is hiding either an operation (a multiplication or a division), or "
 "a result. You have to match the operations with their result."
 msgstr ""
-"Her kart ya bir işlemi (çarpma ya da bölme) ya da bir sonucu saklıyor. "
+"Her kart ya bir işlemi (çarpma ya da bölme) ya da bir sonucu saklar. "
 "İşlemleri sonuçları ile eşleştirmelisin."
 
 #. Activity title
 #: activities/memory-math-mult-div/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Multiplication and division memory game"
-msgstr "Çarpma ve bölme ile hafıza oyunu"
+msgstr "Çarpma ve bölme bellek oyunu"
 
 #. Help title
 #: activities/memory-math-mult-div/ActivityInfo.qml:17
@@ -17213,7 +17193,7 @@ msgstr "Sonuç ile bir çarpma veya bölmeyi eşleştirmek için kartları çevi
 #: activities/memory-math-mult-tux/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Multiplication memory game against Tux"
-msgstr "Tux'a karşı çarpma işlemi hafıza oyunu"
+msgstr "Tux'a karşı çarpma işlemi bellek oyunu"
 
 #. Help title
 #: activities/memory-math-mult-tux/ActivityInfo.qml:17
@@ -17230,7 +17210,7 @@ msgstr ""
 #: activities/memory-math-mult/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Practice multiplications."
-msgstr "Çarpım işlemi üzerine alıştırma yap."
+msgstr "Çarpma işlemi alıştırması yap."
 
 #. Help prerequisite
 #: activities/memory-math-mult-tux/ActivityInfo.qml:22
@@ -17247,74 +17227,74 @@ msgid ""
 "Each card is hiding either a multiplication, or a result. You have to match "
 "the multiplications with their result."
 msgstr ""
-"Her kart bir çarpmayı veya bir sonucu saklıyor. Çarpma işlemlerini "
+"Her kart bir çarpmayı veya bir sonucu saklar. Çarpma işlemlerini "
 "sonuçlarıyla eşleştirmelisin."
 
 #: activities/memory-math-mult-tux/resource/1/Data.qml:15
 #: activities/memory-math-mult/resource/1/Data.qml:15
 msgctxt "Data|"
 msgid "Multiplication table of 1."
-msgstr "Çarpım tablosu 1."
+msgstr "1'in çarpım tablosu."
 
 #: activities/memory-math-mult-tux/resource/10/Data.qml:15
 #: activities/memory-math-mult/resource/10/Data.qml:15
 msgctxt "Data|"
 msgid "Multiplication table of 10."
-msgstr "Çarpım tablosu 10."
+msgstr "10'un çarpım tablosu."
 
 #: activities/memory-math-mult-tux/resource/2/Data.qml:15
 #: activities/memory-math-mult/resource/2/Data.qml:15
 msgctxt "Data|"
 msgid "Multiplication table of 2."
-msgstr "Çarpım tablosu 2."
+msgstr "2'nin çarpım tablosu."
 
 #: activities/memory-math-mult-tux/resource/3/Data.qml:15
 #: activities/memory-math-mult/resource/3/Data.qml:15
 msgctxt "Data|"
 msgid "Multiplication table of 3."
-msgstr "Çarpım tablosu 3."
+msgstr "3'ün çarpım tablosu."
 
 #: activities/memory-math-mult-tux/resource/4/Data.qml:15
 #: activities/memory-math-mult/resource/4/Data.qml:15
 msgctxt "Data|"
 msgid "Multiplication table of 4."
-msgstr "Çarpım tablosu 4."
+msgstr "4'ün çarpım tablosu."
 
 #: activities/memory-math-mult-tux/resource/5/Data.qml:15
 #: activities/memory-math-mult/resource/5/Data.qml:15
 msgctxt "Data|"
 msgid "Multiplication table of 5."
-msgstr "Çarpım tablosu 5."
+msgstr "5'in çarpım tablosu."
 
 #: activities/memory-math-mult-tux/resource/6/Data.qml:15
 #: activities/memory-math-mult/resource/6/Data.qml:15
 msgctxt "Data|"
 msgid "Multiplication table of 6."
-msgstr "Çarpım tablosu 6."
+msgstr "6'nın çarpım tablosu."
 
 #: activities/memory-math-mult-tux/resource/7/Data.qml:15
 #: activities/memory-math-mult/resource/7/Data.qml:15
 msgctxt "Data|"
 msgid "Multiplication table of 7."
-msgstr "Çarpım tablosu 7."
+msgstr "7'nin çarpım tablosu."
 
 #: activities/memory-math-mult-tux/resource/8/Data.qml:15
 #: activities/memory-math-mult/resource/8/Data.qml:15
 msgctxt "Data|"
 msgid "Multiplication table of 8."
-msgstr "Çarpım tablosu 8."
+msgstr "8'in çarpım tablosu."
 
 #: activities/memory-math-mult-tux/resource/9/Data.qml:15
 #: activities/memory-math-mult/resource/9/Data.qml:15
 msgctxt "Data|"
 msgid "Multiplication table of 9."
-msgstr "Çarpım tablosu 9."
+msgstr "9'un çarpım tablosu."
 
 #. Activity title
 #: activities/memory-math-mult/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Multiplication memory game"
-msgstr "Çarpma işlemi ile hafıza oyunu"
+msgstr "Çarpma işlemi bellek oyunu"
 
 #. Help title
 #: activities/memory-math-mult/ActivityInfo.qml:17
@@ -17326,20 +17306,21 @@ msgstr "Çarpma işlemini sonucuyla eşleştirmek için kartları çevir."
 #: activities/memory-sound-tux/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Audio memory game against Tux"
-msgstr "Tux'a karşı sesli hafıza oyunu"
+msgstr "Tux'a karşı sesli bellek oyunu"
 
 #. Help title
 #: activities/memory-sound-tux/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Flip the cards to match the sound pairs, playing against Tux."
-msgstr "Kartları, ses çiftlerine uyacak şekilde çevir, Tux'a karşı oyna."
+msgstr ""
+"Tux'a karşı oynayarak, kartları ses çiftleriyle eşleştirmek için çevir."
 
 #. Help goal
 #: activities/memory-sound-tux/ActivityInfo.qml:20
 #: activities/memory-sound/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Train your audio memory."
-msgstr "Ses hafızanı kullan."
+msgstr "Ses belleğini çalıştır."
 
 #. Help manual
 #: activities/memory-sound-tux/ActivityInfo.qml:24
@@ -17362,7 +17343,7 @@ msgstr ""
 #: activities/memory-sound/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Audio memory game"
-msgstr "Sesli hafıza oyunu"
+msgstr "Sesli bellek oyunu"
 
 #. Help title
 #: activities/memory-sound/ActivityInfo.qml:17
@@ -17387,7 +17368,7 @@ msgstr "Tux'a karşı eşleşen çiftleri bulmak için kartları çevir."
 #: activities/memory/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Train your memory and remove all the cards."
-msgstr "Hafızanızı geliştirin ve tüm kartları kaldır."
+msgstr "Belleğini geliştir ve tüm kartları kaldır."
 
 #. Help manual
 #: activities/memory-tux/ActivityInfo.qml:24
@@ -17423,7 +17404,7 @@ msgstr ""
 #: activities/memory-wordnumber/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Reading numbers, memory."
-msgstr "Sayıları okuma, hafıza."
+msgstr "Sayıl okuma, bellek."
 
 #. Help manual
 #: activities/memory-wordnumber/ActivityInfo.qml:24
@@ -17591,7 +17572,7 @@ msgstr "Çık"
 #: activities/memory/MemoryCommon.qml:326
 msgctxt "MemoryCommon|"
 msgid "Continue"
-msgstr "Devam et"
+msgstr "Sürdür"
 
 #. Activity title
 #: activities/menu/ActivityInfo.qml:13
@@ -17619,7 +17600,7 @@ msgstr ""
 #: activities/menu/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Some of the activities are game orientated, but still educational."
-msgstr "Bazı etkinlikler oyun odaklı, ancak yine de eğiticidir."
+msgstr "Bazı etkinlikler oyun odaklıdır; ancak yine de eğiticidir."
 
 #. Help manual
 #: activities/menu/ActivityInfo.qml:21
@@ -17642,13 +17623,13 @@ msgid ""
 "(note that each icon is displayed only if available in the current activity)"
 msgstr ""
 "Aşağıdaki simgeler görüntülenir:\n"
-"(her simgenin yalnızca mevcut etkinlikte varsa görüntülendiğini unutma)"
+"(her simgenin yalnızca geçerli etkinlikte varsa görüntülendiğini unutma)"
 
 #: activities/menu/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "Home - Exit an activity, go back to menu (Ctrl+W or Escape key)"
 msgstr ""
-"Ana Sayfa - Bir etkinlikten çık, menüye geri dön (Ctrl + W veya Esc düğmesi)"
+"Ana Sayfa - Bir etkinlikten çık, menüye geri dön (Ctrl + w veya Esc düğmesi)"
 
 #: activities/menu/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
@@ -17688,7 +17669,7 @@ msgstr "G - GCompris Hakkında"
 #: activities/menu/ActivityInfo.qml:33
 msgctxt "ActivityInfo|"
 msgid "Quit - Quit GCompris (Ctrl+Q)"
-msgstr "Çık - GCompris'ten çık (Ctrl + Q)"
+msgstr "Çık - GCompris'ten çık (Ctrl + q)"
 
 #: activities/menu/ActivityInfo.qml:34
 msgctxt "ActivityInfo|"
@@ -17698,7 +17679,7 @@ msgstr "Yıldızlar, her etkinlik için uygun yaş gruplarını gösterir:"
 #: activities/menu/ActivityInfo.qml:35
 msgctxt "ActivityInfo|"
 msgid "1, 2 or 3 yellow stars - from 2 to 6 years old"
-msgstr "1, 2 veya 3 sarı yıldız - 2 ila 6 yaş arası"
+msgstr "1, 2 veya 3 sarı yıldız - 2 ile 6 yaş arası"
 
 #: activities/menu/ActivityInfo.qml:36
 msgctxt "ActivityInfo|"
@@ -17711,28 +17692,28 @@ msgid ""
 "If there are two different star icons on an activity, the first one shows "
 "the minimum difficulty, and the second one the maximum difficulty."
 msgstr ""
-"Bir etkinlikte iki farklı yıldız simgesi varsa birincisi minimum zorluğu ve "
-"ikincisi maksimum zorluğu gösterir."
+"Bir etkinlikte iki farklı yıldız simgesi varsa birincisi en düşük zorluğu ve "
+"ikincisi ise en yüksek zorluğu gösterir."
 
 #: activities/menu/ActivityInfo.qml:38
 msgctxt "ActivityInfo|"
 msgid "<b>Keyboard shortcuts:</b>"
-msgstr "<b> Klavye kısayolları: </b>"
+msgstr "<b> Klavye kısayolları:</b>"
 
 #: activities/menu/ActivityInfo.qml:39
 msgctxt "ActivityInfo|"
 msgid "Ctrl+B: Show or Hide the control bar"
-msgstr "Ctrl + B: Kontrol çubuğunu göster veya gizle"
+msgstr "Ctrl + b: Denetim çubuğunu göster veya gizle"
 
 #: activities/menu/ActivityInfo.qml:40
 msgctxt "ActivityInfo|"
 msgid "Ctrl+F: Toggle full screen"
-msgstr "Ctrl + F; Tam ekranı aç/kapat"
+msgstr "Ctrl + f; Tam ekranı aç/kapat"
 
 #: activities/menu/ActivityInfo.qml:41
 msgctxt "ActivityInfo|"
 msgid "Ctrl+S: Toggle the activity section bar"
-msgstr "Ctrl + S: Etkinlik bölümü çubuğunu aç/kapat"
+msgstr "Ctrl + s: Etkinlik bölümü çubuğunu aç/kapat"
 
 #: activities/menu/BackgroundMusicList.qml:55
 msgctxt "BackgroundMusicList|"
@@ -17791,7 +17772,7 @@ msgstr "Yerelleştirilmiş sesler"
 #: activities/menu/ConfigurationItem.qml:79
 msgctxt "ConfigurationItem|"
 msgid "Check for updates"
-msgstr "Güncellemeleri kontrol et"
+msgstr "Güncellemeleri denetle"
 
 #: activities/menu/ConfigurationItem.qml:80
 msgctxt "ConfigurationItem|"
@@ -17811,7 +17792,7 @@ msgstr "Ses efektlerini etkinleştir"
 #: activities/menu/ConfigurationItem.qml:112
 msgctxt "ConfigurationItem|"
 msgid "Audio effects volume"
-msgstr "Ses efektlerini etkinleştir"
+msgstr "Ses efektleri ses düzeyi"
 
 #: activities/menu/ConfigurationItem.qml:133
 msgctxt "ConfigurationItem|"
@@ -17826,7 +17807,7 @@ msgstr "Arka plan müziğini etkinleştir"
 #: activities/menu/ConfigurationItem.qml:152
 msgctxt "ConfigurationItem|"
 msgid "Background Music"
-msgstr "Arka plan müziği"
+msgstr "Arka Plan Müziği"
 
 #: activities/menu/ConfigurationItem.qml:169
 msgctxt "ConfigurationItem|"
@@ -17847,12 +17828,12 @@ msgstr "Giriş müziği"
 #: activities/menu/ConfigurationItem.qml:196
 msgctxt "ConfigurationItem|"
 msgid "Background music volume"
-msgstr "Arka plan müziği sesi"
+msgstr "Arka plan müziği ses düzeyi"
 
 #: activities/menu/ConfigurationItem.qml:214
 msgctxt "ConfigurationItem|"
 msgid "Fullscreen"
-msgstr "Tam ekran"
+msgstr "Tam Ekran"
 
 #: activities/menu/ConfigurationItem.qml:224
 msgctxt "ConfigurationItem|"
@@ -17887,7 +17868,7 @@ msgstr "Etkinlik bölümü menüsü görünür"
 #: activities/menu/ConfigurationItem.qml:296
 msgctxt "ConfigurationItem|"
 msgid "Ask for confirmation to exit"
-msgstr ""
+msgstr "Çıkarken onay iste"
 
 #: activities/menu/ConfigurationItem.qml:307
 msgctxt "ConfigurationItem|"
@@ -17903,12 +17884,12 @@ msgstr "Yazıtipi boyutu"
 #: activities/menu/ConfigurationItem.qml:366
 msgctxt "ConfigurationItem|"
 msgid "Default"
-msgstr "Varsayılan"
+msgstr "Öntanımlı"
 
 #: activities/menu/ConfigurationItem.qml:341
 msgctxt "ConfigurationItem|"
 msgid "Font Capitalization"
-msgstr "Yazıtipi Büyük Harf Yapımı"
+msgstr "Yazıtipi Harf Büyütme"
 
 #: activities/menu/ConfigurationItem.qml:346
 msgctxt "ConfigurationItem|"
@@ -17918,17 +17899,17 @@ msgstr "Yazıtipi harf boşluklandırması"
 #: activities/menu/ConfigurationItem.qml:372
 msgctxt "ConfigurationItem|"
 msgid "Difficulty filter:"
-msgstr "Zorluk filtresi:"
+msgstr "Zorluk süzgeci:"
 
 #: activities/menu/ConfigurationItem.qml:664
 msgctxt "ConfigurationItem|"
 msgid "Mixed case (default)"
-msgstr "Karışık büyük / küçük harf (varsayılan)"
+msgstr "Karışık BÜYÜK/küçük harf (öntanımlı)"
 
 #: activities/menu/ConfigurationItem.qml:665
 msgctxt "ConfigurationItem|"
 msgid "All uppercase"
-msgstr "Tümü büyük harf"
+msgstr "Tümü BÜYÜK harf"
 
 #: activities/menu/ConfigurationItem.qml:666
 msgctxt "ConfigurationItem|"
@@ -18026,7 +18007,7 @@ msgstr ""
 #: activities/menu/Menu.qml:774
 msgctxt "Menu|"
 msgid "Search specific activities"
-msgstr "Belirli etkinlikleri ara"
+msgstr "Etkinlik ara"
 
 #: activities/menu/Menu.qml:801
 msgctxt "Menu|"
@@ -18044,8 +18025,7 @@ msgstr "Altın madenciliği"
 msgctxt "ActivityInfo|"
 msgid "Use the mousewheel to approach the rockwall and look for gold nuggets."
 msgstr ""
-"Kaya duvarına yaklaşmak için fare tekerleğini kullan veya dokunmatikte aşağı "
-"yukarı kaydır, altın külçeleri ara."
+"Kaya duvarına yaklaşıp altın külçelerini aramak için fare tekerleğini kullan."
 
 #. Help goal
 #: activities/mining/ActivityInfo.qml:20
@@ -18053,14 +18033,14 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Learn to use the mousewheel or the zoom / pinch gesture to zoom in and out."
 msgstr ""
-"Yakınlaştırmak ve uzaklaştırmak için fare tekerleğini veya telefondan "
-"yakınlaştırma / kıstırma hareketini kullanmayı öğren."
+"Yakınlaştırıp uzaklaştırmak için fare tekerleğini veya yakınlaştırma/"
+"kıstırma hareketini öğren."
 
 #. Help prerequisite
 #: activities/mining/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid "You should be familiar with moving the mouse and clicking."
-msgstr "Fareyi hareket ettirmeyi ve tıklamayı öğrenmelisin."
+msgstr "Fareyi hareket ettirme ve tıklama ile artık aşina olmuş olmalısın."
 
 #. Help manual
 #: activities/mining/ActivityInfo.qml:24
@@ -18073,7 +18053,7 @@ msgid ""
 msgstr ""
 "Kaya duvarına baktığında bir yerlerde bir ışıltı görebilirsin. Bu ışıltının "
 "yanına git ve yakınlaştırmak için fare tekerleğini veya yakınlaştırma "
-"hareketini kullan. Maksimum yakınlaştırma düzeyine ulaştığında, ışıltının "
+"hareketini kullan. En yüksek yakınlaştırma düzeyine ulaştığında, ışıltının "
 "olduğu yerde altın bir külçe görünecektir. Toplamak için altın külçeye tıkla."
 
 #: activities/mining/ActivityInfo.qml:25
@@ -18113,8 +18093,7 @@ msgstr "realrainbow.ogg - yeni bir altın külçe göründüğünde kullanılır
 #: activities/mining/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid "metalpaint.wav - remixed and used when a gold nugget is collected"
-msgstr ""
-"metalpaint.wav - yeniden karıştırılır ve altın külçe toplandığında kullanılır"
+msgstr "metalpaint.wav - bir altın külçe toplandığında kullanılır"
 
 #: activities/mining/Mining.qml:407
 msgctxt "Mining|"
@@ -18125,15 +18104,15 @@ msgid ""
 "two fingers on the center. On a touch area, drag two fingers away from the "
 "sparkle, one in each direction."
 msgstr ""
-"Işıltıyı bul ve etrafını yakınlaştır. Faren varsa, yer çubuğunu ışıltı "
-"üzerine getir ve ardından sarma tekerleğini kullan. ardından bir parmağını "
+"Işıltıyı bul ve etrafını yakınlaştır. Faren varsa yer çubuğunu ışıltı "
+"üzerine getir ve ardından sarma tekerleğini kullan. Ardından bir parmağını "
 "sağ alana veya iki parmağını ortaya doğru sürükle. Dokunma alanında, iki "
 "parmağını her iki yönde birer tane olmak üzere ışıltıdan uzağa sürükle."
 
 #: activities/mining/Mining.qml:418
 msgctxt "Mining|"
 msgid "Perfect you are zooming. Continue until you see the nugget."
-msgstr "Mükemmel yakınlaştırıyorsun. Külçeyi görene kadar devam et."
+msgstr "Artık yakınlaştırıyorsun, süper. Külçeyi görene kadar sürdür."
 
 #: activities/mining/Mining.qml:424
 msgctxt "Mining|"
@@ -18162,21 +18141,18 @@ msgstr "Şimdi uzaklaş ve başka bir ışıltıyı bulmayı dene."
 #: activities/mining/Mining.qml:448
 msgctxt "Mining|"
 msgid "Continue to unzoom until you see the sparkle."
-msgstr "Işıltıyı görene kadar uzaklaşmaya devam et."
+msgstr "Işıltıyı görene kadar uzaklaşmayı sürdür."
 
 #: activities/mining/Mining.qml:454
 msgctxt "Mining|"
 msgid "Now you see the sparkle, go ahead, you can zoom on it."
-msgstr "Şimdi bir ışıltı görüyorsun, devam et, ona yakınlaşabilirsin."
+msgstr "Şimdi bir ışıltı görüyorsun, sürdür, ona yakınlaşabilirsin."
 
 #. Activity title
 #: activities/missing-letter/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Missing Letter"
 msgctxt "ActivityInfo|"
 msgid "Missing letter"
-msgstr "Eksik Harf"
+msgstr "Eksik harf"
 
 #. Help title
 #: activities/missing-letter/ActivityInfo.qml:18
@@ -18263,7 +18239,7 @@ msgstr ""
 #: activities/number_sequence/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Can count."
-msgstr "Sayılabilir."
+msgstr "Sayabilir."
 
 #. Help manual
 #: activities/money/ActivityInfo.qml:24
@@ -18283,7 +18259,7 @@ msgstr ""
 #: activities/money_cents/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: navigate inside an area"
-msgstr "Sol ve Sağ oklar: bir alan içinde gez"
+msgstr "Sol ve Sağ oklar: Bir alan içinde dolaş"
 
 #: activities/money/ActivityInfo.qml:28
 #: activities/money_back/ActivityInfo.qml:28
@@ -18291,7 +18267,7 @@ msgstr "Sol ve Sağ oklar: bir alan içinde gez"
 #: activities/money_cents/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Tab: navigate between the bottom and the top areas"
-msgstr "Sekme: alt ve üst alanlar arasında gez"
+msgstr "Sekme: Alt ve üst alanlar arasında dolaş"
 
 #: activities/money/money.js:143
 msgctxt "money|"
@@ -18300,7 +18276,7 @@ msgid ""
 "you want to remove a coin or a note, click on it on the upper screen area."
 msgstr ""
 "Ödemek için ekranın altındaki bozuk veya kağıt paralara tıkla. Bir bozuk "
-"para veya banknot(kağıt para) çıkarmak istiyorsan, ekranın üst kısmında "
+"para veya banknot (kağıt para) çıkarmak istiyorsan ekranın üst kısmında "
 "paranın üzerine tıkla."
 
 #: activities/money/money.js:174
@@ -18335,7 +18311,7 @@ msgstr "100 birime kadar olan miktar."
 #: activities/money_cents/resource/3/Data.qml:15
 msgctxt "Data|"
 msgid "Amount up to 1000 units."
-msgstr "1000 birime kadar olan miktar."
+msgstr "1.000 birime kadar olan miktar."
 
 #. Activity title
 #: activities/money_back/ActivityInfo.qml:15
@@ -18348,7 +18324,7 @@ msgstr "Tux'a para üstü ver"
 #: activities/money_back_cents/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Practice money usage by giving Tux his change."
-msgstr "Tux'a para üstü vererek, para kullanma egzersizi yap."
+msgstr "Tux'a para üstü vererek para kullanma egzersizi yap."
 
 #. Help goal
 #: activities/money_back/ActivityInfo.qml:20
@@ -18373,7 +18349,7 @@ msgid ""
 "you want to remove a coin or a note, click on it on the upper screen area."
 msgstr ""
 "Ödemek için ekranın alt bölümündeki bozuk veya kağıt paraya tıkla. Bozuk "
-"veya kağıt parayı kaldırmak için, üstüne tıkla."
+"veya kağıt parayı kaldırmak için üstüne tıkla."
 
 #. Activity title
 #: activities/money_back_cents/ActivityInfo.qml:15
@@ -18405,37 +18381,28 @@ msgstr ""
 
 #. Activity title
 #: activities/morse_code/ActivityInfo.qml:18
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Discover the braille system"
 msgctxt "ActivityInfo|"
 msgid "Discover the International Morse code"
-msgstr "Braille sistemini keşfet"
+msgstr "Uluslararası Mors Kodu'nu keşfet"
 
 #. Help title
 #: activities/morse_code/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn how to tell the time on an analog clock."
 msgctxt "ActivityInfo|"
 msgid "Learn how to communicate with the International Morse code."
-msgstr "Analog saatte zamanı nasıl söyleyeceğini öğren."
+msgstr "Uluslararası Mors Kodu ile nasıl iletişim kuracağını öğren"
 
 #. Help goal
 #: activities/morse_code/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid ""
 "You have to send and receive letters and digits in International Morse code."
-msgstr ""
+msgstr "Uluslararası Mors Kodu ile harfler ve sayılar gönderip almalısın."
 
 #. Help prerequisite
 #: activities/morse_code/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Knowledge of arithmetic operations."
 msgctxt "ActivityInfo|"
 msgid "Knowledge of alphabets and digits."
-msgstr "Aritmetik işlemler bilgisi."
+msgstr "Abeceler ve rakamlar bilgisi."
 
 #. Help manual
 #: activities/morse_code/ActivityInfo.qml:27
@@ -18446,11 +18413,14 @@ msgid ""
 "have a look at the translation map which contains the code for all the "
 "letters and digits."
 msgstr ""
+"Senden Mors koduyla bir ileti göndermen veya alınan Mors kodu iletisini "
+"harflere veya rakamlara dönüştürmen isteniyor. Mors alfabesini öğrenmek için "
+"tüm harf ve rakamların kodunu içeren çeviri haritasına göz atabilirsin."
 
 #: activities/morse_code/FirstScreen.qml:25
 msgctxt "FirstScreen|"
 msgid "Exploring Morse Code"
-msgstr ""
+msgstr "Mors Kodunu Keşfet"
 
 #: activities/morse_code/FirstScreen.qml:64
 msgctxt "FirstScreen|"
@@ -18458,6 +18428,8 @@ msgid ""
 "Morse code was developed by Samuel Morse. It is a method of transmitting "
 "text information as a series of on-off tones, lights, or clicks."
 msgstr ""
+"Mors Kodu, Samuel Morse tarafından geliştirilmiştir. Metin verisini açık/"
+"kapalı tonları, ışıklar veya tıklar kullanarak gönderme yöntemidir."
 
 #: activities/morse_code/FirstScreen.qml:65
 msgctxt "FirstScreen|"
@@ -18470,40 +18442,35 @@ msgid ""
 "For example, the most common letter in English, the letter \"E\", has the "
 "shortest code, a single dot."
 msgstr ""
+"Her Mors kodu sembolü, bir metin karakterini (harf veya rakam) veya bir "
+"noktalamayı temsil eder ve benzersiz bir nokta ve çizgi dizisi ile temsil "
+"edilir. Kısa çizginin süresi, noktanın süresinin üç katıdır. İletişimin "
+"hızını artırmak için kod, en yaygın harflerin daha kısa nokta ve çizgi "
+"dizilerine sahip olacağı şekilde tasarlandı.\n"
+"Örneğin, İngilizcedeki en yaygın harf olan \"E\" harfi, en kısa koda, tek "
+"bir noktaya sahiptir."
 
 #: activities/morse_code/FirstScreen.qml:90
-#, fuzzy
-#| msgctxt "FirstScreen|"
-#| msgid ""
-#| "When you are ready, click on me and try reproducing braille characters."
 msgctxt "FirstScreen|"
 msgid "When you are ready, click on Tux and we will converse in Morse code."
-msgstr ""
-"Hazır olduğunda, bana tıkla ve braille karakterlerini yeniden üretmeyi dene."
+msgstr "Hazır olduğunda Tux'a tıkla ve Mors kodunda konuşalım."
 
 #: activities/morse_code/MorseCode.qml:349
-#, fuzzy, qt-format
-#| msgctxt "RomanNumerals|"
-#| msgid "Roman value: %1"
+#, qt-format
 msgctxt "MorseCode|"
 msgid "Morse value: %1"
-msgstr "Roma değer: %1"
+msgstr "Mors değeri: %1"
 
 #: activities/morse_code/MorseCode.qml:350
-#, fuzzy, qt-format
-#| msgctxt "RomanNumerals|"
-#| msgid "Arabic value: %1"
+#, qt-format
 msgctxt "MorseCode|"
 msgid "Alphabet/Numeric value: %1"
-msgstr "Arapça değer: %1"
+msgstr "Abece/Sayı değeri: %1"
 
 #: activities/morse_code/resource/1/Data.qml:13
-#, fuzzy
-#| msgctxt "Menu|"
-#| msgid "Letters"
 msgctxt "Data|"
 msgid "Letters."
-msgstr "Harfler"
+msgstr "Harfler."
 
 #: activities/morse_code/resource/1/Data.qml:18
 #: activities/morse_code/resource/1/Data.qml:34
@@ -18515,52 +18482,42 @@ msgstr "Harfler"
 #, qt-format
 msgctxt "Data|"
 msgid "Send the message %1 in Morse code."
-msgstr ""
+msgstr "%1 iletisini Mors kodunda gönder."
 
 #: activities/morse_code/resource/1/Data.qml:23
 #: activities/morse_code/resource/1/Data.qml:39
 #: activities/morse_code/resource/1/Data.qml:55
 #: activities/morse_code/resource/1/Data.qml:71
-#, fuzzy, qt-format
-#| msgctxt "RomanNumerals|"
-#| msgid "Convert the roman number %1 to arabic."
+#, qt-format
 msgctxt "Data|"
 msgid "Convert the message %1 to letters."
-msgstr "%1 Roma rakamını Arapçaya çevir."
+msgstr "%1 iletisini harflere dönüştür."
 
 #: activities/morse_code/resource/1/Data.qml:28
 #: activities/morse_code/resource/1/Data.qml:44
 #: activities/morse_code/resource/1/Data.qml:60
 #: activities/morse_code/resource/1/Data.qml:76
-#, fuzzy
-#| msgctxt "advanced_colors|"
-#| msgid "Find the corn butterfly"
 msgctxt "Data|"
 msgid "Find the corresponding letter."
-msgstr "Mısır rengi kelebeği bul"
+msgstr "Karşılık gelen harfi bul."
 
 #: activities/morse_code/resource/2/Data.qml:13
 msgctxt "Data|"
 msgid "Digits."
-msgstr ""
+msgstr "Rakamlar."
 
 #: activities/morse_code/resource/2/Data.qml:23
 #: activities/morse_code/resource/2/Data.qml:39
-#, fuzzy, qt-format
-#| msgctxt "RomanNumerals|"
-#| msgid "Convert the roman number %1 to arabic."
+#, qt-format
 msgctxt "Data|"
 msgid "Convert the message %1 to digits."
-msgstr "%1 Roma rakamını Arapçaya çevir."
+msgstr "%1 iletisini rakamlara dönüştür."
 
 #: activities/morse_code/resource/2/Data.qml:28
 #: activities/morse_code/resource/2/Data.qml:44
-#, fuzzy
-#| msgctxt "instruments|"
-#| msgid "Find the accordion"
 msgctxt "Data|"
 msgid "Find the corresponding digit."
-msgstr "Akordiyonu bul"
+msgstr "Karşılık gelen rakamı bul."
 
 #: activities/morse_code/resource/3/Data.qml:13
 msgctxt "Data|"
@@ -18570,15 +18527,12 @@ msgstr "Sözcükler."
 #: activities/morse_code/resource/3/Data.qml:24
 msgctxt "Data|"
 msgid "Write the Morse code you hear."
-msgstr ""
+msgstr "Duyduğun Mors kodunu yaz."
 
 #: activities/morse_code/resource/3/Data.qml:34
-#, fuzzy
-#| msgctxt "RomanNumerals|"
-#| msgid "Convert the roman number %1 to arabic."
 msgctxt "Data|"
 msgid "Convert the message in a word."
-msgstr "%1 Roma rakamını Arapçaya çevir."
+msgstr "İletiyi bir sözcüğe dönüştür."
 
 #. Activity title
 #: activities/mosaic/ActivityInfo.qml:15
@@ -18605,17 +18559,17 @@ msgstr ""
 #: activities/mosaic/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Arrows: navigate inside an area"
-msgstr "Oklar: bir alan içinde gezinme"
+msgstr "Oklar: Bir alan içinde dolaş"
 
 #: activities/mosaic/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Space or Enter: select or place an item"
-msgstr "Boşluk veya Giriş: bir öge seç veya yerleştir"
+msgstr "Boşluk veya Giriş: Bir öge seç veya yerleştir"
 
 #: activities/mosaic/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Tab: navigate between the item list and the mosaic"
-msgstr "Sekme: öge listesi ve mozaik arasında gezin"
+msgstr "Sekme: Öge listesi ve mozaik arasında dolaş"
 
 #: activities/mosaic/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -18655,17 +18609,12 @@ msgstr ""
 
 #. Help manual
 #: activities/nine_men_morris/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Play with a friend. First take turns to place nine pieces, and then take "
-#| "turns to move your pieces."
 msgctxt "ActivityInfo|"
 msgid ""
 "Play with Tux. First take turns to place nine pieces, and then take turns to "
 "move your pieces."
 msgstr ""
-"Arkadaşınla oyna. Önce sırayla dokuz parçayı yerleştir ve ardından sırayla "
+"Tux ile oyna. Önce sırayla dokuz parçayı yerleştir ve ardından sırayla "
 "parçalarını hareket ettir."
 
 #: activities/nine_men_morris/nine_men_morris.js:29
@@ -18685,7 +18634,7 @@ msgid ""
 "are left on the board."
 msgstr ""
 "Bir mill oluşturursan (3 parçalık bir sıra), Tux'un parçalarından birini "
-"çıkarmak için seç. Tahta üzerinde başka parça kalmadıkça oluşan mill "
+"kaldırmak için seç. Tahta üzerinde başka parça kalmadıkça oluşan mill "
 "parçaları çıkarılamaz."
 
 #: activities/nine_men_morris/nine_men_morris.js:37
@@ -18706,8 +18655,8 @@ msgid ""
 "If you are left with 3 pieces, they gain the ability to 'fly' and can be "
 "moved to any vacant spot on the board."
 msgstr ""
-"Eğer 3 taşın kaldıysa, taşların 'uçma' özelliği kazanır ve taşlarını "
-"herhangi bir boş bölgeye taşıyabilirsin."
+"Eğer 3 taşın kaldıysa taşların 'uçma' özelliği kazanır ve taşlarını herhangi "
+"bir boş bölgeye taşıyabilirsin."
 
 #: activities/nine_men_morris/nine_men_morris.js:45
 msgctxt "nine_men_morris|"
@@ -18715,13 +18664,13 @@ msgid ""
 "If you immobilize the computer or leave it with less than 3 pieces, then you "
 "win the game."
 msgstr ""
-"Bilgisayarın hamlesi kalmazsa veya 3 taştan az kalırsa, oyunu kazanırsın."
+"Bilgisayarın hamlesi kalmazsa veya 3 taştan az kalırsa oyunu kazanırsın."
 
 #: activities/nine_men_morris/nine_men_morris.js:263
 #: activities/nine_men_morris/nine_men_morris.js:1113
 msgctxt "nine_men_morris|"
 msgid "Place a piece"
-msgstr "Bir taş koy"
+msgstr "Bir taş yerleştir"
 
 #: activities/nine_men_morris/nine_men_morris.js:393
 #: activities/nine_men_morris/nine_men_morris.js:1171
@@ -18732,7 +18681,7 @@ msgstr "Bir taşı hareket ettir"
 #: activities/nine_men_morris/nine_men_morris.js:945
 msgctxt "nine_men_morris|"
 msgid "Remove a piece"
-msgstr "Bir taş kaldır"
+msgstr "Bir taşı kaldır"
 
 #: activities/nine_men_morris/nine_men_morris.js:1148
 msgctxt "nine_men_morris|"
@@ -18742,12 +18691,12 @@ msgstr "Tebrikler"
 #: activities/nine_men_morris/nine_men_morris.js:1151
 msgctxt "nine_men_morris|"
 msgid "Congratulations Player 1"
-msgstr "Tebrikler Oyuncu 1"
+msgstr "1. oyuncu, tebrikler"
 
 #: activities/nine_men_morris/nine_men_morris.js:1162
 msgctxt "nine_men_morris|"
 msgid "Congratulations Player 2"
-msgstr "Tebrikler Oyuncu 2"
+msgstr "2. oyuncu, tebrikler"
 
 #: activities/nine_men_morris/nine_men_morris.js:1165
 msgctxt "nine_men_morris|"
@@ -18758,7 +18707,7 @@ msgstr "Yeniden dene"
 #: activities/nine_men_morris_2players/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Nine men's morris (with a friend)"
-msgstr "Dokuz taş (bir arkadaşınla)"
+msgstr "Dokuz taş (bir arkadaşla)"
 
 #. Help goal
 #: activities/nine_men_morris_2players/ActivityInfo.qml:20
@@ -18782,12 +18731,9 @@ msgstr ""
 
 #. Activity title
 #: activities/note_names/ActivityInfo.qml:18
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Name that Note"
 msgctxt "ActivityInfo|"
 msgid "Name that note"
-msgstr "Notalar"
+msgstr "Şu notayı adlandır"
 
 #. Help title
 #: activities/note_names/ActivityInfo.qml:20
@@ -18815,7 +18761,7 @@ msgstr "Notaları doğru tanımla ve bir düzeyi tamamlamak hepsini doğru yap."
 #, qt-format
 msgctxt "NoteNames|"
 msgid "New note: %1"
-msgstr "Yeni nota : %1"
+msgstr "Yeni nota: %1"
 
 #. The following translation represents percentage.
 #: activities/note_names/NoteNames.qml:263
@@ -18841,7 +18787,7 @@ msgstr "Çık"
 #: activities/note_names/NoteNames.qml:455
 msgctxt "NoteNames|"
 msgid "Continue"
-msgstr "Devam et"
+msgstr "Sürdür"
 
 #: activities/note_names/resource/dataset_01.qml:89
 msgctxt "dataset_01|"
@@ -18876,12 +18822,9 @@ msgstr "Doğru sıradaki her numaraya tıklayarak resmi çiz."
 
 #. Activity title
 #: activities/numbers-odd-even/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Even and Odd Numbers"
 msgctxt "ActivityInfo|"
 msgid "Even and odd numbers"
-msgstr "Çift ve Tek Sayılar"
+msgstr "Çift ve tek sayılar"
 
 #. Help title
 #: activities/numbers-odd-even/ActivityInfo.qml:17
@@ -18902,21 +18845,21 @@ msgid ""
 "corner."
 msgstr ""
 "Tek veya çift numaralı bulutları doğru sıra ile yakala. Helikopteri hareket "
-"ettirmek için klavye ile ok tuşlarını kullan. Hedef konuma tıklaman veya "
+"ettirmek için klavye ile ok düğmelerini kullan. Hedef konuma tıklaman veya "
 "dokunman yeterlidir. Hangi numarayı yakalaman gerektiğini anımsamaya çalış "
 "ya da öğrenmek için sağ alt köşedeki numarayı kontrol edebilirsin."
 
 #: activities/numbers-odd-even/NumbersOddEven.qml:36
 msgctxt "NumbersOddEven|"
 msgid "This activity teaches about even and odd numbers."
-msgstr "Bu etkinlik, çift ve tek sayıları öğretir."
+msgstr "Bu etkinlik, tek ve çift sayıları öğretir."
 
 #: activities/numbers-odd-even/NumbersOddEven.qml:40
 #: activities/numbers-odd-even/NumbersOddEven.qml:50
 msgctxt "NumbersOddEven|"
 msgid ""
 "Even numbers are numbers which leave a remainder of 0 when divided by 2."
-msgstr "Çift sayılar, 2'ye bölündüğünde 0'ın kalanını veren sayılardır."
+msgstr "Çift sayılar, 2'ye bölündüğünde 0 kalanını veren sayılardır."
 
 #: activities/numbers-odd-even/NumbersOddEven.qml:45
 msgctxt "NumbersOddEven|"
@@ -18928,14 +18871,15 @@ msgctxt "NumbersOddEven|"
 msgid ""
 "Odd numbers are numbers which do not leave a remainder of 0 when divided by "
 "2."
-msgstr "Tek sayılar, 2'ye bölündüğünde 0'ın kalanını vermeyen sayılardır."
+msgstr ""
+"Tek sayılar, 2'ye bölündüğünde 0'dan farklı bir kalan veren sayılardır."
 
 #: activities/numbers-odd-even/NumbersOddEven.qml:58
 #: activities/numbers-odd-even/NumbersOddEven.qml:62
 #: activities/numbers-odd-even/NumbersOddEven.qml:66
 msgctxt "NumbersOddEven|"
 msgid "Exercise to test your understanding."
-msgstr "Anlayıp anlamadığını test etmek için egzersiz yap."
+msgstr "Anlayıp anlamadığını sınamak için egzersiz yap."
 
 #: activities/numbers-odd-even/resource/Tutorial1.qml:22
 msgctxt "Tutorial1|"
@@ -18946,8 +18890,8 @@ msgid ""
 " If 7 is divided by 2 the result is 3 and the remainder is 1."
 msgstr ""
 "Kalan, bir sayıyı başka bir sayıya böldükten sonra \"kalan\" miktardır.\n"
-" 6, 2'ye bölünürse, sonuç 3 olur ve geri kalan 0 olur.\n"
-" 7, 2'ye bölünürse, sonuç 3 olur ve geri kalan 1 olur."
+" 6, 2'ye bölünürse sonuç 3 olur ve geriye kalan 0'dır.\n"
+" 7, 2'ye bölünürse sonuç 3 olur ve geriye kalan 1'dir."
 
 #: activities/numbers-odd-even/resource/Tutorial2.qml:22
 msgctxt "Tutorial2|"
@@ -18957,7 +18901,7 @@ msgid ""
 "of 0 when divided by 2."
 msgstr ""
 "Örneğin: 12, 38, 52, 68, 102, 118, 168, 188, 502, 532, 700, 798, 842, 892, "
-"1000. Bu sayıların tümü, 2'ye bölündüğünde 0'ın kalanını bıraktıkları için "
+"1.000. Bu sayıların tümü, 2'ye bölündüğünde 0 kalanını bıraktıkları için "
 "çift sayılardır."
 
 #: activities/numbers-odd-even/resource/Tutorial3.qml:22
@@ -18968,7 +18912,7 @@ msgid ""
 "remainder of 0 when divided by 2."
 msgstr ""
 "Örneğin: 15, 19, 51, 65, 103, 119, 169, 185, 505, 533, 701, 799, 845, 897, "
-"1001. Tüm bu sayılar tek sayılardır çünkü 2'ye bölündüğünde 0'ın kalanını "
+"1.001. Tüm bu sayılar tek sayılardır çünkü 2'ye bölündüğünde 0 kalanını "
 "vermezler."
 
 #: activities/numbers-odd-even/resource/TutorialBase.qml:32
@@ -18995,8 +18939,8 @@ msgid ""
 "There is an error: when divided by 2, %1 leaves a remainder of 1. Therefore "
 "this is an odd number."
 msgstr ""
-"Bir hata var: 2'ye bölündüğünde, %1 1'in kalanını bırakır. Dolayısıyla bu "
-"tek sayıdır."
+"Bir hata var: 2'ye bölündüğünde %1, 1 kalanını bırakır. Dolayısıyla bu tek "
+"sayıdır."
 
 #: activities/numbers-odd-even/resource/TutorialBase.qml:64
 #: activities/numbers-odd-even/resource/TutorialBase.qml:94
@@ -19006,17 +18950,14 @@ msgid ""
 "There is an error: when divided by 2, %1 leaves a remainder of 0. Therefore "
 "this is an even number."
 msgstr ""
-"Bir hata var: 2'ye bölündüğünde, %1, 0'ın kalanını bırakır. Bu nedenle, bu "
-"bir çift sayıdır."
+"Bir hata var: 2'ye bölündüğünde %1, 0 kalanını bırakır. Bu nedenle, bu bir "
+"çift sayıdır."
 
 #. Activity title
 #: activities/ordering_alphabets/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Knowing alphabets"
 msgctxt "ActivityInfo|"
 msgid "Ordering letters"
-msgstr "Alfabeyi öğrenme"
+msgstr "Harfleri sıralama"
 
 #. Help title
 #: activities/ordering_alphabets/ActivityInfo.qml:23
@@ -19025,15 +18966,14 @@ msgid ""
 "Arrange the given letters in alphabetical order or in reverse alphabetical "
 "order as requested."
 msgstr ""
+"Verilen harfleri istenildiği gibi abecesel sıraya veya ters abecesel sıraya "
+"göre düzenle."
 
 #. Help goal
 #: activities/ordering_alphabets/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn the water cycle."
 msgctxt "ActivityInfo|"
 msgid "Learn the alphabetical order."
-msgstr "Su döngüsünü öğren."
+msgstr "Abecesel sırayı öğren."
 
 #. Help manual
 #: activities/ordering_alphabets/ActivityInfo.qml:30
@@ -19042,45 +18982,47 @@ msgid ""
 "You are provided with some letters. Drag and drop them to the upper area in "
 "alphabetical order or in reverse alphabetical order as requested."
 msgstr ""
+"Sana bazı harfler verildi. Abecesel sırayla veya isteğe göre ters abecesel "
+"sırayla üst alana sürükleyip bırak."
 
 #: activities/ordering_alphabets/resource/1/Data.qml:13
 msgctxt "Data|"
 msgid "Ascending order, 5 defined letters."
-msgstr ""
+msgstr "Artan sıra, 5 belirli harf."
 
 #. Add 5 letters in ascending lexicographical order, separated by | character. The objective is to give children these letters in random order and ask them to sort in ascending lexicographical order.
 #: activities/ordering_alphabets/resource/1/Data.qml:22
 msgctxt "Data|"
 msgid "a|b|c|d|e"
-msgstr ""
+msgstr "a|b|c|ç|d"
 
 #. Add 5 letters in ascending lexicographical order, separated by | character. The objective is to give children these letters in random order and ask them to sort in ascending lexicographical order.
 #: activities/ordering_alphabets/resource/1/Data.qml:28
 msgctxt "Data|"
 msgid "c|f|g|l|m"
-msgstr ""
+msgstr "c|f|g|l|m"
 
 #: activities/ordering_alphabets/resource/2/Data.qml:13
 msgctxt "Data|"
 msgid "Descending order, 5 defined letters."
-msgstr ""
+msgstr "Azalan sıra, 5 belirli harf."
 
 #. Add 5 letters in ascending lexicographical order, separated by | character. The objective is to give children these letters in random order and ask them to sort in descending lexicographical order.
 #: activities/ordering_alphabets/resource/2/Data.qml:22
 msgctxt "Data|"
 msgid "v|w|x|y|z"
-msgstr ""
+msgstr "u|ü|v|y|z"
 
 #. Add 5 letters in ascending lexicographical order, separated by | character. The objective is to give children these letters in random order and ask them to sort in descending lexicographical order.
 #: activities/ordering_alphabets/resource/2/Data.qml:28
 msgctxt "Data|"
 msgid "a|b|d|f|g"
-msgstr ""
+msgstr "a|b|d|f|g"
 
 #: activities/ordering_alphabets/resource/3/Data.qml:13
 msgctxt "Data|"
 msgid "Ascending order, 5 random letters."
-msgstr ""
+msgstr "Artan sıra, 5 rastgele harf."
 
 #. Translate the below string to the set of alphabets in ascending order in your language. The objective is to give children some random letters from this string, and ask them to order them in ascending order.
 #. ----------
@@ -19091,43 +19033,40 @@ msgstr ""
 #: activities/ordering_alphabets/resource/6/Data.qml:21
 msgctxt "Data|"
 msgid "a|b|c|d|e|f|g|h|i|j|k|l|m|n|o|p|q|r|s|t|u|v|w|x|y|z"
-msgstr ""
+msgstr "a|b|c|ç|d|e|f|g|ğ|h|ı|i|j|k|l|m|n|o|ö|p|r|s|ş|t|u|ü|v|y|z"
 
 #: activities/ordering_alphabets/resource/4/Data.qml:13
 msgctxt "Data|"
 msgid "Descending order, 5 random letters."
-msgstr ""
+msgstr "Azalan sıra, 5 rastgele harf."
 
 #: activities/ordering_alphabets/resource/5/Data.qml:13
 msgctxt "Data|"
 msgid "Ascending order, 8 random letters."
-msgstr ""
+msgstr "Artan sıra, 8 rastgele harf."
 
 #: activities/ordering_alphabets/resource/6/Data.qml:13
 msgctxt "Data|"
 msgid "Descending order, 8 random letters."
-msgstr ""
+msgstr "Azalan sıra, 8 rastgele harf."
 
 #. Activity title
 #: activities/ordering_chronology/ActivityInfo.qml:21
 msgctxt "ActivityInfo|"
 msgid "Ordering chronology"
-msgstr ""
+msgstr "Kronolojiyi sıralama"
 
 #. Help title
 #: activities/ordering_chronology/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Arrange the pieces in the right order."
 msgctxt "ActivityInfo|"
 msgid "Arrange the given events in their chronological order."
-msgstr "Parçaları doğru sırayla düzenle."
+msgstr "Verilen olayları kronolojik sıraya koy."
 
 #. Help goal
 #: activities/ordering_chronology/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Can decide chronological order of events."
-msgstr ""
+msgstr "Olayların kronolojik sırasına karar verebilir."
 
 #. Help manual
 #: activities/ordering_chronology/ActivityInfo.qml:30
@@ -19142,57 +19081,42 @@ msgstr ""
 #: activities/ordering_chronology/resource/1/Data.qml:13
 msgctxt "Data|"
 msgid "Cycle of life of a flower."
-msgstr ""
+msgstr "Bir çiçeğin yaşam çevrimi."
 
 #: activities/ordering_chronology/resource/2/Data.qml:13
 msgctxt "Data|"
 msgid "Travel to the Moon."
-msgstr ""
+msgstr "Aya Yolculuk."
 
 #: activities/ordering_chronology/resource/3/Data.qml:13
-#, fuzzy
-#| msgctxt "board4_0|"
-#| msgid "Tux and the apple tree"
 msgctxt "Data|"
 msgid "Tux gathers an apple."
-msgstr "Tux ve elma ağacı"
+msgstr "Tux bir elma topladı."
 
 #. Activity title
 #: activities/ordering_numbers/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "category_odd_even|"
-#| msgid "Odd even numbers"
 msgctxt "ActivityInfo|"
 msgid "Ordering numbers"
-msgstr "Tek ve çift sayılar"
+msgstr "Sayıları sıralama."
 
 #. Help title
 #: activities/ordering_numbers/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Arrange the pieces in the right order."
 msgctxt "ActivityInfo|"
 msgid ""
 "Arrange the given numbers in ascending or descending order as requested."
-msgstr "Parçaları doğru sırayla düzenle."
+msgstr "Verilen sayıları istenildiği gibi artan veya azalan sırada düzenle."
 
 #. intro: "Arrange the numbers in the correct order." Help goal
 #: activities/ordering_numbers/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Roman numbers"
 msgctxt "ActivityInfo|"
 msgid "Compare numbers."
-msgstr "Roma rakamları"
+msgstr "Sayıları karşılaştır."
 
 #. Help prerequisite
 #: activities/ordering_numbers/ActivityInfo.qml:27
-#, fuzzy
-#| msgctxt "FindIt|"
-#| msgid "Continue"
 msgctxt "ActivityInfo|"
 msgid "Counting."
-msgstr "Devam et"
+msgstr "Sayma."
 
 #. Help manual
 #: activities/ordering_numbers/ActivityInfo.qml:29
@@ -19201,149 +19125,97 @@ msgid ""
 "You are provided with some numbers. Drag and drop them to the upper area in "
 "ascending or descending order as requested."
 msgstr ""
+"Sana bazı numaralar verildi. İstenildiği gibi artan veya azalan sırada üst "
+"alana sürükleyip bırak."
 
 #: activities/ordering_numbers/ordering.js:67
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Drag and Drop the items to match them."
 msgctxt "ordering|"
 msgid "Drag and drop the items in ascending order."
-msgstr "Eşleştirme için nesneleri sürükleyip bırakın."
+msgstr "Ögeleri artan sırada sürükleyip bırak."
 
 #: activities/ordering_numbers/ordering.js:68
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Drag and drop the map pieces to their correct locations to complete the "
-#| "map."
 msgctxt "ordering|"
 msgid "Drag and drop the items in descending order."
-msgstr ""
-"Haritayı tamamlamak için harita parçalarını doğru konumlarına sürükleyip "
-"bırak."
+msgstr "Ögeleri azalan sırada sürükleyip bırak."
 
 #: activities/ordering_numbers/ordering.js:69
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Drag and drop the map pieces to their correct locations to complete the "
-#| "map."
 msgctxt "ordering|"
 msgid "Drag and drop the letters in alphabetical order."
-msgstr ""
-"Haritayı tamamlamak için harita parçalarını doğru konumlarına sürükleyip "
-"bırak."
+msgstr "Ögeleri abecesel sırada sürükleyip bırak."
 
 #: activities/ordering_numbers/ordering.js:70
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Drag and drop the map pieces to their correct locations to complete the "
-#| "map."
 msgctxt "ordering|"
 msgid "Drag and drop the letters in reverse alphabetical order."
-msgstr ""
-"Haritayı tamamlamak için harita parçalarını doğru konumlarına sürükleyip "
-"bırak."
+msgstr "Ögeleri ters abecesel sırada sürükleyip bırak."
 
 #: activities/ordering_numbers/ordering.js:71
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Drag and drop the map pieces to their correct locations to complete the "
-#| "map."
 msgctxt "ordering|"
 msgid "Drag and drop the items in chronological order."
-msgstr ""
-"Haritayı tamamlamak için harita parçalarını doğru konumlarına sürükleyip "
-"bırak."
+msgstr "Ögeleri kronolojik sırada sürükleyip bırak."
 
 #: activities/ordering_numbers/ordering.js:72
 msgctxt "ordering|"
 msgid "Drag and drop the words to the upper box to form a meaningful sentence."
 msgstr ""
+"Anlamlı bir tümce oluşturmak için sözcükleri üstteki kutuya sürükleyip bırak."
 
 #: activities/ordering_numbers/resource/1/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Guess a number between 1 and %1."
 msgctxt "Data|"
 msgid "Ascending order, 5 defined numbers between 1 and 5."
-msgstr "1 ile %1 arasında bir sayı tahmin et."
+msgstr "Artan sırada, 1 ile 5 arasında 5 belirli sayı."
 
 #: activities/ordering_numbers/resource/2/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Guess a number between 1 and %1."
 msgctxt "Data|"
 msgid "Descending order, 5 defined numbers between 1 and 5."
-msgstr "1 ile %1 arasında bir sayı tahmin et."
+msgstr "Azalan sırada, 1 ile 5 arasında 5 belirli sayı."
 
 #: activities/ordering_numbers/resource/3/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Guess a number between 1 and %1."
 msgctxt "Data|"
 msgid "Ascending order, 5 random numbers between 2 and 10."
-msgstr "1 ile %1 arasında bir sayı tahmin et."
+msgstr "Artan sırada, 2 ile 10 arasında 5 rastgele sayı."
 
 #: activities/ordering_numbers/resource/4/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Guess a number between 1 and %1."
 msgctxt "Data|"
 msgid "Descending order, 5 random numbers between 2 and 10."
-msgstr "1 ile %1 arasında bir sayı tahmin et."
+msgstr "Azalan sırada, 2 ile 10 arasında 5 rastgele sayı."
 
 #: activities/ordering_numbers/resource/5/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Guess a number between 1 and %1."
 msgctxt "Data|"
 msgid "Ascending order, 5 random numbers between 8 and 20."
-msgstr "1 ile %1 arasında bir sayı tahmin et."
+msgstr "Artan sırada, 8 ile 20 arasında 5 rastgele sayı."
 
 #: activities/ordering_numbers/resource/6/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Guess a number between 1 and %1."
 msgctxt "Data|"
 msgid "Descending order, 5 random numbers between 8 and 20."
-msgstr "1 ile %1 arasında bir sayı tahmin et."
+msgstr "Azalan sırada, 8 ile 20 arasında 5 rastgele sayı."
 
 #: activities/ordering_numbers/resource/7/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Guess a number between 1 and %1."
 msgctxt "Data|"
 msgid "Ascending order, 8 random numbers between 2 and 30."
-msgstr "1 ile %1 arasında bir sayı tahmin et."
+msgstr "Artan sırada, 2 ile 30 arasında 8 rastgele sayı."
 
 #: activities/ordering_numbers/resource/8/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Guess a number between 1 and %1."
 msgctxt "Data|"
 msgid "Descending order, 8 random numbers between 2 and 30."
-msgstr "1 ile %1 arasında bir sayı tahmin et."
+msgstr "Azalan sırada, 2 ile 30 arasında 8 rastgele sayı."
 
 #. Activity title
 #: activities/ordering_sentences/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Ordering sentences"
-msgstr ""
+msgstr "Tümceleri sıralama"
 
 #. Help title
 #: activities/ordering_sentences/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid "Arrange the given words to form a meaningful sentence."
-msgstr ""
+msgstr "Verilen sözcükleri, anlamlı bir tümce oluşturmak için düzenle."
 
 #. Help goal
 #: activities/ordering_sentences/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "Order words to form meaningful sentences."
-msgstr ""
+msgstr "Anlamlı tümceler oluşturmak için sözcükleri sırala."
 
 #. Help manual
 #: activities/ordering_sentences/ActivityInfo.qml:29
@@ -19352,6 +19224,8 @@ msgid ""
 "You are provided with some words. Drag and drop them to the upper area to "
 "form a meaningful sentence."
 msgstr ""
+"Sana bazı sözcükler verildi. Anlamlı bir tümce oluşturmak için onları üst "
+"alana sürükleyip bırak."
 
 #: activities/ordering_sentences/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -19373,11 +19247,21 @@ msgid ""
 "Tigers|live|in|forests.\n"
 "Football|is|a|team|game."
 msgstr ""
+"Şu|köpek|havlıyor.\n"
+"Sokağın|aşağısındaki|ev|kırmızı.\n"
+"Oğlan|çocuğu|kitap|okuyor.\n"
+"Benim|arkadaşım|çok|iyi|kalpli.\n"
+"Ne|güzel|bir|manzara!\n"
+"Hakan|havuza|atladı.\n"
+"Ayça|yeni|bir|kitap|istiyor.\n"
+"Annem|bana|gözleme|yaptı.\n"
+"Kaplanlar|ormanda|yaşar.\n"
+"El|topu|bir|takım|oyunudur."
 
 #: activities/ordering_sentences/resource/2/Data.qml:13
 msgctxt "Data|"
 msgid "Below 10 words."
-msgstr ""
+msgstr "10 sözcüğün altında."
 
 #. These sentences should not need to be translated word by word. Please add at least 10 sentences, each one being between 6 and 10 words. Use | to separate group of words. The aim of the string is to shuffle the group of words and let the child reorder them correctly. We should not be able to form a correct sentence by shuffling some words in the final sentence.
 #: activities/ordering_sentences/resource/2/Data.qml:18
@@ -19394,24 +19278,27 @@ msgid ""
 "Mom|has|asked|me|to|play|in|the|room.\n"
 "I|think|we|are|going|to|have|a|good|day."
 msgstr ""
+"Güneş|açık|gökyüzünde|pırıl|pırıl|parıldıyor.\n"
+"Çocuklar|akşam|dışarıda|oyun|oynamayı|çok|seviyorlar.\n"
+"Öğle|yemeği|için|dışarı|çıkacak|mısınız?\n"
+"Sokaktaki|kız|tenis|ayakkabılarını|bağladı|ve|tenis|oynamaya|gitti.\n"
+"Gökhan'ın|midesi|beş|tane|şeker|yedikten|sonra|ağrımaya|başladı.\n"
+"Berk|amcam|bana|kırmızı|bir|oyuncak|kamyon|aldı.\n"
+"Tatlıyı|yemek|için|önce|yemeğini|bitirmelisin.\n"
+"Annem|arkadaşımla|odamda|oynamamı|söyledi.\n"
+"Sanırım|bugün|güzel|bir|gün|olacak."
 
 #. Activity title
 #: activities/oware/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Play chess against Tux"
 msgctxt "ActivityInfo|"
 msgid "Play oware (against Tux)"
-msgstr "Tux'a karşı satranç oyna"
+msgstr "Ovare oyna (Tux'a karşı)"
 
 #. Help title
 #: activities/oware/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Play the audio memory game against Tux"
 msgctxt "ActivityInfo|"
 msgid "Play the Oware strategy game against Tux."
-msgstr "Tux'a karşı sesli hafıza oyunu oyna"
+msgstr "Tux'a karşı Ovare strateji oyununu oyna"
 
 #. Help goal
 #: activities/oware/ActivityInfo.qml:19
@@ -19424,6 +19311,10 @@ msgid ""
 "seeds, it is possible for the game to end in a draw, where each player has "
 "captured 24."
 msgstr ""
+"Oyun, her evde dört tohumla başlar. Oyunun amacı, rakibinden daha çok tohum "
+"yakalamaktır. Oyunda yalnızca 48 tohum olduğu için 25 tanesini ele geçirmek "
+"oyunu kazanmak için yeterlidir. Çift sayıda tohum olduğundan, her oyuncunun "
+"24 tane ele geçirmesi durumunda.oyunun berabere bitmesi olanaklıdır."
 
 #. Help manual
 #: activities/oware/ActivityInfo.qml:23
@@ -19438,6 +19329,13 @@ msgid ""
 "always left empty; if it contained 12 (or more) seeds, it is skipped, and "
 "the twelfth seed is placed in the next house."
 msgstr ""
+"Oyuncular sırayla tohumları hareket ettirir. Bir dönüşte, bir oyuncu "
+"kontrolü altındaki altı evden birini seçer. Oyuncu o evden tüm tohumları "
+"çıkarır ve ekim adı verilen bir süreçte bu evden saat yönünün tersine her "
+"eve bir tane bırakarak dağıtır. Tohumlar, son puanlama kümeslerine veya "
+"çekilen kümeslere dağıtılmaz. Başlangıç evi her zaman boş bırakılır; 12 "
+"(veya daha fazla) tohum içeriyorsa atlanır ve on ikinci tohum bir sonraki "
+"eve yerleştirilir."
 
 #: activities/oware/ActivityInfo.qml:24
 #: activities/oware_2players/ActivityInfo.qml:24
@@ -19454,6 +19352,16 @@ msgid ""
 "this would prevent the opponent from continuing the game, and the seeds are "
 "instead left on the board."
 msgstr ""
+"Ele geçirme, yalnızca bir oyuncu, o sırada ektiği son tohumla rakibin evinin "
+"sayısını tam olarak ikiye veya üçe getirdiğinde gerçekleşir. Bu her zaman "
+"karşılık gelen evdeki tohumları ve büyük olasılıkla daha fazlasını yakalar: "
+"Eğer bir öncekinden sondaki tohum aynı zamanda bir rakibin evini ikiye veya "
+"üçe getirdiyse bunlar da ele geçirilir ve içinde iki veya üç tohum "
+"bulunmayan veya rakibe ait olmayan bir eve ulaşılıncaya kadar sürer. "
+"Yakalanan tohumlar, oyuncunun puanlama evine yerleştirilir. Bununla "
+"birlikte, bir hamle rakibin tüm tohumlarını ele geçirirse rakibin oyunu "
+"sürdürmesini engelleyeceği için ele geçirme kaybedilir ve bunun yerine "
+"tohumlar tahtada bırakılır."
 
 #: activities/oware/ActivityInfo.qml:25
 #: activities/oware_2players/ActivityInfo.qml:25
@@ -19463,53 +19371,50 @@ msgid ""
 "that gives the opponent seeds. If no such move is possible, the current "
 "player captures all seeds in their own territory, ending the game."
 msgstr ""
+"Rakibin evlerinin tamamı boşsa geçerli oyuncu rakibe tohum veren bir hamle "
+"yapmalıdır. Böyle bir hamle olanaklı değilse geçerli oyuncu kendi "
+"bölgesindeki tüm tohumları ele geçirerek oyunu bitirir."
 
 #: activities/oware/oware.js:107
 msgctxt "oware|"
 msgid "Invalid Move!"
-msgstr ""
+msgstr "Geçersiz Hamle!"
 
 #. Activity title
 #: activities/oware_2players/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Bargame (with a friend)"
 msgctxt "ActivityInfo|"
 msgid "Play oware (with a friend)"
-msgstr "Bar oyunu (arkadaş ile)"
+msgstr "Ovare oyna (bir arkadaşla)"
 
 #. Help title
 #: activities/oware_2players/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Bargame (with a friend)"
 msgctxt "ActivityInfo|"
 msgid "Play the Oware strategy game with a friend."
-msgstr "Bar oyunu (arkadaş ile)"
+msgstr "Ovare strateji oyununu bir arkadaşınla oyna."
 
 #. Activity title
 #: activities/paintings/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Assemble the puzzle"
-msgstr "Yap boz' u birleştir"
+msgstr "Yapbozu birleştir"
 
 #. Help title
 #: activities/paintings/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid "Drag and Drop the pieces to rebuild the original paintings."
-msgstr "Orijinal resimleri yeniden oluşturmak için parçaları sürükleyip bırak."
+msgstr "Özgün resimleri yeniden oluşturmak için parçaları sürükleyip bırak."
 
 #. Help goal
 #: activities/paintings/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "Spatial representation."
-msgstr "Mekansal görünüm."
+msgstr "Uzamsal temsil."
 
 #. Help prerequisite
 #: activities/paintings/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Mouse-manipulation: movement, drag and drop."
-msgstr "Fare işlevi: hareket ettir, sürükle ve bırak."
+msgstr "Fare hareketi: Hareket ettir, sürükle ve bırak."
 
 #. Help manual
 #: activities/paintings/ActivityInfo.qml:29
@@ -19529,12 +19434,12 @@ msgstr ""
 #: activities/paintings/resource/board/board11_0.qml:14
 msgctxt "board11_0|"
 msgid "Katsushika Hokusa, Poppies - 1833-1834"
-msgstr "Katsushika Hokusa, Poppies - 1833-1834"
+msgstr "Katsushika Hokusa, Gelincikler - 1833-1834"
 
 #: activities/paintings/resource/board/board12_0.qml:14
 msgctxt "board12_0|"
 msgid "Katsushika Hokusai, Kazusa sea Route - 1830."
-msgstr "Katsushika Hokusai, Kazusa sea Route - 1830."
+msgstr "Katsushika Hokusai, Kazusa Deniz Rotası - 1830."
 
 #: activities/paintings/resource/board/board13_0.qml:14
 msgctxt "board13_0|"
@@ -19549,114 +19454,110 @@ msgstr "Leonardo da Vinci, Mona Lisa - 1503-19"
 #: activities/paintings/resource/board/board15_0.qml:14
 msgctxt "board15_0|"
 msgid "Giovanni Bellini, La Pala di Pesaro - 1475-85"
-msgstr "Giovanni Bellini, La Pala di Pesaro - 1475-85"
+msgstr "Giovanni Bellini, Pesaro Sunağı- 1475-85"
 
 #: activities/paintings/resource/board/board16_0.qml:14
 msgctxt "board16_0|"
 msgid "Albrecht Dürer, Lion - 1494"
-msgstr "Albrecht Dürer, Lion - 1494"
+msgstr "Albrecht Dürer, Aslan - 1494"
 
 #: activities/paintings/resource/board/board17_0.qml:14
 msgctxt "board17_0|"
 msgid "Pieter Brugel, The Harvesters - 1565"
-msgstr "Pieter Brugel, The Harvesters - 1565"
+msgstr "Pieter Brugel, Çiftçiler - 1565"
 
 #: activities/paintings/resource/board/board18_0.qml:14
 msgctxt "board18_0|"
 msgid "Pierre-Auguste Renoir, Girls At The Piano - 1892"
-msgstr "Pierre-Auguste Renoir, Girls At The Piano - 1892"
+msgstr "Pierre-Auguste Renoir, Piyanodaki Kızlar - 1892"
 
 #: activities/paintings/resource/board/board19_0.qml:14
 msgctxt "board19_0|"
 msgid "Wassily Kandinsky, Composition VIII - 1923"
-msgstr "Wassily Kandinsky, Composition VIII - 1923"
+msgstr "Wassily Kandinsky, Kompozisyon VIII - 1923"
 
 #: activities/paintings/resource/board/board1_0.qml:14
 msgctxt "board1_0|"
 msgid "Pierre-Auguste Renoir, Bal du moulin de la Galette - 1876"
-msgstr "Pierre-Auguste Renoir, Le Moulin de la Galette - 1876"
+msgstr "Pierre-Auguste Renoir, Galette Değirmeni - 1876"
 
 #: activities/paintings/resource/board/board20_0.qml:14
 msgctxt "board20_0|"
 msgid "Bazille, The Ramparts at Aigues-Mortes - 1867"
-msgstr "Bazille, The Ramparts at Aigues-Mortes - 1867"
+msgstr "Bazille, Aigues-Mortes'teki Surlar - 1867"
 
 #: activities/paintings/resource/board/board21_0.qml:14
 msgctxt "board21_0|"
 msgid "Mary Cassatt, Summertime - 1894"
-msgstr "Mary Cassatt, Summertime - 1894"
+msgstr "Mary Cassatt, Yaz Günü - 1894"
 
 #: activities/paintings/resource/board/board22_0.qml:14
 msgctxt "board22_0|"
 msgid "Vincent Van Gogh, Village Street in Auvers - 1890"
-msgstr "Vincent Van Gogh, Village Street in Auvers - 1890"
+msgstr "Vincent Van Gogh, Auvers'deki Köy Sokağı - 1890"
 
 #: activities/paintings/resource/board/board2_0.qml:14
 msgctxt "board2_0|"
 msgid "Giuseppe Arcimboldo, Spring - 1573"
-msgstr "Giuseppe Arcimboldo, Spring - 1573"
+msgstr "Giuseppe Arcimboldo, İlkbahar - 1573"
 
 #: activities/paintings/resource/board/board3_0.qml:14
 msgctxt "board3_0|"
 msgid "Giuseppe Arcimboldo, The Librarian - 1566"
-msgstr "Giuseppe Arcimboldo, The Librarian - 1566"
+msgstr "Giuseppe Arcimboldo, Kütüphaneci- 1566"
 
 #: activities/paintings/resource/board/board4_0.qml:14
 msgctxt "board4_0|"
 msgid "Katsushika Hokusai, Oiran and Kamuro"
-msgstr "Katsushika Hokusai, Oiran and Kamuro"
+msgstr "Katsushika Hokusai, Oiran ve Kamuro"
 
 #: activities/paintings/resource/board/board5_0.qml:14
 msgctxt "board5_0|"
 msgid "Katsushika Hokusai, Woman holding a fan"
-msgstr "Katsushika Hokusai, yelpaze tutan kadın"
+msgstr "Katsushika Hokusai, Yelpaze Tutan Kadın"
 
 #: activities/paintings/resource/board/board6_0.qml:14
 msgctxt "board6_0|"
 msgid "Katsushika Hokusai, Ejiri in Suruga Province - 1830-1833"
-msgstr "Katsushika Hokusai, Ejiri in Suruga Province - 1830-1833"
+msgstr "Katsushika Hokusai, Ejiri, Suruga Eyaletinde - 1830-1833"
 
 #: activities/paintings/resource/board/board7_0.qml:14
 msgctxt "board7_0|"
 msgid "Katsushika Hokusai, The Great Wave off Kanagawa - 1823-1829"
-msgstr "Katsushika Hokusai, The Great Wave off Kanagawa - 1823-1829"
+msgstr "Katsushika Hokusai, Kanagava'daki Büyük Dalga - 1823-1829"
 
 #: activities/paintings/resource/board/board8_0.qml:14
 msgctxt "board8_0|"
 msgid "Utagawa Hiroshige, The Benzaiten Shrine at Inokashira in Snow - 1760-70"
 msgstr ""
-"Utagawa Hiroshige, The Benzaiten Shrine at Inokashira in Snow - 1760-70"
+"Utagawa Hiroshige, İnokaşira'da Benzaiten Tapınağı Karlar Altında - 1760-70"
 
 #: activities/paintings/resource/board/board9_0.qml:14
 msgctxt "board9_0|"
 msgid "Utagawa Hiroshige, Horse-mackerel and Prawn - 1840"
-msgstr "Utagawa Hiroshige, Horse-mackerel and Prawn - 1840"
+msgstr "Utagawa Hiroshige, İstavrit ve Karides - 1840"
 
 #. Activity title
 #: activities/path_decoding/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Path decoding"
-msgstr ""
+msgstr "Yol bulma"
 
 #. Help title
 #: activities/path_decoding/ActivityInfo.qml:16
 #: activities/path_decoding_relative/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Follow the instructions when you run the activity."
 msgctxt "ActivityInfo|"
 msgid "Follow the given directions to help Tux reach the target."
-msgstr "Etkinliğe başladığında talimatları takip et."
+msgstr "Tux'un hedefe ulaşmasına yardımcı olmak için verilen talimatları izle."
 
 #. Help manual
 #: activities/path_decoding/ActivityInfo.qml:23
 #: activities/path_decoding_relative/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Click on a pair corresponding to the given relation."
 msgctxt "ActivityInfo|"
 msgid "Click on the grid squares to move Tux following the given directions."
-msgstr "Verilen ilişkiye karşılık gelen bir çifte tıkla."
+msgstr ""
+"Tux'u verilen yönergeleri izleyerek hareket ettirmek için ızgara karelerine "
+"tıkla."
 
 #: activities/path_decoding/ActivityInfo.qml:24
 #: activities/path_encoding/ActivityInfo.qml:24
@@ -19664,7 +19565,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "The directions are absolute, they do not depend on the current orientation "
 "of Tux."
-msgstr ""
+msgstr "Yönler mutlaktır, Tux'un geçerli yönüne bağlı değildirler."
 
 #: activities/path_decoding/resource/1/Data.qml:13
 #: activities/path_decoding/resource/2/Data.qml:13
@@ -19685,22 +19586,19 @@ msgstr ""
 #, qt-format
 msgctxt "Data|"
 msgid "%1x%2 grids."
-msgstr ""
+msgstr "%1 x %2 ızgara."
 
 #. Activity title
 #: activities/path_decoding_relative/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Point the relatives"
 msgctxt "ActivityInfo|"
 msgid "Path decoding relative"
-msgstr "Akrabaları göster"
+msgstr "Göreceli yol bulma"
 
 #: activities/path_decoding_relative/ActivityInfo.qml:24
 #: activities/path_encoding_relative/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid "The directions are relative to the current orientation of Tux."
-msgstr ""
+msgstr "Yönler, Tux'un geçerli yönüne göredir."
 
 #: activities/path_decoding_relative/ActivityInfo.qml:25
 #: activities/path_encoding_relative/ActivityInfo.qml:25
@@ -19709,22 +19607,21 @@ msgid ""
 "This means that UP moves forward, DOWN moves backward, LEFT moves to the "
 "left side of Tux and RIGHT moves to the right side of Tux."
 msgstr ""
+"Bu; YUKARI'nın ileri, AŞAĞI'nın geriye, SOL'un Tux'un sol tarafına ve SAĞ'ın "
+"Tux'ın sağ tarafına hareket ettiği anlamına gelir."
 
 #. Activity title
 #: activities/path_encoding/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Path encoding"
-msgstr ""
+msgstr "Yol bulma"
 
 #. Help title
 #: activities/path_encoding/ActivityInfo.qml:16
 #: activities/path_encoding_relative/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Move each item to recreate the image."
 msgctxt "ActivityInfo|"
 msgid "Move Tux along the path to reach the target."
-msgstr "Resmi yeniden oluşturmak için nesneleri taşı."
+msgstr "Hedefe ulaşmak için Tux'u yol boyunca hareket ettir."
 
 #. Help manual
 #: activities/path_encoding/ActivityInfo.qml:23
@@ -19733,36 +19630,32 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Use the arrow buttons to move Tux along the path until he reaches the target."
 msgstr ""
+"Tux'u hedefe ulaşana kadar yol boyunca hareket ettirmek için ok düğmelerini "
+"kullan."
 
 #: activities/path_encoding/ActivityInfo.qml:25
 #: activities/path_encoding_relative/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "<b>Keyboard controls:</b>"
 msgctxt "ActivityInfo|"
 msgid "Keyboard controls:"
-msgstr "<b>Klavye kontrolleri:</b>"
+msgstr "Klavye kontrolleri:"
 
 #: activities/path_encoding/ActivityInfo.qml:26
 #: activities/path_encoding_relative/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Arrows: directions"
-msgstr ""
+msgstr "Oklar: Yönler"
 
 #: activities/path_encoding/GridPath.qml:125
 #, qt-format
 msgctxt "GridPath|"
 msgid "Errors: %1"
-msgstr ""
+msgstr "Hatalar: %1"
 
 #. Activity title
 #: activities/path_encoding_relative/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Point the relatives"
 msgctxt "ActivityInfo|"
 msgid "Path encoding relative"
-msgstr "Akrabaları göster"
+msgstr "Göreceli yol bulma"
 
 #. Activity title
 #: activities/penalty/ActivityInfo.qml:15
@@ -19788,7 +19681,7 @@ msgid ""
 msgstr ""
 "Topa vurmak için kalenin bir tarafına çift tıkla veya çift dokun. Farenin "
 "sol, sağ veya ortasına çift tıklayabilirsin. Yeterince hızlı çift tıklama "
-"yapmazsan, Tux topu yakalar. Topu ilk konumuna geri getirmek için topun "
+"yapmazsan Tux topu yakalar. Topu ilk konumuna geri getirmek için topun "
 "üzerine tıklamalısın."
 
 #: activities/penalty/Penalty.qml:210
@@ -19806,12 +19699,9 @@ msgstr "Topu eski konumuna götürmek için topa tıkla veya dokun."
 
 #. Activity title
 #: activities/photo_hunter/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Photo Hunter"
 msgctxt "ActivityInfo|"
 msgid "Photo hunter"
-msgstr "Fotoğraf Avcısı"
+msgstr "Fotoğraf avcısı"
 
 #. Help title
 #: activities/photo_hunter/ActivityInfo.qml:17
@@ -19838,7 +19728,7 @@ msgstr ""
 #: activities/photo_hunter/PhotoHunter.qml:94
 msgctxt "PhotoHunter|"
 msgid "Drag the slider to show the differences."
-msgstr "Farkları göstermek için sürükle."
+msgstr "Farkları göstermek için sürgüyü sürükle."
 
 #: activities/photo_hunter/PhotoHunter.qml:95
 msgctxt "PhotoHunter|"
@@ -19847,9 +19737,6 @@ msgstr "İki görsel arasındaki farklara tıkla."
 
 #. Activity title
 #: activities/piano_composition/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Piano Composition"
 msgctxt "ActivityInfo|"
 msgid "Piano composition"
 msgstr "Piyano kompozisyonu"
@@ -19876,12 +19763,13 @@ msgid ""
 "education or MuseScore (https://musescore.org), an open source music "
 "notation tool."
 msgstr ""
-"Bir müzik kompozisyonunu anlamayı geliştir ve bir piyano klavyesi ile müzik "
-"yapmaya ilgi duyabilirsin. Bu etkinlik, müziğin birçok temel yönünü kapsar; "
-"ancak müzik kompozisyonu hakkında keşfedilecek çok şey var. Bu etkinlikten "
-"hoşlandıysan ancak daha gelişmiş bir araç istiyorsan, müzik eğitimi veya "
-"MuseScore için açık kaynaklı bir yazılım olan Minuet'ü (https://minuet.kde."
-"org/) indirmeyi dene."
+"Müzik kompozisyonu hakkında bir anlayış geliştir ve piyano klavyesi ile "
+"müzik yapmaya olan ilgini artır. Bu etkinlik, müziğin birçok temel yönünü "
+"kapsar; ancak müzik besteleme hakkında keşfedilecek daha çok şey vardır. Bu "
+"etkinlikten hoşlandıysan; ancak daha gelişmiş bir araç istiyorsan müzik "
+"eğitimi için açık kaynaklı bir yazılım olan Minuet'i (https://minuet.kde."
+"org/) veya açık kaynaklı bir müzik notasyon aracı olan MuseScore'u (https://"
+"musescore.org) dene."
 
 #. Help prerequisite
 #: activities/piano_composition/ActivityInfo.qml:23
@@ -19905,7 +19793,7 @@ msgid ""
 "Level 1: Basic piano keyboard (white keys only) where users can experiment "
 "with clicking the colored rectangle keys to write music."
 msgstr ""
-"Düzey 1: Kullanıcıların müzik yazmak için renkli dikdörtgen tuşlara "
+"1. düzey: Kullanıcıların müzik yazmak için renkli dikdörtgen tuşlara "
 "tıklayarak deney yapabilecekleri temel piyano klavyesi (yalnızca beyaz "
 "tuşlar)."
 
@@ -19915,8 +19803,8 @@ msgid ""
 "Level 2: The musical staff switches to bass clef, so notes are lower than in "
 "previous level."
 msgstr ""
-"Düzey 2: Müzik kadrosu bas nota anahtarına geçer, bu nedenle notalar önceki "
-"düzeyden daha düşüktür."
+"2. düzey: Müzik çizelgesi bas nota anahtarına geçer, bu nedenle notalar "
+"önceki düzeyden daha düşüktür."
 
 #: activities/piano_composition/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
@@ -19924,13 +19812,13 @@ msgid ""
 "Level 3: Option to choose between treble and bass clef, addition of black "
 "keys (sharp keys)."
 msgstr ""
-"Düzey 3: Tiz ve bas nota anahtarı arasında seçim yapma seçeneği, siyah "
-"tuşların eklenmesi (keskin tuşlar)."
+"3. düzey: Tiz ve bas nota anahtarı arasında seçim yapma seçeneği, siyah "
+"tuşların eklenmesi (tiz tuşlar)."
 
 #: activities/piano_composition/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid "Level 4: Flat notation used for black keys."
-msgstr "Düzey 4: Siyah tuşlar için kullanılan düz notasyon."
+msgstr "4. düzey: Siyah tuşlar için kullanılan düz notasyon."
 
 #: activities/piano_composition/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
@@ -19938,64 +19826,60 @@ msgid ""
 "Level 5: Option to select a note duration (whole, half, quarter, eighth "
 "notes)."
 msgstr ""
-"Düzey 5: Bir nota süresi seçme seçeneği (tam, yarım, çeyrek, sekizinci "
+"5. düzey: Bir nota süresi seçme seçeneği (tam, yarım, çeyrek, sekizinci "
 "notalar)."
 
 #: activities/piano_composition/ActivityInfo.qml:31
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Level 6: Addition of rests (whole, half, quarter, eighth rests)"
 msgctxt "ActivityInfo|"
 msgid "Level 6: Addition of rests (whole, half, quarter, eighth rests)."
-msgstr ""
-"Düzey 6: Dinlenmelerin eklenmesi (tam, yarım, çeyrek, sekizinci dinlenme)"
+msgstr "6. düzey: Susların eklenmesi (tam, yarım, çeyrek, sekizinci dinlenme)."
 
 #: activities/piano_composition/ActivityInfo.qml:32
 msgctxt "ActivityInfo|"
 msgid "Level 7: Save your compositions and load pre-defined or saved melodies."
 msgstr ""
-"Düzey 7: Kompozisyonlarını kaydet ve önceden tanımlanmış veya kaydedilmiş "
+"7. düzey: Kompozisyonlarını kaydet ve önceden tanımlanmış veya kaydedilmiş "
 "melodileri yükle."
 
 #: activities/piano_composition/ActivityInfo.qml:34
 #: activities/play_piano/ActivityInfo.qml:32
 msgctxt "ActivityInfo|"
 msgid "Digits 1 to 7: white keys"
-msgstr "1-7 arası rakamlar: beyaz tuşlar"
+msgstr "1-7 arası rakamlar: Beyaz tuşlar"
 
 #: activities/piano_composition/ActivityInfo.qml:35
 #: activities/play_piano/ActivityInfo.qml:33
 msgctxt "ActivityInfo|"
 msgid "F2 to F7: black keys"
-msgstr "F2 - F7: siyah tuşlar"
+msgstr "F2 - F7: Siyah tuşlar"
 
 #: activities/piano_composition/ActivityInfo.qml:36
 #: activities/play_piano/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
 msgid "Space: play"
-msgstr "Boşluk: oyna"
+msgstr "Boşluk: Çal"
 
 #: activities/piano_composition/ActivityInfo.qml:37
 msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: switch keyboard octave"
-msgstr "Sol ve Sağ oklar: klavye oktavını değiştir"
+msgstr "Sol ve Sağ oklar: Klavye oktavını değiştir"
 
 #: activities/piano_composition/ActivityInfo.qml:38
 msgctxt "ActivityInfo|"
 msgid "Backspace: undo"
-msgstr "Geri tuşu: geri al"
+msgstr "Geri tuşu: Geri al"
 
 #: activities/piano_composition/ActivityInfo.qml:39
 msgctxt "ActivityInfo|"
 msgid "Delete: erase selected note or everything"
-msgstr "Sil: seçili notayı veya hepsini sil"
+msgstr "Sil: Seçili notayı veya hepsini sil"
 
 #: activities/piano_composition/ActivityInfo.qml:40
 #: activities/play_piano/ActivityInfo.qml:35
 msgctxt "ActivityInfo|"
 msgid ""
 "The synthesizer original code is from https://github.com/vsr83/miniSynth"
-msgstr "Synthesizer orijinal kodu https://github.com/vsr83/miniSynth"
+msgstr "Org özgün kodu https://github.com/vsr83/miniSynth"
 
 #. BPM is the abbreviation for Beats Per Minute.
 #: activities/piano_composition/BpmMeter.qml:48
@@ -20035,7 +19919,7 @@ msgstr "Başlık: %1"
 #, qt-format
 msgctxt "LyricsArea|"
 msgid "Origin: %1"
-msgstr "Kaynak: %1"
+msgstr "Köken: %1"
 
 #: activities/piano_composition/melodies.js:18
 msgctxt "melodies|"
@@ -20045,17 +19929,17 @@ msgstr "Amerika: İngilizce Ninni"
 #: activities/piano_composition/melodies.js:25
 msgctxt "melodies|"
 msgid "America: Patriotic"
-msgstr "Amerikan : Yurtsever"
+msgstr "Amerikan: Yurtsever"
 
 #: activities/piano_composition/melodies.js:32
 msgctxt "melodies|"
 msgid "America: Shaker Tune"
-msgstr "Amerika: Shaker Tune"
+msgstr "Amerika: Oyun Havası"
 
 #: activities/piano_composition/melodies.js:39
 msgctxt "melodies|"
 msgid "America: Nursery Rhyme"
-msgstr "Amerika: Nursery Rhyme"
+msgstr "Amerika: Tekerleme"
 
 #: activities/piano_composition/melodies.js:46
 #: activities/piano_composition/melodies.js:214
@@ -20109,7 +19993,7 @@ msgstr "Brezilya"
 #: activities/piano_composition/melodies.js:144
 msgctxt "melodies|"
 msgid "Hungary, Nursery Rhyme"
-msgstr "Macaristan, Nursery Rhyme"
+msgstr "Macaristan, Tekerleme"
 
 #: activities/piano_composition/melodies.js:151
 #: activities/piano_composition/melodies.js:158
@@ -20132,7 +20016,7 @@ msgstr "Britanya"
 #: activities/piano_composition/melodies.js:179
 msgctxt "melodies|"
 msgid "Poland"
-msgstr "Polanya"
+msgstr "Polonya"
 
 #: activities/piano_composition/melodies.js:186
 #: activities/piano_composition/melodies.js:193
@@ -20185,42 +20069,42 @@ msgstr "Sekizlik nota"
 #: activities/piano_composition/OptionsRow.qml:26
 msgctxt "OptionsRow|"
 msgid "Whole rest added"
-msgstr "Tam duraklama (es) eklendi"
+msgstr "Tam sus (es) eklendi"
 
 #: activities/piano_composition/OptionsRow.qml:26
 msgctxt "OptionsRow|"
 msgid "Half rest added"
-msgstr "Yarım duraklama (es) eklendi"
+msgstr "Yarım sus (es) eklendi"
 
 #: activities/piano_composition/OptionsRow.qml:26
 msgctxt "OptionsRow|"
 msgid "Quarter rest added"
-msgstr "Çeyrek duraklama (es) eklendi"
+msgstr "Çeyrek sus (es) eklendi"
 
 #: activities/piano_composition/OptionsRow.qml:26
 msgctxt "OptionsRow|"
 msgid "Eighth rest added"
-msgstr "Sekizlik duraklama (es) eklendi"
+msgstr "Sekizlik sus (es) eklendi"
 
 #: activities/piano_composition/OptionsRow.qml:27
 msgctxt "OptionsRow|"
 msgid "Whole rest"
-msgstr "Tüm duraklama (tam es)"
+msgstr "Tam sus (tam es)"
 
 #: activities/piano_composition/OptionsRow.qml:27
 msgctxt "OptionsRow|"
 msgid "Half rest"
-msgstr "Yarım duraklama (es)"
+msgstr "Yarım sus (es)"
 
 #: activities/piano_composition/OptionsRow.qml:27
 msgctxt "OptionsRow|"
 msgid "Quarter rest"
-msgstr "Çeyrek duraklama"
+msgstr "Çeyrek sus"
 
 #: activities/piano_composition/OptionsRow.qml:27
 msgctxt "OptionsRow|"
 msgid "Eighth rest"
-msgstr "Sekizlik duraklama"
+msgstr "Sekizlik sus"
 
 #: activities/piano_composition/OptionsRow.qml:28
 msgctxt "OptionsRow|"
@@ -20240,13 +20124,13 @@ msgstr "Melodi çal"
 #: activities/piano_composition/OptionsRow.qml:89
 msgctxt "OptionsRow|"
 msgid "Undo"
-msgstr "Geri Al"
+msgstr "Geri al"
 
 #. Sharp notes and Flat notes represents the accidental style of the notes in the music.
 #: activities/piano_composition/OptionsRow.qml:157
 msgctxt "OptionsRow|"
 msgid "Sharp notes"
-msgstr "Keskin notalar"
+msgstr "Tiz notalar"
 
 #: activities/piano_composition/OptionsRow.qml:157
 msgctxt "OptionsRow|"
@@ -20266,15 +20150,13 @@ msgstr "Bu, düşük perdeli notalar için bas nota anahtarıdır."
 #: activities/piano_composition/piano_composition.js:31
 msgctxt "piano_composition|"
 msgid "The black keys are sharp and flat keys. Sharp notes have a ♯ sign."
-msgstr ""
-"Siyah tuşlar keskin ve düz tuşlardır. Keskin notalarda ♯ işareti bulunur."
+msgstr "Siyah tuşlar tiz ve düz tuşlardır. Tiz notalarda ♯ işareti bulunur."
 
 #: activities/piano_composition/piano_composition.js:34
 msgctxt "piano_composition|"
 msgid "Each black key has two names: flat and sharp. Flat notes have ♭ sign."
 msgstr ""
-"Her siyah tuşun iki adı vardır: düz ve keskin. Düz notlarda ♭ işareti "
-"bulunur."
+"Her siyah tuşun iki adı vardır: Düz ve tiz. Düz notalarda ♭ işareti bulunur."
 
 #: activities/piano_composition/piano_composition.js:37
 msgctxt "piano_composition|"
@@ -20292,9 +20174,9 @@ msgid ""
 "the rest symbol to select the rest length and then click on the add button "
 "to enter it to the staff."
 msgstr ""
-"Dinlenme (es), sessizliğin korunduğu notalara eşdeğerdir. Dinlenme "
-"uzunluğunu seçmek için dinlenme sembolüne tıkla ve ardından nota çizgisine "
-"gitmek için ekle düğmesine tıkla."
+"Sus (es), sessizliğin korunduğu notalara eşdeğerdir. Dinlenme uzunluğunu "
+"seçmek için dinlenme sembolüne tıkla ve ardından nota çizgisine gitmek için "
+"ekle düğmesine tıkla."
 
 #: activities/piano_composition/piano_composition.js:43
 msgctxt "piano_composition|"
@@ -20305,7 +20187,7 @@ msgstr "Artık müzik yükleyebilir ve bestelediklerini de kaydedebilirsin."
 #, qt-format
 msgctxt "piano_composition|"
 msgid "Error saving melody to your file (%1)"
-msgstr "Hata! Melodi dosyana kaydedilmedi (%1)"
+msgstr "Melodiyi dosyana kaydederken hata oluştu (%1)"
 
 #: activities/piano_composition/piano_composition.js:71
 #, qt-format
@@ -20331,7 +20213,7 @@ msgstr "Hayır"
 #: activities/piano_composition/Piano_composition.qml:418
 msgctxt "Piano_composition|"
 msgid "Select the type of melody to load."
-msgstr "Yüklenecek melodi tipini seç."
+msgstr "Yüklenecek melodi türünü seç."
 
 #: activities/piano_composition/Piano_composition.qml:423
 msgctxt "Piano_composition|"
@@ -20360,7 +20242,7 @@ msgstr "Çık"
 #: activities/piano_composition/Piano_composition.qml:550
 msgctxt "Piano_composition|"
 msgid "Continue"
-msgstr "Devam et"
+msgstr "Sürdür"
 
 #. Translators, C, D, E, F, G, A and B are the note notations in English musical notation system. The numbers in the arguments represents the octave number of the note. For instance, C4 is a C note in the 4th octave.
 #: activities/piano_composition/PianoOctaveKeyboard.qml:42
@@ -20522,12 +20404,9 @@ msgstr "B♭%1"
 
 #. Activity title
 #: activities/planegame/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Numbers in Order"
 msgctxt "ActivityInfo|"
 msgid "Numbers in order"
-msgstr "Sıralı Sayılar"
+msgstr "Sıralı sayılar"
 
 #. Help title
 #: activities/planegame/ActivityInfo.qml:17
@@ -25237,12 +25116,9 @@ msgstr ""
 
 #. Activity title
 #: activities/tic_tac_toe_2players/ActivityInfo.qml:18
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Tic Tac Toe (with a friend)"
 msgctxt "ActivityInfo|"
 msgid "Tic tac toe (with a friend)"
-msgstr "Tic Tac Toe (bir arkadaş ile)"
+msgstr "Üç taş (bir arkadaşla)"
 
 #. Help manual
 #: activities/tic_tac_toe_2players/ActivityInfo.qml:27
@@ -25251,7 +25127,7 @@ msgid ""
 "Play with a friend. Take turns to click on the square which you want to "
 "mark. The first player to create a line of 3 marks wins."
 msgstr ""
-"Bir arkadaşla oynamak. İşaretlemek istediğin kareyi sırayla tıkla. 3 puanlık "
+"Bir arkadaşla oyna. İşaretlemek istediğin kareyi sırayla tıkla. 3 puanlık "
 "bir çizgi oluşturan ilk oyuncu kazanır."
 
 #. Activity title
@@ -25753,8 +25629,7 @@ msgid ""
 "This activity uses language sound files, that are not yet installed on your "
 "system."
 msgstr ""
-"Bu etkinlik dil ses dosyaları kullanır ve bu dosyalar henüz sisteminize "
-"yüklenmemiş."
+"Bu etkinlik, henüz sisteminizde kurulu olmayan dil ses dosyalarını kullanır."
 
 #: core/core.js:182
 msgctxt "core|"
