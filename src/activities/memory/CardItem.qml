@@ -91,10 +91,8 @@ Flipable {
             fontSize: 64
             horizontalAlignment: Text.AlignHCenter
             verticalAlignment: Text.AlignVCenter
-            color: "black"
+            color: "#202020"
             font.bold: true
-            style: Text.Outline
-            styleColor: "white"
             text: card.pairData.text
         }
         // repeater for memory-enumerate
