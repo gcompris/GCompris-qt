@@ -1,10 +1,12 @@
 /* gcompris - CardItem.qml
  *
  * SPDX-FileCopyrightText: 2014 JB BUTET <ashashiwa@gmail.com>
+ * SPDX-FileCopyrightText: 2023 Timothée Giet <animtim@gmail.com>
  *
  * Authors:
  *   Bruno Coudoin <bruno.coudoin@gcompris.net> (GTK+ version)
  *   JB BUTET <ashashiwa@gmail.com> (Qt Quick port)
+ *   Timothée Giet <animtim@gmail.com>
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
@@ -66,7 +68,8 @@ Flipable {
 
     back: Image {
         source: card.pairData.emptyCard
-        sourceSize.width: parent.width
+        width: parent.width
+        sourceSize.width: width
         fillMode: Image.PreserveAspectFit
         anchors.centerIn: parent
         anchors.fill: parent
@@ -75,8 +78,8 @@ Flipable {
             source: card.pairData.image
             width: parent.paintedWidth * 0.9
             height: parent.paintedHeight * 0.9
-            sourceSize.width: contentImage.width
-            sourceSize.height: contentImage.height
+            sourceSize.width: width
+            sourceSize.height: height
             anchors.centerIn: parent
             fillMode: Image.PreserveAspectFit
         }
@@ -93,6 +96,19 @@ Flipable {
             style: Text.Outline
             styleColor: "white"
             text: card.pairData.text
+        }
+        // repeater for memory-enumerate
+        Repeater {
+            model: card.pairData.repeaterModel
+            Image {
+                source: modelData.itemSource
+                x: contentImage.x + contentImage.width * modelData.itemX
+                y: contentImage.y + contentImage.height * modelData.itemY
+                width: contentImage.width * modelData.itemSize
+                height: width
+                sourceSize.width: width
+                rotation: modelData.itemRotation
+            }
         }
     }
 

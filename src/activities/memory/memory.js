@@ -5,6 +5,7 @@
  * Authors:
  *   Bruno Coudoin <bruno.coudoin@gcompris.net> (GTK+ version)
  *   JB BUTET <ashashiwa@gmail.com> (Qt Quick port)
+ *   Timothée Giet <animtim@gmail.com>
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
@@ -49,6 +50,7 @@ function initLevel() {
     var images = items.levels[currentLevel].images
     var sounds = items.levels[currentLevel].sounds
     var texts = items.levels[currentLevel].texts
+    var repeaterModels = items.levels[currentLevel].repeaterModels
     items.columns = columns
     items.rows = rows
     nbOfPair = rows * columns / 2
@@ -58,7 +60,8 @@ function initLevel() {
     var maxData = Math.max(
                 images ? images.length : 0,
                 sounds ? sounds.length : 0,
-                texts ? texts.length : 0)
+                texts ? texts.length : 0,
+                repeaterModels ? repeaterModels.length : 0)
 
     if(rows * columns > maxData * 2) {
         console.log("ERROR: Memory dataset does not have enough data pairs at level ",
@@ -83,6 +86,7 @@ function initLevel() {
                 image: images ? images[shuffleIds[ix]][j] : "",
                 sound: sounds ? sounds[shuffleIds[ix]][j] : "",
                 text: texts ? texts[shuffleIds[ix]][j] : "",
+                repeaterModel: repeaterModels ? repeaterModels[shuffleIds[ix]][j] : "",
                 matchCode: ix,
                 back: url + "backcard.svg",
                 emptyCard: url + "emptycard.svg"
