@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2023-01-31 00:57+0300\n"
+"PO-Revision-Date: 2023-01-31 21:44+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -1354,7 +1354,7 @@ msgid ""
 "the rheostat value by dragging its slider."
 msgstr ""
 "Açmak ve kapatmak için anahtara tıklayabilirsin. Aynı zamanda, akım "
-"sağlayıcısı değerini sürükleyerek değiştirebilirsin."
+"sağlayıcısı değerini kaydırıcısını sürerek değiştirebilirsin."
 
 #: activities/analog_electricity/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
@@ -1796,7 +1796,7 @@ msgstr ""
 #: activities/analog_electricity/TutorialDataset.qml:210
 msgctxt "TutorialDataset|"
 msgid "You can change the rheostat value by dragging its slider."
-msgstr "Sürgüsünü sürerek ayarlı direnç değerini değiştirebilirsin."
+msgstr "Kaydırıcısını sürerek ayarlı direnç değerini değiştirebilirsin."
 
 #: activities/analog_electricity/TutorialDataset.qml:211
 msgctxt "TutorialDataset|"
@@ -1804,8 +1804,8 @@ msgid ""
 "Connect the bulb to the appropriate terminals of the rheostat so that the "
 "light intensity of the bulb can be changed while dragging the slider."
 msgstr ""
-"Sürgüyü sürerken ampulün ışık yoğunluğunun değiştirilebilmesi için ampulü "
-"ayarlı direncin uygun uçbirimlerine bağla."
+"Kaydırıcıyı sürerken ampulün ışık yoğunluğunun değiştirilebilmesi için "
+"ampulü ayarlı direncin uygun uçbirimlerine bağla."
 
 #: activities/analog_electricity/TutorialDataset.qml:224
 msgctxt "TutorialDataset|"
@@ -1822,7 +1822,7 @@ msgid ""
 "Connect the bulb to the appropriate terminals of the rheostat so that the "
 "slider cannot change the light intensity of the bulb."
 msgstr ""
-"Sürgünün ampulün ışık yoğunluğunu değiştirememesi için ampulü ayarlı "
+"Kaydırıcının ampulün ışık yoğunluğunu değiştirememesi için ampulü ayarlı "
 "direncin uygun uçbirimlerine bağla."
 
 #: activities/analog_electricity/TutorialDataset.qml:238
@@ -1832,9 +1832,9 @@ msgid ""
 "slider so that the voltage drop in the bulb should be 10V. Note that the "
 "bulb intensity should vary while dragging the slider."
 msgstr ""
-"Ampulü ayarlı direncin uygun uçbirimlerine bağla ve sürgüyü ampuldeki voltaj "
-"düşüşü 10V olacak şekilde ayarla. Sürgüyü sürerken ampul yoğunluğunun "
-"değişmesi gerektiğini unutma."
+"Ampulü ayarlı direncin uygun uçbirimlerine bağla ve kaydırıcıyı ampuldeki "
+"voltaj düşüşü 10V olacak şekilde ayarla. Kaydırıcıyı sürerken ampul "
+"yoğunluğunun değişmesi gerektiğini unutma."
 
 #: activities/analog_electricity/TutorialDataset.qml:251
 msgctxt "TutorialDataset|"
@@ -2298,12 +2298,9 @@ msgstr "Seviyelerini yüklemek için aktiviteyi başlat"
 
 #. Activity title
 #: activities/balancebox/ActivityInfo.qml:18
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Balance Box"
 msgctxt "ActivityInfo|"
 msgid "Balance box"
-msgstr "Denge Kutusu"
+msgstr "Denge kutusu"
 
 #. Help title
 #: activities/balancebox/ActivityInfo.qml:20
@@ -4993,7 +4990,7 @@ msgid ""
 "Change the color by moving the sliders on the tubes of paint or by clicking "
 "on the + and - buttons. Then click on the OK button to validate your answer."
 msgstr ""
-"Sürgüleri boya tüpleri üzerinde hareket ettirerek veya + ve - düğmelerine "
+"Kaydırıcıları boya tüpleri üzerinde sürerek veya + ve - düğmelerine "
 "tıklayarak rengi değiştir. Ardından yanıtını doğrulamak için OK düğmesine "
 "tıkla."
 
@@ -5101,7 +5098,7 @@ msgid ""
 "Change the color by moving the sliders on the torches or by clicking on the "
 "+ and - buttons. Then click on the OK button to validate your answer."
 msgstr ""
-"Meşaleler üzerindeki sürgüleri hareket ettirerek veya + ve - düğmelerine "
+"Meşaleler üzerindeki kaydırıcıları sürerek veya + ve - düğmelerine "
 "tıklayarak rengi değiştir. Ardından yanıtını doğrulamak için OK düğmesine "
 "tıkla."
 
@@ -7379,7 +7376,7 @@ msgid ""
 "– created a technical as well as an artistic masterpiece."
 msgstr ""
 "Pont du Gard, neredeyse 50 km uzunluğundaki Nîmes su kemerinin, Gardon "
-"nehrinden geçmesine izin vermek için, Hristiyanlık döneminden kısa bir süre "
+"ırmağından geçmesine izin vermek için, Hristiyanlık döneminden kısa bir süre "
 "önce inşa edilmiştir. Yaklaşık 50 metre yükseklikte ve 275 metre "
 "uzunluğundaki en uzun ölçüye sahip olan bu köprüyü tasarlayan Roma mimarları "
 "ve hidrolik mühendisleri, fevkalade teknik ve sanatsal bir başyapıt "
@@ -7444,7 +7441,7 @@ msgstr ""
 "üstündeki uçuruma karşı tutunamıyor gibi gözüküyor. Avrupa'nın en ünlü "
 "kasabalarından biri olan Rocamadour, ilk bakışta yerçekimi kanunlarına "
 "meydan okuyor gibidir. İncil'in baş döndürücü Kalesi, eski bir yerli "
-"deyişiyle şu şekilde özetlenebilir: “nehir evleri, evler üzerindeki "
+"deyişiyle şu şekilde özetlenebilir: ırmak evleri, evler üzerindeki "
 "kiliseler, kiliselerdeki kayalar, kayadaki kale”."
 
 #: activities/explore_monuments/resource/board/board3.qml:95
@@ -8253,7 +8250,7 @@ msgid ""
 "The crocodile is a large amphibious reptile. It lives mostly in large "
 "tropical rivers, where it is an ambush predator."
 msgstr ""
-"Timsah büyük bir amfibi sürüngendir. Çoğunlukla büyük tropik nehirlerde "
+"Timsah büyük bir amfibi sürüngendir. Çoğunlukla büyük tropik ırmaklarda "
 "yaşar ve pusu avcısıdır."
 
 #: activities/explore_world_animals/resource/board/board3.qml:30
@@ -13834,7 +13831,7 @@ msgstr ""
 #: activities/graph-coloring/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Right and Left arrows: navigate"
-msgstr "Sağ ve sol oklar: Dolaş"
+msgstr "Sağ ve Sol oklar: Dolaş"
 
 #. Activity title
 #: activities/gravity/ActivityInfo.qml:19
@@ -13873,7 +13870,7 @@ msgstr ""
 #: activities/gravity/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: move the spaceship"
-msgstr "Sağ ve sol oklar: Uzay gemisini hareket ettir"
+msgstr "Sağ ve Sol oklar: Uzay gemisini hareket ettir"
 
 #: activities/gravity/Gravity.qml:210
 msgctxt "Gravity|"
@@ -19855,7 +19852,7 @@ msgstr ""
 #: activities/photo_hunter/PhotoHunter.qml:94
 msgctxt "PhotoHunter|"
 msgid "Drag the slider to show the differences."
-msgstr "Farkları göstermek için sürgüyü sürükle."
+msgstr "Farkları göstermek için kaydırıcıyı sür."
 
 #: activities/photo_hunter/PhotoHunter.qml:95
 msgctxt "PhotoHunter|"
@@ -20582,14 +20579,14 @@ msgid ""
 "Understand how the piano keyboard can play music as written on the musical "
 "staff."
 msgstr ""
-"Piyano klavyesinin, müzik panosuna yazıldığı gibi nasıl müzik çalabildiğini "
+"Piyano klavyesinin, nota çizelgesine yazılan müziği nasıl çalabildiğini "
 "öğren."
 
 #. Help prerequisite
 #: activities/play_piano/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Knowledge of musical notation and musical staff."
-msgstr "Müzik notalama ve müzikal pano bilgisi."
+msgstr "Müzik notalama ve nota çizelgesi bilgisi."
 
 #. Help manual
 #: activities/play_piano/ActivityInfo.qml:28
@@ -20598,8 +20595,8 @@ msgid ""
 "Some notes are played on the staff. Click on the keyboard keys matching the "
 "notes on the staff."
 msgstr ""
-"Müzik panosunda bazı notalar çalınır. Panodaki notlarla eşleşen klavye "
-"tuşlarına tıkla."
+"Müzik panosunda bazı notalar çalınır. Nota çizelgesindeki notalarla eşleşen "
+"klavye düğmelerine bas."
 
 #: activities/play_piano/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
@@ -20613,7 +20610,7 @@ msgstr ""
 #: activities/play_piano/ActivityInfo.qml:34
 msgctxt "ActivityInfo|"
 msgid "Backspace or Delete: undo"
-msgstr "Geri tuşu veya Sil: geri al"
+msgstr "Geri veya Sil: Geri al"
 
 #: activities/play_piano/PlayPiano.qml:172
 msgctxt "PlayPiano|"
@@ -20637,7 +20634,7 @@ msgstr "Çık"
 #: activities/play_piano/PlayPiano.qml:281
 msgctxt "PlayPiano|"
 msgid "Continue"
-msgstr "Devam et"
+msgstr "Sürdür"
 
 #. Activity title
 #: activities/play_rhythm/ActivityInfo.qml:19
@@ -20655,7 +20652,7 @@ msgstr "Bir ritmi doğru şekilde takip etmeyi öğren."
 #: activities/play_rhythm/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Simple understanding of musical rhythm."
-msgstr "Müzikal ritmin basit şekilde anlama."
+msgstr "Müzikal ritmin basitçe yapısı."
 
 #. Help manual
 #: activities/play_rhythm/ActivityInfo.qml:28
@@ -20697,7 +20694,7 @@ msgstr "Ritmi tekrar çalmak istiyorsan yeniden yükle düğmesine tıkla."
 #: activities/play_rhythm/ActivityInfo.qml:33
 msgctxt "ActivityInfo|"
 msgid "Space bar: click on the drum"
-msgstr "Boşluk çubuğu: davula tıkla"
+msgstr "Boşluk çubuğu: Davula tıkla"
 
 #: activities/play_rhythm/ActivityInfo.qml:34
 msgctxt "ActivityInfo|"
@@ -20707,7 +20704,7 @@ msgstr "Enter veya Geri: ritmi yeniden çal"
 #: activities/play_rhythm/ActivityInfo.qml:35
 msgctxt "ActivityInfo|"
 msgid "Up and Down: increase or decrease the tempo"
-msgstr "Yukarı ve Aşağı: tempoyu artır veya azalt"
+msgstr "Yukarı ve Aşağı: Tempoyu artır veya azalt"
 
 #: activities/play_rhythm/ActivityInfo.qml:36
 msgctxt "ActivityInfo|"
@@ -20729,7 +20726,7 @@ msgid ""
 "the rhythm correctly."
 msgstr ""
 "Dikey çizgiyi takip et ve ritmi doğru şekilde çalmak için davul üzerine "
-"tıkla veya boşluk tuşuna bas."
+"tıkla veya boşluk düğmesine bas."
 
 #: activities/play_rhythm/PlayRhythm.qml:359
 msgctxt "PlayRhythm|"
@@ -20748,16 +20745,13 @@ msgstr "Çık"
 #: activities/play_rhythm/PlayRhythm.qml:361
 msgctxt "PlayRhythm|"
 msgid "Continue"
-msgstr "Devam et"
+msgstr "Sürdür"
 
 #. Activity title
 #: activities/positions/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Additions."
 msgctxt "ActivityInfo|"
 msgid "Positions"
-msgstr "Toplama işlemi."
+msgstr "Konumlar"
 
 #. Help title
 #: activities/positions/ActivityInfo.qml:17
@@ -20772,7 +20766,7 @@ msgstr "Kelimeyi tamamlamak için eksik harfi bul."
 #: activities/positions/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Describe the relative position of an object."
-msgstr ""
+msgstr "Bir nesnenin göreceli konumunu açıkla."
 
 #. Help manual
 #: activities/positions/ActivityInfo.qml:24
@@ -20791,18 +20785,15 @@ msgid "Space or Enter: validate selected answer"
 msgstr "Boşluk veya Giriş: Seçili yanıtı doğrula"
 
 #: activities/positions/resource/1/Data.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Basic enumeration."
 msgctxt "Data|"
 msgid "Basic positions."
-msgstr "Temel numaralandırma."
+msgstr "Temel konumlar."
 
 #. it refers to the next to position
 #: activities/positions/resource/1/Data.qml:20
 msgctxt "Data|"
 msgid "beside"
-msgstr ""
+msgstr "yanında"
 
 #: activities/positions/resource/1/Data.qml:21
 msgctxt "Data|"
@@ -20814,7 +20805,7 @@ msgstr "Çocuğun kutunun yanında olduğu görseli seç."
 #: activities/positions/resource/2/Data.qml:32
 msgctxt "Data|"
 msgid "behind"
-msgstr ""
+msgstr "arkasında"
 
 #: activities/positions/resource/1/Data.qml:27
 #: activities/positions/resource/2/Data.qml:33
@@ -20827,7 +20818,7 @@ msgstr "Çocuğun kutunun arkasında olduğu görseli seç."
 #: activities/positions/resource/2/Data.qml:38
 msgctxt "Data|"
 msgid "in front of"
-msgstr ""
+msgstr "önünde"
 
 #: activities/positions/resource/1/Data.qml:33
 #: activities/positions/resource/2/Data.qml:39
@@ -20840,7 +20831,7 @@ msgstr "Çocuğun kutunun önünde olduğu görseli seç."
 #: activities/positions/resource/2/Data.qml:44
 msgctxt "Data|"
 msgid "inside"
-msgstr ""
+msgstr "içinde"
 
 #: activities/positions/resource/1/Data.qml:39
 #: activities/positions/resource/2/Data.qml:45
@@ -20853,7 +20844,7 @@ msgstr "Çocuğun kutunun içinde olduğu görseli seç."
 #: activities/positions/resource/2/Data.qml:50
 msgctxt "Data|"
 msgid "above"
-msgstr ""
+msgstr "üzerinde"
 
 #: activities/positions/resource/1/Data.qml:45
 #: activities/positions/resource/2/Data.qml:51
@@ -20866,7 +20857,7 @@ msgstr "Çocuğun kutunun üzerinde olduğu görseli seç."
 #: activities/positions/resource/2/Data.qml:56
 msgctxt "Data|"
 msgid "under"
-msgstr ""
+msgstr "altında"
 
 #: activities/positions/resource/1/Data.qml:51
 #: activities/positions/resource/2/Data.qml:57
@@ -20875,21 +20866,15 @@ msgid "Select the image where the child is under the box."
 msgstr "Çocuğun kutunun altında olduğu görseli seç."
 
 #: activities/positions/resource/2/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Additions with 1 and 2."
 msgctxt "Data|"
 msgid "All positions (with left and right)."
-msgstr "1 ve 2 ile toplama."
+msgstr "Tüm konumlar (sağ ve sol ile)."
 
 #. it refers to the position on the right side
 #: activities/positions/resource/2/Data.qml:20
-#, fuzzy
-#| msgctxt "dataset|"
-#| msgid "eight"
 msgctxt "Data|"
 msgid "right"
-msgstr "sekiz"
+msgstr "sağ"
 
 #: activities/positions/resource/2/Data.qml:21
 msgctxt "Data|"
@@ -20900,7 +20885,7 @@ msgstr "Çocuğun kutunun sağında olduğu görseli seç."
 #: activities/positions/resource/2/Data.qml:26
 msgctxt "Data|"
 msgid "left"
-msgstr ""
+msgstr "sol"
 
 #: activities/positions/resource/2/Data.qml:27
 msgctxt "Data|"
@@ -20909,12 +20894,9 @@ msgstr "Çocuğun kutunun solunda olduğu resmi seç."
 
 #. Activity title
 #: activities/programmingMaze/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Programming Maze"
 msgctxt "ActivityInfo|"
 msgid "Programming maze"
-msgstr "Labirent Programlama"
+msgstr "Programlama labirenti"
 
 #. Help title
 #: activities/programmingMaze/ActivityInfo.qml:18
@@ -20938,7 +20920,7 @@ msgstr ""
 #: activities/programmingMaze/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid "Can read instructions, and think logically to find a path."
-msgstr "Talimatları okuyabilir ve bir yol bulmak için mantık yürütebilirsin."
+msgstr "Yönergeleri okuyabilir ve bir yol bulmak için mantık yürütebilirsin."
 
 #. Help manual
 #: activities/programmingMaze/ActivityInfo.qml:25
@@ -20946,53 +20928,39 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Choose the instructions from the menu, and arrange them in order to lead Tux "
 "to his goal."
-msgstr "Menüden talimatları seç ve Tux'u amacına ulaştıracak şekilde düzenle."
+msgstr ""
+"Menüden yönergeleri seç ve onları Tux'u amacına ulaştıracak şekilde düzenle."
 
 #: activities/programmingMaze/ActivityInfo.qml:27
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Left and Right arrows: navigate inside an area"
 msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: navigate inside selected area"
-msgstr "Sol ve Sağ oklar: bir alan içinde gez"
+msgstr "Sol ve sağ oklar: Bir alan içinde dolaş"
 
 #: activities/programmingMaze/ActivityInfo.qml:28
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Up and Down: increase or decrease the tempo"
 msgctxt "ActivityInfo|"
 msgid ""
 "Up and Down arrows: increase or decrease the loop counter if the loop area "
 "is selected"
-msgstr "Yukarı ve Aşağı: tempoyu artır veya azalt"
+msgstr "Yukarı ve aşağı: Döngü alanı seçiliyse döngü sayacını artır veya azalt"
 
 #: activities/programmingMaze/ActivityInfo.qml:29
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "4. To delete the selected instruction in the main/procedure code area:"
 msgctxt "ActivityInfo|"
 msgid ""
 "Space: select an instruction or append selected instruction in main/"
 "procedure/loop area"
-msgstr "4. Ana / prosedür kodu alanında seçilen talimatı silmek için:"
+msgstr ""
+"Boşluk: Bir yönerge seç veya seçili yönergeyi ana prosedür/döngü alanına "
+"iliştir"
 
 #: activities/programmingMaze/ActivityInfo.qml:30
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "5. To edit an instruction in the main/procedure code area:"
 msgctxt "ActivityInfo|"
 msgid "Tab: switch between instructions area and main/procedure/loop area"
-msgstr "5. Ana / prosedür kodu alanındaki bir talimatı düzenlemek için:"
+msgstr "Sekme: Yönergeler alanı ve ana/prosedür/döngü alanı arasında geçiş yap"
 
 #: activities/programmingMaze/ActivityInfo.qml:31
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "4. To delete the selected instruction in the main/procedure code area:"
 msgctxt "ActivityInfo|"
 msgid "Delete: remove selected instruction from main/procedure/loop area"
-msgstr "4. Ana / prosedür kodu alanında seçilen talimatı silmek için:"
+msgstr "Sil: Seçili yönergeyi ana/prosedür/döngü alanından kaldır"
 
 #: activities/programmingMaze/ActivityInfo.qml:32
 #, fuzzy
@@ -21003,49 +20971,42 @@ msgid "Enter: run the code or reset Tux when it fails to reach the fish"
 msgstr "6. Kodu çalıştırmak veya balığa ulaşamadığında Tux'u sıfırlamak için:"
 
 #: activities/programmingMaze/ActivityInfo.qml:33
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "2. To append an instruction from the instruction area to the main/"
-#| "procedure code area:"
 msgctxt "ActivityInfo|"
 msgid ""
 "To add an instruction in main/procedure/loop area, select it from "
 "instructions area, then switch to the main/procedure/loop area and press "
 "Space."
 msgstr ""
-"2. Talimat alanından ana / prosedür kodu alanına bir talimat eklemek için:"
+"Ana/prosedür/döngü alanında bir yönerge eklemek için onu yönergeler alanında "
+"seç ve ana/prosedür/döngü alanına geçiş yapıp Boşluk düğmesine bas."
 
 #: activities/programmingMaze/ActivityInfo.qml:34
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "2. To append an instruction from the instruction area to the main/"
-#| "procedure code area:"
 msgctxt "ActivityInfo|"
 msgid ""
 "To modify an instruction in main/procedure/loop area, select it from main/"
 "procedure/loop area, then switch to instructions area, choose the new "
 "instruction and press Space."
 msgstr ""
-"2. Talimat alanından ana / prosedür kodu alanına bir talimat eklemek için:"
+"Ana/prosedür/döngü alanında bir yönergeyi değiştirmek için onu ana/prosedür/"
+"döngü alanında seç ve yönerge alanına geçiş yap, yeni yönergeyi seç ve "
+"Boşluk düğmesine bas."
 
 #: activities/programmingMaze/InstructionArea.qml:28
 msgctxt "InstructionArea|"
 msgid "Choose the instructions"
-msgstr "Talimatları seç"
+msgstr "Yönergeleri seç"
 
 #: activities/programmingMaze/programmingMaze.js:96
 msgctxt "programmingMaze|"
 msgid "Instruction Area:"
-msgstr "Talimat alanı:"
+msgstr "Yönerge Alanı:"
 
 #: activities/programmingMaze/programmingMaze.js:97
 msgctxt "programmingMaze|"
 msgid ""
 "There are 3 instructions which you can use to code and lead Tux to the fish:"
 msgstr ""
-"Tux'u balığa kodlamak ve yönlendirmek için kullanabileceğin 3 talimat var:"
+"Kodlamak ve Tux'u balığa yönlendirmek için kullanabileceğin 3 yönerge var:"
 
 #: activities/programmingMaze/programmingMaze.js:98
 msgctxt "programmingMaze|"
@@ -21057,22 +21018,22 @@ msgstr "<b> 1. İleri git: </b> Tux'u baktığı yönde bir adım ileri taşır.
 #: activities/programmingMaze/programmingMaze.js:99
 msgctxt "programmingMaze|"
 msgid "<b>2. Turn left:</b> Turns Tux to the left."
-msgstr "<b> 2. Sola dön: </b> Tux'u sola tarafa çevirir."
+msgstr "<b> 2. Sola dön: </b> Tux'u sola döndürür."
 
 #: activities/programmingMaze/programmingMaze.js:100
 msgctxt "programmingMaze|"
 msgid "<b>3. Turn right:</b> Turns Tux to the right."
-msgstr "<b> 3. Sağa dön: </b> Tux'u sağa tarafa çevirir."
+msgstr "<b> 3. Sağa dön: </b> Tux'u sağa döndürür."
 
 #: activities/programmingMaze/programmingMaze.js:104
 msgctxt "programmingMaze|"
 msgid "Main Function:"
-msgstr "Ana işlev:"
+msgstr "Ana İşlev:"
 
 #: activities/programmingMaze/programmingMaze.js:105
 msgctxt "programmingMaze|"
 msgid "The execution of the code starts here."
-msgstr "Kodun çalıştırılması burada başlar."
+msgstr "Kodun yürütülmesi burada başlar."
 
 #: activities/programmingMaze/programmingMaze.js:106
 msgctxt "programmingMaze|"
@@ -21080,8 +21041,8 @@ msgid ""
 "-Click on any instruction in the <b>instruction area</b> to add it to the "
 "<b>Main Function</b>."
 msgstr ""
-"- <b> Ana Fonksiyon </b> 'a eklemek için <b> talimat alanındaki </b> "
-"herhangi bir talimatı tıkla."
+"- <b>Ana İşlev</b> 'e eklemek için <b>yönerge alanındaki</b> herhangi bir "
+"yönergeye tıkla."
 
 #: activities/programmingMaze/programmingMaze.js:107
 msgctxt "programmingMaze|"
@@ -21089,8 +21050,8 @@ msgid ""
 "-The instructions will execute in order until there's none left, or until a "
 "dead-end, or when Tux reaches the fish."
 msgstr ""
-"- Talimatlar, hiçbiri kalmayana kadar veya bir çıkmaza kadar veya Tux balığa "
-"ulaşana kadar sırayla uygulanacaktır."
+"- Yönergeler, hiçbiri kalmayana kadar veya bir çıkmaza kadar veya Tux balığa "
+"ulaşana kadar sırayla yürütülecektir."
 
 #: activities/programmingMaze/programmingMaze.js:114
 msgctxt "programmingMaze|"
@@ -21103,8 +21064,8 @@ msgid ""
 "<b>Procedure</b> is a reusable set of instructions which can be <b>used in "
 "the code by calling it where needed</b>."
 msgstr ""
-"<b> Prosedür </b>, <b> gerektiği yerde arayarak kodda kullanılabilen </b> "
-"yeniden kullanılabilir bir talimatlar dizisidir."
+"<b> Prosedür </b>, <b> gerektiği yerde çağrılarak kodda kullanılabilen </b> "
+"yeniden kullanılabilir bir yönergeler dizisidir."
 
 #: activities/programmingMaze/programmingMaze.js:116
 msgctxt "programmingMaze|"
@@ -21113,14 +21074,14 @@ msgid ""
 "area</b> to add your code, click on the <b>Procedure</b> or <b>Main "
 "Function</b> label."
 msgstr ""
-"- Kodunu eklemek üzere <b> Prosedür alanı </b> ile <b> Ana İşlev alanı </b> "
-"arasında <b> geçiş yapmak </b> için, <b> Prosedür </b> 'e veya <b> Ana İşlev "
-"</b> etiketi."
+"- Kodunu eklemek üzere <b>Prosedür alanı</b> ile <b>Ana İşlev alanı</b> "
+"arasında <b>geçiş yapmak</b> için <b>Prosedür</b> 'e veya <b>Ana İşlev'e</b> "
+"tıkla."
 
 #: activities/programmingMaze/programmingMaze.js:123
 msgctxt "programmingMaze|"
 msgid "Loop:"
-msgstr ""
+msgstr "Döngü:"
 
 #: activities/programmingMaze/programmingMaze.js:124
 msgctxt "programmingMaze|"
@@ -21128,34 +21089,30 @@ msgid ""
 "<b>Loop</b> is a sequence of instructions that is <b>continually repeated "
 "the number of times defined by the number inside it</b>."
 msgstr ""
+"<b>Döngü</b>, <b>içindeki sayıyla tanımlanan sayıda sürekli olarak "
+"yinelenen</b> bir yönerge dizisidir."
 
 #: activities/programmingMaze/programmingMaze.js:125
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid ""
-#| "-To <b>switch</b> between the <b>Procedure area</b> and the <b>Main "
-#| "Function area</b> to add your code, click on the <b>Procedure</b> or "
-#| "<b>Main Function</b> label."
 msgctxt "programmingMaze|"
 msgid ""
 "-To <b>switch</b> between the <b>Loop area</b> and the <b>Main Function "
 "area</b> to add your code, click on the <b>Loop</b> or <b>Main Function</b> "
 "label."
 msgstr ""
-"- Kodunu eklemek üzere <b> Prosedür alanı </b> ile <b> Ana İşlev alanı </b> "
-"arasında <b> geçiş yapmak </b> için, <b> Prosedür </b> 'e veya <b> Ana İşlev "
-"</b> etiketi."
+"- Kodunu eklemek üzere <b>Döngü alanı</b> ile <b>Ana İşlev alanı</b> "
+"arasında <b> geçiş yapmak </b> için, <b>Döngü</b> 'ye veya <b>Ana İşlev</"
+"b>'e tıkla."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:190
 #, qt-format
 msgctxt "ProgrammingMaze|"
 msgid "Reach the fish in less than %1 instructions."
-msgstr "Balığa %1 talimattan daha az bir sürede ulaş."
+msgstr "Balığa, %1 yönergeden daha az işlemde ulaş."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:254
 msgctxt "ProgrammingMaze|"
 msgid "Main function"
-msgstr "Ana fonksiyon"
+msgstr "Ana işlev"
 
 #: activities/programmingMaze/ProgrammingMaze.qml:282
 msgctxt "ProgrammingMaze|"
@@ -21165,25 +21122,22 @@ msgstr "Prosedür"
 #: activities/programmingMaze/ProgrammingMaze.qml:282
 msgctxt "ProgrammingMaze|"
 msgid "Loop"
-msgstr ""
+msgstr "Döngü"
 
 #: activities/programmingMaze/resource/1/Data.qml:14
 msgctxt "Data|"
 msgid "Using the main area only."
-msgstr ""
+msgstr "Yalnızca ana alan kullanılıyor."
 
 #: activities/programmingMaze/resource/2/Data.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "5. To edit an instruction in the main/procedure code area:"
 msgctxt "Data|"
 msgid "Using both the main area and the procedure area."
-msgstr "5. Ana / prosedür kodu alanındaki bir talimatı düzenlemek için:"
+msgstr "Hem ana alan hem prosedür alanı kullanılıyor."
 
 #: activities/programmingMaze/resource/3/Data.qml:14
 msgctxt "Data|"
 msgid "Using both the main area and the loop area."
-msgstr ""
+msgstr "Hem ana alan hem döngü alanı kullanılıyor."
 
 #. Activity title
 #: activities/railroad/ActivityInfo.qml:17
@@ -21195,13 +21149,13 @@ msgstr "Demiryolu etkinliği"
 #: activities/railroad/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Rebuild the train model at the top of the screen."
-msgstr "Tren modelini ekranın üst kısmında yeniden oluştur."
+msgstr "Tren modelini ekranın üst kısmında yeniden yap."
 
 #. Help goal
 #: activities/railroad/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid "Memory training."
-msgstr "Hafıza eğitimi."
+msgstr "Bellek alıştırması."
 
 #. Help manual
 #: activities/railroad/ActivityInfo.qml:26
@@ -21362,13 +21316,13 @@ msgstr ""
 #: activities/redraw_symmetrical/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Digits: select a color"
-msgstr "Rakamlar: bir renk seç"
+msgstr "Rakamlar: Bir renk seç"
 
 #: activities/redraw/ActivityInfo.qml:28
 #: activities/redraw_symmetrical/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Arrows: navigate in the grid"
-msgstr "Oklar: daireler arasında gezinme"
+msgstr "Oklar: Izgarada dolaş"
 
 #: activities/redraw/ActivityInfo.qml:29
 #: activities/redraw_symmetrical/ActivityInfo.qml:29
@@ -21421,12 +21375,9 @@ msgstr "Büyük ızgaralar (7 × 7)."
 
 #. Activity title
 #: activities/renewable_energy/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Renewable Energy"
 msgctxt "ActivityInfo|"
 msgid "Renewable energy"
-msgstr "Yenilenebilir Enerji"
+msgstr "Yenilenebilir enerji"
 
 #. Help title
 #: activities/renewable_energy/ActivityInfo.qml:17
@@ -21435,8 +21386,8 @@ msgid ""
 "Tux has come back from fishing on his boat. Bring the electrical system back "
 "up so he can have light in his home."
 msgstr ""
-"Tux teknesiyle çıktığı balık avından geri döndü. Elektrik sistemini "
-"getirmesine yardımcı ol, böylece Tux'un evinde ışık olabilir."
+"Tux teknesiyle çıktığı balık avından geri döndü. Elektriği yeniden açmasına "
+"yardımcı ol, böylece Tux'un evinde ışık olabilir."
 
 #. Help goal
 #: activities/renewable_energy/ActivityInfo.qml:20
@@ -21454,11 +21405,11 @@ msgid ""
 "the system is back up and Tux is in his home, push the light button for him. "
 "To win you must switch on all the consumers while all the producers are up."
 msgstr ""
-"Tüm elektrik sistemini yeniden etkinleştirmek için farklı aktif unsurlara "
-"tıkla: güneş, bulut, baraj, güneş dizisi, rüzgar çiftliği ve "
-"transformatörler. Sistem yedeklendiğinde ve Tux evindeyken, onun için ışığa "
-"aç. Kazanmak için tüm üreticiler çalışırken, tüm tüketicileri de devreye "
-"sokmalısın."
+"Tüm elektrik sistemini yeniden etkinleştirmek için farklı etkin ögelere "
+"tıkla: Güneş, bulut, baraj, güneş dizilimi, rüzgar çiftliği ve "
+"transformatörler. Sistem yeniden açıldığında ve Tux evindeyken, onun için "
+"ışığı aç. Kazanmak için tüm üreticiler çalışırken, tüm tüketicileri de "
+"devreye sokmalısın."
 
 #: activities/renewable_energy/RenewableEnergy.qml:281
 msgctxt "RenewableEnergy|"
@@ -21467,7 +21418,7 @@ msgid ""
 "up so he can have light in his home."
 msgstr ""
 "Tux teknesiyle çıktığı balık avından geri döndü. Evini aydınlatabilmek için "
-"elektrik sistemini getirmesine yardım et."
+"elektrik sistemini açmasına yardım et."
 
 #: activities/renewable_energy/RenewableEnergy.qml:283
 msgctxt "RenewableEnergy|"
@@ -21476,7 +21427,7 @@ msgid ""
 "and transformers, in order to reactivate the entire electrical system."
 msgstr ""
 "Tüm elektrik sistemini yeniden etkinleştirmek için güneş, bulut, baraj, "
-"güneş panelleri, rüzgar çiftliği ve transformatörler gibi farklı aktif "
+"güneş panelleri, rüzgar çiftliği ve transformatörler gibi farklı etkin "
 "elementlere tıkla."
 
 #: activities/renewable_energy/RenewableEnergy.qml:285
@@ -21486,8 +21437,8 @@ msgid ""
 "him. To win you must switch on all the consumers while all the producers are "
 "up."
 msgstr ""
-"Sistem yedeklendiğinde ve Tux evinde olduğunda, onun için ışığı aç. Kazanmak "
-"için tüm üreticiler çalışırken, tüm tüketicileri de devreye sokmalısın."
+"Sistem geri geldiğinde ve Tux evindeyken, onun için ışığı aç. Kazanmak için "
+"tüm üreticiler çalışırken, tüm tüketicileri de devreye sokmalısın."
 
 #: activities/renewable_energy/RenewableEnergy.qml:287
 msgctxt "RenewableEnergy|"
@@ -21506,19 +21457,19 @@ msgid ""
 "equipment can shut down which, in the worst cases, can lead to a major "
 "regional blackout."
 msgstr ""
-"Üretilen enerjiden daha fazla elektrik tüketmek mümkün değildir. Bu, "
-"elektrik dağıtımında kilit bir sınırlamadır, ancak bazı istisnalar dışında "
-"elektrik enerjisi depolanamaz ve bu nedenle ihtiyaç duyulduğunda üretilmesi "
-"gerekir. Bu nedenle elektrik üretiminin talebe uymasını sağlamak için çok "
-"yönlü bir kontrol sistemi gereklidir. Arz ve talep artı dengede değilse, "
-"üretim tesisleri ve iletim teçhizatı kapanabilir, bu durum en kötü hallerde "
-"büyük bir bölgesel karartmaya neden olabilir."
+"Üretilen enerjiden daha fazla elektrik tüketmek olanaklı değildir. Bu, "
+"elektrik dağıtımında kilit bir sınırlamadır; ancak bazı istisnalar dışında "
+"elektrik enerjisi depolanamaz ve bu nedenle gereksinim duyulduğunda "
+"üretilmesi gerekir. Bu nedenle elektrik üretiminin talebe uymasını sağlamak "
+"için çok yönlü bir denetim sistemi gereklidir. Arz ve talep artı dengede "
+"değilse üretim tesisleri ve iletim teçhizatı kapanabilir, bu durum en kötü "
+"hallerde büyük bir bölgesel karartmaya neden olabilir."
 
 #: activities/reversecount/ActivityConfig.qml:22
 #: activities/smallnumbers2/ActivityConfig.qml:21
 msgctxt "ActivityConfig|"
 msgid "Arabic numbers"
-msgstr "Arapça rakamlar"
+msgstr "Arap rakamları"
 
 #: activities/reversecount/ActivityConfig.qml:23
 #: activities/smallnumbers2/ActivityConfig.qml:22
@@ -21537,7 +21488,7 @@ msgstr "Görseller"
 #: activities/smallnumbers2/ActivityConfig.qml:36
 msgctxt "ActivityConfig|"
 msgid "Select Domino Representation"
-msgstr "Domino Temsilcini Seç"
+msgstr "Domino Gösterimini Seç"
 
 #. Activity title
 #: activities/reversecount/ActivityInfo.qml:15
@@ -21559,7 +21510,7 @@ msgstr ""
 #: activities/reversecount/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid "Can read numbers on a domino."
-msgstr "Domino üzerindeki sayıları okuyabilme."
+msgstr "Domino üzerindeki sayıları okuyabilir."
 
 #. Help manual
 #: activities/reversecount/ActivityInfo.qml:24
@@ -21585,12 +21536,10 @@ msgstr ""
 #: activities/reversecount/resource/7/Data.qml:13
 #: activities/reversecount/resource/8/Data.qml:13
 #: activities/reversecount/resource/9/Data.qml:13
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Numbers between 1 and 8."
+#, qt-format
 msgctxt "Data|"
 msgid "Numbers between %1 and %2."
-msgstr "1 ile 8 arası sayılar."
+msgstr "%1 ve %2 arasındaki sayılar."
 
 #. Activity title
 #: activities/roman_numerals/ActivityInfo.qml:15
@@ -21605,7 +21554,7 @@ msgid ""
 "Learn how to read roman numerals and do the conversion to and from arabic "
 "numerals."
 msgstr ""
-"Romen rakamlarını nasıl okuyacağını ve Arapça rakamlarına nasıl çevireceğini "
+"Roma rakamlarını nasıl okuyacağını ve Arapça rakamlarına nasıl çevireceğini "
 "öğren."
 
 #. Help manual
@@ -21627,18 +21576,18 @@ msgid ""
 "Learn the rules to read Roman numerals and practice converting numbers to "
 "and from arabic numerals. Click on the OK button to validate your answer."
 msgstr ""
-"Romen rakamlarını okuma kurallarını öğren ve sayıları arap rakamlarına "
+"Roma rakamlarını okuma kurallarını öğren ve sayıları Arap rakamlarına "
 "çevirme alıştırması yap. Yanıtını doğrulamak için OK düğmesine tıkla."
 
 #: activities/roman_numerals/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Digits: type arabic numerals"
-msgstr "Rakamlar: Arapça rakamlarını yaz"
+msgstr "Rakamlar: Arapça rakamları yaz"
 
 #: activities/roman_numerals/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Letters: type roman numerals (with I, V, X, L, C, D and M)"
-msgstr "Harfler: roma rakamlarını yaz (I, V, X, L, C, D ve M ile)"
+msgstr "Harfler: Roma rakamlarını yaz (I, V, X, L, C, D ve M ile)"
 
 #: activities/roman_numerals/RomanNumerals.qml:78
 #: activities/roman_numerals/RomanNumerals.qml:84
@@ -21667,7 +21616,7 @@ msgstr ""
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Convert the roman number %1 to arabic."
-msgstr "%1 Roma rakamını Arapçaya çevir."
+msgstr "%1 Roma rakamını Arap rakamına çevir."
 
 #: activities/roman_numerals/RomanNumerals.qml:85
 #: activities/roman_numerals/RomanNumerals.qml:97
@@ -21681,17 +21630,10 @@ msgstr "%1 Roma rakamını Arapçaya çevir."
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Convert the arabic number %1 to roman."
-msgstr "%1 Arapça sayıyı Roma rakamına çevir."
+msgstr "%1 Arap rakamını Roma rakamına çevir."
 
 #: activities/roman_numerals/RomanNumerals.qml:90
 #: activities/roman_numerals/RomanNumerals.qml:96
-#, fuzzy
-#| msgctxt "RomanNumerals|"
-#| msgid ""
-#| "All the units except 4 and 9 are built using sums of I and V:\n"
-#| "I, II, III, V, VI, VII, VIII.\n"
-#| " The 4 and the 9 units are built using differences:\n"
-#| "IV (5 – 1) and IX (10 – 1)"
 msgctxt "RomanNumerals|"
 msgid ""
 "All the units except 4 and 9 are built using sums of I and V:\n"
@@ -21702,19 +21644,11 @@ msgstr ""
 "4 ve 9 dışındaki tüm birimler, I ve V toplamları kullanılarak "
 "oluşturulmuştur:\n"
 "I, II, III, V, VI, VII, VIII.\n"
-" 4 ve 9 birimler farklılıklar kullanılarak üretildi:\n"
-"IV (5 - 1) ve IX (10 - 1)"
+" 4 ve 9 birimler farklılıklar kullanılarak oluşturulur:\n"
+"IV (5 - 1) ve IX (10 - 1)."
 
 #: activities/roman_numerals/RomanNumerals.qml:102
 #: activities/roman_numerals/RomanNumerals.qml:108
-#, fuzzy
-#| msgctxt "RomanNumerals|"
-#| msgid ""
-#| "All the tens except 40 and 90 are built using sums of X and L:\n"
-#| "X, XX, XXX, L, LX, LXX, LXXX.\n"
-#| "The 40 and the 90 tens are built using differences:\n"
-#| "XL (10 taken from 50) and XC (10 taken from 100)\n"
-#| " "
 msgctxt "RomanNumerals|"
 msgid ""
 "All the tens except 40 and 90 are built using sums of X and L:\n"
@@ -21725,18 +21659,11 @@ msgstr ""
 "40 ve 90 dışındaki bütün onlarca X ve L toplamları kullanılarak "
 "oluşturulmuştur:\n"
 "X, XX, XXX, L, LX, LXX, LXXX.\n"
-"40 ve 90 onlarca farklılıklar kullanılarak inşa edilmiştir:\n"
-"XL (10, 50'den alınmıştır) ve XC (10, 100'den alınmıştır) "
+"40 ve 90 onlarca farklılıklar kullanılarak oluşturulmuştur:\n"
+"XL (10, 50'den alınmıştır) ve XC (10, 100'den alınmıştır)."
 
 #: activities/roman_numerals/RomanNumerals.qml:114
 #: activities/roman_numerals/RomanNumerals.qml:120
-#, fuzzy
-#| msgctxt "RomanNumerals|"
-#| msgid ""
-#| "All the hundreds except 400 and 900 are built using sums of C and D:\n"
-#| "C, CC, CCC, D, DC, DCC, DCCC.\n"
-#| "The 400 and the 900 hundreds are built using differences:\n"
-#| "CD (100 taken from 500) and CM (100 taken from 1000)"
 msgctxt "RomanNumerals|"
 msgid ""
 "All the hundreds except 400 and 900 are built using sums of C and D:\n"
@@ -21744,21 +21671,13 @@ msgid ""
 "The 400 and the 900 hundreds are built using differences:\n"
 "CD (100 taken from 500) and CM (100 taken from 1000)."
 msgstr ""
-"400 ve 900 hariç tüm yüzlerce C ve D toplamı kullanılarak yapılmıştır:\n"
+"400 ve 900 dışındaki tüm yüzler C ve D toplamı kullanılarak yapılmıştır:\n"
 "C, CC, CCC, D, DC, DCC, DCCC\n"
-"400 ve 900 yüzlerce farklılıklar kullanılarak inşa edilmiştir:\n"
-"CD (100'den 500) ve CM (100'den 100)"
+"400 ve 900 yüzlerce farklılıklar kullanılarak oluşturulmuştur:\n"
+"CD (100'den 500) ve CM (100'den 100)."
 
 #: activities/roman_numerals/RomanNumerals.qml:126
 #: activities/roman_numerals/RomanNumerals.qml:132
-#, fuzzy
-#| msgctxt "RomanNumerals|"
-#| msgid ""
-#| "Sums of M are used for building thousands: M, MM, MMM.\n"
-#| "Notice that you cannot join more than three identical symbols. The first "
-#| "implication of this rule is that you cannot use just sums for building "
-#| "all possible units, tens or hundreds, you must use differences too. On "
-#| "the other hand, it limits the maximum roman number to 3999 (MMMCMXCIX).\n"
 msgctxt "RomanNumerals|"
 msgid ""
 "Sums of M are used for building thousands: M, MM, MMM.\n"
@@ -21767,11 +21686,11 @@ msgid ""
 "possible units, tens or hundreds, you must use differences too. On the other "
 "hand, it limits the maximum roman number to 3999 (MMMCMXCIX)."
 msgstr ""
-"Binlerce bina için M toplamı kullanılır: M, MM, MMM.\n"
-"Üçten fazla aynı sembole katılamayacağına dikkat et. Bu kuralın ilk maddesi, "
-"tüm olası birleri, onları veya yüzleri oluşturmak için farklılıkları da "
-"kullanman gerektiğidir. Öte yandan, maksimum roman sayısını 3999 (MMMCMXCIX) "
-"ile sınırlıdır.\n"
+"Binleri oluşturmak için M toplamları kullanılır: M, MM, MMM.\n"
+"Üçten fazla aynı sembolü birleştiremeyeceğine dikkat et. Bu kuralın ilk "
+"anlamı, tüm olası birimleri, onlarca veya yüzlerce oluşturmak için yalnızca "
+"toplamları kullanamazsın, farklılıkları da kullanmalısın. Öte yandan, "
+"maksimum roma sayısını 3999 (MMMCMXCIX) ile sınırlar."
 
 #: activities/roman_numerals/RomanNumerals.qml:138
 msgctxt "RomanNumerals|"
@@ -21785,13 +21704,13 @@ msgstr ""
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Roman value: %1"
-msgstr "Roma değer: %1"
+msgstr "Roma değeri: %1"
 
 #: activities/roman_numerals/RomanNumerals.qml:378
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Arabic value: %1"
-msgstr "Arapça değer: %1"
+msgstr "Arap değeri: %1"
 
 #. Activity title
 #: activities/scalesboard/ActivityInfo.qml:15
@@ -21826,12 +21745,10 @@ msgstr ""
 #: activities/scalesboard/resource/3/Data.qml:13
 #: activities/scalesboard/resource/4/Data.qml:13
 #: activities/scalesboard/resource/5/Data.qml:13
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Balance up to 10."
+#, qt-format
 msgctxt "Data|"
 msgid "Balance up to %1."
-msgstr "10'a kadar dengele."
+msgstr "%1 değerine kadar dengele."
 
 #: activities/scalesboard/resource/1/Data.qml:20
 #: activities/scalesboard/resource/2/Data.qml:20
@@ -21910,7 +21827,7 @@ msgstr "Tartıları dengelemek için sol tarafa ağırlıkları bırak."
 #: activities/scalesboard_weight_avoirdupois/resource/5/Data.qml:61
 msgctxt "Data|"
 msgid "Take care, you can drop weights on both sides of the scales."
-msgstr "Dikkat et ! Terazinin her iki tarafına da ağırlık bırakabilirsin."
+msgstr "Dikkat et , terazinin her iki tarafına da ağırlık bırakabilirsin."
 
 #: activities/scalesboard/resource/1/Data.qml:32
 #: activities/scalesboard/resource/2/Data.qml:44
@@ -22067,7 +21984,7 @@ msgstr "Bir sayının sonundaki \"kg\" sembolü, kilogram anlamına gelir."
 #: activities/scalesboard_weight/resource/1/Data.qml:32
 msgctxt "Data|"
 msgid "Take care, you can drop weights on both sides of the scale."
-msgstr "Dikkatli ol ! Terazinin her iki tarafına da ağırlık bırakabilirsin."
+msgstr "Dikkatli et, terazinin her iki tarafına da ağırlık bırakabilirsin."
 
 #: activities/scalesboard_weight/resource/1/Data.qml:39
 #, qt-format
@@ -22359,9 +22276,8 @@ msgid ""
 "boys/girls to the center, then drag pieces of candy to each child's "
 "rectangle."
 msgstr ""
-"Ekranda gösterilen talimatları izle: önce, verilen sayıda erkek / kız "
-"sayısını ortaya sürükle, ardından şeker parçalarını her çocuğun "
-"dikdörtgenine sürükle."
+"Ekranda gösterilen talimatları izle: Önce, verilen sayıda erkek/kız sayısını "
+"ortaya sürükle, ardından şeker parçalarını her çocuğun dikdörtgenine sürükle."
 
 #: activities/share/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
@@ -22369,63 +22285,44 @@ msgid "If there is a rest, it needs to be placed inside the candy jar."
 msgstr "Fazla kalan varsa şeker kavanozunun içine konması gerekir."
 
 #: activities/share/resource/1/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Maximum 25 candies and 5 kids, no rest."
 msgctxt "Data|"
 msgid "Maximum 25 pieces of candy and 5 kids, no rest."
 msgstr "Maksimum 25 şeker ve 5 çocuk, geriye şeker kalmamalı."
 
 #: activities/share/resource/1/Data.qml:18
 #: activities/share/resource/2/Data.qml:18
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid ""
-#| "Paul wants to equally share 2 pieces of candy between 2 of his girl "
-#| "friends. Can you help him? First, place the children in the center, then "
-#| "drag the pieces of candy to each of them."
 msgctxt "Data|"
 msgid ""
 "Paul wants to share 2 pieces of candy equally between 2 of his girl friends. "
 "Can you help him? First, place the children in the center, then drag the "
 "pieces of candy to each of them."
 msgstr ""
-"Paul, 2 kız arkadaşı arasında 2 parça şekeri eşit olarak paylaşmak istiyor. "
-"Ona Yardım edebilir misin? Önce çocukları ortaya yerleştir, ardından şeker "
+"Bilge, 2 kız arkadaşı arasında 2 parça şekeri eşit olarak paylaşmak istiyor. "
+"Ona yardım edebilir misin? Önce çocukları ortaya yerleştir, ardından şeker "
 "parçalarını her birine sürükle."
 
 #: activities/share/resource/1/Data.qml:28
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Now he wants to give 4 pieces of candy to his friends."
 msgctxt "Data|"
 msgid "Now he wants to share 4 pieces of candy equally among his friends."
-msgstr "Paul, Şimdi arkadaşlarına 4 tane şeker vermek istiyor."
+msgstr ""
+"Şimdi 4 parça şekeri arkadaşları arasında eşit olarak paylaşmak istiyor."
 
 #: activities/share/resource/1/Data.qml:38
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Can you now give 6 of Paul's pieces of candy to his friends?"
 msgctxt "Data|"
 msgid ""
 "Can you now share 6 of Paul's pieces of candy equally among his friends?"
-msgstr "Şimdi Paul'ün 6 tane şekerini arkadaşlarına verebilir misin?"
+msgstr ""
+"Şimdi Bilge'nin 6 parça şekerini arkadaşları arasında eşit olarak "
+"paylaştırabilir misin?"
 
 #: activities/share/resource/1/Data.qml:48
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid ""
-#| "Bob wants to give 3 pieces of candy to his girl friends. Can you help him "
-#| "equally split the pieces of candy so that each friend will have the same "
-#| "amount?"
 msgctxt "Data|"
 msgid ""
 "Some of his friends already have pieces of candy. He wants to give them 7 "
 "more pieces so that they all have the same amount."
 msgstr ""
-"Bob, kız arkadaşlarına 3 tane şeker vermek istiyor. Her arkadaşın aynı "
-"miktarda şekeri olması için şekerleri eşit şekilde bölmesine yardım edebilir "
-"misin?"
+"Bazı arkadaşlarının zaten şekerleri var. Hepsinin aynı miktarda olması için "
+"onlara 7 parça daha vermek istiyor."
 
 #: activities/share/resource/1/Data.qml:58
 #, fuzzy
@@ -22445,177 +22342,124 @@ msgstr ""
 "edebilir misin?"
 
 #: activities/share/resource/1/Data.qml:70
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid ""
-#| "Charles wants to share his 6 pieces of candy with 2 of his girl friends. "
-#| "Can he split the pieces of candy equally?"
 msgctxt "Data|"
 msgid ""
 "George wants to share 3 pieces of candy equally between 3 of his girl "
 "friends. Can he split the pieces of candy equally?"
 msgstr ""
-"Charles 6 tane şekerini 2 kız arkadaşıyla paylaşmak istiyor. Şekerleri eşit "
-"olarak bölebilir mi?"
+"Yamtar, 3 tane şekeri 3 kız arkadaşı arasında eşit olarak paylaşmak istiyor. "
+"Şeker parçalarını eşit olarak paylaştırabilir mi?"
 
 #: activities/share/resource/1/Data.qml:80
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid ""
-#| "Charles wants to share his 6 pieces of candy with 2 of his girl friends. "
-#| "Can he split the pieces of candy equally?"
 msgctxt "Data|"
 msgid ""
 "Maria wants to share 6 pieces of candy equally between 3 of her friends: 1 "
 "girl and 2 boys. Can she split the pieces of candy equally?"
 msgstr ""
-"Charles 6 tane şekerini 2 kız arkadaşıyla paylaşmak istiyor. Şekerleri eşit "
-"olarak bölebilir mi?"
+"Yağmur, 6 parça şekeri 3 arkadaşına eşit olarak paylaşmak istiyor: 1 kız ve "
+"2 erkek. Şeker parçalarını eşit olarak bölebilir mi?"
 
 #: activities/share/resource/1/Data.qml:90
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid ""
-#| "John wants to equally share 8 pieces of candy between 3 of his friends: 1 "
-#| "boy and 2 girls. Can he equally split the pieces of candy? First, place "
-#| "the the children in the center, then drag the pieces of candy to each of "
-#| "them."
 msgctxt "Data|"
 msgid ""
 "John wants to share 8 pieces of candy equally between 3 of his friends: 1 "
 "boy and 2 girls. The boy already has one. Can he make sure that they all "
 "have the same amount?"
 msgstr ""
-"John, 3 arkadaşı arasında 8 tane şekeri eşit olarak paylaştırmak istiyor: 1 "
-"erkek ve 2 kız. Şekerleri eşit olarak bölebilir mi? Önce çocukları ortaya "
-"yerleştirin, ardından şeker parçalarını her birine sürükleyin."
+"Aybars, 8 parça şekeri 3 arkadaşı arasında eşit olarak paylaştırmak istiyor: "
+"1 erkek ve 2 kız. Erkeğin zaten bir tane var. Hepsinin aynı miktarda "
+"olduğundan emin olabilir mi?"
 
 #: activities/share/resource/1/Data.qml:100
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid ""
-#| "Charles wants to share his 6 pieces of candy with 2 of his girl friends. "
-#| "Can he split the pieces of candy equally?"
 msgctxt "Data|"
 msgid ""
 "Paul wants to share 12 pieces of candy equally between 3 of his friends: 2 "
 "boys and 1 girl. Can he split the pieces of candy equally?"
 msgstr ""
-"Charles 6 tane şekerini 2 kız arkadaşıyla paylaşmak istiyor. Şekerleri eşit "
-"olarak bölebilir mi?"
+"Doğuş, 12 adet şekeri 3 arkadaşına eşit olarak paylaştırmak istiyor: 2 erkek "
+"ve 1 kız. Şeker parçalarını eşit olarak bölebilir mi?"
 
 #: activities/share/resource/1/Data.qml:110
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid ""
-#| "Maria wants to equally share 11 pieces of candy between 3 of his friends: "
-#| "1 boy and 2 girls. Can he equally split the pieces of candy? First, place "
-#| "the children in the center, then drag the pieces of candy to each of them."
 msgctxt "Data|"
 msgid ""
 "Maria wants to share 11 pieces of candy between 3 of her friends: 1 boy and "
 "2 girls. The girls already have some pieces of candy. Can she split the "
 "pieces of candy so that they all have the same amount?"
 msgstr ""
-"Maria 11 tane şekeri 3 arkadaşı arasında eşit olarak paylaştırmak istiyor: 1 "
-"erkek ve 2 kız. Şekerleri eşit olarak bölebilir mi? Önce çocukları ortaya "
-"yerleştir, ardından şeker parçalarını her birine sürükle."
+"Işık, 11 adet şekeri 3 arkadaşı arasında paylaştırmak istiyor: 1 erkek ve 2 "
+"kız. Kızların zaten biraz şekerleri var. Şeker parçalarını, hepsinde aynı "
+"miktarda olacak şekilde paylaştırabilir mi?"
 
 #: activities/share/resource/1/Data.qml:122
 #: activities/share/resource/2/Data.qml:112
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Alice wants to give 16 pieces of candy to her friends."
 msgctxt "Data|"
 msgid ""
 "Alice wants to share 4 pieces of candy equally between 4 of her girl "
 "friends. Can you help her?"
-msgstr "Alice, arkadaşlarına 16 tane şeker vermek istiyor."
+msgstr ""
+"Toprak, 4 adet şekeri 4 kız arkadaşı arasında eşit olarak paylaştırmak "
+"istiyor. Ona yardım edebilir misin?"
 
 #: activities/share/resource/1/Data.qml:132
 msgctxt "Data|"
 msgid "Now, Alice wants to give 8 pieces of candy to her friends."
-msgstr "Şimdi, Alice arkadaşlarına 8 şeker vermek istiyor."
+msgstr "Şimdi Toprak arkadaşlarına 8 parça şeker vermek istiyor."
 
 #: activities/share/resource/1/Data.qml:142
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid ""
-#| "Michelle has 12 pieces of candy and wants to split them between 4 "
-#| "brothers and 1 sister. Help her share the pieces of candy."
 msgctxt "Data|"
 msgid ""
 "Alice wants to give 10 pieces of candy to her friends, 1 girl and 3 boys, so "
 "that they all have the same amount. The girls already have some pieces of "
 "candy."
 msgstr ""
-"Michelle'in 12 tane şekeri var ve bunları 4 erkek ve 1 kız kardeşi arasında "
-"paylaştırmak istiyor. Şekerleri paylaştırmasına yardım et."
+"Toprak, 1 kız ve 3 erkek arkadaşına 10 parça şeker vermek istiyor, böylece "
+"hepsinde aynı miktarda şeker olmalı. Kızların zaten biraz şekerleri var."
 
 #: activities/share/resource/1/Data.qml:152
 msgctxt "Data|"
 msgid "Alice wants to give 16 pieces of candy to her friends."
-msgstr "Alice, arkadaşlarına 16 tane şeker vermek istiyor."
+msgstr "Alice arkadaşlarına 16 tane şeker vermek istiyor."
 
 #: activities/share/resource/1/Data.qml:162
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid ""
-#| "Bob wants to give 3 pieces of candy to his girl friends. Can you help him "
-#| "equally split the pieces of candy so that each friend will have the same "
-#| "amount?"
 msgctxt "Data|"
 msgid ""
 "Alice wants to give pieces of candy to 4 friends. Some of them already have "
 "some pieces of candy. Can you help her split 14 pieces of candy so that all "
 "her friends have the same amount?"
 msgstr ""
-"Bob, kız arkadaşlarına 3 tane şeker vermek istiyor. Her arkadaşın aynı "
-"miktarda şekeri olması için şekerleri eşit şekilde bölmesine yardım edebilir "
-"misin?"
+"Toprak 4 arkadaşına şeker vermek istiyor. Bazılarında zaten biraz şeker var. "
+"Tüm arkadaşlarının aynı miktarda şeker alması için 14 parça şeker ayırmasına "
+"yardım edebilir misin?"
 
 #: activities/share/resource/1/Data.qml:174
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid ""
-#| "Thomas wants to share his 20 pieces of candy with his friends: 1 boy and "
-#| "4 girls. Can you help him?"
 msgctxt "Data|"
 msgid ""
 "Michael wants to share 5 pieces of candy equally between 5 of his girl "
 "friends. Can you help him?"
 msgstr ""
-"Thomas, 20 tane şekerini arkadaşlarıyla paylaşmak istiyor: 1 erkek ve 4 kız. "
-"Ona Yardım edebilir misin?"
+"Kutay, 5 parça şekeri 5 kız arkadaşı arasında eşit olarak paylaştırmak "
+"istiyor. Ona yardım edebilir misin?"
 
 #: activities/share/resource/1/Data.qml:184
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid ""
-#| "Helen has 5 friends: 2 boys and 3 girls. She wants to give them 10 pieces "
-#| "of candy. Help her split the pieces of candy between her friends."
 msgctxt "Data|"
 msgid ""
 "Helen has 5 friends: 2 boys and 3 girls. She wants to give them 10 pieces of "
 "candy. Help her split the pieces of candy equally between her friends."
 msgstr ""
-"Helen'in 5 arkadaşı var: 2 erkek ve 3 kız. Onlara 10 tane şeker vermek "
-"istiyor. Şekerleri arkadaşları arasında bölmesine yardım et."
+"Evşen'in 5 arkadaşı var: 2 erkek ve 3 kız. Onlara 10 tane şeker vermek "
+"istiyor. Şeker parçalarını arkadaşları arasında eşit olarak paylaştırmasına "
+"yardım et."
 
 #: activities/share/resource/1/Data.qml:194
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid ""
-#| "Michelle has 12 pieces of candy and wants to split them between 4 "
-#| "brothers and 1 sister. Help her share the pieces of candy."
 msgctxt "Data|"
 msgid ""
 "Michelle wants to share 12 pieces of candy equally between her 4 brothers "
 "and 1 sister, so that they all have the same amount. Her sister already has "
 "some pieces of candy."
 msgstr ""
-"Michelle'in 12 tane şekeri var ve bunları 4 erkek ve 1 kız kardeşi arasında "
-"paylaştırmak istiyor. Şekerleri paylaştırmasına yardım et."
+"Elçin, 12 parça şekeri 4 erkek ve 1 kız kardeşi arasında eşit olarak "
+"paylaştırmak istiyor, böylece hepsinde aynı miktarda şeker olmalı. Kız "
+"kardeşinin zaten birkaç parça şekeri var."
 
 #: activities/share/resource/1/Data.qml:204
 msgctxt "Data|"
@@ -22623,131 +22467,91 @@ msgid ""
 "Thomas wants to share his 20 pieces of candy with his friends: 1 boy and 4 "
 "girls. Can you help him?"
 msgstr ""
-"Thomas, 20 tane şekerini arkadaşlarıyla paylaşmak istiyor: 1 erkek ve 4 kız. "
-"Ona Yardım edebilir misin?"
+"Ongun, elindeki 20 şekeri arkadaşlarıyla paylaşmak istiyor: 1 erkek ve 4 "
+"kız. Ona yardım edebilir misin?"
 
 #: activities/share/resource/1/Data.qml:214
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid ""
-#| "Thomas wants to share his 20 pieces of candy with his friends: 1 boy and "
-#| "4 girls. Can you help him?"
 msgctxt "Data|"
 msgid ""
 "Paul wants to share 20 pieces of candy equally between 5 of his friends. "
 "They already have one piece of candy each. Can you help him?"
 msgstr ""
-"Thomas, 20 tane şekerini arkadaşlarıyla paylaşmak istiyor: 1 erkek ve 4 kız. "
-"Ona Yardım edebilir misin?"
+"Bilge, 20 adet şekeri 5 arkadaşı arasında eşit olarak paylaşmak istiyor. "
+"Zaten her birinin bir parça şekeri var. Ona yardım edebilir misin?"
 
 #: activities/share/resource/1/Data.qml:226
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid ""
-#| "Charles wants to share his 6 pieces of candy with 2 of his girl friends. "
-#| "Can he split the pieces of candy equally?"
 msgctxt "Data|"
 msgid ""
 "Charles wants to share his 6 pieces of candy equally with 2 of his girl "
 "friends. Can he split the pieces of candy equally?"
 msgstr ""
-"Charles 6 tane şekerini 2 kız arkadaşıyla paylaşmak istiyor. Şekerleri eşit "
-"olarak bölebilir mi?"
+"Oğuz, elindeki 6 parça şekeri 2 kız arkadaşıyla eşit olarak paylaşmak "
+"istiyor. Şeker parçalarını eşit olarak bölebilir mi?"
 
 #: activities/share/resource/1/Data.qml:236
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid ""
-#| "For her birthday, Elizabeth has 8 pieces of candy to share with 3 of her "
-#| "friends: 2 girls and 1 boy. How should she split the pieces of candy to "
-#| "her friends?"
 msgctxt "Data|"
 msgid ""
 "For her birthday, Elizabeth has 8 pieces of candy to share with 3 of her "
 "friends: 2 girls and 1 boy. The girls already have some pieces of candy. How "
 "should she split the pieces of candy so that they all have the same amount?"
 msgstr ""
-"Elizabeth'in doğum günü için 2 kız ve 1 erkek arkadaşıyla paylaşacağı 8 "
-"şekeri vardır. Şekerleri arkadaşlarına nasıl paylaştırabilir?"
+"Ece'nin doğum günü için 3 arkadaşıyla paylaşacağı 8 tane şekeri var: 2 kız "
+"ve 1 erkek. Kızların zaten biraz şekerleri var. Şeker parçalarını, hepsinde "
+"aynı miktarda olacak şekilde nasıl bölmeli?"
 
 #: activities/share/resource/1/Data.qml:246
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid ""
-#| "Jason's father gave him 16 pieces of candy to share with his friends: 2 "
-#| "boys and 2 girls. Help him give the pieces of candy to his friends."
 msgctxt "Data|"
 msgid ""
 "Jason's father gave him 16 pieces of candy to share equally with his "
 "friends: 2 boys and 2 girls. Help him give the pieces of candy to his "
 "friends."
 msgstr ""
-"Jason'ın babası ona arkadaşlarıyla paylaşması için 16 tane şeker verdi: 2 "
-"erkek ve 2 kız. Şekerleri arkadaşlarına vermesine yardım et."
+"Tarkan'ın babası, arkadaşlarıyla eşit olarak paylaşması için ona 16 parça "
+"şeker verdi: 2 erkek ve 2 kız. Şeker parçalarını arkadaşlarına vermesine "
+"yardım et."
 
 #: activities/share/resource/1/Data.qml:256
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid ""
-#| "George wants to equally share 14 pieces of candy between 4 of his "
-#| "friends: 2 girls and 2 boys. Can he equally split the pieces of candy? "
-#| "First, place the children in the center, then drag the pieces of candy to "
-#| "each of them."
 msgctxt "Data|"
 msgid ""
 "George wants to share 14 pieces of candy between 4 of his friends: 2 girls "
 "and 2 boys. The boys already have one piece of candy each. He wants all of "
 "them to have the same amount."
 msgstr ""
-"George, 14 tane şekeri 4 arkadaşıyla eşit olarak paylaşmak istiyor: 2 kız ve "
-"2 erkek. Şeker parçalarını eşit olarak bölebilir mi? Önce çocukları ortaya "
-"yerleştir, ardından şeker parçalarını her birine sürükle."
+"Yamtar, 14 parça şekeri 4 arkadaşı arasında paylaştırmak istiyor: 2 kız ve 2 "
+"erkek. Oğlanların zaten bir parça şekeri var. Hepsinin aynı miktarda "
+"olmasını istiyor."
 
 #: activities/share/resource/1/Data.qml:266
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid ""
-#| "Charles wants to share his 6 pieces of candy with 2 of his girl friends. "
-#| "Can he split the pieces of candy equally?"
 msgctxt "Data|"
 msgid ""
 "Maria wants to share 25 pieces of candy equally between 5 of her friends: 3 "
 "girls and 2 boys. Can she split the pieces of candy equally?"
 msgstr ""
-"Charles 6 tane şekerini 2 kız arkadaşıyla paylaşmak istiyor. Şekerleri eşit "
-"olarak bölebilir mi?"
+"Işık, 25 adet şekeri 5 arkadaşına eşit olarak paylaştırmak istiyor: 3 kız ve "
+"2 erkek. Şeker parçalarını eşit olarak bölebilir mi?"
 
 #: activities/share/resource/2/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Maximum 25 candies and 5 kids, possible rest."
 msgctxt "Data|"
 msgid "Maximum 25 pieces of candy and 5 kids, possible rest."
-msgstr "Maksimum 25 şeker ve 5 çocuk, olası artan."
+msgstr "En çok 25 adet şeker ve 5 çocuk, kalan olabilir."
 
 #: activities/share/resource/2/Data.qml:28
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Now he wants to give 4 pieces of candy to his friends."
 msgctxt "Data|"
 msgid "Now he wants to share 5 pieces of candy among his friends."
-msgstr "Paul, Şimdi arkadaşlarına 4 tane şeker vermek istiyor."
+msgstr "Şimdi 5 adet şekeri arkadaşları arasında paylaştırmak istiyor."
 
 #: activities/share/resource/2/Data.qml:38
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Can you now give 6 of Paul's pieces of candy to his friends?"
 msgctxt "Data|"
 msgid "Can you now share 7 of Paul's pieces of candy among his friends?"
-msgstr "Şimdi Paul'ün 6 tane şekerini arkadaşlarına verebilir misin?"
+msgstr ""
+"Şimdi Bilge'nin 7 parça şekerini arkadaşları arasında paylaştırabilir misin?"
 
 #: activities/share/resource/2/Data.qml:48
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Can you now give 6 of Paul's pieces of candy to his friends?"
 msgctxt "Data|"
 msgid "Can you now share 8 of Paul's pieces of candy among his friends?"
-msgstr "Şimdi Paul'ün 6 tane şekerini arkadaşlarına verebilir misin?"
+msgstr ""
+"Şimdi Bilge'nin şekerlerinden 8 tanesini arkadaşları arasında "
+"paylaştırabilir misin?"
 
 #: activities/share/resource/2/Data.qml:58
 #, fuzzy
@@ -22767,128 +22571,88 @@ msgstr ""
 "misin?"
 
 #: activities/share/resource/2/Data.qml:70
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid ""
-#| "Charles wants to share his 6 pieces of candy with 2 of his girl friends. "
-#| "Can he split the pieces of candy equally?"
 msgctxt "Data|"
 msgid ""
 "Bob wants to share 3 pieces of candy equally between 3 of his girl friends. "
 "Can he split the pieces of candy equally?"
 msgstr ""
-"Charles 6 tane şekerini 2 kız arkadaşıyla paylaşmak istiyor. Şekerleri eşit "
-"olarak bölebilir mi?"
+"Oktay, 3 parça şekeri 3 kız arkadaşı arasında eşit olarak paylaştırmak "
+"istiyor. Şeker parçalarını eşit olarak paylaştırabilir mi?"
 
 #: activities/share/resource/2/Data.qml:80
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid ""
-#| "Maria wants to equally share 11 pieces of candy between 3 of his friends: "
-#| "1 boy and 2 girls. Can he equally split the pieces of candy? First, place "
-#| "the children in the center, then drag the pieces of candy to each of them."
 msgctxt "Data|"
 msgid ""
 "Harry wants to share 8 pieces of candy between 3 of his friends: 1 boy and 2 "
 "girls. The boy already has one piece of candy. Can he split the pieces of "
 "candy so that they all have the same amount?"
 msgstr ""
-"Maria 11 tane şekeri 3 arkadaşı arasında eşit olarak paylaştırmak istiyor: 1 "
-"erkek ve 2 kız. Şekerleri eşit olarak bölebilir mi? Önce çocukları ortaya "
-"yerleştir, ardından şeker parçalarını her birine sürükle."
+"İlberk, 8 parça şekeri 3 arkadaşı arasında paylaştırmak istiyor: 1 erkek ve "
+"2 kız. Çocuğun zaten bir parça şekeri var. Şeker parçalarını, hepsi aynı "
+"miktarda olacak şekilde paylaştırabilir mi?"
 
 #: activities/share/resource/2/Data.qml:90
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid ""
-#| "Maria wants to equally share 11 pieces of candy between 3 of his friends: "
-#| "1 boy and 2 girls. Can he equally split the pieces of candy? First, place "
-#| "the children in the center, then drag the pieces of candy to each of them."
 msgctxt "Data|"
 msgid ""
 "Maria wants to share 8 pieces of candy between 3 of her friends: 1 boy and 2 "
 "girls. The girls already have some pieces of candy. Can she split the pieces "
 "of candy so that they all have the same amount?"
 msgstr ""
-"Maria 11 tane şekeri 3 arkadaşı arasında eşit olarak paylaştırmak istiyor: 1 "
-"erkek ve 2 kız. Şekerleri eşit olarak bölebilir mi? Önce çocukları ortaya "
-"yerleştir, ardından şeker parçalarını her birine sürükle."
+"Yağmur, 8 parça şekeri 3 arkadaşı arasında paylaştırmak istiyor: 1 erkek ve "
+"2 kız. Kızların zaten biraz şekerleri var. Şeker parçalarını, hepsinde aynı "
+"miktar olacak şekilde paylaştırabilir mi?"
 
 #: activities/share/resource/2/Data.qml:100
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid ""
-#| "Maria wants to equally share 11 pieces of candy between 3 of his friends: "
-#| "1 boy and 2 girls. Can he equally split the pieces of candy? First, place "
-#| "the children in the center, then drag the pieces of candy to each of them."
 msgctxt "Data|"
 msgid ""
 "Harry wants to share 12 pieces of candy between 3 of his friends: 1 boy and "
 "2 girls. The boy already has some pieces of candy. Can he split the pieces "
 "of candy so that they all have the same amount?"
 msgstr ""
-"Maria 11 tane şekeri 3 arkadaşı arasında eşit olarak paylaştırmak istiyor: 1 "
-"erkek ve 2 kız. Şekerleri eşit olarak bölebilir mi? Önce çocukları ortaya "
-"yerleştir, ardından şeker parçalarını her birine sürükle."
+"İlberk, 12 parça şekeri 3 arkadaşı arasında paylaştırmak istiyor: 1 erkek ve "
+"2 kız. Erkeğin zaten birkaç parça şekeri var. Şeker parçalarını, hepsi aynı "
+"miktarda olacak şekilde paylaştırabilir mi?"
 
 #: activities/share/resource/2/Data.qml:122
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Now he wants to give 4 pieces of candy to his friends."
 msgctxt "Data|"
 msgid "Now, Alice wants to share 8 pieces of candy equally among her friends."
-msgstr "Paul, Şimdi arkadaşlarına 4 tane şeker vermek istiyor."
+msgstr ""
+"Şimdi Toprak, 8 parça şekeri arkadaşları arasında eşit olarak paylaştırmak "
+"istiyor."
 
 #: activities/share/resource/2/Data.qml:132
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid ""
-#| "Can you help Alice give 10 pieces of candy to her friends: 1 girl and 3 "
-#| "boys?"
 msgctxt "Data|"
 msgid ""
 "Can you help Alice share 10 pieces of candy equally among her friends: 1 "
 "girl and 3 boys? The girl already has some pieces of candy."
 msgstr ""
-"Alice'in 1 kız ve 3 erkek arkadaşına 10 tane şeker vermesine yardım edebilir "
-"misin?"
+"Toprak'ın 10 parça şekeri arkadaşları arasında eşit olarak paylaştırmasına "
+"yardım edebilir misin: 1 kız ve 3 erkek? Kızın zaten birkaç parça şekeri var."
 
 #: activities/share/resource/2/Data.qml:142
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Now he wants to give 4 pieces of candy to his friends."
 msgctxt "Data|"
 msgid "Alice wants to share 16 pieces of candy equally among her friends."
-msgstr "Paul, Şimdi arkadaşlarına 4 tane şeker vermek istiyor."
+msgstr ""
+"Toprak, 16 adet şekeri arkadaşları arasında eşit olarak paylaştırmak istiyor."
 
 #: activities/share/resource/2/Data.qml:152
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid ""
-#| "Alice has 14 pieces of candy left. She wants to give them all to her "
-#| "friends. Can you help her split the pieces of candy equally?"
 msgctxt "Data|"
 msgid ""
 "Alice has 14 pieces of candy left. She wants to share them equally among her "
 "friends. The boys already have some pieces of candy. Can you help her split "
 "the pieces of candy equally?"
 msgstr ""
-"Alice'de 14 tane şeker kaldı. Hepsini arkadaşlarına vermek istiyor. Şeker "
-"parçalarını eşit bir şekilde bölmesine yardım edebilir misin?"
+"Toprak'ın elinde 14 adet şeker kaldı. Bunları arkadaşları arasında eşit "
+"olarak paylaştırmak istiyor. Oğlanların şimdiden biraz şekerleri var. Şeker "
+"parçalarını eşit şekilde bölmesine yardım edebilir misin?"
 
 #: activities/share/resource/2/Data.qml:164
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid ""
-#| "Help Jon split 11 pieces of candies between five girls. The rest will "
-#| "remain to Jon."
 msgctxt "Data|"
 msgid ""
 "Help Jon share 11 pieces of candies equally between five girls. The rest "
 "will remain to Jon."
 msgstr ""
-"Jon'un 11 şekeri beş kız arasında paylaşmasına yardım et. Gerisi Jon'a "
-"kalacak."
+"Demirkan'ın 11 parça şekeri beş kız arasında eşit olarak paylaştırmasına "
+"yardım et. Gerisi Demirkan'a kalacak."
 
 #: activities/share/resource/2/Data.qml:174
 msgctxt "Data|"
@@ -22897,162 +22661,118 @@ msgid ""
 "his sisters. Can you split them equally, knowing that his brothers already "
 "have 2 pieces of candy?"
 msgstr ""
-"Jon kalan şekerleri kardeşleriyle paylaşmak istiyor. Kardeşlerinde zaten 2 "
-"parça şeker olduğunu bilerek onları eşit olarak paylaşabilir misin?"
+"Demirkan, kalan şeker parçalarını erkek ve kız kardeşleriyle paylaşmak "
+"istiyor. Kardeşlerinin zaten 2 parça şekeri olduğuna göre onları eşit olarak "
+"paylaştırabilir misin?"
 
 #: activities/share/resource/2/Data.qml:184
 msgctxt "Data|"
 msgid ""
 "Help Tux split 19 pieces of candies between his friends: 4 boys and 1 girl."
 msgstr ""
-"Tux'un 19 tane şekerini 4 erkek ve 1 kız arkadaşı arasında bölüşmesine "
-"yardım et."
+"Tux'un 19 parça şekeri arkadaşları arasında paylaştırmasına yardım et: 4 "
+"erkek ve 1 kız."
 
 #: activities/share/resource/2/Data.qml:194
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Help Maria split 18 pieces of candy between 3 boys and 2 girls."
 msgctxt "Data|"
 msgid "Help Maria share 18 pieces of candy equally between 3 boys and 2 girls."
 msgstr ""
-"Maria'nın 18 parça şekerini 3 erkek ve 2 kız arasında bölüşmesine yardım et."
+"Işık'ın 18 parça şekeri 3 erkek ve 2 kız arasında eşit olarak "
+"paylaştırmasına yardım et."
 
 #: activities/share/resource/2/Data.qml:206
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid ""
-#| "Charles wants to share his 6 pieces of candy with 2 of his girl friends. "
-#| "Can he split the pieces of candy equally?"
 msgctxt "Data|"
 msgid ""
 "Charles wants to share his 6 pieces of candy equally between 2 of his girl "
 "friends. Can he split the pieces of candy equally?"
 msgstr ""
-"Charles 6 tane şekerini 2 kız arkadaşıyla paylaşmak istiyor. Şekerleri eşit "
-"olarak bölebilir mi?"
+"Oğuz, elindeki 6 parça şekeri 2 kız arkadaşı arasında eşit olarak "
+"paylaştırmak istiyor. Şeker parçalarını eşit olarak paylaştırabilir mi?"
 
 #: activities/share/resource/2/Data.qml:216
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid ""
-#| "For her birthday, Elizabeth has 8 pieces of candy to share with 3 of her "
-#| "friends: 2 girls and 1 boy. How should she split the pieces of candy to "
-#| "her friends?"
 msgctxt "Data|"
 msgid ""
 "For her birthday, Elizabeth has 8 pieces of candy to share with 3 of her "
 "friends equally: 2 girls and 1 boy. How should she split the pieces of candy "
 "between her friends?"
 msgstr ""
-"Elizabeth'in doğum günü için 2 kız ve 1 erkek arkadaşıyla paylaşacağı 8 "
-"şekeri vardır. Şekerleri arkadaşlarına nasıl paylaştırabilir?"
+"Ece'nin doğum günü için 3 arkadaşıyla eşit olarak paylaşacağı 8 parça şekeri "
+"var: 2 kız ve 1 erkek. Şeker parçalarını arkadaşları arasında nasıl "
+"bölüştürmeli?"
 
 #: activities/share/resource/2/Data.qml:226
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid ""
-#| "Jason's father gave him 16 pieces of candy to share with his friends: 2 "
-#| "boys and 2 girls. Help him give the pieces of candy to his friends."
 msgctxt "Data|"
 msgid ""
 "Jason's father gave him 17 pieces of candy to share equally between his "
 "friends: 2 boys and 2 girls. Help him give the pieces of candy to his "
 "friends."
 msgstr ""
-"Jason'ın babası ona arkadaşlarıyla paylaşması için 16 tane şeker verdi: 2 "
-"erkek ve 2 kız. Şekerleri arkadaşlarına vermesine yardım et."
+"Tarkan'ın babası, arkadaşları arasında eşit olarak paylaştırması için ona 17 "
+"parça şeker verdi: 2 erkek ve 2 kız. Şeker parçalarını arkadaşlarına "
+"vermesine yardım et."
 
 #: activities/share/resource/2/Data.qml:236
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid ""
-#| "Maria wants to equally share 25 pieces of candy between 5 of her friends: "
-#| "3 girls and 2 boys. Can she equally split the pieces of candy? First, "
-#| "place the children in the center, then drag the pieces of candy to each "
-#| "of them."
 msgctxt "Data|"
 msgid ""
 "George wants to share 14 pieces of candy equally between 4 of his friends: 2 "
 "girls and 2 boys. Can he equally split the pieces of candy between his "
 "friends?"
 msgstr ""
-"Maria 25 şekeri 5 arkadaşı arasında eşit olarak paylaşmak istiyor: 3 kız ve "
-"2 erkek. Şeker parçalarını eşit olarak bölebilir mi? Önce çocukları ortaya "
-"yerleştir, ardından şeker parçalarını her birine sürükle."
+"Yamtar, 14 parça şekeri 2 kız ve 2 erkek olmak üzere 4 arkadaşı arasında "
+"eşit olarak paylaştırmak istiyor. Şeker parçalarını arkadaşları arasında "
+"eşit olarak paylaştırabilecek mi?"
 
 #: activities/share/resource/2/Data.qml:246
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid ""
-#| "Charles wants to share his 6 pieces of candy with 2 of his girl friends. "
-#| "Can he split the pieces of candy equally?"
 msgctxt "Data|"
 msgid ""
 "Maria wants to share 23 pieces of candy equally between 5 of her friends: 3 "
 "girls and 2 boys. Can she share the pieces of candy equally between her "
 "friends?"
 msgstr ""
-"Charles 6 tane şekerini 2 kız arkadaşıyla paylaşmak istiyor. Şekerleri eşit "
-"olarak bölebilir mi?"
+"Yamtar, 23 adet şekeri 5 arkadaşına eşit olarak paylaştırmak istiyor: 3 kız "
+"ve 2 erkek. Şeker parçalarını arkadaşları arasında eşit olarak "
+"paylaştırabilir mi?"
 
 #: activities/share/resource/3/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Maximum 30 candies and 6 kids, possible rest."
 msgctxt "Data|"
 msgid "Maximum 30 pieces of candy and 6 kids, possible rest."
-msgstr "Maksimum 30 şeker ve 6 çocuk, olası kalan."
+msgstr "En çok 30 tane şeker ve 6 çocuk, kalan olabilir."
 
 #: activities/share/share.js:97
-#, fuzzy, qt-format
-#| msgctxt ""
-#| "share|First part of Place %n boy(s) and %n girl(s) in the center. Then "
-#| "equally split %n pieces of candy between them."
-#| msgid "Place %n boy(s) "
-#| msgid_plural "Place %n boy(s) "
+#, qt-format
 msgctxt ""
 "share|First part of Place %n boy(s) and %n girl(s) in the center. Then split "
 "%n pieces of candy equally between them."
 msgid "Place %n boy(s) "
 msgid_plural "Place %n boy(s) "
-msgstr[0] "Yer %n erkek    "
-msgstr[1] "Yer %n erkekler "
+msgstr[0] "%n oğlanı yerleştir"
+msgstr[1] "%n oğlanı yerleştir"
 
 #: activities/share/share.js:101
-#, fuzzy, qt-format
-#| msgctxt ""
-#| "share|Second part of Place %n boy(s) and %n girl(s) in the center. Then "
-#| "equally split %n pieces of candy between them."
-#| msgid "and %n girl(s) in the center. "
-#| msgid_plural "and %n girl(s) in the center. "
+#, qt-format
 msgctxt ""
 "share|Second part of Place %n boy(s) and %n girl(s) in the center. Then "
 "split %n pieces of candy equally between them."
 msgid "and %n girl(s) in the center. "
 msgid_plural "and %n girl(s) in the center. "
-msgstr[0] "ve %n kız ortada    "
-msgstr[1] "ve %n kızlar ortada "
+msgstr[0] "ve %n kızı ortaya yerleştir."
+msgstr[1] "ve %n kızı ortaya yerleştir."
 
 #: activities/share/share.js:105
-#, fuzzy, qt-format
-#| msgctxt ""
-#| "share|Third part of Place %n boy(s) and %n girl(s) in the center. Then "
-#| "equally split %n pieces of candy between them."
-#| msgid "Then equally split %n pieces of candy between them."
-#| msgid_plural "Then equally split %n pieces of candy between them."
+#, qt-format
 msgctxt ""
 "share|Third part of Place %n boy(s) and %n girl(s) in the center. Then split "
 "%n pieces of candy equally between them."
 msgid "Then split %n pieces of candy equally between them."
 msgid_plural "Then split %n pieces of candy equally between them."
-msgstr[0] "Ardından eşit şekilde %n tane şekeri aralarında paylaştır."
-msgstr[1] "Ardından eşit şekilde %n tane şekerleri aralarında paylaştır."
+msgstr[0] "Sonrasında %n tane şekeri aralarında eşit olarak paylaştır."
+msgstr[1] "Sonrasında %n tane şekeri aralarında eşit olarak paylaştır."
 
 #: activities/share/Share.qml:340
 #, qt-format
 msgctxt "Share|"
 msgid "You can't put more than %1 pieces of candy in the same rectangle"
-msgstr "%1 şekerden fazlasını aynı dikdörtgene koyamazsın"
+msgstr "Aynı dikdörtgenin içine %1 tane şekerden fazlasını koyamazsın."
 
 #. Activity title
 #: activities/simplepaint/ActivityInfo.qml:15
@@ -23078,27 +22798,24 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Select a color and paint the rectangles as you like to create a drawing."
 msgstr ""
-"Bir renk seç ve bir çizim oluşturmak için istediğin gibi dikdörtgenleri boya."
+"Bir renk seç ve bir çizim oluşturmak için dikdörtgenleri istediğin gibi boya."
 
 #: activities/simplepaint/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Tab: switch between the color selector and the painting area"
-msgstr "Sekme: renk seçici ve boyama alanı arasında geçiş yap"
+msgstr "Sekme: Renk seçici ve boyama alanı arasında geçiş yap"
 
 #. Activity title
 #: activities/smallnumbers/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Numbers with Dice"
 msgctxt "ActivityInfo|"
 msgid "Numbers with dice"
-msgstr "Zar ve Sayılar"
+msgstr "Zardaki sayılar"
 
 #. Help title
 #: activities/smallnumbers/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Count the number of dots on the dice before it reaches the ground."
-msgstr "Zemine ulaşmadan önce zardaki noktaları say."
+msgstr "Yere düşmeden önce zarlardaki noktaları say."
 
 #. Help goal
 #: activities/smallnumbers/ActivityInfo.qml:20
@@ -23214,12 +22931,9 @@ msgstr "0'dan 9'a kadar zardaki sayıyı yaz."
 
 #. Activity title
 #: activities/smallnumbers2/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Numbers with Dominoes"
 msgctxt "ActivityInfo|"
 msgid "Numbers with dominoes"
-msgstr "Domino ile Sayılar"
+msgstr "Domino ile sayılar"
 
 #. Help title
 #: activities/smallnumbers2/ActivityInfo.qml:17
@@ -23231,7 +22945,7 @@ msgstr "Yere ulaşmadan önce domino üzerindeki sayıyı say."
 #: activities/smallnumbers2/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Count a number in a limited time."
-msgstr "Sınırlı bir süre içinde bir sayı say."
+msgstr "Sınırlı bir süre içinde sayı say."
 
 #. Help manual
 #: activities/smallnumbers2/ActivityInfo.qml:24
@@ -23242,47 +22956,47 @@ msgstr "Her düşen domino üzerinde gördüğün sayıyı yaz."
 #: activities/smallnumbers2/resource/1/Data.qml:18
 msgctxt "Data|"
 msgid "Type the number on the domino, 1 or 2."
-msgstr "Domino üzerindeki numarayı yaz. 1 veya 2."
+msgstr "Domino üzerindeki sayıyı yaz. 1 veya 2."
 
 #: activities/smallnumbers2/resource/1/Data.qml:26
 msgctxt "Data|"
 msgid "Type the number on the domino, from 1 to 3."
-msgstr "Domino üzerinde 1'den 3'e kadar olan sayıyı yaz."
+msgstr "1'den 3'e kadar domino taşı üzerindeki sayıyı yaz."
 
 #: activities/smallnumbers2/resource/2/Data.qml:18
 msgctxt "Data|"
 msgid "Type the number on the domino, from 1 to 4."
-msgstr "Domino üzerinde 1'den 4'e kadar olan sayıyı yaz."
+msgstr "1'den 4'e kadar domino taşı üzerindeki sayıyı yaz."
 
 #: activities/smallnumbers2/resource/3/Data.qml:18
 msgctxt "Data|"
 msgid "Type the number on the domino, from 1 to 5."
-msgstr "Domino üzerinde 1'den 5'e kadar olan sayıyı yaz."
+msgstr "1'den 5'e kadar domino taşı üzerindeki sayıyı yaz."
 
 #: activities/smallnumbers2/resource/4/Data.qml:18
 msgctxt "Data|"
 msgid "Type the number on the domino, from 1 to 6."
-msgstr "Domino üzerinde 1'den 6'ya kadar olan sayıyı yaz."
+msgstr "1'den 6'ya kadar domino taşı üzerindeki sayıyı yaz."
 
 #: activities/smallnumbers2/resource/5/Data.qml:18
 msgctxt "Data|"
 msgid "Type the number on the domino, from 1 to 7."
-msgstr "Domino üzerinde 1'den 7'ye kadar olan sayıyı yaz."
+msgstr "1'den 7'ye kadar domino taşı üzerindeki sayıyı yaz."
 
 #: activities/smallnumbers2/resource/6/Data.qml:18
 msgctxt "Data|"
 msgid "Type the number on the domino, from 1 to 8."
-msgstr "Domino üzerinde 1'den 8'e kadar olan sayıyı yaz."
+msgstr "1'den 8'e kadar domino taşı üzerindeki sayıyı yaz."
 
 #: activities/smallnumbers2/resource/7/Data.qml:18
 msgctxt "Data|"
 msgid "Type the number on the domino, from 1 to 9."
-msgstr "Domino üzerinde 1'den 9'a kadar olan sayıyı yaz."
+msgstr "1'den 9'a kadar domino taşı üzerindeki sayıyı yaz."
 
 #: activities/smallnumbers2/resource/8/Data.qml:17
 msgctxt "Data|"
 msgid "Type the number on the domino, from 0 to 9."
-msgstr "Domino üzerinde 0'dan 9'a kadar olan sayıyı yaz."
+msgstr "0'dan 9'a kadar domino taşı üzerindeki sayıyı yaz."
 
 #: activities/solar_system/ActivityConfig.qml:21
 msgctxt "ActivityConfig|"
@@ -23296,12 +23010,9 @@ msgstr "Değerlendirme Kipi"
 
 #. Activity title
 #: activities/solar_system/ActivityInfo.qml:18
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Solar System"
 msgctxt "ActivityInfo|"
 msgid "Solar system"
-msgstr "Güneş Sistemi"
+msgstr "Güneş sistemi"
 
 #. Help title
 #: activities/solar_system/ActivityInfo.qml:20
@@ -23329,24 +23040,24 @@ msgid ""
 "Each question contains 4 options. One of those is 100% correct. Try to "
 "answer the questions until you get 100% in the closeness meter."
 msgstr ""
-"Bir gezegene veya Güneş'e tıklay ve ilgili soruları yanıtla. Her soru 4 "
-"seçenek içermektedir. Bunlardan biri %100 doğrudur. Yakınlıkölçer %​100 olana "
+"Bir gezegene veya Güneş'e tıkla ve ilgili soruları yanıtla. Her soru 4 "
+"seçenek içermektedir. Bunlardan biri %​100 doğru. Yakınlıkölçerde %​100 olana "
 "kadar soruları yanıtlamaya çalış."
 
 #: activities/solar_system/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
 msgid "Space or Enter: select"
-msgstr "Boşluk veya Enter: seç"
+msgstr "Boşluk veya Giriş: Seç"
 
 #: activities/solar_system/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
 msgid "Escape: return to previous screen"
-msgstr "Escape: önceki ekrana dön"
+msgstr "Escape: Önceki ekrana dön"
 
 #: activities/solar_system/ActivityInfo.qml:32
 msgctxt "ActivityInfo|"
 msgid "Tab: view the hint (only when the hint icon is visible)"
-msgstr "Sekme: ipucunu görüntüle (yalnızca ipucu simgesi göründüğünde)"
+msgstr "Sekme: İpucunu görüntüle (yalnızca ipucu simgesi göründüğünde)"
 
 #: activities/solar_system/Dataset.js:14
 msgctxt "Dataset|"
@@ -23356,7 +23067,9 @@ msgstr "Güneş"
 #: activities/solar_system/Dataset.js:18
 msgctxt "Dataset|"
 msgid "How large is the Sun compared to the planets in our Solar System?"
-msgstr "Güneş Sistemimizdeki gezegenlere kıyasla Güneş ne ​​kadar büyük?"
+msgstr ""
+"Güneş Sistemimizdeki gezegenlerle karşılaştırıldığında Güneş ne ​​kadar "
+"büyüktür?"
 
 #: activities/solar_system/Dataset.js:19 activities/solar_system/Dataset.js:115
 #: activities/solar_system/Dataset.js:190
@@ -23415,7 +23128,7 @@ msgstr "3638 °C"
 #: activities/solar_system/Dataset.js:30
 msgctxt "Dataset|"
 msgid "How old is the Sun?"
-msgstr "Güneş kaç yaşında?"
+msgstr "Güneş kaç yaşındadır?"
 
 #: activities/solar_system/Dataset.js:31
 msgctxt "Dataset|"
@@ -23470,22 +23183,22 @@ msgstr "Güneş şu kadar büyüktür:"
 #: activities/solar_system/Dataset.js:43
 msgctxt "Dataset|"
 msgid "1 million Earths"
-msgstr "1 milyon Dünya"
+msgstr "1 milyon tane Dünya"
 
 #: activities/solar_system/Dataset.js:43
 msgctxt "Dataset|"
 msgid "2.6 million Earths"
-msgstr "2,6 milyon Dünya"
+msgstr "2,6 milyon tane Dünya"
 
 #: activities/solar_system/Dataset.js:43
 msgctxt "Dataset|"
 msgid "1.3 million Earths"
-msgstr "1,3 milyon Dünya"
+msgstr "1,3 milyon tane Dünya"
 
 #: activities/solar_system/Dataset.js:43
 msgctxt "Dataset|"
 msgid "5 million Earths"
-msgstr "5 milyon Dünya"
+msgstr "5 milyon tane Dünya"
 
 #: activities/solar_system/Dataset.js:51
 msgctxt "Dataset|"
@@ -23496,20 +23209,17 @@ msgstr "Merkür"
 #: activities/solar_system/Dataset.js:200
 msgctxt "Dataset|"
 msgid "The maximum temperature on Earth is 58 °C."
-msgstr "Dünyadaki maksimum sıcaklık 58 ° C'dir."
+msgstr "Dünya'daki en yüksek sıcaklık 58 °C'dir."
 
 #: activities/solar_system/Dataset.js:54 activities/solar_system/Dataset.js:150
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "The length of a year on Venus is 225 days."
 msgctxt "Dataset|"
 msgid "The length of a year on Venus is 225 Earth days."
-msgstr "Venüs'te bir yılın uzunluğu 225 gündür."
+msgstr "Venüs'te bir yılın uzunluğu 225 Dünya günüdür."
 
 #: activities/solar_system/Dataset.js:57
 msgctxt "Dataset|"
 msgid "At which position is Mercury in the Solar System?"
-msgstr "Güneş Sisteminde Merkür hangi konumda?"
+msgstr "Merkür, Güneş Sisteminde hangi konumdadır?"
 
 #: activities/solar_system/Dataset.js:58 activities/solar_system/Dataset.js:103
 #: activities/solar_system/Dataset.js:346
@@ -23533,7 +23243,7 @@ msgstr "Altıncı"
 #: activities/solar_system/Dataset.js:301
 msgctxt "Dataset|"
 msgid "First"
-msgstr "İlk"
+msgstr "Birinci"
 
 #: activities/solar_system/Dataset.js:58 activities/solar_system/Dataset.js:103
 #: activities/solar_system/Dataset.js:205
@@ -23549,8 +23259,8 @@ msgstr "Dördüncü"
 msgctxt "Dataset|"
 msgid "How small is Mercury compared to other planets in our Solar System?"
 msgstr ""
-"Merkür Güneş Sistemimizdeki diğer gezegenlerle karşılaştırıldığında ne kadar "
-"küçük?"
+"Merkür, Güneş Sistemindeki diğer gezegenlerle karşılaştırıldığında ne kadar "
+"küçüktür?"
 
 #: activities/solar_system/Dataset.js:64 activities/solar_system/Dataset.js:241
 msgctxt "Dataset|"
@@ -23580,7 +23290,7 @@ msgstr "Merkür'ün kaç uydusu vardır?"
 #: activities/solar_system/Dataset.js:75
 msgctxt "Dataset|"
 msgid "The maximum temperature on Mercury is:"
-msgstr "Merkür'deki maksimum sıcaklık:"
+msgstr "Merkür'deki en yüksek sıcaklık:"
 
 #: activities/solar_system/Dataset.js:76 activities/solar_system/Dataset.js:268
 msgctxt "Dataset|"
@@ -23616,12 +23326,9 @@ msgid "365 Earth days"
 msgstr "365 Dünya günü"
 
 #: activities/solar_system/Dataset.js:82
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "365 Earth days"
 msgctxt "Dataset|"
 msgid "433 Earth days"
-msgstr "365 Dünya günü"
+msgstr "433 Dünya günü"
 
 #: activities/solar_system/Dataset.js:82 activities/solar_system/Dataset.js:127
 msgctxt "Dataset|"
@@ -23662,7 +23369,7 @@ msgstr "Dünyada bir yıl 365 gündür."
 #: activities/solar_system/Dataset.js:102
 msgctxt "Dataset|"
 msgid "At which position is Venus in the Solar System?"
-msgstr "Venüs'ün, Güneş Sistemindeki konumu nedir?"
+msgstr "Venüs, Güneş Sistemindeki hangi konumdadır?"
 
 #: activities/solar_system/Dataset.js:103
 msgctxt "Dataset|"
@@ -23677,27 +23384,29 @@ msgstr "Venüs şu kadar ağırdır:"
 #: activities/solar_system/Dataset.js:109
 msgctxt "Dataset|"
 msgid "0.7 Earths"
-msgstr "0.7 Dünya"
+msgstr "0,7 Dünya"
 
 #: activities/solar_system/Dataset.js:109
 msgctxt "Dataset|"
 msgid "0.8 Earths"
-msgstr "0.8 Dünya"
+msgstr "0,8 Dünya"
 
 #: activities/solar_system/Dataset.js:109
 msgctxt "Dataset|"
 msgid "1.3 Earths"
-msgstr "1.3 Dünya"
+msgstr "1,3 Dünya"
 
 #: activities/solar_system/Dataset.js:109
 msgctxt "Dataset|"
 msgid "2.5 Earths"
-msgstr "2.5 Dünya"
+msgstr "2,5 Dünya"
 
 #: activities/solar_system/Dataset.js:114
 msgctxt "Dataset|"
 msgid "How large is Venus compared to other planets in our Solar System?"
-msgstr "Güneş Sistemimizdeki Venüs, diğer gezegenlere göre ne kadar büyük?"
+msgstr ""
+"Venüs, Güneş Sistemindeki diğer gezegenlerle karşılaştırıldığında ne kadar "
+"büyüktür?"
 
 #: activities/solar_system/Dataset.js:115
 #: activities/solar_system/Dataset.js:190
@@ -23720,28 +23429,19 @@ msgid "How long is a year on Venus?"
 msgstr "Venüs'te bir yıl ne kadar sürer?"
 
 #: activities/solar_system/Dataset.js:121
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "50 Earth days"
 msgctxt "Dataset|"
 msgid "225 Earth days"
-msgstr "50 Dünya günü"
+msgstr "225 Dünya günü"
 
 #: activities/solar_system/Dataset.js:121
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "117 Earth days"
 msgctxt "Dataset|"
 msgid "116 Earth days"
-msgstr "117 Dünya günü"
+msgstr "116 Dünya günü"
 
 #: activities/solar_system/Dataset.js:121
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "107 Earth days"
 msgctxt "Dataset|"
 msgid "100 Earth days"
-msgstr "107 Dünya günü"
+msgstr "100 Dünya günü"
 
 #: activities/solar_system/Dataset.js:126
 msgctxt "Dataset|"
@@ -23749,17 +23449,14 @@ msgid "How long is one rotation on Venus?"
 msgstr "Venüs'te bir dönüş ne kadar sürer?"
 
 #: activities/solar_system/Dataset.js:127
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "365 Earth days"
 msgctxt "Dataset|"
 msgid "243 Earth days"
-msgstr "365 Dünya günü"
+msgstr "243 Dünya günü"
 
 #: activities/solar_system/Dataset.js:132
 msgctxt "Dataset|"
 msgid "The maximum temperature on Venus is:"
-msgstr "Venüs'teki maksimum sıcaklık :"
+msgstr "Venüs'teki en yüksek sıcaklık:"
 
 #: activities/solar_system/Dataset.js:133
 #: activities/solar_system/Dataset.js:184
@@ -23803,12 +23500,12 @@ msgstr "Dünya"
 #: activities/solar_system/Dataset.js:251
 msgctxt "Dataset|"
 msgid "The maximum temperature on Mars is 20 °C."
-msgstr "Mars'taki maksimum sıcaklık 20 ° C'dir."
+msgstr "Mars'taki en yüksek sıcaklık 20 °C'dir."
 
 #: activities/solar_system/Dataset.js:153
 msgctxt "Dataset|"
 msgid "At which position is Earth in the Solar System?"
-msgstr "Güneş Sisteminde Dünya hangi pozisyondadır?"
+msgstr "Dünya, Güneş Sisteminde hangi konumdadır?"
 
 #: activities/solar_system/Dataset.js:154
 msgctxt "Dataset|"
@@ -23828,7 +23525,7 @@ msgstr "Beşinci"
 #: activities/solar_system/Dataset.js:159
 msgctxt "Dataset|"
 msgid "How long does it take for Earth to make one revolution around the Sun?"
-msgstr "Dünya'nın Güneş'in etrafında bir dönüş yapması ne kadar sürer?"
+msgstr "Dünya'nın Güneş'in çevresinde bir dönüş yapması ne kadar sürer?"
 
 #: activities/solar_system/Dataset.js:160
 msgctxt "Dataset|"
@@ -23853,7 +23550,7 @@ msgstr "365 gün"
 #: activities/solar_system/Dataset.js:165
 msgctxt "Dataset|"
 msgid "How many moons has Earth?"
-msgstr "Dünya'nın kaç uydusu var?"
+msgstr "Dünya'nın kaç uydusu vardır?"
 
 #: activities/solar_system/Dataset.js:171
 msgctxt "Dataset|"
@@ -23899,7 +23596,7 @@ msgstr "Dünya'da kaç mevsim yaşanır?"
 #: activities/solar_system/Dataset.js:183
 msgctxt "Dataset|"
 msgid "The maximum temperature on Earth is:"
-msgstr "Dünya'daki maksimum sıcaklık:"
+msgstr "Dünya'daki en yüksek sıcaklık:"
 
 #: activities/solar_system/Dataset.js:184
 msgctxt "Dataset|"
@@ -23915,7 +23612,9 @@ msgstr "30 °C"
 #: activities/solar_system/Dataset.js:189
 msgctxt "Dataset|"
 msgid "How large is Earth compared to other planets in our Solar System?"
-msgstr "Güneş Sistemindeki diğer gezegenlere kıyasla Dünya ne kadar büyük?"
+msgstr ""
+"Dünya, Güneş Sistemindeki diğer gezegenlerle karşılaştırıldığında ne kadar "
+"büyüktür?"
 
 #: activities/solar_system/Dataset.js:198
 msgctxt "Dataset|"
@@ -23925,12 +23624,12 @@ msgstr "Mars"
 #: activities/solar_system/Dataset.js:204
 msgctxt "Dataset|"
 msgid "At which position is Mars in the Solar System?"
-msgstr "Mars Güneş Sisteminde hangi pozisyonda yer alır?"
+msgstr "Mars, Güneş Sisteminde hangi konumdadır?"
 
 #: activities/solar_system/Dataset.js:210
 msgctxt "Dataset|"
 msgid "The maximum temperature on Mars is:"
-msgstr "Mars'taki maksimum sıcaklık:"
+msgstr "Mars'taki en yüksek sıcaklık:"
 
 #: activities/solar_system/Dataset.js:211
 msgctxt "Dataset|"
@@ -23940,27 +23639,27 @@ msgstr "60 °C"
 #: activities/solar_system/Dataset.js:216
 msgctxt "Dataset|"
 msgid "How big is the size of Mars compared to Earth?"
-msgstr "Mars, Dünya'ya kıyasla ne kadar büyük?"
+msgstr "Mars'ın boyutu Dünya'ya ile karşılaştırıldığında ne kadar büyüktür?"
 
 #: activities/solar_system/Dataset.js:217
 msgctxt "Dataset|"
 msgid "The same"
-msgstr "Aynı"
+msgstr "Aynıdır"
 
 #: activities/solar_system/Dataset.js:217
 msgctxt "Dataset|"
 msgid "Half"
-msgstr "Yarısı"
+msgstr "Yarısıdır"
 
 #: activities/solar_system/Dataset.js:217
 msgctxt "Dataset|"
 msgid "Two times"
-msgstr "İki katı"
+msgstr "İki katıdır"
 
 #: activities/solar_system/Dataset.js:217
 msgctxt "Dataset|"
 msgid "Three times"
-msgstr "Üç katı"
+msgstr "Üç katıdır"
 
 #: activities/solar_system/Dataset.js:222
 msgctxt "Dataset|"
@@ -23975,43 +23674,34 @@ msgstr "Mars'ta bir dönüş ne kadar sürer?"
 #: activities/solar_system/Dataset.js:229
 msgctxt "Dataset|"
 msgid "24.5 hours"
-msgstr "24.5 saat"
+msgstr "24,5 saat"
 
 #: activities/solar_system/Dataset.js:234
 msgctxt "Dataset|"
 msgid "How long does it take for Mars to make one revolution around the Sun?"
-msgstr "Mars'ın Güneş etrafında bir tur dönmesi ne kadar sürer?"
+msgstr "Mars'ın Güneş'in çevresinde bir tur dönmesi ne kadar sürer?"
 
 #: activities/solar_system/Dataset.js:235
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "88 Earth days"
 msgctxt "Dataset|"
 msgid "687 Earth days"
-msgstr "88 Dünya günü"
+msgstr "687 Dünya günü"
 
 #: activities/solar_system/Dataset.js:235
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "50 Earth days"
 msgctxt "Dataset|"
 msgid "30 Earth days"
-msgstr "50 Dünya günü"
+msgstr "30 Dünya günü"
 
 #: activities/solar_system/Dataset.js:235
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "107 Earth days"
 msgctxt "Dataset|"
 msgid "7 Earth days"
-msgstr "107 Dünya günü"
+msgstr "7 Dünya günü"
 
 #: activities/solar_system/Dataset.js:240
 msgctxt "Dataset|"
 msgid "How small is Mars compared to other planets in our Solar System?"
 msgstr ""
-"Mars, Güneş Sistemimizdeki diğer gezegenlerle karşılaştırıldığında ne kadar "
-"küçük?"
+"Mars, Güneş Sistemindeki diğer gezegenlerle karşılaştırıldığında ne kadar "
+"küçüktür?"
 
 #: activities/solar_system/Dataset.js:249
 msgctxt "Dataset|"
@@ -24022,17 +23712,19 @@ msgstr "Jüpiter"
 #: activities/solar_system/Dataset.js:342
 msgctxt "Dataset|"
 msgid "The length of a year on Saturn is 29.5 Earth years."
-msgstr "Satürn'deki bir yılın uzunluğu 29,5 Dünya yılıdır."
+msgstr "Satürn'de bir yılın uzunluğu 29,5 Dünya yılıdır."
 
 #: activities/solar_system/Dataset.js:255
 msgctxt "Dataset|"
 msgid "At which position is Jupiter in the Solar System?"
-msgstr "Jüpiter Güneş Sisteminde hangi pozisyonda yer alır?"
+msgstr "Jüpiter, Güneş Sisteminde hangi konumdadır?"
 
 #: activities/solar_system/Dataset.js:261
 msgctxt "Dataset|"
 msgid "How large is Jupiter compared to other planets in the Solar System?"
-msgstr "Güneş Sistemindeki diğer gezegenlere kıyasla Jüpiter ne kadar büyük?"
+msgstr ""
+"Jüpiter, Güneş Sistemindeki diğer gezegenlerle karşılaştırıldığında ne kadar "
+"büyüktür?"
 
 #: activities/solar_system/Dataset.js:262
 #: activities/solar_system/Dataset.js:307
@@ -24045,7 +23737,7 @@ msgstr "İkinci en büyük"
 #: activities/solar_system/Dataset.js:267
 msgctxt "Dataset|"
 msgid "The minimum temperature on Jupiter is:"
-msgstr "Jüpiter'deki minimum sıcaklık:"
+msgstr "Jüpiter'deki en düşük sıcaklık:"
 
 #: activities/solar_system/Dataset.js:268
 msgctxt "Dataset|"
@@ -24077,7 +23769,7 @@ msgstr "10 saat"
 msgctxt "Dataset|"
 msgid ""
 "How long does it take for Jupiter to make one revolution around the Sun?"
-msgstr "Jüpiter'in Güneş etrafında bir tur dönmesi ne kadar sürer?"
+msgstr "Jüpiter'in Güneş'in çevresinde bir tur dönmesi ne kadar sürer?"
 
 #: activities/solar_system/Dataset.js:286
 msgctxt "Dataset|"
@@ -24110,7 +23802,7 @@ msgstr "Satürn"
 #: activities/solar_system/Dataset.js:296
 msgctxt "Dataset|"
 msgid "The minimum temperature on Jupiter is -145 °C."
-msgstr "Jüpiter'de minimum sıcaklık -145 ° C'dir."
+msgstr "Jüpiter'de en düşük sıcaklık -145 °C'dir."
 
 #: activities/solar_system/Dataset.js:297
 msgctxt "Dataset|"
@@ -24120,12 +23812,14 @@ msgstr "Jüpiter'de bir yılın uzunluğu 12 Dünya yılıdır."
 #: activities/solar_system/Dataset.js:300
 msgctxt "Dataset|"
 msgid "At which position is Saturn in the Solar System?"
-msgstr "Güneş Sisteminde Satürn hangi konumda yer alır?"
+msgstr "Satürn, Güneş Sisteminde hangi konumdadır?"
 
 #: activities/solar_system/Dataset.js:306
 msgctxt "Dataset|"
 msgid "How large is Saturn compared to other planets in the Solar System?"
-msgstr "Satürn, Güneş Sistemindeki diğer gezegenlere göre ne kadar büyük?"
+msgstr ""
+"Satürn, Güneş Sistemindeki diğer gezegenlerle karşılaştırıldığında ne kadar "
+"büyüktür?"
 
 #: activities/solar_system/Dataset.js:312
 msgctxt "Dataset|"
@@ -24135,17 +23829,17 @@ msgstr "Satürn'ün kaç uydusu vardır?"
 #: activities/solar_system/Dataset.js:318
 msgctxt "Dataset|"
 msgid "How long is one rotation on Saturn?"
-msgstr "Satürn'de bir dönüşü tamamlaması ne kadar sürer?"
+msgstr "Satürn'de bir dönüş ne kadar sürer?"
 
 #: activities/solar_system/Dataset.js:319
 msgctxt "Dataset|"
 msgid "10.5 hours"
-msgstr "10.5 saat"
+msgstr "10,5 saat"
 
 #: activities/solar_system/Dataset.js:324
 msgctxt "Dataset|"
 msgid "The minimum temperature on Saturn is:"
-msgstr "Satürn'deki minimum sıcaklık:"
+msgstr "Satürn'deki en düşük sıcaklık:"
 
 #: activities/solar_system/Dataset.js:325
 #: activities/solar_system/Dataset.js:376
@@ -24168,12 +23862,12 @@ msgstr "-100 °C"
 #: activities/solar_system/Dataset.js:330
 msgctxt "Dataset|"
 msgid "How long does it take for Saturn to make one revolution around the Sun?"
-msgstr "Satürn'ün Güneş etrafında bir tur dönmesi ne kadar sürer?"
+msgstr "Satürn'ün Güneş'in çevresinde bir tur dönmesi ne kadar sürer?"
 
 #: activities/solar_system/Dataset.js:331
 msgctxt "Dataset|"
 msgid "29.5 Earth years"
-msgstr "29.5 Dünya yılı"
+msgstr "29,5 Dünya yılı"
 
 #: activities/solar_system/Dataset.js:331
 msgctxt "Dataset|"
@@ -24193,12 +23887,12 @@ msgstr "Uranüs"
 #: activities/solar_system/Dataset.js:341
 msgctxt "Dataset|"
 msgid "The temperature on Saturn is -178 °C."
-msgstr "Satürn'deki sıcaklık -178 ° C'dir."
+msgstr "Satürn'deki sıcaklık -178 °C'dir."
 
 #: activities/solar_system/Dataset.js:345
 msgctxt "Dataset|"
 msgid "At which position is Uranus in the Solar System?"
-msgstr "Uranüs Güneş Sisteminde hangi pozisyondadır?"
+msgstr "Uranüs, Güneş Sisteminde hangi konumdadır?"
 
 #: activities/solar_system/Dataset.js:346
 #: activities/solar_system/Dataset.js:391
@@ -24209,31 +23903,22 @@ msgstr "Sekizinci"
 #: activities/solar_system/Dataset.js:351
 msgctxt "Dataset|"
 msgid "How many years does it take for Uranus to go once around the Sun?"
-msgstr "Uranüs'ün Güneş'i bir kez gezmesi kaç yıl sürer?"
+msgstr "Uranüs'ün Güneş'in çevresinde bir tur atması kaç yıl sürer?"
 
 #: activities/solar_system/Dataset.js:352
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "12 Earth years"
 msgctxt "Dataset|"
 msgid "24 Earth years"
-msgstr "12 Dünya yılı"
+msgstr "24 Dünya yılı"
 
 #: activities/solar_system/Dataset.js:352
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "5 Earth years"
 msgctxt "Dataset|"
 msgid "68 Earth years"
-msgstr "5 Dünya yılı"
+msgstr "68 Dünya yılı"
 
 #: activities/solar_system/Dataset.js:352
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "5 Earth years"
 msgctxt "Dataset|"
 msgid "84 Earth years"
-msgstr "5 Dünya yılı"
+msgstr "84 Dünya yılı"
 
 #: activities/solar_system/Dataset.js:357
 msgctxt "Dataset|"
@@ -24262,12 +23947,12 @@ msgctxt "Dataset|"
 msgid "How large is Uranus compared to other planets in the Solar System?"
 msgstr ""
 "Uranüs, Güneş Sistemindeki diğer gezegenlerle karşılaştırıldığında ne kadar "
-"büyük?"
+"büyüktür?"
 
 #: activities/solar_system/Dataset.js:375
 msgctxt "Dataset|"
 msgid "The maximum temperature on Uranus is:"
-msgstr "Uranüs'ün maksimum sıcaklığı:"
+msgstr "Uranüs'teki en yüksek sıcaklık:"
 
 #: activities/solar_system/Dataset.js:376
 msgctxt "Dataset|"
@@ -24282,50 +23967,38 @@ msgstr "Neptün"
 #: activities/solar_system/Dataset.js:386
 msgctxt "Dataset|"
 msgid "The maximum temperature on Saturn is -178 °C."
-msgstr "Satürn'deki maksimum sıcaklık -178 ° C'dir."
+msgstr "Satürn'deki en yüksek sıcaklık -178 °C'dir."
 
 #: activities/solar_system/Dataset.js:387
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "The length of a year on Uranus is 84 years."
 msgctxt "Dataset|"
 msgid "The length of a year on Uranus is 84 Earth years."
-msgstr "Uranüs'te bir yılın uzunluğu 84'tür."
+msgstr "Uranüs'te bir yılın uzunluğu 84 Dünya yılıdır."
 
 #: activities/solar_system/Dataset.js:390
 msgctxt "Dataset|"
 msgid "At which position is Neptune in the Solar System?"
-msgstr "Güneş Sisteminde Neptün hangi konumdadır?"
+msgstr "Neptün, Güneş Sisteminde hangi konumdadır?"
 
 #: activities/solar_system/Dataset.js:396
 msgctxt "Dataset|"
 msgid ""
 "How long does it take for Neptune to make one revolution around the Sun?"
-msgstr "Neptün'ün Güneş etrafında bir tur dönmesi ne kadar sürer?"
+msgstr "Neptün'ün Güneş'in çevresinde bir tur dönmesi ne kadar sürer?"
 
 #: activities/solar_system/Dataset.js:397
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "5 Earth years"
 msgctxt "Dataset|"
 msgid "165 Earth years"
-msgstr "5 Dünya yılı"
+msgstr "165 Dünya yılı"
 
 #: activities/solar_system/Dataset.js:397
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "30 Earth years"
 msgctxt "Dataset|"
 msgid "3 Earth years"
-msgstr "30 Dünya yılı"
+msgstr "3 Dünya yılı"
 
 #: activities/solar_system/Dataset.js:397
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "10 Earth years"
 msgctxt "Dataset|"
 msgid "100 Earth years"
-msgstr "10 Dünya yılı"
+msgstr "100 Dünya yılı"
 
 #: activities/solar_system/Dataset.js:402
 msgctxt "Dataset|"
@@ -24357,25 +24030,25 @@ msgctxt "Dataset|"
 msgid "How large is Neptune compared to other planets in the Solar System?"
 msgstr ""
 "Neptün, Güneş Sistemindeki diğer gezegenlerle karşılaştırıldığında ne kadar "
-"büyük?"
+"büyüktür?"
 
 #: activities/solar_system/QuizScreen.qml:199
 #, qt-format
 msgctxt "QuizScreen|"
 msgid "Accuracy: %1%"
-msgstr "Doğruluk: %1%"
+msgstr "Doğruluk: %​%1"
 
 #: activities/solar_system/QuizScreen.qml:239
 #, qt-format
 msgctxt "QuizScreen|"
 msgid "%1%"
-msgstr "%1%"
+msgstr "%​%1"
 
 #: activities/solar_system/QuizScreen.qml:274
 #, qt-format
 msgctxt "QuizScreen|"
 msgid "Your final score is: <font color=\"#3bb0de\">%1%</font>.<br><br>%2"
-msgstr "Son puanın: <font color=\"#3bb0de\">%1%</font>.<br><br>%2"
+msgstr "Son puanın: <font color=\"#3bb0de\">%​%1</font>.<br><br>%2"
 
 #: activities/solar_system/QuizScreen.qml:274
 msgctxt "QuizScreen|"
@@ -24409,7 +24082,7 @@ msgid ""
 msgstr ""
 "Kip: <font color=\"#3bb0de\">%1</font><br><br>Etkinlik yapılandırma "
 "penceresinden değiştirebileceğin iki kip vardır:<br><b>1. Normal kip</b> - "
-"Bu kipte Güneş Sistemi hakkında oynayabilir ve onu öğrenebilirsin.<br><b>2. "
+"Bu kipte Güneş Sistemi ile oynayabilir ve onu öğrenebilirsin.<br><b>2. "
 "Değerlendirme kipi</b> - Bu kipte Güneş Sistemi hakkındaki bilgini "
 "sınayabilirsin."
 
@@ -24441,9 +24114,9 @@ msgid ""
 "closeness by following the closeness meter. If the hint button is visible, "
 "you can click on it to get a hint to find the answer."
 msgstr ""
-"Bir gezegene tıklandıktan sonra, ekranın sağ alt köşesindeki Yakınlıkölçer, "
+"Bir gezegene tıkladıktan sonra, ekranın sağ alt köşesindeki Yakınlıkölçer, "
 "seçtiğin yanıtın doğruluk derecesini gösterir. En az doğru yanıt, %​1 ile "
-"temsil edilmektedir. Yakınlıkölçeri takip ederek %​100 yakınlığa ulaşana "
+"temsil edilmektedir. Yakınlıkölçeri takip ederek %​​100 yakınlığa ulaşana "
 "kadar yeniden dene. İpucu düğmesi görünüyorsa yanıtı bulmak için bir ipucu "
 "almak üzere üzerine tıklayabilirsin."
 
@@ -24474,7 +24147,7 @@ msgid ""
 "You should score above 90% to pass the assessment and become a Solar System "
 "expert!"
 msgstr ""
-"Değerlendirmeyi geçmek ve Güneş Sistemi uzmanı olmak için% 90'ın üzerinde "
+"Değerlendirmeyi geçmek ve Güneş Sistemi uzmanı olmak için %​90'ın üzerinde "
 "puan almalısın!"
 
 #: activities/solar_system/SolarSystem.qml:349
@@ -24494,7 +24167,7 @@ msgid ""
 "2. The duration of a year on a planet <b>increases as we go away from the "
 "Sun</b>.<br><font color=\"#3bb0de\">%1</font>"
 msgstr ""
-"2. Bir gezegende bir yılın süresi <b>Güneş'ten uzaklaştıkça artar</b>."
+"2. Bir gezegendeki bir yılın süresi <b>Güneş'ten uzaklaştıkça artar</b>."
 "<br><font color=\"#3bb0de\">%1</font>"
 
 #. find an equivalent rhyme in your language where the first letter of each word corresponds to the first letter of the planet in proper sequence
@@ -24529,24 +24202,21 @@ msgstr "Güneş sistemini görüntüle"
 
 #. Activity title
 #: activities/submarine/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Pilot a Submarine"
 msgctxt "ActivityInfo|"
 msgid "Pilot a submarine"
-msgstr "Denizaltı Pilotu"
+msgstr "Bir denizaltıya kaptanlık et"
 
 #. Help title
 #: activities/submarine/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Drive the submarine to the end point."
-msgstr "Denizaltını bitiş noktasına sür."
+msgstr "Denizaltıyı bitiş noktasına sür."
 
 #. Help goal
 #: activities/submarine/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Learn how to control a submarine."
-msgstr "Bir denizaltını nasıl kontrol edeceğini öğren."
+msgstr "Bir denizaltının nasıl sürüleceğini öğren."
 
 #. Help prerequisite
 #: activities/submarine/ActivityInfo.qml:22
@@ -24562,7 +24232,7 @@ msgid ""
 "diving planes) to reach the end point."
 msgstr ""
 "Son noktaya ulaşmak için denizaltının çeşitli kısımlarını (motor, balast "
-"tankları ve dalış uçakları) kontrol et."
+"tankları ve dalış uçakları) denetle."
 
 #: activities/submarine/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
@@ -24577,7 +24247,7 @@ msgstr "D veya Sağ ok: hızı arttır"
 #: activities/submarine/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "A or Left arrow: decrease the velocity"
-msgstr "A veya Sol ok: hızı azalt"
+msgstr "A veya Sol ok: Hızı azalt"
 
 #: activities/submarine/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
@@ -24587,37 +24257,37 @@ msgstr "<b>Balast tankları</b>"
 #: activities/submarine/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
 msgid "W or Up arrow: switch filling of the central ballast tank"
-msgstr "W veya Yukarı ok: merkezi balast tankını doldurma anahtarı"
+msgstr "W veya Yukarı Ok: Merkezi balast tankını doldurmasını aç/kapat"
 
 #: activities/submarine/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
 msgid "S or Down arrow: switch flushing of the central ballast tank"
-msgstr "S veya Aşağı ok: merkezi balast tankının yıkamasını değiştir"
+msgstr "S veya Aşağı Ok: Merkezi balast tankının yıkamasını aç/kapat"
 
 #: activities/submarine/ActivityInfo.qml:32
 msgctxt "ActivityInfo|"
 msgid "R: switch filling of the left ballast tank"
-msgstr "R: sol balast tankının anahtar dolumu"
+msgstr "R: Sol balast tankının dolumunu aç/kapat"
 
 #: activities/submarine/ActivityInfo.qml:33
 msgctxt "ActivityInfo|"
 msgid "F: switch flushing of the left ballast tank"
-msgstr "F: sol balast tankının yıkama anahtarı"
+msgstr "F: Sol balast tankının yıkamasını aç/kapat"
 
 #: activities/submarine/ActivityInfo.qml:34
 msgctxt "ActivityInfo|"
 msgid "T: switch filling of the right ballast tank"
-msgstr "T: sağ balast tankının anahtar dolumu"
+msgstr "T: Sağ balast tankının dolumunu aç/kapat"
 
 #: activities/submarine/ActivityInfo.qml:35
 msgctxt "ActivityInfo|"
 msgid "G: switch flushing of the right ballast tank"
-msgstr "G: sağ balast tankının yıkamasını değiştir"
+msgstr "G: Sağ balast tankının yıkamasını aç/kapat"
 
 #: activities/submarine/ActivityInfo.qml:36
 msgctxt "ActivityInfo|"
 msgid "<b>Diving planes</b>"
-msgstr "<b>Dalış uçakları</b>"
+msgstr "<b>Dalış kanatları</b>"
 
 #: activities/submarine/ActivityInfo.qml:37
 msgctxt "ActivityInfo|"
@@ -24627,7 +24297,7 @@ msgstr "+: dalış düzlemlerinin açısını arttır"
 #: activities/submarine/ActivityInfo.qml:38
 msgctxt "ActivityInfo|"
 msgid "-: decrease diving planes angle"
-msgstr "-: dalış uçaklarının açısını azalt"
+msgstr "-: Dalış uçaklarının açısını azalt"
 
 #: activities/submarine/Controls.qml:166
 msgctxt "Controls|"
@@ -24647,7 +24317,7 @@ msgstr "Sağ Balast Tankı"
 #: activities/submarine/submarine.js:21
 msgctxt "submarine|"
 msgid "Move the submarine to the other side of the screen."
-msgstr "Denizaltını ekranın diğer tarafına doğru hareket ettir."
+msgstr "Denizaltıyı ekranın diğer tarafına doğru hareket ettir."
 
 #: activities/submarine/submarine.js:22
 msgctxt "submarine|"
@@ -24686,8 +24356,8 @@ msgid ""
 "If the ballast tanks are empty, the submarine will float. If the ballast "
 "tanks are full of water, the submarine will dive underwater."
 msgstr ""
-"Balast tankları boşsa, deniz altı yüzer. Balast tankları su dolu ise, "
-"denizaltı su altında dalabilir."
+"Balast tankları boşsa deniz altı yüzer. Balast tankları doluysa denizaltı "
+"suya dalar."
 
 #: activities/submarine/submarine.js:30
 msgctxt "submarine|"
@@ -24724,7 +24394,7 @@ msgid ""
 "The diving planes in a submarine are used to control the depth of the "
 "submarine accurately once it is underwater."
 msgstr ""
-"Bir denizaltındaki dalış uçakları, denizaltının su altındayken derinliğini "
+"Bir denizaltındaki dalış kanatları, denizaltının su altındayken derinliğini "
 "doğru bir şekilde kontrol etmek için kullanılır."
 
 #: activities/submarine/submarine.js:36
@@ -24733,8 +24403,8 @@ msgid ""
 "Once the submarine is moving underwater, increasing or decreasing the angle "
 "of the planes will increase and decrease the depth of the submarine."
 msgstr ""
-"Denizaltı su altında hareket ettikten sonra, uçakların açısını artırmak veya "
-"azaltmak denizaltının derinliğini artıracak ve azaltacaktır."
+"Denizaltı su altında hareket ettikten sonra, kanatların açısını artırmak "
+"veya azaltmak denizaltının derinliğini artıracak ve azaltacaktır."
 
 #: activities/submarine/submarine.js:37
 msgctxt "submarine|"
@@ -24742,7 +24412,7 @@ msgid ""
 "The + button will increase the depth of the submarine, while the - button "
 "will decrease the depth of the submarine."
 msgstr ""
-"+ Düğmesi denizaltının derinliğini artırırken - düğmesi denizaltının "
+"+ düğmesi denizaltının derinliğini artırırken - düğmesi denizaltının "
 "derinliğini azaltacaktır."
 
 #: activities/submarine/submarine.js:38
@@ -24830,12 +24500,9 @@ msgstr "Sayı kullanan büyük ızgaralar."
 
 #. Activity title
 #: activities/superbrain/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Super Brain"
 msgctxt "ActivityInfo|"
 msgid "Super brain"
-msgstr "Süper Beyin"
+msgstr "Süper beyin"
 
 #. Help title
 #. ----------
@@ -24892,7 +24559,7 @@ msgstr "Bu öğe yanlış yerleştirilmiş."
 #: activities/tangram/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "The tangram puzzle game"
-msgstr "Tangram yap boz oyunu"
+msgstr "Tangram yapboz oyunu"
 
 #. Help title
 #: activities/tangram/ActivityInfo.qml:17
@@ -24983,64 +24650,58 @@ msgid ""
 "a dart. When all your darts are thrown, you are asked to count your score. "
 "Enter the score with the keyboard."
 msgstr ""
-"Hedefin hızını ve yönünü kontrol et ve ardından dartı başlatmak için üzerine "
+"Hedefin hızını ve yönünü denetle ve ardından dartı başlatmak için üzerine "
 "tıkla. Tüm dartların atıldığında, puanın sorulacaktır. Puanını klavyeyi "
 "kullanarak gir."
 
 #: activities/target/resource/1/Data.qml:13
 msgctxt "Data|"
 msgid "Maximum value: 10."
-msgstr "Maksimum değer: 10."
+msgstr "En yüksek değer: 10."
 
 #: activities/target/resource/2/Data.qml:13
 msgctxt "Data|"
 msgid "Maximum value: 50."
-msgstr "Maksimum değer: 50."
+msgstr "En yüksek değer: 50."
 
 #: activities/target/resource/3/Data.qml:13
 msgctxt "Data|"
 msgid "Maximum value: 500."
-msgstr "Maksimum değer: 500."
+msgstr "En yüksek değer: 500."
 
 #: activities/target/resource/4/Data.qml:13
 msgctxt "Data|"
 msgid "Maximum value: 50000."
-msgstr "Maksimum değer: 5000."
+msgstr "En yüksek değer: 5.000."
 
 #: activities/target/resource/5/Data.qml:13
 msgctxt "Data|"
 msgid "Maximum value: 500000."
-msgstr "Maksimum değer: 500000."
+msgstr "En yüksek değer: 500.000."
 
 #. Activity title
 #: activities/tens_complement_find/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "instruments|"
-#| msgid "Find the trumpet"
 msgctxt "ActivityInfo|"
 msgid "Find ten's complement"
-msgstr "Trompeti bul"
+msgstr "On'un tümleyenini bul"
 
 #. Help title
 #: activities/tens_complement_find/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Find the ten's complement of each number."
-msgstr ""
+msgstr "Her sayının on'un tümleyenini bulun."
 
 #. Help goal
 #: activities/tens_complement_find/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Learn to find ten's complement."
-msgstr ""
+msgstr "On'un tümleyenini bulmayı öğren."
 
 #. Help prerequisite
 #: activities/tens_complement_find/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "ActivityInfo|"
 msgid "Numbers from 1 to 10 and additions."
-msgstr "0'dan 9'a kadar sayılar."
+msgstr "1'den 10'a kadar sayılar ve toplamalar."
 
 #: activities/tens_complement_find/ActivityInfo.qml:23
 #: activities/tens_complement_use/ActivityInfo.qml:24
@@ -25051,6 +24712,10 @@ msgid ""
 "corresponding lines. To correct the errors, click on the wrong numbers to "
 "remove them and repeat the previous steps."
 msgstr ""
+"Tüm satırlar tamamlandığında, yanıtları doğrulamak için OK düğmesine bas. "
+"Bazı yanıtlar yanlışsa ilgili satırlarda bir çarpı simgesi görünecektir. "
+"Hataları düzeltmek için yanlış numaralara tıklayarak bunları kaldır ve "
+"önceki adımları yinele."
 
 #. Help manual
 #: activities/tens_complement_find/ActivityInfo.qml:23
@@ -25059,42 +24724,35 @@ msgid ""
 "Create pairs of numbers equal to ten. Select a number in the list, then "
 "select an empty spot of an operation to move the selected number there."
 msgstr ""
+"On'a eşit sayı çiftleri oluştur. Listeden bir numara seç, ardından seçilen "
+"numarayı oraya taşımak için bir işlemin boş bir yerini seç."
 
 #: activities/tens_complement_find/resource/1/Data.qml:25
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "Data|"
 msgid "First number from 1 to 4."
-msgstr "0'dan 9'a kadar sayılar."
+msgstr "1'den 4'e kadar ilk sayı."
 
 #: activities/tens_complement_find/resource/2/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "Data|"
 msgid "First number from 5 to 9."
-msgstr "0'dan 9'a kadar sayılar."
+msgstr "5'ten 9'a kadar ilk sayı."
 
 #: activities/tens_complement_find/resource/4/Data.qml:9
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Division of numbers"
 msgctxt "Data|"
 msgid "Find both numbers."
-msgstr "Sayıların bölünmesi"
+msgstr "Her iki sayıyı da bul."
 
 #. Activity title
 #: activities/tens_complement_swap/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Swap ten's complement"
-msgstr ""
+msgstr "On'un tümleyinini değiştir."
 
 #. Help title
 #: activities/tens_complement_swap/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Swap the numbers to create pairs equal to ten."
-msgstr ""
+msgstr "On'a eşit çiftler oluşturmak için sayıları birbirleriyle değiştir."
 
 #. Help goal
 #: activities/tens_complement_swap/ActivityInfo.qml:19
@@ -25103,15 +24761,14 @@ msgid ""
 "Learn to use ten's complement to optimize the order of numbers in an "
 "operation."
 msgstr ""
+"Bir işlemde sayıların sırasını iyileştirmek için on'un tümleyenini "
+"kullanmayı öğren."
 
 #. Help prerequisite
 #: activities/tens_complement_swap/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "ActivityInfo|"
 msgid "Numbers from 1 to 30 and additions."
-msgstr "0'dan 9'a kadar sayılar."
+msgstr "1'den 30'a kadar sayılar ve toplamalar."
 
 #. Help manual
 #: activities/tens_complement_swap/ActivityInfo.qml:23
@@ -25123,57 +24780,50 @@ msgid ""
 "the answers. If some answers are incorrect, a cross icon will appear on the "
 "corresponding lines. Correct the errors, then press the OK button again."
 msgstr ""
+"Her parantez içinde ona eşit sayı çiftleri oluştur. Bir numara seç, ardından "
+"konumlarını değiştirmek için aynı işlemin başka bir numarasını seç. Tüm "
+"satırlar tamamlandığında, yanıtları doğrulamak için OK düğmesine bas. Bazı "
+"yanıtlar yanlışsa ilgili satırlarda bir çarpı simgesi görünecektir. Hataları "
+"düzelt, ardından yeniden OK düğmesine bas."
 
 #: activities/tens_complement_swap/resource/1/Data.qml:36
-#, fuzzy
-#| msgctxt "Warning|"
-#| msgid "1 is not a prime number."
 msgctxt "Data|"
 msgid "2 pairs to make from 4 numbers."
-msgstr "1 asal sayı değildir."
+msgstr "4 sayıdan yapılacak 2 çift."
 
 #: activities/tens_complement_swap/resource/2/Data.qml:9
-#, fuzzy
-#| msgctxt "Warning|"
-#| msgid "1 is not a prime number."
 msgctxt "Data|"
 msgid "2 pairs to make from 5 numbers."
-msgstr "1 asal sayı değildir."
+msgstr "5 sayıdan yapılacak 2 çift."
 
 #: activities/tens_complement_swap/resource/3/Data.qml:9
-#, fuzzy
-#| msgctxt "Warning|"
-#| msgid "1 is not a prime number."
 msgctxt "Data|"
 msgid "3 pairs to make from 6 numbers."
-msgstr "1 asal sayı değildir."
+msgstr "6 sayıdan yapılacak 3 çift."
 
 #. Activity title
 #: activities/tens_complement_use/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Use ten's complement"
-msgstr ""
+msgstr "On'un tümleyenini kullan"
 
 #. Help title
 #: activities/tens_complement_use/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Use a ten's complement to simplify the operation."
-msgstr ""
+msgstr "İşlemi basitleştirmek için on'un tümleyenini kullan."
 
 #. Help goal
 #: activities/tens_complement_use/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Learn a practical use of ten's complement."
-msgstr ""
+msgstr "On'un tümleyeninin pratik kullanımını öğren."
 
 #. Help prerequisite
 #: activities/tens_complement_use/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "ActivityInfo|"
 msgid "Numbers from 1 to 50 and additions."
-msgstr "0'dan 9'a kadar sayılar."
+msgstr "1'den 50'ye kadar sayılar ve toplamalar."
 
 #. Help manual
 #: activities/tens_complement_use/ActivityInfo.qml:23
@@ -25183,46 +24833,37 @@ msgid ""
 "parentheses. Select a number in the list, then select an empty spot of an "
 "operation to move the selected number there."
 msgstr ""
+"Her parantez içinde ona eşit sayı çiftleri oluşturmak için eklemeleri "
+"ayrıştır. Listeden bir numara seç, ardından seçilen numarayı oraya taşımak "
+"için bir işlemin boş bir yerini seç."
 
 #: activities/tens_complement_use/resource/1/Data.qml:43
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between 2 and 18."
 msgctxt "Data|"
 msgid "Result between 11 and 19."
-msgstr "2 ile 18 arası sayılar."
+msgstr "11 ile 19 arasındaki sonuç."
 
 #: activities/tens_complement_use/resource/2/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between 1 and 8."
 msgctxt "Data|"
 msgid "Result between 20 and 29."
-msgstr "1 ile 8 arası sayılar."
+msgstr "20 ile 29 arasındaki sonuç."
 
 #: activities/tens_complement_use/resource/3/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between 2 and 18."
 msgctxt "Data|"
 msgid "Result between 30 and 50."
-msgstr "2 ile 18 arası sayılar."
+msgstr "30 ile 50 arasındaki sonuç."
 
 #. Activity title
 #: activities/tic_tac_toe/ActivityInfo.qml:18
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Tic Tac Toe (against Tux)"
 msgctxt "ActivityInfo|"
 msgid "Tic tac toe (against Tux)"
-msgstr "Tic Tac Toe (Tux'a karşı)"
+msgstr "Üç taş (Tüx'a karşı)"
 
 #. Help title
 #: activities/tic_tac_toe/ActivityInfo.qml:20
 #: activities/tic_tac_toe_2players/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Place three marks in a row."
-msgstr "Arka arkaya üç işaret koy."
+msgstr "Arka arkaya üç im koy."
 
 #. Help goal
 #: activities/tic_tac_toe/ActivityInfo.qml:23
@@ -25232,28 +24873,22 @@ msgid ""
 "Place three marks in any horizontal, vertical, or diagonal row to win the "
 "game."
 msgstr ""
-"Oyunu kazanmak için herhangi bir yatay, dikey veya çapraz sıraya üç işaret "
-"koyun."
+"Oyunu kazanmak için herhangi bir yatay, dikey veya çapraz sıraya üç im koy."
 
 #. Help manual
 #: activities/tic_tac_toe/ActivityInfo.qml:27
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Play with a friend. Take turns to click on the square which you want to "
-#| "mark. The first player to create a line of 3 marks wins."
 msgctxt "ActivityInfo|"
 msgid ""
 "Play with Tux. Take turns to click on the square which you want to mark. The "
 "first player to create a line of 3 marks wins."
 msgstr ""
-"Bir arkadaşla oynamak. İşaretlemek istediğin kareyi sırayla tıkla. 3 puanlık "
-"bir çizgi oluşturan ilk oyuncu kazanır."
+"Tux'la oyna. Sırayla imlemek istediğin kareye tıkla. 3 puanlık bir çizgi "
+"oluşturan ilk oyuncu kazanır."
 
 #: activities/tic_tac_toe/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Tux will play better when you increase the level."
-msgstr ""
+msgstr "Düzeyi yükselttiğinde Tux daha iyi oynayacaktır."
 
 #. Activity title
 #: activities/tic_tac_toe_2players/ActivityInfo.qml:18
@@ -25268,8 +24903,8 @@ msgid ""
 "Play with a friend. Take turns to click on the square which you want to "
 "mark. The first player to create a line of 3 marks wins."
 msgstr ""
-"Bir arkadaşla oyna. İşaretlemek istediğin kareyi sırayla tıkla. 3 puanlık "
-"bir çizgi oluşturan ilk oyuncu kazanır."
+"Bir arkadaşla oyna. Sırayla imlemek istediğin kareye tıkla. 3 puanlık bir "
+"çizgi oluşturan ilk oyuncu kazanır."
 
 #. Activity title
 #: activities/traffic/ActivityInfo.qml:15
@@ -25281,7 +24916,7 @@ msgstr "Kayan blok yap boz oyunu"
 #: activities/traffic/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Remove the red car from the parking lot through the gate on the right."
-msgstr "Kırmızı arabayı park yerinden, sağdaki kapıdan çıkar."
+msgstr "Kırmızı arabayı sağdaki kapıdan otoparktan çıkar."
 
 #. Help manual
 #: activities/traffic/ActivityInfo.qml:24
@@ -25290,14 +24925,14 @@ msgid ""
 "Each car can only move either horizontally or vertically. You must make some "
 "room in order to let the red car move through the gate on the right."
 msgstr ""
-"Her araba yalnızca yatay veya dikey olarak hareket edebilir. Kırmızı "
-"arabanın sağdaki kapıdan geçmesine izin vermek için biraz yer açmalısın."
+"Her araba sadece yatay veya dikey olarak hareket edebilir. Kırmızı arabanın "
+"sağdaki kapıdan geçmesi için biraz yer açmalısın."
 
 #. Activity title
 #: activities/watercycle/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Watercycle"
-msgstr "Su Döngüsü"
+msgstr "Su döngüsü"
 
 #. Help title
 #: activities/watercycle/ActivityInfo.qml:17
@@ -25324,9 +24959,9 @@ msgid ""
 "the system is back up and Tux is in the shower, push the shower button for "
 "him."
 msgstr ""
-"Tüm su sistemini yeniden etkinleştirmek için farklı aktif unsurlara tıkla: "
-"güneş, bulut, pompa istasyonu ve kanalizasyon arıtma tesisi. Sistem geri "
-"geldiğinde ve Tux duştayken, onun için duş düğmesine bas."
+"Tüm su sistemini yeniden etkinleştirmek için farklı etkin ögelere tıkla: "
+"Güneş, bulut, pompa istasyonu ve kanalizasyon arıtma tesisi. Sistem geri "
+"geldiğinde ve Tux duşa girdiğinde, onun için duş düğmesine bas."
 
 #: activities/watercycle/Watercycle.qml:78
 msgctxt "Watercycle|"
@@ -25343,17 +24978,12 @@ msgid "As the sun rises, the water of the sea starts heating and evaporates."
 msgstr "Güneş yükseldikçe denizin suyu ısınmaya başlar ve buharlaşır."
 
 #: activities/watercycle/Watercycle.qml:80
-#, fuzzy
-#| msgctxt "Watercycle|"
-#| msgid ""
-#| "Water vapor condenses to form cloud and when clouds become heavy, it "
-#| "rains. Click on the cloud."
 msgctxt "Watercycle|"
 msgid ""
 "Water vapor condenses to form clouds and when clouds become heavy, it rains. "
 "Click on the cloud."
 msgstr ""
-"Su buharı bulut oluşturmak için yoğunlaşır ve bulutlar ağırlaştığında yağmur "
+"Su buharı yoğunlaşarak bulutları oluşturur ve bulutlar ağırlaştığında yağmur "
 "yağar. Buluta tıkla."
 
 #: activities/watercycle/Watercycle.qml:81
@@ -25363,9 +24993,8 @@ msgid ""
 "motor pumps through water-towers. Click on the motor pump to supply water to "
 "residents."
 msgstr ""
-"Yağmur, nehirlerin su dolmasına neden olur ve bu su bize su kuleleri "
-"vasıtasıyla motorlu pompalar vasıtasıyla taşınır. Sakinlere su sağlamak için "
-"motor pompasına tıkla."
+"Yağmur, ırmakların dolmasına neden olur ve bu su, su kuleleri aracılığıyla "
+"pompalarla bize taşınır. Sakinlere su sağlamak için motorlu pompaya tıkla."
 
 #: activities/watercycle/Watercycle.qml:83
 msgctxt "Watercycle|"
@@ -25373,19 +25002,19 @@ msgid ""
 "See the tower filled with water. Activate the sewage treatment station by "
 "clicking on it."
 msgstr ""
-"Su dolu kuleyi gör. Kanalizasyon arıtma istasyonunu üzerine tıklayarak "
+"Suyla dolu kuleyi gör. Kanalizasyon arıtma istasyonunun üzerine tıklayarak "
 "etkinleştir."
 
 #: activities/watercycle/Watercycle.qml:84
 msgctxt "Watercycle|"
 msgid "Great, click on the shower, as Tux arrives home."
-msgstr "Müthiş, Tux eve ulaştığında duşa tıkla."
+msgstr "Harika, Tux eve geldiğinde duşa tıkla."
 
 #: activities/watercycle/Watercycle.qml:85
 msgctxt "Watercycle|"
 msgid ""
 "Fantastic, you have completed the water cycle. You can continue playing."
-msgstr "Harika, su döngüsünü tamamladın. Oynamaya devam edebilirsin."
+msgstr "Harika, su döngüsünü tamamladın. Oynamayı sürdürebilirsin."
 
 #: activities/watercycle/Watercycle.qml:112
 msgctxt "Watercycle|"
@@ -25399,21 +25028,15 @@ msgstr ""
 "kütlelerinden suyun buharlaşması için enerji sağlar."
 
 #: activities/watercycle/Watercycle.qml:115
-#, fuzzy
-#| msgctxt "Watercycle|"
-#| msgid ""
-#| "Plants also lose water to the air through transpiration. The water vapor "
-#| "cools down forming tiny droplets in clouds. When the clouds meet cool air "
-#| "over the land, precipitation is triggered and fall down as rain."
 msgctxt "Watercycle|"
 msgid ""
 "Plants also lose water to the air through transpiration. The water vapor "
 "cools down forming tiny droplets in clouds. When the clouds meet cool air "
 "over the land, precipitation is triggered and falls down as rain."
 msgstr ""
-"Bitkiler ayrıca terleme yoluyla havaya su kaybederler. Su buharı soğuyarak "
-"bulutlarda küçük damlacıklar oluşturur. Bulutlar kara üzerinde soğuk havayla "
-"karşılaştığında yağış tetiklenir ve yağmur olarak düşer."
+"Bitkiler ayrıca terleme yoluyla su kaybederler. Su buharı soğuyarak "
+"bulutlarda küçük damlacıklar oluşturur. Bulutlar kara üzerinde soğuk hava "
+"ile buluştuğunda, yağış tetiklenir ve yağmur olarak geri düşer."
 
 #: activities/watercycle/Watercycle.qml:118
 msgctxt "Watercycle|"
@@ -25422,9 +25045,9 @@ msgid ""
 "groundwater. But most of the water flows as runoff, eventually returning to "
 "the seas via rivers."
 msgstr ""
-"Suyun bir kısmı yeraltı suyu adı verilen kaya veya kil katmanları arasında "
-"sıkışmış durumda. Ancak suyun çoğu akış olarak akar ve sonunda nehirler "
-"yoluyla denizlere geri döner."
+"Suyun bir kısmı, yeraltı suyu adı verilen kaya veya kil katmanları arasında "
+"tutulur. Ancak suyun çoğu aralardan sızar ve sonunda ırmaklar yoluyla "
+"denizlere döner."
 
 #: activities/watercycle/Watercycle.qml:120
 msgctxt "Watercycle|"
@@ -25434,10 +25057,10 @@ msgid ""
 "sun, then on the cloud, the water pumping station near the river, the sewage "
 "treatment, and at last regulate the switch to provide water to Tux's shower."
 msgstr ""
-"Amacın Tux eve ulaşmadan önce su döngüsünü tamamlamaktır. Su döngüsünü "
-"oluşturan farklı bileşenlere tıkla. Önce güneşe, sonra buluta, nehrin "
-"yanındaki su pompalama istasyonuna, kanalizasyon arıtma sistemine tıkla ve "
-"sonunda Tux'un duşuna su sağlamak için düğmeyi düzenle."
+"Amacın, Tux eve varmadan önce su döngüsünü tamamlamaktır. Su döngüsünü "
+"oluşturan farklı bileşenlere tıkla. Önce güneşe, sonra buluta, ırmağın "
+"yanındaki su pompa istasyonuna, kanalizasyon arıtmaya sırasıyla tıkla ve son "
+"olarak Tux'ın duşuna su sağlamak için düğmeyi aç."
 
 #. Activity title
 #: activities/wordsgame/ActivityInfo.qml:15
@@ -25475,17 +25098,17 @@ msgstr "Düşen kelimelerin tamamını yere değmeden önce yaz."
 #: core/ChangeLog.qml:30
 msgctxt "ChangeLog|"
 msgid "Fix issue in comparator activity"
-msgstr ""
+msgstr "Karşılaştırıcı etkinliğindeki sorunu çöz."
 
 #: core/ChangeLog.qml:34
 msgctxt "ChangeLog|"
 msgid "Map of Spain added for geography activity"
-msgstr ""
+msgstr "Coğrafya etkinliğine İspanya haritası eklendi"
 
 #: core/ChangeLog.qml:35
 msgctxt "ChangeLog|"
 msgid "Voices added for Ukrainian"
-msgstr ""
+msgstr "Ukraynaca sesler eklendi"
 
 #: core/ChangeLog.qml:36
 msgctxt "ChangeLog|"
@@ -25493,12 +25116,14 @@ msgid ""
 "New command-line option to list all the activities and start on a specific "
 "one"
 msgstr ""
+"Tüm etkinlikleri listelemek ve belirli bir etkinlikten başlamak için yeni "
+"komut satırı seçeneği"
 
 #: core/ChangeLog.qml:37 core/ChangeLog.qml:72 core/ChangeLog.qml:75
 #: core/ChangeLog.qml:81
 msgctxt "ChangeLog|"
 msgid "Many usability improvements"
-msgstr "Birçok küçük düzeltmeler ve geliştirmeler"
+msgstr "Birçok kullanılabilirlik iyileştirmesi"
 
 #: core/ChangeLog.qml:38 core/ChangeLog.qml:56 core/ChangeLog.qml:71
 #: core/ChangeLog.qml:76 core/ChangeLog.qml:82
@@ -25529,27 +25154,29 @@ msgstr "Çeşitli etkinliklerde görsel kalitesini iyileştir"
 msgctxt "ChangeLog|"
 msgid "Fix some transitions in renewable_energy/watercycle on some platforms"
 msgstr ""
+"Bazı platformlarda yenilenebilir enerji ve su döngüsü geçişlerini düzelt"
 
 #: core/ChangeLog.qml:46
 msgctxt "ChangeLog|"
 msgid "Fix dead keys ignored on Linux for typing activities"
-msgstr ""
+msgstr "Yazma etkinlikleri için Linux'ta ölü düğmelerin yok sayılmasını düzelt"
 
 #: core/ChangeLog.qml:47
 msgctxt "ChangeLog|"
 msgid "Fix level reset when changing level manually in Logical associations"
 msgstr ""
+"Mantıksal ilişkilendirmelerde elle düzey değiştirirken düzey sıfırlamayı "
+"düzeltin"
 
 #: core/ChangeLog.qml:51
 msgctxt "ChangeLog|"
 msgid ""
 "Fix Alphabet sequence, Even and odd numbers and Numbers in order activities"
 msgstr ""
+"Alfabe sırasını, çift ve tek sayıları ve sipariş faaliyetlerindeki sayıları "
+"düzelt"
 
 #: core/ChangeLog.qml:55 core/ChangeLog.qml:63
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Many bug fixes"
 msgctxt "ChangeLog|"
 msgid "Several bug fixes"
 msgstr "Birçok hata düzeltmesi"
@@ -25572,12 +25199,12 @@ msgstr "Bretonca, Çekçe ve Makedonca çeviriler eklendi."
 #: core/ChangeLog.qml:67
 msgctxt "ChangeLog|"
 msgid "Translation added for Azerbaijani"
-msgstr "Azerbaycanca çevirisi eklendi"
+msgstr "Azerbaycanca çeviri eklendi"
 
 #: core/ChangeLog.qml:68
 msgctxt "ChangeLog|"
 msgid "New maps and update of the maps for geography activities"
-msgstr ""
+msgstr "Coğrafya etkinlikleri için yeni haritalar ve haritaların güncellenmesi"
 
 #: core/ChangeLog.qml:69
 msgctxt "ChangeLog|"
@@ -25594,6 +25221,8 @@ msgid ""
 "Addition of a level to teach voltage source loop in analog electricity "
 "activity"
 msgstr ""
+"Analog elektrik etkinliğinde voltaj kaynağı döngüsünü öğretmek için düzey "
+"eklemesi"
 
 #: core/ChangeLog.qml:80
 msgctxt "ChangeLog|"
@@ -25613,7 +25242,7 @@ msgstr "Makedonca çeviri eklendi."
 #: core/ChangeLog.qml:88
 msgctxt "ChangeLog|"
 msgid "New activities Programming Maze and Baby Tangram"
-msgstr "Yeni etkinlikler Programlama Labirenti ve Bebek Tangramı"
+msgstr "Yeni etkinlikler: Programlama Labirenti ve Bebek Tangramı"
 
 #: core/ChangeLog.qml:89
 msgctxt "ChangeLog|"
@@ -25677,7 +25306,7 @@ msgstr ""
 msgctxt "ChangeLog|"
 msgid "Fix in braille activities where the cells start at 1, not 0."
 msgstr ""
-"Hücrelerin 0'dan değil 1'den başladığı braille etkinliklerinde düzeltme."
+"Hücrelerin 0'dan değil 1'den başladığı Braille etkinliklerinde düzeltme."
 
 #: core/ChangeLog.qml:100
 msgctxt "ChangeLog|"
@@ -25711,7 +25340,7 @@ msgstr "Ergonomiyi geliştirmek için planlarda yapılan birden fazla değişikl
 #: core/ChangeLog.qml:104
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in Polish, Swedish and Ukrainian."
-msgstr "Dil etkinliği artık Lehçe, İsveççe ve Ukraynaca olarak vardır."
+msgstr "Dil etkinliği artık Lehçe, İsveççe ve Ukraynaca olarak var."
 
 #: core/ChangeLog.qml:105
 msgctxt "ChangeLog|"
@@ -25731,7 +25360,7 @@ msgstr "Birçok küçük düzeltme."
 #: core/ChangeLog.qml:107
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in French."
-msgstr "Dil etkinliği artık Fransızca olarak mevcuttur."
+msgstr "Dil etkinliği artık Fransızca olarak var."
 
 #: core/ChangeLog.qml:108
 msgctxt "ChangeLog|"
@@ -25783,7 +25412,7 @@ msgstr "Gerekli olan ses dosyalarını indirmek için, tercihler penceresine git
 #: core/core.js:210
 msgctxt "core|"
 msgid "Download in progress"
-msgstr "İndirme devam ediyor"
+msgstr "İndirme sürüyor"
 
 #: core/core.js:212
 msgctxt "core|"
@@ -25794,12 +25423,12 @@ msgstr ""
 #: core/core.js:222
 msgctxt "core|"
 msgid "Quit?"
-msgstr "Çıkılsın mı?"
+msgstr "Çık?"
 
 #: core/core.js:224
 msgctxt "core|"
 msgid "Do you really want to quit GCompris?"
-msgstr "Gerçekten GCompris'ten çıkmak istiyor musun?"
+msgstr "GCompris'ten gerçekten çıkmak istiyor musun?"
 
 #: core/core.js:225
 msgctxt "core|"
@@ -25827,7 +25456,8 @@ msgctxt "DialogAbout|"
 msgid "translator-credits"
 msgstr ""
 "Kaan Özdinçer (kaanozdincer@gmail.com)\n"
-"Filiz Karadil (filizalvr@gmail.com)"
+"Filiz Karadil (filizalvr@gmail.com)\n"
+"Emir SARI (emir_sari@icloud.com)"
 
 #: core/DialogAbout.qml:55
 #, qt-format
@@ -25836,17 +25466,15 @@ msgid "GCompris %1"
 msgstr "GCompris %1"
 
 #: core/DialogAbout.qml:57
-#, fuzzy, qt-format
-#| msgctxt "DialogAbout|"
-#| msgid "Based on Qt %1"
+#, qt-format
 msgctxt "DialogAbout|"
 msgid "Based on Qt %1 and %2"
-msgstr "%1 Qt'ye göre"
+msgstr "Qt %1 ve %2 tabanlı"
 
 #: core/DialogAbout.qml:61
 msgctxt "DialogAbout|"
 msgid "GCompris Home Page: https://gcompris.net"
-msgstr "GCompris Ana Sayfası: http://gcompris.net"
+msgstr "GCompris Ana Sayfası: https://gcompris.net"
 
 #. Replace the link with the page in your language if it exists, else keep the english page link
 #: core/DialogAbout.qml:65
@@ -25856,12 +25484,15 @@ msgid ""
 "please visit <a href='https://gcompris.net/donate-en.html'>https://gcompris."
 "net/donate-en.html</a>."
 msgstr ""
+"<b>GCompris</b>'in geliştirilmesi için mali destek sağlayabilirsiniz, lütfen "
+"<a href='https://gcompris.net/donate-tr.html'>https://gcompris.net/donate-tr."
+"html adresini ziyaret edin</a>."
 
 #: core/DialogAbout.qml:75
 msgctxt "DialogAbout|"
 msgid "<b>GCompris</b> is a Free Software developed within the KDE community."
 msgstr ""
-"<b>GCompris</b> KDE topluluğu tarafından geliştirilmiş bir Özgür Yazılımdır."
+"<b>GCompris</b>, KDE topluluğu tarafından geliştirilen bir Özgür Yazılımdır."
 
 #: core/DialogAbout.qml:79
 #, qt-format
@@ -25907,7 +25538,7 @@ msgstr ""
 "olabileceğini düşündüğünüzde bize bildirebilirsiniz.<br /><br />KDE Masaüstü "
 "Ortamının bir hata izleme sistemi vardır. Hataları bildirmek için <a href="
 "\"%1\">%1</a> adresini ziyaret edin.<br /><br />Bir iyileştirme önerisinde "
-"bulunmak için de hata izleme sistemini kullanabilirsiniz. \"İyileştirme\" "
+"bulunmak için de hata izleme sistemini kullanabilirsiniz. \"Wishlist\" "
 "önceliğini seçtiğinizden emin olun."
 
 #: core/DialogAbout.qml:108
@@ -25971,7 +25602,7 @@ msgstr "<b>Çeviri takımına çok teşekkür ederiz:</b> %1"
 #, qt-format
 msgctxt "DialogActivityConfig|"
 msgid "%1 configuration"
-msgstr "%1 yapılandırma"
+msgstr "%1 yapılandırması"
 
 #: core/DialogActivityConfig.qml:86
 msgctxt "DialogActivityConfig|"
@@ -25982,7 +25613,7 @@ msgstr "Yapılandırma"
 #, qt-format
 msgctxt "DialogChooseLevel|"
 msgid "%1 settings"
-msgstr "%1 ayarlar"
+msgstr "%1 ayarları"
 
 #: core/DialogChooseLevel.qml:205
 msgctxt "DialogChooseLevel|"
@@ -26007,7 +25638,7 @@ msgstr "Kaydet"
 #: core/DialogChooseLevel.qml:371
 msgctxt "DialogChooseLevel|"
 msgid "Save and start"
-msgstr "Kaydet ve başla"
+msgstr "Kaydet ve başlat"
 
 #: core/DialogHelp.qml:49
 msgctxt "DialogHelp|"
@@ -26049,7 +25680,7 @@ msgstr "Noktalar"
 #: core/Domino.qml:59
 msgctxt "Domino|"
 msgid "Arabic Numbers"
-msgstr "Arapça Rakamlar"
+msgstr "Arap Rakamları"
 
 #. "Roman Numbers" is for representation of the points in a domino in the form of roman numbers
 #: core/Domino.qml:61
@@ -26072,12 +25703,12 @@ msgstr "İndiriliyor..."
 #: core/DownloadDialog.qml:253
 msgctxt "DownloadDialog|"
 msgid "Background"
-msgstr "Arka Plan"
+msgstr "Arka plan"
 
 #: core/DownloadDialog.qml:270
 msgctxt "DownloadDialog|"
 msgid "Abort"
-msgstr "İptal"
+msgstr "İptal Et"
 
 #: core/DownloadDialog.qml:366
 #, qt-format
@@ -26094,7 +25725,7 @@ msgstr ""
 #: core/DownloadDialog.qml:396
 msgctxt "DownloadDialog|"
 msgid "Restart any currently active activity."
-msgstr "Şu anda aktif olan herhangi bir etkinliği yeniden başlat."
+msgstr "Şu anda etkin olan herhangi bir etkinliği yeniden başlat."
 
 #: core/DownloadDialog.qml:398
 msgctxt "DownloadDialog|"
@@ -26104,12 +25735,12 @@ msgstr "Yerel veri dosyaların güncel."
 #: core/DownloadManager.cpp:113
 msgctxt "QObject|"
 msgid "Download cancelled by user"
-msgstr "İndirme kullanıcı tarafından iptal edildi"
+msgstr "İndirme, kullanıcı tarafından iptal edildi"
 
 #: core/DownloadManager.cpp:233
 msgctxt "QObject|"
 msgid "Could not create resource path"
-msgstr "Kaynak yolu oluşturulamadı"
+msgstr "Özkaynak yolu oluşturulamadı"
 
 #: core/DownloadManager.cpp:240
 #, qt-format
@@ -26120,13 +25751,13 @@ msgstr "%1 hedef dosyası açılamadı"
 #: core/DownloadManager.cpp:539
 msgctxt "QObject|"
 msgid "Invalid format of Contents file"
-msgstr "Geçersiz İçerik dosyası biçimi"
+msgstr "Geçersiz içerik dosyası biçimi"
 
 #: core/DownloadManager.cpp:561
 #, qt-format
 msgctxt "QObject|"
 msgid "The url %1 does not exist."
-msgstr "%1 URL'si mevcut değil."
+msgstr "%1 URL'si yok."
 
 #: core/DownloadManager.cpp:574
 #, qt-format
@@ -26155,7 +25786,7 @@ msgstr "%1 silinemiyor!"
 #: core/GCCreationHandler.qml:172
 msgctxt "GCCreationHandler|"
 msgid "A file with this name already exists. Do you want to replace it?"
-msgstr "Bu isimde bir dosya zaten var. Onu değiştirmek ister misin?"
+msgstr "Bu adda bir dosya halihazırda var. Onu değiştirmek istiyor musun?"
 
 #: core/GCCreationHandler.qml:173
 msgctxt "GCCreationHandler|"
@@ -26215,7 +25846,7 @@ msgstr "Atla"
 #: core/IntroMessage.qml:205
 msgctxt "IntroMessage|"
 msgid "Start"
-msgstr "Başla"
+msgstr "Başlat"
 
 #: core/LanguageList.qml:34
 msgctxt "LanguageList|"
@@ -26293,12 +25924,12 @@ msgstr ""
 #: core/main.cpp:199
 msgctxt "QObject|"
 msgid "Specify the activity when starting GCompris."
-msgstr ""
+msgstr "GCompris'i başlatırken etkinliği belirt."
 
 #: core/main.cpp:204
 msgctxt "QObject|"
 msgid "Outputs all the available activities on the standard output."
-msgstr ""
+msgstr "Tüm kullanılabilir etkinlikleri standart çıktı'ya çıktılar."
 
 #: core/main.qml:233
 msgctxt "main|"

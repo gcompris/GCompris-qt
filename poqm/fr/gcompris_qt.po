@@ -25517,7 +25517,7 @@ msgstr ""
 #: core/ChangeLog.qml:30
 msgctxt "ChangeLog|"
 msgid "Fix issue in comparator activity"
-msgstr ""
+msgstr "Correction d'un bug dans l'activité de comparaison"
 
 #: core/ChangeLog.qml:34
 msgctxt "ChangeLog|"
