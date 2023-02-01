@@ -24753,37 +24753,37 @@ msgctxt "LanguageList|"
 msgid "GCompris' language"
 msgstr "GCompris %1"
 
-#: core/main.cpp:162
+#: core/main.cpp:166
 msgctxt "QObject|"
 msgid "Run GCompris with the default system cursor."
 msgstr "GCompris를 기본 시스템 커서를 사용하여 실행합니다."
 
-#: core/main.cpp:166
+#: core/main.cpp:170
 msgctxt "QObject|"
 msgid "Run GCompris without cursor (touch screen mode)."
 msgstr "GCompris를 커서 없이 실행합니다(터치스크린 모드)."
 
-#: core/main.cpp:170
+#: core/main.cpp:174
 msgctxt "QObject|"
 msgid "Run GCompris in fullscreen mode."
 msgstr "GCompris를 전체 화면으로 실행합니다."
 
-#: core/main.cpp:174
+#: core/main.cpp:178
 msgctxt "QObject|"
 msgid "Run GCompris in window mode."
 msgstr "GCompris를 창 모드로 실행합니다."
 
-#: core/main.cpp:178
+#: core/main.cpp:182
 msgctxt "QObject|"
 msgid "Run GCompris with sound enabled."
 msgstr "소리를 활성화하여 GCompris를 실행합니다."
 
-#: core/main.cpp:182
+#: core/main.cpp:186
 msgctxt "QObject|"
 msgid "Run GCompris without sound."
 msgstr "GCompris를 소리 없이 실행합니다."
 
-#: core/main.cpp:185
+#: core/main.cpp:189
 #, fuzzy
 #| msgctxt "QObject|"
 #| msgid "Enable the configuration button (default)."
@@ -24791,7 +24791,7 @@ msgctxt "QObject|"
 msgid "Disable the kiosk mode (default)."
 msgstr "설정 단추를 활성화합니다(기본값)."
 
-#: core/main.cpp:188
+#: core/main.cpp:192
 #, fuzzy
 #| msgctxt "QObject|"
 #| msgid "Disable the configuration button."
@@ -24799,26 +24799,26 @@ msgctxt "QObject|"
 msgid "Enable the kiosk mode."
 msgstr "설정 단추를 비활성화합니다."
 
-#: core/main.cpp:192
+#: core/main.cpp:196
 msgctxt "QObject|"
 msgid ""
 "Use software renderer instead of openGL (slower but should run with any "
 "graphical card)."
 msgstr ""
 
-#: core/main.cpp:195
+#: core/main.cpp:199
 msgctxt "QObject|"
 msgid ""
 "Use openGL renderer instead of software (faster but crash potentially "
 "depending on your graphical card)."
 msgstr ""
 
-#: core/main.cpp:199
+#: core/main.cpp:203
 msgctxt "QObject|"
 msgid "Specify the activity when starting GCompris."
 msgstr ""
 
-#: core/main.cpp:204
+#: core/main.cpp:208
 msgctxt "QObject|"
 msgid "Outputs all the available activities on the standard output."
 msgstr ""

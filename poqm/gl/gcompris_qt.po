@@ -30426,47 +30426,47 @@ msgctxt "LanguageList|"
 msgid "GCompris' language"
 msgstr "Menú principal de GCompris"
 
-#: core/main.cpp:162
+#: core/main.cpp:166
 msgctxt "QObject|"
 msgid "Run GCompris with the default system cursor."
 msgstr "Executar GCompris co cursor predeterminado do sistema."
 
-#: core/main.cpp:166
+#: core/main.cpp:170
 msgctxt "QObject|"
 msgid "Run GCompris without cursor (touch screen mode)."
 msgstr "Executar GCompris sen cursor (modo de pantalla táctil)."
 
-#: core/main.cpp:170
+#: core/main.cpp:174
 msgctxt "QObject|"
 msgid "Run GCompris in fullscreen mode."
 msgstr "Executar GCompris a pantalla completa."
 
-#: core/main.cpp:174
+#: core/main.cpp:178
 msgctxt "QObject|"
 msgid "Run GCompris in window mode."
 msgstr "Executar GCompris nunha xanela."
 
-#: core/main.cpp:178
+#: core/main.cpp:182
 msgctxt "QObject|"
 msgid "Run GCompris with sound enabled."
 msgstr "Executar GCompris co son activado."
 
-#: core/main.cpp:182
+#: core/main.cpp:186
 msgctxt "QObject|"
 msgid "Run GCompris without sound."
 msgstr "Executar GCompris sen son."
 
-#: core/main.cpp:185
+#: core/main.cpp:189
 msgctxt "QObject|"
 msgid "Disable the kiosk mode (default)."
 msgstr "Desactivar o modo de quiosco (predeterminado)."
 
-#: core/main.cpp:188
+#: core/main.cpp:192
 msgctxt "QObject|"
 msgid "Enable the kiosk mode."
 msgstr "Activar o modo de quiosco."
 
-#: core/main.cpp:192
+#: core/main.cpp:196
 #, fuzzy
 #| msgctxt "QObject|"
 #| msgid ""
@@ -30480,7 +30480,7 @@ msgstr ""
 "Usar o renderizador de software en vez de openGL (máis lento pero debería "
 "funcionar con calquera tarxeta gráfica, necesita Qt 5.8 como mínimo)."
 
-#: core/main.cpp:195
+#: core/main.cpp:199
 msgctxt "QObject|"
 msgid ""
 "Use openGL renderer instead of software (faster but crash potentially "
@@ -30489,12 +30489,12 @@ msgstr ""
 "Usar o renderizador de openGL en vez de o de software (máis rápido pero pode "
 "quebrar segundo a tarxeta gráfica)."
 
-#: core/main.cpp:199
+#: core/main.cpp:203
 msgctxt "QObject|"
 msgid "Specify the activity when starting GCompris."
 msgstr ""
 
-#: core/main.cpp:204
+#: core/main.cpp:208
 msgctxt "QObject|"
 msgid "Outputs all the available activities on the standard output."
 msgstr ""

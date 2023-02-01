@@ -25933,54 +25933,54 @@ msgctxt "LanguageList|"
 msgid "GCompris' language"
 msgstr "قائمة «فهمت» الرّئيسيّة"
 
-#: core/main.cpp:162
+#: core/main.cpp:166
 msgctxt "QObject|"
 msgid "Run GCompris with the default system cursor."
 msgstr "شغّل «فهمت» بمؤشّر النّظام الافتراضيّ."
 
-#: core/main.cpp:166
+#: core/main.cpp:170
 msgctxt "QObject|"
 msgid "Run GCompris without cursor (touch screen mode)."
 msgstr "شغّل «فهمت» بدون مؤشّر (وضع شاشة اللمس)."
 
-#: core/main.cpp:170
+#: core/main.cpp:174
 msgctxt "QObject|"
 msgid "Run GCompris in fullscreen mode."
 msgstr "شغّل «فهمت» بوضع ملء الشّاشة."
 
-#: core/main.cpp:174
+#: core/main.cpp:178
 msgctxt "QObject|"
 msgid "Run GCompris in window mode."
 msgstr "شغّل «فهمت» بوضع النّافذة."
 
-#: core/main.cpp:178
+#: core/main.cpp:182
 msgctxt "QObject|"
 msgid "Run GCompris with sound enabled."
 msgstr "شغّل «فهمت» والصّوت مفعّل."
 
-#: core/main.cpp:182
+#: core/main.cpp:186
 msgctxt "QObject|"
 msgid "Run GCompris without sound."
 msgstr "شغّل «فهمت» بدون صوت."
 
-#: core/main.cpp:185
+#: core/main.cpp:189
 msgctxt "QObject|"
 msgid "Disable the kiosk mode (default)."
 msgstr "تعطيل وضع الكشك (افتراضي)."
 
-#: core/main.cpp:188
+#: core/main.cpp:192
 msgctxt "QObject|"
 msgid "Enable the kiosk mode."
 msgstr "قم بتمكين وضع الكشك."
 
-#: core/main.cpp:192
+#: core/main.cpp:196
 msgctxt "QObject|"
 msgid ""
 "Use software renderer instead of openGL (slower but should run with any "
 "graphical card)."
 msgstr ""
 
-#: core/main.cpp:195
+#: core/main.cpp:199
 msgctxt "QObject|"
 msgid ""
 "Use openGL renderer instead of software (faster but crash potentially "
@@ -25989,12 +25989,12 @@ msgstr ""
 "استخدم عارض OpenGL بدلاً من البرنامج (أسرع ولكن من المحتمل أن يتعطل بناءً على "
 "بطاقتك الرسومية)."
 
-#: core/main.cpp:199
+#: core/main.cpp:203
 msgctxt "QObject|"
 msgid "Specify the activity when starting GCompris."
 msgstr ""
 
-#: core/main.cpp:204
+#: core/main.cpp:208
 msgctxt "QObject|"
 msgid "Outputs all the available activities on the standard output."
 msgstr ""
