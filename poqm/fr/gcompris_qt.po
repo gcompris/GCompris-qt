@@ -16937,42 +16937,42 @@ msgstr ""
 "Chaque carte cache soit une image avec un nombre d'éléments, soit un nombre. "
 "Tu dois associer les nombres avec les images correspondantes."
 
-#: activities/memory-enumerate/resource/1/Data.qml:15
+#: activities/memory-enumerate/resource/1/Data.qml:17
 msgctxt "Data|"
 msgid "Match the numbers up to 2."
 msgstr "Faire correspondre les nombres jusqu'à 2."
 
-#: activities/memory-enumerate/resource/2/Data.qml:15
+#: activities/memory-enumerate/resource/2/Data.qml:17
 msgctxt "Data|"
 msgid "Match the numbers up to 3."
 msgstr "Faire correspondre les nombres jusqu'à 3."
 
-#: activities/memory-enumerate/resource/3/Data.qml:15
+#: activities/memory-enumerate/resource/3/Data.qml:17
 msgctxt "Data|"
 msgid "Match the numbers up to 4."
 msgstr "Faire correspondre les nombres jusqu'à 4."
 
-#: activities/memory-enumerate/resource/4/Data.qml:15
+#: activities/memory-enumerate/resource/4/Data.qml:17
 msgctxt "Data|"
 msgid "Match the numbers up to 5."
 msgstr "Faire correspondre les nombres jusqu'à 5."
 
-#: activities/memory-enumerate/resource/5/Data.qml:15
+#: activities/memory-enumerate/resource/5/Data.qml:17
 msgctxt "Data|"
 msgid "Match the numbers up to 6."
 msgstr "Faire correspondre les nombres jusqu'à 6."
 
-#: activities/memory-enumerate/resource/6/Data.qml:15
+#: activities/memory-enumerate/resource/6/Data.qml:17
 msgctxt "Data|"
 msgid "Match the numbers up to 7."
 msgstr "Faire correspondre les nombres jusqu'à 7."
 
-#: activities/memory-enumerate/resource/7/Data.qml:15
+#: activities/memory-enumerate/resource/7/Data.qml:17
 msgctxt "Data|"
 msgid "Match the numbers up to 8."
 msgstr "Faire correspondre les nombres jusqu'à 8."
 
-#: activities/memory-enumerate/resource/8/Data.qml:15
+#: activities/memory-enumerate/resource/8/Data.qml:17
 msgctxt "Data|"
 msgid "Match the numbers up to 9."
 msgstr "Faire correspondre les nombres jusqu'à 9."

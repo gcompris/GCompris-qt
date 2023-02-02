@@ -16986,42 +16986,42 @@ msgstr ""
 "Секоја картичка крие слика со предмети или број. Треба да ги совпаднете "
 "броевите со соодветните слики."
 
-#: activities/memory-enumerate/resource/1/Data.qml:15
+#: activities/memory-enumerate/resource/1/Data.qml:17
 msgctxt "Data|"
 msgid "Match the numbers up to 2."
 msgstr "Совпаѓање на броеви до 2."
 
-#: activities/memory-enumerate/resource/2/Data.qml:15
+#: activities/memory-enumerate/resource/2/Data.qml:17
 msgctxt "Data|"
 msgid "Match the numbers up to 3."
 msgstr "Совпаѓање на броеви до 3."
 
-#: activities/memory-enumerate/resource/3/Data.qml:15
+#: activities/memory-enumerate/resource/3/Data.qml:17
 msgctxt "Data|"
 msgid "Match the numbers up to 4."
 msgstr "Совпаѓање на броеви до 4."
 
-#: activities/memory-enumerate/resource/4/Data.qml:15
+#: activities/memory-enumerate/resource/4/Data.qml:17
 msgctxt "Data|"
 msgid "Match the numbers up to 5."
 msgstr "Совпаѓање на броеви до 5."
 
-#: activities/memory-enumerate/resource/5/Data.qml:15
+#: activities/memory-enumerate/resource/5/Data.qml:17
 msgctxt "Data|"
 msgid "Match the numbers up to 6."
 msgstr "Совпаѓање на броеви до 6."
 
-#: activities/memory-enumerate/resource/6/Data.qml:15
+#: activities/memory-enumerate/resource/6/Data.qml:17
 msgctxt "Data|"
 msgid "Match the numbers up to 7."
 msgstr "Совпаѓање на броеви до 7."
 
-#: activities/memory-enumerate/resource/7/Data.qml:15
+#: activities/memory-enumerate/resource/7/Data.qml:17
 msgctxt "Data|"
 msgid "Match the numbers up to 8."
 msgstr "Совпаѓање на броеви до 8."
 
-#: activities/memory-enumerate/resource/8/Data.qml:15
+#: activities/memory-enumerate/resource/8/Data.qml:17
 msgctxt "Data|"
 msgid "Match the numbers up to 9."
 msgstr "Совпаѓање на броеви до 9."

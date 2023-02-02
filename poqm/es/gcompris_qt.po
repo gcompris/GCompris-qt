@@ -16803,42 +16803,42 @@ msgstr ""
 "Cada carta oculta un número o una imagen con un número de objetos. Debes "
 "emparejar los números con las imágenes correspondientes."
 
-#: activities/memory-enumerate/resource/1/Data.qml:15
+#: activities/memory-enumerate/resource/1/Data.qml:17
 msgctxt "Data|"
 msgid "Match the numbers up to 2."
 msgstr "Emparejar números hasta 2."
 
-#: activities/memory-enumerate/resource/2/Data.qml:15
+#: activities/memory-enumerate/resource/2/Data.qml:17
 msgctxt "Data|"
 msgid "Match the numbers up to 3."
 msgstr "Emparejar números hasta 3."
 
-#: activities/memory-enumerate/resource/3/Data.qml:15
+#: activities/memory-enumerate/resource/3/Data.qml:17
 msgctxt "Data|"
 msgid "Match the numbers up to 4."
 msgstr "Emparejar números hasta 4."
 
-#: activities/memory-enumerate/resource/4/Data.qml:15
+#: activities/memory-enumerate/resource/4/Data.qml:17
 msgctxt "Data|"
 msgid "Match the numbers up to 5."
 msgstr "Emparejar números hasta 5."
 
-#: activities/memory-enumerate/resource/5/Data.qml:15
+#: activities/memory-enumerate/resource/5/Data.qml:17
 msgctxt "Data|"
 msgid "Match the numbers up to 6."
 msgstr "Emparejar números hasta 6."
 
-#: activities/memory-enumerate/resource/6/Data.qml:15
+#: activities/memory-enumerate/resource/6/Data.qml:17
 msgctxt "Data|"
 msgid "Match the numbers up to 7."
 msgstr "Emparejar números hasta 7."
 
-#: activities/memory-enumerate/resource/7/Data.qml:15
+#: activities/memory-enumerate/resource/7/Data.qml:17
 msgctxt "Data|"
 msgid "Match the numbers up to 8."
 msgstr "Emparejar números hasta 8."
 
-#: activities/memory-enumerate/resource/8/Data.qml:15
+#: activities/memory-enumerate/resource/8/Data.qml:17
 msgctxt "Data|"
 msgid "Match the numbers up to 9."
 msgstr "Emparejar números hasta 9."

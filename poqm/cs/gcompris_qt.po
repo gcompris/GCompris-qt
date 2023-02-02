@@ -16081,42 +16081,42 @@ msgstr ""
 "stejnému počtu věcí. \n"
 "Například na jedné kartě bude číslo 3 a na druhé kartě budou 3 motýli."
 
-#: activities/memory-enumerate/resource/1/Data.qml:15
+#: activities/memory-enumerate/resource/1/Data.qml:17
 msgctxt "Data|"
 msgid "Match the numbers up to 2."
 msgstr "Porovnat čísla po 2."
 
-#: activities/memory-enumerate/resource/2/Data.qml:15
+#: activities/memory-enumerate/resource/2/Data.qml:17
 msgctxt "Data|"
 msgid "Match the numbers up to 3."
 msgstr "Porovnat čísla po 3."
 
-#: activities/memory-enumerate/resource/3/Data.qml:15
+#: activities/memory-enumerate/resource/3/Data.qml:17
 msgctxt "Data|"
 msgid "Match the numbers up to 4."
 msgstr "Porovnat čísla po 4."
 
-#: activities/memory-enumerate/resource/4/Data.qml:15
+#: activities/memory-enumerate/resource/4/Data.qml:17
 msgctxt "Data|"
 msgid "Match the numbers up to 5."
 msgstr "Porovnat čísla po 5."
 
-#: activities/memory-enumerate/resource/5/Data.qml:15
+#: activities/memory-enumerate/resource/5/Data.qml:17
 msgctxt "Data|"
 msgid "Match the numbers up to 6."
 msgstr "Porovnat čísla po 6."
 
-#: activities/memory-enumerate/resource/6/Data.qml:15
+#: activities/memory-enumerate/resource/6/Data.qml:17
 msgctxt "Data|"
 msgid "Match the numbers up to 7."
 msgstr "Porovnat čísla po 7."
 
-#: activities/memory-enumerate/resource/7/Data.qml:15
+#: activities/memory-enumerate/resource/7/Data.qml:17
 msgctxt "Data|"
 msgid "Match the numbers up to 8."
 msgstr "Porovnat čísla po 8."
 
-#: activities/memory-enumerate/resource/8/Data.qml:15
+#: activities/memory-enumerate/resource/8/Data.qml:17
 msgctxt "Data|"
 msgid "Match the numbers up to 9."
 msgstr "Porovnat čísla po 9."

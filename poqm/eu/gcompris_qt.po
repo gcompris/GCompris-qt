@@ -16679,42 +16679,42 @@ msgstr ""
 "Karta bakoitzak, edo elementu kopuru bat duen irudi bat, edo zenbaki bat "
 "ezkutatzen du. Zenbakiak dagozkien irudiekin elkartu behar dituzu."
 
-#: activities/memory-enumerate/resource/1/Data.qml:15
+#: activities/memory-enumerate/resource/1/Data.qml:17
 msgctxt "Data|"
 msgid "Match the numbers up to 2."
 msgstr "Parekatu 2ra arteko zenbakiak."
 
-#: activities/memory-enumerate/resource/2/Data.qml:15
+#: activities/memory-enumerate/resource/2/Data.qml:17
 msgctxt "Data|"
 msgid "Match the numbers up to 3."
 msgstr "Parekatu 3ra arteko zenbakiak."
 
-#: activities/memory-enumerate/resource/3/Data.qml:15
+#: activities/memory-enumerate/resource/3/Data.qml:17
 msgctxt "Data|"
 msgid "Match the numbers up to 4."
 msgstr "Parekatu 4ra arteko zenbakiak."
 
-#: activities/memory-enumerate/resource/4/Data.qml:15
+#: activities/memory-enumerate/resource/4/Data.qml:17
 msgctxt "Data|"
 msgid "Match the numbers up to 5."
 msgstr "Parekatu 5era arteko zenbakiak."
 
-#: activities/memory-enumerate/resource/5/Data.qml:15
+#: activities/memory-enumerate/resource/5/Data.qml:17
 msgctxt "Data|"
 msgid "Match the numbers up to 6."
 msgstr "Parekatu 6ra arteko zenbakiak."
 
-#: activities/memory-enumerate/resource/6/Data.qml:15
+#: activities/memory-enumerate/resource/6/Data.qml:17
 msgctxt "Data|"
 msgid "Match the numbers up to 7."
 msgstr "Parekatu 7ra arteko zenbakiak."
 
-#: activities/memory-enumerate/resource/7/Data.qml:15
+#: activities/memory-enumerate/resource/7/Data.qml:17
 msgctxt "Data|"
 msgid "Match the numbers up to 8."
 msgstr "Parekatu 8ra arteko zenbakiak."
 
-#: activities/memory-enumerate/resource/8/Data.qml:15
+#: activities/memory-enumerate/resource/8/Data.qml:17
 msgctxt "Data|"
 msgid "Match the numbers up to 9."
 msgstr "Parekatu 9ra arteko zenbakiak."
