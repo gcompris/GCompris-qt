@@ -17043,7 +17043,7 @@ msgid ""
 "You have to match the numbers with the corresponding pictures."
 msgstr ""
 
-#: activities/memory-enumerate/resource/1/Data.qml:15
+#: activities/memory-enumerate/resource/1/Data.qml:17
 #, fuzzy
 #| msgctxt "ActivityInfo|"
 #| msgid "Connect the dots to draw numbers from 0 to 9"
@@ -17051,7 +17051,7 @@ msgctxt "Data|"
 msgid "Match the numbers up to 2."
 msgstr "وصّل النّقط لرسم الأرقام من ٠ إلى ٩"
 
-#: activities/memory-enumerate/resource/2/Data.qml:15
+#: activities/memory-enumerate/resource/2/Data.qml:17
 #, fuzzy
 #| msgctxt "ActivityInfo|"
 #| msgid "Connect the dots to draw numbers from 0 to 9"
@@ -17059,7 +17059,7 @@ msgctxt "Data|"
 msgid "Match the numbers up to 3."
 msgstr "وصّل النّقط لرسم الأرقام من ٠ إلى ٩"
 
-#: activities/memory-enumerate/resource/3/Data.qml:15
+#: activities/memory-enumerate/resource/3/Data.qml:17
 #, fuzzy
 #| msgctxt "ActivityInfo|"
 #| msgid "Connect the dots to draw numbers from 0 to 9"
@@ -17067,7 +17067,7 @@ msgctxt "Data|"
 msgid "Match the numbers up to 4."
 msgstr "وصّل النّقط لرسم الأرقام من ٠ إلى ٩"
 
-#: activities/memory-enumerate/resource/4/Data.qml:15
+#: activities/memory-enumerate/resource/4/Data.qml:17
 #, fuzzy
 #| msgctxt "ActivityInfo|"
 #| msgid "Connect the dots to draw numbers from 0 to 9"
@@ -17075,7 +17075,7 @@ msgctxt "Data|"
 msgid "Match the numbers up to 5."
 msgstr "وصّل النّقط لرسم الأرقام من ٠ إلى ٩"
 
-#: activities/memory-enumerate/resource/5/Data.qml:15
+#: activities/memory-enumerate/resource/5/Data.qml:17
 #, fuzzy
 #| msgctxt "ActivityInfo|"
 #| msgid "Connect the dots to draw numbers from 0 to 9"
@@ -17083,7 +17083,7 @@ msgctxt "Data|"
 msgid "Match the numbers up to 6."
 msgstr "وصّل النّقط لرسم الأرقام من ٠ إلى ٩"
 
-#: activities/memory-enumerate/resource/6/Data.qml:15
+#: activities/memory-enumerate/resource/6/Data.qml:17
 #, fuzzy
 #| msgctxt "ActivityInfo|"
 #| msgid "Connect the dots to draw numbers from 0 to 9"
@@ -17091,7 +17091,7 @@ msgctxt "Data|"
 msgid "Match the numbers up to 7."
 msgstr "وصّل النّقط لرسم الأرقام من ٠ إلى ٩"
 
-#: activities/memory-enumerate/resource/7/Data.qml:15
+#: activities/memory-enumerate/resource/7/Data.qml:17
 #, fuzzy
 #| msgctxt "ActivityInfo|"
 #| msgid "Connect the dots to draw numbers from 0 to 9"
@@ -17099,7 +17099,7 @@ msgctxt "Data|"
 msgid "Match the numbers up to 8."
 msgstr "وصّل النّقط لرسم الأرقام من ٠ إلى ٩"
 
-#: activities/memory-enumerate/resource/8/Data.qml:15
+#: activities/memory-enumerate/resource/8/Data.qml:17
 #, fuzzy
 #| msgctxt "ActivityInfo|"
 #| msgid "Connect the dots to draw numbers from 0 to 9"
