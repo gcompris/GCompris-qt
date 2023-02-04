@@ -20799,7 +20799,7 @@ msgstr "Sol♯%1"
 #, qt-format
 msgctxt "PianoOctaveKeyboard|"
 msgid "A♯%1"
-msgstr "La♭%1"
+msgstr "La♯%1"
 
 #. Translators, D♭, E♭, G♭, A♭, B♭ are the note notations in English musical notation system. The numbers in the arguments represents the octave number of the note. For instance, D♭4 is a D♭ note in the 4th octave.
 #: activities/piano_composition/PianoOctaveKeyboard.qml:103
