@@ -20799,7 +20799,7 @@ msgstr "Sol♯%1"
 #, qt-format
 msgctxt "PianoOctaveKeyboard|"
 msgid "A♯%1"
-msgstr "La♭%1"
+msgstr "La♯%1"
 
 #. Translators, D♭, E♭, G♭, A♭, B♭ are the note notations in English musical notation system. The numbers in the arguments represents the octave number of the note. For instance, D♭4 is a D♭ note in the 4th octave.
 #: activities/piano_composition/PianoOctaveKeyboard.qml:103
@@ -26297,47 +26297,47 @@ msgctxt "LanguageList|"
 msgid "GCompris' language"
 msgstr "Langue de GCompris"
 
-#: core/main.cpp:162
+#: core/main.cpp:166
 msgctxt "QObject|"
 msgid "Run GCompris with the default system cursor."
 msgstr "Lance GCompris avec le curseur par défaut du système."
 
-#: core/main.cpp:166
+#: core/main.cpp:170
 msgctxt "QObject|"
 msgid "Run GCompris without cursor (touch screen mode)."
 msgstr "Lance GCompris sans curseur (mode écran tactile)."
 
-#: core/main.cpp:170
+#: core/main.cpp:174
 msgctxt "QObject|"
 msgid "Run GCompris in fullscreen mode."
 msgstr "Lance GCompris en mode plein écran."
 
-#: core/main.cpp:174
+#: core/main.cpp:178
 msgctxt "QObject|"
 msgid "Run GCompris in window mode."
 msgstr "Lance GCompris en mode fenêtré."
 
-#: core/main.cpp:178
+#: core/main.cpp:182
 msgctxt "QObject|"
 msgid "Run GCompris with sound enabled."
 msgstr "Lance GCompris avec le son."
 
-#: core/main.cpp:182
+#: core/main.cpp:186
 msgctxt "QObject|"
 msgid "Run GCompris without sound."
 msgstr "Lance GCompris sans le son."
 
-#: core/main.cpp:185
+#: core/main.cpp:189
 msgctxt "QObject|"
 msgid "Disable the kiosk mode (default)."
 msgstr "Désactiver le mode kiosque."
 
-#: core/main.cpp:188
+#: core/main.cpp:192
 msgctxt "QObject|"
 msgid "Enable the kiosk mode."
 msgstr "Activer le mode kiosque."
 
-#: core/main.cpp:192
+#: core/main.cpp:196
 msgctxt "QObject|"
 msgid ""
 "Use software renderer instead of openGL (slower but should run with any "
@@ -26347,7 +26347,7 @@ msgstr ""
 "option est plus lente mais marche potentiellement avec toutes les cartes "
 "graphiques)."
 
-#: core/main.cpp:195
+#: core/main.cpp:199
 msgctxt "QObject|"
 msgid ""
 "Use openGL renderer instead of software (faster but crash potentially "
@@ -26357,12 +26357,12 @@ msgstr ""
 "option est plus rapide mais peut potentiellement aboutir à des défauts "
 "imputables à la carte graphique)."
 
-#: core/main.cpp:199
+#: core/main.cpp:203
 msgctxt "QObject|"
 msgid "Specify the activity when starting GCompris."
 msgstr "Spécifie l'activité à démarrer quand GCompris démarre."
 
-#: core/main.cpp:204
+#: core/main.cpp:208
 msgctxt "QObject|"
 msgid "Outputs all the available activities on the standard output."
 msgstr "Affiche l'ensemble des activités sur la sortie standard."
