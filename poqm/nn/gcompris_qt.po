@@ -16644,42 +16644,42 @@ msgstr ""
 "gjenstandar. Du må finna kortpar der talkortet svarar til talet på "
 "gjenstandar på teikningkortet."
 
-#: activities/memory-enumerate/resource/1/Data.qml:15
+#: activities/memory-enumerate/resource/1/Data.qml:17
 msgctxt "Data|"
 msgid "Match the numbers up to 2."
 msgstr "Finn like tal opptil 2"
 
-#: activities/memory-enumerate/resource/2/Data.qml:15
+#: activities/memory-enumerate/resource/2/Data.qml:17
 msgctxt "Data|"
 msgid "Match the numbers up to 3."
 msgstr "Finn like tal opptil 3"
 
-#: activities/memory-enumerate/resource/3/Data.qml:15
+#: activities/memory-enumerate/resource/3/Data.qml:17
 msgctxt "Data|"
 msgid "Match the numbers up to 4."
 msgstr "Finn like tal opptil 4"
 
-#: activities/memory-enumerate/resource/4/Data.qml:15
+#: activities/memory-enumerate/resource/4/Data.qml:17
 msgctxt "Data|"
 msgid "Match the numbers up to 5."
 msgstr "Finn like tal opptil 5"
 
-#: activities/memory-enumerate/resource/5/Data.qml:15
+#: activities/memory-enumerate/resource/5/Data.qml:17
 msgctxt "Data|"
 msgid "Match the numbers up to 6."
 msgstr "Finn like tal opptil 6"
 
-#: activities/memory-enumerate/resource/6/Data.qml:15
+#: activities/memory-enumerate/resource/6/Data.qml:17
 msgctxt "Data|"
 msgid "Match the numbers up to 7."
 msgstr "Finn like tal opptil 7"
 
-#: activities/memory-enumerate/resource/7/Data.qml:15
+#: activities/memory-enumerate/resource/7/Data.qml:17
 msgctxt "Data|"
 msgid "Match the numbers up to 8."
 msgstr "Finn like tal opptil 8"
 
-#: activities/memory-enumerate/resource/8/Data.qml:15
+#: activities/memory-enumerate/resource/8/Data.qml:17
 msgctxt "Data|"
 msgid "Match the numbers up to 9."
 msgstr "Finn like tal opptil 9"
@@ -25797,47 +25797,47 @@ msgctxt "LanguageList|"
 msgid "GCompris' language"
 msgstr "GCompris-språket"
 
-#: core/main.cpp:162
+#: core/main.cpp:166
 msgctxt "QObject|"
 msgid "Run GCompris with the default system cursor."
 msgstr "Køyr GCompris med standard musepeikarar."
 
-#: core/main.cpp:166
+#: core/main.cpp:170
 msgctxt "QObject|"
 msgid "Run GCompris without cursor (touch screen mode)."
 msgstr "Køyr GCompris utan musepeikar (peikeskjermmodus)."
 
-#: core/main.cpp:170
+#: core/main.cpp:174
 msgctxt "QObject|"
 msgid "Run GCompris in fullscreen mode."
 msgstr "Køyr GCompris i fullskjermmodus."
 
-#: core/main.cpp:174
+#: core/main.cpp:178
 msgctxt "QObject|"
 msgid "Run GCompris in window mode."
 msgstr "Køyr GCompris i vindaugsmodus."
 
-#: core/main.cpp:178
+#: core/main.cpp:182
 msgctxt "QObject|"
 msgid "Run GCompris with sound enabled."
 msgstr "Køyr GCompris med lyd."
 
-#: core/main.cpp:182
+#: core/main.cpp:186
 msgctxt "QObject|"
 msgid "Run GCompris without sound."
 msgstr "Køyr GCompris utan lyd."
 
-#: core/main.cpp:185
+#: core/main.cpp:189
 msgctxt "QObject|"
 msgid "Disable the kiosk mode (default)."
 msgstr "Ikkje bruk kioskmodus (standard)."
 
-#: core/main.cpp:188
+#: core/main.cpp:192
 msgctxt "QObject|"
 msgid "Enable the kiosk mode."
 msgstr "Bruk kioskmodus."
 
-#: core/main.cpp:192
+#: core/main.cpp:196
 msgctxt "QObject|"
 msgid ""
 "Use software renderer instead of openGL (slower but should run with any "
@@ -25846,7 +25846,7 @@ msgstr ""
 "Bruk programvare­basert i staden for OpenGL-basert oppteikning (er tregare, "
 "men verkar med alle skjermkort)"
 
-#: core/main.cpp:195
+#: core/main.cpp:199
 msgctxt "QObject|"
 msgid ""
 "Use openGL renderer instead of software (faster but crash potentially "
@@ -25855,12 +25855,12 @@ msgstr ""
 "Bruk OpenGL-basert i staden for programvare­basert oppteikning (er raskare, "
 "men kan òg krasja programmet, avhengig av kva skjermkort du har)."
 
-#: core/main.cpp:199
+#: core/main.cpp:203
 msgctxt "QObject|"
 msgid "Specify the activity when starting GCompris."
 msgstr "Vel kva aktivitet GCompris skal starta med."
 
-#: core/main.cpp:204
+#: core/main.cpp:208
 msgctxt "QObject|"
 msgid "Outputs all the available activities on the standard output."
 msgstr "Vis oversikt over alle aktivitetane på terminalen."
