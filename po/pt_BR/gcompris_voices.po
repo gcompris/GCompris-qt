@@ -1,22 +1,22 @@
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
 #
-# Luiz Fernando Ranghetti <elchevive@opensuse.org>, 2017, 2018, 2020, 2021, 2022, 2023.
-# Frederico Gonçalves Guimarães <frederico@teia.bio.br>, 2019, 2021.
+# Luiz Fernando Ranghetti <elchevive@opensuse.org>, 2017, 2018, 2020.
+# Frederico Gonçalves Guimarães <frederico@teia.bio.br>, 2019, 2021, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-12-13 00:48+0000\n"
-"PO-Revision-Date: 2023-02-07 14:04-0300\n"
-"Last-Translator: Luiz Fernando Ranghetti <elchevive@opensuse.org>\n"
+"PO-Revision-Date: 2023-02-08 17:08-0300\n"
+"Last-Translator: Frederico Goncalves Guimaraes <frederico@teia.bio.br>\n"
 "Language-Team: Portuguese <kde-i18n-pt_BR@kde.org>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 21.12.3\n"
+"X-Generator: Lokalize 22.12.1\n"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "advanced_colors"
 #: activities/advanced_colors/ActivityInfo.qml:18
@@ -316,7 +316,7 @@ msgstr "Clique na cor correta"
 msgid ""
 "Select the correct comparator sign for each pair of numbers in the list."
 msgstr ""
-"Selecione o sinal de comparador correto para cada par de números na lista."
+"Selecione sinal de comparação correto para cada par de números da lista."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "crane"
 #: activities/crane/ActivityInfo.qml:23
@@ -453,12 +453,13 @@ msgstr ""
 msgid ""
 "Select the appropriate number of parts as described in the instructions."
 msgstr ""
+"Selecione o número apropriado de partes, conforme descrito nas instruções."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "fractions_find"
 #: activities/fractions_find/ActivityInfo.qml:17
 #, kde-format
 msgid "Find the correct numerator and denominator of the represented fraction"
-msgstr ""
+msgstr "Encontre o numerador e o denominador corretos da fração representada"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "geo-country"
 #: activities/geo-country/ActivityInfo.qml:22
@@ -682,8 +683,8 @@ msgstr ""
 msgid ""
 "Move animals to their homes using a left click or right click on your mouse."
 msgstr ""
-"Mover animais para suas casas usando um clique no botão direito ou esquerdo "
-"do seu mouse."
+"Mova os animais para suas casas, clicando com o botão esquerdo ou direito do "
+"mouse."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "leftright"
 #: activities/leftright/ActivityInfo.qml:18
@@ -884,10 +885,9 @@ msgstr "Clique no dinheiro para pagar."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "morse_code"
 #: activities/morse_code/ActivityInfo.qml:21
-#, fuzzy, kde-format
-#| msgid "Learn and practice roman to arabic numerals conversion"
+#, kde-format
 msgid "Learn and practice the International Morse code"
-msgstr "Aprenda e pratique conversão de algarismos romanos em arábicos"
+msgstr "Aprenda e pratique o código Morse internacional"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "mosaic"
 #: activities/mosaic/ActivityInfo.qml:18
@@ -1216,6 +1216,9 @@ msgid ""
 "Create pairs of numbers equal to ten. Select a number in the list, then "
 "select an empty spot of an operation to move the selected number there."
 msgstr ""
+"Crie pares de números cuja soma seja igual a 10. Selecione um número da "
+"lista, depois selecione um espaço vazio em uma operação para mover o número "
+"selecionado para lá."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "tens_complement_swap"
 #: activities/tens_complement_swap/ActivityInfo.qml:17
@@ -1224,6 +1227,8 @@ msgid ""
 "Create pairs of numbers equal to ten. Select a number, then select another "
 "number of the same operation to swap their position."
 msgstr ""
+"Crie pares de números cuja soma seja igual a 10. Selecione um número e, "
+"depois, selecione outro número da mesma operação para trocar sua posição."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "tens_complement_use"
 #: activities/tens_complement_use/ActivityInfo.qml:17
@@ -1233,6 +1238,9 @@ msgid ""
 "number in the list, then select an empty spot of an operation to move the "
 "selected number there."
 msgstr ""
+"Decomponha as operações para incluir pares de números cuja soma seja igual a "
+"10. Selecione um número da lista e, depois, selecione um espaço vazio em uma "
+"operação para mover o número selecionado para lá."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "tic_tac_toe_2players"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "tic_tac_toe"
@@ -1276,3 +1284,10 @@ msgstr "Digite as palavras no seu teclado antes delas chegarem ao chão."
 
 #~ msgid "put here in comment the text for the intro voice"
 #~ msgstr "coloque aqui no comentário o texto da introdução da voz"
+
+#~ msgid ""
+#~ "Change the planets' gravitational force by moving the sliders up and "
+#~ "down. Be careful not to crash Tux's spaceship."
+#~ msgstr ""
+#~ "Mude a força gravitacional dos planetas movendo os controles deslizantes "
+#~ "para cima e para baixo. Cuidado para não bater na nave espacial do Tux."

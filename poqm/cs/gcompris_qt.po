@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2023-01-03 15:50+0100\n"
+"PO-Revision-Date: 2023-02-08 14:57+0100\n"
 "Last-Translator: Vit Pelcak <vit@pelcak.org>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
 "Language: cs\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Lokalize 22.12.0\n"
+"X-Generator: Lokalize 22.12.2\n"
 "X-Qt-Contexts: true\n"
 
 #. Activity title
@@ -5140,7 +5140,7 @@ msgstr "Pokračovat"
 #: activities/comparator/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Compare numbers"
-msgstr ""
+msgstr "Porovnej čísla"
 
 #. Help title
 #: activities/comparator/ActivityInfo.qml:19
@@ -5209,27 +5209,27 @@ msgstr ""
 #: activities/comparator/resource/2/Data.qml:14
 msgctxt "Data|"
 msgid "Numbers from 1 to 19."
-msgstr ""
+msgstr "Číslice od 1 do 9."
 
 #: activities/comparator/resource/3/Data.qml:14
 msgctxt "Data|"
 msgid "Numbers from 1 to 100."
-msgstr ""
+msgstr "Čísla od 1 do 100."
 
 #: activities/comparator/resource/4/Data.qml:14
 msgctxt "Data|"
 msgid "Numbers from 1 to 1000."
-msgstr ""
+msgstr "Čísla od 1 do 1000."
 
 #: activities/comparator/resource/5/Data.qml:14
 msgctxt "Data|"
 msgid "Numbers from 1 to 1000000."
-msgstr ""
+msgstr "Čísla od 1 do 1000000."
 
 #: activities/comparator/resource/6/Data.qml:14
 msgctxt "Data|"
 msgid "Numbers from 1 to 1 billion."
-msgstr ""
+msgstr "Čísla od 1 do 1 miliardy."
 
 #: activities/comparator/resource/7/Data.qml:14
 msgctxt "Data|"
@@ -17933,7 +17933,7 @@ msgstr ""
 #: activities/morse_code/resource/1/Data.qml:13
 msgctxt "Data|"
 msgid "Letters."
-msgstr ""
+msgstr "Znaky."
 
 #: activities/morse_code/resource/1/Data.qml:18
 #: activities/morse_code/resource/1/Data.qml:34
@@ -17967,7 +17967,7 @@ msgstr ""
 #: activities/morse_code/resource/2/Data.qml:13
 msgctxt "Data|"
 msgid "Digits."
-msgstr ""
+msgstr "Číslice."
 
 #: activities/morse_code/resource/2/Data.qml:23
 #: activities/morse_code/resource/2/Data.qml:39
@@ -17985,7 +17985,7 @@ msgstr ""
 #: activities/morse_code/resource/3/Data.qml:13
 msgctxt "Data|"
 msgid "Words."
-msgstr ""
+msgstr "Slova."
 
 #: activities/morse_code/resource/3/Data.qml:24
 msgctxt "Data|"
