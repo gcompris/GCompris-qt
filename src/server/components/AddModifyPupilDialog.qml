@@ -31,7 +31,14 @@ Popup {
     focus: true
     closePolicy: Popup.CloseOnEscape | Popup.CloseOnPressOutsideParent
 
-    onOpened: pupilNameTextInput.forceActiveFocus();
+    onOpened: {
+        pupilNameTextInput.text = "";
+        pupilNameTextInput.forceActiveFocus();
+        for(var i = 0 ; i < groupNamesListView.count ; ++ i) {
+            groupNamesListView.currentIndex = i;
+            groupNamesListView.currentItem.checked = false;
+        }
+    }
 
     ColumnLayout {
         height: parent.height
@@ -131,9 +138,6 @@ Popup {
 
                     text: modelData.name
                     width: groupNamesRectangle.width / 2
-                    onCheckedChanged: {
-                        print("checked changed: " + index)
-                    }
                 }
             }
         }
