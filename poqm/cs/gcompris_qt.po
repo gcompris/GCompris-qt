@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2023-02-08 14:57+0100\n"
+"PO-Revision-Date: 2023-02-10 11:14+0100\n"
 "Last-Translator: Vit Pelcak <vit@pelcak.org>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
 "Language: cs\n"
@@ -4066,6 +4066,24 @@ msgid ""
 "little bit and try to predict your opponent's future moves, so that you can "
 "catch him or secure your pieces from his attacks."
 msgstr ""
+"V této aktivitě poznáte hru šachy hraním proti počítači. Aktivita zobrazuje "
+"možné cílové pozice pro libovolnou vybranou figuru, což dětem pomáhá "
+"pochopit, jak se figury pohybují. Na první úrovni je počítač zcela náhodný, "
+"aby dal dětem větší šanci. Jak se úroveň zvyšuje, počítač hraje lépe. Pomocí "
+"tlačítka šipek můžeš ručně zvolit úroveň obtížnosti\n"
+"\n"
+"Matu můžete dosáhnout dříve, pokud budete postupovat podle těchto "
+"jednoduchých pravidel:\n"
+"     Pokusíte se zahnat soupeřova krále do rohu.\n"
+"<b>Vysvětlení</b>: takto by král vašeho soupeře měl jen 3směry k pohybu "
+"místo 8 z lepší polohy.\n"
+"     'Výroba pasti'. Použijte své pěšce jako návnady.\n"
+"<b>Vysvětlení</b>: tímto způsobem můžete svého soupeře vylákat z jeho "
+"'komfortní zóny'.\n"
+"     Buďte dost trpěliví.\n"
+"<b>Vysvětlení</b>: příliš nespěchejte, buďte trpěliví. Přemýšlejte a pokuste "
+"se předvídat budoucí tahy soupeře, abyste ho mohli nachytat nebo ochránit "
+"své figury před jeho útoky."
 
 #: activities/chess/ActivityInfo.qml:32
 #: activities/chess_2players/ActivityInfo.qml:32
@@ -8873,48 +8891,48 @@ msgstr ""
 #: activities/fractions_create/resource/5/Data.qml:18
 msgctxt "Data|"
 msgid "Select 0.5 pie."
-msgstr ""
+msgstr "Vyber 0,5 koláče."
 
 #: activities/fractions_create/resource/5/Data.qml:24
 msgctxt "Data|"
 msgid "Select 0.25 pie."
-msgstr ""
+msgstr "Vyber 0,25 koláče."
 
 #: activities/fractions_create/resource/5/Data.qml:30
 msgctxt "Data|"
 msgid "Select 0.4 pie."
-msgstr ""
+msgstr "Vyber 0,4 koláče."
 
 #: activities/fractions_create/resource/5/Data.qml:36
 msgctxt "Data|"
 msgid "Select 0.75 pie."
-msgstr ""
+msgstr "Vyber 0,75 koláče."
 
 #: activities/fractions_create/resource/5/Data.qml:42
 msgctxt "Data|"
 msgid "Select 0.8 pie."
-msgstr ""
+msgstr "Vyber 0,8 koláče."
 
 #: activities/fractions_create/resource/5/Data.qml:50
 msgctxt "Data|"
 msgid "Select 1.25 pies."
-msgstr ""
+msgstr "Vyber 1,25 koláče."
 
 #: activities/fractions_create/resource/5/Data.qml:56
 msgctxt "Data|"
 msgid "Select 1.4 pies."
-msgstr ""
+msgstr "Vyber 1,4 koláče."
 
 #: activities/fractions_create/resource/5/Data.qml:62
 #: activities/fractions_create/resource/5/Data.qml:68
 msgctxt "Data|"
 msgid "Select 1.5 pies."
-msgstr ""
+msgstr "Vyber 1,5 koláče."
 
 #: activities/fractions_create/resource/5/Data.qml:74
 msgctxt "Data|"
 msgid "Select 1.75 pies."
-msgstr ""
+msgstr "Vyber 1,75 koláče."
 
 #: activities/fractions_create/resource/6/Data.qml:9
 msgctxt "Data|"
@@ -8924,48 +8942,48 @@ msgstr ""
 #: activities/fractions_create/resource/6/Data.qml:18
 msgctxt "Data|"
 msgid "Select 0.5 square."
-msgstr ""
+msgstr "Vyber 0,5 čtverce."
 
 #: activities/fractions_create/resource/6/Data.qml:24
 msgctxt "Data|"
 msgid "Select 0.25 square."
-msgstr ""
+msgstr "Vyber 0,25 čtverce."
 
 #: activities/fractions_create/resource/6/Data.qml:30
 msgctxt "Data|"
 msgid "Select 0.4 square."
-msgstr ""
+msgstr "Vyber 0,4 čtverce."
 
 #: activities/fractions_create/resource/6/Data.qml:36
 msgctxt "Data|"
 msgid "Select 0.75 square."
-msgstr ""
+msgstr "Vyber 0,75 čtverce."
 
 #: activities/fractions_create/resource/6/Data.qml:42
 msgctxt "Data|"
 msgid "Select 0.8 square."
-msgstr ""
+msgstr "Vyber 0,8 čtverce."
 
 #: activities/fractions_create/resource/6/Data.qml:50
 msgctxt "Data|"
 msgid "Select 1.25 squares."
-msgstr ""
+msgstr "Vyber 1,25 čtverce."
 
 #: activities/fractions_create/resource/6/Data.qml:56
 msgctxt "Data|"
 msgid "Select 1.4 squares."
-msgstr ""
+msgstr "Vyber 1,4 čtverce."
 
 #: activities/fractions_create/resource/6/Data.qml:62
 #: activities/fractions_create/resource/6/Data.qml:68
 msgctxt "Data|"
 msgid "Select 1.5 squares."
-msgstr ""
+msgstr "Vyber 1,5 čtverce."
 
 #: activities/fractions_create/resource/6/Data.qml:74
 msgctxt "Data|"
 msgid "Select 1.75 squares."
-msgstr ""
+msgstr "Vyber 1,75 čtverce."
 
 #: activities/fractions_create/resource/7/Data.qml:9
 msgctxt "Data|"
