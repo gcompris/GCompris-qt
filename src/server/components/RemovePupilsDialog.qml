@@ -27,13 +27,6 @@ Popup {
     focus: true
     closePolicy: Popup.CloseOnEscape | Popup.CloseOnPressOutsideParent
 
-//    onOpened: {
-//        pupilsNamesText.text = "test"
-//        print("uuuu")
-//       // console.log(pupilsDetailsRepeater.itemAt(2)).pupilDetailsRectangleMouseArea.width
-
-//    }
-
     ColumnLayout {
         height: parent.height
 
@@ -78,10 +71,7 @@ Popup {
                   pixelSize: 12
                 }
             }
-
         }
-
-
 
         Rectangle {
             id: okCancelRectangle
@@ -111,7 +101,6 @@ Popup {
                 text: qsTr("Cancel")
 
                 onClicked: {
-                   console.log("cancel...")
                    removePupilsDialog.close();
                 }
             }
