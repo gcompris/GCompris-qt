@@ -136,7 +136,6 @@ Popup {
                 text: qsTr("Cancel")
 
                 onClicked: {
-                   console.log("cancel...")
                    addPupilsFromListDialog.close();
                 }
             }
