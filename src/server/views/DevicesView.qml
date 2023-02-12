@@ -100,7 +100,7 @@ Item {
                     height: 40
 
                     border.color: "green"
-                    border.width: 5
+                    border.width: 2
 
                     MouseArea {
                         id: pupilDetailsRectangleMouseArea
@@ -161,7 +161,7 @@ Item {
             TextInput {
                 id: broadcastIpText
                 // todo set default from conf, get a list of possible ip from https://doc.qt.io/qt-5/qnetworkinterface.html?
-                text: "255.255.255.255"
+                text: "255.255.255.255;192.168.0.255"
             }
 
             Label {
@@ -178,7 +178,8 @@ Item {
                 text: qsTr("Connect devices")
 
                 onClicked: {
-                    networkController.broadcastDatagram(broadcastIpText.text, deviceIdText.text);
+                    var ipList = broadcastIpText.text.split(";");
+                    networkController.broadcastDatagram(ipList, deviceIdText.text);
                 }
             }
             ViewButton {
