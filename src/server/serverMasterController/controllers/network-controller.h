@@ -47,7 +47,7 @@ class NetworkController : public QObject
 public:
     explicit NetworkController(QObject *parent = nullptr);
 
-    Q_INVOKABLE void broadcastDatagram(const QString &broadcastIp, const QString &deviceId);
+    Q_INVOKABLE void broadcastDatagram(const QStringList &broadcastIpList, const QString &deviceId);
     Q_INVOKABLE void sendLoginList(const QStringList &selectedUsers);
     Q_INVOKABLE void disconnectSession(const QStringList &selectedUsers = QStringList());
 
