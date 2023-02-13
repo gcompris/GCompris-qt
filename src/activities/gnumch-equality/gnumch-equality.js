@@ -22,6 +22,8 @@ var _modelCells
 var _levels
 var _useMultipleDataset
 
+var primeNumbers = [2, 3, 5, 7, 11, 13, 17, 19, 23]
+
 function start(items, type, useMultipleDataset) {
     _levels = items.levels
     _useMultipleDataset = useMultipleDataset
@@ -69,8 +71,7 @@ function getGoal() {
             var goalsFactor = [4, 6, 8, 10, 12, 15, 18, 20]
             goal = goalsFactor[_currentLevel]
         } else if (_type == "primes") {
-            var primenumbers = [2, 3, 5, 7, 11, 13, 17, 19, 23]
-            goal = primenumbers[_currentLevel + 1] + 1
+            goal = primeNumbers[_currentLevel + 1] + 1
         }
     }
 
@@ -122,16 +123,15 @@ function genFactor() {
 }
 
 function genPrime() {
-    var primenumbers = [2, 3, 5, 7, 11, 13, 17, 19, 23]
     var badNumbers = [1, 4, 6, 8, 9, 10, 12, 14, 15, 16, 18, 20, 21, 22]
     if (Math.random() < 0.5) {
         // Choose a good number
         var goodOnes = []
-        for (var it = 0; it < primenumbers.length; ++it) {
-            if (getGoal() < primenumbers[it])
+        for (var it = 0; it < primeNumbers.length; ++it) {
+            if (getGoal() < primeNumbers[it])
                 break
 
-            goodOnes.push(primenumbers[it])
+            goodOnes.push(primeNumbers[it])
         }
         return goodOnes[Math.floor(Math.random() * goodOnes.length)]
     } else {
@@ -320,9 +320,8 @@ function isAnswerCorrect(position) {
             return false
         }
     } else if (_type == "primes") {
-        var primenumbers = [2, 3, 5, 7, 11, 13, 17, 19]
-        for (var it = 0; it < 8; ++it) {
-            if (primenumbers[it] == _modelCells.get(position).number1)
+        for (var it = 0; it < primeNumbers.length; ++it) {
+            if (primeNumbers[it] == _modelCells.get(position).number1)
                 return true
         }
         return false
