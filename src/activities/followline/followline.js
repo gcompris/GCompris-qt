@@ -19,14 +19,18 @@ var numberOfLevel = 8
 var items
 var createdLineParts
 var movedOut = true
+// used to bypass initLevel triggered on stop by onHeightChanged...
+var isStopped = false
 
 function start(items_) {
+    isStopped = false
     items = items_
     currentLevel = 0
     initLevel()
 }
 
 function stop() {
+    isStopped = true
     items.lineBrokenTimer.stop()
     destroyLineParts()
 }
@@ -35,7 +39,7 @@ function initLevel() {
     /* Check items.bar because when starting followline at least twice,
      it is undefined (called by FollowLine.qml:onHeightChanged())
     */
-    if(!items || !items.bar)
+    if(!items || !items.bar || isStopped)
         return
 
     items.bar.level = currentLevel + 1
