@@ -122,6 +122,7 @@ ActivityBase {
             Activity.stop()
         }
 
+        Keys.enabled: !bonus.isPlaying
         Keys.onRightPressed: muncher.moveTo(muncher.moveRight)
         Keys.onLeftPressed: muncher.moveTo(muncher.moveLeft)
         Keys.onDownPressed: muncher.moveTo(muncher.moveDown)
