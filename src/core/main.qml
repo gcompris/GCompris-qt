@@ -475,6 +475,10 @@ Window {
             enterItem = pageView.get(pageView.depth-2)
             exitItem = currentItem
 
+            if(exitItem.isMusicalActivity) {
+                main.isMusicalActivityRunning = false
+            }
+
             if(!enterItem.isDialog) {
                 currentItem.stop()
             }
