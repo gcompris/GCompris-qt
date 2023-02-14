@@ -109,7 +109,7 @@ Rectangle {
                     Rectangle {
                         id: rect
                         width: parent.width
-                        height: width * 0.4
+                        height: width * 0.6
                         border.width: 3
                         border.color: "black"
                         color: "white"
@@ -165,7 +165,7 @@ Rectangle {
                     Rectangle {
                         id: rect2
                         width: parent.width
-                        height: width * 0.4
+                        height: width * 0.6
                         border.width: 3
                         border.color: "black"
                         color: "white"
