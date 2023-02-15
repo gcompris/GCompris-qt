@@ -66,13 +66,13 @@ Don't forget to include this last date.
 Please respect the format of the date (YYYY-MM-DD),it is used by scripts.
 -->
 <date
->2020-08-30</date>
+>2022-01-21</date>
 
 <!--version information of the application and kde this documentation is valid for.
 for example 'xx.yy.zz'
 -->
 <releaseinfo
->0.97</releaseinfo>
+>2.1</releaseinfo>
 
 <!-- Abstract about this handbook -->
 
@@ -578,7 +578,7 @@ for example 'xx.yy.zz'
 <para
 ><userinput
 ><command
->"C:\Program Files\Gcompris\gcompris-qt.exe" --disable-kiosk -f -C</command
+>"C:\Program Files\Gcompris\gcompris-qt.exe" --enable-kioskmode -f -C</command
 ></userinput
 ></para>
 </sect2>
@@ -592,7 +592,7 @@ for example 'xx.yy.zz'
 <para
 ><userinput
 ><command
->gcompris-qt --disable-kiosk -f -C</command
+>gcompris-qt --enable-kioskmode -f -C</command
 ></userinput
 ></para>
 </sect2>
@@ -608,7 +608,7 @@ for example 'xx.yy.zz'
 <para
 >&gcompris; </para>
 <para
->Programm Copyright 2000-2020 Timothée Giet und Andere </para>
+>Programm Copyright 2000-2022 Timothée Giet und Andere </para>
 
 <para
 >Übersetzung Deutsches KDE-Übersetzerteam<email
