@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
-"PO-Revision-Date: 2023-02-07 11:01\n"
+"PO-Revision-Date: 2023-02-15 11:04\n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
@@ -1171,7 +1171,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "You can use the arrow buttons to manually select the difficulty level. Tux "
 "will play better when you increase the level."
-msgstr ""
+msgstr "使用箭头按键选择难度，企鹅将随难度等级提高游戏表现"
 
 #: activities/align4/ActivityInfo.qml:25
 #: activities/align4_2players/ActivityInfo.qml:24
@@ -6343,7 +6343,7 @@ msgstr ""
 #: activities/explore_farm_animals/resource/board/board1.qml:61
 msgctxt "board1|"
 msgid "This animal can purr."
-msgstr ""
+msgstr "这只动物会打呼."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:69
 msgctxt "board1|"
@@ -6360,7 +6360,7 @@ msgstr ""
 #: activities/explore_farm_animals/resource/board/board1.qml:73
 msgctxt "board1|"
 msgid "This animal wallows in the mud to control its body temperature."
-msgstr ""
+msgstr "这只动物通过在泥沙中打滚控制体温。"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:81
 msgctxt "board1|"
@@ -6373,6 +6373,8 @@ msgid ""
 "The duck goes 'quack'. Ducks are mostly aquatic birds. They have waterproof "
 "feathers and webbed feet which enable them to swim on the water."
 msgstr ""
+"鸭子会“嘎嘎”叫，大部分鸭子都是水禽，拥有防水的羽毛和蹼状的脚，帮助它们在水里"
+"游泳。"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:85
 msgctxt "board1|"
