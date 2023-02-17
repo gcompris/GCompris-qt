@@ -29,6 +29,8 @@ ActivityBase {
     onStart: focus = true
     onStop: {}
 
+    isMusicalActivity: needsVoices
+
     pageComponent: Image {
         id: background
         source: "qrc:/gcompris/src/activities/chess/resource/background-wood.svg"
@@ -108,7 +110,6 @@ ActivityBase {
             activity.audioEffects.done.connect(voiceDone)
             Activity.start(items, url, numberOfLevels)
             if(activity.needsVoices === true) {
-                activity.isMusicalActivity = true
                 if(!ApplicationSettings.isAudioVoicesEnabled || !ApplicationSettings.isAudioEffectsEnabled)
                     background.audioDisabled = true
             }
