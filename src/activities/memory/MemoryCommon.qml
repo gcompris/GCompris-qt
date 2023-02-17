@@ -27,6 +27,8 @@ ActivityBase {
     onStart: focus = true
     onStop: {}
 
+    isMusicalActivity: needsVoices
+
     pageComponent: Image {
         id: background
         source: activity.backgroundImg
@@ -76,7 +78,6 @@ ActivityBase {
         onStart: {
             Activity.start(items);
             if(activity.needsVoices === true) {
-                activity.isMusicalActivity = true
                 if(!ApplicationSettings.isAudioVoicesEnabled || !ApplicationSettings.isAudioEffectsEnabled)
                     background.audioDisabled = true
             }
