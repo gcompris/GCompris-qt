@@ -6620,7 +6620,7 @@ msgstr ""
 "U trećoj razini prikazuje se nasumični tekstualni upit i moraš kliknuti na "
 "životinju koja odgovara tekstu."
 
-#: activities/explore_farm_animals/ExploreLevels.qml:303
+#: activities/explore_farm_animals/ExploreLevels.qml:304
 msgctxt "ExploreLevels|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -6629,12 +6629,12 @@ msgstr ""
 "Ova aktivnost zahtijeva zvuk, pa će reproducirati neke zvukove čak i ako su "
 "audio glasovi ili efekti onemogućeni u glavnoj konfiguraciji."
 
-#: activities/explore_farm_animals/ExploreLevels.qml:304
+#: activities/explore_farm_animals/ExploreLevels.qml:305
 msgctxt "ExploreLevels|"
 msgid "Quit"
 msgstr "Zatvori"
 
-#: activities/explore_farm_animals/ExploreLevels.qml:305
+#: activities/explore_farm_animals/ExploreLevels.qml:306
 msgctxt "ExploreLevels|"
 msgid "Continue"
 msgstr "Nastavi"
@@ -17549,7 +17549,7 @@ msgctxt "math_util|"
 msgid "÷"
 msgstr "÷"
 
-#: activities/memory/MemoryCommon.qml:324
+#: activities/memory/MemoryCommon.qml:325
 msgctxt "MemoryCommon|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -17558,12 +17558,12 @@ msgstr ""
 "Ova aktivnost zahtijeva zvuk, pa će reproducirati neke zvukove čak i ako su "
 "audio glasovi ili efekti onemogućeni u glavnoj konfiguraciji."
 
-#: activities/memory/MemoryCommon.qml:325
+#: activities/memory/MemoryCommon.qml:326
 msgctxt "MemoryCommon|"
 msgid "Quit"
 msgstr "Zatvori"
 
-#: activities/memory/MemoryCommon.qml:326
+#: activities/memory/MemoryCommon.qml:327
 msgctxt "MemoryCommon|"
 msgid "Continue"
 msgstr "Nastavi"

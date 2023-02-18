@@ -6816,7 +6816,7 @@ msgstr ""
 "Во третото ниво, се прикажува случајно избран текст и вие треба да кликнете "
 "на животно што одговара на текстот."
 
-#: activities/explore_farm_animals/ExploreLevels.qml:303
+#: activities/explore_farm_animals/ExploreLevels.qml:304
 msgctxt "ExploreLevels|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -6825,12 +6825,12 @@ msgstr ""
 "Оваа активност бара звук, така што ќе репродуцира некои звуци дури и ако е "
 "аудиогласовите или ефектите се оневозможени во главната конфигурација."
 
-#: activities/explore_farm_animals/ExploreLevels.qml:304
+#: activities/explore_farm_animals/ExploreLevels.qml:305
 msgctxt "ExploreLevels|"
 msgid "Quit"
 msgstr "Исклучи"
 
-#: activities/explore_farm_animals/ExploreLevels.qml:305
+#: activities/explore_farm_animals/ExploreLevels.qml:306
 msgctxt "ExploreLevels|"
 msgid "Continue"
 msgstr "Продолжи"
@@ -17987,7 +17987,7 @@ msgctxt "math_util|"
 msgid "÷"
 msgstr "÷"
 
-#: activities/memory/MemoryCommon.qml:324
+#: activities/memory/MemoryCommon.qml:325
 msgctxt "MemoryCommon|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -17996,12 +17996,12 @@ msgstr ""
 "Оваа активност бара звук, така што ќе репродуцира некои звуци дури и ако е "
 "аудиогласовите или ефектите се оневозможени во главната конфигурација."
 
-#: activities/memory/MemoryCommon.qml:325
+#: activities/memory/MemoryCommon.qml:326
 msgctxt "MemoryCommon|"
 msgid "Quit"
 msgstr "Исклучи"
 
-#: activities/memory/MemoryCommon.qml:326
+#: activities/memory/MemoryCommon.qml:327
 msgctxt "MemoryCommon|"
 msgid "Continue"
 msgstr "Продолжи"

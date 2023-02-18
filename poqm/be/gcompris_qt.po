@@ -6951,7 +6951,7 @@ msgstr ""
 "На трэцім узроўні паказваецца выпадкова выбраная тэкставая інфармацыя і вы "
 "мусіце выбраць тую жывёлу, якую апісвае прыведзены тэкст."
 
-#: activities/explore_farm_animals/ExploreLevels.qml:303
+#: activities/explore_farm_animals/ExploreLevels.qml:304
 msgctxt "ExploreLevels|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -6961,12 +6961,12 @@ msgstr ""
 "некаторыя гукі нават пры выключаных галасах ці аўдыаэфектах у галоўнай "
 "канфігурацыі."
 
-#: activities/explore_farm_animals/ExploreLevels.qml:304
+#: activities/explore_farm_animals/ExploreLevels.qml:305
 msgctxt "ExploreLevels|"
 msgid "Quit"
 msgstr "Выйсці"
 
-#: activities/explore_farm_animals/ExploreLevels.qml:305
+#: activities/explore_farm_animals/ExploreLevels.qml:306
 msgctxt "ExploreLevels|"
 msgid "Continue"
 msgstr "Працягнуць"
@@ -18346,7 +18346,7 @@ msgctxt "math_util|"
 msgid "÷"
 msgstr "÷"
 
-#: activities/memory/MemoryCommon.qml:324
+#: activities/memory/MemoryCommon.qml:325
 msgctxt "MemoryCommon|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -18356,12 +18356,12 @@ msgstr ""
 "некаторыя гукі нават пры выключаных галасах ці аўдыаэфектах у галоўнай "
 "канфігурацыі."
 
-#: activities/memory/MemoryCommon.qml:325
+#: activities/memory/MemoryCommon.qml:326
 msgctxt "MemoryCommon|"
 msgid "Quit"
 msgstr "Выйсці"
 
-#: activities/memory/MemoryCommon.qml:326
+#: activities/memory/MemoryCommon.qml:327
 msgctxt "MemoryCommon|"
 msgid "Continue"
 msgstr "Працягнуць"

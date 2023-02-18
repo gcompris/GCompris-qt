@@ -6558,7 +6558,7 @@ msgstr ""
 "Ve třetí úrovni se náhodně zobrazí text a ty musíš kliknout na ikonu "
 "zvířete, které tomuto textu odpovídá."
 
-#: activities/explore_farm_animals/ExploreLevels.qml:303
+#: activities/explore_farm_animals/ExploreLevels.qml:304
 msgctxt "ExploreLevels|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -6567,12 +6567,12 @@ msgstr ""
 "Tato aktivita vyžaduje zvuk, takže přehraje některé zvuky, i když jsou "
 "zvukové hlasy nebo efekty vypnuté v hlavní konfiguraci."
 
-#: activities/explore_farm_animals/ExploreLevels.qml:304
+#: activities/explore_farm_animals/ExploreLevels.qml:305
 msgctxt "ExploreLevels|"
 msgid "Quit"
 msgstr "Ukončit"
 
-#: activities/explore_farm_animals/ExploreLevels.qml:305
+#: activities/explore_farm_animals/ExploreLevels.qml:306
 msgctxt "ExploreLevels|"
 msgid "Continue"
 msgstr "Pokračovat"
@@ -17079,7 +17079,7 @@ msgctxt "math_util|"
 msgid "÷"
 msgstr "÷"
 
-#: activities/memory/MemoryCommon.qml:324
+#: activities/memory/MemoryCommon.qml:325
 msgctxt "MemoryCommon|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -17088,12 +17088,12 @@ msgstr ""
 "Tato aktivita potřebuje zvukový výstup, proto bude přehrávat zvuky i když "
 "budou hlasy nebo zvukové efekty zakázané v hlavním nastavení."
 
-#: activities/memory/MemoryCommon.qml:325
+#: activities/memory/MemoryCommon.qml:326
 msgctxt "MemoryCommon|"
 msgid "Quit"
 msgstr "Ukončit"
 
-#: activities/memory/MemoryCommon.qml:326
+#: activities/memory/MemoryCommon.qml:327
 msgctxt "MemoryCommon|"
 msgid "Continue"
 msgstr "Pokračovat"

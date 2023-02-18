@@ -6760,7 +6760,7 @@ msgstr ""
 "No nível 3, um texto aleatório será apresentado e você deve clicar sobre o "
 "animal que corresponda àquele texto."
 
-#: activities/explore_farm_animals/ExploreLevels.qml:303
+#: activities/explore_farm_animals/ExploreLevels.qml:304
 msgctxt "ExploreLevels|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -6769,12 +6769,12 @@ msgstr ""
 "Essa atividade usa sons, por isso ela tocará alguns sons mesmo que o áudio "
 "de vozes ou efeitos esteja desabilitado na configuração principal."
 
-#: activities/explore_farm_animals/ExploreLevels.qml:304
+#: activities/explore_farm_animals/ExploreLevels.qml:305
 msgctxt "ExploreLevels|"
 msgid "Quit"
 msgstr "Sair"
 
-#: activities/explore_farm_animals/ExploreLevels.qml:305
+#: activities/explore_farm_animals/ExploreLevels.qml:306
 msgctxt "ExploreLevels|"
 msgid "Continue"
 msgstr "Continuar"
@@ -17844,7 +17844,7 @@ msgctxt "math_util|"
 msgid "÷"
 msgstr "÷"
 
-#: activities/memory/MemoryCommon.qml:324
+#: activities/memory/MemoryCommon.qml:325
 msgctxt "MemoryCommon|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -17853,12 +17853,12 @@ msgstr ""
 "Essa atividade usa sons, por isso ela tocará alguns sons mesmo que o áudio "
 "de vozes ou efeitos esteja desabilitado na configuração principal."
 
-#: activities/memory/MemoryCommon.qml:325
+#: activities/memory/MemoryCommon.qml:326
 msgctxt "MemoryCommon|"
 msgid "Quit"
 msgstr "Sair"
 
-#: activities/memory/MemoryCommon.qml:326
+#: activities/memory/MemoryCommon.qml:327
 msgctxt "MemoryCommon|"
 msgid "Continue"
 msgstr "Continuar"
