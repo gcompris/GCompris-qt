@@ -6609,7 +6609,7 @@ msgid ""
 msgstr ""
 "På det tredje brettet må du lesa litt om eit dyr og så trykkja på det dyret."
 
-#: activities/explore_farm_animals/ExploreLevels.qml:303
+#: activities/explore_farm_animals/ExploreLevels.qml:304
 msgctxt "ExploreLevels|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -6618,12 +6618,12 @@ msgstr ""
 "Denne aktiviteten brukar lyd, og han vil derfor spela av lyd sjølv om "
 "stemmer og lydeffektar er slått av i innstillingane."
 
-#: activities/explore_farm_animals/ExploreLevels.qml:304
+#: activities/explore_farm_animals/ExploreLevels.qml:305
 msgctxt "ExploreLevels|"
 msgid "Quit"
 msgstr "Avslutt"
 
-#: activities/explore_farm_animals/ExploreLevels.qml:305
+#: activities/explore_farm_animals/ExploreLevels.qml:306
 msgctxt "ExploreLevels|"
 msgid "Continue"
 msgstr "Hald fram"
@@ -17637,7 +17637,7 @@ msgctxt "math_util|"
 msgid "÷"
 msgstr ":"
 
-#: activities/memory/MemoryCommon.qml:324
+#: activities/memory/MemoryCommon.qml:325
 msgctxt "MemoryCommon|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -17646,12 +17646,12 @@ msgstr ""
 "Denne aktiviteten brukar lyd, og han vil derfor spela av lyd sjølv om "
 "stemmer og lydeffektar er slått av i innstillingane."
 
-#: activities/memory/MemoryCommon.qml:325
+#: activities/memory/MemoryCommon.qml:326
 msgctxt "MemoryCommon|"
 msgid "Quit"
 msgstr "Avslutt"
 
-#: activities/memory/MemoryCommon.qml:326
+#: activities/memory/MemoryCommon.qml:327
 msgctxt "MemoryCommon|"
 msgid "Continue"
 msgstr "Hald fram"
