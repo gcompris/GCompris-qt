@@ -63,9 +63,6 @@ Flipable {
         { "text": qsTr("Images"), "value": "image" }
     ]
 
-    // Source of the images should be in the same format as below with the number associated and svg format
-    property string source: "qrc:/gcompris/src/activities/memory-enumerate/resource/math_"
-
     // Set to true when to display on both sides.
     property bool flipEnabled: false
 
@@ -93,7 +90,6 @@ Flipable {
             borderWidth: 0
             radius: parent.height * 0.25
             valueMax: flipable.valueMax
-            source: flipable.source
             onValueChanged: if(flipEnabled) flipable.flipped = !flipable.flipped
             isClickable: flipable.isClickable
             audioEffects: flipable.audioEffects
@@ -101,10 +97,10 @@ Flipable {
 
         // Separation
         Rectangle {
-            x: parent.width / 2
-            anchors.verticalCenter: parent.verticalCenter
+            x: front.width / 2
+            anchors.verticalCenter: front.verticalCenter
             width: 2
-            height: parent.height * 0.7
+            height: front.height * 0.7
             color: flipable.borderColor
         }
 
@@ -119,7 +115,6 @@ Flipable {
             borderWidth: 0
             radius: parent.height * 0.25
             valueMax: flipable.valueMax
-            source: flipable.source
             onValueChanged: if(flipEnabled) flipable.flipped = !flipable.flipped
             isClickable: flipable.isClickable
             audioEffects: flipable.audioEffects
