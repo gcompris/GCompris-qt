@@ -73,34 +73,112 @@ Item {
      */
     property GCSfx audioEffects
 
-    /**
-     * type:string
-     * String to specify the source folder for the image mode
-     */
-    property string source
+    readonly property var romans: ["", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX"]
 
-    readonly property var romans : ["", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX"]
+    // Source of the images should be in the same format as below with the number associated and svg format
+    property string source: "qrc:/gcompris/src/activities/memory-enumerate/resource/butterfly.svg"
+
+    /**
+     * type:var
+     * the butterflies model for the image mode
+     */
+    readonly property var butterfliesModel: [
+        [
+            [{ "itemX": 0, "itemY": 0, "itemSize": 0, "itemRotation": 0, "itemSource": source}], ''
+        ],
+        [
+            [{ "itemX": 0.3, "itemY": 0.45, "itemSize": 0.3, "itemRotation": 30, "itemSource": source}], ''
+        ],
+        [
+            [{ "itemX": 0.25, "itemY": 0.1, "itemSize": 0.3, "itemRotation": 50, "itemSource": source},
+            { "itemX": 0.4, "itemY": 0.6, "itemSize": 0.3, "itemRotation": -50, "itemSource": source}], ''
+        ],
+        [
+            [{ "itemX": 0.1, "itemY": 0.05, "itemSize": 0.3, "itemRotation": -10, "itemSource": source},
+            { "itemX": 0.6, "itemY": 0.35, "itemSize": 0.3, "itemRotation": -25, "itemSource": source},
+            { "itemX": 0.2, "itemY": 0.55, "itemSize": 0.3, "itemRotation": 30, "itemSource": source}], ''
+        ],
+        [
+            [{ "itemX": 0.5, "itemY": 0.05, "itemSize": 0.3, "itemRotation": -40, "itemSource": source},
+            { "itemX": 0.1, "itemY": 0.3, "itemSize": 0.3, "itemRotation": 45, "itemSource": source},
+            { "itemX": 0.6, "itemY": 0.5, "itemSize": 0.3, "itemRotation": -15, "itemSource": source},
+            { "itemX": 0.25, "itemY": 0.65, "itemSize": 0.3, "itemRotation": -30, "itemSource": source}], ''
+        ],
+        [
+            [{ "itemX": 0.55, "itemY": 0.05, "itemSize": 0.3, "itemRotation": -15, "itemSource": source},
+            { "itemX": 0.1, "itemY": 0.15, "itemSize": 0.3, "itemRotation": -150, "itemSource": source},
+            { "itemX": 0.5, "itemY": 0.35, "itemSize": 0.3, "itemRotation": 45, "itemSource": source},
+            { "itemX": 0.1, "itemY": 0.55, "itemSize": 0.3, "itemRotation": -45, "itemSource": source},
+            { "itemX": 0.6, "itemY": 0.75, "itemSize": 0.3, "itemRotation": -10, "itemSource": source}], ''
+        ],
+        [
+            [{ "itemX": 0.1, "itemY": 0.05, "itemSize": 0.3, "itemRotation": -75, "itemSource": source},
+            { "itemX": 0.6, "itemY": 0.05, "itemSize": 0.3, "itemRotation": 15, "itemSource": source},
+            { "itemX": 0.25, "itemY": 0.35, "itemSize": 0.3, "itemRotation": -10, "itemSource": source},
+            { "itemX": 0.65, "itemY": 0.4, "itemSize": 0.3, "itemRotation": 10, "itemSource": source},
+            { "itemX": 0.1, "itemY": 0.65, "itemSize": 0.3, "itemRotation": 45, "itemSource": source},
+            { "itemX": 0.6, "itemY": 0.7, "itemSize": 0.3, "itemRotation": -45, "itemSource": source}], ''
+        ],
+        [
+            [{ "itemX": 0.1, "itemY": 0.02, "itemSize": 0.3, "itemRotation": 60, "itemSource": source},
+            { "itemX": 0.6, "itemY": 0.05, "itemSize": 0.3, "itemRotation": -10, "itemSource": source},
+            { "itemX": 0.25, "itemY": 0.25, "itemSize": 0.3, "itemRotation": -165, "itemSource": source},
+            { "itemX": 0.65, "itemY": 0.3, "itemSize": 0.3, "itemRotation": -135, "itemSource": source},
+            { "itemX": 0.1, "itemY": 0.5, "itemSize": 0.3, "itemRotation": 75, "itemSource": source},
+            { "itemX": 0.65, "itemY": 0.6, "itemSize": 0.3, "itemRotation": 10, "itemSource": source},
+            { "itemX": 0.3, "itemY": 0.75, "itemSize": 0.3, "itemRotation": -10, "itemSource": source}
+            ], ''
+        ],
+        [
+            [{ "itemX": 0.05, "itemY": 0.02, "itemSize": 0.3, "itemRotation": -25, "itemSource": source},
+            { "itemX": 0.65, "itemY": 0.03, "itemSize": 0.3, "itemRotation": -10, "itemSource": source},
+            { "itemX": 0.35, "itemY": 0.15, "itemSize": 0.3, "itemRotation": 5, "itemSource": source},
+            { "itemX": 0.05, "itemY": 0.3, "itemSize": 0.3, "itemRotation": 15, "itemSource": source},
+            { "itemX": 0.65, "itemY": 0.35, "itemSize": 0.3, "itemRotation": 170, "itemSource": source},
+            { "itemX": 0.15, "itemY": 0.55, "itemSize": 0.3, "itemRotation": 50, "itemSource": source},
+            { "itemX": 0.65, "itemY": 0.65, "itemSize": 0.3, "itemRotation": -10, "itemSource": source},
+            { "itemX": 0.35, "itemY": 0.8, "itemSize": 0.3, "itemRotation": 5, "itemSource": source}], ''
+        ],
+        [
+            [{ "itemX": 0.06, "itemY": 0.01, "itemSize": 0.3, "itemRotation": -10, "itemSource": source},
+            { "itemX": 0.65, "itemY": 0.02, "itemSize": 0.3, "itemRotation": -40, "itemSource": source},
+            { "itemX": 0.35, "itemY": 0.18, "itemSize": 0.3, "itemRotation": 10, "itemSource": source},
+            { "itemX": 0.05, "itemY": 0.27, "itemSize": 0.3, "itemRotation": 170, "itemSource": source},
+            { "itemX": 0.65, "itemY": 0.35, "itemSize": 0.3, "itemRotation": 20, "itemSource": source},
+            { "itemX": 0.32, "itemY": 0.45, "itemSize": 0.3, "itemRotation": -40, "itemSource": source},
+            { "itemX": 0.05, "itemY": 0.6, "itemSize": 0.3, "itemRotation": 5, "itemSource": source},
+            { "itemX": 0.65, "itemY": 0.65, "itemSize": 0.3, "itemRotation": 175, "itemSource": source},
+            { "itemX": 0.35, "itemY": 0.8, "itemSize": 0.3, "itemRotation": -10, "itemSource": source}], ''
+        ]
+    ]
 
     GCText {
         id: numberText
         visible: (item.mode == "number" || item.mode == "roman")
         fontSize: ((item.mode == "number") ? 30 : (item.value == 8) ? 20 : (item.value == 7 || item.value == 3) ? 25 : 30)
-        anchors.horizontalCenter: parent.horizontalCenter
-        anchors.verticalCenter: parent.verticalCenter
+        anchors.horizontalCenter: item.horizontalCenter
+        anchors.verticalCenter: item.verticalCenter
         color: item.color
         anchors.margins: ApplicationInfo.ratio * 5
         text: (mode == "number") ? item.value : romans[item.value]
     }
 
-    Image {
-        id: imageText
+    Item {
+        id: contentImage
+        anchors.fill: parent
         visible: (item.mode == "image")
-        height: parent.height
-        fillMode: Image.PreserveAspectFit
-        anchors.horizontalCenter: parent.horizontalCenter
-        anchors.verticalCenter: parent.verticalCenter
-        anchors.margins: ApplicationInfo.ratio * 5
-        source: item.source + item.value + ".svg"
+        Repeater {
+            model: butterfliesModel[item.value][0]
+            Image {
+                source: modelData.itemSource
+                x: contentImage.width * modelData.itemX
+                y: contentImage.height * modelData.itemY
+                width: contentImage.width * modelData.itemSize
+                height: width
+                sourceSize.width: width
+                rotation: modelData.itemRotation
+            }
+        }
     }
 
     function isVisible(index) {
@@ -143,8 +221,8 @@ Item {
         columns: 3
         spacing: 3
         visible: (item.mode == "dot")
-        anchors.horizontalCenter: parent.horizontalCenter
-        anchors.verticalCenter: parent.verticalCenter
+        anchors.horizontalCenter: item.horizontalCenter
+        anchors.verticalCenter: item.verticalCenter
         horizontalItemAlignment: Grid.AlignHCenter
         verticalItemAlignment: Grid.AlignVCenter
 
