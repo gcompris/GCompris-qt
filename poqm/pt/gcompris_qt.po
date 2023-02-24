@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: kstars\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2015-05-27 08:46+0000\n"
-"PO-Revision-Date: 2023-01-11 09:28+0000\n"
+"PO-Revision-Date: 2023-01-22 22:35+0000\n"
 "Last-Translator: Pedro Morais <morais@kde.org>\n"
 "Language-Team: pt <kde-i18n-pt@kde.org>\n"
 "Language: pt\n"
@@ -25959,7 +25959,7 @@ msgstr ""
 #: core/ChangeLog.qml:30
 msgctxt "ChangeLog|"
 msgid "Fix issue in comparator activity"
-msgstr ""
+msgstr "Correcção de um problema na actividade de comparações"
 
 #: core/ChangeLog.qml:34
 msgctxt "ChangeLog|"
