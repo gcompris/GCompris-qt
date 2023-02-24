@@ -86,7 +86,7 @@
   <summary xml:lang="sl">Izobraževalna igra z več dejavnostmi za otroke med drugim in desetim letom starosti</summary>
   <summary xml:lang="sq">Lojë Edukative me Shumë Veprimtari për fëmijë nga 2 deri në 10 vjeç</summary>
   <summary xml:lang="sv">Pedagogiskt multiaktivitetsspel för barn från 2 till 10 år</summary>
-  <summary xml:lang="tr">2-10 Yaş Arası Çocuklar için Çok Etkinlikli Eğitici Oyun</summary>
+  <summary xml:lang="tr">2-10 Yaş Arası Çocuklar için Çok Etkinlikli Eğitici Oyunlar</summary>
   <summary xml:lang="uk">Набір освітніх ігор для дітей від 2 до 10 років</summary>
   <summary xml:lang="x-test">xxMulti-Activity Educational game for children 2 to 10xx</summary>
   <summary xml:lang="zh-CN">面向 2 到 10 岁儿童的多学科教学游戏</summary>
@@ -172,7 +172,7 @@
     <p xml:lang="sl">Nekatere dejavnosti so bolj podobne igram, vendar še vedno poučne.</p>
     <p xml:lang="sq">Disa nga veprimtaritë shkojnë drejt lojës, por megjithatë prapë edukative.</p>
     <p xml:lang="sv">Vissa av aktiviteterna är spelorienterade, men trots det ändå pedagogiska.</p>
-    <p xml:lang="tr">Bazı etkinlikler oyun odaklıdır, ancak yine de eğiticidir.</p>
+    <p xml:lang="tr">Bazı etkinlikler oyun odaklıdır; ancak yine de eğiticidir.</p>
     <p xml:lang="uk">Деякі із вправ є суто ігровими, але містять і елементи навчання.</p>
     <p xml:lang="x-test">xxSome of the activities are game orientated, but nonetheless still educational.xx</p>
     <p xml:lang="zh-CN">虽然某些活动采用了游戏导向的设计，但它们依然是以教学为目的的。</p>
@@ -215,7 +215,7 @@
     <p xml:lang="sl">Spodaj lahko najdete seznam kategorij in nekaj dejavnosti, ki so na voljo v tisti kategoriji.</p>
     <p xml:lang="sq">Më poshtë mund të gjeni një listë të kategorive, me disa nga veprimtaritë e gatshme nën atë kategori.</p>
     <p xml:lang="sv">Nedan finns en lista över kategorier med några av aktiviteterna tillgängliga i varje kategori.</p>
-    <p xml:lang="tr">Aşağıda, bazı etkinliklerin bulunduğu kategorilerin bir listesini bulabilirsiniz.</p>
+    <p xml:lang="tr">Aşağıda bazı etkinliklerin bulunduğu kategorilerin bir listesini bulabilirsiniz.</p>
     <p xml:lang="uk">Нижче наведено список категорій із деякими вправами у цих категоріях.</p>
     <p xml:lang="x-test">xxBelow you can find a list of categories with some of the activities available in that category.xx</p>
     <p xml:lang="zh-CN">下面列出了软件提供的活动类型和它们包含的具体教学活动。</p>
@@ -1011,7 +1011,7 @@
       <caption xml:lang="sl">Dejavnost "Šahovska končnica"</caption>
       <caption xml:lang="sq">Veprimtari “Lojë fundi shahu”</caption>
       <caption xml:lang="sv">Aktiviteten "Slutet på schackspelet"</caption>
-      <caption xml:lang="tr">"Santranç oyunu sona erdi" etkinliği</caption>
+      <caption xml:lang="tr">"Satranç oyunu sona erdi" etkinliği</caption>
       <caption xml:lang="uk">Вправа «Завершення гри у шахи»</caption>
       <caption xml:lang="x-test">xx"End of chess game" activityxx</caption>
       <caption xml:lang="zh-CN">“国际象棋游戏”活动</caption>
