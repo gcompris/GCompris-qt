@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
-"PO-Revision-Date: 2023-02-15 11:04\n"
+"PO-Revision-Date: 2023-02-24 12:43\n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
@@ -2498,6 +2498,8 @@ msgid ""
 "button to place the balls in the holes. You win if Tux has to place the last "
 "ball. If you want Tux to begin, just click on him."
 msgstr ""
+"点击球图标选择一些球，然后点击“确定“将球放入球洞中。 如果 Tux 必须放置最后一"
+"球，你就会赢得胜利。如果你想让 Tux 先开始，只需点击他。"
 
 #. Activity title
 #: activities/bargame_2players/ActivityInfo.qml:15
@@ -4936,7 +4938,7 @@ msgstr "继续"
 #: activities/comparator/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Compare numbers"
-msgstr ""
+msgstr "对数字比较大小。"
 
 #. Help title
 #: activities/comparator/ActivityInfo.qml:19
@@ -4948,7 +4950,7 @@ msgstr ""
 #: activities/comparator/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid "Learn how to compare number values."
-msgstr ""
+msgstr "学习如何对数字比较大小。"
 
 #. Help manual
 #: activities/comparator/ActivityInfo.qml:26
@@ -4974,28 +4976,28 @@ msgstr ""
 #: activities/comparator/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: select a symbol button"
-msgstr ""
+msgstr "左键和右键：选择一个符号的按钮"
 
 #: activities/comparator/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
 msgid "Space: if a symbol button is selected, enter this symbol"
-msgstr ""
+msgstr "空格键：如果某个符号的按钮被选定，请输入此符号"
 
 #: activities/comparator/ActivityInfo.qml:32
 msgctxt "ActivityInfo|"
 msgid "Return: validate the answers"
-msgstr ""
+msgstr "返回键：验证答案"
 
 #: activities/comparator/ActivityInfo.qml:33
 msgctxt "ActivityInfo|"
 msgid "&lt;, &gt; or =: enter the corresponding symbol"
-msgstr ""
+msgstr "<、>、 =：输入相应的符号"
 
 #: activities/comparator/resource/1/Data.qml:36
 #: activities/tens_complement_find/resource/3/Data.qml:9
 msgctxt "Data|"
 msgid "Numbers from 1 to 9."
-msgstr ""
+msgstr "1到9的数字。"
 
 #: activities/comparator/resource/10/Data.qml:14
 msgctxt "Data|"
