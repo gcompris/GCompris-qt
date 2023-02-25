@@ -40,12 +40,12 @@
 Don't forget to include this last date.
 Please respect the format of the date (YYYY-MM-DD),it is used by scripts.
 -->
-<date>2022-01-21</date>
+<date>2023-02-25</date>
 
 <!--version information of the application and kde this documentation is valid for.
 for example 'xx.yy.zz'
 -->
-<releaseinfo>2.1</releaseinfo>
+<releaseinfo>3.1</releaseinfo>
 
 <!-- Abstract about this handbook -->
 
@@ -81,12 +81,12 @@ It requires a 3D card with support of <emphasis>OpenGL 2.1</emphasis> or higher 
 <title>Installation</title>
 <para>The software is delivered under several forms. Follow the process according to your case. </para>
 <itemizedlist>
-<listitem><para>&GNU;/&Linux;: Use the packages delivered by your &GNU;/&Linux; distribution.
+<listitem><para>&GNU;/&Linux;: use the packages delivered by your &GNU;/&Linux; distribution.
 If &gcompris; is not packaged in your &Linux; distribution, 
 please contact them to ask for the inclusion of &gcompris; in your &Linux; distribution.</para></listitem>
-<listitem><para>&Windows;: Delivered under a classic installer for &Windows; or via the Microsoft Store.</para></listitem>
-<listitem><para>MacOSX: Delivered under a classic installer.</para></listitem>
-<listitem><para>Android: Distributed by the F-Droid store or Google Play Store. Apk file is also available.</para></listitem>
+<listitem><para>&Windows;: delivered under a classic installer for &Windows; or via the Microsoft Store.</para></listitem>
+<listitem><para>MacOSX: delivered under a classic installer.</para></listitem>
+<listitem><para>Android: distributed by the F-Droid store or Google Play Store. Apk file is also available.</para></listitem>
 </itemizedlist>
 </sect1>
 
@@ -133,7 +133,7 @@ there is section "Board games", which includes board games, like chess, tic tac 
 not the child has completed the task. In this case, you have to click on this icon. You can also use the &Enter; 
 key on your keyboard.</para></listitem> 
 <listitem><para><inlinemediaobject><imageobject><imagedata fileref="bar_hint.svg" format="SVG"/></imageobject>
-</inlinemediaobject> Light - Display a hint for the activity. We can help the children on some activities to guide them to find the answers. </para></listitem>
+</inlinemediaobject> Light - Display a hint for the activity. We can help the children on some activities to guide them to find the answers.</para></listitem>
 <listitem><para><inlinemediaobject><imageobject><imagedata fileref="bar_previous.svg" format="SVG"/></imageobject></inlinemediaobject>
 <inlinemediaobject><imageobject><imagedata fileref="bar_next.svg" format="SVG"/></imageobject></inlinemediaobject> 
 Arrows - The present level is displayed. Click on one of the arrows to select another level. 
@@ -146,7 +146,7 @@ In &gcompris;, it is possible to go to the next level without having completed t
 to be described easily in the description area. In this case, this function gives access to additional information.</para></listitem> 
 <listitem><para><inlinemediaobject><imageobject><imagedata fileref="bar_config.svg" format="SVG"/></imageobject>
 </inlinemediaobject> Tool box - Configuration menu. The configuration is saved in the user repository (folder) 
-under the name <filename>.config/gcompris/gcompris.conf</filename>. This is a text file which can be edited manually.</para></listitem> 
+under the name <filename>.config/gcompris/gcompris-qt.conf</filename>. This is a text file which can be edited manually.</para></listitem> 
 <listitem><para><inlinemediaobject><imageobject><imagedata fileref="bar_activity_config.svg" format="SVG"/></imageobject>
 </inlinemediaobject> List item - Display the activity settings menu. There are two possible tabs here. First one, "Dataset", allows to choose the levels of the activities depending on several objectives and the second one, "Options", allows to update the configuration of the activity if available. </para></listitem>
 <listitem><para><inlinemediaobject><imageobject><imagedata fileref="bar_about.svg" format="SVG"/></imageobject>
@@ -292,6 +292,14 @@ or make it show real car images instead of filled rectangles (traffic).</para>
 <entry>Print the version of &gcompris;.</entry>
 </row>
 <row>
+<entry>-l, --list-activities</entry>
+<entry>Outputs all the available activities on the standard output.</entry>
+</row>
+<row>
+<entry>--launch activity</entry>
+<entry>Specify the activity when starting GCompris.</entry>
+</row>
+<row>
 <entry>--export-activities-as-sql</entry>
 <entry>Export activities as SQL.</entry>
 </row>
@@ -318,7 +326,7 @@ or make it show real car images instead of filled rectangles (traffic).</para>
 <sect2 id="windows-example">
 <title>&Windows; Example</title>
 <para>You can add these switches in the desktop icon properties. Here is an example that runs &gcompris; in kiosk mode in full screen, without Configuration button and cursor:</para>
-<para><userinput><command>"C:\Program Files\Gcompris\gcompris-qt.exe" --enable-kioskmode -f -C</command></userinput></para>
+<para><userinput><command>"C:\Program Files\GCompris-Qt\bin\GCompris.exe" --enable-kioskmode -f -C</command></userinput></para>
 </sect2>
 
 <sect2 id="gnu-linux-example">
@@ -338,7 +346,7 @@ or make it show real car images instead of filled rectangles (traffic).</para>
 &gcompris;
 </para>
 <para>
-Program copyright 2000-2022 Timothée Giet and others
+Program copyright 2000-2023 Timothée Giet and others
 </para>
 
 <!-- TRANS:CREDIT_FOR_TRANSLATORS -->
