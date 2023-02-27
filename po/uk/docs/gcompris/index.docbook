@@ -66,13 +66,13 @@ Don't forget to include this last date.
 Please respect the format of the date (YYYY-MM-DD),it is used by scripts.
 -->
 <date
->21 січня 2022 року</date>
+>25 лютого 2023 року</date>
 
 <!--version information of the application and kde this documentation is valid for.
 for example 'xx.yy.zz'
 -->
 <releaseinfo
->2.1</releaseinfo>
+>3.1</releaseinfo>
 
 <!-- Abstract about this handbook -->
 
@@ -224,7 +224,7 @@ for example 'xx.yy.zz'
 ><imageobject
 ><imagedata fileref="bar_hint.svg" format="SVG"/></imageobject
 ></inlinemediaobject
-> Лампа — показати підказку до вправи. За допомогою підказки можна допомогти дитині у деяких вправах, надавши настанови для визначення правильної відповіді. </para
+> Лампа — показати підказку до вправи. За допомогою підказки можна допомогти дитині у деяких вправах, надавши настанови для визначення правильної відповіді.</para
 ></listitem>
 <listitem
 ><para
@@ -264,7 +264,7 @@ for example 'xx.yy.zz'
 ><imagedata fileref="bar_config.svg" format="SVG"/></imageobject
 ></inlinemediaobject
 > Відкрутка з ключем — меню налаштувань. Налаштування зберігаються у сховищі користувача (теці) з назвою <filename
->.config/gcompris/gcompris.conf</filename
+>.config/gcompris/gcompris-qt.conf</filename
 >. Це текстовий файл, який можна редагувати вручну.</para
 ></listitem
 > 
@@ -538,6 +538,18 @@ for example 'xx.yy.zz'
 </row>
 <row>
 <entry
+>-l, --list-activities</entry>
+<entry
+>Виводить список доступних вправ до стандартного виведення.</entry>
+</row>
+<row>
+<entry
+>--launch вправа</entry>
+<entry
+>Вказати вправу, яку слід розпочати після запуску GCompris.</entry>
+</row>
+<row>
+<entry
 >--export-activities-as-sql</entry>
 <entry
 >Експортувати вправи у форматі SQL.</entry>
@@ -578,7 +590,7 @@ for example 'xx.yy.zz'
 <para
 ><userinput
 ><command
->"C:\Program Files\Gcompris\gcompris-qt.exe" --enable-kioskmode -f -C</command
+>"C:\Program Files\GCompris-Qt\bin\GCompris.exe" --enable-kioskmode -f -C</command
 ></userinput
 ></para>
 </sect2>
@@ -608,7 +620,7 @@ for example 'xx.yy.zz'
 <para
 >&gcompris; </para>
 <para
->Авторські права на програму належать Timothée Giet та іншим, 2000–2022 </para>
+>Авторські права на програму належать Timothée Giet та іншим, 2000–2023 </para>
 
 <para
 >Переклад українською: Юрій Чорноіван <email

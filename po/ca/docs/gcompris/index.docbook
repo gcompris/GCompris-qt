@@ -52,13 +52,13 @@ Don't forget to include this last date.
 Please respect the format of the date (YYYY-MM-DD),it is used by scripts.
 -->
 <date
->21 de gener de 2022</date>
+>25 de febrer de 2023</date>
 
 <!--version information of the application and kde this documentation is valid for.
 for example 'xx.yy.zz'
 -->
 <releaseinfo
->2.1</releaseinfo>
+>3.1</releaseinfo>
 
 <!-- Abstract about this handbook -->
 
@@ -94,9 +94,9 @@ for example 'xx.yy.zz'
 <para
 >La finalitat del &gcompris; és proporcionar activitats lúdiques però sempre educatives.</para>
 <para
->El &gcompris; forma part del projecte &kde; i es troba sota la <ulink url="https://www.gnu.org/licenses/agpl-3.0.html"
+>El &gcompris; forma part del projecte &kde; i es troba segons la <ulink url="https://www.gnu.org/licenses/agpl-3.0.html"
 >llicència AGPL versió 3</ulink
->. Tot el codi, a excepció del motor de l'activitat electricitat anàloga es troba sota la <ulink url="https://www.gnu.org/licenses/gpl.html"
+>. Tot el codi, a excepció del motor de l'activitat electricitat anàloga es troba segons la <ulink url="https://www.gnu.org/licenses/gpl.html"
 >llicència GPL versió 3</ulink
 >.</para>
 <para
@@ -109,23 +109,23 @@ for example 'xx.yy.zz'
 <title
 >Instal·lació</title>
 <para
->El programari es lliura sota diverses formes. Seguiu el procediment d'acord amb el vostre cas. </para>
+>El programari es lliura segons diverses formes. Seguiu el procediment d'acord amb el vostre cas. </para>
 <itemizedlist>
 <listitem
 ><para
->&GNU;/&Linux;: Utilitza els paquets lliurats per la vostra distribució de &GNU;/&Linux;. Si el &gcompris; no està empaquetat en la vostra distribució de &Linux;, si us plau, contacteu-hi per a demanar la inclusió del &gcompris; en la vostra distribució de &Linux;.</para
+>&GNU;/&Linux;: utilitzeu els paquets lliurats per la vostra distribució de &GNU;/&Linux;. Si el &gcompris; no està empaquetat en la vostra distribució de &Linux;, si us plau, contacteu-hi per a demanar la inclusió del &gcompris; en la vostra distribució de &Linux;.</para
 ></listitem>
 <listitem
 ><para
->&Windows;: Lliurat sota un instal·lador clàssic per a &Windows; o mitjançant la Microsoft Store.</para
+>&Windows;: lliurat amb un instal·lador clàssic per a &Windows; o mitjançant la Microsoft Store.</para
 ></listitem>
 <listitem
 ><para
->MacOSX: Lliurat sota un instal·lador clàssic.</para
+>MacOSX: lliurat amb un instal·lador clàssic.</para
 ></listitem>
 <listitem
 ><para
->Android: Distribuït per la botiga F-Droid o la Google Play Store. També està disponible el fitxer «apk».</para
+>Android: distribuït per la botiga F-Droid o la Google Play Store. També està disponible el fitxer «apk».</para
 ></listitem>
 </itemizedlist>
 </sect1>
@@ -210,7 +210,7 @@ for example 'xx.yy.zz'
 ><imageobject
 ><imagedata fileref="bar_hint.svg" format="SVG"/></imageobject
 ></inlinemediaobject
-> Llum: mostra un consell per a l'activitat. Podem ajudar a la canalla en algunes activitats per a guiar-los a trobar les respostes. </para
+> Llum: mostra un consell per a l'activitat. Podem ajudar a la canalla en algunes activitats per a guiar-los a trobar les respostes.</para
 ></listitem>
 <listitem
 ><para
@@ -250,7 +250,7 @@ for example 'xx.yy.zz'
 ><imagedata fileref="bar_config.svg" format="SVG"/></imageobject
 ></inlinemediaobject
 > Quadre d'eines: El menú de configuració. La configuració es desa al repositori de l'usuari (carpeta) amb el nom <filename
->.config/gcompris/gcompris.conf</filename
+>.config/gcompris/gcompris-qt.conf</filename
 >. Aquest és un fitxer de text que es pot editar manualment.</para
 ></listitem
 > 
@@ -528,6 +528,18 @@ for example 'xx.yy.zz'
 </row>
 <row>
 <entry
+>-l, --list-activities</entry>
+<entry
+>Mostra totes les activitats disponibles a la sortida estàndard.</entry>
+</row>
+<row>
+<entry
+>--launch activity</entry>
+<entry
+>Especifica l'activitat en iniciar el GCompris.</entry>
+</row>
+<row>
+<entry
 >--export-activities-as-sql</entry>
 <entry
 >Exporta les activitats com a una base de dades SQL.</entry>
@@ -568,7 +580,7 @@ for example 'xx.yy.zz'
 <para
 ><userinput
 ><command
->"C:\Program Files\Gcompris\gcompris-qt.exe" --enable-kioskmode -f -C</command
+>"C:\Program Files\GCompris-Qt\bin\GCompris.exe" --enable-kioskmode -f -C</command
 ></userinput
 ></para>
 </sect2>
@@ -598,7 +610,7 @@ for example 'xx.yy.zz'
 <para
 >&gcompris; </para>
 <para
->Copyright del programa 2000-2022 Timothée Giet i altres </para>
+>Copyright del programa 2000-2023 Timothée Giet i altres </para>
 
 <para
 >Traductor de la documentació: &credits.Antoni.Bella;</para

@@ -52,13 +52,13 @@ Don't forget to include this last date.
 Please respect the format of the date (YYYY-MM-DD),it is used by scripts.
 -->
 <date
->2022-01-21</date>
+>2023-02-25</date>
 
 <!--version information of the application and kde this documentation is valid for.
 for example 'xx.yy.zz'
 -->
 <releaseinfo
->2.1</releaseinfo>
+>3.1</releaseinfo>
 
 <!-- Abstract about this handbook -->
 
@@ -113,15 +113,15 @@ for example 'xx.yy.zz'
 <itemizedlist>
 <listitem
 ><para
->&GNU;/&Linux; : gebruik de pakketten geleverd door uw &GNU;/&Linux; distributie. Als &gcompris; niet als pakket in uw &Linux; distributie zit, neem dan contact met ze op om te vragen &gcompris; op te nemen in uw &Linux; distributie.</para
+>&GNU;/&Linux;: gebruik de pakketten geleverd door uw &GNU;/&Linux; distributie. Als &gcompris; niet als pakket in uw &Linux; distributie zit, neem dan contact met ze op om te vragen &gcompris; op te nemen in uw &Linux; distributie.</para
 ></listitem>
 <listitem
 ><para
->&Windows; : geleverd onder een klassiek installatieprogramma voor &Windows; of via de Microsoft Store.</para
+>&Windows;: geleverd onder een klassiek installatieprogramma voor &Windows; of via de Microsoft Store.</para
 ></listitem>
 <listitem
 ><para
->MacOSX : geleverd onder een klassiek installatieprogramma.</para
+>MacOSX: geleverd onder een klassiek installatieprogramma.</para
 ></listitem>
 <listitem
 ><para
@@ -210,7 +210,7 @@ for example 'xx.yy.zz'
 ><imageobject
 ><imagedata fileref="bar_hint.svg" format="SVG"/></imageobject
 ></inlinemediaobject
-> Licht - toon een tip voor de activiteit. We kunnen de kinderen bij sommige activiteiten helpen om ze bij het zoeken van de antwoorden te begeleiden. </para
+> Licht - toon een tip voor de activiteit. We kunnen de kinderen bij sommige activiteiten helpen om ze bij het zoeken van de antwoorden te begeleiden.</para
 ></listitem>
 <listitem
 ><para
@@ -250,7 +250,7 @@ for example 'xx.yy.zz'
 ><imagedata fileref="bar_config.svg" format="SVG"/></imageobject
 ></inlinemediaobject
 > Gereedschapskist - Configuratie menu. DE configuratie wordt bewaart in de repository (map) van de gebruiker onder de naam <filename
->.config/gcompris/gcompris.conf</filename
+>.config/gcompris/gcompris-qt.conf</filename
 >. Dit is een tekstbestand dat u handmatig kan bewerken.</para
 ></listitem
 > 
@@ -524,6 +524,18 @@ for example 'xx.yy.zz'
 </row>
 <row>
 <entry
+>-l, --list-activities</entry>
+<entry
+>Voert alle beschikbare activiteiten uit op de standaard uitvoer.</entry>
+</row>
+<row>
+<entry
+>--launch activity</entry>
+<entry
+>De activiteit specificeren bij starten van GCompris.</entry>
+</row>
+<row>
+<entry
 >--export-activities-as-sql</entry>
 <entry
 >Activiteiten exporteren als SQL.</entry>
@@ -564,7 +576,7 @@ for example 'xx.yy.zz'
 <para
 ><userinput
 ><command
->"C:\Program Files\Gcompris\gcompris-qt.exe" --enable-kioskmode -f -C</command
+>"C:\Program Files\GCompris-Qt\bin\GCompris.exe" --enable-kioskmode -f -C</command
 ></userinput
 ></para>
 </sect2>
@@ -594,7 +606,7 @@ for example 'xx.yy.zz'
 <para
 >&gcompris; </para>
 <para
->Programma copyright 2000-2022 Timothée Giet en anderen </para>
+>Programma copyright 2000-2023 Timothée Giet en anderen </para>
 
 &meld.fouten;&vertaling.freek; &underFDL; &underGPL; </chapter>
 
