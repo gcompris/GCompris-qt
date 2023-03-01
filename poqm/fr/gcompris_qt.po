@@ -4275,10 +4275,10 @@ msgid ""
 "will redo one move. To undo all the moves, press and hold the undo button "
 "for 3 seconds."
 msgstr ""
-"Un simple clic sur le bouton \"undo\" permettra d'annuler un déplacement. Un "
-"simple clic sur le bouton « Refaire » permet de refaire un déplacement. Pour "
-"annuler tous les mouvements, appuyez sur le bouton « Annuler » et maintenez-"
-"le enfoncé pendant 3 secondes."
+"Un simple clic sur le bouton « Annuler » permettra d'annuler un déplacement. "
+"Un simple clic sur le bouton « Refaire » permet de refaire un déplacement. "
+"Pour annuler tous les mouvements, appuyez sur le bouton « Annuler » et "
+"maintenez-le enfoncé pendant 3 secondes."
 
 #: activities/chess/ActivityInfo.qml:33
 #: activities/chess_partyend/ActivityInfo.qml:33
@@ -5377,7 +5377,7 @@ msgid ""
 msgstr ""
 "Choisis une paire de nombres dans la liste. Ensuite, choisis le bon "
 "opérateur de comparaison pour cette paire. Quand tu auras répondu pour "
-"chaque ligne, appuie sur le bouton OK pour valider tes réponses."
+"chaque ligne, appuie sur le bouton Ok pour valider tes réponses."
 
 #: activities/comparator/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
@@ -5386,7 +5386,7 @@ msgid ""
 "lines. Correct the errors, then select the OK button again."
 msgstr ""
 "Si des réponses sont incorrectes, une croix apparaîtra sur les lignes "
-"correspondantes. Corrige ces erreurs et appuie sur le bouton OK pour valider "
+"correspondantes. Corrige ces erreurs et appuie sur le bouton Ok pour valider "
 "tes nouvelles réponses."
 
 #: activities/comparator/ActivityInfo.qml:29
@@ -9379,17 +9379,17 @@ msgstr "Sélectionne un disque et deux cinquièmes d'un disque."
 #: activities/fractions_create/resource/1/Data.qml:62
 msgctxt "Data|"
 msgid "Select one pie and one-third of a pie."
-msgstr "Selectionne un disque entier et un tiers de disque."
+msgstr "Sélectionne un disque entier et un tiers de disque."
 
 #: activities/fractions_create/resource/1/Data.qml:68
 msgctxt "Data|"
 msgid "Select one pie and one half of a pie."
-msgstr "Selectionne un disque entier et un demi disque."
+msgstr "Sélectionne un disque entier et un demi disque."
 
 #: activities/fractions_create/resource/1/Data.qml:74
 msgctxt "Data|"
 msgid "Select one pie and three-quarters of a pie."
-msgstr "Selectionne un disque entier et trois quarts de disque."
+msgstr "Sélectionne un disque entier et trois quarts de disque."
 
 #: activities/fractions_create/resource/10/Data.qml:9
 msgctxt "Data|"
@@ -9457,17 +9457,17 @@ msgstr "Sélectionne un carré et deux cinquièmes d'un carré."
 #: activities/fractions_create/resource/2/Data.qml:62
 msgctxt "Data|"
 msgid "Select one square and one-third of a square."
-msgstr "Selectionne un carré entier et un tiers de carré."
+msgstr "Sélectionne un carré entier et un tiers de carré."
 
 #: activities/fractions_create/resource/2/Data.qml:68
 msgctxt "Data|"
 msgid "Select one square and one half of a square."
-msgstr "Selectionne un carré entier et un demi carré."
+msgstr "Sélectionne un carré entier et un demi carré."
 
 #: activities/fractions_create/resource/2/Data.qml:74
 msgctxt "Data|"
 msgid "Select one square and three-quarters of a square."
-msgstr "Selectionne un carré entier et trois quarts de carré."
+msgstr "Sélectionne un carré entier et trois quarts de carré."
 
 #: activities/fractions_create/resource/3/Data.qml:9
 msgctxt "Data|"
@@ -9502,7 +9502,7 @@ msgstr "Sélectionne 0,5 disque."
 #: activities/fractions_create/resource/5/Data.qml:24
 msgctxt "Data|"
 msgid "Select 0.25 pie."
-msgstr "Selectionne 0,25 disque."
+msgstr "Sélectionne 0,25 disque."
 
 #: activities/fractions_create/resource/5/Data.qml:30
 msgctxt "Data|"
@@ -9512,7 +9512,7 @@ msgstr "Sélectionne 0,4 disque."
 #: activities/fractions_create/resource/5/Data.qml:36
 msgctxt "Data|"
 msgid "Select 0.75 pie."
-msgstr "Selectionne 0,75 disque."
+msgstr "Sélectionne 0,75 disque."
 
 #: activities/fractions_create/resource/5/Data.qml:42
 msgctxt "Data|"
@@ -9522,23 +9522,23 @@ msgstr "Sélectionne 0,8 disque."
 #: activities/fractions_create/resource/5/Data.qml:50
 msgctxt "Data|"
 msgid "Select 1.25 pies."
-msgstr "Selectionne 1,25 disques."
+msgstr "Sélectionne 1,25 disques."
 
 #: activities/fractions_create/resource/5/Data.qml:56
 msgctxt "Data|"
 msgid "Select 1.4 pies."
-msgstr "Selectionne 1,4 disques."
+msgstr "Sélectionne 1,4 disques."
 
 #: activities/fractions_create/resource/5/Data.qml:62
 #: activities/fractions_create/resource/5/Data.qml:68
 msgctxt "Data|"
 msgid "Select 1.5 pies."
-msgstr "Selectionne 1,5 disques."
+msgstr "Sélectionne 1,5 disques."
 
 #: activities/fractions_create/resource/5/Data.qml:74
 msgctxt "Data|"
 msgid "Select 1.75 pies."
-msgstr "Selectionne 1,75 disques."
+msgstr "Sélectionne 1,75 disques."
 
 #: activities/fractions_create/resource/6/Data.qml:9
 msgctxt "Data|"
@@ -9553,7 +9553,7 @@ msgstr "Sélectionne 0,5 carré."
 #: activities/fractions_create/resource/6/Data.qml:24
 msgctxt "Data|"
 msgid "Select 0.25 square."
-msgstr "Selectionne 0,25 carré."
+msgstr "Sélectionne 0,25 carré."
 
 #: activities/fractions_create/resource/6/Data.qml:30
 msgctxt "Data|"
@@ -9563,7 +9563,7 @@ msgstr "Sélectionne 0,4 carré."
 #: activities/fractions_create/resource/6/Data.qml:36
 msgctxt "Data|"
 msgid "Select 0.75 square."
-msgstr "Selectionne 0,75 carré."
+msgstr "Sélectionne 0,75 carré."
 
 #: activities/fractions_create/resource/6/Data.qml:42
 msgctxt "Data|"
@@ -9573,23 +9573,23 @@ msgstr "Sélectionne 0,8 carré."
 #: activities/fractions_create/resource/6/Data.qml:50
 msgctxt "Data|"
 msgid "Select 1.25 squares."
-msgstr "Selectionne 1,25 carrés."
+msgstr "Sélectionne 1,25 carrés."
 
 #: activities/fractions_create/resource/6/Data.qml:56
 msgctxt "Data|"
 msgid "Select 1.4 squares."
-msgstr "Selectionne 1,4 carrés."
+msgstr "Sélectionne 1,4 carrés."
 
 #: activities/fractions_create/resource/6/Data.qml:62
 #: activities/fractions_create/resource/6/Data.qml:68
 msgctxt "Data|"
 msgid "Select 1.5 squares."
-msgstr "Selectionne 1,5 carrés."
+msgstr "Sélectionne 1,5 carrés."
 
 #: activities/fractions_create/resource/6/Data.qml:74
 msgctxt "Data|"
 msgid "Select 1.75 squares."
-msgstr "Selectionne 1,75 carrés."
+msgstr "Sélectionne 1,75 carrés."
 
 #: activities/fractions_create/resource/7/Data.qml:9
 msgctxt "Data|"
@@ -9608,7 +9608,7 @@ msgstr "Pourcentages d'un disque."
 #, qt-format
 msgctxt "Data|"
 msgid "Select %1% of the pie."
-msgstr "Selectionne %1% du disque."
+msgstr "Sélectionne %1% du disque."
 
 #: activities/fractions_create/resource/8/Data.qml:9
 msgctxt "Data|"
@@ -9625,7 +9625,7 @@ msgstr "Pourcentages d'un carré."
 #, qt-format
 msgctxt "Data|"
 msgid "Select %1% of the square."
-msgstr "Selectionne %1% du carré."
+msgstr "Sélectionne %1% du carré."
 
 #: activities/fractions_create/resource/9/Data.qml:9
 msgctxt "Data|"
@@ -19670,7 +19670,8 @@ msgstr ""
 "Le|chien|aboie.\n"
 "La|maison|est|rouge.\n"
 "Le|garçon|lit|un|livre.\n"
-"Les|carottes|sont|cuites.Mon|ami|est|gentil.\n"
+"Les|carottes|sont|cuites.\n"
+"Mon|ami|est|gentil.\n"
 "Il|fait|soleil|dehors.\n"
 "Steve|saute|dans|la|piscine.\n"
 "Jessica|veut|un|nouveau|livre.\n"
@@ -25112,7 +25113,7 @@ msgid ""
 "corresponding lines. To correct the errors, click on the wrong numbers to "
 "remove them and repeat the previous steps."
 msgstr ""
-"Lorsque toutes les lignes sont remplies, appuie sur le bouton OK pour "
+"Lorsque toutes les lignes sont remplies, appuie sur le bouton Ok pour "
 "valider les réponses. Si certaines réponses sont incorrectes, une icône en "
 "forme de croix apparaîtra sur les lignes correspondantes. Pour corriger les "
 "erreurs, clique sur les mauvaises réponses pour les supprimer et répète les "
@@ -25185,9 +25186,9 @@ msgstr ""
 "Crée des paires de nombres égales à dix à l'intérieur de chaque parenthèse. "
 "Sélectionne un nombre, puis sélectionne un autre nombre de la même opération "
 "pour intervertir leurs positions. Lorsque toutes les lignes sont remplies, "
-"appuie sur le bouton OK pour valider les réponses. Si certaines réponses "
+"appuie sur le bouton Ok pour valider les réponses. Si certaines réponses "
 "sont incorrectes, une icône en forme de croix apparaît sur les lignes "
-"correspondantes. Corrige les erreurs, puis appuie à nouveau sur le bouton OK."
+"correspondantes. Corrige les erreurs, puis appuie à nouveau sur le bouton Ok."
 
 #: activities/tens_complement_swap/resource/1/Data.qml:36
 msgctxt "Data|"
