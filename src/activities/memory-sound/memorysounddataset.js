@@ -97,7 +97,7 @@ var memory_cards = [
 function get() {
     // Images are the same, create a list as large as memory_sounds
     for(var i in memory_sounds)
-        images.push([url + 'Tux_play.png', url + 'Tux_play.png'])
+        images.push([url + 'audio_note.svg', url + 'audio_note.svg'])
 
     return memory_cards
 }
