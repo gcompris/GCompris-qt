@@ -94,13 +94,13 @@ Don't forget to include this last date.
 Please respect the format of the date (YYYY-MM-DD),it is used by scripts.
 -->
 <date
->21/01/2022</date>
+>25/02/2023</date>
 
 <!--version information of the application and kde this documentation is valid for.
 for example 'xx.yy.zz'
 -->
 <releaseinfo
->2.1</releaseinfo>
+>3.1</releaseinfo>
 
 <!-- Abstract about this handbook -->
 
@@ -155,19 +155,19 @@ for example 'xx.yy.zz'
 <itemizedlist>
 <listitem
 ><para
->&GNU;/&Linux; : Use os pacotes disponibilizados pela sua distribuição &GNU;/&Linux;. Se o &gcompris; não for empacotado para a sua distribuição &Linux;, entre em contato com os responsáveis pelo empacotamento para pedir a inclusão do &gcompris; na sua distribuição &Linux;.</para
+>&GNU;/&Linux;: use os pacotes disponibilizados pela sua distribuição &GNU;/&Linux;. Se o &gcompris; não for empacotado para a sua distribuição &Linux;, entre em contato com os responsáveis pelo empacotamento para pedir a inclusão do &gcompris; na sua distribuição &Linux;.</para
 ></listitem>
 <listitem
 ><para
->&Windows; : Disponibilizado através de um instalador clássico para &Windows; ou através da Microsoft Store.</para
+>&Windows;: disponibilizado através de um instalador clássico para &Windows; ou através da Microsoft Store.</para
 ></listitem>
 <listitem
 ><para
->MacOSX : Disponibilizado através de um instalador clássico.</para
+>MacOSX: disponibilizado através de um instalador clássico.</para
 ></listitem>
 <listitem
 ><para
->Android: Distribuída pelo F-Droid ou pela Google Play. O arquivo apk também está disponível.</para
+>Android: distribuído pelo F-Droid ou pela Google Play. O arquivo apk também está disponível.</para
 ></listitem>
 </itemizedlist>
 </sect1>
@@ -252,7 +252,7 @@ for example 'xx.yy.zz'
 ><imageobject
 ><imagedata fileref="bar_hint.svg" format="SVG"/></imageobject
 ></inlinemediaobject
-> Lâmpada - Mostra uma dica para a atividade. Nós podemos ajudar as crianças em algumas atividades, para orientá-las a encontrar a resposta. </para
+> Lâmpada - Mostra uma dica para a atividade. Nós podemos ajudar as crianças em algumas atividades, para orientá-las a encontrar a resposta.</para
 ></listitem>
 <listitem
 ><para
@@ -292,7 +292,7 @@ for example 'xx.yy.zz'
 ><imagedata fileref="bar_config.svg" format="SVG"/></imageobject
 ></inlinemediaobject
 > Caixa de ferramentas - Menu de configuração. A configuração é salva no repositório (pasta) do usuário, com o nome <filename
-> .config/gcompris/gcompris.conf </filename
+> .config/gcompris/gcompris-qt.conf </filename
 >. Este é um arquivo de texto que pode ser editado manualmente.</para
 ></listitem
 > 
@@ -566,6 +566,18 @@ for example 'xx.yy.zz'
 </row>
 <row>
 <entry
+>-l, --list-activities</entry>
+<entry
+>Mostra todas as atividades disponíveis na saída padrão.</entry>
+</row>
+<row>
+<entry
+>--launch atividade</entry>
+<entry
+>Especifique a atividade quando iniciar o GCompris.</entry>
+</row>
+<row>
+<entry
 >--export-activities-as-sql</entry>
 <entry
 >Exporta as atividades no formato SQL.</entry>
@@ -606,7 +618,7 @@ for example 'xx.yy.zz'
 <para
 ><userinput
 ><command
->"C:\Program Files\Gcompris\gcompris-qt.exe" --enable-kioskmode -f -C</command
+>"C:\Program Files\GCompris-Qt\bin\GCompris.exe" --enable-kioskmode -f -C</command
 ></userinput
 ></para>
 </sect2>
@@ -631,12 +643,12 @@ for example 'xx.yy.zz'
 <chapter id="credits">
 
 <title
->Créditos e Licença</title>
+>Créditos e licença</title>
 
 <para
 >&gcompris; </para>
 <para
->Copyright do programa 2000-2022 Timothée Giet e outros </para>
+>Direitos autorais do programa 2000-2023 Timothée Giet e outros </para>
 
 <para
 >Tradução de FELA <email
