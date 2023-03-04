@@ -200,7 +200,7 @@ private Q_SLOTS:
      * Called whenever a single download (sub-job) has finished. Responsible
      * for iterating over possibly remaining sub-jobs of our DownloadJob.
      */
-    void downloadFinished();
+    void finishDownload();
     void downloadReadyRead();
     void handleError(QNetworkReply::NetworkError code);
 

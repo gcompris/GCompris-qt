@@ -95,7 +95,7 @@ void DownloadManager::abortDownloads()
         while (iter.hasNext()) {
             DownloadJob *job = iter.next();
             if (!job->downloadFinished && job->reply != nullptr) {
-                disconnect(job->reply, SIGNAL(finished()), this, SLOT(downloadFinished()));
+                disconnect(job->reply, SIGNAL(finished()), this, SLOT(finishDownload()));
                 disconnect(job->reply, SIGNAL(error(QNetworkReply::NetworkError)),
                            this, SLOT(handleError(QNetworkReply::NetworkError)));
                 if (job->reply->isRunning()) {
@@ -246,7 +246,7 @@ bool DownloadManager::download(DownloadJob *job)
     // qDebug() << "Now downloading" << job->url << "to" << fi.filePath() << "...";
     QNetworkReply *reply = accessManager.get(request);
     job->reply = reply;
-    connect(reply, SIGNAL(finished()), this, SLOT(downloadFinished()));
+    connect(reply, SIGNAL(finished()), this, SLOT(finishDownload()));
     connect(reply, &QNetworkReply::readyRead, this, &DownloadManager::downloadReadyRead);
     connect(reply, SIGNAL(error(QNetworkReply::NetworkError)),
             this, SLOT(handleError(QNetworkReply::NetworkError)));
@@ -499,7 +499,7 @@ void DownloadManager::downloadInProgress(qint64 bytesReceived, qint64 bytesTotal
     Q_EMIT downloadProgress(allJobsBytesReceived, allJobsBytesTotal);
 }
 
-void DownloadManager::downloadFinished()
+void DownloadManager::finishDownload()
 {
     QNetworkReply *reply = qobject_cast<QNetworkReply *>(sender());
     DownloadFinishedCode code = Success;
