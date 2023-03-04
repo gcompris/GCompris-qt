@@ -278,7 +278,7 @@ inline DownloadManager::DownloadJob *DownloadManager::getJobByReply(QNetworkRepl
 
 void DownloadManager::downloadReadyRead()
 {
-    QNetworkReply *reply = dynamic_cast<QNetworkReply *>(sender());
+    QNetworkReply *reply = qobject_cast<QNetworkReply *>(sender());
     DownloadJob *job = getJobByReply(reply);
     job->file.write(reply->readAll());
 }
@@ -341,7 +341,7 @@ bool DownloadManager::checkDownloadRestriction() const
 void DownloadManager::handleError(QNetworkReply::NetworkError code)
 {
     Q_UNUSED(code);
-    QNetworkReply *reply = dynamic_cast<QNetworkReply *>(sender());
+    QNetworkReply *reply = qobject_cast<QNetworkReply *>(sender());
     qDebug() << reply->errorString() << " " << reply->error();
     Q_EMIT error(reply->error(), reply->errorString());
 }
@@ -476,7 +476,7 @@ bool DownloadManager::areVoicesRegistered() const
 
 void DownloadManager::downloadInProgress(qint64 bytesReceived, qint64 bytesTotal)
 {
-    QNetworkReply *reply = dynamic_cast<QNetworkReply *>(sender());
+    QNetworkReply *reply = qobject_cast<QNetworkReply *>(sender());
     DownloadJob *job = nullptr;
     // don't call getJobByReply to not cause deadlock with mutex
     for (auto activeJob: qAsConst(activeJobs)) {
@@ -501,7 +501,7 @@ void DownloadManager::downloadInProgress(qint64 bytesReceived, qint64 bytesTotal
 
 void DownloadManager::downloadFinished()
 {
-    QNetworkReply *reply = dynamic_cast<QNetworkReply *>(sender());
+    QNetworkReply *reply = qobject_cast<QNetworkReply *>(sender());
     DownloadFinishedCode code = Success;
     DownloadJob *job = getJobByReply(reply);
     bool allFinished = false;
