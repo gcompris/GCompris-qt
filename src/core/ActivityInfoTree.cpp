@@ -226,7 +226,7 @@ void ActivityInfoTree::exportAsSQL()
 void ActivityInfoTree::listActivities()
 {
     QTextStream qtOut(stdout);
-    QStringList list = ActivityInfoTree::getActivityList();
+    const QStringList list = ActivityInfoTree::getActivityList();
     for (const QString &activity: list) {
         qtOut << activity << '\n';
     }
@@ -262,7 +262,7 @@ QObject *ActivityInfoTree::menuTreeProvider(QQmlEngine *engine, QJSEngine *scrip
     QObject *objectRoot = componentRoot.create();
     menuTree->setRootMenu(qobject_cast<ActivityInfo *>(objectRoot));
 
-    QStringList activities = getActivityList();
+    const QStringList activities = getActivityList();
     QString startingActivity = m_startingActivity;
     for (const QString &line: activities) {
         QString url = QString("qrc:/gcompris/src/activities/%1/ActivityInfo.qml").arg(line);
@@ -353,7 +353,7 @@ void ActivityInfoTree::filterBySearch(const QString &text)
 
 void ActivityInfoTree::minMaxFiltersChanged(quint32 levelMin, quint32 levelMax, bool emitChanged)
 {
-    for (ActivityInfo *activity: m_menuTreeFull) {
+    for (ActivityInfo *activity: qAsConst(m_menuTreeFull)) {
         activity->enableDatasetsBetweenDifficulties(levelMin, levelMax);
     }
     ApplicationSettings::getInstance()->sync();

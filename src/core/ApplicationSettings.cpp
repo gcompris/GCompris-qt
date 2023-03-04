@@ -454,7 +454,7 @@ QVariantMap ApplicationSettings::loadActivityConfiguration(const QString &activi
 {
     qDebug() << "load configuration for:" << activity;
     m_config.beginGroup(activity);
-    QStringList keys = m_config.childKeys();
+    const QStringList keys = m_config.childKeys();
     QVariantMap data;
     for (const QString &key: keys) {
         data[key] = m_config.value(key);

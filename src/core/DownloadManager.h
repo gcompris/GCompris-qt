@@ -142,7 +142,7 @@ private:
      *             - /usr/local/share/KDE/gcompris-qt
      *             - /usr/share/KDE/gcompris-qt
      */
-    QStringList getSystemResourcePaths() const;
+    const QStringList getSystemResourcePaths() const;
     QString getResourceRootForFilename(const QString &filename) const;
     QString getFilenameForUrl(const QUrl &url) const;
     QUrl getUrlForFilename(const QString &filename) const;
