@@ -116,6 +116,9 @@ function initLevel() {
             else
                 cents += 0.01 + Math.floor(Math.random() * 99) / 100
 
+            // Round to nearest 0.05 for BR currency
+            cents = Math.ceil(cents * 20) / 20
+
             // To be sure that the sums of the cents will never go higher than the
             // maxPrice, we remove them instead of adding them if the item price
             // is above 1

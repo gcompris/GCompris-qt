@@ -33,14 +33,11 @@ var expensiveObjects = [
 ]
 
 var moneyItems = {
-    MONEY_COIN_1C:   { img: "qrc:/gcompris/src/activities/money/resource/c1c.svg",  val: 0.01 },
-    MONEY_COIN_2C:   { img: "qrc:/gcompris/src/activities/money/resource/c2c.svg",  val: 0.02 },
     MONEY_COIN_5C:   { img: "qrc:/gcompris/src/activities/money/resource/c5c.svg",  val: 0.05 },
     MONEY_COIN_10C:  { img: "qrc:/gcompris/src/activities/money/resource/c10c.svg", val: 0.1  },
-    MONEY_COIN_20C:  { img: "qrc:/gcompris/src/activities/money/resource/c20c.svg", val: 0.20 },
-    MONEY_COIN_50C:  { img: "qrc:/gcompris/src/activities/money/resource/c50c.svg", val: 0.5  },
+    MONEY_COIN_25C:  { img: "qrc:/gcompris/src/activities/money/resource/c25c.svg", val: 0.25 },
     MONEY_COIN_1E:   { img: "qrc:/gcompris/src/activities/money/resource/c1e.svg",  val: 1.0  },
-    MONEY_COIN_2E:   { img: "qrc:/gcompris/src/activities/money/resource/c2e.svg",  val: 2.0  },
+    MONEY_PAPER_2E:  { img: "qrc:/gcompris/src/activities/money/resource/n2e.svg",  val: 2.0  },
     MONEY_PAPER_5E:  { img: "qrc:/gcompris/src/activities/money/resource/n5e.svg",  val: 5.0  },
     MONEY_PAPER_10E: { img: "qrc:/gcompris/src/activities/money/resource/n10e.svg", val: 10.0 },
     MONEY_PAPER_20E: { img: "qrc:/gcompris/src/activities/money/resource/n20e.svg", val: 20.0 },

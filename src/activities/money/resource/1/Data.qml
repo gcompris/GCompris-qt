@@ -20,7 +20,7 @@ Data {
         "minPrice": 1,
         "maxPrice": 4,
         "pocket": [
-            moneyItems.MONEY_COIN_2E,
+            moneyItems.MONEY_PAPER_2E,
             moneyItems.MONEY_COIN_1E
         ]
     },  
@@ -29,8 +29,8 @@ Data {
         "minPrice": 1,
         "maxPrice": 5,
         "pocket": [
-            moneyItems.MONEY_COIN_2E,
-            moneyItems.MONEY_COIN_2E,
+            moneyItems.MONEY_PAPER_2E,
+            moneyItems.MONEY_PAPER_2E,
             moneyItems.MONEY_COIN_1E
         ]
     },
@@ -40,8 +40,8 @@ Data {
         "maxPrice": 6,
         "pocket": [
             moneyItems.MONEY_PAPER_5E,
-            moneyItems.MONEY_COIN_2E,
-            moneyItems.MONEY_COIN_2E,
+            moneyItems.MONEY_PAPER_2E,
+            moneyItems.MONEY_PAPER_2E,
             moneyItems.MONEY_COIN_1E
         ]
     },
@@ -51,8 +51,8 @@ Data {
         "maxPrice": 7,
         "pocket": [
             moneyItems.MONEY_PAPER_5E,
-            moneyItems.MONEY_COIN_2E,
-            moneyItems.MONEY_COIN_2E,
+            moneyItems.MONEY_PAPER_2E,
+            moneyItems.MONEY_PAPER_2E,
             moneyItems.MONEY_COIN_1E
         ]
     },
@@ -62,8 +62,8 @@ Data {
         "maxPrice": 8,
         "pocket": [
             moneyItems.MONEY_PAPER_5E,
-            moneyItems.MONEY_COIN_2E,
-            moneyItems.MONEY_COIN_2E,
+            moneyItems.MONEY_PAPER_2E,
+            moneyItems.MONEY_PAPER_2E,
             moneyItems.MONEY_COIN_1E
         ]
     },
@@ -73,8 +73,8 @@ Data {
         "maxPrice": 9,
         "pocket": [
             moneyItems.MONEY_PAPER_5E,
-            moneyItems.MONEY_COIN_2E,
-            moneyItems.MONEY_COIN_2E,
+            moneyItems.MONEY_PAPER_2E,
+            moneyItems.MONEY_PAPER_2E,
             moneyItems.MONEY_COIN_1E
         ]
     },
@@ -85,8 +85,8 @@ Data {
         "pocket": [
             moneyItems.MONEY_PAPER_5E,
             moneyItems.MONEY_PAPER_5E,
-            moneyItems.MONEY_COIN_2E,
-            moneyItems.MONEY_COIN_2E,
+            moneyItems.MONEY_PAPER_2E,
+            moneyItems.MONEY_PAPER_2E,
             moneyItems.MONEY_COIN_1E
         ]
     }

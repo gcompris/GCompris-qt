@@ -22,8 +22,8 @@ Data {
         "paid": 5,
         "pocket": [
             moneyItems.MONEY_PAPER_5E,
-            moneyItems.MONEY_COIN_2E,
-            moneyItems.MONEY_COIN_2E,
+            moneyItems.MONEY_PAPER_2E,
+            moneyItems.MONEY_PAPER_2E,
             moneyItems.MONEY_COIN_1E,
             moneyItems.MONEY_COIN_1E
         ]
@@ -35,8 +35,8 @@ Data {
         "paid": 10,
         "pocket": [
             moneyItems.MONEY_PAPER_5E,
-            moneyItems.MONEY_COIN_2E,
-            moneyItems.MONEY_COIN_2E,
+            moneyItems.MONEY_PAPER_2E,
+            moneyItems.MONEY_PAPER_2E,
             moneyItems.MONEY_COIN_1E,
             moneyItems.MONEY_COIN_1E,
             moneyItems.MONEY_COIN_1E,
@@ -49,8 +49,8 @@ Data {
         "paid": 10,
         "pocket": [
             moneyItems.MONEY_PAPER_5E,
-            moneyItems.MONEY_COIN_2E,
-            moneyItems.MONEY_COIN_2E,
+            moneyItems.MONEY_PAPER_2E,
+            moneyItems.MONEY_PAPER_2E,
             moneyItems.MONEY_COIN_1E,
             moneyItems.MONEY_COIN_1E,
             moneyItems.MONEY_COIN_1E
@@ -64,8 +64,8 @@ Data {
         "pocket": [
             moneyItems.MONEY_PAPER_10E,
             moneyItems.MONEY_PAPER_5E,
-            moneyItems.MONEY_COIN_2E,
-            moneyItems.MONEY_COIN_2E,
+            moneyItems.MONEY_PAPER_2E,
+            moneyItems.MONEY_PAPER_2E,
             moneyItems.MONEY_COIN_1E,
             moneyItems.MONEY_COIN_1E,
             moneyItems.MONEY_COIN_1E
@@ -79,8 +79,8 @@ Data {
         "pocket": [
             moneyItems.MONEY_PAPER_10E,
             moneyItems.MONEY_PAPER_5E,
-            moneyItems.MONEY_COIN_2E,
-            moneyItems.MONEY_COIN_2E,
+            moneyItems.MONEY_PAPER_2E,
+            moneyItems.MONEY_PAPER_2E,
             moneyItems.MONEY_COIN_1E,
             moneyItems.MONEY_COIN_1E,
             moneyItems.MONEY_COIN_1E
@@ -94,8 +94,8 @@ Data {
         "pocket": [
             moneyItems.MONEY_PAPER_10E,
             moneyItems.MONEY_PAPER_5E,
-            moneyItems.MONEY_COIN_2E,
-            moneyItems.MONEY_COIN_2E,
+            moneyItems.MONEY_PAPER_2E,
+            moneyItems.MONEY_PAPER_2E,
             moneyItems.MONEY_COIN_1E,
             moneyItems.MONEY_COIN_1E,
             moneyItems.MONEY_COIN_1E
@@ -109,8 +109,8 @@ Data {
         "pocket": [
             moneyItems.MONEY_PAPER_10E,
             moneyItems.MONEY_PAPER_5E,
-            moneyItems.MONEY_COIN_2E,
-            moneyItems.MONEY_COIN_2E,
+            moneyItems.MONEY_PAPER_2E,
+            moneyItems.MONEY_PAPER_2E,
             moneyItems.MONEY_COIN_1E,
             moneyItems.MONEY_COIN_1E,
             moneyItems.MONEY_COIN_1E
