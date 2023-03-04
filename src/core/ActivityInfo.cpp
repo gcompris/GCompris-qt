@@ -216,7 +216,7 @@ void ActivityInfo::fillDatasets(QQmlEngine *engine)
     quint32 levelMin = ApplicationSettings::getInstance()->filterLevelMin();
     quint32 levelMax = ApplicationSettings::getInstance()->filterLevelMax();
     for (const QString &level: m_levels) {
-        QString url = QString("qrc:/gcompris/src/activities/%1/resource/%2/Data.qml").arg(m_name.split('/')[0]).arg(level);
+        QString url = QString("qrc:/gcompris/src/activities/%1/resource/%2/Data.qml").arg(m_name.split('/')[0], level);
         QQmlComponent componentRoot(engine, QUrl(url));
         QObject *objectRoot = componentRoot.create();
         if (objectRoot != nullptr) {
@@ -286,7 +286,7 @@ void ActivityInfo::setCurrentLevels()
     QStringList levelsToRemove;
     for (const QString &level: m_currentLevels) {
         if (!m_levels.contains(level)) {
-            qDebug() << QString("Invalid level %1 for activity %2, removing it").arg(level).arg(m_name);
+            qDebug() << QString("Invalid level %1 for activity %2, removing it").arg(level, m_name);
             levelsToRemove << level;
         }
     }
