@@ -36,7 +36,7 @@ DOWNLOAD_FULL = "full" in ALL_LANGUAGES
 DOWNLOAD_MUSIC = "music" in ALL_LANGUAGES
 if DOWNLOAD_WORDS:
     ALL_LANGUAGES.remove("words")
-    download_file(DOWNLOAD_PATH+"words/words.rcc", OUTPUT_FOLDER+"words/")
+    download_file(DOWNLOAD_PATH+"words/words-webp.rcc", OUTPUT_FOLDER+"words/")
 
 if DOWNLOAD_FULL:
     ALL_LANGUAGES.remove("full")
