@@ -13,11 +13,6 @@
 Qt5_BaseDIR=~/Qt/5.12.12
 export ANDROID_NDK_ROOT=$ANDROID_NDK
 
-if [ "$#" -eq 1 ]; then
-    Qt5_BaseDIR=$1
-    echo "Overriding Qt5_BaseDIR to ${Qt5_BaseDIR}"
-fi
-
 # The current version
 version=$(sed -n -e 's/set(GCOMPRIS_MINOR_VERSION \([0-9]\+\)).*/\1/p' CMakeLists.txt)
 
@@ -58,7 +53,8 @@ f_cmake()
         rm -rf CMakeFiles
     fi
 
-    cmake -DCMAKE_TOOLCHAIN_FILE=~/ecm/share/ECM/toolchain/Android.cmake \
+    cmake -DCMAKE_TOOLCHAIN_FILE=/usr/share/ECM/toolchain/Android.cmake \
+	  -DCMAKE_ANDROID_API=16 \
 	  -DCMAKE_BUILD_TYPE=Release \
 	  -DANDROID_ABI=$1 \
 	  -DCMAKE_FIND_ROOT_PATH=${Qt5_BaseDIR}/${QtTarget}/lib/ \
@@ -97,11 +93,10 @@ if [[ $minor -ge 14 ]]; then
 fi
 
 f_cmake armeabi-v7a OFF OFF $download_assets
-make
-make BuildTranslations
+make -j 4
 make getAssets
 make apk_aligned_signed
 
 # Remove extra apk
-rm -f android-build/*release-arm*
-rm -f android-build/*release-signed-arm*
+rm -f android-build/*release-armeabi*
+rm -f android-build/*release-signed-armeabi*
