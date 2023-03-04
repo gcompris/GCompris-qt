@@ -42,7 +42,7 @@ void ActivityInfo::setName(const QString &name)
 
     setCurrentLevels();
 
-    emit nameChanged();
+    Q_EMIT nameChanged();
 }
 
 QString ActivityInfo::section() const
@@ -52,7 +52,7 @@ QString ActivityInfo::section() const
 void ActivityInfo::setSection(const QString &section)
 {
     m_section = section;
-    emit sectionChanged();
+    Q_EMIT sectionChanged();
 }
 
 quint32 ActivityInfo::difficulty() const
@@ -62,7 +62,7 @@ quint32 ActivityInfo::difficulty() const
 void ActivityInfo::setDifficulty(const quint32 &difficulty)
 {
     m_difficulty = difficulty;
-    emit difficultyChanged();
+    Q_EMIT difficultyChanged();
 }
 
 quint32 ActivityInfo::minimalDifficulty() const
@@ -72,7 +72,7 @@ quint32 ActivityInfo::minimalDifficulty() const
 void ActivityInfo::setMinimalDifficulty(const quint32 &minimalDifficulty)
 {
     m_minimalDifficulty = minimalDifficulty;
-    emit minimalDifficultyChanged();
+    Q_EMIT minimalDifficultyChanged();
 }
 
 quint32 ActivityInfo::maximalDifficulty() const
@@ -82,7 +82,7 @@ quint32 ActivityInfo::maximalDifficulty() const
 void ActivityInfo::setMaximalDifficulty(const quint32 &maximalDifficulty)
 {
     m_maximalDifficulty = maximalDifficulty;
-    emit maximalDifficultyChanged();
+    Q_EMIT maximalDifficultyChanged();
 }
 
 QString ActivityInfo::icon() const
@@ -92,7 +92,7 @@ QString ActivityInfo::icon() const
 void ActivityInfo::setIcon(const QString &icon)
 {
     m_icon = icon;
-    emit iconChanged();
+    Q_EMIT iconChanged();
 }
 
 QString ActivityInfo::author() const
@@ -102,7 +102,7 @@ QString ActivityInfo::author() const
 void ActivityInfo::setAuthor(const QString &author)
 {
     m_author = author;
-    emit authorChanged();
+    Q_EMIT authorChanged();
 }
 
 QString ActivityInfo::title() const
@@ -112,7 +112,7 @@ QString ActivityInfo::title() const
 void ActivityInfo::setTitle(const QString &title)
 {
     m_title = title;
-    emit titleChanged();
+    Q_EMIT titleChanged();
 }
 
 QString ActivityInfo::description() const
@@ -122,7 +122,7 @@ QString ActivityInfo::description() const
 void ActivityInfo::setDescription(const QString &description)
 {
     m_description = description;
-    emit descriptionChanged();
+    Q_EMIT descriptionChanged();
 }
 
 QString ActivityInfo::goal() const
@@ -132,7 +132,7 @@ QString ActivityInfo::goal() const
 void ActivityInfo::setGoal(const QString &goal)
 {
     m_goal = goal;
-    emit goalChanged();
+    Q_EMIT goalChanged();
 }
 
 QString ActivityInfo::prerequisite() const
@@ -142,7 +142,7 @@ QString ActivityInfo::prerequisite() const
 void ActivityInfo::setPrerequisite(const QString &prerequisite)
 {
     m_prerequisite = prerequisite;
-    emit prerequisiteChanged();
+    Q_EMIT prerequisiteChanged();
 }
 
 QString ActivityInfo::manual() const
@@ -152,7 +152,7 @@ QString ActivityInfo::manual() const
 void ActivityInfo::setManual(const QString &manual)
 {
     m_manual = manual;
-    emit manualChanged();
+    Q_EMIT manualChanged();
 }
 
 QString ActivityInfo::credit() const
@@ -162,7 +162,7 @@ QString ActivityInfo::credit() const
 void ActivityInfo::setCredit(const QString &credit)
 {
     m_credit = credit;
-    emit creditChanged();
+    Q_EMIT creditChanged();
 }
 
 bool ActivityInfo::favorite() const
@@ -173,7 +173,7 @@ void ActivityInfo::setFavorite(const bool favorite)
 {
     m_favorite = favorite;
     ApplicationSettings::getInstance()->setFavorite(m_name, m_favorite);
-    emit favoriteChanged();
+    Q_EMIT favoriteChanged();
 }
 
 bool ActivityInfo::enabled() const
@@ -183,7 +183,7 @@ bool ActivityInfo::enabled() const
 void ActivityInfo::setEnabled(const bool enabled)
 {
     m_enabled = enabled;
-    emit enabledChanged();
+    Q_EMIT enabledChanged();
 }
 
 int ActivityInfo::createdInVersion() const
@@ -193,7 +193,7 @@ int ActivityInfo::createdInVersion() const
 void ActivityInfo::setCreatedInVersion(const int created)
 {
     m_createdInVersion = created;
-    emit createdInVersionChanged();
+    Q_EMIT createdInVersionChanged();
 }
 
 QStringList ActivityInfo::levels() const
@@ -208,7 +208,7 @@ void ActivityInfo::setLevels(const QStringList &levels)
 
     setCurrentLevels();
 
-    emit levelsChanged();
+    Q_EMIT levelsChanged();
 }
 
 void ActivityInfo::fillDatasets(QQmlEngine *engine)
@@ -269,7 +269,7 @@ void ActivityInfo::setCurrentLevels(const QStringList &currentLevels)
 {
     m_currentLevels = currentLevels;
     computeMinMaxDifficulty();
-    emit currentLevelsChanged();
+    Q_EMIT currentLevelsChanged();
 }
 
 void ActivityInfo::setCurrentLevels()

@@ -29,7 +29,7 @@
 class CoreApplicationSettingsTest : public QObject
 {
     Q_OBJECT
-private slots:
+private Q_SLOTS:
     void cleanup();
     void ApplicationSettingsInitializationTest();
     void ApplicationSettingsTest();

@@ -100,7 +100,7 @@ public:
     void setName(const QString &str);
     /// @endcond
 
-signals:
+Q_SIGNALS:
     /**
      * Emitted when the name changes.
      */

@@ -27,7 +27,7 @@
 class CoreDatasetTest : public QObject
 {
     Q_OBJECT
-private slots:
+private Q_SLOTS:
     void DatasetTest();
     void DatasetTest_data();
 };

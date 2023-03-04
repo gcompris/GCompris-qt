@@ -27,18 +27,18 @@ class Directory : public QObject
 public:
     /**
      * Constructor
-    */
+     */
     explicit Directory(QObject *parent = 0);
 
     /**
-      * Returns the names of all the files and directories in a given path
-      *
-      * @param location: the path of the directory
-      * @param nameFilters: name filters to apply to the filenames
-      *
-      * @returns list of the names of all the files and directories
-      *          in the directory.
-      */
+     * Returns the names of all the files and directories in a given path
+     *
+     * @param location: the path of the directory
+     * @param nameFilters: name filters to apply to the filenames
+     *
+     * @returns list of the names of all the files and directories
+     *          in the directory.
+     */
     Q_INVOKABLE QStringList getFiles(const QString &location, const QStringList &nameFilters = QStringList());
 };
 

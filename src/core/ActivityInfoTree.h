@@ -53,7 +53,7 @@ protected Q_SLOTS:
     Q_INVOKABLE void minMaxFiltersChanged(quint32 levelMin, quint32 levelMax, bool emitChanged = true);
     Q_INVOKABLE void setCurrentActivityFromName(const QString &name);
 
-signals:
+Q_SIGNALS:
     void menuTreeChanged();
     void currentActivityChanged();
     void allCharactersChanged();

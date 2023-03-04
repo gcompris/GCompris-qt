@@ -354,7 +354,7 @@ public:
 
     /// @endcond
 
-public slots:
+public Q_SLOTS:
     /**
      * Returns the resource root-paths used for GCompris resources.
      * First look in a local folder if exists, else will look into the rcc files.
@@ -426,7 +426,7 @@ public slots:
 protected:
     qreal getSizeWithRatio(const qreal height) { return ratio() * height; }
 
-signals:
+Q_SIGNALS:
     void applicationWidthChanged();
     void portraitModeChanged();
     void ratioChanged();

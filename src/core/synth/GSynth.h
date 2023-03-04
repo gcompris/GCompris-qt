@@ -48,7 +48,7 @@ public:
 protected:
     static GSynth *m_instance;
 
-private slots:
+private Q_SLOTS:
     void stopAudio(int note);
     
 private:

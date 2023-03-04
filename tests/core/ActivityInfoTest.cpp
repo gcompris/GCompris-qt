@@ -28,7 +28,7 @@
 class CoreActivityInfoTest : public QObject
 {
     Q_OBJECT
-private slots:
+private Q_SLOTS:
     void ActivityInfoTest();
     void ActivityInfoTest_data();
     void levelsTest();

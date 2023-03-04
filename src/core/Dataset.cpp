@@ -25,7 +25,7 @@ QString Dataset::objective() const
 void Dataset::setObjective(const QString &objective)
 {
     m_objective = objective;
-    emit objectiveChanged();
+    Q_EMIT objectiveChanged();
 }
 
 quint32 Dataset::difficulty() const
@@ -35,7 +35,7 @@ quint32 Dataset::difficulty() const
 void Dataset::setDifficulty(const quint32 &difficulty)
 {
     m_difficulty = difficulty;
-    emit difficultyChanged();
+    Q_EMIT difficultyChanged();
 }
 
 QVariant Dataset::data() const
@@ -45,7 +45,7 @@ QVariant Dataset::data() const
 void Dataset::setData(const QVariant &data)
 {
     m_data = data;
-    emit dataChanged();
+    Q_EMIT dataChanged();
 }
 
 bool Dataset::enabled() const
@@ -55,5 +55,5 @@ bool Dataset::enabled() const
 void Dataset::setEnabled(const bool &enabled)
 {
     m_enabled = enabled;
-    emit enabledChanged();
+    Q_EMIT enabledChanged();
 }

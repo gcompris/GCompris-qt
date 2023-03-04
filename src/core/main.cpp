@@ -57,7 +57,7 @@ bool isSupportedLocale(const QString &locale)
     QQmlEngine engine;
     QQmlComponent component(&engine, QUrl("qrc:/gcompris/src/core/LanguageList.qml"));
     QObject *object = component.create();
-    if(!object) {
+    if (!object) {
         qWarning() << "isSupportedLocale:" << component.errors();
         return false;
     }

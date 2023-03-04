@@ -118,7 +118,7 @@ void ApplicationInfo::setApplicationWidth(const int newWidth)
 {
     if (newWidth != m_applicationWidth) {
         m_applicationWidth = newWidth;
-        emit applicationWidthChanged();
+        Q_EMIT applicationWidthChanged();
     }
 }
 
@@ -207,7 +207,7 @@ void ApplicationInfo::setIsPortraitMode(const bool newMode)
 {
     if (m_isPortraitMode != newMode) {
         m_isPortraitMode = newMode;
-        emit portraitModeChanged();
+        Q_EMIT portraitModeChanged();
     }
 }
 
@@ -253,7 +253,7 @@ void ApplicationInfo::setBox2DInstalled(const QQmlEngine &engine)
         }
     }
     m_isBox2DInstalled = box2dInstalled;
-    emit isBox2DInstalledChanged();
+    Q_EMIT isBox2DInstalledChanged();
 }
 
 // return the shortest possible locale name for the given locale, describing

@@ -74,8 +74,8 @@ class ApplicationSettings : public QObject
     Q_PROPERTY(bool isBackgroundMusicEnabled READ isBackgroundMusicEnabled WRITE setIsBackgroundMusicEnabled NOTIFY backgroundMusicEnabledChanged)
 
     /**
-	 * Whether GCompris should run in fullscreen mode.
-	 */
+     * Whether GCompris should run in fullscreen mode.
+     */
     Q_PROPERTY(bool isFullscreen READ isFullscreen WRITE setFullscreen NOTIFY fullscreenChanged)
 
     /**
@@ -248,9 +248,9 @@ class ApplicationSettings : public QObject
     Q_PROPERTY(QString userDataPath READ userDataPath WRITE setUserDataPath NOTIFY userDataPathChanged)
 
     /**
-      * Define the renderer used.
-      * Either openGL or software renderer (only for Qt >= 5.8)
-      */
+     * Define the renderer used.
+     * Either openGL or software renderer (only for Qt >= 5.8)
+     */
     Q_PROPERTY(QString renderer READ renderer WRITE setRenderer NOTIFY rendererChanged)
 
     /**
@@ -296,21 +296,21 @@ public:
     void setIsAudioVoicesEnabled(const bool newMode)
     {
         m_isAudioVoicesEnabled = newMode;
-        emit audioVoicesEnabledChanged();
+        Q_EMIT audioVoicesEnabledChanged();
     }
 
     bool isAudioEffectsEnabled() const { return m_isAudioEffectsEnabled; }
     void setIsAudioEffectsEnabled(const bool newMode)
     {
         m_isAudioEffectsEnabled = newMode;
-        emit audioEffectsEnabledChanged();
+        Q_EMIT audioEffectsEnabledChanged();
     }
 
     bool isBackgroundMusicEnabled() const { return m_isBackgroundMusicEnabled; }
     void setIsBackgroundMusicEnabled(const bool newMode)
     {
         m_isBackgroundMusicEnabled = newMode;
-        emit backgroundMusicEnabledChanged();
+        Q_EMIT backgroundMusicEnabledChanged();
     }
 
     bool isFullscreen() const { return m_isFullscreen; }
@@ -318,7 +318,7 @@ public:
     {
         if (m_isFullscreen != newMode) {
             m_isFullscreen = newMode;
-            emit fullscreenChanged();
+            Q_EMIT fullscreenChanged();
         }
     }
 
@@ -327,7 +327,7 @@ public:
     {
         if (m_previousHeight != height) {
             m_previousHeight = height;
-            emit previousHeightChanged();
+            Q_EMIT previousHeightChanged();
         }
     }
 
@@ -336,7 +336,7 @@ public:
     {
         if (m_previousWidth != width) {
             m_previousWidth = width;
-            emit previousWidthChanged();
+            Q_EMIT previousWidthChanged();
         }
     }
 
@@ -344,7 +344,7 @@ public:
     void setVirtualKeyboard(const bool newMode)
     {
         m_isVirtualKeyboard = newMode;
-        emit virtualKeyboardChanged();
+        Q_EMIT virtualKeyboardChanged();
     }
 
     QString locale() const
@@ -354,35 +354,35 @@ public:
     void setLocale(const QString &newLocale)
     {
         m_locale = newLocale;
-        emit localeChanged();
+        Q_EMIT localeChanged();
     }
 
     QString font() const { return m_font; }
     void setFont(const QString &newFont)
     {
         m_font = newFont;
-        emit fontChanged();
+        Q_EMIT fontChanged();
     }
 
     bool isEmbeddedFont() const { return m_isEmbeddedFont; }
     void setIsEmbeddedFont(const bool newIsEmbeddedFont)
     {
         m_isEmbeddedFont = newIsEmbeddedFont;
-        emit embeddedFontChanged();
+        Q_EMIT embeddedFontChanged();
     }
 
     quint32 fontCapitalization() const { return m_fontCapitalization; }
     void setFontCapitalization(quint32 newFontCapitalization)
     {
         m_fontCapitalization = newFontCapitalization;
-        emit fontCapitalizationChanged();
+        Q_EMIT fontCapitalizationChanged();
     }
 
     qreal fontLetterSpacing() const { return m_fontLetterSpacing; }
     void setFontLetterSpacing(qreal newFontLetterSpacing)
     {
         m_fontLetterSpacing = newFontLetterSpacing;
-        emit fontLetterSpacingChanged();
+        Q_EMIT fontLetterSpacingChanged();
     }
 
     qreal fontLetterSpacingMin() const { return m_fontLetterSpacingMin; }
@@ -395,21 +395,21 @@ public:
     void setFilterLevelMin(const quint32 newFilterLevelMin)
     {
         m_filterLevelMin = newFilterLevelMin;
-        emit filterLevelMinChanged();
+        Q_EMIT filterLevelMinChanged();
     }
 
     quint32 filterLevelMax() const { return m_filterLevelMax; }
     void setFilterLevelMax(const quint32 newFilterLevelMax)
     {
         m_filterLevelMax = newFilterLevelMax;
-        emit filterLevelMaxChanged();
+        Q_EMIT filterLevelMaxChanged();
     }
 
     bool isKioskMode() const { return m_isKioskMode; }
     void setKioskMode(const bool newMode)
     {
         m_isKioskMode = newMode;
-        emit kioskModeChanged();
+        Q_EMIT kioskModeChanged();
     }
 
     bool sectionVisible() const { return m_sectionVisible; }
@@ -417,69 +417,69 @@ public:
     {
         qDebug() << "c++ setSectionVisible=" << newMode;
         m_sectionVisible = newMode;
-        emit sectionVisibleChanged();
+        Q_EMIT sectionVisibleChanged();
     }
 
     bool exitConfirmation() const { return m_exitConfirmation; }
     void setExitConfirmation(const bool newMode)
     {
         m_exitConfirmation = newMode;
-        emit exitConfirmationChanged();
+        Q_EMIT exitConfirmationChanged();
     }
 
     QString wordset() const { return m_wordset; }
     void setWordset(const QString &newWordset)
     {
         m_wordset = newWordset;
-        emit wordsetChanged();
+        Q_EMIT wordsetChanged();
     }
 
     bool useWordset() const { return m_useWordset; }
     void setUseWordset(const bool newMode)
     {
         m_useWordset = newMode;
-        emit useWordsetChanged();
+        Q_EMIT useWordsetChanged();
     }
 
     QString downloadServerUrl() const { return m_downloadServerUrl; }
     void setDownloadServerUrl(const QString &newDownloadServerUrl)
     {
         m_downloadServerUrl = newDownloadServerUrl;
-        emit downloadServerUrlChanged();
+        Q_EMIT downloadServerUrlChanged();
     }
 
     QString cachePath() const { return m_cachePath; }
     void setCachePath(const QString &newCachePath)
     {
         m_cachePath = newCachePath;
-        emit cachePathChanged();
+        Q_EMIT cachePathChanged();
     }
 
     QString userDataPath() const { return m_userDataPath; }
     void setUserDataPath(const QString &newUserDataPath)
     {
         m_userDataPath = newUserDataPath;
-        emit userDataPathChanged();
+        Q_EMIT userDataPathChanged();
     }
     quint32 exeCount() const { return m_exeCount; }
     void setExeCount(const quint32 newExeCount)
     {
         m_exeCount = newExeCount;
-        emit exeCountChanged();
+        Q_EMIT exeCountChanged();
     }
 
     bool isBarHidden() const { return m_isBarHidden; }
     void setBarHidden(const bool newBarHidden)
     {
         m_isBarHidden = newBarHidden;
-        emit barHiddenChanged();
+        Q_EMIT barHiddenChanged();
     }
 
     int baseFontSize() const { return m_baseFontSize; }
     void setBaseFontSize(const int newBaseFontSize)
     {
         m_baseFontSize = qMax(qMin(newBaseFontSize, baseFontSizeMax()), baseFontSizeMin());
-        emit baseFontSizeChanged();
+        Q_EMIT baseFontSizeChanged();
     }
 
     int baseFontSizeMin() const { return m_baseFontSizeMin; }
@@ -489,35 +489,35 @@ public:
     void setBackgroundMusicVolume(const qreal newBackgroundMusicVolume)
     {
         m_backgroundMusicVolume = newBackgroundMusicVolume;
-        emit backgroundMusicVolumeChanged();
+        Q_EMIT backgroundMusicVolumeChanged();
     }
 
     qreal audioEffectsVolume() const { return m_audioEffectsVolume; }
     void setAudioEffectsVolume(const qreal newAudioEffectsVolume)
     {
         m_audioEffectsVolume = newAudioEffectsVolume;
-        emit audioEffectsVolumeChanged();
+        Q_EMIT audioEffectsVolumeChanged();
     }
 
     int lastGCVersionRan() const { return m_lastGCVersionRan; }
     void setLastGCVersionRan(const int newLastGCVersionRan)
     {
         m_lastGCVersionRan = newLastGCVersionRan;
-        emit lastGCVersionRanChanged();
+        Q_EMIT lastGCVersionRanChanged();
     }
 
     QString renderer() const { return m_renderer; }
     void setRenderer(const QString &newRenderer)
     {
         m_renderer = newRenderer;
-        emit rendererChanged();
+        Q_EMIT rendererChanged();
     }
 
     QStringList filteredBackgroundMusic() const { return m_filteredBackgroundMusic; }
     void setFilteredBackgroundMusic(const QStringList &newFilteredBackgroundMusic)
     {
         m_filteredBackgroundMusic = newFilteredBackgroundMusic;
-        emit filteredBackgroundMusicChanged();
+        Q_EMIT filteredBackgroundMusicChanged();
     }
 
     /**
@@ -527,7 +527,7 @@ public:
      */
     Q_INVOKABLE bool useExternalWordset();
 
-protected slots:
+protected Q_SLOTS:
 
     Q_INVOKABLE void notifyAudioVoicesEnabledChanged();
     Q_INVOKABLE void notifyAudioEffectsEnabledChanged();
@@ -563,7 +563,7 @@ protected slots:
 
     Q_INVOKABLE void notifyBarHiddenChanged();
 
-public slots:
+public Q_SLOTS:
     Q_INVOKABLE bool isFavorite(const QString &activity);
     Q_INVOKABLE void setFavorite(const QString &activity, bool favorite);
     Q_INVOKABLE void setCurrentLevels(const QString &activity, const QStringList &level, bool sync = true);
@@ -608,7 +608,7 @@ public slots:
      */
     Q_INVOKABLE void sync();
 
-signals:
+Q_SIGNALS:
     void audioVoicesEnabledChanged();
     void audioEffectsEnabledChanged();
     void backgroundMusicEnabledChanged();

@@ -20,7 +20,7 @@ class DirectoryTest : public QObject
 {
 public:
     Q_OBJECT
-private slots:
+private Q_SLOTS:
     void GetFilesTest();
 };
 
