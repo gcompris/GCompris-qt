@@ -270,7 +270,7 @@ inline DownloadManager::DownloadJob *DownloadManager::getJobByUrl_locked(const Q
 inline DownloadManager::DownloadJob *DownloadManager::getJobByReply(QNetworkReply *r)
 {
     QMutexLocker locker(&jobsMutex);
-    for (auto activeJob: activeJobs)
+    for (auto activeJob: qAsConst(activeJobs))
         if (activeJob->reply == r)
             return activeJob;
     return nullptr; // should never happen!
@@ -299,7 +299,7 @@ inline QString DownloadManager::getSystemDownloadPath() const
     return ApplicationSettings::getInstance()->cachePath();
 }
 
-inline QStringList DownloadManager::getSystemResourcePaths() const
+inline const QStringList DownloadManager::getSystemResourcePaths() const
 {
 
     QStringList results({
@@ -479,7 +479,7 @@ void DownloadManager::downloadInProgress(qint64 bytesReceived, qint64 bytesTotal
     QNetworkReply *reply = dynamic_cast<QNetworkReply *>(sender());
     DownloadJob *job = nullptr;
     // don't call getJobByReply to not cause deadlock with mutex
-    for (auto activeJob: activeJobs) {
+    for (auto activeJob: qAsConst(activeJobs)) {
         if (activeJob->reply == reply) {
             job = activeJob;
             break;
@@ -492,7 +492,7 @@ void DownloadManager::downloadInProgress(qint64 bytesReceived, qint64 bytesTotal
     job->bytesTotal = bytesTotal;
     qint64 allJobsBytesReceived = 0;
     qint64 allJobsBytesTotal = 0;
-    for (auto activeJob: activeJobs) {
+    for (auto activeJob: qAsConst(activeJobs)) {
         allJobsBytesReceived += activeJob->bytesReceived;
         allJobsBytesTotal += activeJob->bytesTotal;
     }
