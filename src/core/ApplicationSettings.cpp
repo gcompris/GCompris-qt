@@ -337,7 +337,7 @@ void ApplicationSettings::setIsAutomaticDownloadsEnabled(const bool newIsAutomat
 {
     if (ApplicationInfo::isDownloadAllowed()) {
         m_isAutomaticDownloadsEnabled = newIsAutomaticDownloadsEnabled;
-        emit automaticDownloadsEnabledChanged();
+        Q_EMIT automaticDownloadsEnabledChanged();
     }
 }
 void ApplicationSettings::notifyAutomaticDownloadsEnabledChanged()

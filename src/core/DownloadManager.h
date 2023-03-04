@@ -193,7 +193,7 @@ private:
     QStringList getLocalResources();
 #endif
 
-private slots:
+private Q_SLOTS:
 
     /** Handle a finished download.
      *
@@ -275,7 +275,7 @@ public:
      */
     Q_INVOKABLE bool registerResource(const QString &filename);
 
-public slots:
+public Q_SLOTS:
 
     /** Emitted when a download in progressing.
      *
@@ -335,7 +335,7 @@ public slots:
     Q_INVOKABLE void registerLocalResources();
 #endif
 
-signals:
+Q_SIGNALS:
 
     /** Emitted when a download error occurs.
      *

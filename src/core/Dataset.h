@@ -64,7 +64,7 @@ public:
     bool enabled() const;
     void setEnabled(const bool &);
     /// @endcond
-signals:
+Q_SIGNALS:
     void objectiveChanged();
     void difficultyChanged();
     void dataChanged();

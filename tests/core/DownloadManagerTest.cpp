@@ -24,7 +24,7 @@ class DownloadManagerTest : public QObject
 {
     Q_OBJECT
 
-private slots:
+private Q_SLOTS:
     /**
      * @brief initTestCase Case for basic functionality of DownloadManager
      */

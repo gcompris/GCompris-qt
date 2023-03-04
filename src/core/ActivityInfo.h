@@ -192,7 +192,7 @@ public:
     void addDataset(const QString &name, Dataset *dataset);
     Q_INVOKABLE Dataset *getDataset(const QString &name) const;
 
-signals:
+Q_SIGNALS:
     void nameChanged();
     void sectionChanged();
     void difficultyChanged();

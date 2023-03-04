@@ -44,7 +44,7 @@ void File::setName(const QString &str)
 
     if (target != m_name) {
         m_name = target;
-        emit nameChanged();
+        Q_EMIT nameChanged();
     }
 }
 
@@ -54,7 +54,7 @@ QString File::read(const QString &name)
         setName(name);
 
     if (m_name.isEmpty()) {
-        emit error("source is empty");
+        Q_EMIT error("source is empty");
         return QString();
     }
 
@@ -78,7 +78,7 @@ QString File::read(const QString &name)
         file.close();
     }
     else {
-        emit error("Unable to open the file");
+        Q_EMIT error("Unable to open the file");
         return QString();
     }
     return fileContent;
@@ -90,13 +90,13 @@ bool File::write(const QString &data, const QString &name)
         setName(name);
 
     if (m_name.isEmpty()) {
-        emit error("source is empty");
+        Q_EMIT error("source is empty");
         return false;
     }
 
     QFile file(m_name);
     if (!file.open(QFile::WriteOnly | QFile::Truncate)) {
-        emit error("could not open file " + m_name);
+        Q_EMIT error("could not open file " + m_name);
         return false;
     }
 
@@ -120,13 +120,13 @@ bool File::append(const QString &data, const QString &name)
         setName(name);
 
     if (m_name.isEmpty()) {
-        emit error("source is empty");
+        Q_EMIT error("source is empty");
         return false;
     }
 
     QFile file(m_name);
     if (!file.open(QFile::WriteOnly | QFile::Append)) {
-        emit error("could not open file " + m_name);
+        Q_EMIT error("could not open file " + m_name);
         return false;
     }
 

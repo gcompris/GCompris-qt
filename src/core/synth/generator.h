@@ -56,7 +56,7 @@ public:
 
     void generateData(qint64 len);
 
-public slots:
+public Q_SLOTS:
     void noteOn   (unsigned char chan, unsigned char note, unsigned char vel);
     void noteOff  (unsigned char chan, unsigned char note);
 

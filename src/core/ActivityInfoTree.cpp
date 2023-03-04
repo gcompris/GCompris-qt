@@ -71,7 +71,7 @@ void ActivityInfoTree::setCurrentActivityFromName(const QString &name)
     for (const auto &activity: constMenuTreeFull) {
         if (activity->name() == name) {
             m_currentActivity = activity;
-            emit currentActivityChanged();
+            Q_EMIT currentActivityChanged();
             break;
         }
     }
@@ -80,7 +80,7 @@ void ActivityInfoTree::setCurrentActivityFromName(const QString &name)
 void ActivityInfoTree::setCurrentActivity(ActivityInfo *currentActivity)
 {
     m_currentActivity = currentActivity;
-    emit currentActivityChanged();
+    Q_EMIT currentActivityChanged();
 }
 
 ActivityInfo *ActivityInfoTree::getCurrentActivity() const

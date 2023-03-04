@@ -110,7 +110,7 @@ void DownloadManager::abortDownloads()
             iter.remove();
         }
         locker.unlock();
-        emit error(QNetworkReply::OperationCanceledError, QObject::tr("Download cancelled by user"));
+        Q_EMIT error(QNetworkReply::OperationCanceledError, QObject::tr("Download cancelled by user"));
     }
 }
 
@@ -219,7 +219,7 @@ bool DownloadManager::download(DownloadJob *job)
             // up in an infinite loop if corresponding Contents file does not
             // exist upstream
             job->knownContentsUrls.append(contentsUrl);
-            //qDebug() << "Postponing rcc download, first fetching Contents" << contentsUrl;
+            // qDebug() << "Postponing rcc download, first fetching Contents" << contentsUrl;
             job->queue.prepend(job->url);
             job->url = contentsUrl;
         }
@@ -230,20 +230,20 @@ bool DownloadManager::download(DownloadJob *job)
     QDir dir;
     if (!dir.exists(fi.path()) && !dir.mkpath(fi.path())) {
         qDebug() << "Could not create resource path " << fi.path();
-        emit error(QNetworkReply::ProtocolUnknownError, QObject::tr("Could not create resource path"));
+        Q_EMIT error(QNetworkReply::ProtocolUnknownError, QObject::tr("Could not create resource path"));
         return false;
     }
 
     job->file.setFileName(tempFilenameForFilename(fi.filePath()));
     if (!job->file.open(QIODevice::WriteOnly)) {
-        emit error(QNetworkReply::ProtocolUnknownError,
-                   QObject::tr("Could not open target file %1").arg(job->file.fileName()));
+        Q_EMIT error(QNetworkReply::ProtocolUnknownError,
+                     QObject::tr("Could not open target file %1").arg(job->file.fileName()));
         return false;
     }
 
     // start download:
     request.setUrl(job->url);
-    //qDebug() << "Now downloading" << job->url << "to" << fi.filePath() << "...";
+    // qDebug() << "Now downloading" << job->url << "to" << fi.filePath() << "...";
     QNetworkReply *reply = accessManager.get(request);
     job->reply = reply;
     connect(reply, SIGNAL(finished()), this, SLOT(downloadFinished()));
@@ -253,7 +253,7 @@ bool DownloadManager::download(DownloadJob *job)
     if (job->url.fileName() != contentsFilename) {
         connect(reply, &QNetworkReply::downloadProgress,
                 this, &DownloadManager::downloadInProgress);
-        emit downloadStarted(job->url.toString().remove(0, serverUrl.toString().length()));
+        Q_EMIT downloadStarted(job->url.toString().remove(0, serverUrl.toString().length()));
     }
 
     return true;
@@ -343,7 +343,7 @@ void DownloadManager::handleError(QNetworkReply::NetworkError code)
     Q_UNUSED(code);
     QNetworkReply *reply = dynamic_cast<QNetworkReply *>(sender());
     qDebug() << reply->errorString() << " " << reply->error();
-    emit error(reply->error(), reply->errorString());
+    Q_EMIT error(reply->error(), reply->errorString());
 }
 
 bool DownloadManager::parseContents(DownloadJob *job)
@@ -374,7 +374,7 @@ bool DownloadManager::parseContents(DownloadJob *job)
             return false;
         }
         job->contents[parts[1]] = parts[0];
-        //qDebug() << "Contents: " << parts[1] << " -> " << parts[0];
+        // qDebug() << "Contents: " << parts[1] << " -> " << parts[0];
     }
     job->file.close();
     return true;
@@ -400,7 +400,7 @@ bool DownloadManager::checksumMatches(DownloadJob *job, const QString &filename)
     }
     file.close();
     QByteArray fileHash = fileHasher.result().toHex();
-    //qDebug() << "Checking file-hash ~ contents-hash: " << fileHash << " ~ " << job->contents[basename];
+    // qDebug() << "Checking file-hash ~ contents-hash: " << fileHash << " ~ " << job->contents[basename];
 
     return (fileHash == job->contents[basename]);
 }
@@ -441,16 +441,16 @@ bool DownloadManager::registerResourceAbsolute(const QString &filename)
     locker.unlock(); /* note: we unlock before emitting to prevent
                       * potential deadlocks */
 
-    emit resourceRegistered(getRelativeResourcePath(filename));
+    Q_EMIT resourceRegistered(getRelativeResourcePath(filename));
 
     QString v = getVoicesResourceForLocale(
         ApplicationSettings::getInstance()->locale());
     QString musicPath = getBackgroundMusicResources();
 
     if (v == getRelativeResourcePath(filename))
-        emit voicesRegistered();
+        Q_EMIT voicesRegistered();
     else if (musicPath == getRelativeResourcePath(filename))
-        emit backgroundMusicRegistered();
+        Q_EMIT backgroundMusicRegistered();
     return true;
 }
 
@@ -496,7 +496,7 @@ void DownloadManager::downloadInProgress(qint64 bytesReceived, qint64 bytesTotal
         allJobsBytesReceived += activeJob->bytesReceived;
         allJobsBytesTotal += activeJob->bytesTotal;
     }
-    emit downloadProgress(allJobsBytesReceived, allJobsBytesTotal);
+    Q_EMIT downloadProgress(allJobsBytesReceived, allJobsBytesTotal);
 }
 
 void DownloadManager::downloadFinished()
@@ -533,10 +533,10 @@ void DownloadManager::downloadFinished()
             // note: errorHandler() emit's error!
             goto outError;
         }
-        //qDebug() << "Download of Contents finished successfully: " << job->url;
+        // qDebug() << "Download of Contents finished successfully: " << job->url;
         if (!parseContents(job)) {
             qWarning() << "Invalid format of Contents file" << job->url;
-            emit error(QNetworkReply::UnknownContentError, QObject::tr("Invalid format of Contents file"));
+            Q_EMIT error(QNetworkReply::UnknownContentError, QObject::tr("Invalid format of Contents file"));
             goto outError;
         }
     }
@@ -557,9 +557,9 @@ void DownloadManager::downloadFinished()
         // this is an error as we don't have the expected rcc.
         else if (!redirect.isEmpty()) {
             qWarning() << QString("The url %1 does not exist.").arg(job->url.toString());
-            emit error(QNetworkReply::UnknownContentError,
-                       QObject::tr("The url %1 does not exist.")
-                           .arg(job->url.toString()));
+            Q_EMIT error(QNetworkReply::UnknownContentError,
+                         QObject::tr("The url %1 does not exist.")
+                             .arg(job->url.toString()));
             code = Error;
             if (QFile::exists(targetFilename)) {
                 QFile::remove(targetFilename);
@@ -570,9 +570,9 @@ void DownloadManager::downloadFinished()
             if (!checksumMatches(job, targetFilename)) {
                 qWarning() << "Checksum of downloaded file does not match: "
                            << targetFilename;
-                emit error(QNetworkReply::UnknownContentError,
-                           QObject::tr("Checksum of downloaded file does not match: %1")
-                               .arg(targetFilename));
+                Q_EMIT error(QNetworkReply::UnknownContentError,
+                             QObject::tr("Checksum of downloaded file does not match: %1")
+                                 .arg(targetFilename));
                 code = Error;
             }
             else
@@ -608,7 +608,7 @@ void DownloadManager::downloadFinished()
     job->downloadResult = code;
     if (job->file.isOpen())
         job->file.close();
-    emit downloadFinished(code);
+    Q_EMIT downloadFinished(code);
     reply->deleteLater();
 
     allFinished = std::all_of(activeJobs.constBegin(), activeJobs.constEnd(),
@@ -623,7 +623,7 @@ void DownloadManager::downloadFinished()
                           delete job;
                       });
         activeJobs.clear();
-        emit allDownloadsFinished(allCode);
+        Q_EMIT allDownloadsFinished(allCode);
     }
     return;
 

@@ -18,7 +18,7 @@ class ApplicationInfoTest : public QObject
 {
 public:
     Q_OBJECT
-private slots:
+private Q_SLOTS:
     void LocaleTest_data();
     void LocaleTest();
     void WindowTest_data();
