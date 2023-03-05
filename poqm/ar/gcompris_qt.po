@@ -14450,8 +14450,8 @@ msgid ""
 "GCompris is developed by the KDE community, you can translate GCompris by "
 "joining a translation team on <a href=\"%2\">%2</a>"
 msgstr ""
-"يطوّر مجتمع «كدي» تطبيق «فهمت»، يمكنك ترجمة «فهمت» بالانضمام إلى فريق التّرجمة "
-"على <a href=\"%2\">%2</a>"
+"يطوّر مجتمع «كِيدِي» تطبيق «فهمت»، يمكنك ترجمة «فهمت» بالانضمام إلى فريق "
+"التّرجمة على <a href=\"%2\">%2</a>"
 
 #: activities/hangman/Hangman.qml:403
 msgctxt "Hangman|"
@@ -15297,8 +15297,8 @@ msgid ""
 "GCompris is developed by the KDE community, you can translate GCompris by "
 "joining a translation team on <a href=\"%2\">%2</a>"
 msgstr ""
-"يطوّر مجتمع «كدي» تطبيق «فهمت»، يمكنك ترجمة «فهمت» بالانضمام إلى فريق التّرجمة "
-"على <a href=\"%2\">%2</a>"
+"يطوّر مجتمع «كِيدِي» تطبيق «فهمت»، يمكنك ترجمة «فهمت» بالانضمام إلى فريق "
+"التّرجمة على <a href=\"%2\">%2</a>"
 
 #: activities/lang/Lang.qml:143
 msgctxt "Lang|"
@@ -16206,8 +16206,8 @@ msgid ""
 "GCompris is developed by the KDE community, you can translate GCompris by "
 "joining a translation team on <a href=\"%2\">%2</a>"
 msgstr ""
-"يطوّر مجتمع «كدي» تطبيق «فهمت»، يمكنك ترجمة «فهمت» بالانضمام إلى فريق التّرجمة "
-"على <a href=\"%2\">%2</a>"
+"يطوّر مجتمع «كِيدِي» تطبيق «فهمت»، يمكنك ترجمة «فهمت» بالانضمام إلى فريق "
+"التّرجمة على <a href=\"%2\">%2</a>"
 
 #: activities/letter-in-word/LetterInWord.qml:301
 msgctxt "LetterInWord|"
@@ -18766,8 +18766,8 @@ msgid ""
 "GCompris is developed by the KDE community, you can translate GCompris by "
 "joining a translation team on <a href=\"%2\">%2</a>"
 msgstr ""
-"يطوّر مجتمع «كدي» تطبيق «فهمت»، يمكنك ترجمة «فهمت» بالانضمام إلى فريق التّرجمة "
-"على <a href=\"%2\">%2</a>"
+"يطوّر مجتمع «كِيدِي» تطبيق «فهمت»، يمكنك ترجمة «فهمت» بالانضمام إلى فريق "
+"التّرجمة على <a href=\"%2\">%2</a>"
 
 #: activities/missing-letter/MissingLetter.qml:319
 msgctxt "MissingLetter|"
@@ -26225,7 +26225,7 @@ msgstr ""
 #: core/DialogAbout.qml:75
 msgctxt "DialogAbout|"
 msgid "<b>GCompris</b> is a Free Software developed within the KDE community."
-msgstr "<b>«فهمت»</b> برمجيّة حرّة يطوّرها مجتمع «كدي»."
+msgstr "<b>«فهمت»</b> برمجيّة حرّة يطوّرها مجتمع «كِيدِي»."
 
 #: core/DialogAbout.qml:79
 #, qt-format
