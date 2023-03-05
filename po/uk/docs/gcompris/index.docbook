@@ -27,9 +27,17 @@
 <author>
 <personname
 ><firstname
->Johnny Jazeix</firstname
+>Johnny</firstname
 > <surname
-></surname
+>Jazeix</surname
+> </personname>
+</author>
+<author>
+<personname
+><firstname
+>Timothée</firstname
+> <surname
+>Giet</surname
 > </personname>
 </author>
 
