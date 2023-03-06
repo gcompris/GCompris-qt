@@ -1,0 +1,13 @@
+[
+    { "level": 1, "questions": "a|e|ı|i|o|ö|u|ü", "answers": "a|e|ı|i|o|ö|u|ü" },
+    { "level": 2, "questions": "a|e|ı|i|o|ö|u|ü", "answers": "a|e|ı|i|o|ö|u|ü|y|c|s" },
+    { "level": 3, "questions": "a|e|ı|i|o|ö|u|ü", "answers": "a|e|ı|i|o|ö|u|ü|c|k|s|v|y|z" },
+    { "level": 4, "questions": "c|ç|k|p|s|ş|v|z", "answers": "c|ç|k|p|s|ş|v|z" },
+    { "level": 5, "questions": "b|f|g|ğ|m|n|ö|t", "answers": "b|f|g|ğ|m|n|ö|t" },
+    { "level": 6, "questions": "b|d|g|k|p|n|m|u", "answers": "b|d|g|k|p|n|m|u" },
+    { "level": 7, "questions": "i|l|t|h|ı|v|a|e", "answers": "i|l|t|h|ı|v|a|e" },
+    { "level": 8, "questions": "a|b|c|d|e|f|g|h", "answers": "a|b|c|d|e|f|g|h" },
+    { "level": 9, "questions": "i|j|k|l|m|n|o|ö", "answers": "i|j|k|l|m|n|o|ö" },
+    { "level": 10, "questions": "ğ|r|s|t|u|v|ş|ı|y|z", "answers": "ğ|r|s|t|u|v|ş|ı|y|z" },
+    { "level": 11, "questions": "a|b|c|ç|d|e|f|g|ğ|h|ı|i|j|k|l|m|n|o|ö|p|r|s|ş|t|u|ü|v|y|z", "answers": "a|b|c|ç|d|e|f|g|ğ|h|ı|i|j|k|l|m|n|o|ö|p|r|s|ş|t|u|ü|v|y|z" }
+]
