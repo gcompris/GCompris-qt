@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2023-02-21 09:37+0100\n"
+"PO-Revision-Date: 2023-03-01 16:19+0100\n"
 "Last-Translator: Vit Pelcak <vit@pelcak.org>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
 "Language: cs\n"
@@ -23026,7 +23026,7 @@ msgstr "27 hodin"
 #: activities/solar_system/Dataset.js:409
 msgctxt "Dataset|"
 msgid "17 hours"
-msgstr "17 hours"
+msgstr "17 hodin"
 
 #: activities/solar_system/Dataset.js:369
 msgctxt "Dataset|"
@@ -23097,7 +23097,7 @@ msgstr "Jak dlouho trvá jedna otáčka (den) na Neptunu?"
 #: activities/solar_system/Dataset.js:409
 msgctxt "Dataset|"
 msgid "16 hours"
-msgstr "16 hours"
+msgstr "16 hodin"
 
 #: activities/solar_system/Dataset.js:414
 msgctxt "Dataset|"

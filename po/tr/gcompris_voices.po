@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: gcompris_voices\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-12-17 02:40+0000\n"
-"PO-Revision-Date: 2023-01-22 20:53+0300\n"
+"PO-Revision-Date: 2023-03-09 17:54+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 22.12.1\n"
+"X-Generator: Lokalize 22.12.3\n"
 "X-POOTLE-MTIME: 1497539875.000000\n"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "advanced_colors"
@@ -465,7 +465,7 @@ msgstr "Haritayı tamamlamak için nesneleri sürükleyip bırak."
 #: activities/gletters/ActivityInfo.qml:18
 #, kde-format
 msgid "Type the letters on your keyboard before they reach the ground."
-msgstr "Klavyenizdeki harfleri yere ulaşmadan önce yaz."
+msgstr "Klavyendeki harfleri yere ulaşmadan önce yaz."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "gnumch-equality"
 #: activities/gnumch-equality/ActivityInfo.qml:18
@@ -599,7 +599,7 @@ msgstr "Doğru çalgıya tıkla."
 #, kde-format
 msgid "Use the arrow keys to pilot your spaceship safely onto the landing pad."
 msgstr ""
-"Uzay geminizi güvenli bir şekilde iniş pistine indirmek için ok düğmelerini "
+"Uzay gemini güvenli bir şekilde iniş pistine indirmek için ok düğmelerini "
 "kullan."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "lang"
@@ -667,8 +667,7 @@ msgstr ""
 #, kde-format
 msgid ""
 "Move animals to their homes using a left click or right click on your mouse."
-msgstr ""
-"Farenizin sol veya sağ tıklamasını kullanarak hayvanları evlerine taşı."
+msgstr "Farenin sol veya sağ tıklamasını kullanarak hayvanları evlerine taşı."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "leftright"
 #: activities/leftright/ActivityInfo.qml:18
@@ -1223,7 +1222,7 @@ msgid ""
 "Click on the square which you wish to mark and try to mark 3 consecutive "
 "squares before Tux."
 msgstr ""
-"İşaretlemek istediğiniz kareye tıkla ve Tux'tan önce 3 ardışık kareyi "
+"İşaretlemek istediğin kareye tıkla ve Tux'tan önce 3 ardışık kareyi "
 "işaretlemeye çalış."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "traffic"

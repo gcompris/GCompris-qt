@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2023-01-31 21:44+0300\n"
+"PO-Revision-Date: 2023-03-09 13:49+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 22.12.1\n"
+"X-Generator: Lokalize 22.12.3\n"
 "X-Qt-Contexts: true\n"
 
 #. Activity title
@@ -14267,7 +14267,7 @@ msgstr "Her ögeyi adının üzerine sürükleyip bırak."
 #: activities/imagename/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid "Vocabulary and reading."
-msgstr "Sözcük dağarcığı ve okuma."
+msgstr "Söz dağarcığı ve okuma."
 
 #. Help prerequisite
 #: activities/imagename/ActivityInfo.qml:25 activities/lang/ActivityInfo.qml:28
@@ -14889,7 +14889,7 @@ msgstr ""
 #: activities/lang/ActivityInfo.qml:21
 msgctxt "ActivityInfo|"
 msgid "Enrich your vocabulary"
-msgstr "Sözcük dağarcığını zenginleştir"
+msgstr "Söz dağarcığını zenginleştir"
 
 #. Help title
 #: activities/lang/ActivityInfo.qml:23
@@ -14901,7 +14901,7 @@ msgstr "Dil öğrenme etkinliklerini tamamla."
 #: activities/lang/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Enrich your vocabulary in your native language or in a foreign one."
-msgstr "Ana dilindeki veya başka bir dildeki sözcük dağarcığını zenginleştir."
+msgstr "Ana dilindeki veya başka bir dildeki söz dağarcığını zenginleştir."
 
 #. Help manual
 #: activities/lang/ActivityInfo.qml:30
@@ -17990,7 +17990,7 @@ msgstr "Sözcükler"
 #: activities/menu/Menu.qml:156
 msgctxt "Menu|"
 msgid "Vocabulary"
-msgstr "Sözcük Dağarcığı"
+msgstr "Söz Dağarcığı"
 
 #: activities/menu/Menu.qml:372
 msgctxt "Menu|"
@@ -25417,7 +25417,7 @@ msgstr ""
 "kurdu. KDE e.V, KDE topluluğunu finansal ve hukuki konularda temsil "
 "etmektedir. KDE e.V. hakkında bilgi almak için <a href=\"%1\">%1</a> "
 "adresini ziyaret edin. <br /><br />KDE Takımı'nın her zaman finansal desteğe "
-"ihtiyacı vardır. Yapılan bağışlar, yasal destek sağlamak, KDE "
+"gereksinimi vardır. Yapılan bağışlar, yasal destek sağlamak, KDE "
 "geliştiricilerinin KDE'ye yaptıkları desteğin sürmesini sağlamak ve "
 "toplantıların, konferansların organizasyonu için harcanıyor.<br /> <br /"
 ">Sizin de <a href=\"%2\">%2</a> adresinde anlatılan şekilde KDE'ye yardım "
