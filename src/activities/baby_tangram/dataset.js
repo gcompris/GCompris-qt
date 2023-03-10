@@ -371,21 +371,6 @@ var dataset = [
                 'colorMask': '#999',
                 'pieces': [
                     {
-                        'img': 'truck/engine.svg',
-                        'flippable': 0,
-                        'flipping': 0,
-                        'x': 0.860,
-                        'y': 0.573,
-                        'width': 0.233,
-                        'height': 0.109,
-                        'rotation': 0,
-                        'moduloRotation': 0,
-                        'initX': 0.866,
-                        'initY': 0.754,
-                        'initRotation': 0,
-                        'initFlipping': 0
-                    },
-                    {
                         'img': 'truck/cabin.svg',
                         'flippable': 0,
                         'flipping': 0,
@@ -444,6 +429,21 @@ var dataset = [
                         'initY': 0.760,
                         'initRotation': 0,
                         'initFlipping': 0
+                    },
+                    {
+                        'img': 'truck/engine.svg',
+                        'flippable': 0,
+                        'flipping': 0,
+                        'x': 0.860,
+                        'y': 0.573,
+                        'width': 0.233,
+                        'height': 0.109,
+                        'rotation': 0,
+                        'moduloRotation': 0,
+                        'initX': 0.866,
+                        'initY': 0.754,
+                        'initRotation': 0,
+                        'initFlipping': 0
                     }
                 ]
             },
@@ -452,21 +452,6 @@ var dataset = [
                 'bg': 'truck/traffic_bg.svg',
                 'colorMask': '#999',
                 'pieces': [
-                    {
-                        'img': 'truck/engine.svg',
-                        'flippable': 1,
-                        'flipping': 0,
-                        'x': 0.860,
-                        'y': 0.573,
-                        'width': 0.233,
-                        'height': 0.109,
-                        'rotation': 0,
-                        'moduloRotation': 360,
-                        'initX': 0.866,
-                        'initY': 0.754,
-                        'initRotation': 0,
-                        'initFlipping': 1
-                    },
                     {
                         'img': 'truck/cabin.svg',
                         'flippable': 0,
@@ -526,14 +511,7 @@ var dataset = [
                         'initY': 0.760,
                         'initRotation': 90,
                         'initFlipping': 1
-                    }
-                ]
-            },
-            {
-                'name': 'Level 3',
-                'bg': 'truck/traffic_bg.svg',
-                'colorMask': '#999',
-                'pieces': [
+                    },
                     {
                         'img': 'truck/engine.svg',
                         'flippable': 1,
@@ -548,7 +526,14 @@ var dataset = [
                         'initY': 0.754,
                         'initRotation': 0,
                         'initFlipping': 1
-                    },
+                    }
+                ]
+            },
+            {
+                'name': 'Level 3',
+                'bg': 'truck/traffic_bg.svg',
+                'colorMask': '#999',
+                'pieces': [
                     {
                         'img': 'truck/cabin.svg',
                         'flippable': 0,
@@ -608,6 +593,21 @@ var dataset = [
                         'initY': 0.760,
                         'initRotation': 270,
                         'initFlipping': 0
+                    },
+                    {
+                        'img': 'truck/engine.svg',
+                        'flippable': 1,
+                        'flipping': 0,
+                        'x': 0.860,
+                        'y': 0.573,
+                        'width': 0.233,
+                        'height': 0.109,
+                        'rotation': 0,
+                        'moduloRotation': 360,
+                        'initX': 0.866,
+                        'initY': 0.754,
+                        'initRotation': 0,
+                        'initFlipping': 1
                     }
                 ]
             },
@@ -620,7 +620,7 @@ var dataset = [
                         'img': 'car1/windshield.svg',
                         'flippable': 0,
                         'flipping': 0,
-                        'x': 0.492,
+                        'x': 0.5,
                         'y': 0.309,
                         'width': 0.563,
                         'height': 0.227,
@@ -665,8 +665,8 @@ var dataset = [
                         'img': 'car1/bumper.svg',
                         'flippable': 0,
                         'flipping': 0,
-                        'x': 0.502,
-                        'y': 0.656,
+                        'x': 0.5,
+                        'y': 0.668,
                         'width': 0.710,
                         'height': 0.184,
                         'rotation': 0,
@@ -695,8 +695,8 @@ var dataset = [
                         'img': 'car1/headlights.svg',
                         'flippable': 0,
                         'flipping': 0,
-                        'x': 0.782,
-                        'y': 0.506,
+                        'x': 0.768,
+                        'y': 0.513,
                         'width': 0.134,
                         'height': 0.125,
                         'rotation': 0,
@@ -710,8 +710,8 @@ var dataset = [
                         'img': 'car1/headlights.svg',
                         'flippable': 0,
                         'flipping': 1,
-                        'x': 0.222,
-                        'y': 0.506,
+                        'x': 0.232,
+                        'y': 0.513,
                         'width': 0.134,
                         'height': 0.125,
                         'rotation': 0,
