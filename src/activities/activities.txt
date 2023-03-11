@@ -71,6 +71,7 @@ gnumch-factors
 gnumch-inequality
 gnumch-multiples
 gnumch-primes
+grammar_analysis
 graph-coloring
 gravity
 guesscount
