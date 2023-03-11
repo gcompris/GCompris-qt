@@ -235,6 +235,13 @@ function isLeftToRightLocale(locale) {
     return (localeShort != "ar" && localeShort != "he");
 }
 
+function localeNeedSpaces(locale) {
+    // Returns false for languages with no spaces between words
+    var localeShort = GCompris.ApplicationInfo.getVoicesLocale(locale)
+    var noSpacesLanguages = [ "zh_TW", "zh_CN" ]
+    return (noSpacesLanguages.indexOf(localeShort) === -1)
+}
+
 function resolveLocale(localeToSet) {
     // Resolve the locale used to a real one
     // if Gcompris' locale selected, we want the real locale
