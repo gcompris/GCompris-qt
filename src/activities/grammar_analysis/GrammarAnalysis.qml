@@ -282,6 +282,8 @@ ActivityBase {
             Component.onCompleted: win.connect(Activity.nextSubLevel)
         }
 
+        Keys.onPressed: Activity.handleKeys(event)
+
         //--- Debugging zone.
         Text {
             id: hideDebug
@@ -339,7 +341,5 @@ ActivityBase {
             }
         }
         //--- End of debugging zone.
-
-        Keys.onPressed: Activity.handleKeys(event)
     }
 }
