@@ -17818,7 +17818,7 @@ msgstr ""
 #: activities/menu/ActivityInfo.qml:38
 msgctxt "ActivityInfo|"
 msgid "<b>Keyboard shortcuts:</b>"
-msgstr "<b>Управление с клавиатуры (горячие клавиши):</b><br><br>"
+msgstr "<b>Управление с клавиатуры (горячие клавиши):</b>"
 
 #: activities/menu/ActivityInfo.qml:39
 msgctxt "ActivityInfo|"

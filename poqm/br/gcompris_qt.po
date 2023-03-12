@@ -142,7 +142,7 @@ msgstr ""
 #: activities/submarine/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "<b>Keyboard controls:</b>"
-msgstr "<b>Lankañ gant ar c'hlavier :</b><br><br>"
+msgstr "<b>Lankañ gant ar c'hlavier :</b>"
 
 #: activities/advanced_colors/ActivityInfo.qml:26
 #: activities/algorithm/ActivityInfo.qml:24
@@ -17816,7 +17816,7 @@ msgstr ""
 #: activities/menu/ActivityInfo.qml:38
 msgctxt "ActivityInfo|"
 msgid "<b>Keyboard shortcuts:</b>"
-msgstr "<b>Lankañ gant ar c'hlavier :</b><br><br>"
+msgstr "<b>Lankañ gant ar c'hlavier :</b>"
 
 #: activities/menu/ActivityInfo.qml:39
 msgctxt "ActivityInfo|"
@@ -21096,7 +21096,7 @@ msgid ""
 msgstr ""
 "- Evit <b>dibab</b> etre an <b>Dachenn argerzhadurel</b> hag an <b>Dachenn "
 "bennañ</b> a-benn ouzhpennañ da god, klik war ar skritellig <b>Argerzhadur</"
-"b> pe <b>Arc'hwel pennañ</b>.</li>"
+"b> pe <b>Arc'hwel pennañ</b>."
 
 #: activities/programmingMaze/programmingMaze.js:123
 msgctxt "programmingMaze|"
@@ -21121,7 +21121,7 @@ msgid ""
 msgstr ""
 "- Evit <b>dibab</b> etre ar mod <b>Tachenn ar boukl</b> hag ar stumm "
 "<b>Tachenn an Arc'hwel pennañ</b> a-benn ouzhpennañ da god, klik war ar "
-"skritellig <b>Boukl</b> pe <b>Arc'hwel pennañ</b>.</li>"
+"skritellig <b>Boukl</b> pe <b>Arc'hwel pennañ</b>."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:190
 #, qt-format
@@ -21187,12 +21187,12 @@ msgid ""
 msgstr ""
 "Un tren zo diskouezet e-pad un nebeut eilennoù. Adsav anezhañ e penn uhelañ "
 "ar skramm en ur riklañ ar bagonioù hag ar stlejerez a-feson. Rikl un dra "
-"d'an traoñ evit en em zizober dioutañ.<br><br>"
+"d'an traoñ evit en em zizober dioutañ."
 
 #: activities/railroad/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "<b>Keyboard Controls:</b>"
-msgstr "<b>Lankañ gant ar c'hlavier :</b><br><br>"
+msgstr "<b>Lankañ gant ar c'hlavier :</b>"
 
 #: activities/railroad/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
@@ -25535,7 +25535,7 @@ msgid ""
 msgstr ""
 "N'eo ket ret dit bezañ diorroer meziantoù evit bezañ ezel eus strollad KDE. "
 "Kemer perzh er strolladoù broadel a dro ar meziantoù. Kinnig skeudennoù, "
-"neuzioù, sonioù ha teuliadurioù gwellaet. Dit-te da zibab! <br /><br / >Kae "
+"neuzioù, sonioù ha teuliadurioù gwellaet. Dit-te da zibab! <br /><br />Kae "
 "betek <a href=\"%1\">%1</a> evit kavout titouroù diwar-benn ar raktresoù ma "
 "c'hallfez kemer perzh enne.<br /><br />Ma peus ezhomm da gaout muioc'h a "
 "ditouroù pe deuliadurioù, kae da lenn <a href=\"%2\">%2</a> a roio dit ar "

@@ -21124,7 +21124,7 @@ msgid ""
 "\">%1</font></b><br/><font color=\"#373737\">is displayed</font>"
 msgstr ""
 "<font color=\"#373737\">Provjeri je li riječ<br/></font><b><font color="
-"\"#315AAA\">%1</font></b><br/><font boja =\"#373737\">prikazana</font>"
+"\"#315AAA\">%1</font></b><br/><font color=\"#373737\">prikazana</font>"
 
 #: activities/readingh/Readingh.qml:197
 msgctxt "Readingh|"
