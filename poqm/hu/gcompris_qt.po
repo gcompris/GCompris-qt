@@ -25300,10 +25300,10 @@ msgid ""
 msgstr ""
 "A szoftverek állandóan fejlődnek, a KDE csapat erre készen áll. Bár a "
 "felhasználó dolga, hogy megmondja nekünk, ha valami nem működik vagy jobban "
-"is mehetne.<br><br/> A KDE-nek van egy hibakereső algoritmusa. Látogasd meg "
-"a <a href=\"%1\">%1</a> oldalt a hiba bejelentéséhez. Ha esetleg módosítási "
-"javsalatod lenne, nyugodtan használd a rendszert a kérés bejelentéséhez. "
-"Kérjük ilyenkor a \"kívánságlista\" menüpontot használd."
+"is mehetne.<br /><br /> A KDE-nek van egy hibakereső algoritmusa. Látogasd "
+"meg a <a href=\"%1\">%1</a> oldalt a hiba bejelentéséhez. Ha esetleg "
+"módosítási javsalatod lenne, nyugodtan használd a rendszert a kérés "
+"bejelentéséhez. Kérjük ilyenkor a \"kívánságlista\" menüpontot használd."
 
 #: core/DialogAbout.qml:108
 #, qt-format

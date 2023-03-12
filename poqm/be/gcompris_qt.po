@@ -22065,8 +22065,8 @@ msgid ""
 "<font color=\"#373737\">Check if the word<br/></font><b><font color=\"#315AAA"
 "\">%1</font></b><br/><font color=\"#373737\">is displayed</font>"
 msgstr ""
-"<font color=\"#373737\">Праверце, ці паказваецца слова <br/><b><font color="
-"\"#315AAA\">%1</font></b><br/>"
+"<font color=\"#373737\">Праверце, ці паказваецца слова <br/></font><b><font "
+"color=\"#315AAA\">%1</font></b><br/>"
 
 #: activities/readingh/Readingh.qml:197
 msgctxt "Readingh|"
@@ -26511,7 +26511,7 @@ msgstr "Ладуецца"
 #: core/core.js:212
 msgctxt "core|"
 msgid "Download in progress.<br/>'Abort' it to quit immediately."
-msgstr "Ідзе працэс ладавання.</br>'Адмена', каб перарваць."
+msgstr "Ідзе працэс ладавання.<br/>'Адмена', каб перарваць."
 
 #: core/core.js:222
 msgctxt "core|"
@@ -27090,7 +27090,7 @@ msgstr "Ваша бягучая мова: %1 (%2)."
 #: core/main.qml:317
 msgctxt "main|"
 msgid "GCompris has been updated! Here are the new changes:<br/>"
-msgstr "GCompris быў адноўлены! Пералік новаўвядзенняў:</br>"
+msgstr "GCompris быў адноўлены! Пералік новаўвядзенняў:<br/>"
 
 #: core/ReadyButton.qml:67
 msgctxt "ReadyButton|"
