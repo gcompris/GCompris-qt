@@ -28,6 +28,13 @@ class ActivityInfoTree : public QObject
     Q_PROPERTY(QString startingActivity MEMBER m_startingActivity NOTIFY startingActivityChanged)
 
 public:
+    static ActivityInfoTree *getInstance()
+    {
+        if (!m_instance) {
+            m_instance = new ActivityInfoTree();
+        }
+        return m_instance;
+    }
     QQmlListProperty<ActivityInfo> menuTree();
     ActivityInfo *getRootMenu() const;
     void setRootMenu(ActivityInfo *rootMenu);
@@ -42,15 +49,20 @@ public:
 
     static void setStartingActivity(const QString &startingActivity) { m_startingActivity = startingActivity; }
 
-protected Q_SLOTS:
+protected:
+    static ActivityInfoTree *m_instance;
+
+public Q_SLOTS:
+    Q_INVOKABLE void minMaxFiltersChanged(quint32 levelMin, quint32 levelMax, bool doSynchronize = true);
     Q_INVOKABLE void filterByTag(const QString &tag, const QString &category = "", bool emitChanged = true);
+
+protected Q_SLOTS:
     Q_INVOKABLE void filterEnabledActivities(bool emitChanged = true);
     // create a tree from the whole list of activities with the activities created between the two versions
     Q_INVOKABLE void filterCreatedWithinVersions(int firstVersion, int lastVersion,
                                                  bool emitChanged = true);
     Q_INVOKABLE void filterBySearch(const QString &text);
     Q_INVOKABLE void filterByDifficulty(quint32 levelMin, quint32 levelMax);
-    Q_INVOKABLE void minMaxFiltersChanged(quint32 levelMin, quint32 levelMax, bool emitChanged = true);
     Q_INVOKABLE void setCurrentActivityFromName(const QString &name);
 
 Q_SIGNALS:

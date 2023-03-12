@@ -162,6 +162,12 @@ class ApplicationSettings : public QObject
     Q_PROPERTY(quint32 filterLevelMax READ filterLevelMax WRITE setFilterLevelMax NOTIFY filterLevelMaxChanged)
 
     /**
+     * Boolean to know if the difficulty level filter has been set via command-line option.
+     * In this case, we hide the possibility to change the level in the configuration and we never override the levels in the GCompris config file.
+     */
+    Q_PROPERTY(bool filterLevelOverridedByCommandLineOption READ filterLevelOverridedByCommandLineOption WRITE setFilterLevelOverridedByCommandLineOption NOTIFY filterLevelOverridedByCommandLineOptionChanged)
+
+    /**
      * Whether kiosk mode is currently active.
      */
     Q_PROPERTY(bool isKioskMode READ isKioskMode WRITE setKioskMode NOTIFY kioskModeChanged)
@@ -405,6 +411,13 @@ public:
         Q_EMIT filterLevelMaxChanged();
     }
 
+    bool filterLevelOverridedByCommandLineOption() const { return m_filterLevelOverridedByCommandLineOption; }
+    void setFilterLevelOverridedByCommandLineOption(const bool newValue)
+    {
+        m_filterLevelOverridedByCommandLineOption = newValue;
+        Q_EMIT filterLevelOverridedByCommandLineOptionChanged();
+    }
+
     bool isKioskMode() const { return m_isKioskMode; }
     void setKioskMode(const bool newMode)
     {
@@ -527,6 +540,13 @@ public:
      */
     Q_INVOKABLE bool useExternalWordset();
 
+    void setDifficultyFromCommandLine(quint32 newFilterLevelMin, quint32 newFilterLevelMax)
+    {
+        m_filterLevelOverridedByCommandLineOption = true;
+        setFilterLevelMin(newFilterLevelMin);
+        setFilterLevelMax(newFilterLevelMax);
+    }
+
 protected Q_SLOTS:
 
     Q_INVOKABLE void notifyAudioVoicesEnabledChanged();
@@ -624,6 +644,7 @@ Q_SIGNALS:
     void automaticDownloadsEnabledChanged();
     void filterLevelMinChanged();
     void filterLevelMaxChanged();
+    void filterLevelOverridedByCommandLineOptionChanged();
     void kioskModeChanged();
     void sectionVisibleChanged();
     void exitConfirmationChanged();
@@ -666,6 +687,7 @@ private:
     qreal m_fontLetterSpacing;
     quint32 m_filterLevelMin;
     quint32 m_filterLevelMax;
+    bool m_filterLevelOverridedByCommandLineOption = false;
     bool m_defaultCursor;
     bool m_noCursor;
     QString m_locale;

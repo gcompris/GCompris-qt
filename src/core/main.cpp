@@ -208,6 +208,10 @@ int main(int argc, char *argv[])
                                         QObject::tr("Outputs all the available activities on the standard output."));
     parser.addOption(clListActivities);
 
+    QCommandLineOption clDifficultyRange("difficulty",
+                                         QObject::tr("Specify the range of the activity difficulties to display for the session. Either a single value (2), or a range (3-6). Values must be between 1 and 6."), "difficulty");
+    parser.addOption(clDifficultyRange);
+
     parser.process(app);
 
     GComprisPlugin plugin;
@@ -330,6 +334,34 @@ int main(int argc, char *argv[])
         ActivityInfoTree *menuTree(qobject_cast<ActivityInfoTree *>(ActivityInfoTree::menuTreeProvider(&engine, nullptr)));
         menuTree->listActivities();
         return 0;
+    }
+    // Start on specific difficulties
+    if (parser.isSet(clDifficultyRange)) {
+        QString difficultyRange = parser.value(clDifficultyRange);
+        QStringList levels = difficultyRange.split(QStringLiteral("-"));
+        quint32 minDifficulty = levels[0].toUInt();
+        quint32 maxDifficulty = minDifficulty;
+        // If we have a range, take the second value as max difficulty
+        if (levels.size() > 1) {
+            maxDifficulty = levels[1].toUInt();
+        }
+        if (minDifficulty > maxDifficulty) {
+            qWarning() << "Minimal level must be lower than maximum level";
+            return -1;
+        }
+        if (minDifficulty < 1 || minDifficulty > 6) {
+            qWarning() << "Minimal level must between 1 and 6";
+            return -1;
+        }
+        if (maxDifficulty < 1 || maxDifficulty > 6) {
+            qWarning() << "Maximal level must between 1 and 6";
+            return -1;
+        }
+
+        qDebug() << QStringLiteral("Setting difficulty between %1 and %2").arg(minDifficulty).arg(maxDifficulty);
+        ApplicationSettings::getInstance()->setDifficultyFromCommandLine(minDifficulty, maxDifficulty);
+        ActivityInfoTree::getInstance()->minMaxFiltersChanged(minDifficulty, maxDifficulty, false);
+        ActivityInfoTree::getInstance()->filterByTag("favorite");
     }
 
     QObject *topLevel = engine.rootObjects().value(0);

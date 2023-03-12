@@ -35,8 +35,8 @@ void GComprisPlugin::registerTypes(const char *uri)
     qmlRegisterSingletonType<ApplicationInfo>(uri, versionMajor, versionMinor,
                                               "ApplicationInfo", ApplicationInfo::applicationInfoProvider);
 
-    qmlRegisterSingletonType<QObject>(uri, versionMajor, versionMinor,
-                                      "ActivityInfoTree", ActivityInfoTree::menuTreeProvider);
+    qmlRegisterSingletonType<ActivityInfoTree>(uri, versionMajor, versionMinor,
+                                               "ActivityInfoTree", ActivityInfoTree::menuTreeProvider);
     qmlRegisterType<Dataset>(uri, versionMajor, versionMinor, "Data");
     qmlRegisterType<ActivityInfo>(uri, versionMajor, versionMinor, "ActivityInfo");
     qmlRegisterSingletonType<ApplicationSettings>(uri, versionMajor, versionMinor,
