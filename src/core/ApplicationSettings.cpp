@@ -206,8 +206,10 @@ ApplicationSettings::~ApplicationSettings()
     m_config.setValue(PREVIOUS_WIDTH_KEY, m_previousWidth);
     m_config.setValue(VIRTUALKEYBOARD_KEY, m_isVirtualKeyboard);
     m_config.setValue(ENABLE_AUTOMATIC_DOWNLOADS, m_isAutomaticDownloadsEnabled);
-    m_config.setValue(FILTER_LEVEL_MIN, m_filterLevelMin);
-    m_config.setValue(FILTER_LEVEL_MAX, m_filterLevelMax);
+    if (!m_filterLevelOverridedByCommandLineOption) {
+        m_config.setValue(FILTER_LEVEL_MIN, m_filterLevelMin);
+        m_config.setValue(FILTER_LEVEL_MAX, m_filterLevelMax);
+    }
     m_config.setValue(KIOSK_KEY, m_isKioskMode);
     m_config.setValue(SECTION_VISIBLE, m_sectionVisible);
     m_config.setValue(EXIT_CONFIRMATION, m_exitConfirmation);
@@ -348,14 +350,18 @@ void ApplicationSettings::notifyAutomaticDownloadsEnabledChanged()
 
 void ApplicationSettings::notifyFilterLevelMinChanged()
 {
-    updateValueInConfig(GENERAL_GROUP_KEY, FILTER_LEVEL_MIN, m_filterLevelMin);
     qDebug() << "filterLevelMin set to: " << m_filterLevelMin;
+    if (!m_filterLevelOverridedByCommandLineOption) {
+        updateValueInConfig(GENERAL_GROUP_KEY, FILTER_LEVEL_MIN, m_filterLevelMin);
+    }
 }
 
 void ApplicationSettings::notifyFilterLevelMaxChanged()
 {
-    updateValueInConfig(GENERAL_GROUP_KEY, FILTER_LEVEL_MAX, m_filterLevelMax);
     qDebug() << "filterLevelMax set to: " << m_filterLevelMax;
+    if (!m_filterLevelOverridedByCommandLineOption) {
+        updateValueInConfig(GENERAL_GROUP_KEY, FILTER_LEVEL_MAX, m_filterLevelMax);
+    }
 }
 
 void ApplicationSettings::notifyKioskModeChanged()
@@ -478,7 +484,9 @@ bool ApplicationSettings::isFavorite(const QString &activity)
 
 void ApplicationSettings::setCurrentLevels(const QString &activity, const QStringList &level, bool sync)
 {
-    updateValueInConfig(LEVELS_GROUP_KEY, activity, level, sync);
+    if (!m_filterLevelOverridedByCommandLineOption) {
+        updateValueInConfig(LEVELS_GROUP_KEY, activity, level, sync);
+    }
 }
 
 QStringList ApplicationSettings::currentLevels(const QString &activity)

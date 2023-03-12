@@ -371,6 +371,7 @@ Item {
         GCText {
             text: qsTr("Difficulty filter:")
             fontSize: mediumSize
+            visible: !ApplicationSettings.filterLevelOverridedByCommandLineOption
             width: dialogConfig.contentWidth
             height: 50 * ApplicationInfo.ratio
         }
@@ -379,6 +380,7 @@ Item {
             id: difficultyFlow
             width: dialogConfig.contentWidth
             spacing: 5 * ApplicationInfo.ratio
+            visible: !ApplicationSettings.filterLevelOverridedByCommandLineOption
             property int starsSize: Math.floor(dialogConfig.contentWidth * 0.11)
 
             Image {

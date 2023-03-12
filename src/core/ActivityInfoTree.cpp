@@ -19,6 +19,7 @@
 #include <QTextStream>
 
 QString ActivityInfoTree::m_startingActivity = "";
+ActivityInfoTree *ActivityInfoTree::m_instance = nullptr;
 
 ActivityInfoTree::ActivityInfoTree(QObject *parent) :
     QObject(parent),
@@ -256,7 +257,7 @@ QObject *ActivityInfoTree::menuTreeProvider(QQmlEngine *engine, QJSEngine *scrip
 {
     Q_UNUSED(scriptEngine)
 
-    ActivityInfoTree *menuTree = new ActivityInfoTree(nullptr);
+    ActivityInfoTree *menuTree = getInstance();
     QQmlComponent componentRoot(engine,
                                 QUrl("qrc:/gcompris/src/activities/menu/ActivityInfo.qml"));
     QObject *objectRoot = componentRoot.create();
@@ -351,12 +352,14 @@ void ActivityInfoTree::filterBySearch(const QString &text)
     Q_EMIT menuTreeChanged();
 }
 
-void ActivityInfoTree::minMaxFiltersChanged(quint32 levelMin, quint32 levelMax, bool emitChanged)
+void ActivityInfoTree::minMaxFiltersChanged(quint32 levelMin, quint32 levelMax, bool doSynchronize)
 {
     for (ActivityInfo *activity: qAsConst(m_menuTreeFull)) {
         activity->enableDatasetsBetweenDifficulties(levelMin, levelMax);
     }
-    ApplicationSettings::getInstance()->sync();
+    if (doSynchronize) {
+        ApplicationSettings::getInstance()->sync();
+    }
 }
 
 QVariantList ActivityInfoTree::allCharacters()
