@@ -27,9 +27,17 @@
 <author>
 <personname
 ><firstname
->Johnny Jazeix</firstname
+>Johnny</firstname
 > <surname
-></surname
+>Jazeix</surname
+> </personname>
+</author>
+<author>
+<personname
+><firstname
+>Timothée</firstname
+> <surname
+>Giet</surname
 > </personname>
 </author>
 
@@ -66,13 +74,13 @@ Don't forget to include this last date.
 Please respect the format of the date (YYYY-MM-DD),it is used by scripts.
 -->
 <date
->21/1/2022</date>
+>25/2/2023</date>
 
 <!--version information of the application and kde this documentation is valid for.
 for example 'xx.yy.zz'
 -->
 <releaseinfo
->2.1</releaseinfo>
+>3.1</releaseinfo>
 
 <!-- Abstract about this handbook -->
 
@@ -127,7 +135,7 @@ for example 'xx.yy.zz'
 <itemizedlist>
 <listitem
 ><para
->&GNU;/&Linux;: Utilizzare i pacchetti forniti dalla propria distribuzione &GNU;/&Linux;. Se &gcompris; non è pacchettizzato nella propria distribuzione &Linux; contattare gli sviluppatori per l'inclusione di &gcompris; nella propria distribuzione &Linux;.</para
+>&GNU;/&Linux;: utilizzare i pacchetti forniti dalla propria distribuzione &GNU;/&Linux;. Se &gcompris; non è pacchettizzato nella propria distribuzione &Linux; contattare gli sviluppatori per l'inclusione di &gcompris; nella propria distribuzione &Linux;.</para
 ></listitem>
 <listitem
 ><para
@@ -139,7 +147,7 @@ for example 'xx.yy.zz'
 ></listitem>
 <listitem
 ><para
->Android: distribuito dallo store F-Droid o dal Google Play Store. È disponibile anche il file APK.</para
+>Android: distribuito dallo store F-Droid o dal Google Play Store. È disponibile anche il file Apk.</para
 ></listitem>
 </itemizedlist>
 </sect1>
@@ -224,7 +232,7 @@ for example 'xx.yy.zz'
 ><imageobject
 ><imagedata fileref="bar_hint.svg" format="SVG"/></imageobject
 ></inlinemediaobject
-> Lampadina - Visualizza un suggerimento per l'attività. Possiamo aiutare i bambini su alcune attività per guidarli a trovare le risposte. </para
+> Lampadina - Visualizza un suggerimento per l'attività. Possiamo aiutare i bambini su alcune attività per guidarli a trovare le risposte.</para
 ></listitem>
 <listitem
 ><para
@@ -538,6 +546,18 @@ for example 'xx.yy.zz'
 </row>
 <row>
 <entry
+>-l, --list-activities</entry>
+<entry
+>Restituisce tutte le attività disponibili sullo standard output.</entry>
+</row>
+<row>
+<entry
+>--launch activity</entry>
+<entry
+>Specifica l'attività all'avvio di GCompris.</entry>
+</row>
+<row>
+<entry
 >--export-activities-as-sql</entry>
 <entry
 >Esportare le attività come SQL.</entry>
@@ -578,7 +598,7 @@ for example 'xx.yy.zz'
 <para
 ><userinput
 ><command
->"C:\Program Files\Gcompris\gcompris-qt.exe" --enable-kioskmode -f -C</command
+>"C:\Program Files\GCompris-Qt\bin\GCompris.exe" --enable-kioskmode -f -C</command
 ></userinput
 ></para>
 </sect2>
@@ -608,7 +628,7 @@ for example 'xx.yy.zz'
 <para
 >&gcompris; </para>
 <para
->Copyright del programma 2000-2022 Timothée Giet e altri </para>
+>Copyright del programma 2000-2023 Timothée Giet e altri </para>
 
 <para
 >Traduzione della documentazione e dell'interfaccia: Vincenzo Reale <email
