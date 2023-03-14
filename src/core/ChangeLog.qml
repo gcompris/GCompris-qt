@@ -26,6 +26,12 @@ QtObject {
      *
      */
     property var changelog: [
+            { "versionCode": 30200, "content": [
+                qsTr("New command-line option (--difficulty {value|min-max}) to start GCompris at specific difficulty"),
+                qsTr("Many new images"),
+                qsTr("Many bug fixes")
+                ]
+            },
             { "versionCode": 30100, "content": [
                 qsTr("Fix issue in comparator activity")
                 ]
