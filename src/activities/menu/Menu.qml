@@ -404,7 +404,7 @@ ActivityBase {
                 selected: currentCategory === button.category
                 theme: "categories"
                 textSize: "regular"
-                haveIconRight: horizontal
+                rightIconSize: rightIcon.width + rightIcon.anchors.rightMargin
                 width: categoriesGrid.width / (currentTagCategories.length + 1)
                 height: categoriesGrid.cellHeight
                 text: modelData[category]
@@ -420,15 +420,16 @@ ActivityBase {
                     ActivityInfoTree.filterEnabledActivities()
                 }
                 Image {
+                    id: rightIcon
                     visible: horizontal
                     source: "qrc:/gcompris/src/activities/menu/resource/category-" + button.category + ".svg";
-                    height: Math.round(parent.height * 0.8)
+                    height: visible ? Math.round(parent.height * 0.8) : 0
                     sourceSize.height: height
                     width: height
                     anchors {
                         verticalCenter: parent.verticalCenter
                         right: parent.right
-                        rightMargin: parent.height * 0.1
+                        rightMargin: visible ? parent.height * 0.1 : 0
                     }
                 }
             }
