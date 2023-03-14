@@ -39,12 +39,12 @@ Button {
     property string theme: "dark"
 
     /**
-     * type:bool
+     * type:real
      * if there is an icon on the right, we need to add a rightMargin for the text label
      * 
-     * Default is false.
+     * Default is 0.
      */
-    property bool haveIconRight: false
+    property real rightIconSize: 0
 
     /**
      * type:var
@@ -149,6 +149,10 @@ Button {
             fontSize: textSizes[textSize].fontSize
             font.bold: textSizes[textSize].fontBold
             anchors.fill: parent
+            anchors.leftMargin: 8 // 2 * Rectangle border width if activeFocus, same for others below
+            anchors.rightMargin: rightIconSize > 0 ? rightIconSize : 8 // if there's a rightIconSize, it must handle the rightMargin
+            anchors.topMargin: 8
+            anchors.bottomMargin: 8
             horizontalAlignment: Text.AlignHCenter
             verticalAlignment: Text.AlignVCenter
             wrapMode: Text.WordWrap
