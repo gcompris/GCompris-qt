@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2014-12-25 01:10+0000\n"
-"PO-Revision-Date: 2023-01-21 12:07+0100\n"
+"PO-Revision-Date: 2023-03-13 10:35+0100\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
@@ -2401,7 +2401,7 @@ msgstr "Ambrosius Bosschaert el Vell, Flor de natura morta - 1614"
 #: activities/balancebox/ActivityConfig.qml:23
 msgctxt "ActivityConfig|"
 msgid "Built-in"
-msgstr "Incorporat"
+msgstr "Integrat"
 
 #: activities/balancebox/ActivityConfig.qml:24
 msgctxt "ActivityConfig|"
@@ -2615,7 +2615,7 @@ msgstr ""
 #, qt-format
 msgctxt "balancebox|"
 msgid "The file '%1' is missing!<br>Falling back to builtin levels."
-msgstr "Manca el fitxer «%1»!<br>Es torna als nivells incorporats."
+msgstr "Manca el fitxer «%1»!<br>Es torna als nivells integrats."
 
 #: activities/balancebox/Balancebox.qml:72
 msgctxt "Balancebox|"
@@ -14301,7 +14301,7 @@ msgstr "Administrador"
 #: activities/guesscount/ActivityConfig.qml:27
 msgctxt "ActivityConfig|"
 msgid "BuiltIn"
-msgstr "Incorporat"
+msgstr "Integrat"
 
 #: activities/guesscount/ActivityConfig.qml:70
 msgctxt "ActivityConfig|"
