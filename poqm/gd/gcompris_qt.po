@@ -20604,12 +20604,12 @@ msgstr ""
 "Cuir na cleasan as fhearr leat an-seo le bhith a’ taghadh na grèine gu h-àrd "
 "sa chleas ud."
 
-#: activities/menu/Menu.qml:774
+#: activities/menu/Menu.qml:775
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "Lorg gnìomhachdan sònraichte"
 
-#: activities/menu/Menu.qml:801
+#: activities/menu/Menu.qml:802
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr ""

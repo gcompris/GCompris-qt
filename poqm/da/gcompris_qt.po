@@ -18885,12 +18885,12 @@ msgid ""
 "that activity."
 msgstr ""
 
-#: activities/menu/Menu.qml:774
+#: activities/menu/Menu.qml:775
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr ""
 
-#: activities/menu/Menu.qml:801
+#: activities/menu/Menu.qml:802
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr ""

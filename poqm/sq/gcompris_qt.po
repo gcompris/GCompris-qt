@@ -18205,12 +18205,12 @@ msgstr ""
 "Vendosni këtu veprimtaritë tuaja të parapëlqyera në, duke klikuar mbi "
 "diellin, djathtas sipër te ajo veprimtari."
 
-#: activities/menu/Menu.qml:774
+#: activities/menu/Menu.qml:775
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "Kërkoni veprimtari të caktuara"
 
-#: activities/menu/Menu.qml:801
+#: activities/menu/Menu.qml:802
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "Rregullime Veprimtarie"
