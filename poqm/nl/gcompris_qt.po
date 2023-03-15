@@ -18184,12 +18184,12 @@ msgstr ""
 "Zet je favoriete activiteiten hier neer door op de zon van de activiteit "
 "rechtsboven te klikken."
 
-#: activities/menu/Menu.qml:774
+#: activities/menu/Menu.qml:775
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "Specifieke activiteiten zoeken"
 
-#: activities/menu/Menu.qml:801
+#: activities/menu/Menu.qml:802
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "Instellingen voor activiteiten"

@@ -18123,12 +18123,12 @@ msgstr ""
 "Lak da obererezhioù karetañ amañ en ur zibab an heol war bep obererezh el "
 "lein a-zehoù."
 
-#: activities/menu/Menu.qml:774
+#: activities/menu/Menu.qml:775
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "Klask obererezhioù resis"
 
-#: activities/menu/Menu.qml:801
+#: activities/menu/Menu.qml:802
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "Dibaboù an obererezh"

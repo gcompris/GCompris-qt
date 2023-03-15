@@ -18802,12 +18802,12 @@ msgstr ""
 "Дадайце сюды свае ўлюбёныя практыкаванні, пазначыўшы іх сонейкам у правым "
 "верхнім кутку значка практыкавання."
 
-#: activities/menu/Menu.qml:774
+#: activities/menu/Menu.qml:775
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "Пошук пэўных практыкаванняў"
 
-#: activities/menu/Menu.qml:801
+#: activities/menu/Menu.qml:802
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "Налады практыкавання"

@@ -18027,12 +18027,12 @@ msgstr ""
 "Lägg till favoritaktiviteter här genom att klicka på solen längst upp till "
 "höger i aktiviteten."
 
-#: activities/menu/Menu.qml:774
+#: activities/menu/Menu.qml:775
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "Sök efter specifika aktiviteter"
 
-#: activities/menu/Menu.qml:801
+#: activities/menu/Menu.qml:802
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "Aktivitetsinställningar"

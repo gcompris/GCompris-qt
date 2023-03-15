@@ -18418,12 +18418,12 @@ msgstr ""
 "Τοποθέτησε τις αγαπημένες σου δραστηριότητες εδώ, επιλέγοντας τον ήλιο που "
 "έχει καθεμιά στην επάνω δεξιά γωνία της εικόνας της."
 
-#: activities/menu/Menu.qml:774
+#: activities/menu/Menu.qml:775
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "Αναζήτηση συγκεκριμένων δραστηριοτήτων"
 
-#: activities/menu/Menu.qml:801
+#: activities/menu/Menu.qml:802
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "Ρυθμίσεις δραστηριότητας"

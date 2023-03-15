@@ -18251,12 +18251,12 @@ msgstr ""
 "Pon tus actividades preferidas aquí haciendo clic en el sol de la esquina "
 "superior derecha de cada actividad."
 
-#: activities/menu/Menu.qml:774
+#: activities/menu/Menu.qml:775
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "Buscar actividades específicas"
 
-#: activities/menu/Menu.qml:801
+#: activities/menu/Menu.qml:802
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "Preferencias de las actividades"
