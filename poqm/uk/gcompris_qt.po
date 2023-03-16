@@ -18084,17 +18084,17 @@ msgctxt "ConfigurationItem|"
 msgid "Difficulty filter:"
 msgstr "Фільтр складності:"
 
-#: activities/menu/ConfigurationItem.qml:664
+#: activities/menu/ConfigurationItem.qml:666
 msgctxt "ConfigurationItem|"
 msgid "Mixed case (default)"
 msgstr "Мішаний регістр (типово)"
 
-#: activities/menu/ConfigurationItem.qml:665
+#: activities/menu/ConfigurationItem.qml:667
 msgctxt "ConfigurationItem|"
 msgid "All uppercase"
 msgstr "Усі великі"
 
-#: activities/menu/ConfigurationItem.qml:666
+#: activities/menu/ConfigurationItem.qml:668
 msgctxt "ConfigurationItem|"
 msgid "All lowercase"
 msgstr "Усі малі"
@@ -25203,21 +25203,47 @@ msgid "Type the complete word as it falls, before it reaches the ground."
 msgstr "Наберіть слово повністю, доки воно падає на землю."
 
 #: core/ChangeLog.qml:30
+#, fuzzy
+#| msgctxt "ChangeLog|"
+#| msgid ""
+#| "New command-line option to list all the activities and start on a "
+#| "specific one"
+msgctxt "ChangeLog|"
+msgid ""
+"New command-line option (--difficulty {value|min-max}) to start GCompris at "
+"specific difficulty"
+msgstr ""
+"Новий параметр командного рядка для показу списку усіх вправ та запуску "
+"специфічної вправи"
+
+#: core/ChangeLog.qml:31 core/ChangeLog.qml:44 core/ChangeLog.qml:62
+#: core/ChangeLog.qml:77 core/ChangeLog.qml:82 core/ChangeLog.qml:88
+msgctxt "ChangeLog|"
+msgid "Many new images"
+msgstr "Багато нових малюнків"
+
+#: core/ChangeLog.qml:32 core/ChangeLog.qml:45 core/ChangeLog.qml:83
+#: core/ChangeLog.qml:89
+msgctxt "ChangeLog|"
+msgid "Many bug fixes"
+msgstr "Багато виправлень вад"
+
+#: core/ChangeLog.qml:36
 msgctxt "ChangeLog|"
 msgid "Fix issue in comparator activity"
 msgstr "Виправлено ваду у вправі з порівняння"
 
-#: core/ChangeLog.qml:34
+#: core/ChangeLog.qml:40
 msgctxt "ChangeLog|"
 msgid "Map of Spain added for geography activity"
 msgstr "До географічної вправи додано карту Іспанії"
 
-#: core/ChangeLog.qml:35
+#: core/ChangeLog.qml:41
 msgctxt "ChangeLog|"
 msgid "Voices added for Ukrainian"
 msgstr "Додано озвучення для української"
 
-#: core/ChangeLog.qml:36
+#: core/ChangeLog.qml:42
 msgctxt "ChangeLog|"
 msgid ""
 "New command-line option to list all the activities and start on a specific "
@@ -25226,24 +25252,13 @@ msgstr ""
 "Новий параметр командного рядка для показу списку усіх вправ та запуску "
 "специфічної вправи"
 
-#: core/ChangeLog.qml:37 core/ChangeLog.qml:72 core/ChangeLog.qml:75
-#: core/ChangeLog.qml:81
+#: core/ChangeLog.qml:43 core/ChangeLog.qml:78 core/ChangeLog.qml:81
+#: core/ChangeLog.qml:87
 msgctxt "ChangeLog|"
 msgid "Many usability improvements"
 msgstr "Багато поліпшень у зручності користування"
 
-#: core/ChangeLog.qml:38 core/ChangeLog.qml:56 core/ChangeLog.qml:71
-#: core/ChangeLog.qml:76 core/ChangeLog.qml:82
-msgctxt "ChangeLog|"
-msgid "Many new images"
-msgstr "Багато нових малюнків"
-
-#: core/ChangeLog.qml:39 core/ChangeLog.qml:77 core/ChangeLog.qml:83
-msgctxt "ChangeLog|"
-msgid "Many bug fixes"
-msgstr "Багато виправлень вад"
-
-#: core/ChangeLog.qml:43
+#: core/ChangeLog.qml:49
 msgctxt "ChangeLog|"
 msgid ""
 "Reduce the size of the packages for all platforms and of the external word "
@@ -25251,31 +25266,31 @@ msgid ""
 msgstr ""
 "Зменшено розмір пакунків та зовнішнього набору зображень для усіх платформ"
 
-#: core/ChangeLog.qml:44
+#: core/ChangeLog.qml:50
 msgctxt "ChangeLog|"
 msgid "Improve images quality in several activities"
 msgstr "Удосконалено якість зображено у декількох вправах"
 
-#: core/ChangeLog.qml:45
+#: core/ChangeLog.qml:51
 msgctxt "ChangeLog|"
 msgid "Fix some transitions in renewable_energy/watercycle on some platforms"
 msgstr ""
 "Виправлено деякі переходи у вправах renewable_energy/watercycle на деяких "
 "платформах"
 
-#: core/ChangeLog.qml:46
+#: core/ChangeLog.qml:52
 msgctxt "ChangeLog|"
 msgid "Fix dead keys ignored on Linux for typing activities"
 msgstr ""
 "Усунено непрацездатність сліпих клавіш у Linux у вправах із набирання тексту"
 
-#: core/ChangeLog.qml:47
+#: core/ChangeLog.qml:53
 msgctxt "ChangeLog|"
 msgid "Fix level reset when changing level manually in Logical associations"
 msgstr ""
 "Виправлено скидання рівнів при зміні рівня вручну у вправі на логічні зв'язки"
 
-#: core/ChangeLog.qml:51
+#: core/ChangeLog.qml:57
 msgctxt "ChangeLog|"
 msgid ""
 "Fix Alphabet sequence, Even and odd numbers and Numbers in order activities"
@@ -25283,37 +25298,37 @@ msgstr ""
 "Виправлено вправи на послідовність абетки, парні і непарні числа та "
 "упорядковування чисел."
 
-#: core/ChangeLog.qml:55 core/ChangeLog.qml:63
+#: core/ChangeLog.qml:61 core/ChangeLog.qml:69
 msgctxt "ChangeLog|"
 msgid "Several bug fixes"
 msgstr "Декілька виправлень вад"
 
-#: core/ChangeLog.qml:57
+#: core/ChangeLog.qml:63
 msgctxt "ChangeLog|"
 msgid "Translation updated for Russian"
 msgstr "Оновлено переклад російською"
 
-#: core/ChangeLog.qml:58
+#: core/ChangeLog.qml:64
 msgctxt "ChangeLog|"
 msgid "New voices for Norwegian Nynorsk"
 msgstr "Нове озвучування для норвезької"
 
-#: core/ChangeLog.qml:62
+#: core/ChangeLog.qml:68
 msgctxt "ChangeLog|"
 msgid "Translations added for Breton, Czech and Macedonian"
 msgstr "Додано переклади бретонською, чеською та македонською мовами."
 
-#: core/ChangeLog.qml:67
+#: core/ChangeLog.qml:73
 msgctxt "ChangeLog|"
 msgid "Translation added for Azerbaijani"
 msgstr "Додано переклад азербайджанською мовою"
 
-#: core/ChangeLog.qml:68
+#: core/ChangeLog.qml:74
 msgctxt "ChangeLog|"
 msgid "New maps and update of the maps for geography activities"
 msgstr "Нові карти і оновлення карт для географічних вправ"
 
-#: core/ChangeLog.qml:69
+#: core/ChangeLog.qml:75
 msgctxt "ChangeLog|"
 msgid ""
 "New dataset containing loops operations for programming maze, and make "
@@ -25322,7 +25337,7 @@ msgstr ""
 "Новий набір даних із циклами для програмованого лабіринту, уможливлення "
 "перекладу картинок у підручнику"
 
-#: core/ChangeLog.qml:70
+#: core/ChangeLog.qml:76
 msgctxt "ChangeLog|"
 msgid ""
 "Addition of a level to teach voltage source loop in analog electricity "
@@ -25331,57 +25346,57 @@ msgstr ""
 "Додавання рівня для вивчення замкнених електричних кіл у вправі з аналогової "
 "електроніки"
 
-#: core/ChangeLog.qml:80
+#: core/ChangeLog.qml:86
 msgctxt "ChangeLog|"
 msgid "New Activity Settings menu, with dataset selection"
 msgstr "Нове меню параметрів вправи із вибором набору даних"
 
-#: core/ChangeLog.qml:86
+#: core/ChangeLog.qml:92
 msgctxt "ChangeLog|"
 msgid "New sub-categories to organize activities"
 msgstr "Нові підкатегорії упорядковування вправ"
 
-#: core/ChangeLog.qml:87
+#: core/ChangeLog.qml:93
 msgctxt "ChangeLog|"
 msgid "Translation added for Macedonian."
 msgstr "Додано переклад македонською мовою."
 
-#: core/ChangeLog.qml:88
+#: core/ChangeLog.qml:94
 msgctxt "ChangeLog|"
 msgid "New activities Programming Maze and Baby Tangram"
 msgstr "Нові вправи — «Програмований лабіринт» та «Дитяча танграма»"
 
-#: core/ChangeLog.qml:89
+#: core/ChangeLog.qml:95
 msgctxt "ChangeLog|"
 msgid "New background music and volume settings."
 msgstr "Нові параметри фонової музики та гучності."
 
-#: core/ChangeLog.qml:90
+#: core/ChangeLog.qml:96
 msgctxt "ChangeLog|"
 msgid "New speed setting in several activities."
 msgstr "Новий параметр швидкості у декількох вправах."
 
-#: core/ChangeLog.qml:91
+#: core/ChangeLog.qml:97
 msgctxt "ChangeLog|"
 msgid "New option in chess to display captured pieces."
 msgstr "Новий параметр гри у шахи для показу битих фігур."
 
-#: core/ChangeLog.qml:92
+#: core/ChangeLog.qml:98
 msgctxt "ChangeLog|"
 msgid "New images in Colors, Advanced colors and Target game."
 msgstr "Нові зображення у іграх «Кольори», «Складні кольори» та «Ціль»."
 
-#: core/ChangeLog.qml:93
+#: core/ChangeLog.qml:99
 msgctxt "ChangeLog|"
 msgid "New voices for US English."
 msgstr "Нове озвучування для американської англійської."
 
-#: core/ChangeLog.qml:94 core/ChangeLog.qml:102
+#: core/ChangeLog.qml:100 core/ChangeLog.qml:108
 msgctxt "ChangeLog|"
 msgid "Many little fixes and improvements."
 msgstr "Багато незначних виправлень і поліпшень."
 
-#: core/ChangeLog.qml:95
+#: core/ChangeLog.qml:101
 msgctxt "ChangeLog|"
 msgid ""
 "Translation updated for multiple languages (Breton, Brazilian Portuguese, "
@@ -25390,17 +25405,17 @@ msgstr ""
 "Оновлено переклади декількома мовами (бретонською, бразильською "
 "португальською, фінською тощо)."
 
-#: core/ChangeLog.qml:96
+#: core/ChangeLog.qml:102
 msgctxt "ChangeLog|"
 msgid "Add Russian dataset for Click on letter activity."
 msgstr "Додано набір даних для вправи «Натисніть літеру» російською мовою."
 
-#: core/ChangeLog.qml:97
+#: core/ChangeLog.qml:103
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in Dutch."
 msgstr "Мовні вправи тепер доступні голландською."
 
-#: core/ChangeLog.qml:98
+#: core/ChangeLog.qml:104
 msgctxt "ChangeLog|"
 msgid ""
 "Merge Norwegian counties Nord-Trøndelag and Sør-Trøndelag into Trøndelag in "
@@ -25409,19 +25424,19 @@ msgstr ""
 "Об'єднання норвезьких губерній Нур-Треннелаг і Сер-Треннелаг до губернії "
 "Треннелаг у вправі з географії."
 
-#: core/ChangeLog.qml:99
+#: core/ChangeLog.qml:105
 msgctxt "ChangeLog|"
 msgid "Fix in braille activities where the cells start at 1, not 0."
 msgstr ""
 "Виправлено вправи з азбуки Брайля, у яких нумерація комірок починається з 1, "
 "а не з 0."
 
-#: core/ChangeLog.qml:100
+#: core/ChangeLog.qml:106
 msgctxt "ChangeLog|"
 msgid "Translation added for Basque, Hungarian and Malayalam."
 msgstr "Додано переклади баскською, угорською та малаялам."
 
-#: core/ChangeLog.qml:101
+#: core/ChangeLog.qml:107
 msgctxt "ChangeLog|"
 msgid ""
 "Loading/saving of creations (Baby Wordprocessor, Balance Box and Piano "
@@ -25430,48 +25445,48 @@ msgstr ""
 "Завантаження і збереження створеного (Дитячий текстовий процесор, Рівновага "
 "у скриньці та Композиція на піаніно)."
 
-#: core/ChangeLog.qml:102
+#: core/ChangeLog.qml:108
 msgctxt "ChangeLog|"
 msgid "Translations added for Scottish Gaelic."
 msgstr "Додано переклад шотландською гельською мовою."
 
-#: core/ChangeLog.qml:103
+#: core/ChangeLog.qml:109
 msgctxt "ChangeLog|"
 msgid "License page added in configuration."
 msgstr "До налаштувань додано сторінку ліцензування."
 
-#: core/ChangeLog.qml:103
+#: core/ChangeLog.qml:109
 msgctxt "ChangeLog|"
 msgid "Multiple changes on layouts to improve the ergonomy."
 msgstr "Декілька змін у компонуванні з метою поліпшити ергономічність."
 
-#: core/ChangeLog.qml:104
+#: core/ChangeLog.qml:110
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in Polish, Swedish and Ukrainian."
 msgstr ""
 "Мовні вправи тепер доступні польською, шведською та українською мовами."
 
-#: core/ChangeLog.qml:105
+#: core/ChangeLog.qml:111
 msgctxt "ChangeLog|"
 msgid "Search feature."
 msgstr "Можливість пошуку."
 
-#: core/ChangeLog.qml:106
+#: core/ChangeLog.qml:112
 msgctxt "ChangeLog|"
 msgid "A Changelog."
 msgstr "Журнал змін."
 
-#: core/ChangeLog.qml:107
+#: core/ChangeLog.qml:113
 msgctxt "ChangeLog|"
 msgid "Many little fixes."
 msgstr "Багато невеличких виправлень."
 
-#: core/ChangeLog.qml:107
+#: core/ChangeLog.qml:113
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in French."
 msgstr "Мовні вправи тепер доступні французькою."
 
-#: core/ChangeLog.qml:108
+#: core/ChangeLog.qml:114
 msgctxt "ChangeLog|"
 msgid ""
 "Adding a loading overlay to let the user know that some actions are taking "
@@ -25481,7 +25496,7 @@ msgstr ""
 "виконання певних дій (наприклад завантаження вправи), яке триває декілька "
 "секунд."
 
-#: core/ChangeLog.qml:108
+#: core/ChangeLog.qml:114
 msgctxt "ChangeLog|"
 msgid ""
 "Translations added for: Catalan (Valencian), Chinese Traditional, Finnish "
@@ -25491,12 +25506,12 @@ msgstr ""
 "китайською, фінською, (перекладено 92%), російською (перекладено 98%), "
 "словацькою (перекладено 92%), турецькою."
 
-#: core/ChangeLog.qml:109
+#: core/ChangeLog.qml:115
 msgctxt "ChangeLog|"
 msgid "Translations added for: Slovenian, German, Galician."
 msgstr "Додано переклади такими мовами: словенською, німецькою, галісійською."
 
-#: core/ChangeLog.qml:134
+#: core/ChangeLog.qml:140
 #, qt-format
 msgctxt "ChangeLog|"
 msgid "Version %1:"
@@ -26038,6 +26053,13 @@ msgstr "Вказати вправу, яку слід розпочати післ
 msgctxt "QObject|"
 msgid "Outputs all the available activities on the standard output."
 msgstr "Виводить список доступних вправ до стандартного виведення."
+
+#: core/main.cpp:212
+msgctxt "QObject|"
+msgid ""
+"Specify the range of the activity difficulties to display for the session. "
+"Either a single value (2), or a range (3-6). Values must be between 1 and 6."
+msgstr ""
 
 #: core/main.qml:233
 msgctxt "main|"
