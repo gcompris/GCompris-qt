@@ -1,0 +1,677 @@
+<?xml version="1.0" ?>
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+  <!-- Define an entity for your application if it is not part of KDE
+       Git -->
+  <!ENTITY gcompris "<application
+>GCompris</application
+>">
+  <!ENTITY kappname "&gcompris;"
+><!-- replace kmyapplication here
+                                            do *not* replace kappname-->
+  <!ENTITY % addindex "IGNORE">
+  <!ENTITY % Brazilian-Portuguese "INCLUDE"
+> <!-- ONLY If you are writing non-English
+                                     original documentation, change
+                                     the language here -->
+
+  <!-- Do not define any other entities; instead, use the entities
+       from entities/general.entities and en/user.entities. -->
+]>
+<book id="gcompris" lang="&language;">
+
+<bookinfo>
+<title
+>Manual de administração do &gcompris;</title>
+
+<authorgroup>
+<author>
+<personname
+><firstname
+>Johnny Jazeix</firstname
+> <surname
+></surname
+> </personname>
+</author>
+
+<othercredit role="developer">
+<othername
+>A equipe do &gcompris;</othername>
+<contrib
+>Desenvolvedores</contrib>
+</othercredit
+> 
+
+<othercredit role="translator"
+><firstname
+>Antonio Henrique</firstname
+><surname
+></surname
+><affiliation
+><address
+><email
+>ahlr_2000@yahoo.com</email
+></address
+></affiliation
+><contrib
+>Tradução</contrib
+></othercredit
+><othercredit role="translator"
+><firstname
+>André Marcelo</firstname
+><surname
+>Alvarenga</surname
+><affiliation
+><address
+><email
+>alvarenga@kde.org</email
+></address
+></affiliation
+><contrib
+>Tradução</contrib
+></othercredit
+><othercredit role="translator"
+><firstname
+>Frederico</firstname
+><surname
+>Guimarães</surname
+><affiliation
+><address
+><email
+>frederico@teia.bio.br</email
+></address
+></affiliation
+><contrib
+>Tradução</contrib
+></othercredit
+> 
+</authorgroup>
+
+<legalnotice
+>&FDLNotice;</legalnotice>
+
+<!-- Date of the documentation
+Don't forget to include this last date.
+Please respect the format of the date (YYYY-MM-DD),it is used by scripts.
+-->
+<date
+>25/02/2023</date>
+
+<!--version information of the application and kde this documentation is valid for.
+for example 'xx.yy.zz'
+-->
+<releaseinfo
+>3.1</releaseinfo>
+
+<!-- Abstract about this handbook -->
+
+<abstract>
+<para
+>&gcompris; é um software educacional com diversas atividades. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>educação</keyword>
+<keyword
+>crianças</keyword>
+<keyword
+>jogos</keyword>
+</keywordset>
+
+</bookinfo>
+
+<chapter id="administration-handbook">
+<title
+>Manual de administração</title>
+
+<sect1 id="introduction">
+<title
+>Introdução</title>
+<para
+>&gcompris; é um conjunto de softwares educacionais livres que contém uma grande quantidade e diversidade de atividades.</para>
+<para
+>Ele oferece várias atividades voltadas para os mais diversos campos. Os tópicos abordados incluem leitura e digitação, aritmética, geografia, ciências, entre outros. E pode ser usado tanto em casa quanto nas escolas.</para>
+<para
+>O objetivo do &gcompris; é oferecer um conjunto de atividades divertidas, mas sempre com um cunho educacional.</para>
+<para
+>O &gcompris; é parte dos projetos da comunidade &kde; e é mantido sob a <ulink url="https://www.gnu.org/licenses/agpl-3.0.html"
+>licença AGPLv3</ulink
+>. Todo o código, com exceção do mecanismo da atividade de eletricidade analógica,está sob a <ulink url="https://www.gnu.org/licenses/gpl.html"
+>Licença GPLv3</ulink
+>.</para>
+<para
+>O &gcompris; está disponível para os seguintes sistemas operacionais: &GNU;/&Linux;, &BSD;, MacOSX, &Windows;, Android. Ele exige uma placa de vídeo com suporte a <emphasis
+>OpenGL 2.1</emphasis
+> ou mais recente. Também é obrigatório o suporte a profundidade de cores de 32 bits.</para>
+</sect1>
+
+<sect1 id="installation">
+<title
+>Instalação</title>
+<para
+>O software está disponível de diversas formas. Escolha aquela que for mais adequada para você. </para>
+<itemizedlist>
+<listitem
+><para
+>&GNU;/&Linux;: use os pacotes disponibilizados pela sua distribuição &GNU;/&Linux;. Se o &gcompris; não for empacotado para a sua distribuição &Linux;, entre em contato com os responsáveis pelo empacotamento para pedir a inclusão do &gcompris; na sua distribuição &Linux;.</para
+></listitem>
+<listitem
+><para
+>&Windows;: disponibilizado através de um instalador clássico para &Windows; ou através da Microsoft Store.</para
+></listitem>
+<listitem
+><para
+>MacOSX: disponibilizado através de um instalador clássico.</para
+></listitem>
+<listitem
+><para
+>Android: distribuído pelo F-Droid ou pela Google Play. O arquivo apk também está disponível.</para
+></listitem>
+</itemizedlist>
+</sect1>
+
+<sect1 id="user-interface">
+<title
+>Interface do usuário</title>
+<para
+>O design da interface foi pensado para ser de uso fácil, mesmo para crianças mais novas. O &gcompris; é controlado principalmente com o mouse ou tela de toque, mas a navegação via teclado também está disponível na maioria das atividades.</para>
+
+<sect2 id="main-window">
+<title
+>Janela principal</title>
+<para
+>Quando você inicia o programa, o &gcompris; mostra uma interface gráfica que apresenta uma lista de atividades com uma barra de controle na parte inferior.</para>
+<screenshot>
+<screeninfo
+>Aqui está uma imagem da janela principal do &gcompris;</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="gcompris-main-menu.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Janela principal do &gcompris;</phrase>
+    </textobject>
+  </mediaobject>
+</screenshot>
+
+<para
+>Cada ícone representa uma atividade ou um conjunto delas. Associados a cada uma atividade, existem outros ícones, menores, que fornecem informações adicionais sobre ela. Ao clicar no ícone, podem acontecer duas coisas: a atividade será aberta ou então aparecerá um sub-menu com outro conjunto de atividades. Existem 8 seções (categorias) de atividades que aparecem no alto da tela (ou nalateral esquerda, caso o aparelho esteja na vertical). Por exemplo, existe uma seção "Jogos de tabuleiro", que inclui os jogos deste categoria, como xadrez, jogo da velha ou ligue quatro.</para>
+<para
+>Algumas categorias possuem subcategorias, para melhor filtragem das atividades. Por exemplo, as atividades de matemática possuem três subcategorias: numeração, aritmética e medidas.</para>
+<para
+>As estrelas indicam a faixa etária para a qual cada jogo foi pensado:</para
+> 
+<itemizedlist>
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="difficulty1.svg" format="SVG"/></imageobject
+></inlinemediaobject
+>1, 2 ou 3 estrelas amarelas - para 2 a 6 anos de idade.</para
+></listitem
+> 
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="difficulty4.svg" format="SVG"/></imageobject
+></inlinemediaobject
+>1, 2 ou 3 estrelas vermelhas - maiores de 6 anos de idade.</para
+></listitem
+> 
+</itemizedlist>
+
+<para
+>Na parte inferior da tela existe uma barra de controle para o &gcompris;. Os ícones que podem aparecer lá (eles são exibidos somente se eles estiverem disponíveis na atividade) são os seguintes:</para>
+<itemizedlist>
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_home.svg" format="SVG"/></imageobject
+></inlinemediaobject
+> Home - Sai da atividade e retorna ao menu anterior.</para
+></listitem
+> 
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_ok.svg" format="SVG"/></imageobject
+></inlinemediaobject
+> "OK" - Verifica e/ou confirma a sua resposta. Algumas atividades não detectam automaticamente se a criança completou ou não a tarefa. Nesse caso, você precisa clicar nesse ícone. Você também pode usar a tecla &Enter;.</para
+></listitem
+> 
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_hint.svg" format="SVG"/></imageobject
+></inlinemediaobject
+> Lâmpada - Mostra uma dica para a atividade. Nós podemos ajudar as crianças em algumas atividades, para orientá-las a encontrar a resposta.</para
+></listitem>
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_previous.svg" format="SVG"/></imageobject
+></inlinemediaobject>
+<inlinemediaobject
+><imageobject
+><imagedata fileref="bar_next.svg" format="SVG"/></imageobject
+></inlinemediaobject
+> Setas - O nível de dificuldade atual da atividade é exibido como um número entre duas setas. Clique em uma delas para aumentar ou diminuir o nível. Geralmente, as atividades diversos níveis, em números variáveis. No &gcompris;, é possível ir para o próximo nível sem ter concluído o nível atual.</para
+></listitem
+> 
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_repeat.svg" format="SVG"/></imageobject
+></inlinemediaobject
+> Boca - Pede ao &gcompris; para repetir a questão.</para
+></listitem
+> 
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_help.svg" format="SVG"/></imageobject
+></inlinemediaobject
+> Interrogação - Mostra a ajuda. Algumas atividades podem ser muito complexas para serem explicadas somente na descrição. Nesses casos, esta função fornece acesso a informações adicionais.</para
+></listitem
+> 
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_config.svg" format="SVG"/></imageobject
+></inlinemediaobject
+> Caixa de ferramentas - Menu de configuração. A configuração é salva no repositório (pasta) do usuário, com o nome <filename
+> .config/gcompris/gcompris-qt.conf </filename
+>. Este é um arquivo de texto que pode ser editado manualmente.</para
+></listitem
+> 
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_activity_config.svg" format="SVG"/></imageobject
+></inlinemediaobject
+> Lista de itens - Mostra o menu de configurações da atividade. Existem duas abas possíveis aqui. A primeira, "Conjunto de dados", permite selecionar os níveis das atividades, dependendo de uma série de objetivos. Já a segunda, "Opções", permite definir as configurações da atividade, caso esteja disponível. </para
+></listitem>
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_about.svg" format="SVG"/></imageobject
+></inlinemediaobject
+> "G" maiúsculo - Informações sobre o &gcompris;, apresentando os principais contribuidores e a versão do software.</para
+></listitem
+> 
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_exit.svg" format="SVG"/></imageobject
+></inlinemediaobject
+> Energia - Sai do &gcompris;. Você também pode usar o atalho de teclado <keycombo action="simul"
+>&Ctrl;<keycap
+>Q</keycap
+></keycombo
+>.</para
+></listitem
+> 
+</itemizedlist>
+</sect2>
+
+<sect2 id="kiosk-mode">
+<title
+>Modo Quiosque</title>
+<para
+>Quando você usar o &gcompris; com crianças mais novas ou em um quiosque de uso não supervisionado, poderá desativar algumas opções:</para>
+<itemizedlist>
+<listitem
+><para
+><userinput
+><command
+>gcompris --enable-kioskmode</command
+></userinput
+> : desabilita os botões <guiicon
+>Sair</guiicon
+> e <guiicon
+>Configurações</guiicon
+>.</para
+></listitem
+> 
+<listitem
+><para
+><userinput
+><command
+>gcompris --disable-kioskmode</command
+></userinput
+> : habilita os botões <guiicon
+>Sair</guiicon
+> e <guiicon
+>Configurações</guiicon
+>.</para
+></listitem>
+<listitem
+><para
+><userinput
+><command
+>gcompris -f</command
+></userinput
+> : executa &gcompris; no modo de tela inteira.</para
+></listitem
+> 
+<listitem
+><para
+><userinput
+><command
+>gcompris -C</command
+></userinput
+> : desativa o cursor (modo para tela sensível ao toque)</para
+></listitem
+> 
+</itemizedlist>
+<para
+>Essas opções podem ser combinadas.</para>
+</sect2>
+
+<sect2 id="keyboard-shortcuts">
+<title
+>Atalhos de teclado</title>
+<informaltable>
+<tgroup cols="2">
+<tbody>
+<row>
+<entry
+>Atalhos</entry>
+<entry
+>Ação</entry>
+</row>
+<row>
+<entry
+>&Esc; ou <keycombo action="simul"
+>&Ctrl;<keycap
+>W</keycap
+></keycombo
+></entry>
+<entry
+>Abandona a atividade ou caixa de diálogo atual e volta ao menu principal.</entry>
+</row>
+<row>
+<entry
+><keycombo action="simul"
+>&Ctrl;<keycap
+>Q</keycap
+></keycombo
+></entry>
+<entry
+>Sai do &gcompris; sem perguntar.</entry>
+</row>
+<row>
+<entry
+><keycombo action="simul"
+>&Ctrl;<keycap
+>F</keycap
+></keycombo
+></entry>
+<entry
+>Alterna o modo de tela inteira.</entry>
+</row>
+<row>
+<entry
+><keycombo action="simul"
+>&Ctrl;<keycap
+>M</keycap
+></keycombo
+></entry>
+<entry
+>Alterna a desativação do som.</entry>
+</row>
+<row>
+<entry
+><keycombo action="simul"
+>&Ctrl;<keycap
+>B</keycap
+></keycombo
+></entry>
+<entry
+>Mostra ou oculta a barra de controle.</entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
+</sect2>
+
+</sect1>
+
+<sect1 id="internationalization">
+<title
+>Notas sobre a tradução</title>
+<para
+>O &gcompris; é traduzido e está disponível para mais de 35 idiomas. Para verificar se o seu idioma está disponível, inicie o &gcompris; e selecione-o nas opções de configuração.</para>
+<para
+>Atenção ao fato de que alguns idiomas necessita de fontes específicas para serem exibidos corretamente. </para
+> 
+<para
+>Caso o seu idioma não seja suportado, você pode contribuir com o nosso software, adicionando a tradução para seu idioma. Se tiver interesse, você pode entrar em contato com a <ulink url="https://l10n.kde.org/teams"
+>equipe de tradução</ulink
+> do projeto &kde; para o seu idioma. Você pode verificar o nível de tradução para o seu idioma no <ulink url="https://l10n.kde.org/"
+>site de tradução do &kde;</ulink
+>.</para>
+</sect1>
+
+<sect1 id="learning-language">
+<title
+>Aprendizagem de idiomas</title>
+<para
+>Você pode usar o &gcompris; em um idioma estrangeiro, que você esteja aprendendo. Para isso, é só selecionar esse idioma no menu de configurações. Não se esqueça de fazer o download dos módulos de áudio opcionais para esse idioma.</para>
+</sect1>
+
+<sect1 id="customizing-activities">
+<title
+>Personalização de atividades</title>
+<para
+>Você pode personalizar algumas atividades usando o botão de configuração existente nelas. Por exemplo, poderá definir o idioma em algumas atividades de texto (como no jogo 'Palavras cadentes') ou mostrar imagens de carros reais ao invés  de retângulos preenchidos (Quebra-cabeça com peças deslizantes).</para>
+
+<para
+>Para algums atividades, você pode escolher entre vários conjuntos de dados na configuração. Cada um tem um objetivo específico descrito.</para>
+<screenshot>
+<screeninfo
+>Conjunto de dados da atividade "Contagem de itens"</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="dataset.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Conjunto de dados da atividade "Contagem de itens"</phrase>
+    </textobject>
+  </mediaobject>
+</screenshot>
+
+<para
+>Você pode selecionar as opções para esta atividade.</para>
+<screenshot>
+<screeninfo
+>Modo de seleção da atividade "Contagem de itens"</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="activity-config.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Modo de seleção da atividade "Contagem de itens"</phrase>
+    </textobject>
+  </mediaobject>
+</screenshot>
+</sect1>
+
+<sect1 id="console-switches">
+<title
+>Opções da linha de comando</title>
+<para
+>Ao executar o &gcompris; a partir da linha de comando com a opção --help serão exibidos todos os parâmetros que ele aceita:</para>
+<informaltable>
+<tgroup cols="2">
+<tbody>
+<row>
+<entry
+>-f, --fullscreen</entry>
+<entry
+>Executa o &gcompris; em modo de tela inteira.</entry>
+</row>
+<row>
+<entry
+>-w, --window</entry>
+<entry
+>Executa o &gcompris; em modo de janela.</entry>
+</row>
+<row>
+<entry
+>-s, --sound</entry>
+<entry
+>Executa o &gcompris; com o som habilitado.</entry>
+</row>
+<row>
+<entry
+>-m, --mute</entry>
+<entry
+>Executa o &gcompris; sem som.</entry>
+</row>
+<row>
+<entry
+>-c, --cursor</entry>
+<entry
+>Executa o &gcompris; com o cursor padrão do sistema.</entry>
+</row>
+<row>
+<entry
+>-C, --nocursor</entry>
+<entry
+>Executa o &gcompris; sem cursor (modo de tela sensível ao toque).</entry>
+</row>
+<row>
+<entry
+>-v, --version</entry>
+<entry
+>Mostra a versão do &gcompris;.</entry>
+</row>
+<row>
+<entry
+>-l, --list-activities</entry>
+<entry
+>Mostra todas as atividades disponíveis na saída padrão.</entry>
+</row>
+<row>
+<entry
+>--launch atividade</entry>
+<entry
+>Especifique a atividade quando iniciar o GCompris.</entry>
+</row>
+<row>
+<entry
+>--export-activities-as-sql</entry>
+<entry
+>Exporta as atividades no formato SQL.</entry>
+</row>
+<row>
+<entry
+>--enable-kioskmode</entry>
+<entry
+>Ativa o modo quiosque (oculta os botões Sair e Configurações).</entry>
+</row>
+<row>
+<entry
+>--disable-kioskmode</entry>
+<entry
+>Desativa o modo quiosque (padrão).</entry>
+</row>
+<row>
+<entry
+>--software-renderer</entry>
+<entry
+>Usa a renderização por software ao invés da openGL (deve funcionar com qualquer placa de vídeo).</entry>
+</row>
+<row>
+<entry
+>--opengl-renderer</entry>
+<entry
+>Usa a renderização openGL ao invés da via software (mais rápida e com mais efeitos gráficos, mas pode travar com algumas placas de vídeo).</entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
+
+<sect2 id="windows-example">
+<title
+>Exemplo no &Windows;</title>
+<para
+>Você pode adicionar estas opções nas opções de execução do programa, no ícone do desktop do Windows. Segue um exemplo para executar o &gcompris; no modo de quiosque em tela inteira, sem o botão de configuração e o cursor:</para>
+<para
+><userinput
+><command
+>"C:\Program Files\GCompris-Qt\bin\GCompris.exe" --enable-kioskmode -f -C</command
+></userinput
+></para>
+</sect2>
+
+<sect2 id="gnu-linux-example">
+<title
+>Exemplo no &GNU;/&Linux;</title>
+<para
+>Crie um lançador de aplicativo e configure os parâmetros da linha de comandos. Aqui está um exemplo de execução o &gcompris; no modo quiosque em tela inteira, sem o botão de configuração e o cursor:</para
+> 
+<para
+><userinput
+><command
+>gcompris-qt --enable-kioskmode -f -C</command
+></userinput
+></para>
+</sect2>
+
+</sect1>
+
+</chapter>
+<chapter id="credits">
+
+<title
+>Créditos e licença</title>
+
+<para
+>&gcompris; </para>
+<para
+>Direitos autorais do programa 2000-2023 Timothée Giet e outros </para>
+
+<para
+>Tradução de FELA <email
+>ahlr_2000@yahoo.com</email
+>, André Marcelo Alvarenga <email
+>alvarenga@kde.org</email
+> e Frederico Gonçalves Guimarães<email
+>frederico@teia.bio.br</email
+></para
+> &underFDL; &underGPL; </chapter>
+
+&documentation.index;
+</book>
+
+<!--
+Local Variables:
+mode: xml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+
+vim:tabstop=2:shiftwidth=2:expandtab
+kate: space-indent on; indent-width 2; tab-width 2; indent-mode none;
+-->
