@@ -28,6 +28,7 @@ QtObject {
     property var changelog: [
             { "versionCode": 30200, "content": [
                 qsTr("New command-line option (--difficulty {value|min-max}) to start GCompris at specific difficulty"),
+                qsTr("Many translation updates"),
                 qsTr("Many new images"),
                 qsTr("Many bug fixes")
                 ]
