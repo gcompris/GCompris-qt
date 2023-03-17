@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2023-01-21 11:41+0100\n"
+"PO-Revision-Date: 2023-03-16 12:30+0100\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Language: nl\n"
 "X-Qt-Contexts: true\n"
-"X-Generator: Lokalize 22.12.1\n"
+"X-Generator: Lokalize 22.12.3\n"
 
 #. Activity title
 #: activities/advanced_colors/ActivityInfo.qml:15
@@ -25184,18 +25184,13 @@ msgid "Type the complete word as it falls, before it reaches the ground."
 msgstr "Typ het hele woord terwijl het valt, voor het de grond raakt."
 
 #: core/ChangeLog.qml:30
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid ""
-#| "New command-line option to list all the activities and start on a "
-#| "specific one"
 msgctxt "ChangeLog|"
 msgid ""
 "New command-line option (--difficulty {value|min-max}) to start GCompris at "
 "specific difficulty"
 msgstr ""
-"Nieuwe optie voor de opdrachtregel om een lijst te tonen van alle "
-"activiteiten en een specifieke te starten"
+"Nieuwe optie voor de opdrachtregel (--difficulty {waarde|min-max}) om "
+"GCompris te starten met een specifieke moeilijkheidsgraad"
 
 #: core/ChangeLog.qml:31 core/ChangeLog.qml:44 core/ChangeLog.qml:62
 #: core/ChangeLog.qml:77 core/ChangeLog.qml:82 core/ChangeLog.qml:88
@@ -26045,6 +26040,9 @@ msgid ""
 "Specify the range of the activity difficulties to display for the session. "
 "Either a single value (2), or a range (3-6). Values must be between 1 and 6."
 msgstr ""
+"De reeks moeilijkheidsgraden van de activiteit te tonen voor de sessie. "
+"Ofwel een enkele waarde (2) of een reeks (3-6). Waarden moeten liggen tussen "
+"1 en 6."
 
 #: core/main.qml:233
 msgctxt "main|"

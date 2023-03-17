@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2023-01-21 10:12+0100\n"
+"PO-Revision-Date: 2023-03-16 11:55+0100\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
@@ -15,7 +15,7 @@ msgstr ""
 "%100<=4 ? 2 : 3);\n"
 "X-Language: sl\n"
 "X-Qt-Contexts: true\n"
-"X-Generator: Lokalize 22.12.1\n"
+"X-Generator: Lokalize 22.12.3\n"
 
 #. Activity title
 #: activities/advanced_colors/ActivityInfo.qml:15
@@ -24917,17 +24917,13 @@ msgid "Type the complete word as it falls, before it reaches the ground."
 msgstr "Natipkajte celo besedo, preden pade na tla."
 
 #: core/ChangeLog.qml:30
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid ""
-#| "New command-line option to list all the activities and start on a "
-#| "specific one"
 msgctxt "ChangeLog|"
 msgid ""
 "New command-line option (--difficulty {value|min-max}) to start GCompris at "
 "specific difficulty"
 msgstr ""
-"Nova možnost ukaza za seznam vseh aktivnosti in zagon določene aktivnosti"
+"Nova možnost ukaza (--difficulty {value|min-max}) za zagon GComprisa pri "
+"določeni zahtevnosti"
 
 #: core/ChangeLog.qml:31 core/ChangeLog.qml:44 core/ChangeLog.qml:62
 #: core/ChangeLog.qml:77 core/ChangeLog.qml:82 core/ChangeLog.qml:88
@@ -25765,6 +25761,8 @@ msgid ""
 "Specify the range of the activity difficulties to display for the session. "
 "Either a single value (2), or a range (3-6). Values must be between 1 and 6."
 msgstr ""
+"Določite obseg zahtevnosti dejavnosti za prikaz seje. Vnesite bodisi eno "
+"vrednost (2) ali obseg (3-6). Vrednosti morajo biti med 1 in 6."
 
 #: core/main.qml:233
 msgctxt "main|"

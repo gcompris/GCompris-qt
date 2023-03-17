@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-12-13 00:48+0000\n"
-"PO-Revision-Date: 2023-03-15 00:23+0100\n"
+"PO-Revision-Date: 2023-03-16 21:26+0100\n"
 "Last-Translator: Jan Papez (honyczek) <honyczek@centrum.cz>\n"
 "Language-Team: Czech <kde-i18n-cs@kde.org>\n"
 "Language: cs\n"
@@ -384,7 +384,7 @@ msgstr "Nauč se zvířátka ze statku a zvuky, které dělají."
 #: activities/explore_monuments/ActivityInfo.qml:18
 #, kde-format
 msgid "Explore Monuments around the world."
-msgstr "Objevuj stavby po celém světě."
+msgstr "Objevuj památky po celém světě."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "explore_world_animals"
 #: activities/explore_world_animals/ActivityInfo.qml:22

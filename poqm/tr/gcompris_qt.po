@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2023-03-12 11:43+0300\n"
+"PO-Revision-Date: 2023-03-16 11:40+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -24934,18 +24934,13 @@ msgid "Type the complete word as it falls, before it reaches the ground."
 msgstr "Sözcüğün tamamını yere düşmeden önce yaz."
 
 #: core/ChangeLog.qml:30
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid ""
-#| "New command-line option to list all the activities and start on a "
-#| "specific one"
 msgctxt "ChangeLog|"
 msgid ""
 "New command-line option (--difficulty {value|min-max}) to start GCompris at "
 "specific difficulty"
 msgstr ""
-"Tüm etkinlikleri listelemek ve belirli bir etkinlikten başlamak için yeni "
-"komut satırı seçeneği"
+"GCompris'i belirli bir zorluk düzeyinde başlatmak için yeni komut satırı "
+"seçeneği (--difficulty {value|min-max})"
 
 #: core/ChangeLog.qml:31 core/ChangeLog.qml:44 core/ChangeLog.qml:62
 #: core/ChangeLog.qml:77 core/ChangeLog.qml:82 core/ChangeLog.qml:88
@@ -25785,6 +25780,9 @@ msgid ""
 "Specify the range of the activity difficulties to display for the session. "
 "Either a single value (2), or a range (3-6). Values must be between 1 and 6."
 msgstr ""
+"Bu oturum için görüntülemek istediğiniz etkinlik zorluğunun aralığını "
+"belirtin. Tek bir değer (2) veya bir aralık (3-6) belirtebilirsiniz. "
+"Değerler, 1 ve 6 arasında olmalıdır."
 
 #: core/main.qml:233
 msgctxt "main|"

@@ -542,9 +542,15 @@ for example 'xx.yy.zz'
 </row>
 <row>
 <entry
->--launch activity</entry>
+>--launch activitat</entry>
 <entry
 >Especifica l'activitat en iniciar el GCompris.</entry>
+</row>
+<row>
+<entry
+>--difficulty {valor|min-max}</entry>
+<entry
+>Per a la sessió, força la dificultat de les activitats del GCompris a estar en un valor o entre valors mínims i màxims. Els valors han d'estar entre 1 i 6, i si el format és mín.-màx., el valor mínim ha de ser inferior al valor màxim. Si no és així, el GCompris no s'iniciarà.</entry>
 </row>
 <row>
 <entry

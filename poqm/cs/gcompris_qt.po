@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2023-03-15 22:11+0100\n"
+"PO-Revision-Date: 2023-03-16 22:39+0100\n"
 "Last-Translator: Jan Papez (honyczek) <honyczek@centrum.cz>\n"
 "Language-Team: Czech <kde-i18n-cs@kde.org>\n"
 "Language: cs\n"
@@ -6855,6 +6855,12 @@ msgid ""
 "first permanent amphitheatre to be raised in Rome, and the most impressive "
 "arena the Classical world had yet seen."
 msgstr ""
+"Koloseum je dnes neznámější klasickou římskou stavbou. Dokonce i po 2000 "
+"letech od jejího postavení a navzdory staletím, ve kterých byla opuštěná "
+"stavba drancována kvůli stavebním materiálům, je okamžitě rozpoznatelná jako "
+"klasická šablona dnešních stadionů. Je prvním trvalým hledištěm, které bylo "
+"v Římě postavené, a také nejpůsobivější arénou, jakou kdy klasický svět "
+"spatřil."
 
 #: activities/explore_monuments/resource/board/board1.qml:41
 #: activities/explore_monuments/resource/board/board1.qml:44
@@ -6909,6 +6915,12 @@ msgid ""
 "slopes of the Andes, encompasses the upper Amazon basin with its rich "
 "diversity of flora and fauna."
 msgstr ""
+"Machu Picchu (maču pikču) je umístěné ve výšce 2430 metrů nad mořem "
+"uprostřed hor tropického pralesa ve výjimečně nádherném uspořádání. Bylo to "
+"pravděpodobně nejúžasnější městské dílo Incké říše, a to ve své výšce, "
+"obrovských zdech, terasách a schodištích, zdánlivě přirozeně navazujících ke "
+"skalním svahům. Přírodní uspořádání ve východních svazích And obklopuje "
+"horní Amazonská nížina s její bohatou rozmanitostí rostlin a zvířat."
 
 #: activities/explore_monuments/resource/board/board1.qml:74
 #: activities/explore_monuments/resource/board/board1.qml:77
@@ -6978,12 +6990,16 @@ msgid ""
 "build a place of worship for men and women from all walks of life and all "
 "religions to worship God equally."
 msgstr ""
+"Hari Mandir Sáhib, známá jako Zlatých chrám v Amritsaru, je jedna z "
+"nejuctívanějších duchovních prostor Sikhismu. Stavba byla navržena  se "
+"záměrem postavit místo pro bohoslužby mužů a žen ze všech životních cest a "
+"všech náboženství, aby byl Bůh uctíván stejně."
 
 #: activities/explore_monuments/resource/board/board2.qml:29
 #: activities/explore_monuments/resource/board/board2.qml:32
 msgctxt "board2|"
 msgid "Hawa Mahal"
-msgstr ""
+msgstr "Hawa Mahal"
 
 #: activities/explore_monuments/resource/board/board2.qml:30
 msgctxt "board2|"
@@ -6994,12 +7010,17 @@ msgid ""
 "and pink sandstone, the palace sits on the edge of the City Palace, and "
 "extends to the zenana, or women's chambers."
 msgstr ""
+"Hawa Mahal je palác v Džajpuru v Indii. Je takto pojmenován, protože měl "
+"okenní stěny postavené tak, aby mohly ženy královské rodiny sledovat "
+"pouliční festivaly, aniž by byly zvenčí vidět. Je zkonstruován z červeného a "
+"růžového pískovce, je zasazen na kraji Městského paláce a pokračuje do "
+"Zenany, ve které ženy bydlí."
 
 #: activities/explore_monuments/resource/board/board2.qml:40
 #: activities/explore_monuments/resource/board/board2.qml:43
 msgctxt "board2|"
 msgid "Gateway of India"
-msgstr ""
+msgstr "Brána Indie"
 
 #: activities/explore_monuments/resource/board/board2.qml:41
 msgctxt "board2|"
@@ -7016,7 +7037,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board2.qml:54
 msgctxt "board2|"
 msgid "Great Stupa"
-msgstr ""
+msgstr "Velká stúpa"
 
 #: activities/explore_monuments/resource/board/board2.qml:52
 msgctxt "board2|"
@@ -7032,7 +7053,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board2.qml:65
 msgctxt "board2|"
 msgid "Ajanta Caves"
-msgstr ""
+msgstr "Jeskyně v Adžantě"
 
 #: activities/explore_monuments/resource/board/board2.qml:63
 msgctxt "board2|"
@@ -7050,7 +7071,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board2.qml:76
 msgctxt "board2|"
 msgid "Konark Sun Temple"
-msgstr ""
+msgstr "Sluneční chrám v Kónárku"
 
 #: activities/explore_monuments/resource/board/board2.qml:74
 msgctxt "board2|"
@@ -7064,7 +7085,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board2.qml:87
 msgctxt "board2|"
 msgid "Mysore Palace"
-msgstr ""
+msgstr "Palác Mysore"
 
 #: activities/explore_monuments/resource/board/board2.qml:85
 msgctxt "board2|"
@@ -7079,7 +7100,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board2.qml:98
 msgctxt "board2|"
 msgid "Charminar"
-msgstr ""
+msgstr "Charminar"
 
 #: activities/explore_monuments/resource/board/board2.qml:96
 msgctxt "board2|"
@@ -7095,7 +7116,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board2.qml:109
 msgctxt "board2|"
 msgid "Victoria Memorial"
-msgstr ""
+msgstr "Viktoriin památník"
 
 #: activities/explore_monuments/resource/board/board2.qml:107
 msgctxt "board2|"
@@ -7110,7 +7131,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board2.qml:120
 msgctxt "board2|"
 msgid "Rang Ghar"
-msgstr ""
+msgstr "Rang Ghar"
 
 #: activities/explore_monuments/resource/board/board2.qml:118
 msgctxt "board2|"
@@ -7125,7 +7146,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board2.qml:131
 msgctxt "board2|"
 msgid "Qutub Minar"
-msgstr ""
+msgstr "Minaret Qutub"
 
 #: activities/explore_monuments/resource/board/board2.qml:129
 msgctxt "board2|"
@@ -7140,18 +7161,18 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board2.qml:141
 msgctxt "board2|"
 msgid "Monuments of India"
-msgstr ""
+msgstr "Indické památky"
 
 #: activities/explore_monuments/resource/board/board2.qml:144
 msgctxt "board2|"
 msgid "Click on the location of the given monument."
-msgstr ""
+msgstr "Klikni na umístění dané památky."
 
 #: activities/explore_monuments/resource/board/board3.qml:18
 #: activities/explore_monuments/resource/board/board3.qml:21
 msgctxt "board3|"
 msgid "Mont-Saint-Michel"
-msgstr ""
+msgstr "Hora svatého Michaela"
 
 #: activities/explore_monuments/resource/board/board3.qml:19
 msgctxt "board3|"
@@ -7168,7 +7189,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board3.qml:32
 msgctxt "board3|"
 msgid "Cité de Carcassonne"
-msgstr ""
+msgstr "Pevnost Carcassonne"
 
 #: activities/explore_monuments/resource/board/board3.qml:30
 msgctxt "board3|"
@@ -7184,7 +7205,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board3.qml:43
 msgctxt "board3|"
 msgid "Reims Cathedral"
-msgstr ""
+msgstr "Katedrála v Remeši"
 
 #: activities/explore_monuments/resource/board/board3.qml:41
 msgctxt "board3|"
@@ -7201,7 +7222,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board3.qml:54
 msgctxt "board3|"
 msgid "Pont du Gard"
-msgstr ""
+msgstr "Gardský most"
 
 #: activities/explore_monuments/resource/board/board3.qml:52
 msgctxt "board3|"
@@ -7217,7 +7238,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board3.qml:65
 msgctxt "board3|"
 msgid "Arles Amphitheatre"
-msgstr ""
+msgstr "Amfiteátr v Arles"
 
 #: activities/explore_monuments/resource/board/board3.qml:63
 msgctxt "board3|"
@@ -7232,7 +7253,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board3.qml:76
 msgctxt "board3|"
 msgid "Château de Chambord"
-msgstr ""
+msgstr "Zámek Chambord"
 
 #: activities/explore_monuments/resource/board/board3.qml:74
 msgctxt "board3|"
@@ -7248,7 +7269,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board3.qml:87
 msgctxt "board3|"
 msgid "Rocamadour"
-msgstr ""
+msgstr "Rocamadour"
 
 #: activities/explore_monuments/resource/board/board3.qml:85
 msgctxt "board3|"
@@ -7265,7 +7286,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board3.qml:98
 msgctxt "board3|"
 msgid "Palais des Papes"
-msgstr ""
+msgstr "Papežský palác"
 
 #: activities/explore_monuments/resource/board/board3.qml:96
 msgctxt "board3|"
@@ -7280,7 +7301,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board3.qml:109
 msgctxt "board3|"
 msgid "Château de Chenonceau"
-msgstr ""
+msgstr "Zámek Chenonceau"
 
 #: activities/explore_monuments/resource/board/board3.qml:107
 msgctxt "board3|"
@@ -7310,18 +7331,18 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board3.qml:130
 msgctxt "board3|"
 msgid "Monuments of France"
-msgstr ""
+msgstr "Francouzské památky"
 
 #: activities/explore_monuments/resource/board/board3.qml:133
 msgctxt "board3|"
 msgid "Click on the location of the given monument."
-msgstr ""
+msgstr "Klikni na umístění dané památky."
 
 #: activities/explore_monuments/resource/board/board4.qml:18
 #: activities/explore_monuments/resource/board/board4.qml:21
 msgctxt "board4|"
 msgid "Neuschwanstein Castle"
-msgstr ""
+msgstr "Zámek Neuschwanstein"
 
 #: activities/explore_monuments/resource/board/board4.qml:19
 msgctxt "board4|"
@@ -7339,7 +7360,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board4.qml:32
 msgctxt "board4|"
 msgid "Trier Imperial Baths"
-msgstr ""
+msgstr "Římské lázně v Trevíru"
 
 #: activities/explore_monuments/resource/board/board4.qml:30
 msgctxt "board4|"
@@ -7385,7 +7406,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board4.qml:65
 msgctxt "board4|"
 msgid "Schwerin Palace"
-msgstr ""
+msgstr "Zámek Zvěřín"
 
 #: activities/explore_monuments/resource/board/board4.qml:63
 msgctxt "board4|"
@@ -7399,7 +7420,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board4.qml:76
 msgctxt "board4|"
 msgid "Aula Palatina"
-msgstr ""
+msgstr "Aula Palatina"
 
 #: activities/explore_monuments/resource/board/board4.qml:74
 msgctxt "board4|"
@@ -7414,7 +7435,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board4.qml:87
 msgctxt "board4|"
 msgid "Worms Cathedral"
-msgstr ""
+msgstr "Katedrála ve Worms"
 
 #: activities/explore_monuments/resource/board/board4.qml:85
 msgctxt "board4|"
@@ -7428,18 +7449,18 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board4.qml:97
 msgctxt "board4|"
 msgid "Monuments of Germany"
-msgstr ""
+msgstr "Německé památky"
 
 #: activities/explore_monuments/resource/board/board4.qml:100
 msgctxt "board4|"
 msgid "Click on the location of the given monument."
-msgstr ""
+msgstr "Klikni na umístění dané památky."
 
 #: activities/explore_monuments/resource/board/board5.qml:18
 #: activities/explore_monuments/resource/board/board5.qml:21
 msgctxt "board5|"
 msgid "Cabrillo"
-msgstr ""
+msgstr "Cabrillo"
 
 #: activities/explore_monuments/resource/board/board5.qml:19
 msgctxt "board5|"
@@ -7456,7 +7477,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board5.qml:32
 msgctxt "board5|"
 msgid "Canyon de Chelly"
-msgstr ""
+msgstr "Canyon de Chelly"
 
 #: activities/explore_monuments/resource/board/board5.qml:30
 msgctxt "board5|"
@@ -7474,7 +7495,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board5.qml:43
 msgctxt "board5|"
 msgid "Castillo de San Marcos"
-msgstr ""
+msgstr "Pevnost svatého Marka"
 
 #: activities/explore_monuments/resource/board/board5.qml:41
 msgctxt "board5|"
@@ -7489,7 +7510,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board5.qml:54
 msgctxt "board5|"
 msgid "Castle Clinton"
-msgstr ""
+msgstr "Pevnost Clinton"
 
 #: activities/explore_monuments/resource/board/board5.qml:52
 msgctxt "board5|"
@@ -7505,7 +7526,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board5.qml:65
 msgctxt "board5|"
 msgid "George Washington Birthplace"
-msgstr ""
+msgstr "Místo narození George Washingtona"
 
 #: activities/explore_monuments/resource/board/board5.qml:63
 msgctxt "board5|"
@@ -7521,7 +7542,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board5.qml:76
 msgctxt "board5|"
 msgid "Lincoln Memorial"
-msgstr "Lincolnův memoriál"
+msgstr "Lincolnův památník"
 
 #: activities/explore_monuments/resource/board/board5.qml:74
 msgctxt "board5|"
@@ -7577,7 +7598,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board5.qml:109
 msgctxt "board5|"
 msgid "Statue of Liberty"
-msgstr ""
+msgstr "Socha Svobody"
 
 #: activities/explore_monuments/resource/board/board5.qml:107
 msgctxt "board5|"
@@ -7592,7 +7613,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board5.qml:120
 msgctxt "board5|"
 msgid "Fort Sumter"
-msgstr ""
+msgstr "Pevnost Sumter"
 
 #: activities/explore_monuments/resource/board/board5.qml:118
 msgctxt "board5|"
@@ -7607,18 +7628,18 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board5.qml:130
 msgctxt "board5|"
 msgid "Monuments of US"
-msgstr ""
+msgstr "Památky Spojených států amerických"
 
 #: activities/explore_monuments/resource/board/board5.qml:133
 msgctxt "board5|"
 msgid "Click on the location of the given monument."
-msgstr ""
+msgstr "Klikni na umístění dané památky."
 
 #: activities/explore_monuments/resource/board/board6.qml:17
 #: activities/explore_monuments/resource/board/board6.qml:20
 msgctxt "board6|"
 msgid "Great Pyramid of Giza"
-msgstr ""
+msgstr "Velká pyramida v Gíze"
 
 #: activities/explore_monuments/resource/board/board6.qml:18
 msgctxt "board6|"
@@ -7638,7 +7659,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board6.qml:31
 msgctxt "board6|"
 msgid "Bent Pyramid"
-msgstr ""
+msgstr "Lomená pyramida"
 
 #: activities/explore_monuments/resource/board/board6.qml:29
 msgctxt "board6|"
@@ -7657,7 +7678,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board6.qml:42
 msgctxt "board6|"
 msgid "Pyramid of Meidum"
-msgstr ""
+msgstr "Pyramida v Médúmu"
 
 #: activities/explore_monuments/resource/board/board6.qml:40
 msgctxt "board6|"
@@ -7676,7 +7697,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board6.qml:53
 msgctxt "board6|"
 msgid "Red Pyramid"
-msgstr ""
+msgstr "Červená pyramida"
 
 #: activities/explore_monuments/resource/board/board6.qml:51
 msgctxt "board6|"
@@ -7697,13 +7718,13 @@ msgstr "Egyptské pyramidy"
 #: activities/explore_monuments/resource/board/board6.qml:66
 msgctxt "board6|"
 msgid "Click on the location of the given pyramid."
-msgstr ""
+msgstr "Klikni na umístění dané památky."
 
 #. Activity title
 #: activities/explore_world_animals/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Explore world animals"
-msgstr "Objevuj zvířata ve světe"
+msgstr "Objevuj zvířata ve světě"
 
 #. Help title
 #: activities/explore_world_animals/ActivityInfo.qml:21
@@ -7721,7 +7742,7 @@ msgid ""
 "Learn about various wild animals from around the world and remember where "
 "they live."
 msgstr ""
-"Seznam se s různými divokými zvířaty z celého světa a zapamatuj si, kdežijí."
+"Seznam se s různými divokými zvířaty z celého světa a zapamatuj si, kde žijí."
 
 #. Help manual
 #: activities/explore_world_animals/ActivityInfo.qml:28
@@ -8736,29 +8757,29 @@ msgstr "Táhni čáru z míče, nastav rychlost a směr a uvolni jik vykopnutí 
 #: activities/fractions_create/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Create the fractions"
-msgstr ""
+msgstr "Vytvářej zlomky"
 
 #. Help title
 #: activities/fractions_create/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "A shape split in equal parts is displayed on screen."
-msgstr ""
+msgstr "Na obrazovce je zobrazen model rozdělený na rovné díly."
 
 #: activities/fractions_create/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
 msgid ""
 "Select the appropriate number of parts as described in the instructions."
-msgstr ""
+msgstr "Vyber odpovídající počet dílků, který je popsán v zadání."
 
 #: activities/fractions_create/fractions_create.js:79
 msgctxt "fractions_create|"
 msgid "Find the represented fraction."
-msgstr ""
+msgstr "Najdi zobrazený zlomek."
 
 #: activities/fractions_create/resource/1/Data.qml:9
 msgctxt "Data|"
 msgid "Simplified fractions with a pie."
-msgstr ""
+msgstr "Zjednodušené zlomky s koláčem."
 
 #: activities/fractions_create/resource/1/Data.qml:18
 #: activities/fractions_create/resource/3/Data.qml:17
@@ -8766,75 +8787,75 @@ msgstr ""
 #: activities/fractions_create/resource/3/Data.qml:29
 msgctxt "Data|"
 msgid "Select one half of the pie."
-msgstr ""
+msgstr "Vyber jednu polovinu koláče."
 
 #: activities/fractions_create/resource/1/Data.qml:24
 #: activities/fractions_create/resource/3/Data.qml:35
 #: activities/fractions_create/resource/3/Data.qml:49
 msgctxt "Data|"
 msgid "Select one-third of the pie."
-msgstr ""
+msgstr "Vyber jednu třetinu koláče."
 
 #: activities/fractions_create/resource/1/Data.qml:30
 #: activities/fractions_create/resource/3/Data.qml:41
 #: activities/fractions_create/resource/3/Data.qml:55
 msgctxt "Data|"
 msgid "Select two-thirds of the pie."
-msgstr ""
+msgstr "Vyber dvě třetiny koláče."
 
 #: activities/fractions_create/resource/1/Data.qml:36
 #: activities/fractions_create/resource/3/Data.qml:61
 msgctxt "Data|"
 msgid "Select one-quarter of the pie."
-msgstr ""
+msgstr "Vyber jednu čtvrtinu koláče."
 
 #: activities/fractions_create/resource/1/Data.qml:42
 #: activities/fractions_create/resource/3/Data.qml:67
 msgctxt "Data|"
 msgid "Select two-fifths of the pie."
-msgstr ""
+msgstr "Vyber dvě pětiny koláče."
 
 #: activities/fractions_create/resource/1/Data.qml:50
 msgctxt "Data|"
 msgid "Select one pie and one-quarter of a pie."
-msgstr ""
+msgstr "Vyber jeden a čtvrt koláče."
 
 #: activities/fractions_create/resource/1/Data.qml:56
 msgctxt "Data|"
 msgid "Select one pie and two-fifths of a pie."
-msgstr ""
+msgstr "Vyber jeden a dvě pětiny koláče."
 
 #: activities/fractions_create/resource/1/Data.qml:62
 msgctxt "Data|"
 msgid "Select one pie and one-third of a pie."
-msgstr ""
+msgstr "Vyber jeden a jednu třetinu koláče."
 
 #: activities/fractions_create/resource/1/Data.qml:68
 msgctxt "Data|"
 msgid "Select one pie and one half of a pie."
-msgstr ""
+msgstr "Vyber jeden a půl koláče."
 
 #: activities/fractions_create/resource/1/Data.qml:74
 msgctxt "Data|"
 msgid "Select one pie and three-quarters of a pie."
-msgstr ""
+msgstr "Vyber jeden a tři čtvrtě koláče."
 
 #: activities/fractions_create/resource/10/Data.qml:9
 msgctxt "Data|"
 msgid "Specific questions with a square."
-msgstr ""
+msgstr "Zvláštní zadání se čtvercem."
 
 #: activities/fractions_create/resource/10/Data.qml:18
 #: activities/fractions_create/resource/10/Data.qml:24
 msgctxt "Data|"
 msgid ""
 "Select as many parts as you can without taking more than half of the square."
-msgstr ""
+msgstr "Vyber co nejvíc částí aniž bys zvolil více než polovinu čtverce."
 
 #: activities/fractions_create/resource/2/Data.qml:9
 msgctxt "Data|"
 msgid "Simplified fractions with a square."
-msgstr ""
+msgstr "Zjednodušené zlomky se čtvercem."
 
 #: activities/fractions_create/resource/2/Data.qml:18
 #: activities/fractions_create/resource/4/Data.qml:17
@@ -8842,83 +8863,83 @@ msgstr ""
 #: activities/fractions_create/resource/4/Data.qml:29
 msgctxt "Data|"
 msgid "Select one half of the square."
-msgstr ""
+msgstr "Vyber jednu polovinu čtverce."
 
 #: activities/fractions_create/resource/2/Data.qml:24
 #: activities/fractions_create/resource/4/Data.qml:35
 #: activities/fractions_create/resource/4/Data.qml:49
 msgctxt "Data|"
 msgid "Select one-third of the square."
-msgstr ""
+msgstr "Vyber jednu třetinu čtverce."
 
 #: activities/fractions_create/resource/2/Data.qml:30
 #: activities/fractions_create/resource/4/Data.qml:41
 #: activities/fractions_create/resource/4/Data.qml:55
 msgctxt "Data|"
 msgid "Select two-thirds of the square."
-msgstr ""
+msgstr "Vyber dvě třetiny čtverce."
 
 #: activities/fractions_create/resource/2/Data.qml:36
 #: activities/fractions_create/resource/4/Data.qml:61
 msgctxt "Data|"
 msgid "Select one-quarter of the square."
-msgstr ""
+msgstr "Vyber jednu čtvrtinu čtverce."
 
 #: activities/fractions_create/resource/2/Data.qml:42
 #: activities/fractions_create/resource/4/Data.qml:67
 msgctxt "Data|"
 msgid "Select two-fifths of the square."
-msgstr ""
+msgstr "Vyber dvě pětiny čtverce."
 
 #: activities/fractions_create/resource/2/Data.qml:50
 msgctxt "Data|"
 msgid "Select one square and one-quarter of a square."
-msgstr ""
+msgstr "Vyber jeden a čtvrt čtverce."
 
 #: activities/fractions_create/resource/2/Data.qml:56
 msgctxt "Data|"
 msgid "Select one square and two-fifths of a square."
-msgstr ""
+msgstr "Vyber jeden a dvě pětiny čtverce."
 
 #: activities/fractions_create/resource/2/Data.qml:62
 msgctxt "Data|"
 msgid "Select one square and one-third of a square."
-msgstr ""
+msgstr "Vyber jeden a jednu třetinu čtverce."
 
 #: activities/fractions_create/resource/2/Data.qml:68
 msgctxt "Data|"
 msgid "Select one square and one half of a square."
-msgstr ""
+msgstr "Vyber jeden a půl čtverce."
 
 #: activities/fractions_create/resource/2/Data.qml:74
 msgctxt "Data|"
 msgid "Select one square and three-quarters of a square."
-msgstr ""
+msgstr "Vyber jeden a tři čtvrtě čtverce."
 
 #: activities/fractions_create/resource/3/Data.qml:9
 msgctxt "Data|"
 msgid "Non-simplified fractions with a pie."
-msgstr ""
+msgstr "Nezjednodušené zlomky s koláčem."
 
 #: activities/fractions_create/resource/3/Data.qml:73
 msgctxt "Data|"
 msgid "Select three-fifths of the pie."
-msgstr ""
+msgstr "Vyber tři pětiny koláče."
 
 #: activities/fractions_create/resource/4/Data.qml:9
 msgctxt "Data|"
 msgid "Non-simplified fractions with a square."
-msgstr ""
+msgstr "Nezjednodušené zlomky se čtvercem."
 
 #: activities/fractions_create/resource/4/Data.qml:73
 msgctxt "Data|"
 msgid "Select three-fifths of the square."
-msgstr ""
+msgstr "Vyber tři pětiny čtverce."
 
 #: activities/fractions_create/resource/5/Data.qml:9
 msgctxt "Data|"
 msgid "Decimal numbers with a pie."
-msgstr ""
+msgstr "Desetinná čísla s koláčem."
 
 #: activities/fractions_create/resource/5/Data.qml:18
 msgctxt "Data|"
@@ -8969,7 +8990,7 @@ msgstr "Vyber 1,75 koláče."
 #: activities/fractions_create/resource/6/Data.qml:9
 msgctxt "Data|"
 msgid "Decimal numbers with a square."
-msgstr ""
+msgstr "Desetinná čísla se čtvercem."
 
 #: activities/fractions_create/resource/6/Data.qml:18
 msgctxt "Data|"
@@ -9020,7 +9041,7 @@ msgstr "Vyber 1,75 čtverce."
 #: activities/fractions_create/resource/7/Data.qml:9
 msgctxt "Data|"
 msgid "Percentages with a pie."
-msgstr ""
+msgstr "Procenta s koláčem."
 
 #. Select %1 percent of the pie.
 #: activities/fractions_create/resource/7/Data.qml:19
@@ -9034,12 +9055,12 @@ msgstr ""
 #, qt-format
 msgctxt "Data|"
 msgid "Select %1% of the pie."
-msgstr ""
+msgstr "Vyber %1% koláče."
 
 #: activities/fractions_create/resource/8/Data.qml:9
 msgctxt "Data|"
 msgid "Percentages with a square."
-msgstr ""
+msgstr "Procenta se čtvercem."
 
 #. Select %1 percent of the square.
 #: activities/fractions_create/resource/8/Data.qml:19
@@ -9051,61 +9072,61 @@ msgstr ""
 #, qt-format
 msgctxt "Data|"
 msgid "Select %1% of the square."
-msgstr ""
+msgstr "Vyber %1% čtverce."
 
 #: activities/fractions_create/resource/9/Data.qml:9
 msgctxt "Data|"
 msgid "Specific questions with a pie."
-msgstr ""
+msgstr "Zvláštní zadání s koláčem."
 
 #: activities/fractions_create/resource/9/Data.qml:18
 #: activities/fractions_create/resource/9/Data.qml:24
 msgctxt "Data|"
 msgid ""
 "Select as many parts as you can without taking more than half of the pie."
-msgstr ""
+msgstr "Vyber co nejvíc částí aniž bys zvolil více než polovinu koláče."
 
 #. Activity title
 #: activities/fractions_find/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Find the fractions"
-msgstr ""
+msgstr "Najdi zlomky"
 
 #. Help title
 #: activities/fractions_find/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Find the correct numerator and denominator of the represented fraction."
-msgstr ""
+msgstr "Najdi správného čitatele a jmenovatele zobrazeného zlomku."
 
 #: activities/fractions_find/resource/1/Data.qml:19
 msgctxt "Data|"
 msgid "Find numerator (with a pie)."
-msgstr ""
+msgstr "Najdi čitatele (s koláčem)."
 
 #: activities/fractions_find/resource/2/Data.qml:19
 msgctxt "Data|"
 msgid "Find numerator (with a square)."
-msgstr ""
+msgstr "Najdi čitatele (se čtvercem)."
 
 #: activities/fractions_find/resource/3/Data.qml:9
 msgctxt "Data|"
 msgid "Find denominator (with a pie)."
-msgstr ""
+msgstr "Najdi jmenovatele (s koláčem)."
 
 #: activities/fractions_find/resource/4/Data.qml:9
 msgctxt "Data|"
 msgid "Find denominator (with a square)."
-msgstr ""
+msgstr "Najdi jmenovatele (se čtvercem)."
 
 #: activities/fractions_find/resource/5/Data.qml:9
 msgctxt "Data|"
 msgid "Find numerator and denominator (with a pie)."
-msgstr ""
+msgstr "Najdi čitatele a jmenovatele (s koláčem)."
 
 #: activities/fractions_find/resource/6/Data.qml:9
 msgctxt "Data|"
 msgid "Find numerator and denominator (with a square)."
-msgstr ""
+msgstr "Najdi čitatele a jmenovatele (se čtvercem)."
 
 #. Activity title
 #: activities/geo-country/ActivityInfo.qml:19
@@ -9724,7 +9745,7 @@ msgstr "Nágáland"
 #: activities/geo-country/resource/board/board12_0.qml:186
 msgctxt "board12_0|"
 msgid "Odisha"
-msgstr ""
+msgstr "Uríša"
 
 #. State of India: Manipur
 #: activities/geo-country/resource/board/board12_0.qml:193
@@ -10045,7 +10066,7 @@ msgstr "Che-pej"
 #: activities/geo-country/resource/board/board15_0.qml:16
 msgctxt "board15_0|"
 msgid "Council areas of Scotland (North)"
-msgstr ""
+msgstr "Administrativní dělení Skotska (server)"
 
 #. Council area of Scotland: Aberdeenshire
 #: activities/geo-country/resource/board/board15_0.qml:25
@@ -10069,7 +10090,7 @@ msgstr "Moray"
 #: activities/geo-country/resource/board/board15_0.qml:46
 msgctxt "board15_0|"
 msgid "Na h-Eileanan Siar"
-msgstr ""
+msgstr "Na h-Eileanan Siar (Vnější Hebridy)"
 
 #. Council area of Scotland: Orkney Islands
 #: activities/geo-country/resource/board/board15_0.qml:53
@@ -10087,12 +10108,12 @@ msgstr "Shetlandské ostrovy"
 #: activities/geo-country/resource/board/board15_0.qml:67
 msgctxt "board15_0|"
 msgid "Highland"
-msgstr ""
+msgstr "Highland"
 
 #: activities/geo-country/resource/board/board15_1.qml:15
 msgctxt "board15_1|"
 msgid "Council areas of Scotland (South)"
-msgstr ""
+msgstr "Administrativní dělení Skotska (jih)"
 
 #. Council area of Scotland: Angus
 #: activities/geo-country/resource/board/board15_1.qml:24
@@ -10122,7 +10143,7 @@ msgstr "Stirling"
 #: activities/geo-country/resource/board/board15_1.qml:52
 msgctxt "board15_1|"
 msgid "Argyll and Bute"
-msgstr ""
+msgstr "Argyll and Bute"
 
 #. Council area of Scotland: Fife
 #: activities/geo-country/resource/board/board15_1.qml:59
@@ -10182,7 +10203,7 @@ msgstr "Severní Lanarkshire"
 #: activities/geo-country/resource/board/board15_1.qml:122
 msgctxt "board15_1|"
 msgid "Dumfries and Galloway"
-msgstr ""
+msgstr "Dumfries a Galloway"
 
 #. Council areas of Scotland: South Ayrshire
 #: activities/geo-country/resource/board/board15_1.qml:129
@@ -10295,7 +10316,7 @@ msgstr "Maramureš"
 #: activities/geo-country/resource/board/board16_0.qml:73
 msgctxt "board16_0|"
 msgid "Crișana"
-msgstr ""
+msgstr "Krišana"
 
 #. Historical Region of Romania: Banat
 #: activities/geo-country/resource/board/board16_0.qml:80
@@ -10312,13 +10333,13 @@ msgstr "Kulturní oblasti Litvy"
 #: activities/geo-country/resource/board/board17_0.qml:24
 msgctxt "board17_0|"
 msgid "Aukštaitija"
-msgstr ""
+msgstr "Aukštaitija"
 
 #. Cultural region of Lithuania: Dzūkija
 #: activities/geo-country/resource/board/board17_0.qml:31
 msgctxt "board17_0|"
 msgid "Dzūkija"
-msgstr ""
+msgstr "Dzūkija"
 
 #. Cultural region of Lithuania: Lithuania Minor
 #: activities/geo-country/resource/board/board17_0.qml:38
@@ -10341,7 +10362,7 @@ msgstr "Súduva"
 #: activities/geo-country/resource/board/board18_0.qml:13
 msgctxt "board18_0|"
 msgid "Autonomous communities or cities of Spain"
-msgstr ""
+msgstr "Autonomní společenství a města Španělska"
 
 #. Autonomous communities of Spain: Andalusia
 #: activities/geo-country/resource/board/board18_0.qml:22
@@ -10883,7 +10904,7 @@ msgstr "Lublin"
 #: activities/geo-country/resource/board/board4_0.qml:129
 msgctxt "board4_0|"
 msgid "Kuyavian-Pomeranian"
-msgstr ""
+msgstr "Kujavsko-pomořansko"
 
 #: activities/geo-country/resource/board/board5_0.qml:16
 msgctxt "board5_0|"
@@ -11837,7 +11858,7 @@ msgstr "Guanajuato"
 #: activities/geo-country/resource/board/board9_0.qml:171
 msgctxt "board9_0|"
 msgid "Estado de México"
-msgstr ""
+msgstr "Stát Mexiko"
 
 #. State of Mexico: Durango
 #: activities/geo-country/resource/board/board9_0.qml:178
@@ -13049,7 +13070,7 @@ msgstr "Asociace mezi písmeny na obrazovce a klávesnici."
 #: activities/gnumch-equality/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Gnumch equality"
-msgstr ""
+msgstr "Gnumčova rovnost"
 
 #. Help title
 #. ----------
@@ -13061,6 +13082,8 @@ msgid ""
 "Guide the Number Muncher to the expressions that equal the number at the "
 "bottom of the screen."
 msgstr ""
+"Doveď čísložrouta ke všem výrazům, které se rovnají číslu na spodní hraně "
+"obrazovky."
 
 #. Help goal
 #: activities/gnumch-equality/ActivityInfo.qml:20
@@ -13214,7 +13237,7 @@ msgstr ""
 #: activities/gnumch-factors/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Gnumch factors"
-msgstr ""
+msgstr "Gnumčovy zlomky"
 
 #. Help title
 #: activities/gnumch-factors/ActivityInfo.qml:17
@@ -13222,7 +13245,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Guide the Number Muncher to all the factors of the number at the bottom of "
 "the screen."
-msgstr ""
+msgstr "Doveď čísložrouta ke všem dělitelům čísla na spodní hraně obrazovky."
 
 #. Help goal
 #: activities/gnumch-factors/ActivityInfo.qml:20
@@ -13248,7 +13271,7 @@ msgstr ""
 #: activities/gnumch-inequality/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Gnumch inequality"
-msgstr ""
+msgstr "Gnumčova nerovnost"
 
 #. Help title
 #: activities/gnumch-inequality/ActivityInfo.qml:18
@@ -13257,6 +13280,8 @@ msgid ""
 "Guide the Number Muncher to all the expressions that do not equal the number "
 "at the bottom of the screen."
 msgstr ""
+"Doveď čísložrouta ke všem výrazům, které se nerovnají číslu na spodní hraně "
+"obrazovky."
 
 #. Help goal
 #: activities/gnumch-inequality/ActivityInfo.qml:21
@@ -13288,7 +13313,7 @@ msgstr "Procvičuj nerovnost dělení."
 #: activities/gnumch-multiples/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Gnumch multiples"
-msgstr ""
+msgstr "Gnumčovo násobení"
 
 #. Help title
 #: activities/gnumch-multiples/ActivityInfo.qml:17
@@ -13296,7 +13321,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Guide the Number Muncher to all the multiples of the number at the bottom of "
 "the screen."
-msgstr ""
+msgstr "Doveď čísložrouta ke všem násobkům čísla na spodní hraně obrazovky."
 
 #. Help manual
 #: activities/gnumch-multiples/ActivityInfo.qml:24
@@ -13320,13 +13345,13 @@ msgstr ""
 #: activities/gnumch-primes/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Gnumch primes"
-msgstr ""
+msgstr "Gnumčova prvočísla"
 
 #. Help title
 #: activities/gnumch-primes/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Guide the Number Muncher to all the prime numbers."
-msgstr "Proveď Munchera ke všem prvočíslům."
+msgstr "Doveď čísložrouta ke všem prvočíslům."
 
 #. Help goal
 #: activities/gnumch-primes/ActivityInfo.qml:20
