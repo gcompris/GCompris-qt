@@ -209,7 +209,7 @@ int main(int argc, char *argv[])
     parser.addOption(clListActivities);
 
     QCommandLineOption clDifficultyRange("difficulty",
-                                         QObject::tr("Specify the range of the activity difficulties to display for the session. Either a single value (2), or a range (3-6). Values must be between 1 and 6."), "difficulty");
+                                         QObject::tr("Specify the range of activity difficulty to display for the session. Either a single value (2), or a range (3-6). Values must be between 1 and 6."), "difficulty");
     parser.addOption(clDifficultyRange);
 
     parser.process(app);

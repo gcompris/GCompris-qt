@@ -307,7 +307,7 @@ or make it show real car images instead of filled rectangles (traffic).</para>
 </row>
 <row>
 <entry>--difficulty {value|min-max}</entry>
-<entry>For the session, force the GCompris activities difficulties to be at either value or between min and max values. The values must be between 1 and 6, and if the format is min-max, the min value must be lower than the max value. If it is not the case GCompris will not start.</entry>
+<entry>For the session, force GCompris activities difficulty to be either at value or between min and max values. The values must be between 1 and 6, and if the format is min-max, the min value must be lower than the max value. If it is not the case GCompris will not start.</entry>
 </row>
 <row>
 <entry>--export-activities-as-sql</entry>
