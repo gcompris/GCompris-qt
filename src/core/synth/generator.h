@@ -41,7 +41,7 @@ public:
 class Generator : public QIODevice {
     Q_OBJECT
 public:
-    explicit Generator(const QAudioFormat &_format, QObject *parent = 0);
+    explicit Generator(const QAudioFormat &_format, QObject *parent = nullptr);
     ~Generator();
 
     void start    ();

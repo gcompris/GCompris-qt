@@ -36,7 +36,7 @@ public:
     /**
      * Constructor
      */
-    explicit File(QObject *parent = 0);
+    explicit File(QObject *parent = nullptr);
 
     /**
      * Reads contents of a file.

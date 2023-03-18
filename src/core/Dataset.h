@@ -53,7 +53,7 @@ class Dataset : public QObject
 
 public:
     /// @cond INTERNAL_DOCS
-    explicit Dataset(QObject *parent = 0);
+    explicit Dataset(QObject *parent = nullptr);
 
     QString objective() const;
     void setObjective(const QString &);
