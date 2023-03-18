@@ -33,8 +33,8 @@ public:
     /**
      * Returns the names of all the files and directories in a given path
      *
-     * @param location: the path of the directory
-     * @param nameFilters: name filters to apply to the filenames
+     * @param location the path of the directory
+     * @param nameFilters name filters to apply to the filenames
      *
      * @returns list of the names of all the files and directories
      *          in the directory.
