@@ -548,9 +548,9 @@ for example 'xx.yy.zz'
 </row>
 <row>
 <entry
->--difficulty {valor|min-max}</entry>
+>--difficulty {valor|mín.-màx.}</entry>
 <entry
->Per a la sessió, força la dificultat de les activitats del GCompris a estar en un valor o entre valors mínims i màxims. Els valors han d'estar entre 1 i 6, i si el format és mín.-màx., el valor mínim ha de ser inferior al valor màxim. Si no és així, el GCompris no s'iniciarà.</entry>
+>For the session, force GCompris activities difficulty to be either at value or between min and max values. The values must be between 1 and 6, and if the format is min-max, the min value must be lower than the max value. If it is not the case GCompris will not start.</entry>
 </row>
 <row>
 <entry
