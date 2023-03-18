@@ -18433,17 +18433,17 @@ msgctxt "ConfigurationItem|"
 msgid "Difficulty filter:"
 msgstr "Filtre de dificultat:"
 
-#: activities/menu/ConfigurationItem.qml:664
+#: activities/menu/ConfigurationItem.qml:666
 msgctxt "ConfigurationItem|"
 msgid "Mixed case (default)"
 msgstr "Combinat (predeterminat)"
 
-#: activities/menu/ConfigurationItem.qml:665
+#: activities/menu/ConfigurationItem.qml:667
 msgctxt "ConfigurationItem|"
 msgid "All uppercase"
 msgstr "Tot en majúscula"
 
-#: activities/menu/ConfigurationItem.qml:666
+#: activities/menu/ConfigurationItem.qml:668
 msgctxt "ConfigurationItem|"
 msgid "All lowercase"
 msgstr "Tot en minúscula"
@@ -25614,21 +25614,55 @@ msgid "Type the complete word as it falls, before it reaches the ground."
 msgstr "Escriviu la paraula completa mentre cau, abans que arribe a terra."
 
 #: core/ChangeLog.qml:30
+#, fuzzy
+#| msgctxt "ChangeLog|"
+#| msgid ""
+#| "New command-line option to list all the activities and start on a "
+#| "specific one"
+msgctxt "ChangeLog|"
+msgid ""
+"New command-line option (--difficulty {value|min-max}) to start GCompris at "
+"specific difficulty"
+msgstr ""
+"Opció nova de la línia d'ordres per a llistar totes les activitats i iniciar-"
+"ne una concreta"
+
+#: core/ChangeLog.qml:31
+#, fuzzy
+#| msgctxt "ChangeLog|"
+#| msgid "Translation updated for Russian"
+msgctxt "ChangeLog|"
+msgid "Many translation updates"
+msgstr "Traducció actualitzada per al rus"
+
+#: core/ChangeLog.qml:32 core/ChangeLog.qml:45 core/ChangeLog.qml:63
+#: core/ChangeLog.qml:78 core/ChangeLog.qml:83 core/ChangeLog.qml:89
+msgctxt "ChangeLog|"
+msgid "Many new images"
+msgstr "Moltes imatges noves"
+
+#: core/ChangeLog.qml:33 core/ChangeLog.qml:46 core/ChangeLog.qml:84
+#: core/ChangeLog.qml:90
+msgctxt "ChangeLog|"
+msgid "Many bug fixes"
+msgstr "Moltes esmenes d'errors"
+
+#: core/ChangeLog.qml:37
 msgctxt "ChangeLog|"
 msgid "Fix issue in comparator activity"
 msgstr "Corregir un problema en l'activitat del comparador"
 
-#: core/ChangeLog.qml:34
+#: core/ChangeLog.qml:41
 msgctxt "ChangeLog|"
 msgid "Map of Spain added for geography activity"
 msgstr "Mapa d'Espanya afegit per a l'activitat de geografia"
 
-#: core/ChangeLog.qml:35
+#: core/ChangeLog.qml:42
 msgctxt "ChangeLog|"
 msgid "Voices added for Ukrainian"
 msgstr "Veus afegides per a l'ucraïnés"
 
-#: core/ChangeLog.qml:36
+#: core/ChangeLog.qml:43
 msgctxt "ChangeLog|"
 msgid ""
 "New command-line option to list all the activities and start on a specific "
@@ -25637,24 +25671,13 @@ msgstr ""
 "Opció nova de la línia d'ordres per a llistar totes les activitats i iniciar-"
 "ne una concreta"
 
-#: core/ChangeLog.qml:37 core/ChangeLog.qml:72 core/ChangeLog.qml:75
-#: core/ChangeLog.qml:81
+#: core/ChangeLog.qml:44 core/ChangeLog.qml:79 core/ChangeLog.qml:82
+#: core/ChangeLog.qml:88
 msgctxt "ChangeLog|"
 msgid "Many usability improvements"
 msgstr "Moltes millores en la usabilitat"
 
-#: core/ChangeLog.qml:38 core/ChangeLog.qml:56 core/ChangeLog.qml:71
-#: core/ChangeLog.qml:76 core/ChangeLog.qml:82
-msgctxt "ChangeLog|"
-msgid "Many new images"
-msgstr "Moltes imatges noves"
-
-#: core/ChangeLog.qml:39 core/ChangeLog.qml:77 core/ChangeLog.qml:83
-msgctxt "ChangeLog|"
-msgid "Many bug fixes"
-msgstr "Moltes esmenes d'errors"
-
-#: core/ChangeLog.qml:43
+#: core/ChangeLog.qml:50
 msgctxt "ChangeLog|"
 msgid ""
 "Reduce the size of the packages for all platforms and of the external word "
@@ -25663,32 +25686,32 @@ msgstr ""
 "Reduïx la mida dels paquets per a totes les plataformes i del conjunt extern "
 "d'imatges de paraules"
 
-#: core/ChangeLog.qml:44
+#: core/ChangeLog.qml:51
 msgctxt "ChangeLog|"
 msgid "Improve images quality in several activities"
 msgstr "Millora la qualitat de les imatges en diverses activitats"
 
-#: core/ChangeLog.qml:45
+#: core/ChangeLog.qml:52
 msgctxt "ChangeLog|"
 msgid "Fix some transitions in renewable_energy/watercycle on some platforms"
 msgstr ""
 "Corregix diverses transicions en «energies renovables/cicle de l'aigua» en "
 "diverses plataformes"
 
-#: core/ChangeLog.qml:46
+#: core/ChangeLog.qml:53
 msgctxt "ChangeLog|"
 msgid "Fix dead keys ignored on Linux for typing activities"
 msgstr ""
 "Corregix les tecles mortes ignorades a Linux per a les activitats de tecleig"
 
-#: core/ChangeLog.qml:47
+#: core/ChangeLog.qml:54
 msgctxt "ChangeLog|"
 msgid "Fix level reset when changing level manually in Logical associations"
 msgstr ""
 "Corregix el restabliment del nivell en canviar el nivell manualment a les "
 "associacions lògiques"
 
-#: core/ChangeLog.qml:51
+#: core/ChangeLog.qml:58
 msgctxt "ChangeLog|"
 msgid ""
 "Fix Alphabet sequence, Even and odd numbers and Numbers in order activities"
@@ -25696,37 +25719,37 @@ msgstr ""
 "Correcció de la seqüència alfabètica, dels nombres parells i senars i els "
 "nombres en les activitats d'ordenació"
 
-#: core/ChangeLog.qml:55 core/ChangeLog.qml:63
+#: core/ChangeLog.qml:62 core/ChangeLog.qml:70
 msgctxt "ChangeLog|"
 msgid "Several bug fixes"
 msgstr "Diverses esmenes d'errors"
 
-#: core/ChangeLog.qml:57
+#: core/ChangeLog.qml:64
 msgctxt "ChangeLog|"
 msgid "Translation updated for Russian"
 msgstr "Traducció actualitzada per al rus"
 
-#: core/ChangeLog.qml:58
+#: core/ChangeLog.qml:65
 msgctxt "ChangeLog|"
 msgid "New voices for Norwegian Nynorsk"
 msgstr "Veus noves per al noruec nynorsk"
 
-#: core/ChangeLog.qml:62
+#: core/ChangeLog.qml:69
 msgctxt "ChangeLog|"
 msgid "Translations added for Breton, Czech and Macedonian"
 msgstr "S'han afegit les traduccions per al bretó, txec i macedoni."
 
-#: core/ChangeLog.qml:67
+#: core/ChangeLog.qml:74
 msgctxt "ChangeLog|"
 msgid "Translation added for Azerbaijani"
 msgstr "S'han afegit les traduccions per a l'àzeri."
 
-#: core/ChangeLog.qml:68
+#: core/ChangeLog.qml:75
 msgctxt "ChangeLog|"
 msgid "New maps and update of the maps for geography activities"
 msgstr "Mapes nous i actualització de les activitats amb mapes de geografia"
 
-#: core/ChangeLog.qml:69
+#: core/ChangeLog.qml:76
 msgctxt "ChangeLog|"
 msgid ""
 "New dataset containing loops operations for programming maze, and make "
@@ -25735,7 +25758,7 @@ msgstr ""
 "Conjunt de dades nous que conté operacions de bucle per a programar el "
 "laberint i fer imatges de guia d'aprenentatge traduïdes"
 
-#: core/ChangeLog.qml:70
+#: core/ChangeLog.qml:77
 msgctxt "ChangeLog|"
 msgid ""
 "Addition of a level to teach voltage source loop in analog electricity "
@@ -25744,58 +25767,58 @@ msgstr ""
 "S'ha afegit un nivell per a ensenyar el bucle de la font de voltatge en "
 "l'activitat electricitat analògica"
 
-#: core/ChangeLog.qml:80
+#: core/ChangeLog.qml:87
 msgctxt "ChangeLog|"
 msgid "New Activity Settings menu, with dataset selection"
 msgstr "El menú nou Configureu l'activitat, amb selecció del conjunt de dades"
 
-#: core/ChangeLog.qml:86
+#: core/ChangeLog.qml:93
 msgctxt "ChangeLog|"
 msgid "New sub-categories to organize activities"
 msgstr "Subcategories noves per a organitzar les activitats"
 
-#: core/ChangeLog.qml:87
+#: core/ChangeLog.qml:94
 msgctxt "ChangeLog|"
 msgid "Translation added for Macedonian."
 msgstr "S'han afegit les traduccions per al macedoni."
 
-#: core/ChangeLog.qml:88
+#: core/ChangeLog.qml:95
 msgctxt "ChangeLog|"
 msgid "New activities Programming Maze and Baby Tangram"
 msgstr "Activitats noves Programació en el laberint i Tangram"
 
-#: core/ChangeLog.qml:89
+#: core/ChangeLog.qml:96
 msgctxt "ChangeLog|"
 msgid "New background music and volume settings."
 msgstr "Configuració nova de la música de fons i el volum."
 
-#: core/ChangeLog.qml:90
+#: core/ChangeLog.qml:97
 msgctxt "ChangeLog|"
 msgid "New speed setting in several activities."
 msgstr "Configuració nova de la velocitat en diverses activitats."
 
-#: core/ChangeLog.qml:91
+#: core/ChangeLog.qml:98
 msgctxt "ChangeLog|"
 msgid "New option in chess to display captured pieces."
 msgstr "Opció nova en els escacs per a mostrar les peces capturades."
 
-#: core/ChangeLog.qml:92
+#: core/ChangeLog.qml:99
 msgctxt "ChangeLog|"
 msgid "New images in Colors, Advanced colors and Target game."
 msgstr "Imatges noves en els Colors, Colors avançats i el joc de destinació."
 
-#: core/ChangeLog.qml:93
+#: core/ChangeLog.qml:100
 msgctxt "ChangeLog|"
 msgid "New voices for US English."
 msgstr "Veus noves per a l'anglés nord-americà."
 
-#: core/ChangeLog.qml:94 core/ChangeLog.qml:102
+#: core/ChangeLog.qml:101 core/ChangeLog.qml:109
 msgctxt "ChangeLog|"
 msgid "Many little fixes and improvements."
 msgstr "Moltes xicotetes correccions i millores."
 
 # skip-rule: punctuation-period
-#: core/ChangeLog.qml:95
+#: core/ChangeLog.qml:102
 msgctxt "ChangeLog|"
 msgid ""
 "Translation updated for multiple languages (Breton, Brazilian Portuguese, "
@@ -25804,19 +25827,19 @@ msgstr ""
 "S'ha actualitzat la traducció per a múltiples idiomes (bretó, català, "
 "portugués brasiler, finlandés...)"
 
-#: core/ChangeLog.qml:96
+#: core/ChangeLog.qml:103
 msgctxt "ChangeLog|"
 msgid "Add Russian dataset for Click on letter activity."
 msgstr ""
 "S'ha afegit el conjunt de dades en rus per a l'activitat «Fes clic en una "
 "lletra»."
 
-#: core/ChangeLog.qml:97
+#: core/ChangeLog.qml:104
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in Dutch."
 msgstr "L'activitat «lang» ara està disponible en neerlandés."
 
-#: core/ChangeLog.qml:98
+#: core/ChangeLog.qml:105
 msgctxt "ChangeLog|"
 msgid ""
 "Merge Norwegian counties Nord-Trøndelag and Sør-Trøndelag into Trøndelag in "
@@ -25825,20 +25848,20 @@ msgstr ""
 "S'han fusionat els comtats noruecs de Nord-Trøndelag i Sør-Trøndelag a dins "
 "de Trøndelag en l'activitat ubica la regió."
 
-#: core/ChangeLog.qml:99
+#: core/ChangeLog.qml:106
 msgctxt "ChangeLog|"
 msgid "Fix in braille activities where the cells start at 1, not 0."
 msgstr ""
 "S'han corregit les activitats de braille on les cel·les comencen a l'1, no "
 "el 0."
 
-#: core/ChangeLog.qml:100
+#: core/ChangeLog.qml:107
 msgctxt "ChangeLog|"
 msgid "Translation added for Basque, Hungarian and Malayalam."
 msgstr "S'han afegit les traduccions per al basc, l'hongarés i el malaiàlam."
 
 # skip-rule: kct-box
-#: core/ChangeLog.qml:101
+#: core/ChangeLog.qml:108
 msgctxt "ChangeLog|"
 msgid ""
 "Loading/saving of creations (Baby Wordprocessor, Balance Box and Piano "
@@ -25847,47 +25870,47 @@ msgstr ""
 "Càrrega/guardada de les creacions (Un processador de textos, Inclina la "
 "capsa i Composició per a piano)."
 
-#: core/ChangeLog.qml:102
+#: core/ChangeLog.qml:109
 msgctxt "ChangeLog|"
 msgid "Translations added for Scottish Gaelic."
 msgstr "S'han afegit les traduccions per al gaèlic escocés."
 
-#: core/ChangeLog.qml:103
+#: core/ChangeLog.qml:110
 msgctxt "ChangeLog|"
 msgid "License page added in configuration."
 msgstr "La pàgina de la llicència ha sigut afegida a la configuració."
 
-#: core/ChangeLog.qml:103
+#: core/ChangeLog.qml:110
 msgctxt "ChangeLog|"
 msgid "Multiple changes on layouts to improve the ergonomy."
 msgstr "Múltiples canvis en les disposicions per a millorar l'ergonomia."
 
-#: core/ChangeLog.qml:104
+#: core/ChangeLog.qml:111
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in Polish, Swedish and Ukrainian."
 msgstr "L'activitat «lang» ara està disponible en polonés, suec i ucraïnés."
 
-#: core/ChangeLog.qml:105
+#: core/ChangeLog.qml:112
 msgctxt "ChangeLog|"
 msgid "Search feature."
 msgstr "Característica de busca."
 
-#: core/ChangeLog.qml:106
+#: core/ChangeLog.qml:113
 msgctxt "ChangeLog|"
 msgid "A Changelog."
 msgstr "Un registre de canvis."
 
-#: core/ChangeLog.qml:107
+#: core/ChangeLog.qml:114
 msgctxt "ChangeLog|"
 msgid "Many little fixes."
 msgstr "Moltes xicotetes correccions."
 
-#: core/ChangeLog.qml:107
+#: core/ChangeLog.qml:114
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in French."
 msgstr "L'activitat «lang» ara està disponible en francés."
 
-#: core/ChangeLog.qml:108
+#: core/ChangeLog.qml:115
 msgctxt "ChangeLog|"
 msgid ""
 "Adding a loading overlay to let the user know that some actions are taking "
@@ -25897,7 +25920,7 @@ msgstr ""
 "accions es duen a terme (la càrrega d'una activitat, per exemple) i que "
 "poden prendre alguns segons."
 
-#: core/ChangeLog.qml:108
+#: core/ChangeLog.qml:115
 msgctxt "ChangeLog|"
 msgid ""
 "Translations added for: Catalan (Valencian), Chinese Traditional, Finnish "
@@ -25906,12 +25929,12 @@ msgstr ""
 "S'afigen traduccions per a: català (valencià), xinés tradicional, finlandés "
 "(92% traduït), rus (98% traduït), eslové (92% traduït), turc."
 
-#: core/ChangeLog.qml:109
+#: core/ChangeLog.qml:116
 msgctxt "ChangeLog|"
 msgid "Translations added for: Slovenian, German, Galician."
 msgstr "Traduccions afegides per a: eslové, alemany, gallec."
 
-#: core/ChangeLog.qml:134
+#: core/ChangeLog.qml:141
 #, qt-format
 msgctxt "ChangeLog|"
 msgid "Version %1:"
@@ -26457,6 +26480,13 @@ msgstr "Especifica l'activitat en iniciar GCompris."
 msgctxt "QObject|"
 msgid "Outputs all the available activities on the standard output."
 msgstr "Mostra totes les activitats disponibles en l'eixida estàndard."
+
+#: core/main.cpp:212
+msgctxt "QObject|"
+msgid ""
+"Specify the range of activity difficulty to display for the session. Either "
+"a single value (2), or a range (3-6). Values must be between 1 and 6."
+msgstr ""
 
 #: core/main.qml:233
 msgctxt "main|"

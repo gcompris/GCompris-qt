@@ -18314,17 +18314,17 @@ msgctxt "ConfigurationItem|"
 msgid "Difficulty filter:"
 msgstr "Φίλτρο δυσκολίας:"
 
-#: activities/menu/ConfigurationItem.qml:664
+#: activities/menu/ConfigurationItem.qml:666
 msgctxt "ConfigurationItem|"
 msgid "Mixed case (default)"
 msgstr "Πεζά και κεφαλαία"
 
-#: activities/menu/ConfigurationItem.qml:665
+#: activities/menu/ConfigurationItem.qml:667
 msgctxt "ConfigurationItem|"
 msgid "All uppercase"
 msgstr "Όλα κεφαλαία"
 
-#: activities/menu/ConfigurationItem.qml:666
+#: activities/menu/ConfigurationItem.qml:668
 msgctxt "ConfigurationItem|"
 msgid "All lowercase"
 msgstr "Όλα πεζά"
@@ -25511,21 +25511,55 @@ msgid "Type the complete word as it falls, before it reaches the ground."
 msgstr "Πληκτρολόγησε τη λέξη πριν αυτή πέσει στο έδαφος."
 
 #: core/ChangeLog.qml:30
+#, fuzzy
+#| msgctxt "ChangeLog|"
+#| msgid ""
+#| "New command-line option to list all the activities and start on a "
+#| "specific one"
+msgctxt "ChangeLog|"
+msgid ""
+"New command-line option (--difficulty {value|min-max}) to start GCompris at "
+"specific difficulty"
+msgstr ""
+"Νέα επιλογή γραμμής εντολών για τη λίστα όλων των δραστηριοτήτων και την "
+"έναρξη μιας συγκεκριμένης."
+
+#: core/ChangeLog.qml:31
+#, fuzzy
+#| msgctxt "ChangeLog|"
+#| msgid "Translation updated for Russian"
+msgctxt "ChangeLog|"
+msgid "Many translation updates"
+msgstr "Ενημερώθηκε η μετάφραση για τα Ρωσικά"
+
+#: core/ChangeLog.qml:32 core/ChangeLog.qml:45 core/ChangeLog.qml:63
+#: core/ChangeLog.qml:78 core/ChangeLog.qml:83 core/ChangeLog.qml:89
+msgctxt "ChangeLog|"
+msgid "Many new images"
+msgstr "Βλέπω και θυμάμαι 2"
+
+#: core/ChangeLog.qml:33 core/ChangeLog.qml:46 core/ChangeLog.qml:84
+#: core/ChangeLog.qml:90
+msgctxt "ChangeLog|"
+msgid "Many bug fixes"
+msgstr "Πολλές διορθώσεις σφαλμάτων."
+
+#: core/ChangeLog.qml:37
 msgctxt "ChangeLog|"
 msgid "Fix issue in comparator activity"
 msgstr ""
 
-#: core/ChangeLog.qml:34
+#: core/ChangeLog.qml:41
 msgctxt "ChangeLog|"
 msgid "Map of Spain added for geography activity"
 msgstr "Ο χάρτης της Ισπανίας προστέθηκε στη γεωγραφική δραστηριότητα."
 
-#: core/ChangeLog.qml:35
+#: core/ChangeLog.qml:42
 msgctxt "ChangeLog|"
 msgid "Voices added for Ukrainian"
 msgstr "Προστέθηκαν ήχοι για τα Ουκρανικά"
 
-#: core/ChangeLog.qml:36
+#: core/ChangeLog.qml:43
 msgctxt "ChangeLog|"
 msgid ""
 "New command-line option to list all the activities and start on a specific "
@@ -25534,24 +25568,13 @@ msgstr ""
 "Νέα επιλογή γραμμής εντολών για τη λίστα όλων των δραστηριοτήτων και την "
 "έναρξη μιας συγκεκριμένης."
 
-#: core/ChangeLog.qml:37 core/ChangeLog.qml:72 core/ChangeLog.qml:75
-#: core/ChangeLog.qml:81
+#: core/ChangeLog.qml:44 core/ChangeLog.qml:79 core/ChangeLog.qml:82
+#: core/ChangeLog.qml:88
 msgctxt "ChangeLog|"
 msgid "Many usability improvements"
 msgstr "Πολλές βελτιώσεις στη χρηστικότητα."
 
-#: core/ChangeLog.qml:38 core/ChangeLog.qml:56 core/ChangeLog.qml:71
-#: core/ChangeLog.qml:76 core/ChangeLog.qml:82
-msgctxt "ChangeLog|"
-msgid "Many new images"
-msgstr "Βλέπω και θυμάμαι 2"
-
-#: core/ChangeLog.qml:39 core/ChangeLog.qml:77 core/ChangeLog.qml:83
-msgctxt "ChangeLog|"
-msgid "Many bug fixes"
-msgstr "Πολλές διορθώσεις σφαλμάτων."
-
-#: core/ChangeLog.qml:43
+#: core/ChangeLog.qml:50
 msgctxt "ChangeLog|"
 msgid ""
 "Reduce the size of the packages for all platforms and of the external word "
@@ -25559,33 +25582,33 @@ msgid ""
 msgstr ""
 "Μείωση του μεγέθους των πακέτων για όλες τις πλατφόρμες και των εικόνων."
 
-#: core/ChangeLog.qml:44
+#: core/ChangeLog.qml:51
 msgctxt "ChangeLog|"
 msgid "Improve images quality in several activities"
 msgstr "Βελτίωση ποιότητας εικόνων σε πολλές δραστηριότητες."
 
-#: core/ChangeLog.qml:45
+#: core/ChangeLog.qml:52
 msgctxt "ChangeLog|"
 msgid "Fix some transitions in renewable_energy/watercycle on some platforms"
 msgstr ""
 "Διόρθωση ορισμένων μεταβάσεων στο renewable_energy/watercycle σε ορισμένες "
 "πλατφόρμες."
 
-#: core/ChangeLog.qml:46
+#: core/ChangeLog.qml:53
 msgctxt "ChangeLog|"
 msgid "Fix dead keys ignored on Linux for typing activities"
 msgstr ""
 "Διόρθωση νεκρών κλειδιών που αγνοήθηκαν στο Linux για δραστηριότητες "
 "πληκτρολόγησης."
 
-#: core/ChangeLog.qml:47
+#: core/ChangeLog.qml:54
 msgctxt "ChangeLog|"
 msgid "Fix level reset when changing level manually in Logical associations"
 msgstr ""
 "Διόρθωση επαναφοράς επιπέδου, όταν αλλάζει το επίπεδο με μη αυτόματο τρόπο "
 "στη δραστηριότητα 'Σειρά των φρούτων'."
 
-#: core/ChangeLog.qml:51
+#: core/ChangeLog.qml:58
 msgctxt "ChangeLog|"
 msgid ""
 "Fix Alphabet sequence, Even and odd numbers and Numbers in order activities"
@@ -25593,38 +25616,38 @@ msgstr ""
 "Διόρθωση των δραστηριοτήτων 'Αλφαβητική σειρά', 'Μονοί και ζυγοί αριθμοί' "
 "και 'Αριθμοί στη σειρά'."
 
-#: core/ChangeLog.qml:55 core/ChangeLog.qml:63
+#: core/ChangeLog.qml:62 core/ChangeLog.qml:70
 msgctxt "ChangeLog|"
 msgid "Several bug fixes"
 msgstr "Πολλές διορθώσεις σφαλμάτων"
 
-#: core/ChangeLog.qml:57
+#: core/ChangeLog.qml:64
 msgctxt "ChangeLog|"
 msgid "Translation updated for Russian"
 msgstr "Ενημερώθηκε η μετάφραση για τα Ρωσικά"
 
-#: core/ChangeLog.qml:58
+#: core/ChangeLog.qml:65
 msgctxt "ChangeLog|"
 msgid "New voices for Norwegian Nynorsk"
 msgstr "Νέοι ήχοι για τα Νέα Νορβηγικά"
 
-#: core/ChangeLog.qml:62
+#: core/ChangeLog.qml:69
 msgctxt "ChangeLog|"
 msgid "Translations added for Breton, Czech and Macedonian"
 msgstr ""
 "Προστέθηκαν μεταφράσεις για τα βρετονικά, τα τσεχικά και τα σλαβομακεδονικά"
 
-#: core/ChangeLog.qml:67
+#: core/ChangeLog.qml:74
 msgctxt "ChangeLog|"
 msgid "Translation added for Azerbaijani"
 msgstr "Προστέθηκαν μεταφράσεις για τα Αζερικά."
 
-#: core/ChangeLog.qml:68
+#: core/ChangeLog.qml:75
 msgctxt "ChangeLog|"
 msgid "New maps and update of the maps for geography activities"
 msgstr "Νέοι χάρτες και ενημέρωση χαρτών για τις δραστηριότητες της γεωγραφίας"
 
-#: core/ChangeLog.qml:69
+#: core/ChangeLog.qml:76
 msgctxt "ChangeLog|"
 msgid ""
 "New dataset containing loops operations for programming maze, and make "
@@ -25633,7 +25656,7 @@ msgstr ""
 "Νέο σύνολο δεδομένων το οποίο περιέχει διαδικασίες επανάληψης για "
 "προγραμματισμό λαβυρίνθων και μετάφραση εικόνων των εγχειριδίων"
 
-#: core/ChangeLog.qml:70
+#: core/ChangeLog.qml:77
 msgctxt "ChangeLog|"
 msgid ""
 "Addition of a level to teach voltage source loop in analog electricity "
@@ -25642,58 +25665,58 @@ msgstr ""
 "Προσθήκη ενός επιπέδου για εκμάθηση βρόχων πηγής τάσης στη δραστηριότητα του "
 "αναλογικού ηλεκτρισμού"
 
-#: core/ChangeLog.qml:80
+#: core/ChangeLog.qml:87
 msgctxt "ChangeLog|"
 msgid "New Activity Settings menu, with dataset selection"
 msgstr "Νέο μενού ρυθμίσεων της δραστηριότητας με επιλογή δεδομένων."
 
-#: core/ChangeLog.qml:86
+#: core/ChangeLog.qml:93
 msgctxt "ChangeLog|"
 msgid "New sub-categories to organize activities"
 msgstr "Νέες υποκατηγορίες οργανώνουν τις δραστηριότητες"
 
-#: core/ChangeLog.qml:87
+#: core/ChangeLog.qml:94
 msgctxt "ChangeLog|"
 msgid "Translation added for Macedonian."
 msgstr "Προστέθηκαν μεταφράσεις για τα Μακεδονικά."
 
-#: core/ChangeLog.qml:88
+#: core/ChangeLog.qml:95
 msgctxt "ChangeLog|"
 msgid "New activities Programming Maze and Baby Tangram"
 msgstr "Νέες δραστηριότητες: Λαβύρινθος προγραμματισμού και Παιδικό τάνγκραμ"
 
-#: core/ChangeLog.qml:89
+#: core/ChangeLog.qml:96
 msgctxt "ChangeLog|"
 msgid "New background music and volume settings."
 msgstr "Νέες δυνατότητες για μουσική παρασκηνίου και ρυθμίσεις έντασης."
 
-#: core/ChangeLog.qml:90
+#: core/ChangeLog.qml:97
 msgctxt "ChangeLog|"
 msgid "New speed setting in several activities."
 msgstr "Νέα ρύθμιση ταχύτητας σε πολλές δραστηριότητες."
 
-#: core/ChangeLog.qml:91
+#: core/ChangeLog.qml:98
 msgctxt "ChangeLog|"
 msgid "New option in chess to display captured pieces."
 msgstr ""
 "Νέα επιλογή στο σκάκι για να εμφανίζονται τα πιόνια που αιχμαλωτίστηκαν."
 
-#: core/ChangeLog.qml:92
+#: core/ChangeLog.qml:99
 msgctxt "ChangeLog|"
 msgid "New images in Colors, Advanced colors and Target game."
 msgstr "Νέες εικόνες για τα Χρώματα, Προσαρμοσμένα χρώματα και τα Βελάκια."
 
-#: core/ChangeLog.qml:93
+#: core/ChangeLog.qml:100
 msgctxt "ChangeLog|"
 msgid "New voices for US English."
 msgstr "Νέοι ήχοι για τα Αγγλικά Αμερικής."
 
-#: core/ChangeLog.qml:94 core/ChangeLog.qml:102
+#: core/ChangeLog.qml:101 core/ChangeLog.qml:109
 msgctxt "ChangeLog|"
 msgid "Many little fixes and improvements."
 msgstr "Πολλές μικρές διορθώσεις και διορθώσεις."
 
-#: core/ChangeLog.qml:95
+#: core/ChangeLog.qml:102
 msgctxt "ChangeLog|"
 msgid ""
 "Translation updated for multiple languages (Breton, Brazilian Portuguese, "
@@ -25702,19 +25725,19 @@ msgstr ""
 "Ενημερώθηκαν οι μεταφράσεις για πολλές γλώσσες (Βρετονικά, Πορτογαλικά "
 "Βραζιλίας, Φινλανδικά, ...)."
 
-#: core/ChangeLog.qml:96
+#: core/ChangeLog.qml:103
 msgctxt "ChangeLog|"
 msgid "Add Russian dataset for Click on letter activity."
 msgstr ""
 "Προσθήκη αρχείου δεδομένων για τη ρωσική γλώσσα στη δραστηριότητα Κλικ σε "
 "ένα γράμμα."
 
-#: core/ChangeLog.qml:97
+#: core/ChangeLog.qml:104
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in Dutch."
 msgstr "Η δραστηριότητα γλώσσας είναι διαθέσιμη τώρα και στα Ολλανδικά."
 
-#: core/ChangeLog.qml:98
+#: core/ChangeLog.qml:105
 msgctxt "ChangeLog|"
 msgid ""
 "Merge Norwegian counties Nord-Trøndelag and Sør-Trøndelag into Trøndelag in "
@@ -25723,18 +25746,18 @@ msgstr ""
 "Συνένωσε τις νορβηγικές κομητείες του Nord-Trøndelag και του Sør-Trøndelag "
 "στην Trøndelag στη δραστηριότητα γεωγραφίας."
 
-#: core/ChangeLog.qml:99
+#: core/ChangeLog.qml:106
 msgctxt "ChangeLog|"
 msgid "Fix in braille activities where the cells start at 1, not 0."
 msgstr ""
 "Διόρθωση στις δραστηριότητες Μπράιγ όπου τα κελιά ξεκινούν με 1, όχι με 0."
 
-#: core/ChangeLog.qml:100
+#: core/ChangeLog.qml:107
 msgctxt "ChangeLog|"
 msgid "Translation added for Basque, Hungarian and Malayalam."
 msgstr "Προστέθηκαν μεταφράσεις για Βασκικά, Ουγγρικά και Μαλαγιάλαμ."
 
-#: core/ChangeLog.qml:101
+#: core/ChangeLog.qml:108
 msgctxt "ChangeLog|"
 msgid ""
 "Loading/saving of creations (Baby Wordprocessor, Balance Box and Piano "
@@ -25743,48 +25766,48 @@ msgstr ""
 "Φόρτωση/αποθήκευση δημιουργιών (Επεξεργαστής κειμένου, Κουτί ισορροπίας, "
 "Σύνθεση στο πιάνο)."
 
-#: core/ChangeLog.qml:102
+#: core/ChangeLog.qml:109
 msgctxt "ChangeLog|"
 msgid "Translations added for Scottish Gaelic."
 msgstr "Προστέθηκαν μεταφράσεις για Σκωτικά Γαελικά."
 
-#: core/ChangeLog.qml:103
+#: core/ChangeLog.qml:110
 msgctxt "ChangeLog|"
 msgid "License page added in configuration."
 msgstr "Μια σελίδα αδειοδότησης έχει προστεθεί στις ρυθμίσεις."
 
-#: core/ChangeLog.qml:103
+#: core/ChangeLog.qml:110
 msgctxt "ChangeLog|"
 msgid "Multiple changes on layouts to improve the ergonomy."
 msgstr "Πολλαπλές αλλαγές στη διάταξη για βελτίωση της εργονομίας."
 
-#: core/ChangeLog.qml:104
+#: core/ChangeLog.qml:111
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in Polish, Swedish and Ukrainian."
 msgstr ""
 "Γλωσσική δραστηριότητα, τώρα διαθέσιμη στα Πολωνικά, Σουηδικά και Ουκρανικά."
 
-#: core/ChangeLog.qml:105
+#: core/ChangeLog.qml:112
 msgctxt "ChangeLog|"
 msgid "Search feature."
 msgstr "Δυνατότητα αναζήτησης."
 
-#: core/ChangeLog.qml:106
+#: core/ChangeLog.qml:113
 msgctxt "ChangeLog|"
 msgid "A Changelog."
 msgstr "Αρχείο καταγραφής αλλαγών."
 
-#: core/ChangeLog.qml:107
+#: core/ChangeLog.qml:114
 msgctxt "ChangeLog|"
 msgid "Many little fixes."
 msgstr "Πολλές μικρές διορθώσεις."
 
-#: core/ChangeLog.qml:107
+#: core/ChangeLog.qml:114
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in French."
 msgstr "Η δραστηριότητα γλώσσας είναι διαθέσιμη τώρα και στα Γαλλικά."
 
-#: core/ChangeLog.qml:108
+#: core/ChangeLog.qml:115
 msgctxt "ChangeLog|"
 msgid ""
 "Adding a loading overlay to let the user know that some actions are taking "
@@ -25794,7 +25817,7 @@ msgstr ""
 "πραγματοποιείται κάποια ενέργεια (για παράδειγμα, η φόρτωση μιας "
 "δραστηριότητας), η οποία μπορεί να διαρκέσει μερικά δευτερόλεπτα."
 
-#: core/ChangeLog.qml:108
+#: core/ChangeLog.qml:115
 msgctxt "ChangeLog|"
 msgid ""
 "Translations added for: Catalan (Valencian), Chinese Traditional, Finnish "
@@ -25804,12 +25827,12 @@ msgstr ""
 "Φινλανδικά (92% μεταφρασμένο), Ρωσικά (98% μεταφρασμένο), Σλοβακικά (92% "
 "μεταφρασμένο), Τουρκικά."
 
-#: core/ChangeLog.qml:109
+#: core/ChangeLog.qml:116
 msgctxt "ChangeLog|"
 msgid "Translations added for: Slovenian, German, Galician."
 msgstr "Μεταφράσεις προστέθηκαν για: Slovenian, German, Galician."
 
-#: core/ChangeLog.qml:134
+#: core/ChangeLog.qml:141
 #, qt-format
 msgctxt "ChangeLog|"
 msgid "Version %1:"
@@ -26354,6 +26377,13 @@ msgstr "Καθορίστε τη δραστηριότητα κατά την εκ�
 msgctxt "QObject|"
 msgid "Outputs all the available activities on the standard output."
 msgstr "Εξάγει όλες τις διαθέσιμες δραστηριότητες στην τυπική έξοδο."
+
+#: core/main.cpp:212
+msgctxt "QObject|"
+msgid ""
+"Specify the range of activity difficulty to display for the session. Either "
+"a single value (2), or a range (3-6). Values must be between 1 and 6."
+msgstr ""
 
 #: core/main.qml:233
 msgctxt "main|"

@@ -17907,17 +17907,17 @@ msgctxt "ConfigurationItem|"
 msgid "Difficulty filter:"
 msgstr "Filter težavnosti:"
 
-#: activities/menu/ConfigurationItem.qml:664
+#: activities/menu/ConfigurationItem.qml:666
 msgctxt "ConfigurationItem|"
 msgid "Mixed case (default)"
 msgstr "Mešana velikost (privzeto)"
 
-#: activities/menu/ConfigurationItem.qml:665
+#: activities/menu/ConfigurationItem.qml:667
 msgctxt "ConfigurationItem|"
 msgid "All uppercase"
 msgstr "VELIKE ČRKE"
 
-#: activities/menu/ConfigurationItem.qml:666
+#: activities/menu/ConfigurationItem.qml:668
 msgctxt "ConfigurationItem|"
 msgid "All lowercase"
 msgstr "Samo male črke"
@@ -24917,21 +24917,54 @@ msgid "Type the complete word as it falls, before it reaches the ground."
 msgstr "Natipkajte celo besedo, preden pade na tla."
 
 #: core/ChangeLog.qml:30
+#, fuzzy
+#| msgctxt "ChangeLog|"
+#| msgid ""
+#| "New command-line option to list all the activities and start on a "
+#| "specific one"
+msgctxt "ChangeLog|"
+msgid ""
+"New command-line option (--difficulty {value|min-max}) to start GCompris at "
+"specific difficulty"
+msgstr ""
+"Nova možnost ukaza za seznam vseh aktivnosti in zagon določene aktivnosti"
+
+#: core/ChangeLog.qml:31
+#, fuzzy
+#| msgctxt "ChangeLog|"
+#| msgid "Translation updated for Russian"
+msgctxt "ChangeLog|"
+msgid "Many translation updates"
+msgstr "Posodobljen prevod v ruščino"
+
+#: core/ChangeLog.qml:32 core/ChangeLog.qml:45 core/ChangeLog.qml:63
+#: core/ChangeLog.qml:78 core/ChangeLog.qml:83 core/ChangeLog.qml:89
+msgctxt "ChangeLog|"
+msgid "Many new images"
+msgstr "Veliko novih slik"
+
+#: core/ChangeLog.qml:33 core/ChangeLog.qml:46 core/ChangeLog.qml:84
+#: core/ChangeLog.qml:90
+msgctxt "ChangeLog|"
+msgid "Many bug fixes"
+msgstr "Veliko popravljenih napak"
+
+#: core/ChangeLog.qml:37
 msgctxt "ChangeLog|"
 msgid "Fix issue in comparator activity"
 msgstr "Popravek napake v dejavnosti primerjanja"
 
-#: core/ChangeLog.qml:34
+#: core/ChangeLog.qml:41
 msgctxt "ChangeLog|"
 msgid "Map of Spain added for geography activity"
 msgstr "Dodan zemljevid Španije za dejavnosti pri geografiji"
 
-#: core/ChangeLog.qml:35
+#: core/ChangeLog.qml:42
 msgctxt "ChangeLog|"
 msgid "Voices added for Ukrainian"
 msgstr "Dodani glasovi za Ukrajino"
 
-#: core/ChangeLog.qml:36
+#: core/ChangeLog.qml:43
 msgctxt "ChangeLog|"
 msgid ""
 "New command-line option to list all the activities and start on a specific "
@@ -24939,24 +24972,13 @@ msgid ""
 msgstr ""
 "Nova možnost ukaza za seznam vseh aktivnosti in zagon določene aktivnosti"
 
-#: core/ChangeLog.qml:37 core/ChangeLog.qml:72 core/ChangeLog.qml:75
-#: core/ChangeLog.qml:81
+#: core/ChangeLog.qml:44 core/ChangeLog.qml:79 core/ChangeLog.qml:82
+#: core/ChangeLog.qml:88
 msgctxt "ChangeLog|"
 msgid "Many usability improvements"
 msgstr "Veliko uporabnih izboljšav"
 
-#: core/ChangeLog.qml:38 core/ChangeLog.qml:56 core/ChangeLog.qml:71
-#: core/ChangeLog.qml:76 core/ChangeLog.qml:82
-msgctxt "ChangeLog|"
-msgid "Many new images"
-msgstr "Veliko novih slik"
-
-#: core/ChangeLog.qml:39 core/ChangeLog.qml:77 core/ChangeLog.qml:83
-msgctxt "ChangeLog|"
-msgid "Many bug fixes"
-msgstr "Veliko popravljenih napak"
-
-#: core/ChangeLog.qml:43
+#: core/ChangeLog.qml:50
 msgctxt "ChangeLog|"
 msgid ""
 "Reduce the size of the packages for all platforms and of the external word "
@@ -24964,30 +24986,30 @@ msgid ""
 msgstr ""
 "Zmanjšajte velikost paketov za vse platforme in zunanjih zbirk slik besed"
 
-#: core/ChangeLog.qml:44
+#: core/ChangeLog.qml:51
 msgctxt "ChangeLog|"
 msgid "Improve images quality in several activities"
 msgstr "Izboljšanje kakovosti slik v več dejavnostih"
 
-#: core/ChangeLog.qml:45
+#: core/ChangeLog.qml:52
 msgctxt "ChangeLog|"
 msgid "Fix some transitions in renewable_energy/watercycle on some platforms"
 msgstr ""
 "Popravki prehodov v obnovljivi energiji/vodnem krogu na nekaterih platformah"
 
-#: core/ChangeLog.qml:46
+#: core/ChangeLog.qml:53
 msgctxt "ChangeLog|"
 msgid "Fix dead keys ignored on Linux for typing activities"
 msgstr "Popravljene neodzivne tipke na Linuxu pri dejavnostih tipkanja"
 
-#: core/ChangeLog.qml:47
+#: core/ChangeLog.qml:54
 msgctxt "ChangeLog|"
 msgid "Fix level reset when changing level manually in Logical associations"
 msgstr ""
 "Popravek ponastavljanja ravni pri ročnem spreminjanju ravni pri logičnih "
 "asociacijah"
 
-#: core/ChangeLog.qml:51
+#: core/ChangeLog.qml:58
 msgctxt "ChangeLog|"
 msgid ""
 "Fix Alphabet sequence, Even and odd numbers and Numbers in order activities"
@@ -24995,37 +25017,37 @@ msgstr ""
 "Popravi abecedno zaporedje, soda in liha števila in dejavnosti urejanja "
 "števil po velikosti"
 
-#: core/ChangeLog.qml:55 core/ChangeLog.qml:63
+#: core/ChangeLog.qml:62 core/ChangeLog.qml:70
 msgctxt "ChangeLog|"
 msgid "Several bug fixes"
 msgstr "Več popravljenih napak"
 
-#: core/ChangeLog.qml:57
+#: core/ChangeLog.qml:64
 msgctxt "ChangeLog|"
 msgid "Translation updated for Russian"
 msgstr "Posodobljen prevod v ruščino"
 
-#: core/ChangeLog.qml:58
+#: core/ChangeLog.qml:65
 msgctxt "ChangeLog|"
 msgid "New voices for Norwegian Nynorsk"
 msgstr "Novi glasovi za norveški jezil (nynorsk)"
 
-#: core/ChangeLog.qml:62
+#: core/ChangeLog.qml:69
 msgctxt "ChangeLog|"
 msgid "Translations added for Breton, Czech and Macedonian"
 msgstr "Dodan prevod v bretonščino, češčino in makedonščino"
 
-#: core/ChangeLog.qml:67
+#: core/ChangeLog.qml:74
 msgctxt "ChangeLog|"
 msgid "Translation added for Azerbaijani"
 msgstr "Dodan prevod v azarbejžanščino"
 
-#: core/ChangeLog.qml:68
+#: core/ChangeLog.qml:75
 msgctxt "ChangeLog|"
 msgid "New maps and update of the maps for geography activities"
 msgstr "Novi zemljevidi in osveženi zemljevidi za dejavnosti pri geografiji"
 
-#: core/ChangeLog.qml:69
+#: core/ChangeLog.qml:76
 msgctxt "ChangeLog|"
 msgid ""
 "New dataset containing loops operations for programming maze, and make "
@@ -25034,7 +25056,7 @@ msgstr ""
 "Nove zbirke podatkov, ki vsebujejo zanke za programiranje labirintov in "
 "izdelani prevodi slik učbenika"
 
-#: core/ChangeLog.qml:70
+#: core/ChangeLog.qml:77
 msgctxt "ChangeLog|"
 msgid ""
 "Addition of a level to teach voltage source loop in analog electricity "
@@ -25042,57 +25064,57 @@ msgid ""
 msgstr ""
 "Dodana raven poučevanja napetostne zanke v dejavnosti analogne elektrike"
 
-#: core/ChangeLog.qml:80
+#: core/ChangeLog.qml:87
 msgctxt "ChangeLog|"
 msgid "New Activity Settings menu, with dataset selection"
 msgstr "Meni Nastavitve novih dejavnosti z izbiro nabora podatkov"
 
-#: core/ChangeLog.qml:86
+#: core/ChangeLog.qml:93
 msgctxt "ChangeLog|"
 msgid "New sub-categories to organize activities"
 msgstr "Nove podkategorije za organizacijo dejavnosti"
 
-#: core/ChangeLog.qml:87
+#: core/ChangeLog.qml:94
 msgctxt "ChangeLog|"
 msgid "Translation added for Macedonian."
 msgstr "Dodan prevod v makedonščino."
 
-#: core/ChangeLog.qml:88
+#: core/ChangeLog.qml:95
 msgctxt "ChangeLog|"
 msgid "New activities Programming Maze and Baby Tangram"
 msgstr "Nove dejavnosti programiranje labirinta in baby Tangram"
 
-#: core/ChangeLog.qml:89
+#: core/ChangeLog.qml:96
 msgctxt "ChangeLog|"
 msgid "New background music and volume settings."
 msgstr "Novo glasbeno ozadje in nastavljanje glasnosti."
 
-#: core/ChangeLog.qml:90
+#: core/ChangeLog.qml:97
 msgctxt "ChangeLog|"
 msgid "New speed setting in several activities."
 msgstr "Novo nastavljanje hitrosti pri mnogih aktivnostih."
 
-#: core/ChangeLog.qml:91
+#: core/ChangeLog.qml:98
 msgctxt "ChangeLog|"
 msgid "New option in chess to display captured pieces."
 msgstr "Nova možnost pri šahu za prikaz ujetih figur."
 
-#: core/ChangeLog.qml:92
+#: core/ChangeLog.qml:99
 msgctxt "ChangeLog|"
 msgid "New images in Colors, Advanced colors and Target game."
 msgstr "Nove slike v Barvah, Naprednih barvah in igri Cilj."
 
-#: core/ChangeLog.qml:93
+#: core/ChangeLog.qml:100
 msgctxt "ChangeLog|"
 msgid "New voices for US English."
 msgstr "Novi glasovi za US Angleščino."
 
-#: core/ChangeLog.qml:94 core/ChangeLog.qml:102
+#: core/ChangeLog.qml:101 core/ChangeLog.qml:109
 msgctxt "ChangeLog|"
 msgid "Many little fixes and improvements."
 msgstr "Veliko majhnih popravkov in izboljšav."
 
-#: core/ChangeLog.qml:95
+#: core/ChangeLog.qml:102
 msgctxt "ChangeLog|"
 msgid ""
 "Translation updated for multiple languages (Breton, Brazilian Portuguese, "
@@ -25101,17 +25123,17 @@ msgstr ""
 "Osveženi prevodi za več jezikov (Bretonsko, Brazilska portugalščina, "
 "Finščina...)"
 
-#: core/ChangeLog.qml:96
+#: core/ChangeLog.qml:103
 msgctxt "ChangeLog|"
 msgid "Add Russian dataset for Click on letter activity."
 msgstr "Dodaj ruski nabor podatkov za dejavnost Klik na črko."
 
-#: core/ChangeLog.qml:97
+#: core/ChangeLog.qml:104
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in Dutch."
 msgstr "Jezikovne dejavnosti so sedaj na voljo v nizozemščini."
 
-#: core/ChangeLog.qml:98
+#: core/ChangeLog.qml:105
 msgctxt "ChangeLog|"
 msgid ""
 "Merge Norwegian counties Nord-Trøndelag and Sør-Trøndelag into Trøndelag in "
@@ -25120,17 +25142,17 @@ msgstr ""
 "Združite norveške županije Nord-Trøndelag in Sør-Trøndelag v Trøndelag in "
 "geo-državna dejavnost."
 
-#: core/ChangeLog.qml:99
+#: core/ChangeLog.qml:106
 msgctxt "ChangeLog|"
 msgid "Fix in braille activities where the cells start at 1, not 0."
 msgstr "Popravek v dejavnostih brajice, ker se celica začne z 1 in ne z 0."
 
-#: core/ChangeLog.qml:100
+#: core/ChangeLog.qml:107
 msgctxt "ChangeLog|"
 msgid "Translation added for Basque, Hungarian and Malayalam."
 msgstr "Dodani prevodi za baskovščino, madžarščino in malajščino."
 
-#: core/ChangeLog.qml:101
+#: core/ChangeLog.qml:108
 msgctxt "ChangeLog|"
 msgid ""
 "Loading/saving of creations (Baby Wordprocessor, Balance Box and Piano "
@@ -25139,49 +25161,49 @@ msgstr ""
 "Nalaganje / shranjevanje stvaritev (Baby Wordprocesor, Balance Box in "
 "Kompozicija s klavirjem)"
 
-#: core/ChangeLog.qml:102
+#: core/ChangeLog.qml:109
 msgctxt "ChangeLog|"
 msgid "Translations added for Scottish Gaelic."
 msgstr "Dodani prevodi za škotsko galščino."
 
-#: core/ChangeLog.qml:103
+#: core/ChangeLog.qml:110
 msgctxt "ChangeLog|"
 msgid "License page added in configuration."
 msgstr "Stran z licenco je dodana v nastavitvah."
 
-#: core/ChangeLog.qml:103
+#: core/ChangeLog.qml:110
 msgctxt "ChangeLog|"
 msgid "Multiple changes on layouts to improve the ergonomy."
 msgstr "Več sprememb v postavitvah za izboljšanje ergonomije."
 
-#: core/ChangeLog.qml:104
+#: core/ChangeLog.qml:111
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in Polish, Swedish and Ukrainian."
 msgstr ""
 "Dejavnosti jezika so zdaj na voljo v now available in Polish, Swedish and "
 "Ukrainian."
 
-#: core/ChangeLog.qml:105
+#: core/ChangeLog.qml:112
 msgctxt "ChangeLog|"
 msgid "Search feature."
 msgstr "Išči zmožnosti."
 
-#: core/ChangeLog.qml:106
+#: core/ChangeLog.qml:113
 msgctxt "ChangeLog|"
 msgid "A Changelog."
 msgstr "Dnevnik sprememb."
 
-#: core/ChangeLog.qml:107
+#: core/ChangeLog.qml:114
 msgctxt "ChangeLog|"
 msgid "Many little fixes."
 msgstr "Več manjših popravkov."
 
-#: core/ChangeLog.qml:107
+#: core/ChangeLog.qml:114
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in French."
 msgstr "Jezikovne dejavnosti so sedaj na voljo v francoščini."
 
-#: core/ChangeLog.qml:108
+#: core/ChangeLog.qml:115
 msgctxt "ChangeLog|"
 msgid ""
 "Adding a loading overlay to let the user know that some actions are taking "
@@ -25191,7 +25213,7 @@ msgstr ""
 "izvajanjem nekaterih dejanj (na primer nalaganje dejavnosti), in lahko "
 "trajajo nekaj sekund."
 
-#: core/ChangeLog.qml:108
+#: core/ChangeLog.qml:115
 msgctxt "ChangeLog|"
 msgid ""
 "Translations added for: Catalan (Valencian), Chinese Traditional, Finnish "
@@ -25200,12 +25222,12 @@ msgstr ""
 "Dodani prevodi: katalonski (valencianski), tradicionalni kitajski, finski "
 "(92% prevedeno), ruski (98% prevedeno), slovaški (92% prevedeno), turški."
 
-#: core/ChangeLog.qml:109
+#: core/ChangeLog.qml:116
 msgctxt "ChangeLog|"
 msgid "Translations added for: Slovenian, German, Galician."
 msgstr "Dodani prevodi: slovenščina, nemščina, galicijščina."
 
-#: core/ChangeLog.qml:134
+#: core/ChangeLog.qml:141
 #, qt-format
 msgctxt "ChangeLog|"
 msgid "Version %1:"
@@ -25744,6 +25766,13 @@ msgstr "Določi dejavnost ob zagonu programa GCompris."
 msgctxt "QObject|"
 msgid "Outputs all the available activities on the standard output."
 msgstr "Usmeri izhod vseh razpoložljivih dejavnosti na standardni izhod."
+
+#: core/main.cpp:212
+msgctxt "QObject|"
+msgid ""
+"Specify the range of activity difficulty to display for the session. Either "
+"a single value (2), or a range (3-6). Values must be between 1 and 6."
+msgstr ""
 
 #: core/main.qml:233
 msgctxt "main|"
