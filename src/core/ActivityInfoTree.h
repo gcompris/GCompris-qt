@@ -72,7 +72,7 @@ Q_SIGNALS:
     void startingActivityChanged();
 
 private:
-    explicit ActivityInfoTree(QObject *parent = 0);
+    explicit ActivityInfoTree(QObject *parent = nullptr);
 
     // this is the full activity list, it never changes
     QList<ActivityInfo *> m_menuTreeFull;

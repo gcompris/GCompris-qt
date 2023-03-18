@@ -145,7 +145,7 @@ class ActivityInfo : public QObject
 
 public:
     /// @cond INTERNAL_DOCS
-    explicit ActivityInfo(QObject *parent = 0);
+    explicit ActivityInfo(QObject *parent = nullptr);
 
     QString name() const;
     void setName(const QString &);

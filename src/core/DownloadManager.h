@@ -90,7 +90,7 @@ private:
         bool downloadFinished;
         int downloadResult;
         DownloadJob(const QUrl &u = QUrl()) :
-            url(u), file(), reply(0),
+            url(u), file(), reply(nullptr),
             queue(QList<QUrl>()),
             bytesReceived(0),
             bytesTotal(0),

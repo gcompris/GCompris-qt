@@ -282,7 +282,7 @@ public:
 #else
     explicit ApplicationSettings(const QString &configPath = QStandardPaths::writableLocation(QStandardPaths::GenericConfigLocation)
                                      + "/gcompris/" + GCOMPRIS_APPLICATION_NAME + ".conf",
-                                 QObject *parent = 0);
+                                 QObject *parent = nullptr);
 #endif
     virtual ~ApplicationSettings();
     // It is not recommended to create a singleton of Qml Singleton registered

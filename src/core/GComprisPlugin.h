@@ -23,7 +23,7 @@ class Q_DECL_EXPORT GComprisPlugin : public QQmlExtensionPlugin
 #endif
 
 public:
-    explicit GComprisPlugin(QObject *parent = 0);
+    explicit GComprisPlugin(QObject *parent = nullptr);
 
     void registerTypes(const char *uri);
 };

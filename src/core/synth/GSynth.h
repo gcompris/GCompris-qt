@@ -24,7 +24,7 @@ class GSynth : public QObject
     Q_OBJECT
 
 public:
-    explicit GSynth(QObject *parent = 0);
+    explicit GSynth(QObject *parent = nullptr);
     virtual ~GSynth();
 
     /**

@@ -28,7 +28,7 @@ public:
     /**
      * Constructor
      */
-    explicit Directory(QObject *parent = 0);
+    explicit Directory(QObject *parent = nullptr);
 
     /**
      * Returns the names of all the files and directories in a given path

@@ -254,7 +254,7 @@ public:
     static QObject *applicationInfoProvider(QQmlEngine *engine,
                                             QJSEngine *scriptEngine);
     static void setWindow(QQuickWindow *window);
-    explicit ApplicationInfo(QObject *parent = 0);
+    explicit ApplicationInfo(QObject *parent = nullptr);
     ~ApplicationInfo();
     int applicationWidth() const { return m_applicationWidth; }
     void setApplicationWidth(const int newWidth);
