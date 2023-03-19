@@ -11,7 +11,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=gcompris&keywords=I18N+L10N&component=general\n"
 "POT-Creation-Date: 2014-11-09 17:30+0000\n"
-"PO-Revision-Date: 2023-01-21 11:12+0200\n"
+"PO-Revision-Date: 2023-03-18 18:14+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
 "Language: uk\n"
@@ -25203,26 +25203,18 @@ msgid "Type the complete word as it falls, before it reaches the ground."
 msgstr "Наберіть слово повністю, доки воно падає на землю."
 
 #: core/ChangeLog.qml:30
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid ""
-#| "New command-line option to list all the activities and start on a "
-#| "specific one"
 msgctxt "ChangeLog|"
 msgid ""
 "New command-line option (--difficulty {value|min-max}) to start GCompris at "
 "specific difficulty"
 msgstr ""
-"Новий параметр командного рядка для показу списку усіх вправ та запуску "
-"специфічної вправи"
+"Новий параметр командного рядка (--difficulty {значення|min-max}) для "
+"запуску GCompris із вказаним рівнем складності вправ"
 
 #: core/ChangeLog.qml:31
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translation updated for Russian"
 msgctxt "ChangeLog|"
 msgid "Many translation updates"
-msgstr "Оновлено переклад російською"
+msgstr "Багато оновлень перекладів"
 
 #: core/ChangeLog.qml:32 core/ChangeLog.qml:45 core/ChangeLog.qml:63
 #: core/ChangeLog.qml:78 core/ChangeLog.qml:83 core/ChangeLog.qml:89
@@ -26068,6 +26060,9 @@ msgid ""
 "Specify the range of activity difficulty to display for the session. Either "
 "a single value (2), or a range (3-6). Values must be between 1 and 6."
 msgstr ""
+"Вказати діапазон складності вправ, які слід показувати під час сеансу. "
+"Одинарне значення (2) або діапазон (3-6). Значення мають бути цілими числами "
+"від 1 до 6."
 
 #: core/main.qml:233
 msgctxt "main|"

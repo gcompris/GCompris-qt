@@ -558,6 +558,12 @@ for example 'xx.yy.zz'
 </row>
 <row>
 <entry
+>--difficulty {значення|min-max}</entry>
+<entry
+>Для поточного сеансу примусово визначити складність вправ GCompris або вказаним значенням або значеннями між min і max. Значення має бути цілим числом від 1 до 6, а якщо задано формат min-max, значення min має бути меншим за max. Якщо ці умови не буде виконано, GCompris не запуститься.</entry>
+</row>
+<row>
+<entry
 >--export-activities-as-sql</entry>
 <entry
 >Експортувати вправи у форматі SQL.</entry>
