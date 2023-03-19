@@ -18,7 +18,7 @@ import glob
 from python.ActivityInfo import ActivityInfo
 
 if len(sys.argv) < 2:
-  print("Usage: check_voices.py <version> [-v]")
+  print("Usage: android_format_changelog.py <version> [-v]")
   sys.exit(1)
 
 version = sys.argv[1]
@@ -115,8 +115,8 @@ def main(argv):
   changelog_qml = component.create()
 
   output="";
-  # List taken from the android list
-  for locale in ["en-US", "be", "ca", "de-DE", "el-GR", "en-GB", "es-ES", "eu-ES", "fi-FI", "fr-FR", "gl-ES", "hu-HU", "id", "it-IT", "iw-IL", "mk-MK", "ml-IN", "nl-NL", "no-NO", "pl-PL", "pt-BR", "pt-PT", "ro", "ru-RU", "sk", "sl", "sq", "sv-SE", "tr-TR", "uk", "zh-CN", "zh-TW"]:
+  # List taken from the android list in https://android.googlesource.com/platform/frameworks/base/+/master/core/res/res/values/locale_config.xml
+  for locale in ["en-US", "az-AZ", "be", "ca", "cs-CZ", "de-DE", "el-GR", "en-GB", "es-ES", "eu-ES", "fi-FI", "fr-FR", "gl-ES", "hr", "hu-HU", "id", "it-IT", "iw-IL", "lt", "mk-MK", "ml-IN", "nl-NL", "no-NO", "pl-PL", "pt-BR", "pt-PT", "ro", "ru-RU", "sk", "sl", "sq", "sv-SE", "tr-TR", "uk", "zh-CN", "zh-TW"]:
     isTranslationOk, locale_changes = generate_for_locale(changelog_qml, locale);
     if isTranslationOk:
       output += locale_changes;
