@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2023-03-16 14:27+0100\n"
+"PO-Revision-Date: 2023-03-18 12:59+0100\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
@@ -25282,12 +25282,9 @@ msgstr ""
 "iniciar GCompris con la dificultad la especificada."
 
 #: core/ChangeLog.qml:31
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translation updated for Russian"
 msgctxt "ChangeLog|"
 msgid "Many translation updates"
-msgstr "Se ha actualizado la traducción para el ruso."
+msgstr "Muchas actualizaciones de traducciones."
 
 #: core/ChangeLog.qml:32 core/ChangeLog.qml:45 core/ChangeLog.qml:63
 #: core/ChangeLog.qml:78 core/ChangeLog.qml:83 core/ChangeLog.qml:89
@@ -26140,12 +26137,6 @@ msgid "Outputs all the available activities on the standard output."
 msgstr "Muestra todas las actividades disponibles en la salida estándar."
 
 #: core/main.cpp:212
-#, fuzzy
-#| msgctxt "QObject|"
-#| msgid ""
-#| "Specify the range of the activity difficulties to display for the "
-#| "session. Either a single value (2), or a range (3-6). Values must be "
-#| "between 1 and 6."
 msgctxt "QObject|"
 msgid ""
 "Specify the range of activity difficulty to display for the session. Either "

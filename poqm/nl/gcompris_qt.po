@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2023-03-16 12:30+0100\n"
+"PO-Revision-Date: 2023-03-18 10:28+0100\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -25193,12 +25193,9 @@ msgstr ""
 "GCompris te starten met een specifieke moeilijkheidsgraad"
 
 #: core/ChangeLog.qml:31
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translation updated for Russian"
 msgctxt "ChangeLog|"
 msgid "Many translation updates"
-msgstr "Vertalingen voor Russisch bijgewerkt."
+msgstr "Vele vertalingen bijgewerkt"
 
 #: core/ChangeLog.qml:32 core/ChangeLog.qml:45 core/ChangeLog.qml:63
 #: core/ChangeLog.qml:78 core/ChangeLog.qml:83 core/ChangeLog.qml:89
@@ -26043,20 +26040,14 @@ msgid "Outputs all the available activities on the standard output."
 msgstr "Voert alle beschikbare activiteiten uit op de standaard uitvoer."
 
 #: core/main.cpp:212
-#, fuzzy
-#| msgctxt "QObject|"
-#| msgid ""
-#| "Specify the range of the activity difficulties to display for the "
-#| "session. Either a single value (2), or a range (3-6). Values must be "
-#| "between 1 and 6."
 msgctxt "QObject|"
 msgid ""
 "Specify the range of activity difficulty to display for the session. Either "
 "a single value (2), or a range (3-6). Values must be between 1 and 6."
 msgstr ""
-"De reeks moeilijkheidsgraden van de activiteit te tonen voor de sessie. "
-"Ofwel een enkele waarde (2) of een reeks (3-6). Waarden moeten liggen tussen "
-"1 en 6."
+"De reeks moeilijkheidsgraden van te tonen activiteiten voor de sessie "
+"specificeren. Ofwel een enkele waarde (2) of een reeks (3-6). Waarden moeten "
+"liggen tussen 1 en 6."
 
 #: core/main.qml:233
 msgctxt "main|"

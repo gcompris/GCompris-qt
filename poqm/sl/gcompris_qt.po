@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2023-03-16 11:55+0100\n"
+"PO-Revision-Date: 2023-03-18 07:30+0100\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
@@ -24926,12 +24926,9 @@ msgstr ""
 "določeni zahtevnosti"
 
 #: core/ChangeLog.qml:31
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translation updated for Russian"
 msgctxt "ChangeLog|"
 msgid "Many translation updates"
-msgstr "Posodobljen prevod v ruščino"
+msgstr "Več posodobljenih prevodov"
 
 #: core/ChangeLog.qml:32 core/ChangeLog.qml:45 core/ChangeLog.qml:63
 #: core/ChangeLog.qml:78 core/ChangeLog.qml:83 core/ChangeLog.qml:89
@@ -25764,19 +25761,13 @@ msgid "Outputs all the available activities on the standard output."
 msgstr "Usmeri izhod vseh razpoložljivih dejavnosti na standardni izhod."
 
 #: core/main.cpp:212
-#, fuzzy
-#| msgctxt "QObject|"
-#| msgid ""
-#| "Specify the range of the activity difficulties to display for the "
-#| "session. Either a single value (2), or a range (3-6). Values must be "
-#| "between 1 and 6."
 msgctxt "QObject|"
 msgid ""
 "Specify the range of activity difficulty to display for the session. Either "
 "a single value (2), or a range (3-6). Values must be between 1 and 6."
 msgstr ""
-"Določite obseg zahtevnosti dejavnosti za prikaz seje. Vnesite bodisi eno "
-"vrednost (2) ali obseg (3-6). Vrednosti morajo biti med 1 in 6."
+"Določite obseg zahtevnosti dejavnosti prikaza seje. Lahko je le ena vrednost "
+"(2) ali obseg (3-6). Vrednosti morajo biti med 1 in 6."
 
 #: core/main.qml:233
 msgctxt "main|"

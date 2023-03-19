@@ -14,8 +14,8 @@ msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2014-12-25 01:10+0000\n"
-"PO-Revision-Date: 2023-03-16 14:16+0100\n"
-"Last-Translator: Antoni Bella Pérez <antonibella5@yahoo.com>\n"
+"PO-Revision-Date: 2023-03-18 11:24+0100\n"
+"Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
 "MIME-Version: 1.0\n"
@@ -23,7 +23,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Accelerator-Marker: &\n"
-"X-Generator: Lokalize 22.12.3\n"
+"X-Generator: Lokalize 20.12.0\n"
 "X-Qt-Contexts: true\n"
 
 #. Activity title
@@ -25616,12 +25616,9 @@ msgstr ""
 "el GCompris amb una dificultat específica"
 
 #: core/ChangeLog.qml:31
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translation updated for Russian"
 msgctxt "ChangeLog|"
 msgid "Many translation updates"
-msgstr "Traducció actualitzada per al rus"
+msgstr "Moltes actualitzacions de les traduccions"
 
 #: core/ChangeLog.qml:32 core/ChangeLog.qml:45 core/ChangeLog.qml:63
 #: core/ChangeLog.qml:78 core/ChangeLog.qml:83 core/ChangeLog.qml:89
@@ -26468,18 +26465,12 @@ msgid "Outputs all the available activities on the standard output."
 msgstr "Mostra totes les activitats disponibles a la sortida estàndard."
 
 #: core/main.cpp:212
-#, fuzzy
-#| msgctxt "QObject|"
-#| msgid ""
-#| "Specify the range of the activity difficulties to display for the "
-#| "session. Either a single value (2), or a range (3-6). Values must be "
-#| "between 1 and 6."
 msgctxt "QObject|"
 msgid ""
 "Specify the range of activity difficulty to display for the session. Either "
 "a single value (2), or a range (3-6). Values must be between 1 and 6."
 msgstr ""
-"Especifiqueu l'interval de dificultats de l'activitat a mostrar durant la "
+"Especifica l'interval de dificultats de l'activitat a mostrar durant la "
 "sessió. O bé un valor únic (2), o un interval (3-6). Els valors han d'estar "
 "entre l'1 i el 6."
 

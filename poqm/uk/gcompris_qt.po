@@ -11,7 +11,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=gcompris&keywords=I18N+L10N&component=general\n"
 "POT-Creation-Date: 2014-11-09 17:30+0000\n"
-"PO-Revision-Date: 2023-03-16 07:25+0200\n"
+"PO-Revision-Date: 2023-03-18 08:53+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
 "Language: uk\n"
@@ -25212,12 +25212,9 @@ msgstr ""
 "запуску GCompris із вказаним рівнем складності вправ"
 
 #: core/ChangeLog.qml:31
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translation updated for Russian"
 msgctxt "ChangeLog|"
 msgid "Many translation updates"
-msgstr "Оновлено переклад російською"
+msgstr "Багато оновлень перекладів"
 
 #: core/ChangeLog.qml:32 core/ChangeLog.qml:45 core/ChangeLog.qml:63
 #: core/ChangeLog.qml:78 core/ChangeLog.qml:83 core/ChangeLog.qml:89
@@ -26058,12 +26055,6 @@ msgid "Outputs all the available activities on the standard output."
 msgstr "Виводить список доступних вправ до стандартного виведення."
 
 #: core/main.cpp:212
-#, fuzzy
-#| msgctxt "QObject|"
-#| msgid ""
-#| "Specify the range of the activity difficulties to display for the "
-#| "session. Either a single value (2), or a range (3-6). Values must be "
-#| "between 1 and 6."
 msgctxt "QObject|"
 msgid ""
 "Specify the range of activity difficulty to display for the session. Either "
