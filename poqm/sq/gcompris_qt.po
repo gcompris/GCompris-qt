@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2023-01-21 12:06+0200\n"
+"PO-Revision-Date: 2023-03-19 18:16+0200\n"
 "Last-Translator: Besnik Bleta <besnik@programeshqip.org>\n"
 "Language-Team: Albanian <kde-i18n-doc@kde.org>\n"
 "Language: sq\n"
@@ -25218,26 +25218,18 @@ msgid "Type the complete word as it falls, before it reaches the ground."
 msgstr "Shtypni fjalën e plotë, teksa ajo bie, përpara se të mbërrijë përdhe."
 
 #: core/ChangeLog.qml:30
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid ""
-#| "New command-line option to list all the activities and start on a "
-#| "specific one"
 msgctxt "ChangeLog|"
 msgid ""
 "New command-line option (--difficulty {value|min-max}) to start GCompris at "
 "specific difficulty"
 msgstr ""
-"Mundësi e re rreshti urdhrash për të paraqitur krejt veprimtaritë dhe për të "
-"nisur një të caktuar"
+"Mundësi e re rreshti urdhrash (--difficulty {value|min-max}) për ta nisur "
+"GCompris-në nën një nivel të caktuar vështirësie"
 
 #: core/ChangeLog.qml:31
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translation updated for Russian"
 msgctxt "ChangeLog|"
 msgid "Many translation updates"
-msgstr "U përditësua përkthimi për rusishten"
+msgstr "Mjaft përditësime përkthimi"
 
 #: core/ChangeLog.qml:32 core/ChangeLog.qml:45 core/ChangeLog.qml:63
 #: core/ChangeLog.qml:78 core/ChangeLog.qml:83 core/ChangeLog.qml:89
@@ -26082,6 +26074,9 @@ msgid ""
 "Specify the range of activity difficulty to display for the session. Either "
 "a single value (2), or a range (3-6). Values must be between 1 and 6."
 msgstr ""
+"Përcaktoni gamë vështirësie veprimtarish për t’u shfaqur për sesionin. Ose "
+"një vlerë e vetme (2), ose një interval (3-6). Vlerat duhet të jenë mes 1 "
+"dhe 6."
 
 #: core/main.qml:233
 msgctxt "main|"

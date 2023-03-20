@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-12-13 00:48+0000\n"
-"PO-Revision-Date: 2021-09-26 08:10+0300\n"
+"PO-Revision-Date: 2023-03-19 19:26+0200\n"
 "Last-Translator: Stelios <sstavra@gmail.com>\n"
 "Language-Team: Greek <kde-i18n-el@kde.org>\n"
 "Language: el\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 20.04.2\n"
+"X-Generator: Poedit 3.2.2\n"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "advanced_colors"
 #: activities/advanced_colors/ActivityInfo.qml:18
@@ -228,8 +228,7 @@ msgstr "Κατηγοριοποίησε τα αντικείμενα στη σωσ
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "checkers"
 #: activities/checkers/ActivityInfo.qml:18
-#, fuzzy, kde-format
-#| msgid "play chess against Tux"
+#, kde-format
 msgid "play checkers against Tux"
 msgstr "παίξε σκάκι με τον Tux"
 
@@ -323,6 +322,7 @@ msgstr "Κάνε κλικ στο σωστό χρώμα"
 msgid ""
 "Select the correct comparator sign for each pair of numbers in the list."
 msgstr ""
+"Επιλέξτε το σωστό σύμβολο σύγκρισης για κάθε ζευγάρι αριθμών στη λίστα."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "crane"
 #: activities/crane/ActivityInfo.qml:23
@@ -465,12 +465,13 @@ msgstr ""
 msgid ""
 "Select the appropriate number of parts as described in the instructions."
 msgstr ""
+"Επιλέξτε τον κατάλληλο αριθμό εξαρτημάτων όπως περιγράφεται στις οδηγίες."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "fractions_find"
 #: activities/fractions_find/ActivityInfo.qml:17
 #, kde-format
 msgid "Find the correct numerator and denominator of the represented fraction"
-msgstr ""
+msgstr "Βρες τον σωστό αριθμητή και παρονομαστή του κλάσματος που βλέπεις."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "geo-country"
 #: activities/geo-country/ActivityInfo.qml:22
@@ -696,6 +697,8 @@ msgstr ""
 msgid ""
 "Move animals to their homes using a left click or right click on your mouse."
 msgstr ""
+"Μετακίνησε τα ζώα στα σπίτια τους κάνοντας αριστερό ή δεξί κλικ στο ποντίκι "
+"σου."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "leftright"
 #: activities/leftright/ActivityInfo.qml:18
@@ -901,10 +904,9 @@ msgstr "Κάνε κλικ στα χρήματα για να πληρώσεις."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "morse_code"
 #: activities/morse_code/ActivityInfo.qml:21
-#, fuzzy, kde-format
-#| msgid "Learn and practice roman to arabic numerals conversion"
+#, kde-format
 msgid "Learn and practice the International Morse code"
-msgstr "Μάθε και εξασκήσου στη μετατροπή από ρωμαϊκή σε αραβική αρίθμηση."
+msgstr "Μάθε και κάνε εξάσκηση στον διεθνή κώδικα Μορς"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "mosaic"
 #: activities/mosaic/ActivityInfo.qml:18
@@ -1243,6 +1245,9 @@ msgid ""
 "Create pairs of numbers equal to ten. Select a number in the list, then "
 "select an empty spot of an operation to move the selected number there."
 msgstr ""
+"Δημιούργησε ζευγάρια αριθμών ίσα με δέκα. Επίλεξε έναν αριθμό στη λίστα και "
+"στη συνέχεια επίλεξε ένα κενό σημείο στην αριθμητική πράξη για να "
+"μετακινήσεις τον επιλεγμένο αριθμό εκεί."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "tens_complement_swap"
 #: activities/tens_complement_swap/ActivityInfo.qml:17
@@ -1251,6 +1256,9 @@ msgid ""
 "Create pairs of numbers equal to ten. Select a number, then select another "
 "number of the same operation to swap their position."
 msgstr ""
+"Δημιούργησε ζευγάρια αριθμών ίσα με δέκα. Επίλεξε έναν αριθμό και στη "
+"συνέχεια επίλεξε έναν άλλο αριθμό της ίδιας αριθμητικής πράξης για "
+"ανταλλάξεις τη θέση τους."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "tens_complement_use"
 #: activities/tens_complement_use/ActivityInfo.qml:17
@@ -1260,6 +1268,9 @@ msgid ""
 "number in the list, then select an empty spot of an operation to move the "
 "selected number there."
 msgstr ""
+"Να αποσυνθέσεις τις πράξεις ώστε να συμπεριλάβεις ένα ζευγάρι αριθμών ίσο με "
+"δέκα. Επίλεξε έναν αριθμό στη λίστα και στη συνέχεια επίλεξε ένα κενό σημείο "
+"μιας αριθμητικής πράξης για να μετακινήσεις τον επιλεγμένο αριθμό εκεί."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "tic_tac_toe_2players"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "tic_tac_toe"

@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GCompris-QT\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2023-01-21 18:49+0200\n"
+"PO-Revision-Date: 2023-03-19 08:09+0200\n"
 "Last-Translator: Rolandas Jakštys <rolandas@jakstys.lt>\n"
 "Language-Team: Lithuanian <kde-i18n-lt@kde.org>\n"
 "Language: lt\n"
@@ -25107,26 +25107,18 @@ msgstr ""
 "Su klaviatūra surink krentantį žodį, kol jis dar nenusileido ant žemės."
 
 #: core/ChangeLog.qml:30
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid ""
-#| "New command-line option to list all the activities and start on a "
-#| "specific one"
 msgctxt "ChangeLog|"
 msgid ""
 "New command-line option (--difficulty {value|min-max}) to start GCompris at "
 "specific difficulty"
 msgstr ""
-"Naujas pasirinkimas komandinėje eilutėje norint gauti visų pamokėlių sąrašą "
-"ir konkrečiai pradėti vieną iš jų"
+"Nauja komandinės eilutės parinktis (--difficulty {value|min-max}), skirta "
+"paleisti GCompris tam tikrame lygyje"
 
 #: core/ChangeLog.qml:31
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translation updated for Russian"
 msgctxt "ChangeLog|"
 msgid "Many translation updates"
-msgstr "Atnaujintas vertimas į rusų kalbą."
+msgstr "Daug vertimo atnaujinimų."
 
 #: core/ChangeLog.qml:32 core/ChangeLog.qml:45 core/ChangeLog.qml:63
 #: core/ChangeLog.qml:78 core/ChangeLog.qml:83 core/ChangeLog.qml:89
@@ -25143,7 +25135,7 @@ msgstr "Daug klaidų pataisymų."
 #: core/ChangeLog.qml:37
 msgctxt "ChangeLog|"
 msgid "Fix issue in comparator activity"
-msgstr ""
+msgstr "Ištaisyta klaida pamokėlėje „Palygink skaičius“"
 
 #: core/ChangeLog.qml:41
 msgctxt "ChangeLog|"
@@ -25494,11 +25486,11 @@ msgstr ""
 "Gintautas Miliauskas<gintas@akl.lt>, \n"
 "Jurga Šalaševičiūtė<jurga.patricia@gmail.com>, \n"
 "Jurgis Pralgauskis<jurgis@ljms.lt>, \n"
-"Rolandas Jakštys<rolasorama@gmail.com>, \n"
+"Rolandas Jakštys<rolandas@jakstys.lt>, \n"
 "Jonas Jakštys<jonasjakstys1@gmail.com>, \n"
 "Bernardas Liukaitis <BernardasL@protonmail.com>\n"
 "<br><b>Įgarsino:</b> Jonas<jonasjakstys1@gmail.com>, Jokūbas ir Petras "
-"Jakščiai <rolasorama@gmail.com>"
+"Jakščiai <rolandas@jakstys.lt>"
 
 #: core/DialogAbout.qml:55
 #, qt-format
@@ -25974,6 +25966,8 @@ msgid ""
 "Specify the range of activity difficulty to display for the session. Either "
 "a single value (2), or a range (3-6). Values must be between 1 and 6."
 msgstr ""
+"Nurodyti seanso sunkumo diapazoną. Gali būti viena reikšmė (pvz. 2) arba "
+"intervalas (pvz. 3–6). Reikšmės turi būti nuo 1 iki 6."
 
 #: core/main.qml:233
 msgctxt "main|"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2023-01-13 22:42+0200\n"
+"PO-Revision-Date: 2023-03-19 11:43+0200\n"
 "Last-Translator: Horia PELLE <horricane@gmail.com>\n"
 "Language-Team: Romanian <kde-i18n-doc@kde.org>\n"
 "Language: ro\n"
@@ -25312,26 +25312,18 @@ msgid "Type the complete word as it falls, before it reaches the ground."
 msgstr "Scrie tot cuvântul care cade, înainte ca el să atingă pământul."
 
 #: core/ChangeLog.qml:30
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid ""
-#| "New command-line option to list all the activities and start on a "
-#| "specific one"
 msgctxt "ChangeLog|"
 msgid ""
 "New command-line option (--difficulty {value|min-max}) to start GCompris at "
 "specific difficulty"
 msgstr ""
-"O nouă opțiune pentru pornirea din linia de comandă, pentru listarea tuturor "
-"activităților și începerea cu o activitate specifică."
+"O nouă opțiune pentru linia de comandă (--difficulty {value|min-max}), "
+"pentru a începe GCompris la un anumit nivel de dificultate."
 
 #: core/ChangeLog.qml:31
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translation updated for Russian"
 msgctxt "ChangeLog|"
 msgid "Many translation updates"
-msgstr "S-a actualizat traducerea pentru limba rusă"
+msgstr "Multe actualizări ale traducerilor"
 
 #: core/ChangeLog.qml:32 core/ChangeLog.qml:45 core/ChangeLog.qml:63
 #: core/ChangeLog.qml:78 core/ChangeLog.qml:83 core/ChangeLog.qml:89
@@ -25348,7 +25340,7 @@ msgstr "Multe corecții de erori"
 #: core/ChangeLog.qml:37
 msgctxt "ChangeLog|"
 msgid "Fix issue in comparator activity"
-msgstr ""
+msgstr "Remedierea unei probleme în activitatea de Comparare a numerelor."
 
 #: core/ChangeLog.qml:41
 msgctxt "ChangeLog|"
@@ -26183,6 +26175,9 @@ msgid ""
 "Specify the range of activity difficulty to display for the session. Either "
 "a single value (2), or a range (3-6). Values must be between 1 and 6."
 msgstr ""
+"Specifică ce interval pentru nivelul de dificultate al activității să fie "
+"afișat pentru sesiune. Poate să fie o singură valoare (2) sau un interval "
+"(3-6). Valorile trebuie să fie între 1 și 6."
 
 #: core/main.qml:233
 msgctxt "main|"
