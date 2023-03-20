@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2023-03-18 08:07+0100\n"
+"PO-Revision-Date: 2023-03-19 07:08+0100\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
@@ -15,7 +15,7 @@ msgstr ""
 "%100<=4 ? 2 : 3);\n"
 "X-Language: sl\n"
 "X-Qt-Contexts: true\n"
-"X-Generator: Lokalize 22.12.3\n"
+"X-Generator: Poedit 3.2.2\n"
 
 #. Activity title
 #: activities/advanced_colors/ActivityInfo.qml:15
@@ -4875,10 +4875,10 @@ msgstr "Nastavi uro na:"
 msgctxt "Clockgame|"
 msgid "%n hour(s)"
 msgid_plural "%n hour(s)"
-msgstr[0] "%n ur"
-msgstr[1] "%n ura"
-msgstr[2] "%n uri"
-msgstr[3] "%ure"
+msgstr[0] "%n ura"
+msgstr[1] "%n uri"
+msgstr[2] "%n ure"
+msgstr[3] "%ur"
 
 #: activities/clockgame/Clockgame.qml:112
 #, qt-format

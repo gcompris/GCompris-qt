@@ -1,8 +1,8 @@
-# Stefan Asserhäll <stefan.asserhall@bredband.net>, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022.
+# Stefan Asserhäll <stefan.asserhall@bredband.net>, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2022-04-09 11:32+0200\n"
+"PO-Revision-Date: 2023-02-28 20:55+0100\n"
 "Last-Translator: Stefan Asserhäll <stefan.asserhall@bredband.net>\n"
 "Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
 "Language: sv\n"
@@ -1165,17 +1165,12 @@ msgstr ""
 
 #. Help manual
 #: activities/align4/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Play with a friend. Take turns to click the line in which you want to "
-#| "drop a token. The first player to create a line of 4 tokens wins."
 msgctxt "ActivityInfo|"
 msgid ""
 "Play with Tux. Take turns to click the line in which you want to drop a "
 "token. The first player to create a line of 4 tokens wins."
 msgstr ""
-"Spela med en vän. Turas om att klicka på raden där en symbol ska släppas. "
+"Spela med Tux. Turas om att klicka på raden där en symbol ska släppas. "
 "Första spelaren som skapar en rad med fyra symboler vinner."
 
 #: activities/align4/ActivityInfo.qml:23 activities/bargame/ActivityInfo.qml:26
@@ -2624,12 +2619,6 @@ msgstr "Räknefärdighet."
 
 #. Help manual
 #: activities/bargame/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Click on the ball icon to select a number of balls, then click on the OK "
-#| "button to place the balls in the holes. You win if the computer has to "
-#| "place the last ball. If you want Tux to begin, just click on him."
 msgctxt "ActivityInfo|"
 msgid ""
 "Click on the ball icon to select a number of balls, then click on the OK "
@@ -2637,8 +2626,8 @@ msgid ""
 "ball. If you want Tux to begin, just click on him."
 msgstr ""
 "Klicka på bollikonen för att välja antal bollar, och klicka sedan på knappen "
-"Ok för att stoppa bollar i hålen. Du vinner om datorn måste stoppa i den "
-"sista bollen. Om du vill att Tux ska börja, klicka bara på honom."
+"Ok för att stoppa bollar i hålen. Du vinner om Tux måste stoppa i den sista "
+"bollen. Om du vill att Tux ska börja, klicka bara på honom."
 
 #. Activity title
 #: activities/bargame_2players/ActivityInfo.qml:15
@@ -3957,12 +3946,9 @@ msgstr "Placera GRÖNSAKERNA till höger och övriga föremål till vänster"
 
 #. Activity title
 #: activities/checkers/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Play chess against Tux"
 msgctxt "ActivityInfo|"
 msgid "Play checkers (against Tux)"
-msgstr "Spela schack mot Tux"
+msgstr "Spela dam (mot Tux)"
 
 #. Help title
 #: activities/checkers/ActivityInfo.qml:17
@@ -3982,27 +3968,6 @@ msgstr "Ta alla motspelarens pjäser innan motspelaren tar alla dina."
 
 #. Help manual
 #: activities/checkers/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Checkers is played by two opponents, on opposite sides of the gameboard. "
-#| "One player has the dark pieces; the other has the light pieces. Players "
-#| "alternate turns. A player may not move an opponent's piece. A move "
-#| "consists of moving a piece diagonally to an adjacent unoccupied square. "
-#| "If the adjacent square contains an opponent's piece, and the square "
-#| "immediately beyond it is vacant, the piece may be captured (and removed "
-#| "from the game) by jumping over it.\n"
-#| "Only the dark squares of the checkered board are used. A piece may move "
-#| "only diagonally into an unoccupied square. Capturing is mandatory. The "
-#| "player without pieces remaining, or who cannot move due to being blocked, "
-#| "loses the game.\n"
-#| "When a man reaches the crownhead or kings row (the farthest row forward), "
-#| "it becomes a king, and is marked by placing an additional piece on top of "
-#| "the first man, and acquires additional powers including the ability to "
-#| "move backwards. If there is a piece in a diagonal that a king can "
-#| "capture, he can move any distance along the diagonal, and may capture an "
-#| "opposing man any distance away by jumping to any of the unoccupied "
-#| "squares immediately beyond it.\n"
 msgctxt "ActivityInfo|"
 msgid ""
 "Checkers is played by two opponents, on opposite sides of the gameboard. One "
@@ -4040,7 +4005,7 @@ msgstr ""
 "möjligheten att flyttas bakåt. Om det finns en pjäs längs en diagonal som en "
 "dam kan ta, kan pjäsen flyttas ett godtyckligt avstånd längs diagonalen, och "
 "kan ta en av motståndarens pjäser hur långt bort som helst genom att hoppa "
-"till någon av de tomma rutorna omedelbart bortom den.\n"
+"till någon av de tomma rutorna omedelbart bortom den."
 
 #: activities/checkers/ActivityInfo.qml:29
 #: activities/checkers_2players/ActivityInfo.qml:28
@@ -4076,12 +4041,9 @@ msgstr "Svart vinner"
 
 #. Activity title
 #: activities/checkers_2players/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Play checkers with your friend"
 msgctxt "ActivityInfo|"
 msgid "Play checkers (with a friend)"
-msgstr "Spela dam mot en vän"
+msgstr "Spela dam (mot en vän)"
 
 #. Help manual
 #: activities/checkers_2players/ActivityInfo.qml:24
@@ -4126,35 +4088,12 @@ msgstr ""
 
 #. Activity title
 #: activities/chess/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Play chess against Tux"
 msgctxt "ActivityInfo|"
 msgid "Play chess (against Tux)"
-msgstr "Spela schack mot Tux"
+msgstr "Spela schack (mot Tux)"
 
 #. Help manual Much of this string is shared across the three activities "chess", "chess_partyend", and "chess_2players".
 #: activities/chess/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "In this activity you discover the chess game by playing against the "
-#| "computer. It displays the possible target positions for any selected "
-#| "piece which helps the children understand how pieces moves. At first "
-#| "level the computer is fully random to give more chances to the children. "
-#| "As level increases, the computer plays better.\n"
-#| "\n"
-#| "You can achieve a mate sooner if you follow these simple rules:\n"
-#| "    Trying to drive your opponent's king in the corner.\n"
-#| "<b>Explanation</b>: this way your opponent's king would have only 3 "
-#| "directions to move instead of 8 from a better position.\n"
-#| "    'Making a trap'. Use your pawns as baits.\n"
-#| "<b>Explanation</b>: this way you can lure your opponent out of his "
-#| "'comfort zone'.\n"
-#| "    Be patient enough.\n"
-#| "<b>Explanation</b>: don't rush too quick, be patient. Let yourself think "
-#| "a little bit and try to predict your opponent's future moves, so that you "
-#| "can catch him or secure your pieces from his attacks."
 msgctxt "ActivityInfo|"
 msgid ""
 "In this activity you discover the chess game by playing against the "
@@ -4180,7 +4119,8 @@ msgstr ""
 "möjliga rutor att flytta till för den valda pjäsen, vilket hjälper barn att "
 "förstå hur pjäserna flyttas. På första nivån spelar datorn helt slumpmässigt "
 "för att ge barn så stora chanser som möjligt. När nivån ökas spelar datorn "
-"allt bättre.\n"
+"allt bättre. Du kan använda pilknapparna för att välja svårighetsnivån "
+"manuellt.\n"
 "\n"
 "Det går snabbare att göra schack matt om du följer några enkla regler:\n"
 "    Försök att driva in din motspelares kung i ett hörn.\n"
@@ -4203,6 +4143,9 @@ msgid ""
 "will redo one move. To undo all the moves, press and hold the undo button "
 "for 3 seconds."
 msgstr ""
+"Ett enkelklick på knappen Ångra ångrar ett drag. Ett enkelklick på knappen "
+"Gör om gör om ett drag. Tryck ner och håll nere knappen Ångra i tre sekunder "
+"för att ångra alla drag."
 
 #: activities/chess/ActivityInfo.qml:33
 #: activities/chess_partyend/ActivityInfo.qml:33
@@ -4254,37 +4197,25 @@ msgstr "Felaktigt drag, kungen står i schack"
 
 #. Translators: undo all the moves in chess activity
 #: activities/chess/Chess.qml:123
-#, fuzzy
-#| msgctxt "core|"
-#| msgid "Do you really want to quit GCompris?"
 msgctxt "Chess|"
 msgid "Do you really want to undo all the moves?"
-msgstr "Vill du verkligen avsluta GCompris?"
+msgstr "Vill du verkligen ångra alla drag?"
 
 #: activities/chess/Chess.qml:124
-#, fuzzy
-#| msgctxt "balanceboxeditor|"
-#| msgid "Yes"
 msgctxt "Chess|"
 msgid "Yes"
 msgstr "Ja"
 
 #: activities/chess/Chess.qml:125
-#, fuzzy
-#| msgctxt "balanceboxeditor|"
-#| msgid "No"
 msgctxt "Chess|"
 msgid "No"
 msgstr "Nej"
 
 #. Activity title
 #: activities/chess_2players/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Play oware with a friend"
 msgctxt "ActivityInfo|"
 msgid "Play chess (with a friend)"
-msgstr "Spela oware med en kompis"
+msgstr "Spela schack (mot en kompis)"
 
 #. Help manual Much of this string is shared across the three activities "chess", "chess_partyend", and "chess_2players".
 #: activities/chess_2players/ActivityInfo.qml:25
@@ -5275,12 +5206,9 @@ msgstr "Fortsätt"
 
 #. Activity title
 #: activities/comparator/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Compare numbers."
 msgctxt "ActivityInfo|"
 msgid "Compare numbers"
-msgstr "Jämför tal."
+msgstr "Jämför tal"
 
 #. Help title
 #: activities/comparator/ActivityInfo.qml:19
@@ -5290,12 +5218,9 @@ msgstr ""
 
 #. Help goal
 #: activities/comparator/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn about prime numbers."
 msgctxt "ActivityInfo|"
 msgid "Learn how to compare number values."
-msgstr "Lär dig om primtal."
+msgstr "Lär dig hur man jämför numeriska värden."
 
 #. Help manual
 #: activities/comparator/ActivityInfo.qml:26
@@ -5314,20 +5239,14 @@ msgid ""
 msgstr ""
 
 #: activities/comparator/ActivityInfo.qml:29
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Down arrow: select previous item"
 msgctxt "ActivityInfo|"
 msgid "Up and Down arrows: select a pair of numbers in the list"
-msgstr "Neråtpil: välj föregående objekt"
+msgstr ""
 
 #: activities/comparator/ActivityInfo.qml:30
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Left and Right arrows: turn left and right"
 msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: select a symbol button"
-msgstr "Vänster- och högerpilar: vänd åt vänster och höger"
+msgstr "Vänster- och högerpilar: välj en symbolknapp"
 
 #: activities/comparator/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
@@ -5335,12 +5254,9 @@ msgid "Space: if a symbol button is selected, enter this symbol"
 msgstr ""
 
 #: activities/comparator/ActivityInfo.qml:32
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "-Enter: validate the answer"
 msgctxt "ActivityInfo|"
 msgid "Return: validate the answers"
-msgstr "- Enter: validera svaret"
+msgstr "Retur: validera svaren"
 
 #: activities/comparator/ActivityInfo.qml:33
 msgctxt "ActivityInfo|"
@@ -5349,12 +5265,9 @@ msgstr ""
 
 #: activities/comparator/resource/1/Data.qml:36
 #: activities/tens_complement_find/resource/3/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "Data|"
 msgid "Numbers from 1 to 9."
-msgstr "Siffror från 0 till 9."
+msgstr "Tal från 1 till 9."
 
 #: activities/comparator/resource/10/Data.qml:14
 msgctxt "Data|"
@@ -5362,44 +5275,29 @@ msgid "3 decimal places between 0 and 999.999."
 msgstr ""
 
 #: activities/comparator/resource/2/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "Data|"
 msgid "Numbers from 1 to 19."
-msgstr "Siffror från 0 till 9."
+msgstr "Tal från 1 till 19."
 
 #: activities/comparator/resource/3/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "Data|"
 msgid "Numbers from 1 to 100."
-msgstr "Siffror från 0 till 9."
+msgstr "Tal från 1 till 100."
 
 #: activities/comparator/resource/4/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "Data|"
 msgid "Numbers from 1 to 1000."
-msgstr "Siffror från 0 till 9."
+msgstr "Tal från 1 till 1000."
 
 #: activities/comparator/resource/5/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "Data|"
 msgid "Numbers from 1 to 1000000."
-msgstr "Siffror från 0 till 9."
+msgstr "Tal från 1 till 1000000."
 
 #: activities/comparator/resource/6/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "Data|"
 msgid "Numbers from 1 to 1 billion."
-msgstr "Siffror från 0 till 9."
+msgstr "Tal från 1 till 1 miljard."
 
 #: activities/comparator/resource/7/Data.qml:14
 msgctxt "Data|"
@@ -5407,12 +5305,9 @@ msgid "1 decimal place between 0 and 9.9, same integer part."
 msgstr ""
 
 #: activities/comparator/resource/8/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "1 decimal place between 0 and 9.9."
-msgstr "Tal mellan %1 och %2."
+msgstr ""
 
 #: activities/comparator/resource/9/Data.qml:14
 msgctxt "Data|"
@@ -6776,12 +6671,9 @@ msgid ""
 msgstr ""
 
 #: activities/explore_farm_animals/resource/board/board1.qml:25
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal's ancestors were wolves."
 msgctxt "board1|"
 msgid "This animal has single-toed hooves."
-msgstr "Djurets förfäder var vargar."
+msgstr ""
 
 #: activities/explore_farm_animals/resource/board/board1.qml:33
 msgctxt "board1|"
@@ -6796,12 +6688,9 @@ msgid ""
 msgstr ""
 
 #: activities/explore_farm_animals/resource/board/board1.qml:37
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal likes to come out at night."
 msgctxt "board1|"
 msgid "This animal has a comb on its head."
-msgstr "Djuret tycker om att vara ute på natten."
+msgstr ""
 
 #: activities/explore_farm_animals/resource/board/board1.qml:45
 msgctxt "board1|"
@@ -6835,12 +6724,9 @@ msgid ""
 msgstr ""
 
 #: activities/explore_farm_animals/resource/board/board1.qml:61
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal lays eggs."
 msgctxt "board1|"
 msgid "This animal can purr."
-msgstr "Djuret lägger ägg."
+msgstr ""
 
 #: activities/explore_farm_animals/resource/board/board1.qml:69
 msgctxt "board1|"
@@ -6872,12 +6758,9 @@ msgid ""
 msgstr ""
 
 #: activities/explore_farm_animals/resource/board/board1.qml:85
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal has webbed feet so it can swim in the water."
 msgctxt "board1|"
 msgid "This animal has webbed feet and can swim on the water."
-msgstr "Djuret har fötter med simhud så att det kan simma i vatten."
+msgstr "Djuret har fötter med simhud och kan simma i vattnet."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:93
 msgctxt "board1|"
@@ -6885,24 +6768,18 @@ msgid "Owl"
 msgstr "Uggla"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:94
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid ""
-#| "The owl goes 'hoo. hoo.' The owl has excellent vision and hearing at "
-#| "night."
 msgctxt "board1|"
 msgid ""
 "The owl goes 'hoot'. Owls are nocturnal birds, they have excellent vision "
 "and hearing at night."
-msgstr "Ugglan säger \"ho, ho\". Ugglan har utmärkt syn och hörsel på natten."
+msgstr ""
+"Ugglan säger \"ho, ho\". Ugglor är nattfåglar, som har utmärkt syn och "
+"hörsel på natten."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:97
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal likes to come out at night."
 msgctxt "board1|"
 msgid "This animal is a nocturnal bird."
-msgstr "Djuret tycker om att vara ute på natten."
+msgstr ""
 
 #: activities/explore_farm_animals/resource/board/board1.qml:105
 msgctxt "board1|"
@@ -6917,12 +6794,9 @@ msgid ""
 msgstr ""
 
 #: activities/explore_farm_animals/resource/board/board1.qml:109
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal is a close relative to the goat."
 msgctxt "board1|"
 msgid "This animal is a descendant of the wolf."
-msgstr "Djuret är en nära släkting till geten."
+msgstr ""
 
 #: activities/explore_farm_animals/resource/board/board1.qml:117
 msgctxt "board1|"
@@ -6937,12 +6811,9 @@ msgid ""
 msgstr ""
 
 #: activities/explore_farm_animals/resource/board/board1.qml:121
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal's ancestors were wolves."
 msgctxt "board1|"
 msgid "This animal produces wool."
-msgstr "Djurets förfäder var vargar."
+msgstr ""
 
 #: activities/explore_farm_animals/resource/board/board1.qml:131
 msgctxt "board1|"
@@ -8271,11 +8142,6 @@ msgid "Polar bear"
 msgstr "Isbjörn"
 
 #: activities/explore_world_animals/resource/board/board2.qml:31
-#, fuzzy
-#| msgctxt "board2|"
-#| msgid ""
-#| "The polar bear is one of the world's largest predatory mammals. It "
-#| "weights up to a ton and can be as long as 3 meters!"
 msgctxt "board2|"
 msgid ""
 "The polar bear is one of the world's largest predatory mammals. It weighs up "
@@ -9169,44 +9035,31 @@ msgstr ""
 
 #. Activity title
 #: activities/fractions_create/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice subtractions."
 msgctxt "ActivityInfo|"
 msgid "Create the fractions"
-msgstr "Öva subtraktion."
+msgstr "Skapa bråken"
 
 #. Help title
 #: activities/fractions_create/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "A shape split in equal parts is displayed on screen."
-msgstr ""
+msgstr "En figur delad i lika delar visas på skärmen."
 
 #: activities/fractions_create/ActivityInfo.qml:18
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Drag the appropriate numbers and the operators to the boxes to obtain the "
-#| "number to guess in the instruction."
 msgctxt "ActivityInfo|"
 msgid ""
 "Select the appropriate number of parts as described in the instructions."
-msgstr ""
-"Dra lämpliga tal och operatorer till rutorna för att få talet att gissa i "
-"instruktionen."
+msgstr "Välj lämpligt antal delar enligt beskrivningen i instruktionerna."
 
 #: activities/fractions_create/fractions_create.js:79
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Digits representation"
 msgctxt "fractions_create|"
 msgid "Find the represented fraction."
-msgstr "Sifferrepresentation"
+msgstr "Bestäm det representerade bråket."
 
 #: activities/fractions_create/resource/1/Data.qml:9
 msgctxt "Data|"
 msgid "Simplified fractions with a pie."
-msgstr ""
+msgstr "Förenklade bråk med en paj."
 
 #: activities/fractions_create/resource/1/Data.qml:18
 #: activities/fractions_create/resource/3/Data.qml:17
@@ -9214,357 +9067,261 @@ msgstr ""
 #: activities/fractions_create/resource/3/Data.qml:29
 msgctxt "Data|"
 msgid "Select one half of the pie."
-msgstr ""
+msgstr "Välj halva pajen."
 
 #: activities/fractions_create/resource/1/Data.qml:24
 #: activities/fractions_create/resource/3/Data.qml:35
 #: activities/fractions_create/resource/3/Data.qml:49
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Select the fifth Thursday of the given month"
 msgctxt "Data|"
 msgid "Select one-third of the pie."
-msgstr "Välj den femte torsdagen i angiven månad"
+msgstr "Välj en tredjedel av pajen."
 
 #: activities/fractions_create/resource/1/Data.qml:30
 #: activities/fractions_create/resource/3/Data.qml:41
 #: activities/fractions_create/resource/3/Data.qml:55
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Select the fourth Sunday of the given month"
 msgctxt "Data|"
 msgid "Select two-thirds of the pie."
-msgstr "Välj den fjärde söndagen i angiven månad"
+msgstr "Välj två tredjedelar av pajen."
 
 #: activities/fractions_create/resource/1/Data.qml:36
 #: activities/fractions_create/resource/3/Data.qml:61
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Select the butterfly of the correct color."
 msgctxt "Data|"
 msgid "Select one-quarter of the pie."
-msgstr "Välj fjärilen med rätt färg."
+msgstr "Välj en fjärdedel av pajen."
 
 #: activities/fractions_create/resource/1/Data.qml:42
 #: activities/fractions_create/resource/3/Data.qml:67
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Select the fifth Thursday of the given month"
 msgctxt "Data|"
 msgid "Select two-fifths of the pie."
-msgstr "Välj den femte torsdagen i angiven månad"
+msgstr "Välj två femtedelar av pajen."
 
 #: activities/fractions_create/resource/1/Data.qml:50
 msgctxt "Data|"
 msgid "Select one pie and one-quarter of a pie."
-msgstr ""
+msgstr "Välj en paj och en fjärdedel av en paj."
 
 #: activities/fractions_create/resource/1/Data.qml:56
 msgctxt "Data|"
 msgid "Select one pie and two-fifths of a pie."
-msgstr ""
+msgstr "Välj en paj och två femtedelar av en paj."
 
 #: activities/fractions_create/resource/1/Data.qml:62
 msgctxt "Data|"
 msgid "Select one pie and one-third of a pie."
-msgstr ""
+msgstr "Välj en paj och en tredjedel av en paj."
 
 #: activities/fractions_create/resource/1/Data.qml:68
 msgctxt "Data|"
 msgid "Select one pie and one half of a pie."
-msgstr ""
+msgstr "Välj en paj och en halv paj."
 
 #: activities/fractions_create/resource/1/Data.qml:74
 msgctxt "Data|"
 msgid "Select one pie and three-quarters of a pie."
-msgstr ""
+msgstr "Välj en paj och tre fjärdedelar av en paj."
 
 #: activities/fractions_create/resource/10/Data.qml:9
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Answer the questions with a correctness of 100%."
 msgctxt "Data|"
 msgid "Specific questions with a square."
-msgstr "Svara på frågorna med 100 % rätta svar."
+msgstr "Specifika frågor med en kvadrat."
 
 #: activities/fractions_create/resource/10/Data.qml:18
 #: activities/fractions_create/resource/10/Data.qml:24
 msgctxt "Data|"
 msgid ""
 "Select as many parts as you can without taking more than half of the square."
-msgstr ""
+msgstr "Välj så många delar du kan utan att använda mer än halva kvadraten."
 
 #: activities/fractions_create/resource/2/Data.qml:9
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Answer the questions with a correctness of 100%."
 msgctxt "Data|"
 msgid "Simplified fractions with a square."
-msgstr "Svara på frågorna med 100 % rätta svar."
+msgstr "Förenklade bråk med en kvadrat."
 
 #: activities/fractions_create/resource/2/Data.qml:18
 #: activities/fractions_create/resource/4/Data.qml:17
 #: activities/fractions_create/resource/4/Data.qml:23
 #: activities/fractions_create/resource/4/Data.qml:29
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Select the butterfly of the correct color."
 msgctxt "Data|"
 msgid "Select one half of the square."
-msgstr "Välj fjärilen med rätt färg."
+msgstr "Välj halva kvadraten."
 
 #: activities/fractions_create/resource/2/Data.qml:24
 #: activities/fractions_create/resource/4/Data.qml:35
 #: activities/fractions_create/resource/4/Data.qml:49
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Select the fifth Thursday of the given month"
 msgctxt "Data|"
 msgid "Select one-third of the square."
-msgstr "Välj den femte torsdagen i angiven månad"
+msgstr "Välj en tredjedel av kvadraten."
 
 #: activities/fractions_create/resource/2/Data.qml:30
 #: activities/fractions_create/resource/4/Data.qml:41
 #: activities/fractions_create/resource/4/Data.qml:55
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Select the fourth Sunday of the given month"
 msgctxt "Data|"
 msgid "Select two-thirds of the square."
-msgstr "Välj den fjärde söndagen i angiven månad"
+msgstr "Välj två tredjedelar av kvadraten."
 
 #: activities/fractions_create/resource/2/Data.qml:36
 #: activities/fractions_create/resource/4/Data.qml:61
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Select the butterfly of the correct color."
 msgctxt "Data|"
 msgid "Select one-quarter of the square."
-msgstr "Välj fjärilen med rätt färg."
+msgstr "Välj en fjärdedel av kvadraten."
 
 #: activities/fractions_create/resource/2/Data.qml:42
 #: activities/fractions_create/resource/4/Data.qml:67
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Select the fifth Thursday of the given month"
 msgctxt "Data|"
 msgid "Select two-fifths of the square."
-msgstr "Välj den femte torsdagen i angiven månad"
+msgstr "Välj två femtedelar av kvadraten."
 
 #: activities/fractions_create/resource/2/Data.qml:50
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Select the butterfly of the correct color."
 msgctxt "Data|"
 msgid "Select one square and one-quarter of a square."
-msgstr "Välj fjärilen med rätt färg."
+msgstr "Välj en kvadrat och en fjärdedel av en kvadrat."
 
 #: activities/fractions_create/resource/2/Data.qml:56
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Select the fifth Thursday of the given month"
 msgctxt "Data|"
 msgid "Select one square and two-fifths of a square."
-msgstr "Välj den femte torsdagen i angiven månad"
+msgstr "Välj en kvadrat och två femtedelar av en kvadrat."
 
 #: activities/fractions_create/resource/2/Data.qml:62
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Select the fifth Thursday of the given month"
 msgctxt "Data|"
 msgid "Select one square and one-third of a square."
-msgstr "Välj den femte torsdagen i angiven månad"
+msgstr "Välj en kvadrat och en tredjedel av en kvadrat."
 
 #: activities/fractions_create/resource/2/Data.qml:68
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Select the butterfly of the correct color."
 msgctxt "Data|"
 msgid "Select one square and one half of a square."
-msgstr "Välj fjärilen med rätt färg."
+msgstr "Välj en kvadrat och en halv kvadrat."
 
 #: activities/fractions_create/resource/2/Data.qml:74
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Select the butterfly of the correct color."
 msgctxt "Data|"
 msgid "Select one square and three-quarters of a square."
-msgstr "Välj fjärilen med rätt färg."
+msgstr "Välj en kvadrat och tre fjärdedelar av en kvadrat."
 
 #: activities/fractions_create/resource/3/Data.qml:9
 msgctxt "Data|"
 msgid "Non-simplified fractions with a pie."
-msgstr ""
+msgstr "Ej förenklade bråk med en paj."
 
 #: activities/fractions_create/resource/3/Data.qml:73
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Select the fifth Thursday of the given month"
 msgctxt "Data|"
 msgid "Select three-fifths of the pie."
-msgstr "Välj den femte torsdagen i angiven månad"
+msgstr "Välj tre femtedelar av pajen."
 
 #: activities/fractions_create/resource/4/Data.qml:9
 msgctxt "Data|"
 msgid "Non-simplified fractions with a square."
-msgstr ""
+msgstr "Ej förenklade bråk med en kvadrat."
 
 #: activities/fractions_create/resource/4/Data.qml:73
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Select the fifth Thursday of the given month"
 msgctxt "Data|"
 msgid "Select three-fifths of the square."
-msgstr "Välj den femte torsdagen i angiven månad"
+msgstr "Välj tre femtedelar av kvadraten."
 
 #: activities/fractions_create/resource/5/Data.qml:9
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Decimal number system."
 msgctxt "Data|"
 msgid "Decimal numbers with a pie."
-msgstr "Decimala talsystemet."
+msgstr "Decimaltal med en paj."
 
 #: activities/fractions_create/resource/5/Data.qml:18
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 0.5 pie."
-msgstr "Vald"
+msgstr "Välj 0,5 pajer."
 
 #: activities/fractions_create/resource/5/Data.qml:24
 msgctxt "Data|"
 msgid "Select 0.25 pie."
-msgstr ""
+msgstr "Välj 0,25 pajer."
 
 #: activities/fractions_create/resource/5/Data.qml:30
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 0.4 pie."
-msgstr "Vald"
+msgstr "Välj 0,4 pajer."
 
 #: activities/fractions_create/resource/5/Data.qml:36
 msgctxt "Data|"
 msgid "Select 0.75 pie."
-msgstr ""
+msgstr "Välj 0,75 pajer."
 
 #: activities/fractions_create/resource/5/Data.qml:42
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 0.8 pie."
-msgstr "Vald"
+msgstr "Välj 0,8 pajer."
 
 #: activities/fractions_create/resource/5/Data.qml:50
 msgctxt "Data|"
 msgid "Select 1.25 pies."
-msgstr ""
+msgstr "Välj 1,25 pajer."
 
 #: activities/fractions_create/resource/5/Data.qml:56
 msgctxt "Data|"
 msgid "Select 1.4 pies."
-msgstr ""
+msgstr "Välj 1,4 pajer."
 
 #: activities/fractions_create/resource/5/Data.qml:62
 #: activities/fractions_create/resource/5/Data.qml:68
 msgctxt "Data|"
 msgid "Select 1.5 pies."
-msgstr ""
+msgstr "Välj 1,5 pajer."
 
 #: activities/fractions_create/resource/5/Data.qml:74
 msgctxt "Data|"
 msgid "Select 1.75 pies."
-msgstr ""
+msgstr "Välj 1,75 pajer."
 
 #: activities/fractions_create/resource/6/Data.qml:9
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Decimal number system."
 msgctxt "Data|"
 msgid "Decimal numbers with a square."
-msgstr "Decimala talsystemet."
+msgstr "Decimaltal med en kvadrat."
 
 #: activities/fractions_create/resource/6/Data.qml:18
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 0.5 square."
-msgstr "Vald"
+msgstr "Välj 0,5 kvadrater."
 
 #: activities/fractions_create/resource/6/Data.qml:24
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 0.25 square."
-msgstr "Vald"
+msgstr "Välj 0,25 kvadrater."
 
 #: activities/fractions_create/resource/6/Data.qml:30
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 0.4 square."
-msgstr "Vald"
+msgstr "Välj 0,4 kvadrater."
 
 #: activities/fractions_create/resource/6/Data.qml:36
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 0.75 square."
-msgstr "Vald"
+msgstr "Välj 0,75 kvadrater."
 
 #: activities/fractions_create/resource/6/Data.qml:42
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 0.8 square."
-msgstr "Vald"
+msgstr "Välj 0,8 kvadrater."
 
 #: activities/fractions_create/resource/6/Data.qml:50
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 1.25 squares."
-msgstr "Vald"
+msgstr "Välj 1,25 kvadrater."
 
 #: activities/fractions_create/resource/6/Data.qml:56
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 1.4 squares."
-msgstr "Vald"
+msgstr "Välj 1,4 kvadrater."
 
 #: activities/fractions_create/resource/6/Data.qml:62
 #: activities/fractions_create/resource/6/Data.qml:68
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 1.5 squares."
-msgstr "Vald"
+msgstr "Välj 1,5 kvadrater."
 
 #: activities/fractions_create/resource/6/Data.qml:74
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 1.75 squares."
-msgstr "Vald"
+msgstr "Välj 1,75 kvadrater."
 
 #: activities/fractions_create/resource/7/Data.qml:9
 msgctxt "Data|"
 msgid "Percentages with a pie."
-msgstr ""
+msgstr "Procentvärden med en paj."
 
 #. Select %1 percent of the pie.
 #: activities/fractions_create/resource/7/Data.qml:19
@@ -9575,17 +9332,15 @@ msgstr ""
 #: activities/fractions_create/resource/7/Data.qml:56
 #: activities/fractions_create/resource/7/Data.qml:63
 #: activities/fractions_create/resource/7/Data.qml:70
-#, fuzzy, qt-format
-#| msgctxt "calendar_dataset|"
-#| msgid "Select the 1st"
+#, qt-format
 msgctxt "Data|"
 msgid "Select %1% of the pie."
-msgstr "Välj den 1:a"
+msgstr "Välj %1 % av pajen."
 
 #: activities/fractions_create/resource/8/Data.qml:9
 msgctxt "Data|"
 msgid "Percentages with a square."
-msgstr ""
+msgstr "Procentvärden med en kvadrat."
 
 #. Select %1 percent of the square.
 #: activities/fractions_create/resource/8/Data.qml:19
@@ -9594,87 +9349,64 @@ msgstr ""
 #: activities/fractions_create/resource/8/Data.qml:42
 #: activities/fractions_create/resource/8/Data.qml:49
 #: activities/fractions_create/resource/8/Data.qml:56
-#, fuzzy, qt-format
-#| msgctxt "calendar_dataset|"
-#| msgid "Select the 1st"
+#, qt-format
 msgctxt "Data|"
 msgid "Select %1% of the square."
-msgstr "Välj den 1:a"
+msgstr "Välj %1 % av kvadraten."
 
 #: activities/fractions_create/resource/9/Data.qml:9
 msgctxt "Data|"
 msgid "Specific questions with a pie."
-msgstr ""
+msgstr "Specifika frågor med en paj."
 
 #: activities/fractions_create/resource/9/Data.qml:18
 #: activities/fractions_create/resource/9/Data.qml:24
 msgctxt "Data|"
 msgid ""
 "Select as many parts as you can without taking more than half of the pie."
-msgstr ""
+msgstr "Välj så många delar du kan utan att använda mer än halva pajen."
 
 #. Activity title
 #: activities/fractions_find/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "instruments|"
-#| msgid "Find the accordion"
 msgctxt "ActivityInfo|"
 msgid "Find the fractions"
-msgstr "Hitta dragspelet"
+msgstr "Bestäm bråken"
 
 #. Help title
 #: activities/fractions_find/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Find the correct date and select it on the calendar."
 msgctxt "ActivityInfo|"
 msgid "Find the correct numerator and denominator of the represented fraction."
-msgstr "Hitta rätt datum och välj det i kalendern."
+msgstr "Bestäm den riktiga täljaren och nämnaren för det angivna bråket."
 
 #: activities/fractions_find/resource/1/Data.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Align four (with a friend)"
 msgctxt "Data|"
 msgid "Find numerator (with a pie)."
-msgstr "Arrangera fyra (med en vän)"
+msgstr "Bestäm täljaren (med en paj)."
 
 #: activities/fractions_find/resource/2/Data.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Align four (with a friend)"
 msgctxt "Data|"
 msgid "Find numerator (with a square)."
-msgstr "Arrangera fyra (med en vän)"
+msgstr "Bestäm täljaren (med en kvadrat)."
 
 #: activities/fractions_find/resource/3/Data.qml:9
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Nine men's morris (with a friend)"
 msgctxt "Data|"
 msgid "Find denominator (with a pie)."
-msgstr "Kvarnspel (mot en vän)"
+msgstr "Bestäm nämnaren (med en paj)."
 
 #: activities/fractions_find/resource/4/Data.qml:9
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Nine men's morris (with a friend)"
 msgctxt "Data|"
 msgid "Find denominator (with a square)."
-msgstr "Kvarnspel (mot en vän)"
+msgstr "Bestäm nämnaren (med en kvadrat)."
 
 #: activities/fractions_find/resource/5/Data.qml:9
 msgctxt "Data|"
 msgid "Find numerator and denominator (with a pie)."
-msgstr ""
+msgstr "Bestäm täljaren och nämnaren (med en paj)."
 
 #: activities/fractions_find/resource/6/Data.qml:9
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Nine men's morris (with a friend)"
 msgctxt "Data|"
 msgid "Find numerator and denominator (with a square)."
-msgstr "Kvarnspel (mot en vän)"
+msgstr "Bestäm täljaren och nämnaren (med en kvadrat)."
 
 #. Activity title
 #: activities/geo-country/ActivityInfo.qml:19
@@ -10911,148 +10643,121 @@ msgstr "Suvalkija"
 #: activities/geo-country/resource/board/board18_0.qml:13
 msgctxt "board18_0|"
 msgid "Autonomous communities or cities of Spain"
-msgstr ""
+msgstr "Spaniens fristående samhällen eller städer"
 
 #. Autonomous communities of Spain: Andalusia
 #: activities/geo-country/resource/board/board18_0.qml:22
 msgctxt "board18_0|"
 msgid "Andalusia"
-msgstr ""
+msgstr "Andalusien"
 
 #. Autonomous communities of Spain: Madrid
 #: activities/geo-country/resource/board/board18_0.qml:29
 msgctxt "board18_0|"
 msgid "Madrid"
-msgstr ""
+msgstr "Madrid"
 
 #. Autonomous communities of Spain: Galicia
 #: activities/geo-country/resource/board/board18_0.qml:36
-#, fuzzy
-#| msgctxt "DialogConfig|"
-#| msgid "Galician"
 msgctxt "board18_0|"
 msgid "Galicia"
-msgstr "Galiciska"
+msgstr "Galicien"
 
 #. Autonomous communities of Spain: Castile and León
 #: activities/geo-country/resource/board/board18_0.qml:43
 msgctxt "board18_0|"
 msgid "Castile and León"
-msgstr ""
+msgstr "Kastilien och Leon"
 
 #. Autonomous communities of Spain: Castilla-La Mancha
 #: activities/geo-country/resource/board/board18_0.qml:50
 msgctxt "board18_0|"
 msgid "Castilla-La Mancha"
-msgstr ""
+msgstr "Kastilien - La Mancha"
 
 #. Autonomous communities of Spain: Catalonia
 #: activities/geo-country/resource/board/board18_0.qml:57
-#, fuzzy
-#| msgctxt "board11_3|"
-#| msgid "Catania"
 msgctxt "board18_0|"
 msgid "Catalonia"
-msgstr "Catania"
+msgstr "Katalonien"
 
 #. Autonomous communities of Spain: Aragon
 #: activities/geo-country/resource/board/board18_0.qml:64
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Hexagon"
 msgctxt "board18_0|"
 msgid "Aragon"
-msgstr "Hexagon"
+msgstr "Aragon"
 
 #. Autonomous communities of Spain: Valencia
 #: activities/geo-country/resource/board/board18_0.qml:71
-#, fuzzy
-#| msgctxt "board11_3|"
-#| msgid "Vibo Valentia"
 msgctxt "board18_0|"
 msgid "Valencia"
-msgstr "Vibo Valentia"
+msgstr "Valencia"
 
 #. Autonomous communities of Spain: Murcia
 #: activities/geo-country/resource/board/board18_0.qml:78
 msgctxt "board18_0|"
 msgid "Murcia"
-msgstr ""
+msgstr "Murcia"
 
 #. Autonomous communities of Spain: Asturias
 #: activities/geo-country/resource/board/board18_0.qml:85
 msgctxt "board18_0|"
 msgid "Asturias"
-msgstr ""
+msgstr "Asturias"
 
 #. Autonomous communities of Spain: Basque Country
 #: activities/geo-country/resource/board/board18_0.qml:92
 msgctxt "board18_0|"
 msgid "Basque Country"
-msgstr ""
+msgstr "Baskien"
 
 #. Autonomous communities of Spain: La Rioja
 #: activities/geo-country/resource/board/board18_0.qml:99
-#, fuzzy
-#| msgctxt "board3_0|"
-#| msgid "La Rioja"
 msgctxt "board18_0|"
 msgid "La Rioja"
 msgstr "La Rioja"
 
 #. Autonomous communities of Spain: Cantabria
 #: activities/geo-country/resource/board/board18_0.qml:106
-#, fuzzy
-#| msgctxt "board11_0|"
-#| msgid "Calabria"
 msgctxt "board18_0|"
 msgid "Cantabria"
-msgstr "Kalabrien"
+msgstr "Kantabrien"
 
 #. Autonomous communities of Spain: Navarre
 #: activities/geo-country/resource/board/board18_0.qml:113
-#, fuzzy
-#| msgctxt "board5|"
-#| msgid "Navajo"
 msgctxt "board18_0|"
 msgid "Navarre"
-msgstr "Navajo"
+msgstr "Navarra"
 
 #. Autonomous communities of Spain: Extremadura
 #: activities/geo-country/resource/board/board18_0.qml:120
 msgctxt "board18_0|"
 msgid "Extremadura"
-msgstr ""
+msgstr "Extremadura"
 
 #. Autonomous communities of Spain: Canary Islands
 #: activities/geo-country/resource/board/board18_0.qml:127
-#, fuzzy
-#| msgctxt "board14_0|"
-#| msgid "Mariana Islands"
 msgctxt "board18_0|"
 msgid "Canary Islands"
-msgstr "Marianeröarna"
+msgstr "Kanarieöarna"
 
 #. Autonomous communities of Spain: Balearic Islands
 #: activities/geo-country/resource/board/board18_0.qml:134
-#, fuzzy
-#| msgctxt "board14_0|"
-#| msgid "Mariana Islands"
 msgctxt "board18_0|"
 msgid "Balearic Islands"
-msgstr "Marianeröarna"
+msgstr "Balearerna"
 
 #. Autonomous communities of Spain: Ceuta
 #: activities/geo-country/resource/board/board18_0.qml:141
 msgctxt "board18_0|"
 msgid "Ceuta"
-msgstr ""
+msgstr "Ceuta"
 
 #. Autonomous communities of Spain: Melilla
 #: activities/geo-country/resource/board/board18_0.qml:148
 msgctxt "board18_0|"
 msgid "Melilla"
-msgstr ""
+msgstr "Melilla"
 
 #: activities/geo-country/resource/board/board1_0.qml:15
 msgctxt "board1_0|"
@@ -13053,7 +12758,7 @@ msgstr "Nederländerna"
 #: activities/geography/resource/board/board5_0.qml:73
 msgctxt "board5_0|"
 msgid "Luxembourg"
-msgstr ""
+msgstr "Luxemburg"
 
 #: activities/geography/resource/board/board5_0.qml:81
 msgctxt "board5_0|"
@@ -13106,9 +12811,6 @@ msgid "Eastern Europe"
 msgstr "Östeuropa"
 
 #: activities/geography/resource/board/board6_0.qml:24
-#, fuzzy
-#| msgctxt "board9_0|"
-#| msgid "Cyprus"
 msgctxt "board6_0|"
 msgid "Cyprus"
 msgstr "Cypern"
@@ -15750,12 +15452,9 @@ msgstr "Aktivera uppläsning"
 
 #. Activity title
 #: activities/learn_digits/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Count the items"
 msgctxt "ActivityInfo|"
 msgid "Count and color the circles"
-msgstr "Räkna sakerna"
+msgstr "Räkna och färglägg cirklarna"
 
 #. Help title
 #: activities/learn_digits/ActivityInfo.qml:17
@@ -15939,42 +15638,33 @@ msgid "Subtractions with 1, 2, 3, 4 and 5."
 msgstr "Subtraktion med 1, 2, 3, 4 och 5."
 
 #: activities/learn_subtractions/resource/4/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2, 3, 4 and 5."
 msgctxt "Data|"
 msgid "Subtractions with 1, 2, 3, 4, 5, 6 and 7."
-msgstr "Subtraktion med 1, 2, 3, 4 och 5."
+msgstr "Subtraktion med 1, 2, 3, 4,5, 6 och 7."
 
 #: activities/learn_subtractions/resource/5/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2, 3, 4 and 5."
 msgctxt "Data|"
 msgid "Subtractions with 1, 2, 3, 4, 5, 6, 7, 8 and 9."
-msgstr "Subtraktion med 1, 2, 3, 4 och 5."
+msgstr "Subtraktion med 1, 2, 3, 4, 5, 6, 7, 8 och 9."
 
 #. Activity title
 #: activities/left_right_click/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Numeration training"
 msgctxt "ActivityInfo|"
 msgid "Mouse click training"
-msgstr "Räkningsövning"
+msgstr "Musklicksövning"
 
 #. Help title
 #: activities/left_right_click/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid ""
 "Move animals to their homes using a left click or right click on your mouse."
-msgstr ""
+msgstr "Flytta hem djur genom att använda vänster- eller högerklick med musen."
 
 #. Help goal
 #: activities/left_right_click/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Using the mouse. Left and right click training."
-msgstr ""
+msgstr "Använd musen. Övning med vänster- och högerklick."
 
 #. Help manual
 #: activities/left_right_click/ActivityInfo.qml:23
@@ -15983,6 +15673,8 @@ msgid ""
 "A left click on a fish will move it to the pond. A right click on a monkey "
 "will move it to the tree. A message will show if you make the wrong click."
 msgstr ""
+"Ett vänsterklick på en fisk flyttar den till dammen. Ett högerklick på en "
+"apa flyttar den till trädet. Ett meddelande visas om du använder fel klick."
 
 #. Activity title
 #: activities/leftright/ActivityInfo.qml:15
@@ -18199,7 +17891,7 @@ msgstr "Menyn för aktivitetssektioner är synlig"
 #: activities/menu/ConfigurationItem.qml:296
 msgctxt "ConfigurationItem|"
 msgid "Ask for confirmation to exit"
-msgstr ""
+msgstr "Fråga efter bekräftelse för att avsluta"
 
 #: activities/menu/ConfigurationItem.qml:307
 msgctxt "ConfigurationItem|"
@@ -18715,21 +18407,15 @@ msgstr ""
 
 #. Activity title
 #: activities/morse_code/ActivityInfo.qml:18
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Discover the braille system"
 msgctxt "ActivityInfo|"
 msgid "Discover the International Morse code"
-msgstr "Upptäck punktskrift"
+msgstr "Upptäck den internationella Morsekoden"
 
 #. Help title
 #: activities/morse_code/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn how to tell the time on an analog clock."
 msgctxt "ActivityInfo|"
 msgid "Learn how to communicate with the International Morse code."
-msgstr "Lär dig att läsa av tiden på en analog klocka."
+msgstr ""
 
 #. Help goal
 #: activities/morse_code/ActivityInfo.qml:23
@@ -18740,12 +18426,9 @@ msgstr ""
 
 #. Help prerequisite
 #: activities/morse_code/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Knowledge of arithmetic operations."
 msgctxt "ActivityInfo|"
 msgid "Knowledge of alphabets and digits."
-msgstr "Kännedom om aritmetiska operatorer."
+msgstr "Kännedom om alfabeten och siffror."
 
 #. Help manual
 #: activities/morse_code/ActivityInfo.qml:27
@@ -18782,37 +18465,26 @@ msgid ""
 msgstr ""
 
 #: activities/morse_code/FirstScreen.qml:90
-#, fuzzy
-#| msgctxt "FirstScreen|"
-#| msgid ""
-#| "When you are ready, click on me and try reproducing braille characters."
 msgctxt "FirstScreen|"
 msgid "When you are ready, click on Tux and we will converse in Morse code."
-msgstr "Klicka på mig när du är redo att försöka återge punktskriftstecken."
+msgstr ""
 
 #: activities/morse_code/MorseCode.qml:349
-#, fuzzy, qt-format
-#| msgctxt "RomanNumerals|"
-#| msgid "Roman value: %1"
+#, qt-format
 msgctxt "MorseCode|"
 msgid "Morse value: %1"
-msgstr "Romerskt värde: %1"
+msgstr "Morsevärde: %1"
 
 #: activities/morse_code/MorseCode.qml:350
-#, fuzzy, qt-format
-#| msgctxt "RomanNumerals|"
-#| msgid "Arabic value: %1"
+#, qt-format
 msgctxt "MorseCode|"
 msgid "Alphabet/Numeric value: %1"
-msgstr "Arabiskt värde: %1"
+msgstr "Alfabetiskt eller siffervärde: %1"
 
 #: activities/morse_code/resource/1/Data.qml:13
-#, fuzzy
-#| msgctxt "Menu|"
-#| msgid "Letters"
 msgctxt "Data|"
 msgid "Letters."
-msgstr "Bokstäver"
+msgstr "Bokstäver."
 
 #: activities/morse_code/resource/1/Data.qml:18
 #: activities/morse_code/resource/1/Data.qml:34
@@ -18830,23 +18502,18 @@ msgstr ""
 #: activities/morse_code/resource/1/Data.qml:39
 #: activities/morse_code/resource/1/Data.qml:55
 #: activities/morse_code/resource/1/Data.qml:71
-#, fuzzy, qt-format
-#| msgctxt "RomanNumerals|"
-#| msgid "Convert the roman number %1 to arabic."
+#, qt-format
 msgctxt "Data|"
 msgid "Convert the message %1 to letters."
-msgstr "Konvertera romerska talet %1 till arabiska siffror."
+msgstr "Konvertera meddelandet %1 till bokstäver."
 
 #: activities/morse_code/resource/1/Data.qml:28
 #: activities/morse_code/resource/1/Data.qml:44
 #: activities/morse_code/resource/1/Data.qml:60
 #: activities/morse_code/resource/1/Data.qml:76
-#, fuzzy
-#| msgctxt "advanced_colors|"
-#| msgid "Find the corn butterfly"
 msgctxt "Data|"
 msgid "Find the corresponding letter."
-msgstr "Hitta den majsgula fjärilen"
+msgstr ""
 
 #: activities/morse_code/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -18855,29 +18522,21 @@ msgstr ""
 
 #: activities/morse_code/resource/2/Data.qml:23
 #: activities/morse_code/resource/2/Data.qml:39
-#, fuzzy, qt-format
-#| msgctxt "RomanNumerals|"
-#| msgid "Convert the roman number %1 to arabic."
+#, qt-format
 msgctxt "Data|"
 msgid "Convert the message %1 to digits."
-msgstr "Konvertera romerska talet %1 till arabiska siffror."
+msgstr "Konvertera meddelandet %1 till siffror."
 
 #: activities/morse_code/resource/2/Data.qml:28
 #: activities/morse_code/resource/2/Data.qml:44
-#, fuzzy
-#| msgctxt "instruments|"
-#| msgid "Find the accordion"
 msgctxt "Data|"
 msgid "Find the corresponding digit."
-msgstr "Hitta dragspelet"
+msgstr "Hitta motsvarande siffra."
 
 #: activities/morse_code/resource/3/Data.qml:13
-#, fuzzy
-#| msgctxt "Menu|"
-#| msgid "Words"
 msgctxt "Data|"
 msgid "Words."
-msgstr "Ord"
+msgstr "Ord."
 
 #: activities/morse_code/resource/3/Data.qml:24
 msgctxt "Data|"
@@ -18885,12 +18544,9 @@ msgid "Write the Morse code you hear."
 msgstr ""
 
 #: activities/morse_code/resource/3/Data.qml:34
-#, fuzzy
-#| msgctxt "RomanNumerals|"
-#| msgid "Convert the roman number %1 to arabic."
 msgctxt "Data|"
 msgid "Convert the message in a word."
-msgstr "Konvertera romerska talet %1 till arabiska siffror."
+msgstr "Konvertera meddelandet i ett ord."
 
 #. Activity title
 #: activities/mosaic/ActivityInfo.qml:15
@@ -18967,18 +18623,13 @@ msgstr ""
 
 #. Help manual
 #: activities/nine_men_morris/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Play with a friend. First take turns to place nine pieces, and then take "
-#| "turns to move your pieces."
 msgctxt "ActivityInfo|"
 msgid ""
 "Play with Tux. First take turns to place nine pieces, and then take turns to "
 "move your pieces."
 msgstr ""
-"Spela mot en vän. Turas om att placera ut nio pjäser, och därefter att "
-"flytta pjäserna."
+"Spela med Tux. Turas om att placera ut nio pjäser, och därefter att flytta "
+"pjäserna."
 
 #: activities/nine_men_morris/nine_men_morris.js:29
 msgctxt "nine_men_morris|"
@@ -19612,6 +19263,16 @@ msgid ""
 "Tigers|live|in|forests.\n"
 "Football|is|a|team|game."
 msgstr ""
+"En|hund|skäller|.\n"
+"Ett|hus|är|rött.\n"
+"En|pojke|läster|en bok.\n"
+"Min|vän|är|snäll.\n"
+"Vilken|vacker|utsikt!\n"
+"Sven|hoppar|i|en|vattenpöl.\n"
+"Anna|vill|ha|en|ny|bok.\n"
+"Mamma|gjorde|en|smörgås|åt|mig.\n"
+"Björnar|bor|i|skogen.\n"
+"Fotboll|är|en|lagsport."
 
 #: activities/ordering_sentences/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -19633,15 +19294,22 @@ msgid ""
 "Mom|has|asked|me|to|play|in|the|room.\n"
 "I|think|we|are|going|to|have|a|good|day."
 msgstr ""
+"Solen|lyser|på|himlen.\n"
+"Barn|tycker|om|att|leka|utomhus|på|kvällen.\n"
+"Ska|du|gå|ut|på|lunch?\n"
+"En|flicka|knöt|sina|tennisskor|och|gick|ut.\n"
+"Pär|kände|sig|sjuk|efter|att|ha|ätit|fem|stora|chokladkakor.\n"
+"Vår|familj|tar|semester|på|stranden|varje|sommar.\n"
+"Morbror|Jan|gav|mig|en|röd|leksaksbil.\n"
+"När|du|har|ätit|upp|riset|kan|du|äta|efterrätten.\n"
+"Mamma|har|bett|mig|att|leka|i|mitt|rum.\n"
+"Jag|tror|att|vi|kommer|att|ha|en|fin|dag."
 
 #. Activity title
 #: activities/oware/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Play oware against Tux"
 msgctxt "ActivityInfo|"
 msgid "Play oware (against Tux)"
-msgstr "Spela oware mot Tux"
+msgstr "Spela oware (mot Tux)"
 
 #. Help title
 #: activities/oware/ActivityInfo.qml:16
@@ -19730,12 +19398,9 @@ msgstr "Ogiltigt drag."
 
 #. Activity title
 #: activities/oware_2players/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Play oware with a friend"
 msgctxt "ActivityInfo|"
 msgid "Play oware (with a friend)"
-msgstr "Spela oware med en kompis"
+msgstr "Spela oware (med en kompis)"
 
 #. Help title
 #: activities/oware_2players/ActivityInfo.qml:16
@@ -24850,12 +24515,9 @@ msgstr "Maximalt värde: 500000."
 
 #. Activity title
 #: activities/tens_complement_find/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "instruments|"
-#| msgid "Find the trumpet"
 msgctxt "ActivityInfo|"
 msgid "Find ten's complement"
-msgstr "Hitta trumpeten"
+msgstr ""
 
 #. Help title
 #: activities/tens_complement_find/ActivityInfo.qml:16
@@ -24871,12 +24533,9 @@ msgstr ""
 
 #. Help prerequisite
 #: activities/tens_complement_find/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "ActivityInfo|"
 msgid "Numbers from 1 to 10 and additions."
-msgstr "Siffror från 0 till 9."
+msgstr ""
 
 #: activities/tens_complement_find/ActivityInfo.qml:23
 #: activities/tens_complement_use/ActivityInfo.qml:24
@@ -24897,28 +24556,19 @@ msgid ""
 msgstr ""
 
 #: activities/tens_complement_find/resource/1/Data.qml:25
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "Data|"
 msgid "First number from 1 to 4."
-msgstr "Siffror från 0 till 9."
+msgstr ""
 
 #: activities/tens_complement_find/resource/2/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "Data|"
 msgid "First number from 5 to 9."
-msgstr "Siffror från 0 till 9."
+msgstr ""
 
 #: activities/tens_complement_find/resource/4/Data.qml:9
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Division of numbers"
 msgctxt "Data|"
 msgid "Find both numbers."
-msgstr "Division av tal"
+msgstr ""
 
 #. Activity title
 #: activities/tens_complement_swap/ActivityInfo.qml:14
@@ -24942,12 +24592,9 @@ msgstr ""
 
 #. Help prerequisite
 #: activities/tens_complement_swap/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "ActivityInfo|"
 msgid "Numbers from 1 to 30 and additions."
-msgstr "Siffror från 0 till 9."
+msgstr "Tal från 1 till 30 och additioner."
 
 #. Help manual
 #: activities/tens_complement_swap/ActivityInfo.qml:23
@@ -24961,28 +24608,19 @@ msgid ""
 msgstr ""
 
 #: activities/tens_complement_swap/resource/1/Data.qml:36
-#, fuzzy
-#| msgctxt "Warning|"
-#| msgid "1 is not a prime number."
 msgctxt "Data|"
 msgid "2 pairs to make from 4 numbers."
-msgstr "1 är inte ett primtal."
+msgstr ""
 
 #: activities/tens_complement_swap/resource/2/Data.qml:9
-#, fuzzy
-#| msgctxt "Warning|"
-#| msgid "1 is not a prime number."
 msgctxt "Data|"
 msgid "2 pairs to make from 5 numbers."
-msgstr "1 är inte ett primtal."
+msgstr ""
 
 #: activities/tens_complement_swap/resource/3/Data.qml:9
-#, fuzzy
-#| msgctxt "Warning|"
-#| msgid "1 is not a prime number."
 msgctxt "Data|"
 msgid "3 pairs to make from 6 numbers."
-msgstr "1 är inte ett primtal."
+msgstr ""
 
 #. Activity title
 #: activities/tens_complement_use/ActivityInfo.qml:14
@@ -25004,12 +24642,9 @@ msgstr ""
 
 #. Help prerequisite
 #: activities/tens_complement_use/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "ActivityInfo|"
 msgid "Numbers from 1 to 50 and additions."
-msgstr "Siffror från 0 till 9."
+msgstr "Tal från 1 till 50 och additioner."
 
 #. Help manual
 #: activities/tens_complement_use/ActivityInfo.qml:23
@@ -25021,28 +24656,19 @@ msgid ""
 msgstr ""
 
 #: activities/tens_complement_use/resource/1/Data.qml:43
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Between 1 and 10."
 msgctxt "Data|"
 msgid "Result between 11 and 19."
-msgstr "Mellan 1 och 10."
+msgstr "Resultat mellan 11 och 19."
 
 #: activities/tens_complement_use/resource/2/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Result between 20 and 29."
-msgstr "Tal mellan %1 och %2."
+msgstr "Resultat mellan 20 och 29."
 
 #: activities/tens_complement_use/resource/3/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Between 20 and 50."
 msgctxt "Data|"
 msgid "Result between 30 and 50."
-msgstr "Mellan 20 och 50."
+msgstr "Resultat mellan 30 och 50."
 
 #. Activity title
 #: activities/tic_tac_toe/ActivityInfo.qml:18
@@ -25070,23 +24696,18 @@ msgstr ""
 
 #. Help manual
 #: activities/tic_tac_toe/ActivityInfo.qml:27
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Play with a friend. Take turns to click on the square which you want to "
-#| "mark. The first player to create a line of 3 marks wins."
 msgctxt "ActivityInfo|"
 msgid ""
 "Play with Tux. Take turns to click on the square which you want to mark. The "
 "first player to create a line of 3 marks wins."
 msgstr ""
-"Spela med en vän. Turas om att klicka på fyrkanten som du vill markera. "
-"Första spelaren som skapar en rad med tre märken vinner."
+"Spela med Tux. Turas om att klicka på fyrkanten som du vill markera. Första "
+"spelaren som skapar en rad med tre märken vinner."
 
 #: activities/tic_tac_toe/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Tux will play better when you increase the level."
-msgstr ""
+msgstr "Tux spelar bättre när nivån ökas."
 
 #. Activity title
 #: activities/tic_tac_toe_2players/ActivityInfo.qml:18
@@ -25177,11 +24798,6 @@ msgid "As the sun rises, the water of the sea starts heating and evaporates."
 msgstr "När solen stiger, värms havets vatten upp och avdunstar."
 
 #: activities/watercycle/Watercycle.qml:80
-#, fuzzy
-#| msgctxt "Watercycle|"
-#| msgid ""
-#| "Water vapor condenses to form cloud and when clouds become heavy, it "
-#| "rains. Click on the cloud."
 msgctxt "Watercycle|"
 msgid ""
 "Water vapor condenses to form clouds and when clouds become heavy, it rains. "
@@ -25235,12 +24851,6 @@ msgstr ""
 "oceaner."
 
 #: activities/watercycle/Watercycle.qml:115
-#, fuzzy
-#| msgctxt "Watercycle|"
-#| msgid ""
-#| "Plants also lose water to the air through transpiration. The water vapor "
-#| "cools down forming tiny droplets in clouds. When the clouds meet cool air "
-#| "over the land, precipitation is triggered and fall down as rain."
 msgctxt "Watercycle|"
 msgid ""
 "Plants also lose water to the air through transpiration. The water vapor "
@@ -25338,17 +24948,14 @@ msgid "Fix issue in comparator activity"
 msgstr ""
 
 #: core/ChangeLog.qml:41
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "New maps and update of the maps for geography activities"
 msgctxt "ChangeLog|"
 msgid "Map of Spain added for geography activity"
-msgstr "Nya kartor och uppdatering av kartorna för geografiaktiviteter"
+msgstr "Karta över Spanien tillagd för geografiaktiviteten"
 
 #: core/ChangeLog.qml:42
 msgctxt "ChangeLog|"
 msgid "Voices added for Ukrainian"
-msgstr ""
+msgstr "Röster tillagda för Ukrainska"
 
 #: core/ChangeLog.qml:43
 msgctxt "ChangeLog|"
@@ -25699,12 +25306,10 @@ msgid "GCompris %1"
 msgstr "GCompris %1"
 
 #: core/DialogAbout.qml:57
-#, fuzzy, qt-format
-#| msgctxt "DialogAbout|"
-#| msgid "Based on Qt %1"
+#, qt-format
 msgctxt "DialogAbout|"
 msgid "Based on Qt %1 and %2"
-msgstr "Baserad på Qt %1"
+msgstr "Baserad på Qt %1 och %2"
 
 #: core/DialogAbout.qml:61
 msgctxt "DialogAbout|"
@@ -26131,18 +25736,13 @@ msgid "Enable the kiosk mode."
 msgstr "Aktivera kioskläget."
 
 #: core/main.cpp:196
-#, fuzzy
-#| msgctxt "QObject|"
-#| msgid ""
-#| "Use software renderer instead of openGL (slower but should run with any "
-#| "graphical card, needs Qt 5.8 minimum)."
 msgctxt "QObject|"
 msgid ""
 "Use software renderer instead of openGL (slower but should run with any "
 "graphical card)."
 msgstr ""
 "Använd programvaruåtergivning istället för OpenGL (långsammare, men bör "
-"fungera med vilket grafikkort som helst, kräver minst Qt 5.8)."
+"fungera med vilket grafikkort som helst)."
 
 #: core/main.cpp:199
 msgctxt "QObject|"
@@ -26156,12 +25756,12 @@ msgstr ""
 #: core/main.cpp:203
 msgctxt "QObject|"
 msgid "Specify the activity when starting GCompris."
-msgstr ""
+msgstr "Ange aktivitet när GCompris startas."
 
 #: core/main.cpp:208
 msgctxt "QObject|"
 msgid "Outputs all the available activities on the standard output."
-msgstr ""
+msgstr "Skriver ut alla tillgängliga aktiviteter på standardutmatningen."
 
 #: core/main.cpp:212
 msgctxt "QObject|"
@@ -26262,91 +25862,132 @@ msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Starta"
 
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Select the butterfly of the correct color."
+#~ msgctxt "Data|"
+#~ msgid "Specific questions with a rectangle."
+#~ msgstr "Specifika frågor med en rektangel."
+
+#~ msgctxt "Data|"
+#~ msgid ""
+#~ "Select as many parts as you can without taking more than half of the "
+#~ "rectangle."
+#~ msgstr ""
+#~ "Välj så många delar du kan utan att använda mer än halva rektangeln."
+
+#~ msgctxt "Data|"
+#~ msgid "Simplified fractions with a rectangle."
+#~ msgstr "Förenklade bråk med en rektangel."
+
+#~ msgctxt "Data|"
+#~ msgid "Select one half of the rectangle."
+#~ msgstr "Välj halva rektangeln."
+
 #~ msgctxt "Data|"
 #~ msgid "Select one-third of the rectangle."
-#~ msgstr "Välj fjärilen med rätt färg."
+#~ msgstr "Välj en tredjedel av rektangeln."
 
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Select the butterfly of the correct color."
 #~ msgctxt "Data|"
 #~ msgid "Select two-thirds of the rectangle."
-#~ msgstr "Välj fjärilen med rätt färg."
+#~ msgstr "Välj två tredjedelar av rektangeln."
 
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Select the butterfly of the correct color."
 #~ msgctxt "Data|"
 #~ msgid "Select one-quarter of the rectangle."
-#~ msgstr "Välj fjärilen med rätt färg."
+#~ msgstr "Välj en fjärdedel av rektangeln."
 
-#, fuzzy
-#~| msgctxt "calendar_dataset|"
-#~| msgid "Select the fifth Thursday of the given month"
 #~ msgctxt "Data|"
 #~ msgid "Select two-fifths of the rectangle."
-#~ msgstr "Välj den femte torsdagen i angiven månad"
+#~ msgstr "Välj två femtedelar av rektangeln."
 
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Select the butterfly of the correct color."
+#~ msgctxt "Data|"
+#~ msgid "Select one rectangle and one-quarter of a rectangle."
+#~ msgstr "Välj en rektangel och en fjärdedel av en rektangel."
+
+#~ msgctxt "Data|"
+#~ msgid "Select one rectangle and two-fifths of a rectangle."
+#~ msgstr "Välj en rektangel och två femtedelar av en rektangel."
+
+#~ msgctxt "Data|"
+#~ msgid "Select one rectangle and one-third of a rectangle."
+#~ msgstr "Välj en rektangel och en tredjedel av en rektangel."
+
+#~ msgctxt "Data|"
+#~ msgid "Select one rectangle and one half of a rectangle."
+#~ msgstr "Välj en rektangel och en halv rektangel."
+
+#~ msgctxt "Data|"
+#~ msgid "Select one rectangle and three-quarters of a rectangle."
+#~ msgstr "Välj en rektangel och tre fjärdedelar av en rektangel."
+
+#~ msgctxt "Data|"
+#~ msgid "Non-simplified fractions with a rectangle."
+#~ msgstr "Ej förenklade bråk med en rektangel."
+
 #~ msgctxt "Data|"
 #~ msgid "Select three-fifths of the rectangle."
-#~ msgstr "Välj fjärilen med rätt färg."
+#~ msgstr "Välj tre femtedelar av rektangeln."
 
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Decimal number system."
 #~ msgctxt "Data|"
 #~ msgid "Decimal numbers with a rectangle."
-#~ msgstr "Decimala talsystemet."
+#~ msgstr "Decimaltal med en rektangel."
 
-#, fuzzy
-#~| msgctxt "ActivityConfig|"
-#~| msgid "Select your locale"
 #~ msgctxt "Data|"
 #~ msgid "Select 0.5 rectangle."
-#~ msgstr "Välj landsinställning"
+#~ msgstr "Välj 0,5 rektanglar."
 
-#, fuzzy
-#~| msgctxt "ActivityConfig|"
-#~| msgid "Select your locale"
+#~ msgctxt "Data|"
+#~ msgid "Select 0.25 rectangle."
+#~ msgstr "Välj 0,25 rektanglar."
+
 #~ msgctxt "Data|"
 #~ msgid "Select 0.4 rectangle."
-#~ msgstr "Välj landsinställning"
+#~ msgstr "Välj 0,4 rektanglar."
 
-#, fuzzy
-#~| msgctxt "ActivityConfig|"
-#~| msgid "Select your locale"
+#~ msgctxt "Data|"
+#~ msgid "Select 0.75 rectangle."
+#~ msgstr "Välj 0,75 rektanglar."
+
 #~ msgctxt "Data|"
 #~ msgid "Select 0.8 rectangle."
-#~ msgstr "Välj landsinställning"
+#~ msgstr "Välj 0,8 rektanglar."
 
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Nine men's morris (with a friend)"
+#~ msgctxt "Data|"
+#~ msgid "Select 1.25 rectangles."
+#~ msgstr "Välj 1,25 rektanglar."
+
+#~ msgctxt "Data|"
+#~ msgid "Select 1.4 rectangles."
+#~ msgstr "Välj 1,4 rektanglar."
+
+#~ msgctxt "Data|"
+#~ msgid "Select 1.5 rectangles."
+#~ msgstr "Välj 1,5 rektanglar."
+
+#~ msgctxt "Data|"
+#~ msgid "Select 1.75 rectangles."
+#~ msgstr "Välj 1,75 rektanglar."
+
+#~ msgctxt "Data|"
+#~ msgid "Percentages with a rectangle."
+#~ msgstr "Procentvärden med en rektangel."
+
+#~ msgctxt "Data|"
+#~ msgid "Select %1% of the rectangle."
+#~ msgstr "Välj %1 % av rektangeln."
+
 #~ msgctxt "Data|"
 #~ msgid "Find denominator (with a rectangle)."
-#~ msgstr "Kvarnspel (mot en vän)"
+#~ msgstr "Bestäm nämnaren (med en rektangel)."
+
+#~ msgctxt "Data|"
+#~ msgid "Find numerator (with a rectangle)."
+#~ msgstr "Bestäm täljaren (med en rektangel)."
+
+#~ msgctxt "Data|"
+#~ msgid "Find numerator and denominator (with a rectangle)."
+#~ msgstr "Bestäm täljaren och nämnaren (med en rektangel)."
 
 #~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Play with the computer. Take turns to click the line in which you want to "
-#~ "drop a token. The first player to create a line of 4 tokens wins."
-#~ msgstr ""
-#~ "Spela med datorn. Turas om att klicka på raden där en symbol ska släppas. "
-#~ "Första spelaren som skapar en rad med fyra markeringar vinner."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Play checkers against the computer"
-#~ msgstr "Spela dam mot datorn"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Play chess against your friend"
-#~ msgstr "Spela schack mot en vän"
+#~ msgid "Learn digits"
+#~ msgstr "Lär dig siffror"
 
 #~ msgctxt "board1|"
 #~ msgid "The horse goes 'neigh! neigh!'. Horses usually sleep standing up."
@@ -26442,8 +26083,12 @@ msgstr "Starta"
 #~ "klippas och användas för att bland annat producera klädesplagg och filtar."
 
 #~ msgctxt "ActivityInfo|"
-#~ msgid "Learn digits"
-#~ msgstr "Lär dig siffror"
+#~ msgid ""
+#~ "Play with the computer. Take turns to click the line in which you want to "
+#~ "drop a token. The first player to create a line of 4 tokens wins."
+#~ msgstr ""
+#~ "Spela med datorn. Turas om att klicka på raden där en symbol ska släppas. "
+#~ "Första spelaren som skapar en rad med fyra markeringar vinner."
 
 #~ msgctxt "ActivityInfo|"
 #~ msgid ""
@@ -26452,6 +26097,14 @@ msgstr "Starta"
 #~ msgstr ""
 #~ "Spela mot datorn. Turas om att placera ut nio pjäser, och turas därefter "
 #~ "om att flytta dina pjäser."
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid ""
+#~ "Play with the computer. Take turns to click on the square which you want "
+#~ "to mark. The first player to create a line of 3 marks wins."
+#~ msgstr ""
+#~ "Spela med datorn. Turas om att klicka på fyrkanten som du vill markera. "
+#~ "Första spelaren som skapar en rad med tre märken vinner."
 
 #~ msgctxt "Data|"
 #~ msgid ""
@@ -26472,14 +26125,6 @@ msgstr "Starta"
 #~ msgstr ""
 #~ "Solen|skiner|på|himlen.\n"
 #~ "Barn|tycker|om|att|leka|ute|på|kvällen."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Play with the computer. Take turns to click on the square which you want "
-#~ "to mark. The first player to create a line of 3 marks wins."
-#~ msgstr ""
-#~ "Spela med datorn. Turas om att klicka på fyrkanten som du vill markera. "
-#~ "Första spelaren som skapar en rad med tre märken vinner."
 
 #~ msgctxt "ActivityInfo|"
 #~ msgid ""
@@ -26507,6 +26152,14 @@ msgstr "Starta"
 #~ msgstr ""
 #~ "Bilder och uppläsning kommer från Art4Apps-projektet: https://www."
 #~ "art4apps.org/."
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Play checkers against the computer"
+#~ msgstr "Spela dam mot datorn"
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Play chess against your friend"
+#~ msgstr "Spela schack mot en vän"
 
 #~ msgctxt "ActivityInfo|"
 #~ msgid "Drawing by Stephane Cabaraux"

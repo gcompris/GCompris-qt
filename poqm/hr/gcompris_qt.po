@@ -5731,7 +5731,7 @@ msgid ""
 "output is 1 if A = B, otherwise it's 0. The third output is 1 if A > B, "
 "otherwise it's 0. "
 msgstr ""
-"Komparator uzima 2 broja kao ulaz, A i B. Uspoređuje ih i daje 3 "
+"Usporednik uzima 2 broja kao ulaz, A i B. Uspoređuje ih i daje 3 "
 "vrijednosti. Prvi izlaz je 1 ako je A < B, inače je 0. Drugi izlaz je 1 ako "
 "je A = B, inače je 0. Treći izlaz je 1 ako je A > B, inače je 0. "
 
@@ -6217,7 +6217,7 @@ msgid ""
 "output. The first value is 1 if A < B, the second value is 1 if A = B and "
 "the third value is 1 if A > B."
 msgstr ""
-"Komparator uzima dva broja (A i B) kao ulaz i daje 3 vrijednosti kao izlaz. "
+"Usporednik uzima dva broja (A i B) kao ulaz i daje 3 vrijednosti kao izlaz. "
 "Prva vrijednost je 1 ako je A < B, druga vrijednost je 1 ako je A = B i "
 "treća vrijednost je 1 ako je A > B."
 
@@ -24931,25 +24931,18 @@ msgid "Type the complete word as it falls, before it reaches the ground."
 msgstr "Upišite cijelu riječ dok pada, prije nego što dotakne tlo."
 
 #: core/ChangeLog.qml:30
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid ""
-#| "New command-line option to list all the activities and start on a "
-#| "specific one"
 msgctxt "ChangeLog|"
 msgid ""
 "New command-line option (--difficulty {value|min-max}) to start GCompris at "
 "specific difficulty"
 msgstr ""
-"Nova opcija naredbenog retka za popis svih aktivnosti i početak na određenoj"
+"Nova opcija naredbenog retka (--difficulty {value|min-max}) za pokretanje "
+"GComprisa na određenim razinama složenosti"
 
 #: core/ChangeLog.qml:31
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translation updated for Russian"
 msgctxt "ChangeLog|"
 msgid "Many translation updates"
-msgstr "Ažuriran prijevod za ruski"
+msgstr "Mnoga ažuriranja prijevoda"
 
 #: core/ChangeLog.qml:32 core/ChangeLog.qml:45 core/ChangeLog.qml:63
 #: core/ChangeLog.qml:78 core/ChangeLog.qml:83 core/ChangeLog.qml:89
@@ -24966,7 +24959,7 @@ msgstr "Mnogi ispravci grešaka"
 #: core/ChangeLog.qml:37
 msgctxt "ChangeLog|"
 msgid "Fix issue in comparator activity"
-msgstr ""
+msgstr "Riješi problem u aktivnosti Usporednik"
 
 #: core/ChangeLog.qml:41
 msgctxt "ChangeLog|"
@@ -25779,6 +25772,8 @@ msgid ""
 "Specify the range of activity difficulty to display for the session. Either "
 "a single value (2), or a range (3-6). Values must be between 1 and 6."
 msgstr ""
+"Odredi raspon složenosti aktivnosti za trenutnu sesiju. Unesi jednu "
+"vrijednost (2) ili raspon (3-6). Vrijednosti moraju biti između 1 i 6."
 
 #: core/main.qml:233
 msgctxt "main|"

@@ -1,13 +1,13 @@
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
 #
-# Stefan Asserhäll <stefan.asserhall@bredband.net>, 2017, 2018, 2019, 2020, 2021.
+# Stefan Asserhäll <stefan.asserhall@bredband.net>, 2017, 2018, 2019, 2020, 2021, 2022, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-12-17 02:40+0000\n"
-"PO-Revision-Date: 2021-09-25 10:33+0200\n"
+"PO-Revision-Date: 2023-02-28 20:39+0100\n"
 "Last-Translator: Stefan Asserhäll <stefan.asserhall@bredband.net>\n"
 "Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
 "Language: sv\n"
@@ -221,10 +221,9 @@ msgstr "Kategorisera sakerna i rätt grupp"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "checkers"
 #: activities/checkers/ActivityInfo.qml:18
-#, fuzzy, kde-format
-#| msgid "play chess against Tux"
+#, kde-format
 msgid "play checkers against Tux"
-msgstr "spela schack mot Tux"
+msgstr "spela dam mot Tux"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "checkers_2players"
 #: activities/checkers_2players/ActivityInfo.qml:18
@@ -313,7 +312,7 @@ msgstr "Klicka på rätt färg"
 #, kde-format
 msgid ""
 "Select the correct comparator sign for each pair of numbers in the list."
-msgstr ""
+msgstr "Välj rätt jämförelsetecken för varje par av tal i listan."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "crane"
 #: activities/crane/ActivityInfo.qml:23
@@ -451,13 +450,13 @@ msgstr "Dra en linje från bollen för att ange sparkens hastighet och riktning.
 #, kde-format
 msgid ""
 "Select the appropriate number of parts as described in the instructions."
-msgstr ""
+msgstr "Välj lämpligt antal delar enligt beskrivningen i instruktionerna."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "fractions_find"
 #: activities/fractions_find/ActivityInfo.qml:17
 #, kde-format
 msgid "Find the correct numerator and denominator of the represented fraction"
-msgstr ""
+msgstr "Bestäm den riktiga täljaren och nämnaren för det angivna bråket."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "geo-country"
 #: activities/geo-country/ActivityInfo.qml:22
@@ -676,7 +675,7 @@ msgstr ""
 #, kde-format
 msgid ""
 "Move animals to their homes using a left click or right click on your mouse."
-msgstr ""
+msgstr "Flytta hem djur genom att använda vänster- eller högerklick med musen."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "leftright"
 #: activities/leftright/ActivityInfo.qml:18
@@ -872,10 +871,9 @@ msgstr "Klicka på pengarna att betala."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "morse_code"
 #: activities/morse_code/ActivityInfo.qml:21
-#, fuzzy, kde-format
-#| msgid "Learn and practice roman to arabic numerals conversion"
+#, kde-format
 msgid "Learn and practice the International Morse code"
-msgstr "Lär dig och öva på konvertering mellan romerska och arabiska siffror"
+msgstr "Lär dig och öva på den internationella Morsekoden"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "mosaic"
 #: activities/mosaic/ActivityInfo.qml:18
@@ -1198,6 +1196,8 @@ msgid ""
 "Create pairs of numbers equal to ten. Select a number in the list, then "
 "select an empty spot of an operation to move the selected number there."
 msgstr ""
+"Skapa par av tal som är lika med tio. Välj ett tal i listan, och välj sedan "
+"ett tomt utrymme för en operation för att flytta det valda talet dit."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "tens_complement_swap"
 #: activities/tens_complement_swap/ActivityInfo.qml:17
@@ -1206,6 +1206,8 @@ msgid ""
 "Create pairs of numbers equal to ten. Select a number, then select another "
 "number of the same operation to swap their position."
 msgstr ""
+"Skapa par av tal som är lika med tio. Välj ett tal, och välj sedan ett annat "
+"tal i samma operation för att byta plats på dem."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "tens_complement_use"
 #: activities/tens_complement_use/ActivityInfo.qml:17
@@ -1215,6 +1217,9 @@ msgid ""
 "number in the list, then select an empty spot of an operation to move the "
 "selected number there."
 msgstr ""
+"Dela upp operationerna för att inkludera ett par av tal som är lika med tio. "
+"Välj ett tal i listan, och välj sedan ett tomt utrymme för en operation för "
+"att flytta det valda talet dit."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "tic_tac_toe_2players"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "tic_tac_toe"
