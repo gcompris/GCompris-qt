@@ -4,15 +4,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2023-03-16 22:39+0100\n"
-"Last-Translator: Jan Papez (honyczek) <honyczek@centrum.cz>\n"
-"Language-Team: Czech <kde-i18n-cs@kde.org>\n"
+"PO-Revision-Date: 2023-03-20 14:20+0100\n"
+"Last-Translator: Vit Pelcak <vit@pelcak.org>\n"
+"Language-Team: Czech <kde-i18n-doc@kde.org>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Lokalize 21.12.3\n"
+"X-Generator: Lokalize 22.12.3\n"
 "X-Qt-Contexts: true\n"
 
 #. Activity title
@@ -4472,7 +4472,7 @@ msgstr "1791 Comte de Sivracův Célérifére"
 #: activities/chronos/resource/board/board5_2.qml:46
 msgctxt "board5_2|"
 msgid "1769 Cugnot's fardier"
-msgstr "1769 Cugnotův fardier"
+msgstr "1769 Cugnot's fardier"
 
 #: activities/chronos/resource/board/board5_2.qml:54
 msgctxt "board5_2|"
@@ -5240,7 +5240,7 @@ msgstr "3 desetinná místa mezi 0 a 999,999."
 #: activities/comparator/resource/2/Data.qml:14
 msgctxt "Data|"
 msgid "Numbers from 1 to 19."
-msgstr "Čísla od 1 do 19."
+msgstr "Číslice od 1 do 9."
 
 #: activities/comparator/resource/3/Data.qml:14
 msgctxt "Data|"
@@ -6614,7 +6614,7 @@ msgstr "Toto zvíře má jednoprstá kopyta."
 #: activities/explore_farm_animals/resource/board/board1.qml:33
 msgctxt "board1|"
 msgid "Chicken"
-msgstr "Slepice"
+msgstr "Kuře"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:34
 msgctxt "board1|"
@@ -7542,7 +7542,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board5.qml:76
 msgctxt "board5|"
 msgid "Lincoln Memorial"
-msgstr "Lincolnův památník"
+msgstr "Lincolnův memoriál"
 
 #: activities/explore_monuments/resource/board/board5.qml:74
 msgctxt "board5|"
@@ -7724,7 +7724,7 @@ msgstr "Klikni na umístění dané památky."
 #: activities/explore_world_animals/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Explore world animals"
-msgstr "Objevuj zvířata ve světě"
+msgstr "Objevuj zvířata ve světe"
 
 #. Help title
 #: activities/explore_world_animals/ActivityInfo.qml:21
@@ -7742,7 +7742,7 @@ msgid ""
 "Learn about various wild animals from around the world and remember where "
 "they live."
 msgstr ""
-"Seznam se s různými divokými zvířaty z celého světa a zapamatuj si, kde žijí."
+"Seznam se s různými divokými zvířaty z celého světa a zapamatuj si, kdežijí."
 
 #. Help manual
 #: activities/explore_world_animals/ActivityInfo.qml:28
@@ -13118,7 +13118,7 @@ msgstr ""
 #: activities/gnumch-primes/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Take care to avoid the Troggles."
-msgstr ""
+msgstr "Dej si pozor a vyhni se Trogglům."
 
 #: activities/gnumch-equality/ActivityInfo.qml:31
 #: activities/gnumch-factors/ActivityInfo.qml:31
@@ -13132,22 +13132,22 @@ msgstr "Mezerník: spolknout čísla"
 #: activities/gnumch-equality/resource/1/Data.qml:13
 msgctxt "Data|"
 msgid "Practice addition equality."
-msgstr ""
+msgstr "Procvičuj rovnost při sčítání."
 
 #: activities/gnumch-equality/resource/2/Data.qml:13
 msgctxt "Data|"
 msgid "Practice subtraction equality."
-msgstr ""
+msgstr "Procvičuj rovnost při odčítání."
 
 #: activities/gnumch-equality/resource/3/Data.qml:13
 msgctxt "Data|"
 msgid "Practice multiplication equality."
-msgstr ""
+msgstr "Procvičuj rovnost při násobení."
 
 #: activities/gnumch-equality/resource/4/Data.qml:13
 msgctxt "Data|"
 msgid "Practice division equality."
-msgstr ""
+msgstr "Procvičuj rovnost při dělení."
 
 #: activities/gnumch-equality/TopPanel.qml:52
 #, qt-format
@@ -13165,29 +13165,29 @@ msgstr "Není rovno %1"
 #, qt-format
 msgctxt "TopPanel|"
 msgid "Factor of %1"
-msgstr ""
+msgstr "Dělitel %1"
 
 #: activities/gnumch-equality/TopPanel.qml:58
 #, qt-format
 msgctxt "TopPanel|"
 msgid "Multiple of %1"
-msgstr ""
+msgstr "Násobek %1"
 
 #: activities/gnumch-equality/TopPanel.qml:60
 #, qt-format
 msgctxt "TopPanel|"
 msgid "Primes less than %1"
-msgstr ""
+msgstr "Prvočísla menší než %1"
 
 #: activities/gnumch-equality/Warning.qml:39
 msgctxt "Warning|"
 msgid "You were eaten by a Troggle."
-msgstr ""
+msgstr "Troggle tě sežral."
 
 #: activities/gnumch-equality/Warning.qml:43
 msgctxt "Warning|"
 msgid "You ate a wrong number."
-msgstr ""
+msgstr "Sežral jsi nesprávné číslo."
 
 #: activities/gnumch-equality/Warning.qml:58
 msgctxt "Warning|"
@@ -13209,19 +13209,19 @@ msgstr "a"
 #, qt-format
 msgctxt "Warning|"
 msgid "Multiples of %1 include %2, "
-msgstr ""
+msgstr "Násobky %1 zahrnují %2, "
 
 #: activities/gnumch-equality/Warning.qml:83
 #, qt-format
 msgctxt "Warning|"
 msgid "but %1 is not a multiple of %2."
-msgstr ""
+msgstr "ale %1 není násobkem %2."
 
 #: activities/gnumch-equality/Warning.qml:100
 #, qt-format
 msgctxt "Warning|"
 msgid "and %1 are the divisors of %2."
-msgstr ""
+msgstr "a %1 jsou děliteli %2."
 
 #: activities/gnumch-equality/Warning.qml:129
 msgctxt "Warning|"
@@ -13231,13 +13231,13 @@ msgstr "Stiskni \"Enter\" nebo na mne klikni pro pokračování."
 #: activities/gnumch-equality/WarnMonster.qml:41
 msgctxt "WarnMonster|"
 msgid "Be careful, a troggle!"
-msgstr ""
+msgstr "Dej pozor, je tu Troggle!"
 
 #. Activity title
 #: activities/gnumch-factors/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Gnumch factors"
-msgstr "Gnumčovy zlomky"
+msgstr "Gnumčovi dělitelé"
 
 #. Help title
 #: activities/gnumch-factors/ActivityInfo.qml:17
@@ -13266,6 +13266,13 @@ msgid ""
 "families. So 1, 2, 3 and 6 all fit into the 6 family, but 4 belongs to "
 "another family."
 msgstr ""
+"Dělitelé čísla jsou všechna čísla, která mohou dané číslo rozdělit beze "
+"zbytku. Například dělitelé čísla 6 jsou 1, 2, 3 a 6. Číslo 4 není dělitelem "
+"6, protože 6 nemůže být rozděleno na 4 stejné části. Pokud jedno číslo je "
+"násobkem druhého čísla, pak druhé číslo je dělitelem prvního čísla. Můžeš si "
+"to představit tak, že násobky jsou rodiny, zatímco dělitelé jsou lidé v "
+"těchto rodinách. Takže 1, 2, 3 a 6 všichni patří do rodiny čísla 6, zatímco "
+"číslo 4 patří do rodiny jiné."
 
 #. Activity title
 #: activities/gnumch-inequality/ActivityInfo.qml:16
@@ -13313,7 +13320,7 @@ msgstr "Procvičuj nerovnost dělení."
 #: activities/gnumch-multiples/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Gnumch multiples"
-msgstr "Gnumčovo násobení"
+msgstr "Gnumčovy násobky"
 
 #. Help title
 #: activities/gnumch-multiples/ActivityInfo.qml:17
@@ -13340,6 +13347,17 @@ msgid ""
 "over. So 8 isn't a multiple of 5, nor is 23. Only 5, 10, 15, 20, 25 ... are "
 "multiples (or families or steps) of 5."
 msgstr ""
+"Násobky čísla jsou všechna čísla, která se rovnají původnímu číslu "
+"vynásobenému jiným číslem. Například 24, 36, 48 a 60 jsou násobky 12. Číslo "
+"25 není násobkem 12, protože neexistuje takové číslo, kterým bychom mohli "
+"vynásobit číslo 12, abychom získali číslo 25. Pokud nějaké číslo je "
+"dělitelem druhého čísla, pak to druhé číslo je násobkem čísla prvního. Můžeš "
+"si to představit tak, že násobky jsou rodiny, zatímco dělitelé jsou lidé, "
+"kteří patří do těchto rodin. Dělitel 5 má rodiče 10, prarodiče 15, "
+"praprarodiče 20, prapraprarodiče 25 a každý další krok o 5 je další pra- v "
+"řadě! Ale číslo 5 nepatří do rodin 8 nebo 23. To proto, že 8 není násobkem "
+"5, což platí i pro 23. Jenom 5, 10, 15, 20, 25, ... jsou násobky (nebo "
+"rodiny či kroky) čísla 5."
 
 #. Activity title
 #: activities/gnumch-primes/ActivityInfo.qml:15
@@ -13351,7 +13369,7 @@ msgstr "Gnumčova prvočísla"
 #: activities/gnumch-primes/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Guide the Number Muncher to all the prime numbers."
-msgstr "Doveď čísložrouta ke všem prvočíslům."
+msgstr "Proveď Munchera ke všem prvočíslům."
 
 #. Help goal
 #: activities/gnumch-primes/ActivityInfo.qml:20
@@ -13481,6 +13499,10 @@ msgid ""
 "dependent upon the mass of both objects and inversely proportional to the "
 "square of the distance between their centers."
 msgstr ""
+"Gravitace je vesmírná a Newtonův zákon o vesmírné gravitaci rozšiřuje "
+"gravitaci do okolí země. Tato síla gravitační přitažlivosti je přímo závislá "
+"na hmotnosti obou předmětů a opačné úměře druhé mocniny vzdálenosti mezi "
+"jejich středy."
 
 #: activities/gravity/Gravity.qml:214
 msgctxt "Gravity|"
@@ -13489,6 +13511,8 @@ msgid ""
 "interacting objects, more massive objects will attract each other with a "
 "greater gravitational force."
 msgstr ""
+"Protože gravitační síla je přímo úměrná hmotnosti obou ovlivňujících se "
+"předmětů, těžší předmět bude ten druhý přitahovat větší gravitační silou."
 
 #: activities/gravity/Gravity.qml:217
 msgctxt "Gravity|"
@@ -13497,6 +13521,9 @@ msgid ""
 "between the two interacting objects, more distance will result in weaker "
 "gravitational force."
 msgstr ""
+"Ale tato síla je opačně úměrná druhé mocnině vzdálenosti mezi dvěma "
+"ovlivňujícími se předměty, takže větší vzdálenost povede ke slabší "
+"gravitační síle."
 
 #: activities/gravity/Gravity.qml:220
 msgctxt "Gravity|"
@@ -13505,6 +13532,9 @@ msgid ""
 "reach the space station. The arrow indicates the direction and the intensity "
 "of the gravity on your ship."
 msgstr ""
+"Tvým úkolem je pohybovat vesmírnou lodí a vyhnout se nárazu do planet, dokud "
+"se nedostaneš k vesmírné stanici. Šipka představuje směr a intenzitu "
+"gravitace působící na tvou loď."
 
 #: activities/gravity/Gravity.qml:223
 msgctxt "Gravity|"
@@ -13512,11 +13542,13 @@ msgid ""
 "Try to stay near the center of the screen, and anticipate by looking at the "
 "size and direction of the arrow."
 msgstr ""
+"Zkus se držet blízko středu obrazovky a předvídat planety podle velikosti a "
+"směru šipky."
 
 #: activities/guesscount/ActivityConfig.qml:26
 msgctxt "ActivityConfig|"
 msgid "Admin"
-msgstr "Administrátor"
+msgstr "Správce"
 
 #: activities/guesscount/ActivityConfig.qml:27
 msgctxt "ActivityConfig|"
@@ -14400,6 +14432,8 @@ msgstr ""
 msgctxt "ActivityInfo|"
 msgid "The landing platform is green if your speed is fine for a safe landing."
 msgstr ""
+"Přistávací plocha je zelená v případě, když je tvoje rychlost dobrá pro "
+"bezpečné přistání."
 
 #: activities/land_safe/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
@@ -14414,7 +14448,7 @@ msgstr ""
 #: activities/land_safe/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
 msgid "Up and Down arrows: control the thrust of the rear engine"
-msgstr ""
+msgstr "Šipky nahoru a dolů: ovládání tahu zadního motoru"
 
 #: activities/land_safe/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
@@ -14422,6 +14456,8 @@ msgid ""
 "Left and Right arrows: at first levels, move to the sides; at higher levels, "
 "rotate the spaceship"
 msgstr ""
+"Šipky vpravo a vlevo: v prvních úrovních - přesun ke straně; ve vyšších "
+"úrovních - otočení vesmírné lodi"
 
 #: activities/land_safe/LandSafe.qml:580
 #, qt-format
@@ -15047,7 +15083,7 @@ msgstr "Povolit hlasy"
 #: activities/learn_digits/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Count and color the circles"
-msgstr ""
+msgstr "Spočítej a vybarvi kruhy"
 
 #. Help title
 #: activities/learn_digits/ActivityInfo.qml:17
@@ -15228,12 +15264,12 @@ msgstr "Odčítání s 1, 2, 3, 4 a 5."
 #: activities/learn_subtractions/resource/4/Data.qml:14
 msgctxt "Data|"
 msgid "Subtractions with 1, 2, 3, 4, 5, 6 and 7."
-msgstr ""
+msgstr "Odčítání s 1, 2, 3, 4, 5, 6 a 7."
 
 #: activities/learn_subtractions/resource/5/Data.qml:14
 msgctxt "Data|"
 msgid "Subtractions with 1, 2, 3, 4, 5, 6, 7, 8 and 9."
-msgstr ""
+msgstr "Odčítání s 1, 2, 3, 4, 5, 6, 7, 8 a 9."
 
 #. Activity title
 #: activities/left_right_click/ActivityInfo.qml:14
@@ -15247,6 +15283,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Move animals to their homes using a left click or right click on your mouse."
 msgstr ""
+"Přesuň zvířátka do jejich domečků pomocí levého nebo pravého kliknutí myši."
 
 #. Help goal
 #: activities/left_right_click/ActivityInfo.qml:19
@@ -17673,21 +17710,25 @@ msgid ""
 "two fingers on the center. On a touch area, drag two fingers away from the "
 "sparkle, one in each direction."
 msgstr ""
+"Najdi třpyt a přibliž si místo kolem něj. Pokud máš myš, ukaž kurzorem na "
+"třpyt a poté použij otočné kolečko. Pokud máš trackpad, ukaž kurzorem na "
+"třpyt a poté táhni jeden prst na pravé straně nebo dva prsty na středu. Na "
+"dotykovém zařízení roztáhni dva prsty ve směru od třpytu ven."
 
 #: activities/mining/Mining.qml:418
 msgctxt "Mining|"
 msgid "Perfect you are zooming. Continue until you see the nugget."
-msgstr ""
+msgstr "Jsi skvělý v přibližování. Pokračuj, dokud neuvidíš valoun zlata."
 
 #: activities/mining/Mining.qml:424
 msgctxt "Mining|"
 msgid "Hum, take care, you are zooming too far from the sparkle."
-msgstr ""
+msgstr "Jejda, pozor, přibližuješ obraz moc daleko od třpytu."
 
 #: activities/mining/Mining.qml:430
 msgctxt "Mining|"
 msgid "Now you see the nugget, click on it to catch it."
-msgstr ""
+msgstr "Teď už vidíš valoun zlata, klikni na něj, abys jej sebral."
 
 #: activities/mining/Mining.qml:436
 msgctxt "Mining|"
@@ -17695,21 +17736,23 @@ msgid ""
 "Hum, you are too far from the nugget to see it. Unzoom then zoom again as "
 "close as you can from the sparkle."
 msgstr ""
+"No, tak teď jsi už moc daleko, abys uviděl valounek zlata. Zruš přiblížení a "
+"zkus se přiblížit znovu o něco blíže ke třpytu."
 
 #: activities/mining/Mining.qml:442
 msgctxt "Mining|"
 msgid "Now unzoom and try to find another sparkle."
-msgstr ""
+msgstr "Teď si oddal přiblížení a zkus najít nový třpyt."
 
 #: activities/mining/Mining.qml:448
 msgctxt "Mining|"
 msgid "Continue to unzoom until you see the sparkle."
-msgstr ""
+msgstr "Pokračuj v oddalování, dokud neuvidíš třpyt."
 
 #: activities/mining/Mining.qml:454
 msgctxt "Mining|"
 msgid "Now you see the sparkle, go ahead, you can zoom on it."
-msgstr ""
+msgstr "Teď můžeš vidět třpyt, můžeš pokračovat přibližováním na něm."
 
 #. Activity title
 #: activities/missing-letter/ActivityInfo.qml:16
@@ -24147,7 +24190,7 @@ msgstr ""
 #: core/ChangeLog.qml:31
 msgctxt "ChangeLog|"
 msgid "Many translation updates"
-msgstr ""
+msgstr "Spousta aktualizací překladů"
 
 #: core/ChangeLog.qml:32 core/ChangeLog.qml:45 core/ChangeLog.qml:63
 #: core/ChangeLog.qml:78 core/ChangeLog.qml:83 core/ChangeLog.qml:89

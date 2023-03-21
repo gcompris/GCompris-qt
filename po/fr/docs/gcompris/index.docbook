@@ -556,6 +556,12 @@ for example 'xx.yy.zz'
 </row>
 <row>
 <entry
+>--difficulty {value|min-max}</entry>
+<entry
+>Pour la session, force la difficulté des activités d'être soit à la valeur value, soit entre les valeurs min et max. Les valeurs doivent être en 1 et 6 et lorsque le format est min-max, la valeur min doit être inférieure à la valeur max. Si ce n'est pas le cas, GCompris ne démarrera pas.</entry>
+</row>
+<row>
+<entry
 >--export-activities-as-sql</entry>
 <entry
 >Exporte les activités au format SQL.</entry>
@@ -596,7 +602,7 @@ for example 'xx.yy.zz'
 <para
 ><userinput
 ><command
->"C:\Program Files\GCompris-Qt\GCompris.exe" --enable-kioskmode -f -C</command
+>"C:\Program Files\GCompris-Qt\bin\GCompris.exe" --enable-kioskmode -f -C</command
 ></userinput
 ></para>
 </sect2>
