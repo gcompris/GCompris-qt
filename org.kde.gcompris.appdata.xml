@@ -277,7 +277,7 @@
       <li xml:lang="br">Jediñ : deskiñ an taolennoù-jediñ, niveriñ eeun, simetriezh ar skeudenn, kempouezañ ar bouezerez, distreiñ ar moneiz, ...</li>
       <li xml:lang="ca">aritmètica: memoritzar la taula, enumeració, imatge al mirall, equilibrar la balança, donar el canvi...</li>
       <li xml:lang="ca-valencia">aritmètica: memoritzar la taula, enumeració, imatge a l'espill, equilibrar la balança, donar el canvi...</li>
-      <li xml:lang="cs">aritmetika: tabulková paměť, výčet, zrcadlový obraz, vyvážení váhy, dávání drobných, ...</li>
+      <li xml:lang="cs">aritmetika: tabulková paměť, výčet, zrcadlový obraz, vyvážení měřítka, dávání drobných, ...</li>
       <li xml:lang="de">Arithmetik: Kombitabellen, Aufzählungen, Bilder spiegeln, Gewichte ausgleichen, Wechselgeld geben...</li>
       <li xml:lang="el">αριθμητική: παιχνίδια memory, απαρίθμηση, κάτοπτρο, ισορροπώ τη ζυγαριά, δίνω ρέστα, ...</li>
       <li xml:lang="en-GB">arithmetic: table memory, enumeration, mirror image, balance the scale, change giving, ...</li>
@@ -320,7 +320,7 @@
       <li xml:lang="br">Skiantoù : mont en-dro ur skluj, meskañ al livioù, meizad an nerzh-dedennañ, ...</li>
       <li xml:lang="ca">ciència: blocar el canal, mescla de colors, el concepte de la gravetat...</li>
       <li xml:lang="ca-valencia">ciència: blocar el canal, mescla de colors, el concepte de la gravetat...</li>
-      <li xml:lang="cs">věda: zdymadlo, míchání barev, gravitace, ...</li>
+      <li xml:lang="cs">věda: zámek kanálu, míchání barev, gravitace, ...</li>
       <li xml:lang="de">Wissenschaft: Kanalschleuse, Farbmischung, Gravitation,...</li>
       <li xml:lang="el">επιστήμη: σύστημα αλλαγής στάθμης ροής, ανάμειξη χρωμάτων, η έννοια της βαρύτητας, ...</li>
       <li xml:lang="en-GB">science: the canal lock, colour mixing, gravity concept, ...</li>
@@ -497,7 +497,7 @@
     <p xml:lang="br">Evit ar poent e kinnig GCompris muioc'h eget 100 oberezh ha reoù all a zo war ar stern. Ur meziant digor eo GCompris, ar pezh a sinifi e c'heller azasaat anezhañ diouzh ezhommoù-mañ-ezhommoù, gwellaat anezhañ ha, pouezusosc'h c'hoazh, lakaat bugale d'ober gantañ ne vern pelec'h.</p>
     <p xml:lang="ca">Actualment el GCompris ofereix més de 100 activitats i encara se'n desenvolupen més. El GCompris és programari lliure, el qual vol dir que podeu adaptar-lo a les vostres pròpies necessitats, millorar-lo i, el més important, compartir-lo amb infants de tot arreu.</p>
     <p xml:lang="ca-valencia">Actualment GCompris oferix més de 100 activitats i encara se'n desenvolupen més. GCompris és programari lliure, el qual vol dir que podeu adaptar-lo a les vostres pròpies necessitats, millorar-lo i, el més important, compartir-lo amb infants de tot arreu.</p>
-    <p xml:lang="cs">V současné době GCompris nabízí více než 100 aktivit a další se připravují. GCompris je svobodný software, což znamená, že jej můžeš přizpůsobit svým vlastním potřebám, zlepšovat jej a co je nejdůležitější, je sdílet s dětmi po celém světě.</p>
+    <p xml:lang="cs">V současné době GCompris nabízí více než 100 aktivit a další se připravují. GCompris je svobodný software, což znamená, že můžeš přizpůsobit svým vlastním potřebám, zlepšit a co je nejdůležitější, je sdílet s dětmi po celém světě.</p>
     <p xml:lang="de">Insgesamt beinhaltet GCompris mehr als 100 Aktivitäten und wird ständig weiterentwickelt. GCompris ist freie Software. Sie haben also die Möglichkeit, sie ihren Bedürfnissen anzupassen und zu verbessern, und gerne auch alle Kinder der Welt von Ihrer Arbeit profitieren zu lassen.</p>
     <p xml:lang="el">Προς το παρόν το GCompris προσφέρει περισσότερες από 100 δραστηριότητες και αναπτύσσονται και άλλες. Το GCompris είναι ελεύθερο λογισμικό, το οποίο σημαίνει ότι μπορείτε να το προσαρμόσετε στις ανάγκες σας, να το βελτιώσετε, και, το σπουδαιότερο, να το μοιραστείτε με παιδιά από όλον τον κόσμο.</p>
     <p xml:lang="en-GB">Currently GCompris offers in excess of 100 activities and more are being developed. GCompris is free software, that means that you can adapt it to your own needs, improve it and, most importantly, share it with children everywhere.</p>
