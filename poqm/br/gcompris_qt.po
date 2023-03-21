@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GCompris 5\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2023-01-21 15:49+0100\n"
+"PO-Revision-Date: 2023-03-20 13:41+0100\n"
 "Last-Translator: Envel Kervoas <envelkervoas@free.fr>\n"
 "Language-Team: Breton <kde-i18n-doc@kde.org>\n"
 "Language: br\n"
@@ -25074,26 +25074,18 @@ msgstr ""
 "gantañ."
 
 #: core/ChangeLog.qml:30
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid ""
-#| "New command-line option to list all the activities and start on a "
-#| "specific one"
 msgctxt "ChangeLog|"
 msgid ""
 "New command-line option (--difficulty {value|min-max}) to start GCompris at "
 "specific difficulty"
 msgstr ""
-"Urzh-dibab nevez evit renabliñ an holl obererezhioù ha kregiñ gant unan "
-"resis."
+"Urzh-linenn nevez-ouzhpennet  (--diaester {talvoud|izelañ-uhelañ}) evit "
+"kregiñ GCompris gant ul live diaester resis."
 
 #: core/ChangeLog.qml:31
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translation updated for Russian"
 msgctxt "ChangeLog|"
 msgid "Many translation updates"
-msgstr "Hizivaet eo bet an droidigezh evit ar rusianeg"
+msgstr "Hizivaet eo bet an droidigezh evit meur a yezh."
 
 #: core/ChangeLog.qml:32 core/ChangeLog.qml:45 core/ChangeLog.qml:63
 #: core/ChangeLog.qml:78 core/ChangeLog.qml:83 core/ChangeLog.qml:89
@@ -25937,6 +25929,8 @@ msgid ""
 "Specify the range of activity difficulty to display for the session. Either "
 "a single value (2), or a range (3-6). Values must be between 1 and 6."
 msgstr ""
+"Dibab an hed embannet evit diaester un obererezh e-doug un abadenn. Pe un "
+"talvoud hepken (2), pe un hed (3-6). Ret eo d'an talvoudoù bezañ etre 1 ha 6."
 
 #: core/main.qml:233
 msgctxt "main|"

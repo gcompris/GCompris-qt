@@ -25516,38 +25516,30 @@ msgstr ""
 "ne touchent le sol."
 
 #: core/ChangeLog.qml:30
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid ""
-#| "New command-line option to list all the activities and start on a "
-#| "specific one"
 msgctxt "ChangeLog|"
 msgid ""
 "New command-line option (--difficulty {value|min-max}) to start GCompris at "
 "specific difficulty"
 msgstr ""
-"Une nouvelle option en ligne de commande pour lister toutes les activités et "
-"démarrer sur une activité en particulier ont été ajoutées"
+"Une nouvelle option en ligne de commande (--difficulty {value|min-max}) pour "
+"démarrer GCompris à la difficulté entrée"
 
 #: core/ChangeLog.qml:31
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translation updated for Russian"
 msgctxt "ChangeLog|"
 msgid "Many translation updates"
-msgstr "Traduction mise à jour pour le russe."
+msgstr "Beaucoup de traductions mises à jour"
 
 #: core/ChangeLog.qml:32 core/ChangeLog.qml:45 core/ChangeLog.qml:63
 #: core/ChangeLog.qml:78 core/ChangeLog.qml:83 core/ChangeLog.qml:89
 msgctxt "ChangeLog|"
 msgid "Many new images"
-msgstr "Beaucoup de nouvelles images."
+msgstr "Beaucoup de nouvelles images"
 
 #: core/ChangeLog.qml:33 core/ChangeLog.qml:46 core/ChangeLog.qml:84
 #: core/ChangeLog.qml:90
 msgctxt "ChangeLog|"
 msgid "Many bug fixes"
-msgstr "Plein de corrections."
+msgstr "Plein de corrections"
 
 #: core/ChangeLog.qml:37
 msgctxt "ChangeLog|"
@@ -26397,6 +26389,9 @@ msgid ""
 "Specify the range of activity difficulty to display for the session. Either "
 "a single value (2), or a range (3-6). Values must be between 1 and 6."
 msgstr ""
+"Choisit l'intervalle des difficultés des activités à afficher pour la "
+"session. Soit une simple valeur (2), soit un intervalle (3-6). Les valeurs "
+"doivent être entre 1 et 6."
 
 #: core/main.qml:233
 msgctxt "main|"
