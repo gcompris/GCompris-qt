@@ -650,7 +650,7 @@
       <caption xml:lang="sk">Aktivita "Učenie hodín"</caption>
       <caption xml:lang="sl">Dejavnost "Učimo se poznati na uro"</caption>
       <caption xml:lang="sq">Veprimtaria “Mësoni Sahatin”</caption>
-      <caption xml:lang="sv">Aktiviteten "Lär dig klockan"</caption>
+      <caption xml:lang="sv">Aktiviteten "Lära sig klockan"</caption>
       <caption xml:lang="tr">"Saatleri öğrenme" etkinliği</caption>
       <caption xml:lang="uk">Вправа «Вивчення годинника»</caption>
       <caption xml:lang="x-test">xx"Learning Clock" activityxx</caption>
@@ -965,7 +965,7 @@
       <caption xml:lang="sk">Aktivita "Vyvážiť správne váhy"</caption>
       <caption xml:lang="sl">Dejavnost "Pravilno uravnoteži tehtnice"</caption>
       <caption xml:lang="sq">Veprimtaria “Baraspeshoni peshoret si duhet”</caption>
-      <caption xml:lang="sv">Aktiviteten "Balansera vågen"</caption>
+      <caption xml:lang="sv">Aktiviteten "Balansera vågen rätt"</caption>
       <caption xml:lang="tr">"Teraziyi doğru şekilde dengele" etkinliği</caption>
       <caption xml:lang="uk">Вправа «Рівновага на вагах»</caption>
       <caption xml:lang="x-test">xx"Balance the scales properly" activityxx</caption>
@@ -1010,7 +1010,7 @@
       <caption xml:lang="sk">Aktivita "Koniec šachovej hry"</caption>
       <caption xml:lang="sl">Dejavnost "Šahovska končnica"</caption>
       <caption xml:lang="sq">Veprimtari “Lojë fundi shahu”</caption>
-      <caption xml:lang="sv">Aktiviteten "Slutet på schackspelet"</caption>
+      <caption xml:lang="sv">Aktiviteten "Slutspel i schack"</caption>
       <caption xml:lang="tr">"Satranç oyunu sona erdi" etkinliği</caption>
       <caption xml:lang="uk">Вправа «Завершення гри у шахи»</caption>
       <caption xml:lang="x-test">xx"End of chess game" activityxx</caption>
@@ -1055,7 +1055,7 @@
       <caption xml:lang="sk">Aktivita "Posuvné puzzle"</caption>
       <caption xml:lang="sl">Dejavnost "Sestavljanke drsečih blokov"</caption>
       <caption xml:lang="sq">Veprimtari “Lojë puzzle me blloqe të lëvizshëm”</caption>
-      <caption xml:lang="sv">Aktiviteten "Ett pusselspel med glidande block"</caption>
+      <caption xml:lang="sv">Aktiviteten "Pusselspel med glidande block"</caption>
       <caption xml:lang="tr">"Kayan blok yap boz oyunu" etkinliği</caption>
       <caption xml:lang="uk">Вправа «Головоломка з пересувними блоками»</caption>
       <caption xml:lang="x-test">xx"A sliding-block puzzle game" activityxx</caption>
