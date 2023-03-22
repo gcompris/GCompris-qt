@@ -27,9 +27,17 @@
 <author>
 <personname
 ><firstname
->Johnny Jazeix</firstname
+>Johnny</firstname
 > <surname
-></surname
+>Jazeix</surname
+> </personname>
+</author>
+<author>
+<personname
+><firstname
+>Timothée</firstname
+> <surname
+>Giet</surname
 > </personname>
 </author>
 
@@ -575,6 +583,12 @@ for example 'xx.yy.zz'
 >--launch atividade</entry>
 <entry
 >Especifique a atividade quando iniciar o GCompris.</entry>
+</row>
+<row>
+<entry
+>--difficulty {valor|mín-máx}</entry>
+<entry
+>Para a sessão, força a dificuldade das atividades do GCompris para estar no valor ou entre os valores mínimo e máximo. Os valores devem estar entre 1 e 6, e se o formato for mín-máx, o valor mínimo deve ser menor que o valor máximo. Se não for o caso, o GCompris não será iniciado.</entry>
 </row>
 <row>
 <entry
