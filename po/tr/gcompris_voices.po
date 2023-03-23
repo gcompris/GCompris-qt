@@ -304,7 +304,7 @@ msgstr "Doğru renge tıkla"
 #, kde-format
 msgid ""
 "Select the correct comparator sign for each pair of numbers in the list."
-msgstr "Listedeki her sayı çifti için doğru karşılaştırıcı işaretini seç."
+msgstr "Listedeki her bir sayı çifti için doğru karşılaştırıcı işaretini seç."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "crane"
 #: activities/crane/ActivityInfo.qml:23
@@ -313,8 +313,8 @@ msgid ""
 " Click on each item in turn, in the blue frame, and move them to reproduce "
 "the pattern from the pink frame."
 msgstr ""
-"Sırayla mavi çerçevedeki her ögeye tıkla ve pembe çerçevedeki deseni yeniden "
-"oluşturmak için onları hareket ettir."
+"Sırayla mavi çerçevedeki her bir ögeye tıkla ve pembe çerçevedeki deseni "
+"yeniden oluşturmak için onları hareket ettir."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "details"
 #: activities/details/ActivityInfo.qml:21
@@ -1172,8 +1172,8 @@ msgid ""
 "Click on each object to obtain the same figure. You can change their "
 "orientation by clicking on the arrows."
 msgstr ""
-"Aynı şekli elde etmek için her nesneye tıkla. Yönlerini, oklara tıklayarak "
-"değiştirebilirsin."
+"Aynı şekli elde etmek için her bir nesneye tıkla. Yönlerini, oklara "
+"tıklayarak değiştirebilirsin."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "target"
 #: activities/target/ActivityInfo.qml:18

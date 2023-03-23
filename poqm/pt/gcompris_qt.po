@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: kstars\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2015-05-27 08:46+0000\n"
-"PO-Revision-Date: 2023-01-22 22:35+0000\n"
+"PO-Revision-Date: 2023-03-20 13:58+0000\n"
 "Last-Translator: Pedro Morais <morais@kde.org>\n"
 "Language-Team: pt <kde-i18n-pt@kde.org>\n"
 "Language: pt\n"
@@ -25957,26 +25957,18 @@ msgstr ""
 "Escreva a palavra completa, à medida que vai caindo, antes de chegar ao chão."
 
 #: core/ChangeLog.qml:30
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid ""
-#| "New command-line option to list all the activities and start on a "
-#| "specific one"
 msgctxt "ChangeLog|"
 msgid ""
 "New command-line option (--difficulty {value|min-max}) to start GCompris at "
 "specific difficulty"
 msgstr ""
-"Nova opção da linha de comandos para apresentar todas as actividades e "
-"iniciar uma específica"
+"Nova opção da linha de comandos (-difficulty {valor|mín-máx}) para iniciar o "
+"GCompris com um dado nível de dificuldade"
 
 #: core/ChangeLog.qml:31
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translation updated for Russian"
 msgctxt "ChangeLog|"
 msgid "Many translation updates"
-msgstr "Adição de traduções para Russo"
+msgstr "Muitas actualizações de traduções"
 
 #: core/ChangeLog.qml:32 core/ChangeLog.qml:45 core/ChangeLog.qml:63
 #: core/ChangeLog.qml:78 core/ChangeLog.qml:83 core/ChangeLog.qml:89
@@ -26824,6 +26816,9 @@ msgid ""
 "Specify the range of activity difficulty to display for the session. Either "
 "a single value (2), or a range (3-6). Values must be between 1 and 6."
 msgstr ""
+"Define o intervalo de dificuldades da actividade a apresentar na sessão. "
+"Tanto pode ser um único valor (2) ou um intervalo (3-6). Os valores deverão "
+"ser entre 1 e 6."
 
 #: core/main.qml:233
 msgctxt "main|"
