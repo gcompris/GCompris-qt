@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE features_set SYSTEM "feat_set.dtd">
+<features_set version="1.0">
+	<feature name="One" value="Standard (with base)">
+		<value name="Standard (with base)"/>
+		<value name="No base serif"/>
+	</feature>
+	<feature name="Four" value="Standard (closed top)">
+		<value name="Standard (closed top)"/>
+		<value name="Open top"/>
+	</feature>
+	<feature name="Six and Nine" value="Standard (curved stems)">
+		<value name="Standard (curved stems)"/>
+		<value name="Diagonal stems"/>
+	</feature>
+	<feature name="Seven" value="Standard (no bar)">
+		<value name="Standard (no bar)"/>
+		<value name="Barred"/>
+	</feature>
+	<feature name="Zero" value="Standard (no slash)">
+		<value name="Standard (no slash)"/>
+		<value name="Slashed"/>
+	</feature>
+	<feature name="Capital B hook" value="Standard (double bowl)">
+		<value name="Standard (double bowl)"/>
+		<value name="Single bowl"/>
+	</feature>
+	<feature name="Capital D hook" value="Standard (full bowl)">
+		<value name="Standard (full bowl)"/>
+		<value name="Half bowl"/>
+	</feature>
+	<feature name="Lowercase ezh curl" value="Standard (small bowl)">
+		<value name="Standard (small bowl)"/>
+		<value name="Large bowl"/>
+	</feature>
+	<feature name="Capital Ezh" value="Standard">
+		<value name="Standard"/>
+		<value name="Reversed sigma"/>
+	</feature>
+	<feature name="Lowercase rams horn" value="Standard (small bowl)">
+		<value name="Standard (small bowl)"/>
+		<value name="Large bowl"/>
+		<value name="Small gamma"/>
+	</feature>
+	<feature name="Capital H stroke" value="Standard (horiz stroke)">
+		<value name="Standard (horiz stroke)"/>
+		<value name="Vertical stroke"/>
+	</feature>
+	<feature name="Lowercase i" value="Standard (no tail)">
+		<value name="Standard (no tail)"/>
+		<value name="Curved tail"/>
+	</feature>
+	<feature name="Lowercase j" value="Standard (no top serif)">
+		<value name="Standard (no top serif)"/>
+		<value name="Top serif"/>
+	</feature>
+	<feature name="Capital J" value="Standard (no top bar)">
+		<value name="Standard (no top bar)"/>
+		<value name="Top bar"/>
+	</feature>
+	<feature name="Lowercase J stroke hook" value="Standard (no top serif)">
+		<value name="Standard (no top serif)"/>
+		<value name="Top serif"/>
+	</feature>
+	<feature name="Lowercase l" value="Curved tail">
+		<value name="Standard (no tail)"/>
+		<value name="Curved tail"/>
+	</feature>
+	<feature name="Capital Eng" value="Standard (lowercase form)">
+		<value name="Standard (lowercase form)"/>
+		<value name="Lowercase no descender"/>
+		<value name="Capital form"/>
+		<value name="Lowercase short stem"/>
+	</feature>
+	<feature name="Capital N left hook" value="Standard (capital form)">
+		<value name="Standard (capital form)"/>
+		<value name="Lowercase form"/>
+	</feature>
+	<feature name="Open O" value="Standard (bottom serif)">
+		<value name="Standard (bottom serif)"/>
+		<value name="Top serif"/>
+	</feature>
+	<feature name="OU" value="Standard (closed top)">
+		<value name="Standard (closed top)"/>
+		<value name="Open top"/>
+	</feature>
+	<feature name="Lowercase p hook" value="Standard (left hook)">
+		<value name="Standard (left hook)"/>
+		<value name="Right hook"/>
+	</feature>
+	<feature name="Lowercase q" value="Standard (not pointed)">
+		<value name="Standard (not pointed)"/>
+		<value name="Pointed"/>
+	</feature>
+	<feature name="Capital Q" value="Standard (outside tail)">
+		<value name="Standard (outside tail)"/>
+		<value name="Crossing tail"/>
+	</feature>
+	<feature name="Capital R tail" value="Standard (capital form)">
+		<value name="Standard (capital form)"/>
+		<value name="Lowercase form"/>
+	</feature>
+	<feature name="Lowercase t" value="Standard (curved tail)">
+		<value name="Standard (curved tail)"/>
+		<value name="No tail"/>
+	</feature>
+	<feature name="Capital T hook" value="Standard (left hook)">
+		<value name="Standard (left hook)"/>
+		<value name="Right hook"/>
+	</feature>
+	<feature name="V hook" value="Standard (curved)">
+		<value name="Standard (curved)"/>
+		<value name="Straight with low hook"/>
+		<value name="Straight with high hook"/>
+	</feature>
+	<feature name="Lowercase y" value="Standard (curved tail)">
+		<value name="Standard (curved tail)"/>
+		<value name="Straight tail"/>
+	</feature>
+	<feature name="Capital Y hook" value="Standard (right hook)">
+		<value name="Standard (right hook)"/>
+		<value name="Left hook"/>
+	</feature>
+	<feature name="Clicks" value="Standard (descending)">
+		<value name="Standard (descending)"/>
+		<value name="Baseline"/>
+	</feature>
+	<feature name="Modifier apostrophe" value="Standard (small)">
+		<value name="Standard (small)"/>
+		<value name="Large"/>
+	</feature>
+	<feature name="Modifier colon" value="Standard (tight)">
+		<value name="Standard (tight)"/>
+		<value name="Expanded"/>
+	</feature>
+	<feature name="Vietnamese diacritics" value="Standard (stacked)">
+		<value name="Standard (stacked)"/>
+		<value name="Vietnamese style"/>
+	</feature>
+	<feature name="Ogonek" value="Standard (curved)">
+		<value name="Standard (curved)"/>
+		<value name="Straight"/>
+	</feature>
+	<feature name="Caron" value="Standard (European)">
+		<value name="Standard (European)"/>
+		<value name="Global style"/>
+	</feature>
+	<feature name="Cyrillic E" value="Standard">
+		<value name="Standard"/>
+		<value name="Mongolian style"/>
+	</feature>
+	<feature name="Cyrillic lowercase shha" value="Standard">
+		<value name="Standard"/>
+		<value name="Capital form"/>
+	</feature>
+	<feature name="Cyrillic breve" value="Standard (Latin form)">
+		<value name="Standard (Latin form)"/>
+		<value name="Cyrillic form"/>
+	</feature>
+	<feature name="Cyr Serbian Macedonian" value="Standard">
+		<value name="Standard"/>
+		<value name="Serbian Macedonian forms"/>
+	</feature>
+	<feature name="Chinantec tones" value="Standard">
+		<value name="Standard"/>
+		<value name="Chinantec style"/>
+	</feature>
+	<feature name="Empty set" value="Standard (circular form)">
+		<value name="Standard (circular form)"/>
+		<value name="Zero form"/>
+	</feature>
+	<feature name="Single-story a and g" value="Standard (single story)">
+		<value name="Double story"/>
+		<value name="Standard (single story)"/>
+	</feature>
+	<feature name="Barred-bowl forms" value="Standard">
+		<value name="Standard"/>
+		<value name="Barred bowls"/>
+	</feature>
+	<feature name="Slanted italic specials" value="Standard">
+		<value name="Standard"/>
+		<value name="Slanted"/>
+	</feature>
+	<feature name="Double-story a" value="Standard (single-story)">
+		<value name="Standard (single-story)"/>
+		<value name="Double-story"/>
+	</feature>
+	<feature name="Double-story g" value="Standard (single-story)">
+		<value name="Standard (single-story)"/>
+		<value name="Double-story"/>
+	</feature>
+	<feature name="Small caps from lowercase" value="Standard (lowercase forms)">
+		<value name="Standard (lowercase forms)"/>
+		<value name="Small caps"/>
+	</feature>
+	<feature name="Kayan diacritics" value="Side by side">
+		<value name="Standard (stacked)"/>
+		<value name="Side by side"/>
+	</feature>
+	<feature name="Line spacing" value="Normal">
+		<value name="Normal"/>
+		<value name="Tight"/>
+		<value name="Loose"/>
+		<value name="Imported"/>
+	</feature>
+</features_set>
