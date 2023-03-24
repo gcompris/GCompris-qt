@@ -19,8 +19,7 @@
 #include <QMutexLocker>
 #include <QNetworkConfiguration>
 #include <QDirIterator>
-
-#include <QtQml>
+#include <QCoreApplication>
 
 const QString DownloadManager::contentsFilename = QStringLiteral("Contents");
 DownloadManager *DownloadManager::_instance = nullptr;

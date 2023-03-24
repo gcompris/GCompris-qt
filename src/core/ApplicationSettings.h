@@ -13,8 +13,6 @@
 
 #include <QObject>
 #include <QQmlEngine>
-#include <QtGlobal>
-#include <QDebug>
 
 #include <QSettings>
 #include <QStandardPaths>
@@ -428,7 +426,6 @@ public:
     bool sectionVisible() const { return m_sectionVisible; }
     void setSectionVisible(const bool newMode)
     {
-        qDebug() << "c++ setSectionVisible=" << newMode;
         m_sectionVisible = newMode;
         Q_EMIT sectionVisibleChanged();
     }
