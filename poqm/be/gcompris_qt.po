@@ -2131,9 +2131,6 @@ msgstr "Дзіцячая мыш"
 
 #. Help title
 #: activities/baby_mouse/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Move the mouse or touch the screen"
 msgctxt "ActivityInfo|"
 msgid "Move the mouse or touch the screen and observe the result."
 msgstr "Рухайце мышшу ці націскайце экран і глядзіце вынік."
@@ -4292,9 +4289,6 @@ msgstr ""
 
 #. Activity title
 #: activities/chess/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Play chess against Tux"
 msgctxt "ActivityInfo|"
 msgid "Play chess (against Tux)"
 msgstr "Шахматы (з Туксам)"
@@ -4429,26 +4423,17 @@ msgid "Do you really want to undo all the moves?"
 msgstr "Насамрэч хочаце выйсці з GCompris ?"
 
 #: activities/chess/Chess.qml:124
-#, fuzzy
-#| msgctxt "balanceboxeditor|"
-#| msgid "Yes"
 msgctxt "Chess|"
 msgid "Yes"
 msgstr "Так"
 
 #: activities/chess/Chess.qml:125
-#, fuzzy
-#| msgctxt "balanceboxeditor|"
-#| msgid "No"
 msgctxt "Chess|"
 msgid "No"
 msgstr "Не"
 
 #. Activity title
 #: activities/chess_2players/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Bargame (with a friend)"
 msgctxt "ActivityInfo|"
 msgid "Play chess (with a friend)"
 msgstr "Шахматы (з сябрам)"
@@ -5531,12 +5516,9 @@ msgstr ""
 
 #: activities/comparator/resource/1/Data.qml:36
 #: activities/tens_complement_find/resource/3/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "Data|"
 msgid "Numbers from 1 to 9."
-msgstr "Лікі ад 0 да 9."
+msgstr "Лікі ад 1 да 9."
 
 #: activities/comparator/resource/10/Data.qml:14
 msgctxt "Data|"
@@ -5544,36 +5526,24 @@ msgid "3 decimal places between 0 and 999.999."
 msgstr ""
 
 #: activities/comparator/resource/2/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "Data|"
 msgid "Numbers from 1 to 19."
-msgstr "Лікі ад 0 да 9."
+msgstr "Лікі ад 1 да 19."
 
 #: activities/comparator/resource/3/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "Data|"
 msgid "Numbers from 1 to 100."
-msgstr "Лікі ад 0 да 9."
+msgstr "Лікі ад 1 да 100."
 
 #: activities/comparator/resource/4/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "Data|"
 msgid "Numbers from 1 to 1000."
-msgstr "Лікі ад 0 да 9."
+msgstr "Лікі ад 1 да 1000."
 
 #: activities/comparator/resource/5/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "Data|"
 msgid "Numbers from 1 to 1000000."
-msgstr "Лікі ад 0 да 9."
+msgstr "Лікі ад 1 да 1000000."
 
 #: activities/comparator/resource/6/Data.qml:14
 #, fuzzy
@@ -9380,9 +9350,6 @@ msgstr ""
 
 #. Activity title
 #: activities/fractions_create/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice subtractions."
 msgctxt "ActivityInfo|"
 msgid "Create the fractions"
 msgstr "Стварыць дробы"
@@ -9825,9 +9792,6 @@ msgstr ""
 
 #. Activity title
 #: activities/fractions_find/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "instruments|"
-#| msgid "Find the accordion"
 msgctxt "ActivityInfo|"
 msgid "Find the fractions"
 msgstr "Знайсці дроб"
@@ -15863,9 +15827,6 @@ msgstr "Складанне з лікамі 1, 2, 3 і 4."
 
 #. Activity title
 #: activities/learn_decimals/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn division of numbers."
 msgctxt "ActivityInfo|"
 msgid "Learn decimal numbers"
 msgstr "Вывучыць дзесятковыя лічбы"
@@ -16282,9 +16243,6 @@ msgstr "Лічбы ад 0 да 9."
 
 #. Activity title
 #: activities/learn_quantities/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn additions"
 msgctxt "ActivityInfo|"
 msgid "Learn quantities"
 msgstr "Вывучаць колькасць"
@@ -21508,18 +21466,12 @@ msgstr "Працягнуць"
 
 #. Activity title
 #: activities/positions/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Additions."
 msgctxt "ActivityInfo|"
 msgid "Positions"
 msgstr "Пазіцыі"
 
 #. Help title
 #: activities/positions/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Find the missing letter to complete the word."
 msgctxt "ActivityInfo|"
 msgid "Find the boy's position in relation to the box."
 msgstr "Знайдзі дзе знаходзіцца хлопчык адносна скрыні."
@@ -21641,9 +21593,6 @@ msgstr "Складанне 1 і 2."
 
 #. it refers to the position on the right side
 #: activities/positions/resource/2/Data.qml:20
-#, fuzzy
-#| msgctxt "dataset|"
-#| msgid "eight"
 msgctxt "Data|"
 msgid "right"
 msgstr "справа"
