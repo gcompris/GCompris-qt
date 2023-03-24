@@ -14,11 +14,8 @@
 #include "DownloadManager.h"
 
 #include <qmath.h>
-#include <QUrl>
-#include <QUrlQuery>
 #include <QGuiApplication>
 #include <QScreen>
-#include <QLocale>
 #include <QRect>
 
 #include <QtQml>

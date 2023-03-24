@@ -18,7 +18,6 @@
 #include <QMutex>
 #include <QString>
 #include <QUrl>
-#include <QVariant>
 #include <QQmlEngine>
 #include <QJSEngine>
 

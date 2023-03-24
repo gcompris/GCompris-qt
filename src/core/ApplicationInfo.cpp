@@ -14,17 +14,12 @@
 #include "ApplicationInfo.h"
 
 #include <QtQml>
-#include <QtMath>
-#include <QUrl>
-#include <QUrlQuery>
 #include <QGuiApplication>
 #include <QScreen>
 #include <QLocale>
 #include <QQuickWindow>
-#include <QStandardPaths>
 #include <QSensor>
 
-#include <qmath.h>
 #include <QDebug>
 
 #include <QFontDatabase>
