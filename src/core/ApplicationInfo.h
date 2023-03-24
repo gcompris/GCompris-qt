@@ -17,11 +17,9 @@
 #include "ApplicationSettings.h"
 
 #include <QObject>
-#include <QLocale>
-#include <QQmlEngine>
 #include <QSslSocket>
-#include <QtGlobal>
 
+class QQmlEngine;
 class QQuickWindow;
 
 /**

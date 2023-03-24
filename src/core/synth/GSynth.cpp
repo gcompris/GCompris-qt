@@ -13,6 +13,7 @@
 #include "generator.h"
 
 #include <QDebug>
+#include <QQmlEngine>
 
 GSynth *GSynth::m_instance = nullptr;
 

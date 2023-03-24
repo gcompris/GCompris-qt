@@ -14,8 +14,11 @@
 #include <QAudioDeviceInfo>
 #include <QAudioOutput>
 #include <QTimer>
-#include <QQmlEngine>
+#include <QMap>
 #include "preset.h"
+
+class QQmlEngine;
+class QJSEngine;
 
 class Generator;
 
