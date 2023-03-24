@@ -96,6 +96,17 @@ else()
   add_executable(${GCOMPRIS_EXECUTABLE_NAME} ${gcompris_SRCS} ${gcompris_RES})
 endif()
 
+if(ENABLE_PCH)
+  message(STATUS "Enable pch")
+  # To know which include are used the most: grep -rni "#include <" . | sed -E 's/.*include <//g' | sed -E 's/>//g' | sort | uniq -c | sort -rn
+  target_precompile_headers(${GCOMPRIS_EXECUTABLE_NAME} PRIVATE
+    <QObject>
+    <QDir>
+    <QQmlEngine>
+    <QDebug>
+    <QString>)
+endif()
+
 # only build the lib for testing purpose
 if(BUILD_TESTING)
   add_library(gcompris_core SHARED ${gcompris_SRCS})

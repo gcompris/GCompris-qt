@@ -116,6 +116,12 @@ if((UNIX AND NOT APPLE AND NOT ANDROID) OR WIN32)
     find_package(OpenSSL REQUIRED)
 endif()
 
+set(CMAKE_HAS_PCH OFF)
+if(${CMAKE_VERSION} VERSION_GREATER "3.16.0")
+  set(CMAKE_HAS_PCH ON)
+endif()
+
+option(ENABLE_PCH "Enable precompile headers for compilation" ${CMAKE_HAS_PCH})
 
 option(COMPILE_DOC "Enable compilation of GCompris docbook" OFF)
 if(COMPILE_DOC)
