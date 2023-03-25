@@ -25765,34 +25765,34 @@ msgctxt "DownloadDialog|"
 msgid "Your local data files are up-to-date."
 msgstr "GCompris vidiniai duomenų failai yra atnaujinti."
 
-#: core/DownloadManager.cpp:113
+#: core/DownloadManager.cpp:112
 msgctxt "QObject|"
 msgid "Download cancelled by user"
 msgstr "Atsisiuntimas atšauktas naudotojo"
 
-#: core/DownloadManager.cpp:233
+#: core/DownloadManager.cpp:232
 msgctxt "QObject|"
 msgid "Could not create resource path"
 msgstr "Negalima sukurti išteklių adreso"
 
-#: core/DownloadManager.cpp:240
+#: core/DownloadManager.cpp:239
 #, qt-format
 msgctxt "QObject|"
 msgid "Could not open target file %1"
 msgstr "Negalima atidaryti adresato failo %1"
 
-#: core/DownloadManager.cpp:539
+#: core/DownloadManager.cpp:538
 msgctxt "QObject|"
 msgid "Invalid format of Contents file"
 msgstr "Neteisingas Turinio failo formatas"
 
-#: core/DownloadManager.cpp:561
+#: core/DownloadManager.cpp:560
 #, qt-format
 msgctxt "QObject|"
 msgid "The url %1 does not exist."
 msgstr "URL %1 neegzistuoja."
 
-#: core/DownloadManager.cpp:574
+#: core/DownloadManager.cpp:573
 #, qt-format
 msgctxt "QObject|"
 msgid "Checksum of downloaded file does not match: %1"
