@@ -24808,34 +24808,34 @@ msgctxt "DownloadDialog|"
 msgid "Your local data files are up-to-date."
 msgstr "Lokalizace je aktuální."
 
-#: core/DownloadManager.cpp:113
+#: core/DownloadManager.cpp:112
 msgctxt "QObject|"
 msgid "Download cancelled by user"
 msgstr "Stažení ukončeno uživatelem"
 
-#: core/DownloadManager.cpp:233
+#: core/DownloadManager.cpp:232
 msgctxt "QObject|"
 msgid "Could not create resource path"
 msgstr "Nelze vytvořit cestu je zdroji"
 
-#: core/DownloadManager.cpp:240
+#: core/DownloadManager.cpp:239
 #, qt-format
 msgctxt "QObject|"
 msgid "Could not open target file %1"
 msgstr "Nelze otevřít soubor %1"
 
-#: core/DownloadManager.cpp:539
+#: core/DownloadManager.cpp:538
 msgctxt "QObject|"
 msgid "Invalid format of Contents file"
 msgstr "Neplatný formát souboru Contents"
 
-#: core/DownloadManager.cpp:561
+#: core/DownloadManager.cpp:560
 #, qt-format
 msgctxt "QObject|"
 msgid "The url %1 does not exist."
 msgstr "URL %1 neexistuje."
 
-#: core/DownloadManager.cpp:574
+#: core/DownloadManager.cpp:573
 #, qt-format
 msgctxt "QObject|"
 msgid "Checksum of downloaded file does not match: %1"

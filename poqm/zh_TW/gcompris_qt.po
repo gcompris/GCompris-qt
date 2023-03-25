@@ -24584,34 +24584,34 @@ msgctxt "DownloadDialog|"
 msgid "Your local data files are up-to-date."
 msgstr "您的本地端資料檔已更新。"
 
-#: core/DownloadManager.cpp:113
+#: core/DownloadManager.cpp:112
 msgctxt "QObject|"
 msgid "Download cancelled by user"
 msgstr "使用者中止下載"
 
-#: core/DownloadManager.cpp:233
+#: core/DownloadManager.cpp:232
 msgctxt "QObject|"
 msgid "Could not create resource path"
 msgstr "無法建立資源路徑"
 
-#: core/DownloadManager.cpp:240
+#: core/DownloadManager.cpp:239
 #, qt-format
 msgctxt "QObject|"
 msgid "Could not open target file %1"
 msgstr "無法開啟目標檔案 %1"
 
-#: core/DownloadManager.cpp:539
+#: core/DownloadManager.cpp:538
 msgctxt "QObject|"
 msgid "Invalid format of Contents file"
 msgstr "Contents 檔格式錯誤"
 
-#: core/DownloadManager.cpp:561
+#: core/DownloadManager.cpp:560
 #, qt-format
 msgctxt "QObject|"
 msgid "The url %1 does not exist."
 msgstr "網址 %1 不存在。"
 
-#: core/DownloadManager.cpp:574
+#: core/DownloadManager.cpp:573
 #, qt-format
 msgctxt "QObject|"
 msgid "Checksum of downloaded file does not match: %1"

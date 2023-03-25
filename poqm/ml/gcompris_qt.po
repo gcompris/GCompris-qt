@@ -25356,34 +25356,34 @@ msgctxt "DownloadDialog|"
 msgid "Your local data files are up-to-date."
 msgstr "നിങ്ങളുടെ ലോക്കൽ ഡാറ്റ ഫയലുകൾ അപ്‍ഡേറ്റഡ് ആണ്. "
 
-#: core/DownloadManager.cpp:113
+#: core/DownloadManager.cpp:112
 msgctxt "QObject|"
 msgid "Download cancelled by user"
 msgstr "ഡൗൺലോഡ് യൂസർ കാൻസൽ ചെയ്തിരിക്കുന്നു"
 
-#: core/DownloadManager.cpp:233
+#: core/DownloadManager.cpp:232
 msgctxt "QObject|"
 msgid "Could not create resource path"
 msgstr "റിസോഴ്സ് പാത്ത് നിർമിക്കാൻ കഴിഞ്ഞില്ല"
 
-#: core/DownloadManager.cpp:240
+#: core/DownloadManager.cpp:239
 #, qt-format
 msgctxt "QObject|"
 msgid "Could not open target file %1"
 msgstr "ടാർഗെറ്റ് ഫയൽ %1 തുറക്കാൻ കഴിഞ്ഞില്ല"
 
-#: core/DownloadManager.cpp:539
+#: core/DownloadManager.cpp:538
 msgctxt "QObject|"
 msgid "Invalid format of Contents file"
 msgstr "കണ്ടന്റ്സ് ഫയലിന്റെ പ്രാബല്യമില്ലാത്ത ഫോർമാറ്റ്"
 
-#: core/DownloadManager.cpp:561
+#: core/DownloadManager.cpp:560
 #, qt-format
 msgctxt "QObject|"
 msgid "The url %1 does not exist."
 msgstr "url %1 നിലവിലില്ല."
 
-#: core/DownloadManager.cpp:574
+#: core/DownloadManager.cpp:573
 #, qt-format
 msgctxt "QObject|"
 msgid "Checksum of downloaded file does not match: %1"
