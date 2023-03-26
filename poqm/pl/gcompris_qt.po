@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2023-01-21 10:00+0100\n"
+"PO-Revision-Date: 2023-03-25 09:53+0100\n"
 "Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
 "Language-Team: Polish <kde-i18n-doc@kde.org>\n"
 "Language: pl\n"
@@ -15,13 +15,13 @@ msgstr ""
 "|| n%100>=20) ? 1 : 2);\n"
 "X-Language: pl\n"
 "X-Qt-Contexts: true\n"
-"X-Generator: Lokalize 22.12.1\n"
+"X-Generator: Lokalize 22.12.3\n"
 
 #. Activity title
 #: activities/advanced_colors/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Advanced colors"
-msgstr "Barwy dla zaawansowanych"
+msgstr "Barwy rozszerzone"
 
 #. Help title
 #: activities/advanced_colors/ActivityInfo.qml:17
@@ -25095,26 +25095,18 @@ msgid "Type the complete word as it falls, before it reaches the ground."
 msgstr "Napisz całe spadające słowo, zanim spadnie na ziemię."
 
 #: core/ChangeLog.qml:30
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid ""
-#| "New command-line option to list all the activities and start on a "
-#| "specific one"
 msgctxt "ChangeLog|"
 msgid ""
 "New command-line option (--difficulty {value|min-max}) to start GCompris at "
 "specific difficulty"
 msgstr ""
-"Nowe ustawienie wiersza poleceń, aby wymienić wszystkie aktywności i "
-"rozpocząć nowe"
+"Nowe ustawienie wiersza poleceń, (--difficulty {wartość|min-maks}) aby "
+"rozpocząć GCompris z danym poziomem trudności"
 
 #: core/ChangeLog.qml:31
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translation updated for Russian"
 msgctxt "ChangeLog|"
 msgid "Many translation updates"
-msgstr "Uaktualniono tłumaczenie na rosyjski"
+msgstr "Wiele uaktualnień do tłumaczenia"
 
 #: core/ChangeLog.qml:32 core/ChangeLog.qml:45 core/ChangeLog.qml:63
 #: core/ChangeLog.qml:78 core/ChangeLog.qml:83 core/ChangeLog.qml:89
@@ -25966,6 +25958,9 @@ msgid ""
 "Specify the range of activity difficulty to display for the session. Either "
 "a single value (2), or a range (3-6). Values must be between 1 and 6."
 msgstr ""
+"Określ zakres trudności aktywności do wyświetlenia w posiedzeniu. Będzie to "
+"albo pojedyncza wartość (2) albo zakres (3-6). Wartości muszą być pomiędzy 1 "
+"oraz 6."
 
 #: core/main.qml:233
 msgctxt "main|"
