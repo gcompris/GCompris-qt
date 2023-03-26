@@ -25608,6 +25608,7 @@ msgctxt "ActivityInfo|"
 msgid "Type the complete word as it falls, before it reaches the ground."
 msgstr "Escriviu la paraula completa mentre cau, abans que arribi a terra."
 
+# skip-rule: t-pu_sp
 #: core/ChangeLog.qml:30
 msgctxt "ChangeLog|"
 msgid ""
