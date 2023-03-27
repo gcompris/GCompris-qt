@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
-"PO-Revision-Date: 2023-03-11 04:54\n"
+"PO-Revision-Date: 2023-03-26 02:20\n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
@@ -3797,6 +3797,16 @@ msgid ""
 "distance away by jumping to any of the unoccupied squares immediately beyond "
 "it."
 msgstr ""
+"跳棋由两个对手在游戏板的两侧进行。 一个玩家拥有黑色的棋子; 另一个是白色。 玩"
+"家交替回合。 玩家不得移动对手的棋子。 移动包括将一块对角线移动到相邻的未占用"
+"正方形。 如果相邻的方块包含对手的棋子，并且紧靠其后的方块是空的，则可以通过跳"
+"过该棋子来捕获该棋子（并从游戏中移除）。\n"
+"仅使用方格板的深色方块。一块只能沿对角线移动到一个未占用的正方形中。捕获是强"
+"制性的。没有剩余棋子的玩家，或因被阻挡而无法移动的玩家，将输掉游戏。\n"
+"当一个人到达皇冠头或国王排（向前最远的一排）时，它就成为国王，并在第一个人的"
+"顶部放置一个额外的棋子，并获得额外的力量，包括向后移动的能力。如果国王可以捕"
+"获对角线中的一块棋子，他可以沿着对角线移动任何距离，并且可以通过跳到紧靠它之"
+"外的任何无人居住的方格来捕获任何距离的对手。"
 
 #: activities/checkers/ActivityInfo.qml:29
 #: activities/checkers_2players/ActivityInfo.qml:28
@@ -3898,6 +3908,20 @@ msgid ""
 "little bit and try to predict your opponent's future moves, so that you can "
 "catch him or secure your pieces from his attacks."
 msgstr ""
+"在此活动中，您可以通过与计算机对弈来发现国际象棋游戏。它显示任何选定棋子的可"
+"能目标位置，帮助孩子们了解棋子的移动方式。首先，计算机是完全随机的，以便为孩"
+"子们提供更多的机会。随着等级的提高，计算机玩得更好。您可以使用箭头按钮手动选"
+"择难度级别。\n"
+"\n"
+"如果您遵循以下简单规则，您可以更快地实现伴侣：\n"
+"    试图将对手的国王逼到角落里。\n"
+"<b>解释</b>：这样你的对手的国王将只有 3 个方向移动，而不是从更好的位置移动 8 "
+"个方向。\n"
+"    “制造陷阱”。用你的棋子作为诱饵。\n"
+"<b>解释</b>：通过这种方式，你可以引诱你的对手离开他的“舒适区”。\n"
+"    要有足够的耐心。\n"
+"<b>说明</b>：不要急得太快，要有耐心。让自己思考一下，试着预测对手未来的动作，"
+"这样你就可以抓住他或保护你的棋子免受他的攻击。"
 
 #: activities/chess/ActivityInfo.qml:32
 #: activities/chess_2players/ActivityInfo.qml:32
@@ -4944,7 +4968,7 @@ msgstr "对数字比较大小。"
 #: activities/comparator/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Compare the numbers and choose the corresponding sign."
-msgstr ""
+msgstr "比较数字并选择相应的符号。"
 
 #. Help goal
 #: activities/comparator/ActivityInfo.qml:22
@@ -4960,6 +4984,8 @@ msgid ""
 "symbol for this pair. When each line contains a symbol, select the OK button "
 "to validate the answers."
 msgstr ""
+"在列表中选择一对数字，然后选择正确的比较符号。 当每行都包含符号时，请选择 “确"
+"定” 按钮来验证答案。"
 
 #: activities/comparator/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
@@ -4967,11 +4993,13 @@ msgid ""
 "If some answers are incorrect, a cross icon will appear on the corresponding "
 "lines. Correct the errors, then select the OK button again."
 msgstr ""
+"如果某些答案不正确，相应的行上会出现一个十字图标。更正错误，然后再次选择“确"
+"定”按钮。"
 
 #: activities/comparator/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid "Up and Down arrows: select a pair of numbers in the list"
-msgstr ""
+msgstr "向上和向下箭头：在列表中选择一对数字"
 
 #: activities/comparator/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
@@ -5002,47 +5030,47 @@ msgstr "1到9的数字。"
 #: activities/comparator/resource/10/Data.qml:14
 msgctxt "Data|"
 msgid "3 decimal places between 0 and 999.999."
-msgstr ""
+msgstr "3 位小数介于0到999.999之间。"
 
 #: activities/comparator/resource/2/Data.qml:14
 msgctxt "Data|"
 msgid "Numbers from 1 to 19."
-msgstr ""
+msgstr "1到19的数字。"
 
 #: activities/comparator/resource/3/Data.qml:14
 msgctxt "Data|"
 msgid "Numbers from 1 to 100."
-msgstr ""
+msgstr "1到100的数字。"
 
 #: activities/comparator/resource/4/Data.qml:14
 msgctxt "Data|"
 msgid "Numbers from 1 to 1000."
-msgstr ""
+msgstr "1到1000的数字。"
 
 #: activities/comparator/resource/5/Data.qml:14
 msgctxt "Data|"
 msgid "Numbers from 1 to 1000000."
-msgstr ""
+msgstr "1到1000的数字。"
 
 #: activities/comparator/resource/6/Data.qml:14
 msgctxt "Data|"
 msgid "Numbers from 1 to 1 billion."
-msgstr ""
+msgstr "1到十亿的数字。"
 
 #: activities/comparator/resource/7/Data.qml:14
 msgctxt "Data|"
 msgid "1 decimal place between 0 and 9.9, same integer part."
-msgstr ""
+msgstr "1 位十进制位数介于 0 到 9.9 之间，同一个整数部分。"
 
 #: activities/comparator/resource/8/Data.qml:14
 msgctxt "Data|"
 msgid "1 decimal place between 0 and 9.9."
-msgstr ""
+msgstr "1 位小数介于0到9.9之间。"
 
 #: activities/comparator/resource/9/Data.qml:14
 msgctxt "Data|"
 msgid "2 decimal places between 0 and 99.99."
-msgstr ""
+msgstr "2 位小数介于0到99.99之间。"
 
 #. Activity title
 #: activities/crane/ActivityInfo.qml:20
@@ -6098,49 +6126,49 @@ msgstr "分类2种水果并为每一种水果计数。（最多5个水果）"
 #: activities/enumerate/resource/2/Data.qml:17
 msgctxt "Data|"
 msgid "Group 2 types of fruit and enumerate each group (3 fruit max)."
-msgstr ""
+msgstr "分类2种水果并为每一种水果计数。（最多3个水果）"
 
 #: activities/enumerate/resource/2/Data.qml:23
 msgctxt "Data|"
 msgid "Group 2 types of fruit and enumerate each group (4 fruit max)."
-msgstr ""
+msgstr "分类2种水果并为每一种水果计数。（最多4个水果）"
 
 #: activities/enumerate/resource/3/Data.qml:13
 #: activities/enumerate/resource/3/Data.qml:35
 msgctxt "Data|"
 msgid "Group 3 types of fruit and enumerate each group (6 fruit max)."
-msgstr ""
+msgstr "分类3种水果并为每一种水果计数。（最多6个水果）"
 
 #: activities/enumerate/resource/3/Data.qml:17
 msgctxt "Data|"
 msgid "Group 3 types of fruit and enumerate each group (3 fruit max)."
-msgstr ""
+msgstr "分类3种水果并为每一种水果计数。（最多3个水果）"
 
 #: activities/enumerate/resource/3/Data.qml:23
 msgctxt "Data|"
 msgid "Group 3 types of fruit and enumerate each group (4 fruit max)."
-msgstr ""
+msgstr "分类3种水果并为每一种水果计数。（最多4个水果）"
 
 #: activities/enumerate/resource/4/Data.qml:13
 #: activities/enumerate/resource/4/Data.qml:35
 msgctxt "Data|"
 msgid "Group 4 types of fruit and enumerate each group (9 fruit max)."
-msgstr ""
+msgstr "分类4种水果并为每一种水果计数。（最多9个水果）"
 
 #: activities/enumerate/resource/4/Data.qml:17
 msgctxt "Data|"
 msgid "Group 4 types of fruit and enumerate each group (6 fruit max)."
-msgstr ""
+msgstr "分类4种水果并为每一种水果计数。（最多6个水果）"
 
 #: activities/enumerate/resource/4/Data.qml:23
 msgctxt "Data|"
 msgid "Group 4 types of fruit and enumerate each group (7 fruit max)."
-msgstr ""
+msgstr "分类4种水果并为每一种水果计数。（最多7个水果）"
 
 #: activities/enumerate/resource/4/Data.qml:29
 msgctxt "Data|"
 msgid "Group 4 types of fruit and enumerate each group (8 fruit max)."
-msgstr ""
+msgstr "分类4种水果并为每一种水果计数。（最多8个水果）"
 
 #. Activity title
 #: activities/erase/ActivityInfo.qml:15
@@ -6154,7 +6182,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Move the mouse or touch the screen to erase the area and discover the "
 "background."
-msgstr ""
+msgstr "移动鼠标或触摸屏幕以擦除区域并发现背景。"
 
 #. Help goal
 #: activities/erase/ActivityInfo.qml:20
@@ -6169,7 +6197,7 @@ msgstr "促进协调"
 msgctxt "ActivityInfo|"
 msgid ""
 "Move the mouse or touch the screen on the blocks to make them disappear."
-msgstr ""
+msgstr "移动鼠标或触摸方块上的屏幕以使其消失。"
 
 #. Activity title
 #: activities/erase_2clic/ActivityInfo.qml:15
@@ -6183,13 +6211,13 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Double tap or double click to erase the area and discover the background "
 "image."
-msgstr ""
+msgstr "轻击两次或双击鼠标来擦除区块并发现背景图."
 
 #. Help manual
 #: activities/erase_2clic/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid "Double tap or double click on the blocks to make them disappear."
-msgstr ""
+msgstr "双击方块以使其消失。"
 
 #. Activity title
 #: activities/erase_clic/ActivityInfo.qml:15
@@ -6201,13 +6229,13 @@ msgstr "点击或轻击"
 #: activities/erase_clic/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Click or tap to erase the area and discover the background."
-msgstr ""
+msgstr "点击鼠标或轻击来擦除区块并显现背景图."
 
 #. Help manual
 #: activities/erase_clic/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid "Click or tap on the blocks to make them disappear."
-msgstr ""
+msgstr "点击或点击方块使其消失。"
 
 #. Activity title
 #: activities/explore_farm_animals/ActivityInfo.qml:15
@@ -6243,6 +6271,9 @@ msgid ""
 "it looks like. Study well this information, because you will be tested in "
 "level 2 and 3."
 msgstr ""
+"在一级玩家喜欢在屏幕上探索每个动物。 点击一个动物来了解它、它的名称、它发出了"
+"什么声音以及它看起来是什么。 很好地研究这个信息，因为您将在第2级和第3级中进行"
+"测试。"
 
 #: activities/explore_farm_animals/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
@@ -6251,13 +6282,15 @@ msgid ""
 "makes this sound. Click on the corresponding animal. If you'd like to hear "
 "the animal sound repeated, click on the play button."
 msgstr ""
+"在二级中，随机播放动物声音，您必须找到哪个动物发出这种声音。 点击对应的动物。"
+"如果你想听到重复的动物声音，请点击播放按钮。"
 
 #: activities/explore_farm_animals/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid ""
 "In level three, a random text prompt is displayed and you must click on the "
 "animal that matches the text."
-msgstr ""
+msgstr "在第三级中显示随机文字提示, 您必须点击匹配文字的动物。"
 
 #: activities/explore_farm_animals/ExploreLevels.qml:304
 msgctxt "ExploreLevels|"
@@ -6265,6 +6298,7 @@ msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
 "voices or effects are disabled in the main configuration."
 msgstr ""
+"此活动需要声音，因此即使在主配置中禁用了音频语音或效果，它也会播放一些声音。"
 
 #: activities/explore_farm_animals/ExploreLevels.qml:305
 msgctxt "ExploreLevels|"
@@ -6288,11 +6322,13 @@ msgid ""
 "escape predators, and possess an excellent sense of balance. They have "
 "single-toed hooves."
 msgstr ""
+"马发出“嘶嘶”的声音。马适应奔跑，使它们能够快速逃离捕食者，并拥有出色的平衡"
+"感。它们有单趾蹄。"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:25
 msgctxt "board1|"
 msgid "This animal has single-toed hooves."
-msgstr ""
+msgstr "这种动物有单趾蹄。"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:33
 msgctxt "board1|"
@@ -6304,12 +6340,12 @@ msgctxt "board1|"
 msgid ""
 "The chicken goes 'cluck'. Domestic chickens have wings, but are not capable "
 "of long-distance flight. They have a comb on their head."
-msgstr ""
+msgstr "鸡咯咯地叫着。家鸡有翅膀，但不能长途飞行。他们头上有一把梳子。"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:37
 msgctxt "board1|"
 msgid "This animal has a comb on its head."
-msgstr ""
+msgstr "这种动物的头上有一把梳子。"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:45
 msgctxt "board1|"
@@ -6323,11 +6359,13 @@ msgid ""
 "developed sense of taste, with around 20,000 taste buds. They can detect "
 "odours 8km away."
 msgstr ""
+"牛“哞哞”一声。奶牛有330°的宽视野。他们有发达的味觉，大约有20，000个味蕾。它们"
+"可以检测8公里外的气味。"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:49
 msgctxt "board1|"
 msgid "This animal has around 20,000 taste buds."
-msgstr ""
+msgstr "这种动物有大约 20，000 个味蕾。"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:57
 msgctxt "board1|"
@@ -6341,6 +6379,8 @@ msgid ""
 "ability to chase mice and other rodents. They purr to communicate various "
 "emotions."
 msgstr ""
+"猫“喵”了一声。猫因其陪伴和追逐老鼠和其他啮齿动物的能力而受到人类的重视。他们"
+"发出呼噜声来传达各种情绪。"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:61
 msgctxt "board1|"
@@ -6357,7 +6397,7 @@ msgctxt "board1|"
 msgid ""
 "The pig goes 'oink'. Pigs wallow in the mud, mainly to control their body "
 "temperature."
-msgstr ""
+msgstr "猪“嘟嘟嘟”。猪在泥里打滚，主要是为了控制体温。"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:73
 msgctxt "board1|"
@@ -6381,7 +6421,7 @@ msgstr ""
 #: activities/explore_farm_animals/resource/board/board1.qml:85
 msgctxt "board1|"
 msgid "This animal has webbed feet and can swim on the water."
-msgstr ""
+msgstr "这种动物有蹼脚，可以在水中游泳。"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:93
 msgctxt "board1|"
@@ -6393,12 +6433,12 @@ msgctxt "board1|"
 msgid ""
 "The owl goes 'hoot'. Owls are nocturnal birds, they have excellent vision "
 "and hearing at night."
-msgstr ""
+msgstr "猫头鹰“呼噜”一声。猫头鹰是夜行动物，它们在夜间具有出色的视力和听力。"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:97
 msgctxt "board1|"
 msgid "This animal is a nocturnal bird."
-msgstr ""
+msgstr "这种动物是一种夜行动物。"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:105
 msgctxt "board1|"
@@ -6410,12 +6450,12 @@ msgctxt "board1|"
 msgid ""
 "The dog goes 'woof'. Dogs are probably the oldest domesticated species. They "
 "are descendants of the wolf."
-msgstr ""
+msgstr "狗“呜”地叫。狗可能是最古老的驯化物种。他们是狼的后代。"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:109
 msgctxt "board1|"
 msgid "This animal is a descendant of the wolf."
-msgstr ""
+msgstr "这种动物是狼的后代。"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:117
 msgctxt "board1|"
@@ -6428,11 +6468,13 @@ msgid ""
 "The sheep goes 'baa'. Most sheep breeds bear a fleece of wool. The fleece "
 "can be sheared and used to produce textile fibre."
 msgstr ""
+"羊群“呸”呸呸呸。大多数绵羊品种都带有羊毛绒毛。羊毛可以剪切并用于生产纺织纤"
+"维。"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:121
 msgctxt "board1|"
 msgid "This animal produces wool."
-msgstr ""
+msgstr "这种动物生产羊毛。"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:131
 msgctxt "board1|"
@@ -6481,7 +6523,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Click on the spots to learn about the monuments and then locate them on the "
 "map."
-msgstr ""
+msgstr "单击景点以了解古迹，然后在地图上找到它们。"
 
 #: activities/explore_monuments/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
@@ -6522,6 +6564,10 @@ msgid ""
 "first permanent amphitheatre to be raised in Rome, and the most impressive "
 "arena the Classical world had yet seen."
 msgstr ""
+"罗马斗兽场或斗兽场是当今罗马最知名的古典建筑。即使在它建成 2000 年后，尽管这"
+"座废弃的建筑被掠夺了几个世纪作为建筑材料，但它仍然可以立即被识别为当今体育场"
+"的经典模板。这是罗马第一个永久性圆形剧场，也是古典世界迄今为止最令人印象深刻"
+"的竞技场。"
 
 #: activities/explore_monuments/resource/board/board1.qml:41
 #: activities/explore_monuments/resource/board/board1.qml:44
@@ -6641,6 +6687,8 @@ msgid ""
 "build a place of worship for men and women from all walks of life and all "
 "religions to worship God equally."
 msgstr ""
+"斯里兰卡哈里曼迪尔·萨希布，在阿姆利则被称为金庙，是锡克教最受尊敬的精神场所之"
+"一。该建筑旨在为各行各业和所有宗教的男女建造一个平等敬拜上帝的礼拜场所。"
 
 #: activities/explore_monuments/resource/board/board2.qml:29
 #: activities/explore_monuments/resource/board/board2.qml:32
@@ -6657,6 +6705,9 @@ msgid ""
 "and pink sandstone, the palace sits on the edge of the City Palace, and "
 "extends to the zenana, or women's chambers."
 msgstr ""
+"哈瓦玛哈陵是印度斋浦尔的一座宫殿，之所以如此命名，是因为它本质上是一堵高高的"
+"屏风墙，以便王室的女性可以在从外面看不到的情况下观看街头节日。宫殿由红色和粉"
+"红色的砂岩建造，坐落在城市宫殿的边缘，并延伸到zenana或妇女的房间。"
 
 #: activities/explore_monuments/resource/board/board2.qml:40
 #: activities/explore_monuments/resource/board/board2.qml:43
@@ -6749,6 +6800,8 @@ msgid ""
 "the heart of the city of Mysore. The palace was initially built by the "
 "Wodeyar kings in the 14th century."
 msgstr ""
+"迈索尔宫或迈索尔大君宫是印度最大，最壮观的古迹之一。它也被称为安巴维拉斯，位"
+"于迈索尔市中心。这座宫殿最初是由沃德亚尔国王在14世纪建造的。"
 
 #: activities/explore_monuments/resource/board/board2.qml:95
 #: activities/explore_monuments/resource/board/board2.qml:98
@@ -6765,6 +6818,9 @@ msgid ""
 "become synonymous with the monument. The Charminar is a massive and "
 "impressive structure with four minarets."
 msgstr ""
+"海得拉巴的沙米纳尔是由穆罕默德·库利·库塔布·沙阿于1591年建造的。他建造了沙米纳"
+"尔，以纪念海得拉巴市瘟疫的结束。自从沙米纳尔建造以来，海得拉巴市几乎成为了这"
+"座纪念碑的代名词。沙米纳尔是一个巨大而令人印象深刻的建筑，有四个尖塔。"
 
 #: activities/explore_monuments/resource/board/board2.qml:106
 #: activities/explore_monuments/resource/board/board2.qml:109
@@ -6780,6 +6836,9 @@ msgid ""
 "blends the best of the British and Mughal architecture. The Victoria "
 "Memorial hall was built with white Makrana marbles."
 msgstr ""
+"维多利亚纪念碑是为了纪念大英帝国在印度的鼎盛时期而建造的。它代表了加尔各答城"
+"市建筑的高潮，融合了英国和莫卧儿建筑的精华。维多利亚纪念馆是用白色的马卡拉纳"
+"大理石建造的。"
 
 #: activities/explore_monuments/resource/board/board2.qml:117
 #: activities/explore_monuments/resource/board/board2.qml:120
@@ -6813,6 +6872,9 @@ msgid ""
 "which is a UNESCO World Heritage Site. The tower, located in the Mehrauli "
 "area of Delhi, is made of red sandstone and marble."
 msgstr ""
+"Qutub Minar高74米，是世界上最高的砖砌尖塔，也是印度第二高的尖塔，仅次于Mohali"
+"的Fateh Burj。与周围的古代和中世纪古迹一起，它们形成了库特布建筑群，这是联合"
+"国教科文组织世界遗产。该塔位于德里的Mehrauli地区，由红砂岩和大理石制成。"
 
 #: activities/explore_monuments/resource/board/board2.qml:141
 msgctxt "board2|"
@@ -6840,6 +6902,9 @@ msgid ""
 "unique feature of Mont Saint-Michel is that it is completely surrounded by "
 "water and can only be accessed at low tide."
 msgstr ""
+"圣米歇尔山是一个岩石潮汐岛，位于诺曼底，位于库埃斯农河口，靠近阿夫朗什市。岛"
+"上的最高点是修道院钟楼顶部的尖顶，海拔170米。目前岛上居住的人数不到50人。圣米"
+"歇尔山的独特之处在于它完全被水包围，只能在退潮时进入。"
 
 #: activities/explore_monuments/resource/board/board3.qml:29
 #: activities/explore_monuments/resource/board/board3.qml:32
@@ -6876,6 +6941,10 @@ msgid ""
 "Site since 1991. The Mecca for tourists in the Champagne region welcomes "
 "1500000 visitors every year."
 msgstr ""
+"从规模上看，兰斯大教堂是一个相当非凡的建筑：旨在容纳大量人群，其巨大的尺寸包"
+"括6650平方米的表面积和122米的长度。它是哥特式艺术杰作和法国国王的加冕地点，自"
+"1991年以来一直被列为联合国教科文组织世界遗产。香槟地区游客的麦加每年接待150万"
+"游客。"
 
 #: activities/explore_monuments/resource/board/board3.qml:51
 #: activities/explore_monuments/resource/board/board3.qml:54
@@ -6928,6 +6997,9 @@ msgid ""
 "its domain. This remarkable piece of architecture is certainly more than "
 "just a castle: it is the dream of a king, transformed into reality."
 msgstr ""
+"威望、雄伟、巨大、奢侈，这些形容词足以充分描述香波的辉煌吗？卢瓦尔河谷最大的"
+"城堡对于那些有幸探索其领域的人来说确实充满了惊喜。这座非凡的建筑当然不仅仅是"
+"一座城堡：它是国王的梦想，变成了现实。"
 
 #: activities/explore_monuments/resource/board/board3.qml:84
 #: activities/explore_monuments/resource/board/board3.qml:87
@@ -6983,6 +7055,9 @@ msgid ""
 "influenced the construction and development of this French Château over the "
 "centuries."
 msgstr ""
+"舍农索城堡是卢瓦尔河谷众多城堡之一，拥有令人惊叹的建筑和历史意义，吸引了来自"
+"世界各地的数千名游客。舍农索城堡有时被一些历史学家称为女士城堡，因为几个世纪"
+"以来，女性形象极大地影响了这座法国城堡的建设和发展。"
 
 #: activities/explore_monuments/resource/board/board3.qml:117
 #: activities/explore_monuments/resource/board/board3.qml:120
@@ -7379,6 +7454,11 @@ msgid ""
 "stone have been used in the construction. The height of the pyramid is "
 "approximately 139 meters making it the highest pyramid of Egypt."
 msgstr ""
+"吉萨大金字塔也被称为胡夫金字塔或胡夫金字塔。它被认为是古代世界所有七大奇迹中"
+"最古老的。它也是吉萨所有三座金字塔中最大的一座。它位于埃及的吉萨墓地。最初的"
+"建筑由埃及法老胡夫开始，然后由他的儿子哈夫拉继续，最后由孟卡拉完成。建造金字"
+"塔花了将近20年的时间，大约200万块石头被用于建造。金字塔的高度约为139米，是埃"
+"及最高的金字塔。"
 
 #: activities/explore_monuments/resource/board/board6.qml:28
 #: activities/explore_monuments/resource/board/board6.qml:31
@@ -7421,6 +7501,10 @@ msgid ""
 "marking the first attempt by the ancient Egyptians at the construction of a "
 "true pyramid."
 msgstr ""
+"在埃及萨加拉以南五英里处，矗立着神秘的塔状金字塔迈杜姆，今天它几乎不像一个典"
+"型的金字塔。这座金字塔可能是在第4王朝法老斯尼夫鲁统治期间建造的，尽管有些人认"
+"为金字塔可能是由斯尼夫鲁的前任胡尼开始的。在建造过程中的某个时候，金字塔的台"
+"阶充满了石灰石包裹，标志着古埃及人首次尝试建造真正的金字塔。"
 
 #: activities/explore_monuments/resource/board/board6.qml:50
 #: activities/explore_monuments/resource/board/board6.qml:53
@@ -7438,6 +7522,9 @@ msgid ""
 "red limestone stones, hence the name. The local people of Egypt called it as "
 "el-heram el-watwaat meaning the Bat Pyramid."
 msgstr ""
+"红金字塔是法老斯尼夫鲁在古埃及时期建造世界上第一座光滑边金字塔的最好和最成功"
+"的尝试之一。金字塔的高度为104米，是埃及世界第四大金字塔。金字塔是用红色石灰石"
+"建造的，因此得名。埃及当地人称它为el-heram el-watwaat，意思是蝙蝠金字塔"
 
 #: activities/explore_monuments/resource/board/board6.qml:63
 msgctxt "board6|"
@@ -7447,7 +7534,7 @@ msgstr "埃及的金字塔"
 #: activities/explore_monuments/resource/board/board6.qml:66
 msgctxt "board6|"
 msgid "Click on the location of the given pyramid."
-msgstr ""
+msgstr "单击给定金字塔的位置。"
 
 #. Activity title
 #: activities/explore_world_animals/ActivityInfo.qml:19
@@ -7468,7 +7555,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Learn about various wild animals from around the world and remember where "
 "they live."
-msgstr ""
+msgstr "了解来自世界各地的各种野生动物，并记住它们住在哪里。"
 
 #. Help manual
 #: activities/explore_world_animals/ActivityInfo.qml:28
@@ -7484,13 +7571,15 @@ msgid ""
 "looks like. Study well this information, because you will be tested in level "
 "2."
 msgstr ""
+"在第一关中，玩家喜欢探索屏幕上的每种动物。单击问号，了解动物，它的名字是什"
+"么，它的样子。好好研究这些信息，因为你将在 2 级进行测试。"
 
 #: activities/explore_world_animals/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
 msgid ""
 "In level two, a random text prompt is displayed and you must click on the "
 "animal that matches the text."
-msgstr ""
+msgstr "在第二关中，将显示一个随机文本提示，您必须单击与文本匹配的动物。"
 
 #: activities/explore_world_animals/resource/board/board1.qml:19
 #: activities/explore_world_animals/resource/board/board1.qml:22
@@ -7504,6 +7593,8 @@ msgid ""
 "The jaguar's jaw is well developed. Because of this, it has the strongest "
 "bite of all the felines, being able to break even a tortoise shell!"
 msgstr ""
+"美洲虎的下巴发达。正因为如此，它拥有所有猫科动物中最强的咬合力，甚至能够打破"
+"龟壳！"
 
 #: activities/explore_world_animals/resource/board/board1.qml:30
 #: activities/explore_world_animals/resource/board/board1.qml:33
@@ -7547,7 +7638,7 @@ msgctxt "board1|"
 msgid ""
 "Bisons live on the plains of North America and were hunted by the Native "
 "Americans for food."
-msgstr ""
+msgstr "野牛生活在北美的平原上，被美洲原住民猎杀作为食物。"
 
 #: activities/explore_world_animals/resource/board/board1.qml:63
 #: activities/explore_world_animals/resource/board/board1.qml:66
@@ -7585,7 +7676,7 @@ msgctxt "board2|"
 msgid ""
 "The chameleon lives in Africa and Madagascar and is well-known for its "
 "ability to change its skin color in a couple of seconds."
-msgstr ""
+msgstr "变色龙生活在非洲和马达加斯加，以其在几秒钟内改变肤色的能力而闻名。"
 
 #: activities/explore_world_animals/resource/board/board2.qml:30
 #: activities/explore_world_animals/resource/board/board2.qml:33
@@ -7598,7 +7689,7 @@ msgctxt "board2|"
 msgid ""
 "The polar bear is one of the world's largest predatory mammals. It weighs up "
 "to a ton and can be as long as 3 meters!"
-msgstr ""
+msgstr "北极熊是世界上最大的掠食性哺乳动物之一。它重达一吨，可以长达3米！"
 
 #: activities/explore_world_animals/resource/board/board2.qml:41
 #: activities/explore_world_animals/resource/board/board2.qml:44
@@ -7611,7 +7702,7 @@ msgctxt "board2|"
 msgid ""
 "The kangaroo lives in Australia and is well-known for the pouch on its belly "
 "used to cradle baby kangaroos."
-msgstr ""
+msgstr "袋鼠生活在澳大利亚，以其腹部用来摇篮小袋鼠的袋子而闻名。"
 
 #: activities/explore_world_animals/resource/board/board2.qml:52
 #: activities/explore_world_animals/resource/board/board2.qml:55
@@ -7625,6 +7716,7 @@ msgid ""
 "The scarlet macaw lives in South America and is a big and bright colored "
 "parrot, able to learn up to 100 words!"
 msgstr ""
+"猩红色金刚鹦鹉生活在南美洲，是一只又大又亮的鹦鹉，最多能学习 100 个单词！"
 
 #: activities/explore_world_animals/resource/board/board2.qml:63
 #: activities/explore_world_animals/resource/board/board2.qml:66
@@ -7639,16 +7731,18 @@ msgid ""
 "However, it's not easy, so sometimes the moose has to stand on its hind legs "
 "to reach branches up to 4 meters!"
 msgstr ""
+"作为所有鹿中最大的，驼鹿每天吃多达 25 公斤。然而，这并不容易，所以有时驼鹿必"
+"须用后腿站立才能到达长达 4 米的树枝！"
 
 #: activities/explore_world_animals/resource/board/board2.qml:76
 msgctxt "board2|"
 msgid "Explore wild animals from around the world."
-msgstr ""
+msgstr "探索来自世界各地的野生动物。"
 
 #: activities/explore_world_animals/resource/board/board2.qml:79
 msgctxt "board2|"
 msgid "Click on the location where the given animal lives."
-msgstr ""
+msgstr "单击给定动物居住的位置。"
 
 #: activities/explore_world_animals/resource/board/board3.qml:19
 #: activities/explore_world_animals/resource/board/board3.qml:22
@@ -7662,6 +7756,7 @@ msgid ""
 "The crocodile is a large amphibious reptile. It lives mostly in large "
 "tropical rivers, where it is an ambush predator."
 msgstr ""
+"鳄鱼是一种大型两栖爬行动物。它主要生活在大型热带河流中，是一种埋伏的掠食者。"
 
 #: activities/explore_world_animals/resource/board/board3.qml:30
 #: activities/explore_world_animals/resource/board/board3.qml:33
@@ -7674,7 +7769,7 @@ msgctxt "board3|"
 msgid ""
 "The Komodo dragon is the largest living lizard (up to 3 meters). It lives in "
 "the Indonesian islands."
-msgstr ""
+msgstr "科莫多龙是现存最大的蜥蜴(可达3米)。它生活在印度尼西亚群岛。"
 
 #: activities/explore_world_animals/resource/board/board3.qml:41
 #: activities/explore_world_animals/resource/board/board3.qml:44
@@ -7687,13 +7782,13 @@ msgctxt "board3|"
 msgid ""
 "Koalas are herbivore marsupials that live in the eucalyptus forests of "
 "eastern Australia."
-msgstr ""
+msgstr "考拉是生活在澳大利亚东部桉树林中的食草有袋动物。"
 
 #: activities/explore_world_animals/resource/board/board3.qml:52
 #: activities/explore_world_animals/resource/board/board3.qml:55
 msgctxt "board3|"
 msgid "Ring-tailed lemur"
-msgstr ""
+msgstr "环尾狐猴"
 
 #: activities/explore_world_animals/resource/board/board3.qml:53
 msgctxt "board3|"
@@ -7701,6 +7796,8 @@ msgid ""
 "The ring-tailed lemur is a primate that lives in the dry regions of "
 "southwest Madagascar. Its striped tail makes it easy to recognize."
 msgstr ""
+"环尾狐猴是一种生活在马达加斯加西南部干旱地区的灵长类动物。它的条纹尾巴使其易"
+"于识别。"
 
 #: activities/explore_world_animals/resource/board/board3.qml:63
 #: activities/explore_world_animals/resource/board/board3.qml:66
@@ -7714,16 +7811,17 @@ msgid ""
 "The panda is a bear with black and white fur that lives in a few mountain "
 "ranges in central China. Pandas mostly eat bamboo."
 msgstr ""
+"熊猫是一种有着黑白皮毛的熊，生活在中国中部的几座山脉中。大熊猫主要吃竹子。"
 
 #: activities/explore_world_animals/resource/board/board3.qml:76
 msgctxt "board3|"
 msgid "Explore wild animals from around the world."
-msgstr ""
+msgstr "探索来自世界各地的野生动物。"
 
 #: activities/explore_world_animals/resource/board/board3.qml:79
 msgctxt "board3|"
 msgid "Click on the location where the given animal lives."
-msgstr ""
+msgstr "单击给定动物居住的位置。"
 
 #. Activity title
 #: activities/explore_world_music/ActivityInfo.qml:15
@@ -7742,13 +7840,13 @@ msgstr "学习世界上的音乐。"
 msgctxt "ActivityInfo|"
 msgid ""
 "Develop a better understanding of the variety of music present in the world."
-msgstr ""
+msgstr "培养对世界上各种音乐的理解力。"
 
 #. Help manual
 #: activities/explore_world_music/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid "There are three levels in this activity."
-msgstr ""
+msgstr "这场游戏有三个关卡。"
 
 #: activities/explore_world_music/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
@@ -7757,6 +7855,8 @@ msgid ""
 "each suitcase to learn about the music from that area, and listen to a short "
 "sample. Study well, because you will be tested in level 2 and 3."
 msgstr ""
+"在第一关，享受探索来自世界各地的音乐。单击每个手提箱以了解该区域的音乐，并收"
+"听简短的样本。好好学习，因为你将在 2 级和 3 级进行测试。"
 
 #: activities/explore_world_music/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
@@ -7765,18 +7865,20 @@ msgid ""
 "location that corresponds to this music. Click on the play button if you'd "
 "like to hear the music again."
 msgstr ""
+"在第二关中，您将听到音乐样本，您必须选择与此音乐相对应的位置。如果您想再次听"
+"到音乐，请单击播放按钮。"
 
 #: activities/explore_world_music/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid ""
 "In the third level, you must select the location that matches the text "
 "description on the screen."
-msgstr ""
+msgstr "在第三级中，您必须选择与屏幕上的文本描述匹配的位置。"
 
 #: activities/explore_world_music/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Images from https://commons.wikimedia.org/wiki, https://archive.org"
-msgstr ""
+msgstr "图片来自 https://commons.wikimedia.org/wiki、https://archive.org"
 
 #: activities/explore_world_music/resource/board/board1.qml:20
 #: activities/explore_world_music/resource/board/board1.qml:24
@@ -7854,6 +7956,8 @@ msgid ""
 "narrative poem or story. Typical instruments include bagpipes, fiddles, "
 "flutes, harps, and accordions."
 msgstr ""
+"该地区的音乐被称为凯尔特音乐。它通常包含叙事诗或故事。典型的乐器包括风笛、小"
+"提琴、长笛、竖琴和手风琴。"
 
 #: activities/explore_world_music/resource/board/board1.qml:80
 #: activities/explore_world_music/resource/board/board1.qml:84
@@ -7920,7 +8024,7 @@ msgstr ""
 #: activities/explore_world_music/resource/board/board1.qml:130
 msgctxt "board1|"
 msgid "Explore world music. Click on the suitcases."
-msgstr ""
+msgstr "探索世界音乐。点击手提箱。"
 
 #: activities/explore_world_music/resource/board/board1.qml:133
 msgctxt "board1|"
@@ -7942,7 +8046,7 @@ msgstr "家庭"
 #: activities/family/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Select the name you should call this family member."
-msgstr ""
+msgstr "选择您应该称呼此家庭成员的名字。"
 
 #. Help goal
 #: activities/family/ActivityInfo.qml:20
@@ -7951,13 +8055,13 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Learn the relationships in a family, according to the lineal system used in "
 "most Western societies."
-msgstr ""
+msgstr "根据大多数西方社会使用的直系系统，了解家庭中的关系。"
 
 #. Help prerequisite
 #: activities/family/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid "Reading skills."
-msgstr ""
+msgstr "阅读技能。"
 
 #. Help manual
 #: activities/family/ActivityInfo.qml:24
@@ -7969,6 +8073,9 @@ msgid ""
 "You are the person in the white circle. Select the name you should call the "
 "person in the orange circle.\n"
 msgstr ""
+"显示了家谱。\n"
+"圆圈与线链接以标记关系。已婚夫妇在链接上标有圆环。\n"
+"你是白人圈子里的人。选择您应该在橙色圆圈中称呼此人的名字。\n"
 
 #: activities/family/Family.qml:227
 msgctxt "Family|"
@@ -7984,7 +8091,7 @@ msgstr "?"
 #, qt-format
 msgctxt "Family|"
 msgid "Select one of the pairs corresponding to: %1"
-msgstr ""
+msgstr "选择对应于以下内容的： %1"
 
 #: activities/family/FamilyDataset.qml:125
 #: activities/family/FamilyDataset.qml:126
@@ -8052,7 +8159,7 @@ msgstr "兄弟"
 #: activities/family/FamilyDataset.qml:364
 msgctxt "FamilyDataset|"
 msgid "Cousin"
-msgstr ""
+msgstr "堂姐妹"
 
 #: activities/family/FamilyDataset.qml:176
 #: activities/family/FamilyDataset.qml:204
@@ -8125,7 +8232,7 @@ msgstr "岳母/婆婆"
 #: activities/family/FamilyDataset.qml:605
 msgctxt "FamilyDataset|"
 msgid "Sister-in-law"
-msgstr ""
+msgstr "嫂子"
 
 #: activities/family/FamilyDataset.qml:495
 #: activities/family/FamilyDataset.qml:522
@@ -8135,7 +8242,7 @@ msgstr ""
 #: activities/family/FamilyDataset.qml:605
 msgctxt "FamilyDataset|"
 msgid "Brother-in-law"
-msgstr ""
+msgstr "姐夫"
 
 #: activities/family/FamilyDataset.qml:495
 #: activities/family/FamilyDataset.qml:522
@@ -8156,7 +8263,7 @@ msgstr "女婿"
 #: activities/family_find_relative/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Point the relatives"
-msgstr ""
+msgstr "点亲属点"
 
 #. Help title
 #: activities/family_find_relative/ActivityInfo.qml:17
@@ -8179,6 +8286,9 @@ msgid ""
 "marked with a ring on the link.\n"
 "Click on a pair of family members which corresponds to the given relation."
 msgstr ""
+"显示了家谱，其中包含一些说明。\n"
+"圆圈与线链接以标记关系。已婚夫妇在链接上标有圆环。\n"
+"单击与给定关系对应的一对家庭成员。"
 
 #. Activity title
 #: activities/fifteen/ActivityInfo.qml:15
@@ -8196,7 +8306,7 @@ msgstr "移动每项重建图像。"
 #: activities/fifteen/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Arrange the pieces in the right order."
-msgstr ""
+msgstr "按正确的顺序排列碎片。"
 
 #. Help manual
 #: activities/fifteen/ActivityInfo.qml:24
@@ -8204,30 +8314,30 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Click or drag on any piece next to the empty space, and it will move to the "
 "empty space."
-msgstr ""
+msgstr "单击或拖动空白区域旁边的任何一块，它将移动到空白区域。"
 
 #: activities/fifteen/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Arrows: move a piece to the empty space."
-msgstr ""
+msgstr "箭头：将一块移动到空白区域。"
 
 #. Activity title
 #: activities/find_the_day/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Find the day"
-msgstr ""
+msgstr "查找日期"
 
 #. Help title
 #: activities/find_the_day/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Find the correct date and select it on the calendar."
-msgstr ""
+msgstr "查找正确的日期并在日历上选择它。"
 
 #. Help goal
 #: activities/find_the_day/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Learn how to count days and find a date on a calendar."
-msgstr ""
+msgstr "了解如何计算天数和在日历上查找日期。"
 
 #. Help prerequisite
 #: activities/find_the_day/ActivityInfo.qml:22
@@ -8243,6 +8353,8 @@ msgid ""
 "date. Then select this date on the calendar, and validate your answer by "
 "clicking on the OK button."
 msgstr ""
+"阅读说明并执行请求的计算以查找日期。然后在日历上选择此日期，并通过单击“确"
+"定”按钮验证您的答案。"
 
 #: activities/find_the_day/find_the_day_dataset.js:35
 msgctxt "find_the_day_dataset|"
@@ -8262,117 +8374,117 @@ msgstr "找到七月十二日往后三十一天的日期。"
 #: activities/find_the_day/find_the_day_dataset.js:47
 msgctxt "find_the_day_dataset|"
 msgid "Find the date two weeks after November 27th."
-msgstr ""
+msgstr "找到 11 月 27 日两周后的日期。"
 
 #: activities/find_the_day/find_the_day_dataset.js:51
 msgctxt "find_the_day_dataset|"
 msgid "Find the date 19 days before September 1st."
-msgstr ""
+msgstr "查找 9 月 1 日前 19 天的日期。"
 
 #: activities/find_the_day/find_the_day_dataset.js:55
 msgctxt "find_the_day_dataset|"
 msgid "Find the date 5 days before December 8th."
-msgstr ""
+msgstr "在 12 月 8 日前 5 天找到日期。"
 
 #: activities/find_the_day/find_the_day_dataset.js:75
 msgctxt "find_the_day_dataset|"
 msgid "Find the day of the week 3 days after December 5th."
-msgstr ""
+msgstr "在 12 月 5 日之后的 3 天找到一周中的某一天。"
 
 #: activities/find_the_day/find_the_day_dataset.js:79
 msgctxt "find_the_day_dataset|"
 msgid "Find the day of the week 12 days before November 12th."
-msgstr ""
+msgstr "查找 11 月 12 日前 12 天一周中的某一天。"
 
 #: activities/find_the_day/find_the_day_dataset.js:83
 msgctxt "find_the_day_dataset|"
 msgid "Find the day of the week 32 days after January 5th."
-msgstr ""
+msgstr "查找 1 月 5 日之后 32 天的星期几。"
 
 #: activities/find_the_day/find_the_day_dataset.js:87
 msgctxt "find_the_day_dataset|"
 msgid "Find the day of the week 5 days after February 23rd."
-msgstr ""
+msgstr "查找 2 月 23 日之后 5 天的星期几。"
 
 #: activities/find_the_day/find_the_day_dataset.js:91
 msgctxt "find_the_day_dataset|"
 msgid "Find the day of the week 17 days before August 16th."
-msgstr ""
+msgstr "在 8 月 16 日前 17 天查找星期几。"
 
 #: activities/find_the_day/find_the_day_dataset.js:112
 msgctxt "find_the_day_dataset|"
 msgid "Find the date 2 weeks and 3 days after January 12th."
-msgstr ""
+msgstr "在 1 月 12 日之后的 2 周零 3 天找到日期。"
 
 #: activities/find_the_day/find_the_day_dataset.js:116
 msgctxt "find_the_day_dataset|"
 msgid "Find the date 3 weeks and 2 days after March 22nd."
-msgstr ""
+msgstr "在 3 月 22 日之后的 3 周零 2 天找到日期。"
 
 #: activities/find_the_day/find_the_day_dataset.js:120
 msgctxt "find_the_day_dataset|"
 msgid "Find the date 5 weeks and 6 days after October 5th."
-msgstr ""
+msgstr "在 10 月 5 日之后的 5 周零 6 天找到日期。"
 
 #: activities/find_the_day/find_the_day_dataset.js:124
 msgctxt "find_the_day_dataset|"
 msgid "Find the date 1 week and 1 day before August 8th."
-msgstr ""
+msgstr "在 8 月 8 日之前找到 1 周零 1 天的日期。"
 
 #: activities/find_the_day/find_the_day_dataset.js:128
 msgctxt "find_the_day_dataset|"
 msgid "Find the date 2 weeks and 5 days before July 2nd."
-msgstr ""
+msgstr "在 7 月 2 日之前 2 周零 5 天找到日期。"
 
 #: activities/find_the_day/find_the_day_dataset.js:148
 msgctxt "find_the_day_dataset|"
 msgid "Find the day of the week 5 months and 2 days after July 3rd."
-msgstr ""
+msgstr "查找 7 月 3 日之后 5 个月零 2 天的星期几。"
 
 #: activities/find_the_day/find_the_day_dataset.js:152
 msgctxt "find_the_day_dataset|"
 msgid "Find the day of the week 2 months and 4 days after October 8th."
-msgstr ""
+msgstr "查找 10 月 8 日之后 2 个月零 4 天的星期几。"
 
 #: activities/find_the_day/find_the_day_dataset.js:156
 msgctxt "find_the_day_dataset|"
 msgid "Find the day of the week 1 month and 3 days before December 28th."
-msgstr ""
+msgstr "在 12 月 28 日之前找到一周中的 1 个月零 3 天。"
 
 #: activities/find_the_day/find_the_day_dataset.js:160
 msgctxt "find_the_day_dataset|"
 msgid "Find the day of the week 8 months and 7 days after February 28th."
-msgstr ""
+msgstr "查找 2 月 28 日之后 8 个月零 7 天的星期几。"
 
 #: activities/find_the_day/find_the_day_dataset.js:164
 msgctxt "find_the_day_dataset|"
 msgid "Find the day of the week 3 months and 3 days before September 15th."
-msgstr ""
+msgstr "在 9 月 15 日之前 3 个月零 3 天找到一周中的某一天。"
 
 #: activities/find_the_day/find_the_day_dataset.js:183
 msgctxt "find_the_day_dataset|"
 msgid "Find the date 2 months, 1 week and 5 days after January 12th."
-msgstr ""
+msgstr "查找 1 月 12 日之后 2 个月、1 周和 5 天的日期。"
 
 #: activities/find_the_day/find_the_day_dataset.js:187
 msgctxt "find_the_day_dataset|"
 msgid "Find the date 3 months, 2 weeks and 1 day after August 23rd."
-msgstr ""
+msgstr "查找 8 月 23 日之后 3 个月、2 周和 1 天的日期。"
 
 #: activities/find_the_day/find_the_day_dataset.js:191
 msgctxt "find_the_day_dataset|"
 msgid "Find the date 5 months, 3 weeks and 2 days after March 20th."
-msgstr ""
+msgstr "查找 3 月 20 日之后 5 个月、3 周和 2 天的日期。"
 
 #: activities/find_the_day/find_the_day_dataset.js:195
 msgctxt "find_the_day_dataset|"
 msgid "Find the date 1 month 1 week and 1 day before September 10th."
-msgstr ""
+msgstr "查找 1 月 1 日前 1 周和 1 天的日期。"
 
 #: activities/find_the_day/find_the_day_dataset.js:199
 msgctxt "find_the_day_dataset|"
 msgid "Find the date 2 months, 1 week and 8 days before April 7th."
-msgstr ""
+msgstr "在 4 月 7 日之前找到 2 个月、1 周和 8 天的日期。"
 
 #. Activity title
 #: activities/followline/ActivityInfo.qml:15
@@ -8390,7 +8502,7 @@ msgstr "消防员需要给灭火，但是他的水管堵塞了。"
 #: activities/followline/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Fine motor coordination."
-msgstr ""
+msgstr "精细的运动协调。"
 
 #. Help manual
 #: activities/followline/ActivityInfo.qml:24
@@ -8419,7 +8531,7 @@ msgstr "踢球进洞."
 #: activities/football/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Kick the ball behind the goal keeper on the right."
-msgstr ""
+msgstr "将球踢到右侧守门员身后。"
 
 #. Help manual
 #: activities/football/ActivityInfo.qml:24
@@ -8427,35 +8539,35 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Drag a line from the ball to set its speed and direction, and release it to "
 "kick the ball."
-msgstr ""
+msgstr "从球上拖动一条线以设置其速度和方向，然后松开它以踢球。"
 
 #. Activity title
 #: activities/fractions_create/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Create the fractions"
-msgstr ""
+msgstr "创建分数"
 
 #. Help title
 #: activities/fractions_create/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "A shape split in equal parts is displayed on screen."
-msgstr ""
+msgstr "屏幕上将显示分割成相等部分的形状。"
 
 #: activities/fractions_create/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
 msgid ""
 "Select the appropriate number of parts as described in the instructions."
-msgstr ""
+msgstr "按照说明中的说明选择适当数量的部件。"
 
 #: activities/fractions_create/fractions_create.js:79
 msgctxt "fractions_create|"
 msgid "Find the represented fraction."
-msgstr ""
+msgstr "找到表示的分数。"
 
 #: activities/fractions_create/resource/1/Data.qml:9
 msgctxt "Data|"
 msgid "Simplified fractions with a pie."
-msgstr ""
+msgstr "带有饼图的简化分数。"
 
 #: activities/fractions_create/resource/1/Data.qml:18
 #: activities/fractions_create/resource/3/Data.qml:17
@@ -8463,75 +8575,75 @@ msgstr ""
 #: activities/fractions_create/resource/3/Data.qml:29
 msgctxt "Data|"
 msgid "Select one half of the pie."
-msgstr ""
+msgstr "选择饼图的一半。"
 
 #: activities/fractions_create/resource/1/Data.qml:24
 #: activities/fractions_create/resource/3/Data.qml:35
 #: activities/fractions_create/resource/3/Data.qml:49
 msgctxt "Data|"
 msgid "Select one-third of the pie."
-msgstr ""
+msgstr "选择饼图的三分之一。"
 
 #: activities/fractions_create/resource/1/Data.qml:30
 #: activities/fractions_create/resource/3/Data.qml:41
 #: activities/fractions_create/resource/3/Data.qml:55
 msgctxt "Data|"
 msgid "Select two-thirds of the pie."
-msgstr ""
+msgstr "选择饼图的三分之二。"
 
 #: activities/fractions_create/resource/1/Data.qml:36
 #: activities/fractions_create/resource/3/Data.qml:61
 msgctxt "Data|"
 msgid "Select one-quarter of the pie."
-msgstr ""
+msgstr "选择四分之一的饼图。"
 
 #: activities/fractions_create/resource/1/Data.qml:42
 #: activities/fractions_create/resource/3/Data.qml:67
 msgctxt "Data|"
 msgid "Select two-fifths of the pie."
-msgstr ""
+msgstr "选择五分之二的饼图。"
 
 #: activities/fractions_create/resource/1/Data.qml:50
 msgctxt "Data|"
 msgid "Select one pie and one-quarter of a pie."
-msgstr ""
+msgstr "选择一个饼图和四分之一的饼图。"
 
 #: activities/fractions_create/resource/1/Data.qml:56
 msgctxt "Data|"
 msgid "Select one pie and two-fifths of a pie."
-msgstr ""
+msgstr "选择一个饼图和五分之二的饼图。"
 
 #: activities/fractions_create/resource/1/Data.qml:62
 msgctxt "Data|"
 msgid "Select one pie and one-third of a pie."
-msgstr ""
+msgstr "选择一个饼图和三分之一的饼图。"
 
 #: activities/fractions_create/resource/1/Data.qml:68
 msgctxt "Data|"
 msgid "Select one pie and one half of a pie."
-msgstr ""
+msgstr "选择一个饼图和半个饼图。"
 
 #: activities/fractions_create/resource/1/Data.qml:74
 msgctxt "Data|"
 msgid "Select one pie and three-quarters of a pie."
-msgstr ""
+msgstr "选择一个饼图和四分之三的饼图。"
 
 #: activities/fractions_create/resource/10/Data.qml:9
 msgctxt "Data|"
 msgid "Specific questions with a square."
-msgstr ""
+msgstr "带有正方形的具体问题。"
 
 #: activities/fractions_create/resource/10/Data.qml:18
 #: activities/fractions_create/resource/10/Data.qml:24
 msgctxt "Data|"
 msgid ""
 "Select as many parts as you can without taking more than half of the square."
-msgstr ""
+msgstr "选择尽可能多的部分，不要超过正方形的一半。"
 
 #: activities/fractions_create/resource/2/Data.qml:9
 msgctxt "Data|"
 msgid "Simplified fractions with a square."
-msgstr ""
+msgstr "带平方的简化分数。"
 
 #: activities/fractions_create/resource/2/Data.qml:18
 #: activities/fractions_create/resource/4/Data.qml:17
@@ -8539,164 +8651,164 @@ msgstr ""
 #: activities/fractions_create/resource/4/Data.qml:29
 msgctxt "Data|"
 msgid "Select one half of the square."
-msgstr ""
+msgstr "选择正方形的一半。"
 
 #: activities/fractions_create/resource/2/Data.qml:24
 #: activities/fractions_create/resource/4/Data.qml:35
 #: activities/fractions_create/resource/4/Data.qml:49
 msgctxt "Data|"
 msgid "Select one-third of the square."
-msgstr ""
+msgstr "选择正方形的三分之一。"
 
 #: activities/fractions_create/resource/2/Data.qml:30
 #: activities/fractions_create/resource/4/Data.qml:41
 #: activities/fractions_create/resource/4/Data.qml:55
 msgctxt "Data|"
 msgid "Select two-thirds of the square."
-msgstr ""
+msgstr "选择正方形的三分之二。"
 
 #: activities/fractions_create/resource/2/Data.qml:36
 #: activities/fractions_create/resource/4/Data.qml:61
 msgctxt "Data|"
 msgid "Select one-quarter of the square."
-msgstr ""
+msgstr "选择正方形的四分之一。"
 
 #: activities/fractions_create/resource/2/Data.qml:42
 #: activities/fractions_create/resource/4/Data.qml:67
 msgctxt "Data|"
 msgid "Select two-fifths of the square."
-msgstr ""
+msgstr "选择正方形的五分之二。"
 
 #: activities/fractions_create/resource/2/Data.qml:50
 msgctxt "Data|"
 msgid "Select one square and one-quarter of a square."
-msgstr ""
+msgstr "选择一个正方形和四分之一的正方形。"
 
 #: activities/fractions_create/resource/2/Data.qml:56
 msgctxt "Data|"
 msgid "Select one square and two-fifths of a square."
-msgstr ""
+msgstr "选择一个正方形和五分之二的正方形。"
 
 #: activities/fractions_create/resource/2/Data.qml:62
 msgctxt "Data|"
 msgid "Select one square and one-third of a square."
-msgstr ""
+msgstr "选择一个正方形和三分之一的正方形。"
 
 #: activities/fractions_create/resource/2/Data.qml:68
 msgctxt "Data|"
 msgid "Select one square and one half of a square."
-msgstr ""
+msgstr "选择一个正方形和半个正方形。"
 
 #: activities/fractions_create/resource/2/Data.qml:74
 msgctxt "Data|"
 msgid "Select one square and three-quarters of a square."
-msgstr ""
+msgstr "选择一个正方形和四分之三的正方形。"
 
 #: activities/fractions_create/resource/3/Data.qml:9
 msgctxt "Data|"
 msgid "Non-simplified fractions with a pie."
-msgstr ""
+msgstr "带有饼图的非简化分数。"
 
 #: activities/fractions_create/resource/3/Data.qml:73
 msgctxt "Data|"
 msgid "Select three-fifths of the pie."
-msgstr ""
+msgstr "选择五分之三的饼图。"
 
 #: activities/fractions_create/resource/4/Data.qml:9
 msgctxt "Data|"
 msgid "Non-simplified fractions with a square."
-msgstr ""
+msgstr "带有正方形的非简化分数。"
 
 #: activities/fractions_create/resource/4/Data.qml:73
 msgctxt "Data|"
 msgid "Select three-fifths of the square."
-msgstr ""
+msgstr "选择正方形的五分之三。"
 
 #: activities/fractions_create/resource/5/Data.qml:9
 msgctxt "Data|"
 msgid "Decimal numbers with a pie."
-msgstr ""
+msgstr "带饼图的十进制数。"
 
 #: activities/fractions_create/resource/5/Data.qml:18
 msgctxt "Data|"
 msgid "Select 0.5 pie."
-msgstr ""
+msgstr "选择 0.5 饼图。"
 
 #: activities/fractions_create/resource/5/Data.qml:24
 msgctxt "Data|"
 msgid "Select 0.25 pie."
-msgstr ""
+msgstr "选择 0.25 饼图。"
 
 #: activities/fractions_create/resource/5/Data.qml:30
 msgctxt "Data|"
 msgid "Select 0.4 pie."
-msgstr ""
+msgstr "选择 0.4 饼图。"
 
 #: activities/fractions_create/resource/5/Data.qml:36
 msgctxt "Data|"
 msgid "Select 0.75 pie."
-msgstr ""
+msgstr "选择 0.75 饼图。"
 
 #: activities/fractions_create/resource/5/Data.qml:42
 msgctxt "Data|"
 msgid "Select 0.8 pie."
-msgstr ""
+msgstr "选择 0.8 饼图。"
 
 #: activities/fractions_create/resource/5/Data.qml:50
 msgctxt "Data|"
 msgid "Select 1.25 pies."
-msgstr ""
+msgstr "选择 1.25 个饼图。"
 
 #: activities/fractions_create/resource/5/Data.qml:56
 msgctxt "Data|"
 msgid "Select 1.4 pies."
-msgstr ""
+msgstr "选择 1.4 个饼图。"
 
 #: activities/fractions_create/resource/5/Data.qml:62
 #: activities/fractions_create/resource/5/Data.qml:68
 msgctxt "Data|"
 msgid "Select 1.5 pies."
-msgstr ""
+msgstr "选择 1.5 个饼图。"
 
 #: activities/fractions_create/resource/5/Data.qml:74
 msgctxt "Data|"
 msgid "Select 1.75 pies."
-msgstr ""
+msgstr "选择 1.75 个饼图。"
 
 #: activities/fractions_create/resource/6/Data.qml:9
 msgctxt "Data|"
 msgid "Decimal numbers with a square."
-msgstr ""
+msgstr "带正方形的十进制数。"
 
 #: activities/fractions_create/resource/6/Data.qml:18
 msgctxt "Data|"
 msgid "Select 0.5 square."
-msgstr ""
+msgstr "选择 0.5 正方形。"
 
 #: activities/fractions_create/resource/6/Data.qml:24
 msgctxt "Data|"
 msgid "Select 0.25 square."
-msgstr ""
+msgstr "选择 0.25 平方。"
 
 #: activities/fractions_create/resource/6/Data.qml:30
 msgctxt "Data|"
 msgid "Select 0.4 square."
-msgstr ""
+msgstr "选择 0.4 平方。"
 
 #: activities/fractions_create/resource/6/Data.qml:36
 msgctxt "Data|"
 msgid "Select 0.75 square."
-msgstr ""
+msgstr "选择 0.75 平方。"
 
 #: activities/fractions_create/resource/6/Data.qml:42
 msgctxt "Data|"
 msgid "Select 0.8 square."
-msgstr ""
+msgstr "选择 0.8 平方。"
 
 #: activities/fractions_create/resource/6/Data.qml:50
 msgctxt "Data|"
 msgid "Select 1.25 squares."
-msgstr ""
+msgstr "选择 1.25 平方。"
 
 #: activities/fractions_create/resource/6/Data.qml:56
 msgctxt "Data|"
@@ -8797,12 +8909,12 @@ msgstr ""
 #: activities/fractions_find/resource/5/Data.qml:9
 msgctxt "Data|"
 msgid "Find numerator and denominator (with a pie)."
-msgstr ""
+msgstr "查找分子和分母（带饼图）。"
 
 #: activities/fractions_find/resource/6/Data.qml:9
 msgctxt "Data|"
 msgid "Find numerator and denominator (with a square)."
-msgstr ""
+msgstr "查找分子和分母（带正方形）。"
 
 #. Activity title
 #: activities/geo-country/ActivityInfo.qml:19
@@ -8814,7 +8926,7 @@ msgstr "定位区域"
 #: activities/geo-country/ActivityInfo.qml:21
 msgctxt "ActivityInfo|"
 msgid "Drag and Drop the regions to complete the country maps."
-msgstr ""
+msgstr "拖放区域以完成国家/地区地图。"
 
 #. Help manual
 #: activities/geo-country/ActivityInfo.qml:28
@@ -8822,7 +8934,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Drag and drop different regions of the country to their correct locations to "
 "complete the map."
-msgstr ""
+msgstr "将该国的不同地区拖放到正确的位置以完成地图。"
 
 #: activities/geo-country/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -8949,7 +9061,7 @@ msgstr "明尼苏达"
 #: activities/geo-country/resource/board/board10_0.qml:136
 msgctxt "board10_0|"
 msgid "Iowa"
-msgstr ""
+msgstr "爱荷华州"
 
 #. State of America: Missouri
 #: activities/geo-country/resource/board/board10_0.qml:143
@@ -9045,7 +9157,7 @@ msgstr "南卡罗来纳"
 #: activities/geo-country/resource/board/board10_0.qml:248
 msgctxt "board10_0|"
 msgid "Georgia"
-msgstr ""
+msgstr "格鲁吉亚"
 
 #. State of America: Florida
 #: activities/geo-country/resource/board/board10_0.qml:255
@@ -9099,7 +9211,7 @@ msgstr "佛蒙特"
 #: activities/geo-country/resource/board/board10_0.qml:311
 msgctxt "board10_0|"
 msgid "New Hampshire"
-msgstr ""
+msgstr "新罕布什尔州"
 
 #. State of America: Maine
 #: activities/geo-country/resource/board/board10_0.qml:318
@@ -9158,19 +9270,19 @@ msgstr "意大利地区"
 #: activities/geo-country/resource/board/board11_0.qml:24
 msgctxt "board11_0|"
 msgid "Liguria"
-msgstr ""
+msgstr "利古里亚"
 
 #. Region of Italy: Piedmont
 #: activities/geo-country/resource/board/board11_0.qml:31
 msgctxt "board11_0|"
 msgid "Piedmont"
-msgstr ""
+msgstr "皮德蒙特"
 
 #. Region of Italy: Aosta Valley
 #: activities/geo-country/resource/board/board11_0.qml:38
 msgctxt "board11_0|"
 msgid "Aosta Valley"
-msgstr ""
+msgstr "瓦莱达奥斯塔"
 
 #. Region of Italy: Lombardy
 #: activities/geo-country/resource/board/board11_0.qml:45
@@ -9182,43 +9294,43 @@ msgstr "伦巴蒂"
 #: activities/geo-country/resource/board/board11_0.qml:52
 msgctxt "board11_0|"
 msgid "Trentino-South Tyrol"
-msgstr ""
+msgstr "特伦蒂诺-南蒂罗尔"
 
 #. Region of Italy: Veneto
 #: activities/geo-country/resource/board/board11_0.qml:59
 msgctxt "board11_0|"
 msgid "Veneto"
-msgstr ""
+msgstr "威尼托"
 
 #. Region of Italy: Friuli Venezia Giulia
 #: activities/geo-country/resource/board/board11_0.qml:66
 msgctxt "board11_0|"
 msgid "Friuli Venezia Giulia"
-msgstr ""
+msgstr "弗留利-威尼斯-朱利亚"
 
 #. Region of Italy: Emilia-Romagna
 #: activities/geo-country/resource/board/board11_0.qml:73
 msgctxt "board11_0|"
 msgid "Emilia-Romagna"
-msgstr ""
+msgstr "艾米利亚-罗马涅"
 
 #. Region of Italy: Tuscany
 #: activities/geo-country/resource/board/board11_0.qml:80
 msgctxt "board11_0|"
 msgid "Tuscany"
-msgstr ""
+msgstr "托斯卡尼"
 
 #. Region of Italy: Umbria
 #: activities/geo-country/resource/board/board11_0.qml:87
 msgctxt "board11_0|"
 msgid "Umbria"
-msgstr ""
+msgstr "安不利亚"
 
 #. Region of Italy: Marche
 #: activities/geo-country/resource/board/board11_0.qml:94
 msgctxt "board11_0|"
 msgid "Marche"
-msgstr ""
+msgstr "马尔凯"
 
 #. Region of Italy: Lazio
 #: activities/geo-country/resource/board/board11_0.qml:101
@@ -9230,37 +9342,37 @@ msgstr "拉齐奥"
 #: activities/geo-country/resource/board/board11_0.qml:108
 msgctxt "board11_0|"
 msgid "Abruzzo"
-msgstr ""
+msgstr "阿布鲁佐"
 
 #. Region of Italy: Molise
 #: activities/geo-country/resource/board/board11_0.qml:115
 msgctxt "board11_0|"
 msgid "Molise"
-msgstr ""
+msgstr "莫利赛"
 
 #. Region of Italy: Campania
 #: activities/geo-country/resource/board/board11_0.qml:122
 msgctxt "board11_0|"
 msgid "Campania"
-msgstr ""
+msgstr "坎佩尼亚"
 
 #. Region of Italy: Apulia
 #: activities/geo-country/resource/board/board11_0.qml:129
 msgctxt "board11_0|"
 msgid "Apulia"
-msgstr ""
+msgstr "阿普利亚"
 
 #. Region of Italy: Basilicata
 #: activities/geo-country/resource/board/board11_0.qml:136
 msgctxt "board11_0|"
 msgid "Basilicata"
-msgstr ""
+msgstr "巴西利卡塔"
 
 #. Region of Italy: Calabria
 #: activities/geo-country/resource/board/board11_0.qml:143
 msgctxt "board11_0|"
 msgid "Calabria"
-msgstr ""
+msgstr "卡拉布里亚"
 
 #. Region of Italy: Sicily
 #: activities/geo-country/resource/board/board11_0.qml:150
@@ -9272,18 +9384,18 @@ msgstr "西西里"
 #: activities/geo-country/resource/board/board11_0.qml:157
 msgctxt "board11_0|"
 msgid "Sardinia"
-msgstr ""
+msgstr "撒丁岛"
 
 #: activities/geo-country/resource/board/board12_0.qml:15
 msgctxt "board12_0|"
 msgid "States and Union Territories of India"
-msgstr ""
+msgstr "印度各州和中央直辖区"
 
 #. State of India: Himachal Pradesh
 #: activities/geo-country/resource/board/board12_0.qml:24
 msgctxt "board12_0|"
 msgid "Himachal Pradesh"
-msgstr ""
+msgstr "喜马偕尔邦"
 
 #. State of India: Punjab
 #: activities/geo-country/resource/board/board12_0.qml:31
@@ -9295,61 +9407,61 @@ msgstr "旁遮普"
 #: activities/geo-country/resource/board/board12_0.qml:38
 msgctxt "board12_0|"
 msgid "Uttarakhand"
-msgstr ""
+msgstr "北阿坎德"
 
 #. State of India: Rajasthan
 #: activities/geo-country/resource/board/board12_0.qml:45
 msgctxt "board12_0|"
 msgid "Rajasthan"
-msgstr ""
+msgstr "拉贾斯坦"
 
 #. State of India: Uttar Pradesh
 #: activities/geo-country/resource/board/board12_0.qml:52
 msgctxt "board12_0|"
 msgid "Uttar Pradesh"
-msgstr ""
+msgstr "北方邦"
 
 #. State of India: Bihar
 #: activities/geo-country/resource/board/board12_0.qml:59
 msgctxt "board12_0|"
 msgid "Bihar"
-msgstr ""
+msgstr "比哈尔"
 
 #. State of India: Gujarat
 #: activities/geo-country/resource/board/board12_0.qml:66
 msgctxt "board12_0|"
 msgid "Gujarat"
-msgstr ""
+msgstr "古吉拉特"
 
 #. State of India: Haryana
 #: activities/geo-country/resource/board/board12_0.qml:73
 msgctxt "board12_0|"
 msgid "Haryana"
-msgstr ""
+msgstr "哈里亚纳"
 
 #. State of India: Madhya Pradesh
 #: activities/geo-country/resource/board/board12_0.qml:80
 msgctxt "board12_0|"
 msgid "Madhya Pradesh"
-msgstr ""
+msgstr "孟加拉国"
 
 #. State of India: Jharkhand
 #: activities/geo-country/resource/board/board12_0.qml:87
 msgctxt "board12_0|"
 msgid "Jharkhand"
-msgstr ""
+msgstr "贾坎德"
 
 #. State of India: Maharashtra
 #: activities/geo-country/resource/board/board12_0.qml:94
 msgctxt "board12_0|"
 msgid "Maharashtra"
-msgstr ""
+msgstr "马哈拉施特拉邦"
 
 #. State of India: Chhattisgarh
 #: activities/geo-country/resource/board/board12_0.qml:101
 msgctxt "board12_0|"
 msgid "Chhattisgarh"
-msgstr ""
+msgstr "恰蒂斯加尔邦"
 
 #. State of India: Goa
 #: activities/geo-country/resource/board/board12_0.qml:108
@@ -9361,49 +9473,49 @@ msgstr "果阿"
 #: activities/geo-country/resource/board/board12_0.qml:115
 msgctxt "board12_0|"
 msgid "Karnataka"
-msgstr ""
+msgstr "卡纳塔克"
 
 #. State of India: Telangana
 #: activities/geo-country/resource/board/board12_0.qml:122
 msgctxt "board12_0|"
 msgid "Telangana"
-msgstr ""
+msgstr "特伦甘纳"
 
 #. State of India: Andhra Pradesh
 #: activities/geo-country/resource/board/board12_0.qml:130
 msgctxt "board12_0|"
 msgid "Andhra Pradesh"
-msgstr ""
+msgstr "安得拉邦"
 
 #. State of India: Kerala
 #: activities/geo-country/resource/board/board12_0.qml:137
 msgctxt "board12_0|"
 msgid "Kerala"
-msgstr ""
+msgstr "克尔曼"
 
 #. State of India: Tamil Nadu
 #: activities/geo-country/resource/board/board12_0.qml:144
 msgctxt "board12_0|"
 msgid "Tamil Nadu"
-msgstr ""
+msgstr "泰米尔纳德"
 
 #. State of India: West Bengal
 #: activities/geo-country/resource/board/board12_0.qml:151
 msgctxt "board12_0|"
 msgid "West Bengal"
-msgstr ""
+msgstr "西孟加拉邦"
 
 #. State of India: Sikkim
 #: activities/geo-country/resource/board/board12_0.qml:158
 msgctxt "board12_0|"
 msgid "Sikkim"
-msgstr ""
+msgstr "锡金"
 
 #. State of India: Assam
 #: activities/geo-country/resource/board/board12_0.qml:165
 msgctxt "board12_0|"
 msgid "Assam"
-msgstr ""
+msgstr "阿萨姆"
 
 #. State of India: Arunachal Pradesh
 #: activities/geo-country/resource/board/board12_0.qml:172
@@ -9855,138 +9967,138 @@ msgstr ""
 #: activities/geo-country/resource/board/board15_1.qml:94
 msgctxt "board15_1|"
 msgid "Edinburgh"
-msgstr ""
+msgstr "爱丁堡"
 
 #. Council areas of Scotland: Falkirk
 #: activities/geo-country/resource/board/board15_1.qml:101
 msgctxt "board15_1|"
 msgid "Falkirk"
-msgstr ""
+msgstr "福尔柯克"
 
 #. Council areas of Scotland: South Lanarkshire
 #: activities/geo-country/resource/board/board15_1.qml:108
 msgctxt "board15_1|"
 msgid "South Lanarkshire"
-msgstr ""
+msgstr "南拉纳克谢尔"
 
 #. Council areas of Scotland: North Lanarkshire
 #: activities/geo-country/resource/board/board15_1.qml:115
 msgctxt "board15_1|"
 msgid "North Lanarkshire"
-msgstr ""
+msgstr "北拉纳克郡"
 
 #. Council areas of Scotland: Dumfries and Galloway
 #: activities/geo-country/resource/board/board15_1.qml:122
 msgctxt "board15_1|"
 msgid "Dumfries and Galloway"
-msgstr ""
+msgstr "邓弗里斯和加洛韦"
 
 #. Council areas of Scotland: South Ayrshire
 #: activities/geo-country/resource/board/board15_1.qml:129
 msgctxt "board15_1|"
 msgid "South Ayrshire"
-msgstr ""
+msgstr "南拉纳克谢尔"
 
 #. Council areas of Scotland: East Ayrshire
 #: activities/geo-country/resource/board/board15_1.qml:136
 msgctxt "board15_1|"
 msgid "East Ayrshire"
-msgstr ""
+msgstr "东艾尔郡"
 
 #. Council areas of Scotland: Glasgow
 #: activities/geo-country/resource/board/board15_1.qml:143
 msgctxt "board15_1|"
 msgid "Glasgow"
-msgstr ""
+msgstr "格拉斯哥"
 
 #. Council areas of Scotland: East Dunbartonshire
 #: activities/geo-country/resource/board/board15_1.qml:150
 msgctxt "board15_1|"
 msgid "East Dunbartonshire"
-msgstr ""
+msgstr "东邓巴顿郡"
 
 #. Council areas of Scotland: West Dunbartonshire
 #: activities/geo-country/resource/board/board15_1.qml:157
 msgctxt "board15_1|"
 msgid "West Dunbartonshire"
-msgstr ""
+msgstr "西邓巴顿郡"
 
 #. Council areas of Scotland: East Renfrewshire
 #: activities/geo-country/resource/board/board15_1.qml:164
 msgctxt "board15_1|"
 msgid "East Renfrewshire"
-msgstr ""
+msgstr "东伦弗利瓦尔省"
 
 #. Council areas of Scotland: Renfrewshire
 #: activities/geo-country/resource/board/board15_1.qml:171
 msgctxt "board15_1|"
 msgid "Renfrewshire"
-msgstr ""
+msgstr "潘杰希尔"
 
 #. Council areas of Scotland: Inverclyde
 #: activities/geo-country/resource/board/board15_1.qml:178
 msgctxt "board15_1|"
 msgid "Inverclyde"
-msgstr ""
+msgstr "因弗克莱德"
 
 #. Council areas of Scotland: North Ayrshire
 #: activities/geo-country/resource/board/board15_1.qml:185
 msgctxt "board15_1|"
 msgid "North Ayrshire"
-msgstr ""
+msgstr "南拉纳克谢尔"
 
 #. Council areas of Scotland: Clackmannanshire
 #: activities/geo-country/resource/board/board15_1.qml:192
 msgctxt "board15_1|"
 msgid "Clackmannanshire"
-msgstr ""
+msgstr "克拉克曼南郡"
 
 #: activities/geo-country/resource/board/board16_0.qml:15
 msgctxt "board16_0|"
 msgid "Historical regions of Romania"
-msgstr ""
+msgstr "罗马尼亚历史地区"
 
 #. Historical Region of Romania: Oltenia
 #: activities/geo-country/resource/board/board16_0.qml:24
 msgctxt "board16_0|"
 msgid "Oltenia"
-msgstr ""
+msgstr "奥尔特尼亚"
 
 #. Historical Region of Romania: Muntenia
 #: activities/geo-country/resource/board/board16_0.qml:31
 msgctxt "board16_0|"
 msgid "Muntenia"
-msgstr ""
+msgstr "蒙托尼亚州"
 
 #. Historical Region of Romania: Northern Dobruja
 #: activities/geo-country/resource/board/board16_0.qml:38
 msgctxt "board16_0|"
 msgid "Northern Dobruja"
-msgstr ""
+msgstr "北多布鲁亚"
 
 #. Historical Region of Romania: Moldavia
 #: activities/geo-country/resource/board/board16_0.qml:45
 msgctxt "board16_0|"
 msgid "Moldavia"
-msgstr ""
+msgstr "摩尔达维亚"
 
 #. Historical Region of Romania: Bukovina
 #: activities/geo-country/resource/board/board16_0.qml:52
 msgctxt "board16_0|"
 msgid "Bukovina"
-msgstr ""
+msgstr "布科维纳"
 
 #. Historical Region of Romania: Transylvania
 #: activities/geo-country/resource/board/board16_0.qml:59
 msgctxt "board16_0|"
 msgid "Transylvania"
-msgstr ""
+msgstr "特兰西瓦尼亚"
 
 #. Historical Region of Romania: Maramureș
 #: activities/geo-country/resource/board/board16_0.qml:66
 msgctxt "board16_0|"
 msgid "Maramureș"
-msgstr ""
+msgstr "马拉穆雷什"
 
 #. Historical Region of Romania: Crișana
 #: activities/geo-country/resource/board/board16_0.qml:73
@@ -23433,12 +23545,9 @@ msgid ""
 msgstr ""
 
 #: core/ChangeLog.qml:31
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translation updated for Russian"
 msgctxt "ChangeLog|"
 msgid "Many translation updates"
-msgstr "俄文翻译已更新"
+msgstr "许多翻译更新"
 
 #: core/ChangeLog.qml:32 core/ChangeLog.qml:45 core/ChangeLog.qml:63
 #: core/ChangeLog.qml:78 core/ChangeLog.qml:83 core/ChangeLog.qml:89
@@ -24227,6 +24336,8 @@ msgid ""
 "Specify the range of activity difficulty to display for the session. Either "
 "a single value (2), or a range (3-6). Values must be between 1 and 6."
 msgstr ""
+"指定要为会话显示的活动难度范围。单个值 （2） 或范围 （3-6）。值必须介于 1 和 "
+"6 之间。"
 
 #: core/main.qml:233
 msgctxt "main|"

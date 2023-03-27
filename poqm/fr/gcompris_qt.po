@@ -18816,7 +18816,7 @@ msgid ""
 msgstr ""
 "On te demande soit d'envoyer un message en Morse, soit de convertir le "
 "message Morse reçu en lettres ou en chiffres. Pour apprendre le code Morse, "
-"tu  peux consulter la carte de traduction qui contient le code de toutes les "
+"tu peux consulter la carte de traduction qui contient le code de toutes les "
 "lettres et de tous les chiffres."
 
 #: activities/morse_code/FirstScreen.qml:25

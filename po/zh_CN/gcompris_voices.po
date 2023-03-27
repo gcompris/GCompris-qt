@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-12-17 02:40+0000\n"
-"PO-Revision-Date: 2023-03-11 04:54\n"
+"PO-Revision-Date: 2023-03-26 02:20\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
@@ -289,7 +289,7 @@ msgstr "单击正确的颜色"
 #, kde-format
 msgid ""
 "Select the correct comparator sign for each pair of numbers in the list."
-msgstr ""
+msgstr "为列表中的每对数字选择正确的比较符号。"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "crane"
 #: activities/crane/ActivityInfo.qml:23
@@ -418,13 +418,13 @@ msgstr "从球上拖出一条线来设定你踢球的速度和方向。"
 #, kde-format
 msgid ""
 "Select the appropriate number of parts as described in the instructions."
-msgstr ""
+msgstr "按照说明中的说明选择适当数量的部件。"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "fractions_find"
 #: activities/fractions_find/ActivityInfo.qml:17
 #, kde-format
 msgid "Find the correct numerator and denominator of the represented fraction"
-msgstr ""
+msgstr "找到所表示分数的正确分子和分母"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "geo-country"
 #: activities/geo-country/ActivityInfo.qml:22
@@ -616,7 +616,7 @@ msgstr "拖动箭头选择一定数量的橙子，并将橙子拖到空白区域
 #, kde-format
 msgid ""
 "Move animals to their homes using a left click or right click on your mouse."
-msgstr ""
+msgstr "使用鼠标左键单击或右键单击将动物移动到它们的家中。"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "leftright"
 #: activities/leftright/ActivityInfo.qml:18
@@ -801,7 +801,7 @@ msgstr "点击钱支付。"
 #: activities/morse_code/ActivityInfo.qml:21
 #, kde-format
 msgid "Learn and practice the International Morse code"
-msgstr ""
+msgstr "学习和练习国际摩尔斯电码"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "mosaic"
 #: activities/mosaic/ActivityInfo.qml:18
@@ -1100,6 +1100,8 @@ msgid ""
 "Create pairs of numbers equal to ten. Select a number in the list, then "
 "select an empty spot of an operation to move the selected number there."
 msgstr ""
+"创建等于 10 的数字对。在列表中选择一个数字，然后选择操作的空白点以将所选数字"
+"移动到该位置。"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "tens_complement_swap"
 #: activities/tens_complement_swap/ActivityInfo.qml:17
@@ -1108,6 +1110,8 @@ msgid ""
 "Create pairs of numbers equal to ten. Select a number, then select another "
 "number of the same operation to swap their position."
 msgstr ""
+"创建等于 10 的数字对。选择一个数字，然后选择相同操作的另一个数字以交换其位"
+"置。"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "tens_complement_use"
 #: activities/tens_complement_use/ActivityInfo.qml:17
@@ -1117,6 +1121,8 @@ msgid ""
 "number in the list, then select an empty spot of an operation to move the "
 "selected number there."
 msgstr ""
+"分解运算以包含一对等于 10 的数字。在列表中选择一个数字，然后选择操作的空白点"
+"以将所选数字移动到该位置。"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "tic_tac_toe_2players"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "tic_tac_toe"
@@ -1147,4 +1153,4 @@ msgstr "单击构成供水的各种活动元素。然后按下Tux的淋浴按钮
 #: activities/wordsgame/ActivityInfo.qml:18
 #, kde-format
 msgid "Type the words on your keyboard before they reach the ground."
-msgstr "在他们落到地面之前，先在键盘上输入单词。"
+msgstr "在单词到达地面之前在键盘上键入单词。"
