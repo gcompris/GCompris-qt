@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2023-03-19 19:16+0200\n"
+"PO-Revision-Date: 2023-03-26 11:44+0300\n"
 "Last-Translator: Stelios <sstavra@gmail.com>\n"
 "Language-Team: Greek <kde-i18n-el@kde.org>\n"
 "Language: el\n"
@@ -25511,26 +25511,18 @@ msgid "Type the complete word as it falls, before it reaches the ground."
 msgstr "Πληκτρολόγησε τη λέξη πριν αυτή πέσει στο έδαφος."
 
 #: core/ChangeLog.qml:30
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid ""
-#| "New command-line option to list all the activities and start on a "
-#| "specific one"
 msgctxt "ChangeLog|"
 msgid ""
 "New command-line option (--difficulty {value|min-max}) to start GCompris at "
 "specific difficulty"
 msgstr ""
-"Νέα επιλογή γραμμής εντολών για τη λίστα όλων των δραστηριοτήτων και την "
-"έναρξη μιας συγκεκριμένης."
+"Νέα επιλογή γραμμής εντολών (--difficulty {value|min-max}) για να ξεκινά το "
+"GCompris σε συγκεκριμένο επίπεδο δυσκολίας."
 
 #: core/ChangeLog.qml:31
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translation updated for Russian"
 msgctxt "ChangeLog|"
 msgid "Many translation updates"
-msgstr "Ενημερώθηκε η μετάφραση για τα Ρωσικά"
+msgstr "Πολλές ενημερώσεις στις μεταφράσεις"
 
 #: core/ChangeLog.qml:32 core/ChangeLog.qml:45 core/ChangeLog.qml:63
 #: core/ChangeLog.qml:78 core/ChangeLog.qml:83 core/ChangeLog.qml:89
@@ -25547,7 +25539,7 @@ msgstr "Πολλές διορθώσεις σφαλμάτων."
 #: core/ChangeLog.qml:37
 msgctxt "ChangeLog|"
 msgid "Fix issue in comparator activity"
-msgstr ""
+msgstr "Διόρθωση προβλήματος στη δραστηριότητα 'Συγκρίνω αριθμούς'"
 
 #: core/ChangeLog.qml:41
 msgctxt "ChangeLog|"
@@ -26384,6 +26376,9 @@ msgid ""
 "Specify the range of activity difficulty to display for the session. Either "
 "a single value (2), or a range (3-6). Values must be between 1 and 6."
 msgstr ""
+"Καθορίστε το εύρος δυσκολίας της δραστηριότητας που θα ισχύει για τη "
+"συνεδρία. Είτε με μια μεμονωμένη τιμή (2) είτε με ένα εύρος (3-6). Οι τιμές "
+"πρέπει να είναι μεταξύ 1 και 6."
 
 #: core/main.qml:233
 msgctxt "main|"
