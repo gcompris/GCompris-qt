@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2014-12-25 01:10+0000\n"
-"PO-Revision-Date: 2023-03-18 11:24+0100\n"
+"PO-Revision-Date: 2023-03-27 10:39+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca@valencia\n"
@@ -25611,14 +25611,15 @@ msgctxt "ActivityInfo|"
 msgid "Type the complete word as it falls, before it reaches the ground."
 msgstr "Escriviu la paraula completa mentre cau, abans que arribe a terra."
 
+# skip-rule: t-pu_sp
 #: core/ChangeLog.qml:30
 msgctxt "ChangeLog|"
 msgid ""
 "New command-line option (--difficulty {value|min-max}) to start GCompris at "
 "specific difficulty"
 msgstr ""
-"Opció nova de la línia d'ordres (--difficulty {valor|mín-màx}) per a iniciar "
-"GCompris amb una dificultat específica"
+"Opció nova de la línia d'ordres (--difficulty {valor|mín.-màx.}) per a "
+"iniciar GCompris amb una dificultat específica"
 
 #: core/ChangeLog.qml:31
 msgctxt "ChangeLog|"

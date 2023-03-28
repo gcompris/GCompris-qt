@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2023-03-18 12:43+0300\n"
+"PO-Revision-Date: 2023-03-27 20:45+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -782,7 +782,7 @@ msgstr "Basamaklar: Yanıtını yaz"
 #: activities/algebra_plus/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Backspace: delete the last digit in your answer"
-msgstr "Geri düğmesi: Yanıtındaki son basamağı sil"
+msgstr "Geri Sil: Yanıtındaki son basamağı sil"
 
 #: activities/algebra_by/ActivityInfo.qml:28
 #: activities/algebra_div/ActivityInfo.qml:28
@@ -13987,7 +13987,7 @@ msgstr "Basamaklar: Bir sayı gir"
 #: activities/guessnumber/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Backspace: erase a number"
-msgstr "Geri: Bir sayı sil"
+msgstr "Geri Sil: Bir sayı sil"
 
 #: activities/guessnumber/guessnumber.js:62
 #: activities/guessnumber/guessnumber.js:66
@@ -19864,7 +19864,7 @@ msgstr "Sol ve Sağ oklar: Klavye oktavını değiştir"
 #: activities/piano_composition/ActivityInfo.qml:38
 msgctxt "ActivityInfo|"
 msgid "Backspace: undo"
-msgstr "Geri tuşu: Geri al"
+msgstr "Geri Sil: Geri al"
 
 #: activities/piano_composition/ActivityInfo.qml:39
 msgctxt "ActivityInfo|"
@@ -20479,7 +20479,7 @@ msgstr ""
 #: activities/play_piano/ActivityInfo.qml:34
 msgctxt "ActivityInfo|"
 msgid "Backspace or Delete: undo"
-msgstr "Geri veya Sil: Geri al"
+msgstr "Sil veya Geri Sil: Geri al"
 
 #: activities/play_piano/PlayPiano.qml:172
 msgctxt "PlayPiano|"
@@ -21054,7 +21054,7 @@ msgstr ""
 #: activities/railroad/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
 msgid "Delete or Backspace: remove the selected item from the answer area"
-msgstr "Sil veya Geri: Seçili ögeyi yanıt alanından kaldır"
+msgstr "Sil veya Geri Sil: Seçili ögeyi yanıt alanından kaldır"
 
 #: activities/railroad/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
