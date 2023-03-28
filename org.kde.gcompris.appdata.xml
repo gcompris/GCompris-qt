@@ -1109,6 +1109,7 @@
     <value key="KDE::windows_store">https://www.microsoft.com/store/apps/9pgxjtcxn8qm</value>
   </custom>
   <releases>
+    <release version="3.2" date="2023-03-29"/>
     <release version="3.1" date="2023-01-21"/>
     <release version="3.0" date="2023-01-18"/>
     <release version="2.4" date="2022-04-13"/>
