@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2023-01-15 18:11+0100\n"
+"PO-Revision-Date: 2023-03-28 20:56+0200\n"
 "Last-Translator: Aiswarya Kaitheri Kandoth <aiswaryakk29@gmail.com>\n"
 "Language-Team: Malayalam <kde-i18n-doc@kde.org>\n"
 "Language: ml\n"
@@ -24711,26 +24711,18 @@ msgid "Type the complete word as it falls, before it reaches the ground."
 msgstr "വീണു കൊണ്ടിരിക്കുന്ന വാക്ക് താഴെയെത്തുന്നതിനു മുമ്പ് കീബോർഡിൽ ടൈപ്പ് ചെയ്യുക."
 
 #: core/ChangeLog.qml:30
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid ""
-#| "New command-line option to list all the activities and start on a "
-#| "specific one"
 msgctxt "ChangeLog|"
 msgid ""
 "New command-line option (--difficulty {value|min-max}) to start GCompris at "
 "specific difficulty"
 msgstr ""
-"എല്ലാ പ്രവർത്തനങ്ങളു പട്ടികപ്പെടുത്തുന്നതിനും ഒരു പ്രത്യേക പ്രവർത്തനത്തിൽ തുടങ്ങുന്നതിനുമുള്ള പുതിയ "
-"കമാന്റ്-ലൈൻ ഓപ്ഷൻ"
+"ഒരു പ്രത്യേക കാഠിന്യനിലയിൽ തുടങ്ങുന്നതിനുള്ള പുതിയ കമാന്റ്-ലൈൻ ഓപ്ഷൻ (--difficulty {value|"
+"min-max})"
 
 #: core/ChangeLog.qml:31
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translation updated for Russian"
 msgctxt "ChangeLog|"
 msgid "Many translation updates"
-msgstr "റഷ്യൻ തർജ്ജിമ അപ്ഡേറ്റ് ചെയ്തിരിക്കുന്നു"
+msgstr "ധാരാളം തർജ്ജിമകളിൽ മാറ്റം വരുത്തിയിരിക്കുന്നു"
 
 #: core/ChangeLog.qml:32 core/ChangeLog.qml:45 core/ChangeLog.qml:63
 #: core/ChangeLog.qml:78 core/ChangeLog.qml:83 core/ChangeLog.qml:89
@@ -24747,7 +24739,7 @@ msgstr "ധാരാളം ബഗ് ഫിക്സുകൾ"
 #: core/ChangeLog.qml:37
 msgctxt "ChangeLog|"
 msgid "Fix issue in comparator activity"
-msgstr ""
+msgstr "താരതമ്യം ചെയ്യാനുള്ള പ്രവർത്തനത്തിൽ ഫിക്സ്"
 
 #: core/ChangeLog.qml:41
 msgctxt "ChangeLog|"
@@ -25556,6 +25548,8 @@ msgid ""
 "Specify the range of activity difficulty to display for the session. Either "
 "a single value (2), or a range (3-6). Values must be between 1 and 6."
 msgstr ""
+"Specify the range of activity difficulty to display for the session. Either "
+"a single value (2), or a range (3-6). Values must be between 1 and 6."
 
 #: core/main.qml:233
 msgctxt "main|"
