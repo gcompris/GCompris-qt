@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2023-03-18 07:30+0100\n"
+"PO-Revision-Date: 2023-03-29 07:34+0200\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
@@ -2008,7 +2008,7 @@ msgstr "Enostavni klik v osrednjem območju prikaže oznako na točki klika."
 #: activities/baby_tangram/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Baby puzzle"
-msgstr "Sestavljanka za dojenčke"
+msgstr "Otroška sestavljanka"
 
 #. Help title
 #: activities/baby_tangram/ActivityInfo.qml:17
@@ -2570,7 +2570,7 @@ msgstr "Težavno"
 #: activities/bargame_2players/ActivityConfig.qml:32
 msgctxt "ActivityConfig|"
 msgid "Select your difficulty"
-msgstr "Izberi svojo težavnost"
+msgstr "Izberite svojo težavnost"
 
 #. Activity title
 #: activities/bargame/ActivityInfo.qml:15
@@ -4647,7 +4647,7 @@ msgstr "1955 Citroën DS 19"
 #: activities/wordsgame/ActivityConfig.qml:40
 msgctxt "ActivityConfig|"
 msgid "Select your locale"
-msgstr "Izberi tvojo jezikovno oznako"
+msgstr "Izberite vašo jezikovno oznako"
 
 #. Activity title
 #: activities/click_on_letter/ActivityInfo.qml:15
@@ -4816,7 +4816,7 @@ msgstr "24 ur"
 #: activities/clockgame/ActivityConfig.qml:33
 msgctxt "ActivityConfig|"
 msgid "Select a clock system"
-msgstr "Izberi urni sistem"
+msgstr "Izberite urni sistem"
 
 #. Activity title
 #: activities/clockgame/ActivityInfo.qml:15
@@ -8972,7 +8972,7 @@ msgstr "Poiščite datum 2 meseca, 1 teden in 8 dni pred 7. aprilom."
 #: activities/followline/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Control the hose-pipe"
-msgstr "Očisti gumijasto cev"
+msgstr "Upravljajte gumijasto cev"
 
 #. Help title
 #: activities/followline/ActivityInfo.qml:17
@@ -17589,7 +17589,7 @@ msgstr "Glavni meni GCompris"
 #: activities/menu/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Select an activity to run it."
-msgstr "Izberi igro, ki jo želiš igrati."
+msgstr "Izberite igro, ki jo želite igrati."
 
 #. Help goal
 #: activities/menu/ActivityInfo.qml:17
@@ -21370,7 +21370,7 @@ msgstr "Slike"
 #: activities/smallnumbers2/ActivityConfig.qml:36
 msgctxt "ActivityConfig|"
 msgid "Select Domino Representation"
-msgstr "Izberi predstavitev domin"
+msgstr "Izberite predstavitev domin"
 
 #. Activity title
 #: activities/reversecount/ActivityInfo.qml:15
@@ -25823,7 +25823,7 @@ msgstr ""
 #: core/main.qml:284
 msgctxt "main|"
 msgid "Have Fun!"
-msgstr "Zabavaj se!"
+msgstr "Uživajte!"
 
 #: core/main.qml:286
 #, qt-format
