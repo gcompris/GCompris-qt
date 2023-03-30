@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2023-03-20 08:57+0100\n"
+"PO-Revision-Date: 2023-03-29 07:34+0200\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
@@ -15,7 +15,7 @@ msgstr ""
 "%100<=4 ? 2 : 3);\n"
 "X-Language: sl\n"
 "X-Qt-Contexts: true\n"
-"X-Generator: Poedit 3.2.2\n"
+"X-Generator: Lokalize 22.12.3\n"
 
 #. Activity title
 #: activities/advanced_colors/ActivityInfo.qml:15
@@ -2008,7 +2008,7 @@ msgstr "Enostavni klik v osrednjem območju prikaže oznako na točki klika."
 #: activities/baby_tangram/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Baby puzzle"
-msgstr "Sestavljanka za dojenčke"
+msgstr "Otroška sestavljanka"
 
 #. Help title
 #: activities/baby_tangram/ActivityInfo.qml:17
@@ -2570,7 +2570,7 @@ msgstr "Težavno"
 #: activities/bargame_2players/ActivityConfig.qml:32
 msgctxt "ActivityConfig|"
 msgid "Select your difficulty"
-msgstr "Izberi svojo težavnost"
+msgstr "Izberite svojo težavnost"
 
 #. Activity title
 #: activities/bargame/ActivityInfo.qml:15
@@ -4647,7 +4647,7 @@ msgstr "1955 Citroën DS 19"
 #: activities/wordsgame/ActivityConfig.qml:40
 msgctxt "ActivityConfig|"
 msgid "Select your locale"
-msgstr "Izberi tvojo jezikovno oznako"
+msgstr "Izberite vašo jezikovno oznako"
 
 #. Activity title
 #: activities/click_on_letter/ActivityInfo.qml:15
@@ -4816,7 +4816,7 @@ msgstr "24 ur"
 #: activities/clockgame/ActivityConfig.qml:33
 msgctxt "ActivityConfig|"
 msgid "Select a clock system"
-msgstr "Izberi urni sistem"
+msgstr "Izberite urni sistem"
 
 #. Activity title
 #: activities/clockgame/ActivityInfo.qml:15
@@ -4877,7 +4877,7 @@ msgid "%n hour(s)"
 msgid_plural "%n hour(s)"
 msgstr[0] "%n ura"
 msgstr[1] "%n uri"
-msgstr[2] "%n ure"
+msgstr[2] "%n ur"
 msgstr[3] "%n ur"
 
 #: activities/clockgame/Clockgame.qml:112
@@ -8972,7 +8972,7 @@ msgstr "Poiščite datum 2 meseca, 1 teden in 8 dni pred 7. aprilom."
 #: activities/followline/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Control the hose-pipe"
-msgstr "Očisti gumijasto cev"
+msgstr "Upravljajte gumijasto cev"
 
 #. Help title
 #: activities/followline/ActivityInfo.qml:17
@@ -17589,7 +17589,7 @@ msgstr "Glavni meni GCompris"
 #: activities/menu/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Select an activity to run it."
-msgstr "Izberi igro, ki jo želiš igrati."
+msgstr "Izberite igro, ki jo želite igrati."
 
 #. Help goal
 #: activities/menu/ActivityInfo.qml:17
@@ -21370,7 +21370,7 @@ msgstr "Slike"
 #: activities/smallnumbers2/ActivityConfig.qml:36
 msgctxt "ActivityConfig|"
 msgid "Select Domino Representation"
-msgstr "Izberi predstavitev domin"
+msgstr "Izberite predstavitev domin"
 
 #. Activity title
 #: activities/reversecount/ActivityInfo.qml:15
@@ -24507,19 +24507,19 @@ msgstr "Maksimalna vrednost: 500000."
 #: activities/tens_complement_find/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Find ten's complement"
-msgstr "Najdite komplement desetice"
+msgstr "Najdite dopolnilo števila deset"
 
 #. Help title
 #: activities/tens_complement_find/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Find the ten's complement of each number."
-msgstr "Najdite komplement desetice za vsako število."
+msgstr "Najdite dopolnilo števila deset za vsako število."
 
 #. Help goal
 #: activities/tens_complement_find/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Learn to find ten's complement."
-msgstr "Naučite se najti komplement desetice."
+msgstr "Naučite se najti dopolnilo števila deset."
 
 #. Help prerequisite
 #: activities/tens_complement_find/ActivityInfo.qml:21
@@ -24570,7 +24570,7 @@ msgstr "Najdi obe števili."
 #: activities/tens_complement_swap/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Swap ten's complement"
-msgstr "Zamenjajte med sabo komplementa desetice"
+msgstr "Zamenjajte med sabo dopolnili števila deset"
 
 #. Help title
 #: activities/tens_complement_swap/ActivityInfo.qml:16
@@ -24585,7 +24585,7 @@ msgid ""
 "Learn to use ten's complement to optimize the order of numbers in an "
 "operation."
 msgstr ""
-"Naučite se uporabiti komplemente desetice za optimiziranje razvrstitve "
+"Naučite se uporabiti dopolnila števila deset za optimiziranje razvrstitve "
 "števil v operaciji."
 
 #. Help prerequisite
@@ -24629,19 +24629,19 @@ msgstr "naredite 3 pare iz 6 števil."
 #: activities/tens_complement_use/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Use ten's complement"
-msgstr "Uporabite komplement desetice"
+msgstr "Uporabite dopolnilo števila deset"
 
 #. Help title
 #: activities/tens_complement_use/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Use a ten's complement to simplify the operation."
-msgstr "Uporabite komplement desetice, da poenostavite program."
+msgstr "Uporabite dopolnilo števila deset, da poenostavite operacijo."
 
 #. Help goal
 #: activities/tens_complement_use/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Learn a practical use of ten's complement."
-msgstr "Naučite se praktične rabe komplementa desetice."
+msgstr "Naučite se praktične rabe dopolnila števila deset."
 
 #. Help prerequisite
 #: activities/tens_complement_use/ActivityInfo.qml:21
@@ -24658,7 +24658,7 @@ msgid ""
 "operation to move the selected number there."
 msgstr ""
 "Razgradite seštevanja, da ustvarite pare številk, ki so enake deset v vsakem "
-"oklepaju. Na seznamu izberite številko, nato izberite prazno mestooperacije "
+"oklepaju. Na seznamu izberite številko, nato izberite prazno mesto operacije "
 "za premik izbrane številke tja."
 
 #: activities/tens_complement_use/resource/1/Data.qml:43
@@ -25823,7 +25823,7 @@ msgstr ""
 #: core/main.qml:284
 msgctxt "main|"
 msgid "Have Fun!"
-msgstr "Zabavaj se!"
+msgstr "Uživajte!"
 
 #: core/main.qml:286
 #, qt-format
