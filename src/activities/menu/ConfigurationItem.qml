@@ -91,6 +91,7 @@ Item {
 
         GCDialogCheckBox {
             id: enableAudioVoicesBox
+            width: dialogConfig.contentWidth
             text: qsTr("Enable audio voices")
             checked: isAudioVoicesEnabled
             onCheckedChanged: {
@@ -100,6 +101,7 @@ Item {
 
         GCDialogCheckBox {
             id: enableAudioEffectsBox
+            width: dialogConfig.contentWidth
             text: qsTr("Enable audio effects")
             checked: isAudioEffectsEnabled
             onCheckedChanged: {
@@ -138,8 +140,9 @@ Item {
             }
         }
 
-	    GCDialogCheckBox {
-           id: enableBackgroundMusicBox
+        GCDialogCheckBox {
+            id: enableBackgroundMusicBox
+            width: dialogConfig.contentWidth
             text: qsTr("Enable background music")
             checked: isBackgroundMusicEnabled
             onCheckedChanged: {
@@ -211,6 +214,7 @@ Item {
 
         GCDialogCheckBox {
             id: enableFullscreenBox
+            width: dialogConfig.contentWidth
             text: qsTr("Fullscreen")
             checked: isFullscreen
             onCheckedChanged: {
@@ -221,6 +225,7 @@ Item {
 
         GCDialogCheckBox {
             id: enableVirtualKeyboardBox
+            width: dialogConfig.contentWidth
             text: qsTr("Virtual Keyboard")
             checked: isVirtualKeyboard
             onCheckedChanged: {
@@ -230,6 +235,7 @@ Item {
 
         GCDialogCheckBox {
             id: enableAutomaticDownloadsBox
+            width: dialogConfig.contentWidth
             checked: isAutomaticDownloadsEnabled
             text: qsTr("Enable automatic downloads/updates of sound files")
             visible: ApplicationInfo.isDownloadAllowed
@@ -262,6 +268,7 @@ Item {
         */
         GCDialogCheckBox {
             id: wordsetBox
+            width: dialogConfig.contentWidth
             checked: useWordset && DownloadManager.isDataRegistered("words-webp")
             text: checked ? qsTr("Full word image set is installed") : qsTr("Full word image set is not installed")
             visible: ApplicationInfo.isDownloadAllowed
@@ -283,6 +290,7 @@ Item {
 
         GCDialogCheckBox {
             id: sectionVisibleBox
+            width: dialogConfig.contentWidth
             checked: sectionVisible
             text: qsTr("The activity section menu is visible")
             onCheckedChanged: {
@@ -292,6 +300,7 @@ Item {
 
         GCDialogCheckBox {
             id: exitConfirmationBox
+            width: dialogConfig.contentWidth
             checked: exitConfirmation
             text: qsTr("Ask for confirmation to exit")
             visible: ApplicationInfo.isMobile ? false : true
