@@ -253,6 +253,13 @@ function resolveLocale(localeToSet) {
     }
 }
 
+function convertNumberToLocaleString(decimalNumber, locale = GCompris.ApplicationInfo.localeShort, format = 'f', precision = 0) {
+    // Special case for Arabic, we still want to use Arabic numerals, not Eastern Arabic numerals
+    // For now, we consider dot separated numbers for Arabic
+    var localeToConvertTo = (locale.startsWith("ar") ? "he" : locale);
+    return decimalNumber.toLocaleString(Qt.locale(localeToConvertTo), format, precision);
+}
+
 /**
  * Function that returns the best cell size for a grid of a given
  * width and height and a number of items.
