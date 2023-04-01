@@ -11,6 +11,7 @@
 import QtQuick 2.12
 import GCompris 1.0
 import "../../core"
+import "qrc:/gcompris/src/core/core.js" as Core
 import "guessnumber.js" as Activity
 
 Rectangle {
@@ -39,7 +40,7 @@ Rectangle {
     }
 
     onUserEntryChanged: {
-        userEntryText.text = Number(answerBackground.userEntry).toLocaleString(Qt.locale(ApplicationInfo.localeShort), 'f', 0)
+        userEntryText.text = Core.convertNumberToLocaleString(Number(answerBackground.userEntry));
         if(userEntry != "")
             Activity.setUserAnswer(parseInt(userEntry))
         userEntryText.text = userEntry
