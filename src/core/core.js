@@ -260,6 +260,12 @@ function convertNumberToLocaleString(decimalNumber, locale = GCompris.Applicatio
     return decimalNumber.toLocaleString(Qt.locale(localeToConvertTo), format, precision);
 }
 
+function convertNumberToLocaleCurrencyString(number, locale) {
+    // Special case for Arabic, we still want to use Arabic numerals, not Eastern Arabic numerals but we want to keep the Arabic currency
+    var localeToConvertTo = (locale.startsWith("ar") ? "he" : locale);
+    return number.toLocaleCurrencyString(Qt.locale(localeToConvertTo), Qt.locale(locale).currencySymbol(Qml.Locale.CurrencySymbol));
+}
+
 /**
  * Function that returns the best cell size for a grid of a given
  * width and height and a number of items.
