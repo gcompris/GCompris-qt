@@ -10,9 +10,10 @@
 
 import QtQuick 2.12
 import GCompris 1.0
+import "qrc:/gcompris/src/core/core.js" as Core
 
 Data {
-    objective: qsTr("Guess a number between 1 and %1.").arg(Number(1000).toLocaleString(Qt.locale(ApplicationInfo.localeShort), 'f', 0))
+    objective: qsTr("Guess a number between 1 and %1.").arg(Core.convertNumberToLocaleString(Number(1000)))
     difficulty: 3
     data: [
         {
@@ -25,7 +26,7 @@ Data {
             "maxNumber" : 100
         },
         {
-            "objective" : qsTr("Guess a number between 1 and %1.").arg(Number(1000).toLocaleString(Qt.locale(ApplicationInfo.localeShort), 'f', 0)),
+            "objective" : qsTr("Guess a number between 1 and %1.").arg(Core.convertNumberToLocaleString(Number(1000))),
             "maxNumber" : 1000
         }
     ]
