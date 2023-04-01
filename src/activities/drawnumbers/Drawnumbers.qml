@@ -9,7 +9,6 @@
  */
 import QtQuick 2.12
 import "../number_sequence"
-import "../../core" as Core 
 import "drawnumbers_dataset.js" as Dataset
 
 NumberSequence {
