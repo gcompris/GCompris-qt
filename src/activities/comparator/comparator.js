@@ -8,6 +8,7 @@
  */
 .pragma library
 .import GCompris 1.0 as GCompris
+.import "qrc:/gcompris/src/core/core.js" as Core
 
 var currentLevel = 0;
 var numberOfLevel;
@@ -197,7 +198,7 @@ function toDecimalLocaleNumber(decimalNumber, precision) {
     if(locale === "system") {
         locale = Qt.locale().name === "C" ? "en_US" : Qt.locale().name;
     }
-    var decimalLocale = decimalNumber.toLocaleString(Qt.locale(locale), 'f', precision);
+    var decimalLocale = Core.convertNumberToLocaleString(decimalNumber, locale, 'f', precision);
     return decimalLocale;
 }
 
