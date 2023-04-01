@@ -18439,58 +18439,58 @@ msgctxt "ConfigurationItem|"
 msgid "Download"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:94
+#: activities/menu/ConfigurationItem.qml:95
 msgctxt "ConfigurationItem|"
 msgid "Enable audio voices"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:103
+#: activities/menu/ConfigurationItem.qml:105
 msgctxt "ConfigurationItem|"
 msgid "Enable audio effects"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:112
+#: activities/menu/ConfigurationItem.qml:114
 msgctxt "ConfigurationItem|"
 msgid "Audio effects volume"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:133
+#: activities/menu/ConfigurationItem.qml:135
 msgctxt "ConfigurationItem|"
 msgid "Download background music"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:143
+#: activities/menu/ConfigurationItem.qml:146
 msgctxt "ConfigurationItem|"
 msgid "Enable background music"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:152
+#: activities/menu/ConfigurationItem.qml:155
 msgctxt "ConfigurationItem|"
 msgid "Background Music"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:169
+#: activities/menu/ConfigurationItem.qml:172
 msgctxt "ConfigurationItem|"
 msgid "Not playing"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:171
+#: activities/menu/ConfigurationItem.qml:174
 #, qt-format
 msgctxt "ConfigurationItem|"
 msgid "Title: %1  Artist: %2"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:173
+#: activities/menu/ConfigurationItem.qml:176
 msgctxt "ConfigurationItem|"
 msgid "Introduction music"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:196
+#: activities/menu/ConfigurationItem.qml:199
 msgctxt "ConfigurationItem|"
 msgid "Background music volume"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:214
+#: activities/menu/ConfigurationItem.qml:218
 #, fuzzy
 #| msgctxt "DialogConfig|"
 #| msgid "Fullscreen"
@@ -18498,17 +18498,17 @@ msgctxt "ConfigurationItem|"
 msgid "Fullscreen"
 msgstr "Pilnekrāns"
 
-#: activities/menu/ConfigurationItem.qml:224
+#: activities/menu/ConfigurationItem.qml:229
 msgctxt "ConfigurationItem|"
 msgid "Virtual Keyboard"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:234
+#: activities/menu/ConfigurationItem.qml:240
 msgctxt "ConfigurationItem|"
 msgid "Enable automatic downloads/updates of sound files"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:246
+#: activities/menu/ConfigurationItem.qml:252
 #, fuzzy
 #| msgctxt "instruments|"
 #| msgid "Find the triangle"
@@ -18516,7 +18516,7 @@ msgctxt "ConfigurationItem|"
 msgid "Download full word image set"
 msgstr "Atrodi trijstūri"
 
-#: activities/menu/ConfigurationItem.qml:266
+#: activities/menu/ConfigurationItem.qml:273
 #, fuzzy
 #| msgctxt "instruments|"
 #| msgid "Find the triangle"
@@ -18524,63 +18524,63 @@ msgctxt "ConfigurationItem|"
 msgid "Full word image set is installed"
 msgstr "Atrodi trijstūri"
 
-#: activities/menu/ConfigurationItem.qml:266
+#: activities/menu/ConfigurationItem.qml:273
 msgctxt "ConfigurationItem|"
 msgid "Full word image set is not installed"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:287
+#: activities/menu/ConfigurationItem.qml:295
 msgctxt "ConfigurationItem|"
 msgid "The activity section menu is visible"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:296
+#: activities/menu/ConfigurationItem.qml:305
 msgctxt "ConfigurationItem|"
 msgid "Ask for confirmation to exit"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:307
+#: activities/menu/ConfigurationItem.qml:316
 msgctxt "ConfigurationItem|"
 msgid "Font selector"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:312
+#: activities/menu/ConfigurationItem.qml:321
 msgctxt "ConfigurationItem|"
 msgid "Font size"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:332
-#: activities/menu/ConfigurationItem.qml:366
+#: activities/menu/ConfigurationItem.qml:341
+#: activities/menu/ConfigurationItem.qml:375
 msgctxt "ConfigurationItem|"
 msgid "Default"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:341
+#: activities/menu/ConfigurationItem.qml:350
 msgctxt "ConfigurationItem|"
 msgid "Font Capitalization"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:346
+#: activities/menu/ConfigurationItem.qml:355
 msgctxt "ConfigurationItem|"
 msgid "Font letter spacing"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:372
+#: activities/menu/ConfigurationItem.qml:381
 msgctxt "ConfigurationItem|"
 msgid "Difficulty filter:"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:666
+#: activities/menu/ConfigurationItem.qml:675
 msgctxt "ConfigurationItem|"
 msgid "Mixed case (default)"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:667
+#: activities/menu/ConfigurationItem.qml:676
 msgctxt "ConfigurationItem|"
 msgid "All uppercase"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:668
+#: activities/menu/ConfigurationItem.qml:677
 msgctxt "ConfigurationItem|"
 msgid "All lowercase"
 msgstr ""
