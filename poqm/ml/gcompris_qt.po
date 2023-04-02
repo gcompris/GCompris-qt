@@ -13886,21 +13886,21 @@ msgstr "നിങ്ങൾ സംഖ്യ കണ്ടുപിടിച്ച�
 #: activities/guessnumber/resource/2/Data.qml:14
 #: activities/guessnumber/resource/2/Data.qml:19
 #: activities/guessnumber/resource/2/Data.qml:23
-#: activities/guessnumber/resource/3/Data.qml:15
-#: activities/guessnumber/resource/3/Data.qml:20
-#: activities/guessnumber/resource/3/Data.qml:24
-#: activities/guessnumber/resource/3/Data.qml:28
-#: activities/guessnumber/resource/4/Data.qml:15
-#: activities/guessnumber/resource/4/Data.qml:20
-#: activities/guessnumber/resource/4/Data.qml:24
-#: activities/guessnumber/resource/4/Data.qml:28
-#: activities/guessnumber/resource/4/Data.qml:32
-#: activities/guessnumber/resource/5/Data.qml:15
-#: activities/guessnumber/resource/5/Data.qml:20
-#: activities/guessnumber/resource/5/Data.qml:24
-#: activities/guessnumber/resource/5/Data.qml:28
-#: activities/guessnumber/resource/5/Data.qml:32
-#: activities/guessnumber/resource/5/Data.qml:36
+#: activities/guessnumber/resource/3/Data.qml:16
+#: activities/guessnumber/resource/3/Data.qml:21
+#: activities/guessnumber/resource/3/Data.qml:25
+#: activities/guessnumber/resource/3/Data.qml:29
+#: activities/guessnumber/resource/4/Data.qml:16
+#: activities/guessnumber/resource/4/Data.qml:21
+#: activities/guessnumber/resource/4/Data.qml:25
+#: activities/guessnumber/resource/4/Data.qml:29
+#: activities/guessnumber/resource/4/Data.qml:33
+#: activities/guessnumber/resource/5/Data.qml:16
+#: activities/guessnumber/resource/5/Data.qml:21
+#: activities/guessnumber/resource/5/Data.qml:25
+#: activities/guessnumber/resource/5/Data.qml:29
+#: activities/guessnumber/resource/5/Data.qml:33
+#: activities/guessnumber/resource/5/Data.qml:37
 #, qt-format
 msgctxt "Data|"
 msgid "Guess a number between 1 and %1."
@@ -15032,7 +15032,7 @@ msgstr ""
 "ദശാംശസംഖ്യയ്ക്കുതുല്യമാകുന്നതു വരെ ഈ ഘട്ടങ്ങൾ ആവർത്തിക്കുക. ശേഷം ഒകെ ബട്ടൺ അമർത്തി നിങ്ങളുടെ "
 "ഉത്തരം സ്ഥിരീകരിക്കുക."
 
-#: activities/learn_decimals/learn_decimals.js:33
+#: activities/learn_decimals/learn_decimals.js:34
 msgctxt "learn_decimals|"
 msgid ""
 "A decimal number is displayed. The bar with the arrow represents a full "
@@ -15041,7 +15041,7 @@ msgstr ""
 "ഒരു ദശാംശസംഖ്യ കാണിച്ചിരിക്കുന്നു. അമ്പടയാളമുള്ള പെട്ടി ഒരു യൂണിറ്റും പെട്ടിക്കകത്തെ ഓരോ "
 "സമചതുരവും പത്തിലൊന്ന് യൂണിറ്റും പ്രതിനിധാനം ചെയ്യുന്നു."
 
-#: activities/learn_decimals/learn_decimals.js:37
+#: activities/learn_decimals/learn_decimals.js:38
 msgctxt "learn_decimals|"
 msgid ""
 "Drag the arrow to select a part of the bar, and drag the selected part of "
@@ -15054,7 +15054,7 @@ msgstr ""
 "തുല്യമാകുന്നതുവരെ ഈ ഘട്ടങ്ങൾ ആവർത്തിക്കുക. എന്നിട്ട് ഒകെ ബട്ടണിൽ ക്ലിക്കു ചെയ്ത് നിങ്ങളുടെ ഉത്തരം "
 "സ്ഥിരീകരിക്കുക."
 
-#: activities/learn_decimals/learn_decimals.js:44
+#: activities/learn_decimals/learn_decimals.js:45
 msgctxt "learn_decimals|"
 msgid ""
 "A subtraction with two decimal numbers is displayed. Below it, the first "
@@ -15065,7 +15065,7 @@ msgstr ""
 "ഒരു പെട്ടി ഉപയോഗിച്ച് കാണിച്ചിരിക്കുന്നു. ഒരു പെട്ടി ഒരു യൂണിറ്റും അതിലെ ഓരോ സമചതുരങ്ങളും "
 "പത്തിലൊന്ന് യൂണിറ്റും പ്രതിനിധാനം ചെയ്യുന്നു."
 
-#: activities/learn_decimals/learn_decimals.js:48
+#: activities/learn_decimals/learn_decimals.js:49
 msgctxt "learn_decimals|"
 msgid ""
 "Click on the squares to subtract them and display the result of the "
@@ -15074,8 +15074,8 @@ msgstr ""
 "കുറയ്ക്കാനായി ചതുരങ്ങളിൽ ക്ലിക്ക് ചെയ്ത് തന്നിരിക്കുന്ന ക്രിയയുടെ ഉത്തരം കാണിക്കൂ. എന്നിട്ട് ഒകെ "
 "ബട്ടണിൽ ക്ലിക്കു ചെയ്ത് നിങ്ങളുടെ ഉത്തരം പരിശോധിക്കാം."
 
-#: activities/learn_decimals/learn_decimals.js:52
-#: activities/learn_decimals/learn_decimals.js:67
+#: activities/learn_decimals/learn_decimals.js:53
+#: activities/learn_decimals/learn_decimals.js:68
 msgctxt "learn_decimals|"
 msgid ""
 "If the answer is correct, type the corresponding result, and click on the OK "
@@ -15084,7 +15084,7 @@ msgstr ""
 "ഉത്തരം ശരിയാണെങ്കിൽ അതു ടൈപ്പ് ചെയ്യുക, എന്നിട്ട് ഒകെ ബട്ടണിൽ ക്ലിക്കു ചെയ്ത് നിങ്ങളുടെ ഉത്തരം "
 "പരിശോധിക്കൂ."
 
-#: activities/learn_decimals/learn_decimals.js:59
+#: activities/learn_decimals/learn_decimals.js:60
 msgctxt "learn_decimals|"
 msgid ""
 "An addition with two decimal numbers is displayed. The bar with the arrow "
@@ -15094,7 +15094,7 @@ msgstr ""
 "രണ്ടു ദശാംശസംഖ്യകളുടെ കൂട്ടൽ കാണിച്ചിരിക്കുന്നു. അമ്പടയാളത്തോടുകൂടിയ പെട്ടി ഒരു യൂണിറ്റും അതിലെ "
 "ഓരോ സമചതുരങ്ങളും പത്തിലൊന്ന് യൂണിറ്റും പ്രതിനിധാനം ചെയ്യുന്നു."
 
-#: activities/learn_decimals/learn_decimals.js:63
+#: activities/learn_decimals/learn_decimals.js:64
 msgctxt "learn_decimals|"
 msgid ""
 "Drag the arrow to select a part of the bar, and drag the selected part of "
@@ -15107,14 +15107,14 @@ msgstr ""
 "ഉത്തരത്തിനു തുല്യമാകുന്നതുവരെ ഈ ഘട്ടങ്ങൾ ആവർത്തിക്കുക. എന്നിട്ട് ഒകെ ബട്ടണിൽ ക്ലിക്കു ചെയ്ത് "
 "നിങ്ങളുടെ ഉത്തരം സ്ഥിരീകരിക്കുക."
 
-#: activities/learn_decimals/learn_decimals.js:74
+#: activities/learn_decimals/learn_decimals.js:75
 msgctxt "learn_decimals|"
 msgid "A quantity is requested. The arrow allows to select up to 10 oranges."
 msgstr ""
 "ഒരു നിശ്ചത എണ്ണം ചോദിച്ചിരിക്കുന്നു. അമ്പടയാളം ഉപയോഗിച്ച് 10 ഓറഞ്ചുകൾ വരെ "
 "തിരഞ്ഞെടുക്കാവുന്നതാണ്."
 
-#: activities/learn_decimals/learn_decimals.js:78
+#: activities/learn_decimals/learn_decimals.js:79
 msgctxt "learn_decimals|"
 msgid ""
 "Drag the arrow to select a number of oranges, and drag the selected oranges "

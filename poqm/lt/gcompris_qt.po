@@ -14095,21 +14095,21 @@ msgstr "Atspėjai skaičių!"
 #: activities/guessnumber/resource/2/Data.qml:14
 #: activities/guessnumber/resource/2/Data.qml:19
 #: activities/guessnumber/resource/2/Data.qml:23
-#: activities/guessnumber/resource/3/Data.qml:15
-#: activities/guessnumber/resource/3/Data.qml:20
-#: activities/guessnumber/resource/3/Data.qml:24
-#: activities/guessnumber/resource/3/Data.qml:28
-#: activities/guessnumber/resource/4/Data.qml:15
-#: activities/guessnumber/resource/4/Data.qml:20
-#: activities/guessnumber/resource/4/Data.qml:24
-#: activities/guessnumber/resource/4/Data.qml:28
-#: activities/guessnumber/resource/4/Data.qml:32
-#: activities/guessnumber/resource/5/Data.qml:15
-#: activities/guessnumber/resource/5/Data.qml:20
-#: activities/guessnumber/resource/5/Data.qml:24
-#: activities/guessnumber/resource/5/Data.qml:28
-#: activities/guessnumber/resource/5/Data.qml:32
-#: activities/guessnumber/resource/5/Data.qml:36
+#: activities/guessnumber/resource/3/Data.qml:16
+#: activities/guessnumber/resource/3/Data.qml:21
+#: activities/guessnumber/resource/3/Data.qml:25
+#: activities/guessnumber/resource/3/Data.qml:29
+#: activities/guessnumber/resource/4/Data.qml:16
+#: activities/guessnumber/resource/4/Data.qml:21
+#: activities/guessnumber/resource/4/Data.qml:25
+#: activities/guessnumber/resource/4/Data.qml:29
+#: activities/guessnumber/resource/4/Data.qml:33
+#: activities/guessnumber/resource/5/Data.qml:16
+#: activities/guessnumber/resource/5/Data.qml:21
+#: activities/guessnumber/resource/5/Data.qml:25
+#: activities/guessnumber/resource/5/Data.qml:29
+#: activities/guessnumber/resource/5/Data.qml:33
+#: activities/guessnumber/resource/5/Data.qml:37
 #, qt-format
 msgctxt "Data|"
 msgid "Guess a number between 1 and %1."
@@ -15255,7 +15255,7 @@ msgstr ""
 "nuvilktų kvadratėlių skaičius atitiks rodomą dešimtainį skaičių. Spustelėk "
 "mygtuką OK, taip patvirtindamas savo atsakymą."
 
-#: activities/learn_decimals/learn_decimals.js:33
+#: activities/learn_decimals/learn_decimals.js:34
 msgctxt "learn_decimals|"
 msgid ""
 "A decimal number is displayed. The bar with the arrow represents a full "
@@ -15264,7 +15264,7 @@ msgstr ""
 "Matai dešimtainį skaičių. Juosta su rodykle reiškia visą vienetą, o "
 "kiekvienas kvadratėlis joje – dešimtadalį šio vieneto."
 
-#: activities/learn_decimals/learn_decimals.js:37
+#: activities/learn_decimals/learn_decimals.js:38
 msgctxt "learn_decimals|"
 msgid ""
 "Drag the arrow to select a part of the bar, and drag the selected part of "
@@ -15277,7 +15277,7 @@ msgstr ""
 "atitiks rodomą dešimtainį skaičių. Spustelėk mygtuką OK, taip patvirtindamas "
 "savo atsakymą."
 
-#: activities/learn_decimals/learn_decimals.js:44
+#: activities/learn_decimals/learn_decimals.js:45
 msgctxt "learn_decimals|"
 msgid ""
 "A subtraction with two decimal numbers is displayed. Below it, the first "
@@ -15288,7 +15288,7 @@ msgstr ""
 "atimties skaičius (turinys) pavaizduotas juostomis. Viena juosta reiškia "
 "visą vienetą, o kiekvienas kvadratėlis joje – dešimtadalį šio vieneto."
 
-#: activities/learn_decimals/learn_decimals.js:48
+#: activities/learn_decimals/learn_decimals.js:49
 msgctxt "learn_decimals|"
 msgid ""
 "Click on the squares to subtract them and display the result of the "
@@ -15297,8 +15297,8 @@ msgstr ""
 "Spustelėk kvadratėlius, kad liktų tiek spalvotų kvadratėlių, koks yra "
 "atimties rezultatas. Spustelėk mygtuką OK, taip patvirtindamas savo atsakymą."
 
-#: activities/learn_decimals/learn_decimals.js:52
-#: activities/learn_decimals/learn_decimals.js:67
+#: activities/learn_decimals/learn_decimals.js:53
+#: activities/learn_decimals/learn_decimals.js:68
 msgctxt "learn_decimals|"
 msgid ""
 "If the answer is correct, type the corresponding result, and click on the OK "
@@ -15307,7 +15307,7 @@ msgstr ""
 "Jei spalvotų kvadratėlių skaičius teisingas, įvesk atitinkamą rezultatą ir "
 "spustelėk mygtuką OK, taip patvirtindamas savo atsakymą."
 
-#: activities/learn_decimals/learn_decimals.js:59
+#: activities/learn_decimals/learn_decimals.js:60
 msgctxt "learn_decimals|"
 msgid ""
 "An addition with two decimal numbers is displayed. The bar with the arrow "
@@ -15317,7 +15317,7 @@ msgstr ""
 "Matai eilutę su dviem dešimtainiais skaičiais. Juosta su rodykle reiškia "
 "visą vienetą, o kiekvienas kvadratėlis joje – dešimtadalį šio vieneto."
 
-#: activities/learn_decimals/learn_decimals.js:63
+#: activities/learn_decimals/learn_decimals.js:64
 msgctxt "learn_decimals|"
 msgid ""
 "Drag the arrow to select a part of the bar, and drag the selected part of "
@@ -15330,14 +15330,14 @@ msgstr ""
 "atitiks sudėties veiksmo rezultatą – sumą. Spustelėk mygtuką OK, taip "
 "patvirtindamas savo atsakymą."
 
-#: activities/learn_decimals/learn_decimals.js:74
+#: activities/learn_decimals/learn_decimals.js:75
 msgctxt "learn_decimals|"
 msgid "A quantity is requested. The arrow allows to select up to 10 oranges."
 msgstr ""
 "Vilkdamas rodyklę, gali pasirinkti apelsinų skaičių. Rodyklė leidžia "
 "pasirinkti iki 10 apelsinų."
 
-#: activities/learn_decimals/learn_decimals.js:78
+#: activities/learn_decimals/learn_decimals.js:79
 msgctxt "learn_decimals|"
 msgid ""
 "Drag the arrow to select a number of oranges, and drag the selected oranges "
