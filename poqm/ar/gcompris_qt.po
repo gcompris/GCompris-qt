@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2023-03-31 23:05+0400\n"
+"PO-Revision-Date: 2023-04-01 10:00+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: \n"
 "Language: ar\n"
@@ -13716,21 +13716,21 @@ msgstr "لقد وجدت العدد!"
 #: activities/guessnumber/resource/2/Data.qml:14
 #: activities/guessnumber/resource/2/Data.qml:19
 #: activities/guessnumber/resource/2/Data.qml:23
-#: activities/guessnumber/resource/3/Data.qml:15
-#: activities/guessnumber/resource/3/Data.qml:20
-#: activities/guessnumber/resource/3/Data.qml:24
-#: activities/guessnumber/resource/3/Data.qml:28
-#: activities/guessnumber/resource/4/Data.qml:15
-#: activities/guessnumber/resource/4/Data.qml:20
-#: activities/guessnumber/resource/4/Data.qml:24
-#: activities/guessnumber/resource/4/Data.qml:28
-#: activities/guessnumber/resource/4/Data.qml:32
-#: activities/guessnumber/resource/5/Data.qml:15
-#: activities/guessnumber/resource/5/Data.qml:20
-#: activities/guessnumber/resource/5/Data.qml:24
-#: activities/guessnumber/resource/5/Data.qml:28
-#: activities/guessnumber/resource/5/Data.qml:32
-#: activities/guessnumber/resource/5/Data.qml:36
+#: activities/guessnumber/resource/3/Data.qml:16
+#: activities/guessnumber/resource/3/Data.qml:21
+#: activities/guessnumber/resource/3/Data.qml:25
+#: activities/guessnumber/resource/3/Data.qml:29
+#: activities/guessnumber/resource/4/Data.qml:16
+#: activities/guessnumber/resource/4/Data.qml:21
+#: activities/guessnumber/resource/4/Data.qml:25
+#: activities/guessnumber/resource/4/Data.qml:29
+#: activities/guessnumber/resource/4/Data.qml:33
+#: activities/guessnumber/resource/5/Data.qml:16
+#: activities/guessnumber/resource/5/Data.qml:21
+#: activities/guessnumber/resource/5/Data.qml:25
+#: activities/guessnumber/resource/5/Data.qml:29
+#: activities/guessnumber/resource/5/Data.qml:33
+#: activities/guessnumber/resource/5/Data.qml:37
 #, qt-format
 msgctxt "Data|"
 msgid "Guess a number between 1 and %1."
@@ -14858,7 +14858,7 @@ msgstr ""
 "المنطقة الفارغة. كرّر هذه الخطوات حتى يتوافق عدد الأشرطة المسقطة معالعدد "
 "العشري الظاهر. ثم انقر فوق الزر \"موافق\" للتأكيد إجابتك."
 
-#: activities/learn_decimals/learn_decimals.js:33
+#: activities/learn_decimals/learn_decimals.js:34
 msgctxt "learn_decimals|"
 msgid ""
 "A decimal number is displayed. The bar with the arrow represents a full "
@@ -14867,7 +14867,7 @@ msgstr ""
 "يظهر عدد عشري. يمثل الشريط ذو المؤشر وحدة كاملة، ويمثل كل مربع فيه عُشر هذه "
 "الوحدة."
 
-#: activities/learn_decimals/learn_decimals.js:37
+#: activities/learn_decimals/learn_decimals.js:38
 msgctxt "learn_decimals|"
 msgid ""
 "Drag the arrow to select a part of the bar, and drag the selected part of "
@@ -14879,7 +14879,7 @@ msgstr ""
 "كرّر هذه الخطوات حتى يتوافق عدد الأشرطة المسقطة معالعدد العشري الظاهر. ثم "
 "انقر فوق الزر \"موافق\" للتأكيد إجابتك."
 
-#: activities/learn_decimals/learn_decimals.js:44
+#: activities/learn_decimals/learn_decimals.js:45
 msgctxt "learn_decimals|"
 msgid ""
 "A subtraction with two decimal numbers is displayed. Below it, the first "
@@ -14889,7 +14889,7 @@ msgstr ""
 "تظهر عملية طرح لعددين عشريين.  أسفله ، يُمثل العدد الأول من عملية الطرح "
 "بأشرطة. يمثل الشريط الواحد وحدة كاملة ، ويمثل كل مربع فيه عُشر هذه الوحدة."
 
-#: activities/learn_decimals/learn_decimals.js:48
+#: activities/learn_decimals/learn_decimals.js:49
 msgctxt "learn_decimals|"
 msgid ""
 "Click on the squares to subtract them and display the result of the "
@@ -14898,15 +14898,15 @@ msgstr ""
 "انقر على المربعات لطرحها وتعرض نتيجة العملية، ثم انقر على زر\"موافق\" لتأكيد "
 "إجابتك."
 
-#: activities/learn_decimals/learn_decimals.js:52
-#: activities/learn_decimals/learn_decimals.js:67
+#: activities/learn_decimals/learn_decimals.js:53
+#: activities/learn_decimals/learn_decimals.js:68
 msgctxt "learn_decimals|"
 msgid ""
 "If the answer is correct, type the corresponding result, and click on the OK "
 "button to validate your answer."
 msgstr "إذا كانت النتيجة صحيحة، اكتبها، ثم انقر على زر\"موافق\" لتأكيد إجابتك."
 
-#: activities/learn_decimals/learn_decimals.js:59
+#: activities/learn_decimals/learn_decimals.js:60
 msgctxt "learn_decimals|"
 msgid ""
 "An addition with two decimal numbers is displayed. The bar with the arrow "
@@ -14916,7 +14916,7 @@ msgstr ""
 "تظهر عملية جمع لعددين عشريين. يمثل الشريط الواحد وحدة كاملة ، ويمثل كل مربع "
 "فيه عُشر هذه الوحدة."
 
-#: activities/learn_decimals/learn_decimals.js:63
+#: activities/learn_decimals/learn_decimals.js:64
 msgctxt "learn_decimals|"
 msgid ""
 "Drag the arrow to select a part of the bar, and drag the selected part of "
@@ -14928,12 +14928,12 @@ msgstr ""
 "هذه الخطوات حتى يتوافق عدد الأشرطة المسقطة مع ناتج الجمع.  ثم انقر فوق الزر "
 "\"موافق\" للتأكيد إجابتك."
 
-#: activities/learn_decimals/learn_decimals.js:74
+#: activities/learn_decimals/learn_decimals.js:75
 msgctxt "learn_decimals|"
 msgid "A quantity is requested. The arrow allows to select up to 10 oranges."
 msgstr "مطلوب منك إعطاء الكمية. يسمح السهم باختيار حتى 10 برتقالات."
 
-#: activities/learn_decimals/learn_decimals.js:78
+#: activities/learn_decimals/learn_decimals.js:79
 msgctxt "learn_decimals|"
 msgid ""
 "Drag the arrow to select a number of oranges, and drag the selected oranges "
@@ -16047,6 +16047,8 @@ msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
 "voices or effects are disabled in the main configuration."
 msgstr ""
+"يتطلب هذا النشاط صوتًا، لذلك ستشتغل بعض الأصوات حتى لو كان الصوت أو تأثيرات "
+"الصوت معطلة في الإعدادات الرئيسة."
 
 #: activities/melody/Melody.qml:286
 msgctxt "Melody|"
@@ -17160,6 +17162,8 @@ msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
 "voices or effects are disabled in the main configuration."
 msgstr ""
+"يتطلب هذا النشاط صوتًا، لذلك ستشتغل بعض الأصوات حتى لو كان الصوت أو تأثيرات "
+"الصوت معطلة في الإعدادات الرئيسة."
 
 #: activities/memory/MemoryCommon.qml:326
 msgctxt "MemoryCommon|"
@@ -17677,6 +17681,10 @@ msgid ""
 "two fingers on the center. On a touch area, drag two fingers away from the "
 "sparkle, one in each direction."
 msgstr ""
+"ابحث عن بريق الذهب، وكبّر الصورة حوله. إذا لديك فأرة، وجّه المؤشر على البريق "
+"ثم استخدم عجلة التمرير.  إذا كانت لديك لوحة تعقب،  وجّه المؤشر على البريق ثم "
+"اسحب إصبعًا واحدًا على المنطقة اليمنى أو أصبعين في المنتصف. إذا لديك شاشة لمس، "
+"اسحب أصبعين بعيدًا عن البريق ، واحد في كل اتجاه."
 
 #: activities/mining/Mining.qml:418
 msgctxt "Mining|"
@@ -17713,7 +17721,7 @@ msgstr "تابع التقريب حتّى ترى قطعة الذّهب."
 #: activities/mining/Mining.qml:454
 msgctxt "Mining|"
 msgid "Now you see the sparkle, go ahead, you can zoom on it."
-msgstr ""
+msgstr "الآن أنت ترى الذهب، تقدّم، تابع التقريب."
 
 #. Activity title
 #: activities/missing-letter/ActivityInfo.qml:16
@@ -17825,7 +17833,7 @@ msgstr ""
 #: activities/money_cents/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: navigate inside an area"
-msgstr ""
+msgstr "السهمان الأيمن والأيسر: تنقّل في المساحة"
 
 #: activities/money/ActivityInfo.qml:28
 #: activities/money_back/ActivityInfo.qml:28
@@ -17833,7 +17841,7 @@ msgstr ""
 #: activities/money_cents/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Tab: navigate between the bottom and the top areas"
-msgstr ""
+msgstr "مفتاح الجدولة: التنقل بين المناطق السفلية والعليا"
 
 #: activities/money/money.js:143
 msgctxt "money|"
@@ -17960,7 +17968,7 @@ msgstr "تعلم التواصل بشفرة مورس الدولية."
 msgctxt "ActivityInfo|"
 msgid ""
 "You have to send and receive letters and digits in International Morse code."
-msgstr ""
+msgstr "يجب عليك إرسال واستقبال الحروف والأرقام بشفرة مورس الدولي."
 
 #. Help prerequisite
 #: activities/morse_code/ActivityInfo.qml:25
@@ -17977,6 +17985,9 @@ msgid ""
 "have a look at the translation map which contains the code for all the "
 "letters and digits."
 msgstr ""
+"يُطلب منك إما إرسال رسالة في شفرة مورس أو استلام رسالة مشفّرة ثم فكّها إلى أحرف "
+"أو أرقام. لمعرفة شفرة مورس، يمكنك إلقاء نظرة على جدول الرموز وما يقابلها من "
+"الأحرف والأرقام."
 
 #: activities/morse_code/FirstScreen.qml:25
 msgctxt "FirstScreen|"
@@ -17989,6 +18000,8 @@ msgid ""
 "Morse code was developed by Samuel Morse. It is a method of transmitting "
 "text information as a series of on-off tones, lights, or clicks."
 msgstr ""
+"ابتكر صامويل مورس طريقة لنقل المعلومات النصية بتحويلها إلى سلسلة من الإشارات "
+"أو الأضواء أو النقرات. سميت شفرة مورس."
 
 #: activities/morse_code/FirstScreen.qml:65
 msgctxt "FirstScreen|"
@@ -18001,6 +18014,12 @@ msgid ""
 "For example, the most common letter in English, the letter \"E\", has the "
 "shortest code, a single dot."
 msgstr ""
+"يمثل كل رمز مورس إما حرفًا نصيًا (حرفًا أو رقمًا) أو علامة مميزة ويتم تمثيله "
+"بتسلسل فريد من النقاط والشرطات. مدة الشرطة ثلاثة أضعاف مدة النقطة. لزيادة "
+"سرعة الاتصال ، صمُمّت الشفرة بحيث يُرمز للأحرف الشائعة بسلسة أقصر من النقاط "
+"والشرطات. \n"
+"على سبيل المثال، حرف \"E\" هو الأكثر شيوعًا في اللغة الإنجليزية، لذا له أقصر "
+"رمز ، نقطة واحدة."
 
 #: activities/morse_code/FirstScreen.qml:90
 msgctxt "FirstScreen|"
@@ -18034,7 +18053,7 @@ msgstr "الحُروف."
 #, qt-format
 msgctxt "Data|"
 msgid "Send the message %1 in Morse code."
-msgstr ""
+msgstr "ابعث الرسالة %1 بشفرة مورس."
 
 #: activities/morse_code/resource/1/Data.qml:23
 #: activities/morse_code/resource/1/Data.qml:39
@@ -18079,7 +18098,7 @@ msgstr "الكلمات."
 #: activities/morse_code/resource/3/Data.qml:24
 msgctxt "Data|"
 msgid "Write the Morse code you hear."
-msgstr ""
+msgstr "اكتب شفرة مورس التي تسمعها."
 
 #: activities/morse_code/resource/3/Data.qml:34
 msgctxt "Data|"
@@ -18366,6 +18385,10 @@ msgid ""
 "catch you can either remember it or check the number on the bottom right "
 "corner."
 msgstr ""
+"التقط الأعداد الزوجية أو الفردية، في الترتيب الصحيح. استخدام لوحة المفاتيح، "
+"استخدم مفاتيح الأسهم لتحريك الطائرة المروحية.انقر بالفأرة أو المس الشاشة "
+"انقر على مكان الهدف. لمعرفة العدد الذي عليك أن تلتقطه، يمكنكإما تذكرها أو "
+"تحقق من الزاوية اليمنى السفلية."
 
 #: activities/numbers-odd-even/NumbersOddEven.qml:36
 msgctxt "NumbersOddEven|"
@@ -18377,7 +18400,7 @@ msgstr "النشاط يعلّم الأعداد الزوجية والفردية."
 msgctxt "NumbersOddEven|"
 msgid ""
 "Even numbers are numbers which leave a remainder of 0 when divided by 2."
-msgstr ""
+msgstr "الأعداد الزوجية هي أعداد باقي قسمتها على 2 يساوي 0."
 
 #: activities/numbers-odd-even/NumbersOddEven.qml:45
 msgctxt "NumbersOddEven|"
@@ -18389,14 +18412,14 @@ msgctxt "NumbersOddEven|"
 msgid ""
 "Odd numbers are numbers which do not leave a remainder of 0 when divided by "
 "2."
-msgstr ""
+msgstr "الأعداد الفردية هي أعداد باقي قسمتها على 2 يختلف عن 0."
 
 #: activities/numbers-odd-even/NumbersOddEven.qml:58
 #: activities/numbers-odd-even/NumbersOddEven.qml:62
 #: activities/numbers-odd-even/NumbersOddEven.qml:66
 msgctxt "NumbersOddEven|"
 msgid "Exercise to test your understanding."
-msgstr ""
+msgstr "تمرين لاختبار فهمك."
 
 #: activities/numbers-odd-even/resource/Tutorial1.qml:22
 msgctxt "Tutorial1|"
@@ -18478,7 +18501,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Arrange the given letters in alphabetical order or in reverse alphabetical "
 "order as requested."
-msgstr ""
+msgstr "رتّب الحروف المحددة أبجديًا أو ترتيبًا أبجديًا عكسيًا حسب الطلب."
 
 #. Help goal
 #: activities/ordering_alphabets/ActivityInfo.qml:26
@@ -18493,6 +18516,7 @@ msgid ""
 "You are provided with some letters. Drag and drop them to the upper area in "
 "alphabetical order or in reverse alphabetical order as requested."
 msgstr ""
+"أمامك بعض الحروف. اسحبها ورتّبها أبجديًا أو ترتيبًا أبجديًا عكسيًا حسب الطلب."
 
 #: activities/ordering_alphabets/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -18583,7 +18607,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "You are provided with some images. Drag and drop them to the upper area in "
 "their chronological order."
-msgstr ""
+msgstr "أمامك بعض الصور، اسحبها ورتبها في المساحة العليا ترتيبًا زمنيًا."
 
 #: activities/ordering_chronology/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -18632,6 +18656,8 @@ msgid ""
 "You are provided with some numbers. Drag and drop them to the upper area in "
 "ascending or descending order as requested."
 msgstr ""
+"أمامك بعض الأعداد اسحبها ورتّبها في المساحة العليا تصاعديًا أو تنازليًا حسب "
+"الطلب."
 
 #: activities/ordering_numbers/ordering.js:67
 msgctxt "ordering|"
@@ -18661,7 +18687,7 @@ msgstr "اسحب وأسقط الأشياء في ترتيب زمني."
 #: activities/ordering_numbers/ordering.js:72
 msgctxt "ordering|"
 msgid "Drag and drop the words to the upper box to form a meaningful sentence."
-msgstr ""
+msgstr "اسحب الكلمات من الصندوق العلوي ورتّبها في جملة مفيدة."
 
 #: activities/ordering_numbers/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -18727,7 +18753,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "You are provided with some words. Drag and drop them to the upper area to "
 "form a meaningful sentence."
-msgstr ""
+msgstr "أمامك بعض الكلمات، اسحبها إلى المساحة العليا لتركّب في جملة مفيدة."
 
 #: activities/ordering_sentences/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -18907,111 +18933,112 @@ msgid ""
 "Katsushika Hokusai, Viewing Sunset over the Ryogoku Bridge from the Ommaya "
 "Embankment - 1830"
 msgstr ""
+"كاتسوشيكا هوكوساي ، منظر غروب الشمس فوق جسر ريوغوكو من جسر أومايا - 1830"
 
 #: activities/paintings/resource/board/board11_0.qml:14
 msgctxt "board11_0|"
 msgid "Katsushika Hokusa, Poppies - 1833-1834"
-msgstr ""
+msgstr "كاتسوشيكا هوغوسا ، لوحات الخشخاش - 1833-1834"
 
 #: activities/paintings/resource/board/board12_0.qml:14
 msgctxt "board12_0|"
 msgid "Katsushika Hokusai, Kazusa sea Route - 1830."
-msgstr ""
+msgstr "كاتسوشيكا هوكوساي ، برج كازوسا - 1830."
 
 #: activities/paintings/resource/board/board13_0.qml:14
 msgctxt "board13_0|"
 msgid "Michelangelo, Pieta - 1499"
-msgstr ""
+msgstr "مايكل أنجلو ، بيتا - 1499"
 
 #: activities/paintings/resource/board/board14_0.qml:14
 msgctxt "board14_0|"
 msgid "Leonardo da Vinci, Mona Lisa - 1503-19"
-msgstr ""
+msgstr "ليوناردو دافنشي ، الموناليزا - 1503-19"
 
 #: activities/paintings/resource/board/board15_0.qml:14
 msgctxt "board15_0|"
 msgid "Giovanni Bellini, La Pala di Pesaro - 1475-85"
-msgstr ""
+msgstr "جيوفاني بيليني ، La Pala di Pesaro - 1475-85"
 
 #: activities/paintings/resource/board/board16_0.qml:14
 msgctxt "board16_0|"
 msgid "Albrecht Dürer, Lion - 1494"
-msgstr ""
+msgstr "ألبريشت دورر ، الأسد - 1494"
 
 #: activities/paintings/resource/board/board17_0.qml:14
 msgctxt "board17_0|"
 msgid "Pieter Brugel, The Harvesters - 1565"
-msgstr ""
+msgstr "بيتر بروجل ، الحاصدون - 1565"
 
 #: activities/paintings/resource/board/board18_0.qml:14
 msgctxt "board18_0|"
 msgid "Pierre-Auguste Renoir, Girls At The Piano - 1892"
-msgstr ""
+msgstr "بيير أوغست رينوار ، فتيات في البيانو - 1892"
 
 #: activities/paintings/resource/board/board19_0.qml:14
 msgctxt "board19_0|"
 msgid "Wassily Kandinsky, Composition VIII - 1923"
-msgstr ""
+msgstr "فاسيلي كاندينسكي ، التكوين الثامن - 1923"
 
 #: activities/paintings/resource/board/board1_0.qml:14
 msgctxt "board1_0|"
 msgid "Pierre-Auguste Renoir, Bal du moulin de la Galette - 1876"
-msgstr ""
+msgstr "بيير أوغست رينوار ، الكرة في مولان دي لا غاليت - 1876"
 
 #: activities/paintings/resource/board/board20_0.qml:14
 msgctxt "board20_0|"
 msgid "Bazille, The Ramparts at Aigues-Mortes - 1867"
-msgstr ""
+msgstr "بازيل ، الأسوار في إيج مورتس - 1867"
 
 #: activities/paintings/resource/board/board21_0.qml:14
 msgctxt "board21_0|"
 msgid "Mary Cassatt, Summertime - 1894"
-msgstr ""
+msgstr "ماري كاسات ، الصيف - 1894"
 
 #: activities/paintings/resource/board/board22_0.qml:14
 msgctxt "board22_0|"
 msgid "Vincent Van Gogh, Village Street in Auvers - 1890"
-msgstr ""
+msgstr "فنسنت فان جوخ ، شارع القرية في أوفير - 1890"
 
 #: activities/paintings/resource/board/board2_0.qml:14
 msgctxt "board2_0|"
 msgid "Giuseppe Arcimboldo, Spring - 1573"
-msgstr ""
+msgstr "جوزيبي اركيمبولدو، ربيع - 1573"
 
 #: activities/paintings/resource/board/board3_0.qml:14
 msgctxt "board3_0|"
 msgid "Giuseppe Arcimboldo, The Librarian - 1566"
-msgstr ""
+msgstr "جوزيبي ارسيمبولدو، أمين المكتبة - 1566"
 
 #: activities/paintings/resource/board/board4_0.qml:14
 msgctxt "board4_0|"
 msgid "Katsushika Hokusai, Oiran and Kamuro"
-msgstr ""
+msgstr "كاتسوشيكا هوكوساي ، أويران خطة الأصلع"
 
 #: activities/paintings/resource/board/board5_0.qml:14
 msgctxt "board5_0|"
 msgid "Katsushika Hokusai, Woman holding a fan"
-msgstr ""
+msgstr "كاتسوشيكا هوكوساي، امرأة تحمل مروحة"
 
 #: activities/paintings/resource/board/board6_0.qml:14
 msgctxt "board6_0|"
 msgid "Katsushika Hokusai, Ejiri in Suruga Province - 1830-1833"
-msgstr ""
+msgstr "كاتسوشيكا هوكوساي، إيجيري في محافظة سوروجا 1830-1833"
 
 #: activities/paintings/resource/board/board7_0.qml:14
 msgctxt "board7_0|"
 msgid "Katsushika Hokusai, The Great Wave off Kanagawa - 1823-1829"
-msgstr ""
+msgstr "كاتسوشيكا هوكوساي ، الموجة العظيمة قبالة كاناغاوا - 1823-1829"
 
 #: activities/paintings/resource/board/board8_0.qml:14
 msgctxt "board8_0|"
 msgid "Utagawa Hiroshige, The Benzaiten Shrine at Inokashira in Snow - 1760-70"
-msgstr ""
+msgstr "هيروشيغي أوتاغاوا، ضريح بنزايتين في إينوكاشيرا بالثلج - 1760-70"
 
 #: activities/paintings/resource/board/board9_0.qml:14
 msgctxt "board9_0|"
 msgid "Utagawa Hiroshige, Horse-mackerel and Prawn - 1840"
-msgstr ""
+msgstr "هيروشيغي أوتاغاوا، حصان الماكريل والروبيان - 1840"
 
 #. Activity title
 #: activities/path_decoding/ActivityInfo.qml:14
@@ -19040,7 +19067,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "The directions are absolute, they do not depend on the current orientation "
 "of Tux."
-msgstr ""
+msgstr "الاتجاهات مطلقة ، فهي لا تعتمد على الاتجاه الحالي لـلبطريق."
 
 #: activities/path_decoding/resource/1/Data.qml:13
 #: activities/path_decoding/resource/2/Data.qml:13
@@ -19073,7 +19100,7 @@ msgstr "مسار فك ترميز نسبي "
 #: activities/path_encoding_relative/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid "The directions are relative to the current orientation of Tux."
-msgstr ""
+msgstr "الاتجاهات نسبية مرتبطة بالاتجاه الحالي للبطريق."
 
 #: activities/path_decoding_relative/ActivityInfo.qml:25
 #: activities/path_encoding_relative/ActivityInfo.qml:25
@@ -19082,6 +19109,9 @@ msgid ""
 "This means that UP moves forward, DOWN moves backward, LEFT moves to the "
 "left side of Tux and RIGHT moves to the right side of Tux."
 msgstr ""
+"هذا يعني أن السهم للأعلى يتحرك للأمام ، و السهم للأسف يتحرك للخلف ، و السهم "
+"لليسار يتحرك إلى الجانب الأيسر من البطريق و السهم لليمين يتحرك إلى الجانب "
+"الأيمن من البطريق تُكس."
 
 #. Activity title
 #: activities/path_encoding/ActivityInfo.qml:14
@@ -19103,6 +19133,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Use the arrow buttons to move Tux along the path until he reaches the target."
 msgstr ""
+"استخدم أزرار الأسهم لتحريك البطريق \"تُكس\" على طول المسار للوصول إلى الهدف."
 
 #: activities/path_encoding/ActivityInfo.qml:25
 #: activities/path_encoding_relative/ActivityInfo.qml:26
@@ -19149,18 +19180,22 @@ msgid ""
 "click fast enough, Tux catches the ball. You must click on it to bring it "
 "back to its initial position."
 msgstr ""
+"انقر نقرًا مزدوجًا أو اضغط ضغطًا مزدوجًا على جانب المرمى لتسديد الكرة. يمكنك "
+"النقر نقرًا مزدوجًا فوق زر الفأرة الأيسر أو الأيمن أو الأوسط. إذا لم تنقر نقرًا "
+"مزدوجًا بسرعة كافية ، فإن البطريق يمسك الكرة.  يجب عليك النقر فوق الكرة "
+"لإعادتها إلى موضعه الأول."
 
 #: activities/penalty/Penalty.qml:210
 msgctxt "Penalty|"
 msgid ""
 "Double click or double tap on the side of the goal you want to put the ball "
 "in."
-msgstr ""
+msgstr "انقر أو اضغط مرتين على جانب المرمى الذي ستسدد إليه الكرة."
 
 #: activities/penalty/Penalty.qml:250
 msgctxt "Penalty|"
 msgid "Click or tap on the ball to bring it back to its initial position."
-msgstr ""
+msgstr "انقر أو اضغط على الكرة لتعود لمكانها الأول."
 
 #. Activity title
 #: activities/photo_hunter/ActivityInfo.qml:15
@@ -19187,11 +19222,13 @@ msgid ""
 "Observe the two pictures carefully. There are some slight differences. When "
 "you find a difference you must click on it."
 msgstr ""
+"دقّق في الصورتين بعناية. هناك بعض الاختلافات الطفيفة. عندما تجد اختلافًا اضغط "
+"عليه."
 
 #: activities/photo_hunter/PhotoHunter.qml:94
 msgctxt "PhotoHunter|"
 msgid "Drag the slider to show the differences."
-msgstr ""
+msgstr "اسحب المؤشر لتظهر الفروق."
 
 #: activities/photo_hunter/PhotoHunter.qml:95
 msgctxt "PhotoHunter|"
@@ -19483,7 +19520,7 @@ msgstr "فنلندا"
 #: activities/piano_composition/MelodyList.qml:61
 msgctxt "MelodyList|"
 msgid "Melodies"
-msgstr ""
+msgstr "ألحان"
 
 #. Whole note, Half note, Quarter note and Eighth note are the different length notes in the musical notation.
 #: activities/piano_composition/OptionsRow.qml:23

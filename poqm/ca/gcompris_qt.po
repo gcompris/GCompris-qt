@@ -14481,21 +14481,21 @@ msgstr "Troba el número!"
 #: activities/guessnumber/resource/2/Data.qml:14
 #: activities/guessnumber/resource/2/Data.qml:19
 #: activities/guessnumber/resource/2/Data.qml:23
-#: activities/guessnumber/resource/3/Data.qml:15
-#: activities/guessnumber/resource/3/Data.qml:20
-#: activities/guessnumber/resource/3/Data.qml:24
-#: activities/guessnumber/resource/3/Data.qml:28
-#: activities/guessnumber/resource/4/Data.qml:15
-#: activities/guessnumber/resource/4/Data.qml:20
-#: activities/guessnumber/resource/4/Data.qml:24
-#: activities/guessnumber/resource/4/Data.qml:28
-#: activities/guessnumber/resource/4/Data.qml:32
-#: activities/guessnumber/resource/5/Data.qml:15
-#: activities/guessnumber/resource/5/Data.qml:20
-#: activities/guessnumber/resource/5/Data.qml:24
-#: activities/guessnumber/resource/5/Data.qml:28
-#: activities/guessnumber/resource/5/Data.qml:32
-#: activities/guessnumber/resource/5/Data.qml:36
+#: activities/guessnumber/resource/3/Data.qml:16
+#: activities/guessnumber/resource/3/Data.qml:21
+#: activities/guessnumber/resource/3/Data.qml:25
+#: activities/guessnumber/resource/3/Data.qml:29
+#: activities/guessnumber/resource/4/Data.qml:16
+#: activities/guessnumber/resource/4/Data.qml:21
+#: activities/guessnumber/resource/4/Data.qml:25
+#: activities/guessnumber/resource/4/Data.qml:29
+#: activities/guessnumber/resource/4/Data.qml:33
+#: activities/guessnumber/resource/5/Data.qml:16
+#: activities/guessnumber/resource/5/Data.qml:21
+#: activities/guessnumber/resource/5/Data.qml:25
+#: activities/guessnumber/resource/5/Data.qml:29
+#: activities/guessnumber/resource/5/Data.qml:33
+#: activities/guessnumber/resource/5/Data.qml:37
 #, qt-format
 msgctxt "Data|"
 msgid "Guess a number between 1 and %1."
@@ -15642,7 +15642,7 @@ msgstr ""
 "correspongui amb el nombre decimal mostrat. Després, fes clic sobre el botó "
 "«OK» per a validar la resposta."
 
-#: activities/learn_decimals/learn_decimals.js:33
+#: activities/learn_decimals/learn_decimals.js:34
 msgctxt "learn_decimals|"
 msgid ""
 "A decimal number is displayed. The bar with the arrow represents a full "
@@ -15651,7 +15651,7 @@ msgstr ""
 "Es mostra un nombre decimal. La barra amb la fletxa representa una unitat "
 "completa i cada quadre representa una dècima part d'aquesta unitat."
 
-#: activities/learn_decimals/learn_decimals.js:37
+#: activities/learn_decimals/learn_decimals.js:38
 msgctxt "learn_decimals|"
 msgid ""
 "Drag the arrow to select a part of the bar, and drag the selected part of "
@@ -15665,7 +15665,7 @@ msgstr ""
 "decimal mostrat. Després, fes clic sobre el botó «OK» per a validar la "
 "resposta."
 
-#: activities/learn_decimals/learn_decimals.js:44
+#: activities/learn_decimals/learn_decimals.js:45
 msgctxt "learn_decimals|"
 msgid ""
 "A subtraction with two decimal numbers is displayed. Below it, the first "
@@ -15676,7 +15676,7 @@ msgstr ""
 "resta es representa amb barres. Una barra representa una unitat completa i "
 "cada quadre representa una dècima part d'aquesta unitat."
 
-#: activities/learn_decimals/learn_decimals.js:48
+#: activities/learn_decimals/learn_decimals.js:49
 msgctxt "learn_decimals|"
 msgid ""
 "Click on the squares to subtract them and display the result of the "
@@ -15685,8 +15685,8 @@ msgstr ""
 "Fes clic sobre els quadres per a restar i mostrar el resultat de l'operació, "
 "i fes clic sobre el botó «OK» per a validar la resposta."
 
-#: activities/learn_decimals/learn_decimals.js:52
-#: activities/learn_decimals/learn_decimals.js:67
+#: activities/learn_decimals/learn_decimals.js:53
+#: activities/learn_decimals/learn_decimals.js:68
 msgctxt "learn_decimals|"
 msgid ""
 "If the answer is correct, type the corresponding result, and click on the OK "
@@ -15695,7 +15695,7 @@ msgstr ""
 "Si la resposta és correcta, escriu el resultat corresponent i fes clic sobre "
 "el botó «OK» per a validar-la."
 
-#: activities/learn_decimals/learn_decimals.js:59
+#: activities/learn_decimals/learn_decimals.js:60
 msgctxt "learn_decimals|"
 msgid ""
 "An addition with two decimal numbers is displayed. The bar with the arrow "
@@ -15706,7 +15706,7 @@ msgstr ""
 "representa una unitat completa i cada quadre representa una dècima part "
 "d'aquesta unitat."
 
-#: activities/learn_decimals/learn_decimals.js:63
+#: activities/learn_decimals/learn_decimals.js:64
 msgctxt "learn_decimals|"
 msgid ""
 "Drag the arrow to select a part of the bar, and drag the selected part of "
@@ -15719,13 +15719,13 @@ msgstr ""
 "fins que el nombre de barres col·locades es correspongui amb el resultat de "
 "la suma. Després, fes clic sobre el botó «OK» per a validar la resposta."
 
-#: activities/learn_decimals/learn_decimals.js:74
+#: activities/learn_decimals/learn_decimals.js:75
 msgctxt "learn_decimals|"
 msgid "A quantity is requested. The arrow allows to select up to 10 oranges."
 msgstr ""
 "Es demana una quantitat. La fletxa permet seleccionar fins a 10 taronges."
 
-#: activities/learn_decimals/learn_decimals.js:78
+#: activities/learn_decimals/learn_decimals.js:79
 msgctxt "learn_decimals|"
 msgid ""
 "Drag the arrow to select a number of oranges, and drag the selected oranges "

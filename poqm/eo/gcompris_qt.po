@@ -17,6 +17,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: translate-po (https://github.com/zcribe/translate-po)\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Language: eo\n"
+"X-Qt-Contexts: true\n"
 
 #. Activity title
 #: activities/advanced_colors/ActivityInfo.qml:15
@@ -14069,21 +14071,21 @@ msgstr "Vi trovis la numeron!"
 #: activities/guessnumber/resource/2/Data.qml:14
 #: activities/guessnumber/resource/2/Data.qml:19
 #: activities/guessnumber/resource/2/Data.qml:23
-#: activities/guessnumber/resource/3/Data.qml:15
-#: activities/guessnumber/resource/3/Data.qml:20
-#: activities/guessnumber/resource/3/Data.qml:24
-#: activities/guessnumber/resource/3/Data.qml:28
-#: activities/guessnumber/resource/4/Data.qml:15
-#: activities/guessnumber/resource/4/Data.qml:20
-#: activities/guessnumber/resource/4/Data.qml:24
-#: activities/guessnumber/resource/4/Data.qml:28
-#: activities/guessnumber/resource/4/Data.qml:32
-#: activities/guessnumber/resource/5/Data.qml:15
-#: activities/guessnumber/resource/5/Data.qml:20
-#: activities/guessnumber/resource/5/Data.qml:24
-#: activities/guessnumber/resource/5/Data.qml:28
-#: activities/guessnumber/resource/5/Data.qml:32
-#: activities/guessnumber/resource/5/Data.qml:36
+#: activities/guessnumber/resource/3/Data.qml:16
+#: activities/guessnumber/resource/3/Data.qml:21
+#: activities/guessnumber/resource/3/Data.qml:25
+#: activities/guessnumber/resource/3/Data.qml:29
+#: activities/guessnumber/resource/4/Data.qml:16
+#: activities/guessnumber/resource/4/Data.qml:21
+#: activities/guessnumber/resource/4/Data.qml:25
+#: activities/guessnumber/resource/4/Data.qml:29
+#: activities/guessnumber/resource/4/Data.qml:33
+#: activities/guessnumber/resource/5/Data.qml:16
+#: activities/guessnumber/resource/5/Data.qml:21
+#: activities/guessnumber/resource/5/Data.qml:25
+#: activities/guessnumber/resource/5/Data.qml:29
+#: activities/guessnumber/resource/5/Data.qml:33
+#: activities/guessnumber/resource/5/Data.qml:37
 #, qt-format
 msgctxt "Data|"
 msgid "Guess a number between 1 and %1."
@@ -15224,7 +15226,7 @@ msgstr ""
 "montrata dekuma nombro. Poste alklaku la butonon OK por validigi vian "
 "respondon."
 
-#: activities/learn_decimals/learn_decimals.js:33
+#: activities/learn_decimals/learn_decimals.js:34
 msgctxt "learn_decimals|"
 msgid ""
 "A decimal number is displayed. The bar with the arrow represents a full "
@@ -15233,7 +15235,7 @@ msgstr ""
 "Dekuma nombro estas montrata. La stango kun la sago reprezentas plenan "
 "unuon, kaj ĉiu kvadrato en ĝi reprezentas dekonon de tiu ĉi unuo."
 
-#: activities/learn_decimals/learn_decimals.js:37
+#: activities/learn_decimals/learn_decimals.js:38
 msgctxt "learn_decimals|"
 msgid ""
 "Drag the arrow to select a part of the bar, and drag the selected part of "
@@ -15246,7 +15248,7 @@ msgstr ""
 "nombro da faligitaj stangoj respondas al la montrata dekuma nombro. Poste "
 "alklaku la butonon OK por validigi vian respondon."
 
-#: activities/learn_decimals/learn_decimals.js:44
+#: activities/learn_decimals/learn_decimals.js:45
 msgctxt "learn_decimals|"
 msgid ""
 "A subtraction with two decimal numbers is displayed. Below it, the first "
@@ -15257,7 +15259,7 @@ msgstr ""
 "la subtraho estas reprezentita per stangoj. Unu stango reprezentas plenan "
 "unuon, kaj ĉiu kvadrato en ĝi reprezentas dekonon de ĉi tiu unuo."
 
-#: activities/learn_decimals/learn_decimals.js:48
+#: activities/learn_decimals/learn_decimals.js:49
 msgctxt "learn_decimals|"
 msgid ""
 "Click on the squares to subtract them and display the result of the "
@@ -15266,8 +15268,8 @@ msgstr ""
 "Alklaku la kvadratojn por subtrahi ilin kaj montri la rezulton de la "
 "operacio, kaj alklaku la butonon OK por validigi vian respondon."
 
-#: activities/learn_decimals/learn_decimals.js:52
-#: activities/learn_decimals/learn_decimals.js:67
+#: activities/learn_decimals/learn_decimals.js:53
+#: activities/learn_decimals/learn_decimals.js:68
 msgctxt "learn_decimals|"
 msgid ""
 "If the answer is correct, type the corresponding result, and click on the OK "
@@ -15276,7 +15278,7 @@ msgstr ""
 "Se la respondo estas ĝusta, tajpu la respondan rezulton, kaj alklaku la "
 "butonon OK por validigi vian respondon."
 
-#: activities/learn_decimals/learn_decimals.js:59
+#: activities/learn_decimals/learn_decimals.js:60
 msgctxt "learn_decimals|"
 msgid ""
 "An addition with two decimal numbers is displayed. The bar with the arrow "
@@ -15287,7 +15289,7 @@ msgstr ""
 "reprezentas plenan unuon, kaj ĉiu kvadrato en ĝi reprezentas dekonon de tiu "
 "ĉi unuo."
 
-#: activities/learn_decimals/learn_decimals.js:63
+#: activities/learn_decimals/learn_decimals.js:64
 msgctxt "learn_decimals|"
 msgid ""
 "Drag the arrow to select a part of the bar, and drag the selected part of "
@@ -15300,12 +15302,12 @@ msgstr ""
 "nombro da faligitaj stangoj respondas al la rezulto de la aldono, kaj "
 "alklaku la butonon OK por validigi vian respondon."
 
-#: activities/learn_decimals/learn_decimals.js:74
+#: activities/learn_decimals/learn_decimals.js:75
 msgctxt "learn_decimals|"
 msgid "A quantity is requested. The arrow allows to select up to 10 oranges."
 msgstr "Kvanto estas petata. La sago permesas elekti ĝis 10 oranĝojn."
 
-#: activities/learn_decimals/learn_decimals.js:78
+#: activities/learn_decimals/learn_decimals.js:79
 msgctxt "learn_decimals|"
 msgid ""
 "Drag the arrow to select a number of oranges, and drag the selected oranges "
