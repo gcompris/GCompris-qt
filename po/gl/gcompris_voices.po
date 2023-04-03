@@ -1,21 +1,22 @@
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
-#
 # Adrián Chaves (Gallaecio) <adrian@chaves.io>, 2017, 2018, 2019.
+# Pablo <parodper@gmail.com>, 2023
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-12-13 00:48+0000\n"
-"PO-Revision-Date: 2019-10-07 11:34+0200\n"
-"Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.io>\n"
+"PO-Revision-Date: 2023-03-31 22:49+0200\n"
+"Last-Translator: Pablo <parodper@gmail.com>\n"
 "Language-Team: Galician <proxecto@trasno.gal>\n"
 "Language: gl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 19.07.70\n"
+"X-Generator: Poedit 3.2.2\n"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "advanced_colors"
 #: activities/advanced_colors/ActivityInfo.qml:18
@@ -100,37 +101,32 @@ msgstr "Move o helicóptero para coller as nubes en orde alfabética."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "analog_electricity"
 #: activities/analog_electricity/ActivityInfo.qml:18
-#, fuzzy, kde-format
-#| msgid "Learn how digital electronics work and create your own circuit."
+#, kde-format
 msgid "Learn how analog electricity works and create your own circuit."
 msgstr ""
-"Aprende como funciona a electrónica dixital e crea o teu propio circuíto."
+"Aprende como funciona a electrónica analóxica e crea o teu propio circuíto."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "baby_keyboard"
 #: activities/baby_keyboard/ActivityInfo.qml:18
 #, kde-format
 msgid "Type any key on the keyboard and observe the result."
-msgstr ""
+msgstr "Pulsa calquera tecla do teclado e observa o que pasa."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "baby_mouse"
 #: activities/baby_mouse/ActivityInfo.qml:17
-#, fuzzy, kde-format
-#| msgid " Move the mouse or your finger along the pipe to stop the fire."
+#, kde-format
 msgid "Move the mouse or touch the screen and observe the result."
-msgstr " Move o rato ou o dedo ao longo do tubo para deter o lume."
+msgstr "Move o rato ou o dedo ao longo do tubo e observa o que pasa."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "baby_tangram"
 #: activities/baby_tangram/ActivityInfo.qml:18
-#, fuzzy, kde-format
-#| msgid ""
-#| "Click on each object to obtain the same figure. You can change their "
-#| "orientation by clicking on the arrows."
+#, kde-format
 msgid ""
 "Move each puzzle piece, to obtain the completed puzzle. You can change their "
 "orientation by clicking on the arrows."
 msgstr ""
-"Preme cada obxecto para obter a mesma figura. Podes cambiar a súa "
-"orientación premendo as frechas"
+"Move cada peza para completar o crebacabezas. Podes cambiar a súa "
+"orientación premendo nas frechas."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "baby_wordprocessor"
 #: activities/baby_wordprocessor/ActivityInfo.qml:18
@@ -158,30 +154,23 @@ msgstr "Inclina a caixa para conducir a bóla ata a porta."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "ballcatch"
 #: activities/ballcatch/ActivityInfo.qml:18
-#, fuzzy, kde-format
-#| msgid ""
-#| "Press the left and right arrow key at the same time to send the ball "
-#| "straight on"
+#, kde-format
 msgid ""
 "Press the left and right arrows at the same time to send the ball straight on"
 msgstr ""
 "Preme as teclas de frecha esquerda e dereita ao mesmo tempo para enviar a "
-"bóla en liña recta."
+"bóla en liña recta"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "bargame"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "bargame_2players"
 #: activities/bargame/ActivityInfo.qml:19
 #: activities/bargame_2players/ActivityInfo.qml:18
-#, fuzzy, kde-format
-#| msgid ""
-#| "Click the number of balls you wish to place in the holes and then click "
-#| "the OK button. The winner is the one who hasn't put a ball in the red "
-#| "hole."
+#, kde-format
 msgid ""
 "Select the number of balls you wish to place in the holes and then click on "
 "the OK button. The winner is the one who hasn't put a ball in the red hole."
 msgstr ""
-"Preme o número de bólas que queres colocar nos buratos e a continuación "
+"Escolla o número de bólas que queres colocar nos buratos e a continuación "
 "preme o botón «Aceptar». Gaña o que non poña ningunha bóla no burato "
 "vermello."
 
@@ -229,23 +218,21 @@ msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "categorization"
 #: activities/categorization/ActivityInfo.qml:18
-#, fuzzy, kde-format
-#| msgid "Categorize the elements into the correct group"
+#, kde-format
 msgid "Categorize the items into the correct group"
-msgstr "Agrupa os elementos no grupo correcto"
+msgstr "Clasifica os elementos no grupo correcto"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "checkers"
 #: activities/checkers/ActivityInfo.qml:18
-#, fuzzy, kde-format
-#| msgid "play chess against Tux"
+#, kde-format
 msgid "play checkers against Tux"
-msgstr "xogar ao xadrez contra Tux"
+msgstr "xogar as damas contra Tux"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "checkers_2players"
 #: activities/checkers_2players/ActivityInfo.qml:18
 #, kde-format
 msgid "play checkers with your friend"
-msgstr "Xoga ás damas cunha amiga ou amigo"
+msgstr "xoga ás damas cunha amiga ou amigo"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "chess"
 #: activities/chess/ActivityInfo.qml:18
@@ -274,7 +261,7 @@ msgstr ""
 #: activities/chronos/ActivityInfo.qml:22
 #, kde-format
 msgid "Slide the pictures into the order that tells the story"
-msgstr "Mete as imaxes na orde na que narran a historia."
+msgstr "Mete as imaxes na orde na que narran a historia"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "click_on_letter_up"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "click_on_letter"
@@ -306,8 +293,7 @@ msgstr "Arrastra e solta as agullas do reloxo para mostrar a hora necesaria"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "color_mix"
 #: activities/color_mix/ActivityInfo.qml:18
-#, fuzzy, kde-format
-#| msgid "Match the colour by moving the sliders on the tubes of paint"
+#, kde-format
 msgid "Match the color by moving the sliders on the tubes of paint"
 msgstr ""
 "Move os controis de desprazamento dos tubos de pintura para conseguir a "
@@ -315,11 +301,10 @@ msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "color_mix_light"
 #: activities/color_mix_light/ActivityInfo.qml:18
-#, fuzzy, kde-format
-#| msgid "Match the colour by moving the sliders on the torches"
+#, kde-format
 msgid "Match the color by moving the sliders on the torches"
 msgstr ""
-"Move os controis de desprazamento dos fachos para conseguir a mesma cor."
+"Move os controis de desprazamento dos fachos para conseguir a mesma cor"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "colors"
 #: activities/colors/ActivityInfo.qml:18
@@ -332,20 +317,17 @@ msgstr "Preme a cor correcta"
 #, kde-format
 msgid ""
 "Select the correct comparator sign for each pair of numbers in the list."
-msgstr ""
+msgstr "Escolle o signo correcto para comparar cada par de números da lista."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "crane"
 #: activities/crane/ActivityInfo.qml:23
-#, fuzzy, kde-format
-#| msgid ""
-#| " Click on each item in turn, in the left frame, and move them to "
-#| "reproduce the pattern from the right frame."
+#, kde-format
 msgid ""
 " Click on each item in turn, in the blue frame, and move them to reproduce "
 "the pattern from the pink frame."
 msgstr ""
-" Preme cada elemento por quendas, na zona esquerda, e móveos para reproducir "
-"o padrón da zona dereita."
+" Preme cada elemento por quendas, na zona azul, e móveos para reproducir o "
+"padrón da zona rosa."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "details"
 #: activities/details/ActivityInfo.qml:21
@@ -374,10 +356,7 @@ msgstr "Conecta os puntos na orde correcta para debuxar os números."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "enumerate"
 #: activities/enumerate/ActivityInfo.qml:18
-#, fuzzy, kde-format
-#| msgid ""
-#| "Count the elements by organising them then type the answer on your "
-#| "keyboard."
+#, kde-format
 msgid ""
 "Count the elements by organizing them then type the answer on your keyboard."
 msgstr "Organiza os elementos para contalos e escribe a resposta co teclado."
@@ -386,7 +365,7 @@ msgstr "Organiza os elementos para contalos e escribe a resposta co teclado."
 #: activities/erase/ActivityInfo.qml:18
 #, kde-format
 msgid " Clear the window with your sponge and discover the hidden picture."
-msgstr "Limpa a xanela coa esponxa e descubre a imaxe agochada."
+msgstr " Limpa a xanela coa esponxa e descubre a imaxe agochada."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "erase_2clic"
 #: activities/erase_2clic/ActivityInfo.qml:18
@@ -476,12 +455,14 @@ msgstr ""
 msgid ""
 "Select the appropriate number of parts as described in the instructions."
 msgstr ""
+"Escolle o número de partes axeitado, tal coma se indica nas instrucións."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "fractions_find"
 #: activities/fractions_find/ActivityInfo.qml:17
 #, kde-format
 msgid "Find the correct numerator and denominator of the represented fraction"
 msgstr ""
+"Escolle o denominador e numerador correctos para a fracción representada"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "geo-country"
 #: activities/geo-country/ActivityInfo.qml:22
@@ -563,7 +544,7 @@ msgstr ""
 #, kde-format
 msgid ""
 "Move the spaceship to avoid hitting the planets and reach the space station."
-msgstr ""
+msgstr "Navega a nave para esquivar os planetas e acadar a estación espacial."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "guesscount"
 #: activities/guesscount/ActivityInfo.qml:22
@@ -648,10 +629,9 @@ msgstr ""
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "learn_subtractions"
 #: activities/learn_additions/ActivityInfo.qml:18
 #: activities/learn_subtractions/ActivityInfo.qml:18
-#, fuzzy, kde-format
-#| msgid "Click on the lamps to turn them off."
+#, kde-format
 msgid "Click on the circles to give the operation's result."
-msgstr "Preme as lámpadas para apagalas."
+msgstr "Preme nos círculos para obter o resultado da operación."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "learn_decimals"
 #: activities/learn_decimals/ActivityInfo.qml:17
@@ -660,6 +640,8 @@ msgid ""
 "Drag the arrow to select a part of the bar, and drag the selected part of "
 "the bar to the empty area to represent the decimal number."
 msgstr ""
+"Debuxa a frecha para seleccionar unha parte da barra, e arrastra a parte "
+"seleccionada da barra á área baleira para representar o número decimal."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "learn_decimals_additions"
 #: activities/learn_decimals_additions/ActivityInfo.qml:17
@@ -668,20 +650,20 @@ msgid ""
 "Drag the arrow to select a part of the bar, and drag the selected part of "
 "the bar to the empty area to represent the result of the addition."
 msgstr ""
+"Debuxa a frecha para seleccionar unha parte da barra, e arrastra a parte "
+"seleccionada da barra á área baleira para representar o resultado da suma."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "learn_decimals_subtractions"
 #: activities/learn_decimals_subtractions/ActivityInfo.qml:17
-#, fuzzy, kde-format
-#| msgid "Click on the lamps to turn them off."
+#, kde-format
 msgid "Click on the squares to represent the result of the subtraction."
-msgstr "Preme as lámpadas para apagalas."
+msgstr "Preme nos cadrados para representar o resultado da resta."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "learn_digits"
 #: activities/learn_digits/ActivityInfo.qml:18
-#, fuzzy, kde-format
-#| msgid "Click on the lamps to turn them off."
+#, kde-format
 msgid "Click on the circles to match the given digit."
-msgstr "Preme as lámpadas para apagalas."
+msgstr "Preme nos círculos para que coincida co número indicado."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "learn_quantities"
 #: activities/learn_quantities/ActivityInfo.qml:17
@@ -690,6 +672,8 @@ msgid ""
 "Drag the arrow to select a number of oranges, and drag the oranges to the "
 "empty area to represent the requested quantity."
 msgstr ""
+"Debuxa a frecha para seleccionar o número de laranxas, e arrastra as "
+"laranxas á área baleira para representar a cantidade precisada."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "left_right_click"
 #: activities/left_right_click/ActivityInfo.qml:17
@@ -697,6 +681,7 @@ msgstr ""
 msgid ""
 "Move animals to their homes using a left click or right click on your mouse."
 msgstr ""
+"Move os animais os seus fogares usando o botón dereito ou esquerdo do rato."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "leftright"
 #: activities/leftright/ActivityInfo.qml:18
@@ -778,7 +763,7 @@ msgid ""
 "Listen to the sound sequence played, and reproduce it by clicking on the "
 "xylophone's bars"
 msgstr ""
-"Escoita unha secuencia de sons, e reprodúcea premendo as barras do xilófono."
+"Escoita unha secuencia de sons, e reprodúcea premendo as barras do xilófono"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-case-association-tux"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-case-association"
@@ -897,10 +882,9 @@ msgstr "Preme os cartos para pagar."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "morse_code"
 #: activities/morse_code/ActivityInfo.qml:21
-#, fuzzy, kde-format
-#| msgid "Learn and practice roman to arabic numerals conversion"
+#, kde-format
 msgid "Learn and practice the International Morse code"
-msgstr "Aprende e practica a conversión entre números romanos e arábigos"
+msgstr "Aprende e practica o código Morse internacional"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "mosaic"
 #: activities/mosaic/ActivityInfo.qml:18
@@ -952,29 +936,27 @@ msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "ordering_alphabets"
 #: activities/ordering_alphabets/ActivityInfo.qml:24
-#, fuzzy, kde-format
-#| msgid "Draw the numbers by connecting the dots in the correct order."
+#, kde-format
 msgid "Arrange the letters in the correct order."
-msgstr "Conecta os puntos na orde correcta para debuxar os números."
+msgstr "Coloca as letras na orde correcta."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "ordering_chronology"
 #: activities/ordering_chronology/ActivityInfo.qml:24
 #, kde-format
 msgid "Arrange the given events in their chronological order."
-msgstr ""
+msgstr "Coloca os eventos na orde cronolóxica axeitada."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "ordering_numbers"
 #: activities/ordering_numbers/ActivityInfo.qml:23
-#, fuzzy, kde-format
-#| msgid "Draw the numbers by connecting the dots in the correct order."
+#, kde-format
 msgid "Arrange the numbers in the correct order."
-msgstr "Conecta os puntos na orde correcta para debuxar os números."
+msgstr "Coloca os números na orde correcta."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "ordering_sentences"
 #: activities/ordering_sentences/ActivityInfo.qml:23
 #, kde-format
 msgid "Arrange the given words to form a meaningful sentence."
-msgstr ""
+msgstr "Coloca estas palabras para formar oracións con sentido."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "oware_2players"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "oware"
@@ -982,7 +964,7 @@ msgstr ""
 #: activities/oware_2players/ActivityInfo.qml:17
 #, kde-format
 msgid "Capture at least 25 seeds to win the game"
-msgstr ""
+msgstr "Captura 25 sementes para gañar a partida"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "paintings"
 #: activities/paintings/ActivityInfo.qml:23
@@ -999,6 +981,8 @@ msgid ""
 "Click on the grid squares following the given directions to help Tux reach "
 "the target."
 msgstr ""
+"Preme nos cadrados da grella segundo as direccións indicadas para que Tux "
+"poida acadar o obxectivo."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "path_encoding"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "path_encoding_relative"
@@ -1006,7 +990,7 @@ msgstr ""
 #: activities/path_encoding_relative/ActivityInfo.qml:17
 #, kde-format
 msgid "Use the arrows to move Tux along the path and reach the target."
-msgstr ""
+msgstr "Usa as teclas frecha para mover Tux no camiño para acadar o obxectivo."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "penalty"
 #: activities/penalty/ActivityInfo.qml:18
@@ -1059,7 +1043,7 @@ msgstr "Preme o tambor para reproducir o ritmo"
 #: activities/positions/ActivityInfo.qml:18
 #, kde-format
 msgid "Find the correct position"
-msgstr ""
+msgstr "Atopa a posición correcta"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "programmingMaze"
 #: activities/programmingMaze/ActivityInfo.qml:19
@@ -1074,7 +1058,7 @@ msgstr "Organiza as instrucións e segue a ruta correcta para acadar o peixe."
 msgid "Observe the train and then click on the items to set up a similar train"
 msgstr ""
 "Observa o tren e a continuación preme os elementos para montar un tren "
-"similar."
+"similar"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "readingh"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "readingv"
@@ -1140,7 +1124,7 @@ msgid ""
 "that there may be a rest left"
 msgstr ""
 "Comparte os doces de maneira equitativa entre o número indicado de nenos e "
-"ten en conta que podería quedar un resto."
+"ten en conta que podería quedar un resto"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "simplepaint"
 #: activities/simplepaint/ActivityInfo.qml:18
@@ -1152,23 +1136,17 @@ msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "smallnumbers"
 #: activities/smallnumbers/ActivityInfo.qml:18
-#, fuzzy, kde-format
-#| msgid ""
-#| "Count the number on your dice and type it on your keyboard before it "
-#| "reaches the ground."
+#, kde-format
 msgid ""
 "Count the number on the dice and type it on your keyboard before it reaches "
 "the ground."
 msgstr ""
-"Conta o número do dado e escríbeo co teclado antes de que o dado acade o "
+"Conta o número no dado e escríbeo co teclado antes de que o dado acade o "
 "chan."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "smallnumbers2"
 #: activities/smallnumbers2/ActivityInfo.qml:18
-#, fuzzy, kde-format
-#| msgid ""
-#| "Count the number of the points on the dominoes then type the result on "
-#| "your keyboard."
+#, kde-format
 msgid ""
 "Count the numbers on the dominoes then type the result on your keyboard."
 msgstr ""
@@ -1227,7 +1205,7 @@ msgid ""
 "orientation by clicking on the arrows."
 msgstr ""
 "Preme cada obxecto para obter a mesma figura. Podes cambiar a súa "
-"orientación premendo as frechas"
+"orientación premendo as frechas."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "target"
 #: activities/target/ActivityInfo.qml:18
@@ -1244,6 +1222,9 @@ msgid ""
 "Create pairs of numbers equal to ten. Select a number in the list, then "
 "select an empty spot of an operation to move the selected number there."
 msgstr ""
+"Crea pares de números que sumados vallan 10. Escolle un número da lista, e "
+"despois escolle un oco baleiro nunha operación para mover o numero escollido "
+"aí."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "tens_complement_swap"
 #: activities/tens_complement_swap/ActivityInfo.qml:17
@@ -1252,6 +1233,8 @@ msgid ""
 "Create pairs of numbers equal to ten. Select a number, then select another "
 "number of the same operation to swap their position."
 msgstr ""
+"Crea pares de números cuxa suma valla 10. Escolle un número, e despois "
+"escolle outro número da mesma operación para intercambialos."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "tens_complement_use"
 #: activities/tens_complement_use/ActivityInfo.qml:17
@@ -1261,6 +1244,9 @@ msgid ""
 "number in the list, then select an empty spot of an operation to move the "
 "selected number there."
 msgstr ""
+"Descompón as operacións para que inclúan un par de números cuxa suma valla "
+"10. Escolle un número da lista, despois escolle un oco baleiro nunha "
+"operación para mover o numero escollido aí."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "tic_tac_toe_2players"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "tic_tac_toe"
