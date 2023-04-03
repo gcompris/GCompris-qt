@@ -1,17 +1,18 @@
 # Adrián Chaves Fernández <adriyetichaves@gmail.com>, 2015, 2016, 2017.
 # Adrián Chaves (Gallaecio) <adrian@chaves.io>, 2017, 2018, 2019.
+# Pablo <parodper@gmail.com>, 2023
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2019-11-03 12:00+0100\n"
-"Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.io>\n"
+"PO-Revision-Date: 2023-04-02 13:13+0200\n"
+"Last-Translator: Pablo <parodper@gmail.com>\n"
 "Language-Team: Galician <proxecto@trasno.gal>\n"
 "Language: gl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 19.08.2\n"
+"X-Generator: Poedit 3.2.2\n"
 "X-Qt-Contexts: true\n"
 
 #. Activity title
@@ -186,7 +187,7 @@ msgstr "<b>Controis de teclado:</b>"
 #: activities/solar_system/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid "Arrows: navigate"
-msgstr ""
+msgstr "Frechas: navegar"
 
 #: activities/advanced_colors/ActivityInfo.qml:27
 #: activities/algorithm/ActivityInfo.qml:25
@@ -197,7 +198,7 @@ msgstr ""
 #: activities/money_cents/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Space or Enter: select an item"
-msgstr ""
+msgstr "Espacio ou Intro: seleccionar un elemento"
 
 #. Look at https://gcompris.net/wiki/Advanced_color_translation to see all the advanced colors Color #FF7F50
 #. ----------
@@ -771,7 +772,7 @@ msgstr ""
 #: activities/smallnumbers2/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Digits: type your answer"
-msgstr ""
+msgstr "Díxitos: Escriba a súa resposta"
 
 #: activities/algebra_by/ActivityInfo.qml:27
 #: activities/algebra_div/ActivityInfo.qml:27
@@ -779,7 +780,7 @@ msgstr ""
 #: activities/algebra_plus/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Backspace: delete the last digit in your answer"
-msgstr ""
+msgstr "Borrar: elimina o último díxito da túa resposta"
 
 #: activities/algebra_by/ActivityInfo.qml:28
 #: activities/algebra_div/ActivityInfo.qml:28
@@ -796,87 +797,57 @@ msgstr ""
 #: activities/roman_numerals/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid "Enter: validate your answer"
-msgstr ""
+msgstr "Intro: valida a túa resposta"
 
 #: activities/algebra_by/resource/1/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplication tables from 1 to 10"
 msgctxt "Data|"
 msgid "Learn multiplication table of 1."
-msgstr "Táboas de multiplicar do 1 ao 10"
+msgstr "Aprende a táboa de multiplicar do 1."
 
 #: activities/algebra_by/resource/10/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplication tables from 1 to 10"
 msgctxt "Data|"
 msgid "Learn multiplication table of 10."
-msgstr "Táboas de multiplicar do 1 ao 10"
+msgstr "Aprende a táboa de multiplicar do 10."
 
 #: activities/algebra_by/resource/2/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplication tables from 1 to 10"
 msgctxt "Data|"
 msgid "Learn multiplication table of 2."
-msgstr "Táboas de multiplicar do 1 ao 10"
+msgstr "Aprende a táboa de multiplicar do 2."
 
 #: activities/algebra_by/resource/3/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplication tables from 1 to 10"
 msgctxt "Data|"
 msgid "Learn multiplication table of 3."
-msgstr "Táboas de multiplicar do 1 ao 10"
+msgstr "Aprende a táboa de multiplicar do 3."
 
 #: activities/algebra_by/resource/4/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplication tables from 1 to 10"
 msgctxt "Data|"
 msgid "Learn multiplication table of 4."
-msgstr "Táboas de multiplicar do 1 ao 10"
+msgstr "Aprende a táboa de multiplicar do 4."
 
 #: activities/algebra_by/resource/5/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplication tables from 1 to 10"
 msgctxt "Data|"
 msgid "Learn multiplication table of 5."
-msgstr "Táboas de multiplicar do 1 ao 10"
+msgstr "Aprende a táboa de multiplicar do 5."
 
 #: activities/algebra_by/resource/6/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplication tables from 1 to 10"
 msgctxt "Data|"
 msgid "Learn multiplication table of 6."
-msgstr "Táboas de multiplicar do 1 ao 10"
+msgstr "Aprende a táboa de multiplicar do 6."
 
 #: activities/algebra_by/resource/7/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplication tables from 1 to 10"
 msgctxt "Data|"
 msgid "Learn multiplication table of 7."
-msgstr "Táboas de multiplicar do 1 ao 10"
+msgstr "Aprende a táboa de multiplicar do 7."
 
 #: activities/algebra_by/resource/8/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplication tables from 1 to 10"
 msgctxt "Data|"
 msgid "Learn multiplication table of 8."
-msgstr "Táboas de multiplicar do 1 ao 10"
+msgstr "Aprende a táboa de multiplicar do 8."
 
 #: activities/algebra_by/resource/9/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplication tables from 1 to 10"
 msgctxt "Data|"
 msgid "Learn multiplication table of 9."
-msgstr "Táboas de multiplicar do 1 ao 10"
+msgstr "Aprende a táboa de multiplicar do 9."
 
 #. Activity title
 #: activities/algebra_div/ActivityInfo.qml:15
@@ -915,84 +886,54 @@ msgstr ""
 "antes de que os pingüíns no seu globo aterren!"
 
 #: activities/algebra_div/resource/1/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn the division of numbers"
 msgctxt "Data|"
 msgid "Learn division table of 1."
-msgstr "Aprende a dividir números"
+msgstr "Aprende a dividir entre 1."
 
 #: activities/algebra_div/resource/10/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn the division of numbers"
 msgctxt "Data|"
 msgid "Learn division table of 10."
-msgstr "Aprende a dividir números"
+msgstr "Aprende a dividir entre 10."
 
 #: activities/algebra_div/resource/2/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn the division of numbers"
 msgctxt "Data|"
 msgid "Learn division table of 2."
-msgstr "Aprende a dividir números"
+msgstr "Aprende a dividir entre 2."
 
 #: activities/algebra_div/resource/3/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn the division of numbers"
 msgctxt "Data|"
 msgid "Learn division table of 3."
-msgstr "Aprende a dividir números"
+msgstr "Aprende a dividir entre 3."
 
 #: activities/algebra_div/resource/4/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn the division of numbers"
 msgctxt "Data|"
 msgid "Learn division table of 4."
-msgstr "Aprende a dividir números"
+msgstr "Aprende a dividir entre 4."
 
 #: activities/algebra_div/resource/5/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn the division of numbers"
 msgctxt "Data|"
 msgid "Learn division table of 5."
-msgstr "Aprende a dividir números"
+msgstr "Aprende a dividir entre 5."
 
 #: activities/algebra_div/resource/6/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn the division of numbers"
 msgctxt "Data|"
 msgid "Learn division table of 6."
-msgstr "Aprende a dividir números"
+msgstr "Aprende a dividir entre 6."
 
 #: activities/algebra_div/resource/7/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn the division of numbers"
 msgctxt "Data|"
 msgid "Learn division table of 7."
-msgstr "Aprende a dividir números"
+msgstr "Aprende a dividir entre 7."
 
 #: activities/algebra_div/resource/8/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn the division of numbers"
 msgctxt "Data|"
 msgid "Learn division table of 8."
-msgstr "Aprende a dividir números"
+msgstr "Aprende a dividir entre 8."
 
 #: activities/algebra_div/resource/9/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn the division of numbers"
 msgctxt "Data|"
 msgid "Learn division table of 9."
-msgstr "Aprende a dividir números"
+msgstr "Aprende a dividir entre 9."
 
 #. Activity title
 #: activities/algebra_minus/ActivityInfo.qml:15
@@ -1033,84 +974,54 @@ msgstr ""
 "antes de que os pingüíns no seu globo aterren!"
 
 #: activities/algebra_minus/resource/1/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn subtraction"
 msgctxt "Data|"
 msgid "Learn subtraction table of 1."
-msgstr "Aprende a restar"
+msgstr "Aprende a táboa de restar do 1."
 
 #: activities/algebra_minus/resource/10/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn subtraction"
 msgctxt "Data|"
 msgid "Learn subtraction table of 10."
-msgstr "Aprende a restar"
+msgstr "Aprende a táboa de restar do 10."
 
 #: activities/algebra_minus/resource/2/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn subtraction"
 msgctxt "Data|"
 msgid "Learn subtraction table of 2."
-msgstr "Aprende a restar"
+msgstr "Aprende a táboa de restar do 2."
 
 #: activities/algebra_minus/resource/3/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn subtraction"
 msgctxt "Data|"
 msgid "Learn subtraction table of 3."
-msgstr "Aprende a restar"
+msgstr "Aprende a táboa de restar do 3."
 
 #: activities/algebra_minus/resource/4/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn subtraction"
 msgctxt "Data|"
 msgid "Learn subtraction table of 4."
-msgstr "Aprende a restar"
+msgstr "Aprende a táboa de restar do 4."
 
 #: activities/algebra_minus/resource/5/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn subtraction"
 msgctxt "Data|"
 msgid "Learn subtraction table of 5."
-msgstr "Aprende a restar"
+msgstr "Aprende a táboa de restar do 6."
 
 #: activities/algebra_minus/resource/6/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn subtraction"
 msgctxt "Data|"
 msgid "Learn subtraction table of 6."
-msgstr "Aprende a restar"
+msgstr "Aprende a táboa de restar do 6."
 
 #: activities/algebra_minus/resource/7/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn subtraction"
 msgctxt "Data|"
 msgid "Learn subtraction table of 7."
-msgstr "Aprende a restar"
+msgstr "Aprende a táboa de restar do 7."
 
 #: activities/algebra_minus/resource/8/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn subtraction"
 msgctxt "Data|"
 msgid "Learn subtraction table of 8."
-msgstr "Aprende a restar"
+msgstr "Aprende a táboa de restar do 8."
 
 #: activities/algebra_minus/resource/9/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn subtraction"
 msgctxt "Data|"
 msgid "Learn subtraction table of 9."
-msgstr "Aprende a restar"
+msgstr "Aprende a táboa de restar do 9."
 
 #. Activity title
 #: activities/algebra_plus/ActivityInfo.qml:15
@@ -1149,84 +1060,54 @@ msgstr ""
 "antes de que os pingüíns no seu globo aterren!"
 
 #: activities/algebra_plus/resource/1/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn addition"
 msgctxt "Data|"
 msgid "Learn addition table of 1."
-msgstr "Aprende a sumar"
+msgstr "Aprende a táboa de sumar do 1."
 
 #: activities/algebra_plus/resource/10/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn addition"
 msgctxt "Data|"
 msgid "Learn addition table of 10."
-msgstr "Aprende a sumar"
+msgstr "Aprende a táboa de sumar do 10."
 
 #: activities/algebra_plus/resource/2/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn addition"
 msgctxt "Data|"
 msgid "Learn addition table of 2."
-msgstr "Aprende a sumar"
+msgstr "Aprende a táboa de sumar do 2."
 
 #: activities/algebra_plus/resource/3/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn addition"
 msgctxt "Data|"
 msgid "Learn addition table of 3."
-msgstr "Aprende a sumar"
+msgstr "Aprende a táboa de sumar do 3."
 
 #: activities/algebra_plus/resource/4/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn addition"
 msgctxt "Data|"
 msgid "Learn addition table of 4."
-msgstr "Aprende a sumar"
+msgstr "Aprende a táboa de sumar do 4."
 
 #: activities/algebra_plus/resource/5/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn addition"
 msgctxt "Data|"
 msgid "Learn addition table of 5."
-msgstr "Aprende a sumar"
+msgstr "Aprende a táboa de sumar do 5."
 
 #: activities/algebra_plus/resource/6/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn addition"
 msgctxt "Data|"
 msgid "Learn addition table of 6."
-msgstr "Aprende a sumar"
+msgstr "Aprende a táboa de sumar do 6."
 
 #: activities/algebra_plus/resource/7/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn addition"
 msgctxt "Data|"
 msgid "Learn addition table of 7."
-msgstr "Aprende a sumar"
+msgstr "Aprende a táboa de sumar do 7."
 
 #: activities/algebra_plus/resource/8/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn addition"
 msgctxt "Data|"
 msgid "Learn addition table of 8."
-msgstr "Aprende a sumar"
+msgstr "Aprende a táboa de sumar do 8."
 
 #: activities/algebra_plus/resource/9/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn addition"
 msgctxt "Data|"
 msgid "Learn addition table of 9."
-msgstr "Aprende a sumar"
+msgstr "Aprende a táboa de sumar do 9."
 
 #. Activity title
 #: activities/algorithm/ActivityInfo.qml:15
@@ -1236,12 +1117,9 @@ msgstr "Asociacións lóxicas"
 
 #. Help title
 #: activities/algorithm/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Complete the arrangement of fruits"
 msgctxt "ActivityInfo|"
 msgid "Complete the arrangement of fruit."
-msgstr "Ordena as froitas"
+msgstr "Ordena todas as froitas."
 
 #. Help goal
 #: activities/algorithm/ActivityInfo.qml:20
@@ -1251,12 +1129,6 @@ msgstr "Actividade de adestramento lóxico."
 
 #. Help manual
 #: activities/algorithm/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Look at the two sequences. Each fruit in the first sequence has been "
-#| "replaced by another fruit in the second sequence. Complete the second "
-#| "sequence by using the correct fruit, after studying this pattern."
 msgctxt "ActivityInfo|"
 msgid ""
 "Look at the two sequences. Each fruit in the first sequence has been "
@@ -1293,18 +1165,13 @@ msgstr ""
 
 #. Help manual
 #: activities/align4/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Play with a friend. Take turns to click on the square which you want to "
-#| "mark. First player to create a line of 3 marks wins"
 msgctxt "ActivityInfo|"
 msgid ""
 "Play with Tux. Take turns to click the line in which you want to drop a "
 "token. The first player to create a line of 4 tokens wins."
 msgstr ""
-"Xoga contra un amigo. Por quendas, premede a caixa que queirades marcar. "
-"Gaña o primeiro xogador que consiga crear unha liña de 3 marcas."
+"Xoga con Tux. Por quendas, preme a liña na que queiras poñer unha ficha. "
+"Gaña o primeiro xogador que consiga crear unha liña de 4 fichas."
 
 #: activities/align4/ActivityInfo.qml:23 activities/bargame/ActivityInfo.qml:26
 #: activities/checkers/ActivityInfo.qml:27
@@ -1314,27 +1181,26 @@ msgid ""
 "You can use the arrow buttons to manually select the difficulty level. Tux "
 "will play better when you increase the level."
 msgstr ""
+"Podes usar as frechas para cambiar o nivel de dificultade. Canto máis alto "
+"sexa o nivel mellor xogará Tux."
 
 #: activities/align4/ActivityInfo.qml:25
 #: activities/align4_2players/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid "Left arrow: move the token to the left"
-msgstr ""
+msgstr "Frecha esquerda: mover a ficha á esquerda"
 
 #: activities/align4/ActivityInfo.qml:26
 #: activities/align4_2players/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Reproduce the tower on the right side"
 msgctxt "ActivityInfo|"
 msgid "Right arrow: move the token to the right"
-msgstr "Reproduce a torre na dereita"
+msgstr "Frecha dereita: mover a ficha á dereita"
 
 #: activities/align4/ActivityInfo.qml:27
 #: activities/align4_2players/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Space or Down arrow: drop the token"
-msgstr ""
+msgstr "Espacio ou frecha abaixo: soltar a ficha"
 
 #. Activity title
 #: activities/align4_2players/ActivityInfo.qml:15
@@ -1344,18 +1210,13 @@ msgstr "Catro en liña (cun amigo)"
 
 #. Help manual
 #: activities/align4_2players/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Play with a friend. Take turns to click on the square which you want to "
-#| "mark. First player to create a line of 3 marks wins"
 msgctxt "ActivityInfo|"
 msgid ""
 "Play with a friend. Take turns to click the line in which you want to drop a "
 "token. The first player to create a line of 4 tokens wins."
 msgstr ""
-"Xoga contra un amigo. Por quendas, premede a caixa que queirades marcar. "
-"Gaña o primeiro xogador que consiga crear unha liña de 3 marcas."
+"Xoga cun amigo. Por quendas, premede a liña na que queirades poñer unha "
+"ficha. Gaña o primeiro xogador que consiga crear unha liña de 4 fichas."
 
 #. Activity title
 #: activities/alphabet-sequence/ActivityInfo.qml:15
@@ -1401,7 +1262,7 @@ msgstr ""
 #: activities/planegame/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Arrows: move the helicopter"
-msgstr ""
+msgstr "Frechas: mover o helicóptero"
 
 #: activities/alphabet-sequence/AlphabetSequence.qml:18
 msgctxt "AlphabetSequence|"
@@ -1433,43 +1294,29 @@ msgstr "Selecciona un modo"
 
 #. Activity title
 #: activities/analog_electricity/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Digital Electricity"
 msgctxt "ActivityInfo|"
 msgid "Analog electricity"
-msgstr "Electricidade dixital"
+msgstr "Electricidade analóxica"
 
 #. Help title
 #: activities/analog_electricity/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Create and simulate a digital electric schema"
 msgctxt "ActivityInfo|"
 msgid "Create and simulate an analog electric schema."
-msgstr "Crear e simular un esquema eléctrico dixital"
+msgstr "Crear e simular un esquema eléctrico analóxico."
 
 #. Help goal
 #: activities/analog_electricity/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Freely create a digital electric schema with a real time simulation of it."
 msgctxt "ActivityInfo|"
 msgid "Create an analog electric schema with a real time simulation."
 msgstr ""
-"Crear libremente un esquema eléctrico dixital cunha simulación súa en tempo "
-"real."
+"Crear libremente un esquema eléctrico analóxico cunha simulación súa en "
+"tempo real."
 
 #. Help prerequisite
 #: activities/analog_electricity/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Requires some basic understanding of the concept of digital electronics."
 msgctxt "ActivityInfo|"
 msgid "Requires some basic understanding of the concept of electricity."
-msgstr "Require unha comprensión básica do concepto de electrónica dixital."
+msgstr "Require unha comprensión básica do concepto da electricidade."
 
 #. Help manual
 #: activities/analog_electricity/ActivityInfo.qml:24
@@ -1478,6 +1325,8 @@ msgid ""
 "Drag electrical components from the selector and drop them in the working "
 "area. In the working area, you can move the components by dragging them."
 msgstr ""
+"Arrastra compoñentes eléctricos do selector e sóltaos na área de traballo. "
+"Dentro da área de traballo podes mover os compoñentes pinchando neles."
 
 #: activities/analog_electricity/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
@@ -1485,6 +1334,9 @@ msgid ""
 "To delete a component or wire, select the deletion tool on top of the "
 "component selector, and select the component or wire."
 msgstr ""
+"Para eliminar un compoñente ou cable escolle a ferramenta de borrado de "
+"enriba do selector de compoñentes, e selecciona o compoñente ou cable a "
+"borrar."
 
 #: activities/analog_electricity/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
@@ -1492,6 +1344,8 @@ msgid ""
 "You can click on the component and then on the rotate buttons to rotate it "
 "or on the info button to get information about it."
 msgstr ""
+"Premer no compoñente e despois nos botóns de rotar para xiralo, ou no botón "
+"de información para obter información sobre el."
 
 #: activities/analog_electricity/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
@@ -1499,6 +1353,8 @@ msgid ""
 "You can click on the switch to open and close it. Likewise, you can change "
 "the rheostat value by dragging its slider."
 msgstr ""
+"Preme no interruptor para abrilo e pechalo. Para cambiar o valor do reóstato "
+"pincha e arrastra o regulador."
 
 #: activities/analog_electricity/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
@@ -1506,6 +1362,8 @@ msgid ""
 "To connect two terminals, click on the first terminal, then on the second "
 "terminal. To deselect a terminal, click on any empty area."
 msgstr ""
+"Para conectar dúas terminais preme na primeira terminal, e despois na "
+"segunda terminal. Para cancelar preme nunha área baleira."
 
 #: activities/analog_electricity/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
@@ -1513,11 +1371,14 @@ msgid ""
 "For repairing a broken bulb or LED, click on it after disconnecting it from "
 "the circuit. The simulation is updated in real time by any user action."
 msgstr ""
+"Para reparar unha lámpada ou LED estragados desconéctaos do circuíto e preme "
+"neles. A simulación actualízase inmediatamente tras calquera acción do "
+"usuario."
 
 #: activities/analog_electricity/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "The electric simulation engine is from edX: "
-msgstr ""
+msgstr "O motor da simulación eléctrica é de edX: "
 
 #: activities/analog_electricity/cktsim.js:138
 msgctxt "cktsim|"
@@ -1525,13 +1386,15 @@ msgid ""
 "Warning! Circuit has a voltage source loop or a source shorted by a wire, "
 "please remove the wire causing the short."
 msgstr ""
+"Coidado! O circuíto ten un bucle nunha fonte de voltaxe, ou un "
+"cortocircuíto. Elimina o cable culpable."
 
 #: activities/analog_electricity/cktsim.js:139
 msgctxt "cktsim|"
 msgid ""
 "Warning! Simulator might produce meaningless results or no result with this "
 "circuit."
-msgstr ""
+msgstr "Coidado! Os datos da simulación deste circuíto poden ser absurdos."
 
 #: activities/analog_electricity/components/Battery.qml:19
 msgctxt "Battery|"
@@ -1540,26 +1403,29 @@ msgid ""
 "a closed circuit. Which means there should be a path for the current to flow "
 "from one terminal of the battery to the other."
 msgstr ""
+"A batería úsase para darlle corrente aos dispositivos electrónicos. Tamén "
+"pode meter voltaxe nun circuíto pechado. O que significa que se precisa que "
+"exista algún xeito de que a corrente chegue dun polo da batería ao outro."
 
 #: activities/analog_electricity/components/Battery.qml:19
 msgctxt "Battery|"
 msgid ""
 "If the current in a circuit is too high then the battery can be damaged."
-msgstr ""
+msgstr "As baterías poden danarse se hai demasiada corrente no circuíto."
 
 #. 1st V for Voltage, 2nd V for Volt
 #: activities/analog_electricity/components/Battery.qml:21
 #, qt-format
 msgctxt "Battery|"
 msgid "V = %1V"
-msgstr ""
+msgstr "V = %1V"
 
 #. I for current intensity, A for Ampere
 #: activities/analog_electricity/components/Battery.qml:23
 #, qt-format
 msgctxt "Battery|"
 msgid "I = %1A"
-msgstr ""
+msgstr "I = %1A"
 
 #: activities/analog_electricity/components/Bulb.qml:19
 msgctxt "Bulb|"
@@ -1568,26 +1434,29 @@ msgid ""
 "supplied voltage. It will be broken if there is a power greater than a "
 "certain limit."
 msgstr ""
+"As lámpadas ilumínanse cando teñen corrente dabondo. A intensidade é "
+"proporcional ao voltaxe subministrado, pero queimarase se se sobrepasa o seu "
+"límite."
 
 #. 1st V for Voltage, 2nd V for Volt
 #: activities/analog_electricity/components/Bulb.qml:21
 #, qt-format
 msgctxt "Bulb|"
 msgid "V = %1V"
-msgstr ""
+msgstr "V = %1V"
 
 #. I for current intensity, A for Ampere
 #: activities/analog_electricity/components/Bulb.qml:23
 #, qt-format
 msgctxt "Bulb|"
 msgid "I = %1A"
-msgstr ""
+msgstr "I = %1A"
 
 #: activities/analog_electricity/components/Connection.qml:19
 msgctxt "Connection|"
 msgid ""
 "A simple connection point to connect several wires in an electrical circuit."
-msgstr ""
+msgstr "Un punto para poder conectar varios cables do circuíto."
 
 #: activities/analog_electricity/components/RedLed.qml:19
 msgctxt "RedLed|"
@@ -1596,44 +1465,47 @@ msgid ""
 "if the current flow is in the direction of the arrow. Electrical energy more "
 "than a certain limit can break it."
 msgstr ""
+"O LED vermello converte enerxía eléctrica en luz vermella. Só funcionará se "
+"a corrente vai na mesma dirección ca frecha. Pode queimarse se pasa "
+"demasiada corrente."
 
 #: activities/analog_electricity/components/Resistor.qml:19
 msgctxt "Resistor|"
 msgid "Resistors are used to reduce the current flow in an electrical circuit."
-msgstr ""
+msgstr "As resistencias reducen a corrente que flúe polo circuíto."
 
 #. 1st V for Voltage, 2nd V for Volt
 #: activities/analog_electricity/components/Resistor.qml:21
 #, qt-format
 msgctxt "Resistor|"
 msgid "V = %1V"
-msgstr ""
+msgstr "V = %1V"
 
 #. I for current intensity, A for Ampere
 #: activities/analog_electricity/components/Resistor.qml:23
 #, qt-format
 msgctxt "Resistor|"
 msgid "I = %1A"
-msgstr ""
+msgstr "I = %1A"
 
 #: activities/analog_electricity/components/Rheostat.qml:19
 msgctxt "Rheostat|"
 msgid "Rheostat is used to vary resistance in an electrical circuit."
-msgstr ""
+msgstr "Os reóstatos serven para variar a resistencia nun circuíto eléctrico."
 
 #. 1st V for Voltage, 2nd V for Volt
 #: activities/analog_electricity/components/Rheostat.qml:21
 #, qt-format
 msgctxt "Rheostat|"
 msgid "V = %1V"
-msgstr ""
+msgstr "V = %1V"
 
 #. I for current intensity, A for Ampere
 #: activities/analog_electricity/components/Rheostat.qml:23
 #, qt-format
 msgctxt "Rheostat|"
 msgid "I = %1A"
-msgstr ""
+msgstr "I = %1A"
 
 #: activities/analog_electricity/components/Switch1.qml:19
 msgctxt "Switch1|"
@@ -1641,62 +1513,56 @@ msgid ""
 "Switch can connect or disconnect the conducting path in an electrical "
 "circuit."
 msgstr ""
+"Os interruptores poden permitir ou impedir o fluxo de enerxía polo circuíto."
 
 #: activities/analog_electricity/components/Switch2.qml:19
 msgctxt "Switch2|"
 msgid ""
 "A three points switch can toggle a circuit between two connection points."
 msgstr ""
+"Un conmutador pode activar ou desactivar o circuíto entre dous puntos de "
+"conexión."
 
 #: activities/analog_electricity/TutorialDataset.qml:20
 msgctxt "TutorialDataset|"
 msgid "Battery"
-msgstr ""
+msgstr "Batería"
 
 #: activities/analog_electricity/TutorialDataset.qml:29
 msgctxt "TutorialDataset|"
 msgid "Bulb"
-msgstr ""
+msgstr "Lámpada"
 
 #: activities/analog_electricity/TutorialDataset.qml:38
 #: activities/digital_electricity/TutorialDataset.qml:82
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "Switch"
 msgctxt "TutorialDataset|"
 msgid "Switch"
-msgstr "Cambiar"
+msgstr "Interruptor"
 
 #: activities/analog_electricity/TutorialDataset.qml:47
 msgctxt "TutorialDataset|"
 msgid "3 points switch"
-msgstr ""
+msgstr "Conmutador"
 
 #: activities/analog_electricity/TutorialDataset.qml:56
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Simple Letters"
 msgctxt "TutorialDataset|"
 msgid "Simple connector"
-msgstr "Letras simples"
+msgstr "Punto de conexión"
 
 #: activities/analog_electricity/TutorialDataset.qml:64
 msgctxt "TutorialDataset|"
 msgid "Rheostat"
-msgstr ""
+msgstr "Reóstato"
 
 #: activities/analog_electricity/TutorialDataset.qml:73
-#, fuzzy
-#| msgctxt "Menu|"
-#| msgid "History"
 msgctxt "TutorialDataset|"
 msgid "Resistor"
-msgstr "Historia"
+msgstr "Resistencia"
 
 #: activities/analog_electricity/TutorialDataset.qml:82
 msgctxt "TutorialDataset|"
 msgid "Red LED"
-msgstr ""
+msgstr "LED vermello"
 
 #: activities/analog_electricity/TutorialDataset.qml:101
 msgctxt "TutorialDataset|"
@@ -1704,6 +1570,8 @@ msgid ""
 "A bulb glows when current travels through it. If there is a gap in the path, "
 "the current cannot travel and the electrical devices will not work."
 msgstr ""
+"As lámpadas brillan cando reciben corrente. Se a corrente algún obstáculo e "
+"non pode pasar os dispositivos electrónicos non funcionarán."
 
 #: activities/analog_electricity/TutorialDataset.qml:102
 msgctxt "TutorialDataset|"
@@ -1712,20 +1580,18 @@ msgid ""
 "a closed circuit. Wires can be used to connect devices and create the "
 "circuit."
 msgstr ""
+"O camiño que escolle a electricidade chámase circuíto. Todos os dispositivos "
+"electrónicos precisan dun circuíto para funcionar. Para conectar varios "
+"dispositivos e crear un circuíto úsanse cables."
 
 #: activities/analog_electricity/TutorialDataset.qml:103
-#, fuzzy
-#| msgctxt "TutorialDataset|"
-#| msgid ""
-#| "For a more detailed description about the NOR gate, select it and click "
-#| "on the info button."
 msgctxt "TutorialDataset|"
 msgid ""
 "For a detailed description of battery and bulb, click on those and then "
 "click on the info button."
 msgstr ""
-"Para unha descrición máis detallada da porta NOR selecciónaa e preme o botón "
-"de información."
+"Para unha descrición máis detallada da batería e da lámpada, selecciónaos e "
+"preme o botón de información."
 
 #: activities/analog_electricity/TutorialDataset.qml:104
 msgctxt "TutorialDataset|"
@@ -2344,7 +2210,7 @@ msgstr ""
 #: activities/babyshapes/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid "The dog is provided by Andre Connes and released under the GPL"
-msgstr "O can forneceuno Andre Connes e está protexido pola licenza GPL."
+msgstr "O can forneceuno Andre Connes e está protexido pola licenza GPL"
 
 #: activities/babyshapes/resource/board/board1_0.qml:14
 msgctxt "board1_0|"
@@ -4571,7 +4437,7 @@ msgstr "Xaque das negras"
 #: activities/chess/chess.js:145
 msgctxt "chess|"
 msgid "Invalid, your king may be in check"
-msgstr "Incorrecto, o rei podería estar en xaque."
+msgstr "Incorrecto, o rei podería estar en xaque"
 
 #. Translators: undo all the moves in chess activity
 #: activities/chess/Chess.qml:123
@@ -5894,7 +5760,7 @@ msgid ""
 "cat;dog;win;red;yes;big;box;air;arm;car;bus;fun;day;eat;hat;leg;ice;old;egg"
 msgstr ""
 "ano;boi;can;dar;ela;gol;iac;mes;non;oca;ola;osa;ovo;por;que;reo;soa;tea;tic;"
-"toa;ula;uva;vao;xeo;zoo;"
+"toa;ula;uva;vao;xeo;zoo"
 
 #. Translators: NOTE: Word list for crane activity. Translate this into a list of 10–20 simple 4-letter words separated by semi-colons. The words can only contain lowercase ASCII letters (a–z). Example: blue;best;good;area
 #: activities/crane/crane.js:52
@@ -5983,32 +5849,32 @@ msgstr ""
 #: activities/details/resource/board/board10_0.qml:14
 msgctxt "board10_0|"
 msgid "Eilean Donan castle"
-msgstr "Castelo de Eilean Donan."
+msgstr "Castelo de Eilean Donan"
 
 #: activities/details/resource/board/board11_0.qml:14
 msgctxt "board11_0|"
 msgid "Gizah Pyramids, Egypt"
-msgstr "Pirámides de Guiza, Exipto."
+msgstr "Pirámides de Guiza, Exipto"
 
 #: activities/details/resource/board/board12_0.qml:14
 msgctxt "board12_0|"
 msgid "Sydney Opera House, Australia"
-msgstr "Ópera de Sidney, Australia."
+msgstr "Ópera de Sidney, Australia"
 
 #: activities/details/resource/board/board13_0.qml:14
 msgctxt "board13_0|"
 msgid "Tower Bridge in London"
-msgstr "Ponte da Torre de Londres."
+msgstr "Ponte da Torre de Londres"
 
 #: activities/details/resource/board/board14_0.qml:14
 msgctxt "board14_0|"
 msgid "Eiffel Tower, seen from the champ de Mars, Paris, France"
-msgstr "Torre Eiffel, vista desde o campo de Marte, París (Francia)."
+msgstr "Torre Eiffel, vista desde o campo de Marte, París (Francia)"
 
 #: activities/details/resource/board/board15_0.qml:14
 msgctxt "board15_0|"
 msgid "Courtyard of the Museum of Louvre, and its pyramid"
-msgstr "Xardíns do museo Louvre, e a súa pirámide."
+msgstr "Xardíns do museo Louvre, e a súa pirámide"
 
 #: activities/details/resource/board/board16_0.qml:14
 msgctxt "board16_0|"
@@ -6018,7 +5884,7 @@ msgstr "Panorama do Château de Chenonceau, Indre-et-Loire, Francia."
 #: activities/details/resource/board/board17_0.qml:14
 msgctxt "board17_0|"
 msgid "Windmill in Sønderho, Fanø, Denmark"
-msgstr "Muíño de vento en Sønderho, Fanø, Dinamarca."
+msgstr "Muíño de vento en Sønderho, Fanø, Dinamarca"
 
 #: activities/details/resource/board/board18_0.qml:14
 msgctxt "board18_0|"
@@ -6028,22 +5894,22 @@ msgstr "Castelo Nagoya, Prefectura de Aichi, Xapón."
 #: activities/details/resource/board/board19_0.qml:14
 msgctxt "board19_0|"
 msgid "Taj Mahal, Agra, India"
-msgstr "Taj Mahal, Agra, India."
+msgstr "Taj Mahal, Agra, India"
 
 #: activities/details/resource/board/board1_0.qml:14
 msgctxt "board1_0|"
 msgid "Vincent van Gogh, Entrance Hall of Saint-Paul Hospital - 1889"
-msgstr "Vincent van Gogh, Vestíbulo do hospital Saint-Paul - 1889."
+msgstr "Vincent van Gogh, Vestíbulo do hospital Saint-Paul - 1889"
 
 #: activities/details/resource/board/board20_0.qml:14
 msgctxt "board20_0|"
 msgid "Castle Neuschwanstein at Schwangau, Bavaria, Germany"
-msgstr "Castelo Neuschwanstein en Schwangau, Bavaria, Alemaña."
+msgstr "Castelo Neuschwanstein en Schwangau, Bavaria, Alemaña"
 
 #: activities/details/resource/board/board21_0.qml:14
 msgctxt "board21_0|"
 msgid "Egeskov Castle, Denmark"
-msgstr "Castelo Egeskov, Dinamarca."
+msgstr "Castelo Egeskov, Dinamarca"
 
 #: activities/details/resource/board/board2_0.qml:14
 msgctxt "board2_0|"
@@ -7332,7 +7198,7 @@ msgstr ""
 #: activities/erase/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Move the mouse or touch the screen"
-msgstr "Move o rato ou a pantalla táctil."
+msgstr "Move o rato ou a pantalla táctil"
 
 #. Help title
 #: activities/erase/ActivityInfo.qml:17
@@ -7365,7 +7231,7 @@ msgstr "Move o rato ou toca a pantalla ata que desaparezan todos os bloques."
 #: activities/erase_2clic/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Double tap or double click"
-msgstr "Toca ou preme dúas veces seguidas."
+msgstr "Toca ou preme dúas veces seguidas"
 
 #. Help title
 #: activities/erase_2clic/ActivityInfo.qml:17
@@ -15598,7 +15464,7 @@ msgstr "Intuición e práctica de cálculos de álxebra."
 #: activities/guesscount/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Knowledge of arithmetic operations."
-msgstr "coñecemento de operacións aritméticas."
+msgstr "Coñecemento de operacións aritméticas."
 
 #. Help manual
 #: activities/guesscount/ActivityInfo.qml:28
@@ -15804,7 +15670,7 @@ msgstr ""
 #: activities/hangman/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "The classic hangman game"
-msgstr "O clásico xogo do aforcado."
+msgstr "O clásico xogo do aforcado"
 
 #. Help title
 #: activities/hangman/ActivityInfo.qml:17
@@ -15871,7 +15737,7 @@ msgid ""
 "joining a translation team on <a href=\"%2\">%2</a>"
 msgstr ""
 "GCompris desenvólveo a comunidade de KDE, para colaborar na súa tradución "
-"únete a un grupo de tradución en <a href=\"%2\">%2</a>."
+"únete a un grupo de tradución en <a href=\"%2\">%2</a>"
 
 #: activities/hangman/Hangman.qml:403
 msgctxt "Hangman|"
@@ -16004,7 +15870,7 @@ msgctxt "HanoiReal|"
 msgid ""
 "Build the same tower in the empty area as the one you see on the right-hand "
 "side"
-msgstr "Constrúe na zona baleira unha torre idéntica á da dereita."
+msgstr "Constrúe na zona baleira unha torre idéntica á da dereita"
 
 #. Activity title
 #: activities/hexagon/ActivityInfo.qml:15
@@ -16086,7 +15952,7 @@ msgstr ""
 #: activities/imagename/resource/board/board1_0.qml:14
 msgctxt "board1_0|"
 msgid "Drag and Drop each item above its name"
-msgstr "Arrastra e solta cada elemento sobre o seu nome."
+msgstr "Arrastra e solta cada elemento sobre o seu nome"
 
 #: activities/imagename/resource/board/board1_0.qml:59
 msgctxt "board1_0|"
@@ -16755,7 +16621,7 @@ msgid ""
 "joining a translation team on <a href=\"%2\">%2</a>"
 msgstr ""
 "GCompris desenvólveo a comunidade de KDE, para colaborar na súa tradución "
-"únete a un grupo de tradución en <a href=\"%2\">%2</a>."
+"únete a un grupo de tradución en <a href=\"%2\">%2</a>"
 
 #: activities/lang/Lang.qml:143
 msgctxt "Lang|"
@@ -17699,7 +17565,7 @@ msgid ""
 "joining a translation team on <a href=\"%2\">%2</a>"
 msgstr ""
 "GCompris desenvólveo a comunidade de KDE, para colaborar na súa tradución "
-"únete a un grupo de tradución en <a href=\"%2\">%2</a>."
+"únete a un grupo de tradución en <a href=\"%2\">%2</a>"
 
 #: activities/letter-in-word/LetterInWord.qml:301
 msgctxt "LetterInWord|"
@@ -18009,7 +17875,7 @@ msgstr ""
 #: activities/magic-hat-minus/MagicHat.qml:93
 msgctxt "MagicHat|"
 msgid "Click on the hat to begin the game"
-msgstr "Preme o sombreiro para comezar a partida."
+msgstr "Preme o sombreiro para comezar a partida"
 
 #: activities/magic-hat-minus/resource/1/Data.qml:13
 #, fuzzy
@@ -18265,7 +18131,7 @@ msgid ""
 "moves"
 msgstr ""
 "Mira a túa posición, despois cambia ao modo invisíbel para continuar os teus "
-"movementos."
+"movementos"
 
 #. Activity title
 #: activities/mazeinvisible/ActivityInfo.qml:15
@@ -18471,7 +18337,7 @@ msgstr "Aprender o alfabeto en maiúsculas e minúsculas, memoria."
 #: activities/memory-case-association/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid "Knowing alphabets."
-msgstr "Saber os alfabetos"
+msgstr "Saber os alfabetos."
 
 #. Help manual
 #: activities/memory-case-association-tux/ActivityInfo.qml:24
@@ -20461,7 +20327,7 @@ msgid ""
 "joining a translation team on <a href=\"%2\">%2</a>"
 msgstr ""
 "GCompris desenvólveo a comunidade de KDE, para colaborar na súa tradución "
-"únete a un grupo de tradución en <a href=\"%2\">%2</a>."
+"únete a un grupo de tradución en <a href=\"%2\">%2</a>"
 
 #: activities/missing-letter/MissingLetter.qml:319
 msgctxt "MissingLetter|"
@@ -21875,12 +21741,12 @@ msgid ""
 "Embankment - 1830"
 msgstr ""
 "Vendo a posta de sol sobre a Ponte Ryōgoku desde o embarcadeiro de Ommaya, "
-"Katsushika Hokusai, 1830."
+"Katsushika Hokusai, 1830"
 
 #: activities/paintings/resource/board/board11_0.qml:14
 msgctxt "board11_0|"
 msgid "Katsushika Hokusa, Poppies - 1833-1834"
-msgstr "Cachorros, Katsushika Hokusa, 1833-1834."
+msgstr "Cachorros, Katsushika Hokusa, 1833-1834"
 
 #: activities/paintings/resource/board/board12_0.qml:14
 msgctxt "board12_0|"
@@ -21890,37 +21756,37 @@ msgstr "A ruta mariña Kazusa, Katsushika Hokusai, 1830."
 #: activities/paintings/resource/board/board13_0.qml:14
 msgctxt "board13_0|"
 msgid "Michelangelo, Pieta - 1499"
-msgstr "Piedade, Michelangelo, 1499."
+msgstr "Piedade, Michelangelo, 1499"
 
 #: activities/paintings/resource/board/board14_0.qml:14
 msgctxt "board14_0|"
 msgid "Leonardo da Vinci, Mona Lisa - 1503-19"
-msgstr "Mona Lisa, Leonardo da Vinci, 1503-1519."
+msgstr "Mona Lisa, Leonardo da Vinci, 1503-1519"
 
 #: activities/paintings/resource/board/board15_0.qml:14
 msgctxt "board15_0|"
 msgid "Giovanni Bellini, La Pala di Pesaro - 1475-85"
-msgstr "La Pala di Pesaro, Giovanni Bellini, 1475-1485."
+msgstr "La Pala di Pesaro, Giovanni Bellini, 1475-1485"
 
 #: activities/paintings/resource/board/board16_0.qml:14
 msgctxt "board16_0|"
 msgid "Albrecht Dürer, Lion - 1494"
-msgstr "Lion, Albrecht Dürer, 1494."
+msgstr "Lion, Albrecht Dürer, 1494"
 
 #: activities/paintings/resource/board/board17_0.qml:14
 msgctxt "board17_0|"
 msgid "Pieter Brugel, The Harvesters - 1565"
-msgstr "A colleita, Pieter Brugel, 1565."
+msgstr "A colleita, Pieter Brugel, 1565"
 
 #: activities/paintings/resource/board/board18_0.qml:14
 msgctxt "board18_0|"
 msgid "Pierre-Auguste Renoir, Girls At The Piano - 1892"
-msgstr "Nenas no piano, Pierre-Auguste Renoir, 1892."
+msgstr "Nenas no piano, Pierre-Auguste Renoir, 1892"
 
 #: activities/paintings/resource/board/board19_0.qml:14
 msgctxt "board19_0|"
 msgid "Wassily Kandinsky, Composition VIII - 1923"
-msgstr "Composición VIII, Wassily Kandinsky, 1923."
+msgstr "Composición VIII, Wassily Kandinsky, 1923"
 
 #: activities/paintings/resource/board/board1_0.qml:14
 msgctxt "board1_0|"
@@ -21930,58 +21796,58 @@ msgstr "Baile no muíño da Galette, Pierre-Auguste Renoir, 1876"
 #: activities/paintings/resource/board/board20_0.qml:14
 msgctxt "board20_0|"
 msgid "Bazille, The Ramparts at Aigues-Mortes - 1867"
-msgstr "As murallas de Aigues-Mortes, Bazille, 1867."
+msgstr "As murallas de Aigues-Mortes, Bazille, 1867"
 
 #: activities/paintings/resource/board/board21_0.qml:14
 msgctxt "board21_0|"
 msgid "Mary Cassatt, Summertime - 1894"
-msgstr "Verán, Mary Cassatt, 1894."
+msgstr "Verán, Mary Cassatt, 1894"
 
 #: activities/paintings/resource/board/board22_0.qml:14
 msgctxt "board22_0|"
 msgid "Vincent Van Gogh, Village Street in Auvers - 1890"
-msgstr "Rúa Village en Auvers, Vincent Van Gogh, 1890."
+msgstr "Rúa Village en Auvers, Vincent Van Gogh, 1890"
 
 #: activities/paintings/resource/board/board2_0.qml:14
 msgctxt "board2_0|"
 msgid "Giuseppe Arcimboldo, Spring - 1573"
-msgstr "Primavera, Giuseppe Arcimboldo, 1573."
+msgstr "Primavera, Giuseppe Arcimboldo, 1573"
 
 #: activities/paintings/resource/board/board3_0.qml:14
 msgctxt "board3_0|"
 msgid "Giuseppe Arcimboldo, The Librarian - 1566"
-msgstr "O bibliotecario, Giuseppe Arcimboldo, 1566."
+msgstr "O bibliotecario, Giuseppe Arcimboldo, 1566"
 
 #: activities/paintings/resource/board/board4_0.qml:14
 msgctxt "board4_0|"
 msgid "Katsushika Hokusai, Oiran and Kamuro"
-msgstr "Oiran e Kamuro, Katsushika Hokusai."
+msgstr "Oiran e Kamuro, Katsushika Hokusai"
 
 #: activities/paintings/resource/board/board5_0.qml:14
 msgctxt "board5_0|"
 msgid "Katsushika Hokusai, Woman holding a fan"
-msgstr "Muller suxeitando un abano, Katsushika Hokusai."
+msgstr "Muller suxeitando un abano, Katsushika Hokusai"
 
 #: activities/paintings/resource/board/board6_0.qml:14
 msgctxt "board6_0|"
 msgid "Katsushika Hokusai, Ejiri in Suruga Province - 1830-1833"
-msgstr "Ejiri na provincia de Suruga, Katsushika Hokusai, 1830-1833."
+msgstr "Ejiri na provincia de Suruga, Katsushika Hokusai, 1830-1833"
 
 #: activities/paintings/resource/board/board7_0.qml:14
 msgctxt "board7_0|"
 msgid "Katsushika Hokusai, The Great Wave off Kanagawa - 1823-1829"
-msgstr "A gran onda ás aforas de Kanagawa, Katsushika Hokusai, 1823-1829."
+msgstr "A gran onda ás aforas de Kanagawa, Katsushika Hokusai, 1823-1829"
 
 #: activities/paintings/resource/board/board8_0.qml:14
 msgctxt "board8_0|"
 msgid "Utagawa Hiroshige, The Benzaiten Shrine at Inokashira in Snow - 1760-70"
 msgstr ""
-"O santuario de Benzaiten en Inokashira na neve, Utagawa Hiroshige, 1760-1770."
+"O santuario de Benzaiten en Inokashira na neve, Utagawa Hiroshige, 1760-1770"
 
 #: activities/paintings/resource/board/board9_0.qml:14
 msgctxt "board9_0|"
 msgid "Utagawa Hiroshige, Horse-mackerel and Prawn - 1840"
-msgstr "Xurelo e crustáceo, Utagawa Hiroshige, 1840."
+msgstr "Xurelo e crustáceo, Utagawa Hiroshige, 1840"
 
 #. Activity title
 #: activities/path_decoding/ActivityInfo.qml:14
@@ -25653,7 +25519,7 @@ msgstr "Non podes poñer máis de %1 doces no mesmo rectángulo"
 #: activities/simplepaint/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "A simple drawing activity"
-msgstr "Unha actividade sinxela para debuxar."
+msgstr "Unha actividade sinxela para debuxar"
 
 #. Help title
 #: activities/simplepaint/ActivityInfo.qml:17
@@ -27470,7 +27336,7 @@ msgid ""
 "submarine"
 msgstr ""
 "O elemento da dereita de todo no panel de control controla os planos de "
-"afundimento do submarino."
+"afundimento do submarino"
 
 #: activities/submarine/submarine.js:35
 #, fuzzy
@@ -28754,7 +28620,8 @@ msgstr ""
 "Ignacio Casal Quinteiro\n"
 "Paula Iglesias\n"
 "Gonçalo Cordeiro\n"
-"Adrián Chaves (Gallaecio)"
+"Adrián Chaves (Gallaecio)\n"
+"Pablo (Parodper)"
 
 #: core/DialogAbout.qml:55
 #, qt-format
