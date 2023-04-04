@@ -2,12 +2,12 @@
 # Jyrki Kuoppala <jkp@kaapeli.fi>, 2001.
 # Ilkka Tuohela <hile@iki.fi>, 2005.
 # Lasse Liehu <lasse.liehu@gmail.com>, 2014, 2015, 2016.
-# Tommi Nieminen <translator@legisign.org>, 2014, 2015, 2018, 2019, 2020, 2021.
+# Tommi Nieminen <translator@legisign.org>, 2014, 2015, 2018, 2019, 2020, 2021, 2023.
 # Rami Aubourg-Kaires <rami at kaires.org>, 2003-2004.
 msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_qt\n"
-"PO-Revision-Date: 2021-12-12 13:40+0100\n"
+"PO-Revision-Date: 2023-03-12 16:28+0200\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
 "Language: fi\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Language: fi\n"
 "X-Qt-Contexts: true\n"
-"X-Generator: Poedit 3.0\n"
+"X-Generator: Lokalize 22.12.3\n"
 
 #. Activity title
 #: activities/advanced_colors/ActivityInfo.qml:15
@@ -1191,6 +1191,8 @@ msgid ""
 "You can use the arrow buttons to manually select the difficulty level. Tux "
 "will play better when you increase the level."
 msgstr ""
+"Vaikeustason voi valita itse nuolipainikkein. Tux pelaa tason mukaan yhä "
+"paremmin."
 
 #: activities/align4/ActivityInfo.qml:25
 #: activities/align4_2players/ActivityInfo.qml:24
@@ -4191,6 +4193,9 @@ msgid ""
 "will redo one move. To undo all the moves, press and hold the undo button "
 "for 3 seconds."
 msgstr ""
+"Kumoamispainikkeen yksittäisnapsautus kumoaa yhden siirron. Tee uudelleen -"
+"painkkeen yksittäisnapsautus tekee uudelleen yhden siirron. Kaikki siirto "
+"voi kumota pitämällä kumoamispainiketta pohjassa kolme sekuntia."
 
 #: activities/chess/ActivityInfo.qml:33
 #: activities/chess_partyend/ActivityInfo.qml:33
@@ -5267,7 +5272,7 @@ msgstr "Vertaile lukuja."
 #: activities/comparator/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Compare the numbers and choose the corresponding sign."
-msgstr ""
+msgstr "Vertaa lukuja ja valitse oikea merkki."
 
 #. Help goal
 #: activities/comparator/ActivityInfo.qml:22
@@ -5286,6 +5291,9 @@ msgid ""
 "symbol for this pair. When each line contains a symbol, select the OK button "
 "to validate the answers."
 msgstr ""
+"Valitse luettelosta lukupari. Valitse sitten tälle parille oikea "
+"vertailumerkki. Kun kullakin rivillä on merkki, arvostele vastaukset "
+"painamalla OK."
 
 #: activities/comparator/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
@@ -5293,6 +5301,8 @@ msgid ""
 "If some answers are incorrect, a cross icon will appear on the corresponding "
 "lines. Correct the errors, then select the OK button again."
 msgstr ""
+"Jos vastaus on väärin, riville ilmestyy rastin kuvake. Korjaa virheet ja "
+"paina OK uudelleen."
 
 #: activities/comparator/ActivityInfo.qml:29
 #, fuzzy
@@ -5330,75 +5340,54 @@ msgstr ""
 
 #: activities/comparator/resource/1/Data.qml:36
 #: activities/tens_complement_find/resource/3/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "Data|"
 msgid "Numbers from 1 to 9."
-msgstr "Numerot nollasta yhdeksään."
+msgstr "Luvut yhdestä yhdeksään."
 
 #: activities/comparator/resource/10/Data.qml:14
 msgctxt "Data|"
 msgid "3 decimal places between 0 and 999.999."
-msgstr ""
+msgstr "3 desimaalipaikkaa 0:n ja 999 999:n välissä."
 
 #: activities/comparator/resource/2/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "Data|"
 msgid "Numbers from 1 to 19."
-msgstr "Numerot nollasta yhdeksään."
+msgstr "Luvut yhdestä yhdeksääntoista."
 
 #: activities/comparator/resource/3/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "Data|"
 msgid "Numbers from 1 to 100."
-msgstr "Numerot nollasta yhdeksään."
+msgstr "Luvut yhdestä sataan."
 
 #: activities/comparator/resource/4/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "Data|"
 msgid "Numbers from 1 to 1000."
-msgstr "Numerot nollasta yhdeksään."
+msgstr "Luvut yhdestä tuhanteen."
 
 #: activities/comparator/resource/5/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "Data|"
 msgid "Numbers from 1 to 1000000."
-msgstr "Numerot nollasta yhdeksään."
+msgstr "Luvut nollasta miljoonaan."
 
 #: activities/comparator/resource/6/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "Data|"
 msgid "Numbers from 1 to 1 billion."
-msgstr "Numerot nollasta yhdeksään."
+msgstr "Luvut yhdestä biljoonaan."
 
 #: activities/comparator/resource/7/Data.qml:14
 msgctxt "Data|"
 msgid "1 decimal place between 0 and 9.9, same integer part."
-msgstr ""
+msgstr "1 desimaalipaikka 0:n ja 9,9:n välissä, sama kokonaisosa."
 
 #: activities/comparator/resource/8/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "1 decimal place between 0 and 9.9."
-msgstr "Luvut väliltä %1–%2."
+msgstr "1 desimaalipaikka 0:n ja 9,9:n välissä."
 
 #: activities/comparator/resource/9/Data.qml:14
 msgctxt "Data|"
 msgid "2 decimal places between 0 and 99.99."
-msgstr ""
+msgstr "2 desimaalipaikkaa 0:n ja 99,99:n välissä."
 
 #. Activity title
 #: activities/crane/ActivityInfo.qml:20
@@ -6758,14 +6747,14 @@ msgid ""
 "escape predators, and possess an excellent sense of balance. They have "
 "single-toed hooves."
 msgstr ""
+"Hevonen sanoo ”ihaa”. Hevoset ovat mukautuneet juoksemaan, minkä ansiosta ne "
+"voivat karata saalistajilta. Niillä on erinomainen tasapainoaisti. Niillä on "
+"yksivarpaiset kaviot."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:25
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal's ancestors were wolves."
 msgctxt "board1|"
 msgid "This animal has single-toed hooves."
-msgstr "Tämän eläimen esivanhemmat olivat susia."
+msgstr "Tällä eläimellä on yksivarpaiset kaviot."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:33
 msgctxt "board1|"
@@ -9324,40 +9313,28 @@ msgstr ""
 #: activities/fractions_create/resource/1/Data.qml:24
 #: activities/fractions_create/resource/3/Data.qml:35
 #: activities/fractions_create/resource/3/Data.qml:49
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Select the fifth Thursday of the given month"
 msgctxt "Data|"
 msgid "Select one-third of the pie."
-msgstr "Valitse annetun kuun viides torstai"
+msgstr "Valitse piirakasta yksi kolmannes."
 
 #: activities/fractions_create/resource/1/Data.qml:30
 #: activities/fractions_create/resource/3/Data.qml:41
 #: activities/fractions_create/resource/3/Data.qml:55
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Select the fourth Sunday of the given month"
 msgctxt "Data|"
 msgid "Select two-thirds of the pie."
-msgstr "Valitse annetun kuun neljäs sunnuntai"
+msgstr "Valitse piirakasta kaksi kolmannesta."
 
 #: activities/fractions_create/resource/1/Data.qml:36
 #: activities/fractions_create/resource/3/Data.qml:61
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Select the butterfly of the correct color."
 msgctxt "Data|"
 msgid "Select one-quarter of the pie."
-msgstr "Valitse oikeanvärinen perhonen."
+msgstr "Valitse piirakasta yksi neljännes."
 
 #: activities/fractions_create/resource/1/Data.qml:42
 #: activities/fractions_create/resource/3/Data.qml:67
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Select the fifth Thursday of the given month"
 msgctxt "Data|"
 msgid "Select two-fifths of the pie."
-msgstr "Valitse annetun kuun viides torstai"
+msgstr "Valitse piirakasta kaksi viidennestä."
 
 #: activities/fractions_create/resource/1/Data.qml:50
 msgctxt "Data|"
@@ -9531,12 +9508,9 @@ msgid "Decimal numbers with a pie."
 msgstr "Desimaalilukujärjestelmä."
 
 #: activities/fractions_create/resource/5/Data.qml:18
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 0.5 pie."
-msgstr "Valittu"
+msgstr "Valitse piirakasta 0,5."
 
 #: activities/fractions_create/resource/5/Data.qml:24
 msgctxt "Data|"
@@ -9544,12 +9518,9 @@ msgid "Select 0.25 pie."
 msgstr ""
 
 #: activities/fractions_create/resource/5/Data.qml:30
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 0.4 pie."
-msgstr "Valittu"
+msgstr "Valitse piirakasta 0,4."
 
 #: activities/fractions_create/resource/5/Data.qml:36
 msgctxt "Data|"
@@ -9557,12 +9528,9 @@ msgid "Select 0.75 pie."
 msgstr ""
 
 #: activities/fractions_create/resource/5/Data.qml:42
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 0.8 pie."
-msgstr "Valittu"
+msgstr "Valitse piirakasta 0,8."
 
 #: activities/fractions_create/resource/5/Data.qml:50
 msgctxt "Data|"
@@ -9594,77 +9562,50 @@ msgid "Decimal numbers with a square."
 msgstr "Desimaalilukujärjestelmä."
 
 #: activities/fractions_create/resource/6/Data.qml:18
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 0.5 square."
-msgstr "Valittu"
+msgstr "Valitse 0,5 neliötä."
 
 #: activities/fractions_create/resource/6/Data.qml:24
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 0.25 square."
-msgstr "Valittu"
+msgstr "Valitse 0,25 neliötä."
 
 #: activities/fractions_create/resource/6/Data.qml:30
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 0.4 square."
-msgstr "Valittu"
+msgstr "Valitse 0,4 neliötä."
 
 #: activities/fractions_create/resource/6/Data.qml:36
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 0.75 square."
-msgstr "Valittu"
+msgstr "Valitse 0,75 neliötä."
 
 #: activities/fractions_create/resource/6/Data.qml:42
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 0.8 square."
-msgstr "Valittu"
+msgstr "Valitse 0,8 neliötä."
 
 #: activities/fractions_create/resource/6/Data.qml:50
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 1.25 squares."
-msgstr "Valittu"
+msgstr "Valitse 1,25 neliötä."
 
 #: activities/fractions_create/resource/6/Data.qml:56
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 1.4 squares."
-msgstr "Valittu"
+msgstr "Valitse 1,4 neliötä."
 
 #: activities/fractions_create/resource/6/Data.qml:62
 #: activities/fractions_create/resource/6/Data.qml:68
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 1.5 squares."
-msgstr "Valittu"
+msgstr "Valitse 1,5 neliötä."
 
 #: activities/fractions_create/resource/6/Data.qml:74
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 1.75 squares."
-msgstr "Valittu"
+msgstr "Valitse 1,75 neliötä."
 
 #: activities/fractions_create/resource/7/Data.qml:9
 msgctxt "Data|"
@@ -9680,12 +9621,10 @@ msgstr ""
 #: activities/fractions_create/resource/7/Data.qml:56
 #: activities/fractions_create/resource/7/Data.qml:63
 #: activities/fractions_create/resource/7/Data.qml:70
-#, fuzzy, qt-format
-#| msgctxt "calendar_dataset|"
-#| msgid "Select the 1st"
+#, qt-format
 msgctxt "Data|"
 msgid "Select %1% of the pie."
-msgstr "Valitse 1n"
+msgstr "Valitse piirakasta %1 %."
 
 #: activities/fractions_create/resource/8/Data.qml:9
 msgctxt "Data|"
@@ -9699,12 +9638,10 @@ msgstr ""
 #: activities/fractions_create/resource/8/Data.qml:42
 #: activities/fractions_create/resource/8/Data.qml:49
 #: activities/fractions_create/resource/8/Data.qml:56
-#, fuzzy, qt-format
-#| msgctxt "calendar_dataset|"
-#| msgid "Select the 1st"
+#, qt-format
 msgctxt "Data|"
 msgid "Select %1% of the square."
-msgstr "Valitse 1n"
+msgstr "Valitse neliöstä %1 %."
 
 #: activities/fractions_create/resource/9/Data.qml:9
 msgctxt "Data|"
@@ -9720,12 +9657,9 @@ msgstr ""
 
 #. Activity title
 #: activities/fractions_find/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "instruments|"
-#| msgid "Find the accordion"
 msgctxt "ActivityInfo|"
 msgid "Find the fractions"
-msgstr "Etsi hanuri"
+msgstr "Etsi murtoluvut"
 
 #. Help title
 #: activities/fractions_find/ActivityInfo.qml:16
@@ -11054,30 +10988,21 @@ msgstr ""
 
 #. Autonomous communities of Spain: Catalonia
 #: activities/geo-country/resource/board/board18_0.qml:57
-#, fuzzy
-#| msgctxt "board14_0|"
-#| msgid "New Caledonia"
 msgctxt "board18_0|"
 msgid "Catalonia"
-msgstr "Uusi-Kaledonia"
+msgstr "Katalonia"
 
 #. Autonomous communities of Spain: Aragon
 #: activities/geo-country/resource/board/board18_0.qml:64
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Hexagon"
 msgctxt "board18_0|"
 msgid "Aragon"
-msgstr "Kuusikulmio"
+msgstr "Aragon"
 
 #. Autonomous communities of Spain: Valencia
 #: activities/geo-country/resource/board/board18_0.qml:71
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Calendar"
 msgctxt "board18_0|"
 msgid "Valencia"
-msgstr "Kalenteri"
+msgstr "Valencia"
 
 #. Autonomous communities of Spain: Murcia
 #: activities/geo-country/resource/board/board18_0.qml:78
@@ -11099,30 +11024,21 @@ msgstr ""
 
 #. Autonomous communities of Spain: La Rioja
 #: activities/geo-country/resource/board/board18_0.qml:99
-#, fuzzy
-#| msgctxt "board3_0|"
-#| msgid "La Rioja"
 msgctxt "board18_0|"
 msgid "La Rioja"
 msgstr "La Rioja"
 
 #. Autonomous communities of Spain: Cantabria
 #: activities/geo-country/resource/board/board18_0.qml:106
-#, fuzzy
-#| msgctxt "board11_0|"
-#| msgid "Calabria"
 msgctxt "board18_0|"
 msgid "Cantabria"
-msgstr "Calabria"
+msgstr "Kantabria"
 
 #. Autonomous communities of Spain: Navarre
 #: activities/geo-country/resource/board/board18_0.qml:113
-#, fuzzy
-#| msgctxt "board5|"
-#| msgid "Navajo"
 msgctxt "board18_0|"
 msgid "Navarre"
-msgstr "Navajo"
+msgstr "Navarra"
 
 #. Autonomous communities of Spain: Extremadura
 #: activities/geo-country/resource/board/board18_0.qml:120
@@ -11132,21 +11048,15 @@ msgstr ""
 
 #. Autonomous communities of Spain: Canary Islands
 #: activities/geo-country/resource/board/board18_0.qml:127
-#, fuzzy
-#| msgctxt "board14_0|"
-#| msgid "Mariana Islands"
 msgctxt "board18_0|"
 msgid "Canary Islands"
-msgstr "Pohjois-Mariaanit"
+msgstr "Kanariansaaret"
 
 #. Autonomous communities of Spain: Balearic Islands
 #: activities/geo-country/resource/board/board18_0.qml:134
-#, fuzzy
-#| msgctxt "board14_0|"
-#| msgid "Mariana Islands"
 msgctxt "board18_0|"
 msgid "Balearic Islands"
-msgstr "Pohjois-Mariaanit"
+msgstr "Baleaarit"
 
 #. Autonomous communities of Spain: Ceuta
 #: activities/geo-country/resource/board/board18_0.qml:141
@@ -13215,9 +13125,6 @@ msgid "Eastern Europe"
 msgstr "Itä-Eurooppa"
 
 #: activities/geography/resource/board/board6_0.qml:24
-#, fuzzy
-#| msgctxt "board9_0|"
-#| msgid "Cyprus"
 msgctxt "board6_0|"
 msgid "Cyprus"
 msgstr "Kypros"
@@ -18883,28 +18790,21 @@ msgstr ""
 "Kun olet valmis, napsauta tästä ja ala kirjoittaa pistekirjoitusmerkkejä."
 
 #: activities/morse_code/MorseCode.qml:349
-#, fuzzy, qt-format
-#| msgctxt "RomanNumerals|"
-#| msgid "Roman value: %1"
+#, qt-format
 msgctxt "MorseCode|"
 msgid "Morse value: %1"
-msgstr "Roomalainen arvo: %1"
+msgstr "Morse-arvo: %1"
 
 #: activities/morse_code/MorseCode.qml:350
-#, fuzzy, qt-format
-#| msgctxt "RomanNumerals|"
-#| msgid "Arabic value: %1"
+#, qt-format
 msgctxt "MorseCode|"
 msgid "Alphabet/Numeric value: %1"
-msgstr "Arabialainen arvo: %1"
+msgstr "Aakkos- tai lukuarvo: %1"
 
 #: activities/morse_code/resource/1/Data.qml:13
-#, fuzzy
-#| msgctxt "Menu|"
-#| msgid "Letters"
 msgctxt "Data|"
 msgid "Letters."
-msgstr "Kirjaimet"
+msgstr "Kirjaimet."
 
 #: activities/morse_code/resource/1/Data.qml:18
 #: activities/morse_code/resource/1/Data.qml:34
@@ -18922,23 +18822,18 @@ msgstr ""
 #: activities/morse_code/resource/1/Data.qml:39
 #: activities/morse_code/resource/1/Data.qml:55
 #: activities/morse_code/resource/1/Data.qml:71
-#, fuzzy, qt-format
-#| msgctxt "RomanNumerals|"
-#| msgid "Convert the roman number %1 to arabic."
+#, qt-format
 msgctxt "Data|"
 msgid "Convert the message %1 to letters."
-msgstr "Muunna roomalainen numero %1 arabialaiseen muotoon."
+msgstr "Muunna viesti %1 kirjaimiksi."
 
 #: activities/morse_code/resource/1/Data.qml:28
 #: activities/morse_code/resource/1/Data.qml:44
 #: activities/morse_code/resource/1/Data.qml:60
 #: activities/morse_code/resource/1/Data.qml:76
-#, fuzzy
-#| msgctxt "advanced_colors|"
-#| msgid "Find the corn butterfly"
 msgctxt "Data|"
 msgid "Find the corresponding letter."
-msgstr "Etsi maissinvärinen perhonen"
+msgstr "Etsi vastaava kirjain."
 
 #: activities/morse_code/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -18947,29 +18842,21 @@ msgstr ""
 
 #: activities/morse_code/resource/2/Data.qml:23
 #: activities/morse_code/resource/2/Data.qml:39
-#, fuzzy, qt-format
-#| msgctxt "RomanNumerals|"
-#| msgid "Convert the roman number %1 to arabic."
+#, qt-format
 msgctxt "Data|"
 msgid "Convert the message %1 to digits."
-msgstr "Muunna roomalainen numero %1 arabialaiseen muotoon."
+msgstr "Muunna viesti %1 numeroiksi."
 
 #: activities/morse_code/resource/2/Data.qml:28
 #: activities/morse_code/resource/2/Data.qml:44
-#, fuzzy
-#| msgctxt "instruments|"
-#| msgid "Find the accordion"
 msgctxt "Data|"
 msgid "Find the corresponding digit."
-msgstr "Etsi hanuri"
+msgstr "Etsi vastaava numero."
 
 #: activities/morse_code/resource/3/Data.qml:13
-#, fuzzy
-#| msgctxt "Menu|"
-#| msgid "Words"
 msgctxt "Data|"
 msgid "Words."
-msgstr "Sanat"
+msgstr "Sanat."
 
 #: activities/morse_code/resource/3/Data.qml:24
 msgctxt "Data|"
@@ -18977,12 +18864,9 @@ msgid "Write the Morse code you hear."
 msgstr ""
 
 #: activities/morse_code/resource/3/Data.qml:34
-#, fuzzy
-#| msgctxt "RomanNumerals|"
-#| msgid "Convert the roman number %1 to arabic."
 msgctxt "Data|"
 msgid "Convert the message in a word."
-msgstr "Muunna roomalainen numero %1 arabialaiseen muotoon."
+msgstr "Muunna viesti sanaksi."
 
 #. Activity title
 #: activities/mosaic/ActivityInfo.qml:15
@@ -24986,12 +24870,9 @@ msgstr ""
 
 #. Help prerequisite
 #: activities/tens_complement_find/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "ActivityInfo|"
 msgid "Numbers from 1 to 10 and additions."
-msgstr "Numerot nollasta yhdeksään."
+msgstr "Luvut 1–10 ja yhteenlasku."
 
 #: activities/tens_complement_find/ActivityInfo.qml:23
 #: activities/tens_complement_use/ActivityInfo.qml:24
@@ -25012,28 +24893,19 @@ msgid ""
 msgstr ""
 
 #: activities/tens_complement_find/resource/1/Data.qml:25
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "Data|"
 msgid "First number from 1 to 4."
-msgstr "Numerot nollasta yhdeksään."
+msgstr "Ensimmäinen numero 1–4."
 
 #: activities/tens_complement_find/resource/2/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "Data|"
 msgid "First number from 5 to 9."
-msgstr "Numerot nollasta yhdeksään."
+msgstr "Ensimmäinen numero 5–9."
 
 #: activities/tens_complement_find/resource/4/Data.qml:9
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Division of numbers"
 msgctxt "Data|"
 msgid "Find both numbers."
-msgstr "Jakolasku"
+msgstr "Etsi kumpikin luku."
 
 #. Activity title
 #: activities/tens_complement_swap/ActivityInfo.qml:14
@@ -25057,12 +24929,9 @@ msgstr ""
 
 #. Help prerequisite
 #: activities/tens_complement_swap/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "ActivityInfo|"
 msgid "Numbers from 1 to 30 and additions."
-msgstr "Numerot nollasta yhdeksään."
+msgstr "Luvut 1–30 ja yhteenlasku."
 
 #. Help manual
 #: activities/tens_complement_swap/ActivityInfo.qml:23
@@ -25076,28 +24945,19 @@ msgid ""
 msgstr ""
 
 #: activities/tens_complement_swap/resource/1/Data.qml:36
-#, fuzzy
-#| msgctxt "Warning|"
-#| msgid "1 is not a prime number."
 msgctxt "Data|"
 msgid "2 pairs to make from 4 numbers."
-msgstr "1 ei ole alkuluku."
+msgstr "4 luvusta tehtävät 2 paria."
 
 #: activities/tens_complement_swap/resource/2/Data.qml:9
-#, fuzzy
-#| msgctxt "Warning|"
-#| msgid "1 is not a prime number."
 msgctxt "Data|"
 msgid "2 pairs to make from 5 numbers."
-msgstr "1 ei ole alkuluku."
+msgstr "5 luvusta tehtävät 2 paria."
 
 #: activities/tens_complement_swap/resource/3/Data.qml:9
-#, fuzzy
-#| msgctxt "Warning|"
-#| msgid "1 is not a prime number."
 msgctxt "Data|"
 msgid "3 pairs to make from 6 numbers."
-msgstr "1 ei ole alkuluku."
+msgstr "6 luvusta tehtävät 3 paria."
 
 #. Activity title
 #: activities/tens_complement_use/ActivityInfo.qml:14
@@ -25119,12 +24979,9 @@ msgstr ""
 
 #. Help prerequisite
 #: activities/tens_complement_use/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "ActivityInfo|"
 msgid "Numbers from 1 to 50 and additions."
-msgstr "Numerot nollasta yhdeksään."
+msgstr "Luvut 1–50 ja yhteenlasku."
 
 #. Help manual
 #: activities/tens_complement_use/ActivityInfo.qml:23
@@ -25136,28 +24993,19 @@ msgid ""
 msgstr ""
 
 #: activities/tens_complement_use/resource/1/Data.qml:43
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Between 1 and 10."
 msgctxt "Data|"
 msgid "Result between 11 and 19."
-msgstr "Numerot väliltä 1–10."
+msgstr "Tulos väliltä 11–19."
 
 #: activities/tens_complement_use/resource/2/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Result between 20 and 29."
-msgstr "Luvut väliltä %1–%2."
+msgstr "Tulos väliltä 20–29."
 
 #: activities/tens_complement_use/resource/3/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Between 20 and 50."
 msgctxt "Data|"
 msgid "Result between 30 and 50."
-msgstr "Numerot väliltä 20–50."
+msgstr "Tulos väliltä 30–50."
 
 #. Activity title
 #: activities/tic_tac_toe/ActivityInfo.qml:18
@@ -25452,12 +25300,9 @@ msgid "Fix issue in comparator activity"
 msgstr ""
 
 #: core/ChangeLog.qml:41
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "New maps and update of the maps for geography activities"
 msgctxt "ChangeLog|"
 msgid "Map of Spain added for geography activity"
-msgstr "Uudet kartat ja karttojen päivitys maantietotehtäviin"
+msgstr "Lisätty maantietotehtäviin Espanjan kartta"
 
 #: core/ChangeLog.qml:42
 msgctxt "ChangeLog|"
@@ -25514,36 +25359,24 @@ msgid ""
 msgstr ""
 
 #: core/ChangeLog.qml:62 core/ChangeLog.qml:70
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Many bug fixes"
 msgctxt "ChangeLog|"
 msgid "Several bug fixes"
 msgstr "Monia virheenkorjauksia"
 
 #: core/ChangeLog.qml:64
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translation added for Azerbaijani"
 msgctxt "ChangeLog|"
 msgid "Translation updated for Russian"
-msgstr "Makedoniannos lisätty"
+msgstr "Päivitetty venäjännös"
 
 #: core/ChangeLog.qml:65
-#, fuzzy
-#| msgctxt "DialogConfig|"
-#| msgid "Norwegian Nynorsk"
 msgctxt "ChangeLog|"
 msgid "New voices for Norwegian Nynorsk"
-msgstr "Norja (Nynorsk)"
+msgstr "Uusia ääniä norjan nynorskiin"
 
 #: core/ChangeLog.qml:69
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translation added for Macedonian."
 msgctxt "ChangeLog|"
 msgid "Translations added for Breton, Czech and Macedonian"
-msgstr "Makedoniannos lisätty."
+msgstr "Lisätty käännökset bretoniin, tšekkiin ja makedoniaan."
 
 #: core/ChangeLog.qml:74
 msgctxt "ChangeLog|"
@@ -25819,12 +25652,10 @@ msgid "GCompris %1"
 msgstr "GCompris %1"
 
 #: core/DialogAbout.qml:57
-#, fuzzy, qt-format
-#| msgctxt "DialogAbout|"
-#| msgid "Based on Qt %1"
+#, qt-format
 msgctxt "DialogAbout|"
 msgid "Based on Qt %1 and %2"
-msgstr "Pohjautuu Qt-versioon %1"
+msgstr "Pohjautuu Qt-versioihin %1 ja %2"
 
 #: core/DialogAbout.qml:61
 msgctxt "DialogAbout|"
@@ -26249,20 +26080,13 @@ msgid "Enable the kiosk mode."
 msgstr "Käytä kioskitilaa."
 
 #: core/main.cpp:196
-#, fuzzy
-#| msgctxt "QObject|"
-#| msgid ""
-#| "Use software renderer instead of openGL (slower but should run with any "
-#| "graphical card, needs Qt 5.8 minimum)."
 msgctxt "QObject|"
 msgid ""
 "Use software renderer instead of openGL (slower but should run with any "
 "graphical card)."
 msgstr ""
 "Käytä ohjelmistohahmonnusta OpenGL:n sijaan (hitaampaa mutta toimii kaikilla "
-"näytönohjaimilla; vaatii vähintään Qt 5.8:n).Käytä ohjelmistohahmonnusta "
-"OpenGL:n sijaan (hitaampaa mutta toimii kaikilla näytönohjaimilla; vaatii "
-"vähintään Qt 5.8:n)."
+"näytönohjaimilla)."
 
 #: core/main.cpp:199
 msgctxt "QObject|"

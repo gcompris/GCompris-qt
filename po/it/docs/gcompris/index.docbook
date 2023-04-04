@@ -558,6 +558,12 @@ for example 'xx.yy.zz'
 </row>
 <row>
 <entry
+>--difficulty {valore|min-max}</entry>
+<entry
+>Per la sessione, forza le difficoltà delle attività di GCompris al valore o tra i valori minimo e massimo. I valori devono essere compresi tra 1 e 6 e, se il formato è min-max, il valore minimo deve essere inferiore al valore massimo. In caso contrario, GCompris non si avvierà.</entry>
+</row>
+<row>
+<entry
 >--export-activities-as-sql</entry>
 <entry
 >Esportare le attività come SQL.</entry>
