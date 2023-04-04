@@ -1,26 +1,26 @@
 {
   "levels": [
     {
-      "objective": "Find Nouns.",
-      "difficulty": "1",
+      "objective": "Find nouns.",
+      "difficulty": "3",
       "exercise": "nouns",
       "goal": "nou"
     },
     {
       "objective": "Find verbs.",
-      "difficulty": "1",
+      "difficulty": "3",
       "exercise": "verbs",
       "goal": "vrb"
       },
     {
       "objective": "Find determiners.",
-      "difficulty": "1",
+      "difficulty": "3",
       "exercise": "determiners",
       "goal": "dtm"
     },
     {
       "objective": "Find adjectives.",
-      "difficulty": "1",
+      "difficulty": "3",
       "exercise": "adjectives",
       "goal": "adj"
     },
@@ -37,9 +37,9 @@
       "goal": "ppt"
     },
     {
-      "objective": "Find conjonctions.",
+      "objective": "Find conjunctions.",
       "difficulty": "4",
-      "exercise": "conjonctions",
+      "exercise": "conjunctions",
       "goal": "cjt"
     },
     {
@@ -51,23 +51,23 @@
   ],
   "dataset" : {
     "nouns" : [
-      { "sentence": "The flower."
-      , "answer":   "dtm nou"
+      { "sentence": "The flower is pretty."
+      , "answer":   "dtm nou vrb adj"
       },
-      { "sentence": "The cat."
-      , "answer":   "dtm nou"
+      { "sentence": "The cat is happy."
+      , "answer":   "dtm nou vrb adj"
       },
-      { "sentence": "We watch the mountain."
+      { "sentence": "We watch the sunset."
       , "answer":   "prn vrb  dtm nou"
       },
       { "sentence": "The doorbell rings."
       , "answer":   "dtm nou      vrb"
       },
       { "sentence": "Every evening I play with my friends."
-      , "answer":   "dtm   nou     prn vrb ppt prn nou"
+      , "answer":   "dtm   nou     prn vrb ppt dtm nou"
       },
-      { "sentence": "The man carries the sacks of wheat."
-      , "answer":   "dtm nou vrb     dtm nou   ppt nou"
+      { "sentence": "The man carries a sack of wheat."
+      , "answer":   "dtm nou vrb     dtm nou ppt nou"
       },
       { "sentence": "The rain falls on the garden."
       , "answer":   "dtm nou  vrb   ppt dtm nou"
@@ -81,24 +81,24 @@
       { "sentence": "A father waits for his son."
       , "answer":   "dtm nou  vrb   ppt dtm nou"
       },
-      { "sentence": "We are all mathematicians."
-      , "answer":   "prn vrb prn nou"
+      { "sentence": "We all are mathematicians."
+      , "answer":   "prn adv vrb nou"
       },
-      { "sentence": "Some bread is cooking in the hoven."
-      , "answer":   "dtm  nou   vrb vrb    ppt dtm nou"
+      { "sentence": "Some bread (is cooking) in the oven."
+      , "answer":   "dtm  nou   vrb    ppt dtm nou"
       }
     ],
     "verbs" : [
       { "sentence": "She runs."
       , "answer":   "prn vrb"
       },
-      { "sentence": "The cat sleeps."
+      { "sentence": "The cat (is sleeping)."
       , "answer":   "dtm nou vrb"
       },
       { "sentence": "They watch the landscape."
       , "answer":   "prn  vrb   dtm nou"
       },
-      { "sentence": "The men sing."
+      { "sentence": "The men (are singing)."
       , "answer":   "dtm nou vrb"
       },
       { "sentence": "I play volleyball."
@@ -107,11 +107,11 @@
       { "sentence": "The man tells a story to his grandchildren."
       , "answer":   "dtm nou vrb   dtm nou ppt dtm nou"
       },
-      { "sentence": "The plains flight high in the sky."
+      { "sentence": "The planes fly high in the sky."
       , "answer":   "dtm nou    vrb    adv  ppt dtm nou"
       },
-      { "sentence": "Le chevalier et son ami quittent le village."
-      , "answer":   "dtm nou      cjt dtm nou vrb     dtm nou"
+      { "sentence": "The knight and his friend leave the village."
+      , "answer":   "dtm nou    cjt dtm nou    vrb   dtm nou"
       },
       { "sentence": "The doorbell rings."
       , "answer":   "dtm nou      vrb"
@@ -122,22 +122,22 @@
       { "sentence": "His parents run every evening."
       , "answer":   "dtm nou     vrb dtm   nou"
       },
-      { "sentence": "She calls his best friend."
+      { "sentence": "She calls her best friend."
       , "answer":   "prn vrb   dtm adj  nou"
       }
     ],
     "determiners" : [
-      { "sentence": "The dogs."
-      , "answer":   "dtm vrb"
+      { "sentence": "The dogs (are playing)."
+      , "answer":   "dtm nou vrb"
       },
-      { "sentence": "Their sculptures are superbs."
+      { "sentence": "Their sculptures are superb."
       , "answer":   "dtm   nou       vrb adj"
       },
       { "sentence": "They watch the moon from their house."
-      , "answer":   "dtm  vrb   dtm nou  ppt  dtm   nou"
+      , "answer":   "prn  vrb   dtm nou  ppt  dtm   nou"
       },
-      { "sentence": "Her beautiful garden is close to her house."
-      , "answer":   "dtm adj       nou    vrb adj  ppt dtm nou"
+      { "sentence": "Her beautiful garden is (close to) her house."
+      , "answer":   "dtm adj       nou    vrb ppt       dtm nou"
       },
       { "sentence": "Where are my shoes?"
       , "answer":   "prn   vrb dtm nou"
@@ -145,14 +145,14 @@
       { "sentence": "The man tells a story to his grandchildren."
       , "answer":   "dtm nou vrb   dtm nou ppt dtm nou"
       },
-      { "sentence": "The plains flight high in the sky."
-      , "answer":   "dtm nou    vrb    adv  ppt dtm nou"
+      { "sentence": "The planes fly high in the sky."
+      , "answer":   "dtm nou    vrb adv  ppt dtm nou"
       },
-      { "sentence": "The man et his friend leave the town."
-      , "answer":   "dtm nou cjt dtm nou   vrb   dtm nou"
+      { "sentence": "The man and his friend leave the town."
+      , "answer":   "dtm nou cjt dtm nou    vrb   dtm nou"
       },
-      { "sentence": "The day before, their bookshop was closed."
-      , "answer":   "dtm nou ppt     dtm   nou      vrb adj"
+      { "sentence": "Yesterday, their bookshop was closed."
+      , "answer":   "adv        dtm   nou      vrb adj"
       },
       { "sentence": "What is their job?"
       , "answer":   "prn  vrb dtm  nou"
@@ -165,17 +165,17 @@
       }
     ],
     "adjectives" : [
-      { "sentence": "The huge house."
-      , "answer":   "dtm adj  vrb"
+      { "sentence": "This house is huge."
+      , "answer":   "dtm  nou   vrb adj"
       },
-      { "sentence": "Their sculptures are superbs."
-      , "answer":   "dtm   nou       vrb adj"
+      { "sentence": "Their sculptures are nice."
+      , "answer":   "dtm   nou        vrb adj"
       },
-      { "sentence": "They bought a superb landscape with a large amount of money."
-      , "answer":   "dtm  vrb    dtm adj  nou       ppt  dtm adj nou    ppt nou"
+      { "sentence": "They created a wonderful landscape."
+      , "answer":   "prn  vrb    dtm adj      nou"
       },
-      { "sentence": "Her beautiful garden is close to her new house."
-      , "answer":   "dtm adj       nou    vrb adj  ppt dtm adj nou"
+      { "sentence": "Her beautiful garden is (close to) her new house."
+      , "answer":   "dtm adj       nou    vrb ppt dtm adj nou"
       },
       { "sentence": "Where are my blue shoes?"
       , "answer":   "prn   vrb dtm adj nou"
@@ -183,10 +183,10 @@
       { "sentence": "The old man tells a true story to his grandchildren."
       , "answer":   "dtm adj nou vrb   dtm adj nou ppt dtm nou"
       },
-      { "sentence": "The red car drives slowly on the long road."
-      , "answer":   "dtm adj nou vrb    adv    ppt dtm adj nou"
+      { "sentence": "The young man drives slowly on the long road."
+      , "answer":   "dtm adj   nou vrb    adv    ppt dtm adj nou"
       },
-      { "sentence": "The big man et his old friend leave the town."
+      { "sentence": "The big man and his old friend leave the town."
       , "answer":   "dtm adj nou cjt dtm adj nou   vrb   dtm nou"
       },
       { "sentence": "The long days of summer are warm."
@@ -195,7 +195,7 @@
       { "sentence": "Where is the small box?"
       , "answer":   "prn   vrb dtm adj  nou"
       },
-      { "sentence": "His big company is successful."
+      { "sentence": "His small company is successful."
       , "answer":   "dtm adj nou     vrb adj"
       },
       { "sentence": "She calls her best friend."
@@ -206,143 +206,140 @@
       { "sentence": "She took it from him."
       , "answer":   "prn vrb  prn ppt prn"
       },
-      { "sentence": "Did you phone her?"
-      , "answer":   "vrb prn vrb   prn"
+      { "sentence": "I phoned her."
+      , "answer":   "prn vrb  prn"
       },
       { "sentence": "Between you and I, I think this is a great idea."
       , "answer":   "ppt     prn cjt prn prn vrb prn  vrb dtm adj nou"
       },
-      { "sentence": "If he has time, he will come."
-      , "answer":   "cjt prn vrb nou prn vrb vrb"
+      { "sentence": "If he has time, he (will come)."
+      , "answer":   "cjt prn vrb nou prn vrb"
       },
       { "sentence": "Where is she?"
       , "answer":   "prn   vrb prn"
       },
-      { "sentence": "Are you talking to him?"
-      , "answer":   "vrb dtm vrb     ppt prn"
+      { "sentence": "He (is talking) to him."
+      , "answer":   "prn vrb        ppt prn"
       },
       { "sentence": "I took them."
       , "answer":   "prn vrb prn"
       },
-      { "sentence": "Nobody told them to stop."
-      , "answer":   "prn    vrb  prn  vrb vrb"
+      { "sentence": "Nobody told them (to stop)."
+      , "answer":   "prn    vrb  prn  vrb"
       },
-      { "sentence": "They came to see their movie."
-      , "answer":   "prn  vrb  vrb vrb dtm  nou"
+      { "sentence": "They came (to see) their movie."
+      , "answer":   "prn  vrb  vrb  dtm  nou"
       },
       { "sentence": "Where are they?"
       , "answer":   "prn   vrb prn"
       },
-      { "sentence": "Do not ask him."
-      , "answer":   "vrb adv vrb prn"
+      { "sentence": "Ask him."
+      , "answer":   "vrb prn"
       },
-      { "sentence": "She calls her."
+      { "sentence": "She called her."
       , "answer":   "prn vrb   prn"
       }
     ],
     "prepositions" : [
-      { "sentence": "She arrives in april."
+      { "sentence": "She arrived in april."
       , "answer":   "prn vrb     ppt nou"
       },
-      { "sentence": "Did you phone to her?"
-      , "answer":   "vrb prn vrb   ppt prn"
+      { "sentence": "Talk to her."
+      , "answer":   "vrb  ppt prn"
       },
-      { "sentence": "You arrive at night."
+      { "sentence": "You (will arrive) at night."
       , "answer":   "prn vrb    ppt nou"
       },
       { "sentence": "I had a party for my birthday."
       , "answer":   "prn vrb dtm nou ppt dtm nou"
       },
-      { "sentence": "We are meeting at noon."
-      , "answer":   "prn vrb vrb    ppt nou"
+      { "sentence": "We (are meeting) at noon."
+      , "answer":   "prn vrb         ppt nou"
       },
-      { "sentence": "He is swimming in the river."
-      , "answer":   "prn vrb vrb    ppt dtm nou"
+      { "sentence": "He (is swimming) in the river."
+      , "answer":   "prn vrb     ppt dtm nou"
       },
       { "sentence": "The plate is on the table."
       , "answer":   "dtm nou   vrb ppt dtm nou"
       },
-      { "sentence": "The cat is sitting under the chair."
-      , "answer":   "dtm nou vrb vrb    ppt   dtm nou"
+      { "sentence": "The cat (is sitting) under the chair."
+      , "answer":   "dtm nou vrb          ppt   dtm nou"
       },
-      { "sentence": "I pay for this."
-      , "answer":   "prn vrb ppt prn"
+      { "sentence": "I (will pay) for this."
+      , "answer":   "prn vrb  ppt prn"
       },
-      { "sentence": "I asked a pen to my classmate."
-      , "answer":   "prn vrb dtm nou ppt dtm nou"
+      { "sentence": "I asked my classmate for a pen."
+      , "answer":   "prn vrb dtm nou      ppt dtm nou"
       },
       { "sentence": "They listen to classical music."
       , "answer":   "prn  vrb    ppt adj      nou"
       },
-      { "sentence": "Do not worry about them."
-      , "answer":   "vrb adv vrb  ppt   prn"
+      { "sentence": "Think about it."
+      , "answer":   "vrb  ppt   prn"
       }
     ],
-    "conjonctions" : [
+    "conjunctions" : [
       { "sentence": "Lucie is both nice and patient."
       , "answer":   "nou   vrb cjt adv  cjt adv"
       },
-      { "sentence": "Did you phone or did you write to her?"
-      , "answer":   "vrb prn vrb   cjt vrb prn vrb  ppt prn"
+      { "sentence": "I (will phone) or I (will write) to them."
+      , "answer":   "prn vrb        cjt prn vrb  ppt prn"
       },
-      { "sentence": "I want a coffe and a biscuit."
+      { "sentence": "I want a coffee and a biscuit."
       , "answer":   "prn vrb dtm nou cjt dtm nou"
       },
       { "sentence": "I am not hungry yet."
       , "answer":   "prn vrb adv adj cjt"
       },
-      { "sentence": "I do not want sugar not salt."
-      , "answer":   "prn vrb adv vrb nou cjt nou"
+      { "sentence": "I want salt and pepper."
+      , "answer":   "prn vrb nou cjt nou"
       },
       { "sentence": "He is very late, but he has an excuse."
       , "answer":   "prn vrb adv adj cjt prn vrb dtm nou"
       },
-      { "sentence": "The mountain is huge and dark."
-      , "answer":   "dtm nou      vrb adj cjt adj"
+      { "sentence": "The clouds are huge and dark."
+      , "answer":   "dtm nou     vrb adj cjt adj"
       },
-      { "sentence": "The cat or the dog have broken this toy."
-      , "answer":   "dtm nou cjt dtm nou vrb vrb    dtm  nou"
+      { "sentence": "The cat or the dog (has broken) this toy."
+      , "answer":   "dtm nou cjt dtm nou vrb   dtm  nou"
       },
-      { "sentence": "I want to go although we are late."
-      , "answer":   "prn vrb ppt vrb cjt   prn vrb adj"
+      { "sentence": "I want (to go) although we are late."
+      , "answer":   "prn vrb vrb cjt   prn vrb adj"
       },
-      { "sentence": "Unless she does not want to, I would like to meet her."
-      , "answer":   "cjt     prn vrb adv vrb  ppt prn vrb vrb  ppt vrb prn"
+      { "sentence": "Unless he is away, you (can meet) him."
+      , "answer":   "cjt    prn vrb adv prn vrb  prn"
       },
-      { "sentence": "If you like chocolate, you will like it."
-      , "answer":   "cjt prn vrb nou        prn veb   vrb prn"
+      { "sentence": "If you like chocolate, you (will like) this."
+      , "answer":   "cjt prn vrb nou        prn vrb    prn"
       },
-      { "sentence": "Since you will not help her, I will do it."
-      , "answer":   "cjt   prn vrb  adv vrb  prn  prn vrb vrb prn"
+      { "sentence": "Since you are busy, I (will do) it."
+      , "answer":   "cjt   prn vrb  adv  prn  vrb  prn"
       }
     ],
     "interjections" : [
       { "sentence": "Hi Lucie."
       , "answer":   "itj nou"
       },
-      { "sentence": "Hmm, let me think!"
-      , "answer":   "itj  vrb prn vrb"
+      { "sentence": "Hmm, I think it is true."
+      , "answer":   "itj  prn vrb prn vrb adj"
       },
-      { "sentence": "Hurrah! I have it."
-      , "answer":   "itk     prn vrb prn"
+      { "sentence": "Hooray! I got it."
+      , "answer":   "itj     prn vrb prn"
       },
       { "sentence": "Hey! Look!"
       , "answer":   "itj  vrb"
       },
-      { "sentence": "Nope, I do not do that!"
-      , "answer":   "itj   prn vrb adv vrb prn"
-      },
       { "sentence": "Well, he is very late."
       , "answer":   "itj   prn vrb adv adj"
       },
-      { "sentence": "Gosh, the mountain is huge!"
+      { "sentence": "Gosh, this mountain is huge!"
       , "answer":   "itj   dtm nou      vrb adj"
       },
-      { "sentence": "Super! The cat or the dog have broken this toy."
-      , "answer":   "itj    dtm nou cjt dtm nou vrb vrb    dtm  nou"
+      { "sentence": "Oh! The dog (has broken) this toy."
+      , "answer":   "itj dtm nou  vrb         dtm  nou"
       },
       { "sentence": "Yummy! I love this cake."
-      , "answer":   "itj    prn vrb ppt  vrb"
+      , "answer":   "itj    prn vrb dtm  nou"
       }
     ]
 
