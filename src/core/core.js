@@ -232,7 +232,7 @@ function quit(parent)
 
 function isLeftToRightLocale(locale) {
     var localeShort = GCompris.ApplicationInfo.getVoicesLocale(locale)
-    return (localeShort != "ar" && localeShort != "he");
+    return (localeShort != "ar" && localeShort != "fa" && localeShort != "he");
 }
 
 function resolveLocale(localeToSet) {
@@ -256,13 +256,13 @@ function resolveLocale(localeToSet) {
 function convertNumberToLocaleString(decimalNumber, locale = GCompris.ApplicationInfo.localeShort, format = 'f', precision = 0) {
     // Special case for Arabic, we still want to use Arabic numerals, not Eastern Arabic numerals
     // For now, we consider dot separated numbers for Arabic
-    var localeToConvertTo = (locale.startsWith("ar") ? "he" : locale);
+    var localeToConvertTo = (locale.startsWith("ar") || locale.startsWith("fa") ? "he" : locale);
     return decimalNumber.toLocaleString(Qt.locale(localeToConvertTo), format, precision);
 }
 
 function convertNumberToLocaleCurrencyString(number, locale) {
     // Special case for Arabic, we still want to use Arabic numerals, not Eastern Arabic numerals but we want to keep the Arabic currency
-    var localeToConvertTo = (locale.startsWith("ar") ? "he" : locale);
+    var localeToConvertTo = (locale.startsWith("ar") || locale.startsWith("fa") ? "he" : locale);
     return number.toLocaleCurrencyString(Qt.locale(localeToConvertTo), Qt.locale(locale).currencySymbol(Qml.Locale.CurrencySymbol));
 }
 
