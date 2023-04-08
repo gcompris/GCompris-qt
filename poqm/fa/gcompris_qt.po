@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2023-04-06 14:11-0400\n"
+"PO-Revision-Date: 2023-04-07 14:21-0400\n"
 "Last-Translator: Sina Fesahati <sina.fesahati@protonmail.com>\n"
 "Language-Team: Persian <kde-i18n-fa@kde.org>\n"
 "Language: fa\n"
@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Qt-Contexts: true\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Lokalize 20.12.0\n"
 "X-Qt-Contexts: true\n"
 
@@ -1112,7 +1112,7 @@ msgstr "جدول جمع عدد ۹ را یاد بگیر."
 #: activities/algorithm/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Logical associations"
-msgstr "پیوستگی منطقی"
+msgstr "الگوی منطقی"
 
 #. Help title
 #: activities/algorithm/ActivityInfo.qml:17
@@ -1270,13 +1270,13 @@ msgstr "الف/ب/پ/ت/ث/ج/چ/ح/خ/د/ذ/ر/ز/ژ/س/ش/ص/ض/ط/ظ/ع/غ/ف
 #: activities/digital_electricity/ActivityConfig.qml:22
 msgctxt "ActivityConfig|"
 msgid "Tutorial Mode"
-msgstr "سبک تمرین"
+msgstr "حالت تمرین"
 
 #: activities/analog_electricity/ActivityConfig.qml:23
 #: activities/digital_electricity/ActivityConfig.qml:23
 msgctxt "ActivityConfig|"
 msgid "Free Mode"
-msgstr "سبک آزاد"
+msgstr "حالت آزاد"
 
 #: activities/analog_electricity/ActivityConfig.qml:32
 #: activities/digital_electricity/ActivityConfig.qml:32
@@ -1287,7 +1287,7 @@ msgstr "سبک آزاد"
 #: activities/traffic/ActivityConfig.qml:31
 msgctxt "ActivityConfig|"
 msgid "Select your mode"
-msgstr "سبک خود را انتخاب کنید"
+msgstr "حالت خود را انتخاب کنید"
 
 #. Activity title
 #: activities/analog_electricity/ActivityInfo.qml:15
@@ -1925,7 +1925,7 @@ msgstr ""
 #: activities/baby_mouse/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Baby mouse"
-msgstr "موشواره(ماوس) کودک"
+msgstr "ماوس کودک"
 
 #. Help title
 #: activities/baby_mouse/ActivityInfo.qml:16
@@ -2029,7 +2029,7 @@ msgstr "صدای شخصیت ها را وقتی که تایپ میشود، پخش
 #: activities/baby_wordprocessor/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "A baby word processor"
-msgstr "یک پردازنده کلمه برای کودک"
+msgstr "پردازنده کلمه برای کودک"
 
 #. Help title
 #: activities/baby_wordprocessor/ActivityInfo.qml:17
@@ -2460,7 +2460,7 @@ msgstr "تست"
 #: activities/ballcatch/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Make the ball go to Tux"
-msgstr ""
+msgstr "ارسال توپ به توکس"
 
 #. Help title
 #: activities/ballcatch/ActivityInfo.qml:17
@@ -2514,7 +2514,7 @@ msgstr "سخت"
 #: activities/bargame_2players/ActivityConfig.qml:32
 msgctxt "ActivityConfig|"
 msgid "Select your difficulty"
-msgstr ""
+msgstr "سطح سختی را انتخاب کن"
 
 #. Activity title
 #: activities/bargame/ActivityInfo.qml:15
@@ -3234,7 +3234,7 @@ msgstr ""
 #: activities/categorization/ActivityConfig.qml:65
 msgctxt "ActivityConfig|"
 msgid "Discover a category, grouping items together"
-msgstr ""
+msgstr "دسته بندی را کشف کرده و اقلام را طبقه بندی کنید."
 
 #. Activity title
 #: activities/categorization/ActivityInfo.qml:15
@@ -3273,16 +3273,19 @@ msgid ""
 "set' to download the full word image set. Click on the cross or on 'Never "
 "show this dialog again' to play with the demo version."
 msgstr ""
+"تو همه تصاویر برای این فعالیت را در اختیار نداری. بر روی دکمه \"به‌روزرسانی "
+"مجموعه تصاویر\" کلیک کن تا مجموعه کامل تصویر کلمات دانلود شود. با کلیک بر "
+"روی رد شدن یا بر روی \"این پنجره را دوباره نمایش نده\" نسخه دمو را بازی کن."
 
 #: activities/categorization/Categorization.qml:159
 msgctxt "Categorization|"
 msgid "Update the image set"
-msgstr ""
+msgstr "به‌روزرسانی مجموعه تصاویر"
 
 #: activities/categorization/Categorization.qml:160
 msgctxt "Categorization|"
 msgid "Never show this dialog again"
-msgstr ""
+msgstr "این پنجره را دوباره نمایش نده"
 
 #: activities/categorization/CategoryReview.qml:130
 msgctxt "CategoryReview|"
@@ -3293,17 +3296,17 @@ msgstr ""
 #: activities/categorization/resource/1/Data.qml:13
 msgctxt "Data|"
 msgid "Very familiar categories."
-msgstr ""
+msgstr "دسته بندی های بسیار آشنا."
 
 #: activities/categorization/resource/2/Data.qml:13
 msgctxt "Data|"
 msgid "Less familiar categories."
-msgstr ""
+msgstr "دسته بندی های کمتر آشتا."
 
 #: activities/categorization/resource/3/Data.qml:13
 msgctxt "Data|"
 msgid "Unfamiliar categories."
-msgstr ""
+msgstr "دسته بندی های نا آشنا."
 
 #: activities/categorization/resource/board/category_alphabets.qml:18
 msgctxt "category_alphabets|"
@@ -3428,7 +3431,7 @@ msgstr "ماهی ها"
 #: activities/categorization/resource/board/category_fishes.qml:69
 msgctxt "category_fishes|"
 msgid "Place the FISHES to the right and other objects to the left"
-msgstr ""
+msgstr "ماهی ها را در سمت راست و سایر اشیاء را در سمت چپ قرار بده"
 
 #: activities/categorization/resource/board/category_flowers.qml:18
 msgctxt "category_flowers|"
@@ -3446,7 +3449,7 @@ msgstr "گل ها"
 #: activities/categorization/resource/board/category_flowers.qml:94
 msgctxt "category_flowers|"
 msgid "Place the FLOWERS to the right and other objects to the left"
-msgstr ""
+msgstr "گل ها را در سمت راست و سایر اشیاء را در سمت چپ قرار بده"
 
 #: activities/categorization/resource/board/category_food.qml:19
 msgctxt "category_food|"
@@ -3461,7 +3464,7 @@ msgstr "غذا"
 #: activities/categorization/resource/board/category_food.qml:68
 msgctxt "category_food|"
 msgid "Place the FOOD ITEMS to the right and other objects to the left"
-msgstr ""
+msgstr "مواد غذایی را در سمت راست و سایر اشیاء را در سمت چپ قرار بده"
 
 #: activities/categorization/resource/board/category_fruits.qml:19
 msgctxt "category_fruits|"
@@ -3478,12 +3481,12 @@ msgstr "میوه ها"
 #: activities/categorization/resource/board/category_fruits.qml:86
 msgctxt "category_fruits|"
 msgid "Place the FRUITS to the right and other objects to the left"
-msgstr ""
+msgstr "میوه ها را در سمت راست و سایر اشیاء را در سمت چپ قرار بده"
 
 #: activities/categorization/resource/board/category_household_goods.qml:19
 msgctxt "category_household_goods|"
 msgid "Household goods"
-msgstr ""
+msgstr "اجناس خانگی"
 
 #: activities/categorization/resource/board/category_household_goods.qml:23
 #: activities/categorization/resource/board/category_household_goods.qml:32
@@ -3501,7 +3504,7 @@ msgstr ""
 #: activities/categorization/resource/board/category_household_goods.qml:141
 msgctxt "category_household_goods|"
 msgid "Place the HOUSEHOLD GOODS to the right and other objects to the left"
-msgstr ""
+msgstr "اجناس خانگی را در سمت راست و سایر اشیاء را در سمت چپ قرار بده"
 
 #: activities/categorization/resource/board/category_insects.qml:19
 msgctxt "category_insects|"
@@ -3516,7 +3519,7 @@ msgstr "حشرات"
 #: activities/categorization/resource/board/category_insects.qml:68
 msgctxt "category_insects|"
 msgid "Place the INSECTS to the right and other objects to the left"
-msgstr ""
+msgstr "حشره ها را در سمت راست و سایر اشیاء را در سمت چپ قرار بده"
 
 #: activities/categorization/resource/board/category_living_beings.qml:19
 msgctxt "category_living_beings|"
@@ -3532,7 +3535,7 @@ msgstr "زندگی"
 #: activities/categorization/resource/board/category_living_beings.qml:77
 msgctxt "category_living_beings|"
 msgid "Place the living beings to the right and other objects to the left"
-msgstr ""
+msgstr "موجودات زنده را در سمت راست و سایر اشیاء را در سمت چپ قرار بده"
 
 #: activities/categorization/resource/board/category_monuments.qml:19
 msgctxt "category_monuments|"
@@ -3547,7 +3550,7 @@ msgstr "بناهای تاریخی"
 #: activities/categorization/resource/board/category_monuments.qml:68
 msgctxt "category_monuments|"
 msgid "Place the MONUMENTS to the right and other objects to the left"
-msgstr ""
+msgstr "بناهای تاریخی را در سمت راست و سایر اشیاء را در سمت چپ قرار بده"
 
 #: activities/categorization/resource/board/category_nature.qml:19
 msgctxt "category_nature|"
@@ -3564,7 +3567,7 @@ msgstr "طبیعت"
 #: activities/categorization/resource/board/category_nature.qml:86
 msgctxt "category_nature|"
 msgid "Place the NATURE images to the right and other objects to the left"
-msgstr ""
+msgstr "تصاویر طبیعت را در سمت راست و سایر اشیاء را در سمت چپ قرار بده"
 
 #: activities/categorization/resource/board/category_numbers.qml:19
 msgctxt "category_numbers|"
@@ -3576,12 +3579,12 @@ msgstr "اعداد"
 #: activities/categorization/resource/board/category_numbers.qml:41
 msgctxt "category_numbers|"
 msgid "Place the NUMBERS to the right and other objects to the left"
-msgstr ""
+msgstr "اعداد را در سمت راست و سایر اشیاء را در سمت چپ قرار بده"
 
 #: activities/categorization/resource/board/category_odd_even.qml:20
 msgctxt "category_odd_even|"
 msgid "Odd even numbers"
-msgstr ""
+msgstr "اعداد زوج و فرد"
 
 #: activities/categorization/resource/board/category_odd_even.qml:24
 #: activities/categorization/resource/board/category_odd_even.qml:33
@@ -3591,12 +3594,12 @@ msgstr ""
 #: activities/categorization/resource/board/category_odd_even.qml:69
 msgctxt "category_odd_even|"
 msgid "Place the EVEN Numbers to the right and the ODD Numbers to the left"
-msgstr ""
+msgstr "اعداد زوج را سمت راست و اعداد فرد را سمت چپ قرار بده"
 
 #: activities/categorization/resource/board/category_renewable.qml:19
 msgctxt "category_renewable|"
 msgid "Renewable"
-msgstr ""
+msgstr "منابع انرژی تجدیدپذیر"
 
 #: activities/categorization/resource/board/category_renewable.qml:23
 #: activities/categorization/resource/board/category_renewable.qml:32
@@ -3610,6 +3613,7 @@ msgctxt "category_renewable|"
 msgid ""
 "Place the RENEWABLE energy sources to the right and other objects to the left"
 msgstr ""
+" منابع انرژی تجدیدپذیر را در سمت راست و سایر اشیاء را در سمت چپ قرار بده"
 
 #: activities/categorization/resource/board/category_shapes.qml:21
 msgctxt "category_shapes|"
@@ -3742,12 +3746,12 @@ msgstr "ابزارها"
 #: activities/categorization/resource/board/category_tools.qml:104
 msgctxt "category_tools|"
 msgid "Place the TOOLS to the right and other objects to the left"
-msgstr ""
+msgstr "ابزار ها را در سمت راست و سایر اشیاء را در سمت چپ قرار بده"
 
 #: activities/categorization/resource/board/category_transports.qml:19
 msgctxt "category_transports|"
 msgid "Transport"
-msgstr "حمل و نقل"
+msgstr "حمل و نقل و ترابری"
 
 #: activities/categorization/resource/board/category_transports.qml:23
 #: activities/categorization/resource/board/category_transports.qml:32
@@ -3763,6 +3767,8 @@ msgctxt "category_transports|"
 msgid ""
 "Place the MEANS OF TRANSPORTATION to the right and other objects to the left"
 msgstr ""
+"نمونه های حمل و نقل و ترابری را در سمت راست و سایر اشیاء را در سمت چپ قرار "
+"بده"
 
 #: activities/categorization/resource/board/category_vegetables.qml:19
 msgctxt "category_vegetables|"
@@ -3777,7 +3783,7 @@ msgstr "گیاه ها"
 #: activities/categorization/resource/board/category_vegetables.qml:68
 msgctxt "category_vegetables|"
 msgid "Place the VEGETABLES to the right and other objects to the left"
-msgstr ""
+msgstr "سبزی ها را در سمت راست و سایر اشیاء را در سمت چپ قرار بده"
 
 #. Activity title
 #: activities/checkers/ActivityInfo.qml:15
@@ -3790,7 +3796,7 @@ msgstr "بازی چکرز(در مقابل توکس)"
 #: activities/checkers_2players/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "The version in GCompris is the international draughts."
-msgstr "نسخه در جی کامپریس آموزش های بین المللی است."
+msgstr "نسخه در جی‌کامپریس مبتنی بر آموزش های بین المللی است."
 
 #. Help goal
 #: activities/checkers/ActivityInfo.qml:20
@@ -4052,7 +4058,7 @@ msgstr ""
 #: activities/chronos/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Chronos"
-msgstr ""
+msgstr "خرونوس(گویش داستان با درج تصویر)"
 
 #. Help title
 #: activities/chronos/ActivityInfo.qml:21
@@ -4402,7 +4408,7 @@ msgstr "محل خود را انتخاب کن"
 #: activities/click_on_letter/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Click on a lowercase letter"
-msgstr ""
+msgstr "کلیک بر روی حروف کوچک"
 
 #. Help title
 #: activities/click_on_letter/ActivityInfo.qml:17
@@ -4453,7 +4459,7 @@ msgstr ""
 #: activities/click_on_letter_up/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Click on an uppercase letter"
-msgstr ""
+msgstr "کلیک بر روی حروف بزرگ"
 
 #: activities/clickanddraw/ActivityConfig.qml:21
 #: activities/drawletters/ActivityConfig.qml:21
@@ -4613,7 +4619,6 @@ msgctxt "Clockgame|"
 msgid "%n hour(s)"
 msgid_plural "%n hour(s)"
 msgstr[0] ""
-msgstr[1] ""
 
 #: activities/clockgame/Clockgame.qml:112
 #, qt-format
@@ -4621,7 +4626,6 @@ msgctxt "Clockgame|"
 msgid "%n minute(s)"
 msgid_plural "%n minute(s)"
 msgstr[0] ""
-msgstr[1] ""
 
 #: activities/clockgame/Clockgame.qml:115
 #, qt-format
@@ -4629,7 +4633,6 @@ msgctxt "Clockgame|"
 msgid "%n second(s)"
 msgid_plural "%n second(s)"
 msgstr[0] ""
-msgstr[1] ""
 
 #: activities/clockgame/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -5029,7 +5032,7 @@ msgstr ""
 #: activities/crane/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Build the same model"
-msgstr ""
+msgstr "بازسازی مدل"
 
 #. Help title
 #: activities/crane/ActivityInfo.qml:22
@@ -5075,6 +5078,8 @@ msgctxt "crane|"
 msgid ""
 "cat;dog;win;red;yes;big;box;air;arm;car;bus;fun;day;eat;hat;leg;ice;old;egg"
 msgstr ""
+"گربه;سگ;برنده شدن;قرمز;بله;بزرگ;جعبه;هوا;دست;ماشین;اتوبوس;سرگرمی;روز;خوردن;"
+"کلاه;پا;یخ;پیر;تخم مرغ"
 
 #. Translators: NOTE: Word list for crane activity. Translate this into a list of 10–20 simple 4-letter words separated by semi-colons. The words can only contain lowercase ASCII letters (a–z). Example: blue;best;good;area
 #: activities/crane/crane.js:52
@@ -5954,7 +5959,7 @@ msgstr ""
 #: activities/enumerate/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid "Basic enumeration."
-msgstr ""
+msgstr "شمارش ساده."
 
 #. Help manual
 #: activities/enumerate/ActivityInfo.qml:24
@@ -6061,7 +6066,7 @@ msgstr ""
 #: activities/erase/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Move the mouse or touch the screen"
-msgstr ""
+msgstr "جابجایی و ضربه روی صفحه با ماوس"
 
 #. Help title
 #: activities/erase/ActivityInfo.qml:17
@@ -6090,7 +6095,7 @@ msgstr ""
 #: activities/erase_2clic/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Double tap or double click"
-msgstr ""
+msgstr "دابل کلیک یا دوبار ضربه زدن"
 
 #. Help title
 #: activities/erase_2clic/ActivityInfo.qml:17
@@ -6128,7 +6133,7 @@ msgstr ""
 #: activities/explore_farm_animals/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Explore farm animals"
-msgstr "کاوش حیوانات اهلی"
+msgstr "کاوش حیوانات اهلی مزرعه"
 
 #. Help title
 #: activities/explore_farm_animals/ActivityInfo.qml:17
@@ -7844,8 +7849,7 @@ msgstr "برادر"
 #: activities/family/FamilyDataset.qml:364
 msgctxt "FamilyDataset|"
 msgid "Cousin"
-msgstr ""
-"پسر عمو/دختر عمو/پسر دایی/دختر دایی/پسر عمه/دختر عمه/پسر خاله/دختر خاله"
+msgstr "پسر/دختر عمو/خاله/عمه/دایی"
 
 #: activities/family/FamilyDataset.qml:176
 #: activities/family/FamilyDataset.qml:204
@@ -7880,7 +7884,7 @@ msgstr "نوه پسری"
 #: activities/family/FamilyDataset.qml:468
 msgctxt "FamilyDataset|"
 msgid "Nephew"
-msgstr ""
+msgstr "پسر برادر/خواهر"
 
 #: activities/family/FamilyDataset.qml:389
 #: activities/family/FamilyDataset.qml:414
@@ -7889,7 +7893,7 @@ msgstr ""
 #: activities/family/FamilyDataset.qml:468
 msgctxt "FamilyDataset|"
 msgid "Niece"
-msgstr ""
+msgstr "دختر برادر/خواهر"
 
 #: activities/family/FamilyDataset.qml:494
 #: activities/family/FamilyDataset.qml:495
@@ -7898,7 +7902,7 @@ msgstr ""
 #: activities/family/FamilyDataset.qml:578
 msgctxt "FamilyDataset|"
 msgid "Father-in-law"
-msgstr ""
+msgstr "ناپدری"
 
 #: activities/family/FamilyDataset.qml:495
 #: activities/family/FamilyDataset.qml:521
@@ -7908,7 +7912,7 @@ msgstr ""
 #: activities/family/FamilyDataset.qml:605
 msgctxt "FamilyDataset|"
 msgid "Mother-in-law"
-msgstr ""
+msgstr "نامادری"
 
 #: activities/family/FamilyDataset.qml:495
 #: activities/family/FamilyDataset.qml:522
@@ -7918,7 +7922,7 @@ msgstr ""
 #: activities/family/FamilyDataset.qml:605
 msgctxt "FamilyDataset|"
 msgid "Sister-in-law"
-msgstr ""
+msgstr "ناخواهری"
 
 #: activities/family/FamilyDataset.qml:495
 #: activities/family/FamilyDataset.qml:522
@@ -7928,7 +7932,7 @@ msgstr ""
 #: activities/family/FamilyDataset.qml:605
 msgctxt "FamilyDataset|"
 msgid "Brother-in-law"
-msgstr ""
+msgstr "نابرادری"
 
 #: activities/family/FamilyDataset.qml:495
 #: activities/family/FamilyDataset.qml:522
@@ -7937,19 +7941,19 @@ msgstr ""
 #: activities/family/FamilyDataset.qml:605
 msgctxt "FamilyDataset|"
 msgid "Daughter-in-law"
-msgstr ""
+msgstr "دختر خوانده"
 
 #: activities/family/FamilyDataset.qml:604
 #: activities/family/FamilyDataset.qml:605
 msgctxt "FamilyDataset|"
 msgid "Son-in-law"
-msgstr ""
+msgstr "پسر خوانده"
 
 #. Activity title
 #: activities/family_find_relative/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Point the relatives"
-msgstr ""
+msgstr "نسبت خانوادگی را مشخص کن"
 
 #. Help title
 #: activities/family_find_relative/ActivityInfo.qml:17
@@ -7983,7 +7987,7 @@ msgstr "بازی پانزده"
 #: activities/fifteen/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Move each item to recreate the image."
-msgstr ""
+msgstr "هر شی را برای بازسازی تصویر جابجا کن."
 
 #. Help goal
 #: activities/fifteen/ActivityInfo.qml:20
@@ -8171,7 +8175,7 @@ msgstr ""
 #: activities/followline/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Control the hose-pipe"
-msgstr ""
+msgstr "اطفا حریق"
 
 #. Help title
 #: activities/followline/ActivityInfo.qml:17
@@ -8224,7 +8228,7 @@ msgstr ""
 #: activities/fractions_create/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Create the fractions"
-msgstr ""
+msgstr "ساخت برش"
 
 #. Help title
 #: activities/fractions_create/ActivityInfo.qml:16
@@ -8557,7 +8561,7 @@ msgstr ""
 #: activities/fractions_find/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Find the fractions"
-msgstr ""
+msgstr "محاسبه برش"
 
 #. Help title
 #: activities/fractions_find/ActivityInfo.qml:16
@@ -9877,7 +9881,7 @@ msgstr ""
 #: activities/geo-country/resource/board/board18_0.qml:71
 msgctxt "board18_0|"
 msgid "Valencia"
-msgstr ""
+msgstr "والنسیا"
 
 #. Autonomous communities of Spain: Murcia
 #: activities/geo-country/resource/board/board18_0.qml:78
@@ -10198,7 +10202,7 @@ msgstr ""
 #: activities/geo-country/resource/board/board3_0.qml:94
 msgctxt "board3_0|"
 msgid "Misiones"
-msgstr ""
+msgstr "میسیونس"
 
 #. Province of Argentina: Mendoza
 #: activities/geo-country/resource/board/board3_0.qml:101
@@ -12512,7 +12516,7 @@ msgstr ""
 #: activities/gletters/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Simple letters"
-msgstr ""
+msgstr "حروف ساده"
 
 #. Help title
 #. ----------
@@ -12533,7 +12537,7 @@ msgstr ""
 #: activities/gnumch-equality/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Gnumch equality"
-msgstr ""
+msgstr "تساوی با گنومچ"
 
 #. Help title
 #. ----------
@@ -12550,7 +12554,7 @@ msgstr ""
 #: activities/gnumch-equality/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Practice addition, multiplication, division and subtraction."
-msgstr ""
+msgstr "یادگیری جمع، ضرب، تقسیم و تفریق"
 
 #. Help manual
 #: activities/gnumch-equality/ActivityInfo.qml:26
@@ -12588,52 +12592,52 @@ msgstr ""
 #: activities/gnumch-equality/resource/1/Data.qml:13
 msgctxt "Data|"
 msgid "Practice addition equality."
-msgstr ""
+msgstr "یادگیری جمع مساوی."
 
 #: activities/gnumch-equality/resource/2/Data.qml:13
 msgctxt "Data|"
 msgid "Practice subtraction equality."
-msgstr ""
+msgstr "یادگیری تفریق مساوی"
 
 #: activities/gnumch-equality/resource/3/Data.qml:13
 msgctxt "Data|"
 msgid "Practice multiplication equality."
-msgstr ""
+msgstr "یادگیری ضرب مساوی"
 
 #: activities/gnumch-equality/resource/4/Data.qml:13
 msgctxt "Data|"
 msgid "Practice division equality."
-msgstr ""
+msgstr "یادگیری تقسیم مساوی."
 
 #: activities/gnumch-equality/TopPanel.qml:52
 #, qt-format
 msgctxt "TopPanel|"
 msgid "Equal to %1"
-msgstr ""
+msgstr "برابر با %1"
 
 #: activities/gnumch-equality/TopPanel.qml:54
 #, qt-format
 msgctxt "TopPanel|"
 msgid "Not equal to %1"
-msgstr ""
+msgstr "برابر با %1 نیست"
 
 #: activities/gnumch-equality/TopPanel.qml:56
 #, qt-format
 msgctxt "TopPanel|"
 msgid "Factor of %1"
-msgstr ""
+msgstr "فاکتور %1"
 
 #: activities/gnumch-equality/TopPanel.qml:58
 #, qt-format
 msgctxt "TopPanel|"
 msgid "Multiple of %1"
-msgstr ""
+msgstr "مضرب %1"
 
 #: activities/gnumch-equality/TopPanel.qml:60
 #, qt-format
 msgctxt "TopPanel|"
 msgid "Primes less than %1"
-msgstr ""
+msgstr "اعداد اول کمتر از %1"
 
 #: activities/gnumch-equality/Warning.qml:39
 msgctxt "Warning|"
@@ -12643,18 +12647,18 @@ msgstr ""
 #: activities/gnumch-equality/Warning.qml:43
 msgctxt "Warning|"
 msgid "You ate a wrong number."
-msgstr ""
+msgstr "عدد اشتباهی را خوردی."
 
 #: activities/gnumch-equality/Warning.qml:58
 msgctxt "Warning|"
 msgid "1 is not a prime number."
-msgstr ""
+msgstr "۱ عدد اول نیست."
 
 #: activities/gnumch-equality/Warning.qml:68
 #, qt-format
 msgctxt "Warning|"
 msgid "%1 is divisible by %2"
-msgstr ""
+msgstr "%1 قابل تقسیم است بر %2"
 
 #: activities/gnumch-equality/Warning.qml:76
 msgctxt "Warning|"
@@ -12665,24 +12669,24 @@ msgstr "و"
 #, qt-format
 msgctxt "Warning|"
 msgid "Multiples of %1 include %2, "
-msgstr ""
+msgstr "مضارب %1 شامل %2 ،"
 
 #: activities/gnumch-equality/Warning.qml:83
 #, qt-format
 msgctxt "Warning|"
 msgid "but %1 is not a multiple of %2."
-msgstr ""
+msgstr "ولی %1 مضرب %2 نیست."
 
 #: activities/gnumch-equality/Warning.qml:100
 #, qt-format
 msgctxt "Warning|"
 msgid "and %1 are the divisors of %2."
-msgstr ""
+msgstr "و %1 مقسوم علیه %2 هستند."
 
 #: activities/gnumch-equality/Warning.qml:129
 msgctxt "Warning|"
 msgid "Press \"Return\" or click on me to continue."
-msgstr ""
+msgstr "بر روی دکمه \"بازگشت\" یا من برای ادامه کلیک کن."
 
 #: activities/gnumch-equality/WarnMonster.qml:41
 msgctxt "WarnMonster|"
@@ -12693,7 +12697,7 @@ msgstr ""
 #: activities/gnumch-factors/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Gnumch factors"
-msgstr ""
+msgstr "فاکتورها با گنومچ"
 
 #. Help title
 #: activities/gnumch-factors/ActivityInfo.qml:17
@@ -12708,7 +12712,7 @@ msgstr ""
 #: activities/gnumch-multiples/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Learn about multiples and factors."
-msgstr ""
+msgstr "یادگیری ضرب ها و فاکتور ها."
 
 #. Help manual
 #: activities/gnumch-factors/ActivityInfo.qml:24
@@ -12727,7 +12731,7 @@ msgstr ""
 #: activities/gnumch-inequality/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Gnumch inequality"
-msgstr ""
+msgstr "نامساوی با گنومچ"
 
 #. Help title
 #: activities/gnumch-inequality/ActivityInfo.qml:18
@@ -12741,33 +12745,33 @@ msgstr ""
 #: activities/gnumch-inequality/ActivityInfo.qml:21
 msgctxt "ActivityInfo|"
 msgid "Practice addition, subtraction, multiplication and division."
-msgstr ""
+msgstr "یادگیری جمع، تفریق، ضرب و تقسیم."
 
 #: activities/gnumch-inequality/resource/1/Data.qml:13
 msgctxt "Data|"
 msgid "Practice addition inequality."
-msgstr ""
+msgstr "یادگیری جمع نامساوی"
 
 #: activities/gnumch-inequality/resource/2/Data.qml:13
 msgctxt "Data|"
 msgid "Practice subtraction inequality."
-msgstr ""
+msgstr "یادگیری تفریق نامساوی"
 
 #: activities/gnumch-inequality/resource/3/Data.qml:13
 msgctxt "Data|"
 msgid "Practice multiplication inequality."
-msgstr ""
+msgstr "یادگیری ضرب نامساوی"
 
 #: activities/gnumch-inequality/resource/4/Data.qml:13
 msgctxt "Data|"
 msgid "Practice division inequality."
-msgstr ""
+msgstr "یادگیری تقسیم نامساوی."
 
 #. Activity title
 #: activities/gnumch-multiples/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Gnumch multiples"
-msgstr ""
+msgstr "ضرب با گنومچ"
 
 #. Help title
 #: activities/gnumch-multiples/ActivityInfo.qml:17
@@ -12799,7 +12803,7 @@ msgstr ""
 #: activities/gnumch-primes/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Gnumch primes"
-msgstr ""
+msgstr "اعداد اول با گنومچ"
 
 #. Help title
 #: activities/gnumch-primes/ActivityInfo.qml:17
@@ -12961,7 +12965,7 @@ msgstr "مدیر"
 #: activities/guesscount/ActivityConfig.qml:27
 msgctxt "ActivityConfig|"
 msgid "BuiltIn"
-msgstr ""
+msgstr "درونی"
 
 #: activities/guesscount/ActivityConfig.qml:70
 msgctxt "ActivityConfig|"
@@ -12977,7 +12981,7 @@ msgstr "انتخاب نشده"
 #: activities/guesscount/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Guesscount"
-msgstr ""
+msgstr "حدس عملیات جبری"
 
 #. Help title
 #: activities/guesscount/ActivityInfo.qml:21
@@ -12997,7 +13001,7 @@ msgstr ""
 #: activities/guesscount/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Knowledge of arithmetic operations."
-msgstr ""
+msgstr "دانش عملیات حسابی."
 
 #. Help manual
 #: activities/guesscount/ActivityInfo.qml:28
@@ -13027,13 +13031,13 @@ msgstr "نتیجه یک عدد صحیح نیست"
 #, qt-format
 msgctxt "Guesscount|"
 msgid "%1/%2"
-msgstr ""
+msgstr "%1/%2"
 
 #: activities/guesscount/Guesscount.qml:165
 #, qt-format
 msgctxt "Guesscount|"
 msgid "Guesscount: %1"
-msgstr ""
+msgstr "حدس عملیات جبری: %1"
 
 #: activities/guesscount/OperandRow.qml:40
 msgctxt "OperandRow|"
@@ -13048,28 +13052,28 @@ msgstr "عملگرها"
 #: activities/guesscount/resource/1/Data.qml:20
 msgctxt "Data|"
 msgid "Practice algebraic calculations with a single operator."
-msgstr ""
+msgstr "تمرین محاسبات جبری با یک عملگر."
 
 #: activities/guesscount/resource/2/Data.qml:14
 msgctxt "Data|"
 msgid "Practice algebraic calculations with two operators."
-msgstr ""
+msgstr "تمرین محاسبات جبری با دو عملگر."
 
 #: activities/guesscount/resource/3/Data.qml:14
 msgctxt "Data|"
 msgid "Practice algebraic calculations with three operators."
-msgstr ""
+msgstr "تمرین محاسبات جبری با سه عملگر."
 
 #: activities/guesscount/resource/4/Data.qml:14
 msgctxt "Data|"
 msgid "Practice algebraic calculations with four operators."
-msgstr ""
+msgstr "تمرین محاسبات جبری با چهار عملگر."
 
 #. Activity title
 #: activities/guessnumber/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Guess a number"
-msgstr "عدد را حدس بزن"
+msgstr "حدس اعداد"
 
 #. Help title
 #: activities/guessnumber/ActivityInfo.qml:17
@@ -13219,8 +13223,8 @@ msgid ""
 "GCompris is developed by the KDE community, you can translate GCompris by "
 "joining a translation team on <a href=\"%2\">%2</a>"
 msgstr ""
-"جی کامپریس توسط جامعه کی دی ای توسعه داده شده است، تو میتوانی جی کامپریس را "
-"با ملحق شدن به تیم <a href=\"%2\">%2</a> ترجمه کنی."
+"جی‌کامپریس توسط جامعه کی‌دی‌ای توسعه داده شده است، تو میتوانی جی‌کامپریس را با "
+"ملحق شدن به تیم ترجمه کی‌دی‌ای <a href=\"%2\">%2</a> ترجمه کنی."
 
 #: activities/hangman/Hangman.qml:403
 msgctxt "Hangman|"
@@ -13235,7 +13239,7 @@ msgstr ""
 #: activities/hanoi/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Simplified Tower of Hanoi"
-msgstr ""
+msgstr "برج هانوی ساده"
 
 #. Help title
 #: activities/hanoi/ActivityInfo.qml:17
@@ -13785,7 +13789,7 @@ msgstr ""
 #: activities/land_safe/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Land safe"
-msgstr ""
+msgstr "فرود ایمن"
 
 #. Help title
 #: activities/land_safe/ActivityInfo.qml:17
@@ -13956,7 +13960,7 @@ msgstr ""
 #: activities/lang/ActivityInfo.qml:21
 msgctxt "ActivityInfo|"
 msgid "Enrich your vocabulary"
-msgstr ""
+msgstr "افزایش دایره واژگان (فرهنگ لغات)"
 
 #. Help title
 #: activities/lang/ActivityInfo.qml:23
@@ -13968,7 +13972,7 @@ msgstr ""
 #: activities/lang/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Enrich your vocabulary in your native language or in a foreign one."
-msgstr ""
+msgstr "افزایش دایره واژگان (فرهنگ لغات) در زبان مادری خود یا یک زبان خارجی."
 
 #. Help manual
 #: activities/lang/ActivityInfo.qml:30
@@ -14026,7 +14030,7 @@ msgstr ""
 #: activities/lang/Lang.qml:191 activities/lang/Lang.qml:192
 msgctxt "Lang|"
 msgid "other"
-msgstr "بقیه"
+msgstr "سایر"
 
 #: activities/lang/Lang.qml:193
 msgctxt "Lang|"
@@ -14136,25 +14140,25 @@ msgstr "غذا"
 #: activities/lang/Lang.qml:204
 msgctxt "Lang|"
 msgid "transport"
-msgstr "حمل و نقل"
+msgstr "حمل و نقل و ترابری"
 
 #. Activity title
 #: activities/learn_additions/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Learn additions"
-msgstr ""
+msgstr "یادگیری جمع"
 
 #. Help title
 #: activities/learn_additions/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Learn additions with small numbers."
-msgstr ""
+msgstr "یادگیری جمع ها با اعداد کوچک."
 
 #. Help goal
 #: activities/learn_additions/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Learn additions by counting their result."
-msgstr ""
+msgstr "یادگیری جمع ها با شمارش نتایج آن ها."
 
 #. Help manual
 #: activities/learn_additions/ActivityInfo.qml:24
@@ -14337,7 +14341,7 @@ msgstr "جمع اعداد اعشاری"
 #: activities/learn_decimals_additions/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Learn additions with decimal numbers."
-msgstr ""
+msgstr "یادگیری جمع ها با اعداد اعشاری."
 
 #. Help goal
 #: activities/learn_decimals_additions/ActivityInfo.qml:19
@@ -14390,13 +14394,13 @@ msgstr ""
 #: activities/learn_decimals_subtractions/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Subtractions with decimal numbers"
-msgstr ""
+msgstr "تفریق اعداد اعشاری"
 
 #. Help title
 #: activities/learn_decimals_subtractions/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Learn subtractions with decimal numbers."
-msgstr ""
+msgstr "یادگیری تفریق با اعداد اعشاری."
 
 #. Help goal
 #: activities/learn_decimals_subtractions/ActivityInfo.qml:19
@@ -14435,7 +14439,7 @@ msgstr ""
 #: activities/learn_digits/ActivityConfig.qml:23
 msgctxt "ActivityConfig|"
 msgid "Arabic numerals"
-msgstr ""
+msgstr "عددنویسی عربی"
 
 #: activities/learn_digits/ActivityConfig.qml:24
 #: activities/reversecount/ActivityConfig.qml:21
@@ -14463,7 +14467,7 @@ msgstr "فعال سازی صدا ها"
 #: activities/learn_digits/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Count and color the circles"
-msgstr ""
+msgstr "شمارش و رنگ آمیزی دایره ها"
 
 #. Help title
 #: activities/learn_digits/ActivityInfo.qml:17
@@ -14539,7 +14543,7 @@ msgstr "ارقام از ۰ تا ۹."
 #: activities/learn_quantities/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Learn quantities"
-msgstr ""
+msgstr "یادگیری کمیت ها"
 
 #. Help title
 #: activities/learn_quantities/ActivityInfo.qml:16
@@ -14599,13 +14603,13 @@ msgstr "بین ۲۰ و ۵۰."
 #: activities/learn_subtractions/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Learn subtractions"
-msgstr "یادگیری تقسیم"
+msgstr "یادگیری تفریق"
 
 #. Help title
 #: activities/learn_subtractions/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Learn subtractions with small numbers."
-msgstr "یادگیری تقسیم با اعداد کوچک."
+msgstr "یادگیری تفریق با اعداد کوچک."
 
 #. Help goal
 #: activities/learn_subtractions/ActivityInfo.qml:20
@@ -14677,7 +14681,7 @@ msgstr ""
 #: activities/leftright/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Find your left and right hands"
-msgstr ""
+msgstr "تشخیص دست چپ و راست"
 
 #. Help title
 #: activities/leftright/ActivityInfo.qml:17
@@ -14714,12 +14718,12 @@ msgstr "فلش راست: جواب سمت راست"
 #: activities/leftright/Leftright.qml:144
 msgctxt "Leftright|"
 msgid "Left hand"
-msgstr "سمت چپ"
+msgstr "دست چپ"
 
 #: activities/leftright/Leftright.qml:161
 msgctxt "Leftright|"
 msgid "Right hand"
-msgstr "سمت راست"
+msgstr "دست راست"
 
 #: activities/letter-in-word/ActivityConfig.qml:41
 msgctxt "ActivityConfig|"
@@ -14755,7 +14759,7 @@ msgstr ""
 #: activities/letter-in-word/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Letter in which word"
-msgstr ""
+msgstr "پیدا کردن کلمات شامل حرف مشخص شده"
 
 #. Help title
 #: activities/letter-in-word/ActivityInfo.qml:17
@@ -14804,12 +14808,14 @@ msgid ""
 "We switched to English for this activity but you can select another language "
 "in the configuration dialog."
 msgstr ""
+"ما زبان را به انگلیسی برای این فعالیت تعویض کردیم ولی تو میتوانی زبان دیگری "
+"را از طریق پنجره ترجیحات انتخاب کنی."
 
 #. Activity title
 #: activities/lightsoff/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Lights off"
-msgstr ""
+msgstr "چراغ ها خاموش!"
 
 #. Help title
 #. ----------
@@ -14854,38 +14860,38 @@ msgstr ""
 #: activities/lightsoff/resource/4/Data.qml:13
 msgctxt "Data|"
 msgid "5×5 grids, Difficult."
-msgstr ""
+msgstr "شبکه(توری) ۵در۵، سخت."
 
 #: activities/lightsoff/resource/5/Data.qml:13
 msgctxt "Data|"
 msgid "5×5 grids, Very Difficult."
-msgstr ""
+msgstr "شبکه(توری) ۵در۵، خیلی سخت."
 
 #: activities/lightsoff/resource/6/Data.qml:13
 msgctxt "Data|"
 msgid "6×6 grids, Very Difficult."
-msgstr ""
+msgstr "شبکه(توری)۶در۶، خیلی سخت."
 
 #: activities/lightsoff/resource/7/Data.qml:13
 msgctxt "Data|"
 msgid "7×7 grids, Very Difficult."
-msgstr ""
+msgstr "شبکه(توری) ۷در۷، خیلی سخت."
 
 #: activities/lightsoff/resource/8/Data.qml:13
 msgctxt "Data|"
 msgid "8×8 grids, Very Difficult."
-msgstr ""
+msgstr "شبکه(توری) ۸در۸، خیلی سخت."
 
 #: activities/lightsoff/resource/9/Data.qml:13
 msgctxt "Data|"
 msgid "9×9 grids, Very Difficult."
-msgstr ""
+msgstr "شبکه(توری) ۹در۹، خیلی سخت."
 
 #. Activity title
 #: activities/louis-braille/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "The history of Louis Braille"
-msgstr ""
+msgstr "تاریخچه لوئیس بریل"
 
 #. Help title
 #: activities/louis-braille/ActivityInfo.qml:17
@@ -14997,7 +15003,7 @@ msgstr ""
 #: activities/magic-hat-plus/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "The magician hat"
-msgstr ""
+msgstr "کلاه جادوگر"
 
 #. Help title
 #: activities/magic-hat-minus/ActivityInfo.qml:17
@@ -15216,6 +15222,8 @@ msgid ""
 "Look at your position, then switch back to invisible mode to continue your "
 "moves"
 msgstr ""
+"به موقعیت خود نگاه کن، سپس به عقب تعویض شو به حالت نامرئی که جابجایی را "
+"ادامه بدی."
 
 #. Activity title
 #: activities/mazeinvisible/ActivityInfo.qml:15
@@ -15349,7 +15357,7 @@ msgstr "ادامه"
 #: activities/memory-case-association-tux/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Case association memory game against Tux"
-msgstr ""
+msgstr "بازی حافظه تداعی حالت حروف در مقابل توکس"
 
 #. Help title
 #: activities/memory-case-association-tux/ActivityInfo.qml:17
@@ -15460,7 +15468,7 @@ msgstr "تعداد بازیکنان را انتخاب کنید"
 #: activities/memory-case-association/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Case association memory game"
-msgstr ""
+msgstr "بازی حافظه تداعی حالت حروف"
 
 #. Help title
 #: activities/memory-case-association/ActivityInfo.qml:17
@@ -15472,7 +15480,7 @@ msgstr ""
 #: activities/memory-enumerate/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Enumeration memory game"
-msgstr ""
+msgstr "بازی حافظه شمارش"
 
 #. Help title
 #: activities/memory-enumerate/ActivityInfo.qml:17
@@ -15733,7 +15741,7 @@ msgstr ""
 #: activities/memory-math-add-tux/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Addition memory game against Tux"
-msgstr "بازی حافظه حمع در مقابل توکس"
+msgstr "بازی حافظه جمع در مقابل توکس"
 
 #. Help title
 #: activities/memory-math-add-tux/ActivityInfo.qml:17
@@ -16461,7 +16469,7 @@ msgstr "ادامه"
 #: activities/menu/ActivityInfo.qml:13
 msgctxt "ActivityInfo|"
 msgid "GCompris Main Menu"
-msgstr "منوی اصلی جی کامپریس"
+msgstr "منوی اصلی جی‌کامپریس"
 
 #. Help title
 #: activities/menu/ActivityInfo.qml:15
@@ -16476,7 +16484,7 @@ msgid ""
 "GCompris is a high quality educational software suite, including a large "
 "number of activities for children aged 2 to 10."
 msgstr ""
-"جی کامپریس یک مجموعه نرم افزار آموزشی کیفیت بالا است که شامل تعداد زیادی "
+"جی‌کامپریس یک مجموعه نرم افزار آموزشی کیفیت بالا است که شامل تعداد زیادی "
 "فعالیت برای کودک های بین سن ۲ تا ۱۰ سال میباشد."
 
 #. Help prerequisite
@@ -16535,12 +16543,12 @@ msgstr ""
 #: activities/menu/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
 msgid "Three lines - The activity settings menu"
-msgstr ""
+msgstr "سه خط - منوی تنظیمات فعالیت"
 
 #: activities/menu/ActivityInfo.qml:32
 msgctxt "ActivityInfo|"
 msgid "G - About GCompris"
-msgstr "G - درباره جی کامپریس"
+msgstr "G - درباره جی‌کامپریس"
 
 #: activities/menu/ActivityInfo.qml:33
 msgctxt "ActivityInfo|"
@@ -16568,6 +16576,8 @@ msgid ""
 "If there are two different star icons on an activity, the first one shows "
 "the minimum difficulty, and the second one the maximum difficulty."
 msgstr ""
+"اگر آیکون دو ستاره مختلف برای یک فعالیت وجود داشت، اولی نشان دهنده حداقل "
+"سختی، و دومی نشان دهنده حداکثر سختی میباشد."
 
 #: activities/menu/ActivityInfo.qml:38
 msgctxt "ActivityInfo|"
@@ -16587,17 +16597,17 @@ msgstr ""
 #: activities/menu/ActivityInfo.qml:41
 msgctxt "ActivityInfo|"
 msgid "Ctrl+S: Toggle the activity section bar"
-msgstr ""
+msgstr "دکمه Ctrl+S: نوار بخش فعالیت را تغییر وضعیت بده"
 
 #: activities/menu/BackgroundMusicList.qml:55
 msgctxt "BackgroundMusicList|"
 msgid "Background music"
-msgstr ""
+msgstr "موسیقی پس زمینه"
 
 #: activities/menu/BackgroundMusicList.qml:117
 msgctxt "BackgroundMusicList|"
 msgid "Disable the background music if you don't want to play them."
-msgstr ""
+msgstr "موسیقی پس زمینه را در صورتی که نمیخواهی پخش شوند، غیرفعال کن."
 
 #. Current background music playing
 #: activities/menu/BackgroundMusicList.qml:157
@@ -16610,38 +16620,38 @@ msgstr ""
 #, qt-format
 msgctxt "BackgroundMusicList|"
 msgid "Title: %1"
-msgstr ""
+msgstr "عنوان: %1"
 
 #. Artist of the current background music playing
 #: activities/menu/BackgroundMusicList.qml:175
 #, qt-format
 msgctxt "BackgroundMusicList|"
 msgid "Artist: %1"
-msgstr ""
+msgstr "هنرمند: %1"
 
 #. Year of the current background music playing
 #: activities/menu/BackgroundMusicList.qml:184
 #, qt-format
 msgctxt "BackgroundMusicList|"
 msgid "Year: %1"
-msgstr ""
+msgstr "سال: %1"
 
 #. Copyright of the current background music playing
 #: activities/menu/BackgroundMusicList.qml:193
 #, qt-format
 msgctxt "BackgroundMusicList|"
 msgid "Copyright: %1"
-msgstr ""
+msgstr "حق تکثیر: %1"
 
 #: activities/menu/ConfigurationItem.qml:45
 msgctxt "ConfigurationItem|"
 msgid "Language selector"
-msgstr ""
+msgstr "انتخاب زبان"
 
 #: activities/menu/ConfigurationItem.qml:70
 msgctxt "ConfigurationItem|"
 msgid "Localized voices"
-msgstr ""
+msgstr "صداهای بومی سازی شده"
 
 #: activities/menu/ConfigurationItem.qml:79
 msgctxt "ConfigurationItem|"
@@ -16651,37 +16661,37 @@ msgstr ""
 #: activities/menu/ConfigurationItem.qml:80
 msgctxt "ConfigurationItem|"
 msgid "Download"
-msgstr ""
+msgstr "دانلود"
 
 #: activities/menu/ConfigurationItem.qml:95
 msgctxt "ConfigurationItem|"
 msgid "Enable audio voices"
-msgstr ""
+msgstr "فعالسازی صداهای شنیداری"
 
 #: activities/menu/ConfigurationItem.qml:105
 msgctxt "ConfigurationItem|"
 msgid "Enable audio effects"
-msgstr ""
+msgstr "فعالسازی افکت های صوتی"
 
 #: activities/menu/ConfigurationItem.qml:114
 msgctxt "ConfigurationItem|"
 msgid "Audio effects volume"
-msgstr ""
+msgstr "حجم صدای افکت های صوتی"
 
 #: activities/menu/ConfigurationItem.qml:135
 msgctxt "ConfigurationItem|"
 msgid "Download background music"
-msgstr ""
+msgstr "دانلود موسیقی پس زمینه"
 
 #: activities/menu/ConfigurationItem.qml:146
 msgctxt "ConfigurationItem|"
 msgid "Enable background music"
-msgstr ""
+msgstr "فعالسازی موسیقی پس زمینه"
 
 #: activities/menu/ConfigurationItem.qml:155
 msgctxt "ConfigurationItem|"
 msgid "Background Music"
-msgstr ""
+msgstr "موسیقی پس زمینه"
 
 #: activities/menu/ConfigurationItem.qml:172
 msgctxt "ConfigurationItem|"
@@ -16692,7 +16702,7 @@ msgstr ""
 #, qt-format
 msgctxt "ConfigurationItem|"
 msgid "Title: %1  Artist: %2"
-msgstr ""
+msgstr "عنوان: %1 هنرمند: %2"
 
 #: activities/menu/ConfigurationItem.qml:176
 msgctxt "ConfigurationItem|"
@@ -16702,93 +16712,93 @@ msgstr ""
 #: activities/menu/ConfigurationItem.qml:199
 msgctxt "ConfigurationItem|"
 msgid "Background music volume"
-msgstr ""
+msgstr "ججم صدای موسیقی پس زمینه"
 
 #: activities/menu/ConfigurationItem.qml:218
 msgctxt "ConfigurationItem|"
 msgid "Fullscreen"
-msgstr ""
+msgstr "تمام صفحه"
 
 #: activities/menu/ConfigurationItem.qml:229
 msgctxt "ConfigurationItem|"
 msgid "Virtual Keyboard"
-msgstr ""
+msgstr "کیبورد مجازی"
 
 #: activities/menu/ConfigurationItem.qml:240
 msgctxt "ConfigurationItem|"
 msgid "Enable automatic downloads/updates of sound files"
-msgstr ""
+msgstr "فعالسازی دانلود/به‌روزرسانی اتوماتیک فایل های صوتی"
 
 #: activities/menu/ConfigurationItem.qml:252
 msgctxt "ConfigurationItem|"
 msgid "Download full word image set"
-msgstr ""
+msgstr "دانلود مجموعه کامل تصویر کلمات"
 
 #: activities/menu/ConfigurationItem.qml:273
 msgctxt "ConfigurationItem|"
 msgid "Full word image set is installed"
-msgstr ""
+msgstr "مجموعه کامل تصویر کلمات نصب شده است"
 
 #: activities/menu/ConfigurationItem.qml:273
 msgctxt "ConfigurationItem|"
 msgid "Full word image set is not installed"
-msgstr ""
+msgstr "مجموعه کامل تصویر کلمات نصب نشده است"
 
 #: activities/menu/ConfigurationItem.qml:295
 msgctxt "ConfigurationItem|"
 msgid "The activity section menu is visible"
-msgstr ""
+msgstr "منوی بخش فعالیت قابل مشاهده میباشد"
 
 #: activities/menu/ConfigurationItem.qml:305
 msgctxt "ConfigurationItem|"
 msgid "Ask for confirmation to exit"
-msgstr ""
+msgstr "پرسش برای تایید خروج از نرم افزار"
 
 #: activities/menu/ConfigurationItem.qml:316
 msgctxt "ConfigurationItem|"
 msgid "Font selector"
-msgstr ""
+msgstr "انتخاب فونت"
 
 #: activities/menu/ConfigurationItem.qml:321
 msgctxt "ConfigurationItem|"
 msgid "Font size"
-msgstr ""
+msgstr "اندازه فونت"
 
 #: activities/menu/ConfigurationItem.qml:341
 #: activities/menu/ConfigurationItem.qml:375
 msgctxt "ConfigurationItem|"
 msgid "Default"
-msgstr ""
+msgstr "پیش فرض"
 
 #: activities/menu/ConfigurationItem.qml:350
 msgctxt "ConfigurationItem|"
 msgid "Font Capitalization"
-msgstr ""
+msgstr "بزرگ شدن فونت"
 
 #: activities/menu/ConfigurationItem.qml:355
 msgctxt "ConfigurationItem|"
 msgid "Font letter spacing"
-msgstr ""
+msgstr "فاصله حروف فونت"
 
 #: activities/menu/ConfigurationItem.qml:381
 msgctxt "ConfigurationItem|"
 msgid "Difficulty filter:"
-msgstr ""
+msgstr "فیلتر سختی:"
 
 #: activities/menu/ConfigurationItem.qml:675
 msgctxt "ConfigurationItem|"
 msgid "Mixed case (default)"
-msgstr ""
+msgstr "وضعیت مرکب (پیش فرض)"
 
 #: activities/menu/ConfigurationItem.qml:676
 msgctxt "ConfigurationItem|"
 msgid "All uppercase"
-msgstr ""
+msgstr "همه حروف بزرگ باشند"
 
 #: activities/menu/ConfigurationItem.qml:677
 msgctxt "ConfigurationItem|"
 msgid "All lowercase"
-msgstr ""
+msgstr "همه حروف کوچک باشند"
 
 #: activities/menu/Menu.qml:85
 msgctxt "Menu|"
@@ -16845,27 +16855,27 @@ msgstr "شمارش"
 #: activities/menu/Menu.qml:143
 msgctxt "Menu|"
 msgid "Arithmetic"
-msgstr "محاسباتی"
+msgstr "محاسبه"
 
 #: activities/menu/Menu.qml:144
 msgctxt "Menu|"
 msgid "Measures"
-msgstr "اندازه گرفتن"
+msgstr "اندازه گیری"
 
 #: activities/menu/Menu.qml:154
 msgctxt "Menu|"
 msgid "Letters"
-msgstr ""
+msgstr "حروف"
 
 #: activities/menu/Menu.qml:155
 msgctxt "Menu|"
 msgid "Words"
-msgstr ""
+msgstr "کلمات"
 
 #: activities/menu/Menu.qml:156
 msgctxt "Menu|"
 msgid "Vocabulary"
-msgstr ""
+msgstr "فرهنگ لغات"
 
 #: activities/menu/Menu.qml:372
 msgctxt "Menu|"
@@ -16873,22 +16883,24 @@ msgid ""
 "Put your favorite activities here by clicking on the sun at the top right of "
 "that activity."
 msgstr ""
+"با کلیک بر روی خورشید در گوشه سمت راست فعالیت، فعالیت های مورد علاقه خود را "
+"در اینجا قرار بده."
 
 #: activities/menu/Menu.qml:775
 msgctxt "Menu|"
 msgid "Search specific activities"
-msgstr ""
+msgstr "جست و جوی فعالیت های به خصوص"
 
 #: activities/menu/Menu.qml:802
 msgctxt "Menu|"
 msgid "Activity Settings"
-msgstr ""
+msgstr "تنظیمات فعالیت"
 
 #. Activity title
 #: activities/mining/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Mining for gold"
-msgstr ""
+msgstr "استخراج طلا"
 
 #. Help title
 #: activities/mining/ActivityInfo.qml:17
@@ -16966,6 +16978,7 @@ msgstr ""
 msgctxt "Mining|"
 msgid "Perfect you are zooming. Continue until you see the nugget."
 msgstr ""
+"به صورت عالی در حال زوم کردن هستی. تا جایی که قطعه را مشاهده کنی ادامه بده."
 
 #: activities/mining/Mining.qml:424
 msgctxt "Mining|"
@@ -16992,7 +17005,7 @@ msgstr ""
 #: activities/mining/Mining.qml:448
 msgctxt "Mining|"
 msgid "Continue to unzoom until you see the sparkle."
-msgstr ""
+msgstr "به دور کردن زوم ادامه بده تا جایی که درخشش را ببینی."
 
 #: activities/mining/Mining.qml:454
 msgctxt "Mining|"
@@ -17003,13 +17016,13 @@ msgstr ""
 #: activities/missing-letter/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Missing letter"
-msgstr ""
+msgstr "حروف گمشده"
 
 #. Help title
 #: activities/missing-letter/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
 msgid "Find the missing letter to complete the word."
-msgstr ""
+msgstr "حرف گمشده را برای تکمیل کلمه پیدا کن."
 
 #. Help goal
 #: activities/missing-letter/ActivityInfo.qml:21
@@ -17035,7 +17048,7 @@ msgstr ""
 #: activities/missing-letter/MissingLetter.qml:316
 msgctxt "MissingLetter|"
 msgid "We are sorry, we don't have yet a translation for your language."
-msgstr ""
+msgstr "ما متاسفیم، ما هنوز برای زب"
 
 #: activities/missing-letter/MissingLetter.qml:317
 #, qt-format
@@ -17044,8 +17057,8 @@ msgid ""
 "GCompris is developed by the KDE community, you can translate GCompris by "
 "joining a translation team on <a href=\"%2\">%2</a>"
 msgstr ""
-"جی کامپریس توسط جامعه کی دی ای توسعه داده شده است، تو میتوانی جی کامپریس را "
-"با ملحق شدن به تیم <a href=\"%2\">%2</a> ترجمه کنی."
+"جی‌کامپریس توسط جامعه کی‌دی‌ای توسعه داده شده است، تو میتوانی جی‌کامپریس را با "
+"ملحق شدن به تیم ترجمه کی‌دی‌ای <a href=\"%2\">%2</a> ترجمه کنی."
 
 #: activities/missing-letter/MissingLetter.qml:319
 msgctxt "MissingLetter|"
@@ -17058,7 +17071,7 @@ msgstr ""
 #: activities/money/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Money"
-msgstr ""
+msgstr "پول"
 
 #. Help title
 #: activities/money/ActivityInfo.qml:17
@@ -17154,7 +17167,7 @@ msgstr ""
 #: activities/money_back/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Give Tux his change"
-msgstr ""
+msgstr "تبادل پول و کالا با توکس"
 
 #. Help title
 #: activities/money_back/ActivityInfo.qml:17
@@ -17187,13 +17200,13 @@ msgstr ""
 #: activities/money_back_cents/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Give Tux his change, including cents"
-msgstr ""
+msgstr "تبادل پول و کالا با توکس شامل پول خرد"
 
 #. Activity title
 #: activities/money_cents/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Money with cents"
-msgstr ""
+msgstr "پول خرد"
 
 #. Help title
 #: activities/money_cents/ActivityInfo.qml:17
@@ -17213,7 +17226,7 @@ msgstr ""
 #: activities/morse_code/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
 msgid "Discover the International Morse code"
-msgstr ""
+msgstr "کشف سیستم جهانی کد مورس"
 
 #. Help title
 #: activities/morse_code/ActivityInfo.qml:20
@@ -17356,7 +17369,7 @@ msgstr ""
 #: activities/mosaic/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Rebuild the mosaic"
-msgstr ""
+msgstr "بازسازی موزاییک"
 
 #. Help title
 #: activities/mosaic/ActivityInfo.qml:17
@@ -17411,7 +17424,7 @@ msgstr ""
 #: activities/nine_men_morris/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Nine men's morris (against Tux)"
-msgstr ""
+msgstr "دوز نه تایی(در مقابل توکس)"
 
 #. Help goal
 #: activities/nine_men_morris/ActivityInfo.qml:20
@@ -17507,7 +17520,7 @@ msgstr ""
 #: activities/nine_men_morris_2players/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Nine men's morris (with a friend)"
-msgstr ""
+msgstr "دوز نه تایی(در مقابل یک دوست)"
 
 #. Help goal
 #: activities/nine_men_morris_2players/ActivityInfo.qml:20
@@ -17529,7 +17542,7 @@ msgstr ""
 #: activities/note_names/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
 msgid "Name that note"
-msgstr ""
+msgstr "بیان اسم نوت موسیقی"
 
 #. Help title
 #: activities/note_names/ActivityInfo.qml:20
@@ -17562,7 +17575,7 @@ msgstr ""
 #, qt-format
 msgctxt "NoteNames|"
 msgid "%1%"
-msgstr ""
+msgstr "%1%"
 
 #: activities/note_names/NoteNames.qml:453
 msgctxt "NoteNames|"
@@ -17574,12 +17587,12 @@ msgstr ""
 #: activities/note_names/NoteNames.qml:454
 msgctxt "NoteNames|"
 msgid "Quit"
-msgstr ""
+msgstr "خروج"
 
 #: activities/note_names/NoteNames.qml:455
 msgctxt "NoteNames|"
 msgid "Continue"
-msgstr ""
+msgstr "ادامه"
 
 #: activities/note_names/resource/dataset_01.qml:89
 msgctxt "dataset_01|"
@@ -17594,7 +17607,7 @@ msgstr ""
 #: activities/number_sequence/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Number sequence"
-msgstr ""
+msgstr "دنباله اعداد"
 
 #. Help title
 #: activities/number_sequence/ActivityInfo.qml:17
@@ -17612,7 +17625,7 @@ msgstr ""
 #: activities/numbers-odd-even/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Even and odd numbers"
-msgstr ""
+msgstr "اعداد زوج و فرد"
 
 #. Help title
 #: activities/numbers-odd-even/ActivityInfo.qml:17
@@ -17634,7 +17647,7 @@ msgstr ""
 #: activities/numbers-odd-even/NumbersOddEven.qml:36
 msgctxt "NumbersOddEven|"
 msgid "This activity teaches about even and odd numbers."
-msgstr ""
+msgstr "این فعالیت در مورد اعداد زوج و فرد آموزش میدهد."
 
 #: activities/numbers-odd-even/NumbersOddEven.qml:40
 #: activities/numbers-odd-even/NumbersOddEven.qml:50
@@ -17725,7 +17738,7 @@ msgstr ""
 #: activities/ordering_alphabets/ActivityInfo.qml:21
 msgctxt "ActivityInfo|"
 msgid "Ordering letters"
-msgstr ""
+msgstr "مرتب سازی حروف"
 
 #. Help title
 #: activities/ordering_alphabets/ActivityInfo.qml:23
@@ -17818,7 +17831,7 @@ msgstr ""
 #: activities/ordering_chronology/ActivityInfo.qml:21
 msgctxt "ActivityInfo|"
 msgid "Ordering chronology"
-msgstr ""
+msgstr "مرتب سازی گاه‌شماری"
 
 #. Help title
 #: activities/ordering_chronology/ActivityInfo.qml:23
@@ -17859,14 +17872,14 @@ msgstr ""
 #: activities/ordering_numbers/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Ordering numbers"
-msgstr ""
+msgstr "مرتب سازی اعداد"
 
 #. Help title
 #: activities/ordering_numbers/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid ""
 "Arrange the given numbers in ascending or descending order as requested."
-msgstr ""
+msgstr "اعداد داده شده را بر اساس ترتیب صعودی یا نزولی خواسته شده مرتب کن."
 
 #. intro: "Arrange the numbers in the correct order." Help goal
 #: activities/ordering_numbers/ActivityInfo.qml:25
@@ -17962,7 +17975,7 @@ msgstr ""
 #: activities/ordering_sentences/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Ordering sentences"
-msgstr ""
+msgstr "مرتب سازی جملات"
 
 #. Help title
 #: activities/ordering_sentences/ActivityInfo.qml:22
@@ -18030,7 +18043,7 @@ msgstr ""
 #: activities/oware/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Play oware (against Tux)"
-msgstr ""
+msgstr "بازی اوواره یا آواله(در مقابل توکس)"
 
 #. Help title
 #: activities/oware/ActivityInfo.qml:16
@@ -18098,7 +18111,7 @@ msgstr ""
 #: activities/oware_2players/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Play oware (with a friend)"
-msgstr ""
+msgstr "بازی اوواره یا آواله(در مقابل یک دوست)"
 
 #. Help title
 #: activities/oware_2players/ActivityInfo.qml:16
@@ -18110,7 +18123,7 @@ msgstr ""
 #: activities/paintings/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Assemble the puzzle"
-msgstr ""
+msgstr "سرهم کردن پازل"
 
 #. Help title
 #: activities/paintings/ActivityInfo.qml:22
@@ -18252,7 +18265,7 @@ msgstr ""
 #: activities/path_decoding/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Path decoding"
-msgstr ""
+msgstr "کدگشایی مسیر"
 
 #. Help title
 #: activities/path_decoding/ActivityInfo.qml:16
@@ -18301,7 +18314,7 @@ msgstr ""
 #: activities/path_decoding_relative/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Path decoding relative"
-msgstr ""
+msgstr "کدگشایی مسیر وابسته"
 
 #: activities/path_decoding_relative/ActivityInfo.qml:24
 #: activities/path_encoding_relative/ActivityInfo.qml:24
@@ -18321,7 +18334,7 @@ msgstr ""
 #: activities/path_encoding/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Path encoding"
-msgstr ""
+msgstr "رمزگشایی مسیر"
 
 #. Help title
 #: activities/path_encoding/ActivityInfo.qml:16
@@ -18360,13 +18373,13 @@ msgstr ""
 #: activities/path_encoding_relative/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Path encoding relative"
-msgstr ""
+msgstr "رمزگشایی مسیر وابسته"
 
 #. Activity title
 #: activities/penalty/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Penalty kick"
-msgstr ""
+msgstr "ضربه پنالتی"
 
 #. Help title
 #: activities/penalty/ActivityInfo.qml:17
@@ -18400,7 +18413,7 @@ msgstr ""
 #: activities/photo_hunter/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Photo hunter"
-msgstr ""
+msgstr "شکار تفاوت تصویر"
 
 #. Help title
 #: activities/photo_hunter/ActivityInfo.qml:17
@@ -18436,7 +18449,7 @@ msgstr ""
 #: activities/piano_composition/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Piano composition"
-msgstr ""
+msgstr "قطعه پیانو"
 
 #. Help title
 #: activities/piano_composition/ActivityInfo.qml:18
@@ -18520,34 +18533,34 @@ msgstr ""
 #: activities/play_piano/ActivityInfo.qml:32
 msgctxt "ActivityInfo|"
 msgid "Digits 1 to 7: white keys"
-msgstr ""
+msgstr "ارقام ۱ تا ۷: کلید های سفید"
 
 #: activities/piano_composition/ActivityInfo.qml:35
 #: activities/play_piano/ActivityInfo.qml:33
 msgctxt "ActivityInfo|"
 msgid "F2 to F7: black keys"
-msgstr ""
+msgstr "از دکمه F2 تا F7: کلید های سیاه"
 
 #: activities/piano_composition/ActivityInfo.qml:36
 #: activities/play_piano/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
 msgid "Space: play"
-msgstr ""
+msgstr "دکمه space: بازی کردن"
 
 #: activities/piano_composition/ActivityInfo.qml:37
 msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: switch keyboard octave"
-msgstr ""
+msgstr "فلش سمت چپ و راست: تعویض نوت موسیقی"
 
 #: activities/piano_composition/ActivityInfo.qml:38
 msgctxt "ActivityInfo|"
 msgid "Backspace: undo"
-msgstr ""
+msgstr "دکمه Backspace: بازگشت"
 
 #: activities/piano_composition/ActivityInfo.qml:39
 msgctxt "ActivityInfo|"
 msgid "Delete: erase selected note or everything"
-msgstr ""
+msgstr "حذف: متن انتخاب شده یا همه چیز را پاک کن"
 
 #: activities/piano_composition/ActivityInfo.qml:40
 #: activities/play_piano/ActivityInfo.qml:35
@@ -18561,7 +18574,7 @@ msgstr ""
 #, qt-format
 msgctxt "BpmMeter|"
 msgid "%1 BPM"
-msgstr ""
+msgstr " بی‌پی‌ام %1"
 
 #. Treble clef and Bass clef are the notations to indicate the pitch of the sound written on it.
 #: activities/piano_composition/KeyOption.qml:47
@@ -18588,13 +18601,13 @@ msgstr ""
 #, qt-format
 msgctxt "LyricsArea|"
 msgid "Title: %1"
-msgstr ""
+msgstr "عنوان: %1"
 
 #: activities/piano_composition/LyricsArea.qml:65
 #, qt-format
 msgctxt "LyricsArea|"
 msgid "Origin: %1"
-msgstr ""
+msgstr "اصالت: %1"
 
 #: activities/piano_composition/melodies.js:18
 msgctxt "melodies|"
@@ -18622,33 +18635,33 @@ msgstr ""
 #: activities/piano_composition/melodies.js:228
 msgctxt "melodies|"
 msgid "Mexico"
-msgstr ""
+msgstr "مکزیک"
 
 #: activities/piano_composition/melodies.js:53
 msgctxt "melodies|"
 msgid "Italy"
-msgstr ""
+msgstr "ایتالیا"
 
 #: activities/piano_composition/melodies.js:60
 msgctxt "melodies|"
 msgid "Spain"
-msgstr ""
+msgstr "اسپانیا"
 
 #: activities/piano_composition/melodies.js:67
 msgctxt "melodies|"
 msgid "German Kid's Song"
-msgstr ""
+msgstr "موسیقی کودکان آلمانی"
 
 #: activities/piano_composition/melodies.js:74
 msgctxt "melodies|"
 msgid "Children's Song from Brazil"
-msgstr ""
+msgstr "موسیقی کودکان از برزیل"
 
 #: activities/piano_composition/melodies.js:81
 #: activities/piano_composition/melodies.js:95
 msgctxt "melodies|"
 msgid "Germany"
-msgstr ""
+msgstr "آلمان"
 
 #: activities/piano_composition/melodies.js:88
 #: activities/piano_composition/melodies.js:102
@@ -18656,13 +18669,13 @@ msgstr ""
 #: activities/piano_composition/melodies.js:130
 msgctxt "melodies|"
 msgid "France"
-msgstr ""
+msgstr "فرانسه"
 
 #: activities/piano_composition/melodies.js:109
 #: activities/piano_composition/melodies.js:116
 msgctxt "melodies|"
 msgid "Brazil"
-msgstr ""
+msgstr "برزیل"
 
 #: activities/piano_composition/melodies.js:137
 #: activities/piano_composition/melodies.js:144
@@ -18674,35 +18687,35 @@ msgstr ""
 #: activities/piano_composition/melodies.js:158
 msgctxt "melodies|"
 msgid "Hungary, Children's Song"
-msgstr ""
+msgstr "مجارستان، موسیقی کودکان"
 
 #: activities/piano_composition/melodies.js:165
 msgctxt "melodies|"
 msgid "Serbia"
-msgstr ""
+msgstr "صربستان"
 
 #: activities/piano_composition/melodies.js:172
 #: activities/piano_composition/melodies.js:207
 #: activities/piano_composition/melodies.js:249
 msgctxt "melodies|"
 msgid "Britain"
-msgstr ""
+msgstr "بریتانیا"
 
 #: activities/piano_composition/melodies.js:179
 msgctxt "melodies|"
 msgid "Poland"
-msgstr ""
+msgstr "لهستان"
 
 #: activities/piano_composition/melodies.js:186
 #: activities/piano_composition/melodies.js:193
 msgctxt "melodies|"
 msgid "Greece"
-msgstr ""
+msgstr "یونان"
 
 #: activities/piano_composition/melodies.js:200
 msgctxt "melodies|"
 msgid "Ukraine"
-msgstr ""
+msgstr "اوکراین"
 
 #: activities/piano_composition/melodies.js:235
 msgctxt "melodies|"
@@ -18712,12 +18725,12 @@ msgstr ""
 #: activities/piano_composition/melodies.js:242
 msgctxt "melodies|"
 msgid "Finland"
-msgstr ""
+msgstr "فنلاند"
 
 #: activities/piano_composition/MelodyList.qml:61
 msgctxt "MelodyList|"
 msgid "Melodies"
-msgstr ""
+msgstr "ملودی ها"
 
 #. Whole note, Half note, Quarter note and Eighth note are the different length notes in the musical notation.
 #: activities/piano_composition/OptionsRow.qml:23
@@ -18784,22 +18797,22 @@ msgstr ""
 #: activities/piano_composition/OptionsRow.qml:28
 msgctxt "OptionsRow|"
 msgid "Piano"
-msgstr ""
+msgstr "پیانو"
 
 #: activities/piano_composition/OptionsRow.qml:28
 msgctxt "OptionsRow|"
 msgid "Lyrics"
-msgstr ""
+msgstr "متن ترانه"
 
 #: activities/piano_composition/OptionsRow.qml:70
 msgctxt "OptionsRow|"
 msgid "Play melody"
-msgstr ""
+msgstr "پخش ملودی"
 
 #: activities/piano_composition/OptionsRow.qml:89
 msgctxt "OptionsRow|"
 msgid "Undo"
-msgstr ""
+msgstr "بازگشت"
 
 #. Sharp notes and Flat notes represents the accidental style of the notes in the music.
 #: activities/piano_composition/OptionsRow.qml:157
@@ -18872,12 +18885,12 @@ msgstr ""
 #: activities/piano_composition/Piano_composition.qml:361
 msgctxt "Piano_composition|"
 msgid "Yes"
-msgstr ""
+msgstr "بله"
 
 #: activities/piano_composition/Piano_composition.qml:367
 msgctxt "Piano_composition|"
 msgid "No"
-msgstr ""
+msgstr "خیر"
 
 #: activities/piano_composition/Piano_composition.qml:418
 msgctxt "Piano_composition|"
@@ -18904,12 +18917,12 @@ msgstr ""
 #: activities/piano_composition/Piano_composition.qml:549
 msgctxt "Piano_composition|"
 msgid "Quit"
-msgstr ""
+msgstr "خروج"
 
 #: activities/piano_composition/Piano_composition.qml:550
 msgctxt "Piano_composition|"
 msgid "Continue"
-msgstr ""
+msgstr "ادامه"
 
 #. Translators, C, D, E, F, G, A and B are the note notations in English musical notation system. The numbers in the arguments represents the octave number of the note. For instance, C4 is a C note in the 4th octave.
 #: activities/piano_composition/PianoOctaveKeyboard.qml:42
@@ -19073,7 +19086,7 @@ msgstr ""
 #: activities/planegame/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Numbers in order"
-msgstr ""
+msgstr "ترتیب اعداد"
 
 #. Help title
 #: activities/planegame/ActivityInfo.qml:17
@@ -19105,7 +19118,7 @@ msgstr ""
 #: activities/play_piano/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Play piano"
-msgstr ""
+msgstr "نواختن پیانو"
 
 #. Help goal
 #: activities/play_piano/ActivityInfo.qml:24
@@ -19156,18 +19169,18 @@ msgstr ""
 #: activities/play_piano/PlayPiano.qml:280
 msgctxt "PlayPiano|"
 msgid "Quit"
-msgstr ""
+msgstr "خروج"
 
 #: activities/play_piano/PlayPiano.qml:281
 msgctxt "PlayPiano|"
 msgid "Continue"
-msgstr ""
+msgstr "ادامه"
 
 #. Activity title
 #: activities/play_rhythm/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Play rhythm"
-msgstr ""
+msgstr "نواختن ریتم"
 
 #. Help goal
 #: activities/play_rhythm/ActivityInfo.qml:24
@@ -19254,18 +19267,18 @@ msgstr ""
 #: activities/play_rhythm/PlayRhythm.qml:360
 msgctxt "PlayRhythm|"
 msgid "Quit"
-msgstr ""
+msgstr "خروج"
 
 #: activities/play_rhythm/PlayRhythm.qml:361
 msgctxt "PlayRhythm|"
 msgid "Continue"
-msgstr ""
+msgstr "ادامه"
 
 #. Activity title
 #: activities/positions/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Positions"
-msgstr ""
+msgstr "موقعیت ها"
 
 #. Help title
 #: activities/positions/ActivityInfo.qml:17
@@ -19405,7 +19418,7 @@ msgstr ""
 #: activities/programmingMaze/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Programming maze"
-msgstr ""
+msgstr "برنامه نویسی مازه"
 
 #. Help title
 #: activities/programmingMaze/ActivityInfo.qml:18
@@ -19623,19 +19636,19 @@ msgstr ""
 #: activities/railroad/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Railroad activity"
-msgstr ""
+msgstr "فعالیت راه آهن"
 
 #. Help title
 #: activities/railroad/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Rebuild the train model at the top of the screen."
-msgstr ""
+msgstr "مدل قطار را بالای صفحه بازسازی کن."
 
 #. Help goal
 #: activities/railroad/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid "Memory training."
-msgstr ""
+msgstr "تمرین حافظه."
 
 #. Help manual
 #: activities/railroad/ActivityInfo.qml:26
@@ -19649,7 +19662,7 @@ msgstr ""
 #: activities/railroad/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "<b>Keyboard Controls:</b>"
-msgstr ""
+msgstr "<b>دکمه های کیبورد:</b>"
 
 #: activities/railroad/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
@@ -19690,7 +19703,7 @@ msgstr ""
 #: activities/readingh/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Horizontal reading practice"
-msgstr ""
+msgstr "تمرین خوانش افقی"
 
 #. Help title
 #: activities/readingh/ActivityInfo.qml:17
@@ -19720,11 +19733,13 @@ msgid ""
 "<font color=\"#373737\">Check if the word<br/></font><b><font color=\"#315AAA"
 "\">%1</font></b><br/><font color=\"#373737\">is displayed</font>"
 msgstr ""
+"<font color=\"#373737\">بررسی کن که کلمه<br/></font><b><font color=\"#315AAA"
+"\">%1</font></b><br/><font color=\"#373737\">نمایش داده شده باشد</font>"
 
 #: activities/readingh/Readingh.qml:197
 msgctxt "Readingh|"
 msgid "Yes, I saw it!"
-msgstr ""
+msgstr "بله، دیدمش!"
 
 #: activities/readingh/Readingh.qml:211
 msgctxt "Readingh|"
@@ -19735,7 +19750,7 @@ msgstr ""
 #: activities/readingv/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Vertical reading practice"
-msgstr ""
+msgstr "تمرین خوانش عمودی"
 
 #. Help title
 #: activities/readingv/ActivityInfo.qml:17
@@ -19755,7 +19770,7 @@ msgstr ""
 #: activities/redraw/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Redraw the given image"
-msgstr ""
+msgstr "انتقال تصویر"
 
 #. Help title
 #: activities/redraw/ActivityInfo.qml:17
@@ -19810,7 +19825,7 @@ msgstr ""
 #: activities/redraw_symmetrical/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Mirror the given image"
-msgstr ""
+msgstr "انعکاس تصویر"
 
 #. Help title
 #: activities/redraw_symmetrical/ActivityInfo.qml:17
@@ -19837,7 +19852,7 @@ msgstr ""
 #: activities/renewable_energy/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Renewable energy"
-msgstr ""
+msgstr "انرژی تجدیدپذیر"
 
 #. Help title
 #: activities/renewable_energy/ActivityInfo.qml:17
@@ -19851,7 +19866,7 @@ msgstr ""
 #: activities/renewable_energy/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Learn about an electrical system based on renewable energy."
-msgstr ""
+msgstr "در مورد سیستم الکتریکی مبتنی بر انرژی تجدید پذیر یاد بگیر."
 
 #. Help manual
 #: activities/renewable_energy/ActivityInfo.qml:22
@@ -19888,7 +19903,7 @@ msgstr ""
 #: activities/renewable_energy/RenewableEnergy.qml:287
 msgctxt "RenewableEnergy|"
 msgid "Learn about an electrical system based on renewable energy. Enjoy."
-msgstr ""
+msgstr "در مورد سیستم الکتریکی مبتنی بر انرژی تجدید پذیر یاد بگیر. لذت ببر."
 
 #: activities/renewable_energy/RenewableEnergy.qml:311
 msgctxt "RenewableEnergy|"
@@ -19907,13 +19922,13 @@ msgstr ""
 #: activities/smallnumbers2/ActivityConfig.qml:21
 msgctxt "ActivityConfig|"
 msgid "Arabic numbers"
-msgstr ""
+msgstr "اعداد عربی"
 
 #: activities/reversecount/ActivityConfig.qml:23
 #: activities/smallnumbers2/ActivityConfig.qml:22
 msgctxt "ActivityConfig|"
 msgid "Roman numbers"
-msgstr ""
+msgstr "اعداد رومی"
 
 #: activities/reversecount/ActivityConfig.qml:24
 #: activities/smallnumbers2/ActivityConfig.qml:23
@@ -19932,7 +19947,7 @@ msgstr ""
 #: activities/reversecount/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Count intervals"
-msgstr ""
+msgstr "شمارش فواصل"
 
 #. Help title
 #. ----------
@@ -19979,7 +19994,7 @@ msgstr ""
 #: activities/roman_numerals/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Roman numerals"
-msgstr ""
+msgstr "عددنویسی رومی"
 
 #. Help goal
 #: activities/roman_numerals/ActivityInfo.qml:20
@@ -20009,7 +20024,7 @@ msgstr ""
 #: activities/roman_numerals/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Digits: type arabic numerals"
-msgstr ""
+msgstr "ارقام: عددنویسی عربی را تایپ کن"
 
 #: activities/roman_numerals/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
@@ -20037,7 +20052,7 @@ msgstr ""
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Convert the roman number %1 to arabic."
-msgstr ""
+msgstr "عدد رومی %1 را به عدد عربی تبدیل کن."
 
 #: activities/roman_numerals/RomanNumerals.qml:85
 #: activities/roman_numerals/RomanNumerals.qml:97
@@ -20051,7 +20066,7 @@ msgstr ""
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Convert the arabic number %1 to roman."
-msgstr ""
+msgstr "عدد عربی %1 را به عدد رومی تبدیل کن."
 
 #: activities/roman_numerals/RomanNumerals.qml:90
 #: activities/roman_numerals/RomanNumerals.qml:96
@@ -20110,13 +20125,13 @@ msgstr ""
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Arabic value: %1"
-msgstr ""
+msgstr "ارزش عددی به عربی: %1"
 
 #. Activity title
 #: activities/scalesboard/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Balance the scales properly"
-msgstr ""
+msgstr "متعادل سازی ترازو"
 
 #. Help title
 #: activities/scalesboard/ActivityInfo.qml:17
@@ -20327,7 +20342,7 @@ msgstr ""
 #: activities/scalesboard_weight/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Balance using the International System of Units"
-msgstr ""
+msgstr "متعادل سازی ترازو با استفاده از دستگاه بین‌المللی یکاها"
 
 #. Help title
 #: activities/scalesboard_weight/ActivityInfo.qml:17
@@ -20486,7 +20501,7 @@ msgstr ""
 #: activities/scalesboard_weight_avoirdupois/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Balance using the imperial system of units"
-msgstr ""
+msgstr "متعادل سازی ترازو با استفاده از واحدهای اندازه‌گیری بریتانیایی"
 
 #. Help manual
 #: activities/scalesboard_weight_avoirdupois/ActivityInfo.qml:24
@@ -20615,7 +20630,7 @@ msgstr ""
 #: activities/share/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Share pieces of candy"
-msgstr ""
+msgstr "تقسیم آبنبات با دوستان"
 
 #. Help title
 #: activities/share/ActivityInfo.qml:17
@@ -20996,7 +21011,6 @@ msgctxt ""
 msgid "Place %n boy(s) "
 msgid_plural "Place %n boy(s) "
 msgstr[0] ""
-msgstr[1] ""
 
 #: activities/share/share.js:101
 #, qt-format
@@ -21006,7 +21020,6 @@ msgctxt ""
 msgid "and %n girl(s) in the center. "
 msgid_plural "and %n girl(s) in the center. "
 msgstr[0] ""
-msgstr[1] ""
 
 #: activities/share/share.js:105
 #, qt-format
@@ -21016,7 +21029,6 @@ msgctxt ""
 msgid "Then split %n pieces of candy equally between them."
 msgid_plural "Then split %n pieces of candy equally between them."
 msgstr[0] ""
-msgstr[1] ""
 
 #: activities/share/Share.qml:340
 #, qt-format
@@ -21028,7 +21040,7 @@ msgstr ""
 #: activities/simplepaint/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "A simple drawing activity"
-msgstr ""
+msgstr "فعالیت رسم ساده"
 
 #. Help title
 #: activities/simplepaint/ActivityInfo.qml:17
@@ -21058,7 +21070,7 @@ msgstr ""
 #: activities/smallnumbers/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Numbers with dice"
-msgstr ""
+msgstr "اعداد با تاس"
 
 #. Help title
 #: activities/smallnumbers/ActivityInfo.qml:17
@@ -21083,7 +21095,7 @@ msgstr ""
 #: activities/smallnumbers/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid "Type the number of dots you see on each falling dice."
-msgstr ""
+msgstr "تعداد نقاط را در هر یک از تاس های در حال سقوط تایپ کنید."
 
 #: activities/smallnumbers/resource/1/Data.qml:14
 #: activities/smallnumbers2/resource/1/Data.qml:14
@@ -21182,7 +21194,7 @@ msgstr ""
 #: activities/smallnumbers2/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Numbers with dominoes"
-msgstr ""
+msgstr "اعداد با دومینو"
 
 #. Help title
 #: activities/smallnumbers2/ActivityInfo.qml:17
@@ -21200,7 +21212,7 @@ msgstr ""
 #: activities/smallnumbers2/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid "Type the number you see on each falling domino."
-msgstr ""
+msgstr "عددی که بر روی هر دومینوی در حال سقوط میبینی را تایپ کن."
 
 #: activities/smallnumbers2/resource/1/Data.qml:18
 msgctxt "Data|"
@@ -21250,7 +21262,7 @@ msgstr ""
 #: activities/solar_system/ActivityConfig.qml:21
 msgctxt "ActivityConfig|"
 msgid "Learning Mode"
-msgstr ""
+msgstr "حالت یادگیری"
 
 #: activities/solar_system/ActivityConfig.qml:22
 msgctxt "ActivityConfig|"
@@ -21467,7 +21479,7 @@ msgstr ""
 #: activities/solar_system/Dataset.js:391
 msgctxt "Dataset|"
 msgid "Seventh"
-msgstr ""
+msgstr "هفتم"
 
 #: activities/solar_system/Dataset.js:58 activities/solar_system/Dataset.js:103
 #: activities/solar_system/Dataset.js:154
@@ -21476,7 +21488,7 @@ msgstr ""
 #: activities/solar_system/Dataset.js:301
 msgctxt "Dataset|"
 msgid "Sixth"
-msgstr ""
+msgstr "ششم"
 
 #: activities/solar_system/Dataset.js:58 activities/solar_system/Dataset.js:154
 #: activities/solar_system/Dataset.js:205
@@ -21484,7 +21496,7 @@ msgstr ""
 #: activities/solar_system/Dataset.js:301
 msgctxt "Dataset|"
 msgid "First"
-msgstr ""
+msgstr "اول"
 
 #: activities/solar_system/Dataset.js:58 activities/solar_system/Dataset.js:103
 #: activities/solar_system/Dataset.js:205
@@ -21494,7 +21506,7 @@ msgstr ""
 #: activities/solar_system/Dataset.js:391
 msgctxt "Dataset|"
 msgid "Fourth"
-msgstr ""
+msgstr "چهارم"
 
 #: activities/solar_system/Dataset.js:63
 msgctxt "Dataset|"
@@ -21504,7 +21516,7 @@ msgstr ""
 #: activities/solar_system/Dataset.js:64 activities/solar_system/Dataset.js:241
 msgctxt "Dataset|"
 msgid "Smallest"
-msgstr ""
+msgstr "کوچکترین"
 
 #: activities/solar_system/Dataset.js:64 activities/solar_system/Dataset.js:241
 msgctxt "Dataset|"
@@ -21534,22 +21546,22 @@ msgstr ""
 #: activities/solar_system/Dataset.js:76 activities/solar_system/Dataset.js:268
 msgctxt "Dataset|"
 msgid "50 °C"
-msgstr ""
+msgstr "۵۰ °C"
 
 #: activities/solar_system/Dataset.js:76 activities/solar_system/Dataset.js:211
 msgctxt "Dataset|"
 msgid "35 °C"
-msgstr ""
+msgstr "۳۵ °C"
 
 #: activities/solar_system/Dataset.js:76
 msgctxt "Dataset|"
 msgid "427 °C"
-msgstr ""
+msgstr "۴۲۷ °C"
 
 #: activities/solar_system/Dataset.js:76
 msgctxt "Dataset|"
 msgid "273 °C"
-msgstr ""
+msgstr "۲۷۳ °C"
 
 #: activities/solar_system/Dataset.js:81
 msgctxt "Dataset|"
@@ -21562,23 +21574,23 @@ msgstr ""
 #: activities/solar_system/Dataset.js:235
 msgctxt "Dataset|"
 msgid "365 Earth days"
-msgstr ""
+msgstr "۳۶۵ روز زمینی"
 
 #: activities/solar_system/Dataset.js:82
 msgctxt "Dataset|"
 msgid "433 Earth days"
-msgstr ""
+msgstr "۴۳۳ روز زمینی"
 
 #: activities/solar_system/Dataset.js:82 activities/solar_system/Dataset.js:127
 msgctxt "Dataset|"
 msgid "88 Earth days"
-msgstr ""
+msgstr "۸۸ روز زمینی"
 
 #: activities/solar_system/Dataset.js:82 activities/solar_system/Dataset.js:88
 #: activities/solar_system/Dataset.js:127
 msgctxt "Dataset|"
 msgid "107 Earth days"
-msgstr ""
+msgstr "۱۰۷ روز زمینی"
 
 #: activities/solar_system/Dataset.js:87
 msgctxt "Dataset|"
@@ -21588,12 +21600,12 @@ msgstr ""
 #: activities/solar_system/Dataset.js:88
 msgctxt "Dataset|"
 msgid "50 Earth days"
-msgstr ""
+msgstr "۵۰ روز زمینی"
 
 #: activities/solar_system/Dataset.js:88
 msgctxt "Dataset|"
 msgid "59 Earth days"
-msgstr ""
+msgstr "۵۹ روز زمینی"
 
 #: activities/solar_system/Dataset.js:96
 msgctxt "Dataset|"
@@ -21613,7 +21625,7 @@ msgstr ""
 #: activities/solar_system/Dataset.js:103
 msgctxt "Dataset|"
 msgid "Second"
-msgstr ""
+msgstr "دوم"
 
 #: activities/solar_system/Dataset.js:108
 msgctxt "Dataset|"
@@ -21668,17 +21680,17 @@ msgstr ""
 #: activities/solar_system/Dataset.js:121
 msgctxt "Dataset|"
 msgid "225 Earth days"
-msgstr ""
+msgstr "۲۲۵ روز زمینی"
 
 #: activities/solar_system/Dataset.js:121
 msgctxt "Dataset|"
 msgid "116 Earth days"
-msgstr ""
+msgstr "۱۱۶ روز زمینی"
 
 #: activities/solar_system/Dataset.js:121
 msgctxt "Dataset|"
 msgid "100 Earth days"
-msgstr ""
+msgstr "۱۰۰ روز زمینی"
 
 #: activities/solar_system/Dataset.js:126
 msgctxt "Dataset|"
@@ -21688,7 +21700,7 @@ msgstr ""
 #: activities/solar_system/Dataset.js:127
 msgctxt "Dataset|"
 msgid "243 Earth days"
-msgstr ""
+msgstr "۲۴۳ روز زمینی"
 
 #: activities/solar_system/Dataset.js:132
 msgctxt "Dataset|"
@@ -21704,24 +21716,24 @@ msgstr ""
 #: activities/solar_system/Dataset.js:415
 msgctxt "Dataset|"
 msgid "100 °C"
-msgstr ""
+msgstr "۱۰۰ °C"
 
 #: activities/solar_system/Dataset.js:133
 #: activities/solar_system/Dataset.js:211
 msgctxt "Dataset|"
 msgid "20 °C"
-msgstr ""
+msgstr "۲۰ °C"
 
 #: activities/solar_system/Dataset.js:133
 msgctxt "Dataset|"
 msgid "467 °C"
-msgstr ""
+msgstr "۴۶۷ °C"
 
 #: activities/solar_system/Dataset.js:133
 #: activities/solar_system/Dataset.js:184
 msgctxt "Dataset|"
 msgid "45 °C"
-msgstr ""
+msgstr "۴۶۷ °C"
 
 #: activities/solar_system/Dataset.js:138
 msgctxt "Dataset|"
@@ -21747,7 +21759,7 @@ msgstr ""
 #: activities/solar_system/Dataset.js:154
 msgctxt "Dataset|"
 msgid "Third"
-msgstr ""
+msgstr "سوم"
 
 #: activities/solar_system/Dataset.js:154
 #: activities/solar_system/Dataset.js:205
@@ -21757,7 +21769,7 @@ msgstr ""
 #: activities/solar_system/Dataset.js:391
 msgctxt "Dataset|"
 msgid "Fifth"
-msgstr ""
+msgstr "چهارم"
 
 #: activities/solar_system/Dataset.js:159
 msgctxt "Dataset|"
@@ -21838,13 +21850,13 @@ msgstr ""
 #: activities/solar_system/Dataset.js:184
 msgctxt "Dataset|"
 msgid "58 °C"
-msgstr ""
+msgstr "۵۸ °C"
 
 #: activities/solar_system/Dataset.js:184
 #: activities/solar_system/Dataset.js:415
 msgctxt "Dataset|"
 msgid "30 °C"
-msgstr ""
+msgstr "۳۰ °C"
 
 #: activities/solar_system/Dataset.js:189
 msgctxt "Dataset|"
@@ -21869,7 +21881,7 @@ msgstr ""
 #: activities/solar_system/Dataset.js:211
 msgctxt "Dataset|"
 msgid "60 °C"
-msgstr ""
+msgstr "۶۰ °C"
 
 #: activities/solar_system/Dataset.js:216
 msgctxt "Dataset|"
@@ -21919,12 +21931,12 @@ msgstr ""
 #: activities/solar_system/Dataset.js:235
 msgctxt "Dataset|"
 msgid "687 Earth days"
-msgstr ""
+msgstr "۶۸۷ روز زمینی"
 
 #: activities/solar_system/Dataset.js:235
 msgctxt "Dataset|"
 msgid "30 Earth days"
-msgstr ""
+msgstr "۳۰ روز زمینی"
 
 #: activities/solar_system/Dataset.js:235
 msgctxt "Dataset|"
@@ -22204,48 +22216,48 @@ msgstr ""
 #: activities/solar_system/Dataset.js:390
 msgctxt "Dataset|"
 msgid "At which position is Neptune in the Solar System?"
-msgstr ""
+msgstr "در کدام موقعیت نپتون جزو منظومه شمسی میباشد؟"
 
 #: activities/solar_system/Dataset.js:396
 msgctxt "Dataset|"
 msgid ""
 "How long does it take for Neptune to make one revolution around the Sun?"
-msgstr ""
+msgstr "یک بار جرخش نپتون دور خورشید چقدر طول میکشد؟"
 
 #: activities/solar_system/Dataset.js:397
 msgctxt "Dataset|"
 msgid "165 Earth years"
-msgstr ""
+msgstr "۱۶۵ سال زمینی"
 
 #: activities/solar_system/Dataset.js:397
 msgctxt "Dataset|"
 msgid "3 Earth years"
-msgstr ""
+msgstr "۳ سال زمینی"
 
 #: activities/solar_system/Dataset.js:397
 msgctxt "Dataset|"
 msgid "100 Earth years"
-msgstr ""
+msgstr "۱۰۰ سال زمینی"
 
 #: activities/solar_system/Dataset.js:402
 msgctxt "Dataset|"
 msgid "How many moons has Neptune?"
-msgstr ""
+msgstr "سیاره نپتون چند ماه دارد؟"
 
 #: activities/solar_system/Dataset.js:408
 msgctxt "Dataset|"
 msgid "How long is one rotation on Neptune?"
-msgstr ""
+msgstr "یک بار جرخش نپتون چقدر طول میکشد؟"
 
 #: activities/solar_system/Dataset.js:409
 msgctxt "Dataset|"
 msgid "16 hours"
-msgstr ""
+msgstr "۱۶ ساعت"
 
 #: activities/solar_system/Dataset.js:414
 msgctxt "Dataset|"
 msgid "The average temperature on Neptune is:"
-msgstr ""
+msgstr "میانگین دمای سیاره نپتون:"
 
 #: activities/solar_system/Dataset.js:415
 msgctxt "Dataset|"
@@ -22255,7 +22267,7 @@ msgstr ""
 #: activities/solar_system/Dataset.js:420
 msgctxt "Dataset|"
 msgid "How large is Neptune compared to other planets in the Solar System?"
-msgstr ""
+msgstr "اندازه سیاره نپتون در مقایسه با سایر سیاره ها در منظومه شمسی چقدر است؟"
 
 #: activities/solar_system/QuizScreen.qml:199
 #, qt-format
@@ -22274,6 +22286,7 @@ msgstr ""
 msgctxt "QuizScreen|"
 msgid "Your final score is: <font color=\"#3bb0de\">%1%</font>.<br><br>%2"
 msgstr ""
+"امتیاز نهایی تو برابر است با: <font color=\"#3bb0de\">%1%</font>.<br><br>%2"
 
 #: activities/solar_system/QuizScreen.qml:274
 msgctxt "QuizScreen|"
@@ -22300,6 +22313,11 @@ msgid ""
 "System.<br><b>2. Assessment mode</b> - In this mode you can test your "
 "knowledge about the Solar System."
 msgstr ""
+"حالت: <font color=\"#3bb0de\">%1</font><br><br>دو حالت در این فعالیت وجود "
+"دارد که میتوانی از طریق پنجره ترجیحات تغییر وضعیت بدی:<br><b>۱. حالت "
+"یادگیری</b> - در این حالت تو میتوانی درباره منظومه شمسی یاد گرفته و بازی کنی."
+"<br><b>۲. حالت آزمون</b> - در این حالت تو میتوانی دانش خود را نسبت به منظومه "
+"شمسی امتحان کنی."
 
 #: activities/solar_system/SolarSystem.qml:155
 msgctxt "SolarSystem|"
@@ -22309,7 +22327,7 @@ msgstr ""
 #: activities/solar_system/SolarSystem.qml:155
 msgctxt "SolarSystem|"
 msgid "Learning"
-msgstr ""
+msgstr "یادگیری"
 
 #: activities/solar_system/SolarSystem.qml:159
 msgctxt "SolarSystem|"
@@ -22358,6 +22376,8 @@ msgid ""
 "1. The <b>farther</b> a planet from the Sun, the <b>lower</b> is its "
 "temperature.<br><font color=\"#3bb0de\">%1</font>"
 msgstr ""
+"۱. هر جقدر یک سیاره از خورشید <b>دورتر</b> باشد، دمای آن <b>کمتر</b> خواهد "
+"بود.<br><font color=\"#3bb0de\">%1</font>"
 
 #: activities/solar_system/SolarSystem.qml:350
 #, qt-format
@@ -22366,6 +22386,8 @@ msgid ""
 "2. The duration of a year on a planet <b>increases as we go away from the "
 "Sun</b>.<br><font color=\"#3bb0de\">%1</font>"
 msgstr ""
+"۲. مدت زمان یک سال در یک سیاره <b>افرایش میابد هر چقدر که از خورشید دور "
+"میشویم</b>.<br><font color=\"#3bb0de\">%1</font>"
 
 #. find an equivalent rhyme in your language where the first letter of each word corresponds to the first letter of the planet in proper sequence
 #: activities/solar_system/SolarSystem.qml:353
@@ -22379,36 +22401,36 @@ msgstr ""
 #: activities/solar_system/SolarSystem.qml:355
 msgctxt "SolarSystem|"
 msgid "Hint"
-msgstr ""
+msgstr "راهنما"
 
 #: activities/solar_system/SolarSystem.qml:363
 msgctxt "SolarSystem|"
 msgid "View the solar system"
-msgstr ""
+msgstr "مشاهده منظومه شمسی"
 
 #. Activity title
 #: activities/submarine/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Pilot a submarine"
-msgstr ""
+msgstr "هدایت زیردریایی"
 
 #. Help title
 #: activities/submarine/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Drive the submarine to the end point."
-msgstr ""
+msgstr "زیر دریایی را تا نقطه انتهایی هدایت کن."
 
 #. Help goal
 #: activities/submarine/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Learn how to control a submarine."
-msgstr ""
+msgstr "نحوه کنترل زیردریایی را یاد بگیر."
 
 #. Help prerequisite
 #: activities/submarine/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid "Move and click using the mouse, physics basics."
-msgstr ""
+msgstr "با استفاده از ماوس مقدمات فیزیکی را کلیک کرده و جابجا کن."
 
 #. Help manual
 #: activities/submarine/ActivityInfo.qml:24
@@ -22417,11 +22439,13 @@ msgid ""
 "Control the various parts of the submarine (the engine, ballast tanks and "
 "diving planes) to reach the end point."
 msgstr ""
+"بخش های مختلف زیردریایی(شامل موتور،تانک آب و هدایتگر) را برای رسیدن به نقطه "
+"انتهایی کنترل کن."
 
 #: activities/submarine/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "<b>Engine</b>"
-msgstr ""
+msgstr "<b>موتور</b>"
 
 #: activities/submarine/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
@@ -22501,7 +22525,7 @@ msgstr ""
 #: activities/submarine/submarine.js:21
 msgctxt "submarine|"
 msgid "Move the submarine to the other side of the screen."
-msgstr ""
+msgstr "زیردریایی را به سمت دیگر صفحه جابجا کن."
 
 #: activities/submarine/submarine.js:22
 msgctxt "submarine|"
@@ -22590,13 +22614,13 @@ msgstr ""
 #: activities/submarine/submarine.js:39
 msgctxt "submarine|"
 msgid "Check out the help menu for the keyboard controls."
-msgstr ""
+msgstr "برای دکمه های کیبورد منوی کمک را بررسی کن."
 
 #. Activity title
 #: activities/sudoku/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Sudoku, place unique symbols in a grid"
-msgstr ""
+msgstr "سودوکو، علائم منحصر به فرد را درون شبکه توری قرار بده"
 
 #. Help title
 #: activities/sudoku/ActivityInfo.qml:17
@@ -22657,7 +22681,7 @@ msgstr ""
 #: activities/superbrain/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Super brain"
-msgstr ""
+msgstr "ذهن هوشمند"
 
 #. Help title
 #. ----------
@@ -22701,7 +22725,7 @@ msgstr ""
 #: activities/tangram/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "The tangram puzzle game"
-msgstr ""
+msgstr "بازی پازل هفت تکه تانگرام"
 
 #. Help title
 #: activities/tangram/ActivityInfo.qml:17
@@ -22741,7 +22765,7 @@ msgstr ""
 #: activities/target/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Practice addition with a target game"
-msgstr ""
+msgstr "یادگیری جمع با بازی دارت"
 
 #. Help title
 #: activities/target/ActivityInfo.qml:17
@@ -22800,7 +22824,7 @@ msgstr ""
 #: activities/tens_complement_find/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Find ten's complement"
-msgstr ""
+msgstr "پیدا کردن متمم عدد ۱۰"
 
 #. Help title
 #: activities/tens_complement_find/ActivityInfo.qml:16
@@ -22812,7 +22836,7 @@ msgstr ""
 #: activities/tens_complement_find/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Learn to find ten's complement."
-msgstr ""
+msgstr "یادگیری پیدا کردن متمم عدد ۱۰."
 
 #. Help prerequisite
 #: activities/tens_complement_find/ActivityInfo.qml:21
@@ -22841,23 +22865,23 @@ msgstr ""
 #: activities/tens_complement_find/resource/1/Data.qml:25
 msgctxt "Data|"
 msgid "First number from 1 to 4."
-msgstr ""
+msgstr "عدد نخست از ۱ تا ۴."
 
 #: activities/tens_complement_find/resource/2/Data.qml:9
 msgctxt "Data|"
 msgid "First number from 5 to 9."
-msgstr ""
+msgstr "عدد نخست از ۵ تا ۹."
 
 #: activities/tens_complement_find/resource/4/Data.qml:9
 msgctxt "Data|"
 msgid "Find both numbers."
-msgstr ""
+msgstr "پیدا کردن هر رو عدد."
 
 #. Activity title
 #: activities/tens_complement_swap/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Swap ten's complement"
-msgstr ""
+msgstr "جابجا کردن متمم عدد ۱۰"
 
 #. Help title
 #: activities/tens_complement_swap/ActivityInfo.qml:16
@@ -22871,7 +22895,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Learn to use ten's complement to optimize the order of numbers in an "
 "operation."
-msgstr ""
+msgstr "یادگیری استفاده از متمم عدد ۱۰ برای بهینه سازی ترتیب اعداد در عملیات."
 
 #. Help prerequisite
 #: activities/tens_complement_swap/ActivityInfo.qml:21
@@ -22909,7 +22933,7 @@ msgstr ""
 #: activities/tens_complement_use/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Use ten's complement"
-msgstr ""
+msgstr "استفاده از متمم عدد ۱۰"
 
 #. Help title
 #: activities/tens_complement_use/ActivityInfo.qml:16
@@ -22957,7 +22981,7 @@ msgstr ""
 #: activities/tic_tac_toe/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
 msgid "Tic tac toe (against Tux)"
-msgstr ""
+msgstr "بازی ایکس او(در مقابل توکس)"
 
 #. Help title
 #: activities/tic_tac_toe/ActivityInfo.qml:20
@@ -22992,7 +23016,7 @@ msgstr ""
 #: activities/tic_tac_toe_2players/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
 msgid "Tic tac toe (with a friend)"
-msgstr ""
+msgstr "بازی ایکس او(در مقابل یک دوست)"
 
 #. Help manual
 #: activities/tic_tac_toe_2players/ActivityInfo.qml:27
@@ -23006,7 +23030,7 @@ msgstr ""
 #: activities/traffic/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "A sliding-block puzzle game"
-msgstr ""
+msgstr "پازل خروج از پارکینگ"
 
 #. Help title
 #: activities/traffic/ActivityInfo.qml:17
@@ -23026,7 +23050,7 @@ msgstr ""
 #: activities/watercycle/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Watercycle"
-msgstr ""
+msgstr "چرخه آب"
 
 #. Help title
 #: activities/watercycle/ActivityInfo.qml:17
@@ -23096,6 +23120,8 @@ msgctxt "Watercycle|"
 msgid ""
 "Fantastic, you have completed the water cycle. You can continue playing."
 msgstr ""
+"خارق العاده است، تو چرخه آبی را تکمیل کردی. تو میتوانی به بازی کردن ادامه "
+"بدی."
 
 #: activities/watercycle/Watercycle.qml:112
 msgctxt "Watercycle|"
@@ -23134,13 +23160,13 @@ msgstr ""
 #: activities/wordsgame/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Falling words"
-msgstr ""
+msgstr "سقوط حروف"
 
 #. Help title
 #: activities/wordsgame/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Type the falling words before they reach the ground."
-msgstr ""
+msgstr "قبل از رسیدن به زمین، حروف در حال سقوط را تایپ کن."
 
 #. Help goal
 #: activities/wordsgame/ActivityInfo.qml:20
@@ -23166,38 +23192,40 @@ msgid ""
 "New command-line option (--difficulty {value|min-max}) to start GCompris at "
 "specific difficulty"
 msgstr ""
+"تنطیمات جدید خط فرمان (--difficulty {value|min-max}) برای شروع جی‌کامپریس در "
+"سطح سختی مشخص"
 
 #: core/ChangeLog.qml:31
 msgctxt "ChangeLog|"
 msgid "Many translation updates"
-msgstr ""
+msgstr "به روزرسانی شدن تعداد زیادی از ترجمه ها"
 
 #: core/ChangeLog.qml:32 core/ChangeLog.qml:45 core/ChangeLog.qml:63
 #: core/ChangeLog.qml:78 core/ChangeLog.qml:83 core/ChangeLog.qml:89
 msgctxt "ChangeLog|"
 msgid "Many new images"
-msgstr ""
+msgstr "تعداد زیادی تصویر جدید"
 
 #: core/ChangeLog.qml:33 core/ChangeLog.qml:46 core/ChangeLog.qml:84
 #: core/ChangeLog.qml:90
 msgctxt "ChangeLog|"
 msgid "Many bug fixes"
-msgstr ""
+msgstr "تعداد زیادی رفع باگ"
 
 #: core/ChangeLog.qml:37
 msgctxt "ChangeLog|"
 msgid "Fix issue in comparator activity"
-msgstr ""
+msgstr "رفع مشکل در فعالیت دستگاه مقایسه کننده"
 
 #: core/ChangeLog.qml:41
 msgctxt "ChangeLog|"
 msgid "Map of Spain added for geography activity"
-msgstr ""
+msgstr "اضافه شدن نقشه اسپانیا برای فعالیت جغرافیایی"
 
 #: core/ChangeLog.qml:42
 msgctxt "ChangeLog|"
 msgid "Voices added for Ukrainian"
-msgstr ""
+msgstr "صداها برای زبان اوکراینی اضافه شده اند."
 
 #: core/ChangeLog.qml:43
 msgctxt "ChangeLog|"
@@ -23205,75 +23233,80 @@ msgid ""
 "New command-line option to list all the activities and start on a specific "
 "one"
 msgstr ""
+"تنظیم خط فرمان جدید برای لیست کردن همه فعالیت ها و شروع در یکی از آن ها به "
+"صورت مشخص"
 
 #: core/ChangeLog.qml:44 core/ChangeLog.qml:79 core/ChangeLog.qml:82
 #: core/ChangeLog.qml:88
 msgctxt "ChangeLog|"
 msgid "Many usability improvements"
-msgstr ""
+msgstr "کلی توسعه برای قابلیت استفاده"
 
 #: core/ChangeLog.qml:50
 msgctxt "ChangeLog|"
 msgid ""
 "Reduce the size of the packages for all platforms and of the external word "
 "images set"
-msgstr ""
+msgstr "کاهش حجم پکیج برای همه پلتفرم ها و همچنین مجموعه خارجی تصویر کلمات"
 
 #: core/ChangeLog.qml:51
 msgctxt "ChangeLog|"
 msgid "Improve images quality in several activities"
-msgstr ""
+msgstr "توسعه کیفیت تصاویر در چندین فعالیت"
 
 #: core/ChangeLog.qml:52
 msgctxt "ChangeLog|"
 msgid "Fix some transitions in renewable_energy/watercycle on some platforms"
 msgstr ""
+"رفع مشکل برخی تحولات در قسمت انرژی های تجدید پذیر و چرخه آبی در بعضی از "
+"پلتفرم ها"
 
 #: core/ChangeLog.qml:53
 msgctxt "ChangeLog|"
 msgid "Fix dead keys ignored on Linux for typing activities"
-msgstr ""
+msgstr "رفع مشکل کلید های مرده رد شده در لینوکس برای فعالیت های نوشتاری"
 
 #: core/ChangeLog.qml:54
 msgctxt "ChangeLog|"
 msgid "Fix level reset when changing level manually in Logical associations"
-msgstr ""
+msgstr "رفع مشکل اجرای دوباره مرحله وقتی که مرحله در قسمت منطق دستی عوض میشد"
 
 #: core/ChangeLog.qml:58
 msgctxt "ChangeLog|"
 msgid ""
 "Fix Alphabet sequence, Even and odd numbers and Numbers in order activities"
 msgstr ""
+"رفع مشکل ترتیب حروف الفبا، اعداد زوج و فرد و اعداد مرتب در فعالیت های ترتیبی"
 
 #: core/ChangeLog.qml:62 core/ChangeLog.qml:70
 msgctxt "ChangeLog|"
 msgid "Several bug fixes"
-msgstr ""
+msgstr "چندین رفع باگ"
 
 #: core/ChangeLog.qml:64
 msgctxt "ChangeLog|"
 msgid "Translation updated for Russian"
-msgstr ""
+msgstr "ترجمه برای زبان روسی به روزرسانی شده است"
 
 #: core/ChangeLog.qml:65
 msgctxt "ChangeLog|"
 msgid "New voices for Norwegian Nynorsk"
-msgstr ""
+msgstr "صداهای جدید برای زبان نروژی نو"
 
 #: core/ChangeLog.qml:69
 msgctxt "ChangeLog|"
 msgid "Translations added for Breton, Czech and Macedonian"
-msgstr ""
+msgstr "ترجمه ها برای زبان های برتون،آچکی و مقدونیه ای اضافه شده اند"
 
 #: core/ChangeLog.qml:74
 msgctxt "ChangeLog|"
 msgid "Translation added for Azerbaijani"
-msgstr ""
+msgstr "ترجمه برای زبان آذربایجانی اضافه شده است"
 
 #: core/ChangeLog.qml:75
 msgctxt "ChangeLog|"
 msgid "New maps and update of the maps for geography activities"
-msgstr ""
+msgstr "نقشه های جدید و به روزرسانی نقشه ها برای فعالیت های جغرافیایی"
 
 #: core/ChangeLog.qml:76
 msgctxt "ChangeLog|"
@@ -23281,6 +23314,8 @@ msgid ""
 "New dataset containing loops operations for programming maze, and make "
 "tutorial images translated"
 msgstr ""
+"دیتاست جدید شامل حلقه های عملیاتی در برنامه نویسی مازه، و  ساخته شدن ترجمه "
+"برای تصاویر آموزشی"
 
 #: core/ChangeLog.qml:77
 msgctxt "ChangeLog|"
@@ -23288,56 +23323,57 @@ msgid ""
 "Addition of a level to teach voltage source loop in analog electricity "
 "activity"
 msgstr ""
+"اضافه شدن یک مرحله برای آموزش منبع ولتاژ حلقه در فعالیت الکتریسیته قیاسی"
 
 #: core/ChangeLog.qml:87
 msgctxt "ChangeLog|"
 msgid "New Activity Settings menu, with dataset selection"
-msgstr ""
+msgstr "منوی جدید تنظیمات فعالیت، با توانایی انتخاب دیتاست"
 
 #: core/ChangeLog.qml:93
 msgctxt "ChangeLog|"
 msgid "New sub-categories to organize activities"
-msgstr ""
+msgstr "زیر دسته بندی حدید برای فعالیت ها مرتب سازی"
 
 #: core/ChangeLog.qml:94
 msgctxt "ChangeLog|"
 msgid "Translation added for Macedonian."
-msgstr ""
+msgstr "ترجمه برای زبان مقدونیه ای اضافه شده است."
 
 #: core/ChangeLog.qml:95
 msgctxt "ChangeLog|"
 msgid "New activities Programming Maze and Baby Tangram"
-msgstr ""
+msgstr "فعالیت های جدید یعنی برنامه نویسی مازه و تانگرام کودک اضافه شده اند."
 
 #: core/ChangeLog.qml:96
 msgctxt "ChangeLog|"
 msgid "New background music and volume settings."
-msgstr ""
+msgstr "موسیقی پس زمینه و تنظیمات صدای جدید."
 
 #: core/ChangeLog.qml:97
 msgctxt "ChangeLog|"
 msgid "New speed setting in several activities."
-msgstr ""
+msgstr "تنظیم سرعت حدید در جندین فعالیت."
 
 #: core/ChangeLog.qml:98
 msgctxt "ChangeLog|"
 msgid "New option in chess to display captured pieces."
-msgstr ""
+msgstr "قابلیت جدید در بازی شطرنج برای نمایش دادن مهره های احاطه شده."
 
 #: core/ChangeLog.qml:99
 msgctxt "ChangeLog|"
 msgid "New images in Colors, Advanced colors and Target game."
-msgstr ""
+msgstr "تصاویر جدید در رنگ ها، رنگ خای پیشرفته و بازی دارت."
 
 #: core/ChangeLog.qml:100
 msgctxt "ChangeLog|"
 msgid "New voices for US English."
-msgstr ""
+msgstr "صداهای جدید برای زبان انگلیسی آمریکایی."
 
 #: core/ChangeLog.qml:101 core/ChangeLog.qml:109
 msgctxt "ChangeLog|"
 msgid "Many little fixes and improvements."
-msgstr ""
+msgstr "بسیاری از حل مشکلات کوچک و توسعه ها."
 
 #: core/ChangeLog.qml:102
 msgctxt "ChangeLog|"
@@ -23345,33 +23381,35 @@ msgid ""
 "Translation updated for multiple languages (Breton, Brazilian Portuguese, "
 "Finnish...)."
 msgstr ""
+"ترجمه برای زبان های زیادی به روزرسانی شده است(برتونی،پرتغالی برزیل،فنلاندی "
+"و...)."
 
 #: core/ChangeLog.qml:103
 msgctxt "ChangeLog|"
 msgid "Add Russian dataset for Click on letter activity."
-msgstr ""
+msgstr "اضافه شدن دیتاست روسی برای فعالیت کلیک بر روی حروف."
 
 #: core/ChangeLog.qml:104
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in Dutch."
-msgstr ""
+msgstr "فعالیت زبانی در حال حاضر برای زبان هلندی در دسترس قرار گرفته است."
 
 #: core/ChangeLog.qml:105
 msgctxt "ChangeLog|"
 msgid ""
 "Merge Norwegian counties Nord-Trøndelag and Sør-Trøndelag into Trøndelag in "
 "geo-country activity."
-msgstr ""
+msgstr "ادغام شدن شهر های نروژی به فعالیت جغرافیایی کشور ها."
 
 #: core/ChangeLog.qml:106
 msgctxt "ChangeLog|"
 msgid "Fix in braille activities where the cells start at 1, not 0."
-msgstr ""
+msgstr "حل مشکل برای فعالیت های بریل در جایی که به جای ۰ از ۱ شروع میشدند."
 
 #: core/ChangeLog.qml:107
 msgctxt "ChangeLog|"
 msgid "Translation added for Basque, Hungarian and Malayalam."
-msgstr ""
+msgstr "زبان باسکی،مجاری و مالایام اضافه شده است."
 
 #: core/ChangeLog.qml:108
 msgctxt "ChangeLog|"
@@ -23379,46 +23417,49 @@ msgid ""
 "Loading/saving of creations (Baby Wordprocessor, Balance Box and Piano "
 "Composition)."
 msgstr ""
+"بارگیری/ذخیره برای ساخته ها(پردازنده کلمه کودک، جعبه تعادل و قطعه پیانو)"
 
 #: core/ChangeLog.qml:109
 msgctxt "ChangeLog|"
 msgid "Translations added for Scottish Gaelic."
-msgstr ""
+msgstr "زبان گیلیک اسکاتلندی اضافه شده است."
 
 #: core/ChangeLog.qml:110
 msgctxt "ChangeLog|"
 msgid "License page added in configuration."
-msgstr ""
+msgstr "صفحه لایسنس در ترجیحات اضافه شده است."
 
 #: core/ChangeLog.qml:110
 msgctxt "ChangeLog|"
 msgid "Multiple changes on layouts to improve the ergonomy."
-msgstr ""
+msgstr "تغییرات زیادی در چیدمان ها برای توسعه ارگونومی انجام شده است."
 
 #: core/ChangeLog.qml:111
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in Polish, Swedish and Ukrainian."
 msgstr ""
+"فعالیت زبانی در حال حاضر برای زبان لهستانی،سوئدی و اوکراینی در دسترس قرار "
+"گرفته است."
 
 #: core/ChangeLog.qml:112
 msgctxt "ChangeLog|"
 msgid "Search feature."
-msgstr ""
+msgstr "قابلیت جست و جو."
 
 #: core/ChangeLog.qml:113
 msgctxt "ChangeLog|"
 msgid "A Changelog."
-msgstr ""
+msgstr "وقایع تغییرات"
 
 #: core/ChangeLog.qml:114
 msgctxt "ChangeLog|"
 msgid "Many little fixes."
-msgstr ""
+msgstr "بسیاری از اصلاحات کوچک رخ داده اند."
 
 #: core/ChangeLog.qml:114
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in French."
-msgstr ""
+msgstr "فعالیت زبانی در حال حاضر برای زبان فرانسوی در دسترس قرار گرفته است."
 
 #: core/ChangeLog.qml:115
 msgctxt "ChangeLog|"
@@ -23426,6 +23467,9 @@ msgid ""
 "Adding a loading overlay to let the user know that some actions are taking "
 "place (loading an activity for example) and can take some seconds."
 msgstr ""
+"اضافه شده یک پوشش بارگیری برای اینکه کاربر متوجه شود که تعداد عملیات در حال "
+"انجام هستند(به عنوان مثال: بارگیری یک فعالیت) و اینکه چند ثانیه میتواند طول "
+"بکشد."
 
 #: core/ChangeLog.qml:115
 msgctxt "ChangeLog|"
@@ -23433,11 +23477,14 @@ msgid ""
 "Translations added for: Catalan (Valencian), Chinese Traditional, Finnish "
 "(92% translated), Russian (98% translated), Slovak (92% translated), Turkish."
 msgstr ""
+"ترجمه ها برای زبان های: کاتالانی(والنسیایی)، چینی، فنلاندی(۹۲ درصد ترجمه "
+"شده)، روسی(۹۸ درصد ترجمه شده)،اسلوواکی(۹۲ درصد ترجمه شده) و ترکی استانبولی "
+"اضافه شده اند."
 
 #: core/ChangeLog.qml:116
 msgctxt "ChangeLog|"
 msgid "Translations added for: Slovenian, German, Galician."
-msgstr ""
+msgstr "ترجمه ها برای زبان های: اسلوونیایی،آِلمانی و گالیسی اضافه شده اند."
 
 #: core/ChangeLog.qml:141
 #, qt-format
@@ -23456,11 +23503,12 @@ msgid ""
 "This activity uses language sound files, that are not yet installed on your "
 "system."
 msgstr ""
+"این فعالیت از فایل های صوتی استفاده میکند که در سیستم شما نصب نشده‌ اند."
 
 #: core/core.js:182
 msgctxt "core|"
 msgid "For downloading the needed sound files go to the preferences dialog."
-msgstr "برای دانلود کردن فایل های صوتی مورد نیاز به دیالوگ ترجیحات مراجعه کن."
+msgstr "برای دانلود کردن فایل های صوتی مورد نیاز به پنجره ترجیحات مراجعه کن."
 
 #: core/core.js:210
 msgctxt "core|"
@@ -23480,7 +23528,7 @@ msgstr "خروج؟"
 #: core/core.js:224
 msgctxt "core|"
 msgid "Do you really want to quit GCompris?"
-msgstr "آیا واقعا میخواهی از جی کامپریس خارج بشی؟"
+msgstr "آیا واقعا میخواهی از جی‌کامپریس خارج بشی؟"
 
 #: core/core.js:225
 msgctxt "core|"
@@ -23495,7 +23543,7 @@ msgstr "خیر"
 #: core/DialogAbout.qml:22
 msgctxt "DialogAbout|"
 msgid "About GCompris"
-msgstr "درباره جی کامپریس"
+msgstr "درباره جی‌کامپریس"
 
 #: core/DialogAbout.qml:23 core/DialogAbout.qml:36
 msgctxt "DialogAbout|"
@@ -23506,24 +23554,24 @@ msgstr "گواهی(لایسنس)"
 #: core/DialogAbout.qml:46 core/DialogAbout.qml:47
 msgctxt "DialogAbout|"
 msgid "translator-credits"
-msgstr ""
+msgstr "اعتبارات-مترجمان"
 
 #: core/DialogAbout.qml:55
 #, qt-format
 msgctxt "DialogAbout|"
 msgid "GCompris %1"
-msgstr "جی کامپریس %1"
+msgstr "جی‌کامپریس %1"
 
 #: core/DialogAbout.qml:57
 #, qt-format
 msgctxt "DialogAbout|"
 msgid "Based on Qt %1 and %2"
-msgstr ""
+msgstr "بر پایه کیو‌تی(Qt) %1 و %2"
 
 #: core/DialogAbout.qml:61
 msgctxt "DialogAbout|"
 msgid "GCompris Home Page: https://gcompris.net"
-msgstr "صفحه اصلی جی کامپریس: https://gcompris.net"
+msgstr "صفحه اصلی جی‌کامپریس: https://gcompris.net"
 
 #. Replace the link with the page in your language if it exists, else keep the english page link
 #: core/DialogAbout.qml:65
@@ -23533,15 +23581,14 @@ msgid ""
 "please visit <a href='https://gcompris.net/donate-en.html'>https://gcompris."
 "net/donate-en.html</a>."
 msgstr ""
-"تو میتوانی کمک مالی برای توسعه جی کامپریس ارائه کنی. لطفا به <a "
-"href='https://gcompris.net/donate-en.html'>https://gcompris.net/donate-en."
-"html</a> مراجعه کن."
+"تو میتوانی برای توسعه پروژه جی‌کامپریس حمایت مالی انجام بدی. برای این منظور "
+"لطفا به صفحه <a href='https://gcompris.net/donate-en.html'>اهدای جی‌کامپریس</"
+"a> مراجعه کن."
 
 #: core/DialogAbout.qml:75
 msgctxt "DialogAbout|"
 msgid "<b>GCompris</b> is a Free Software developed within the KDE community."
-msgstr ""
-"جی کامپریس یک نرم افزار آزاد است که در جامعه کی دی ای توسعه داده میشود."
+msgstr "جی‌کامپریس یک نرم افزار آزاد است که در جامعه کی دی ای توسعه داده میشود."
 
 #: core/DialogAbout.qml:79
 #, qt-format
@@ -23557,6 +23604,14 @@ msgid ""
 ">Visit <a href=\"%2\">%2</a> for more information about the KDE community "
 "and the software we produce."
 msgstr ""
+"کی‌دی‌ای یک شبکه جهانی از مهندسان نرم افزار،هنرمندان،نویسندگان،مترجمان و زمینه "
+"سازانی(تسهیل گرانی) است که به توسعه <a href=\"%1\">نرم افزار آزاد</a> متعهد "
+"هستند. این انجمن صدها نرم افزار آزاد به عنوان محیط ها و فضاهای کاری و نرم "
+"افزار های کی‌دی‌ای را ساخته است. کی‌دی‌ای یک شرکت تعاونی است که هیچ نهادی زحمات "
+"یا محصولات کی‌دی‌ای را برای محرومیت دیگران کنترل نمیکند. همه افراد شامل تو "
+"برای عضویت و مشارکت در کی‌دی‌ای آزاد هستند. برای اطلاعات بیشتر در مورد انجمن "
+"کی‌دی‌ای و نرم افزار هایی که ما تولید کردیم به <a href=\"%2\">%2</a> مراجعه "
+"کنی."
 
 #: core/DialogAbout.qml:96
 #, qt-format
@@ -23570,6 +23625,12 @@ msgid ""
 "system to register your wish. Make sure you use the severity called "
 "\"Wishlist\"."
 msgstr ""
+"نرم افزار همواره میتواند توسعه پیدا کند، و تیم کی‌دی‌ای برای انجام این کار "
+"آماده است. هرچند، تو - به عنوان کاربر - باید وقتی که چیزی آنچنان که مطلوب "
+"است کار نمیکرد یا بهتر میتوانست باشد، به ما اطلاع بدی. کی‌دی‌ای دارای یک سیستم "
+"پیگیری باگ میباشد. برای گزارش باگ به <a href=\"%1\">%1</a> مراجعه کن. اگر "
+"پیشنهادی برای توسعه داشتی نیز میتوانی از این سیستم برای ثبت خواسته ات "
+"استفاده کنی. حتما مطمئن شو که از گزینه \"wishlist\" در آنجا استفاده کنی."
 
 #: core/DialogAbout.qml:108
 #, qt-format
@@ -23583,6 +23644,13 @@ msgid ""
 "documentation, then a visit to <a href=\"%2\">%2</a> will provide you with "
 "what you need."
 msgstr ""
+"تو برای عضو شدن در تیم کی‌دی‌ای نیازی به مهندس نرم افزار بودن نداری. تو "
+"میتوانی به تیم های بومی که رابط های کاربری نرم افزار را ترجمه میکنند ملحق "
+"بشی. تو میتوانی با ارائه طراحی گرافیکی،قالب، صداها و همچنین مستندات توسعه "
+"داده شده مشارکت داشته باشی. تو تصمیم بگیر! برای کسب اطلاعات بیشتر از پروژه "
+"هایی که میتوانی در آن ها مشارکت کنی به <a href=\"%1\">%1</a>  مراجعه کنی. "
+"اگر نیاز به کسب اطلاعات بیشتر یا مستندات داری، مراجعه به <a href=\"%2\">%2</"
+"a> چیزی که نیاز داری را ارائه خواهد کرد."
 
 #: core/DialogAbout.qml:125
 #, qt-format
@@ -23599,35 +23667,45 @@ msgid ""
 "donation, using one of the ways described at <a href=\"%2\">%2</a>.<br /"
 "><br />Thank you very much in advance for your support."
 msgstr ""
+"برای حمایت از توسعه انجمن کی‌دی‌ای، سازمان کی‌دی‌ای ای.وی. که یک سازمان "
+"غیرانتفاعی قانونی در آلمان میباشد را شکل داد. کی‌دی‌ای ای.وی. انجمن کی‌دی‌ای را "
+"از جهت قانونی و مالی نمایندگی میکند. برای اطلاعات بیشتر در مورد کی‌دی‌ای ای."
+"وی. <a href=\"%1\">%1</a> را مشاهده کنید. کی‌دی‌ای از تعداد زیادی مشارکت، شامل "
+"مشارکت های مالی نفع میبرد. ما از این دارایی ها برای پرداخت پول به اعضا و "
+"سایر افراد برای هزینه هایی که هنگام مشارکت انجام میدهند، استفاده میکنیم. "
+"باقی وجوه برای حمایت قانونی و سازماندهی کنفرانس ها و نشست ها استفاده میشود. "
+"ما دوست دارید که شما را تشویق کنیم که برای حمایت از کوشش های ما، اهدای مالی "
+"با استفاده از روش های توضیح داده شده در <a href=\"%2\">%2</a> انجام دهید. از "
+"حمایت شما بسیار متشکریم."
 
 #: core/DialogAbout.qml:142
 #, qt-format
 msgctxt "DialogAbout|"
 msgid "<b>A big thanks to the development team:</b> %1"
-msgstr ""
+msgstr "<b>تشکری بزرگ از تیم توسعه:</b> %1"
 
 #: core/DialogAbout.qml:146
 #, qt-format
 msgctxt "DialogAbout|"
 msgid "<b>A big thanks to the translation team:</b> %1"
-msgstr ""
+msgstr "<b>تشکری بزرگ از تیم ترجمه:</b> %1"
 
 #: core/DialogActivityConfig.qml:84
 #, qt-format
 msgctxt "DialogActivityConfig|"
 msgid "%1 configuration"
-msgstr ""
+msgstr "ترجیحات %1"
 
 #: core/DialogActivityConfig.qml:86
 msgctxt "DialogActivityConfig|"
 msgid "Configuration"
-msgstr " ساختار"
+msgstr " ترجیحات"
 
 #: core/DialogChooseLevel.qml:45
 #, qt-format
 msgctxt "DialogChooseLevel|"
 msgid "%1 settings"
-msgstr ""
+msgstr "تنظیمات %1"
 
 #: core/DialogChooseLevel.qml:205
 msgctxt "DialogChooseLevel|"
@@ -23694,7 +23772,7 @@ msgstr "نقاط"
 #: core/Domino.qml:59
 msgctxt "Domino|"
 msgid "Arabic Numbers"
-msgstr "اعداد فارسی یا عربی"
+msgstr "اعداد عربی"
 
 #. "Roman Numbers" is for representation of the points in a domino in the form of roman numbers
 #: core/Domino.qml:61
@@ -23728,7 +23806,7 @@ msgstr "لغو کردن"
 #, qt-format
 msgctxt "DownloadDialog|"
 msgid "Download error (code: %1): %2"
-msgstr ""
+msgstr "ارور دانلود (کد: %1): %2"
 
 #: core/DownloadDialog.qml:394
 msgctxt "DownloadDialog|"
@@ -23744,7 +23822,7 @@ msgstr "شروع دوباره برای همه فعالیت های فعال."
 #: core/DownloadDialog.qml:398
 msgctxt "DownloadDialog|"
 msgid "Your local data files are up-to-date."
-msgstr ""
+msgstr "فایل های داده محلی شما به روز میباشند."
 
 #: core/DownloadManager.cpp:112
 msgctxt "QObject|"
@@ -23754,30 +23832,30 @@ msgstr "دانلود توسط کاربر لغو شد"
 #: core/DownloadManager.cpp:232
 msgctxt "QObject|"
 msgid "Could not create resource path"
-msgstr ""
+msgstr "نمیتوان مسیر منبع را ساخت"
 
 #: core/DownloadManager.cpp:239
 #, qt-format
 msgctxt "QObject|"
 msgid "Could not open target file %1"
-msgstr ""
+msgstr "نمیتوان فایل %1 را باز کرد"
 
 #: core/DownloadManager.cpp:538
 msgctxt "QObject|"
 msgid "Invalid format of Contents file"
-msgstr ""
+msgstr "فایل شامل محتوا دارای فرمت نامعتبر است"
 
 #: core/DownloadManager.cpp:560
 #, qt-format
 msgctxt "QObject|"
 msgid "The url %1 does not exist."
-msgstr ""
+msgstr "لینک %1 موجود نمیباشد."
 
 #: core/DownloadManager.cpp:573
 #, qt-format
 msgctxt "QObject|"
 msgid "Checksum of downloaded file does not match: %1"
-msgstr ""
+msgstr "چکیده اعتبارسنجی فایل دانلود شده منطبق نمیباشد: %1"
 
 #: core/GCCreationHandler.qml:134
 #, qt-format
@@ -23870,47 +23948,47 @@ msgstr "تنظیمات پیش فرض سیستم شما"
 #: core/LanguageList.qml:34
 msgctxt "LanguageList|"
 msgid "GCompris' language"
-msgstr "زبان جی کامپریس"
+msgstr "زبان جی‌کامپریس"
 
 #: core/main.cpp:166
 msgctxt "QObject|"
 msgid "Run GCompris with the default system cursor."
-msgstr "جی کامپریس را در حالت مکان نمای پیش فرض اجرا کن."
+msgstr "جی‌کامپریس را در حالت مکان نمای پیش فرض اجرا کن."
 
 #: core/main.cpp:170
 msgctxt "QObject|"
 msgid "Run GCompris without cursor (touch screen mode)."
-msgstr "جی کامپریس را بدون مکان نما اجرا کن(حالت لمس بر صفحه)."
+msgstr "جی‌کامپریس را بدون مکان نما اجرا کن(حالت لمس بر صفحه)."
 
 #: core/main.cpp:174
 msgctxt "QObject|"
 msgid "Run GCompris in fullscreen mode."
-msgstr "جی کامپریس را در حالت تمام صفحه اجرا کن."
+msgstr "جی‌کامپریس را در حالت تمام صفحه اجرا کن."
 
 #: core/main.cpp:178
 msgctxt "QObject|"
 msgid "Run GCompris in window mode."
-msgstr "جی کامپریس را در حالت پنجره ای اجرا کن."
+msgstr "جی‌کامپریس را در حالت پنجره ای اجرا کن."
 
 #: core/main.cpp:182
 msgctxt "QObject|"
 msgid "Run GCompris with sound enabled."
-msgstr "جی کامپریس را با صدای فعال شده اجرا کن."
+msgstr "جی‌کامپریس را با صدای فعال شده اجرا کن."
 
 #: core/main.cpp:186
 msgctxt "QObject|"
 msgid "Run GCompris without sound."
-msgstr "جی کامپریس را بدون صدا اجرا کن."
+msgstr "جی‌کامپریس را بدون صدا اجرا کن."
 
 #: core/main.cpp:189
 msgctxt "QObject|"
 msgid "Disable the kiosk mode (default)."
-msgstr ""
+msgstr "غیرفعال کردن وضعیت کیوسک (پیش فرض)."
 
 #: core/main.cpp:192
 msgctxt "QObject|"
 msgid "Enable the kiosk mode."
-msgstr ""
+msgstr "فعالسازی وضعیت کیوسک"
 
 #: core/main.cpp:196
 msgctxt "QObject|"
@@ -23918,6 +23996,8 @@ msgid ""
 "Use software renderer instead of openGL (slower but should run with any "
 "graphical card)."
 msgstr ""
+"از ارائه دهنده نرم افزار به جای اوپن‌جی‌ال(openGL) استفاده کن(کندتر است هر چند "
+"که با هر کارت گرافیکی کار میکند)."
 
 #: core/main.cpp:199
 msgctxt "QObject|"
@@ -23925,6 +24005,8 @@ msgid ""
 "Use openGL renderer instead of software (faster but crash potentially "
 "depending on your graphical card)."
 msgstr ""
+"از اوپن‌جی‌ال(openGL) به جای نرم افزار استفاده کن(سریع تر است هر چند که با "
+"توجه به کارت گرافیک ممکن است دچار هنگ احتمالی شود)."
 
 #: core/main.cpp:203
 msgctxt "QObject|"
@@ -23934,7 +24016,7 @@ msgstr "فعالیت را هنگام شروع کردن GCompris تعیین کن�
 #: core/main.cpp:208
 msgctxt "QObject|"
 msgid "Outputs all the available activities on the standard output."
-msgstr ""
+msgstr "همه فعالیت های موجود در خروجی استاندار را خارج میکند."
 
 #: core/main.cpp:212
 msgctxt "QObject|"
@@ -23942,6 +24024,9 @@ msgid ""
 "Specify the range of activity difficulty to display for the session. Either "
 "a single value (2), or a range (3-6). Values must be between 1 and 6."
 msgstr ""
+"بازه سختی فعالیت را مشخص کن تا برای این دوره زمانی نمایش داده شود. همچنین یک "
+"مقدار واحد به شکل(۲)، و یک بازه به به شکل(۳-۶) نمایش داده میشود. مقادیر حتما "
+"باید بین ۱ تا ۶ باشد."
 
 #: core/main.qml:233
 msgctxt "main|"
@@ -23951,7 +24036,7 @@ msgstr "صداها برای زبان شما"
 #: core/main.qml:234
 msgctxt "main|"
 msgid "Full word image set"
-msgstr "تصویر کامل کلمه"
+msgstr "مجموعه کامل تصویر کلمات"
 
 #: core/main.qml:235
 msgctxt "main|"
@@ -23976,12 +24061,12 @@ msgstr "خیر"
 #: core/main.qml:280
 msgctxt "main|"
 msgid "Welcome to GCompris!"
-msgstr "به جی کامپریس خوش آمدید!"
+msgstr "به جی‌کامپریس خوش آمدید!"
 
 #: core/main.qml:281
 msgctxt "main|"
 msgid "You are running GCompris for the first time."
-msgstr "تو برای اولین بار در حال اجرای جی کامپریس هستی."
+msgstr "تو برای اولین بار در حال اجرای جی‌کامپریس هستی."
 
 #: core/main.qml:282
 msgctxt "main|"
@@ -23992,7 +24077,7 @@ msgid ""
 msgstr ""
 "تو باید صحت سنجی کنی که تنظیمات برنامه مخصوصا زبان مورد نظرت به درستی تنظیم "
 "شده باشد، و تمامی ویژگی های زبانی از جمله فایل های صوتی نصب شده باشند. تو "
-"میتوانی این کار را در دیالوگ ترجیحات انجام دهی."
+"میتوانی این کار را در پنجره ترجیحات انجام دهی."
 
 #: core/main.qml:284
 msgctxt "main|"
@@ -24008,12 +24093,12 @@ msgstr "ترجیح فعلی زبان شما هست %1 (%2)"
 #: core/main.qml:317
 msgctxt "main|"
 msgid "GCompris has been updated! Here are the new changes:<br/>"
-msgstr "جی کامپریس به روز رسانی شده است! تغییرات جدید:<br/>"
+msgstr "جی‌کامپریس به روز رسانی شده است! تغییرات جدید:<br/>"
 
 #: core/ReadyButton.qml:67
 msgctxt "ReadyButton|"
 msgid "I am Ready"
-msgstr "من آماده هستم"
+msgstr "آماده ام"
 
 #: core/Tutorial.qml:175
 msgctxt "Tutorial|"
