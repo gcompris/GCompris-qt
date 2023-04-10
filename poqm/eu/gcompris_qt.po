@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GCompris\n"
 "POT-Creation-Date: 2018-11-30 13:03+0000\n"
-"PO-Revision-Date: 2023-03-19 09:54+0100\n"
+"PO-Revision-Date: 2023-04-09 11:05+0200\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
 "Language: eu\n"
@@ -9044,7 +9044,7 @@ msgstr ""
 #: activities/followline/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Control the hose-pipe"
-msgstr "Kontrolatu mauka"
+msgstr "Kontrolatu mahuka"
 
 #. Help title
 #: activities/followline/ActivityInfo.qml:17
