@@ -68,7 +68,7 @@ DialogBackground {
         "<br />" +
 
         "<img width='" + 320 * ApplicationInfo.ratio +
-        "' height='" + 114 * ApplicationInfo.ratio + "' src='qrc:/gcompris/src/core/resource/gcompris.png'/>" +
+        "' height='" + 114 * ApplicationInfo.ratio + "' src='qrc:/gcompris/src/core/resource/gcompris-logo-full.svg'/>" +
 
         "<br />" +
 

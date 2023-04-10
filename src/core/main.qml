@@ -351,15 +351,15 @@ Window {
 
         Timer {
             id: startApplicationTimer
-            interval: 2000
+            interval: 1000
             repeat: false
 
             onTriggered: {
                 print("Start activity", ActivityInfoTree.startingActivity);
                 pageView.currentItem.startActivity(ActivityInfoTree.startingActivity);
-                ActivityInfoTree.startingActivity = "";
             }
         }
+
 
         property var enterItem
         property var exitItem

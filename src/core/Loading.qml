@@ -66,6 +66,7 @@ Item {
     function stop() {
         active = false;
         visible = false;
+        ActivityInfoTree.startingActivity = "";
     }
 
     anchors.fill: parent
@@ -79,6 +80,7 @@ Item {
     }
 
     Rectangle {
+        visible: ActivityInfoTree.startingActivity === ""
         anchors.fill: parent
         opacity: 0.8
         color: "grey"
@@ -86,7 +88,7 @@ Item {
 
     Image {
         id: loadingImage
-        source: "qrc:/gcompris/src/core/resource/loading.svg";
+        source: "qrc:/gcompris/src/core/resource/loading.svg"
         anchors.centerIn: parent
         sourceSize.width: 150
         width: sourceSize.width
