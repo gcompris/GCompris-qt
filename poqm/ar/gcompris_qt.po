@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2023-04-03 00:05+0400\n"
+"PO-Revision-Date: 2023-04-09 21:32+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
 "Language: ar\n"
@@ -1903,7 +1903,7 @@ msgstr ""
 #: activities/baby_mouse/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Baby mouse"
-msgstr "فأرة أطفال"
+msgstr "فأرة للصغار"
 
 #. Help title
 #: activities/baby_mouse/ActivityInfo.qml:16
@@ -2166,9 +2166,7 @@ msgstr "اسحب وأسقط القطع إلى أمكنتها المناسبة."
 msgctxt "ActivityInfo|"
 msgid ""
 "Complete the puzzle by dragging each piece on the side to the matching spot."
-msgstr ""
-"رتّب أجزاء الصّورة عبر حمل كلّ قطعة من مجموعة قطع الصّورة ووضعها في الفراغ "
-"الملائم له."
+msgstr "رتّب أجزاء الصّورة، ضع كل قطعة في مكانها.الملائم له."
 
 #: activities/babyshapes/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
@@ -2531,7 +2529,7 @@ msgstr "حَدِّدْ مستوى الصعوبة لديك"
 #: activities/bargame/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Bargame (against Tux)"
-msgstr "لعبة تكس (الكرات)"
+msgstr "صفّ الكرات (مع تكس)"
 
 #. Help title
 #: activities/bargame/ActivityInfo.qml:17
@@ -2870,7 +2868,7 @@ msgstr "انقر النّقط في منطقة خلايا «بريل» لكتاب
 #: activities/braille_fun/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Braille fun"
-msgstr "استمتع"
+msgstr "استمتع مع برايل"
 
 #. Help title
 #: activities/braille_fun/ActivityInfo.qml:17
@@ -4184,7 +4182,7 @@ msgstr ""
 #: activities/chronos/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Chronos"
-msgstr "خرونوس"
+msgstr "ترتيب زمني"
 
 #. Help title
 #: activities/chronos/ActivityInfo.qml:21
@@ -5199,7 +5197,7 @@ msgstr "رقمان بعد الفاصلة ما بين 0 و 99.99."
 #: activities/crane/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Build the same model"
-msgstr "ابن نفس النموذج"
+msgstr "أنشئ نموذجًا مماثلا"
 
 #. Help title
 #: activities/crane/ActivityInfo.qml:22
@@ -8036,7 +8034,7 @@ msgstr "انقر على موطن الحيوان المطلوب."
 #: activities/explore_world_music/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Explore world music"
-msgstr "تعرف على الحيوانات البرية حول العالم"
+msgstr "استكشف موسيقى العالم"
 
 #. Help title
 #: activities/explore_world_music/ActivityInfo.qml:17
@@ -13556,7 +13554,7 @@ msgstr "غير محدد"
 #: activities/guesscount/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Guesscount"
-msgstr "عدد التخمينات"
+msgstr "العدد المطلوب تخمينه"
 
 #. Help title
 #: activities/guesscount/ActivityInfo.qml:21
@@ -13565,7 +13563,7 @@ msgid ""
 "Guess the algebraic expression and drag the tiles to get a result equal to "
 "the Guesscount."
 msgstr ""
-"خمن التعبير الجبري واسحب المربعات للحصول على نتيجة مساوية لعدد التخمين."
+"خمّن التعبير الجبري واسحب المربعات للحصول على نتيجة مساوية لعدد يُرادُ تخمينه."
 
 #. Help goal
 #: activities/guesscount/ActivityInfo.qml:24
@@ -13615,7 +13613,7 @@ msgstr "%1/%2"
 #, qt-format
 msgctxt "Guesscount|"
 msgid "Guesscount: %1"
-msgstr "عدد التخمينات: %1"
+msgstr "العدد المطلوب تخمينه: %1"
 
 #: activities/guesscount/OperandRow.qml:40
 msgctxt "OperandRow|"
@@ -13840,7 +13838,7 @@ msgstr "أبن برجا مماثلا للمعطى."
 #: activities/hanoi/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Reproduce the tower on the right in the empty area."
-msgstr "ابن على اليسار برجًا مماثلا للذي على اليمين."
+msgstr "أنشئ على اليسار برجًا مماثلا للذي على اليمين."
 
 #. Help manual
 #: activities/hanoi/ActivityInfo.qml:24
@@ -15348,7 +15346,7 @@ msgstr ""
 #: activities/leftright/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Find your left and right hands"
-msgstr "إيجاد اليدان اليمنى واليسرى"
+msgstr "إيجاد اليدين اليمنى واليسرى"
 
 #. Help title
 #: activities/leftright/ActivityInfo.qml:17
@@ -15731,7 +15729,7 @@ msgstr ""
 #: activities/magic-hat-minus/MagicHat.qml:93
 msgctxt "MagicHat|"
 msgid "Click on the hat to begin the game"
-msgstr "انقر القبّعة بدء اللعبة"
+msgstr "انقر القبّعة لبدء اللعبة"
 
 #: activities/magic-hat-minus/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -16072,7 +16070,7 @@ msgstr "تابع"
 #: activities/memory-case-association-tux/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Case association memory game against Tux"
-msgstr "لعبة ذاكرة تعتمد على حالة الأحرف (كبيرة أو صغيرة) (ضدّ «تُكس»)"
+msgstr "لعبة ذاكرة حالة الأحرف (ضدّ «تُكس»)"
 
 #. Help title
 #: activities/memory-case-association-tux/ActivityInfo.qml:17
@@ -16198,7 +16196,7 @@ msgstr "اقلب البطاقات لإيجاد بطاقات الشكل الكب�
 #: activities/memory-enumerate/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Enumeration memory game"
-msgstr "لعبة ذاكرة تعتمد على العدّ"
+msgstr "لعبة ذاكرة العدّ"
 
 #. Help title
 #: activities/memory-enumerate/ActivityInfo.qml:17
@@ -16266,7 +16264,7 @@ msgstr "طابِق الأعداد حتى 9."
 #: activities/memory-math-add-minus-mult-div-tux/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "All operations memory game against Tux"
-msgstr "لعبة ذاكرة تعتمد على كلّ العمليّات (ضدّ «تُكس»)"
+msgstr "لعبة ذاكرة كلّ العمليّات (ضدّ «تُكس»)"
 
 #. Help title
 #: activities/memory-math-add-minus-mult-div-tux/ActivityInfo.qml:17
@@ -16400,7 +16398,7 @@ msgstr "جدول 9."
 #: activities/memory-math-add-minus-mult-div/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "All operations memory game"
-msgstr "لعبة ذاكرة تعتمد على كلّ العمليّات"
+msgstr "لعبة ذاكرة كلّ العمليّات"
 
 #. Help title
 #: activities/memory-math-add-minus-mult-div/ActivityInfo.qml:17
@@ -16412,7 +16410,7 @@ msgstr "اقلب البطاقات لربط العملية مع نتيجتها."
 #: activities/memory-math-add-minus-tux/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Addition and subtraction memory game against Tux"
-msgstr "لعبة ذاكرة تعتمد على الجمع والطّرح (ضدّ «تُكس»)"
+msgstr "لعبة ذاكرة الجمع والطّرح (ضدّ «تُكس»)"
 
 #. Help title
 #: activities/memory-math-add-minus-tux/ActivityInfo.qml:17
@@ -16449,7 +16447,7 @@ msgstr "كل بطاقة تخفي عملية (جمع أو طرح) أو نتيجة
 #: activities/memory-math-add-minus/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Addition and subtraction memory game"
-msgstr "لعبة ذاكرة تعتمد على الجمع والطّرح"
+msgstr "لعبة ذاكرة  الجمع والطّرح"
 
 #. Help title
 #: activities/memory-math-add-minus/ActivityInfo.qml:17
@@ -16461,7 +16459,7 @@ msgstr "اقلب البطاقات لربط عملية الطرح أو الجمع
 #: activities/memory-math-add-tux/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Addition memory game against Tux"
-msgstr "لعبة ذاكرة تعتمد على الجمع (ضدّ «تُكس»)"
+msgstr "لعبة تذكّر الجمع (ضدّ «تُكس»)"
 
 #. Help title
 #: activities/memory-math-add-tux/ActivityInfo.qml:17
@@ -16550,7 +16548,7 @@ msgstr "جدول عملية جمع 9."
 #: activities/memory-math-add/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Addition memory game"
-msgstr "لعبة ذاكرة تعتمد على الجمع"
+msgstr "لعبة تذكّر الجمع"
 
 #. Help title
 #: activities/memory-math-add/ActivityInfo.qml:17
@@ -16562,7 +16560,7 @@ msgstr "اقلب البطاقات لربط عملية الجمع مع نتيجت
 #: activities/memory-math-div-tux/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Division memory game against Tux"
-msgstr "لعبة ذاكرة تعتمد على القسمة (ضدّ «تُكس»)"
+msgstr "لعبة ذاكرة القسمة (ضدّ «تُكس»)"
 
 #. Help title
 #: activities/memory-math-div-tux/ActivityInfo.qml:17
@@ -16657,7 +16655,7 @@ msgstr "جدول قسمة العدد 9."
 #: activities/memory-math-div/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Division memory game"
-msgstr "لعبة ذاكرة تعتمد على القسمة"
+msgstr "لعبة ذاكرة القسمة"
 
 #. Help title
 #: activities/memory-math-div/ActivityInfo.qml:17
@@ -16675,7 +16673,7 @@ msgstr "القسمة"
 #: activities/memory-math-minus-tux/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Subtraction memory game against Tux"
-msgstr "لعبة ذاكرة تعتمد على الطّرح (ضدّ «تُكس»)"
+msgstr "لعبة ذاكرة الطّرح (ضدّ «تُكس»)"
 
 #. Help title
 #: activities/memory-math-minus-tux/ActivityInfo.qml:17
@@ -16764,7 +16762,7 @@ msgstr "جَدْوَل الطَّرْح لِلعَدَد 9."
 #: activities/memory-math-minus/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Subtraction memory game"
-msgstr "لعبة ذاكرة تعتمد على الطّرح"
+msgstr "لعبة ذاكرة الطّرح"
 
 #. Help title
 #: activities/memory-math-minus/ActivityInfo.qml:17
@@ -16776,7 +16774,7 @@ msgstr "اقلب البطاقات لربط عملية الطرح مع نتيجت
 #: activities/memory-math-mult-div-tux/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Multiplication and division memory game against Tux"
-msgstr "لعبة ذاكرة تعتمد على الضّرب والقسمة (ضدّ «تُكس»)"
+msgstr "لعبة ذاكرة الضّرب والقسمة (ضدّ «تُكس»)"
 
 #. Help title
 #: activities/memory-math-mult-div-tux/ActivityInfo.qml:17
@@ -16813,7 +16811,7 @@ msgstr "كل بطاقة تخفي عملية (ضرب أو قسمة) أو نتيج
 #: activities/memory-math-mult-div/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Multiplication and division memory game"
-msgstr "لعبة ذاكرة تعتمد على الضّرب والقسمة"
+msgstr "لعبة ذاكرة الضّرب والقسمة"
 
 #. Help title
 #: activities/memory-math-mult-div/ActivityInfo.qml:17
@@ -16825,7 +16823,7 @@ msgstr "اقلب البطاقات لربط عملية الضرب أو القسم
 #: activities/memory-math-mult-tux/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Multiplication memory game against Tux"
-msgstr "لعبة ذاكرة تعتمد على الضّرب (ضدّ «تُكس»)"
+msgstr "لعبة ذاكرة الضّرب (ضدّ «تُكس»)"
 
 #. Help title
 #: activities/memory-math-mult-tux/ActivityInfo.qml:17
@@ -16922,7 +16920,7 @@ msgstr "جَدْوَل ضَرْب العَدَد 9."
 #: activities/memory-math-mult/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Multiplication memory game"
-msgstr "لعبة ذاكرة تعتمد على الضّرب"
+msgstr "لعبة ذاكرة الضّرب"
 
 #. Help title
 #: activities/memory-math-mult/ActivityInfo.qml:17
@@ -16934,7 +16932,7 @@ msgstr "اقلب البطاقات لربط عملية الجمه مع نتيجت
 #: activities/memory-sound-tux/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Audio memory game against Tux"
-msgstr "لعبة ذاكرة تعتمد على الأصوات (ضدّ «تُكس»)"
+msgstr "لعبة ذاكرة الأصوات (ضدّ «تُكس»)"
 
 #. Help title
 #: activities/memory-sound-tux/ActivityInfo.qml:17
@@ -16969,7 +16967,7 @@ msgstr ""
 #: activities/memory-sound/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Audio memory game"
-msgstr "لعبة ذاكرة تعتمد على الأصوات"
+msgstr "لعبة ذاكرة الأصوات"
 
 #. Help title
 #: activities/memory-sound/ActivityInfo.qml:17
@@ -17623,7 +17621,8 @@ msgctxt "Menu|"
 msgid ""
 "Put your favorite activities here by clicking on the sun at the top right of "
 "that activity."
-msgstr "ضع أنشطتك المفضلة هنا من خلال النقر على الشمس في أعلى يمين هذا النشاط."
+msgstr ""
+"ضع أنشطتك المفضلة هنا، اختر النشاط ثم انقر على الشمس في أعلى يمين هذا النشاط."
 
 #: activities/menu/Menu.qml:775
 msgctxt "Menu|"
@@ -18314,7 +18313,7 @@ msgstr "جرّب مجدّدًا"
 #: activities/nine_men_morris_2players/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Nine men's morris (with a friend)"
-msgstr "لعبة الطاحونة (ضد تُكس)"
+msgstr "لعبة الطاحونة (ضد صديق)"
 
 #. Help goal
 #: activities/nine_men_morris_2players/ActivityInfo.qml:20
@@ -19130,7 +19129,7 @@ msgstr "هيروشيغي أوتاغاوا، حصان الماكريل والرو
 #: activities/path_decoding/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Path decoding"
-msgstr "تفكيك شفرة مسار"
+msgstr "تتبّع المسار"
 
 #. Help title
 #: activities/path_decoding/ActivityInfo.qml:16
@@ -19180,7 +19179,7 @@ msgstr "شبكات %1x%2."
 #: activities/path_decoding_relative/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Path decoding relative"
-msgstr "مسار فك ترميز نسبي"
+msgstr "تتبّع مسار نسبي"
 
 #: activities/path_decoding_relative/ActivityInfo.qml:24
 #: activities/path_encoding_relative/ActivityInfo.qml:24
@@ -19203,7 +19202,7 @@ msgstr ""
 #: activities/path_encoding/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Path encoding"
-msgstr "مسار الترميز"
+msgstr "رسم المسار"
 
 #. Help title
 #: activities/path_encoding/ActivityInfo.qml:16
@@ -19243,7 +19242,7 @@ msgstr "الأخطاء: %1"
 #: activities/path_encoding_relative/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Path encoding relative"
-msgstr "مسار ترميز نسبي"
+msgstr "رسم المسار النسبي"
 
 #. Activity title
 #: activities/penalty/ActivityInfo.qml:15
@@ -19287,7 +19286,7 @@ msgstr "انقر أو اضغط على الكرة لتعود لمكانها ال�
 #: activities/photo_hunter/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Photo hunter"
-msgstr "صيد الصور"
+msgstr "صيّاد الصور"
 
 #. Help title
 #: activities/photo_hunter/ActivityInfo.qml:17
@@ -20197,7 +20196,7 @@ msgstr "تابع"
 #: activities/positions/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Positions"
-msgstr "المواقف"
+msgstr "المواضع"
 
 #. Help title
 #: activities/positions/ActivityInfo.qml:17
@@ -21358,7 +21357,7 @@ msgstr "وازن إلى 100."
 #: activities/scalesboard_weight/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Balance using the International System of Units"
-msgstr "الأوزان باستخدام النظام الدولي للوحدات"
+msgstr "الأوزان حسب النظام الدولي للوحدات"
 
 #. Help title
 #: activities/scalesboard_weight/ActivityInfo.qml:17
@@ -21528,7 +21527,7 @@ msgstr ""
 #: activities/scalesboard_weight_avoirdupois/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Balance using the imperial system of units"
-msgstr "الأوزان باستخدام النظام الإمبراطوري للوحدات"
+msgstr "الأوزان حسب النظام الإمبراطوري للوحدات"
 
 #. Help manual
 #: activities/scalesboard_weight_avoirdupois/ActivityInfo.qml:24
@@ -23767,7 +23766,7 @@ msgstr "راجع قائمة المساعدة لمعرفة مفاتيح التح�
 #: activities/sudoku/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Sudoku, place unique symbols in a grid"
-msgstr "سودوكو ، ضع رموزًا فريدة دون تكرار في شبكة"
+msgstr "سودوكو، ضع رموزًا فريدة في شبكة"
 
 #. Help title
 #: activities/sudoku/ActivityInfo.qml:17
@@ -23944,7 +23943,7 @@ msgstr ""
 #: activities/target/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Practice addition with a target game"
-msgstr "تمرّن على الجمع بلعبة رمي السهام"
+msgstr "تمرّن على الجمع بلعبة السِهام"
 
 #. Help title
 #: activities/target/ActivityInfo.qml:17
