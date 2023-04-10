@@ -1,6 +1,6 @@
 # [GCompris](https://gcompris.net)
 
-![GCompris logo](src/core/resource/gcompris.png)
+<img src="src/core/resource/gcompris-logo-full.svg"  width="320" height="114" alt="GCompris logo">
 
 ## Presentation
 [GCompris](https://gcompris.net) is a high quality educational software suite,

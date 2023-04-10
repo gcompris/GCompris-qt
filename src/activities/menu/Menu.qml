@@ -640,7 +640,7 @@ ActivityBase {
                 visible: false
                 anchors.fill: activitiesGrid
                 // Dynamic position of the gradient used for OpacityMask
-                // If the hidden bottom part of the grid is > to the maximum heighht of the gradient,
+                // If the hidden bottom part of the grid is > to the maximum height of the gradient,
                 // we use the maximum height.
                 // Else we set the gradient start position proportionnally to the hidden bottom part,
                 // until it disappears.
@@ -1168,6 +1168,21 @@ ActivityBase {
                     dialogActivityConfig.configItem.visible = true
                 }
             }
+        }
+    }
+    // splash screen when using --launch <activity> option
+    Rectangle {
+        visible: ActivityInfoTree.startingActivity != ""
+        anchors.fill: parent
+        color: "#16B8EA"
+        Image {
+            source: "qrc:/gcompris/src/core/resource/gcompris-logo-full.svg"
+            anchors.bottom: parent.bottom
+            anchors.right: parent.right
+            anchors.margins: 20 * ApplicationInfo.ratio
+            width: parent.width * 0.3
+            sourceSize.width: width
+            fillMode: Image.PreserveAspectFit
         }
     }
 }
