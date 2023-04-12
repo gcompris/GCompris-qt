@@ -57,18 +57,15 @@ DialogBackground {
     property string qtVersionTxt: qsTr("Based on Qt %1 and %2").arg(qtVersion).arg(openSslVersion)
 
     content:
-        "<center><b>" + "<a href='https://gcompris.net'>" +
-        qsTr("GCompris Home Page: https://gcompris.net") + "</a>" +
-        "</b></center>" +
-        "<center>" + gcVersionTxt + " " + qtVersionTxt + "</center>" + "<br/>" +
+        "<center style='color:#00000000'>.<img width='" +
+        320 * ApplicationInfo.ratio + "' height='" + 114 * ApplicationInfo.ratio +
+        "' src='qrc:/gcompris/src/core/resource/gcompris-logo-full.svg'/>.</center>
+        <center><b><a href='https://gcompris.net'>" +
+        qsTr("GCompris Home Page: https://gcompris.net") + "</a></b></center>
+        <center>" + gcVersionTxt + " " + qtVersionTxt + "</center><br/>" +
         //: Replace the link with the page in your language if it exists, else keep the english page link
         qsTr("You can provide financial support for the development of <b>GCompris</b>, please visit " +
               "<a href='https://gcompris.net/donate-en.html'>https://gcompris.net/donate-en.html</a>.") +
-
-        "<br />" +
-
-        "<img width='" + 320 * ApplicationInfo.ratio +
-        "' height='" + 114 * ApplicationInfo.ratio + "' src='qrc:/gcompris/src/core/resource/gcompris-logo-full.svg'/>" +
 
         "<br />" +
 
