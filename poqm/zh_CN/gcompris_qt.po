@@ -23897,13 +23897,13 @@ msgctxt "DialogAbout|"
 msgid "Based on Qt %1 and %2"
 msgstr ""
 
-#: core/DialogAbout.qml:61
+#: core/DialogAbout.qml:64
 msgctxt "DialogAbout|"
 msgid "GCompris Home Page: https://gcompris.net"
 msgstr "GCompris 主页： https://gcompris.net"
 
 #. Replace the link with the page in your language if it exists, else keep the english page link
-#: core/DialogAbout.qml:65
+#: core/DialogAbout.qml:67
 msgctxt "DialogAbout|"
 msgid ""
 "You can provide financial support for the development of <b>GCompris</b>, "
@@ -23911,12 +23911,12 @@ msgid ""
 "net/donate-en.html</a>."
 msgstr ""
 
-#: core/DialogAbout.qml:75
+#: core/DialogAbout.qml:72
 msgctxt "DialogAbout|"
 msgid "<b>GCompris</b> is a Free Software developed within the KDE community."
 msgstr "<b>GCompris</b> 是在 KDE 社区内开发的自由软件。"
 
-#: core/DialogAbout.qml:79
+#: core/DialogAbout.qml:76
 #, qt-format
 msgctxt "DialogAbout|"
 msgid ""
@@ -23937,7 +23937,7 @@ msgstr ""
 "献，包括您。<br /><br />更多关于 KDE 社区和我们生产的软件的信息访问 <a href="
 "\"%2\">%2</a> 。"
 
-#: core/DialogAbout.qml:96
+#: core/DialogAbout.qml:93
 #, qt-format
 msgctxt "DialogAbout|"
 msgid ""
@@ -23955,7 +23955,7 @@ msgstr ""
 "问题跟踪系统登记您的愿望。请使用叫作“需求列表”(Wishlist) 的机制来说明您的需求"
 "程度。"
 
-#: core/DialogAbout.qml:108
+#: core/DialogAbout.qml:105
 #, qt-format
 msgctxt "DialogAbout|"
 msgid ""
@@ -23972,7 +23972,7 @@ msgstr ""
 "\"%1\">%1</a> 获取您可以加入的一些项目的信息。<br /><br />如果您需要更多的信"
 "息或文档，请访问 <a href=\"%2\">%2</a>。"
 
-#: core/DialogAbout.qml:125
+#: core/DialogAbout.qml:122
 #, qt-format
 msgctxt "DialogAbout|"
 msgid ""
@@ -23995,13 +23995,13 @@ msgstr ""
 "\"%2\">%2</a> 上面的方法之一通过资金捐助支持我们的努力。<br /><br />预先向您"
 "的支持表示非常的感谢。"
 
-#: core/DialogAbout.qml:142
+#: core/DialogAbout.qml:139
 #, qt-format
 msgctxt "DialogAbout|"
 msgid "<b>A big thanks to the development team:</b> %1"
 msgstr "<b>非常感谢开发团队：</b> %1"
 
-#: core/DialogAbout.qml:146
+#: core/DialogAbout.qml:143
 #, qt-format
 msgctxt "DialogAbout|"
 msgid "<b>A big thanks to the translation team:</b> %1"

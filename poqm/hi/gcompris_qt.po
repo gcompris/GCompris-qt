@@ -28505,7 +28505,7 @@ msgctxt "DialogAbout|"
 msgid "Based on Qt %1 and %2"
 msgstr "Qt %1 पर आधारित"
 
-#: core/DialogAbout.qml:61
+#: core/DialogAbout.qml:64
 #, fuzzy
 #| msgctxt "DialogAbout|"
 #| msgid "GCompris Home Page: http://gcompris.net"
@@ -28514,7 +28514,7 @@ msgid "GCompris Home Page: https://gcompris.net"
 msgstr "जीकॉम्प्रिस मुख पृष्ठ: http://gcompris.net"
 
 #. Replace the link with the page in your language if it exists, else keep the english page link
-#: core/DialogAbout.qml:65
+#: core/DialogAbout.qml:67
 msgctxt "DialogAbout|"
 msgid ""
 "You can provide financial support for the development of <b>GCompris</b>, "
@@ -28522,12 +28522,12 @@ msgid ""
 "net/donate-en.html</a>."
 msgstr ""
 
-#: core/DialogAbout.qml:75
+#: core/DialogAbout.qml:72
 msgctxt "DialogAbout|"
 msgid "<b>GCompris</b> is a Free Software developed within the KDE community."
 msgstr "<b>जीकॉम्प्रिस</b> केडीई समुदाय के भीतर विकसित एक मुक्त सॉफ्टवेयर है।"
 
-#: core/DialogAbout.qml:79
+#: core/DialogAbout.qml:76
 #, qt-format
 msgctxt "DialogAbout|"
 msgid ""
@@ -28549,7 +28549,7 @@ msgstr ""
 "आप के साथ, केडीई में योगदान देते हैं।<br/><br/> केडीई समुदाय और हमारे द्वारा निर्मित "
 "सॉफ्टवेयर के बारे में अधिक जानकारी के लिए <a href=\"%2\">%2</a> पर जाएं।"
 
-#: core/DialogAbout.qml:96
+#: core/DialogAbout.qml:93
 #, qt-format
 msgctxt "DialogAbout|"
 msgid ""
@@ -28568,7 +28568,7 @@ msgstr ""
 "है तो आप अपनी इच्छा को पंजीकृत करने के लिए बग ट्रैकिंग प्रणाली का उपयोग करने के लिए आपका "
 "स्वागत है । सुनिश्चित करें कि आप “विशलिस्ट” नामक गंभीरता का उपयोग करते हैं।"
 
-#: core/DialogAbout.qml:108
+#: core/DialogAbout.qml:105
 #, qt-format
 msgctxt "DialogAbout|"
 msgid ""
@@ -28587,7 +28587,7 @@ msgstr ""
 "यदि आपको अधिक आवश्यकता है जानकारी या दस्तावेज़ीकरण, फिर <a href=\"%2\">%2</a> के "
 "लिए एक यात्रा आपको आपको क्या जरूरत होगी।"
 
-#: core/DialogAbout.qml:125
+#: core/DialogAbout.qml:122
 #, qt-format
 msgctxt "DialogAbout|"
 msgid ""
@@ -28612,13 +28612,13 @@ msgstr ""
 "तरीकों में से एक का उपयोग करते हुए वित्तीय दान के साथ अपने प्रयासों के समर्थन के लिए "
 "प्रोत्साहित करना चाहते हैं। <br/><br/> आपके समर्थन के लिए बहुत पहले धन्यवाद।"
 
-#: core/DialogAbout.qml:142
+#: core/DialogAbout.qml:139
 #, qt-format
 msgctxt "DialogAbout|"
 msgid "<b>A big thanks to the development team:</b> %1"
 msgstr "<b>विकास टीम को बहुत-बहुत धन्यवाद:</b> %1"
 
-#: core/DialogAbout.qml:146
+#: core/DialogAbout.qml:143
 #, qt-format
 msgctxt "DialogAbout|"
 msgid "<b>A big thanks to the translation team:</b> %1"

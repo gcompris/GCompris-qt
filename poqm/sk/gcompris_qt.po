@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_qt\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2023-01-16 00:29+0100\n"
+"PO-Revision-Date: 2023-04-12 11:57+0200\n"
 "Last-Translator: Miroslav Ďurian <aasami@gmail.com>\n"
 "Language-Team: Slovak <kde-i18n-doc@kde.org>\n"
 "Language: sk\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 "X-Language: sk\n"
 "X-Qt-Contexts: true\n"
-"X-Generator: Lokalize 22.12.0\n"
+"X-Generator: Lokalize 22.12.2\n"
 
 #. Activity title
 #: activities/advanced_colors/ActivityInfo.qml:15
@@ -1851,7 +1851,7 @@ msgstr "Klávesnica pre najmenších"
 #: activities/baby_keyboard/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "A simple activity to discover the keyboard."
-msgstr ""
+msgstr "Jednoduchá aktivita na objavovanie klávesnice."
 
 #. Help goal
 #: activities/baby_keyboard/ActivityInfo.qml:20
@@ -1871,6 +1871,12 @@ msgid ""
 "    Other keys will just play a click sound.\n"
 "    "
 msgstr ""
+"Stlačte ľubovoľné tlačidlo na klávesnici.\n"
+"  Písmená, čísla a iné klávesy zobrazia príslušný znak na obrazovke.\n"
+"  Ak je k nemu príslušný hlas, tak sa prehrá. V opačnom prípade sa ozve "
+"pípnutie.\n"
+"  Ostatné klávesy vydajú zvuk cvaknutia.\n"
+"  "
 
 #. Activity title
 #: activities/baby_mouse/ActivityInfo.qml:14
@@ -1880,12 +1886,9 @@ msgstr "Myška"
 
 #. Help title
 #: activities/baby_mouse/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Move the mouse or touch the screen"
 msgctxt "ActivityInfo|"
 msgid "Move the mouse or touch the screen and observe the result."
-msgstr "Pohnúť myšou alebo sa dotknúť obrazovky"
+msgstr "Pohnite myšou alebo sa dotknite obrazovky a sledujte výsledok."
 
 #. Help goal
 #: activities/baby_mouse/ActivityInfo.qml:19
@@ -1894,6 +1897,8 @@ msgid ""
 "Provide audio-visual feedback when using the mouse to help discovering its "
 "usage for young children."
 msgstr ""
+"Poskytnúť audio-vizuálnu odozvu pri použití myši. Je to pomôcka na objavenie "
+"jej použitia pre najmenšie deti."
 
 #. Help prerequisite
 #: activities/baby_mouse/ActivityInfo.qml:21
@@ -1921,6 +1926,8 @@ msgid ""
 "The leftmost column contains 4 ducks, clicking on one of them produces a "
 "sound and an animation."
 msgstr ""
+"Stĺpec na ľavej strane obsahuje 4 kačice. Kliknutie na ktorúkoľvek z nich "
+"vyvolá animáciu a zvukovú odozvu."
 
 #: activities/baby_mouse/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
@@ -1928,6 +1935,8 @@ msgid ""
 "The central area contains a blue duck, moving the mouse cursor or doing a "
 "drag gesture on a touchscreen makes the blue duck move."
 msgstr ""
+"Stredná oblasť obsahuje modrú kačicu. Pohyb myši alebo gesto ťahania na "
+"dotykovej obrazovke spôsobí pohyb modrej kačky."
 
 #: activities/baby_mouse/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
@@ -1935,13 +1944,15 @@ msgid ""
 "The arrows area, clicking on one of them makes the blue duck move in the "
 "corresponding direction."
 msgstr ""
+"Oblasť šípok.Kliknutím na jednu z nich pohne modrú kačku zodpovedajúcim "
+"smerom."
 
 #: activities/baby_mouse/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid ""
 "Doing a simple click in the central area shows a marker at the click "
 "position."
-msgstr ""
+msgstr "Jednoduchý klik v stednej časti zobrazí značku na mieste kliknutia."
 
 #. Activity title
 #: activities/baby_tangram/ActivityInfo.qml:15
@@ -1951,36 +1962,24 @@ msgstr "Skladačka pre najmenších"
 
 #. Help title
 #: activities/baby_tangram/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "The objective is to form a given shape"
 msgctxt "ActivityInfo|"
 msgid "The objective is to assemble the baby puzzle."
-msgstr "Cieľom je vytvoriť daný tvar"
+msgstr "Cieľom je poskladať detskú skladačku."
 
 #. Help manual
 #: activities/baby_tangram/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Select the object to form. Move a piece by dragging it. The symmetrical "
-#| "button appears on items that supports it. Click on the rotation button or "
-#| "drag around it to show the rotation you want. More complicated levels can "
-#| "be found in tangram activity."
 msgctxt "ActivityInfo|"
 msgid ""
 "Move a piece by dragging it. Use the rotation button if necessary. More "
 "complicated levels can be found in tangram activity."
 msgstr ""
-"Vyberte objekt, ktorý chcete vytvoriť. Presuňte diel jeho ťahaním. "
-"Symetrické tlačidlo sa objaví na položkách, ktoré ho podporujú. Kliknutím na "
-"tlačidlo rotácie alebo ťahaním okolo neho zobrazíte požadovanú rotáciu. "
-"Zložitejšie úrovne možno nájsť v tangramovej aktivite."
+"Posúvajte kúsky ťahaním. Ak je to potrebné, použite tlačidlo otáčania. "
+"Zložitejšie úrovne nájdete v aktivite Tangram."
 
 #: activities/baby_wordprocessor/ActivityConfig.qml:27
 msgctxt "ActivityConfig|"
 msgid "Play characters' sound when typed"
-msgstr ""
+msgstr "Prahrať zvuky znakov pri stlačení"
 
 #. Activity title
 #: activities/baby_wordprocessor/ActivityInfo.qml:15
@@ -2043,7 +2042,7 @@ msgstr "Šípky: pohyb v texte"
 #: activities/baby_wordprocessor/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Shift + Arrows: select a part of the text"
-msgstr ""
+msgstr "Shift + Šípka: označiť časť textu"
 
 #: activities/baby_wordprocessor/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
@@ -2063,7 +2062,7 @@ msgstr "Ctrl + X: vystrihnúť vybraný text"
 #: activities/baby_wordprocessor/ActivityInfo.qml:32
 msgctxt "ActivityInfo|"
 msgid "Ctrl + V: paste copied or cut text"
-msgstr ""
+msgstr "Ctrl + V: prilepiť skopírovaný alebo vystrihnutý text"
 
 #: activities/baby_wordprocessor/ActivityInfo.qml:33
 msgctxt "ActivityInfo|"
@@ -2163,48 +2162,42 @@ msgstr "Pretiahnuť položky tak, aby si zodpovedali."
 #: activities/babyshapes/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Complete the puzzle"
-msgstr "Dokončiť puzzle"
+msgstr "Doplniť tvary"
 
 #. Help title
 #: activities/babyshapes/ActivityInfo.qml:21
 #: activities/details/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Drag and Drop the shapes on their respective targets."
-msgstr "Pretiahnuť tvary na ich príslušné ciele."
+msgstr "Presunúť tvary na im prislúchajúce miesto."
 
 #. Help manual
 #: activities/babyshapes/ActivityInfo.qml:28
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Complete the puzzle by dragging each piece from the set of pieces on the "
-#| "left, to the matching space in the puzzle."
 msgctxt "ActivityInfo|"
 msgid ""
 "Complete the puzzle by dragging each piece on the side to the matching spot."
 msgstr ""
-"Dokončiť puzzle preťahovaním každého kúska zo skupiny na ľavej strane na "
-"zodpovedajúce miesto v puzzle."
+"Doplniť skladačku zo všetkých kúskov na boku ťahaním na príslušné miesto."
 
 #: activities/babyshapes/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid "The dog is provided by Andre Connes and released under the GPL"
-msgstr "Pes je poskytnutý od Andre Connesa a uvoľnený pod GPL"
+msgstr "Psa poskytol Andre Connes pod licenciou GPL"
 
 #: activities/babyshapes/resource/board/board1_0.qml:14
 msgctxt "board1_0|"
 msgid "Drag and Drop the items to match them."
-msgstr "Pretiahnuť položky tak, aby si zodpovedali."
+msgstr "Presunúť ťahaním položky tak, aby sedeli."
 
 #: activities/babyshapes/resource/board/board5_0.qml:14
 msgctxt "board5_0|"
 msgid "Hello! My name is Lock."
-msgstr "Ahoj! Moje meno je Lock."
+msgstr "Ahoj! Volám sa Lok."
 
 #: activities/babyshapes/resource/board/board6_0.qml:14
 msgctxt "board6_0|"
 msgid "Lock with colored shapes."
-msgstr "Lock s farebnými tvarmi."
+msgstr "Lok s farebnými tvarmi."
 
 #: activities/babyshapes/resource/board/board7_0.qml:15
 msgctxt "board7_0|"
@@ -2254,7 +2247,7 @@ msgstr "Spustiť editor"
 #: activities/balancebox/ActivityConfig.qml:40
 msgctxt "ActivityConfig|"
 msgid "Start the activity to access the editor"
-msgstr ""
+msgstr "Spustite aktivitu pre sprístupnenie editora"
 
 #: activities/balancebox/ActivityConfig.qml:49
 msgctxt "ActivityConfig|"
@@ -2264,7 +2257,7 @@ msgstr "Načítať uložené úrovne"
 #: activities/balancebox/ActivityConfig.qml:49
 msgctxt "ActivityConfig|"
 msgid "Start the activity to load your levels"
-msgstr ""
+msgstr "Spustite aktivitu pre nahratie uložených úrovní"
 
 #. Activity title
 #: activities/balancebox/ActivityInfo.qml:18
@@ -2314,7 +2307,7 @@ msgstr ""
 #: activities/balancebox/ActivityInfo.qml:32
 msgctxt "ActivityInfo|"
 msgid "Cross: clear a map cell completely"
-msgstr ""
+msgstr "Krížik: úplne vymazať bunku"
 
 #: activities/balancebox/ActivityInfo.qml:33
 msgctxt "ActivityInfo|"
@@ -4033,7 +4026,7 @@ msgstr "Čierny vyhral"
 #: activities/checkers_2players/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Play checkers (with a friend)"
-msgstr "Hraj dámu (s kamarátom)"
+msgstr "Hrať dámu (s kamarátom) "
 
 #. Help manual
 #: activities/checkers_2players/ActivityInfo.qml:24
@@ -5223,7 +5216,7 @@ msgstr "Porovnať čísla"
 #: activities/comparator/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Compare the numbers and choose the corresponding sign."
-msgstr ""
+msgstr "Porovnaj čísla a zvoľ príslušné znamienko."
 
 #. Help goal
 #: activities/comparator/ActivityInfo.qml:22
@@ -5239,6 +5232,9 @@ msgid ""
 "symbol for this pair. When each line contains a symbol, select the OK button "
 "to validate the answers."
 msgstr ""
+"Zvoľte pár čísel v zozname. Potom vyberte správny symbol porovnania pre "
+"tento pár. Keď bude každý riadok obsahovať symbol, stlačením tlačidla OK "
+"overíte odpovede."
 
 #: activities/comparator/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
@@ -5246,21 +5242,23 @@ msgid ""
 "If some answers are incorrect, a cross icon will appear on the corresponding "
 "lines. Correct the errors, then select the OK button again."
 msgstr ""
+"Ak sú niektoré odpovede nesprávne na príslušných riadkoch sa zobrazí krížik. "
+"Opravte chyby a znova stlačte tlačidlo OK."
 
 #: activities/comparator/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid "Up and Down arrows: select a pair of numbers in the list"
-msgstr ""
+msgstr "Šípky hore a dole: zvoliť pár čísel v zozname"
 
 #: activities/comparator/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: select a symbol button"
-msgstr ""
+msgstr "Šípky doľava a doprava: zvoliť tlačidlo so symbolom"
 
 #: activities/comparator/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
 msgid "Space: if a symbol button is selected, enter this symbol"
-msgstr ""
+msgstr "Medzerník: ak je zvolené tlačidlo symbolu, vložiť tento symbol"
 
 #: activities/comparator/ActivityInfo.qml:32
 msgctxt "ActivityInfo|"
@@ -5270,7 +5268,7 @@ msgstr "Enter: skontrolujte si vašu odpoveď"
 #: activities/comparator/ActivityInfo.qml:33
 msgctxt "ActivityInfo|"
 msgid "&lt;, &gt; or =: enter the corresponding symbol"
-msgstr ""
+msgstr "&lt;, &gt; alebo =: zadaj príslušný symbol"
 
 #: activities/comparator/resource/1/Data.qml:36
 #: activities/tens_complement_find/resource/3/Data.qml:9
@@ -5279,12 +5277,9 @@ msgid "Numbers from 1 to 9."
 msgstr "Čísla od 1 po 9."
 
 #: activities/comparator/resource/10/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "2 decimal places between 0 and 99.99."
 msgctxt "Data|"
 msgid "3 decimal places between 0 and 999.999."
-msgstr "2 desatinné miesta medzi 0 a 99,99."
+msgstr "3 desatinné miesta medzi 0 a 999,999."
 
 #: activities/comparator/resource/2/Data.qml:14
 msgctxt "Data|"
@@ -5312,20 +5307,14 @@ msgid "Numbers from 1 to 1 billion."
 msgstr "Čísla od 1 do 1 miliardy."
 
 #: activities/comparator/resource/7/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "1 decimal place between 0 and 9, same integer part."
 msgctxt "Data|"
 msgid "1 decimal place between 0 and 9.9, same integer part."
-msgstr "1 desatinné miesto medzi 0 a 9 s rovnakou celočíselnou časťou."
+msgstr "1 desatinné miesto medzi 0 a 9,9 s rovnakou celočíselnou časťou."
 
 #: activities/comparator/resource/8/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "1 decimal place between 0 and 9."
 msgctxt "Data|"
 msgid "1 decimal place between 0 and 9.9."
-msgstr "1 desatinné miesto medzi 0 a 9."
+msgstr "1 desatinné miesto medzi 0 a 9.9."
 
 #: activities/comparator/resource/9/Data.qml:14
 msgctxt "Data|"
@@ -5756,12 +5745,6 @@ msgstr ""
 "Konvertovaný výstup pre BCD na 7-segment je:"
 
 #: activities/digital_electricity/components/Comparator.qml:22
-#, fuzzy
-#| msgctxt "Comparator|"
-#| msgid ""
-#| "Comparator takes 2 numbers as input, A and B. It compares them and "
-#| "outputs 3 values. First output is 1 if A < B, 0 otherwise. Second is 1 if "
-#| "A = B, 0 otherwise. Third is 1 if A > B, 0 otherwise. "
 msgctxt "Comparator|"
 msgid ""
 "A comparator takes 2 numbers as input, A and B. It compares them and outputs "
@@ -5769,9 +5752,9 @@ msgid ""
 "output is 1 if A = B, otherwise it's 0. The third output is 1 if A > B, "
 "otherwise it's 0. "
 msgstr ""
-"Komparátor prijíma 2 čísla ako vstup, A a B. Porovnáva ich a výstupom sú 3 "
-"hodnoty. Prvý výstup je 1, ak A < B, inak 0. Druhá je 1, ak A = B, inak 0. "
-"Tretia je 1, ak A > B, inak 0."
+"Porovnávač prijíma 2 čísla ako vstup, A a B. Porovnáva ich a výstupom sú 3 "
+"hodnoty. Prvý výstup je 1, ak A < B, inak 0. Druhá je 1, ak A = B, inak je "
+"0. Tretia je 1, ak A > B, inak je 0."
 
 #: activities/digital_electricity/components/DigitalLight.qml:21
 #, fuzzy
@@ -6451,21 +6434,15 @@ msgstr ""
 "svietiť, keď je aspoň jeden zo spínačov vypnutý."
 
 #: activities/digital_electricity/TutorialDataset.qml:511
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid ""
-#| "A comparator takes two numbers (A and B) as input and produces 3 values "
-#| "as output. First value is 1 if A < B, second value is 1 for A = B and "
-#| "third value is 1 for A > B."
 msgctxt "TutorialDataset|"
 msgid ""
 "A comparator takes two numbers (A and B) as input and produces 3 values as "
 "output. The first value is 1 if A < B, the second value is 1 if A = B and "
 "the third value is 1 if A > B."
 msgstr ""
-"Komparátor prijíma ako vstup dve čísla (A a B) a ako výstup vytvorí 3 "
-"hodnoty. Prvá hodnota je 1, ak A <B, druhá hodnota je 1 pre A = B a tretia "
-"hodnota je 1 pre A> B."
+"Porovnávač prijíma ako vstup dve čísla (A a B) a ako výstup vytvorí 3 "
+"hodnoty. Prvá hodnota je 1, ak A < B, druhá hodnota je 1 pre A = B a tretia "
+"hodnota je 1 pre A > B."
 
 #: activities/digital_electricity/TutorialDataset.qml:512
 #, fuzzy
@@ -9954,27 +9931,18 @@ msgstr "Vyhľadať oblasť"
 
 #. Help title
 #: activities/geo-country/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Drag and Drop the regions to redraw the whole country"
 msgctxt "ActivityInfo|"
 msgid "Drag and Drop the regions to complete the country maps."
-msgstr "Pretiahnuť regióny, aby sa prekreslila celá krajina"
+msgstr "Pretiahnuť regióny, na prekrytie mapy krajiny."
 
 #. Help manual
 #: activities/geo-country/ActivityInfo.qml:28
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Drag and drop different regions of the country to correct locations to "
-#| "redraw the whole country."
 msgctxt "ActivityInfo|"
 msgid ""
 "Drag and drop different regions of the country to their correct locations to "
 "complete the map."
 msgstr ""
-"Presunutím rôznych oblastí krajiny do správnych polôh prekreslite celú "
-"krajinu."
+"Presunutím rôznych oblastí krajiny do správnych polôh pokryte celú krajinu."
 
 #: activities/geo-country/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -10350,7 +10318,6 @@ msgstr "Furlansko-Julské Benátky"
 
 #. Region of Italy: Emilia-Romagna
 #: activities/geo-country/resource/board/board11_0.qml:73
-#, fuzzy
 msgctxt "board11_0|"
 msgid "Emilia-Romagna"
 msgstr "Emilia Romagna"
@@ -10371,7 +10338,7 @@ msgstr "Umbria"
 #: activities/geo-country/resource/board/board11_0.qml:94
 msgctxt "board11_0|"
 msgid "Marche"
-msgstr ""
+msgstr "Marky"
 
 #. Region of Italy: Lazio
 #: activities/geo-country/resource/board/board11_0.qml:101
@@ -10430,7 +10397,7 @@ msgstr "Sardínia"
 #: activities/geo-country/resource/board/board12_0.qml:15
 msgctxt "board12_0|"
 msgid "States and Union Territories of India"
-msgstr ""
+msgstr "Štáty a unijné oblasti Indie"
 
 #. State of India: Himachal Pradesh
 #: activities/geo-country/resource/board/board12_0.qml:24
@@ -10448,7 +10415,7 @@ msgstr "Pandžáb"
 #: activities/geo-country/resource/board/board12_0.qml:38
 msgctxt "board12_0|"
 msgid "Uttarakhand"
-msgstr ""
+msgstr "Uttarákhand"
 
 #. State of India: Rajasthan
 #: activities/geo-country/resource/board/board12_0.qml:45
@@ -10520,7 +10487,7 @@ msgstr "Karnátaka"
 #: activities/geo-country/resource/board/board12_0.qml:122
 msgctxt "board12_0|"
 msgid "Telangana"
-msgstr ""
+msgstr "Telangána"
 
 #. State of India: Andhra Pradesh
 #: activities/geo-country/resource/board/board12_0.qml:130
@@ -10574,7 +10541,7 @@ msgstr "Nágsko"
 #: activities/geo-country/resource/board/board12_0.qml:186
 msgctxt "board12_0|"
 msgid "Odisha"
-msgstr ""
+msgstr "Urísa"
 
 #. State of India: Manipur
 #: activities/geo-country/resource/board/board12_0.qml:193
@@ -10622,13 +10589,13 @@ msgstr "Čandígarh"
 #: activities/geo-country/resource/board/board12_0.qml:243
 msgctxt "board12_0|"
 msgid "Dadra and Nagar Haveli and Daman and Diu"
-msgstr ""
+msgstr "Dadra a Nagar Haveli a Daman a Diu"
 
 #. Union Territory of India: Ladakh
 #: activities/geo-country/resource/board/board12_0.qml:251
 msgctxt "board12_0|"
 msgid "Ladakh"
-msgstr ""
+msgstr "Ladak"
 
 #. Union Territory of India: Lakshadweep
 #: activities/geo-country/resource/board/board12_0.qml:258
@@ -10646,15 +10613,12 @@ msgstr "Džammú a Kašmír"
 #: activities/geo-country/resource/board/board12_0.qml:272
 msgctxt "board12_0|"
 msgid "Puducherry"
-msgstr ""
+msgstr "Puttučéri"
 
 #: activities/geo-country/resource/board/board13_0.qml:15
-#, fuzzy
-#| msgctxt "board13_0|"
-#| msgid "Districts of Australia"
 msgctxt "board13_0|"
 msgid "States and Territories of Australia"
-msgstr "Oblasti Austrálie"
+msgstr "Štáty a oblasti Austrálie"
 
 #. State of Australia: Western Australia
 #: activities/geo-country/resource/board/board13_0.qml:24
@@ -10713,7 +10677,7 @@ msgstr "Oblasti Číny"
 #: activities/geo-country/resource/board/board14_0.qml:24
 msgctxt "board14_0|"
 msgid "Xinjiang"
-msgstr ""
+msgstr "Sin-ťiang"
 
 #. Province of China: Gansu
 #: activities/geo-country/resource/board/board14_0.qml:31
@@ -10723,18 +10687,15 @@ msgstr "Kan-su"
 
 #. Province of China: Inner Mongolia
 #: activities/geo-country/resource/board/board14_0.qml:38
-#, fuzzy
-#| msgctxt "board9_0|"
-#| msgid "Mongolia"
 msgctxt "board14_0|"
 msgid "Inner Mongolia"
-msgstr "Mongolsko"
+msgstr "Vnútorné Mongolsko"
 
 #. Province of China: Ningxia
 #: activities/geo-country/resource/board/board14_0.qml:45
 msgctxt "board14_0|"
 msgid "Ningxia"
-msgstr ""
+msgstr "Ning-sia"
 
 #. Province of China: Heilongjiang
 #: activities/geo-country/resource/board/board14_0.qml:52
@@ -10878,7 +10839,7 @@ msgstr "Jün-nan"
 #: activities/geo-country/resource/board/board14_0.qml:213
 msgctxt "board14_0|"
 msgid "Guangxi"
-msgstr ""
+msgstr "Kuang-si"
 
 #. Province of China: Guangdong
 #: activities/geo-country/resource/board/board14_0.qml:220
@@ -10901,7 +10862,7 @@ msgstr "Che-pej"
 #: activities/geo-country/resource/board/board15_0.qml:16
 msgctxt "board15_0|"
 msgid "Council areas of Scotland (North)"
-msgstr ""
+msgstr "Správne členenie severného Škótska"
 
 #. Council area of Scotland: Aberdeenshire
 #: activities/geo-country/resource/board/board15_0.qml:25
@@ -10919,22 +10880,19 @@ msgstr "Aberdeen"
 #: activities/geo-country/resource/board/board15_0.qml:39
 msgctxt "board15_0|"
 msgid "Moray"
-msgstr ""
+msgstr "Moray"
 
 #. Council area of Scotland: Na h-Eileanan Siar
 #: activities/geo-country/resource/board/board15_0.qml:46
 msgctxt "board15_0|"
 msgid "Na h-Eileanan Siar"
-msgstr ""
+msgstr "Vonkajšie Hebridy"
 
 #. Council area of Scotland: Orkney Islands
 #: activities/geo-country/resource/board/board15_0.qml:53
-#, fuzzy
-#| msgctxt "board10_0|"
-#| msgid "Cook Islands"
 msgctxt "board15_0|"
 msgid "Orkney Islands"
-msgstr "Cookove ostrovy"
+msgstr "Orkneje"
 
 #. Council area of Scotland: Shetland Islands
 #: activities/geo-country/resource/board/board15_0.qml:60
@@ -10946,12 +10904,12 @@ msgstr "Shetlandské ostrovy"
 #: activities/geo-country/resource/board/board15_0.qml:67
 msgctxt "board15_0|"
 msgid "Highland"
-msgstr ""
+msgstr "Vysočina"
 
 #: activities/geo-country/resource/board/board15_1.qml:15
 msgctxt "board15_1|"
 msgid "Council areas of Scotland (South)"
-msgstr ""
+msgstr "Správne členenie južného Škótska"
 
 #. Council area of Scotland: Angus
 #: activities/geo-country/resource/board/board15_1.qml:24
@@ -10963,13 +10921,13 @@ msgstr "Angus"
 #: activities/geo-country/resource/board/board15_1.qml:31
 msgctxt "board15_1|"
 msgid "Dundee"
-msgstr ""
+msgstr "Dundee"
 
 #. Council area of Scotland: Perth and Kinross
 #: activities/geo-country/resource/board/board15_1.qml:38
 msgctxt "board15_1|"
 msgid "Perth and Kinross"
-msgstr ""
+msgstr "Perth a Kinross"
 
 #. Council area of Scotland: Stirling
 #: activities/geo-country/resource/board/board15_1.qml:45
@@ -10981,7 +10939,7 @@ msgstr "Stirling"
 #: activities/geo-country/resource/board/board15_1.qml:52
 msgctxt "board15_1|"
 msgid "Argyll and Bute"
-msgstr ""
+msgstr "Argyll a Bute"
 
 #. Council area of Scotland: Fife
 #: activities/geo-country/resource/board/board15_1.qml:59
@@ -11029,34 +10987,31 @@ msgstr "Falkirk"
 #: activities/geo-country/resource/board/board15_1.qml:108
 msgctxt "board15_1|"
 msgid "South Lanarkshire"
-msgstr ""
+msgstr "Južný Lanarkshire"
 
 #. Council areas of Scotland: North Lanarkshire
 #: activities/geo-country/resource/board/board15_1.qml:115
 msgctxt "board15_1|"
 msgid "North Lanarkshire"
-msgstr ""
+msgstr "Severný Lanarkshire"
 
 #. Council areas of Scotland: Dumfries and Galloway
 #: activities/geo-country/resource/board/board15_1.qml:122
 msgctxt "board15_1|"
 msgid "Dumfries and Galloway"
-msgstr ""
+msgstr "Dumfries a Galloway"
 
 #. Council areas of Scotland: South Ayrshire
 #: activities/geo-country/resource/board/board15_1.qml:129
-#, fuzzy
-#| msgctxt "board8_0|"
-#| msgid "South Africa"
 msgctxt "board15_1|"
 msgid "South Ayrshire"
-msgstr "Južná Afrika"
+msgstr "Južný Ayrshire"
 
 #. Council areas of Scotland: East Ayrshire
 #: activities/geo-country/resource/board/board15_1.qml:136
 msgctxt "board15_1|"
 msgid "East Ayrshire"
-msgstr ""
+msgstr "Východný Ayrshire"
 
 #. Council areas of Scotland: Glasgow
 #: activities/geo-country/resource/board/board15_1.qml:143
@@ -11068,19 +11023,19 @@ msgstr "Glasgow"
 #: activities/geo-country/resource/board/board15_1.qml:150
 msgctxt "board15_1|"
 msgid "East Dunbartonshire"
-msgstr ""
+msgstr "Východný Dunbartonshire"
 
 #. Council areas of Scotland: West Dunbartonshire
 #: activities/geo-country/resource/board/board15_1.qml:157
 msgctxt "board15_1|"
 msgid "West Dunbartonshire"
-msgstr ""
+msgstr "Západný Dunbartonshire"
 
 #. Council areas of Scotland: East Renfrewshire
 #: activities/geo-country/resource/board/board15_1.qml:164
 msgctxt "board15_1|"
 msgid "East Renfrewshire"
-msgstr ""
+msgstr "Východný Renfrewshire"
 
 #. Council areas of Scotland: Renfrewshire
 #: activities/geo-country/resource/board/board15_1.qml:171
@@ -11092,16 +11047,13 @@ msgstr "Renfrewshire"
 #: activities/geo-country/resource/board/board15_1.qml:178
 msgctxt "board15_1|"
 msgid "Inverclyde"
-msgstr ""
+msgstr "Inverclyde"
 
 #. Council areas of Scotland: North Ayrshire
 #: activities/geo-country/resource/board/board15_1.qml:185
-#, fuzzy
-#| msgctxt "board2_0|"
-#| msgid "North America"
 msgctxt "board15_1|"
 msgid "North Ayrshire"
-msgstr "Severná Amerika"
+msgstr "Severný Ayrshire"
 
 #. Council areas of Scotland: Clackmannanshire
 #: activities/geo-country/resource/board/board15_1.qml:192
@@ -11118,22 +11070,19 @@ msgstr "Historické regióny Rumunska"
 #: activities/geo-country/resource/board/board16_0.qml:24
 msgctxt "board16_0|"
 msgid "Oltenia"
-msgstr ""
+msgstr "Malé Valašsko"
 
 #. Historical Region of Romania: Muntenia
 #: activities/geo-country/resource/board/board16_0.qml:31
 msgctxt "board16_0|"
 msgid "Muntenia"
-msgstr ""
+msgstr "Veľké Valašsko"
 
 #. Historical Region of Romania: Northern Dobruja
 #: activities/geo-country/resource/board/board16_0.qml:38
-#, fuzzy
-#| msgctxt "board7_0|"
-#| msgid "Northern Africa"
 msgctxt "board16_0|"
 msgid "Northern Dobruja"
-msgstr "Severná Afrika"
+msgstr "Severná Dobrudža"
 
 #. Historical Region of Romania: Moldavia
 #: activities/geo-country/resource/board/board16_0.qml:45
@@ -11157,19 +11106,19 @@ msgstr "Transylvánia"
 #: activities/geo-country/resource/board/board16_0.qml:66
 msgctxt "board16_0|"
 msgid "Maramureș"
-msgstr ""
+msgstr "Marmaroš"
 
 #. Historical Region of Romania: Crișana
 #: activities/geo-country/resource/board/board16_0.qml:73
 msgctxt "board16_0|"
 msgid "Crișana"
-msgstr ""
+msgstr "Krišana"
 
 #. Historical Region of Romania: Banat
 #: activities/geo-country/resource/board/board16_0.qml:80
 msgctxt "board16_0|"
 msgid "Banat"
-msgstr ""
+msgstr "Banát"
 
 #: activities/geo-country/resource/board/board17_0.qml:15
 msgctxt "board17_0|"
@@ -11180,39 +11129,36 @@ msgstr "Kultúrne regióny Litvy"
 #: activities/geo-country/resource/board/board17_0.qml:24
 msgctxt "board17_0|"
 msgid "Aukštaitija"
-msgstr ""
+msgstr "Aukštaitija"
 
 #. Cultural region of Lithuania: Dzūkija
 #: activities/geo-country/resource/board/board17_0.qml:31
 msgctxt "board17_0|"
 msgid "Dzūkija"
-msgstr ""
+msgstr "Dzukia"
 
 #. Cultural region of Lithuania: Lithuania Minor
 #: activities/geo-country/resource/board/board17_0.qml:38
-#, fuzzy
-#| msgctxt "board6_0|"
-#| msgid "Lithuania"
 msgctxt "board17_0|"
 msgid "Lithuania Minor"
-msgstr "Litva"
+msgstr "Malá Litva"
 
 #. Cultural region of Lithuania: Samogitia
 #: activities/geo-country/resource/board/board17_0.qml:45
 msgctxt "board17_0|"
 msgid "Samogitia"
-msgstr ""
+msgstr "Žmuď"
 
 #. Cultural region of Lithuania: Suvalkija
 #: activities/geo-country/resource/board/board17_0.qml:52
 msgctxt "board17_0|"
 msgid "Suvalkija"
-msgstr ""
+msgstr "Suvalkia"
 
 #: activities/geo-country/resource/board/board18_0.qml:13
 msgctxt "board18_0|"
 msgid "Autonomous communities or cities of Spain"
-msgstr ""
+msgstr "Autonómne komunity alebo mestá Španielska"
 
 #. Autonomous communities of Spain: Andalusia
 #: activities/geo-country/resource/board/board18_0.qml:22
@@ -11230,19 +11176,19 @@ msgstr "Madrid"
 #: activities/geo-country/resource/board/board18_0.qml:36
 msgctxt "board18_0|"
 msgid "Galicia"
-msgstr ""
+msgstr "Galícia"
 
 #. Autonomous communities of Spain: Castile and León
 #: activities/geo-country/resource/board/board18_0.qml:43
 msgctxt "board18_0|"
 msgid "Castile and León"
-msgstr ""
+msgstr "Kastília-León"
 
 #. Autonomous communities of Spain: Castilla-La Mancha
 #: activities/geo-country/resource/board/board18_0.qml:50
 msgctxt "board18_0|"
 msgid "Castilla-La Mancha"
-msgstr ""
+msgstr "Kastília-La Mancha"
 
 #. Autonomous communities of Spain: Catalonia
 #: activities/geo-country/resource/board/board18_0.qml:57
@@ -11254,7 +11200,7 @@ msgstr "Katalónia"
 #: activities/geo-country/resource/board/board18_0.qml:64
 msgctxt "board18_0|"
 msgid "Aragon"
-msgstr ""
+msgstr "Aragónsko"
 
 #. Autonomous communities of Spain: Valencia
 #: activities/geo-country/resource/board/board18_0.qml:71
@@ -11266,13 +11212,13 @@ msgstr "Valencia"
 #: activities/geo-country/resource/board/board18_0.qml:78
 msgctxt "board18_0|"
 msgid "Murcia"
-msgstr ""
+msgstr "Murcia"
 
 #. Autonomous communities of Spain: Asturias
 #: activities/geo-country/resource/board/board18_0.qml:85
 msgctxt "board18_0|"
 msgid "Asturias"
-msgstr ""
+msgstr "Astúria"
 
 #. Autonomous communities of Spain: Basque Country
 #: activities/geo-country/resource/board/board18_0.qml:92
@@ -11296,7 +11242,7 @@ msgstr "Kantábria"
 #: activities/geo-country/resource/board/board18_0.qml:113
 msgctxt "board18_0|"
 msgid "Navarre"
-msgstr ""
+msgstr "Navara"
 
 #. Autonomous communities of Spain: Extremadura
 #: activities/geo-country/resource/board/board18_0.qml:120
@@ -11306,33 +11252,27 @@ msgstr "Extremadura"
 
 #. Autonomous communities of Spain: Canary Islands
 #: activities/geo-country/resource/board/board18_0.qml:127
-#, fuzzy
-#| msgctxt "board10_0|"
-#| msgid "Marshall Islands"
 msgctxt "board18_0|"
 msgid "Canary Islands"
-msgstr "Marshallove ostrovy"
+msgstr "Kanárske ostrovy"
 
 #. Autonomous communities of Spain: Balearic Islands
 #: activities/geo-country/resource/board/board18_0.qml:134
-#, fuzzy
-#| msgctxt "board10_0|"
-#| msgid "Marshall Islands"
 msgctxt "board18_0|"
 msgid "Balearic Islands"
-msgstr "Marshallove ostrovy"
+msgstr "Baleáry"
 
 #. Autonomous communities of Spain: Ceuta
 #: activities/geo-country/resource/board/board18_0.qml:141
 msgctxt "board18_0|"
 msgid "Ceuta"
-msgstr ""
+msgstr "Ceuta"
 
 #. Autonomous communities of Spain: Melilla
 #: activities/geo-country/resource/board/board18_0.qml:148
 msgctxt "board18_0|"
 msgid "Melilla"
-msgstr ""
+msgstr "Melilla"
 
 #: activities/geo-country/resource/board/board1_0.qml:15
 msgctxt "board1_0|"
@@ -11379,13 +11319,13 @@ msgstr "Centre-Val-de-Loire"
 #: activities/geo-country/resource/board/board1_0.qml:75
 msgctxt "board1_0|"
 msgid "Pays de la Loire"
-msgstr ""
+msgstr "Pays de la Loire"
 
 #. Region of France: Île-de-France
 #: activities/geo-country/resource/board/board1_0.qml:83
 msgctxt "board1_0|"
 msgid "Île-de-France"
-msgstr ""
+msgstr "Île-de-France (Ostrov Francúzska)"
 
 #. Region of France: Brittany
 #: activities/geo-country/resource/board/board1_0.qml:91
@@ -11401,18 +11341,12 @@ msgstr "Normandia"
 
 #. Region of France: Hauts de France
 #: activities/geo-country/resource/board/board1_0.qml:107
-#, fuzzy
-#| msgctxt "board3|"
-#| msgid "Monuments of France"
 msgctxt "board1_0|"
 msgid "Hauts de France"
 msgstr "Hauts-de-France"
 
 #. Region of France: Grand est
 #: activities/geo-country/resource/board/board1_0.qml:115
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "Grandson"
 msgctxt "board1_0|"
 msgid "Grand est"
 msgstr "Grand-Est"
@@ -11424,9 +11358,6 @@ msgid "Bourgogne-Franche-Comté"
 msgstr "Bourgogne-Franche-Comté"
 
 #: activities/geo-country/resource/board/board2_0.qml:15
-#, fuzzy
-#| msgctxt "board2_0|"
-#| msgid "Districts of Germany"
 msgctxt "board2_0|"
 msgid "States of Germany"
 msgstr "Oblasti Nemecka"
@@ -11632,7 +11563,7 @@ msgstr "Formosa"
 #: activities/geo-country/resource/board/board3_0.qml:136
 msgctxt "board3_0|"
 msgid "Entre Rios"
-msgstr ""
+msgstr "Entre Ríos"
 
 #. Province of Argentina: Corrientes
 #: activities/geo-country/resource/board/board3_0.qml:143
@@ -11671,9 +11602,6 @@ msgid "Buenos Aires"
 msgstr "Buenos Aires"
 
 #: activities/geo-country/resource/board/board4_0.qml:15
-#, fuzzy
-#| msgctxt "board4_0|"
-#| msgid "Districts of Poland"
 msgctxt "board4_0|"
 msgid "Provinces of Poland"
 msgstr "Oblasti Poľska"
@@ -11682,13 +11610,13 @@ msgstr "Oblasti Poľska"
 #: activities/geo-country/resource/board/board4_0.qml:24
 msgctxt "board4_0|"
 msgid "Lower Silesian"
-msgstr ""
+msgstr "Dolnosliezske vojvodstvo"
 
 #. Province of Poland: West Pomeranian
 #: activities/geo-country/resource/board/board4_0.qml:31
 msgctxt "board4_0|"
 msgid "West Pomeranian"
-msgstr ""
+msgstr "Západopomoranské vojvodstvo"
 
 #. Province of Poland: Greater Poland
 #: activities/geo-country/resource/board/board4_0.qml:38
@@ -11700,7 +11628,7 @@ msgstr "Veľkopolské vojvodstvo"
 #: activities/geo-country/resource/board/board4_0.qml:45
 msgctxt "board4_0|"
 msgid "Warmian-Masurian"
-msgstr ""
+msgstr "Varmsko-Mazurské vojvodstvo"
 
 #. Province of Poland: Holy Cross
 #: activities/geo-country/resource/board/board4_0.qml:52
@@ -11712,19 +11640,19 @@ msgstr "Svätý Kríž"
 #: activities/geo-country/resource/board/board4_0.qml:59
 msgctxt "board4_0|"
 msgid "Silesian"
-msgstr ""
+msgstr "Sliezske vojvodstvo"
 
 #. Province of Poland: Pomeranian
 #: activities/geo-country/resource/board/board4_0.qml:66
 msgctxt "board4_0|"
 msgid "Pomeranian"
-msgstr ""
+msgstr "Pomoranské vojvodstvo"
 
 #. Province of Poland: Podlaskie
 #: activities/geo-country/resource/board/board4_0.qml:73
 msgctxt "board4_0|"
 msgid "Podlaskie"
-msgstr ""
+msgstr "Podleské vojvodstvo"
 
 #. Province of Poland: Subcarpathian
 #: activities/geo-country/resource/board/board4_0.qml:80
@@ -11742,7 +11670,7 @@ msgstr "Opolské vojvodstvo"
 #: activities/geo-country/resource/board/board4_0.qml:94
 msgctxt "board4_0|"
 msgid "Masovian"
-msgstr ""
+msgstr "Mazovské vojvodstvo"
 
 #. Province of Poland: Lesser Poland
 #: activities/geo-country/resource/board/board4_0.qml:101
@@ -11772,7 +11700,7 @@ msgstr "Lublinské vojvodstvo"
 #: activities/geo-country/resource/board/board4_0.qml:129
 msgctxt "board4_0|"
 msgid "Kuyavian-Pomeranian"
-msgstr ""
+msgstr "Kujavsko-pomoranské vojvodstvo"
 
 #: activities/geo-country/resource/board/board5_0.qml:16
 msgctxt "board5_0|"
@@ -11879,7 +11807,7 @@ msgstr "Kocaeli"
 #: activities/geo-country/resource/board/board5_0.qml:137
 msgctxt "board5_0|"
 msgid "Kirsehir"
-msgstr ""
+msgstr "Kirsehír"
 
 #. Province of Turkey: Kırklareli
 #: activities/geo-country/resource/board/board5_0.qml:144
@@ -12064,7 +11992,7 @@ msgstr "Východné oblasti Turecka"
 #: activities/geo-country/resource/board/board5_1.qml:24
 msgctxt "board5_1|"
 msgid "Van"
-msgstr "Van"
+msgstr "Dodávka"
 
 #. Province of Turkey: Tunceli
 #: activities/geo-country/resource/board/board5_1.qml:31
@@ -12504,20 +12432,14 @@ msgstr "Sergipe"
 
 #. Federative unit of Brazil: Distrito Federal
 #: activities/geo-country/resource/board/board7_0.qml:206
-#, fuzzy
-#| msgctxt "board1_0|"
-#| msgid "Districts of France"
 msgctxt "board7_0|"
 msgid "Distrito Federal"
-msgstr "Oblasti Francúzska"
+msgstr "Federálny dištrikt"
 
 #: activities/geo-country/resource/board/board8_0.qml:15
-#, fuzzy
-#| msgctxt "board8_0|"
-#| msgid "Districts of Canada"
 msgctxt "board8_0|"
 msgid "Provinces and territories of Canada"
-msgstr "Štáty Kanady"
+msgstr "Provincie a teritóriá Kanady"
 
 #. Provinces and territories of Canada: Yukon
 #: activities/geo-country/resource/board/board8_0.qml:24
@@ -12577,7 +12499,7 @@ msgstr "Quebec"
 #: activities/geo-country/resource/board/board8_0.qml:87
 msgctxt "board8_0|"
 msgid "Newfoundland and Labrador"
-msgstr ""
+msgstr "Newfoundland a Labrador"
 
 #. Provinces and territories of Canada: New Brunswick
 #: activities/geo-country/resource/board/board8_0.qml:94
@@ -12598,9 +12520,6 @@ msgid "Prince Edward Island"
 msgstr "Ostrov princa Eduarda"
 
 #: activities/geo-country/resource/board/board9_0.qml:15
-#, fuzzy
-#| msgctxt "board9_0|"
-#| msgid "Districts of Mexico"
 msgctxt "board9_0|"
 msgid "States of Mexico"
 msgstr "Štáty Mexika"
@@ -12735,7 +12654,7 @@ msgstr "Guanajuato"
 #: activities/geo-country/resource/board/board9_0.qml:171
 msgctxt "board9_0|"
 msgid "Estado de México"
-msgstr ""
+msgstr "Štát Mexiko"
 
 #. State of Mexico: Durango
 #: activities/geo-country/resource/board/board9_0.qml:178
@@ -12808,25 +12727,17 @@ msgstr "Vyhľadať kraje"
 
 #. Help title
 #: activities/geography/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Drag and Drop the items to make them match"
 msgctxt "ActivityInfo|"
 msgid "Drag and Drop the items to complete the map."
-msgstr "Pretiahnuť položky tak, aby si zodpovedali"
+msgstr "Pretiahnuť položky na pokrytie mapy"
 
 #. Help manual
 #: activities/geography/ActivityInfo.qml:28
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Drag and drop the map pieces to correct locations to redraw the whole map."
 msgctxt "ActivityInfo|"
 msgid ""
 "Drag and drop the map pieces to their correct locations to complete the map."
 msgstr ""
-"Pretiahnite časti mapy do správneho umiestnenia, aby ste prekreslili celú "
-"mapu."
+"Pretiahnite časti mapy do správneho umiestnenia, na pokrytie celej mapy."
 
 #: activities/geography/resource/board/board10_0.qml:15
 msgctxt "board10_0|"
@@ -12904,12 +12815,9 @@ msgid "Maldives"
 msgstr "Maldivy"
 
 #: activities/geography/resource/board/board12_0.qml:15
-#, fuzzy
-#| msgctxt "board8_0|"
-#| msgid "South Africa"
 msgctxt "board12_0|"
 msgid "Southeast Asia"
-msgstr "Južná Afrika"
+msgstr "Juhovýchodná Ázia"
 
 #: activities/geography/resource/board/board12_0.qml:24
 msgctxt "board12_0|"
@@ -13092,12 +13000,9 @@ msgid "Cook Islands"
 msgstr "Cookove ostrovy"
 
 #: activities/geography/resource/board/board14_0.qml:144
-#, fuzzy
-#| msgctxt "board10_0|"
-#| msgid "Solomon Islands"
 msgctxt "board14_0|"
 msgid "Samoan Islands"
-msgstr "Šalamúnove ostrovy"
+msgstr "Samoa"
 
 #: activities/geography/resource/board/board14_0.qml:151
 msgctxt "board14_0|"
@@ -13107,7 +13012,7 @@ msgstr "Austrália"
 #: activities/geography/resource/board/board14_0.qml:158
 msgctxt "board14_0|"
 msgid "United States Minor Outlying Islands"
-msgstr "Menšie odľahlé ostrovy"
+msgstr "Menšie odľahlé ostrovy Spojených štátov"
 
 #: activities/geography/resource/board/board14_0.qml:165
 msgctxt "board14_0|"
@@ -13888,7 +13793,7 @@ msgstr "Palestína"
 #: activities/geography/resource/board/board9_0.qml:103
 msgctxt "board9_0|"
 msgid "Lebanon"
-msgstr "Lebanon"
+msgstr "Libanon"
 
 #: activities/geography/resource/board/board9_0.qml:110
 msgctxt "board9_0|"
@@ -14039,12 +13944,9 @@ msgid "Practice subtraction equality."
 msgstr "Precvičovanie rovnosti po odčítaní."
 
 #: activities/gnumch-equality/resource/3/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice the multiplication operation"
 msgctxt "Data|"
 msgid "Practice multiplication equality."
-msgstr "Precvičovanie násobilky"
+msgstr "Precvičovanie rovnosti po násobení"
 
 #: activities/gnumch-equality/resource/4/Data.qml:13
 msgctxt "Data|"
@@ -14190,7 +14092,7 @@ msgid ""
 "Guide the Number Muncher to all the expressions that do not equal the number "
 "at the bottom of the screen."
 msgstr ""
-"Doveďte Čísložrúta na všetky výrazy, ktoré sa nerovnajú číslu uvedenému v "
+"Doveďte Čísložrúta na všetky výrazy, ktoré sa nerovnajú číslu uvedenému  v "
 "spodnej časti obrazovky."
 
 #. Help goal
@@ -14202,25 +14104,22 @@ msgstr "Precvič si sčítanie, odčítanie, násobenie a delenie."
 #: activities/gnumch-inequality/resource/1/Data.qml:13
 msgctxt "Data|"
 msgid "Practice addition inequality."
-msgstr "Precvičovanie rovnosti po sčítaní."
+msgstr "Precvičovanie nerovnosti súčtov."
 
 #: activities/gnumch-inequality/resource/2/Data.qml:13
 msgctxt "Data|"
 msgid "Practice subtraction inequality."
-msgstr "Precvičovanie rovnosti po odčítaní."
+msgstr "Precvičovanie nerovnosti po odčítaní."
 
 #: activities/gnumch-inequality/resource/3/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice the multiplication operation"
 msgctxt "Data|"
 msgid "Practice multiplication inequality."
-msgstr "Precvičovanie násobilky"
+msgstr "Precvičovanie nerovnosti po násobení"
 
 #: activities/gnumch-inequality/resource/4/Data.qml:13
 msgctxt "Data|"
 msgid "Practice division inequality."
-msgstr "Precvičovanie rovnosti po delení."
+msgstr "Precvičovanie nerovnosti po delení."
 
 #. Activity title
 #: activities/gnumch-multiples/ActivityInfo.qml:15
@@ -14371,6 +14270,9 @@ msgid ""
 "color. Select a node, then select an item in the list to place it on the "
 "node."
 msgstr ""
+"Umiestnite farby/tvary na grafe tak aby žiadne priľahlé uzly nemali rovnakú "
+"farbu. Vyberte uzol, potom zvoľte položku zo zoznamu pre jej umiestnenie na "
+"uzol."
 
 #: activities/graph-coloring/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
@@ -14971,7 +14873,7 @@ msgstr "Slovná zásoba a čítanie."
 #: activities/readingv/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid "Reading."
-msgstr "Čítanie."
+msgstr "Základy čítania."
 
 #. Help manual
 #: activities/imagename/ActivityInfo.qml:27
@@ -15048,7 +14950,7 @@ msgstr "stojan na vajíčko"
 #: activities/imagename/resource/board/board2_0.qml:90
 msgctxt "board2_0|"
 msgid "flower"
-msgstr "flower"
+msgstr "kvet"
 
 #: activities/imagename/resource/board/board2_0.qml:98
 msgctxt "board2_0|"
@@ -15143,7 +15045,7 @@ msgstr "nákladné auto"
 #: activities/imagename/resource/board/board5_0.qml:98
 msgctxt "board5_0|"
 msgid "van"
-msgstr "van"
+msgstr "dodávka"
 
 #: activities/imagename/resource/board/board6_0.qml:58
 msgctxt "board6_0|"
@@ -15203,7 +15105,7 @@ msgstr "fľaša"
 #: activities/imagename/resource/board/board7_0.qml:98
 msgctxt "board7_0|"
 msgid "flower"
-msgstr "flower"
+msgstr "kvet"
 
 #. Activity title
 #: activities/instruments/ActivityInfo.qml:15
@@ -15235,7 +15137,7 @@ msgstr "Klikni na správne hudobné nástroje"
 #: activities/instruments/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Tab: repeat the instrument sound"
-msgstr ""
+msgstr "Tab: zopakovať zvuk nástroja"
 
 #: activities/instruments/instruments.js:13
 #: activities/instruments/instruments.js:62
@@ -16266,18 +16168,15 @@ msgstr "Učme sa odčítavať"
 
 #. Help title
 #: activities/learn_subtractions/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Subtraction of small numbers"
 msgctxt "ActivityInfo|"
 msgid "Learn subtractions with small numbers."
-msgstr "Odčítavanie malých čísel"
+msgstr "Výučba odčítavania s malými číslami"
 
 #. Help goal
 #: activities/learn_subtractions/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Learn subtractions by counting their result."
-msgstr ""
+msgstr "Učte sa odčítavať spočítaním ich výsledku."
 
 #. Help manual
 #: activities/learn_subtractions/ActivityInfo.qml:24
@@ -16286,6 +16185,8 @@ msgid ""
 "A subtraction is displayed on the screen. Calculate the result, fill the "
 "corresponding number of circles and validate your answer."
 msgstr ""
+"Na obrazovke je zobrazené odčítavanie. Vypočítajte výsledok tak, že vyplníte "
+"zodpovedajúci počet kruhov a overte svoju odpoveď."
 
 #: activities/learn_subtractions/resource/1/Data.qml:14
 msgctxt "Data|"
@@ -16295,22 +16196,22 @@ msgstr "Odčítanie s 1, 2, a 3."
 #: activities/learn_subtractions/resource/2/Data.qml:14
 msgctxt "Data|"
 msgid "Subtractions with 1, 2, 3 and 4."
-msgstr ""
+msgstr "Odčítanie s 1, 2, 3 a 4."
 
 #: activities/learn_subtractions/resource/3/Data.qml:14
 msgctxt "Data|"
 msgid "Subtractions with 1, 2, 3, 4 and 5."
-msgstr ""
+msgstr "Odčítanie s 1, 2, 3, 4 a 5."
 
 #: activities/learn_subtractions/resource/4/Data.qml:14
 msgctxt "Data|"
 msgid "Subtractions with 1, 2, 3, 4, 5, 6 and 7."
-msgstr ""
+msgstr "Odčítanie s 1, 2, 3, 4, 5, 6 a 7."
 
 #: activities/learn_subtractions/resource/5/Data.qml:14
 msgctxt "Data|"
 msgid "Subtractions with 1, 2, 3, 4, 5, 6, 7, 8 and 9."
-msgstr ""
+msgstr "Odčítanie s 1, 2, 3, 4, 5, 6, 7, 8 a 9."
 
 #. Activity title
 #: activities/left_right_click/ActivityInfo.qml:14
@@ -16324,12 +16225,13 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Move animals to their homes using a left click or right click on your mouse."
 msgstr ""
+"Presuňte zvieratá do ich domovov kiknutím ľavým alebo pravým tlačidlom myši."
 
 #. Help goal
 #: activities/left_right_click/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Using the mouse. Left and right click training."
-msgstr ""
+msgstr "Používanie myši. Cvičenie klikania na ľavé a pravé tlačidlo myši."
 
 #. Help manual
 #: activities/left_right_click/ActivityInfo.qml:23
@@ -16338,6 +16240,8 @@ msgid ""
 "A left click on a fish will move it to the pond. A right click on a monkey "
 "will move it to the tree. A message will show if you make the wrong click."
 msgstr ""
+"Kliknutím na rybu pomocou ľavého tlačidla ju presunie do rybníka. Pravý klik "
+"na opicu ju presunie na strom. Ak kliknete nesprávne, zobrazí sa upozornenie."
 
 #. Activity title
 #: activities/leftright/ActivityInfo.qml:15
@@ -18704,12 +18608,9 @@ msgid "Download full word image set"
 msgstr "Stiahnuť plnú slovnú sadu obrázkov"
 
 #: activities/menu/ConfigurationItem.qml:273
-#, fuzzy
-#| msgctxt "ConfigurationItem|"
-#| msgid "Use full word image set"
 msgctxt "ConfigurationItem|"
 msgid "Full word image set is installed"
-msgstr "Použiť externú veľkú sadu slov a obrázkov"
+msgstr "Je nainštalované úplná sada obrázkov slov"
 
 #: activities/menu/ConfigurationItem.qml:273
 #, fuzzy
@@ -19268,21 +19169,15 @@ msgstr ""
 
 #. Activity title
 #: activities/morse_code/ActivityInfo.qml:18
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Discover the Braille system"
 msgctxt "ActivityInfo|"
 msgid "Discover the International Morse code"
-msgstr "Objavovanie Braillovho systému"
+msgstr "Objavovanie Morzeovky"
 
 #. Help title
 #: activities/morse_code/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn how to tell the time on an analog clock"
 msgctxt "ActivityInfo|"
 msgid "Learn how to communicate with the International Morse code."
-msgstr "Naučiť sa, ako  povedať čas na analógových hodinách"
+msgstr "Naučiť sa, ako komunikovať pomocou medzinárodnéj Morzeovej abecedy"
 
 #. Help goal
 #: activities/morse_code/ActivityInfo.qml:23
@@ -19290,15 +19185,14 @@ msgctxt "ActivityInfo|"
 msgid ""
 "You have to send and receive letters and digits in International Morse code."
 msgstr ""
+"Úlohou je posielať a prijímať písmená a číslice v medzinárodnom Morzeovom "
+"kóde."
 
 #. Help prerequisite
 #: activities/morse_code/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "knowledge of arithmetic operations"
 msgctxt "ActivityInfo|"
 msgid "Knowledge of alphabets and digits."
-msgstr "znalosť matematických operácií"
+msgstr "Znalosť písmen a číslic."
 
 #. Help manual
 #: activities/morse_code/ActivityInfo.qml:27
@@ -19309,6 +19203,9 @@ msgid ""
 "have a look at the translation map which contains the code for all the "
 "letters and digits."
 msgstr ""
+"Buď máte za úlohu poslať správu v Morzeovke alebo preložiť prijatú správu na "
+"písmená a číslice. Aby ste sa naučili Morzeovu abecedu môžete si pomôcť "
+"prekladovou mapou, ktorá obsahuje kódy všetkýh písmen a číslic."
 
 #: activities/morse_code/FirstScreen.qml:25
 msgctxt "FirstScreen|"
@@ -19321,6 +19218,8 @@ msgid ""
 "Morse code was developed by Samuel Morse. It is a method of transmitting "
 "text information as a series of on-off tones, lights, or clicks."
 msgstr ""
+"Morzeovku vyvinul Samuel Morse. Je to spôsob prenosu textovej informácie "
+"postupným zapínaním a vypínaním tónu, svetla alebo klepaním."
 
 #: activities/morse_code/FirstScreen.qml:65
 msgctxt "FirstScreen|"
@@ -19333,16 +19232,20 @@ msgid ""
 "For example, the most common letter in English, the letter \"E\", has the "
 "shortest code, a single dot."
 msgstr ""
+"Každý symbol Morzeovky predstavuje bud textový znak (písmeno alebo číslicu) "
+"alebo procedurálny znak predstavuje jedinečnú postupnosť bodiek a pomlčiek. "
+"Trvanie pomlčky je trojnásobok trvania bodky. Kód bol navrhnutý tak, že "
+"najpoužívanejšie písmená majú kratšie postupnosti bodiek a pomlčiek aby bola "
+"rychlosť prenosu čo najvyššia.\n"
+"Napríklad, najpoužívanejšie písmeno v angličtine, písmeno \"E\", má "
+"najkratší kód. Jednu bodku."
 
 #: activities/morse_code/FirstScreen.qml:90
-#, fuzzy
-#| msgctxt "FirstScreen|"
-#| msgid ""
-#| "When you are ready, click on me and try reproducing Braille characters."
 msgctxt "FirstScreen|"
 msgid "When you are ready, click on Tux and we will converse in Morse code."
 msgstr ""
-"Keď budeš pripravený, klikni na mňa a pokús sa reprodukovať braillove znaky."
+"Keď budeš pripravený, klikni na Tuxa a budeme sa rozprávať Morzeovou "
+"abecedou."
 
 #: activities/morse_code/MorseCode.qml:349
 #, qt-format
@@ -19371,18 +19274,16 @@ msgstr "Písmená."
 #, qt-format
 msgctxt "Data|"
 msgid "Send the message %1 in Morse code."
-msgstr ""
+msgstr "Pošlite správu %1 Morzeovkou."
 
 #: activities/morse_code/resource/1/Data.qml:23
 #: activities/morse_code/resource/1/Data.qml:39
 #: activities/morse_code/resource/1/Data.qml:55
 #: activities/morse_code/resource/1/Data.qml:71
-#, fuzzy, qt-format
-#| msgctxt "RomanNumerals|"
-#| msgid "Convert the roman number %1 in arabic."
+#, qt-format
 msgctxt "Data|"
 msgid "Convert the message %1 to letters."
-msgstr "Preveďte rímske číslo %1 na arabské."
+msgstr "Preveďte správu %1 na písmená."
 
 #: activities/morse_code/resource/1/Data.qml:28
 #: activities/morse_code/resource/1/Data.qml:44
@@ -19399,12 +19300,10 @@ msgstr "Číslice."
 
 #: activities/morse_code/resource/2/Data.qml:23
 #: activities/morse_code/resource/2/Data.qml:39
-#, fuzzy, qt-format
-#| msgctxt "RomanNumerals|"
-#| msgid "Convert the roman number %1 in arabic."
+#, qt-format
 msgctxt "Data|"
 msgid "Convert the message %1 to digits."
-msgstr "Preveďte rímske číslo %1 na arabské."
+msgstr "Preveďte správu %1 na číslice."
 
 #: activities/morse_code/resource/2/Data.qml:28
 #: activities/morse_code/resource/2/Data.qml:44
@@ -19441,18 +19340,13 @@ msgstr "Vložte každú položku na rovnaké miesto, ako daný príklad."
 
 #. Help manual
 #: activities/mosaic/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "First select the item you want to put then click on a spot on the empty "
-#| "area"
 msgctxt "ActivityInfo|"
 msgid ""
 "First select an item from the list, and then click on a spot of the mosaic "
 "to place the item."
 msgstr ""
-"Najprv vyberte položku, ktorú chcete položiť, potom kliknite na tlačidlo na "
-"miesto na prázdne ploche"
+"Najprv vyberte položku zo zoznamu dole a potom kliknite na prázdne miesto v "
+"mozaike pre jej umiestnenie."
 
 #: activities/mosaic/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
@@ -19462,90 +19356,69 @@ msgstr "Šípky: pohyb v priestore"
 #: activities/mosaic/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Space or Enter: select or place an item"
-msgstr ""
+msgstr "Medzerník alebo Enter: zvoliť alebo umiestniť položku"
 
 #: activities/mosaic/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Tab: navigate between the item list and the mosaic"
-msgstr ""
+msgstr "Tab: prepínanie medzi zoznamom položiek a mozaikou"
 
 #: activities/mosaic/resource/1/Data.qml:13
 msgctxt "Data|"
 msgid "Up to 5 items, on a single line."
-msgstr ""
+msgstr "Do 5 položiek v jednom rade."
 
 #: activities/mosaic/resource/2/Data.qml:13
 msgctxt "Data|"
 msgid "Up to 8 items, on a single line."
-msgstr ""
+msgstr "Do 8 položiek v jednom rade."
 
 #: activities/mosaic/resource/3/Data.qml:13
 msgctxt "Data|"
 msgid "Up to 16 items, on multiple lines."
-msgstr ""
+msgstr "Do 16 položiek vo viacerých radoch."
 
 #: activities/mosaic/resource/4/Data.qml:13
 msgctxt "Data|"
 msgid "Up to 24 items, on multiple lines."
-msgstr ""
+msgstr "Do 24 položiek vo viacerých radoch."
 
 #. Activity title
 #: activities/nine_men_morris/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Nine men's morris (against Tux)"
-msgstr "Deväť mužov (proti tučniakovi)"
+msgstr "Mlyn (proti tučniakovi)"
 
 #. Help goal
 #: activities/nine_men_morris/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Form mills (line of 3 pieces) to remove pieces of Tux until Tux has only "
-#| "two pieces, or doesn't have a legal move"
 msgctxt "ActivityInfo|"
 msgid ""
 "Form mills (lines of 3 pieces) to remove Tux's pieces until he has only 2 "
 "pieces left or can not move anymore."
 msgstr ""
 "Vytvorte mlyny (rad 3 figúrok) na odstránenie figúrok Tuxa, kým Tuxovi "
-"nezostanú iba dve figúrky, alebo nemá legálny ťah"
+"nezostanú iba 2 figúrky, alebo nemá legálny ťah"
 
 #. Help manual
 #: activities/nine_men_morris/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Play with a friend. First take turns to place nine pieces, and then take "
-#| "turns to move pieces"
 msgctxt "ActivityInfo|"
 msgid ""
 "Play with Tux. First take turns to place nine pieces, and then take turns to "
 "move your pieces."
 msgstr ""
-"Hrajte s priateľom. Najskôr sa striedajte, aby ste umiestnili deväť figúrok, "
-"a potom sa striedali, aby ste presunuli figúrky"
+"Hrajte s kamarátom. Najskôr sa striedajte, aby ste umiestnili deväť figúrok, "
+"a potom striedate ťahy, aby ste presunuli figúrky"
 
 #: activities/nine_men_morris/nine_men_morris.js:29
-#, fuzzy
-#| msgctxt "nine_men_morris|"
-#| msgid ""
-#| "You and Tux start with 9 pieces each, and take turns to place your pieces "
-#| "on to the empty spots (by clicking on the spots) on the board."
 msgctxt "nine_men_morris|"
 msgid ""
 "You and Tux start with 9 pieces each, and take turns to place your pieces on "
 "the empty spots of the board (by clicking on the spots)."
 msgstr ""
-"Vy a Tux začínate s 9 figúrkami a striedate sa, aby ste umiestnili figúrky "
-"na prázdne miesta (kliknutím na tieto miesta) na doske."
+"Vy a Tux, každý začínate s 9 figúrkami a striedate sa, aby ste umiestnili "
+"figúrky na prázdne miesta (kliknutím na tieto miesta) na doske."
 
 #: activities/nine_men_morris/nine_men_morris.js:33
-#, fuzzy
-#| msgctxt "nine_men_morris|"
-#| msgid ""
-#| "If you form a mill (line of 3 pieces), then select a piece of Tux, and "
-#| "remove it. Pieces of formed mill can not be removed unless no other "
-#| "pieces are left on board."
 msgctxt "nine_men_morris|"
 msgid ""
 "If you form a mill (line of 3 pieces), then select one of Tux's pieces to "
@@ -19557,12 +19430,6 @@ msgstr ""
 "žiadne ďalšie figúrky."
 
 #: activities/nine_men_morris/nine_men_morris.js:37
-#, fuzzy
-#| msgctxt "nine_men_morris|"
-#| msgid ""
-#| "After all the pieces are placed, you and Tux will take turns to move "
-#| "them. Click on one of your pieces, and then on the adjacent empty spot to "
-#| "move it there. Green color spot indicates where you can move."
 msgctxt "nine_men_morris|"
 msgid ""
 "After all the pieces are placed, you and Tux will take turns to move them. "
@@ -19575,11 +19442,6 @@ msgstr ""
 "presunúť."
 
 #: activities/nine_men_morris/nine_men_morris.js:41
-#, fuzzy
-#| msgctxt "nine_men_morris|"
-#| msgid ""
-#| "If you are left with 3 pieces, your pieces will gain the ability to 'fly' "
-#| "and can be moved to any vacant spot on the board."
 msgctxt "nine_men_morris|"
 msgid ""
 "If you are left with 3 pieces, they gain the ability to 'fly' and can be "
@@ -19642,33 +19504,23 @@ msgstr "Deväť mužov (s priateľom)"
 
 #. Help goal
 #: activities/nine_men_morris_2players/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Form mills (line of 3 pieces) to remove pieces of opponent until opponent "
-#| "has only two pieces, or doesn't have a legal move"
 msgctxt "ActivityInfo|"
 msgid ""
 "Form mills (lines of 3 pieces) to remove your opponent's pieces until your "
 "opponent has only 2 pieces left or can not move anymore."
 msgstr ""
 "Vytvorte mlyny (rad 3 figúrok) na odstránenie figúrok súpera, kým súperovi "
-"nezostanú iba dve figúrky, alebo nemá legálny ťah"
+"nezostanú iba dve figúrky, alebo nemá legálny ťah."
 
 #. Help manual
 #: activities/nine_men_morris_2players/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Play with a friend. First take turns to place nine pieces, and then take "
-#| "turns to move pieces"
 msgctxt "ActivityInfo|"
 msgid ""
 "Play with a friend. First take turns to place nine pieces, and then take "
 "turns to move your pieces."
 msgstr ""
-"Hrajte s priateľom. Najskôr sa striedajte, aby ste umiestnili deväť figúrok, "
-"a potom sa striedali, aby ste presunuli figúrky"
+"Hrajte s kamarátom. Najskôr sa striedajte, aby ste umiestnili 9 figúrok, a "
+"potom po ťahoch presúvajte figúrky."
 
 #. Activity title
 #: activities/note_names/ActivityInfo.qml:18
@@ -20113,7 +19965,7 @@ msgstr "Porovnávanie čísel."
 #: activities/ordering_numbers/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Counting."
-msgstr "Počítanie."
+msgstr "Základy počítania."
 
 #. Help manual
 #: activities/ordering_numbers/ActivityInfo.qml:29
@@ -23315,18 +23167,13 @@ msgstr ""
 "priateľom. Môžete mu pomôcť rovnomerne rozdeliť zvyšných 8 kúskov sladkostí?"
 
 #: activities/share/resource/1/Data.qml:70
-#, fuzzy
-#| msgctxt "board4|"
-#| msgid ""
-#| "Charles wants to share his 8 pieces of candy with 3 of his friends: one "
-#| "boy and two girls. Can he split the pieces of candy equally?"
 msgctxt "Data|"
 msgid ""
 "George wants to share 3 pieces of candy equally between 3 of his girl "
 "friends. Can he split the pieces of candy equally?"
 msgstr ""
-"Charles sa chce podeliť o svojich 8 kúskov sladkostí s 3 svojimi priateľmi: "
-"jeden chlapec a dve dievčatá. Dokáže rozdeliť kúsky sladkostí rovnako?"
+"Juraj chce rozdeliť š kúsky sladkostí rovnomerne medzi 3 svoje kamarátky. "
+"Dokáže rozdeliť kúsky sladkostí spravodlivo?"
 
 #: activities/share/resource/1/Data.qml:80
 #, fuzzy
@@ -23576,13 +23423,6 @@ msgstr ""
 "jeho priateľom!"
 
 #: activities/share/resource/1/Data.qml:256
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid ""
-#| "John wants to equally share 10 pieces of candy between 3 of his friends: "
-#| "one boy and two girls. Can he equally split the pieces of candy between "
-#| "his friends? First, place the children in center, then drag the pieces of "
-#| "candy to each of them."
 msgctxt "Data|"
 msgid ""
 "George wants to share 14 pieces of candy between 4 of his friends: 2 girls "
@@ -23592,7 +23432,9 @@ msgstr ""
 "John chce rovnako rozdeliť 10 kúskov sladkostí medzi 3 svojich priateľov: "
 "jeden chlapec a dve dievčatá. Dokáže rovnomerne rozdeliť kúsky sladkostí "
 "medzi svojich priateľov? Najprv umiestnite deti do stredu, potom pretiahnite "
-"kúsky sladkostí každému z nich."
+"kúsky sladkostí každému z nich. Juraj chce spravodlivo rozdeliť 14 kúskov "
+"sladkostí medzi 4 svojich kamarátov: dvoch chlapcov a dve dievčatá. Chlapci "
+"ale už majú po jednom kúsku. Chce aby všetci mali rovnako."
 
 #: activities/share/resource/1/Data.qml:266
 #, fuzzy
@@ -23873,23 +23715,15 @@ msgstr ""
 "jeho priateľom!"
 
 #: activities/share/resource/2/Data.qml:236
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid ""
-#| "John wants to equally share 10 pieces of candy between 3 of his friends: "
-#| "one boy and two girls. Can he equally split the pieces of candy between "
-#| "his friends? First, place the children in center, then drag the pieces of "
-#| "candy to each of them."
 msgctxt "Data|"
 msgid ""
 "George wants to share 14 pieces of candy equally between 4 of his friends: 2 "
 "girls and 2 boys. Can he equally split the pieces of candy between his "
 "friends?"
 msgstr ""
-"John chce rovnako rozdeliť 10 kúskov sladkostí medzi 3 svojich priateľov: "
-"jeden chlapec a dve dievčatá. Dokáže rovnomerne rozdeliť kúsky sladkostí "
-"medzi svojich priateľov? Najprv umiestnite deti do stredu, potom pretiahnite "
-"kúsky sladkostí každému z nich."
+"Juraj chce spravodlivo rozdeliť 14 kúskov sladkostí medzi 4 svojich "
+"kamarátov: dvoch chlapcov a dve dievčatá. Dokáže rovnomerne rozdeliť kúsky "
+"sladkostí svojim kamarátom?"
 
 #: activities/share/resource/2/Data.qml:246
 #, fuzzy
@@ -26352,12 +26186,9 @@ msgid ""
 msgstr ""
 
 #: core/ChangeLog.qml:31
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translation updated for Russian"
 msgctxt "ChangeLog|"
 msgid "Many translation updates"
-msgstr "Upravený preklad do Ruštiny"
+msgstr "Aktualizácie mnohých prekladov"
 
 #: core/ChangeLog.qml:32 core/ChangeLog.qml:45 core/ChangeLog.qml:63
 #: core/ChangeLog.qml:78 core/ChangeLog.qml:83 core/ChangeLog.qml:89
@@ -26374,12 +26205,12 @@ msgstr "Mnoho malých opráv."
 #: core/ChangeLog.qml:37
 msgctxt "ChangeLog|"
 msgid "Fix issue in comparator activity"
-msgstr ""
+msgstr "Oprava chyby v aktivite Porovnať čísla"
 
 #: core/ChangeLog.qml:41
 msgctxt "ChangeLog|"
 msgid "Map of Spain added for geography activity"
-msgstr ""
+msgstr "Pridaná mapa Španielska pre aktivity z Geografie"
 
 #: core/ChangeLog.qml:42
 msgctxt "ChangeLog|"
@@ -26472,7 +26303,7 @@ msgstr "Pridané preklady pre Macedónčinu."
 #: core/ChangeLog.qml:75
 msgctxt "ChangeLog|"
 msgid "New maps and update of the maps for geography activities"
-msgstr ""
+msgstr "Nové mapy a aktualizácia máp pre aktivity z geografie."
 
 #: core/ChangeLog.qml:76
 msgctxt "ChangeLog|"
@@ -26567,7 +26398,7 @@ msgid ""
 "geo-country activity."
 msgstr ""
 "Zlúčte nórske kraje Nord-Trøndelag a Sør-Trøndelag do Trøndelag v aktivite "
-"geo-krajina"
+"geo-krajina."
 
 #: core/ChangeLog.qml:106
 msgctxt "ChangeLog|"
@@ -26742,13 +26573,13 @@ msgctxt "DialogAbout|"
 msgid "Based on Qt %1 and %2"
 msgstr "Založené na Qt %1 a %2"
 
-#: core/DialogAbout.qml:61
+#: core/DialogAbout.qml:64
 msgctxt "DialogAbout|"
 msgid "GCompris Home Page: https://gcompris.net"
 msgstr "Domovská stránka GCompris: https://gcompris.net"
 
 #. Replace the link with the page in your language if it exists, else keep the english page link
-#: core/DialogAbout.qml:65
+#: core/DialogAbout.qml:67
 msgctxt "DialogAbout|"
 msgid ""
 "You can provide financial support for the development of <b>GCompris</b>, "
@@ -26756,12 +26587,12 @@ msgid ""
 "net/donate-en.html</a>."
 msgstr ""
 
-#: core/DialogAbout.qml:75
+#: core/DialogAbout.qml:72
 msgctxt "DialogAbout|"
 msgid "<b>GCompris</b> is a Free Software developed within the KDE community."
 msgstr "<b>GCompris</b> je slobodný softvér vyvinutý KDE komunitou."
 
-#: core/DialogAbout.qml:79
+#: core/DialogAbout.qml:76
 #, qt-format
 msgctxt "DialogAbout|"
 msgid ""
@@ -26784,7 +26615,7 @@ msgstr ""
 "pripojiť a prispieť do KDE, vrátane vás.<br /><br />Navštívte <a href=\"%2\">"
 "%2</a> pre viac informácií o komunite KDE a softvéri, ktorý vytvárame.</html>"
 
-#: core/DialogAbout.qml:96
+#: core/DialogAbout.qml:93
 #, qt-format
 msgctxt "DialogAbout|"
 msgid ""
@@ -26804,7 +26635,7 @@ msgstr ""
 "zaregistrovať vaše želanie cez systém sledovania chýb. Uistite sa, že "
 "používate kritickosť s názvom \"Wishlist\"."
 
-#: core/DialogAbout.qml:108
+#: core/DialogAbout.qml:105
 #, qt-format
 msgctxt "DialogAbout|"
 msgid ""
@@ -26823,7 +26654,7 @@ msgstr ""
 "nájdete na <a href=\"%1\">%1</a>.<br /><br />Ak potrebujete viac informácií "
 "alebo dokumentáciu, navštívte <a href=\"%2\">%2</a>.</html>"
 
-#: core/DialogAbout.qml:125
+#: core/DialogAbout.qml:122
 #, qt-format
 msgctxt "DialogAbout|"
 msgid ""
@@ -26849,13 +26680,13 @@ msgstr ""
 "darom pomocou jedného zo spôsobov opísaných v <a href=\"%2\">%2</a>.<br /"
 "><br />Vopred veľmi pekne ďakujeme za vašu podporu."
 
-#: core/DialogAbout.qml:142
+#: core/DialogAbout.qml:139
 #, qt-format
 msgctxt "DialogAbout|"
 msgid "<b>A big thanks to the development team:</b> %1"
 msgstr "<b>Veľká vďaka tímu vývojárov:</b> %1"
 
-#: core/DialogAbout.qml:146
+#: core/DialogAbout.qml:143
 #, qt-format
 msgctxt "DialogAbout|"
 msgid "<b>A big thanks to the translation team:</b> %1"
