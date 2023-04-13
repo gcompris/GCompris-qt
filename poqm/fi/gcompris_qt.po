@@ -25657,13 +25657,13 @@ msgctxt "DialogAbout|"
 msgid "Based on Qt %1 and %2"
 msgstr "Pohjautuu Qt-versioihin %1 ja %2"
 
-#: core/DialogAbout.qml:61
+#: core/DialogAbout.qml:64
 msgctxt "DialogAbout|"
 msgid "GCompris Home Page: https://gcompris.net"
 msgstr "GComprisin kotisivu: https://gcompris.net/"
 
 #. Replace the link with the page in your language if it exists, else keep the english page link
-#: core/DialogAbout.qml:65
+#: core/DialogAbout.qml:67
 msgctxt "DialogAbout|"
 msgid ""
 "You can provide financial support for the development of <b>GCompris</b>, "
@@ -25674,12 +25674,12 @@ msgstr ""
 "osoitteessa <a href='https://gcompris.net/donate-en.html'>https://gcompris."
 "net/donate- fi.html</a>."
 
-#: core/DialogAbout.qml:75
+#: core/DialogAbout.qml:72
 msgctxt "DialogAbout|"
 msgid "<b>GCompris</b> is a Free Software developed within the KDE community."
 msgstr "<b>GCompris</b> on vapaa ohjelmisto, jota kehittää KDE-yhteisö."
 
-#: core/DialogAbout.qml:79
+#: core/DialogAbout.qml:76
 #, qt-format
 msgctxt "DialogAbout|"
 msgid ""
@@ -25702,7 +25702,7 @@ msgstr ""
 "liittymään ja osallistumaan KDE:hen, myös sinä.<br /><br />Saat lisätietoa "
 "KDE-yhteisöstä ja tuottamistamme ohjelmista sivustolta <a href=\"%2\">%2</a>."
 
-#: core/DialogAbout.qml:96
+#: core/DialogAbout.qml:93
 #, qt-format
 msgctxt "DialogAbout|"
 msgid ""
@@ -25722,7 +25722,7 @@ msgstr ""
 "vianseurantajärjestelmään. Muista kuitenkin käyttää vakavuusastetta "
 "”Wishlist”."
 
-#: core/DialogAbout.qml:108
+#: core/DialogAbout.qml:105
 #, qt-format
 msgctxt "DialogAbout|"
 msgid ""
@@ -25742,7 +25742,7 @@ msgstr ""
 "<br /><br />Lisätietoa ja ohjeistusta löytyy osoitteesta <a href=\"%2\">%2</"
 "a>."
 
-#: core/DialogAbout.qml:125
+#: core/DialogAbout.qml:122
 #, qt-format
 msgctxt "DialogAbout|"
 msgid ""
@@ -25768,13 +25768,13 @@ msgstr ""
 "lahjoitusten muodossa käyttämällä sivulla <a href=\"%2\">%2</a> esiteltyjä "
 "tapoja.<br /><br />Suuret kiitokset tuestasi."
 
-#: core/DialogAbout.qml:142
+#: core/DialogAbout.qml:139
 #, qt-format
 msgctxt "DialogAbout|"
 msgid "<b>A big thanks to the development team:</b> %1"
 msgstr "<b>Suuret kiitokset kehitysryhmälle:</b> %1"
 
-#: core/DialogAbout.qml:146
+#: core/DialogAbout.qml:143
 #, qt-format
 msgctxt "DialogAbout|"
 msgid "<b>A big thanks to the translation team:</b> %1"

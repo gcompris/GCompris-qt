@@ -26625,13 +26625,13 @@ msgctxt "DialogAbout|"
 msgid "Based on Qt %1 and %2"
 msgstr "Bunaithe ar Cheist %1"
 
-#: core/DialogAbout.qml:61
+#: core/DialogAbout.qml:64
 msgctxt "DialogAbout|"
 msgid "GCompris Home Page: https://gcompris.net"
 msgstr "Leathanach baile GCompris: https://gcompris.net"
 
 #. Replace the link with the page in your language if it exists, else keep the english page link
-#: core/DialogAbout.qml:65
+#: core/DialogAbout.qml:67
 msgctxt "DialogAbout|"
 msgid ""
 "You can provide financial support for the development of <b>GCompris</b>, "
@@ -26639,14 +26639,14 @@ msgid ""
 "net/donate-en.html</a>."
 msgstr ""
 
-#: core/DialogAbout.qml:75
+#: core/DialogAbout.qml:72
 msgctxt "DialogAbout|"
 msgid "<b>GCompris</b> is a Free Software developed within the KDE community."
 msgstr ""
 "Is bogearra saor in aisce é <b>GCompris</b> a forbraíodh laistigh den phobal "
 "KDE."
 
-#: core/DialogAbout.qml:79
+#: core/DialogAbout.qml:76
 #, qt-format
 msgctxt "DialogAbout|"
 msgid ""
@@ -26670,7 +26670,7 @@ msgstr ""
 "\"%2\">%2</a> chun tuilleadh eolais a fháil faoin chomhphobal agus faoinár "
 "mbogearraí."
 
-#: core/DialogAbout.qml:96
+#: core/DialogAbout.qml:93
 #, qt-format
 msgctxt "DialogAbout|"
 msgid ""
@@ -26691,7 +26691,7 @@ msgstr ""
 "fheabhsúchán le moladh agat, bheadh fáilte romhat é a chur in iúl dúinn fríd "
 "an chóras rianaithe fabhtanna. Bain úsáid as an leibhéal déine \"Wishlist\"."
 
-#: core/DialogAbout.qml:108
+#: core/DialogAbout.qml:105
 #, qt-format
 msgctxt "DialogAbout|"
 msgid ""
@@ -26712,7 +26712,7 @@ msgstr ""
 "tuilleadh eolais nó doiciméadú de dhíth ort, tabhair cuairt ar <a href="
 "\"%2\">%2</a> agus aimseoidh tú an rud atá de dhíth ort."
 
-#: core/DialogAbout.qml:125
+#: core/DialogAbout.qml:122
 #, qt-format
 msgctxt "DialogAbout|"
 msgid ""
@@ -26741,13 +26741,13 @@ msgstr ""
 "ndéantar cur síos orthu ag <a href=\"%2\">%2</a>.<br /><br />Go raibh míle "
 "maith agat as do chabhair."
 
-#: core/DialogAbout.qml:142
+#: core/DialogAbout.qml:139
 #, qt-format
 msgctxt "DialogAbout|"
 msgid "<b>A big thanks to the development team:</b> %1"
 msgstr "<b>Buíochas ó chroí leis an fhoireann Fhorbartha:</b> %1"
 
-#: core/DialogAbout.qml:146
+#: core/DialogAbout.qml:143
 #, qt-format
 msgctxt "DialogAbout|"
 msgid "<b>A big thanks to the translation team:</b> %1"

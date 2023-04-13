@@ -24172,13 +24172,13 @@ msgctxt "DialogAbout|"
 msgid "Based on Qt %1 and %2"
 msgstr "Qt %1 사용"
 
-#: core/DialogAbout.qml:61
+#: core/DialogAbout.qml:64
 msgctxt "DialogAbout|"
 msgid "GCompris Home Page: https://gcompris.net"
 msgstr "GCompris 홈페이지: https://gcompris.net"
 
 #. Replace the link with the page in your language if it exists, else keep the english page link
-#: core/DialogAbout.qml:65
+#: core/DialogAbout.qml:67
 msgctxt "DialogAbout|"
 msgid ""
 "You can provide financial support for the development of <b>GCompris</b>, "
@@ -24186,12 +24186,12 @@ msgid ""
 "net/donate-en.html</a>."
 msgstr ""
 
-#: core/DialogAbout.qml:75
+#: core/DialogAbout.qml:72
 msgctxt "DialogAbout|"
 msgid "<b>GCompris</b> is a Free Software developed within the KDE community."
 msgstr "<b>GCompris</b>는 KDE 커뮤니티에서 개발되는 자유 소프트웨어입니다."
 
-#: core/DialogAbout.qml:79
+#: core/DialogAbout.qml:76
 #, qt-format
 msgctxt "DialogAbout|"
 msgid ""
@@ -24213,7 +24213,7 @@ msgstr ""
 "고 기여할 수 있습니다.<br /><br /> <a href=\"%2\">%2</a>을 방문하셔서 KDE 커"
 "뮤니티와 소프트웨어에 대해 알아 보십시오."
 
-#: core/DialogAbout.qml:96
+#: core/DialogAbout.qml:93
 #, qt-format
 msgctxt "DialogAbout|"
 msgid ""
@@ -24233,7 +24233,7 @@ msgstr ""
 "으시다면 버그 보고 시스템을 통해서 알려 주십시오. 이 경우 심각성  항목에서 "
 "\"Wishlist\"를 선택하셔야 합니다."
 
-#: core/DialogAbout.qml:108
+#: core/DialogAbout.qml:105
 #, qt-format
 msgctxt "DialogAbout|"
 msgid ""
@@ -24252,7 +24252,7 @@ msgstr ""
 "오.<br /><br />만약 더 많은 정보나 문서가 필요하다면, <a href=\"%2\">%2</a> "
 "사이트를 방문하셔서 원하는 정보를 찾으십시오."
 
-#: core/DialogAbout.qml:125
+#: core/DialogAbout.qml:122
 #, qt-format
 msgctxt "DialogAbout|"
 msgid ""
@@ -24275,13 +24275,13 @@ msgstr ""
 "%2</a>에 있는 방법을 사용하여 재정적인 지원을 해 주십시오.<br /><br />여러분"
 "의 협조에 미리 감사드립니다."
 
-#: core/DialogAbout.qml:142
+#: core/DialogAbout.qml:139
 #, qt-format
 msgctxt "DialogAbout|"
 msgid "<b>A big thanks to the development team:</b> %1"
 msgstr "<b>개발 팀에게 감사드립니다:</b>%1"
 
-#: core/DialogAbout.qml:146
+#: core/DialogAbout.qml:143
 #, qt-format
 msgctxt "DialogAbout|"
 msgid "<b>A big thanks to the translation team:</b> %1"
