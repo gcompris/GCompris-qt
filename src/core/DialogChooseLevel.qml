@@ -281,7 +281,7 @@ Rectangle {
                     Repeater {
                         id: difficultiesRepeater
                         delegate: Row {
-                            height: objective.height
+                            height: datasetVisibleButton.selected ? objective.height : 0
                             visible: modelData.enabled
                             Image {
                                 id: difficultyIcon
