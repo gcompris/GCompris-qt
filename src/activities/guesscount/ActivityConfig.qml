@@ -18,7 +18,8 @@ Item {
     property alias modeBox: modeBox
     property int numberOfLevel: 8
     property var adminLevelArr: [["+"],["-"],["/"],["*"],["+","-"],["/","*"],["/","*",'+'],['-',"*","+","/"]]
-    width: if(background) background.width
+    width: flick.width
+    height: childrenRect.height
 
     signal refreshAdmin
 
@@ -44,54 +45,41 @@ Item {
                 else
                     datasetButtonVisible = true
             }
-
+        }
         Row {
             id: labels
             spacing: 20
-            anchors {
-                top: modeBox.bottom
-                topMargin: 5
-            }
             visible: modeBox.currentIndex == 0
             Repeater {
                 model: 2
-                Row {
-                    spacing: 10
-                    Rectangle {
-                        id: label
-                        width: column.width*0.3
-                        height: column.height/3
-                        radius: 20.0;
-                        color: modelData ? "green" : "red"
-                        GCText {
-                            anchors.horizontalCenter: parent.horizontalCenter
-                            anchors.verticalCenter: parent.verticalCenter
-                            fontSize: smallSize
-                            text: modelData ? qsTr("Selected") : qsTr("Not Selected")
-                        }
+                Rectangle {
+                    id: label
+                    width: column.width * 0.42
+                    height: 32 * ApplicationInfo.ratio
+                    radius: 10
+                    color: modelData ? "#5cc854" : "#d94444" // green : red
+                    GCText {
+                        anchors.fill: parent
+                        anchors.margins: 10
+                        horizontalAlignment: Text.AlignHCenter
+                        verticalAlignment: Text.AlignVCenter
+                        fontSizeMode: Text.Fit
+                        fontSize: mediumSize
+                        text: modelData ? qsTr("Selected") : qsTr("Not Selected")
                     }
                 }
             }
         }
-        Rectangle {
-            width: parent.width * 2.5
-            color: "transparent"
-            height:  parent.height/0.5
-            anchors {
-                top: labels.bottom
-                topMargin: 5
-            }
-            ListView {
-                anchors.fill: parent
-                visible: modeBox.currentIndex == 0
-                spacing: 5
+        Column {
+            visible: modeBox.currentIndex == 0
+            spacing: 10 * ApplicationInfo.ratio
+            Repeater {
                 model: activityConfiguration.numberOfLevel
-                clip: true
-                delegate: Admin {
+                Admin {
                     id: levels
                     level: modelData
-                    width: column.width * 1.2
-                    height: column.height / 1.5
+                    width: activityConfiguration.width
+                    height: 50 * ApplicationInfo.ratio
 
                     Connections {
                         target: activityConfiguration
@@ -100,8 +88,8 @@ Item {
                 }
             }
         }
+
     }
-  }
     property var dataToSave
 
     function setDefaultValues() {
