@@ -149,10 +149,10 @@ Button {
             fontSize: textSizes[textSize].fontSize
             font.bold: textSizes[textSize].fontBold
             anchors.fill: parent
-            anchors.leftMargin: 8 // 2 * Rectangle border width if activeFocus, same for others below
-            anchors.rightMargin: rightIconSize > 0 ? rightIconSize : 8 // if there's a rightIconSize, it must handle the rightMargin
-            anchors.topMargin: 8
-            anchors.bottomMargin: 8
+            anchors.leftMargin: 10
+            anchors.rightMargin: rightIconSize > 0 ? rightIconSize : 10 // if there's a rightIconSize, it must handle the rightMargin
+            anchors.topMargin: 10
+            anchors.bottomMargin: 10
             horizontalAlignment: Text.AlignHCenter
             verticalAlignment: Text.AlignVCenter
             wrapMode: Text.WordWrap
