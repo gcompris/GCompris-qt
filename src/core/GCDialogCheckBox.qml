@@ -34,22 +34,21 @@ CheckBox {
     */
     property int indicatorImageHeight: 50 * ApplicationInfo.ratio
 
-    spacing: 10
-
     focusPolicy: Qt.NoFocus
 
     indicator: Image {
-        sourceSize.height: indicatorImageHeight
+        sourceSize.height: checkBox.indicatorImageHeight
         property string suffix: checkBox.enabled ? ".svg" : "_disabled.svg"
         source:
         checkBox.checked ? "qrc:/gcompris/src/core/resource/apply" + suffix :
         "qrc:/gcompris/src/core/resource/cancel" + suffix
     }
     contentItem: GCText {
-	    anchors.left: indicator.right
+        anchors.left: indicator.right
+        anchors.leftMargin: 10
+        anchors.right: checkBox.right
         fontSize: labelTextFontSize
         text: checkBox.text
         wrapMode: Text.WordWrap
-        width: parent.width - indicatorImageHeight - 10 * 2
     }
 }
