@@ -21,7 +21,7 @@ Item {
     property bool easyModeImage: true
     property bool easyModeAudio: true
     height: childrenRect.height
-    width: if(background) background.width * 0.9
+    width: flick.width
     property alias availableLangs: langs.languages
     LanguageList {
         id: langs
@@ -39,7 +39,6 @@ Item {
         }
         GCDialogCheckBox {
             id: easyModeImageBox
-            width: parent.width
             text: qsTr("Display the image to find as hint")
             checked: easyModeImage
             onCheckedChanged: {
@@ -48,7 +47,6 @@ Item {
         }
         GCDialogCheckBox {
             id: easyModeAudioBox
-            width: parent.width
             text: qsTr("Speak the words to find (if available) when three attempts are remaining")
             checked: easyModeAudio
             onCheckedChanged: {

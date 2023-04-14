@@ -15,7 +15,7 @@ import "../../core"
 Item {
     id: activityConfiguration
     property Item background
-    width: if(background) background.width
+    width: flick.width
     height: childrenRect.height
     property alias levelsBox: levelsBox
     property string loadedFilePath: ""
@@ -36,7 +36,8 @@ Item {
 
         GCButton {
             id: editorButton
-            height: levelsBox.height
+            height: 50 * ApplicationInfo.ratio
+            width: Math.min(parent.width, implicitWidth)
             text: enabled ? qsTr("Start the editor") : qsTr("Start the activity to access the editor")
             visible: levelsBox.currentIndex == 1
             enabled: !dialogChooseLevel.inMenu
@@ -45,7 +46,8 @@ Item {
 
         GCButton {
             id: loadButton
-            height: levelsBox.height
+            height: 50 * ApplicationInfo.ratio
+            width: Math.min(parent.width, implicitWidth)
             text: enabled ? qsTr("Load saved levels") : qsTr("Start the activity to load your levels")
             visible: levelsBox.currentIndex == 1
             enabled: !dialogChooseLevel.inMenu

@@ -14,7 +14,7 @@ Item {
     id: activityConfiguration
     property Item background
     property bool audioMode: false
-    width: if(background) background.width*0.9
+    width: flick.width
 
     Column {
         id: column
@@ -23,7 +23,6 @@ Item {
 
         GCDialogCheckBox {
             id: audioModeBox
-            width: activityConfiguration.width
             text: qsTr("Play characters' sound when typed")
             checked: audioMode // This is available in all editors.
             onCheckedChanged: {

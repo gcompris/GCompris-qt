@@ -18,7 +18,7 @@ Item {
     property alias modeBox: modeBox
     property alias enableVoicesBox: enableVoicesBox
     property bool voicesEnabled: enableVoicesBox.checked
-    width: if(background) background.width
+    width: flick.width
     property var availableModes: [
         { "text": qsTr("Arabic numerals"), "value": 1 },
         { "text": qsTr("Dots"), "value": 2 },

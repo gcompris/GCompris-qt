@@ -14,7 +14,7 @@ Item {
     id: activityConfiguration
     property Item background
     property bool easyMode: true
-    width: if(background) background.width
+    width: flick.width
 
     Column {
         id: column
@@ -23,7 +23,6 @@ Item {
 
         GCDialogCheckBox {
             id: easyModeBox
-            width: activityConfiguration.width
             text: qsTr("Display counters")
             checked: easyMode // This is available in all editors.
             onCheckedChanged: {

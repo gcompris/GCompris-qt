@@ -18,7 +18,7 @@ Item {
     id: activityConfiguration
     property Item background
     property alias modeBox: modeBox
-    width: if(background) background.width
+    width: flick.width
     property var availableModes: [
         { "text": qsTr("1 player"), "value": 1 },
         { "text": qsTr("2 players"), "value": 2 }

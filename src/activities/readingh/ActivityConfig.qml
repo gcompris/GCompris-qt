@@ -21,7 +21,7 @@ Item {
     property int speedSetting: 10
     property string locale: "system"
     property string configurationLocale: "system"
-    width: if(background) background.width
+    width: flick.width
     height: childrenRect.height
     property alias availableLangs: langs.languages
     LanguageList {
@@ -39,6 +39,7 @@ Item {
         }
         GCText {
             id: speedSliderText
+            width: parent.width
             text: qsTr("Speed")
             fontSize: mediumSize
             wrapMode: Text.WordWrap

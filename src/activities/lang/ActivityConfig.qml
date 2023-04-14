@@ -19,7 +19,7 @@ Item {
     property alias localeBox: localeBox
     property string locale: "system"
     property string configurationLocale: "system"
-    width: if(background) background.width
+    width: flick.width
     property alias availableLangs: langs.languages
     LanguageList {
         id: langs

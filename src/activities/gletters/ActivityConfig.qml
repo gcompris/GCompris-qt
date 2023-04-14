@@ -23,7 +23,7 @@ Item {
     property bool uppercaseOnly: false
     property string locale: "system"
     property string configurationLocale: "system"
-    width: if(background) background.width
+    width: flick.width
     height: childrenRect.height
     property alias availableLangs: langs.languages
     LanguageList {
@@ -41,13 +41,13 @@ Item {
         }
         GCDialogCheckBox {
             id: uppercaseBox
-            width: activityConfiguration.width
             text: qsTr("Uppercase only mode")
             checked: uppercaseOnly
         }
         GCText {
             id: speedSliderText
             text: qsTr("Speed")
+            width: parent.width
             fontSize: mediumSize
             wrapMode: Text.WordWrap
         }
