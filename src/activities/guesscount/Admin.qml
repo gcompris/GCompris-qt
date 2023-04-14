@@ -21,7 +21,7 @@ Row {
         width: parent.width*0.23
         height: parent.height
         radius: 10.0;
-        color: "red"
+        color: "#E6E6E6"
         state: "selected"
         GCText {
             anchors.horizontalCenter: parent.horizontalCenter
@@ -35,10 +35,9 @@ Row {
         model: ['+','-','*','/']
         delegate: Rectangle {
             id: tile
-            width: parent.width*0.1
+            width: parent.width*0.15
             height: parent.height
             radius: 20
-            opacity: 0.7
             state: activityConfiguration.adminLevelArr[level].indexOf(modelData) != -1 ? "selected" : "notselected"
 
             function refreshTile() {
@@ -73,11 +72,11 @@ Row {
             states: [
                 State {
                     name: "selected"
-                    PropertyChanges { target: tile; color: "green" }
+                    PropertyChanges { target: tile; color: "#5cc854" }
                 },
                 State {
                     name: "notselected"
-                    PropertyChanges { target: tile; color: "red" }
+                    PropertyChanges { target: tile; color: "#d94444" }
                 }
             ]
         }
