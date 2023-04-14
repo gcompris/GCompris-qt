@@ -32,7 +32,7 @@ Item {
     id: gccombobox
     focus: visible
 
-    width: parent.width * 0.9
+    width: parent.width
     height: comboColumn.height
 
     /**
@@ -109,11 +109,10 @@ Item {
         Rectangle {
             id: button
             visible: true
-            // Add radius to add some space between text and borders
-            implicitWidth: Math.max(200, currentTextBox.width+radius)
-            implicitHeight: 50 * ApplicationInfo.ratio
             border.width: 2
             border.color: "#373737"
+            width: currentTextBox.contentWidth + radius * 2
+            height: 50 * ApplicationInfo.ratio
             radius: 10
             gradient: Gradient {
                 GradientStop { position: 0 ; color: mouseArea.pressed ? "#C03ACAFF" : "#23373737" }
@@ -122,10 +121,14 @@ Item {
             // Current value of combobox
             GCText {
                 id: currentTextBox
-                anchors.horizontalCenter: parent.horizontalCenter
-                anchors.verticalCenter: parent.verticalCenter
+                anchors.centerIn: parent
                 text: currentText
                 fontSize: mediumSize
+                fontSizeMode: Text.Fit
+                horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
+                width: comboColumn.width - 20
+                height: 50 * ApplicationInfo.ratio
                 color: "#373737"
             }
             MouseArea {
@@ -245,7 +248,7 @@ Item {
                 anchors.centerIn: headerDescription
                 horizontalAlignment: Text.AlignHCenter
                 verticalAlignment: Text.AlignVCenter
-                color: "black"
+                color: "#191919"
                 fontSizeMode: Text.Fit
                 minimumPointSize: 7
                 fontSize: largeSize
