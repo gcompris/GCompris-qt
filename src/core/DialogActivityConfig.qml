@@ -120,8 +120,6 @@ Rectangle {
     signal stop
 
     color: "#696da3"
-    border.color: "black"
-    border.width: 1
 
     Keys.onPressed: {
         if(event.key === Qt.Key_Down) {
@@ -159,100 +157,94 @@ Rectangle {
         ApplicationSettings.saveActivityConfiguration(activityName, dataToSave)
     }
 
-    Row {
+    Column {
         visible: dialogActivityContent.active
-        spacing: 2
-        Item { width: 10; height: 1 }
+        spacing: 10
+        anchors.top: parent.top
+        anchors.topMargin: 15
+        anchors.horizontalCenter: parent.horizontalCenter
+        width: dialogActivityContent.width - 30
+        Rectangle {
+            id: titleRectangle
+            color: "#e6e6e6"
+            radius: 10 * ApplicationInfo.ratio
+            width: parent.width
+            height: title.height * 1.2
 
-        Column {
-            spacing: 10
-            anchors.top: parent.top
-            Item { width: 1; height: 10 }
-            Rectangle {
-                id: titleRectangle
-                color: "#e6e6e6"
-                radius: 10 * ApplicationInfo.ratio
-                width: dialogActivityContent.width - 30
-                height: title.height * 1.2
-
-                // The apply button
-                GCButtonCancel {
-                    id: apply
-                    apply: true
-                    anchors.verticalCenter: titleRectangle.verticalCenter
-                    anchors.margins: 2 * ApplicationInfo.ratio
-                    onClose: {
-                        if (dialogActivityContent.dataValidationFunc && !
-                            dialogActivityContent.dataValidationFunc()) {
-                            console.log("Configuration data is invalid, not saving!");
-                        return;
-                            }
-                            saveData()
-                            if(activityName != "") {
-                                ApplicationSettings.saveActivityConfiguration(activityName, dataToSave)
-                            }
-                            dialogActivityContent.close()
-                    }
-                }
-
-                GCText {
-                    id: title
-                    text: dialogActivityContent.title
-                    width: titleRectangle.width - 120 * ApplicationInfo.ratio //minus twice the apply button size
-                    height: 50 * ApplicationInfo.ratio
-                    anchors.horizontalCenter: titleRectangle.horizontalCenter
-                    anchors.verticalCenter: titleRectangle.verticalCenter
-                    horizontalAlignment: Text.AlignHCenter
-                    verticalAlignment: Text.AlignVCenter
-                    color: "black"
-                    fontSizeMode: Text.Fit
-                    minimumPointSize: 7
-                    fontSize: largeSize
-                    font.weight: Font.DemiBold
-                    wrapMode: Text.WordWrap
+            // The apply button
+            GCButtonCancel {
+                id: apply
+                apply: true
+                anchors.verticalCenter: titleRectangle.verticalCenter
+                anchors.margins: 2 * ApplicationInfo.ratio
+                onClose: {
+                    if (dialogActivityContent.dataValidationFunc && !
+                        dialogActivityContent.dataValidationFunc()) {
+                        console.log("Configuration data is invalid, not saving!");
+                    return;
+                        }
+                        saveData()
+                        if(activityName != "") {
+                            ApplicationSettings.saveActivityConfiguration(activityName, dataToSave)
+                        }
+                        dialogActivityContent.close()
                 }
             }
 
-            Rectangle {
-                color: "#bdbed0"
-                radius: 10 * ApplicationInfo.ratio
-                width: dialogActivityContent.width - 30
-                height: dialogActivityContent.height - (30 + title.height * 1.2)
-                border.color: "white"
-                border.width: 3 * ApplicationInfo.ratio
-                anchors.margins: 100
+            GCText {
+                id: title
+                text: dialogActivityContent.title
+                width: titleRectangle.width - 120 * ApplicationInfo.ratio //minus twice the apply button size
+                height: 50 * ApplicationInfo.ratio
+                anchors.horizontalCenter: titleRectangle.horizontalCenter
+                anchors.verticalCenter: titleRectangle.verticalCenter
+                horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
+                fontSizeMode: Text.Fit
+                minimumPointSize: 7
+                fontSize: largeSize
+                font.weight: Font.DemiBold
+                wrapMode: Text.WordWrap
+            }
+        }
 
-                Flickable {
-                    id: flick
-                    flickDeceleration: 1500
-                    anchors.margins: 10 * ApplicationInfo.ratio
-                    anchors.fill: parent
-                    flickableDirection: Flickable.VerticalFlick
-                    clip: true
-                    contentHeight: contentItem.childrenRect.height + 40 * ApplicationInfo.ratio
-                    Loader {
-                        id: loader
-                        active: false
-                        sourceComponent: dialogActivityContent.content
-                        property alias rootItem: dialogActivityContent
-                    }
-                }
+        Rectangle {
+            color: "#bdbed0"
+            radius: 10 * ApplicationInfo.ratio
+            width: dialogActivityContent.width - 30
+            height: dialogActivityContent.height - (2 * parent.anchors.topMargin) - titleRectangle.height - parent.spacing
+            border.color: "white"
+            border.width: 3 * ApplicationInfo.ratio
+            anchors.margins: 100
 
-                // The scroll buttons
-                GCButtonScroll {
-                    id: scrollItem
-                    anchors.right: parent.right
-                    anchors.rightMargin: 5 * ApplicationInfo.ratio
-                    anchors.bottom: flick.bottom
-                    anchors.bottomMargin: 5 * ApplicationInfo.ratio
-                    onUp: flick.flick(0, 1000)
-                    onDown: flick.flick(0, -1000)
-                    upVisible: flick.visibleArea.yPosition <= 0 ? false : true
-                    downVisible: flick.visibleArea.yPosition + flick.visibleArea.heightRatio >= 1 ? false : true
+            Flickable {
+                id: flick
+                flickDeceleration: 1500
+                anchors.margins: 10 * ApplicationInfo.ratio
+                anchors.fill: parent
+                flickableDirection: Flickable.VerticalFlick
+                clip: true
+                contentHeight: contentItem.childrenRect.height + 40 * ApplicationInfo.ratio
+                Loader {
+                    id: loader
+                    active: false
+                    sourceComponent: dialogActivityContent.content
+                    property alias rootItem: dialogActivityContent
                 }
             }
 
-            Item { width: 1; height: 10 }
+            // The scroll buttons
+            GCButtonScroll {
+                id: scrollItem
+                anchors.right: parent.right
+                anchors.rightMargin: 5 * ApplicationInfo.ratio
+                anchors.bottom: flick.bottom
+                anchors.bottomMargin: 5 * ApplicationInfo.ratio
+                onUp: flick.flick(0, 1000)
+                onDown: flick.flick(0, -1000)
+                upVisible: flick.visibleArea.yPosition <= 0 ? false : true
+                downVisible: flick.visibleArea.yPosition + flick.visibleArea.heightRatio >= 1 ? false : true
+            }
         }
     }
 }
