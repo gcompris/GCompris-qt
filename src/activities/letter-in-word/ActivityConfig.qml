@@ -22,7 +22,7 @@ Item {
     property int savedMode: 11
     property alias letterCaseBox: letterCaseBox
     property int savedLetterCase: 0
-    width: if(background) background.width;
+    width: flick.width
     height: childrenRect.height
     property alias availableLangs: langs.languages
 
@@ -37,7 +37,6 @@ Item {
 
         GCDialogCheckBox {
             id: normalModeConfig
-            width: column.width - 50
             text: qsTr("All the words")
             checked: savedMode === 11 ? true : false
             onCheckedChanged: easyModeConfig.checked = !normalModeConfig.checked;
@@ -45,38 +44,29 @@ Item {
 
         GCDialogCheckBox {
             id: easyModeConfig
-            width: column.width - 50
             text: qsTr("Only 5 words")
             checked: savedMode === 5 ? true : false
             onCheckedChanged: normalModeConfig.checked = !easyModeConfig.checked;
         }
 
-        Flow {
-            spacing: 5
-            width: activityConfiguration.width
-            GCComboBox {
-                id: letterCaseBox
-                label: qsTr("Select the case for the letters to search")
-                background: activityConfiguration.background
-                model: [
-                {"text": qsTr("Mixed Case"), "value": Font.MixedCase},
-                {"text": qsTr("Upper Case"), "value": Font.AllUppercase},
-                {"text": qsTr("Lower Case"), "value": Font.AllLowercase}
-                ]
-                currentText: model[savedLetterCase].text
-                currentIndex: savedLetterCase
-            }
+        GCComboBox {
+            id: letterCaseBox
+            label: qsTr("Select the case for the letters to search")
+            background: activityConfiguration.background
+            model: [
+            {"text": qsTr("Mixed Case"), "value": Font.MixedCase},
+            {"text": qsTr("Upper Case"), "value": Font.AllUppercase},
+            {"text": qsTr("Lower Case"), "value": Font.AllLowercase}
+            ]
+            currentText: model[savedLetterCase].text
+            currentIndex: savedLetterCase
         }
 
-        Flow {
-            spacing: 5
-            width: activityConfiguration.width
-            GCComboBox {
-                id: localeBox
-                model: langs.languages
-                background: activityConfiguration.background
-                label: qsTr("Select your locale")
-            }
+        GCComboBox {
+            id: localeBox
+            model: langs.languages
+            background: activityConfiguration.background
+            label: qsTr("Select your locale")
         }
     }
 

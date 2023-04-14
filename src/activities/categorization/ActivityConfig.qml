@@ -17,7 +17,7 @@ Item {
     id: activityConfiguration
     property Item background
     property string mode: "easy"
-    width: if(background) background.width
+    width: flick.width
     height: column.childrenRect.height
 
     Column {
@@ -35,7 +35,6 @@ Item {
 
         GCDialogCheckBox {
             id: easyModeBox
-            width: column.width - 50
             text: qsTr("Put together all the items from a category (with score)")
             checked: (mode === "easy") ? true : false
             ButtonGroup.group: childGroup
@@ -48,7 +47,6 @@ Item {
 
         GCDialogCheckBox {
             id: mediumModeBox
-            width: easyModeBox.width
             text: qsTr("Put together all the items from a category (without score)")
             checked: (mode === "medium") ? true : false
             ButtonGroup.group: childGroup
@@ -61,7 +59,6 @@ Item {
 
         GCDialogCheckBox {
             id: expertModeBox
-            width: easyModeBox.width
             text: qsTr("Discover a category, grouping items together")
             checked: (mode === "expert") ? true : false
             ButtonGroup.group: childGroup

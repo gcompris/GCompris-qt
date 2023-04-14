@@ -20,7 +20,7 @@ Item {
     readonly property string coloredNotes: "coloredNotes"
     readonly property string coloredlessNotes: "colorlessNotes"
     property string mode: coloredNotes
-    width: if(background) background.width
+    width: flick.width
 
     ButtonGroup {
         id: childGroup
@@ -31,7 +31,6 @@ Item {
         width: parent.width
         GCDialogCheckBox {
             id: coloredNotesModeBox
-            width: parent.width - 50
             text: qsTr("Display colored notes.")
             checked: activityConfiguration.mode === coloredNotes
             ButtonGroup.group: childGroup
@@ -44,7 +43,6 @@ Item {
 
         GCDialogCheckBox {
             id: colorlessNotesModeBox
-            width: coloredNotesModeBox.width
             text: qsTr("Display colorless notes.")
             checked: activityConfiguration.mode === coloredlessNotes
             ButtonGroup.group: childGroup

@@ -17,7 +17,7 @@ Item {
     property Item background
     property alias speedSlider: speedSlider
     property int speedSetting: 5
-    width: if(background) background.width
+    width: flick.width
 
     Column {
         spacing: 10 * ApplicationInfo.ratio
@@ -25,6 +25,7 @@ Item {
         GCText {
             id: speedSliderText
             text: qsTr("Speed")
+            width: parent.width
             fontSize: mediumSize
             wrapMode: Text.WordWrap
         }
