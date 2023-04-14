@@ -94,7 +94,7 @@ Button {
             backgroundColorGradient1: "#bdbed0",
             selectedColorGradient1: "#e6e6e6",
             borderColor: selected ? "#ffffffff" : "#00ffffff",
-            textColor: "black"
+            textColor: "#191919"
         },
         "noStyle": {
             backgroundColorGradient0: "#00FFFFFF",

@@ -95,8 +95,6 @@ Rectangle {
     property bool hasDataset: currentActivity && currentActivity.hasDataset && datasetButtonVisible
 
     color: "#696da3"
-    border.color: "black"
-    border.width: 1
 
     property bool inMenu: false
 
@@ -169,7 +167,7 @@ Rectangle {
         id: titleColumn
         spacing: 10
         anchors.top: parent.top
-        anchors.topMargin: 10
+        anchors.topMargin: 15
         anchors.horizontalCenter: parent.horizontalCenter
         width: dialogChooseLevel.width - 30
         Rectangle {
@@ -178,20 +176,17 @@ Rectangle {
             radius: 10 * ApplicationInfo.ratio
             width: parent.width
             height: title.height * 1.2
-            border.color: "black"
-            border.width: 0
 
-                GCText {
-                    id: title
-                    text: dialogChooseLevel.title
-                    width: titleColumn.width - 10
-                    horizontalAlignment: Text.AlignHCenter
-                    verticalAlignment: Text.AlignVCenter
-                    color: "black"
-                    fontSize: 20
-                    font.weight: Font.DemiBold
-                    wrapMode: Text.WordWrap
-                }
+            GCText {
+                id: title
+                text: dialogChooseLevel.title
+                width: titleColumn.width - 10
+                horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
+                fontSize: 20
+                font.weight: Font.DemiBold
+                wrapMode: Text.WordWrap
+            }
         }
 
         // Header buttons
@@ -231,7 +226,7 @@ Rectangle {
             color: "#bdbed0"
             radius: 10 * ApplicationInfo.ratio
             width: dialogChooseLevel.width - 30
-            height: dialogChooseLevel.height - (30 + title.height * 1.2) - saveAndPlayRow.height - datasetOptionsRow.height - 3 * parent.spacing
+            height: dialogChooseLevel.height - (2 * parent.anchors.topMargin) - titleRectangle.height - datasetOptionsRow.height - saveAndPlayRow.height - (3 * parent.spacing)
             border.color: "white"
             border.width: 3 * ApplicationInfo.ratio
             anchors.margins: 100
@@ -240,10 +235,7 @@ Rectangle {
                 id: flick
                 flickDeceleration: 1500
                 anchors.margins: 10 * ApplicationInfo.ratio
-                anchors.top: parent.top
-                anchors.left: parent.left
-                anchors.right: parent.right
-                anchors.bottom: parent.bottom
+                anchors.fill: parent
                 flickableDirection: Flickable.VerticalFlick
                 clip: true
                 contentHeight: contentItem.childrenRect.height + 40 * ApplicationInfo.ratio
