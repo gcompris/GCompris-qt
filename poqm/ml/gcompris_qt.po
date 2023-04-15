@@ -713,17 +713,17 @@ msgctxt "advanced_colors|"
 msgid "Find the dark purple butterfly"
 msgstr "കടും പർപ്പിൾ പൂമ്പാറ്റയെ കണ്ടുപിടിക്കുക"
 
-#: activities/algebra_by/ActivityConfig.qml:27
+#: activities/algebra_by/ActivityConfig.qml:26
 #: activities/algebra_div/ActivityConfig.qml:27
 #: activities/algebra_minus/ActivityConfig.qml:27
 #: activities/algebra_plus/ActivityConfig.qml:27
-#: activities/gletters/ActivityConfig.qml:50
-#: activities/note_names/ActivityConfig.qml:27
-#: activities/readingh/ActivityConfig.qml:42
-#: activities/readingv/ActivityConfig.qml:42
-#: activities/smallnumbers/ActivityConfig.qml:27
-#: activities/smallnumbers2/ActivityConfig.qml:40
-#: activities/wordsgame/ActivityConfig.qml:50
+#: activities/gletters/ActivityConfig.qml:49
+#: activities/note_names/ActivityConfig.qml:28
+#: activities/readingh/ActivityConfig.qml:43
+#: activities/readingv/ActivityConfig.qml:43
+#: activities/smallnumbers/ActivityConfig.qml:28
+#: activities/smallnumbers2/ActivityConfig.qml:41
+#: activities/wordsgame/ActivityConfig.qml:49
 msgctxt "ActivityConfig|"
 msgid "Speed"
 msgstr "വേഗത"
@@ -1287,7 +1287,7 @@ msgstr "സ്വതന്ത്ര മോഡ്"
 #: activities/analog_electricity/ActivityConfig.qml:32
 #: activities/digital_electricity/ActivityConfig.qml:32
 #: activities/graph-coloring/ActivityConfig.qml:31
-#: activities/guesscount/ActivityConfig.qml:38
+#: activities/guesscount/ActivityConfig.qml:39
 #: activities/solar_system/ActivityConfig.qml:31
 #: activities/superbrain/ActivityConfig.qml:31
 #: activities/traffic/ActivityConfig.qml:31
@@ -2027,7 +2027,7 @@ msgstr ""
 "ഒരു കഷണത്തെ ഡ്രാഗു ചെയ്തു നീക്കാവുന്നതാണ്. ആവശ്യമാണെങ്കിൽ കറക്കാനുള്ള ബട്ടൺ ഉപയോഗിക്കാം. കൂടുതൽ "
 "കാഠിന്യമുള്ള ഘട്ടങ്ങൾക്ക് തൻഗ്രാം പ്രവർത്തനം നോക്കൂ."
 
-#: activities/baby_wordprocessor/ActivityConfig.qml:27
+#: activities/baby_wordprocessor/ActivityConfig.qml:26
 msgctxt "ActivityConfig|"
 msgid "Play characters' sound when typed"
 msgstr "ടൈപ്പ് ചെയ്യുമ്പോൾ ക്യാരക്ടറിന്റെ ശബ്ദം പ്ലേ ചെയ്യുക"
@@ -2260,22 +2260,22 @@ msgctxt "ActivityConfig|"
 msgid "Select your level set"
 msgstr "ലവൽ സെറ്റ് തിരഞ്ഞെടുക്കുക"
 
-#: activities/balancebox/ActivityConfig.qml:40
+#: activities/balancebox/ActivityConfig.qml:41
 msgctxt "ActivityConfig|"
 msgid "Start the editor"
 msgstr "എഡിറ്റർ തുറക്കുക"
 
-#: activities/balancebox/ActivityConfig.qml:40
+#: activities/balancebox/ActivityConfig.qml:41
 msgctxt "ActivityConfig|"
 msgid "Start the activity to access the editor"
 msgstr "എഡിറ്ററിനായി ഈ പ്രവർത്തനം തുറക്കുക"
 
-#: activities/balancebox/ActivityConfig.qml:49
+#: activities/balancebox/ActivityConfig.qml:51
 msgctxt "ActivityConfig|"
 msgid "Load saved levels"
 msgstr "സേവ് ചെയ്തവ ലോഡ് ചെയ്യുക"
 
-#: activities/balancebox/ActivityConfig.qml:49
+#: activities/balancebox/ActivityConfig.qml:51
 msgctxt "ActivityConfig|"
 msgid "Start the activity to load your levels"
 msgstr "ലോഡ് ചെയ്യാനായി പ്രവർത്തനം തുറക്കുക"
@@ -3327,17 +3327,17 @@ msgstr ""
 "കനാലിന്റെ ഏതു വശത്താണ് ബന്ധിപ്പിച്ചിരിക്കുന്നതെന്നതിന് അനുസരിച്ച് പൂട്ടിനകത്തെ ജലനിരപ്പ് മാറും. "
 "ഇത് കൃത്യമായി ഉപയോഗിച്ച് ടക്സിന്റെ ജോലി തീർക്കാൻ സഹായിക്കൂ. "
 
-#: activities/categorization/ActivityConfig.qml:39
+#: activities/categorization/ActivityConfig.qml:38
 msgctxt "ActivityConfig|"
 msgid "Put together all the items from a category (with score)"
 msgstr "ഒരു വിഭാഗത്തിലുള്ള എല്ലാ ഇനങ്ങളെയും ഒരുമിച്ച് വെക്കുക (സ്കോറോടു കൂടി)"
 
-#: activities/categorization/ActivityConfig.qml:52
+#: activities/categorization/ActivityConfig.qml:50
 msgctxt "ActivityConfig|"
 msgid "Put together all the items from a category (without score)"
 msgstr "ഒരു വിഭാഗത്തിലുള്ള എല്ലാ ഇനങ്ങളെയും ഒരുമിച്ച് വെക്കുക (സ്കോർ ഇല്ലാതെ)"
 
-#: activities/categorization/ActivityConfig.qml:65
+#: activities/categorization/ActivityConfig.qml:62
 msgctxt "ActivityConfig|"
 msgid "Discover a category, grouping items together"
 msgstr "ഒരു വിഭാഗവും ഇനങ്ങളെ തരംതിരിക്കലും ഒരുമിച്ച് കാണിക്കുക"
@@ -4578,7 +4578,7 @@ msgstr "1955 സിട്രോയെൻ ഡിഎസ് 19"
 #: activities/gletters/ActivityConfig.qml:40
 #: activities/hangman/ActivityConfig.qml:38
 #: activities/lang/ActivityConfig.qml:35
-#: activities/letter-in-word/ActivityConfig.qml:78
+#: activities/letter-in-word/ActivityConfig.qml:69
 #: activities/missing-letter/ActivityConfig.qml:35
 #: activities/readingh/ActivityConfig.qml:38
 #: activities/readingv/ActivityConfig.qml:38
@@ -13206,8 +13206,8 @@ msgctxt "board9_0|"
 msgid "Bahrain"
 msgstr "ബഹ്റൈൻ"
 
-#: activities/gletters/ActivityConfig.qml:45
-#: activities/wordsgame/ActivityConfig.qml:45
+#: activities/gletters/ActivityConfig.qml:44
+#: activities/wordsgame/ActivityConfig.qml:44
 msgctxt "ActivityConfig|"
 msgid "Uppercase only mode"
 msgstr "വലിയ അക്ഷരങ്ങൾ മാത്രം"
@@ -13702,22 +13702,22 @@ msgid ""
 msgstr ""
 "ആരോയുടെ വലിപ്പവും ദിശയും നോക്കി മുൻകൂട്ടി കണ്ട് സ്ക്രീനിന്റെ നടുവിൽ തന്നെ നില്ക്കാൻ ശ്രമിക്കുക."
 
-#: activities/guesscount/ActivityConfig.qml:26
+#: activities/guesscount/ActivityConfig.qml:27
 msgctxt "ActivityConfig|"
 msgid "Admin"
 msgstr "അഡ്മിൻ"
 
-#: activities/guesscount/ActivityConfig.qml:27
+#: activities/guesscount/ActivityConfig.qml:28
 msgctxt "ActivityConfig|"
 msgid "BuiltIn"
 msgstr "ബിൽറ്റിൻ"
 
-#: activities/guesscount/ActivityConfig.qml:70
+#: activities/guesscount/ActivityConfig.qml:68
 msgctxt "ActivityConfig|"
 msgid "Selected"
 msgstr "തിരഞ്ഞെടുത്തത്"
 
-#: activities/guesscount/ActivityConfig.qml:70
+#: activities/guesscount/ActivityConfig.qml:68
 msgctxt "ActivityConfig|"
 msgid "Not Selected"
 msgstr "തിരഞ്ഞെടുക്കാത്തത്"
@@ -13906,12 +13906,12 @@ msgctxt "Data|"
 msgid "Guess a number between 1 and %1."
 msgstr "1-നും %1-നും ഇടയിലുള്ള ഒരു സംഖ്യ ഊഹിക്കൂ."
 
-#: activities/hangman/ActivityConfig.qml:43
+#: activities/hangman/ActivityConfig.qml:42
 msgctxt "ActivityConfig|"
 msgid "Display the image to find as hint"
 msgstr "കണ്ടത്തേണ്ട ചിത്രം സൂചനയായി കാണിക്കുക"
 
-#: activities/hangman/ActivityConfig.qml:52
+#: activities/hangman/ActivityConfig.qml:50
 msgctxt "ActivityConfig|"
 msgid ""
 "Speak the words to find (if available) when three attempts are remaining"
@@ -15585,32 +15585,32 @@ msgctxt "Leftright|"
 msgid "Right hand"
 msgstr "വലതു കൈപ്പത്തി"
 
-#: activities/letter-in-word/ActivityConfig.qml:41
+#: activities/letter-in-word/ActivityConfig.qml:40
 msgctxt "ActivityConfig|"
 msgid "All the words"
 msgstr "എല്ലാ വാക്കുകളും"
 
-#: activities/letter-in-word/ActivityConfig.qml:49
+#: activities/letter-in-word/ActivityConfig.qml:47
 msgctxt "ActivityConfig|"
 msgid "Only 5 words"
 msgstr "5 വാക്കുകൾ മാത്രം"
 
-#: activities/letter-in-word/ActivityConfig.qml:59
+#: activities/letter-in-word/ActivityConfig.qml:54
 msgctxt "ActivityConfig|"
 msgid "Select the case for the letters to search"
 msgstr "തിരയാനുള്ള അക്ഷരവലിപ്പം തിരഞ്ഞെടുക്കുക"
 
-#: activities/letter-in-word/ActivityConfig.qml:62
+#: activities/letter-in-word/ActivityConfig.qml:57
 msgctxt "ActivityConfig|"
 msgid "Mixed Case"
 msgstr "എല്ലാതരവും"
 
-#: activities/letter-in-word/ActivityConfig.qml:63
+#: activities/letter-in-word/ActivityConfig.qml:58
 msgctxt "ActivityConfig|"
 msgid "Upper Case"
 msgstr "വലിയ അക്ഷരങ്ങൾ"
 
-#: activities/letter-in-word/ActivityConfig.qml:64
+#: activities/letter-in-word/ActivityConfig.qml:59
 msgctxt "ActivityConfig|"
 msgid "Lower Case"
 msgstr "ചെറിയ അക്ഷരങ്ങൾ"
@@ -20268,12 +20268,12 @@ msgstr ""
 "ക്ലിക്ക് ചെയ്യുകയോ ടാപ്പ് ചെയ്യുകയോ ചെയ്തോ ഹെലികോപ്റ്റർ ചലിപ്പിക്കാം. ഏതു സംഖ്യയാണ് "
 "പിടിക്കേണ്ടതെന്ന് അറിയാൻ ഓർത്തുവെയ്ക്കുകയോ താഴെ വലത്തേ മൂലയിൽ പരിശോധിക്കുകയോ ചെയ്യാം."
 
-#: activities/play_piano/ActivityConfig.qml:35
+#: activities/play_piano/ActivityConfig.qml:34
 msgctxt "ActivityConfig|"
 msgid "Display colored notes."
 msgstr "സ്വരങ്ങൾ നിറങ്ങളോടെ കാണിക്കുക."
 
-#: activities/play_piano/ActivityConfig.qml:48
+#: activities/play_piano/ActivityConfig.qml:46
 msgctxt "ActivityConfig|"
 msgid "Display colorless notes."
 msgstr "സ്വരങ്ങൾ നിറങ്ങളില്ലാതെ കാണിക്കുക."
@@ -21934,7 +21934,7 @@ msgstr ""
 "ഓർമ്മിക്കണേ, പതിനാറ് ഔൺസ് (\"oz\") ആണ് ഒരു പൗണ്ട് (\"lb\"). \n"
 " തൂക്കമൊപ്പിക്കാനായി തൂക്കക്കട്ടികൾ ഇടതുഭാഗത്ത് വെക്കുക."
 
-#: activities/share/ActivityConfig.qml:27
+#: activities/share/ActivityConfig.qml:26
 msgctxt "ActivityConfig|"
 msgid "Display counters"
 msgstr "മിഠായി കൗണ്ടർ കാണിക്കുക"
@@ -25232,27 +25232,27 @@ msgctxt "DialogChooseLevel|"
 msgid "%1 settings"
 msgstr "%1 ക്രമീകരണം"
 
-#: core/DialogChooseLevel.qml:205
+#: core/DialogChooseLevel.qml:200
 msgctxt "DialogChooseLevel|"
 msgid "Dataset"
 msgstr "ഡാറ്റാസെറ്റ്"
 
-#: core/DialogChooseLevel.qml:218
+#: core/DialogChooseLevel.qml:213
 msgctxt "DialogChooseLevel|"
 msgid "Options"
 msgstr "ഓപ്ഷനുകൾ"
 
-#: core/DialogChooseLevel.qml:349
+#: core/DialogChooseLevel.qml:341
 msgctxt "DialogChooseLevel|"
 msgid "Cancel"
 msgstr "റദ്ദാക്കുക"
 
-#: core/DialogChooseLevel.qml:357
+#: core/DialogChooseLevel.qml:349
 msgctxt "DialogChooseLevel|"
 msgid "Save"
 msgstr "സേവ്"
 
-#: core/DialogChooseLevel.qml:371
+#: core/DialogChooseLevel.qml:363
 msgctxt "DialogChooseLevel|"
 msgid "Save and start"
 msgstr "സേവ് ചെയ്ത് തുറക്കുക"

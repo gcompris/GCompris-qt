@@ -712,17 +712,17 @@ msgctxt "advanced_colors|"
 msgid "Find the dark purple butterfly"
 msgstr "Atopa a bolboreta púrpura escuro"
 
-#: activities/algebra_by/ActivityConfig.qml:27
+#: activities/algebra_by/ActivityConfig.qml:26
 #: activities/algebra_div/ActivityConfig.qml:27
 #: activities/algebra_minus/ActivityConfig.qml:27
 #: activities/algebra_plus/ActivityConfig.qml:27
-#: activities/gletters/ActivityConfig.qml:50
-#: activities/note_names/ActivityConfig.qml:27
-#: activities/readingh/ActivityConfig.qml:42
-#: activities/readingv/ActivityConfig.qml:42
-#: activities/smallnumbers/ActivityConfig.qml:27
-#: activities/smallnumbers2/ActivityConfig.qml:40
-#: activities/wordsgame/ActivityConfig.qml:50
+#: activities/gletters/ActivityConfig.qml:49
+#: activities/note_names/ActivityConfig.qml:28
+#: activities/readingh/ActivityConfig.qml:43
+#: activities/readingv/ActivityConfig.qml:43
+#: activities/smallnumbers/ActivityConfig.qml:28
+#: activities/smallnumbers2/ActivityConfig.qml:41
+#: activities/wordsgame/ActivityConfig.qml:49
 msgctxt "ActivityConfig|"
 msgid "Speed"
 msgstr "Velocidade"
@@ -1284,7 +1284,7 @@ msgstr "Modo libre"
 #: activities/analog_electricity/ActivityConfig.qml:32
 #: activities/digital_electricity/ActivityConfig.qml:32
 #: activities/graph-coloring/ActivityConfig.qml:31
-#: activities/guesscount/ActivityConfig.qml:38
+#: activities/guesscount/ActivityConfig.qml:39
 #: activities/solar_system/ActivityConfig.qml:31
 #: activities/superbrain/ActivityConfig.qml:31
 #: activities/traffic/ActivityConfig.qml:31
@@ -2000,7 +2000,7 @@ msgstr ""
 "arrastra ao seu redor para mostrar o xiro que queres. Podes atopar niveis "
 "máis complicados na actividade de tangram."
 
-#: activities/baby_wordprocessor/ActivityConfig.qml:27
+#: activities/baby_wordprocessor/ActivityConfig.qml:26
 msgctxt "ActivityConfig|"
 msgid "Play characters' sound when typed"
 msgstr ""
@@ -2267,22 +2267,22 @@ msgctxt "ActivityConfig|"
 msgid "Select your level set"
 msgstr "Selecciona un grupo de niveis"
 
-#: activities/balancebox/ActivityConfig.qml:40
+#: activities/balancebox/ActivityConfig.qml:41
 msgctxt "ActivityConfig|"
 msgid "Start the editor"
 msgstr "Iniciar o editor"
 
-#: activities/balancebox/ActivityConfig.qml:40
+#: activities/balancebox/ActivityConfig.qml:41
 msgctxt "ActivityConfig|"
 msgid "Start the activity to access the editor"
 msgstr ""
 
-#: activities/balancebox/ActivityConfig.qml:49
+#: activities/balancebox/ActivityConfig.qml:51
 msgctxt "ActivityConfig|"
 msgid "Load saved levels"
 msgstr "Cargar os niveis gardados"
 
-#: activities/balancebox/ActivityConfig.qml:49
+#: activities/balancebox/ActivityConfig.qml:51
 msgctxt "ActivityConfig|"
 msgid "Start the activity to load your levels"
 msgstr ""
@@ -3484,7 +3484,7 @@ msgstr ""
 "O nivel da auga dentro da esclusa cambiará segundo o lado da canle co que "
 "está conectada. Use esta propiedade para axudar a Tux a completar o traballo."
 
-#: activities/categorization/ActivityConfig.qml:39
+#: activities/categorization/ActivityConfig.qml:38
 #, fuzzy
 #| msgctxt "ActivityConfig|"
 #| msgid "Put together all the items from a category (with score)"
@@ -3492,7 +3492,7 @@ msgctxt "ActivityConfig|"
 msgid "Put together all the items from a category (with score)"
 msgstr "Xuntar todos os elementos dunha categoría (con puntuación)"
 
-#: activities/categorization/ActivityConfig.qml:52
+#: activities/categorization/ActivityConfig.qml:50
 #, fuzzy
 #| msgctxt "ActivityConfig|"
 #| msgid "Put together all the items from a category (without score)"
@@ -3500,7 +3500,7 @@ msgctxt "ActivityConfig|"
 msgid "Put together all the items from a category (without score)"
 msgstr "Xuntar todos os elementos dunha categoría (sen puntuación)"
 
-#: activities/categorization/ActivityConfig.qml:65
+#: activities/categorization/ActivityConfig.qml:62
 #, fuzzy
 #| msgctxt "ActivityConfig|"
 #| msgid "Discover a category, grouping items together"
@@ -4939,7 +4939,7 @@ msgstr "Citroën DS 19 de 1955"
 #: activities/gletters/ActivityConfig.qml:40
 #: activities/hangman/ActivityConfig.qml:38
 #: activities/lang/ActivityConfig.qml:35
-#: activities/letter-in-word/ActivityConfig.qml:78
+#: activities/letter-in-word/ActivityConfig.qml:69
 #: activities/missing-letter/ActivityConfig.qml:35
 #: activities/readingh/ActivityConfig.qml:38
 #: activities/readingv/ActivityConfig.qml:38
@@ -14850,8 +14850,8 @@ msgctxt "board9_0|"
 msgid "Bahrain"
 msgstr ""
 
-#: activities/gletters/ActivityConfig.qml:45
-#: activities/wordsgame/ActivityConfig.qml:45
+#: activities/gletters/ActivityConfig.qml:44
+#: activities/wordsgame/ActivityConfig.qml:44
 msgctxt "ActivityConfig|"
 msgid "Uppercase only mode"
 msgstr "Modo de só maiúsculas"
@@ -15443,22 +15443,22 @@ msgid ""
 "size and direction of the arrow."
 msgstr ""
 
-#: activities/guesscount/ActivityConfig.qml:26
+#: activities/guesscount/ActivityConfig.qml:27
 msgctxt "ActivityConfig|"
 msgid "Admin"
 msgstr "Administrador"
 
-#: activities/guesscount/ActivityConfig.qml:27
+#: activities/guesscount/ActivityConfig.qml:28
 msgctxt "ActivityConfig|"
 msgid "BuiltIn"
 msgstr "Incorporado"
 
-#: activities/guesscount/ActivityConfig.qml:70
+#: activities/guesscount/ActivityConfig.qml:68
 msgctxt "ActivityConfig|"
 msgid "Selected"
 msgstr "Seleccionado"
 
-#: activities/guesscount/ActivityConfig.qml:70
+#: activities/guesscount/ActivityConfig.qml:68
 msgctxt "ActivityConfig|"
 msgid "Not Selected"
 msgstr "Non seleccionado"
@@ -15677,7 +15677,7 @@ msgctxt "Data|"
 msgid "Guess a number between 1 and %1."
 msgstr "Adiviña un número entre 1 e %1."
 
-#: activities/hangman/ActivityConfig.qml:43
+#: activities/hangman/ActivityConfig.qml:42
 #, fuzzy
 #| msgctxt "ActivityConfig|"
 #| msgid "Display the image to find as hint"
@@ -15685,7 +15685,7 @@ msgctxt "ActivityConfig|"
 msgid "Display the image to find as hint"
 msgstr "Mostrar a imaxe para atopar como consello"
 
-#: activities/hangman/ActivityConfig.qml:52
+#: activities/hangman/ActivityConfig.qml:50
 msgctxt "ActivityConfig|"
 msgid ""
 "Speak the words to find (if available) when three attempts are remaining"
@@ -17502,17 +17502,17 @@ msgctxt "Leftright|"
 msgid "Right hand"
 msgstr "A man dereita"
 
-#: activities/letter-in-word/ActivityConfig.qml:41
+#: activities/letter-in-word/ActivityConfig.qml:40
 msgctxt "ActivityConfig|"
 msgid "All the words"
 msgstr "Todas as palabras"
 
-#: activities/letter-in-word/ActivityConfig.qml:49
+#: activities/letter-in-word/ActivityConfig.qml:47
 msgctxt "ActivityConfig|"
 msgid "Only 5 words"
 msgstr "Só 5 palabras"
 
-#: activities/letter-in-word/ActivityConfig.qml:59
+#: activities/letter-in-word/ActivityConfig.qml:54
 #, fuzzy
 #| msgctxt "LetterInWord|"
 #| msgid "Select case for letter to be searched"
@@ -17520,17 +17520,17 @@ msgctxt "ActivityConfig|"
 msgid "Select the case for the letters to search"
 msgstr "Selecciona se a letra para buscar é en maiúsculas ou en minúsculas"
 
-#: activities/letter-in-word/ActivityConfig.qml:62
+#: activities/letter-in-word/ActivityConfig.qml:57
 msgctxt "ActivityConfig|"
 msgid "Mixed Case"
 msgstr "Mestura"
 
-#: activities/letter-in-word/ActivityConfig.qml:63
+#: activities/letter-in-word/ActivityConfig.qml:58
 msgctxt "ActivityConfig|"
 msgid "Upper Case"
 msgstr "Maiúsculas"
 
-#: activities/letter-in-word/ActivityConfig.qml:64
+#: activities/letter-in-word/ActivityConfig.qml:59
 msgctxt "ActivityConfig|"
 msgid "Lower Case"
 msgstr "Minúsculas"
@@ -22845,12 +22845,12 @@ msgstr ""
 "destino. Para saber que número tes que coller, tes que lembralo ou "
 "comprobalo na esquina inferior dereita."
 
-#: activities/play_piano/ActivityConfig.qml:35
+#: activities/play_piano/ActivityConfig.qml:34
 msgctxt "ActivityConfig|"
 msgid "Display colored notes."
 msgstr "Mostrar notas coloradas."
 
-#: activities/play_piano/ActivityConfig.qml:48
+#: activities/play_piano/ActivityConfig.qml:46
 msgctxt "ActivityConfig|"
 msgid "Display colorless notes."
 msgstr "Mostrar notas sen cores."
@@ -24780,7 +24780,7 @@ msgid ""
 " Drop the weights on the left side of the scales to balance it."
 msgstr "Lembra que 1 libra («lb») equivale a 16 onzas («oz»)."
 
-#: activities/share/ActivityConfig.qml:27
+#: activities/share/ActivityConfig.qml:26
 #, fuzzy
 #| msgctxt "Share|"
 #| msgid "Display candy counter"
@@ -28853,12 +28853,12 @@ msgctxt "DialogChooseLevel|"
 msgid "%1 settings"
 msgstr ""
 
-#: core/DialogChooseLevel.qml:205
+#: core/DialogChooseLevel.qml:200
 msgctxt "DialogChooseLevel|"
 msgid "Dataset"
 msgstr ""
 
-#: core/DialogChooseLevel.qml:218
+#: core/DialogChooseLevel.qml:213
 #, fuzzy
 #| msgctxt "Lang|"
 #| msgid "action"
@@ -28866,7 +28866,7 @@ msgctxt "DialogChooseLevel|"
 msgid "Options"
 msgstr "acción"
 
-#: core/DialogChooseLevel.qml:349
+#: core/DialogChooseLevel.qml:341
 #, fuzzy
 #| msgctxt "board5_0|"
 #| msgid "France"
@@ -28874,7 +28874,7 @@ msgctxt "DialogChooseLevel|"
 msgid "Cancel"
 msgstr "Francia"
 
-#: core/DialogChooseLevel.qml:357
+#: core/DialogChooseLevel.qml:349
 #, fuzzy
 #| msgctxt "BabyWordprocessor|"
 #| msgid "Save"
@@ -28882,7 +28882,7 @@ msgctxt "DialogChooseLevel|"
 msgid "Save"
 msgstr "Gardar"
 
-#: core/DialogChooseLevel.qml:371
+#: core/DialogChooseLevel.qml:363
 msgctxt "DialogChooseLevel|"
 msgid "Save and start"
 msgstr ""

@@ -722,17 +722,17 @@ msgctxt "advanced_colors|"
 msgid "Find the dark purple butterfly"
 msgstr "गहरा बैंगनी तितली को ढूंढें"
 
-#: activities/algebra_by/ActivityConfig.qml:27
+#: activities/algebra_by/ActivityConfig.qml:26
 #: activities/algebra_div/ActivityConfig.qml:27
 #: activities/algebra_minus/ActivityConfig.qml:27
 #: activities/algebra_plus/ActivityConfig.qml:27
-#: activities/gletters/ActivityConfig.qml:50
-#: activities/note_names/ActivityConfig.qml:27
-#: activities/readingh/ActivityConfig.qml:42
-#: activities/readingv/ActivityConfig.qml:42
-#: activities/smallnumbers/ActivityConfig.qml:27
-#: activities/smallnumbers2/ActivityConfig.qml:40
-#: activities/wordsgame/ActivityConfig.qml:50
+#: activities/gletters/ActivityConfig.qml:49
+#: activities/note_names/ActivityConfig.qml:28
+#: activities/readingh/ActivityConfig.qml:43
+#: activities/readingv/ActivityConfig.qml:43
+#: activities/smallnumbers/ActivityConfig.qml:28
+#: activities/smallnumbers2/ActivityConfig.qml:41
+#: activities/wordsgame/ActivityConfig.qml:49
 msgctxt "ActivityConfig|"
 msgid "Speed"
 msgstr "गति"
@@ -1392,7 +1392,7 @@ msgstr ""
 #: activities/analog_electricity/ActivityConfig.qml:32
 #: activities/digital_electricity/ActivityConfig.qml:32
 #: activities/graph-coloring/ActivityConfig.qml:31
-#: activities/guesscount/ActivityConfig.qml:38
+#: activities/guesscount/ActivityConfig.qml:39
 #: activities/solar_system/ActivityConfig.qml:31
 #: activities/superbrain/ActivityConfig.qml:31
 #: activities/traffic/ActivityConfig.qml:31
@@ -2048,7 +2048,7 @@ msgstr ""
 "दिखाने के लिए इसके चारों ओर खींचें। पहले स्तर पर, तांग्राम अवधारणा को पेश करने के लिए सरल "
 "वस्तुओं का उपयोग किया जाता है"
 
-#: activities/baby_wordprocessor/ActivityConfig.qml:27
+#: activities/baby_wordprocessor/ActivityConfig.qml:26
 msgctxt "ActivityConfig|"
 msgid "Play characters' sound when typed"
 msgstr ""
@@ -2326,22 +2326,22 @@ msgctxt "ActivityConfig|"
 msgid "Select your level set"
 msgstr "अपना स्तर सेट चुनें"
 
-#: activities/balancebox/ActivityConfig.qml:40
+#: activities/balancebox/ActivityConfig.qml:41
 msgctxt "ActivityConfig|"
 msgid "Start the editor"
 msgstr "संपादक प्रारंभ करें"
 
-#: activities/balancebox/ActivityConfig.qml:40
+#: activities/balancebox/ActivityConfig.qml:41
 msgctxt "ActivityConfig|"
 msgid "Start the activity to access the editor"
 msgstr ""
 
-#: activities/balancebox/ActivityConfig.qml:49
+#: activities/balancebox/ActivityConfig.qml:51
 msgctxt "ActivityConfig|"
 msgid "Load saved levels"
 msgstr ""
 
-#: activities/balancebox/ActivityConfig.qml:49
+#: activities/balancebox/ActivityConfig.qml:51
 msgctxt "ActivityConfig|"
 msgid "Start the activity to load your levels"
 msgstr ""
@@ -3402,17 +3402,17 @@ msgid ""
 "canal it is connected to. Use this property to help Tux get the job done."
 msgstr ""
 
-#: activities/categorization/ActivityConfig.qml:39
+#: activities/categorization/ActivityConfig.qml:38
 msgctxt "ActivityConfig|"
 msgid "Put together all the items from a category (with score)"
 msgstr ""
 
-#: activities/categorization/ActivityConfig.qml:52
+#: activities/categorization/ActivityConfig.qml:50
 msgctxt "ActivityConfig|"
 msgid "Put together all the items from a category (without score)"
 msgstr ""
 
-#: activities/categorization/ActivityConfig.qml:65
+#: activities/categorization/ActivityConfig.qml:62
 msgctxt "ActivityConfig|"
 msgid "Discover a category, grouping items together"
 msgstr ""
@@ -4842,7 +4842,7 @@ msgstr "1955 सिट्रॉइन DS 19"
 #: activities/gletters/ActivityConfig.qml:40
 #: activities/hangman/ActivityConfig.qml:38
 #: activities/lang/ActivityConfig.qml:35
-#: activities/letter-in-word/ActivityConfig.qml:78
+#: activities/letter-in-word/ActivityConfig.qml:69
 #: activities/missing-letter/ActivityConfig.qml:35
 #: activities/readingh/ActivityConfig.qml:38
 #: activities/readingv/ActivityConfig.qml:38
@@ -14441,8 +14441,8 @@ msgctxt "board9_0|"
 msgid "Bahrain"
 msgstr ""
 
-#: activities/gletters/ActivityConfig.qml:45
-#: activities/wordsgame/ActivityConfig.qml:45
+#: activities/gletters/ActivityConfig.qml:44
+#: activities/wordsgame/ActivityConfig.qml:44
 #, fuzzy
 #| msgctxt "Gletters|"
 #| msgid "Uppercase only mode"
@@ -15091,7 +15091,7 @@ msgid ""
 "size and direction of the arrow."
 msgstr ""
 
-#: activities/guesscount/ActivityConfig.qml:26
+#: activities/guesscount/ActivityConfig.qml:27
 #, fuzzy
 #| msgctxt "Guesscount|"
 #| msgid "Admin"
@@ -15099,7 +15099,7 @@ msgctxt "ActivityConfig|"
 msgid "Admin"
 msgstr "प्रबंधक"
 
-#: activities/guesscount/ActivityConfig.qml:27
+#: activities/guesscount/ActivityConfig.qml:28
 #, fuzzy
 #| msgctxt "Guesscount|"
 #| msgid "BuiltIn"
@@ -15107,7 +15107,7 @@ msgctxt "ActivityConfig|"
 msgid "BuiltIn"
 msgstr "अंतर्निर्मित"
 
-#: activities/guesscount/ActivityConfig.qml:70
+#: activities/guesscount/ActivityConfig.qml:68
 #, fuzzy
 #| msgctxt "Guesscount|"
 #| msgid "Selected"
@@ -15115,7 +15115,7 @@ msgctxt "ActivityConfig|"
 msgid "Selected"
 msgstr "चयनित"
 
-#: activities/guesscount/ActivityConfig.qml:70
+#: activities/guesscount/ActivityConfig.qml:68
 #, fuzzy
 #| msgctxt "Guesscount|"
 #| msgid "Not Selected"
@@ -15346,7 +15346,7 @@ msgctxt "Data|"
 msgid "Guess a number between 1 and %1."
 msgstr "1 और %1 के बीच एक संख्या का अनुमान लगाएँ"
 
-#: activities/hangman/ActivityConfig.qml:43
+#: activities/hangman/ActivityConfig.qml:42
 #, fuzzy
 #| msgctxt "Hangman|"
 #| msgid "Display image to find as hint"
@@ -15354,7 +15354,7 @@ msgctxt "ActivityConfig|"
 msgid "Display the image to find as hint"
 msgstr " ढूंढने के लिए, संकेत स्वरूप चित्र दिखाएँ"
 
-#: activities/hangman/ActivityConfig.qml:52
+#: activities/hangman/ActivityConfig.qml:50
 msgctxt "ActivityConfig|"
 msgid ""
 "Speak the words to find (if available) when three attempts are remaining"
@@ -17249,7 +17249,7 @@ msgctxt "Leftright|"
 msgid "Right hand"
 msgstr "दहिना हाथ"
 
-#: activities/letter-in-word/ActivityConfig.qml:41
+#: activities/letter-in-word/ActivityConfig.qml:40
 #, fuzzy
 #| msgctxt "ConfigurationItem|"
 #| msgid "All lowercase"
@@ -17257,7 +17257,7 @@ msgctxt "ActivityConfig|"
 msgid "All the words"
 msgstr "सभी लोअरकेस"
 
-#: activities/letter-in-word/ActivityConfig.qml:49
+#: activities/letter-in-word/ActivityConfig.qml:47
 #, fuzzy
 #| msgctxt "LetterInWord|"
 #| msgid "Only 5 words"
@@ -17265,7 +17265,7 @@ msgctxt "ActivityConfig|"
 msgid "Only 5 words"
 msgstr "केवल पाँच शब्द"
 
-#: activities/letter-in-word/ActivityConfig.qml:59
+#: activities/letter-in-word/ActivityConfig.qml:54
 #, fuzzy
 #| msgctxt "ActivityInfo|"
 #| msgid "Connect the dots to draw letters"
@@ -17273,12 +17273,12 @@ msgctxt "ActivityConfig|"
 msgid "Select the case for the letters to search"
 msgstr "अक्षर बनाने के लिए बिन्दुओं को जोड़ें"
 
-#: activities/letter-in-word/ActivityConfig.qml:62
+#: activities/letter-in-word/ActivityConfig.qml:57
 msgctxt "ActivityConfig|"
 msgid "Mixed Case"
 msgstr ""
 
-#: activities/letter-in-word/ActivityConfig.qml:63
+#: activities/letter-in-word/ActivityConfig.qml:58
 #, fuzzy
 #| msgctxt "ConfigurationItem|"
 #| msgid "All uppercase"
@@ -17286,7 +17286,7 @@ msgctxt "ActivityConfig|"
 msgid "Upper Case"
 msgstr "सभी अपरकेस"
 
-#: activities/letter-in-word/ActivityConfig.qml:64
+#: activities/letter-in-word/ActivityConfig.qml:59
 #, fuzzy
 #| msgctxt "ConfigurationItem|"
 #| msgid "All lowercase"
@@ -22766,7 +22766,7 @@ msgstr ""
 "जानने के लिए कि आपको कौन से नंबर को पकड़ना है, आप या तो इसे याद कर सकते हैं या नीचे दाएं "
 "कोने को चेक कर सकते हैं।"
 
-#: activities/play_piano/ActivityConfig.qml:35
+#: activities/play_piano/ActivityConfig.qml:34
 #, fuzzy
 #| msgctxt "Share|"
 #| msgid "Display candy counter"
@@ -22774,7 +22774,7 @@ msgctxt "ActivityConfig|"
 msgid "Display colored notes."
 msgstr "कैंडी गणक दिखाएँ"
 
-#: activities/play_piano/ActivityConfig.qml:48
+#: activities/play_piano/ActivityConfig.qml:46
 #, fuzzy
 #| msgctxt "Share|"
 #| msgid "Display candy counter"
@@ -24651,7 +24651,7 @@ msgid ""
 " Drop the weights on the left side of the scales to balance it."
 msgstr "याद रखें, एक पाउंड (\"एलबी\") सोलह औंस के बराबर होता है (\"ओज़\")।"
 
-#: activities/share/ActivityConfig.qml:27
+#: activities/share/ActivityConfig.qml:26
 #, fuzzy
 #| msgctxt "Share|"
 #| msgid "Display candy counter"
@@ -28641,12 +28641,12 @@ msgctxt "DialogChooseLevel|"
 msgid "%1 settings"
 msgstr ""
 
-#: core/DialogChooseLevel.qml:205
+#: core/DialogChooseLevel.qml:200
 msgctxt "DialogChooseLevel|"
 msgid "Dataset"
 msgstr ""
 
-#: core/DialogChooseLevel.qml:218
+#: core/DialogChooseLevel.qml:213
 #, fuzzy
 #| msgctxt "Lang|"
 #| msgid "action"
@@ -28654,7 +28654,7 @@ msgctxt "DialogChooseLevel|"
 msgid "Options"
 msgstr "कार्य"
 
-#: core/DialogChooseLevel.qml:349
+#: core/DialogChooseLevel.qml:341
 #, fuzzy
 #| msgctxt "board5_0|"
 #| msgid "France"
@@ -28662,7 +28662,7 @@ msgctxt "DialogChooseLevel|"
 msgid "Cancel"
 msgstr "फ्रांस"
 
-#: core/DialogChooseLevel.qml:357
+#: core/DialogChooseLevel.qml:349
 #, fuzzy
 #| msgctxt "BalanceboxEditor|"
 #| msgid "Save"
@@ -28670,7 +28670,7 @@ msgctxt "DialogChooseLevel|"
 msgid "Save"
 msgstr "सहेजें"
 
-#: core/DialogChooseLevel.qml:371
+#: core/DialogChooseLevel.qml:363
 msgctxt "DialogChooseLevel|"
 msgid "Save and start"
 msgstr ""

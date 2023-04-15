@@ -715,17 +715,17 @@ msgctxt "advanced_colors|"
 msgid "Find the dark purple butterfly"
 msgstr "Gjeni fluturën ngjyrë e purpurt të errët"
 
-#: activities/algebra_by/ActivityConfig.qml:27
+#: activities/algebra_by/ActivityConfig.qml:26
 #: activities/algebra_div/ActivityConfig.qml:27
 #: activities/algebra_minus/ActivityConfig.qml:27
 #: activities/algebra_plus/ActivityConfig.qml:27
-#: activities/gletters/ActivityConfig.qml:50
-#: activities/note_names/ActivityConfig.qml:27
-#: activities/readingh/ActivityConfig.qml:42
-#: activities/readingv/ActivityConfig.qml:42
-#: activities/smallnumbers/ActivityConfig.qml:27
-#: activities/smallnumbers2/ActivityConfig.qml:40
-#: activities/wordsgame/ActivityConfig.qml:50
+#: activities/gletters/ActivityConfig.qml:49
+#: activities/note_names/ActivityConfig.qml:28
+#: activities/readingh/ActivityConfig.qml:43
+#: activities/readingv/ActivityConfig.qml:43
+#: activities/smallnumbers/ActivityConfig.qml:28
+#: activities/smallnumbers2/ActivityConfig.qml:41
+#: activities/wordsgame/ActivityConfig.qml:49
 msgctxt "ActivityConfig|"
 msgid "Speed"
 msgstr "Shpejtësi"
@@ -1296,7 +1296,7 @@ msgstr "Mënyra e Lirë"
 #: activities/analog_electricity/ActivityConfig.qml:32
 #: activities/digital_electricity/ActivityConfig.qml:32
 #: activities/graph-coloring/ActivityConfig.qml:31
-#: activities/guesscount/ActivityConfig.qml:38
+#: activities/guesscount/ActivityConfig.qml:39
 #: activities/solar_system/ActivityConfig.qml:31
 #: activities/superbrain/ActivityConfig.qml:31
 #: activities/traffic/ActivityConfig.qml:31
@@ -2054,7 +2054,7 @@ msgstr ""
 "Lëvizni një pjesë duke e tërhequr. Nëse ju duhet, përdorni butonin e "
 "rrotullimit. Nivele më të ndërlikuar mund të gjeni te veprimtaria Tangram."
 
-#: activities/baby_wordprocessor/ActivityConfig.qml:27
+#: activities/baby_wordprocessor/ActivityConfig.qml:26
 msgctxt "ActivityConfig|"
 msgid "Play characters' sound when typed"
 msgstr "Luaj tingull shkronjash, kur shtypet"
@@ -2290,22 +2290,22 @@ msgctxt "ActivityConfig|"
 msgid "Select your level set"
 msgstr "Përzgjidhni grupin tuaj të niveleve"
 
-#: activities/balancebox/ActivityConfig.qml:40
+#: activities/balancebox/ActivityConfig.qml:41
 msgctxt "ActivityConfig|"
 msgid "Start the editor"
 msgstr "Nisni përpunuesin"
 
-#: activities/balancebox/ActivityConfig.qml:40
+#: activities/balancebox/ActivityConfig.qml:41
 msgctxt "ActivityConfig|"
 msgid "Start the activity to access the editor"
 msgstr "Që të hyhet te përpunuesi, nisni veprimtarinë"
 
-#: activities/balancebox/ActivityConfig.qml:49
+#: activities/balancebox/ActivityConfig.qml:51
 msgctxt "ActivityConfig|"
 msgid "Load saved levels"
 msgstr "Ngarko nivele të ruajtur"
 
-#: activities/balancebox/ActivityConfig.qml:49
+#: activities/balancebox/ActivityConfig.qml:51
 msgctxt "ActivityConfig|"
 msgid "Start the activity to load your levels"
 msgstr "Që të ngarkohen nivelet tuaj, nisni veprimtarinë"
@@ -3385,17 +3385,17 @@ msgstr ""
 "Niveli i ujit brenda pendës do të ndryshojë sipas anës së kanalit te e cila "
 "është lidhur. Përdoreni këtë veti që ta ndihmoni Tux-in të mbarojë punë."
 
-#: activities/categorization/ActivityConfig.qml:39
+#: activities/categorization/ActivityConfig.qml:38
 msgctxt "ActivityConfig|"
 msgid "Put together all the items from a category (with score)"
 msgstr "Bëni tok krejt objektet prej një kategorie (me pikë)"
 
-#: activities/categorization/ActivityConfig.qml:52
+#: activities/categorization/ActivityConfig.qml:50
 msgctxt "ActivityConfig|"
 msgid "Put together all the items from a category (without score)"
 msgstr "Bëni tok krejt objektet prej një kategorie (pa pikë)"
 
-#: activities/categorization/ActivityConfig.qml:65
+#: activities/categorization/ActivityConfig.qml:62
 msgctxt "ActivityConfig|"
 msgid "Discover a category, grouping items together"
 msgstr "Zbuloni një kategori, duke grupuar tok objekte"
@@ -4723,7 +4723,7 @@ msgstr "1955 Citroën DS 19"
 #: activities/gletters/ActivityConfig.qml:40
 #: activities/hangman/ActivityConfig.qml:38
 #: activities/lang/ActivityConfig.qml:35
-#: activities/letter-in-word/ActivityConfig.qml:78
+#: activities/letter-in-word/ActivityConfig.qml:69
 #: activities/missing-letter/ActivityConfig.qml:35
 #: activities/readingh/ActivityConfig.qml:38
 #: activities/readingv/ActivityConfig.qml:38
@@ -13447,8 +13447,8 @@ msgctxt "board9_0|"
 msgid "Bahrain"
 msgstr "Bahrein"
 
-#: activities/gletters/ActivityConfig.qml:45
-#: activities/wordsgame/ActivityConfig.qml:45
+#: activities/gletters/ActivityConfig.qml:44
+#: activities/wordsgame/ActivityConfig.qml:44
 msgctxt "ActivityConfig|"
 msgid "Uppercase only mode"
 msgstr "Mënyrë “Vetëm me të mëdha”"
@@ -13966,22 +13966,22 @@ msgstr ""
 "Përpiquni të qëndroni pranë qendrës së ekranit dhe t’i paraprini lëvizjes së "
 "planetit duke vëzhguar madhësinë dhe drejtimin e shigjetës."
 
-#: activities/guesscount/ActivityConfig.qml:26
+#: activities/guesscount/ActivityConfig.qml:27
 msgctxt "ActivityConfig|"
 msgid "Admin"
 msgstr "Përgjegjës"
 
-#: activities/guesscount/ActivityConfig.qml:27
+#: activities/guesscount/ActivityConfig.qml:28
 msgctxt "ActivityConfig|"
 msgid "BuiltIn"
 msgstr "I brendshëm"
 
-#: activities/guesscount/ActivityConfig.qml:70
+#: activities/guesscount/ActivityConfig.qml:68
 msgctxt "ActivityConfig|"
 msgid "Selected"
 msgstr "E përzgjedhur"
 
-#: activities/guesscount/ActivityConfig.qml:70
+#: activities/guesscount/ActivityConfig.qml:68
 msgctxt "ActivityConfig|"
 msgid "Not Selected"
 msgstr "Jo e përzgjedhur"
@@ -14173,12 +14173,12 @@ msgctxt "Data|"
 msgid "Guess a number between 1 and %1."
 msgstr "Hamendësoni një numër mes 1-shit dhe %1."
 
-#: activities/hangman/ActivityConfig.qml:43
+#: activities/hangman/ActivityConfig.qml:42
 msgctxt "ActivityConfig|"
 msgid "Display the image to find as hint"
 msgstr "Si ndihmëz, shfaqi figurën që duhet gjetur"
 
-#: activities/hangman/ActivityConfig.qml:52
+#: activities/hangman/ActivityConfig.qml:50
 msgctxt "ActivityConfig|"
 msgid ""
 "Speak the words to find (if available) when three attempts are remaining"
@@ -15882,33 +15882,33 @@ msgctxt "Leftright|"
 msgid "Right hand"
 msgstr "Dorë e djathtë"
 
-#: activities/letter-in-word/ActivityConfig.qml:41
+#: activities/letter-in-word/ActivityConfig.qml:40
 msgctxt "ActivityConfig|"
 msgid "All the words"
 msgstr "Krejt fjalët"
 
-#: activities/letter-in-word/ActivityConfig.qml:49
+#: activities/letter-in-word/ActivityConfig.qml:47
 msgctxt "ActivityConfig|"
 msgid "Only 5 words"
 msgstr "Vetëm 5 fjalë"
 
-#: activities/letter-in-word/ActivityConfig.qml:59
+#: activities/letter-in-word/ActivityConfig.qml:54
 msgctxt "ActivityConfig|"
 msgid "Select the case for the letters to search"
 msgstr ""
 "Zgjidhni shkrim me të madhe ose me të vogël, për shkronjat që duhen kërkuar"
 
-#: activities/letter-in-word/ActivityConfig.qml:62
+#: activities/letter-in-word/ActivityConfig.qml:57
 msgctxt "ActivityConfig|"
 msgid "Mixed Case"
 msgstr "Të përziera"
 
-#: activities/letter-in-word/ActivityConfig.qml:63
+#: activities/letter-in-word/ActivityConfig.qml:58
 msgctxt "ActivityConfig|"
 msgid "Upper Case"
 msgstr "Të mëdha"
 
-#: activities/letter-in-word/ActivityConfig.qml:64
+#: activities/letter-in-word/ActivityConfig.qml:59
 msgctxt "ActivityConfig|"
 msgid "Lower Case"
 msgstr "Të vogla"
@@ -20657,12 +20657,12 @@ msgstr ""
 "prekni vendndodhjen e dëshiruar. Që të dini se cilin numër duhet të kapni, "
 "ose mbajeni mend, ose shiheni numrin në cepin e poshtëm djathtas."
 
-#: activities/play_piano/ActivityConfig.qml:35
+#: activities/play_piano/ActivityConfig.qml:34
 msgctxt "ActivityConfig|"
 msgid "Display colored notes."
 msgstr "Shfaq shënime të ngjyrosura."
 
-#: activities/play_piano/ActivityConfig.qml:48
+#: activities/play_piano/ActivityConfig.qml:46
 msgctxt "ActivityConfig|"
 msgid "Display colorless notes."
 msgstr "Shfaq shënime të pangjyrosura."
@@ -22363,7 +22363,7 @@ msgstr ""
 "Mos harroni, një livër (“lb”) është baras me gjashtëmbëdhjetë onc (“oz”). \n"
 " Lini pesha në anën e majtë që të baraspeshoni peshoret."
 
-#: activities/share/ActivityConfig.qml:27
+#: activities/share/ActivityConfig.qml:26
 msgctxt "ActivityConfig|"
 msgid "Display counters"
 msgstr "Shfaq numëratorë"
@@ -25758,27 +25758,27 @@ msgctxt "DialogChooseLevel|"
 msgid "%1 settings"
 msgstr "Rregullime për %1"
 
-#: core/DialogChooseLevel.qml:205
+#: core/DialogChooseLevel.qml:200
 msgctxt "DialogChooseLevel|"
 msgid "Dataset"
 msgstr "Grup të dhënash"
 
-#: core/DialogChooseLevel.qml:218
+#: core/DialogChooseLevel.qml:213
 msgctxt "DialogChooseLevel|"
 msgid "Options"
 msgstr "Mundësi"
 
-#: core/DialogChooseLevel.qml:349
+#: core/DialogChooseLevel.qml:341
 msgctxt "DialogChooseLevel|"
 msgid "Cancel"
 msgstr "Anulojeni"
 
-#: core/DialogChooseLevel.qml:357
+#: core/DialogChooseLevel.qml:349
 msgctxt "DialogChooseLevel|"
 msgid "Save"
 msgstr "Ruaje"
 
-#: core/DialogChooseLevel.qml:371
+#: core/DialogChooseLevel.qml:363
 msgctxt "DialogChooseLevel|"
 msgid "Save and start"
 msgstr "Ruaje dhe nise"
