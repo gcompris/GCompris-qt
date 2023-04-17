@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2023-04-06 16:06+0300\n"
+"PO-Revision-Date: 2023-04-17 00:56+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 22.12.3\n"
+"X-Generator: Lokalize 23.03.70\n"
 "X-Qt-Contexts: true\n"
 
 #. Activity title
@@ -1293,7 +1293,7 @@ msgstr "Serbest Kip"
 #: activities/traffic/ActivityConfig.qml:31
 msgctxt "ActivityConfig|"
 msgid "Select your mode"
-msgstr "Kipini seç"
+msgstr "Kip seç"
 
 #. Activity title
 #: activities/analog_electricity/ActivityInfo.qml:15
@@ -2090,42 +2090,42 @@ msgstr "Oklar: Metinde dolaş"
 #: activities/baby_wordprocessor/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Shift + Arrows: select a part of the text"
-msgstr "Shift + Oklar: Metnin bir bölümünü seç"
+msgstr "Üst Karakter + Oklar: Metnin bir bölümünü seç"
 
 #: activities/baby_wordprocessor/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid "Ctrl + A: select all the text"
-msgstr "Ctrl + A: Tüm metni seç"
+msgstr "Kontrol + A: Tüm metni seç"
 
 #: activities/baby_wordprocessor/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
 msgid "Ctrl + C: copy selected text"
-msgstr "Ctrl + C: Seçili metni kopyala"
+msgstr "Kontrol + C: Seçili metni kopyala"
 
 #: activities/baby_wordprocessor/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
 msgid "Ctrl + X: cut selected text"
-msgstr "Ctrl + X: Seçili metni kes"
+msgstr "Kontrol + X: Seçili metni kes"
 
 #: activities/baby_wordprocessor/ActivityInfo.qml:32
 msgctxt "ActivityInfo|"
 msgid "Ctrl + V: paste copied or cut text"
-msgstr "Ctrl + V: Kopyalanan veya kesilen metni yapıştır"
+msgstr "Kontrol + V: Kopyalanan veya kesilen metni yapıştır"
 
 #: activities/baby_wordprocessor/ActivityInfo.qml:33
 msgctxt "ActivityInfo|"
 msgid "Ctrl + D: delete selected text"
-msgstr "Ctrl + D: Seçili metni sil"
+msgstr "Kontrol + D: Seçili metni sil"
 
 #: activities/baby_wordprocessor/ActivityInfo.qml:34
 msgctxt "ActivityInfo|"
 msgid "Ctrl + Z: undo"
-msgstr "Ctrl + Z: Geri al"
+msgstr "Kontrol + Z: Geri al"
 
 #: activities/baby_wordprocessor/ActivityInfo.qml:35
 msgctxt "ActivityInfo|"
 msgid "Ctrl + Shift + Z: redo"
-msgstr "Ctrl + Shift + Z: Yinele"
+msgstr "Kontrol + Üst Karakter + Z: Yinele"
 
 #: activities/baby_wordprocessor/BabyWordprocessor.qml:91
 msgctxt "BabyWordprocessor|"
@@ -2417,8 +2417,8 @@ msgid ""
 msgstr ""
 "Düzenleyici görünümünün yan tarafındaki 'Sına' düğmesine tıklayarak "
 "değiştirilmiş bir düzeyi sınayabilirsin. Çubuktaki ana sayfa düğmesine "
-"tıklayarak veya klavyendeki Esc düğmesine veya taşınabilir aygıtındaki geri "
-"düğmesine basarak sınama kipinden çıkabilirsin."
+"tıklayarak veya klavyendeki Vazgeç düğmesine veya taşınabilir aygıtındaki "
+"geri düğmesine basarak sınama kipinden çıkabilirsin."
 
 #: activities/balancebox/ActivityInfo.qml:42
 msgctxt "ActivityInfo|"
@@ -2446,8 +2446,8 @@ msgid ""
 "press Escape on your keyboard or the back button on your mobile device."
 msgstr ""
 "Etkinlik ayarlarına geri dönmek için çubuktaki ana sayfa düğmesine "
-"tıklayabilirsin veya klavyendeki Esc düğmesine veya taşınabilir aygıtındaki "
-"geri düğmesine basabilirsin."
+"tıklayabilirsin veya klavyendeki Vazgeç düğmesine veya taşınabilir "
+"aygıtındaki geri düğmesine basabilirsin."
 
 #: activities/balancebox/ActivityInfo.qml:45
 msgctxt "ActivityInfo|"
@@ -4685,7 +4685,7 @@ msgstr "Sekme: Soruyu yinele"
 #: activities/click_on_letter_up/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Click on an uppercase letter"
-msgstr "Bir büyük harfe tıkla"
+msgstr "Bir BÜYÜK harfe tıkla"
 
 #: activities/clickanddraw/ActivityConfig.qml:21
 #: activities/drawletters/ActivityConfig.qml:21
@@ -14095,7 +14095,7 @@ msgstr ""
 #, qt-format
 msgctxt "hangman|"
 msgid "Attempted: %1"
-msgstr "Deneme: %1"
+msgstr "Denenen harfler: %1"
 
 #: activities/hangman/Hangman.qml:400
 msgctxt "Hangman|"
@@ -14110,7 +14110,7 @@ msgid ""
 "joining a translation team on <a href=\"%2\">%2</a>"
 msgstr ""
 "GCompris, KDE topluluğu tarafından geliştirilir, <a href=\"%2\">%2</a> "
-"üzerinden çeviri takımına katılarak GCompris'i çevirebilirsiniz"
+"üzerinden çeviri takımına katılarak GCompris'i çevirebilirsin"
 
 #: activities/hangman/Hangman.qml:403
 msgctxt "Hangman|"
@@ -16422,7 +16422,7 @@ msgid ""
 "Flip the cards to find the uppercase and lowercase of the same letter, "
 "playing against Tux."
 msgstr ""
-"Tux'a karşı oynarken aynı harfin büyük ve küçük harflerini bulmak için "
+"Tux'a karşı oynarken aynı harfin BÜYÜK ve küçük harflerini bulmak için "
 "kartları çevir."
 
 #. Help goal
@@ -17626,7 +17626,8 @@ msgstr ""
 msgctxt "ActivityInfo|"
 msgid "Home - Exit an activity, go back to menu (Ctrl+W or Escape key)"
 msgstr ""
-"Ana Sayfa - Bir etkinlikten çık, menüye geri dön (Ctrl + w veya Esc düğmesi)"
+"Ana Sayfa - Bir etkinlikten çık, menüye geri dön (Kontrol + W veya Vazgeç "
+"düğmesi)"
 
 #: activities/menu/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
@@ -17666,7 +17667,7 @@ msgstr "G - GCompris Hakkında"
 #: activities/menu/ActivityInfo.qml:33
 msgctxt "ActivityInfo|"
 msgid "Quit - Quit GCompris (Ctrl+Q)"
-msgstr "Çık - GCompris'ten çık (Ctrl + q)"
+msgstr "Çık - GCompris'ten çık (Kontrol + Q)"
 
 #: activities/menu/ActivityInfo.qml:34
 msgctxt "ActivityInfo|"
@@ -17700,17 +17701,17 @@ msgstr "<b> Klavye kısayolları:</b>"
 #: activities/menu/ActivityInfo.qml:39
 msgctxt "ActivityInfo|"
 msgid "Ctrl+B: Show or Hide the control bar"
-msgstr "Ctrl + b: Denetim çubuğunu göster veya gizle"
+msgstr "Kontrol + B: Denetim çubuğunu göster veya gizle"
 
 #: activities/menu/ActivityInfo.qml:40
 msgctxt "ActivityInfo|"
 msgid "Ctrl+F: Toggle full screen"
-msgstr "Ctrl + f; Tam ekranı aç/kapat"
+msgstr "Kontrol + F; Tam ekranı aç/kapat"
 
 #: activities/menu/ActivityInfo.qml:41
 msgctxt "ActivityInfo|"
 msgid "Ctrl+S: Toggle the activity section bar"
-msgstr "Ctrl + s: Etkinlik bölümü çubuğunu aç/kapat"
+msgstr "Kontrol + S: Etkinlik bölümü çubuğunu aç/kapat"
 
 #: activities/menu/BackgroundMusicList.qml:55
 msgctxt "BackgroundMusicList|"
@@ -22905,7 +22906,7 @@ msgstr "Boşluk veya Giriş: Seç"
 #: activities/solar_system/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
 msgid "Escape: return to previous screen"
-msgstr "Escape: Önceki ekrana dön"
+msgstr "Vazgeç: Önceki ekrana dön"
 
 #: activities/solar_system/ActivityInfo.qml:32
 msgctxt "ActivityInfo|"
@@ -24697,7 +24698,7 @@ msgstr "30 ile 50 arasındaki sonuç."
 #: activities/tic_tac_toe/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
 msgid "Tic tac toe (against Tux)"
-msgstr "Üç taş (Tüx'a karşı)"
+msgstr "Üç taş (Tux'a karşı)"
 
 #. Help title
 #: activities/tic_tac_toe/ActivityInfo.qml:20
@@ -24751,7 +24752,7 @@ msgstr ""
 #: activities/traffic/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "A sliding-block puzzle game"
-msgstr "Kayan blok yap boz oyunu"
+msgstr "Kayan blok yapboz oyunu"
 
 #. Help title
 #: activities/traffic/ActivityInfo.qml:17
@@ -25491,7 +25492,7 @@ msgstr "Kaydet"
 #: core/DialogChooseLevel.qml:363
 msgctxt "DialogChooseLevel|"
 msgid "Save and start"
-msgstr "Kaydet ve başlat"
+msgstr "Kaydet ve Başlat"
 
 #: core/DialogHelp.qml:49
 msgctxt "DialogHelp|"
@@ -25556,7 +25557,7 @@ msgstr "İndiriliyor..."
 #: core/DownloadDialog.qml:253
 msgctxt "DownloadDialog|"
 msgid "Background"
-msgstr "Arka plan"
+msgstr "Arka Planda İndir"
 
 #: core/DownloadDialog.qml:270
 msgctxt "DownloadDialog|"
@@ -25578,7 +25579,8 @@ msgstr ""
 #: core/DownloadDialog.qml:396
 msgctxt "DownloadDialog|"
 msgid "Restart any currently active activity."
-msgstr "Şu anda etkin olan herhangi bir etkinliği yeniden başlat."
+msgstr ""
+"Veriyi kullanmak için şu anda etkin olan tüm etkinlikleri yeniden başlat."
 
 #: core/DownloadDialog.qml:398
 msgctxt "DownloadDialog|"
@@ -25704,7 +25706,7 @@ msgstr "Başlat"
 #: core/LanguageList.qml:34
 msgctxt "LanguageList|"
 msgid "Your system default"
-msgstr "Varsayılan sistemin"
+msgstr "Öntanımlı sistem ayarı"
 
 #: core/LanguageList.qml:34
 msgctxt "LanguageList|"
@@ -25807,7 +25809,7 @@ msgstr "Arka plan müziği"
 #: core/main.qml:240
 msgctxt "main|"
 msgid "Do you want to download the following external assets?"
-msgstr "Şu anda hepsini yüklemek istiyor musun?"
+msgstr "Aşağıdaki verileri şimdi indirmek istiyor musun?"
 
 #: core/main.qml:245
 msgctxt "main|"

@@ -256,7 +256,7 @@ msgid ""
 "Click on a white chess piece and green boxes will appear to indicate all the "
 "movements that piece can make. Try and get the black king into checkmate."
 msgstr ""
-"Clique sur une pièce d'échec blanche, et des cases vertes apparaitront pour "
+"Clique sur une pièce d'échec blanche, et des cases vertes apparaîtront pour "
 "t'indiquer les mouvements que peut faire la pièce. Essaie de mettre le roi "
 "noir échec et mat."
 
@@ -905,7 +905,7 @@ msgstr "Choisis les pièces ou les billets dont tu as besoin pour payer."
 #: activities/morse_code/ActivityInfo.qml:21
 #, kde-format
 msgid "Learn and practice the International Morse code"
-msgstr "Apprends puis entraine-toi à utiliser le code Morse."
+msgstr "Apprends puis entraîne-toi à utiliser le code Morse."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "mosaic"
 #: activities/mosaic/ActivityInfo.qml:18
@@ -1204,7 +1204,7 @@ msgid ""
 "appear only once in a row, in a column and in a subregion if any."
 msgstr ""
 "Sélectionne un symbole ou un chiffre et clique sur sa destination. Chaque "
-"symbole ne doit apparaitre qu'une seule fois par rangée, par colonne et par "
+"symbole ne doit apparaître qu'une seule fois par rangée, par colonne et par "
 "région."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "superbrain"
