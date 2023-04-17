@@ -716,17 +716,17 @@ msgctxt "advanced_colors|"
 msgid "Find the dark purple butterfly"
 msgstr ""
 
-#: activities/algebra_by/ActivityConfig.qml:27
+#: activities/algebra_by/ActivityConfig.qml:26
 #: activities/algebra_div/ActivityConfig.qml:27
 #: activities/algebra_minus/ActivityConfig.qml:27
 #: activities/algebra_plus/ActivityConfig.qml:27
-#: activities/gletters/ActivityConfig.qml:50
-#: activities/note_names/ActivityConfig.qml:27
-#: activities/readingh/ActivityConfig.qml:42
-#: activities/readingv/ActivityConfig.qml:42
-#: activities/smallnumbers/ActivityConfig.qml:27
-#: activities/smallnumbers2/ActivityConfig.qml:40
-#: activities/wordsgame/ActivityConfig.qml:50
+#: activities/gletters/ActivityConfig.qml:49
+#: activities/note_names/ActivityConfig.qml:28
+#: activities/readingh/ActivityConfig.qml:43
+#: activities/readingv/ActivityConfig.qml:43
+#: activities/smallnumbers/ActivityConfig.qml:28
+#: activities/smallnumbers2/ActivityConfig.qml:41
+#: activities/wordsgame/ActivityConfig.qml:49
 msgctxt "ActivityConfig|"
 msgid "Speed"
 msgstr ""
@@ -1261,7 +1261,7 @@ msgstr ""
 #: activities/analog_electricity/ActivityConfig.qml:32
 #: activities/digital_electricity/ActivityConfig.qml:32
 #: activities/graph-coloring/ActivityConfig.qml:31
-#: activities/guesscount/ActivityConfig.qml:38
+#: activities/guesscount/ActivityConfig.qml:39
 #: activities/solar_system/ActivityConfig.qml:31
 #: activities/superbrain/ActivityConfig.qml:31
 #: activities/traffic/ActivityConfig.qml:31
@@ -1894,7 +1894,7 @@ msgid ""
 "complicated levels can be found in tangram activity."
 msgstr ""
 
-#: activities/baby_wordprocessor/ActivityConfig.qml:27
+#: activities/baby_wordprocessor/ActivityConfig.qml:26
 msgctxt "ActivityConfig|"
 msgid "Play characters' sound when typed"
 msgstr ""
@@ -2118,22 +2118,22 @@ msgctxt "ActivityConfig|"
 msgid "Select your level set"
 msgstr ""
 
-#: activities/balancebox/ActivityConfig.qml:40
+#: activities/balancebox/ActivityConfig.qml:41
 msgctxt "ActivityConfig|"
 msgid "Start the editor"
 msgstr ""
 
-#: activities/balancebox/ActivityConfig.qml:40
+#: activities/balancebox/ActivityConfig.qml:41
 msgctxt "ActivityConfig|"
 msgid "Start the activity to access the editor"
 msgstr ""
 
-#: activities/balancebox/ActivityConfig.qml:49
+#: activities/balancebox/ActivityConfig.qml:51
 msgctxt "ActivityConfig|"
 msgid "Load saved levels"
 msgstr ""
 
-#: activities/balancebox/ActivityConfig.qml:49
+#: activities/balancebox/ActivityConfig.qml:51
 msgctxt "ActivityConfig|"
 msgid "Start the activity to load your levels"
 msgstr ""
@@ -3089,17 +3089,17 @@ msgid ""
 "canal it is connected to. Use this property to help Tux get the job done."
 msgstr ""
 
-#: activities/categorization/ActivityConfig.qml:39
+#: activities/categorization/ActivityConfig.qml:38
 msgctxt "ActivityConfig|"
 msgid "Put together all the items from a category (with score)"
 msgstr ""
 
-#: activities/categorization/ActivityConfig.qml:52
+#: activities/categorization/ActivityConfig.qml:50
 msgctxt "ActivityConfig|"
 msgid "Put together all the items from a category (without score)"
 msgstr ""
 
-#: activities/categorization/ActivityConfig.qml:65
+#: activities/categorization/ActivityConfig.qml:62
 msgctxt "ActivityConfig|"
 msgid "Discover a category, grouping items together"
 msgstr ""
@@ -4256,7 +4256,7 @@ msgstr ""
 #: activities/gletters/ActivityConfig.qml:40
 #: activities/hangman/ActivityConfig.qml:38
 #: activities/lang/ActivityConfig.qml:35
-#: activities/letter-in-word/ActivityConfig.qml:78
+#: activities/letter-in-word/ActivityConfig.qml:69
 #: activities/missing-letter/ActivityConfig.qml:35
 #: activities/readingh/ActivityConfig.qml:38
 #: activities/readingv/ActivityConfig.qml:38
@@ -12365,8 +12365,8 @@ msgctxt "board9_0|"
 msgid "Bahrain"
 msgstr ""
 
-#: activities/gletters/ActivityConfig.qml:45
-#: activities/wordsgame/ActivityConfig.qml:45
+#: activities/gletters/ActivityConfig.qml:44
+#: activities/wordsgame/ActivityConfig.qml:44
 msgctxt "ActivityConfig|"
 msgid "Uppercase only mode"
 msgstr ""
@@ -12816,22 +12816,22 @@ msgid ""
 "size and direction of the arrow."
 msgstr ""
 
-#: activities/guesscount/ActivityConfig.qml:26
+#: activities/guesscount/ActivityConfig.qml:27
 msgctxt "ActivityConfig|"
 msgid "Admin"
 msgstr ""
 
-#: activities/guesscount/ActivityConfig.qml:27
+#: activities/guesscount/ActivityConfig.qml:28
 msgctxt "ActivityConfig|"
 msgid "BuiltIn"
 msgstr ""
 
-#: activities/guesscount/ActivityConfig.qml:70
+#: activities/guesscount/ActivityConfig.qml:68
 msgctxt "ActivityConfig|"
 msgid "Selected"
 msgstr ""
 
-#: activities/guesscount/ActivityConfig.qml:70
+#: activities/guesscount/ActivityConfig.qml:68
 msgctxt "ActivityConfig|"
 msgid "Not Selected"
 msgstr ""
@@ -12992,32 +12992,32 @@ msgstr ""
 #: activities/guessnumber/resource/2/Data.qml:14
 #: activities/guessnumber/resource/2/Data.qml:19
 #: activities/guessnumber/resource/2/Data.qml:23
-#: activities/guessnumber/resource/3/Data.qml:15
-#: activities/guessnumber/resource/3/Data.qml:20
-#: activities/guessnumber/resource/3/Data.qml:24
-#: activities/guessnumber/resource/3/Data.qml:28
-#: activities/guessnumber/resource/4/Data.qml:15
-#: activities/guessnumber/resource/4/Data.qml:20
-#: activities/guessnumber/resource/4/Data.qml:24
-#: activities/guessnumber/resource/4/Data.qml:28
-#: activities/guessnumber/resource/4/Data.qml:32
-#: activities/guessnumber/resource/5/Data.qml:15
-#: activities/guessnumber/resource/5/Data.qml:20
-#: activities/guessnumber/resource/5/Data.qml:24
-#: activities/guessnumber/resource/5/Data.qml:28
-#: activities/guessnumber/resource/5/Data.qml:32
-#: activities/guessnumber/resource/5/Data.qml:36
+#: activities/guessnumber/resource/3/Data.qml:16
+#: activities/guessnumber/resource/3/Data.qml:21
+#: activities/guessnumber/resource/3/Data.qml:25
+#: activities/guessnumber/resource/3/Data.qml:29
+#: activities/guessnumber/resource/4/Data.qml:16
+#: activities/guessnumber/resource/4/Data.qml:21
+#: activities/guessnumber/resource/4/Data.qml:25
+#: activities/guessnumber/resource/4/Data.qml:29
+#: activities/guessnumber/resource/4/Data.qml:33
+#: activities/guessnumber/resource/5/Data.qml:16
+#: activities/guessnumber/resource/5/Data.qml:21
+#: activities/guessnumber/resource/5/Data.qml:25
+#: activities/guessnumber/resource/5/Data.qml:29
+#: activities/guessnumber/resource/5/Data.qml:33
+#: activities/guessnumber/resource/5/Data.qml:37
 #, qt-format
 msgctxt "Data|"
 msgid "Guess a number between 1 and %1."
 msgstr ""
 
-#: activities/hangman/ActivityConfig.qml:43
+#: activities/hangman/ActivityConfig.qml:42
 msgctxt "ActivityConfig|"
 msgid "Display the image to find as hint"
 msgstr ""
 
-#: activities/hangman/ActivityConfig.qml:52
+#: activities/hangman/ActivityConfig.qml:50
 msgctxt "ActivityConfig|"
 msgid ""
 "Speak the words to find (if available) when three attempts are remaining"
@@ -14073,14 +14073,14 @@ msgid ""
 "number. Then click on the OK button to validate your answer."
 msgstr ""
 
-#: activities/learn_decimals/learn_decimals.js:33
+#: activities/learn_decimals/learn_decimals.js:34
 msgctxt "learn_decimals|"
 msgid ""
 "A decimal number is displayed. The bar with the arrow represents a full "
 "unit, and each square in it represents one tenth of this unit."
 msgstr ""
 
-#: activities/learn_decimals/learn_decimals.js:37
+#: activities/learn_decimals/learn_decimals.js:38
 msgctxt "learn_decimals|"
 msgid ""
 "Drag the arrow to select a part of the bar, and drag the selected part of "
@@ -14089,7 +14089,7 @@ msgid ""
 "button to validate your answer."
 msgstr ""
 
-#: activities/learn_decimals/learn_decimals.js:44
+#: activities/learn_decimals/learn_decimals.js:45
 msgctxt "learn_decimals|"
 msgid ""
 "A subtraction with two decimal numbers is displayed. Below it, the first "
@@ -14097,22 +14097,22 @@ msgid ""
 "full unit, and each square in it represents one tenth of this unit."
 msgstr ""
 
-#: activities/learn_decimals/learn_decimals.js:48
+#: activities/learn_decimals/learn_decimals.js:49
 msgctxt "learn_decimals|"
 msgid ""
 "Click on the squares to subtract them and display the result of the "
 "operation, and click on the OK button to validate your answer."
 msgstr ""
 
-#: activities/learn_decimals/learn_decimals.js:52
-#: activities/learn_decimals/learn_decimals.js:67
+#: activities/learn_decimals/learn_decimals.js:53
+#: activities/learn_decimals/learn_decimals.js:68
 msgctxt "learn_decimals|"
 msgid ""
 "If the answer is correct, type the corresponding result, and click on the OK "
 "button to validate your answer."
 msgstr ""
 
-#: activities/learn_decimals/learn_decimals.js:59
+#: activities/learn_decimals/learn_decimals.js:60
 msgctxt "learn_decimals|"
 msgid ""
 "An addition with two decimal numbers is displayed. The bar with the arrow "
@@ -14120,7 +14120,7 @@ msgid ""
 "unit."
 msgstr ""
 
-#: activities/learn_decimals/learn_decimals.js:63
+#: activities/learn_decimals/learn_decimals.js:64
 msgctxt "learn_decimals|"
 msgid ""
 "Drag the arrow to select a part of the bar, and drag the selected part of "
@@ -14129,12 +14129,12 @@ msgid ""
 "to validate your answer."
 msgstr ""
 
-#: activities/learn_decimals/learn_decimals.js:74
+#: activities/learn_decimals/learn_decimals.js:75
 msgctxt "learn_decimals|"
 msgid "A quantity is requested. The arrow allows to select up to 10 oranges."
 msgstr ""
 
-#: activities/learn_decimals/learn_decimals.js:78
+#: activities/learn_decimals/learn_decimals.js:79
 msgctxt "learn_decimals|"
 msgid ""
 "Drag the arrow to select a number of oranges, and drag the selected oranges "
@@ -14578,32 +14578,32 @@ msgctxt "Leftright|"
 msgid "Right hand"
 msgstr ""
 
-#: activities/letter-in-word/ActivityConfig.qml:41
+#: activities/letter-in-word/ActivityConfig.qml:40
 msgctxt "ActivityConfig|"
 msgid "All the words"
 msgstr ""
 
-#: activities/letter-in-word/ActivityConfig.qml:49
+#: activities/letter-in-word/ActivityConfig.qml:47
 msgctxt "ActivityConfig|"
 msgid "Only 5 words"
 msgstr ""
 
-#: activities/letter-in-word/ActivityConfig.qml:59
+#: activities/letter-in-word/ActivityConfig.qml:54
 msgctxt "ActivityConfig|"
 msgid "Select the case for the letters to search"
 msgstr ""
 
-#: activities/letter-in-word/ActivityConfig.qml:62
+#: activities/letter-in-word/ActivityConfig.qml:57
 msgctxt "ActivityConfig|"
 msgid "Mixed Case"
 msgstr ""
 
-#: activities/letter-in-word/ActivityConfig.qml:63
+#: activities/letter-in-word/ActivityConfig.qml:58
 msgctxt "ActivityConfig|"
 msgid "Upper Case"
 msgstr ""
 
-#: activities/letter-in-word/ActivityConfig.qml:64
+#: activities/letter-in-word/ActivityConfig.qml:59
 msgctxt "ActivityConfig|"
 msgid "Lower Case"
 msgstr ""
@@ -16508,139 +16508,139 @@ msgctxt "ConfigurationItem|"
 msgid "Download"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:94
+#: activities/menu/ConfigurationItem.qml:95
 msgctxt "ConfigurationItem|"
 msgid "Enable audio voices"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:103
+#: activities/menu/ConfigurationItem.qml:105
 msgctxt "ConfigurationItem|"
 msgid "Enable audio effects"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:112
+#: activities/menu/ConfigurationItem.qml:114
 msgctxt "ConfigurationItem|"
 msgid "Audio effects volume"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:133
+#: activities/menu/ConfigurationItem.qml:135
 msgctxt "ConfigurationItem|"
 msgid "Download background music"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:143
+#: activities/menu/ConfigurationItem.qml:146
 msgctxt "ConfigurationItem|"
 msgid "Enable background music"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:152
+#: activities/menu/ConfigurationItem.qml:155
 msgctxt "ConfigurationItem|"
 msgid "Background Music"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:169
+#: activities/menu/ConfigurationItem.qml:172
 msgctxt "ConfigurationItem|"
 msgid "Not playing"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:171
+#: activities/menu/ConfigurationItem.qml:174
 #, qt-format
 msgctxt "ConfigurationItem|"
 msgid "Title: %1  Artist: %2"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:173
+#: activities/menu/ConfigurationItem.qml:176
 msgctxt "ConfigurationItem|"
 msgid "Introduction music"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:196
+#: activities/menu/ConfigurationItem.qml:199
 msgctxt "ConfigurationItem|"
 msgid "Background music volume"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:214
+#: activities/menu/ConfigurationItem.qml:218
 msgctxt "ConfigurationItem|"
 msgid "Fullscreen"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:224
+#: activities/menu/ConfigurationItem.qml:229
 msgctxt "ConfigurationItem|"
 msgid "Virtual Keyboard"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:234
+#: activities/menu/ConfigurationItem.qml:240
 msgctxt "ConfigurationItem|"
 msgid "Enable automatic downloads/updates of sound files"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:246
+#: activities/menu/ConfigurationItem.qml:252
 msgctxt "ConfigurationItem|"
 msgid "Download full word image set"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:266
+#: activities/menu/ConfigurationItem.qml:273
 msgctxt "ConfigurationItem|"
 msgid "Full word image set is installed"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:266
+#: activities/menu/ConfigurationItem.qml:273
 msgctxt "ConfigurationItem|"
 msgid "Full word image set is not installed"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:287
+#: activities/menu/ConfigurationItem.qml:295
 msgctxt "ConfigurationItem|"
 msgid "The activity section menu is visible"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:296
+#: activities/menu/ConfigurationItem.qml:305
 msgctxt "ConfigurationItem|"
 msgid "Ask for confirmation to exit"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:307
+#: activities/menu/ConfigurationItem.qml:316
 msgctxt "ConfigurationItem|"
 msgid "Font selector"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:312
+#: activities/menu/ConfigurationItem.qml:321
 msgctxt "ConfigurationItem|"
 msgid "Font size"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:332
-#: activities/menu/ConfigurationItem.qml:366
+#: activities/menu/ConfigurationItem.qml:341
+#: activities/menu/ConfigurationItem.qml:375
 msgctxt "ConfigurationItem|"
 msgid "Default"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:341
+#: activities/menu/ConfigurationItem.qml:350
 msgctxt "ConfigurationItem|"
 msgid "Font Capitalization"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:346
+#: activities/menu/ConfigurationItem.qml:355
 msgctxt "ConfigurationItem|"
 msgid "Font letter spacing"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:372
+#: activities/menu/ConfigurationItem.qml:381
 msgctxt "ConfigurationItem|"
 msgid "Difficulty filter:"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:666
+#: activities/menu/ConfigurationItem.qml:675
 msgctxt "ConfigurationItem|"
 msgid "Mixed case (default)"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:667
+#: activities/menu/ConfigurationItem.qml:676
 msgctxt "ConfigurationItem|"
 msgid "All uppercase"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:668
+#: activities/menu/ConfigurationItem.qml:677
 msgctxt "ConfigurationItem|"
 msgid "All lowercase"
 msgstr ""
@@ -18944,12 +18944,12 @@ msgid ""
 "or check the number on the bottom right corner."
 msgstr ""
 
-#: activities/play_piano/ActivityConfig.qml:35
+#: activities/play_piano/ActivityConfig.qml:34
 msgctxt "ActivityConfig|"
 msgid "Display colored notes."
 msgstr ""
 
-#: activities/play_piano/ActivityConfig.qml:48
+#: activities/play_piano/ActivityConfig.qml:46
 msgctxt "ActivityConfig|"
 msgid "Display colorless notes."
 msgstr ""
@@ -20460,7 +20460,7 @@ msgid ""
 " Drop the weights on the left side of the scales to balance it."
 msgstr ""
 
-#: activities/share/ActivityConfig.qml:27
+#: activities/share/ActivityConfig.qml:26
 msgctxt "ActivityConfig|"
 msgid "Display counters"
 msgstr ""
@@ -23376,13 +23376,13 @@ msgctxt "DialogAbout|"
 msgid "Based on Qt %1 and %2"
 msgstr ""
 
-#: core/DialogAbout.qml:61
+#: core/DialogAbout.qml:64
 msgctxt "DialogAbout|"
 msgid "GCompris Home Page: https://gcompris.net"
 msgstr ""
 
 #. Replace the link with the page in your language if it exists, else keep the english page link
-#: core/DialogAbout.qml:65
+#: core/DialogAbout.qml:67
 msgctxt "DialogAbout|"
 msgid ""
 "You can provide financial support for the development of <b>GCompris</b>, "
@@ -23390,12 +23390,12 @@ msgid ""
 "net/donate-en.html</a>."
 msgstr ""
 
-#: core/DialogAbout.qml:75
+#: core/DialogAbout.qml:72
 msgctxt "DialogAbout|"
 msgid "<b>GCompris</b> is a Free Software developed within the KDE community."
 msgstr ""
 
-#: core/DialogAbout.qml:79
+#: core/DialogAbout.qml:76
 #, qt-format
 msgctxt "DialogAbout|"
 msgid ""
@@ -23410,7 +23410,7 @@ msgid ""
 "and the software we produce."
 msgstr ""
 
-#: core/DialogAbout.qml:96
+#: core/DialogAbout.qml:93
 #, qt-format
 msgctxt "DialogAbout|"
 msgid ""
@@ -23423,7 +23423,7 @@ msgid ""
 "\"Wishlist\"."
 msgstr ""
 
-#: core/DialogAbout.qml:108
+#: core/DialogAbout.qml:105
 #, qt-format
 msgctxt "DialogAbout|"
 msgid ""
@@ -23436,7 +23436,7 @@ msgid ""
 "what you need."
 msgstr ""
 
-#: core/DialogAbout.qml:125
+#: core/DialogAbout.qml:122
 #, qt-format
 msgctxt "DialogAbout|"
 msgid ""
@@ -23452,13 +23452,13 @@ msgid ""
 "><br />Thank you very much in advance for your support."
 msgstr ""
 
-#: core/DialogAbout.qml:142
+#: core/DialogAbout.qml:139
 #, qt-format
 msgctxt "DialogAbout|"
 msgid "<b>A big thanks to the development team:</b> %1"
 msgstr ""
 
-#: core/DialogAbout.qml:146
+#: core/DialogAbout.qml:143
 #, qt-format
 msgctxt "DialogAbout|"
 msgid "<b>A big thanks to the translation team:</b> %1"
@@ -23481,27 +23481,27 @@ msgctxt "DialogChooseLevel|"
 msgid "%1 settings"
 msgstr ""
 
-#: core/DialogChooseLevel.qml:205
+#: core/DialogChooseLevel.qml:200
 msgctxt "DialogChooseLevel|"
 msgid "Dataset"
 msgstr ""
 
-#: core/DialogChooseLevel.qml:218
+#: core/DialogChooseLevel.qml:213
 msgctxt "DialogChooseLevel|"
 msgid "Options"
 msgstr ""
 
-#: core/DialogChooseLevel.qml:349
+#: core/DialogChooseLevel.qml:341
 msgctxt "DialogChooseLevel|"
 msgid "Cancel"
 msgstr ""
 
-#: core/DialogChooseLevel.qml:357
+#: core/DialogChooseLevel.qml:349
 msgctxt "DialogChooseLevel|"
 msgid "Save"
 msgstr ""
 
-#: core/DialogChooseLevel.qml:371
+#: core/DialogChooseLevel.qml:363
 msgctxt "DialogChooseLevel|"
 msgid "Save and start"
 msgstr ""
