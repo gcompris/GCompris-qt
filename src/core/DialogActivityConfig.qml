@@ -169,7 +169,7 @@ Rectangle {
             color: "#e6e6e6"
             radius: 10 * ApplicationInfo.ratio
             width: parent.width
-            height: title.height * 1.2
+            height: title.height + 10 * 2
 
             // The apply button
             GCButtonCancel {
@@ -215,7 +215,6 @@ Rectangle {
             height: dialogActivityContent.height - (2 * parent.anchors.topMargin) - titleRectangle.height - parent.spacing
             border.color: "white"
             border.width: 3 * ApplicationInfo.ratio
-            anchors.margins: 100
 
             Flickable {
                 id: flick
@@ -242,8 +241,8 @@ Rectangle {
                 anchors.bottomMargin: 5 * ApplicationInfo.ratio
                 onUp: flick.flick(0, 1000)
                 onDown: flick.flick(0, -1000)
-                upVisible: flick.visibleArea.yPosition <= 0 ? false : true
-                downVisible: flick.visibleArea.yPosition + flick.visibleArea.heightRatio >= 1 ? false : true
+                upVisible: flick.atYBeginning ? false : true
+                downVisible: flick.atYEnd ? false : true
             }
         }
     }
