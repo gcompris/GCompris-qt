@@ -24,6 +24,14 @@ Rectangle {
     visible: false
     focus: visible
 
+    Keys.onPressed: {
+        if(event.key === Qt.Key_Down) {
+            scrollMusicList.down();
+        } else if(event.key === Qt.Key_Up) {
+            scrollMusicList.up();
+        }
+    }
+
     Keys.onEscapePressed: close()
 
     signal close
@@ -201,6 +209,7 @@ Rectangle {
                 }
                 // The scroll buttons
                 GCButtonScroll {
+                    id: scrollMusicList
                     anchors.right: parent.right
                     anchors.rightMargin: 5 * ApplicationInfo.ratio
                     anchors.bottom: flickableList.bottom
@@ -209,8 +218,8 @@ Rectangle {
                     height: width * heightRatio
                     onUp: flickableList.flick(0, 1400)
                     onDown: flickableList.flick(0, -1400)
-                    upVisible: (flickableList.visibleArea.yPosition <= 0) ? false : true
-                    downVisible: ((flickableList.visibleArea.yPosition + flickableList.visibleArea.heightRatio) >= 1) ? false : true
+                    upVisible: flickableList.atYBeginning ? false : true
+                    downVisible: flickableList.atYEnd ? false : true
                 }
             }
             Item { width: 1; height: 10 }
