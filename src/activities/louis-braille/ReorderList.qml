@@ -179,8 +179,8 @@ Rectangle {
 
     GCButtonScroll {
         id:listScrollerB
-        upVisible: list.visibleArea.yPosition <= 0 ? 0 : 1
-        downVisible: list.visibleArea.yPosition + list.visibleArea.heightRatio >= 1 ? 0 : 1
+        upVisible: list.atYBeginning ? false : true
+        downVisible: list.atYEnd ? false : true
         anchors {
             bottom: parent.bottom
             bottomMargin: bar.height +10
