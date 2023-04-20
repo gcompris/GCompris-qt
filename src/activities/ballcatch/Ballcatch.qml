@@ -192,6 +192,7 @@ ActivityBase {
 
         Image {
             id: leftShift
+            z: 10
             x: background.width / 4 - width
             y: background.isVertical ? rightHand.y - height : rightHand.y - height / 2
             source: "qrc:/gcompris/src/activities/ballcatch/resource/arrow_key.svg"
@@ -203,6 +204,7 @@ ActivityBase {
 
         Image {
             id: rightShift
+            z: 10
             mirror: true
             x: background.width - background.width / 4
             y: background.isVertical ? rightHand.y - height : rightHand.y - height / 2
