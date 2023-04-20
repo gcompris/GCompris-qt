@@ -55,6 +55,15 @@ Grid {
     signal bpmChanged
     signal emitOptionMessage(string message)
 
+    onPlayButtonClicked: {
+        if(!multipleStaff.isMusicPlaying) {
+            emitOptionMessage(qsTr("Play melody"))
+            multipleStaff.play()
+        } else {
+            multipleStaff.stopPlaying()
+        }
+    }
+
 
     BpmMeter {
         id: bpmMeter
@@ -62,13 +71,13 @@ Grid {
 
     BarButton {
         id: playButton
-        source: "qrc:/gcompris/src/activities/piano_composition/resource/play.svg"
+        source: multipleStaff.isMusicPlaying ?
+            "qrc:/gcompris/src/activities/piano_composition/resource/stop.svg" :
+            "qrc:/gcompris/src/activities/piano_composition/resource/play.svg"
         sourceSize.width: optionsRow.iconsWidth
         visible: playButtonVisible
         onClicked: {
                 optionsRow.playButtonClicked()
-                emitOptionMessage(qsTr("Play melody"))
-                multipleStaff.play()
         }
     }
 

@@ -546,6 +546,11 @@ Item {
         musicTimer.start()
     }
 
+    function stopPlaying() {
+        musicTimer.currentNote = -1
+        musicTimer.stop()
+    }
+
     /**
      * Stops the audios playing.
      */

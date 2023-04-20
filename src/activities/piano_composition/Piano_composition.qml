@@ -78,7 +78,7 @@ ActivityBase {
                 optionsRow.undoButtonClicked()
             }
             if(event.key === Qt.Key_Space) {
-                multipleStaff.play()
+                optionsRow.playButtonClicked()
             }
         }
 
