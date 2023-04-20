@@ -175,12 +175,14 @@ Rectangle {
             color: "#e6e6e6"
             radius: 10 * ApplicationInfo.ratio
             width: parent.width
-            height: title.height * 1.2
+            height: title.height + 10 * 2
 
             GCText {
                 id: title
                 text: dialogChooseLevel.title
                 width: titleColumn.width - 10
+                anchors.horizontalCenter: titleRectangle.horizontalCenter
+                anchors.verticalCenter: titleRectangle.verticalCenter
                 horizontalAlignment: Text.AlignHCenter
                 verticalAlignment: Text.AlignVCenter
                 fontSize: 20
@@ -229,7 +231,6 @@ Rectangle {
             height: dialogChooseLevel.height - (2 * parent.anchors.topMargin) - titleRectangle.height - datasetOptionsRow.height - saveAndPlayRow.height - (3 * parent.spacing)
             border.color: "white"
             border.width: 3 * ApplicationInfo.ratio
-            anchors.margins: 100
 
             Flickable {
                 id: flick
@@ -326,8 +327,8 @@ Rectangle {
                 anchors.bottomMargin: 5 * ApplicationInfo.ratio
                 onUp: flick.flick(0, 1000)
                 onDown: flick.flick(0, -1000)
-                upVisible: flick.visibleArea.yPosition <= 0 ? false : true
-                downVisible: flick.visibleArea.yPosition + flick.visibleArea.heightRatio >= 1 ? false : true
+                upVisible: flick.atYBeginning ? false : true
+                downVisible: flick.atYEnd ? false : true
             }
         }
         // Footer buttons
