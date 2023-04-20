@@ -135,7 +135,7 @@ Rectangle {
                     sourceSize.width: iconImage.width
                     sourceSize.height: iconImage.width
                     anchors.top: button0.bottom
-                    anchors.margins: parent.anchors.margin
+                    anchors.margins: parent.anchors.margins
                     anchors.horizontalCenter: parent.horizontalCenter
                 }
 
