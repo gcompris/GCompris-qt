@@ -674,8 +674,8 @@ ActivityBase {
             anchors.bottomMargin: 30 * ApplicationInfo.ratio
             onUp: activitiesGrid.flick(0, 1127)
             onDown: activitiesGrid.flick(0, -1127)
-            upVisible: activitiesGrid.visibleArea.yPosition <= 0 ? false : true
-            downVisible: activitiesGrid.visibleArea.yPosition >= 1 ? false : true
+            upVisible: activitiesGrid.atYBeginning ? false : true
+            downVisible: activitiesGrid.atYEnd ? false : true
         }
 
         Rectangle {

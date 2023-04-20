@@ -143,8 +143,8 @@ Rectangle {
                     height: width * heightRatio
                     onUp: flickableList.flick(0, 1400)
                     onDown: flickableList.flick(0, -1400)
-                    upVisible: (flickableList.visibleArea.yPosition <= 0) ? false : true
-                    downVisible: ((flickableList.visibleArea.yPosition + flickableList.visibleArea.heightRatio) >= 1) ? false : true
+                    upVisible: flickableList.atYBeginning ? false : true
+                    downVisible: flickableList.atYEnd ? false : true
                 }
             }
             Item { width: 1; height: 10 }

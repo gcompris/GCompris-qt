@@ -367,8 +367,8 @@ ActivityBase {
                 height: width * heightRatio
                 onUp: colorSelector.flick(0, 1400)
                 onDown: colorSelector.flick(0, -1400)
-                upVisible: colorSelector.visibleArea.yPosition <= 0 ? 0 : 1
-                downVisible: colorSelector.visibleArea.yPosition + colorSelector.visibleArea.heightRatio >= 1 ? 0 : 1
+                upVisible: colorSelector.atYBeginning ? false : true
+                downVisible: colorSelector.atYEnd ? false : true
             }
         }
 

@@ -239,8 +239,8 @@ ActivityBase {
             height: width * 2
             onUp: multipleStaff.flickableStaves.flick(0, multipleStaff.height * 1.3)
             onDown: multipleStaff.flickableStaves.flick(0, -multipleStaff.height * 1.3)
-            upVisible: multipleStaff.flickableStaves.visibleArea.yPosition > 0
-            downVisible: (multipleStaff.flickableStaves.visibleArea.yPosition + multipleStaff.flickableStaves.visibleArea.heightRatio) < 1
+            upVisible: multipleStaff.flickableStaves.atYBeginning ? false : true
+            downVisible: multipleStaff.flickableStaves.atYEnd ? false : true
         }
 
         Item {
