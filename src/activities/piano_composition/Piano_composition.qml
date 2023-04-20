@@ -411,8 +411,7 @@ ActivityBase {
                 Column {
                     id: column
                     spacing: 10
-                    width: dialogActivityConfig.width
-                    height: dialogActivityConfig.height
+                    width: dialogActivityConfig.width - 50 * ApplicationInfo.ratio
 
                     GCText {
                         text: qsTr("Select the type of melody to load.")
@@ -427,10 +426,10 @@ ActivityBase {
                             for(var i = 0; i < dataset.length; i++) {
                                 melodyList.melodiesModel.append(dataset[i])
                             }
+                            dialogActivityConfig.close()
                             melodyList.visible = true
                             piano.enabled = false
                             melodyList.forceActiveFocus()
-                            dialogActivityConfig.close()
                         }
                         width: 150 * ApplicationInfo.ratio
                         height: 60 * ApplicationInfo.ratio
@@ -440,8 +439,8 @@ ActivityBase {
                     GCButton {
                         text: qsTr("Your saved melodies")
                         onClicked: {
-                            creationHandler.loadWindow()
                             dialogActivityConfig.close()
+                            creationHandler.loadWindow()
                         }
                         width: 150 * ApplicationInfo.ratio
                         height: 60 * ApplicationInfo.ratio
