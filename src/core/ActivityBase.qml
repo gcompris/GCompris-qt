@@ -17,20 +17,16 @@ import "qrc:/gcompris/src/core/core.js" as Core
  *
  * Each activity should be derived from this component. It is responsible for
  *
- * * basic common key handling,
+ * * Activity common key handling,
  * * unified audio handling,
  * * screen switching dynamics (from/to Menu/DialogHelp/etc.)
  *
  * The following common keys are handled so far:
  *
- * * @c Ctrl+q: Exit the application.
- * * @c Ctrl+b: Toggle the bar.
- * * @c Ctrl+f: Toggle fullscreen.
- * * @c Ctrl+m: Toggle audio effects.
- * * @c Ctrl+w: Exit the current activity and return to the menu.
- * * @c Ctrl+p: Make a screenshot.
- * * @c Back:   Return to the home screen (corresponds to the 'Back' button on
- *              Android).
+ * * @c Ctrl+w: Exit the current activity and return to the menu,
+ *              or close the application if on the menu page.
+ * * @c Back:   Same as above.
+ * * @c Escape: Same as above.
  *
  * Cf. Template.qml for a sample skeleton activity.
  *
@@ -223,39 +219,15 @@ Item {
     Keys.forwardTo: activity.children
     Keys.onEscapePressed: home();
     Keys.onPressed: {
-        if (event.modifiers === Qt.ControlModifier &&
-                event.key === Qt.Key_Q) {
-            // Ctrl+Q exit the application
-            Core.quit(page);
-        } else if (event.modifiers === Qt.ControlModifier &&
-                event.key === Qt.Key_B) {
-            // Ctrl+B toggle the bar
-            ApplicationSettings.isBarHidden = !ApplicationSettings.isBarHidden;
-        } else if (event.modifiers === Qt.ControlModifier &&
-                event.key === Qt.Key_F) {
-            // Ctrl+F toggle fullscreen
-            ApplicationSettings.isFullscreen = !ApplicationSettings.isFullscreen
-        } else if (event.modifiers === Qt.ControlModifier &&
-                   event.key === Qt.Key_M) {
-            // Ctrl+M toggle sound
-            // We mute / unmute both channels in sync
-            ApplicationSettings.isAudioVoicesEnabled = !ApplicationSettings.isAudioVoicesEnabled
-            ApplicationSettings.isAudioEffectsEnabled = ApplicationSettings.isAudioVoicesEnabled
-            ApplicationSettings.isBackgroundMusicEnabled = ApplicationSettings.isAudioVoicesEnabled
-        } else if (event.modifiers === Qt.ControlModifier &&
-                   event.key === Qt.Key_W) {
-            // Ctrl+W exit the current activity
-            home()
-        } else if (event.modifiers === Qt.ControlModifier &&
-                   event.key === Qt.Key_P) {
-            // Ctrl+P Screenshot
-            ApplicationInfo.screenshot("/tmp/" + activityInfo.name.split('/')[0] + ".png")
+        if (event.modifiers === Qt.ControlModifier && event.key === Qt.Key_W) {
+//          Ctrl+W exit the current activity
+            home();
         }
     }
     Keys.onReleased: {
         if (event.key === Qt.Key_Back) {
-            event.accepted = true
-            home()
+            event.accepted = true;
+            home();
         }
     }
 

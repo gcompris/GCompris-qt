@@ -22,6 +22,14 @@ import "qrc:/gcompris/src/core/core.js" as Core
  * Handles application start (Component.onCompleted) and shutdown (onClosing)
  * on the QML layer.
  *
+ * Contains the global shortcuts:
+ *
+ * * @c Ctrl+q: Exit the application.
+ * * @c Ctrl+b: Toggle the bar.
+ * * @c Ctrl+f: Toggle fullscreen.
+ * * @c Ctrl+m: Toggle audio effects.
+ * * @c Ctrl+p: Take a screenshot.
+ *
  * Contains the central GCAudio objects audio effects and audio voices.
  *
  * Contains the top level StackView presenting and animating GCompris'
@@ -50,6 +58,38 @@ Window {
     property bool musicDownloaded: true
     property bool welcomePlayed: false
     property int lastGCVersionRanCopy: ApplicationInfo.GCVersionCode
+
+    Shortcut {
+        sequence: "Ctrl+q"
+        onActivated: Core.quit(pageView);
+    }
+    Shortcut {
+        sequence: "Ctrl+b"
+        onActivated: ApplicationSettings.isBarHidden = !ApplicationSettings.isBarHidden;
+    }
+    Shortcut {
+        sequence: "Ctrl+f"
+        onActivated: ApplicationSettings.isFullscreen = !ApplicationSettings.isFullscreen;
+    }
+    Shortcut {
+        sequence: "Ctrl+m"
+        onActivated: {
+            // We mute / unmute both channels in sync
+            ApplicationSettings.isAudioVoicesEnabled = !ApplicationSettings.isAudioVoicesEnabled;
+            ApplicationSettings.isAudioEffectsEnabled = ApplicationSettings.isAudioVoicesEnabled;
+            ApplicationSettings.isBackgroundMusicEnabled = ApplicationSettings.isAudioVoicesEnabled;
+        }
+    }
+    Shortcut {
+        sequence: "Ctrl+p"
+        onActivated: {
+            if(pageView.get(pageView.depth-1).activityInfo) {
+                ApplicationInfo.screenshot("/tmp/" + pageView.get(pageView.depth-1).activityInfo.name.split('/')[0] + ".png");
+            } else {
+                ApplicationInfo.screenshot("/tmp/gcompris.png");
+            }
+        }
+    }
 
     /**
      * type: bool
