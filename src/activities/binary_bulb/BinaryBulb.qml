@@ -74,6 +74,8 @@ ActivityBase {
         }
         // Tutorial section ends
 
+        // Needed to get keyboard focus on Tutorial
+        Keys.forwardTo: tutorialSection
 
         Keys.onPressed: {
             if(event.key === Qt.Key_Enter || event.key === Qt.Key_Return) {
@@ -176,11 +178,7 @@ ActivityBase {
             }
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
-            onHomeClicked: {
-                if(tutorialImage.visible)
-                    tutorialImage.visible = false;
-                activity.home();
-            }
+            onHomeClicked: home()
         }
 
         Score {

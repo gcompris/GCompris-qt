@@ -25,7 +25,7 @@ ActivityBase {
     Keys.onReleased: Activity.processReleasedKey(event)
 
     property var dataset
-    property var tutorialInstructions
+    property var tutorialInstructions: ""
     property bool showTutorial: false
 
     property int oldWidth: width
@@ -58,6 +58,9 @@ ActivityBase {
                 activity.stop.connect(stop)
         }
 
+        // Needed to get keyboard focus on Tutorial
+        Keys.forwardTo: tutorialSection
+
         QtObject {
             id: items
             property Item activityPage: activity
@@ -87,31 +90,21 @@ ActivityBase {
         }
         onStop: { Activity.stop() }
 
-        //Tutorial section starts
-        Loader {
-            active: showTutorial
+        // Tutorial section starts
+        Image {
+            id: tutorialImage
+            source: "../digital_electricity/resource/texture01.webp"
             anchors.fill: parent
+            fillMode: Image.Tile
             z: 1
-            sourceComponent: tutorialComponent
-            Component {
-                id: tutorialComponent
-                Image {
-                    id: tutorialImage
-                    source: "../digital_electricity/resource/texture01.webp"
-                    anchors.fill: parent
-                    fillMode: Image.Tile
-                    Tutorial {
-                        id: tutorialSection
-                        tutorialDetails: tutorialInstructions
-                        useImage: false
-                        onSkipPressed: {
-                            showTutorial = false
-                            Activity.initLevel()
-                            background.Keys.enabled = true
-                            activity.Keys.enabled = true
-                            activity.forceActiveFocus()
-                        }
-                    }
+            visible: showTutorial
+            Tutorial {
+                id: tutorialSection
+                tutorialDetails: tutorialInstructions
+                useImage: false
+                onSkipPressed: {
+                    showTutorial = false
+                    Activity.initLevel()
                 }
             }
         }
@@ -138,11 +131,7 @@ ActivityBase {
             onHelpClicked: displayDialog(dialogHelp)
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
-            onHomeClicked: {
-                if(showTutorial)
-                    showTutorial = false;
-                activity.home();
-            }
+            onHomeClicked: home()
         }
 
         Bonus {
