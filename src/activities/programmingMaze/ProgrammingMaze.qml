@@ -105,6 +105,9 @@ ActivityBase {
 
         onAreaWithKeyboardInputChanged: activeCodeAreaIndicator.changeActiveCodeAreaIndicator(areaWithKeyboardInput)
 
+        // Needed to get keyboard focus on Tutorial
+        Keys.forwardTo: tutorialSection
+
         Keys.enabled: items.isRunCodeEnabled
         Keys.onPressed: {
             activity.keyboardNavigationVisible = true
@@ -595,11 +598,7 @@ ActivityBase {
             }
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
-            onHomeClicked: {
-                if(tutorialImage.visible)
-                    tutorialImage.visible = false;
-                activity.home();
-            }
+            onHomeClicked: home()
             onReloadClicked: Activity.reloadLevel()
             onActivityConfigClicked: {
                 displayDialog(dialogActivityConfig)

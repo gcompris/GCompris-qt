@@ -36,12 +36,6 @@ Item {
     id: tutorialSection
     anchors.fill: parent
     focus: true
-    opacity: 0
-
-    Component.onCompleted: {
-        activity.start.connect(start)
-    }
-
 
     /* type: int
      * Counter for tutorial instructions
@@ -62,38 +56,6 @@ Item {
 
     // Emitted when previousButton is clicked
     signal previousPressed
-	
-    // Emitted when starting the intro message.
-    signal start
-
-    onStart: {
-        if(visible) {
-            getFocus();
-        }
-    }
-
-    onVisibleChanged: {
-        if(visible) {
-            getFocus();
-        }
-        else {
-            restoreFocus();
-        }
-    }
-
-    function getFocus() {
-        activity.Keys.enabled = false;
-        background.Keys.enabled = false;
-        tutorialSection.forceActiveFocus();
-        tutorialSection.opacity = 1;
-    }
-
-    function restoreFocus() {
-        tutorialSection.focus = false;
-        activity.forceActiveFocus();
-        activity.Keys.enabled = true;
-        background.Keys.enabled = true;
-    }
 
     Keys.onPressed: {
         if(event.key === Qt.Key_Left && previousButton.visible) {

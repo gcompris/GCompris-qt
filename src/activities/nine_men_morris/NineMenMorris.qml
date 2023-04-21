@@ -35,6 +35,9 @@ ActivityBase {
             activity.stop.connect(stop)
         }
 
+        // Needed to get keyboard focus on Tutorial
+        Keys.forwardTo: tutorialSection
+
         // Add here the QML items you need to access in javascript
         QtObject {
             id: items
@@ -352,11 +355,7 @@ ActivityBase {
             }
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
-            onHomeClicked: {
-                if(tutorialImage.visible)
-                    tutorialImage.visible = false;
-                activity.home();
-            }
+            onHomeClicked: home()
             onReloadClicked: {
                 Activity.reset()
             }
