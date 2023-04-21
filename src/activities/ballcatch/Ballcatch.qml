@@ -37,6 +37,9 @@ ActivityBase {
 
         property bool isVertical: background.width <= background.height     // To check if in Vertical mode
 
+        // Needed to get keyboard focus on IntroMessage
+        Keys.forwardTo: message
+
         Component.onCompleted: {
             activity.start.connect(start);
             activity.stop.connect(stop);
@@ -82,11 +85,7 @@ ActivityBase {
             onHelpClicked: displayDialog(dialogHelpLeftRight);
             onPreviousLevelClicked: if(!bonus.isPlaying) Activity.previousLevel();
             onNextLevelClicked: if(!bonus.isPlaying) Activity.nextLevel();
-            onHomeClicked: {
-                if(message.visible)
-                    message.visible = false;
-                home();
-            }
+            onHomeClicked: home();
         }
 
         Bonus {

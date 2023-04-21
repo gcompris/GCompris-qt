@@ -79,6 +79,9 @@ ActivityBase {
 
         property bool keyboardMode: false
 
+        // Needed to get keyboard focus on IntroMessage
+        Keys.forwardTo: message
+
         Keys.onPressed: {
             if(!mainQuizScreen.visible) {
                 if(event.key === Qt.Key_Down) {
@@ -413,9 +416,7 @@ ActivityBase {
             onHomeClicked: {
                 mainQuizScreen.closenessMeter.stopAnimations();
                 if(items.solarSystemVisible || items.assessmentMode) {
-                    if(message.visible)
-                        message.visible = false;
-                    activity.home();
+                    home();
                 }
                 else
                     Activity.showSolarModel();

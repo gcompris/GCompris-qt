@@ -38,6 +38,9 @@ ActivityBase {
             activity.stop.connect(stop)
         }
 
+        // Needed to get keyboard focus on IntroMessage
+        Keys.forwardTo: tutorialInstruction
+
         Keys.onPressed: {
             if ((event.key === Qt.Key_Return || event.key === Qt.Key_Enter) && okButton.enabled) {
                 Activity.checkAnswer()
@@ -458,11 +461,7 @@ ActivityBase {
             onHelpClicked: {displayDialog(dialogHelp)}
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
-            onHomeClicked: {
-                if(tutorialInstruction.visible)
-                    tutorialInstruction.visible = false;
-                activity.home();
-            }
+            onHomeClicked: home()
             onReloadClicked: Activity.reset()
             onActivityConfigClicked: {
                 displayDialog(dialogActivityConfig)

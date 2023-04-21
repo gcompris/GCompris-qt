@@ -40,6 +40,9 @@ ActivityBase {
             activity.stop.connect(stop)
         }
 
+        // Needed to get keyboard focus on IntroMessage
+        Keys.forwardTo: message
+
         onStart: {}
         onStop: {
             timer.stop()
@@ -942,11 +945,7 @@ ActivityBase {
             onHelpClicked: {
                 displayDialog(dialogHelp);
             }
-            onHomeClicked: {
-                if(message.visible)
-                    message.visible = false;
-                home();
-            }
+            onHomeClicked: home()
             onReloadClicked: initLevel();
         }
 

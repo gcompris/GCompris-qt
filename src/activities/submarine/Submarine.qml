@@ -47,43 +47,46 @@ ActivityBase {
             activity.stop.connect(stop)
         }
 
+        // Needed to get keyboard focus on IntroMessage
+        Keys.forwardTo: tutorial
+        
         /* Testing purposes, A / Left Key => Reduces velocity, D / Right Key => Increases velocity */
         Keys.onPressed: {
-            if ((event.key === Qt.Key_D || event.key === Qt.Key_Right) && !tutorial.visible) {
+            if (event.key === Qt.Key_D || event.key === Qt.Key_Right) {
                 submarine.increaseHorizontalVelocity(1)
             }
-            if ((event.key === Qt.Key_A || event.key === Qt.Key_Left) && !tutorial.visible) {
+            if (event.key === Qt.Key_A || event.key === Qt.Key_Left) {
                 submarine.decreaseHorizontalVelocity(1)
             }
-            if ((event.key === Qt.Key_W || event.key === Qt.Key_Up) && !tutorial.visible) {
+            if (event.key === Qt.Key_W || event.key === Qt.Key_Up) {
                 centralBallastTank.fillBallastTanks()
                 controls.updateVannes(centralBallastTank.waterFilling, controls.rotateCentralFill)
             }
-            if ((event.key === Qt.Key_S || event.key === Qt.Key_Down) && !tutorial.visible) {
+            if (event.key === Qt.Key_S || event.key === Qt.Key_Down){
                 centralBallastTank.flushBallastTanks()
                 controls.updateVannes(centralBallastTank.waterFlushing, controls.rotateCentralFlush)
             }
-            if ((event.key === Qt.Key_Plus) && !tutorial.visible) {
+            if (event.key === Qt.Key_Plus) {
                 submarine.increaseWingsAngle(1)
             }
-            if ((event.key === Qt.Key_Minus) && !tutorial.visible) {
+            if (event.key === Qt.Key_Minus) {
                 submarine.decreaseWingsAngle(1)
             }
 
-            if ((event.key === Qt.Key_R) && !tutorial.visible) {
+            if (event.key === Qt.Key_R) {
                 leftBallastTank.fillBallastTanks()
                 controls.updateVannes(leftBallastTank.waterFilling, controls.rotateLeftFill)
             }
-            if ((event.key === Qt.Key_F) && !tutorial.visible) {
+            if (event.key === Qt.Key_F) {
                 leftBallastTank.flushBallastTanks()
                 controls.updateVannes(leftBallastTank.waterFlushing, controls.rotateLeftFlush)
             }
 
-            if ((event.key === Qt.Key_T) && !tutorial.visible) {
+            if (event.key === Qt.Key_T) {
                 rightBallastTank.fillBallastTanks()
                 controls.updateVannes(rightBallastTank.waterFilling, controls.rotateRightFill)
             }
-            if ((event.key === Qt.Key_G) && !tutorial.visible) {
+            if (event.key === Qt.Key_G) {
                 rightBallastTank.flushBallastTanks()
                 controls.updateVannes(rightBallastTank.waterFlushing, controls.rotateRightFlush)
             }
@@ -950,11 +953,7 @@ ActivityBase {
             onReloadClicked: Activity.initLevel()
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
-            onHomeClicked: {
-                if(tutorial.visible)
-                    tutorial.visible = false;
-                home();
-            }
+            onHomeClicked: home()
         }
 
         Bonus {
