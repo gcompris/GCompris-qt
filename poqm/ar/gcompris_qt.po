@@ -2487,13 +2487,13 @@ msgstr ""
 "اضغط مفتاحيّ السهم الأيمن والأيسر في نفس الوقت لتسير الكرة في خطّ مستقيم. في "
 "لوحة اللمس عليك اللمس بكلتا اليدين معًا."
 
-#: activities/ballcatch/Ballcatch.qml:220
+#: activities/ballcatch/Ballcatch.qml:222
 msgctxt "Ballcatch|"
 msgid ""
 "Tap both hands at the same time, to make the ball go in a straight line."
 msgstr "المس بكلتا اليدين لتسير الكرة في خطّ مستقيم."
 
-#: activities/ballcatch/Ballcatch.qml:222
+#: activities/ballcatch/Ballcatch.qml:224
 msgctxt "Ballcatch|"
 msgid ""
 "Press left and right arrow keys at the same time, to make the ball go in a "
@@ -17336,45 +17336,45 @@ msgctxt "ActivityInfo|"
 msgid "Ctrl+S: Toggle the activity section bar"
 msgstr "Ctrl + S: تبديل شريط قسم النشاط"
 
-#: activities/menu/BackgroundMusicList.qml:55
+#: activities/menu/BackgroundMusicList.qml:63
 msgctxt "BackgroundMusicList|"
 msgid "Background music"
 msgstr "خلفية موسيقية"
 
-#: activities/menu/BackgroundMusicList.qml:117
+#: activities/menu/BackgroundMusicList.qml:125
 msgctxt "BackgroundMusicList|"
 msgid "Disable the background music if you don't want to play them."
 msgstr "عطّل موسيقى الخلفية إذا كنت لا تريد تشغيلها."
 
 #. Current background music playing
-#: activities/menu/BackgroundMusicList.qml:157
+#: activities/menu/BackgroundMusicList.qml:165
 msgctxt "BackgroundMusicList|"
 msgid "Now Playing:"
 msgstr "المشغل الآن:"
 
 #. Title of the current background music playing
-#: activities/menu/BackgroundMusicList.qml:166
+#: activities/menu/BackgroundMusicList.qml:174
 #, qt-format
 msgctxt "BackgroundMusicList|"
 msgid "Title: %1"
 msgstr "عنوان: %1"
 
 #. Artist of the current background music playing
-#: activities/menu/BackgroundMusicList.qml:175
+#: activities/menu/BackgroundMusicList.qml:183
 #, qt-format
 msgctxt "BackgroundMusicList|"
 msgid "Artist: %1"
 msgstr "الفنّان: %1"
 
 #. Year of the current background music playing
-#: activities/menu/BackgroundMusicList.qml:184
+#: activities/menu/BackgroundMusicList.qml:192
 #, qt-format
 msgctxt "BackgroundMusicList|"
 msgid "Year: %1"
 msgstr "السنة: %1"
 
 #. Copyright of the current background music playing
-#: activities/menu/BackgroundMusicList.qml:193
+#: activities/menu/BackgroundMusicList.qml:201
 #, qt-format
 msgctxt "BackgroundMusicList|"
 msgid "Copyright: %1"
@@ -19616,7 +19616,7 @@ msgctxt "melodies|"
 msgid "Finland"
 msgstr "فنلندا"
 
-#: activities/piano_composition/MelodyList.qml:61
+#: activities/piano_composition/MelodyList.qml:55
 msgctxt "MelodyList|"
 msgid "Melodies"
 msgstr "ألحان"
@@ -19693,23 +19693,23 @@ msgctxt "OptionsRow|"
 msgid "Lyrics"
 msgstr "الكلمات"
 
-#: activities/piano_composition/OptionsRow.qml:70
+#: activities/piano_composition/OptionsRow.qml:60
 msgctxt "OptionsRow|"
 msgid "Play melody"
 msgstr "عزف لحن"
 
-#: activities/piano_composition/OptionsRow.qml:89
+#: activities/piano_composition/OptionsRow.qml:98
 msgctxt "OptionsRow|"
 msgid "Undo"
 msgstr "تراجع"
 
 #. Sharp notes and Flat notes represents the accidental style of the notes in the music.
-#: activities/piano_composition/OptionsRow.qml:157
+#: activities/piano_composition/OptionsRow.qml:166
 msgctxt "OptionsRow|"
 msgid "Sharp notes"
 msgstr "نغمات حادة"
 
-#: activities/piano_composition/OptionsRow.qml:157
+#: activities/piano_composition/OptionsRow.qml:166
 msgctxt "OptionsRow|"
 msgid "Flat notes"
 msgstr "نغمات منخفضة"
@@ -19785,22 +19785,22 @@ msgctxt "Piano_composition|"
 msgid "No"
 msgstr "لا"
 
-#: activities/piano_composition/Piano_composition.qml:418
+#: activities/piano_composition/Piano_composition.qml:417
 msgctxt "Piano_composition|"
 msgid "Select the type of melody to load."
 msgstr "اختر نوع اللحن لتحميلة."
 
-#: activities/piano_composition/Piano_composition.qml:423
+#: activities/piano_composition/Piano_composition.qml:422
 msgctxt "Piano_composition|"
 msgid "Pre-defined melodies"
 msgstr "ألحان معرّفة مسبقا"
 
-#: activities/piano_composition/Piano_composition.qml:441
+#: activities/piano_composition/Piano_composition.qml:440
 msgctxt "Piano_composition|"
 msgid "Your saved melodies"
 msgstr "ألحانكم المحفوظة"
 
-#: activities/piano_composition/Piano_composition.qml:548
+#: activities/piano_composition/Piano_composition.qml:547
 msgctxt "Piano_composition|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -19809,12 +19809,12 @@ msgstr ""
 "يتطلب هذا النشاط صوتًا ، لذلك ستشتغل بعض الأصوات حتى لو كان الصوت أو تأثيرات "
 "الصوت معطلة في الإعدادات الرئيسية."
 
-#: activities/piano_composition/Piano_composition.qml:549
+#: activities/piano_composition/Piano_composition.qml:548
 msgctxt "Piano_composition|"
 msgid "Quit"
 msgstr "أنهِ"
 
-#: activities/piano_composition/Piano_composition.qml:550
+#: activities/piano_composition/Piano_composition.qml:549
 msgctxt "Piano_composition|"
 msgid "Continue"
 msgstr "تابع"
@@ -24914,27 +24914,27 @@ msgctxt "DialogChooseLevel|"
 msgid "%1 settings"
 msgstr "إعدادات %1"
 
-#: core/DialogChooseLevel.qml:200
+#: core/DialogChooseLevel.qml:202
 msgctxt "DialogChooseLevel|"
 msgid "Dataset"
 msgstr "مجموعة البيانات"
 
-#: core/DialogChooseLevel.qml:213
+#: core/DialogChooseLevel.qml:215
 msgctxt "DialogChooseLevel|"
 msgid "Options"
 msgstr "خيارات"
 
-#: core/DialogChooseLevel.qml:341
+#: core/DialogChooseLevel.qml:342
 msgctxt "DialogChooseLevel|"
 msgid "Cancel"
 msgstr "ألغِ"
 
-#: core/DialogChooseLevel.qml:349
+#: core/DialogChooseLevel.qml:350
 msgctxt "DialogChooseLevel|"
 msgid "Save"
 msgstr "احفظ"
 
-#: core/DialogChooseLevel.qml:363
+#: core/DialogChooseLevel.qml:364
 msgctxt "DialogChooseLevel|"
 msgid "Save and start"
 msgstr "احفظ و ابدأ"
