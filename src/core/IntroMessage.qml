@@ -35,48 +35,11 @@ Item {
     anchors.fill: parent
     visible: index == -1 ? false : true
 
-    Component.onCompleted: {
-        activity.start.connect(start)
-    }
-
     /**
      * Emitted when the index of intro is equal to its length
      * or when skipButton is clicked.
      */
     signal introDone
-
-    /**
-     * Emitted when starting the intro message.
-     */
-    signal start
-
-    onStart: {
-        if(visible) {
-            getFocus();
-        }
-    }
-
-    onVisibleChanged: {
-        if(visible) {
-            getFocus();
-        }
-        else {
-            restoreFocus();
-        }
-    }
-
-    function getFocus() {
-        activity.Keys.enabled = false;
-        background.Keys.enabled = false;
-        message.forceActiveFocus();
-    }
-
-    function restoreFocus() {
-        message.focus = false;
-        activity.forceActiveFocus();
-        activity.Keys.enabled = true;
-        background.Keys.enabled = true;
-    }
 
     /**
      * The index of the intro array.
