@@ -64,7 +64,10 @@ ActivityBase {
 
         onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
-        Keys.enabled: !trainAnimationTimer.running && !animateFlow.running && !introMessage.visible
+        // Needed to get keyboard focus on IntroMessage
+        Keys.forwardTo: introMessage
+
+//         Keys.enabled: (!trainAnimationTimer.running && !animateFlow.running) || introMessage.visible
         Keys.onPressed: {
             items.keyNavigationMode = true;
             items.currentKeyZone.handleKeys(event);
@@ -231,9 +234,16 @@ ActivityBase {
                 }
 
                 function handleKeys(event) {
+                    // Checks answer.
+                    if(event.key === Qt.Key_Return || event.key === Qt.Key_Enter) {
+                        okButton.clicked();
+                    }
+                    if(trainAnimationTimer.running || animateFlow.running) {
+                        return;
+                    }
                     if(event.key === Qt.Key_Tab)
                         bar.hintClicked();
-                    if(!items.controlsEnabled)
+                    if(!items.controlsEnabled )
                         return;
                     if(event.key === Qt.Key_Down) {
                         playSoundFX();
@@ -262,10 +272,6 @@ ActivityBase {
                         if(listModel.count < 2) {
                             answerZone.selectedSwapIndex = -1;
                         }
-                    }
-                    // Checks answer.
-                    if(event.key === Qt.Key_Return || event.key === Qt.Key_Enter) {
-                        okButton.clicked();
                     }
                     // Swaps two wagons with help of Space/Enter keys.
                     if(event.key === Qt.Key_Space) {
@@ -424,6 +430,12 @@ ActivityBase {
             }
 
             function handleKeys(event) {
+                if(event.key === Qt.Key_Enter || event.key === Qt.Key_Return) {
+                    okButton.clicked();
+                }
+                if(trainAnimationTimer.running || animateFlow.running) {
+                    return;
+                }
                 if(event.key === Qt.Key_Tab)
                     bar.hintClicked();
                 if(!items.controlsEnabled)
@@ -468,9 +480,6 @@ ActivityBase {
                         playSoundFX();
                         Activity.addWagon(imageId, listModel.count);
                     }
-                }
-                if(event.key === Qt.Key_Enter || event.key === Qt.Key_Return) {
-                    okButton.clicked();
                 }
             }
 
@@ -540,7 +549,7 @@ ActivityBase {
             onClicked: {
                 if(trainAnimationTimer.running || animateFlow.running)
                     bar.hintClicked();
-                else if(listModel.count > 0 && items.mouseEnabled)
+                else if(listModel.count > 0 && items.mouseEnabled && visible)
                     Activity.checkAnswer();
             }
         }
@@ -571,11 +580,7 @@ ActivityBase {
             z: introMessage.z
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
-            onHomeClicked: {
-                if(introMessage.visible)
-                    introMessage.visible = false;
-                home();
-            }
+            onHomeClicked: home()
             onHintClicked: {
                 if(!introMessage.visible && items.mouseEnabled) {
                     if(items.memoryMode == false) {
