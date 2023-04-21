@@ -67,7 +67,6 @@ ActivityBase {
         // Needed to get keyboard focus on IntroMessage
         Keys.forwardTo: introMessage
 
-//         Keys.enabled: (!trainAnimationTimer.running && !animateFlow.running) || introMessage.visible
         Keys.onPressed: {
             items.keyNavigationMode = true;
             items.currentKeyZone.handleKeys(event);
@@ -243,7 +242,7 @@ ActivityBase {
                     }
                     if(event.key === Qt.Key_Tab)
                         bar.hintClicked();
-                    if(!items.controlsEnabled )
+                    if(!items.controlsEnabled)
                         return;
                     if(event.key === Qt.Key_Down) {
                         playSoundFX();
