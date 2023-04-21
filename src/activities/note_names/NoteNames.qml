@@ -42,6 +42,9 @@ ActivityBase {
             activity.stop.connect(stop)
         }
 
+        // Needed to get keyboard focus on IntroMessage
+        Keys.forwardTo: introMessage
+
         Keys.onPressed: {
             var keyNoteBindings = {}
             keyNoteBindings[Qt.Key_1] = 'C'
@@ -424,11 +427,7 @@ ActivityBase {
             }
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
-            onHomeClicked: {
-                if(introMessage.visible)
-                    introMessage.visible = false;
-                home();
-            }
+            onHomeClicked: home()
             onActivityConfigClicked: {
                 multipleStaff.pauseNoteAnimation()
                 addNoteTimer.pause()

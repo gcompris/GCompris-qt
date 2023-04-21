@@ -39,6 +39,9 @@ ActivityBase {
             activity.stop.connect(stop)
         }
 
+        // Needed to get keyboard focus on IntroMessage
+        Keys.forwardTo: message
+
         IntroMessage {
             id: message
             anchors {
@@ -484,11 +487,7 @@ ActivityBase {
             onHelpClicked: {
                 displayDialog(dialogHelp)
             }
-            onHomeClicked: {
-                if(message.visible)
-                    message.visible = false;
-                home();
-            }
+            onHomeClicked: home();
         }
 
         Bonus {
