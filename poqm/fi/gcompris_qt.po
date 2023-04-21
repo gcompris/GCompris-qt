@@ -2542,14 +2542,14 @@ msgstr ""
 "yhtä aikaa. Kosketusnäytöllä kosketa näyttöä kummallakin kädellä "
 "samanaikaisesti."
 
-#: activities/ballcatch/Ballcatch.qml:220
+#: activities/ballcatch/Ballcatch.qml:222
 msgctxt "Ballcatch|"
 msgid ""
 "Tap both hands at the same time, to make the ball go in a straight line."
 msgstr ""
 "Saat pallon kulkemaan suoraan napauttamalla kummallakin kädellä yhtä aikaa."
 
-#: activities/ballcatch/Ballcatch.qml:222
+#: activities/ballcatch/Ballcatch.qml:224
 msgctxt "Ballcatch|"
 msgid ""
 "Press left and right arrow keys at the same time, to make the ball go in a "
@@ -18043,45 +18043,45 @@ msgctxt "ActivityInfo|"
 msgid "Ctrl+S: Toggle the activity section bar"
 msgstr "Ctrl+S: näytä tai piilota toiminnon osiorivi"
 
-#: activities/menu/BackgroundMusicList.qml:55
+#: activities/menu/BackgroundMusicList.qml:63
 msgctxt "BackgroundMusicList|"
 msgid "Background music"
 msgstr "Taustamusiikki"
 
-#: activities/menu/BackgroundMusicList.qml:117
+#: activities/menu/BackgroundMusicList.qml:125
 msgctxt "BackgroundMusicList|"
 msgid "Disable the background music if you don't want to play them."
 msgstr "Poista taustamusiikki käytöstä, ellet halua sen soivan."
 
 #. Current background music playing
-#: activities/menu/BackgroundMusicList.qml:157
+#: activities/menu/BackgroundMusicList.qml:165
 msgctxt "BackgroundMusicList|"
 msgid "Now Playing:"
 msgstr "Nyt soi:"
 
 #. Title of the current background music playing
-#: activities/menu/BackgroundMusicList.qml:166
+#: activities/menu/BackgroundMusicList.qml:174
 #, qt-format
 msgctxt "BackgroundMusicList|"
 msgid "Title: %1"
 msgstr "Otsikko: %1"
 
 #. Artist of the current background music playing
-#: activities/menu/BackgroundMusicList.qml:175
+#: activities/menu/BackgroundMusicList.qml:183
 #, qt-format
 msgctxt "BackgroundMusicList|"
 msgid "Artist: %1"
 msgstr "Artisti: %1"
 
 #. Year of the current background music playing
-#: activities/menu/BackgroundMusicList.qml:184
+#: activities/menu/BackgroundMusicList.qml:192
 #, qt-format
 msgctxt "BackgroundMusicList|"
 msgid "Year: %1"
 msgstr "Vuosi: %1"
 
 #. Copyright of the current background music playing
-#: activities/menu/BackgroundMusicList.qml:193
+#: activities/menu/BackgroundMusicList.qml:201
 #, qt-format
 msgctxt "BackgroundMusicList|"
 msgid "Copyright: %1"
@@ -20381,7 +20381,7 @@ msgctxt "melodies|"
 msgid "Finland"
 msgstr "Suomi"
 
-#: activities/piano_composition/MelodyList.qml:61
+#: activities/piano_composition/MelodyList.qml:55
 msgctxt "MelodyList|"
 msgid "Melodies"
 msgstr "Melodioita"
@@ -20458,23 +20458,23 @@ msgctxt "OptionsRow|"
 msgid "Lyrics"
 msgstr "Sanat"
 
-#: activities/piano_composition/OptionsRow.qml:70
+#: activities/piano_composition/OptionsRow.qml:60
 msgctxt "OptionsRow|"
 msgid "Play melody"
 msgstr "Soita sävelmä"
 
-#: activities/piano_composition/OptionsRow.qml:89
+#: activities/piano_composition/OptionsRow.qml:98
 msgctxt "OptionsRow|"
 msgid "Undo"
 msgstr "Kumoa"
 
 #. Sharp notes and Flat notes represents the accidental style of the notes in the music.
-#: activities/piano_composition/OptionsRow.qml:157
+#: activities/piano_composition/OptionsRow.qml:166
 msgctxt "OptionsRow|"
 msgid "Sharp notes"
 msgstr "Ylennetyt nuotit"
 
-#: activities/piano_composition/OptionsRow.qml:157
+#: activities/piano_composition/OptionsRow.qml:166
 msgctxt "OptionsRow|"
 msgid "Flat notes"
 msgstr "Alennetut nuotit"
@@ -20556,22 +20556,22 @@ msgctxt "Piano_composition|"
 msgid "No"
 msgstr "Ei"
 
-#: activities/piano_composition/Piano_composition.qml:418
+#: activities/piano_composition/Piano_composition.qml:417
 msgctxt "Piano_composition|"
 msgid "Select the type of melody to load."
 msgstr "Valitse ladattavan melodian tyyppi."
 
-#: activities/piano_composition/Piano_composition.qml:423
+#: activities/piano_composition/Piano_composition.qml:422
 msgctxt "Piano_composition|"
 msgid "Pre-defined melodies"
 msgstr "Ennalta määritetyt melodiat"
 
-#: activities/piano_composition/Piano_composition.qml:441
+#: activities/piano_composition/Piano_composition.qml:440
 msgctxt "Piano_composition|"
 msgid "Your saved melodies"
 msgstr "Tallennetut melodiasi"
 
-#: activities/piano_composition/Piano_composition.qml:548
+#: activities/piano_composition/Piano_composition.qml:547
 msgctxt "Piano_composition|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -20580,12 +20580,12 @@ msgstr ""
 "Tämä toiminto vaatii ääntä, joten se toistaa joitain ääniä, vaikka äänet tai "
 "tehosteet olisivat pois käytöstä pääasetuksissa."
 
-#: activities/piano_composition/Piano_composition.qml:549
+#: activities/piano_composition/Piano_composition.qml:548
 msgctxt "Piano_composition|"
 msgid "Quit"
 msgstr "Lopeta"
 
-#: activities/piano_composition/Piano_composition.qml:550
+#: activities/piano_composition/Piano_composition.qml:549
 msgctxt "Piano_composition|"
 msgid "Continue"
 msgstr "Jatka"
@@ -25797,27 +25797,27 @@ msgctxt "DialogChooseLevel|"
 msgid "%1 settings"
 msgstr "%1 asetukset"
 
-#: core/DialogChooseLevel.qml:200
+#: core/DialogChooseLevel.qml:202
 msgctxt "DialogChooseLevel|"
 msgid "Dataset"
 msgstr "Tietojoukko"
 
-#: core/DialogChooseLevel.qml:213
+#: core/DialogChooseLevel.qml:215
 msgctxt "DialogChooseLevel|"
 msgid "Options"
 msgstr "Valinnat"
 
-#: core/DialogChooseLevel.qml:341
+#: core/DialogChooseLevel.qml:342
 msgctxt "DialogChooseLevel|"
 msgid "Cancel"
 msgstr "Peru"
 
-#: core/DialogChooseLevel.qml:349
+#: core/DialogChooseLevel.qml:350
 msgctxt "DialogChooseLevel|"
 msgid "Save"
 msgstr "Tallenna"
 
-#: core/DialogChooseLevel.qml:363
+#: core/DialogChooseLevel.qml:364
 msgctxt "DialogChooseLevel|"
 msgid "Save and start"
 msgstr "Talleta ja aloita"

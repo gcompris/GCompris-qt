@@ -2428,13 +2428,13 @@ msgid ""
 msgstr ""
 "同時按下左鍵跟右鍵，來讓球直線前進。在觸控螢幕中，您必須同時用兩手來點。"
 
-#: activities/ballcatch/Ballcatch.qml:220
+#: activities/ballcatch/Ballcatch.qml:222
 msgctxt "Ballcatch|"
 msgid ""
 "Tap both hands at the same time, to make the ball go in a straight line."
 msgstr "用兩手同時觸點，來讓球直線前進。"
 
-#: activities/ballcatch/Ballcatch.qml:222
+#: activities/ballcatch/Ballcatch.qml:224
 msgctxt "Ballcatch|"
 msgid ""
 "Press left and right arrow keys at the same time, to make the ball go in a "
@@ -17088,45 +17088,45 @@ msgctxt "ActivityInfo|"
 msgid "Ctrl+S: Toggle the activity section bar"
 msgstr "Ctrl+S：切換活動區塊列"
 
-#: activities/menu/BackgroundMusicList.qml:55
+#: activities/menu/BackgroundMusicList.qml:63
 msgctxt "BackgroundMusicList|"
 msgid "Background music"
 msgstr "背景音樂"
 
-#: activities/menu/BackgroundMusicList.qml:117
+#: activities/menu/BackgroundMusicList.qml:125
 msgctxt "BackgroundMusicList|"
 msgid "Disable the background music if you don't want to play them."
 msgstr "如果不想聽的話可以關掉背景音樂。"
 
 #. Current background music playing
-#: activities/menu/BackgroundMusicList.qml:157
+#: activities/menu/BackgroundMusicList.qml:165
 msgctxt "BackgroundMusicList|"
 msgid "Now Playing:"
 msgstr "現正播放："
 
 #. Title of the current background music playing
-#: activities/menu/BackgroundMusicList.qml:166
+#: activities/menu/BackgroundMusicList.qml:174
 #, qt-format
 msgctxt "BackgroundMusicList|"
 msgid "Title: %1"
 msgstr "曲名：%1"
 
 #. Artist of the current background music playing
-#: activities/menu/BackgroundMusicList.qml:175
+#: activities/menu/BackgroundMusicList.qml:183
 #, qt-format
 msgctxt "BackgroundMusicList|"
 msgid "Artist: %1"
 msgstr "演出者：%1"
 
 #. Year of the current background music playing
-#: activities/menu/BackgroundMusicList.qml:184
+#: activities/menu/BackgroundMusicList.qml:192
 #, qt-format
 msgctxt "BackgroundMusicList|"
 msgid "Year: %1"
 msgstr "年份：%1"
 
 #. Copyright of the current background music playing
-#: activities/menu/BackgroundMusicList.qml:193
+#: activities/menu/BackgroundMusicList.qml:201
 #, qt-format
 msgctxt "BackgroundMusicList|"
 msgid "Copyright: %1"
@@ -19314,7 +19314,7 @@ msgctxt "melodies|"
 msgid "Finland"
 msgstr "芬蘭"
 
-#: activities/piano_composition/MelodyList.qml:61
+#: activities/piano_composition/MelodyList.qml:55
 msgctxt "MelodyList|"
 msgid "Melodies"
 msgstr "旋律"
@@ -19391,23 +19391,23 @@ msgctxt "OptionsRow|"
 msgid "Lyrics"
 msgstr "歌詞"
 
-#: activities/piano_composition/OptionsRow.qml:70
+#: activities/piano_composition/OptionsRow.qml:60
 msgctxt "OptionsRow|"
 msgid "Play melody"
 msgstr "演奏旋律"
 
-#: activities/piano_composition/OptionsRow.qml:89
+#: activities/piano_composition/OptionsRow.qml:98
 msgctxt "OptionsRow|"
 msgid "Undo"
 msgstr "復原"
 
 #. Sharp notes and Flat notes represents the accidental style of the notes in the music.
-#: activities/piano_composition/OptionsRow.qml:157
+#: activities/piano_composition/OptionsRow.qml:166
 msgctxt "OptionsRow|"
 msgid "Sharp notes"
 msgstr "升記號"
 
-#: activities/piano_composition/OptionsRow.qml:157
+#: activities/piano_composition/OptionsRow.qml:166
 msgctxt "OptionsRow|"
 msgid "Flat notes"
 msgstr "降記號"
@@ -19482,34 +19482,34 @@ msgctxt "Piano_composition|"
 msgid "No"
 msgstr "否"
 
-#: activities/piano_composition/Piano_composition.qml:418
+#: activities/piano_composition/Piano_composition.qml:417
 msgctxt "Piano_composition|"
 msgid "Select the type of melody to load."
 msgstr "選擇要載入的旋律。"
 
-#: activities/piano_composition/Piano_composition.qml:423
+#: activities/piano_composition/Piano_composition.qml:422
 msgctxt "Piano_composition|"
 msgid "Pre-defined melodies"
 msgstr "預先定義的旋律"
 
-#: activities/piano_composition/Piano_composition.qml:441
+#: activities/piano_composition/Piano_composition.qml:440
 msgctxt "Piano_composition|"
 msgid "Your saved melodies"
 msgstr "您儲存的旋律"
 
-#: activities/piano_composition/Piano_composition.qml:548
+#: activities/piano_composition/Piano_composition.qml:547
 msgctxt "Piano_composition|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
 "voices or effects are disabled in the main configuration."
 msgstr "這個遊戲需要播放聲音，所以即使您設定關閉聲音或音效，它還是會播出聲音。"
 
-#: activities/piano_composition/Piano_composition.qml:549
+#: activities/piano_composition/Piano_composition.qml:548
 msgctxt "Piano_composition|"
 msgid "Quit"
 msgstr "離開"
 
-#: activities/piano_composition/Piano_composition.qml:550
+#: activities/piano_composition/Piano_composition.qml:549
 msgctxt "Piano_composition|"
 msgid "Continue"
 msgstr "繼續"
@@ -24468,27 +24468,27 @@ msgctxt "DialogChooseLevel|"
 msgid "%1 settings"
 msgstr "%1 的設定"
 
-#: core/DialogChooseLevel.qml:200
+#: core/DialogChooseLevel.qml:202
 msgctxt "DialogChooseLevel|"
 msgid "Dataset"
 msgstr "資料集"
 
-#: core/DialogChooseLevel.qml:213
+#: core/DialogChooseLevel.qml:215
 msgctxt "DialogChooseLevel|"
 msgid "Options"
 msgstr "選項"
 
-#: core/DialogChooseLevel.qml:341
+#: core/DialogChooseLevel.qml:342
 msgctxt "DialogChooseLevel|"
 msgid "Cancel"
 msgstr "取消"
 
-#: core/DialogChooseLevel.qml:349
+#: core/DialogChooseLevel.qml:350
 msgctxt "DialogChooseLevel|"
 msgid "Save"
 msgstr "儲存"
 
-#: core/DialogChooseLevel.qml:363
+#: core/DialogChooseLevel.qml:364
 msgctxt "DialogChooseLevel|"
 msgid "Save and start"
 msgstr "儲存並開始"

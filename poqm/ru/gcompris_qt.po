@@ -2583,13 +2583,13 @@ msgstr ""
 "по прямой линии. На сенсорном экране вместо этого нужно одновременно нажать "
 "две руки."
 
-#: activities/ballcatch/Ballcatch.qml:220
+#: activities/ballcatch/Ballcatch.qml:222
 msgctxt "Ballcatch|"
 msgid ""
 "Tap both hands at the same time, to make the ball go in a straight line."
 msgstr "Нажми две руки одновременно, чтобы мяч покатился по прямой линии."
 
-#: activities/ballcatch/Ballcatch.qml:222
+#: activities/ballcatch/Ballcatch.qml:224
 msgctxt "Ballcatch|"
 msgid ""
 "Press left and right arrow keys at the same time, to make the ball go in a "
@@ -17835,46 +17835,46 @@ msgctxt "ActivityInfo|"
 msgid "Ctrl+S: Toggle the activity section bar"
 msgstr "Ctrl+S: включить/отключить панель групп упражнений"
 
-#: activities/menu/BackgroundMusicList.qml:55
+#: activities/menu/BackgroundMusicList.qml:63
 msgctxt "BackgroundMusicList|"
 msgid "Background music"
 msgstr "Фоновая музыка"
 
-#: activities/menu/BackgroundMusicList.qml:117
+#: activities/menu/BackgroundMusicList.qml:125
 msgctxt "BackgroundMusicList|"
 msgid "Disable the background music if you don't want to play them."
 msgstr ""
 "Отключает фоновую музыку, если ты не хочешь, чтобы она воспроизводилась."
 
 #. Current background music playing
-#: activities/menu/BackgroundMusicList.qml:157
+#: activities/menu/BackgroundMusicList.qml:165
 msgctxt "BackgroundMusicList|"
 msgid "Now Playing:"
 msgstr "Сейчас воспроизводится:"
 
 #. Title of the current background music playing
-#: activities/menu/BackgroundMusicList.qml:166
+#: activities/menu/BackgroundMusicList.qml:174
 #, qt-format
 msgctxt "BackgroundMusicList|"
 msgid "Title: %1"
 msgstr "Название: %1"
 
 #. Artist of the current background music playing
-#: activities/menu/BackgroundMusicList.qml:175
+#: activities/menu/BackgroundMusicList.qml:183
 #, qt-format
 msgctxt "BackgroundMusicList|"
 msgid "Artist: %1"
 msgstr "Исполнитель: %1"
 
 #. Year of the current background music playing
-#: activities/menu/BackgroundMusicList.qml:184
+#: activities/menu/BackgroundMusicList.qml:192
 #, qt-format
 msgctxt "BackgroundMusicList|"
 msgid "Year: %1"
 msgstr "Год: %1"
 
 #. Copyright of the current background music playing
-#: activities/menu/BackgroundMusicList.qml:193
+#: activities/menu/BackgroundMusicList.qml:201
 #, qt-format
 msgctxt "BackgroundMusicList|"
 msgid "Copyright: %1"
@@ -20184,7 +20184,7 @@ msgctxt "melodies|"
 msgid "Finland"
 msgstr "Финляндия"
 
-#: activities/piano_composition/MelodyList.qml:61
+#: activities/piano_composition/MelodyList.qml:55
 msgctxt "MelodyList|"
 msgid "Melodies"
 msgstr "Мелодии"
@@ -20261,23 +20261,23 @@ msgctxt "OptionsRow|"
 msgid "Lyrics"
 msgstr "Слова"
 
-#: activities/piano_composition/OptionsRow.qml:70
+#: activities/piano_composition/OptionsRow.qml:60
 msgctxt "OptionsRow|"
 msgid "Play melody"
 msgstr "Воспроизведение"
 
-#: activities/piano_composition/OptionsRow.qml:89
+#: activities/piano_composition/OptionsRow.qml:98
 msgctxt "OptionsRow|"
 msgid "Undo"
 msgstr "Отменить"
 
 #. Sharp notes and Flat notes represents the accidental style of the notes in the music.
-#: activities/piano_composition/OptionsRow.qml:157
+#: activities/piano_composition/OptionsRow.qml:166
 msgctxt "OptionsRow|"
 msgid "Sharp notes"
 msgstr "Чёрные — диезы"
 
-#: activities/piano_composition/OptionsRow.qml:157
+#: activities/piano_composition/OptionsRow.qml:166
 msgctxt "OptionsRow|"
 msgid "Flat notes"
 msgstr "Чёрные — бемоли"
@@ -20356,22 +20356,22 @@ msgctxt "Piano_composition|"
 msgid "No"
 msgstr "Нет"
 
-#: activities/piano_composition/Piano_composition.qml:418
+#: activities/piano_composition/Piano_composition.qml:417
 msgctxt "Piano_composition|"
 msgid "Select the type of melody to load."
 msgstr "Выбери тип мелодии, которую нужно загрузить."
 
-#: activities/piano_composition/Piano_composition.qml:423
+#: activities/piano_composition/Piano_composition.qml:422
 msgctxt "Piano_composition|"
 msgid "Pre-defined melodies"
 msgstr "Предопределённые мелодии"
 
-#: activities/piano_composition/Piano_composition.qml:441
+#: activities/piano_composition/Piano_composition.qml:440
 msgctxt "Piano_composition|"
 msgid "Your saved melodies"
 msgstr "Твои сохранённые мелодии"
 
-#: activities/piano_composition/Piano_composition.qml:548
+#: activities/piano_composition/Piano_composition.qml:547
 msgctxt "Piano_composition|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -20380,13 +20380,13 @@ msgstr ""
 "Для этого упражнения необходим звук, поэтому оно будет воспроизводить звуки, "
 "даже если они отключены в основной конфигурации."
 
-#: activities/piano_composition/Piano_composition.qml:549
+#: activities/piano_composition/Piano_composition.qml:548
 msgctxt "Piano_composition|"
 msgid "Quit"
 msgstr "Выйти"
 
 # https://ru.wikipedia.org/wiki/%D0%A7%D0%B0%D1%81%D1%82%D0%B8_%D1%81%D0%B2%D0%B5%D1%82%D0%B0 --aspotashev
-#: activities/piano_composition/Piano_composition.qml:550
+#: activities/piano_composition/Piano_composition.qml:549
 msgctxt "Piano_composition|"
 msgid "Continue"
 msgstr "Продолжить"
@@ -25680,27 +25680,27 @@ msgctxt "DialogChooseLevel|"
 msgid "%1 settings"
 msgstr "Параметры %1"
 
-#: core/DialogChooseLevel.qml:200
+#: core/DialogChooseLevel.qml:202
 msgctxt "DialogChooseLevel|"
 msgid "Dataset"
 msgstr "Набор данных"
 
-#: core/DialogChooseLevel.qml:213
+#: core/DialogChooseLevel.qml:215
 msgctxt "DialogChooseLevel|"
 msgid "Options"
 msgstr "Свойства"
 
-#: core/DialogChooseLevel.qml:341
+#: core/DialogChooseLevel.qml:342
 msgctxt "DialogChooseLevel|"
 msgid "Cancel"
 msgstr "Отменить"
 
-#: core/DialogChooseLevel.qml:349
+#: core/DialogChooseLevel.qml:350
 msgctxt "DialogChooseLevel|"
 msgid "Save"
 msgstr "Сохранить"
 
-#: core/DialogChooseLevel.qml:363
+#: core/DialogChooseLevel.qml:364
 msgctxt "DialogChooseLevel|"
 msgid "Save and start"
 msgstr "Сохранить и запустить"

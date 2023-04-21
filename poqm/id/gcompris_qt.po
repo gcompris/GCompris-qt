@@ -2583,7 +2583,7 @@ msgstr ""
 "Tekan tombol panah kiri dan kanan bersamaan, agar bola bergerak secara "
 "lurus. Pada layar sentuh kamu harus menekan dengan kedua tangan bersamaan."
 
-#: activities/ballcatch/Ballcatch.qml:220
+#: activities/ballcatch/Ballcatch.qml:222
 msgctxt "Ballcatch|"
 msgid ""
 "Tap both hands at the same time, to make the ball go in a straight line."
@@ -2591,7 +2591,7 @@ msgstr ""
 "Ketuk dengan kedua jari secara bersamaan, untuk membuat bola bergerak secara "
 "lurus."
 
-#: activities/ballcatch/Ballcatch.qml:222
+#: activities/ballcatch/Ballcatch.qml:224
 msgctxt "Ballcatch|"
 msgid ""
 "Press left and right arrow keys at the same time, to make the ball go in a "
@@ -17952,45 +17952,45 @@ msgctxt "ActivityInfo|"
 msgid "Ctrl+S: Toggle the activity section bar"
 msgstr "Ctrl+S: Jungkitkan bilah bagian kegiatan"
 
-#: activities/menu/BackgroundMusicList.qml:55
+#: activities/menu/BackgroundMusicList.qml:63
 msgctxt "BackgroundMusicList|"
 msgid "Background music"
 msgstr "Latar belakang musik"
 
-#: activities/menu/BackgroundMusicList.qml:117
+#: activities/menu/BackgroundMusicList.qml:125
 msgctxt "BackgroundMusicList|"
 msgid "Disable the background music if you don't want to play them."
 msgstr "Nonaktifkan latar belakang musik jika kamu tidak ingin mendengarnya."
 
 #. Current background music playing
-#: activities/menu/BackgroundMusicList.qml:157
+#: activities/menu/BackgroundMusicList.qml:165
 msgctxt "BackgroundMusicList|"
 msgid "Now Playing:"
 msgstr "Sekarang Diputar:"
 
 #. Title of the current background music playing
-#: activities/menu/BackgroundMusicList.qml:166
+#: activities/menu/BackgroundMusicList.qml:174
 #, qt-format
 msgctxt "BackgroundMusicList|"
 msgid "Title: %1"
 msgstr "Judul:%1"
 
 #. Artist of the current background music playing
-#: activities/menu/BackgroundMusicList.qml:175
+#: activities/menu/BackgroundMusicList.qml:183
 #, qt-format
 msgctxt "BackgroundMusicList|"
 msgid "Artist: %1"
 msgstr "Artis:%1"
 
 #. Year of the current background music playing
-#: activities/menu/BackgroundMusicList.qml:184
+#: activities/menu/BackgroundMusicList.qml:192
 #, qt-format
 msgctxt "BackgroundMusicList|"
 msgid "Year: %1"
 msgstr "Tahun:%1"
 
 #. Copyright of the current background music playing
-#: activities/menu/BackgroundMusicList.qml:193
+#: activities/menu/BackgroundMusicList.qml:201
 #, qt-format
 msgctxt "BackgroundMusicList|"
 msgid "Copyright: %1"
@@ -20322,7 +20322,7 @@ msgctxt "melodies|"
 msgid "Finland"
 msgstr "Filandia"
 
-#: activities/piano_composition/MelodyList.qml:61
+#: activities/piano_composition/MelodyList.qml:55
 msgctxt "MelodyList|"
 msgid "Melodies"
 msgstr "Melodi"
@@ -20399,23 +20399,23 @@ msgctxt "OptionsRow|"
 msgid "Lyrics"
 msgstr "Lirik"
 
-#: activities/piano_composition/OptionsRow.qml:70
+#: activities/piano_composition/OptionsRow.qml:60
 msgctxt "OptionsRow|"
 msgid "Play melody"
 msgstr "Mainkan melodi"
 
-#: activities/piano_composition/OptionsRow.qml:89
+#: activities/piano_composition/OptionsRow.qml:98
 msgctxt "OptionsRow|"
 msgid "Undo"
 msgstr "Batalkan"
 
 #. Sharp notes and Flat notes represents the accidental style of the notes in the music.
-#: activities/piano_composition/OptionsRow.qml:157
+#: activities/piano_composition/OptionsRow.qml:166
 msgctxt "OptionsRow|"
 msgid "Sharp notes"
 msgstr "Notasi kres"
 
-#: activities/piano_composition/OptionsRow.qml:157
+#: activities/piano_composition/OptionsRow.qml:166
 msgctxt "OptionsRow|"
 msgid "Flat notes"
 msgstr "Notasi mol"
@@ -20495,22 +20495,22 @@ msgctxt "Piano_composition|"
 msgid "No"
 msgstr "Tidak"
 
-#: activities/piano_composition/Piano_composition.qml:418
+#: activities/piano_composition/Piano_composition.qml:417
 msgctxt "Piano_composition|"
 msgid "Select the type of melody to load."
 msgstr "Pilih tipe melodi untuk dimuat."
 
-#: activities/piano_composition/Piano_composition.qml:423
+#: activities/piano_composition/Piano_composition.qml:422
 msgctxt "Piano_composition|"
 msgid "Pre-defined melodies"
 msgstr "Sebelum menentukan melodi"
 
-#: activities/piano_composition/Piano_composition.qml:441
+#: activities/piano_composition/Piano_composition.qml:440
 msgctxt "Piano_composition|"
 msgid "Your saved melodies"
 msgstr "Kamu menyimpan melodi"
 
-#: activities/piano_composition/Piano_composition.qml:548
+#: activities/piano_composition/Piano_composition.qml:547
 msgctxt "Piano_composition|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -20519,12 +20519,12 @@ msgstr ""
 "Kegiatan ini memerlukan suara, sehingga akan memutar beberapa suara bahkan "
 "ketika suara audio atau efek dinonaktifkan dalam pengaturan utama."
 
-#: activities/piano_composition/Piano_composition.qml:549
+#: activities/piano_composition/Piano_composition.qml:548
 msgctxt "Piano_composition|"
 msgid "Quit"
 msgstr "Berhenti"
 
-#: activities/piano_composition/Piano_composition.qml:550
+#: activities/piano_composition/Piano_composition.qml:549
 msgctxt "Piano_composition|"
 msgid "Continue"
 msgstr "Lanjutkan"
@@ -25831,27 +25831,27 @@ msgctxt "DialogChooseLevel|"
 msgid "%1 settings"
 msgstr "Pengaturan %1"
 
-#: core/DialogChooseLevel.qml:200
+#: core/DialogChooseLevel.qml:202
 msgctxt "DialogChooseLevel|"
 msgid "Dataset"
 msgstr "Kumpulan data"
 
-#: core/DialogChooseLevel.qml:213
+#: core/DialogChooseLevel.qml:215
 msgctxt "DialogChooseLevel|"
 msgid "Options"
 msgstr "Pilihan"
 
-#: core/DialogChooseLevel.qml:341
+#: core/DialogChooseLevel.qml:342
 msgctxt "DialogChooseLevel|"
 msgid "Cancel"
 msgstr "Batal"
 
-#: core/DialogChooseLevel.qml:349
+#: core/DialogChooseLevel.qml:350
 msgctxt "DialogChooseLevel|"
 msgid "Save"
 msgstr "Simpan"
 
-#: core/DialogChooseLevel.qml:363
+#: core/DialogChooseLevel.qml:364
 msgctxt "DialogChooseLevel|"
 msgid "Save and start"
 msgstr "Simpan dan mulai"
