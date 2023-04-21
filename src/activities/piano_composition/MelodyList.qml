@@ -25,7 +25,22 @@ Rectangle {
     visible: false
     focus: visible
 
+    Keys.onPressed: {
+        if(event.key === Qt.Key_Down) {
+            scrollItem.down();
+        } else if(event.key === Qt.Key_Up) {
+            scrollItem.up();
+        }
+    }
+
     Keys.onEscapePressed: closeButton.close()
+
+    Keys.onReleased: {
+        if(event.key === Qt.Key_Back) {
+            event.accepted = true;
+            closeButton.close();
+        }
+    }
 
     signal close
 
@@ -140,6 +155,7 @@ Rectangle {
             }
             // The scroll buttons
             GCButtonScroll {
+                id: scrollItem
                 anchors.right: parent.right
                 anchors.rightMargin: 5 * ApplicationInfo.ratio
                 anchors.bottom: flickableList.bottom
