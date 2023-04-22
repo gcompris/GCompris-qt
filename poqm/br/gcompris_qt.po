@@ -2558,13 +2558,13 @@ msgstr ""
 "Pouez war ar biroù kleiz ha dehoù war un dro evit lakaat ar vell da vont war "
 "eeun. Gant ur skramm stekiñ, stok an daouarn war un dro."
 
-#: activities/ballcatch/Ballcatch.qml:222
+#: activities/ballcatch/Ballcatch.qml:221
 msgctxt "Ballcatch|"
 msgid ""
 "Tap both hands at the same time, to make the ball go in a straight line."
 msgstr "Stok an daouarn war un dro da lakaat ar vell da vont war eeun."
 
-#: activities/ballcatch/Ballcatch.qml:224
+#: activities/ballcatch/Ballcatch.qml:223
 msgctxt "Ballcatch|"
 msgid ""
 "Press left and right arrow keys at the same time, to make the ball go in a "
@@ -2762,7 +2762,7 @@ msgctxt "binary_bulb|"
 msgid "This image will help you to compute bits' value."
 msgstr "Ar skeudenn-mañ a ziskouezo dit penaos jediñ talvoud ar bitoù."
 
-#: activities/binary_bulb/BinaryBulb.qml:121
+#: activities/binary_bulb/BinaryBulb.qml:123
 #, qt-format
 msgctxt "BinaryBulb|"
 msgid "What is the binary representation of %1?"
@@ -3350,7 +3350,7 @@ msgstr ""
 "Te a ren ar skluz. Ret eo dit digeriñ an dorioù hag ar rañvellioù en urzh "
 "mat a-benn lakaat Tuks da dremen dre ar skluz d'un tu ha d'an tu all."
 
-#: activities/canal_lock/CanalLock.qml:54
+#: activities/canal_lock/CanalLock.qml:57
 msgctxt "CanalLock|"
 msgid ""
 "Your goal is to lead Tux across the canal lock to get the wooden logs, using "
@@ -3359,7 +3359,7 @@ msgstr ""
 "Da bal eo kas Tux dre ar skluz war-zu ar c'hefoù-koad en ur implijout tammoù "
 "disheñvel ar skluz."
 
-#: activities/canal_lock/CanalLock.qml:56
+#: activities/canal_lock/CanalLock.qml:59
 msgctxt "CanalLock|"
 msgid ""
 "The vertical colored bars represent the water locks, which can be operated "
@@ -3369,7 +3369,7 @@ msgstr ""
 "Ar barrennoù a-blom ha livet a zo ar skluzioù da vezañ diblaset dre glikañ "
 "warne. N'haller ket diblasañ daoù tamm skluz eus ar memes stumm war un dro."
 
-#: activities/canal_lock/CanalLock.qml:58
+#: activities/canal_lock/CanalLock.qml:61
 msgctxt "CanalLock|"
 msgid ""
 "The water level inside the lock will change according to the side of the "
@@ -5897,12 +5897,12 @@ msgstr ""
 "teknikoù an urzhiataer an hini eo. E gwirionez e talv alies 0 kement hag ur "
 "voltadur tost da hini ar sol hag 1 kement ha voltadur pourvezel un amredad."
 
-#: activities/digital_electricity/DigitalElectricity.qml:245
+#: activities/digital_electricity/DigitalElectricity.qml:248
 msgctxt "DigitalElectricity|"
 msgid "Input"
 msgstr "Enank"
 
-#: activities/digital_electricity/DigitalElectricity.qml:263
+#: activities/digital_electricity/DigitalElectricity.qml:266
 msgctxt "DigitalElectricity|"
 msgid "Output"
 msgstr "Ec'hank"
@@ -13851,7 +13851,7 @@ msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: move the spaceship"
 msgstr "Biroù kleiz ha dehoù: dilec'h an egorlestr"
 
-#: activities/gravity/Gravity.qml:210
+#: activities/gravity/Gravity.qml:209
 msgctxt "Gravity|"
 msgid ""
 "Gravity is universal and Newton's law of universal gravitation extends "
@@ -13864,7 +13864,7 @@ msgstr ""
 "dedennañ gant tolzoù an traoù kenetreze ha ginfeuriek eo ouzh karrez ar "
 "pellder a zo etre o c'hreizoù-pouez."
 
-#: activities/gravity/Gravity.qml:214
+#: activities/gravity/Gravity.qml:213
 msgctxt "Gravity|"
 msgid ""
 "Since the gravitational force is directly proportional to the mass of both "
@@ -13874,7 +13874,7 @@ msgstr ""
 "Peogwir eo kenfeuriek an nerzh dedennañ ouzh tolz an traoù kenetreze e vo "
 "brasoc'h an nerzh dedennañ gant traoù bras o zolz."
 
-#: activities/gravity/Gravity.qml:217
+#: activities/gravity/Gravity.qml:216
 msgctxt "Gravity|"
 msgid ""
 "But as this force is inversely proportional to the square of the distance "
@@ -13885,7 +13885,7 @@ msgstr ""
 "ober an eil war egile, ha gant ur pellder brasoc'h e tigresko neuze an "
 "nerzhioù dedennañ."
 
-#: activities/gravity/Gravity.qml:220
+#: activities/gravity/Gravity.qml:219
 msgctxt "Gravity|"
 msgid ""
 "Your goal is to move the spaceship and avoid hitting the planets until you "
@@ -13896,7 +13896,7 @@ msgstr ""
 "planedennoù eo da bal. Ar bir a ziskouez tu ha nerzh an nerzh-dedennañ war "
 "da egorlestr."
 
-#: activities/gravity/Gravity.qml:223
+#: activities/gravity/Gravity.qml:222
 msgctxt "Gravity|"
 msgid ""
 "Try to stay near the center of the screen, and anticipate by looking at the "
@@ -14859,31 +14859,31 @@ msgstr ""
 "Biroù kleiz ha dehoù: el liveoù kentañ, mont a-gleiz pe a-zehoù; el liveoù "
 "uhel, treiñ an egorlestr."
 
-#: activities/land_safe/LandSafe.qml:580
+#: activities/land_safe/LandSafe.qml:583
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Fuel: %1"
 msgstr "Dour-tan: %1"
 
-#: activities/land_safe/LandSafe.qml:590
+#: activities/land_safe/LandSafe.qml:593
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Altitude: %1"
 msgstr "Uhelder: %1"
 
-#: activities/land_safe/LandSafe.qml:600
+#: activities/land_safe/LandSafe.qml:603
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Velocity: %1"
 msgstr "Tizh: %1"
 
-#: activities/land_safe/LandSafe.qml:611
+#: activities/land_safe/LandSafe.qml:614
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Acceleration: %1"
 msgstr "Buanadur: %1"
 
-#: activities/land_safe/LandSafe.qml:645
+#: activities/land_safe/LandSafe.qml:648
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Gravity: %1"
@@ -15339,31 +15339,31 @@ msgstr ""
 "an dachenn c'houllo. Kendalc'h mod-se betek ma vo niver an orañjez heñvel "
 "ouzh ar c'hementad ret. Klik goude war ar bouton OK evit gwiriañ da respont."
 
-#: activities/learn_decimals/Learn_decimals.qml:112
+#: activities/learn_decimals/Learn_decimals.qml:115
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the number: %1"
 msgstr "Diskouez an niver: %1"
 
-#: activities/learn_decimals/Learn_decimals.qml:113
+#: activities/learn_decimals/Learn_decimals.qml:116
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the result of: %1 + %2"
 msgstr "Diskouez an disoc'h evit: %1 + %2"
 
-#: activities/learn_decimals/Learn_decimals.qml:114
+#: activities/learn_decimals/Learn_decimals.qml:117
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the result of: %1 - %2"
 msgstr "Diskouez an disoc'h evit: %1 - %2"
 
-#: activities/learn_decimals/Learn_decimals.qml:115
+#: activities/learn_decimals/Learn_decimals.qml:118
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Represent the quantity: %1"
 msgstr "Diskouez ar c'hementad: %1"
 
-#: activities/learn_decimals/Learn_decimals.qml:568
+#: activities/learn_decimals/Learn_decimals.qml:571
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Enter the result: %1"
@@ -18885,20 +18885,20 @@ msgctxt "ActivityInfo|"
 msgid "Identify the notes correctly and score 100% to complete a level."
 msgstr "Klask anavezout mat an notennoù ha tap 100% evit peurechuiñ ul live."
 
-#: activities/note_names/NoteNames.qml:175
+#: activities/note_names/NoteNames.qml:178
 #, qt-format
 msgctxt "NoteNames|"
 msgid "New note: %1"
 msgstr "Notenn nevez: %1"
 
 #. The following translation represents percentage.
-#: activities/note_names/NoteNames.qml:263
+#: activities/note_names/NoteNames.qml:266
 #, qt-format
 msgctxt "NoteNames|"
 msgid "%1%"
 msgstr "%1%"
 
-#: activities/note_names/NoteNames.qml:453
+#: activities/note_names/NoteNames.qml:452
 msgctxt "NoteNames|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -18908,12 +18908,12 @@ msgstr ""
 "zoken ma n'eo ket bet dibabet kaout ar mouezhioù pe an efedoù-son er "
 "c'hefluniañ pennañ."
 
-#: activities/note_names/NoteNames.qml:454
+#: activities/note_names/NoteNames.qml:453
 msgctxt "NoteNames|"
 msgid "Quit"
 msgstr "Mont kuit"
 
-#: activities/note_names/NoteNames.qml:455
+#: activities/note_names/NoteNames.qml:454
 msgctxt "NoteNames|"
 msgid "Continue"
 msgstr "Kenderc'hel"
@@ -20175,7 +20175,7 @@ msgctxt "melodies|"
 msgid "Finland"
 msgstr "Finland"
 
-#: activities/piano_composition/MelodyList.qml:55
+#: activities/piano_composition/MelodyList.qml:70
 msgctxt "MelodyList|"
 msgid "Melodies"
 msgstr "Tonioù"
@@ -21123,23 +21123,23 @@ msgstr ""
 "<b>Tachenn an Arc'hwel pennañ</b> a-benn ouzhpennañ da god, klik war ar "
 "skritellig <b>Boukl</b> pe <b>Arc'hwel pennañ</b>."
 
-#: activities/programmingMaze/ProgrammingMaze.qml:190
+#: activities/programmingMaze/ProgrammingMaze.qml:193
 #, qt-format
 msgctxt "ProgrammingMaze|"
 msgid "Reach the fish in less than %1 instructions."
 msgstr "Tizh ar pesk e nebeutoc'h eget %1 urzh."
 
-#: activities/programmingMaze/ProgrammingMaze.qml:254
+#: activities/programmingMaze/ProgrammingMaze.qml:257
 msgctxt "ProgrammingMaze|"
 msgid "Main function"
 msgstr "Arc'hwel pennañ"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:282
+#: activities/programmingMaze/ProgrammingMaze.qml:285
 msgctxt "ProgrammingMaze|"
 msgid "Procedure"
 msgstr "Argerzhadur"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:282
+#: activities/programmingMaze/ProgrammingMaze.qml:285
 msgctxt "ProgrammingMaze|"
 msgid "Loop"
 msgstr "Boukl"
@@ -21219,7 +21219,7 @@ msgctxt "ActivityInfo|"
 msgid "Enter or Return: submit your answer"
 msgstr "Mont-tre pe Distro: evit kinnig da respont"
 
-#: activities/railroad/Railroad.qml:103
+#: activities/railroad/Railroad.qml:105
 msgctxt "Railroad|"
 msgid ""
 "Observe and remember the train before the timer ends and then drag the items "
@@ -21228,7 +21228,7 @@ msgstr ""
 "Sell mat ouzh an tren evit kaout soñj dioutañ a-raok ma echufe amzer ar "
 "munuter ha rikl goude-se an traoù evit sevel un tren heñvel outañ."
 
-#: activities/railroad/Railroad.qml:104
+#: activities/railroad/Railroad.qml:106
 msgctxt "Railroad|"
 msgid ""
 "If you forgot the model, you can click on the Hint button to view it again."
@@ -24054,7 +24054,7 @@ msgstr ""
 "Dreist! Gallout a rez adober an amprouadenn evit gwiriañ da ouiziegezh gant "
 "goulennoù all."
 
-#: activities/solar_system/SolarSystem.qml:155
+#: activities/solar_system/SolarSystem.qml:158
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -24070,17 +24070,17 @@ msgstr ""
 "koskoriad an Heol.<br><b>2. Mod amprouiñ</b> - Er mod-se e c'hallez gwiriañ "
 "da ouiziegezh diwar-benn koskoriad an Heol."
 
-#: activities/solar_system/SolarSystem.qml:155
+#: activities/solar_system/SolarSystem.qml:158
 msgctxt "SolarSystem|"
 msgid "Assessment"
 msgstr "Amprouiñ"
 
-#: activities/solar_system/SolarSystem.qml:155
+#: activities/solar_system/SolarSystem.qml:158
 msgctxt "SolarSystem|"
 msgid "Learning"
 msgstr "Deskiñ"
 
-#: activities/solar_system/SolarSystem.qml:159
+#: activities/solar_system/SolarSystem.qml:162
 msgctxt "SolarSystem|"
 msgid ""
 "Click on the Sun or any planet to reveal questions. Each question has 4 "
@@ -24089,7 +24089,7 @@ msgstr ""
 "Klik war an Heol pe ur blanedenn evit diskuliañ goulennoù. 4 dibab zo gant "
 "pep goulenn. Unan anezhe zo reizh nemetken."
 
-#: activities/solar_system/SolarSystem.qml:160
+#: activities/solar_system/SolarSystem.qml:163
 msgctxt "SolarSystem|"
 msgid ""
 "After a planet is clicked, the Closeness meter at the bottom-right corner of "
@@ -24103,7 +24103,7 @@ msgstr ""
 "gwashañ. Klask adarre betek tapout ul live reizhder a 100% en ur heuliañ ar "
 "mucher reizhder pe an titour a ro dit ar respont mat."
 
-#: activities/solar_system/SolarSystem.qml:165
+#: activities/solar_system/SolarSystem.qml:168
 msgctxt "SolarSystem|"
 msgid ""
 "There are 20 questions initially with 4 options each. The progress bar at "
@@ -24112,7 +24112,7 @@ msgstr ""
 "20 goulenn diazez 'zo gant pep a 4 dibab. Dregantach da gont zo diskouezet "
 "dit gant barrenn ar mont war-raok war ar skramm en traoñ a-zehoù."
 
-#: activities/solar_system/SolarSystem.qml:166
+#: activities/solar_system/SolarSystem.qml:169
 msgctxt "SolarSystem|"
 msgid ""
 "If your answer is correct, your score increases.<br>If your answer is wrong, "
@@ -24125,7 +24125,7 @@ msgstr ""
 "respontet fall outañ.<br>Ne vo ket kinniget dit muioc'h eget 25 goulenn en "
 "holl."
 
-#: activities/solar_system/SolarSystem.qml:167
+#: activities/solar_system/SolarSystem.qml:170
 msgctxt "SolarSystem|"
 msgid ""
 "You should score above 90% to pass the assessment and become a Solar System "
@@ -24134,7 +24134,7 @@ msgstr ""
 "Ret eo dit  tapout muioc'h eget 90% evit dont da vezañ ur mailh war "
 "koskoriad an Heol!"
 
-#: activities/solar_system/SolarSystem.qml:349
+#: activities/solar_system/SolarSystem.qml:352
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -24144,7 +24144,7 @@ msgstr ""
 "1. Seul <b> belloc'h </b> m'emañ ur blanedenn diouzh an Heol, seul <b> "
 "izeloc'h</b> eo he zemperadur.<br><font color=\"#3bb0de\">%1</font>"
 
-#: activities/solar_system/SolarSystem.qml:350
+#: activities/solar_system/SolarSystem.qml:353
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -24155,7 +24155,7 @@ msgstr ""
 "an Heol</b>.<br><font color=\"#3bb0de\">%1</font>"
 
 #. find an equivalent rhyme in your language where the first letter of each word corresponds to the first letter of the planet in proper sequence
-#: activities/solar_system/SolarSystem.qml:353
+#: activities/solar_system/SolarSystem.qml:356
 msgctxt "SolarSystem|"
 msgid ""
 "3. Always remember this rhyme to learn the position of planets, examine the "
@@ -24167,12 +24167,12 @@ msgstr ""
 "b>in- <b>M</b>e <b>Y</b>a <b>S</b>kuizh <b>O</b> <b>N</b>ijal.<br><font "
 "color=\"#3bb0de\">%1</font>"
 
-#: activities/solar_system/SolarSystem.qml:355
+#: activities/solar_system/SolarSystem.qml:358
 msgctxt "SolarSystem|"
 msgid "Hint"
 msgstr "Titour"
 
-#: activities/solar_system/SolarSystem.qml:363
+#: activities/solar_system/SolarSystem.qml:366
 msgctxt "SolarSystem|"
 msgid "View the solar system"
 msgstr "Sell ouzh koskoriad an Heol"
@@ -24941,7 +24941,7 @@ msgstr ""
 "a-benn loc'hañ en-dro reizhiad an dour. Ur wech graet an dra-se ha pa vo "
 "Tuks er strinkadenn, pouez war bouton an dour evitañ."
 
-#: activities/watercycle/Watercycle.qml:78
+#: activities/watercycle/Watercycle.qml:81
 msgctxt "Watercycle|"
 msgid ""
 "The sun is the main component of the water cycle. Click on the sun to start "
@@ -24950,12 +24950,12 @@ msgstr ""
 "An heol zo elfenn bennañ kelc'hiad an dour. Klik warnañ da loc'hañ kelc'hiad "
 "an dour."
 
-#: activities/watercycle/Watercycle.qml:79
+#: activities/watercycle/Watercycle.qml:82
 msgctxt "Watercycle|"
 msgid "As the sun rises, the water of the sea starts heating and evaporates."
 msgstr "Pa sav an heol e krog an dour da dommañ ha da vont da aezhenn."
 
-#: activities/watercycle/Watercycle.qml:80
+#: activities/watercycle/Watercycle.qml:83
 msgctxt "Watercycle|"
 msgid ""
 "Water vapor condenses to form clouds and when clouds become heavy, it rains. "
@@ -24964,7 +24964,7 @@ msgstr ""
 " Glizhenniñ a ra an aezhenn da sevel koumoul ha pa ya ar c'houmoul da "
 "bounner e ra glav. Klik war ar  goumoulenn."
 
-#: activities/watercycle/Watercycle.qml:81
+#: activities/watercycle/Watercycle.qml:84
 msgctxt "Watercycle|"
 msgid ""
 "The rain causes rivers to swell up and this water is transported to us via "
@@ -24975,19 +24975,19 @@ msgstr ""
 "kaset an dour-se deomp gant tourioù-dour. Klik war ar pomp da bourchas dour "
 "d'an annezidi."
 
-#: activities/watercycle/Watercycle.qml:83
+#: activities/watercycle/Watercycle.qml:86
 msgctxt "Watercycle|"
 msgid ""
 "See the tower filled with water. Activate the sewage treatment station by "
 "clicking on it."
 msgstr "Sell an tour leun a zour. Klik war ar stal buraat evit loc'hañ anezhi."
 
-#: activities/watercycle/Watercycle.qml:84
+#: activities/watercycle/Watercycle.qml:87
 msgctxt "Watercycle|"
 msgid "Great, click on the shower, as Tux arrives home."
 msgstr "Dreist, klik war ar strinkadenn pa 'z erru Tuks er gêr."
 
-#: activities/watercycle/Watercycle.qml:85
+#: activities/watercycle/Watercycle.qml:88
 msgctxt "Watercycle|"
 msgid ""
 "Fantastic, you have completed the water cycle. You can continue playing."
@@ -24995,7 +24995,7 @@ msgstr ""
 "Dispar, echuet eo kelc'hiad an dour ganit. Kendalc'h gant da c'hoari ma fell "
 "dit."
 
-#: activities/watercycle/Watercycle.qml:112
+#: activities/watercycle/Watercycle.qml:115
 msgctxt "Watercycle|"
 msgid ""
 "The water cycle (also known as the hydrologic cycle) is the journey water "
@@ -25006,7 +25006,7 @@ msgstr ""
 "douar betek an oabl hag an distro. Tommder an heol a bourchas ar gremm da "
 "lakaat an dour da aezhenniñ diouzh tachadoù dour evel ar morioù."
 
-#: activities/watercycle/Watercycle.qml:115
+#: activities/watercycle/Watercycle.qml:118
 msgctxt "Watercycle|"
 msgid ""
 "Plants also lose water to the air through transpiration. The water vapor "
@@ -25017,7 +25017,7 @@ msgstr ""
 "sevel a ra takennoùigoù dour er c'houmoul. Pa gej ar c'houmoul ouzh aer yen "
 "a-us d'an douare ra dour o kouezhañ e stumm glav."
 
-#: activities/watercycle/Watercycle.qml:118
+#: activities/watercycle/Watercycle.qml:121
 msgctxt "Watercycle|"
 msgid ""
 "Some of the water is trapped between rock or clay layers, called "
@@ -25028,7 +25028,7 @@ msgstr ""
 "dour-dindandouar. Met an darn vrasañ anezhañ a red war c'horre an douar, ul "
 "lod o vont betek ar morioù dre ar stêrioù."
 
-#: activities/watercycle/Watercycle.qml:120
+#: activities/watercycle/Watercycle.qml:123
 msgctxt "Watercycle|"
 msgid ""
 "Your goal is to complete the water cycle before Tux reaches home. Click on "
@@ -25825,22 +25825,22 @@ msgctxt "GCCreationHandler|"
 msgid "Delete"
 msgstr "Lemel"
 
-#: core/IntroMessage.qml:174
+#: core/IntroMessage.qml:137
 msgctxt "IntroMessage|"
 msgid "Previous"
 msgstr "Diaraok"
 
-#: core/IntroMessage.qml:190
+#: core/IntroMessage.qml:153
 msgctxt "IntroMessage|"
 msgid "Next"
 msgstr "War-lerc'h"
 
-#: core/IntroMessage.qml:205
+#: core/IntroMessage.qml:168
 msgctxt "IntroMessage|"
 msgid "Skip"
 msgstr "Tremen hepti"
 
-#: core/IntroMessage.qml:205
+#: core/IntroMessage.qml:168
 msgctxt "IntroMessage|"
 msgid "Start"
 msgstr "Kregiñ"
@@ -25932,47 +25932,47 @@ msgstr ""
 "Dibab an hed embannet evit diaester un obererezh e-doug un abadenn. Pe un "
 "talvoud hepken (2), pe un hed (3-6). Ret eo d'an talvoudoù bezañ etre 1 ha 6."
 
-#: core/main.qml:233
+#: core/main.qml:273
 msgctxt "main|"
 msgid "Voices for your language"
 msgstr "Mouezhioù evit da yezh"
 
-#: core/main.qml:234
+#: core/main.qml:274
 msgctxt "main|"
 msgid "Full word image set"
 msgstr "Implij stumm klok restr ar skeudennoù"
 
-#: core/main.qml:235
+#: core/main.qml:275
 msgctxt "main|"
 msgid "Background music"
 msgstr "Sonerezh a-dreñv"
 
-#: core/main.qml:240
+#: core/main.qml:280
 msgctxt "main|"
 msgid "Do you want to download the following external assets?"
 msgstr "Ha fellout a ra dit pellgargañ ar pezh zo amañ-dindan ?"
 
-#: core/main.qml:245
+#: core/main.qml:285
 msgctxt "main|"
 msgid "Yes"
 msgstr "Ya"
 
-#: core/main.qml:255
+#: core/main.qml:295
 msgctxt "main|"
 msgid "No"
 msgstr "Ket"
 
-#: core/main.qml:280
+#: core/main.qml:320
 msgctxt "main|"
 msgid "Welcome to GCompris!"
 msgstr "Donemat e GCompris!"
 
-#: core/main.qml:281
+#: core/main.qml:321
 msgctxt "main|"
 msgid "You are running GCompris for the first time."
 msgstr "Evit ar wech kentañ emaout o lañsañ GCompris."
 
-#: core/main.qml:282
+#: core/main.qml:322
 msgctxt "main|"
 msgid ""
 "You should verify that your application settings especially your language is "
@@ -25983,18 +25983,18 @@ msgstr ""
 "dreist-holl, ha gwiriañ hag-eñ eo bet staliet holl restroù son da yezh. Dre "
 "banell an dibaboù e c'hallez ober an dra-se."
 
-#: core/main.qml:284
+#: core/main.qml:324
 msgctxt "main|"
 msgid "Have Fun!"
 msgstr "Plijadur dit!"
 
-#: core/main.qml:286
+#: core/main.qml:326
 #, qt-format
 msgctxt "main|"
 msgid "Your current language is %1 (%2)."
 msgstr "Ar yezh o treiñ zo %1 (%2)."
 
-#: core/main.qml:317
+#: core/main.qml:357
 msgctxt "main|"
 msgid "GCompris has been updated! Here are the new changes:<br/>"
 msgstr "Adnevesaet eo bet GCompris! Setu ar c'hemmoù nevez: <br/>"
@@ -26004,22 +26004,22 @@ msgctxt "ReadyButton|"
 msgid "I am Ready"
 msgstr "Prest on"
 
-#: core/Tutorial.qml:175
+#: core/Tutorial.qml:137
 msgctxt "Tutorial|"
 msgid "Previous"
 msgstr "Diaraok"
 
-#: core/Tutorial.qml:195
+#: core/Tutorial.qml:157
 msgctxt "Tutorial|"
 msgid "Next"
 msgstr "War-lerc'h"
 
-#: core/Tutorial.qml:214
+#: core/Tutorial.qml:176
 msgctxt "Tutorial|"
 msgid "Skip"
 msgstr "Tremen hepti"
 
-#: core/Tutorial.qml:214
+#: core/Tutorial.qml:176
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Kregiñ"

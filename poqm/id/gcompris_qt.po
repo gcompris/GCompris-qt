@@ -2583,7 +2583,7 @@ msgstr ""
 "Tekan tombol panah kiri dan kanan bersamaan, agar bola bergerak secara "
 "lurus. Pada layar sentuh kamu harus menekan dengan kedua tangan bersamaan."
 
-#: activities/ballcatch/Ballcatch.qml:222
+#: activities/ballcatch/Ballcatch.qml:221
 msgctxt "Ballcatch|"
 msgid ""
 "Tap both hands at the same time, to make the ball go in a straight line."
@@ -2591,7 +2591,7 @@ msgstr ""
 "Ketuk dengan kedua jari secara bersamaan, untuk membuat bola bergerak secara "
 "lurus."
 
-#: activities/ballcatch/Ballcatch.qml:224
+#: activities/ballcatch/Ballcatch.qml:223
 msgctxt "Ballcatch|"
 msgid ""
 "Press left and right arrow keys at the same time, to make the ball go in a "
@@ -2790,7 +2790,7 @@ msgctxt "binary_bulb|"
 msgid "This image will help you to compute bits' value."
 msgstr "Gambar ini akan membantumu untuk menghitung nilai bit."
 
-#: activities/binary_bulb/BinaryBulb.qml:121
+#: activities/binary_bulb/BinaryBulb.qml:123
 #, qt-format
 msgctxt "BinaryBulb|"
 msgid "What is the binary representation of %1?"
@@ -3378,7 +3378,7 @@ msgstr ""
 "Kamu bertanggungjawab terhadap pintu air. Buka gerbang dan pintu air dengan "
 "urutan yang benar, sehingga Tux bisa bergerak melalui gerbang di kedua arah."
 
-#: activities/canal_lock/CanalLock.qml:54
+#: activities/canal_lock/CanalLock.qml:57
 msgctxt "CanalLock|"
 msgid ""
 "Your goal is to lead Tux across the canal lock to get the wooden logs, using "
@@ -3387,7 +3387,7 @@ msgstr ""
 "Tugas kamu adalah sebagai Tux di kunci kanal untuk mendapatkan kayu balok, "
 "kami bisa menggunakan berbagai jenis kunci air yang tersedia."
 
-#: activities/canal_lock/CanalLock.qml:56
+#: activities/canal_lock/CanalLock.qml:59
 msgctxt "CanalLock|"
 msgid ""
 "The vertical colored bars represent the water locks, which can be operated "
@@ -3398,7 +3398,7 @@ msgstr ""
 "mengekliknya. Dua kunci dengan jenis yang sama tidak dapat dioperasikan "
 "secara bersamaan."
 
-#: activities/canal_lock/CanalLock.qml:58
+#: activities/canal_lock/CanalLock.qml:61
 msgctxt "CanalLock|"
 msgid ""
 "The water level inside the lock will change according to the side of the "
@@ -6002,12 +6002,12 @@ msgstr ""
 "voltase ground, dan 1 sebagai representasi voltase penyuplai sebuah "
 "rangkaian elektronik."
 
-#: activities/digital_electricity/DigitalElectricity.qml:245
+#: activities/digital_electricity/DigitalElectricity.qml:248
 msgctxt "DigitalElectricity|"
 msgid "Input"
 msgstr "Input"
 
-#: activities/digital_electricity/DigitalElectricity.qml:263
+#: activities/digital_electricity/DigitalElectricity.qml:266
 msgctxt "DigitalElectricity|"
 msgid "Output"
 msgstr "Output"
@@ -13963,7 +13963,7 @@ msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: move the spaceship"
 msgstr "Panah kiri atau kanan: memindahkan pesawat ruang angkasa"
 
-#: activities/gravity/Gravity.qml:210
+#: activities/gravity/Gravity.qml:209
 msgctxt "Gravity|"
 msgid ""
 "Gravity is universal and Newton's law of universal gravitation extends "
@@ -13976,7 +13976,7 @@ msgstr ""
 "pada massa dari kedua benda dan berbanding terbalik dengan kuadrat jarak "
 "yang memisahkan pusatnya."
 
-#: activities/gravity/Gravity.qml:214
+#: activities/gravity/Gravity.qml:213
 msgctxt "Gravity|"
 msgid ""
 "Since the gravitational force is directly proportional to the mass of both "
@@ -13988,7 +13988,7 @@ msgstr ""
 "besar. Jadi seiring dengan bertambahnya massa benda, kekuatan daya tarik "
 "gravitasi di antara keduanya juga meningkat."
 
-#: activities/gravity/Gravity.qml:217
+#: activities/gravity/Gravity.qml:216
 msgctxt "Gravity|"
 msgid ""
 "But as this force is inversely proportional to the square of the distance "
@@ -13999,7 +13999,7 @@ msgstr ""
 "objek yang saling berinteraksi, jarak pemisah yang lebih banyak akan "
 "menghasilkan gaya gravitasi yang lebih lemah."
 
-#: activities/gravity/Gravity.qml:220
+#: activities/gravity/Gravity.qml:219
 msgctxt "Gravity|"
 msgid ""
 "Your goal is to move the spaceship and avoid hitting the planets until you "
@@ -14010,7 +14010,7 @@ msgstr ""
 "tabrakan dengan planet sampai kamu mencapai stasiun ruang angkasa. Panah "
 "menunjukkan arah dan intensitas gravitasi di pesawat kamu."
 
-#: activities/gravity/Gravity.qml:223
+#: activities/gravity/Gravity.qml:222
 msgctxt "Gravity|"
 msgid ""
 "Try to stay near the center of the screen, and anticipate by looking at the "
@@ -14983,31 +14983,31 @@ msgstr ""
 "Panah kiri dan kanan: pada tingkat pertama, pindah ke samping; pada tingkat "
 "yang lebih tinggi, memutar pesawat ruang angkasa"
 
-#: activities/land_safe/LandSafe.qml:580
+#: activities/land_safe/LandSafe.qml:583
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Fuel: %1"
 msgstr "Bahan Bakar: %1"
 
-#: activities/land_safe/LandSafe.qml:590
+#: activities/land_safe/LandSafe.qml:593
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Altitude: %1"
 msgstr "Ketinggian: %1"
 
-#: activities/land_safe/LandSafe.qml:600
+#: activities/land_safe/LandSafe.qml:603
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Velocity: %1"
 msgstr "Kecepatan: %1"
 
-#: activities/land_safe/LandSafe.qml:611
+#: activities/land_safe/LandSafe.qml:614
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Acceleration: %1"
 msgstr "Percepatan: %1"
 
-#: activities/land_safe/LandSafe.qml:645
+#: activities/land_safe/LandSafe.qml:648
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Gravity: %1"
@@ -15466,31 +15466,31 @@ msgstr ""
 "potongan sesuai dengan jumlah yang diminta. Klik tombol OK untuk menyetujui "
 "jawaban kamu."
 
-#: activities/learn_decimals/Learn_decimals.qml:112
+#: activities/learn_decimals/Learn_decimals.qml:115
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the number: %1"
 msgstr "Tampilkan angka: %1"
 
-#: activities/learn_decimals/Learn_decimals.qml:113
+#: activities/learn_decimals/Learn_decimals.qml:116
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the result of: %1 + %2"
 msgstr "Tampilkan hasil dari: %1 + %2"
 
-#: activities/learn_decimals/Learn_decimals.qml:114
+#: activities/learn_decimals/Learn_decimals.qml:117
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the result of: %1 - %2"
 msgstr "Tampilkan hasil dari: %1 - %2"
 
-#: activities/learn_decimals/Learn_decimals.qml:115
+#: activities/learn_decimals/Learn_decimals.qml:118
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Represent the quantity: %1"
 msgstr "Mewakili jumlah: %1"
 
-#: activities/learn_decimals/Learn_decimals.qml:568
+#: activities/learn_decimals/Learn_decimals.qml:571
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Enter the result: %1"
@@ -19020,20 +19020,20 @@ msgstr ""
 "Mengenal not secara benar dan raih skor 100% untuk menyelesaikan sebuah "
 "tingkat permainan."
 
-#: activities/note_names/NoteNames.qml:175
+#: activities/note_names/NoteNames.qml:178
 #, qt-format
 msgctxt "NoteNames|"
 msgid "New note: %1"
 msgstr "Not baru: %1"
 
 #. The following translation represents percentage.
-#: activities/note_names/NoteNames.qml:263
+#: activities/note_names/NoteNames.qml:266
 #, qt-format
 msgctxt "NoteNames|"
 msgid "%1%"
 msgstr "%1%"
 
-#: activities/note_names/NoteNames.qml:453
+#: activities/note_names/NoteNames.qml:452
 msgctxt "NoteNames|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -19042,12 +19042,12 @@ msgstr ""
 "Kegiatan ini memerlukan suara, sehingga akan memutar beberapa suara bahkan "
 "ketika suara audio atau efek dinonaktifkan dalam pengaturan utama."
 
-#: activities/note_names/NoteNames.qml:454
+#: activities/note_names/NoteNames.qml:453
 msgctxt "NoteNames|"
 msgid "Quit"
 msgstr "Berhenti"
 
-#: activities/note_names/NoteNames.qml:455
+#: activities/note_names/NoteNames.qml:454
 msgctxt "NoteNames|"
 msgid "Continue"
 msgstr "Lanjutkan"
@@ -20322,7 +20322,7 @@ msgctxt "melodies|"
 msgid "Finland"
 msgstr "Filandia"
 
-#: activities/piano_composition/MelodyList.qml:55
+#: activities/piano_composition/MelodyList.qml:70
 msgctxt "MelodyList|"
 msgid "Melodies"
 msgstr "Melodi"
@@ -21266,23 +21266,23 @@ msgstr ""
 "Utama</b> untuk menambahkan kode kamu, klik pada label <b>Pengulangan</b> "
 "atau <b>Fungsi Utama</b>."
 
-#: activities/programmingMaze/ProgrammingMaze.qml:190
+#: activities/programmingMaze/ProgrammingMaze.qml:193
 #, qt-format
 msgctxt "ProgrammingMaze|"
 msgid "Reach the fish in less than %1 instructions."
 msgstr "Raihlah ikan dengan kurang dari %1 langkah."
 
-#: activities/programmingMaze/ProgrammingMaze.qml:254
+#: activities/programmingMaze/ProgrammingMaze.qml:257
 msgctxt "ProgrammingMaze|"
 msgid "Main function"
 msgstr "Fungsi Utama"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:282
+#: activities/programmingMaze/ProgrammingMaze.qml:285
 msgctxt "ProgrammingMaze|"
 msgid "Procedure"
 msgstr "Prosedur"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:282
+#: activities/programmingMaze/ProgrammingMaze.qml:285
 msgctxt "ProgrammingMaze|"
 msgid "Loop"
 msgstr "Pengulangan"
@@ -21362,7 +21362,7 @@ msgctxt "ActivityInfo|"
 msgid "Enter or Return: submit your answer"
 msgstr "Masukkan atau Kembalikan: kirimkan jawaban kamu"
 
-#: activities/railroad/Railroad.qml:103
+#: activities/railroad/Railroad.qml:105
 msgctxt "Railroad|"
 msgid ""
 "Observe and remember the train before the timer ends and then drag the items "
@@ -21371,7 +21371,7 @@ msgstr ""
 "Amati dan ingat bentuk kereta sebelum kereta menghilang dari pandangan dan "
 "seret gerbong atau lokomotif untuk menyiapkan kereta yang sama."
 
-#: activities/railroad/Railroad.qml:104
+#: activities/railroad/Railroad.qml:106
 msgctxt "Railroad|"
 msgid ""
 "If you forgot the model, you can click on the Hint button to view it again."
@@ -24239,7 +24239,7 @@ msgstr ""
 "Bagus! Kamu bisa memutar ulang penilaian untuk menguji pengetahuanmu akan "
 "lebih banyak pertanyaan."
 
-#: activities/solar_system/SolarSystem.qml:155
+#: activities/solar_system/SolarSystem.qml:158
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -24255,17 +24255,17 @@ msgstr ""
 "mode Penilaian</b> - Di mode ini kamu bisa menguji pengetahuanmu tentang "
 "Tata Surya."
 
-#: activities/solar_system/SolarSystem.qml:155
+#: activities/solar_system/SolarSystem.qml:158
 msgctxt "SolarSystem|"
 msgid "Assessment"
 msgstr "Penilaian"
 
-#: activities/solar_system/SolarSystem.qml:155
+#: activities/solar_system/SolarSystem.qml:158
 msgctxt "SolarSystem|"
 msgid "Learning"
 msgstr "Belajar"
 
-#: activities/solar_system/SolarSystem.qml:159
+#: activities/solar_system/SolarSystem.qml:162
 msgctxt "SolarSystem|"
 msgid ""
 "Click on the Sun or any planet to reveal questions. Each question has 4 "
@@ -24274,7 +24274,7 @@ msgstr ""
 "Klik pada Matahari atau planet lain untuk menampilkan pertanyaan. Setiap "
 "pertanyaan akan memiliki 4 pilihan, salah satunya adalah benar."
 
-#: activities/solar_system/SolarSystem.qml:160
+#: activities/solar_system/SolarSystem.qml:163
 msgctxt "SolarSystem|"
 msgid ""
 "After a planet is clicked, the Closeness meter at the bottom-right corner of "
@@ -24290,7 +24290,7 @@ msgstr ""
 "ketepatan. Jika tombol petunjuk terlihat, kamu bisa mengekliknya untuk "
 "mendapatkan petunjuk guna menemukan jawaban yang benar."
 
-#: activities/solar_system/SolarSystem.qml:165
+#: activities/solar_system/SolarSystem.qml:168
 msgctxt "SolarSystem|"
 msgid ""
 "There are 20 questions initially with 4 options each. The progress bar at "
@@ -24299,7 +24299,7 @@ msgstr ""
 "Terdapat 20 pertanyaan pada awalnya dengan masing-masing 4 pilihan. Baris "
 "perkembangan jawaban di kanan bawah layar menunjukkan skor persentase kamu."
 
-#: activities/solar_system/SolarSystem.qml:166
+#: activities/solar_system/SolarSystem.qml:169
 msgctxt "SolarSystem|"
 msgid ""
 "If your answer is correct, your score increases.<br>If your answer is wrong, "
@@ -24312,7 +24312,7 @@ msgstr ""
 "dengan pertanyaan yang salah dijawab.<br>Maksimal 25 pertanyaan akan "
 "ditanyakan setelah itu tidak ada lagi pertanyaan yang akan ditambahkan."
 
-#: activities/solar_system/SolarSystem.qml:167
+#: activities/solar_system/SolarSystem.qml:170
 msgctxt "SolarSystem|"
 msgid ""
 "You should score above 90% to pass the assessment and become a Solar System "
@@ -24320,7 +24320,7 @@ msgid ""
 msgstr ""
 "Kamu harus mencapai skor lebih dari 90% untuk menjadi pakar tata surya!"
 
-#: activities/solar_system/SolarSystem.qml:349
+#: activities/solar_system/SolarSystem.qml:352
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -24330,7 +24330,7 @@ msgstr ""
 "1. Semakin <b>jauh</b> sebuah planet dari Matahari, Semakin <b>rendah</b> "
 "suhu planet tersebut.<br><font color=\"#3bb0de\">%1</font>"
 
-#: activities/solar_system/SolarSystem.qml:350
+#: activities/solar_system/SolarSystem.qml:353
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -24341,7 +24341,7 @@ msgstr ""
 "menjauhi Matahari</b>.<br><font color=\"#3bb0de\">%1</font>"
 
 #. find an equivalent rhyme in your language where the first letter of each word corresponds to the first letter of the planet in proper sequence
-#: activities/solar_system/SolarSystem.qml:353
+#: activities/solar_system/SolarSystem.qml:356
 msgctxt "SolarSystem|"
 msgid ""
 "3. Always remember this rhyme to learn the position of planets, examine the "
@@ -24352,12 +24352,12 @@ msgstr ""
 "pertama di setiap kata - <b>M</b>ba <b>V</b>ina <b>B</b>eli <b>M</b>anggis "
 "<b>J</b>uga <b>S</b>awo <b>U</b>ntuk <b>N</b>ina.<br>"
 
-#: activities/solar_system/SolarSystem.qml:355
+#: activities/solar_system/SolarSystem.qml:358
 msgctxt "SolarSystem|"
 msgid "Hint"
 msgstr "Petunjuk"
 
-#: activities/solar_system/SolarSystem.qml:363
+#: activities/solar_system/SolarSystem.qml:366
 msgctxt "SolarSystem|"
 msgid "View the solar system"
 msgstr "Lihat tata surya"
@@ -25135,7 +25135,7 @@ msgstr ""
 "sistem penyaluran air. Ketika sistem sudah aktif dan Tux berada di kamar "
 "mandi, tekan tombol kran agar dia bisa mandi."
 
-#: activities/watercycle/Watercycle.qml:78
+#: activities/watercycle/Watercycle.qml:81
 msgctxt "Watercycle|"
 msgid ""
 "The sun is the main component of the water cycle. Click on the sun to start "
@@ -25144,12 +25144,12 @@ msgstr ""
 "Matahari adalah komponen utama dari siklus air. Klik pada matahari untuk "
 "memulai siklus air."
 
-#: activities/watercycle/Watercycle.qml:79
+#: activities/watercycle/Watercycle.qml:82
 msgctxt "Watercycle|"
 msgid "As the sun rises, the water of the sea starts heating and evaporates."
 msgstr "Ketika matahari mulai tinggi, air laut mulai panas dan menguap."
 
-#: activities/watercycle/Watercycle.qml:80
+#: activities/watercycle/Watercycle.qml:83
 msgctxt "Watercycle|"
 msgid ""
 "Water vapor condenses to form clouds and when clouds become heavy, it rains. "
@@ -25158,7 +25158,7 @@ msgstr ""
 "Uap air mengembun untuk membentuk awan dan ketika awan memiliki massa yang "
 "cukup berat, mulailah hujan. Klik pada awan."
 
-#: activities/watercycle/Watercycle.qml:81
+#: activities/watercycle/Watercycle.qml:84
 msgctxt "Watercycle|"
 msgid ""
 "The rain causes rivers to swell up and this water is transported to us via "
@@ -25169,7 +25169,7 @@ msgstr ""
 "disalurkan menuju kita lewat pompa melalui menara air. Klik pada pompa untuk "
 "menyediakan air ke penduduk."
 
-#: activities/watercycle/Watercycle.qml:83
+#: activities/watercycle/Watercycle.qml:86
 msgctxt "Watercycle|"
 msgid ""
 "See the tower filled with water. Activate the sewage treatment station by "
@@ -25178,19 +25178,19 @@ msgstr ""
 "Lihatlah menara yang penuh dengan air. Aktifkan stasiun pengolahan limbah "
 "dengan mengekliknya."
 
-#: activities/watercycle/Watercycle.qml:84
+#: activities/watercycle/Watercycle.qml:87
 msgctxt "Watercycle|"
 msgid "Great, click on the shower, as Tux arrives home."
 msgstr "Hebat, klik kran shower, saat Tux sampai di rumah."
 
-#: activities/watercycle/Watercycle.qml:85
+#: activities/watercycle/Watercycle.qml:88
 msgctxt "Watercycle|"
 msgid ""
 "Fantastic, you have completed the water cycle. You can continue playing."
 msgstr ""
 "Luar biasa, kamu telah menyelesaikan siklus air. Kamu bisa terus bermain."
 
-#: activities/watercycle/Watercycle.qml:112
+#: activities/watercycle/Watercycle.qml:115
 msgctxt "Watercycle|"
 msgid ""
 "The water cycle (also known as the hydrologic cycle) is the journey water "
@@ -25202,7 +25202,7 @@ msgstr ""
 "matahari memberi energi sehingga kumpulan air menguap, contohnya air di "
 "samudera."
 
-#: activities/watercycle/Watercycle.qml:115
+#: activities/watercycle/Watercycle.qml:118
 msgctxt "Watercycle|"
 msgid ""
 "Plants also lose water to the air through transpiration. The water vapor "
@@ -25214,7 +25214,7 @@ msgstr ""
 "bertemu udara dingin di atas daratan, pengembunan terjadi kemudian jatuh "
 "sebagai air hujan."
 
-#: activities/watercycle/Watercycle.qml:118
+#: activities/watercycle/Watercycle.qml:121
 msgctxt "Watercycle|"
 msgid ""
 "Some of the water is trapped between rock or clay layers, called "
@@ -25225,7 +25225,7 @@ msgstr ""
 "disebut air tanah. Tapi sebagian besar air mengalir sebagai resapan, yang "
 "akhirnya kembali ke laut melalui sungai."
 
-#: activities/watercycle/Watercycle.qml:120
+#: activities/watercycle/Watercycle.qml:123
 msgctxt "Watercycle|"
 msgid ""
 "Your goal is to complete the water cycle before Tux reaches home. Click on "
@@ -26045,22 +26045,22 @@ msgctxt "GCCreationHandler|"
 msgid "Delete"
 msgstr "Hapus"
 
-#: core/IntroMessage.qml:174
+#: core/IntroMessage.qml:137
 msgctxt "IntroMessage|"
 msgid "Previous"
 msgstr "Sebelumnya"
 
-#: core/IntroMessage.qml:190
+#: core/IntroMessage.qml:153
 msgctxt "IntroMessage|"
 msgid "Next"
 msgstr "Berikutnya"
 
-#: core/IntroMessage.qml:205
+#: core/IntroMessage.qml:168
 msgctxt "IntroMessage|"
 msgid "Skip"
 msgstr "Lewati"
 
-#: core/IntroMessage.qml:205
+#: core/IntroMessage.qml:168
 msgctxt "IntroMessage|"
 msgid "Start"
 msgstr "Mulai"
@@ -26150,47 +26150,47 @@ msgid ""
 "a single value (2), or a range (3-6). Values must be between 1 and 6."
 msgstr ""
 
-#: core/main.qml:233
+#: core/main.qml:273
 msgctxt "main|"
 msgid "Voices for your language"
 msgstr "Suara untuk bahasa kamu"
 
-#: core/main.qml:234
+#: core/main.qml:274
 msgctxt "main|"
 msgid "Full word image set"
 msgstr "Set gambar dan kata lengkap"
 
-#: core/main.qml:235
+#: core/main.qml:275
 msgctxt "main|"
 msgid "Background music"
 msgstr "Latar belakang musik"
 
-#: core/main.qml:240
+#: core/main.qml:280
 msgctxt "main|"
 msgid "Do you want to download the following external assets?"
 msgstr "Apakah kamu ingin mengunduh aset luar berikut?"
 
-#: core/main.qml:245
+#: core/main.qml:285
 msgctxt "main|"
 msgid "Yes"
 msgstr "Ya"
 
-#: core/main.qml:255
+#: core/main.qml:295
 msgctxt "main|"
 msgid "No"
 msgstr "Tidak"
 
-#: core/main.qml:280
+#: core/main.qml:320
 msgctxt "main|"
 msgid "Welcome to GCompris!"
 msgstr "Selamat datang di GCompris!"
 
-#: core/main.qml:281
+#: core/main.qml:321
 msgctxt "main|"
 msgid "You are running GCompris for the first time."
 msgstr "Kamu menjalankan GCompris untuk pertama kalinya."
 
-#: core/main.qml:282
+#: core/main.qml:322
 msgctxt "main|"
 msgid ""
 "You should verify that your application settings especially your language is "
@@ -26202,18 +26202,18 @@ msgstr ""
 "bahasa yang kamu pilih sudah terpasang. Kamu bisa melakukan ini di Dialog "
 "Pengaturan."
 
-#: core/main.qml:284
+#: core/main.qml:324
 msgctxt "main|"
 msgid "Have Fun!"
 msgstr "Selamat Bersenang-senang!"
 
-#: core/main.qml:286
+#: core/main.qml:326
 #, qt-format
 msgctxt "main|"
 msgid "Your current language is %1 (%2)."
 msgstr "Bahasa kamu saat ini adalah %1 (%2)."
 
-#: core/main.qml:317
+#: core/main.qml:357
 msgctxt "main|"
 msgid "GCompris has been updated! Here are the new changes:<br/>"
 msgstr ""
@@ -26225,22 +26225,22 @@ msgctxt "ReadyButton|"
 msgid "I am Ready"
 msgstr "Saya Siap"
 
-#: core/Tutorial.qml:175
+#: core/Tutorial.qml:137
 msgctxt "Tutorial|"
 msgid "Previous"
 msgstr "Sebelumnya"
 
-#: core/Tutorial.qml:195
+#: core/Tutorial.qml:157
 msgctxt "Tutorial|"
 msgid "Next"
 msgstr "Selanjutnya"
 
-#: core/Tutorial.qml:214
+#: core/Tutorial.qml:176
 msgctxt "Tutorial|"
 msgid "Skip"
 msgstr "Lewati"
 
-#: core/Tutorial.qml:214
+#: core/Tutorial.qml:176
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Mulai"

@@ -2481,13 +2481,13 @@ msgstr ""
 "Stlačiť ľavú a pravú šípku v rovnakom čase, aby išla lopta po rovnej čiare. "
 "Na dotykovej obrazovke musíte udrieť dvoma rukami v rovnakomčase."
 
-#: activities/ballcatch/Ballcatch.qml:222
+#: activities/ballcatch/Ballcatch.qml:221
 msgctxt "Ballcatch|"
 msgid ""
 "Tap both hands at the same time, to make the ball go in a straight line."
 msgstr "Poklepať oboma rukami v rovnakom čase, aby išla lopta po rovnej čiare."
 
-#: activities/ballcatch/Ballcatch.qml:224
+#: activities/ballcatch/Ballcatch.qml:223
 msgctxt "Ballcatch|"
 msgid ""
 "Press left and right arrow keys at the same time, to make the ball go in a "
@@ -2693,7 +2693,7 @@ msgctxt "binary_bulb|"
 msgid "This image will help you to compute bits' value."
 msgstr "Tento obrázok vám pomôže vypočítať hodnotu bitov."
 
-#: activities/binary_bulb/BinaryBulb.qml:121
+#: activities/binary_bulb/BinaryBulb.qml:123
 #, qt-format
 msgctxt "BinaryBulb|"
 msgid "What is the binary representation of %1?"
@@ -3325,7 +3325,7 @@ msgstr ""
 "Máte zverenú plavebnú komoru. Otvárajte vráta a komory v správnom poradí "
 "tak, aby Tux mohol prejsť oboma smermi."
 
-#: activities/canal_lock/CanalLock.qml:54
+#: activities/canal_lock/CanalLock.qml:57
 msgctxt "CanalLock|"
 msgid ""
 "Your goal is to lead Tux across the canal lock to get the wooden logs, using "
@@ -3334,7 +3334,7 @@ msgstr ""
 "Vaším cieľom je dostať Tuxa cez plavebnú komoru a získať drevené polená "
 "pomocou rôznych typov dostupných plavebných komôr."
 
-#: activities/canal_lock/CanalLock.qml:56
+#: activities/canal_lock/CanalLock.qml:59
 msgctxt "CanalLock|"
 msgid ""
 "The vertical colored bars represent the water locks, which can be operated "
@@ -3345,7 +3345,7 @@ msgstr ""
 "kliknutím na ne. Dve plavebné komory toho istého typu nemožno ovládať "
 "súčasne."
 
-#: activities/canal_lock/CanalLock.qml:58
+#: activities/canal_lock/CanalLock.qml:61
 msgctxt "CanalLock|"
 msgid ""
 "The water level inside the lock will change according to the side of the "
@@ -5972,12 +5972,12 @@ msgstr ""
 "počítačovej techniky. V skutočnosti 0 je často predstavovaná napätím takmer "
 "rovným napätiu zeme a 1 je predstavovaná napájacím napätím obvodu."
 
-#: activities/digital_electricity/DigitalElectricity.qml:245
+#: activities/digital_electricity/DigitalElectricity.qml:248
 msgctxt "DigitalElectricity|"
 msgid "Input"
 msgstr "Vstup"
 
-#: activities/digital_electricity/DigitalElectricity.qml:263
+#: activities/digital_electricity/DigitalElectricity.qml:266
 msgctxt "DigitalElectricity|"
 msgid "Output"
 msgstr "Výstup"
@@ -14318,7 +14318,7 @@ msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: move the spaceship"
 msgstr ""
 
-#: activities/gravity/Gravity.qml:210
+#: activities/gravity/Gravity.qml:209
 #, fuzzy
 #| msgctxt "IntroGravity|"
 #| msgid ""
@@ -14338,7 +14338,7 @@ msgstr ""
 "oboch objektov a nepriamo úmerná druhej mocnine vzdialenosti, ktorá oddeľuje "
 "ich stredy."
 
-#: activities/gravity/Gravity.qml:214
+#: activities/gravity/Gravity.qml:213
 #, fuzzy
 #| msgctxt "IntroGravity|"
 #| msgid ""
@@ -14358,7 +14358,7 @@ msgstr ""
 "väčšia gravitačná sila. Preto, ak sa hmotnosť ktoréhokoľvek objektu zvyšuje, "
 "príťažlivá sila medzi nimi sa tiež zvyšuje"
 
-#: activities/gravity/Gravity.qml:217
+#: activities/gravity/Gravity.qml:216
 #, fuzzy
 #| msgctxt "IntroGravity|"
 #| msgid ""
@@ -14375,7 +14375,7 @@ msgstr ""
 "vzájomne na seba pôsobiacimi objektami, väčší odstup vedie k oslabeniu "
 "gravitačných síl."
 
-#: activities/gravity/Gravity.qml:220
+#: activities/gravity/Gravity.qml:219
 #, fuzzy
 #| msgctxt "IntroGravity|"
 #| msgid ""
@@ -14392,7 +14392,7 @@ msgstr ""
 "množstva okolitých planét. Nedostaňte sa príliš blízko k planétam, lebo do "
 "nich narazíte. Šípka ukazuje smer sily na vašej lodi."
 
-#: activities/gravity/Gravity.qml:223
+#: activities/gravity/Gravity.qml:222
 msgctxt "Gravity|"
 msgid ""
 "Try to stay near the center of the screen, and anticipate by looking at the "
@@ -15371,31 +15371,31 @@ msgid ""
 "rotate the spaceship"
 msgstr ""
 
-#: activities/land_safe/LandSafe.qml:580
+#: activities/land_safe/LandSafe.qml:583
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Fuel: %1"
 msgstr "Palivo: %1"
 
-#: activities/land_safe/LandSafe.qml:590
+#: activities/land_safe/LandSafe.qml:593
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Altitude: %1"
 msgstr "Výška: %1"
 
-#: activities/land_safe/LandSafe.qml:600
+#: activities/land_safe/LandSafe.qml:603
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Velocity: %1"
 msgstr "Rýchlosť: %1"
 
-#: activities/land_safe/LandSafe.qml:611
+#: activities/land_safe/LandSafe.qml:614
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Acceleration: %1"
 msgstr "Zrýchlenie: %1"
 
-#: activities/land_safe/LandSafe.qml:645
+#: activities/land_safe/LandSafe.qml:648
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Gravity: %1"
@@ -15845,31 +15845,31 @@ msgid ""
 "validate your answer."
 msgstr ""
 
-#: activities/learn_decimals/Learn_decimals.qml:112
+#: activities/learn_decimals/Learn_decimals.qml:115
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the number: %1"
 msgstr "Zobraziť číslo: %1"
 
-#: activities/learn_decimals/Learn_decimals.qml:113
+#: activities/learn_decimals/Learn_decimals.qml:116
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the result of: %1 + %2"
 msgstr "Zobraziť výsledok: %1 + %2"
 
-#: activities/learn_decimals/Learn_decimals.qml:114
+#: activities/learn_decimals/Learn_decimals.qml:117
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the result of: %1 - %2"
 msgstr "Zobraziť výsledok: %1 - %2"
 
-#: activities/learn_decimals/Learn_decimals.qml:115
+#: activities/learn_decimals/Learn_decimals.qml:118
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Represent the quantity: %1"
 msgstr "Zodpovedajúce množstvo: %1"
 
-#: activities/learn_decimals/Learn_decimals.qml:568
+#: activities/learn_decimals/Learn_decimals.qml:571
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Enter the result: %1"
@@ -19558,32 +19558,32 @@ msgctxt "ActivityInfo|"
 msgid "Identify the notes correctly and score 100% to complete a level."
 msgstr "Identifikujte správne noty a získajte 100% na dokončenie úrovne."
 
-#: activities/note_names/NoteNames.qml:175
+#: activities/note_names/NoteNames.qml:178
 #, qt-format
 msgctxt "NoteNames|"
 msgid "New note: %1"
 msgstr "Nová nota: %1"
 
 #. The following translation represents percentage.
-#: activities/note_names/NoteNames.qml:263
+#: activities/note_names/NoteNames.qml:266
 #, qt-format
 msgctxt "NoteNames|"
 msgid "%1%"
 msgstr "%1%"
 
-#: activities/note_names/NoteNames.qml:453
+#: activities/note_names/NoteNames.qml:452
 msgctxt "NoteNames|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
 "voices or effects are disabled in the main configuration."
 msgstr ""
 
-#: activities/note_names/NoteNames.qml:454
+#: activities/note_names/NoteNames.qml:453
 msgctxt "NoteNames|"
 msgid "Quit"
 msgstr "Koniec"
 
-#: activities/note_names/NoteNames.qml:455
+#: activities/note_names/NoteNames.qml:454
 msgctxt "NoteNames|"
 msgid "Continue"
 msgstr "Pokračovať"
@@ -20898,7 +20898,7 @@ msgctxt "melodies|"
 msgid "Finland"
 msgstr "Fínsko"
 
-#: activities/piano_composition/MelodyList.qml:55
+#: activities/piano_composition/MelodyList.qml:70
 msgctxt "MelodyList|"
 msgid "Melodies"
 msgstr "Melódie"
@@ -21882,23 +21882,23 @@ msgstr ""
 "<b>oblasťou Hlavnej funkcie</b> na pridanie vášho kódu, kliknite na "
 "označenie <b>Procedúra</b> alebo <b>Hlavná funkcia</b>.</li>"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:190
+#: activities/programmingMaze/ProgrammingMaze.qml:193
 #, qt-format
 msgctxt "ProgrammingMaze|"
 msgid "Reach the fish in less than %1 instructions."
 msgstr "Dostaňte sa k rybe za menej ako %1 inštrukcii."
 
-#: activities/programmingMaze/ProgrammingMaze.qml:254
+#: activities/programmingMaze/ProgrammingMaze.qml:257
 msgctxt "ProgrammingMaze|"
 msgid "Main function"
 msgstr "Hlavná funkcia"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:282
+#: activities/programmingMaze/ProgrammingMaze.qml:285
 msgctxt "ProgrammingMaze|"
 msgid "Procedure"
 msgstr "Procedúra"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:282
+#: activities/programmingMaze/ProgrammingMaze.qml:285
 msgctxt "ProgrammingMaze|"
 msgid "Loop"
 msgstr "Slučka"
@@ -21989,7 +21989,7 @@ msgctxt "ActivityInfo|"
 msgid "Enter or Return: submit your answer"
 msgstr "2. Použite kláves Enter alebo Return na odovzdanie odpovedí.<br>"
 
-#: activities/railroad/Railroad.qml:103
+#: activities/railroad/Railroad.qml:105
 msgctxt "Railroad|"
 msgid ""
 "Observe and remember the train before the timer ends and then drag the items "
@@ -21998,7 +21998,7 @@ msgstr ""
 "Pozorujte a pamätajte si vlak skôr, ako časovač skončí, a potom ťahaním "
 "položiek vytvorte podobný vlak."
 
-#: activities/railroad/Railroad.qml:104
+#: activities/railroad/Railroad.qml:106
 #, fuzzy
 #| msgctxt "Railroad|"
 #| msgid ""
@@ -25129,7 +25129,7 @@ msgstr ""
 "Skvelé! Môžete zopakovať ohodnotenie a otestovať svoje znalosti na ďalších "
 "otázkach."
 
-#: activities/solar_system/SolarSystem.qml:155
+#: activities/solar_system/SolarSystem.qml:158
 #, fuzzy, qt-format
 #| msgctxt "SolarSystem|"
 #| msgid ""
@@ -25152,17 +25152,17 @@ msgstr ""
 "Režim ohodnotenia</b> - V tomto režime si môžete otestovať svoje vedomosti o "
 "slnečnej sústave."
 
-#: activities/solar_system/SolarSystem.qml:155
+#: activities/solar_system/SolarSystem.qml:158
 msgctxt "SolarSystem|"
 msgid "Assessment"
 msgstr "Ohodnotenie"
 
-#: activities/solar_system/SolarSystem.qml:155
+#: activities/solar_system/SolarSystem.qml:158
 msgctxt "SolarSystem|"
 msgid "Learning"
 msgstr "Učenie"
 
-#: activities/solar_system/SolarSystem.qml:159
+#: activities/solar_system/SolarSystem.qml:162
 #, fuzzy
 #| msgctxt "SolarSystem|"
 #| msgid ""
@@ -25176,7 +25176,7 @@ msgstr ""
 "Kliknutím na Slnko alebo ktorúkoľvek planétu odkryjete otázky. Každá otázka "
 "obsahuje 4 možnosti, z ktorých jedna je správna."
 
-#: activities/solar_system/SolarSystem.qml:160
+#: activities/solar_system/SolarSystem.qml:163
 #, fuzzy
 #| msgctxt "SolarSystem|"
 #| msgid ""
@@ -25198,7 +25198,7 @@ msgstr ""
 "reprezentovaná 1%. Skúste to znova, až kým nedosiahnete 100% blízkosť "
 "sledovaním merača blízkosti alebo rady, ktorá naznačuje správnu odpoveď."
 
-#: activities/solar_system/SolarSystem.qml:165
+#: activities/solar_system/SolarSystem.qml:168
 msgctxt "SolarSystem|"
 msgid ""
 "There are 20 questions initially with 4 options each. The progress bar at "
@@ -25207,7 +25207,7 @@ msgstr ""
 "Na začiatku je k dispozícii 20 otázok so 4 možnosťami. Ukazovateľ postupu "
 "vpravo dole na obrazovke ukazuje vaše percentuálne skóre."
 
-#: activities/solar_system/SolarSystem.qml:166
+#: activities/solar_system/SolarSystem.qml:169
 #, fuzzy
 #| msgctxt "SolarSystem|"
 #| msgid ""
@@ -25227,7 +25227,7 @@ msgstr ""
 "s nesprávne zodpovedanou otázkou.<br>Bude položených maximálne 25 otázok, po "
 "ktorých už nebude pridaná žiadna otázka."
 
-#: activities/solar_system/SolarSystem.qml:167
+#: activities/solar_system/SolarSystem.qml:170
 msgctxt "SolarSystem|"
 msgid ""
 "You should score above 90% to pass the assessment and become a Solar System "
@@ -25236,7 +25236,7 @@ msgstr ""
 "Mali by ste dosiahnuť skóre viac ako 90%, aby ste vyhoveli ohodnoteniu a "
 "stali sa odborníkom na slnečnú sústavu."
 
-#: activities/solar_system/SolarSystem.qml:349
+#: activities/solar_system/SolarSystem.qml:352
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -25246,7 +25246,7 @@ msgstr ""
 "1. Čím <b>ďalej</b> je planéta od Slnka, tým <b>nižšia</b> je jej teplota."
 "<br><font color=\"#3bb0de\">%1</font>"
 
-#: activities/solar_system/SolarSystem.qml:350
+#: activities/solar_system/SolarSystem.qml:353
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -25257,7 +25257,7 @@ msgstr ""
 "<br><font color=\"#3bb0de\">%1</font>"
 
 #. find an equivalent rhyme in your language where the first letter of each word corresponds to the first letter of the planet in proper sequence
-#: activities/solar_system/SolarSystem.qml:353
+#: activities/solar_system/SolarSystem.qml:356
 msgctxt "SolarSystem|"
 msgid ""
 "3. Always remember this rhyme to learn the position of planets, examine the "
@@ -25265,12 +25265,12 @@ msgid ""
 "b>other <b>J</b>ust <b>S</b>erved <b>U</b>s <b>N</b>oodles.<br>"
 msgstr ""
 
-#: activities/solar_system/SolarSystem.qml:355
+#: activities/solar_system/SolarSystem.qml:358
 msgctxt "SolarSystem|"
 msgid "Hint"
 msgstr "Rada"
 
-#: activities/solar_system/SolarSystem.qml:363
+#: activities/solar_system/SolarSystem.qml:366
 msgctxt "SolarSystem|"
 msgid "View the solar system"
 msgstr "Prezrieť si slnečnú sústavu"
@@ -26048,7 +26048,7 @@ msgstr ""
 "odpadových vôd s cieľom reaktivovať celý vodný systém. Keď je systém späť a "
 "Tux je v sprche, stlačte pre neho tlačidlo sprchy."
 
-#: activities/watercycle/Watercycle.qml:78
+#: activities/watercycle/Watercycle.qml:81
 msgctxt "Watercycle|"
 msgid ""
 "The sun is the main component of the water cycle. Click on the sun to start "
@@ -26057,12 +26057,12 @@ msgstr ""
 "Slnko je hlavnou zložkou kolobehu vody. Kliknite na slnko na spustenie "
 "kolobehu vody."
 
-#: activities/watercycle/Watercycle.qml:79
+#: activities/watercycle/Watercycle.qml:82
 msgctxt "Watercycle|"
 msgid "As the sun rises, the water of the sea starts heating and evaporates."
 msgstr "Ako slnko vyjde, voda v mori sa začne ohrievať a vyparovať."
 
-#: activities/watercycle/Watercycle.qml:80
+#: activities/watercycle/Watercycle.qml:83
 msgctxt "Watercycle|"
 msgid ""
 "Water vapor condenses to form clouds and when clouds become heavy, it rains. "
@@ -26071,7 +26071,7 @@ msgstr ""
 "Vodná para kondenzuje, čím tvorí oblaky a keď sa zamračí, prší. Kliknite na "
 "oblak."
 
-#: activities/watercycle/Watercycle.qml:81
+#: activities/watercycle/Watercycle.qml:84
 msgctxt "Watercycle|"
 msgid ""
 "The rain causes rivers to swell up and this water is transported to us via "
@@ -26081,7 +26081,7 @@ msgstr ""
 "Dážď rozvodňuje rieky a táto voda sa k nám dopravuje motorovými čerpadlami "
 "cez vodárenskú vežu. Kliknutím na motorové čerpadlo dodáte obyvateľom vodu."
 
-#: activities/watercycle/Watercycle.qml:83
+#: activities/watercycle/Watercycle.qml:86
 msgctxt "Watercycle|"
 msgid ""
 "See the tower filled with water. Activate the sewage treatment station by "
@@ -26090,18 +26090,18 @@ msgstr ""
 "Pozrite sa na vežu naplnenú vodou. Aktivujte čističku odpadových vôd "
 "kliknutím na ňu."
 
-#: activities/watercycle/Watercycle.qml:84
+#: activities/watercycle/Watercycle.qml:87
 msgctxt "Watercycle|"
 msgid "Great, click on the shower, as Tux arrives home."
 msgstr "Výborne, kliknite na sprchu, keď sa Tux vráti domov."
 
-#: activities/watercycle/Watercycle.qml:85
+#: activities/watercycle/Watercycle.qml:88
 msgctxt "Watercycle|"
 msgid ""
 "Fantastic, you have completed the water cycle. You can continue playing."
 msgstr "Výborne, ukončili ste vodný cyklus. Môžete pokračovať v hre."
 
-#: activities/watercycle/Watercycle.qml:112
+#: activities/watercycle/Watercycle.qml:115
 msgctxt "Watercycle|"
 msgid ""
 "The water cycle (also known as the hydrologic cycle) is the journey water "
@@ -26112,7 +26112,7 @@ msgstr ""
 "cirkuluje zo zeme do neba a znovu späť. Slnečné teplo poskytuje energiu na "
 "odparovanie vody z vodných útvarov, ako sú oceány."
 
-#: activities/watercycle/Watercycle.qml:115
+#: activities/watercycle/Watercycle.qml:118
 msgctxt "Watercycle|"
 msgid ""
 "Plants also lose water to the air through transpiration. The water vapor "
@@ -26123,7 +26123,7 @@ msgstr ""
 "para nakoniec ochladzuje a vytvára malé kvapky v oblakoch. Keď sa oblaky "
 "stretnú so studeným vzduchom nad zemou, spustí sa zrážanie a spadne ako dážď."
 
-#: activities/watercycle/Watercycle.qml:118
+#: activities/watercycle/Watercycle.qml:121
 msgctxt "Watercycle|"
 msgid ""
 "Some of the water is trapped between rock or clay layers, called "
@@ -26134,7 +26134,7 @@ msgstr ""
 "nazýva podzemná voda. Väčšina vody však tečie ako odtok, ktorý sa cez rieky "
 "nakoniec vracia do mora."
 
-#: activities/watercycle/Watercycle.qml:120
+#: activities/watercycle/Watercycle.qml:123
 msgctxt "Watercycle|"
 msgid ""
 "Your goal is to complete the water cycle before Tux reaches home. Click on "
@@ -26921,22 +26921,22 @@ msgctxt "GCCreationHandler|"
 msgid "Delete"
 msgstr "Vymazať"
 
-#: core/IntroMessage.qml:174
+#: core/IntroMessage.qml:137
 msgctxt "IntroMessage|"
 msgid "Previous"
 msgstr "Predchádzajúci"
 
-#: core/IntroMessage.qml:190
+#: core/IntroMessage.qml:153
 msgctxt "IntroMessage|"
 msgid "Next"
 msgstr "Nasledujúci"
 
-#: core/IntroMessage.qml:205
+#: core/IntroMessage.qml:168
 msgctxt "IntroMessage|"
 msgid "Skip"
 msgstr "Preskočiť"
 
-#: core/IntroMessage.qml:205
+#: core/IntroMessage.qml:168
 msgctxt "IntroMessage|"
 msgid "Start"
 msgstr "Spustiť"
@@ -27026,22 +27026,22 @@ msgid ""
 "a single value (2), or a range (3-6). Values must be between 1 and 6."
 msgstr ""
 
-#: core/main.qml:233
+#: core/main.qml:273
 msgctxt "main|"
 msgid "Voices for your language"
 msgstr "Hlasy pre Váš jazyk"
 
-#: core/main.qml:234
+#: core/main.qml:274
 msgctxt "main|"
 msgid "Full word image set"
 msgstr "Úplná sada slov a obrázkov"
 
-#: core/main.qml:235
+#: core/main.qml:275
 msgctxt "main|"
 msgid "Background music"
 msgstr "Hudba na pozadí"
 
-#: core/main.qml:240
+#: core/main.qml:280
 #, fuzzy
 #| msgctxt "ConfigurationItem|"
 #| msgid "Do you want to download them now?"
@@ -27049,27 +27049,27 @@ msgctxt "main|"
 msgid "Do you want to download the following external assets?"
 msgstr "Chcete ich teraz stiahnuť?"
 
-#: core/main.qml:245
+#: core/main.qml:285
 msgctxt "main|"
 msgid "Yes"
 msgstr "Áno"
 
-#: core/main.qml:255
+#: core/main.qml:295
 msgctxt "main|"
 msgid "No"
 msgstr "Nie"
 
-#: core/main.qml:280
+#: core/main.qml:320
 msgctxt "main|"
 msgid "Welcome to GCompris!"
 msgstr "Vitajte v GCompris!"
 
-#: core/main.qml:281
+#: core/main.qml:321
 msgctxt "main|"
 msgid "You are running GCompris for the first time."
 msgstr "Spustili ste GCompris prvýkrát."
 
-#: core/main.qml:282
+#: core/main.qml:322
 msgctxt "main|"
 msgid ""
 "You should verify that your application settings especially your language is "
@@ -27080,18 +27080,18 @@ msgstr ""
 "je nastavený správne a či sú nainštalované všetky špecifické zvukové súbory "
 "jazyka. To môžete urobiť v dialógu Predvoľby."
 
-#: core/main.qml:284
+#: core/main.qml:324
 msgctxt "main|"
 msgid "Have Fun!"
 msgstr "Bavte sa!"
 
-#: core/main.qml:286
+#: core/main.qml:326
 #, qt-format
 msgctxt "main|"
 msgid "Your current language is %1 (%2)."
 msgstr "Váš súčasný jazyk je %1 (%2)."
 
-#: core/main.qml:317
+#: core/main.qml:357
 msgctxt "main|"
 msgid "GCompris has been updated! Here are the new changes:<br/>"
 msgstr "GCompris bol aktualizovaný! Tu sú nové zmeny:<br/>"
@@ -27101,22 +27101,22 @@ msgctxt "ReadyButton|"
 msgid "I am Ready"
 msgstr "Som pripravený"
 
-#: core/Tutorial.qml:175
+#: core/Tutorial.qml:137
 msgctxt "Tutorial|"
 msgid "Previous"
 msgstr "Predchádzajúci"
 
-#: core/Tutorial.qml:195
+#: core/Tutorial.qml:157
 msgctxt "Tutorial|"
 msgid "Next"
 msgstr "Nasledujúci"
 
-#: core/Tutorial.qml:214
+#: core/Tutorial.qml:176
 msgctxt "Tutorial|"
 msgid "Skip"
 msgstr "Preskočiť"
 
-#: core/Tutorial.qml:214
+#: core/Tutorial.qml:176
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Spustiť"

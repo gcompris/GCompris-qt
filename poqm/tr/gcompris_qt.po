@@ -2547,13 +2547,13 @@ msgstr ""
 "Topun düz gitmesi için sol ve sağ yön düğmelerinin ikisine birlikte bas. "
 "Dokunmatik ekranda iki parmağını birden kullanmalısın."
 
-#: activities/ballcatch/Ballcatch.qml:222
+#: activities/ballcatch/Ballcatch.qml:221
 msgctxt "Ballcatch|"
 msgid ""
 "Tap both hands at the same time, to make the ball go in a straight line."
 msgstr "Topun düz gitmesi için iki elinle aynı anda dokunmalısın."
 
-#: activities/ballcatch/Ballcatch.qml:224
+#: activities/ballcatch/Ballcatch.qml:223
 msgctxt "Ballcatch|"
 msgid ""
 "Press left and right arrow keys at the same time, to make the ball go in a "
@@ -2748,7 +2748,7 @@ msgctxt "binary_bulb|"
 msgid "This image will help you to compute bits' value."
 msgstr "Bu görsel, bit değerini hesaplamaya yardım eder."
 
-#: activities/binary_bulb/BinaryBulb.qml:121
+#: activities/binary_bulb/BinaryBulb.qml:123
 #, qt-format
 msgctxt "BinaryBulb|"
 msgid "What is the binary representation of %1?"
@@ -3328,7 +3328,7 @@ msgstr ""
 "Kanal kilidinden sen sorumlusun. Kapıları ve kilitleri doğru sırayla aç, "
 "böylece Tux kapılardan her iki yönde de geçebilir."
 
-#: activities/canal_lock/CanalLock.qml:54
+#: activities/canal_lock/CanalLock.qml:57
 msgctxt "CanalLock|"
 msgid ""
 "Your goal is to lead Tux across the canal lock to get the wooden logs, using "
@@ -3337,7 +3337,7 @@ msgstr ""
 "Amacın, kullanılabilir farklı türde su kilitlerini kullanarak ahşap "
 "kütükleri almak için Tux'u kanal kilidi boyunca yönlendirmektir."
 
-#: activities/canal_lock/CanalLock.qml:56
+#: activities/canal_lock/CanalLock.qml:59
 msgctxt "CanalLock|"
 msgid ""
 "The vertical colored bars represent the water locks, which can be operated "
@@ -3347,7 +3347,7 @@ msgstr ""
 "Dikey renkli çubuklar, üzerilerine tıklayarak çalıştırılabilen su "
 "kilitlerini temsil eder. Aynı türden iki kilit aynı anda çalıştırılamaz."
 
-#: activities/canal_lock/CanalLock.qml:58
+#: activities/canal_lock/CanalLock.qml:61
 msgctxt "CanalLock|"
 msgid ""
 "The water level inside the lock will change according to the side of the "
@@ -5850,12 +5850,12 @@ msgstr ""
 "eşit bir voltajın temsilidir ve 1, bir devrenin besleme voltajının "
 "temsilidir."
 
-#: activities/digital_electricity/DigitalElectricity.qml:245
+#: activities/digital_electricity/DigitalElectricity.qml:248
 msgctxt "DigitalElectricity|"
 msgid "Input"
 msgstr "Giriş"
 
-#: activities/digital_electricity/DigitalElectricity.qml:263
+#: activities/digital_electricity/DigitalElectricity.qml:266
 msgctxt "DigitalElectricity|"
 msgid "Output"
 msgstr "Çıkış"
@@ -13770,7 +13770,7 @@ msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: move the spaceship"
 msgstr "Sağ ve Sol oklar: Uzay gemisini hareket ettir"
 
-#: activities/gravity/Gravity.qml:210
+#: activities/gravity/Gravity.qml:209
 msgctxt "Gravity|"
 msgid ""
 "Gravity is universal and Newton's law of universal gravitation extends "
@@ -13783,7 +13783,7 @@ msgstr ""
 "kütlesine doğrudan bağlıdır ve merkezleri arasındaki mesafenin karesiyle "
 "ters orantılıdır."
 
-#: activities/gravity/Gravity.qml:214
+#: activities/gravity/Gravity.qml:213
 msgctxt "Gravity|"
 msgid ""
 "Since the gravitational force is directly proportional to the mass of both "
@@ -13794,7 +13794,7 @@ msgstr ""
 "olduğundan, daha büyük nesneler, daha büyük bir yerçekimi kuvveti ile "
 "birbirlerini çekecektir."
 
-#: activities/gravity/Gravity.qml:217
+#: activities/gravity/Gravity.qml:216
 msgctxt "Gravity|"
 msgid ""
 "But as this force is inversely proportional to the square of the distance "
@@ -13805,7 +13805,7 @@ msgstr ""
 "orantılı olduğundan, daha fazla mesafe, daha zayıf yerçekimi kuvveti ile "
 "sonuçlanacaktır."
 
-#: activities/gravity/Gravity.qml:220
+#: activities/gravity/Gravity.qml:219
 msgctxt "Gravity|"
 msgid ""
 "Your goal is to move the spaceship and avoid hitting the planets until you "
@@ -13816,7 +13816,7 @@ msgstr ""
 "gezegenlere çarpmaktan kaçınmaktır. Ok, gemindeki yer çekiminin yönünü ve "
 "yoğunluğunu gösterir."
 
-#: activities/gravity/Gravity.qml:223
+#: activities/gravity/Gravity.qml:222
 msgctxt "Gravity|"
 msgid ""
 "Try to stay near the center of the screen, and anticipate by looking at the "
@@ -14779,31 +14779,31 @@ msgstr ""
 "Sağ ve Sol oklar: İlk düzeylerde yanlara doğru hareket et; daha yüksek "
 "düzeylerde uzay gemisini döndür"
 
-#: activities/land_safe/LandSafe.qml:580
+#: activities/land_safe/LandSafe.qml:583
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Fuel: %1"
 msgstr "Yakıt: %1"
 
-#: activities/land_safe/LandSafe.qml:590
+#: activities/land_safe/LandSafe.qml:593
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Altitude: %1"
 msgstr "Rakım: %1"
 
-#: activities/land_safe/LandSafe.qml:600
+#: activities/land_safe/LandSafe.qml:603
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Velocity: %1"
 msgstr "Hız: %1"
 
-#: activities/land_safe/LandSafe.qml:611
+#: activities/land_safe/LandSafe.qml:614
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Acceleration: %1"
 msgstr "İvmelenme: %1"
 
-#: activities/land_safe/LandSafe.qml:645
+#: activities/land_safe/LandSafe.qml:648
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Gravity: %1"
@@ -15256,31 +15256,31 @@ msgstr ""
 "sürükle. Portakal sayısı istenen niceliğe gelene kadar bu adımları yinele. "
 "Ardından, yanıtını doğrulamak için OK düğmesine tıkla."
 
-#: activities/learn_decimals/Learn_decimals.qml:112
+#: activities/learn_decimals/Learn_decimals.qml:115
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the number: %1"
 msgstr "%1 sayısını görüntüle"
 
-#: activities/learn_decimals/Learn_decimals.qml:113
+#: activities/learn_decimals/Learn_decimals.qml:116
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the result of: %1 + %2"
 msgstr "%1 + %2 işleminin sonucunu görüntüle"
 
-#: activities/learn_decimals/Learn_decimals.qml:114
+#: activities/learn_decimals/Learn_decimals.qml:117
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the result of: %1 - %2"
 msgstr "%1 - %2 işleminin sonucunu görüntüle"
 
-#: activities/learn_decimals/Learn_decimals.qml:115
+#: activities/learn_decimals/Learn_decimals.qml:118
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Represent the quantity: %1"
 msgstr "%1 niceliğini temsil et"
 
-#: activities/learn_decimals/Learn_decimals.qml:568
+#: activities/learn_decimals/Learn_decimals.qml:571
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Enter the result: %1"
@@ -18755,20 +18755,20 @@ msgctxt "ActivityInfo|"
 msgid "Identify the notes correctly and score 100% to complete a level."
 msgstr "Notaları doğru tanımla ve bir düzeyi tamamlamak hepsini doğru yap."
 
-#: activities/note_names/NoteNames.qml:175
+#: activities/note_names/NoteNames.qml:178
 #, qt-format
 msgctxt "NoteNames|"
 msgid "New note: %1"
 msgstr "Yeni nota: %1"
 
 #. The following translation represents percentage.
-#: activities/note_names/NoteNames.qml:263
+#: activities/note_names/NoteNames.qml:266
 #, qt-format
 msgctxt "NoteNames|"
 msgid "%1%"
 msgstr "%​%1"
 
-#: activities/note_names/NoteNames.qml:453
+#: activities/note_names/NoteNames.qml:452
 msgctxt "NoteNames|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -18777,12 +18777,12 @@ msgstr ""
 "Bu etkinlik ses gerektirir, bu nedenle ana yapılandırmada sesli sesler veya "
 "efektler devre dışı bırakılmış olsa bile bazı sesleri çalacaktır."
 
-#: activities/note_names/NoteNames.qml:454
+#: activities/note_names/NoteNames.qml:453
 msgctxt "NoteNames|"
 msgid "Quit"
 msgstr "Çık"
 
-#: activities/note_names/NoteNames.qml:455
+#: activities/note_names/NoteNames.qml:454
 msgctxt "NoteNames|"
 msgid "Continue"
 msgstr "Sürdür"
@@ -20037,7 +20037,7 @@ msgctxt "melodies|"
 msgid "Finland"
 msgstr "Finlandiya"
 
-#: activities/piano_composition/MelodyList.qml:55
+#: activities/piano_composition/MelodyList.qml:70
 msgctxt "MelodyList|"
 msgid "Melodies"
 msgstr "Melodiler"
@@ -20967,23 +20967,23 @@ msgstr ""
 "arasında <b> geçiş yapmak </b> için, <b>Döngü</b> 'ye veya <b>Ana İşlev</"
 "b>'e tıkla."
 
-#: activities/programmingMaze/ProgrammingMaze.qml:190
+#: activities/programmingMaze/ProgrammingMaze.qml:193
 #, qt-format
 msgctxt "ProgrammingMaze|"
 msgid "Reach the fish in less than %1 instructions."
 msgstr "Balığa, %1 yönergeden daha az işlemde ulaş."
 
-#: activities/programmingMaze/ProgrammingMaze.qml:254
+#: activities/programmingMaze/ProgrammingMaze.qml:257
 msgctxt "ProgrammingMaze|"
 msgid "Main function"
 msgstr "Ana işlev"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:282
+#: activities/programmingMaze/ProgrammingMaze.qml:285
 msgctxt "ProgrammingMaze|"
 msgid "Procedure"
 msgstr "Prosedür"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:282
+#: activities/programmingMaze/ProgrammingMaze.qml:285
 msgctxt "ProgrammingMaze|"
 msgid "Loop"
 msgstr "Döngü"
@@ -21062,7 +21062,7 @@ msgctxt "ActivityInfo|"
 msgid "Enter or Return: submit your answer"
 msgstr "Giriş veya Dönüş: Yanıtını gönder"
 
-#: activities/railroad/Railroad.qml:103
+#: activities/railroad/Railroad.qml:105
 msgctxt "Railroad|"
 msgid ""
 "Observe and remember the train before the timer ends and then drag the items "
@@ -21071,7 +21071,7 @@ msgstr ""
 "Zamanlayıcı sona ermeden önce treni gözlemle ve ezberle. Ardından benzer bir "
 "tren kurmak için ögeleri sürükle."
 
-#: activities/railroad/Railroad.qml:104
+#: activities/railroad/Railroad.qml:106
 msgctxt "Railroad|"
 msgid ""
 "If you forgot the model, you can click on the Hint button to view it again."
@@ -23924,7 +23924,7 @@ msgstr ""
 "Harika! Daha fazla soru hakkında bilgini sınamak için değerlendirmeyi "
 "yeniden oynatabilirsin."
 
-#: activities/solar_system/SolarSystem.qml:155
+#: activities/solar_system/SolarSystem.qml:158
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -23940,17 +23940,17 @@ msgstr ""
 "Değerlendirme kipi</b> - Bu kipte Güneş Sistemi hakkındaki bilgini "
 "sınayabilirsin."
 
-#: activities/solar_system/SolarSystem.qml:155
+#: activities/solar_system/SolarSystem.qml:158
 msgctxt "SolarSystem|"
 msgid "Assessment"
 msgstr "Değerlendirme"
 
-#: activities/solar_system/SolarSystem.qml:155
+#: activities/solar_system/SolarSystem.qml:158
 msgctxt "SolarSystem|"
 msgid "Learning"
 msgstr "Öğrenme"
 
-#: activities/solar_system/SolarSystem.qml:159
+#: activities/solar_system/SolarSystem.qml:162
 msgctxt "SolarSystem|"
 msgid ""
 "Click on the Sun or any planet to reveal questions. Each question has 4 "
@@ -23959,7 +23959,7 @@ msgstr ""
 "Soruları ortaya çıkarmak için Güneş'e veya herhangi bir gezegene tıkla. Her "
 "soruda, biri doğru olan 4 seçenek bulunur."
 
-#: activities/solar_system/SolarSystem.qml:160
+#: activities/solar_system/SolarSystem.qml:163
 msgctxt "SolarSystem|"
 msgid ""
 "After a planet is clicked, the Closeness meter at the bottom-right corner of "
@@ -23974,7 +23974,7 @@ msgstr ""
 "kadar yeniden dene. İpucu düğmesi görünüyorsa yanıtı bulmak için bir ipucu "
 "almak üzere üzerine tıklayabilirsin."
 
-#: activities/solar_system/SolarSystem.qml:165
+#: activities/solar_system/SolarSystem.qml:168
 msgctxt "SolarSystem|"
 msgid ""
 "There are 20 questions initially with 4 options each. The progress bar at "
@@ -23983,7 +23983,7 @@ msgstr ""
 "Her birinde 4 seçenek bulunan 20 soru var. Ekranın sağ altındaki ilerleme "
 "çubuğu yüzde puanını gösterir."
 
-#: activities/solar_system/SolarSystem.qml:166
+#: activities/solar_system/SolarSystem.qml:169
 msgctxt "SolarSystem|"
 msgid ""
 "If your answer is correct, your score increases.<br>If your answer is wrong, "
@@ -23995,7 +23995,7 @@ msgstr ""
 "yanlış yanıtlanan soru ile birlikte bir soru daha sorulur. <br>En fazla 25 "
 "soru sorulur. Bundan sonra başka soru eklenmez."
 
-#: activities/solar_system/SolarSystem.qml:167
+#: activities/solar_system/SolarSystem.qml:170
 msgctxt "SolarSystem|"
 msgid ""
 "You should score above 90% to pass the assessment and become a Solar System "
@@ -24004,7 +24004,7 @@ msgstr ""
 "Değerlendirmeyi geçmek ve Güneş Sistemi uzmanı olmak için %​90'ın üzerinde "
 "puan almalısın!"
 
-#: activities/solar_system/SolarSystem.qml:349
+#: activities/solar_system/SolarSystem.qml:352
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -24014,7 +24014,7 @@ msgstr ""
 "1. Bir gezegen Güneş'ten <b>ne kadar uzaksa </b> sıcaklığı da o kadar<b> "
 "düşüktür.<br><font color=\"#3bb0de\">%1</font>"
 
-#: activities/solar_system/SolarSystem.qml:350
+#: activities/solar_system/SolarSystem.qml:353
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -24025,7 +24025,7 @@ msgstr ""
 "<br><font color=\"#3bb0de\">%1</font>"
 
 #. find an equivalent rhyme in your language where the first letter of each word corresponds to the first letter of the planet in proper sequence
-#: activities/solar_system/SolarSystem.qml:353
+#: activities/solar_system/SolarSystem.qml:356
 msgctxt "SolarSystem|"
 msgid ""
 "3. Always remember this rhyme to learn the position of planets, examine the "
@@ -24037,12 +24037,12 @@ msgstr ""
 "b>elis'in <b>j</b>etonlarını <b>s</b>allayıp <b>u</b>çurdu; <b>n</b>eden?."
 "<br>"
 
-#: activities/solar_system/SolarSystem.qml:355
+#: activities/solar_system/SolarSystem.qml:358
 msgctxt "SolarSystem|"
 msgid "Hint"
 msgstr "İpucu"
 
-#: activities/solar_system/SolarSystem.qml:363
+#: activities/solar_system/SolarSystem.qml:366
 msgctxt "SolarSystem|"
 msgid "View the solar system"
 msgstr "Güneş sistemini görüntüle"
@@ -24805,7 +24805,7 @@ msgstr ""
 "Güneş, bulut, pompa istasyonu ve kanalizasyon arıtma tesisi. Sistem geri "
 "geldiğinde ve Tux duşa girdiğinde, onun için duş düğmesine bas."
 
-#: activities/watercycle/Watercycle.qml:78
+#: activities/watercycle/Watercycle.qml:81
 msgctxt "Watercycle|"
 msgid ""
 "The sun is the main component of the water cycle. Click on the sun to start "
@@ -24814,12 +24814,12 @@ msgstr ""
 "Güneş, su döngüsünün ana bileşenidir. Su döngüsünü başlatmak için güneşe "
 "tıkla."
 
-#: activities/watercycle/Watercycle.qml:79
+#: activities/watercycle/Watercycle.qml:82
 msgctxt "Watercycle|"
 msgid "As the sun rises, the water of the sea starts heating and evaporates."
 msgstr "Güneş yükseldikçe denizin suyu ısınmaya başlar ve buharlaşır."
 
-#: activities/watercycle/Watercycle.qml:80
+#: activities/watercycle/Watercycle.qml:83
 msgctxt "Watercycle|"
 msgid ""
 "Water vapor condenses to form clouds and when clouds become heavy, it rains. "
@@ -24828,7 +24828,7 @@ msgstr ""
 "Su buharı yoğunlaşarak bulutları oluşturur ve bulutlar ağırlaştığında yağmur "
 "yağar. Buluta tıkla."
 
-#: activities/watercycle/Watercycle.qml:81
+#: activities/watercycle/Watercycle.qml:84
 msgctxt "Watercycle|"
 msgid ""
 "The rain causes rivers to swell up and this water is transported to us via "
@@ -24838,7 +24838,7 @@ msgstr ""
 "Yağmur, ırmakların dolmasına neden olur ve bu su, su kuleleri aracılığıyla "
 "pompalarla bize taşınır. Sakinlere su sağlamak için motorlu pompaya tıkla."
 
-#: activities/watercycle/Watercycle.qml:83
+#: activities/watercycle/Watercycle.qml:86
 msgctxt "Watercycle|"
 msgid ""
 "See the tower filled with water. Activate the sewage treatment station by "
@@ -24847,18 +24847,18 @@ msgstr ""
 "Suyla dolu kuleyi gör. Kanalizasyon arıtma istasyonunun üzerine tıklayarak "
 "etkinleştir."
 
-#: activities/watercycle/Watercycle.qml:84
+#: activities/watercycle/Watercycle.qml:87
 msgctxt "Watercycle|"
 msgid "Great, click on the shower, as Tux arrives home."
 msgstr "Harika, Tux eve geldiğinde duşa tıkla."
 
-#: activities/watercycle/Watercycle.qml:85
+#: activities/watercycle/Watercycle.qml:88
 msgctxt "Watercycle|"
 msgid ""
 "Fantastic, you have completed the water cycle. You can continue playing."
 msgstr "Harika, su döngüsünü tamamladın. Oynamayı sürdürebilirsin."
 
-#: activities/watercycle/Watercycle.qml:112
+#: activities/watercycle/Watercycle.qml:115
 msgctxt "Watercycle|"
 msgid ""
 "The water cycle (also known as the hydrologic cycle) is the journey water "
@@ -24869,7 +24869,7 @@ msgstr ""
 "yeniden geri dönerken yaptığı yolculuktur. Güneşin ısısı, okyanuslar gibi su "
 "kütlelerinden suyun buharlaşması için enerji sağlar."
 
-#: activities/watercycle/Watercycle.qml:115
+#: activities/watercycle/Watercycle.qml:118
 msgctxt "Watercycle|"
 msgid ""
 "Plants also lose water to the air through transpiration. The water vapor "
@@ -24880,7 +24880,7 @@ msgstr ""
 "bulutlarda küçük damlacıklar oluşturur. Bulutlar kara üzerinde soğuk hava "
 "ile buluştuğunda, yağış tetiklenir ve yağmur olarak geri düşer."
 
-#: activities/watercycle/Watercycle.qml:118
+#: activities/watercycle/Watercycle.qml:121
 msgctxt "Watercycle|"
 msgid ""
 "Some of the water is trapped between rock or clay layers, called "
@@ -24891,7 +24891,7 @@ msgstr ""
 "tutulur. Ancak suyun çoğu aralardan sızar ve sonunda ırmaklar yoluyla "
 "denizlere döner."
 
-#: activities/watercycle/Watercycle.qml:120
+#: activities/watercycle/Watercycle.qml:123
 msgctxt "Watercycle|"
 msgid ""
 "Your goal is to complete the water cycle before Tux reaches home. Click on "
@@ -25683,22 +25683,22 @@ msgctxt "GCCreationHandler|"
 msgid "Delete"
 msgstr "Sil"
 
-#: core/IntroMessage.qml:174
+#: core/IntroMessage.qml:137
 msgctxt "IntroMessage|"
 msgid "Previous"
 msgstr "Önceki"
 
-#: core/IntroMessage.qml:190
+#: core/IntroMessage.qml:153
 msgctxt "IntroMessage|"
 msgid "Next"
 msgstr "Sonraki"
 
-#: core/IntroMessage.qml:205
+#: core/IntroMessage.qml:168
 msgctxt "IntroMessage|"
 msgid "Skip"
 msgstr "Atla"
 
-#: core/IntroMessage.qml:205
+#: core/IntroMessage.qml:168
 msgctxt "IntroMessage|"
 msgid "Start"
 msgstr "Başlat"
@@ -25791,47 +25791,47 @@ msgstr ""
 "belirtin. Tek bir değer (2) veya bir aralık (3-6) belirtebilirsiniz. "
 "Değerler, 1 ve 6 arasında olmalıdır."
 
-#: core/main.qml:233
+#: core/main.qml:273
 msgctxt "main|"
 msgid "Voices for your language"
 msgstr "Dilin için sesler"
 
-#: core/main.qml:234
+#: core/main.qml:274
 msgctxt "main|"
 msgid "Full word image set"
 msgstr "Tam sözcük görsel kümesi"
 
-#: core/main.qml:235
+#: core/main.qml:275
 msgctxt "main|"
 msgid "Background music"
 msgstr "Arka plan müziği"
 
-#: core/main.qml:240
+#: core/main.qml:280
 msgctxt "main|"
 msgid "Do you want to download the following external assets?"
 msgstr "Aşağıdaki verileri şimdi indirmek istiyor musun?"
 
-#: core/main.qml:245
+#: core/main.qml:285
 msgctxt "main|"
 msgid "Yes"
 msgstr "Evet"
 
-#: core/main.qml:255
+#: core/main.qml:295
 msgctxt "main|"
 msgid "No"
 msgstr "Hayır"
 
-#: core/main.qml:280
+#: core/main.qml:320
 msgctxt "main|"
 msgid "Welcome to GCompris!"
 msgstr "GCompris'e Hoş Geldin!"
 
-#: core/main.qml:281
+#: core/main.qml:321
 msgctxt "main|"
 msgid "You are running GCompris for the first time."
 msgstr "GCompris'i ilk defa çalıştırıyorsun."
 
-#: core/main.qml:282
+#: core/main.qml:322
 msgctxt "main|"
 msgid ""
 "You should verify that your application settings especially your language is "
@@ -25842,18 +25842,18 @@ msgstr ""
 "tüm dosyaların kurulu olduğunu doğrulamalısın. Bunu Tercihler Penceresinden "
 "yapabilirsin."
 
-#: core/main.qml:284
+#: core/main.qml:324
 msgctxt "main|"
 msgid "Have Fun!"
 msgstr "İyi Eğlenceler!"
 
-#: core/main.qml:286
+#: core/main.qml:326
 #, qt-format
 msgctxt "main|"
 msgid "Your current language is %1 (%2)."
 msgstr "Şu anki dil tercihin %1 (%2)."
 
-#: core/main.qml:317
+#: core/main.qml:357
 msgctxt "main|"
 msgid "GCompris has been updated! Here are the new changes:<br/>"
 msgstr "GCompris güncellendi! İşte yeniliklerin bir listesi: <br/>"
@@ -25863,22 +25863,22 @@ msgctxt "ReadyButton|"
 msgid "I am Ready"
 msgstr "Hazırım"
 
-#: core/Tutorial.qml:175
+#: core/Tutorial.qml:137
 msgctxt "Tutorial|"
 msgid "Previous"
 msgstr "Önceki"
 
-#: core/Tutorial.qml:195
+#: core/Tutorial.qml:157
 msgctxt "Tutorial|"
 msgid "Next"
 msgstr "Sonraki"
 
-#: core/Tutorial.qml:214
+#: core/Tutorial.qml:176
 msgctxt "Tutorial|"
 msgid "Skip"
 msgstr "Atla"
 
-#: core/Tutorial.qml:214
+#: core/Tutorial.qml:176
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Başlat"
