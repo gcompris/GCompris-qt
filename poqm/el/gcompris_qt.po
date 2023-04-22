@@ -2572,7 +2572,7 @@ msgstr ""
 "κινηθεί σε ευθεία γραμμή. Σε οθόνη αφής, θα πρέπει να χτυπήσεις ελαφρά τα "
 "δύο χέρια ταυτόχρονα."
 
-#: activities/ballcatch/Ballcatch.qml:222
+#: activities/ballcatch/Ballcatch.qml:221
 msgctxt "Ballcatch|"
 msgid ""
 "Tap both hands at the same time, to make the ball go in a straight line."
@@ -2580,7 +2580,7 @@ msgstr ""
 "Πάτα στα δύο χέρια την ίδια στιγμή, για να κάνεις τη μπάλα να κινηθεί σε "
 "ευθεία γραμμή."
 
-#: activities/ballcatch/Ballcatch.qml:224
+#: activities/ballcatch/Ballcatch.qml:223
 msgctxt "Ballcatch|"
 msgid ""
 "Press left and right arrow keys at the same time, to make the ball go in a "
@@ -2784,7 +2784,7 @@ msgctxt "binary_bulb|"
 msgid "This image will help you to compute bits' value."
 msgstr "Αυτή η εικόνα θα σε βοηθήσει να υπολογίσεις την αξία των bits."
 
-#: activities/binary_bulb/BinaryBulb.qml:121
+#: activities/binary_bulb/BinaryBulb.qml:123
 #, qt-format
 msgctxt "BinaryBulb|"
 msgid "What is the binary representation of %1?"
@@ -3379,7 +3379,7 @@ msgstr ""
 "υδατοφράχτες στη σωστή σειρά, έτσι ώστε ο Tux να μπορεί να περνά με τη βάρκα "
 "του και προς τις δύο κατευθύνσεις."
 
-#: activities/canal_lock/CanalLock.qml:54
+#: activities/canal_lock/CanalLock.qml:57
 msgctxt "CanalLock|"
 msgid ""
 "Your goal is to lead Tux across the canal lock to get the wooden logs, using "
@@ -3389,7 +3389,7 @@ msgstr ""
 "κορμούς των δέντρων που βρίσκονται στα δεξιά. Για να το πετύχεις θα πρέπει "
 "να χρησιμοποιήσεις τους διαφορετικούς υδροφράκτες κάνοντας κλικ επάνω τους."
 
-#: activities/canal_lock/CanalLock.qml:56
+#: activities/canal_lock/CanalLock.qml:59
 msgctxt "CanalLock|"
 msgid ""
 "The vertical colored bars represent the water locks, which can be operated "
@@ -3399,7 +3399,7 @@ msgstr ""
 "Οι κάθετες χρωματισμένες μπάρες αναπαριστούν υδροφράκτες και λειτουργούν αν "
 "κάνεις κλικ επάνω τους. Δύο ίδιοι υδατοφράχτες δεν λειτουργούν ταυτόχρονα."
 
-#: activities/canal_lock/CanalLock.qml:58
+#: activities/canal_lock/CanalLock.qml:61
 msgctxt "CanalLock|"
 msgid ""
 "The water level inside the lock will change according to the side of the "
@@ -6029,12 +6029,12 @@ msgstr ""
 "είναι συχνά η αναπαράσταση μιας τάσης σχεδόν ίσης με την τάση εδάφους και το "
 "1 είναι η αναπαράσταση της τάσης τροφοδοσίας ενός κυκλώματος."
 
-#: activities/digital_electricity/DigitalElectricity.qml:245
+#: activities/digital_electricity/DigitalElectricity.qml:248
 msgctxt "DigitalElectricity|"
 msgid "Input"
 msgstr "Είσοδος"
 
-#: activities/digital_electricity/DigitalElectricity.qml:263
+#: activities/digital_electricity/DigitalElectricity.qml:266
 msgctxt "DigitalElectricity|"
 msgid "Output"
 msgstr "Έξοδος"
@@ -14097,7 +14097,7 @@ msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: move the spaceship"
 msgstr "Αριστερό και Δεξί βελάκι: Μετακίνηση του διαστημόπλοιου."
 
-#: activities/gravity/Gravity.qml:210
+#: activities/gravity/Gravity.qml:209
 msgctxt "Gravity|"
 msgid ""
 "Gravity is universal and Newton's law of universal gravitation extends "
@@ -14110,7 +14110,7 @@ msgstr ""
 "έλξης είναι ανάλογη με το γινόμενο των μαζών των σωμάτων που έλκονται και "
 "αντιστρόφως ανάλογη του τετραγώνου της απόστασης του κέντρου μάζας τους."
 
-#: activities/gravity/Gravity.qml:214
+#: activities/gravity/Gravity.qml:213
 msgctxt "Gravity|"
 msgid ""
 "Since the gravitational force is directly proportional to the mass of both "
@@ -14122,7 +14122,7 @@ msgstr ""
 "βαρυτική δύναμη. Έτσι, καθώς αυξάνει η μάζα των σωμάτων, αυξάνεται και η "
 "βαρυτική δύναμη της μεταξύ τους έλξης."
 
-#: activities/gravity/Gravity.qml:217
+#: activities/gravity/Gravity.qml:216
 msgctxt "Gravity|"
 msgid ""
 "But as this force is inversely proportional to the square of the distance "
@@ -14133,7 +14133,7 @@ msgstr ""
 "του κέντρου μάζας των σωμάτων που αλληλεπιδρούν κι έτσι όσο μεγαλώνει η "
 "απόσταση αυτή, τόσο εξασθενεί η βαρυτική δύναμη έλξης."
 
-#: activities/gravity/Gravity.qml:220
+#: activities/gravity/Gravity.qml:219
 msgctxt "Gravity|"
 msgid ""
 "Your goal is to move the spaceship and avoid hitting the planets until you "
@@ -14145,7 +14145,7 @@ msgstr ""
 "υποδεικνύει την κατεύθυνση και την επίδραση της βαρύτητας στο διαστημόπλοιό "
 "σου."
 
-#: activities/gravity/Gravity.qml:223
+#: activities/gravity/Gravity.qml:222
 msgctxt "Gravity|"
 msgid ""
 "Try to stay near the center of the screen, and anticipate by looking at the "
@@ -15126,31 +15126,31 @@ msgstr ""
 "Βελάκι Αριστερά και Δεξιά: Στα πρώτα επίπεδα μετακινούν το διαστημόπλοιο "
 "αριστερά και δεξιά αντίστοιχα, ενώ στα μεγαλύτερα επίπεδα το περιστρέφουν."
 
-#: activities/land_safe/LandSafe.qml:580
+#: activities/land_safe/LandSafe.qml:583
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Fuel: %1"
 msgstr "Καύσιμα: %1"
 
-#: activities/land_safe/LandSafe.qml:590
+#: activities/land_safe/LandSafe.qml:593
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Altitude: %1"
 msgstr "Υψόμετρο: %1"
 
-#: activities/land_safe/LandSafe.qml:600
+#: activities/land_safe/LandSafe.qml:603
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Velocity: %1"
 msgstr "Ταχύτητα: %1"
 
-#: activities/land_safe/LandSafe.qml:611
+#: activities/land_safe/LandSafe.qml:614
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Acceleration: %1"
 msgstr "Επιτάχυνση: %1"
 
-#: activities/land_safe/LandSafe.qml:645
+#: activities/land_safe/LandSafe.qml:648
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Gravity: %1"
@@ -15613,31 +15613,31 @@ msgstr ""
 "αντιστοιχεί στη ζητούμενη ποσότητα. Τότε κάνε κλικ στο OK για να ελέγξεις "
 "την απάντησή σου."
 
-#: activities/learn_decimals/Learn_decimals.qml:112
+#: activities/learn_decimals/Learn_decimals.qml:115
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the number: %1"
 msgstr "Εμφάνισε τον αριθμό: %1"
 
-#: activities/learn_decimals/Learn_decimals.qml:113
+#: activities/learn_decimals/Learn_decimals.qml:116
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the result of: %1 + %2"
 msgstr "Εμφάνισε το άθροισμα: %1 + %2"
 
-#: activities/learn_decimals/Learn_decimals.qml:114
+#: activities/learn_decimals/Learn_decimals.qml:117
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the result of: %1 - %2"
 msgstr "Εμφάνισε τη διαφορά: %1 - %2"
 
-#: activities/learn_decimals/Learn_decimals.qml:115
+#: activities/learn_decimals/Learn_decimals.qml:118
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Represent the quantity: %1"
 msgstr "Αναπαράστησε την ποσότητα: %1"
 
-#: activities/learn_decimals/Learn_decimals.qml:568
+#: activities/learn_decimals/Learn_decimals.qml:571
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Enter the result: %1"
@@ -19199,20 +19199,20 @@ msgstr ""
 "Αναγνώρισε σωστά τις νότες για να πετύχεις βαθμολογία 100% και να "
 "ολοκληρώσεις το επίπεδο."
 
-#: activities/note_names/NoteNames.qml:175
+#: activities/note_names/NoteNames.qml:178
 #, qt-format
 msgctxt "NoteNames|"
 msgid "New note: %1"
 msgstr "Νέα νότα:%1"
 
 #. The following translation represents percentage.
-#: activities/note_names/NoteNames.qml:263
+#: activities/note_names/NoteNames.qml:266
 #, qt-format
 msgctxt "NoteNames|"
 msgid "%1%"
 msgstr "%1%"
 
-#: activities/note_names/NoteNames.qml:453
+#: activities/note_names/NoteNames.qml:452
 msgctxt "NoteNames|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -19222,12 +19222,12 @@ msgstr ""
 "ακόμη και αν αυτοί ή τα ηχητικά εφέ είναι απενεργοποιημένα στις κύριες "
 "Ρυθμίσεις."
 
-#: activities/note_names/NoteNames.qml:454
+#: activities/note_names/NoteNames.qml:453
 msgctxt "NoteNames|"
 msgid "Quit"
 msgstr "Έξοδος"
 
-#: activities/note_names/NoteNames.qml:455
+#: activities/note_names/NoteNames.qml:454
 msgctxt "NoteNames|"
 msgid "Continue"
 msgstr "Συνέχεια"
@@ -20505,7 +20505,7 @@ msgctxt "melodies|"
 msgid "Finland"
 msgstr "Φιλανδία"
 
-#: activities/piano_composition/MelodyList.qml:55
+#: activities/piano_composition/MelodyList.qml:70
 msgctxt "MelodyList|"
 msgid "Melodies"
 msgstr "Μελωδίες"
@@ -21462,23 +21462,23 @@ msgstr ""
 "<b>περιοχής του κώδικα</b> για να μπορείς να προσθέσεις κώδικα, πίεσε στην "
 "ετικέτα <b>Βρόχος</b> ή <b>Κώδικας</b>."
 
-#: activities/programmingMaze/ProgrammingMaze.qml:190
+#: activities/programmingMaze/ProgrammingMaze.qml:193
 #, qt-format
 msgctxt "ProgrammingMaze|"
 msgid "Reach the fish in less than %1 instructions."
 msgstr "Φτάσε στο ψάρι με λιγότερες από %1 εντολές."
 
-#: activities/programmingMaze/ProgrammingMaze.qml:254
+#: activities/programmingMaze/ProgrammingMaze.qml:257
 msgctxt "ProgrammingMaze|"
 msgid "Main function"
 msgstr "Κώδικας"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:282
+#: activities/programmingMaze/ProgrammingMaze.qml:285
 msgctxt "ProgrammingMaze|"
 msgid "Procedure"
 msgstr "Διαδικασία"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:282
+#: activities/programmingMaze/ProgrammingMaze.qml:285
 msgctxt "ProgrammingMaze|"
 msgid "Loop"
 msgstr "Βρόχος"
@@ -21560,7 +21560,7 @@ msgctxt "ActivityInfo|"
 msgid "Enter or Return: submit your answer"
 msgstr "Enter ή Return: Υποβολή απάντησης."
 
-#: activities/railroad/Railroad.qml:103
+#: activities/railroad/Railroad.qml:105
 msgctxt "Railroad|"
 msgid ""
 "Observe and remember the train before the timer ends and then drag the items "
@@ -21569,7 +21569,7 @@ msgstr ""
 "Παρατήρησε το τρένο πριν λήξει ο χρόνος και κατόπιν σύρε αντικείμενα, "
 "βαγόνια και μηχανές, για να φτιάξεις ένα ίδιο τρένο."
 
-#: activities/railroad/Railroad.qml:104
+#: activities/railroad/Railroad.qml:106
 msgctxt "Railroad|"
 msgid ""
 "If you forgot the model, you can click on the Hint button to view it again."
@@ -24455,7 +24455,7 @@ msgstr ""
 "Περίφημα! Μπορείς να ξαναδοκιμάσεις σε λειτουργία αξιολόγησης για να δεις "
 "πώς τα πας με περισσότερες ερωτήσεις."
 
-#: activities/solar_system/SolarSystem.qml:155
+#: activities/solar_system/SolarSystem.qml:158
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -24472,17 +24472,17 @@ msgstr ""
 "- Εδώ μπορείς να δοκιμάσεις απευθείας τις γνώσεις που έχεις για το ηλιακό "
 "μας σύστημα."
 
-#: activities/solar_system/SolarSystem.qml:155
+#: activities/solar_system/SolarSystem.qml:158
 msgctxt "SolarSystem|"
 msgid "Assessment"
 msgstr "Αξιολόγηση"
 
-#: activities/solar_system/SolarSystem.qml:155
+#: activities/solar_system/SolarSystem.qml:158
 msgctxt "SolarSystem|"
 msgid "Learning"
 msgstr "Εκμάθηση"
 
-#: activities/solar_system/SolarSystem.qml:159
+#: activities/solar_system/SolarSystem.qml:162
 msgctxt "SolarSystem|"
 msgid ""
 "Click on the Sun or any planet to reveal questions. Each question has 4 "
@@ -24492,7 +24492,7 @@ msgstr ""
 "ερωτήσεις. Κάθε ερώτηση έχει 4 επιλογές, από τις οποίες μόνο η μία είναι η "
 "σωστή."
 
-#: activities/solar_system/SolarSystem.qml:160
+#: activities/solar_system/SolarSystem.qml:163
 msgctxt "SolarSystem|"
 msgid ""
 "After a planet is clicked, the Closeness meter at the bottom-right corner of "
@@ -24508,7 +24508,7 @@ msgstr ""
 "υπόδειξης είναι ορατό, μπορείς να πιέσεις σε αυτό για να σε βοηθήσει να "
 "φτάσεις στη σωστή απάντηση."
 
-#: activities/solar_system/SolarSystem.qml:165
+#: activities/solar_system/SolarSystem.qml:168
 msgctxt "SolarSystem|"
 msgid ""
 "There are 20 questions initially with 4 options each. The progress bar at "
@@ -24517,7 +24517,7 @@ msgstr ""
 "Αρχικά υπάρχουν 20 ερωτήσεις με 4 επιλογές η καθεμιά. Η μπάρα προόδου κάτω "
 "δεξιά της οθόνης δείχνει το ποσοστό επιτυχίας σου."
 
-#: activities/solar_system/SolarSystem.qml:166
+#: activities/solar_system/SolarSystem.qml:169
 msgctxt "SolarSystem|"
 msgid ""
 "If your answer is correct, your score increases.<br>If your answer is wrong, "
@@ -24530,7 +24530,7 @@ msgstr ""
 "ακόμη ερώτηση στο τέλος μαζί με αυτή που απάντησες λάθος.<br>Ο μέγιστος "
 "αριθμός ερωτήσεων είναι 25, μετά από τον οποίο δεν προστίθενται ερωτήσεις."
 
-#: activities/solar_system/SolarSystem.qml:167
+#: activities/solar_system/SolarSystem.qml:170
 msgctxt "SolarSystem|"
 msgid ""
 "You should score above 90% to pass the assessment and become a Solar System "
@@ -24539,7 +24539,7 @@ msgstr ""
 "Θα πρέπει να συγκεντρώσεις βαθμολογία μεγαλύτερη από 90% για να περάσεις την "
 "αξιολόγηση και να γίνεις ειδικός του ηλιακού μας συστήματος!"
 
-#: activities/solar_system/SolarSystem.qml:349
+#: activities/solar_system/SolarSystem.qml:352
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -24550,7 +24550,7 @@ msgstr ""
 "<b>χαμηλότερη</b> είναι η θερμοκρασία του.<br><font color=\"#3bb0de\">%1</"
 "font>"
 
-#: activities/solar_system/SolarSystem.qml:350
+#: activities/solar_system/SolarSystem.qml:353
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -24561,7 +24561,7 @@ msgstr ""
 "τον Ήλιο</b>.<br><font color=\"#3bb0de\">%1</font>"
 
 #. find an equivalent rhyme in your language where the first letter of each word corresponds to the first letter of the planet in proper sequence
-#: activities/solar_system/SolarSystem.qml:353
+#: activities/solar_system/SolarSystem.qml:356
 msgctxt "SolarSystem|"
 msgid ""
 "3. Always remember this rhyme to learn the position of planets, examine the "
@@ -24573,12 +24573,12 @@ msgstr ""
 "γράμματα των ονομάτων τους: <b>Ε</b>ρμής, <b>Α</b>φροδίτη, <b>Γ</b>η, <b>Ά</"
 "b>ρης, <b>Δ</b>ίας, <b>Κ</b>ρόνος, <b>Ου</b>ρανός, <b>Π</b>οσειδώνας.<br>"
 
-#: activities/solar_system/SolarSystem.qml:355
+#: activities/solar_system/SolarSystem.qml:358
 msgctxt "SolarSystem|"
 msgid "Hint"
 msgstr "Υπόδειξη"
 
-#: activities/solar_system/SolarSystem.qml:363
+#: activities/solar_system/SolarSystem.qml:366
 msgctxt "SolarSystem|"
 msgid "View the solar system"
 msgstr "Προβολή του ηλιακού συστήματος."
@@ -25373,7 +25373,7 @@ msgstr ""
 "σύστημα ύδρευσης. Όταν το σύστημα ύδρευσης λειτουργήσει και ο Tux είναι στο "
 "ντους, πάτησε το κουμπί του ντους για να κάνει μπάνιο."
 
-#: activities/watercycle/Watercycle.qml:78
+#: activities/watercycle/Watercycle.qml:81
 msgctxt "Watercycle|"
 msgid ""
 "The sun is the main component of the water cycle. Click on the sun to start "
@@ -25382,14 +25382,14 @@ msgstr ""
 "Ο ήλιος είναι το κύριο στοιχείο του κύκλου του νερού. Κάνε κλικ στον ήλιο "
 "για να ξεκινήσει ο κύκλος του νερού."
 
-#: activities/watercycle/Watercycle.qml:79
+#: activities/watercycle/Watercycle.qml:82
 msgctxt "Watercycle|"
 msgid "As the sun rises, the water of the sea starts heating and evaporates."
 msgstr ""
 "Καθώς ο ήλιος ανεβαίνει στον ουρανό, το νερό στη θάλασσα αρχίζει να "
 "ζεσταίνεται και να εξατμίζεται."
 
-#: activities/watercycle/Watercycle.qml:80
+#: activities/watercycle/Watercycle.qml:83
 msgctxt "Watercycle|"
 msgid ""
 "Water vapor condenses to form clouds and when clouds become heavy, it rains. "
@@ -25398,7 +25398,7 @@ msgstr ""
 "Οι υδρατμοί συμπυκνώνονται για να σχηματίσουν σύννεφα και όταν αυτά γίνουν "
 "βαριά, αρχίζει να βρέχει. Κάντε κλικ στο σύννεφο."
 
-#: activities/watercycle/Watercycle.qml:81
+#: activities/watercycle/Watercycle.qml:84
 msgctxt "Watercycle|"
 msgid ""
 "The rain causes rivers to swell up and this water is transported to us via "
@@ -25410,7 +25410,7 @@ msgstr ""
 "(υδραγωγεία). Κάνε κλικ στην αντλία για να τροφοδοτήσεις τους κατοίκους με "
 "νερό."
 
-#: activities/watercycle/Watercycle.qml:83
+#: activities/watercycle/Watercycle.qml:86
 msgctxt "Watercycle|"
 msgid ""
 "See the tower filled with water. Activate the sewage treatment station by "
@@ -25419,12 +25419,12 @@ msgstr ""
 "Δες τον πύργο γεμάτο με νερό. Ενεργοποίησε τον σταθμό επεξεργασίας λυμάτων "
 "κάνοντας κλικ πάνω του."
 
-#: activities/watercycle/Watercycle.qml:84
+#: activities/watercycle/Watercycle.qml:87
 msgctxt "Watercycle|"
 msgid "Great, click on the shower, as Tux arrives home."
 msgstr "Πολύ ωραία, κάνε κλικ στο ντους καθώς ο Tux φτάνει στο σπίτι."
 
-#: activities/watercycle/Watercycle.qml:85
+#: activities/watercycle/Watercycle.qml:88
 msgctxt "Watercycle|"
 msgid ""
 "Fantastic, you have completed the water cycle. You can continue playing."
@@ -25432,7 +25432,7 @@ msgstr ""
 "Φανταστικά! Ολοκλήρωσες τον κύκλο του νερού. Μπορείς να συνεχίσεις το "
 "παιχνίδι."
 
-#: activities/watercycle/Watercycle.qml:112
+#: activities/watercycle/Watercycle.qml:115
 msgctxt "Watercycle|"
 msgid ""
 "The water cycle (also known as the hydrologic cycle) is the journey water "
@@ -25444,7 +25444,7 @@ msgstr ""
 "παρέχει ενέργεια που εξατμίζει το νερό των ποταμών, των λιμνών, των θαλασσών "
 "και των ωκεανών."
 
-#: activities/watercycle/Watercycle.qml:115
+#: activities/watercycle/Watercycle.qml:118
 msgctxt "Watercycle|"
 msgid ""
 "Plants also lose water to the air through transpiration. The water vapor "
@@ -25455,7 +25455,7 @@ msgstr ""
 "Οι υδρατμοί ψύχονται σχηματίζοντας μικροσκοπικά σταγονίδια στα σύννεφα και "
 "όταν αυτά συναντούν κρύο αέρα πάνω από τη γη, αρχίζει η βροχή."
 
-#: activities/watercycle/Watercycle.qml:118
+#: activities/watercycle/Watercycle.qml:121
 msgctxt "Watercycle|"
 msgid ""
 "Some of the water is trapped between rock or clay layers, called "
@@ -25466,7 +25466,7 @@ msgstr ""
 "Αλλά το μεγαλύτερο μέρος του νερού που πέφτει στη γη, ρέει συνεχώς και "
 "τελικά επιστρέφει στις θάλασσες μέσω των ποταμών."
 
-#: activities/watercycle/Watercycle.qml:120
+#: activities/watercycle/Watercycle.qml:123
 msgctxt "Watercycle|"
 msgid ""
 "Your goal is to complete the water cycle before Tux reaches home. Click on "
@@ -26272,22 +26272,22 @@ msgctxt "GCCreationHandler|"
 msgid "Delete"
 msgstr "Διαγραφή"
 
-#: core/IntroMessage.qml:174
+#: core/IntroMessage.qml:137
 msgctxt "IntroMessage|"
 msgid "Previous"
 msgstr "Προηγούμενο"
 
-#: core/IntroMessage.qml:190
+#: core/IntroMessage.qml:153
 msgctxt "IntroMessage|"
 msgid "Next"
 msgstr "Επόμενο"
 
-#: core/IntroMessage.qml:205
+#: core/IntroMessage.qml:168
 msgctxt "IntroMessage|"
 msgid "Skip"
 msgstr "Παράλειψη"
 
-#: core/IntroMessage.qml:205
+#: core/IntroMessage.qml:168
 msgctxt "IntroMessage|"
 msgid "Start"
 msgstr "Έναρξη"
@@ -26380,47 +26380,47 @@ msgstr ""
 "συνεδρία. Είτε με μια μεμονωμένη τιμή (2) είτε με ένα εύρος (3-6). Οι τιμές "
 "πρέπει να είναι μεταξύ 1 και 6."
 
-#: core/main.qml:233
+#: core/main.qml:273
 msgctxt "main|"
 msgid "Voices for your language"
 msgstr "Αρχεία ήχου για τη γλώσσα σου"
 
-#: core/main.qml:234
+#: core/main.qml:274
 msgctxt "main|"
 msgid "Full word image set"
 msgstr "Χρήση σειράς εικόνων με ολόκληρες λέξεις"
 
-#: core/main.qml:235
+#: core/main.qml:275
 msgctxt "main|"
 msgid "Background music"
 msgstr "Μουσική παρασκηνίου"
 
-#: core/main.qml:240
+#: core/main.qml:280
 msgctxt "main|"
 msgid "Do you want to download the following external assets?"
 msgstr "Θέλεις να τις κατεβάσεις τα παρακάτω εξωτερικά πακέτα;"
 
-#: core/main.qml:245
+#: core/main.qml:285
 msgctxt "main|"
 msgid "Yes"
 msgstr "Ναι"
 
-#: core/main.qml:255
+#: core/main.qml:295
 msgctxt "main|"
 msgid "No"
 msgstr "Όχι"
 
-#: core/main.qml:280
+#: core/main.qml:320
 msgctxt "main|"
 msgid "Welcome to GCompris!"
 msgstr "Καλωσήρθες στο GCompris!"
 
-#: core/main.qml:281
+#: core/main.qml:321
 msgctxt "main|"
 msgid "You are running GCompris for the first time."
 msgstr "Εκτελείς το GCompris για πρώτη φορά."
 
-#: core/main.qml:282
+#: core/main.qml:322
 msgctxt "main|"
 msgid ""
 "You should verify that your application settings especially your language is "
@@ -26432,18 +26432,18 @@ msgstr ""
 "γλώσσας προτίμησης έχουν εγκατασταθεί. Μπορείς να κάνεις προσαρμογή από τις "
 "Ρυθμίσεις."
 
-#: core/main.qml:284
+#: core/main.qml:324
 msgctxt "main|"
 msgid "Have Fun!"
 msgstr "Να περάσεις καλά!"
 
-#: core/main.qml:286
+#: core/main.qml:326
 #, qt-format
 msgctxt "main|"
 msgid "Your current language is %1 (%2)."
 msgstr "Η ενεργή γλώσσα είναι τα %1 (%2)."
 
-#: core/main.qml:317
+#: core/main.qml:357
 msgctxt "main|"
 msgid "GCompris has been updated! Here are the new changes:<br/>"
 msgstr "Το GCompris ενημερώθηκε. Εδώ είναι οι αλλαγές που έγιναν:<br/>"
@@ -26453,22 +26453,22 @@ msgctxt "ReadyButton|"
 msgid "I am Ready"
 msgstr "Είμαι έτοιμος"
 
-#: core/Tutorial.qml:175
+#: core/Tutorial.qml:137
 msgctxt "Tutorial|"
 msgid "Previous"
 msgstr "Προηγούμενο"
 
-#: core/Tutorial.qml:195
+#: core/Tutorial.qml:157
 msgctxt "Tutorial|"
 msgid "Next"
 msgstr "Επόμενο"
 
-#: core/Tutorial.qml:214
+#: core/Tutorial.qml:176
 msgctxt "Tutorial|"
 msgid "Skip"
 msgstr "Παράλειψη"
 
-#: core/Tutorial.qml:214
+#: core/Tutorial.qml:176
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Έναρξη"

@@ -2541,13 +2541,13 @@ msgstr ""
 "Vajuta korraga paremat ja vasakut nooleklahvi, et pall liiguks täiesti otse. "
 "Puuteekraanil tuleb korraga vajutada mõlema käega."
 
-#: activities/ballcatch/Ballcatch.qml:222
+#: activities/ballcatch/Ballcatch.qml:221
 msgctxt "Ballcatch|"
 msgid ""
 "Tap both hands at the same time, to make the ball go in a straight line."
 msgstr "Koputa mõlema käega korraga, et pall liiguks täiesti otse."
 
-#: activities/ballcatch/Ballcatch.qml:224
+#: activities/ballcatch/Ballcatch.qml:223
 msgctxt "Ballcatch|"
 msgid ""
 "Press left and right arrow keys at the same time, to make the ball go in a "
@@ -2740,7 +2740,7 @@ msgctxt "binary_bulb|"
 msgid "This image will help you to compute bits' value."
 msgstr "See pilt aitab arvutada bittide väärtusi."
 
-#: activities/binary_bulb/BinaryBulb.qml:121
+#: activities/binary_bulb/BinaryBulb.qml:123
 #, qt-format
 msgctxt "BinaryBulb|"
 msgid "What is the binary representation of %1?"
@@ -3319,7 +3319,7 @@ msgstr ""
 "Sa vastutad kanali lüüsi eest. Ava väravad ja lüüsid õiges järjekorras, et "
 "Tux saaks mõlemas suunas läbi sõita."
 
-#: activities/canal_lock/CanalLock.qml:54
+#: activities/canal_lock/CanalLock.qml:57
 msgctxt "CanalLock|"
 msgid ""
 "Your goal is to lead Tux across the canal lock to get the wooden logs, using "
@@ -3328,7 +3328,7 @@ msgstr ""
 "Sinu eesmärk on juhtida Tux läbi lüüsi, et ta palgid kätte saaks, kasutades "
 "selleks eri tüüpi lüüsiväravaid."
 
-#: activities/canal_lock/CanalLock.qml:56
+#: activities/canal_lock/CanalLock.qml:59
 msgctxt "CanalLock|"
 msgid ""
 "The vertical colored bars represent the water locks, which can be operated "
@@ -3338,7 +3338,7 @@ msgstr ""
 "Värvilised püstised tulbad tähistavad lüüsiväravaid, mida saab liigutada "
 "neile klõpsates. Kahte üht tüüpi väravat korraga liigutada ei saa."
 
-#: activities/canal_lock/CanalLock.qml:58
+#: activities/canal_lock/CanalLock.qml:61
 msgctxt "CanalLock|"
 msgid ""
 "The water level inside the lock will change according to the side of the "
@@ -5853,12 +5853,12 @@ msgstr ""
 "arvutitehnika põhitõed. Tegelikkuses on 0 sageli maapinna pingega peaaegu "
 "võrdse pinge kujutamine ja 1 on vooluahela toitepinge kujutamine."
 
-#: activities/digital_electricity/DigitalElectricity.qml:245
+#: activities/digital_electricity/DigitalElectricity.qml:248
 msgctxt "DigitalElectricity|"
 msgid "Input"
 msgstr "Sisend"
 
-#: activities/digital_electricity/DigitalElectricity.qml:263
+#: activities/digital_electricity/DigitalElectricity.qml:266
 msgctxt "DigitalElectricity|"
 msgid "Output"
 msgstr "Väljund"
@@ -13741,7 +13741,7 @@ msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: move the spaceship"
 msgstr "Vasak- ja paremnool: liikuge kosmoselaeva"
 
-#: activities/gravity/Gravity.qml:210
+#: activities/gravity/Gravity.qml:209
 msgctxt "Gravity|"
 msgid ""
 "Gravity is universal and Newton's law of universal gravitation extends "
@@ -13753,7 +13753,7 @@ msgstr ""
 "sõltub otseselt mõlema objekti massist ja on pöördvõrdeline nende objektide "
 "keskpunkti lahutava vahemaa ruuduga."
 
-#: activities/gravity/Gravity.qml:214
+#: activities/gravity/Gravity.qml:213
 msgctxt "Gravity|"
 msgid ""
 "Since the gravitational force is directly proportional to the mass of both "
@@ -13763,7 +13763,7 @@ msgstr ""
 "Kuna raskusjõud on võrdeline mõlema objekti massiga, siis mida suurema "
 "massiga objektid teineteist tõmbavad, seda tugevam on raskusjõud."
 
-#: activities/gravity/Gravity.qml:217
+#: activities/gravity/Gravity.qml:216
 msgctxt "Gravity|"
 msgid ""
 "But as this force is inversely proportional to the square of the distance "
@@ -13774,7 +13774,7 @@ msgstr ""
 "objekti keskkoha vahemaa ruuduga, mis tähendab, et mida kaugemal objektid "
 "teineteisest asuvad, seda väiksem on raskusjõud."
 
-#: activities/gravity/Gravity.qml:220
+#: activities/gravity/Gravity.qml:219
 msgctxt "Gravity|"
 msgid ""
 "Your goal is to move the spaceship and avoid hitting the planets until you "
@@ -13785,7 +13785,7 @@ msgstr ""
 "kuni jõuad kosmosejaama. Nool näitab sinu laeva mõjutava raskusjõu suunda ja "
 "tugevust."
 
-#: activities/gravity/Gravity.qml:223
+#: activities/gravity/Gravity.qml:222
 msgctxt "Gravity|"
 msgid ""
 "Try to stay near the center of the screen, and anticipate by looking at the "
@@ -14746,31 +14746,31 @@ msgstr ""
 "Vasak- ja paremnooled: esimestel tasanditel liikumine külgedele; kõrgematel "
 "tasanditel, kosmoselaeva pööramine"
 
-#: activities/land_safe/LandSafe.qml:580
+#: activities/land_safe/LandSafe.qml:583
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Fuel: %1"
 msgstr "Kütus: %1"
 
-#: activities/land_safe/LandSafe.qml:590
+#: activities/land_safe/LandSafe.qml:593
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Altitude: %1"
 msgstr "Kõrgus: %1"
 
-#: activities/land_safe/LandSafe.qml:600
+#: activities/land_safe/LandSafe.qml:603
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Velocity: %1"
 msgstr "Kiirus: %1"
 
-#: activities/land_safe/LandSafe.qml:611
+#: activities/land_safe/LandSafe.qml:614
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Acceleration: %1"
 msgstr "Kiirendus: %1"
 
-#: activities/land_safe/LandSafe.qml:645
+#: activities/land_safe/LandSafe.qml:648
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Gravity: %1"
@@ -15220,31 +15220,31 @@ msgstr ""
 "Korrake neid samme, kuni apelsinide arv vastab taotletud kogusele. Seejärel "
 "klõpsake vastuse kinnitamiseks nuppu OK."
 
-#: activities/learn_decimals/Learn_decimals.qml:112
+#: activities/learn_decimals/Learn_decimals.qml:115
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the number: %1"
 msgstr "Numbri kuvamine: %1"
 
-#: activities/learn_decimals/Learn_decimals.qml:113
+#: activities/learn_decimals/Learn_decimals.qml:116
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the result of: %1 + %2"
 msgstr "Kuva tulemus: %1 + %2"
 
-#: activities/learn_decimals/Learn_decimals.qml:114
+#: activities/learn_decimals/Learn_decimals.qml:117
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the result of: %1 - %2"
 msgstr "Kuva tulemus: %1 - %2"
 
-#: activities/learn_decimals/Learn_decimals.qml:115
+#: activities/learn_decimals/Learn_decimals.qml:118
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Represent the quantity: %1"
 msgstr "Näita kogust: %1"
 
-#: activities/learn_decimals/Learn_decimals.qml:568
+#: activities/learn_decimals/Learn_decimals.qml:571
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Enter the result: %1"
@@ -18722,20 +18722,20 @@ msgid "Identify the notes correctly and score 100% to complete a level."
 msgstr ""
 "Tuvastage noodid õigesti ja skoorige 100% et pääseda järgmisele tasemele."
 
-#: activities/note_names/NoteNames.qml:175
+#: activities/note_names/NoteNames.qml:178
 #, qt-format
 msgctxt "NoteNames|"
 msgid "New note: %1"
 msgstr "Uus noot: %1"
 
 #. The following translation represents percentage.
-#: activities/note_names/NoteNames.qml:263
+#: activities/note_names/NoteNames.qml:266
 #, qt-format
 msgctxt "NoteNames|"
 msgid "%1%"
 msgstr "%1%"
 
-#: activities/note_names/NoteNames.qml:453
+#: activities/note_names/NoteNames.qml:452
 msgctxt "NoteNames|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -18744,12 +18744,12 @@ msgstr ""
 "See tegevus nõuab heli, seega esitab see mõningaid helisid isegi siis, kui "
 "helihääled või -efektid on põhikonfiguratsioonis keelatud."
 
-#: activities/note_names/NoteNames.qml:454
+#: activities/note_names/NoteNames.qml:453
 msgctxt "NoteNames|"
 msgid "Quit"
 msgstr "Sulgege"
 
-#: activities/note_names/NoteNames.qml:455
+#: activities/note_names/NoteNames.qml:454
 msgctxt "NoteNames|"
 msgid "Continue"
 msgstr "Jätka"
@@ -19993,7 +19993,7 @@ msgctxt "melodies|"
 msgid "Finland"
 msgstr "Soome"
 
-#: activities/piano_composition/MelodyList.qml:55
+#: activities/piano_composition/MelodyList.qml:70
 msgctxt "MelodyList|"
 msgid "Melodies"
 msgstr "Meloodiad"
@@ -20928,23 +20928,23 @@ msgstr ""
 "<b>põhifunktsiooni ala</b> vahel klõpsake <b>silmus</b> või Silt "
 "<b>Põhifunktsioon</b>."
 
-#: activities/programmingMaze/ProgrammingMaze.qml:190
+#: activities/programmingMaze/ProgrammingMaze.qml:193
 #, qt-format
 msgctxt "ProgrammingMaze|"
 msgid "Reach the fish in less than %1 instructions."
 msgstr "Jõudke kalani vähem kui %1 juhise järgi."
 
-#: activities/programmingMaze/ProgrammingMaze.qml:254
+#: activities/programmingMaze/ProgrammingMaze.qml:257
 msgctxt "ProgrammingMaze|"
 msgid "Main function"
 msgstr "Põhifunktsioon"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:282
+#: activities/programmingMaze/ProgrammingMaze.qml:285
 msgctxt "ProgrammingMaze|"
 msgid "Procedure"
 msgstr "Protseduur"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:282
+#: activities/programmingMaze/ProgrammingMaze.qml:285
 msgctxt "ProgrammingMaze|"
 msgid "Loop"
 msgstr "Silmus"
@@ -21023,7 +21023,7 @@ msgctxt "ActivityInfo|"
 msgid "Enter or Return: submit your answer"
 msgstr "Enter: esitage oma vastus"
 
-#: activities/railroad/Railroad.qml:103
+#: activities/railroad/Railroad.qml:105
 msgctxt "Railroad|"
 msgid ""
 "Observe and remember the train before the timer ends and then drag the items "
@@ -21032,7 +21032,7 @@ msgstr ""
 "Vaata ja jäta rong enne aja lõppemist meelde ning lohista seejärel "
 "näidistealalt vastusealale samasugune rong."
 
-#: activities/railroad/Railroad.qml:104
+#: activities/railroad/Railroad.qml:106
 msgctxt "Railroad|"
 msgid ""
 "If you forgot the model, you can click on the Hint button to view it again."
@@ -23830,7 +23830,7 @@ msgstr ""
 "Suurepärane! Võid mängu korrata, et enda teadmised veel rohkemate "
 "küsimustega proovile panna."
 
-#: activities/solar_system/SolarSystem.qml:155
+#: activities/solar_system/SolarSystem.qml:158
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -23846,17 +23846,17 @@ msgstr ""
 "Hindamisrežiim</b> - selle korral saad oma teadmised Päikesesüsteemist "
 "proovile panna."
 
-#: activities/solar_system/SolarSystem.qml:155
+#: activities/solar_system/SolarSystem.qml:158
 msgctxt "SolarSystem|"
 msgid "Assessment"
 msgstr "Hindamine"
 
-#: activities/solar_system/SolarSystem.qml:155
+#: activities/solar_system/SolarSystem.qml:158
 msgctxt "SolarSystem|"
 msgid "Learning"
 msgstr "Õppimine"
 
-#: activities/solar_system/SolarSystem.qml:159
+#: activities/solar_system/SolarSystem.qml:162
 msgctxt "SolarSystem|"
 msgid ""
 "Click on the Sun or any planet to reveal questions. Each question has 4 "
@@ -23865,7 +23865,7 @@ msgstr ""
 "Küsimuste nägemiseks klõpsa Päikesel või mõnel planeedil. Igal küsimusel on "
 "4 valikvastust, millest üks on õige."
 
-#: activities/solar_system/SolarSystem.qml:160
+#: activities/solar_system/SolarSystem.qml:163
 msgctxt "SolarSystem|"
 msgid ""
 "After a planet is clicked, the Closeness meter at the bottom-right corner of "
@@ -23880,7 +23880,7 @@ msgstr ""
 "Kui vihjenupp on nähtav, võite vastuse leidmiseks vihje saamiseks sellele "
 "klõpsata."
 
-#: activities/solar_system/SolarSystem.qml:165
+#: activities/solar_system/SolarSystem.qml:168
 msgctxt "SolarSystem|"
 msgid ""
 "There are 20 questions initially with 4 options each. The progress bar at "
@@ -23889,7 +23889,7 @@ msgstr ""
 "Algul on valmis seatud 20 küsimust, igal 4 valikvastust. All paremal näitab "
 "edenemisriba sinu tulemusi protsentides."
 
-#: activities/solar_system/SolarSystem.qml:166
+#: activities/solar_system/SolarSystem.qml:169
 msgctxt "SolarSystem|"
 msgid ""
 "If your answer is correct, your score increases.<br>If your answer is wrong, "
@@ -23902,14 +23902,14 @@ msgstr ""
 "üks lisaküsimus.<br>Maksimaalselt esitatakse 25 küsimust, mille järel "
 "küsimuste esitamine lõpetatakse."
 
-#: activities/solar_system/SolarSystem.qml:167
+#: activities/solar_system/SolarSystem.qml:170
 msgctxt "SolarSystem|"
 msgid ""
 "You should score above 90% to pass the assessment and become a Solar System "
 "expert!"
 msgstr "Et olla Päikesesüsteemi ekspert, peaksid koguma hindamisel üle 90%!"
 
-#: activities/solar_system/SolarSystem.qml:349
+#: activities/solar_system/SolarSystem.qml:352
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -23919,7 +23919,7 @@ msgstr ""
 "1. Mida <b>kaugemal</b> asub planeet Päikesest, seda <b>madalam</b> on selle "
 "temperatuur.<br> <font color=\"#3bb0de\">%1</font>"
 
-#: activities/solar_system/SolarSystem.qml:350
+#: activities/solar_system/SolarSystem.qml:353
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -23930,7 +23930,7 @@ msgstr ""
 "liigume</b>.<br><font color=\"#3bb0de\">%1</font>"
 
 #. find an equivalent rhyme in your language where the first letter of each word corresponds to the first letter of the planet in proper sequence
-#: activities/solar_system/SolarSystem.qml:353
+#: activities/solar_system/SolarSystem.qml:356
 msgctxt "SolarSystem|"
 msgid ""
 "3. Always remember this rhyme to learn the position of planets, examine the "
@@ -23941,12 +23941,12 @@ msgstr ""
 "sõna esimest tähte - <b>M</b>inu <b>V</b>anaisa <b>M</b>usta <b>M</b>aja "
 "<b>J</b>uures <b>S</b>eisab <b>U</b>hke <b>N</b>eoonskupltuur.<br>"
 
-#: activities/solar_system/SolarSystem.qml:355
+#: activities/solar_system/SolarSystem.qml:358
 msgctxt "SolarSystem|"
 msgid "Hint"
 msgstr "Vihje"
 
-#: activities/solar_system/SolarSystem.qml:363
+#: activities/solar_system/SolarSystem.qml:366
 msgctxt "SolarSystem|"
 msgid "View the solar system"
 msgstr "Vaata Päikesesüsteemi"
@@ -24712,7 +24712,7 @@ msgstr ""
 "ja kanalisatsioonijaam. Kui süsteem saab tööle ja Tux jõuab duši alla, "
 "vajuta tema eest dušinuppu."
 
-#: activities/watercycle/Watercycle.qml:78
+#: activities/watercycle/Watercycle.qml:81
 msgctxt "Watercycle|"
 msgid ""
 "The sun is the main component of the water cycle. Click on the sun to start "
@@ -24720,12 +24720,12 @@ msgid ""
 msgstr ""
 "Päike on veeringe peamine osa. Veeringe käivitamiseks klõpsa päikesele."
 
-#: activities/watercycle/Watercycle.qml:79
+#: activities/watercycle/Watercycle.qml:82
 msgctxt "Watercycle|"
 msgid "As the sun rises, the water of the sea starts heating and evaporates."
 msgstr "Kui päike tõuseb, hakkab vesi meres soojenema ja aurustuma."
 
-#: activities/watercycle/Watercycle.qml:80
+#: activities/watercycle/Watercycle.qml:83
 msgctxt "Watercycle|"
 msgid ""
 "Water vapor condenses to form clouds and when clouds become heavy, it rains. "
@@ -24734,7 +24734,7 @@ msgstr ""
 "Veeaur kondenseerub pilvede moodustamiseks ja kui pilved muutuvad liiga "
 "raskeks, hakkab sadama. Klõpsake pilvel."
 
-#: activities/watercycle/Watercycle.qml:81
+#: activities/watercycle/Watercycle.qml:84
 msgctxt "Watercycle|"
 msgid ""
 "The rain causes rivers to swell up and this water is transported to us via "
@@ -24744,7 +24744,7 @@ msgstr ""
 "Vihm täidab jõed rohke veega ja see tuuakse meie kätte pumpade abil "
 "veetornides. Klõpsa pumba peale, et vesi jõuaks elanikeni."
 
-#: activities/watercycle/Watercycle.qml:83
+#: activities/watercycle/Watercycle.qml:86
 msgctxt "Watercycle|"
 msgid ""
 "See the tower filled with water. Activate the sewage treatment station by "
@@ -24753,18 +24753,18 @@ msgstr ""
 "Vaata, kuidas veetorn veega täitub. Pane tööle kanalisatsioonijaam, tehes "
 "selle peal klõpsu."
 
-#: activities/watercycle/Watercycle.qml:84
+#: activities/watercycle/Watercycle.qml:87
 msgctxt "Watercycle|"
 msgid "Great, click on the shower, as Tux arrives home."
 msgstr "Suurepärane! Klõpsa nüüd dušil, kui Tux koju jõuab."
 
-#: activities/watercycle/Watercycle.qml:85
+#: activities/watercycle/Watercycle.qml:88
 msgctxt "Watercycle|"
 msgid ""
 "Fantastic, you have completed the water cycle. You can continue playing."
 msgstr "Fantastiline! Said veeringe korralikult käima. Võid edasi mängida."
 
-#: activities/watercycle/Watercycle.qml:112
+#: activities/watercycle/Watercycle.qml:115
 msgctxt "Watercycle|"
 msgid ""
 "The water cycle (also known as the hydrologic cycle) is the journey water "
@@ -24775,7 +24775,7 @@ msgstr ""
 "peale. Päikese kuumus annab piisavalt energiat, et aurustada vett isegi "
 "ookeanist."
 
-#: activities/watercycle/Watercycle.qml:115
+#: activities/watercycle/Watercycle.qml:118
 msgctxt "Watercycle|"
 msgid ""
 "Plants also lose water to the air through transpiration. The water vapor "
@@ -24786,7 +24786,7 @@ msgstr ""
 "tilgad. Kui pilved kohtuvad jaheda õhuga, vallanduvad sademed ja sajab "
 "vihmana alla."
 
-#: activities/watercycle/Watercycle.qml:118
+#: activities/watercycle/Watercycle.qml:121
 msgctxt "Watercycle|"
 msgid ""
 "Some of the water is trapped between rock or clay layers, called "
@@ -24797,7 +24797,7 @@ msgstr ""
 "põhjaveeks. Aga enamik veest muudkui voolab ja jõuab viimaks jõgede kaudu "
 "jälle merre."
 
-#: activities/watercycle/Watercycle.qml:120
+#: activities/watercycle/Watercycle.qml:123
 msgctxt "Watercycle|"
 msgid ""
 "Your goal is to complete the water cycle before Tux reaches home. Click on "
@@ -25585,22 +25585,22 @@ msgctxt "GCCreationHandler|"
 msgid "Delete"
 msgstr "Kustuta"
 
-#: core/IntroMessage.qml:174
+#: core/IntroMessage.qml:137
 msgctxt "IntroMessage|"
 msgid "Previous"
 msgstr "Eelmine"
 
-#: core/IntroMessage.qml:190
+#: core/IntroMessage.qml:153
 msgctxt "IntroMessage|"
 msgid "Next"
 msgstr "Järgmine"
 
-#: core/IntroMessage.qml:205
+#: core/IntroMessage.qml:168
 msgctxt "IntroMessage|"
 msgid "Skip"
 msgstr "Jäta vahele"
 
-#: core/IntroMessage.qml:205
+#: core/IntroMessage.qml:168
 msgctxt "IntroMessage|"
 msgid "Start"
 msgstr "Alusta"
@@ -25690,47 +25690,47 @@ msgid ""
 "a single value (2), or a range (3-6). Values must be between 1 and 6."
 msgstr ""
 
-#: core/main.qml:233
+#: core/main.qml:273
 msgctxt "main|"
 msgid "Voices for your language"
 msgstr "Sinu keelele vastavad hääled"
 
-#: core/main.qml:234
+#: core/main.qml:274
 msgctxt "main|"
 msgid "Full word image set"
 msgstr "Täieliku sõnakogu kasutamine"
 
-#: core/main.qml:235
+#: core/main.qml:275
 msgctxt "main|"
 msgid "Background music"
 msgstr "Taustamuusika"
 
-#: core/main.qml:240
+#: core/main.qml:280
 msgctxt "main|"
 msgid "Do you want to download the following external assets?"
 msgstr "Kas soovite alla laadida järgmised välised varad?"
 
-#: core/main.qml:245
+#: core/main.qml:285
 msgctxt "main|"
 msgid "Yes"
 msgstr "Jah"
 
-#: core/main.qml:255
+#: core/main.qml:295
 msgctxt "main|"
 msgid "No"
 msgstr "Ei"
 
-#: core/main.qml:280
+#: core/main.qml:320
 msgctxt "main|"
 msgid "Welcome to GCompris!"
 msgstr "Tere tulemast kasutama GComprist!"
 
-#: core/main.qml:281
+#: core/main.qml:321
 msgctxt "main|"
 msgid "You are running GCompris for the first time."
 msgstr "Sa oled GComprise esimest korda käima pannud."
 
-#: core/main.qml:282
+#: core/main.qml:322
 msgctxt "main|"
 msgid ""
 "You should verify that your application settings especially your language is "
@@ -25741,18 +25741,18 @@ msgstr ""
 "paigas ja kõik sinu keelele vajalikud helifailid paigaldatud. Seda saab teha "
 "seadistustedialoogis."
 
-#: core/main.qml:284
+#: core/main.qml:324
 msgctxt "main|"
 msgid "Have Fun!"
 msgstr "Tunne ennast hästi!"
 
-#: core/main.qml:286
+#: core/main.qml:326
 #, qt-format
 msgctxt "main|"
 msgid "Your current language is %1 (%2)."
 msgstr "Sinu praegune keel on %1 (%2)"
 
-#: core/main.qml:317
+#: core/main.qml:357
 msgctxt "main|"
 msgid "GCompris has been updated! Here are the new changes:<br/>"
 msgstr "GComprist on uuendatud! Siin on muudatuste nimekiri:<br/>"
@@ -25762,22 +25762,22 @@ msgctxt "ReadyButton|"
 msgid "I am Ready"
 msgstr "Ma olen valmis"
 
-#: core/Tutorial.qml:175
+#: core/Tutorial.qml:137
 msgctxt "Tutorial|"
 msgid "Previous"
 msgstr "Eelmine"
 
-#: core/Tutorial.qml:195
+#: core/Tutorial.qml:157
 msgctxt "Tutorial|"
 msgid "Next"
 msgstr "Järgmine"
 
-#: core/Tutorial.qml:214
+#: core/Tutorial.qml:176
 msgctxt "Tutorial|"
 msgid "Skip"
 msgstr "Jäta vahele"
 
-#: core/Tutorial.qml:214
+#: core/Tutorial.qml:176
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Alusta"
