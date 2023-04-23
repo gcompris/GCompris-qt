@@ -2601,14 +2601,14 @@ msgstr ""
 "la balle droit devant. Sur un écran tactile, tu dois toucher les deux mains "
 "en même temps."
 
-#: activities/ballcatch/Ballcatch.qml:222
+#: activities/ballcatch/Ballcatch.qml:221
 msgctxt "Ballcatch|"
 msgid ""
 "Tap both hands at the same time, to make the ball go in a straight line."
 msgstr ""
 "Tape sur les deux mains en même temps pour envoyer la balle droit devant."
 
-#: activities/ballcatch/Ballcatch.qml:224
+#: activities/ballcatch/Ballcatch.qml:223
 msgctxt "Ballcatch|"
 msgid ""
 "Press left and right arrow keys at the same time, to make the ball go in a "
@@ -2818,7 +2818,7 @@ msgstr ""
 "Cette image vous aide à calculer les valeurs des bits (le bit étant une "
 "unité, qui ne peut prendre que deux valeurs, 0 et 1)."
 
-#: activities/binary_bulb/BinaryBulb.qml:121
+#: activities/binary_bulb/BinaryBulb.qml:123
 #, qt-format
 msgctxt "BinaryBulb|"
 msgid "What is the binary representation of %1?"
@@ -3416,7 +3416,7 @@ msgstr ""
 "le bon ordre afin de faire transiter Tux à travers l'écluse, dans un sens "
 "puis dans l'autre."
 
-#: activities/canal_lock/CanalLock.qml:54
+#: activities/canal_lock/CanalLock.qml:57
 msgctxt "CanalLock|"
 msgid ""
 "Your goal is to lead Tux across the canal lock to get the wooden logs, using "
@@ -3426,7 +3426,7 @@ msgstr ""
 "les piles de bois. Pour cela il faut utiliser les différents mécanismes de "
 "l'écluse."
 
-#: activities/canal_lock/CanalLock.qml:56
+#: activities/canal_lock/CanalLock.qml:59
 msgctxt "CanalLock|"
 msgid ""
 "The vertical colored bars represent the water locks, which can be operated "
@@ -3437,7 +3437,7 @@ msgstr ""
 "les ouvre et les ferme en cliquant dessus. Deux portes de même type ne "
 "peuvent pas être utilisées en même temps."
 
-#: activities/canal_lock/CanalLock.qml:58
+#: activities/canal_lock/CanalLock.qml:61
 msgctxt "CanalLock|"
 msgid ""
 "The water level inside the lock will change according to the side of the "
@@ -6051,12 +6051,12 @@ msgstr ""
 "représentation d'un voltage presque égal à 0 volt, et 1 la représentation "
 "d'un voltage presque égal au voltage d'entrée du circuit."
 
-#: activities/digital_electricity/DigitalElectricity.qml:245
+#: activities/digital_electricity/DigitalElectricity.qml:248
 msgctxt "DigitalElectricity|"
 msgid "Input"
 msgstr "Entrée"
 
-#: activities/digital_electricity/DigitalElectricity.qml:263
+#: activities/digital_electricity/DigitalElectricity.qml:266
 msgctxt "DigitalElectricity|"
 msgid "Output"
 msgstr "Sortie"
@@ -14064,7 +14064,7 @@ msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: move the spaceship"
 msgstr "Flèches gauche et droite : déplacer le vaisseau"
 
-#: activities/gravity/Gravity.qml:210
+#: activities/gravity/Gravity.qml:209
 msgctxt "Gravity|"
 msgid ""
 "Gravity is universal and Newton's law of universal gravitation extends "
@@ -14077,7 +14077,7 @@ msgstr ""
 "deux objets dépend directement de leurs masses et est inversement "
 "proportionnelle au carré de la distance qui sépare leurs centres."
 
-#: activities/gravity/Gravity.qml:214
+#: activities/gravity/Gravity.qml:213
 msgctxt "Gravity|"
 msgid ""
 "Since the gravitational force is directly proportional to the mass of both "
@@ -14090,7 +14090,7 @@ msgstr ""
 "des objets devient importante, plus la force gravitationnelle d'attraction "
 "entre eux augmente."
 
-#: activities/gravity/Gravity.qml:217
+#: activities/gravity/Gravity.qml:216
 msgctxt "Gravity|"
 msgid ""
 "But as this force is inversely proportional to the square of the distance "
@@ -14101,7 +14101,7 @@ msgstr ""
 "les deux objets, elle diminue rapidement avec l'augmentation de cette "
 "distance."
 
-#: activities/gravity/Gravity.qml:220
+#: activities/gravity/Gravity.qml:219
 msgctxt "Gravity|"
 msgid ""
 "Your goal is to move the spaceship and avoid hitting the planets until you "
@@ -14112,7 +14112,7 @@ msgstr ""
 "t'écraser sur les planètes qui défilent. La flèche indique la direction de "
 "la force agissant sur le vaisseau."
 
-#: activities/gravity/Gravity.qml:223
+#: activities/gravity/Gravity.qml:222
 msgctxt "Gravity|"
 msgid ""
 "Try to stay near the center of the screen, and anticipate by looking at the "
@@ -15091,31 +15091,31 @@ msgstr ""
 "Flèches gauche et droite : aux premiers niveaux, se déplacer sur le côté. "
 "Aux niveaux suivants, tourner le vaisseau."
 
-#: activities/land_safe/LandSafe.qml:580
+#: activities/land_safe/LandSafe.qml:583
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Fuel: %1"
 msgstr "Essence : %1"
 
-#: activities/land_safe/LandSafe.qml:590
+#: activities/land_safe/LandSafe.qml:593
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Altitude: %1"
 msgstr "Altitude : %1"
 
-#: activities/land_safe/LandSafe.qml:600
+#: activities/land_safe/LandSafe.qml:603
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Velocity: %1"
 msgstr "Vitesse : %1"
 
-#: activities/land_safe/LandSafe.qml:611
+#: activities/land_safe/LandSafe.qml:614
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Acceleration: %1"
 msgstr "Accélération : %1"
 
-#: activities/land_safe/LandSafe.qml:645
+#: activities/land_safe/LandSafe.qml:648
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Gravity: %1"
@@ -15583,31 +15583,31 @@ msgstr ""
 "jusqu'à ce que le nombre d'oranges corresponde à la quantité demandée. "
 "Clique sur le bouton « Ok » pour valider ta réponse."
 
-#: activities/learn_decimals/Learn_decimals.qml:112
+#: activities/learn_decimals/Learn_decimals.qml:115
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the number: %1"
 msgstr "Affiche le nombre : %1"
 
-#: activities/learn_decimals/Learn_decimals.qml:113
+#: activities/learn_decimals/Learn_decimals.qml:116
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the result of: %1 + %2"
 msgstr "Affiche le résultat de : %1 + %2"
 
-#: activities/learn_decimals/Learn_decimals.qml:114
+#: activities/learn_decimals/Learn_decimals.qml:117
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the result of: %1 - %2"
 msgstr "Affiche le résultat de : %1 - %2"
 
-#: activities/learn_decimals/Learn_decimals.qml:115
+#: activities/learn_decimals/Learn_decimals.qml:118
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Represent the quantity: %1"
 msgstr "Représente la quantité : %1"
 
-#: activities/learn_decimals/Learn_decimals.qml:568
+#: activities/learn_decimals/Learn_decimals.qml:571
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Enter the result: %1"
@@ -19165,20 +19165,20 @@ msgstr ""
 "Identifie les notes de façon correcte et atteint un score de 100 % pour "
 "finir le niveau."
 
-#: activities/note_names/NoteNames.qml:175
+#: activities/note_names/NoteNames.qml:178
 #, qt-format
 msgctxt "NoteNames|"
 msgid "New note: %1"
 msgstr "Nouvelle note : %1"
 
 #. The following translation represents percentage.
-#: activities/note_names/NoteNames.qml:263
+#: activities/note_names/NoteNames.qml:266
 #, qt-format
 msgctxt "NoteNames|"
 msgid "%1%"
 msgstr "%1 %"
 
-#: activities/note_names/NoteNames.qml:453
+#: activities/note_names/NoteNames.qml:452
 msgctxt "NoteNames|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -19188,12 +19188,12 @@ msgstr ""
 "son même si les voix et les effets sont désactivés dans la configuration "
 "principale."
 
-#: activities/note_names/NoteNames.qml:454
+#: activities/note_names/NoteNames.qml:453
 msgctxt "NoteNames|"
 msgid "Quit"
 msgstr "Quitter"
 
-#: activities/note_names/NoteNames.qml:455
+#: activities/note_names/NoteNames.qml:454
 msgctxt "NoteNames|"
 msgid "Continue"
 msgstr "Continuer"
@@ -20475,7 +20475,7 @@ msgctxt "melodies|"
 msgid "Finland"
 msgstr "Finlande"
 
-#: activities/piano_composition/MelodyList.qml:55
+#: activities/piano_composition/MelodyList.qml:70
 msgctxt "MelodyList|"
 msgid "Melodies"
 msgstr "Mélodies"
@@ -21433,23 +21433,23 @@ msgstr ""
 "principale</b> pour ajouter votre code, clique sur l'étiquette <b>Boucle</b> "
 "ou <b>Code principal</b>."
 
-#: activities/programmingMaze/ProgrammingMaze.qml:190
+#: activities/programmingMaze/ProgrammingMaze.qml:193
 #, qt-format
 msgctxt "ProgrammingMaze|"
 msgid "Reach the fish in less than %1 instructions."
 msgstr "Atteint le poisson en moins de %1 instructions."
 
-#: activities/programmingMaze/ProgrammingMaze.qml:254
+#: activities/programmingMaze/ProgrammingMaze.qml:257
 msgctxt "ProgrammingMaze|"
 msgid "Main function"
 msgstr "Code principal"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:282
+#: activities/programmingMaze/ProgrammingMaze.qml:285
 msgctxt "ProgrammingMaze|"
 msgid "Procedure"
 msgstr "Fonction"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:282
+#: activities/programmingMaze/ProgrammingMaze.qml:285
 msgctxt "ProgrammingMaze|"
 msgid "Loop"
 msgstr "Boucle"
@@ -21532,7 +21532,7 @@ msgctxt "ActivityInfo|"
 msgid "Enter or Return: submit your answer"
 msgstr "Entrée ou Retour : donner ta réponse"
 
-#: activities/railroad/Railroad.qml:103
+#: activities/railroad/Railroad.qml:105
 msgctxt "Railroad|"
 msgid ""
 "Observe and remember the train before the timer ends and then drag the items "
@@ -21541,7 +21541,7 @@ msgstr ""
 "Observe le train durant un temps limité et rappelle-toi de sa composition "
 "pour pouvoir le recréer."
 
-#: activities/railroad/Railroad.qml:104
+#: activities/railroad/Railroad.qml:106
 msgctxt "Railroad|"
 msgid ""
 "If you forgot the model, you can click on the Hint button to view it again."
@@ -24473,7 +24473,7 @@ msgstr ""
 "Bravo ! Tu peux rejouer pour tester tes connaissances avec d'autres "
 "questions."
 
-#: activities/solar_system/SolarSystem.qml:155
+#: activities/solar_system/SolarSystem.qml:158
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -24490,17 +24490,17 @@ msgstr ""
 "évaluation</b> – Dans ce mode, vous pouvez tester vos connaissances au sujet "
 "du système solaire."
 
-#: activities/solar_system/SolarSystem.qml:155
+#: activities/solar_system/SolarSystem.qml:158
 msgctxt "SolarSystem|"
 msgid "Assessment"
 msgstr "Évaluation"
 
-#: activities/solar_system/SolarSystem.qml:155
+#: activities/solar_system/SolarSystem.qml:158
 msgctxt "SolarSystem|"
 msgid "Learning"
 msgstr "Apprentissage"
 
-#: activities/solar_system/SolarSystem.qml:159
+#: activities/solar_system/SolarSystem.qml:162
 msgctxt "SolarSystem|"
 msgid ""
 "Click on the Sun or any planet to reveal questions. Each question has 4 "
@@ -24509,7 +24509,7 @@ msgstr ""
 "Clique sur le Soleil ou une autre planète pour révéler les questions. Chaque "
 "question comporte 4 propositions, dont une seule est correcte."
 
-#: activities/solar_system/SolarSystem.qml:160
+#: activities/solar_system/SolarSystem.qml:163
 msgctxt "SolarSystem|"
 msgid ""
 "After a planet is clicked, the Closeness meter at the bottom-right corner of "
@@ -24525,7 +24525,7 @@ msgstr ""
 "suivant le compteur de proximité, ou les conseils qui indiquent la réponse "
 "exacte."
 
-#: activities/solar_system/SolarSystem.qml:165
+#: activities/solar_system/SolarSystem.qml:168
 msgctxt "SolarSystem|"
 msgid ""
 "There are 20 questions initially with 4 options each. The progress bar at "
@@ -24535,7 +24535,7 @@ msgstr ""
 "propositions. La barre de progrès en bas à droite de l'écran affiche ton "
 "score en pourcentage."
 
-#: activities/solar_system/SolarSystem.qml:166
+#: activities/solar_system/SolarSystem.qml:169
 msgctxt "SolarSystem|"
 msgid ""
 "If your answer is correct, your score increases.<br>If your answer is wrong, "
@@ -24549,7 +24549,7 @@ msgstr ""
 "<br>Au maximum, 25 questions te seront posées, après quoi aucune question ne "
 "sera rajoutée."
 
-#: activities/solar_system/SolarSystem.qml:167
+#: activities/solar_system/SolarSystem.qml:170
 msgctxt "SolarSystem|"
 msgid ""
 "You should score above 90% to pass the assessment and become a Solar System "
@@ -24558,7 +24558,7 @@ msgstr ""
 "Tu dois obtenir un score supérieur à 90 % pour devenir expert du système "
 "solaire !"
 
-#: activities/solar_system/SolarSystem.qml:349
+#: activities/solar_system/SolarSystem.qml:352
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -24568,7 +24568,7 @@ msgstr ""
 "1. Plus une planète est <b>éloignée</b> du Soleil, plus sa température est "
 "<b>basse</b>.<br><font color=\"#3bb0de\">%1</font>"
 
-#: activities/solar_system/SolarSystem.qml:350
+#: activities/solar_system/SolarSystem.qml:353
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -24579,7 +24579,7 @@ msgstr ""
 "l'on s'éloigne du Soleil</b>.<br><font color=\"#3bb0de\">%1</font>"
 
 #. find an equivalent rhyme in your language where the first letter of each word corresponds to the first letter of the planet in proper sequence
-#: activities/solar_system/SolarSystem.qml:353
+#: activities/solar_system/SolarSystem.qml:356
 msgctxt "SolarSystem|"
 msgid ""
 "3. Always remember this rhyme to learn the position of planets, examine the "
@@ -24590,12 +24590,12 @@ msgstr ""
 "moyen mnémonique : <b>M</b>e <b>V</b>oilà <b>T</b>out <b>M</b>ouillé, <b>J</"
 "b>e <b>S</b>uis <b>U</b>n <b>N</b>uage.<br>"
 
-#: activities/solar_system/SolarSystem.qml:355
+#: activities/solar_system/SolarSystem.qml:358
 msgctxt "SolarSystem|"
 msgid "Hint"
 msgstr "Conseil"
 
-#: activities/solar_system/SolarSystem.qml:363
+#: activities/solar_system/SolarSystem.qml:366
 msgctxt "SolarSystem|"
 msgid "View the solar system"
 msgstr "Afficher le système solaire"
@@ -25376,7 +25376,7 @@ msgstr ""
 "réactiver le système d'eau. Lorsque le système refonctionne et que Tux est "
 "dans la douche, appuie sur la douche pour qu'il se lave."
 
-#: activities/watercycle/Watercycle.qml:78
+#: activities/watercycle/Watercycle.qml:81
 msgctxt "Watercycle|"
 msgid ""
 "The sun is the main component of the water cycle. Click on the sun to start "
@@ -25385,14 +25385,14 @@ msgstr ""
 "Le Soleil est l'élément principal du cycle de l'eau. Appuie sur le Soleil "
 "pour démarrer le cycle de l'eau."
 
-#: activities/watercycle/Watercycle.qml:79
+#: activities/watercycle/Watercycle.qml:82
 msgctxt "Watercycle|"
 msgid "As the sun rises, the water of the sea starts heating and evaporates."
 msgstr ""
 "À partir du moment où le soleil se lève, l'eau de la mer commence à chauffer "
 "et s'évapore."
 
-#: activities/watercycle/Watercycle.qml:80
+#: activities/watercycle/Watercycle.qml:83
 msgctxt "Watercycle|"
 msgid ""
 "Water vapor condenses to form clouds and when clouds become heavy, it rains. "
@@ -25401,7 +25401,7 @@ msgstr ""
 "La vapeur d'eau se condense pour former des nuages et quand les nuages "
 "deviennent lourds, il pleut. Clique sur le nuage."
 
-#: activities/watercycle/Watercycle.qml:81
+#: activities/watercycle/Watercycle.qml:84
 msgctxt "Watercycle|"
 msgid ""
 "The rain causes rivers to swell up and this water is transported to us via "
@@ -25412,7 +25412,7 @@ msgstr ""
 "à travers les châteaux d'eau. Clique sur la pompe à moteur pour fournir de "
 "l'eau aux résidents."
 
-#: activities/watercycle/Watercycle.qml:83
+#: activities/watercycle/Watercycle.qml:86
 msgctxt "Watercycle|"
 msgid ""
 "See the tower filled with water. Activate the sewage treatment station by "
@@ -25421,19 +25421,19 @@ msgstr ""
 "Regarde la tour qui se remplit d'eau. Active la station de traitement des "
 "déchets en appuyant dessus."
 
-#: activities/watercycle/Watercycle.qml:84
+#: activities/watercycle/Watercycle.qml:87
 msgctxt "Watercycle|"
 msgid "Great, click on the shower, as Tux arrives home."
 msgstr "Super, appuies sur la douche dès que Tux arrive dans sa maison."
 
-#: activities/watercycle/Watercycle.qml:85
+#: activities/watercycle/Watercycle.qml:88
 msgctxt "Watercycle|"
 msgid ""
 "Fantastic, you have completed the water cycle. You can continue playing."
 msgstr ""
 "Félicitations, tu as complété le cycle de l'eau. Tu peux continuer à jouer."
 
-#: activities/watercycle/Watercycle.qml:112
+#: activities/watercycle/Watercycle.qml:115
 msgctxt "Watercycle|"
 msgid ""
 "The water cycle (also known as the hydrologic cycle) is the journey water "
@@ -25445,7 +25445,7 @@ msgstr ""
 "chaleur du Soleil fournit de l'énergie pour faire évaporer l'eau des "
 "étendues d'eau comme les océans."
 
-#: activities/watercycle/Watercycle.qml:115
+#: activities/watercycle/Watercycle.qml:118
 msgctxt "Watercycle|"
 msgid ""
 "Plants also lose water to the air through transpiration. The water vapor "
@@ -25457,7 +25457,7 @@ msgstr ""
 "dans les nuages. Quand les nuages rencontrent l'air frais au-dessus des "
 "terres, les précipitations se déclenchent et il pleut."
 
-#: activities/watercycle/Watercycle.qml:118
+#: activities/watercycle/Watercycle.qml:121
 msgctxt "Watercycle|"
 msgid ""
 "Some of the water is trapped between rock or clay layers, called "
@@ -25468,7 +25468,7 @@ msgstr ""
 "souterraines. Mais la plus grande partie de l'eau coule sous forme de "
 "ruissellement, pour finalement retourner dans les mers par les rivières."
 
-#: activities/watercycle/Watercycle.qml:120
+#: activities/watercycle/Watercycle.qml:123
 msgctxt "Watercycle|"
 msgid ""
 "Your goal is to complete the water cycle before Tux reaches home. Click on "
@@ -26283,22 +26283,22 @@ msgctxt "GCCreationHandler|"
 msgid "Delete"
 msgstr "Supprimer"
 
-#: core/IntroMessage.qml:174
+#: core/IntroMessage.qml:137
 msgctxt "IntroMessage|"
 msgid "Previous"
 msgstr "Précédent"
 
-#: core/IntroMessage.qml:190
+#: core/IntroMessage.qml:153
 msgctxt "IntroMessage|"
 msgid "Next"
 msgstr "Suivant"
 
-#: core/IntroMessage.qml:205
+#: core/IntroMessage.qml:168
 msgctxt "IntroMessage|"
 msgid "Skip"
 msgstr "Ignorer"
 
-#: core/IntroMessage.qml:205
+#: core/IntroMessage.qml:168
 msgctxt "IntroMessage|"
 msgid "Start"
 msgstr "Démarrer"
@@ -26393,47 +26393,47 @@ msgstr ""
 "session. Soit une simple valeur (2), soit un intervalle (3-6). Les valeurs "
 "doivent être entre 1 et 6."
 
-#: core/main.qml:233
+#: core/main.qml:273
 msgctxt "main|"
 msgid "Voices for your language"
 msgstr "Voix pour ta langue"
 
-#: core/main.qml:234
+#: core/main.qml:274
 msgctxt "main|"
 msgid "Full word image set"
 msgstr "Ensemble d'images complet externe"
 
-#: core/main.qml:235
+#: core/main.qml:275
 msgctxt "main|"
 msgid "Background music"
 msgstr "Musiques de fond"
 
-#: core/main.qml:240
+#: core/main.qml:280
 msgctxt "main|"
 msgid "Do you want to download the following external assets?"
 msgstr "Voulez-vous télécharger le contenu externe suivant ?"
 
-#: core/main.qml:245
+#: core/main.qml:285
 msgctxt "main|"
 msgid "Yes"
 msgstr "Oui"
 
-#: core/main.qml:255
+#: core/main.qml:295
 msgctxt "main|"
 msgid "No"
 msgstr "Non"
 
-#: core/main.qml:280
+#: core/main.qml:320
 msgctxt "main|"
 msgid "Welcome to GCompris!"
 msgstr "Bienvenue dans GCompris !"
 
-#: core/main.qml:281
+#: core/main.qml:321
 msgctxt "main|"
 msgid "You are running GCompris for the first time."
 msgstr "Vous lancez GCompris pour la première fois."
 
-#: core/main.qml:282
+#: core/main.qml:322
 msgctxt "main|"
 msgid ""
 "You should verify that your application settings especially your language is "
@@ -26445,18 +26445,18 @@ msgstr ""
 "langue sont installés. Vous pouvez faire ceci dans la boîte de dialogue des "
 "préférences."
 
-#: core/main.qml:284
+#: core/main.qml:324
 msgctxt "main|"
 msgid "Have Fun!"
 msgstr "Amuse-toi !"
 
-#: core/main.qml:286
+#: core/main.qml:326
 #, qt-format
 msgctxt "main|"
 msgid "Your current language is %1 (%2)."
 msgstr "Votre langue actuelle est %1 (%2)"
 
-#: core/main.qml:317
+#: core/main.qml:357
 msgctxt "main|"
 msgid "GCompris has been updated! Here are the new changes:<br/>"
 msgstr "GCompris a été mis à jour ! Voici les nouveaux ajouts :<br/>"
@@ -26466,22 +26466,22 @@ msgctxt "ReadyButton|"
 msgid "I am Ready"
 msgstr "Je suis prêt"
 
-#: core/Tutorial.qml:175
+#: core/Tutorial.qml:137
 msgctxt "Tutorial|"
 msgid "Previous"
 msgstr "Précédent"
 
-#: core/Tutorial.qml:195
+#: core/Tutorial.qml:157
 msgctxt "Tutorial|"
 msgid "Next"
 msgstr "Suivant"
 
-#: core/Tutorial.qml:214
+#: core/Tutorial.qml:176
 msgctxt "Tutorial|"
 msgid "Skip"
 msgstr "Ignorer"
 
-#: core/Tutorial.qml:214
+#: core/Tutorial.qml:176
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Démarrer"
