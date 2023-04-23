@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2023-02-17 01:32+0400\n"
+"PO-Revision-Date: 2023-04-22 12:00+0400\n"
 "Last-Translator: Kheyyam <xxmn77@gmail.com>\n"
 "Language-Team: Azerbaijani <kde-i18n-doc@kde.org>\n"
 "Language: az\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Qt-Contexts: true\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 22.12.2\n"
+"X-Generator: Lokalize 22.12.3\n"
 
 #. Activity title
 #: activities/advanced_colors/ActivityInfo.qml:15
@@ -24996,38 +24996,30 @@ msgid "Type the complete word as it falls, before it reaches the ground."
 msgstr "Yerə çatana qədər sözü tam şəkildə yazmağa çalışın."
 
 #: core/ChangeLog.qml:30
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid ""
-#| "New command-line option to list all the activities and start on a "
-#| "specific one"
 msgctxt "ChangeLog|"
 msgid ""
 "New command-line option (--difficulty {value|min-max}) to start GCompris at "
 "specific difficulty"
 msgstr ""
-"Bütün çalışmaların siyahısını göstərmək verilmiş bir əmri başlatmaq üçün "
-"yeni əmr sətri parametri"
+"Yeni əmr sətri parametri (--difficulty {value|min-max}) GCompris-i verilmiş "
+"çətinlik səviyyəsi ilə başlatmaq üçündür"
 
 #: core/ChangeLog.qml:31
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translation updated for Russian"
 msgctxt "ChangeLog|"
 msgid "Many translation updates"
-msgstr "Rus dili üçün tərcümə yeniləndi"
+msgstr "Daha çox tərcümə yenilənmələri"
 
 #: core/ChangeLog.qml:32 core/ChangeLog.qml:45 core/ChangeLog.qml:63
 #: core/ChangeLog.qml:78 core/ChangeLog.qml:83 core/ChangeLog.qml:89
 msgctxt "ChangeLog|"
 msgid "Many new images"
-msgstr "Çoxlu yeni şəkillər"
+msgstr "Çoxlu yeni dillər"
 
 #: core/ChangeLog.qml:33 core/ChangeLog.qml:46 core/ChangeLog.qml:84
 #: core/ChangeLog.qml:90
 msgctxt "ChangeLog|"
 msgid "Many bug fixes"
-msgstr "Bi sıra səhvlərin aradan qaldırılması"
+msgstr "Çoxsaylı xəta düzəlişləri"
 
 #: core/ChangeLog.qml:37
 msgctxt "ChangeLog|"
@@ -25856,6 +25848,8 @@ msgid ""
 "Specify the range of activity difficulty to display for the session. Either "
 "a single value (2), or a range (3-6). Values must be between 1 and 6."
 msgstr ""
+"Sesiyada göstəriləcək çalışmanın çətinlik səviyyəsini təyin et. Ya tək vahid "
+"(2), ya da aralıq (3-6). Dəyərlər 1 və 6 arasında olmalıdır."
 
 #: core/main.qml:273
 msgctxt "main|"
