@@ -1,8 +1,8 @@
-# Giovanni Sora <g.sora@tiscali.it>, 2020, 2021, 2022.
+# Giovanni Sora <g.sora@tiscali.it>, 2020, 2021, 2022, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2022-12-19 12:33+0100\n"
+"PO-Revision-Date: 2023-04-28 23:09+0200\n"
 "Last-Translator: giovanni <g.sora@tiscali.it>\n"
 "Language-Team: Interlingua <kde-i18n-doc@kde.org>\n"
 "Language: ia\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Qt-Contexts: true\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 21.12.3\n"
+"X-Generator: Lokalize 23.04.0\n"
 
 #. Activity title
 #: activities/advanced_colors/ActivityInfo.qml:15
@@ -1949,7 +1949,7 @@ msgstr ""
 #: activities/baby_wordprocessor/ActivityInfo.qml:32
 msgctxt "ActivityInfo|"
 msgid "Ctrl + V: paste copied or cut text"
-msgstr ""
+msgstr "Ctrl + V: colla copiate o talia texto"
 
 #: activities/baby_wordprocessor/ActivityInfo.qml:33
 msgctxt "ActivityInfo|"
@@ -8081,7 +8081,7 @@ msgstr ""
 #: activities/fractions_create/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Create the fractions"
-msgstr ""
+msgstr "Crea le fractiones"
 
 #. Help title
 #: activities/fractions_create/ActivityInfo.qml:16
@@ -8103,7 +8103,7 @@ msgstr "Trova le fraction representate"
 #: activities/fractions_create/resource/1/Data.qml:9
 msgctxt "Data|"
 msgid "Simplified fractions with a pie."
-msgstr ""
+msgstr "Fractiones simplificate con un torta."
 
 #: activities/fractions_create/resource/1/Data.qml:18
 #: activities/fractions_create/resource/3/Data.qml:17
@@ -8111,14 +8111,14 @@ msgstr ""
 #: activities/fractions_create/resource/3/Data.qml:29
 msgctxt "Data|"
 msgid "Select one half of the pie."
-msgstr ""
+msgstr "Selige un medietate del torta."
 
 #: activities/fractions_create/resource/1/Data.qml:24
 #: activities/fractions_create/resource/3/Data.qml:35
 #: activities/fractions_create/resource/3/Data.qml:49
 msgctxt "Data|"
 msgid "Select one-third of the pie."
-msgstr ""
+msgstr "Selige un tertio del torta."
 
 #: activities/fractions_create/resource/1/Data.qml:30
 #: activities/fractions_create/resource/3/Data.qml:41
@@ -8137,7 +8137,7 @@ msgstr "Selige un quarto de torta"
 #: activities/fractions_create/resource/3/Data.qml:67
 msgctxt "Data|"
 msgid "Select two-fifths of the pie."
-msgstr ""
+msgstr "Selige duo-quintos del torta."
 
 #: activities/fractions_create/resource/1/Data.qml:50
 msgctxt "Data|"
@@ -8185,90 +8185,60 @@ msgstr ""
 #: activities/fractions_create/resource/4/Data.qml:17
 #: activities/fractions_create/resource/4/Data.qml:23
 #: activities/fractions_create/resource/4/Data.qml:29
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select one half of the rectangle."
 msgctxt "Data|"
 msgid "Select one half of the square."
-msgstr "Selige un medietate del rectangulo."
+msgstr "Selige un medietate del quadrato."
 
 #: activities/fractions_create/resource/2/Data.qml:24
 #: activities/fractions_create/resource/4/Data.qml:35
 #: activities/fractions_create/resource/4/Data.qml:49
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select one-third of the rectangle."
 msgctxt "Data|"
 msgid "Select one-third of the square."
-msgstr "Selige un tertio del rectangulo."
+msgstr "Selige un tertio del quadrato."
 
 #: activities/fractions_create/resource/2/Data.qml:30
 #: activities/fractions_create/resource/4/Data.qml:41
 #: activities/fractions_create/resource/4/Data.qml:55
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select two-thirds of the rectangle."
 msgctxt "Data|"
 msgid "Select two-thirds of the square."
-msgstr "Selige duo tertios del rectangulo."
+msgstr "Selige duo tertios del quadrato."
 
 #: activities/fractions_create/resource/2/Data.qml:36
 #: activities/fractions_create/resource/4/Data.qml:61
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select one-quarter of the pie."
 msgctxt "Data|"
 msgid "Select one-quarter of the square."
-msgstr "Selige un quarto de torta"
+msgstr "Selige un quarto del quadrato."
 
 #: activities/fractions_create/resource/2/Data.qml:42
 #: activities/fractions_create/resource/4/Data.qml:67
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select three-fifths of the pie."
 msgctxt "Data|"
 msgid "Select two-fifths of the square."
-msgstr "Selige ltres quintos del torta."
+msgstr "Selige duo quintos del quadrato."
 
 #: activities/fractions_create/resource/2/Data.qml:50
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select one-quarter of the pie."
 msgctxt "Data|"
 msgid "Select one square and one-quarter of a square."
-msgstr "Selige un quarto de torta"
+msgstr "Selige un quadrato e un quarto de un quadrato."
 
 #: activities/fractions_create/resource/2/Data.qml:56
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select one-quarter of the pie."
 msgctxt "Data|"
 msgid "Select one square and two-fifths of a square."
-msgstr "Selige un quarto de torta"
+msgstr "Selige un quadrato eduo quintos de un quadrato."
 
 #: activities/fractions_create/resource/2/Data.qml:62
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select one-quarter of the pie."
 msgctxt "Data|"
 msgid "Select one square and one-third of a square."
-msgstr "Selige un quarto de torta"
+msgstr "Selige un quadrato e un tertio de un quadrato."
 
 #: activities/fractions_create/resource/2/Data.qml:68
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select one half of the rectangle."
 msgctxt "Data|"
 msgid "Select one square and one half of a square."
-msgstr "Selige un medietate del rectangulo."
+msgstr "Selige un quadrato e un medietate de un quadrato."
 
 #: activities/fractions_create/resource/2/Data.qml:74
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select one-quarter of the pie."
 msgctxt "Data|"
 msgid "Select one square and three-quarters of a square."
-msgstr "Selige un quarto de torta"
+msgstr "Selige un quadrato e un tres-quartos de un quadrato."
 
 #: activities/fractions_create/resource/3/Data.qml:9
 msgctxt "Data|"
@@ -8278,7 +8248,7 @@ msgstr ""
 #: activities/fractions_create/resource/3/Data.qml:73
 msgctxt "Data|"
 msgid "Select three-fifths of the pie."
-msgstr "Selige ltres quintos del torta."
+msgstr "Selige tres quintos del torta."
 
 #: activities/fractions_create/resource/4/Data.qml:9
 msgctxt "Data|"
@@ -8286,17 +8256,14 @@ msgid "Non-simplified fractions with a square."
 msgstr ""
 
 #: activities/fractions_create/resource/4/Data.qml:73
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select three-fifths of the pie."
 msgctxt "Data|"
 msgid "Select three-fifths of the square."
-msgstr "Selige ltres quintos del torta."
+msgstr "Selige tres quintos del quadrato."
 
 #: activities/fractions_create/resource/5/Data.qml:9
 msgctxt "Data|"
 msgid "Decimal numbers with a pie."
-msgstr "Numeros decimal conun torta."
+msgstr "Numeros decimal con un torta."
 
 #: activities/fractions_create/resource/5/Data.qml:18
 msgctxt "Data|"
@@ -8345,85 +8312,55 @@ msgid "Select 1.75 pies."
 msgstr ""
 
 #: activities/fractions_create/resource/6/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Decimal numbers with a pie."
 msgctxt "Data|"
 msgid "Decimal numbers with a square."
-msgstr "Numeros decimal conun torta."
+msgstr "Numeros decimal con un quadrato."
 
 #: activities/fractions_create/resource/6/Data.qml:18
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select 0.5 pie."
 msgctxt "Data|"
 msgid "Select 0.5 square."
-msgstr "Selectiona torta de 0.5."
+msgstr "Selectiona quadrato de 0.5."
 
 #: activities/fractions_create/resource/6/Data.qml:24
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select 0.25 pie."
 msgctxt "Data|"
 msgid "Select 0.25 square."
-msgstr "Selectiona 0.25 pie"
+msgstr "Selectiona quadrato de 0.25"
 
 #: activities/fractions_create/resource/6/Data.qml:30
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select 0.4 pie."
 msgctxt "Data|"
 msgid "Select 0.4 square."
-msgstr "Selectiona tort.a de 0.4"
+msgstr "Selectiona quadrato de 0.4"
 
 #: activities/fractions_create/resource/6/Data.qml:36
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select 0.75 pie."
 msgctxt "Data|"
 msgid "Select 0.75 square."
-msgstr "Selectiona 0.75 pie."
+msgstr "Selectiona quadrato de 0.75."
 
 #: activities/fractions_create/resource/6/Data.qml:42
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select 0.8 pie."
 msgctxt "Data|"
 msgid "Select 0.8 square."
-msgstr "Selectiona torta de 0.8."
+msgstr "Selectiona quadrato de 0.8."
 
 #: activities/fractions_create/resource/6/Data.qml:50
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select 0.25 pie."
 msgctxt "Data|"
 msgid "Select 1.25 squares."
-msgstr "Selectiona 0.25 pie"
+msgstr "Selectionas quadratos de 1.25"
 
 #: activities/fractions_create/resource/6/Data.qml:56
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select 0.4 pie."
 msgctxt "Data|"
 msgid "Select 1.4 squares."
-msgstr "Selectiona tort.a de 0.4"
+msgstr "Selectionas quadratos de 1.4"
 
 #: activities/fractions_create/resource/6/Data.qml:62
 #: activities/fractions_create/resource/6/Data.qml:68
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select 0.5 pie."
 msgctxt "Data|"
 msgid "Select 1.5 squares."
-msgstr "Selectiona torta de 0.5."
+msgstr "Selectionas quadratos de 1.5"
 
 #: activities/fractions_create/resource/6/Data.qml:74
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select 0.75 pie."
 msgctxt "Data|"
 msgid "Select 1.75 squares."
-msgstr "Selectiona 0.75 pie."
+msgstr "Selectionas quadratos de 1.75"
 
 #: activities/fractions_create/resource/7/Data.qml:9
 msgctxt "Data|"
@@ -8456,12 +8393,10 @@ msgstr ""
 #: activities/fractions_create/resource/8/Data.qml:42
 #: activities/fractions_create/resource/8/Data.qml:49
 #: activities/fractions_create/resource/8/Data.qml:56
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Select one half of the rectangle."
+#, qt-format
 msgctxt "Data|"
 msgid "Select %1% of the square."
-msgstr "Selige un medietate del rectangulo."
+msgstr "Selige %1% del quadrato."
 
 #: activities/fractions_create/resource/9/Data.qml:9
 msgctxt "Data|"
@@ -13406,7 +13341,7 @@ msgstr "arbore"
 #: activities/imagename/resource/board/board4_0.qml:74
 msgctxt "board4_0|"
 msgid "bicycle"
-msgstr ""
+msgstr "Bicycletta"
 
 #: activities/imagename/resource/board/board4_0.qml:82
 msgctxt "board4_0|"
@@ -23587,12 +23522,12 @@ msgstr "Autor:"
 #: core/DialogHelp.qml:53
 msgctxt "DialogHelp|"
 msgid "Prerequisite:"
-msgstr ""
+msgstr "Prerequisito"
 
 #: core/DialogHelp.qml:58
 msgctxt "DialogHelp|"
 msgid "Goal:"
-msgstr ""
+msgstr "Scopo:"
 
 #: core/DialogHelp.qml:63
 msgctxt "DialogHelp|"
