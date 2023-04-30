@@ -284,13 +284,14 @@ Rectangle {
                         delegate: Row {
                             height: datasetVisibleButton.selected ? objective.height : 0
                             visible: modelData.enabled
+                            spacing: 10
                             Image {
                                 id: difficultyIcon
                                 source: "qrc:/gcompris/src/core/resource/difficulty" +
                                 modelData.difficulty + ".svg";
                                 sourceSize.height: objective.indicatorImageHeight
                                 sourceSize.width: height
-                                anchors.verticalCenter: objective.verticalCenter
+                                anchors.top: objective.top
                             }
                             GCDialogCheckBox {
                                 id: objective
