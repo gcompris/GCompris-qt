@@ -23717,17 +23717,17 @@ msgctxt "DialogChooseLevel|"
 msgid "Options"
 msgstr "تنظیمات"
 
-#: core/DialogChooseLevel.qml:342
+#: core/DialogChooseLevel.qml:343
 msgctxt "DialogChooseLevel|"
 msgid "Cancel"
 msgstr "لغو"
 
-#: core/DialogChooseLevel.qml:350
+#: core/DialogChooseLevel.qml:351
 msgctxt "DialogChooseLevel|"
 msgid "Save"
 msgstr "ذخیره"
 
-#: core/DialogChooseLevel.qml:364
+#: core/DialogChooseLevel.qml:365
 msgctxt "DialogChooseLevel|"
 msgid "Save and start"
 msgstr "ذخیره و شروع"

@@ -28791,7 +28791,7 @@ msgctxt "DialogChooseLevel|"
 msgid "Options"
 msgstr "acción"
 
-#: core/DialogChooseLevel.qml:342
+#: core/DialogChooseLevel.qml:343
 #, fuzzy
 #| msgctxt "board5_0|"
 #| msgid "France"
@@ -28799,7 +28799,7 @@ msgctxt "DialogChooseLevel|"
 msgid "Cancel"
 msgstr "Francia"
 
-#: core/DialogChooseLevel.qml:350
+#: core/DialogChooseLevel.qml:351
 #, fuzzy
 #| msgctxt "BabyWordprocessor|"
 #| msgid "Save"
@@ -28807,7 +28807,7 @@ msgctxt "DialogChooseLevel|"
 msgid "Save"
 msgstr "Gardar"
 
-#: core/DialogChooseLevel.qml:364
+#: core/DialogChooseLevel.qml:365
 msgctxt "DialogChooseLevel|"
 msgid "Save and start"
 msgstr ""

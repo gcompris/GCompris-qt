@@ -25768,17 +25768,17 @@ msgctxt "DialogChooseLevel|"
 msgid "Options"
 msgstr "Mundësi"
 
-#: core/DialogChooseLevel.qml:342
+#: core/DialogChooseLevel.qml:343
 msgctxt "DialogChooseLevel|"
 msgid "Cancel"
 msgstr "Anulojeni"
 
-#: core/DialogChooseLevel.qml:350
+#: core/DialogChooseLevel.qml:351
 msgctxt "DialogChooseLevel|"
 msgid "Save"
 msgstr "Ruaje"
 
-#: core/DialogChooseLevel.qml:364
+#: core/DialogChooseLevel.qml:365
 msgctxt "DialogChooseLevel|"
 msgid "Save and start"
 msgstr "Ruaje dhe nise"
