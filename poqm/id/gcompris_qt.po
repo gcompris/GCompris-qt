@@ -25841,17 +25841,17 @@ msgctxt "DialogChooseLevel|"
 msgid "Options"
 msgstr "Pilihan"
 
-#: core/DialogChooseLevel.qml:342
+#: core/DialogChooseLevel.qml:343
 msgctxt "DialogChooseLevel|"
 msgid "Cancel"
 msgstr "Batal"
 
-#: core/DialogChooseLevel.qml:350
+#: core/DialogChooseLevel.qml:351
 msgctxt "DialogChooseLevel|"
 msgid "Save"
 msgstr "Simpan"
 
-#: core/DialogChooseLevel.qml:364
+#: core/DialogChooseLevel.qml:365
 msgctxt "DialogChooseLevel|"
 msgid "Save and start"
 msgstr "Simpan dan mulai"

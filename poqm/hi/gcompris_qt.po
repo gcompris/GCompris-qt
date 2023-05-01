@@ -28654,7 +28654,7 @@ msgctxt "DialogChooseLevel|"
 msgid "Options"
 msgstr "कार्य"
 
-#: core/DialogChooseLevel.qml:342
+#: core/DialogChooseLevel.qml:343
 #, fuzzy
 #| msgctxt "board5_0|"
 #| msgid "France"
@@ -28662,7 +28662,7 @@ msgctxt "DialogChooseLevel|"
 msgid "Cancel"
 msgstr "फ्रांस"
 
-#: core/DialogChooseLevel.qml:350
+#: core/DialogChooseLevel.qml:351
 #, fuzzy
 #| msgctxt "BalanceboxEditor|"
 #| msgid "Save"
@@ -28670,7 +28670,7 @@ msgctxt "DialogChooseLevel|"
 msgid "Save"
 msgstr "सहेजें"
 
-#: core/DialogChooseLevel.qml:364
+#: core/DialogChooseLevel.qml:365
 msgctxt "DialogChooseLevel|"
 msgid "Save and start"
 msgstr ""

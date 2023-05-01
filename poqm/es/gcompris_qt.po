@@ -25834,17 +25834,17 @@ msgctxt "DialogChooseLevel|"
 msgid "Options"
 msgstr "Opciones"
 
-#: core/DialogChooseLevel.qml:342
+#: core/DialogChooseLevel.qml:343
 msgctxt "DialogChooseLevel|"
 msgid "Cancel"
 msgstr "Cancelar"
 
-#: core/DialogChooseLevel.qml:350
+#: core/DialogChooseLevel.qml:351
 msgctxt "DialogChooseLevel|"
 msgid "Save"
 msgstr "Guardar"
 
-#: core/DialogChooseLevel.qml:364
+#: core/DialogChooseLevel.qml:365
 msgctxt "DialogChooseLevel|"
 msgid "Save and start"
 msgstr "Guardar e iniciar"
