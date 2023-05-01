@@ -142,7 +142,7 @@ ApplicationSettings::ApplicationSettings(const QString &configPath, QObject *par
 #if defined(UBUNTUTOUCH)
     m_userDataPath = m_config.value(USERDATA_PATH_KEY, QStandardPaths::writableLocation(QStandardPaths::AppDataLocation)).toString();
 #else
-    m_userDataPath = m_config.value(USERDATA_PATH_KEY, QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + QLatin1String("/GCompris")).toString();
+    m_userDataPath = m_config.value(USERDATA_PATH_KEY, QString(QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + QLatin1String("/GCompris"))).toString();
 #endif
     m_renderer = m_config.value(RENDERER_KEY, GRAPHICAL_RENDERER).toString();
     m_config.endGroup();

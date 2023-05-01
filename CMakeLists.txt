@@ -105,7 +105,13 @@ if(ANDROID)
 endif()
 
 # Starting C++20, emit() is a function in standard library. To avoid using Qt keywords like signals, slots, emit, we define this variable
-add_definitions(-DQT_NO_KEYWORDS)
+add_definitions(
+    -DQT_USE_QSTRINGBUILDER
+    -DQT_NO_CAST_TO_ASCII
+    -DQT_NO_URL_CAST_FROM_STRING
+    -DQT_NO_KEYWORDS
+    -DQT_NO_FOREACH
+)
 
 ## For now we workaround CMAKE_ANDROID_NDK_TOOLCHAIN_VERSION to clang with a command variable, so not needed
 # if(ANDROID AND ECM_VERSION VERSION_LESS "5.56.0" AND Qt5Core_VERSION VERSION_GREATER "5.11.99")
