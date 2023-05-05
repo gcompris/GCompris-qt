@@ -3,7 +3,7 @@
 # Ferdinand Galko <galko.ferdinand@gmail.com>, 2015, 2019.
 # Matej Mrenica <matejm98mthw@gmail.com>, 2020.
 # Jose Riha <jose1711@gmail.com>, 2020.
-# Miroslav Ďurian <aasami@gmail.com>, 2023.
+# Miroslav Ďurian <aasami@gmail.com>, 2022, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_qt\n"
@@ -43,7 +43,7 @@ msgstr "Naučiť sa rozpoznávať nezvyčajné farby."
 #: activities/positions/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid "Can read."
-msgstr "Vedieť čítať."
+msgstr "Vie čítať."
 
 #. Help manual
 #: activities/advanced_colors/ActivityInfo.qml:24
@@ -2774,7 +2774,7 @@ msgstr ""
 #: activities/braille_fun/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Space: open or close the braille chart"
-msgstr ""
+msgstr "Medzerník: otvoriť alebo zavriet Brailovu tabuľku"
 
 #: activities/braille_alphabets/braille_alphabets.js:48
 #: activities/braille_alphabets/braille_alphabets.js:58
@@ -3016,7 +3016,7 @@ msgstr ""
 #: activities/find_the_day/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Space or Enter: validate your answer"
-msgstr ""
+msgstr "Medzerník alebo Enter: overiť odpoveď"
 
 #: activities/calendar/Calendar.qml:309
 msgctxt "Calendar|"
@@ -5195,6 +5195,8 @@ msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
 "voices or effects are disabled in the main configuration."
 msgstr ""
+"Táto aktivita vyžaduje zvuk, takže bude prehrávať niektoré zvuky aj keď sú "
+"hlasové odozvy a efekty vypnuté v hlavných nastaveniach."
 
 #: activities/colors/FindIt.qml:236
 msgctxt "FindIt|"
@@ -6901,6 +6903,8 @@ msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
 "voices or effects are disabled in the main configuration."
 msgstr ""
+"Táto aktivita vyžaduje zvuk, takže bude prehrávať niektoré zvuky aj keď sú "
+"hlasové odozvy a efekty vypnuté v hlavných nastaveniach."
 
 #: activities/explore_farm_animals/ExploreLevels.qml:305
 msgctxt "ExploreLevels|"
@@ -14092,7 +14096,7 @@ msgid ""
 "Guide the Number Muncher to all the expressions that do not equal the number "
 "at the bottom of the screen."
 msgstr ""
-"Doveďte Čísložrúta na všetky výrazy, ktoré sa nerovnajú číslu uvedenému  v "
+"Doveďte Čísložrúta na všetky výrazy, ktoré sa nerovnajú číslu uvedenému v "
 "spodnej časti obrazovky."
 
 #. Help goal
@@ -14674,6 +14678,8 @@ msgid ""
 "corresponding voice is available, you will hear the word to find when three "
 "attempts are remaining."
 msgstr ""
+"Ak je aktívna voľba \"Nájsť vyslovené slovo...\" a ak je dostupná príslušná "
+"hlasová odozva, budete počuť slovo, ktoré máte nájsť na tri pokusy."
 
 #: activities/hangman/hangman.js:215
 #, qt-format
@@ -15471,15 +15477,9 @@ msgstr "Zem"
 #: activities/land_safe/resource/2/Data.qml:13
 msgctxt "Data|"
 msgid "The spaceship rotates when you use the direction keys."
-msgstr ""
+msgstr "Vesmírna loď sa otáča použitím smerových klávesov."
 
 #: activities/land_safe/resource/2/Data.qml:24
-#, fuzzy
-#| msgctxt "land_safe|"
-#| msgid ""
-#| "The up and down keys control the thrust of the rear engine.<br/>The right "
-#| "and left keys now control the rotation of the ship.<br/>To move the ship "
-#| "in horizontal direction you must first rotate and then accelerate it."
 msgctxt "Data|"
 msgid ""
 "The up and down keys control the thrust of the rear engine.<br/>The right "
@@ -15487,8 +15487,8 @@ msgid ""
 "horizontal direction you must first rotate and then accelerate."
 msgstr ""
 "Klávesy hore a dole ovládajú ťah zadného motora.<br/>Klávesy vpravo a vľavo "
-"teraz ovládajú rotáciu lode.<br/>Ak sa chcete loďou pohybovať v "
-"horizontálnom smere, musíte ju najskôr otočiť a potom ju zrýchliť."
+"teraz ovládajú rotáciu lode.<br/>Ak sa chcete loďou pohybovať vodorovne, "
+"musíte ju najskôr otočiť a potom zrýchliť."
 
 #. Activity title
 #: activities/lang/ActivityInfo.qml:21
@@ -15510,13 +15510,6 @@ msgstr "Obohaťte si slovnú zásobu vo svojom jazyku alebo v cudzom jazyku."
 
 #. Help manual
 #: activities/lang/ActivityInfo.qml:30
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Review a set of words. Each word is shown with a voice, a text and an "
-#| "image.<br/>When done, you are suggested an exercise in which, given the "
-#| "voice, you must find the right word. In the configuration, you can select "
-#| "the language you want to learn."
 msgctxt "ActivityInfo|"
 msgid ""
 "Review a set of words. Each word is shown with a voice, a text and an image."
@@ -15524,14 +15517,14 @@ msgid ""
 "voice and the image, then only from the voice, and finally an exercise to "
 "type the text."
 msgstr ""
-"Preskúmajte súbor slov. Každé slovo je znázornené hlasom, textom a obrázkom."
-"<br/>Po dokončení sa vám navrhne cvičenie, dané hlasom musíte nájsť správne "
-"slovo. V konfigurácii môžete vybrať jazyk, ktorý sa chcete naučiť."
+"Preskúmajte sadu slov. Každé slovo je znázornené hlasom, textom a obrázkom."
+"<br/>Po dokončení dostanete cvičenie, na rozpoznanie textu z hlasu a "
+"obrázku. Potom len z hlasu a nakoniec cvičenie na písanie textu."
 
 #: activities/lang/ActivityInfo.qml:32
 msgctxt "ActivityInfo|"
 msgid "In the configuration, you can select the language you want to learn."
-msgstr ""
+msgstr "V nastaveniach môžete vybrať jazyk, ktorý sa chcete naučiť."
 
 #: activities/lang/ActivityInfo.qml:35
 msgctxt "ActivityInfo|"
@@ -16020,7 +16013,7 @@ msgstr "Číslicové vyjadrenie."
 #: activities/learn_digits/ActivityConfig.qml:38
 msgctxt "ActivityConfig|"
 msgid "Enable voices"
-msgstr "Povoliť hlasy"
+msgstr "Povoliť hlasové odozvy"
 
 #. Activity title
 #: activities/learn_digits/ActivityInfo.qml:15
@@ -17100,6 +17093,8 @@ msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
 "voices or effects are disabled in the main configuration."
 msgstr ""
+"Táto aktivita vyžaduje zvuk, takže bude prehrávať niektoré zvuky aj keď sú "
+"hlasové odozvy a efekty vypnuté v hlavných nastaveniach."
 
 #: activities/melody/Melody.qml:286
 msgctxt "Melody|"
@@ -17178,7 +17173,7 @@ msgstr ""
 #: activities/memory/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Space or Enter: flip the selected card"
-msgstr ""
+msgstr "Medzerník alebo Enter: otočiť zvolenú kartu"
 
 #: activities/memory-case-association/ActivityConfig.qml:23
 #: activities/memory-enumerate/ActivityConfig.qml:23
@@ -18288,12 +18283,9 @@ msgstr "Pamäťová hra s obrázkami"
 
 #. Help title
 #: activities/memory/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Flip the cards to find the matching pairs"
 msgctxt "ActivityInfo|"
 msgid "Flip the cards to find the matching pairs."
-msgstr "Otáčaj karty a nájdi zhodné páry"
+msgstr "Otáčaj karty a nájdi zhodné páry."
 
 #: activities/memory/math_util.js:15 activities/memory/math_util.js:18
 msgctxt "math_util|"
@@ -18321,6 +18313,8 @@ msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
 "voices or effects are disabled in the main configuration."
 msgstr ""
+"Táto aktivita vyžaduje zvuk, takže bude prehrávať niektoré zvuky aj keď sú "
+"hlasové odozvy a efekty vypnuté v hlavných nastaveniach."
 
 #: activities/memory/MemoryCommon.qml:326
 msgctxt "MemoryCommon|"
@@ -18356,11 +18350,6 @@ msgstr ""
 
 #. Help prerequisite
 #: activities/menu/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Some of the activities are game orientated, but nonetheless still "
-#| "educational."
 msgctxt "ActivityInfo|"
 msgid "Some of the activities are game orientated, but still educational."
 msgstr "Niektoré z aktivít sú herne orientované, ale stále výukové."
@@ -18374,6 +18363,10 @@ msgid ""
 "At the bottom of the screen is the GCompris control bar. Notice that you can "
 "hide or show the bar by touching its anchor."
 msgstr ""
+"Vyberte ikonu pre spustenie aktivity alebo pre zobrazenie zoznamu aktivít v "
+"skupine.\n"
+"V spodnej časti obrazovky je ovládací panel GCompris.\n"
+"Všimnite si, že sa dá skryť a opäť zobraziť kliknutím na jeho ukotvenie."
 
 #: activities/menu/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
@@ -18381,16 +18374,21 @@ msgid ""
 "The following icons are displayed:\n"
 "(note that each icon is displayed only if available in the current activity)"
 msgstr ""
+"Zobrazené sú nasledujúce ikony:\n"
+"(všimnite si, že každá z ikon sa zobrazuje len ak je dostupná pre danú "
+"aktivitu)"
 
 #: activities/menu/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "Home - Exit an activity, go back to menu (Ctrl+W or Escape key)"
 msgstr ""
+"Dom - Opustiť aktivitu a vrátiť sa do hlavnej ponuky (Ctrl+W alebo kláves "
+"Esc)"
 
 #: activities/menu/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Arrows - Display the current level. Click to select another level"
-msgstr ""
+msgstr "Šípky - Zobrazujú aktuálnu úroveň. Klinutím je možné zmeniť úroveň"
 
 #: activities/menu/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
@@ -18405,7 +18403,7 @@ msgstr "Otáznik - Pomocník"
 #: activities/menu/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid "Reload - Start the activity from the beginning again"
-msgstr ""
+msgstr "Opakovať - Začne aktivitu opäť odznova"
 
 #: activities/menu/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
@@ -18413,12 +18411,9 @@ msgid "Tool - The configuration menu"
 msgstr "Nástroj - Ponuka nastavení"
 
 #: activities/menu/ActivityInfo.qml:31
-#, fuzzy
-#| msgctxt "ConfigurationItem|"
-#| msgid "The activity section menu is visible"
 msgctxt "ActivityInfo|"
 msgid "Three lines - The activity settings menu"
-msgstr "Sekcia ponuky aktivít je viditeľná"
+msgstr "Tri linajky - ponuka nastavení pre aktivitu"
 
 #: activities/menu/ActivityInfo.qml:32
 msgctxt "ActivityInfo|"
@@ -18428,22 +18423,22 @@ msgstr "G - O programe GCompris"
 #: activities/menu/ActivityInfo.qml:33
 msgctxt "ActivityInfo|"
 msgid "Quit - Quit GCompris (Ctrl+Q)"
-msgstr "Ukončenie - Ukončiť GCompris (Ctrl+Q)"
+msgstr "Vypínač - Ukončiť GCompris (Ctrl+Q)"
 
 #: activities/menu/ActivityInfo.qml:34
 msgctxt "ActivityInfo|"
 msgid "The stars show suitable age groups for each activity:"
-msgstr ""
+msgstr "Hviezdy zobrazujú vhodnú vekovú kategóriu pre každú aktivitu:"
 
 #: activities/menu/ActivityInfo.qml:35
 msgctxt "ActivityInfo|"
 msgid "1, 2 or 3 yellow stars - from 2 to 6 years old"
-msgstr ""
+msgstr "1, 2 alebo 3 žlté hviezdy - od 2 do 6 rokov"
 
 #: activities/menu/ActivityInfo.qml:36
 msgctxt "ActivityInfo|"
 msgid "1, 2 or 3 red stars - 7 years and up"
-msgstr ""
+msgstr "1, 2 alebo 3 červené hviezdy - 7 a viac rokov"
 
 #: activities/menu/ActivityInfo.qml:37
 msgctxt "ActivityInfo|"
@@ -18451,6 +18446,8 @@ msgid ""
 "If there are two different star icons on an activity, the first one shows "
 "the minimum difficulty, and the second one the maximum difficulty."
 msgstr ""
+"Ak je na aktivite viac rôznych hviezd, prvá ukazuje najnižšiu obtiažnosť a "
+"druhá tú najvyššiu."
 
 #: activities/menu/ActivityInfo.qml:38
 msgctxt "ActivityInfo|"
@@ -18460,7 +18457,7 @@ msgstr "<b>Klávesové skratky:</b>"
 #: activities/menu/ActivityInfo.qml:39
 msgctxt "ActivityInfo|"
 msgid "Ctrl+B: Show or Hide the control bar"
-msgstr ""
+msgstr "Ctrl+B: Zobraziť či skryť ovládací panel"
 
 #: activities/menu/ActivityInfo.qml:40
 msgctxt "ActivityInfo|"
@@ -18470,7 +18467,7 @@ msgstr "Ctrl+F: Prepína zobrazenie na celú obrazovku"
 #: activities/menu/ActivityInfo.qml:41
 msgctxt "ActivityInfo|"
 msgid "Ctrl+S: Toggle the activity section bar"
-msgstr ""
+msgstr "Ctrl+S: Prepína zobrazenie panelu zo zoznamom aktivít"
 
 #: activities/menu/BackgroundMusicList.qml:63
 msgctxt "BackgroundMusicList|"
@@ -18524,7 +18521,7 @@ msgstr "Výber jazyka"
 #: activities/menu/ConfigurationItem.qml:70
 msgctxt "ConfigurationItem|"
 msgid "Localized voices"
-msgstr "Lokalizované hlasy"
+msgstr "Lokalizované hlasové odozvy"
 
 #: activities/menu/ConfigurationItem.qml:79
 msgctxt "ConfigurationItem|"
@@ -18539,7 +18536,7 @@ msgstr "Stiahnuť"
 #: activities/menu/ConfigurationItem.qml:95
 msgctxt "ConfigurationItem|"
 msgid "Enable audio voices"
-msgstr "Povoliť zvukové hlasy"
+msgstr "Povoliť hlasové odozvy"
 
 #: activities/menu/ConfigurationItem.qml:105
 msgctxt "ConfigurationItem|"
@@ -19519,7 +19516,7 @@ msgid ""
 "Play with a friend. First take turns to place nine pieces, and then take "
 "turns to move your pieces."
 msgstr ""
-"Hrajte s kamarátom. Najskôr sa striedajte, aby ste umiestnili 9 figúrok, a "
+"Hrajte s kamarátom. Najskôr sa striedajte, aby ste umiestnili 9 figúrok a "
 "potom po ťahoch presúvajte figúrky."
 
 #. Activity title
@@ -19577,6 +19574,8 @@ msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
 "voices or effects are disabled in the main configuration."
 msgstr ""
+"Táto aktivita vyžaduje zvuk, takže bude prehrávať niektoré zvuky aj keď sú "
+"hlasové odozvy a efekty vypnuté v hlavných nastaveniach."
 
 #: activities/note_names/NoteNames.qml:453
 msgctxt "NoteNames|"
@@ -21095,6 +21094,8 @@ msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
 "voices or effects are disabled in the main configuration."
 msgstr ""
+"Táto aktivita vyžaduje zvuk, takže bude prehrávať niektoré zvuky aj keď sú "
+"hlasové odozvy a efekty vypnuté v hlavných nastaveniach."
 
 #: activities/piano_composition/Piano_composition.qml:548
 msgctxt "Piano_composition|"
@@ -21360,6 +21361,8 @@ msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
 "voices or effects are disabled in the main configuration."
 msgstr ""
+"Táto aktivita vyžaduje zvuk, takže bude prehrávať niektoré zvuky aj keď sú "
+"hlasové odozvy a efekty vypnuté v hlavných nastaveniach."
 
 #: activities/play_piano/PlayPiano.qml:280
 msgctxt "PlayPiano|"
@@ -21469,6 +21472,8 @@ msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
 "voices or effects are disabled in the main configuration."
 msgstr ""
+"Táto aktivita vyžaduje zvuk, takže bude prehrávať niektoré zvuky aj keď sú "
+"hlasové odozvy a efekty vypnuté v hlavných nastaveniach."
 
 #: activities/play_rhythm/PlayRhythm.qml:360
 msgctxt "PlayRhythm|"
@@ -21657,7 +21662,7 @@ msgstr ""
 #| msgid "Can read instructions. Thinking of the path logically"
 msgctxt "ActivityInfo|"
 msgid "Can read instructions, and think logically to find a path."
-msgstr "Dokáže čítať pokyny. Logicky premýšľať o ceste"
+msgstr "Dokáže čítať pokyny, logicky myslieť a hľadať cestu."
 
 #. Help manual
 #: activities/programmingMaze/ActivityInfo.qml:25
@@ -26215,7 +26220,7 @@ msgstr "Pridaná mapa Španielska pre aktivity z Geografie"
 #: core/ChangeLog.qml:42
 msgctxt "ChangeLog|"
 msgid "Voices added for Ukrainian"
-msgstr "Pridané hlasy pre Ukrainčinu"
+msgstr "Pridané hlasové odozvy pre Ukrainčinu"
 
 #: core/ChangeLog.qml:43
 msgctxt "ChangeLog|"
@@ -26277,12 +26282,9 @@ msgid "Translation updated for Russian"
 msgstr "Upravený preklad do Ruštiny"
 
 #: core/ChangeLog.qml:65
-#, fuzzy
-#| msgctxt "DialogConfig|"
-#| msgid "Norwegian Nynorsk"
 msgctxt "ChangeLog|"
 msgid "New voices for Norwegian Nynorsk"
-msgstr "nórsky (Nynorsk)"
+msgstr "Nové hlasové odozvy nórsky (Nynorsk)"
 
 #: core/ChangeLog.qml:69
 #, fuzzy
@@ -26365,7 +26367,7 @@ msgstr "Nové obrázky vo Farbách, Pokročilých farbách a Cieľovej hre."
 #: core/ChangeLog.qml:100
 msgctxt "ChangeLog|"
 msgid "New voices for US English."
-msgstr "Nové hlasy pre americkú angličtinu."
+msgstr "Nové hlasové odozvy pre americkú angličtinu."
 
 #: core/ChangeLog.qml:101 core/ChangeLog.qml:109
 msgctxt "ChangeLog|"
@@ -27029,7 +27031,7 @@ msgstr ""
 #: core/main.qml:273
 msgctxt "main|"
 msgid "Voices for your language"
-msgstr "Hlasy pre Váš jazyk"
+msgstr "Hlasové odozvy pre Váš jazyk"
 
 #: core/main.qml:274
 msgctxt "main|"
