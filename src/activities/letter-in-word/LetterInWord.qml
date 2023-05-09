@@ -237,6 +237,7 @@ ActivityBase {
             anchors.bottomMargin: bar.height * 0.5
             cellWidth: background.itemWidth
             cellHeight: background.itemWidth
+            bottomMargin: 10 * ApplicationInfo.ratio
             clip: false
             interactive: false
             layoutDirection: Qt.LeftToRight
@@ -247,7 +248,7 @@ ActivityBase {
             model: wordsModel
             delegate: Card {
                 width: background.itemWidth
-                height: background.itemWidth
+                height: background.itemWidth - 10 * ApplicationInfo.ratio
                 Connections {
                     target: bonus
                     onStart: {

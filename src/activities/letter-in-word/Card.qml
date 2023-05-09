@@ -33,6 +33,17 @@ Rectangle {
     }
 
     Rectangle {
+        width: cardBg.width + 10 * ApplicationInfo.ratio
+        height: cardBg.height + 10 * ApplicationInfo.ratio
+        radius: 15 * ApplicationInfo.ratio
+        color: "#00000000"
+        border.width: 5 * ApplicationInfo.ratio + 1 // +1 to avoid subpixel holes around cardBg
+        border.color: "#E77936"
+        anchors.centerIn: cardBg
+        visible: selected
+    }
+
+    Rectangle {
         id: cardBg
         anchors.horizontalCenter: parent.horizontalCenter
         anchors.bottom: parent.bottom
@@ -56,19 +67,6 @@ Rectangle {
             verticalAlignment: Text.AlignVCenter
             horizontalAlignment: Text.AlignHCenter
             styleColor: "white"
-        }
-    }
-
-    Image {
-        id: tick
-        source: "qrc:/gcompris/src/core/resource/apply.svg"
-        sourceSize.width: cardBg.width / 3
-        sourceSize.height: cardBg.width / 3
-        visible: selected
-
-        anchors {
-            leftMargin: cardItem.right - 0.01
-            bottomMargin: parent.top - 10
         }
     }
 
