@@ -15114,12 +15114,12 @@ msgid ""
 "words in the list containing this letter and then press the OK button."
 msgstr ""
 
-#: activities/letter-in-word/LetterInWord.qml:298
+#: activities/letter-in-word/LetterInWord.qml:299
 msgctxt "LetterInWord|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "抱歉，我们找不到适合您的语言的翻译。"
 
-#: activities/letter-in-word/LetterInWord.qml:299
+#: activities/letter-in-word/LetterInWord.qml:300
 #, qt-format
 msgctxt "LetterInWord|"
 msgid ""
@@ -15129,7 +15129,7 @@ msgstr ""
 "GCompris 由 KDE 社区开发，您可以通过加入翻译团队 (<a href=\"%2\">%2</a>) 来贡"
 "献翻译"
 
-#: activities/letter-in-word/LetterInWord.qml:301
+#: activities/letter-in-word/LetterInWord.qml:302
 msgctxt "LetterInWord|"
 msgid ""
 "We switched to English for this activity but you can select another language "
