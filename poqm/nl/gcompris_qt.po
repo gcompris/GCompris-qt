@@ -15933,12 +15933,12 @@ msgstr ""
 "Er wordt een letter op de aan het vliegtuig gehangen vlag getoond. Selecteer "
 "alle woorden in de lijst met deze letter en druk daarna op de knop OK."
 
-#: activities/letter-in-word/LetterInWord.qml:298
+#: activities/letter-in-word/LetterInWord.qml:299
 msgctxt "LetterInWord|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "Helaas, we hebben nog geen vertaling voor jouw taal."
 
-#: activities/letter-in-word/LetterInWord.qml:299
+#: activities/letter-in-word/LetterInWord.qml:300
 #, qt-format
 msgctxt "LetterInWord|"
 msgid ""
@@ -15948,7 +15948,7 @@ msgstr ""
 "GCompris is ontwikkeld door de KDE gemeenschap, je kunt GCompris vertalen "
 "door mee te doen met een vertaalteam op <a href=\"%2\">%2</a>"
 
-#: activities/letter-in-word/LetterInWord.qml:301
+#: activities/letter-in-word/LetterInWord.qml:302
 msgctxt "LetterInWord|"
 msgid ""
 "We switched to English for this activity but you can select another language "

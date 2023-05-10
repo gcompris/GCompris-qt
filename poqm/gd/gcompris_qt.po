@@ -17917,14 +17917,14 @@ msgstr ""
 "agus feumaidh a’ chlann am facal no na faclan a lorg anns a bheil an litir "
 "ud."
 
-#: activities/letter-in-word/LetterInWord.qml:298
+#: activities/letter-in-word/LetterInWord.qml:299
 msgctxt "LetterInWord|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr ""
 "Tha sinn duilich ach chan eil eadar-theangachadh againn ’nad chànan aig an "
 "ìre-sa."
 
-#: activities/letter-in-word/LetterInWord.qml:299
+#: activities/letter-in-word/LetterInWord.qml:300
 #, qt-format
 msgctxt "LetterInWord|"
 msgid ""
@@ -17935,7 +17935,7 @@ msgstr ""
 "a chumail ris an obair eadar-theangachaidh ma thèid thu gu <a href=\"%2\">"
 "%2</a>"
 
-#: activities/letter-in-word/LetterInWord.qml:301
+#: activities/letter-in-word/LetterInWord.qml:302
 msgctxt "LetterInWord|"
 msgid ""
 "We switched to English for this activity but you can select another language "

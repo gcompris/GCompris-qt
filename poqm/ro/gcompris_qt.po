@@ -16009,12 +16009,12 @@ msgstr ""
 "Se afișează o literă pe steagul atașat de avion. Selectează toate cuvintele "
 "din listă care conțin această literă, apoi apasă butonul OK."
 
-#: activities/letter-in-word/LetterInWord.qml:298
+#: activities/letter-in-word/LetterInWord.qml:299
 msgctxt "LetterInWord|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "Ne pare rău, deocamdată nu avem o traducere pentru limba dvs."
 
-#: activities/letter-in-word/LetterInWord.qml:299
+#: activities/letter-in-word/LetterInWord.qml:300
 #, qt-format
 msgctxt "LetterInWord|"
 msgid ""
@@ -16024,7 +16024,7 @@ msgstr ""
 "GCompris este dezvoltat de comunitatea KDE, puteți traduce GCompris "
 "alăturându-vă unei echipe de traducere, pe <a href=\"%2\">%2</a>"
 
-#: activities/letter-in-word/LetterInWord.qml:301
+#: activities/letter-in-word/LetterInWord.qml:302
 msgctxt "LetterInWord|"
 msgid ""
 "We switched to English for this activity but you can select another language "
