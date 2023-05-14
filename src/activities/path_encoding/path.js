@@ -61,6 +61,8 @@ function initLevel() {
 
     map = items.levels[currentLevel].path
 
+    // reset initial position
+    prevPos = [-1, -1];
     // intialize position of tux
     currPos = findStartAndLoadObstacles()
 
