@@ -1,4 +1,4 @@
-# Safa Alfulaij <safa1996alfulaij@gmail.com>, 2015, ٢٠١٦, 2017.
+# Safa Alfulaij <safa1996alfulaij@gmail.com>, 2015, 2016, 2017.
 # Zayed Al-Saidi <zayed.alsaidi@gmail.com>, 2022, 2023.
 msgid ""
 msgstr ""
@@ -25417,7 +25417,7 @@ msgstr "ابدأ"
 #~ msgstr ""
 #~ "العب مع صديقك. تبادلان الأدوار وانقرا أيّ خطّ تريدان إسقاط العملة فيه. "
 #~ "يمكنك أيضًا استخدام مفاتيح الأسهم لتحريك العملة يمينًا أو يسارًا، وسهم \"أسفل"
-#~ "\" أو مفتاح المسافة لإسقاط العملة. يفوز أوّل لاعب يصنع خطًّا فيه ٤ عملات."
+#~ "\" أو مفتاح المسافة لإسقاط العملة. يفوز أوّل لاعب يصنع خطًّا فيه 4 عملات."
 
 #, fuzzy
 #~ msgctxt "ActivityInfo|"
@@ -25427,7 +25427,7 @@ msgstr "ابدأ"
 #~ msgstr ""
 #~ "العب مع صديقك. تبادلان الأدوار وانقرا أيّ خطّ تريدان إسقاط العملة فيه. "
 #~ "يمكنك أيضًا استخدام مفاتيح الأسهم لتحريك العملة يمينًا أو يسارًا، وسهم \"أسفل"
-#~ "\" أو مفتاح المسافة لإسقاط العملة. يفوز أوّل لاعب يصنع خطًّا فيه ٤ عملات."
+#~ "\" أو مفتاح المسافة لإسقاط العملة. يفوز أوّل لاعب يصنع خطًّا فيه 4 عملات."
 
 #~ msgctxt "ActivityInfo|"
 #~ msgid "Play checkers against the computer"
@@ -25777,21 +25777,21 @@ msgstr "ابدأ"
 #~| msgid "Now he wants to give 4 candies to his friends."
 #~ msgctxt "Data|"
 #~ msgid "Now he wants to give 5 pieces of candy to his friends."
-#~ msgstr "الآن يريد إعطاء ٤ قطع حلوى لأصدقائه."
+#~ msgstr "الآن يريد إعطاء 4 قطع حلوى لأصدقائه."
 
 #, fuzzy
 #~| msgctxt "board0|"
 #~| msgid "Can you now give 6 of Paul's candies to his friends?"
 #~ msgctxt "Data|"
 #~ msgid "Can you now give 7 of Paul's pieces of candy to his friends?"
-#~ msgstr "أيمكنك الآن إعطاء ٦ من قطع الحلوى لدى فؤاد لأصدقائه؟"
+#~ msgstr "أيمكنك الآن إعطاء 6 من قطع الحلوى لدى فؤاد لأصدقائه؟"
 
 #, fuzzy
 #~| msgctxt "board0|"
 #~| msgid "Now he wants to give 4 candies to his friends."
 #~ msgctxt "Data|"
 #~ msgid "He wants to give 8 more pieces of candy to his friends."
-#~ msgstr "الآن يريد إعطاء ٤ قطع حلوى لأصدقائه."
+#~ msgstr "الآن يريد إعطاء 4 قطع حلوى لأصدقائه."
 
 #, fuzzy
 #~ msgctxt "Data|"
@@ -25800,7 +25800,7 @@ msgstr "ابدأ"
 #~ "equally split the pieces of candy so that each friend will have the same "
 #~ "amount?"
 #~ msgstr ""
-#~ "يريد عامر مشاركة ١٠ قطع حلوى بالتّساوي بين ثلاثة من أصدقائه: فتًى وفتاتان. "
+#~ "يريد عامر مشاركة 10 قطع حلوى بالتّساوي بين ثلاثة من أصدقائه: فتًى وفتاتان. "
 #~ "أيمكنك تقسيم قطع الحلوى بالتّساوي بين أصدقائه؟ أوّلًا ضع الأطفال في المنتصف، "
 #~ "ثمّ اسحب قطع الحلوى لكلّ واحد."
 
@@ -25820,7 +25820,7 @@ msgstr "ابدأ"
 #~| msgid "Can you now give 6 of Paul's candies to his friends?"
 #~ msgctxt "Data|"
 #~ msgid "Can you now give 8 of Harry's pieces of candy to his friends?"
-#~ msgstr "أيمكنك الآن إعطاء ٦ من قطع الحلوى لدى فؤاد لأصدقائه؟"
+#~ msgstr "أيمكنك الآن إعطاء 6 من قطع الحلوى لدى فؤاد لأصدقائه؟"
 
 #, fuzzy
 #~ msgctxt "Data|"
@@ -25844,7 +25844,7 @@ msgstr "ابدأ"
 #~ "Can he split the pieces of candy equally?"
 #~ msgstr ""
 #~ "بقيت لدى فؤاد 10 قطع حلوى فحسب. التهم قطعتين منهم ويريد إعطاء الباقي "
-#~ "لأصدقاه. أيمكنك مساعدته في تقسيم قطع الحلوى ال‍ ٨ الباقية؟"
+#~ "لأصدقاه. أيمكنك مساعدته في تقسيم قطع الحلوى ال‍ 8 الباقية؟"
 
 #, fuzzy
 #~| msgctxt "board0|"
@@ -25857,7 +25857,7 @@ msgstr "ابدأ"
 #~ "boys and 2 girls. Help him give the pieces of candy to his friends."
 #~ msgstr ""
 #~ "بقيت لدى فؤاد 10 قطع حلوى فحسب. التهم قطعتين منهم ويريد إعطاء الباقي "
-#~ "لأصدقاه. أيمكنك مساعدته في تقسيم قطع الحلوى ال‍ ٨ الباقية؟"
+#~ "لأصدقاه. أيمكنك مساعدته في تقسيم قطع الحلوى ال‍ 8 الباقية؟"
 
 #, fuzzy
 #~| msgctxt "board1|"
@@ -25873,7 +25873,7 @@ msgstr "ابدأ"
 #~ "between his friends? First, place the children in center, then drag the "
 #~ "pieces of candy to each of them. Be careful."
 #~ msgstr ""
-#~ "يريد سامر مشاركة ٣ قطع حلوى بالتّساوي بين إثنين من أصدقائه: فتًى وفتاة. "
+#~ "يريد سامر مشاركة 3 قطع حلوى بالتّساوي بين إثنين من أصدقائه: فتًى وفتاة. "
 #~ "أيمكنك تقسيم قطع الحلوى بالتّساوي بين أصدقائه؟ أوّلًا ضع الأطفال في المنتصف، "
 #~ "ثمّ اسحب قطع الحلوى لكلّ واحد. انتبه فسيكون هناك باقي!"
 
@@ -25891,7 +25891,7 @@ msgstr "ابدأ"
 #~ "friends? First, place the children in center, then drag the pieces of "
 #~ "candy to each of them. Be careful, a rest will remain."
 #~ msgstr ""
-#~ "يريد سامر مشاركة ٣ قطع حلوى بالتّساوي بين إثنين من أصدقائه: فتًى وفتاة. "
+#~ "يريد سامر مشاركة 3 قطع حلوى بالتّساوي بين إثنين من أصدقائه: فتًى وفتاة. "
 #~ "أيمكنك تقسيم قطع الحلوى بالتّساوي بين أصدقائه؟ أوّلًا ضع الأطفال في المنتصف، "
 #~ "ثمّ اسحب قطع الحلوى لكلّ واحد. انتبه فسيكون هناك باقي!"
 
@@ -25900,7 +25900,7 @@ msgstr "ابدأ"
 #~| msgid "Now he wants to give 4 candies to his friends."
 #~ msgctxt "Data|"
 #~ msgid "He wants to give 7 more pieces of candy to his friends."
-#~ msgstr "الآن يريد إعطاء ٤ قطع حلوى لأصدقائه."
+#~ msgstr "الآن يريد إعطاء 4 قطع حلوى لأصدقائه."
 
 #, fuzzy
 #~ msgctxt "Data|"
@@ -25909,7 +25909,7 @@ msgstr "ابدأ"
 #~ "friends. Can he equally split the pieces of candy? First, place the "
 #~ "children in the center, then drag the pieces of candy to each of them."
 #~ msgstr ""
-#~ "يريد عامر مشاركة ١٠ قطع حلوى بالتّساوي بين ثلاثة من أصدقائه: فتًى وفتاتان. "
+#~ "يريد عامر مشاركة 10 قطع حلوى بالتّساوي بين ثلاثة من أصدقائه: فتًى وفتاتان. "
 #~ "أيمكنك تقسيم قطع الحلوى بالتّساوي بين أصدقائه؟ أوّلًا ضع الأطفال في المنتصف، "
 #~ "ثمّ اسحب قطع الحلوى لكلّ واحد."
 
@@ -25927,7 +25927,7 @@ msgstr "ابدأ"
 #~ "place the children in the center, then drag the pieces of candy to each "
 #~ "of them."
 #~ msgstr ""
-#~ "يريد سامر مشاركة ٣ قطع حلوى بالتّساوي بين إثنين من أصدقائه: فتًى وفتاة. "
+#~ "يريد سامر مشاركة 3 قطع حلوى بالتّساوي بين إثنين من أصدقائه: فتًى وفتاة. "
 #~ "أيمكنك تقسيم قطع الحلوى بالتّساوي بين أصدقائه؟ أوّلًا ضع الأطفال في المنتصف، "
 #~ "ثمّ اسحب قطع الحلوى لكلّ واحد. انتبه فسيكون هناك باقي!"
 
@@ -25938,7 +25938,7 @@ msgstr "ابدأ"
 #~ "2 boys and 1 girl. Can he equally split the pieces of candy? First, place "
 #~ "the children in the center, then drag the pieces of candy to each of them."
 #~ msgstr ""
-#~ "يريد عامر مشاركة ١٠ قطع حلوى بالتّساوي بين ثلاثة من أصدقائه: فتًى وفتاتان. "
+#~ "يريد عامر مشاركة 10 قطع حلوى بالتّساوي بين ثلاثة من أصدقائه: فتًى وفتاتان. "
 #~ "أيمكنك تقسيم قطع الحلوى بالتّساوي بين أصدقائه؟ أوّلًا ضع الأطفال في المنتصف، "
 #~ "ثمّ اسحب قطع الحلوى لكلّ واحد."
 
@@ -25949,7 +25949,7 @@ msgstr "ابدأ"
 #~ msgid ""
 #~ "Can you help Alice give 10 pieces of candy to her friends, 1 girl and 3 "
 #~ "boys?"
-#~ msgstr "الآن يريد إعطاء ٤ قطع حلوى لأصدقائه."
+#~ msgstr "الآن يريد إعطاء 4 قطع حلوى لأصدقائه."
 
 #, fuzzy
 #~ msgctxt "Data|"
@@ -25984,7 +25984,7 @@ msgstr "ابدأ"
 #~ "friends: 2 girls and 1 boy. How should she split the pieces of candy?"
 #~ msgstr ""
 #~ "بقيت لدى فؤاد 10 قطع حلوى فحسب. التهم قطعتين منهم ويريد إعطاء الباقي "
-#~ "لأصدقاه. أيمكنك مساعدته في تقسيم قطع الحلوى ال‍ ٨ الباقية؟"
+#~ "لأصدقاه. أيمكنك مساعدته في تقسيم قطع الحلوى ال‍ 8 الباقية؟"
 
 #~ msgctxt "MagicHat|"
 #~ msgid "+"
@@ -26006,7 +26006,7 @@ msgstr "ابدأ"
 #~| msgid "Connect the dots to draw numbers from 0 to 9"
 #~ msgctxt "Data|"
 #~ msgid "Nubmers up to 6."
-#~ msgstr "وصّل النّقط لرسم الأرقام من ٠ إلى ٩"
+#~ msgstr "وصّل النّقط لرسم الأرقام من 0 إلى 9"
 
 #, fuzzy
 #~| msgctxt "braille_alphabets|"
@@ -26293,112 +26293,112 @@ msgstr "ابدأ"
 #~| msgid "Connect the dots to draw numbers from 0 to 9"
 #~ msgctxt "Data|"
 #~ msgid "Select a number on dice up to 3."
-#~ msgstr "وصّل النّقط لرسم الأرقام من ٠ إلى ٩"
+#~ msgstr "وصّل النّقط لرسم الأرقام من 0 إلى 9"
 
 #, fuzzy
 #~| msgctxt "ActivityInfo|"
 #~| msgid "Connect the dots to draw numbers from 0 to 9"
 #~ msgctxt "Data|"
 #~ msgid "Select the numbers 1 and 2."
-#~ msgstr "وصّل النّقط لرسم الأرقام من ٠ إلى ٩"
+#~ msgstr "وصّل النّقط لرسم الأرقام من 0 إلى 9"
 
 #, fuzzy
 #~| msgctxt "ActivityInfo|"
 #~| msgid "Connect the dots to draw numbers from 0 to 9"
 #~ msgctxt "Data|"
 #~ msgid "Select a number on dice up to 4."
-#~ msgstr "وصّل النّقط لرسم الأرقام من ٠ إلى ٩"
+#~ msgstr "وصّل النّقط لرسم الأرقام من 0 إلى 9"
 
 #, fuzzy
 #~| msgctxt "ActivityInfo|"
 #~| msgid "Connect the dots to draw numbers from 0 to 9"
 #~ msgctxt "Data|"
 #~ msgid "Select a number on dice up to 5."
-#~ msgstr "وصّل النّقط لرسم الأرقام من ٠ إلى ٩"
+#~ msgstr "وصّل النّقط لرسم الأرقام من 0 إلى 9"
 
 #, fuzzy
 #~| msgctxt "ActivityInfo|"
 #~| msgid "Connect the dots to draw numbers from 0 to 9"
 #~ msgctxt "Data|"
 #~ msgid "Select a number on dice up to 6."
-#~ msgstr "وصّل النّقط لرسم الأرقام من ٠ إلى ٩"
+#~ msgstr "وصّل النّقط لرسم الأرقام من 0 إلى 9"
 
 #, fuzzy
 #~| msgctxt "ActivityInfo|"
 #~| msgid "Connect the dots to draw numbers from 0 to 9"
 #~ msgctxt "Data|"
 #~ msgid "Select a number on dice up to 7."
-#~ msgstr "وصّل النّقط لرسم الأرقام من ٠ إلى ٩"
+#~ msgstr "وصّل النّقط لرسم الأرقام من 0 إلى 9"
 
 #, fuzzy
 #~| msgctxt "ActivityInfo|"
 #~| msgid "Connect the dots to draw numbers from 0 to 9"
 #~ msgctxt "Data|"
 #~ msgid "Select a number on dice up to 8."
-#~ msgstr "وصّل النّقط لرسم الأرقام من ٠ إلى ٩"
+#~ msgstr "وصّل النّقط لرسم الأرقام من 0 إلى 9"
 
 #, fuzzy
 #~| msgctxt "ActivityInfo|"
 #~| msgid "Connect the dots to draw numbers from 0 to 9"
 #~ msgctxt "Data|"
 #~ msgid "Select a number on dice up to 9."
-#~ msgstr "وصّل النّقط لرسم الأرقام من ٠ إلى ٩"
+#~ msgstr "وصّل النّقط لرسم الأرقام من 0 إلى 9"
 
 #, fuzzy
 #~| msgctxt "ActivityInfo|"
 #~| msgid "Connect the dots to draw numbers from 0 to 9"
 #~ msgctxt "Data|"
 #~ msgid "Select a number on dice from 0 to 9."
-#~ msgstr "وصّل النّقط لرسم الأرقام من ٠ إلى ٩"
+#~ msgstr "وصّل النّقط لرسم الأرقام من 0 إلى 9"
 
 #, fuzzy
 #~| msgctxt "ActivityInfo|"
 #~| msgid "Connect the dots to draw numbers from 0 to 9"
 #~ msgctxt "Data|"
 #~ msgid "Select a number on dominoes up to 4."
-#~ msgstr "وصّل النّقط لرسم الأرقام من ٠ إلى ٩"
+#~ msgstr "وصّل النّقط لرسم الأرقام من 0 إلى 9"
 
 #, fuzzy
 #~| msgctxt "ActivityInfo|"
 #~| msgid "Connect the dots to draw numbers from 0 to 9"
 #~ msgctxt "Data|"
 #~ msgid "Select a number on dominoes up to 5."
-#~ msgstr "وصّل النّقط لرسم الأرقام من ٠ إلى ٩"
+#~ msgstr "وصّل النّقط لرسم الأرقام من 0 إلى 9"
 
 #, fuzzy
 #~| msgctxt "ActivityInfo|"
 #~| msgid "Connect the dots to draw numbers from 0 to 9"
 #~ msgctxt "Data|"
 #~ msgid "Select a number on dominoes up to 6."
-#~ msgstr "وصّل النّقط لرسم الأرقام من ٠ إلى ٩"
+#~ msgstr "وصّل النّقط لرسم الأرقام من 0 إلى 9"
 
 #, fuzzy
 #~| msgctxt "ActivityInfo|"
 #~| msgid "Connect the dots to draw numbers from 0 to 9"
 #~ msgctxt "Data|"
 #~ msgid "Select a number on dominoes up to 7."
-#~ msgstr "وصّل النّقط لرسم الأرقام من ٠ إلى ٩"
+#~ msgstr "وصّل النّقط لرسم الأرقام من 0 إلى 9"
 
 #, fuzzy
 #~| msgctxt "ActivityInfo|"
 #~| msgid "Connect the dots to draw numbers from 0 to 9"
 #~ msgctxt "Data|"
 #~ msgid "Select a number on dominoes up to 8."
-#~ msgstr "وصّل النّقط لرسم الأرقام من ٠ إلى ٩"
+#~ msgstr "وصّل النّقط لرسم الأرقام من 0 إلى 9"
 
 #, fuzzy
 #~| msgctxt "ActivityInfo|"
 #~| msgid "Connect the dots to draw numbers from 0 to 9"
 #~ msgctxt "Data|"
 #~ msgid "Select a number on dominoes up to 9."
-#~ msgstr "وصّل النّقط لرسم الأرقام من ٠ إلى ٩"
+#~ msgstr "وصّل النّقط لرسم الأرقام من 0 إلى 9"
 
 #, fuzzy
 #~| msgctxt "ActivityInfo|"
 #~| msgid "Connect the dots to draw numbers from 0 to 9"
 #~ msgctxt "Data|"
 #~ msgid "Select a number on dominoes from 0 to 9."
-#~ msgstr "وصّل النّقط لرسم الأرقام من ٠ إلى ٩"
+#~ msgstr "وصّل النّقط لرسم الأرقام من 0 إلى 9"
 
 #, fuzzy
 #~| msgctxt "ActivityInfo|"
