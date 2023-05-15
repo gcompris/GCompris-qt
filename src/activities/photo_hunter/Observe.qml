@@ -137,8 +137,9 @@ Image {
             MouseArea {
                 id: mouseArea
                 anchors.centerIn: parent
-                width: parent.width * 3
-                height: parent.height * 3
+                property double minimumSize: 20 * ApplicationInfo.ratio
+                width: Math.max(parent.width, minimumSize)
+                height: Math.max(parent.height, minimumSize)
                 enabled: !background.startedHelp
                 onClicked: {
                     Activity.photoClicked(card,index)
