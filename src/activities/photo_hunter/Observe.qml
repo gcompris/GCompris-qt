@@ -28,6 +28,7 @@ Image {
     property alias circleRepeater: circleRepeater
     property int good: 0
     property bool show: false
+    property double minimumSize: 20 * ApplicationInfo.ratio
 
     Behavior on anchors.horizontalCenterOffset {
         enabled: !background.vert
@@ -135,9 +136,8 @@ Image {
             MouseArea {
                 id: mouseArea
                 anchors.centerIn: parent
-                property double minimumSize: 20 * ApplicationInfo.ratio
-                width: Math.max(parent.width, minimumSize)
-                height: Math.max(parent.height, minimumSize)
+                width: Math.max(parent.width, card.minimumSize)
+                height: Math.max(parent.height, card.minimumSize)
                 enabled: !background.startedHelp
                 onClicked: {
                     Activity.photoClicked(card,index)
@@ -156,13 +156,13 @@ Image {
             id: circle
             color: "transparent"
             radius: width * 0.5
-            border.color: card.show ? "blue" : "red"
-            border.width: 6
+            border.color: card.show ? "#BF3535E8" : "#BFE83535" // blue : red
+            border.width: 2 * ApplicationInfo.ratio
             opacity: 0
-            x: itemAt.x - width / 6
-            y: itemAt.y - height / 6
-            width: itemAt.width * 1.5
-            height: itemAt.height * 1.5
+            x: itemAt.x + (itemAt.width - width) * 0.5
+            y: itemAt.y + (itemAt.height - height) * 0.5
+            width: Math.max(itemAt.width, itemAt.height, card.minimumSize) * 1.5
+            height: width
 
             property alias scaleAnim: scaleAnim
             property var itemAt: card.repeater.itemAt(index) ? card.repeater.itemAt(index) : card
