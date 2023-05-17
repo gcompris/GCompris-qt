@@ -1,14 +1,90 @@
-Copyright: Various - openclipart
-Licence: CC0-1.0
 Files:
-photo1*.svg:  https://openclipart.org/download/193191/05-Mai-Paint-it-green.svg
-photo2*.svg:  https://openclipart.org/download/241524/Animals-Flourish-Landscape.svg
-photo3*.svg:  https://openclipart.org/download/8006/carlitos-Cartoon-Landscape.svg
-photo4*.svg:  https://openclipart.org/download/188283/cyberscooty-watermill-in-landscape.svg
-photo5*.svg:  https://openclipart.org/download/185885/cyberscoty-landscape.svg
-photo6*.svg:  https://openclipart.org/download/178626/fir-forest-horizontaly-seamless-pattern.svg
-photo7*.svg:  https://openclipart.org/image/800px/svg_to_png/79099/Land-1.png
-photo8*.svg:  https://openclipart.org/download/142357/Landscape-001-Summer.svg
-photo9*.svg:  https://openclipart.org/download/205417/montains.svg
-photo10*.svg: https://openclipart.org/download/17626/Peileppe-Castle.svg
-wrong.svg: https://openclipart.org/download/15815/Arnoud999-Right-or-wrong-5.svg
+ src/activities/photo_hunter/resource/photo1.svg
+ src/activities/photo_hunter/resource/photo1_*.svg
+Copyright:
+ 2014 Moini
+ 2023 Timothée Giet <animtim@gmail.com>
+License: CC-BY-SA-4.0
+Comment:
+ based on https://openclipart.org/detail/193191/05-Mai-Paint-it-green
+
+Files:
+ src/activities/photo_hunter/resource/photo2*.svg
+Copyright:
+ 2016 Gordon Dylan Johnson
+ 2023 Timothée Giet <animtim@gmail.com>
+License: CC-BY-SA-4.0
+Comment:
+ based on https://openclipart.org/detail/241524/Animals-Flourish-Landscape
+
+Files:
+ src/activities/photo_hunter/resource/photo3*.svg
+Copyright:
+ 2007 carlitos
+ 2023 Timothée Giet <animtim@gmail.com>
+License: CC-BY-SA-4.0
+Comment:
+ based on https://openclipart.org/detail/8006/carlitos-Cartoon-Landscape
+
+Files:
+ src/activities/photo_hunter/resource/photo4*.svg
+Copyright:
+ 2013 Cyber Scooty
+ 2023 Timothée Giet <animtim@gmail.com>
+License: CC-BY-SA-4.0
+Comment:
+ based on https://openclipart.org/detail/188283/cyberscooty-watermill-in-landscape
+
+Files:
+ src/activities/photo_hunter/resource/photo5*.svg
+Copyright:
+ 2013 Cyber Scooty
+ 2023 Timothée Giet <animtim@gmail.com>
+License: CC-BY-SA-4.0
+Comment:
+ based on https://openclipart.org/detail/185885/cyberscoty-landscape
+
+Files:
+ src/activities/photo_hunter/resource/photo6*.svg
+Copyright:
+ 2013 OlKu
+ 2023 Timothée Giet <animtim@gmail.com>
+License: CC-BY-SA-4.0
+Comment:
+ based on https://openclipart.org/detail/178626/fir-forest-horizontaly-seamless-pattern
+
+Files:
+ src/activities/photo_hunter/resource/photo7*.svg
+Copyright:
+ 2010 slabbie
+ 2023 Timothée Giet <animtim@gmail.com>
+License: CC-BY-SA-4.0
+Comment:
+ based on https://openclipart.org/detail/79099/Land-1
+
+Files:
+ src/activities/photo_hunter/resource/photo8*.svg
+Copyright:
+ 2011 palomaironique
+ 2023 Timothée Giet <animtim@gmail.com>
+License: CC-BY-SA-4.0
+Comment:
+ based on https://openclipart.org/detail/142357/Landscape-001-Summer
+
+Files:
+ src/activities/photo_hunter/resource/photo9*.svg
+Copyright:
+ 2014 Olku
+ 2023 Timothée Giet <animtim@gmail.com>
+License: CC-BY-SA-4.0
+Comment:
+ based on https://openclipart.org/detail/205417/montains
+
+Files:
+ src/activities/photo_hunter/resource/photo10*.svg
+Copyright:
+ 2008 Peileppe
+ 2023 Timothée Giet <animtim@gmail.com>
+License: CC-BY-SA-4.0
+Comment:
+ based on https://openclipart.org/detail/17626/Peileppe-Castle
