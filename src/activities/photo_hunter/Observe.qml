@@ -48,7 +48,7 @@ Image {
 
     Image {
         id: wrong
-        source: Activity.url + "wrong.svg"
+        source: "qrc:/gcompris/src/activities/tic_tac_toe/resource/cross.svg"
         width: 70
         height: 70
         opacity: 0
@@ -94,20 +94,18 @@ Image {
             id: photo
             property alias particleLoader: particleLoader
             property alias differenceAnimation: differenceAnimation
-            property double widthScale: Activity.dataset[Activity.currentLevel].coordinates[index].w
-            property double heightScale: Activity.dataset[Activity.currentLevel].coordinates[index].h
 
-            sourceSize.width: Activity.dataset[Activity.currentLevel].coordinates[index].r * 200
-            sourceSize.height: Activity.dataset[Activity.currentLevel].coordinates[index].r * 200
+            width: card.width * Activity.dataset[Activity.currentLevel].coordinates[index].w
+            height: card.height * Activity.dataset[Activity.currentLevel].coordinates[index].h
 
-            width: card.width / 10 * widthScale
-            height: card.height / 10 * heightScale
+            sourceSize.width: width
+            fillMode: Image.PreserveAspectFit
 
             source: Activity.url + "photo" + (Activity.currentLevel + 1) + "_" + (index + 1) + ".svg"
             opacity: card.show ? 1 : 0
 
-            x: modelData[0] * card.width / 1200
-            y: modelData[1] * card.height / 1700
+            x: modelData[0] * card.width
+            y: modelData[1] * card.height
 
             NumberAnimation {
                 id: differenceAnimation
