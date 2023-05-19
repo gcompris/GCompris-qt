@@ -3,12 +3,12 @@
 # Ferdinand Galko <galko.ferdinand@gmail.com>, 2015, 2019.
 # Matej Mrenica <matejm98mthw@gmail.com>, 2020.
 # Jose Riha <jose1711@gmail.com>, 2020.
-# Miroslav Ďurian <aasami@gmail.com>, 2023.
+# Miroslav Ďurian <aasami@gmail.com>, 2022, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_qt\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2023-04-12 11:57+0200\n"
+"PO-Revision-Date: 2023-05-11 18:57+0200\n"
 "Last-Translator: Miroslav Ďurian <aasami@gmail.com>\n"
 "Language-Team: Slovak <kde-i18n-doc@kde.org>\n"
 "Language: sk\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 "X-Language: sk\n"
 "X-Qt-Contexts: true\n"
-"X-Generator: Lokalize 22.12.2\n"
+"X-Generator: Lokalize 23.04.0\n"
 
 #. Activity title
 #: activities/advanced_colors/ActivityInfo.qml:15
@@ -43,7 +43,7 @@ msgstr "Naučiť sa rozpoznávať nezvyčajné farby."
 #: activities/positions/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid "Can read."
-msgstr "Vedieť čítať."
+msgstr "Vie čítať."
 
 #. Help manual
 #: activities/advanced_colors/ActivityInfo.qml:24
@@ -2774,7 +2774,7 @@ msgstr ""
 #: activities/braille_fun/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Space: open or close the braille chart"
-msgstr ""
+msgstr "Medzerník: otvoriť alebo zavriet Brailovu tabuľku"
 
 #: activities/braille_alphabets/braille_alphabets.js:48
 #: activities/braille_alphabets/braille_alphabets.js:58
@@ -3016,7 +3016,7 @@ msgstr ""
 #: activities/find_the_day/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Space or Enter: validate your answer"
-msgstr ""
+msgstr "Medzerník alebo Enter: overiť odpoveď"
 
 #: activities/calendar/Calendar.qml:309
 msgctxt "Calendar|"
@@ -4909,7 +4909,7 @@ msgstr "Čas obsahujúci minúty a sekundy."
 #: activities/clockgame/resource/6/Data.qml:13
 msgctxt "Data|"
 msgid "No hints."
-msgstr "Bez popiskov."
+msgstr "Žiadne rady."
 
 #. Activity title
 #: activities/color_mix/ActivityInfo.qml:15
@@ -5195,6 +5195,8 @@ msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
 "voices or effects are disabled in the main configuration."
 msgstr ""
+"Táto aktivita vyžaduje zvuk, takže bude prehrávať niektoré zvuky aj keď sú "
+"hlasové odozvy a efekty vypnuté v hlavných nastaveniach."
 
 #: activities/colors/FindIt.qml:236
 msgctxt "FindIt|"
@@ -6053,22 +6055,13 @@ msgid "BCD counter"
 msgstr "BCD počítadlo"
 
 #: activities/digital_electricity/TutorialDataset.qml:144
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid ""
-#| "The digital light will glow when its terminal is connected with an input "
-#| "of 1."
 msgctxt "TutorialDataset|"
 msgid ""
 "The digital light glows when its terminal is connected with an input of 1."
-msgstr ""
-"Digitálne svetlo bude svietiť, keď je jeho svorka prepojená so vstupom 1."
+msgstr "Digitálne svetlo svieti, keď je jeho svorka prepojená so vstupom 1."
 
 #: activities/digital_electricity/TutorialDataset.qml:145
 #: activities/digital_electricity/TutorialDataset.qml:202
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "Turn the digital light on using the inputs provided."
 msgctxt "TutorialDataset|"
 msgid "Turn on the digital light using the provided inputs."
 msgstr "Zapnite digitálne svetlo pomocou poskytnutých vstupov."
@@ -6079,25 +6072,17 @@ msgid ""
 "To connect two terminals, click on a first terminal, then on a second "
 "terminal."
 msgstr ""
+"Na prepojenie dvoch svoriek, kliknite na prvú svorku, potom na druhú svorku."
 
 #: activities/digital_electricity/TutorialDataset.qml:159
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid ""
-#| "The AND gate produces an output of one when both of its input terminals "
-#| "are of value 1."
 msgctxt "TutorialDataset|"
 msgid ""
 "The AND gate produces an output of 1 when both of its input terminals are of "
 "value 1."
 msgstr ""
-"Hradlo AND produkuje výstup jedna, keď obidve jeho vstupné svorky majú "
-"hodnotu 1."
+"Hradlo AND produkuje výstup 1, keď obidve jeho vstupné svorky majú hodnotu 1."
 
 #: activities/digital_electricity/TutorialDataset.qml:160
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "Turn the digital light on using an AND gate and the inputs provided."
 msgctxt "TutorialDataset|"
 msgid "Turn on the digital light using an AND gate and the provided inputs."
 msgstr "Zapnite digitálne svetlo pomocou hradla AND a poskytnutých vstupov."
@@ -6112,9 +6097,6 @@ msgstr ""
 "hodnotu 1."
 
 #: activities/digital_electricity/TutorialDataset.qml:174
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "Turn the digital light on using an OR gate and the inputs provided."
 msgctxt "TutorialDataset|"
 msgid "Turn on the digital light using an OR gate and the provided inputs."
 msgstr "Zapnite digitálne svetlo pomocou hradla OR a poskytnutých vstupov."
@@ -6122,15 +6104,12 @@ msgstr "Zapnite digitálne svetlo pomocou hradla OR a poskytnutých vstupov."
 #: activities/digital_electricity/TutorialDataset.qml:187
 msgctxt "TutorialDataset|"
 msgid "You can draw multiple wires from the output terminal of a component."
-msgstr "Poznámka: Z výstupnej svorky komponentu môžete \tťahať viac vodičov."
+msgstr "Z výstupnej svorky súčiastky môžete ťahať viac vodičov."
 
 #: activities/digital_electricity/TutorialDataset.qml:188
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "Turn the digital light on using the inputs provided."
 msgctxt "TutorialDataset|"
 msgid "Turn on the digital light using the provided components."
-msgstr "Zapnite digitálne svetlo pomocou poskytnutých vstupov."
+msgstr "Zapnite digitálne svetlo pomocou poskytnutých súčiastok."
 
 #: activities/digital_electricity/TutorialDataset.qml:201
 msgctxt "TutorialDataset|"
@@ -6144,11 +6123,6 @@ msgid "The NAND gate takes two binary inputs and produces one binary output."
 msgstr "Hradlo NAND prijíma dva binárne vstupy a vytvára jeden binárny výstup."
 
 #: activities/digital_electricity/TutorialDataset.qml:216
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid ""
-#| "The output of the NAND gate will be zero if both of its inputs are \"1\". "
-#| "Else, the output will be one."
 msgctxt "TutorialDataset|"
 msgid ""
 "The output of the NAND gate is zero if both of its inputs are 1. Else, the "
@@ -6158,23 +6132,15 @@ msgstr ""
 "jedna."
 
 #: activities/digital_electricity/TutorialDataset.qml:217
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid ""
-#| "For a more detailed description about the gate, select it and click on "
-#| "the info button."
 msgctxt "TutorialDataset|"
 msgid ""
 "For a more detailed description about the NAND gate, select it and click on "
 "the info button."
 msgstr ""
-"Ak chcete získať podrobnejší popis hradla, vyberte ho a kliknite na "
+"Ak chcete získať podrobnejší popis hradla NAND, vyberte ho a kliknite na "
 "informačné tlačidlo."
 
 #: activities/digital_electricity/TutorialDataset.qml:218
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "Light the bulb using the NAND gate provided."
 msgctxt "TutorialDataset|"
 msgid "Light the bulb using the provided NAND gate."
 msgstr "Rozsvieťte žiarovku pomocou poskytnutého hradla NAND."
@@ -6182,88 +6148,53 @@ msgstr "Rozsvieťte žiarovku pomocou poskytnutého hradla NAND."
 #: activities/digital_electricity/TutorialDataset.qml:234
 #: activities/digital_electricity/TutorialDataset.qml:386
 #: activities/digital_electricity/TutorialDataset.qml:463
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid ""
-#| "Create a circuit using the components provided such that the bulb glows "
-#| "only when both of the switches are turned on."
 msgctxt "TutorialDataset|"
 msgid ""
 "Create a circuit using the provided components so that the bulb glows only "
 "when both of the switches are turned on."
 msgstr ""
-"Vytvorte obvod pomocou poskytnutých komponentov tak, že žiarovka svieti, len "
+"Vytvorte obvod pomocou poskytnutých súčiastok tak, že žiarovka svieti, len "
 "keď sú obidva spínače zapnuté."
 
 #: activities/digital_electricity/TutorialDataset.qml:250
 #: activities/digital_electricity/TutorialDataset.qml:402
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid ""
-#| "Create a circuit using the components provided such that the bulb glows "
-#| "when either of the switches are turned on."
 msgctxt "TutorialDataset|"
 msgid ""
 "Create a circuit using the provided components so that the bulb glows when "
 "either of the switch is turned on."
 msgstr ""
-"Vytvorte obvod pomocou poskytnutých komponentov tak, že žiarovka svieti, keď "
-"e niektorý zo spínačov zapnutý."
+"Vytvorte obvod pomocou poskytnutých súčiastok tak, že žiarovka svieti, keď "
+"je niektorý zo spínačov zapnutý."
 
 #: activities/digital_electricity/TutorialDataset.qml:266
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid ""
-#| "Light the bulb using the three switches such that the bulb glows when odd "
-#| "number of the switches are turned on."
 msgctxt "TutorialDataset|"
 msgid ""
 "Light the bulb using the three switches so that the bulb glows only if all "
 "the three switches are turned on."
 msgstr ""
-"Rozsvieťte žiarovku pomocou troch spínačov tak, aby žiarovka svietila, keď "
-"je zapnutý nepárny počet spínačov."
+"Rozsvieťte žiarovku pomocou troch spínačov tak, aby žiarovka svietila, len "
+"keď sú zapnuté všetky tri spínače."
 
 #: activities/digital_electricity/TutorialDataset.qml:282
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid ""
-#| "Light the bulb using the three switches such that the bulb glows when odd "
-#| "number of the switches are turned on."
 msgctxt "TutorialDataset|"
 msgid ""
 "Light the bulb using the three switches so that the bulb glows if any of the "
 "switches are turned on."
 msgstr ""
 "Rozsvieťte žiarovku pomocou troch spínačov tak, aby žiarovka svietila, keď "
-"je zapnutý nepárny počet spínačov."
+"je zapnutý ktorýkoľvek spínač."
 
 #: activities/digital_electricity/TutorialDataset.qml:295
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid ""
-#| "Use the gates such that the bulb will glow only when the switch is turned "
-#| "off and remain off when the switch is turned on."
 msgctxt "TutorialDataset|"
 msgid "Use the gates so that the bulb glows only when the switch is on."
-msgstr ""
-"Hradlá použite tak, aby žiarovka svietila iba pri vypnutom vypínači a "
-"zostali vypnuté aj pri zapnutom vypínači."
+msgstr "Hradlá použite tak, aby žiarovka svietila iba pri zapnutom spínači."
 
 #: activities/digital_electricity/TutorialDataset.qml:308
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "The XOR Gate takes two binary inputs and produces one binary output."
 msgctxt "TutorialDataset|"
 msgid "The XOR Gate takes two binary inputs and produces one binary output."
 msgstr "Hradlo XOR prijíma dva binárne vstupy a vytvára jeden binárny výstup."
 
 #: activities/digital_electricity/TutorialDataset.qml:309
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid ""
-#| "The output of the XOR gate will be one if the number of \"1\" in the "
-#| "input is odd. Else, the output will be zero."
 msgctxt "TutorialDataset|"
 msgid ""
 "The output of the XOR gate is one if the number of 1 in the input is odd. "
@@ -6273,33 +6204,20 @@ msgstr ""
 "výstup nula."
 
 #: activities/digital_electricity/TutorialDataset.qml:310
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "Light the bulb using the XOR gate provided."
 msgctxt "TutorialDataset|"
 msgid "Light the bulb using the provided XOR gate."
 msgstr "Rozsvieťte žiarovku pomocou poskytnutého hradla XOR."
 
 #: activities/digital_electricity/TutorialDataset.qml:326
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid ""
-#| "Light the bulb using the three switches such that the bulb glows when odd "
-#| "number of the switches are turned on."
 msgctxt "TutorialDataset|"
 msgid ""
 "Light the bulb using the two switches so that the bulb glows when one of the "
 "switch is on and the other is off."
 msgstr ""
-"Rozsvieťte žiarovku pomocou troch spínačov tak, aby žiarovka svietila, keď "
-"je zapnutý nepárny počet spínačov."
+"Rozsvieťte žiarovku pomocou dvoch spínačov tak, aby žiarovka svietila, keď "
+"je jeden spínač zapnutý a druhý vypnutý."
 
 #: activities/digital_electricity/TutorialDataset.qml:342
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid ""
-#| "Light the bulb using the three switches such that the bulb glows when odd "
-#| "number of the switches are turned on."
 msgctxt "TutorialDataset|"
 msgid ""
 "Light the bulb using the three switches so that the bulb glows when odd "
@@ -6309,11 +6227,6 @@ msgstr ""
 "je zapnutý nepárny počet spínačov."
 
 #: activities/digital_electricity/TutorialDataset.qml:355
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid ""
-#| "A NOR gate takes 2 binary input and outputs 1 if both of them are 0, "
-#| "otherwise produces an output of 0."
 msgctxt "TutorialDataset|"
 msgid ""
 "A NOR gate takes 2 binary inputs and outputs 1 if both of them are 0, "
@@ -6323,115 +6236,74 @@ msgstr ""
 "vytvára výstup 0."
 
 #: activities/digital_electricity/TutorialDataset.qml:356
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid ""
-#| "For a more detailed description about the gate, select it and click on "
-#| "the info button."
 msgctxt "TutorialDataset|"
 msgid ""
 "For a more detailed description about the NOR gate, select it and click on "
 "the info button."
 msgstr ""
-"Ak chcete získať podrobnejší popis hradla, vyberte ho a kliknite na "
+"Ak chcete získať podrobnejší popis hradla NOR, vyberte ho a kliknite na "
 "informačné tlačidlo."
 
 #: activities/digital_electricity/TutorialDataset.qml:357
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "Light the bulb using the NOR gate provided."
 msgctxt "TutorialDataset|"
 msgid "Light the bulb using the provided NOR gate."
 msgstr "Rozsvieťte žiarovku pomocou poskytnutého hradla NOR."
 
 #: activities/digital_electricity/TutorialDataset.qml:370
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid ""
-#| "Use the gates such that the bulb will glow only when the switch is turned "
-#| "off and remain off when the switch is turned on."
 msgctxt "TutorialDataset|"
 msgid ""
 "Use the gates so that the bulb glows only when the switch is turned off and "
 "doesn't glow when the switch is turned on."
 msgstr ""
-"Hradlá použite tak, aby žiarovka svietila iba pri vypnutom vypínači a "
-"zostali vypnuté aj pri zapnutom vypínači."
+"Hradlá použite tak, aby žiarovka svietila iba pri vypnutom spínači a "
+"nesvietila, keď je spínač zapnutý."
 
 #: activities/digital_electricity/TutorialDataset.qml:418
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid ""
-#| "Create a circuit using the components provided such that the bulb glows "
-#| "only when both of the switches are turned off."
 msgctxt "TutorialDataset|"
 msgid ""
 "Create a circuit using the provided components so that the bulb glows only "
 "when both of the switches are turned off."
 msgstr ""
-"Vytvorte obvod pomocou poskytnutých komponentov tak, že žiarovka svieti, len "
+"Vytvorte obvod pomocou poskytnutých súčiastok tak, že žiarovka svieti, len "
 "keď sú obidva spínače vypnuté."
 
 #: activities/digital_electricity/TutorialDataset.qml:434
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid ""
-#| "Light the bulb using the components provided such that the bulb will glow "
-#| "under the following two circumstances:\n"
-#| "1. The first switch is turned ON, or\n"
-#| "2. Both of the second and the third switches are turned on."
 msgctxt "TutorialDataset|"
 msgid ""
 "Light the bulb using the provided components so that the bulb glows if the "
 "first switch is turned ON, or if both the second and the third switches are "
 "turned on."
 msgstr ""
-"Rozsvieťte žiarovku pomocou dodaných komponentov tak, aby žiarovka svietila "
-"za týchto dvoch okolností:\n"
-"1. Prvý spínač je zapnutý, alebo\n"
-"2. Druhý aj tretí spínač sú zapnuté."
+"Rozsvieťte žiarovku pomocou poskytnutých súčiastok tak, aby žiarovka "
+"svietila keď je prvý spínač zapnutý, alebo keď je druhý aj tretí spínač "
+"zapnutý."
 
 #: activities/digital_electricity/TutorialDataset.qml:447
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid ""
-#| "Use the gates such that the bulb will glow only when the switch is turned "
-#| "off and remain off when the switch is turned on."
 msgctxt "TutorialDataset|"
 msgid ""
 "Use the gates so that the bulb glows when the switch is turned off and "
 "doesn't glow when the switch is turned on."
 msgstr ""
-"Hradlá použite tak, aby žiarovka svietila iba pri vypnutom vypínači a "
-"zostali vypnuté aj pri zapnutom vypínači."
+"Hradlá použite tak, aby žiarovka svietila pri vypnutom spínači a nesvietila, "
+"keď je spínač zapnutý."
 
 #: activities/digital_electricity/TutorialDataset.qml:479
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid ""
-#| "Create a circuit using the components provided such that the bulb glows "
-#| "when either of the switches are turned on."
 msgctxt "TutorialDataset|"
 msgid ""
 "Create a circuit using the provided components so that the bulb glows when "
 "either of the switches are turned on."
 msgstr ""
-"Vytvorte obvod pomocou poskytnutých komponentov tak, že žiarovka svieti, keď "
-"e niektorý zo spínačov zapnutý."
+"Vytvorte obvod pomocou poskytnutých súčiastok tak, že žiarovka svieti, keď "
+"je niektorý zo spínačov zapnutý."
 
 #: activities/digital_electricity/TutorialDataset.qml:495
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid ""
-#| "Create a circuit using the components provided such that the bulb will "
-#| "glow when at least one of the switches are turned off."
 msgctxt "TutorialDataset|"
 msgid ""
 "Create a circuit using the provided components so that the bulb glows when "
 "at least one of the switches is turned off."
 msgstr ""
-"Vytvorte obvod pomocou poskytnutých komponentov tak, že žiarovka bude "
-"svietiť, keď je aspoň jeden zo spínačov vypnutý."
+"Vytvorte obvod pomocou poskytnutých súčiastok tak, že žiarovka bude svietiť, "
+"keď je aspoň jeden zo spínačov vypnutý."
 
 #: activities/digital_electricity/TutorialDataset.qml:511
 msgctxt "TutorialDataset|"
@@ -6445,26 +6317,20 @@ msgstr ""
 "hodnota je 1 pre A > B."
 
 #: activities/digital_electricity/TutorialDataset.qml:512
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid ""
-#| "Create a circuit using the components provided such that the bulb will "
-#| "glow when the value of the current flowing through the first switch is "
-#| "less than or equal to that of the second switch."
 msgctxt "TutorialDataset|"
 msgid ""
 "Create a circuit using the provided components so that the bulb glows when "
 "the output of the first switch is less than or equal to the output of the "
 "second switch."
 msgstr ""
-"Vytvorte obvod pomocou poskytnutých komponentov tak, že žiarovka bude "
-"svietiť, keď je hodnota prúdu tečúceho cez prvý spínač menšia alebo rovná "
-"hodnote prúdu druhého spínača."
+"Vytvorte obvod pomocou poskytnutých súčiastok tak, že žiarovka bude svietiť, "
+"keď je hodnota prúdu tečúceho cez prvý spínač menšia alebo rovná hodnote "
+"prúdu na výstupe druhého spínača."
 
 #: activities/digital_electricity/TutorialDataset.qml:525
 msgctxt "TutorialDataset|"
 msgid "The component in the middle is a BCD to seven segment converter."
-msgstr "Komponent v strede je prevodník BCD na sedemsegment."
+msgstr "Súčiastka v strede je prevodník BCD na sedemsegment."
 
 #: activities/digital_electricity/TutorialDataset.qml:526
 msgctxt "TutorialDataset|"
@@ -6510,26 +6376,15 @@ msgstr ""
 "od 0 do 9 a späť do 0 pri použití hodinového signálu."
 
 #: activities/digital_electricity/TutorialDataset.qml:543
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid ""
-#| "Connect the components to make sure that the count of 0 to 9 is visible "
-#| "in the seven segment display provided."
 msgctxt "TutorialDataset|"
 msgid ""
 "Connect the components to make sure that the count of 0 to 9 is visible in "
 "the provided seven segment display."
 msgstr ""
-"Pripojte komponenty, aby ste sa uistili, že na poskytnutom sedemsegmentovom "
+"Pripojte súčiastky, aby ste sa uistili, že na poskytnutom sedemsegmentovom "
 "displeji je viditeľný počet 0 až 9."
 
 #: activities/digital_electricity/TutorialDataset.qml:559
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid ""
-#| "Light the bulb using both the switches such that the bulb will glow only "
-#| "when either the first switch is on and the second switch is off or the "
-#| "first switch is off and the second switch is on."
 msgctxt "TutorialDataset|"
 msgid ""
 "Light the bulb using both the switches so that the bulb glows only when "
@@ -6901,6 +6756,8 @@ msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
 "voices or effects are disabled in the main configuration."
 msgstr ""
+"Táto aktivita vyžaduje zvuk, takže bude prehrávať niektoré zvuky aj keď sú "
+"hlasové odozvy a efekty vypnuté v hlavných nastaveniach."
 
 #: activities/explore_farm_animals/ExploreLevels.qml:305
 msgctxt "ExploreLevels|"
@@ -9282,209 +9139,131 @@ msgstr ""
 "Potom vyberte tento dátum v kalendári."
 
 #: activities/find_the_day/find_the_day_dataset.js:35
-#, fuzzy
-#| msgctxt "find_the_day_dataset|"
-#| msgid "Find the date 13 days after May 3."
 msgctxt "find_the_day_dataset|"
 msgid "Find the date 13 days after May 3rd."
 msgstr "Nájdite dátum 13 dní po 3. máji."
 
 #: activities/find_the_day/find_the_day_dataset.js:39
-#, fuzzy
-#| msgctxt "find_the_day_dataset|"
-#| msgid "Find the date 7 days after October 1."
 msgctxt "find_the_day_dataset|"
 msgid "Find the date 7 days after October 1st."
 msgstr "Nájdite dátum 7 dní po 1. októbri."
 
 #: activities/find_the_day/find_the_day_dataset.js:43
-#, fuzzy
-#| msgctxt "find_the_day_dataset|"
-#| msgid "Find the date 31 days after July 12."
 msgctxt "find_the_day_dataset|"
 msgid "Find the date 31 days after July 12th."
 msgstr "Nájdite dátum 31 dní po 12. júli."
 
 #: activities/find_the_day/find_the_day_dataset.js:47
-#, fuzzy
-#| msgctxt "find_the_day_dataset|"
-#| msgid "Find the date two weeks after November 27."
 msgctxt "find_the_day_dataset|"
 msgid "Find the date two weeks after November 27th."
 msgstr "Nájdite dátum dva týždne po 27. novembri."
 
 #: activities/find_the_day/find_the_day_dataset.js:51
-#, fuzzy
-#| msgctxt "find_the_day_dataset|"
-#| msgid "Find the date 19 days before September 1."
 msgctxt "find_the_day_dataset|"
 msgid "Find the date 19 days before September 1st."
 msgstr "Nájdite dátum 19 dní pred 1. septembrom."
 
 #: activities/find_the_day/find_the_day_dataset.js:55
-#, fuzzy
-#| msgctxt "find_the_day_dataset|"
-#| msgid "Find the date 5 days before December 8."
 msgctxt "find_the_day_dataset|"
 msgid "Find the date 5 days before December 8th."
 msgstr "Nájdite dátum 5 dní pred 8. decembrom."
 
 #: activities/find_the_day/find_the_day_dataset.js:75
-#, fuzzy
-#| msgctxt "find_the_day_dataset|"
-#| msgid "Find day of week 3 days after December 5."
 msgctxt "find_the_day_dataset|"
 msgid "Find the day of the week 3 days after December 5th."
 msgstr "Nájdite deň týždňa 3 dni po 5. decembri."
 
 #: activities/find_the_day/find_the_day_dataset.js:79
-#, fuzzy
-#| msgctxt "find_the_day_dataset|"
-#| msgid "Find day of week 12 days before November 12."
 msgctxt "find_the_day_dataset|"
 msgid "Find the day of the week 12 days before November 12th."
 msgstr "Nájdite deň týždňa 12 dní pred 12. novembrom."
 
 #: activities/find_the_day/find_the_day_dataset.js:83
-#, fuzzy
-#| msgctxt "find_the_day_dataset|"
-#| msgid "Find day of week 32 days after January 5."
 msgctxt "find_the_day_dataset|"
 msgid "Find the day of the week 32 days after January 5th."
 msgstr "Nájdite deň týždňa 32 dní po 5. januári."
 
 #: activities/find_the_day/find_the_day_dataset.js:87
-#, fuzzy
-#| msgctxt "find_the_day_dataset|"
-#| msgid "Find day of week 5 days after February 23."
 msgctxt "find_the_day_dataset|"
 msgid "Find the day of the week 5 days after February 23rd."
 msgstr "Nájdite deň týždňa 5 dní po 23. februári."
 
 #: activities/find_the_day/find_the_day_dataset.js:91
-#, fuzzy
-#| msgctxt "find_the_day_dataset|"
-#| msgid "Find day of week 17 days before August 16."
 msgctxt "find_the_day_dataset|"
 msgid "Find the day of the week 17 days before August 16th."
 msgstr "Nájdite deň týždňa 17 dní pred 16. augustom."
 
 #: activities/find_the_day/find_the_day_dataset.js:112
-#, fuzzy
-#| msgctxt "find_the_day_dataset|"
-#| msgid "Find the date 2 weeks and 3 days after January 12."
 msgctxt "find_the_day_dataset|"
 msgid "Find the date 2 weeks and 3 days after January 12th."
 msgstr "Nájdite dátum 2 týždne a 3 dni po 12. januári."
 
 #: activities/find_the_day/find_the_day_dataset.js:116
-#, fuzzy
-#| msgctxt "find_the_day_dataset|"
-#| msgid "Find the date 3 weeks and 2 days after March 22."
 msgctxt "find_the_day_dataset|"
 msgid "Find the date 3 weeks and 2 days after March 22nd."
 msgstr "Nájdite dátum 3 týždne a 2 dni po 22. marci."
 
 #: activities/find_the_day/find_the_day_dataset.js:120
-#, fuzzy
-#| msgctxt "find_the_day_dataset|"
-#| msgid "Find the date 5 weeks and 6 days after October 5."
 msgctxt "find_the_day_dataset|"
 msgid "Find the date 5 weeks and 6 days after October 5th."
 msgstr "Nájdite dátum 5 týždňov a 6 dní po 5. októbri."
 
 #: activities/find_the_day/find_the_day_dataset.js:124
-#, fuzzy
-#| msgctxt "find_the_day_dataset|"
-#| msgid "Find the date 1 week and 1 day before August 8."
 msgctxt "find_the_day_dataset|"
 msgid "Find the date 1 week and 1 day before August 8th."
 msgstr "Nájdite dátum 1 týždeň a 1 deň pred 8. augustom."
 
 #: activities/find_the_day/find_the_day_dataset.js:128
-#, fuzzy
-#| msgctxt "find_the_day_dataset|"
-#| msgid "Find the date 2 weeks and 5 days before July 2."
 msgctxt "find_the_day_dataset|"
 msgid "Find the date 2 weeks and 5 days before July 2nd."
 msgstr "Nájdite dátum 2 týždne a 5 dní pred 2. júlom."
 
 #: activities/find_the_day/find_the_day_dataset.js:148
-#, fuzzy
-#| msgctxt "find_the_day_dataset|"
-#| msgid "Find day of week 5 months and 2 days after July 3."
 msgctxt "find_the_day_dataset|"
 msgid "Find the day of the week 5 months and 2 days after July 3rd."
 msgstr "Nájdite deň týždňa 5 mesiacov a 2 dni po 3. júli."
 
 #: activities/find_the_day/find_the_day_dataset.js:152
-#, fuzzy
-#| msgctxt "find_the_day_dataset|"
-#| msgid "Find day of week 2 months and 4 days after October 8."
 msgctxt "find_the_day_dataset|"
 msgid "Find the day of the week 2 months and 4 days after October 8th."
 msgstr "Nájdite deň týždňa 2 mesiace a 4 dni po 8. októbri."
 
 #: activities/find_the_day/find_the_day_dataset.js:156
-#, fuzzy
-#| msgctxt "find_the_day_dataset|"
-#| msgid "Find day of week 1 month and 3 days before December 28."
 msgctxt "find_the_day_dataset|"
 msgid "Find the day of the week 1 month and 3 days before December 28th."
 msgstr "Nájdite deň týždňa 1 mesiac a 3 dni pred 28. decembrom."
 
 #: activities/find_the_day/find_the_day_dataset.js:160
-#, fuzzy
-#| msgctxt "find_the_day_dataset|"
-#| msgid "Find day of week 8 months and 7 days after February 28."
 msgctxt "find_the_day_dataset|"
 msgid "Find the day of the week 8 months and 7 days after February 28th."
 msgstr "Nájdite deň týždňa 8 mesiacov a 7 dní po 28. februári."
 
 #: activities/find_the_day/find_the_day_dataset.js:164
-#, fuzzy
-#| msgctxt "find_the_day_dataset|"
-#| msgid "Find day of week 3 months and 3 days before September 15."
 msgctxt "find_the_day_dataset|"
 msgid "Find the day of the week 3 months and 3 days before September 15th."
 msgstr "Nájdite deň týždňa 3 mesiace a 3 dni pred 15. septembrom."
 
 #: activities/find_the_day/find_the_day_dataset.js:183
-#, fuzzy
-#| msgctxt "find_the_day_dataset|"
-#| msgid "Find the date 2 months, 1 week and 5 days after January 12."
 msgctxt "find_the_day_dataset|"
 msgid "Find the date 2 months, 1 week and 5 days after January 12th."
 msgstr "Nájdite dátum 2 mesiace, 1 týždeň a 5 dní po 12. januári."
 
 #: activities/find_the_day/find_the_day_dataset.js:187
-#, fuzzy
-#| msgctxt "find_the_day_dataset|"
-#| msgid "Find the date 3 months, 2 weeks and 1 day after August 23."
 msgctxt "find_the_day_dataset|"
 msgid "Find the date 3 months, 2 weeks and 1 day after August 23rd."
 msgstr "Nájdite dátum 3 mesiace, 2 týždne a 1 deň po 23. auguste."
 
 #: activities/find_the_day/find_the_day_dataset.js:191
-#, fuzzy
-#| msgctxt "find_the_day_dataset|"
-#| msgid "Find the date 5 months, 3 weeks and 2 days after March 20."
 msgctxt "find_the_day_dataset|"
 msgid "Find the date 5 months, 3 weeks and 2 days after March 20th."
 msgstr "Nájdite dátum 5 mesiacov, 3 týždne a 2 dni po 20. marci."
 
 #: activities/find_the_day/find_the_day_dataset.js:195
-#, fuzzy
-#| msgctxt "find_the_day_dataset|"
-#| msgid "Find the date 1 month 1 week and 1 day before September 10."
 msgctxt "find_the_day_dataset|"
 msgid "Find the date 1 month 1 week and 1 day before September 10th."
 msgstr "Nájdite dátum 1 mesiac, 1 týždeň a 1 deň pred 10. septembrom."
 
 #: activities/find_the_day/find_the_day_dataset.js:199
-#, fuzzy
-#| msgctxt "find_the_day_dataset|"
-#| msgid "Find the date 2 months, 1 week and 8 days before April 7."
 msgctxt "find_the_day_dataset|"
 msgid "Find the date 2 months, 1 week and 8 days before April 7th."
 msgstr "Nájdite dátum 2 mesiace, 1 týždeň a 8 dní pred 7. aprílom."
@@ -14092,7 +13871,7 @@ msgid ""
 "Guide the Number Muncher to all the expressions that do not equal the number "
 "at the bottom of the screen."
 msgstr ""
-"Doveďte Čísložrúta na všetky výrazy, ktoré sa nerovnajú číslu uvedenému  v "
+"Doveďte Čísložrúta na všetky výrazy, ktoré sa nerovnajú číslu uvedenému v "
 "spodnej časti obrazovky."
 
 #. Help goal
@@ -14617,7 +14396,7 @@ msgstr "Uhádnuť číslo medzi 1 a %1."
 #: activities/hangman/ActivityConfig.qml:42
 msgctxt "ActivityConfig|"
 msgid "Display the image to find as hint"
-msgstr "Zobraziť obrázok ako tip"
+msgstr "Zobraziť obrázok ako radu"
 
 #: activities/hangman/ActivityConfig.qml:50
 msgctxt "ActivityConfig|"
@@ -14654,18 +14433,13 @@ msgstr ""
 "pomocou skutočnej klávesnice."
 
 #: activities/hangman/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Guess the letters of the given word. To help you, on every wrong try, a "
-#| "part of the image representing the word will be revealed."
 msgctxt "ActivityInfo|"
 msgid ""
 "If the option 'Display the image to find as hint' is activated, on every "
 "wrong try a part of the image representing the word will be revealed."
 msgstr ""
-"Hádajte písmená daného slova. Aby sme vám pomohli, pri každom nesprávnom "
-"pokuse bude odhalená časť obrázka predstavujúceho dané slovo."
+"Ak je zvolená možnosť \"Zobraziť obrázok ako radu\", pri každom nesprávnom "
+"pokuse bude odhalená časť obrázku predstavujúceho dané slovo."
 
 #: activities/hangman/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
@@ -14674,6 +14448,8 @@ msgid ""
 "corresponding voice is available, you will hear the word to find when three "
 "attempts are remaining."
 msgstr ""
+"Ak je aktívna voľba \"Nájsť vyslovené slovo...\" a ak je dostupná príslušná "
+"hlasová odozva, budete počuť slovo, ktoré máte nájsť na tri pokusy."
 
 #: activities/hangman/hangman.js:215
 #, qt-format
@@ -15471,15 +15247,9 @@ msgstr "Zem"
 #: activities/land_safe/resource/2/Data.qml:13
 msgctxt "Data|"
 msgid "The spaceship rotates when you use the direction keys."
-msgstr ""
+msgstr "Vesmírna loď sa otáča použitím smerových klávesov."
 
 #: activities/land_safe/resource/2/Data.qml:24
-#, fuzzy
-#| msgctxt "land_safe|"
-#| msgid ""
-#| "The up and down keys control the thrust of the rear engine.<br/>The right "
-#| "and left keys now control the rotation of the ship.<br/>To move the ship "
-#| "in horizontal direction you must first rotate and then accelerate it."
 msgctxt "Data|"
 msgid ""
 "The up and down keys control the thrust of the rear engine.<br/>The right "
@@ -15487,8 +15257,8 @@ msgid ""
 "horizontal direction you must first rotate and then accelerate."
 msgstr ""
 "Klávesy hore a dole ovládajú ťah zadného motora.<br/>Klávesy vpravo a vľavo "
-"teraz ovládajú rotáciu lode.<br/>Ak sa chcete loďou pohybovať v "
-"horizontálnom smere, musíte ju najskôr otočiť a potom ju zrýchliť."
+"teraz ovládajú rotáciu lode.<br/>Ak sa chcete loďou pohybovať vodorovne, "
+"musíte ju najskôr otočiť a potom zrýchliť."
 
 #. Activity title
 #: activities/lang/ActivityInfo.qml:21
@@ -15510,13 +15280,6 @@ msgstr "Obohaťte si slovnú zásobu vo svojom jazyku alebo v cudzom jazyku."
 
 #. Help manual
 #: activities/lang/ActivityInfo.qml:30
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Review a set of words. Each word is shown with a voice, a text and an "
-#| "image.<br/>When done, you are suggested an exercise in which, given the "
-#| "voice, you must find the right word. In the configuration, you can select "
-#| "the language you want to learn."
 msgctxt "ActivityInfo|"
 msgid ""
 "Review a set of words. Each word is shown with a voice, a text and an image."
@@ -15524,14 +15287,14 @@ msgid ""
 "voice and the image, then only from the voice, and finally an exercise to "
 "type the text."
 msgstr ""
-"Preskúmajte súbor slov. Každé slovo je znázornené hlasom, textom a obrázkom."
-"<br/>Po dokončení sa vám navrhne cvičenie, dané hlasom musíte nájsť správne "
-"slovo. V konfigurácii môžete vybrať jazyk, ktorý sa chcete naučiť."
+"Preskúmajte sadu slov. Každé slovo je znázornené hlasom, textom a obrázkom."
+"<br/>Po dokončení dostanete cvičenie, na rozpoznanie textu z hlasu a "
+"obrázku. Potom len z hlasu a nakoniec cvičenie na písanie textu."
 
 #: activities/lang/ActivityInfo.qml:32
 msgctxt "ActivityInfo|"
 msgid "In the configuration, you can select the language you want to learn."
-msgstr ""
+msgstr "V nastaveniach môžete vybrať jazyk, ktorý sa chcete naučiť."
 
 #: activities/lang/ActivityInfo.qml:35
 msgctxt "ActivityInfo|"
@@ -15799,20 +15562,13 @@ msgstr ""
 
 #: activities/learn_decimals/learn_decimals.js:53
 #: activities/learn_decimals/learn_decimals.js:68
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Drag each image from the (vertical) box on the left to its "
-#| "(corresponding) name on the right. Click the OK button to check your "
-#| "answer."
 msgctxt "learn_decimals|"
 msgid ""
 "If the answer is correct, type the corresponding result, and click on the OK "
 "button to validate your answer."
 msgstr ""
-"Pretiahnuť každý obrázok z (vertikálneho) poľa na ľavej strane k jeho "
-"(zodpovedajúcemu) názvu na pravej strane. Kliknúť na tlačidlo OK pre "
-"kontrolu svojej odpovede."
+"Ak je odpoveď správna, napíšte príslušný výsledok a kliknite na tlačidlo OK "
+"pre kontrolu svojej odpovede."
 
 #: activities/learn_decimals/learn_decimals.js:60
 msgctxt "learn_decimals|"
@@ -16020,7 +15776,7 @@ msgstr "Číslicové vyjadrenie."
 #: activities/learn_digits/ActivityConfig.qml:38
 msgctxt "ActivityConfig|"
 msgid "Enable voices"
-msgstr "Povoliť hlasy"
+msgstr "Povoliť hlasové odozvy"
 
 #. Activity title
 #: activities/learn_digits/ActivityInfo.qml:15
@@ -16590,14 +16346,10 @@ msgstr ""
 "na bojiskách."
 
 #: activities/louis-braille/louis_braille_data.js:42
-#, fuzzy
-#| msgctxt "louis_braille_data|"
-#| msgid ""
-#| "Louis trimmed Barbier's 12 dots into 6 and invented the Braille system."
 msgctxt "louis_braille_data|"
 msgid "Louis trimmed Barbier's 12 dots into 6 and invented the braille system."
 msgstr ""
-"Louis zredukoval 12 Barbierových bodiek na 6 a vymyslel systém Braillovho "
+"Louis zredukoval 12 Barbierových bodiek na 6 a vymyslel systém Brailovho "
 "písma."
 
 #: activities/louis-braille/louis_braille_data.js:47
@@ -17100,6 +16852,8 @@ msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
 "voices or effects are disabled in the main configuration."
 msgstr ""
+"Táto aktivita vyžaduje zvuk, takže bude prehrávať niektoré zvuky aj keď sú "
+"hlasové odozvy a efekty vypnuté v hlavných nastaveniach."
 
 #: activities/melody/Melody.qml:286
 msgctxt "Melody|"
@@ -17178,7 +16932,7 @@ msgstr ""
 #: activities/memory/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Space or Enter: flip the selected card"
-msgstr ""
+msgstr "Medzerník alebo Enter: otočiť zvolenú kartu"
 
 #: activities/memory-case-association/ActivityConfig.qml:23
 #: activities/memory-enumerate/ActivityConfig.qml:23
@@ -18288,12 +18042,9 @@ msgstr "Pamäťová hra s obrázkami"
 
 #. Help title
 #: activities/memory/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Flip the cards to find the matching pairs"
 msgctxt "ActivityInfo|"
 msgid "Flip the cards to find the matching pairs."
-msgstr "Otáčaj karty a nájdi zhodné páry"
+msgstr "Otáčaj karty a nájdi zhodné páry."
 
 #: activities/memory/math_util.js:15 activities/memory/math_util.js:18
 msgctxt "math_util|"
@@ -18321,6 +18072,8 @@ msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
 "voices or effects are disabled in the main configuration."
 msgstr ""
+"Táto aktivita vyžaduje zvuk, takže bude prehrávať niektoré zvuky aj keď sú "
+"hlasové odozvy a efekty vypnuté v hlavných nastaveniach."
 
 #: activities/memory/MemoryCommon.qml:326
 msgctxt "MemoryCommon|"
@@ -18356,11 +18109,6 @@ msgstr ""
 
 #. Help prerequisite
 #: activities/menu/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Some of the activities are game orientated, but nonetheless still "
-#| "educational."
 msgctxt "ActivityInfo|"
 msgid "Some of the activities are game orientated, but still educational."
 msgstr "Niektoré z aktivít sú herne orientované, ale stále výukové."
@@ -18374,6 +18122,10 @@ msgid ""
 "At the bottom of the screen is the GCompris control bar. Notice that you can "
 "hide or show the bar by touching its anchor."
 msgstr ""
+"Vyberte ikonu pre spustenie aktivity alebo pre zobrazenie zoznamu aktivít v "
+"skupine.\n"
+"V spodnej časti obrazovky je ovládací panel GCompris.\n"
+"Všimnite si, že sa dá skryť a opäť zobraziť kliknutím na jeho ukotvenie."
 
 #: activities/menu/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
@@ -18381,16 +18133,21 @@ msgid ""
 "The following icons are displayed:\n"
 "(note that each icon is displayed only if available in the current activity)"
 msgstr ""
+"Zobrazené sú nasledujúce ikony:\n"
+"(všimnite si, že každá z ikon sa zobrazuje len ak je dostupná pre danú "
+"aktivitu)"
 
 #: activities/menu/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "Home - Exit an activity, go back to menu (Ctrl+W or Escape key)"
 msgstr ""
+"Dom - Opustiť aktivitu a vrátiť sa do hlavnej ponuky (Ctrl+W alebo kláves "
+"Esc)"
 
 #: activities/menu/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Arrows - Display the current level. Click to select another level"
-msgstr ""
+msgstr "Šípky - Zobrazujú aktuálnu úroveň. Klinutím je možné zmeniť úroveň"
 
 #: activities/menu/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
@@ -18405,7 +18162,7 @@ msgstr "Otáznik - Pomocník"
 #: activities/menu/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid "Reload - Start the activity from the beginning again"
-msgstr ""
+msgstr "Opakovať - Začne aktivitu opäť odznova"
 
 #: activities/menu/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
@@ -18413,12 +18170,9 @@ msgid "Tool - The configuration menu"
 msgstr "Nástroj - Ponuka nastavení"
 
 #: activities/menu/ActivityInfo.qml:31
-#, fuzzy
-#| msgctxt "ConfigurationItem|"
-#| msgid "The activity section menu is visible"
 msgctxt "ActivityInfo|"
 msgid "Three lines - The activity settings menu"
-msgstr "Sekcia ponuky aktivít je viditeľná"
+msgstr "Tri linajky - ponuka nastavení pre aktivitu"
 
 #: activities/menu/ActivityInfo.qml:32
 msgctxt "ActivityInfo|"
@@ -18428,22 +18182,22 @@ msgstr "G - O programe GCompris"
 #: activities/menu/ActivityInfo.qml:33
 msgctxt "ActivityInfo|"
 msgid "Quit - Quit GCompris (Ctrl+Q)"
-msgstr "Ukončenie - Ukončiť GCompris (Ctrl+Q)"
+msgstr "Vypínač - Ukončiť GCompris (Ctrl+Q)"
 
 #: activities/menu/ActivityInfo.qml:34
 msgctxt "ActivityInfo|"
 msgid "The stars show suitable age groups for each activity:"
-msgstr ""
+msgstr "Hviezdy zobrazujú vhodnú vekovú kategóriu pre každú aktivitu:"
 
 #: activities/menu/ActivityInfo.qml:35
 msgctxt "ActivityInfo|"
 msgid "1, 2 or 3 yellow stars - from 2 to 6 years old"
-msgstr ""
+msgstr "1, 2 alebo 3 žlté hviezdy - od 2 do 6 rokov"
 
 #: activities/menu/ActivityInfo.qml:36
 msgctxt "ActivityInfo|"
 msgid "1, 2 or 3 red stars - 7 years and up"
-msgstr ""
+msgstr "1, 2 alebo 3 červené hviezdy - 7 a viac rokov"
 
 #: activities/menu/ActivityInfo.qml:37
 msgctxt "ActivityInfo|"
@@ -18451,6 +18205,8 @@ msgid ""
 "If there are two different star icons on an activity, the first one shows "
 "the minimum difficulty, and the second one the maximum difficulty."
 msgstr ""
+"Ak je na aktivite viac rôznych hviezd, prvá ukazuje najnižšiu obtiažnosť a "
+"druhá tú najvyššiu."
 
 #: activities/menu/ActivityInfo.qml:38
 msgctxt "ActivityInfo|"
@@ -18460,7 +18216,7 @@ msgstr "<b>Klávesové skratky:</b>"
 #: activities/menu/ActivityInfo.qml:39
 msgctxt "ActivityInfo|"
 msgid "Ctrl+B: Show or Hide the control bar"
-msgstr ""
+msgstr "Ctrl+B: Zobraziť či skryť ovládací panel"
 
 #: activities/menu/ActivityInfo.qml:40
 msgctxt "ActivityInfo|"
@@ -18470,7 +18226,7 @@ msgstr "Ctrl+F: Prepína zobrazenie na celú obrazovku"
 #: activities/menu/ActivityInfo.qml:41
 msgctxt "ActivityInfo|"
 msgid "Ctrl+S: Toggle the activity section bar"
-msgstr ""
+msgstr "Ctrl+S: Prepína zobrazenie panelu zo zoznamom aktivít"
 
 #: activities/menu/BackgroundMusicList.qml:63
 msgctxt "BackgroundMusicList|"
@@ -18524,7 +18280,7 @@ msgstr "Výber jazyka"
 #: activities/menu/ConfigurationItem.qml:70
 msgctxt "ConfigurationItem|"
 msgid "Localized voices"
-msgstr "Lokalizované hlasy"
+msgstr "Lokalizované hlasové odozvy"
 
 #: activities/menu/ConfigurationItem.qml:79
 msgctxt "ConfigurationItem|"
@@ -18539,7 +18295,7 @@ msgstr "Stiahnuť"
 #: activities/menu/ConfigurationItem.qml:95
 msgctxt "ConfigurationItem|"
 msgid "Enable audio voices"
-msgstr "Povoliť zvukové hlasy"
+msgstr "Povoliť hlasové odozvy"
 
 #: activities/menu/ConfigurationItem.qml:105
 msgctxt "ConfigurationItem|"
@@ -18762,18 +18518,13 @@ msgid "Vocabulary"
 msgstr "Slovník"
 
 #: activities/menu/Menu.qml:372
-#, fuzzy
-#| msgctxt "Menu|"
-#| msgid ""
-#| "Put your favorite activities here by selecting the sun at the top right "
-#| "of that activity."
 msgctxt "Menu|"
 msgid ""
 "Put your favorite activities here by clicking on the sun at the top right of "
 "that activity."
 msgstr ""
-"Dajte sem svoje obľúbené aktivity výberom slnka na každej aktivite vpravo "
-"hore."
+"Svoje obľúbené aktivity umiestnite sem, výberom slnka v pravom hornom rohu "
+"na každej aktivite."
 
 #: activities/menu/Menu.qml:775
 msgctxt "Menu|"
@@ -19047,19 +18798,14 @@ msgid "Tab: navigate between the bottom and the top areas"
 msgstr ""
 
 #: activities/money/money.js:143
-#, fuzzy
-#| msgctxt "money|"
-#| msgid ""
-#| "Click on the coins or paper money at the bottom of the screen to pay. If "
-#| "you want to remove a coin or note, click on it on the upper screen area."
 msgctxt "money|"
 msgid ""
 "Click on the coins or on the notes at the bottom of the screen to pay. If "
 "you want to remove a coin or a note, click on it on the upper screen area."
 msgstr ""
-"Zaplať kliknutím na mince alebo papierové peniaze v spodnej časti obrazovky. "
-"Ak chceš odstrániť mincu alebo bankovku, klikni na ňu v hornej časti "
-"obrazovky."
+"Zaplať kliknutím na mince alebo papierové bankovky v spodnej časti "
+"obrazovky. Ak chceš odstrániť mincu alebo bankovku, klikni na ňu v hornej "
+"časti obrazovky."
 
 #: activities/money/money.js:174
 #, qt-format
@@ -19519,7 +19265,7 @@ msgid ""
 "Play with a friend. First take turns to place nine pieces, and then take "
 "turns to move your pieces."
 msgstr ""
-"Hrajte s kamarátom. Najskôr sa striedajte, aby ste umiestnili 9 figúrok, a "
+"Hrajte s kamarátom. Najskôr sa striedajte, aby ste umiestnili 9 figúrok a "
 "potom po ťahoch presúvajte figúrky."
 
 #. Activity title
@@ -19577,6 +19323,8 @@ msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
 "voices or effects are disabled in the main configuration."
 msgstr ""
+"Táto aktivita vyžaduje zvuk, takže bude prehrávať niektoré zvuky aj keď sú "
+"hlasové odozvy a efekty vypnuté v hlavných nastaveniach."
 
 #: activities/note_names/NoteNames.qml:453
 msgctxt "NoteNames|"
@@ -19589,13 +19337,6 @@ msgid "Continue"
 msgstr "Pokračovať"
 
 #: activities/note_names/resource/dataset_01.qml:89
-#, fuzzy
-#| msgctxt "dataset_01|"
-#| msgid ""
-#| "This activity will teach you to read notes from F1 in bass clef up to D6 "
-#| "in treble clef.<br>For each level you will learn new notes and train the "
-#| "ones you have already learned.<br>Reference notes are colored in red and "
-#| "will help you to read the notes placed around them."
 msgctxt "dataset_01|"
 msgid ""
 "This activity will teach you to read notes from F1 in bass clef up to D6 in "
@@ -19976,49 +19717,34 @@ msgid ""
 msgstr ""
 
 #: activities/ordering_numbers/ordering.js:67
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Drag and Drop the items to make them match"
 msgctxt "ordering|"
 msgid "Drag and drop the items in ascending order."
-msgstr "Pretiahnuť položky tak, aby si zodpovedali"
+msgstr "Pretiahnuť položky vo vzostupnom poradí."
 
 #: activities/ordering_numbers/ordering.js:68
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Drag and Drop the items to make them match"
 msgctxt "ordering|"
 msgid "Drag and drop the items in descending order."
-msgstr "Pretiahnuť položky tak, aby si zodpovedali"
+msgstr "Pretiahnuť položky v zostupnom poradí."
 
 #: activities/ordering_numbers/ordering.js:69
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Drag and Drop the items to make them match"
 msgctxt "ordering|"
 msgid "Drag and drop the letters in alphabetical order."
-msgstr "Pretiahnuť položky tak, aby si zodpovedali"
+msgstr "Pretiahnuť písmená v abecednom poradí."
 
 #: activities/ordering_numbers/ordering.js:70
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Drag and Drop the items to organize the story"
 msgctxt "ordering|"
 msgid "Drag and drop the letters in reverse alphabetical order."
-msgstr "Pretiahnuť položky, aby sa usporiadal prekreslila príbeh"
+msgstr "Pretiahnuť písmená v obrátenom abecednom poradí."
 
 #: activities/ordering_numbers/ordering.js:71
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Drag and Drop the items to make them match"
 msgctxt "ordering|"
 msgid "Drag and drop the items in chronological order."
-msgstr "Pretiahnuť položky tak, aby si zodpovedali"
+msgstr "Pretiahnuť položky v chronologickom poradí."
 
 #: activities/ordering_numbers/ordering.js:72
 msgctxt "ordering|"
 msgid "Drag and drop the words to the upper box to form a meaningful sentence."
-msgstr ""
+msgstr "Pretiahnutím slov do horného políčka vytvorte zmysluplnú vetu."
 
 #: activities/ordering_numbers/resource/1/Data.qml:13
 #, fuzzy
@@ -21040,12 +20766,9 @@ msgstr ""
 "vložte ju do notovej osnovy."
 
 #: activities/piano_composition/piano_composition.js:43
-#, fuzzy
-#| msgctxt "piano_composition|"
-#| msgid "Now you can load music and also save your composed one."
 msgctxt "piano_composition|"
 msgid "Now you can load music and also save your compositions."
-msgstr "Teraz môžete načítať hudbu a tiež si uložiť svoju skomponovanú"
+msgstr "Teraz môžete načítať hudbu a tiež si uložiť svoju skomponovanú."
 
 #: activities/piano_composition/piano_composition.js:66
 #, qt-format
@@ -21095,6 +20818,8 @@ msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
 "voices or effects are disabled in the main configuration."
 msgstr ""
+"Táto aktivita vyžaduje zvuk, takže bude prehrávať niektoré zvuky aj keď sú "
+"hlasové odozvy a efekty vypnuté v hlavných nastaveniach."
 
 #: activities/piano_composition/Piano_composition.qml:548
 msgctxt "Piano_composition|"
@@ -21360,6 +21085,8 @@ msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
 "voices or effects are disabled in the main configuration."
 msgstr ""
+"Táto aktivita vyžaduje zvuk, takže bude prehrávať niektoré zvuky aj keď sú "
+"hlasové odozvy a efekty vypnuté v hlavných nastaveniach."
 
 #: activities/play_piano/PlayPiano.qml:280
 msgctxt "PlayPiano|"
@@ -21469,6 +21196,8 @@ msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
 "voices or effects are disabled in the main configuration."
 msgstr ""
+"Táto aktivita vyžaduje zvuk, takže bude prehrávať niektoré zvuky aj keď sú "
+"hlasové odozvy a efekty vypnuté v hlavných nastaveniach."
 
 #: activities/play_rhythm/PlayRhythm.qml:360
 msgctxt "PlayRhythm|"
@@ -21657,7 +21386,7 @@ msgstr ""
 #| msgid "Can read instructions. Thinking of the path logically"
 msgctxt "ActivityInfo|"
 msgid "Can read instructions, and think logically to find a path."
-msgstr "Dokáže čítať pokyny. Logicky premýšľať o ceste"
+msgstr "Dokáže čítať pokyny, logicky myslieť a hľadať cestu."
 
 #. Help manual
 #: activities/programmingMaze/ActivityInfo.qml:25
@@ -21773,7 +21502,7 @@ msgstr "Oblasť inštrukcií"
 msgctxt "programmingMaze|"
 msgid ""
 "There are 3 instructions which you can use to code and lead Tux to the fish:"
-msgstr ""
+msgstr "Možete použiť 3 inštrukcie na programovanie pohybu Tuxa do cieľa:"
 
 #: activities/programmingMaze/programmingMaze.js:98
 msgctxt "programmingMaze|"
@@ -21781,16 +21510,18 @@ msgid ""
 "<b>1. Move forward:</b> Moves Tux one step forward in the direction it is "
 "facing."
 msgstr ""
+"<b>1. Pohyb vpred:</b> Posunie Tuxa o jeden krok dopredu v smere na ktorý je "
+"otočený."
 
 #: activities/programmingMaze/programmingMaze.js:99
 msgctxt "programmingMaze|"
 msgid "<b>2. Turn left:</b> Turns Tux to the left."
-msgstr ""
+msgstr "<b>2. Otočiť vľavo:</b> Otočí Tuxa doľava."
 
 #: activities/programmingMaze/programmingMaze.js:100
 msgctxt "programmingMaze|"
 msgid "<b>3. Turn right:</b> Turns Tux to the right."
-msgstr ""
+msgstr "<b>3. Otočiť vpravo:</b> Otočí Tuxa doprava."
 
 #: activities/programmingMaze/programmingMaze.js:104
 msgctxt "programmingMaze|"
@@ -21800,7 +21531,7 @@ msgstr "Hlavná funkcia:"
 #: activities/programmingMaze/programmingMaze.js:105
 msgctxt "programmingMaze|"
 msgid "The execution of the code starts here."
-msgstr ""
+msgstr "Vykonávanie kódu začína tu."
 
 #: activities/programmingMaze/programmingMaze.js:106
 msgctxt "programmingMaze|"
@@ -21808,6 +21539,8 @@ msgid ""
 "-Click on any instruction in the <b>instruction area</b> to add it to the "
 "<b>Main Function</b>."
 msgstr ""
+"-Kliknite na ktorúkoľvek inštrukciu v <b>Oblasti inštrukcií</b> pre jej "
+"pridanie k <b>Hlavnej funkcii</b>."
 
 #: activities/programmingMaze/programmingMaze.js:107
 msgctxt "programmingMaze|"
@@ -21815,6 +21548,8 @@ msgid ""
 "-The instructions will execute in order until there's none left, or until a "
 "dead-end, or when Tux reaches the fish."
 msgstr ""
+"-Inštrukcie budú vykonané v poradí až po poslednú alebo až po slepú uličku "
+"alebo kým Tux nedosiahne cieľ."
 
 #: activities/programmingMaze/programmingMaze.js:114
 msgctxt "programmingMaze|"
@@ -21827,27 +21562,19 @@ msgid ""
 "<b>Procedure</b> is a reusable set of instructions which can be <b>used in "
 "the code by calling it where needed</b>."
 msgstr ""
+"<b>Procedúry</b> sú znovu-použiteľné sady inštrukcií, ktoré možno <b>použiť "
+"v kóde ich volaním podľa potreby</b>."
 
 #: activities/programmingMaze/programmingMaze.js:116
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid ""
-#| "<b><h7>Procedure:</b></h7><li>-<b>Procedure</b> is a reusable set of "
-#| "instructions which can be <b>used in a code by calling it where needed.</"
-#| "b></li><li>-To <b>switch</b> between the <b>Procedure area</b> and "
-#| "<b>Main Function area</b> to add your code, click on the label "
-#| "<b>Procedure</b> or <b>Main Function</b>.</li>"
 msgctxt "programmingMaze|"
 msgid ""
 "-To <b>switch</b> between the <b>Procedure area</b> and the <b>Main Function "
 "area</b> to add your code, click on the <b>Procedure</b> or <b>Main "
 "Function</b> label."
 msgstr ""
-"<b><h7>Procedúra:</b></h7><li>-<b>Procedúra</b> je opakovane použiteľná sada "
-"inštrukcií, ktorá môže byť <b>použitá v kóde volaním, kde je to potrebné.</"
-"b></li><li>-Na <b>prepnutie</b> sa medzi <b>oblasťou Procedúry</b> a "
-"<b>oblasťou Hlavnej funkcie</b> na pridanie vášho kódu, kliknite na "
-"označenie <b>Procedúra</b> alebo <b>Hlavná funkcia</b>.</li>"
+"-Na <b>prepnínanie</b> medzi <b>Procedurálnou oblasťou</b> a <b>Oblasťou "
+"hlavnej funkčnosti</b> pre pridávanie vášho kódu, klinite na štítok "
+"<b>Procedúra</b> alebo  <b>Hlavná funkcia</b>."
 
 #: activities/programmingMaze/programmingMaze.js:123
 msgctxt "programmingMaze|"
@@ -21860,27 +21587,19 @@ msgid ""
 "<b>Loop</b> is a sequence of instructions that is <b>continually repeated "
 "the number of times defined by the number inside it</b>."
 msgstr ""
+"<b>Slučka</b> je postupnosť inštrukcií, ktoré sa <b>vykonávajú opakovane "
+"toľko krát, koľko je definované číslom v nej</b>."
 
 #: activities/programmingMaze/programmingMaze.js:125
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid ""
-#| "<b><h7>Procedure:</b></h7><li>-<b>Procedure</b> is a reusable set of "
-#| "instructions which can be <b>used in a code by calling it where needed.</"
-#| "b></li><li>-To <b>switch</b> between the <b>Procedure area</b> and "
-#| "<b>Main Function area</b> to add your code, click on the label "
-#| "<b>Procedure</b> or <b>Main Function</b>.</li>"
 msgctxt "programmingMaze|"
 msgid ""
 "-To <b>switch</b> between the <b>Loop area</b> and the <b>Main Function "
 "area</b> to add your code, click on the <b>Loop</b> or <b>Main Function</b> "
 "label."
 msgstr ""
-"<b><h7>Procedúra:</b></h7><li>-<b>Procedúra</b> je opakovane použiteľná sada "
-"inštrukcií, ktorá môže byť <b>použitá v kóde volaním, kde je to potrebné.</"
-"b></li><li>-Na <b>prepnutie</b> sa medzi <b>oblasťou Procedúry</b> a "
-"<b>oblasťou Hlavnej funkcie</b> na pridanie vášho kódu, kliknite na "
-"označenie <b>Procedúra</b> alebo <b>Hlavná funkcia</b>.</li>"
+"-Na <b>prepnínanie</b> medzi <b>Oblasťou slučky</b> a <b>Oblasťou hlavnej "
+"funkčnosti</b> pre pridávanie vášho kódu, klinite na štítok <b>Slučka</b> "
+"alebo  <b>Hlavná funkcia</b>."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:193
 #, qt-format
@@ -21999,16 +21718,11 @@ msgstr ""
 "položiek vytvorte podobný vlak."
 
 #: activities/railroad/Railroad.qml:106
-#, fuzzy
-#| msgctxt "Railroad|"
-#| msgid ""
-#| "If you forget the positions, you can click on the Hint button to view "
-#| "them again."
 msgctxt "Railroad|"
 msgid ""
 "If you forgot the model, you can click on the Hint button to view it again."
 msgstr ""
-"Ak ste pozície zabudli, kliknutím na tlačidlo Rada ich znova zobrazíte."
+"Ak ste predlohu zabudli, kliknutím na tlačidlo Rada ju znova zobrazíte."
 
 #. Activity title
 #: activities/readingh/ActivityInfo.qml:15
@@ -23057,16 +22771,13 @@ msgstr "Zobraziť počítadlá"
 #: activities/share/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Share pieces of candy"
-msgstr "Rozdeľte kúsky sladkostí"
+msgstr "Rozdeľte cukrovinky"
 
 #. Help title
 #: activities/share/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Try to split the pieces of candy to a given number of children"
 msgctxt "ActivityInfo|"
 msgid "Try to split the pieces of candy between a given number of children."
-msgstr "Pokúste sa rozdeliť kúsky sladkostí danému počtu detí"
+msgstr "Pokúste sa rozdeliť cukrovinky danému počtu detí."
 
 #. Help goal
 #: activities/share/ActivityInfo.qml:20
@@ -23078,70 +22789,52 @@ msgstr "Naučte sa deliť čísla."
 #: activities/share/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid "Know how to count."
-msgstr "Vedieť ako počítať."
+msgstr "Vedieť počítať."
 
 #. Help manual
 #: activities/share/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Follow the instructions shown on the screen: first, drag the given number "
-#| "of boys/girls to the middle, then drag pieces of candy to each child's "
-#| "rectangle."
 msgctxt "ActivityInfo|"
 msgid ""
 "Follow the instructions shown on the screen: first, drag the given number of "
 "boys/girls to the center, then drag pieces of candy to each child's "
 "rectangle."
 msgstr ""
-"Postupujte podľa pokynov na obrazovke: Najprv presuňte daný početchlapcov/"
-"dievčat do stredu, potom presuňte kúsky sladkostí do obdĺžnika každého "
-"dieťaťa."
+"Postupujte podľa pokynov na obrazovke: Najprv presuňte daný počet chlapcov/"
+"dievčat do stredu, potom presuňte cukrovinky do obdĺžnika každého dieťaťa."
 
 #: activities/share/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "If there is a rest, it needs to be placed inside the candy jar."
-msgstr ""
+msgstr "Ak niečo zostane, treba to dať do džbána."
 
 #: activities/share/resource/1/Data.qml:13
 msgctxt "Data|"
 msgid "Maximum 25 pieces of candy and 5 kids, no rest."
-msgstr ""
+msgstr "Najviac 25 cukroviniek a 5 detí, bezo zvyšku."
 
 #: activities/share/resource/1/Data.qml:18
 #: activities/share/resource/2/Data.qml:18
-#, fuzzy
-#| msgctxt "board0|"
-#| msgid ""
-#| "Paul wants to equally share 2 pieces of candy between 2 of his friends: "
-#| "one girl and one boy. Can you help him? First, place the children in "
-#| "center, then drag the pieces of candy to each of them."
 msgctxt "Data|"
 msgid ""
 "Paul wants to share 2 pieces of candy equally between 2 of his girl friends. "
 "Can you help him? First, place the children in the center, then drag the "
 "pieces of candy to each of them."
 msgstr ""
-"Paul chce rovnako rozdeliť 2 kúsky sladkostí medzi dvoch jeho priateľov: "
-"jedným dievčaťom a jedným chlapcom. Môžete mu pomôcť? Najprv umiestnite deti "
-"do stredu a potom pretiahnite kúsky sladkostí ku každému z nich."
+"Pavol chce spravodlivo rozdeliť svoje 2 cukrovinky jeho dvom kamarátkam. "
+"Môžete mu pomôcť? Najprv umiestnite deti do stredu a potom pretiahnite "
+"cukrovinky ku každému z nich."
 
 #: activities/share/resource/1/Data.qml:28
-#, fuzzy
-#| msgctxt "board0|"
-#| msgid "Now he wants to give 4 pieces of candy to his friends."
 msgctxt "Data|"
 msgid "Now he wants to share 4 pieces of candy equally among his friends."
-msgstr "Teraz chce dať svojim priateľom 4 kúsky sladkostí."
+msgstr "Teraz chce dať svojim kamarátom 4 cukrovinky."
 
 #: activities/share/resource/1/Data.qml:38
-#, fuzzy
-#| msgctxt "board0|"
-#| msgid "Can you now give 6 of Paul's pieces of candy to his friends?"
 msgctxt "Data|"
 msgid ""
 "Can you now share 6 of Paul's pieces of candy equally among his friends?"
-msgstr "Môžete teraz dať 6 kúskov sladkostí Paula jeho priateľom?"
+msgstr ""
+"Môžete teraz spravodlivo rozdeliť 6 Pavlových cukroviniek jeho kamarátom?"
 
 #: activities/share/resource/1/Data.qml:48
 msgctxt "Data|"
@@ -23149,22 +22842,18 @@ msgid ""
 "Some of his friends already have pieces of candy. He wants to give them 7 "
 "more pieces so that they all have the same amount."
 msgstr ""
+"Niektorí jeho kamaráti už majú cukrovinky. Chce im dať ďalších 7 aby mail "
+"všetci rovnako."
 
 #: activities/share/resource/1/Data.qml:58
-#, fuzzy
-#| msgctxt "board0|"
-#| msgid ""
-#| "Paul has only 10 pieces of candy left. He eats 2 pieces of candy and he "
-#| "gives the rest to his friends. Can you help him equally split the 8 "
-#| "remaining pieces of candy?"
 msgctxt "Data|"
 msgid ""
 "Paul has only 12 pieces of candy left. He eats 2 pieces of candy and he "
 "gives the rest to his friends. Can you help him split equally the 10 "
 "remaining pieces of candy?"
 msgstr ""
-"Paul má iba 10 kúskov sladkostí. Zje 2 kúsky sladkostí a zvyšok dá svojim "
-"priateľom. Môžete mu pomôcť rovnomerne rozdeliť zvyšných 8 kúskov sladkostí?"
+"Pavlovi zostalo len 12 cukroviniek. Zje 2 cukrovinky a zvyšok dá svojim "
+"kamarátom. Môžete mu pomôcť spravodlivo rozdeliť zvyšných 10 cukroviniek?"
 
 #: activities/share/resource/1/Data.qml:70
 msgctxt "Data|"
@@ -23172,255 +22861,167 @@ msgid ""
 "George wants to share 3 pieces of candy equally between 3 of his girl "
 "friends. Can he split the pieces of candy equally?"
 msgstr ""
-"Juraj chce rozdeliť š kúsky sladkostí rovnomerne medzi 3 svoje kamarátky. "
-"Dokáže rozdeliť kúsky sladkostí spravodlivo?"
+"Juraj chce rozdeliť svoje 3 cukrovinky spravodlivo medzi 3 svoje kamarátky. "
+"Dokáže rozdeliť cukrovinky rovnomerne?"
 
 #: activities/share/resource/1/Data.qml:80
-#, fuzzy
-#| msgctxt "board4|"
-#| msgid ""
-#| "Charles wants to share his 8 pieces of candy with 3 of his friends: one "
-#| "boy and two girls. Can he split the pieces of candy equally?"
 msgctxt "Data|"
 msgid ""
 "Maria wants to share 6 pieces of candy equally between 3 of her friends: 1 "
 "girl and 2 boys. Can she split the pieces of candy equally?"
 msgstr ""
-"Charles sa chce podeliť o svojich 8 kúskov sladkostí s 3 svojimi priateľmi: "
-"jeden chlapec a dve dievčatá. Dokáže rozdeliť kúsky sladkostí rovnako?"
+"Mária chce rozdeliť svojich 6 cukroviniek 3 svojim kamarátom: 1 chlapca a 2 "
+"dievčatá. Dokáže rozdeliť kúsky sladkostí rovnomerne?"
 
 #: activities/share/resource/1/Data.qml:90
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid ""
-#| "John wants to equally share 10 pieces of candy between 3 of his friends: "
-#| "one boy and two girls. Can he equally split the pieces of candy between "
-#| "his friends? First, place the children in center, then drag the pieces of "
-#| "candy to each of them."
 msgctxt "Data|"
 msgid ""
 "John wants to share 8 pieces of candy equally between 3 of his friends: 1 "
 "boy and 2 girls. The boy already has one. Can he make sure that they all "
 "have the same amount?"
 msgstr ""
-"John chce rovnako rozdeliť 10 kúskov sladkostí medzi 3 svojich priateľov: "
-"jeden chlapec a dve dievčatá. Dokáže rovnomerne rozdeliť kúsky sladkostí "
-"medzi svojich priateľov? Najprv umiestnite deti do stredu, potom pretiahnite "
-"kúsky sladkostí každému z nich."
+"Ján chce rozdeliť svojich 8 cukroviniek spravodlivo 3 svojim kamarátom: 1 "
+"chlapcovi a 2 dievčatám. Dokáže rovnomerne rozdeliť cukrovinky svojim "
+"kamarátom? Najprv umiestnite deti do stredu, potom pretiahnite cukrovinky "
+"každému z nich."
 
 #: activities/share/resource/1/Data.qml:100
-#, fuzzy
-#| msgctxt "board4|"
-#| msgid ""
-#| "Charles wants to share his 8 pieces of candy with 3 of his friends: one "
-#| "boy and two girls. Can he split the pieces of candy equally?"
 msgctxt "Data|"
 msgid ""
 "Paul wants to share 12 pieces of candy equally between 3 of his friends: 2 "
 "boys and 1 girl. Can he split the pieces of candy equally?"
 msgstr ""
-"Charles sa chce podeliť o svojich 8 kúskov sladkostí s 3 svojimi priateľmi: "
-"jeden chlapec a dve dievčatá. Dokáže rozdeliť kúsky sladkostí rovnako?"
+"Pavol chce rozdeliť svojich 12 cukroviniek spravodlivo 3 svojim kamarátom: 2 "
+"chlapcom a 1 dievčaťu. Dokáže rozdeliť cukrovinky rovnomerne?"
 
 #: activities/share/resource/1/Data.qml:110
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid ""
-#| "John wants to equally share 10 pieces of candy between 3 of his friends: "
-#| "one boy and two girls. Can he equally split the pieces of candy between "
-#| "his friends? First, place the children in center, then drag the pieces of "
-#| "candy to each of them."
 msgctxt "Data|"
 msgid ""
 "Maria wants to share 11 pieces of candy between 3 of her friends: 1 boy and "
 "2 girls. The girls already have some pieces of candy. Can she split the "
 "pieces of candy so that they all have the same amount?"
 msgstr ""
-"John chce rovnako rozdeliť 10 kúskov sladkostí medzi 3 svojich priateľov: "
-"jeden chlapec a dve dievčatá. Dokáže rovnomerne rozdeliť kúsky sladkostí "
-"medzi svojich priateľov? Najprv umiestnite deti do stredu, potom pretiahnite "
-"kúsky sladkostí každému z nich."
+"Mária chce rozdeliť 11 cukroviniek 3 svojim kamarátom: 1 chlapca a 2 "
+"dievčatá. Dokáže rovnomerne rozdeliť cukrovinky svojim kamarátom? Dievčatá "
+"už majú nejaké cukrovinky. Môže rozdeliť cukrovinky tak aby mali všetci "
+"rovnako?"
 
 #: activities/share/resource/1/Data.qml:122
 #: activities/share/resource/2/Data.qml:112
-#, fuzzy
-#| msgctxt "board2|"
-#| msgid "Now, Alice wants to give 6 pieces of candy to her friends"
 msgctxt "Data|"
 msgid ""
 "Alice wants to share 4 pieces of candy equally between 4 of her girl "
 "friends. Can you help her?"
-msgstr "Teraz chce Alice dať svojim priateľom 6 kúskov sladkostí"
+msgstr ""
+"Alica chce rozdeliť svoje 4 cukrovinky spravodlivo svojim 4 kamarátkam. "
+"Môžete jej pomôcť?"
 
 #: activities/share/resource/1/Data.qml:132
-#, fuzzy
-#| msgctxt "board2|"
-#| msgid "Now, Alice wants to give 6 pieces of candy to her friends"
 msgctxt "Data|"
 msgid "Now, Alice wants to give 8 pieces of candy to her friends."
-msgstr "Teraz chce Alice dať svojim priateľom 6 kúskov sladkostí"
+msgstr "Teraz chce Alica dať 8 cukroviniek svojim kamarátom."
 
 #: activities/share/resource/1/Data.qml:142
-#, fuzzy
-#| msgctxt "board6|"
-#| msgid ""
-#| "Jon wants to share the rest of his pieces of candies with his brother and "
-#| "his sister. Can you split them equally, knowing that his brother already "
-#| "has two pieces of candies?"
 msgctxt "Data|"
 msgid ""
 "Alice wants to give 10 pieces of candy to her friends, 1 girl and 3 boys, so "
 "that they all have the same amount. The girls already have some pieces of "
 "candy."
 msgstr ""
-"Jon si chce rozdeliť zvyšok svojich kúskov sladkostí so svojím bratom a "
-"sestrou. Môžete ich rozdeliť rovnako, keď viete, že jeho brat už má dva "
-"kúsky sladkostí?"
+"Alica chce dať 10 cukroviniek svojim kamarátom, 1 dievčaťu a 3 chlapcom tak, "
+"aby mali všetci rovnako. Dievčatá už majú nejaké cukrovinky."
 
 #: activities/share/resource/1/Data.qml:152
-#, fuzzy
-#| msgctxt "board2|"
-#| msgid "Now, Alice wants to give 6 pieces of candy to her friends"
 msgctxt "Data|"
 msgid "Alice wants to give 16 pieces of candy to her friends."
-msgstr "Teraz chce Alice dať svojim priateľom 6 kúskov sladkostí"
+msgstr "Alica chce dať 16 cukroviniek svojim kamarátom."
 
 #: activities/share/resource/1/Data.qml:162
-#, fuzzy
-#| msgctxt "board5|"
-#| msgid ""
-#| "Bob wants to give 5 pieces of candy to his friends: two boys and one "
-#| "girl, his girlfriend already has one candy. Can you help him equally "
-#| "split the pieces of candy so that each friend will have the same amount "
-#| "of pieces of candy?"
 msgctxt "Data|"
 msgid ""
 "Alice wants to give pieces of candy to 4 friends. Some of them already have "
 "some pieces of candy. Can you help her split 14 pieces of candy so that all "
 "her friends have the same amount?"
 msgstr ""
-"Bob chce dať svojim priateľom 5 kúskov sladkostí: dvaja chlapci a jedno "
-"dievča, jeho priateľka už má jednu sladkosť. Môžete mu pomôcť rovnomerne "
-"rozdeliť kúsky sladkostí tak, aby každý priateľ mal rovnaké množstvo "
-"sladkostí?"
+"Alica chce dať cukrovinky 4 kamarátom. Niektorí už majú nejaké cukrovinky. "
+"Môžete jej pomôcť rozdeliť 14 cukroviniek tak, aby mali všetci jej kamaráti "
+"rovnaký počet cukroviniek?"
 
 #: activities/share/resource/1/Data.qml:174
-#, fuzzy
-#| msgctxt "board3|"
-#| msgid ""
-#| "Thomas wants to share his 11 pieces of candy with his friends: three boys "
-#| "and one girl. Can you help him?"
 msgctxt "Data|"
 msgid ""
 "Michael wants to share 5 pieces of candy equally between 5 of his girl "
 "friends. Can you help him?"
 msgstr ""
-"Thomas sa chce so svojimi priateľmi podeliť o svojich 11 kúskov sladkostí: "
-"traja chlapci a jedno dievča. Môžete mu pomôcť?"
+"Michal chce rozdeliť svojich 5 cukroviniek spravodlivo 5 kamarátkam. Môžete "
+"mu pomôcť?"
 
 #: activities/share/resource/1/Data.qml:184
-#, fuzzy
-#| msgctxt "board3|"
-#| msgid ""
-#| "Helen has 3 friends: one boy and two girls. She wants to give them 7 "
-#| "pieces of candy. Help her split the pieces of candy between her friends!"
 msgctxt "Data|"
 msgid ""
 "Helen has 5 friends: 2 boys and 3 girls. She wants to give them 10 pieces of "
 "candy. Help her split the pieces of candy equally between her friends."
 msgstr ""
-"Helen má 3 priateľov: jedného chlapca a dve dievčatá. Chce im dať 7 kúskov "
-"sladkostí. Pomôžte jej rozdeliť kúsky sladkostí medzi jej priateľov!"
+"Helena má 5 kamarátov: 2 chlapcov a 3 dievčatá. Chce im dať 10 cukroviniek. "
+"Pomôžte jej rozdeliť cukrovinky spravodlivo svojim kamarátom."
 
 #: activities/share/resource/1/Data.qml:194
-#, fuzzy
-#| msgctxt "board3|"
-#| msgid ""
-#| "Michelle has 9 pieces of candy and wants to split them with two brothers "
-#| "and two sisters. Help her share the pieces of candy!"
 msgctxt "Data|"
 msgid ""
 "Michelle wants to share 12 pieces of candy equally between her 4 brothers "
 "and 1 sister, so that they all have the same amount. Her sister already has "
 "some pieces of candy."
 msgstr ""
-"Michelle má 9 kúskov sladkostí a chce ich rozdeliť s dvoma bratmi a dvoma "
-"sestrami. Pomôžte jej rozdeliť kúsky sladkostí!"
+"Michaela chce rozdeliť svojich 12 cukroviniek spravodlivo jej 4 bratom a 1 "
+"sestre, tak aby mali všetci rovnako. Jej sestra už ale má nejaké cukrovinky."
 
 #: activities/share/resource/1/Data.qml:204
-#, fuzzy
-#| msgctxt "board3|"
-#| msgid ""
-#| "Thomas wants to share his 11 pieces of candy with his friends: three boys "
-#| "and one girl. Can you help him?"
 msgctxt "Data|"
 msgid ""
 "Thomas wants to share his 20 pieces of candy with his friends: 1 boy and 4 "
 "girls. Can you help him?"
 msgstr ""
-"Thomas sa chce so svojimi priateľmi podeliť o svojich 11 kúskov sladkostí: "
-"traja chlapci a jedno dievča. Môžete mu pomôcť?"
+"Tomáš chce rozdeliť svojich 20 cukroviniek svojim kamarátom: 1 chlapcovi a 4 "
+"dievčatám. Môžete mu pomôcť?"
 
 #: activities/share/resource/1/Data.qml:214
-#, fuzzy
-#| msgctxt "board4|"
-#| msgid ""
-#| "Charles wants to share his 8 pieces of candy with 3 of his friends: one "
-#| "boy and two girls. Can he split the pieces of candy equally?"
 msgctxt "Data|"
 msgid ""
 "Paul wants to share 20 pieces of candy equally between 5 of his friends. "
 "They already have one piece of candy each. Can you help him?"
 msgstr ""
-"Charles sa chce podeliť o svojich 8 kúskov sladkostí s 3 svojimi priateľmi: "
-"jeden chlapec a dve dievčatá. Dokáže rozdeliť kúsky sladkostí rovnako?"
+"Pavol chce rozdeliť svojich 20 cukroviniek spravodlivo svojim 5 kamarátom. "
+"Každý už má jednu cukrovinku. Môžete mu pomôcť?"
 
 #: activities/share/resource/1/Data.qml:226
-#, fuzzy
-#| msgctxt "board4|"
-#| msgid ""
-#| "Charles wants to share his 8 pieces of candy with 3 of his friends: one "
-#| "boy and two girls. Can he split the pieces of candy equally?"
 msgctxt "Data|"
 msgid ""
 "Charles wants to share his 6 pieces of candy equally with 2 of his girl "
 "friends. Can he split the pieces of candy equally?"
 msgstr ""
-"Charles sa chce podeliť o svojich 8 kúskov sladkostí s 3 svojimi priateľmi: "
-"jeden chlapec a dve dievčatá. Dokáže rozdeliť kúsky sladkostí rovnako?"
+"Karol chce rozdeliť svojich 6 cukroviniek spravodlivo svojim 2 kamarátkam. "
+"Dokáže rozdeliť cukrovinky rovnomerne?"
 
 #: activities/share/resource/1/Data.qml:236
-#, fuzzy
-#| msgctxt "board4|"
-#| msgid ""
-#| "For her birthday, Elizabeth has 12 pieces of candy to share with 4 of her "
-#| "friends: two girls and two boys. How should she split the pieces of candy "
-#| "to her friends?"
 msgctxt "Data|"
 msgid ""
 "For her birthday, Elizabeth has 8 pieces of candy to share with 3 of her "
 "friends: 2 girls and 1 boy. The girls already have some pieces of candy. How "
 "should she split the pieces of candy so that they all have the same amount?"
 msgstr ""
-"K narodeninám má Elizabeth 12 kúskov sladkostí, o ktoré sa chce rozdeliť so "
-"svojimi 4 priateľmi: dve dievčatá a dvaja chlapci. Ako by mala rozdeliť "
-"kúsky sladkostí svojim priateľom?"
+"K narodeninám má Alžbeta 8 cukroviniek, ktoré chce rozdeliť 3 svojim "
+"kamarátom: 2 dievčatám a 1 chlapcovi. Dievčatá už majú nejaké cukrovinky. "
+"Ako by mala rozdeliť cukrovinky svojim kamarátom aby mali všetci rovnako?"
 
 #: activities/share/resource/1/Data.qml:246
-#, fuzzy
-#| msgctxt "board4|"
-#| msgid ""
-#| "Jason's father gave him 14 pieces of candy to share with his friends: two "
-#| "boys and three girls. Help him give the pieces of candy to his friends!"
 msgctxt "Data|"
 msgid ""
 "Jason's father gave him 16 pieces of candy to share equally with his "
 "friends: 2 boys and 2 girls. Help him give the pieces of candy to his "
 "friends."
 msgstr ""
-"Jasonov otec mu dal 14 kúskov sladkostí, aby sa podelil so svojimi "
-"priateľmi: dvaja chlapci a tri dievčatá. Pomôžte mu rozdať kúsky sladkosti "
-"jeho priateľom!"
+"Jasonov otec mu dal 16 cukroviniek, aby ich rozdelil svojim kamarátom: 2 "
+"chlapcom a 2 dievčatám. Pomôžte mu rozdať cukrovinky kamarátom."
 
 #: activities/share/resource/1/Data.qml:256
 msgctxt "Data|"
@@ -23429,290 +23030,183 @@ msgid ""
 "and 2 boys. The boys already have one piece of candy each. He wants all of "
 "them to have the same amount."
 msgstr ""
-"John chce rovnako rozdeliť 10 kúskov sladkostí medzi 3 svojich priateľov: "
-"jeden chlapec a dve dievčatá. Dokáže rovnomerne rozdeliť kúsky sladkostí "
-"medzi svojich priateľov? Najprv umiestnite deti do stredu, potom pretiahnite "
-"kúsky sladkostí každému z nich. Juraj chce spravodlivo rozdeliť 14 kúskov "
-"sladkostí medzi 4 svojich kamarátov: dvoch chlapcov a dve dievčatá. Chlapci "
-"ale už majú po jednom kúsku. Chce aby všetci mali rovnako."
+"Juraj chce rozdeliť svojich 14 cukroviniek 4 kamarátom: 2 dievčatám a 2 "
+"chlapcom. Chlapci už majú po jednej cukrovinke. Chce aby mali všetci "
+"narovnako."
 
 #: activities/share/resource/1/Data.qml:266
-#, fuzzy
-#| msgctxt "board4|"
-#| msgid ""
-#| "Charles wants to share his 8 pieces of candy with 3 of his friends: one "
-#| "boy and two girls. Can he split the pieces of candy equally?"
 msgctxt "Data|"
 msgid ""
 "Maria wants to share 25 pieces of candy equally between 5 of her friends: 3 "
 "girls and 2 boys. Can she split the pieces of candy equally?"
 msgstr ""
-"Charles sa chce podeliť o svojich 8 kúskov sladkostí s 3 svojimi priateľmi: "
-"jeden chlapec a dve dievčatá. Dokáže rozdeliť kúsky sladkostí rovnako?"
+"Mária chce rozdeliť svojich 25 cukroviniek spravodlivo 5 kamarátom: 3 "
+"dievčatám a 2 chlapcom. Môže tie cukrovinky rozdeliť rovnomerne?"
 
 #: activities/share/resource/2/Data.qml:13
 msgctxt "Data|"
 msgid "Maximum 25 pieces of candy and 5 kids, possible rest."
-msgstr ""
+msgstr "Najviac 25 cukroviniek a 5 detí, s možným zvyškom."
 
 #: activities/share/resource/2/Data.qml:28
-#, fuzzy
-#| msgctxt "board0|"
-#| msgid "Now he wants to give 4 pieces of candy to his friends."
 msgctxt "Data|"
 msgid "Now he wants to share 5 pieces of candy among his friends."
-msgstr "Teraz chce dať svojim priateľom 4 kúsky sladkostí."
+msgstr "Teraz chce rozdeliť 5 cukroviniek svojim kamarátom."
 
 #: activities/share/resource/2/Data.qml:38
-#, fuzzy
-#| msgctxt "board0|"
-#| msgid "Can you now give 6 of Paul's pieces of candy to his friends?"
 msgctxt "Data|"
 msgid "Can you now share 7 of Paul's pieces of candy among his friends?"
-msgstr "Môžete teraz dať 6 kúskov sladkostí Paula jeho priateľom?"
+msgstr "Možete teraz rozdeliť 7 Pavlových cukroviniek jeho kamarátom?"
 
 #: activities/share/resource/2/Data.qml:48
-#, fuzzy
-#| msgctxt "board0|"
-#| msgid "Can you now give 6 of Paul's pieces of candy to his friends?"
 msgctxt "Data|"
 msgid "Can you now share 8 of Paul's pieces of candy among his friends?"
-msgstr "Môžete teraz dať 6 kúskov sladkostí Paula jeho priateľom?"
+msgstr "Možete teraz rozdeliť 8 Pavlových cukroviniek jeho kamarátom?"
 
 #: activities/share/resource/2/Data.qml:58
-#, fuzzy
-#| msgctxt "board0|"
-#| msgid ""
-#| "Paul has only 10 pieces of candy left. He eats 2 pieces of candy and he "
-#| "gives the rest to his friends. Can you help him equally split the 8 "
-#| "remaining pieces of candy?"
 msgctxt "Data|"
 msgid ""
 "Paul has only 11 pieces of candy left. He eats 2 pieces of candy and he "
 "gives the rest to his friends. Can you help him split equally the 9 "
 "remaining pieces of candy?"
 msgstr ""
-"Paul má iba 10 kúskov sladkostí. Zje 2 kúsky sladkostí a zvyšok dá svojim "
-"priateľom. Môžete mu pomôcť rovnomerne rozdeliť zvyšných 8 kúskov sladkostí?"
+"Pavol zostalo len 11 cukroviniek. Zje 2 cukrovinky a zvyšok dá svojim "
+"kamarátom. Môžete mu pomôcť rovnomerne rozdeliť zvyšných 9 cukroviniek?"
 
 #: activities/share/resource/2/Data.qml:70
-#, fuzzy
-#| msgctxt "board4|"
-#| msgid ""
-#| "Charles wants to share his 8 pieces of candy with 3 of his friends: one "
-#| "boy and two girls. Can he split the pieces of candy equally?"
 msgctxt "Data|"
 msgid ""
 "Bob wants to share 3 pieces of candy equally between 3 of his girl friends. "
 "Can he split the pieces of candy equally?"
 msgstr ""
-"Charles sa chce podeliť o svojich 8 kúskov sladkostí s 3 svojimi priateľmi: "
-"jeden chlapec a dve dievčatá. Dokáže rozdeliť kúsky sladkostí rovnako?"
+"Róbert chce rozdeliť svoje 3 cukrovinky spravodlivo svojim 3 kamarátkam. "
+"Môže rozdeliť cukrovinky rovnomerne?"
 
 #: activities/share/resource/2/Data.qml:80
-#, fuzzy
-#| msgctxt "board5|"
-#| msgid ""
-#| "Harry wants to equally share 8 pieces of candy between his friends: one "
-#| "boy and two girls. Place the children in center, then drag the pieces of "
-#| "candy to each of them so that each of them has an equal number of pieces "
-#| "of candy."
 msgctxt "Data|"
 msgid ""
 "Harry wants to share 8 pieces of candy between 3 of his friends: 1 boy and 2 "
 "girls. The boy already has one piece of candy. Can he split the pieces of "
 "candy so that they all have the same amount?"
 msgstr ""
-"Harry chce rovnako rozdeliť 8 kúskov sladkostí medzi svojich priateľov: "
-"jeden chlapec a dve dievčatá. Umiestnite deti do stredu, potom kúsky "
-"sladkostí presuňte každému z nich tak, aby každý z nich mal rovnaký počet "
-"kúskov sladkostí."
+"Heri chce rozdeliť svojich 8 cukroviniek svojim 3 kamarátom: 1 chlapec 2 "
+"dievčatá. Chlapec už má jednu cukrovinku. Môže rozdeliť cukrovinky tak aby "
+"mali všetci narovnako?"
 
 #: activities/share/resource/2/Data.qml:90
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid ""
-#| "John wants to equally share 10 pieces of candy between 3 of his friends: "
-#| "one boy and two girls. Can he equally split the pieces of candy between "
-#| "his friends? First, place the children in center, then drag the pieces of "
-#| "candy to each of them."
 msgctxt "Data|"
 msgid ""
 "Maria wants to share 8 pieces of candy between 3 of her friends: 1 boy and 2 "
 "girls. The girls already have some pieces of candy. Can she split the pieces "
 "of candy so that they all have the same amount?"
 msgstr ""
-"John chce rovnako rozdeliť 10 kúskov sladkostí medzi 3 svojich priateľov: "
-"jeden chlapec a dve dievčatá. Dokáže rovnomerne rozdeliť kúsky sladkostí "
-"medzi svojich priateľov? Najprv umiestnite deti do stredu, potom pretiahnite "
-"kúsky sladkostí každému z nich."
+"Mária chce rozdeliť svojich 8 cukroviniek svojim 3 kamarátom: 1 chlapcovi a "
+"2 dievčatám. Dievčatá už majú nejaké cukrovinky. Môže rozdeliť cukrovinky "
+"tak aby mali všetci narovnako?"
 
 #: activities/share/resource/2/Data.qml:100
-#, fuzzy
-#| msgctxt "board5|"
-#| msgid ""
-#| "Harry wants to equally share 8 pieces of candy between his friends: one "
-#| "boy and two girls. Place the children in center, then drag the pieces of "
-#| "candy to each of them so that each of them has an equal number of pieces "
-#| "of candy."
 msgctxt "Data|"
 msgid ""
 "Harry wants to share 12 pieces of candy between 3 of his friends: 1 boy and "
 "2 girls. The boy already has some pieces of candy. Can he split the pieces "
 "of candy so that they all have the same amount?"
 msgstr ""
-"Harry chce rovnako rozdeliť 8 kúskov sladkostí medzi svojich priateľov: "
-"jeden chlapec a dve dievčatá. Umiestnite deti do stredu, potom kúsky "
-"sladkostí presuňte každému z nich tak, aby každý z nich mal rovnaký počet "
-"kúskov sladkostí."
+"Heri chce rozdeliť 12 cukroviniek svojim kamarátom: 1 chlapec a 2 dievčatá. "
+"Chlapec už má nejaké cukrovinky. Môže rozdeliť cukrovinky tak aby mali "
+"všetci narovnako?"
 
 #: activities/share/resource/2/Data.qml:122
-#, fuzzy
-#| msgctxt "board2|"
-#| msgid "Now, Alice wants to give 6 pieces of candy to her friends"
 msgctxt "Data|"
 msgid "Now, Alice wants to share 8 pieces of candy equally among her friends."
-msgstr "Teraz chce Alice dať svojim priateľom 6 kúskov sladkostí"
+msgstr "Teraz chce Alica rozdeliť 8 cukroviniek spravodlivo svojim kamarátom."
 
 #: activities/share/resource/2/Data.qml:132
-#, fuzzy
-#| msgctxt "board2|"
-#| msgid ""
-#| "Can you help Alice give 9 pieces of candy to her friends: one girl and "
-#| "two boys?"
 msgctxt "Data|"
 msgid ""
 "Can you help Alice share 10 pieces of candy equally among her friends: 1 "
 "girl and 3 boys? The girl already has some pieces of candy."
 msgstr ""
-"Môžete pomôcť Alice dať 9 kúskov sladkostí jej priateľom: jedno dievča a "
-"dvaja chlapci?"
+"Môžete pomôcť Alici rozdeliť 10 cukroviniek jej kamarátom: 1 dievča a 3 "
+"chlapci? Dievča už má nejaké cukrovinky."
 
 #: activities/share/resource/2/Data.qml:142
-#, fuzzy
-#| msgctxt "board2|"
-#| msgid "Now, Alice wants to give 6 pieces of candy to her friends"
 msgctxt "Data|"
 msgid "Alice wants to share 16 pieces of candy equally among her friends."
-msgstr "Teraz chce Alice dať svojim priateľom 6 kúskov sladkostí"
+msgstr "Alica chce rozdeliť 16 cukroviniek spravodlivo svojim kamarátom."
 
 #: activities/share/resource/2/Data.qml:152
-#, fuzzy
-#| msgctxt "board2|"
-#| msgid ""
-#| "Alice has 12 pieces of candy left. She wants to give them all to her "
-#| "friends. Can you help her split the pieces of candy equally?"
 msgctxt "Data|"
 msgid ""
 "Alice has 14 pieces of candy left. She wants to share them equally among her "
 "friends. The boys already have some pieces of candy. Can you help her split "
 "the pieces of candy equally?"
 msgstr ""
-"Alice má 12 kúskov sladkostí. Chce ich dať všetkým svojim priateľom. Môžete "
-"jej pomôcť rozdeliť kúsky sladkostí rovnako?"
+"Alici zostalo 14 cukroviniek. Chce ich rozdeliť spravodlivo svojim "
+"kamarátom. Chlapci už majú cukrovinky. Možete jej pomôcť rozdeliť cukrovinky "
+"rovnomerne?"
 
 #: activities/share/resource/2/Data.qml:164
-#, fuzzy
-#| msgctxt "board6|"
-#| msgid ""
-#| "Help Jon split 9 pieces of candies between three boys and two girls. The "
-#| "rest will remain to Jon."
 msgctxt "Data|"
 msgid ""
 "Help Jon share 11 pieces of candies equally between five girls. The rest "
 "will remain to Jon."
 msgstr ""
-"Pomôžte Jonovi rozdeliť 9 kúsky sladkostí medzi troch chlapcov a dve "
-"dievčatá. Zvyšok zostane Jonovi."
+"Pomôžte Jánovi rozdeliť 11 cukroviniek spravodlivo piatim dievčatám. Zvyšok "
+"zostane Jánovi."
 
 #: activities/share/resource/2/Data.qml:174
-#, fuzzy
-#| msgctxt "board6|"
-#| msgid ""
-#| "Jon wants to share the rest of his pieces of candies with his brother and "
-#| "his sister. Can you split them equally, knowing that his brother already "
-#| "has two pieces of candies?"
 msgctxt "Data|"
 msgid ""
 "Jon wants to share the rest of his pieces of candies with his brothers and "
 "his sisters. Can you split them equally, knowing that his brothers already "
 "have 2 pieces of candy?"
 msgstr ""
-"Jon si chce rozdeliť zvyšok svojich kúskov sladkostí so svojím bratom a "
-"sestrou. Môžete ich rozdeliť rovnako, keď viete, že jeho brat už má dva "
-"kúsky sladkostí?"
+"Ján chce rozdeliť zvyšné cukrovinky svojim bratom a sestrám. Môžete ich "
+"rozdeliť spravodlivo, ak viete, že jeho bratia už majú 2 cukrovinky?"
 
 #: activities/share/resource/2/Data.qml:184
-#, fuzzy
-#| msgctxt "board6|"
-#| msgid ""
-#| "Help Tux split some pieces of candies to his friends: 9 pieces of candies "
-#| "to one boy and two girls."
 msgctxt "Data|"
 msgid ""
 "Help Tux split 19 pieces of candies between his friends: 4 boys and 1 girl."
 msgstr ""
-"Pomôžte Tuxovi rozdeliť kúsky sladkostí svojim priateľom: 9 kúskov sladkostí "
-"pre jedného chlapca a dve dievčatá."
+"Pomôžte Tuxovi rozdeliť 19 cukroviniek svojim kamarátom: 4 chlapci a 1 "
+"dievča."
 
 #: activities/share/resource/2/Data.qml:194
-#, fuzzy
-#| msgctxt "board6|"
-#| msgid ""
-#| "Help Jon split 9 pieces of candies between three boys and two girls. The "
-#| "rest will remain to Jon."
 msgctxt "Data|"
 msgid "Help Maria share 18 pieces of candy equally between 3 boys and 2 girls."
 msgstr ""
-"Pomôžte Jonovi rozdeliť 9 kúsky sladkostí medzi troch chlapcov a dve "
-"dievčatá. Zvyšok zostane Jonovi."
+"Pomôžte Márii rozdeliť 18 cukroviniek spravodlivo 3 chlapcom a 2 dievčatám."
 
 #: activities/share/resource/2/Data.qml:206
-#, fuzzy
-#| msgctxt "board4|"
-#| msgid ""
-#| "Charles wants to share his 8 pieces of candy with 3 of his friends: one "
-#| "boy and two girls. Can he split the pieces of candy equally?"
 msgctxt "Data|"
 msgid ""
 "Charles wants to share his 6 pieces of candy equally between 2 of his girl "
 "friends. Can he split the pieces of candy equally?"
 msgstr ""
-"Charles sa chce podeliť o svojich 8 kúskov sladkostí s 3 svojimi priateľmi: "
-"jeden chlapec a dve dievčatá. Dokáže rozdeliť kúsky sladkostí rovnako?"
+"Karol chce rozdeliť svojich 6 cukroviniek spravodlivo 2 kamarátkam. Môže "
+"rozdeliť cukrovinky tak aby mali všetky rovnako?"
 
 #: activities/share/resource/2/Data.qml:216
-#, fuzzy
-#| msgctxt "board4|"
-#| msgid ""
-#| "For her birthday, Elizabeth has 12 pieces of candy to share with 4 of her "
-#| "friends: two girls and two boys. How should she split the pieces of candy "
-#| "to her friends?"
 msgctxt "Data|"
 msgid ""
 "For her birthday, Elizabeth has 8 pieces of candy to share with 3 of her "
 "friends equally: 2 girls and 1 boy. How should she split the pieces of candy "
 "between her friends?"
 msgstr ""
-"K narodeninám má Elizabeth 12 kúskov sladkostí, o ktoré sa chce rozdeliť so "
-"svojimi 4 priateľmi: dve dievčatá a dvaja chlapci. Ako by mala rozdeliť "
-"kúsky sladkostí svojim priateľom?"
+"K narodeninám má Alžbeta 8 cukroviniek, ktoré chce rozdeliť svojim 3 "
+"kamarátom: 2 dievčatá a 1 chlapec. Ako by mala rozdeliť cukrovinky svojim "
+"kamarátom?"
 
 #: activities/share/resource/2/Data.qml:226
-#, fuzzy
-#| msgctxt "board4|"
-#| msgid ""
-#| "Jason's father gave him 14 pieces of candy to share with his friends: two "
-#| "boys and three girls. Help him give the pieces of candy to his friends!"
 msgctxt "Data|"
 msgid ""
 "Jason's father gave him 17 pieces of candy to share equally between his "
 "friends: 2 boys and 2 girls. Help him give the pieces of candy to his "
 "friends."
 msgstr ""
-"Jasonov otec mu dal 14 kúskov sladkostí, aby sa podelil so svojimi "
-"priateľmi: dvaja chlapci a tri dievčatá. Pomôžte mu rozdať kúsky sladkosti "
-"jeho priateľom!"
+"Jasonov otec mu dal 17 cukroviniek, aby ich rozdelil svojim kamarátom:2 "
+"chlapci a 3 dievčatá. Pomôžte mu rozdať cukrovinky jeho kamarátom!"
 
 #: activities/share/resource/2/Data.qml:236
 msgctxt "Data|"
@@ -23722,76 +23216,54 @@ msgid ""
 "friends?"
 msgstr ""
 "Juraj chce spravodlivo rozdeliť 14 kúskov sladkostí medzi 4 svojich "
-"kamarátov: dvoch chlapcov a dve dievčatá. Dokáže rovnomerne rozdeliť kúsky "
-"sladkostí svojim kamarátom?"
+"kamarátov: 2 dievčatá a 2 chlapcov. Dokáže rovnomerne rozdeliť cukrovinky "
+"svojim kamarátom?"
 
 #: activities/share/resource/2/Data.qml:246
-#, fuzzy
-#| msgctxt "board2|"
-#| msgid ""
-#| "Alice wants to equally share 3 pieces of candy between 3 of her friends: "
-#| "one girl and two boys. Can you help her? First, place the children in the "
-#| "center, then drag the pieces of candy to each of them."
 msgctxt "Data|"
 msgid ""
 "Maria wants to share 23 pieces of candy equally between 5 of her friends: 3 "
 "girls and 2 boys. Can she share the pieces of candy equally between her "
 "friends?"
 msgstr ""
-"Alice chce rovnako rozdeliť 3 kúsky sladkostí medzi 3 svojich priateľov: "
-"jedno dievča a dvaja chlapci. Môžete mu pomôcť? Najprv umiestnite deti do "
-"stredu, potom pretiahnite kúsky sladkostí každému z nich."
+"Mária chce rozdeliť 23 cukroviniek spravodlivo svojim 5 kamarátom: 3 "
+"dievčatá a 2 chlapci. Môže rozdeliť cukrovinky rovnomerne svojim kamarátom?"
 
 #: activities/share/resource/3/Data.qml:13
 msgctxt "Data|"
 msgid "Maximum 30 pieces of candy and 6 kids, possible rest."
-msgstr ""
+msgstr "Najviac 30 cukroviniek a 6 detí, s možným zvyškom."
 
 #: activities/share/share.js:97
-#, fuzzy, qt-format
-#| msgctxt ""
-#| "share|First part of Place %n boy(s) and %n girl(s) in the center. Then "
-#| "equally split %n pieces of candy between them."
-#| msgid "Place %n boy(s) "
-#| msgid_plural "Place %n boy(s) "
+#, qt-format
 msgctxt ""
 "share|First part of Place %n boy(s) and %n girl(s) in the center. Then split "
 "%n pieces of candy equally between them."
 msgid "Place %n boy(s) "
 msgid_plural "Place %n boy(s) "
-msgstr[0] "Umiestnite %n chlapcov"
+msgstr[0] "Umiestnite chlapcov"
 msgstr[1] "Umiestnite %n chlapcov"
 msgstr[2] "Umiestnite %n chlapcov"
 
 #: activities/share/share.js:101
-#, fuzzy, qt-format
-#| msgctxt ""
-#| "share|Second part of Place %n boy(s) and %n girl(s) in the center. Then "
-#| "equally split %n pieces of candy between them."
-#| msgid "and %n girl(s) in the center. "
-#| msgid_plural "and %n girl(s) in the center. "
+#, qt-format
 msgctxt ""
 "share|Second part of Place %n boy(s) and %n girl(s) in the center. Then "
 "split %n pieces of candy equally between them."
 msgid "and %n girl(s) in the center. "
 msgid_plural "and %n girl(s) in the center. "
-msgstr[0] "a %n dievčatá do stredu. "
+msgstr[0] "a dievčatá do stredu. "
 msgstr[1] "a %n dievčatá do stredu. "
 msgstr[2] "a %n dievčat do stredu. "
 
 #: activities/share/share.js:105
-#, fuzzy, qt-format
-#| msgctxt ""
-#| "share|Third part of Place %n boy(s) and %n girl(s) in the center. Then "
-#| "equally split %n pieces of candy between them."
-#| msgid "Then equally split %n pieces of candy between them."
-#| msgid_plural "Then equally split %n pieces of candy between them."
+#, qt-format
 msgctxt ""
 "share|Third part of Place %n boy(s) and %n girl(s) in the center. Then split "
 "%n pieces of candy equally between them."
 msgid "Then split %n pieces of candy equally between them."
 msgid_plural "Then split %n pieces of candy equally between them."
-msgstr[0] "Potom medzi nimi rovnako rozdeľte %n kúsok sladkostí."
+msgstr[0] "Potom im spravodlivo rozdeľte dostupné cukrovinky."
 msgstr[1] "Potom medzi nimi rovnako rozdeľte %n kúsky sladkostí."
 msgstr[2] "Potom medzi nimi rovnako rozdeľte %n kúskov sladkostí."
 
@@ -23831,7 +23303,7 @@ msgstr ""
 #: activities/simplepaint/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Tab: switch between the color selector and the painting area"
-msgstr ""
+msgstr "Tab: prepnúť medzi výberom farby a oblasťou pre maľovanie"
 
 #. Activity title
 #: activities/smallnumbers/ActivityInfo.qml:15
@@ -23841,12 +23313,9 @@ msgstr "Čísla s kockami"
 
 #. Help title
 #: activities/smallnumbers/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Count the number of dots on dice before they reach the ground"
 msgctxt "ActivityInfo|"
 msgid "Count the number of dots on the dice before it reaches the ground."
-msgstr "Spočítaj bodky na kocke skôr než dopadne na zem"
+msgstr "Spočítaj bodky na kocke skôr než dopadne na zem."
 
 #. Help goal
 #: activities/smallnumbers/ActivityInfo.qml:20
@@ -23863,10 +23332,6 @@ msgstr "Schopnosť počítať"
 
 #. Help manual
 #: activities/smallnumbers/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "With the keyboard, type the number of dots you see on the falling dice."
 msgctxt "ActivityInfo|"
 msgid "Type the number of dots you see on each falling dice."
 msgstr ""
@@ -23879,17 +23344,14 @@ msgid "Numbers up to 3."
 msgstr "Čísla do 3."
 
 #: activities/smallnumbers/resource/1/Data.qml:18
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Touch the numbers in the right sequence."
 msgctxt "Data|"
 msgid "Type the number on the dice, 1 or 2."
-msgstr "Dotknúť sa čísel v správnom poradí."
+msgstr "Napíšte číslo na kocke, 1 alebo 2."
 
 #: activities/smallnumbers/resource/1/Data.qml:26
 msgctxt "Data|"
 msgid "Type the number on the dice, from 1 to 3."
-msgstr ""
+msgstr "Napíšte číslo na kocke, od 1 do 3."
 
 #: activities/smallnumbers/resource/2/Data.qml:14
 #: activities/smallnumbers2/resource/2/Data.qml:14
@@ -23900,7 +23362,7 @@ msgstr "Čísla do 4."
 #: activities/smallnumbers/resource/2/Data.qml:18
 msgctxt "Data|"
 msgid "Type the number on the dice, from 1 to 4."
-msgstr ""
+msgstr "Napíšte číslo na kocke, od 1 do 4."
 
 #: activities/smallnumbers/resource/3/Data.qml:14
 #: activities/smallnumbers2/resource/3/Data.qml:14
@@ -23911,7 +23373,7 @@ msgstr "Čísla do 5."
 #: activities/smallnumbers/resource/3/Data.qml:18
 msgctxt "Data|"
 msgid "Type the number on the dice, from 1 to 5."
-msgstr ""
+msgstr "Napíšte číslo na kocke, od 1 do 5."
 
 #: activities/smallnumbers/resource/4/Data.qml:14
 #: activities/smallnumbers2/resource/4/Data.qml:14
@@ -23922,7 +23384,7 @@ msgstr "Čísla do 6."
 #: activities/smallnumbers/resource/4/Data.qml:18
 msgctxt "Data|"
 msgid "Type the number on the dice, from 1 to 6."
-msgstr ""
+msgstr "Napíšte číslo na kocke, od 1 do 6."
 
 #: activities/smallnumbers/resource/5/Data.qml:14
 #: activities/smallnumbers2/resource/5/Data.qml:14
@@ -23933,7 +23395,7 @@ msgstr "Čísla do 7."
 #: activities/smallnumbers/resource/5/Data.qml:18
 msgctxt "Data|"
 msgid "Type the number on the dice, from 1 to 7."
-msgstr ""
+msgstr "Napíšte číslo na kocke, od 1 do 7."
 
 #: activities/smallnumbers/resource/6/Data.qml:14
 #: activities/smallnumbers2/resource/6/Data.qml:14
@@ -23944,7 +23406,7 @@ msgstr "Čísla do 8."
 #: activities/smallnumbers/resource/6/Data.qml:18
 msgctxt "Data|"
 msgid "Type the number on the dice, from 1 to 8."
-msgstr ""
+msgstr "Napíšte číslo na kocke, od 1 do 8."
 
 #: activities/smallnumbers/resource/7/Data.qml:14
 #: activities/smallnumbers2/resource/7/Data.qml:14
@@ -23955,7 +23417,7 @@ msgstr "Čísla do 9."
 #: activities/smallnumbers/resource/7/Data.qml:18
 msgctxt "Data|"
 msgid "Type the number on the dice, from 1 to 9."
-msgstr ""
+msgstr "Napíšte číslo na kocke, od 1 do 9."
 
 #: activities/smallnumbers/resource/8/Data.qml:13
 #: activities/smallnumbers2/resource/8/Data.qml:13
@@ -23966,7 +23428,7 @@ msgstr "Čísla od 0 po 9."
 #: activities/smallnumbers/resource/8/Data.qml:17
 msgctxt "Data|"
 msgid "Type the number on the dice, from 0 to 9."
-msgstr ""
+msgstr "Napíšte číslo na kocke, od 0 do 9."
 
 #. Activity title
 #: activities/smallnumbers2/ActivityInfo.qml:15
@@ -23976,78 +23438,66 @@ msgstr "Čísla s dominom"
 
 #. Help title
 #: activities/smallnumbers2/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Count the number of dots on the dominoes before they reach the ground"
 msgctxt "ActivityInfo|"
 msgid "Count the number on the domino before it reaches the ground."
-msgstr "Spočítaj bodky na domine skôr, než dopadne na zem"
+msgstr "Spočítajte bodky na domine skôr, než dopadne na zem."
 
 #. Help goal
 #: activities/smallnumbers2/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Reading training in a limited time"
 msgctxt "ActivityInfo|"
 msgid "Count a number in a limited time."
-msgstr "Tréning čítania v obmedzenom čase"
+msgstr "Spočítajte číslo v obmedzenom čase."
 
 #. Help manual
 #: activities/smallnumbers2/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "With the keyboard, type the number of dots you see on the falling "
-#| "dominoes."
 msgctxt "ActivityInfo|"
 msgid "Type the number you see on each falling domino."
-msgstr "S klávesnicou, napíš počet bodiek, ktoré vidíš na padajúcom domine."
+msgstr "Napíšte na klávesnici koľko bodiek vidíte na padajúcom domine."
 
 #: activities/smallnumbers2/resource/1/Data.qml:18
 msgctxt "Data|"
 msgid "Type the number on the domino, 1 or 2."
-msgstr ""
+msgstr "Napíšte číslo na domine, 1 alebo 2."
 
 #: activities/smallnumbers2/resource/1/Data.qml:26
 msgctxt "Data|"
 msgid "Type the number on the domino, from 1 to 3."
-msgstr ""
+msgstr "Napíšte číslo na domine, od 1 do 3."
 
 #: activities/smallnumbers2/resource/2/Data.qml:18
 msgctxt "Data|"
 msgid "Type the number on the domino, from 1 to 4."
-msgstr ""
+msgstr "Napíšte číslo na domine, od 1 do 4."
 
 #: activities/smallnumbers2/resource/3/Data.qml:18
 msgctxt "Data|"
 msgid "Type the number on the domino, from 1 to 5."
-msgstr ""
+msgstr "Napíšte číslo na domine, od 1 do 5."
 
 #: activities/smallnumbers2/resource/4/Data.qml:18
 msgctxt "Data|"
 msgid "Type the number on the domino, from 1 to 6."
-msgstr ""
+msgstr "Napíšte číslo na domine, od 1 do 6."
 
 #: activities/smallnumbers2/resource/5/Data.qml:18
 msgctxt "Data|"
 msgid "Type the number on the domino, from 1 to 7."
-msgstr ""
+msgstr "Napíšte číslo na domine, od 1 do 7."
 
 #: activities/smallnumbers2/resource/6/Data.qml:18
 msgctxt "Data|"
 msgid "Type the number on the domino, from 1 to 8."
-msgstr ""
+msgstr "Napíšte číslo na domine, od 1 do 8."
 
 #: activities/smallnumbers2/resource/7/Data.qml:18
 msgctxt "Data|"
 msgid "Type the number on the domino, from 1 to 9."
-msgstr ""
+msgstr "Napíšte číslo na domine, od 1 do 9."
 
 #: activities/smallnumbers2/resource/8/Data.qml:17
 msgctxt "Data|"
 msgid "Type the number on the domino, from 0 to 9."
-msgstr ""
+msgstr "Napíšte číslo na domine, od 0 do 9."
 
 #: activities/solar_system/ActivityConfig.qml:21
 msgctxt "ActivityConfig|"
@@ -24080,27 +23530,21 @@ msgid ""
 "Stellarium (https://stellarium.org/) which are astronomy Free Software."
 msgstr ""
 "Naučte sa informácie o slnečnej sústave. Ak sa chcete dozvedieť viac o "
-"astronómii, skúste si stiahnuť KStars (https://edu.kde.org/kstars/) "
-"aleboStellarium (https://stellarium.org/), ktoré sú open source astronomický "
+"astronómii, skúste si stiahnuť KStars (https://edu.kde.org/kstars/) alebo "
+"Stellarium (https://stellarium.org/), ktoré sú open source astronomický "
 "softvér."
 
 #. Help manual
 #: activities/solar_system/ActivityInfo.qml:27
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Click on a planet or the Sun to reveal questions. Each question contains "
-#| "4 options. One of those is 100% correct. Try to answer the questions "
-#| "until you get a 100% closeness in the closeness meter."
 msgctxt "ActivityInfo|"
 msgid ""
 "Click on a planet or on the Sun, and answer the corresponding questions. "
 "Each question contains 4 options. One of those is 100% correct. Try to "
 "answer the questions until you get 100% in the closeness meter."
 msgstr ""
-"Kliknutím na planétu alebo Slnko odkryjete otázky. Každá otázka obsahuje 4 "
-"možnosti. Jedna z nich je 100% správna. Pokúste sa odpovedať na otázky, až "
-"kým nezískate 100% blízkosť v merači blízkosti."
+"Kliknutím na planétu alebo Slnko a odpovedajte na otázky. Každá otázka "
+"obsahuje 4 možnosti. Jedna z nich je 100% správna. Pokúste sa odpovedať na "
+"otázky, až kým nezískate 100% na merači blízkosti."
 
 #: activities/solar_system/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
@@ -24110,12 +23554,12 @@ msgstr "Medzerník alebo Enter: výber"
 #: activities/solar_system/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
 msgid "Escape: return to previous screen"
-msgstr ""
+msgstr "Esc: návrat na predchádzajúcu obrazovku"
 
 #: activities/solar_system/ActivityInfo.qml:32
 msgctxt "ActivityInfo|"
 msgid "Tab: view the hint (only when the hint icon is visible)"
-msgstr ""
+msgstr "Tab: zobraziť radu (len ak je viditeľná ikona rady)"
 
 #: activities/solar_system/Dataset.js:14
 msgctxt "Dataset|"
@@ -24265,15 +23709,12 @@ msgstr "Merkúr"
 #: activities/solar_system/Dataset.js:200
 msgctxt "Dataset|"
 msgid "The maximum temperature on Earth is 58 °C."
-msgstr "Maximálna teplota na Zemi je 58 °C."
+msgstr "Najvyššia teplota na Zemi je 58 °C."
 
 #: activities/solar_system/Dataset.js:54 activities/solar_system/Dataset.js:150
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "The length of a year on Venus is 225 days."
 msgctxt "Dataset|"
 msgid "The length of a year on Venus is 225 Earth days."
-msgstr "Dĺžka roka na Venuši je 225 dní."
+msgstr "Dĺžka roka na Venuši je 225 pozemských dní."
 
 #: activities/solar_system/Dataset.js:57
 msgctxt "Dataset|"
@@ -24348,7 +23789,7 @@ msgstr "Koľko mesiacov má Merkúr?"
 #: activities/solar_system/Dataset.js:75
 msgctxt "Dataset|"
 msgid "The maximum temperature on Mercury is:"
-msgstr "Maximálna teplota na Merkúre je:"
+msgstr "Najvyššia teplota na Merkúre je:"
 
 #: activities/solar_system/Dataset.js:76 activities/solar_system/Dataset.js:268
 msgctxt "Dataset|"
@@ -24513,7 +23954,7 @@ msgstr "243 pozemských dní"
 #: activities/solar_system/Dataset.js:132
 msgctxt "Dataset|"
 msgid "The maximum temperature on Venus is:"
-msgstr "Maximálna teplota na Venuši je:"
+msgstr "Najvyššia teplota na Venuši je:"
 
 #: activities/solar_system/Dataset.js:133
 #: activities/solar_system/Dataset.js:184
@@ -24557,12 +23998,12 @@ msgstr "Zem"
 #: activities/solar_system/Dataset.js:251
 msgctxt "Dataset|"
 msgid "The maximum temperature on Mars is 20 °C."
-msgstr "Maximálna teplota na Marse je 20 °C."
+msgstr "Najvyššia teplota na Marse je 20 °C."
 
 #: activities/solar_system/Dataset.js:153
 msgctxt "Dataset|"
 msgid "At which position is Earth in the Solar System?"
-msgstr "Na akej pozícii v slnečnej sústave je Zem?"
+msgstr "Koľká v poradí v slnečnej sústave je Zem?"
 
 #: activities/solar_system/Dataset.js:154
 msgctxt "Dataset|"
@@ -24651,12 +24092,9 @@ msgid "How many seasons has Earth?"
 msgstr "Koľko ročných období má Zem?"
 
 #: activities/solar_system/Dataset.js:183
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "The maximum temperature on Mars is:"
 msgctxt "Dataset|"
 msgid "The maximum temperature on Earth is:"
-msgstr "Maximálna teplota na Marse je:"
+msgstr "Najvyššia teplota na Zemi je:"
 
 #: activities/solar_system/Dataset.js:184
 msgctxt "Dataset|"
@@ -24688,7 +24126,7 @@ msgstr "Na akej pozícii v slnečnej sústave je Mars?"
 #: activities/solar_system/Dataset.js:210
 msgctxt "Dataset|"
 msgid "The maximum temperature on Mars is:"
-msgstr "Maximálna teplota na Marse je:"
+msgstr "Najvyššia teplota na Marse je:"
 
 #: activities/solar_system/Dataset.js:211
 msgctxt "Dataset|"
@@ -24793,7 +24231,7 @@ msgstr "Druhá najväčšia"
 #: activities/solar_system/Dataset.js:267
 msgctxt "Dataset|"
 msgid "The minimum temperature on Jupiter is:"
-msgstr "Minimálna teplota na Jupiteri je:"
+msgstr "Najnižšia teplota na Jupiteri je:"
 
 #: activities/solar_system/Dataset.js:268
 msgctxt "Dataset|"
@@ -24858,7 +24296,7 @@ msgstr "Saturn"
 #: activities/solar_system/Dataset.js:296
 msgctxt "Dataset|"
 msgid "The minimum temperature on Jupiter is -145 °C."
-msgstr "Minimálna teplota na Jupiteri je -145 °C."
+msgstr "Najnižšia teplota na Jupiteri je -145 °C."
 
 #: activities/solar_system/Dataset.js:297
 msgctxt "Dataset|"
@@ -24893,7 +24331,7 @@ msgstr "10,5 hodiny"
 #: activities/solar_system/Dataset.js:324
 msgctxt "Dataset|"
 msgid "The minimum temperature on Saturn is:"
-msgstr "Minimálna teplota na Saturne je:"
+msgstr "Najnižšia teplota na Saturne je:"
 
 #: activities/solar_system/Dataset.js:325
 #: activities/solar_system/Dataset.js:376
@@ -25004,7 +24442,7 @@ msgstr "Aký veľký je Urán v porovnaní s inými planétami v slnečnej súst
 #: activities/solar_system/Dataset.js:375
 msgctxt "Dataset|"
 msgid "The maximum temperature on Uranus is:"
-msgstr "Maximálna teplota na Uráne je:"
+msgstr "Najvyššia teplota na Uráne je:"
 
 #: activities/solar_system/Dataset.js:376
 msgctxt "Dataset|"
@@ -25019,15 +24457,12 @@ msgstr "Neptún"
 #: activities/solar_system/Dataset.js:386
 msgctxt "Dataset|"
 msgid "The maximum temperature on Saturn is -178 °C."
-msgstr "Maximálna teplota na Saturne je -178 °C."
+msgstr "Najvyššia teplota na Saturne je -178 °C."
 
 #: activities/solar_system/Dataset.js:387
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "The length of a year on Uranus is 84 years."
 msgctxt "Dataset|"
 msgid "The length of a year on Uranus is 84 Earth years."
-msgstr "Dĺžka roka na Uráne je 84 rokov."
+msgstr "Dĺžka roka na Uráne je 84 pozemských rokov."
 
 #: activities/solar_system/Dataset.js:390
 msgctxt "Dataset|"
@@ -25177,14 +24612,6 @@ msgstr ""
 "obsahuje 4 možnosti, z ktorých jedna je správna."
 
 #: activities/solar_system/SolarSystem.qml:163
-#, fuzzy
-#| msgctxt "SolarSystem|"
-#| msgid ""
-#| "After a planet is clicked, the Closeness meter at the bottom-right corner "
-#| "of the screen represents the degree of correctness of your selected "
-#| "answer. The least correct answer is represented by 1%. Try again until "
-#| "you reach a 100% closeness by following the closeness meter, or hint "
-#| "which indicates the correct answer."
 msgctxt "SolarSystem|"
 msgid ""
 "After a planet is clicked, the Closeness meter at the bottom-right corner of "
@@ -25196,7 +24623,8 @@ msgstr ""
 "Po kliknutí na planétu predstavuje merač blízkosti v pravom dolnom rohu "
 "obrazovky stupeň správnosti vybratej odpovede. Najmenej správna odpoveď je "
 "reprezentovaná 1%. Skúste to znova, až kým nedosiahnete 100% blízkosť "
-"sledovaním merača blízkosti alebo rady, ktorá naznačuje správnu odpoveď."
+"sledovaním merača blízkosti. Ak je viditeľné tlačidlo rady rady, môžete naň "
+"kliknúť a dostanete radu, ktorá naznačuje správnu odpoveď."
 
 #: activities/solar_system/SolarSystem.qml:168
 msgctxt "SolarSystem|"
@@ -26179,65 +25607,74 @@ msgid "Type the complete word as it falls, before it reaches the ground."
 msgstr "Napíš padajúce slovo na klávesnici skôr ako dopadne na zem."
 
 #: core/ChangeLog.qml:30
+#, fuzzy
+#| msgctxt "ChangeLog|"
+#| msgid "Translation added for Macedonian."
 msgctxt "ChangeLog|"
-msgid ""
-"New command-line option (--difficulty {value|min-max}) to start GCompris at "
-"specific difficulty"
-msgstr ""
+msgid "Translations added for Arabic and Esperanto"
+msgstr "Pridané preklady pre Macedónčinu."
 
-#: core/ChangeLog.qml:31
+#: core/ChangeLog.qml:31 core/ChangeLog.qml:38
 msgctxt "ChangeLog|"
 msgid "Many translation updates"
 msgstr "Aktualizácie mnohých prekladov"
 
-#: core/ChangeLog.qml:32 core/ChangeLog.qml:45 core/ChangeLog.qml:63
-#: core/ChangeLog.qml:78 core/ChangeLog.qml:83 core/ChangeLog.qml:89
+#: core/ChangeLog.qml:32 core/ChangeLog.qml:39 core/ChangeLog.qml:52
+#: core/ChangeLog.qml:70 core/ChangeLog.qml:85 core/ChangeLog.qml:90
+#: core/ChangeLog.qml:96
 msgctxt "ChangeLog|"
 msgid "Many new images"
 msgstr "Mnoho nových obrázkov"
 
-#: core/ChangeLog.qml:33 core/ChangeLog.qml:46 core/ChangeLog.qml:84
-#: core/ChangeLog.qml:90
+#: core/ChangeLog.qml:33 core/ChangeLog.qml:40 core/ChangeLog.qml:53
+#: core/ChangeLog.qml:91 core/ChangeLog.qml:97
 msgctxt "ChangeLog|"
 msgid "Many bug fixes"
 msgstr "Mnoho malých opráv."
 
 #: core/ChangeLog.qml:37
 msgctxt "ChangeLog|"
+msgid ""
+"New command-line option (--difficulty {value|min-max}) to start GCompris at "
+"specific difficulty"
+msgstr ""
+
+#: core/ChangeLog.qml:44
+msgctxt "ChangeLog|"
 msgid "Fix issue in comparator activity"
 msgstr "Oprava chyby v aktivite Porovnať čísla"
 
-#: core/ChangeLog.qml:41
+#: core/ChangeLog.qml:48
 msgctxt "ChangeLog|"
 msgid "Map of Spain added for geography activity"
 msgstr "Pridaná mapa Španielska pre aktivity z Geografie"
 
-#: core/ChangeLog.qml:42
+#: core/ChangeLog.qml:49
 msgctxt "ChangeLog|"
 msgid "Voices added for Ukrainian"
-msgstr "Pridané hlasy pre Ukrainčinu"
+msgstr "Pridané hlasové odozvy pre Ukrainčinu"
 
-#: core/ChangeLog.qml:43
+#: core/ChangeLog.qml:50
 msgctxt "ChangeLog|"
 msgid ""
 "New command-line option to list all the activities and start on a specific "
 "one"
 msgstr ""
 
-#: core/ChangeLog.qml:44 core/ChangeLog.qml:79 core/ChangeLog.qml:82
-#: core/ChangeLog.qml:88
+#: core/ChangeLog.qml:51 core/ChangeLog.qml:86 core/ChangeLog.qml:89
+#: core/ChangeLog.qml:95
 msgctxt "ChangeLog|"
 msgid "Many usability improvements"
 msgstr "Mnoho vylepšení použiteľnosti"
 
-#: core/ChangeLog.qml:50
+#: core/ChangeLog.qml:57
 msgctxt "ChangeLog|"
 msgid ""
 "Reduce the size of the packages for all platforms and of the external word "
 "images set"
 msgstr ""
 
-#: core/ChangeLog.qml:51
+#: core/ChangeLog.qml:58
 #, fuzzy
 #| msgctxt "ChangeLog|"
 #| msgid "New speed setting in several activities."
@@ -26245,46 +25682,43 @@ msgctxt "ChangeLog|"
 msgid "Improve images quality in several activities"
 msgstr "New speed setting in several activities."
 
-#: core/ChangeLog.qml:52
+#: core/ChangeLog.qml:59
 msgctxt "ChangeLog|"
 msgid "Fix some transitions in renewable_energy/watercycle on some platforms"
 msgstr ""
 
-#: core/ChangeLog.qml:53
+#: core/ChangeLog.qml:60
 msgctxt "ChangeLog|"
 msgid "Fix dead keys ignored on Linux for typing activities"
 msgstr ""
 
-#: core/ChangeLog.qml:54
+#: core/ChangeLog.qml:61
 msgctxt "ChangeLog|"
 msgid "Fix level reset when changing level manually in Logical associations"
 msgstr ""
 
-#: core/ChangeLog.qml:58
+#: core/ChangeLog.qml:65
 msgctxt "ChangeLog|"
 msgid ""
 "Fix Alphabet sequence, Even and odd numbers and Numbers in order activities"
 msgstr ""
 
-#: core/ChangeLog.qml:62 core/ChangeLog.qml:70
+#: core/ChangeLog.qml:69 core/ChangeLog.qml:77
 msgctxt "ChangeLog|"
 msgid "Several bug fixes"
 msgstr "Viacero malých opráv."
 
-#: core/ChangeLog.qml:64
+#: core/ChangeLog.qml:71
 msgctxt "ChangeLog|"
 msgid "Translation updated for Russian"
 msgstr "Upravený preklad do Ruštiny"
 
-#: core/ChangeLog.qml:65
-#, fuzzy
-#| msgctxt "DialogConfig|"
-#| msgid "Norwegian Nynorsk"
+#: core/ChangeLog.qml:72
 msgctxt "ChangeLog|"
 msgid "New voices for Norwegian Nynorsk"
-msgstr "nórsky (Nynorsk)"
+msgstr "Nové hlasové odozvy nórsky (Nynorsk)"
 
-#: core/ChangeLog.qml:69
+#: core/ChangeLog.qml:76
 #, fuzzy
 #| msgctxt "ChangeLog|"
 #| msgid "Translation added for Macedonian."
@@ -26292,7 +25726,7 @@ msgctxt "ChangeLog|"
 msgid "Translations added for Breton, Czech and Macedonian"
 msgstr "Pridané preklady pre Macedónčinu."
 
-#: core/ChangeLog.qml:74
+#: core/ChangeLog.qml:81
 #, fuzzy
 #| msgctxt "ChangeLog|"
 #| msgid "Translation added for Macedonian."
@@ -26300,79 +25734,78 @@ msgctxt "ChangeLog|"
 msgid "Translation added for Azerbaijani"
 msgstr "Pridané preklady pre Macedónčinu."
 
-#: core/ChangeLog.qml:75
+#: core/ChangeLog.qml:82
 msgctxt "ChangeLog|"
 msgid "New maps and update of the maps for geography activities"
 msgstr "Nové mapy a aktualizácia máp pre aktivity z geografie."
 
-#: core/ChangeLog.qml:76
+#: core/ChangeLog.qml:83
 msgctxt "ChangeLog|"
 msgid ""
 "New dataset containing loops operations for programming maze, and make "
 "tutorial images translated"
 msgstr ""
+"Nový súbor údajov, ktorý obsahuje operácie slučiek pre programovanie "
+"bludiska a prekladá obrázky príručky"
 
-#: core/ChangeLog.qml:77
+#: core/ChangeLog.qml:84
 msgctxt "ChangeLog|"
 msgid ""
 "Addition of a level to teach voltage source loop in analog electricity "
 "activity"
 msgstr ""
 
-#: core/ChangeLog.qml:87
-#, fuzzy
-#| msgctxt "ConfigurationItem|"
-#| msgid "The activity section menu is visible"
+#: core/ChangeLog.qml:94
 msgctxt "ChangeLog|"
 msgid "New Activity Settings menu, with dataset selection"
-msgstr "Sekcia ponuky aktivít je viditeľná"
+msgstr "Nová ponuka pre nastavenia činností s výberom súboru údajov"
 
-#: core/ChangeLog.qml:93
+#: core/ChangeLog.qml:100
 msgctxt "ChangeLog|"
 msgid "New sub-categories to organize activities"
 msgstr "Nové podkategórie na organizovanie aktivít"
 
-#: core/ChangeLog.qml:94
+#: core/ChangeLog.qml:101
 msgctxt "ChangeLog|"
 msgid "Translation added for Macedonian."
 msgstr "Pridané preklady pre Macedónčinu."
 
-#: core/ChangeLog.qml:95
+#: core/ChangeLog.qml:102
 msgctxt "ChangeLog|"
 msgid "New activities Programming Maze and Baby Tangram"
 msgstr "Nové aktivity Programovanie bludiska a detského tangramu"
 
-#: core/ChangeLog.qml:96
+#: core/ChangeLog.qml:103
 msgctxt "ChangeLog|"
 msgid "New background music and volume settings."
 msgstr "Nová hudba na pozadí a nastavenia hlasitosti."
 
-#: core/ChangeLog.qml:97
+#: core/ChangeLog.qml:104
 msgctxt "ChangeLog|"
 msgid "New speed setting in several activities."
 msgstr "New speed setting in several activities."
 
-#: core/ChangeLog.qml:98
+#: core/ChangeLog.qml:105
 msgctxt "ChangeLog|"
 msgid "New option in chess to display captured pieces."
 msgstr "Nová možnosť v šachu na zobrazenie vyhodených figúrok."
 
-#: core/ChangeLog.qml:99
+#: core/ChangeLog.qml:106
 msgctxt "ChangeLog|"
 msgid "New images in Colors, Advanced colors and Target game."
 msgstr "Nové obrázky vo Farbách, Pokročilých farbách a Cieľovej hre."
 
-#: core/ChangeLog.qml:100
+#: core/ChangeLog.qml:107
 msgctxt "ChangeLog|"
 msgid "New voices for US English."
-msgstr "Nové hlasy pre americkú angličtinu."
+msgstr "Nové hlasové odozvy pre americkú angličtinu."
 
-#: core/ChangeLog.qml:101 core/ChangeLog.qml:109
+#: core/ChangeLog.qml:108 core/ChangeLog.qml:116
 msgctxt "ChangeLog|"
 msgid "Many little fixes and improvements."
 msgstr "Mnoho malých opráv a vylepšení."
 
-#: core/ChangeLog.qml:102
+#: core/ChangeLog.qml:109
 msgctxt "ChangeLog|"
 msgid ""
 "Translation updated for multiple languages (Breton, Brazilian Portuguese, "
@@ -26381,17 +25814,17 @@ msgstr ""
 "Preklad bol aktualizovaný pre viac jazykov (bretónčina, brazílska "
 "portugalčina, fínčina ...)."
 
-#: core/ChangeLog.qml:103
+#: core/ChangeLog.qml:110
 msgctxt "ChangeLog|"
 msgid "Add Russian dataset for Click on letter activity."
-msgstr "Pridajte ruskú dátovú sadu pre aktivitu Kliknutia na písmeno."
+msgstr "Pridanie ruského súboru údajov pre aktivitu Kliknutia na písmeno."
 
-#: core/ChangeLog.qml:104
+#: core/ChangeLog.qml:111
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in Dutch."
 msgstr "Jazyková aktivita je teraz k dispozícii v holandčine."
 
-#: core/ChangeLog.qml:105
+#: core/ChangeLog.qml:112
 msgctxt "ChangeLog|"
 msgid ""
 "Merge Norwegian counties Nord-Trøndelag and Sør-Trøndelag into Trøndelag in "
@@ -26400,17 +25833,17 @@ msgstr ""
 "Zlúčte nórske kraje Nord-Trøndelag a Sør-Trøndelag do Trøndelag v aktivite "
 "geo-krajina."
 
-#: core/ChangeLog.qml:106
+#: core/ChangeLog.qml:113
 msgctxt "ChangeLog|"
 msgid "Fix in braille activities where the cells start at 1, not 0."
 msgstr "Oprava v aktivitách braillovho písma, kde bunky začínajú 1, nie 0."
 
-#: core/ChangeLog.qml:107
+#: core/ChangeLog.qml:114
 msgctxt "ChangeLog|"
 msgid "Translation added for Basque, Hungarian and Malayalam."
 msgstr "Preklad bol pridaný pre baskičtinu, maďarčinu a malajálamčinu."
 
-#: core/ChangeLog.qml:108
+#: core/ChangeLog.qml:115
 msgctxt "ChangeLog|"
 msgid ""
 "Loading/saving of creations (Baby Wordprocessor, Balance Box and Piano "
@@ -26419,48 +25852,48 @@ msgstr ""
 "Načítanie/ukladanie výtvorov (Detský textový editor, Rovnovážna krabička a "
 "Klavírne komponovanie)."
 
-#: core/ChangeLog.qml:109
+#: core/ChangeLog.qml:116
 msgctxt "ChangeLog|"
 msgid "Translations added for Scottish Gaelic."
 msgstr "Preklady boli pridané pre škótsku gaelčinu."
 
-#: core/ChangeLog.qml:110
+#: core/ChangeLog.qml:117
 msgctxt "ChangeLog|"
 msgid "License page added in configuration."
 msgstr "Licenčná stránka bola pridaná do konfigurácie."
 
-#: core/ChangeLog.qml:110
+#: core/ChangeLog.qml:117
 msgctxt "ChangeLog|"
 msgid "Multiple changes on layouts to improve the ergonomy."
 msgstr "Viacnásobné zmeny rozložení na zlepšenie ergonómie."
 
-#: core/ChangeLog.qml:111
+#: core/ChangeLog.qml:118
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in Polish, Swedish and Ukrainian."
 msgstr ""
 "Jazyková aktivita je teraz k dispozícii v poľštine, švédčine a ukrajinčine."
 
-#: core/ChangeLog.qml:112
+#: core/ChangeLog.qml:119
 msgctxt "ChangeLog|"
 msgid "Search feature."
 msgstr "Funkcia hľadania."
 
-#: core/ChangeLog.qml:113
+#: core/ChangeLog.qml:120
 msgctxt "ChangeLog|"
 msgid "A Changelog."
 msgstr "Zoznam zmien."
 
-#: core/ChangeLog.qml:114
+#: core/ChangeLog.qml:121
 msgctxt "ChangeLog|"
 msgid "Many little fixes."
 msgstr "Mnoho malých opráv."
 
-#: core/ChangeLog.qml:114
+#: core/ChangeLog.qml:121
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in French."
 msgstr "Jazyková aktivita je teraz k dispozícii vo francúzštine."
 
-#: core/ChangeLog.qml:115
+#: core/ChangeLog.qml:122
 msgctxt "ChangeLog|"
 msgid ""
 "Adding a loading overlay to let the user know that some actions are taking "
@@ -26470,7 +25903,7 @@ msgstr ""
 "niektoré akcie (napríklad načítanie aktivity) a môže to trvať niekoľko "
 "sekúnd."
 
-#: core/ChangeLog.qml:115
+#: core/ChangeLog.qml:122
 msgctxt "ChangeLog|"
 msgid ""
 "Translations added for: Catalan (Valencian), Chinese Traditional, Finnish "
@@ -26480,12 +25913,12 @@ msgstr ""
 "(92% preložených), ruština (98% preložených), slovenčina (92% preložených), "
 "turečtina."
 
-#: core/ChangeLog.qml:116
+#: core/ChangeLog.qml:123
 msgctxt "ChangeLog|"
 msgid "Translations added for: Slovenian, German, Galician."
 msgstr "Pridané preklady pre: slovinčinu, nemčinu, galícijčinu."
 
-#: core/ChangeLog.qml:141
+#: core/ChangeLog.qml:148
 #, qt-format
 msgctxt "ChangeLog|"
 msgid "Version %1:"
@@ -26712,7 +26145,7 @@ msgstr "%1 nastavenia"
 #: core/DialogChooseLevel.qml:202
 msgctxt "DialogChooseLevel|"
 msgid "Dataset"
-msgstr "Dátová sada"
+msgstr "Súbor údajov"
 
 #: core/DialogChooseLevel.qml:215
 msgctxt "DialogChooseLevel|"
@@ -27012,12 +26445,12 @@ msgstr ""
 #: core/main.cpp:203
 msgctxt "QObject|"
 msgid "Specify the activity when starting GCompris."
-msgstr ""
+msgstr "Určite aktivitu pri spustení GComprisu."
 
 #: core/main.cpp:208
 msgctxt "QObject|"
 msgid "Outputs all the available activities on the standard output."
-msgstr ""
+msgstr "Vypíše všetky dostupné činnosti na štandardný výstup."
 
 #: core/main.cpp:212
 msgctxt "QObject|"
@@ -27025,11 +26458,13 @@ msgid ""
 "Specify the range of activity difficulty to display for the session. Either "
 "a single value (2), or a range (3-6). Values must be between 1 and 6."
 msgstr ""
+"Vymedziť rozsah obtiažností činností, ktoré budú zobrazené počas sedenia. "
+"Buď jednu hodnotu (2), alebo rozsah (3-6). Hodnoty musia byť od 1 po 6."
 
 #: core/main.qml:273
 msgctxt "main|"
 msgid "Voices for your language"
-msgstr "Hlasy pre Váš jazyk"
+msgstr "Hlasové odozvy pre Váš jazyk"
 
 #: core/main.qml:274
 msgctxt "main|"
@@ -27042,12 +26477,9 @@ msgid "Background music"
 msgstr "Hudba na pozadí"
 
 #: core/main.qml:280
-#, fuzzy
-#| msgctxt "ConfigurationItem|"
-#| msgid "Do you want to download them now?"
 msgctxt "main|"
 msgid "Do you want to download the following external assets?"
-msgstr "Chcete ich teraz stiahnuť?"
+msgstr "Chcete teraz stiahnuť nasledujúci externý obsah?"
 
 #: core/main.qml:285
 msgctxt "main|"
