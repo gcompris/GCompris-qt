@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2023-04-02 13:13+0200\n"
+"PO-Revision-Date: 2023-05-04 09:46+0200\n"
 "Last-Translator: Pablo <parodper@gmail.com>\n"
 "Language-Team: Galician <proxecto@trasno.gal>\n"
 "Language: gl\n"
@@ -1599,13 +1599,15 @@ msgid ""
 "Turn on the bulb using the provided battery. To connect two terminals, click "
 "on a terminal, then on a second terminal."
 msgstr ""
+"Activa a lámpada usando esta batería. Para conectar dúas terminais primeiro "
+"preme nunha terminal, e despois preme na outra."
 
 #: activities/analog_electricity/TutorialDataset.qml:117
 msgctxt "TutorialDataset|"
 msgid ""
 "When connecting two terminals which are not supposed to be connected, it "
 "creates a short circuit (also called short) in the electrical circuit."
-msgstr ""
+msgstr "Se conectas dúas terminais que non deberías ocorrerá un curtocircuíto."
 
 #: activities/analog_electricity/TutorialDataset.qml:118
 msgctxt "TutorialDataset|"
@@ -1614,6 +1616,9 @@ msgid ""
 "are shorted, then those batteries create a voltage source loop and they "
 "cannot act as a voltage source for the circuit."
 msgstr ""
+"As baterías que teñan cadansúa terminal conectada directamente entre si, ou "
+"estean curtocircuitadas, formarán un bucle de voltaxe e non poderán ser unha "
+"fonte de voltaxe para o circuíto."
 
 #: activities/analog_electricity/TutorialDataset.qml:119
 msgctxt "TutorialDataset|"
@@ -1621,6 +1626,8 @@ msgid ""
 "For example, if two terminals of one battery are directly connected "
 "together, it creates a voltage source loop."
 msgstr ""
+"Por exemplo, conectar as dúas terminais dunha batería directamente entre si "
+"formará un bucle de voltaxe."
 
 #: activities/analog_electricity/TutorialDataset.qml:119
 msgctxt "TutorialDataset|"
@@ -1628,6 +1635,8 @@ msgid ""
 "Or, if two batteries are forming a closed circuit together, it creates a "
 "voltage source loop."
 msgstr ""
+"Ou tamén se formaría un bucle se dúas baterías forman un circuíto pechado "
+"entre elas."
 
 #: activities/analog_electricity/TutorialDataset.qml:120
 msgctxt "TutorialDataset|"
@@ -1635,12 +1644,15 @@ msgid ""
 "Create a voltage source loop with the provided batteries. Then click on the "
 "warning box to make it disappear and click on the OK button."
 msgstr ""
+"Crea un bucle de voltaxe con estas baterías. Despois preme na alerta para "
+"que desapareza, e preme no botón de Aceptar."
 
 #: activities/analog_electricity/TutorialDataset.qml:133
 msgctxt "TutorialDataset|"
 msgid ""
 "Too much current in an electrical circuit can damage the connected devices."
 msgstr ""
+"Demasiada corrente no circuíto pode estragar os dispositivos conectados."
 
 #: activities/analog_electricity/TutorialDataset.qml:134
 msgctxt "TutorialDataset|"
@@ -1649,39 +1661,36 @@ msgid ""
 "from the circuit. Don't forget to disable the delete button after removing "
 "the connected wires."
 msgstr ""
+"Para reparar unha lámpada estragada nesta actividade preme nela tras "
+"desconectala do circuíto. Non te esquezas de desactivar o borrado tras "
+"eliminar os cables conectados."
 
 #: activities/analog_electricity/TutorialDataset.qml:135
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Draw the numbers by connecting the dots in the correct order."
 msgctxt "TutorialDataset|"
 msgid "Break the bulb by connecting it with the two batteries."
-msgstr "Conecta os puntos na orde correcta para debuxar os números."
+msgstr "Estraga a lámpada conectándoa coas dúas baterías."
 
 #: activities/analog_electricity/TutorialDataset.qml:148
 msgctxt "TutorialDataset|"
 msgid ""
 "A switch can connect or disconnect the current travelling path or a circuit."
 msgstr ""
+"Un interruptor pode permitir ou impedir que corrente continúe por algunha "
+"ruta ou circuíto."
 
 #: activities/analog_electricity/TutorialDataset.qml:149
 msgctxt "TutorialDataset|"
 msgid "You can click on the switch to open and close it."
-msgstr ""
+msgstr "Para usar un interruptor preme nel."
 
 #: activities/analog_electricity/TutorialDataset.qml:150
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid ""
-#| "Create a circuit using the components provided such that the bulb glows "
-#| "only when both of the switches are turned on."
 msgctxt "TutorialDataset|"
 msgid ""
 "Create a circuit using the provided components so that the bulb glows only "
 "when the switch is on."
 msgstr ""
 "Crear un circuíto usando os compoñentes fornecidos de xeito que a lámpada só "
-"se ilumine cando ambos conmutadores estean acesos."
+"se ilumine cando o interruptor estea aceso."
 
 #: activities/analog_electricity/TutorialDataset.qml:163
 msgctxt "TutorialDataset|"
@@ -1689,20 +1698,17 @@ msgid ""
 "A simple connector can be used to connect several wires in an electrical "
 "circuit."
 msgstr ""
+"Un punto de conexión pódese usar para conectar varios cables nun circuíto "
+"eléctrico."
 
 #: activities/analog_electricity/TutorialDataset.qml:164
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid ""
-#| "Create a circuit using the components provided such that the bulb glows "
-#| "only when both of the switches are turned on."
 msgctxt "TutorialDataset|"
 msgid ""
 "Create a circuit so that one bulb should be always lit and the other should "
 "be lit only when the switch is on."
 msgstr ""
-"Crear un circuíto usando os compoñentes fornecidos de xeito que a lámpada só "
-"se ilumine cando ambos conmutadores estean acesos."
+"Crear un circuíto de xeito que unha lámpada estea sempre acesa e a outra só "
+"cando o interruptor estea activo."
 
 #: activities/analog_electricity/TutorialDataset.qml:177
 msgctxt "TutorialDataset|"
@@ -1710,6 +1716,8 @@ msgid ""
 "Electric current intensity or simply current is a flow of electric charge. "
 "One can imagine like a flow of electrons."
 msgstr ""
+"A intensidade da corrente eléctrica é o fluxo de carga eléctrica. Tamén se "
+"podería describir coma un fluxo de electróns."
 
 #: activities/analog_electricity/TutorialDataset.qml:178
 msgctxt "TutorialDataset|"
@@ -1717,6 +1725,8 @@ msgid ""
 "The conventional symbol for current is I. The unit of current is ampere "
 "under the International System of Units, which is denoted as A."
 msgstr ""
+"O símbolo da corrente é «I». A unidade de corrente no SI é o amperio, cuxo "
+"símbolo é a letra «A»."
 
 #: activities/analog_electricity/TutorialDataset.qml:179
 msgctxt "TutorialDataset|"
@@ -1724,6 +1734,8 @@ msgid ""
 "Voltage or electric potential difference is what makes a current in a "
 "circuit. It is like a \"push\" or \"pull\" for electric charge."
 msgstr ""
+"A diferencia de potencial eléctrico, tamén chamado voltaxe, é o que fai "
+"aparecer a corrente nun circuíto. É coma un «salto» para a carga eléctrica."
 
 #: activities/analog_electricity/TutorialDataset.qml:180
 msgctxt "TutorialDataset|"
@@ -1731,14 +1743,13 @@ msgid ""
 "The conventional symbol for voltage is V. The unit of measure of voltage is "
 "volt under the International System of Units, which is denoted as V."
 msgstr ""
+"O símbolo do voltaxe é «V». A unidade de medida do voltaxe no SI é o voltio, "
+"cuxo símbolo é a letra «V»."
 
 #: activities/analog_electricity/TutorialDataset.qml:181
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "Light the bulb using the XOR gate provided."
 msgctxt "TutorialDataset|"
 msgid "Light the bulb and observe the displayed values."
-msgstr "Ilumina a lámpada usando a porta XOR fornecida."
+msgstr "Ilumina a lámpada e observa os valores indicados."
 
 #: activities/analog_electricity/TutorialDataset.qml:194
 msgctxt "TutorialDataset|"
@@ -1746,6 +1757,8 @@ msgid ""
 "A resistor restricts the flow of current in an electrical circuit. The "
 "restriction of current is called resistance."
 msgstr ""
+"Unha resistencia restrinxe o fluxo de corrente nun circuíto. Esta restrición "
+"chámase «resistencia»."
 
 #: activities/analog_electricity/TutorialDataset.qml:195
 msgctxt "TutorialDataset|"
@@ -1754,25 +1767,25 @@ msgid ""
 "resistance is ohm under the International System of Units, which is denoted "
 "as Ω."
 msgstr ""
+"O símbolo da resistencia é «R». A unidade de medida da resistencia no SI é o "
+"ohmio, cuxo símbolo é «Ω»."
 
 #: activities/analog_electricity/TutorialDataset.qml:196
-#, fuzzy
-#| msgctxt "TutorialDataset|"
-#| msgid "Turn on the digital light using the provided components."
 msgctxt "TutorialDataset|"
 msgid ""
 "Light the bulb so that the bulb glows with 5V using the provided components."
-msgstr "Acende a luz dixital usando as compoñentes fornecidas."
+msgstr ""
+"Acende a lámpada de xeito que reciba 5V usando as compoñentes fornecidas."
 
 #: activities/analog_electricity/TutorialDataset.qml:209
 msgctxt "TutorialDataset|"
 msgid "A rheostat is used to vary resistance in an electrical circuit."
-msgstr ""
+msgstr "Un reóstato serve para variar a resistencia nun circuíto."
 
 #: activities/analog_electricity/TutorialDataset.qml:210
 msgctxt "TutorialDataset|"
 msgid "You can change the rheostat value by dragging its slider."
-msgstr ""
+msgstr "Podes variar o valor do reóstato arrastrando o seu regulador."
 
 #: activities/analog_electricity/TutorialDataset.qml:211
 msgctxt "TutorialDataset|"
@@ -1780,6 +1793,8 @@ msgid ""
 "Connect the bulb to the appropriate terminals of the rheostat so that the "
 "light intensity of the bulb can be changed while dragging the slider."
 msgstr ""
+"Conecta a lámpada ás terminais axeitadas do reóstato para que a intensidade "
+"da lámpada varíe ao mover o regulador."
 
 #: activities/analog_electricity/TutorialDataset.qml:224
 msgctxt "TutorialDataset|"
@@ -1787,6 +1802,8 @@ msgid ""
 "A rheostat can act as a simple resistor if the terminals of the extremities "
 "are connected in a circuit."
 msgstr ""
+"Un reóstato tamén pode funcionar coma unha resistencia normal se as "
+"terminais dos extremos están conectadas ao mesmo circuíto."
 
 #: activities/analog_electricity/TutorialDataset.qml:225
 msgctxt "TutorialDataset|"
@@ -1794,6 +1811,8 @@ msgid ""
 "Connect the bulb to the appropriate terminals of the rheostat so that the "
 "slider cannot change the light intensity of the bulb."
 msgstr ""
+"Conecta a lámpada ás terminais axeitadas do reóstato para que a intensidade "
+"da lámpada non varíe ao mover o regulador."
 
 #: activities/analog_electricity/TutorialDataset.qml:238
 msgctxt "TutorialDataset|"
@@ -1802,6 +1821,9 @@ msgid ""
 "slider so that the voltage drop in the bulb should be 10V. Note that the "
 "bulb intensity should vary while dragging the slider."
 msgstr ""
+"Conecta a lámpada ás terminais axeitadas do reóstato e move o regulador de "
+"xeito que o voltaxe da lámpada sexa de 10V. Fíxate en que a intensidade da "
+"lámpada cambia segundo vas arrastrando o regulador."
 
 #: activities/analog_electricity/TutorialDataset.qml:251
 msgctxt "TutorialDataset|"
@@ -1809,6 +1831,8 @@ msgid ""
 " A red LED converts electrical energy into red light energy under particular "
 "conditions."
 msgstr ""
+" Un LED vermello converte enerxía eléctrica en luz vermella se se cumpren "
+"unhas certas condicións."
 
 #: activities/analog_electricity/TutorialDataset.qml:252
 msgctxt "TutorialDataset|"
@@ -1818,6 +1842,10 @@ msgid ""
 "terminal at the tail of the arrow shown, and the negative terminal to the "
 "head side. This condition is called forward bias."
 msgstr ""
+"A primeira condición é que o fluxo de corrente ten que ser na mesma "
+"dirección que o sentido da frecha. A terminal positiva da batería ten que "
+"conectarse á cola da frecha, e a terminal negativa á punta da frecha. Esta "
+"condición chámase polarización directa."
 
 #: activities/analog_electricity/TutorialDataset.qml:253
 msgctxt "TutorialDataset|"
@@ -1826,6 +1854,9 @@ msgid ""
 "activity, you can click on the broken red LED after disconnecting from the "
 "circuit to repair it."
 msgstr ""
+"Demasiada enerxía por riba do límite do LED pode rompelo. Nesta actividade "
+"podes premer no LED vermello estragado, despois de desconectalo do circuíto, "
+"para arranxalo."
 
 #: activities/analog_electricity/TutorialDataset.qml:254
 msgctxt "TutorialDataset|"
@@ -1833,11 +1864,13 @@ msgid ""
 "Connect the provided red LED to the battery in forward bias. Don't worry "
 "about the broken LED for now."
 msgstr ""
+"Conecta o LED vermello fornecido en polarización directa. Ignora o LED "
+"estragado."
 
 #: activities/analog_electricity/TutorialDataset.qml:267
 msgctxt "TutorialDataset|"
 msgid "The battery is providing too much energy to the LED."
-msgstr ""
+msgstr "A batería está metendo demasiada enerxía no LED."
 
 #: activities/analog_electricity/TutorialDataset.qml:268
 msgctxt "TutorialDataset|"
@@ -1845,14 +1878,13 @@ msgid ""
 "One can limit the electrical energy by restricting the current flow in a "
 "circuit. That means using a resistor."
 msgstr ""
+"Podes limitar a enerxía eléctrica restrinxindo o fluxo de corrente no "
+"circuíto. Para iso úsase unha resistencia."
 
 #: activities/analog_electricity/TutorialDataset.qml:269
-#, fuzzy
-#| msgctxt "TutorialDataset|"
-#| msgid "Turn on the digital light using the provided components."
 msgctxt "TutorialDataset|"
 msgid "Light the red LED using the provided components."
-msgstr "Acende a luz dixital usando as compoñentes fornecidas."
+msgstr "Acende o LED usando as compoñentes fornecidas."
 
 #: activities/analog_electricity/TutorialDataset.qml:282
 msgctxt "TutorialDataset|"
@@ -1860,21 +1892,20 @@ msgid ""
 "Create a circuit so that the voltage drop in both bulbs are equal to the "
 "voltage source (battery)."
 msgstr ""
+"Crea un circuíto de xeito que a diferencia de voltaxe en ambas lámpadas sexa "
+"igual ao da fonte de voltaxe (a batería)."
 
 #. Activity title
 #: activities/baby_keyboard/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ConfigurationItem|"
-#| msgid "Virtual Keyboard"
 msgctxt "ActivityInfo|"
 msgid "Baby keyboard"
-msgstr "Teclado virtual"
+msgstr "Teclado para bebés"
 
 #. Help title
 #: activities/baby_keyboard/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "A simple activity to discover the keyboard."
-msgstr ""
+msgstr "Unha sinxela actividade para descubrir o teclado."
 
 #. Help goal
 #: activities/baby_keyboard/ActivityInfo.qml:20
@@ -1894,21 +1925,24 @@ msgid ""
 "    Other keys will just play a click sound.\n"
 "    "
 msgstr ""
+"Preme calquera tecla do teclado.\n"
+"    As letras, números e calquera outra tecla de caracteres amosarán "
+"cadanseu símbolo na pantalla.\n"
+"    Se é pronunciable soará unha voz, se non soará un asubío.\n"
+"    As outras teclas chascarán.\n"
+"    "
 
 #. Activity title
 #: activities/baby_mouse/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Baby mouse"
-msgstr ""
+msgstr "Rato para bebés"
 
 #. Help title
 #: activities/baby_mouse/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Move the mouse or touch the screen"
 msgctxt "ActivityInfo|"
 msgid "Move the mouse or touch the screen and observe the result."
-msgstr "Move o rato ou a pantalla táctil."
+msgstr "Move o rato ou toca a pantalla táctil e observa o que pasa."
 
 #. Help goal
 #: activities/baby_mouse/ActivityInfo.qml:19
@@ -1917,6 +1951,8 @@ msgid ""
 "Provide audio-visual feedback when using the mouse to help discovering its "
 "usage for young children."
 msgstr ""
+"Amosa unha resposta audiovisual ao usar o rato, para axudar a que os máis "
+"pequenos descubran como funciona."
 
 #. Help prerequisite
 #: activities/baby_mouse/ActivityInfo.qml:21
@@ -1936,7 +1972,7 @@ msgstr "Manexo do rato."
 #: activities/baby_mouse/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid "The screen has 3 sections:"
-msgstr ""
+msgstr "A pantalla ten 3 partes:"
 
 #: activities/baby_mouse/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
@@ -1944,6 +1980,8 @@ msgid ""
 "The leftmost column contains 4 ducks, clicking on one of them produces a "
 "sound and an animation."
 msgstr ""
+"A columna da esquerda contén 4 patos, e pulsar neles reproduce unha "
+"animación e un son."
 
 #: activities/baby_mouse/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
@@ -1951,6 +1989,8 @@ msgid ""
 "The central area contains a blue duck, moving the mouse cursor or doing a "
 "drag gesture on a touchscreen makes the blue duck move."
 msgstr ""
+"A área central contén un pato azul, mover o punteiro do rato ou arrastrando "
+"co dedo fai que o pato se mova."
 
 #: activities/baby_mouse/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
@@ -1958,52 +1998,42 @@ msgid ""
 "The arrows area, clicking on one of them makes the blue duck move in the "
 "corresponding direction."
 msgstr ""
+"Premendo algunha das frechas na outra área fará que o pato se mova na "
+"dirección correspondente."
 
 #: activities/baby_mouse/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid ""
 "Doing a simple click in the central area shows a marker at the click "
 "position."
-msgstr ""
+msgstr "Premendo na área central amosa un marcador no punto onde se premeu."
 
 #. Activity title
 #: activities/baby_tangram/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Baby puzzle"
-msgstr ""
+msgstr "Crebacabezas para bebés"
 
 #. Help title
 #: activities/baby_tangram/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "The objective is to form a given shape"
 msgctxt "ActivityInfo|"
 msgid "The objective is to assemble the baby puzzle."
-msgstr "O obxectivo consiste en conseguir a forma indicada coas pezas"
+msgstr "O obxectivo consiste en completar o crebacabezas."
 
 #. Help manual
 #: activities/baby_tangram/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Select the object to form. Move a piece by dragging it. The symmetrical "
-#| "button appears on items that supports it. Click on the rotation button or "
-#| "drag around it to show the rotation you want. More complicated levels can "
-#| "be found in tangram activity."
 msgctxt "ActivityInfo|"
 msgid ""
 "Move a piece by dragging it. Use the rotation button if necessary. More "
 "complicated levels can be found in tangram activity."
 msgstr ""
-"Selecciona o obxecto para formar. Arrastra unha peza para movela. O botón de "
-"simetría aparece en elementos que o permiten. Preme o botón de xirar ou "
-"arrastra ao seu redor para mostrar o xiro que queres. Podes atopar niveis "
-"máis complicados na actividade de tangram."
+"Arrastra unha peza para movela. Preme o botón de xirar se o precisas. Podes "
+"atopar niveis máis complicados na actividade de tangram."
 
 #: activities/baby_wordprocessor/ActivityConfig.qml:26
 msgctxt "ActivityConfig|"
 msgid "Play characters' sound when typed"
-msgstr ""
+msgstr "Reproducir o son dos caracteres ao escribilos"
 
 #. Activity title
 #: activities/baby_wordprocessor/ActivityInfo.qml:15
@@ -2029,13 +2059,6 @@ msgstr "Descubre o teclado e as letras."
 
 #. Help manual
 #: activities/baby_wordprocessor/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Just type on the real or virtual keyboard like in a word processor.\n"
-#| "    Clicking on the 'Title' button will make the text bigger. Similarly, "
-#| "the 'subtitle' button will make the text slightly less bigger. Clicking "
-#| "on 'paragraph' will remove the formatting."
 msgctxt "ActivityInfo|"
 msgid ""
 "Just type on the real or virtual keyboard like in a word processor.\n"
@@ -2044,59 +2067,54 @@ msgid ""
 "'paragraph' will remove the formatting."
 msgstr ""
 "Escribe no teclado (real ou virtual) como nun procesador de textos.\n"
-"Preme o botón «Título» para facer máis grande o texto. O botón «Subtítulo» "
-"fará o texto lixeiramente menos grande. O botón «Parágrafo» retira o "
-"formato.\n"
-"Preme «Maiús» e usa as teclas de frecha para seleccionar o texto. Usa Ctrl+C "
-"para copiar, Ctrl+V para pegar e Crtl+X para cortar o texto. Podes usar Ctrl"
-"+Z para desfacer cambios.\n"
-"Fedella e atopa máis atallos. Por exemplo, cal é o atallo para seleccionar "
-"todo o texto?"
+"    Preme o botón «Título» para facer máis grande o texto. O botón "
+"«Subtítulo» fará o texto lixeiramente menos grande. O botón «Parágrafo» "
+"retira o formato."
 
 #: activities/baby_wordprocessor/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Arrows: navigate inside the text"
-msgstr ""
+msgstr "Frechas: navegar dentro do texto"
 
 #: activities/baby_wordprocessor/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Shift + Arrows: select a part of the text"
-msgstr ""
+msgstr "Mayús. + Frechas: seleccionar unha parte do texto"
 
 #: activities/baby_wordprocessor/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid "Ctrl + A: select all the text"
-msgstr ""
+msgstr "Ctrl + A: seleccionar todo o texto"
 
 #: activities/baby_wordprocessor/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
 msgid "Ctrl + C: copy selected text"
-msgstr ""
+msgstr "Ctrl + C: copiar o texto seleccionado"
 
 #: activities/baby_wordprocessor/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
 msgid "Ctrl + X: cut selected text"
-msgstr ""
+msgstr "Ctrl + X: cortar o texto seleccionado"
 
 #: activities/baby_wordprocessor/ActivityInfo.qml:32
 msgctxt "ActivityInfo|"
 msgid "Ctrl + V: paste copied or cut text"
-msgstr ""
+msgstr "Ctrl + V: pegar o texto copiado ou cortado"
 
 #: activities/baby_wordprocessor/ActivityInfo.qml:33
 msgctxt "ActivityInfo|"
 msgid "Ctrl + D: delete selected text"
-msgstr ""
+msgstr "Ctrl + D: eliminar o texto seleccionado"
 
 #: activities/baby_wordprocessor/ActivityInfo.qml:34
 msgctxt "ActivityInfo|"
 msgid "Ctrl + Z: undo"
-msgstr ""
+msgstr "Ctrl + Z: desfacer"
 
 #: activities/baby_wordprocessor/ActivityInfo.qml:35
 msgctxt "ActivityInfo|"
 msgid "Ctrl + Shift + Z: redo"
-msgstr ""
+msgstr "Ctrl + Z: refacer"
 
 #: activities/baby_wordprocessor/BabyWordprocessor.qml:91
 msgctxt "BabyWordprocessor|"
@@ -2149,15 +2167,6 @@ msgstr "Referencias culturais."
 
 #. Help manual
 #: activities/babymatch/ActivityInfo.qml:27
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "In the main board area, a set of objects is displayed. In the vertical "
-#| "box (at the left of the main board) another set of objects is shown, each "
-#| "object in the group on the left matching exactly one object in the main "
-#| "board area. This game challenges you to find the logical link between "
-#| "these objects. How do they fit together? Drag each object to the correct "
-#| "red space in the main area."
 msgctxt "ActivityInfo|"
 msgid ""
 "In the main board area, a set of objects is displayed. In the side panel, "
@@ -2165,17 +2174,12 @@ msgid ""
 "logically to one object in the main board area. Drag each object from the "
 "side panel to the correct spot in the main area."
 msgstr ""
-"Na zona do taboleiro principal móstrase un grupo de obxectos. Na caixa "
-"vertical (á esquerda do taboleiro principal) móstrase outro grupo de "
-"obxectos, cada un dos cales corresponde cun dos obxectos da zona do "
-"taboleiro principal. Este xogo rétate a atopar a asociación lóxica entre os "
-"obxectos. Como encaixan? Arrastra cada obxecto ao espazo vermello correcto "
-"da zona principal."
+"Na zona do taboleiro principal móstrase un grupo de obxectos. Na área do "
+"lateral móstrase outro grupo de obxectos, cada un dos cales corresponde cun "
+"dos obxectos da zona do taboleiro principal. Arrastra cada obxecto ao punto "
+"correcto da zona principal."
 
 #: activities/babymatch/resource/board/board1_0.qml:14
-#, fuzzy
-#| msgctxt "board1_0|"
-#| msgid "Drag and Drop the items to make them match"
 msgctxt "board1_0|"
 msgid "Drag and drop the items to match them."
 msgstr "Arrastra e solta os elementos para facer que coincidan."
@@ -2195,16 +2199,11 @@ msgstr "Arrastra e solta as formas onde corresponda."
 
 #. Help manual
 #: activities/babyshapes/ActivityInfo.qml:28
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Complete the puzzle by dragging each piece from the set of pieces on the "
-#| "left, to the matching space in the puzzle."
 msgctxt "ActivityInfo|"
 msgid ""
 "Complete the puzzle by dragging each piece on the side to the matching spot."
 msgstr ""
-"Arrastra cada peza da esquerda ao seu espazo correspondente do quebracabezas "
+"Arrastra cada peza do lateral ao seu espazo correspondente do quebracabezas "
 "para completalo."
 
 #: activities/babyshapes/ActivityInfo.qml:29
@@ -2275,7 +2274,7 @@ msgstr "Iniciar o editor"
 #: activities/balancebox/ActivityConfig.qml:41
 msgctxt "ActivityConfig|"
 msgid "Start the activity to access the editor"
-msgstr ""
+msgstr "Comeza a actividade para acceder ao editor"
 
 #: activities/balancebox/ActivityConfig.qml:51
 msgctxt "ActivityConfig|"
@@ -2285,13 +2284,13 @@ msgstr "Cargar os niveis gardados"
 #: activities/balancebox/ActivityConfig.qml:51
 msgctxt "ActivityConfig|"
 msgid "Start the activity to load your levels"
-msgstr ""
+msgstr "Comeza a actividade para cargar os teus niveis"
 
 #. Activity title
 #: activities/balancebox/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
 msgid "Balance box"
-msgstr "Caixa de equilibrio"
+msgstr "Equilibrar a caixa"
 
 #. Help title
 #: activities/balancebox/ActivityInfo.qml:20
@@ -2314,6 +2313,10 @@ msgid ""
 "order to unlock the door. You can move the ball by tilting your mobile "
 "device. On desktop platforms use the arrow keys to simulate tilting."
 msgstr ""
+"Navega a bóla até a porta. Ten coidado de que non caia en ningún burato. "
+"Para que se abra a porta tense que pulsar os botóns da caixa na orde que "
+"indican os números. Para mover a pelota inclina o teu dispositivo móbil, ou "
+"usa as frechas se estás nun ordenador."
 
 #: activities/balancebox/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
@@ -2323,6 +2326,10 @@ msgid ""
 "set, select the 'user' level set and start the level editor by clicking on "
 "the corresponding button."
 msgstr ""
+"Na configuración das actividades podes escoller entre os niveis "
+"«Incorporados» e os que ti definas («Usuario»). Para crear un paquete de "
+"niveis escolle o conxunto «usuario» e pulsa no botón para abrir o editor de "
+"niveis."
 
 #: activities/balancebox/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
@@ -2331,37 +2338,43 @@ msgid ""
 "editing tools on the side to modify the map cells of the currently active "
 "level in the editor:"
 msgstr ""
+"No <b>editor de niveis</b> podes crear os teus propios niveis. Escolle unha "
+"das ferramentas de edición no lado para modificar as celas do mapa no nivel "
+"activo:"
 
 #: activities/balancebox/ActivityInfo.qml:32
 msgctxt "ActivityInfo|"
 msgid "Cross: clear a map cell completely"
-msgstr ""
+msgstr "Cruz: limpa a cela do mapa"
 
 #: activities/balancebox/ActivityInfo.qml:33
 msgctxt "ActivityInfo|"
 msgid ""
 "Horizontal Wall: add/remove a horizontal wall on the lower edge of a cell"
 msgstr ""
+"Muro horizontal: engade/elimina unha barreira horizontal no borde inferior "
+"da cela"
 
 #: activities/balancebox/ActivityInfo.qml:34
 msgctxt "ActivityInfo|"
 msgid "Vertical Wall: add/remove a vertical wall on the right edge of a cell"
 msgstr ""
+"Muro vertical: engade/elimina unha barreira vertical no borde dereito da cela"
 
 #: activities/balancebox/ActivityInfo.qml:35
 msgctxt "ActivityInfo|"
 msgid "Hole: add/remove a hole on a cell"
-msgstr ""
+msgstr "Burato: engade/elimina un oco na cela"
 
 #: activities/balancebox/ActivityInfo.qml:36
 msgctxt "ActivityInfo|"
 msgid "Ball: set the starting position of the ball"
-msgstr ""
+msgstr "Bóla: indica a posición inicial da bóla"
 
 #: activities/balancebox/ActivityInfo.qml:37
 msgctxt "ActivityInfo|"
 msgid "Door: Set the door position"
-msgstr ""
+msgstr "Porta: indica a posición da porta"
 
 #: activities/balancebox/ActivityInfo.qml:38
 msgctxt "ActivityInfo|"
@@ -2378,6 +2391,9 @@ msgid ""
 "clicked cell: An item can be placed by clicking on an empty cell, and by "
 "clicking again on the same cell with the same tool, you can remove it again."
 msgstr ""
+"Todas as ferramentas (excepto a de limpar) cambia o obxectivo na cela onde "
+"se premeu: Premendo nunha cela baleira colócase o elemento, e volvendo a "
+"premer nesa mesma cela elimínase."
 
 #: activities/balancebox/ActivityInfo.qml:41
 msgctxt "ActivityInfo|"
@@ -2387,6 +2403,10 @@ msgid ""
 "button on the bar or by pressing escape on your keyboard or the back-button "
 "on your mobile device."
 msgstr ""
+"Podes probar un nivel modificado premendo no botón de «Probar» no lateral da "
+"vista de edición. Podes saír do modo de proba premendo no botón de Inicio na "
+"barra, premendo escape no teclado ou o botón de atrás se estas nun "
+"dispositivo táctil."
 
 #: activities/balancebox/ActivityInfo.qml:42
 msgctxt "ActivityInfo|"
@@ -2395,6 +2415,8 @@ msgid ""
 "buttons on the bar. Back in the editor you can continue editing the current "
 "level and test it again if needed."
 msgstr ""
+"Dentro do editor podes cambiar o nivel a editar usan os botóns na barra. "
+"Podes ir cambiando e probando os niveis segundo vexas."
 
 #: activities/balancebox/ActivityInfo.qml:43
 msgctxt "ActivityInfo|"
@@ -2402,6 +2424,8 @@ msgid ""
 "When your level is finished you can save it to a file by clicking on the "
 "'Save' button on the side."
 msgstr ""
+"Cando remates un nivel podes gardalo nun ficheiro premendo no botón de "
+"«Gardar» no lateral."
 
 #: activities/balancebox/ActivityInfo.qml:44
 msgctxt "ActivityInfo|"
@@ -2409,12 +2433,16 @@ msgid ""
 "To return to the activity settings click on the home-button on the bar or "
 "press Escape on your keyboard or the back button on your mobile device."
 msgstr ""
+"Para volver á configuración das actividades preme no botón de Inicio na "
+"barra, preme escape no teclado ou atrás nos dispositivos táctiles."
 
 #: activities/balancebox/ActivityInfo.qml:45
 msgctxt "ActivityInfo|"
 msgid ""
 "Finally, to load your level set, click on the 'Load saved levels' button."
 msgstr ""
+"Cando remates, para cargar os teus niveis preme no botón «Cargar os niveis "
+"gardados»."
 
 #: activities/balancebox/balancebox.js:73
 msgctxt "balancebox|"
@@ -2422,12 +2450,15 @@ msgid ""
 "Either create your levels by starting the level editor in the activity "
 "settings menu and then load your file, or choose the 'built-in' level set."
 msgstr ""
+"Crea os teus niveis iniciando o editor de niveis, na configuración da "
+"actividade, e despois cargando o ficheiro cos niveis, ou escolle os niveis "
+"«Incorporados»."
 
 #: activities/balancebox/balancebox.js:106
 #, qt-format
 msgctxt "balancebox|"
 msgid "The file '%1' is missing!<br>Falling back to builtin levels."
-msgstr "Falta o ficheiro «%1»!<br>Volvendo aos niveis incluídos."
+msgstr "Falta o ficheiro «%1»!<br>Cargaranse os niveis incluídos."
 
 #: activities/balancebox/Balancebox.qml:72
 msgctxt "Balancebox|"
@@ -2435,6 +2466,7 @@ msgid ""
 "You selected the user-defined level set, but you have not yet loaded any "
 "user level!"
 msgstr ""
+"Escolliches os niveis creados por usuarios, pero non cargaches ningún nivel!"
 
 #: activities/balancebox/Balancebox.qml:74
 msgctxt "Balancebox|"
@@ -2493,12 +2525,6 @@ msgstr ""
 
 #. Help manual
 #: activities/ballcatch/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Press the left and right arrow at the same time, to make the ball go in a "
-#| "straight line. On a touch screen you have to hit the two hands at the "
-#| "same time."
 msgctxt "ActivityInfo|"
 msgid ""
 "Press the left and right arrow keys at the same time, to make the ball go in "
@@ -2557,12 +2583,6 @@ msgstr "Xogo de mesa (contra Tux)"
 #. Help title
 #: activities/bargame/ActivityInfo.qml:17
 #: activities/bargame_2players/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Click the number of balls you wish to place in the holes and then click "
-#| "the OK button. The winner is the one who hasn't put a ball in the red "
-#| "hole."
 msgctxt "ActivityInfo|"
 msgid ""
 "Select the number of balls you wish to place in the holes and then click on "
@@ -2588,19 +2608,15 @@ msgstr "Habilidade para contar."
 
 #. Help manual
 #: activities/bargame/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Place balls in the holes. You win if the computer has to place the last "
-#| "ball. If you want Tux to begin, just click on him"
 msgctxt "ActivityInfo|"
 msgid ""
 "Click on the ball icon to select a number of balls, then click on the OK "
 "button to place the balls in the holes. You win if Tux has to place the last "
 "ball. If you want Tux to begin, just click on him."
 msgstr ""
-"Coloca bólas nos buratos. Gañas se o computador ten que colocar a última "
-"bóla. Preme a Tux se queres que comece."
+"Preme na icona da bóla para escoller o número de bólas, e preme o botón de "
+"Aceptar para colocar as bólas nos buratos. Gañas se Tux ten que colocar a "
+"última bóla. Preme en Tux se queres que comece."
 
 #. Activity title
 #: activities/bargame_2players/ActivityInfo.qml:15
@@ -2610,18 +2626,14 @@ msgstr "Xogo de mesa (cunha amiga ou amigo)"
 
 #. Help manual
 #: activities/bargame_2players/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Place balls in the holes. You win if your friend has to place the last "
-#| "ball."
 msgctxt "ActivityInfo|"
 msgid ""
 "Click on the ball icon to select a number of balls, then click on the OK "
 "button to place the balls in the holes. You win if your friend has to place "
 "the last ball."
 msgstr ""
-"Coloca as bólas nos buratos. Gañas se a túa amiga ou amigo ten que colocar a "
+"Preme na icona da bóla para escoller o número de bólas, e preme o botón de "
+"Aceptar para colocar as bólas nos buratos. Gañas se o teu amigo coloca a "
 "última bóla."
 
 #. Activity title
@@ -2761,12 +2773,6 @@ msgstr "Deixa que os nenos descubran o sistema braille."
 
 #. Help manual
 #: activities/braille_alphabets/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "The screen has 3 sections: an interactive braille cell, an instruction "
-#| "telling you the letter to reproduce, and at the top the Braille letters "
-#| "to use as a reference. Each level teaches a set of 10 letters."
 msgctxt "ActivityInfo|"
 msgid ""
 "The screen has 3 sections: an interactive braille cell, an instruction "
@@ -2774,53 +2780,41 @@ msgid ""
 "characters to use as a reference. Each level teaches a set of 10 characters."
 msgstr ""
 "A pantalla ten tres seccións: unha cela braille interactiva, unha instrución "
-"que che indica a letra que hai que reproducir e, na parte superior, as "
-"letras braille para usar como referencia. Cada nivel ensina un conxunto de "
-"dez letras."
+"que indica a letra a reproducir e, na parte superior, as letras braille para "
+"usar como referencia. Cada nivel ensina un conxunto de dez letras."
 
 #: activities/braille_alphabets/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid "Reproduce the requested character in the interactive braille cell."
-msgstr ""
+msgstr "Reproduce o carácter indicado na cela braille interactiva."
 
 #: activities/braille_alphabets/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Find the strawberry by clicking on the blue fields"
 msgctxt "ActivityInfo|"
 msgid ""
 "You can open the braille chart by clicking on the blue braille cell icon."
-msgstr "Atopa o amorodo premendo os campos azuis"
+msgstr "Se te esqueces preme na icona coa cela de braille azul."
 
 #: activities/braille_alphabets/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Digits: 1 to 6 select/deselect the corresponding dots"
-msgstr ""
+msgstr "Díxitos: premer 1 a 6 activan/desactivan os puntos correspondentes"
 
 #: activities/braille_alphabets/ActivityInfo.qml:28
 #: activities/braille_fun/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Space: open or close the braille chart"
-msgstr ""
+msgstr "Espacio: abre e pecha o diagrama"
 
 #: activities/braille_alphabets/braille_alphabets.js:48
 #: activities/braille_alphabets/braille_alphabets.js:58
 #: activities/braille_alphabets/braille_alphabets.js:68
 #: activities/braille_alphabets/braille_alphabets.js:78
 #: activities/braille_alphabets/braille_alphabets.js:88
-#, fuzzy
-#| msgctxt "braille_alphabets|"
-#| msgid "Now it's a little bit harder without the braille map."
 msgctxt "braille_alphabets|"
 msgid "Now it's a little bit harder without the reference."
-msgstr "Agora é un pouco máis difícil sen o mapa de braille."
+msgstr "Agora é un pouco máis difícil sen a referencia."
 
 #: activities/braille_alphabets/braille_alphabets.js:53
-#, fuzzy
-#| msgctxt "braille_alphabets|"
-#| msgid ""
-#| "Look at the Braille character map and observe how similar the first and "
-#| "second line are."
 msgctxt "braille_alphabets|"
 msgid ""
 "Look at the braille character chart and observe how similar the first and "
@@ -2830,11 +2824,6 @@ msgstr ""
 "primeira e a segunda liña."
 
 #: activities/braille_alphabets/braille_alphabets.js:63
-#, fuzzy
-#| msgctxt "braille_alphabets|"
-#| msgid ""
-#| "Again, similar as the first line but take care, the 'W' letter was added "
-#| "afterwards."
 msgctxt "braille_alphabets|"
 msgid ""
 "Again, similar to the first line in the character chart but take care, the "
@@ -2944,38 +2933,25 @@ msgstr "Diversión con braille"
 
 #. Help title
 #: activities/braille_fun/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Braille the letters"
 msgctxt "ActivityInfo|"
 msgid "Practice braille letters."
-msgstr "Representa as letras con braille"
+msgstr "Representa as letras con braille."
 
 #. Help prerequisite
 #: activities/braille_fun/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Braille Alphabet Codes"
 msgctxt "ActivityInfo|"
 msgid "Braille alphabet."
-msgstr "Códigos do alfabeto braille"
+msgstr "Alfabeto braille."
 
 #. Help manual
 #: activities/braille_fun/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Enter the braille code in the tile for the letters on the banner pulled "
-#| "by Tux in his plane across the screen. Check the braille chart by "
-#| "clicking on the toggle button for help."
 msgctxt "ActivityInfo|"
 msgid ""
 "Create the braille cells for the letters on the banner. Check the braille "
 "chart by clicking on the blue braille cell icon if you need some help."
 msgstr ""
-"Insire o código braille na tesela para as letras que aparecen na banda que "
-"Tux arrastra no seu avión a través da pantalla. Podes premer o botón de "
-"conmutar para revisar o mapa de braille."
+"Representa as letras do cartel en braille. Podes consultar a guía de braille "
+"premendo na icona azul."
 
 #. Activity title
 #: activities/calendar/ActivityInfo.qml:15
@@ -3003,14 +2979,13 @@ msgstr "Conceptos de semana, mes e ano."
 
 #. Help manual
 #: activities/calendar/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Read the instructions and select the correct date on the calendar."
 msgctxt "ActivityInfo|"
 msgid ""
 "Read the instructions and select the correct date on the calendar, and then "
 "validate your answer by clicking on the OK button."
-msgstr "Le as instrucións e selecciona a data correcta no calendario."
+msgstr ""
+"Le as instrucións e selecciona a data correcta no calendario. Cando remates "
+"preme o botón Aceptar."
 
 #: activities/calendar/ActivityInfo.qml:24
 #: activities/find_the_day/ActivityInfo.qml:24
@@ -3019,18 +2994,20 @@ msgid ""
 "In some levels, you need to find the day of the week for a given date. In "
 "this case, click on the corresponding day of the week in the list."
 msgstr ""
+"Nalgúns niveis pode que precises atopar o día da semana para unha data. "
+"Neste caso, escolle o día da semana axeitado na lista."
 
 #: activities/calendar/ActivityInfo.qml:26
 #: activities/find_the_day/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Arrows: navigate through the answers"
-msgstr ""
+msgstr "Frechas: navega entre as respostas"
 
 #: activities/calendar/ActivityInfo.qml:27
 #: activities/find_the_day/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Space or Enter: validate your answer"
-msgstr ""
+msgstr "Espacio ou Intro: comproba a resposta"
 
 #: activities/calendar/Calendar.qml:309
 msgctxt "Calendar|"
@@ -3058,9 +3035,6 @@ msgid "Thursday"
 msgstr "Xoves"
 
 #: activities/calendar/Calendar.qml:314
-#, fuzzy
-#| msgctxt "Calendar|"
-#| msgid "Friday"
 msgctxt "Calendar|"
 msgid "Friday"
 msgstr "Venres"
@@ -3071,201 +3045,126 @@ msgid "Saturday"
 msgstr "Sábado"
 
 #: activities/calendar/calendar_dataset.js:35
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Select day 23"
 msgctxt "calendar_dataset|"
 msgid "Select the 23rd"
 msgstr "Selecciona o día 23"
 
 #: activities/calendar/calendar_dataset.js:39
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Select day 1"
 msgctxt "calendar_dataset|"
 msgid "Select the 1st"
 msgstr "Selecciona o día 1"
 
 #: activities/calendar/calendar_dataset.js:43
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Select day 16"
 msgctxt "calendar_dataset|"
 msgid "Select the 16th"
 msgstr "Selecciona o día 16"
 
 #: activities/calendar/calendar_dataset.js:47
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Select day 28"
 msgctxt "calendar_dataset|"
 msgid "Select the 28th"
 msgstr "Selecciona o día 28"
 
 #: activities/calendar/calendar_dataset.js:51
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Select day 11"
 msgctxt "calendar_dataset|"
 msgid "Select the 11th"
 msgstr "Selecciona o día 11"
 
 #: activities/calendar/calendar_dataset.js:55
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Select day 20"
 msgctxt "calendar_dataset|"
 msgid "Select the 20th"
 msgstr "Selecciona o día 20"
 
 #: activities/calendar/calendar_dataset.js:75
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "What day of the week is the 12th of given month?"
 msgctxt "calendar_dataset|"
 msgid "Which day of the week is the 4th of the given month?"
-msgstr "Que día da semana é o 12º do mes indicado?"
+msgstr "Que día da semana é o 4 do mes indicado?"
 
 #: activities/calendar/calendar_dataset.js:79
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Which day of the week is the 12th of the given month?"
 msgctxt "calendar_dataset|"
 msgid "Which day of the week is the 12th of the given month?"
-msgstr "Que día da semana é o 12º do mes indicado?"
+msgstr "Que día da semana é o 12 do mes indicado?"
 
 #: activities/calendar/calendar_dataset.js:83
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Which day of the week is the 20th of the given month?"
 msgctxt "calendar_dataset|"
 msgid "Which day of the week is the 20th of the given month?"
-msgstr "Que día da semana é o 20º do mes indicado?"
+msgstr "Que día da semana é o 20 do mes indicado?"
 
 #: activities/calendar/calendar_dataset.js:87
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Which day of the week is the 28th of the given month?"
 msgctxt "calendar_dataset|"
 msgid "Which day of the week is the 28th of the given month?"
-msgstr "Que día da semana é o 28º do mes indicado?"
+msgstr "Que día da semana é o 28 do mes indicado?"
 
 #: activities/calendar/calendar_dataset.js:91
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Which day of the week is the 22nd of the given month?"
 msgctxt "calendar_dataset|"
 msgid "Which day of the week is the 22nd of the given month?"
-msgstr "Que día da semana é o 22º do mes indicado?"
+msgstr "Que día da semana é o 22 do mes indicado?"
 
 #: activities/calendar/calendar_dataset.js:95
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Which day of the week is the 16th of the given month?"
 msgctxt "calendar_dataset|"
 msgid "Which day of the week is the 16th of the given month?"
-msgstr "Que día da semana é o 16º do mes indicado?"
+msgstr "Que día da semana é o 16 do mes indicado?"
 
 #: activities/calendar/calendar_dataset.js:99
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Which day of the week is the 10th of the given month?"
 msgctxt "calendar_dataset|"
 msgid "Which day of the week is the 10th of the given month?"
-msgstr "Que día da semana é o 10º do mes indicado?"
+msgstr "Que día da semana é o 10 do mes indicado?"
 
 #: activities/calendar/calendar_dataset.js:119
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Select a Monday between days 1 and 7 of the given month"
 msgctxt "calendar_dataset|"
 msgid "Select a Monday between days 1 and 7 of the given month"
 msgstr "Selecciona un luns entre os días 1 e 7 do mes indicado"
 
 #: activities/calendar/calendar_dataset.js:123
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Select a Tuesday between days 8 and 16 of the given month"
 msgctxt "calendar_dataset|"
 msgid "Select a Tuesday between days 8 and 16 of the given month"
 msgstr "Selecciona un martes entre os días 8 e 16 do mes indicado"
 
 #: activities/calendar/calendar_dataset.js:127
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Select a Wednesday between days 15 and 22 of the given month"
 msgctxt "calendar_dataset|"
 msgid "Select a Wednesday between days 15 and 22 of the given month"
 msgstr "Selecciona un mércores entre os días 15 e 22 do mes indicado"
 
 #: activities/calendar/calendar_dataset.js:131
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Select a Thursday between days 26 and 31 of the given month"
 msgctxt "calendar_dataset|"
 msgid "Select a Thursday between days 26 and 31 of the given month"
 msgstr "Selecciona un xoves entre os días 26 e 31 do mes indicado"
 
 #: activities/calendar/calendar_dataset.js:135
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Select a Friday between days 20 and 25 of the given month"
 msgctxt "calendar_dataset|"
 msgid "Select a Friday between days 20 and 25 of the given month"
 msgstr "Selecciona un venres entre os días 20 e 25 do mes indicado"
 
 #: activities/calendar/calendar_dataset.js:139
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Select a Saturday between days 13 and 23 of the given month"
 msgctxt "calendar_dataset|"
 msgid "Select a Saturday between days 13 and 23 of the given month"
 msgstr "Selecciona un sábado entre os días 13 e 23 do mes indicado"
 
 #: activities/calendar/calendar_dataset.js:143
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Select a Sunday between days 5 and 17 of the given month"
 msgctxt "calendar_dataset|"
 msgid "Select a Sunday between days 5 and 17 of the given month"
 msgstr "Selecciona un domingo entre os días 5 e 17 do mes indicado"
 
 #: activities/calendar/calendar_dataset.js:162
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Select the second day before the 15th of the given month"
 msgctxt "calendar_dataset|"
 msgid "Select the second day before the 15th of the given month"
 msgstr "Selecciona o segundo día antes do día 15 do mes indicado"
 
 #: activities/calendar/calendar_dataset.js:166
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Select the fourth Sunday of the given month"
 msgctxt "calendar_dataset|"
 msgid "Select the fourth Sunday of the given month"
-msgstr "Seleccione o cuarto domingo do mes indicado"
+msgstr "Selecciona o cuarto domingo do mes indicado"
 
 #: activities/calendar/calendar_dataset.js:170
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Select the day one week after 13th of the given month"
 msgctxt "calendar_dataset|"
 msgid "Select the day one week after 13th of the given month"
 msgstr "Selecciona o día unha semana despois do día 13 do mes indicado"
 
 #: activities/calendar/calendar_dataset.js:174
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Select the fifth Thursday of the given month"
 msgctxt "calendar_dataset|"
 msgid "Select the fifth Thursday of the given month"
 msgstr "Selecciona o quinto xoves do mes indicado"
 
 #: activities/calendar/calendar_dataset.js:178
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Select the third day after 27th of the given month"
 msgctxt "calendar_dataset|"
 msgid "Select the third day after 27th of the given month"
 msgstr "Selecciona o terceiro día despois do 27 do mes indicado"
@@ -3296,73 +3195,46 @@ msgid "Find a month having 30 days"
 msgstr "Atopa un mes que teña 30 días"
 
 #: activities/calendar/calendar_dataset.js:233
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Find the first Monday of January month of year 2019"
 msgctxt "calendar_dataset|"
 msgid "Find the first Monday of January in the year 2019"
 msgstr "Atopa o primeiro luns do mes de xaneiro do ano 2019"
 
 #: activities/calendar/calendar_dataset.js:237
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Find the second Wednesday of February month of year 2019"
 msgctxt "calendar_dataset|"
 msgid "Find the second Wednesday of February in the year 2019"
 msgstr "Atopa o segundo mércores do mes de febreiro do ano 2019"
 
 #: activities/calendar/calendar_dataset.js:241
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Find the third Friday of March month of year 2019"
 msgctxt "calendar_dataset|"
 msgid "Find the third Friday of March in the year 2019"
-msgstr "Atopa o primeiro venres do mes de marzo do ano 2019"
+msgstr "Atopa o terceiro venres do mes de marzo do ano 2019"
 
 #: activities/calendar/calendar_dataset.js:245
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Find the fifth Sunday of April month of year 2018"
 msgctxt "calendar_dataset|"
 msgid "Find the fifth Sunday of April in the year 2018"
 msgstr "Atopa o quinto domingo do mes de abril do ano 2018"
 
 #: activities/calendar/calendar_dataset.js:249
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Find the fourth Tuesday of July month of year 2018"
 msgctxt "calendar_dataset|"
 msgid "Find the fourth Tuesday of July in the year 2018"
 msgstr "Atopa o cuarto martes do mes de xullo do ano 2018"
 
 #: activities/calendar/calendar_dataset.js:253
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Find the first Monday of August month of year 2018"
 msgctxt "calendar_dataset|"
 msgid "Find the first Monday of August in the year 2018"
 msgstr "Atopa o primeiro luns do mes de agosto do ano 2018"
 
 #: activities/calendar/calendar_dataset.js:257
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Find the third Thursday of September month of year 2017"
 msgctxt "calendar_dataset|"
 msgid "Find the third Thursday of September in the year 2017"
-msgstr "Atopa o primeiro xoves do mes de setembro do ano 2017"
+msgstr "Atopa o terceiro xoves do mes de setembro do ano 2017"
 
 #: activities/calendar/calendar_dataset.js:261
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Find the fifth Sunday of October month of year 2017"
 msgctxt "calendar_dataset|"
 msgid "Find the fifth Sunday of October in the year 2017"
 msgstr "Atopa o quinto domingo do mes de outubro do ano 2017"
 
 #: activities/calendar/calendar_dataset.js:265
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Find the second Friday of December month of year 2017"
 msgctxt "calendar_dataset|"
 msgid "Find the second Friday of December in the year 2017"
 msgstr "Atopa o segundo venres do mes de decembro do ano 2017"
@@ -3405,11 +3277,6 @@ msgstr ""
 "<br>Atopa a data do día internacional da muller en 2018."
 
 #: activities/calendar/calendar_dataset.js:300
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid ""
-#| "The sports competition was held on last Friday of September 2017.<br> "
-#| "Select the date of the sports competition on the calendar."
 msgctxt "calendar_dataset|"
 msgid ""
 "The sports competition was held on last Friday of September 2017.<br> Select "
@@ -3438,7 +3305,7 @@ msgstr ""
 #: activities/canal_lock/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Understand how a canal lock works."
-msgstr ""
+msgstr "Entender como funciona as esclusas."
 
 #. Help manual
 #: activities/canal_lock/ActivityInfo.qml:24
@@ -3451,19 +3318,13 @@ msgstr ""
 "para que Tux poida atravesalas nas dúas direccións."
 
 #: activities/canal_lock/CanalLock.qml:57
-#, fuzzy
-#| msgctxt "CanalLock|"
-#| msgid ""
-#| "Your goal is to get Tux across the canal lock to get the wooden logs, "
-#| "using the different types of water locks available."
 msgctxt "CanalLock|"
 msgid ""
 "Your goal is to lead Tux across the canal lock to get the wooden logs, using "
 "the different types of water locks available."
 msgstr ""
 "O teu obxectivo é levar a Tux ao outro lado da esclusa da canle para coller "
-"os troncos de madeira, usando os distintos tipos de esclusas de auga "
-"dispoñíbeis."
+"os troncos de madeira, usando os distintos tipos de esclusas dispoñíbeis."
 
 #: activities/canal_lock/CanalLock.qml:59
 msgctxt "CanalLock|"
@@ -3485,25 +3346,16 @@ msgstr ""
 "está conectada. Use esta propiedade para axudar a Tux a completar o traballo."
 
 #: activities/categorization/ActivityConfig.qml:38
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Put together all the items from a category (with score)"
 msgctxt "ActivityConfig|"
 msgid "Put together all the items from a category (with score)"
-msgstr "Xuntar todos os elementos dunha categoría (con puntuación)"
+msgstr "Xunta todos os elementos dunha categoría (con puntuación)"
 
 #: activities/categorization/ActivityConfig.qml:50
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Put together all the items from a category (without score)"
 msgctxt "ActivityConfig|"
 msgid "Put together all the items from a category (without score)"
-msgstr "Xuntar todos os elementos dunha categoría (sen puntuación)"
+msgstr "Xunta todos os elementos dunha categoría (sen puntuación)"
 
 #: activities/categorization/ActivityConfig.qml:62
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Discover a category, grouping items together"
 msgctxt "ActivityConfig|"
 msgid "Discover a category, grouping items together"
 msgstr "Descubre unha categoría agrupando elementos"
@@ -3516,12 +3368,9 @@ msgstr "Agrupar"
 
 #. Help title
 #: activities/categorization/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Categorize the items into correct and incorrect groups."
 msgctxt "ActivityInfo|"
 msgid "Categorize the items into correct and incorrect groups."
-msgstr "Agrupa os elementos correctos e incorrectos."
+msgstr "Agrupa os elementos correctos e incorrectos en cadanseu grupo."
 
 #. Help goal
 #: activities/categorization/ActivityInfo.qml:20
@@ -3531,19 +3380,12 @@ msgstr "Practica o pensamento conceptual e adquire novos coñecementos."
 
 #. Help prerequisite
 #: activities/categorization/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Can drag elements using mouse"
 msgctxt "ActivityInfo|"
 msgid "Can drag items using a mouse or touchscreen."
-msgstr "Podes arrastrar elementos co rato"
+msgstr "Podes arrastrar elementos co rato ou cunha pantalla táctil."
 
 #. Help manual
 #: activities/categorization/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Review the instructions and then drag and drop the items as specified."
 msgctxt "ActivityInfo|"
 msgid "Review the instructions and then drag and drop the items as specified."
 msgstr ""
@@ -3551,12 +3393,6 @@ msgstr ""
 "indica."
 
 #: activities/categorization/Categorization.qml:156
-#, fuzzy
-#| msgctxt "Categorization|"
-#| msgid ""
-#| "You don't have all the images for this activity. Press Update to get the "
-#| "complete dataset. Press the Cross to play with demo version or 'Never "
-#| "show this dialog later' if you want to never see again this dialog."
 msgctxt "Categorization|"
 msgid ""
 "You don't have all the images for this activity. Click on 'Update the image "
@@ -3564,9 +3400,8 @@ msgid ""
 "show this dialog again' to play with the demo version."
 msgstr ""
 "Non tes todas as imaxes para esta actividade. Selecciona «Actualizar» para "
-"obter o conxunto de datos completo. Preme a cruz para xogar coa versión de "
-"demostración ou «Non volver mostrar este diálogo» se non quere volver ver "
-"este diálogo."
+"obter o conxunto de datos completo. Preme a cruz ou en «Non volver mostrar "
+"este diálogo» para xogar coa versión de proba."
 
 #: activities/categorization/Categorization.qml:159
 msgctxt "Categorization|"
@@ -3574,9 +3409,6 @@ msgid "Update the image set"
 msgstr "Actualizar o grupo de imaxes"
 
 #: activities/categorization/Categorization.qml:160
-#, fuzzy
-#| msgctxt "Categorization|"
-#| msgid "Never show this dialog later"
 msgctxt "Categorization|"
 msgid "Never show this dialog again"
 msgstr "Non volver mostrar este diálogo"
@@ -3592,17 +3424,17 @@ msgstr ""
 #: activities/categorization/resource/1/Data.qml:13
 msgctxt "Data|"
 msgid "Very familiar categories."
-msgstr ""
+msgstr "Categorías moi coñecidas."
 
 #: activities/categorization/resource/2/Data.qml:13
 msgctxt "Data|"
 msgid "Less familiar categories."
-msgstr ""
+msgstr "Categorías menos coñecidas."
 
 #: activities/categorization/resource/3/Data.qml:13
 msgctxt "Data|"
 msgid "Unfamiliar categories."
-msgstr ""
+msgstr "Categorías descoñecidas."
 
 #: activities/categorization/resource/board/category_alphabets.qml:18
 msgctxt "category_alphabets|"
@@ -4141,12 +3973,9 @@ msgstr "Coloca os VEXETAIS na dereita e o resto de obxectos na esquerda"
 
 #. Activity title
 #: activities/checkers/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Play chess against Tux"
 msgctxt "ActivityInfo|"
 msgid "Play checkers (against Tux)"
-msgstr "Xogar ao xadrez contra Tux"
+msgstr "Xogar ás damas contra Tux."
 
 #. Help title
 #: activities/checkers/ActivityInfo.qml:17
@@ -4168,27 +3997,6 @@ msgstr ""
 
 #. Help manual
 #: activities/checkers/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Checkers is played by two opponents, on opposite sides of the gameboard. "
-#| "One player has the dark pieces; the other has the light pieces. Players "
-#| "alternate turns. A player may not move an opponent's piece. A move "
-#| "consists of moving a piece diagonally to an adjacent unoccupied square. "
-#| "If the adjacent square contains an opponent's piece, and the square "
-#| "immediately beyond it is vacant, the piece may be captured (and removed "
-#| "from the game) by jumping over it.\n"
-#| "Only the dark squares of the checkered board are used. A piece may move "
-#| "only diagonally into an unoccupied square. Capturing is mandatory. The "
-#| "player without pieces remaining, or who cannot move due to being blocked, "
-#| "loses the game.\n"
-#| "When a man reaches the crownhead or kings row (the farthest row forward), "
-#| "it becomes a king, and is marked by placing an additional piece on top of "
-#| "the first man, and acquires additional powers including the ability to "
-#| "move backwards. If there is a piece in a diagonal that a king can "
-#| "capture, he can move any distance along the diagonal, and may capture an "
-#| "opposing man any distance away by jumping to any of the unoccupied "
-#| "squares immediately beyond it.\n"
 msgctxt "ActivityInfo|"
 msgid ""
 "Checkers is played by two opponents, on opposite sides of the gameboard. One "
@@ -4226,7 +4034,7 @@ msgstr ""
 "moverse cara atrás. Se hai unha peza nunha diagonal que a raíña pode "
 "capturar, a raíña pode moverse calquera distancia ao longo da diagonal, e "
 "pode capturar calquera peza a calquera distancia saltando a calquera cadrado "
-"non ocupado ao outro lado da peza.\n"
+"non ocupado ao outro lado da peza."
 
 #: activities/checkers/ActivityInfo.qml:29
 #: activities/checkers_2players/ActivityInfo.qml:28
@@ -4262,9 +4070,6 @@ msgstr "Gañan as negras"
 
 #. Activity title
 #: activities/checkers_2players/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Play checkers with your friend"
 msgctxt "ActivityInfo|"
 msgid "Play checkers (with a friend)"
 msgstr "Xoga ás damas cunha amiga ou amigo"
@@ -4312,35 +4117,12 @@ msgstr ""
 
 #. Activity title
 #: activities/chess/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Play chess against Tux"
 msgctxt "ActivityInfo|"
 msgid "Play chess (against Tux)"
 msgstr "Xogar ao xadrez contra Tux"
 
 #. Help manual Much of this string is shared across the three activities "chess", "chess_partyend", and "chess_2players".
 #: activities/chess/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "In this activity you discover the chess game by playing against the "
-#| "computer. It displays the possible target position for any selected piece "
-#| "which helps the children understand how pieces moves. At first level the "
-#| "computer is fully random to give the most chances to the children. As "
-#| "level increases, better the computer plays.\n"
-#| "\n"
-#| "You can achieve a mate sooner if follow these simple rules:\n"
-#| "    Trying to drive opponent's King in the corner.\n"
-#| "<b>Explanation</b>: this way opponent's piece would have only 3 "
-#| "directions to move instead of 8 from a best position.\n"
-#| "    'Making a trap'. Use your pawns as baits.\n"
-#| "<b>Explanation</b>: this way you can lure the opponent out of his "
-#| "'comfort zone'.\n"
-#| "    Be patient enough.\n"
-#| "<b>Explanation</b>: don't rush too quick, be patient. Let yourself think "
-#| "a little bit and try to predict your opponent's future moves, so you can "
-#| "catch him on it or secure your pieces from his attacks."
 msgctxt "ActivityInfo|"
 msgid ""
 "In this activity you discover the chess game by playing against the "
@@ -4373,7 +4155,7 @@ msgstr ""
 "    Intenta obrigar ao rei do opoñente a moverse a unha esquina.\n"
 "<b>Explicación</b>: así o rei só poderá moverse en 3 direccións, en vez das "
 "8 ás que podería moverse nunha posición mellor.\n"
-"    “Poñer unha trampa”. Usa os peóns como cebo.\n"
+"    «Poñer unha trampa» Usa os peóns como cebo.\n"
 "<b>Explicación</b>: así podes conseguir que o opoñente saia da súa “zona de "
 "confort”.\n"
 "    Ten paciencia.\n"
@@ -4390,6 +4172,9 @@ msgid ""
 "will redo one move. To undo all the moves, press and hold the undo button "
 "for 3 seconds."
 msgstr ""
+"Premer unha vez no botón de Desfacer retrocederá un movemento. Premer unha "
+"vez no botón de Refacer avanzará un movemento. Para desfacer todos os "
+"movementos mantén pulsado o botón de Desfacer durante 3 segundos."
 
 #: activities/chess/ActivityInfo.qml:33
 #: activities/chess_partyend/ActivityInfo.qml:33
@@ -4441,12 +4226,9 @@ msgstr "Incorrecto, o rei podería estar en xaque"
 
 #. Translators: undo all the moves in chess activity
 #: activities/chess/Chess.qml:123
-#, fuzzy
-#| msgctxt "core|"
-#| msgid "Do you really want to quit GCompris?"
 msgctxt "Chess|"
 msgid "Do you really want to undo all the moves?"
-msgstr "Seguro que quere saír de GCompris?"
+msgstr "Seguro que queres desfacer todos os movementos?"
 
 #: activities/chess/Chess.qml:124
 msgctxt "Chess|"
@@ -4460,33 +4242,12 @@ msgstr "Non"
 
 #. Activity title
 #: activities/chess_2players/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Bargame (with a friend)"
 msgctxt "ActivityInfo|"
 msgid "Play chess (with a friend)"
-msgstr "Xogo de mesa (cunha amiga ou amigo)"
+msgstr "Xogar ao xadrez (cunha amiga ou amigo)"
 
 #. Help manual Much of this string is shared across the three activities "chess", "chess_partyend", and "chess_2players".
 #: activities/chess_2players/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "In this activity you discover the chess game by playing against a friend. "
-#| "It displays the possible target position for any selected piece which "
-#| "helps the children understand how pieces moves.\n"
-#| "\n"
-#| "You can achieve a mate sooner if follow these simple rules:\n"
-#| "    Trying to drive opponent's King in the corner.\n"
-#| "<b>Explanation</b>: this way opponent's piece would have only 3 "
-#| "directions to move instead of 8 from a best position.\n"
-#| "    'Making a trap'. Use your pawns as baits.\n"
-#| "<b>Explanation</b>: this way you can lure the opponent out of his "
-#| "'comfort zone'.\n"
-#| "    Be patient enough.\n"
-#| "<b>Explanation</b>: don't rush too quick, be patient. Let yourself think "
-#| "a little bit and try to predict your opponent's future moves, so you can "
-#| "catch him on it or secure your pieces from his attacks."
 msgctxt "ActivityInfo|"
 msgid ""
 "In this activity you discover the chess game by playing against a friend. It "
@@ -4513,7 +4274,7 @@ msgstr ""
 "    Intenta obrigar ao rei do opoñente a moverse a unha esquina.\n"
 "<b>Explicación</b>: así o rei só poderá moverse en 3 direccións, en vez das "
 "8 ás que podería moverse nunha posición mellor.\n"
-"    “Poñer unha trampa”. Usa os peóns como cebo.\n"
+"    «Poñer unha trampa». Usa os peóns como cebo.\n"
 "<b>Explicación</b>: así podes conseguir que o opoñente saia da súa “zona de "
 "confort”.\n"
 "    Ten paciencia.\n"
@@ -4535,24 +4296,6 @@ msgstr "Xogar o final dunha partida de xadrez contra Tux."
 
 #. Help manual Much of this string is shared across the three activities "chess", "chess_partyend", and "chess_2players".
 #: activities/chess_partyend/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "In this activity you discover the chess game by playing only the end of a "
-#| "game. It displays the possible target position for any selected piece "
-#| "which helps the children understand how pieces moves.\n"
-#| "\n"
-#| "You can achieve a mate sooner if follow these simple rules:\n"
-#| "    Trying to drive opponent's King in the corner.\n"
-#| "<b>Explanation</b>: this way opponent's piece would have only 3 "
-#| "directions to move instead of 8 from a best position.\n"
-#| "    'Making a trap'. Use your pawns as baits.\n"
-#| "<b>Explanation</b>: this way you can lure the opponent out of his "
-#| "'comfort zone'.\n"
-#| "    Be patient enough.\n"
-#| "<b>Explanation</b>: don't rush too quick, be patient. Let yourself think "
-#| "a little bit and try to predict your opponent's future moves, so you can "
-#| "catch him on it or secure your pieces from his attacks."
 msgctxt "ActivityInfo|"
 msgid ""
 "In this activity you discover the chess game by playing only the end of a "
@@ -4579,7 +4322,7 @@ msgstr ""
 "    Intenta obrigar ao rei do opoñente a moverse a unha esquina.\n"
 "<b>Explicación</b>: así o rei só poderá moverse en 3 direccións, en vez das "
 "8 ás que podería moverse nunha posición mellor.\n"
-"    “Poñer unha trampa”. Usa os peóns como cebo.\n"
+"    «Poñer unha trampa». Usa os peóns como cebo.\n"
 "<b>Explicación</b>: así podes conseguir que o opoñente saia da súa “zona de "
 "confort”.\n"
 "    Ten paciencia.\n"
@@ -4614,18 +4357,16 @@ msgstr "Narra unha historia curta."
 
 #. Help manual
 #: activities/chronos/ActivityInfo.qml:28
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Pick from the pictures on the left and put them on the red dots"
 msgctxt "ActivityInfo|"
 msgid ""
 "Pick the pictures on the side and put them on the dots in the right order."
-msgstr "Escolle imaxes da esquerda e colócaas nos puntos vermellos."
+msgstr ""
+"Escolle imaxes da esquerda e colócaas nos puntos vermellos na orde axeitada."
 
 #: activities/chronos/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Then, click on the OK button to validate your answer."
-msgstr ""
+msgstr "Cando remates pulsa o botón de Aceptar."
 
 #: activities/chronos/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
@@ -4644,12 +4385,12 @@ msgstr ""
 #: activities/chronos/resource/1/Data.qml:13
 msgctxt "Data|"
 msgid "For children who can read numbers."
-msgstr ""
+msgstr "Para os nenos que saiban ler números."
 
 #: activities/chronos/resource/2/Data.qml:13
 msgctxt "Data|"
 msgid "For children who can read words."
-msgstr ""
+msgstr "Para os nenos que saiban ler palabras."
 
 #: activities/chronos/resource/board/board1_0.qml:14
 msgctxt "board1_0|"
@@ -4752,12 +4493,9 @@ msgid "4"
 msgstr "4"
 
 #: activities/chronos/resource/board/board5_0.qml:15
-#, fuzzy
-#| msgctxt "board5_0|"
-#| msgid "Place each image in the order and on the date it was invented."
 msgctxt "board5_0|"
 msgid "Place each object on the date it was invented."
-msgstr "Coloca cada imaxe na orde e na data na que se inventou."
+msgstr "Coloca cada obxecto na data na que se inventou."
 
 #: activities/chronos/resource/board/board5_0.qml:32
 msgctxt "board5_0|"
@@ -4957,12 +4695,9 @@ msgstr "Preme nunha letra en minúscula"
 #. Help title
 #: activities/click_on_letter/ActivityInfo.qml:17
 #: activities/click_on_letter_up/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Listen to a letter and click on the right one"
 msgctxt "ActivityInfo|"
 msgid "Listen to a letter and click on it."
-msgstr "Escoita unha letra e preme a correcta"
+msgstr "Escoita unha letra e preme a correcta."
 
 #. Help goal
 #: activities/click_on_letter/ActivityInfo.qml:20
@@ -4995,14 +4730,14 @@ msgstr ""
 #: activities/letter-in-word/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Space: select an item"
-msgstr ""
+msgstr "Espacio: selecciona un elemento"
 
 #: activities/click_on_letter/ActivityInfo.qml:28
 #: activities/click_on_letter_up/ActivityInfo.qml:28
 #: activities/colors/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Tab: repeat the question"
-msgstr ""
+msgstr "Tabulador: repite a pregunta"
 
 #. Activity title
 #: activities/click_on_letter_up/ActivityInfo.qml:15
@@ -5098,15 +4833,10 @@ msgstr "Podes mover o rato e premer o lugar correcto."
 
 #. Help manual
 #: activities/clickgame/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Catch all the moving fish by simple clicking or touching them with your "
-#| "finger."
 msgctxt "ActivityInfo|"
 msgid ""
 "Catch all the moving fish by clicking or touching them with your finger."
-msgstr "Preme ou toca do dedo os peixes para collelos todos."
+msgstr "Preme ou toca co dedo os peixes para collelos todos."
 
 #: activities/clockgame/ActivityConfig.qml:23
 msgctxt "ActivityConfig|"
@@ -5119,9 +4849,6 @@ msgid "24 hours"
 msgstr "24 horas"
 
 #: activities/clockgame/ActivityConfig.qml:33
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Select your locale"
 msgctxt "ActivityConfig|"
 msgid "Select a clock system"
 msgstr "Selecciona a túa configuración rexional"
@@ -5140,11 +4867,6 @@ msgstr "Aprende a dicir a hora nun reloxo analóxico."
 
 #. Help goal
 #: activities/clockgame/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Distinguish between time-units (hour, minute and second). Set and display "
-#| "time on an analog clock."
 msgctxt "ActivityInfo|"
 msgid ""
 "Learn units of time (hours, minutes and seconds). Set the time on an analog "
@@ -5166,6 +4888,8 @@ msgid ""
 "Set the clock to the given time. Drag the different hands to control their "
 "respective unit."
 msgstr ""
+"Pon o reloxo na hora indicada. Pincha e arrastra as agullas para cambiar "
+"cadansúa unidade."
 
 #: activities/clockgame/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
@@ -5173,6 +4897,8 @@ msgid ""
 "The shortest hand indicates the hours, a longer hand indicates the minutes, "
 "and the longest hand indicates the seconds."
 msgstr ""
+"A agulla pequena indica as horas, a mediana os minutos e a grande os "
+"segundos."
 
 #: activities/clockgame/Clockgame.qml:106
 msgctxt "Clockgame|"
@@ -5204,52 +4930,40 @@ msgstr[0] "%n segundo"
 msgstr[1] "%n segundos"
 
 #: activities/clockgame/resource/1/Data.qml:13
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "12 hours"
 msgctxt "Data|"
 msgid "Full hours."
-msgstr "12 horas"
+msgstr "Horas completas."
 
 #: activities/clockgame/resource/2/Data.qml:13
-#, fuzzy
-#| msgctxt "OptionsRow|"
-#| msgid "Half rest"
 msgctxt "Data|"
 msgid "Half hours."
-msgstr "Silencio de branca"
+msgstr "Medias horas."
 
 #: activities/clockgame/resource/3/Data.qml:13
-#, fuzzy
-#| msgctxt "OptionsRow|"
-#| msgid "Quarter note"
 msgctxt "Data|"
 msgid "Quarters of an hour."
-msgstr "Corchea"
+msgstr "Cuartos de hora."
 
 #: activities/clockgame/resource/4/Data.qml:13
 msgctxt "Data|"
 msgid "Time containing minutes."
-msgstr ""
+msgstr "Tempo con minutos."
 
 #: activities/clockgame/resource/5/Data.qml:13
 msgctxt "Data|"
 msgid "Time containing minutes and seconds."
-msgstr ""
+msgstr "Tempo con minutos e segundos."
 
 #: activities/clockgame/resource/6/Data.qml:13
 msgctxt "Data|"
 msgid "No hints."
-msgstr ""
+msgstr "Sen pistas."
 
 #. Activity title
 #: activities/color_mix/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Mixing colors of light"
 msgctxt "ActivityInfo|"
 msgid "Mixing paint colors"
-msgstr "Mesturando as cores da luz"
+msgstr "Mesturando as cores de pintura"
 
 #. Help title
 #: activities/color_mix/ActivityInfo.qml:17
@@ -5271,22 +4985,10 @@ msgid ""
 "This activity teaches how mixing primary paint colors works (subtractive "
 "mixing)."
 msgstr ""
+"Esta actividade ensina que ocorre ao mesturar as cores primarias en pintura "
+"(mestura subtractiva)."
 
 #: activities/color_mix/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "\n"
-#| "The activity deals with mixing primary colors of paint (subtractive "
-#| "mixing).\n"
-#| "\n"
-#| "In case of paints the inks absorb different colors of light falling on "
-#| "it, subtracting it from what you see. The more ink you add, the more "
-#| "light is absorbed, and the darker the combined color gets. We can mix "
-#| "just three primary colors to make many new colors. The primary colors for "
-#| "paint/ink are cyan (a special shade of blue), magenta (a special shade of "
-#| "pink), and yellow.\n"
-#| "        "
 msgctxt "ActivityInfo|"
 msgid ""
 "Paints and inks absorb different colors of the light falling on it, "
@@ -5296,17 +4998,11 @@ msgid ""
 "cyan (a special shade of blue), magenta (a special shade of pink), and "
 "yellow."
 msgstr ""
-"\n"
-"A actividade consiste en mesturar cores primarias de pintura (mestura de "
-"subtraer).\n"
-"\n"
-"No caso de pinturas, a tinta absorbe cores de luz distintas que a iluminan, "
-"subtraéndoas do que ves. Canta máis tinta engade, máis luz se absorbe, e "
-"máis escura se volve a cor combinada. Con só tres cores primarias podemos "
-"conseguir obter moitas cores novas. As cores primarias da pintura ou tinta "
-"son ciano (un ton especial de azul), maxenta (un ton especial de rosa) e "
-"amarelo.\n"
-"        "
+"As pinturas e tintas absorben diferentes cores da luz, restando da luz "
+"visíbel. Canta máis tinta engadas máis luz se absorbe, e máis escura é a cor "
+"resultante. Xuntando só as tres cores primarias podemos crear moitas máis "
+"cores novas. No caso da tinta as cores primarias son o ciano (unha especie "
+"de azul), maxenta (unha especie de rosa) e amarelo."
 
 #: activities/color_mix/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
@@ -5314,6 +5010,8 @@ msgid ""
 "Change the color by moving the sliders on the tubes of paint or by clicking "
 "on the + and - buttons. Then click on the OK button to validate your answer."
 msgstr ""
+"Move os indicadores nos tubos de pintura para cambiar a cor, ou preme nos "
+"botóns + e -. Cando remates pulsa en Aceptar."
 
 #: activities/color_mix/ColorMix.qml:88
 msgctxt "ColorMix|"
@@ -5382,12 +5080,9 @@ msgstr "Demasiado cián"
 
 #. Activity title
 #: activities/color_mix_light/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Mixing colors of light"
 msgctxt "ActivityInfo|"
 msgid "Mixing light colors"
-msgstr "Mesturando as cores da luz"
+msgstr "Mesturar as cores da luz"
 
 #. Help title
 #: activities/color_mix_light/ActivityInfo.qml:17
@@ -5402,31 +5097,19 @@ msgid ""
 "This activity teaches how mixing primary light colors works (additive "
 "mixing)."
 msgstr ""
+"Esta actividade ensina que ocorre ao mesturar as cores primarias da luz "
+"(mestura aditiva)."
 
 #: activities/color_mix_light/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "\n"
-#| "The activity deals with mixing primary colors of light (additive "
-#| "mixing).\n"
-#| "\n"
-#| "In case of light it is just the opposite of mixing color with paints! The "
-#| "more light you add the lighter the resultant color will get. Primary "
-#| "colors of light are red, green and blue."
 msgctxt "ActivityInfo|"
 msgid ""
 "Mixing light colors is just the opposite of mixing paint colors. The more "
 "light you add, the lighter the resulting color becomes. Primary colors of "
 "light are red, green and blue."
 msgstr ""
-"\n"
-"A actividade consiste en mesturar cores primarias de luz (mestura de "
-"aditiva).\n"
-"\n"
-"Respecto da luz, isto é o oposto de mesturar cores con pintura! Canto máis "
-"luz engades, máis clara é a cor resultante. As cores primarias de luz son o "
-"vermello, o verde e o azul.        "
+"Mesturar cores de luz é o contrario de mesturar cores de pintura. Canta máis "
+"luz engadas máis clara é a cor resultante. As cores primarias da luz son o "
+"vermello, o verde e o azul."
 
 #: activities/color_mix_light/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
@@ -5434,6 +5117,8 @@ msgid ""
 "Change the color by moving the sliders on the torches or by clicking on the "
 "+ and - buttons. Then click on the OK button to validate your answer."
 msgstr ""
+"Move os indicadores dos fachos para cambiar a cor, ou preme nos botóns + e "
+"-. Cando remates pulsa en Aceptar."
 
 #. Activity title
 #: activities/colors/ActivityInfo.qml:15
@@ -5449,12 +5134,9 @@ msgstr "Preme a cor correcta."
 
 #. Help goal
 #: activities/colors/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "NumbersOddEven|"
-#| msgid "This activity teaches about even and odd numbers."
 msgctxt "ActivityInfo|"
 msgid "This activity teaches you to recognize different colors."
-msgstr "A actividade ensina os números pares e impares."
+msgstr "Esta actividade ensina a recoñecer as distintas cores."
 
 #. Help prerequisite
 #: activities/colors/ActivityInfo.qml:22
@@ -5464,17 +5146,14 @@ msgstr "Identificar cores."
 
 #. Help manual
 #: activities/colors/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Listen to the color and touch the matching duck."
 msgctxt "ActivityInfo|"
 msgid "Listen to the color and click on the matching duck."
-msgstr "Escoita a cor e preme o parrulo correspondente."
+msgstr "Escoita a cor e preme no parrulo correspondente."
 
 #: activities/colors/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Space or Enter: select an answer"
-msgstr ""
+msgstr "Espacio ou Intro: escolle unha resposta"
 
 #: activities/colors/colors.js:13 activities/colors/colors.js:45
 #: activities/colors/colors.js:87
@@ -5539,6 +5218,8 @@ msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
 "voices or effects are disabled in the main configuration."
 msgstr ""
+"Esta actividade precisa de son, polo que as voces soarán inda que "
+"desactivaras os efectos de son e as voces na configuración principal."
 
 #: activities/colors/FindIt.qml:236
 msgctxt "FindIt|"
@@ -5546,36 +5227,27 @@ msgid "Quit"
 msgstr "Saír"
 
 #: activities/colors/FindIt.qml:237
-#, fuzzy
-#| msgctxt "board1_0|"
-#| msgid "Continents"
 msgctxt "FindIt|"
 msgid "Continue"
-msgstr "Continentes"
+msgstr "Continuar"
 
 #. Activity title
 #: activities/comparator/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Roman numbers"
 msgctxt "ActivityInfo|"
 msgid "Compare numbers"
-msgstr "Números romanos"
+msgstr "Comparar números"
 
 #. Help title
 #: activities/comparator/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Compare the numbers and choose the corresponding sign."
-msgstr ""
+msgstr "Compara os números e escolle o signo axeitado."
 
 #. Help goal
 #: activities/comparator/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn about prime numbers."
 msgctxt "ActivityInfo|"
 msgid "Learn how to compare number values."
-msgstr "Aprende sobre os números primos."
+msgstr "Aprende a comparar valores numéricos."
 
 #. Help manual
 #: activities/comparator/ActivityInfo.qml:26
@@ -5585,6 +5257,9 @@ msgid ""
 "symbol for this pair. When each line contains a symbol, select the OK button "
 "to validate the answers."
 msgstr ""
+"Escolle un par de números da lista. Despois escolle o símbolo de comparación "
+"axeitado para eses dous valores. Cando remates con todas as liñas preme o "
+"botón «Aceptar»."
 
 #: activities/comparator/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
@@ -5592,110 +5267,84 @@ msgid ""
 "If some answers are incorrect, a cross icon will appear on the corresponding "
 "lines. Correct the errors, then select the OK button again."
 msgstr ""
+"Aparecerá unha cruz nas liñas con fallos. Corrixe os erros e volve a premer "
+"en «Aceptar»."
 
 #: activities/comparator/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid "Up and Down arrows: select a pair of numbers in the list"
-msgstr ""
+msgstr "Frechas arriba e abaixo: Escolle un par de números da lsita"
 
 #: activities/comparator/ActivityInfo.qml:30
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "1. <i><u>To navigate through instructions in the current code area having "
-#| "keyboard focus</i></u>:"
 msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: select a symbol button"
-msgstr ""
-"1. <i><u>Para navegar polas instrucións da zona de código actual que ten o "
-"foco do teclado</i></u>:"
+msgstr "Frechas dereita e esquerda: escolle un símbolo"
 
 #: activities/comparator/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
 msgid "Space: if a symbol button is selected, enter this symbol"
-msgstr ""
+msgstr "Espacio: introduce o símbolo seleccionado"
 
 #: activities/comparator/ActivityInfo.qml:32
 msgctxt "ActivityInfo|"
 msgid "Return: validate the answers"
-msgstr ""
+msgstr "Intro: valida as respostas"
 
 #: activities/comparator/ActivityInfo.qml:33
 msgctxt "ActivityInfo|"
 msgid "&lt;, &gt; or =: enter the corresponding symbol"
-msgstr ""
+msgstr "Teclas &lt;, &gt; ou =: introduce cadanseu símbolo"
 
 #: activities/comparator/resource/1/Data.qml:36
 #: activities/tens_complement_find/resource/3/Data.qml:9
-#, fuzzy
-#| msgctxt "guessnumber|"
-#| msgid "Number too low"
 msgctxt "Data|"
 msgid "Numbers from 1 to 9."
-msgstr "O número é demasiado pequeno"
+msgstr "Números do 1 ao 9."
 
 #: activities/comparator/resource/10/Data.qml:14
 msgctxt "Data|"
 msgid "3 decimal places between 0 and 999.999."
-msgstr ""
+msgstr "3 decimais entre 0 e 999,999."
 
 #: activities/comparator/resource/2/Data.qml:14
-#, fuzzy
-#| msgctxt "guessnumber|"
-#| msgid "Number too low"
 msgctxt "Data|"
 msgid "Numbers from 1 to 19."
-msgstr "O número é demasiado pequeno"
+msgstr "Números do 1 ao 19."
 
 #: activities/comparator/resource/3/Data.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Numbers from 1 to 1000 for the last level."
 msgctxt "Data|"
 msgid "Numbers from 1 to 100."
-msgstr "Números do 1 ao 1000 para o último nivel."
+msgstr "Números do 1 ao 100."
 
 #: activities/comparator/resource/4/Data.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Numbers from 1 to 1000 for the last level."
 msgctxt "Data|"
 msgid "Numbers from 1 to 1000."
-msgstr "Números do 1 ao 1000 para o último nivel."
+msgstr "Números do 1 ao 1000."
 
 #: activities/comparator/resource/5/Data.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Numbers from 1 to 1000 for the last level."
 msgctxt "Data|"
 msgid "Numbers from 1 to 1000000."
-msgstr "Números do 1 ao 1000 para o último nivel."
+msgstr "Números do 1 ao 1000000."
 
 #: activities/comparator/resource/6/Data.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Numbers from 1 to 1000 for the last level."
 msgctxt "Data|"
 msgid "Numbers from 1 to 1 billion."
-msgstr "Números do 1 ao 1000 para o último nivel."
+msgstr "Números do 1 ate o mil millón."
 
 #: activities/comparator/resource/7/Data.qml:14
 msgctxt "Data|"
 msgid "1 decimal place between 0 and 9.9, same integer part."
-msgstr ""
+msgstr "1 decimal, entre 0 e 9,9 coa mesma parte enteira."
 
 #: activities/comparator/resource/8/Data.qml:14
-#, fuzzy
-#| msgctxt "guessnumber|"
-#| msgid "Guess a number between 1 and %1"
 msgctxt "Data|"
 msgid "1 decimal place between 0 and 9.9."
-msgstr "Adiviña un número entre 1 e %1"
+msgstr "1 decimal, entre 0 e 9,9."
 
 #: activities/comparator/resource/9/Data.qml:14
 msgctxt "Data|"
 msgid "2 decimal places between 0 and 99.99."
-msgstr ""
+msgstr "2 decimais entre 0 e 99,99."
 
 #. Activity title
 #: activities/crane/ActivityInfo.qml:20
@@ -5711,12 +5360,9 @@ msgstr "Copia o modelo conducindo o guindastre."
 
 #. Help goal
 #: activities/crane/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Fine motor coordination"
 msgctxt "ActivityInfo|"
 msgid "Practice motor-coordination."
-msgstr "Coordinación motriz fina"
+msgstr "Practicar a coordinación motriz."
 
 #. Help prerequisite
 #: activities/crane/ActivityInfo.qml:27
@@ -28297,13 +27943,14 @@ msgid "Type the complete word as it falls, before it reaches the ground."
 msgstr "Escribe a palabra completa mentres cae e antes de que chegue ao chan"
 
 #: core/ChangeLog.qml:30
+#, fuzzy
+#| msgctxt "ChangeLog|"
+#| msgid "Translations added for Scottish Gaelic."
 msgctxt "ChangeLog|"
-msgid ""
-"New command-line option (--difficulty {value|min-max}) to start GCompris at "
-"specific difficulty"
-msgstr ""
+msgid "Translations added for Arabic and Esperanto"
+msgstr "Engadíronse traducións para o gaélico escocés."
 
-#: core/ChangeLog.qml:31
+#: core/ChangeLog.qml:31 core/ChangeLog.qml:38
 #, fuzzy
 #| msgctxt "ChangeLog|"
 #| msgid "Translations added for Scottish Gaelic."
@@ -28311,8 +27958,9 @@ msgctxt "ChangeLog|"
 msgid "Many translation updates"
 msgstr "Engadíronse traducións para o gaélico escocés."
 
-#: core/ChangeLog.qml:32 core/ChangeLog.qml:45 core/ChangeLog.qml:63
-#: core/ChangeLog.qml:78 core/ChangeLog.qml:83 core/ChangeLog.qml:89
+#: core/ChangeLog.qml:32 core/ChangeLog.qml:39 core/ChangeLog.qml:52
+#: core/ChangeLog.qml:70 core/ChangeLog.qml:85 core/ChangeLog.qml:90
+#: core/ChangeLog.qml:96
 #, fuzzy
 #| msgctxt "ActivityInfo|"
 #| msgid "Memory Game with images"
@@ -28320,8 +27968,8 @@ msgctxt "ChangeLog|"
 msgid "Many new images"
 msgstr "Xogo de memoria con imaxes"
 
-#: core/ChangeLog.qml:33 core/ChangeLog.qml:46 core/ChangeLog.qml:84
-#: core/ChangeLog.qml:90
+#: core/ChangeLog.qml:33 core/ChangeLog.qml:40 core/ChangeLog.qml:53
+#: core/ChangeLog.qml:91 core/ChangeLog.qml:97
 #, fuzzy
 #| msgctxt "ChangeLog|"
 #| msgid "Many little fixes."
@@ -28331,28 +27979,35 @@ msgstr "Moitas correccións pequenas."
 
 #: core/ChangeLog.qml:37
 msgctxt "ChangeLog|"
+msgid ""
+"New command-line option (--difficulty {value|min-max}) to start GCompris at "
+"specific difficulty"
+msgstr ""
+
+#: core/ChangeLog.qml:44
+msgctxt "ChangeLog|"
 msgid "Fix issue in comparator activity"
 msgstr ""
 
-#: core/ChangeLog.qml:41
+#: core/ChangeLog.qml:48
 msgctxt "ChangeLog|"
 msgid "Map of Spain added for geography activity"
 msgstr ""
 
-#: core/ChangeLog.qml:42
+#: core/ChangeLog.qml:49
 msgctxt "ChangeLog|"
 msgid "Voices added for Ukrainian"
 msgstr ""
 
-#: core/ChangeLog.qml:43
+#: core/ChangeLog.qml:50
 msgctxt "ChangeLog|"
 msgid ""
 "New command-line option to list all the activities and start on a specific "
 "one"
 msgstr ""
 
-#: core/ChangeLog.qml:44 core/ChangeLog.qml:79 core/ChangeLog.qml:82
-#: core/ChangeLog.qml:88
+#: core/ChangeLog.qml:51 core/ChangeLog.qml:86 core/ChangeLog.qml:89
+#: core/ChangeLog.qml:95
 #, fuzzy
 #| msgctxt "ChangeLog|"
 #| msgid "Many little fixes and improvements."
@@ -28360,40 +28015,40 @@ msgctxt "ChangeLog|"
 msgid "Many usability improvements"
 msgstr "Moitas correccións e melloras pequenas."
 
-#: core/ChangeLog.qml:50
+#: core/ChangeLog.qml:57
 msgctxt "ChangeLog|"
 msgid ""
 "Reduce the size of the packages for all platforms and of the external word "
 "images set"
 msgstr ""
 
-#: core/ChangeLog.qml:51
+#: core/ChangeLog.qml:58
 msgctxt "ChangeLog|"
 msgid "Improve images quality in several activities"
 msgstr ""
 
-#: core/ChangeLog.qml:52
+#: core/ChangeLog.qml:59
 msgctxt "ChangeLog|"
 msgid "Fix some transitions in renewable_energy/watercycle on some platforms"
 msgstr ""
 
-#: core/ChangeLog.qml:53
+#: core/ChangeLog.qml:60
 msgctxt "ChangeLog|"
 msgid "Fix dead keys ignored on Linux for typing activities"
 msgstr ""
 
-#: core/ChangeLog.qml:54
+#: core/ChangeLog.qml:61
 msgctxt "ChangeLog|"
 msgid "Fix level reset when changing level manually in Logical associations"
 msgstr ""
 
-#: core/ChangeLog.qml:58
+#: core/ChangeLog.qml:65
 msgctxt "ChangeLog|"
 msgid ""
 "Fix Alphabet sequence, Even and odd numbers and Numbers in order activities"
 msgstr ""
 
-#: core/ChangeLog.qml:62 core/ChangeLog.qml:70
+#: core/ChangeLog.qml:69 core/ChangeLog.qml:77
 #, fuzzy
 #| msgctxt "ChangeLog|"
 #| msgid "Many little fixes."
@@ -28401,7 +28056,7 @@ msgctxt "ChangeLog|"
 msgid "Several bug fixes"
 msgstr "Moitas correccións pequenas."
 
-#: core/ChangeLog.qml:64
+#: core/ChangeLog.qml:71
 #, fuzzy
 #| msgctxt "ChangeLog|"
 #| msgid "Translations added for Scottish Gaelic."
@@ -28409,7 +28064,7 @@ msgctxt "ChangeLog|"
 msgid "Translation updated for Russian"
 msgstr "Engadíronse traducións para o gaélico escocés."
 
-#: core/ChangeLog.qml:65
+#: core/ChangeLog.qml:72
 #, fuzzy
 #| msgctxt "DialogConfig|"
 #| msgid "Norwegian Nynorsk"
@@ -28417,7 +28072,7 @@ msgctxt "ChangeLog|"
 msgid "New voices for Norwegian Nynorsk"
 msgstr "Noruegués Nynorsk"
 
-#: core/ChangeLog.qml:69
+#: core/ChangeLog.qml:76
 #, fuzzy
 #| msgctxt "ChangeLog|"
 #| msgid "Translations added for Scottish Gaelic."
@@ -28425,7 +28080,7 @@ msgctxt "ChangeLog|"
 msgid "Translations added for Breton, Czech and Macedonian"
 msgstr "Engadíronse traducións para o gaélico escocés."
 
-#: core/ChangeLog.qml:74
+#: core/ChangeLog.qml:81
 #, fuzzy
 #| msgctxt "ChangeLog|"
 #| msgid "Translations added for Scottish Gaelic."
@@ -28433,26 +28088,26 @@ msgctxt "ChangeLog|"
 msgid "Translation added for Azerbaijani"
 msgstr "Engadíronse traducións para o gaélico escocés."
 
-#: core/ChangeLog.qml:75
+#: core/ChangeLog.qml:82
 msgctxt "ChangeLog|"
 msgid "New maps and update of the maps for geography activities"
 msgstr ""
 
-#: core/ChangeLog.qml:76
+#: core/ChangeLog.qml:83
 msgctxt "ChangeLog|"
 msgid ""
 "New dataset containing loops operations for programming maze, and make "
 "tutorial images translated"
 msgstr ""
 
-#: core/ChangeLog.qml:77
+#: core/ChangeLog.qml:84
 msgctxt "ChangeLog|"
 msgid ""
 "Addition of a level to teach voltage source loop in analog electricity "
 "activity"
 msgstr ""
 
-#: core/ChangeLog.qml:87
+#: core/ChangeLog.qml:94
 #, fuzzy
 #| msgctxt "ConfigurationItem|"
 #| msgid "The activity section menu is visible"
@@ -28460,12 +28115,12 @@ msgctxt "ChangeLog|"
 msgid "New Activity Settings menu, with dataset selection"
 msgstr "O menú da sección de actividades é visíbel"
 
-#: core/ChangeLog.qml:93
+#: core/ChangeLog.qml:100
 msgctxt "ChangeLog|"
 msgid "New sub-categories to organize activities"
 msgstr ""
 
-#: core/ChangeLog.qml:94
+#: core/ChangeLog.qml:101
 #, fuzzy
 #| msgctxt "ChangeLog|"
 #| msgid "Translations added for Scottish Gaelic."
@@ -28473,42 +28128,42 @@ msgctxt "ChangeLog|"
 msgid "Translation added for Macedonian."
 msgstr "Engadíronse traducións para o gaélico escocés."
 
-#: core/ChangeLog.qml:95
+#: core/ChangeLog.qml:102
 msgctxt "ChangeLog|"
 msgid "New activities Programming Maze and Baby Tangram"
 msgstr ""
 
-#: core/ChangeLog.qml:96
+#: core/ChangeLog.qml:103
 msgctxt "ChangeLog|"
 msgid "New background music and volume settings."
 msgstr ""
 
-#: core/ChangeLog.qml:97
+#: core/ChangeLog.qml:104
 msgctxt "ChangeLog|"
 msgid "New speed setting in several activities."
 msgstr ""
 
-#: core/ChangeLog.qml:98
+#: core/ChangeLog.qml:105
 msgctxt "ChangeLog|"
 msgid "New option in chess to display captured pieces."
 msgstr ""
 
-#: core/ChangeLog.qml:99
+#: core/ChangeLog.qml:106
 msgctxt "ChangeLog|"
 msgid "New images in Colors, Advanced colors and Target game."
 msgstr ""
 
-#: core/ChangeLog.qml:100
+#: core/ChangeLog.qml:107
 msgctxt "ChangeLog|"
 msgid "New voices for US English."
 msgstr ""
 
-#: core/ChangeLog.qml:101 core/ChangeLog.qml:109
+#: core/ChangeLog.qml:108 core/ChangeLog.qml:116
 msgctxt "ChangeLog|"
 msgid "Many little fixes and improvements."
 msgstr "Moitas correccións e melloras pequenas."
 
-#: core/ChangeLog.qml:102
+#: core/ChangeLog.qml:109
 msgctxt "ChangeLog|"
 msgid ""
 "Translation updated for multiple languages (Breton, Brazilian Portuguese, "
@@ -28517,17 +28172,17 @@ msgstr ""
 "Actualizáronse as traducións a varios idiomas (bretón, portugués do Brasil, "
 "finés, etc.)."
 
-#: core/ChangeLog.qml:103
+#: core/ChangeLog.qml:110
 msgctxt "ChangeLog|"
 msgid "Add Russian dataset for Click on letter activity."
 msgstr "Engadir un conxunto de datos ruso para a actividade de premer letras."
 
-#: core/ChangeLog.qml:104
+#: core/ChangeLog.qml:111
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in Dutch."
 msgstr "A actividade de idioma está agora dispoñíbel en neerlandés."
 
-#: core/ChangeLog.qml:105
+#: core/ChangeLog.qml:112
 msgctxt "ChangeLog|"
 msgid ""
 "Merge Norwegian counties Nord-Trøndelag and Sør-Trøndelag into Trøndelag in "
@@ -28536,17 +28191,17 @@ msgstr ""
 "Fusiona os condados noruegueses Nord-Trøndelag e Sør-Trøndelag como "
 "Trøndelag na actividade de xeografía de países."
 
-#: core/ChangeLog.qml:106
+#: core/ChangeLog.qml:113
 msgctxt "ChangeLog|"
 msgid "Fix in braille activities where the cells start at 1, not 0."
 msgstr "Corrixe na actividade de braille onde as celas comezan en 1, non 0."
 
-#: core/ChangeLog.qml:107
+#: core/ChangeLog.qml:114
 msgctxt "ChangeLog|"
 msgid "Translation added for Basque, Hungarian and Malayalam."
 msgstr "Engadíronse traducións para o éuscara, o húngaro e o malaio."
 
-#: core/ChangeLog.qml:108
+#: core/ChangeLog.qml:115
 msgctxt "ChangeLog|"
 msgid ""
 "Loading/saving of creations (Baby Wordprocessor, Balance Box and Piano "
@@ -28555,47 +28210,47 @@ msgstr ""
 "Carga e garda das creacións (procesador de textos para bebés, caixa de "
 "equilibrios e composición de piano)."
 
-#: core/ChangeLog.qml:109
+#: core/ChangeLog.qml:116
 msgctxt "ChangeLog|"
 msgid "Translations added for Scottish Gaelic."
 msgstr "Engadíronse traducións para o gaélico escocés."
 
-#: core/ChangeLog.qml:110
+#: core/ChangeLog.qml:117
 msgctxt "ChangeLog|"
 msgid "License page added in configuration."
 msgstr "Engadiuse unha páxina sobre a licenza á configuración."
 
-#: core/ChangeLog.qml:110
+#: core/ChangeLog.qml:117
 msgctxt "ChangeLog|"
 msgid "Multiple changes on layouts to improve the ergonomy."
 msgstr "Varios cambios en disposicións para mellorar a ergonomía."
 
-#: core/ChangeLog.qml:111
+#: core/ChangeLog.qml:118
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in Polish, Swedish and Ukrainian."
 msgstr "Actividade de idiomas agora dispoñíbel en polaco, sueco e ucraíno."
 
-#: core/ChangeLog.qml:112
+#: core/ChangeLog.qml:119
 msgctxt "ChangeLog|"
 msgid "Search feature."
 msgstr "Funcionalidade de busca."
 
-#: core/ChangeLog.qml:113
+#: core/ChangeLog.qml:120
 msgctxt "ChangeLog|"
 msgid "A Changelog."
 msgstr "Unha lista de cambios."
 
-#: core/ChangeLog.qml:114
+#: core/ChangeLog.qml:121
 msgctxt "ChangeLog|"
 msgid "Many little fixes."
 msgstr "Moitas correccións pequenas."
 
-#: core/ChangeLog.qml:114
+#: core/ChangeLog.qml:121
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in French."
 msgstr "A actividade de idioma está agora dispoñíbel en francés."
 
-#: core/ChangeLog.qml:115
+#: core/ChangeLog.qml:122
 msgctxt "ChangeLog|"
 msgid ""
 "Adding a loading overlay to let the user know that some actions are taking "
@@ -28605,7 +28260,7 @@ msgstr ""
 "facer cousas (cargando unha actividade, por exemplo) e que poden levar un "
 "tempo."
 
-#: core/ChangeLog.qml:115
+#: core/ChangeLog.qml:122
 msgctxt "ChangeLog|"
 msgid ""
 "Translations added for: Catalan (Valencian), Chinese Traditional, Finnish "
@@ -28615,12 +28270,12 @@ msgstr ""
 "(traducido ao 92%), o ruso (traducido ao 98%), o eslovaco (traducido ao 92%) "
 "e o turco."
 
-#: core/ChangeLog.qml:116
+#: core/ChangeLog.qml:123
 msgctxt "ChangeLog|"
 msgid "Translations added for: Slovenian, German, Galician."
 msgstr "Engadíronse traducións para o esloveno, o alemán e o galego."
 
-#: core/ChangeLog.qml:141
+#: core/ChangeLog.qml:148
 #, qt-format
 msgctxt "ChangeLog|"
 msgid "Version %1:"
