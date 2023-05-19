@@ -1,4 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
+<!--
+  - SPDX-License-Identifier: BSD-2-Clause
+  - SPDX-FileCopyrightText: 2022 Johnny Jazeix <jazeix@gmail.com>
+ -->
 <resources>
     <string name="app_name">GCompris</string>
 
