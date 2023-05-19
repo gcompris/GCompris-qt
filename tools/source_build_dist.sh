@@ -3,6 +3,9 @@
 # This script creates a branch, integrate the po and
 # create the tarball
 #
+# SPDX-FileCopyrightText: 2016 Bruno Coudoin <bruno.coudoin@gcompris.net>
+#
+#   SPDX-License-Identifier: GPL-3.0-or-later
 
 if [ ! -f org.kde.gcompris.appdata.xml ]
 then

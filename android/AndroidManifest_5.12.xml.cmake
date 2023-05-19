@@ -1,4 +1,9 @@
 <?xml version="1.0"?>
+<!--
+  - SPDX-License-Identifier: BSD-2-Clause
+  - SPDX-FileCopyrightText: 2014 Bruno Coudoin <bruno.coudoin@gcompris.net>
+  - SPDX-FileCopyrightText: 2014-2022 Johnny Jazeix <jazeix@gmail.com>
+ -->
 <manifest android:versionName="@GCOMPRIS_VERSION@" package="@ANDROID_PACKAGE@" android:installLocation="auto" xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="@GCOMPRIS_VERSION_CODE@">
 	<application android:label="GCompris" android:name="org.qtproject.qt5.android.bindings.QtApplication" android:icon="@drawable/icon">
 		<activity android:label="@string/app_name" android:name="net.gcompris.GComprisActivity" android:screenOrientation="unspecified" android:configChanges="orientation|uiMode|screenLayout|screenSize|smallestScreenSize|locale|fontScale|keyboard|keyboardHidden|navigation" android:exported="true">

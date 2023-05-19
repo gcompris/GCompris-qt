@@ -1,4 +1,9 @@
 <?xml version="1.0"?>
+<!--
+  - SPDX-License-Identifier: BSD-2-Clause
+  - SPDX-FileCopyrightText: 2014 Bruno Coudoin <bruno.coudoin@gcompris.net>
+  - SPDX-FileCopyrightText: 2014-2022 Johnny Jazeix <jazeix@gmail.com>
+ -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
      package="@ANDROID_PACKAGE@"
      android:installLocation="auto"
