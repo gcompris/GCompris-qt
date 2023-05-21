@@ -159,7 +159,7 @@ ActivityBase {
             from: 0.0
             to: 1.0
             duration: 1000
-            onStarted: activity.audioEffects.play(Activity.url + 'click.wav')
+            onStarted: activity.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/smudge.wav')
             onStopped: { Activity.continueGame() }
         }
 
