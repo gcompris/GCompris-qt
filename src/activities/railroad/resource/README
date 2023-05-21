@@ -1,4 +1,12 @@
 Files:
+ src/activities/railroad/resource/sounds/train.wav
+Copyright:
+ 2023 Timothée Giet <animtim@gmail.com>
+License: CC-BY-SA-4.0
+Comment:
+ based on https://opengameart.org/content/steam-whistle by bart, CC-0
+
+Files:
  src/activities/railroad/resource/loco0.svg
  src/activities/railroad/resource/loco1.svg
  src/activities/railroad/resource/loco2.svg
@@ -23,4 +31,3 @@ Files:
 Copyright:
  2018 Timothée Giet <animtim@gmail.com>
 License: CC-BY-SA-4.0
-
