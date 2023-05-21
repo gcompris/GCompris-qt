@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2023-03-25 09:53+0100\n"
+"PO-Revision-Date: 2023-05-20 08:12+0200\n"
 "Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
 "Language-Team: Polish <kde-i18n-doc@kde.org>\n"
 "Language: pl\n"
@@ -25095,12 +25095,9 @@ msgid "Type the complete word as it falls, before it reaches the ground."
 msgstr "Napisz całe spadające słowo, zanim spadnie na ziemię."
 
 #: core/ChangeLog.qml:30
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translation added for Azerbaijani"
 msgctxt "ChangeLog|"
 msgid "Translations added for Arabic and Esperanto"
-msgstr "Dodano tłumaczenie na azerbejdżański."
+msgstr "Dodano tłumaczenie na arabski i esperanto"
 
 #: core/ChangeLog.qml:31 core/ChangeLog.qml:38
 msgctxt "ChangeLog|"

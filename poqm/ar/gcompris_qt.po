@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2023-04-09 21:32+0400\n"
+"PO-Revision-Date: 2023-05-20 12:46+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
 "Language: ar\n"
@@ -13,7 +13,7 @@ msgstr ""
 "X-Qt-Contexts: true\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
-"X-Generator: Lokalize 21.12.3\n"
+"X-Generator: Lokalize 22.12.3\n"
 
 #. Activity title
 #: activities/advanced_colors/ActivityInfo.qml:15
@@ -24402,12 +24402,9 @@ msgid "Type the complete word as it falls, before it reaches the ground."
 msgstr "اكتب الكلمات المتساقطة قبل أن تصل إلى الأرض."
 
 #: core/ChangeLog.qml:30
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translation added for Azerbaijani"
 msgctxt "ChangeLog|"
 msgid "Translations added for Arabic and Esperanto"
-msgstr "Translation added for Azerbaijani"
+msgstr "إضافة ترجمة للعربية و اسبرانتو"
 
 #: core/ChangeLog.qml:31 core/ChangeLog.qml:38
 msgctxt "ChangeLog|"
