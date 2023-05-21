@@ -3,7 +3,14 @@ Files:
 Copyright: 2017 Krishmeister
 License: CC-0
 Comments:
- based on https://freesound.org/people/Krishmeister/sounds/413241/
+ extract of https://freesound.org/people/Krishmeister/sounds/413241/
+
+Files:
+ src/activities/intsruments/resource/banjo.ogg
+Copyright: 2014 pflanigan
+License: CC-0
+Comments:
+ extract of https://freesound.org/people/pflanigan/sounds/390309/
 
 all other ogg files are ireleased under the GPL and were created by:
 - Sylvain Dechy
