@@ -2979,6 +2979,12 @@ Files: src/activities/play_rhythm/*.svg
 Copyright: 2018 Timothée Giet
 License: CC-BY-SA-4.0
 
+Files: src/activities/play_rhythm/resource/click.wav
+Copyright: 2014 Druminfected
+Copyright: 2023 Timothée Giet
+License: CC0-1.0
+Comment: edited version of https://freesound.org/people/Druminfected/sounds/250552/
+
 Files: src/activities/play_rhythm/resource/dataset.json
 Copyright: 2018 Aman Kumar Gupta
 License: GPL-3.0-or-later
@@ -3485,13 +3491,13 @@ Comment: Files from TuxPaint (https://sourceforge.net/p/tuxpaint/tuxpaint/ci/mas
 
 Files: src/core/resource/sounds/bonus.wav
 Copyright: 2023 stormystock
-Copyright: 2023 Timothée Giet <animtim@gmail.com>
+Copyright: 2023 Timothée Giet
 License: CC0-1.0
 Comment: extract from https://freesound.org/people/stormystock/sounds/677804/
 
 Files: src/core/resource/sounds/crash.wav
 Copyright: 2018 Jacco18
-Copyright: 2023 Timothée Giet <animtim@gmail.com>
+Copyright: 2023 Timothée Giet
 License: CC0-1.0
 Comment: remastered version of https://freesound.org/people/Jacco18/sounds/419023/
 
@@ -3502,7 +3508,7 @@ Source: https://opengameart.org/content/completion-sound
 
 Files: src/core/resource/sounds/water.wav
 Copyright: 2019 Random Mind
-Copyright: 2023 Timothée Giet <animtim@gmail.com>
+Copyright: 2023 Timothée Giet
 License: CC0-1.0
 Comment: remastered extract from https://opengameart.org/content/sea-and-river-wave-sounds
 
