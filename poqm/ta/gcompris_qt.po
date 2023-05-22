@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2023-01-24 21:30+0530\n"
+"PO-Revision-Date: 2023-05-21 15:25+0530\n"
 "Last-Translator: Kishore G <kishore96@gmail.com>\n"
 "Language-Team: Tamil <kde-i18n-doc@kde.org>\n"
 "Language: ta\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Language: ta\n"
 "X-Qt-Contexts: true\n"
-"X-Generator: Lokalize 22.12.1\n"
+"X-Generator: Lokalize 23.04.1\n"
 
 #. Activity title
 #: activities/advanced_colors/ActivityInfo.qml:15
@@ -23309,33 +23309,33 @@ msgstr ""
 #: activities/solar_system/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
 msgid "Space or Enter: select"
-msgstr ""
+msgstr "இடைவெளி அல்லது Enter: தேர்ந்தெடுப்பது"
 
 #: activities/solar_system/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
 msgid "Escape: return to previous screen"
-msgstr ""
+msgstr "Escape: முந்தைய திரைக்குத் திரும்புவதற்கு"
 
 #: activities/solar_system/ActivityInfo.qml:32
 msgctxt "ActivityInfo|"
 msgid "Tab: view the hint (only when the hint icon is visible)"
-msgstr ""
+msgstr "Tab: உதவி குறிப்பைக் காட்ட (அதற்கான சின்னம் காட்டப்படும்போது மட்டும்)"
 
 #: activities/solar_system/Dataset.js:14
 msgctxt "Dataset|"
 msgid "Sun"
-msgstr ""
+msgstr "சூரியன்"
 
 #: activities/solar_system/Dataset.js:18
 msgctxt "Dataset|"
 msgid "How large is the Sun compared to the planets in our Solar System?"
-msgstr ""
+msgstr "சூரிய மண்டலத்தில் உள்ள கோள்களைக் காட்டிலும் சூரியன் எவ்வளவு பெரியது?"
 
 #: activities/solar_system/Dataset.js:19 activities/solar_system/Dataset.js:115
 #: activities/solar_system/Dataset.js:190
 msgctxt "Dataset|"
 msgid "Sixth largest"
-msgstr ""
+msgstr "ஆறாம் பெரியது"
 
 #: activities/solar_system/Dataset.js:19 activities/solar_system/Dataset.js:262
 #: activities/solar_system/Dataset.js:307
@@ -23343,7 +23343,7 @@ msgstr ""
 #: activities/solar_system/Dataset.js:421
 msgctxt "Dataset|"
 msgid "Third largest"
-msgstr ""
+msgstr "மூன்றாம் பெரியது"
 
 #: activities/solar_system/Dataset.js:19 activities/solar_system/Dataset.js:262
 #: activities/solar_system/Dataset.js:307
@@ -23351,19 +23351,19 @@ msgstr ""
 #: activities/solar_system/Dataset.js:421
 msgctxt "Dataset|"
 msgid "Largest"
-msgstr ""
+msgstr "இருப்பதில் பெரியது"
 
 #: activities/solar_system/Dataset.js:19 activities/solar_system/Dataset.js:115
 #: activities/solar_system/Dataset.js:190
 #: activities/solar_system/Dataset.js:370
 msgctxt "Dataset|"
 msgid "Seventh largest"
-msgstr ""
+msgstr "ஏழாம் பெரியது"
 
 #: activities/solar_system/Dataset.js:24
 msgctxt "Dataset|"
 msgid "The temperature of the Sun is around:"
-msgstr ""
+msgstr "சூரியனின் வெப்பநிலை கிட்டத்தட்ட:"
 
 #: activities/solar_system/Dataset.js:25
 msgctxt "Dataset|"
@@ -23388,82 +23388,82 @@ msgstr ""
 #: activities/solar_system/Dataset.js:30
 msgctxt "Dataset|"
 msgid "How old is the Sun?"
-msgstr ""
+msgstr "சூரியனின் வயது எவ்வளவு?"
 
 #: activities/solar_system/Dataset.js:31
 msgctxt "Dataset|"
 msgid "1.2 billion years"
-msgstr ""
+msgstr "1.2 பில்லியன் ஆண்டுகள்"
 
 #: activities/solar_system/Dataset.js:31
 msgctxt "Dataset|"
 msgid "3 billion years"
-msgstr ""
+msgstr "3 பில்லியன் ஆண்டுகள்"
 
 #: activities/solar_system/Dataset.js:31
 msgctxt "Dataset|"
 msgid "7 billion years"
-msgstr ""
+msgstr "7 பில்லியன் ஆண்டுகள்"
 
 #: activities/solar_system/Dataset.js:31
 msgctxt "Dataset|"
 msgid "4.5 billion years"
-msgstr ""
+msgstr "4.5 பில்லியன் ஆண்டுகள்"
 
 #: activities/solar_system/Dataset.js:36
 msgctxt "Dataset|"
 msgid "How long does it take for the Sun’s light to reach the Earth?"
-msgstr ""
+msgstr "சூரியனின் ஒளி பூமியை அடைய எவ்வளவு நேரம் ஆகும்?"
 
 #: activities/solar_system/Dataset.js:37
 msgctxt "Dataset|"
 msgid "8 minutes"
-msgstr ""
+msgstr "8 நிமிடம்"
 
 #: activities/solar_system/Dataset.js:37
 msgctxt "Dataset|"
 msgid "30 minutes"
-msgstr ""
+msgstr "30 நிமிடம்"
 
 #: activities/solar_system/Dataset.js:37
 msgctxt "Dataset|"
 msgid "60 minutes"
-msgstr ""
+msgstr "60 நிமிடம்"
 
 #: activities/solar_system/Dataset.js:37
 msgctxt "Dataset|"
 msgid "15 minutes"
-msgstr ""
+msgstr "15 நிமிடம்"
 
 #: activities/solar_system/Dataset.js:42
 msgctxt "Dataset|"
 msgid "The Sun is as big as:"
-msgstr ""
+msgstr "சூரியனின் கன அளவு இதற்கு நிகரானது:"
 
 #: activities/solar_system/Dataset.js:43
 msgctxt "Dataset|"
 msgid "1 million Earths"
-msgstr ""
+msgstr "1 மில்லியன் பூமிகள்"
 
 #: activities/solar_system/Dataset.js:43
 msgctxt "Dataset|"
 msgid "2.6 million Earths"
-msgstr ""
+msgstr "2.6 மில்லியன் பூமிகள்"
 
 #: activities/solar_system/Dataset.js:43
 msgctxt "Dataset|"
 msgid "1.3 million Earths"
-msgstr ""
+msgstr "1.3 மில்லியன் பூமிகள்"
 
 #: activities/solar_system/Dataset.js:43
 msgctxt "Dataset|"
 msgid "5 million Earths"
-msgstr ""
+msgstr "5 மில்லியன் பூமிகள்"
 
 #: activities/solar_system/Dataset.js:51
 msgctxt "Dataset|"
 msgid "Mercury"
-msgstr ""
+msgstr "புதன்"
 
 #: activities/solar_system/Dataset.js:53 activities/solar_system/Dataset.js:98
 #: activities/solar_system/Dataset.js:200
@@ -23484,12 +23484,9 @@ msgstr ""
 #: activities/solar_system/Dataset.js:58 activities/solar_system/Dataset.js:103
 #: activities/solar_system/Dataset.js:346
 #: activities/solar_system/Dataset.js:391
-#, fuzzy
-#| msgctxt "dataset|"
-#| msgid "seven"
 msgctxt "Dataset|"
 msgid "Seventh"
-msgstr "ஏழு"
+msgstr "ஏழாவது"
 
 #: activities/solar_system/Dataset.js:58 activities/solar_system/Dataset.js:103
 #: activities/solar_system/Dataset.js:154
@@ -23498,7 +23495,7 @@ msgstr "ஏழு"
 #: activities/solar_system/Dataset.js:301
 msgctxt "Dataset|"
 msgid "Sixth"
-msgstr ""
+msgstr "ஆறாவது"
 
 #: activities/solar_system/Dataset.js:58 activities/solar_system/Dataset.js:154
 #: activities/solar_system/Dataset.js:205
@@ -23506,7 +23503,7 @@ msgstr ""
 #: activities/solar_system/Dataset.js:301
 msgctxt "Dataset|"
 msgid "First"
-msgstr ""
+msgstr "முதலாவது"
 
 #: activities/solar_system/Dataset.js:58 activities/solar_system/Dataset.js:103
 #: activities/solar_system/Dataset.js:205
@@ -23516,7 +23513,7 @@ msgstr ""
 #: activities/solar_system/Dataset.js:391
 msgctxt "Dataset|"
 msgid "Fourth"
-msgstr ""
+msgstr "நான்காவது"
 
 #: activities/solar_system/Dataset.js:63
 msgctxt "Dataset|"
@@ -23526,32 +23523,32 @@ msgstr ""
 #: activities/solar_system/Dataset.js:64 activities/solar_system/Dataset.js:241
 msgctxt "Dataset|"
 msgid "Smallest"
-msgstr ""
+msgstr "இருப்பதில் சிறியது"
 
 #: activities/solar_system/Dataset.js:64 activities/solar_system/Dataset.js:241
 msgctxt "Dataset|"
 msgid "Second smallest"
-msgstr ""
+msgstr "இரண்டாம் சிறியது"
 
 #: activities/solar_system/Dataset.js:64 activities/solar_system/Dataset.js:241
 msgctxt "Dataset|"
 msgid "Third smallest"
-msgstr ""
+msgstr "மூன்றாம் சிறியது"
 
 #: activities/solar_system/Dataset.js:64 activities/solar_system/Dataset.js:241
 msgctxt "Dataset|"
 msgid "Fifth smallest"
-msgstr ""
+msgstr "ஐந்தாம் சிறியது"
 
 #: activities/solar_system/Dataset.js:69
 msgctxt "Dataset|"
 msgid "How many moons has Mercury?"
-msgstr ""
+msgstr "புதனுக்கு எத்தனை நிலவுகள் உள்ளன?"
 
 #: activities/solar_system/Dataset.js:75
 msgctxt "Dataset|"
 msgid "The maximum temperature on Mercury is:"
-msgstr ""
+msgstr "புதனிலான அதிகபட்ச வெப்பநிலை:"
 
 #: activities/solar_system/Dataset.js:76 activities/solar_system/Dataset.js:268
 msgctxt "Dataset|"
@@ -23576,7 +23573,7 @@ msgstr ""
 #: activities/solar_system/Dataset.js:81
 msgctxt "Dataset|"
 msgid "How long is a year on Mercury?"
-msgstr ""
+msgstr "புதனில் ஓர் ஆண்டு எவ்வளவு நேரம் நீடிக்கும்?"
 
 #: activities/solar_system/Dataset.js:82 activities/solar_system/Dataset.js:88
 #: activities/solar_system/Dataset.js:121
@@ -23584,23 +23581,23 @@ msgstr ""
 #: activities/solar_system/Dataset.js:235
 msgctxt "Dataset|"
 msgid "365 Earth days"
-msgstr ""
+msgstr "365 புவி நாட்கள்"
 
 #: activities/solar_system/Dataset.js:82
 msgctxt "Dataset|"
 msgid "433 Earth days"
-msgstr ""
+msgstr "433 புவி நாட்கள்"
 
 #: activities/solar_system/Dataset.js:82 activities/solar_system/Dataset.js:127
 msgctxt "Dataset|"
 msgid "88 Earth days"
-msgstr ""
+msgstr "88 புவி நாட்கள்"
 
 #: activities/solar_system/Dataset.js:82 activities/solar_system/Dataset.js:88
 #: activities/solar_system/Dataset.js:127
 msgctxt "Dataset|"
 msgid "107 Earth days"
-msgstr ""
+msgstr "107 புவி நாட்கள்"
 
 #: activities/solar_system/Dataset.js:87
 msgctxt "Dataset|"
@@ -23610,17 +23607,17 @@ msgstr ""
 #: activities/solar_system/Dataset.js:88
 msgctxt "Dataset|"
 msgid "50 Earth days"
-msgstr ""
+msgstr "50 புவி நாட்கள்"
 
 #: activities/solar_system/Dataset.js:88
 msgctxt "Dataset|"
 msgid "59 Earth days"
-msgstr ""
+msgstr "59 புவி நாட்கள்"
 
 #: activities/solar_system/Dataset.js:96
 msgctxt "Dataset|"
 msgid "Venus"
-msgstr ""
+msgstr "வெள்ளி"
 
 #: activities/solar_system/Dataset.js:99 activities/solar_system/Dataset.js:201
 msgctxt "Dataset|"
@@ -23635,7 +23632,7 @@ msgstr ""
 #: activities/solar_system/Dataset.js:103
 msgctxt "Dataset|"
 msgid "Second"
-msgstr ""
+msgstr "இரண்டாவது"
 
 #: activities/solar_system/Dataset.js:108
 msgctxt "Dataset|"
@@ -23645,22 +23642,22 @@ msgstr ""
 #: activities/solar_system/Dataset.js:109
 msgctxt "Dataset|"
 msgid "0.7 Earths"
-msgstr ""
+msgstr "0.7 பூமிகள்"
 
 #: activities/solar_system/Dataset.js:109
 msgctxt "Dataset|"
 msgid "0.8 Earths"
-msgstr ""
+msgstr "0.8 பூமிகள்"
 
 #: activities/solar_system/Dataset.js:109
 msgctxt "Dataset|"
 msgid "1.3 Earths"
-msgstr ""
+msgstr "1.3 பூமிகள்"
 
 #: activities/solar_system/Dataset.js:109
 msgctxt "Dataset|"
 msgid "2.5 Earths"
-msgstr ""
+msgstr "2.5 பூமிகள்"
 
 #: activities/solar_system/Dataset.js:114
 msgctxt "Dataset|"
@@ -23673,14 +23670,14 @@ msgstr ""
 #: activities/solar_system/Dataset.js:307
 msgctxt "Dataset|"
 msgid "Fifth largest"
-msgstr ""
+msgstr "ஐந்தாம் பெரியது"
 
 #: activities/solar_system/Dataset.js:115
 #: activities/solar_system/Dataset.js:190
 #: activities/solar_system/Dataset.js:421
 msgctxt "Dataset|"
 msgid "Fourth largest"
-msgstr ""
+msgstr "நான்காம் பெரியது"
 
 #: activities/solar_system/Dataset.js:120
 msgctxt "Dataset|"
@@ -23690,17 +23687,17 @@ msgstr ""
 #: activities/solar_system/Dataset.js:121
 msgctxt "Dataset|"
 msgid "225 Earth days"
-msgstr ""
+msgstr "225 புவி நாட்கள்"
 
 #: activities/solar_system/Dataset.js:121
 msgctxt "Dataset|"
 msgid "116 Earth days"
-msgstr ""
+msgstr "116 புவி நாட்கள்"
 
 #: activities/solar_system/Dataset.js:121
 msgctxt "Dataset|"
 msgid "100 Earth days"
-msgstr ""
+msgstr "16 புவி நாட்கள்"
 
 #: activities/solar_system/Dataset.js:126
 msgctxt "Dataset|"
@@ -23710,7 +23707,7 @@ msgstr ""
 #: activities/solar_system/Dataset.js:127
 msgctxt "Dataset|"
 msgid "243 Earth days"
-msgstr ""
+msgstr "243 புவி நாட்கள்"
 
 #: activities/solar_system/Dataset.js:132
 msgctxt "Dataset|"
@@ -23769,7 +23766,7 @@ msgstr ""
 #: activities/solar_system/Dataset.js:154
 msgctxt "Dataset|"
 msgid "Third"
-msgstr ""
+msgstr "மூன்றாவது"
 
 #: activities/solar_system/Dataset.js:154
 #: activities/solar_system/Dataset.js:205
@@ -23779,7 +23776,7 @@ msgstr ""
 #: activities/solar_system/Dataset.js:391
 msgctxt "Dataset|"
 msgid "Fifth"
-msgstr ""
+msgstr "ஐந்தாவது"
 
 #: activities/solar_system/Dataset.js:159
 msgctxt "Dataset|"
@@ -23789,22 +23786,22 @@ msgstr ""
 #: activities/solar_system/Dataset.js:160
 msgctxt "Dataset|"
 msgid "200 days"
-msgstr ""
+msgstr "200 நாட்கள்"
 
 #: activities/solar_system/Dataset.js:160
 msgctxt "Dataset|"
 msgid "30 days"
-msgstr ""
+msgstr "30 நாட்கள்"
 
 #: activities/solar_system/Dataset.js:160
 msgctxt "Dataset|"
 msgid "7 days"
-msgstr ""
+msgstr "7 நாட்கள்"
 
 #: activities/solar_system/Dataset.js:160
 msgctxt "Dataset|"
 msgid "365 days"
-msgstr ""
+msgstr "365 நாட்கள்"
 
 #: activities/solar_system/Dataset.js:165
 msgctxt "Dataset|"
@@ -23822,7 +23819,7 @@ msgstr ""
 #: activities/solar_system/Dataset.js:319
 msgctxt "Dataset|"
 msgid "12 hours"
-msgstr ""
+msgstr "12 மணிநேரம்"
 
 #: activities/solar_system/Dataset.js:172
 #: activities/solar_system/Dataset.js:229
@@ -23830,12 +23827,12 @@ msgstr ""
 #: activities/solar_system/Dataset.js:319
 msgctxt "Dataset|"
 msgid "24 hours"
-msgstr ""
+msgstr "24 மணிநேரம்"
 
 #: activities/solar_system/Dataset.js:172
 msgctxt "Dataset|"
 msgid "365 hours"
-msgstr ""
+msgstr "365 மணிநேரம்"
 
 #: activities/solar_system/Dataset.js:172
 #: activities/solar_system/Dataset.js:229
@@ -23845,7 +23842,7 @@ msgstr ""
 #: activities/solar_system/Dataset.js:409
 msgctxt "Dataset|"
 msgid "48 hours"
-msgstr ""
+msgstr "48 மணிநேரம்"
 
 #: activities/solar_system/Dataset.js:177
 msgctxt "Dataset|"
@@ -23901,22 +23898,22 @@ msgstr ""
 #: activities/solar_system/Dataset.js:217
 msgctxt "Dataset|"
 msgid "The same"
-msgstr ""
+msgstr "ஒரே அளவு"
 
 #: activities/solar_system/Dataset.js:217
 msgctxt "Dataset|"
 msgid "Half"
-msgstr ""
+msgstr "பாதி"
 
 #: activities/solar_system/Dataset.js:217
 msgctxt "Dataset|"
 msgid "Two times"
-msgstr ""
+msgstr "இருமடங்கு"
 
 #: activities/solar_system/Dataset.js:217
 msgctxt "Dataset|"
 msgid "Three times"
-msgstr ""
+msgstr "மூன்று மடங்கு"
 
 #: activities/solar_system/Dataset.js:222
 msgctxt "Dataset|"
@@ -23931,7 +23928,7 @@ msgstr ""
 #: activities/solar_system/Dataset.js:229
 msgctxt "Dataset|"
 msgid "24.5 hours"
-msgstr ""
+msgstr "24.5 மணிநேரம்"
 
 #: activities/solar_system/Dataset.js:234
 msgctxt "Dataset|"
@@ -23941,17 +23938,17 @@ msgstr ""
 #: activities/solar_system/Dataset.js:235
 msgctxt "Dataset|"
 msgid "687 Earth days"
-msgstr ""
+msgstr "687 புவி நாட்கள்"
 
 #: activities/solar_system/Dataset.js:235
 msgctxt "Dataset|"
 msgid "30 Earth days"
-msgstr ""
+msgstr "30 புவி நாட்கள்"
 
 #: activities/solar_system/Dataset.js:235
 msgctxt "Dataset|"
 msgid "7 Earth days"
-msgstr ""
+msgstr "7 புவி நாட்கள்"
 
 #: activities/solar_system/Dataset.js:240
 msgctxt "Dataset|"
@@ -24016,7 +24013,7 @@ msgstr ""
 #: activities/solar_system/Dataset.js:364
 msgctxt "Dataset|"
 msgid "10 hours"
-msgstr ""
+msgstr "10 மணிநேரம்"
 
 #: activities/solar_system/Dataset.js:285
 msgctxt "Dataset|"
@@ -24027,17 +24024,17 @@ msgstr ""
 #: activities/solar_system/Dataset.js:286
 msgctxt "Dataset|"
 msgid "5 Earth years"
-msgstr ""
+msgstr "5 புவி ஆண்டுகள்"
 
 #: activities/solar_system/Dataset.js:286
 msgctxt "Dataset|"
 msgid "12 Earth years"
-msgstr ""
+msgstr "12 புவி ஆண்டுகள்"
 
 #: activities/solar_system/Dataset.js:286
 msgctxt "Dataset|"
 msgid "30 Earth years"
-msgstr ""
+msgstr "30 புவி ஆண்டுகள்"
 
 #: activities/solar_system/Dataset.js:286
 #: activities/solar_system/Dataset.js:331
@@ -24045,7 +24042,7 @@ msgstr ""
 #: activities/solar_system/Dataset.js:397
 msgctxt "Dataset|"
 msgid "1 Earth year"
-msgstr ""
+msgstr "1 புவி ஆண்டு"
 
 #: activities/solar_system/Dataset.js:294
 msgctxt "Dataset|"
@@ -24085,7 +24082,7 @@ msgstr ""
 #: activities/solar_system/Dataset.js:319
 msgctxt "Dataset|"
 msgid "10.5 hours"
-msgstr ""
+msgstr "10.5 மணிநேரம்"
 
 #: activities/solar_system/Dataset.js:324
 msgctxt "Dataset|"
@@ -24118,17 +24115,17 @@ msgstr ""
 #: activities/solar_system/Dataset.js:331
 msgctxt "Dataset|"
 msgid "29.5 Earth years"
-msgstr ""
+msgstr "29.5 புவி ஆண்டுகள்"
 
 #: activities/solar_system/Dataset.js:331
 msgctxt "Dataset|"
 msgid "20 Earth years"
-msgstr ""
+msgstr "20 புவி ஆண்டுகள்"
 
 #: activities/solar_system/Dataset.js:331
 msgctxt "Dataset|"
 msgid "10 Earth years"
-msgstr ""
+msgstr "10 புவி ஆண்டுகள்"
 
 #: activities/solar_system/Dataset.js:339
 msgctxt "Dataset|"
@@ -24147,12 +24144,9 @@ msgstr ""
 
 #: activities/solar_system/Dataset.js:346
 #: activities/solar_system/Dataset.js:391
-#, fuzzy
-#| msgctxt "dataset|"
-#| msgid "eight"
 msgctxt "Dataset|"
 msgid "Eighth"
-msgstr "எட்டு"
+msgstr "எட்டாவது"
 
 #: activities/solar_system/Dataset.js:351
 msgctxt "Dataset|"
@@ -24162,17 +24156,17 @@ msgstr ""
 #: activities/solar_system/Dataset.js:352
 msgctxt "Dataset|"
 msgid "24 Earth years"
-msgstr ""
+msgstr "24 புவி ஆண்டுகள்"
 
 #: activities/solar_system/Dataset.js:352
 msgctxt "Dataset|"
 msgid "68 Earth years"
-msgstr ""
+msgstr "68 புவி ஆண்டுகள்"
 
 #: activities/solar_system/Dataset.js:352
 msgctxt "Dataset|"
 msgid "84 Earth years"
-msgstr ""
+msgstr "84 புவி ஆண்டுகள்"
 
 #: activities/solar_system/Dataset.js:357
 msgctxt "Dataset|"
@@ -24188,13 +24182,13 @@ msgstr ""
 #: activities/solar_system/Dataset.js:409
 msgctxt "Dataset|"
 msgid "27 hours"
-msgstr ""
+msgstr "27 மணிநேரம்"
 
 #: activities/solar_system/Dataset.js:364
 #: activities/solar_system/Dataset.js:409
 msgctxt "Dataset|"
 msgid "17 hours"
-msgstr ""
+msgstr "17 மணிநேரம்"
 
 #: activities/solar_system/Dataset.js:369
 msgctxt "Dataset|"
@@ -24240,17 +24234,17 @@ msgstr ""
 #: activities/solar_system/Dataset.js:397
 msgctxt "Dataset|"
 msgid "165 Earth years"
-msgstr ""
+msgstr "165 புவி ஆண்டுகள்"
 
 #: activities/solar_system/Dataset.js:397
 msgctxt "Dataset|"
 msgid "3 Earth years"
-msgstr ""
+msgstr "3 புவி ஆண்டுகள்"
 
 #: activities/solar_system/Dataset.js:397
 msgctxt "Dataset|"
 msgid "100 Earth years"
-msgstr ""
+msgstr "100 புவி ஆண்டுகள்"
 
 #: activities/solar_system/Dataset.js:402
 msgctxt "Dataset|"
@@ -24265,7 +24259,7 @@ msgstr ""
 #: activities/solar_system/Dataset.js:409
 msgctxt "Dataset|"
 msgid "16 hours"
-msgstr ""
+msgstr "16 மணிநேரம்"
 
 #: activities/solar_system/Dataset.js:414
 msgctxt "Dataset|"
@@ -24286,13 +24280,13 @@ msgstr ""
 #, qt-format
 msgctxt "QuizScreen|"
 msgid "Accuracy: %1%"
-msgstr ""
+msgstr "துல்லியம்: %1%"
 
 #: activities/solar_system/QuizScreen.qml:239
 #, qt-format
 msgctxt "QuizScreen|"
 msgid "%1%"
-msgstr ""
+msgstr "%1%"
 
 #: activities/solar_system/QuizScreen.qml:274
 #, qt-format
@@ -24407,7 +24401,7 @@ msgstr ""
 #: activities/solar_system/SolarSystem.qml:358
 msgctxt "SolarSystem|"
 msgid "Hint"
-msgstr ""
+msgstr "உதவி"
 
 #: activities/solar_system/SolarSystem.qml:366
 #, fuzzy

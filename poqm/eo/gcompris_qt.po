@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2020-05-22 10:49+0200\n"
-"PO-Revision-Date: 2023-05-21 00:01+0100\n"
+"PO-Revision-Date: 2023-05-21 14:45+0100\n"
 "Last-Translator: Oliver Kellogg <okellogg@users.sourceforge.net>\n"
 "Language-Team: Esperanto <kde-i18n-eo@kde.org>\n"
 "Language: eo\n"
@@ -25364,7 +25364,9 @@ msgstr "Permesilo"
 #: core/DialogAbout.qml:46 core/DialogAbout.qml:47
 msgctxt "DialogAbout|"
 msgid "translator-credits"
-msgstr "tradukisto-kreditoj"
+msgstr ""
+"Esperanta dissendolisto: kde-i18n-eo@kde.org\n"
+"Oliver Kellogg"
 
 #: core/DialogAbout.qml:55
 #, qt-format
