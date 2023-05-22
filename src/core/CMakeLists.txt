@@ -377,8 +377,6 @@ endif()
 
 if(APPLE)
   set(CPACK_GENERATOR "DragNDrop")
-  set(CPACK_DMG_DS_STORE "${GCOMPRIS_RESOURCES}/dmg_DS_Store")
-  set(CPACK_DMG_BACKGROUND_IMAGE "${GCOMPRIS_RESOURCES}/dmg_background.png")
 elseif(WIN32)
   set(CPACK_GENERATOR "NSIS")
 else()
