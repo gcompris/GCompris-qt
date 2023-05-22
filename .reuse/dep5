@@ -3483,6 +3483,12 @@ Copyright: 2007 William Kendrick
 License: GPL-2.0-or-later
 Comment: Files from TuxPaint (https://sourceforge.net/p/tuxpaint/tuxpaint/ci/master/tree/data/sounds/)
 
+Files: src/core/resource/sounds/bonus.wav
+Copyright: 2023 stormystock
+Copyright: 2023 Timothée Giet <animtim@gmail.com>
+License: CC0-1.0
+Comment: extract from https://freesound.org/people/stormystock/sounds/677804/
+
 Files: src/core/resource/sounds/crash.wav
 Copyright: 2018 Jacco18
 Copyright: 2023 Timothée Giet <animtim@gmail.com>
