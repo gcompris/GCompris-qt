@@ -24931,12 +24931,9 @@ msgid "Type the complete word as it falls, before it reaches the ground."
 msgstr "Upišite cijelu riječ dok pada, prije nego što dotakne tlo."
 
 #: core/ChangeLog.qml:30
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translation added for Azerbaijani"
 msgctxt "ChangeLog|"
 msgid "Translations added for Arabic and Esperanto"
-msgstr "Prijevod dodan za azerbajdžanski"
+msgstr "Dodani prijevodi za arapski i esperanto"
 
 #: core/ChangeLog.qml:31 core/ChangeLog.qml:38
 msgctxt "ChangeLog|"

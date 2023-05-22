@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: kstars\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2015-05-27 08:46+0000\n"
-"PO-Revision-Date: 2023-03-20 13:58+0000\n"
+"PO-Revision-Date: 2023-05-20 22:27+0100\n"
 "Last-Translator: Pedro Morais <morais@kde.org>\n"
 "Language-Team: pt <kde-i18n-pt@kde.org>\n"
 "Language: pt\n"
@@ -755,6 +755,7 @@ msgstr ""
 "X-POFile-SpellExtra: Silesian Warmian Masurian Silesiano Opole Masovian\n"
 "X-POFile-SpellExtra: ódź Lubusz Lublin Kuyavian Dobruja Bukovina Oware\n"
 "X-POFile-SpellExtra: Nynorsk renewableenergy watercycle mú quá bé\n"
+"X-POFile-SpellExtra: difficulty\n"
 
 #. Activity title
 #: activities/advanced_colors/ActivityInfo.qml:15
@@ -25957,12 +25958,9 @@ msgstr ""
 "Escreva a palavra completa, à medida que vai caindo, antes de chegar ao chão."
 
 #: core/ChangeLog.qml:30
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translation added for Azerbaijani"
 msgctxt "ChangeLog|"
 msgid "Translations added for Arabic and Esperanto"
-msgstr "Adição de traduções para Azerbaijano"
+msgstr "Traduções adicionada para Árabe e Esperanto"
 
 #: core/ChangeLog.qml:31 core/ChangeLog.qml:38
 msgctxt "ChangeLog|"

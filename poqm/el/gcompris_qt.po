@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2023-03-26 11:44+0300\n"
+"PO-Revision-Date: 2023-05-20 14:16+0300\n"
 "Last-Translator: Stelios <sstavra@gmail.com>\n"
 "Language-Team: Greek <kde-i18n-el@kde.org>\n"
 "Language: el\n"
@@ -974,8 +974,8 @@ msgid ""
 msgstr ""
 "Μια αφαίρεση εμφανίζεται στην οθόνη. Βρες γρήγορα το αποτέλεσμα της "
 "διαίρεσης και χρησιμοποίησε το πληκτρολόγιο του υπολογιστή ή το πληκτρολόγιο "
-"οθόνης για να το πληκτρολογήσεις. Θα πρέπει να είσαι γρήγορος και να "
-"απαντήσεις πριν οι πιγκουίνοι με τα μπαλόνια προσγειωθούν."
+"οθόνης για να το πληκτρολογήσεις. Θα πρέπει να ενεργήσεις γρήγορα και να "
+"απαντήσεις πριν οι πιγκουίνοι με τα μπαλόνια προσγειωθούν!"
 
 #: activities/algebra_minus/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -24905,7 +24905,7 @@ msgstr "Η σωστή σειρά"
 #: activities/superbrain/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Tux has hidden several items. Find them in the correct order."
-msgstr "Ο Tux έχει κρύψει μερικά αντικείμενα. Βρες τα ξανά με την σωστή σειρά"
+msgstr "Ο Tux έχει κρύψει μερικά αντικείμενα. Βρες τα ξανά με την σωστή σειρά."
 
 #. Help manual
 #: activities/superbrain/ActivityInfo.qml:24
@@ -25511,12 +25511,9 @@ msgid "Type the complete word as it falls, before it reaches the ground."
 msgstr "Πληκτρολόγησε τη λέξη πριν αυτή πέσει στο έδαφος."
 
 #: core/ChangeLog.qml:30
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translation added for Azerbaijani"
 msgctxt "ChangeLog|"
 msgid "Translations added for Arabic and Esperanto"
-msgstr "Προστέθηκαν μεταφράσεις για τα Αζερικά."
+msgstr "Προστέθηκαν μεταφράσεις για τα Αραβικά και την Εσπεράντο."
 
 #: core/ChangeLog.qml:31 core/ChangeLog.qml:38
 msgctxt "ChangeLog|"
