@@ -3483,6 +3483,12 @@ Copyright: 2007 William Kendrick
 License: GPL-2.0-or-later
 Comment: Files from TuxPaint (https://sourceforge.net/p/tuxpaint/tuxpaint/ci/master/tree/data/sounds/)
 
+Files: src/core/resource/sounds/crash.wav
+Copyright: 2018 Jacco18
+Copyright: 2023 Timothée Giet <animtim@gmail.com>
+License: CC0-1.0
+Comment: remastered version of https://freesound.org/people/Jacco18/sounds/419023/
+
 Files: src/core/resource/sounds/completetask.wav
 Copyright: 2015 Brandon Morris
 License: CC0-1.0
