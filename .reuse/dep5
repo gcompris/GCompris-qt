@@ -3500,6 +3500,12 @@ Copyright: 2015 Brandon Morris
 License: CC0-1.0
 Source: https://opengameart.org/content/completion-sound
 
+Files: src/core/resource/sounds/water.wav
+Copyright: 2019 Random Mind
+Copyright: 2023 Timothée Giet <animtim@gmail.com>
+License: CC0-1.0
+Comment: remastered extract from https://opengameart.org/content/sea-and-river-wave-sounds
+
 Files: src/core/resource/sounds/win.wav
 Copyright: 2014 Gabriel Araujo
 License: CC0-1.0
