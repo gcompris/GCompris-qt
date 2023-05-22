@@ -18,32 +18,28 @@ QtObject {
           "x": "0.75",
           "y": "0.65",
           "width": 0.4,
-          "height": 0.25,
-          "soundFile": "sound/2.$CA"
+          "height": 0.25
       },
       {
           "pixmapfile": "images/3.webp",
           "x": "0.25",
           "y": "0.65",
           "width": 0.4,
-          "height": 0.25,
-          "soundFile": "sound/3.$CA"
+          "height": 0.25
       },
       {
           "pixmapfile": "images/2.webp",
           "x": "0.75",
           "y": "0.2",
           "width": 0.4,
-          "height": 0.25,
-          "soundFile": "sound/2.$CA"
+          "height": 0.25
       },
       {
           "pixmapfile": "images/1.webp",
           "x": "0.25",
           "y": "0.2",
           "width": 0.4,
-          "height": 0.25,
-          "soundFile": "sound/1.$CA"
+          "height": 0.25
       },
       {
 		  "text": qsTr("1"),
