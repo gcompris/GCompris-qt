@@ -25516,12 +25516,9 @@ msgstr ""
 "ne touchent le sol."
 
 #: core/ChangeLog.qml:30
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translation added for Azerbaijani"
 msgctxt "ChangeLog|"
 msgid "Translations added for Arabic and Esperanto"
-msgstr "Traductions ajoutées pour l'azerbaïdjannais."
+msgstr "Traductions ajoutées pour l'arabe et l'espéranto."
 
 #: core/ChangeLog.qml:31 core/ChangeLog.qml:38
 msgctxt "ChangeLog|"
