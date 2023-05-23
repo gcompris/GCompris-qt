@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2023-05-21 23:46+0200\n"
+"PO-Revision-Date: 2023-05-22 09:27+0200\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
@@ -24919,7 +24919,7 @@ msgstr "Natipkajte celo besedo, preden pade na tla."
 #: core/ChangeLog.qml:30
 msgctxt "ChangeLog|"
 msgid "Translations added for Arabic and Esperanto"
-msgstr "Dodan prevod v azarbejžanščino in Esperanto"
+msgstr "Dodan prevod v arabščino in Esperanto"
 
 #: core/ChangeLog.qml:31 core/ChangeLog.qml:38
 msgctxt "ChangeLog|"
