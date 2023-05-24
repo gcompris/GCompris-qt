@@ -228,6 +228,10 @@ Files: src/activities/braille_fun/*.svg
 Copyright: 2015 Timothée Giet
 License: CC-BY-SA-4.0
 
+Files: src/activities/calcudoku/*.svg
+Copyright: 2015 Timothée Giet
+License: CC-BY-SA-4.0
+
 Files: src/activities/calendar/*.svg
 Copyright: 2015-2022 Timothée Giet
 License: CC-BY-SA-4.0

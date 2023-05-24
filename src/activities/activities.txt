@@ -23,6 +23,7 @@ bargame_2players
 binary_bulb
 braille_alphabets
 braille_fun
+calcudoku
 calendar
 canal_lock
 categorization
