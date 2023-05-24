@@ -26,7 +26,7 @@ ActivityInfo {
   prerequisite: qsTr("Tell a short story.")
   //: Help manual
   manual: qsTr("Pick the pictures on the side and put them on the dots in the right order.") + " " + qsTr("Then, click on the OK button to validate your answer.")
-  credit: qsTr("Moon photo is copyright NASA. The space sounds come from Tuxpaint and Vegastrike which are released under the GPL license. The transportation images are copyright Franck Doucet. Dates of Transportation are based on those found in &lt;https://www.wikipedia.org&gt;.")
+  credit: qsTr("Moon photo is copyright NASA. The transportation images are copyright Franck Doucet. Dates of Transportation are based on those found in &lt;https://www.wikipedia.org&gt;.")
   section: "sciences history"
   createdInVersion: 4000
   levels: "1,2"
