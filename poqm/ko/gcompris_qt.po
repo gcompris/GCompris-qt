@@ -4021,10 +4021,9 @@ msgstr ""
 #: activities/chronos/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid ""
-"Moon photo is copyright NASA. The space sounds come from Tuxpaint and "
-"Vegastrike which are released under the GPL license. The transportation "
-"images are copyright Franck Doucet. Dates of Transportation are based on "
-"those found in &lt;https://www.wikipedia.org&gt;."
+"Moon photo is copyright NASA. The transportation images are copyright Franck "
+"Doucet. Dates of Transportation are based on those found in &lt;https://www."
+"wikipedia.org&gt;."
 msgstr ""
 
 #: activities/chronos/resource/1/Data.qml:13
