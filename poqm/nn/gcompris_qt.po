@@ -4317,19 +4317,13 @@ msgctxt "ActivityInfo|"
 msgid "Then, click on the OK button to validate your answer."
 msgstr "Trykk så på «OK»-knappen for sjekka svaret ditt."
 
-# Har sjekka i README-fila at bileta av både køyretøya og luftfartøya er teikna av Doucet.
 #: activities/chronos/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid ""
-"Moon photo is copyright NASA. The space sounds come from Tuxpaint and "
-"Vegastrike which are released under the GPL license. The transportation "
-"images are copyright Franck Doucet. Dates of Transportation are based on "
-"those found in &lt;https://www.wikipedia.org&gt;."
+"Moon photo is copyright NASA. The transportation images are copyright Franck "
+"Doucet. Dates of Transportation are based on those found in &lt;https://www."
+"wikipedia.org&gt;."
 msgstr ""
-"Månebileta er henta frå NASA, og romlydane kjem frå Tux Paint og Vegastrike, "
-"som begge er tilgjengelege under GNU GPL-lisensen. Årstala for oppfinningane "
-"er henta frå &lt;https://www.wikipedia.org/&gt;, og bileta av køyretøya og "
-"luftfartøya er teikna av Franck Doucet."
 
 #: activities/chronos/resource/1/Data.qml:13
 msgctxt "Data|"

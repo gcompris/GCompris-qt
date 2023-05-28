@@ -1,13 +1,13 @@
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
-# Tommi Nieminen <translator@legisign.org>, 2018, 2019, 2021.
+# Tommi Nieminen <translator@legisign.org>, 2018, 2019, 2021, 2023.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-12-13 00:48+0000\n"
-"PO-Revision-Date: 2021-12-12 13:46+0100\n"
+"PO-Revision-Date: 2023-05-18 18:06+0300\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
 "Language: fi\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.0\n"
+"X-Generator: Lokalize 23.04.1\n"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "advanced_colors"
 #: activities/advanced_colors/ActivityInfo.qml:18
@@ -231,28 +231,27 @@ msgstr "Luokittele alkiot oikeaan ryhmään"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "checkers"
 #: activities/checkers/ActivityInfo.qml:18
-#, fuzzy, kde-format
-#| msgid "play chess against Tux"
+#, kde-format
 msgid "play checkers against Tux"
-msgstr "pelaa šakkia Tuxia vastaan"
+msgstr "pelaa Tuxia vastaan tammea"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "checkers_2players"
 #: activities/checkers_2players/ActivityInfo.qml:18
 #, kde-format
 msgid "play checkers with your friend"
-msgstr "pelaa tammea kaveria vastaan"
+msgstr "pelaa kaveria vastaan tammea"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "chess"
 #: activities/chess/ActivityInfo.qml:18
 #, kde-format
 msgid "play chess against Tux"
-msgstr "pelaa šakkia Tuxia vastaan"
+msgstr "pelaa Tuxia vastaan šakkia"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "chess_2players"
 #: activities/chess_2players/ActivityInfo.qml:18
 #, kde-format
 msgid "play chess against your friend"
-msgstr "pelaa šakkia kaveria vastaan"
+msgstr "pelaa kaveria vastaan šakkia"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "chess_partyend"
 #: activities/chess_partyend/ActivityInfo.qml:18
@@ -330,7 +329,7 @@ msgstr "Napsauta oikeaa väriä"
 #, kde-format
 msgid ""
 "Select the correct comparator sign for each pair of numbers in the list."
-msgstr ""
+msgstr "Valitse luettelon kullekin lukuparille oikea vertailumerkki."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "crane"
 #: activities/crane/ActivityInfo.qml:23
@@ -464,13 +463,13 @@ msgstr "Aseta potkusi nopeus ja suunta vetämällä pallosta viiva."
 #, kde-format
 msgid ""
 "Select the appropriate number of parts as described in the instructions."
-msgstr ""
+msgstr "Valitse ohjeiden mukaisesti oikea määrä osia."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "fractions_find"
 #: activities/fractions_find/ActivityInfo.qml:17
 #, kde-format
 msgid "Find the correct numerator and denominator of the represented fraction"
-msgstr ""
+msgstr "Valitse esitetylle murtoluvulle oikeat osoittaja ja nimittäjä"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "geo-country"
 #: activities/geo-country/ActivityInfo.qml:22
@@ -698,6 +697,8 @@ msgstr ""
 msgid ""
 "Move animals to their homes using a left click or right click on your mouse."
 msgstr ""
+"Siirrä eläimet koteihinsa hiiren vasemman tai oikean painikkeen "
+"napsautuksella."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "leftright"
 #: activities/leftright/ActivityInfo.qml:18
@@ -900,10 +901,9 @@ msgstr "Maksa napsauttamalla rahaa."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "morse_code"
 #: activities/morse_code/ActivityInfo.qml:21
-#, fuzzy, kde-format
-#| msgid "Learn and practice roman to arabic numerals conversion"
+#, kde-format
 msgid "Learn and practice the International Morse code"
-msgstr "Opi ja harjoittele muuntamaan roomalaiset luvut arabialaisiksi"
+msgstr "Opi ja harjoittele kansainvälistä morsekoodia"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "mosaic"
 #: activities/mosaic/ActivityInfo.qml:18
@@ -1234,6 +1234,9 @@ msgid ""
 "Create pairs of numbers equal to ten. Select a number in the list, then "
 "select an empty spot of an operation to move the selected number there."
 msgstr ""
+"Luo pareja luvuista, jotka ovat yhtä kuin kymmenen. Valitse ensin "
+"luettelosta luku ja sitten laskusta tyhjä kohta siirtääksesi valitun luvun "
+"siihen."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "tens_complement_swap"
 #: activities/tens_complement_swap/ActivityInfo.qml:17
@@ -1242,6 +1245,8 @@ msgid ""
 "Create pairs of numbers equal to ten. Select a number, then select another "
 "number of the same operation to swap their position."
 msgstr ""
+"Luo pareja luvuista, jotka ovat yhtä kuin kymmenen. Valitse luku, sitten "
+"toinen saman laskun toinen luku vaihtaaksesi niiden paikkoja keskenään."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "tens_complement_use"
 #: activities/tens_complement_use/ActivityInfo.qml:17
@@ -1251,6 +1256,9 @@ msgid ""
 "number in the list, then select an empty spot of an operation to move the "
 "selected number there."
 msgstr ""
+"Hajota laskut pareiksi luvuista, jotka ovat yhtä kuin kymmenen. Valitse "
+"ensin luettelosta luku ja sitten laskusta tyhjä kohta siirtääksesi valitun "
+"luvun siihen."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "tic_tac_toe_2players"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "tic_tac_toe"
