@@ -4142,22 +4142,22 @@ msgctxt "board1_0|"
 msgid "Moonwalker"
 msgstr "月球漫步者"
 
-#: activities/chronos/resource/board/board1_0.qml:49
+#: activities/chronos/resource/board/board1_0.qml:45
 msgctxt "board1_0|"
 msgid "1"
 msgstr "1"
 
-#: activities/chronos/resource/board/board1_0.qml:57
+#: activities/chronos/resource/board/board1_0.qml:53
 msgctxt "board1_0|"
 msgid "2"
 msgstr "2"
 
-#: activities/chronos/resource/board/board1_0.qml:65
+#: activities/chronos/resource/board/board1_0.qml:61
 msgctxt "board1_0|"
 msgid "3"
 msgstr "3"
 
-#: activities/chronos/resource/board/board1_0.qml:73
+#: activities/chronos/resource/board/board1_0.qml:69
 msgctxt "board1_0|"
 msgid "4"
 msgstr "4"

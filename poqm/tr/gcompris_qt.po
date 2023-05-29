@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2023-05-24 00:53+0300\n"
+"PO-Revision-Date: 2023-05-28 11:20+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 23.07.70\n"
+"X-Generator: Lokalize 23.04.1\n"
 "X-Qt-Contexts: true\n"
 
 #. Activity title
@@ -4339,22 +4339,22 @@ msgctxt "board1_0|"
 msgid "Moonwalker"
 msgstr "Ay'da yürüyüş"
 
-#: activities/chronos/resource/board/board1_0.qml:49
+#: activities/chronos/resource/board/board1_0.qml:45
 msgctxt "board1_0|"
 msgid "1"
 msgstr "1"
 
-#: activities/chronos/resource/board/board1_0.qml:57
+#: activities/chronos/resource/board/board1_0.qml:53
 msgctxt "board1_0|"
 msgid "2"
 msgstr "2"
 
-#: activities/chronos/resource/board/board1_0.qml:65
+#: activities/chronos/resource/board/board1_0.qml:61
 msgctxt "board1_0|"
 msgid "3"
 msgstr "3"
 
-#: activities/chronos/resource/board/board1_0.qml:73
+#: activities/chronos/resource/board/board1_0.qml:69
 msgctxt "board1_0|"
 msgid "4"
 msgstr "4"
@@ -22880,9 +22880,9 @@ msgid ""
 "astronomy, try downloading KStars (https://edu.kde.org/kstars/) or "
 "Stellarium (https://stellarium.org/) which are astronomy Free Software."
 msgstr ""
-"Güneş sistemi hakkında bilgi edin. Astronomi hakkında daha fazla bilgi "
-"edinmek istiyorsan, açık kaynaklı astronomi yazılımları olan K Yıldızlar "
-"(https://edu.kde.org/kstars/) veya Stellarium (http://stellarium.org/) "
+"Güneş sistemi hakkında bilgi edin. Gökbilim üzerine daha fazla bilgi edinmek "
+"istiyorsan açık kaynaklı gökbilim yazılımları olan K Yıldızlar (https://edu."
+"kde.org/kstars/) veya Stellarium (http://stellarium.org/) uygulamalarını "
 "indirmeyi dene."
 
 #. Help manual
