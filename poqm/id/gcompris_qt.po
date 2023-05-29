@@ -21,7 +21,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris-id\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2023-01-30 01:17+0700\n"
+"PO-Revision-Date: 2023-05-28 11:36+0700\n"
 "Last-Translator: Wantoyèk <wantoyek@gmail.com>\n"
 "Language-Team: Indonesian <kde-i18n-doc@kde.org>\n"
 "Language: id\n"
@@ -29,7 +29,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 22.12.1\n"
+"X-Generator: Lokalize 23.04.0\n"
 "X-Qt-Contexts: true\n"
 "X-Crowdin-Project: gcompris-id\n"
 "X-Crowdin-Project-ID: 481873\n"
@@ -4449,23 +4449,16 @@ msgid "Then, click on the OK button to validate your answer."
 msgstr "Kemudian, klik tombol OK untuk menyetujui jawaban kamu."
 
 #: activities/chronos/ActivityInfo.qml:29
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Moon photo is copyright NASA. The space sounds come from Tuxpaint and "
-#| "Vegastrike which are released under the GPL license. The transportation "
-#| "images are copyright Franck Doucet. Dates of Transportation are based on "
-#| "those found in &lt;https://www.wikipedia.org&gt;."
 msgctxt "ActivityInfo|"
 msgid ""
 "Moon photo is copyright NASA. The transportation images are copyright Franck "
 "Doucet. Dates of Transportation are based on those found in &lt;https://www."
 "wikipedia.org&gt;."
 msgstr ""
-"Hak cipta foto bulan milik NASA. Suara ruang angkasa berasal dari Tuxpaint "
-"dan Vegastrike yang dirilis di bawah lisensi GPL. Hak cipta gambar kendaraan "
-"milik Franck Doucet. Tanggal transportasi berdasarkan tanggal penemuannya "
-"&lt;http://www.wikipedia.org&gt;."
+"Foto rembulan adalah hak cipta milik NASA. Gambar-gambar transportasi adalah "
+"hak cipta milik Franck Doucet. Tanggal-tanggal Transportasi adalah "
+"berdasarkan pada beberapa yang ditemukan di &lt;https://www.wikipedia."
+"org&gt;."
 
 #: activities/chronos/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -4482,22 +4475,22 @@ msgctxt "board1_0|"
 msgid "Moonwalker"
 msgstr "Moonwalker"
 
-#: activities/chronos/resource/board/board1_0.qml:49
+#: activities/chronos/resource/board/board1_0.qml:45
 msgctxt "board1_0|"
 msgid "1"
 msgstr "1"
 
-#: activities/chronos/resource/board/board1_0.qml:57
+#: activities/chronos/resource/board/board1_0.qml:53
 msgctxt "board1_0|"
 msgid "2"
 msgstr "2"
 
-#: activities/chronos/resource/board/board1_0.qml:65
+#: activities/chronos/resource/board/board1_0.qml:61
 msgctxt "board1_0|"
 msgid "3"
 msgstr "3"
 
-#: activities/chronos/resource/board/board1_0.qml:73
+#: activities/chronos/resource/board/board1_0.qml:69
 msgctxt "board1_0|"
 msgid "4"
 msgstr "4"
@@ -25276,20 +25269,14 @@ msgid "Type the complete word as it falls, before it reaches the ground."
 msgstr "Ketiklah kata lengkap ketika jatuh, sebelum mencapai tanah."
 
 #: core/ChangeLog.qml:30
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translation added for Azerbaijani"
 msgctxt "ChangeLog|"
 msgid "Translations added for Arabic and Esperanto"
-msgstr "Terjemahan ditambahkan untuk bahasa Azerbaijan"
+msgstr "Terjemahan ditambahkan untuk bahasa Arab dan Esperanto"
 
 #: core/ChangeLog.qml:31 core/ChangeLog.qml:38
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translation updated for Russian"
 msgctxt "ChangeLog|"
 msgid "Many translation updates"
-msgstr "Pembaruan terjemahan untuk bahasa Rusia"
+msgstr "Banyak pembaruan terjemahan"
 
 #: core/ChangeLog.qml:32 core/ChangeLog.qml:39 core/ChangeLog.qml:52
 #: core/ChangeLog.qml:70 core/ChangeLog.qml:85 core/ChangeLog.qml:90
@@ -25305,18 +25292,13 @@ msgid "Many bug fixes"
 msgstr "Banyak perbaikan kutu"
 
 #: core/ChangeLog.qml:37
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid ""
-#| "New command-line option to list all the activities and start on a "
-#| "specific one"
 msgctxt "ChangeLog|"
 msgid ""
 "New command-line option (--difficulty {value|min-max}) to start GCompris at "
 "specific difficulty"
 msgstr ""
-"Pilihan baris perintah baru untuk mencantumkan semua kegiatan dan memulai "
-"kegiatan tertentu"
+"Opsi baris perintah baru (--difficulty {value|min-max}) untuk memulai "
+"GCompris pada kesulitan spesifik"
 
 #: core/ChangeLog.qml:44
 msgctxt "ChangeLog|"
@@ -26164,6 +26146,8 @@ msgid ""
 "Specify the range of activity difficulty to display for the session. Either "
 "a single value (2), or a range (3-6). Values must be between 1 and 6."
 msgstr ""
+"Menentukan rentang pada kesulitan aktivitas untuk menampilkan sesi. Antara "
+"nilai tunggal (2), atau rentang (3-6). Nilainya harus antara 1 dan 6."
 
 #: core/main.qml:273
 msgctxt "main|"

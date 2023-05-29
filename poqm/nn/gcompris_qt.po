@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_qt\n"
-"PO-Revision-Date: 2023-03-19 14:52+0100\n"
+"PO-Revision-Date: 2023-05-28 15:58+0200\n"
 "Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
 "Language-Team: Norwegian Nynorsk <l10n-no@lister.huftis.org>\n"
 "Language: nn\n"
@@ -18,7 +18,7 @@ msgstr ""
 "X-Environment: kde, gcompris\n"
 "X-Accelerator-Marker: &\n"
 "X-Text-Markup: qtrich\n"
-"X-Generator: Lokalize 22.12.3\n"
+"X-Generator: Lokalize 23.04.1\n"
 
 #. Activity title
 #: activities/advanced_colors/ActivityInfo.qml:15
@@ -4317,6 +4317,7 @@ msgctxt "ActivityInfo|"
 msgid "Then, click on the OK button to validate your answer."
 msgstr "Trykk så på «OK»-knappen for sjekka svaret ditt."
 
+# Har sjekka i README-fila at bileta av både køyretøya og luftfartøya er teikna av Doucet.
 #: activities/chronos/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid ""
@@ -4324,6 +4325,9 @@ msgid ""
 "Doucet. Dates of Transportation are based on those found in &lt;https://www."
 "wikipedia.org&gt;."
 msgstr ""
+"Månebileta er henta frå NASA, som har opphavsretten. Årstala for "
+"oppfinningane er henta frå &lt;https://www.wikipedia.org/&gt;, og bileta av "
+"køyretøya og luftfartøya er teikna av Franck Doucet."
 
 #: activities/chronos/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -25043,7 +25047,7 @@ msgstr "Skriv inn heile orda mens dei dalar ned, før dei når bakken."
 #: core/ChangeLog.qml:30
 msgctxt "ChangeLog|"
 msgid "Translations added for Arabic and Esperanto"
-msgstr ""
+msgstr "Lagt til omsetjing for arabisk og esperanto"
 
 #: core/ChangeLog.qml:31 core/ChangeLog.qml:38
 msgctxt "ChangeLog|"
