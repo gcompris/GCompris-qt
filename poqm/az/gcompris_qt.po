@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2023-04-22 12:00+0400\n"
+"PO-Revision-Date: 2023-05-29 21:43+0400\n"
 "Last-Translator: Kheyyam <xxmn77@gmail.com>\n"
 "Language-Team: Azerbaijani <kde-i18n-doc@kde.org>\n"
 "Language: az\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Qt-Contexts: true\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 22.12.3\n"
+"X-Generator: Lokalize 23.04.1\n"
 
 #. Activity title
 #: activities/advanced_colors/ActivityInfo.qml:15
@@ -4329,24 +4329,15 @@ msgid "Then, click on the OK button to validate your answer."
 msgstr "Sonra isə cavabınızı yoxlamaq üçün OLDU (OK) düyməsinə vurun."
 
 #: activities/chronos/ActivityInfo.qml:29
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Moon photo is copyright NASA. The space sounds come from Tuxpaint and "
-#| "Vegastrike which are released under the GPL license. The transportation "
-#| "images are copyright Franck Doucet. Dates of Transportation are based on "
-#| "those found in &lt;https://www.wikipedia.org&gt;."
 msgctxt "ActivityInfo|"
 msgid ""
 "Moon photo is copyright NASA. The transportation images are copyright Franck "
 "Doucet. Dates of Transportation are based on those found in &lt;https://www."
 "wikipedia.org&gt;."
 msgstr ""
-"Ay şəklinin müəllif hüquqları NASA-ya aiddir. Kosmik səslər GPL lisenziyası "
-"altında buraxılıb və Tuxpaint və Vegastrike'dan alınlb. Nəqliyyat "
-"vasitələrinin şəkillərinin müəllif hüquqları Franck Doucet'ə aiddir. "
-"Nəqliyyat vasitələrinin kəşfi tarixləri &lt;https://www.wikipedia.org&gt; "
-"Vikipediya saytından alınıb."
+"Ay şəklinin müəllif hüquqları NASA-ya aiddir. Nəqliyyat şəkillərinin müəllif "
+"hüquqları Frank Doucet-ə məxsusdur. Daşınma tarixləri &lt;https://www."
+"wikipedia.org&gt; ünvanında tapılanlara əsaslanır."
 
 #: activities/chronos/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -7439,7 +7430,7 @@ msgid ""
 "“houses on the river, churches on the houses, rocks on the churches, castle "
 "on the rock”."
 msgstr ""
-"Kaora'dan uru yolu ilə gələrkən, birdən Rakamodur şəhərciyi üzə çıxır, o "
+"Kaora'dan quru yolu ilə gələrkən, birdən Rakamodur şəhərciyi üzə çıxır, o "
 "sanki Alzu yarğanındakı qayalardan tutaraq dayanaır kimi görünür. Avropanın "
 "ən tanınmış qəsəbələrindən biri olan Rokamadur. ilk baxışda cazibə "
 "qanunlarına meydan oxuyurmuş kimi təəsürat yaradır. Rokamadurun ən yaxşı "
@@ -19662,7 +19653,7 @@ msgid ""
 "left side of Tux and RIGHT moves to the right side of Tux."
 msgstr ""
 "Bu o deməkdir ki, \"yuxarı\", - \"aşağı\" - geri, \"sol\" - Tuks'un soluna, "
-"\"sağ\" - Tuks'un sağına hərəət etdirir."
+"\"sağ\" - Tuks'un sağına hərəkət etdirir."
 
 #. Activity title
 #: activities/path_encoding/ActivityInfo.qml:14
@@ -25002,12 +24993,9 @@ msgid "Type the complete word as it falls, before it reaches the ground."
 msgstr "Yerə çatana qədər sözü tam şəkildə yazmağa çalışın."
 
 #: core/ChangeLog.qml:30
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translation added for Azerbaijani"
 msgctxt "ChangeLog|"
 msgid "Translations added for Arabic and Esperanto"
-msgstr "Azərbaycan dilində tərcümə əlavə olundu"
+msgstr "Ərəb və Esperanto dillərinə tərcümələr əlavə olundu"
 
 #: core/ChangeLog.qml:31 core/ChangeLog.qml:38
 msgctxt "ChangeLog|"

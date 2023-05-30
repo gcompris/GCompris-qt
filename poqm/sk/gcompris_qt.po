@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_qt\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2023-05-11 18:57+0200\n"
+"PO-Revision-Date: 2023-05-29 13:01+0200\n"
 "Last-Translator: Miroslav Ďurian <aasami@gmail.com>\n"
 "Language-Team: Slovak <kde-i18n-doc@kde.org>\n"
 "Language: sk\n"
@@ -2717,9 +2717,6 @@ msgstr "Objavovanie Braillovho systému"
 
 #. Help title
 #: activities/braille_alphabets/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn and memorize the Braille system"
 msgctxt "ActivityInfo|"
 msgid "Learn and memorize the braille system."
 msgstr "Naučiť a zapamätať si Braillovo písmo"
@@ -6994,18 +6991,13 @@ msgstr "Znalosť rôznych pamiatok."
 
 #. Help manual
 #: activities/explore_monuments/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Click on the given keys to learn more of the monuments and then identify "
-#| "where the monuments is on the map by its name."
 msgctxt "ActivityInfo|"
 msgid ""
 "Click on the spots to learn about the monuments and then locate them on the "
 "map."
 msgstr ""
-"Kliknutím na dané tlačidlá sa dozviete viac o monumentoch a potom potom "
-"pomocou názvu určite, kde sú pamätníky na mape."
+"Kliknutím na zobrazené body sa dozviete viac o monumentoch a potom pomocou "
+"názvu určite, kde sú pamätníky na mape."
 
 #: activities/explore_monuments/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
@@ -7340,7 +7332,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board2.qml:109
 msgctxt "board2|"
 msgid "Victoria Memorial"
-msgstr "Viktoriánsky pamätník"
+msgstr "Viktóriin pamätník"
 
 #: activities/explore_monuments/resource/board/board2.qml:107
 msgctxt "board2|"
@@ -16800,7 +16792,7 @@ msgstr ""
 #: activities/mazerelative/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: turn left and right"
-msgstr ""
+msgstr "Šípky vpravo a vľavo: otočiť doprava a doľava"
 
 #: activities/mazerelative/ActivityInfo.qml:32
 msgctxt "ActivityInfo|"
@@ -16875,25 +16867,20 @@ msgstr "Pokračovať"
 #: activities/memory-case-association-tux/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Case association memory game against Tux"
-msgstr "Pexeso spojenia rôznych veľkostí proti Tuxovi"
+msgstr "Pexeso spojenia písmen rôznych veľkostí proti Tuxovi"
 
 #. Help title
 #: activities/memory-case-association-tux/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Flip the cards to find the matching pairs against Tux"
 msgctxt "ActivityInfo|"
 msgid ""
 "Flip the cards to find the uppercase and lowercase of the same letter, "
 "playing against Tux."
-msgstr "Pretočiť karty pre nájdenie zodpovedajúcich párov proti Tuxovi"
+msgstr ""
+"Obracajte karty s rovnakým písmenom veľkým a malým písmom, proti Tuxovi."
 
 #. Help goal
 #: activities/memory-case-association-tux/ActivityInfo.qml:20
 #: activities/memory-case-association/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learning lower and upper case alphabets, memory."
 msgctxt "ActivityInfo|"
 msgid "Learning lowercase and uppercase letters, memory."
 msgstr "Učenie sa malých a veľkých písmen, pamäť."
@@ -16903,7 +16890,7 @@ msgstr "Učenie sa malých a veľkých písmen, pamäť."
 #: activities/memory-case-association/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid "Knowing alphabets."
-msgstr "Poznanie abecied."
+msgstr "Poznanie písmen."
 
 #. Help manual
 #: activities/memory-case-association-tux/ActivityInfo.qml:24
@@ -16913,6 +16900,8 @@ msgid ""
 "Each card is hiding a letter, lowercase or uppercase. You have to match the "
 "lowercase and uppercase of the same letter."
 msgstr ""
+"Každá karta ukrýva malé alebo veľké písmeno. Obracajte karty aby ste našli "
+"rovnaké písmeno písané veľkým a malým písmom."
 
 #: activities/memory-case-association-tux/ActivityInfo.qml:27
 #: activities/memory-case-association/ActivityInfo.qml:27
@@ -16938,7 +16927,7 @@ msgstr ""
 #: activities/memory/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Space or Enter: flip the selected card"
-msgstr "Medzerník alebo Enter: otočiť zvolenú kartu"
+msgstr "Medzerník alebo Enter: obrátiť zvolenú kartu"
 
 #: activities/memory-case-association/ActivityConfig.qml:23
 #: activities/memory-enumerate/ActivityConfig.qml:23
@@ -16999,27 +16988,25 @@ msgstr "Pexeso spojenia rôznych veľkostí"
 msgctxt "ActivityInfo|"
 msgid "Flip the cards to find the uppercase and lowercase of the same letter."
 msgstr ""
+"Obracajte karty aby ste našli rovnaké písmeno písané veľkým a malým písmom."
 
 #. Activity title
 #: activities/memory-enumerate/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Enumeration memory game"
-msgstr "Pamäťová hra na spočítavanie"
+msgstr "Počítacie Pexeso"
 
 #. Help title
 #: activities/memory-enumerate/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Turn the cards over to match the number with the drawn picture."
 msgctxt "ActivityInfo|"
 msgid "Flip the cards to match a number with a picture."
-msgstr "Otáčaj karty tak, aby číslo zodpovedalo nakreslenému obrázku."
+msgstr "Obracaj karty tak, aby číslo zodpovedalo nakreslenému obrázku."
 
 #. Help goal
 #: activities/memory-enumerate/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Numeration training, memory."
-msgstr "Trénovanie počítania spamäti."
+msgstr "Trénovanie počítania, pamäť."
 
 #. Help manual
 #: activities/memory-enumerate/ActivityInfo.qml:24
@@ -17028,6 +17015,8 @@ msgid ""
 "Each card is hiding either a picture with a number of items, or a number. "
 "You have to match the numbers with the corresponding pictures."
 msgstr ""
+"Každá karta ukrýva buď obrázok s niekoľkými položkami, alebo číslo. Musíte "
+"nájsť číslo, ktoré zodpovedá počtu položiek na obrázkoch."
 
 #: activities/memory-enumerate/resource/1/Data.qml:17
 msgctxt "Data|"
@@ -17073,37 +17062,30 @@ msgstr "Dvojice čísel do 9."
 #: activities/memory-math-add-minus-mult-div-tux/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "All operations memory game against Tux"
-msgstr "Pamäťová hra na všetky operácie proti Tuxovi"
+msgstr "Pexeso na všetky operácie proti Tuxovi"
 
 #. Help title
 #: activities/memory-math-add-minus-mult-div-tux/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Flip the cards to find the matching pairs against Tux"
 msgctxt "ActivityInfo|"
 msgid ""
 "Flip the cards to match an operation with its result, playing against Tux."
-msgstr "Pretočiť karty pre nájdenie zodpovedajúcich párov proti Tuxovi"
+msgstr ""
+"Postupným obracaním kariet nájdite dvojicu operácia - výsledok v hre proti "
+"Tuxovi."
 
 #. Help goal
 #: activities/memory-math-add-minus-mult-div-tux/ActivityInfo.qml:20
 #: activities/memory-math-add-minus-mult-div/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice addition, subtraction, multiplication and division."
 msgctxt "ActivityInfo|"
 msgid "Practice additions, subtractions, multiplications, divisions."
-msgstr "Precvič si sčítanie, odčítanie, násobenie a delenie."
+msgstr "Precvičovanie si sčítania, odčítania, násobenia a delenia."
 
 #. Help prerequisite
 #: activities/memory-math-add-minus-mult-div-tux/ActivityInfo.qml:22
 #: activities/memory-math-add-minus-mult-div/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Addition, subtraction, multiplication, division"
 msgctxt "ActivityInfo|"
 msgid "Additions, subtractions, multiplications, divisions."
-msgstr "Sčítanie, odčítanie, násobenie, delenie"
+msgstr "Sčítanie, odčítanie, násobenie, delenie."
 
 #. Help manual
 #: activities/memory-math-add-minus-mult-div-tux/ActivityInfo.qml:24
@@ -17113,6 +17095,8 @@ msgid ""
 "Each card is hiding either an operation, or a result. You have to match the "
 "operations with their result."
 msgstr ""
+"Každá karta ukrýva buď operáciu alebo výsledok. Musíte spárovať operáciu so "
+"správnym výsledkom."
 
 #: activities/memory-math-add-minus-mult-div-tux/resource/1/Data.qml:15
 #: activities/memory-math-add-minus-mult-div/resource/1/Data.qml:15
@@ -17818,14 +17802,6 @@ msgstr "Precvičte si svoju zvukovú pamäť."
 #. Help manual
 #: activities/memory-sound-tux/ActivityInfo.qml:24
 #: activities/memory-sound/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "A set of cards is shown. Each card has an associated sound, and each "
-#| "sound has a twin exactly the same. Click on a card to hear its hidden "
-#| "sound, and try to match the twins. You can only activate two cards at "
-#| "once, so you need to remember where a sound is, while you listen to its "
-#| "twin. When you turn over the twins, they both disappear."
 msgctxt "ActivityInfo|"
 msgid ""
 "Each card plays a sound when you flip it, and each card has a twin with "
@@ -17834,44 +17810,35 @@ msgid ""
 "remember where a sound is, while you search for its twin. When you flip the "
 "twins, they both disappear."
 msgstr ""
-"Zobrazí sa sada kariet. Každá karta má pridružené zvuk a každý zvuk má "
-"presne rovnaké dvojča. Kliknite na kartu, aby ste si vypočuli jeho skrytý "
-"zvuk, a snažte sa dať dokopy dvojčatá. Môžete aktivovať len dve karty naraz, "
-"takže je potrebné pamätať si, kde je zvuk, zatiaľ čo budete počúvať jeho "
-"dvojča. Keď obrátite dvojčatá, obe zmiznú."
+"Každá karta pri obrátení prehrá zvuk, a každá karta má dvojicu s rovnakým "
+"zvukom. Kliknite na kartu, aby ste si vypočuli jeho skrytý zvuk, a snažte sa "
+"nájsť rovnozvučné dvojice. Môžete obrátiť len dve karty naraz, takže je "
+"potrebné pamätať si, kde bol daný zvuk, zatiaľ čo budete počúvať jeho "
+"dvojicu. Keď obrátite správne dvojicu, obe karty zmiznú."
 
 #. Activity title
 #: activities/memory-sound/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Audio memory game"
-msgstr "Zvuková pamäťová hra"
+msgstr "Zvukové pexeso"
 
 #. Help title
 #: activities/memory-sound/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Flip the cards to find the matching pairs"
 msgctxt "ActivityInfo|"
 msgid "Flip the cards to match the sound pairs."
-msgstr "Otáčaj karty a nájdi zhodné páry"
+msgstr "Obracaj karty a nájdi zhodné páry"
 
 #. Activity title
 #: activities/memory-tux/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Memory Game with images against Tux"
 msgctxt "ActivityInfo|"
 msgid "Memory game with images against Tux"
-msgstr "Pamäťová hra s obrázkami proti Tuxovi"
+msgstr "Pexeso obrázkami proti Tuxovi"
 
 #. Help title
 #: activities/memory-tux/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Flip the cards to find the matching pairs against Tux"
 msgctxt "ActivityInfo|"
 msgid "Flip the cards to find the matching pairs, playing against Tux."
-msgstr "Pretočiť karty pre nájdenie zodpovedajúcich párov proti Tuxovi"
+msgstr "Otočte karty a nájdite rovnaké páry v hre proti Tuxovi."
 
 #. Help goal
 #: activities/memory-tux/ActivityInfo.qml:20
@@ -17883,14 +17850,6 @@ msgstr "Precvič si svoju pamäť a vyzbieraj všetky karty."
 #. Help manual
 #: activities/memory-tux/ActivityInfo.qml:24
 #: activities/memory/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "A set of blank cards is shown. Each card has a picture on the other side, "
-#| "and each picture card has a twin exactly the same. Click on a card to see "
-#| "its hidden picture, and try to match the twins. You can only turn over "
-#| "two cards at once, so you need to remember where a picture is, while you "
-#| "look for its twin. When you turn over the twins, they both disappear."
 msgctxt "ActivityInfo|"
 msgid ""
 "Each card has a picture on the hidden side, and each card has a twin with "
@@ -17899,32 +17858,29 @@ msgid ""
 "remember where a picture is, while you look for its twin. When you flip the "
 "twins, they both disappear."
 msgstr ""
-"Je ukázaná sada prázdnych kariet. Každá karta má obrázok na druhej strane a "
-"každá obrázková karta má presne rovnaké dvojča. Kliknite na kartu, aby ste "
-"videli jej skrytý obrázok, a snažte sa zosúladiť dvojice. Môžete obrátiť iba "
-"dve karty naraz, takže si musíte pamätať, kde je obrázok, kým hľadáte jeho "
-"dvojča. Keď obrátite dvojicu, obe zmiznú."
+"Každá karta má na spodnej strane obrázok a každá karta má dvojča s úplne "
+"rovnakým obrázkom. Kliknite na kartu pre jej obrátenie a nájdite rovnakú "
+"dvojicu. Naraz je možné obrátiť len dve karty takže si musíte zapamätať kde "
+"sa obrázok nachádza, kým nenájdete jeho dvojicu. Keď brátite dvojicu, obe "
+"karty zmiznú."
 
 #. Activity title
 #: activities/memory-wordnumber/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Wordnumber memory game"
-msgstr "Pamäťová hra so sčítavaním slov"
+msgstr "Pexeso so slovnými čislami"
 
 #. Help title
 #: activities/memory-wordnumber/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Turn the cards over to match the number with the drawn picture."
 msgctxt "ActivityInfo|"
 msgid "Flip the cards to match a numeral with its number name."
-msgstr "Otáčaj karty tak, aby číslo zodpovedalo nakreslenému obrázku."
+msgstr "Obracaj karty tak, aby číslo zodpovedalo jeho slovnému pomenovaniu."
 
 #. Help goal
 #: activities/memory-wordnumber/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Reading numbers, memory."
-msgstr "Čítanie čísel, pamäťová hra."
+msgstr "Čítanie čísel, pamäť."
 
 #. Help manual
 #: activities/memory-wordnumber/ActivityInfo.qml:24
@@ -17934,6 +17890,9 @@ msgid ""
 "number name (a number written in words). You have to match the numerals with "
 "the corresponding number names."
 msgstr ""
+"Každá karta ukrýva buď číslo (zapísané číslicami), alebo jeho pomenovanie "
+"(číslo zapísané slovne). Vašou úlohou je priradiť číslo v číselnej podobe "
+"jeho slovnému pomenovaniu."
 
 #: activities/memory-wordnumber/dataset.js:11
 msgctxt "dataset|"
@@ -18044,7 +18003,7 @@ msgstr "dvadsať"
 #: activities/memory/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Memory game with images"
-msgstr "Pamäťová hra s obrázkami"
+msgstr "Pexeso s obrázkami"
 
 #. Help title
 #: activities/memory/ActivityInfo.qml:17
@@ -18601,6 +18560,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Thanks to the Tuxpaint team for providing the following sounds under GPL:"
 msgstr ""
+"Ďakujeme tímu Tuxpaint za poskytnutie nasledujúcich zvukov pod licenciou GPL:"
 
 #: activities/mining/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
@@ -21662,7 +21622,7 @@ msgstr "Presuňte ponorku na druhú stranu obrazovky."
 #: activities/railroad/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid "Memory training."
-msgstr "Tréning pamäte."
+msgstr "Cvičenie pamäte."
 
 #. Help manual
 #: activities/railroad/ActivityInfo.qml:26
@@ -26025,6 +25985,9 @@ msgid ""
 "please visit <a href='https://gcompris.net/donate-en.html'>https://gcompris."
 "net/donate-en.html</a>."
 msgstr ""
+"Môžete poskytnúť finančnú podporu na vývoj <b>GComprisu</b>, prosím "
+"navštívte <a href='https://gcompris.net/donate-sk.html'>https://gcompris.net/"
+"donate-sk.html</a>."
 
 #: core/DialogAbout.qml:72
 msgctxt "DialogAbout|"
