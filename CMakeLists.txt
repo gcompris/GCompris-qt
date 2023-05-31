@@ -30,6 +30,8 @@ endif()
 # Set the BUILD_DATE
 string(TIMESTAMP BUILD_DATE %Y%m)
 
+include(FeatureSummary)
+
 # cmake modules setup
 find_package(ECM 1.4.0 QUIET NO_MODULE)
 set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH} ${CMAKE_SOURCE_DIR}/cmake/)
@@ -93,15 +95,24 @@ if("${CMAKE_BINARY_DIR}" STREQUAL "${CMAKE_SOURCE_DIR}")
             directory and create a build directory and call \"${CMAKE_COMMAND} <path to the sources>\".")
 endif()
 
-find_package(Qt5 ${QT_REQUIRED_VERSION} REQUIRED
-    Qml Quick Gui Multimedia Core Svg LinguistTools Sensors QuickControls2 QuickTemplates2 Charts)
+set(QT_COMPONENTS Qml Quick Gui Multimedia Core Svg Network LinguistTools Sensors QuickControls2 QuickTemplates2 Charts QmlModels Widgets)
+find_package(Qt5 ${QT_REQUIRED_VERSION} COMPONENTS
+    ${QT_COMPONENTS})
+
+set_package_properties(Qt5 PROPERTIES TYPE REQUIRED)
+foreach(COMPONENT ${QT_COMPONENTS})
+  set_package_properties(Qt5${COMPONENT} PROPERTIES TYPE REQUIRED)
+endforeach()
 
 if(Qt5Widgets_VERSION VERSION_GREATER_EQUAL "5.15.0")
-  find_package(Qt5 ${QT_REQUIRED_VERSION} REQUIRED QmlWorkerScript QuickParticles)
+  find_package(Qt5 ${QT_REQUIRED_VERSION} COMPONENTS QmlWorkerScript QuickParticles)
+  set_package_properties(Qt5QmlWorkerScript PROPERTIES TYPE REQUIRED)
+  set_package_properties(Qt5QuickParticles PROPERTIES TYPE REQUIRED)
 endif()
 
 if(ANDROID)
-    find_package(Qt5 ${QT_REQUIRED_VERSION} REQUIRED AndroidExtras)
+    find_package(Qt5 ${QT_REQUIRED_VERSION} COMPONENTS AndroidExtras)
+    set_package_properties(Qt5AndroidExtras PROPERTIES TYPE REQUIRED)
 endif()
 
 # Starting C++20, emit() is a function in standard library. To avoid using Qt keywords like signals, slots, emit, we define this variable
@@ -113,7 +124,8 @@ add_definitions(-DQT_NO_KEYWORDS)
 # endif()
 
 if((UNIX AND NOT APPLE AND NOT ANDROID) OR WIN32)
-    find_package(OpenSSL REQUIRED)
+    find_package(OpenSSL)
+    set_package_properties(OpenSSL PROPERTIES TYPE REQUIRED)
 endif()
 
 
@@ -121,6 +133,8 @@ option(COMPILE_DOC "Enable compilation of GCompris docbook" OFF)
 if(COMPILE_DOC)
   find_package(KF5 QUIET COMPONENTS DocTools)
 endif()
+
+feature_summary(WHAT ALL INCLUDE_QUIET_PACKAGES FATAL_ON_MISSING_REQUIRED_PACKAGES)
 
 if(ECM_FOUND)
     include(KDEInstallDirs)
