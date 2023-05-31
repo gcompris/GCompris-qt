@@ -39,7 +39,6 @@ set(CMAKE_PREFIX_PATH "${Qt5_DIR}/")
 
 # KDE po to qm tools
 if(ECM_FOUND)
-  include(kdeFetchTranslation)
   include(ECMAddTests)
 
   option(BUILD_TESTING "Build and enable unit tests" OFF)
