@@ -3,14 +3,14 @@
 # charruau <echarruau@gmail.com>, 2016, 2017, 2018, 2020, 2021, 2022.
 # Simon Depiets <sdepiets@gmail.com>, 2018.
 # Christian Wiatrowski <w9204-wi@yahoo.com>, 2018.
-# Xavier Besnard <xavier.besnard@neuf.fr>, 2020, 2021, 2022.
+# Xavier Besnard <xavier.besnard@neuf.fr>, 2020, 2021, 2022, 2023.
 # Timothée Giet <animtim@gmail.com>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2022-12-21 20:47+0100\n"
-"Last-Translator: charruau <echarruau@gmail.com>\n"
-"Language-Team: French <kde-francophone@kde.org>\n"
+"PO-Revision-Date: 2023-05-30 21:55+0200\n"
+"Last-Translator: Xavier BESNARD <xavier.besnard@neuf.fr>\n"
+"Language-Team: fr\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,7 +19,7 @@ msgstr ""
 "X-Language: fr\n"
 "X-Qt-Contexts: true\n"
 "X-Qt-Contexts: true\n"
-"X-Generator: Lokalize 22.12.0\n"
+"X-Generator: Lokalize 22.12.3\n"
 "X-Environment: kde\n"
 "X-Accelerator-Marker: &\n"
 "X-Text-Markup: qtrich\n"
@@ -4482,23 +4482,15 @@ msgid "Then, click on the OK button to validate your answer."
 msgstr "Puis clique sur le bouton « Ok » pour confirmer ta réponse."
 
 #: activities/chronos/ActivityInfo.qml:29
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Moon photo is copyright NASA. The space sounds come from Tuxpaint and "
-#| "Vegastrike which are released under the GPL license. The transportation "
-#| "images are copyright Franck Doucet. Dates of Transportation are based on "
-#| "those found in &lt;https://www.wikipedia.org&gt;."
 msgctxt "ActivityInfo|"
 msgid ""
 "Moon photo is copyright NASA. The transportation images are copyright Franck "
 "Doucet. Dates of Transportation are based on those found in &lt;https://www."
 "wikipedia.org&gt;."
 msgstr ""
-"Les photos de la lune viennent de la NASA. Les sons de l'espace viennent de "
-"Tuxpaint et Vegastrike, ils sont sous licence GPL. Les images des moyens de "
-"transport sont la propriété de Franck Doucet. Les dates historiques des "
-"moyens de transport proviennent de &lt;https://www.wikipedia.org&gt;."
+"La photo de la lune sont propriétés de la NASA. Les images des moyens de "
+"transport sont la propriété de Franck Doucet. Les dates des moyens de "
+"transport proviennent de &lt;https://www.wikipedia.org&gt;."
 
 #: activities/chronos/resource/1/Data.qml:13
 msgctxt "Data|"

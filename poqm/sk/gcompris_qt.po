@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_qt\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2023-05-29 13:01+0200\n"
+"PO-Revision-Date: 2023-05-31 15:56+0200\n"
 "Last-Translator: Miroslav Ďurian <aasami@gmail.com>\n"
 "Language-Team: Slovak <kde-i18n-doc@kde.org>\n"
 "Language: sk\n"
@@ -1560,18 +1560,13 @@ msgid ""
 msgstr ""
 
 #: activities/analog_electricity/TutorialDataset.qml:103
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid ""
-#| "For a more detailed description about the gate, select it and click on "
-#| "the info button."
 msgctxt "TutorialDataset|"
 msgid ""
 "For a detailed description of battery and bulb, click on those and then "
 "click on the info button."
 msgstr ""
-"Ak chcete získať podrobnejší popis hradla, vyberte ho a kliknite na "
-"informačné tlačidlo."
+"Ak chcete získať podrobnejší popis batérie a žiarovky, kliknite na ne a "
+"potom kliknite na informačné tlačidlo."
 
 #: activities/analog_electricity/TutorialDataset.qml:104
 msgctxt "TutorialDataset|"
@@ -1631,12 +1626,9 @@ msgid ""
 msgstr ""
 
 #: activities/analog_electricity/TutorialDataset.qml:135
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Draw the numbers by connecting the dots in the correct order."
 msgctxt "TutorialDataset|"
 msgid "Break the bulb by connecting it with the two batteries."
-msgstr "Nakresli čísla prepojením bodov v správnom poradí."
+msgstr "Prasknite žiarovku pripojením k dvom batériám."
 
 #: activities/analog_electricity/TutorialDataset.qml:148
 msgctxt "TutorialDataset|"
@@ -14529,12 +14521,9 @@ msgstr "Hanojské veže"
 
 #. Help title
 #: activities/hanoi_real/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Reproduce the tower on the right side"
 msgctxt "ActivityInfo|"
 msgid "Move the tower to the right side."
-msgstr "Reprodukovať vežu na pravej strane"
+msgstr "Presuňte vežu na pravú stranu."
 
 #. Help goal
 #: activities/hanoi_real/ActivityInfo.qml:20
@@ -17215,7 +17204,7 @@ msgstr "Otáčaj karty a nájdi zhodné páry"
 #: activities/memory-math-add-minus-tux/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Addition and subtraction memory game against Tux"
-msgstr "Pamäťová hra na sčítanie a odčítanie proti Tuxovi"
+msgstr "Pexeso na sčítanie a odčítanie proti Tuxovi"
 
 #. Help title
 #: activities/memory-math-add-minus-tux/ActivityInfo.qml:17
@@ -17262,7 +17251,7 @@ msgstr ""
 #: activities/memory-math-add-minus/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Addition and subtraction memory game"
-msgstr "Pamäťová hra na sčítanie a odčítanie"
+msgstr "Pexeso na sčítanie a odčítanie"
 
 #. Help title
 #: activities/memory-math-add-minus/ActivityInfo.qml:17
@@ -17274,7 +17263,7 @@ msgstr ""
 #: activities/memory-math-add-tux/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Addition memory game against Tux"
-msgstr "Pamäťová hra so sčítavaním proti Tuxovi"
+msgstr "Pexeso so sčítavaním proti Tuxovi"
 
 #. Help title
 #: activities/memory-math-add-tux/ActivityInfo.qml:17
@@ -17381,7 +17370,7 @@ msgstr "Otáčaj karty a nájdi zhodné páry"
 #: activities/memory-math-div-tux/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Division memory game against Tux"
-msgstr "Pamäťová hra na delenie proti Tuxovi"
+msgstr "Pexeso na delenie proti Tuxovi"
 
 #. Help title
 #: activities/memory-math-div-tux/ActivityInfo.qml:17
@@ -17500,7 +17489,7 @@ msgstr "Divízie"
 #: activities/memory-math-minus-tux/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Subtraction memory game against Tux"
-msgstr "Pamäťová hra na odčítanie proti Tuxovi"
+msgstr "Pexeso na odčítanie proti Tuxovi"
 
 #. Help title
 #: activities/memory-math-minus-tux/ActivityInfo.qml:17
@@ -17592,7 +17581,7 @@ msgstr "Tabuľka odčítavania 9."
 #: activities/memory-math-minus/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Subtraction memory game"
-msgstr "Pamäťová hra na odčítavanie"
+msgstr "Pexeso na odčítavanie"
 
 #. Help title
 #: activities/memory-math-minus/ActivityInfo.qml:17
@@ -17607,7 +17596,7 @@ msgstr "Otáčaj karty a nájdi zhodné páry"
 #: activities/memory-math-mult-div-tux/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Multiplication and division memory game against Tux"
-msgstr "Pamäťová hra na násobenie a delenie proti Tuxovi"
+msgstr "Pexeso na násobenie a delenie proti Tuxovi"
 
 #. Help title
 #: activities/memory-math-mult-div-tux/ActivityInfo.qml:17
@@ -17647,7 +17636,7 @@ msgstr ""
 #: activities/memory-math-mult-div/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Multiplication and division memory game"
-msgstr "Pamäťová hra na násobenie a delenie"
+msgstr "Pexeso na násobenie a delenie"
 
 #. Help title
 #: activities/memory-math-mult-div/ActivityInfo.qml:17
@@ -17659,7 +17648,7 @@ msgstr ""
 #: activities/memory-math-mult-tux/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Multiplication memory game against Tux"
-msgstr "Pamäťová hra na násobenie proti Tuxovi"
+msgstr "Pexeso na násobenie proti Tuxovi"
 
 #. Help title
 #: activities/memory-math-mult-tux/ActivityInfo.qml:17
@@ -17781,7 +17770,7 @@ msgstr ""
 #: activities/memory-sound-tux/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Audio memory game against Tux"
-msgstr "Zvuková pamäťová hra proti Tuxovi"
+msgstr "Zvukové Pexeso proti Tuxovi"
 
 #. Help title
 #: activities/memory-sound-tux/ActivityInfo.qml:17
@@ -19852,12 +19841,9 @@ msgstr "Hrať oware (proti Tuxovi)"
 
 #. Help title
 #: activities/oware/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Play the audio memory game against Tux"
 msgctxt "ActivityInfo|"
 msgid "Play the Oware strategy game against Tux."
-msgstr "Zahraj si zvukovú pamäťovú hru proti Tuxovi"
+msgstr "Zahraj si strategickú hru Oware proti Tuxovi."
 
 #. Help goal
 #: activities/oware/ActivityInfo.qml:19
@@ -19923,12 +19909,9 @@ msgstr "Hrať oware (s kamarátom)"
 
 #. Help title
 #: activities/oware_2players/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Bargame (with a friend)"
 msgctxt "ActivityInfo|"
 msgid "Play the Oware strategy game with a friend."
-msgstr "Barová hra (s priateľom)"
+msgstr "Zahraj si strategickú hru Oware (s kamarátom)"
 
 #. Activity title
 #: activities/paintings/ActivityInfo.qml:20
@@ -25573,12 +25556,9 @@ msgid "Type the complete word as it falls, before it reaches the ground."
 msgstr "Napíš padajúce slovo na klávesnici skôr ako dopadne na zem."
 
 #: core/ChangeLog.qml:30
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translation added for Macedonian."
 msgctxt "ChangeLog|"
 msgid "Translations added for Arabic and Esperanto"
-msgstr "Pridané preklady pre Macedónčinu."
+msgstr "Pridané preklady pre Arabčinu a Esperanto"
 
 #: core/ChangeLog.qml:31 core/ChangeLog.qml:38
 msgctxt "ChangeLog|"
@@ -25641,12 +25621,9 @@ msgid ""
 msgstr ""
 
 #: core/ChangeLog.qml:58
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "New speed setting in several activities."
 msgctxt "ChangeLog|"
 msgid "Improve images quality in several activities"
-msgstr "New speed setting in several activities."
+msgstr "Vylepšená kvalita obrázkov vo viacerých aktivitách"
 
 #: core/ChangeLog.qml:59
 msgctxt "ChangeLog|"
@@ -25685,20 +25662,14 @@ msgid "New voices for Norwegian Nynorsk"
 msgstr "Nové hlasové odozvy nórsky (Nynorsk)"
 
 #: core/ChangeLog.qml:76
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translation added for Macedonian."
 msgctxt "ChangeLog|"
 msgid "Translations added for Breton, Czech and Macedonian"
-msgstr "Pridané preklady pre Macedónčinu."
+msgstr "Pridané preklady pre Bretónčinu, Češtinu a Macedónčinu."
 
 #: core/ChangeLog.qml:81
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translation added for Macedonian."
 msgctxt "ChangeLog|"
 msgid "Translation added for Azerbaijani"
-msgstr "Pridané preklady pre Macedónčinu."
+msgstr "Pridané preklady pre Azerbajdžančinu"
 
 #: core/ChangeLog.qml:82
 msgctxt "ChangeLog|"
