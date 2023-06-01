@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GCompris 5\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2023-03-20 13:41+0100\n"
+"PO-Revision-Date: 2023-05-31 13:44+0200\n"
 "Last-Translator: Envel Kervoas <envelkervoas@free.fr>\n"
 "Language-Team: Breton <kde-i18n-doc@kde.org>\n"
 "Language: br\n"
@@ -10742,7 +10742,7 @@ msgstr "Madrid"
 #: activities/geo-country/resource/board/board18_0.qml:36
 msgctxt "board18_0|"
 msgid "Galicia"
-msgstr "Galisia"
+msgstr "Galiza"
 
 #. Autonomous communities of Spain: Castile and León
 #: activities/geo-country/resource/board/board18_0.qml:43
@@ -25074,12 +25074,9 @@ msgstr ""
 "gantañ."
 
 #: core/ChangeLog.qml:30
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translation added for Azerbaijani"
 msgctxt "ChangeLog|"
 msgid "Translations added for Arabic and Esperanto"
-msgstr "Ouzhpennet eo bet an droidigezh evit ar Azerbaijani"
+msgstr "Ouzhpennet eo bet an troidigezhioù evit an Arabeg hag an Esperanto"
 
 #: core/ChangeLog.qml:31 core/ChangeLog.qml:38
 msgctxt "ChangeLog|"
@@ -25391,7 +25388,7 @@ msgstr ""
 #: core/ChangeLog.qml:123
 msgctxt "ChangeLog|"
 msgid "Translations added for: Slovenian, German, Galician."
-msgstr "Troidigezhioù ouzhpennet evit: Sloveneg, Alamaneg, Galisianeg."
+msgstr "Troidigezhioù ouzhpennet evit: Sloveneg, Alamaneg, Galizeg."
 
 #: core/ChangeLog.qml:148
 #, qt-format
