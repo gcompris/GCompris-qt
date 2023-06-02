@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2023-03-19 11:43+0200\n"
+"PO-Revision-Date: 2023-06-01 08:36+0200\n"
 "Last-Translator: Horia PELLE <horricane@gmail.com>\n"
 "Language-Team: Romanian <kde-i18n-doc@kde.org>\n"
 "Language: ro\n"
@@ -25318,12 +25318,9 @@ msgid "Type the complete word as it falls, before it reaches the ground."
 msgstr "Scrie tot cuvântul care cade, înainte ca el să atingă pământul."
 
 #: core/ChangeLog.qml:30
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translation added for Azerbaijani"
 msgctxt "ChangeLog|"
 msgid "Translations added for Arabic and Esperanto"
-msgstr "S-a adăugat traducerea pentru limba azeră"
+msgstr "S-au adăugat traduceri pentru limbile arabă și esperanto."
 
 #: core/ChangeLog.qml:31 core/ChangeLog.qml:38
 msgctxt "ChangeLog|"

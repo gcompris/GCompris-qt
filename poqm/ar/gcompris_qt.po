@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2023-05-20 12:46+0400\n"
+"PO-Revision-Date: 2023-06-01 09:41+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
 "Language: ar\n"
@@ -4216,22 +4216,14 @@ msgid "Then, click on the OK button to validate your answer."
 msgstr "ثم، انقر على زر\"موافق\" لتأكيد إجابتك."
 
 #: activities/chronos/ActivityInfo.qml:29
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Moon photo is copyright NASA. The space sounds come from Tuxpaint and "
-#| "Vegastrike which are released under the GPL license. The transportation "
-#| "images are copyright Franck Doucet. Dates of Transportation are based on "
-#| "those found in &lt;https://www.wikipedia.org&gt;."
 msgctxt "ActivityInfo|"
 msgid ""
 "Moon photo is copyright NASA. The transportation images are copyright Franck "
 "Doucet. Dates of Transportation are based on those found in &lt;https://www."
 "wikipedia.org&gt;."
 msgstr ""
-"حقوق صور القمر محفوظة لوكالة ناسا. أصوات الفضاء من برنامجي Tuxpaint و "
-"Vegastrike المرخصتين برخصة GPL. حقوق صور وسائل النقل محفوظة لـFranck Doucet. "
-"تواريخ وسائل النقل أخذت من  &lt;https://www.wikipedia.org&gt;."
+"حقوق صور القمر محفوظة لوكالة ناسا. حقوق صور وسائل النقل محفوظة لـFranck "
+"Doucet. تواريخ وسائل النقل أخذت من  &lt;https://www.wikipedia.org&gt;."
 
 #: activities/chronos/resource/1/Data.qml:13
 msgctxt "Data|"
