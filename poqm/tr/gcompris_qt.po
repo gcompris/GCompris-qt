@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2023-05-28 11:34+0300\n"
+"PO-Revision-Date: 2023-06-04 01:40+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 23.04.1\n"
+"X-Generator: Lokalize 23.07.70\n"
 "X-Qt-Contexts: true\n"
 
 #. Activity title
@@ -200,7 +200,7 @@ msgstr "Oklar: Dolaş"
 #: activities/money_cents/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Space or Enter: select an item"
-msgstr "Boşluk veya Enter: Bir öge seç"
+msgstr "Boşluk veya Giriş: Bir öge seç"
 
 #. Look at https://gcompris.net/wiki/Advanced_color_translation to see all the advanced colors Color #FF7F50
 #. ----------
@@ -21192,7 +21192,7 @@ msgstr "Oklar: Izgarada dolaş"
 #: activities/simplepaint/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Space or Enter: paint"
-msgstr "Boşluk veya Enter: Boya"
+msgstr "Boşluk veya Giriş: Boya"
 
 #: activities/redraw/resource/1/Data.qml:14
 msgctxt "Data|"

@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GCompris\n"
 "POT-Creation-Date: 2018-11-30 13:03+0000\n"
-"PO-Revision-Date: 2023-04-09 11:05+0200\n"
+"PO-Revision-Date: 2023-06-03 07:00+0200\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
 "Language: eu\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 22.12.3\n"
+"X-Generator: Lokalize 23.04.1\n"
 "X-Qt-Contexts: true\n"
 
 #. Activity title
@@ -4352,23 +4352,15 @@ msgid "Then, click on the OK button to validate your answer."
 msgstr "Ondoren, egin klik «Ados» botoiari zure erantzuna balioztatzeko."
 
 #: activities/chronos/ActivityInfo.qml:29
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Moon photo is copyright NASA. The space sounds come from Tuxpaint and "
-#| "Vegastrike which are released under the GPL license. The transportation "
-#| "images are copyright Franck Doucet. Dates of Transportation are based on "
-#| "those found in &lt;https://www.wikipedia.org&gt;."
 msgctxt "ActivityInfo|"
 msgid ""
 "Moon photo is copyright NASA. The transportation images are copyright Franck "
 "Doucet. Dates of Transportation are based on those found in &lt;https://www."
 "wikipedia.org&gt;."
 msgstr ""
-"Ilargiaren argazkia NASA-rena da. Espazioko soinuak Tuxpaint eta Vegastrike-"
-"etik datoz eta GPL lizentziapean argitaratu dira. Garraiatze irudiak Frank "
-"Doucet-enak dira. Garraiatze datak hemen topatzen direnetan oinarrituta "
-"daude &lt;http://www.wikipedia.org&gt;."
+"Ilargiaren argazkiak NASA-ren kopia eskubidea du. Garraiatze irudiak Frank "
+"Doucet-en kopia eskubidea dute. Garraiatze datak Wikipedian "
+"aurkitatutakoetan &lt;http://www.wikipedia.org&gt; oinarritzen dira."
 
 #: activities/chronos/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -25128,12 +25120,9 @@ msgid "Type the complete word as it falls, before it reaches the ground."
 msgstr "Tekleatu hitz osoa erortzen ari den bitartean, lurra ukitu aurretik."
 
 #: core/ChangeLog.qml:30
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translation added for Azerbaijani"
 msgctxt "ChangeLog|"
 msgid "Translations added for Arabic and Esperanto"
-msgstr "Azerbaijaneraren itzulpena gehitu da"
+msgstr "Arabieraren eta Esperantoaren itzulpenak gehitu dira"
 
 #: core/ChangeLog.qml:31 core/ChangeLog.qml:38
 msgctxt "ChangeLog|"
