@@ -94,7 +94,7 @@ if("${CMAKE_BINARY_DIR}" STREQUAL "${CMAKE_SOURCE_DIR}")
             directory and create a build directory and call \"${CMAKE_COMMAND} <path to the sources>\".")
 endif()
 
-set(QT_COMPONENTS Qml Quick Gui Multimedia Core Svg Network LinguistTools Sensors QuickControls2 QuickTemplates2 Charts QmlModels Widgets)
+set(QT_COMPONENTS Qml Quick Gui Multimedia Core Svg Network LinguistTools Sensors QuickControls2 QuickTemplates2 Charts Widgets)
 find_package(Qt5 ${QT_REQUIRED_VERSION} COMPONENTS
     ${QT_COMPONENTS})
 
@@ -104,9 +104,10 @@ foreach(COMPONENT ${QT_COMPONENTS})
 endforeach()
 
 if(Qt5Widgets_VERSION VERSION_GREATER_EQUAL "5.15.0")
-  find_package(Qt5 ${QT_REQUIRED_VERSION} COMPONENTS QmlWorkerScript QuickParticles)
+  find_package(Qt5 ${QT_REQUIRED_VERSION} COMPONENTS QmlModels QmlWorkerScript QuickParticles)
   set_package_properties(Qt5QmlWorkerScript PROPERTIES TYPE REQUIRED)
   set_package_properties(Qt5QuickParticles PROPERTIES TYPE REQUIRED)
+  set_package_properties(Qt5QmlModels PROPERTIES TYPE REQUIRED)
 endif()
 
 if(ANDROID)
