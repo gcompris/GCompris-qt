@@ -24996,12 +24996,9 @@ msgid "Type the complete word as it falls, before it reaches the ground."
 msgstr "Yerə çatana qədər sözü tam şəkildə yazmağa çalışın."
 
 #: core/ChangeLog.qml:30
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translation added for Azerbaijani"
 msgctxt "ChangeLog|"
 msgid "Translations added for Arabic and Esperanto"
-msgstr "Azərbaycan dilində tərcümə əlavə olundu"
+msgstr "Ərəb və Esperanto dillərinə tərcümələr əlavə olundu"
 
 #: core/ChangeLog.qml:31 core/ChangeLog.qml:38
 msgctxt "ChangeLog|"

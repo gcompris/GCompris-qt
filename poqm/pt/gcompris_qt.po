@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: kstars\n"
+"Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2015-05-27 08:46+0000\n"
 "PO-Revision-Date: 2023-03-20 13:58+0000\n"
@@ -25957,12 +25957,9 @@ msgstr ""
 "Escreva a palavra completa, à medida que vai caindo, antes de chegar ao chão."
 
 #: core/ChangeLog.qml:30
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translation added for Azerbaijani"
 msgctxt "ChangeLog|"
 msgid "Translations added for Arabic and Esperanto"
-msgstr "Adição de traduções para Azerbaijano"
+msgstr "Traduções adicionada para Árabe e Esperanto"
 
 #: core/ChangeLog.qml:31 core/ChangeLog.qml:38
 msgctxt "ChangeLog|"

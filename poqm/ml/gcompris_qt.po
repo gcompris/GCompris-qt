@@ -1,10 +1,11 @@
 #
 # Aiswarya Kaitheri Kandoth <aiswaryakk29@gmail.com>, 2018, 2019, 2020, 2021, 2022, 2023.
+# Timo <animtim@gmail.com>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2023-03-28 20:56+0200\n"
-"Last-Translator: Aiswarya Kaitheri Kandoth <aiswaryakk29@gmail.com>\n"
+"PO-Revision-Date: 2023-06-04 21:56+0200\n"
+"Last-Translator: Timo <animtim@gmail.com>\n"
 "Language-Team: Malayalam <kde-i18n-doc@kde.org>\n"
 "Language: ml\n"
 "MIME-Version: 1.0\n"
@@ -24711,12 +24712,9 @@ msgid "Type the complete word as it falls, before it reaches the ground."
 msgstr "വീണു കൊണ്ടിരിക്കുന്ന വാക്ക് താഴെയെത്തുന്നതിനു മുമ്പ് കീബോർഡിൽ ടൈപ്പ് ചെയ്യുക."
 
 #: core/ChangeLog.qml:30
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translation added for Azerbaijani"
 msgctxt "ChangeLog|"
 msgid "Translations added for Arabic and Esperanto"
-msgstr "അസർബൈജാനി തർജ്ജിമ ചേർത്തിരിക്കുന്നു"
+msgstr "അറബി, എസ്പെരാന്റൊ തർജ്ജിമകൾ ചേർത്തിരിക്കുന്നു"
 
 #: core/ChangeLog.qml:31 core/ChangeLog.qml:38
 msgctxt "ChangeLog|"
