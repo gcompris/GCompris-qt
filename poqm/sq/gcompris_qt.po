@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2023-03-19 18:16+0200\n"
+"PO-Revision-Date: 2023-06-04 13:19+0300\n"
 "Last-Translator: Besnik Bleta <besnik@programeshqip.org>\n"
 "Language-Team: Albanian <kde-i18n-doc@kde.org>\n"
 "Language: sq\n"
@@ -4415,24 +4415,15 @@ msgstr ""
 "Mandej, klikoni mbi butonin OK, që të shihni vlerësimin për përgjigjen tuaj."
 
 #: activities/chronos/ActivityInfo.qml:29
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Moon photo is copyright NASA. The space sounds come from Tuxpaint and "
-#| "Vegastrike which are released under the GPL license. The transportation "
-#| "images are copyright Franck Doucet. Dates of Transportation are based on "
-#| "those found in &lt;https://www.wikipedia.org&gt;."
 msgctxt "ActivityInfo|"
 msgid ""
 "Moon photo is copyright NASA. The transportation images are copyright Franck "
 "Doucet. Dates of Transportation are based on those found in &lt;https://www."
 "wikipedia.org&gt;."
 msgstr ""
-"Fotoja e Hënës është e drejtë kopjimi e NASA-s. Tingujt e hapësirës vijnë "
-"prej Tuxpaint-it dhe Vegastrike-ut, që hidhen në qarkullim sipas një licence "
-"GPL. Figurat e transporteve janë e drejtë kopjimi e Franck Doucet-it. Datat "
-"e Transporteve bazohen në ato të gjetura në &lt;https://www.wikipedia."
-"org&gt;."
+"Fotoja e Hënës është e drejtë kopjimi e NASA-s. Figurat e transporteve janë "
+"e drejtë kopjimi e Franck Doucet-it. Datat e Transporteve bazohen në ato të "
+"gjetura në &lt;https://www.wikipedia.org&gt;."
 
 #: activities/chronos/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -25224,12 +25215,9 @@ msgid "Type the complete word as it falls, before it reaches the ground."
 msgstr "Shtypni fjalën e plotë, teksa ajo bie, përpara se të mbërrijë përdhe."
 
 #: core/ChangeLog.qml:30
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translation added for Azerbaijani"
 msgctxt "ChangeLog|"
 msgid "Translations added for Arabic and Esperanto"
-msgstr "U shtua përkthim në azerbajxhanase"
+msgstr "U shtua përkthime për arabishten dhe esperanton"
 
 #: core/ChangeLog.qml:31 core/ChangeLog.qml:38
 msgctxt "ChangeLog|"
