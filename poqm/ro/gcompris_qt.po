@@ -25770,7 +25770,7 @@ msgstr ""
 "KDE.<br/><br/>KDE este o întreprindere colaborativă în care nicio entitate "
 "singulară nu poate controla eforturile sau produsele KDE excluzându-i pe "
 "alții. Toată lumea este binevenită să adere sau să contribuie la KDE, "
-"inclusiv tu. <br/><br/> Viziteaă <a href=\"%2\">%2</a> pentru mai multe "
+"inclusiv tu. <br/><br/> Viziteă <a href=\"%2\">%2</a> pentru mai multe "
 "informații despre comunitatea KDE și softurile care le producem."
 
 #: core/DialogAbout.qml:93

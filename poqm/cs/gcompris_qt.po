@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2023-03-20 14:20+0100\n"
+"PO-Revision-Date: 2023-05-31 11:37+0200\n"
 "Last-Translator: Vit Pelcak <vit@pelcak.org>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
 "Language: cs\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Lokalize 22.12.3\n"
+"X-Generator: Lokalize 23.04.1\n"
 "X-Qt-Contexts: true\n"
 
 #. Activity title
@@ -4296,24 +4296,16 @@ msgid "Then, click on the OK button to validate your answer."
 msgstr "Poté potvrď odpověď kliknutím na tlačítko OK."
 
 #: activities/chronos/ActivityInfo.qml:29
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Moon photo is copyright NASA. The space sounds come from Tuxpaint and "
-#| "Vegastrike which are released under the GPL license. The transportation "
-#| "images are copyright Franck Doucet. Dates of Transportation are based on "
-#| "those found in &lt;https://www.wikipedia.org&gt;."
 msgctxt "ActivityInfo|"
 msgid ""
 "Moon photo is copyright NASA. The transportation images are copyright Franck "
 "Doucet. Dates of Transportation are based on those found in &lt;https://www."
 "wikipedia.org&gt;."
 msgstr ""
-"Autorská práva k fotografii měsíce vlastní NASA. Zvuky vesmíru pocházejí z "
-"Tuxpaint a Vegastrike, které jsou vydány pod licencí GPL. Autorská práva k "
-"obrázkům dopravních prostředků vlastní Franck Doucet. Data vynálezů "
-"dopravních prostředků jsou založena na datech nalezených na &lt;https://www."
-"wikipedia.org&gt;."
+"Autorská práva k fotografii měsíce vlastní NASA. Autorská práva k obrázkům "
+"dopravních prostředků vlastní Franck Doucet. Data vynálezů dopravních "
+"prostředků jsou založena na datech nalezených na &lt;https://www.wikipedia."
+"org&gt;."
 
 #: activities/chronos/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -24187,12 +24179,9 @@ msgid "Type the complete word as it falls, before it reaches the ground."
 msgstr "Napiš celé padající slovo dřív, než spadnou na zem."
 
 #: core/ChangeLog.qml:30
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translations added for Breton, Czech and Macedonian"
 msgctxt "ChangeLog|"
 msgid "Translations added for Arabic and Esperanto"
-msgstr "Přidány překlady pro bretonštinu, češtinu a makedonštinu"
+msgstr "Přidány překlady pro arabštinu a esperanto"
 
 #: core/ChangeLog.qml:31 core/ChangeLog.qml:38
 msgctxt "ChangeLog|"
