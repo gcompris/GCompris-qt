@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2023-03-20 14:20+0100\n"
+"PO-Revision-Date: 2023-05-31 11:37+0200\n"
 "Last-Translator: Vit Pelcak <vit@pelcak.org>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
 "Language: cs\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Lokalize 22.12.3\n"
+"X-Generator: Lokalize 23.04.1\n"
 "X-Qt-Contexts: true\n"
 
 #. Activity title
@@ -24181,12 +24181,9 @@ msgid "Type the complete word as it falls, before it reaches the ground."
 msgstr "Napiš celé padající slovo dřív, než spadnou na zem."
 
 #: core/ChangeLog.qml:30
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translations added for Breton, Czech and Macedonian"
 msgctxt "ChangeLog|"
 msgid "Translations added for Arabic and Esperanto"
-msgstr "Přidány překlady pro bretonštinu, češtinu a makedonštinu"
+msgstr "Přidány překlady pro arabštinu a esperanto"
 
 #: core/ChangeLog.qml:31 core/ChangeLog.qml:38
 msgctxt "ChangeLog|"
