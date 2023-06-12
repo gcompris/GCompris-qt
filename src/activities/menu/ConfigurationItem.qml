@@ -46,7 +46,7 @@ Item {
                                 (dialogConfig.contentWidth - 25 * ApplicationInfo.ratio) * 0.166))
 
             GCText {
-                text: qsTr("Difficulty filter:")
+                text: qsTr("Difficulty filter")
                 fontSize: mediumSize
                 width: dialogConfig.contentWidth
             }
