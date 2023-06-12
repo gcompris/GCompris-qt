@@ -83,6 +83,9 @@ Item {
     }
 
     //    Cheat codes to access mini games directly
+    // Note: miniGame 2 (quiz on mode 3) can start only if at least the audio of 2 words
+    // have been played on ImageReview step, else it skips to miniGame 3. So make sure
+    // to view all the words on first step before loading miniGame 2.
     Keys.onPressed: {
         if((event.modifiers & Qt.ControlModifier) && (event.key === Qt.Key_1)) {
             initLevel(wordListIndex)
