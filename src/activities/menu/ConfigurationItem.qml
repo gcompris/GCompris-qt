@@ -37,6 +37,122 @@ Item {
             NumberAnimation { properties: "x,y"; duration: 120 }
         }
 
+        Flow {
+            id: difficultyFlow
+            width: dialogConfig.contentWidth
+            spacing: 5 * ApplicationInfo.ratio
+            visible: !ApplicationSettings.filterLevelOverridedByCommandLineOption
+            property int starsSize: Math.floor(Math.min(50 * ApplicationInfo.ratio,
+                                (dialogConfig.contentWidth - 35 * ApplicationInfo.ratio) * 0.125))
+
+            GCText {
+                text: qsTr("Difficulty filter:")
+                fontSize: mediumSize
+                width: dialogConfig.contentWidth
+            }
+
+            Image {
+                source: "qrc:/gcompris/src/core/resource/bar_next.svg"
+                sourceSize.height: difficultyFlow.starsSize
+                sourceSize.width: difficultyFlow.starsSize
+
+                MouseArea {
+                    anchors.fill: parent
+                    onClicked: {
+                        filterRepeater.setMin(filterRepeater.minFilter + 1)
+                    }
+                }
+            }
+
+            // Level filtering
+            Repeater {
+                id: filterRepeater
+                model: 6
+
+                property int minFilter: ApplicationSettings.filterLevelMin
+                property int maxFilter: ApplicationSettings.filterLevelMax
+
+                function setMin(value) {
+                    var newMin
+                    if(minFilter < 1) {
+                        newMin = 1
+                    }
+                    else if(minFilter > 6) {
+                        newMin = 6
+                    }
+                    else if(maxFilter >= value) {
+                        newMin = value
+                    }
+
+                    if(newMin) {
+                        minFilter = newMin
+                    }
+                }
+
+                function setMax(value) {
+                    var newMax
+                    if(maxFilter < 1) {
+                        newMax = 1
+                    }
+                    else if(maxFilter > 6) {
+                        newMax = 6
+                    }
+                    else if(minFilter <= value) {
+                        newMax = value
+                    }
+
+                    if(newMax) {
+                        maxFilter = newMax
+                    }
+                }
+
+                Image {
+                    source: "qrc:/gcompris/src/core/resource/difficulty" +
+                    (modelData + 1) + ".svg";
+                    sourceSize.width: difficultyFlow.starsSize
+                    opacity: modelData + 1 >= filterRepeater.minFilter &&
+                    modelData + 1 <= filterRepeater.maxFilter
+                    ? 1 : 0.4
+
+                    property int value: modelData + 1
+
+                    MouseArea {
+                        anchors.fill: parent
+                        onClicked: {
+                            if(parent.value < filterRepeater.maxFilter) {
+                                if(parent.opacity == 1) {
+                                    filterRepeater.setMin(parent.value + 1)
+                                }
+                                else {
+                                    filterRepeater.setMin(parent.value)
+                                }
+                            } else if(parent.value > filterRepeater.minFilter) {
+                                if(parent.opacity == 1) {
+                                    filterRepeater.setMax(parent.value - 1)
+                                }
+                                else {
+                                    filterRepeater.setMax(parent.value)
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            Image {
+                source: "qrc:/gcompris/src/core/resource/bar_previous.svg"
+                sourceSize.height: difficultyFlow.starsSize
+                sourceSize.width: difficultyFlow.starsSize
+
+                MouseArea {
+                    anchors.fill: parent
+                    onClicked: {
+                        filterRepeater.setMax(filterRepeater.maxFilter - 1)
+                    }
+                }
+            }
+        }
+
         GCComboBox {
             id: languageBox
             model: dialogConfig.languages
@@ -374,123 +490,6 @@ Item {
                 height: 30 * ApplicationInfo.ratio
                 text: qsTr("Default");
                 onClicked: fontLetterSpacingSlider.value = ApplicationSettings.fontLetterSpacingMin
-            }
-        }
-
-        GCText {
-            text: qsTr("Difficulty filter:")
-            fontSize: mediumSize
-            visible: !ApplicationSettings.filterLevelOverridedByCommandLineOption
-            width: dialogConfig.contentWidth
-            height: 50 * ApplicationInfo.ratio
-        }
-
-        Flow {
-            id: difficultyFlow
-            width: dialogConfig.contentWidth
-            spacing: 5 * ApplicationInfo.ratio
-            visible: !ApplicationSettings.filterLevelOverridedByCommandLineOption
-            property int starsSize: Math.floor(dialogConfig.contentWidth * 0.11)
-
-            Image {
-                source: "qrc:/gcompris/src/core/resource/bar_next.svg"
-                sourceSize.height: difficultyFlow.starsSize
-                sourceSize.width: difficultyFlow.starsSize
-
-                MouseArea {
-                    anchors.fill: parent
-                    onClicked: {
-                        filterRepeater.setMin(filterRepeater.minFilter + 1)
-                    }
-                }
-            }
-
-            // Level filtering
-            Repeater {
-                id: filterRepeater
-                model: 6
-
-                property int minFilter: ApplicationSettings.filterLevelMin
-                property int maxFilter: ApplicationSettings.filterLevelMax
-
-                function setMin(value) {
-                    var newMin
-                    if(minFilter < 1) {
-                        newMin = 1
-                    }
-                    else if(minFilter > 6) {
-                        newMin = 6
-                    }
-                    else if(maxFilter >= value) {
-                        newMin = value
-                    }
-
-                    if(newMin) {
-                        minFilter = newMin
-                    }
-                }
-
-                function setMax(value) {
-                    var newMax
-                    if(maxFilter < 1) {
-                        newMax = 1
-                    }
-                    else if(maxFilter > 6) {
-                        newMax = 6
-                    }
-                    else if(minFilter <= value) {
-                        newMax = value
-                    }
-
-                    if(newMax) {
-                        maxFilter = newMax
-                    }
-                }
-
-                Image {
-                    source: "qrc:/gcompris/src/core/resource/difficulty" +
-                    (modelData + 1) + ".svg";
-                    sourceSize.width: difficultyFlow.starsSize
-                    opacity: modelData + 1 >= filterRepeater.minFilter &&
-                    modelData + 1 <= filterRepeater.maxFilter
-                    ? 1 : 0.4
-
-                    property int value: modelData + 1
-
-                    MouseArea {
-                        anchors.fill: parent
-                        onClicked: {
-                            if(parent.value < filterRepeater.maxFilter) {
-                                if(parent.opacity == 1) {
-                                    filterRepeater.setMin(parent.value + 1)
-                                }
-                                else {
-                                    filterRepeater.setMin(parent.value)
-                                }
-                            } else if(parent.value > filterRepeater.minFilter) {
-                                if(parent.opacity == 1) {
-                                    filterRepeater.setMax(parent.value - 1)
-                                }
-                                else {
-                                    filterRepeater.setMax(parent.value)
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-
-            Image {
-                source: "qrc:/gcompris/src/core/resource/bar_previous.svg"
-                sourceSize.height: difficultyFlow.starsSize
-                sourceSize.width: difficultyFlow.starsSize
-
-                MouseArea {
-                    anchors.fill: parent
-                    onClicked: {
-                        filterRepeater.setMax(filterRepeater.maxFilter - 1)
-                    }
-                }
             }
         }
     }
