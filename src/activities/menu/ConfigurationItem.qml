@@ -43,25 +43,12 @@ Item {
             spacing: 5 * ApplicationInfo.ratio
             visible: !ApplicationSettings.filterLevelOverridedByCommandLineOption
             property int starsSize: Math.floor(Math.min(50 * ApplicationInfo.ratio,
-                                (dialogConfig.contentWidth - 35 * ApplicationInfo.ratio) * 0.125))
+                                (dialogConfig.contentWidth - 25 * ApplicationInfo.ratio) * 0.166))
 
             GCText {
                 text: qsTr("Difficulty filter:")
                 fontSize: mediumSize
                 width: dialogConfig.contentWidth
-            }
-
-            Image {
-                source: "qrc:/gcompris/src/core/resource/bar_next.svg"
-                sourceSize.height: difficultyFlow.starsSize
-                sourceSize.width: difficultyFlow.starsSize
-
-                MouseArea {
-                    anchors.fill: parent
-                    onClicked: {
-                        filterRepeater.setMin(filterRepeater.minFilter + 1)
-                    }
-                }
             }
 
             // Level filtering
@@ -135,19 +122,6 @@ Item {
                                 }
                             }
                         }
-                    }
-                }
-            }
-
-            Image {
-                source: "qrc:/gcompris/src/core/resource/bar_previous.svg"
-                sourceSize.height: difficultyFlow.starsSize
-                sourceSize.width: difficultyFlow.starsSize
-
-                MouseArea {
-                    anchors.fill: parent
-                    onClicked: {
-                        filterRepeater.setMax(filterRepeater.maxFilter - 1)
                     }
                 }
             }
