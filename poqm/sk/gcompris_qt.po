@@ -18220,103 +18220,108 @@ msgctxt "BackgroundMusicList|"
 msgid "Copyright: %1"
 msgstr "Copyright: %1"
 
-#: activities/menu/ConfigurationItem.qml:45
+#: activities/menu/ConfigurationItem.qml:49
+msgctxt "ConfigurationItem|"
+msgid "Difficulty filter:"
+msgstr "Filter obtiažnosti:"
+
+#: activities/menu/ConfigurationItem.qml:135
 msgctxt "ConfigurationItem|"
 msgid "Language selector"
 msgstr "Výber jazyka"
 
-#: activities/menu/ConfigurationItem.qml:70
+#: activities/menu/ConfigurationItem.qml:160
 msgctxt "ConfigurationItem|"
 msgid "Localized voices"
 msgstr "Lokalizované hlasové odozvy"
 
-#: activities/menu/ConfigurationItem.qml:79
+#: activities/menu/ConfigurationItem.qml:169
 msgctxt "ConfigurationItem|"
 msgid "Check for updates"
 msgstr "Skontrolovať aktualizácie"
 
-#: activities/menu/ConfigurationItem.qml:80
+#: activities/menu/ConfigurationItem.qml:170
 msgctxt "ConfigurationItem|"
 msgid "Download"
 msgstr "Stiahnuť"
 
-#: activities/menu/ConfigurationItem.qml:95
+#: activities/menu/ConfigurationItem.qml:185
 msgctxt "ConfigurationItem|"
 msgid "Enable audio voices"
 msgstr "Povoliť hlasové odozvy"
 
-#: activities/menu/ConfigurationItem.qml:105
+#: activities/menu/ConfigurationItem.qml:195
 msgctxt "ConfigurationItem|"
 msgid "Enable audio effects"
 msgstr "Povoliť zvukové efekty"
 
-#: activities/menu/ConfigurationItem.qml:114
+#: activities/menu/ConfigurationItem.qml:204
 msgctxt "ConfigurationItem|"
 msgid "Audio effects volume"
 msgstr "Hlasitosť zvukových efektov"
 
-#: activities/menu/ConfigurationItem.qml:135
+#: activities/menu/ConfigurationItem.qml:225
 msgctxt "ConfigurationItem|"
 msgid "Download background music"
 msgstr "Stiahnuť hudbu ako podmaz"
 
-#: activities/menu/ConfigurationItem.qml:146
+#: activities/menu/ConfigurationItem.qml:236
 msgctxt "ConfigurationItem|"
 msgid "Enable background music"
 msgstr "Povoliť hudbu na pozadí"
 
-#: activities/menu/ConfigurationItem.qml:155
+#: activities/menu/ConfigurationItem.qml:245
 msgctxt "ConfigurationItem|"
 msgid "Background Music"
 msgstr "Hudba na pozadí"
 
-#: activities/menu/ConfigurationItem.qml:172
+#: activities/menu/ConfigurationItem.qml:262
 msgctxt "ConfigurationItem|"
 msgid "Not playing"
 msgstr "Nehrá sa"
 
-#: activities/menu/ConfigurationItem.qml:174
+#: activities/menu/ConfigurationItem.qml:264
 #, qt-format
 msgctxt "ConfigurationItem|"
 msgid "Title: %1  Artist: %2"
 msgstr "Názov: %1  Interpret: %2"
 
-#: activities/menu/ConfigurationItem.qml:176
+#: activities/menu/ConfigurationItem.qml:266
 msgctxt "ConfigurationItem|"
 msgid "Introduction music"
 msgstr "Úvodná hudba"
 
-#: activities/menu/ConfigurationItem.qml:199
+#: activities/menu/ConfigurationItem.qml:289
 msgctxt "ConfigurationItem|"
 msgid "Background music volume"
 msgstr "Hlasitosť hudby na pozadí"
 
-#: activities/menu/ConfigurationItem.qml:218
+#: activities/menu/ConfigurationItem.qml:308
 msgctxt "ConfigurationItem|"
 msgid "Fullscreen"
 msgstr "Celá obrazovka"
 
-#: activities/menu/ConfigurationItem.qml:229
+#: activities/menu/ConfigurationItem.qml:319
 msgctxt "ConfigurationItem|"
 msgid "Virtual Keyboard"
 msgstr "Virtuálna klávesnica"
 
-#: activities/menu/ConfigurationItem.qml:240
+#: activities/menu/ConfigurationItem.qml:330
 msgctxt "ConfigurationItem|"
 msgid "Enable automatic downloads/updates of sound files"
 msgstr "Povoliť automatické sťahovania/aktualizácie zvukových súborov"
 
-#: activities/menu/ConfigurationItem.qml:252
+#: activities/menu/ConfigurationItem.qml:342
 msgctxt "ConfigurationItem|"
 msgid "Download full word image set"
 msgstr "Stiahnuť plnú slovnú sadu obrázkov"
 
-#: activities/menu/ConfigurationItem.qml:273
+#: activities/menu/ConfigurationItem.qml:363
 msgctxt "ConfigurationItem|"
 msgid "Full word image set is installed"
 msgstr "Je nainštalované úplná sada obrázkov slov"
 
-#: activities/menu/ConfigurationItem.qml:273
+#: activities/menu/ConfigurationItem.qml:363
 #, fuzzy
 #| msgctxt "ConfigurationItem|"
 #| msgid "Use full word image set"
@@ -18324,58 +18329,53 @@ msgctxt "ConfigurationItem|"
 msgid "Full word image set is not installed"
 msgstr "Použiť externú veľkú sadu slov a obrázkov"
 
-#: activities/menu/ConfigurationItem.qml:295
+#: activities/menu/ConfigurationItem.qml:385
 msgctxt "ConfigurationItem|"
 msgid "The activity section menu is visible"
 msgstr "Sekcia ponuky aktivít je viditeľná"
 
-#: activities/menu/ConfigurationItem.qml:305
+#: activities/menu/ConfigurationItem.qml:395
 msgctxt "ConfigurationItem|"
 msgid "Ask for confirmation to exit"
 msgstr "Pýtať si potvrdenie pred ukončením"
 
-#: activities/menu/ConfigurationItem.qml:316
+#: activities/menu/ConfigurationItem.qml:406
 msgctxt "ConfigurationItem|"
 msgid "Font selector"
 msgstr "Výber písma"
 
-#: activities/menu/ConfigurationItem.qml:321
+#: activities/menu/ConfigurationItem.qml:411
 msgctxt "ConfigurationItem|"
 msgid "Font size"
 msgstr "Veľkosť písma"
 
-#: activities/menu/ConfigurationItem.qml:341
-#: activities/menu/ConfigurationItem.qml:375
+#: activities/menu/ConfigurationItem.qml:431
+#: activities/menu/ConfigurationItem.qml:465
 msgctxt "ConfigurationItem|"
 msgid "Default"
 msgstr "Predvolené"
 
-#: activities/menu/ConfigurationItem.qml:350
+#: activities/menu/ConfigurationItem.qml:440
 msgctxt "ConfigurationItem|"
 msgid "Font Capitalization"
 msgstr "Písanie veľkých písmen fontu"
 
-#: activities/menu/ConfigurationItem.qml:355
+#: activities/menu/ConfigurationItem.qml:445
 msgctxt "ConfigurationItem|"
 msgid "Font letter spacing"
 msgstr "Vzdialenosti medzi písmenami"
 
-#: activities/menu/ConfigurationItem.qml:381
-msgctxt "ConfigurationItem|"
-msgid "Difficulty filter:"
-msgstr "Filter obtiažnosti:"
-
-#: activities/menu/ConfigurationItem.qml:675
+#: activities/menu/ConfigurationItem.qml:648
 msgctxt "ConfigurationItem|"
 msgid "Mixed case (default)"
 msgstr "Zmiešaná veľkosť (predvolené)"
 
-#: activities/menu/ConfigurationItem.qml:676
+#: activities/menu/ConfigurationItem.qml:649
 msgctxt "ConfigurationItem|"
 msgid "All uppercase"
 msgstr "Všetko veľkými písmenami"
 
-#: activities/menu/ConfigurationItem.qml:677
+#: activities/menu/ConfigurationItem.qml:650
 msgctxt "ConfigurationItem|"
 msgid "All lowercase"
 msgstr "Všetko malými písmenami"

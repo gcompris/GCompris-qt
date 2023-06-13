@@ -18191,159 +18191,159 @@ msgctxt "BackgroundMusicList|"
 msgid "Copyright: %1"
 msgstr "Авторски права: %1"
 
-#: activities/menu/ConfigurationItem.qml:45
+#: activities/menu/ConfigurationItem.qml:49
+msgctxt "ConfigurationItem|"
+msgid "Difficulty filter:"
+msgstr "Филтер за ниво:"
+
+#: activities/menu/ConfigurationItem.qml:135
 msgctxt "ConfigurationItem|"
 msgid "Language selector"
 msgstr "Избор на јазик"
 
-#: activities/menu/ConfigurationItem.qml:70
+#: activities/menu/ConfigurationItem.qml:160
 msgctxt "ConfigurationItem|"
 msgid "Localized voices"
 msgstr "Локализирани гласови"
 
-#: activities/menu/ConfigurationItem.qml:79
+#: activities/menu/ConfigurationItem.qml:169
 msgctxt "ConfigurationItem|"
 msgid "Check for updates"
 msgstr "Провери ажурирања"
 
-#: activities/menu/ConfigurationItem.qml:80
+#: activities/menu/ConfigurationItem.qml:170
 msgctxt "ConfigurationItem|"
 msgid "Download"
 msgstr "Преземи"
 
-#: activities/menu/ConfigurationItem.qml:95
+#: activities/menu/ConfigurationItem.qml:185
 msgctxt "ConfigurationItem|"
 msgid "Enable audio voices"
 msgstr "Овозможи аудио гласови"
 
-#: activities/menu/ConfigurationItem.qml:105
+#: activities/menu/ConfigurationItem.qml:195
 msgctxt "ConfigurationItem|"
 msgid "Enable audio effects"
 msgstr "Овозможи аудио ефекти"
 
-#: activities/menu/ConfigurationItem.qml:114
+#: activities/menu/ConfigurationItem.qml:204
 msgctxt "ConfigurationItem|"
 msgid "Audio effects volume"
 msgstr "Јачина на аудио ефекти"
 
-#: activities/menu/ConfigurationItem.qml:135
+#: activities/menu/ConfigurationItem.qml:225
 msgctxt "ConfigurationItem|"
 msgid "Download background music"
 msgstr "Преземи позадинска музика"
 
-#: activities/menu/ConfigurationItem.qml:146
+#: activities/menu/ConfigurationItem.qml:236
 msgctxt "ConfigurationItem|"
 msgid "Enable background music"
 msgstr "Овозможи позадинска музика"
 
-#: activities/menu/ConfigurationItem.qml:155
+#: activities/menu/ConfigurationItem.qml:245
 msgctxt "ConfigurationItem|"
 msgid "Background Music"
 msgstr "Позадинска Музика"
 
-#: activities/menu/ConfigurationItem.qml:172
+#: activities/menu/ConfigurationItem.qml:262
 msgctxt "ConfigurationItem|"
 msgid "Not playing"
 msgstr "Не свири"
 
-#: activities/menu/ConfigurationItem.qml:174
+#: activities/menu/ConfigurationItem.qml:264
 #, qt-format
 msgctxt "ConfigurationItem|"
 msgid "Title: %1  Artist: %2"
 msgstr "Наслов: %1  Изведувач: %2"
 
-#: activities/menu/ConfigurationItem.qml:176
+#: activities/menu/ConfigurationItem.qml:266
 msgctxt "ConfigurationItem|"
 msgid "Introduction music"
 msgstr "Воведна музика"
 
-#: activities/menu/ConfigurationItem.qml:199
+#: activities/menu/ConfigurationItem.qml:289
 msgctxt "ConfigurationItem|"
 msgid "Background music volume"
 msgstr "Јачина на позадинска музика"
 
-#: activities/menu/ConfigurationItem.qml:218
+#: activities/menu/ConfigurationItem.qml:308
 msgctxt "ConfigurationItem|"
 msgid "Fullscreen"
 msgstr "Цел екран"
 
-#: activities/menu/ConfigurationItem.qml:229
+#: activities/menu/ConfigurationItem.qml:319
 msgctxt "ConfigurationItem|"
 msgid "Virtual Keyboard"
 msgstr "Виртуелна тастатура"
 
-#: activities/menu/ConfigurationItem.qml:240
+#: activities/menu/ConfigurationItem.qml:330
 msgctxt "ConfigurationItem|"
 msgid "Enable automatic downloads/updates of sound files"
 msgstr "Овозможете автоматско преземање / ажурирање на звучни датотеки"
 
-#: activities/menu/ConfigurationItem.qml:252
+#: activities/menu/ConfigurationItem.qml:342
 msgctxt "ConfigurationItem|"
 msgid "Download full word image set"
 msgstr "Преземете го целиот сет на слики со зборови"
 
-#: activities/menu/ConfigurationItem.qml:273
+#: activities/menu/ConfigurationItem.qml:363
 msgctxt "ConfigurationItem|"
 msgid "Full word image set is installed"
 msgstr "Инсталиран е целиот сет на слики со зборови"
 
-#: activities/menu/ConfigurationItem.qml:273
+#: activities/menu/ConfigurationItem.qml:363
 msgctxt "ConfigurationItem|"
 msgid "Full word image set is not installed"
 msgstr "Не е инсталиран целиот сет на слики со зборови"
 
-#: activities/menu/ConfigurationItem.qml:295
+#: activities/menu/ConfigurationItem.qml:385
 msgctxt "ConfigurationItem|"
 msgid "The activity section menu is visible"
 msgstr "Менито за активности е видливо"
 
-#: activities/menu/ConfigurationItem.qml:305
+#: activities/menu/ConfigurationItem.qml:395
 msgctxt "ConfigurationItem|"
 msgid "Ask for confirmation to exit"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:316
+#: activities/menu/ConfigurationItem.qml:406
 msgctxt "ConfigurationItem|"
 msgid "Font selector"
 msgstr "Селектор на фонт"
 
-#: activities/menu/ConfigurationItem.qml:321
+#: activities/menu/ConfigurationItem.qml:411
 msgctxt "ConfigurationItem|"
 msgid "Font size"
 msgstr "Големина на фонт"
 
-#: activities/menu/ConfigurationItem.qml:341
-#: activities/menu/ConfigurationItem.qml:375
+#: activities/menu/ConfigurationItem.qml:431
+#: activities/menu/ConfigurationItem.qml:465
 msgctxt "ConfigurationItem|"
 msgid "Default"
 msgstr "Стандардно"
 
-#: activities/menu/ConfigurationItem.qml:350
+#: activities/menu/ConfigurationItem.qml:440
 msgctxt "ConfigurationItem|"
 msgid "Font Capitalization"
 msgstr "Капитализација на фонт"
 
-#: activities/menu/ConfigurationItem.qml:355
+#: activities/menu/ConfigurationItem.qml:445
 msgctxt "ConfigurationItem|"
 msgid "Font letter spacing"
 msgstr "Растојание на букви"
 
-#: activities/menu/ConfigurationItem.qml:381
-msgctxt "ConfigurationItem|"
-msgid "Difficulty filter:"
-msgstr "Филтер за ниво:"
-
-#: activities/menu/ConfigurationItem.qml:675
+#: activities/menu/ConfigurationItem.qml:648
 msgctxt "ConfigurationItem|"
 msgid "Mixed case (default)"
 msgstr "Мешовит случај (стандардно)"
 
-#: activities/menu/ConfigurationItem.qml:676
+#: activities/menu/ConfigurationItem.qml:649
 msgctxt "ConfigurationItem|"
 msgid "All uppercase"
 msgstr "Сите големи букви"
 
-#: activities/menu/ConfigurationItem.qml:677
+#: activities/menu/ConfigurationItem.qml:650
 msgctxt "ConfigurationItem|"
 msgid "All lowercase"
 msgstr "Сите мали букви"

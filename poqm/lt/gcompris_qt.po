@@ -17882,159 +17882,159 @@ msgctxt "BackgroundMusicList|"
 msgid "Copyright: %1"
 msgstr "Autorinės teisės: %1"
 
-#: activities/menu/ConfigurationItem.qml:45
+#: activities/menu/ConfigurationItem.qml:49
+msgctxt "ConfigurationItem|"
+msgid "Difficulty filter:"
+msgstr "Sudėtingumo lygių filtras:"
+
+#: activities/menu/ConfigurationItem.qml:135
 msgctxt "ConfigurationItem|"
 msgid "Language selector"
 msgstr "Kalbos parinkėjas"
 
-#: activities/menu/ConfigurationItem.qml:70
+#: activities/menu/ConfigurationItem.qml:160
 msgctxt "ConfigurationItem|"
 msgid "Localized voices"
 msgstr "Lokalizuoti balsai"
 
-#: activities/menu/ConfigurationItem.qml:79
+#: activities/menu/ConfigurationItem.qml:169
 msgctxt "ConfigurationItem|"
 msgid "Check for updates"
 msgstr "Patikrink atnaujinimus"
 
-#: activities/menu/ConfigurationItem.qml:80
+#: activities/menu/ConfigurationItem.qml:170
 msgctxt "ConfigurationItem|"
 msgid "Download"
 msgstr "Atsisiųsk"
 
-#: activities/menu/ConfigurationItem.qml:95
+#: activities/menu/ConfigurationItem.qml:185
 msgctxt "ConfigurationItem|"
 msgid "Enable audio voices"
 msgstr "Leisti pamokėles su garsu"
 
-#: activities/menu/ConfigurationItem.qml:105
+#: activities/menu/ConfigurationItem.qml:195
 msgctxt "ConfigurationItem|"
 msgid "Enable audio effects"
 msgstr "Leisti audio efektus"
 
-#: activities/menu/ConfigurationItem.qml:114
+#: activities/menu/ConfigurationItem.qml:204
 msgctxt "ConfigurationItem|"
 msgid "Audio effects volume"
 msgstr "Audio efektų garsumas"
 
-#: activities/menu/ConfigurationItem.qml:135
+#: activities/menu/ConfigurationItem.qml:225
 msgctxt "ConfigurationItem|"
 msgid "Download background music"
 msgstr "Atsiųsti fono muziką"
 
-#: activities/menu/ConfigurationItem.qml:146
+#: activities/menu/ConfigurationItem.qml:236
 msgctxt "ConfigurationItem|"
 msgid "Enable background music"
 msgstr "Leisk fono muziką"
 
-#: activities/menu/ConfigurationItem.qml:155
+#: activities/menu/ConfigurationItem.qml:245
 msgctxt "ConfigurationItem|"
 msgid "Background Music"
 msgstr "Fono muzika"
 
-#: activities/menu/ConfigurationItem.qml:172
+#: activities/menu/ConfigurationItem.qml:262
 msgctxt "ConfigurationItem|"
 msgid "Not playing"
 msgstr "Negroja"
 
-#: activities/menu/ConfigurationItem.qml:174
+#: activities/menu/ConfigurationItem.qml:264
 #, qt-format
 msgctxt "ConfigurationItem|"
 msgid "Title: %1  Artist: %2"
 msgstr "Pavadinimas: %1 Atlikėjas: %2"
 
-#: activities/menu/ConfigurationItem.qml:176
+#: activities/menu/ConfigurationItem.qml:266
 msgctxt "ConfigurationItem|"
 msgid "Introduction music"
 msgstr "Įžangos muzika"
 
-#: activities/menu/ConfigurationItem.qml:199
+#: activities/menu/ConfigurationItem.qml:289
 msgctxt "ConfigurationItem|"
 msgid "Background music volume"
 msgstr "Foninės muzikos garsiai"
 
-#: activities/menu/ConfigurationItem.qml:218
+#: activities/menu/ConfigurationItem.qml:308
 msgctxt "ConfigurationItem|"
 msgid "Fullscreen"
 msgstr "Visame ekrane"
 
-#: activities/menu/ConfigurationItem.qml:229
+#: activities/menu/ConfigurationItem.qml:319
 msgctxt "ConfigurationItem|"
 msgid "Virtual Keyboard"
 msgstr "Virtuali klaviatūra"
 
-#: activities/menu/ConfigurationItem.qml:240
+#: activities/menu/ConfigurationItem.qml:330
 msgctxt "ConfigurationItem|"
 msgid "Enable automatic downloads/updates of sound files"
 msgstr "Leisti automatinius garsinių failų atsisiuntimus/atnaujinimus"
 
-#: activities/menu/ConfigurationItem.qml:252
+#: activities/menu/ConfigurationItem.qml:342
 msgctxt "ConfigurationItem|"
 msgid "Download full word image set"
 msgstr "Atsisiųsti pilną žodžių vaizdų rinkinį"
 
-#: activities/menu/ConfigurationItem.qml:273
+#: activities/menu/ConfigurationItem.qml:363
 msgctxt "ConfigurationItem|"
 msgid "Full word image set is installed"
 msgstr "Pilnas žodžių vaizdų rinkinys yra įdiegtas"
 
-#: activities/menu/ConfigurationItem.qml:273
+#: activities/menu/ConfigurationItem.qml:363
 msgctxt "ConfigurationItem|"
 msgid "Full word image set is not installed"
 msgstr "Pilnas žodžių vaizdų rinkinys neįdiegtas"
 
-#: activities/menu/ConfigurationItem.qml:295
+#: activities/menu/ConfigurationItem.qml:385
 msgctxt "ConfigurationItem|"
 msgid "The activity section menu is visible"
 msgstr "Pamokėlės skyriaus meniu yra matomas"
 
-#: activities/menu/ConfigurationItem.qml:305
+#: activities/menu/ConfigurationItem.qml:395
 msgctxt "ConfigurationItem|"
 msgid "Ask for confirmation to exit"
 msgstr "Paprašyti patvirtinimo prieš išeinant"
 
-#: activities/menu/ConfigurationItem.qml:316
+#: activities/menu/ConfigurationItem.qml:406
 msgctxt "ConfigurationItem|"
 msgid "Font selector"
 msgstr "Šrifto pasirinkimas"
 
-#: activities/menu/ConfigurationItem.qml:321
+#: activities/menu/ConfigurationItem.qml:411
 msgctxt "ConfigurationItem|"
 msgid "Font size"
 msgstr "Šrifto dydis"
 
-#: activities/menu/ConfigurationItem.qml:341
-#: activities/menu/ConfigurationItem.qml:375
+#: activities/menu/ConfigurationItem.qml:431
+#: activities/menu/ConfigurationItem.qml:465
 msgctxt "ConfigurationItem|"
 msgid "Default"
 msgstr "Numatytoji"
 
-#: activities/menu/ConfigurationItem.qml:350
+#: activities/menu/ConfigurationItem.qml:440
 msgctxt "ConfigurationItem|"
 msgid "Font Capitalization"
 msgstr "Šrifto keitimas didžiosiomis raidėmis"
 
-#: activities/menu/ConfigurationItem.qml:355
+#: activities/menu/ConfigurationItem.qml:445
 msgctxt "ConfigurationItem|"
 msgid "Font letter spacing"
 msgstr "Šrifto raidžių išretinimas"
 
-#: activities/menu/ConfigurationItem.qml:381
-msgctxt "ConfigurationItem|"
-msgid "Difficulty filter:"
-msgstr "Sudėtingumo lygių filtras:"
-
-#: activities/menu/ConfigurationItem.qml:675
+#: activities/menu/ConfigurationItem.qml:648
 msgctxt "ConfigurationItem|"
 msgid "Mixed case (default)"
 msgstr "Mišrios raidės"
 
-#: activities/menu/ConfigurationItem.qml:676
+#: activities/menu/ConfigurationItem.qml:649
 msgctxt "ConfigurationItem|"
 msgid "All uppercase"
 msgstr "Visos didžiosios raidės"
 
-#: activities/menu/ConfigurationItem.qml:677
+#: activities/menu/ConfigurationItem.qml:650
 msgctxt "ConfigurationItem|"
 msgid "All lowercase"
 msgstr "Visos mažosios raidės"

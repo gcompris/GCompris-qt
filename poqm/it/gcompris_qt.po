@@ -18040,159 +18040,159 @@ msgctxt "BackgroundMusicList|"
 msgid "Copyright: %1"
 msgstr "Copyright: %1"
 
-#: activities/menu/ConfigurationItem.qml:45
+#: activities/menu/ConfigurationItem.qml:49
+msgctxt "ConfigurationItem|"
+msgid "Difficulty filter:"
+msgstr "Filtro di difficoltà:"
+
+#: activities/menu/ConfigurationItem.qml:135
 msgctxt "ConfigurationItem|"
 msgid "Language selector"
 msgstr "Selezione della lingua"
 
-#: activities/menu/ConfigurationItem.qml:70
+#: activities/menu/ConfigurationItem.qml:160
 msgctxt "ConfigurationItem|"
 msgid "Localized voices"
 msgstr "Voci localizzate"
 
-#: activities/menu/ConfigurationItem.qml:79
+#: activities/menu/ConfigurationItem.qml:169
 msgctxt "ConfigurationItem|"
 msgid "Check for updates"
 msgstr "Controlla aggiornamenti"
 
-#: activities/menu/ConfigurationItem.qml:80
+#: activities/menu/ConfigurationItem.qml:170
 msgctxt "ConfigurationItem|"
 msgid "Download"
 msgstr "Scarica"
 
-#: activities/menu/ConfigurationItem.qml:95
+#: activities/menu/ConfigurationItem.qml:185
 msgctxt "ConfigurationItem|"
 msgid "Enable audio voices"
 msgstr "Abilita le voci"
 
-#: activities/menu/ConfigurationItem.qml:105
+#: activities/menu/ConfigurationItem.qml:195
 msgctxt "ConfigurationItem|"
 msgid "Enable audio effects"
 msgstr "Abilita gli effetti audio"
 
-#: activities/menu/ConfigurationItem.qml:114
+#: activities/menu/ConfigurationItem.qml:204
 msgctxt "ConfigurationItem|"
 msgid "Audio effects volume"
 msgstr "Volume degli effetti audio"
 
-#: activities/menu/ConfigurationItem.qml:135
+#: activities/menu/ConfigurationItem.qml:225
 msgctxt "ConfigurationItem|"
 msgid "Download background music"
 msgstr "Scarica la musica di sottofondo"
 
-#: activities/menu/ConfigurationItem.qml:146
+#: activities/menu/ConfigurationItem.qml:236
 msgctxt "ConfigurationItem|"
 msgid "Enable background music"
 msgstr "Abilita la musica di sottofondo"
 
-#: activities/menu/ConfigurationItem.qml:155
+#: activities/menu/ConfigurationItem.qml:245
 msgctxt "ConfigurationItem|"
 msgid "Background Music"
 msgstr "Musica di sottofondo"
 
-#: activities/menu/ConfigurationItem.qml:172
+#: activities/menu/ConfigurationItem.qml:262
 msgctxt "ConfigurationItem|"
 msgid "Not playing"
 msgstr "Non in riproduzione"
 
-#: activities/menu/ConfigurationItem.qml:174
+#: activities/menu/ConfigurationItem.qml:264
 #, qt-format
 msgctxt "ConfigurationItem|"
 msgid "Title: %1  Artist: %2"
 msgstr "Titolo: %1  Artista: %2"
 
-#: activities/menu/ConfigurationItem.qml:176
+#: activities/menu/ConfigurationItem.qml:266
 msgctxt "ConfigurationItem|"
 msgid "Introduction music"
 msgstr "Musica introduttiva"
 
-#: activities/menu/ConfigurationItem.qml:199
+#: activities/menu/ConfigurationItem.qml:289
 msgctxt "ConfigurationItem|"
 msgid "Background music volume"
 msgstr "Volume della musica di sottofondo"
 
-#: activities/menu/ConfigurationItem.qml:218
+#: activities/menu/ConfigurationItem.qml:308
 msgctxt "ConfigurationItem|"
 msgid "Fullscreen"
 msgstr "Schermo intero"
 
-#: activities/menu/ConfigurationItem.qml:229
+#: activities/menu/ConfigurationItem.qml:319
 msgctxt "ConfigurationItem|"
 msgid "Virtual Keyboard"
 msgstr "Tastiera virtuale"
 
-#: activities/menu/ConfigurationItem.qml:240
+#: activities/menu/ConfigurationItem.qml:330
 msgctxt "ConfigurationItem|"
 msgid "Enable automatic downloads/updates of sound files"
 msgstr "Abilita scaricamento/aggiornamento automatico file sonori"
 
-#: activities/menu/ConfigurationItem.qml:252
+#: activities/menu/ConfigurationItem.qml:342
 msgctxt "ConfigurationItem|"
 msgid "Download full word image set"
 msgstr "Scarica un insieme di immagini delle parole intere"
 
-#: activities/menu/ConfigurationItem.qml:273
+#: activities/menu/ConfigurationItem.qml:363
 msgctxt "ConfigurationItem|"
 msgid "Full word image set is installed"
 msgstr "L'insieme di immagini delle parole intere non è installato"
 
-#: activities/menu/ConfigurationItem.qml:273
+#: activities/menu/ConfigurationItem.qml:363
 msgctxt "ConfigurationItem|"
 msgid "Full word image set is not installed"
 msgstr "L'insieme di immagini delle parole intere non è installato"
 
-#: activities/menu/ConfigurationItem.qml:295
+#: activities/menu/ConfigurationItem.qml:385
 msgctxt "ConfigurationItem|"
 msgid "The activity section menu is visible"
 msgstr "Il menu della sezione attività è visibile"
 
-#: activities/menu/ConfigurationItem.qml:305
+#: activities/menu/ConfigurationItem.qml:395
 msgctxt "ConfigurationItem|"
 msgid "Ask for confirmation to exit"
 msgstr "Chiedi conferma per uscire"
 
-#: activities/menu/ConfigurationItem.qml:316
+#: activities/menu/ConfigurationItem.qml:406
 msgctxt "ConfigurationItem|"
 msgid "Font selector"
 msgstr "Selezione dei caratteri"
 
-#: activities/menu/ConfigurationItem.qml:321
+#: activities/menu/ConfigurationItem.qml:411
 msgctxt "ConfigurationItem|"
 msgid "Font size"
 msgstr "Dimensione dei caratteri"
 
-#: activities/menu/ConfigurationItem.qml:341
-#: activities/menu/ConfigurationItem.qml:375
+#: activities/menu/ConfigurationItem.qml:431
+#: activities/menu/ConfigurationItem.qml:465
 msgctxt "ConfigurationItem|"
 msgid "Default"
 msgstr "Predefinita"
 
-#: activities/menu/ConfigurationItem.qml:350
+#: activities/menu/ConfigurationItem.qml:440
 msgctxt "ConfigurationItem|"
 msgid "Font Capitalization"
 msgstr "Maiuscole"
 
-#: activities/menu/ConfigurationItem.qml:355
+#: activities/menu/ConfigurationItem.qml:445
 msgctxt "ConfigurationItem|"
 msgid "Font letter spacing"
 msgstr "Spaziatura delle lettere dei caratteri"
 
-#: activities/menu/ConfigurationItem.qml:381
-msgctxt "ConfigurationItem|"
-msgid "Difficulty filter:"
-msgstr "Filtro di difficoltà:"
-
-#: activities/menu/ConfigurationItem.qml:675
+#: activities/menu/ConfigurationItem.qml:648
 msgctxt "ConfigurationItem|"
 msgid "Mixed case (default)"
 msgstr "Maiuscole e minuscole (predefinito)"
 
-#: activities/menu/ConfigurationItem.qml:676
+#: activities/menu/ConfigurationItem.qml:649
 msgctxt "ConfigurationItem|"
 msgid "All uppercase"
 msgstr "Tutte maiuscole"
 
-#: activities/menu/ConfigurationItem.qml:677
+#: activities/menu/ConfigurationItem.qml:650
 msgctxt "ConfigurationItem|"
 msgid "All lowercase"
 msgstr "Tutte minuscole"
