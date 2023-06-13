@@ -33,12 +33,10 @@ ActivityBase {
         }
     }
 
-    pageComponent: Image {
+    pageComponent: Rectangle {
         id: background
-        source: "qrc:/gcompris/src/activities/lang/resource/imageid-bg.svg"
-        fillMode: Image.PreserveAspectCrop
-        sourceSize.width: width
-        sourceSize.height: height
+        color: "#85D8F6"
+        anchors.fill: parent
 
         property bool englishFallback: false
 
