@@ -18,10 +18,13 @@ ProgressBar {
 
     property bool displayText: true
     property string message
+    property int borderSize: 0
 
     background: Rectangle {
         height: progressbar.height
         width: progressbar.width
+        border.color: "lightblue"
+        border.width: borderSize
     }
     contentItem: Item {
         implicitWidth: 200
