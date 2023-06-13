@@ -155,13 +155,9 @@ Item {
         Rectangle {
             id: categoryTextbg
             parent: rootItem
-            x: categoryText.x - 4
-            y: categoryText.y - 4
-            width: imageFrame.width + 8
-            height: categoryText.height + 8
-            color: "#5090ff"
-            border.color: "#000000"
-            border.width: 2
+            width: Math.min(imageFrame.width + 8, imageBg.width * 1.5)
+            height: 42 * ApplicationInfo.ratio
+            color: "#AAFFFFFF"
             radius: 16
             anchors {
                 horizontalCenter: parent.horizontalCenter
@@ -171,24 +167,23 @@ Item {
 
             GCText {
                 id: categoryText
+                fontSizeMode: Text.Fit
                 fontSize: mediumSize
                 font.weight: Font.DemiBold
                 width: parent.width - 8
+                height: parent.height - 8
                 horizontalAlignment: Text.AlignHCenter
                 verticalAlignment: Text.AlignVCenter
-                color: "white"
-                wrapMode: Text.WordWrap
+                color: "#373737"
+                anchors.centerIn: parent
             }
         }
 
-        Image {
+        Item {
             id: imageFrame
             parent: rootItem
-            source: "qrc:/gcompris/src/activities/lang/resource/imageid_frame.svg"
             width: (parent.width - previousWordButton.width * 2) * 0.8
             height: (parent.height - categoryTextbg.height - wordTextbg.height - bar.height * 1.1) * 0.8
-            sourceSize.width: width
-            fillMode: Image.PreserveAspectFit
             anchors {
                 horizontalCenter: parent.horizontalCenter
                 top: categoryTextbg.bottom
@@ -196,10 +191,21 @@ Item {
             }
             z: 11
 
+            Rectangle {
+                id: imageBg
+                color: "#E0E0F7"
+                anchors.centerIn: parent
+                width: Math.min(parent.width, parent.height)
+                height: width
+                radius: width * 0.1
+                border.color: "#373737"
+                border.width: ApplicationInfo.ratio
+            }
+
             Image {
                 id: wordImage
                 // Images are not svg
-                width: parent.paintedHeight * 0.9
+                width: imageBg.height * 0.9
                 height: width
                 anchors.centerIn: parent
 
@@ -235,38 +241,50 @@ Item {
                     onClicked: Activity.playWord(word.voice)
                 }
             }
+        }
+
+        Item {
+            id: previousButtonArea
+            anchors.left: rootItem.left
+            anchors.top: imageFrame.top
+            anchors.bottom: imageFrame.bottom
+            width: (rootItem.width - imageBg.width) * 0.5
 
             Image {
                 id: previousWordButton
                 source: "qrc:/gcompris/src/core/resource/bar_previous.svg";
-                sourceSize.width: 30 * 1.2 * ApplicationInfo.ratio
+                width: 36 * ApplicationInfo.ratio
+                sourceSize.width: width
                 visible: score.currentSubLevel > 1 ? true : false
-                anchors {
-                    right: parent.left
-                    rightMargin: 30
-                    top: parent.top
-                    topMargin: parent.height/2 - previousWordButton.height/2
-                }
+                anchors.centerIn: parent
+
                 MouseArea {
-                    id: previousWordButtonArea
-                    anchors.fill: parent
+                    anchors.centerIn: parent
+                    width: parent.width * 3
+                    height: parent.height * 2
                     onClicked: imageReview.prevWord()
                 }
             }
+        }
+
+        Item {
+            id: nextButtonArea
+            anchors.right: rootItem.right
+            anchors.top: imageFrame.top
+            anchors.bottom: imageFrame.bottom
+            width: previousButtonArea.width
 
             Image {
                 id: nextWordButton
                 source: "qrc:/gcompris/src/core/resource/bar_next.svg";
-                sourceSize.width: 30 * 1.2 * ApplicationInfo.ratio
-                anchors {
-                    left: parent.right
-                    leftMargin: 30
-                    top: parent.top
-                    topMargin: parent.height/2 - previousWordButton.height/2
-                }
+                width: previousWordButton.width
+                sourceSize.width: width
+                anchors.centerIn: parent
+
                 MouseArea {
-                    id: nextWordButtonArea
-                    anchors.fill: parent
+                    anchors.centerIn: parent
+                    width: parent.width * 3
+                    height: parent.height * 2
                     onClicked: imageReview.nextWord();
                 }
             }
@@ -275,30 +293,28 @@ Item {
         Rectangle {
             id: wordTextbg
             parent: rootItem
-            x: wordText.x - 4
-            y: wordText.y - 4
-            width: imageFrame.width
-            height: wordText.height + 4
-            color: "#5090ff"
-            border.color: "#000000"
-            border.width: 2
+            width: Math.min(imageFrame.width + 8, imageBg.width * 2)
+            height: 64 * ApplicationInfo.ratio
+            color: "#AAFFFFFF"
             radius: 16
             anchors {
+                horizontalCenter: parent.horizontalCenter
                 top: imageFrame.bottom
-                left: imageFrame.left
                 margins: 10 * ApplicationInfo.ratio
             }
 
             GCText {
                 id: wordText
                 text: ""
+                fontSizeMode: Text.Fit
                 fontSize: largeSize
                 font.weight: Font.DemiBold
-                width: parent.width
+                width: parent.width - 8
+                height: parent.height - 8
                 horizontalAlignment: Text.AlignHCenter
                 verticalAlignment: Text.AlignVCenter
-                color: "white"
-                wrapMode: Text.WordWrap
+                anchors.centerIn: parent
+                color: "#373737"
 
                 property string nextWord
                 function changeText(nextWord_) {
@@ -333,7 +349,7 @@ Item {
             id: repeatItem
             parent: rootItem
             source: "qrc:/gcompris/src/core/resource/bar_repeat.svg";
-            sourceSize.width: Math.min(imageFrame.x, 100 * ApplicationInfo.ratio) - 2 * anchors.margins
+            sourceSize.width: Math.min(categoryTextbg.x, 84 * ApplicationInfo.ratio) - 2 * anchors.margins
 
             z: 12
             anchors {
