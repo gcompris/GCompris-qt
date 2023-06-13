@@ -48,13 +48,8 @@ Item {
 
     Behavior on opacity { PropertyAnimation { duration: 200 } }
 
-    Image {
+    Item {
         id: background
-        source: "qrc:/gcompris/src/activities/lang/resource/imageid-bg.svg"
-        fillMode: Image.PreserveAspectCrop
-        sourceSize.width: width
-        sourceSize.height: height
-        height: parent.height
         anchors.fill: parent
 
         property bool keyNavigation: false
@@ -115,33 +110,37 @@ Item {
         Grid {
             id: gridId
             columns: quiz.horizontalLayout ? 2 : 1
-            spacing: 0.5 * ApplicationInfo.ratio
+            spacing: 10 * ApplicationInfo.ratio
             anchors.fill: parent
-            anchors.margins: 10 * ApplicationInfo.ratio
+            anchors.margins: spacing
 
             Item {
+                id: imageContainer
                 width: quiz.horizontalLayout
-                       ? background.width * 0.40
-                       : background.width - gridId.anchors.margins * 2
+                       ? background.width  - wordListView.width - gridId.spacing * 3
+                       : wordListView.width
                 height: quiz.horizontalLayout
-                        ? background.height - bar.height
-                        : (background.height - bar.height) * 0.4
+                        ? wordListView.height
+                        : background.height - bar.height - wordListView.height - gridId.spacing * 3
 
-                Image {
+                Rectangle {
                     id: imageFrame
-                    anchors {
-                        horizontalCenter: parent.horizontalCenter
-                        verticalCenter: parent.verticalCenter
-                    }
-                    source: "qrc:/gcompris/src/activities/lang/resource/imageid_frame.svg"
-                    sourceSize.width: quiz.horizontalLayout ? parent.width * 0.7 : quiz.width - repeatItem.width - score.width - 50 * ApplicationInfo.ratio
+                    anchors.centerIn: parent
+                    color: "#E0E0F7"
+                    border.color: "#373737"
+                    border.width: ApplicationInfo.ratio
+                    width: quiz.horizontalLayout ?
+                            Math.min(parent.width * 0.6, parent.height - repeatItem.height * 2 - gridId.spacing * 2) :
+                            Math.min(parent.height, parent.width - repeatItem.height * 2 - gridId.spacing * 2)
+                    height: width
+                    radius: width * 0.1
                     z: 11
                     visible: QuizActivity.mode !== 3
 
                     Image {
                         id: wordImage
                         // Images are not svg
-                        width: Math.min(parent.width, parent.height) * 0.9
+                        width: parent.width * 0.9
                         height: width
                         anchors.centerIn: parent
 
@@ -179,7 +178,6 @@ Item {
                 }
             }
 
-
             ListView {
                 id: wordListView
                 width: quiz.horizontalLayout
@@ -187,7 +185,7 @@ Item {
                        : background.width - gridId.anchors.margins * 2
                 height: quiz.horizontalLayout
                         ? background.height - bar.height
-                        : (background.height - bar.height) * 0.60
+                        : (background.height - bar.height) * 0.6
                 spacing: 2 * ApplicationInfo.ratio
                 orientation: Qt.Vertical
                 verticalLayoutDirection: ListView.TopToBottom
@@ -195,9 +193,10 @@ Item {
                 model: wordListModel
 
                 highlight:  Rectangle {
-                    width: wordListView.width
+                    width: (QuizActivity.mode == 1) ? wordListView.width - wordListView.buttonHeight :
+                                                        wordListView.width
                     height: wordListView.buttonHeight
-                    color: "lightsteelblue"
+                    color: "#AAFFFFFF"
                     radius: 5
                     visible: background.keyNavigation
                     y: wordListView.currentItem ? wordListView.currentItem.y : 0
@@ -229,7 +228,7 @@ Item {
                         source: image
                         z: 7
                         fillMode: Image.PreserveAspectFit
-                        anchors.leftMargin: 5 * ApplicationInfo.ratio
+                        anchors.right: parent.right
                         visible: (QuizActivity.mode == 1) ? true : false  // hide images after first mini game
                     }
 
@@ -238,8 +237,8 @@ Item {
                         width: parent.width * 0.6
                         height: wordListView.buttonHeight
                         textLabel: translatedTxt
-                        anchors.left: wordImageQuiz.left
-                        anchors.right: parent.right
+                        anchors.right: wordImageQuiz.visible ? wordImageQuiz.left : parent.right
+                        anchors.left: parent.left
                         blockAllButtonClicks: quiz.buttonsBlocked
                         onPressed: quiz.buttonsBlocked = true
                         isCorrectAnswer: translatedTxt === quiz.goodWord.translatedTxt
@@ -259,7 +258,7 @@ Item {
         BarButton {
             id: repeatItem
             source: "qrc:/gcompris/src/core/resource/bar_repeat.svg";
-            sourceSize.width: 80 * ApplicationInfo.ratio
+            sourceSize.width: 64 * ApplicationInfo.ratio
 
             z: 12
             anchors {
