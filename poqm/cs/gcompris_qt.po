@@ -4,15 +4,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2023-05-31 11:37+0200\n"
-"Last-Translator: Vit Pelcak <vit@pelcak.org>\n"
+"PO-Revision-Date: 2023-06-08 23:08+0200\n"
+"Last-Translator: Jan Papez (honyczek) <honyczek@centrum.cz>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Lokalize 23.04.1\n"
+"X-Generator: Lokalize 22.12.3\n"
 "X-Qt-Contexts: true\n"
 
 #. Activity title
@@ -17375,159 +17375,162 @@ msgctxt "BackgroundMusicList|"
 msgid "Copyright: %1"
 msgstr "Autorská práva: %1"
 
-#: activities/menu/ConfigurationItem.qml:45
+#: activities/menu/ConfigurationItem.qml:49
+#, fuzzy
+#| msgctxt "ConfigurationItem|"
+#| msgid "Difficulty filter:"
+msgctxt "ConfigurationItem|"
+msgid "Difficulty filter"
+msgstr "Filtr obtížností:"
+
+#: activities/menu/ConfigurationItem.qml:135
 msgctxt "ConfigurationItem|"
 msgid "Language selector"
 msgstr "Výběr jazyka"
 
-#: activities/menu/ConfigurationItem.qml:70
+#: activities/menu/ConfigurationItem.qml:160
 msgctxt "ConfigurationItem|"
 msgid "Localized voices"
 msgstr "Lokalizované hlasy"
 
-#: activities/menu/ConfigurationItem.qml:79
+#: activities/menu/ConfigurationItem.qml:169
 msgctxt "ConfigurationItem|"
 msgid "Check for updates"
 msgstr "Zkontrolovat aktualizace"
 
-#: activities/menu/ConfigurationItem.qml:80
+#: activities/menu/ConfigurationItem.qml:170
 msgctxt "ConfigurationItem|"
 msgid "Download"
 msgstr "Stáhnout"
 
-#: activities/menu/ConfigurationItem.qml:95
+#: activities/menu/ConfigurationItem.qml:185
 msgctxt "ConfigurationItem|"
 msgid "Enable audio voices"
 msgstr "Povolit hlasy"
 
-#: activities/menu/ConfigurationItem.qml:105
+#: activities/menu/ConfigurationItem.qml:195
 msgctxt "ConfigurationItem|"
 msgid "Enable audio effects"
 msgstr "Povolit zvukové efekty"
 
-#: activities/menu/ConfigurationItem.qml:114
+#: activities/menu/ConfigurationItem.qml:204
 msgctxt "ConfigurationItem|"
 msgid "Audio effects volume"
 msgstr "Hlasitost efektů audia"
 
-#: activities/menu/ConfigurationItem.qml:135
+#: activities/menu/ConfigurationItem.qml:225
 msgctxt "ConfigurationItem|"
 msgid "Download background music"
 msgstr "Stáhnout hudbu na pozadí"
 
-#: activities/menu/ConfigurationItem.qml:146
+#: activities/menu/ConfigurationItem.qml:236
 msgctxt "ConfigurationItem|"
 msgid "Enable background music"
 msgstr "Povolit hudbu na pozadí"
 
-#: activities/menu/ConfigurationItem.qml:155
+#: activities/menu/ConfigurationItem.qml:245
 msgctxt "ConfigurationItem|"
 msgid "Background Music"
 msgstr "Hudba na pozadí"
 
-#: activities/menu/ConfigurationItem.qml:172
+#: activities/menu/ConfigurationItem.qml:262
 msgctxt "ConfigurationItem|"
 msgid "Not playing"
 msgstr "Nepřehrávám"
 
-#: activities/menu/ConfigurationItem.qml:174
+#: activities/menu/ConfigurationItem.qml:264
 #, qt-format
 msgctxt "ConfigurationItem|"
 msgid "Title: %1  Artist: %2"
 msgstr "Název: %1 Umělec: %2"
 
-#: activities/menu/ConfigurationItem.qml:176
+#: activities/menu/ConfigurationItem.qml:266
 msgctxt "ConfigurationItem|"
 msgid "Introduction music"
 msgstr "Úvodní melodie"
 
-#: activities/menu/ConfigurationItem.qml:199
+#: activities/menu/ConfigurationItem.qml:289
 msgctxt "ConfigurationItem|"
 msgid "Background music volume"
 msgstr "Hlasitost hudby na pozadí"
 
-#: activities/menu/ConfigurationItem.qml:218
+#: activities/menu/ConfigurationItem.qml:308
 msgctxt "ConfigurationItem|"
 msgid "Fullscreen"
 msgstr "Celá obrazovka"
 
-#: activities/menu/ConfigurationItem.qml:229
+#: activities/menu/ConfigurationItem.qml:319
 msgctxt "ConfigurationItem|"
 msgid "Virtual Keyboard"
 msgstr "Virtuální klávesnice"
 
-#: activities/menu/ConfigurationItem.qml:240
+#: activities/menu/ConfigurationItem.qml:330
 msgctxt "ConfigurationItem|"
 msgid "Enable automatic downloads/updates of sound files"
 msgstr "Povolit automatické stahování/aktualizace zvukových souborů"
 
-#: activities/menu/ConfigurationItem.qml:252
+#: activities/menu/ConfigurationItem.qml:342
 msgctxt "ConfigurationItem|"
 msgid "Download full word image set"
 msgstr "Stáhnout obrázkový slovník"
 
-#: activities/menu/ConfigurationItem.qml:273
+#: activities/menu/ConfigurationItem.qml:363
 msgctxt "ConfigurationItem|"
 msgid "Full word image set is installed"
 msgstr "Obrázkový slovník je nainstalovaný"
 
-#: activities/menu/ConfigurationItem.qml:273
+#: activities/menu/ConfigurationItem.qml:363
 msgctxt "ConfigurationItem|"
 msgid "Full word image set is not installed"
 msgstr "Obrázkový slovník není nainstalovaný"
 
-#: activities/menu/ConfigurationItem.qml:295
+#: activities/menu/ConfigurationItem.qml:385
 msgctxt "ConfigurationItem|"
 msgid "The activity section menu is visible"
 msgstr "Menu kategorií aktivit je viditelné"
 
-#: activities/menu/ConfigurationItem.qml:305
+#: activities/menu/ConfigurationItem.qml:395
 msgctxt "ConfigurationItem|"
 msgid "Ask for confirmation to exit"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:316
+#: activities/menu/ConfigurationItem.qml:406
 msgctxt "ConfigurationItem|"
 msgid "Font selector"
 msgstr "Volba písma"
 
-#: activities/menu/ConfigurationItem.qml:321
+#: activities/menu/ConfigurationItem.qml:411
 msgctxt "ConfigurationItem|"
 msgid "Font size"
 msgstr "Velikost písma"
 
-#: activities/menu/ConfigurationItem.qml:341
-#: activities/menu/ConfigurationItem.qml:375
+#: activities/menu/ConfigurationItem.qml:431
+#: activities/menu/ConfigurationItem.qml:465
 msgctxt "ConfigurationItem|"
 msgid "Default"
 msgstr "Výchozí"
 
-#: activities/menu/ConfigurationItem.qml:350
+#: activities/menu/ConfigurationItem.qml:440
 msgctxt "ConfigurationItem|"
 msgid "Font Capitalization"
 msgstr "Vše velkými písmeny"
 
-#: activities/menu/ConfigurationItem.qml:355
+#: activities/menu/ConfigurationItem.qml:445
 msgctxt "ConfigurationItem|"
 msgid "Font letter spacing"
 msgstr "Rozestup písmen"
 
-#: activities/menu/ConfigurationItem.qml:381
-msgctxt "ConfigurationItem|"
-msgid "Difficulty filter:"
-msgstr "Filtr obtížností:"
-
-#: activities/menu/ConfigurationItem.qml:675
+#: activities/menu/ConfigurationItem.qml:648
 msgctxt "ConfigurationItem|"
 msgid "Mixed case (default)"
 msgstr "Velká i malá písmena (výchozí)"
 
-#: activities/menu/ConfigurationItem.qml:676
+#: activities/menu/ConfigurationItem.qml:649
 msgctxt "ConfigurationItem|"
 msgid "All uppercase"
 msgstr "Vše velkými písmeny"
 
-#: activities/menu/ConfigurationItem.qml:677
+#: activities/menu/ConfigurationItem.qml:650
 msgctxt "ConfigurationItem|"
 msgid "All lowercase"
 msgstr "Vše malými písmeny"
@@ -18305,6 +18308,8 @@ msgid ""
 "Develop a good understanding of note position and naming convention. Prepare "
 "for the 'Play Piano' and 'Piano Composition' activities."
 msgstr ""
+"Rozviň si dobré porozumění notových pozic a jmenných konvencí. Příprava na "
+"aktivity 'Hra na piano' a 'Skládej na pianu'."
 
 #. Help manual
 #: activities/note_names/ActivityInfo.qml:27
@@ -18948,7 +18953,7 @@ msgstr ""
 #: activities/paintings/resource/board/board18_0.qml:14
 msgctxt "board18_0|"
 msgid "Pierre-Auguste Renoir, Girls At The Piano - 1892"
-msgstr ""
+msgstr "Pierre-Auguste Renoir, Dívky u piana - 1892"
 
 #: activities/paintings/resource/board/board19_0.qml:14
 msgctxt "board19_0|"
@@ -19205,7 +19210,7 @@ msgstr "Klikni na rozdíly mezi dvěma obrázky."
 #: activities/piano_composition/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Piano composition"
-msgstr ""
+msgstr "Skládej na pianu"
 
 #. Help title
 #: activities/piano_composition/ActivityInfo.qml:18
@@ -19214,6 +19219,7 @@ msgid ""
 "Learn how the piano keyboard works, and how notes are written on a musical "
 "staff."
 msgstr ""
+"Zjisti jak funguje klaviatura piana a jak jsou zapsány noty na notové osnově."
 
 #. Help goal
 #: activities/piano_composition/ActivityInfo.qml:21
@@ -19227,12 +19233,19 @@ msgid ""
 "education or MuseScore (https://musescore.org), an open source music "
 "notation tool."
 msgstr ""
+"Rozviň si porozumění hudební kompozice a zvyš si zájem o tvorbu hudby pomocí "
+"klaviatury piana. Tato aktivita zahrnuje mnoho základních rozměrů hudby, "
+"avšak o hudební kompozici toho je ještě mnoho k objevování. Pokud se ti líbí "
+"tato aktivita, ale chceš používat pokročilejší nástroj, stáhni si Minuet "
+"(https://minuet.kde.org/) software s otevřeným zdrojovým kódem pro hudební "
+"vzdělávání nebo MuseScore (https://musescore.org) software s otevřeným "
+"zdrojovým kódem, který slouží pro notový zápis."
 
 #. Help prerequisite
 #: activities/piano_composition/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid "Familiarity with note naming conventions."
-msgstr ""
+msgstr "Obeznámení s notovými jmennými konvencemi."
 
 #. Help manual
 #: activities/piano_composition/ActivityInfo.qml:25
@@ -19241,6 +19254,8 @@ msgid ""
 "This activity has several levels, each level adding a new functionality to "
 "the previous one."
 msgstr ""
+"Tato aktivita má několik úrovní, každá úroveň přidává k té předchozí novou "
+"funkcionalitu."
 
 #: activities/piano_composition/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
@@ -19248,6 +19263,9 @@ msgid ""
 "Level 1: Basic piano keyboard (white keys only) where users can experiment "
 "with clicking the colored rectangle keys to write music."
 msgstr ""
+"Úroveň 1: Základní klaviatura piana (pouze bílé klávesy), na které uživatelé "
+"mohou experimentovat se zápisem hudby pomocí klikání na barevné obdélníkové "
+"klávesy."
 
 #: activities/piano_composition/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
@@ -19255,6 +19273,8 @@ msgid ""
 "Level 2: The musical staff switches to bass clef, so notes are lower than in "
 "previous level."
 msgstr ""
+"Úroveň 2: Notová osnova se přepíná na basový klíč, takže noty jsou níže než "
+"v předchozí úrovni."
 
 #: activities/piano_composition/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
@@ -19262,11 +19282,13 @@ msgid ""
 "Level 3: Option to choose between treble and bass clef, addition of black "
 "keys (sharp keys)."
 msgstr ""
+"Úroveň 3: Možnost volby mezi houslovým a basovým klíčem, jsou přidány černé "
+"klávesy (křížkové klávesy)."
 
 #: activities/piano_composition/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid "Level 4: Flat notation used for black keys."
-msgstr ""
+msgstr "Úroveň 4: Pro černé klávesy jsou použity béčkové noty (snížené)."
 
 #: activities/piano_composition/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
@@ -19274,22 +19296,25 @@ msgid ""
 "Level 5: Option to select a note duration (whole, half, quarter, eighth "
 "notes)."
 msgstr ""
+"Úroveň 5: Možnost vybrat délku noty (celá, půlová, čtvrťová nebo osminová "
+"nota)."
 
 #: activities/piano_composition/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
 msgid "Level 6: Addition of rests (whole, half, quarter, eighth rests)."
-msgstr ""
+msgstr "Úroveň 6: Přidání pomlk (celá, půlová, čtvrťová a osminová pomlka)."
 
 #: activities/piano_composition/ActivityInfo.qml:32
 msgctxt "ActivityInfo|"
 msgid "Level 7: Save your compositions and load pre-defined or saved melodies."
 msgstr ""
+"Úroveň 7: Ulož si své skladby na načti předvybrané nebo uložené melodie."
 
 #: activities/piano_composition/ActivityInfo.qml:34
 #: activities/play_piano/ActivityInfo.qml:32
 msgctxt "ActivityInfo|"
 msgid "Digits 1 to 7: white keys"
-msgstr ""
+msgstr "Číslice 1 až 7: bílé klávesy"
 
 #: activities/piano_composition/ActivityInfo.qml:35
 #: activities/play_piano/ActivityInfo.qml:33
@@ -19301,29 +19326,29 @@ msgstr "F2 až F7: černé klávesy"
 #: activities/play_piano/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
 msgid "Space: play"
-msgstr ""
+msgstr "Mezerník: přehrát"
 
 #: activities/piano_composition/ActivityInfo.qml:37
 msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: switch keyboard octave"
-msgstr ""
+msgstr "Levá a pravá šipka: přepnutí oktávy klaviatury"
 
 #: activities/piano_composition/ActivityInfo.qml:38
 msgctxt "ActivityInfo|"
 msgid "Backspace: undo"
-msgstr ""
+msgstr "Backspace: zpět"
 
 #: activities/piano_composition/ActivityInfo.qml:39
 msgctxt "ActivityInfo|"
 msgid "Delete: erase selected note or everything"
-msgstr ""
+msgstr "Delete: vymazat vybranou notu nebo vše"
 
 #: activities/piano_composition/ActivityInfo.qml:40
 #: activities/play_piano/ActivityInfo.qml:35
 msgctxt "ActivityInfo|"
 msgid ""
 "The synthesizer original code is from https://github.com/vsr83/miniSynth"
-msgstr ""
+msgstr "Původní kód syntezátoru je z https://github.com/vsr83/miniSynth"
 
 #. BPM is the abbreviation for Beats Per Minute.
 #: activities/piano_composition/BpmMeter.qml:48
@@ -19373,12 +19398,12 @@ msgstr "Amerika: anglická ukolébavka"
 #: activities/piano_composition/melodies.js:25
 msgctxt "melodies|"
 msgid "America: Patriotic"
-msgstr ""
+msgstr "Amerika: patriotická"
 
 #: activities/piano_composition/melodies.js:32
 msgctxt "melodies|"
 msgid "America: Shaker Tune"
-msgstr ""
+msgstr "Amerika: Shakerská melodie"
 
 #: activities/piano_composition/melodies.js:39
 msgctxt "melodies|"
@@ -19476,7 +19501,7 @@ msgstr "Ukrajina"
 #: activities/piano_composition/melodies.js:235
 msgctxt "melodies|"
 msgid "Mexican song to break a piñata"
-msgstr ""
+msgstr "Mexická píseň k rozbíjení piñaty"
 
 #: activities/piano_composition/melodies.js:242
 msgctxt "melodies|"
@@ -19513,47 +19538,47 @@ msgstr "Osminová nota"
 #: activities/piano_composition/OptionsRow.qml:26
 msgctxt "OptionsRow|"
 msgid "Whole rest added"
-msgstr ""
+msgstr "Přidána celá pomlka"
 
 #: activities/piano_composition/OptionsRow.qml:26
 msgctxt "OptionsRow|"
 msgid "Half rest added"
-msgstr ""
+msgstr "Přidána půlová pomlka"
 
 #: activities/piano_composition/OptionsRow.qml:26
 msgctxt "OptionsRow|"
 msgid "Quarter rest added"
-msgstr ""
+msgstr "Přidána čtvrťová pomlka"
 
 #: activities/piano_composition/OptionsRow.qml:26
 msgctxt "OptionsRow|"
 msgid "Eighth rest added"
-msgstr ""
+msgstr "Přidána osminová pomlka"
 
 #: activities/piano_composition/OptionsRow.qml:27
 msgctxt "OptionsRow|"
 msgid "Whole rest"
-msgstr ""
+msgstr "Celá pomlka"
 
 #: activities/piano_composition/OptionsRow.qml:27
 msgctxt "OptionsRow|"
 msgid "Half rest"
-msgstr ""
+msgstr "Půlová pomlka"
 
 #: activities/piano_composition/OptionsRow.qml:27
 msgctxt "OptionsRow|"
 msgid "Quarter rest"
-msgstr ""
+msgstr "Čtvrťová pomlka"
 
 #: activities/piano_composition/OptionsRow.qml:27
 msgctxt "OptionsRow|"
 msgid "Eighth rest"
-msgstr ""
+msgstr "Osminová pomlka"
 
 #: activities/piano_composition/OptionsRow.qml:28
 msgctxt "OptionsRow|"
 msgid "Piano"
-msgstr "Piáno"
+msgstr "Piano"
 
 #: activities/piano_composition/OptionsRow.qml:28
 msgctxt "OptionsRow|"
@@ -19574,32 +19599,36 @@ msgstr "Zpět"
 #: activities/piano_composition/OptionsRow.qml:166
 msgctxt "OptionsRow|"
 msgid "Sharp notes"
-msgstr "Ostré noty"
+msgstr "Křížkové noty"
 
 #: activities/piano_composition/OptionsRow.qml:166
 msgctxt "OptionsRow|"
 msgid "Flat notes"
-msgstr "Ploché noty"
+msgstr "Béčkové noty"
 
 #: activities/piano_composition/piano_composition.js:25
 msgctxt "piano_composition|"
 msgid "This is the treble clef staff for high pitched notes."
-msgstr ""
+msgstr "Toto je notová osnova s houslovým klíčem pro vysoko laděné noty."
 
 #: activities/piano_composition/piano_composition.js:28
 msgctxt "piano_composition|"
 msgid "This is the bass clef staff for low pitched notes."
-msgstr ""
+msgstr "Toto je notová osnova s basovým klíčem pro nízko laděné noty."
 
 #: activities/piano_composition/piano_composition.js:31
 msgctxt "piano_composition|"
 msgid "The black keys are sharp and flat keys. Sharp notes have a ♯ sign."
 msgstr ""
+"Černé klávesy jsou křížkové nebo béčkové klávesy. Křížkové noty mají značku "
+"♯."
 
 #: activities/piano_composition/piano_composition.js:34
 msgctxt "piano_composition|"
 msgid "Each black key has two names: flat and sharp. Flat notes have ♭ sign."
 msgstr ""
+"Každá černá klávesa má dvě jména: béčko nebo křížek. Béčkové noty mají "
+"značku♭."
 
 #: activities/piano_composition/piano_composition.js:37
 msgctxt "piano_composition|"
@@ -19607,6 +19636,8 @@ msgid ""
 "Click on the note symbol to write different length notes such as whole "
 "notes, half notes, quarter notes and eighth notes."
 msgstr ""
+"Klikni na symbol noty pro napsání jiné délky not jako jsou celé noty, půlové "
+"noty, čtvrťové noty a osminové noty."
 
 #: activities/piano_composition/piano_composition.js:40
 msgctxt "piano_composition|"
@@ -19615,6 +19646,9 @@ msgid ""
 "the rest symbol to select the rest length and then click on the add button "
 "to enter it to the staff."
 msgstr ""
+"Pomlky jsou ekvivalentem k notám, během nichž se udržuje ticho. Klikni na "
+"symbol pomlky pro výběr délky a pak klikni na tlačítko přidat pro její "
+"vložení do notové osnovy."
 
 #: activities/piano_composition/piano_composition.js:43
 msgctxt "piano_composition|"
@@ -19861,6 +19895,10 @@ msgid ""
 "location. To know which number you have to catch you can either remember it "
 "or check the number on the bottom right corner."
 msgstr ""
+"Chytej obláčky ve zvyšujícím se pořadí. Na klávesnici pro pohyb vrtulníku "
+"použij klávesy šipek. Na ukazovacích zařízeních jen klikni nebo klepni na "
+"cílové umístění. Abys věděl které číslo máš chytit, musíš si je buď "
+"zapamatovat nebo se podívat na číslo v pravém dolním rohu."
 
 #: activities/play_piano/ActivityConfig.qml:34
 msgctxt "ActivityConfig|"
@@ -19884,13 +19922,13 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Understand how the piano keyboard can play music as written on the musical "
 "staff."
-msgstr ""
+msgstr "Pochop jak může klaviatura piana hrát hudbu zapsanou na notové osnově."
 
 #. Help prerequisite
 #: activities/play_piano/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Knowledge of musical notation and musical staff."
-msgstr ""
+msgstr "Znalost hudebního zápisu a notové osnovy."
 
 #. Help manual
 #: activities/play_piano/ActivityInfo.qml:28
@@ -19899,6 +19937,8 @@ msgid ""
 "Some notes are played on the staff. Click on the keyboard keys matching the "
 "notes on the staff."
 msgstr ""
+"Některé noty na osnově se přehrávají. Klikni na klávesy klaviatury, které "
+"odpovídají notám na osnově."
 
 #: activities/play_piano/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
@@ -19906,6 +19946,8 @@ msgid ""
 "On levels 1 to 5 you will practice treble clef notes and on levels 6 to 10 "
 "you will practice bass clef notes."
 msgstr ""
+"Na úrovních 1 až 5 budeš procvičovat noty u houslového klíče a na úrovních 6 "
+"až 10 budeš procvičovat noty u basového klíče."
 
 #: activities/play_piano/ActivityInfo.qml:34
 msgctxt "ActivityInfo|"
@@ -19915,7 +19957,7 @@ msgstr "Backspace nebo Delete: zpět"
 #: activities/play_piano/PlayPiano.qml:172
 msgctxt "PlayPiano|"
 msgid "Click on the piano keys that match the given notes."
-msgstr ""
+msgstr "Klikni na klávesy piana, které odpovídají zadaným notám."
 
 #: activities/play_piano/PlayPiano.qml:279
 msgctxt "PlayPiano|"
@@ -24403,6 +24445,8 @@ msgid ""
 "Loading/saving of creations (Baby Wordprocessor, Balance Box and Piano "
 "Composition)."
 msgstr ""
+"Načítání/ukládání tvorby (Dětský textový procesor, Naklápěcí labyrint a "
+"Skládej na pianu)."
 
 #: core/ChangeLog.qml:116
 msgctxt "ChangeLog|"
