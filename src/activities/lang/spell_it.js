@@ -158,7 +158,5 @@ function backspace(answer) {
     answer.text = answer.text.slice(0, -1)
     if(answer.text.length === 0) {
         answer.text = ""
-    } else {
-        checkAnswer(answer.text)
     }
 }
