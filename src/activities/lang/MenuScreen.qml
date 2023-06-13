@@ -18,18 +18,15 @@ import QtQuick.Controls 2.12
 import "../../core"
 import "lang.js" as Activity
 
-Image {
+Item {
     id: menuScreen
     anchors.fill: parent
-    fillMode: Image.PreserveAspectCrop
-    source: Activity.baseUrl + "imageid-bg.svg"
-    sourceSize.width: width
-    sourceSize.height: height
     opacity: 0
 
     property alias menuModel: menuModel
     property bool keyboardMode: false
     property bool started: opacity == 1
+    property int spacing: Math.floor(5 * ApplicationInfo.ratio)
 
     Behavior on opacity { PropertyAnimation { duration: 200 } }
 
@@ -86,11 +83,10 @@ Image {
     }
 
     // Activities
-    property int iconWidth: 180 * ApplicationInfo.ratio
-    property int iconHeight: 180 * ApplicationInfo.ratio
+    property int iconSize: 180 * ApplicationInfo.ratio
 
-    property int levelCellWidth: background.width / Math.floor(background.width / iconWidth )
-    property int levelCellHeight: iconHeight * 1.4
+    property int levelCellWidth: menuGrid.width / Math.floor(menuGrid.width / iconSize )
+    property int levelCellHeight: iconSize * 1.4
 
     ListModel {
         id: menuModel
@@ -101,26 +97,28 @@ Image {
 
         anchors {
             fill: parent
-            bottomMargin: bar.height
+            topMargin: menuScreen.spacing
+            leftMargin: menuScreen.spacing
+            bottomMargin: bar.height + menuScreen.spacing
         }
         cellWidth: levelCellWidth
         cellHeight: levelCellHeight
         clip: true
         model: menuModel
         keyNavigationWraps: true
-        property int spacing: 10
+        // Needed to calculate the OpacityMask offset
+        // If not using OpenGL, this value is not used, so we save the calculation and set it to 1
+        property real hiddenBottom: ApplicationInfo.useOpenGL ? contentHeight - height - contentY : 1
 
         delegate: Item {
             id: delegateItem
-            width: levelCellWidth - menuGrid.spacing
-            height: levelCellHeight - menuGrid.spacing
+            width: levelCellWidth - menuScreen.spacing
+            height: levelCellHeight - menuScreen.spacing
             property string sectionName: name
 
             Rectangle {
                 id: activityBackground
-                width: levelCellWidth - menuGrid.spacing
-                height: levelCellHeight - menuGrid.spacing
-                anchors.horizontalCenter: parent.horizontalCenter
+                anchors.fill: parent
                 color: "white"
                 opacity: 0.5
             }
@@ -129,8 +127,8 @@ Image {
                 source: image;
                 anchors.top: activityBackground.top
                 anchors.horizontalCenter: parent.horizontalCenter
-                width: iconWidth
-                height: iconHeight
+                width: iconSize
+                height: iconSize
                 anchors.margins: 5
 
                 GCText {
@@ -149,10 +147,13 @@ Image {
                 }
                 GCProgressBar {
                     id: progressLang
+                    borderSize: ApplicationInfo.ratio
                     anchors.top: title.bottom
-                    anchors.topMargin: ApplicationInfo.ratio * 4
-                    anchors.horizontalCenter: parent.horizontalCenter
-                    width: activityBackground.width
+                    anchors.left: parent.left
+                    anchors.right: parent.right
+                    anchors.topMargin: menuScreen.spacing
+                    anchors.leftMargin: ApplicationInfo.ratio * 10
+                    anchors.rightMargin: anchors.leftMargin
                     height: 14 * ApplicationInfo.ratio
                     to: wordCount
                     from: 0
@@ -176,16 +177,23 @@ Image {
                 Activity.initLevel(index)
             }
 
+            Rectangle {
+                color: "#C0FFFFFF"
+                anchors.centerIn: favoriteButton
+                width: favoriteButton.width +  2 * ApplicationInfo.ratio
+                height: width
+                radius: width * 0.5
+            }
             Image {
+                id: favoriteButton
                 source: "qrc:/gcompris/src/activities/menu/resource/" +
                         ( favorite ? "all.svg" : "all_disabled.svg" );
                 anchors {
                     top: parent.top
                     right: parent.right
-                    rightMargin: 4 * ApplicationInfo.ratio
+                    margins: menuScreen.spacing
                 }
-                sourceSize.width: iconWidth * 0.25
-                visible: ApplicationSettings.sectionVisible
+                sourceSize.width: iconSize * 0.2
 
                 MouseArea {
                     anchors.fill: parent
@@ -198,9 +206,9 @@ Image {
         } //delegate close
 
         highlight: Rectangle {
-            width: levelCellWidth - menuGrid.spacing
-            height: levelCellHeight - menuGrid.spacing
-            color:  "#AA41AAC4"
+            width: levelCellWidth - menuScreen.spacing
+            height: levelCellHeight - menuScreen.spacing
+            color:  "#AAFFFFFF"
             border.width: 3
             border.color: "black"
             visible: menuScreen.keyboardMode
@@ -209,13 +217,24 @@ Image {
         }
 
         Rectangle{
-            id: menusMask
+            id: menuMask
             visible: false
             anchors.fill: menuGrid
+            // Dynamic position of the gradient used for OpacityMask
+            // If the hidden bottom part of the grid is > to the maximum height of the gradient,
+            // we use the maximum height.
+            // Else we set the gradient start position proportionnally to the hidden bottom part,
+            // until it disappears.
+            // And if not using OpenGL, the mask is disabled, so we save the calculation and set it to 1
+            property real gradientStartValue:
+                ApplicationInfo.useOpenGL ?
+                (menuGrid.hiddenBottom > menuGrid.height * 0.08 ?
+                    0.92 : 1 - (menuGrid.hiddenBottom / menuGrid.height)) :
+                    1
             gradient: Gradient {
                 GradientStop { position: 0.0; color: "#FFFFFFFF" }
-                GradientStop { position: 0.92; color: "#FFFFFFFF" }
-                GradientStop { position: 0.96; color: "#00FFFFFF"}
+                GradientStop { position: menuMask.gradientStartValue; color: "#FFFFFFFF" }
+                GradientStop { position: menuMask.gradientStartValue + 0.04; color:"#00FFFFFF"}
             }
         }
 
@@ -223,7 +242,7 @@ Image {
         layer.effect: OpacityMask {
             id: activitiesOpacity
             source: menuGrid
-            maskSource: menusMask
+            maskSource: menuMask
             anchors.fill: menuGrid
         }
 
