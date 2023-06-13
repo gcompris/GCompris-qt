@@ -60,14 +60,9 @@ Item {
         repeatItem.clicked()
     }
 
-    Image {
+    Item {
         id: background
-        source: "qrc:/gcompris/src/activities/lang/resource/imageid-bg.svg"
-        fillMode: Image.PreserveAspectCrop
-        sourceSize.width: width
-        sourceSize.height: height
-        width: parent.width
-        height: parent.height
+        anchors.fill: parent
 
         property bool horizontalLayout: background.width >= background.height
 
@@ -78,32 +73,29 @@ Item {
 
         Rectangle {
             id: hintTextbg
-            x: hintText.x -4
-            y: hintText.y -4
             width: imageFrame.width
-            height: hintText.height +4
-            color: "#5090ff"
-            border.color: "#000000"
-            border.width: 2
+            height: 42 * ApplicationInfo.ratio
+            color: "#AAFFFFFF"
             radius: 16
-            anchors.top: parent.top
-            anchors.bottom: imageFrame.top
-            anchors.left: imageFrame.left
-            anchors.bottomMargin: 5
+            anchors {
+                horizontalCenter: parent.horizontalCenter
+                top: parent.top
+                topMargin: 4 * ApplicationInfo.ratio
+            }
 
 
             GCText {
                 id: hintText
                 text: ""
-                fontSize: largeSize
+                fontSizeMode: Text.Fit
+                fontSize: mediumSize
                 font.weight: Font.DemiBold
-                width: parent.width
+                width: parent.width - 8
+                height: parent.height - 8
                 horizontalAlignment: Text.AlignHCenter
                 verticalAlignment: Text.AlignVCenter
-                anchors.horizontalCenter: parent.horizontalCenter
-                anchors.verticalCenter: parent.verticalCenter
-                color: "white"
-                wrapMode: Text.WordWrap
+                color: "#373737"
+                anchors.centerIn: parent
 
                 property string nextHint
                 function changeHint(nextHint_) {
@@ -135,20 +127,28 @@ Item {
             }
         }
 
-        Image {
+        Item {
             id: imageFrame
-            source: "qrc:/gcompris/src/activities/lang/resource/imageid_frame.svg"
-            sourceSize.width: background.horizontalLayout ? parent.width * 0.9 : parent.height * 1.2
-            width:  background.width * 0.55
-            height: (background.height - hintTextbg.height - answerbg.height
-                     - keyboard.height - bar.height) * 0.8
-
+            width: (parent.width - 72 * ApplicationInfo.ratio) * 0.8
+            height: bar.y - hintTextbg.height - answerbg.height - 4 * anchors.margins
+//             height: (parent.height - hintTextbg.height - answerbg.height - bar.height * 1.1) * 0.8
             anchors {
-                horizontalCenter: background.horizontalCenter
-                top: background.top
-                topMargin: (background.height) * 0.15
+                horizontalCenter: parent.horizontalCenter
+                top: hintTextbg.bottom
+                margins: 10 * ApplicationInfo.ratio
             }
             z: 11
+
+            Rectangle {
+                id: imageBg
+                color: "#E0E0F7"
+                anchors.centerIn: parent
+                width: Math.min(parent.width, parent.height)
+                height: width
+                radius: width * 0.1
+                border.color: "#373737"
+                border.width: ApplicationInfo.ratio
+            }
 
             Image {
                 id: wordImage
@@ -194,25 +194,22 @@ Item {
 
         Rectangle {
             id: answerbg
-            x: answer.x -4
-            y: answer.y -4
-            width: imageFrame.width
-            height: answer.height +4
-            color: "#5090ff"
-            border.color: "#000000"
-            border.width: 2
+            width: imageFrame.width + 8
+            height: 96 * ApplicationInfo.ratio
+            color: "#AAFFFFFF"
             radius: 16
             anchors {
+                horizontalCenter: parent.horizontalCenter
                 top: imageFrame.bottom
-                left: imageFrame.left
-                topMargin: 20* ApplicationInfo.ratio
+                margins: 10 * ApplicationInfo.ratio
             }
+            z: 20
 
             TextInput {
                 id: answer
-                width: hintTextbg.width
-                height: hintTextbg.height
-                color: "white"
+                width: parent.width - 4
+                height: parent.height - 4
+                color: "#373737"
                 cursorVisible: true
                 focus: false
                 activeFocusOnPress: !ApplicationInfo.isMobile
@@ -225,6 +222,7 @@ Item {
                 font.capitalization: ApplicationSettings.fontCapitalization
                 font.letterSpacing: ApplicationSettings.fontLetterSpacing
                 maximumLength: maximumLengthAnswer
+                wrapMode: TextInput.Wrap
                 onAccepted: {
                     okMouseArea.clicked(toString(okMouseArea))
                 }
@@ -234,13 +232,12 @@ Item {
         Image {
             id: ok
             source:"qrc:/gcompris/src/core/resource/bar_ok.svg"
-            sourceSize.width: 70 * ApplicationInfo.ratio
+            sourceSize.width: Math.min(answerbg.x, 100 * ApplicationInfo.ratio) - 2 * anchors.leftMargin
             fillMode: Image.PreserveAspectFit
             anchors {
-                top: imageFrame.bottom
-                topMargin: 10
-                right: imageFrame.left
-                rightMargin: parent.width * 0.06
+                verticalCenter: answerbg.verticalCenter
+                left: answerbg.right
+                leftMargin: 10 * ApplicationInfo.ratio
 
             }
             MouseArea {
@@ -265,8 +262,7 @@ Item {
     BarButton {
         id: repeatItem
         source: "qrc:/gcompris/src/core/resource/bar_repeat.svg";
-        sourceSize.width: 80 * ApplicationInfo.ratio
-
+        sourceSize.width: Math.min(hintTextbg.x, 84 * ApplicationInfo.ratio) - 2 * anchors.margins
         z: 12
         anchors {
             top: parent.top
