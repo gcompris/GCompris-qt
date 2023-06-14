@@ -37,92 +37,65 @@ Item {
             NumberAnimation { properties: "x,y"; duration: 120 }
         }
 
-        Flow {
-            id: difficultyFlow
+        Item {
+            id: difficultyFilter
             width: dialogConfig.contentWidth
-            spacing: 5 * ApplicationInfo.ratio
+            height: childrenRect.height
             visible: !ApplicationSettings.filterLevelOverridedByCommandLineOption
-            property int starsSize: Math.floor(Math.min(50 * ApplicationInfo.ratio,
-                                (dialogConfig.contentWidth - 25 * ApplicationInfo.ratio) * 0.166))
 
             GCText {
+                id: difficultyLabel
                 text: qsTr("Difficulty filter")
                 fontSize: mediumSize
                 width: dialogConfig.contentWidth
+                wrapMode: Text.WordWrap
+                anchors.top: parent.top
             }
 
-            // Level filtering
-            Repeater {
-                id: filterRepeater
-                model: 6
+            Row {
+                id: starsRow
+                width: filterSlider.availableWidth - filterSlider.first.handle.width
+                spacing: 0
+                anchors.top: difficultyLabel.bottom
+                anchors.horizontalCenter: filterSlider.horizontalCenter
 
-                property int minFilter: ApplicationSettings.filterLevelMin
-                property int maxFilter: ApplicationSettings.filterLevelMax
+                Repeater {
+                    id: filterRepeater
+                    model: 6
 
-                function setMin(value) {
-                    var newMin
-                    if(minFilter < 1) {
-                        newMin = 1
-                    }
-                    else if(minFilter > 6) {
-                        newMin = 6
-                    }
-                    else if(maxFilter >= value) {
-                        newMin = value
-                    }
-
-                    if(newMin) {
-                        minFilter = newMin
+                    Image {
+                        property int starValue: modelData + 1
+                        source: "qrc:/gcompris/src/core/resource/difficulty" +
+                        (modelData + 1) + ".svg";
+                        width: starsRow.width / 6
+                        height: width * 0.5
+                        sourceSize.height: height
+                        sourceSize.width: height
+                        fillMode: Image.PreserveAspectFit
+                        opacity: starValue >= minFilter && starValue <= maxFilter ? 1 : 0.4
                     }
                 }
+            }
 
-                function setMax(value) {
-                    var newMax
-                    if(maxFilter < 1) {
-                        newMax = 1
-                    }
-                    else if(maxFilter > 6) {
-                        newMax = 6
-                    }
-                    else if(minFilter <= value) {
-                        newMax = value
-                    }
-
-                    if(newMax) {
-                        maxFilter = newMax
-                    }
+            GCRangeSlider {
+                id: filterSlider
+                anchors.top: starsRow.bottom
+                width: Math.min(300 * ApplicationInfo.ratio, dialogConfig.contentWidth)
+                from: 1
+                to: 7
+                first.value: minFilter
+                second.value: maxFilter + 1
+                first.onValueChanged: {
+                    if(first.value >= second.value)
+                        first.value = second.value - 1;
+                        else
+                            minFilter = first.value;
                 }
-
-                Image {
-                    source: "qrc:/gcompris/src/core/resource/difficulty" +
-                    (modelData + 1) + ".svg";
-                    sourceSize.width: difficultyFlow.starsSize
-                    opacity: modelData + 1 >= filterRepeater.minFilter &&
-                    modelData + 1 <= filterRepeater.maxFilter
-                    ? 1 : 0.4
-
-                    property int value: modelData + 1
-
-                    MouseArea {
-                        anchors.fill: parent
-                        onClicked: {
-                            if(parent.value < filterRepeater.maxFilter) {
-                                if(parent.opacity == 1) {
-                                    filterRepeater.setMin(parent.value + 1)
-                                }
-                                else {
-                                    filterRepeater.setMin(parent.value)
-                                }
-                            } else if(parent.value > filterRepeater.minFilter) {
-                                if(parent.opacity == 1) {
-                                    filterRepeater.setMax(parent.value - 1)
-                                }
-                                else {
-                                    filterRepeater.setMax(parent.value)
-                                }
-                            }
-                        }
-                    }
+                second.onValueChanged: {
+                    if(second.value <= first.value)
+                        second.value = first.value + 1;
+                        else
+                            maxFilter = second.value - 1;
                 }
             }
         }
@@ -485,6 +458,8 @@ Item {
     // or we get a binding loop warning
     property real backgroundMusicVolume
     property real audioEffectsVolume
+    property int minFilter
+    property int maxFilter
 
     function extractMusicNameFromPath(musicPath) {
         var musicDirectoryPath = ApplicationInfo.getAudioFilePath("backgroundMusic/")
@@ -513,8 +488,8 @@ Item {
         isAutomaticDownloadsEnabled = ApplicationSettings.isAutomaticDownloadsEnabled
         enableAutomaticDownloadsBox.checked = isAutomaticDownloadsEnabled
 
-        filterRepeater.minFilter = ApplicationSettings.filterLevelMin
-        filterRepeater.maxFilter = ApplicationSettings.filterLevelMax
+        minFilter = ApplicationSettings.filterLevelMin
+        maxFilter = ApplicationSettings.filterLevelMax
 
         sectionVisible = ApplicationSettings.sectionVisible
         sectionVisibleBox.checked = sectionVisible
@@ -573,11 +548,11 @@ Item {
         ApplicationSettings.font = fonts.get(fontBox.currentIndex).text
         ApplicationSettings.fontCapitalization = fontCapitalizationModel[fontCapitalizationBox.currentIndex].value
 
-        if(ApplicationSettings.filterLevelMin !== filterRepeater.minFilter ||
-           ApplicationSettings.filterLevelMax !== filterRepeater.maxFilter) {
-               ApplicationSettings.filterLevelMin = filterRepeater.minFilter
-               ApplicationSettings.filterLevelMax = filterRepeater.maxFilter
-               ActivityInfoTree.minMaxFiltersChanged(filterRepeater.minFilter, filterRepeater.maxFilter)
+        if(ApplicationSettings.filterLevelMin !== minFilter ||
+           ApplicationSettings.filterLevelMax !== maxFilter) {
+               ApplicationSettings.filterLevelMin = minFilter
+               ApplicationSettings.filterLevelMax = maxFilter
+               ActivityInfoTree.minMaxFiltersChanged(minFilter, maxFilter)
         }
 
         ApplicationSettings.saveBaseFontSize();
