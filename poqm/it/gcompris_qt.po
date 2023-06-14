@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_qt\n"
-"PO-Revision-Date: 2023-05-25 14:12+0200\n"
+"PO-Revision-Date: 2023-06-13 16:18+0200\n"
 "Last-Translator: Vincenzo Reale <smart2128vr@gmail.com>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
 "Language: it\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 23.04.1\n"
+"X-Generator: Lokalize 23.04.2\n"
 "X-Qt-Contexts: true\n"
 
 #. Activity title
@@ -15167,13 +15167,13 @@ msgctxt "ActivityInfo|"
 msgid "Tab: repeat the word"
 msgstr "Tab: ripeti la parola"
 
-#: activities/lang/Lang.qml:140
+#: activities/lang/Lang.qml:138
 msgctxt "Lang|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr ""
 "Siamo spiacenti, non è ancora disponibile una traduzione per la tua lingua."
 
-#: activities/lang/Lang.qml:141
+#: activities/lang/Lang.qml:139
 #, qt-format
 msgctxt "Lang|"
 msgid ""
@@ -15183,7 +15183,7 @@ msgstr ""
 "GCompris è sviluppato dalla comunità KDE, puoi tradurre GCompris entrando a "
 "far parte di una squadra di traduzione su <a href=\"%2\">%2</a>"
 
-#: activities/lang/Lang.qml:143
+#: activities/lang/Lang.qml:141
 msgctxt "Lang|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -15192,117 +15192,117 @@ msgstr ""
 "Siamo passati all'inglese per questa attività, ma puoi selezionare un'altra "
 "lingua nella finestra di configurazione."
 
-#: activities/lang/Lang.qml:191 activities/lang/Lang.qml:192
+#: activities/lang/Lang.qml:189 activities/lang/Lang.qml:190
 msgctxt "Lang|"
 msgid "other"
 msgstr "altro"
 
-#: activities/lang/Lang.qml:193
+#: activities/lang/Lang.qml:191
 msgctxt "Lang|"
 msgid "action"
 msgstr "azione"
 
-#: activities/lang/Lang.qml:193
+#: activities/lang/Lang.qml:191
 msgctxt "Lang|"
 msgid "adjective"
 msgstr "aggettivo"
 
-#: activities/lang/Lang.qml:194
+#: activities/lang/Lang.qml:192
 msgctxt "Lang|"
 msgid "color"
 msgstr "colore"
 
-#: activities/lang/Lang.qml:194
+#: activities/lang/Lang.qml:192
 msgctxt "Lang|"
 msgid "number"
 msgstr "numero"
 
-#: activities/lang/Lang.qml:195
+#: activities/lang/Lang.qml:193
 msgctxt "Lang|"
 msgid "people"
 msgstr "persona"
 
-#: activities/lang/Lang.qml:195
+#: activities/lang/Lang.qml:193
 msgctxt "Lang|"
 msgid "bodyparts"
 msgstr "parti del corpo"
 
-#: activities/lang/Lang.qml:196
+#: activities/lang/Lang.qml:194
 msgctxt "Lang|"
 msgid "clothes"
 msgstr "vestiti"
 
-#: activities/lang/Lang.qml:196
+#: activities/lang/Lang.qml:194
 msgctxt "Lang|"
 msgid "emotion"
 msgstr "emozione"
 
-#: activities/lang/Lang.qml:197
+#: activities/lang/Lang.qml:195
 msgctxt "Lang|"
 msgid "job"
 msgstr "lavoro"
 
-#: activities/lang/Lang.qml:197
+#: activities/lang/Lang.qml:195
 msgctxt "Lang|"
 msgid "sport"
 msgstr "sport"
 
-#: activities/lang/Lang.qml:198
+#: activities/lang/Lang.qml:196
 msgctxt "Lang|"
 msgid "nature"
 msgstr "natura"
 
-#: activities/lang/Lang.qml:198
+#: activities/lang/Lang.qml:196
 msgctxt "Lang|"
 msgid "animal"
 msgstr "animale"
 
-#: activities/lang/Lang.qml:199
+#: activities/lang/Lang.qml:197
 msgctxt "Lang|"
 msgid "fruit"
 msgstr "frutto"
 
-#: activities/lang/Lang.qml:199
+#: activities/lang/Lang.qml:197
 msgctxt "Lang|"
 msgid "plant"
 msgstr "pianta"
 
-#: activities/lang/Lang.qml:200
+#: activities/lang/Lang.qml:198
 msgctxt "Lang|"
 msgid "vegetables"
 msgstr "vegetali"
 
-#: activities/lang/Lang.qml:200
+#: activities/lang/Lang.qml:198
 msgctxt "Lang|"
 msgid "object"
 msgstr "oggetto"
 
-#: activities/lang/Lang.qml:201
+#: activities/lang/Lang.qml:199
 msgctxt "Lang|"
 msgid "construction"
 msgstr "costruzione"
 
-#: activities/lang/Lang.qml:202
+#: activities/lang/Lang.qml:200
 msgctxt "Lang|"
 msgid "furniture"
 msgstr "mobile"
 
-#: activities/lang/Lang.qml:202
+#: activities/lang/Lang.qml:200
 msgctxt "Lang|"
 msgid "houseware"
 msgstr "casalinghi"
 
-#: activities/lang/Lang.qml:203
+#: activities/lang/Lang.qml:201
 msgctxt "Lang|"
 msgid "tool"
 msgstr "attrezzo"
 
-#: activities/lang/Lang.qml:203
+#: activities/lang/Lang.qml:201
 msgctxt "Lang|"
 msgid "food"
 msgstr "cibo"
 
-#: activities/lang/Lang.qml:204
+#: activities/lang/Lang.qml:202
 msgctxt "Lang|"
 msgid "transport"
 msgstr "trasporto"
@@ -18039,12 +18039,9 @@ msgid "Copyright: %1"
 msgstr "Copyright: %1"
 
 #: activities/menu/ConfigurationItem.qml:49
-#, fuzzy
-#| msgctxt "ConfigurationItem|"
-#| msgid "Difficulty filter:"
 msgctxt "ConfigurationItem|"
 msgid "Difficulty filter"
-msgstr "Filtro di difficoltà:"
+msgstr "Filtro di difficoltà"
 
 #: activities/menu/ConfigurationItem.qml:135
 msgctxt "ConfigurationItem|"

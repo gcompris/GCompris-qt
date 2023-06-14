@@ -14807,12 +14807,12 @@ msgctxt "ActivityInfo|"
 msgid "Tab: repeat the word"
 msgstr "ടാബ്: വാക്ക് ആവർത്തിക്കാൻ"
 
-#: activities/lang/Lang.qml:140
+#: activities/lang/Lang.qml:138
 msgctxt "Lang|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "ക്ഷമിക്കണം, നിങ്ങളുടെ ഭാഷയ്ക്ക് തർജ്ജിമ ഇതുവരെ ഇല്ല."
 
-#: activities/lang/Lang.qml:141
+#: activities/lang/Lang.qml:139
 #, qt-format
 msgctxt "Lang|"
 msgid ""
@@ -14822,7 +14822,7 @@ msgstr ""
 "കെഡിഇ കൂട്ടായ്മയാണ് ജികോംപ്രി ഡെവലപ് ചെയ്തത്, ഒരു തർജ്ജിമ സംഘത്തിൽ ചേർന്നാൽ നിങ്ങൾക്ക് "
 "ജികോംപ്രി തർജ്ജിമ ചെയ്യാൻ കഴിയും <a href=\"%2\">%2</a>"
 
-#: activities/lang/Lang.qml:143
+#: activities/lang/Lang.qml:141
 msgctxt "Lang|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -14831,117 +14831,117 @@ msgstr ""
 "ഈ പ്രവർത്തനത്തിന് ഞങ്ങൾ ഇംഗ്ലീഷിലേക്കു മാറിയിട്ടുണ്ട് എന്നാൽ മറ്റൊരു ഭാഷ കോൺഫിഗറേഷൻ ഡയലോഗിൽ "
 "നിന്നും നിങ്ങൾക്ക് തിരഞ്ഞെടുക്കാൻ കഴിയും."
 
-#: activities/lang/Lang.qml:191 activities/lang/Lang.qml:192
+#: activities/lang/Lang.qml:189 activities/lang/Lang.qml:190
 msgctxt "Lang|"
 msgid "other"
 msgstr "മറ്റുള്ളവ"
 
-#: activities/lang/Lang.qml:193
+#: activities/lang/Lang.qml:191
 msgctxt "Lang|"
 msgid "action"
 msgstr "പ്രവൃത്തി"
 
-#: activities/lang/Lang.qml:193
+#: activities/lang/Lang.qml:191
 msgctxt "Lang|"
 msgid "adjective"
 msgstr "വിശേഷണം"
 
-#: activities/lang/Lang.qml:194
+#: activities/lang/Lang.qml:192
 msgctxt "Lang|"
 msgid "color"
 msgstr "നിറം"
 
-#: activities/lang/Lang.qml:194
+#: activities/lang/Lang.qml:192
 msgctxt "Lang|"
 msgid "number"
 msgstr "സംഖ്യ"
 
-#: activities/lang/Lang.qml:195
+#: activities/lang/Lang.qml:193
 msgctxt "Lang|"
 msgid "people"
 msgstr "ആളുകൾ"
 
-#: activities/lang/Lang.qml:195
+#: activities/lang/Lang.qml:193
 msgctxt "Lang|"
 msgid "bodyparts"
 msgstr "അവയവങ്ങൾ"
 
-#: activities/lang/Lang.qml:196
+#: activities/lang/Lang.qml:194
 msgctxt "Lang|"
 msgid "clothes"
 msgstr "വസ്ത്രങ്ങൾ"
 
-#: activities/lang/Lang.qml:196
+#: activities/lang/Lang.qml:194
 msgctxt "Lang|"
 msgid "emotion"
 msgstr "വികാരം"
 
-#: activities/lang/Lang.qml:197
+#: activities/lang/Lang.qml:195
 msgctxt "Lang|"
 msgid "job"
 msgstr "ജോലി"
 
-#: activities/lang/Lang.qml:197
+#: activities/lang/Lang.qml:195
 msgctxt "Lang|"
 msgid "sport"
 msgstr "കായികം"
 
-#: activities/lang/Lang.qml:198
+#: activities/lang/Lang.qml:196
 msgctxt "Lang|"
 msgid "nature"
 msgstr "പ്രകൃതി"
 
-#: activities/lang/Lang.qml:198
+#: activities/lang/Lang.qml:196
 msgctxt "Lang|"
 msgid "animal"
 msgstr "ജീവി"
 
-#: activities/lang/Lang.qml:199
+#: activities/lang/Lang.qml:197
 msgctxt "Lang|"
 msgid "fruit"
 msgstr "പഴം"
 
-#: activities/lang/Lang.qml:199
+#: activities/lang/Lang.qml:197
 msgctxt "Lang|"
 msgid "plant"
 msgstr "സസ്യം"
 
-#: activities/lang/Lang.qml:200
+#: activities/lang/Lang.qml:198
 msgctxt "Lang|"
 msgid "vegetables"
 msgstr "പച്ചക്കറികൾ"
 
-#: activities/lang/Lang.qml:200
+#: activities/lang/Lang.qml:198
 msgctxt "Lang|"
 msgid "object"
 msgstr "വസ്തു"
 
-#: activities/lang/Lang.qml:201
+#: activities/lang/Lang.qml:199
 msgctxt "Lang|"
 msgid "construction"
 msgstr "കെട്ടിടം"
 
-#: activities/lang/Lang.qml:202
+#: activities/lang/Lang.qml:200
 msgctxt "Lang|"
 msgid "furniture"
 msgstr "ഫർണിച്ചർ"
 
-#: activities/lang/Lang.qml:202
+#: activities/lang/Lang.qml:200
 msgctxt "Lang|"
 msgid "houseware"
 msgstr "വീട്ടുസാമാനം"
 
-#: activities/lang/Lang.qml:203
+#: activities/lang/Lang.qml:201
 msgctxt "Lang|"
 msgid "tool"
 msgstr "പണിയായുധങ്ങൾ"
 
-#: activities/lang/Lang.qml:203
+#: activities/lang/Lang.qml:201
 msgctxt "Lang|"
 msgid "food"
 msgstr "ഭക്ഷണം"
 
-#: activities/lang/Lang.qml:204
+#: activities/lang/Lang.qml:202
 msgctxt "Lang|"
 msgid "transport"
 msgstr "ഗതാഗതം"

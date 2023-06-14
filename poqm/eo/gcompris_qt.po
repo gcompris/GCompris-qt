@@ -14999,12 +14999,12 @@ msgctxt "ActivityInfo|"
 msgid "Tab: repeat the word"
 msgstr "Tab: ripetu la vorton"
 
-#: activities/lang/Lang.qml:140
+#: activities/lang/Lang.qml:138
 msgctxt "Lang|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "Ni bedaŭras, ni ankoraŭ ne havas tradukon por via lingvo."
 
-#: activities/lang/Lang.qml:141
+#: activities/lang/Lang.qml:139
 #, qt-format
 msgctxt "Lang|"
 msgid ""
@@ -15014,7 +15014,7 @@ msgstr ""
 "GCompris estas evoluigita de la KDE-komunumo, vi povas traduki GCompris "
 "aliĝante al tradukteamo ĉe <a href=\"%2\">%2</a>"
 
-#: activities/lang/Lang.qml:143
+#: activities/lang/Lang.qml:141
 msgctxt "Lang|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -15023,117 +15023,117 @@ msgstr ""
 "Ni ŝanĝis al la angla por ĉi tiu agado, sed vi povas elekti alian lingvon en "
 "la agorda dialogo."
 
-#: activities/lang/Lang.qml:191 activities/lang/Lang.qml:192
+#: activities/lang/Lang.qml:189 activities/lang/Lang.qml:190
 msgctxt "Lang|"
 msgid "other"
 msgstr "alia"
 
-#: activities/lang/Lang.qml:193
+#: activities/lang/Lang.qml:191
 msgctxt "Lang|"
 msgid "action"
 msgstr "ago"
 
-#: activities/lang/Lang.qml:193
+#: activities/lang/Lang.qml:191
 msgctxt "Lang|"
 msgid "adjective"
 msgstr "adjektivo"
 
-#: activities/lang/Lang.qml:194
+#: activities/lang/Lang.qml:192
 msgctxt "Lang|"
 msgid "color"
 msgstr "koloro"
 
-#: activities/lang/Lang.qml:194
+#: activities/lang/Lang.qml:192
 msgctxt "Lang|"
 msgid "number"
 msgstr "nombro"
 
-#: activities/lang/Lang.qml:195
+#: activities/lang/Lang.qml:193
 msgctxt "Lang|"
 msgid "people"
 msgstr "homoj"
 
-#: activities/lang/Lang.qml:195
+#: activities/lang/Lang.qml:193
 msgctxt "Lang|"
 msgid "bodyparts"
 msgstr "korpopartoj"
 
-#: activities/lang/Lang.qml:196
+#: activities/lang/Lang.qml:194
 msgctxt "Lang|"
 msgid "clothes"
 msgstr "vestojn"
 
-#: activities/lang/Lang.qml:196
+#: activities/lang/Lang.qml:194
 msgctxt "Lang|"
 msgid "emotion"
 msgstr "emocio"
 
-#: activities/lang/Lang.qml:197
+#: activities/lang/Lang.qml:195
 msgctxt "Lang|"
 msgid "job"
 msgstr "laboro"
 
-#: activities/lang/Lang.qml:197
+#: activities/lang/Lang.qml:195
 msgctxt "Lang|"
 msgid "sport"
 msgstr "sporto"
 
-#: activities/lang/Lang.qml:198
+#: activities/lang/Lang.qml:196
 msgctxt "Lang|"
 msgid "nature"
 msgstr "naturo"
 
-#: activities/lang/Lang.qml:198
+#: activities/lang/Lang.qml:196
 msgctxt "Lang|"
 msgid "animal"
 msgstr "besto"
 
-#: activities/lang/Lang.qml:199
+#: activities/lang/Lang.qml:197
 msgctxt "Lang|"
 msgid "fruit"
 msgstr "frukto"
 
-#: activities/lang/Lang.qml:199
+#: activities/lang/Lang.qml:197
 msgctxt "Lang|"
 msgid "plant"
 msgstr "planto"
 
-#: activities/lang/Lang.qml:200
+#: activities/lang/Lang.qml:198
 msgctxt "Lang|"
 msgid "vegetables"
 msgstr "legomoj"
 
-#: activities/lang/Lang.qml:200
+#: activities/lang/Lang.qml:198
 msgctxt "Lang|"
 msgid "object"
 msgstr "objekto"
 
-#: activities/lang/Lang.qml:201
+#: activities/lang/Lang.qml:199
 msgctxt "Lang|"
 msgid "construction"
 msgstr "konstruo"
 
-#: activities/lang/Lang.qml:202
+#: activities/lang/Lang.qml:200
 msgctxt "Lang|"
 msgid "furniture"
 msgstr "mebloj"
 
-#: activities/lang/Lang.qml:202
+#: activities/lang/Lang.qml:200
 msgctxt "Lang|"
 msgid "houseware"
 msgstr "mastrumaĵoj"
 
-#: activities/lang/Lang.qml:203
+#: activities/lang/Lang.qml:201
 msgctxt "Lang|"
 msgid "tool"
 msgstr "ilo"
 
-#: activities/lang/Lang.qml:203
+#: activities/lang/Lang.qml:201
 msgctxt "Lang|"
 msgid "food"
 msgstr "manĝaĵo"
 
-#: activities/lang/Lang.qml:204
+#: activities/lang/Lang.qml:202
 msgctxt "Lang|"
 msgid "transport"
 msgstr "transporto"

@@ -11,7 +11,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=gcompris&keywords=I18N+L10N&component=general\n"
 "POT-Creation-Date: 2014-11-09 17:30+0000\n"
-"PO-Revision-Date: 2023-05-25 09:00+0300\n"
+"PO-Revision-Date: 2023-06-13 09:04+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
 "Language: uk\n"
@@ -15084,12 +15084,12 @@ msgctxt "ActivityInfo|"
 msgid "Tab: repeat the word"
 msgstr "Tab: повторення слова"
 
-#: activities/lang/Lang.qml:140
+#: activities/lang/Lang.qml:138
 msgctxt "Lang|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "Вибачте, у нас ще немає перекладу потрібною вам мовою."
 
-#: activities/lang/Lang.qml:141
+#: activities/lang/Lang.qml:139
 #, qt-format
 msgctxt "Lang|"
 msgid ""
@@ -15099,7 +15099,7 @@ msgstr ""
 "GCompris розроблено спільнотою KDE. Щоб допомогти у перекладі GCompris, "
 "долучіться до команди перекладачів на сайті <a href=\"%2\">%2</a>"
 
-#: activities/lang/Lang.qml:143
+#: activities/lang/Lang.qml:141
 msgctxt "Lang|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -15108,117 +15108,117 @@ msgstr ""
 "Для цієї вправи ми перемкнули мову на англійську. Втім, ви можете вибрати "
 "іншу мову у діалоговому вікні налаштовування."
 
-#: activities/lang/Lang.qml:191 activities/lang/Lang.qml:192
+#: activities/lang/Lang.qml:189 activities/lang/Lang.qml:190
 msgctxt "Lang|"
 msgid "other"
 msgstr "інше"
 
-#: activities/lang/Lang.qml:193
+#: activities/lang/Lang.qml:191
 msgctxt "Lang|"
 msgid "action"
 msgstr "дія"
 
-#: activities/lang/Lang.qml:193
+#: activities/lang/Lang.qml:191
 msgctxt "Lang|"
 msgid "adjective"
 msgstr "прикметник"
 
-#: activities/lang/Lang.qml:194
+#: activities/lang/Lang.qml:192
 msgctxt "Lang|"
 msgid "color"
 msgstr "колір"
 
-#: activities/lang/Lang.qml:194
+#: activities/lang/Lang.qml:192
 msgctxt "Lang|"
 msgid "number"
 msgstr "число"
 
-#: activities/lang/Lang.qml:195
+#: activities/lang/Lang.qml:193
 msgctxt "Lang|"
 msgid "people"
 msgstr "люди"
 
-#: activities/lang/Lang.qml:195
+#: activities/lang/Lang.qml:193
 msgctxt "Lang|"
 msgid "bodyparts"
 msgstr "частини тіла"
 
-#: activities/lang/Lang.qml:196
+#: activities/lang/Lang.qml:194
 msgctxt "Lang|"
 msgid "clothes"
 msgstr "одяг"
 
-#: activities/lang/Lang.qml:196
+#: activities/lang/Lang.qml:194
 msgctxt "Lang|"
 msgid "emotion"
 msgstr "емоція"
 
-#: activities/lang/Lang.qml:197
+#: activities/lang/Lang.qml:195
 msgctxt "Lang|"
 msgid "job"
 msgstr "робота"
 
-#: activities/lang/Lang.qml:197
+#: activities/lang/Lang.qml:195
 msgctxt "Lang|"
 msgid "sport"
 msgstr "спорт"
 
-#: activities/lang/Lang.qml:198
+#: activities/lang/Lang.qml:196
 msgctxt "Lang|"
 msgid "nature"
 msgstr "природа"
 
-#: activities/lang/Lang.qml:198
+#: activities/lang/Lang.qml:196
 msgctxt "Lang|"
 msgid "animal"
 msgstr "тварина"
 
-#: activities/lang/Lang.qml:199
+#: activities/lang/Lang.qml:197
 msgctxt "Lang|"
 msgid "fruit"
 msgstr "фрукт"
 
-#: activities/lang/Lang.qml:199
+#: activities/lang/Lang.qml:197
 msgctxt "Lang|"
 msgid "plant"
 msgstr "рослини"
 
-#: activities/lang/Lang.qml:200
+#: activities/lang/Lang.qml:198
 msgctxt "Lang|"
 msgid "vegetables"
 msgstr "овочі"
 
-#: activities/lang/Lang.qml:200
+#: activities/lang/Lang.qml:198
 msgctxt "Lang|"
 msgid "object"
 msgstr "об'єкт"
 
-#: activities/lang/Lang.qml:201
+#: activities/lang/Lang.qml:199
 msgctxt "Lang|"
 msgid "construction"
 msgstr "будова"
 
-#: activities/lang/Lang.qml:202
+#: activities/lang/Lang.qml:200
 msgctxt "Lang|"
 msgid "furniture"
 msgstr "меблі"
 
-#: activities/lang/Lang.qml:202
+#: activities/lang/Lang.qml:200
 msgctxt "Lang|"
 msgid "houseware"
 msgstr "посуд"
 
-#: activities/lang/Lang.qml:203
+#: activities/lang/Lang.qml:201
 msgctxt "Lang|"
 msgid "tool"
 msgstr "інструмент"
 
-#: activities/lang/Lang.qml:203
+#: activities/lang/Lang.qml:201
 msgctxt "Lang|"
 msgid "food"
 msgstr "їжа"
 
-#: activities/lang/Lang.qml:204
+#: activities/lang/Lang.qml:202
 msgctxt "Lang|"
 msgid "transport"
 msgstr "транспорт"
@@ -17941,12 +17941,9 @@ msgid "Copyright: %1"
 msgstr "Авторські права: %1"
 
 #: activities/menu/ConfigurationItem.qml:49
-#, fuzzy
-#| msgctxt "ConfigurationItem|"
-#| msgid "Difficulty filter:"
 msgctxt "ConfigurationItem|"
 msgid "Difficulty filter"
-msgstr "Фільтр складності:"
+msgstr "Фільтр складності"
 
 #: activities/menu/ConfigurationItem.qml:135
 msgctxt "ConfigurationItem|"
