@@ -17763,159 +17763,159 @@ msgctxt "BackgroundMusicList|"
 msgid "Copyright: %1"
 msgstr "Copyright: %1"
 
-#: activities/menu/ConfigurationItem.qml:49
+#: activities/menu/ConfigurationItem.qml:48
 msgctxt "ConfigurationItem|"
 msgid "Difficulty filter"
 msgstr "Filter težavnosti"
 
-#: activities/menu/ConfigurationItem.qml:135
+#: activities/menu/ConfigurationItem.qml:108
 msgctxt "ConfigurationItem|"
 msgid "Language selector"
 msgstr "Izbirnik jezika"
 
-#: activities/menu/ConfigurationItem.qml:160
+#: activities/menu/ConfigurationItem.qml:133
 msgctxt "ConfigurationItem|"
 msgid "Localized voices"
 msgstr "Sinhronizacija"
 
-#: activities/menu/ConfigurationItem.qml:169
+#: activities/menu/ConfigurationItem.qml:142
 msgctxt "ConfigurationItem|"
 msgid "Check for updates"
 msgstr "Preveri za posodobitvami"
 
-#: activities/menu/ConfigurationItem.qml:170
+#: activities/menu/ConfigurationItem.qml:143
 msgctxt "ConfigurationItem|"
 msgid "Download"
 msgstr "Prejmi"
 
-#: activities/menu/ConfigurationItem.qml:185
+#: activities/menu/ConfigurationItem.qml:158
 msgctxt "ConfigurationItem|"
 msgid "Enable audio voices"
 msgstr "Omogoči zvočne glasove"
 
-#: activities/menu/ConfigurationItem.qml:195
+#: activities/menu/ConfigurationItem.qml:168
 msgctxt "ConfigurationItem|"
 msgid "Enable audio effects"
 msgstr "Omogoči zvočne učinke"
 
-#: activities/menu/ConfigurationItem.qml:204
+#: activities/menu/ConfigurationItem.qml:177
 msgctxt "ConfigurationItem|"
 msgid "Audio effects volume"
 msgstr "Glasnost zvočnih učinkov"
 
-#: activities/menu/ConfigurationItem.qml:225
+#: activities/menu/ConfigurationItem.qml:198
 msgctxt "ConfigurationItem|"
 msgid "Download background music"
 msgstr "Prenesi sem glasbo v ozadju"
 
-#: activities/menu/ConfigurationItem.qml:236
+#: activities/menu/ConfigurationItem.qml:209
 msgctxt "ConfigurationItem|"
 msgid "Enable background music"
 msgstr "Omogoči glasbo v ozadju"
 
-#: activities/menu/ConfigurationItem.qml:245
+#: activities/menu/ConfigurationItem.qml:218
 msgctxt "ConfigurationItem|"
 msgid "Background Music"
 msgstr "Glasba v ozadju"
 
-#: activities/menu/ConfigurationItem.qml:262
+#: activities/menu/ConfigurationItem.qml:235
 msgctxt "ConfigurationItem|"
 msgid "Not playing"
 msgstr "Zdaj se predvaja"
 
-#: activities/menu/ConfigurationItem.qml:264
+#: activities/menu/ConfigurationItem.qml:237
 #, qt-format
 msgctxt "ConfigurationItem|"
 msgid "Title: %1  Artist: %2"
 msgstr "Naslov: %1  avtor: %2"
 
-#: activities/menu/ConfigurationItem.qml:266
+#: activities/menu/ConfigurationItem.qml:239
 msgctxt "ConfigurationItem|"
 msgid "Introduction music"
 msgstr "Uvodna glasba"
 
-#: activities/menu/ConfigurationItem.qml:289
+#: activities/menu/ConfigurationItem.qml:262
 msgctxt "ConfigurationItem|"
 msgid "Background music volume"
 msgstr "Glasnost glasbe v ozadju"
 
-#: activities/menu/ConfigurationItem.qml:308
+#: activities/menu/ConfigurationItem.qml:281
 msgctxt "ConfigurationItem|"
 msgid "Fullscreen"
 msgstr "Celozaslonski način"
 
-#: activities/menu/ConfigurationItem.qml:319
+#: activities/menu/ConfigurationItem.qml:292
 msgctxt "ConfigurationItem|"
 msgid "Virtual Keyboard"
 msgstr "Navidezna tipkovnica"
 
-#: activities/menu/ConfigurationItem.qml:330
+#: activities/menu/ConfigurationItem.qml:303
 msgctxt "ConfigurationItem|"
 msgid "Enable automatic downloads/updates of sound files"
 msgstr "Omogoči samodejne prejeme/posodobitve zvočnih datotek"
 
-#: activities/menu/ConfigurationItem.qml:342
+#: activities/menu/ConfigurationItem.qml:315
 msgctxt "ConfigurationItem|"
 msgid "Download full word image set"
 msgstr "Uporabite celoten slikovni niz"
 
-#: activities/menu/ConfigurationItem.qml:363
+#: activities/menu/ConfigurationItem.qml:336
 msgctxt "ConfigurationItem|"
 msgid "Full word image set is installed"
 msgstr "Celotna zbirka slik je nameščena"
 
-#: activities/menu/ConfigurationItem.qml:363
+#: activities/menu/ConfigurationItem.qml:336
 msgctxt "ConfigurationItem|"
 msgid "Full word image set is not installed"
 msgstr "Celotni niz slik ni nameščen"
 
-#: activities/menu/ConfigurationItem.qml:385
+#: activities/menu/ConfigurationItem.qml:358
 msgctxt "ConfigurationItem|"
 msgid "The activity section menu is visible"
 msgstr "Meni odseka dejavnosti je viden"
 
-#: activities/menu/ConfigurationItem.qml:395
+#: activities/menu/ConfigurationItem.qml:368
 msgctxt "ConfigurationItem|"
 msgid "Ask for confirmation to exit"
 msgstr "Prosi za potrditev izhoda"
 
-#: activities/menu/ConfigurationItem.qml:406
+#: activities/menu/ConfigurationItem.qml:379
 msgctxt "ConfigurationItem|"
 msgid "Font selector"
 msgstr "Izbirnik pisave"
 
-#: activities/menu/ConfigurationItem.qml:411
+#: activities/menu/ConfigurationItem.qml:384
 msgctxt "ConfigurationItem|"
 msgid "Font size"
 msgstr "Velikost pisave"
 
-#: activities/menu/ConfigurationItem.qml:431
-#: activities/menu/ConfigurationItem.qml:465
+#: activities/menu/ConfigurationItem.qml:404
+#: activities/menu/ConfigurationItem.qml:438
 msgctxt "ConfigurationItem|"
 msgid "Default"
 msgstr "Privzeto"
 
-#: activities/menu/ConfigurationItem.qml:440
+#: activities/menu/ConfigurationItem.qml:413
 msgctxt "ConfigurationItem|"
 msgid "Font Capitalization"
 msgstr "Velikost črk"
 
-#: activities/menu/ConfigurationItem.qml:445
+#: activities/menu/ConfigurationItem.qml:418
 msgctxt "ConfigurationItem|"
 msgid "Font letter spacing"
 msgstr "Razmik med črkami pisave"
 
-#: activities/menu/ConfigurationItem.qml:648
+#: activities/menu/ConfigurationItem.qml:623
 msgctxt "ConfigurationItem|"
 msgid "Mixed case (default)"
 msgstr "Mešana velikost (privzeto)"
 
-#: activities/menu/ConfigurationItem.qml:649
+#: activities/menu/ConfigurationItem.qml:624
 msgctxt "ConfigurationItem|"
 msgid "All uppercase"
 msgstr "VELIKE ČRKE"
 
-#: activities/menu/ConfigurationItem.qml:650
+#: activities/menu/ConfigurationItem.qml:625
 msgctxt "ConfigurationItem|"
 msgid "All lowercase"
 msgstr "Samo male črke"
