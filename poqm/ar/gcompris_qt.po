@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2023-06-01 09:41+0400\n"
+"PO-Revision-Date: 2023-06-15 09:30+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
 "Language: ar\n"
@@ -17379,12 +17379,9 @@ msgid "Copyright: %1"
 msgstr "حقوق النسخ: %1"
 
 #: activities/menu/ConfigurationItem.qml:48
-#, fuzzy
-#| msgctxt "ConfigurationItem|"
-#| msgid "Difficulty filter:"
 msgctxt "ConfigurationItem|"
 msgid "Difficulty filter"
-msgstr "مرشّح الصّعوبة:"
+msgstr "مرشّح الصّعوبة"
 
 #: activities/menu/ConfigurationItem.qml:108
 msgctxt "ConfigurationItem|"
