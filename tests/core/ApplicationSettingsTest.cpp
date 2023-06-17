@@ -8,9 +8,10 @@
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-#include <QtTest>
+#include <QTest>
 #include <QObject>
 #include <QFile>
+#include <QSignalSpy>
 
 #include "src/core/ApplicationSettings.h"
 #include "ApplicationSettingsMock.h"

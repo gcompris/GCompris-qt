@@ -10,7 +10,7 @@
  */
 
 #include <QObject>
-#include <QtTest>
+#include <QTest>
 #include <QString>
 
 #include "src/core/DownloadManager.h"

@@ -8,9 +8,9 @@
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-#include <QtTest>
+#include <QTest>
 #include <QObject>
-
+#include <QSignalSpy>
 #include "src/core/Dataset.h"
 
 #define DATASET_TEST_ATTRIBUTE(attributeName, accessorName, attributeType) \

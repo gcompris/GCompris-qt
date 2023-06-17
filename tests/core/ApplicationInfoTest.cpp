@@ -10,7 +10,7 @@
  */
 
 #include <QObject>
-#include <QtTest>
+#include <QTest>
 
 #include "src/core/ApplicationInfo.h"
 
