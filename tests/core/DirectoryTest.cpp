@@ -10,7 +10,7 @@
  */
 
 #include <QObject>
-#include <QtTest>
+#include <QTest>
 #include <QDir>
 
 #include "src/core/File.h"

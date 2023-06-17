@@ -11,9 +11,10 @@
 
 /* This file is used for the unit tests */
 
-#include <QtTest>
+#include <QTest>
 #include <QObject>
 #include <QFile>
+#include <QSignalSpy>
 
 #include "src/core/File.h"
 
