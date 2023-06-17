@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2023-05-29 21:43+0400\n"
+"PO-Revision-Date: 2023-06-16 17:24+0400\n"
 "Last-Translator: Kheyyam <xxmn77@gmail.com>\n"
 "Language-Team: Azerbaijani <kde-i18n-doc@kde.org>\n"
 "Language: az\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Qt-Contexts: true\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 23.04.1\n"
+"X-Generator: Lokalize 23.04.2\n"
 
 #. Activity title
 #: activities/advanced_colors/ActivityInfo.qml:15
@@ -1674,7 +1674,7 @@ msgstr ""
 #: activities/analog_electricity/TutorialDataset.qml:135
 msgctxt "TutorialDataset|"
 msgid "Break the bulb by connecting it with the two batteries."
-msgstr "Lampanı iki batareyaya qoşaraq sındırın."
+msgstr "Lampanı iki batareyaya qoşaraq sıradan çıxarın."
 
 #: activities/analog_electricity/TutorialDataset.qml:148
 msgctxt "TutorialDataset|"
