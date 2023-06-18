@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
-"PO-Revision-Date: 2023-05-22 14:00\n"
+"PO-Revision-Date: 2023-06-17 04:11\n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
@@ -4116,22 +4116,15 @@ msgid "Then, click on the OK button to validate your answer."
 msgstr "然后点击确定按钮来验证您的答案。"
 
 #: activities/chronos/ActivityInfo.qml:29
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Moon photo is copyright NASA. The space sounds come from Tuxpaint and "
-#| "Vegastrike which are released under the GPL license. The transportation "
-#| "images are copyright Franck Doucet. Dates of Transportation are based on "
-#| "those found in &lt;https://www.wikipedia.org&gt;."
 msgctxt "ActivityInfo|"
 msgid ""
 "Moon photo is copyright NASA. The transportation images are copyright Franck "
 "Doucet. Dates of Transportation are based on those found in &lt;https://www."
 "wikipedia.org&gt;."
 msgstr ""
-"月球图片版权来自 NASA。太空相关的音效来自 Tuxpaint 和 Vegastrike，并在 GPL 许"
-"可证下发布。交通有关的图片版权来自 Franck Doucet。交通图片的日期由 &lt;"
-"https://www.wikipedia.org&gt; 提供的信息确定。"
+"Moon photo is copyright NASA. The transportation images are copyright Franck "
+"Doucet. Dates of Transportation are based on those found in &lt;https://www."
+"wikipedia.org&gt;."
 
 #: activities/chronos/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -16977,12 +16970,9 @@ msgid "Copyright: %1"
 msgstr "版权：%1"
 
 #: activities/menu/ConfigurationItem.qml:48
-#, fuzzy
-#| msgctxt "ConfigurationItem|"
-#| msgid "Difficulty filter:"
 msgctxt "ConfigurationItem|"
 msgid "Difficulty filter"
-msgstr "难度筛选："
+msgstr ""
 
 #: activities/menu/ConfigurationItem.qml:108
 msgctxt "ConfigurationItem|"
