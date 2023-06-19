@@ -1,23 +1,23 @@
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
-#
-# Horia PELLE <horricane@gmail.com>, 2017, 2018, 2019, 2023.
+# Horia PELLE <horricane@gmail.com>, 2017, 2018, 2019.
 # Sergiu Bivol <sergiu@cip.md>, 2020, 2021.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-12-13 00:48+0000\n"
-"PO-Revision-Date: 2023-06-01 16:26+0200\n"
-"Last-Translator: Horia PELLE <horricane@gmail.com>\n"
-"Language-Team: English <kde-i18n-doc@kde.org>\n"
+"PO-Revision-Date: 2021-05-03 15:44+0100\n"
+"Last-Translator: Sergiu Bivol <sergiu@cip.md>\n"
+"Language-Team: Romanian\n"
 "Language: ro\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
 "20)) ? 1 : 2;\n"
-"X-Generator: Lokalize 2.0\n"
+"X-Generator: Lokalize 19.12.3\n"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "advanced_colors"
 #: activities/advanced_colors/ActivityInfo.qml:18
@@ -72,8 +72,8 @@ msgid ""
 "Click on the missing items on the table and follow the logical sequence "
 "displayed above it."
 msgstr ""
-"Fă clic pe rândul de jos pe articolele care lipsesc din tabel, și urmează "
-"lanțul logic afișat deasupra."
+"Fă clic pe articolele lipsă de pe masă și urmează lanțul logic afișat mai "
+"sus."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "align4"
 #: activities/align4/ActivityInfo.qml:18
@@ -118,7 +118,8 @@ msgstr "Apasă orice tastă de pe tastatură și observă rezultatul."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "baby_mouse"
 #: activities/baby_mouse/ActivityInfo.qml:17
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Move the mouse or touch the screen and observe the result."
 msgid "Move the mouse or touch the screen and observe the result."
 msgstr "Mișcă mausul sau atinge ecranul și observă rezultatul."
 
@@ -129,27 +130,28 @@ msgid ""
 "Move each puzzle piece, to obtain the completed puzzle. You can change their "
 "orientation by clicking on the arrows."
 msgstr ""
-"Mută fiecare piesă pentru a obține puzzle-lul completat. Poți schimba "
-"orientarea pieselor făcând clic pe săgeți."
+"Mută fiecare piesă pentru a compune în final figura cerută. Poți schimba "
+"orientarea pieselor apăsând pe săgeți."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "baby_wordprocessor"
 #: activities/baby_wordprocessor/ActivityInfo.qml:18
 #, kde-format
 msgid "A simplistic word processor to play around with the keyboard"
 msgstr ""
-"Acesta este un procesor de text simplist, pentru familiarizarea cu tastatura."
+"Acesta este un procesor de text simplu, pentru jocul copiilor cu tastatura "
+"și observarea literelor."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "babymatch"
 #: activities/babymatch/ActivityInfo.qml:21
 #, kde-format
 msgid "Drag and drop the objects matching the pictures"
-msgstr "Glisează obiectele peste imaginile potrivite."
+msgstr "Glisează imaginile în locul corespunzător, acolo unde se potrivesc."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "babyshapes"
 #: activities/babyshapes/ActivityInfo.qml:22
 #, kde-format
 msgid "Drag and drop the objects matching the shapes."
-msgstr "Glisează obiectele peste formele potrivite."
+msgstr "Glisează imaginile în locul corespunzător, acolo unde se potrivesc."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "balancebox"
 #: activities/balancebox/ActivityInfo.qml:21
@@ -163,8 +165,7 @@ msgstr "Condu mingea până la ușă prin înclinări ușoare repetate."
 msgid ""
 "Press the left and right arrows at the same time to send the ball straight on"
 msgstr ""
-"Apasă simultan săgețile dreapta și stânga, pentru a lansa mingea drept în "
-"față."
+"Apasă simultan săgețile dreaptă și stângă pentru a lansa mingea drept în față"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "bargame"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "bargame_2players"
@@ -175,8 +176,8 @@ msgid ""
 "Select the number of balls you wish to place in the holes and then click on "
 "the OK button. The winner is the one who hasn't put a ball in the red hole."
 msgstr ""
-"Alege numărul de bile pe care vrei să le pui în găuri și apoi apasă apoi pe "
-"butonul OK. Câștigătorul este acela care nu a pus o minge în gaura roșie."
+"Alege numărul de mingi pe care vrei să le pui în găuri și apoi apasă butonul "
+"OK. Câștigătorul este acela care nu a pus o minge în gaura roșie."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "binary_bulb"
 #: activities/binary_bulb/ActivityInfo.qml:18
@@ -204,7 +205,7 @@ msgstr "Creează celula Braille pentru literă."
 #: activities/calendar/ActivityInfo.qml:18
 #, kde-format
 msgid "Select the asked date on the calendar"
-msgstr "Selectează în calendar data cerută."
+msgstr "Alege în calendar ziua cerută"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "canal_lock"
 #: activities/canal_lock/ActivityInfo.qml:18
@@ -222,11 +223,12 @@ msgstr ""
 #: activities/categorization/ActivityInfo.qml:18
 #, kde-format
 msgid "Categorize the items into the correct group"
-msgstr "Categorizează articolele în grupul corect."
+msgstr "Categorizează articolele în grupul corect"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "checkers"
 #: activities/checkers/ActivityInfo.qml:18
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "play checkers against Tux"
 msgid "play checkers against Tux"
 msgstr "Joacă dame contra lui Tux."
 
@@ -234,7 +236,7 @@ msgstr "Joacă dame contra lui Tux."
 #: activities/checkers_2players/ActivityInfo.qml:18
 #, kde-format
 msgid "play checkers with your friend"
-msgstr "Joacă dame cu un prieten."
+msgstr "Joacă \"Dame\" cu un prieten."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "chess"
 #: activities/chess/ActivityInfo.qml:18
@@ -299,24 +301,25 @@ msgstr "Rotește prin glisare acele ceasului, pentru a indica ora cerută."
 #: activities/color_mix/ActivityInfo.qml:18
 #, kde-format
 msgid "Match the color by moving the sliders on the tubes of paint"
-msgstr ""
-"Obține culoarea potrivită prin clicuri pe butoanele tuburilor de vopsea."
+msgstr "Obține culoarea potrivită trăgând de manetele tuburilor de vopsea"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "color_mix_light"
 #: activities/color_mix_light/ActivityInfo.qml:18
 #, kde-format
 msgid "Match the color by moving the sliders on the torches"
-msgstr "Obține culoarea potrivită prin clicuri pe butoanele lanternelor."
+msgstr "Obține culoarea potrivită trăgând de manetele torțelor"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "colors"
 #: activities/colors/ActivityInfo.qml:18
 #, kde-format
 msgid "Click on the right color"
-msgstr "Fă clic pe culoarea potrivită."
+msgstr "Apasă pe culoarea potrivită"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "comparator"
 #: activities/comparator/ActivityInfo.qml:20
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "Select the correct comparator sign for each pair of numbers in the list."
 msgid ""
 "Select the correct comparator sign for each pair of numbers in the list."
 msgstr ""
@@ -337,7 +340,7 @@ msgstr ""
 #: activities/details/ActivityInfo.qml:21
 #, kde-format
 msgid "Slide the images on their respective targets"
-msgstr "Glisează imaginile în locul corespunzător, acolo unde se potrivesc."
+msgstr "Glisează imaginile în locul corespunzător, acolo unde se potrivesc"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "digital_electricity"
 #: activities/digital_electricity/ActivityInfo.qml:18
@@ -377,16 +380,14 @@ msgstr " Ia buretele, șterge fereastra și descoperă imaginea ascunsă."
 #: activities/erase_2clic/ActivityInfo.qml:18
 #, kde-format
 msgid "Double tap or double click on the bricks to discover the hidden picture"
-msgstr ""
-"Bate de două ori cu degetul sau fă dublu clic pe cărămizi, pentru a "
-"descoperi imaginea ascunsă."
+msgstr "Apasă dublu pe cărămizi pentru a descoperi imaginea ascunsă"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "erase_clic"
 #: activities/erase_clic/ActivityInfo.qml:18
 #, kde-format
 msgid "Click or tap on the transparent bricks and discover the hidden picture."
 msgstr ""
-"Bate cu degetul sau fă clic pe cărămizile transparente și descoperă imaginea "
+" Apasă sau bate cu degetul pe cărămizile transparente și descoperă imaginea "
 "ascunsă."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "explore_farm_animals"
@@ -420,7 +421,7 @@ msgstr ""
 #: activities/family/ActivityInfo.qml:18
 #, kde-format
 msgid "Let us understand what to call our relatives"
-msgstr "Haideți să înțelegem cum ne numim rudele."
+msgstr "Haideți să vedem cum ne numim rudele."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "family_find_relative"
 #: activities/family_find_relative/ActivityInfo.qml:18
@@ -436,7 +437,7 @@ msgid ""
 "release its space. You must put all the pieces in the correct order. The "
 "numbers on the pieces can help you."
 msgstr ""
-"Fă clic pe un element de lângă spațiul liber. Elementul se va mișca și va "
+"Fă clic pe un element de lângă un spațiu liber. Elementul se va mișca și va "
 "lăsa în urmă un alt spațiu liber. Trebuie să pui toate elementele la locul "
 "lor, pentru a compune imaginea corectă. Elementele numerotate îți indică "
 "faptul că trebuiesc aranjate în ordine crescătoare."
@@ -463,14 +464,18 @@ msgstr "Trage o linie de la minge pentru a imprima direcția și viteza șutului
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "fractions_create"
 #: activities/fractions_create/ActivityInfo.qml:19
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "Select the appropriate number of parts as described in the instructions."
 msgid ""
 "Select the appropriate number of parts as described in the instructions."
 msgstr "Selectează numărul potrivit de părți, conform instrucțiunilor."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "fractions_find"
 #: activities/fractions_find/ActivityInfo.qml:17
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "Find the correct numerator and denominator of the represented fraction"
 msgid "Find the correct numerator and denominator of the represented fraction"
 msgstr "Află numitorul și numărătorul corect al fracției reprezentate."
 
@@ -478,7 +483,7 @@ msgstr "Află numitorul și numărătorul corect al fracției reprezentate."
 #: activities/geo-country/ActivityInfo.qml:22
 #, kde-format
 msgid "Drag and drop the regions to complete the country maps."
-msgstr "Glisează regiunile pentru a recompune harta țării."
+msgstr "Glisează regiunile pentru a recompune întreaga țară."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "geography"
 #: activities/geography/ActivityInfo.qml:22
@@ -557,8 +562,8 @@ msgstr ""
 msgid ""
 "Move the spaceship to avoid hitting the planets and reach the space station."
 msgstr ""
-"Manevrează nava spațială pentru a evita ciocnirea cu planetele, astfel încât "
-"să ajungă cu bine la stația spațială."
+"Mută nava spațială pentru a evita să o lovești de planete sau să ajungă la "
+"stația spațială."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "guesscount"
 #: activities/guesscount/ActivityInfo.qml:22
@@ -612,7 +617,7 @@ msgid ""
 "you're close to it!"
 msgstr ""
 "Fă clic pe hexagoane pentru a găsi obiectul ascuns. Zona roșie îți va indica "
-"faptul că ești aproape de el!"
+"faptul că te apropii de el."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "imagename"
 #: activities/imagename/ActivityInfo.qml:21
@@ -654,7 +659,10 @@ msgstr "Apasă pe cercuri pentru a da rezultatul operației."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "learn_decimals"
 #: activities/learn_decimals/ActivityInfo.qml:17
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "Drag the arrow to select a part of the bar, and drag the selected part of "
+#| "the bar to the empty area to represent the decimal number."
 msgid ""
 "Drag the arrow to select a part of the bar, and drag the selected part of "
 "the bar to the empty area to represent the decimal number."
@@ -664,7 +672,10 @@ msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "learn_decimals_additions"
 #: activities/learn_decimals_additions/ActivityInfo.qml:17
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "Drag the arrow to select a part of the bar, and drag the selected part of "
+#| "the bar to the empty area to represent the result of the addition."
 msgid ""
 "Drag the arrow to select a part of the bar, and drag the selected part of "
 "the bar to the empty area to represent the result of the addition."
@@ -674,7 +685,8 @@ msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "learn_decimals_subtractions"
 #: activities/learn_decimals_subtractions/ActivityInfo.qml:17
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Click on the squares to represent the result of the subtraction."
 msgid "Click on the squares to represent the result of the subtraction."
 msgstr "Apasă pe pătrate pentru a reprezenta rezultatul scăderii."
 
@@ -686,7 +698,10 @@ msgstr "Apasă pe cercuri pentru a potrivi cifra dată."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "learn_quantities"
 #: activities/learn_quantities/ActivityInfo.qml:17
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "Drag the arrow to select a number of oranges, and drag the oranges to the "
+#| "empty area to represent the requested quantity."
 msgid ""
 "Drag the arrow to select a number of oranges, and drag the oranges to the "
 "empty area to represent the requested quantity."
@@ -696,7 +711,10 @@ msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "left_right_click"
 #: activities/left_right_click/ActivityInfo.qml:17
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "Move animals to their homes using a left click or right click on your "
+#| "mouse."
 msgid ""
 "Move animals to their homes using a left click or right click on your mouse."
 msgstr ""
@@ -735,7 +753,7 @@ msgstr "Descoperă povestea lui Louis Braille."
 #: activities/magic-hat-minus/ActivityInfo.qml:18
 #, kde-format
 msgid "Click on the hat. How many stars are still hiding under the hat."
-msgstr "Fă clic pe pălăria magicianului. Câte stele au mai rămas sub ea?"
+msgstr "Fă clic pe pălăria magicianului. Câte stele mai sunt încă sub pălărie?"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "magic-hat-plus"
 #: activities/magic-hat-plus/ActivityInfo.qml:18
@@ -744,8 +762,8 @@ msgid ""
 "Count the number of stars hidden under the hat and then click on the stars "
 "to indicate their number."
 msgstr ""
-"Numără steluțele ascunse sub pălărie și fă apoi clicuri pe steluțele de jos "
-"pentru a compune respectivul număr."
+"Numără stelele ascunse sub pălărie și fă apoi clic pe ele pentru a le indica "
+"numărul."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "maze"
 #: activities/maze/ActivityInfo.qml:18
@@ -842,7 +860,7 @@ msgstr "Întoarce două cărți pentru a potrivi operația cu rezultatul ei."
 #: activities/memory-sound/ActivityInfo.qml:18
 #, kde-format
 msgid "Click on an audio card and find its double."
-msgstr "Fă clic pe o carte audio și găsește-i dublura."
+msgstr "Întoarce două cărți pentru a găsi perechile de sunete identice."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-tux"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "memory"
@@ -904,7 +922,8 @@ msgstr "Fă clic pe bani pentru a plăti."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "morse_code"
 #: activities/morse_code/ActivityInfo.qml:21
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Learn and practice the International Morse code"
 msgid "Learn and practice the International Morse code"
 msgstr "Învață și practică Codul Internațional Morse."
 
@@ -938,13 +957,13 @@ msgstr ""
 #: activities/note_names/ActivityInfo.qml:21
 #, kde-format
 msgid "Identify the note and press the correct piano key"
-msgstr "Identifică nota și apasă clapa corectă a pianului."
+msgstr "Recunoaște nota și apasă clapa corectă a pianului."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "number_sequence"
 #: activities/number_sequence/ActivityInfo.qml:18
 #, kde-format
 msgid "Draw the picture by touching the numbers in ascending order."
-msgstr "Desenează imaginea atingând numerele în ordine crescătoare."
+msgstr "Desenează imaginea făcând clic pe numere în ordine crescătoare."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "numbers-odd-even"
 #: activities/numbers-odd-even/ActivityInfo.qml:18
@@ -958,25 +977,29 @@ msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "ordering_alphabets"
 #: activities/ordering_alphabets/ActivityInfo.qml:24
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Arrange the letters in the correct order."
 msgid "Arrange the letters in the correct order."
 msgstr "Aranjează literele în ordinea corectă."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "ordering_chronology"
 #: activities/ordering_chronology/ActivityInfo.qml:24
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Arrange the given events in their chronological order."
 msgid "Arrange the given events in their chronological order."
 msgstr "Aranjează evenimentele date în ordine cronologică."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "ordering_numbers"
 #: activities/ordering_numbers/ActivityInfo.qml:23
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Arrange the numbers in the correct order."
 msgid "Arrange the numbers in the correct order."
 msgstr "Aranjează numerele în ordinea corectă."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "ordering_sentences"
 #: activities/ordering_sentences/ActivityInfo.qml:23
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Arrange the given words to form a meaningful sentence."
 msgid "Arrange the given words to form a meaningful sentence."
 msgstr "Aranjează cuvintele date pentru a forma o propoziție cu înțeles."
 
@@ -984,7 +1007,8 @@ msgstr "Aranjează cuvintele date pentru a forma o propoziție cu înțeles."
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "oware"
 #: activities/oware/ActivityInfo.qml:17
 #: activities/oware_2players/ActivityInfo.qml:17
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Capture at least 25 seeds to win the game"
 msgid "Capture at least 25 seeds to win the game"
 msgstr "Capturează cel puțin 25 de semințe pentru a câștiga jocul."
 
@@ -998,7 +1022,10 @@ msgstr "Prinde și glisează fiecare piesă a puzzle-ului la locul potrivit."
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "path_decoding_relative"
 #: activities/path_decoding/ActivityInfo.qml:17
 #: activities/path_decoding_relative/ActivityInfo.qml:17
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "Click on the grid squares following the given directions to help Tux "
+#| "reach the target."
 msgid ""
 "Click on the grid squares following the given directions to help Tux reach "
 "the target."
@@ -1010,7 +1037,8 @@ msgstr ""
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "path_encoding_relative"
 #: activities/path_encoding/ActivityInfo.qml:17
 #: activities/path_encoding_relative/ActivityInfo.qml:17
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Use the arrows to move Tux along the path and reach the target."
 msgid "Use the arrows to move Tux along the path and reach the target."
 msgstr ""
 "Folosește săgețile pentru a-l mișca pe Tux de-a lungul traseului și a-l face "
@@ -1091,15 +1119,15 @@ msgstr ""
 #: activities/readingv/ActivityInfo.qml:18
 #, kde-format
 msgid "Read a list of words and say if a given word is in it."
-msgstr "Citește o listă de cuvinte și spune dacă cuvântul dat era și el acolo."
+msgstr "Citește o listă de cuvinte și vezi dacă cuvântul dat era și el acolo."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "redraw"
 #: activities/redraw/ActivityInfo.qml:18
 #, kde-format
 msgid "Use the drawing tools to build an identical pattern on the right."
 msgstr ""
-"Folosește instrumentele de desenat pentru a construi un model identic cu cel "
-"dat."
+"Folosește instrumentele de desenat pentru a reproduce identic modelul din "
+"partea dreaptă."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "redraw_symmetrical"
 #: activities/redraw_symmetrical/ActivityInfo.qml:18
@@ -1107,7 +1135,8 @@ msgstr ""
 msgid ""
 "Use the drawing tools to reproduce symmetrically the pattern on the right."
 msgstr ""
-"Folosește instrumentele de desenat pentru a reproduce simetric modelul dat."
+"Folosește instrumentele de desenat pentru a reproduce simetric modelul din "
+"partea dreaptă."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "renewable_energy"
 #: activities/renewable_energy/ActivityInfo.qml:18
@@ -1159,7 +1188,7 @@ msgstr ""
 msgid ""
 "Select a color and paint the rectangles as you like to create a drawing."
 msgstr ""
-"Selectează ce culori dorești, și pictează apoi pătratele, pentru a crea un "
+"Selectează ce culori dorești, și pictează apoi pătrățelele, pentru a crea un "
 "desen."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "smallnumbers"
@@ -1169,7 +1198,7 @@ msgid ""
 "Count the number on the dice and type it on your keyboard before it reaches "
 "the ground."
 msgstr ""
-"Socotește numărul de pe zar și scrie-l cu ajutorul tastaturii, înainte ca "
+"Socotește numărul de pe zar și scrie-l cu ajutorul tastaturii înainte ca "
 "acesta să atingă pământul."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "smallnumbers2"
@@ -1242,7 +1271,10 @@ msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "tens_complement_find"
 #: activities/tens_complement_find/ActivityInfo.qml:17
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "Create pairs of numbers equal to ten. Select a number in the list, then "
+#| "select an empty spot of an operation to move the selected number there."
 msgid ""
 "Create pairs of numbers equal to ten. Select a number in the list, then "
 "select an empty spot of an operation to move the selected number there."
@@ -1253,7 +1285,10 @@ msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "tens_complement_swap"
 #: activities/tens_complement_swap/ActivityInfo.qml:17
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "Create pairs of numbers equal to ten. Select a number, then select "
+#| "another number of the same operation to swap their position."
 msgid ""
 "Create pairs of numbers equal to ten. Select a number, then select another "
 "number of the same operation to swap their position."
@@ -1263,7 +1298,11 @@ msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "tens_complement_use"
 #: activities/tens_complement_use/ActivityInfo.qml:17
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "Decompose the operations to include a pair of numbers equal to ten. "
+#| "Select a number in the list, then select an empty spot of an operation to "
+#| "move the selected number there."
 msgid ""
 "Decompose the operations to include a pair of numbers equal to ten. Select a "
 "number in the list, then select an empty spot of an operation to move the "
