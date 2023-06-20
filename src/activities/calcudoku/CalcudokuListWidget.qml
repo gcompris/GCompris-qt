@@ -14,10 +14,11 @@ Item {
     height: view.height
     anchors {
         left: parent.left
-        leftMargin: 2 * ApplicationInfo.ratio
+        leftMargin: background.baseMargins
         top: parent.top
-        topMargin: 2 * ApplicationInfo.ratio
+        topMargin: background.baseMargins
     }
+
 
     property alias model: mymodel;
     property alias view: view;
@@ -29,23 +30,49 @@ Item {
 
     ListView {
         id: view
-        width: background.width / 5
-        height: background.height - 2 * bar.height
         interactive: false
-        spacing: 10
+        spacing: 5 * ApplicationInfo.ratio
         model: mymodel
-        delegate: contactsDelegate
+        delegate: listItemComponent
 
-        property int iconSize: Math.min((height - mymodel.count * spacing) /
-                                        mymodel.count,
-                                        view.width * 0.95)
+        property int iconSize
+
+        states: [
+            State {
+                name: "horizontalLayout"
+                when: background.isHorizontalLayout
+                PropertyChanges {
+                    target: view
+                    width: iconSize
+                    height: background.height - 2 * bar.height
+                    orientation: ListView.Vertical
+                    iconSize: Math.min((height - (mymodel.count - 1) * spacing) / mymodel.count,
+                                       100 * ApplicationInfo.ratio)
+                }
+            },
+            State {
+                name: "verticalLayout"
+                when: !background.isHorizontalLayout
+                PropertyChanges {
+                    target: view
+                    width: background.width - background.baseMargins * 2
+                    height: iconSize
+                    orientation: ListView.Horizontal
+                    iconSize: Math.min((width - (model.count - 1) * spacing) / mymodel.count,
+                                       100 * ApplicationInfo.ratio)
+                }
+            }
+        ]
 
         Component {
-            id: contactsDelegate
+            id: listItemComponent
 
-            Item {
+            Rectangle {
+                id: iconBg
                 width: view.iconSize
                 height: view.iconSize
+                color: "#AAFFFFFF"
+                radius: height * 0.1
 
                 Image {
                     id: icon
@@ -76,10 +103,10 @@ Item {
                         },
                         State {
                             name: "hover"
-                            when: mouseArea.containsMouse
+                            when: mouseArea.containsMouse && !icon.iAmSelected
                             PropertyChanges {
                                 target: icon
-                                scale: 1.1
+                                scale: 1
                             }
                         },
                         State {
@@ -87,7 +114,7 @@ Item {
                             when: icon.iAmSelected
                             PropertyChanges {
                                 target: icon
-                                scale: 1
+                                scale: 0.9
                             }
                         }
                     ]
@@ -98,23 +125,23 @@ Item {
                         loops: Animation.Infinite
                         alwaysRunToEnd: true
                         NumberAnimation {
-                            target: icon
+                            target: iconBg
                             property: "rotation"
-                            from: 0; to: 10
+                            from: 0; to: 5
                             duration: 200
                             easing.type: Easing.OutQuad
                         }
                         NumberAnimation {
-                            target: icon
+                            target: iconBg
                             property: "rotation"
-                            from: 10; to: -10
+                            from: 5; to: -5
                             duration: 400
                             easing.type: Easing.InOutQuad
                         }
                         NumberAnimation {
-                            target: icon
+                            target: iconBg
                             property: "rotation"
-                            from: -10; to: 0
+                            from: -5; to: 0
                             duration: 200
                             easing.type: Easing.InQuad
                         }

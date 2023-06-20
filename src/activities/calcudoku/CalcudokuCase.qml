@@ -11,18 +11,13 @@ import "../../core"
 
 Rectangle {
     id: mCase
-    border.width: 4
-    border.color: "#2a2a2a"
-
+    border.color: "#808080"
+    border.width: ApplicationInfo.ratio
     property string text
     property bool isInitial
     property string operator
     property string result
     property int gridIndex
-    property bool topWallVisible
-    property bool leftWallVisible
-    property bool rightWallVisible
-    property bool bottomWallVisible
 
     signal stop
 
@@ -51,64 +46,20 @@ Rectangle {
         anchors.horizontalCenter: parent.horizontalCenter
         anchors.top: parent.top
     }
-    Rectangle {
-        id: topWall
-        visible: topWallVisible
-        border.color: "white"
-        border.width: height
-        height: 5
-        width: parent.width-2*height
-        anchors.top: parent.top
-        anchors.horizontalCenter: parent.horizontalCenter
-        anchors.topMargin: 5
-    }
-    Rectangle {
-        id: leftWall
-        visible: leftWallVisible
-        border.color: "white"
-        border.width: width
-        width: 5
-        height: parent.height-2*width
-        anchors.left: parent.left
-        anchors.verticalCenter: parent.verticalCenter
-        anchors.leftMargin: 5
-    }
-    Rectangle {
-        id: rightWall
-        visible: rightWallVisible
-        border.color: "white"
-        border.width: width
-        width: 5
-        height: parent.height-2*width
-        anchors.right: parent.right
-        anchors.verticalCenter: parent.verticalCenter
-        anchors.rightMargin: 5
-    }
-    Rectangle {
-        id: bottomWall
-        visible: bottomWallVisible
-        border.color: "white"
-        border.width: height
-        height: 5
-        width: parent.width-2*height
-        anchors.bottom: parent.bottom
-        anchors.horizontalCenter: parent.horizontalCenter
-        anchors.bottomMargin: 5
-    }
 
     states: [
         State {
             name: "default"
             PropertyChanges {
                 target: mCase
-                color: "#33333333"
+                color: "#D6F2FC"
             }
         },
         State {
             name: "error"
             PropertyChanges {
                 target: mCase
-                color: "#AAEE1111"
+                color: "#EB7878"
             }
             PropertyChanges {
                 target: restoreColorTimer
@@ -119,14 +70,14 @@ Rectangle {
             name: "hovered"
             PropertyChanges {
                 target: mCase
-                color: "#EE1111EE"
+                color: "#78B4EB"
             }
         },
         State {
             name: "initial"
             PropertyChanges {
                 target: mCase
-                color: "#AA996699"
+                color: "#EAD9F2"
             }
         }
     ]

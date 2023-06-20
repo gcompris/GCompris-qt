@@ -29,6 +29,10 @@ ActivityBase {
         signal start
         signal stop
 
+        property double baseMargins: 10 * ApplicationInfo.ratio
+        property double activityLayoutHeight: height - bar.height * 1.5
+        property bool isHorizontalLayout: width >= activityLayoutHeight
+
         Component.onCompleted: {
             dialogActivityConfig.initialize()
             activity.start.connect(start)
@@ -101,10 +105,10 @@ ActivityBase {
         Score {
             id: score
             z: 1003
-            height: background.height - availablePieces.height - 1.5 * bar.height
+            height: 48 * ApplicationInfo.ratio
             anchors.bottom: bar.top
             anchors.right: background.right
-            anchors.bottomMargin: 10 * ApplicationInfo.ratio
+            anchors.bottomMargin: background.baseMargins
         }
 
         Keys.enabled: !bonus.isPlaying
@@ -121,22 +125,41 @@ ActivityBase {
             id: calcudokuModel
         }
 
-        Grid {
-            //z: 100
-            anchors {
-                left: availablePieces.right
-                top: parent.top
-                topMargin: 2 * ApplicationInfo.ratio
-            }
+        Item {
+            id: gridLayout
+            anchors.margins: background.baseMargins
+            anchors.bottom: score.top
+            anchors.right: background.right
+            states: [
+                State {
+                    name: "horizontalLayout"
+                    when: background.isHorizontalLayout
+                    AnchorChanges {
+                        target: gridLayout
+                        anchors.top: background.top
+                        anchors.left: availablePieces.right
+                    }
+                },
+                State {
+                    name: "verticalLayout"
+                    when: !background.isHorizontalLayout
+                    AnchorChanges {
+                        target: gridLayout
+                        anchors.top: availablePieces.bottom
+                        anchors.left: background.left
+                    }
+                }
+            ]
+        }
 
+        Grid {
+            z: 100
             id: calcudokuColumn
-            width:  Math.min(background.width - availablePieces.width -
-                             availablePieces.anchors.leftMargin,
-                             background.height - 2 * bar.height)
+            anchors.centerIn: gridLayout
+            width:  Math.min(gridLayout.width, gridLayout.height)
             height: width
 
             Repeater {
-                id: repeater
                 model: calcudokuModel
                 delegate: blueSquare
 
@@ -153,6 +176,31 @@ ActivityBase {
                         result: resultValue
                         text: textValue
                         state: mState
+                    }
+                }
+            }
+        }
+
+        Grid {
+            z: 100
+            id: calcudokuCages
+            anchors.centerIn: gridLayout
+            width:  calcudokuColumn.width
+            height: calcudokuColumn.height
+            columns: calcudokuColumn.columns
+            rows: calcudokuColumn.rows
+
+            Repeater {
+                model: calcudokuModel
+                delegate: cageWalls
+
+                Component {
+                    id: cageWalls
+                    CalcudokuCage {
+                        x: (index % calcudokuColumn.columns) * width
+                        y: Math.floor(index / calcudokuColumn.columns) * height
+                        width: parent != null ? parent.width / calcudokuColumn.columns : 1
+                        height: parent != null ? parent.height / calcudokuColumn.columns : 1
                         topWallVisible: topWall
                         leftWallVisible: leftWall
                         rightWallVisible: rightWall
