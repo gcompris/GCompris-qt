@@ -289,7 +289,7 @@ msgstr "Pesca os peixes antes de que saian do acuario."
 #: activities/clockgame/ActivityInfo.qml:18
 #, kde-format
 msgid "Drag and drop the needles of the clock to display the required time"
-msgstr "Arrastra e solta as agullas do reloxo para mostrar a hora necesaria"
+msgstr "Arrastra e solta as agullas do reloxo para amosar a hora necesaria"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "color_mix"
 #: activities/color_mix/ActivityInfo.qml:18
@@ -499,8 +499,8 @@ msgid ""
 "Guide the number eater with the arrow keys to the factors of the displayed "
 "number and press space to swallow them."
 msgstr ""
-"Guía o comedor de números coas teclas de frecha a factores do número "
-"mostrado e preme espazo para tragalos."
+"Guía o comedor de números coas teclas de frecha a factores do número amosado "
+"e preme espazo para tragalos."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "gnumch-inequality"
 #: activities/gnumch-inequality/ActivityInfo.qml:19
@@ -510,7 +510,7 @@ msgid ""
 "from the ones displayed and press the space bar to swallow them."
 msgstr ""
 "Guía o comedor de números coas teclas de frecha aos números que son "
-"distintos dos que se mostran e preme a barra espaciadora para tragalos."
+"distintos dos que se amosan e preme a barra espaciadora para tragalos."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "gnumch-multiples"
 #: activities/gnumch-multiples/ActivityInfo.qml:18
@@ -520,7 +520,7 @@ msgid ""
 "number and press space to swallow them."
 msgstr ""
 "Guía o comedor de números coas teclas de frecha a múltiplos do número "
-"mostrado e preme espazo para tragalos."
+"amosado e preme espazo para tragalos."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "gnumch-primes"
 #: activities/gnumch-primes/ActivityInfo.qml:18
@@ -779,7 +779,7 @@ msgstr "Emparella a carta maiúscula coa minúscula."
 msgid ""
 "Match a number card with a card displaying the same number of butterflies."
 msgstr ""
-"Emparella unha carta de número con outra que mostre o mesmo número de "
+"Emparella unha carta de número con outra que amose o mesmo número de "
 "bolboretas."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-math-minus"
