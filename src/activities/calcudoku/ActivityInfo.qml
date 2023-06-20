@@ -11,18 +11,18 @@ ActivityInfo {
   icon: "calcudoku/calcudoku.svg"
   author: "Johnny Jazeix &lt;jazeix@gmail.com&gt;"
   //: Activity title - the game is the KenKen but we cannot use KenKen as it is a trademark name
-  title: qsTr("CalcuDoku")
+  title: qsTr("Calcudoku")
   //: Help title
-  description: qsTr("Symbols must be unique in a row, in a column, and each cage must produce its result.")
-  //intro: "Select a number and click its target area. Each number must appear only once in a row and in a column and the result of the combination of all the numbers of a cage associated with its operator must give the cage result."
+  description: qsTr("Solve the Calcudoku.")
+  //intro: "Select a number and click on its target position. Each number must appear only once in a row and in a column. The numbers in the cells of a cage must produce the given result when combined using the given operator."
   //: Help goal
-  goal: qsTr("The aim of the puzzle is to enter each number from 1 to the number of lines in each cell of a grid. Each number can only appear once on the same line or column. Cages are groups of cells that provide information on how to fill the grid. Either it is a single number which is the value of this cell or there is both an operator and a result and all the numbers of the cage, when combined with this operator must produce the result.")
+  goal: qsTr("Develop your logical reasoning skills: data linking, deduction and spatial location while using calculation.")
   //: Help prerequisite
-  prerequisite: qsTr("Completing the puzzle requires patience and logical ability.")
+  prerequisite: qsTr("Completing the puzzle requires patience and arithmetic abilities.")
   //: Help manual
-  manual: qsTr("Select a number or a symbol on the left and click on its target position. GCompris will not let you enter invalid answer.")
+  manual: qsTr("Select a number in the list and click on its target position to fill the grid. Each number must appear only once in a row and in a column. Cages are groups of cells providing information on how to fill them. Cages made of more than one cell provide a result and an operator: all the numbers in the cage, when combined using the operator, must produce the result. Cages made of only one cell directly provide the number to enter.")
   credit: ""
-  section: "discovery logic"
+  section: "math arithmetic"
   createdInVersion: 40000
   levels: "1,2,3,4,5"
 }

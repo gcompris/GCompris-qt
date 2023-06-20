@@ -463,7 +463,6 @@ function isLegal(posX, posY, value) {
         }
     }
 
-    // TODO Check if we want to block if a cage is filled but result is wrong
     return possible;
 }
 
