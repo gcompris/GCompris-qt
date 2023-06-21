@@ -127,18 +127,22 @@ ActivityBase {
             id: sudokuModel
         }
 
-        Grid {
-            z: 100
+        Item {
+            id: gridLayout
             anchors {
                 left: availablePieces.right
+                right: parent.right
                 top: parent.top
-                topMargin: 2 * ApplicationInfo.ratio
+                bottom: score.top
+                margins: 5 * ApplicationInfo.ratio
             }
+        }
 
+        Grid {
+            z: 100
             id: sudoColumn
-            width:  Math.min(background.width - availablePieces.width -
-                             availablePieces.anchors.leftMargin,
-                             background.height - 2 * bar.height)
+            anchors.centerIn: gridLayout
+            width:  Math.min(gridLayout.width, gridLayout.height)
             height: width
 
             Repeater {
@@ -206,6 +210,7 @@ ActivityBase {
             visible: nbRegions > 1
 
             anchors.fill: sudoColumn
+            property int regionLineSize: Math.round(3 * ApplicationInfo.ratio)
 
             Repeater {
                 id: regionRepeater
@@ -214,12 +219,42 @@ ActivityBase {
                 Rectangle {
                     z: 1001
                     color: "transparent"
-                    border.color: "orange"
-                    border.width: 4
                     x: index / nbRegions * sudoColumn.width
                     y: (index % nbRegions) * sudoColumn.width
                     width: nbRegions * sudoColumn.width / sudoColumn.columns
                     height: nbRegions * sudoColumn.height/ sudoColumn.columns
+                    Rectangle {
+                        id: topWall
+                        color: "#2A2A2A"
+                        height: regionGrid.regionLineSize
+                        width: parent.width + regionGrid.regionLineSize
+                        anchors.verticalCenter: parent.top
+                        anchors.horizontalCenter: parent.horizontalCenter
+                    }
+                    Rectangle {
+                        id: leftWall
+                        color: "#2A2A2A"
+                        width: regionGrid.regionLineSize
+                        height: parent.height + regionGrid.regionLineSize
+                        anchors.horizontalCenter: parent.left
+                        anchors.verticalCenter: parent.verticalCenter
+                    }
+                    Rectangle {
+                        id: rightWall
+                        color: "#2A2A2A"
+                        width: regionGrid.regionLineSize
+                        height: parent.height + regionGrid.regionLineSize
+                        anchors.horizontalCenter: parent.right
+                        anchors.verticalCenter: parent.verticalCenter
+                    }
+                    Rectangle {
+                        id: bottomWall
+                        color: "#2A2A2A"
+                        height: regionGrid.regionLineSize
+                        width: parent.width + regionGrid.regionLineSize
+                        anchors.verticalCenter: parent.bottom
+                        anchors.horizontalCenter: parent.horizontalCenter
+                    }
                 }
             }
         }
