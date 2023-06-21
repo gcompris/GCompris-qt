@@ -21,7 +21,7 @@ ActivityInfo {
   //: Help prerequisite
   prerequisite: qsTr("Completing the puzzle requires patience and logical ability.")
   //: Help manual
-  manual: qsTr("Select a number or a symbol on the left and click on its target position. GCompris will not let you enter invalid answer.")
+  manual: qsTr("Select a number or a symbol in the list and click on its target position. GCompris will not let you enter an invalid answer.")
   credit: ""
   section: "discovery logic"
   createdInVersion: 0
