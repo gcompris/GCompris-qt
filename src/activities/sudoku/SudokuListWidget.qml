@@ -19,9 +19,9 @@ Item {
     height: view.height
     anchors {
         left: parent.left
-        leftMargin: 10 * ApplicationInfo.ratio
+        leftMargin: background.baseMargins
         top: parent.top
-        topMargin: 10 * ApplicationInfo.ratio
+        topMargin: background.baseMargins
     }
 
     property alias model: mymodel;
@@ -34,19 +34,42 @@ Item {
 
     ListView {
         id: view
-        width: Math.min(64 * ApplicationInfo.ratio, background.width * 0.12)
-        height: background.height - 2 * bar.height
         interactive: false
         spacing: 5 * ApplicationInfo.ratio
         model: mymodel
-        delegate: contactsDelegate
+        delegate: listItemComponent
 
-        property int iconSize: Math.min((height - mymodel.count * spacing) /
-                                        mymodel.count,
-                                        view.width * 0.95)
+        property int iconSize
+
+        states: [
+            State {
+                name: "horizontalLayout"
+                when: background.isHorizontalLayout
+                PropertyChanges {
+                    target: view
+                    width: iconSize
+                    height: background.height - 2 * bar.height
+                    orientation: ListView.Vertical
+                    iconSize: Math.min((height - (mymodel.count - 1) * spacing) / mymodel.count,
+                                       100 * ApplicationInfo.ratio)
+                }
+            },
+            State {
+                name: "verticalLayout"
+                when: !background.isHorizontalLayout
+                PropertyChanges {
+                    target: view
+                    width: background.width - background.baseMargins * 2
+                    height: iconSize
+                    orientation: ListView.Horizontal
+                    iconSize: Math.min((width - (model.count - 1) * spacing) / mymodel.count,
+                                       100 * ApplicationInfo.ratio)
+                }
+            }
+        ]
 
         Component {
-            id: contactsDelegate
+            id: listItemComponent
 
             Rectangle {
                 id: iconBg

@@ -33,6 +33,10 @@ ActivityBase {
         signal start
         signal stop
 
+        property double baseMargins: 10 * ApplicationInfo.ratio
+        property double activityLayoutHeight: height - bar.height * 1.5
+        property bool isHorizontalLayout: width >= activityLayoutHeight
+
         Component.onCompleted: {
             dialogActivityConfig.initialize()
             activity.start.connect(start)
@@ -107,10 +111,10 @@ ActivityBase {
         Score {
             id: score
             z: 1003
-            height: background.height - availablePieces.height - 1.5 * bar.height
+            height: 48 * ApplicationInfo.ratio
             anchors.bottom: bar.top
             anchors.right: background.right
-            anchors.bottomMargin: 10 * ApplicationInfo.ratio
+            anchors.bottomMargin: background.baseMargins
         }
 
         Keys.enabled: !bonus.isPlaying
@@ -129,13 +133,29 @@ ActivityBase {
 
         Item {
             id: gridLayout
-            anchors {
-                left: availablePieces.right
-                right: parent.right
-                top: parent.top
-                bottom: score.top
-                margins: 5 * ApplicationInfo.ratio
-            }
+            anchors.margins: background.baseMargins
+            anchors.bottom: score.top
+            anchors.right: background.right
+            states: [
+                State {
+                    name: "horizontalLayout"
+                    when: background.isHorizontalLayout
+                    AnchorChanges {
+                        target: gridLayout
+                        anchors.top: background.top
+                        anchors.left: availablePieces.right
+                    }
+                },
+                State {
+                    name: "verticalLayout"
+                    when: !background.isHorizontalLayout
+                    AnchorChanges {
+                        target: gridLayout
+                        anchors.top: availablePieces.bottom
+                        anchors.left: background.left
+                    }
+                }
+            ]
         }
 
         Grid {
