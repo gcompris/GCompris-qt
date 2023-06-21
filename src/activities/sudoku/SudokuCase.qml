@@ -14,12 +14,11 @@ import GCompris 1.0
 
 Rectangle {
     id: mCase
-    border.width: 2
-    border.color: "#2a2a2a"
-
     property string text
     property bool isInitial
     property int gridIndex
+
+    property int gridLineSize: Math.round(2 * ApplicationInfo.ratio)
 
     signal stop
 
@@ -31,12 +30,46 @@ Rectangle {
         restoreColorTimer.stop();
     }
 
+    Rectangle {
+        id: topWall
+        color: "#808080"
+        height: gridLineSize
+        width: parent.width + gridLineSize
+        anchors.verticalCenter: parent.top
+        anchors.horizontalCenter: parent.horizontalCenter
+    }
+    Rectangle {
+        id: leftWall
+        color: "#808080"
+        width: gridLineSize
+        height: parent.height + gridLineSize
+        anchors.horizontalCenter: parent.left
+        anchors.verticalCenter: parent.verticalCenter
+    }
+    Rectangle {
+        id: rightWall
+        color: "#808080"
+        width: gridLineSize
+        height: parent.height + gridLineSize
+        anchors.horizontalCenter: parent.right
+        anchors.verticalCenter: parent.verticalCenter
+    }
+    Rectangle {
+        id: bottomWall
+        color: "#808080"
+        height: gridLineSize
+        width: parent.width + gridLineSize
+        anchors.verticalCenter: parent.bottom
+        anchors.horizontalCenter: parent.horizontalCenter
+    }
+
     Image {
         id: imageId
         source: Activity.dataToImageSource(mCase.text)
-        sourceSize.height: parent.height
-        width: 3 * parent.width / 4
+        width: parent.width * 0.75
         height: width
+        sourceSize.height: width
+        sourceSize.width: width
         anchors.centerIn: parent
     }
 
@@ -45,14 +78,14 @@ Rectangle {
             name: "default"
             PropertyChanges {
                 target: mCase
-                color: "#33333333"
+                color: "#D6F2FC"
             }
         },
         State {
             name: "error"
             PropertyChanges {
                 target: mCase
-                color: "#AAEE1111"
+                color: "#EB7878"
             }
             PropertyChanges {
                 target: restoreColorTimer
@@ -63,14 +96,14 @@ Rectangle {
             name: "hovered"
             PropertyChanges {
                 target: mCase
-                color: "#EE1111EE"
+                color: "#78B4EB"
             }
         },
         State {
             name: "initial"
             PropertyChanges {
                 target: mCase
-                color: "#AA996699"
+                color: "#EAD9F2"
             }
         }
     ]

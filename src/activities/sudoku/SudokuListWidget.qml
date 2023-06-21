@@ -19,9 +19,9 @@ Item {
     height: view.height
     anchors {
         left: parent.left
-        leftMargin: 2 * ApplicationInfo.ratio
+        leftMargin: 10 * ApplicationInfo.ratio
         top: parent.top
-        topMargin: 2 * ApplicationInfo.ratio
+        topMargin: 10 * ApplicationInfo.ratio
     }
 
     property alias model: mymodel;
@@ -34,10 +34,10 @@ Item {
 
     ListView {
         id: view
-        width: background.width / 5
+        width: Math.min(64 * ApplicationInfo.ratio, background.width * 0.12)
         height: background.height - 2 * bar.height
         interactive: false
-        spacing: 10
+        spacing: 5 * ApplicationInfo.ratio
         model: mymodel
         delegate: contactsDelegate
 
@@ -48,9 +48,12 @@ Item {
         Component {
             id: contactsDelegate
 
-            Item {
+            Rectangle {
+                id: iconBg
                 width: view.iconSize
                 height: view.iconSize
+                color: "#AAFFFFFF"
+                radius: height * 0.1
 
                 Image {
                     id: icon
@@ -81,10 +84,10 @@ Item {
                         },
                         State {
                             name: "hover"
-                            when: mouseArea.containsMouse
+                            when: mouseArea.containsMouse && !icon.iAmSelected
                             PropertyChanges {
                                 target: icon
-                                scale: 1.1
+                                scale: 1
                             }
                         },
                         State {
@@ -92,7 +95,7 @@ Item {
                             when: icon.iAmSelected
                             PropertyChanges {
                                 target: icon
-                                scale: 1
+                                scale: 0.9
                             }
                         }
                     ]
@@ -103,23 +106,23 @@ Item {
                         loops: Animation.Infinite
                         alwaysRunToEnd: true
                         NumberAnimation {
-                            target: icon
+                            target: iconBg
                             property: "rotation"
-                            from: 0; to: 10
+                            from: 0; to: 5
                             duration: 200
                             easing.type: Easing.OutQuad
                         }
                         NumberAnimation {
-                            target: icon
+                            target: iconBg
                             property: "rotation"
-                            from: 10; to: -10
+                            from: 5; to: -5
                             duration: 400
                             easing.type: Easing.InOutQuad
                         }
                         NumberAnimation {
-                            target: icon
+                            target: iconBg
                             property: "rotation"
-                            from: -10; to: 0
+                            from: -5; to: 0
                             duration: 200
                             easing.type: Easing.InQuad
                         }
