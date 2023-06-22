@@ -24874,10 +24874,15 @@ msgstr "Compléter la grille nécessite de la patience et de la logique."
 
 #. Help manual
 #: activities/sudoku/ActivityInfo.qml:24
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "Select a number or a symbol on the left and click on its target position. "
+#| "GCompris will not let you enter invalid answer."
 msgctxt "ActivityInfo|"
 msgid ""
-"Select a number or a symbol on the left and click on its target position. "
-"GCompris will not let you enter invalid answer."
+"Select a number or a symbol in the list and click on its target position. "
+"GCompris will not let you enter an invalid answer."
 msgstr ""
 "Choisis un nombre ou un symbole à gauche et clique sur sa position cible. "
 "GCompris ne te laissera pas effectuer de saisie incorrecte."

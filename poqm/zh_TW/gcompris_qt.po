@@ -23400,10 +23400,15 @@ msgstr "解開這個謎題需要耐心和邏輯能力。"
 
 #. Help manual
 #: activities/sudoku/ActivityInfo.qml:24
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "Select a number or a symbol on the left and click on its target position. "
+#| "GCompris will not let you enter invalid answer."
 msgctxt "ActivityInfo|"
 msgid ""
-"Select a number or a symbol on the left and click on its target position. "
-"GCompris will not let you enter invalid answer."
+"Select a number or a symbol in the list and click on its target position. "
+"GCompris will not let you enter an invalid answer."
 msgstr ""
 "請從左側選擇一個數字或符號，並點擊它的目標位置。Gcompris 會避免您輸入不正確的"
 "答案。"

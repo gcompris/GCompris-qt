@@ -25323,10 +25323,15 @@ msgstr "Completar o 'puzzle' exige paciência e habilidade lógica."
 
 #. Help manual
 #: activities/sudoku/ActivityInfo.qml:24
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "Select a number or a symbol on the left and click on its target position. "
+#| "GCompris will not let you enter invalid answer."
 msgctxt "ActivityInfo|"
 msgid ""
-"Select a number or a symbol on the left and click on its target position. "
-"GCompris will not let you enter invalid answer."
+"Select a number or a symbol in the list and click on its target position. "
+"GCompris will not let you enter an invalid answer."
 msgstr ""
 "Seleccione o número de um símbolo à esquerda e carregue na sua posição de "
 "destino. O GCompris não o deixará introduzir dados inválidos."

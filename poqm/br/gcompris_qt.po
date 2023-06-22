@@ -24459,10 +24459,15 @@ msgstr ""
 
 #. Help manual
 #: activities/sudoku/ActivityInfo.qml:24
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "Select a number or a symbol on the left and click on its target position. "
+#| "GCompris will not let you enter invalid answer."
 msgctxt "ActivityInfo|"
 msgid ""
-"Select a number or a symbol on the left and click on its target position. "
-"GCompris will not let you enter invalid answer."
+"Select a number or a symbol in the list and click on its target position. "
+"GCompris will not let you enter an invalid answer."
 msgstr ""
 "Dibab un niver pe un arouez en tu kleiz ha klik war al lec'h mat. GCompris "
 "ne laosko ket ac'hanout da lakaat traoù fall."

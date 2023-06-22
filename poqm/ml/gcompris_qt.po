@@ -24101,10 +24101,15 @@ msgstr "ഈ പസിൽ പൂർത്തിയാക്കാൻ ക്ഷമ
 
 #. Help manual
 #: activities/sudoku/ActivityInfo.qml:24
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "Select a number or a symbol on the left and click on its target position. "
+#| "GCompris will not let you enter invalid answer."
 msgctxt "ActivityInfo|"
 msgid ""
-"Select a number or a symbol on the left and click on its target position. "
-"GCompris will not let you enter invalid answer."
+"Select a number or a symbol in the list and click on its target position. "
+"GCompris will not let you enter an invalid answer."
 msgstr ""
 "ഇടതുഭാഗത്തുള്ള അക്കമോ ചിഹ്നമോ തിരഞ്ഞെടുത്ത് ലക്ഷ്യസ്ഥാനത്തിൽ ക്ലിക്ക് ചെയ്യുക. അസാധുവായ ഉത്തരം "
 "നല്കാൻ ജികോംപ്രി നിങ്ങളെ അനുവദിക്കില്ല."

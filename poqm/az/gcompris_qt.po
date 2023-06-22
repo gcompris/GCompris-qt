@@ -24374,10 +24374,15 @@ msgstr "Bu tapmacanı həll etmək üçün sizə səbr və məntiq bacarığı l
 
 #. Help manual
 #: activities/sudoku/ActivityInfo.qml:24
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "Select a number or a symbol on the left and click on its target position. "
+#| "GCompris will not let you enter invalid answer."
 msgctxt "ActivityInfo|"
 msgid ""
-"Select a number or a symbol on the left and click on its target position. "
-"GCompris will not let you enter invalid answer."
+"Select a number or a symbol in the list and click on its target position. "
+"GCompris will not let you enter an invalid answer."
 msgstr ""
 "Sol tərəfdə sayı və simvolu seçin və onu yerləşdirəcəyiniz yerə vurun. "
 "GCompris sizə səhv simvolu və ya sayı daxil etmənizə icazə verməyəcək."

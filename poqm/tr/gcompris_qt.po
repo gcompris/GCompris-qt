@@ -24314,10 +24314,15 @@ msgstr "Bulmacayı tamamlamak sabır ve mantıksal beceri gerektirir."
 
 #. Help manual
 #: activities/sudoku/ActivityInfo.qml:24
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "Select a number or a symbol on the left and click on its target position. "
+#| "GCompris will not let you enter invalid answer."
 msgctxt "ActivityInfo|"
 msgid ""
-"Select a number or a symbol on the left and click on its target position. "
-"GCompris will not let you enter invalid answer."
+"Select a number or a symbol in the list and click on its target position. "
+"GCompris will not let you enter an invalid answer."
 msgstr ""
 "Soldan bir sayı veya sembol seç ve hedef konumuna tıkla. GCompris geçersiz "
 "yanıt girmene izin vermez."

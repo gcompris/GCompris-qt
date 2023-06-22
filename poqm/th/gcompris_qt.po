@@ -25051,8 +25051,8 @@ msgstr "การเติมปริศนาให้สมบูรณ์ต
 #: activities/sudoku/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid ""
-"Select a number or a symbol on the left and click on its target position. "
-"GCompris will not let you enter invalid answer."
+"Select a number or a symbol in the list and click on its target position. "
+"GCompris will not let you enter an invalid answer."
 msgstr ""
 
 #: activities/sudoku/resource/1/Data.qml:13

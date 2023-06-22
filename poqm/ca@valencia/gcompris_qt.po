@@ -24969,10 +24969,15 @@ msgstr "Completar el trencaclosques requerix paciència i habilitat lògica."
 
 #. Help manual
 #: activities/sudoku/ActivityInfo.qml:24
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "Select a number or a symbol on the left and click on its target position. "
+#| "GCompris will not let you enter invalid answer."
 msgctxt "ActivityInfo|"
 msgid ""
-"Select a number or a symbol on the left and click on its target position. "
-"GCompris will not let you enter invalid answer."
+"Select a number or a symbol in the list and click on its target position. "
+"GCompris will not let you enter an invalid answer."
 msgstr ""
 "Seleccioneu un número o un símbol de l'esquerra i feu clic en la seua "
 "posició de destinació. GCompris no vos deixarà introduir respostes no "

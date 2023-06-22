@@ -24367,10 +24367,15 @@ msgstr "Kompleti la enigmon postulas paciencon kaj logikan kapablon."
 
 #. Help manual
 #: activities/sudoku/ActivityInfo.qml:24
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "Select a number or a symbol on the left and click on its target position. "
+#| "GCompris will not let you enter invalid answer."
 msgctxt "ActivityInfo|"
 msgid ""
-"Select a number or a symbol on the left and click on its target position. "
-"GCompris will not let you enter invalid answer."
+"Select a number or a symbol in the list and click on its target position. "
+"GCompris will not let you enter an invalid answer."
 msgstr ""
 "Elektu nombron aŭ simbolon maldekstre kaj alklaku ĝian celpozicion. GCompris "
 "ne lasos vin enigi nevalidan respondon."

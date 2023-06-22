@@ -24639,10 +24639,15 @@ msgstr "Melengkapi teka-teki membutuhkan kesabaran dan kemampuan logika."
 
 #. Help manual
 #: activities/sudoku/ActivityInfo.qml:24
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "Select a number or a symbol on the left and click on its target position. "
+#| "GCompris will not let you enter invalid answer."
 msgctxt "ActivityInfo|"
 msgid ""
-"Select a number or a symbol on the left and click on its target position. "
-"GCompris will not let you enter invalid answer."
+"Select a number or a symbol in the list and click on its target position. "
+"GCompris will not let you enter an invalid answer."
 msgstr ""
 "Pilih angka atau sebuah simbol di sisi kiri dan klik ke posisi yang "
 "ditargetkan. GCompris tidak mengijinkanmu untuk memasukkan data yang salah."
