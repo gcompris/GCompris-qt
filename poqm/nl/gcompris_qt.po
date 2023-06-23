@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2023-06-13 10:24+0200\n"
+"PO-Revision-Date: 2023-06-22 09:59+0200\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -24552,18 +24552,13 @@ msgstr "Het oplossen van de puzzel vereist geduld en logisch nadenken."
 
 #. Help manual
 #: activities/sudoku/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Select a number or a symbol on the left and click on its target position. "
-#| "GCompris will not let you enter invalid answer."
 msgctxt "ActivityInfo|"
 msgid ""
 "Select a number or a symbol in the list and click on its target position. "
 "GCompris will not let you enter an invalid answer."
 msgstr ""
-"Selecteer een getal of een symbool links en klik dan op de positie van het "
-"doel. GCompris voorkomt ongeldige antwoorden."
+"Selecteer een getal of een symbool in de lijst en klik dan op de positie van "
+"het doel. GCompris voorkomt ongeldige antwoorden."
 
 #: activities/sudoku/resource/1/Data.qml:13
 msgctxt "Data|"

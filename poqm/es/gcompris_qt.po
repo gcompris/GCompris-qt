@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2023-06-14 19:58+0200\n"
+"PO-Revision-Date: 2023-06-22 21:49+0200\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
@@ -24634,17 +24634,12 @@ msgstr "Para completar el puzle se necesita paciencia y habilidad lógica."
 
 #. Help manual
 #: activities/sudoku/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Select a number or a symbol on the left and click on its target position. "
-#| "GCompris will not let you enter invalid answer."
 msgctxt "ActivityInfo|"
 msgid ""
 "Select a number or a symbol in the list and click on its target position. "
 "GCompris will not let you enter an invalid answer."
 msgstr ""
-"Selecciona un número o un símbolo de la izquierda y haz clic en su posición "
+"Selecciona un número o un símbolo de la lista y haz clic en su posición "
 "correspondiente. GCompris no te dejará introducir respuestas no válidas."
 
 #: activities/sudoku/resource/1/Data.qml:13

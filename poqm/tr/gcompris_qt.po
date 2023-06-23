@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2023-06-13 12:20+0300\n"
+"PO-Revision-Date: 2023-06-22 05:40+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -24314,18 +24314,13 @@ msgstr "Bulmacayı tamamlamak sabır ve mantıksal beceri gerektirir."
 
 #. Help manual
 #: activities/sudoku/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Select a number or a symbol on the left and click on its target position. "
-#| "GCompris will not let you enter invalid answer."
 msgctxt "ActivityInfo|"
 msgid ""
 "Select a number or a symbol in the list and click on its target position. "
 "GCompris will not let you enter an invalid answer."
 msgstr ""
-"Soldan bir sayı veya sembol seç ve hedef konumuna tıkla. GCompris geçersiz "
-"yanıt girmene izin vermez."
+"Listeden bir sayı veya sembol seç ve hedef konuma tıkla. GCompris geçersiz "
+"bir yanıt girmene izin vermez."
 
 #: activities/sudoku/resource/1/Data.qml:13
 msgctxt "Data|"

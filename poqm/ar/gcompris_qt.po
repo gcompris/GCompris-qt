@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2023-06-15 09:30+0400\n"
+"PO-Revision-Date: 2023-06-22 09:19+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
 "Language: ar\n"
@@ -23802,17 +23802,12 @@ msgstr "يتطلب إكمال اللغز الصبر والقدرة المنطق�
 
 #. Help manual
 #: activities/sudoku/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Select a number or a symbol on the left and click on its target position. "
-#| "GCompris will not let you enter invalid answer."
 msgctxt "ActivityInfo|"
 msgid ""
 "Select a number or a symbol in the list and click on its target position. "
 "GCompris will not let you enter an invalid answer."
 msgstr ""
-"حدّد رقمًا أو رمزًا على اليسار وانقر على موضعه المستهدف. لن يسمح لك البرنامج "
+"حدّد رقمًا أو رمزًا في القائمة وانقر على موضعه المستهدف. لن يسمح لك البرنامج "
 "بإدخال إجابة غير صالحة."
 
 #: activities/sudoku/resource/1/Data.qml:13

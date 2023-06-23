@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2014-12-25 01:10+0000\n"
-"PO-Revision-Date: 2023-06-13 10:37+0200\n"
+"PO-Revision-Date: 2023-06-22 09:42+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
@@ -24963,19 +24963,13 @@ msgstr "Completar el trencaclosques requereix paciència i habilitat lògica."
 
 #. Help manual
 #: activities/sudoku/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Select a number or a symbol on the left and click on its target position. "
-#| "GCompris will not let you enter invalid answer."
 msgctxt "ActivityInfo|"
 msgid ""
 "Select a number or a symbol in the list and click on its target position. "
 "GCompris will not let you enter an invalid answer."
 msgstr ""
-"Seleccioneu un número o un símbol de l'esquerra i feu clic en la seva "
-"posició de destinació. El GCompris no us deixarà introduir respostes no "
-"vàlides."
+"Seleccioneu un número o un símbol de la llista i feu clic en la seva posició "
+"de destinació. El GCompris no us deixarà introduir una resposta no vàlida."
 
 #: activities/sudoku/resource/1/Data.qml:13
 msgctxt "Data|"
