@@ -1,0 +1,4 @@
+- Translations added for Arabic and Esperanto
+- Many translation updates
+- Many new images
+- Many bug fixes
