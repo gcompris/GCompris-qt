@@ -20174,7 +20174,7 @@ msgid ""
 "must first calculate the total price."
 msgstr ""
 "Tux comprouche varios elementos e mostrouche o seu diñeiro. Débeslle dar o "
-"seu cambio. Nos niveis superiores mostraranse varios elementos e primeiro "
+"seu cambio. Nos niveis superiores amosaranse varios elementos e primeiro "
 "debes calcular o prezo total."
 
 #. Help manual
@@ -20221,7 +20221,7 @@ msgid ""
 "several items are displayed, and you must first calculate the total price."
 msgstr ""
 "Debes mercar os distintos elementos e dar o prezo exacto. Nos niveis "
-"superiores, mostraranse varios elementos e primeiro debes calcular o prezo "
+"superiores, amosaranse varios elementos e primeiro debes calcular o prezo "
 "total."
 
 #. Activity title

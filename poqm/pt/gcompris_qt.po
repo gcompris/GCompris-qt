@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: kstars\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2015-05-27 08:46+0000\n"
-"PO-Revision-Date: 2023-06-13 17:31+0100\n"
+"PO-Revision-Date: 2023-06-24 01:38+0100\n"
 "Last-Translator: Pedro Morais <morais@kde.org>\n"
 "Language-Team: pt <kde-i18n-pt@kde.org>\n"
 "Language: pt\n"
@@ -25323,17 +25323,12 @@ msgstr "Completar o 'puzzle' exige paciência e habilidade lógica."
 
 #. Help manual
 #: activities/sudoku/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Select a number or a symbol on the left and click on its target position. "
-#| "GCompris will not let you enter invalid answer."
 msgctxt "ActivityInfo|"
 msgid ""
 "Select a number or a symbol in the list and click on its target position. "
 "GCompris will not let you enter an invalid answer."
 msgstr ""
-"Seleccione o número de um símbolo à esquerda e carregue na sua posição de "
+"Seleccione um número ou um símbolo na lista e carregue na sua posição de "
 "destino. O GCompris não o deixará introduzir dados inválidos."
 
 #: activities/sudoku/resource/1/Data.qml:13

@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2023-06-13 09:51+0200\n"
+"PO-Revision-Date: 2023-06-23 11:08+0200\n"
 "Last-Translator: Vit Pelcak <vit@pelcak.org>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
 "Language: cs\n"
@@ -2039,7 +2039,7 @@ msgid ""
 "A simplistic word processor to let the children play around with a keyboard "
 "and see letters."
 msgstr ""
-"Zjednodušený textový procesor, který umožňuje dětem hrát si s klávesnicía "
+"Zjednodušený textový procesor, který umožňuje dětem hrát si s klávesnicí a "
 "vidět písmena."
 
 #. Help goal
@@ -2058,8 +2058,8 @@ msgid ""
 "'paragraph' will remove the formatting."
 msgstr ""
 "Stačí psát na skutečné nebo virtuální klávesnici jako v textovém editoru.\n"
-"    Kliknutím na tlačítko 'nadpis' se text zvětší. PodobněPomocí tlačítka "
-"'podtitul' bude text o něco menší. Kliknutí na'odstavec' odstraní "
+"    Kliknutím na tlačítko 'nadpis' se text zvětší. Podobně pomocí tlačítka "
+"'podtitul' bude text o něco menší. Kliknutí na 'odstavec' odstraní "
 "formátování."
 
 #: activities/baby_wordprocessor/ActivityInfo.qml:27
@@ -2329,8 +2329,8 @@ msgid ""
 "level in the editor:"
 msgstr ""
 "V <b>editoru úrovní</b> můžeš vytvářet vlastní úrovně. Vyber jednu z "
-"možnostínástroje pro editaci na straně a v editoru uprav pole mapy "
-"aktivníúrovně:"
+"možností nástroje pro editaci na straně a v editoru uprav pole mapy aktivní "
+"úrovně:"
 
 #: activities/balancebox/ActivityInfo.qml:32
 msgctxt "ActivityInfo|"
@@ -2443,8 +2443,8 @@ msgid ""
 "Either create your levels by starting the level editor in the activity "
 "settings menu and then load your file, or choose the 'built-in' level set."
 msgstr ""
-"Buď vytvoř své úrovně spuštěním editoru úrovní v aktivitěv nabídce nastavení "
-"a poté načti soubor, nebo vyber sadu vestavěných úrovní."
+"Buď vytvoř své úrovně spuštěním editoru úrovní v aktivitě v nabídce "
+"nastavení a poté načti soubor, nebo vyber sadu vestavěných úrovní."
 
 #: activities/balancebox/balancebox.js:106
 #, qt-format
@@ -2637,7 +2637,7 @@ msgid ""
 "number system to binary number system."
 msgstr ""
 "Tato aktivita ti pomůže se naučit koncept převodu z desítkové číselné "
-"soustavydo dvojkové číselné soustavy."
+"soustavy do dvojkové číselné soustavy."
 
 #. Help goal
 #: activities/binary_bulb/ActivityInfo.qml:20
@@ -3384,9 +3384,9 @@ msgid ""
 "set' to download the full word image set. Click on the cross or on 'Never "
 "show this dialog again' to play with the demo version."
 msgstr ""
-"Pro tuto aktivitu nemáš všechny obrázky. Klikni na 'Aktualizovat obrázky'pro "
-"stažení celé sady obrázků. Klikni na křížek nebo na 'Nikdynezobrazovat toto "
-"dialogové okno znovu' pro hraní s demo verzí."
+"Pro tuto aktivitu nemáš všechny obrázky. Klikni na 'Aktualizovat obrázky' "
+"pro stažení celé sady obrázků. Klikni na křížek nebo na 'Nikdy nezobrazovat "
+"toto dialogové okno znovu' pro hraní s demo verzí."
 
 #: activities/categorization/Categorization.qml:159
 msgctxt "Categorization|"
@@ -3924,8 +3924,8 @@ msgid ""
 "Capture all the pieces of your opponent before your opponent captures all of "
 "yours."
 msgstr ""
-"Vyřaď všechny figury svého soupeře dříve, než tvůj soupeř vyřadí "
-"všechnytvoje."
+"Vyřaď všechny figury svého soupeře dříve, než tvůj soupeř vyřadí všechny "
+"tvoje."
 
 #. Help manual
 #: activities/checkers/ActivityInfo.qml:24
@@ -4026,19 +4026,19 @@ msgid ""
 "distance away by jumping to any of the unoccupied squares immediately beyond "
 "it.\n"
 msgstr ""
-"Dámu hrají dva hráči na opačných stranách herní desky. Jedenhráč má tmavé "
-"kameny; druhý má světlé kameny. Hráčise střídají v tazích. Hráč nesmí hýbat "
-"soupeřovými kameny. Tah se skládás přesunutí kamene diagonálně na sousední "
-"neobsazené pole. Pokudsousední pole obsahuje soupeřův kámen a pole "
-"okamžitěza ním je prázdné, může být kámen zajat (a odstraněn ze hry)skokem "
-"přes něj.\n"
-"Na šachovnici se používají pouze tmavá pole. Kámen se může pohybovat "
-"pouzeúhlopříčně na neobsazené pole. Zajetí kamene je povinné. Hráč,který "
-"nemá žádné kameny nebo nemá kameny, s kterými by mohl táhnout,prohrává hru.\n"
+"Dámu hrají dva hráči na opačných stranách herní desky. Jeden hráč má tmavé "
+"kameny; druhý má světlé kameny. Hráči se střídají v tazích. Hráč nesmí hýbat "
+"soupeřovými kameny. Tah se skládá s přesunutí kamene diagonálně na sousední "
+"neobsazené pole. Pokud sousední pole obsahuje soupeřův kámen a pole okamžitě "
+"za ním je prázdné, může být kámen zajat (a odstraněn ze hry)skokem přes "
+"něj.\n"
+"Na šachovnici se používají pouze tmavá pole. Kámen se může pohybovat pouze "
+"úhlopříčně na neobsazené pole. Zajetí kamene je povinné. Hráč,který nemá "
+"žádné kameny nebo nemá kameny, s kterými by mohl táhnout,prohrává hru.\n"
 "Když se kámen dostane na poslední řadu (nejvzdálenější řada vpřed), stane se "
-"dámou, která a se označí umístěním dalšího kamene naprvní kámen. Dáma "
-"získává další schopnosti včetně schopnosti pohybupozpátku. Pokud je v "
-"úhlopříčce kámen, který může dáma zajmout, můžese posunout o libovolnou "
+"dámou, která a se označí umístěním dalšího kamene na první kámen. Dáma "
+"získává další schopnosti včetně schopnosti pohybu pozpátku. Pokud je v "
+"úhlopříčce kámen, který může dáma zajmout, může se posunout o libovolnou "
 "vzdálenost po úhlopříčce a může zajmout soupeřův kámen skokem na libovolné "
 "neobsazené pole bezprostředně za ní.\n"
 
@@ -6484,7 +6484,7 @@ msgid ""
 "Double tap or double click to erase the area and discover the background "
 "image."
 msgstr ""
-"Dvojitým klepnutím nebo dvojitým kliknutím oblast vymaž a odkryj oobrázek na "
+"Dvojitým klepnutím nebo dvojitým kliknutím oblast vymaž a odkryj obrázek na "
 "pozadí."
 
 #. Help manual
@@ -6797,7 +6797,7 @@ msgid ""
 "Learn about various monuments from around the world and remember their "
 "location."
 msgstr ""
-"Seznam se s různými památkami z celého světa a zapamatuj si jejichumístění."
+"Seznam se s různými památkami z celého světa a zapamatuj si jejich umístění."
 
 #. Help prerequisite
 #: activities/explore_monuments/ActivityInfo.qml:22
@@ -7740,7 +7740,7 @@ msgid ""
 "Learn about various wild animals from around the world and remember where "
 "they live."
 msgstr ""
-"Seznam se s různými divokými zvířaty z celého světa a zapamatuj si, kdežijí."
+"Seznam se s různými divokými zvířaty z celého světa a zapamatuj si, kde žijí."
 
 #. Help manual
 #: activities/explore_world_animals/ActivityInfo.qml:28
@@ -7930,7 +7930,7 @@ msgid ""
 "to reach branches up to 4 meters!"
 msgstr ""
 "Jedná se o největšího ze všech jelenovitých. Los sní až 25 kg potravy za "
-"den, pro kterou se občas musí postavit na zadní, aby dosáhnul na větve ve "
+"den, pro kterou se občas musí postavit na zadní, aby dosáhl na větve ve "
 "výšce až 4 metry."
 
 #: activities/explore_world_animals/resource/board/board2.qml:76
@@ -8297,7 +8297,7 @@ msgstr "?"
 #, qt-format
 msgctxt "Family|"
 msgid "Select one of the pairs corresponding to: %1"
-msgstr "Vyberte jednu z dvojic odpovídajíc: %1"
+msgstr "Vyberte jednu z dvojic odpovídající: %1"
 
 #: activities/family/FamilyDataset.qml:125
 #: activities/family/FamilyDataset.qml:126
@@ -8428,7 +8428,7 @@ msgstr "Tchán"
 #: activities/family/FamilyDataset.qml:605
 msgctxt "FamilyDataset|"
 msgid "Mother-in-law"
-msgstr "Tchýně"
+msgstr "Tchyně"
 
 #: activities/family/FamilyDataset.qml:495
 #: activities/family/FamilyDataset.qml:522
@@ -8493,7 +8493,7 @@ msgid ""
 "Click on a pair of family members which corresponds to the given relation."
 msgstr ""
 "Zobrazí se rodokmen s několika pokyny.\n"
-"Kruhy jsou spojeny čarami označující vztahy. Manželské páry jsouoznačeny "
+"Kruhy jsou spojeny čarami označující vztahy. Manželské páry jsou označeny "
 "prstenem.\n"
 "Klikni na dvojici členů rodiny, která odpovídá danému vztahu."
 
@@ -8563,7 +8563,7 @@ msgid ""
 "clicking on the OK button."
 msgstr ""
 "Přečti si pokyny a proveď požadovaný výpočet, abyste našli datum. Poté vyber "
-"toto datum v kalendáři a potvrď svou odpověďkliknutím na tlačítko OK."
+"toto datum v kalendáři a potvrď svou odpověď kliknutím na tlačítko OK."
 
 #: activities/find_the_day/find_the_day_dataset.js:35
 msgctxt "find_the_day_dataset|"
@@ -11955,7 +11955,7 @@ msgstr "Kyrgyzstán"
 #: activities/geography/resource/board/board10_0.qml:38
 msgctxt "board10_0|"
 msgid "Tajikistan"
-msgstr "Tadžikistán"
+msgstr "Tádžikistán"
 
 #: activities/geography/resource/board/board10_0.qml:45
 msgctxt "board10_0|"
@@ -13000,7 +13000,7 @@ msgstr "Libanon"
 #: activities/geography/resource/board/board9_0.qml:110
 msgctxt "board9_0|"
 msgid "Saudi Arabia"
-msgstr "Saudská Arábie"
+msgstr "Saúdská Arábie"
 
 #: activities/geography/resource/board/board9_0.qml:117
 msgctxt "board9_0|"
@@ -14328,7 +14328,7 @@ msgstr "Najdi činely"
 #: activities/instruments/instruments.js:198
 msgctxt "instruments|"
 msgid "Find the cello"
-msgstr "Najdi violončelo"
+msgstr "Najdi violoncello"
 
 #: activities/instruments/instruments.js:216
 msgctxt "instruments|"
@@ -15241,7 +15241,7 @@ msgid ""
 "A subtraction is displayed on the screen. Calculate the result, fill the "
 "corresponding number of circles and validate your answer."
 msgstr ""
-"Na obrazovce se zobrazí odčítání. Vypočítej výsledek, vyplňodpovídající "
+"Na obrazovce se zobrazí odčítání. Vypočítej výsledek, vyplň odpovídající "
 "počet kruhů a potvrď svou odpověď."
 
 #: activities/learn_subtractions/resource/1/Data.qml:14
@@ -15539,7 +15539,7 @@ msgid ""
 "braille system. Click on the previous and next buttons to move between the "
 "story pages. At the end, arrange the sequence in chronological order."
 msgstr ""
-"Přečti si historii Louise Braillea, jeho biografii a vynálezBraillovy "
+"Přečti si historii Louise Braillea, jeho biografii a vynález Braillovy "
 "slepecké abecedy. Kliknutím na předchozí a následující tlačítka se můžeš "
 "pohybovat mezistránky příběhu. Na konci uspořádej sekvenci v chronologickém "
 "pořadí."
@@ -15574,7 +15574,7 @@ msgid ""
 "At the age of three, Louis became blind due to a severe infection that "
 "spread to his left eye."
 msgstr ""
-"Ve třech letech Louis oslepl kvůli vážné infekci, která se rozšířila dojeho "
+"Ve třech letech Louis oslepl kvůli vážné infekci, která se rozšířila do jeho "
 "levého oka."
 
 #: activities/louis-braille/louis_braille_data.js:27
@@ -17127,7 +17127,7 @@ msgstr "sedmnáct"
 #: activities/memory-wordnumber/dataset.js:29
 msgctxt "dataset|"
 msgid "eighteen"
-msgstr "osunmnáct"
+msgstr "osmnáct"
 
 #: activities/memory-wordnumber/dataset.js:30
 msgctxt "dataset|"
@@ -20633,7 +20633,7 @@ msgstr "Malé mřížky."
 #: activities/redraw/resource/2/Data.qml:13
 msgctxt "Data|"
 msgid "Medium grids."
-msgstr "Střední mřižky."
+msgstr "Střední mřížky."
 
 #: activities/redraw/resource/3/Data.qml:13
 msgctxt "Data|"
@@ -20660,7 +20660,7 @@ msgstr "Malé mřížky (3×3)."
 #: activities/redraw_symmetrical/resource/2/Data.qml:15
 msgctxt "Data|"
 msgid "Medium grids (5×5)."
-msgstr "Střední mřižky (5×5)."
+msgstr "Střední mřížky (5×5)."
 
 #: activities/redraw_symmetrical/resource/3/Data.qml:15
 msgctxt "Data|"
@@ -24660,7 +24660,7 @@ msgstr ""
 "nám však musíte říci, když něco nefunguje tak, jak je očekáváno nebo by "
 "mohlo fungovat lépe. <br /> <br /> KDE má systém sledování chyb.Chcete-li "
 "nahlásit chybu, navštivte <a href=\"%1\">% 1 </a>. <br /> <br />Pokud máte "
-"návrh na zlepšení, pak můžete použít sledování chybsystém pro registraci "
+"návrh na zlepšení, pak můžete použít systém sledování chyb pro registraci "
 "vašeho přání. Ujistěte se, že používáte závažnost zvanou \"Wishlist\"."
 
 #: core/DialogAbout.qml:105

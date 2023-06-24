@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_qt\n"
-"PO-Revision-Date: 2023-06-13 16:18+0200\n"
+"PO-Revision-Date: 2023-06-22 17:11+0200\n"
 "Last-Translator: Vincenzo Reale <smart2128vr@gmail.com>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
 "Language: it\n"
@@ -24681,19 +24681,14 @@ msgstr "Il completamento del rompicapo richiede pazienza e abilità logica."
 
 #. Help manual
 #: activities/sudoku/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Select a number or a symbol on the left and click on its target position. "
-#| "GCompris will not let you enter invalid answer."
 msgctxt "ActivityInfo|"
 msgid ""
 "Select a number or a symbol in the list and click on its target position. "
 "GCompris will not let you enter an invalid answer."
 msgstr ""
-"Seleziona un numero o un simbolo sulla sinistra e fai clic sulla sua "
-"posizione di destinazione. GCompris non ti consentirà di digitare dati non "
-"validi."
+"Seleziona un numero o un simbolo nell'elenco e fai clic sulla sua posizione "
+"di destinazione. GCompris non ti consentirà di digitare una risposta non "
+"valida."
 
 #: activities/sudoku/resource/1/Data.qml:13
 msgctxt "Data|"
