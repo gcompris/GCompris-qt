@@ -1,0 +1,4 @@
+- Se han añadido traducciones para el árabe y el esperanto.
+- Muchas actualizaciones de traducciones.
+- Muchas imágenes nuevas.
+- Muchas correcciones de errores.

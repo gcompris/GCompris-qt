@@ -1,0 +1,10 @@
+GCompris é unha colección de programas educativos que inclúe numerosas actividades para nenas e nenos de entre 2 e 10 anos.
+Algunhas das actividades están orientadas ao xogo, pero son aínda así educativas.
+A continuación atopará unha lista de categorías e as actividades dispoñíbeis en cada unha desas categorías.
+- descubrimento do computador: teclado, rato, xestos do rato, etc.
+- aritmética: táboas de memoria, enumeración, imaxes espello, equilibrio de balanzas, cálculo do cambio, etc.
+- ciencia: o bloqueo da canle, mestura de cores, o concepto de gravidade, etc.
+- xogos: memoria, conectar 4, pai nai fillo, sudoku, torre de Hanoi, etc.
+- lectura: práctica de lectura, etc.
+- outros: aprender a dicir as horas, o sistema braille, labirinto, instrumentos musicais, etc.
+Actualmente GCompris ofrece máis de 100 actividades e hai máis en desenvolvemento. GCompris é software libre, o que significa que pode adaptalo para axustalo ás súas necesidades, melloralo e, o máis importante, compartilo con nenos de todo o mundo.
