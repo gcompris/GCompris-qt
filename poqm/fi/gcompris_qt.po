@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_qt\n"
-"PO-Revision-Date: 2023-05-18 18:21+0300\n"
+"PO-Revision-Date: 2023-06-06 19:53+0300\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
 "Language: fi\n"
@@ -6809,6 +6809,8 @@ msgid ""
 "The duck goes 'quack'. Ducks are mostly aquatic birds. They have waterproof "
 "feathers and webbed feet which enable them to swim on the water."
 msgstr ""
+"Ankka sanoo ”kvaak”. Ankat ovat enimmäkseen vesilintuja. Niillä on "
+"vesitiiviit höyhenet ja räpyläjalat, joiden avulla ne voivat uida."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:85
 msgctxt "board1|"
@@ -6845,6 +6847,8 @@ msgid ""
 "The dog goes 'woof'. Dogs are probably the oldest domesticated species. They "
 "are descendants of the wolf."
 msgstr ""
+"Koira sanoo ”hau”. Koirat ovat todennäköisesti vanhin kesy eläinlaji. Ne "
+"ovat suden jälkeläisiä."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:109
 msgctxt "board1|"
@@ -9248,7 +9252,7 @@ msgstr ""
 #: activities/fractions_create/resource/3/Data.qml:29
 msgctxt "Data|"
 msgid "Select one half of the pie."
-msgstr ""
+msgstr "Valitse piirakasta puolet."
 
 #: activities/fractions_create/resource/1/Data.qml:24
 #: activities/fractions_create/resource/3/Data.qml:35
@@ -9279,27 +9283,27 @@ msgstr "Valitse piirakasta kaksi viidennestä."
 #: activities/fractions_create/resource/1/Data.qml:50
 msgctxt "Data|"
 msgid "Select one pie and one-quarter of a pie."
-msgstr ""
+msgstr "Valitse piirakasta yksi ja yksi neljäsosa."
 
 #: activities/fractions_create/resource/1/Data.qml:56
 msgctxt "Data|"
 msgid "Select one pie and two-fifths of a pie."
-msgstr ""
+msgstr "Valitse piirakasta yksi ja kaksi viidesosaa."
 
 #: activities/fractions_create/resource/1/Data.qml:62
 msgctxt "Data|"
 msgid "Select one pie and one-third of a pie."
-msgstr ""
+msgstr "Valitse piirakasta yksi ja yksi kolmasosa."
 
 #: activities/fractions_create/resource/1/Data.qml:68
 msgctxt "Data|"
 msgid "Select one pie and one half of a pie."
-msgstr ""
+msgstr "Valitse piirakasta yksi ja yksi puolikas."
 
 #: activities/fractions_create/resource/1/Data.qml:74
 msgctxt "Data|"
 msgid "Select one pie and three-quarters of a pie."
-msgstr ""
+msgstr "Valitse piirakasta yksi ja kolme neljäsosaa."
 
 #: activities/fractions_create/resource/10/Data.qml:9
 msgctxt "Data|"
@@ -9311,7 +9315,7 @@ msgstr "Täsmäkysymyksiä neliöllä."
 msgctxt "Data|"
 msgid ""
 "Select as many parts as you can without taking more than half of the square."
-msgstr ""
+msgstr "Valitse niin montaa osaat kuin voit ottamatta yli puolta neliöstä."
 
 #: activities/fractions_create/resource/2/Data.qml:9
 msgctxt "Data|"
@@ -9603,7 +9607,7 @@ msgstr "Etsi nimittäjä (neliöllä)."
 #: activities/fractions_find/resource/5/Data.qml:9
 msgctxt "Data|"
 msgid "Find numerator and denominator (with a pie)."
-msgstr ""
+msgstr "Etsi osoittaja ja nimittäjä (piirakalla)."
 
 #: activities/fractions_find/resource/6/Data.qml:9
 msgctxt "Data|"
@@ -15861,12 +15865,15 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Move animals to their homes using a left click or right click on your mouse."
 msgstr ""
+"Siirrä eläimet koteihinsa hiiren vasemman tai oikean painikkeen "
+"napsautuksella."
 
 #. Help goal
 #: activities/left_right_click/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Using the mouse. Left and right click training."
 msgstr ""
+"Hiiren käyttö. Vasemman ja oikean painikkeen napsautuksen harjoittelua."
 
 #. Help manual
 #: activities/left_right_click/ActivityInfo.qml:23
@@ -15875,6 +15882,9 @@ msgid ""
 "A left click on a fish will move it to the pond. A right click on a monkey "
 "will move it to the tree. A message will show if you make the wrong click."
 msgstr ""
+"Kala liikkuu lammikkoon napsauttamalla sitä vasemmalla painikkeella. "
+"Oikealla painikkeella napsauttamalla apina liikkuu puuhun. Jos napsautat "
+"väärin, näytetään viesti."
 
 #. Activity title
 #: activities/leftright/ActivityInfo.qml:15
@@ -18083,7 +18093,7 @@ msgstr "Toimintoryhmien valikko näkyvissä"
 #: activities/menu/ConfigurationItem.qml:368
 msgctxt "ConfigurationItem|"
 msgid "Ask for confirmation to exit"
-msgstr ""
+msgstr "Pyydä vahvistus lopettamiseen"
 
 #: activities/menu/ConfigurationItem.qml:379
 msgctxt "ConfigurationItem|"
@@ -18627,6 +18637,10 @@ msgid ""
 "have a look at the translation map which contains the code for all the "
 "letters and digits."
 msgstr ""
+"Sinua pyydetään joko lähettämään viesti morsekoodina tai muuntamaan "
+"vastaanotettu morsekoodiviesti kirjaimiksi tai numeroiksi. Oppiaksesi "
+"morsekoodin voit vilkaista muunnostaulukkoa, josta näkyvät kaikkien "
+"kirjainten ja numeroiden koodit."
 
 #: activities/morse_code/FirstScreen.qml:25
 msgctxt "FirstScreen|"
@@ -25101,12 +25115,6 @@ msgstr ""
 "joka haihduttaa veden vesistöistä kuten järvistä ja meristä."
 
 #: activities/watercycle/Watercycle.qml:118
-#, fuzzy
-#| msgctxt "Watercycle|"
-#| msgid ""
-#| "Plants also lose water to the air through transpiration. The water vapor "
-#| "cools down forming tiny droplets in clouds. When the clouds meet cool air "
-#| "over the land, precipitation is triggered and fall down as rain."
 msgctxt "Watercycle|"
 msgid ""
 "Plants also lose water to the air through transpiration. The water vapor "
@@ -25205,6 +25213,8 @@ msgid ""
 "New command-line option (--difficulty {value|min-max}) to start GCompris at "
 "specific difficulty"
 msgstr ""
+"Uusi komentorivivalitsin (--difficulty {arvo|pienin-suurin}) GComprisin "
+"aloittamiseksi tietyllä vaikeudella"
 
 #: core/ChangeLog.qml:44
 msgctxt "ChangeLog|"
@@ -25255,11 +25265,13 @@ msgstr "Uusi nopeusasetus useissa toiminnoissa."
 msgctxt "ChangeLog|"
 msgid "Fix some transitions in renewable_energy/watercycle on some platforms"
 msgstr ""
+"Korjattu jotkin siirtymät joiden alustojen uusiutuvassa energiassa/veden "
+"kiertokulussa"
 
 #: core/ChangeLog.qml:60
 msgctxt "ChangeLog|"
 msgid "Fix dead keys ignored on Linux for typing activities"
-msgstr ""
+msgstr "Korjattu Linuxin kirjoitettaessa sivuuttamat kuolleet näppäimet"
 
 #: core/ChangeLog.qml:61
 msgctxt "ChangeLog|"
@@ -25271,6 +25283,8 @@ msgctxt "ChangeLog|"
 msgid ""
 "Fix Alphabet sequence, Even and odd numbers and Numbers in order activities"
 msgstr ""
+"Korjaa aakkosjärjestys-, Parilliset ja parittomat luvut- ja Luvut "
+"järjestyksessä -toiminnot"
 
 #: core/ChangeLog.qml:69 core/ChangeLog.qml:77
 msgctxt "ChangeLog|"
@@ -26015,19 +26029,22 @@ msgstr ""
 #: core/main.cpp:203
 msgctxt "QObject|"
 msgid "Specify the activity when starting GCompris."
-msgstr ""
+msgstr "Määritä GComprisin aloittava toiminto."
 
 #: core/main.cpp:208
 msgctxt "QObject|"
 msgid "Outputs all the available activities on the standard output."
-msgstr ""
+msgstr "Tulostaa vakiotulostevirtaan kaikki saatavilla olevat toiminnot."
 
+# Huom! ”3-6” sisältää tarkoituksella yhdysmerkin, koska voisi olettaa, että syötettäessä sitä on käytettävä.
 #: core/main.cpp:212
 msgctxt "QObject|"
 msgid ""
 "Specify the range of activity difficulty to display for the session. Either "
 "a single value (2), or a range (3-6). Values must be between 1 and 6."
 msgstr ""
+"Määritä istunnon toimintojen vaikeusalue. Anna yksittäinen arvo (2) tai alue "
+"(3-6). Arvojen on oltava väliltä 1–6."
 
 #: core/main.qml:273
 msgctxt "main|"
