@@ -437,3 +437,17 @@ endif()
 
 add_custom_target(binaries)
 add_dependencies(binaries ${GCOMPRIS_EXECUTABLE_NAME} rcc_core rcc_menu rcc_activities all_activities)
+
+# Add a target to automatise the filling of the files requiring info for the releases: appdata/publiccode release date, fastlane changelog
+string(TIMESTAMP currentDay "%Y-%m-%d")
+add_custom_command(
+    OUTPUT doUpdateReleaseDate
+    COMMAND ./tools/bump_version.sh -v ${GCOMPRIS_VERSION} -r ${currentDay}
+    COMMAND python3 ./tools/fdroid_update_fastlane_metadata.py ${GCOMPRIS_VERSION_CODE}
+    COMMAND python3 ./tools/android_format_changelog.py ${GCOMPRIS_VERSION_CODE}
+    WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}
+    )
+add_custom_target(updateReleaseDate
+  DEPENDS doUpdateReleaseDate
+  COMMENT "Run the scripts to bump the version if not already done. It assumes the changelog is already created for this version."
+  )
