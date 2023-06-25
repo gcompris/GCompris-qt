@@ -24429,11 +24429,9 @@ msgstr "Å fullføra bretta krev tolmod og evna til logisk tenking."
 #: activities/sudoku/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid ""
-"Select a number or a symbol on the left and click on its target position. "
-"GCompris will not let you enter invalid answer."
+"Select a number or a symbol in the list and click on its target position. "
+"GCompris will not let you enter an invalid answer."
 msgstr ""
-"Vel eit siffer eller ein figur til venstre, og trykk der du vil plassera "
-"sifferet/talet. GCompris vil ikkje la deg plassera noko på ein ugyldig plass."
 
 #: activities/sudoku/resource/1/Data.qml:13
 msgctxt "Data|"
