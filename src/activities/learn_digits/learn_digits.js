@@ -77,14 +77,22 @@ function previousLevel() {
 }
 
 function removeLastQuestion() {
-     for(var i = 0; i < questionsArray.length; i++) {
-         if(questionsArray[i] === items.question)
-            questionsArray.splice(i, 1);
-         else if(questionsArray[i] === items.questionText) {
-            questionsArray.splice(i, 1);
-            answersArray.splice(i, 1);
-         }
-     }
+    if(operationMode) {
+        for(var i = 0; i < questionsArray.length; i++) {
+            if(questionsArray[i] === items.questionText) {
+                questionsArray.splice(i, 1);
+                answersArray.splice(i, 1);
+                return;
+            }
+        }
+    } else {
+        for(var i = 0; i < questionsArray.length; i++) {
+            if(questionsArray[i] === items.question) {
+                questionsArray.splice(i, 1);
+                return;
+            }
+        }
+    }
 }
 
 function initQuestion() {
