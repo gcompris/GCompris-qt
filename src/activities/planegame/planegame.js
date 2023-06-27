@@ -34,6 +34,8 @@ var cloudComponent = Qt.createComponent(url + "Cloud.qml");
 var clouds = new Array;
 var cloudsErased = new Array;
 
+var audioFileToPlay;
+
 function start(items_, dataset_) {
     Core.checkForVoices(items_.activityPage);
 
@@ -289,7 +291,7 @@ function handleCollisionsWithCloud() {
 
                     if(currentSubLevel === numberOfSubLevels) {
                         /* Try the next level */
-                        if(items.audioVoices.hasAudio) {
+                        if(items.audioVoices.hasAudio && items.fileChecker.exists(audioFileToPlay)) {
                             items.goToNextLevel = true
                         } else {
                             items.bonus.good("flower")
@@ -317,12 +319,10 @@ function handleCollisionsWithCloud() {
 }
 
 function playLetterSound(number) {
-    if(number > 9)
-        items.audioVoices.play(GCompris.ApplicationInfo.getAudioFilePath("voices-$CA/$LOCALE/alphabet/"
-                               + number + ".$CA"))
-    else
-        items.audioVoices.play(
-            GCompris.ApplicationInfo.getAudioFilePath("voices-$CA/$LOCALE/alphabet/"
-                                                      + Core.getSoundFilenamForChar(number)))
-
+    if(number > 9) {
+        audioFileToPlay = GCompris.ApplicationInfo.getAudioFilePath("voices-$CA/$LOCALE/alphabet/" + number + ".$CA")
+    } else {
+        audioFileToPlay = GCompris.ApplicationInfo.getAudioFilePath("voices-$CA/$LOCALE/alphabet/" + Core.getSoundFilenamForChar(number))
+    }
+    items.audioVoices.play(audioFileToPlay)
 }

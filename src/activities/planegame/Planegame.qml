@@ -69,6 +69,7 @@ ActivityBase {
             property alias bonus: bonus
             property alias score: score
             property alias plane: plane
+            property alias fileChecker: fileChecker
             property GCAudio audioVoices: activity.audioVoices
             property GCSfx audioEffects: activity.audioEffects
             property alias movePlaneTimer: movePlaneTimer
@@ -89,6 +90,10 @@ ActivityBase {
             Activity.start(items, dataset)
         }
         onStop: { Activity.stop() }
+
+        File {
+            id: fileChecker
+        }
 
         // Tutorial section starts
         Image {
