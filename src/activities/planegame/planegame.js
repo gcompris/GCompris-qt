@@ -35,6 +35,7 @@ var clouds = new Array;
 var cloudsErased = new Array;
 
 var audioFileToPlay;
+var levelComplete = false;
 
 function start(items_, dataset_) {
     Core.checkForVoices(items_.activityPage);
@@ -90,6 +91,8 @@ function initLevel() {
     items.movePlaneTimer.start();
     items.cloudCreation.start()
 
+    levelComplete = false
+
     //Inject the first cloud now
     createCloud()
 }
@@ -131,6 +134,9 @@ function repositionObjectsOnHeightChanged(factor) {
 
 var cloudCounter = 1
 function createCloud() {
+    if(levelComplete) {
+        return
+    }
     var cloud = cloudComponent.createObject(
                 items.background, {
                     "background": items.background,
@@ -290,6 +296,7 @@ function handleCollisionsWithCloud() {
                     currentSubLevel++
 
                     if(currentSubLevel === numberOfSubLevels) {
+                        levelComplete = true
                         /* Try the next level */
                         if(items.audioVoices.hasAudio && items.fileChecker.exists(audioFileToPlay)) {
                             items.goToNextLevel = true
