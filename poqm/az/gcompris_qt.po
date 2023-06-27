@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2023-06-16 17:24+0400\n"
+"PO-Revision-Date: 2023-06-26 17:19+0400\n"
 "Last-Translator: Kheyyam <xxmn77@gmail.com>\n"
 "Language-Team: Azerbaijani <kde-i18n-doc@kde.org>\n"
 "Language: az\n"
@@ -17791,12 +17791,9 @@ msgid "Copyright: %1"
 msgstr "Müəllif Hüquqları: %1"
 
 #: activities/menu/ConfigurationItem.qml:48
-#, fuzzy
-#| msgctxt "ConfigurationItem|"
-#| msgid "Difficulty filter:"
 msgctxt "ConfigurationItem|"
 msgid "Difficulty filter"
-msgstr "Çətinlik süzgəci:"
+msgstr "Çətinlik süzgəci"
 
 #: activities/menu/ConfigurationItem.qml:108
 msgctxt "ConfigurationItem|"
@@ -24374,18 +24371,13 @@ msgstr "Bu tapmacanı həll etmək üçün sizə səbr və məntiq bacarığı l
 
 #. Help manual
 #: activities/sudoku/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Select a number or a symbol on the left and click on its target position. "
-#| "GCompris will not let you enter invalid answer."
 msgctxt "ActivityInfo|"
 msgid ""
 "Select a number or a symbol in the list and click on its target position. "
 "GCompris will not let you enter an invalid answer."
 msgstr ""
-"Sol tərəfdə sayı və simvolu seçin və onu yerləşdirəcəyiniz yerə vurun. "
-"GCompris sizə səhv simvolu və ya sayı daxil etmənizə icazə verməyəcək."
+"Siyahıdakı say və simvolu seçin və onun mövqeyinə vurun. GCompris sizə səhv "
+"cavabı daxil etmənizə icazə verməyəcək."
 
 #: activities/sudoku/resource/1/Data.qml:13
 msgctxt "Data|"
