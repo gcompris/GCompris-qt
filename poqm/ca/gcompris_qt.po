@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2014-12-25 01:10+0000\n"
-"PO-Revision-Date: 2023-05-19 09:31+0200\n"
+"PO-Revision-Date: 2023-07-02 11:03+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
@@ -23,7 +23,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Accelerator-Marker: &\n"
-"X-Generator: Lokalize 20.12.0\n"
+"X-Generator: Lokalize 22.12.3\n"
 "X-Qt-Contexts: true\n"
 
 #. Activity title
@@ -21238,11 +21238,12 @@ msgctxt "ActivityInfo|"
 msgid "Positions"
 msgstr "Posicions"
 
+# skip-rule: kct-box
 #. Help title
 #: activities/positions/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Find the boy's position in relation to the box."
-msgstr "Troba la posició de l'infant en relació amb el quadre."
+msgstr "Troba la posició de l'infant en relació amb la caixa."
 
 #. Help goal
 #: activities/positions/ActivityInfo.qml:20
@@ -21250,6 +21251,7 @@ msgctxt "ActivityInfo|"
 msgid "Describe the relative position of an object."
 msgstr "Descriure la posició relativa d'un objecte."
 
+# skip-rule: kct-box
 #. Help manual
 #: activities/positions/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
@@ -21258,8 +21260,8 @@ msgid ""
 "out the position of the boy in relation to the box and select the correct "
 "answer."
 msgstr ""
-"Veureu diferents imatges representant a un infant i un quadre, haureu "
-"d'esbrinar la posició de l'infant en relació amb el quadre i seleccionar la "
+"Veureu diferents imatges representant a un infant i una caixa, haureu "
+"d'esbrinar la posició de l'infant en relació amb la caixa i seleccionar la "
 "resposta correcta."
 
 #: activities/positions/ActivityInfo.qml:27
@@ -21278,10 +21280,11 @@ msgctxt "Data|"
 msgid "beside"
 msgstr "al costat"
 
+# skip-rule: kct-box
 #: activities/positions/resource/1/Data.qml:21
 msgctxt "Data|"
 msgid "Select the image where the child is beside the box."
-msgstr "Seleccioneu la imatge on l'infant es troba al costat del quadre."
+msgstr "Seleccioneu la imatge on l'infant es troba al costat de la caixa."
 
 #. it refers to the behind position
 #: activities/positions/resource/1/Data.qml:26
@@ -21290,11 +21293,12 @@ msgctxt "Data|"
 msgid "behind"
 msgstr "al darrere"
 
+# skip-rule: kct-box
 #: activities/positions/resource/1/Data.qml:27
 #: activities/positions/resource/2/Data.qml:33
 msgctxt "Data|"
 msgid "Select the image where the child is behind the box."
-msgstr "Seleccioneu la imatge on l'infant es troba al darrere del quadre."
+msgstr "Seleccioneu la imatge on l'infant es troba al darrere de la caixa."
 
 #. it refers to the in front of position
 #: activities/positions/resource/1/Data.qml:32
@@ -21303,11 +21307,12 @@ msgctxt "Data|"
 msgid "in front of"
 msgstr "al davant de"
 
+# skip-rule: kct-box
 #: activities/positions/resource/1/Data.qml:33
 #: activities/positions/resource/2/Data.qml:39
 msgctxt "Data|"
 msgid "Select the image where the child is in front of the box."
-msgstr "Seleccioneu la imatge on l'infant es troba al davant del quadre."
+msgstr "Seleccioneu la imatge on l'infant es troba al davant de la caixa."
 
 #. it refers to the inside position
 #: activities/positions/resource/1/Data.qml:38
@@ -21316,11 +21321,12 @@ msgctxt "Data|"
 msgid "inside"
 msgstr "a l'interior"
 
+# skip-rule: kct-box
 #: activities/positions/resource/1/Data.qml:39
 #: activities/positions/resource/2/Data.qml:45
 msgctxt "Data|"
 msgid "Select the image where the child is inside the box."
-msgstr "Seleccioneu la imatge on l'infant es troba a l'interior del quadre."
+msgstr "Seleccioneu la imatge on l'infant es troba a l'interior de la caixa."
 
 #. it refers to the above position
 #: activities/positions/resource/1/Data.qml:44
@@ -21329,11 +21335,12 @@ msgctxt "Data|"
 msgid "above"
 msgstr "a sobre"
 
+# skip-rule: kct-box
 #: activities/positions/resource/1/Data.qml:45
 #: activities/positions/resource/2/Data.qml:51
 msgctxt "Data|"
 msgid "Select the image where the child is above the box."
-msgstr "Seleccioneu la imatge on l'infant es troba a sobre del quadre."
+msgstr "Seleccioneu la imatge on l'infant es troba a sobre de la caixa."
 
 #. it refers to the beneath position
 #: activities/positions/resource/1/Data.qml:50
@@ -21342,11 +21349,12 @@ msgctxt "Data|"
 msgid "under"
 msgstr "a sota"
 
+# skip-rule: kct-box
 #: activities/positions/resource/1/Data.qml:51
 #: activities/positions/resource/2/Data.qml:57
 msgctxt "Data|"
 msgid "Select the image where the child is under the box."
-msgstr "Seleccioneu la imatge on l'infant es troba a sota del quadre."
+msgstr "Seleccioneu la imatge on l'infant es troba a sota de la caixa."
 
 #: activities/positions/resource/2/Data.qml:14
 msgctxt "Data|"
@@ -21359,10 +21367,11 @@ msgctxt "Data|"
 msgid "right"
 msgstr "a la dreta"
 
+# skip-rule: kct-box
 #: activities/positions/resource/2/Data.qml:21
 msgctxt "Data|"
 msgid "Select the image where the child is at the right of the box."
-msgstr "Seleccioneu la imatge on l'infant es troba a la dreta del quadre."
+msgstr "Seleccioneu la imatge on l'infant es troba a la dreta de la caixa."
 
 #. it refers to the position on the left side
 #: activities/positions/resource/2/Data.qml:26
@@ -21370,10 +21379,11 @@ msgctxt "Data|"
 msgid "left"
 msgstr "a l'esquerra"
 
+# skip-rule: kct-box
 #: activities/positions/resource/2/Data.qml:27
 msgctxt "Data|"
 msgid "Select the image where the child is at the left of the box."
-msgstr "Seleccioneu la imatge on l'infant es troba a l'esquerra del quadre."
+msgstr "Seleccioneu la imatge on l'infant es troba a l'esquerra de la caixa."
 
 #. Activity title
 #: activities/programmingMaze/ActivityInfo.qml:16
@@ -26501,7 +26511,7 @@ msgstr "Música de fons"
 #: core/main.qml:280
 msgctxt "main|"
 msgid "Do you want to download the following external assets?"
-msgstr "Voleu descarregar els següents actius externs?"
+msgstr "Voleu descarregar els següents recursos externs?"
 
 #: core/main.qml:285
 msgctxt "main|"
