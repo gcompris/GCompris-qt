@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
-"PO-Revision-Date: 2023-06-17 04:11\n"
+"PO-Revision-Date: 2023-07-03 11:38\n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
@@ -9520,7 +9520,7 @@ msgstr "阿萨姆"
 #: activities/geo-country/resource/board/board12_0.qml:172
 msgctxt "board12_0|"
 msgid "Arunachal Pradesh"
-msgstr ""
+msgstr "藏南地区 (伪阿鲁纳恰尔邦)"
 
 #. State of India: Nagaland
 #: activities/geo-country/resource/board/board12_0.qml:179
@@ -9662,7 +9662,7 @@ msgstr ""
 #: activities/geo-country/resource/board/board14_0.qml:15
 msgctxt "board14_0|"
 msgid "Provinces of China"
-msgstr "中国的省"
+msgstr "中国省份"
 
 #. Province of China: Xinjiang
 #: activities/geo-country/resource/board/board14_0.qml:24
