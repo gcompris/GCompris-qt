@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Qt-Contexts: true\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Generator: Lokalize 20.12.0\n"
 "X-Qt-Contexts: true\n"
 
@@ -4682,6 +4682,7 @@ msgctxt "Clockgame|"
 msgid "%n hour(s)"
 msgid_plural "%n hour(s)"
 msgstr[0] ""
+msgstr[1] ""
 
 #: activities/clockgame/Clockgame.qml:112
 #, qt-format
@@ -4689,6 +4690,7 @@ msgctxt "Clockgame|"
 msgid "%n minute(s)"
 msgid_plural "%n minute(s)"
 msgstr[0] ""
+msgstr[1] ""
 
 #: activities/clockgame/Clockgame.qml:115
 #, qt-format
@@ -4696,6 +4698,7 @@ msgctxt "Clockgame|"
 msgid "%n second(s)"
 msgid_plural "%n second(s)"
 msgstr[0] ""
+msgstr[1] ""
 
 #: activities/clockgame/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -21078,6 +21081,7 @@ msgctxt ""
 msgid "Place %n boy(s) "
 msgid_plural "Place %n boy(s) "
 msgstr[0] ""
+msgstr[1] ""
 
 #: activities/share/share.js:101
 #, qt-format
@@ -21087,6 +21091,7 @@ msgctxt ""
 msgid "and %n girl(s) in the center. "
 msgid_plural "and %n girl(s) in the center. "
 msgstr[0] ""
+msgstr[1] ""
 
 #: activities/share/share.js:105
 #, qt-format
@@ -21096,6 +21101,7 @@ msgctxt ""
 msgid "Then split %n pieces of candy equally between them."
 msgid_plural "Then split %n pieces of candy equally between them."
 msgstr[0] ""
+msgstr[1] ""
 
 #: activities/share/Share.qml:340
 #, qt-format
