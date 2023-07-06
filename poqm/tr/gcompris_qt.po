@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2023-05-28 11:20+0300\n"
+"PO-Revision-Date: 2023-07-05 13:43+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 23.04.1\n"
+"X-Generator: Lokalize 23.07.70\n"
 "X-Qt-Contexts: true\n"
 
 #. Activity title
@@ -25418,7 +25418,7 @@ msgstr ""
 "hazırlayabilirsiniz. Karar sizin!<br /><br /><a href=\"%1\">%1</a> adresini "
 "ziyaret ederek katkıda bulunabileceğiniz projeler hakkında bilgi "
 "alabilirsiniz.<br /><br />Daha fazla bilgi ve belge için <a href=\"%2\">%2</"
-"a> adresine bakabilirsiniz."
+"a> adresine bakın."
 
 #: core/DialogAbout.qml:122
 #, qt-format
