@@ -75,6 +75,7 @@ grammar_analysis
 grammar_classes
 graph-coloring
 gravity
+guess24
 guesscount
 guessnumber
 hangman
