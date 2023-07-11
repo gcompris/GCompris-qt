@@ -10,7 +10,8 @@
 import GCompris 1.0
 
 Data {
-    objective: qsTr("Medium grids with +, - and * operators.")
+    //: \u002B is the unicode character for addition mathematical operator (+), \u2212 for subtraction (-), \u00D7 for multiplication (*)
+    objective: qsTr("Medium grids with \u002B, \u2212 and \u00D7 operators.")
     difficulty: 5
 
     property var symbols: [

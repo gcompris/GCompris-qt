@@ -62,7 +62,8 @@ Create a manual level:
 */
 
 Data {
-    objective: qsTr("Small grids with + operator.")
+    //: \u002B is the unicode character for addition mathematical operator (+)
+    objective: qsTr("Small grids with \u002B operator.")
     difficulty: 3
 
     property var symbols: [
