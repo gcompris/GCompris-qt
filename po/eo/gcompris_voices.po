@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_voices\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-12-13 00:48+0000\n"
+"POT-Creation-Date: 2023-07-11 00:41+0000\n"
 "PO-Revision-Date: 2023-03-29 23:52+0100\n"
 "Last-Translator: Oliver Kellogg <okellogg@users.sourceforge.net>\n"
 "Language-Team: Esperanto <kde-i18n-eo@kde.org>\n"
@@ -195,6 +195,20 @@ msgstr "Alklaku Tux por komenci kaj poste rekrei la brajlaj ĉeloj."
 #, kde-format
 msgid "Create the Braille cell for the letter."
 msgstr "Kreu la brajlan ĉelon por la letero."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "calcudoku"
+#: activities/calcudoku/ActivityInfo.qml:17
+#, fuzzy, kde-format
+#| msgid ""
+#| "Select a number or a symbol and click its target area. Each symbol must "
+#| "appear only once in a row, in a column and in a subregion if any."
+msgid ""
+"Select a number and click on its target position. Each number must appear "
+"only once in a row and in a column. The numbers in the cells of a cage must "
+"produce the given result when combined using the given operator."
+msgstr ""
+"Elektu nombron aŭ simbolon kaj alklaku ĝian celregionon. Ĉiu simbolo devas "
+"aperi nur unufoje en vico, en kolumno kaj en subregiono se ekzistas."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "calendar"
 #: activities/calendar/ActivityInfo.qml:18

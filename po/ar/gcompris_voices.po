@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-12-13 00:48+0000\n"
+"POT-Creation-Date: 2023-07-11 00:41+0000\n"
 "PO-Revision-Date: 2023-03-30 09:11+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
@@ -185,6 +185,20 @@ msgstr "انقر على البطريق توكس للبدء ثم أعد إنشا�
 #, kde-format
 msgid "Create the Braille cell for the letter."
 msgstr "أنشئ خلية برايل للحرف."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "calcudoku"
+#: activities/calcudoku/ActivityInfo.qml:17
+#, fuzzy, kde-format
+#| msgid ""
+#| "Select a number or a symbol and click its target area. Each symbol must "
+#| "appear only once in a row, in a column and in a subregion if any."
+msgid ""
+"Select a number and click on its target position. Each number must appear "
+"only once in a row and in a column. The numbers in the cells of a cage must "
+"produce the given result when combined using the given operator."
+msgstr ""
+"اختر رقمًا أو رمزًا وانقر فوق مكانه المستهدف. يجب أن يظهر الرمز مرة واحدة فقط "
+"في الصف أو العمود أو المنطقة إن وجدت."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "calendar"
 #: activities/calendar/ActivityInfo.qml:18

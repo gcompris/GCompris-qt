@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-12-13 00:48+0000\n"
+"POT-Creation-Date: 2023-07-11 00:41+0000\n"
 "PO-Revision-Date: 2022-03-18 13:59+0100\n"
 "Last-Translator: Aiswarya Kaitheri Kandoth <aiswaryakk29@gmail.com>\n"
 "Language-Team: Malayalam <kde-i18n-doc@kde.org>\n"
@@ -185,6 +185,20 @@ msgstr "ബ്രായി അക്ഷരങ്ങൾ പുനർനിർമ�
 #, kde-format
 msgid "Create the Braille cell for the letter."
 msgstr "തന്നിരിക്കുന്ന അക്ഷരത്തിന് ബ്രായി കളം നിർമ്മിക്കുക."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "calcudoku"
+#: activities/calcudoku/ActivityInfo.qml:17
+#, fuzzy, kde-format
+#| msgid ""
+#| "Select a number or a symbol and click its target area. Each symbol must "
+#| "appear only once in a row, in a column and in a subregion if any."
+msgid ""
+"Select a number and click on its target position. Each number must appear "
+"only once in a row and in a column. The numbers in the cells of a cage must "
+"produce the given result when combined using the given operator."
+msgstr ""
+"ഒരു സംഖ്യ അല്ലെങ്കിൽ ചിഹ്നം തെരഞ്ഞെടുത്ത് അതിൻ്റെ ലക്ഷ്യസ്ഥാനത്ത് ക്ലിക്ക് ചെയ്യുക. ഓരോ ചിഹ്നവും "
+"വരിയിലും നിരയിലും സബ്റീജിയണുണ്ടെങ്കിൽ അതിലും ഒറ്റ തവണ മാത്രമേ വരാവൂ."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "calendar"
 #: activities/calendar/ActivityInfo.qml:18

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-12-13 00:48+0000\n"
+"POT-Creation-Date: 2023-07-11 00:41+0000\n"
 "PO-Revision-Date: 2022-12-25 18:55+0100\n"
 "Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
 "Language-Team: Polish <kde-i18n-doc@kde.org>\n"
@@ -193,6 +193,20 @@ msgstr "Kliknij na Tuksie, aby rozpocząć, a następnie odbuduj znaki Braille'a
 #, kde-format
 msgid "Create the Braille cell for the letter."
 msgstr "Utwórz znak Braille'a dla litery."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "calcudoku"
+#: activities/calcudoku/ActivityInfo.qml:17
+#, fuzzy, kde-format
+#| msgid ""
+#| "Select a number or a symbol and click its target area. Each symbol must "
+#| "appear only once in a row, in a column and in a subregion if any."
+msgid ""
+"Select a number and click on its target position. Each number must appear "
+"only once in a row and in a column. The numbers in the cells of a cage must "
+"produce the given result when combined using the given operator."
+msgstr ""
+"Wybierz liczbę lub symbol i kliknij na jej obszar docelowy. Każdy symbol "
+"może pojawić się tylko raz w wierszu, w kolumnie i w podobszarze."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "calendar"
 #: activities/calendar/ActivityInfo.qml:18

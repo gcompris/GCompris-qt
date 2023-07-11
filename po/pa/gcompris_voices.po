@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-12-13 00:48+0000\n"
+"POT-Creation-Date: 2023-07-11 00:41+0000\n"
 "PO-Revision-Date: 2020-10-13 21:32-0700\n"
 "Last-Translator: A S Alam <aalam.yellow@gmail.com>\n"
 "Language-Team: Punjabi <punjabi-users@lists.sf.net>\n"
@@ -171,6 +171,15 @@ msgstr ""
 #: activities/braille_fun/ActivityInfo.qml:18
 #, kde-format
 msgid "Create the Braille cell for the letter."
+msgstr ""
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "calcudoku"
+#: activities/calcudoku/ActivityInfo.qml:17
+#, kde-format
+msgid ""
+"Select a number and click on its target position. Each number must appear "
+"only once in a row and in a column. The numbers in the cells of a cage must "
+"produce the given result when combined using the given operator."
 msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "calendar"

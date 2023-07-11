@@ -2975,6 +2975,75 @@ msgstr ""
 "Utwórz komórki Brajla dla liter na pasku. Jeśli potrzebujesz pomocy, to "
 "naciśnij niebieską ikonę komórki Brajla, aby zobaczyć tablicę znaków."
 
+#. Activity title - the game is the KenKen but we cannot use KenKen as it is a trademark name
+#: activities/calcudoku/ActivityInfo.qml:14
+msgctxt "ActivityInfo|"
+msgid "Calcudoku"
+msgstr ""
+
+#. Help title
+#: activities/calcudoku/ActivityInfo.qml:16
+msgctxt "ActivityInfo|"
+msgid "Solve the Calcudoku."
+msgstr ""
+
+#. Help goal
+#: activities/calcudoku/ActivityInfo.qml:19
+msgctxt "ActivityInfo|"
+msgid ""
+"Develop your logical reasoning skills: data linking, deduction and spatial "
+"location while using calculation."
+msgstr ""
+
+#. Help prerequisite
+#: activities/calcudoku/ActivityInfo.qml:21
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Completing the puzzle requires patience and logical ability."
+msgctxt "ActivityInfo|"
+msgid "Completing the puzzle requires patience and arithmetic abilities."
+msgstr "Ukończenie puzzli wymaga cierpliwości i umiejętności logicznych."
+
+#. Help manual
+#: activities/calcudoku/ActivityInfo.qml:23
+msgctxt "ActivityInfo|"
+msgid ""
+"Select a number in the list and click on its target position to fill the "
+"grid. Each number must appear only once in a row and in a column. Cages are "
+"groups of cells providing information on how to fill them. Cages made of "
+"more than one cell provide a result and an operator: all the numbers in the "
+"cage, when combined using the operator, must produce the result. Cages made "
+"of only one cell directly provide the number to enter."
+msgstr ""
+
+#: activities/calcudoku/resource/1/Data.qml:65
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Small grids."
+msgctxt "Data|"
+msgid "Small grids with + operator."
+msgstr "Małe siatki."
+
+#: activities/calcudoku/resource/2/Data.qml:13
+msgctxt "Data|"
+msgid "Small grids with + and - operators."
+msgstr ""
+
+#: activities/calcudoku/resource/3/Data.qml:13
+msgctxt "Data|"
+msgid "Small grids with +, - and * operators."
+msgstr ""
+
+#: activities/calcudoku/resource/4/Data.qml:13
+msgctxt "Data|"
+msgid "Medium grids with +, - and * operators."
+msgstr ""
+
+#: activities/calcudoku/resource/5/Data.qml:13
+msgctxt "Data|"
+msgid "Large grids with +, -, * and : operators."
+msgstr ""
+
 #. Activity title
 #: activities/calendar/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
