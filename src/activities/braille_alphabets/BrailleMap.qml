@@ -16,8 +16,6 @@ import "braille_alphabets.js" as Activity
 Rectangle {
     id: brailleMap
     color: "#808080"
-    border.color: "black"
-    border.width: 1
     z: 1000
     property bool isDialog: true
     signal close
@@ -111,9 +109,9 @@ Rectangle {
                         id: rect1
                         width:  parent.width
                         height: ins.height
-                        border.width: 3
-                        border.color: "black"
-                        color: "white"
+                        border.width: ins.thinBorder
+                        border.color: "#373737"
+                        color: "#f0f0f0"
                         opacity: modelData != "" ? 1 : 0
 
                         BrailleChar {
@@ -129,7 +127,7 @@ Rectangle {
                         text: modelData
                         font.weight: Font.DemiBold
                         style: Text.Outline
-                        styleColor: "black"
+                        styleColor: "#373737"
                         color: "white"
                         fontSize: Math.max(Math.min(parent.width * 0.2, 24), 12)
                         anchors {
