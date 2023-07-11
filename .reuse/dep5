@@ -2662,14 +2662,13 @@ Files: src/activities/lightsoff/*.svg
 Copyright: 2021 Timothée Giet
 License: CC-BY-SA-4.0
 
-Files: src/activities/louis-braille/louis-braille.svg
-Copyright: 2015-2022 Timothée Giet
+Files: src/activities/louis-braille/*.svg
+Copyright: 2015-2023 Timothée Giet
 License: CC-BY-SA-4.0
 
-Files: src/activities/louis-braille/resource/*.webp src/activities/louis-braille/resource/*.svg
+Files: src/activities/louis-braille/resource/louis.webp
 Copyright: 2008 Bruno Coudoin and others
 License: GPL-3.0-only
-Comment: braille.webp is based on a photo by Christophe Moustier, original source at https://commons.wikimedia.org/wiki/File:DSC_4050-MR-Braille.jpg
 
 Files: src/activities/magic-hat*/*.svg
 Copyright: 2020 Timothée Giet
