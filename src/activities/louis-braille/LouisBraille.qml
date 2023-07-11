@@ -49,7 +49,7 @@ ActivityBase {
 
         onStart: { Activity.start(items) }
         onStop: {
-            list.stopTimer()
+            listScreen.stopTimer()
             Activity.stop()
         }
 
@@ -126,9 +126,9 @@ ActivityBase {
 
         function next() {
             if(items.count == items.dataset.length - 1) {
-                list.shuffle()
+                listScreen.shuffle()
                 items.count = 0
-                list.visible = true
+                listScreen.visible = true
             } else {
                 items.count++
             }
@@ -252,20 +252,20 @@ ActivityBase {
             }
         }
 
-        Keys.onUpPressed: list.up()
-        Keys.onDownPressed: list.down()
-        Keys.onEnterPressed: list.space()
-        Keys.onReturnPressed: list.space()
-        Keys.onSpacePressed: list.space()
+        Keys.onUpPressed: listScreen.up()
+        Keys.onDownPressed: listScreen.down()
+        Keys.onEnterPressed: listScreen.space()
+        Keys.onReturnPressed: listScreen.space()
+        Keys.onSpacePressed: listScreen.space()
 
         ReorderList {
-            id: list
+            id: listScreen
             visible: false
-            bonus: bonus
 
             signal shuffle
 
             onShuffle: {
+                bonusRunning = false
                 containerModel.clear()
                 var dataitems = Object.create(items.dataset)
                 dataitems = Core.shuffle(dataitems)
@@ -291,13 +291,13 @@ ActivityBase {
             onHomeClicked: activity.home()
             onReloadClicked: {
                 items.count = 0
-                list.visible = false
+                listScreen.visible = false
             }
         }
 
         Bonus {
             id: bonus
-            Component.onCompleted: win.connect(list.shuffle)
+            Component.onCompleted: win.connect(listScreen.shuffle)
         }
     }
 
