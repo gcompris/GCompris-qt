@@ -18,14 +18,10 @@ Rectangle {
     id: wholeBody
     width: parent.width
     height: parent.height
-    color: "#ff55afad"
+    color: "#85D8F6"
 
-    property color goodColor: colorMode ?  "#ffc1ffb4" : "#FFF"
-    property color badColor: colorMode ?  "#FFF" : "#FFF"
-    property bool colorMode: true
     property int selectedIndex: -1
     property alias containerModel: list.model
-    property int listPix: wholeBody.height /30
     property bool bonusRunning: false
 
     signal up
@@ -34,12 +30,13 @@ Rectangle {
 
     onUp: list.decrementCurrentIndex()
     onDown: list.incrementCurrentIndex()
-    onSpace: {
+    onSpace: selectItem()
+
+    function selectItem() {
         if(list.currentIndex == selectedIndex) {
             selectedIndex = -1
         } else if(selectedIndex != -1) {
             containerModel.move(selectedIndex, list.currentIndex, 1)
-            list.currentIndex -= 1
             selectedIndex = -1
         } else {
             selectedIndex = list.currentIndex
@@ -71,12 +68,12 @@ Rectangle {
 
         Rectangle {
             id: listRect
-            color: wholeBody.selectedIndex == index ? "#b5b9ff" : (placed ? goodColor : badColor)
-            border.width: list.currentIndex == index ? 0 : 1
-            border.color: "#ff525c5c"
+            color: wholeBody.selectedIndex == index ? "#b5b9ff" : (placed ? "#c1ffb4" : "#F0F0F0")
+            border.width: list.currentIndex == index ? 0 : ApplicationInfo.ratio
+            border.color: "#373737"
             radius: 3
             width: list.width
-            height: Math.max(textinfo.height * 1.3, 50 * ApplicationInfo.ratio)
+            height: textinfo.height + background.baseMargins
 
             property bool placed: model.sequence === index
             property string text: model.text
@@ -88,7 +85,7 @@ Rectangle {
                 NumberAnimation {
                     target: listRect
                     property: "border.width"
-                    to: 5; duration: 500
+                    to: 2 * ApplicationInfo.ratio; duration: 500
                     easing.type: Easing.InOutQuad
                 }
                 NumberAnimation {
@@ -104,24 +101,18 @@ Rectangle {
                 text: listRect.text
                 anchors.centerIn: parent
                 horizontalAlignment: Text.AlignHCenter
-                width: parent.width * 0.94
+                width: parent.width - background.baseMargins
                 wrapMode: Text.WordWrap
-                font.pixelSize: listPix
+                fontSize: smallSize
+                color: "#373737"
             }
 
             MouseArea {
                 id: dragArea
                 anchors.fill: parent
                 onClicked: {
-                    wholeBody.selectedIndex = -1
-                    if(list.currentIndex == index) {
-                        list.currentIndex = -1
-                    } else if(list.currentIndex == -1) {
-                        list.currentIndex = index
-                    } else {
-                        containerModel.move(list.currentIndex, index, 1)
-                        list.currentIndex = -1
-                    }
+                    list.currentIndex = index
+                    wholeBody.selectItem()
                 }
             }
 
@@ -142,10 +133,13 @@ Rectangle {
         id: list
         anchors {
             top: parent.top
-            bottom: listScrollerB.top
-            left:parent.left
-            right: parent.right
-            margins: background.baseMargins
+            left: parent.left
+            right: scrollItem.left
+            bottom: parent.bottom
+            topMargin: background.baseMargins
+            leftMargin: background.baseMargins
+            rightMargin: background.baseMargins
+            bottomMargin: bar.height * 1.5
         }
         model: containerModel
         spacing: 5 * ApplicationInfo.ratio
@@ -155,19 +149,26 @@ Rectangle {
         cacheBuffer: 100000
         clip: true
 
-        header: Rectangle {
+        header: Item {
             width: parent.width
-            height: heading.height + 10
-            color: "#cceaeaea"
-            GCText {
-                id: heading
-                text: qsTr("Arrange the events in the order in which they happened. " +
-                           "Select the line to move, then select its target position.")
-                width: parent.width - 4
-                wrapMode: Text.WordWrap
-                horizontalAlignment: Text.AlignHCenter
-                font.pointSize: NaN
-                font.pixelSize: listPix
+            height: heading.height + background.baseMargins * 2
+            Rectangle {
+                width: parent.width
+                height: heading.height + background.baseMargins
+                radius: background.baseMargins * 0.5
+                anchors.top: parent.top
+                color: "#80FFFFFF"
+                GCText {
+                    id: heading
+                    text: qsTr("Arrange the events in the order in which they happened. " +
+                    "Select the line to move, then select its target position.")
+                    width: parent.width - background.baseMargins * 2
+                    wrapMode: Text.WordWrap
+                    horizontalAlignment: Text.AlignHCenter
+                    anchors.centerIn: parent
+                    color: "#373737"
+                    fontSize: smallSize
+                }
             }
         }
         onCurrentIndexChanged: {
@@ -185,18 +186,17 @@ Rectangle {
     }
 
     GCButtonScroll {
-        id:listScrollerB
+        id: scrollItem
+        anchors.right: parent.right
+        anchors.rightMargin: background.baseMargins
+        anchors.top: parent.top
+        anchors.topMargin: background.baseMargins
+        anchors.bottom: parent.bottom
+        anchors.bottomMargin: bar.height * 1.5
+        onUp: list.flick(0, 1000)
+        onDown: list.flick(0, -1000)
         upVisible: list.atYBeginning ? false : true
         downVisible: list.atYEnd ? false : true
-        anchors {
-            bottom: parent.bottom
-            bottomMargin: bar.height * 1.2
-            horizontalCenter: parent.horizontalCenter
-        }
-        isHorizontal: true
-        onUp: list.flick(0,700)
-        onDown: list.flick(0,-700)
-
     }
 
     Timer {
