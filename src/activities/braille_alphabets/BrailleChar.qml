@@ -22,6 +22,8 @@ Item {
     property real dotHeight: dotWidth
     property alias circles: circles
     property bool clickable
+    property double thinBorder: 2 * ApplicationInfo.ratio
+    property double thickBorder: 4 * ApplicationInfo.ratio
     property bool isLetter: brailleChar >= 'A' && brailleChar <= 'Z'
     property var brailleCodesLetter: {
         // For ASCII each letter, this represent the active dots in Braille.
@@ -101,9 +103,9 @@ Item {
 
             Rectangle {
                 id: incircle1
-                border.width: 2 * ApplicationInfo.ratio
-                color: on ? "#e4421c" : "#f0f0f0"
-                border.color: "#2a2a2a"
+                border.width: brailleCharItem.thinBorder
+                color: on ? "#373737" : "#f0f0f0"
+                border.color: "#373737"
                 width: dotWidth
                 height: dotHeight
                 radius: width * 0.5
@@ -159,8 +161,8 @@ Item {
                     enabled: clickable && !(bonus.isPlaying || score.isWinAnimationPlaying) ? true : false
                     anchors.fill: parent
                     hoverEnabled: true
-                    onEntered: incircle1.border.width = 4 * ApplicationInfo.ratio
-                    onExited: incircle1.border.width = 2 * ApplicationInfo.ratio
+                    onEntered: incircle1.border.width = brailleCharItem.thickBorder
+                    onExited: incircle1.border.width = brailleCharItem.thinBorder
                     onClicked: {
                         incircle1.switchState();
                     }
