@@ -51,12 +51,13 @@ ActivityBase {
             Activity.stop()
         }
 
-        Image {
+        Rectangle {
             id: charList
             y: 20 * ApplicationInfo.ratio
             anchors.horizontalCenter: parent.horizontalCenter
-            source: Activity.url + "top_back.svg"
-            sourceSize.width: parent.width * 0.90
+            color: "#D2D2D2"
+            width: parent.width * 0.9
+            height: parent.height * 0.25
 
             Row {
                 id: row
@@ -181,9 +182,10 @@ ActivityBase {
             anchors.top: info_rect.bottom
             anchors.topMargin: 10 * ApplicationInfo.ratio
             anchors.horizontalCenter: parent.horizontalCenter
-            sourceSize.height: parent.height - (charList.height + info_rect.height + bar.height)
-            height: (parent.height - (charList.height + info_rect.height + bar.height)) * 0.8
-            width: parent.width * 0.7
+            sourceSize.height: width
+            sourceSize.width: width
+            height: width
+            width: Math.min(parent.width * 0.7, (parent.height - (charList.height + info_rect.height + bar.height)) * 0.8)
             source: items.dataset[items.count].img
             fillMode: Image.PreserveAspectFit
 
