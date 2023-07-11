@@ -25,9 +25,11 @@ ActivityBase {
     pageComponent: Rectangle {
         id: background
         anchors.fill: parent
-        color: "#ABCDEF"
+        color: "#85D8F6"
         signal start
         signal stop
+
+        property double baseMargins: 10 * ApplicationInfo.ratio
 
         Component.onCompleted: {
             activity.start.connect(start)
@@ -51,19 +53,18 @@ ActivityBase {
             Activity.stop()
         }
 
-        Rectangle {
+        Item {
             id: charList
-            y: 20 * ApplicationInfo.ratio
+            anchors.top: parent.top
+            anchors.topMargin: background.baseMargins
             anchors.horizontalCenter: parent.horizontalCenter
-            color: "#D2D2D2"
-            width: parent.width * 0.9
-            height: parent.height * 0.25
+            height: childrenRect.height
+            width: Math.min(parent.width - 2 * background.baseMargins, 520 * ApplicationInfo.ratio)
 
             Row {
                 id: row
-                spacing: 10 * ApplicationInfo.ratio
-                anchors.centerIn: charList
-                anchors.horizontalCenterOffset: 5
+                spacing: background.baseMargins
+                anchors.horizontalCenter: parent.horizontalCenter
                 width: parent.width
 
                 Repeater {
@@ -72,19 +73,20 @@ ActivityBase {
 
                     // workaround for https://bugreports.qt.io/browse/QTBUG-72643 (qml binding with global variable in Repeater do not work)
                     property alias rowSpacing: row.spacing
+                    property alias rowWidth: row.width
                     Item {
                         id: inner
-                        height: charList.height * 0.95
-                        width: (charList.width - 13 * cardRepeater.rowSpacing)/ 13
+                        height: childrenRect.height
+                        width: (cardRepeater.rowWidth - 12 * cardRepeater.rowSpacing)/ 13
 
                         Rectangle {
                             id: rect1
-                            width: charList.width / 13
+                            width: inner.width
                             height: ins.height
-                            border.width: 3
+                            border.width: ApplicationInfo.ratio
                             opacity: index == 5 ? 0 :1
-                            border.color: "black"
-                            color: "white"
+                            border.color: "#373737"
+                            color: "#F0F0F0"
 
                             BrailleChar {
                                 id: ins
@@ -92,15 +94,14 @@ ActivityBase {
                                 anchors.centerIn: parent
                                 clickable: false
                                 brailleChar: modelData
+                                thinBorder: rect1.border.width
                             }
                         }
 
                         GCText {
                             text: modelData
                             font.weight: Font.DemiBold
-                            style: Text.Outline
-                            styleColor: "white"
-                            color: "black"
+                            color: "#373737"
                             fontSize: regularSize
                             anchors {
                                 top: rect1.bottom
@@ -133,42 +134,34 @@ ActivityBase {
             }
         }
 
-        Image {
-            id: previous
-            anchors.right: img.left
-            anchors.rightMargin: 20 * ApplicationInfo.ratio
-            anchors.verticalCenter: img.verticalCenter
-            source: "qrc:/gcompris/src/core/resource/bar_previous.svg"
-            sourceSize.height: 80 * ApplicationInfo.ratio
-            Behavior on scale { PropertyAnimation { duration: 100} }
-            MouseArea {
-                anchors.fill: parent
-                hoverEnabled: true
-                onEntered: previous.scale = 1.1
-                onExited: previous.scale = 1
-                onClicked: background.previous()
-            }
+        Item {
+            id: layoutArea
+            anchors.top: charList.bottom
+            anchors.left: background.left
+            anchors.right: background.right
+            anchors.margins: background.baseMargins
+            height: background.height - charList.height - bar.height * 1.2 - 3 * background.baseMargins
         }
 
         // The image description
         Rectangle {
             id: info_rect
-            border.color: "black"
-            border.width: 1 * ApplicationInfo.ratio
-            color: "white"
-            width: parent.width * 0.9
-            height: background.height/5
-            anchors.top: charList.bottom
-            anchors.horizontalCenter: parent.horizontalCenter
-            anchors.topMargin: 5 * ApplicationInfo.ratio
+            border.color: "#373737"
+            border.width: ApplicationInfo.ratio
+            color: "#F0F0F0"
+            width: layoutArea.width
+            height: layoutArea.height * 0.3
+            radius: 5 * ApplicationInfo.ratio
+            anchors.top: layoutArea.top
+            anchors.horizontalCenter: layoutArea.horizontalCenter
 
             GCText {
                 id: info
-                color: "black"
+                color: "#373737"
                 anchors.centerIn: parent
                 horizontalAlignment:  Text.AlignHCenter
-                width: parent.width * 0.94
-                height: info_rect.height
+                width: parent.width - 2 * background.baseMargins
+                height: parent.height - 2 * background.baseMargins
                 wrapMode: Text.WordWrap
                 fontSize: regularSize
                 text: items.dataset[items.count].text
@@ -180,38 +173,39 @@ ActivityBase {
         Image {
             id: img
             anchors.top: info_rect.bottom
-            anchors.topMargin: 10 * ApplicationInfo.ratio
-            anchors.horizontalCenter: parent.horizontalCenter
+            anchors.topMargin: background.baseMargins
+            anchors.horizontalCenter: layoutArea.horizontalCenter
             sourceSize.height: width
             sourceSize.width: width
             height: width
-            width: Math.min(parent.width * 0.7, (parent.height - (charList.height + info_rect.height + bar.height)) * 0.8)
+            width: Math.min(layoutArea.width - previous.width * 2 - 60 * ApplicationInfo.ratio,
+                            layoutArea.height - (info_rect.height + year_rect.height + 2 * background.baseMargins))
             source: items.dataset[items.count].img
             fillMode: Image.PreserveAspectFit
 
-            Rectangle {
-                id: year_rect
-                border.color: "black"
-                border.width: 1
-                color: "white"
-                width: year.width * 1.1
-                height: year.height * 1.1
-                anchors {
-                    bottom: img.bottom
-                    horizontalCenter: img.horizontalCenter
-                    bottomMargin: 5 * ApplicationInfo.ratio
-                }
-                GCText {
-                    id: year
-                    color: "black"
-                    fontSize: regularSize
-                    anchors.centerIn: year_rect
-                    text: items.dataset[items.count].year
-                }
-            }
             MouseArea {
                 anchors.fill: parent
                 onClicked: background.next()
+            }
+        }
+
+        Image {
+            id: previous
+            anchors.right: img.left
+            anchors.rightMargin: 20 * ApplicationInfo.ratio
+            anchors.verticalCenter: img.verticalCenter
+            source: "qrc:/gcompris/src/core/resource/bar_previous.svg"
+            height: 80 * ApplicationInfo.ratio
+            width: height * 0.5
+            sourceSize.height: height
+            fillMode: Image.PreserveAspectFit
+            Behavior on scale { PropertyAnimation { duration: 100} }
+            MouseArea {
+                anchors.fill: parent
+                hoverEnabled: true
+                onEntered: previous.scale = 1.1
+                onExited: previous.scale = 1
+                onClicked: background.previous()
             }
         }
 
@@ -221,7 +215,10 @@ ActivityBase {
             anchors.leftMargin: 20 * ApplicationInfo.ratio
             anchors.verticalCenter: img.verticalCenter
             source: "qrc:/gcompris/src/core/resource/bar_next.svg"
-            sourceSize.height: 80 * ApplicationInfo.ratio
+            height: 80 * ApplicationInfo.ratio
+            width: height * 0.5
+            sourceSize.height: height
+            fillMode: Image.PreserveAspectFit
             Behavior on scale { PropertyAnimation { duration: 100} }
 
             MouseArea {
@@ -230,6 +227,28 @@ ActivityBase {
                 onEntered: next.scale = 1.1
                 onExited: next.scale = 1
                 onClicked: background.next()
+            }
+        }
+
+        Rectangle {
+            id: year_rect
+            border.color: "#373737"
+            border.width: ApplicationInfo.ratio
+            radius: 5 * ApplicationInfo.ratio
+            color: "#F0F0F0"
+            width: year.width + 2 * background.baseMargins
+            height: year.height + background.baseMargins
+            anchors {
+                top: img.bottom
+                horizontalCenter: img.horizontalCenter
+                topMargin: background.baseMargins
+            }
+            GCText {
+                id: year
+                color: "#373737"
+                fontSize: regularSize
+                anchors.centerIn: year_rect
+                text: items.dataset[items.count].year
             }
         }
 
