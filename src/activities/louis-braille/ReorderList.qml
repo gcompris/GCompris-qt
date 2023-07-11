@@ -1,4 +1,4 @@
-/* GCompris - List.qml
+/* GCompris - ReorderList.qml
  *
  * SPDX-FileCopyrightText: 2014 Arkit Vora <arkitvora123@gmail.com>
  *
@@ -23,10 +23,10 @@ Rectangle {
     property color goodColor: colorMode ?  "#ffc1ffb4" : "#FFF"
     property color badColor: colorMode ?  "#FFF" : "#FFF"
     property bool colorMode: true
-    property Item bonus
     property int selectedIndex: -1
     property alias containerModel: list.model
     property int listPix: wholeBody.height /30
+    property bool bonusRunning: false
 
     signal up
     signal down
@@ -49,14 +49,16 @@ Rectangle {
     function checkWin() {
         var win = true
         // The shifted numbering comes from the header in the List
-        for(var i = 1; i < list.count + 1; i++) {
-            if(!list.contentItem.children[i] ||
-                list.contentItem.children[i].placed === false)
+        for(var i = 0; i < list.count; i++) {
+            if(list.contentItem.children[i].placed === false) {
                 win = false
+                return
+            }
         }
         if(win) {
-            list.currentIndex = -1
+            bonusRunning = true
             bonus.good("tux")
+            list.currentIndex = -1
         }
     }
 
@@ -76,7 +78,6 @@ Rectangle {
             width: list.width
             height: Math.max(textinfo.height * 1.3, 50 * ApplicationInfo.ratio)
 
-            property int sequence: model.sequence
             property bool placed: model.sequence === index
             property string text: model.text
 
@@ -140,17 +141,19 @@ Rectangle {
     ListView {
         id: list
         anchors {
-            fill: parent
-            bottomMargin: bar.height*1.5 + listScrollerB.height+20
-            leftMargin: 30 * ApplicationInfo.ratio
-            rightMargin: 30 * ApplicationInfo.ratio
-            topMargin: 10 * ApplicationInfo.ratio
+            top: parent.top
+            bottom: listScrollerB.top
+            left:parent.left
+            right: parent.right
+            margins: background.baseMargins
         }
-        width: parent.width * 0.7
         model: containerModel
         spacing: 5 * ApplicationInfo.ratio
         delegate: listElement
         interactive: true
+        // setting huge cacheBuffer is needed to make sure hidden children are not discarded...
+        cacheBuffer: 100000
+        clip: true
 
         header: Rectangle {
             width: parent.width
@@ -167,7 +170,11 @@ Rectangle {
                 font.pixelSize: listPix
             }
         }
-        onCurrentIndexChanged: timer.restart()
+        onCurrentIndexChanged: {
+            if(!wholeBody.bonusRunning) {
+                timer.restart();
+            }
+        }
         displaced: Transition {
             NumberAnimation { properties: "y"; duration: 500 }
         }
@@ -183,7 +190,7 @@ Rectangle {
         downVisible: list.atYEnd ? false : true
         anchors {
             bottom: parent.bottom
-            bottomMargin: bar.height +10
+            bottomMargin: bar.height * 1.2
             horizontalCenter: parent.horizontalCenter
         }
         isHorizontal: true
