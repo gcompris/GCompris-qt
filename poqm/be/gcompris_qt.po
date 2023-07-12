@@ -16761,7 +16761,7 @@ msgstr ""
 "Сістэма Брайля стала сусветна-прынятым стандартам. Луі Брайль даказаў, што, "
 "калі мець матывацыю, то можна дасягнуць неверагодных вынікаў."
 
-#: activities/louis-braille/ReorderList.qml:161
+#: activities/louis-braille/ReorderList.qml:163
 msgctxt "ReorderList|"
 msgid ""
 "Arrange the events in the order in which they happened. Select the line to "

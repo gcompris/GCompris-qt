@@ -18199,7 +18199,7 @@ msgstr ""
 "Louis Braille gur urrainn dhut rudan do-chreidsinneach a dhèanamh ma thogras "
 "tu."
 
-#: activities/louis-braille/ReorderList.qml:161
+#: activities/louis-braille/ReorderList.qml:163
 #, fuzzy
 #| msgctxt "ReorderList|"
 #| msgid ""

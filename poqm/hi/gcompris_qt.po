@@ -17675,7 +17675,7 @@ msgstr ""
 "ब्रेल एक विश्व व्यापी मानक के रूप में स्वीकार कर लिया गया। लुई ब्रेल ने साबित कर दिया है "
 "कि अगर आपके पास प्रेरणा के लिए कुछ होता है तो आप अविश्वसनीय काम कर सकते हैं।"
 
-#: activities/louis-braille/ReorderList.qml:161
+#: activities/louis-braille/ReorderList.qml:163
 #, fuzzy
 #| msgctxt "ReorderList|"
 #| msgid ""

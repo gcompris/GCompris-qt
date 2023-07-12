@@ -16364,7 +16364,7 @@ msgstr ""
 "Le Braille est accepté comme un standard mondial. Louis Braille a démontré "
 "qu'avec de la motivation, il est possible d'accomplir de grandes choses."
 
-#: activities/louis-braille/ReorderList.qml:161
+#: activities/louis-braille/ReorderList.qml:163
 msgctxt "ReorderList|"
 msgid ""
 "Arrange the events in the order in which they happened. Select the line to "

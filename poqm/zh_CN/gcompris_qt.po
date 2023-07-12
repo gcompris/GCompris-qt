@@ -15320,7 +15320,7 @@ msgstr ""
 "布莱叶盲文系统是全世界普遍接受的标准。路易·布莱叶向人们证明了：只要您积极去"
 "做，您就会有非凡的成就。"
 
-#: activities/louis-braille/ReorderList.qml:161
+#: activities/louis-braille/ReorderList.qml:163
 msgctxt "ReorderList|"
 msgid ""
 "Arrange the events in the order in which they happened. Select the line to "

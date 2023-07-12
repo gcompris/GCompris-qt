@@ -16989,7 +16989,7 @@ msgstr ""
 "isteach is féidir rudaí iontacha a dhéanamh agus is sampla maith é Louis "
 "Braille de seo."
 
-#: activities/louis-braille/ReorderList.qml:161
+#: activities/louis-braille/ReorderList.qml:163
 msgctxt "ReorderList|"
 msgid ""
 "Arrange the events in the order in which they happened. Select the line to "

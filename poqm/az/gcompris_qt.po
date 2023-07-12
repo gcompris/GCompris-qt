@@ -16047,7 +16047,7 @@ msgstr ""
 "məqsəd qarşıya qoyduğunda ona çata bilmək üçün inanılmaz işlərin öhdəsindən "
 "gələ biləcəyini sübut etdi."
 
-#: activities/louis-braille/ReorderList.qml:161
+#: activities/louis-braille/ReorderList.qml:163
 msgctxt "ReorderList|"
 msgid ""
 "Arrange the events in the order in which they happened. Select the line to "

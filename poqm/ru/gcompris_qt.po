@@ -16109,7 +16109,7 @@ msgstr ""
 "Таблица Брайля принята в качестве международного стандарта. Луи Брайль "
 "доказал, что высокая мотивация позволяет добиваться потрясающих результатов."
 
-#: activities/louis-braille/ReorderList.qml:161
+#: activities/louis-braille/ReorderList.qml:163
 msgctxt "ReorderList|"
 msgid ""
 "Arrange the events in the order in which they happened. Select the line to "

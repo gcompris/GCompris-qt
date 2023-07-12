@@ -17457,7 +17457,7 @@ msgstr ""
 "O braille aceptouse como estándar internacional. Louis Braille demostrou "
 "que, coa motivación axeitada, podes facer cousas incríbeis."
 
-#: activities/louis-braille/ReorderList.qml:161
+#: activities/louis-braille/ReorderList.qml:163
 #, fuzzy
 #| msgctxt "ReorderList|"
 #| msgid ""

@@ -16059,7 +16059,7 @@ msgstr ""
 "Braille got accepted as a world wide standard. Louis Braille proved that if "
 "you have motivation you can do incredible things."
 
-#: activities/louis-braille/ReorderList.qml:161
+#: activities/louis-braille/ReorderList.qml:163
 msgctxt "ReorderList|"
 msgid ""
 "Arrange the events in the order in which they happened. Select the line to "

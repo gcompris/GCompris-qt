@@ -15980,7 +15980,7 @@ msgstr ""
 "Braille'i kiri sai ülemaailmse tunnustuse. Louis Braille tõestas, et kui sul "
 "on kindel tahe, võid teha uskumatuid asju."
 
-#: activities/louis-braille/ReorderList.qml:161
+#: activities/louis-braille/ReorderList.qml:163
 msgctxt "ReorderList|"
 msgid ""
 "Arrange the events in the order in which they happened. Select the line to "

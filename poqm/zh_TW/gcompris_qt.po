@@ -15441,7 +15441,7 @@ msgstr ""
 "布拉耶系統被接受成為全世界的標準。Louis Braille 證明了只要您願意，不管您的情"
 "況如何，都能做了不起的事。"
 
-#: activities/louis-braille/ReorderList.qml:161
+#: activities/louis-braille/ReorderList.qml:163
 msgctxt "ReorderList|"
 msgid ""
 "Arrange the events in the order in which they happened. Select the line to "

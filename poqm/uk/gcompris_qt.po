@@ -16174,7 +16174,7 @@ msgstr ""
 "Абетка Брайля стала загальноприйнятим світовим стандартом. Луї Брайль довів, "
 "що якщо чогось дуже хотіти, можна досягти надзвичайних успіхів."
 
-#: activities/louis-braille/ReorderList.qml:161
+#: activities/louis-braille/ReorderList.qml:163
 msgctxt "ReorderList|"
 msgid ""
 "Arrange the events in the order in which they happened. Select the line to "

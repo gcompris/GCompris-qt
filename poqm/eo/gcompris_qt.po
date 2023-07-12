@@ -16089,7 +16089,7 @@ msgstr ""
 "Brajlo estis akceptita kiel tutmonda normo. Louis Braille pruvis, ke se vi "
 "havas motivadon, vi povas fari nekredeblajn aferojn."
 
-#: activities/louis-braille/ReorderList.qml:161
+#: activities/louis-braille/ReorderList.qml:163
 msgctxt "ReorderList|"
 msgid ""
 "Arrange the events in the order in which they happened. Select the line to "

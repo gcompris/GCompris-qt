@@ -16369,7 +16369,7 @@ msgstr ""
 "Braillovo písmo sa stalo akceptovaným ako celosvetový štandard. Louis "
 "Braille sa dokázal, že ak máte motiváciu, môžete robiť neuveriteľné veci."
 
-#: activities/louis-braille/ReorderList.qml:161
+#: activities/louis-braille/ReorderList.qml:163
 #, fuzzy
 #| msgctxt "ReorderList|"
 #| msgid ""

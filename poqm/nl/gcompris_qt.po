@@ -16168,7 +16168,7 @@ msgstr ""
 "Braille werd geaccepteerd als wereldstandaard. Louis Braille bewees dat je "
 "ongelofelijke dingen kan doen als je gemotiveerd bent."
 
-#: activities/louis-braille/ReorderList.qml:161
+#: activities/louis-braille/ReorderList.qml:163
 msgctxt "ReorderList|"
 msgid ""
 "Arrange the events in the order in which they happened. Select the line to "

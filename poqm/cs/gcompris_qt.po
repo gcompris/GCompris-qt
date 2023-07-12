@@ -15644,7 +15644,7 @@ msgstr ""
 "Braillovo písmo se stalo celosvětovým standardem. Louis Braille dokázal, že "
 "když má člověk motivaci, dokáže neuvěřitelné věci."
 
-#: activities/louis-braille/ReorderList.qml:161
+#: activities/louis-braille/ReorderList.qml:163
 msgctxt "ReorderList|"
 msgid ""
 "Arrange the events in the order in which they happened. Select the line to "

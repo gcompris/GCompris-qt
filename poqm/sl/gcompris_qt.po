@@ -16021,7 +16021,7 @@ msgstr ""
 "Brajica je postala svetovni standard, Louis Braille pa je potrdil, da lahko "
 "z motivacijo dosežeš neverjetne stvari."
 
-#: activities/louis-braille/ReorderList.qml:161
+#: activities/louis-braille/ReorderList.qml:163
 msgctxt "ReorderList|"
 msgid ""
 "Arrange the events in the order in which they happened. Select the line to "

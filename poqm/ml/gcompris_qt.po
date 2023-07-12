@@ -15880,7 +15880,7 @@ msgstr ""
 "ബ്രായി ലോകമെമ്പാടും അംഗീകരിക്കപ്പെട്ടു. പ്രചോദനം ഉണ്ടെങ്കിൽ അവിശ്വസനീയമായ കാര്യങ്ങൾ "
 "ചെയ്യാമെന്ന് ലൂയി ബ്രായി തെളിയിച്ചു."
 
-#: activities/louis-braille/ReorderList.qml:161
+#: activities/louis-braille/ReorderList.qml:163
 msgctxt "ReorderList|"
 msgid ""
 "Arrange the events in the order in which they happened. Select the line to "

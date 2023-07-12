@@ -16514,7 +16514,7 @@ msgstr ""
 "El braille va ser acceptat com un estàndard mundial. En Louis Braille va "
 "demostrar que si es té la motivació, es poden fer coses increïbles."
 
-#: activities/louis-braille/ReorderList.qml:161
+#: activities/louis-braille/ReorderList.qml:163
 msgctxt "ReorderList|"
 msgid ""
 "Arrange the events in the order in which they happened. Select the line to "
