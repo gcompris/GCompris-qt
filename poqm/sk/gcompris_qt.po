@@ -2993,7 +2993,8 @@ msgid ""
 "of only one cell directly provide the number to enter."
 msgstr ""
 
-#: activities/calcudoku/resource/1/Data.qml:65
+#. + is the unicode character for addition mathematical operator (+)
+#: activities/calcudoku/resource/1/Data.qml:66
 #, fuzzy
 #| msgctxt "Data|"
 #| msgid "Small grids."
@@ -3001,25 +3002,41 @@ msgctxt "Data|"
 msgid "Small grids with + operator."
 msgstr "Malé mriežky"
 
-#: activities/calcudoku/resource/2/Data.qml:13
+#. + is the unicode character for addition mathematical operator (+), − for subtraction (-)
+#: activities/calcudoku/resource/2/Data.qml:14
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Small grids."
 msgctxt "Data|"
-msgid "Small grids with + and - operators."
-msgstr ""
+msgid "Small grids with + and − operators."
+msgstr "Malé mriežky"
 
-#: activities/calcudoku/resource/3/Data.qml:13
+#. + is the unicode character for addition mathematical operator (+), − for subtraction (-), × for multiplication (*)
+#: activities/calcudoku/resource/3/Data.qml:14
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Small grids."
 msgctxt "Data|"
-msgid "Small grids with +, - and * operators."
-msgstr ""
+msgid "Small grids with +, − and × operators."
+msgstr "Malé mriežky"
 
-#: activities/calcudoku/resource/4/Data.qml:13
+#. + is the unicode character for addition mathematical operator (+), − for subtraction (-), × for multiplication (*)
+#: activities/calcudoku/resource/4/Data.qml:14
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Small grids."
 msgctxt "Data|"
-msgid "Medium grids with +, - and * operators."
-msgstr ""
+msgid "Medium grids with +, − and × operators."
+msgstr "Malé mriežky"
 
-#: activities/calcudoku/resource/5/Data.qml:13
+#. + is the unicode character for addition mathematical operator (+), − for subtraction (-), × for multiplication (*), ∕ for division (:)
+#: activities/calcudoku/resource/5/Data.qml:14
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Small grids."
 msgctxt "Data|"
-msgid "Large grids with +, -, * and : operators."
-msgstr ""
+msgid "Large grids with +, −, × and ∕ operators."
+msgstr "Malé mriežky"
 
 #. Activity title
 #: activities/calendar/ActivityInfo.qml:15
@@ -16444,7 +16461,7 @@ msgstr ""
 "Braillovo písmo sa stalo akceptovaným ako celosvetový štandard. Louis "
 "Braille sa dokázal, že ak máte motiváciu, môžete robiť neuveriteľné veci."
 
-#: activities/louis-braille/ReorderList.qml:161
+#: activities/louis-braille/ReorderList.qml:163
 #, fuzzy
 #| msgctxt "ReorderList|"
 #| msgid ""

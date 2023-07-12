@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2023-06-22 09:59+0200\n"
+"PO-Revision-Date: 2023-07-11 14:29+0200\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Language: nl\n"
 "X-Qt-Contexts: true\n"
-"X-Generator: Lokalize 23.04.2\n"
+"X-Generator: Lokalize 23.04.3\n"
 
 #. Activity title
 #: activities/advanced_colors/ActivityInfo.qml:15
@@ -3002,13 +3002,13 @@ msgstr ""
 #: activities/calcudoku/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Calcudoku"
-msgstr ""
+msgstr "Calcudoku"
 
 #. Help title
 #: activities/calcudoku/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Solve the Calcudoku."
-msgstr ""
+msgstr "De Calcudoku oplossen."
 
 #. Help goal
 #: activities/calcudoku/ActivityInfo.qml:19
@@ -3017,15 +3017,14 @@ msgid ""
 "Develop your logical reasoning skills: data linking, deduction and spatial "
 "location while using calculation."
 msgstr ""
+"Ontwikkel uw vaardigheid logisch denken: gegevens koppelen, deductie en "
+"ruimtelijke locatie met gebruik van rekenen."
 
 #. Help prerequisite
 #: activities/calcudoku/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Completing the puzzle requires patience and logical ability."
 msgctxt "ActivityInfo|"
 msgid "Completing the puzzle requires patience and arithmetic abilities."
-msgstr "Het oplossen van de puzzel vereist geduld en logisch nadenken."
+msgstr "Het oplossen van de puzzel vereist geduld en kunnen rekenen."
 
 #. Help manual
 #: activities/calcudoku/ActivityInfo.qml:23
@@ -3038,34 +3037,55 @@ msgid ""
 "cage, when combined using the operator, must produce the result. Cages made "
 "of only one cell directly provide the number to enter."
 msgstr ""
+"Selecteer een getal uit de lijst en klik op zijn doelpositie om het raster "
+"te vullen. Elk getal mag maar één keer in een rij of kolom verschijnen. "
+"Kooien zijn groepen cellen die informatie leveren over he ze te vullen them. "
+"Kooien gemaakt uit meer dan een cel leveren een resultaat en een operator: "
+"alle getallen in de kooi, gecombineerd met de operator, moet het resultaat "
+"produceren. Kooien bestaande uit slechts één cel leveren direct het in te "
+"voeren getal."
 
-#: activities/calcudoku/resource/1/Data.qml:65
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Small grids."
+#. + is the unicode character for addition mathematical operator (+)
+#: activities/calcudoku/resource/1/Data.qml:66
 msgctxt "Data|"
 msgid "Small grids with + operator."
-msgstr "Kleine rasters."
+msgstr "Kleine rasters met + operator."
 
-#: activities/calcudoku/resource/2/Data.qml:13
+#. + is the unicode character for addition mathematical operator (+), − for subtraction (-)
+#: activities/calcudoku/resource/2/Data.qml:14
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Small grids with + and - operators."
 msgctxt "Data|"
-msgid "Small grids with + and - operators."
-msgstr ""
+msgid "Small grids with + and − operators."
+msgstr "Kleine rasters met + en - operator."
 
-#: activities/calcudoku/resource/3/Data.qml:13
+#. + is the unicode character for addition mathematical operator (+), − for subtraction (-), × for multiplication (*)
+#: activities/calcudoku/resource/3/Data.qml:14
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Small grids with +, - and * operators."
 msgctxt "Data|"
-msgid "Small grids with +, - and * operators."
-msgstr ""
+msgid "Small grids with +, − and × operators."
+msgstr "Kleine rasters met +, - en * operator."
 
-#: activities/calcudoku/resource/4/Data.qml:13
+#. + is the unicode character for addition mathematical operator (+), − for subtraction (-), × for multiplication (*)
+#: activities/calcudoku/resource/4/Data.qml:14
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Medium grids with +, - and * operators."
 msgctxt "Data|"
-msgid "Medium grids with +, - and * operators."
-msgstr ""
+msgid "Medium grids with +, − and × operators."
+msgstr "Middel rasters met +, - en * operators."
 
-#: activities/calcudoku/resource/5/Data.qml:13
+#. + is the unicode character for addition mathematical operator (+), − for subtraction (-), × for multiplication (*), ∕ for division (:)
+#: activities/calcudoku/resource/5/Data.qml:14
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Large grids with +, -, * and : operators."
 msgctxt "Data|"
-msgid "Large grids with +, -, * and : operators."
-msgstr ""
+msgid "Large grids with +, −, × and ∕ operators."
+msgstr "Grote rasters met +, - en * operator."
 
 #. Activity title
 #: activities/calendar/ActivityInfo.qml:15
@@ -16235,7 +16255,7 @@ msgstr ""
 "Braille werd geaccepteerd als wereldstandaard. Louis Braille bewees dat je "
 "ongelofelijke dingen kan doen als je gemotiveerd bent."
 
-#: activities/louis-braille/ReorderList.qml:161
+#: activities/louis-braille/ReorderList.qml:163
 msgctxt "ReorderList|"
 msgid ""
 "Arrange the events in the order in which they happened. Select the line to "

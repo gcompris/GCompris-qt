@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2023-07-05 13:43+0300\n"
+"PO-Revision-Date: 2023-07-11 11:19+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -2969,13 +2969,13 @@ msgstr ""
 #: activities/calcudoku/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Calcudoku"
-msgstr ""
+msgstr "Hesapdoku"
 
 #. Help title
 #: activities/calcudoku/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Solve the Calcudoku."
-msgstr ""
+msgstr "Hesapdoku'yu çöz."
 
 #. Help goal
 #: activities/calcudoku/ActivityInfo.qml:19
@@ -2984,15 +2984,14 @@ msgid ""
 "Develop your logical reasoning skills: data linking, deduction and spatial "
 "location while using calculation."
 msgstr ""
+"Mantıksal akıl yürütme becerilerini geliştir: Hesaplama yaparken veri "
+"bağlamak, tümdengelmek ve uzamsal konum bulmak."
 
 #. Help prerequisite
 #: activities/calcudoku/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Completing the puzzle requires patience and logical ability."
 msgctxt "ActivityInfo|"
 msgid "Completing the puzzle requires patience and arithmetic abilities."
-msgstr "Bulmacayı tamamlamak sabır ve mantıksal beceri gerektirir."
+msgstr "Bulmacayı tamamlamak sabır ve aritmetik beceriler gerektirir."
 
 #. Help manual
 #: activities/calcudoku/ActivityInfo.qml:23
@@ -3005,34 +3004,54 @@ msgid ""
 "cage, when combined using the operator, must produce the result. Cages made "
 "of only one cell directly provide the number to enter."
 msgstr ""
+"Listeden bir sayı seç ve ızgarayı doldurmak için hedef konuma tıkla. Her "
+"sayı bir satırda ve bir sütunda yalnızca bir kez yer almalıdır. Kafesler, "
+"nasıl doldurulacakları hakkında bilgi sağlayan hücre gruplarıdır. Birden "
+"fazla hücreden oluşan kafesler bir sonuç ve bir işleç sağlar: Kafesteki tüm "
+"sayılar, işleç kullanılarak birleştirildiğinde sonucu üretmelidir. Tek bir "
+"hücreden oluşan kafesler doğrudan girilecek sayıyı sağlar."
 
-#: activities/calcudoku/resource/1/Data.qml:65
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Small grids."
+#. + is the unicode character for addition mathematical operator (+)
+#: activities/calcudoku/resource/1/Data.qml:66
 msgctxt "Data|"
 msgid "Small grids with + operator."
-msgstr "Küçük ızgaralar."
+msgstr "+ işleciyle küçük ızgaralar."
 
-#: activities/calcudoku/resource/2/Data.qml:13
+#. + is the unicode character for addition mathematical operator (+), − for subtraction (-)
+#: activities/calcudoku/resource/2/Data.qml:14
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Small grids with + and - operators."
 msgctxt "Data|"
-msgid "Small grids with + and - operators."
-msgstr ""
+msgid "Small grids with + and − operators."
+msgstr "+ ve - işleçleriyle küçük ızgaralar."
 
-#: activities/calcudoku/resource/3/Data.qml:13
+#. + is the unicode character for addition mathematical operator (+), − for subtraction (-), × for multiplication (*)
+#: activities/calcudoku/resource/3/Data.qml:14
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Small grids with +, - and * operators."
 msgctxt "Data|"
-msgid "Small grids with +, - and * operators."
-msgstr ""
+msgid "Small grids with +, − and × operators."
+msgstr "+, - ve * işleçleriyle küçük ızgaralar."
 
-#: activities/calcudoku/resource/4/Data.qml:13
+#. + is the unicode character for addition mathematical operator (+), − for subtraction (-), × for multiplication (*)
+#: activities/calcudoku/resource/4/Data.qml:14
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Medium grids with +, - and * operators."
 msgctxt "Data|"
-msgid "Medium grids with +, - and * operators."
-msgstr ""
+msgid "Medium grids with +, − and × operators."
+msgstr "+, - ve * işleçleriyle orta boy ızgaralar."
 
-#: activities/calcudoku/resource/5/Data.qml:13
+#. + is the unicode character for addition mathematical operator (+), − for subtraction (-), × for multiplication (*), ∕ for division (:)
+#: activities/calcudoku/resource/5/Data.qml:14
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Large grids with +, -, * and : operators."
 msgctxt "Data|"
-msgid "Large grids with +, -, * and : operators."
-msgstr ""
+msgid "Large grids with +, −, × and ∕ operators."
+msgstr "+, -, * ve : işleçleriyle büyük ızgaralar."
 
 #. Activity title
 #: activities/calendar/ActivityInfo.qml:15
@@ -16084,7 +16103,7 @@ msgstr ""
 "Braille, dünya çapında bir standart olarak kabul edildi. Louis Braille, bir "
 "motivasyonun olursa inanılmaz şeyler yapılabileceğini kanıtladı."
 
-#: activities/louis-braille/ReorderList.qml:161
+#: activities/louis-braille/ReorderList.qml:163
 msgctxt "ReorderList|"
 msgid ""
 "Arrange the events in the order in which they happened. Select the line to "
@@ -25460,13 +25479,15 @@ msgid ""
 "system to register your wish. Make sure you use the severity called "
 "\"Wishlist\"."
 msgstr ""
-"Yazılım daima daha da geliştirilebilir ve KDE ekibi bunu yapmaya hazırdır. "
-"Siz kullanıcılar, bir şeyler beklediğiniz gibi çalışmadığında veya daha iyi "
-"olabileceğini düşündüğünüzde bize bildirebilirsiniz.<br /><br />KDE Masaüstü "
-"Ortamının bir hata izleme sistemi vardır. Hataları bildirmek için <a href="
-"\"%1\">%1</a> adresini ziyaret edin.<br /><br />Bir iyileştirme önerisinde "
-"bulunmak için de hata izleme sistemini kullanabilirsiniz. \"Wishlist\" "
-"önceliğini seçtiğinizden emin olun."
+"Bir yazılım, doğası gereği her zaman iyileştirmeye açıktır ve KDE takımının "
+"tek amacı budur. Kullanıcılar olarak, bir şeyler beklediğiniz gibi "
+"çalışmadığında veya kimi şeylerin daha iyi olabileceğini düşündüğünüzde "
+"lütfen bize bunları bildirin.<br /><br />KDE Masaüstü Ortamı'nın bir hata "
+"izleme sistemi vardır. Hataları bildirmek için <a href=\"%1\">%1</a> "
+"adresini veya uygulamaların \"Yardım\" menüsünde bulunan \"Hata Bildir...\" "
+"ögesini kullanın.<br /><br />Bir iyileştirme önerisinde bulunmak için de "
+"hata izleme sistemini kullanabilirsiniz. \"Wishlist\" önceliğini "
+"seçtiğinizden emin olun."
 
 #: core/DialogAbout.qml:105
 #, qt-format

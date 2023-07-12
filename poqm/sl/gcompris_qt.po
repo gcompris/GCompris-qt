@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2023-06-22 07:47+0200\n"
+"PO-Revision-Date: 2023-07-11 07:35+0200\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
@@ -15,7 +15,7 @@ msgstr ""
 "%100<=4 ? 2 : 3);\n"
 "X-Language: sl\n"
 "X-Qt-Contexts: true\n"
-"X-Generator: Poedit 3.3.1\n"
+"X-Generator: Poedit 3.3.2\n"
 
 #. Activity title
 #: activities/advanced_colors/ActivityInfo.qml:15
@@ -2957,13 +2957,13 @@ msgstr ""
 #: activities/calcudoku/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Calcudoku"
-msgstr ""
+msgstr "Calcudoku"
 
 #. Help title
 #: activities/calcudoku/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Solve the Calcudoku."
-msgstr ""
+msgstr "Reši Calcudoku"
 
 #. Help goal
 #: activities/calcudoku/ActivityInfo.qml:19
@@ -2972,16 +2972,16 @@ msgid ""
 "Develop your logical reasoning skills: data linking, deduction and spatial "
 "location while using calculation."
 msgstr ""
+"Razvijte svoje sposobnosti logičnega sklepanja: povezovanje podatkov, "
+"sklepanje in prostorsko lokacijo ob uporabi računanja."
 
 #. Help prerequisite
 #: activities/calcudoku/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Completing the puzzle requires patience and logical ability."
 msgctxt "ActivityInfo|"
 msgid "Completing the puzzle requires patience and arithmetic abilities."
 msgstr ""
-"Dokončanje igre zahteva potrpežljivost in sposobnost logičnega razmisleka."
+"Dokončanje igre zahteva potrpežljivost in sposobnost aritmetičnega "
+"razmisleka."
 
 #. Help manual
 #: activities/calcudoku/ActivityInfo.qml:23
@@ -2994,34 +2994,55 @@ msgid ""
 "cage, when combined using the operator, must produce the result. Cages made "
 "of only one cell directly provide the number to enter."
 msgstr ""
+"Izberite številko na seznamu in kliknite njen ciljni položaj, da zapolnite "
+"mrežo. Vsaka številka se mora pojaviti samo enkrat v vrstici in stolpcu. "
+"Kletke so skupine celic, ki zagotavljajo informacije o tem, kako jih "
+"napolniti. Kletke, sestavljene iz več kot ene celice, zagotavljajo rezultat "
+"in operatorja: vse številke v kletki, ko se združijo z uporabo operatorja, "
+"morajo dati rezultat. Kletke, narejene samo iz ene celice, neposredno "
+"zagotavljajo številko za vnos."
 
-#: activities/calcudoku/resource/1/Data.qml:65
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Small grids."
+#. + is the unicode character for addition mathematical operator (+)
+#: activities/calcudoku/resource/1/Data.qml:66
 msgctxt "Data|"
 msgid "Small grids with + operator."
-msgstr "Drobne mreže."
+msgstr "Drobne mreže z operatorjem +."
 
-#: activities/calcudoku/resource/2/Data.qml:13
+#. + is the unicode character for addition mathematical operator (+), − for subtraction (-)
+#: activities/calcudoku/resource/2/Data.qml:14
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Small grids with + and - operators."
 msgctxt "Data|"
-msgid "Small grids with + and - operators."
-msgstr ""
+msgid "Small grids with + and − operators."
+msgstr "Drobne mreže z operatorjema + in -."
 
-#: activities/calcudoku/resource/3/Data.qml:13
+#. + is the unicode character for addition mathematical operator (+), − for subtraction (-), × for multiplication (*)
+#: activities/calcudoku/resource/3/Data.qml:14
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Small grids with +, - and * operators."
 msgctxt "Data|"
-msgid "Small grids with +, - and * operators."
-msgstr ""
+msgid "Small grids with +, − and × operators."
+msgstr "Drobne mreže z operatorji +, - in *."
 
-#: activities/calcudoku/resource/4/Data.qml:13
+#. + is the unicode character for addition mathematical operator (+), − for subtraction (-), × for multiplication (*)
+#: activities/calcudoku/resource/4/Data.qml:14
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Medium grids with +, - and * operators."
 msgctxt "Data|"
-msgid "Medium grids with +, - and * operators."
-msgstr ""
+msgid "Medium grids with +, − and × operators."
+msgstr "Srednje mreže z operatorji +, - in *."
 
-#: activities/calcudoku/resource/5/Data.qml:13
+#. + is the unicode character for addition mathematical operator (+), − for subtraction (-), × for multiplication (*), ∕ for division (:)
+#: activities/calcudoku/resource/5/Data.qml:14
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Large grids with +, -, * and : operators."
 msgctxt "Data|"
-msgid "Large grids with +, -, * and : operators."
-msgstr ""
+msgid "Large grids with +, −, × and ∕ operators."
+msgstr "Velike mreže z operatorji +, - in *."
 
 #. Activity title
 #: activities/calendar/ActivityInfo.qml:15
@@ -16089,7 +16110,7 @@ msgstr ""
 "Brajica je postala svetovni standard, Louis Braille pa je potrdil, da lahko "
 "z motivacijo dosežeš neverjetne stvari."
 
-#: activities/louis-braille/ReorderList.qml:161
+#: activities/louis-braille/ReorderList.qml:163
 msgctxt "ReorderList|"
 msgid ""
 "Arrange the events in the order in which they happened. Select the line to "

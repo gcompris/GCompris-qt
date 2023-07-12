@@ -11,7 +11,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=gcompris&keywords=I18N+L10N&component=general\n"
 "POT-Creation-Date: 2014-11-09 17:30+0000\n"
-"PO-Revision-Date: 2023-06-22 09:08+0300\n"
+"PO-Revision-Date: 2023-07-11 08:45+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
 "Language: uk\n"
@@ -3020,13 +3020,13 @@ msgstr ""
 #: activities/calcudoku/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Calcudoku"
-msgstr ""
+msgstr "Калькудоку"
 
 #. Help title
 #: activities/calcudoku/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Solve the Calcudoku."
-msgstr ""
+msgstr "Розв'яжіть калькудоку."
 
 #. Help goal
 #: activities/calcudoku/ActivityInfo.qml:19
@@ -3035,15 +3035,15 @@ msgid ""
 "Develop your logical reasoning skills: data linking, deduction and spatial "
 "location while using calculation."
 msgstr ""
+"Розвиньте ваші навички логічного міркування: скористайтеся для обчислень "
+"формуванням зв'язку між даними, визначенням логічних наслідків та роботою із "
+"просторовим розташуванням."
 
 #. Help prerequisite
 #: activities/calcudoku/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Completing the puzzle requires patience and logical ability."
 msgctxt "ActivityInfo|"
 msgid "Completing the puzzle requires patience and arithmetic abilities."
-msgstr "Для розгадування загадки потрібне терпіння і логіка."
+msgstr "Для розгадування загадки потрібне терпіння і здібності до арифметики."
 
 #. Help manual
 #: activities/calcudoku/ActivityInfo.qml:23
@@ -3056,34 +3056,55 @@ msgid ""
 "cage, when combined using the operator, must produce the result. Cages made "
 "of only one cell directly provide the number to enter."
 msgstr ""
+"Виберіть число у списку і натисніть його позицію, щоб заповнити комірку "
+"таблиці. У кожному рядку і стовпчику таблиці має бути лише одне таке число. "
+"Блоки є групами комірок, які надають дані щодо того, як слід заповнювати "
+"комірки. У блоці, де є декілька комірок, вказано результат і оператор: усі "
+"числа у блоці, якщо їх поєднати за допомогою цього оператора мають давати "
+"вказаний результат. У блоках, які складаються з однієї комірки, міститься "
+"лише число, яке слід ввести."
 
-#: activities/calcudoku/resource/1/Data.qml:65
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Small grids."
+#. + is the unicode character for addition mathematical operator (+)
+#: activities/calcudoku/resource/1/Data.qml:66
 msgctxt "Data|"
 msgid "Small grids with + operator."
-msgstr "Маленькі ґратки."
+msgstr "Малі таблиці з оператором «+»."
 
-#: activities/calcudoku/resource/2/Data.qml:13
+#. + is the unicode character for addition mathematical operator (+), − for subtraction (-)
+#: activities/calcudoku/resource/2/Data.qml:14
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Small grids with + and - operators."
 msgctxt "Data|"
-msgid "Small grids with + and - operators."
-msgstr ""
+msgid "Small grids with + and − operators."
+msgstr "Малі таблиці з операторами «+» і «–»."
 
-#: activities/calcudoku/resource/3/Data.qml:13
+#. + is the unicode character for addition mathematical operator (+), − for subtraction (-), × for multiplication (*)
+#: activities/calcudoku/resource/3/Data.qml:14
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Small grids with +, - and * operators."
 msgctxt "Data|"
-msgid "Small grids with +, - and * operators."
-msgstr ""
+msgid "Small grids with +, − and × operators."
+msgstr "Малі таблиці з операторами «+», «–» та «*»."
 
-#: activities/calcudoku/resource/4/Data.qml:13
+#. + is the unicode character for addition mathematical operator (+), − for subtraction (-), × for multiplication (*)
+#: activities/calcudoku/resource/4/Data.qml:14
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Medium grids with +, - and * operators."
 msgctxt "Data|"
-msgid "Medium grids with +, - and * operators."
-msgstr ""
+msgid "Medium grids with +, − and × operators."
+msgstr "Середні таблиці з операторами «+», «–» та «*»."
 
-#: activities/calcudoku/resource/5/Data.qml:13
+#. + is the unicode character for addition mathematical operator (+), − for subtraction (-), × for multiplication (*), ∕ for division (:)
+#: activities/calcudoku/resource/5/Data.qml:14
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Large grids with +, -, * and : operators."
 msgctxt "Data|"
-msgid "Large grids with +, -, * and : operators."
-msgstr ""
+msgid "Large grids with +, −, × and ∕ operators."
+msgstr "Великі таблиці з операторами «+», «–», «*» та «:»."
 
 #. Activity title
 #: activities/calendar/ActivityInfo.qml:15
@@ -16241,7 +16262,7 @@ msgstr ""
 "Абетка Брайля стала загальноприйнятим світовим стандартом. Луї Брайль довів, "
 "що якщо чогось дуже хотіти, можна досягти надзвичайних успіхів."
 
-#: activities/louis-braille/ReorderList.qml:161
+#: activities/louis-braille/ReorderList.qml:163
 msgctxt "ReorderList|"
 msgid ""
 "Arrange the events in the order in which they happened. Select the line to "

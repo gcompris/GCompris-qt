@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-07-11 00:41+0000\n"
-"PO-Revision-Date: 2023-01-08 10:05+0100\n"
+"PO-Revision-Date: 2023-07-11 07:31+0200\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n"
 "%100==4 ? 3 : 0);\n"
-"X-Generator: Poedit 3.2.2\n"
+"X-Generator: Poedit 3.3.2\n"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "advanced_colors"
 #: activities/advanced_colors/ActivityInfo.qml:18
@@ -196,18 +196,15 @@ msgstr "Ustvarite celico brajice za črko."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "calcudoku"
 #: activities/calcudoku/ActivityInfo.qml:17
-#, fuzzy, kde-format
-#| msgid ""
-#| "Select a number or a symbol and click its target area. Each symbol must "
-#| "appear only once in a row, in a column and in a subregion if any."
+#, kde-format
 msgid ""
 "Select a number and click on its target position. Each number must appear "
 "only once in a row and in a column. The numbers in the cells of a cage must "
 "produce the given result when combined using the given operator."
 msgstr ""
-"Izberite številko ali simbol in kliknite na njegovo ciljno območje. Vsak "
-"simbol se sme pojaviti samo enkrat v vrsti, v stolpcu in v podregiji, če "
-"obstaja."
+"Izberite številko in kliknite njen ciljni položaj. Vsaka številka se mora "
+"pojaviti samo enkrat v vrstici in stolpcu. Številke v celicah kletke morajo "
+"dati dani rezultat, če jih kombiniramo z danim operatorjem."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "calendar"
 #: activities/calendar/ActivityInfo.qml:18
