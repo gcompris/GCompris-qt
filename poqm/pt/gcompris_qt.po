@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: kstars\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2015-05-27 08:46+0000\n"
-"PO-Revision-Date: 2023-06-24 01:38+0100\n"
+"PO-Revision-Date: 2023-07-13 00:36+0100\n"
 "Last-Translator: Pedro Morais <morais@kde.org>\n"
 "Language-Team: pt <kde-i18n-pt@kde.org>\n"
 "Language: pt\n"
@@ -755,7 +755,7 @@ msgstr ""
 "X-POFile-SpellExtra: Silesian Warmian Masurian Silesiano Opole Masovian\n"
 "X-POFile-SpellExtra: ódź Lubusz Lublin Kuyavian Dobruja Bukovina Oware\n"
 "X-POFile-SpellExtra: Nynorsk renewableenergy watercycle mú quá bé\n"
-"X-POFile-SpellExtra: difficulty\n"
+"X-POFile-SpellExtra: difficulty Calcudoku\n"
 
 #. Activity title
 #: activities/advanced_colors/ActivityInfo.qml:15
@@ -3744,13 +3744,13 @@ msgstr ""
 #: activities/calcudoku/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Calcudoku"
-msgstr ""
+msgstr "Calcudoku"
 
 #. Help title
 #: activities/calcudoku/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Solve the Calcudoku."
-msgstr ""
+msgstr "Resolva o Calcudoku."
 
 #. Help goal
 #: activities/calcudoku/ActivityInfo.qml:19
@@ -3759,15 +3759,14 @@ msgid ""
 "Develop your logical reasoning skills: data linking, deduction and spatial "
 "location while using calculation."
 msgstr ""
+"Desenvolva as suas capacidades de raciocínio lógico: associação de dados, "
+"dedução e localização especial, usando ao mesmo tempo o cálculo."
 
 #. Help prerequisite
 #: activities/calcudoku/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Completing the puzzle requires patience and logical ability."
 msgctxt "ActivityInfo|"
 msgid "Completing the puzzle requires patience and arithmetic abilities."
-msgstr "Completar o 'puzzle' exige paciência e habilidade lógica."
+msgstr "Completar o 'puzzle' exige paciência e habilidade com aritmética."
 
 #. Help manual
 #: activities/calcudoku/ActivityInfo.qml:23
@@ -3780,51 +3779,43 @@ msgid ""
 "cage, when combined using the operator, must produce the result. Cages made "
 "of only one cell directly provide the number to enter."
 msgstr ""
+"Seleccione um número na lista e carregue na sua posição de destino para "
+"preencher a grelha. Cada número só deverá aparecer uma vez numa linha e numa "
+"coluna. As secções são grupos de células que dão informações sobre como "
+"preenchê-las. As secções com mais que uma célula fornecem um resultado e um "
+"operador: todos os número na secção, quando forem combinados com o operador, "
+"deverão produzir esse resultado. As secções com apenas uma célula fornecem "
+"directamente o número a introduzir."
 
 #. + is the unicode character for addition mathematical operator (+)
 #: activities/calcudoku/resource/1/Data.qml:66
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Small grids."
 msgctxt "Data|"
 msgid "Small grids with + operator."
-msgstr "Grelhas pequenas."
+msgstr "Grelhas pequenas com o operador '+'."
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-)
 #: activities/calcudoku/resource/2/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Small grids."
 msgctxt "Data|"
 msgid "Small grids with + and − operators."
-msgstr "Grelhas pequenas."
+msgstr "Grelhas pequenas com os operadores '+' e '-'."
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-), × for multiplication (*)
 #: activities/calcudoku/resource/3/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Small grids."
 msgctxt "Data|"
 msgid "Small grids with +, − and × operators."
-msgstr "Grelhas pequenas."
+msgstr "Grelhas pequenas com os operadores '+', '-' e 'x'."
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-), × for multiplication (*)
 #: activities/calcudoku/resource/4/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Small grids."
 msgctxt "Data|"
 msgid "Medium grids with +, − and × operators."
-msgstr "Grelhas pequenas."
+msgstr "Grelhas médias com os operadores '+', '-' e 'x'."
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-), × for multiplication (*), ∕ for division (:)
 #: activities/calcudoku/resource/5/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Small grids."
 msgctxt "Data|"
 msgid "Large grids with +, −, × and ∕ operators."
-msgstr "Grelhas pequenas."
+msgstr "Grelhas grandes com os operadores '+', '-', 'x' e '/'."
 
 #. Activity title
 #: activities/calendar/ActivityInfo.qml:15

@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2023-07-11 07:35+0200\n"
+"PO-Revision-Date: 2023-07-12 09:28+0200\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
@@ -3010,39 +3010,27 @@ msgstr "Drobne mreže z operatorjem +."
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-)
 #: activities/calcudoku/resource/2/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Small grids with + and - operators."
 msgctxt "Data|"
 msgid "Small grids with + and − operators."
 msgstr "Drobne mreže z operatorjema + in -."
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-), × for multiplication (*)
 #: activities/calcudoku/resource/3/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Small grids with +, - and * operators."
 msgctxt "Data|"
 msgid "Small grids with +, − and × operators."
-msgstr "Drobne mreže z operatorji +, - in *."
+msgstr "Drobne mreže z operatorji +, - in ×."
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-), × for multiplication (*)
 #: activities/calcudoku/resource/4/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Medium grids with +, - and * operators."
 msgctxt "Data|"
 msgid "Medium grids with +, − and × operators."
-msgstr "Srednje mreže z operatorji +, - in *."
+msgstr "Srednje mreže z operatorji +, - in ×."
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-), × for multiplication (*), ∕ for division (:)
 #: activities/calcudoku/resource/5/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Large grids with +, -, * and : operators."
 msgctxt "Data|"
 msgid "Large grids with +, −, × and ∕ operators."
-msgstr "Velike mreže z operatorji +, - in *."
+msgstr "Velike mreže z operatorji +, -, × in /."
 
 #. Activity title
 #: activities/calendar/ActivityInfo.qml:15

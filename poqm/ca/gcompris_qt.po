@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2014-12-25 01:10+0000\n"
-"PO-Revision-Date: 2023-07-11 10:01+0200\n"
+"PO-Revision-Date: 2023-07-12 07:47+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
@@ -3183,40 +3183,27 @@ msgstr "Quadrícules petites amb l'operador +."
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-)
 #: activities/calcudoku/resource/2/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Small grids with + and - operators."
 msgctxt "Data|"
 msgid "Small grids with + and − operators."
-msgstr "Quadrícules petites amb els operadors + i -."
+msgstr "Quadrícules petites amb els operadors + i −."
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-), × for multiplication (*)
 #: activities/calcudoku/resource/3/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Small grids with +, - and * operators."
 msgctxt "Data|"
 msgid "Small grids with +, − and × operators."
-msgstr "Quadrícules petites amb els operadors +, - i *."
+msgstr "Quadrícules petites amb els operadors +, − i ×."
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-), × for multiplication (*)
 #: activities/calcudoku/resource/4/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Medium grids with +, - and * operators."
 msgctxt "Data|"
 msgid "Medium grids with +, − and × operators."
-msgstr "Quadrícules mitjanes amb els operadors +, - i *."
+msgstr "Quadrícules mitjanes amb els operadors +, − i ×."
 
-# skip-rule: t-sp_2p
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-), × for multiplication (*), ∕ for division (:)
 #: activities/calcudoku/resource/5/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Large grids with +, -, * and : operators."
 msgctxt "Data|"
 msgid "Large grids with +, −, × and ∕ operators."
-msgstr "Quadrícules grans amb els operadors +, -, * i :."
+msgstr "Quadrícules grans amb els operadors +, −, × i ∕."
 
 #. Activity title
 #: activities/calendar/ActivityInfo.qml:15

@@ -11,7 +11,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=gcompris&keywords=I18N+L10N&component=general\n"
 "POT-Creation-Date: 2014-11-09 17:30+0000\n"
-"PO-Revision-Date: 2023-07-11 08:45+0300\n"
+"PO-Revision-Date: 2023-07-12 08:23+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
 "Language: uk\n"
@@ -3072,39 +3072,27 @@ msgstr "Малі таблиці з оператором «+»."
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-)
 #: activities/calcudoku/resource/2/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Small grids with + and - operators."
 msgctxt "Data|"
 msgid "Small grids with + and − operators."
-msgstr "Малі таблиці з операторами «+» і «–»."
+msgstr "Малі таблиці з операторами «+» і «−»."
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-), × for multiplication (*)
 #: activities/calcudoku/resource/3/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Small grids with +, - and * operators."
 msgctxt "Data|"
 msgid "Small grids with +, − and × operators."
-msgstr "Малі таблиці з операторами «+», «–» та «*»."
+msgstr "Малі таблиці з операторами «+», «−» та «×»."
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-), × for multiplication (*)
 #: activities/calcudoku/resource/4/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Medium grids with +, - and * operators."
 msgctxt "Data|"
 msgid "Medium grids with +, − and × operators."
-msgstr "Середні таблиці з операторами «+», «–» та «*»."
+msgstr "Середні таблиці з операторами «+», «−» та «×»."
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-), × for multiplication (*), ∕ for division (:)
 #: activities/calcudoku/resource/5/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Large grids with +, -, * and : operators."
 msgctxt "Data|"
 msgid "Large grids with +, −, × and ∕ operators."
-msgstr "Великі таблиці з операторами «+», «–», «*» та «:»."
+msgstr "Великі таблиці з операторами «+», «−», «×» та «∕»."
 
 #. Activity title
 #: activities/calendar/ActivityInfo.qml:15

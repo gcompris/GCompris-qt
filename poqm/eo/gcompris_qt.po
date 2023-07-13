@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2020-05-22 10:49+0200\n"
-"PO-Revision-Date: 2023-07-11 08:13+0100\n"
+"PO-Revision-Date: 2023-07-12 06:49+0100\n"
 "Last-Translator: Oliver Kellogg <okellogg@users.sourceforge.net>\n"
 "Language-Team: Esperanto <kde-i18n-eo@kde.org>\n"
 "Language: eo\n"
@@ -3020,39 +3020,27 @@ msgstr "Malgrandaj kradoj kun operatoro +."
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-)
 #: activities/calcudoku/resource/2/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Small grids with + and - operators."
 msgctxt "Data|"
 msgid "Small grids with + and − operators."
-msgstr "Malgrandaj kradoj kun operatoroj + kaj -."
+msgstr "Malgrandaj kradoj kun operatoroj + kaj −."
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-), × for multiplication (*)
 #: activities/calcudoku/resource/3/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Small grids with +, - and * operators."
 msgctxt "Data|"
 msgid "Small grids with +, − and × operators."
-msgstr "Malgrandaj kradoj kun operatoroj +, - kaj *."
+msgstr "Malgrandaj kradoj kun operatoroj +, − kaj ×."
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-), × for multiplication (*)
 #: activities/calcudoku/resource/4/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Medium grids with +, - and * operators."
 msgctxt "Data|"
 msgid "Medium grids with +, − and × operators."
-msgstr "Mezaj kradoj kun operatoroj +, - kaj *."
+msgstr "Mezaj kradoj kun operatoroj +, − kaj ×."
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-), × for multiplication (*), ∕ for division (:)
 #: activities/calcudoku/resource/5/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Large grids with +, -, * and : operators."
 msgctxt "Data|"
 msgid "Large grids with +, −, × and ∕ operators."
-msgstr "Grandaj kradoj kun operatoroj +, - kaj *."
+msgstr "Grandaj kradoj kun operatoroj +, − kaj ×."
 
 #. Activity title
 #: activities/calendar/ActivityInfo.qml:15

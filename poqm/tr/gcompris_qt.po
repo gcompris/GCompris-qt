@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2023-07-11 11:19+0300\n"
+"PO-Revision-Date: 2023-07-12 11:44+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -3019,39 +3019,27 @@ msgstr "+ işleciyle küçük ızgaralar."
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-)
 #: activities/calcudoku/resource/2/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Small grids with + and - operators."
 msgctxt "Data|"
 msgid "Small grids with + and − operators."
-msgstr "+ ve - işleçleriyle küçük ızgaralar."
+msgstr "+ ve − işleçleriyle küçük ızgaralar"
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-), × for multiplication (*)
 #: activities/calcudoku/resource/3/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Small grids with +, - and * operators."
 msgctxt "Data|"
 msgid "Small grids with +, − and × operators."
-msgstr "+, - ve * işleçleriyle küçük ızgaralar."
+msgstr "+, − ve × işleçleriyle küçük ızgaralar."
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-), × for multiplication (*)
 #: activities/calcudoku/resource/4/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Medium grids with +, - and * operators."
 msgctxt "Data|"
 msgid "Medium grids with +, − and × operators."
-msgstr "+, - ve * işleçleriyle orta boy ızgaralar."
+msgstr "+, − ve × işleçleriyle orta boy ızgaralar."
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-), × for multiplication (*), ∕ for division (:)
 #: activities/calcudoku/resource/5/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Large grids with +, -, * and : operators."
 msgctxt "Data|"
 msgid "Large grids with +, −, × and ∕ operators."
-msgstr "+, -, * ve : işleçleriyle büyük ızgaralar."
+msgstr "+, −, × ve ∕ işleçleriyle büyük ızgaralar."
 
 #. Activity title
 #: activities/calendar/ActivityInfo.qml:15
