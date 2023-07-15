@@ -1,16 +1,16 @@
 # Translation for gcompris_voices.po to Euskara/Basque (eu).
-# Copyright (C) 2019-2022, This file is copyright:
+# Copyright (C) 2019-2023 This file is copyright:
 # This file is distributed under the same license as the gcompris package.
 # KDE euskaratzeko proiektuko arduraduna <xalba@ni.eus>.
 #
 # Translators:
-# Iñigo Salvador Azurmendi <xalba@ni.eus>, 2019, 2020, 2021, 2022.
+# Iñigo Salvador Azurmendi <xalba@ni.eus>, 2019, 2020, 2021, 2022, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-07-11 00:41+0000\n"
-"PO-Revision-Date: 2022-12-31 20:06+0100\n"
+"PO-Revision-Date: 2023-07-14 21:10+0200\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
 "Language: eu\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 22.12.0\n"
+"X-Generator: Lokalize 23.04.3\n"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "advanced_colors"
 #: activities/advanced_colors/ActivityInfo.qml:18
@@ -198,18 +198,16 @@ msgstr "Sortu letraren Braille gelaxka."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "calcudoku"
 #: activities/calcudoku/ActivityInfo.qml:17
-#, fuzzy, kde-format
-#| msgid ""
-#| "Select a number or a symbol and click its target area. Each symbol must "
-#| "appear only once in a row, in a column and in a subregion if any."
+#, kde-format
 msgid ""
 "Select a number and click on its target position. Each number must appear "
 "only once in a row and in a column. The numbers in the cells of a cage must "
 "produce the given result when combined using the given operator."
 msgstr ""
-"Hautatu zenbaki bat edo ikur bat eta egin klik jomuga eremuan. Ikur bakoitza "
-"soilik behin agertu behar da errenkada bakoitzean, zutabe bakoitzean eta "
-"azpieremu bakoitzean halakorik balego."
+"Hautatu zenbaki bat eta egin klik jomugako kokalekuan. Ikur bakoitza soilik "
+"behin agertu behar da errenkada eta zutabe bakoitzean. Kaiola bateko "
+"gelaxketako zenbakiek emaniko emaitza sortu behar dute emaniko eragilearekin "
+"konbinatzean."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "calendar"
 #: activities/calendar/ActivityInfo.qml:18

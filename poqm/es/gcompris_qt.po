@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2023-06-22 21:49+0200\n"
+"PO-Revision-Date: 2023-07-14 11:39+0200\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Language: es\n"
 "X-Qt-Contexts: true\n"
-"X-Generator: Lokalize 23.04.2\n"
+"X-Generator: Lokalize 23.04.3\n"
 "X-Qt-Contexts: true\n"
 
 #. Activity title
@@ -3020,13 +3020,13 @@ msgstr ""
 #: activities/calcudoku/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Calcudoku"
-msgstr ""
+msgstr "Calcudoku"
 
 #. Help title
 #: activities/calcudoku/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Solve the Calcudoku."
-msgstr ""
+msgstr "Resuelve el calcudoku."
 
 #. Help goal
 #: activities/calcudoku/ActivityInfo.qml:19
@@ -3035,15 +3035,15 @@ msgid ""
 "Develop your logical reasoning skills: data linking, deduction and spatial "
 "location while using calculation."
 msgstr ""
+"Desarrolla tus habilidades de razonamiento lógico: enlace de datos, "
+"deducción y ubicación espacial mientras calculas."
 
 #. Help prerequisite
 #: activities/calcudoku/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Completing the puzzle requires patience and logical ability."
 msgctxt "ActivityInfo|"
 msgid "Completing the puzzle requires patience and arithmetic abilities."
-msgstr "Para completar el puzle se necesita paciencia y habilidad lógica."
+msgstr ""
+"Para completar el puzle se necesita paciencia y habilidades aritméticas."
 
 #. Help manual
 #: activities/calcudoku/ActivityInfo.qml:23
@@ -3056,51 +3056,43 @@ msgid ""
 "cage, when combined using the operator, must produce the result. Cages made "
 "of only one cell directly provide the number to enter."
 msgstr ""
+"Selecciona un número de la lista y pulsa sobre su posición de destino para "
+"rellenar la cuadrícula. Cada número debe aparecer solo una vez en una fila y "
+"en una columna. Las jaulas son grupos de celdas que proporcionan información "
+"sobre cómo se rellenan. Las jaulas que contienen más de una celda "
+"proporcionan un resultado y un operador: todos los números de la jaula deben "
+"producir el resultado al combinarlos con el operador. Las jaulas que solo "
+"tienen una celda proporcionan directamente el número que se debe introducir."
 
 #. + is the unicode character for addition mathematical operator (+)
 #: activities/calcudoku/resource/1/Data.qml:66
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Small grids."
 msgctxt "Data|"
 msgid "Small grids with + operator."
-msgstr "Cuadrículas pequeñas."
+msgstr "Cuadrículas pequeñas con el operador +."
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-)
 #: activities/calcudoku/resource/2/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Small grids."
 msgctxt "Data|"
 msgid "Small grids with + and − operators."
-msgstr "Cuadrículas pequeñas."
+msgstr "Cuadrículas pequeñas con los operadores + y -."
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-), × for multiplication (*)
 #: activities/calcudoku/resource/3/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Small grids."
 msgctxt "Data|"
 msgid "Small grids with +, − and × operators."
-msgstr "Cuadrículas pequeñas."
+msgstr "Cuadrículas pequeñas con los operadores +, - y ×."
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-), × for multiplication (*)
 #: activities/calcudoku/resource/4/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Small grids."
 msgctxt "Data|"
 msgid "Medium grids with +, − and × operators."
-msgstr "Cuadrículas pequeñas."
+msgstr "Cuadrículas medianas con los operadores +, - y ×."
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-), × for multiplication (*), ∕ for division (:)
 #: activities/calcudoku/resource/5/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Small grids."
 msgctxt "Data|"
 msgid "Large grids with +, −, × and ∕ operators."
-msgstr "Cuadrículas pequeñas."
+msgstr "Cuadrículas grandes con los operadores +, -, × y /."
 
 #. Activity title
 #: activities/calendar/ActivityInfo.qml:15

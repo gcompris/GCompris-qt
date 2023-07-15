@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GCompris\n"
 "POT-Creation-Date: 2018-11-30 13:03+0000\n"
-"PO-Revision-Date: 2023-06-03 07:00+0200\n"
+"PO-Revision-Date: 2023-07-14 21:34+0200\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
 "Language: eu\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 23.04.1\n"
+"X-Generator: Lokalize 23.04.3\n"
 "X-Qt-Contexts: true\n"
 
 #. Activity title
@@ -2994,13 +2994,13 @@ msgstr ""
 #: activities/calcudoku/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Calcudoku"
-msgstr ""
+msgstr "Kalkudoku"
 
 #. Help title
 #: activities/calcudoku/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Solve the Calcudoku."
-msgstr ""
+msgstr "Ebatzi Kalkudokua."
 
 #. Help goal
 #: activities/calcudoku/ActivityInfo.qml:19
@@ -3009,15 +3009,16 @@ msgid ""
 "Develop your logical reasoning skills: data linking, deduction and spatial "
 "location while using calculation."
 msgstr ""
+"Garatu zure arrazoibide logikoak: kalkuluak erabili bitartean, datuen arteko "
+"lotura egitea, ondorioak ateratzea eta espazioan kokatzea kalkuluak erabili "
+"bitartean."
 
 #. Help prerequisite
 #: activities/calcudoku/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Completing the puzzle requires patience and logical ability."
 msgctxt "ActivityInfo|"
 msgid "Completing the puzzle requires patience and arithmetic abilities."
-msgstr "Buru-hausgarria osatzeko pazientzia eta gaitasun logikoa behar dira."
+msgstr ""
+"Buru-hausgarria osatzeko pazientzia eta gaitasun aritmetikoak behar dira."
 
 #. Help manual
 #: activities/calcudoku/ActivityInfo.qml:23
@@ -3030,51 +3031,43 @@ msgid ""
 "cage, when combined using the operator, must produce the result. Cages made "
 "of only one cell directly provide the number to enter."
 msgstr ""
+"Hautatu zerrendako zenbaki bat eta egin klik bere jomugako kokalekuan sareta "
+"betetzeko. Zenbaki bakoitza soilik behin agertu behar da errenkada eta "
+"zutabe bakoitzean. Kaiolak, haiek betetzeko informazioa ematen duten gelaxka "
+"taldeak dira. Gelaxka bat baino gehiagoz osatutako kaiolek emaitza bat eta "
+"eragile bat ematen dute: kaiolako zenbaki guztiek, eragilearekin "
+"konbinatzean, emaitza sortu behar dute. Gelaxka bakarraz osaturiko kaiolek "
+"zuzenean ematen dute sartu beharreko zenbakia."
 
 #. + is the unicode character for addition mathematical operator (+)
 #: activities/calcudoku/resource/1/Data.qml:66
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Small grids."
 msgctxt "Data|"
 msgid "Small grids with + operator."
-msgstr "Sareta txikiak."
+msgstr "Sareta txikiak + eragilearekin."
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-)
 #: activities/calcudoku/resource/2/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Small grids."
 msgctxt "Data|"
 msgid "Small grids with + and − operators."
-msgstr "Sareta txikiak."
+msgstr "Sareta txikiak + eta - eragileekin."
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-), × for multiplication (*)
 #: activities/calcudoku/resource/3/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Small grids."
 msgctxt "Data|"
 msgid "Small grids with +, − and × operators."
-msgstr "Sareta txikiak."
+msgstr "Sareta txikiak +, - eta × eragileekin."
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-), × for multiplication (*)
 #: activities/calcudoku/resource/4/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Small grids."
 msgctxt "Data|"
 msgid "Medium grids with +, − and × operators."
-msgstr "Sareta txikiak."
+msgstr "Sareta ertainak +, - eta × eragileekin."
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-), × for multiplication (*), ∕ for division (:)
 #: activities/calcudoku/resource/5/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Small grids."
 msgctxt "Data|"
 msgid "Large grids with +, −, × and ∕ operators."
-msgstr "Sareta txikiak."
+msgstr "Sareta handiak +, -, × eta ∕ eragileekin."
 
 #. Activity title
 #: activities/calendar/ActivityInfo.qml:15
@@ -17960,12 +17953,9 @@ msgid "Copyright: %1"
 msgstr "Copyright: %1"
 
 #: activities/menu/ConfigurationItem.qml:48
-#, fuzzy
-#| msgctxt "ConfigurationItem|"
-#| msgid "Difficulty filter:"
 msgctxt "ConfigurationItem|"
 msgid "Difficulty filter"
-msgstr "Zailtasun iragazkia:"
+msgstr "Zailtasun iragazkia"
 
 #: activities/menu/ConfigurationItem.qml:108
 msgctxt "ConfigurationItem|"
@@ -24583,17 +24573,12 @@ msgstr "Buru-hausgarria osatzeko pazientzia eta gaitasun logikoa behar dira."
 
 #. Help manual
 #: activities/sudoku/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Select a number or a symbol on the left and click on its target position. "
-#| "GCompris will not let you enter invalid answer."
 msgctxt "ActivityInfo|"
 msgid ""
 "Select a number or a symbol in the list and click on its target position. "
 "GCompris will not let you enter an invalid answer."
 msgstr ""
-"Hautatu ezkerreko zenbaki edo ikur bat eta egin klik bere jomugako "
+"Hautatu zerrendako zenbaki bat edo ikur bat eta egin klik jomugako "
 "kokalekuan. GCompris-ek ez dizu utziko erantzun okerrik sartzen."
 
 #: activities/sudoku/resource/1/Data.qml:13

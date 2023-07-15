@@ -4,7 +4,7 @@ msgstr ""
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
 "Last-Translator: Igor Dobrača <igor.dobraca@gmail.com>\n"
-"Language-Team: Croatian\n"
+"Language-Team: Croatian <kde-i18n-doc@kde.org>\n"
 "Language: hr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Qt-Contexts: true\n"
-"X-Generator: Poedit 3.2.2\n"
+"X-Generator: Poedit 3.3.2\n"
 
 #. Activity title
 #: activities/advanced_colors/ActivityInfo.qml:15
@@ -138,7 +138,7 @@ msgstr ""
 #: activities/submarine/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "<b>Keyboard controls:</b>"
-msgstr "<b>Kontrole tipkovnice:</b>"
+msgstr "<b>Kontrole pomoću tipkovnice:</b>"
 
 #: activities/advanced_colors/ActivityInfo.qml:26
 #: activities/algorithm/ActivityInfo.qml:24
@@ -742,7 +742,7 @@ msgstr "Vježbaj operaciju množenja."
 #: activities/algebra_by/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Learn to multiply numbers within a limited period of time."
-msgstr "Naučite množiti brojeve u ograničenom vremenskom razdoblju."
+msgstr "Nauči množiti brojeve u zadanom vremenskom razdoblju."
 
 #. Help prerequisite
 #: activities/algebra_by/ActivityInfo.qml:22
@@ -864,7 +864,7 @@ msgstr "Vježbaj operaciju dijeljenja."
 #: activities/algebra_div/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Find the result of the division within a limited period of time."
-msgstr "Pronađi rezultat dijeljenja unutar ograničenog vremenskog razdoblja."
+msgstr "Pronađi rezultat dijeljenja unutar zadanog vremenskog razdoblja."
 
 #. Help prerequisite
 #: activities/algebra_div/ActivityInfo.qml:22
@@ -953,8 +953,7 @@ msgid ""
 "Learn to find the difference between two numbers within a limited period of "
 "time."
 msgstr ""
-"Nauči pronaći razliku između dva broja unutar ograničenog vremenskog "
-"razdoblja."
+"Nauči pronaći razliku između dva broja unutar zadanog vremenskog razdoblja."
 
 #. Help prerequisite
 #: activities/algebra_minus/ActivityInfo.qml:22
@@ -1040,7 +1039,7 @@ msgstr "Vježbaj zbrajanje brojeva."
 #: activities/algebra_plus/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Learn to find the sum of two numbers within a limited period of time."
-msgstr "Nauči pronaći zbroj dvaju brojeva u ograničenom vremenskom razdoblju."
+msgstr "Nauči pronaći zbroj dvaju brojeva u zadanom vremenskom razdoblju."
 
 #. Help prerequisite
 #: activities/algebra_plus/ActivityInfo.qml:22
@@ -1126,7 +1125,7 @@ msgstr "Dovrši raspored voća."
 #: activities/algorithm/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Logic training activity."
-msgstr "Aktivnost logičke obuke."
+msgstr "Aktivnost vježbanja logike."
 
 #. Help manual
 #: activities/algorithm/ActivityInfo.qml:22
@@ -1144,7 +1143,7 @@ msgstr ""
 #: activities/align4/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Align four (against Tux)"
-msgstr "Poravnaj četiri (protiv Tuxa)"
+msgstr "4 u nizu (protiv Tuxa)"
 
 #. Help title
 #: activities/align4/ActivityInfo.qml:17
@@ -1161,7 +1160,7 @@ msgid ""
 "Create a line of 4 tokens either horizontally (lying down), vertically "
 "(standing up) or diagonally."
 msgstr ""
-"Napravite liniju od 4 žetona vodoravno (ležeći), okomito (stojeći) ili "
+"Formiraj liniju od 4 žetona horizontalno (vodoravno), okomito (uspravno) ili "
 "dijagonalno."
 
 #. Help manual
@@ -1207,7 +1206,7 @@ msgstr "Razmaknica ili strelica prema dolje: ispusti žeton"
 #: activities/align4_2players/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Align four (with a friend)"
-msgstr "Poravnaj četiri (s prijateljem)"
+msgstr "4 u nizu (protiv prijatelja)"
 
 #. Help manual
 #: activities/align4_2players/ActivityInfo.qml:22
@@ -1242,7 +1241,7 @@ msgstr "Abecedni redoslijed."
 #: activities/alphabet-sequence/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid "Can decode letters."
-msgstr "Može dekodirati slova."
+msgstr "Može prepoznati slova."
 
 #. Help manual
 #: activities/alphabet-sequence/ActivityInfo.qml:24
@@ -1254,9 +1253,9 @@ msgid ""
 "or check the bottom right corner."
 msgstr ""
 "Uhvati slova abecede. Pomoću tipkovnice koristi tipke sa strelicama za "
-"pomicanje helikoptera. S pokazivačkim uređajem jednostavno klikni ili "
-"dodirni ciljnu lokaciju. Da bi znao koje slovo moraš uhvatiti, možeš ga "
-"zapamtiti ili provjeriti donji desni kut."
+"pomicanje helikoptera. U slučaju da koristiš uređaj sa zaslonom osjetljivim "
+"na dodir, jednostavno klikni ili dodirni ciljnu lokaciju. Da bi znao koje "
+"slovo moraš uhvatiti, možeš ga zapamtiti ili provjeriti donji desni kut."
 
 #: activities/alphabet-sequence/ActivityInfo.qml:26
 #: activities/numbers-odd-even/ActivityInfo.qml:26
@@ -1297,7 +1296,7 @@ msgstr "Odaberi način rada"
 #: activities/analog_electricity/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Analog electricity"
-msgstr "Analogna električna energija"
+msgstr "Električna energija"
 
 #. Help title
 #: activities/analog_electricity/ActivityInfo.qml:17
@@ -1309,7 +1308,7 @@ msgstr "Napravi i simuliraj analognu električnu shemu."
 #: activities/analog_electricity/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Create an analog electric schema with a real time simulation."
-msgstr "Napravi analognu električnu shemu sa simulacijom u stvarnom vremenu."
+msgstr "Napravi električnu shemu sa simulacijom u stvarnom vremenu."
 
 #. Help prerequisite
 #: activities/analog_electricity/ActivityInfo.qml:22
@@ -1376,7 +1375,7 @@ msgstr ""
 #: activities/analog_electricity/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "The electric simulation engine is from edX: "
-msgstr "Motor električne simulacije je iz edX-a: "
+msgstr "Simulator električne energije je preuzet iz edX-a: "
 
 #: activities/analog_electricity/cktsim.js:138
 msgctxt "cktsim|"
@@ -1906,7 +1905,7 @@ msgstr "Jednostavna aktivnost za otkrivanje tipkovnice."
 #: activities/baby_keyboard/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Discover the keyboard."
-msgstr "Otkrij tipkovnicu."
+msgstr "Otkrij mogućnosti tipkovnice."
 
 #. Help manual
 #: activities/baby_keyboard/ActivityInfo.qml:24
@@ -1947,8 +1946,8 @@ msgid ""
 "Provide audio-visual feedback when using the mouse to help discovering its "
 "usage for young children."
 msgstr ""
-"Pruži audio-vizualne povratne informacije kada koristiš miša kako bi lakše "
-"otkrio njegovu upotrebu za malu djecu."
+"Pruži povratne audio-vizualne informacije pri korištenju miša kako bi mala "
+"djeca lakše savladala njegovu upotrebu."
 
 #. Help prerequisite
 #: activities/baby_mouse/ActivityInfo.qml:21
@@ -1962,7 +1961,7 @@ msgstr ""
 #: activities/memory/ActivityInfo.qml:22 activities/tangram/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid "Mouse-manipulation."
-msgstr "Manipulacija mišem."
+msgstr "Upravljanje mišem."
 
 #. Help manual
 #: activities/baby_mouse/ActivityInfo.qml:23
@@ -2010,7 +2009,7 @@ msgstr ""
 #: activities/baby_tangram/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Baby puzzle"
-msgstr "Dječja slagalica"
+msgstr "Slagalica za bebe"
 
 #. Help title
 #: activities/baby_tangram/ActivityInfo.qml:17
@@ -2053,7 +2052,7 @@ msgstr ""
 #: activities/baby_wordprocessor/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Discover the keyboard and the letters."
-msgstr "Otkrij tipkovnicu i slova."
+msgstr "Upoznaj tipkovnicu i slova."
 
 #. Help manual
 #: activities/baby_wordprocessor/ActivityInfo.qml:24
@@ -2067,7 +2066,7 @@ msgstr ""
 "Samo tipkaj na stvarnoj ili virtualnoj tipkovnici kao u programu za obradu "
 "teksta.\n"
 "     Klikom na gumb 'Naslov' tekst će se povećati. Slično tome, gumb "
-"'podnaslov' malo će smanjiti tekst. Klikom na 'odlomak' ukloniti ćeš "
+"'Podnaslov' malo će smanjiti tekst. Klikom na 'Odlomak' ukloniti ćeš "
 "oblikovanje."
 
 #: activities/baby_wordprocessor/ActivityInfo.qml:27
@@ -2144,7 +2143,7 @@ msgstr "Spremi"
 #: activities/babymatch/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
 msgid "Matching items"
-msgstr "Podudarajući predmeti"
+msgstr "Upari predmete"
 
 #. Help title
 #: activities/babymatch/ActivityInfo.qml:20
@@ -2287,7 +2286,7 @@ msgstr "Pokreni aktivnost za učitavanje razina"
 #: activities/balancebox/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
 msgid "Balance box"
-msgstr "Kutija za ravnotežu"
+msgstr "Održavanje ravnoteže"
 
 #. Help title
 #: activities/balancebox/ActivityInfo.qml:20
@@ -2509,7 +2508,7 @@ msgstr "Test"
 #: activities/ballcatch/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Make the ball go to Tux"
-msgstr "Neka lopta ode do Tuxa"
+msgstr "Baci loptu Tuxu"
 
 #. Help title
 #: activities/ballcatch/ActivityInfo.qml:17
@@ -2620,7 +2619,7 @@ msgstr ""
 #: activities/bargame_2players/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Bargame (with a friend)"
-msgstr "Bargame (s prijateljem)"
+msgstr "Bargame (protiv prijatelja)"
 
 #. Help manual
 #: activities/bargame_2players/ActivityInfo.qml:24
@@ -2654,7 +2653,7 @@ msgstr ""
 #: activities/binary_bulb/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "To get familiar with the binary number system."
-msgstr "Upoznati binarni brojevni sustav."
+msgstr "Upoznaj binarni brojevni sustav."
 
 #. Help prerequisite
 #: activities/binary_bulb/ActivityInfo.qml:22
@@ -2760,13 +2759,13 @@ msgstr "Otkrij Brailleov sustav"
 #: activities/braille_alphabets/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Learn and memorize the braille system."
-msgstr "Naučite i zapamtite Brailleov sustav."
+msgstr "Nauči i zapamti Brailleov sustav."
 
 #. Help goal
 #: activities/braille_alphabets/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Let children discover the braille system."
-msgstr "Neka djeca otkriju Brailleov sustav."
+msgstr "Učenje Brailleovog sustava (brajice)."
 
 #. Help manual
 #: activities/braille_alphabets/ActivityInfo.qml:24
@@ -2801,7 +2800,7 @@ msgstr "Znamenke: 1 do 6 odaberite/poništite odabir odgovarajućih točaka"
 #: activities/braille_fun/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Space: open or close the braille chart"
-msgstr "Razmaknica: otvorite ili zatvorite Brailleov grafikon"
+msgstr "Razmaknica: otvorite ili zatvorite Brailleov dijagram"
 
 #: activities/braille_alphabets/braille_alphabets.js:48
 #: activities/braille_alphabets/braille_alphabets.js:58
@@ -2838,7 +2837,7 @@ msgstr "Ovo je jednostavno, brojevi su isti kao slova od A do J."
 #: activities/braille_alphabets/FirstScreen.qml:26
 msgctxt "FirstScreen|"
 msgid "Braille: Unlocking the Code"
-msgstr "Brailleovo pismo: otključavanje koda"
+msgstr "Brailleovo pismo: otključavanje kôda"
 
 #: activities/braille_alphabets/FirstScreen.qml:53
 msgctxt "FirstScreen|"
@@ -2855,8 +2854,8 @@ msgid ""
 "in a rectangle containing two columns of three dots each. As seen on the "
 "left, each dot is referenced by a number from 1 to 6."
 msgstr ""
-"Svaki Brailleov znak, ili ćelija, sastoji se od šest točaka, raspoređenih u "
-"pravokutnik koji sadrži dva stupca od po tri točke. Kao što se vidi na "
+"Svaki Brailleov znak ili ćelija, sastoji se od šest točaka, raspoređenih u "
+"pravokutnik koji sadrži dva stupca sa po tri točke. Kao što se vidi na "
 "lijevoj strani, svaka točka je označena brojem od 1 do 6."
 
 #: activities/braille_alphabets/FirstScreen.qml:78
@@ -2926,13 +2925,13 @@ msgstr "Klikni na točkice u području Brailleovih ćelija da bi dobio simbol %1
 #: activities/braille_fun/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Braille fun"
-msgstr "Braillova zabava"
+msgstr "Brailleova zabava"
 
 #. Help title
 #: activities/braille_fun/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Practice braille letters."
-msgstr "Vježbajte brajicu."
+msgstr "Vježbaj brajicu."
 
 #. Help prerequisite
 #: activities/braille_fun/ActivityInfo.qml:22
@@ -3002,39 +3001,27 @@ msgstr "Male rešetke."
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-)
 #: activities/calcudoku/resource/2/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Small grids."
 msgctxt "Data|"
 msgid "Small grids with + and − operators."
-msgstr "Male rešetke."
+msgstr ""
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-), × for multiplication (*)
 #: activities/calcudoku/resource/3/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Small grids."
 msgctxt "Data|"
 msgid "Small grids with +, − and × operators."
-msgstr "Male rešetke."
+msgstr ""
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-), × for multiplication (*)
 #: activities/calcudoku/resource/4/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Small grids."
 msgctxt "Data|"
 msgid "Medium grids with +, − and × operators."
-msgstr "Male rešetke."
+msgstr ""
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-), × for multiplication (*), ∕ for division (:)
 #: activities/calcudoku/resource/5/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Small grids."
 msgctxt "Data|"
 msgid "Large grids with +, −, × and ∕ operators."
-msgstr "Male rešetke."
+msgstr ""
 
 #. Activity title
 #: activities/calendar/ActivityInfo.qml:15
@@ -3387,7 +3374,7 @@ msgstr ""
 #: activities/canal_lock/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Understand how a canal lock works."
-msgstr "Shvati kako funkcioniraju kanalske brane."
+msgstr "Razumjeti kako funkcioniraju kanalske brane."
 
 #. Help manual
 #: activities/canal_lock/ActivityInfo.qml:24
@@ -3458,7 +3445,7 @@ msgstr "Razvrstaj predmete u točne i netočne skupine."
 #: activities/categorization/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Build conceptual thinking and enrich knowledge."
-msgstr "Izgradi konceptualno razmišljanje i obogati znanje."
+msgstr "Razvijaj konceptualno razmišljanje i obogati znanje."
 
 #. Help prerequisite
 #: activities/categorization/ActivityInfo.qml:22
@@ -4047,7 +4034,7 @@ msgstr "Postavi POVRĆE desno, a ostale predmete lijevo"
 #: activities/checkers/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Play checkers (against Tux)"
-msgstr "Igraj damu (protiv Tuxa)"
+msgstr "Dama (protiv Tuxa)"
 
 #. Help title
 #: activities/checkers/ActivityInfo.qml:17
@@ -4063,7 +4050,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Capture all the pieces of your opponent before your opponent captures all of "
 "yours."
-msgstr "Uhvati sve dijelove tvog protivnika prije nego on uzme sve tvoje."
+msgstr "Prikupi sve žetone protivnika prije nego on uzme sve tvoje."
 
 #. Help manual
 #: activities/checkers/ActivityInfo.qml:24
@@ -4141,7 +4128,7 @@ msgstr "Crni pobjeđuje"
 #: activities/checkers_2players/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Play checkers (with a friend)"
-msgstr "Igraj damu (s prijateljem)"
+msgstr "Dama (protiv prijatelja)"
 
 #. Help manual
 #: activities/checkers_2players/ActivityInfo.qml:24
@@ -4188,7 +4175,7 @@ msgstr ""
 #: activities/chess/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Play chess (against Tux)"
-msgstr "Igraj šah (protiv Tuxa)"
+msgstr "Šah (protiv Tuxa)"
 
 #. Help manual Much of this string is shared across the three activities "chess", "chess_partyend", and "chess_2players".
 #: activities/chess/ActivityInfo.qml:25
@@ -4313,7 +4300,7 @@ msgstr "Ne"
 #: activities/chess_2players/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Play chess (with a friend)"
-msgstr "Igraj šah (s prijateljem)"
+msgstr "Šah (protiv prijatelja)"
 
 #. Help manual Much of this string is shared across the three activities "chess", "chess_partyend", and "chess_2players".
 #: activities/chess_2players/ActivityInfo.qml:25
@@ -4355,7 +4342,7 @@ msgstr ""
 #: activities/chess_partyend/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "End of chess game"
-msgstr "Kraj šahovske partije"
+msgstr "Dovrši šahovsku partiju"
 
 #. Help title
 #: activities/chess_partyend/ActivityInfo.qml:17
@@ -4403,7 +4390,7 @@ msgstr ""
 #: activities/chronos/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Chronos"
-msgstr "Chronos"
+msgstr "Složi priču"
 
 #. Help title
 #: activities/chronos/ActivityInfo.qml:21
@@ -4884,7 +4871,7 @@ msgstr ""
 #: activities/clickgame/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Click on me"
-msgstr "Klikni na mene"
+msgstr "Uhvati ribe"
 
 #. Help title
 #: activities/clickgame/ActivityInfo.qml:17
@@ -5052,7 +5039,7 @@ msgstr "Otkrij miješanje boja."
 #: activities/color_mix_light/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Mix primary colors to match the given color."
-msgstr "Pomiješaj primarne boje da odgovaraju danoj boji."
+msgstr "Pomiješaj primarne boje da odgovaraju prikazanoj sekundarnoj boji."
 
 #. Help manual
 #: activities/color_mix/ActivityInfo.qml:24
@@ -5061,7 +5048,7 @@ msgid ""
 "This activity teaches how mixing primary paint colors works (subtractive "
 "mixing)."
 msgstr ""
-"Ova aktivnost uči kako funkcionira miješanje primarnih boja (subtraktivno "
+"Ova aktivnost uči kako funkcionira miješanje primarnih boja (suptraktivno "
 "miješanje)."
 
 #: activities/color_mix/ActivityInfo.qml:25
@@ -5098,12 +5085,12 @@ msgstr "Uskladi boju"
 #: activities/color_mix/ColorMix.qml:200
 msgctxt "ColorMix|"
 msgid "Not enough red"
-msgstr "Nema dovoljno crveno"
+msgstr "Nema dovoljno crvene"
 
 #: activities/color_mix/ColorMix.qml:202
 msgctxt "ColorMix|"
 msgid "Too much red"
-msgstr "Previše crveno"
+msgstr "Previše crvene"
 
 #: activities/color_mix/ColorMix.qml:205
 msgctxt "ColorMix|"
@@ -5113,37 +5100,37 @@ msgstr "Nije dovoljno zeleno"
 #: activities/color_mix/ColorMix.qml:207
 msgctxt "ColorMix|"
 msgid "Too much green"
-msgstr "Previše zeleno"
+msgstr "Previše zelene"
 
 #: activities/color_mix/ColorMix.qml:210
 msgctxt "ColorMix|"
 msgid "Not enough blue"
-msgstr "Nema dovoljno plavo"
+msgstr "Nema dovoljno plave"
 
 #: activities/color_mix/ColorMix.qml:212
 msgctxt "ColorMix|"
 msgid "Too much blue"
-msgstr "Previše plavo"
+msgstr "Previše plave"
 
 #: activities/color_mix/ColorMix.qml:216
 msgctxt "ColorMix|"
 msgid "Not enough magenta"
-msgstr "Nema dovoljno magenta"
+msgstr "Nema dovoljno magente"
 
 #: activities/color_mix/ColorMix.qml:218
 msgctxt "ColorMix|"
 msgid "Too much magenta"
-msgstr "Previše magenta"
+msgstr "Previše magente"
 
 #: activities/color_mix/ColorMix.qml:221
 msgctxt "ColorMix|"
 msgid "Not enough yellow"
-msgstr "Nema dovoljno žuto"
+msgstr "Nema dovoljno žute"
 
 #: activities/color_mix/ColorMix.qml:223
 msgctxt "ColorMix|"
 msgid "Too much yellow"
-msgstr "Previše žuto"
+msgstr "Previše žute"
 
 #: activities/color_mix/ColorMix.qml:226
 msgctxt "ColorMix|"
@@ -5194,7 +5181,7 @@ msgid ""
 "Change the color by moving the sliders on the torches or by clicking on the "
 "+ and - buttons. Then click on the OK button to validate your answer."
 msgstr ""
-"Promijeni boju pomicanjem klizača na bakljama ili klikom na gumbe + i -. "
+"Promijeni boju pomicanjem klizača na svjetiljkama ili klikom na gumbe + i -. "
 "Zatim klikni gumb OK kako bi potvrdio odgovor."
 
 #. Activity title
@@ -5213,7 +5200,7 @@ msgstr "Klikni na pravu boju."
 #: activities/colors/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "This activity teaches you to recognize different colors."
-msgstr "Ova te aktivnost uči prepoznavati različite boje."
+msgstr "Nauči prepoznavati različite boje."
 
 #. Help prerequisite
 #: activities/colors/ActivityInfo.qml:22
@@ -5427,7 +5414,7 @@ msgstr "2 decimalna mjesta između 0 i 99,99."
 #: activities/crane/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Build the same model"
-msgstr "Izgradi isti model"
+msgstr "Dupliciraj model"
 
 #. Help title
 #: activities/crane/ActivityInfo.qml:22
@@ -5668,7 +5655,7 @@ msgstr "Katedrala Notre Dame de Paris na Île de la Cité u Parizu, Francuska."
 #: activities/digital_electricity/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Digital electricity"
-msgstr "Digitalna električna energija"
+msgstr "Digitalni sklopovi"
 
 #. Help title
 #: activities/digital_electricity/ActivityInfo.qml:17
@@ -5680,8 +5667,7 @@ msgstr "Stvori i simuliraj digitalnu električnu shemu."
 #: activities/digital_electricity/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Create a digital electric schema with a real time simulation of it."
-msgstr ""
-"Stvori digitalnu električnu shemu s njezinom simulacijom u stvarnom vremenu."
+msgstr "Složi digitalni sklop sa simulacijom u stvarnom vremenu."
 
 #. Help prerequisite
 #: activities/digital_electricity/ActivityInfo.qml:22
@@ -6408,7 +6394,7 @@ msgstr "Spoji točkice da nacrtaš slova."
 #: activities/drawletters/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Learning how to draw letters in a funny way."
-msgstr "Učenje crtanja slova na zabavan način."
+msgstr "Nauči pisati slova na zabavan način."
 
 #. Help manual
 #: activities/drawletters/ActivityInfo.qml:24
@@ -6420,7 +6406,7 @@ msgstr "Nacrtaj slova spajajući točkice pravilnim redoslijedom."
 #: activities/drawnumbers/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Draw numbers"
-msgstr "Crtanje brojeva"
+msgstr "Pisanje brojeva"
 
 #. Help title
 #: activities/drawnumbers/ActivityInfo.qml:17
@@ -6432,7 +6418,7 @@ msgstr "Spoji točkice da nacrtaš brojeve od 0 do 9."
 #: activities/drawnumbers/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Learning how to draw numbers in a funny way."
-msgstr "Učenje crtanja brojeva na zabavan način."
+msgstr "Nauči pisati brojeve na zabavan način."
 
 #. Help manual
 #: activities/drawnumbers/ActivityInfo.qml:24
@@ -6672,7 +6658,7 @@ msgid ""
 "Learn to associate animal sounds with the animal name and what the animal "
 "looks like."
 msgstr ""
-"Nauči povezati zvukove životinja s imenom životinje i kako životinja izgleda."
+"Nauči povezati glasanje životinja s nazivom životinje i njezinim izgledom."
 
 #. Help manual
 #: activities/explore_farm_animals/ActivityInfo.qml:24
@@ -8087,8 +8073,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Learn about various wild animals from around the world and remember where "
 "they live."
-msgstr ""
-"Nauči o raznim divljim životinjama iz cijelog svijeta i zapamtite gdje žive."
+msgstr "Nauči o raznim divljim životinjama diljem svijeta i zapamti gdje žive."
 
 #. Help manual
 #: activities/explore_world_animals/ActivityInfo.qml:28
@@ -8392,7 +8377,7 @@ msgstr "Učite o glazbi svijeta."
 msgctxt "ActivityInfo|"
 msgid ""
 "Develop a better understanding of the variety of music present in the world."
-msgstr "Razvij bolje razumijevanje raznolikosti glazbe prisutne u svijetu."
+msgstr "Razvijaj bolje razumijevanje raznolikosti glazbe u svijetu."
 
 #. Help manual
 #: activities/explore_world_music/ActivityInfo.qml:24
@@ -8606,7 +8591,7 @@ msgstr "Obitelj"
 #: activities/family/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Select the name you should call this family member."
-msgstr "Odaberi ime kojim bi trebao zvati ovog člana obitelji."
+msgstr "Odaberi ime kojim nazivaš ovog člana obitelji."
 
 #. Help goal
 #: activities/family/ActivityInfo.qml:20
@@ -8616,7 +8601,7 @@ msgid ""
 "Learn the relationships in a family, according to the lineal system used in "
 "most Western societies."
 msgstr ""
-"Naučite odnose u obitelji, prema linearnom sustavu koji se koristi u većini "
+"Nauči odnose u obitelji, prema linearnom sustavu koji se koristi u većini "
 "zapadnih društava."
 
 #. Help prerequisite
@@ -8828,7 +8813,7 @@ msgstr "Zet"
 #: activities/family_find_relative/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Point the relatives"
-msgstr "Pokaži rodbinu"
+msgstr "Odnosi u obitelji"
 
 #. Help title
 #: activities/family_find_relative/ActivityInfo.qml:17
@@ -8860,7 +8845,7 @@ msgstr ""
 #: activities/fifteen/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "The fifteen game"
-msgstr "Igra petnaest"
+msgstr "Igra 15"
 
 #. Help title
 #: activities/fifteen/ActivityInfo.qml:17
@@ -8872,7 +8857,7 @@ msgstr "Pomakni svaku stavku kako bi ponovno stvorio sliku."
 #: activities/fifteen/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Arrange the pieces in the right order."
-msgstr "Rasporedi dijelove pravilnim redoslijedom."
+msgstr "Rasporedi dijelove u pravilan redoslijed."
 
 #. Help manual
 #: activities/fifteen/ActivityInfo.qml:24
@@ -9100,7 +9085,7 @@ msgstr "Zabi loptu u gol."
 #: activities/football/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Kick the ball behind the goal keeper on the right."
-msgstr "Šutni loptu iza golmana s desne strane."
+msgstr "Šutni loptu tako da Tuxu daš gol."
 
 #. Help manual
 #: activities/football/ActivityInfo.qml:24
@@ -13409,7 +13394,7 @@ msgstr "Samo velika slova"
 #: activities/gletters/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Simple letters"
-msgstr "Jednostavna slova"
+msgstr "Padajuća slova"
 
 #. Help title
 #. ----------
@@ -13424,7 +13409,8 @@ msgstr "Upiši padajuća slova prije nego što dotaknu tlo."
 #: activities/gletters/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Letter association between the screen and the keyboard."
-msgstr "Povezanost slova između ekrana i tipkovnice."
+msgstr ""
+"Povezati prikazana slova na ekranu s odgovarajućom tipkom na tipkovnici."
 
 #. Activity title
 #: activities/gnumch-equality/ActivityInfo.qml:15
@@ -13785,8 +13771,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Learn to distinguish between different colors/shapes and learn about "
 "relative positions."
-msgstr ""
-"Nauči razlikovati različite boje/oblike i naučite o međusobnom položaju."
+msgstr "Nauči razlikovati različite boje/oblike i nauči o međusobnom položaju."
 
 #. Help prerequisite
 #: activities/graph-coloring/ActivityInfo.qml:22
@@ -13946,7 +13931,7 @@ msgstr ""
 #: activities/guesscount/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid "Intuition and practice of algebraic-like calculations."
-msgstr "Intuicija i praksa algebarskih izračunavanja."
+msgstr "Intuicija i vježbanje algebarskih izračuna."
 
 #. Help prerequisite
 #: activities/guesscount/ActivityInfo.qml:26
@@ -14130,7 +14115,7 @@ msgstr ""
 #: activities/hangman/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "The classic hangman game"
-msgstr "Klasična igra vješala"
+msgstr "Igra vješala"
 
 #. Help title
 #: activities/hangman/ActivityInfo.qml:17
@@ -14259,8 +14244,8 @@ msgid ""
 msgstr ""
 "Cilj igre je premjestiti cijeli toranj na drugi klin, pridržavajući se "
 "sljedećih pravila:\n"
-"     samo jedan disk se može pomicati odjednom\n"
-"     nijedan disk se ne smije staviti na manji disk\n"
+"     može se odjednom pomicati samo jedan disk\n"
+"     veći disk se ne smije staviti na manji disk\n"
 " \n"
 
 #. Help manual
@@ -15166,7 +15151,7 @@ msgstr "prijevoz"
 #: activities/learn_additions/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Learn additions"
-msgstr "Nauči zbrajanje"
+msgstr "Nauči zbrajati"
 
 #. Help title
 #: activities/learn_additions/ActivityInfo.qml:17
@@ -15178,7 +15163,7 @@ msgstr "Nauči zbrajanje s malim brojevima."
 #: activities/learn_additions/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Learn additions by counting their result."
-msgstr "Nauči zbrajanje brojeći njihov rezultat."
+msgstr "Nauči zbrajanje brojeći kružiće."
 
 #. Help manual
 #: activities/learn_additions/ActivityInfo.qml:24
@@ -15231,8 +15216,8 @@ msgid ""
 "Learn decimals by counting how many squares are needed to represent the "
 "decimal number."
 msgstr ""
-"Nauči decimale brojeći koliko je kvadrata potrebno za predstavljanje "
-"decimalnog broja."
+"Nauči decimale brojeći koliko je kvadrata potrebno da bi prikazao decimalni "
+"broj."
 
 #. Help manual
 #: activities/learn_decimals/ActivityInfo.qml:23
@@ -15450,13 +15435,13 @@ msgstr "Zbroji decimalne brojeve do 5."
 #: activities/learn_decimals_subtractions/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Subtractions with decimal numbers"
-msgstr "Oduzimanje decimalnim brojevima"
+msgstr "Oduzimanje decimalnih brojeva"
 
 #. Help title
 #: activities/learn_decimals_subtractions/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Learn subtractions with decimal numbers."
-msgstr "Nauči oduzimanje decimalnim brojevima."
+msgstr "Nauči oduzimanje decimalnih brojeva."
 
 #. Help goal
 #: activities/learn_decimals_subtractions/ActivityInfo.qml:19
@@ -15465,8 +15450,8 @@ msgid ""
 "Learn subtractions with decimal numbers by counting how many squares need to "
 "be subtracted to represent the result."
 msgstr ""
-"Nauči oduzimanje s decimalnim brojevima brojeći koliko kvadrata treba "
-"oduzeti da bi se prikazao rezultat."
+"Nauči oduzimanje decimalnih brojeva brojeći koliko kvadrata treba oduzeti da "
+"bi se prikazao rezultat."
 
 #. Help manual
 #: activities/learn_decimals_subtractions/ActivityInfo.qml:23
@@ -15541,7 +15526,7 @@ msgstr "Nauči znamenke od 0 do 9."
 #: activities/learn_digits/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Learn digits by counting their corresponding value."
-msgstr "Nauči znamenke brojanjem njihove odgovarajuće vrijednosti."
+msgstr "Nauči znamenke brojanjem njihovih vrijednosti."
 
 #. Help manual
 #: activities/learn_digits/ActivityInfo.qml:24
@@ -15683,7 +15668,7 @@ msgstr "Nauči oduzimanje s malim brojevima."
 #: activities/learn_subtractions/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Learn subtractions by counting their result."
-msgstr "Nauči oduzimanja brojeći njihov rezultat."
+msgstr "Nauči oduzimanje brojeći kružiće."
 
 #. Help manual
 #: activities/learn_subtractions/ActivityInfo.qml:24
@@ -15724,7 +15709,7 @@ msgstr "Oduzimanje s 1, 2, 3, 4, 5, 6, 7, 8 i 9."
 #: activities/left_right_click/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Mouse click training"
-msgstr "Trening klika mišem"
+msgstr "Vježbaj korištenje miša"
 
 #. Help title
 #: activities/left_right_click/ActivityInfo.qml:16
@@ -15754,7 +15739,7 @@ msgstr ""
 #: activities/leftright/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Find your left and right hands"
-msgstr "Odaberi svoju lijevu i desnu ruku"
+msgstr "Razlikuj lijevu i desnu ruku"
 
 #. Help title
 #: activities/leftright/ActivityInfo.qml:17
@@ -15836,7 +15821,7 @@ msgstr "Samo mala slova"
 #: activities/letter-in-word/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Letter in which word"
-msgstr "Slovo u kojoj riječi"
+msgstr "Slovo u riječi"
 
 #. Help title
 #: activities/letter-in-word/ActivityInfo.qml:17
@@ -15852,7 +15837,7 @@ msgstr ""
 #: activities/letter-in-word/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Select all the words which contain the given letter."
-msgstr "Odaberi sve riječi koje sadrže zadano slovo."
+msgstr "Odaberi sve riječi koje sadrže traženo slovo."
 
 #. Help prerequisite
 #: activities/letter-in-word/ActivityInfo.qml:22
@@ -15898,7 +15883,7 @@ msgstr ""
 #: activities/lightsoff/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Lights off"
-msgstr "Svjetla ugašena"
+msgstr "Ugasi svjetla"
 
 #. Help title
 #. ----------
@@ -15917,9 +15902,9 @@ msgid ""
 "of its immediate vertical and horizontal neighbors. You must turn off all "
 "the lights. If you click on Tux, the solution is shown."
 msgstr ""
-"Učinak pritiska na prozor je promjena stanja tog prozora i njegovih "
-"neposrednih okomitih i vodoravnih susjeda. Moraš ugasiti sva svjetla. Ako "
-"klikneš na Tux, prikazano je rješenje."
+"Učinak klika na prozor je promjena stanja tog prozora i njegovih neposrednih "
+"okomitih i vodoravnih susjeda. Moraš ugasiti sva svjetla. Ako klikneš na "
+"Tuxa, prikazati će se rješenje."
 
 #: activities/lightsoff/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
@@ -15927,7 +15912,7 @@ msgid ""
 "The solver algorithm is described on Wikipedia. To know more about the "
 "Lights Off game: &lt;https://en.wikipedia.org/wiki/Lights_Out_(game)&gt;"
 msgstr ""
-"Algoritam rješavača opisan je na Wikipediji. Da bi saznao više o igrici "
+"Algoritam rješenja opisan je na Wikipediji. Da bi saznao više o igrici "
 "Lights Off: &lt;https://en.wikipedia.org/wiki/Lights_Out_(game)&gt;"
 
 #: activities/lightsoff/resource/1/Data.qml:13
@@ -15979,13 +15964,13 @@ msgstr "Mreža 9x9, vrlo teško."
 #: activities/louis-braille/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "The history of Louis Braille"
-msgstr "Povijest Louisa Braillea"
+msgstr "Životopis Louisa Braillea"
 
 #. Help title
 #: activities/louis-braille/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Review the major dates of the inventor of the braille system."
-msgstr "Pregledaj glavne datume izumitelja brajičnog sustava."
+msgstr "Pregledaj glavne datume izumitelja brajice."
 
 #. Help manual
 #: activities/louis-braille/ActivityInfo.qml:24
@@ -15995,9 +15980,9 @@ msgid ""
 "braille system. Click on the previous and next buttons to move between the "
 "story pages. At the end, arrange the sequence in chronological order."
 msgstr ""
-"Pročitaj povijest Louisa Braillea, njegovu biografiju i izum brajičnog "
-"sustava. Klikni na prethodnu i sljedeću tipku za pomicanje između stranica "
-"priče. Na kraju složi niz kronološkim redom."
+"Pročitaj životopis Louisa Braillea i o izumu brajice. Klikni na prethodnu i "
+"sljedeću tipku za pomicanje između stranica priče. Na kraju složi niz "
+"kronološkim redom."
 
 #: activities/louis-braille/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
@@ -16098,7 +16083,7 @@ msgid ""
 "Braille got accepted as a world wide standard. Louis Braille proved that if "
 "you have motivation you can do incredible things."
 msgstr ""
-"Brailleovo pismo je prihvaćeno kao svjetski standard. Louis Braille je "
+"Brailleovo pismo je prihvaćeno kao međunarodni standard. Louis Braille je "
 "dokazao da ako imate motivaciju možete učiniti nevjerojatne stvari."
 
 #: activities/louis-braille/ReorderList.qml:163
@@ -16214,7 +16199,7 @@ msgstr "Izbroji koliko je zvijezda ispod čarobnog šešira."
 #: activities/magic-hat-plus/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Learn additions."
-msgstr "Nauči zbrajanje."
+msgstr "Nauči zbrajati."
 
 #. Help prerequisite
 #: activities/magic-hat-plus/ActivityInfo.qml:22
@@ -16413,7 +16398,7 @@ msgstr "Razmaknica: prebacivanje između nevidljivog i vidljivog načina rada"
 #: activities/mazerelative/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Relative maze"
-msgstr "Relativni labirint"
+msgstr "Labirint (relativno)"
 
 #. Help title
 #: activities/mazerelative/ActivityInfo.qml:17
@@ -16449,7 +16434,7 @@ msgstr "Strelica gore: pomakni se naprijed"
 #: activities/melody/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Melody"
-msgstr "Melodija"
+msgstr "Odsviraj melodiju"
 
 #. Help title
 #: activities/melody/ActivityInfo.qml:17
@@ -16461,7 +16446,7 @@ msgstr "Reproduciraj zvučni niz."
 #: activities/melody/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Ear-training activity."
-msgstr "Aktivnost treniranja uha."
+msgstr "Aktivnost vježbanja slušanja."
 
 #. Help prerequisite
 #: activities/melody/ActivityInfo.qml:22
@@ -16714,7 +16699,7 @@ msgstr ""
 #: activities/memory-math-add-minus-mult-div/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Practice additions, subtractions, multiplications, divisions."
-msgstr "Vježbaj zbrajanje, oduzimanje, množenje, dijeljenje."
+msgstr "Vježbaj zbrajanje, oduzimanje, množenje i dijeljenje."
 
 #. Help prerequisite
 #: activities/memory-math-add-minus-mult-div-tux/ActivityInfo.qml:22
@@ -16902,7 +16887,7 @@ msgstr ""
 #: activities/memory-math-add-tux/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Addition memory game against Tux"
-msgstr "Dodatna igra pamćenja protiv Tuxa"
+msgstr "Igra pamćenja zbrajanja protiv Tuxa"
 
 #. Help title
 #: activities/memory-math-add-tux/ActivityInfo.qml:17
@@ -17281,7 +17266,7 @@ msgstr "Okreni karte kako bi spojio rezultat množenja ili dijeljenja."
 #: activities/memory-math-mult-tux/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Multiplication memory game against Tux"
-msgstr "Igra memorije množenja protiv Tuxa"
+msgstr "Igra pamćenja množenja protiv Tuxa"
 
 #. Help title
 #: activities/memory-math-mult-tux/ActivityInfo.qml:17
@@ -17442,7 +17427,7 @@ msgstr "Okreni kartice kako biste otkrili zvučne parove."
 #: activities/memory-tux/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Memory game with images against Tux"
-msgstr "Igra pamćenja sa slikama protiv Tuxa"
+msgstr "Igra pamćenja slika protiv Tuxa"
 
 #. Help title
 #: activities/memory-tux/ActivityInfo.qml:17
@@ -17456,7 +17441,7 @@ msgstr ""
 #: activities/memory/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Train your memory and remove all the cards."
-msgstr "Vježbaj svoje pamćenje i ukloni sve karte."
+msgstr "Vježbaj svoje pamćenje i upari sve karte."
 
 #. Help manual
 #: activities/memory-tux/ActivityInfo.qml:24
@@ -17491,7 +17476,7 @@ msgstr "Okreni kartice kako bi spojio broj s njegovim nazivom broja."
 #: activities/memory-wordnumber/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Reading numbers, memory."
-msgstr "Čitanje brojeva, memorija."
+msgstr "Čitanje brojeva, pamćenje."
 
 #. Help manual
 #: activities/memory-wordnumber/ActivityInfo.qml:24
@@ -17613,7 +17598,7 @@ msgstr "dvadeset"
 #: activities/memory/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Memory game with images"
-msgstr "Igra pamćenja sa slikama"
+msgstr "Igra pamćenja slika"
 
 #. Help title
 #: activities/memory/ActivityInfo.qml:17
@@ -18038,12 +18023,12 @@ msgstr "Likovna umjetnost"
 #: activities/menu/Menu.qml:124
 msgctxt "Menu|"
 msgid "Music"
-msgstr "Glazba"
+msgstr "Glazbena umjetnost"
 
 #: activities/menu/Menu.qml:130
 msgctxt "Menu|"
 msgid "Experiment"
-msgstr "Eksperiment"
+msgstr "Eksperimenti"
 
 #: activities/menu/Menu.qml:131
 msgctxt "Menu|"
@@ -18242,7 +18227,7 @@ msgstr "Sada vidiš iskru, samo naprijed, možeš je zumirati."
 #: activities/missing-letter/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Missing letter"
-msgstr "Nedostaje slovo"
+msgstr "Koje slovo nedostaje"
 
 #. Help title
 #: activities/missing-letter/ActivityInfo.qml:18
@@ -18330,7 +18315,7 @@ msgstr ""
 #: activities/number_sequence/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Can count."
-msgstr "Može računati."
+msgstr "Zna brojati."
 
 #. Help manual
 #: activities/money/ActivityInfo.qml:24
@@ -18473,7 +18458,7 @@ msgstr ""
 #: activities/morse_code/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
 msgid "Discover the International Morse code"
-msgstr "Upoznaj međunarodni Morseov kod"
+msgstr "Upoznaj međunarodni Morseov kôd"
 
 #. Help title
 #: activities/morse_code/ActivityInfo.qml:20
@@ -18487,7 +18472,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "You have to send and receive letters and digits in International Morse code."
 msgstr ""
-"Moraš slati i primati slova i znamenke koristeći međunarodni Morseov kod."
+"Slanje i primanje slova i znamenki korištenjem međunarodnog Morseovog kôda."
 
 #. Help prerequisite
 #: activities/morse_code/ActivityInfo.qml:25
@@ -18506,7 +18491,7 @@ msgid ""
 msgstr ""
 "Od tebe se traži da pošalješ poruku Morseovom abecedom ili pretvoriš "
 "primljenu poruku u Morseovoj abecedi u slova ili znamenke. Kako bi naučio "
-"Morseovu abecedu, možeš pogledati mapu prijevoda koja sadrži kodove za sva "
+"Morseovu abecedu, možeš pogledati mapu prijevoda koja sadrži kôdove za sva "
 "slova i znamenke."
 
 #: activities/morse_code/FirstScreen.qml:25
@@ -18520,7 +18505,7 @@ msgid ""
 "Morse code was developed by Samuel Morse. It is a method of transmitting "
 "text information as a series of on-off tones, lights, or clicks."
 msgstr ""
-"Morseov kod je razvio Samuel Morse. To je metoda prijenosa tekstualnih "
+"Morseov kôd je razvio Samuel Morse. To je metoda prijenosa tekstualnih "
 "informacija kao niza uključenih i isključenih tonova, svjetala ili klikova."
 
 #: activities/morse_code/FirstScreen.qml:65
@@ -18537,7 +18522,7 @@ msgstr ""
 "Svaki simbol Morseove abecede predstavlja tekstualni znak (slovo ili broj) "
 "ili predznak i predstavljen je jedinstvenim nizom točaka i crtica. Trajanje "
 "crtice je tri puta duže od trajanja točke. Kako bi se povećala brzina "
-"komunikacije, kod je dizajniran tako da najčešća slova imaju kraće nizove "
+"komunikacije, kôd je dizajniran tako da najčešća slova imaju kraće nizove "
 "točaka i crtica.\n"
 "Na primjer, najčešće slovo u engleskom jeziku, slovo \"E\", ima najkraći "
 "kod, jednu točku."
@@ -18631,7 +18616,7 @@ msgstr "Pretvori poruku u riječ."
 #: activities/mosaic/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Rebuild the mosaic"
-msgstr "Ponovno izgradi mozaik"
+msgstr "Dupliciraj mozaik"
 
 #. Help title
 #: activities/mosaic/ActivityInfo.qml:17
@@ -18697,8 +18682,8 @@ msgid ""
 "Form mills (lines of 3 pieces) to remove Tux's pieces until he has only 2 "
 "pieces left or can not move anymore."
 msgstr ""
-"Formiraj mlinove (linije od 3 komada) kako bi uklonili Tuxove dijelove dok "
-"mu ne ostanu samo 2 komada ili se više ne može pomicati."
+"Formiraj mlinove (linije od 3 žetona) kako bi uklonio Tuxove žetone tako da "
+"mu ostanu samo 2 komada ili dok se više ne može pomicati na ploči."
 
 #. Help manual
 #: activities/nine_men_morris/ActivityInfo.qml:24
@@ -18801,7 +18786,7 @@ msgstr "Pokušaj ponovno"
 #: activities/nine_men_morris_2players/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Nine men's morris (with a friend)"
-msgstr "Mlin (s prijateljem)"
+msgstr "Mlin (protiv prijatelja)"
 
 #. Help goal
 #: activities/nine_men_morris_2players/ActivityInfo.qml:20
@@ -18810,8 +18795,8 @@ msgid ""
 "Form mills (lines of 3 pieces) to remove your opponent's pieces until your "
 "opponent has only 2 pieces left or can not move anymore."
 msgstr ""
-"Formiraj mlinove (linije od 3 komada) kako bi uklonio protivnikove figure "
-"sve dok protivniku ne preostanu samo 2 figure ili se više ne može pomaknuti."
+"Formiraj mlinove (linije od 3 žetona) kako bi uklonio protivnikove žetone "
+"tako da mu ostanu samo 2 komada ili dok se više ne može pomicati na ploči."
 
 #. Help manual
 #: activities/nine_men_morris_2players/ActivityInfo.qml:24
@@ -18827,13 +18812,13 @@ msgstr ""
 #: activities/note_names/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
 msgid "Name that note"
-msgstr "Imenuj tu notu"
+msgstr "Imenuj notu"
 
 #. Help title
 #: activities/note_names/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Learn the names of the notes, in bass and treble clef."
-msgstr "Naučite nazive nota, u basovom i visokotonskom ključu."
+msgstr "Nauči nazive nota, u basovom i visokotonskom ključu."
 
 #. Help goal
 #: activities/note_names/ActivityInfo.qml:23
@@ -18842,8 +18827,8 @@ msgid ""
 "Develop a good understanding of note position and naming convention. Prepare "
 "for the 'Play Piano' and 'Piano Composition' activities."
 msgstr ""
-"Razvij dobro razumijevanje položaja nota i konvencije imenovanja. Pripremi "
-"se za aktivnosti 'Sviraj glasovir' i 'Klavirska skladba'."
+"Razvij solidno razumijevanje položaja nota na crtovlju i konvencije njihova "
+"imenovanja. Priprema za aktivnosti 'Sviraj klavir' i 'Klavirska kompozicija'."
 
 #. Help manual
 #: activities/note_names/ActivityInfo.qml:27
@@ -18900,7 +18885,7 @@ msgstr ""
 #: activities/number_sequence/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Number sequence"
-msgstr "Niz brojeva"
+msgstr "Slijedi niz brojeva"
 
 #. Help title
 #: activities/number_sequence/ActivityInfo.qml:17
@@ -18938,10 +18923,10 @@ msgid ""
 "corner."
 msgstr ""
 "Uhvati oblake s neparnim ili parnim brojem, u točnom redoslijedu. Pomoću "
-"tipkovnice koristi tipke sa strelicama za pomicanje helikoptera. S "
-"pokazivačkim uređajem samo klikni ili dodirni ciljnu lokaciju. Da bi znao "
-"koji broj moraš uhvatiti, možeš ga zapamtiti ili provjeriti broj u donjem "
-"desnom kutu."
+"tipkovnice koristi tipke sa strelicama za pomicanje helikoptera. U slučaju "
+"da koristiš uređaj sa zaslonom osjetljivim na dodir, samo klikni ili dodirni "
+"ciljnu lokaciju. Da bi znao koji broj moraš uhvatiti, možeš ga zapamtiti ili "
+"provjeriti broj u donjem desnom kutu."
 
 #: activities/numbers-odd-even/NumbersOddEven.qml:36
 msgctxt "NumbersOddEven|"
@@ -19068,7 +19053,7 @@ msgstr ""
 #: activities/ordering_alphabets/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Learn the alphabetical order."
-msgstr "Nauči abecedni red."
+msgstr "Nauči abecedni redoslijed."
 
 #. Help manual
 #: activities/ordering_alphabets/ActivityInfo.qml:30
@@ -19299,7 +19284,7 @@ msgstr "Silazni redoslijed, 8 nasumičnih brojeva između 2 i 30."
 #: activities/ordering_sentences/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Ordering sentences"
-msgstr "Redoslijed rečenica"
+msgstr "Redoslijed riječi u rečenici"
 
 #. Help title
 #: activities/ordering_sentences/ActivityInfo.qml:22
@@ -19389,13 +19374,13 @@ msgstr ""
 #: activities/oware/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Play oware (against Tux)"
-msgstr "Igraj Oware (protiv Tuxa)"
+msgstr "Mankala (protiv Tuxa)"
 
 #. Help title
 #: activities/oware/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Play the Oware strategy game against Tux."
-msgstr "Igrajte stratešku igru Oware protiv Tuxa."
+msgstr "Igrajte stratešku igru Mankala protiv Tuxa."
 
 #. Help goal
 #: activities/oware/ActivityInfo.qml:19
@@ -19408,10 +19393,10 @@ msgid ""
 "seeds, it is possible for the game to end in a draw, where each player has "
 "captured 24."
 msgstr ""
-"Igra počinje s četiri sjemena u svakoj kući. Cilj igre je uhvatiti više "
-"sjemenki od protivnika. Budući da igra ima samo 48 sjemenki, uhvatiti 25 "
-"dovoljno je za pobjedu u igri. Budući da postoji paran broj nositelja, "
-"moguće je da igra završi neriješeno, pri čemu svaki igrač ima 24."
+"Igra počinje s četiri sjemena u svakom polju. Cilj igre je prikupiti više "
+"sjemenki nego drugi igrač. Budući da igra ima samo 48 sjemenki, za pobjedu "
+"je dovoljno prikupiti 25 sjemenki. Budući da postoji paran broj sjemenki, "
+"moguće je da igra završi neriješeno što znači da svaki igrač ima 24 sjemenke."
 
 #. Help manual
 #: activities/oware/ActivityInfo.qml:23
@@ -19480,13 +19465,13 @@ msgstr "Nevažeći potez!"
 #: activities/oware_2players/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Play oware (with a friend)"
-msgstr "Igraj Oware (s prijateljem)"
+msgstr "Mankala (protiv prijatelja)"
 
 #. Help title
 #: activities/oware_2players/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Play the Oware strategy game with a friend."
-msgstr "Igraj stratešku igru Oware s prijateljem."
+msgstr "Igraj stratešku igru Mankala s prijateljem."
 
 #. Activity title
 #: activities/paintings/ActivityInfo.qml:20
@@ -19510,7 +19495,7 @@ msgstr "Prostorni prikaz."
 #: activities/paintings/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Mouse-manipulation: movement, drag and drop."
-msgstr "Manipulacija mišem: kretanje, povlačenje i ispuštanje."
+msgstr "Upravljanje mišem: kretanje, povlačenje i ispuštanje."
 
 #. Help manual
 #: activities/paintings/ActivityInfo.qml:29
@@ -19637,7 +19622,7 @@ msgstr "Utagawa Hiroshige, Horse-mackerel and Prawn - 1840"
 #: activities/path_decoding/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Path decoding"
-msgstr "Dekodiranje puta"
+msgstr "Slijedi put"
 
 #. Help title
 #: activities/path_decoding/ActivityInfo.qml:16
@@ -19686,7 +19671,7 @@ msgstr "%1x%2 mreža."
 #: activities/path_decoding_relative/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Path decoding relative"
-msgstr "Dekodiranje puta (relativno)"
+msgstr "Slijedi put (relativno)"
 
 #: activities/path_decoding_relative/ActivityInfo.qml:24
 #: activities/path_encoding_relative/ActivityInfo.qml:24
@@ -19708,7 +19693,7 @@ msgstr ""
 #: activities/path_encoding/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Path encoding"
-msgstr "Kodiranje putanje"
+msgstr "Definiraj put"
 
 #. Help title
 #: activities/path_encoding/ActivityInfo.qml:16
@@ -19748,7 +19733,7 @@ msgstr "Pogreške: %1"
 #: activities/path_encoding_relative/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Path encoding relative"
-msgstr "Kodiranje putanje (relativno)"
+msgstr "Definiraj put (relativno)"
 
 #. Activity title
 #: activities/penalty/ActivityInfo.qml:15
@@ -19793,7 +19778,7 @@ msgstr "Pritisni ili dodirni loptu kako bi je vratio u početni položaj."
 #: activities/photo_hunter/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Photo hunter"
-msgstr "Lovac na fotografije"
+msgstr "Pronađi razlike"
 
 #. Help title
 #: activities/photo_hunter/ActivityInfo.qml:17
@@ -19854,12 +19839,12 @@ msgid ""
 "education or MuseScore (https://musescore.org), an open source music "
 "notation tool."
 msgstr ""
-"Razvijaj razumijevanje glazbene kompozicije i povećaj interes za stvaranje "
+"Razvijaj razumijevanje glazbene kompozicije i povećaj interes za skladanje "
 "glazbe pomoću klavirske tipkovnice. Ova aktivnost pokriva mnoge temeljne "
 "aspekte glazbe, ali ima još mnogo toga za istražiti o skladanju glazbe. Ako "
 "uživaš u ovoj aktivnosti, ali želiš napredniji alat, pokušaj preuzeti Minuet "
-"(https://minuet.kde.org/), softver otvorenog koda za glazbeno obrazovanje "
-"ili MuseScore (https://musescore.org), otvoreni izvor alat za notni zapis."
+"(https://minuet.kde.org/), softver otvorenog kôda za glazbeno obrazovanje "
+"ili MuseScore (https://musescore.org), otvoreni izvor alat za notne zapise."
 
 #. Help prerequisite
 #: activities/piano_composition/ActivityInfo.qml:23
@@ -19971,7 +19956,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "The synthesizer original code is from https://github.com/vsr83/miniSynth"
 msgstr ""
-"Izvorni kod sintesajzera je dostupna na https://github.com/vsr83/miniSynth"
+"Izvorni kôd sintesajzera je dostupna na https://github.com/vsr83/miniSynth"
 
 #. BPM is the abbreviation for Beats Per Minute.
 #: activities/piano_composition/BpmMeter.qml:48
@@ -20498,7 +20483,7 @@ msgstr "B♭%1"
 #: activities/planegame/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Numbers in order"
-msgstr "Brojevi redom"
+msgstr "Slijed brojeva"
 
 #. Help title
 #: activities/planegame/ActivityInfo.qml:17
@@ -20515,10 +20500,11 @@ msgid ""
 "location. To know which number you have to catch you can either remember it "
 "or check the number on the bottom right corner."
 msgstr ""
-"Uhvati oblake u rastućem redoslijedu. Pomoću tipkovnice koristi tipke sa "
-"strelicama za pomicanje helikoptera. S pokazivačkim uređajem samo klikni ili "
-"dodirni ciljnu lokaciju. Da bi znali koji broj moraš uhvatiti, možeš ga "
-"zapamtiti ili provjeriti broj u donjem desnom kutu."
+"Uhvati oblake u rastućem redoslijedu. Ukoliko koristiš tipkovnicu tada za "
+"pomicanje helikoptera upravljaš koristeći tipke sa strelicama. U slučaju da "
+"koristiš uređaj sa zaslonom osjetljivim na dodir, samo klikni ili dodirni "
+"ciljnu lokaciju. Da bi znao koji broj moraš uhvatiti, možeš ga zapamtiti ili "
+"provjeriti broj u donjem desnom kutu."
 
 #: activities/play_piano/ActivityConfig.qml:34
 msgctxt "ActivityConfig|"
@@ -20543,7 +20529,7 @@ msgid ""
 "Understand how the piano keyboard can play music as written on the musical "
 "staff."
 msgstr ""
-"Shvati kako klavirska tipkovnica može reproducirati glazbu prema notnom "
+"Razumjeti kako klavirska tipkovnica može reproducirati glazbu prema notnom "
 "zapisu."
 
 #. Help prerequisite
@@ -20604,13 +20590,13 @@ msgstr "Nastavi"
 #: activities/play_rhythm/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Play rhythm"
-msgstr "Sviraj ritam"
+msgstr "Prati ritam"
 
 #. Help goal
 #: activities/play_rhythm/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid "Learn to follow a rhythm accurately."
-msgstr "Naučite točno pratiti ritam."
+msgstr "Nauči točno pratiti ritam."
 
 #. Help prerequisite
 #: activities/play_rhythm/ActivityInfo.qml:26
@@ -20682,7 +20668,7 @@ msgid ""
 "Use the metronome to estimate the time intervals and play the rhythm "
 "correctly."
 msgstr ""
-"Pomoću metronoma procijeni vremenske intervale i pravilno sviraj ritam."
+"Pomoću metronoma procijeni vremenske intervale i pravilno  sviraj ritam."
 
 #: activities/play_rhythm/PlayRhythm.qml:115
 msgctxt "PlayRhythm|"
@@ -20716,7 +20702,7 @@ msgstr "Nastavi"
 #: activities/positions/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Positions"
-msgstr "Pozicije"
+msgstr "Odredi položaj"
 
 #. Help title
 #: activities/positions/ActivityInfo.qml:17
@@ -20739,7 +20725,7 @@ msgid ""
 "answer."
 msgstr ""
 "Vidjeti ćeš različite slike koje predstavljaju dječaka i kutiju, moraš "
-"saznati položaj dječaka u odnosu na kutiju i odabrati točan odgovor."
+"razmisliti o položaju dječaka u odnosu na kutiju i odabrati točan odgovor."
 
 #: activities/positions/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
@@ -20858,7 +20844,7 @@ msgstr "Odaberi sliku na kojoj je dijete s lijeve strane okvira."
 #: activities/programmingMaze/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Programming maze"
-msgstr "Labirint za programiranje"
+msgstr "Nauči programirati"
 
 #. Help title
 #: activities/programmingMaze/ActivityInfo.qml:18
@@ -20876,8 +20862,8 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Tux is hungry. Help him find fish by programming him to the correct ice spot."
 msgstr ""
-"Tux je gladan. Pomozi mu pronaći ribu tako što ćeš ga programirati da one na "
-"pravo mjesto na ledu."
+"Tux je gladan. Pomozi mu pronaći ribu tako što ćeš programirati da ode "
+"uhvatiti ribu."
 
 #. Help prerequisite
 #: activities/programmingMaze/ActivityInfo.qml:23
@@ -20932,7 +20918,7 @@ msgstr ""
 #: activities/programmingMaze/ActivityInfo.qml:32
 msgctxt "ActivityInfo|"
 msgid "Enter: run the code or reset Tux when it fails to reach the fish"
-msgstr "Enter: pokreni kod ili resetiraj Tuxa kada ne uspije doći do ribe"
+msgstr "Enter: pokreni kôd ili resetiraj Tuxa kada ne uspije doći do ribe"
 
 #: activities/programmingMaze/ActivityInfo.qml:33
 msgctxt "ActivityInfo|"
@@ -21000,7 +20986,7 @@ msgstr "Glavna funkcija:"
 #: activities/programmingMaze/programmingMaze.js:105
 msgctxt "programmingMaze|"
 msgid "The execution of the code starts here."
-msgstr "Izvršavaje koda počinje ovdje."
+msgstr "Izvršavanje kôda počinje ovdje."
 
 #: activities/programmingMaze/programmingMaze.js:106
 msgctxt "programmingMaze|"
@@ -21032,7 +21018,7 @@ msgid ""
 "the code by calling it where needed</b>."
 msgstr ""
 "<b>Procedura</b> je višekratni skup uputa koje se mogu <b>upotrebljavati u "
-"kodu pozivanjem gdje je potrebno</b>."
+"kôdu pozivanjem gdje je potrebno</b>."
 
 #: activities/programmingMaze/programmingMaze.js:116
 msgctxt "programmingMaze|"
@@ -21042,7 +21028,7 @@ msgid ""
 "Function</b> label."
 msgstr ""
 "-Za <b>prebacivanje</b> između <b>područja procedura</b> i <b>područja "
-"glavne funkcije</b> za dodavanje koda, klikni na <b>Procedura</b> ili na "
+"glavne funkcije</b> za dodavanje kôda, klikni na <b>Procedura</b> ili na "
 "<b>Glavna funkcija</b>."
 
 #: activities/programmingMaze/programmingMaze.js:123
@@ -21067,7 +21053,7 @@ msgid ""
 "label."
 msgstr ""
 "-Za <b>prebacivanje</b> između <b>područja petlje</b> i <b>područja glavne "
-"funkcije</b> za dodavanje koda, klikni na <b>Petlja</b> ili na <b>Glavna "
+"funkcije</b> za dodavanje kôda, klikni na <b>Petlja</b> ili na <b>Glavna "
 "funkcija</b>."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:193
@@ -21110,7 +21096,7 @@ msgstr "Korištenje glavne funkcije i područja petlje."
 #: activities/railroad/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Railroad activity"
-msgstr "Željeznička aktivnost"
+msgstr "Željeznička kompozicija"
 
 #. Help title
 #: activities/railroad/ActivityInfo.qml:19
@@ -21199,7 +21185,7 @@ msgstr "Pročitaj popis riječi i reci nalazi li se neka riječ u njemu."
 #: activities/readingv/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Reading training in a limited time."
-msgstr "Trening čitanja u ograničenom vremenu."
+msgstr "Vježbanje čitanja u zadanom vremenu."
 
 #. Help manual
 #: activities/readingh/ActivityInfo.qml:24
@@ -21258,7 +21244,7 @@ msgstr ""
 #: activities/redraw/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Redraw the given image"
-msgstr "Ponovno nacrtaj zadanu sliku"
+msgstr "Nacrtaj sliku"
 
 #. Help title
 #: activities/redraw/ActivityInfo.qml:17
@@ -21315,7 +21301,7 @@ msgstr "Velike rešetke."
 #: activities/redraw_symmetrical/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Mirror the given image"
-msgstr "Preslikaj zadanu sliku"
+msgstr "Zrcalna slika"
 
 #. Help title
 #: activities/redraw_symmetrical/ActivityInfo.qml:17
@@ -21461,7 +21447,7 @@ msgstr "Odaberite Domino reprezentaciju"
 #: activities/reversecount/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Count intervals"
-msgstr "Broji intervale"
+msgstr "Brojanje intervala"
 
 #. Help title
 #. ----------
@@ -21679,7 +21665,7 @@ msgstr "Arapski broj: %1"
 #: activities/scalesboard/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Balance the scales properly"
-msgstr "Pravilno uravnoteži vagu"
+msgstr "Uravnoteži vagu"
 
 #. Help title
 #: activities/scalesboard/ActivityInfo.qml:17
@@ -22066,7 +22052,7 @@ msgstr ""
 #: activities/scalesboard_weight_avoirdupois/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Balance using the imperial system of units"
-msgstr "Ravnoteža pomoću imperijalnog sustava jedinica"
+msgstr "Uravnoteži pomoću imperijalnog sustava jedinica"
 
 #. Help manual
 #: activities/scalesboard_weight_avoirdupois/ActivityInfo.qml:24
@@ -22208,13 +22194,13 @@ msgstr "Prikaz brojača"
 #: activities/share/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Share pieces of candy"
-msgstr "Podijeli komadiće slatkiša"
+msgstr "Podijeli slatkiše"
 
 #. Help title
 #: activities/share/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Try to split the pieces of candy between a given number of children."
-msgstr "Pokušaj podijeliti komadiće slatkiša između određenog broja djece."
+msgstr "Pokušaj podijeliti slatkiše između određenog broja djece."
 
 #. Help goal
 #: activities/share/ActivityInfo.qml:20
@@ -22237,8 +22223,7 @@ msgid ""
 "rectangle."
 msgstr ""
 "Slijedi upute prikazane na ekranu: prvo povuci zadani broj dječaka/"
-"djevojčica u središte, zatim povuci komadiće slatkiša u pravokutnik svakog "
-"djeteta."
+"djevojčica u središte, zatim povuci slatkiše u pravokutnik svakog djeteta."
 
 #: activities/share/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
@@ -22260,7 +22245,7 @@ msgid ""
 msgstr ""
 "Paolo želi podijeliti 2 bombona na jednake dijelove između 2 svoje "
 "prijateljice. Možeš li mu pomoći? Prvo stavi djecu u sredinu, a zatim dovuci "
-"komadiće slatkiša do svakog od njih."
+"slatkiše do svakog od njih."
 
 #: activities/share/resource/1/Data.qml:28
 msgctxt "Data|"
@@ -22282,8 +22267,8 @@ msgid ""
 "Some of his friends already have pieces of candy. He wants to give them 7 "
 "more pieces so that they all have the same amount."
 msgstr ""
-"Neki od njegovih prijatelja već imaju komadiće slatkiša. Želi im dati još 7 "
-"komada kako bi svi imali isto."
+"Neki od njegovih prijatelja već imaju slatkiše. Želi im dati još 7 komada "
+"kako bi svi imali isto."
 
 #: activities/share/resource/1/Data.qml:58
 msgctxt "Data|"
@@ -22311,8 +22296,7 @@ msgid ""
 "girl and 2 boys. Can she split the pieces of candy equally?"
 msgstr ""
 "Marija želi podijeliti 6 bombona na jednake dijelove između 3 svoja "
-"prijatelja: 1 djevojčicu i 2 dječaka. Može li jednako podijeliti komadiće "
-"slatkiša?"
+"prijatelja: 1 djevojčicu i 2 dječaka. Može li jednako podijeliti slatkiše?"
 
 #: activities/share/resource/1/Data.qml:90
 msgctxt "Data|"
@@ -22402,8 +22386,7 @@ msgid ""
 "candy. Help her split the pieces of candy equally between her friends."
 msgstr ""
 "Helena ima 5 prijatelja: 2 dječaka i 3 djevojčice. Želi im dati 10 bombona. "
-"Pomozi joj da ravnomjerno podijeli komadiće slatkiša među svojim "
-"prijateljima."
+"Pomozi joj da ravnomjerno podijeli slatkiše među svojim prijateljima."
 
 #: activities/share/resource/1/Data.qml:194
 msgctxt "Data|"
@@ -22483,8 +22466,7 @@ msgid ""
 "girls and 2 boys. Can she split the pieces of candy equally?"
 msgstr ""
 "Marija želi podijeliti 25 bombona na jednake dijelove između 5 svojih "
-"prijatelja: 3 djevojčice i 2 dječaka. Može li jednako podijeliti komadiće "
-"slatkiša?"
+"prijatelja: 3 djevojčice i 2 dječaka. Može li jednako podijeliti slatkiše?"
 
 #: activities/share/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -22535,8 +22517,8 @@ msgid ""
 "candy so that they all have the same amount?"
 msgstr ""
 "Hrvoje želi podijeliti 8 bombona između 3 svoja prijatelja: 1 dječaka i 2 "
-"djevojčice. Dječak već ima jedan slatkiš. Može li podijeliti komadiće "
-"slatkiša tako da svi imaju jednaku količinu?"
+"djevojčice. Dječak već ima jedan slatkiš. Može li podijeliti slatkiše tako "
+"da svi imaju jednaku količinu?"
 
 #: activities/share/resource/2/Data.qml:90
 msgctxt "Data|"
@@ -22557,8 +22539,8 @@ msgid ""
 "of candy so that they all have the same amount?"
 msgstr ""
 "Hrvoje želi podijeliti 12 bombona između 3 svoja prijatelja: 1 dječaka i 2 "
-"djevojčice. Dječak već ima neke bombone. Može li podijeliti komadiće "
-"slatkiša tako da svi imaju jednaku količinu?"
+"djevojčice. Dječak već ima neke bombone. Može li podijeliti slatkiše tako da "
+"svi imaju jednaku količinu?"
 
 #: activities/share/resource/2/Data.qml:122
 msgctxt "Data|"
@@ -22589,7 +22571,7 @@ msgid ""
 msgstr ""
 "Alisi je ostalo 14 bombona. Želi ih ravnopravno podijeliti među svojim "
 "prijateljima. Dečki već imaju neke slatkiše. Možeš li joj pomoći da jednako "
-"podijeli komadiće slatkiša?"
+"podijeli slatkiše?"
 
 #: activities/share/resource/2/Data.qml:164
 msgctxt "Data|"
@@ -22643,7 +22625,7 @@ msgid ""
 msgstr ""
 "Za svoj rođendan, Elizabeta ima 8 bombona koje će podijeliti s 3 svoja "
 "prijatelja na jednake dijelove: 2 djevojčice i 1 dječak. Kako bi trebala "
-"podijeliti komadiće slatkiša među svojim prijateljima?"
+"podijeliti slatkiše među svojim prijateljima?"
 
 #: activities/share/resource/2/Data.qml:226
 msgctxt "Data|"
@@ -22665,7 +22647,7 @@ msgid ""
 msgstr ""
 "Đuro želi podijeliti 14 bombona na jednake dijelove između 4 svoja "
 "prijatelja: 2 djevojčice i 2 dječaka. Može li ravnopravno podijeliti "
-"komadiće slatkiša među svojim prijateljima?"
+"slatkiše među svojim prijateljima?"
 
 #: activities/share/resource/2/Data.qml:246
 msgctxt "Data|"
@@ -22675,7 +22657,7 @@ msgid ""
 "friends?"
 msgstr ""
 "Marija želi podijeliti 23 bombona na jednake dijelove između 5 svojih "
-"prijatelja: 3 djevojčice i 2 dječaka. Može li podijeliti komadiće slatkiša "
+"prijatelja: 3 djevojčice i 2 dječaka. Može li podijeliti slatkiše "
 "ravnopravno među svojim prijateljima?"
 
 #: activities/share/resource/3/Data.qml:13
@@ -22768,7 +22750,7 @@ msgstr "Izbroji točkice na kocki prije nego što padne na tlo."
 #: activities/smallnumbers/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "In a limited time, count the number of dots."
-msgstr "U ograničenom vremenu izbroji točkice."
+msgstr "U zadanom vremenu izbroji točkice na igraćoj kockici."
 
 #. Help prerequisite
 #: activities/smallnumbers/ActivityInfo.qml:22
@@ -22892,7 +22874,7 @@ msgstr "Prebroji broj na dominu prije nego što padne na tlo."
 #: activities/smallnumbers2/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Count a number in a limited time."
-msgstr "Prebroji broj u ograničenom vremenu."
+msgstr "Prebroji točkice na dominu u zadanom vremenu."
 
 #. Help manual
 #: activities/smallnumbers2/ActivityInfo.qml:24
@@ -22977,7 +22959,7 @@ msgid ""
 msgstr ""
 "Saznaj informacije o Sunčevom sustavu. Ako želiš naučiti više o astronomiji, "
 "pokušaj preuzeti KStars (https://edu.kde.org/kstars/) ili Stellarium "
-"(https://stellarium.org/) koji su besplatni softver za astronomiju."
+"(https://stellarium.org/), besplatni softver o astronomiji."
 
 #. Help manual
 #: activities/solar_system/ActivityInfo.qml:27
@@ -24394,8 +24376,8 @@ msgstr ""
 "'regije'). U GComprisu počinjemo na nižim razinama s jednostavnijom verzijom "
 "koja koristi simbole i bez regija. U svim slučajevima rešetka je "
 "predstavljena različitim simbolima ili brojevima danim u nekim ćelijama "
-"('datosti'). Svaki redak, stupac i regija moraju sadržavati samo jednu "
-"instancu svakog simbola ili broja (Izvor &lt;https://en.wikipedia.org/wiki/"
+"('datost'). Svaki redak, stupac i regija moraju sadržavati samo jednu "
+"instancu svakog simbola ili broja (Izvor: &lt;https://en.wikipedia.org/wiki/"
 "Sudoku&gt;)."
 
 #. Help prerequisite
@@ -24500,7 +24482,7 @@ msgstr "Ova stavka nije dobro postavljena."
 #: activities/tangram/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "The tangram puzzle game"
-msgstr "Slagalica tangram"
+msgstr "Tangram"
 
 #. Help title
 #: activities/tangram/ActivityInfo.qml:17
@@ -24525,17 +24507,18 @@ msgid ""
 "    1 parallelogram (sides of 1 and square root of 2)\n"
 "    "
 msgstr ""
-"Iz Wikipedije, slobodne enciklopedije. Tangram (kineski: doslovno 'sedam "
-"ploča lukavstva') je kineska zagonetka. Dok se za tangram često kaže da je "
-"drevan, njegovo postojanje je potvrđeno tek 1800. godine. Sastoji se od 7 "
-"dijelova, koji se nazivaju tan, koji se uklapaju u kvadrat; Koristeći "
-"kvadratnu stranicu kao 1 jedinicu, 7 dijelova sadrži:\n"
+"Tangram (kineski: doslovno 'sedam ploča lukavstva') je kineska zagonetka. "
+"Dok se za tangram često kaže da je drevan, njegovo postojanje je potvrđeno "
+"tek 1800. godine. Sastoji se od 7 dijelova, koji se nazivaju tan, koji se "
+"uklapaju u kvadrat; Koristeći kvadratnu stranicu kao 1 jedinicu, 7 dijelova "
+"sadrži:\n"
 "     5 pravokutnih jednakokračnih trokuta, uključujući:\n"
 "         - 2 mala jednakokračna pravokutna trokuta\n"
 "         - 1 jednakokračni pravokutni trokut srednje veličine)\n"
 "         - 2 velika jednakokračna pravokutna trokuta\n"
 "     1 kvadrat i\n"
-"     1 paralelogram"
+"     1 paralelogram\n"
+"Izvor: Wikipedia"
 
 #. Help manual
 #: activities/tangram/ActivityInfo.qml:31
@@ -24555,7 +24538,7 @@ msgstr ""
 #: activities/target/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Practice addition with a target game"
-msgstr "Vježbajte zbrajanje s igrom mete"
+msgstr "Vježbaj zbrajanje uz pikado"
 
 #. Help title
 #: activities/target/ActivityInfo.qml:17
@@ -24567,7 +24550,7 @@ msgstr "Pogodi metu i broji bodove."
 #: activities/target/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Throw darts at a target and count your score."
-msgstr "Bacaj strelice u metu i broji svoj rezultat."
+msgstr "Bacaj strelice u metu i zbrajaj ostvareni rezultat."
 
 #. Help prerequisite
 #: activities/target/ActivityInfo.qml:22
@@ -24630,7 +24613,7 @@ msgstr "Pronađite komplement desetice svakog broja."
 #: activities/tens_complement_find/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Learn to find ten's complement."
-msgstr "Naučite pronaći komplement desetica."
+msgstr "Nauči pronaći komplement desetica."
 
 #. Help prerequisite
 #: activities/tens_complement_find/ActivityInfo.qml:21
@@ -24740,7 +24723,7 @@ msgstr "Napravi 3 para od 6 broja."
 #: activities/tens_complement_use/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Use ten's complement"
-msgstr "Koristite komplement desetica"
+msgstr "Koristi komplement desetica"
 
 #. Help title
 #: activities/tens_complement_use/ActivityInfo.qml:16
@@ -24752,7 +24735,7 @@ msgstr "Upotrijebite komplement desetica da pojednostavite operaciju."
 #: activities/tens_complement_use/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Learn a practical use of ten's complement."
-msgstr "Naučite praktičnu upotrebu komplementa desetica."
+msgstr "Nauči praktičnu upotrebu komplementa desetica."
 
 #. Help prerequisite
 #: activities/tens_complement_use/ActivityInfo.qml:21
@@ -24791,7 +24774,7 @@ msgstr "Rezultat između 30 i 50."
 #: activities/tic_tac_toe/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
 msgid "Tic tac toe (against Tux)"
-msgstr "Tic tac toe (protiv Tuxa)"
+msgstr "Križić-kružić (protiv Tuxa)"
 
 #. Help title
 #: activities/tic_tac_toe/ActivityInfo.qml:20
@@ -24808,8 +24791,8 @@ msgid ""
 "Place three marks in any horizontal, vertical, or diagonal row to win the "
 "game."
 msgstr ""
-"Postavi tri oznake u bilo koji vodoravni, okomiti ili dijagonalni red kako "
-"bi pobijedio u igri."
+"Postavi tvoje tri oznake u bilo koji vodoravni, okomiti ili dijagonalni red "
+"kako bi pobijedio u igri."
 
 #. Help manual
 #: activities/tic_tac_toe/ActivityInfo.qml:27
@@ -24830,7 +24813,7 @@ msgstr "Tux će igrati bolje kada povećaš razinu."
 #: activities/tic_tac_toe_2players/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
 msgid "Tic tac toe (with a friend)"
-msgstr "Tic tac toe (s prijateljem)"
+msgstr "Križić-kružić (protiv prijatelja)"
 
 #. Help manual
 #: activities/tic_tac_toe_2players/ActivityInfo.qml:27
@@ -24846,7 +24829,7 @@ msgstr ""
 #: activities/traffic/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "A sliding-block puzzle game"
-msgstr "Slagalica s kliznim blokovima"
+msgstr "Klizna slagalica"
 
 #. Help title
 #: activities/traffic/ActivityInfo.qml:17
@@ -25016,13 +24999,13 @@ msgstr "Upiši riječi koje padaju prije nego što dotaknu tlo."
 #: activities/wordsgame/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Keyboard training."
-msgstr "Obuka za tipkovnicu."
+msgstr "Vježbanje korištenja tipkovnice (daktilografija)."
 
 #. Help prerequisite
 #: activities/wordsgame/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid "Keyboard manipulation."
-msgstr "Manipulacija tipkovnicom."
+msgstr "Korištenje tipkovnice."
 
 #. Help manual
 #: activities/wordsgame/ActivityInfo.qml:24
