@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2014-12-25 01:10+0000\n"
-"PO-Revision-Date: 2023-07-02 10:57+0200\n"
+"PO-Revision-Date: 2023-07-12 07:47+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca@valencia\n"
@@ -3135,13 +3135,13 @@ msgstr ""
 #: activities/calcudoku/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Calcudoku"
-msgstr ""
+msgstr "Calcudoku"
 
 #. Help title
 #: activities/calcudoku/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Solve the Calcudoku."
-msgstr ""
+msgstr "Resol Calcudoku."
 
 #. Help goal
 #: activities/calcudoku/ActivityInfo.qml:19
@@ -3150,15 +3150,14 @@ msgid ""
 "Develop your logical reasoning skills: data linking, deduction and spatial "
 "location while using calculation."
 msgstr ""
+"Desenvolupeu les habilitats de raonament lògic: enllaç de dades, deducció i "
+"ubicació espacial mentre s'utilitza el càlcul."
 
 #. Help prerequisite
 #: activities/calcudoku/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Completing the puzzle requires patience and logical ability."
 msgctxt "ActivityInfo|"
 msgid "Completing the puzzle requires patience and arithmetic abilities."
-msgstr "Completar el trencaclosques requerix paciència i habilitat lògica."
+msgstr "Completar el trencaclosques requerix paciència i habilitat aritmètica."
 
 #. Help manual
 #: activities/calcudoku/ActivityInfo.qml:23
@@ -3171,51 +3170,44 @@ msgid ""
 "cage, when combined using the operator, must produce the result. Cages made "
 "of only one cell directly provide the number to enter."
 msgstr ""
+"Seleccioneu un nombre de la llista i feu clic en la seua posició de "
+"destinació per a emplenar la quadrícula. Cada nombre ha d'aparéixer només "
+"una vegada en una fila i en una columna. Les gàbies són grups de cel·les que "
+"proporcionen informació sobre com emplenar-les. Les gàbies fetes de més "
+"d'una cèl·lula proporcionen un resultat i un operador: tots els nombres de "
+"la gàbia, quan es combinen utilitzant l'operador, han de produir el "
+"resultat. Les gàbies fetes només amb una cel·la proporcionen directament el "
+"nombre a introduir."
 
 #. + is the unicode character for addition mathematical operator (+)
 #: activities/calcudoku/resource/1/Data.qml:66
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Small grids."
 msgctxt "Data|"
 msgid "Small grids with + operator."
-msgstr "Quadrícules xicotetes."
+msgstr "Quadrícules xicotetes amb l'operador +."
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-)
 #: activities/calcudoku/resource/2/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Small grids."
 msgctxt "Data|"
 msgid "Small grids with + and − operators."
-msgstr "Quadrícules xicotetes."
+msgstr "Quadrícules xicotetes amb els operadors + i −."
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-), × for multiplication (*)
 #: activities/calcudoku/resource/3/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Small grids."
 msgctxt "Data|"
 msgid "Small grids with +, − and × operators."
-msgstr "Quadrícules xicotetes."
+msgstr "Quadrícules xicotetes amb els operadors +, − i ×."
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-), × for multiplication (*)
 #: activities/calcudoku/resource/4/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Small grids."
 msgctxt "Data|"
 msgid "Medium grids with +, − and × operators."
-msgstr "Quadrícules xicotetes."
+msgstr "Quadrícules mitjanes amb els operadors +, − i ×."
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-), × for multiplication (*), ∕ for division (:)
 #: activities/calcudoku/resource/5/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Small grids."
 msgctxt "Data|"
 msgid "Large grids with +, −, × and ∕ operators."
-msgstr "Quadrícules xicotetes."
+msgstr "Quadrícules grans amb els operadors +, −, × i ∕."
 
 #. Activity title
 #: activities/calendar/ActivityInfo.qml:15
