@@ -17,10 +17,10 @@ ActivityInfo {
     //: Activity title
     title: qsTr("Grammatical classes")
     //: Help title
-    description: qsTr("Learn to identify grammatical classes.")
+    description: qsTr("Identify grammatical classes in the given sentences.")
     //intro: "Assign the requested grammatical classes to the corresponding words."
     //: Help goal
-    goal: qsTr("Learn grammatical classes.")
+    goal: qsTr("Learn to identify grammatical classes.")
     //: Help prerequisite
     prerequisite: ""
     //: Help manual
