@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-07-11 00:41+0000\n"
+"POT-Creation-Date: 2023-07-17 00:43+0000\n"
 "PO-Revision-Date: 2022-03-18 13:59+0100\n"
 "Last-Translator: Aiswarya Kaitheri Kandoth <aiswaryakk29@gmail.com>\n"
 "Language-Team: Malayalam <kde-i18n-doc@kde.org>\n"
@@ -528,6 +528,14 @@ msgid ""
 msgstr ""
 "ആരോ കീകൾ ഉപയോഗിച്ച് അഭാജ്യസംഖ്യകളിലൂടെ അക്കം തീനിയെ നയിക്കൂ. എന്നിട്ട് സ്പെയ്സ് കീ അമർത്തി "
 "ആ അക്കങ്ങൾ വിഴുങ്ങൂ."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "grammar_classes"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "grammar_analysis"
+#: activities/grammar_analysis/ActivityInfo.qml:21
+#: activities/grammar_classes/ActivityInfo.qml:21
+#, kde-format
+msgid "put here in comment the text for the intro voice"
+msgstr " "
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "graph-coloring"
 #: activities/graph-coloring/ActivityInfo.qml:18
@@ -1248,6 +1256,3 @@ msgstr "വാക്കുകൾ താഴെ എത്തുന്നതിന�
 
 #~ msgid "play checkers against the computer"
 #~ msgstr "കംപ്യൂട്ടറിന് എതിരെ ചെക്കേർസ് കളിക്കാം."
-
-#~ msgid "put here in comment the text for the intro voice"
-#~ msgstr " "

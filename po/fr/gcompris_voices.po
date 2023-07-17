@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris voices\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-07-11 00:41+0000\n"
+"POT-Creation-Date: 2023-07-17 00:43+0000\n"
 "PO-Revision-Date: 2023-01-02 12:18+0100\n"
 "Last-Translator: charruau <echarruau@gmail.com>\n"
 "Language-Team: French <kde-francophone@kde.org>\n"
@@ -557,6 +557,14 @@ msgid ""
 msgstr ""
 "Guide le croqueur vers les nombres premiers demandés pour qu'il puisse les "
 "croquer."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "grammar_classes"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "grammar_analysis"
+#: activities/grammar_analysis/ActivityInfo.qml:21
+#: activities/grammar_classes/ActivityInfo.qml:21
+#, kde-format
+msgid "put here in comment the text for the intro voice"
+msgstr "Mettez ici en commentaire le texte pour la voix d'intro."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "graph-coloring"
 #: activities/graph-coloring/ActivityInfo.qml:18
@@ -1349,9 +1357,6 @@ msgstr ""
 #~ msgstr ""
 #~ "Classez les chiffres dans le bon ordre en plaçant un chiffre dans sa "
 #~ "position correcte."
-
-#~ msgid "put here in comment the text for the intro voice"
-#~ msgstr "Mettez ici en commentaire le texte pour la voix d'intro."
 
 #~ msgid ""
 #~ "Change the planets' gravitational force by moving the sliders up and "

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-07-11 00:41+0000\n"
+"POT-Creation-Date: 2023-07-17 00:43+0000\n"
 "PO-Revision-Date: 2023-03-19 19:26+0200\n"
 "Last-Translator: Stelios <sstavra@gmail.com>\n"
 "Language-Team: Greek <kde-i18n-el@kde.org>\n"
@@ -555,6 +555,14 @@ msgid ""
 msgstr ""
 "Οδήγησε με τα βελάκια το φαγάνα των αριθμών στους πρώτους αριθμούς και "
 "πάτησε το κενό για να τους καταπιεί."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "grammar_classes"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "grammar_analysis"
+#: activities/grammar_analysis/ActivityInfo.qml:21
+#: activities/grammar_classes/ActivityInfo.qml:21
+#, kde-format
+msgid "put here in comment the text for the intro voice"
+msgstr "βάλε εδώ σε σχόλιο το κείμενο για την εισαγωγική φωνή"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "graph-coloring"
 #: activities/graph-coloring/ActivityInfo.qml:18
@@ -1333,9 +1341,6 @@ msgstr "Πληκτρολόγησε τις λέξεις πριν αυτές φθ�
 #~ msgstr ""
 #~ "Τράβηξε το βέλος για να επιλέξεις ένα τμήμα της γραμμής και άφησέ το στην "
 #~ "κενή περιοχή για να αναπαραστήσεις τον δεκαδικό αριθμό."
-
-#~ msgid "put here in comment the text for the intro voice"
-#~ msgstr "βάλε εδώ σε σχόλιο το κείμενο για την εισαγωγική φωνή"
 
 #~ msgid ""
 #~ "Change the planets' gravitational force by moving the sliders up and "

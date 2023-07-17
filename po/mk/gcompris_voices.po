@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-07-11 00:41+0000\n"
+"POT-Creation-Date: 2023-07-17 00:43+0000\n"
 "PO-Revision-Date: 2021-03-15 13:32+0100\n"
 "Last-Translator: Igor Risteski <fikio@yahoo.com>\n"
 "Language-Team: Macedonian Team (mk)\n"
@@ -563,6 +563,14 @@ msgid ""
 msgstr ""
 "Водете го јадачот на броеви со копчињата со стрелки до простите броеви и "
 "притиснете го копчето за простор (space) за да ги проголта."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "grammar_classes"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "grammar_analysis"
+#: activities/grammar_analysis/ActivityInfo.qml:21
+#: activities/grammar_classes/ActivityInfo.qml:21
+#, kde-format
+msgid "put here in comment the text for the intro voice"
+msgstr "ставете тука во коментар на текстот за воведниот глас"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "graph-coloring"
 #: activities/graph-coloring/ActivityInfo.qml:18
@@ -1328,6 +1336,3 @@ msgstr "Напишете ги зборовите на тастатурата п�
 #~ "Променете ја гравитационата сила на планетите со движење на лизгачите "
 #~ "нагоре и надолу. Бидете внимателни да не го срушите вселенскиот брод на "
 #~ "Тукс."
-
-#~ msgid "put here in comment the text for the intro voice"
-#~ msgstr "ставете тука во коментар на текстот за воведниот глас"

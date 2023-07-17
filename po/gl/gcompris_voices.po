@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-07-11 00:41+0000\n"
+"POT-Creation-Date: 2023-07-17 00:43+0000\n"
 "PO-Revision-Date: 2023-06-24 11:43+0200\n"
 "Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.io>\n"
 "Language-Team: Galician <proxecto@trasno.gal>\n"
@@ -544,6 +544,14 @@ msgid ""
 msgstr ""
 "Guía o comedor de números coas teclas de frecha aos números primos "
 "necesarios e preme espazo para tragalos."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "grammar_classes"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "grammar_analysis"
+#: activities/grammar_analysis/ActivityInfo.qml:21
+#: activities/grammar_classes/ActivityInfo.qml:21
+#, kde-format
+msgid "put here in comment the text for the intro voice"
+msgstr "pon aquí en comentario o texto para a voz de introdución"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "graph-coloring"
 #: activities/graph-coloring/ActivityInfo.qml:18
@@ -1300,9 +1308,6 @@ msgstr "Preme as palabras no teclado antes de que cheguen ao chan."
 
 #~ msgid "play checkers against the computer"
 #~ msgstr "Xoga ás damas contra o computador"
-
-#~ msgid "put here in comment the text for the intro voice"
-#~ msgstr "pon aquí en comentario o texto para a voz de introdución"
 
 #~ msgid ""
 #~ "Change the planets' gravitational force by moving the sliders up and "

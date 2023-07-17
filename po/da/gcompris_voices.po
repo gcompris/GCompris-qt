@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-07-11 00:41+0000\n"
+"POT-Creation-Date: 2023-07-17 00:43+0000\n"
 "PO-Revision-Date: 2019-12-28 18:27+0100\n"
 "Last-Translator: \n"
 "Language-Team: Danish <kde-i18n-doc@kde.org>\n"
@@ -547,6 +547,14 @@ msgid ""
 msgstr ""
 "Vis vej for tal-spiseren med piletasterne til primtallene. Tryk på "
 "mellemrumstasten for at sluge dem."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "grammar_classes"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "grammar_analysis"
+#: activities/grammar_analysis/ActivityInfo.qml:21
+#: activities/grammar_classes/ActivityInfo.qml:21
+#, kde-format
+msgid "put here in comment the text for the intro voice"
+msgstr "Indsæt kommentartekst her til introstemmen"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "graph-coloring"
 #: activities/graph-coloring/ActivityInfo.qml:18
@@ -1281,9 +1289,6 @@ msgstr "Skriv ordene før de når jorden."
 
 #~ msgid "play checkers against the computer"
 #~ msgstr "Spil brikker mod computeren"
-
-#~ msgid "put here in comment the text for the intro voice"
-#~ msgstr "Indsæt kommentartekst her til introstemmen"
 
 #, fuzzy
 #~ msgid ""

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-07-11 00:41+0000\n"
+"POT-Creation-Date: 2023-07-17 00:43+0000\n"
 "PO-Revision-Date: 2022-12-25 18:55+0100\n"
 "Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
 "Language-Team: Polish <kde-i18n-doc@kde.org>\n"
@@ -535,6 +535,14 @@ msgid ""
 msgstr ""
 "Naprowadź żarłacza liczb, przy użyciu klawiszy strzałek, na liczby pierwsze "
 "i naciśnij klawisz spacji, aby je pożarł."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "grammar_classes"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "grammar_analysis"
+#: activities/grammar_analysis/ActivityInfo.qml:21
+#: activities/grammar_classes/ActivityInfo.qml:21
+#, kde-format
+msgid "put here in comment the text for the intro voice"
+msgstr "umieść tutaj, w komentarzu, tekst do głosu wprowadzającego"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "graph-coloring"
 #: activities/graph-coloring/ActivityInfo.qml:18
@@ -1279,9 +1287,6 @@ msgstr "Pisz słowa na swojej klawiaturze zanim dotrą na ziemię."
 
 #~ msgid "play checkers against the computer"
 #~ msgstr "zagraj w warcaby z komputerem"
-
-#~ msgid "put here in comment the text for the intro voice"
-#~ msgstr "umieść tutaj, w komentarzu, tekst do głosu wprowadzającego"
 
 #~ msgid ""
 #~ "Change the planets' gravitational force by moving the sliders up and "

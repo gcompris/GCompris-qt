@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-07-11 00:41+0000\n"
+"POT-Creation-Date: 2023-07-17 00:43+0000\n"
 "PO-Revision-Date: 2023-02-28 20:39+0100\n"
 "Last-Translator: Stefan Asserhäll <stefan.asserhall@bredband.net>\n"
 "Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
@@ -540,6 +540,14 @@ msgid ""
 msgstr ""
 "Led talätaren till primtalen med piltangenterna och tryck på mellanslag för "
 "att svälja dem."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "grammar_classes"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "grammar_analysis"
+#: activities/grammar_analysis/ActivityInfo.qml:21
+#: activities/grammar_classes/ActivityInfo.qml:21
+#, kde-format
+msgid "put here in comment the text for the intro voice"
+msgstr "skriv in texten för introduktionsrösten här som en kommentar"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "graph-coloring"
 #: activities/graph-coloring/ActivityInfo.qml:18
@@ -1295,9 +1303,6 @@ msgstr "Skriv in orden på tangentbordet innan de når marken."
 #~ "correct position"
 #~ msgstr ""
 #~ "Arrangera talen i rätt ordning genom att placera ett tal på rätt plats"
-
-#~ msgid "put here in comment the text for the intro voice"
-#~ msgstr "skriv in texten för introduktionsrösten här som en kommentar"
 
 #~ msgid ""
 #~ "Change the planets' gravitational force by moving the sliders up and "

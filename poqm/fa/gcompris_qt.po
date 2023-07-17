@@ -75,6 +75,8 @@ msgstr ""
 #: activities/gnumch-inequality/ActivityInfo.qml:28
 #: activities/gnumch-multiples/ActivityInfo.qml:29
 #: activities/gnumch-primes/ActivityInfo.qml:29
+#: activities/grammar_analysis/ActivityInfo.qml:30
+#: activities/grammar_classes/ActivityInfo.qml:30
 #: activities/graph-coloring/ActivityInfo.qml:25
 #: activities/gravity/ActivityInfo.qml:29
 #: activities/guessnumber/ActivityInfo.qml:25
@@ -4523,6 +4525,8 @@ msgstr ""
 #: activities/click_on_letter/ActivityConfig.qml:35
 #: activities/click_on_letter_up/ActivityConfig.qml:35
 #: activities/gletters/ActivityConfig.qml:40
+#: activities/grammar_analysis/ActivityConfig.qml:36
+#: activities/grammar_classes/ActivityConfig.qml:36
 #: activities/hangman/ActivityConfig.qml:38
 #: activities/lang/ActivityConfig.qml:35
 #: activities/letter-in-word/ActivityConfig.qml:69
@@ -12965,6 +12969,131 @@ msgid ""
 "them with nothing left over. 5 is one of these lonely numbers (only 5 × 1 = "
 "5), but you can see that 6 has 2 and 3 in its family as well (6 × 1 = 6, 2 × "
 "3 = 6). So 6 is not a prime number."
+msgstr ""
+
+#. Activity title
+#: activities/grammar_analysis/ActivityInfo.qml:18
+msgctxt "ActivityInfo|"
+msgid "Grammatical analysis"
+msgstr ""
+
+#. Help title
+#: activities/grammar_analysis/ActivityInfo.qml:20
+msgctxt "ActivityInfo|"
+msgid "Learn to classify words according to their nature (grammatical class)."
+msgstr ""
+
+#. Help goal
+#: activities/grammar_analysis/ActivityInfo.qml:23
+msgctxt "ActivityInfo|"
+msgid "Classify words according to their nature (grammatical class)."
+msgstr ""
+
+#: activities/grammar_analysis/ActivityInfo.qml:24
+msgctxt "ActivityInfo|"
+msgid "Assigns to each requested word a grammatical class."
+msgstr ""
+
+#: activities/grammar_analysis/ActivityInfo.qml:25
+msgctxt "ActivityInfo|"
+msgid "Leave blank if no class matches."
+msgstr ""
+
+#. Help manual
+#: activities/grammar_analysis/ActivityInfo.qml:29
+#: activities/grammar_classes/ActivityInfo.qml:29
+msgctxt "ActivityInfo|"
+msgid "Classify words according to their nature."
+msgstr ""
+
+#: activities/grammar_analysis/ActivityInfo.qml:31
+#: activities/grammar_classes/ActivityInfo.qml:31
+msgctxt "ActivityInfo|"
+msgid "Up/down arrows and tabulation to switch between nature and words"
+msgstr ""
+
+#: activities/grammar_analysis/ActivityInfo.qml:32
+#: activities/grammar_classes/ActivityInfo.qml:32
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Left and Right arrows: turn left and right"
+msgctxt "ActivityInfo|"
+msgid "Left and right arrows select element in nature and words"
+msgstr "فلش چپ و راست: گردش به راست و چپ"
+
+#: activities/grammar_analysis/ActivityInfo.qml:33
+#: activities/grammar_classes/ActivityInfo.qml:33
+msgctxt "ActivityInfo|"
+msgid "Space drops selected nature to current word and move to next word"
+msgstr ""
+
+#: activities/grammar_analysis/ActivityInfo.qml:34
+#: activities/grammar_classes/ActivityInfo.qml:34
+msgctxt "ActivityInfo|"
+msgid "Backspace move to previous word"
+msgstr ""
+
+#: activities/grammar_analysis/grammar_analysis.js:39
+msgctxt "grammar_analysis|"
+msgid "Grammatical analysis"
+msgstr ""
+
+#: activities/grammar_analysis/grammar_analysis.js:40
+msgctxt "grammar_analysis|"
+msgid "Learn to classify words according to their nature (grammatical class)."
+msgstr ""
+
+#: activities/grammar_analysis/grammar_analysis.js:41
+msgctxt "grammar_analysis|"
+msgid "Assign to each word a grammatical class from the list provided."
+msgstr ""
+
+#: activities/grammar_analysis/grammar_analysis.js:42
+msgctxt "grammar_analysis|"
+msgid "Leave blank if no class matches."
+msgstr ""
+
+#: activities/grammar_analysis/grammar_analysis.js:48
+msgctxt "grammar_analysis|"
+msgid "Grammatical classes"
+msgstr ""
+
+#: activities/grammar_analysis/grammar_analysis.js:49
+msgctxt "grammar_analysis|"
+msgid "Learn to identify grammatical classes."
+msgstr ""
+
+#: activities/grammar_analysis/grammar_analysis.js:50
+msgctxt "grammar_analysis|"
+msgid ""
+"Find all the words corresponding to the provided grammatical class (noun, "
+"verb, determiner...)."
+msgstr ""
+
+#: activities/grammar_analysis/grammar_analysis.js:400
+msgctxt "grammar_analysis|"
+msgid "Empty"
+msgstr ""
+
+#. Activity title
+#: activities/grammar_classes/ActivityInfo.qml:18
+msgctxt "ActivityInfo|"
+msgid "Grammatical classes"
+msgstr ""
+
+#. Help title
+#. ----------
+#. Help goal
+#: activities/grammar_classes/ActivityInfo.qml:20
+#: activities/grammar_classes/ActivityInfo.qml:23
+msgctxt "ActivityInfo|"
+msgid "Learn grammatical classes."
+msgstr ""
+
+#: activities/grammar_classes/ActivityInfo.qml:24
+msgctxt "ActivityInfo|"
+msgid ""
+"Assigns to each requested word a grammatical class from the provided list."
 msgstr ""
 
 #: activities/graph-coloring/ActivityConfig.qml:21
