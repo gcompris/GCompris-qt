@@ -17,21 +17,22 @@ ActivityInfo {
     //: Activity title
     title: qsTr("Grammatical classes")
     //: Help title
-    description: qsTr("Learn grammatical classes.")
-    //intro: "put here in comment the text for the intro voice"
+    description: qsTr("Learn to identify grammatical classes.")
+    //intro: "Assign the requested grammatical classes to the corresponding words."
     //: Help goal
-    goal: qsTr("Learn grammatical classes.") + ("<br>") +
-          qsTr("Assigns to each requested word a grammatical class from the provided list.")
-
+    goal: qsTr("Learn grammatical classes.")
     //: Help prerequisite
     prerequisite: ""
     //: Help manual
-    manual:   qsTr("Classify words according to their nature.") + ("<br>") +
-              qsTr("<b>Keyboard controls:</b>") + "<ul>" +
-              "<li>" +qsTr("Up/down arrows and tabulation to switch between nature and words") + "</li>" +
-              "<li>" +qsTr("Left and right arrows select element in nature and words") + "</li>" +
-              "<li>" +qsTr("Space drops selected nature to current word and move to next word") + "</li>" +
-              "<li>" +qsTr("Backspace move to previous word") + "</li>" +
+    manual: qsTr("Assign the requested grammatical class to the corresponding words.") + ("<br>") +
+            qsTr("Select the grammatical class from the list, then select the box under a word and assign it the class.") + ("<br>") +
+            qsTr("Leave the box blank if the class doesn't match.") + ("<br>") +
+            qsTr("<b>Keyboard controls:</b>") + "<ul>" +
+            "<li>" +qsTr("Up and down arrows or tabulation: switch between classes and words") + "</li>" +
+            "<li>" +qsTr("Left and right arrows: select items in classes or words") + "</li>" +
+            "<li>" +qsTr("Space: assign the selected class to the selected word and then select the next word") + "</li>" +
+            "<li>" +qsTr("Backspace: select the previous word") + "</li>" +
+            "<li>" +qsTr("Enter: validate your answer") + "</li>" +
               ("</ul>")
     credit: ""
     section: "reading words"

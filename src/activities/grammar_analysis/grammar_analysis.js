@@ -37,9 +37,9 @@ var tutorialInstructions = {
     "_analysis" : [
         {
             "instruction": "<b>" + qsTr("Grammatical analysis") + "</b><br><br>" +
-                           qsTr("Learn to classify words according to their nature (grammatical class).") + ("<br>") +
-                           qsTr("Assign to each word a grammatical class from the list provided.") + ("<br>") +
-                           qsTr("Leave blank if no class matches."),
+                           qsTr("Learn to identify grammatical classes.") + ("<br>") +
+                           qsTr("Select a grammatical class from the list, then select the box under a word and assign it the class.") + ("<br>") +
+                           qsTr("Leave the box blank if no class matches."),
             "instructionQml": ""
         }
     ],
@@ -47,7 +47,9 @@ var tutorialInstructions = {
         {
             "instruction": "<b>" + qsTr("Grammatical classes") + "</b><br><br>" +
                            qsTr("Learn to identify grammatical classes.") + "<br>" +
-                           qsTr("Find all the words corresponding to the provided grammatical class (noun, verb, determiner...)."),
+                           qsTr("Find all the words corresponding to the requested grammatical class.") + ("<br>") +
+                           qsTr("Select the grammatical class from the list, then select the box under a word and assign it the class.") + ("<br>") +
+                           qsTr("Leave the box blank if the class doesn't match."),
             "instructionQml": ""
         }
     ]
