@@ -38,6 +38,7 @@ var tutorialInstructions = {
         {
             "instruction": "<b>" + qsTr("Grammatical analysis") + "</b><br><br>" +
                            qsTr("Learn to identify grammatical classes.") + ("<br>") +
+                           qsTr("Find all the words corresponding to the requested grammatical classes.") + ("<br>") +
                            qsTr("Select a grammatical class from the list, then select the box under a word and assign it the class.") + ("<br>") +
                            qsTr("Leave the box blank if no class matches."),
             "instructionQml": ""
