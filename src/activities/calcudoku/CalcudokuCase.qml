@@ -29,22 +29,39 @@ Rectangle {
         restoreColorTimer.stop();
     }
 
+    Rectangle {
+        id: resultOperatorBG
+        visible: mCase.result != ""
+        anchors.horizontalCenter: parent.horizontalCenter
+        anchors.top: parent.top
+        anchors.topMargin: parent.height * 0.05
+        width: height * 3
+        height: parent.height * 0.2
+        color: "transparent"
+        border.color: "#373737"
+        border.width: ApplicationInfo.ratio
+        radius: height * 0.5
+        GCText {
+            id: resultOperator
+            text: mCase.result + mCase.operator
+            anchors.fill: parent
+            fontSizeMode: Text.Fit
+            horizontalAlignment: Text.AlignHCenter
+            verticalAlignment: Text.AlignVCenter
+            color: "#373737"
+        }
+    }
+
     Image {
         id: imageId
         source: Activity.dataToImageSource(mCase.text)
-        sourceSize.height: parent.height
-        width: 3 * parent.width / 4
-        height: width
-        anchors.centerIn: parent
-    }
-    GCText {
-        id: resultOperator
-        text: mCase.result + " " + mCase.operator
-        width: parent.width / 3
-        height: width
-        fontSizeMode: Text.Fit
+        height: parent.height * 0.7
+        width: height
+        sourceSize.height: height
+        sourceSize.width: width
         anchors.horizontalCenter: parent.horizontalCenter
-        anchors.top: parent.top
+        anchors.bottom: parent.bottom
+        anchors.bottomMargin: 0.05 * parent.height
     }
 
     states: [

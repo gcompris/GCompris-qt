@@ -298,9 +298,10 @@ function initLevel() {
         for (var p = 0 ; p < currentCage.indexes.length ; ++ p) {
             cagesIndexes[currentCage.indexes[p]] = v;
         }
-        // Easiest way to retrieve the top left info of the case
+        // Easiest way to retrieve the top info of the case
         var operatorResult = {"operator":"", "result": ""};
-        operatorResult.operator = getVisualOperator(currentCage.operator);
+        // Adding here the space to display before the operator
+        operatorResult.operator = " " + getVisualOperator(currentCage.operator);
         operatorResult.result = "" + currentCage.result;
         operatorsPositions[currentCage.indexes[0]] = operatorResult;
     }
