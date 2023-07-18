@@ -158,6 +158,7 @@ ActivityBase {
             anchors.centerIn: gridLayout
             width:  Math.min(gridLayout.width, gridLayout.height)
             height: width
+            property int squareSize: 2 * Math.round(width / calcudokuColumn.columns / 2)
 
             Repeater {
                 model: calcudokuModel
@@ -166,10 +167,10 @@ ActivityBase {
                 Component {
                     id: blueSquare
                     CalcudokuCase {
-                        x: (index % calcudokuColumn.columns) * width
-                        y: Math.floor(index / calcudokuColumn.columns) * height
-                        width: parent != null ? parent.width / calcudokuColumn.columns : 1
-                        height: parent != null ? parent.height / calcudokuColumn.columns : 1
+                        x: Math.floor((index % calcudokuColumn.columns) * width)
+                        y: Math.floor((index / calcudokuColumn.columns) * height)
+                        width: parent != null ? calcudokuColumn.squareSize : 1
+                        height: width
                         gridIndex: index
                         isInitial: initial
                         operator: operatorValue
@@ -197,10 +198,10 @@ ActivityBase {
                 Component {
                     id: cageWalls
                     CalcudokuCage {
-                        x: (index % calcudokuColumn.columns) * width
-                        y: Math.floor(index / calcudokuColumn.columns) * height
-                        width: parent != null ? parent.width / calcudokuColumn.columns : 1
-                        height: parent != null ? parent.height / calcudokuColumn.columns : 1
+                        x: Math.floor((index % calcudokuColumn.columns) * width)
+                        y: Math.floor((index / calcudokuColumn.columns) * height)
+                        width: parent != null ? calcudokuColumn.squareSize : 1
+                        height: width
                         topWallVisible: topWall
                         leftWallVisible: leftWall
                         rightWallVisible: rightWall

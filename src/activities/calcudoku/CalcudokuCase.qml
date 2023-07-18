@@ -12,7 +12,7 @@ import "../../core"
 Rectangle {
     id: mCase
     border.color: "#808080"
-    border.width: ApplicationInfo.ratio
+    border.width: 2 * Math.round(ApplicationInfo.ratio / 2)
     property string text
     property bool isInitial
     property string operator
@@ -39,7 +39,7 @@ Rectangle {
         height: parent.height * 0.2
         color: "transparent"
         border.color: "#373737"
-        border.width: ApplicationInfo.ratio
+        border.width: Math.round(ApplicationInfo.ratio)
         radius: height * 0.5
         GCText {
             id: resultOperator
