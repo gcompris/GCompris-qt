@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-07-17 00:43+0000\n"
+"POT-Creation-Date: 2023-07-18 00:44+0000\n"
 "PO-Revision-Date: 2023-05-18 18:06+0300\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
@@ -565,8 +565,8 @@ msgstr ""
 #: activities/grammar_analysis/ActivityInfo.qml:21
 #: activities/grammar_classes/ActivityInfo.qml:21
 #, kde-format
-msgid "put here in comment the text for the intro voice"
-msgstr "pane tähän kommenttina esittelyäänen teksti"
+msgid "Assign the requested grammatical classes to the corresponding words."
+msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "graph-coloring"
 #: activities/graph-coloring/ActivityInfo.qml:18
@@ -1322,6 +1322,9 @@ msgstr ""
 #, kde-format
 msgid "Type the words on your keyboard before they reach the ground."
 msgstr "Kirjoita sanat näppäimistöllä ennen kuin putoavat maahan."
+
+#~ msgid "put here in comment the text for the intro voice"
+#~ msgstr "pane tähän kommenttina esittelyäänen teksti"
 
 #~ msgid "play checkers against the computer"
 #~ msgstr "pelaa tammea tietokonetta vastaan"

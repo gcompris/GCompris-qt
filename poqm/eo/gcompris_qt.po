@@ -794,6 +794,8 @@ msgstr "Backspace: forigu la lastan ciferon en via respondo"
 #: activities/algebra_div/ActivityInfo.qml:28
 #: activities/algebra_minus/ActivityInfo.qml:28
 #: activities/algebra_plus/ActivityInfo.qml:28
+#: activities/grammar_analysis/ActivityInfo.qml:35
+#: activities/grammar_classes/ActivityInfo.qml:35
 #: activities/learn_additions/ActivityInfo.qml:28
 #: activities/learn_decimals/ActivityInfo.qml:25
 #: activities/learn_decimals_additions/ActivityInfo.qml:26
@@ -13818,37 +13820,40 @@ msgstr ""
 
 #. Help title
 #: activities/grammar_analysis/ActivityInfo.qml:20
+#: activities/grammar_classes/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
-msgid "Learn to classify words according to their nature (grammatical class)."
+msgid "Identify grammatical classes in the given sentences."
 msgstr ""
 
 #. Help goal
 #: activities/grammar_analysis/ActivityInfo.qml:23
+#: activities/grammar_classes/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
-msgid "Classify words according to their nature (grammatical class)."
-msgstr ""
-
-#: activities/grammar_analysis/ActivityInfo.qml:24
-msgctxt "ActivityInfo|"
-msgid "Assigns to each requested word a grammatical class."
-msgstr ""
-
-#: activities/grammar_analysis/ActivityInfo.qml:25
-msgctxt "ActivityInfo|"
-msgid "Leave blank if no class matches."
+msgid "Learn to identify grammatical classes."
 msgstr ""
 
 #. Help manual
-#: activities/grammar_analysis/ActivityInfo.qml:29
-#: activities/grammar_classes/ActivityInfo.qml:29
+#: activities/grammar_analysis/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
-msgid "Classify words according to their nature."
+msgid "Assign the requested grammatical classes to the corresponding words."
+msgstr ""
+
+#: activities/grammar_analysis/ActivityInfo.qml:28
+msgctxt "ActivityInfo|"
+msgid ""
+"Select a grammatical class from the list, then select the box under a word "
+"and assign it the class."
+msgstr ""
+
+#: activities/grammar_analysis/ActivityInfo.qml:29
+msgctxt "ActivityInfo|"
+msgid "Leave the box blank if no class matches."
 msgstr ""
 
 #: activities/grammar_analysis/ActivityInfo.qml:31
 #: activities/grammar_classes/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
-msgid "Up/down arrows and tabulation to switch between nature and words"
+msgid "Up and down arrows or tabulation: switch between classes and words"
 msgstr ""
 
 #: activities/grammar_analysis/ActivityInfo.qml:32
@@ -13857,20 +13862,25 @@ msgstr ""
 #| msgctxt "ActivityInfo|"
 #| msgid "Left and Right arrows: turn left and right"
 msgctxt "ActivityInfo|"
-msgid "Left and right arrows select element in nature and words"
+msgid "Left and right arrows: select items in classes or words"
 msgstr "Maldekstre kaj Dekstren sagoj: turnu maldekstren kaj dekstren"
 
 #: activities/grammar_analysis/ActivityInfo.qml:33
 #: activities/grammar_classes/ActivityInfo.qml:33
 msgctxt "ActivityInfo|"
-msgid "Space drops selected nature to current word and move to next word"
+msgid ""
+"Space: assign the selected class to the selected word and then select the "
+"next word"
 msgstr ""
 
 #: activities/grammar_analysis/ActivityInfo.qml:34
 #: activities/grammar_classes/ActivityInfo.qml:34
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Backspace: delete the last digit in your answer"
 msgctxt "ActivityInfo|"
-msgid "Backspace move to previous word"
-msgstr ""
+msgid "Backspace: select the previous word"
+msgstr "Backspace: forigu la lastan ciferon en via respondo"
 
 #: activities/grammar_analysis/grammar_analysis.js:39
 msgctxt "grammar_analysis|"
@@ -13878,38 +13888,51 @@ msgid "Grammatical analysis"
 msgstr ""
 
 #: activities/grammar_analysis/grammar_analysis.js:40
-msgctxt "grammar_analysis|"
-msgid "Learn to classify words according to their nature (grammatical class)."
-msgstr ""
-
-#: activities/grammar_analysis/grammar_analysis.js:41
-msgctxt "grammar_analysis|"
-msgid "Assign to each word a grammatical class from the list provided."
-msgstr ""
-
-#: activities/grammar_analysis/grammar_analysis.js:42
-msgctxt "grammar_analysis|"
-msgid "Leave blank if no class matches."
-msgstr ""
-
-#: activities/grammar_analysis/grammar_analysis.js:48
-msgctxt "grammar_analysis|"
-msgid "Grammatical classes"
-msgstr ""
-
-#: activities/grammar_analysis/grammar_analysis.js:49
+#: activities/grammar_analysis/grammar_analysis.js:50
 msgctxt "grammar_analysis|"
 msgid "Learn to identify grammatical classes."
 msgstr ""
 
-#: activities/grammar_analysis/grammar_analysis.js:50
+#: activities/grammar_analysis/grammar_analysis.js:41
 msgctxt "grammar_analysis|"
-msgid ""
-"Find all the words corresponding to the provided grammatical class (noun, "
-"verb, determiner...)."
+msgid "Find all the words corresponding to the requested grammatical classes."
 msgstr ""
 
-#: activities/grammar_analysis/grammar_analysis.js:400
+#: activities/grammar_analysis/grammar_analysis.js:42
+msgctxt "grammar_analysis|"
+msgid ""
+"Select a grammatical class from the list, then select the box under a word "
+"and assign it the class."
+msgstr ""
+
+#: activities/grammar_analysis/grammar_analysis.js:43
+msgctxt "grammar_analysis|"
+msgid "Leave the box blank if no class matches."
+msgstr ""
+
+#: activities/grammar_analysis/grammar_analysis.js:49
+msgctxt "grammar_analysis|"
+msgid "Grammatical classes"
+msgstr ""
+
+#: activities/grammar_analysis/grammar_analysis.js:51
+msgctxt "grammar_analysis|"
+msgid "Find all the words corresponding to the requested grammatical class."
+msgstr ""
+
+#: activities/grammar_analysis/grammar_analysis.js:52
+msgctxt "grammar_analysis|"
+msgid ""
+"Select the grammatical class from the list, then select the box under a word "
+"and assign it the class."
+msgstr ""
+
+#: activities/grammar_analysis/grammar_analysis.js:53
+msgctxt "grammar_analysis|"
+msgid "Leave the box blank if the class doesn't match."
+msgstr ""
+
+#: activities/grammar_analysis/grammar_analysis.js:403
 msgctxt "grammar_analysis|"
 msgid "Empty"
 msgstr ""
@@ -13920,19 +13943,22 @@ msgctxt "ActivityInfo|"
 msgid "Grammatical classes"
 msgstr ""
 
-#. Help title
-#. ----------
-#. Help goal
-#: activities/grammar_classes/ActivityInfo.qml:20
-#: activities/grammar_classes/ActivityInfo.qml:23
+#. Help manual
+#: activities/grammar_classes/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
-msgid "Learn grammatical classes."
+msgid "Assign the requested grammatical class to the corresponding words."
 msgstr ""
 
-#: activities/grammar_classes/ActivityInfo.qml:24
+#: activities/grammar_classes/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid ""
-"Assigns to each requested word a grammatical class from the provided list."
+"Select the grammatical class from the list, then select the box under a word "
+"and assign it the class."
+msgstr ""
+
+#: activities/grammar_classes/ActivityInfo.qml:29
+msgctxt "ActivityInfo|"
+msgid "Leave the box blank if the class doesn't match."
 msgstr ""
 
 #: activities/graph-coloring/ActivityConfig.qml:21

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-07-17 00:43+0000\n"
+"POT-Creation-Date: 2023-07-18 00:44+0000\n"
 "PO-Revision-Date: 2023-01-01 14:49+0100\n"
 "Last-Translator: Kervoas <envelkervoas@free.fr>\n"
 "Language-Team: Breton <kde-i18n-doc@kde.org>\n"
@@ -551,8 +551,8 @@ msgstr ""
 #: activities/grammar_analysis/ActivityInfo.qml:21
 #: activities/grammar_classes/ActivityInfo.qml:21
 #, kde-format
-msgid "put here in comment the text for the intro voice"
-msgstr "Lak amañ en displegadenn an testenn evit mouezh an digoradur."
+msgid "Assign the requested grammatical classes to the corresponding words."
+msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "graph-coloring"
 #: activities/graph-coloring/ActivityInfo.qml:18
@@ -1304,6 +1304,9 @@ msgstr ""
 #, kde-format
 msgid "Type the words on your keyboard before they reach the ground."
 msgstr "Bizskriv ar gerioù gant da glavier a-raok ma vo tizhet al leur gante."
+
+#~ msgid "put here in comment the text for the intro voice"
+#~ msgstr "Lak amañ en displegadenn an testenn evit mouezh an digoradur."
 
 #~ msgid "play checkers against the computer"
 #~ msgstr "C'hoari damez a-enep an urzhiataer"

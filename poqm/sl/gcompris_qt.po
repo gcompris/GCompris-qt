@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2023-07-12 09:28+0200\n"
+"PO-Revision-Date: 2023-07-17 06:57+0200\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
@@ -790,6 +790,8 @@ msgstr "Backspace: zbriše zadnjo števko vašega odgovora"
 #: activities/algebra_div/ActivityInfo.qml:28
 #: activities/algebra_minus/ActivityInfo.qml:28
 #: activities/algebra_plus/ActivityInfo.qml:28
+#: activities/grammar_analysis/ActivityInfo.qml:35
+#: activities/grammar_classes/ActivityInfo.qml:35
 #: activities/learn_additions/ActivityInfo.qml:28
 #: activities/learn_decimals/ActivityInfo.qml:25
 #: activities/learn_decimals_additions/ActivityInfo.qml:26
@@ -2965,7 +2967,7 @@ msgstr "Calcudoku"
 #: activities/calcudoku/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Solve the Calcudoku."
-msgstr "Reši Calcudoku"
+msgstr "Reši Calcudoku."
 
 #. Help goal
 #: activities/calcudoku/ActivityInfo.qml:19
@@ -13751,126 +13753,198 @@ msgstr ""
 #: activities/grammar_analysis/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
 msgid "Grammatical analysis"
-msgstr ""
+msgstr "Slovnična analiza"
 
 #. Help title
 #: activities/grammar_analysis/ActivityInfo.qml:20
+#: activities/grammar_classes/ActivityInfo.qml:20
+#, fuzzy
+#| msgctxt "grammar_analysis|"
+#| msgid "Learn to identify grammatical classes."
 msgctxt "ActivityInfo|"
-msgid "Learn to classify words according to their nature (grammatical class)."
-msgstr ""
+msgid "Identify grammatical classes in the given sentences."
+msgstr "Naučite se prepoznati slovnične razrede."
 
 #. Help goal
 #: activities/grammar_analysis/ActivityInfo.qml:23
+#: activities/grammar_classes/ActivityInfo.qml:23
+#, fuzzy
+#| msgctxt "grammar_analysis|"
+#| msgid "Learn to identify grammatical classes."
 msgctxt "ActivityInfo|"
-msgid "Classify words according to their nature (grammatical class)."
-msgstr ""
-
-#: activities/grammar_analysis/ActivityInfo.qml:24
-msgctxt "ActivityInfo|"
-msgid "Assigns to each requested word a grammatical class."
-msgstr ""
-
-#: activities/grammar_analysis/ActivityInfo.qml:25
-msgctxt "ActivityInfo|"
-msgid "Leave blank if no class matches."
-msgstr ""
+msgid "Learn to identify grammatical classes."
+msgstr "Naučite se prepoznati slovnične razrede."
 
 #. Help manual
-#: activities/grammar_analysis/ActivityInfo.qml:29
-#: activities/grammar_classes/ActivityInfo.qml:29
+#: activities/grammar_analysis/ActivityInfo.qml:27
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "Assigns to each requested word a grammatical class from the provided list."
 msgctxt "ActivityInfo|"
-msgid "Classify words according to their nature."
+msgid "Assign the requested grammatical classes to the corresponding words."
+msgstr "Vsaki zahtevani besedi dodeltei slovnični razred s ponujenega seznama."
+
+#: activities/grammar_analysis/ActivityInfo.qml:28
+msgctxt "ActivityInfo|"
+msgid ""
+"Select a grammatical class from the list, then select the box under a word "
+"and assign it the class."
 msgstr ""
+
+#: activities/grammar_analysis/ActivityInfo.qml:29
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Leave blank if no class matches."
+msgctxt "ActivityInfo|"
+msgid "Leave the box blank if no class matches."
+msgstr "Pustite prazno, če se noben razred ne ujema."
 
 #: activities/grammar_analysis/ActivityInfo.qml:31
 #: activities/grammar_classes/ActivityInfo.qml:31
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Up/down arrows and tabulation to switch between nature and words"
 msgctxt "ActivityInfo|"
-msgid "Up/down arrows and tabulation to switch between nature and words"
-msgstr ""
+msgid "Up and down arrows or tabulation: switch between classes and words"
+msgstr "Puščice gor/dol in tabulator za preklapljanje med naravo in besedami"
 
 #: activities/grammar_analysis/ActivityInfo.qml:32
 #: activities/grammar_classes/ActivityInfo.qml:32
 #, fuzzy
 #| msgctxt "ActivityInfo|"
-#| msgid "Left and Right arrows: turn left and right"
+#| msgid "Left and right arrows select element in nature and words"
 msgctxt "ActivityInfo|"
-msgid "Left and right arrows select element in nature and words"
-msgstr "Puščici levo in desno: obrnite se levo in desno"
+msgid "Left and right arrows: select items in classes or words"
+msgstr "Puščici levo in desno izbereta element v naravi in besedah"
 
 #: activities/grammar_analysis/ActivityInfo.qml:33
 #: activities/grammar_classes/ActivityInfo.qml:33
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Space drops selected nature to current word and move to next word"
 msgctxt "ActivityInfo|"
-msgid "Space drops selected nature to current word and move to next word"
+msgid ""
+"Space: assign the selected class to the selected word and then select the "
+"next word"
 msgstr ""
+"Preslednica spusti izbrano naravo na trenutno besedo in se premakne na "
+"naslednjo besedo"
 
 #: activities/grammar_analysis/ActivityInfo.qml:34
 #: activities/grammar_classes/ActivityInfo.qml:34
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Backspace move to previous word"
 msgctxt "ActivityInfo|"
-msgid "Backspace move to previous word"
-msgstr ""
+msgid "Backspace: select the previous word"
+msgstr "Vračalka za pomik na prejšnjo besedo"
 
 #: activities/grammar_analysis/grammar_analysis.js:39
 msgctxt "grammar_analysis|"
 msgid "Grammatical analysis"
-msgstr ""
+msgstr "Slovnična analiza"
 
 #: activities/grammar_analysis/grammar_analysis.js:40
+#: activities/grammar_analysis/grammar_analysis.js:50
 msgctxt "grammar_analysis|"
-msgid "Learn to classify words according to their nature (grammatical class)."
-msgstr ""
+msgid "Learn to identify grammatical classes."
+msgstr "Naučite se prepoznati slovnične razrede."
 
 #: activities/grammar_analysis/grammar_analysis.js:41
+#, fuzzy
+#| msgctxt "grammar_analysis|"
+#| msgid ""
+#| "Find all the words corresponding to the provided grammatical class (noun, "
+#| "verb, determiner...)."
 msgctxt "grammar_analysis|"
-msgid "Assign to each word a grammatical class from the list provided."
+msgid "Find all the words corresponding to the requested grammatical classes."
 msgstr ""
+"Poiščite vse besede, ki ustrezajo navedenemu slovničnemu razredu "
+"(samostalnik, glagol, pridevnik ...)."
 
 #: activities/grammar_analysis/grammar_analysis.js:42
 msgctxt "grammar_analysis|"
-msgid "Leave blank if no class matches."
+msgid ""
+"Select a grammatical class from the list, then select the box under a word "
+"and assign it the class."
 msgstr ""
 
-#: activities/grammar_analysis/grammar_analysis.js:48
+#: activities/grammar_analysis/grammar_analysis.js:43
+#, fuzzy
+#| msgctxt "grammar_analysis|"
+#| msgid "Leave blank if no class matches."
 msgctxt "grammar_analysis|"
-msgid "Grammatical classes"
-msgstr ""
+msgid "Leave the box blank if no class matches."
+msgstr "Pustite prazno, če se noben razred ne ujema."
 
 #: activities/grammar_analysis/grammar_analysis.js:49
 msgctxt "grammar_analysis|"
-msgid "Learn to identify grammatical classes."
-msgstr ""
+msgid "Grammatical classes"
+msgstr "Slovnični razredi"
 
-#: activities/grammar_analysis/grammar_analysis.js:50
+#: activities/grammar_analysis/grammar_analysis.js:51
+#, fuzzy
+#| msgctxt "grammar_analysis|"
+#| msgid ""
+#| "Find all the words corresponding to the provided grammatical class (noun, "
+#| "verb, determiner...)."
+msgctxt "grammar_analysis|"
+msgid "Find all the words corresponding to the requested grammatical class."
+msgstr ""
+"Poiščite vse besede, ki ustrezajo navedenemu slovničnemu razredu "
+"(samostalnik, glagol, pridevnik ...)."
+
+#: activities/grammar_analysis/grammar_analysis.js:52
 msgctxt "grammar_analysis|"
 msgid ""
-"Find all the words corresponding to the provided grammatical class (noun, "
-"verb, determiner...)."
+"Select the grammatical class from the list, then select the box under a word "
+"and assign it the class."
 msgstr ""
 
-#: activities/grammar_analysis/grammar_analysis.js:400
+#: activities/grammar_analysis/grammar_analysis.js:53
+#, fuzzy
+#| msgctxt "grammar_analysis|"
+#| msgid "Leave blank if no class matches."
+msgctxt "grammar_analysis|"
+msgid "Leave the box blank if the class doesn't match."
+msgstr "Pustite prazno, če se noben razred ne ujema."
+
+#: activities/grammar_analysis/grammar_analysis.js:403
 msgctxt "grammar_analysis|"
 msgid "Empty"
-msgstr ""
+msgstr "Prazno"
 
 #. Activity title
 #: activities/grammar_classes/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
 msgid "Grammatical classes"
-msgstr ""
+msgstr "Slovnični razredi"
 
-#. Help title
-#. ----------
-#. Help goal
-#: activities/grammar_classes/ActivityInfo.qml:20
-#: activities/grammar_classes/ActivityInfo.qml:23
+#. Help manual
+#: activities/grammar_classes/ActivityInfo.qml:27
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "Assigns to each requested word a grammatical class from the provided list."
 msgctxt "ActivityInfo|"
-msgid "Learn grammatical classes."
-msgstr ""
+msgid "Assign the requested grammatical class to the corresponding words."
+msgstr "Vsaki zahtevani besedi dodeltei slovnični razred s ponujenega seznama."
 
-#: activities/grammar_classes/ActivityInfo.qml:24
+#: activities/grammar_classes/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid ""
-"Assigns to each requested word a grammatical class from the provided list."
+"Select the grammatical class from the list, then select the box under a word "
+"and assign it the class."
 msgstr ""
+
+#: activities/grammar_classes/ActivityInfo.qml:29
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Leave blank if no class matches."
+msgctxt "ActivityInfo|"
+msgid "Leave the box blank if the class doesn't match."
+msgstr "Pustite prazno, če se noben razred ne ujema."
 
 #: activities/graph-coloring/ActivityConfig.qml:21
 #: activities/superbrain/ActivityConfig.qml:21
@@ -13963,7 +14037,7 @@ msgid ""
 msgstr ""
 "Premikajte vesoljsko ladjo z levo in desno tipko ali z gumbi na zaslon na "
 "mobilni napravi. Poskusite ostati blizu sredine zaslona in predvidevajte "
-"tako, da si ogledujete velikost in smer puščice, ki prikazujegravitacijsko "
+"tako, da si ogledujete velikost in smer puščice, ki prikazuje gravitacijsko "
 "silo."
 
 #: activities/gravity/ActivityInfo.qml:30
@@ -26072,6 +26146,38 @@ msgstr "Preskoči"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Zaženi"
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid ""
+#~ "Learn to classify words according to their nature (grammatical class)."
+#~ msgstr ""
+#~ "Naučite se razvrščati besede glede na njihovo naravo (slovnični razred)."
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Classify words according to their nature (grammatical class)."
+#~ msgstr "Razvrstite besede glede na njihovo naravo (slovnični razred)."
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Assigns to each requested word a grammatical class."
+#~ msgstr "Vsaki zahtevani besedi dodelite slovnični razred."
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Classify words according to their nature."
+#~ msgstr "Razvrstite besede glede na njihovo naravo."
+
+#~ msgctxt "grammar_analysis|"
+#~ msgid ""
+#~ "Learn to classify words according to their nature (grammatical class)."
+#~ msgstr ""
+#~ "Naučite se razvrščati besede glede na njihovo naravo (slovnični razred)."
+
+#~ msgctxt "grammar_analysis|"
+#~ msgid "Assign to each word a grammatical class from the list provided."
+#~ msgstr "Vsaki besedi dodelite slovnični razred s ponujenega seznama."
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Learn grammatical classes."
+#~ msgstr "Naučite se slovničnih razredov."
 
 #~ msgctxt "Data|"
 #~ msgid "3 decimal places between 0 and 999."

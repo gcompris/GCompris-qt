@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-07-17 00:43+0000\n"
+"POT-Creation-Date: 2023-07-18 00:44+0000\n"
 "PO-Revision-Date: 2023-07-11 07:31+0200\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
@@ -538,8 +538,8 @@ msgstr ""
 #: activities/grammar_analysis/ActivityInfo.qml:21
 #: activities/grammar_classes/ActivityInfo.qml:21
 #, kde-format
-msgid "put here in comment the text for the intro voice"
-msgstr "tu v komentar dodajte besedilo uvodnega glasu"
+msgid "Assign the requested grammatical classes to the corresponding words."
+msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "graph-coloring"
 #: activities/graph-coloring/ActivityInfo.qml:18
@@ -1282,6 +1282,9 @@ msgstr ""
 #, kde-format
 msgid "Type the words on your keyboard before they reach the ground."
 msgstr "Vnesite besede na tipkovnici, preden pridejo do tal."
+
+#~ msgid "put here in comment the text for the intro voice"
+#~ msgstr "tu v komentar dodajte besedilo uvodnega glasu"
 
 #~ msgid "play checkers against the computer"
 #~ msgstr "igrajte damo proti računalniku"

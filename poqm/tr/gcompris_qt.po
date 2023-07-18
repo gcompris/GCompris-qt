@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2023-07-12 11:44+0300\n"
+"PO-Revision-Date: 2023-07-17 14:02+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -790,6 +790,8 @@ msgstr "Geri Sil: Yanıtındaki son basamağı sil"
 #: activities/algebra_div/ActivityInfo.qml:28
 #: activities/algebra_minus/ActivityInfo.qml:28
 #: activities/algebra_plus/ActivityInfo.qml:28
+#: activities/grammar_analysis/ActivityInfo.qml:35
+#: activities/grammar_classes/ActivityInfo.qml:35
 #: activities/learn_additions/ActivityInfo.qml:28
 #: activities/learn_decimals/ActivityInfo.qml:25
 #: activities/learn_decimals_additions/ActivityInfo.qml:26
@@ -13755,126 +13757,203 @@ msgstr ""
 #: activities/grammar_analysis/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
 msgid "Grammatical analysis"
-msgstr ""
+msgstr "Dilbilgisi çözümlemesi"
 
 #. Help title
 #: activities/grammar_analysis/ActivityInfo.qml:20
+#: activities/grammar_classes/ActivityInfo.qml:20
+#, fuzzy
+#| msgctxt "grammar_analysis|"
+#| msgid "Learn to identify grammatical classes."
 msgctxt "ActivityInfo|"
-msgid "Learn to classify words according to their nature (grammatical class)."
-msgstr ""
+msgid "Identify grammatical classes in the given sentences."
+msgstr "Dilbilgisi sınıflandırmalarını tanımlamayı öğren."
 
 #. Help goal
 #: activities/grammar_analysis/ActivityInfo.qml:23
+#: activities/grammar_classes/ActivityInfo.qml:23
+#, fuzzy
+#| msgctxt "grammar_analysis|"
+#| msgid "Learn to identify grammatical classes."
 msgctxt "ActivityInfo|"
-msgid "Classify words according to their nature (grammatical class)."
-msgstr ""
-
-#: activities/grammar_analysis/ActivityInfo.qml:24
-msgctxt "ActivityInfo|"
-msgid "Assigns to each requested word a grammatical class."
-msgstr ""
-
-#: activities/grammar_analysis/ActivityInfo.qml:25
-msgctxt "ActivityInfo|"
-msgid "Leave blank if no class matches."
-msgstr ""
+msgid "Learn to identify grammatical classes."
+msgstr "Dilbilgisi sınıflandırmalarını tanımlamayı öğren."
 
 #. Help manual
-#: activities/grammar_analysis/ActivityInfo.qml:29
-#: activities/grammar_classes/ActivityInfo.qml:29
+#: activities/grammar_analysis/ActivityInfo.qml:27
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "Assigns to each requested word a grammatical class from the provided list."
 msgctxt "ActivityInfo|"
-msgid "Classify words according to their nature."
+msgid "Assign the requested grammatical classes to the corresponding words."
 msgstr ""
+"İstenen her bir sözcüğü, verilen listeden bir dilbilgisi sınıflandırmasına "
+"atar"
+
+#: activities/grammar_analysis/ActivityInfo.qml:28
+msgctxt "ActivityInfo|"
+msgid ""
+"Select a grammatical class from the list, then select the box under a word "
+"and assign it the class."
+msgstr ""
+
+#: activities/grammar_analysis/ActivityInfo.qml:29
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Leave blank if no class matches."
+msgctxt "ActivityInfo|"
+msgid "Leave the box blank if no class matches."
+msgstr "Eşleşen sınıf yoksa boş bırak"
 
 #: activities/grammar_analysis/ActivityInfo.qml:31
 #: activities/grammar_classes/ActivityInfo.qml:31
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Up/down arrows and tabulation to switch between nature and words"
 msgctxt "ActivityInfo|"
-msgid "Up/down arrows and tabulation to switch between nature and words"
+msgid "Up and down arrows or tabulation: switch between classes and words"
 msgstr ""
+"Türler ve sözcükler arasında geçiş yapmak için yukarı/aşağı ok düğmelerini "
+"veya sekme düğmesini kullan"
 
 #: activities/grammar_analysis/ActivityInfo.qml:32
 #: activities/grammar_classes/ActivityInfo.qml:32
 #, fuzzy
 #| msgctxt "ActivityInfo|"
-#| msgid "Left and Right arrows: turn left and right"
+#| msgid "Left and right arrows select element in nature and words"
 msgctxt "ActivityInfo|"
-msgid "Left and right arrows select element in nature and words"
-msgstr "Sol ve Sağ oklar: Sola ve sağa dön"
+msgid "Left and right arrows: select items in classes or words"
+msgstr "Sağ ve sol düğmeler sözcükler ve türler arasında geçiş yapar"
 
 #: activities/grammar_analysis/ActivityInfo.qml:33
 #: activities/grammar_classes/ActivityInfo.qml:33
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Space drops selected nature to current word and move to next word"
 msgctxt "ActivityInfo|"
-msgid "Space drops selected nature to current word and move to next word"
+msgid ""
+"Space: assign the selected class to the selected word and then select the "
+"next word"
 msgstr ""
+"Boşluk düğmesi, seçili türü geçerli sözcüğe bırakır ve sonraki sözcüğe geçer"
 
 #: activities/grammar_analysis/ActivityInfo.qml:34
 #: activities/grammar_classes/ActivityInfo.qml:34
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Backspace move to previous word"
 msgctxt "ActivityInfo|"
-msgid "Backspace move to previous word"
-msgstr ""
+msgid "Backspace: select the previous word"
+msgstr "Geri Sil düğmesi önceki sözcüğe gider"
 
 #: activities/grammar_analysis/grammar_analysis.js:39
 msgctxt "grammar_analysis|"
 msgid "Grammatical analysis"
-msgstr ""
+msgstr "Dilbilgisi çözümlemesi"
 
 #: activities/grammar_analysis/grammar_analysis.js:40
+#: activities/grammar_analysis/grammar_analysis.js:50
 msgctxt "grammar_analysis|"
-msgid "Learn to classify words according to their nature (grammatical class)."
-msgstr ""
+msgid "Learn to identify grammatical classes."
+msgstr "Dilbilgisi sınıflandırmalarını tanımlamayı öğren."
 
 #: activities/grammar_analysis/grammar_analysis.js:41
+#, fuzzy
+#| msgctxt "grammar_analysis|"
+#| msgid ""
+#| "Find all the words corresponding to the provided grammatical class (noun, "
+#| "verb, determiner...)."
 msgctxt "grammar_analysis|"
-msgid "Assign to each word a grammatical class from the list provided."
+msgid "Find all the words corresponding to the requested grammatical classes."
 msgstr ""
+"Verilen dilbilgisi sınıflandırmaları ile eşleşen tüm sözcükleri bul (ad, "
+"eylem, belirteç...)."
 
 #: activities/grammar_analysis/grammar_analysis.js:42
 msgctxt "grammar_analysis|"
-msgid "Leave blank if no class matches."
+msgid ""
+"Select a grammatical class from the list, then select the box under a word "
+"and assign it the class."
 msgstr ""
 
-#: activities/grammar_analysis/grammar_analysis.js:48
+#: activities/grammar_analysis/grammar_analysis.js:43
+#, fuzzy
+#| msgctxt "grammar_analysis|"
+#| msgid "Leave blank if no class matches."
 msgctxt "grammar_analysis|"
-msgid "Grammatical classes"
-msgstr ""
+msgid "Leave the box blank if no class matches."
+msgstr "Eşleşen sınıf yoksa boş bırak."
 
 #: activities/grammar_analysis/grammar_analysis.js:49
 msgctxt "grammar_analysis|"
-msgid "Learn to identify grammatical classes."
-msgstr ""
+msgid "Grammatical classes"
+msgstr "Dilbilgisi sınıflandırmaları"
 
-#: activities/grammar_analysis/grammar_analysis.js:50
+#: activities/grammar_analysis/grammar_analysis.js:51
+#, fuzzy
+#| msgctxt "grammar_analysis|"
+#| msgid ""
+#| "Find all the words corresponding to the provided grammatical class (noun, "
+#| "verb, determiner...)."
+msgctxt "grammar_analysis|"
+msgid "Find all the words corresponding to the requested grammatical class."
+msgstr ""
+"Verilen dilbilgisi sınıflandırmaları ile eşleşen tüm sözcükleri bul (ad, "
+"eylem, belirteç...)."
+
+#: activities/grammar_analysis/grammar_analysis.js:52
 msgctxt "grammar_analysis|"
 msgid ""
-"Find all the words corresponding to the provided grammatical class (noun, "
-"verb, determiner...)."
+"Select the grammatical class from the list, then select the box under a word "
+"and assign it the class."
 msgstr ""
 
-#: activities/grammar_analysis/grammar_analysis.js:400
+#: activities/grammar_analysis/grammar_analysis.js:53
+#, fuzzy
+#| msgctxt "grammar_analysis|"
+#| msgid "Leave blank if no class matches."
+msgctxt "grammar_analysis|"
+msgid "Leave the box blank if the class doesn't match."
+msgstr "Eşleşen sınıf yoksa boş bırak."
+
+#: activities/grammar_analysis/grammar_analysis.js:403
 msgctxt "grammar_analysis|"
 msgid "Empty"
-msgstr ""
+msgstr "Boş"
 
 #. Activity title
 #: activities/grammar_classes/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
 msgid "Grammatical classes"
-msgstr ""
+msgstr "Dilbilgisi sınıflandırmaları"
 
-#. Help title
-#. ----------
-#. Help goal
-#: activities/grammar_classes/ActivityInfo.qml:20
-#: activities/grammar_classes/ActivityInfo.qml:23
+#. Help manual
+#: activities/grammar_classes/ActivityInfo.qml:27
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "Assigns to each requested word a grammatical class from the provided list."
 msgctxt "ActivityInfo|"
-msgid "Learn grammatical classes."
+msgid "Assign the requested grammatical class to the corresponding words."
 msgstr ""
+"İstenen her bir sözcüğü, verilen listeden bir dilbilgisi sınıflandırmasına "
+"atar"
 
-#: activities/grammar_classes/ActivityInfo.qml:24
+#: activities/grammar_classes/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid ""
-"Assigns to each requested word a grammatical class from the provided list."
+"Select the grammatical class from the list, then select the box under a word "
+"and assign it the class."
 msgstr ""
+
+#: activities/grammar_classes/ActivityInfo.qml:29
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Leave blank if no class matches."
+msgctxt "ActivityInfo|"
+msgid "Leave the box blank if the class doesn't match."
+msgstr "Eşleşen sınıf yoksa boş bırak"
 
 #: activities/graph-coloring/ActivityConfig.qml:21
 #: activities/superbrain/ActivityConfig.qml:21
@@ -26093,3 +26172,33 @@ msgstr "Atla"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Başlat"
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid ""
+#~ "Learn to classify words according to their nature (grammatical class)."
+#~ msgstr "Sözcükleri türlerine göre sınıflandırmayı öğren"
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Classify words according to their nature (grammatical class)."
+#~ msgstr "Sözcükleri türlerine göre sınıflandır"
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Assigns to each requested word a grammatical class."
+#~ msgstr "İstenen her bir sözcüğü bir dilbilgisi sınıflandırmasına atar"
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Classify words according to their nature."
+#~ msgstr "Sözcükleri türlerine göre sınıflandır"
+
+#~ msgctxt "grammar_analysis|"
+#~ msgid ""
+#~ "Learn to classify words according to their nature (grammatical class)."
+#~ msgstr "Sözcükleri türlerine göre sınıflandırmayı öğren"
+
+#~ msgctxt "grammar_analysis|"
+#~ msgid "Assign to each word a grammatical class from the list provided."
+#~ msgstr "Her bir sözcüğe, verilen listeden bir dilbilgisi sınıfı ata."
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Learn grammatical classes."
+#~ msgstr "Dilbilgisi sınıflandırmalarını öğren."

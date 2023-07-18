@@ -11,7 +11,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=gcompris&keywords=I18N+L10N&component=general\n"
 "POT-Creation-Date: 2014-11-09 17:30+0000\n"
-"PO-Revision-Date: 2023-07-12 08:23+0300\n"
+"PO-Revision-Date: 2023-07-17 09:52+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
 "Language: uk\n"
@@ -798,6 +798,8 @@ msgstr "Backspace: вилучення останньої цифри у ваші�
 #: activities/algebra_div/ActivityInfo.qml:28
 #: activities/algebra_minus/ActivityInfo.qml:28
 #: activities/algebra_plus/ActivityInfo.qml:28
+#: activities/grammar_analysis/ActivityInfo.qml:35
+#: activities/grammar_classes/ActivityInfo.qml:35
 #: activities/learn_additions/ActivityInfo.qml:28
 #: activities/learn_decimals/ActivityInfo.qml:25
 #: activities/learn_decimals_additions/ActivityInfo.qml:26
@@ -13893,129 +13895,198 @@ msgstr ""
 #: activities/grammar_analysis/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
 msgid "Grammatical analysis"
-msgstr ""
+msgstr "Граматичний аналіз"
 
 #. Help title
 #: activities/grammar_analysis/ActivityInfo.qml:20
+#: activities/grammar_classes/ActivityInfo.qml:20
+#, fuzzy
+#| msgctxt "grammar_analysis|"
+#| msgid "Learn to identify grammatical classes."
 msgctxt "ActivityInfo|"
-msgid "Learn to classify words according to their nature (grammatical class)."
-msgstr ""
+msgid "Identify grammatical classes in the given sentences."
+msgstr "Вивчення ідентифікації за граматичними класами."
 
 #. Help goal
 #: activities/grammar_analysis/ActivityInfo.qml:23
+#: activities/grammar_classes/ActivityInfo.qml:23
+#, fuzzy
+#| msgctxt "grammar_analysis|"
+#| msgid "Learn to identify grammatical classes."
 msgctxt "ActivityInfo|"
-msgid "Classify words according to their nature (grammatical class)."
-msgstr ""
-
-#: activities/grammar_analysis/ActivityInfo.qml:24
-msgctxt "ActivityInfo|"
-msgid "Assigns to each requested word a grammatical class."
-msgstr ""
-
-#: activities/grammar_analysis/ActivityInfo.qml:25
-msgctxt "ActivityInfo|"
-msgid "Leave blank if no class matches."
-msgstr ""
+msgid "Learn to identify grammatical classes."
+msgstr "Вивчення ідентифікації за граматичними класами."
 
 #. Help manual
-#: activities/grammar_analysis/ActivityInfo.qml:29
-#: activities/grammar_classes/ActivityInfo.qml:29
+#: activities/grammar_analysis/ActivityInfo.qml:27
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "Assigns to each requested word a grammatical class from the provided list."
 msgctxt "ActivityInfo|"
-msgid "Classify words according to their nature."
+msgid "Assign the requested grammatical classes to the corresponding words."
+msgstr "Пов'язує кожне зі слів із граматичним класом з наданого списку."
+
+#: activities/grammar_analysis/ActivityInfo.qml:28
+msgctxt "ActivityInfo|"
+msgid ""
+"Select a grammatical class from the list, then select the box under a word "
+"and assign it the class."
 msgstr ""
+
+#: activities/grammar_analysis/ActivityInfo.qml:29
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Leave blank if no class matches."
+msgctxt "ActivityInfo|"
+msgid "Leave the box blank if no class matches."
+msgstr "Не заповнюйте, якщо не відповідає жоден клас."
 
 #: activities/grammar_analysis/ActivityInfo.qml:31
 #: activities/grammar_classes/ActivityInfo.qml:31
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Up/down arrows and tabulation to switch between nature and words"
 msgctxt "ActivityInfo|"
-msgid "Up/down arrows and tabulation to switch between nature and words"
-msgstr ""
+msgid "Up and down arrows or tabulation: switch between classes and words"
+msgstr "↑ і ↓ та табуляція для перемикання між природою і словами"
 
 #: activities/grammar_analysis/ActivityInfo.qml:32
 #: activities/grammar_classes/ActivityInfo.qml:32
 #, fuzzy
 #| msgctxt "ActivityInfo|"
-#| msgid "Left and Right arrows: turn left and right"
+#| msgid "Left and right arrows select element in nature and words"
 msgctxt "ActivityInfo|"
-msgid "Left and right arrows select element in nature and words"
-msgstr "← і →: повернути ліворуч або праворуч"
+msgid "Left and right arrows: select items in classes or words"
+msgstr "← і →: вибрати елемент у природі і словах"
 
 #: activities/grammar_analysis/ActivityInfo.qml:33
 #: activities/grammar_classes/ActivityInfo.qml:33
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Space drops selected nature to current word and move to next word"
 msgctxt "ActivityInfo|"
-msgid "Space drops selected nature to current word and move to next word"
+msgid ""
+"Space: assign the selected class to the selected word and then select the "
+"next word"
 msgstr ""
+"Пробіл скидає позначену природу на поточне слово і переводить до наступного "
+"слова"
 
 #: activities/grammar_analysis/ActivityInfo.qml:34
 #: activities/grammar_classes/ActivityInfo.qml:34
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Backspace move to previous word"
 msgctxt "ActivityInfo|"
-msgid "Backspace move to previous word"
-msgstr ""
+msgid "Backspace: select the previous word"
+msgstr "Backspace пересуває до попереднього слова"
 
 #: activities/grammar_analysis/grammar_analysis.js:39
 msgctxt "grammar_analysis|"
 msgid "Grammatical analysis"
-msgstr ""
+msgstr "Граматичний аналіз"
 
 #: activities/grammar_analysis/grammar_analysis.js:40
+#: activities/grammar_analysis/grammar_analysis.js:50
 msgctxt "grammar_analysis|"
-msgid "Learn to classify words according to their nature (grammatical class)."
-msgstr ""
+msgid "Learn to identify grammatical classes."
+msgstr "Вивчення ідентифікації за граматичними класами."
 
 #: activities/grammar_analysis/grammar_analysis.js:41
+#, fuzzy
+#| msgctxt "grammar_analysis|"
+#| msgid ""
+#| "Find all the words corresponding to the provided grammatical class (noun, "
+#| "verb, determiner...)."
 msgctxt "grammar_analysis|"
-msgid "Assign to each word a grammatical class from the list provided."
+msgid "Find all the words corresponding to the requested grammatical classes."
 msgstr ""
+"Знайдіть усі слова, що належать до наданого граматичного класу (підмет, "
+"присудок, означення...)."
 
 #: activities/grammar_analysis/grammar_analysis.js:42
 msgctxt "grammar_analysis|"
-msgid "Leave blank if no class matches."
+msgid ""
+"Select a grammatical class from the list, then select the box under a word "
+"and assign it the class."
 msgstr ""
 
-#: activities/grammar_analysis/grammar_analysis.js:48
+#: activities/grammar_analysis/grammar_analysis.js:43
+#, fuzzy
+#| msgctxt "grammar_analysis|"
+#| msgid "Leave blank if no class matches."
 msgctxt "grammar_analysis|"
-msgid "Grammatical classes"
-msgstr ""
+msgid "Leave the box blank if no class matches."
+msgstr "Не заповнюйте, якщо не відповідає жоден клас."
 
 #: activities/grammar_analysis/grammar_analysis.js:49
 msgctxt "grammar_analysis|"
-msgid "Learn to identify grammatical classes."
-msgstr ""
+msgid "Grammatical classes"
+msgstr "Граматичні класи"
 
-#: activities/grammar_analysis/grammar_analysis.js:50
+#: activities/grammar_analysis/grammar_analysis.js:51
+#, fuzzy
+#| msgctxt "grammar_analysis|"
+#| msgid ""
+#| "Find all the words corresponding to the provided grammatical class (noun, "
+#| "verb, determiner...)."
+msgctxt "grammar_analysis|"
+msgid "Find all the words corresponding to the requested grammatical class."
+msgstr ""
+"Знайдіть усі слова, що належать до наданого граматичного класу (підмет, "
+"присудок, означення...)."
+
+#: activities/grammar_analysis/grammar_analysis.js:52
 msgctxt "grammar_analysis|"
 msgid ""
-"Find all the words corresponding to the provided grammatical class (noun, "
-"verb, determiner...)."
+"Select the grammatical class from the list, then select the box under a word "
+"and assign it the class."
 msgstr ""
 
-#: activities/grammar_analysis/grammar_analysis.js:400
+#: activities/grammar_analysis/grammar_analysis.js:53
 #, fuzzy
-#| msgctxt "Admin|"
-#| msgid "empty"
+#| msgctxt "grammar_analysis|"
+#| msgid "Leave blank if no class matches."
+msgctxt "grammar_analysis|"
+msgid "Leave the box blank if the class doesn't match."
+msgstr "Не заповнюйте, якщо не відповідає жоден клас."
+
+#: activities/grammar_analysis/grammar_analysis.js:403
 msgctxt "grammar_analysis|"
 msgid "Empty"
-msgstr "порожньо"
+msgstr "Порожньо"
 
 #. Activity title
 #: activities/grammar_classes/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
 msgid "Grammatical classes"
-msgstr ""
+msgstr "Граматичні класи"
 
-#. Help title
-#. ----------
-#. Help goal
-#: activities/grammar_classes/ActivityInfo.qml:20
-#: activities/grammar_classes/ActivityInfo.qml:23
+#. Help manual
+#: activities/grammar_classes/ActivityInfo.qml:27
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "Assigns to each requested word a grammatical class from the provided list."
 msgctxt "ActivityInfo|"
-msgid "Learn grammatical classes."
-msgstr ""
+msgid "Assign the requested grammatical class to the corresponding words."
+msgstr "Пов'язує кожне зі слів із граматичним класом з наданого списку."
 
-#: activities/grammar_classes/ActivityInfo.qml:24
+#: activities/grammar_classes/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid ""
-"Assigns to each requested word a grammatical class from the provided list."
+"Select the grammatical class from the list, then select the box under a word "
+"and assign it the class."
 msgstr ""
+
+#: activities/grammar_classes/ActivityInfo.qml:29
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Leave blank if no class matches."
+msgctxt "ActivityInfo|"
+msgid "Leave the box blank if the class doesn't match."
+msgstr "Не заповнюйте, якщо не відповідає жоден клас."
 
 #: activities/graph-coloring/ActivityConfig.qml:21
 #: activities/superbrain/ActivityConfig.qml:21
@@ -26369,6 +26440,36 @@ msgstr "Пропустити"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Почати"
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid ""
+#~ "Learn to classify words according to their nature (grammatical class)."
+#~ msgstr "Вивчення класифікації слів за їхньою природою (граматичним класом)."
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Classify words according to their nature (grammatical class)."
+#~ msgstr "Класифікуйте слова за їхньою природою (граматичним класом)."
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Assigns to each requested word a grammatical class."
+#~ msgstr "Пов'язує кожне зі слів із граматичним класом."
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Classify words according to their nature."
+#~ msgstr "Класифікуйте слова за їхньою природою."
+
+#~ msgctxt "grammar_analysis|"
+#~ msgid ""
+#~ "Learn to classify words according to their nature (grammatical class)."
+#~ msgstr "Вивчення класифікації слів за їхньою природою (граматичним класом)."
+
+#~ msgctxt "grammar_analysis|"
+#~ msgid "Assign to each word a grammatical class from the list provided."
+#~ msgstr "Пов'язати кожне зі слів із граматичним класом із наданого списку."
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Learn grammatical classes."
+#~ msgstr "Вивчення граматичних класів."
 
 #~ msgctxt "Data|"
 #~ msgid "3 decimal places between 0 and 999."
