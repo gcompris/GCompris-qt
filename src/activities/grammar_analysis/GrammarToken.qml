@@ -33,6 +33,8 @@ Rectangle {
             id: imgSvg
             width: Activity.svgSize
             height: Activity.svgSize
+            sourceSize.width: width
+            sourceSize.height: height
             x: (parent.width - width) / 2    // x, y are not anchored to be moved by transition
             y: 0
             source: (svgName == "") ? "" : svgName

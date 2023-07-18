@@ -26,7 +26,7 @@ ActivityBase {
 
     pageComponent: Image {
         id: background
-        source: Activity.dataUrl + "background.svg"
+        source: "qrc:/gcompris/src/activities/guesscount/resource/backgroundW01.svg"
         sourceSize.width: width
         sourceSize.height: height
         fillMode: Image.PreserveAspectCrop
@@ -113,8 +113,11 @@ ActivityBase {
         // Tutorial section
         Image {
             id: tutorialScreen
-            source: "qrc:/gcompris/src/activities/braille_alphabets/resource/intro_bg.svg"
+            source: "qrc:/gcompris/src/activities/guesscount/resource/backgroundW01.svg"
             anchors.fill: parent
+            sourceSize.width: width
+            sourceSize.height: height
+            fillMode: Image.PreserveAspectCrop
             visible: true
             Tutorial {
                 id: tutorialSection

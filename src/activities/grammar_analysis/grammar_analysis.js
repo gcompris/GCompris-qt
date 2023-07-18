@@ -16,7 +16,7 @@
 const punctuation = "\\,|\\.|:|!|¡|;|\\?|¿|\\\"|«|»|“|”|„|؟|،|。|，|：|？|！|>|<|&|#|=|\\*"
 
 const dataUrl = "qrc:/gcompris/src/activities/grammar_analysis/resource/"
-const svgUrl = dataUrl + "svgs/"
+const svgUrl = dataUrl + "svg/"
 const defaultLevelsFile = "en";
 const svgSize = 90              // Grammar token size. This value controls global scales, except text sizes.
 

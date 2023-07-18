@@ -57,7 +57,7 @@ Each grammatical class is defined by 3 values:
 
 - `code` - this is used to name the grammatical class in the exercises solutions (we advise to use a 3 letters length code, but you can use any length).
 - `wordClass` - this is used for the actual name of the grammatical class which will be displayed.
-- `svg` - the image which will be used to represent this class. It must be one of the images in the directory `resource/svgs/` of the `grammar_analysis` activity (you can find the list of images below in the `Available images` section).
+- `svg` - the image which will be used to represent this class. It must be one of the images in the directory `resource/svg/` of the `grammar_analysis` activity (you can find the list of images below in the `Available images` section).
 
 This way you can define the list of grammatical classes in your language.\
 You can delete a class which is not used in your language or add new ones if needed.\
@@ -79,14 +79,14 @@ If there are not enough images to represent all your classes, let us know and we
 ### Available images
 - `1.svg`: black triangle, used for nouns in English.
 - `2.svg`: small light blue triangle, used for determiners in English.
-- `3.svg`: medium blue triangle, used for adjectives in English.
+- `3.svg`: medium dark blue triangle, used for adjectives in English.
 - `4.svg`: purple triangle, used for pronouns in English.
 - `5.svg`: red circle, used for verbs in English.
 - `6.svg`: small orange circle, used for adverbs in English.
 - `7.svg`: pink rectangle, used for conjunctions in English.
 - `8.svg`: green arc, used for prepositions in English.
 - `9.svg`: yellow exclamation mark, used for interjections in English.
-- `10.svg`: inverted small light blue triangle,
+- `10.svg`: inverted small light blue triangle, not used in English.
 
 ## Exercises definition
 
