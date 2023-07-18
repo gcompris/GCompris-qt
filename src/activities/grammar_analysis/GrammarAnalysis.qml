@@ -4,6 +4,7 @@
  *
  * Authors:
  *   Bruno ANSELME <be.root@free.fr> (Qt Quick native)
+ *   Timothée Giet <animtim@gmail.com> (Graphics and layout refactoring)
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
@@ -36,6 +37,9 @@ ActivityBase {
 
         // system locale by default
         property string locale: "system"
+        property int baseMargins: 10 * ApplicationInfo.ratio
+        property int baseRadius: 2 * ApplicationInfo.ratio
+        property string selectionColor: "#A1CBD9"
 
         Component.onCompleted: {
             dialogActivityConfig.initialize()
@@ -57,17 +61,17 @@ ActivityBase {
             property alias goalModel: goalModel
             property alias answerModel: answerModel
             // Qml main items
-            property alias flow: flow
+            property alias wordsFlow: wordsFlow
             property alias rowAnswer: rowAnswer
-            property alias rowGoalTokens: rowGoalTokens
+            property alias gridGoalTokens: gridGoalTokens
             // Activity parameters
             property int selectedClass: 0
             property int selectedBox: 0
             property int currentExercise: 0
             property alias objective: objective
+            property bool keyboardNavigation: false
             property bool keysOnTokens: true                // True when focus is on grammatical tokens else if focus is on words
             property var boxIndexes: []                     // Array of pairs <word number>-<subclass number (box)>
-            property int animDuration: 500                  // Duration for swing, vanish and moveto animations
             property alias okButton: okButton
             property alias file: file
             property alias jsonParser: jsonParser
@@ -131,46 +135,72 @@ ActivityBase {
         }
 
         // Main section
-        Rectangle {
+        Item {
             id: mainArea
             anchors.top: parent.top
-            anchors.bottom: bar.top
-            anchors.horizontalCenter: parent.horizontalCenter
-            anchors.margins: 5
+            anchors.bottom: okButton.top
+            anchors.left: parent.left
+            anchors.right: parent.right
+            anchors.margins: background.baseMargins
             visible: !tutorialScreen.visible
-            color: "transparent"
             Column {
                 anchors.top: parent.top
                 anchors.horizontalCenter: parent.horizontalCenter
-                anchors.margins: 5
-                anchors.topMargin: 50
-                spacing: 30
-                GCText {        // Exercise's objective
-                    id: objective
-                    fontSize: regularSize
-                    width: parent.width - 50
-                    horizontalAlignment: Text.AlignHCenter
+                width: parent.width
+                height: parent.height
+                spacing: background.baseMargins
+                Rectangle {
+                    id: objectiveContainer
+                    width: objective.paintedWidth + background.baseMargins * 2
+                    height: objective.paintedHeight + background.baseMargins
+                    color: "#80FFFFFF"
+                    radius: background.baseRadius
                     anchors.horizontalCenter: parent.horizontalCenter
-                    wrapMode: Text.WordWrap
+                    GCText {        // Exercise's objective
+                        id: objective
+                        fontSize: regularSize
+                        fontSizeMode: Text.Fit
+                        width: mainArea.width - background.baseMargins * 2
+                        height: mainArea.height * 0.2 - background.baseMargins
+                        horizontalAlignment: Text.AlignHCenter
+                        verticalAlignment: Text.AlignVCenter
+                        anchors.horizontalCenter: parent.horizontalCenter
+                        anchors.verticalCenter: parent.verticalCenter
+                        wrapMode: Text.WordWrap
+                    }
                 }
                 Rectangle {     // Display grammatical classes (goal)
-                    color: "beige"
-                    border.color: "burlywood"
-                    border.width: items.keysOnTokens  ? 5 : 0
+                    id: goalTokensContainer
+                    color: "#F0F0F0"
                     anchors.horizontalCenter: parent.horizontalCenter
-                    height: rowGoalTokens.height + 24
-                    width: rowGoalTokens.width + 24
-                    radius: 7
+                    width: gridGoalTokens.width + background.baseMargins
+                    height: gridGoalTokens.height + background.baseMargins
+                    radius: background.baseRadius
                     focus: true
                     z: 2
-                    Row {
-                        id: rowGoalTokens
-                        spacing: 5
+                    Rectangle {
+                        z: -1
+                        color: background.selectionColor
+                        radius: background.baseRadius
+                        visible: items.keyboardNavigation && items.keysOnTokens
                         anchors.centerIn: parent
+                        width: parent.width + background.baseMargins
+                        height: parent.height + background.baseMargins
+                    }
+                    Grid {
+                        id: gridGoalTokens
+                        anchors.centerIn: parent
+                        columns: mainArea.width / tokenWidth
                         layoutDirection: (Core.isLeftToRightLocale(items.locale)) ?  Qt.LeftToRight : Qt.RightToLeft
+
+                        property real tokenWidth: 75 * ApplicationInfo.ratio
+                        property real tokenHeight: columns < goalModel.count ? 40 * ApplicationInfo.ratio : 60 * ApplicationInfo.ratio
+
                         Repeater {
                             model: goalModel
                             delegate: GrammarToken {
+                                width: gridGoalTokens.tokenWidth
+                                height: gridGoalTokens.tokenHeight
                                 classCode: code
                                 className: wordClass
                                 svgName: image
@@ -178,39 +208,56 @@ ActivityBase {
                         }
                     }
                 }
-                Rectangle {     // Display sentence
-                    color: "beige"
-                    border.color: "burlywood"
-                    border.width: !items.keysOnTokens  ? 5 : 0
-                    width: flow.width + 15
-                    height: flow.height + 15
-                    anchors.margins: 5
-                    radius: 7
-                    Flow {
-                        id: flow
-                        width: background.width - 50
-                        spacing: 0
-                        leftPadding: 10
-                        rightPadding: 10
-                        anchors.verticalCenter: parent.verticalCenter
-                        layoutDirection: (Core.isLeftToRightLocale(items.locale)) ?  Qt.LeftToRight : Qt.RightToLeft
-                        Repeater {
-                            id: rowAnswer
-                            model: answerModel
-                            delegate: WordAndClass {
-                                expected: code
-                                wordText: word
-                                proposition: prop
-                                startPos: startCount
+                Item {
+                    id: wordsArea
+                    width: mainArea.width
+                    height: mainArea.height - objectiveContainer.height - goalTokensContainer.height - background.baseMargins * 2
+
+                    property real itemHeight: Math.min(40 * ApplicationInfo.ratio, height * 0.2)
+                    property bool isSmallHeight: itemHeight < 30 * ApplicationInfo.ratio
+
+                    Rectangle {     // Display sentence
+                        color: "#F0F0F0"
+                        width: parent.width
+                        height: wordsFlow.height
+                        radius: background.baseRadius
+                        Rectangle {
+                            z: -1
+                            color: background.selectionColor
+                            radius: background.baseRadius
+                            visible: items.keyboardNavigation && !items.keysOnTokens
+                            anchors.centerIn: parent
+                            width: parent.width + background.baseMargins
+                            height: parent.height + background.baseMargins
+                        }
+                        Flow {
+                            id: wordsFlow
+                            width: parent.width - background.baseMargins * 2
+                            spacing: 0
+                            leftPadding: background.baseMargins
+                            rightPadding: background.baseMargins
+                            anchors.verticalCenter: parent.verticalCenter
+                            layoutDirection: (Core.isLeftToRightLocale(items.locale)) ?  Qt.LeftToRight : Qt.RightToLeft
+                            Repeater {
+                                id: rowAnswer
+                                model: answerModel
+                                delegate: WordAndClass {
+                                    expected: code
+                                    wordText: word
+                                    proposition: prop
+                                    startPos: startCount
+                                }
                             }
                         }
                     }
-                }
-                GCText {        // Error text
-                    id: errors
-                    color: "red"
-                    fontSize: tinySize
-                    anchors.horizontalCenter:  parent.horizontalCenter
+                    GCText {        // Error text
+                        id: errors
+                        color: "red"
+                        style: Text.Outline
+                        styleColor: "white"
+                        fontSize: tinySize
+                        anchors.horizontalCenter:  parent.horizontalCenter
+                    }
                 }
             }
         }
@@ -260,8 +307,9 @@ ActivityBase {
             width: 60 * ApplicationInfo.ratio
             visible: !tutorialScreen.visible
             anchors.right: parent.right
-            anchors.top: parent.top
-            anchors.margins: 20
+            anchors.bottom: background.bottom
+            anchors.rightMargin: background.baseMargins
+            anchors.bottomMargin: 1.5 * bar.height
             sourceSize.width: width
             onClicked: Activity.checkResult()
             mouseArea.enabled: !bonus.isPlaying
@@ -271,13 +319,13 @@ ActivityBase {
             id: score
             numberOfSubLevels: items.datasetModel.count
             currentSubLevel: items.currentExercise + 1
-            anchors.top: parent.top
-            anchors.left: parent.left
-            anchors.right: undefined
+            anchors.right: okButton.left
+            anchors.rightMargin: background.baseMargins
+            anchors.verticalCenter: okButton.verticalCenter
             anchors.bottom: undefined
+            anchors.top: undefined
+            anchors.left: undefined
             visible: !tutorialScreen.visible
-            margins: 0
-            scale: 0.6
         }
 
         Bonus {
@@ -291,13 +339,13 @@ ActivityBase {
         Text {
             id: hideDebug
             text: "Alt+Left and Alt+Right to change exercise\nCtrl+Alt+Return to flip debug informations"
-            anchors.bottom: parent.bottom
+            anchors.top: okButton.bottom
             anchors.right: parent.right
             visible: translationMode
         }
         Column {
             id: infoView
-            anchors.top: score.bottom
+            anchors.bottom: okButton.bottom
             visible: items.debugActive
             spacing: 5
             Text {

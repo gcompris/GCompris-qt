@@ -18,7 +18,6 @@ const punctuation = "\\,|\\.|:|!|¡|;|\\?|¿|\\\"|«|»|“|”|„|؟|،|。|�
 const dataUrl = "qrc:/gcompris/src/activities/grammar_analysis/resource/"
 const svgUrl = dataUrl + "svg/"
 const defaultLevelsFile = "en";
-const svgSize = 90              // Grammar token size. This value controls global scales, except text sizes.
 
 var dataSetUrl = ""
 var syntaxList = []
@@ -126,7 +125,7 @@ function start(items_, grammarMode_, translationMode_) {
 
     checkLevels()
     numberOfLevel = datas["levels"].length
-    items.flow.layoutDirection = (datas.rightToLeft) ? Qt.LeftToRight : Qt.RightToLeft
+    items.wordsFlow.layoutDirection = (datas.rightToLeft) ? Qt.LeftToRight : Qt.RightToLeft
     initSyntax()
     initExercises()
     initLevel()
@@ -290,12 +289,14 @@ function handleKeys(event) {
     } else {
         switch (event.key) {
         case Qt.Key_Left:
+            items.keyboardNavigation = true
             if (items.keysOnTokens)
                 items.selectedClass = (items.selectedClass + items.goalModel.count - 1) % items.goalModel.count
             else
                 items.selectedBox = (items.selectedBox + boxCount -1) % boxCount
             break
         case Qt.Key_Right:
+            items.keyboardNavigation = true
             if (items.keysOnTokens)
                 items.selectedClass = (items.selectedClass + 1) % items.goalModel.count
             else
@@ -304,9 +305,11 @@ function handleKeys(event) {
         case Qt.Key_Up:
         case Qt.Key_Down:
         case Qt.Key_Tab:
+            items.keyboardNavigation = true
             items.keysOnTokens = !items.keysOnTokens
             break
         case Qt.Key_Backspace:
+            items.keyboardNavigation = true
             items.selectedBox = (items.selectedBox + boxCount - 1) % boxCount
             break
         case Qt.Key_Enter:
@@ -315,8 +318,9 @@ function handleKeys(event) {
                 checkResult()
             break
         case Qt.Key_Space:
+            items.keyboardNavigation = true
             var pos = items.boxIndexes[items.selectedBox].split('-')
-            items.flow.children[pos[0]].setProposal(pos[1])
+            items.wordsFlow.children[pos[0]].setProposal(pos[1])
             break
         default :
             break

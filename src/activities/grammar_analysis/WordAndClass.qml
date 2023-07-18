@@ -4,11 +4,13 @@
  *
  * Authors:
  *   Bruno ANSELME <be.root@free.fr> (Qt Quick native)
+ *   Timothée Giet <animtim@gmail.com> (Graphics and layout refactoring)
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
 import QtQuick 2.12
 
+import GCompris 1.0
 import "../../core"
 import "grammar_analysis.js" as Activity
 import "qrc:/gcompris/src/core/core.js" as Core
@@ -23,7 +25,7 @@ import "qrc:/gcompris/src/core/core.js" as Core
  * boxModel contains boxes for grammatical classes
  */
 
-Rectangle {
+Item {
     id: wordClassItem
     property string wordText: ""            // Word, group of word, space or punctuation
     property string expected: ""            // Grammatical(s) class(es) expected
@@ -34,10 +36,8 @@ Rectangle {
     property alias rowWords: rowWords
     property alias boxModel: boxModel
 
-    color: "transparent"
-    radius: 5
     width: Math.max(textView.width, rowWords.width) + 2
-    height: textView.height + rowWords.height + 15
+    height: textView.height + rowWords.height + background.baseMargins
 
     // Set proposal for grammatical class number idx
     function setProposal(idx, forward = true) {
@@ -48,7 +48,7 @@ Rectangle {
         rowWords.children[idx].imgSvg.state = "vanish"
         var proposal = items.goalModel.get(items.selectedClass).code
         if (proposal !== "eraser") {
-            items.rowGoalTokens.children[items.selectedClass].imgSvg.state = "moveto"
+            items.gridGoalTokens.children[items.selectedClass].imgSvg.state = "moveto"
             buildProposition()
         }
     }
@@ -99,25 +99,23 @@ Rectangle {
 
     Column {
         anchors.fill: parent
-        spacing: 3
-        Rectangle {
-            color: "transparent"
+        spacing: ApplicationInfo.ratio
+        Item {
             width: Math.max(textView.width, rowWords.width)
             height: textView.height
             anchors.horizontalCenter: parent.horizontalCenter
-            radius: 5
             GCText {        // Word display
                 id: textView
                 anchors.horizontalCenter: parent.horizontalCenter
                 anchors.verticalCenter: parent.verticalCenter
-                fontSize: regularSize
+                fontSize: wordsArea.isSmallHeight ? tinySize : regularSize
                 text: wordText
             }
         }
         Row {               // Row of grammar classes (boxes for tokens)
             id: rowWords
             anchors.horizontalCenter: parent.horizontalCenter
-            spacing: 5
+            spacing: ApplicationInfo.ratio
             layoutDirection: (Core.isLeftToRightLocale(items.locale)) ? Qt.LeftToRight : Qt.RightToLeft
             Repeater {
                 model: boxModel
@@ -126,27 +124,21 @@ Rectangle {
                     property int order: order_
                     property alias imgSvg: imgSvg
                     property bool boxExpected: boxExpected_
-                    width: imgSvg.width + 10
-                    height: imgSvg.height + 10
-                    radius: 5
+                    width: imgSvg.width + background.baseMargins
+                    height: width
+                    radius: background.baseRadius
                     color: "transparent"
-                    border.color: boxExpected ? "burlywood" : "transparent"
-                    border.width: (order === items.selectedBox)  ? 4 : 1
+                    border.color: boxExpected ? background.selectionColor : "transparent"
+                    border.width: (order === items.selectedBox)  ? 4 * ApplicationInfo.ratio : ApplicationInfo.ratio
                     visible: (expected !== "")
-                    Rectangle {     // Draw a line under non expected classes in merged classes
-                        height: 2
-                        width: parent.width
-                        anchors.bottom: parent.bottom
-                        border.color: "burlywood"
-                        border.width: 1
-                        visible: !token.boxExpected
-                    }
 
                     Image {         //
                         id: imgSvg
                         source: (svgSource == "") ? "qrc:/gcompris/src/core/resource/empty.svg" : svgSource
-                        width: (expected == "") ? 10 : Activity.svgSize
-                        height: Activity.svgSize
+                        width: (expected == "") ? background.baseMargins : wordsArea.itemHeight
+                        height: width
+                        sourceSize.width: width
+                        sourceSize.height: width
                         anchors.centerIn: parent
                         states: [
                             State {
@@ -166,12 +158,12 @@ Rectangle {
                                     alwaysRunToEnd: true
                                     NumberAnimation {
                                         properties: "opacity"
-                                        duration: items.animDuration
+                                        duration: 250
                                     }
                                     ScriptAction {
                                         script: {
                                             var pos = items.boxIndexes[items.selectedBox].split('-')
-                                            items.flow.children[pos[0]].endProposal(pos[1])
+                                            items.wordsFlow.children[pos[0]].endProposal(pos[1])
                                             Activity.animRunning = false
                                         }
                                     }
