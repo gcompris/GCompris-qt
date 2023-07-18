@@ -29,7 +29,7 @@ ActivityBase {
     pageComponent: Image {
         id: background
         anchors.fill: parent
-        source: Activity.url + 'background-wood.svg'
+        source: "qrc:/gcompris/src/activities/chess/resource/background-wood.svg"
         signal start
         signal stop
 
