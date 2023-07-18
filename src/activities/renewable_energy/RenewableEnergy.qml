@@ -26,7 +26,7 @@ ActivityBase {
     pageComponent: Image {
         id: background
         anchors.fill: parent
-        source: "qrc:/gcompris/src/activities/checkers/resource/background-wood.svg"
+        source: "qrc:/gcompris/src/activities/chess/resource/background-wood.svg"
         sourceSize.width: width
         sourceSize.height: height
 
