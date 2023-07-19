@@ -89,18 +89,16 @@ Item {
     // Tutorial instructions
     GCText {
         id: tutorialText
-        anchors {
-            horizontalCenter: parent.horizontalCenter
-            top: parent.top
-            topMargin: 10
-        }
+        anchors.verticalCenter: tutorialTextContainer.verticalCenter
+        anchors.left: tutorialTextContainer.left
+        anchors.leftMargin: 10 * ApplicationInfo.ratio
         text: tutorialDetails ? tutorialDetails[tutorialNumber].instruction : ""
         fontSizeMode: Text.Fit
         minimumPixelSize: 10
-        color: "black"
-        horizontalAlignment: Text.AlignHLeft
-        width: Math.min(implicitWidth, 0.8 * parent.width)
-        height: Math.min(implicitHeight, 0.25 * parent.height)
+        horizontalAlignment: Text.AlignLeft
+        verticalAlignment: Text.AlignVCenter
+        width: parent.width - 40 * ApplicationInfo.ratio
+        height: 0.25 * parent.height
         wrapMode: Text.WordWrap
         z: 2
     }
@@ -111,10 +109,11 @@ Item {
 
     Rectangle {
         id: tutorialTextContainer
-        anchors.top: tutorialText.top
-        anchors.horizontalCenter: tutorialText.horizontalCenter
-        width: tutorialText.width + 20
-        height: tutorialText.height + 2
+        anchors.top: parent.top
+        anchors.topMargin: 10 * ApplicationInfo.ratio
+        anchors.horizontalCenter: parent.horizontalCenter
+        width: tutorialText.paintedWidth + 20 * ApplicationInfo.ratio
+        height: tutorialText.paintedHeight + 10 * ApplicationInfo.ratio
         opacity: 0.8
         radius: 10
         border.width: 6
