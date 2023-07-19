@@ -31,6 +31,7 @@
  */
 import QtQuick 2.12
 import GCompris 1.0
+import "core.js" as Core
 
 Item {
     id: tutorialSection
@@ -90,12 +91,14 @@ Item {
     GCText {
         id: tutorialText
         anchors.verticalCenter: tutorialTextContainer.verticalCenter
-        anchors.left: tutorialTextContainer.left
+        anchors.left: Core.isLeftToRightLocale(ApplicationSettings.locale) ? tutorialTextContainer.left : undefined
+        anchors.right: Core.isLeftToRightLocale(ApplicationSettings.locale) ? undefined : tutorialTextContainer.right
         anchors.leftMargin: 10 * ApplicationInfo.ratio
+        anchors.rightMargin: 10 * ApplicationInfo.ratio
         text: tutorialDetails ? tutorialDetails[tutorialNumber].instruction : ""
         fontSizeMode: Text.Fit
         minimumPixelSize: 10
-        horizontalAlignment: Text.AlignLeft
+        horizontalAlignment: Core.isLeftToRightLocale(ApplicationSettings.locale) ? Text.AlignLeft : Text.AlignRight
         verticalAlignment: Text.AlignVCenter
         width: parent.width - 40 * ApplicationInfo.ratio
         height: 0.25 * parent.height
