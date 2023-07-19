@@ -82,6 +82,8 @@ ActivityBase {
             property bool currentLevelContainsLoop
             property int maxNumberOfInstructionsAllowed
             property int numberOfInstructionsAdded
+            // When the activity is stopped, avoid calling initLevel on activity width/height changed
+            property bool activityStopped: false
         }
 
         // This function catches the signal emitted after completion of movement of Tux after executing each instruction.
@@ -99,7 +101,10 @@ ActivityBase {
         }
 
         onStart: { Activity.start(items) }
-        onStop: { Activity.stop() }
+        onStop: {
+            items.activityStopped = true
+            Activity.stop()
+        }
 
         property var areaWithKeyboardInput: instructionArea
 
