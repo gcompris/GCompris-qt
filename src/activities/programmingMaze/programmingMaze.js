@@ -137,6 +137,7 @@ function start(items_) {
 }
 
 function stop() {
+    items.activityStopped = true
     destroyInstructionObjects()
 }
 
@@ -347,7 +348,9 @@ function deadEnd() {
 
 function resetTuxPosition() {
     resetTux = true
-    initLevel()
+    if(!items.activityStopped) {
+        initLevel()
+    }
 }
 
 function checkSuccessAndExecuteNextInstruction() {
@@ -388,13 +391,13 @@ function previousLevel() {
 
 function repositionObjectsOnWidthChanged(factor) {
     resetTux = true
-    if(items)
+    if(items && !items.activityStopped)
         initLevel()
 }
 
 function repositionObjectsOnHeightChanged(factor) {
     resetTux = true
-    if(items)
+    if(items && !items.activityStopped)
         initLevel()
 }
 
