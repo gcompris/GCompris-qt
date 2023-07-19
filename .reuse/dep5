@@ -2263,10 +2263,6 @@ Files: src/activities/grammar_analysis/*.svg
 Copyright: 2023 Timothée Giet
 License: CC-BY-SA-4.0
 
-Files: src/activities/grammar_analysis/be.root.svg
-Copyright: 2023 Bruno Anselme
-License: CC-BY-SA-4.0
-
 Files: src/activities/grammar_analysis/*.png
 Copyright: 2023 Bruno Anselme
 License: CC-BY-SA-4.0
@@ -2280,7 +2276,7 @@ Copyright: 2023 Emmanuel Charruau
 License: CC-BY-SA-4.0
 
 Files: src/activities/grammar_classes/*.svg
-Copyright: 2023 Bruno Anselme
+Copyright: 2023 Timothée Giet
 License: CC-BY-SA-4.0
 
 Files: src/activities/grammar_classes/resource/grammar_classes-en.json

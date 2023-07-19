@@ -12,7 +12,7 @@ import GCompris 1.0
 ActivityInfo {
     name: "grammar_analysis/GrammarAnalysis.qml"
     difficulty: 3
-    icon: "grammar_analysis/be.root.svg"
+    icon: "grammar_analysis/grammar_analysis.svg"
     author: "Bruno ANSELME &lt;be.root@free.fr&gt;"
     //: Activity title
     title: qsTr("Grammatical analysis")

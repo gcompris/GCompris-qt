@@ -12,7 +12,7 @@ import GCompris 1.0
 ActivityInfo {
     name: "grammar_classes/GrammarClasses.qml"
     difficulty: 3
-    icon: "grammar_classes/be.root.svg"
+    icon: "grammar_classes/grammar_classes.svg"
     author: "Bruno ANSELME &lt;be.root@free.fr&gt;"
     //: Activity title
     title: qsTr("Grammatical classes")
