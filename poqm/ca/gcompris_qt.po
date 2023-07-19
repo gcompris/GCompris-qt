@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2014-12-25 01:10+0000\n"
-"PO-Revision-Date: 2023-07-17 15:23+0300\n"
+"PO-Revision-Date: 2023-07-18 16:03+0300\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
@@ -14228,34 +14228,23 @@ msgstr "Anàlisi gramatical"
 #. Help title
 #: activities/grammar_analysis/ActivityInfo.qml:20
 #: activities/grammar_classes/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "grammar_analysis|"
-#| msgid "Learn to identify grammatical classes."
 msgctxt "ActivityInfo|"
 msgid "Identify grammatical classes in the given sentences."
-msgstr "Apreneu a identificar classes gramaticals."
+msgstr "Identifiqueu les classes gramaticals en les frases indicades."
 
 #. Help goal
 #: activities/grammar_analysis/ActivityInfo.qml:23
 #: activities/grammar_classes/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "grammar_analysis|"
-#| msgid "Learn to identify grammatical classes."
 msgctxt "ActivityInfo|"
 msgid "Learn to identify grammatical classes."
 msgstr "Apreneu a identificar classes gramaticals."
 
 #. Help manual
 #: activities/grammar_analysis/ActivityInfo.qml:27
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Assigns to each requested word a grammatical class from the provided list."
 msgctxt "ActivityInfo|"
 msgid "Assign the requested grammatical classes to the corresponding words."
 msgstr ""
-"Assigna a cada paraula sol·licitada una classe gramatical a partir de la "
-"llista proporcionada."
+"Assigneu les classes gramaticals sol·licitades a les paraules corresponents."
 
 #: activities/grammar_analysis/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
@@ -14263,129 +14252,101 @@ msgid ""
 "Select a grammatical class from the list, then select the box under a word "
 "and assign it the class."
 msgstr ""
+"Seleccioneu una classe gramatical de la llista, després seleccioneu el "
+"quadre sota d'una paraula i assigneu-hi la classe."
 
 #: activities/grammar_analysis/ActivityInfo.qml:29
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Leave blank if no class matches."
 msgctxt "ActivityInfo|"
 msgid "Leave the box blank if no class matches."
-msgstr "Deixeu-ho en blanc si no coincideix cap classe."
+msgstr "Deixeu el quadre en blanc si no coincideix cap classe."
 
 #: activities/grammar_analysis/ActivityInfo.qml:31
 #: activities/grammar_classes/ActivityInfo.qml:31
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Up/down arrows and tabulation to switch between nature and words"
 msgctxt "ActivityInfo|"
 msgid "Up and down arrows or tabulation: switch between classes and words"
-msgstr ""
-"Les fletxes amunt/avall o la tabulació per a canviar entre natura i paraules"
+msgstr "Fletxes amunt i avall o tabulació: canvia entre classes i paraules"
 
 #: activities/grammar_analysis/ActivityInfo.qml:32
 #: activities/grammar_classes/ActivityInfo.qml:32
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Left and right arrows select element in nature and words"
 msgctxt "ActivityInfo|"
 msgid "Left and right arrows: select items in classes or words"
 msgstr ""
-"Les fletxes esquerra i dreta seleccionen un element a la natura i les "
-"paraules"
+"Fletxes esquerra i dreta: seleccioneu elements a les classes o les paraules"
 
 #: activities/grammar_analysis/ActivityInfo.qml:33
 #: activities/grammar_classes/ActivityInfo.qml:33
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Space drops selected nature to current word and move to next word"
 msgctxt "ActivityInfo|"
 msgid ""
 "Space: assign the selected class to the selected word and then select the "
 "next word"
 msgstr ""
-"L'espai deixa anar la natura actual a la paraula actual i mou a la paraula "
-"següent"
+"Espai: assigna la classe seleccionada a la paraula seleccionada i després "
+"selecciona la paraula següent"
 
 #: activities/grammar_analysis/ActivityInfo.qml:34
 #: activities/grammar_classes/ActivityInfo.qml:34
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Backspace move to previous word"
 msgctxt "ActivityInfo|"
 msgid "Backspace: select the previous word"
-msgstr "La tecla de retrocés mou a la paraula anterior"
+msgstr "Tecla de retrocés: selecciona la paraula anterior"
 
-#: activities/grammar_analysis/grammar_analysis.js:39
+#: activities/grammar_analysis/grammar_analysis.js:38
 msgctxt "grammar_analysis|"
 msgid "Grammatical analysis"
 msgstr "Anàlisi gramatical"
 
-#: activities/grammar_analysis/grammar_analysis.js:40
-#: activities/grammar_analysis/grammar_analysis.js:50
+#: activities/grammar_analysis/grammar_analysis.js:39
+#: activities/grammar_analysis/grammar_analysis.js:49
 msgctxt "grammar_analysis|"
 msgid "Learn to identify grammatical classes."
 msgstr "Apreneu a identificar classes gramaticals."
 
-#: activities/grammar_analysis/grammar_analysis.js:41
-#, fuzzy
-#| msgctxt "grammar_analysis|"
-#| msgid ""
-#| "Find all the words corresponding to the provided grammatical class (noun, "
-#| "verb, determiner...)."
+#: activities/grammar_analysis/grammar_analysis.js:40
 msgctxt "grammar_analysis|"
 msgid "Find all the words corresponding to the requested grammatical classes."
 msgstr ""
-"Trobeu totes les paraules corresponents a la classe gramatical proporcionada "
-"(nom, verb, determinant...)."
+"Trobeu totes les paraules corresponents a les classes gramaticals "
+"sol·licitades."
 
-#: activities/grammar_analysis/grammar_analysis.js:42
+#: activities/grammar_analysis/grammar_analysis.js:41
 msgctxt "grammar_analysis|"
 msgid ""
 "Select a grammatical class from the list, then select the box under a word "
 "and assign it the class."
 msgstr ""
+"Seleccioneu una classe gramatical de la llista, després seleccioneu el "
+"quadre sota d'una paraula i assigneu-hi la classe."
 
-#: activities/grammar_analysis/grammar_analysis.js:43
-#, fuzzy
-#| msgctxt "grammar_analysis|"
-#| msgid "Leave blank if no class matches."
+#: activities/grammar_analysis/grammar_analysis.js:42
 msgctxt "grammar_analysis|"
 msgid "Leave the box blank if no class matches."
-msgstr "Deixeu-ho en blanc si no coincideix cap classe."
+msgstr "Deixeu el quadre en blanc si no coincideix cap classe."
 
-#: activities/grammar_analysis/grammar_analysis.js:49
+#: activities/grammar_analysis/grammar_analysis.js:48
 msgctxt "grammar_analysis|"
 msgid "Grammatical classes"
 msgstr "Classes gramaticals"
 
-#: activities/grammar_analysis/grammar_analysis.js:51
-#, fuzzy
-#| msgctxt "grammar_analysis|"
-#| msgid ""
-#| "Find all the words corresponding to the provided grammatical class (noun, "
-#| "verb, determiner...)."
+#: activities/grammar_analysis/grammar_analysis.js:50
 msgctxt "grammar_analysis|"
 msgid "Find all the words corresponding to the requested grammatical class."
 msgstr ""
-"Trobeu totes les paraules corresponents a la classe gramatical proporcionada "
-"(nom, verb, determinant...)."
+"Trobeu totes les paraules corresponents a la class gramatical sol·licitada."
 
-#: activities/grammar_analysis/grammar_analysis.js:52
+#: activities/grammar_analysis/grammar_analysis.js:51
 msgctxt "grammar_analysis|"
 msgid ""
 "Select the grammatical class from the list, then select the box under a word "
 "and assign it the class."
 msgstr ""
+"Seleccioneu la classe gramatical de la llista, després seleccioneu el quadre "
+"sota d'una paraula i assigneu-hi la classe."
 
-#: activities/grammar_analysis/grammar_analysis.js:53
-#, fuzzy
-#| msgctxt "grammar_analysis|"
-#| msgid "Leave blank if no class matches."
+#: activities/grammar_analysis/grammar_analysis.js:52
 msgctxt "grammar_analysis|"
 msgid "Leave the box blank if the class doesn't match."
-msgstr "Deixeu-ho en blanc si no coincideix cap classe."
+msgstr "Deixeu el quadre en blanc si no coincideix cap classe."
 
-#: activities/grammar_analysis/grammar_analysis.js:403
+#: activities/grammar_analysis/grammar_analysis.js:407
 msgctxt "grammar_analysis|"
 msgid "Empty"
 msgstr "Buida"
@@ -14398,15 +14359,10 @@ msgstr "Classes gramaticals"
 
 #. Help manual
 #: activities/grammar_classes/ActivityInfo.qml:27
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Assigns to each requested word a grammatical class from the provided list."
 msgctxt "ActivityInfo|"
 msgid "Assign the requested grammatical class to the corresponding words."
 msgstr ""
-"Assigna a cada paraula sol·licitada una classe gramatical a partir de la "
-"llista proporcionada."
+"Assigneu la classe gramatical sol·licitada a les paraules corresponents."
 
 #: activities/grammar_classes/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
@@ -14414,14 +14370,13 @@ msgid ""
 "Select the grammatical class from the list, then select the box under a word "
 "and assign it the class."
 msgstr ""
+"Seleccioneu la classe gramatical de la llista, després seleccioneu el quadre "
+"sota d'una paraula i assigneu-hi la classe."
 
 #: activities/grammar_classes/ActivityInfo.qml:29
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Leave blank if no class matches."
 msgctxt "ActivityInfo|"
 msgid "Leave the box blank if the class doesn't match."
-msgstr "Deixeu-ho en blanc si no coincideix cap classe."
+msgstr "Deixeu el quadre en blanc si no coincideix cap classe."
 
 #: activities/graph-coloring/ActivityConfig.qml:21
 #: activities/superbrain/ActivityConfig.qml:21

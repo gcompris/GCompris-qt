@@ -14075,57 +14075,57 @@ msgctxt "ActivityInfo|"
 msgid "Backspace: select the previous word"
 msgstr ""
 
-#: activities/grammar_analysis/grammar_analysis.js:39
+#: activities/grammar_analysis/grammar_analysis.js:38
 msgctxt "grammar_analysis|"
 msgid "Grammatical analysis"
 msgstr ""
 
-#: activities/grammar_analysis/grammar_analysis.js:40
-#: activities/grammar_analysis/grammar_analysis.js:50
+#: activities/grammar_analysis/grammar_analysis.js:39
+#: activities/grammar_analysis/grammar_analysis.js:49
 msgctxt "grammar_analysis|"
 msgid "Learn to identify grammatical classes."
 msgstr ""
 
-#: activities/grammar_analysis/grammar_analysis.js:41
+#: activities/grammar_analysis/grammar_analysis.js:40
 msgctxt "grammar_analysis|"
 msgid "Find all the words corresponding to the requested grammatical classes."
 msgstr ""
 
-#: activities/grammar_analysis/grammar_analysis.js:42
+#: activities/grammar_analysis/grammar_analysis.js:41
 msgctxt "grammar_analysis|"
 msgid ""
 "Select a grammatical class from the list, then select the box under a word "
 "and assign it the class."
 msgstr ""
 
-#: activities/grammar_analysis/grammar_analysis.js:43
+#: activities/grammar_analysis/grammar_analysis.js:42
 msgctxt "grammar_analysis|"
 msgid "Leave the box blank if no class matches."
 msgstr ""
 
-#: activities/grammar_analysis/grammar_analysis.js:49
+#: activities/grammar_analysis/grammar_analysis.js:48
 msgctxt "grammar_analysis|"
 msgid "Grammatical classes"
 msgstr ""
 
-#: activities/grammar_analysis/grammar_analysis.js:51
+#: activities/grammar_analysis/grammar_analysis.js:50
 msgctxt "grammar_analysis|"
 msgid "Find all the words corresponding to the requested grammatical class."
 msgstr ""
 
-#: activities/grammar_analysis/grammar_analysis.js:52
+#: activities/grammar_analysis/grammar_analysis.js:51
 msgctxt "grammar_analysis|"
 msgid ""
 "Select the grammatical class from the list, then select the box under a word "
 "and assign it the class."
 msgstr ""
 
-#: activities/grammar_analysis/grammar_analysis.js:53
+#: activities/grammar_analysis/grammar_analysis.js:52
 msgctxt "grammar_analysis|"
 msgid "Leave the box blank if the class doesn't match."
 msgstr ""
 
-#: activities/grammar_analysis/grammar_analysis.js:403
+#: activities/grammar_analysis/grammar_analysis.js:407
 msgctxt "grammar_analysis|"
 msgid "Empty"
 msgstr ""
