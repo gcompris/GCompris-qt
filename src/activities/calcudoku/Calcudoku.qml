@@ -155,7 +155,8 @@ ActivityBase {
         Grid {
             z: 100
             id: calcudokuColumn
-            anchors.centerIn: gridLayout
+            x: Math.round(gridLayout.x + gridLayout.width * 0.5 - width * 0.5)
+            y: Math.round(gridLayout.y + gridLayout.height * 0.5 - height * 0.5)
             width:  Math.min(gridLayout.width, gridLayout.height)
             height: width
             property int squareSize: 2 * Math.round(width / calcudokuColumn.columns / 2)
@@ -185,7 +186,8 @@ ActivityBase {
         Grid {
             z: 100
             id: calcudokuCages
-            anchors.centerIn: gridLayout
+            x: calcudokuColumn.x
+            y: calcudokuColumn.y
             width:  calcudokuColumn.width
             height: calcudokuColumn.height
             columns: calcudokuColumn.columns
