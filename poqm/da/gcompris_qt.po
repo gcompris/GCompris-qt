@@ -22194,13 +22194,13 @@ msgid ""
 "label."
 msgstr ""
 
-#: activities/programmingMaze/ProgrammingMaze.qml:193
+#: activities/programmingMaze/ProgrammingMaze.qml:198
 #, qt-format
 msgctxt "ProgrammingMaze|"
 msgid "Reach the fish in less than %1 instructions."
 msgstr ""
 
-#: activities/programmingMaze/ProgrammingMaze.qml:257
+#: activities/programmingMaze/ProgrammingMaze.qml:262
 #, fuzzy
 #| msgctxt "ActivityInfo|"
 #| msgid "Addition"
@@ -22208,13 +22208,13 @@ msgctxt "ProgrammingMaze|"
 msgid "Main function"
 msgstr "Plusregning"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:285
+#: activities/programmingMaze/ProgrammingMaze.qml:290
 #, fuzzy
 msgctxt "ProgrammingMaze|"
 msgid "Procedure"
 msgstr "procedure"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:285
+#: activities/programmingMaze/ProgrammingMaze.qml:290
 msgctxt "ProgrammingMaze|"
 msgid "Loop"
 msgstr ""
@@ -27217,25 +27217,25 @@ msgctxt "ReadyButton|"
 msgid "I am Ready"
 msgstr "Jeg er parat"
 
-#: core/Tutorial.qml:137
+#: core/Tutorial.qml:139
 #, fuzzy
 msgctxt "Tutorial|"
 msgid "Previous"
 msgstr "Forrige"
 
-#: core/Tutorial.qml:157
+#: core/Tutorial.qml:159
 #, fuzzy
 msgctxt "Tutorial|"
 msgid "Next"
 msgstr "Næste"
 
-#: core/Tutorial.qml:176
+#: core/Tutorial.qml:178
 #, fuzzy
 msgctxt "Tutorial|"
 msgid "Skip"
 msgstr "Skip"
 
-#: core/Tutorial.qml:176
+#: core/Tutorial.qml:178
 #, fuzzy
 msgctxt "Tutorial|"
 msgid "Start"
