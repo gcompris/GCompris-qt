@@ -21966,23 +21966,23 @@ msgstr ""
 "Principal</b> para adicionar o seu código, carregue no texto <b>Ciclo</b> ou "
 "<b>Função Principal</b>."
 
-#: activities/programmingMaze/ProgrammingMaze.qml:193
+#: activities/programmingMaze/ProgrammingMaze.qml:198
 #, qt-format
 msgctxt "ProgrammingMaze|"
 msgid "Reach the fish in less than %1 instructions."
 msgstr "Chegue ao peixe em menos de %1 instruções."
 
-#: activities/programmingMaze/ProgrammingMaze.qml:257
+#: activities/programmingMaze/ProgrammingMaze.qml:262
 msgctxt "ProgrammingMaze|"
 msgid "Main function"
 msgstr "Função principal"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:285
+#: activities/programmingMaze/ProgrammingMaze.qml:290
 msgctxt "ProgrammingMaze|"
 msgid "Procedure"
 msgstr "Procedimento"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:285
+#: activities/programmingMaze/ProgrammingMaze.qml:290
 msgctxt "ProgrammingMaze|"
 msgid "Loop"
 msgstr "Ciclo"
@@ -26899,22 +26899,22 @@ msgctxt "ReadyButton|"
 msgid "I am Ready"
 msgstr "Estou Pronto"
 
-#: core/Tutorial.qml:137
+#: core/Tutorial.qml:139
 msgctxt "Tutorial|"
 msgid "Previous"
 msgstr "Anterior"
 
-#: core/Tutorial.qml:157
+#: core/Tutorial.qml:159
 msgctxt "Tutorial|"
 msgid "Next"
 msgstr "Seguinte"
 
-#: core/Tutorial.qml:176
+#: core/Tutorial.qml:178
 msgctxt "Tutorial|"
 msgid "Skip"
 msgstr "Ignorar"
 
-#: core/Tutorial.qml:176
+#: core/Tutorial.qml:178
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Iniciar"

@@ -21218,23 +21218,23 @@ msgstr ""
 "Kryesor</b> dhe anasjelltas, për të shtuar kod tuajin, klikoni mbi etiketën "
 "<b>Procedurë</b> ose <b>Funksion Kryesor</b>."
 
-#: activities/programmingMaze/ProgrammingMaze.qml:193
+#: activities/programmingMaze/ProgrammingMaze.qml:198
 #, qt-format
 msgctxt "ProgrammingMaze|"
 msgid "Reach the fish in less than %1 instructions."
 msgstr "Mbërrini te peshku pas më pak se %1 udhëzime."
 
-#: activities/programmingMaze/ProgrammingMaze.qml:257
+#: activities/programmingMaze/ProgrammingMaze.qml:262
 msgctxt "ProgrammingMaze|"
 msgid "Main function"
 msgstr "Funksioni kryesor"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:285
+#: activities/programmingMaze/ProgrammingMaze.qml:290
 msgctxt "ProgrammingMaze|"
 msgid "Procedure"
 msgstr "Procedurë"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:285
+#: activities/programmingMaze/ProgrammingMaze.qml:290
 msgctxt "ProgrammingMaze|"
 msgid "Loop"
 msgstr "Qerthull"
@@ -26156,22 +26156,22 @@ msgctxt "ReadyButton|"
 msgid "I am Ready"
 msgstr "Jam Gati"
 
-#: core/Tutorial.qml:137
+#: core/Tutorial.qml:139
 msgctxt "Tutorial|"
 msgid "Previous"
 msgstr "I mëparshmi"
 
-#: core/Tutorial.qml:157
+#: core/Tutorial.qml:159
 msgctxt "Tutorial|"
 msgid "Next"
 msgstr "Pasuesi"
 
-#: core/Tutorial.qml:176
+#: core/Tutorial.qml:178
 msgctxt "Tutorial|"
 msgid "Skip"
 msgstr "Anashkaloje"
 
-#: core/Tutorial.qml:176
+#: core/Tutorial.qml:178
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Fillo"

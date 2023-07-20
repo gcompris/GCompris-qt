@@ -21266,23 +21266,23 @@ msgstr ""
 "Utama</b> untuk menambahkan kode kamu, klik pada label <b>Pengulangan</b> "
 "atau <b>Fungsi Utama</b>."
 
-#: activities/programmingMaze/ProgrammingMaze.qml:193
+#: activities/programmingMaze/ProgrammingMaze.qml:198
 #, qt-format
 msgctxt "ProgrammingMaze|"
 msgid "Reach the fish in less than %1 instructions."
 msgstr "Raihlah ikan dengan kurang dari %1 langkah."
 
-#: activities/programmingMaze/ProgrammingMaze.qml:257
+#: activities/programmingMaze/ProgrammingMaze.qml:262
 msgctxt "ProgrammingMaze|"
 msgid "Main function"
 msgstr "Fungsi Utama"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:285
+#: activities/programmingMaze/ProgrammingMaze.qml:290
 msgctxt "ProgrammingMaze|"
 msgid "Procedure"
 msgstr "Prosedur"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:285
+#: activities/programmingMaze/ProgrammingMaze.qml:290
 msgctxt "ProgrammingMaze|"
 msgid "Loop"
 msgstr "Pengulangan"
@@ -26225,22 +26225,22 @@ msgctxt "ReadyButton|"
 msgid "I am Ready"
 msgstr "Saya Siap"
 
-#: core/Tutorial.qml:137
+#: core/Tutorial.qml:139
 msgctxt "Tutorial|"
 msgid "Previous"
 msgstr "Sebelumnya"
 
-#: core/Tutorial.qml:157
+#: core/Tutorial.qml:159
 msgctxt "Tutorial|"
 msgid "Next"
 msgstr "Selanjutnya"
 
-#: core/Tutorial.qml:176
+#: core/Tutorial.qml:178
 msgctxt "Tutorial|"
 msgid "Skip"
 msgstr "Lewati"
 
-#: core/Tutorial.qml:176
+#: core/Tutorial.qml:178
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Mulai"

@@ -20208,23 +20208,23 @@ msgstr ""
 " - 要在<b>迴圈</b>與<b>主程式</b>間<b>切換</b>以便新增指令，您只要點擊一下<b>"
 "迴圈</b>或<b>主程式</b>的標籤即可。"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:193
+#: activities/programmingMaze/ProgrammingMaze.qml:198
 #, qt-format
 msgctxt "ProgrammingMaze|"
 msgid "Reach the fish in less than %1 instructions."
 msgstr "在 %1 個指令內抓到魚。"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:257
+#: activities/programmingMaze/ProgrammingMaze.qml:262
 msgctxt "ProgrammingMaze|"
 msgid "Main function"
 msgstr "主程式"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:285
+#: activities/programmingMaze/ProgrammingMaze.qml:290
 msgctxt "ProgrammingMaze|"
 msgid "Procedure"
 msgstr "副程式"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:285
+#: activities/programmingMaze/ProgrammingMaze.qml:290
 msgctxt "ProgrammingMaze|"
 msgid "Loop"
 msgstr "迴圈"
@@ -24863,22 +24863,22 @@ msgctxt "ReadyButton|"
 msgid "I am Ready"
 msgstr "我準備好了"
 
-#: core/Tutorial.qml:137
+#: core/Tutorial.qml:139
 msgctxt "Tutorial|"
 msgid "Previous"
 msgstr "前一個"
 
-#: core/Tutorial.qml:157
+#: core/Tutorial.qml:159
 msgctxt "Tutorial|"
 msgid "Next"
 msgstr "下一個"
 
-#: core/Tutorial.qml:176
+#: core/Tutorial.qml:178
 msgctxt "Tutorial|"
 msgid "Skip"
 msgstr "略過"
 
-#: core/Tutorial.qml:176
+#: core/Tutorial.qml:178
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "開始"

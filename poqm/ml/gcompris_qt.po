@@ -20813,23 +20813,23 @@ msgstr ""
 "-നിങ്ങളുടെ കോഡ് ചേർക്കാനായി <b>ലൂപ് വിഭാഗവും</b> <b>പ്രധാന ഫങ്ഷൻ വിഭാഗവും</b> <b>തമ്മിൽ "
 "മാറ്റാൻ</b>, <b>ലൂപ്</b> എന്ന ലേബലിലോ <b>പ്രധാന ഫങ്ഷൻ</b> എന്നതിലോ ക്ലിക്ക് ചെയ്യുക."
 
-#: activities/programmingMaze/ProgrammingMaze.qml:193
+#: activities/programmingMaze/ProgrammingMaze.qml:198
 #, qt-format
 msgctxt "ProgrammingMaze|"
 msgid "Reach the fish in less than %1 instructions."
 msgstr "%1 നിർദ്ദേശങ്ങളിൽ താഴെ മാത്രം ഉപയോഗിച്ച് മീനിലെത്തുക."
 
-#: activities/programmingMaze/ProgrammingMaze.qml:257
+#: activities/programmingMaze/ProgrammingMaze.qml:262
 msgctxt "ProgrammingMaze|"
 msgid "Main function"
 msgstr "പ്രധാന ഫങ്ഷൻ"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:285
+#: activities/programmingMaze/ProgrammingMaze.qml:290
 msgctxt "ProgrammingMaze|"
 msgid "Procedure"
 msgstr "പ്രൊസീജർ"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:285
+#: activities/programmingMaze/ProgrammingMaze.qml:290
 msgctxt "ProgrammingMaze|"
 msgid "Loop"
 msgstr "ലൂപ്"
@@ -25630,22 +25630,22 @@ msgctxt "ReadyButton|"
 msgid "I am Ready"
 msgstr "ഞാൻ‍ തയ്യാറാണ്"
 
-#: core/Tutorial.qml:137
+#: core/Tutorial.qml:139
 msgctxt "Tutorial|"
 msgid "Previous"
 msgstr "മുൻപുള്ളത്"
 
-#: core/Tutorial.qml:157
+#: core/Tutorial.qml:159
 msgctxt "Tutorial|"
 msgid "Next"
 msgstr "അടുത്തത്"
 
-#: core/Tutorial.qml:176
+#: core/Tutorial.qml:178
 msgctxt "Tutorial|"
 msgid "Skip"
 msgstr "നോക്കാതെ വിടുക"
 
-#: core/Tutorial.qml:176
+#: core/Tutorial.qml:178
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "തുടങ്ങാം"
