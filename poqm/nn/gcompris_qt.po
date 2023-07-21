@@ -21102,23 +21102,23 @@ msgstr ""
 "– For å <b>byta</b> mellom <b>lykkje­området</b> og <b>hovudfunksjons­området</"
 "b> for å leggja til kode, trykk på <b>Lykkje</b> eller <b>Hovudfunksjon</b>."
 
-#: activities/programmingMaze/ProgrammingMaze.qml:193
+#: activities/programmingMaze/ProgrammingMaze.qml:198
 #, qt-format
 msgctxt "ProgrammingMaze|"
 msgid "Reach the fish in less than %1 instructions."
 msgstr "Få tak i fisken med færre enn %1 instruksjonar."
 
-#: activities/programmingMaze/ProgrammingMaze.qml:257
+#: activities/programmingMaze/ProgrammingMaze.qml:262
 msgctxt "ProgrammingMaze|"
 msgid "Main function"
 msgstr "Hovudfunksjon"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:285
+#: activities/programmingMaze/ProgrammingMaze.qml:290
 msgctxt "ProgrammingMaze|"
 msgid "Procedure"
 msgstr "Prosedyre"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:285
+#: activities/programmingMaze/ProgrammingMaze.qml:290
 msgctxt "ProgrammingMaze|"
 msgid "Loop"
 msgstr "Lykkje"
@@ -25967,23 +25967,23 @@ msgctxt "ReadyButton|"
 msgid "I am Ready"
 msgstr "Eg er klar"
 
-#: core/Tutorial.qml:137
+#: core/Tutorial.qml:139
 msgctxt "Tutorial|"
 msgid "Previous"
 msgstr "Førre"
 
-#: core/Tutorial.qml:157
+#: core/Tutorial.qml:159
 msgctxt "Tutorial|"
 msgid "Next"
 msgstr "Neste"
 
 # «Lukk» passar betre enn «Hopp over» i denne samanhengen. Knappen lukkar hjelpeteksten.
-#: core/Tutorial.qml:176
+#: core/Tutorial.qml:178
 msgctxt "Tutorial|"
 msgid "Skip"
 msgstr "Lukk"
 
-#: core/Tutorial.qml:176
+#: core/Tutorial.qml:178
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Start"
