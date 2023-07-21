@@ -23,7 +23,7 @@ License: BSD-3-Clause
 
 Files: docs/docbook/index.docbook
 Copyright: 2015 Burkhard Lück
-Copyright: 2015 Johnny Jazeix
+           2015 Johnny Jazeix
 License: CC0-1.0
 
 Files: docs/docbook/*.png
@@ -112,7 +112,7 @@ License: CC-BY-SA-4.0
 
 Files: src/activities/align4_2players/resource/slide.wav
 Copyright: 2011 jberkuta14
-Copyright: 2014 kwahmah_02
+           2014 kwahmah_02
 License: CC-BY-3.0
 Comment:
   A mix of the 2 sounds
@@ -141,7 +141,7 @@ License: CC-BY-SA-4.0
 
 Files: src/activities/baby_tangram/resource/*car1/*.svg src/activities/baby_tangram/resource/*truck/*.svg src/activities/baby_tangram/resource/tangram/*.svg
 Copyright: 2015-2023 Timothée Giet
-Copyright: 2016 Bruno Coudoin
+           2016 Bruno Coudoin
 License: CC-BY-SA-4.0
 
 Files: src/activities/baby_tangram/resource/*train/*.svg
@@ -187,7 +187,7 @@ License: GPL-3.0-only
 
 Files: src/activities/balancebox/balancebox.svg
 Copyright: 2015 Timothée Giet
-Copyright: 2015 Holger Kaelberer
+           2015 Holger Kaelberer
 License: CC-BY-SA-4.0
 
 Files: src/activities/balancebox/resource/*.svg
@@ -217,7 +217,7 @@ License: CC-BY-SA-4.0
 
 Files: src/activities/binary_bulb/resource/transistor.svg
 Copyright: 2018 Inductiveload
-Copyright: 2018 Timothée Giet
+           2018 Timothée Giet
 License: CC-BY-SA-4.0
 
 Files: src/activities/braille_alphabets/*.svg
@@ -1175,7 +1175,7 @@ License: CC-BY-SA-4.0
 
 Files: src/activities/details/details.svg
 Copyright: 2016-2017 Timothée Giet
-Copyright: 2016-2017 Ilya Bizyaev
+           2016-2017 Ilya Bizyaev
 License: CC-BY-SA-4.0
 
 Files: src/activities/details/resource/image/Chenonceau_*.webp
@@ -1289,12 +1289,12 @@ License: CC-BY-SA-4.0
 
 Files: src/activities/drawletters/resource/*.svg
 Copyright: 2016 Nitish Chauhan
-Copyright: 2018 Timothée Giet
+           2018 Timothée Giet
 License: CC-BY-SA-4.0
 
 Files: src/activities/drawletters/drawletters.svg
 Copyright: 2018 Timothée Giet
-Copyright: 2016-2017 Ilya Bizyaev
+           2016-2017 Ilya Bizyaev
 License: CC-BY-SA-4.0
 
 Files: src/activities/drawletters/resource/paper.svg
@@ -1303,7 +1303,7 @@ License: CC-BY-SA-4.0
 
 Files: src/activities/drawnumbers/resource/*.svg
 Copyright: 2016 Nitish Chauhan
-Copyright: 2018 Timothée Giet
+           2018 Timothée Giet
 License: CC-BY-SA-4.0
 
 Files: src/activities/drawnumbers/drawnumbers.svg src/activities/drawnumbers/resource/paper.svg
@@ -2012,7 +2012,7 @@ License: CC-BY-SA-4.0
 
 Files: src/activities/geography/geography.svg
 Copyright: 2017 Timothée Giet
-Copyright: 2017 Harpreet S
+           2017 Harpreet S
 License: CC-BY-SA-4.0
 
 Files: src/activities/geography/MapSources/Continents.svgz
@@ -2022,7 +2022,7 @@ Comment: modified mix of https://commons.wikimedia.org/wiki/File:Continents.svg 
 
 Files: src/activities/geography/MapSources/oceania.svgz
 Copyright: 2016 Alexander Milevski
-Copyright: 2021 Timothée Giet
+           2021 Timothée Giet
 License: CC-BY-SA-4.0
 Comment: based on https://milevski.co/geojson2svg/demo/lands.svg (under MIT licence)
 
@@ -2257,7 +2257,7 @@ License: GPL-3.0-only
 
 Files: src/activities/graph-coloring/graph-coloring.svg
 Copyright: 2016-2017 Timothée Giet
-Copyright: 2016-2017 Ilya Bizyaev
+           2016-2017 Ilya Bizyaev
 License: CC-BY-SA-4.0
 
 Files: src/activities/graph-coloring/resource/shapes/*.svg
@@ -2270,19 +2270,19 @@ License: CC-BY-SA-4.0
 
 Files: src/activities/gravity/resource/planet0.webp
 Copyright: 1989 NASA
-Copyright: 2020 Timothée Giet
+           2020 Timothée Giet
 License: Unlicense
 Comment: original source at https://commons.wikimedia.org/wiki/File:Neptune.jpg
 
 Files: src/activities/gravity/resource/planet1.webp
 Copyright: 2001 NASA and the Hubble Heritage Team
-Copyright: 2020 Timothée Giet
+           2020 Timothée Giet
 License: Unlicense
 Comment: original source at https://commons.wikimedia.org/wiki/File:Mars_Hubble.jpg
 
 Files: src/activities/guesscount/guesscount.svg
 Copyright: 2017 Rahul Yadav
-Copyright: 2017 Timothée Giet
+           2017 Timothée Giet
 License: CC-BY-SA-4.0
 
 Files: src/activities/guesscount/resource/*.svg
@@ -2308,7 +2308,7 @@ License: CC-BY-SA-4.0
 
 Files: src/activities/hanoi/hanoi.svg src/activities/hanoi_real/hanoi_real.svg
 Copyright: 2017 Timothée Giet
-Copyright: 2017 Harpreet S
+           2017 Harpreet S
 License: CC-BY-SA-4.0
 
 Files: src/activities/hanoi*/resource/*.svg
@@ -2333,7 +2333,7 @@ License: CC-BY-SA-4.0
 
 Files: src/activities/imagename/imagename.svg
 Copyright: 2016-2017 Timothée Giet
-Copyright: 2016-2017 Ilya Bizyaev
+           2016-2017 Ilya Bizyaev
 License: CC-BY-SA-4.0
 
 Files: src/activities/instruments/instruments.svg
@@ -2418,7 +2418,7 @@ License: CC-BY-SA-4.0
 
 Files: src/activities/lang/resource/words_sample/*.webp
 Copyright: 2012 art4apps.org
-Copyright: 2022 Timothée Giet
+           2022 Timothée Giet
 License: CC-BY-SA-4.0
 Comment:
   Originally released by art4apps.org under the CC-BY-SA 3.0 license (https://web.archive.org/web/20120908214126/http://www.art4apps.org/). Upscaled and smoothed images.
@@ -2445,12 +2445,12 @@ License: CC0-1.0
 
 Files: src/activities/lang/resource/content-ca.json
 Copyright: 2019 Antoni Bella Pérez
-Copyright: 2019 Josep M. Ferrer
+           2019 Josep M. Ferrer
 License: CC0-1.0
 
 Files: src/activities/lang/resource/content-ca@valencia.json
 Copyright: 2019 Antoni Bella Pérez
-Copyright: 2019 Josep M. Ferrer
+           2019 Josep M. Ferrer
 License: CC0-1.0
 
 Files: src/activities/lang/resource/content-cs.json
@@ -2463,12 +2463,12 @@ License: CC0-1.0
 
 Files: src/activities/lang/resource/content-de.json
 Copyright: 2019 Burkhard Lück
-Copyright: 2021 Frederik Schwarzer
+           2021 Frederik Schwarzer
 License: CC0-1.0
 
 Files: src/activities/lang/resource/content-el.json
 Copyright: 2019 Stelios
-Copyright: 2020 Yannis Kaskamanidis
+           2020 Yannis Kaskamanidis
 License: CC0-1.0
 
 Files: src/activities/lang/resource/content-en.json
@@ -2485,7 +2485,7 @@ License: CC0-1.0
 
 Files: src/activities/lang/resource/content-es.json
 Copyright: 2019 Antoni Bella Pérez
-Copyright: 2020 Eloy Cuadra
+           2020 Eloy Cuadra
 License: CC0-1.0
 
 Files: src/activities/lang/resource/content-et.json
@@ -2494,18 +2494,18 @@ License: CC0-1.0
 
 Files: src/activities/lang/resource/content-eu.json
 Copyright: 2019 Iñigo Salvador Azurmendi
-Copyright: 2019 Alexander Gabilondo
+           2019 Alexander Gabilondo
 License: CC0-1.0
 
 Files: src/activities/lang/resource/content-fi.json
 Copyright: 2020 Tommi Nieminen
-Copyright: 2022 Lasse Liehu
+           2022 Lasse Liehu
 License: CC0-1.0
 
 Files: src/activities/lang/resource/content-fr.json
 Copyright: 2019 Jazeix Johnny
-Copyright: 2019 Simon Depiets
-Copyright: 2020 Xavier Besnard
+           2019 Simon Depiets
+           2020 Xavier Besnard
 License: CC0-1.0
 
 Files: src/activities/lang/resource/content-ga.json
@@ -2518,7 +2518,7 @@ License: CC0-1.0
 
 Files: src/activities/lang/resource/content-gl.json
 Copyright: 2019 Adrián Chaves
-Copyright: 2023 Pablo
+           2023 Pablo
 License: CC0-1.0
 
 Files: src/activities/lang/resource/content-he.json
@@ -2527,9 +2527,9 @@ License: CC0-1.0
 
 Files: src/activities/lang/resource/content-hi.json
 Copyright: 2020 G Karunakar
-Copyright: 2021 Raashi Saigal
-Copyright: 2021 Sameer Singh
-Copyright: 2021 Raghavendra Kamath
+           2021 Raashi Saigal
+           2021 Sameer Singh
+           2021 Raghavendra Kamath
 License: CC0-1.0
 
 Files: src/activities/lang/resource/content-hr.json
@@ -2542,8 +2542,8 @@ License: CC0-1.0
 
 Files: src/activities/lang/resource/content-id.json
 Copyright: 2019 Iwan S Tahari
-Copyright: 2019 Rania Amina
-Copyright: 2017 Andika Triwidada
+           2019 Rania Amina
+           2017 Andika Triwidada
 License: CC0-1.0
 
 Files: src/activities/lang/resource/content-it.json
@@ -2560,7 +2560,7 @@ License: CC0-1.0
 
 Files: src/activities/lang/resource/content-mk.json
 Copyright: 2019 Sofre Garevski
-Copyright: 2021 Igor Risteski
+           2021 Igor Risteski
 License: CC0-1.0
 
 Files: src/activities/lang/resource/content-ml.json
@@ -2585,22 +2585,22 @@ License: CC0-1.0
 
 Files: src/activities/lang/resource/content-pt_BR.json
 Copyright: 2019 Luiz Fernando Ranghetti
-Copyright: 2019 Frederico Gonçalves Guimarães
+           2019 Frederico Gonçalves Guimarães
 License: CC0-1.0
 
 Files: src/activities/lang/resource/content-ro.json
 Copyright: 2019 Horia PELLE
-Copyright: 2020 Sergiu Bivol
+           2020 Sergiu Bivol
 License: CC0-1.0
 
 Files: src/activities/lang/resource/content-ru.json
 Copyright: 2019 Alexander Potashev
-Copyright: 2019 Alexey Loginov
+           2019 Alexey Loginov
 License: CC0-1.0
 
 Files: src/activities/lang/resource/content-sk.json
 Copyright: 2019 Roman Paholík
-Copyright: 2020 Matej Mrenica
+           2020 Matej Mrenica
 License: CC0-1.0
 
 Files: src/activities/lang/resource/content-sl.json
@@ -2617,7 +2617,7 @@ License: CC0-1.0
 
 Files: src/activities/lang/resource/content-tr.json
 Copyright: 2020 Filiz Alver
-Copyright: 2022 Emir SARI
+           2022 Emir SARI
 License: CC0-1.0
 
 Files: src/activities/lang/resource/content-uk.json
@@ -2630,7 +2630,7 @@ License: CC0-1.0
 
 Files: src/activities/lang/resource/content-zh_TW.json
 Copyright: 2019 pan93412
-Copyright: 2020 Franklin Weng
+           2020 Franklin Weng
 License: CC0-1.0
 
 Files: src/activities/learn_*/*.svg
@@ -2651,7 +2651,7 @@ License: GPL-3.0-only
 
 Files: src/activities/letter-in-word/letter-in-word.svg
 Copyright: 2016-2017 Timothée Giet
-Copyright: 2016-2017 Ilya Bizyaev
+           2016-2017 Ilya Bizyaev
 License: CC-BY-SA-4.0
 
 Files: src/activities/lightsoff/*.svg
@@ -2676,7 +2676,7 @@ License: CC-BY-SA-4.0
 
 Files: src/activities/melody/melody.svg
 Copyright: 2016-2017 Timothée Giet
-Copyright: 2016-2017 Ilya Bizyaev
+           2016-2017 Ilya Bizyaev
 License: CC-BY-SA-4.0
 
 Files: src/activities/melody/resource/knock.wav
@@ -2726,7 +2726,7 @@ Comment: File from TuxPaint (https://sourceforge.net/p/tuxpaint/tuxpaint/ci/mast
 
 Files: src/activities/missing-letter/missing-letter.svg
 Copyright: 2016-2017 Timothée Giet
-Copyright: 2016-2017 Ilya Bizyaev
+           2016-2017 Ilya Bizyaev
 License: CC-BY-SA-4.0
 
 Files: src/activities/missing-letter/resource/*.svg
@@ -2769,7 +2769,7 @@ License: CC-BY-SA-4.0
 
 Files: src/activities/nine_men_morris/nine_men_morris.svg src/activities/nine_men_morris_2players/nine_men_morris_2players.svg
 Copyright: 2016 Timothée Giet
-Copyright: 2016 Pulkit Gupta
+           2016 Pulkit Gupta
 License: CC-BY-SA-4.0
 
 Files: src/activities/nine_men_morris/resource/*.svg
@@ -2782,7 +2782,7 @@ License: CC-BY-SA-4.0
 
 Files: src/activities/number_sequence/number_sequence.svg
 Copyright: 2016-2017 Timothée Giet
-Copyright: 2016-2017 Ilya Bizyaev
+           2016-2017 Ilya Bizyaev
 License: CC-BY-SA-4.0
 
 Files: src/activities/number_sequence/resource/*.svg
@@ -2800,7 +2800,7 @@ License: CC-BY-SA-4.0
 
 Files: src/activities/paintings/paintings.svg
 Copyright: 2016-2017 Timothée Giet
-Copyright: 2016-2017 Ilya Bizyaev
+           2016-2017 Ilya Bizyaev
 License: CC-BY-SA-4.0
 
 Files: src/activities/paintings/resource/image/bg.svg
@@ -2809,7 +2809,7 @@ License: CC-BY-SA-4.0
 
 Files: src/activities/paintings/resource/image/*.webp
 Copyright: 1994-2006 Nicolas Pioch
-Copyright: 2008 Bruno Coudoin
+           2008 Bruno Coudoin
 License: GPL-3.0-only
 Comment:
   All the paintings are from the WebMuseum.
@@ -2826,66 +2826,66 @@ License: CC-BY-SA-4.0
 
 Files: src/activities/photo_hunter/photo_hunter.svg
 Copyright: 2016 Timothée Giet
-Copyright: 2017 Harpreet S
+           2017 Harpreet S
 License: CC-BY-SA-4.0
 
 Files: src/activities/photo_hunter/resource/photo1.svg src/activities/photo_hunter/resource/photo1_*.svg
 Copyright: 2014 Moini
-Copyright: 2023 Timothée Giet
+           2023 Timothée Giet
 License: CC-BY-SA-4.0
 Comment: based on https://openclipart.org/detail/193191/05-Mai-Paint-it-green
 
 Files: src/activities/photo_hunter/resource/photo2*.svg
 Copyright: 2016 Gordon Dylan Johnson
-Copyright: 2023 Timothée Giet
+           2023 Timothée Giet
 License: CC-BY-SA-4.0
 Comment: based on https://openclipart.org/detail/241524/Animals-Flourish-Landscape
 
 Files: src/activities/photo_hunter/resource/photo3*.svg
 Copyright: 2007 carlitos
-Copyright: 2023 Timothée Giet
+           2023 Timothée Giet
 License: CC-BY-SA-4.0
 Comment: based on https://openclipart.org/detail/8006/carlitos-Cartoon-Landscape
 
 Files: src/activities/photo_hunter/resource/photo4*.svg
 Copyright: 2013 Cyber Scooty
-Copyright: 2023 Timothée Giet
+           2023 Timothée Giet
 License: CC-BY-SA-4.0
 Comment: based on https://openclipart.org/detail/188283/cyberscooty-watermill-in-landscape
 
 Files: src/activities/photo_hunter/resource/photo5*.svg
 Copyright: 2013 Cyber Scooty
-Copyright: 2023 Timothée Giet
+           2023 Timothée Giet
 License: CC-BY-SA-4.0
 Comment: based on https://openclipart.org/detail/185885/cyberscoty-landscape
 
 Files: src/activities/photo_hunter/resource/photo6*.svg
 Copyright: 2013 OlKu
-Copyright: 2023 Timothée Giet
+           2023 Timothée Giet
 License: CC-BY-SA-4.0
 Comment: based on https://openclipart.org/detail/178626/fir-forest-horizontaly-seamless-pattern
 
 Files: src/activities/photo_hunter/resource/photo7*.svg
 Copyright: 2010 slabbie
-Copyright: 2023 Timothée Giet
+           2023 Timothée Giet
 License: CC-BY-SA-4.0
 Comment: based on https://openclipart.org/detail/79099/Land-1
 
 Files: src/activities/photo_hunter/resource/photo8*.svg
 Copyright: 2011 palomaironique
-Copyright: 2023 Timothée Giet
+           2023 Timothée Giet
 License: CC-BY-SA-4.0
 Comment: based on https://openclipart.org/detail/142357/Landscape-001-Summer
 
 Files: src/activities/photo_hunter/resource/photo9*.svg
 Copyright: 2014 Olku
-Copyright: 2023 Timothée Giet
+           2023 Timothée Giet
 License: CC-BY-SA-4.0
 Comment: based on https://openclipart.org/detail/205417/montains
 
 Files: src/activities/photo_hunter/resource/photo10*.svg
 Copyright: 2008 Peileppe
-Copyright: 2023 Timothée Giet
+           2023 Timothée Giet
 License: CC-BY-SA-4.0
 Comment: based on https://openclipart.org/detail/17626/Peileppe-Castle
 
@@ -2980,7 +2980,7 @@ License: CC-BY-SA-4.0
 
 Files: src/activities/play_rhythm/resource/click.wav
 Copyright: 2014 Druminfected
-Copyright: 2023 Timothée Giet
+           2023 Timothée Giet
 License: CC0-1.0
 Comment: edited version of https://freesound.org/people/Druminfected/sounds/250552/
 
@@ -3043,7 +3043,7 @@ Source: https://www.freesound.org/people/Corsica_S/sounds/28662/
 
 Files: src/activities/roman_numerals/roman_numerals.svg
 Copyright: 2016-2017 Timothée Giet
-Copyright: 2016-2017 Ilya Bizyaev
+           2016-2017 Ilya Bizyaev
 License: CC-BY-SA-4.0
 
 Files: src/activities/roman_numerals/resource/*.svg
@@ -3081,7 +3081,7 @@ License: CC-BY-SA-4.0
 
 Files: src/activities/solar_system/resource/mercury.webp
 Copyright: 2011 NASA
-Copyright: 2018 Timothée Giet
+           2018 Timothée Giet
 License: Unlicense
 Comment: original source at https://en.wikipedia.org/wiki/File:Mercury_Globe-MESSENGER_mosaic_centered_at_0degN-0degE.jpg
 
@@ -3092,13 +3092,13 @@ Comment: original source at https://commons.wikimedia.org/wiki/File:Venus_globe_
 
 Files: src/activities/solar_system/resource/earth.webp
 Copyright: 2005 NASA
-Copyright: 2018 Timothée Giet
+           2018 Timothée Giet
 License: Unlicense
 Comment: original source at https://commons.wikimedia.org/wiki/File:The_Blue_Marble.jpg
 
 Files: src/activities/solar_system/resource/mars.webp
 Copyright: 2001 NASA and the Hubble Heritage Team
-Copyright: 2020 Timothée Giet
+           2020 Timothée Giet
 License: Unlicense
 Comment: original source at https://commons.wikimedia.org/wiki/File:Mars_Hubble.jpg
 
@@ -3109,25 +3109,25 @@ Comment: original source at https://commons.wikimedia.org/wiki/File:Jupiter_(tra
 
 Files: src/activities/solar_system/resource/saturn.webp
 Copyright: 2009 NASA
-Copyright: 2018 Timothée Giet
+           2018 Timothée Giet
 License: Unlicense
 Comment: original source at https://commons.wikimedia.org/wiki/File:Saturn_during_Equinox.jpg
 
 Files: src/activities/solar_system/resource/uranus.webp
 Copyright: 1986 NASA
-Copyright: 2018 Timothée Giet
+           2018 Timothée Giet
 License: Unlicense
 Comment: original source at https://commons.wikimedia.org/wiki/File:Uranus.jpg
 
 Files: src/activities/solar_system/resource/neptune.webp
 Copyright: 1989 NASA
-Copyright: 2020 Timothée Giet
+           2020 Timothée Giet
 License: Unlicense
 Comment: original source at https://commons.wikimedia.org/wiki/File:Neptune.jpg
 
 Files: src/activities/solar_system/resource/sun.webp
 Copyright: 2010 NASA
-Copyright: 2020 Timothée Giet
+           2020 Timothée Giet
 License: Unlicense
 Comment: original source at https://commons.wikimedia.org/wiki/File:The_Sun_by_the_Atmospheric_Imaging_Assembly_of_NASA%27s_Solar_Dynamics_Observatory_-_20100819.jpg
 
@@ -3161,7 +3161,7 @@ License: CC-BY-SA-4.0
 
 Files: src/activities/target/resource/arrow.wav
 Copyright: 2012 gezortenplotz
-Copyright: 2006 Consul92
+           2006 Consul92
 License: CC-BY-3.0
 Comment:
   A mix of the 2 sounds
@@ -3170,7 +3170,7 @@ Comment:
 
 Files: src/activities/tangram/tangram.svg
 Copyright: 2016-2017 Timothée Giet
-Copyright: 2016-2017 Ilya Bizyaev
+           2016-2017 Ilya Bizyaev
 License: CC-BY-SA-4.0
 
 Files: src/activities/tangram/resource/*.svg
@@ -3490,13 +3490,13 @@ Comment: Files from TuxPaint (https://sourceforge.net/p/tuxpaint/tuxpaint/ci/mas
 
 Files: src/core/resource/sounds/bonus.wav
 Copyright: 2023 stormystock
-Copyright: 2023 Timothée Giet
+           2023 Timothée Giet
 License: CC0-1.0
 Comment: extract from https://freesound.org/people/stormystock/sounds/677804/
 
 Files: src/core/resource/sounds/crash.wav
 Copyright: 2018 Jacco18
-Copyright: 2023 Timothée Giet
+           2023 Timothée Giet
 License: CC0-1.0
 Comment: remastered version of https://freesound.org/people/Jacco18/sounds/419023/
 
@@ -3507,7 +3507,7 @@ Source: https://opengameart.org/content/completion-sound
 
 Files: src/core/resource/sounds/water.wav
 Copyright: 2019 Random Mind
-Copyright: 2023 Timothée Giet
+           2023 Timothée Giet
 License: CC0-1.0
 Comment: remastered extract from https://opengameart.org/content/sea-and-river-wave-sounds
 
