@@ -472,3 +472,4 @@ add_custom_target(updateReleaseDate
   DEPENDS doUpdateReleaseDate
   COMMENT "Run the scripts to bump the version if not already done. It assumes the changelog is already created for this version."
   )
+  
