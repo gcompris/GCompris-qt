@@ -281,7 +281,7 @@ function handleKeys(event) {
             nextSubLevel()
             break
         case Qt.Key_Return:         // Switch visibility of infoView and inspector with Ctrl+Alt+Enter
-            if ((event.modifiers & (Qt.AltModifier | Qt.CtrlModifier))) {
+            if (event.modifiers & Qt.ControlModifier) {
                 items.debugActive = !items.debugActive
             }
             break
