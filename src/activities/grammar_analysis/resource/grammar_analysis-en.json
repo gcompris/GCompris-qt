@@ -31,10 +31,10 @@
       "goal": "nou prn vrb cjt"
     },
     {
-      "objective": "Find interjections.",
+      "objective": "Find interjections, nouns and verbs.",
       "difficulty": "4",
       "exercise": "interjections",
-      "goal": "itj"
+      "goal": "itj nou vrb"
     },
     {
       "objective": "Find determiners, nouns, pronouns, verbs, prepositions and conjunctions.",
