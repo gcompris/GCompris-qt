@@ -162,7 +162,7 @@ function checkExercise(parsed, force = false) {
     }
     var j
     var isValid = false
-    for (j = 0; j < goalArray.length; j++) {    // At least one goal's classe must be present
+    for (j = 0; j < goalArray.length; j++) {    // At least one goal's class must be present
         isValid |= (usedClasses.indexOf(goalArray[j]) !== -1)
     }
     parsed.isValid = isValid
@@ -410,7 +410,7 @@ function buildAnswer() {
     // Display errors found
     items.errors.text = (parsed.errors === "") ? "" : "<b>Error(s) :</b><br>" + parsed.errors
     if (!parsed.isValid) {
-        items.errors.text += "At least one goal classe must be present"
+        items.errors.text += "At least one goal class must be present"
     }
 
     //--- Update debugging informations
