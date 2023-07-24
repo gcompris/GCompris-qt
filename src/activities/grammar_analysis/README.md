@@ -9,7 +9,7 @@ To start and test your translated files:
 
 * Copy the example files: [grammar_analysis-xx.json](examples/grammar_analysis-xx.json) and [grammar_classes-xx.json](examples/grammar_classes-xx.json) in the directory depending on your operating system (on Linux, it is `$HOME/.local/share/GCompris/`, on Windows it is `C:\Users\Username\AppData\Local\gcompris\`, on Android it is `/Android/data/net.gcompris.full/files/GCompris/`).
 * When those files exist, they will be used by default by GCompris.
-* Edit the content of those files for your language, starting with the `syntax` section at the end of the file, then the `dataset` section and then the levels section. Read below for more details on each section.
+* Edit the content of those files for your language, starting with the `syntax` section at the end of the file, then the `dataset` section and then the `levels` section. Read below for more details on each section.
 
 ## Precautions when writing JSON files
 
