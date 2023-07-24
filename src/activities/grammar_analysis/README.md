@@ -58,7 +58,7 @@ Each grammatical class is defined by 3 values:
 
 - `code` - this is used to name the grammatical class in the exercises solutions (we advise to use a 3 letters length code, but you can use any length).
 - `wordClass` - this is used for the actual name of the grammatical class which will be displayed.
-- `svg` - the image which will be used to represent this class. It must be one of the images in the directory `resource/svg/` of the `grammar_analysis` activity (you can find the list of images below in the `Available images` section).
+- `image` - the image which will be used to represent this class. It must be one of the images in the directory `resource/svg/` of the `grammar_analysis` activity (you can find the list of images below in the `Available images` section).
 
 This way you can define the list of grammatical classes in your language.\
 You can delete a class which is not used in your language or add new ones if needed.\
