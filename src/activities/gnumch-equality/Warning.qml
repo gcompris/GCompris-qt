@@ -53,9 +53,11 @@ Rectangle {
             } else if (Activity._operator == " / ") {
                 fault +=  num1 + " / " + num2 + " = " + (num1 / num2)
             }
+            fault += "<br>"
+
         } else if (activity.type == "primes") {
             if (num1 === 1) {
-                fault += qsTr("1 is not a prime number.")
+                fault += qsTr("1 is not a prime number.") + "<br>"
                 return
             }
 
@@ -64,23 +66,18 @@ Rectangle {
                 if ((num1 / div) % 1 == 0)
                     divisors.push(div)
             }
-
-            fault += qsTr("%1 is divisible by %2").arg(num1).arg(divisors[0])
-
-            if (divisors.length > 2) {
-                for (var div = 1; div < divisors.length - 1; ++div) {
-                    fault += ", " + divisors[div]
-                }
+            var divisorString = "<ul>"
+            for (var div = 0; div < divisors.length; ++div) {
+                divisorString += "<li>" + divisors[div] + "</li>"
             }
-
-            fault += " " + qsTr("and") + " " + divisors[divisors.length - 1] + "."
+            divisorString += "</ul>"
+            //: the first argument corresponds to a number and the second argument corresponds to its divisors formatted as an unordered html format (<ul><li>number 1</li>...</ul>)
+            fault += qsTr("%1 is a non-prime number, its divisors are: %2").arg(num1).arg(divisorString)
 
         } else if (activity.type == "factors") {
-            // First we find the multiples of the wrong number.
-            var multiples = "" + num1*2 + ", " + num1*3 + ", " + num1*4
+            //: %1 is the number to find, %2 and %3 are two multiples of the number, %4 is a wrong number and %5 is the number to find.
+            fault += qsTr("Multiples of %1 include %2 or %3 but %4 is not a multiple of %5.").arg(num1).arg(num1*2).arg(num1*3).arg(Activity.getGoal()).arg(num1) + "<br>"
 
-            fault += qsTr("Multiples of %1 include %2, ").arg(num1).arg(multiples)
-            fault += qsTr("but %1 is not a multiple of %2.").arg(Activity.getGoal()).arg(num1)
         } else if (activity.type == "multiples") {
             // First we find divisors of the wrong number.
             var divisors = []
@@ -88,21 +85,19 @@ Rectangle {
                 if ((num1 / div) % 1 == 0)
                     divisors.push(div)
             }
-
-            fault += divisors[0]
-
-            if (divisors.length > 2) {
-                for (var div = 1; div < divisors.length - 1; ++div) {
-                    fault += ", " + divisors[div]
-                }
+            var divisorString = "<ul>"
+            for (var div = 0; div < divisors.length; ++div) {
+                divisorString += "<li>" + divisors[div] + "</li>"
             }
+            divisorString += "</ul>"
+            //: the first argument corresponds to a number and the second argument corresponds to its divisors formatted as an unordered html format (<ul><li>number 1</li>...</ul>
+            fault += qsTr("Divisors of %1 are: %2").arg(num1).arg(divisorString)
 
-            fault += " " + qsTr("and %1 are the divisors of %2.").arg(divisors[divisors.length - 1]).arg(num1)
         }
     }
 
-    width: 400 * ApplicationInfo.ratio
-    height: 150 * ApplicationInfo.ratio
+    width: warning.paintedWidth + 10 * ApplicationInfo.ratio
+    height: warning.paintedHeight + 10 * ApplicationInfo.ratio
     anchors.horizontalCenter: parent.horizontalCenter
     anchors.verticalCenter: parent.verticalCenter
     z: 3
@@ -123,13 +118,15 @@ Rectangle {
 
     GCText {
         id: warning
-        anchors.fill: parent
+        anchors.centerIn: parent
         horizontalAlignment: Text.AlignHCenter
         verticalAlignment: Text.AlignVCenter
-        text: fault + "<br>" + qsTr("Press \"Return\" or click on me to continue.")
-        fontSizeMode: Text.Fit
-        minimumPointSize: 10
-        fontSize: 28
+        text: fault + qsTr("Press \"Return\" or click on me to continue.")
+
+        textFormat: Text.RichText
+        width: Math.min(400 * ApplicationInfo.ratio, background.width * 0.7)
+        height: background.height * 0.8
+        fontSize: smallSize
         wrapMode: Text.WordWrap
     }
 
