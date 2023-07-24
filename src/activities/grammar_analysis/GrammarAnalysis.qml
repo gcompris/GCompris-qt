@@ -134,6 +134,19 @@ ActivityBase {
             }
         }
 
+        Column { // invisible column to get longest word from the class names
+            id: tokenTextSizeRef
+            visible: false
+            width: childrenRect.width
+            Repeater {
+                model: goalModel
+                delegate: GCText {
+                    fontSize: tinySize
+                    text: wordClass
+                }
+            }
+        }
+
         // Main section
         Item {
             id: mainArea
@@ -193,7 +206,7 @@ ActivityBase {
                         columns: mainArea.width / tokenWidth
                         layoutDirection: (Core.isLeftToRightLocale(items.locale)) ?  Qt.LeftToRight : Qt.RightToLeft
 
-                        property real tokenWidth: 75 * ApplicationInfo.ratio
+                        property real tokenWidth: Math.max(75 * ApplicationInfo.ratio, tokenTextSizeRef.width)
                         property real tokenHeight: columns < goalModel.count ? 40 * ApplicationInfo.ratio : 60 * ApplicationInfo.ratio
 
                         Repeater {

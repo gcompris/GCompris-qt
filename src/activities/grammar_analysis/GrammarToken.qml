@@ -69,6 +69,7 @@ Rectangle {
         width: parent.width
         height: parent.height * 0.3
         fontSize: smallSize
+        minimumPointSize: tinySize * ApplicationInfo.fontRatio
         fontSizeMode: Text.Fit
         text: className
         horizontalAlignment: Text.AlignHCenter
