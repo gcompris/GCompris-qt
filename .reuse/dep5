@@ -2271,6 +2271,10 @@ Files: src/activities/grammar_analysis/*.md
 Copyright: 2023 Bruno Anselme
 License: CC-BY-SA-4.0
 
+Files: src/activities/grammar_analysis/examples/*.json
+Copyright: 2023 Bruno Anselme
+License: CC-BY-SA-4.0
+
 Files: src/activities/grammar_analysis/resource/grammar_analysis-en.json
 Copyright: 2023 Emmanuel Charruau
 License: CC-BY-SA-4.0

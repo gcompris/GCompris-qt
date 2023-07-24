@@ -1,0 +1,107 @@
+{
+  "levels": [
+    {
+      "objective": "Find nouns, verbs and determinants.",
+      "difficulty": "1",
+      "exercise": "small",
+      "goal": "nou vrb dtm"
+    },
+    {
+      "objective": "Find these grammatical classes.",
+      "difficulty": "2",
+      "exercise": "medium",
+      "goal": "nou vrb adj adv dtm"
+    },
+    {
+      "objective": "Find these grammatical classes.",
+      "difficulty": "3",
+      "exercise": "large",
+      "goal": "nou dtm vrb adj adv ppt prn"
+    }
+  ],
+  "dataset" : {
+    "small" : [
+      { "sentence": "The flower is very pretty."
+      , "answer":   "dtm nou vrb adv adj"
+      },
+      { "sentence": "The cat makes its toilet."
+      , "answer":   "dtm nou vrb  dtm nou"
+      },
+      { "sentence": "(Ding dong)! The doorbell rings."
+      , "answer":   "    itj      dtm nou      vrb"
+      }
+    ],
+    "medium" : [
+      { "sentence": "This vanilla cream smells very good."
+      , "answer":   "dtm nou nou vrb adv adj"
+      },
+      { "sentence": "The entrance to the college is inaccessible until further notice."
+      , "answer":   "dtm nou     ppt dtm nou     vrb adj         ppt   adj     nou"
+      },
+      { "sentence": "The dog and the cat (are watching) the fish swim."
+      , "answer":   "dtm nou cjt dtm nou  vrb           dtm nou  vrb"
+      },
+      { "sentence": "The magpie wanders on the balcony."
+      , "answer":   "dtm nou    vrb    ppt dtm nou"
+      }
+    ],
+    "large" : [
+      { "sentence": "My parents work from home every day in their office."
+      , "answer":   "dtm nou    vrb  ppt  nou  dtm   nou ppt prn nou"
+      },
+      { "sentence": "Now the children do their homework as a family in the (dining room)."
+      , "answer":   "adv dtm nou      vrb prn  nou      ppt ppt nou ppt dtm nou"
+      },
+      { "sentence": "This dance (is called) the tango, grandma and grandpa often dance it at home."
+      , "answer":   "dtm nou      vrb       dtm nou    nou     cjt nou     adv   vrb  prn ppt nou"
+      }
+    ]
+  },
+  "syntax" : [
+    {
+      "code": "nou",
+      "wordClass": "Noun",
+      "image": "1.svg"
+    },
+    {
+      "code": "dtm",
+      "wordClass": "Determiner",
+      "image": "2.svg"
+    },
+    {
+      "code": "adj",
+      "wordClass": "Adjective",
+      "image": "3.svg"
+    },
+    {
+      "code": "prn",
+      "wordClass": "Pronoun",
+      "image": "4.svg"
+    },
+    {
+      "code": "vrb",
+      "wordClass": "Verb",
+      "image": "5.svg"
+    },
+    {
+      "code": "adv",
+      "wordClass": "Adverb",
+      "image": "6.svg"
+    },
+    {
+      "code": "cjt",
+      "wordClass": "Conjunction",
+      "image": "7.svg"
+    },
+    {
+      "code": "ppt",
+      "wordClass": "Preposition",
+      "image": "8.svg"
+    },
+    {
+      "code": "itj",
+      "wordClass": "Interjection",
+      "image": "9.svg"
+    }
+  ]
+}
