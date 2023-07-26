@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2023-02-28 20:55+0100\n"
+"PO-Revision-Date: 2023-07-25 18:54+0200\n"
 "Last-Translator: Stefan Asserhäll <stefan.asserhall@bredband.net>\n"
 "Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
 "Language: sv\n"
@@ -24554,6 +24554,8 @@ msgid ""
 "Create pairs of numbers equal to ten. Select a number in the list, then "
 "select an empty spot of an operation to move the selected number there."
 msgstr ""
+"Skapa par av tal som är lika med tio. Välj ett tal i listan, och välj sedan "
+"ett tomt utrymme för en operation för att flytta det valda talet dit."
 
 #: activities/tens_complement_find/resource/1/Data.qml:25
 msgctxt "Data|"
@@ -24916,20 +24918,14 @@ msgid "Type the complete word as it falls, before it reaches the ground."
 msgstr "Skriv hela ordet under tiden det faller, innan det når marken."
 
 #: core/ChangeLog.qml:30
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translation added for Azerbaijani"
 msgctxt "ChangeLog|"
 msgid "Translations added for Arabic and Esperanto"
-msgstr "Översättning tillagd för azerbajdzjanska"
+msgstr "Översättning tillagd för arabiska och esperanto"
 
 #: core/ChangeLog.qml:31 core/ChangeLog.qml:38
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translation updated for Russian"
 msgctxt "ChangeLog|"
 msgid "Many translation updates"
-msgstr "Översättning uppdaterad för ryska"
+msgstr "Många översättningsuppdateringar"
 
 #: core/ChangeLog.qml:32 core/ChangeLog.qml:39 core/ChangeLog.qml:52
 #: core/ChangeLog.qml:70 core/ChangeLog.qml:85 core/ChangeLog.qml:90
@@ -24954,7 +24950,7 @@ msgstr ""
 #: core/ChangeLog.qml:44
 msgctxt "ChangeLog|"
 msgid "Fix issue in comparator activity"
-msgstr ""
+msgstr "Rätta problem i jämförelseaktivitet"
 
 #: core/ChangeLog.qml:48
 msgctxt "ChangeLog|"
