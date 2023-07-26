@@ -1,18 +1,18 @@
 #
-# Vincenzo Reale <smart2128vr@gmail.com>, 2017, 2018, 2019, 2020, 2021, 2022.
+# Vincenzo Reale <smart2128vr@gmail.com>, 2017, 2018, 2019, 2020, 2021, 2022, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_voices\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-07-18 00:44+0000\n"
-"PO-Revision-Date: 2022-12-16 10:51+0100\n"
+"PO-Revision-Date: 2023-07-18 21:38+0200\n"
 "Last-Translator: Vincenzo Reale <smart2128vr@gmail.com>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 22.12.0\n"
+"X-Generator: Lokalize 23.04.3\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "advanced_colors"
@@ -197,18 +197,16 @@ msgstr "Crea la cella Braille per la lettera."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "calcudoku"
 #: activities/calcudoku/ActivityInfo.qml:17
-#, fuzzy, kde-format
-#| msgid ""
-#| "Select a number or a symbol and click its target area. Each symbol must "
-#| "appear only once in a row, in a column and in a subregion if any."
+#, kde-format
 msgid ""
 "Select a number and click on its target position. Each number must appear "
 "only once in a row and in a column. The numbers in the cells of a cage must "
 "produce the given result when combined using the given operator."
 msgstr ""
-"Seleziona un numero o un simbolo e fai clic sulla sua area di destinazione. "
-"Ogni simbolo deve comparire una sola volta in una riga, in una colonna e in "
-"una sottoregione, se presente."
+"Seleziona un numero e fai clic sulla sua posizione di destinazione. Ogni "
+"numero deve comparire una sola volta in una riga e in una colonna. I numeri "
+"nelle celle di una gabbia devono produrre il risultato dato se combinati "
+"utilizzando l'operatore specificato."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "calendar"
 #: activities/calendar/ActivityInfo.qml:18
@@ -553,7 +551,7 @@ msgstr ""
 #: activities/grammar_classes/ActivityInfo.qml:21
 #, kde-format
 msgid "Assign the requested grammatical classes to the corresponding words."
-msgstr ""
+msgstr "Assegna le classi grammaticali richieste alle parole corrispondenti."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "graph-coloring"
 #: activities/graph-coloring/ActivityInfo.qml:18

@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_qt\n"
-"PO-Revision-Date: 2023-06-22 17:11+0200\n"
+"PO-Revision-Date: 2023-07-18 21:41+0200\n"
 "Last-Translator: Vincenzo Reale <smart2128vr@gmail.com>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
 "Language: it\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 23.04.2\n"
+"X-Generator: Lokalize 23.04.3\n"
 "X-Qt-Contexts: true\n"
 
 #. Activity title
@@ -3039,13 +3039,13 @@ msgstr ""
 #: activities/calcudoku/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Calcudoku"
-msgstr ""
+msgstr "Calcudoku"
 
 #. Help title
 #: activities/calcudoku/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Solve the Calcudoku."
-msgstr ""
+msgstr "Risolvi il Calcudoku."
 
 #. Help goal
 #: activities/calcudoku/ActivityInfo.qml:19
@@ -3054,15 +3054,15 @@ msgid ""
 "Develop your logical reasoning skills: data linking, deduction and spatial "
 "location while using calculation."
 msgstr ""
+"Sviluppa le tue capacità di ragionamento logico: collegamento di dati, "
+"deduzione e posizione spaziale durante l'utilizzo del calcolo."
 
 #. Help prerequisite
 #: activities/calcudoku/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Completing the puzzle requires patience and logical ability."
 msgctxt "ActivityInfo|"
 msgid "Completing the puzzle requires patience and arithmetic abilities."
-msgstr "Il completamento del rompicapo richiede pazienza e abilità logica."
+msgstr ""
+"Il completamento del rompicapo richiede pazienza e abilità aritmetiche."
 
 #. Help manual
 #: activities/calcudoku/ActivityInfo.qml:23
@@ -3075,51 +3075,43 @@ msgid ""
 "cage, when combined using the operator, must produce the result. Cages made "
 "of only one cell directly provide the number to enter."
 msgstr ""
+"Seleziona un numero nell'elenco e fai clic sulla sua posizione di "
+"destinazione per riempire la griglia. Ogni numero deve comparire una sola "
+"volta in una riga e in una colonna. Le gabbie sono gruppi di celle che "
+"forniscono informazioni su come riempirle. Le gabbie composte da più di una "
+"cella forniscono un risultato e un operatore: tutti i numeri nella gabbia, "
+"combinati mediante l'operatore, devono produrre il risultato. Le gabbie "
+"composte da una sola cella forniscono direttamente il numero da inserire."
 
 #. + is the unicode character for addition mathematical operator (+)
 #: activities/calcudoku/resource/1/Data.qml:66
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Small grids."
 msgctxt "Data|"
 msgid "Small grids with + operator."
-msgstr "Griglie piccole."
+msgstr "Griglie piccole con l'operatore +."
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-)
 #: activities/calcudoku/resource/2/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Small grids."
 msgctxt "Data|"
 msgid "Small grids with + and − operators."
-msgstr "Griglie piccole."
+msgstr "Griglie piccole con operatori + e -."
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-), × for multiplication (*)
 #: activities/calcudoku/resource/3/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Small grids."
 msgctxt "Data|"
 msgid "Small grids with +, − and × operators."
-msgstr "Griglie piccole."
+msgstr "Griglie piccole con operatori +, − e ×."
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-), × for multiplication (*)
 #: activities/calcudoku/resource/4/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Small grids."
 msgctxt "Data|"
 msgid "Medium grids with +, − and × operators."
-msgstr "Griglie piccole."
+msgstr "Griglie medie con operatori +, - e *."
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-), × for multiplication (*), ∕ for division (:)
 #: activities/calcudoku/resource/5/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Small grids."
 msgctxt "Data|"
 msgid "Large grids with +, −, × and ∕ operators."
-msgstr "Griglie piccole."
+msgstr "Griglie grandi con operatori +, - , * e ∕."
 
 #. Activity title
 #: activities/calendar/ActivityInfo.qml:15
@@ -13981,27 +13973,27 @@ msgstr ""
 #: activities/grammar_analysis/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
 msgid "Grammatical analysis"
-msgstr ""
+msgstr "Analisi grammaticale"
 
 #. Help title
 #: activities/grammar_analysis/ActivityInfo.qml:20
 #: activities/grammar_classes/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Identify grammatical classes in the given sentences."
-msgstr ""
+msgstr "Identifica le classi grammaticali nelle frasi date."
 
 #. Help goal
 #: activities/grammar_analysis/ActivityInfo.qml:23
 #: activities/grammar_classes/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid "Learn to identify grammatical classes."
-msgstr ""
+msgstr "Impara a identificare le classi grammaticali."
 
 #. Help manual
 #: activities/grammar_analysis/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Assign the requested grammatical classes to the corresponding words."
-msgstr ""
+msgstr "Assegna le classi grammaticali richieste alle parole corrispondenti."
 
 #: activities/grammar_analysis/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
@@ -14009,26 +14001,26 @@ msgid ""
 "Select a grammatical class from the list, then select the box under a word "
 "and assign it the class."
 msgstr ""
+"Seleziona una classe grammaticale dall'elenco, quindi seleziona la casella "
+"sotto una parola e assegnale la classe."
 
 #: activities/grammar_analysis/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid "Leave the box blank if no class matches."
-msgstr ""
+msgstr "Lascia la casella vuota se nessuna classe corrisponde."
 
 #: activities/grammar_analysis/ActivityInfo.qml:31
 #: activities/grammar_classes/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
 msgid "Up and down arrows or tabulation: switch between classes and words"
-msgstr ""
+msgstr "Frecce su e giù o tabulazione: passa tra classi e parole"
 
 #: activities/grammar_analysis/ActivityInfo.qml:32
 #: activities/grammar_classes/ActivityInfo.qml:32
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Left and Right arrows: turn left and right"
 msgctxt "ActivityInfo|"
 msgid "Left and right arrows: select items in classes or words"
-msgstr "Frecce sinistra e destra: gira a sinistra e destra"
+msgstr ""
+"Frecce sinistra e destra: seleziona gli elementi nelle classi o nelle parole"
 
 #: activities/grammar_analysis/ActivityInfo.qml:33
 #: activities/grammar_classes/ActivityInfo.qml:33
@@ -14037,31 +14029,31 @@ msgid ""
 "Space: assign the selected class to the selected word and then select the "
 "next word"
 msgstr ""
+"Spazio: assegna la classe selezionata alla parola selezionata e quindi "
+"seleziona la parola successiva"
 
 #: activities/grammar_analysis/ActivityInfo.qml:34
 #: activities/grammar_classes/ActivityInfo.qml:34
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Backspace: delete the last digit in your answer"
 msgctxt "ActivityInfo|"
 msgid "Backspace: select the previous word"
-msgstr "Backspace: elimina l'ultima cifra nella risposta"
+msgstr "Backspace: seleziona la parola precedente"
 
 #: activities/grammar_analysis/grammar_analysis.js:38
 msgctxt "grammar_analysis|"
 msgid "Grammatical analysis"
-msgstr ""
+msgstr "Analisi grammaticale"
 
 #: activities/grammar_analysis/grammar_analysis.js:39
 #: activities/grammar_analysis/grammar_analysis.js:49
 msgctxt "grammar_analysis|"
 msgid "Learn to identify grammatical classes."
-msgstr ""
+msgstr "Impara a identificare le classi grammaticali."
 
 #: activities/grammar_analysis/grammar_analysis.js:40
 msgctxt "grammar_analysis|"
 msgid "Find all the words corresponding to the requested grammatical classes."
 msgstr ""
+"Trova tutte le parole corrispondenti alle classi grammaticali richieste."
 
 #: activities/grammar_analysis/grammar_analysis.js:41
 msgctxt "grammar_analysis|"
@@ -14069,21 +14061,24 @@ msgid ""
 "Select a grammatical class from the list, then select the box under a word "
 "and assign it the class."
 msgstr ""
+"Seleziona una classe grammaticale dall'elenco, quindi seleziona la casella "
+"sotto una parola e assegnale la classe."
 
 #: activities/grammar_analysis/grammar_analysis.js:42
 msgctxt "grammar_analysis|"
 msgid "Leave the box blank if no class matches."
-msgstr ""
+msgstr "Lascia la casella vuota se nessuna classe corrisponde."
 
 #: activities/grammar_analysis/grammar_analysis.js:48
 msgctxt "grammar_analysis|"
 msgid "Grammatical classes"
-msgstr ""
+msgstr "Classi grammaticali"
 
 #: activities/grammar_analysis/grammar_analysis.js:50
 msgctxt "grammar_analysis|"
 msgid "Find all the words corresponding to the requested grammatical class."
 msgstr ""
+"Trova tutte le parole corrispondenti alla classe grammaticale richiesta."
 
 #: activities/grammar_analysis/grammar_analysis.js:51
 msgctxt "grammar_analysis|"
@@ -14091,31 +14086,30 @@ msgid ""
 "Select the grammatical class from the list, then select the box under a word "
 "and assign it the class."
 msgstr ""
+"Seleziona la classe grammaticale dall'elenco, quindi seleziona la casella "
+"sotto una parola e assegnale la classe."
 
 #: activities/grammar_analysis/grammar_analysis.js:52
 msgctxt "grammar_analysis|"
 msgid "Leave the box blank if the class doesn't match."
-msgstr ""
+msgstr "Lascia la casella vuota se la classe non corrisponde."
 
 #: activities/grammar_analysis/grammar_analysis.js:407
-#, fuzzy
-#| msgctxt "Admin|"
-#| msgid "empty"
 msgctxt "grammar_analysis|"
 msgid "Empty"
-msgstr "vuoto"
+msgstr "Vuoto"
 
 #. Activity title
 #: activities/grammar_classes/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
 msgid "Grammatical classes"
-msgstr ""
+msgstr "Classi grammaticali"
 
 #. Help manual
 #: activities/grammar_classes/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Assign the requested grammatical class to the corresponding words."
-msgstr ""
+msgstr "Assegna la classe grammaticale richiesta alle parole corrispondenti."
 
 #: activities/grammar_classes/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
@@ -14123,11 +14117,13 @@ msgid ""
 "Select the grammatical class from the list, then select the box under a word "
 "and assign it the class."
 msgstr ""
+"Seleziona la classe grammaticale dall'elenco, quindi seleziona la casella "
+"sotto una parola e assegnale la classe."
 
 #: activities/grammar_classes/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid "Leave the box blank if the class doesn't match."
-msgstr ""
+msgstr "Lascia la casella vuota se la classe non corrisponde."
 
 #: activities/graph-coloring/ActivityConfig.qml:21
 #: activities/superbrain/ActivityConfig.qml:21
