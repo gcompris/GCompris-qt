@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_qt\n"
-"PO-Revision-Date: 2023-05-28 15:58+0200\n"
+"PO-Revision-Date: 2023-07-27 13:08+0200\n"
 "Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
 "Language-Team: Norwegian Nynorsk <l10n-no@lister.huftis.org>\n"
 "Language: nn\n"
@@ -18,7 +18,7 @@ msgstr ""
 "X-Environment: kde, gcompris\n"
 "X-Accelerator-Marker: &\n"
 "X-Text-Markup: qtrich\n"
-"X-Generator: Lokalize 23.04.1\n"
+"X-Generator: Lokalize 23.04.3\n"
 
 #. Activity title
 #: activities/advanced_colors/ActivityInfo.qml:15
@@ -3931,7 +3931,7 @@ msgstr "Flytt GRØNSAKENE til høgre og dei andre tinga til venstre."
 #: activities/checkers/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Play checkers (against Tux)"
-msgstr "Spel sjakk (mot Tux)"
+msgstr "Spel dam (mot Tux)"
 
 #. Help title
 #: activities/checkers/ActivityInfo.qml:17
