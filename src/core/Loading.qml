@@ -66,7 +66,9 @@ Item {
     function stop() {
         active = false;
         visible = false;
-        ActivityInfoTree.startingActivity = "";
+        if(ApplicationSettings.isKioskMode) {
+            ActivityInfoTree.startingActivity = "";
+        }
     }
 
     anchors.fill: parent

@@ -55,8 +55,12 @@ ActivityBase {
         else {
             pageView.popElement();
             // Restore focus that has been taken by the loaded activity
-            if(pageView.currentItem === activity)
+            if(pageView.currentItem === activity) {
                 focus = true;
+                if(ActivityInfoTree.startingActivity != "") {
+                    Core.quit(activity);
+                }
+            }
         }
     }
 

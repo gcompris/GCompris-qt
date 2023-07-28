@@ -507,7 +507,10 @@ Item {
     Component {
         id: home
         BarButton {
-            source: "qrc:/gcompris/src/core/resource/bar_home.svg";
+            // Replace home icon with exit icon in case activity is started as standalone
+            source: ActivityInfoTree.startingActivity != "" ?
+                "qrc:/gcompris/src/core/resource/bar_exit.svg" :
+                "qrc:/gcompris/src/core/resource/bar_home.svg";
             sourceSize.width: fullButtonScaled
             visible: barRow.isHidden === false
             onClicked: {
