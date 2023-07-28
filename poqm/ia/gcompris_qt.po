@@ -12575,41 +12575,33 @@ msgctxt "Warning|"
 msgid "You ate a wrong number."
 msgstr ""
 
-#: activities/gnumch-equality/Warning.qml:58
+#: activities/gnumch-equality/Warning.qml:60
 msgctxt "Warning|"
 msgid "1 is not a prime number."
 msgstr ""
 
-#: activities/gnumch-equality/Warning.qml:68
+#. the first argument corresponds to a number and the second argument corresponds to its divisors formatted as an unordered html format (<ul><li>number 1</li>...</ul>)
+#: activities/gnumch-equality/Warning.qml:75
 #, qt-format
 msgctxt "Warning|"
-msgid "%1 is divisible by %2"
+msgid "%1 is a non-prime number, its divisors are: %2"
 msgstr ""
 
-#: activities/gnumch-equality/Warning.qml:76
-msgctxt "Warning|"
-msgid "and"
-msgstr "e"
-
-#: activities/gnumch-equality/Warning.qml:82
+#. %1 is the number to find, %2 and %3 are two multiples of the number, %4 is a wrong number and %5 is the number to find.
+#: activities/gnumch-equality/Warning.qml:79
 #, qt-format
 msgctxt "Warning|"
-msgid "Multiples of %1 include %2, "
+msgid "Multiples of %1 include %2 or %3 but %4 is not a multiple of %5."
 msgstr ""
 
-#: activities/gnumch-equality/Warning.qml:83
+#. the first argument corresponds to a number and the second argument corresponds to its divisors formatted as an unordered html format (<ul><li>number 1</li>...</ul>
+#: activities/gnumch-equality/Warning.qml:94
 #, qt-format
 msgctxt "Warning|"
-msgid "but %1 is not a multiple of %2."
+msgid "Divisors of %1 are: %2"
 msgstr ""
 
-#: activities/gnumch-equality/Warning.qml:100
-#, qt-format
-msgctxt "Warning|"
-msgid "and %1 are the divisors of %2."
-msgstr ""
-
-#: activities/gnumch-equality/Warning.qml:129
+#: activities/gnumch-equality/Warning.qml:124
 msgctxt "Warning|"
 msgid "Press \"Return\" or click on me to continue."
 msgstr ""
@@ -24112,6 +24104,10 @@ msgstr "Salta"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Initia"
+
+#~ msgctxt "Warning|"
+#~ msgid "and"
+#~ msgstr "e"
 
 #~ msgctxt "Data|"
 #~ msgid "Select one-quarter of the rectangle."
