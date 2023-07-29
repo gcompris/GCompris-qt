@@ -17506,7 +17506,7 @@ msgctxt "ConfigurationItem|"
 msgid "All lowercase"
 msgstr "הכל באותיות קטנות"
 
-#: activities/menu/Menu.qml:85
+#: activities/menu/Menu.qml:89
 msgctxt "Menu|"
 msgid ""
 "You selected a new locale, you need to restart GCompris to use it.<br/>Do "
@@ -17515,77 +17515,77 @@ msgstr ""
 "נבחר מיקום חדש. צריך לאתחל את GCompris כדי לשחק לפי המיקום החדש.<br/>האם "
 "להוריד את קובצי הקול המתאימים עכשיו?"
 
-#: activities/menu/Menu.qml:86
+#: activities/menu/Menu.qml:90
 msgctxt "Menu|"
 msgid "Yes"
 msgstr "כן"
 
-#: activities/menu/Menu.qml:92
+#: activities/menu/Menu.qml:96
 msgctxt "Menu|"
 msgid "No"
 msgstr "לא"
 
-#: activities/menu/Menu.qml:122
+#: activities/menu/Menu.qml:126
 msgctxt "Menu|"
 msgid "Logic"
 msgstr "הגיון"
 
-#: activities/menu/Menu.qml:123
+#: activities/menu/Menu.qml:127
 msgctxt "Menu|"
 msgid "Fine Arts"
 msgstr "אומנות יפה"
 
-#: activities/menu/Menu.qml:124
+#: activities/menu/Menu.qml:128
 msgctxt "Menu|"
 msgid "Music"
 msgstr "מוסיקה"
 
-#: activities/menu/Menu.qml:130
+#: activities/menu/Menu.qml:134
 msgctxt "Menu|"
 msgid "Experiment"
 msgstr "ניסוי"
 
-#: activities/menu/Menu.qml:131
+#: activities/menu/Menu.qml:135
 msgctxt "Menu|"
 msgid "History"
 msgstr "היסטוריה"
 
-#: activities/menu/Menu.qml:132
+#: activities/menu/Menu.qml:136
 msgctxt "Menu|"
 msgid "Geography"
 msgstr "גאוגרפיה"
 
-#: activities/menu/Menu.qml:142
+#: activities/menu/Menu.qml:146
 msgctxt "Menu|"
 msgid "Numeration"
 msgstr "ספירה"
 
-#: activities/menu/Menu.qml:143
+#: activities/menu/Menu.qml:147
 msgctxt "Menu|"
 msgid "Arithmetic"
 msgstr "חשבון"
 
-#: activities/menu/Menu.qml:144
+#: activities/menu/Menu.qml:148
 msgctxt "Menu|"
 msgid "Measures"
 msgstr "מדידות"
 
-#: activities/menu/Menu.qml:154
+#: activities/menu/Menu.qml:158
 msgctxt "Menu|"
 msgid "Letters"
 msgstr "אותיות"
 
-#: activities/menu/Menu.qml:155
+#: activities/menu/Menu.qml:159
 msgctxt "Menu|"
 msgid "Words"
 msgstr "מילים"
 
-#: activities/menu/Menu.qml:156
+#: activities/menu/Menu.qml:160
 msgctxt "Menu|"
 msgid "Vocabulary"
 msgstr "אוצר מילים"
 
-#: activities/menu/Menu.qml:372
+#: activities/menu/Menu.qml:376
 msgctxt "Menu|"
 msgid ""
 "Put your favorite activities here by clicking on the sun at the top right of "
@@ -17594,12 +17594,12 @@ msgstr ""
 "לשים את הפעילויות הכי אהובות כאן באמצעות לחיצה על השמש בצד הימני העליון של "
 "הפעילות הזו."
 
-#: activities/menu/Menu.qml:775
+#: activities/menu/Menu.qml:779
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "לחפש פעילות מסויימת"
 
-#: activities/menu/Menu.qml:802
+#: activities/menu/Menu.qml:806
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "הגדרות הפעילות"

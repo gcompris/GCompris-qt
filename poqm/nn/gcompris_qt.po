@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_qt\n"
-"PO-Revision-Date: 2023-07-27 13:08+0200\n"
+"PO-Revision-Date: 2023-07-28 19:23+0200\n"
 "Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
 "Language-Team: Norwegian Nynorsk <l10n-no@lister.huftis.org>\n"
 "Language: nn\n"
@@ -5170,8 +5170,8 @@ msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
 "voices or effects are disabled in the main configuration."
 msgstr ""
-"Denne aktiviteten brukar lyd, og han vil derfor spela av lyd sjølv om "
-"stemmer og lydeffektar er slått av i innstillingane."
+"Denne aktiviteten brukar lyd, og han vil derfor spela av lyd sjølv om tale "
+"og lydeffektar er slått av i innstillingane."
 
 #: activities/colors/FindIt.qml:236
 msgctxt "FindIt|"
@@ -6615,8 +6615,8 @@ msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
 "voices or effects are disabled in the main configuration."
 msgstr ""
-"Denne aktiviteten brukar lyd, og han vil derfor spela av lyd sjølv om "
-"stemmer og lydeffektar er slått av i innstillingane."
+"Denne aktiviteten brukar lyd, og han vil derfor spela av lyd sjølv om tale "
+"og lydeffektar er slått av i innstillingane."
 
 #: activities/explore_farm_animals/ExploreLevels.qml:305
 msgctxt "ExploreLevels|"
@@ -16474,8 +16474,8 @@ msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
 "voices or effects are disabled in the main configuration."
 msgstr ""
-"Denne aktiviteten brukar lyd, og han vil derfor spela av lyd sjølv om "
-"stemmer og lydeffektar er slått av i innstillingane."
+"Denne aktiviteten brukar lyd, og han vil derfor spela av lyd sjølv om tale "
+"og lydeffektar er slått av i innstillingane."
 
 #: activities/melody/Melody.qml:286
 msgctxt "Melody|"
@@ -17643,8 +17643,8 @@ msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
 "voices or effects are disabled in the main configuration."
 msgstr ""
-"Denne aktiviteten brukar lyd, og han vil derfor spela av lyd sjølv om "
-"stemmer og lydeffektar er slått av i innstillingane."
+"Denne aktiviteten brukar lyd, og han vil derfor spela av lyd sjølv om tale "
+"og lydeffektar er slått av i innstillingane."
 
 #: activities/memory/MemoryCommon.qml:326
 msgctxt "MemoryCommon|"
@@ -17930,6 +17930,7 @@ msgctxt "ConfigurationItem|"
 msgid "Virtual Keyboard"
 msgstr "Virtuelt tastatur"
 
+# Sjå tilsvarande tekst i FAQ-tekstane i «gcompris-net.po». Oppdater denne om du endrar noko her.
 #: activities/menu/ConfigurationItem.qml:303
 msgctxt "ConfigurationItem|"
 msgid "Enable automatic downloads/updates of sound files"
@@ -18868,8 +18869,8 @@ msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
 "voices or effects are disabled in the main configuration."
 msgstr ""
-"Denne aktiviteten brukar lyd, og han vil derfor spela av lyd sjølv om "
-"stemmer og lydeffektar er slått av i innstillingane."
+"Denne aktiviteten brukar lyd, og han vil derfor spela av lyd sjølv om tale "
+"og lydeffektar er slått av i innstillingane."
 
 #: activities/note_names/NoteNames.qml:453
 msgctxt "NoteNames|"
@@ -20352,8 +20353,8 @@ msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
 "voices or effects are disabled in the main configuration."
 msgstr ""
-"Denne aktiviteten brukar lyd, og han vil derfor spela av lyd sjølv om "
-"stemmer og lydeffektar er slått av i innstillingane."
+"Denne aktiviteten brukar lyd, og han vil derfor spela av lyd sjølv om tale "
+"og lydeffektar er slått av i innstillingane."
 
 #: activities/piano_composition/Piano_composition.qml:548
 msgctxt "Piano_composition|"
@@ -20617,8 +20618,8 @@ msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
 "voices or effects are disabled in the main configuration."
 msgstr ""
-"Denne aktiviteten brukar lyd, og han vil derfor spela av lyd sjølv om "
-"stemmer og lydeffektar er slått av i innstillingane."
+"Denne aktiviteten brukar lyd, og han vil derfor spela av lyd sjølv om tale "
+"og lydeffektar er slått av i innstillingane."
 
 #: activities/play_piano/PlayPiano.qml:280
 msgctxt "PlayPiano|"
@@ -20730,8 +20731,8 @@ msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
 "voices or effects are disabled in the main configuration."
 msgstr ""
-"Denne aktiviteten brukar lyd, og han vil derfor spela av lyd sjølv om "
-"stemmer og lydeffektar er slått av i innstillingane."
+"Denne aktiviteten brukar lyd, og han vil derfor spela av lyd sjølv om tale "
+"og lydeffektar er slått av i innstillingane."
 
 #: activities/play_rhythm/PlayRhythm.qml:360
 msgctxt "PlayRhythm|"
@@ -25240,7 +25241,7 @@ msgstr "Nye teikningar for fargar, avanserte fargar og målskivespelet"
 #: core/ChangeLog.qml:107
 msgctxt "ChangeLog|"
 msgid "New voices for US English."
-msgstr "Nye stemmefiler for engelsk (amerikansk)"
+msgstr "Nye talefiler for engelsk (amerikansk)"
 
 #: core/ChangeLog.qml:108 core/ChangeLog.qml:116
 msgctxt "ChangeLog|"
@@ -25898,7 +25899,7 @@ msgstr ""
 #: core/main.qml:273
 msgctxt "main|"
 msgid "Voices for your language"
-msgstr "Stemmefiler for morsmålet ditt"
+msgstr "Talefiler for morsmålet ditt"
 
 #: core/main.qml:274
 msgctxt "main|"

@@ -16870,84 +16870,84 @@ msgctxt "ConfigurationItem|"
 msgid "All lowercase"
 msgstr "همه حروف کوچک باشند"
 
-#: activities/menu/Menu.qml:85
+#: activities/menu/Menu.qml:89
 msgctxt "Menu|"
 msgid ""
 "You selected a new locale, you need to restart GCompris to use it.<br/>Do "
 "you want to download the corresponding sound files now?"
 msgstr ""
 
-#: activities/menu/Menu.qml:86
+#: activities/menu/Menu.qml:90
 msgctxt "Menu|"
 msgid "Yes"
 msgstr "بله"
 
-#: activities/menu/Menu.qml:92
+#: activities/menu/Menu.qml:96
 msgctxt "Menu|"
 msgid "No"
 msgstr "خیر"
 
-#: activities/menu/Menu.qml:122
+#: activities/menu/Menu.qml:126
 msgctxt "Menu|"
 msgid "Logic"
 msgstr "منطق"
 
-#: activities/menu/Menu.qml:123
+#: activities/menu/Menu.qml:127
 msgctxt "Menu|"
 msgid "Fine Arts"
 msgstr "هنر های زیبا"
 
-#: activities/menu/Menu.qml:124
+#: activities/menu/Menu.qml:128
 msgctxt "Menu|"
 msgid "Music"
 msgstr "موسیقی"
 
-#: activities/menu/Menu.qml:130
+#: activities/menu/Menu.qml:134
 msgctxt "Menu|"
 msgid "Experiment"
 msgstr "تجربه"
 
-#: activities/menu/Menu.qml:131
+#: activities/menu/Menu.qml:135
 msgctxt "Menu|"
 msgid "History"
 msgstr "تاریخ"
 
-#: activities/menu/Menu.qml:132
+#: activities/menu/Menu.qml:136
 msgctxt "Menu|"
 msgid "Geography"
 msgstr "جغرافیا"
 
-#: activities/menu/Menu.qml:142
+#: activities/menu/Menu.qml:146
 msgctxt "Menu|"
 msgid "Numeration"
 msgstr "شمارش"
 
-#: activities/menu/Menu.qml:143
+#: activities/menu/Menu.qml:147
 msgctxt "Menu|"
 msgid "Arithmetic"
 msgstr "محاسبه"
 
-#: activities/menu/Menu.qml:144
+#: activities/menu/Menu.qml:148
 msgctxt "Menu|"
 msgid "Measures"
 msgstr "اندازه گیری"
 
-#: activities/menu/Menu.qml:154
+#: activities/menu/Menu.qml:158
 msgctxt "Menu|"
 msgid "Letters"
 msgstr "حروف"
 
-#: activities/menu/Menu.qml:155
+#: activities/menu/Menu.qml:159
 msgctxt "Menu|"
 msgid "Words"
 msgstr "کلمات"
 
-#: activities/menu/Menu.qml:156
+#: activities/menu/Menu.qml:160
 msgctxt "Menu|"
 msgid "Vocabulary"
 msgstr "فرهنگ لغات"
 
-#: activities/menu/Menu.qml:372
+#: activities/menu/Menu.qml:376
 msgctxt "Menu|"
 msgid ""
 "Put your favorite activities here by clicking on the sun at the top right of "
@@ -16956,12 +16956,12 @@ msgstr ""
 "با کلیک بر روی خورشید در گوشه سمت راست فعالیت، فعالیت های مورد علاقه خود را "
 "در اینجا قرار بده."
 
-#: activities/menu/Menu.qml:775
+#: activities/menu/Menu.qml:779
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "جست و جوی فعالیت های به خصوص"
 
-#: activities/menu/Menu.qml:802
+#: activities/menu/Menu.qml:806
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "تنظیمات فعالیت"

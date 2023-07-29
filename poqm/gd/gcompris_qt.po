@@ -20490,7 +20490,7 @@ msgctxt "ConfigurationItem|"
 msgid "All lowercase"
 msgstr "Litrichean beaga a-mhàin"
 
-#: activities/menu/Menu.qml:85
+#: activities/menu/Menu.qml:89
 #, fuzzy
 #| msgctxt "ConfigurationItem|"
 #| msgid ""
@@ -20505,7 +20505,7 @@ msgstr ""
 "fhaic thu an cànan ùr.<br/>A bheil thu airson na faidhlichean fuaime "
 "iomchaidh a luchdadh a-nuas an-dràsta?"
 
-#: activities/menu/Menu.qml:86
+#: activities/menu/Menu.qml:90
 #, fuzzy
 #| msgctxt "balanceboxeditor|"
 #| msgid "Yes"
@@ -20513,7 +20513,7 @@ msgctxt "Menu|"
 msgid "Yes"
 msgstr "Tha"
 
-#: activities/menu/Menu.qml:92
+#: activities/menu/Menu.qml:96
 #, fuzzy
 #| msgctxt "balanceboxeditor|"
 #| msgid "No"
@@ -20521,37 +20521,37 @@ msgctxt "Menu|"
 msgid "No"
 msgstr "Chan eil"
 
-#: activities/menu/Menu.qml:122
+#: activities/menu/Menu.qml:126
 msgctxt "Menu|"
 msgid "Logic"
 msgstr ""
 
-#: activities/menu/Menu.qml:123
+#: activities/menu/Menu.qml:127
 msgctxt "Menu|"
 msgid "Fine Arts"
 msgstr ""
 
-#: activities/menu/Menu.qml:124
+#: activities/menu/Menu.qml:128
 msgctxt "Menu|"
 msgid "Music"
 msgstr ""
 
-#: activities/menu/Menu.qml:130
+#: activities/menu/Menu.qml:134
 msgctxt "Menu|"
 msgid "Experiment"
 msgstr ""
 
-#: activities/menu/Menu.qml:131
+#: activities/menu/Menu.qml:135
 msgctxt "Menu|"
 msgid "History"
 msgstr ""
 
-#: activities/menu/Menu.qml:132
+#: activities/menu/Menu.qml:136
 msgctxt "Menu|"
 msgid "Geography"
 msgstr ""
 
-#: activities/menu/Menu.qml:142
+#: activities/menu/Menu.qml:146
 #, fuzzy
 #| msgctxt "ActivityInfo|"
 #| msgid "Numeration training"
@@ -20559,17 +20559,17 @@ msgctxt "Menu|"
 msgid "Numeration"
 msgstr "Trèanadh nan àireamhan"
 
-#: activities/menu/Menu.qml:143
+#: activities/menu/Menu.qml:147
 msgctxt "Menu|"
 msgid "Arithmetic"
 msgstr ""
 
-#: activities/menu/Menu.qml:144
+#: activities/menu/Menu.qml:148
 msgctxt "Menu|"
 msgid "Measures"
 msgstr ""
 
-#: activities/menu/Menu.qml:154
+#: activities/menu/Menu.qml:158
 #, fuzzy
 #| msgctxt "ActivityInfo|"
 #| msgid "Draw Letters"
@@ -20577,12 +20577,12 @@ msgctxt "Menu|"
 msgid "Letters"
 msgstr "Tarraing litrichean"
 
-#: activities/menu/Menu.qml:155
+#: activities/menu/Menu.qml:159
 msgctxt "Menu|"
 msgid "Words"
 msgstr ""
 
-#: activities/menu/Menu.qml:156
+#: activities/menu/Menu.qml:160
 #, fuzzy
 #| msgctxt "ActivityInfo|"
 #| msgid "Vocabulary and reading"
@@ -20590,7 +20590,7 @@ msgctxt "Menu|"
 msgid "Vocabulary"
 msgstr "Faclan is leughadh"
 
-#: activities/menu/Menu.qml:372
+#: activities/menu/Menu.qml:376
 #, fuzzy
 #| msgctxt "Menu|"
 #| msgid ""
@@ -20604,12 +20604,12 @@ msgstr ""
 "Cuir na cleasan as fhearr leat an-seo le bhith a’ taghadh na grèine gu h-àrd "
 "sa chleas ud."
 
-#: activities/menu/Menu.qml:775
+#: activities/menu/Menu.qml:779
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "Lorg gnìomhachdan sònraichte"
 
-#: activities/menu/Menu.qml:802
+#: activities/menu/Menu.qml:806
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr ""

@@ -29,7 +29,15 @@
 ><firstname
 >Johnny</firstname
 > <surname
-> Jazeix</surname
+>Jazeix</surname
+> </personname>
+</author>
+<author>
+<personname
+><firstname
+>Timothée</firstname
+> <surname
+>Giet</surname
 > </personname>
 </author>
 
@@ -547,6 +555,12 @@ for example 'xx.yy.zz'
 >--launch activity</entry>
 <entry
 >Ange aktivitet när GCompris startas.</entry>
+</row>
+<row>
+<entry
+>--difficulty {värde|min-max}</entry>
+<entry
+>Tvinga GCompris svårighetsgrad för aktiviteter till värdet, eller mellan min- och maxvärdet. Värdena måste vara mellan 1 och 6, och om formatet är min-max måste minvärdet vara mindre än maxvärdet. Om det inte är fallet startar inte GCompris.</entry>
 </row>
 <row>
 <entry

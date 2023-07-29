@@ -18304,7 +18304,7 @@ msgctxt "ConfigurationItem|"
 msgid "All lowercase"
 msgstr "Tout en minuscule"
 
-#: activities/menu/Menu.qml:85
+#: activities/menu/Menu.qml:89
 msgctxt "Menu|"
 msgid ""
 "You selected a new locale, you need to restart GCompris to use it.<br/>Do "
@@ -18314,77 +18314,77 @@ msgstr ""
 "soit prise en compte.<br/> Voulez-vous télécharger les fichiers sons "
 "correspondant à la langue maintenant ?"
 
-#: activities/menu/Menu.qml:86
+#: activities/menu/Menu.qml:90
 msgctxt "Menu|"
 msgid "Yes"
 msgstr "Oui"
 
-#: activities/menu/Menu.qml:92
+#: activities/menu/Menu.qml:96
 msgctxt "Menu|"
 msgid "No"
 msgstr "Non"
 
-#: activities/menu/Menu.qml:122
+#: activities/menu/Menu.qml:126
 msgctxt "Menu|"
 msgid "Logic"
 msgstr "Logique"
 
-#: activities/menu/Menu.qml:123
+#: activities/menu/Menu.qml:127
 msgctxt "Menu|"
 msgid "Fine Arts"
 msgstr "Beaux-arts"
 
-#: activities/menu/Menu.qml:124
+#: activities/menu/Menu.qml:128
 msgctxt "Menu|"
 msgid "Music"
 msgstr "Musique"
 
-#: activities/menu/Menu.qml:130
+#: activities/menu/Menu.qml:134
 msgctxt "Menu|"
 msgid "Experiment"
 msgstr "Expérimentation"
 
-#: activities/menu/Menu.qml:131
+#: activities/menu/Menu.qml:135
 msgctxt "Menu|"
 msgid "History"
 msgstr "Histoire"
 
-#: activities/menu/Menu.qml:132
+#: activities/menu/Menu.qml:136
 msgctxt "Menu|"
 msgid "Geography"
 msgstr "Géographie"
 
-#: activities/menu/Menu.qml:142
+#: activities/menu/Menu.qml:146
 msgctxt "Menu|"
 msgid "Numeration"
 msgstr "Numération"
 
-#: activities/menu/Menu.qml:143
+#: activities/menu/Menu.qml:147
 msgctxt "Menu|"
 msgid "Arithmetic"
 msgstr "Arithmétique"
 
-#: activities/menu/Menu.qml:144
+#: activities/menu/Menu.qml:148
 msgctxt "Menu|"
 msgid "Measures"
 msgstr "Mesures"
 
-#: activities/menu/Menu.qml:154
+#: activities/menu/Menu.qml:158
 msgctxt "Menu|"
 msgid "Letters"
 msgstr "Lettres"
 
-#: activities/menu/Menu.qml:155
+#: activities/menu/Menu.qml:159
 msgctxt "Menu|"
 msgid "Words"
 msgstr "Mots"
 
-#: activities/menu/Menu.qml:156
+#: activities/menu/Menu.qml:160
 msgctxt "Menu|"
 msgid "Vocabulary"
 msgstr "Vocabulaire"
 
-#: activities/menu/Menu.qml:372
+#: activities/menu/Menu.qml:376
 msgctxt "Menu|"
 msgid ""
 "Put your favorite activities here by clicking on the sun at the top right of "
@@ -18393,12 +18393,12 @@ msgstr ""
 "Place ici tes activités favorites en cliquant sur le Soleil en haut à droite "
 "de chaque activité."
 
-#: activities/menu/Menu.qml:775
+#: activities/menu/Menu.qml:779
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "Chercher des activités spécifiques"
 
-#: activities/menu/Menu.qml:802
+#: activities/menu/Menu.qml:806
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "Configuration des activités"
