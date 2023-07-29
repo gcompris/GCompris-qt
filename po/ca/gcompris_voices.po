@@ -151,7 +151,7 @@ msgstr "Arrossega i deixa anar els objectes que coincideixin amb les imatges."
 msgid "Drag and drop the objects matching the shapes."
 msgstr "Arrossega i deixa anar els objectes que coincideixin amb les formes."
 
-# skip-rule: kct-box
+# skip-rule: kct-box, t-sc-box
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "balancebox"
 #: activities/balancebox/ActivityInfo.qml:21
 #, kde-format
