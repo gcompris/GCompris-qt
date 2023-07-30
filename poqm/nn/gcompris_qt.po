@@ -18209,7 +18209,7 @@ msgctxt "ConfigurationItem|"
 msgid "All lowercase"
 msgstr "Berre små bokstavar"
 
-#: activities/menu/Menu.qml:85
+#: activities/menu/Menu.qml:89
 msgctxt "Menu|"
 msgid ""
 "You selected a new locale, you need to restart GCompris to use it.<br/>Do "
@@ -18218,77 +18218,77 @@ msgstr ""
 "Du har valt eit nytt språk. Du må starta GCompris på nytt for å spela på det "
 "nye språket.<br/>Vil du lasta ned tilhøyrande lydfiler no?"
 
-#: activities/menu/Menu.qml:86
+#: activities/menu/Menu.qml:90
 msgctxt "Menu|"
 msgid "Yes"
 msgstr "Ja"
 
-#: activities/menu/Menu.qml:92
+#: activities/menu/Menu.qml:96
 msgctxt "Menu|"
 msgid "No"
 msgstr "Nei"
 
-#: activities/menu/Menu.qml:122
+#: activities/menu/Menu.qml:126
 msgctxt "Menu|"
 msgid "Logic"
 msgstr "Hjernetrim"
 
-#: activities/menu/Menu.qml:123
+#: activities/menu/Menu.qml:127
 msgctxt "Menu|"
 msgid "Fine Arts"
 msgstr "Biletkunst"
 
-#: activities/menu/Menu.qml:124
+#: activities/menu/Menu.qml:128
 msgctxt "Menu|"
 msgid "Music"
 msgstr "Musikk"
 
-#: activities/menu/Menu.qml:130
+#: activities/menu/Menu.qml:134
 msgctxt "Menu|"
 msgid "Experiment"
 msgstr "Eksperiment"
 
-#: activities/menu/Menu.qml:131
+#: activities/menu/Menu.qml:135
 msgctxt "Menu|"
 msgid "History"
 msgstr "Historie"
 
-#: activities/menu/Menu.qml:132
+#: activities/menu/Menu.qml:136
 msgctxt "Menu|"
 msgid "Geography"
 msgstr "Geografi"
 
-#: activities/menu/Menu.qml:142
+#: activities/menu/Menu.qml:146
 msgctxt "Menu|"
 msgid "Numeration"
 msgstr "Teljing"
 
-#: activities/menu/Menu.qml:143
+#: activities/menu/Menu.qml:147
 msgctxt "Menu|"
 msgid "Arithmetic"
 msgstr "Aritmetikk"
 
-#: activities/menu/Menu.qml:144
+#: activities/menu/Menu.qml:148
 msgctxt "Menu|"
 msgid "Measures"
 msgstr "Mål"
 
-#: activities/menu/Menu.qml:154
+#: activities/menu/Menu.qml:158
 msgctxt "Menu|"
 msgid "Letters"
 msgstr "Bokstavar"
 
-#: activities/menu/Menu.qml:155
+#: activities/menu/Menu.qml:159
 msgctxt "Menu|"
 msgid "Words"
 msgstr "Ord"
 
-#: activities/menu/Menu.qml:156
+#: activities/menu/Menu.qml:160
 msgctxt "Menu|"
 msgid "Vocabulary"
 msgstr "Ordtilfang"
 
-#: activities/menu/Menu.qml:372
+#: activities/menu/Menu.qml:376
 msgctxt "Menu|"
 msgid ""
 "Put your favorite activities here by clicking on the sun at the top right of "
@@ -18297,12 +18297,12 @@ msgstr ""
 "Legg favorittaktivitetane dine her ved å trykkja på sola oppe til høgre for "
 "kvar aktivitet."
 
-#: activities/menu/Menu.qml:775
+#: activities/menu/Menu.qml:779
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "Søk etter aktivitetar"
 
-#: activities/menu/Menu.qml:802
+#: activities/menu/Menu.qml:806
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "Endra innstillingar for aktivitetar"
