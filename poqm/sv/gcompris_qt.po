@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2023-02-28 20:55+0100\n"
+"PO-Revision-Date: 2023-07-30 15:47+0200\n"
 "Last-Translator: Stefan Asserhäll <stefan.asserhall@bredband.net>\n"
 "Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
 "Language: sv\n"
@@ -1185,6 +1185,8 @@ msgid ""
 "You can use the arrow buttons to manually select the difficulty level. Tux "
 "will play better when you increase the level."
 msgstr ""
+"Du kan använda pilknapparna för att manuellt välja svårighetsnivån. Tux "
+"spelar bättre när du ökar nivån."
 
 #: activities/align4/ActivityInfo.qml:25
 #: activities/align4_2players/ActivityInfo.qml:24
@@ -2974,13 +2976,13 @@ msgstr ""
 #: activities/calcudoku/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Calcudoku"
-msgstr ""
+msgstr "Kalkudoku"
 
 #. Help title
 #: activities/calcudoku/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Solve the Calcudoku."
-msgstr ""
+msgstr "Lös kalkudoku."
 
 #. Help goal
 #: activities/calcudoku/ActivityInfo.qml:19
@@ -2989,15 +2991,14 @@ msgid ""
 "Develop your logical reasoning skills: data linking, deduction and spatial "
 "location while using calculation."
 msgstr ""
+"Utveckla dina logiska resonemangsfärdigheter: länkning av data, slutledning "
+"och rumsminne medan du utför beräkningar."
 
 #. Help prerequisite
 #: activities/calcudoku/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Completing the puzzle requires patience and logical ability."
 msgctxt "ActivityInfo|"
 msgid "Completing the puzzle requires patience and arithmetic abilities."
-msgstr "Att göra färdigt pusslet kräver tålamod och logiskt tänkande."
+msgstr "Att göra färdigt pusslet kräver tålamod och aritmetiska färdigheter."
 
 #. Help manual
 #: activities/calcudoku/ActivityInfo.qml:23
@@ -3010,51 +3011,43 @@ msgid ""
 "cage, when combined using the operator, must produce the result. Cages made "
 "of only one cell directly provide the number to enter."
 msgstr ""
+"välj ett tal i listan och klicka på dess önskade plats för att fylla i "
+"rutnätet. Varje tal får bara finnas på en plats i en rad och en kolumn. "
+"Burar är cellgrupper som tillhandahåller information om hur de ska fyllas i. "
+"Burar som består av mer än en cell tillhandahåller ett resultat och en "
+"operator: alla tal i buren, när de kombineras med användning av operatorn, "
+"måste ge resultatet. Burar som bara består av en cell tillhandahåller talet "
+"att mata in direkt."
 
 #. + is the unicode character for addition mathematical operator (+)
 #: activities/calcudoku/resource/1/Data.qml:66
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Small grids."
 msgctxt "Data|"
 msgid "Small grids with + operator."
-msgstr "Små rutor."
+msgstr "Små rutnät med + operator."
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-)
 #: activities/calcudoku/resource/2/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Small grids."
 msgctxt "Data|"
 msgid "Small grids with + and − operators."
-msgstr "Små rutor."
+msgstr "Små rutnät med + och - operatorer."
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-), × for multiplication (*)
 #: activities/calcudoku/resource/3/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Small grids."
 msgctxt "Data|"
 msgid "Small grids with +, − and × operators."
-msgstr "Små rutor."
+msgstr "Små rutnät med +, - och x operatorer."
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-), × for multiplication (*)
 #: activities/calcudoku/resource/4/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Small grids."
 msgctxt "Data|"
 msgid "Medium grids with +, − and × operators."
-msgstr "Små rutor."
+msgstr "Medelstora rutnät med +, - och x operatorer."
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-), × for multiplication (*), ∕ for division (:)
 #: activities/calcudoku/resource/5/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Small grids."
 msgctxt "Data|"
 msgid "Large grids with +, −, × and ∕ operators."
-msgstr "Små rutor."
+msgstr "Stora rutnät med +, - och x operatorer."
 
 #. Activity title
 #: activities/calendar/ActivityInfo.qml:15
@@ -4430,21 +4423,13 @@ msgid "Then, click on the OK button to validate your answer."
 msgstr "Klicka därefter på Ok-knappen för att kontrollera svaret."
 
 #: activities/chronos/ActivityInfo.qml:29
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Moon photo is copyright NASA. The space sounds come from Tuxpaint and "
-#| "Vegastrike which are released under the GPL license. The transportation "
-#| "images are copyright Franck Doucet. Dates of Transportation are based on "
-#| "those found in &lt;https://www.wikipedia.org&gt;."
 msgctxt "ActivityInfo|"
 msgid ""
 "Moon photo is copyright NASA. The transportation images are copyright Franck "
 "Doucet. Dates of Transportation are based on those found in &lt;https://www."
 "wikipedia.org&gt;."
 msgstr ""
-"NASA har upphovsrätt till månfotot. Rymdljuden kommer från Tuxpaint och "
-"Vegastrike, som ges ut med GPL-licens. Franck Doucet har upphovsrätten till "
+"NASA har upphovsrätt till månfotot. Franck Doucet har upphovsrätten till "
 "transportbilderna. Transportdatum är baserade på de som finns på &lt;https://"
 "www.wikipedia.org&gt;."
 
@@ -5312,7 +5297,7 @@ msgstr "Jämför tal"
 #: activities/comparator/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Compare the numbers and choose the corresponding sign."
-msgstr ""
+msgstr "Jämför talen och välj motsvarande tecken."
 
 #. Help goal
 #: activities/comparator/ActivityInfo.qml:22
@@ -5328,6 +5313,8 @@ msgid ""
 "symbol for this pair. When each line contains a symbol, select the OK button "
 "to validate the answers."
 msgstr ""
+"Välj ett talpar i listan. Välj därefter rätt jämförelsesymbol för paret. När "
+"varje rad innehåller en symbol, använd knappen Ok för att kontrollera svaren."
 
 #: activities/comparator/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
@@ -5335,11 +5322,13 @@ msgid ""
 "If some answers are incorrect, a cross icon will appear on the corresponding "
 "lines. Correct the errors, then select the OK button again."
 msgstr ""
+"Om några svar är felaktiga, visas en korsikon på motsvarande rader. Rätta "
+"felen, och använd därefter knappen Ok igen."
 
 #: activities/comparator/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid "Up and Down arrows: select a pair of numbers in the list"
-msgstr ""
+msgstr "Uppåt- och neråtpilar: välj ett talpar i listan"
 
 #: activities/comparator/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
@@ -5349,7 +5338,7 @@ msgstr "Vänster- och högerpilar: välj en symbolknapp"
 #: activities/comparator/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
 msgid "Space: if a symbol button is selected, enter this symbol"
-msgstr ""
+msgstr "Mellanslag: Om en symbolknapp är vald, lägg till symbolen"
 
 #: activities/comparator/ActivityInfo.qml:32
 msgctxt "ActivityInfo|"
@@ -5359,7 +5348,7 @@ msgstr "Retur: validera svaren"
 #: activities/comparator/ActivityInfo.qml:33
 msgctxt "ActivityInfo|"
 msgid "&lt;, &gt; or =: enter the corresponding symbol"
-msgstr ""
+msgstr "&lt;, &gt; eller =: lägg till motsvarande symbol"
 
 #: activities/comparator/resource/1/Data.qml:36
 #: activities/tens_complement_find/resource/3/Data.qml:9
@@ -5370,7 +5359,7 @@ msgstr "Tal från 1 till 9."
 #: activities/comparator/resource/10/Data.qml:14
 msgctxt "Data|"
 msgid "3 decimal places between 0 and 999.999."
-msgstr ""
+msgstr "3 decimaler mellan 0 och 999,999."
 
 #: activities/comparator/resource/2/Data.qml:14
 msgctxt "Data|"
@@ -5400,17 +5389,17 @@ msgstr "Tal från 1 till 1 miljard."
 #: activities/comparator/resource/7/Data.qml:14
 msgctxt "Data|"
 msgid "1 decimal place between 0 and 9.9, same integer part."
-msgstr ""
+msgstr "1 decimal mellan 0 och 9,9, samma heltalsdel."
 
 #: activities/comparator/resource/8/Data.qml:14
 msgctxt "Data|"
 msgid "1 decimal place between 0 and 9.9."
-msgstr ""
+msgstr "1 decimal mellan 0 och 9,9."
 
 #: activities/comparator/resource/9/Data.qml:14
 msgctxt "Data|"
 msgid "2 decimal places between 0 and 99.99."
-msgstr ""
+msgstr "2 decimaler mellan 0 och 999,999."
 
 #. Activity title
 #: activities/crane/ActivityInfo.qml:20
@@ -6767,11 +6756,14 @@ msgid ""
 "escape predators, and possess an excellent sense of balance. They have "
 "single-toed hooves."
 msgstr ""
+"Hästar säger 'gnägg'. Hästar är anpassade för att springa, vilket låter dem "
+"snabbt undkomma rovdjur, och har ett utmärkt balanssinne. De har enkeltåiga "
+"hovar."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:25
 msgctxt "board1|"
 msgid "This animal has single-toed hooves."
-msgstr ""
+msgstr "Djuret har enkeltåiga hovar."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:33
 msgctxt "board1|"
@@ -6784,11 +6776,13 @@ msgid ""
 "The chicken goes 'cluck'. Domestic chickens have wings, but are not capable "
 "of long-distance flight. They have a comb on their head."
 msgstr ""
+"Hönor säger 'kluck'. Tamhöns har vingar, men klarar inte av att flyga långa "
+"sträckor. De har en kam på huvudet."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:37
 msgctxt "board1|"
 msgid "This animal has a comb on its head."
-msgstr ""
+msgstr "Djuret har en kam på huvudet."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:45
 msgctxt "board1|"
@@ -6802,11 +6796,13 @@ msgid ""
 "developed sense of taste, with around 20,000 taste buds. They can detect "
 "odours 8km away."
 msgstr ""
+"Kor säger 'mu'. Kor har ett brett 330 graders synfält. De har välutvecklat "
+"smaksinne, med omkring 20 000 smaklökar. De kan detektera lukter 8 km bort."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:49
 msgctxt "board1|"
 msgid "This animal has around 20,000 taste buds."
-msgstr ""
+msgstr "Djuret har omkring 20 000 smaklökar."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:57
 msgctxt "board1|"
@@ -6820,11 +6816,14 @@ msgid ""
 "ability to chase mice and other rodents. They purr to communicate various "
 "emotions."
 msgstr ""
+"Katter säger 'mjau'. Katter uppskattas av människor som sällskapsdjur och "
+"för deras förmåga att jaga möss och andra gnagare. De spinner för att "
+"kommunicera olika känslor."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:61
 msgctxt "board1|"
 msgid "This animal can purr."
-msgstr ""
+msgstr "Djuret kan spinna."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:69
 msgctxt "board1|"
@@ -6837,11 +6836,13 @@ msgid ""
 "The pig goes 'oink'. Pigs wallow in the mud, mainly to control their body "
 "temperature."
 msgstr ""
+"Grisar säger 'nöff'. Grisar vältra sig i lera, främst för att kontrollera "
+"sin kroppstemperatur."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:73
 msgctxt "board1|"
 msgid "This animal wallows in the mud to control its body temperature."
-msgstr ""
+msgstr "Djuret vältrar sig i lera för att kontrollera sin kroppstemperatur."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:81
 msgctxt "board1|"
@@ -6854,6 +6855,8 @@ msgid ""
 "The duck goes 'quack'. Ducks are mostly aquatic birds. They have waterproof "
 "feathers and webbed feet which enable them to swim on the water."
 msgstr ""
+"Ankor säger 'kvack'. Ankor är i huvudsak vattenfåglar. De har vattentäta "
+"fjädrar och fötter med simhud, som låter dem simma i vattnet."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:85
 msgctxt "board1|"
@@ -6877,7 +6880,7 @@ msgstr ""
 #: activities/explore_farm_animals/resource/board/board1.qml:97
 msgctxt "board1|"
 msgid "This animal is a nocturnal bird."
-msgstr ""
+msgstr "Djuret är en nattfågel."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:105
 msgctxt "board1|"
@@ -6890,11 +6893,13 @@ msgid ""
 "The dog goes 'woof'. Dogs are probably the oldest domesticated species. They "
 "are descendants of the wolf."
 msgstr ""
+"Hundar säger 'vov'. Hunden är förmodligen den äldsta domesticerade arten. "
+"Den är ättling till vargen."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:109
 msgctxt "board1|"
 msgid "This animal is a descendant of the wolf."
-msgstr ""
+msgstr "Djuret är en ättling av vargen."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:117
 msgctxt "board1|"
@@ -6907,11 +6912,13 @@ msgid ""
 "The sheep goes 'baa'. Most sheep breeds bear a fleece of wool. The fleece "
 "can be sheared and used to produce textile fibre."
 msgstr ""
+"Får säger 'bä'. De flesta fårraser bär en fäll av ull. Fällen kan klippas "
+"och användas för att tillverka textilfiber."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:121
 msgctxt "board1|"
 msgid "This animal produces wool."
-msgstr ""
+msgstr "Djuret producerar ull."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:131
 msgctxt "board1|"
@@ -13575,23 +13582,22 @@ msgstr "1 är inte ett primtal."
 #, qt-format
 msgctxt "Warning|"
 msgid "%1 is a non-prime number, its divisors are: %2"
-msgstr ""
+msgstr "%1 är inte ett primtal, dess delare är: %2"
 
 #. %1 is the number to find, %2 and %3 are two multiples of the number, %4 is a wrong number and %5 is the number to find.
 #: activities/gnumch-equality/Warning.qml:79
-#, fuzzy, qt-format
-#| msgctxt "Warning|"
-#| msgid "but %1 is not a multiple of %2."
+#, qt-format
 msgctxt "Warning|"
 msgid "Multiples of %1 include %2 or %3 but %4 is not a multiple of %5."
-msgstr "men %1 är inte en multipel av %2."
+msgstr ""
+"Multipler av %1 inkluderar %2 eller %3, men %4 är inte en multipel av %5."
 
 #. the first argument corresponds to a number and the second argument corresponds to its divisors formatted as an unordered html format (<ul><li>number 1</li>...</ul>
 #: activities/gnumch-equality/Warning.qml:94
 #, qt-format
 msgctxt "Warning|"
 msgid "Divisors of %1 are: %2"
-msgstr ""
+msgstr "Delare av %1 är: %2"
 
 #: activities/gnumch-equality/Warning.qml:124
 msgctxt "Warning|"
@@ -13771,27 +13777,27 @@ msgstr ""
 #: activities/grammar_analysis/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
 msgid "Grammatical analysis"
-msgstr ""
+msgstr "Grammatikanalys"
 
 #. Help title
 #: activities/grammar_analysis/ActivityInfo.qml:20
 #: activities/grammar_classes/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Identify grammatical classes in the given sentences."
-msgstr ""
+msgstr "Identifiera grammatiska ordklasser i givna meningar."
 
 #. Help goal
 #: activities/grammar_analysis/ActivityInfo.qml:23
 #: activities/grammar_classes/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid "Learn to identify grammatical classes."
-msgstr ""
+msgstr "Lär dig att identifiera grammatiska ordklasser."
 
 #. Help manual
 #: activities/grammar_analysis/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Assign the requested grammatical classes to the corresponding words."
-msgstr ""
+msgstr "Tilldela begärda grammatiska ordklasser till motsvarande ord."
 
 #: activities/grammar_analysis/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
@@ -13799,26 +13805,25 @@ msgid ""
 "Select a grammatical class from the list, then select the box under a word "
 "and assign it the class."
 msgstr ""
+"Välj en grammatisk ordklass i listan, välj därefter rutan under ett ord och "
+"tilldela ordklassen."
 
 #: activities/grammar_analysis/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid "Leave the box blank if no class matches."
-msgstr ""
+msgstr "Lämna rutan tom om ingen ordklass stämmer."
 
 #: activities/grammar_analysis/ActivityInfo.qml:31
 #: activities/grammar_classes/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
 msgid "Up and down arrows or tabulation: switch between classes and words"
-msgstr ""
+msgstr "Uppåt- och neråtpilarna eller tabulator: byt mellan ordklasser och ord"
 
 #: activities/grammar_analysis/ActivityInfo.qml:32
 #: activities/grammar_classes/ActivityInfo.qml:32
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Left and Right arrows: turn left and right"
 msgctxt "ActivityInfo|"
 msgid "Left and right arrows: select items in classes or words"
-msgstr "Vänster- och högerpilar: vänd åt vänster och höger"
+msgstr "Vänster- och högerpilarna: välj objekt i ordklasser eller ord"
 
 #: activities/grammar_analysis/ActivityInfo.qml:33
 #: activities/grammar_classes/ActivityInfo.qml:33
@@ -13827,31 +13832,30 @@ msgid ""
 "Space: assign the selected class to the selected word and then select the "
 "next word"
 msgstr ""
+"Mellanslag: tilldela den valda ordklassen till det valda ordet och välj "
+"sedan nästa ord"
 
 #: activities/grammar_analysis/ActivityInfo.qml:34
 #: activities/grammar_classes/ActivityInfo.qml:34
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Backspace: delete the last digit in your answer"
 msgctxt "ActivityInfo|"
 msgid "Backspace: select the previous word"
-msgstr "Baksteg: ta bort sista siffran i svaret"
+msgstr "Baksteg: välj föregående ord"
 
 #: activities/grammar_analysis/grammar_analysis.js:38
 msgctxt "grammar_analysis|"
 msgid "Grammatical analysis"
-msgstr ""
+msgstr "Grammatikanalys"
 
 #: activities/grammar_analysis/grammar_analysis.js:39
 #: activities/grammar_analysis/grammar_analysis.js:49
 msgctxt "grammar_analysis|"
 msgid "Learn to identify grammatical classes."
-msgstr ""
+msgstr "Lär dig att identifiera grammatiska ordklasser."
 
 #: activities/grammar_analysis/grammar_analysis.js:40
 msgctxt "grammar_analysis|"
 msgid "Find all the words corresponding to the requested grammatical classes."
-msgstr ""
+msgstr "Hitta alla ord som motsvarar de begärda grammatiska ordklasserna."
 
 #: activities/grammar_analysis/grammar_analysis.js:41
 msgctxt "grammar_analysis|"
@@ -13859,21 +13863,23 @@ msgid ""
 "Select a grammatical class from the list, then select the box under a word "
 "and assign it the class."
 msgstr ""
+"Välj en grammatisk ordklass i listan, välj därefter rutan under ett ord och "
+"tilldela ordklassen."
 
 #: activities/grammar_analysis/grammar_analysis.js:42
 msgctxt "grammar_analysis|"
 msgid "Leave the box blank if no class matches."
-msgstr ""
+msgstr "Lämna rutan tom om ingen ordklass stämmer."
 
 #: activities/grammar_analysis/grammar_analysis.js:48
 msgctxt "grammar_analysis|"
 msgid "Grammatical classes"
-msgstr ""
+msgstr "Grammatiska ordklasser"
 
 #: activities/grammar_analysis/grammar_analysis.js:50
 msgctxt "grammar_analysis|"
 msgid "Find all the words corresponding to the requested grammatical class."
-msgstr ""
+msgstr "Hitta alla ord som motsvarar den begärda grammatiska ordklassen."
 
 #: activities/grammar_analysis/grammar_analysis.js:51
 msgctxt "grammar_analysis|"
@@ -13881,31 +13887,30 @@ msgid ""
 "Select the grammatical class from the list, then select the box under a word "
 "and assign it the class."
 msgstr ""
+"Välj den grammatisk ordklassen i listan, välj därefter rutan under ett ord "
+"och tilldela ordklassen."
 
 #: activities/grammar_analysis/grammar_analysis.js:52
 msgctxt "grammar_analysis|"
 msgid "Leave the box blank if the class doesn't match."
-msgstr ""
+msgstr "Lämna rutan tom om ordklassen inte stämmer."
 
 #: activities/grammar_analysis/grammar_analysis.js:407
-#, fuzzy
-#| msgctxt "Admin|"
-#| msgid "empty"
 msgctxt "grammar_analysis|"
 msgid "Empty"
-msgstr "tom"
+msgstr "Tom"
 
 #. Activity title
 #: activities/grammar_classes/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
 msgid "Grammatical classes"
-msgstr ""
+msgstr "Grammatiska ordklasser"
 
 #. Help manual
 #: activities/grammar_classes/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Assign the requested grammatical class to the corresponding words."
-msgstr ""
+msgstr "Tilldela begärd grammatisk ordklass till motsvarande ord."
 
 #: activities/grammar_classes/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
@@ -13913,11 +13918,13 @@ msgid ""
 "Select the grammatical class from the list, then select the box under a word "
 "and assign it the class."
 msgstr ""
+"Välj den grammatisk ordklassen i listan, välj därefter rutan under ett ord "
+"och tilldela ordklassen."
 
 #: activities/grammar_classes/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid "Leave the box blank if the class doesn't match."
-msgstr ""
+msgstr "Lämna rutan tom om ordklassen inte stämmer."
 
 #: activities/graph-coloring/ActivityConfig.qml:21
 #: activities/superbrain/ActivityConfig.qml:21
@@ -18027,12 +18034,9 @@ msgid "Copyright: %1"
 msgstr "Copyright: %1"
 
 #: activities/menu/ConfigurationItem.qml:48
-#, fuzzy
-#| msgctxt "ConfigurationItem|"
-#| msgid "Difficulty filter:"
 msgctxt "ConfigurationItem|"
 msgid "Difficulty filter"
-msgstr "Svårighetsfilter:"
+msgstr "Svårighetsfilter"
 
 #: activities/menu/ConfigurationItem.qml:108
 msgctxt "ConfigurationItem|"
@@ -18662,7 +18666,7 @@ msgstr "Upptäck den internationella Morsekoden"
 #: activities/morse_code/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Learn how to communicate with the International Morse code."
-msgstr ""
+msgstr "Lär dig hur man kommunicerar med den internationella Morsekoden."
 
 #. Help goal
 #: activities/morse_code/ActivityInfo.qml:23
@@ -18670,6 +18674,8 @@ msgctxt "ActivityInfo|"
 msgid ""
 "You have to send and receive letters and digits in International Morse code."
 msgstr ""
+"Du ska skicka och ta emot bokstäver och siffror med den internationella "
+"Morsekoden."
 
 #. Help prerequisite
 #: activities/morse_code/ActivityInfo.qml:25
@@ -18686,11 +18692,15 @@ msgid ""
 "have a look at the translation map which contains the code for all the "
 "letters and digits."
 msgstr ""
+"Du blir antingen ombedd att skicka ett meddelande med Morsekod, eller "
+"konvertera det mottagna meddelandet på Morsekod till bokstäver eller "
+"siffror. För att lära dig Morsekod, kan du ta en titt på "
+"översättningsdiagrammet som innehåller koden för alla bokstäver och siffror."
 
 #: activities/morse_code/FirstScreen.qml:25
 msgctxt "FirstScreen|"
 msgid "Exploring Morse Code"
-msgstr ""
+msgstr "Utforska Morsekod"
 
 #: activities/morse_code/FirstScreen.qml:64
 msgctxt "FirstScreen|"
@@ -18698,6 +18708,8 @@ msgid ""
 "Morse code was developed by Samuel Morse. It is a method of transmitting "
 "text information as a series of on-off tones, lights, or clicks."
 msgstr ""
+"Morsekod utvecklades av Samuel Morse. Det är ett sätt att överföra "
+"textinformation som en följd av toner, ljussignaler eller klick."
 
 #: activities/morse_code/FirstScreen.qml:65
 msgctxt "FirstScreen|"
@@ -18710,11 +18722,18 @@ msgid ""
 "For example, the most common letter in English, the letter \"E\", has the "
 "shortest code, a single dot."
 msgstr ""
+"Varje symbol på Morsekod representerar antingen en textsymbol (bokstav eller "
+"siffra) eller ett skiljetecken, och representeras med en unik följd av "
+"punkter och streck. Längden på ett streck är tre gånger längden på en punkt. "
+"För att öka kommunikationshastigheten, konstruerades koden så att de "
+"vanligaste bokstäverna har den kortare följden av punkter och streck.\n"
+"Exempelvis har den vanligaste bokstaven på engelska, bokstaven \"E\", den "
+"kortaste koden, en enda punkt."
 
 #: activities/morse_code/FirstScreen.qml:90
 msgctxt "FirstScreen|"
 msgid "When you are ready, click on Tux and we will converse in Morse code."
-msgstr ""
+msgstr "När du är redo, klicka på Tux så samtalar vi med Morsekod."
 
 #: activities/morse_code/MorseCode.qml:349
 #, qt-format
@@ -18743,7 +18762,7 @@ msgstr "Bokstäver."
 #, qt-format
 msgctxt "Data|"
 msgid "Send the message %1 in Morse code."
-msgstr ""
+msgstr "Skicka meddelandet %1 med Morsekod."
 
 #: activities/morse_code/resource/1/Data.qml:23
 #: activities/morse_code/resource/1/Data.qml:39
@@ -18760,12 +18779,12 @@ msgstr "Konvertera meddelandet %1 till bokstäver."
 #: activities/morse_code/resource/1/Data.qml:76
 msgctxt "Data|"
 msgid "Find the corresponding letter."
-msgstr ""
+msgstr "Finn motsvarande bokstav."
 
 #: activities/morse_code/resource/2/Data.qml:13
 msgctxt "Data|"
 msgid "Digits."
-msgstr ""
+msgstr "Siffror."
 
 #: activities/morse_code/resource/2/Data.qml:23
 #: activities/morse_code/resource/2/Data.qml:39
@@ -18788,7 +18807,7 @@ msgstr "Ord."
 #: activities/morse_code/resource/3/Data.qml:24
 msgctxt "Data|"
 msgid "Write the Morse code you hear."
-msgstr ""
+msgstr "Skriv ut Morsekoden du hör."
 
 #: activities/morse_code/resource/3/Data.qml:34
 msgctxt "Data|"
@@ -24555,18 +24574,13 @@ msgstr "Att göra färdigt pusslet kräver tålamod och logiskt tänkande."
 
 #. Help manual
 #: activities/sudoku/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Select a number or a symbol on the left and click on its target position. "
-#| "GCompris will not let you enter invalid answer."
 msgctxt "ActivityInfo|"
 msgid ""
 "Select a number or a symbol in the list and click on its target position. "
 "GCompris will not let you enter an invalid answer."
 msgstr ""
-"Välj ett tal eller en symbol till vänster och klicka på platsen den ska "
-"till. GCompris låter dig inte lägga till ogiltiga svar."
+"Välj ett tal eller en symbol i listan och klicka på platsen den ska till. "
+"GCompris låter dig inte lägga till ogiltiga svar."
 
 #: activities/sudoku/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -24769,25 +24783,25 @@ msgstr "Maximalt värde: 500000."
 #: activities/tens_complement_find/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Find ten's complement"
-msgstr ""
+msgstr "Finn tiokomplement"
 
 #. Help title
 #: activities/tens_complement_find/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Find the ten's complement of each number."
-msgstr ""
+msgstr "Finn varje tals tiokomplement."
 
 #. Help goal
 #: activities/tens_complement_find/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Learn to find ten's complement."
-msgstr ""
+msgstr "Lär dig att finna tiokomplement."
 
 #. Help prerequisite
 #: activities/tens_complement_find/ActivityInfo.qml:21
 msgctxt "ActivityInfo|"
 msgid "Numbers from 1 to 10 and additions."
-msgstr ""
+msgstr "Tal från 1 till 10 och additioner."
 
 #: activities/tens_complement_find/ActivityInfo.qml:23
 #: activities/tens_complement_use/ActivityInfo.qml:24
@@ -24798,6 +24812,10 @@ msgid ""
 "corresponding lines. To correct the errors, click on the wrong numbers to "
 "remove them and repeat the previous steps."
 msgstr ""
+"När alla rader är färdiga, använd knappen Ok för att kontrollera svaren. Om "
+"några svar är felaktiga, visas en korsikon på motsvarande rader. För att "
+"rätta felen, klicka på de felaktiga talen för att ta bort dem och upprepa "
+"föregående steg."
 
 #. Help manual
 #: activities/tens_complement_find/ActivityInfo.qml:23
@@ -24806,33 +24824,35 @@ msgid ""
 "Create pairs of numbers equal to ten. Select a number in the list, then "
 "select an empty spot of an operation to move the selected number there."
 msgstr ""
+"Skapa par av tal som är lika med tio. Välj ett tal i listan, och välj sedan "
+"ett tomt utrymme för en operation för att flytta det valda talet dit."
 
 #: activities/tens_complement_find/resource/1/Data.qml:25
 msgctxt "Data|"
 msgid "First number from 1 to 4."
-msgstr ""
+msgstr "Första talet från 1 till 4."
 
 #: activities/tens_complement_find/resource/2/Data.qml:9
 msgctxt "Data|"
 msgid "First number from 5 to 9."
-msgstr ""
+msgstr "Första talet från 5 till 9."
 
 #: activities/tens_complement_find/resource/4/Data.qml:9
 msgctxt "Data|"
 msgid "Find both numbers."
-msgstr ""
+msgstr "Finn båda talen."
 
 #. Activity title
 #: activities/tens_complement_swap/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Swap ten's complement"
-msgstr ""
+msgstr "Ordna om tiokomplement"
 
 #. Help title
 #: activities/tens_complement_swap/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Swap the numbers to create pairs equal to ten."
-msgstr ""
+msgstr "Ordna om talen för att skapa par lika med tio."
 
 #. Help goal
 #: activities/tens_complement_swap/ActivityInfo.qml:19
@@ -24841,6 +24861,8 @@ msgid ""
 "Learn to use ten's complement to optimize the order of numbers in an "
 "operation."
 msgstr ""
+"Lär dig hur man använder tiokomplement för att optimera ordningen för tal i "
+"en operation."
 
 #. Help prerequisite
 #: activities/tens_complement_swap/ActivityInfo.qml:21
@@ -24858,39 +24880,44 @@ msgid ""
 "the answers. If some answers are incorrect, a cross icon will appear on the "
 "corresponding lines. Correct the errors, then press the OK button again."
 msgstr ""
+"Skapa ett talpar lika med tio inom varje parentespar. Välj ett tal, och välj "
+"därefter ett annat tal i samma operation för att byta plats på dem. När alla "
+"rader är färdiga, använd knappen Ok för att kontrollera svaren. Om vissa "
+"svar är felaktiga visas en korsikon på motsvarande rader. Rätta felen, och "
+"använd sedan knappen Ok igen."
 
 #: activities/tens_complement_swap/resource/1/Data.qml:36
 msgctxt "Data|"
 msgid "2 pairs to make from 4 numbers."
-msgstr ""
+msgstr "2 par att skapa från 4 tal."
 
 #: activities/tens_complement_swap/resource/2/Data.qml:9
 msgctxt "Data|"
 msgid "2 pairs to make from 5 numbers."
-msgstr ""
+msgstr "2 par att skapa från 5 tal."
 
 #: activities/tens_complement_swap/resource/3/Data.qml:9
 msgctxt "Data|"
 msgid "3 pairs to make from 6 numbers."
-msgstr ""
+msgstr "3 par att skapa från 6 tal."
 
 #. Activity title
 #: activities/tens_complement_use/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Use ten's complement"
-msgstr ""
+msgstr "Använd tiokomplement"
 
 #. Help title
 #: activities/tens_complement_use/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Use a ten's complement to simplify the operation."
-msgstr ""
+msgstr "Använd tiokomplement för att förenkla operationen."
 
 #. Help goal
 #: activities/tens_complement_use/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Learn a practical use of ten's complement."
-msgstr ""
+msgstr "Lär dig en praktisk användning av tiokomplement."
 
 #. Help prerequisite
 #: activities/tens_complement_use/ActivityInfo.qml:21
@@ -24906,6 +24933,9 @@ msgid ""
 "parentheses. Select a number in the list, then select an empty spot of an "
 "operation to move the selected number there."
 msgstr ""
+"Dela upp additionerna för att skapa par av tal som är lika med tio inom "
+"varje parentespar. Välj ett tal i listan, och välj sedan ett tomt utrymme "
+"för en operation för att flytta det valda talet dit."
 
 #: activities/tens_complement_use/resource/1/Data.qml:43
 msgctxt "Data|"
@@ -25168,20 +25198,14 @@ msgid "Type the complete word as it falls, before it reaches the ground."
 msgstr "Skriv hela ordet under tiden det faller, innan det når marken."
 
 #: core/ChangeLog.qml:30
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translation added for Azerbaijani"
 msgctxt "ChangeLog|"
 msgid "Translations added for Arabic and Esperanto"
-msgstr "Översättning tillagd för azerbajdzjanska"
+msgstr "Översättning tillagd för arabiska och esperanto"
 
 #: core/ChangeLog.qml:31 core/ChangeLog.qml:38
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translation updated for Russian"
 msgctxt "ChangeLog|"
 msgid "Many translation updates"
-msgstr "Översättning uppdaterad för ryska"
+msgstr "Många översättningsuppdateringar"
 
 #: core/ChangeLog.qml:32 core/ChangeLog.qml:39 core/ChangeLog.qml:52
 #: core/ChangeLog.qml:70 core/ChangeLog.qml:85 core/ChangeLog.qml:90
@@ -25202,11 +25226,13 @@ msgid ""
 "New command-line option (--difficulty {value|min-max}) to start GCompris at "
 "specific difficulty"
 msgstr ""
+"Ny kommandoradsväljare (--difficulty {värde|min-max}) för starta GCompris "
+"med en specifik svårighetsnivå"
 
 #: core/ChangeLog.qml:44
 msgctxt "ChangeLog|"
 msgid "Fix issue in comparator activity"
-msgstr ""
+msgstr "Rätta problem i jämförelseaktivitet"
 
 #: core/ChangeLog.qml:48
 msgctxt "ChangeLog|"
@@ -25224,6 +25250,8 @@ msgid ""
 "New command-line option to list all the activities and start on a specific "
 "one"
 msgstr ""
+"Nya kommandoradsväljare för att lista alla aktiviteter och starta med en "
+"specifik"
 
 #: core/ChangeLog.qml:51 core/ChangeLog.qml:86 core/ChangeLog.qml:89
 #: core/ChangeLog.qml:95
@@ -26030,6 +26058,8 @@ msgid ""
 "Specify the range of activity difficulty to display for the session. Either "
 "a single value (2), or a range (3-6). Values must be between 1 and 6."
 msgstr ""
+"Ange aktivitetens svårighetsintervall att visa i sessionen. Antingen ett "
+"enda värde (2), eller ett intervall (3-6). Värden måste vara mellan 1 och 6."
 
 #: core/main.qml:273
 msgctxt "main|"

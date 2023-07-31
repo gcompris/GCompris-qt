@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
-"PO-Revision-Date: 2023-07-23 12:28\n"
+"PO-Revision-Date: 2023-07-30 07:09\n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
@@ -13053,12 +13053,10 @@ msgstr ""
 
 #. %1 is the number to find, %2 and %3 are two multiples of the number, %4 is a wrong number and %5 is the number to find.
 #: activities/gnumch-equality/Warning.qml:79
-#, fuzzy, qt-format
-#| msgctxt "Warning|"
-#| msgid "but %1 is not a multiple of %2."
+#, qt-format
 msgctxt "Warning|"
 msgid "Multiples of %1 include %2 or %3 but %4 is not a multiple of %5."
-msgstr "但是 %1 不是 %2 的倍数。"
+msgstr ""
 
 #. the first argument corresponds to a number and the second argument corresponds to its divisors formatted as an unordered html format (<ul><li>number 1</li>...</ul>
 #: activities/gnumch-equality/Warning.qml:94
@@ -24645,19 +24643,3 @@ msgstr "跳过"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "开始"
-
-#~ msgctxt "Warning|"
-#~ msgid "%1 is divisible by %2"
-#~ msgstr "%1 可被 %2 整除"
-
-#~ msgctxt "Warning|"
-#~ msgid "and"
-#~ msgstr "和"
-
-#~ msgctxt "Warning|"
-#~ msgid "Multiples of %1 include %2, "
-#~ msgstr "%1 的倍数包括 %2， "
-
-#~ msgctxt "Warning|"
-#~ msgid "and %1 are the divisors of %2."
-#~ msgstr "和 %1 是 %2 的除数。"
