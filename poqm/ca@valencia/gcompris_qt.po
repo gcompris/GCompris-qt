@@ -2437,14 +2437,14 @@ msgctxt "ActivityConfig|"
 msgid "Start the activity to load your levels"
 msgstr "Inicia l'activitat per a carregar els teus nivells"
 
-# skip-rule: kct-box
+# skip-rule: kct-box, t-sc-box
 #. Activity title
 #: activities/balancebox/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
 msgid "Balance box"
 msgstr "Inclina la capsa"
 
-# skip-rule: kct-box
+# skip-rule: kct-box, t-sc-box
 #. Help title
 #: activities/balancebox/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
@@ -25869,7 +25869,7 @@ msgctxt "ChangeLog|"
 msgid "Translation added for Basque, Hungarian and Malayalam."
 msgstr "S'han afegit les traduccions per al basc, l'hongarés i el malaiàlam."
 
-# skip-rule: kct-box
+# skip-rule: kct-box, t-sc-box
 #: core/ChangeLog.qml:115
 msgctxt "ChangeLog|"
 msgid ""
