@@ -1,6 +1,6 @@
 #!/bin/sh
 # Bump the version in multiple files such as CMakeLists.txt
-# If option "-r <date>" is set, it will also update the publiccode.yml and org.kde.gcompris.appdata.xml files.
+# If option "-r <date>" is set, it will also update the publiccode.yml, org.kde.gcompris.appdata.xml and docs/docbook/index.docbook files.
 # There is no check at all if the release already exists or if the values are correct.
 #
 # SPDX-FileCopyrightText: 2023 Johnny Jazeix <jazeix@gmail.com>
@@ -35,10 +35,6 @@ while [[ $# -gt 0 ]]; do
     -h|--help)
         usage;
         exit 0
-      ;;
-    --default)
-      DEFAULT=YES
-      shift # past argument
       ;;
     -*|--*)
       echo "Unknown option $1"
@@ -79,4 +75,9 @@ then
     # Add a new release in org.kde.gcompris.appdata.xml with the new date and release
     sed -i -e "/<releases>/a\ \ \ \ <release version=\"${major}.${minor}\" date=\"$DATE\"/>" org.kde.gcompris.appdata.xml
     git add org.kde.gcompris.appdata.xml && git commit -m "appdata, add ${major}.${minor} release"
+
+    # Update docs/docbook/index.docbook
+    sed -i "s=<date>[0-9\-]\+</date>=<date>$DATE</date>=" docs/docbook/index.docbook
+    sed -i "s=<releaseinfo>[0-9\.]\+</releaseinfo>=<releaseinfo>${major}.${minor}</releaseinfo>=" docs/docbook/index.docbook
+    git add docs/docbook/index.docbook && git commit -m "docs, bump version to ${major}.${minor}"
 fi
