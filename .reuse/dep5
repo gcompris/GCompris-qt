@@ -1982,6 +1982,10 @@ Files: src/activities/fractions_*/*.svg
 Copyright: 2022 Timothée Giet
 License: CC-BY-SA-4.0
 
+Files: src/activities/frieze/*.svg src/activities/frieze/resources/svg/*.svg
+Copyright: 2023 Bruno Anselme
+License: CC-BY-SA-4.0
+
 Files: src/activities/geo-country/geo-country.svg
 Copyright: 2021 Timothée Giet
 License: CC-BY-SA-4.0

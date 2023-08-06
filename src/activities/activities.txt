@@ -63,6 +63,7 @@ followline
 football
 fractions_create
 fractions_find
+frieze
 geo-country
 geography
 gletters
