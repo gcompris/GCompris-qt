@@ -60,13 +60,13 @@ Don't forget to include this last date.
 Please respect the format of the date (YYYY-MM-DD),it is used by scripts.
 -->
 <date
->25 de febrer de 2023</date>
+>6 de juny de 2023</date>
 
 <!--version information of the application and kde this documentation is valid for.
 for example 'xx.yy.zz'
 -->
 <releaseinfo
->3.1</releaseinfo>
+>3.3</releaseinfo>
 
 <!-- Abstract about this handbook -->
 
