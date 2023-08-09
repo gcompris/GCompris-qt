@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2014-12-25 01:10+0000\n"
-"PO-Revision-Date: 2023-07-02 11:03+0200\n"
+"PO-Revision-Date: 2023-08-08 17:29+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
@@ -23,7 +23,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Accelerator-Marker: &\n"
-"X-Generator: Lokalize 22.12.3\n"
+"X-Generator: Lokalize 23.04.3\n"
 "X-Qt-Contexts: true\n"
 
 #. Activity title
@@ -1965,7 +1965,7 @@ msgid ""
 " A red LED converts electrical energy into red light energy under particular "
 "conditions."
 msgstr ""
-"Sota condicions particulars, un LED vermell converteix l'energia elèctrica "
+" Sota condicions particulars, un LED vermell converteix l'energia elèctrica "
 "en energia de llum vermella."
 
 # skip-rule: ff-current
@@ -14694,7 +14694,7 @@ msgid ""
 "Build the same tower in the empty area as the one you see on the right-hand "
 "side"
 msgstr ""
-"Construeix a l'àrea buida la mateixa torre com la que veus al costat dret."
+"Construeix a l'àrea buida la mateixa torre com la que veus al costat dret"
 
 #. Activity title
 #: activities/hexagon/ActivityInfo.qml:15
@@ -14766,7 +14766,7 @@ msgstr ""
 #: activities/imagename/resource/board/board1_0.qml:14
 msgctxt "board1_0|"
 msgid "Drag and Drop each item above its name"
-msgstr "Arrossegueu i deixeu anar cada element sobre el seu nom."
+msgstr "Arrossegueu i deixeu anar cada element sobre el seu nom"
 
 #: activities/imagename/resource/board/board1_0.qml:59
 msgctxt "board1_0|"
@@ -15884,8 +15884,7 @@ msgstr ""
 "Es mostra una resta amb dos nombres decimals. El primer nombre de la resta "
 "es representa amb barres. Cada barra representa una unitat i cada quadre a "
 "la barra representa una dècima part d'aquesta unitat. Feu clic sobre els "
-"quadrats per a restar el segon número i representar el resultat de "
-"l'operació."
+"quadrats per a restar el segon número i representar el resultat de l'operació"
 
 #: activities/learn_decimals_subtractions/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -22176,7 +22175,7 @@ msgstr ""
 "Totes les desenes, excepte la 40 i 90, es construeixen amb sumes de X i L:\n"
 "X, XX, XXX, L, LX, LXX, LXXX.\n"
 "Les desenes 40 i 90 es construeixen emprant diferències:\n"
-"XL (10 extret des de 50) i XC (10 extret des de 100). "
+"XL (10 extret des de 50) i XC (10 extret des de 100)."
 
 #: activities/roman_numerals/RomanNumerals.qml:114
 #: activities/roman_numerals/RomanNumerals.qml:120
@@ -25621,7 +25620,7 @@ msgstr "Escriviu la paraula completa mentre cau, abans que arribi a terra."
 #: core/ChangeLog.qml:30
 msgctxt "ChangeLog|"
 msgid "Translations added for Arabic and Esperanto"
-msgstr "S'han afegit les traduccions a l'àrab i l'esperanto."
+msgstr "S'han afegit les traduccions a l'àrab i l'esperanto"
 
 #: core/ChangeLog.qml:31 core/ChangeLog.qml:38
 msgctxt "ChangeLog|"
@@ -25742,12 +25741,12 @@ msgstr "Veus noves per al noruec nynorsk"
 #: core/ChangeLog.qml:76
 msgctxt "ChangeLog|"
 msgid "Translations added for Breton, Czech and Macedonian"
-msgstr "S'han afegit les traduccions per al bretó, txec i macedoni."
+msgstr "S'han afegit les traduccions per al bretó, txec i macedoni"
 
 #: core/ChangeLog.qml:81
 msgctxt "ChangeLog|"
 msgid "Translation added for Azerbaijani"
-msgstr "S'han afegit les traduccions per a l'àzeri."
+msgstr "S'han afegit les traduccions per a l'àzeri"
 
 #: core/ChangeLog.qml:82
 msgctxt "ChangeLog|"
@@ -26012,7 +26011,7 @@ msgid "translator-credits"
 msgstr ""
 "<br/>Xavier Conde Rueda &lt;xavi.conde AT gmail DOT com&gt; (2003-2007),<br/"
 ">Francesc Vilches &lt;francesc.vilches AT gmail DOT com&gt; (2007-2008)<br/"
-">i Antoni Bella &lt;antonibella5 AT yahoo DOT com&gt; (2015-2023)."
+">i Antoni Bella &lt;antonibella5 AT yahoo DOT com&gt; (2015-2023)"
 
 #: core/DialogAbout.qml:55
 #, qt-format
