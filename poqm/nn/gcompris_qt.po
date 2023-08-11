@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_qt\n"
-"PO-Revision-Date: 2023-07-28 19:23+0200\n"
+"PO-Revision-Date: 2023-08-10 18:51+0200\n"
 "Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
 "Language-Team: Norwegian Nynorsk <l10n-no@lister.huftis.org>\n"
 "Language: nn\n"
@@ -13902,7 +13902,7 @@ msgstr ""
 #: activities/grammar_analysis/grammar_analysis.js:407
 msgctxt "grammar_analysis|"
 msgid "Empty"
-msgstr ""
+msgstr "Tom"
 
 #. Activity title
 #: activities/grammar_classes/ActivityInfo.qml:18
@@ -18053,7 +18053,7 @@ msgstr "Opphavsrett: %1"
 #: activities/menu/ConfigurationItem.qml:48
 msgctxt "ConfigurationItem|"
 msgid "Difficulty filter"
-msgstr ""
+msgstr "Vanskegradar"
 
 #: activities/menu/ConfigurationItem.qml:108
 msgctxt "ConfigurationItem|"
@@ -24642,6 +24642,8 @@ msgid ""
 "Select a number or a symbol in the list and click on its target position. "
 "GCompris will not let you enter an invalid answer."
 msgstr ""
+"Vel eit siffer eller ein figur til venstre, og trykk der du vil plassera "
+"sifferet/talet. GCompris vil ikkje la deg plassera noko på ein ugyldig plass."
 
 #: activities/sudoku/resource/1/Data.qml:13
 msgctxt "Data|"
