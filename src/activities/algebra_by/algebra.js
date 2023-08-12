@@ -48,19 +48,40 @@ function initLevel() {
     items.okButton.visible = false
     items.score.currentSubLevel = 1
     subLevelData = []
-    if(currentLevel === maxLevel)
-        initLastLevel();
-    else {
+
+    /**
+     It exists two types of levels:
+      - the operation table where all operands are defined in the dataset
+      - the generated question, where the dataset specify constraits
+     Leveltype is determined by checking what is the inner structure of the dataset
+    */
+    if("operands" in dataset[currentLevel]) {
         items.score.numberOfSubLevels = dataset[currentLevel].operands.length;
         for(var i = 0; i < items.score.numberOfSubLevels; i++)
             subLevelData.push([dataset[currentLevel].operands[i].first, dataset[currentLevel].operands[i].second])
     }
+    else {
+        // Generate random operations
+        for(var i = 0; i < 10; i++)
+        {
+            var minOperandValue = dataset[currentLevel].min;
+            var maxOperandValue = dataset[currentLevel].max;
+            var leftOperand = randomInRange(minOperandValue, maxOperandValue)
+            var rightOperand = randomInRange(minOperandValue, maxOperandValue)
+            subLevelData.push([leftOperand, rightOperand])
+        }
+    }
+
     subLevelData = Core.shuffle(subLevelData)
     calculateOperands()
     items.iAmReady.visible = true
     items.firstOp.visible = false
     items.secondOp.visible = false
     items.balloon.stopMoving()
+}
+
+function randomInRange(min, max) {
+    return Math.floor(minOperandValue + Math.random() * (maxOperandValue - minOperandValue + 1))
 }
 
 function circularShiftElements() {
@@ -71,7 +92,7 @@ function circularShiftElements() {
 }
 
 function nextLevel() {
-    if(maxLevel  < ++currentLevel) {
+    if(maxLevel === ++currentLevel) {
         currentLevel = 0
     }
     initLevel();
@@ -79,7 +100,7 @@ function nextLevel() {
 
 function previousLevel() {
     if(--currentLevel < 0) {
-        currentLevel = maxLevel
+        currentLevel = maxLevel - 1
     }
     initLevel();
 }
