@@ -10,13 +10,13 @@
 import GCompris 1.0
 
 Data {
-    objective: qsTr("Additions with operands up to 10.")
-    difficulty: 5
+    objective: qsTr("Additions resulting up to 100.")
+    difficulty: 6
     data: [
         {
             "min": 0,
-            "max": 10,
-            "limit": 0,
+            "max": 100,
+            "limit": 100
         }
     ]
 }

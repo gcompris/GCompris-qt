@@ -66,8 +66,16 @@ function initLevel() {
         {
             var minOperandValue = dataset[currentLevel].min;
             var maxOperandValue = dataset[currentLevel].max;
-            var leftOperand = randomInRange(minOperandValue, maxOperandValue)
-            var rightOperand = randomInRange(minOperandValue, maxOperandValue)
+            var limit = dataset[currentLevel].limit;
+
+            var leftOperand = 0;
+            var rightOperand = 0;
+            do
+            {
+                leftOperand = randomInRange(minOperandValue, maxOperandValue);
+                rightOperand = randomInRange(minOperandValue, maxOperandValue);
+                console.log(getAnswer(leftOperand, rightOperand) + " VS limit: " + limit)
+            } while(getAnswer(leftOperand, rightOperand) > limit);
             subLevelData.push([leftOperand, rightOperand])
         }
     }
@@ -116,26 +124,26 @@ function calculateOperands()
 }
 
 // Return the expected answer
-function getAnswer() {
+function getAnswer(val1, val2) {
     switch(operand.text)
     {
     case OperandsEnum.TIMES_SIGN:
-        return (firstOperandVal * secondOperandVal)
+        return (val1 * val2)
 
     case OperandsEnum.PLUS_SIGN:
-        return (firstOperandVal + secondOperandVal)
+        return (val1 + val2)
 
     case OperandsEnum.MINUS_SIGN:
-        return (firstOperandVal - secondOperandVal)
+        return (val1 - val2)
 
     case OperandsEnum.DIVIDE_SIGN:
-        return (firstOperandVal / secondOperandVal)
+        return (val1 / val2)
     }
 }
 
 function validateAnswer(screenAnswer)
 {
-    return (getAnswer() === screenAnswer)
+    return (getAnswer(firstOperandVal, secondOperandVal) === screenAnswer)
 }
 
 function run() {
