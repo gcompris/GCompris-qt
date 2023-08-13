@@ -28,7 +28,7 @@ var OperandsEnum = {
 
 
 function start(items_, operand_, speedSetting_) {
-    operand   = operand_
+    operand = operand_
     items = items_
     speedSetting = speedSetting_
     currentLevel = 0
@@ -86,16 +86,15 @@ function initLevel() {
             subLevelData.push([dataset[currentLevel].operands[i].first, dataset[currentLevel].operands[i].second])
     }
     else {
-        items.score.numberOfSubLevels= 10
         // Generate random operations
+        var minOperandValue = dataset[currentLevel].min
+        var maxOperandValue = dataset[currentLevel].max
+        var limit = dataset[currentLevel].limit
+        items.score.numberOfSubLevels = 10;
         for(var i = 0; i < items.score.numberOfSubLevels; i++)
         {
-            var minOperandValue = dataset[currentLevel].min
-            var maxOperandValue = dataset[currentLevel].max
-            var limit = dataset[currentLevel].limit
-
-            var leftOperand = 0
-            var rightOperand = 0
+            var leftOperand = 0;
+            var rightOperand = 0;
             do
             {
                 [leftOperand, rightOperand] = getOperands(minOperandValue, maxOperandValue);
@@ -179,7 +178,7 @@ function run() {
     items.secondOp.visible = true
     items.okButton.visible = true
     items.numpad.answerFlag = false
-    items.result = getAnswer()
+    items.result = getAnswer(firstOperandVal, secondOperandVal)
     items.balloon.startMoving(100000 / speedSetting)
 }
 

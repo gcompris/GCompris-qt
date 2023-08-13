@@ -53,8 +53,8 @@ ActivityBase {
         }
 
         onStart: {
-            Activity.start(items, operand, speedSetting);
             operand.text = Activity.operandText;
+            Activity.start(items, operand, speedSetting);
         }
 
         onStop: Activity.stop()
