@@ -86,8 +86,9 @@ function initLevel() {
             subLevelData.push([dataset[currentLevel].operands[i].first, dataset[currentLevel].operands[i].second])
     }
     else {
+        items.score.numberOfSubLevels= 10
         // Generate random operations
-        for(var i = 0; i < 10; i++)
+        for(var i = 0; i < items.score.numberOfSubLevels; i++)
         {
             var minOperandValue = dataset[currentLevel].min
             var maxOperandValue = dataset[currentLevel].max
