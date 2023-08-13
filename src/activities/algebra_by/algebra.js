@@ -27,7 +27,7 @@ var OperandsEnum = {
 
 
 function start(items_, operand_, speedSetting_) {
-    operand   = operand_
+    operand = operand_
     items = items_
     speedSetting = speedSetting_
     dataset = items.levels
@@ -78,21 +78,21 @@ function initLevel() {
       - the generated question, where the dataset specify constraits
      Leveltype is determined by checking what is the inner structure of the dataset
     */
-    if("operands" in dataset[currentLevel]) {
+    if("operands" in dataset[items.currentLevel]) {
         items.score.numberOfSubLevels = dataset[items.currentLevel].operands.length;
         for(var i = 0; i < items.score.numberOfSubLevels; i++)
             subLevelData.push([dataset[items.currentLevel].operands[i].first, dataset[items.currentLevel].operands[i].second])
     }
     else {
         // Generate random operations
-        for(var i = 0; i < 10; i++)
+        var minOperandValue = dataset[items.currentLevel].min
+        var maxOperandValue = dataset[items.currentLevel].max
+        var limit = dataset[items.currentLevel].limit
+        items.score.numberOfSubLevels = 10;
+        for(var i = 0; i < items.score.numberOfSubLevels; i++)
         {
-            var minOperandValue = dataset[currentLevel].min
-            var maxOperandValue = dataset[currentLevel].max
-            var limit = dataset[currentLevel].limit
-
-            var leftOperand = 0
-            var rightOperand = 0
+            var leftOperand = 0;
+            var rightOperand = 0;
             do
             {
                 [leftOperand, rightOperand] = getOperands(minOperandValue, maxOperandValue);
@@ -132,9 +132,8 @@ function previousLevel() {
 
 function calculateOperands()
 {
-
-        firstOperandVal = subLevelData[0][0]
-        secondOperandVal = subLevelData[0][1]
+    firstOperandVal = subLevelData[0][0]
+    secondOperandVal = subLevelData[0][1]
 
     items.firstOp.text = firstOperandVal
     items.secondOp.text = secondOperandVal
@@ -172,7 +171,7 @@ function run() {
     items.secondOp.visible = true
     items.okButton.visible = true
     items.numpad.answerFlag = false
-    items.result = getAnswer()
+    items.result = getAnswer(firstOperandVal, secondOperandVal)
     items.balloon.startMoving(100000 / speedSetting)
 }
 
