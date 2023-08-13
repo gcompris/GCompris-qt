@@ -1,6 +1,6 @@
 /* GCompris - Data.qml
  *
- * SPDX-FileCopyrightText: 2020 Shubham Mishra <shivam828787@gmail.com>
+ * SPDX-FileCopyrightText: 2023 Alexandre Laurent <littlewhite.dev@gmail.com>
  *
  * Authors:
  *   Shubham Mishra <shivam828787@gmail.com>

@@ -42,6 +42,31 @@ function stop() {
     items.timer.stop()
 }
 
+// get appropriate operands depending on operator
+function getOperands(min, max)
+{
+    switch(operand.text)
+    {
+    case OperandsEnum.TIMES_SIGN:
+        return [randomInRange(min,max), randomInRange(min,max)]
+
+    case OperandsEnum.PLUS_SIGN:
+        return [randomInRange(min,max), randomInRange(min,max)]
+
+    case OperandsEnum.MINUS_SIGN:
+        // Left operand is always greater than right operand
+        var minusLeftOperand = randomInRange(min, max)
+        var minusRightOperand = randomInRange(min, minusLeftOperand)
+        return [minusLeftOperand, minusRightOperand]
+
+    case OperandsEnum.DIVIDE_SIGN:
+        // Left operand is a multiple of right operand
+        var divideRightOperand = randomInRange(min, max)
+        var divideLeftOperand = divideRightOperand * randomInRange(min, max)
+        return [divideLeftOperand, divideRightOperand]
+    }
+}
+
 function initLevel() {
     items.bar.level = currentLevel + 1
     items.score.visible = false
@@ -64,18 +89,16 @@ function initLevel() {
         // Generate random operations
         for(var i = 0; i < 10; i++)
         {
-            var minOperandValue = dataset[currentLevel].min;
-            var maxOperandValue = dataset[currentLevel].max;
-            var limit = dataset[currentLevel].limit;
+            var minOperandValue = dataset[currentLevel].min
+            var maxOperandValue = dataset[currentLevel].max
+            var limit = dataset[currentLevel].limit
 
-            var leftOperand = 0;
-            var rightOperand = 0;
+            var leftOperand = 0
+            var rightOperand = 0
             do
             {
-                leftOperand = randomInRange(minOperandValue, maxOperandValue);
-                rightOperand = randomInRange(minOperandValue, maxOperandValue);
-                console.log(getAnswer(leftOperand, rightOperand) + " VS limit: " + limit)
-            } while(getAnswer(leftOperand, rightOperand) > limit);
+                [leftOperand, rightOperand] = getOperands(minOperandValue, maxOperandValue);
+            } while(limit !== 0 && getAnswer(leftOperand, rightOperand) > limit);
             subLevelData.push([leftOperand, rightOperand])
         }
     }

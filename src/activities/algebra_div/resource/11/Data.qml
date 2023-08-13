@@ -10,12 +10,12 @@
 import GCompris 1.0
 
 Data {
-    objective: qsTr("Additions with results up to 15.")
-    difficulty: 6
+    objective: qsTr("Division training.")
+    difficulty: 5
     data: [
         {
-            "min": 0,
-            "max": 15,
+            "min": 1,
+            "max": 10,
             "limit": 0,
         }
     ]

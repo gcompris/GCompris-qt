@@ -10,12 +10,12 @@
 import GCompris 1.0
 
 Data {
-    objective: qsTr("Additions with results up to 15.")
+    objective: qsTr("Subtractions with left-operand up to 20.")
     difficulty: 6
     data: [
         {
             "min": 0,
-            "max": 15,
+            "max": 20,
             "limit": 0,
         }
     ]
