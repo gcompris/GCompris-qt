@@ -194,7 +194,6 @@ function questionsLeft() {
             items.score.currentSubLevel++
             items.timer.start()
         } else {
-            items.score.currentSubLevel = 1
             items.balloon.stopMoving()
             items.bonus.good("smiley");
         }
