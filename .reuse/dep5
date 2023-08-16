@@ -2143,6 +2143,10 @@ Files: src/activities/gletters/resource/default-he.json
 Copyright: 2013 gunchleoc
 License: CC0-1.0
 
+Files: src/activities/gletters/resource/default-hr.json
+Copyright: 2023 Igor Dobrača
+License: CC0-1.0
+
 Files: src/activities/gletters/resource/default-hu.json
 Copyright: 2013 gunchleoc
 License: CC0-1.0
