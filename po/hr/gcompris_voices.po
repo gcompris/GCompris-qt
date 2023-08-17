@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-07-18 00:44+0000\n"
-"PO-Revision-Date: 2023-01-04 20:39+0100\n"
+"PO-Revision-Date: 2023-08-16 19:23+0200\n"
 "Last-Translator: Igor Dobrača <igor.dobraca@gmail.com>\n"
 "Language-Team: Croatian <kde-i18n-doc@kde.org>\n"
 "Language: hr\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Poedit 3.2.2\n"
+"X-Generator: Poedit 3.3.2\n"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "advanced_colors"
 #: activities/advanced_colors/ActivityInfo.qml:18
@@ -79,8 +79,8 @@ msgid ""
 "Click on the column where you wish your token to fall and try to align of 4 "
 "tokens before Tux."
 msgstr ""
-"Klikni na stupac gdje želiš da tvoj žeton padne i pokušaj poravnati 4 žetona "
-"prije Tuxa."
+"Klikni na stupac gdje želiš da ubaciš tvoj žeton i pokušaj poravnati 4 "
+"žetona prije Tuxa."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "align4_2players"
 #: activities/align4_2players/ActivityInfo.qml:18
@@ -89,8 +89,8 @@ msgid ""
 "Click on the column where you wish your token to fall and try to align 4 "
 "tokens to win."
 msgstr ""
-"Klikni na stupac gdje želiš da tvoj žeton padne i pokušaj poravnati 4 žetona "
-"da bi pobijedio."
+"Klikni na stupac gdje želiš da ubaciš tvoj žeton i pokušaj poravnati 4 "
+"žetona da bi pobijedio."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "alphabet-sequence"
 #: activities/alphabet-sequence/ActivityInfo.qml:18
@@ -98,14 +98,14 @@ msgstr ""
 msgid ""
 "Move the helicopter to catch the clouds following the order of the alphabet."
 msgstr ""
-"Pomičite helikopter kako bi uhvatio oblake slijedeći redoslijed abecede."
+"Pazeći na abecedni redoslijed pomiči helikopter kako bi uhvatio slova u "
+"oblacima."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "analog_electricity"
 #: activities/analog_electricity/ActivityInfo.qml:18
 #, kde-format
 msgid "Learn how analog electricity works and create your own circuit."
-msgstr ""
-"Nauči kako radi analogna električna energija i izradi vlastiti strujni krug."
+msgstr "Nauči kako radi električna energija i izradi vlastiti strujni krug."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "baby_keyboard"
 #: activities/baby_keyboard/ActivityInfo.qml:18
@@ -117,7 +117,7 @@ msgstr "Pritisni bilo koju tipku na tipkovnici i promatraj rezultat."
 #: activities/baby_mouse/ActivityInfo.qml:17
 #, kde-format
 msgid "Move the mouse or touch the screen and observe the result."
-msgstr "Pomakni miša ili dodirni zaslon i promatraj rezultat."
+msgstr "Pomakni miša ili dodirni zaslon te promatraj rezultat."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "baby_tangram"
 #: activities/baby_tangram/ActivityInfo.qml:18
@@ -126,8 +126,8 @@ msgid ""
 "Move each puzzle piece, to obtain the completed puzzle. You can change their "
 "orientation by clicking on the arrows."
 msgstr ""
-"Pomakni svaki dio slagalice da dobiješ dovršenu slagalicu. Možeš promijeniti "
-"njihovu orijentaciju klikom na strelice."
+"Pomjeraj dijelove slagalice kako bi je složio. Možeš promijeniti "
+"orijentaciju dijelova klikom na strelice."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "baby_wordprocessor"
 #: activities/baby_wordprocessor/ActivityInfo.qml:18
@@ -151,7 +151,7 @@ msgstr "Dovuci i ispusti objekte koji odgovaraju oblicima."
 #: activities/balancebox/ActivityInfo.qml:21
 #, kde-format
 msgid "Tilt the box to navigate the ball to the door."
-msgstr "Nagni kutiju da dovedeš loptu do vrata."
+msgstr "Nagni kutiju tako da dovedeš loptu do vratiju."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "ballcatch"
 #: activities/ballcatch/ActivityInfo.qml:18
@@ -170,7 +170,7 @@ msgid ""
 "Select the number of balls you wish to place in the holes and then click on "
 "the OK button. The winner is the one who hasn't put a ball in the red hole."
 msgstr ""
-"Odaberi broj kuglica koje želiš staviti u rupe, a zatim klikni na gumb OK. "
+"Odaberi broj kuglica koje želiš postaviti u rupe, a zatim klikni na gumb OK. "
 "Pobjednik je onaj koji nije ubacio lopticu u crvenu rupu."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "binary_bulb"
@@ -180,34 +180,32 @@ msgid ""
 "Turn on the right bulbs to represent the binary of the given decimal number. "
 "When you have achieved it, press OK"
 msgstr ""
-"Uključi desne žarulje da binarno predstavljaju zadani decimalni broj. Kada "
-"si sve pripremio, pritisni OK"
+"Uključi žarulje tako da binarno predstavljaju zadani dekadski broj. Kada si "
+"sve pripremio, pritisni OK"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "braille_alphabets"
 #: activities/braille_alphabets/ActivityInfo.qml:18
 #, kde-format
 msgid "Click on Tux to start and then re-create the Braille cells."
-msgstr "Klikni na Tux za početak, a zatim ponovno stvori Brailleove ćelije."
+msgstr "Za početak klikni na Tuxa, a zatim ponovno stvori Brailleove ćelije."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "braille_fun"
 #: activities/braille_fun/ActivityInfo.qml:18
 #, kde-format
 msgid "Create the Braille cell for the letter."
-msgstr "Napravi Brailleovu ćeliju za slovo."
+msgstr "Stvori Brailleovu ćeliju za slovo."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "calcudoku"
 #: activities/calcudoku/ActivityInfo.qml:17
-#, fuzzy, kde-format
-#| msgid ""
-#| "Select a number or a symbol and click its target area. Each symbol must "
-#| "appear only once in a row, in a column and in a subregion if any."
+#, kde-format
 msgid ""
 "Select a number and click on its target position. Each number must appear "
 "only once in a row and in a column. The numbers in the cells of a cage must "
 "produce the given result when combined using the given operator."
 msgstr ""
 "Odaberi broj ili simbol i klikni njegovo ciljno područje. Svaki se simbol "
-"mora pojaviti samo jednom u retku, u stupcu i u subregiji ako postoji."
+"mora pojaviti samo jednom u retku i stupcu. Brojevi u ćelijama subregije "
+"trebaju dati rezultat kada se primijeni zadani operator."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "calendar"
 #: activities/calendar/ActivityInfo.qml:18
@@ -224,8 +222,8 @@ msgid ""
 "click on the gates to open or close a path."
 msgstr ""
 "Ti si odgovoran za bravu i moraš pomoći Tuxu da prođe. Klikni na ventile da "
-"izazoveš pad ili povećanje razine vode, a klikom na vrata otvaraš ili "
-"zatvaraš stazu."
+"spustiš ili povećaš razinu vode, dok klikom na vrata otvaraš ili zatvaraš "
+"stazu."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "categorization"
 #: activities/categorization/ActivityInfo.qml:18
@@ -265,8 +263,8 @@ msgid ""
 "movements that piece can make. Try and get the black king into checkmate."
 msgstr ""
 "Klikni na bijelu šahovsku figuru i pojavit će se zeleni okviri koji "
-"označavaju sve pokrete koje ta figura može napraviti. Pokušaj natjerati "
-"crnog kralja u šah-mat."
+"označavaju sve pokrete koje ta figura može napraviti. Pokušaj crnog kralja u "
+"šah-mat poziciju."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "chronos"
 #: activities/chronos/ActivityInfo.qml:22
@@ -283,7 +281,8 @@ msgid ""
 "Click on the required letter. You can listen to it again by clicking on the "
 "mouth."
 msgstr ""
-"Klikni na traženo slovo. Možeš ponovno poslušati zvuk ako klikneš na usta."
+"Klikni na traženo slovo. Možeš ponovno poslušati zvuk ako klikneš na sličicu "
+"usana."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "clickanddraw"
 #: activities/clickanddraw/ActivityInfo.qml:18
@@ -301,7 +300,7 @@ msgstr "Uhvati ribu prije nego napusti akvarij."
 #: activities/clockgame/ActivityInfo.qml:18
 #, kde-format
 msgid "Drag and drop the needles of the clock to display the required time"
-msgstr "Dovuci i ispusti kazaljke na satu za prikaz traženog vremena"
+msgstr "Za prikaz zadanog vremena dovuci i ispusti kazaljke na satu"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "color_mix"
 #: activities/color_mix/ActivityInfo.qml:18
@@ -313,7 +312,7 @@ msgstr "Uskladi boju pomicanjem klizača na tubama s bojom"
 #: activities/color_mix_light/ActivityInfo.qml:18
 #, kde-format
 msgid "Match the color by moving the sliders on the torches"
-msgstr "Uskladi boju pomicanjem klizača na bakljama"
+msgstr "Uskladi boju pomicanjem klizača na svjetiljkama"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "colors"
 #: activities/colors/ActivityInfo.qml:18
@@ -326,7 +325,7 @@ msgstr "Klikni na točnu boju"
 #, kde-format
 msgid ""
 "Select the correct comparator sign for each pair of numbers in the list."
-msgstr "Odaberi ispravan znak za usporedbu za svaki par brojeva na popisu."
+msgstr "Za svaki par brojeva na popisu odaberi ispravan znak za usporedbu."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "crane"
 #: activities/crane/ActivityInfo.qml:23
@@ -374,7 +373,7 @@ msgstr ""
 #: activities/erase/ActivityInfo.qml:18
 #, kde-format
 msgid " Clear the window with your sponge and discover the hidden picture."
-msgstr " Očisti prozor spužvicom i otkrij skrivenu sliku."
+msgstr " Obriši prozor spužvicom i otkrij skrivenu sliku."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "erase_2clic"
 #: activities/erase_2clic/ActivityInfo.qml:18
@@ -392,7 +391,7 @@ msgstr "Klikni ili dodirni prozirne cigle i otkrij skrivenu sliku."
 #: activities/explore_farm_animals/ActivityInfo.qml:18
 #, kde-format
 msgid "Learn about farmyard animals and the noises that they make."
-msgstr "Nauči o životinjama s farme i njihovom glasanju."
+msgstr "Nauči o životinjama na farmi i njihovom glasanju."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "explore_monuments"
 #: activities/explore_monuments/ActivityInfo.qml:18
@@ -416,7 +415,7 @@ msgstr "Klikni na kofere da bi saznao više o glazbi iz cijelog svijeta."
 #: activities/family/ActivityInfo.qml:18
 #, kde-format
 msgid "Let us understand what to call our relatives"
-msgstr "Nauči kako da nazivaš tvoje rođake"
+msgstr "Nauči kako da oslovljavaš tvoje rođake"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "family_find_relative"
 #: activities/family_find_relative/ActivityInfo.qml:18
@@ -432,7 +431,7 @@ msgid ""
 "release its space. You must put all the pieces in the correct order. The "
 "numbers on the pieces can help you."
 msgstr ""
-"Klikni ili povuci element pokraj slobodnog prostora, element će se pomaknuti "
+"Klikni ili povuci element pokraj slobodnog prostora. Element će se pomaknuti "
 "i osloboditi svoj prostor. Sve dijelove moraš postaviti ispravnim "
 "redoslijedom. Brojevi na dijelovima mogu ti pomoći."
 
@@ -471,13 +470,13 @@ msgstr "Odredi točan brojnik i nazivnik predstavljenog razlomka"
 #: activities/geo-country/ActivityInfo.qml:22
 #, kde-format
 msgid "Drag and drop the regions to complete the country maps."
-msgstr "Dovuci i ispusti regije kako bi dovršio karte država."
+msgstr "Dovuci i ispusti regije kako bi dovršio kartu država."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "geography"
 #: activities/geography/ActivityInfo.qml:22
 #, kde-format
 msgid "Drag and drop the objects to complete the map."
-msgstr "Dovuci i ispusti objekte da dovršiš kartu."
+msgstr "Da dovršiš kartu dovuci i ispusti objekte."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "gletters"
 #: activities/gletters/ActivityInfo.qml:18
@@ -492,7 +491,7 @@ msgid ""
 "Guide the number eater with the arrow keys to the required numbers and press "
 "the space bar to swallow them."
 msgstr ""
-"Vodi žderača brojeva tipkama sa strelicama do željenih brojeva i pritisni "
+"Vodi Grickalicu brojeva pomoću strelica do željenih brojeva i pritisni "
 "razmaknicu da ih progutaš."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "gnumch-factors"
@@ -502,8 +501,8 @@ msgid ""
 "Guide the number eater with the arrow keys to the factors of the displayed "
 "number and press space to swallow them."
 msgstr ""
-"Vodi žderača brojeva pomoću tipki sa strelicama do faktora prikazanog broja "
-"i pritisni razmaknicu da ih progutaš."
+"Vodi Grickalicu brojeva pomoću strelica do faktora prikazanog broja i "
+"pritisni razmaknicu da ih progutaš."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "gnumch-inequality"
 #: activities/gnumch-inequality/ActivityInfo.qml:19
@@ -512,8 +511,8 @@ msgid ""
 "Guide the number eater with the arrow keys to the numbers that are different "
 "from the ones displayed and press the space bar to swallow them."
 msgstr ""
-"Vodi gutača brojeva pomoću tipki sa strelicama do brojeva koji se razlikuju "
-"od prikazanih i pritisni razmaknicu da ih progutaš."
+"Vodi Grickalicu brojeva pomoću strelica do brojeva koji se razlikuju od "
+"prikazanih i pritisni razmaknicu da ih progutaš."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "gnumch-multiples"
 #: activities/gnumch-multiples/ActivityInfo.qml:18
@@ -522,8 +521,8 @@ msgid ""
 "Guide the number eater with the arrow keys to the multiples of the displayed "
 "number and press space to swallow them."
 msgstr ""
-"Vodi žderača brojeva tipkama sa strelicama do višekratnika prikazanog broja "
-"i pritisni razmaknicu da ih progutaš."
+"Vodi Grickalicu brojeva pomoću strelica do višekratnika prikazanog broja i "
+"pritisni razmaknicu da ih progutaš."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "gnumch-primes"
 #: activities/gnumch-primes/ActivityInfo.qml:18
@@ -532,8 +531,8 @@ msgid ""
 "Guide the number eater with the arrow keys to the prime numbers and press "
 "space to swallow them."
 msgstr ""
-"Vodi žderača brojeva pomoću tipki sa strelicama do prostih brojeva i "
-"pritisni razmaknicu da ih progutaš."
+"Vodi Grickalicu brojeva pomoću strelica do prostih brojeva i pritisni "
+"razmaknicu da ih progutaš."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "grammar_classes"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "grammar_analysis"
@@ -541,13 +540,13 @@ msgstr ""
 #: activities/grammar_classes/ActivityInfo.qml:21
 #, kde-format
 msgid "Assign the requested grammatical classes to the corresponding words."
-msgstr ""
+msgstr "Dodijeli tražene vrste riječi odgovarajućim riječima."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "graph-coloring"
 #: activities/graph-coloring/ActivityInfo.qml:18
 #, kde-format
 msgid "Color the graph so that no two adjacent nodes have the same color."
-msgstr "Oboji graf tako da nijedna dva susjedna čvora nemaju istu boju."
+msgstr "Oboji grafikon tako da nijedna dva susjedna čvora nemaju istu boju."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "gravity"
 #: activities/gravity/ActivityInfo.qml:22
@@ -555,8 +554,8 @@ msgstr "Oboji graf tako da nijedna dva susjedna čvora nemaju istu boju."
 msgid ""
 "Move the spaceship to avoid hitting the planets and reach the space station."
 msgstr ""
-"Pomakni svemirski brod kako bi izbjegao udar u planete i stigao do svemirske "
-"postaje."
+"Pomiči svemirski brod kako bi izbjegao sudar s planetima i stigao do "
+"svemirske postaje."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "guesscount"
 #: activities/guesscount/ActivityInfo.qml:22
@@ -564,7 +563,7 @@ msgstr ""
 msgid ""
 "Use the numbers and operations suggested to find the results proposed above."
 msgstr ""
-"Upotrijebi predložene brojeve i operacije kako bi pronašli gore navedene "
+"Upotrijebi predložene brojeve i operacije kako bi dobio gore navedene "
 "rezultate."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "guessnumber"
@@ -586,8 +585,8 @@ msgid ""
 "Rebuild the same tower in the empty area as the one you see on the right "
 "hand side."
 msgstr ""
-"Ponovno izgradi isti toranj u praznom području kao onaj koji vidiš na desnoj "
-"strani."
+"Ponovno izgradi isti toranj u praznom području kao onaj koji je prikazan na "
+"desnoj strani."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "hanoi_real"
 #: activities/hanoi_real/ActivityInfo.qml:18
@@ -596,8 +595,8 @@ msgid ""
 "Rebuild the model tower on the right support. Take care, no disc may be "
 "placed atop a smaller disc."
 msgstr ""
-"Ponovno izgradi model tornja na desnom nosaču. Pazi, disk se ne smije "
-"stavljati na manji disk."
+"Ponovno izgradi model tornja na desnom nosaču. Pazi, veći disk se ne može "
+"staviti na manji disk."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "hexagon"
 #: activities/hexagon/ActivityInfo.qml:18
@@ -606,7 +605,7 @@ msgid ""
 "Click on the hexagons to find the hidden object, the red zone indicates that "
 "you're close to it!"
 msgstr ""
-"Klikni na šesterokute kako bi pronašao skriveni objekt, crvena zona označava "
+"Klikni na šesterokute kako bi pronašao skriveni objekt. Crvena zona označava "
 "da si blizu njega!"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "imagename"
@@ -619,7 +618,7 @@ msgstr "Dovuci i ispusti svaku stavku iznad njenog naziva."
 #: activities/instruments/ActivityInfo.qml:18
 #, kde-format
 msgid "Click on the correct musical instrument."
-msgstr "Klikni na odgovarajući glazbeni instrument."
+msgstr "Klikni na ispravan glazbeni instrument."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "land_safe"
 #: activities/land_safe/ActivityInfo.qml:18
@@ -654,8 +653,8 @@ msgid ""
 "Drag the arrow to select a part of the bar, and drag the selected part of "
 "the bar to the empty area to represent the decimal number."
 msgstr ""
-"Povuci strelicu da bi odabrao dio trake i dovuci odabrani dio trake u prazno "
-"područje da predstavlja decimalni broj."
+"Povuci strelicu da bi odabrao dio trake koju ćeš dovući u prazno područje "
+"tako da predstavlja decimalni broj."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "learn_decimals_additions"
 #: activities/learn_decimals_additions/ActivityInfo.qml:17
@@ -664,8 +663,8 @@ msgid ""
 "Drag the arrow to select a part of the bar, and drag the selected part of "
 "the bar to the empty area to represent the result of the addition."
 msgstr ""
-"Povuci strelicu da bi odabrao dio trake i dovuci odabrani dio trake u prazno "
-"područje da predstavlja rezultat zbrajanja."
+"Povuci strelicu da bi odabrao dio trake koju ćeš dovući u prazno područje "
+"tako da predstavlja rezultat zbrajanja."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "learn_decimals_subtractions"
 #: activities/learn_decimals_subtractions/ActivityInfo.qml:17
@@ -686,8 +685,8 @@ msgid ""
 "Drag the arrow to select a number of oranges, and drag the oranges to the "
 "empty area to represent the requested quantity."
 msgstr ""
-"Povuci strelicu da bi odabrao određeni broj naranči te dovuci naranče u "
-"prazno područje da predstavljaju traženu količinu."
+"Povuci strelicu da bi odabrao određeni broj naranči koje ćeš dovući u prazno "
+"područje tako da predstavljaju traženu količinu."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "left_right_click"
 #: activities/left_right_click/ActivityInfo.qml:17
@@ -722,7 +721,7 @@ msgstr "Klikni na lampice da bi ih isključio."
 #: activities/louis-braille/ActivityInfo.qml:18
 #, kde-format
 msgid "Discover the history of Louis Braille."
-msgstr "Istraži povijest Louisa Braillea."
+msgstr "Upoznaj životopis Louisa Braillea."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "magic-hat-minus"
 #: activities/magic-hat-minus/ActivityInfo.qml:18
@@ -757,7 +756,7 @@ msgid ""
 "icon or the space key to see the map."
 msgstr ""
 "Upotrijebi tipke sa strelicama ili prijeđi prstom po dodirnom zaslonu kako "
-"bi izveli Tuxa. Upotrijebi ikonu labirinta ili razmaknicu da vidiš kartu."
+"bi izveo Tuxa. Upotrijebi ikonu labirinta ili razmaknicu da vidiš kartu."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "mazerelative"
 #: activities/mazerelative/ActivityInfo.qml:18
@@ -775,9 +774,7 @@ msgstr ""
 msgid ""
 "Listen to the sound sequence played, and reproduce it by clicking on the "
 "xylophone's bars"
-msgstr ""
-"Poslušaj zvučnu sekvencu koja se reproducira i reproduciraj je klikom na "
-"trake ksilofona"
+msgstr "Poslušaj zvučnu sekvencu i reproduciraj je klikom na pločice ksilofona"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-case-association-tux"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-case-association"
@@ -785,7 +782,7 @@ msgstr ""
 #: activities/memory-case-association/ActivityInfo.qml:18
 #, kde-format
 msgid "Match the upper case card with its lower case pair."
-msgstr "Spoji karticu velikim slovima s parom malih slova."
+msgstr "Spoji karticu s velikim i malim štampanim slovom."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-enumerate"
 #: activities/memory-enumerate/ActivityInfo.qml:18
@@ -825,7 +822,7 @@ msgstr ""
 #: activities/memory-math-mult/ActivityInfo.qml:18
 #, kde-format
 msgid "Turn over two cards to match the calculation with its answer."
-msgstr "Okreni dvije kartice kako bi spojili izračun s njegovim odgovorom."
+msgstr "Okreni dvije kartice kako bi spojio izračun s točnim odgovorom."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-sound"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-sound-tux"
@@ -833,7 +830,7 @@ msgstr "Okreni dvije kartice kako bi spojili izračun s njegovim odgovorom."
 #: activities/memory-sound/ActivityInfo.qml:18
 #, kde-format
 msgid "Click on an audio card and find its double."
-msgstr "Kliknite audio karticu i pronađi njezinog dvojnika."
+msgstr "Klikni audio karticu i pronađi njezinog dvojnika."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-tux"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "memory"
@@ -847,7 +844,7 @@ msgstr "Klikni na karticu i pronađi njezinog dvojnika."
 #: activities/memory-wordnumber/ActivityInfo.qml:18
 #, kde-format
 msgid "Match the numeric with the word."
-msgstr "Poveži broj s riječju."
+msgstr "Poveži broj i riječ."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "mining"
 #: activities/mining/ActivityInfo.qml:18
@@ -858,7 +855,7 @@ msgid ""
 "zoom in."
 msgstr ""
 "Gledajući kameni zid, negdje možeš vidjeti svjetlucanje. Pomakni kursor miša "
-"pored ove iskre i koristi kotačić miša ili gestu zumiranja za povećanje."
+"pored te iskre. Koristi kotačić miša ili gestu zumiranja za povećanje."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "missing-letter"
 #: activities/missing-letter/ActivityInfo.qml:19
@@ -882,7 +879,7 @@ msgstr "Za plaćanje klikni ili dodirni novac."
 #: activities/money_back_cents/ActivityInfo.qml:18
 #, kde-format
 msgid "Click on the money at the bottom of the screen to give Tux his change."
-msgstr "Klikni na novac na dnu ekrana kako bi Tuxu vratili ostatak."
+msgstr "Klikni na novac na dnu ekrana kako bi Tuxu vratio ostatak."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "money_cents"
 #: activities/money_cents/ActivityInfo.qml:18
@@ -894,7 +891,7 @@ msgstr "Da bi platio, klikni na novac."
 #: activities/morse_code/ActivityInfo.qml:21
 #, kde-format
 msgid "Learn and practice the International Morse code"
-msgstr "Nauči i vježbaj međunarodni Morseov kod"
+msgstr "Nauči i uvježbaj međunarodni Morseov kôd"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "mosaic"
 #: activities/mosaic/ActivityInfo.qml:18
@@ -909,8 +906,8 @@ msgid ""
 "Click on the dot where you wish to place your piece and try to take all "
 "Tux's pieces."
 msgstr ""
-"Klikni na točku gdje želiš staviti tvoj komad i pokušaj uzeti sve Tuxove "
-"dijelove."
+"Klikni na točku gdje želiš staviti tvoju figuru i pokušaj uzeti sve Tuxove "
+"figure."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "nine_men_morris_2players"
 #: activities/nine_men_morris_2players/ActivityInfo.qml:18
@@ -919,7 +916,7 @@ msgid ""
 "Click on the dot where you wish to place your piece and try to take all your "
 "friend's pieces."
 msgstr ""
-"Klikni na točku gdje želiš staviti tvoj komad i pokušajte uzeti sve dijelove "
+"Klikni na točku gdje želiš staviti tvoju figuru i pokušaj uzeti sve figure "
 "tvog prijatelja."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "note_names"
@@ -941,8 +938,8 @@ msgid ""
 "Move the helicopter to catch the clouds having even or odd numbers, in the "
 "shown order."
 msgstr ""
-"Pomiči helikopter kako bi uhvatio oblake koji imaju parne ili neparne "
-"brojeve, prikazanim redoslijedom."
+"Pomiči helikopter prikazanim redoslijedom kako bi uhvatio oblake s parnim "
+"ili neparnim brojevima."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "ordering_alphabets"
 #: activities/ordering_alphabets/ActivityInfo.qml:24
@@ -974,7 +971,7 @@ msgstr "Složi zadane riječi tako da oblikuju smislenu rečenicu."
 #: activities/oware_2players/ActivityInfo.qml:17
 #, kde-format
 msgid "Capture at least 25 seeds to win the game"
-msgstr "Uhvatite najmanje 25 sjemenki da bi pobijedio u igri"
+msgstr "Prikupi najmanje 25 sjemenki da bi pobijedio"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "paintings"
 #: activities/paintings/ActivityInfo.qml:23
@@ -1006,13 +1003,13 @@ msgstr "Koristi strelice za pomicanje Tuxa po stazi i dođi do cilja."
 #: activities/penalty/ActivityInfo.qml:18
 #, kde-format
 msgid "Double click or double tap on the goal, in order to score."
-msgstr "Dvaput klikni ili dodirni gol, kako bi postigao pogodak."
+msgstr "Dvaput klikni ili dodirni gol, kako bi ostvario pogodak."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "photo_hunter"
 #: activities/photo_hunter/ActivityInfo.qml:18
 #, kde-format
 msgid "look at the two pictures carefully and click where you see a difference"
-msgstr "pažljivo pogledaj dvije slike i klikni gdje vidiš razliku"
+msgstr "pažljivo pogledaj dvije slike i klikni tamo gdje vidiš razliku"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "piano_composition"
 #: activities/piano_composition/ActivityInfo.qml:19
@@ -1044,7 +1041,7 @@ msgstr "Klikni na tipke tipkovnice koje odgovaraju notama koje vidiš i čuješ"
 #: activities/play_rhythm/ActivityInfo.qml:22
 #, kde-format
 msgid "Click the drum to recreate the rhythm"
-msgstr "Pritisni bubanj da ponovno stvoriš ritam"
+msgstr "Klikni na bubanj da ponovno stvoriš ritam"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "positions"
 #: activities/positions/ActivityInfo.qml:18
@@ -1071,7 +1068,7 @@ msgstr "Promatraj vlak i klikni na stavke za postavljanje sličnog vlaka"
 #: activities/readingv/ActivityInfo.qml:18
 #, kde-format
 msgid "Read a list of words and say if a given word is in it."
-msgstr "Pročitaj popis riječi i reci nalazi li se tražena riječ u popisu."
+msgstr "Pročitaj popis riječi i odgovori nalazi li se tražena riječ u popisu."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "redraw"
 #: activities/redraw/ActivityInfo.qml:18
@@ -1085,14 +1082,14 @@ msgstr "Pomoću alata za crtanje na desnoj strani napravi identičan uzorak."
 msgid ""
 "Use the drawing tools to reproduce symmetrically the pattern on the right."
 msgstr ""
-"Koristi alate za crtanje kako bi na desnoj strani simetrično reproducirali "
+"Koristi alate za crtanje kako bi na desnoj strani simetrično reproducirao "
 "uzorak."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "renewable_energy"
 #: activities/renewable_energy/ActivityInfo.qml:18
 #, kde-format
 msgid "Click on the different stages that go to make up the power supply."
-msgstr "Klikni na različite razine kako bi imao napajanje."
+msgstr "Klikni na različite razine kako bi omogućio napajanje."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "reversecount"
 #: activities/reversecount/ActivityInfo.qml:18
@@ -1101,8 +1098,8 @@ msgid ""
 "Click on the domino and validate your choice with the OK button to indicate "
 "the number of ice blocks Tux will have to follow to eat a fish."
 msgstr ""
-"Klikni na domino i potvrdi svoj izbor gumbom U redu kako bi označio broj "
-"ledenih blokova koje će Tux morati pratiti da bi pojeo ribu."
+"Klikni na domino i potvrdi svoj izbor gumbom OK kako bi označio broj ledenih "
+"blokova koje će Tux morati pratiti da bi pojeo ribu."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "roman_numerals"
 #: activities/roman_numerals/ActivityInfo.qml:18
@@ -1118,7 +1115,7 @@ msgstr "Nauči i vježbaj pretvorbu rimskih u arapske brojeve"
 #: activities/scalesboard_weight_avoirdupois/ActivityInfo.qml:18
 #, kde-format
 msgid "Drag the weights up to balance the scales."
-msgstr "Postavi utege kako bi uravnotežili vagu."
+msgstr "Postavi utege kako bi uravnotežio vagu."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "share"
 #: activities/share/ActivityInfo.qml:18
@@ -1127,15 +1124,15 @@ msgid ""
 "Share the candies equally among the specified number of children and notice "
 "that there may be a rest left"
 msgstr ""
-"Podijeli bombone na jednake dijelove određenom broju djece i primijeti da "
-"može ostati ostatak"
+"Podijeli bombone tako da svako dijete dobije ih isti broj i primijeti da "
+"ponekad koji bombon ostane"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "simplepaint"
 #: activities/simplepaint/ActivityInfo.qml:18
 #, kde-format
 msgid ""
 "Select a color and paint the rectangles as you like to create a drawing."
-msgstr "Odaberi boju i oboji pravokutnike kako želiš da napraviš crtež."
+msgstr "Odaberi boju i oboji pravokutnike kako želiš da bi napravio crtež."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "smallnumbers"
 #: activities/smallnumbers/ActivityInfo.qml:18
@@ -1144,7 +1141,7 @@ msgid ""
 "Count the number on the dice and type it on your keyboard before it reaches "
 "the ground."
 msgstr ""
-"Prebroji broj na kocki i utipkaj ga putem tipkovnice prije nego što padne na "
+"Očitaj broj na kocki i utipkaj ga putem tipkovnice prije nego što padne na "
 "tlo."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "smallnumbers2"
@@ -1178,7 +1175,7 @@ msgid ""
 "appear only once in a row, in a column and in a subregion if any."
 msgstr ""
 "Odaberi broj ili simbol i klikni njegovo ciljno područje. Svaki se simbol "
-"mora pojaviti samo jednom u retku, u stupcu i u subregiji ako postoji."
+"mora pojaviti samo jednom u retku, u stupcu i u subregiji ako ona postoji."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "superbrain"
 #: activities/superbrain/ActivityInfo.qml:18
@@ -1208,8 +1205,7 @@ msgstr ""
 #, kde-format
 msgid "Click on the target to launch darts, then count your final score!"
 msgstr ""
-"Klikni na metu da bi pokrenuo strelice, a zatim prebroji tvoj konačni "
-"rezultat!"
+"Klikni na metu da bi bacio strelice, a zatim prebroji tvoj konačni rezultat!"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "tens_complement_find"
 #: activities/tens_complement_find/ActivityInfo.qml:17
@@ -1229,7 +1225,7 @@ msgid ""
 "number of the same operation to swap their position."
 msgstr ""
 "Sastavi parove brojeva čiji je zbroj deset. Odaberi broj, zatim odaberi "
-"drugi broj iste operacije da bi zamijenili njihove položaje."
+"drugi broj iste operacije da bi zamijenio njihove položaje."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "tens_complement_use"
 #: activities/tens_complement_use/ActivityInfo.qml:17
@@ -1239,9 +1235,9 @@ msgid ""
 "number in the list, then select an empty spot of an operation to move the "
 "selected number there."
 msgstr ""
-"Rastavite operacije na par brojeva čiji je zbroj deset. Odaberi broj na "
-"popisu, zatim odaberi prazno mjesto operacije da bi tamo premjestio odabrani "
-"broj."
+"Rastavi operacije na par brojeva čiji je zbroj deset. Odaberi broj na "
+"popisu, a zatim odaberi prazno mjesto operacije da bi tamo premjestio "
+"odabrani broj."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "tic_tac_toe_2players"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "tic_tac_toe"
@@ -1261,8 +1257,8 @@ msgstr ""
 msgid ""
 "Slide the cars to make a space so that the red car can go out of the box."
 msgstr ""
-"Gurni automobile kako bi napravio prostor tako da crveni automobil može "
-"izaći iz kutije."
+"Pomakni automobile kako bi napravio prostor da crveni automobil može izaći "
+"iz kutije."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "watercycle"
 #: activities/watercycle/ActivityInfo.qml:18
