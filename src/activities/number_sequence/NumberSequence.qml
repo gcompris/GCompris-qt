@@ -209,7 +209,7 @@ ActivityBase {
             }
             onStartActivity: {
                 background.stop()
-                background.start()
+                Activity.initLevel()
             }
         }
 
