@@ -15,6 +15,7 @@ import "../../core"
 Item {
     id: activityConfiguration
     property Item background
+    property bool highlightEnabled: highlightBox.checked
     property alias modeBox: modeBox
     width: flick.width
     property var availableModes: [
@@ -29,6 +30,10 @@ Item {
             model: availableModes
             background: activityConfiguration.background
             label: qsTr("Go to the next level")
+        }
+        GCDialogCheckBox {
+            id: highlightBox
+            text: qsTr("Highlight next point")
         }
     }
 
@@ -45,10 +50,15 @@ Item {
                 break;
             }
         }
+
+        if(dataToSave["highlight"] === undefined) {
+            dataToSave["highlight"] = "true";
+        }
+        highlightBox.checked = (dataToSave.highlight === "true")
     }
 
     function saveValues() {
         var newMode = availableModes[modeBox.currentIndex].value;
-        dataToSave = {"mode": newMode};
+        dataToSave = {"mode": newMode, "highlight" : "" + highlightEnabled};
     }
 }

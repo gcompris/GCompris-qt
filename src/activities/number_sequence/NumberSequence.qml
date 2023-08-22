@@ -55,6 +55,7 @@ ActivityBase {
             property alias imageBack2: imageBack2
             property int pointIndexToClick
             property int mode: 1 // default is automatic
+            property bool highlightEnabled: true // make the point to click bigger. Always true in drawletters, drawnumbers and clickanddraw
         }
 
         onStart: { Activity.start(items,mode,dataset,url) }
@@ -110,8 +111,10 @@ ActivityBase {
                     source: Activity.url + (highlight ?
                             (pointImageOpacity ? "bluepoint.svg" : "bluepointHighlight.svg") :
                             markedAsPointInternal ? "blackpoint.svg" : "greenpoint.svg")
-                    sourceSize.height: items.pointIndexToClick == index ?
+
+                    sourceSize.height: (items.highlightEnabled && items.pointIndexToClick == index) ?
                                         imageBack2.width * 0.08 : imageBack2.width * 0.04 //to change the size of dots
+
                     x: imageBack.x + modelData[0] * imageBack.width / 520 - sourceSize.height/2
                     y: modelData[1] * imageBack.height / 520 - sourceSize.height/2
                     z: items.pointIndexToClick == index ? 1000 : index
@@ -198,6 +201,10 @@ ActivityBase {
             onLoadData: {
                 if(activityData && activityData["mode"]) {
                     items.mode = activityData["mode"];
+                }
+                // This option exists only for number_sequence
+                if(activityData && activityData["highlight"]) {
+                    items.highlightEnabled = activityData["highlight"] === "true"
                 }
             }
             onStartActivity: {
