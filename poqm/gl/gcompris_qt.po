@@ -4835,7 +4835,7 @@ msgstr "Preme nunha letra en maiúscula"
 #: activities/erase/ActivityConfig.qml:21
 #: activities/erase_2clic/ActivityConfig.qml:21
 #: activities/erase_clic/ActivityConfig.qml:21
-#: activities/number_sequence/ActivityConfig.qml:21
+#: activities/number_sequence/ActivityConfig.qml:22
 msgctxt "ActivityConfig|"
 msgid "Automatic"
 msgstr "Automático"
@@ -4846,7 +4846,7 @@ msgstr "Automático"
 #: activities/erase/ActivityConfig.qml:22
 #: activities/erase_2clic/ActivityConfig.qml:22
 #: activities/erase_clic/ActivityConfig.qml:22
-#: activities/number_sequence/ActivityConfig.qml:22
+#: activities/number_sequence/ActivityConfig.qml:23
 msgctxt "ActivityConfig|"
 msgid "Manual"
 msgstr "Manual"
@@ -4857,7 +4857,7 @@ msgstr "Manual"
 #: activities/erase/ActivityConfig.qml:31
 #: activities/erase_2clic/ActivityConfig.qml:31
 #: activities/erase_clic/ActivityConfig.qml:31
-#: activities/number_sequence/ActivityConfig.qml:31
+#: activities/number_sequence/ActivityConfig.qml:32
 msgctxt "ActivityConfig|"
 msgid "Go to the next level"
 msgstr "Ir ao seguinte nivel"
@@ -20952,6 +20952,11 @@ msgstr ""
 "en 6ª en clave de sol.<br> En cada nivel aprenderás novas notas e adestrarás "
 "as que xa aprenderas.<br>As notas de referencia están coloradas en vermello "
 "e axudarante a ler as notas colocadas ao redor."
+
+#: activities/number_sequence/ActivityConfig.qml:36
+msgctxt "ActivityConfig|"
+msgid "Highlight next point"
+msgstr ""
 
 #. Activity title
 #: activities/number_sequence/ActivityInfo.qml:15

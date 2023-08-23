@@ -4956,7 +4956,7 @@ msgstr "Кликнете на големa буквa"
 #: activities/erase/ActivityConfig.qml:21
 #: activities/erase_2clic/ActivityConfig.qml:21
 #: activities/erase_clic/ActivityConfig.qml:21
-#: activities/number_sequence/ActivityConfig.qml:21
+#: activities/number_sequence/ActivityConfig.qml:22
 msgctxt "ActivityConfig|"
 msgid "Automatic"
 msgstr "Автоматски"
@@ -4967,7 +4967,7 @@ msgstr "Автоматски"
 #: activities/erase/ActivityConfig.qml:22
 #: activities/erase_2clic/ActivityConfig.qml:22
 #: activities/erase_clic/ActivityConfig.qml:22
-#: activities/number_sequence/ActivityConfig.qml:22
+#: activities/number_sequence/ActivityConfig.qml:23
 msgctxt "ActivityConfig|"
 msgid "Manual"
 msgstr "Рачно"
@@ -4978,7 +4978,7 @@ msgstr "Рачно"
 #: activities/erase/ActivityConfig.qml:31
 #: activities/erase_2clic/ActivityConfig.qml:31
 #: activities/erase_clic/ActivityConfig.qml:31
-#: activities/number_sequence/ActivityConfig.qml:31
+#: activities/number_sequence/ActivityConfig.qml:32
 msgctxt "ActivityConfig|"
 msgid "Go to the next level"
 msgstr "Оди на следно ниво"
@@ -19519,6 +19519,11 @@ msgstr ""
 "виолински-клуч.<br>Со секое ниво ќе учите нови ноти и ќе ги извежбате оние "
 "што веќе сте ги научиле.<br>Референтните ноти се обоени во црвена боја и ќе "
 "ви помогнат да ги прочитате нотите поставени околу нив."
+
+#: activities/number_sequence/ActivityConfig.qml:36
+msgctxt "ActivityConfig|"
+msgid "Highlight next point"
+msgstr ""
 
 #. Activity title
 #: activities/number_sequence/ActivityInfo.qml:15

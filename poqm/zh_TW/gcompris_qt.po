@@ -4605,7 +4605,7 @@ msgstr "在大寫字母上按一下"
 #: activities/erase/ActivityConfig.qml:21
 #: activities/erase_2clic/ActivityConfig.qml:21
 #: activities/erase_clic/ActivityConfig.qml:21
-#: activities/number_sequence/ActivityConfig.qml:21
+#: activities/number_sequence/ActivityConfig.qml:22
 msgctxt "ActivityConfig|"
 msgid "Automatic"
 msgstr "自動"
@@ -4616,7 +4616,7 @@ msgstr "自動"
 #: activities/erase/ActivityConfig.qml:22
 #: activities/erase_2clic/ActivityConfig.qml:22
 #: activities/erase_clic/ActivityConfig.qml:22
-#: activities/number_sequence/ActivityConfig.qml:22
+#: activities/number_sequence/ActivityConfig.qml:23
 msgctxt "ActivityConfig|"
 msgid "Manual"
 msgstr "手動"
@@ -4627,7 +4627,7 @@ msgstr "手動"
 #: activities/erase/ActivityConfig.qml:31
 #: activities/erase_2clic/ActivityConfig.qml:31
 #: activities/erase_clic/ActivityConfig.qml:31
-#: activities/number_sequence/ActivityConfig.qml:31
+#: activities/number_sequence/ActivityConfig.qml:32
 msgctxt "ActivityConfig|"
 msgid "Go to the next level"
 msgstr "前往下一關"
@@ -18381,6 +18381,11 @@ msgstr ""
 "這個遊戲會教您認識從低音譜記號的 F1 到高音譜記號的 D6 的音符。<br>每一關您都"
 "會學到新的音符，並複習先前學過的音符。<br>參考音符會標記成紅色，讓您認識週遭"
 "的音符。"
+
+#: activities/number_sequence/ActivityConfig.qml:36
+msgctxt "ActivityConfig|"
+msgid "Highlight next point"
+msgstr ""
 
 #. Activity title
 #: activities/number_sequence/ActivityInfo.qml:15

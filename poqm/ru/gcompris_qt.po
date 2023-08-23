@@ -4840,7 +4840,7 @@ msgstr "Щёлкни по прописной букве"
 #: activities/erase/ActivityConfig.qml:21
 #: activities/erase_2clic/ActivityConfig.qml:21
 #: activities/erase_clic/ActivityConfig.qml:21
-#: activities/number_sequence/ActivityConfig.qml:21
+#: activities/number_sequence/ActivityConfig.qml:22
 msgctxt "ActivityConfig|"
 msgid "Automatic"
 msgstr "Автоматически"
@@ -4851,7 +4851,7 @@ msgstr "Автоматически"
 #: activities/erase/ActivityConfig.qml:22
 #: activities/erase_2clic/ActivityConfig.qml:22
 #: activities/erase_clic/ActivityConfig.qml:22
-#: activities/number_sequence/ActivityConfig.qml:22
+#: activities/number_sequence/ActivityConfig.qml:23
 msgctxt "ActivityConfig|"
 msgid "Manual"
 msgstr "Руководство"
@@ -4862,7 +4862,7 @@ msgstr "Руководство"
 #: activities/erase/ActivityConfig.qml:31
 #: activities/erase_2clic/ActivityConfig.qml:31
 #: activities/erase_clic/ActivityConfig.qml:31
-#: activities/number_sequence/ActivityConfig.qml:31
+#: activities/number_sequence/ActivityConfig.qml:32
 msgctxt "ActivityConfig|"
 msgid "Go to the next level"
 msgstr "Переход на следующий уровень"
@@ -19186,6 +19186,11 @@ msgstr ""
 "ре третьей октавы в скрипичном ключе.<br>На каждом уровне ты будешь учить "
 "новые ноты и повторять уже изученные.<br>Опорные ноты окрашены в красный "
 "цвет. Они будут помогать тебе читать ноты, расположенные вокруг них."
+
+#: activities/number_sequence/ActivityConfig.qml:36
+msgctxt "ActivityConfig|"
+msgid "Highlight next point"
+msgstr ""
 
 #. Activity title
 #: activities/number_sequence/ActivityInfo.qml:15

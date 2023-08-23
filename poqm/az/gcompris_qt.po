@@ -4801,7 +4801,7 @@ msgstr "Böyük bir hərfə vurun"
 #: activities/erase/ActivityConfig.qml:21
 #: activities/erase_2clic/ActivityConfig.qml:21
 #: activities/erase_clic/ActivityConfig.qml:21
-#: activities/number_sequence/ActivityConfig.qml:21
+#: activities/number_sequence/ActivityConfig.qml:22
 msgctxt "ActivityConfig|"
 msgid "Automatic"
 msgstr "Avtomatik"
@@ -4812,7 +4812,7 @@ msgstr "Avtomatik"
 #: activities/erase/ActivityConfig.qml:22
 #: activities/erase_2clic/ActivityConfig.qml:22
 #: activities/erase_clic/ActivityConfig.qml:22
-#: activities/number_sequence/ActivityConfig.qml:22
+#: activities/number_sequence/ActivityConfig.qml:23
 msgctxt "ActivityConfig|"
 msgid "Manual"
 msgstr "Əl ilə"
@@ -4823,7 +4823,7 @@ msgstr "Əl ilə"
 #: activities/erase/ActivityConfig.qml:31
 #: activities/erase_2clic/ActivityConfig.qml:31
 #: activities/erase_clic/ActivityConfig.qml:31
-#: activities/number_sequence/ActivityConfig.qml:31
+#: activities/number_sequence/ActivityConfig.qml:32
 msgctxt "ActivityConfig|"
 msgid "Go to the next level"
 msgstr "Sonrakı səviyyəyə keçin"
@@ -19088,6 +19088,11 @@ msgstr ""
 "öyrənəcəksiniz və öyrəndiklərinizi təkrarlayacaqsınız.<br>İstinad notları "
 "qırmızı rəngdə olacaq. Bu sizə onların ətrafındakı notları oxumanıza kömək "
 "edəcək."
+
+#: activities/number_sequence/ActivityConfig.qml:36
+msgctxt "ActivityConfig|"
+msgid "Highlight next point"
+msgstr ""
 
 #. Activity title
 #: activities/number_sequence/ActivityInfo.qml:15

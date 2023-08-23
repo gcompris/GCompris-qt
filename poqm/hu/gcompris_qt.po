@@ -4803,7 +4803,7 @@ msgstr "Kattints egy nagybetűre"
 #: activities/erase/ActivityConfig.qml:21
 #: activities/erase_2clic/ActivityConfig.qml:21
 #: activities/erase_clic/ActivityConfig.qml:21
-#: activities/number_sequence/ActivityConfig.qml:21
+#: activities/number_sequence/ActivityConfig.qml:22
 msgctxt "ActivityConfig|"
 msgid "Automatic"
 msgstr "Automata"
@@ -4814,7 +4814,7 @@ msgstr "Automata"
 #: activities/erase/ActivityConfig.qml:22
 #: activities/erase_2clic/ActivityConfig.qml:22
 #: activities/erase_clic/ActivityConfig.qml:22
-#: activities/number_sequence/ActivityConfig.qml:22
+#: activities/number_sequence/ActivityConfig.qml:23
 msgctxt "ActivityConfig|"
 msgid "Manual"
 msgstr "Útmutató"
@@ -4825,7 +4825,7 @@ msgstr "Útmutató"
 #: activities/erase/ActivityConfig.qml:31
 #: activities/erase_2clic/ActivityConfig.qml:31
 #: activities/erase_clic/ActivityConfig.qml:31
-#: activities/number_sequence/ActivityConfig.qml:31
+#: activities/number_sequence/ActivityConfig.qml:32
 msgctxt "ActivityConfig|"
 msgid "Go to the next level"
 msgstr "Menj a következő pályára!"
@@ -19043,6 +19043,11 @@ msgstr ""
 "egészen a G kulcs D6-osáig.<br> Minden szinten egy új hangjegyet fogsz "
 "megtanulni, és a már meglévőket gyakorolni.<br> A kiindulási hangjegyek "
 "vörös színűek, ezek fognak segíteni a hangjegyek elhelyezésében a kottán."
+
+#: activities/number_sequence/ActivityConfig.qml:36
+msgctxt "ActivityConfig|"
+msgid "Highlight next point"
+msgstr ""
 
 #. Activity title
 #: activities/number_sequence/ActivityInfo.qml:15

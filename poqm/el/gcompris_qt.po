@@ -4952,7 +4952,7 @@ msgstr "Κεφαλαία γράμματα"
 #: activities/erase/ActivityConfig.qml:21
 #: activities/erase_2clic/ActivityConfig.qml:21
 #: activities/erase_clic/ActivityConfig.qml:21
-#: activities/number_sequence/ActivityConfig.qml:21
+#: activities/number_sequence/ActivityConfig.qml:22
 msgctxt "ActivityConfig|"
 msgid "Automatic"
 msgstr "Αυτόματα"
@@ -4963,7 +4963,7 @@ msgstr "Αυτόματα"
 #: activities/erase/ActivityConfig.qml:22
 #: activities/erase_2clic/ActivityConfig.qml:22
 #: activities/erase_clic/ActivityConfig.qml:22
-#: activities/number_sequence/ActivityConfig.qml:22
+#: activities/number_sequence/ActivityConfig.qml:23
 msgctxt "ActivityConfig|"
 msgid "Manual"
 msgstr "Χειροκίνητα"
@@ -4974,7 +4974,7 @@ msgstr "Χειροκίνητα"
 #: activities/erase/ActivityConfig.qml:31
 #: activities/erase_2clic/ActivityConfig.qml:31
 #: activities/erase_clic/ActivityConfig.qml:31
-#: activities/number_sequence/ActivityConfig.qml:31
+#: activities/number_sequence/ActivityConfig.qml:32
 msgctxt "ActivityConfig|"
 msgid "Go to the next level"
 msgstr "Μετάβαση στο επόμενο επίπεδο"
@@ -19492,6 +19492,11 @@ msgstr ""
 "καινούριες νότες και θα κάνεις εξάσκηση σε αυτές που ήδη έχεις μάθει.<br>Οι "
 "νότες αναφοράς είναι χρωματισμένες με κόκκινο και θα σε βοηθήσουν να "
 "διαβάζεις τις νότες που βρίσκονται κοντά τους."
+
+#: activities/number_sequence/ActivityConfig.qml:36
+msgctxt "ActivityConfig|"
+msgid "Highlight next point"
+msgstr ""
 
 #. Activity title
 #: activities/number_sequence/ActivityInfo.qml:15

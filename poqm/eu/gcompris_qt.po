@@ -4817,7 +4817,7 @@ msgstr "Egin klik letra larri batean"
 #: activities/erase/ActivityConfig.qml:21
 #: activities/erase_2clic/ActivityConfig.qml:21
 #: activities/erase_clic/ActivityConfig.qml:21
-#: activities/number_sequence/ActivityConfig.qml:21
+#: activities/number_sequence/ActivityConfig.qml:22
 msgctxt "ActivityConfig|"
 msgid "Automatic"
 msgstr "Automatikoa"
@@ -4828,7 +4828,7 @@ msgstr "Automatikoa"
 #: activities/erase/ActivityConfig.qml:22
 #: activities/erase_2clic/ActivityConfig.qml:22
 #: activities/erase_clic/ActivityConfig.qml:22
-#: activities/number_sequence/ActivityConfig.qml:22
+#: activities/number_sequence/ActivityConfig.qml:23
 msgctxt "ActivityConfig|"
 msgid "Manual"
 msgstr "Eskuz"
@@ -4839,7 +4839,7 @@ msgstr "Eskuz"
 #: activities/erase/ActivityConfig.qml:31
 #: activities/erase_2clic/ActivityConfig.qml:31
 #: activities/erase_clic/ActivityConfig.qml:31
-#: activities/number_sequence/ActivityConfig.qml:31
+#: activities/number_sequence/ActivityConfig.qml:32
 msgctxt "ActivityConfig|"
 msgid "Go to the next level"
 msgstr "Joan hurrengo mailara"
@@ -19158,6 +19158,11 @@ msgstr ""
 "abiatu eta sol 2. klabeko Re6 arte.<br>Maila bakoitzean nota berriak ikasiko "
 "dituzu eta ikasitakoak praktikan ipiniko dituzu.<br>Erreferentziako notak "
 "gorriz margotuta daude eta haien inguruko notak irakurtzen lagunduko dizute."
+
+#: activities/number_sequence/ActivityConfig.qml:36
+msgctxt "ActivityConfig|"
+msgid "Highlight next point"
+msgstr ""
 
 #. Activity title
 #: activities/number_sequence/ActivityInfo.qml:15

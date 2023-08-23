@@ -4816,7 +4816,7 @@ msgstr "Klaku sur majuskla litero"
 #: activities/erase/ActivityConfig.qml:21
 #: activities/erase_2clic/ActivityConfig.qml:21
 #: activities/erase_clic/ActivityConfig.qml:21
-#: activities/number_sequence/ActivityConfig.qml:21
+#: activities/number_sequence/ActivityConfig.qml:22
 msgctxt "ActivityConfig|"
 msgid "Automatic"
 msgstr "Aŭtomata"
@@ -4827,7 +4827,7 @@ msgstr "Aŭtomata"
 #: activities/erase/ActivityConfig.qml:22
 #: activities/erase_2clic/ActivityConfig.qml:22
 #: activities/erase_clic/ActivityConfig.qml:22
-#: activities/number_sequence/ActivityConfig.qml:22
+#: activities/number_sequence/ActivityConfig.qml:23
 msgctxt "ActivityConfig|"
 msgid "Manual"
 msgstr "Manlibro"
@@ -4838,7 +4838,7 @@ msgstr "Manlibro"
 #: activities/erase/ActivityConfig.qml:31
 #: activities/erase_2clic/ActivityConfig.qml:31
 #: activities/erase_clic/ActivityConfig.qml:31
-#: activities/number_sequence/ActivityConfig.qml:31
+#: activities/number_sequence/ActivityConfig.qml:32
 msgctxt "ActivityConfig|"
 msgid "Go to the next level"
 msgstr "Iru al la sekva nivelo"
@@ -19103,6 +19103,11 @@ msgstr ""
 "<br>Sur ĉiu nivelo vi lernos novajn notojn kaj praktikos tiujn, kiujn vi jam "
 "lernis.<br>Referencaj notoj estas koloritaj ruĝe kaj helpos vin legi la "
 "notojn metitajn ĉirkaŭ ili."
+
+#: activities/number_sequence/ActivityConfig.qml:36
+msgctxt "ActivityConfig|"
+msgid "Highlight next point"
+msgstr ""
 
 #. Activity title
 #: activities/number_sequence/ActivityInfo.qml:15

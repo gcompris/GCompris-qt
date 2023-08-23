@@ -4887,7 +4887,7 @@ msgstr "Klikoni mbi një shkronjë të madhe"
 #: activities/erase/ActivityConfig.qml:21
 #: activities/erase_2clic/ActivityConfig.qml:21
 #: activities/erase_clic/ActivityConfig.qml:21
-#: activities/number_sequence/ActivityConfig.qml:21
+#: activities/number_sequence/ActivityConfig.qml:22
 msgctxt "ActivityConfig|"
 msgid "Automatic"
 msgstr "I vetvetishëm"
@@ -4898,7 +4898,7 @@ msgstr "I vetvetishëm"
 #: activities/erase/ActivityConfig.qml:22
 #: activities/erase_2clic/ActivityConfig.qml:22
 #: activities/erase_clic/ActivityConfig.qml:22
-#: activities/number_sequence/ActivityConfig.qml:22
+#: activities/number_sequence/ActivityConfig.qml:23
 msgctxt "ActivityConfig|"
 msgid "Manual"
 msgstr "Dorazi"
@@ -4909,7 +4909,7 @@ msgstr "Dorazi"
 #: activities/erase/ActivityConfig.qml:31
 #: activities/erase_2clic/ActivityConfig.qml:31
 #: activities/erase_clic/ActivityConfig.qml:31
-#: activities/number_sequence/ActivityConfig.qml:31
+#: activities/number_sequence/ActivityConfig.qml:32
 msgctxt "ActivityConfig|"
 msgid "Go to the next level"
 msgstr "Kalo te niveli pasues"
@@ -19254,6 +19254,11 @@ msgstr ""
 "të reja dhe do të ushtroheni me ato që keni mësuar tashmë.<br>Notat për t’u "
 "marrë për bazë tregohen me të kuqe dhe do t’ju ndihmojnë të lexoni nota të "
 "vendosura rreth tyre."
+
+#: activities/number_sequence/ActivityConfig.qml:36
+msgctxt "ActivityConfig|"
+msgid "Highlight next point"
+msgstr ""
 
 #. Activity title
 #: activities/number_sequence/ActivityInfo.qml:15

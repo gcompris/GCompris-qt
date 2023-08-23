@@ -4744,7 +4744,7 @@ msgstr "വലിയ അക്ഷരത്തിൽ ക്ലിക്ക് ച
 #: activities/erase/ActivityConfig.qml:21
 #: activities/erase_2clic/ActivityConfig.qml:21
 #: activities/erase_clic/ActivityConfig.qml:21
-#: activities/number_sequence/ActivityConfig.qml:21
+#: activities/number_sequence/ActivityConfig.qml:22
 msgctxt "ActivityConfig|"
 msgid "Automatic"
 msgstr "ഓട്ടോമാറ്റിക്"
@@ -4755,7 +4755,7 @@ msgstr "ഓട്ടോമാറ്റിക്"
 #: activities/erase/ActivityConfig.qml:22
 #: activities/erase_2clic/ActivityConfig.qml:22
 #: activities/erase_clic/ActivityConfig.qml:22
-#: activities/number_sequence/ActivityConfig.qml:22
+#: activities/number_sequence/ActivityConfig.qml:23
 msgctxt "ActivityConfig|"
 msgid "Manual"
 msgstr "മാന്വൽ"
@@ -4766,7 +4766,7 @@ msgstr "മാന്വൽ"
 #: activities/erase/ActivityConfig.qml:31
 #: activities/erase_2clic/ActivityConfig.qml:31
 #: activities/erase_clic/ActivityConfig.qml:31
-#: activities/number_sequence/ActivityConfig.qml:31
+#: activities/number_sequence/ActivityConfig.qml:32
 msgctxt "ActivityConfig|"
 msgid "Go to the next level"
 msgstr "അടുത്ത ഘട്ടത്തിലേക്കു പോകൽ"
@@ -18893,6 +18893,11 @@ msgstr ""
 "പഠിപ്പിക്കും.<br>ഓരോ ഘട്ടങ്ങളിലും പുതിയ സ്വരങ്ങൾ പഠിക്കുകയും പഠിച്ചവ പരിശീലിക്കുകയും ചെയ്യും."
 "<br>റഫറൻസ് സ്വരങ്ങൾ ചുവന്ന നിറത്തിൽ കൊടുത്തത് അതിനു ചുറ്റുമുള്ള സ്വരങ്ങൾ വായിക്കാൻ നിങ്ങളെ "
 "സഹായിക്കും."
+
+#: activities/number_sequence/ActivityConfig.qml:36
+msgctxt "ActivityConfig|"
+msgid "Highlight next point"
+msgstr ""
 
 #. Activity title
 #: activities/number_sequence/ActivityInfo.qml:15

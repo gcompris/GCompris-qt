@@ -4858,7 +4858,7 @@ msgstr "Napsauta kirjainta"
 #: activities/erase/ActivityConfig.qml:21
 #: activities/erase_2clic/ActivityConfig.qml:21
 #: activities/erase_clic/ActivityConfig.qml:21
-#: activities/number_sequence/ActivityConfig.qml:21
+#: activities/number_sequence/ActivityConfig.qml:22
 msgctxt "ActivityConfig|"
 msgid "Automatic"
 msgstr "Automaattinen"
@@ -4869,7 +4869,7 @@ msgstr "Automaattinen"
 #: activities/erase/ActivityConfig.qml:22
 #: activities/erase_2clic/ActivityConfig.qml:22
 #: activities/erase_clic/ActivityConfig.qml:22
-#: activities/number_sequence/ActivityConfig.qml:22
+#: activities/number_sequence/ActivityConfig.qml:23
 msgctxt "ActivityConfig|"
 msgid "Manual"
 msgstr "Manuaalinen "
@@ -4880,7 +4880,7 @@ msgstr "Manuaalinen "
 #: activities/erase/ActivityConfig.qml:31
 #: activities/erase_2clic/ActivityConfig.qml:31
 #: activities/erase_clic/ActivityConfig.qml:31
-#: activities/number_sequence/ActivityConfig.qml:31
+#: activities/number_sequence/ActivityConfig.qml:32
 msgctxt "ActivityConfig|"
 msgid "Go to the next level"
 msgstr "Siirrä seuraavalle tasolle"
@@ -19284,6 +19284,11 @@ msgstr ""
 "diskanttiavaimella.<br>Jokaisella tasolla opit uusia nuotteja ja "
 "harjoittelet jo oppimiasi säveliä.<br>Viiteäänet on väritetty punaisella ja "
 "ne auttavat sinua lukemaan niiden ympärille asetettuja muistiinpanoja."
+
+#: activities/number_sequence/ActivityConfig.qml:36
+msgctxt "ActivityConfig|"
+msgid "Highlight next point"
+msgstr ""
 
 #. Activity title
 #: activities/number_sequence/ActivityInfo.qml:15

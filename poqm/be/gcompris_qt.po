@@ -5043,7 +5043,7 @@ msgstr "Вялікія літары"
 #: activities/erase/ActivityConfig.qml:21
 #: activities/erase_2clic/ActivityConfig.qml:21
 #: activities/erase_clic/ActivityConfig.qml:21
-#: activities/number_sequence/ActivityConfig.qml:21
+#: activities/number_sequence/ActivityConfig.qml:22
 msgctxt "ActivityConfig|"
 msgid "Automatic"
 msgstr "Аўтаматычна"
@@ -5054,7 +5054,7 @@ msgstr "Аўтаматычна"
 #: activities/erase/ActivityConfig.qml:22
 #: activities/erase_2clic/ActivityConfig.qml:22
 #: activities/erase_clic/ActivityConfig.qml:22
-#: activities/number_sequence/ActivityConfig.qml:22
+#: activities/number_sequence/ActivityConfig.qml:23
 msgctxt "ActivityConfig|"
 msgid "Manual"
 msgstr "Уручную"
@@ -5065,7 +5065,7 @@ msgstr "Уручную"
 #: activities/erase/ActivityConfig.qml:31
 #: activities/erase_2clic/ActivityConfig.qml:31
 #: activities/erase_clic/ActivityConfig.qml:31
-#: activities/number_sequence/ActivityConfig.qml:31
+#: activities/number_sequence/ActivityConfig.qml:32
 msgctxt "ActivityConfig|"
 msgid "Go to the next level"
 msgstr "Перайсці да наступнага ўзроўню"
@@ -19844,6 +19844,11 @@ msgstr ""
 "верхняй Рэ ў скрыпкавым ключы.<br>На кожным узроўні вы будзеце вывучаць "
 "новыя ноты і практыкаваць тыя, што ўжо вывучылі.<br>Базавыя ноты паказваюцца "
 "ў чырвоным колеры і дапамагаюць вам чытаць размешчаныя вакол іх іншыя ноты."
+
+#: activities/number_sequence/ActivityConfig.qml:36
+msgctxt "ActivityConfig|"
+msgid "Highlight next point"
+msgstr ""
 
 #. Activity title
 #: activities/number_sequence/ActivityInfo.qml:15

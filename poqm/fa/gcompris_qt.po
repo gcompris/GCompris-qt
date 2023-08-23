@@ -4604,7 +4604,7 @@ msgstr "کلیک بر روی حروف بزرگ"
 #: activities/erase/ActivityConfig.qml:21
 #: activities/erase_2clic/ActivityConfig.qml:21
 #: activities/erase_clic/ActivityConfig.qml:21
-#: activities/number_sequence/ActivityConfig.qml:21
+#: activities/number_sequence/ActivityConfig.qml:22
 msgctxt "ActivityConfig|"
 msgid "Automatic"
 msgstr "اتوماتیک"
@@ -4615,7 +4615,7 @@ msgstr "اتوماتیک"
 #: activities/erase/ActivityConfig.qml:22
 #: activities/erase_2clic/ActivityConfig.qml:22
 #: activities/erase_clic/ActivityConfig.qml:22
-#: activities/number_sequence/ActivityConfig.qml:22
+#: activities/number_sequence/ActivityConfig.qml:23
 msgctxt "ActivityConfig|"
 msgid "Manual"
 msgstr "دستی"
@@ -4626,7 +4626,7 @@ msgstr "دستی"
 #: activities/erase/ActivityConfig.qml:31
 #: activities/erase_2clic/ActivityConfig.qml:31
 #: activities/erase_clic/ActivityConfig.qml:31
-#: activities/number_sequence/ActivityConfig.qml:31
+#: activities/number_sequence/ActivityConfig.qml:32
 msgctxt "ActivityConfig|"
 msgid "Go to the next level"
 msgstr "رفتن به مرحله بعد"
@@ -17890,6 +17890,11 @@ msgid ""
 "treble clef.<br>On each level you will learn new notes and practice the ones "
 "you have already learned.<br>Reference notes are colored in red and will "
 "help you to read the notes placed around them."
+msgstr ""
+
+#: activities/number_sequence/ActivityConfig.qml:36
+msgctxt "ActivityConfig|"
+msgid "Highlight next point"
 msgstr ""
 
 #. Activity title
