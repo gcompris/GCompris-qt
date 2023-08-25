@@ -4779,7 +4779,7 @@ msgstr "Trykk på ein stor bokstav"
 #: activities/erase/ActivityConfig.qml:21
 #: activities/erase_2clic/ActivityConfig.qml:21
 #: activities/erase_clic/ActivityConfig.qml:21
-#: activities/number_sequence/ActivityConfig.qml:21
+#: activities/number_sequence/ActivityConfig.qml:22
 msgctxt "ActivityConfig|"
 msgid "Automatic"
 msgstr "Automatisk"
@@ -4790,7 +4790,7 @@ msgstr "Automatisk"
 #: activities/erase/ActivityConfig.qml:22
 #: activities/erase_2clic/ActivityConfig.qml:22
 #: activities/erase_clic/ActivityConfig.qml:22
-#: activities/number_sequence/ActivityConfig.qml:22
+#: activities/number_sequence/ActivityConfig.qml:23
 msgctxt "ActivityConfig|"
 msgid "Manual"
 msgstr "Manuelt"
@@ -4801,7 +4801,7 @@ msgstr "Manuelt"
 #: activities/erase/ActivityConfig.qml:31
 #: activities/erase_2clic/ActivityConfig.qml:31
 #: activities/erase_clic/ActivityConfig.qml:31
-#: activities/number_sequence/ActivityConfig.qml:31
+#: activities/number_sequence/ActivityConfig.qml:32
 msgctxt "ActivityConfig|"
 msgid "Go to the next level"
 msgstr "Gå til neste brett"
@@ -19100,6 +19100,11 @@ msgstr ""
 "Her lærer du å lesa notane, frå F1 i f-nøkkelen og opp til D6 i g-nøkkelen."
 "<br>På kvart nivå lærer du nye notar og øver deg på dei du alt har lært."
 "<br>Referansenotane vert viste i raudt for å hjelpa deg å finna rett note."
+
+#: activities/number_sequence/ActivityConfig.qml:36
+msgctxt "ActivityConfig|"
+msgid "Highlight next point"
+msgstr ""
 
 #. Activity title
 #: activities/number_sequence/ActivityInfo.qml:15
