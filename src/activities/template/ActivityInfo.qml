@@ -11,16 +11,16 @@ ActivityInfo {
   icon: "template/template.svg"
   author: "NAME &lt;EMAIL&gt;"
   //: Activity title
-  title: "Template activity"
+  title: qsTr("Template activity")
   //: Help title
-  description: ""
+  description: qsTr("")
   //intro: "put here in comment the text for the intro voice"
   //: Help goal
-  goal: ""
+  goal: qsTr("")
   //: Help prerequisite
   prerequisite: ""
   //: Help manual
-  manual: ""
+  manual: qsTr("")
   credit: ""
   section: "fun"
   createdInVersion: creationversion
