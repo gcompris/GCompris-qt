@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
-"PO-Revision-Date: 2023-08-02 12:43\n"
+"PO-Revision-Date: 2023-08-27 03:43\n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
@@ -8878,43 +8878,43 @@ msgstr ""
 #: activities/fractions_find/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Find the fractions"
-msgstr ""
+msgstr "找分数"
 
 #. Help title
 #: activities/fractions_find/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Find the correct numerator and denominator of the represented fraction."
-msgstr ""
+msgstr "找到正确的分子和分母。"
 
 #: activities/fractions_find/resource/1/Data.qml:19
 msgctxt "Data|"
 msgid "Find numerator (with a pie)."
-msgstr ""
+msgstr "找分子（分饼图）。"
 
 #: activities/fractions_find/resource/2/Data.qml:19
 msgctxt "Data|"
 msgid "Find numerator (with a square)."
-msgstr ""
+msgstr "找分子（分正方形）。"
 
 #: activities/fractions_find/resource/3/Data.qml:9
 msgctxt "Data|"
 msgid "Find denominator (with a pie)."
-msgstr ""
+msgstr "找分母（分饼图）"
 
 #: activities/fractions_find/resource/4/Data.qml:9
 msgctxt "Data|"
 msgid "Find denominator (with a square)."
-msgstr ""
+msgstr "找分母（分正方形）"
 
 #: activities/fractions_find/resource/5/Data.qml:9
 msgctxt "Data|"
 msgid "Find numerator and denominator (with a pie)."
-msgstr "查找分子和分母（带饼图）。"
+msgstr "找分子与分母（分饼图）。"
 
 #: activities/fractions_find/resource/6/Data.qml:9
 msgctxt "Data|"
 msgid "Find numerator and denominator (with a square)."
-msgstr "查找分子和分母（带正方形）。"
+msgstr "找分子与分母（分正方形）。"
 
 #. Activity title
 #: activities/geo-country/ActivityInfo.qml:19
@@ -21527,7 +21527,7 @@ msgstr ""
 #: activities/smallnumbers2/resource/8/Data.qml:13
 msgctxt "Data|"
 msgid "Numbers from 0 to 9."
-msgstr ""
+msgstr "从0到9的数。"
 
 #: activities/smallnumbers/resource/8/Data.qml:17
 msgctxt "Data|"
@@ -23169,25 +23169,25 @@ msgstr "最大值：500000。"
 #: activities/tens_complement_find/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Find ten's complement"
-msgstr ""
+msgstr "和为十"
 
 #. Help title
 #: activities/tens_complement_find/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Find the ten's complement of each number."
-msgstr ""
+msgstr "找出相加等于10的数。"
 
 #. Help goal
 #: activities/tens_complement_find/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Learn to find ten's complement."
-msgstr ""
+msgstr "学习找到和为10的数。"
 
 #. Help prerequisite
 #: activities/tens_complement_find/ActivityInfo.qml:21
 msgctxt "ActivityInfo|"
 msgid "Numbers from 1 to 10 and additions."
-msgstr ""
+msgstr "了解1到10之间的数字以及加法。"
 
 #: activities/tens_complement_find/ActivityInfo.qml:23
 #: activities/tens_complement_use/ActivityInfo.qml:24
@@ -23198,6 +23198,8 @@ msgid ""
 "corresponding lines. To correct the errors, click on the wrong numbers to "
 "remove them and repeat the previous steps."
 msgstr ""
+"完成本页所有题目后，点击确定按钮验证答案。如果有不正确的答案，对应的题目后将"
+"出现叉号图标。要更正错误，点击数字移除它们，并重复之前的步骤。"
 
 #. Help manual
 #: activities/tens_complement_find/ActivityInfo.qml:23
@@ -23206,21 +23208,23 @@ msgid ""
 "Create pairs of numbers equal to ten. Select a number in the list, then "
 "select an empty spot of an operation to move the selected number there."
 msgstr ""
+"建立一对相加等于十的数字。从列表中选择一个数字，之后选择算式中的一个空槽，来"
+"将数字移动到空槽中。"
 
 #: activities/tens_complement_find/resource/1/Data.qml:25
 msgctxt "Data|"
 msgid "First number from 1 to 4."
-msgstr ""
+msgstr "第一个数从1到4。"
 
 #: activities/tens_complement_find/resource/2/Data.qml:9
 msgctxt "Data|"
 msgid "First number from 5 to 9."
-msgstr ""
+msgstr "第一个数从5到9。"
 
 #: activities/tens_complement_find/resource/4/Data.qml:9
 msgctxt "Data|"
 msgid "Find both numbers."
-msgstr ""
+msgstr "找出一对数。"
 
 #. Activity title
 #: activities/tens_complement_swap/ActivityInfo.qml:14
