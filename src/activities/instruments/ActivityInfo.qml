@@ -18,7 +18,6 @@ ActivityInfo {
 //  intro: "Click on the correct musical instrument."
   //: Help goal
   goal: qsTr("Learn to recognize musical instruments.")
-  //: Help prerequisite
   prerequisite: ""
   //: Help manual
   manual: qsTr("Click on the correct musical instrument.") + ("<br><br>") +

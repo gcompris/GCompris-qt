@@ -17,7 +17,6 @@ ActivityInfo {
   //intro: "Capture at least 25 seeds to win the game"
   //: Help goal
   goal: qsTr("The game starts with four seeds in each house. The objective of the game is to capture more seeds than one's opponent. Since the game has only 48 seeds, capturing 25 is sufficient to win the game. Since there is an even number of seeds, it is possible for the game to end in a draw, where each player has captured 24.")
-  //: Help prerequisite
   prerequisite: ""
   //: Help manual
   manual: qsTr("Players take turns moving the seeds. On a turn, a player chooses one of the six houses under their control. The player removes all seeds from that house, and distributes them, dropping one in each house counter-clockwise from this house, in a process called sowing. Seeds are not distributed into the end scoring houses, nor into the house drawn from. The starting house is always left empty; if it contained 12 (or more) seeds, it is skipped, and the twelfth seed is placed in the next house.") + ("<br/><br/>") +

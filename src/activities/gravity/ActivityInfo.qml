@@ -22,7 +22,6 @@ ActivityInfo {
   //intro: "Move the spaceship to avoid hitting the planets and reach the space station."
   //: Help goal
   goal: qsTr("Move the spaceship to avoid hitting the planets and reach the space station.")
-  //: Help prerequisite
   prerequisite: ""
   //: Help manual
   manual: qsTr("Move the spaceship with the left and right keys, or with the buttons on the screen for mobile devices. Try to stay near the center of the screen and anticipate by looking at the size and direction of the arrow showing the gravity force.") + ("<br><br>") +

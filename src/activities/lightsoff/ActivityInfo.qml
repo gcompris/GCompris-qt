@@ -18,7 +18,6 @@ ActivityInfo {
 //  intro: "Click on the lamps to turn them off."
   //: Help goal
   goal: qsTr("The goal is to turn off all the lights.")
-  //: Help prerequisite
   prerequisite: ""
   //: Help manual
   manual: qsTr("The effect of pressing a window is to toggle the state of that window, and of its immediate vertical and horizontal neighbors. You must turn off all the lights. If you click on Tux, the solution is shown.")

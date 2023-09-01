@@ -15,9 +15,7 @@ ActivityInfo {
   //: Help title
   description: qsTr("Follow the given directions to help Tux reach the target.")
   //intro: "Click on the grid squares following the given directions to help Tux reach the target."
-  //: Help goal
   goal: ""
-  //: Help prerequisite
   prerequisite: ""
   //: Help manual
   manual: qsTr("Click on the grid squares to move Tux following the given directions.") + "<br><br>" +

@@ -16,9 +16,7 @@ ActivityInfo {
   //: Help title
   description: qsTr("Play the end of the chess game against Tux.")
   //intro: "Click on a white chess piece and green boxes will appear to indicate all the movements that piece can make. Try and get the black king into checkmate."
-  //: Help goal
   goal: ""
-  //: Help prerequisite
   prerequisite: ""
   //: Help manual
   //: Much of this string is shared across the three activities "chess", "chess_partyend", and "chess_2players".

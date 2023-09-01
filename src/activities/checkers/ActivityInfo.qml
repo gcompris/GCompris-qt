@@ -18,7 +18,6 @@ ActivityInfo {
     //intro: "play checkers against Tux"
     //: Help goal
     goal: qsTr("Capture all the pieces of your opponent before your opponent captures all of yours.")
-    //: Help prerequisite
     prerequisite: ""
     //: Help manual
     manual: qsTr("Checkers is played by two opponents, on opposite sides of the gameboard. One player has the dark pieces; the other has the light pieces. Players alternate turns. A player may not move an opponent's piece. A move consists of moving a piece diagonally to an adjacent unoccupied square. If the adjacent square contains an opponent's piece, and the square immediately beyond it is vacant, the piece may be captured (and removed from the game) by jumping over it.

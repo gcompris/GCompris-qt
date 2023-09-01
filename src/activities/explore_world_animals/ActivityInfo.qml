@@ -22,7 +22,6 @@ ActivityInfo {
   // intro: "Learn about world animals and locate them on a map."
   //: Help goal
   goal: qsTr("Learn about various wild animals from around the world and remember where they live.")
-  //: Help prerequisite
   prerequisite: ""
   //: Help manual
   manual: qsTr("There are two levels in this game.") + ("<br><br>") +

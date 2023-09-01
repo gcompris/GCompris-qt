@@ -20,9 +20,7 @@ ActivityInfo {
   //: Help title
   description: qsTr("Drag and Drop the regions to complete the country maps.")
 //  intro: "Drag and drop the regions to complete the country maps."
-  //: Help goal
   goal: ""
-  //: Help prerequisite
   prerequisite: ""
   //: Help manual
   manual: qsTr("Drag and drop different regions of the country to their correct locations to complete the map.")

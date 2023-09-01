@@ -16,7 +16,6 @@ ActivityInfo {
   //: Help title
   description: qsTr("Help Tux escape the cave by finding the hidden number.")
 //  intro: "Find out the number by typing a number from the range proposed."
-  //: Help goal
   goal: ""
   //: Help prerequisite
   prerequisite: qsTr("Numbers.")

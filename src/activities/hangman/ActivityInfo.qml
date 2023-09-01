@@ -17,7 +17,6 @@ ActivityInfo {
   description: qsTr("Guess the letters of the given word.")
   //: Help goal
   goal: qsTr("This is a good exercise to improve reading and spelling skills.")
-  //: Help prerequisite
   prerequisite: ""
   // intro: "A word is hidden, you must discover it letter by letter."
   //: Help manual

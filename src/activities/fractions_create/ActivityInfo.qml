@@ -17,11 +17,8 @@ ActivityInfo {
     "<br>" +
     qsTr("Select the appropriate number of parts as described in the instructions.")
   //intro: "Select the appropriate number of parts as described in the instructions."
-  //: Help goal
   goal: ""
-  //: Help prerequisite
   prerequisite: ""
-  //: Help manual
   manual: ""
   credit: ""
   section: "math arithmetic"

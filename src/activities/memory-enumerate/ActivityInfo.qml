@@ -18,7 +18,6 @@ ActivityInfo {
 //  intro: "Match a number card with a card displaying the same number of butterflies."
   //: Help goal
   goal: qsTr("Numeration training, memory.")
-  //: Help prerequisite
   prerequisite: ""
   //: Help manual
   manual: qsTr("Each card is hiding either a picture with a number of items, or a number. You have to match the numbers with the corresponding pictures.") + ("<br><br>") +

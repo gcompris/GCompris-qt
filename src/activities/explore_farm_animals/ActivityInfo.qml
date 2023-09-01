@@ -18,7 +18,6 @@ ActivityInfo {
   // intro: "Learn about farmyard animals and the noises that they make."
   //: Help goal
   goal: qsTr("Learn to associate animal sounds with the animal name and what the animal looks like.")
-  //: Help prerequisite
   prerequisite: ""
   //: Help manual
   manual: qsTr("There are three levels in this game.") + ("<br><br>") +

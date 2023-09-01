@@ -16,7 +16,6 @@ ActivityInfo {
   //: Help title
   description: qsTr("The objective is to assemble the baby puzzle.")
   // intro: "Move each puzzle piece, to obtain the completed puzzle. You can change their orientation by clicking on the arrows."
-  //: Help goal
   goal: ""
   //: Help prerequisite
   prerequisite: qsTr("Mouse-manipulation.")

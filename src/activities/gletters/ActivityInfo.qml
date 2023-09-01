@@ -18,7 +18,6 @@ ActivityInfo {
 //  intro: "Type the letters on your keyboard before they reach the ground."
   //: Help goal
   goal: qsTr("Letter association between the screen and the keyboard.")
-  //: Help prerequisite
   prerequisite: ""
   //: Help manual
   manual: qsTr("Type the falling letters before they reach the ground.")

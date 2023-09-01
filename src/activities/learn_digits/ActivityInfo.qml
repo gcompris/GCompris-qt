@@ -18,7 +18,6 @@ ActivityInfo {
   //intro: "Click on the circles to match the given digit."
   //: Help goal
   goal: qsTr("Learn digits by counting their corresponding value.")
-  //: Help prerequisite
   prerequisite: ""
   //: Help manual
   manual: qsTr("A digit is displayed on the screen. Fill the corresponding number of circles and validate your answer.") + ("<br><br>") +

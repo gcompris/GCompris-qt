@@ -18,7 +18,6 @@ ActivityInfo {
 //  intro: "Match the color by moving the sliders on the torches"
   //: Help goal
   goal: qsTr("Mix primary colors to match the given color.")
-  //: Help prerequisite
   prerequisite: ""
   //: Help manual
   manual: qsTr("This activity teaches how mixing primary light colors works (additive mixing).") + ("<br><br>") +

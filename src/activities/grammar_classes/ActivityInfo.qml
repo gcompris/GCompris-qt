@@ -21,7 +21,6 @@ ActivityInfo {
     //intro: "Assign the requested grammatical classes to the corresponding words."
     //: Help goal
     goal: qsTr("Learn to identify grammatical classes.")
-    //: Help prerequisite
     prerequisite: ""
     //: Help manual
     manual: qsTr("Assign the requested grammatical class to the corresponding words.") + ("<br>") +

@@ -18,7 +18,6 @@ ActivityInfo {
   //intro: "Click on the circles to give the operation's result."
   //: Help goal
   goal: qsTr("Learn subtractions by counting their result.")
-  //: Help prerequisite
   prerequisite: ""
   //: Help manual
   manual: qsTr("A subtraction is displayed on the screen. Calculate the result, fill the corresponding number of circles and validate your answer.") + ("<br><br>") +

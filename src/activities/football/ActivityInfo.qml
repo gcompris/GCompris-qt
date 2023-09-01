@@ -18,7 +18,6 @@ ActivityInfo {
 //  intro: "Drag a line from the ball to set the speed and direction of your kick."
   //: Help goal
   goal: qsTr("Kick the ball behind the goal keeper on the right.")
-  //: Help prerequisite
   prerequisite: ""
   //: Help manual
   manual: qsTr("Drag a line from the ball to set its speed and direction, and release it to kick the ball.")

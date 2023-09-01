@@ -15,11 +15,8 @@ ActivityInfo {
   //: Help title
   description: qsTr("Find the correct numerator and denominator of the represented fraction.")
   //intro: "Find the correct numerator and denominator of the represented fraction"
-  //: Help goal
   goal: ""
-  //: Help prerequisite
   prerequisite: ""
-  //: Help manual
   manual: ""
   credit: ""
   section: "math arithmetic"

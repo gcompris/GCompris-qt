@@ -18,7 +18,6 @@ ActivityInfo {
   // intro: "Use the arrow keys to pilot your spaceship safely onto the landing pad."
   //: Help goal
   goal: qsTr("Understand the acceleration caused by the gravity.")
-  //: Help prerequisite
   prerequisite: ""
   //: Help manual
   manual: qsTr("The acceleration caused by the gravity experienced by the spaceship is directly proportional to the mass of the planet and inversely proportional to the square of the distance from the center of the planet. Thus, with every planet the acceleration will differ and as the spaceship comes closer and closer to the planet the acceleration increases.") + ("<br><br>") +

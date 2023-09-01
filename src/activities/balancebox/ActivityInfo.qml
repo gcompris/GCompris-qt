@@ -21,7 +21,6 @@ ActivityInfo {
 //  intro: "Tilt the box to navigate the ball to the door."
   //: Help goal
   goal: qsTr("Practice fine motor skills and basic counting.")
-  //: Help prerequisite
   prerequisite: ""
   //: Help manual
   manual: qsTr("Navigate the ball to the door. Be careful not to make it fall into the holes. Numbered-contact buttons in the box need to be touched in the correct order to unlock the door. You can move the ball by tilting your mobile device. On desktop platforms use the arrow keys to simulate tilting.") + ("<br><br>") +

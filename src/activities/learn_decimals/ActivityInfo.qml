@@ -17,7 +17,6 @@ ActivityInfo {
   //intro: "Drag the arrow to select a part of the bar, and drag the selected part of the bar to the empty area to represent the decimal number."
   //: Help goal
   goal: qsTr("Learn decimals by counting how many squares are needed to represent the decimal number.")
-  //: Help prerequisite
   prerequisite: ""
   //: Help manual
   manual: qsTr("A decimal number is displayed. Drag the arrow to select a part of the bar, and drag the selected part of the bar to the empty area. Repeat these steps until the number of dropped bars corresponds to the displayed decimal number. Then click on the OK button to validate your answer.") + ("<br><br>") +

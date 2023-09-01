@@ -20,7 +20,6 @@ ActivityInfo {
   //intro: "Observe the train and then click on the items to set up a similar train"
   //: Help goal
   goal: qsTr("Memory training.")
-  //: Help prerequisite
   prerequisite: ""
   //: Help manual
   manual: qsTr("A train is displayed for a few seconds. Rebuild it at the top of the screen by dragging the appropriate items. Remove an item from the answer area by dragging it down.") + ("<br><br>") +

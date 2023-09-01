@@ -17,7 +17,6 @@ ActivityInfo {
   author: "Aman Kumar Gupta &lt;gupta2140@gmail.com&gt;"
   //: Activity title
   title: qsTr("Play rhythm")
-  //: Help title
   description: ""
   //intro: "Click the drum to recreate the rhythm"
   //: Help goal

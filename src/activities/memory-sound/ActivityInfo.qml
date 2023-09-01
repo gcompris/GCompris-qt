@@ -18,7 +18,6 @@ ActivityInfo {
 //  intro: "Click on an audio card and find its double."
   //: Help goal
   goal: qsTr("Train your audio memory.")
-  //: Help prerequisite
   prerequisite: ""
   //: Help manual
   manual: qsTr("Each card plays a sound when you flip it, and each card has a twin with exactly the same sound. Click on a card to hear its hidden sound, and try to match the twins. You can only flip two cards at once, so you need to remember where a sound is, while you search for its twin. When you flip the twins, they both disappear.") + ("<br><br>") +

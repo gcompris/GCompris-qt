@@ -18,7 +18,6 @@ ActivityInfo {
   // intro: "Draw the picture by touching the numbers in ascending order."
   //: Help goal
   goal: qsTr("Can count.")
-  //: Help prerequisite
   prerequisite: ""
   //: Help manual
   manual: qsTr("Draw the picture by clicking on each number in the right order.")

@@ -19,7 +19,6 @@ ActivityInfo {
 //  intro: "Guide the number eater with the arrow keys to the numbers that are different from the ones displayed and press the space bar to swallow them."
   //: Help goal
   goal: qsTr("Practice addition, subtraction, multiplication and division.")
-  //: Help prerequisite
   prerequisite: ""
   //: Help manual
   manual: qsTr("If you have a keyboard you can use the arrow keys to move and press space to swallow the numbers. With a mouse you can click on the block next to your position to move and click again to swallow the numbers. With a touch screen you can do like with a mouse or swipe anywhere in the direction you want to move and tap to swallow the numbers.") +

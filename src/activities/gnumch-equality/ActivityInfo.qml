@@ -18,7 +18,6 @@ ActivityInfo {
 //  intro: "Guide the number eater with the arrow keys to the required numbers and press the space bar to swallow them."
   //: Help goal
   goal: qsTr("Practice addition, multiplication, division and subtraction.")
-  //: Help prerequisite
   prerequisite: ""
   //: Help manual
   manual: qsTr("Guide the Number Muncher to the expressions that equal the number at the bottom of the screen.") +

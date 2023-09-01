@@ -13,12 +13,10 @@ ActivityInfo {
   author: "Pulkit Gupta &lt;pulkitnsit@gmail.com&gt;"
   //: Activity title
   title: qsTr("Nine men's morris (with a friend)")
-  //: Help title
   description: ""
   //intro: "Click on the dot where you wish to place your piece and try to take all your friend's pieces."
   //: Help goal
   goal: qsTr("Form mills (lines of 3 pieces) to remove your opponent's pieces until your opponent has only 2 pieces left or can not move anymore.")
-  //: Help prerequisite
   prerequisite: ""
   //: Help manual
   manual: qsTr("Play with a friend. First take turns to place nine pieces, and then take turns to move your pieces.")

@@ -16,9 +16,7 @@ ActivityInfo {
   //: Help title
   description: qsTr("Review the major dates of the inventor of the braille system.")
   //intro: "Discover the history of Louis Braille."
-  //: Help goal
   goal: ""
-  //: Help prerequisite
   prerequisite: ""
   //: Help manual
   manual: qsTr("Read the history of Louis Braille, his biography, and the invention of the braille system. Click on the previous and next buttons to move between the story pages. At the end, arrange the sequence in chronological order.") + ("<br><br>") +

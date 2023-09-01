@@ -21,7 +21,6 @@ ActivityInfo {
   //intro: "Identify the note and press the correct piano key"
   //: Help goal
   goal: qsTr("Develop a good understanding of note position and naming convention. Prepare for the 'Play Piano' and 'Piano Composition' activities.")
-  //: Help prerequisite
   prerequisite: ""
   //: Help manual
   manual: qsTr("Identify the notes correctly and score 100% to complete a level.")

@@ -17,7 +17,6 @@ ActivityInfo {
   author: "Aman Kumar Gupta &lt;gupta2140@gmail.com&gt;"
   //: Activity title
   title: qsTr("Play piano")
-  //: Help title
   description: ""
   //intro: "Click on the keyboard keys that match the notes that you see and hear"
   //: Help goal

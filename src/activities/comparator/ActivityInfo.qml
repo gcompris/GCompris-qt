@@ -20,7 +20,6 @@ ActivityInfo {
   //intro: "Select the correct comparator sign for each pair of numbers in the list."
   //: Help goal
   goal: qsTr("Learn how to compare number values.")
-  //: Help prerequisite
   prerequisite: ""
   //: Help manual
   manual: qsTr("Select a pair of numbers in the list. Then select the correct comparison symbol for this pair. When each line contains a symbol, select the OK button to validate the answers.") + ("<br><br>") +

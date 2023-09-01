@@ -18,7 +18,6 @@ ActivityInfo {
   //intro: "You are responsible for the lock and you must help Tux pass through. Click on the valves to cause either a drop or an increase in the water level, and click on the gates to open or close a path."
   //: Help goal
   goal: qsTr("Understand how a canal lock works.")
-  //: Help prerequisite
   prerequisite: ""
   //: Help manual
   manual: qsTr("You are in charge of the canal lock. Open the gates and the locks in the right order, so that Tux can travel through the gates in both directions.")

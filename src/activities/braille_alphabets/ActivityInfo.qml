@@ -18,7 +18,6 @@ ActivityInfo {
   //intro: "Click on Tux to start and then re-create the Braille cells."
   //: Help goal
   goal: qsTr("Let children discover the braille system.")
-  //: Help prerequisite
   prerequisite: ""
   //: Help manual
   manual: qsTr("The screen has 3 sections: an interactive braille cell, an instruction telling you the character to reproduce, and at the top the braille characters to use as a reference. Each level teaches a set of 10 characters.") + " " +  qsTr("Reproduce the requested character in the interactive braille cell.") + ("<br><br>") +

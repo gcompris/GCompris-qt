@@ -18,7 +18,6 @@ ActivityInfo {
     // intro: "Draw the numbers by connecting the dots in the correct order."
     //: Help goal
     goal: qsTr("Learning how to draw numbers in a funny way.")
-    //: Help prerequisite
     prerequisite: ""
     //: Help manual
     manual: qsTr("Draw the numbers by connecting the dots in the correct order.")

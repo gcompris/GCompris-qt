@@ -18,7 +18,6 @@ ActivityInfo {
   //intro: "Click on the various active elements that make up the water supply. Then press the shower button for Tux."
   //: Help goal
   goal: qsTr("Learn the water cycle.")
-  //: Help prerequisite
   prerequisite: ""
   //: Help manual
   manual: qsTr("Click on different active elements: sun, cloud, pumping station, and the sewage treatment plant, in order to reactivate the entire water system. When the system is back up and Tux is in the shower, push the shower button for him.")

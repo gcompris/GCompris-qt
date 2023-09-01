@@ -18,7 +18,6 @@ ActivityInfo {
   //intro: "Type any key on the keyboard and observe the result."
   //: Help goal
   goal: qsTr("Discover the keyboard.")
-  //: Help prerequisite
   prerequisite: ""
   //: Help manual
   manual: qsTr("Type any key on the keyboard.

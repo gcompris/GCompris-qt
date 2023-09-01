@@ -21,7 +21,6 @@ ActivityInfo {
     only one disc may be moved at a time
     no disc may be placed atop a smaller disc
 ")
-  //: Help prerequisite
   prerequisite: ""
   //: Help manual
   manual: qsTr("Drag and drop the top pieces only from one peg to another, to reproduce the initial left side tower on the right peg.")

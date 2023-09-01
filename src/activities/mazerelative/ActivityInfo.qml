@@ -16,9 +16,7 @@ ActivityInfo {
   //: Help title
   description: qsTr("Help Tux get out of this maze (moves are relative).")
 //  intro: "Help Tux find his way out. Left and right are used to turn and up to go forward."
-  //: Help goal
   goal: ""
-  //: Help prerequisite
   prerequisite: ""
   //: Help manual
   manual: qsTr("Use the arrow keys or swipe the screen to move Tux to the door.") + "<br><br>" +

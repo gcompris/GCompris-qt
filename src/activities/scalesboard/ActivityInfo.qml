@@ -18,7 +18,6 @@ ActivityInfo {
 //  intro: "Drag the weights up to balance the scales."
   //: Help goal
   goal: qsTr("Mental calculation, arithmetic equality.")
-  //: Help prerequisite
   prerequisite: ""
   //: Help manual
   manual: qsTr("To balance the scales, move some weights to the left or the right side (on higher levels). The weights can be arranged in any order.")

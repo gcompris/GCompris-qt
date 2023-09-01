@@ -17,7 +17,6 @@ ActivityInfo {
   //intro: "Drag the arrow to select a number of oranges, and drag the oranges to the empty area to represent the requested quantity."
   //: Help goal
   goal: qsTr("Learn quantities by counting how many oranges are needed to represent the requested quantity.")
-  //: Help prerequisite
   prerequisite: ""
   //: Help manual
   manual: qsTr("A quantity is requested. Drag the arrow to select a number of oranges, and drag the selected oranges to the empty area. Repeat these steps until the number of dropped oranges corresponds to the requested quantity. Then click on the OK button to validate your answer.") + ("<br><br>") +

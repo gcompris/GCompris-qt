@@ -18,7 +18,6 @@ ActivityInfo {
 //  intro: " Move the mouse or your finger along the pipe to stop the fire."
   //: Help goal
   goal: qsTr("Fine motor coordination.")
-  //: Help prerequisite
   prerequisite: ""
   //: Help manual
   manual: qsTr("Move the mouse or your finger over the lock which is represented as a red part in the hose-pipe. This will move it, bringing it, part by part, up to the fire. Be careful, if you move off the hose, the lock will go backward.")

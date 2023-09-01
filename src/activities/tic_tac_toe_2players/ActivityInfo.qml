@@ -21,7 +21,6 @@ ActivityInfo {
 //  intro: "Click on the square which you wish to mark and try to mark 3 consecutive squares before Tux."
   //: Help goal
   goal: qsTr("Place three marks in any horizontal, vertical, or diagonal row to win the game.")
-  //: Help prerequisite
   prerequisite: ""
   //: Help manual
   manual: qsTr("Play with a friend. Take turns to click on the square which you want to mark. The first player to create a line of 3 marks wins.")

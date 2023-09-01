@@ -18,7 +18,6 @@ ActivityInfo {
   //intro: "A simplistic word processor to play around with the keyboard"
   //: Help goal
   goal: qsTr("Discover the keyboard and the letters.")
-  //: Help prerequisite
   prerequisite: ""
   //: Help manual
   manual: qsTr("Just type on the real or virtual keyboard like in a word processor.

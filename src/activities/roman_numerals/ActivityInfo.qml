@@ -13,12 +13,10 @@ ActivityInfo {
   author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
   //: Activity title
   title: qsTr("Roman numerals")
-  //: Help title
   description: ""
   //intro: "Learn and practice roman to arabic numerals conversion"
   //: Help goal
   goal: qsTr("Learn how to read roman numerals and do the conversion to and from arabic numerals.")
-  //: Help prerequisite
   prerequisite: ""
   //: Help manual
   manual: qsTr("Roman numerals are a numeral system that originated in ancient Rome and remained the usual way of writing numbers throughout Europe well into the Late Middle Ages. Numbers in this system are represented by combinations of letters from the Latin alphabet.") + "<br>" +

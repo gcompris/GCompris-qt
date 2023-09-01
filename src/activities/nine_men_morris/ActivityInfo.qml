@@ -13,12 +13,10 @@ ActivityInfo {
   author: "Pulkit Gupta &lt;pulkitnsit@gmail.com&gt;"
   //: Activity title
   title: qsTr("Nine men's morris (against Tux)")
-  //: Help title
   description: ""
   //intro: "Click on the dot where you wish to place your piece and try to take all Tux's pieces."
   //: Help goal
   goal: qsTr("Form mills (lines of 3 pieces) to remove Tux's pieces until he has only 2 pieces left or can not move anymore.")
-  //: Help prerequisite
   prerequisite: ""
   //: Help manual
   manual: qsTr("Play with Tux. First take turns to place nine pieces, and then take turns to move your pieces.") + ("<br>") +

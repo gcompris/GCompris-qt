@@ -18,7 +18,6 @@ ActivityInfo {
     //  intro: "Click on the selected points and draw the letter"
     //: Help goal
     goal: qsTr("Learning how to draw letters in a funny way.")
-    //: Help prerequisite
     prerequisite: ""
     //: Help manual
     manual: qsTr("Draw the letters by connecting the dots in the correct order.")

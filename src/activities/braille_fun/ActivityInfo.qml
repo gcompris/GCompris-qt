@@ -16,7 +16,6 @@ ActivityInfo {
   //: Help title
   description: qsTr("Practice braille letters.")
   //intro: "Create the Braille cell for the letter."
-  //: Help goal
   goal: ""
   //: Help prerequisite
   prerequisite: qsTr("Braille alphabet.")

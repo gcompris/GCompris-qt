@@ -18,7 +18,6 @@ ActivityInfo {
 //  intro: "Guess if the picture presents a left or right hand and click on the correct answer."
   //: Help goal
   goal: qsTr("Distinguish right and left hands from different points of view. Spatial representation.")
-  //: Help prerequisite
   prerequisite: ""
   //: Help manual
   manual: qsTr("You can see a hand: is it a left hand or a right hand? Click on the left button, or the right button depending on the displayed hand.") + ("<br><br>") +
