@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris voices\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-07-18 00:44+0000\n"
+"POT-Creation-Date: 2023-09-02 00:41+0000\n"
 "PO-Revision-Date: 2023-01-02 12:18+0100\n"
 "Last-Translator: charruau <echarruau@gmail.com>\n"
 "Language-Team: French <kde-francophone@kde.org>\n"
@@ -253,13 +253,13 @@ msgid "play checkers with your friend"
 msgstr "Joue aux dames avec un ami."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "chess"
-#: activities/chess/ActivityInfo.qml:18
+#: activities/chess/ActivityInfo.qml:17
 #, kde-format
 msgid "play chess against Tux"
 msgstr "Joue aux échecs contre Tux."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "chess_2players"
-#: activities/chess_2players/ActivityInfo.qml:18
+#: activities/chess_2players/ActivityInfo.qml:17
 #, kde-format
 msgid "play chess against your friend"
 msgstr "Joue aux échecs avec un ami."
@@ -601,7 +601,7 @@ msgstr ""
 "l'encadrement proposé."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "hangman"
-#: activities/hangman/ActivityInfo.qml:22
+#: activities/hangman/ActivityInfo.qml:21
 #, kde-format
 msgid "A word is hidden, you must discover it letter by letter."
 msgstr "Un mot est caché, tu dois le découvrir lettre après lettre."
@@ -937,7 +937,7 @@ msgid "Put each item at the same place as in the given example."
 msgstr "Reconstitue la mosaïque en sélectionnant les objets."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "nine_men_morris"
-#: activities/nine_men_morris/ActivityInfo.qml:18
+#: activities/nine_men_morris/ActivityInfo.qml:17
 #, kde-format
 msgid ""
 "Click on the dot where you wish to place your piece and try to take all "
@@ -947,7 +947,7 @@ msgstr ""
 "d'éliminer les pièces de Tux."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "nine_men_morris_2players"
-#: activities/nine_men_morris_2players/ActivityInfo.qml:18
+#: activities/nine_men_morris_2players/ActivityInfo.qml:17
 #, kde-format
 msgid ""
 "Click on the dot where you wish to place your piece and try to take all your "
@@ -1070,7 +1070,7 @@ msgstr ""
 "croissant."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "play_piano"
-#: activities/play_piano/ActivityInfo.qml:22
+#: activities/play_piano/ActivityInfo.qml:21
 #, kde-format
 msgid "Click on the keyboard keys that match the notes that you see and hear"
 msgstr ""
@@ -1078,7 +1078,7 @@ msgstr ""
 "que tu entends."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "play_rhythm"
-#: activities/play_rhythm/ActivityInfo.qml:22
+#: activities/play_rhythm/ActivityInfo.qml:21
 #, kde-format
 msgid "Click the drum to recreate the rhythm"
 msgstr "Clique sur le tambour pour reproduire le rythme."
@@ -1146,7 +1146,7 @@ msgid ""
 msgstr "Indique le nombre glaçons qui amènera Tux jusqu'au poisson."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "roman_numerals"
-#: activities/roman_numerals/ActivityInfo.qml:18
+#: activities/roman_numerals/ActivityInfo.qml:17
 #, kde-format
 msgid "Learn and practice roman to arabic numerals conversion"
 msgstr "Apprends à convertir les nombres romains."

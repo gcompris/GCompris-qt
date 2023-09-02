@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-07-18 00:44+0000\n"
+"POT-Creation-Date: 2023-09-02 00:41+0000\n"
 "PO-Revision-Date: 2023-03-17 22:50+0100\n"
 "Last-Translator: Jan Papez (honyczek) <honyczek@centrum.cz>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Lokalize 21.12.3\n"
+"X-Generator: Lokalize 23.04.3\n"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "advanced_colors"
 #: activities/advanced_colors/ActivityInfo.qml:18
@@ -239,13 +239,13 @@ msgid "play checkers with your friend"
 msgstr "hrát dámu s kamarádem"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "chess"
-#: activities/chess/ActivityInfo.qml:18
+#: activities/chess/ActivityInfo.qml:17
 #, kde-format
 msgid "play chess against Tux"
 msgstr "hrát šachy proti Tuxovi"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "chess_2players"
-#: activities/chess_2players/ActivityInfo.qml:18
+#: activities/chess_2players/ActivityInfo.qml:17
 #, kde-format
 msgid "play chess against your friend"
 msgstr "hrát šachy s kamarádem"
@@ -567,7 +567,7 @@ msgid "Find out the number by typing a number from the range proposed."
 msgstr "Uhádni číslo psaním zadáváním čísel z navrženého rozsahu."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "hangman"
-#: activities/hangman/ActivityInfo.qml:22
+#: activities/hangman/ActivityInfo.qml:21
 #, kde-format
 msgid "A word is hidden, you must discover it letter by letter."
 msgstr "Slovo je skryté, musíš jej odhalit písmeno po písmenu."
@@ -899,7 +899,7 @@ msgstr ""
 "Polož každou položku na stejné místo tak, jak je to v zobrazeném příkladu."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "nine_men_morris"
-#: activities/nine_men_morris/ActivityInfo.qml:18
+#: activities/nine_men_morris/ActivityInfo.qml:17
 #, kde-format
 msgid ""
 "Click on the dot where you wish to place your piece and try to take all "
@@ -909,7 +909,7 @@ msgstr ""
 "jeho žetony."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "nine_men_morris_2players"
-#: activities/nine_men_morris_2players/ActivityInfo.qml:18
+#: activities/nine_men_morris_2players/ActivityInfo.qml:17
 #, kde-format
 msgid ""
 "Click on the dot where you wish to place your piece and try to take all your "
@@ -1031,14 +1031,14 @@ msgstr ""
 "vzestupném pořadí."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "play_piano"
-#: activities/play_piano/ActivityInfo.qml:22
+#: activities/play_piano/ActivityInfo.qml:21
 #, kde-format
 msgid "Click on the keyboard keys that match the notes that you see and hear"
 msgstr ""
 "Klikni na tlačítka klávesnice, které odpovídají notám, které vidíš a slyšíš"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "play_rhythm"
-#: activities/play_rhythm/ActivityInfo.qml:22
+#: activities/play_rhythm/ActivityInfo.qml:21
 #, kde-format
 msgid "Click the drum to recreate the rhythm"
 msgstr "Klikej na bubny pro zopakování melodie"
@@ -1101,7 +1101,7 @@ msgstr ""
 "ledových bloků, které musí Tux projít, aby snědl rybu."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "roman_numerals"
-#: activities/roman_numerals/ActivityInfo.qml:18
+#: activities/roman_numerals/ActivityInfo.qml:17
 #, kde-format
 msgid "Learn and practice roman to arabic numerals conversion"
 msgstr "Nauč se a procvičuj převod římských číslic na arabské"

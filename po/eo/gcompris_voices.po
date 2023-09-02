@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_voices\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-07-18 00:44+0000\n"
+"POT-Creation-Date: 2023-09-02 00:41+0000\n"
 "PO-Revision-Date: 2023-07-21 20:51+0100\n"
 "Last-Translator: Oliver Kellogg <okellogg@users.sourceforge.net>\n"
 "Language-Team: Esperanto <kde-i18n-eo@kde.org>\n"
@@ -246,13 +246,13 @@ msgid "play checkers with your friend"
 msgstr "ludu damludon kun via amiko"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "chess"
-#: activities/chess/ActivityInfo.qml:18
+#: activities/chess/ActivityInfo.qml:17
 #, kde-format
 msgid "play chess against Tux"
 msgstr "ludu ŝakon kontraŭ Tux"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "chess_2players"
-#: activities/chess_2players/ActivityInfo.qml:18
+#: activities/chess_2players/ActivityInfo.qml:17
 #, kde-format
 msgid "play chess against your friend"
 msgstr "ludu ŝakon kontraŭ via amiko"
@@ -582,7 +582,7 @@ msgid "Find out the number by typing a number from the range proposed."
 msgstr "Eltrovu la nombron tajpante nombron el la proponita gamo."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "hangman"
-#: activities/hangman/ActivityInfo.qml:22
+#: activities/hangman/ActivityInfo.qml:21
 #, kde-format
 msgid "A word is hidden, you must discover it letter by letter."
 msgstr "Vorto estas kaŝita, vi devas malkovri ĝin litero post litero."
@@ -910,7 +910,7 @@ msgid "Put each item at the same place as in the given example."
 msgstr "Metu ĉiun objekton en la sama loko kiel en la donita ekzemplo."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "nine_men_morris"
-#: activities/nine_men_morris/ActivityInfo.qml:18
+#: activities/nine_men_morris/ActivityInfo.qml:17
 #, kde-format
 msgid ""
 "Click on the dot where you wish to place your piece and try to take all "
@@ -920,7 +920,7 @@ msgstr ""
 "pecojn de Tux."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "nine_men_morris_2players"
-#: activities/nine_men_morris_2players/ActivityInfo.qml:18
+#: activities/nine_men_morris_2players/ActivityInfo.qml:17
 #, kde-format
 msgid ""
 "Click on the dot where you wish to place your piece and try to take all your "
@@ -1042,14 +1042,14 @@ msgstr ""
 "kreskanta ordo."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "play_piano"
-#: activities/play_piano/ActivityInfo.qml:22
+#: activities/play_piano/ActivityInfo.qml:21
 #, kde-format
 msgid "Click on the keyboard keys that match the notes that you see and hear"
 msgstr ""
 "Alklaku la klavarojn kiuj kongruas kun la notoj, kiujn vi vidas kaj aŭdas"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "play_rhythm"
-#: activities/play_rhythm/ActivityInfo.qml:22
+#: activities/play_rhythm/ActivityInfo.qml:21
 #, kde-format
 msgid "Click the drum to recreate the rhythm"
 msgstr "Alklaku la tamburon por rekrei la ritmon"
@@ -1112,7 +1112,7 @@ msgstr ""
 "nombron da glaciblokoj Tux devos sekvi por manĝi fiŝon."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "roman_numerals"
-#: activities/roman_numerals/ActivityInfo.qml:18
+#: activities/roman_numerals/ActivityInfo.qml:17
 #, kde-format
 msgid "Learn and practice roman to arabic numerals conversion"
 msgstr "Lernu kaj praktiku konvertiĝon de romanaj al arabaj ciferoj"

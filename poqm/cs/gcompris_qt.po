@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2023-07-28 22:10+0200\n"
+"PO-Revision-Date: 2023-08-21 23:37+0200\n"
 "Last-Translator: Jan Papez (honyczek) <honyczek@centrum.cz>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
 "Language: cs\n"
@@ -59,46 +59,46 @@ msgstr ""
 #: activities/align4/ActivityInfo.qml:24
 #: activities/align4_2players/ActivityInfo.qml:23
 #: activities/alphabet-sequence/ActivityInfo.qml:25
-#: activities/baby_wordprocessor/ActivityInfo.qml:26
-#: activities/braille_alphabets/ActivityInfo.qml:26
-#: activities/braille_fun/ActivityInfo.qml:25
+#: activities/baby_wordprocessor/ActivityInfo.qml:25
+#: activities/braille_alphabets/ActivityInfo.qml:25
+#: activities/braille_fun/ActivityInfo.qml:24
 #: activities/calendar/ActivityInfo.qml:25
 #: activities/click_on_letter/ActivityInfo.qml:25
 #: activities/click_on_letter_up/ActivityInfo.qml:25
 #: activities/colors/ActivityInfo.qml:25
-#: activities/comparator/ActivityInfo.qml:28
+#: activities/comparator/ActivityInfo.qml:27
 #: activities/crane/ActivityInfo.qml:30
 #: activities/enumerate/ActivityInfo.qml:25
-#: activities/fifteen/ActivityInfo.qml:25
+#: activities/fifteen/ActivityInfo.qml:24
 #: activities/find_the_day/ActivityInfo.qml:25
-#: activities/gnumch-equality/ActivityInfo.qml:29
-#: activities/gnumch-factors/ActivityInfo.qml:29
-#: activities/gnumch-inequality/ActivityInfo.qml:28
-#: activities/gnumch-multiples/ActivityInfo.qml:29
-#: activities/gnumch-primes/ActivityInfo.qml:29
-#: activities/grammar_analysis/ActivityInfo.qml:30
-#: activities/grammar_classes/ActivityInfo.qml:30
+#: activities/gnumch-equality/ActivityInfo.qml:28
+#: activities/gnumch-factors/ActivityInfo.qml:28
+#: activities/gnumch-inequality/ActivityInfo.qml:27
+#: activities/gnumch-multiples/ActivityInfo.qml:28
+#: activities/gnumch-primes/ActivityInfo.qml:28
+#: activities/grammar_analysis/ActivityInfo.qml:29
+#: activities/grammar_classes/ActivityInfo.qml:29
 #: activities/graph-coloring/ActivityInfo.qml:25
-#: activities/gravity/ActivityInfo.qml:29
-#: activities/guessnumber/ActivityInfo.qml:25
-#: activities/instruments/ActivityInfo.qml:25
-#: activities/land_safe/ActivityInfo.qml:29 activities/lang/ActivityInfo.qml:33
-#: activities/learn_additions/ActivityInfo.qml:25
-#: activities/learn_decimals/ActivityInfo.qml:24
-#: activities/learn_decimals_additions/ActivityInfo.qml:25
-#: activities/learn_decimals_subtractions/ActivityInfo.qml:25
-#: activities/learn_digits/ActivityInfo.qml:25
-#: activities/learn_quantities/ActivityInfo.qml:24
-#: activities/learn_subtractions/ActivityInfo.qml:25
-#: activities/leftright/ActivityInfo.qml:25
+#: activities/gravity/ActivityInfo.qml:28
+#: activities/guessnumber/ActivityInfo.qml:24
+#: activities/instruments/ActivityInfo.qml:24
+#: activities/land_safe/ActivityInfo.qml:28 activities/lang/ActivityInfo.qml:33
+#: activities/learn_additions/ActivityInfo.qml:24
+#: activities/learn_decimals/ActivityInfo.qml:23
+#: activities/learn_decimals_additions/ActivityInfo.qml:24
+#: activities/learn_decimals_subtractions/ActivityInfo.qml:24
+#: activities/learn_digits/ActivityInfo.qml:24
+#: activities/learn_quantities/ActivityInfo.qml:23
+#: activities/learn_subtractions/ActivityInfo.qml:24
+#: activities/leftright/ActivityInfo.qml:24
 #: activities/letter-in-word/ActivityInfo.qml:25
-#: activities/louis-braille/ActivityInfo.qml:25
-#: activities/maze/ActivityInfo.qml:29
-#: activities/mazeinvisible/ActivityInfo.qml:29
-#: activities/mazerelative/ActivityInfo.qml:30
+#: activities/louis-braille/ActivityInfo.qml:23
+#: activities/maze/ActivityInfo.qml:27
+#: activities/mazeinvisible/ActivityInfo.qml:27
+#: activities/mazerelative/ActivityInfo.qml:28
 #: activities/memory-case-association-tux/ActivityInfo.qml:25
 #: activities/memory-case-association/ActivityInfo.qml:25
-#: activities/memory-enumerate/ActivityInfo.qml:25
+#: activities/memory-enumerate/ActivityInfo.qml:24
 #: activities/memory-math-add-minus-mult-div-tux/ActivityInfo.qml:25
 #: activities/memory-math-add-minus-mult-div/ActivityInfo.qml:25
 #: activities/memory-math-add-minus-tux/ActivityInfo.qml:25
@@ -113,8 +113,8 @@ msgstr ""
 #: activities/memory-math-mult-div/ActivityInfo.qml:25
 #: activities/memory-math-mult-tux/ActivityInfo.qml:25
 #: activities/memory-math-mult/ActivityInfo.qml:25
-#: activities/memory-sound-tux/ActivityInfo.qml:25
-#: activities/memory-sound/ActivityInfo.qml:25
+#: activities/memory-sound-tux/ActivityInfo.qml:24
+#: activities/memory-sound/ActivityInfo.qml:24
 #: activities/memory-tux/ActivityInfo.qml:25
 #: activities/memory-wordnumber/ActivityInfo.qml:25
 #: activities/memory/ActivityInfo.qml:25
@@ -123,21 +123,21 @@ msgstr ""
 #: activities/money_back/ActivityInfo.qml:25
 #: activities/money_back_cents/ActivityInfo.qml:25
 #: activities/money_cents/ActivityInfo.qml:25
-#: activities/mosaic/ActivityInfo.qml:25
-#: activities/numbers-odd-even/ActivityInfo.qml:25
+#: activities/mosaic/ActivityInfo.qml:23
+#: activities/numbers-odd-even/ActivityInfo.qml:24
 #: activities/piano_composition/ActivityInfo.qml:33
-#: activities/planegame/ActivityInfo.qml:25
-#: activities/play_piano/ActivityInfo.qml:30
-#: activities/play_rhythm/ActivityInfo.qml:32
+#: activities/planegame/ActivityInfo.qml:24
+#: activities/play_piano/ActivityInfo.qml:29
+#: activities/play_rhythm/ActivityInfo.qml:31
 #: activities/positions/ActivityInfo.qml:25
 #: activities/programmingMaze/ActivityInfo.qml:26
-#: activities/redraw/ActivityInfo.qml:26
-#: activities/redraw_symmetrical/ActivityInfo.qml:26
-#: activities/roman_numerals/ActivityInfo.qml:26
-#: activities/simplepaint/ActivityInfo.qml:25
+#: activities/redraw/ActivityInfo.qml:24
+#: activities/redraw_symmetrical/ActivityInfo.qml:24
+#: activities/roman_numerals/ActivityInfo.qml:24
+#: activities/simplepaint/ActivityInfo.qml:24
 #: activities/smallnumbers/ActivityInfo.qml:25
 #: activities/smallnumbers2/ActivityInfo.qml:25
-#: activities/solar_system/ActivityInfo.qml:28
+#: activities/solar_system/ActivityInfo.qml:27
 #: activities/submarine/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "<b>Keyboard controls:</b>"
@@ -148,23 +148,23 @@ msgstr "<b>Ovládání klávesnicí:</b>"
 #: activities/click_on_letter/ActivityInfo.qml:26
 #: activities/click_on_letter_up/ActivityInfo.qml:26
 #: activities/colors/ActivityInfo.qml:26
-#: activities/gnumch-equality/ActivityInfo.qml:30
-#: activities/gnumch-factors/ActivityInfo.qml:30
-#: activities/gnumch-inequality/ActivityInfo.qml:29
-#: activities/gnumch-multiples/ActivityInfo.qml:30
-#: activities/gnumch-primes/ActivityInfo.qml:30
-#: activities/instruments/ActivityInfo.qml:26
+#: activities/gnumch-equality/ActivityInfo.qml:29
+#: activities/gnumch-factors/ActivityInfo.qml:29
+#: activities/gnumch-inequality/ActivityInfo.qml:28
+#: activities/gnumch-multiples/ActivityInfo.qml:29
+#: activities/gnumch-primes/ActivityInfo.qml:29
+#: activities/instruments/ActivityInfo.qml:25
 #: activities/lang/ActivityInfo.qml:34
-#: activities/learn_additions/ActivityInfo.qml:26
-#: activities/learn_digits/ActivityInfo.qml:26
-#: activities/learn_subtractions/ActivityInfo.qml:26
+#: activities/learn_additions/ActivityInfo.qml:25
+#: activities/learn_digits/ActivityInfo.qml:25
+#: activities/learn_subtractions/ActivityInfo.qml:25
 #: activities/letter-in-word/ActivityInfo.qml:26
-#: activities/louis-braille/ActivityInfo.qml:26
-#: activities/maze/ActivityInfo.qml:30
-#: activities/mazeinvisible/ActivityInfo.qml:30
+#: activities/louis-braille/ActivityInfo.qml:24
+#: activities/maze/ActivityInfo.qml:28
+#: activities/mazeinvisible/ActivityInfo.qml:28
 #: activities/memory-case-association-tux/ActivityInfo.qml:26
 #: activities/memory-case-association/ActivityInfo.qml:26
-#: activities/memory-enumerate/ActivityInfo.qml:26
+#: activities/memory-enumerate/ActivityInfo.qml:25
 #: activities/memory-math-add-minus-mult-div-tux/ActivityInfo.qml:26
 #: activities/memory-math-add-minus-mult-div/ActivityInfo.qml:26
 #: activities/memory-math-add-minus-tux/ActivityInfo.qml:26
@@ -179,21 +179,21 @@ msgstr "<b>Ovládání klávesnicí:</b>"
 #: activities/memory-math-mult-div/ActivityInfo.qml:26
 #: activities/memory-math-mult-tux/ActivityInfo.qml:26
 #: activities/memory-math-mult/ActivityInfo.qml:26
-#: activities/memory-sound-tux/ActivityInfo.qml:26
-#: activities/memory-sound/ActivityInfo.qml:26
+#: activities/memory-sound-tux/ActivityInfo.qml:25
+#: activities/memory-sound/ActivityInfo.qml:25
 #: activities/memory-tux/ActivityInfo.qml:26
 #: activities/memory-wordnumber/ActivityInfo.qml:26
 #: activities/memory/ActivityInfo.qml:26
 #: activities/positions/ActivityInfo.qml:26
-#: activities/simplepaint/ActivityInfo.qml:26
-#: activities/solar_system/ActivityInfo.qml:29
+#: activities/simplepaint/ActivityInfo.qml:25
+#: activities/solar_system/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Arrows: navigate"
 msgstr "Šipky: pohyb"
 
 #: activities/advanced_colors/ActivityInfo.qml:27
 #: activities/algorithm/ActivityInfo.qml:25
-#: activities/instruments/ActivityInfo.qml:27
+#: activities/instruments/ActivityInfo.qml:26
 #: activities/money/ActivityInfo.qml:27
 #: activities/money_back/ActivityInfo.qml:27
 #: activities/money_back_cents/ActivityInfo.qml:27
@@ -788,17 +788,17 @@ msgstr "Backspace: smazat poslední číslici ve tvé odpovědi"
 #: activities/algebra_div/ActivityInfo.qml:28
 #: activities/algebra_minus/ActivityInfo.qml:28
 #: activities/algebra_plus/ActivityInfo.qml:28
-#: activities/grammar_analysis/ActivityInfo.qml:35
-#: activities/grammar_classes/ActivityInfo.qml:35
-#: activities/learn_additions/ActivityInfo.qml:28
-#: activities/learn_decimals/ActivityInfo.qml:25
-#: activities/learn_decimals_additions/ActivityInfo.qml:26
-#: activities/learn_decimals_subtractions/ActivityInfo.qml:26
-#: activities/learn_digits/ActivityInfo.qml:28
-#: activities/learn_quantities/ActivityInfo.qml:25
-#: activities/learn_subtractions/ActivityInfo.qml:28
+#: activities/grammar_analysis/ActivityInfo.qml:34
+#: activities/grammar_classes/ActivityInfo.qml:34
+#: activities/learn_additions/ActivityInfo.qml:27
+#: activities/learn_decimals/ActivityInfo.qml:24
+#: activities/learn_decimals_additions/ActivityInfo.qml:25
+#: activities/learn_decimals_subtractions/ActivityInfo.qml:25
+#: activities/learn_digits/ActivityInfo.qml:27
+#: activities/learn_quantities/ActivityInfo.qml:24
+#: activities/learn_subtractions/ActivityInfo.qml:27
 #: activities/letter-in-word/ActivityInfo.qml:28
-#: activities/roman_numerals/ActivityInfo.qml:29
+#: activities/roman_numerals/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Enter: validate your answer"
 msgstr "Enter: zkontrolovat tvoji odpověď"
@@ -1175,8 +1175,8 @@ msgstr ""
 "chceš upustit žeton. První hráč, který vytvoří řadu 4 žetonů, vyhrává."
 
 #: activities/align4/ActivityInfo.qml:23 activities/bargame/ActivityInfo.qml:26
-#: activities/checkers/ActivityInfo.qml:27
-#: activities/nine_men_morris/ActivityInfo.qml:25
+#: activities/checkers/ActivityInfo.qml:26
+#: activities/nine_men_morris/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid ""
 "You can use the arrow buttons to manually select the difficulty level. Tux "
@@ -1259,8 +1259,8 @@ msgstr ""
 "zkontrolovat pravý dolní roh."
 
 #: activities/alphabet-sequence/ActivityInfo.qml:26
-#: activities/numbers-odd-even/ActivityInfo.qml:26
-#: activities/planegame/ActivityInfo.qml:26
+#: activities/numbers-odd-even/ActivityInfo.qml:25
+#: activities/planegame/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "Arrows: move the helicopter"
 msgstr "Šipky: pohybovat vrtulníkem"
@@ -1907,7 +1907,7 @@ msgid "Discover the keyboard."
 msgstr "Objevuj klávesnici."
 
 #. Help manual
-#: activities/baby_keyboard/ActivityInfo.qml:24
+#: activities/baby_keyboard/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid ""
 "Type any key on the keyboard.\n"
@@ -1950,7 +1950,7 @@ msgstr ""
 
 #. Help prerequisite
 #: activities/baby_mouse/ActivityInfo.qml:21
-#: activities/baby_tangram/ActivityInfo.qml:22
+#: activities/baby_tangram/ActivityInfo.qml:21
 #: activities/erase/ActivityInfo.qml:22
 #: activities/erase_2clic/ActivityInfo.qml:22
 #: activities/erase_clic/ActivityInfo.qml:22
@@ -2016,7 +2016,7 @@ msgid "The objective is to assemble the baby puzzle."
 msgstr "Cílem je složit dětské puzzle."
 
 #. Help manual
-#: activities/baby_tangram/ActivityInfo.qml:24
+#: activities/baby_tangram/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid ""
 "Move a piece by dragging it. Use the rotation button if necessary. More "
@@ -2028,7 +2028,7 @@ msgstr ""
 #: activities/baby_wordprocessor/ActivityConfig.qml:26
 msgctxt "ActivityConfig|"
 msgid "Play characters' sound when typed"
-msgstr "Přehrávat zvuk postav při psaní"
+msgstr "Přehrávat název znaků při psaní"
 
 #. Activity title
 #: activities/baby_wordprocessor/ActivityInfo.qml:15
@@ -2053,7 +2053,7 @@ msgid "Discover the keyboard and the letters."
 msgstr "Objevuj klávesnici a písmena."
 
 #. Help manual
-#: activities/baby_wordprocessor/ActivityInfo.qml:24
+#: activities/baby_wordprocessor/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid ""
 "Just type on the real or virtual keyboard like in a word processor.\n"
@@ -2063,63 +2063,63 @@ msgid ""
 msgstr ""
 "Stačí psát na skutečné nebo virtuální klávesnici jako v textovém editoru.\n"
 "    Kliknutím na tlačítko 'nadpis' se text zvětší. Podobně pomocí tlačítka "
-"'podtitul' bude text o něco menší. Kliknutí na 'odstavec' odstraní "
+"'podnadpis' bude text o něco menší. Kliknutí na 'odstavec' odstraní "
 "formátování."
 
-#: activities/baby_wordprocessor/ActivityInfo.qml:27
+#: activities/baby_wordprocessor/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Arrows: navigate inside the text"
 msgstr "Šipky: pohyb uvnitř textu"
 
-#: activities/baby_wordprocessor/ActivityInfo.qml:28
+#: activities/baby_wordprocessor/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Shift + Arrows: select a part of the text"
 msgstr "Shift + Šipky: vybrat část textu"
 
-#: activities/baby_wordprocessor/ActivityInfo.qml:29
+#: activities/baby_wordprocessor/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Ctrl + A: select all the text"
 msgstr "Ctrl + A: vybrat vše"
 
-#: activities/baby_wordprocessor/ActivityInfo.qml:30
+#: activities/baby_wordprocessor/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid "Ctrl + C: copy selected text"
 msgstr "Ctrl + C: kopírovat vybraný text"
 
-#: activities/baby_wordprocessor/ActivityInfo.qml:31
+#: activities/baby_wordprocessor/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
 msgid "Ctrl + X: cut selected text"
 msgstr "Ctrl + X: vyjmout vybraný text"
 
-#: activities/baby_wordprocessor/ActivityInfo.qml:32
+#: activities/baby_wordprocessor/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
 msgid "Ctrl + V: paste copied or cut text"
 msgstr "Ctrl + V: vložit zkopírovaný nebo vyjmutý text"
 
-#: activities/baby_wordprocessor/ActivityInfo.qml:33
+#: activities/baby_wordprocessor/ActivityInfo.qml:32
 msgctxt "ActivityInfo|"
 msgid "Ctrl + D: delete selected text"
 msgstr "Ctrl + D: smazat vybraný text"
 
-#: activities/baby_wordprocessor/ActivityInfo.qml:34
+#: activities/baby_wordprocessor/ActivityInfo.qml:33
 msgctxt "ActivityInfo|"
 msgid "Ctrl + Z: undo"
 msgstr "Ctrl + Z: zpět"
 
-#: activities/baby_wordprocessor/ActivityInfo.qml:35
+#: activities/baby_wordprocessor/ActivityInfo.qml:34
 msgctxt "ActivityInfo|"
 msgid "Ctrl + Shift + Z: redo"
-msgstr "Ctrl + Shift + Z: udělat znovu"
+msgstr "Ctrl + Shift + Z: provést znovu"
 
 #: activities/baby_wordprocessor/BabyWordprocessor.qml:91
 msgctxt "BabyWordprocessor|"
 msgid "Title"
-msgstr "Název"
+msgstr "Nadpis"
 
 #: activities/baby_wordprocessor/BabyWordprocessor.qml:97
 msgctxt "BabyWordprocessor|"
 msgid "Subtitle"
-msgstr "Podtitul"
+msgstr "Podnadpis"
 
 #: activities/baby_wordprocessor/BabyWordprocessor.qml:104
 msgctxt "BabyWordprocessor|"
@@ -2193,14 +2193,14 @@ msgid "Drag and Drop the shapes on their respective targets."
 msgstr "Přetáhni tvary na jejich příslušné cíle."
 
 #. Help manual
-#: activities/babyshapes/ActivityInfo.qml:28
+#: activities/babyshapes/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid ""
 "Complete the puzzle by dragging each piece on the side to the matching spot."
 msgstr ""
 "Dokonči skládačku přetažením každého dílku po straně na odpovídající místo."
 
-#: activities/babyshapes/ActivityInfo.qml:29
+#: activities/babyshapes/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "The dog is provided by Andre Connes and released under the GPL"
 msgstr "Psa poskytl Andre Connes a uvolnil pod licencí GPL"
@@ -2208,7 +2208,7 @@ msgstr "Psa poskytl Andre Connes a uvolnil pod licencí GPL"
 #: activities/babyshapes/resource/board/board1_0.qml:14
 msgctxt "board1_0|"
 msgid "Drag and Drop the items to match them."
-msgstr "Přesuň věci podle tvaru na správné místo."
+msgstr "Přesuň věci na správné místo odpovídající jejich tvaru."
 
 #: activities/babyshapes/resource/board/board5_0.qml:14
 msgctxt "board5_0|"
@@ -2233,7 +2233,7 @@ msgstr "Pieter Bruegel starší, Selská svatba - 1568"
 #: activities/babyshapes/resource/board/board7_2.qml:14
 msgctxt "board7_2|"
 msgid "The Lady and the Unicorn - XVe century"
-msgstr "Dáma a jednorožec - XVe century"
+msgstr "Dáma a jednorožec - 15. století"
 
 #: activities/babyshapes/resource/board/board7_3.qml:14
 msgctxt "board7_3|"
@@ -2299,7 +2299,7 @@ msgid "Practice fine motor skills and basic counting."
 msgstr "Trénuj jemnou motoriku a základní počty."
 
 #. Help manual
-#: activities/balancebox/ActivityInfo.qml:27
+#: activities/balancebox/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid ""
 "Navigate the ball to the door. Be careful not to make it fall into the "
@@ -2312,7 +2312,7 @@ msgstr ""
 "pořadí. Míčem můžeš pohybovat nakloněním mobilního telefonu.Na desktopových "
 "platformách simuluj naklápění pomocí kláves se šipkami."
 
-#: activities/balancebox/ActivityInfo.qml:29
+#: activities/balancebox/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid ""
 "In the activity settings menu you can choose between the default 'Built-in' "
@@ -2325,7 +2325,7 @@ msgstr ""
 "sadu úrovní, vyber sadu 'uživatelské' úrovně a spusť editor úrovní kliknutím "
 "na odpovídající tlačítko."
 
-#: activities/balancebox/ActivityInfo.qml:31
+#: activities/balancebox/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
 msgid ""
 "In the <b>level editor</b> you can create your own levels. Choose one of the "
@@ -2336,39 +2336,39 @@ msgstr ""
 "možností nástroje pro editaci na straně a v editoru uprav pole mapy aktivní "
 "úrovně:"
 
-#: activities/balancebox/ActivityInfo.qml:32
+#: activities/balancebox/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
 msgid "Cross: clear a map cell completely"
 msgstr "Kříž: úplné vymazání buňky mapy"
 
-#: activities/balancebox/ActivityInfo.qml:33
+#: activities/balancebox/ActivityInfo.qml:32
 msgctxt "ActivityInfo|"
 msgid ""
 "Horizontal Wall: add/remove a horizontal wall on the lower edge of a cell"
 msgstr ""
 "Vodorovná stěna: přidání/odebrání vodorovné stěny na spodním okraji buňky"
 
-#: activities/balancebox/ActivityInfo.qml:34
+#: activities/balancebox/ActivityInfo.qml:33
 msgctxt "ActivityInfo|"
 msgid "Vertical Wall: add/remove a vertical wall on the right edge of a cell"
 msgstr "Svislá stěna: přidání/odebrání svislé stěny na pravém okraji buňky"
 
-#: activities/balancebox/ActivityInfo.qml:35
+#: activities/balancebox/ActivityInfo.qml:34
 msgctxt "ActivityInfo|"
 msgid "Hole: add/remove a hole on a cell"
 msgstr "Díra: přidání/odebrání díry v buňce"
 
-#: activities/balancebox/ActivityInfo.qml:36
+#: activities/balancebox/ActivityInfo.qml:35
 msgctxt "ActivityInfo|"
 msgid "Ball: set the starting position of the ball"
 msgstr "Míč: nastavení výchozí polohy míče"
 
-#: activities/balancebox/ActivityInfo.qml:37
+#: activities/balancebox/ActivityInfo.qml:36
 msgctxt "ActivityInfo|"
 msgid "Door: Set the door position"
 msgstr "Dveře: Nastavení polohy dveří"
 
-#: activities/balancebox/ActivityInfo.qml:38
+#: activities/balancebox/ActivityInfo.qml:37
 msgctxt "ActivityInfo|"
 msgid ""
 "Contact: add/remove a contact button. With the spin-box you can adjust the "
@@ -2379,7 +2379,7 @@ msgstr ""
 "upravit hodnotu tlačítka kontaktu. Na mapě není možné nastavit hodnotu "
 "vícekrát než jednou."
 
-#: activities/balancebox/ActivityInfo.qml:40
+#: activities/balancebox/ActivityInfo.qml:39
 msgctxt "ActivityInfo|"
 msgid ""
 "All tools (except the clear-tool) toggle their respective target on the "
@@ -2391,7 +2391,7 @@ msgstr ""
 "Opětovným kliknutím na stejnou buňku pomocí stejného nástroje můžeš položku "
 "opět odebrat."
 
-#: activities/balancebox/ActivityInfo.qml:41
+#: activities/balancebox/ActivityInfo.qml:40
 msgctxt "ActivityInfo|"
 msgid ""
 "You can test a modified level by clicking on the 'Test' button on the side "
@@ -2404,7 +2404,7 @@ msgstr ""
 "panelu nebo stisknutím klávesy Esc na klávesnici nebo tlačítka Zpět na "
 "mobilním zařízení."
 
-#: activities/balancebox/ActivityInfo.qml:42
+#: activities/balancebox/ActivityInfo.qml:41
 msgctxt "ActivityInfo|"
 msgid ""
 "In the editor you can change the level currently edited by using the arrow "
@@ -2415,7 +2415,7 @@ msgstr ""
 "úroveň. Zpět v editoru můžeš pokračovat v úpravách aktuální úroveň a v "
 "případě potřeby ji znovu otestovat."
 
-#: activities/balancebox/ActivityInfo.qml:43
+#: activities/balancebox/ActivityInfo.qml:42
 msgctxt "ActivityInfo|"
 msgid ""
 "When your level is finished you can save it to a file by clicking on the "
@@ -2424,7 +2424,7 @@ msgstr ""
 "Když je tvoje úroveň hotová, můžeš ji uložit do souboru kliknutím na "
 "tlačítko „Uložit“ po straně."
 
-#: activities/balancebox/ActivityInfo.qml:44
+#: activities/balancebox/ActivityInfo.qml:43
 msgctxt "ActivityInfo|"
 msgid ""
 "To return to the activity settings click on the home-button on the bar or "
@@ -2434,7 +2434,7 @@ msgstr ""
 "liště nebo stiskni klávesu Escape na klávesnici nebo tlačítko Zpět na "
 "mobilním zařízení."
 
-#: activities/balancebox/ActivityInfo.qml:45
+#: activities/balancebox/ActivityInfo.qml:44
 msgctxt "ActivityInfo|"
 msgid ""
 "Finally, to load your level set, click on the 'Load saved levels' button."
@@ -2518,7 +2518,7 @@ msgid ""
 msgstr "Stiskni zároveň levou a pravou šipku, aby míč letěl rovně."
 
 #. Help manual
-#: activities/ballcatch/ActivityInfo.qml:24
+#: activities/ballcatch/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid ""
 "Press the left and right arrow keys at the same time, to make the ball go in "
@@ -2765,7 +2765,7 @@ msgid "Let children discover the braille system."
 msgstr "Nechte děti objevovat Braillovo písmo."
 
 #. Help manual
-#: activities/braille_alphabets/ActivityInfo.qml:24
+#: activities/braille_alphabets/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid ""
 "The screen has 3 sections: an interactive braille cell, an instruction "
@@ -2776,12 +2776,12 @@ msgstr ""
 "písmeno napsat a nahoře znaky v Braillově písmu sloužící jako reference. "
 "Každá úroveň učí sadu 10 znaků."
 
-#: activities/braille_alphabets/ActivityInfo.qml:24
+#: activities/braille_alphabets/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid "Reproduce the requested character in the interactive braille cell."
 msgstr "Napiš požadovaný znak v interaktivní mřížce Braillova písma."
 
-#: activities/braille_alphabets/ActivityInfo.qml:25
+#: activities/braille_alphabets/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid ""
 "You can open the braille chart by clicking on the blue braille cell icon."
@@ -2789,13 +2789,13 @@ msgstr ""
 "Tabulku znaků v Braillově písmě můžeš otevřít kliknutím na modrou ikonu "
 "mřížky Braillova písma."
 
-#: activities/braille_alphabets/ActivityInfo.qml:27
+#: activities/braille_alphabets/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Digits: 1 to 6 select/deselect the corresponding dots"
 msgstr "Číslice: od 1 do 6 vybrání/zrušení výběru odpovídajícího bodu"
 
-#: activities/braille_alphabets/ActivityInfo.qml:28
-#: activities/braille_fun/ActivityInfo.qml:26
+#: activities/braille_alphabets/ActivityInfo.qml:27
+#: activities/braille_fun/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "Space: open or close the braille chart"
 msgstr "Mezera: otevření nebo zavření tabulky Braillova písma"
@@ -2930,13 +2930,13 @@ msgid "Practice braille letters."
 msgstr "Procvičuj písmena v Braillově písmu."
 
 #. Help prerequisite
-#: activities/braille_fun/ActivityInfo.qml:22
+#: activities/braille_fun/ActivityInfo.qml:21
 msgctxt "ActivityInfo|"
 msgid "Braille alphabet."
 msgstr "Braillova abeceda."
 
 #. Help manual
-#: activities/braille_fun/ActivityInfo.qml:24
+#: activities/braille_fun/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid ""
 "Create the braille cells for the letters on the banner. Check the braille "
@@ -3376,7 +3376,7 @@ msgid "Understand how a canal lock works."
 msgstr "Pochop, jak funguje plavební komora."
 
 #. Help manual
-#: activities/canal_lock/ActivityInfo.qml:24
+#: activities/canal_lock/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid ""
 "You are in charge of the canal lock. Open the gates and the locks in the "
@@ -4009,7 +4009,7 @@ msgstr ""
 "tvoje."
 
 #. Help manual
-#: activities/checkers/ActivityInfo.qml:24
+#: activities/checkers/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid ""
 "Checkers is played by two opponents, on opposite sides of the gameboard. One "
@@ -4047,8 +4047,8 @@ msgstr ""
 "vzdálenost po úhlopříčce a může zajmout soupeřův kámen skokem na libovolné "
 "neobsazené pole bezprostředně za ní."
 
-#: activities/checkers/ActivityInfo.qml:29
-#: activities/checkers_2players/ActivityInfo.qml:28
+#: activities/checkers/ActivityInfo.qml:28
+#: activities/checkers_2players/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid ""
 "The checkers library is draughts.js &lt;https://github.com/shubhendusaurabh/"
@@ -4085,7 +4085,7 @@ msgid "Play checkers (with a friend)"
 msgstr "Hrát dámu s kamarádem"
 
 #. Help manual
-#: activities/checkers_2players/ActivityInfo.qml:24
+#: activities/checkers_2players/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid ""
 "Checkers is played by two opponents, on opposite sides of the gameboard. One "
@@ -4130,7 +4130,7 @@ msgid "Play chess (against Tux)"
 msgstr "Hrát šachy proti Tuxovi"
 
 #. Help manual Much of this string is shared across the three activities "chess", "chess_partyend", and "chess_2players".
-#: activities/chess/ActivityInfo.qml:25
+#: activities/chess/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid ""
 "In this activity you discover the chess game by playing against the "
@@ -4171,9 +4171,9 @@ msgstr ""
 "se předvídat budoucí tahy soupeře, abyste ho mohli nachytat nebo ochránit "
 "své figury před jeho útoky."
 
-#: activities/chess/ActivityInfo.qml:32
-#: activities/chess_2players/ActivityInfo.qml:32
-#: activities/chess_partyend/ActivityInfo.qml:32
+#: activities/chess/ActivityInfo.qml:29
+#: activities/chess_2players/ActivityInfo.qml:29
+#: activities/chess_partyend/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
 msgid ""
 "Single click on undo button will undo one move. Single click on redo button "
@@ -4184,8 +4184,8 @@ msgstr ""
 "tlačítko udělat znovu opětovně provede jeden tah. Pro navrácení všech tahů, "
 "stiskni a drž tlačítko zpět po dobu 3 sekund."
 
-#: activities/chess/ActivityInfo.qml:33
-#: activities/chess_partyend/ActivityInfo.qml:33
+#: activities/chess/ActivityInfo.qml:30
+#: activities/chess_partyend/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
 msgid ""
 "The chess engine is p4wn &lt;https://github.com/douglasbagnall/p4wn&gt;."
@@ -4254,7 +4254,7 @@ msgid "Play chess (with a friend)"
 msgstr "Hrát šachy s kamarádem"
 
 #. Help manual Much of this string is shared across the three activities "chess", "chess_partyend", and "chess_2players".
-#: activities/chess_2players/ActivityInfo.qml:25
+#: activities/chess_2players/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid ""
 "In this activity you discover the chess game by playing against a friend. It "
@@ -4303,7 +4303,7 @@ msgid "Play the end of the chess game against Tux."
 msgstr "Přehrát konec šachové partie proti Tuxovi."
 
 #. Help manual Much of this string is shared across the three activities "chess", "chess_partyend", and "chess_2players".
-#: activities/chess_partyend/ActivityInfo.qml:25
+#: activities/chess_partyend/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid ""
 "In this activity you discover the chess game by playing only the end of a "
@@ -4800,13 +4800,13 @@ msgid "Draw the picture by clicking on the selected points."
 msgstr "Nakreslete obrázek klikáním na vybrané body."
 
 #. Help prerequisite
-#: activities/clickanddraw/ActivityInfo.qml:22
+#: activities/clickanddraw/ActivityInfo.qml:21
 msgctxt "ActivityInfo|"
 msgid "Can move the mouse and click accurately on points."
 msgstr "Dokáže pohybovat myší a přesně klikat na body."
 
 #. Help manual
-#: activities/clickanddraw/ActivityInfo.qml:24
+#: activities/clickanddraw/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid ""
 "Draw the picture by clicking on each point in sequence. Each time a point is "
@@ -4990,7 +4990,7 @@ msgid "Mix primary colors to match the given color."
 msgstr "Smíchej základní barvy tak, aby odpovídaly dané barvě."
 
 #. Help manual
-#: activities/color_mix/ActivityInfo.qml:24
+#: activities/color_mix/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid ""
 "This activity teaches how mixing primary paint colors works (subtractive "
@@ -4999,7 +4999,7 @@ msgstr ""
 "Tato aktivita učí, jak funguje míchání základních barev (subtraktivní "
 "míchání)."
 
-#: activities/color_mix/ActivityInfo.qml:25
+#: activities/color_mix/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid ""
 "Paints and inks absorb different colors of the light falling on it, "
@@ -5016,7 +5016,7 @@ msgstr ""
 "barvy inkoustu jsou azurová (speciální odstín modré), purpurová (speciální "
 "odstín růžové) a žlutá."
 
-#: activities/color_mix/ActivityInfo.qml:26
+#: activities/color_mix/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid ""
 "Change the color by moving the sliders on the tubes of paint or by clicking "
@@ -5103,7 +5103,7 @@ msgid "Discover light color mixing."
 msgstr "Objevuj míchání barevných světel."
 
 #. Help manual
-#: activities/color_mix_light/ActivityInfo.qml:24
+#: activities/color_mix_light/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid ""
 "This activity teaches how mixing primary light colors works (additive "
@@ -5112,7 +5112,7 @@ msgstr ""
 "Tato aktivita učí, jak funguje míchání základních barev světla (aditivní "
 "míchání)."
 
-#: activities/color_mix_light/ActivityInfo.qml:25
+#: activities/color_mix_light/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid ""
 "Mixing light colors is just the opposite of mixing paint colors. The more "
@@ -5123,7 +5123,7 @@ msgstr ""
 "přidáte, tím světlejší bude výsledná barva. Základní barvy světla jsou "
 "červená, zelená a modrá."
 
-#: activities/color_mix_light/ActivityInfo.qml:26
+#: activities/color_mix_light/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid ""
 "Change the color by moving the sliders on the torches or by clicking on the "
@@ -5262,7 +5262,7 @@ msgid "Learn how to compare number values."
 msgstr "Nauč se jak porovnávat číselné hodnoty."
 
 #. Help manual
-#: activities/comparator/ActivityInfo.qml:26
+#: activities/comparator/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid ""
 "Select a pair of numbers in the list. Then select the correct comparison "
@@ -5273,7 +5273,7 @@ msgstr ""
 "mají všechny řádky přiřazený symbol, stiskni pro kontrolu odpovědí tlačítko "
 "OK."
 
-#: activities/comparator/ActivityInfo.qml:27
+#: activities/comparator/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid ""
 "If some answers are incorrect, a cross icon will appear on the corresponding "
@@ -5282,27 +5282,27 @@ msgstr ""
 "Pokud jsou některé odpovědi nesprávné, objeví se u daných řádků křížek. "
 "Následně oprav chyby a znovu klepni na tlačítko OK."
 
-#: activities/comparator/ActivityInfo.qml:29
+#: activities/comparator/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Up and Down arrows: select a pair of numbers in the list"
 msgstr "Šipky nahoru a dolů: výběr páru čísel v seznamu"
 
-#: activities/comparator/ActivityInfo.qml:30
+#: activities/comparator/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: select a symbol button"
 msgstr "Šipky vpravo a vlevo: výběr tlačítka se symbolem"
 
-#: activities/comparator/ActivityInfo.qml:31
+#: activities/comparator/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
 msgid "Space: if a symbol button is selected, enter this symbol"
 msgstr "Mezerník: pokud je vybrán symbol, vlož tento symbol"
 
-#: activities/comparator/ActivityInfo.qml:32
+#: activities/comparator/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
 msgid "Return: validate the answers"
 msgstr "Enter: kontrola odpovědí"
 
-#: activities/comparator/ActivityInfo.qml:33
+#: activities/comparator/ActivityInfo.qml:32
 msgctxt "ActivityInfo|"
 msgid "&lt;, &gt; or =: enter the corresponding symbol"
 msgstr "&lt;, &gt; nebo =: zadej odpovídající symbol"
@@ -5460,7 +5460,7 @@ msgid "Find the details"
 msgstr "Najdi podrobnosti"
 
 #. Help manual
-#: activities/details/ActivityInfo.qml:27
+#: activities/details/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid ""
 "Complete the puzzle by dragging each piece on the side to the matching space "
@@ -5468,7 +5468,7 @@ msgid ""
 msgstr ""
 "Vyřeš hádanku přetažením každého kousku na straně na správné místov hádance."
 
-#: activities/details/ActivityInfo.qml:28
+#: activities/details/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "The images are from Wikimedia Commons."
 msgstr "Obrázky pocházejí z Wikimedia Commons."
@@ -6343,7 +6343,7 @@ msgid "Learning how to draw letters in a funny way."
 msgstr "Naučit se kreslit písmena zábavným způsobem."
 
 #. Help manual
-#: activities/drawletters/ActivityInfo.qml:24
+#: activities/drawletters/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid "Draw the letters by connecting the dots in the correct order."
 msgstr "Nakresli písmena spojením teček ve správném pořadí."
@@ -6367,7 +6367,7 @@ msgid "Learning how to draw numbers in a funny way."
 msgstr "Naučit se kreslit čísla zábavným způsobem."
 
 #. Help manual
-#: activities/drawnumbers/ActivityInfo.qml:24
+#: activities/drawnumbers/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid "Draw the numbers by connecting the dots in the correct order."
 msgstr "Nakresli čísla spojením teček ve správném pořadí."
@@ -6615,12 +6615,12 @@ msgid ""
 msgstr "Nauč se přiřadit zvuky zvířat k jejich názvům a zjisti, jak vypadají."
 
 #. Help manual
-#: activities/explore_farm_animals/ActivityInfo.qml:24
+#: activities/explore_farm_animals/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid "There are three levels in this game."
 msgstr "V této hře jsou tři úrovně."
 
-#: activities/explore_farm_animals/ActivityInfo.qml:25
+#: activities/explore_farm_animals/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid ""
 "In level one, players enjoy exploring each animal on the screen. Click on an "
@@ -6632,7 +6632,7 @@ msgstr ""
 "dozvíš se o něm, jaké je jeho jméno, jaký zvuk vydává a jak vypadá. Dobře si "
 "tyto informace zapamatuj, protože v úrovních 2 a 3 z nich budeš zkoušen."
 
-#: activities/explore_farm_animals/ActivityInfo.qml:26
+#: activities/explore_farm_animals/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid ""
 "In level two, a random animal sound is played and you must find which animal "
@@ -6643,7 +6643,7 @@ msgstr ""
 "zvíře vydává tento zvuk. Klikni na odpovídající zvíře. Pokud chceš znovu "
 "slyšet zvuk zvířete, klikni na tlačítko přehrávání."
 
-#: activities/explore_farm_animals/ActivityInfo.qml:27
+#: activities/explore_farm_animals/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid ""
 "In level three, a random text prompt is displayed and you must click on the "
@@ -7826,12 +7826,12 @@ msgstr ""
 "Seznam se s různými divokými zvířaty z celého světa a zapamatuj si, kde žijí."
 
 #. Help manual
-#: activities/explore_world_animals/ActivityInfo.qml:28
+#: activities/explore_world_animals/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "There are two levels in this game."
 msgstr "V této hře jsou dvě úrovně."
 
-#: activities/explore_world_animals/ActivityInfo.qml:29
+#: activities/explore_world_animals/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid ""
 "In level one, players enjoy exploring each animal on the screen. Click on "
@@ -7843,7 +7843,7 @@ msgstr ""
 "Klikni na otazník a zjisti něco o zvířeti, jak se jmenuje a jak vypadá. "
 "Dobře se to nauč, protože v druhé úrovni to bude otestováno."
 
-#: activities/explore_world_animals/ActivityInfo.qml:30
+#: activities/explore_world_animals/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid ""
 "In level two, a random text prompt is displayed and you must click on the "
@@ -8131,12 +8131,12 @@ msgid ""
 msgstr "Rozvíjej lepší porozumění rozmanitosti hudby přítomné ve světě."
 
 #. Help manual
-#: activities/explore_world_music/ActivityInfo.qml:24
+#: activities/explore_world_music/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid "There are three levels in this activity."
 msgstr "V této aktivitě jsou tři úrovně."
 
-#: activities/explore_world_music/ActivityInfo.qml:25
+#: activities/explore_world_music/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid ""
 "In the first level, enjoy exploring music from around the world. Click on "
@@ -8147,7 +8147,7 @@ msgstr ""
 "kufr, abyste se dozvěděli o hudbě z této oblasti a poslechli si krátkou "
 "ukázku. Pilně se uč, protože v druhé a třetí úrovni dojde na zkoušení."
 
-#: activities/explore_world_music/ActivityInfo.qml:26
+#: activities/explore_world_music/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid ""
 "In the second level you will hear a sample of music, and you must select the "
@@ -8158,7 +8158,7 @@ msgstr ""
 "hudba pochází. Pokud si chceš poslechnout ukázku ještě jednou, klikni na "
 "tlačítko přehrát."
 
-#: activities/explore_world_music/ActivityInfo.qml:27
+#: activities/explore_world_music/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid ""
 "In the third level, you must select the location that matches the text "
@@ -8166,7 +8166,7 @@ msgid ""
 msgstr ""
 "Ve třetí úrovni musíš vybrat umístění, které odpovídá popis na obrazovce."
 
-#: activities/explore_world_music/ActivityInfo.qml:28
+#: activities/explore_world_music/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Images from https://commons.wikimedia.org/wiki, https://archive.org"
 msgstr "Obrázky z https://commons.wikimedia.org/wiki, https://archive.org"
@@ -8599,7 +8599,7 @@ msgid "Arrange the pieces in the right order."
 msgstr "Uspořádej části ve správném pořadí."
 
 #. Help manual
-#: activities/fifteen/ActivityInfo.qml:24
+#: activities/fifteen/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid ""
 "Click or drag on any piece next to the empty space, and it will move to the "
@@ -8608,7 +8608,7 @@ msgstr ""
 "Klikni na libovolný dílek vedle volného místa a dílek se na toto volné místo "
 "přesune."
 
-#: activities/fifteen/ActivityInfo.qml:26
+#: activities/fifteen/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "Arrows: move a piece to the empty space."
 msgstr "Šipky: pohyb dílku na volné místo"
@@ -8797,7 +8797,7 @@ msgid "Fine motor coordination."
 msgstr "Koordinace jemných pohybů."
 
 #. Help manual
-#: activities/followline/ActivityInfo.qml:24
+#: activities/followline/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid ""
 "Move the mouse or your finger over the lock which is represented as a red "
@@ -8827,7 +8827,7 @@ msgid "Kick the ball behind the goal keeper on the right."
 msgstr "Kopni míč za brankáře napravo."
 
 #. Help manual
-#: activities/football/ActivityInfo.qml:24
+#: activities/football/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid ""
 "Drag a line from the ball to set its speed and direction, and release it to "
@@ -9222,7 +9222,7 @@ msgid "Drag and Drop the regions to complete the country maps."
 msgstr "Přetáhni a polož oblasti pro dokončení map zemí."
 
 #. Help manual
-#: activities/geo-country/ActivityInfo.qml:28
+#: activities/geo-country/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid ""
 "Drag and drop different regions of the country to their correct locations to "
@@ -12014,7 +12014,7 @@ msgid "Drag and Drop the items to complete the map."
 msgstr "Přesouvej dílky a dokonči mapu."
 
 #. Help manual
-#: activities/geography/ActivityInfo.qml:28
+#: activities/geography/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid ""
 "Drag and drop the map pieces to their correct locations to complete the map."
@@ -12700,7 +12700,7 @@ msgstr "Estonsko"
 #: activities/geography/resource/board/board6_0.qml:147
 msgctxt "board6_0|"
 msgid "Czechia"
-msgstr "Česká Republika"
+msgstr "Česko"
 
 #: activities/geography/resource/board/board6_0.qml:154
 msgctxt "board6_0|"
@@ -13136,7 +13136,7 @@ msgstr "Jednotlivá písmena"
 #. ----------
 #. Help manual
 #: activities/gletters/ActivityInfo.qml:17
-#: activities/gletters/ActivityInfo.qml:24
+#: activities/gletters/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid "Type the falling letters before they reach the ground."
 msgstr "Napiš padající písmeno, než dopadne na zem."
@@ -13157,7 +13157,7 @@ msgstr "Gnumčova rovnost"
 #. ----------
 #. Help manual
 #: activities/gnumch-equality/ActivityInfo.qml:17
-#: activities/gnumch-equality/ActivityInfo.qml:24
+#: activities/gnumch-equality/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid ""
 "Guide the Number Muncher to the expressions that equal the number at the "
@@ -13173,11 +13173,11 @@ msgid "Practice addition, multiplication, division and subtraction."
 msgstr "Procvičení operace sčítání, násobení, dělení a odčítaní."
 
 #. Help manual
-#: activities/gnumch-equality/ActivityInfo.qml:26
-#: activities/gnumch-factors/ActivityInfo.qml:26
-#: activities/gnumch-inequality/ActivityInfo.qml:25
-#: activities/gnumch-multiples/ActivityInfo.qml:26
-#: activities/gnumch-primes/ActivityInfo.qml:26
+#: activities/gnumch-equality/ActivityInfo.qml:25
+#: activities/gnumch-factors/ActivityInfo.qml:25
+#: activities/gnumch-inequality/ActivityInfo.qml:24
+#: activities/gnumch-multiples/ActivityInfo.qml:25
+#: activities/gnumch-primes/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid ""
 "If you have a keyboard you can use the arrow keys to move and press space to "
@@ -13192,20 +13192,20 @@ msgstr ""
 "podobně jako myš nebo prostě přejet prstem kamkoliv a kliknout pro spolknutí "
 "čísel."
 
-#: activities/gnumch-equality/ActivityInfo.qml:28
-#: activities/gnumch-factors/ActivityInfo.qml:28
-#: activities/gnumch-inequality/ActivityInfo.qml:27
-#: activities/gnumch-multiples/ActivityInfo.qml:28
-#: activities/gnumch-primes/ActivityInfo.qml:28
+#: activities/gnumch-equality/ActivityInfo.qml:27
+#: activities/gnumch-factors/ActivityInfo.qml:27
+#: activities/gnumch-inequality/ActivityInfo.qml:26
+#: activities/gnumch-multiples/ActivityInfo.qml:27
+#: activities/gnumch-primes/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Take care to avoid the Troggles."
 msgstr "Dej si pozor a vyhni se Trogglům."
 
-#: activities/gnumch-equality/ActivityInfo.qml:31
-#: activities/gnumch-factors/ActivityInfo.qml:31
-#: activities/gnumch-inequality/ActivityInfo.qml:30
-#: activities/gnumch-multiples/ActivityInfo.qml:31
-#: activities/gnumch-primes/ActivityInfo.qml:31
+#: activities/gnumch-equality/ActivityInfo.qml:30
+#: activities/gnumch-factors/ActivityInfo.qml:30
+#: activities/gnumch-inequality/ActivityInfo.qml:29
+#: activities/gnumch-multiples/ActivityInfo.qml:30
+#: activities/gnumch-primes/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
 msgid "Space: swallow the numbers"
 msgstr "Mezerník: spolknout čísla"
@@ -13328,7 +13328,7 @@ msgid "Learn about multiples and factors."
 msgstr "Nauč se něco o násobcích a dělitelích."
 
 #. Help manual
-#: activities/gnumch-factors/ActivityInfo.qml:24
+#: activities/gnumch-factors/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid ""
 "The factors of a number are all the numbers that divide that number evenly. "
@@ -13404,7 +13404,7 @@ msgid ""
 msgstr "Doveď čísložrouta ke všem násobkům čísla na spodní hraně obrazovky."
 
 #. Help manual
-#: activities/gnumch-multiples/ActivityInfo.qml:24
+#: activities/gnumch-multiples/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid ""
 "The multiples of a number are all the numbers that are equal to the original "
@@ -13451,7 +13451,7 @@ msgid "Learn about prime numbers."
 msgstr "Nauč se prvočísla."
 
 #. Help manual
-#: activities/gnumch-primes/ActivityInfo.qml:24
+#: activities/gnumch-primes/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid ""
 "Prime numbers are numbers that are only divisible by themselves and 1. For "
@@ -13491,12 +13491,12 @@ msgid "Learn to identify grammatical classes."
 msgstr "Nauč se poznávat gramatické třídy."
 
 #. Help manual
-#: activities/grammar_analysis/ActivityInfo.qml:27
+#: activities/grammar_analysis/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Assign the requested grammatical classes to the corresponding words."
 msgstr "Přiřaď požadované gramatické třídy k odpovídajícím slovům."
 
-#: activities/grammar_analysis/ActivityInfo.qml:28
+#: activities/grammar_analysis/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid ""
 "Select a grammatical class from the list, then select the box under a word "
@@ -13505,25 +13505,25 @@ msgstr ""
 "Vyber gramatickou třídu ze seznamu, pak vyber obdélník pod slovem a přiřaď "
 "mu tuto třídu."
 
-#: activities/grammar_analysis/ActivityInfo.qml:29
+#: activities/grammar_analysis/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Leave the box blank if no class matches."
 msgstr "Pokud žádná ze tříd neodpovídá, ponechte obdélník prázdný."
 
-#: activities/grammar_analysis/ActivityInfo.qml:31
-#: activities/grammar_classes/ActivityInfo.qml:31
+#: activities/grammar_analysis/ActivityInfo.qml:30
+#: activities/grammar_classes/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
 msgid "Up and down arrows or tabulation: switch between classes and words"
 msgstr "Šipky nahoru a dolů nebo tabulátor: přepnout mezi třídami a slovy"
 
-#: activities/grammar_analysis/ActivityInfo.qml:32
-#: activities/grammar_classes/ActivityInfo.qml:32
+#: activities/grammar_analysis/ActivityInfo.qml:31
+#: activities/grammar_classes/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
 msgid "Left and right arrows: select items in classes or words"
 msgstr "Šipky vlevo a vpravo: výběr položek ve třídách nebo slovech"
 
-#: activities/grammar_analysis/ActivityInfo.qml:33
-#: activities/grammar_classes/ActivityInfo.qml:33
+#: activities/grammar_analysis/ActivityInfo.qml:32
+#: activities/grammar_classes/ActivityInfo.qml:32
 msgctxt "ActivityInfo|"
 msgid ""
 "Space: assign the selected class to the selected word and then select the "
@@ -13531,8 +13531,8 @@ msgid ""
 msgstr ""
 "Mezerník: přiřaď vybranou třídu k vybranému slovu a pak vyber další slovo"
 
-#: activities/grammar_analysis/ActivityInfo.qml:34
-#: activities/grammar_classes/ActivityInfo.qml:34
+#: activities/grammar_analysis/ActivityInfo.qml:33
+#: activities/grammar_classes/ActivityInfo.qml:33
 msgctxt "ActivityInfo|"
 msgid "Backspace: select the previous word"
 msgstr "Backspace: vyber předchozí slovo"
@@ -13603,12 +13603,12 @@ msgid "Grammatical classes"
 msgstr "Gramatické třídy"
 
 #. Help manual
-#: activities/grammar_classes/ActivityInfo.qml:27
+#: activities/grammar_classes/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Assign the requested grammatical class to the corresponding words."
 msgstr "Přiřaď požadované gramatické třídy k odpovídajícím slovům."
 
-#: activities/grammar_classes/ActivityInfo.qml:28
+#: activities/grammar_classes/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid ""
 "Select the grammatical class from the list, then select the box under a word "
@@ -13617,7 +13617,7 @@ msgstr ""
 "Vyber gramatickou třídu ze seznamu, pak vyber obdélník pod slovem a přiřaď "
 "mu tuto třídu."
 
-#: activities/grammar_classes/ActivityInfo.qml:29
+#: activities/grammar_classes/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Leave the box blank if the class doesn't match."
 msgstr "Pokud žádná ze tříd neodpovídá, ponechte obdélník prázdný."
@@ -13699,7 +13699,7 @@ msgstr ""
 "stanici."
 
 #. Help manual
-#: activities/gravity/ActivityInfo.qml:28
+#: activities/gravity/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid ""
 "Move the spaceship with the left and right keys, or with the buttons on the "
@@ -13711,7 +13711,7 @@ msgstr ""
 "obrazovce mobilních zařízení. Snaž se udržet uprostřed obrazovky a očekávej "
 "dívajíce se na velikost a směr šipky gravitační síly."
 
-#: activities/gravity/ActivityInfo.qml:30
+#: activities/gravity/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: move the spaceship"
 msgstr "Levá a Pravá šipka: řízení vesmírné lodi"
@@ -13897,13 +13897,13 @@ msgid "Help Tux escape the cave by finding the hidden number."
 msgstr "Pomoz Tuxovi ven z jeskyně tím, že uhodneš skryté číslo."
 
 #. Help prerequisite
-#: activities/guessnumber/ActivityInfo.qml:22
+#: activities/guessnumber/ActivityInfo.qml:21
 msgctxt "ActivityInfo|"
 msgid "Numbers."
 msgstr "Čísla."
 
 #. Help manual
-#: activities/guessnumber/ActivityInfo.qml:24
+#: activities/guessnumber/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid ""
 "Read the instructions that give you the range of the number to find. Enter a "
@@ -13922,12 +13922,12 @@ msgstr ""
 "pod vertikálním středem obrazovky, znamená to, že tvoje číslo je nad nebo "
 "pod hledaným číslem."
 
-#: activities/guessnumber/ActivityInfo.qml:26
+#: activities/guessnumber/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "Digits: enter a number"
 msgstr "Čísla: zadej číslo"
 
-#: activities/guessnumber/ActivityInfo.qml:27
+#: activities/guessnumber/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Backspace: erase a number"
 msgstr "Backspace: smazat číslo"
@@ -14006,7 +14006,7 @@ msgid "This is a good exercise to improve reading and spelling skills."
 msgstr "Jde o dobrý způsob pro zlepšení čtení a psaní."
 
 #. Help manual
-#: activities/hangman/ActivityInfo.qml:24
+#: activities/hangman/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid ""
 "You can enter the letters using the virtual keyboard on the screen or with "
@@ -14015,7 +14015,7 @@ msgstr ""
 "Písmena můžeš zadávat virtuální klávesnicí na obrazovce nebo fyzickou "
 "klávesnicí."
 
-#: activities/hangman/ActivityInfo.qml:25
+#: activities/hangman/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid ""
 "If the option 'Display the image to find as hint' is activated, on every "
@@ -14024,7 +14024,7 @@ msgstr ""
 "Pokud je zapnutá možnost \"Zobrazit obrázek jako nápovědu\", při každém "
 "nesprávném tipu bude odkrytý kousek obrázku."
 
-#: activities/hangman/ActivityInfo.qml:26
+#: activities/hangman/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid ""
 "If the option 'Speak the words to find...' is activated, and if the "
@@ -14089,11 +14089,13 @@ msgid ""
 "Drag and Drop one top piece at a time, from one tower to another, to "
 "reproduce the tower on the right in the empty area."
 msgstr ""
+"Táhni a pusť vždy jen jeden horní dílek, který přesuneš z jedné věže na "
+"jinou tak, abys znovu postavil tu věž vpravo na jiném prázdném místě."
 
 #: activities/hanoi/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "Concept taken from EPI games."
-msgstr ""
+msgstr "Koncept je převzatý z EPI her."
 
 #. Activity title
 #: activities/hanoi_real/ActivityInfo.qml:15
@@ -14116,16 +14118,22 @@ msgid ""
 "    only one disc may be moved at a time\n"
 "    no disc may be placed atop a smaller disc\n"
 msgstr ""
+"Cílem hry je přesunout celou haldu na jiný trn při zachování následujících "
+"pravidel:\n"
+"    v jednu chvíli je možné přesunout pouze jeden kroužek\n"
+"    žádný kroužek nemůže být položen nad jiný menší\n"
 
 #. Help manual
-#: activities/hanoi_real/ActivityInfo.qml:27
+#: activities/hanoi_real/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid ""
 "Drag and drop the top pieces only from one peg to another, to reproduce the "
 "initial left side tower on the right peg."
 msgstr ""
+"Táhni a pusť vrchní dílky pouze z jednoho trnu na druhý tak, abys znovu "
+"postavil úvodní věž zleva na pravém trnu."
 
-#: activities/hanoi_real/ActivityInfo.qml:28
+#: activities/hanoi_real/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid ""
 "The puzzle was invented by the French mathematician Edouard Lucas in 1883. "
@@ -14137,18 +14145,25 @@ msgid ""
 "inspired by it. (source Wikipedia: https://en.wikipedia.org/wiki/"
 "Tower_of_hanoi)"
 msgstr ""
+"Tento hlavolam vynalezl francouzský matematik Édouard Lucas v roce 1883. "
+"Existuje legenda o Mandiru (hinduistickém chrámu), jehož kněží byli trvale "
+"zaměstnáni přesunem 64 kroužků podle pravidel hlavolamu Hanojská věž. Podle "
+"této legendy by po dokončení této práce kněží měl nastat konec světa. Tento "
+"hlavolam je proto také znám jako hlavolam Brahmova věž. Není jasné, zda tuto "
+"Legendu Lucas vymyslel nebo jí byl inspirován. (zdroj Wikipedia: https://en."
+"wikipedia.org/wiki/Tower_of_hanoi)"
 
 #: activities/hanoi_real/HanoiReal.qml:75
 msgctxt "HanoiReal|"
 msgid "Move the entire stack to the right peg, one disc at a time."
-msgstr ""
+msgstr "Přesuň celou haldu po jednom disku na trn vpravo."
 
 #: activities/hanoi_real/HanoiReal.qml:76
 msgctxt "HanoiReal|"
 msgid ""
 "Build the same tower in the empty area as the one you see on the right-hand "
 "side"
-msgstr ""
+msgstr "Postav stejnou věž na prázdném místě, které vidíš napravo"
 
 #. Activity title
 #: activities/hexagon/ActivityInfo.qml:15
@@ -14169,7 +14184,7 @@ msgid "Logic-training activity."
 msgstr "Aktivita pro cvičení logiky."
 
 #. Help manual
-#: activities/hexagon/ActivityInfo.qml:24
+#: activities/hexagon/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid ""
 "Try to find the strawberry under the blue fields. The fields become redder "
@@ -14451,12 +14466,12 @@ msgid "Learn to recognize musical instruments."
 msgstr "Nauč se rozpoznávat hudební nástroje."
 
 #. Help manual
-#: activities/instruments/ActivityInfo.qml:24
+#: activities/instruments/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid "Click on the correct musical instrument."
 msgstr "Klikni na správný hudební nástroj."
 
-#: activities/instruments/ActivityInfo.qml:28
+#: activities/instruments/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Tab: repeat the instrument sound"
 msgstr "Tabulátor: opakování zvuku nástroje"
@@ -14637,7 +14652,7 @@ msgid "Understand the acceleration caused by the gravity."
 msgstr "Pochopit zrychlení způsobené gravitací."
 
 #. Help manual
-#: activities/land_safe/ActivityInfo.qml:24
+#: activities/land_safe/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid ""
 "The acceleration caused by the gravity experienced by the spaceship is "
@@ -14646,8 +14661,12 @@ msgid ""
 "every planet the acceleration will differ and as the spaceship comes closer "
 "and closer to the planet the acceleration increases."
 msgstr ""
+"Zrychlení způsobené gravitací působící na vesmírnou loď je přímo úměrné "
+"hmotě planety a nepřímo úměrné čtverci vzdálenosti od středu planety. Takto "
+"se s každou planetou zrychlení liší a vesmírná loď se přibližuje blíže a "
+"blíže k planetě tak, jak se zrychlení zvyšuje."
 
-#: activities/land_safe/ActivityInfo.qml:25
+#: activities/land_safe/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid ""
 "In first levels, use the up/down keys to control the thrust and the right/"
@@ -14655,7 +14674,7 @@ msgid ""
 "rocket through the corresponding on-screen buttons."
 msgstr ""
 
-#: activities/land_safe/ActivityInfo.qml:26
+#: activities/land_safe/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid ""
 "In higher levels, you can use the right/left keys to rotate the spaceship. "
@@ -14663,14 +14682,14 @@ msgid ""
 "direction using the up/down keys."
 msgstr ""
 
-#: activities/land_safe/ActivityInfo.qml:27
+#: activities/land_safe/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "The landing platform is green if your speed is fine for a safe landing."
 msgstr ""
 "Přistávací plocha je zelená v případě, když je tvoje rychlost dobrá pro "
 "bezpečné přistání."
 
-#: activities/land_safe/ActivityInfo.qml:28
+#: activities/land_safe/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid ""
 "The accelerometer on the right border shows your rocket's overall vertical "
@@ -14680,12 +14699,12 @@ msgid ""
 "area the two forces cancel each other out."
 msgstr ""
 
-#: activities/land_safe/ActivityInfo.qml:30
+#: activities/land_safe/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid "Up and Down arrows: control the thrust of the rear engine"
 msgstr "Šipky nahoru a dolů: ovládání tahu zadního motoru"
 
-#: activities/land_safe/ActivityInfo.qml:31
+#: activities/land_safe/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
 msgid ""
 "Left and Right arrows: at first levels, move to the sides; at higher levels, "
@@ -15000,7 +15019,7 @@ msgid "Learn additions by counting their result."
 msgstr "Nauč se sčítat na počítadle."
 
 #. Help manual
-#: activities/learn_additions/ActivityInfo.qml:24
+#: activities/learn_additions/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid ""
 "An addition is displayed on the screen. Calculate the result, fill the "
@@ -15009,9 +15028,9 @@ msgstr ""
 "Je zobrazeno sčítání. Spočti výsledek, vyplň odpovídající počet koleček na "
 "počítadle a potvrď svoji odpověď."
 
-#: activities/learn_additions/ActivityInfo.qml:27
-#: activities/learn_digits/ActivityInfo.qml:27
-#: activities/learn_subtractions/ActivityInfo.qml:27
+#: activities/learn_additions/ActivityInfo.qml:26
+#: activities/learn_digits/ActivityInfo.qml:26
+#: activities/learn_subtractions/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Space: select or deselect a circle"
 msgstr "Mezerník: vyplnit kolečko"
@@ -15054,7 +15073,7 @@ msgstr ""
 "vyjádření desetinného čísla."
 
 #. Help manual
-#: activities/learn_decimals/ActivityInfo.qml:23
+#: activities/learn_decimals/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid ""
 "A decimal number is displayed. Drag the arrow to select a part of the bar, "
@@ -15201,7 +15220,7 @@ msgstr ""
 "vyjádření výsledku."
 
 #. Help manual
-#: activities/learn_decimals_additions/ActivityInfo.qml:23
+#: activities/learn_decimals_additions/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid ""
 "An addition with two decimal numbers is displayed. Drag the arrow to select "
@@ -15210,8 +15229,8 @@ msgid ""
 "result of the addition, and click on the OK button to validate your answer."
 msgstr ""
 
-#: activities/learn_decimals_additions/ActivityInfo.qml:24
-#: activities/learn_decimals_subtractions/ActivityInfo.qml:24
+#: activities/learn_decimals_additions/ActivityInfo.qml:23
+#: activities/learn_decimals_subtractions/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid ""
 "If the answer is correct, type the corresponding result, and click on the OK "
@@ -15220,8 +15239,8 @@ msgstr ""
 "Pokud je odpověď správná, napiš odpovídající výsledek a potvrď odpověď "
 "kliknutím na tlačítko OK."
 
-#: activities/learn_decimals_additions/ActivityInfo.qml:27
-#: activities/learn_decimals_subtractions/ActivityInfo.qml:27
+#: activities/learn_decimals_additions/ActivityInfo.qml:26
+#: activities/learn_decimals_subtractions/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Numbers: type the result"
 msgstr "Čísla: zadej výsledek"
@@ -15262,7 +15281,7 @@ msgid ""
 msgstr ""
 
 #. Help manual
-#: activities/learn_decimals_subtractions/ActivityInfo.qml:23
+#: activities/learn_decimals_subtractions/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid ""
 "A subtraction with two decimal numbers is displayed. The first number from "
@@ -15333,7 +15352,7 @@ msgid "Learn digits by counting their corresponding value."
 msgstr "Naučit se číslice počítáním jejich odpovídající hodnoty."
 
 #. Help manual
-#: activities/learn_digits/ActivityInfo.qml:24
+#: activities/learn_digits/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid ""
 "A digit is displayed on the screen. Fill the corresponding number of circles "
@@ -15342,7 +15361,7 @@ msgstr ""
 "Na obrazovce se zobrazí číslice. Vyplň odpovídající počet kruhů a potvrď "
 "svou odpověď."
 
-#: activities/learn_digits/ActivityInfo.qml:29
+#: activities/learn_digits/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Tab: say the digit again"
 msgstr "Tabulátor: říci číslici znovu"
@@ -15414,7 +15433,7 @@ msgstr ""
 "Nauč se spočítat, kolik potřebuješ pomerančů k vyjádření požadovaného počtu."
 
 #. Help manual
-#: activities/learn_quantities/ActivityInfo.qml:23
+#: activities/learn_quantities/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid ""
 "A quantity is requested. Drag the arrow to select a number of oranges, and "
@@ -15472,7 +15491,7 @@ msgid "Learn subtractions by counting their result."
 msgstr "Naučit se odčítání počítáním jejich výsledků."
 
 #. Help manual
-#: activities/learn_subtractions/ActivityInfo.qml:24
+#: activities/learn_subtractions/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid ""
 "A subtraction is displayed on the screen. Calculate the result, fill the "
@@ -15556,7 +15575,7 @@ msgstr ""
 "Rozpoznání levé ruky od pravé z různých pohledů. Prostorová reprezentace."
 
 #. Help manual
-#: activities/leftright/ActivityInfo.qml:24
+#: activities/leftright/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid ""
 "You can see a hand: is it a left hand or a right hand? Click on the left "
@@ -15565,12 +15584,12 @@ msgstr ""
 "Je zobrazena ruka. Urči, jestli je to pravá nebo levá ruka. Klikni na levé "
 "nebo pravé tlačítko podle toho, která ruka to je."
 
-#: activities/leftright/ActivityInfo.qml:26
+#: activities/leftright/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "Left arrow: left hand answer"
 msgstr "Šipka doleva: odpověď levá ruka"
 
-#: activities/leftright/ActivityInfo.qml:27
+#: activities/leftright/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Right arrow: right hand answer"
 msgstr "Šipka doprava: odpověď pravá ruka"
@@ -15693,7 +15712,7 @@ msgid "The goal is to turn off all the lights."
 msgstr "Cílem je zhasnout všechna světla."
 
 #. Help manual
-#: activities/lightsoff/ActivityInfo.qml:24
+#: activities/lightsoff/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid ""
 "The effect of pressing a window is to toggle the state of that window, and "
@@ -15701,7 +15720,7 @@ msgid ""
 "the lights. If you click on Tux, the solution is shown."
 msgstr ""
 
-#: activities/lightsoff/ActivityInfo.qml:25
+#: activities/lightsoff/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid ""
 "The solver algorithm is described on Wikipedia. To know more about the "
@@ -15769,7 +15788,7 @@ msgid "Review the major dates of the inventor of the braille system."
 msgstr "Projdi si hlavní data vynálezce Braillovy slepecké abecedy."
 
 #. Help manual
-#: activities/louis-braille/ActivityInfo.qml:24
+#: activities/louis-braille/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid ""
 "Read the history of Louis Braille, his biography, and the invention of the "
@@ -15781,12 +15800,12 @@ msgstr ""
 "pohybovat mezistránky příběhu. Na konci uspořádej sekvenci v chronologickém "
 "pořadí."
 
-#: activities/louis-braille/ActivityInfo.qml:27
+#: activities/louis-braille/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "Space or Enter: select an item and change its position"
 msgstr ""
 
-#: activities/louis-braille/ActivityInfo.qml:28
+#: activities/louis-braille/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid ""
 "Louis Braille Video: &lt;https://www.youtube.com/watch?v=9bdfC2j_4x4&gt;"
@@ -16070,24 +16089,24 @@ msgid "Help Tux get out of this maze."
 msgstr "Pomoz Tuxovi dostat se z bludiště."
 
 #. Help manual
-#: activities/maze/ActivityInfo.qml:24
-#: activities/mazerelative/ActivityInfo.qml:24
+#: activities/maze/ActivityInfo.qml:22
+#: activities/mazerelative/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid "Use the arrow keys or swipe the screen to move Tux to the door."
 msgstr ""
 "Použij šipky na klávesnici nebo tahy prstem po obrazovce, aby se Tux dostal "
 "ke dveřím."
 
-#: activities/maze/ActivityInfo.qml:25
+#: activities/maze/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid ""
 "In first levels, Tux walks comfortably, one step on each move request, "
 "through the maze."
 msgstr "Na prvních úrovních Tux chodí poklidně, krůček po krůčku, bludištěm."
 
-#: activities/maze/ActivityInfo.qml:26
-#: activities/mazeinvisible/ActivityInfo.qml:26
-#: activities/mazerelative/ActivityInfo.qml:27
+#: activities/maze/ActivityInfo.qml:24
+#: activities/mazeinvisible/ActivityInfo.qml:24
+#: activities/mazerelative/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid ""
 "For larger mazes, there is a special walking mode, called \"run-fast-mode\". "
@@ -16098,7 +16117,7 @@ msgstr ""
 "Pokud je tento režim aktivní, Tux běží až dokud se nedostane k rozcestí, kde "
 "musíš rozhodnout, kudy se má Tux dále vydat."
 
-#: activities/maze/ActivityInfo.qml:27
+#: activities/maze/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid ""
 "You can see whether this mode is enabled or not, by looking at Tux's feet: "
@@ -16109,9 +16128,9 @@ msgstr ""
 "nohy: Pokud je Tux bosý, režim rychlochůze je vypnutý. Pokud má na nohou "
 "červené běžecké boty, je režim rychlochůze aktivní."
 
-#: activities/maze/ActivityInfo.qml:28
-#: activities/mazeinvisible/ActivityInfo.qml:28
-#: activities/mazerelative/ActivityInfo.qml:29
+#: activities/maze/ActivityInfo.qml:26
+#: activities/mazeinvisible/ActivityInfo.qml:26
+#: activities/mazerelative/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid ""
 "At higher levels, run-fast-mode will be enabled automatically. If you want "
@@ -16145,7 +16164,7 @@ msgid "Guide Tux out of the invisible maze."
 msgstr "Vyveď Tuxe z neviditelného bludiště."
 
 #. Help manual
-#: activities/mazeinvisible/ActivityInfo.qml:24
+#: activities/mazeinvisible/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid ""
 "Use the arrow keys or swipe the screen to move Tux to the door. Use the maze "
@@ -16158,16 +16177,16 @@ msgstr ""
 "mezerníkem. Tento režim je však použitelný pouze jako mapa, nelze se během "
 "něj pohybovat."
 
-#: activities/mazeinvisible/ActivityInfo.qml:25
-#: activities/mazerelative/ActivityInfo.qml:26
+#: activities/mazeinvisible/ActivityInfo.qml:23
+#: activities/mazerelative/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid ""
 "At the first levels, Tux walks comfortably, one step on each move request, "
 "through the maze."
 msgstr "Na prvních úrovních Tux chodí poklidně, krůček po krůčku, bludištěm."
 
-#: activities/mazeinvisible/ActivityInfo.qml:27
-#: activities/mazerelative/ActivityInfo.qml:28
+#: activities/mazeinvisible/ActivityInfo.qml:25
+#: activities/mazerelative/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid ""
 "You can see whether this mode is enabled or not, by looking at Tux's feet: "
@@ -16178,7 +16197,7 @@ msgstr ""
 "nohy: Pokud je Tux bosý, režim rychlochůze je vypnutý. Pokud má na nohou "
 "červené běžecké boty, je režim rychlochůze aktivní."
 
-#: activities/mazeinvisible/ActivityInfo.qml:31
+#: activities/mazeinvisible/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid "Space: switch between invisible and visible modes"
 msgstr "Mezerník: přepnutí mezi viditelným a neviditelným bludištěm"
@@ -16195,7 +16214,7 @@ msgctxt "ActivityInfo|"
 msgid "Help Tux get out of this maze (moves are relative)."
 msgstr "Pomoz Tuxovi dostat se z tohoto bludiště (pohyby jsou relativní)."
 
-#: activities/mazerelative/ActivityInfo.qml:25
+#: activities/mazerelative/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid ""
 "In this maze, the moves are relative (first person). Left and right are used "
@@ -16204,17 +16223,17 @@ msgstr ""
 "V tomto bludišti jsou pohyby relativní (z pohledu první osoby). Šipky doleva "
 "a doprava se používají k otočení a šipka nahoru k pohybu vpřed."
 
-#: activities/mazerelative/ActivityInfo.qml:31
+#: activities/mazerelative/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: turn left and right"
 msgstr "Šipky vlevo a vpravo: otočení doleva a doprava"
 
-#: activities/mazerelative/ActivityInfo.qml:32
+#: activities/mazerelative/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
 msgid "Down arrow: turn backward"
 msgstr "Šipka dolů: otočení dozadu"
 
-#: activities/mazerelative/ActivityInfo.qml:33
+#: activities/mazerelative/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
 msgid "Up arrow: move forward"
 msgstr "Šipka nahoru: pohyb vpřed"
@@ -16315,7 +16334,7 @@ msgstr ""
 
 #: activities/memory-case-association-tux/ActivityInfo.qml:27
 #: activities/memory-case-association/ActivityInfo.qml:27
-#: activities/memory-enumerate/ActivityInfo.qml:27
+#: activities/memory-enumerate/ActivityInfo.qml:26
 #: activities/memory-math-add-minus-mult-div-tux/ActivityInfo.qml:27
 #: activities/memory-math-add-minus-mult-div/ActivityInfo.qml:27
 #: activities/memory-math-add-minus-tux/ActivityInfo.qml:27
@@ -16330,8 +16349,8 @@ msgstr ""
 #: activities/memory-math-mult-div/ActivityInfo.qml:27
 #: activities/memory-math-mult-tux/ActivityInfo.qml:27
 #: activities/memory-math-mult/ActivityInfo.qml:27
-#: activities/memory-sound-tux/ActivityInfo.qml:27
-#: activities/memory-sound/ActivityInfo.qml:27
+#: activities/memory-sound-tux/ActivityInfo.qml:26
+#: activities/memory-sound/ActivityInfo.qml:26
 #: activities/memory-tux/ActivityInfo.qml:27
 #: activities/memory-wordnumber/ActivityInfo.qml:27
 #: activities/memory/ActivityInfo.qml:27
@@ -16418,7 +16437,7 @@ msgid "Numeration training, memory."
 msgstr "Trénování počítání, paměť."
 
 #. Help manual
-#: activities/memory-enumerate/ActivityInfo.qml:24
+#: activities/memory-enumerate/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid ""
 "Each card is hiding either a picture with a number of items, or a number. "
@@ -17180,8 +17199,8 @@ msgid "Train your audio memory."
 msgstr "Trénuj svoji zvukovou paměť."
 
 #. Help manual
-#: activities/memory-sound-tux/ActivityInfo.qml:24
-#: activities/memory-sound/ActivityInfo.qml:24
+#: activities/memory-sound-tux/ActivityInfo.qml:23
+#: activities/memory-sound/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid ""
 "Each card plays a sound when you flip it, and each card has a twin with "
@@ -18363,24 +18382,24 @@ msgid "Put each item at the same place as in the given example."
 msgstr ""
 
 #. Help manual
-#: activities/mosaic/ActivityInfo.qml:24
+#: activities/mosaic/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid ""
 "First select an item from the list, and then click on a spot of the mosaic "
 "to place the item."
 msgstr ""
 
-#: activities/mosaic/ActivityInfo.qml:26
+#: activities/mosaic/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid "Arrows: navigate inside an area"
 msgstr ""
 
-#: activities/mosaic/ActivityInfo.qml:27
+#: activities/mosaic/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "Space or Enter: select or place an item"
 msgstr ""
 
-#: activities/mosaic/ActivityInfo.qml:28
+#: activities/mosaic/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Tab: navigate between the item list and the mosaic"
 msgstr ""
@@ -18412,7 +18431,7 @@ msgid "Nine men's morris (against Tux)"
 msgstr ""
 
 #. Help goal
-#: activities/nine_men_morris/ActivityInfo.qml:20
+#: activities/nine_men_morris/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid ""
 "Form mills (lines of 3 pieces) to remove Tux's pieces until he has only 2 "
@@ -18420,7 +18439,7 @@ msgid ""
 msgstr ""
 
 #. Help manual
-#: activities/nine_men_morris/ActivityInfo.qml:24
+#: activities/nine_men_morris/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid ""
 "Play with Tux. First take turns to place nine pieces, and then take turns to "
@@ -18508,7 +18527,7 @@ msgid "Nine men's morris (with a friend)"
 msgstr ""
 
 #. Help goal
-#: activities/nine_men_morris_2players/ActivityInfo.qml:20
+#: activities/nine_men_morris_2players/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid ""
 "Form mills (lines of 3 pieces) to remove your opponent's pieces until your "
@@ -18516,7 +18535,7 @@ msgid ""
 msgstr ""
 
 #. Help manual
-#: activities/nine_men_morris_2players/ActivityInfo.qml:24
+#: activities/nine_men_morris_2players/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid ""
 "Play with a friend. First take turns to place nine pieces, and then take "
@@ -18546,7 +18565,7 @@ msgstr ""
 "aktivity 'Hra na piano' a 'Skládej na pianu'."
 
 #. Help manual
-#: activities/note_names/ActivityInfo.qml:27
+#: activities/note_names/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Identify the notes correctly and score 100% to complete a level."
 msgstr ""
@@ -18608,7 +18627,7 @@ msgid "Touch the numbers in the right order."
 msgstr "Stiskni čísla ve správném pořadí."
 
 #. Help manual
-#: activities/number_sequence/ActivityInfo.qml:24
+#: activities/number_sequence/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid "Draw the picture by clicking on each number in the right order."
 msgstr ""
@@ -18626,7 +18645,7 @@ msgid "Move the helicopter to catch the clouds having even or odd numbers."
 msgstr "Pochytej vrtulníkem všechna sudá nebo lichá čísla."
 
 #. Help manual
-#: activities/numbers-odd-even/ActivityInfo.qml:24
+#: activities/numbers-odd-even/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid ""
 "Catch the clouds with an odd or even number, in the right order. With a "
@@ -19062,8 +19081,8 @@ msgid ""
 msgstr ""
 
 #. Help manual
-#: activities/oware/ActivityInfo.qml:23
-#: activities/oware_2players/ActivityInfo.qml:23
+#: activities/oware/ActivityInfo.qml:22
+#: activities/oware_2players/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid ""
 "Players take turns moving the seeds. On a turn, a player chooses one of the "
@@ -19075,8 +19094,8 @@ msgid ""
 "the twelfth seed is placed in the next house."
 msgstr ""
 
-#: activities/oware/ActivityInfo.qml:24
-#: activities/oware_2players/ActivityInfo.qml:24
+#: activities/oware/ActivityInfo.qml:23
+#: activities/oware_2players/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid ""
 "Capturing occurs only when a player brings the count of an opponent's house "
@@ -19091,8 +19110,8 @@ msgid ""
 "instead left on the board."
 msgstr ""
 
-#: activities/oware/ActivityInfo.qml:25
-#: activities/oware_2players/ActivityInfo.qml:25
+#: activities/oware/ActivityInfo.qml:24
+#: activities/oware_2players/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid ""
 "If an opponent's houses are all empty, the current player must make a move "
@@ -19273,14 +19292,14 @@ msgid "Follow the given directions to help Tux reach the target."
 msgstr ""
 
 #. Help manual
-#: activities/path_decoding/ActivityInfo.qml:23
-#: activities/path_decoding_relative/ActivityInfo.qml:23
+#: activities/path_decoding/ActivityInfo.qml:21
+#: activities/path_decoding_relative/ActivityInfo.qml:21
 msgctxt "ActivityInfo|"
 msgid "Click on the grid squares to move Tux following the given directions."
 msgstr ""
 
-#: activities/path_decoding/ActivityInfo.qml:24
-#: activities/path_encoding/ActivityInfo.qml:24
+#: activities/path_decoding/ActivityInfo.qml:22
+#: activities/path_encoding/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid ""
 "The directions are absolute, they do not depend on the current orientation "
@@ -19314,14 +19333,14 @@ msgctxt "ActivityInfo|"
 msgid "Path decoding relative"
 msgstr ""
 
-#: activities/path_decoding_relative/ActivityInfo.qml:24
-#: activities/path_encoding_relative/ActivityInfo.qml:24
+#: activities/path_decoding_relative/ActivityInfo.qml:22
+#: activities/path_encoding_relative/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid "The directions are relative to the current orientation of Tux."
 msgstr ""
 
-#: activities/path_decoding_relative/ActivityInfo.qml:25
-#: activities/path_encoding_relative/ActivityInfo.qml:25
+#: activities/path_decoding_relative/ActivityInfo.qml:23
+#: activities/path_encoding_relative/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid ""
 "This means that UP moves forward, DOWN moves backward, LEFT moves to the "
@@ -19342,21 +19361,21 @@ msgid "Move Tux along the path to reach the target."
 msgstr ""
 
 #. Help manual
-#: activities/path_encoding/ActivityInfo.qml:23
-#: activities/path_encoding_relative/ActivityInfo.qml:23
+#: activities/path_encoding/ActivityInfo.qml:21
+#: activities/path_encoding_relative/ActivityInfo.qml:21
 msgctxt "ActivityInfo|"
 msgid ""
 "Use the arrow buttons to move Tux along the path until he reaches the target."
 msgstr ""
 
-#: activities/path_encoding/ActivityInfo.qml:25
-#: activities/path_encoding_relative/ActivityInfo.qml:26
+#: activities/path_encoding/ActivityInfo.qml:23
+#: activities/path_encoding_relative/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid "Keyboard controls:"
 msgstr "Ovládání klávesnicí:"
 
-#: activities/path_encoding/ActivityInfo.qml:26
-#: activities/path_encoding_relative/ActivityInfo.qml:27
+#: activities/path_encoding/ActivityInfo.qml:24
+#: activities/path_encoding_relative/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "Arrows: directions"
 msgstr ""
@@ -19386,7 +19405,7 @@ msgid "Double click or double tap on any side of the goal in order to score."
 msgstr ""
 
 #. Help manual
-#: activities/penalty/ActivityInfo.qml:24
+#: activities/penalty/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid ""
 "Double click or double tap on a side of the goal to kick the ball. You can "
@@ -19426,7 +19445,7 @@ msgid "Visual perception."
 msgstr "Vizuální vnímání."
 
 #. Help manual
-#: activities/photo_hunter/ActivityInfo.qml:24
+#: activities/photo_hunter/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid ""
 "Observe the two pictures carefully. There are some slight differences. When "
@@ -19550,19 +19569,19 @@ msgstr ""
 "Úroveň 7: Ulož si své skladby na načti předvybrané nebo uložené melodie."
 
 #: activities/piano_composition/ActivityInfo.qml:34
-#: activities/play_piano/ActivityInfo.qml:32
+#: activities/play_piano/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
 msgid "Digits 1 to 7: white keys"
 msgstr "Číslice 1 až 7: bílé klávesy"
 
 #: activities/piano_composition/ActivityInfo.qml:35
-#: activities/play_piano/ActivityInfo.qml:33
+#: activities/play_piano/ActivityInfo.qml:32
 msgctxt "ActivityInfo|"
 msgid "F2 to F7: black keys"
 msgstr "F2 až F7: černé klávesy"
 
 #: activities/piano_composition/ActivityInfo.qml:36
-#: activities/play_piano/ActivityInfo.qml:31
+#: activities/play_piano/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
 msgid "Space: play"
 msgstr "Mezerník: přehrát"
@@ -19583,7 +19602,7 @@ msgid "Delete: erase selected note or everything"
 msgstr "Delete: vymazat vybranou notu nebo vše"
 
 #: activities/piano_composition/ActivityInfo.qml:40
-#: activities/play_piano/ActivityInfo.qml:35
+#: activities/play_piano/ActivityInfo.qml:34
 msgctxt "ActivityInfo|"
 msgid ""
 "The synthesizer original code is from https://github.com/vsr83/miniSynth"
@@ -20126,7 +20145,7 @@ msgid "Move the helicopter to catch the clouds in the correct order."
 msgstr "Hýbej s vrtulníkem, abys chytil mraky ve správném pořadí."
 
 #. Help manual
-#: activities/planegame/ActivityInfo.qml:24
+#: activities/planegame/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid ""
 "Catch the clouds in increasing order. With a keyboard, use the arrow keys to "
@@ -20156,7 +20175,7 @@ msgid "Play piano"
 msgstr "Hra na piano"
 
 #. Help goal
-#: activities/play_piano/ActivityInfo.qml:24
+#: activities/play_piano/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid ""
 "Understand how the piano keyboard can play music as written on the musical "
@@ -20164,13 +20183,13 @@ msgid ""
 msgstr "Pochop jak může klaviatura piana hrát hudbu zapsanou na notové osnově."
 
 #. Help prerequisite
-#: activities/play_piano/ActivityInfo.qml:26
+#: activities/play_piano/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "Knowledge of musical notation and musical staff."
 msgstr "Znalost hudebního zápisu a notové osnovy."
 
 #. Help manual
-#: activities/play_piano/ActivityInfo.qml:28
+#: activities/play_piano/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid ""
 "Some notes are played on the staff. Click on the keyboard keys matching the "
@@ -20179,7 +20198,7 @@ msgstr ""
 "Některé noty na osnově se přehrávají. Klikni na klávesy klaviatury, které "
 "odpovídají notám na osnově."
 
-#: activities/play_piano/ActivityInfo.qml:29
+#: activities/play_piano/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid ""
 "On levels 1 to 5 you will practice treble clef notes and on levels 6 to 10 "
@@ -20188,7 +20207,7 @@ msgstr ""
 "Na úrovních 1 až 5 budeš procvičovat noty u houslového klíče a na úrovních 6 "
 "až 10 budeš procvičovat noty u basového klíče."
 
-#: activities/play_piano/ActivityInfo.qml:34
+#: activities/play_piano/ActivityInfo.qml:33
 msgctxt "ActivityInfo|"
 msgid "Backspace or Delete: undo"
 msgstr "Backspace nebo Delete: zpět"
@@ -20224,19 +20243,19 @@ msgid "Play rhythm"
 msgstr "Zahraj rytmus"
 
 #. Help goal
-#: activities/play_rhythm/ActivityInfo.qml:24
+#: activities/play_rhythm/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid "Learn to follow a rhythm accurately."
 msgstr "Nauč se správně následovat rytmus."
 
 #. Help prerequisite
-#: activities/play_rhythm/ActivityInfo.qml:26
+#: activities/play_rhythm/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "Simple understanding of musical rhythm."
 msgstr "Jednoduché porozumění hudebnímu rytmu."
 
 #. Help manual
-#: activities/play_rhythm/ActivityInfo.qml:28
+#: activities/play_rhythm/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid ""
 "Listen to the rhythm played. When you're ready, click on the drum following "
@@ -20247,14 +20266,14 @@ msgstr ""
 "rytmus. Pokud klikneš ve správný čas, bude přehrán další rytmus. Pokud ne, "
 "musíš to zkusit znovu."
 
-#: activities/play_rhythm/ActivityInfo.qml:29
+#: activities/play_rhythm/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid ""
 "Odd levels display a vertical line on the staff following the rhythm: click "
 "on the drum when the line is in the middle of the notes."
 msgstr ""
 
-#: activities/play_rhythm/ActivityInfo.qml:30
+#: activities/play_rhythm/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid ""
 "Even levels are harder, because there is no vertical line. You must read the "
@@ -20262,27 +20281,27 @@ msgid ""
 "metronome to hear the quarter notes as reference."
 msgstr ""
 
-#: activities/play_rhythm/ActivityInfo.qml:31
+#: activities/play_rhythm/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
 msgid "Click on the reload button if you want to replay the rhythm."
 msgstr "Klikni na tlačítko obnovit, pokud chceš rytmus zahrát znovu."
 
-#: activities/play_rhythm/ActivityInfo.qml:33
+#: activities/play_rhythm/ActivityInfo.qml:32
 msgctxt "ActivityInfo|"
 msgid "Space bar: click on the drum"
 msgstr "Mezerník: kliknutí na buben"
 
-#: activities/play_rhythm/ActivityInfo.qml:34
+#: activities/play_rhythm/ActivityInfo.qml:33
 msgctxt "ActivityInfo|"
 msgid "Enter or Return: replay the rhythm"
 msgstr "Enter nebo Return: znovu přehrát rytmus"
 
-#: activities/play_rhythm/ActivityInfo.qml:35
+#: activities/play_rhythm/ActivityInfo.qml:34
 msgctxt "ActivityInfo|"
 msgid "Up and Down: increase or decrease the tempo"
 msgstr "Nahoru a dolu: zvýšit nebo snížit tempo"
 
-#: activities/play_rhythm/ActivityInfo.qml:36
+#: activities/play_rhythm/ActivityInfo.qml:35
 msgctxt "ActivityInfo|"
 msgid "Tab: Start or stop the metronome if it is visible"
 msgstr "Tabulátor: Spustit nebo zastavit metronom, pokud je k dispozici"
@@ -20701,7 +20720,7 @@ msgid "Memory training."
 msgstr "Procvičování paměti."
 
 #. Help manual
-#: activities/railroad/ActivityInfo.qml:26
+#: activities/railroad/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid ""
 "A train is displayed for a few seconds. Rebuild it at the top of the screen "
@@ -20712,29 +20731,29 @@ msgstr ""
 "tím, že tam přesuneš správné vozy. Pro smazání vozu jej přetáhni z horní "
 "části obrazovky dolů."
 
-#: activities/railroad/ActivityInfo.qml:27
+#: activities/railroad/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "<b>Keyboard Controls:</b>"
 msgstr "<b>Ovládání klávesnicí:</b>"
 
-#: activities/railroad/ActivityInfo.qml:28
+#: activities/railroad/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Arrows: navigate in the sample area and in the answer area"
 msgstr "Šipky: přesouvej se v mřížce"
 
-#: activities/railroad/ActivityInfo.qml:29
+#: activities/railroad/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid ""
 "Space: add an item from the samples to the answer area, or swap two items in "
 "the answer area"
 msgstr ""
 
-#: activities/railroad/ActivityInfo.qml:30
+#: activities/railroad/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid "Delete or Backspace: remove the selected item from the answer area"
 msgstr ""
 
-#: activities/railroad/ActivityInfo.qml:31
+#: activities/railroad/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
 msgid "Enter or Return: submit your answer"
 msgstr "Enter nebo Return: potvrdit odpověď"
@@ -20838,8 +20857,8 @@ msgid "Draw perfectly the given image on the empty grid."
 msgstr "Překresli přesně obrázek do vedlejší mřížky."
 
 #. Help manual
-#: activities/redraw/ActivityInfo.qml:24
-#: activities/redraw_symmetrical/ActivityInfo.qml:24
+#: activities/redraw/ActivityInfo.qml:22
+#: activities/redraw_symmetrical/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid ""
 "First, select the proper color from the toolbar. Click on the grid and drag "
@@ -20848,21 +20867,21 @@ msgstr ""
 "Nejprve vyber barvu v panelu nástrojů. Poté klikni na mřížku a tahem kresli. "
 "Uvolněním kreslit přestaneš."
 
-#: activities/redraw/ActivityInfo.qml:27
-#: activities/redraw_symmetrical/ActivityInfo.qml:27
+#: activities/redraw/ActivityInfo.qml:25
+#: activities/redraw_symmetrical/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "Digits: select a color"
 msgstr "Čísla: vyber barvu"
 
-#: activities/redraw/ActivityInfo.qml:28
-#: activities/redraw_symmetrical/ActivityInfo.qml:28
+#: activities/redraw/ActivityInfo.qml:26
+#: activities/redraw_symmetrical/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Arrows: navigate in the grid"
 msgstr "Šipky: přesouvej se v mřížce"
 
-#: activities/redraw/ActivityInfo.qml:29
-#: activities/redraw_symmetrical/ActivityInfo.qml:29
-#: activities/simplepaint/ActivityInfo.qml:27
+#: activities/redraw/ActivityInfo.qml:27
+#: activities/redraw_symmetrical/ActivityInfo.qml:27
+#: activities/simplepaint/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Space or Enter: paint"
 msgstr "Mezerník nebo Enter: kreslit"
@@ -21081,7 +21100,7 @@ msgid "Roman numerals"
 msgstr "Římské číslice"
 
 #. Help goal
-#: activities/roman_numerals/ActivityInfo.qml:20
+#: activities/roman_numerals/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid ""
 "Learn how to read roman numerals and do the conversion to and from arabic "
@@ -21089,7 +21108,7 @@ msgid ""
 msgstr "Nauč se číst římské číslice a převádět je na číslice arabské"
 
 #. Help manual
-#: activities/roman_numerals/ActivityInfo.qml:24
+#: activities/roman_numerals/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid ""
 "Roman numerals are a numeral system that originated in ancient Rome and "
@@ -21101,7 +21120,7 @@ msgstr ""
 "běžným způsobem psaní čísel v Evropě až do pozdního středověku. Čísla jsou "
 "vyjádřena písmeny latinské abecedy."
 
-#: activities/roman_numerals/ActivityInfo.qml:25
+#: activities/roman_numerals/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid ""
 "Learn the rules to read Roman numerals and practice converting numbers to "
@@ -21110,12 +21129,12 @@ msgstr ""
 "Nauč se pravidla čtení Římských číslic a trénuj jejich převod z/do číslic "
 "arabských. Odpověď potvrď kliknutím na tlačítko OK."
 
-#: activities/roman_numerals/ActivityInfo.qml:27
+#: activities/roman_numerals/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "Digits: type arabic numerals"
 msgstr "Čísla: psaní arabských číslic"
 
-#: activities/roman_numerals/ActivityInfo.qml:28
+#: activities/roman_numerals/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Letters: type roman numerals (with I, V, X, L, C, D and M)"
 msgstr "Písmena: psaní římských číslic (písmena I, V, X, L, C, D, M)"
@@ -21261,7 +21280,7 @@ msgid "Mental calculation, arithmetic equality."
 msgstr "Výpočet v duchu, rovnost čísel."
 
 #. Help manual
-#: activities/scalesboard/ActivityInfo.qml:24
+#: activities/scalesboard/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid ""
 "To balance the scales, move some weights to the left or the right side (on "
@@ -21477,7 +21496,7 @@ msgid "Mental calculation, arithmetic equality, unit conversion."
 msgstr "Výpočet z paměti, rovnost čísel, převod jednotek."
 
 #. Help manual
-#: activities/scalesboard_weight/ActivityInfo.qml:24
+#: activities/scalesboard_weight/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid ""
 "To balance the scales, move some masses to the left or the right side (on "
@@ -21633,7 +21652,7 @@ msgid "Balance using the imperial system of units"
 msgstr "Vyvážit váhu v Imperiálních jednotkách"
 
 #. Help manual
-#: activities/scalesboard_weight_avoirdupois/ActivityInfo.qml:24
+#: activities/scalesboard_weight_avoirdupois/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid ""
 "To balance the scales, move some masses to the left or the right side (on "
@@ -22269,13 +22288,13 @@ msgid "Enhance creative skills."
 msgstr "Zlepši svoji kreativitu."
 
 #. Help manual
-#: activities/simplepaint/ActivityInfo.qml:24
+#: activities/simplepaint/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid ""
 "Select a color and paint the rectangles as you like to create a drawing."
 msgstr ""
 
-#: activities/simplepaint/ActivityInfo.qml:28
+#: activities/simplepaint/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Tab: switch between the color selector and the painting area"
 msgstr "Tabulátor: přepínání mezi výběrem barvy a oblastí pro malování"
@@ -22508,7 +22527,7 @@ msgstr ""
 "Stellarium (https://stellarium.org/)."
 
 #. Help manual
-#: activities/solar_system/ActivityInfo.qml:27
+#: activities/solar_system/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid ""
 "Click on a planet or on the Sun, and answer the corresponding questions. "
@@ -22519,17 +22538,17 @@ msgstr ""
 "čtyři odpovědi, ale jen jedna je stoprocentně správná. Pokus se odpovídat na "
 "otázky a dosáhnout 100% přesnosti odpovědi."
 
-#: activities/solar_system/ActivityInfo.qml:30
+#: activities/solar_system/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid "Space or Enter: select"
 msgstr "Mezerník nebo Enter: zvolit"
 
-#: activities/solar_system/ActivityInfo.qml:31
+#: activities/solar_system/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
 msgid "Escape: return to previous screen"
 msgstr "Escape: návrat na předchozí obrazovku"
 
-#: activities/solar_system/ActivityInfo.qml:32
+#: activities/solar_system/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
 msgid "Tab: view the hint (only when the hint icon is visible)"
 msgstr "Tabulátor: rada (pouze pokud je vidět ikona rady)"
@@ -23939,7 +23958,7 @@ msgid "Tux has hidden several items. Find them in the correct order."
 msgstr ""
 
 #. Help manual
-#: activities/superbrain/ActivityInfo.qml:24
+#: activities/superbrain/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid ""
 "Click on the items until you find what you think is the correct answer. "
@@ -24251,14 +24270,14 @@ msgstr ""
 "vyhraj hru."
 
 #. Help manual
-#: activities/tic_tac_toe/ActivityInfo.qml:27
+#: activities/tic_tac_toe/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid ""
 "Play with Tux. Take turns to click on the square which you want to mark. The "
 "first player to create a line of 3 marks wins."
 msgstr ""
 
-#: activities/tic_tac_toe/ActivityInfo.qml:28
+#: activities/tic_tac_toe/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Tux will play better when you increase the level."
 msgstr "Když zvýšíš úroveň, bude těžší Tuxe porazit."
@@ -24270,7 +24289,7 @@ msgid "Tic tac toe (with a friend)"
 msgstr "Piškvorky (s kamarádem)"
 
 #. Help manual
-#: activities/tic_tac_toe_2players/ActivityInfo.qml:27
+#: activities/tic_tac_toe_2players/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid ""
 "Play with a friend. Take turns to click on the square which you want to "
@@ -24292,7 +24311,7 @@ msgid "Remove the red car from the parking lot through the gate on the right."
 msgstr "Odstraň červené auto z parkoviště skrz bránu vpravo."
 
 #. Help manual
-#: activities/traffic/ActivityInfo.qml:24
+#: activities/traffic/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid ""
 "Each car can only move either horizontally or vertically. You must make some "
@@ -24325,7 +24344,7 @@ msgid "Learn the water cycle."
 msgstr "Nauč se koloběh vody."
 
 #. Help manual
-#: activities/watercycle/ActivityInfo.qml:24
+#: activities/watercycle/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid ""
 "Click on different active elements: sun, cloud, pumping station, and the "

@@ -60,46 +60,46 @@ msgstr ""
 #: activities/align4/ActivityInfo.qml:24
 #: activities/align4_2players/ActivityInfo.qml:23
 #: activities/alphabet-sequence/ActivityInfo.qml:25
-#: activities/baby_wordprocessor/ActivityInfo.qml:26
-#: activities/braille_alphabets/ActivityInfo.qml:26
-#: activities/braille_fun/ActivityInfo.qml:25
+#: activities/baby_wordprocessor/ActivityInfo.qml:25
+#: activities/braille_alphabets/ActivityInfo.qml:25
+#: activities/braille_fun/ActivityInfo.qml:24
 #: activities/calendar/ActivityInfo.qml:25
 #: activities/click_on_letter/ActivityInfo.qml:25
 #: activities/click_on_letter_up/ActivityInfo.qml:25
 #: activities/colors/ActivityInfo.qml:25
-#: activities/comparator/ActivityInfo.qml:28
+#: activities/comparator/ActivityInfo.qml:27
 #: activities/crane/ActivityInfo.qml:30
 #: activities/enumerate/ActivityInfo.qml:25
-#: activities/fifteen/ActivityInfo.qml:25
+#: activities/fifteen/ActivityInfo.qml:24
 #: activities/find_the_day/ActivityInfo.qml:25
-#: activities/gnumch-equality/ActivityInfo.qml:29
-#: activities/gnumch-factors/ActivityInfo.qml:29
-#: activities/gnumch-inequality/ActivityInfo.qml:28
-#: activities/gnumch-multiples/ActivityInfo.qml:29
-#: activities/gnumch-primes/ActivityInfo.qml:29
-#: activities/grammar_analysis/ActivityInfo.qml:30
-#: activities/grammar_classes/ActivityInfo.qml:30
+#: activities/gnumch-equality/ActivityInfo.qml:28
+#: activities/gnumch-factors/ActivityInfo.qml:28
+#: activities/gnumch-inequality/ActivityInfo.qml:27
+#: activities/gnumch-multiples/ActivityInfo.qml:28
+#: activities/gnumch-primes/ActivityInfo.qml:28
+#: activities/grammar_analysis/ActivityInfo.qml:29
+#: activities/grammar_classes/ActivityInfo.qml:29
 #: activities/graph-coloring/ActivityInfo.qml:25
-#: activities/gravity/ActivityInfo.qml:29
-#: activities/guessnumber/ActivityInfo.qml:25
-#: activities/instruments/ActivityInfo.qml:25
-#: activities/land_safe/ActivityInfo.qml:29 activities/lang/ActivityInfo.qml:33
-#: activities/learn_additions/ActivityInfo.qml:25
-#: activities/learn_decimals/ActivityInfo.qml:24
-#: activities/learn_decimals_additions/ActivityInfo.qml:25
-#: activities/learn_decimals_subtractions/ActivityInfo.qml:25
-#: activities/learn_digits/ActivityInfo.qml:25
-#: activities/learn_quantities/ActivityInfo.qml:24
-#: activities/learn_subtractions/ActivityInfo.qml:25
-#: activities/leftright/ActivityInfo.qml:25
+#: activities/gravity/ActivityInfo.qml:28
+#: activities/guessnumber/ActivityInfo.qml:24
+#: activities/instruments/ActivityInfo.qml:24
+#: activities/land_safe/ActivityInfo.qml:28 activities/lang/ActivityInfo.qml:33
+#: activities/learn_additions/ActivityInfo.qml:24
+#: activities/learn_decimals/ActivityInfo.qml:23
+#: activities/learn_decimals_additions/ActivityInfo.qml:24
+#: activities/learn_decimals_subtractions/ActivityInfo.qml:24
+#: activities/learn_digits/ActivityInfo.qml:24
+#: activities/learn_quantities/ActivityInfo.qml:23
+#: activities/learn_subtractions/ActivityInfo.qml:24
+#: activities/leftright/ActivityInfo.qml:24
 #: activities/letter-in-word/ActivityInfo.qml:25
-#: activities/louis-braille/ActivityInfo.qml:25
-#: activities/maze/ActivityInfo.qml:29
-#: activities/mazeinvisible/ActivityInfo.qml:29
-#: activities/mazerelative/ActivityInfo.qml:30
+#: activities/louis-braille/ActivityInfo.qml:23
+#: activities/maze/ActivityInfo.qml:27
+#: activities/mazeinvisible/ActivityInfo.qml:27
+#: activities/mazerelative/ActivityInfo.qml:28
 #: activities/memory-case-association-tux/ActivityInfo.qml:25
 #: activities/memory-case-association/ActivityInfo.qml:25
-#: activities/memory-enumerate/ActivityInfo.qml:25
+#: activities/memory-enumerate/ActivityInfo.qml:24
 #: activities/memory-math-add-minus-mult-div-tux/ActivityInfo.qml:25
 #: activities/memory-math-add-minus-mult-div/ActivityInfo.qml:25
 #: activities/memory-math-add-minus-tux/ActivityInfo.qml:25
@@ -114,8 +114,8 @@ msgstr ""
 #: activities/memory-math-mult-div/ActivityInfo.qml:25
 #: activities/memory-math-mult-tux/ActivityInfo.qml:25
 #: activities/memory-math-mult/ActivityInfo.qml:25
-#: activities/memory-sound-tux/ActivityInfo.qml:25
-#: activities/memory-sound/ActivityInfo.qml:25
+#: activities/memory-sound-tux/ActivityInfo.qml:24
+#: activities/memory-sound/ActivityInfo.qml:24
 #: activities/memory-tux/ActivityInfo.qml:25
 #: activities/memory-wordnumber/ActivityInfo.qml:25
 #: activities/memory/ActivityInfo.qml:25
@@ -124,21 +124,21 @@ msgstr ""
 #: activities/money_back/ActivityInfo.qml:25
 #: activities/money_back_cents/ActivityInfo.qml:25
 #: activities/money_cents/ActivityInfo.qml:25
-#: activities/mosaic/ActivityInfo.qml:25
-#: activities/numbers-odd-even/ActivityInfo.qml:25
+#: activities/mosaic/ActivityInfo.qml:23
+#: activities/numbers-odd-even/ActivityInfo.qml:24
 #: activities/piano_composition/ActivityInfo.qml:33
-#: activities/planegame/ActivityInfo.qml:25
-#: activities/play_piano/ActivityInfo.qml:30
-#: activities/play_rhythm/ActivityInfo.qml:32
+#: activities/planegame/ActivityInfo.qml:24
+#: activities/play_piano/ActivityInfo.qml:29
+#: activities/play_rhythm/ActivityInfo.qml:31
 #: activities/positions/ActivityInfo.qml:25
 #: activities/programmingMaze/ActivityInfo.qml:26
-#: activities/redraw/ActivityInfo.qml:26
-#: activities/redraw_symmetrical/ActivityInfo.qml:26
-#: activities/roman_numerals/ActivityInfo.qml:26
-#: activities/simplepaint/ActivityInfo.qml:25
+#: activities/redraw/ActivityInfo.qml:24
+#: activities/redraw_symmetrical/ActivityInfo.qml:24
+#: activities/roman_numerals/ActivityInfo.qml:24
+#: activities/simplepaint/ActivityInfo.qml:24
 #: activities/smallnumbers/ActivityInfo.qml:25
 #: activities/smallnumbers2/ActivityInfo.qml:25
-#: activities/solar_system/ActivityInfo.qml:28
+#: activities/solar_system/ActivityInfo.qml:27
 #: activities/submarine/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "<b>Keyboard controls:</b>"
@@ -149,23 +149,23 @@ msgstr "<b>鍵盤控制：</b>"
 #: activities/click_on_letter/ActivityInfo.qml:26
 #: activities/click_on_letter_up/ActivityInfo.qml:26
 #: activities/colors/ActivityInfo.qml:26
-#: activities/gnumch-equality/ActivityInfo.qml:30
-#: activities/gnumch-factors/ActivityInfo.qml:30
-#: activities/gnumch-inequality/ActivityInfo.qml:29
-#: activities/gnumch-multiples/ActivityInfo.qml:30
-#: activities/gnumch-primes/ActivityInfo.qml:30
-#: activities/instruments/ActivityInfo.qml:26
+#: activities/gnumch-equality/ActivityInfo.qml:29
+#: activities/gnumch-factors/ActivityInfo.qml:29
+#: activities/gnumch-inequality/ActivityInfo.qml:28
+#: activities/gnumch-multiples/ActivityInfo.qml:29
+#: activities/gnumch-primes/ActivityInfo.qml:29
+#: activities/instruments/ActivityInfo.qml:25
 #: activities/lang/ActivityInfo.qml:34
-#: activities/learn_additions/ActivityInfo.qml:26
-#: activities/learn_digits/ActivityInfo.qml:26
-#: activities/learn_subtractions/ActivityInfo.qml:26
+#: activities/learn_additions/ActivityInfo.qml:25
+#: activities/learn_digits/ActivityInfo.qml:25
+#: activities/learn_subtractions/ActivityInfo.qml:25
 #: activities/letter-in-word/ActivityInfo.qml:26
-#: activities/louis-braille/ActivityInfo.qml:26
-#: activities/maze/ActivityInfo.qml:30
-#: activities/mazeinvisible/ActivityInfo.qml:30
+#: activities/louis-braille/ActivityInfo.qml:24
+#: activities/maze/ActivityInfo.qml:28
+#: activities/mazeinvisible/ActivityInfo.qml:28
 #: activities/memory-case-association-tux/ActivityInfo.qml:26
 #: activities/memory-case-association/ActivityInfo.qml:26
-#: activities/memory-enumerate/ActivityInfo.qml:26
+#: activities/memory-enumerate/ActivityInfo.qml:25
 #: activities/memory-math-add-minus-mult-div-tux/ActivityInfo.qml:26
 #: activities/memory-math-add-minus-mult-div/ActivityInfo.qml:26
 #: activities/memory-math-add-minus-tux/ActivityInfo.qml:26
@@ -180,21 +180,21 @@ msgstr "<b>鍵盤控制：</b>"
 #: activities/memory-math-mult-div/ActivityInfo.qml:26
 #: activities/memory-math-mult-tux/ActivityInfo.qml:26
 #: activities/memory-math-mult/ActivityInfo.qml:26
-#: activities/memory-sound-tux/ActivityInfo.qml:26
-#: activities/memory-sound/ActivityInfo.qml:26
+#: activities/memory-sound-tux/ActivityInfo.qml:25
+#: activities/memory-sound/ActivityInfo.qml:25
 #: activities/memory-tux/ActivityInfo.qml:26
 #: activities/memory-wordnumber/ActivityInfo.qml:26
 #: activities/memory/ActivityInfo.qml:26
 #: activities/positions/ActivityInfo.qml:26
-#: activities/simplepaint/ActivityInfo.qml:26
-#: activities/solar_system/ActivityInfo.qml:29
+#: activities/simplepaint/ActivityInfo.qml:25
+#: activities/solar_system/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Arrows: navigate"
 msgstr "箭頭：導覽"
 
 #: activities/advanced_colors/ActivityInfo.qml:27
 #: activities/algorithm/ActivityInfo.qml:25
-#: activities/instruments/ActivityInfo.qml:27
+#: activities/instruments/ActivityInfo.qml:26
 #: activities/money/ActivityInfo.qml:27
 #: activities/money_back/ActivityInfo.qml:27
 #: activities/money_back_cents/ActivityInfo.qml:27
@@ -788,17 +788,17 @@ msgstr "返回鍵：刪除前一個輸入的數字"
 #: activities/algebra_div/ActivityInfo.qml:28
 #: activities/algebra_minus/ActivityInfo.qml:28
 #: activities/algebra_plus/ActivityInfo.qml:28
-#: activities/grammar_analysis/ActivityInfo.qml:35
-#: activities/grammar_classes/ActivityInfo.qml:35
-#: activities/learn_additions/ActivityInfo.qml:28
-#: activities/learn_decimals/ActivityInfo.qml:25
-#: activities/learn_decimals_additions/ActivityInfo.qml:26
-#: activities/learn_decimals_subtractions/ActivityInfo.qml:26
-#: activities/learn_digits/ActivityInfo.qml:28
-#: activities/learn_quantities/ActivityInfo.qml:25
-#: activities/learn_subtractions/ActivityInfo.qml:28
+#: activities/grammar_analysis/ActivityInfo.qml:34
+#: activities/grammar_classes/ActivityInfo.qml:34
+#: activities/learn_additions/ActivityInfo.qml:27
+#: activities/learn_decimals/ActivityInfo.qml:24
+#: activities/learn_decimals_additions/ActivityInfo.qml:25
+#: activities/learn_decimals_subtractions/ActivityInfo.qml:25
+#: activities/learn_digits/ActivityInfo.qml:27
+#: activities/learn_quantities/ActivityInfo.qml:24
+#: activities/learn_subtractions/ActivityInfo.qml:27
 #: activities/letter-in-word/ActivityInfo.qml:28
-#: activities/roman_numerals/ActivityInfo.qml:29
+#: activities/roman_numerals/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Enter: validate your answer"
 msgstr "Enter 鍵：檢查您的答案"
@@ -1172,8 +1172,8 @@ msgstr ""
 "一列的就獲勝。"
 
 #: activities/align4/ActivityInfo.qml:23 activities/bargame/ActivityInfo.qml:26
-#: activities/checkers/ActivityInfo.qml:27
-#: activities/nine_men_morris/ActivityInfo.qml:25
+#: activities/checkers/ActivityInfo.qml:26
+#: activities/nine_men_morris/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid ""
 "You can use the arrow buttons to manually select the difficulty level. Tux "
@@ -1252,8 +1252,8 @@ msgstr ""
 "標也可以。至於要抓哪些字母，您要嘛就靠記憶力，不然也可以偷偷看右下角。"
 
 #: activities/alphabet-sequence/ActivityInfo.qml:26
-#: activities/numbers-odd-even/ActivityInfo.qml:26
-#: activities/planegame/ActivityInfo.qml:26
+#: activities/numbers-odd-even/ActivityInfo.qml:25
+#: activities/planegame/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "Arrows: move the helicopter"
 msgstr "方向鍵：移動直昇機"
@@ -1844,7 +1844,7 @@ msgid "Discover the keyboard."
 msgstr "探索鍵盤與字母。"
 
 #. Help manual
-#: activities/baby_keyboard/ActivityInfo.qml:24
+#: activities/baby_keyboard/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid ""
 "Type any key on the keyboard.\n"
@@ -1883,7 +1883,7 @@ msgstr "在移動滑鼠時，提供音效與視覺上的回饋，讓寶寶探索
 
 #. Help prerequisite
 #: activities/baby_mouse/ActivityInfo.qml:21
-#: activities/baby_tangram/ActivityInfo.qml:22
+#: activities/baby_tangram/ActivityInfo.qml:21
 #: activities/erase/ActivityInfo.qml:22
 #: activities/erase_2clic/ActivityInfo.qml:22
 #: activities/erase_clic/ActivityInfo.qml:22
@@ -1944,7 +1944,7 @@ msgid "The objective is to assemble the baby puzzle."
 msgstr "目標是讓寶寶玩拼圖。"
 
 #. Help manual
-#: activities/baby_tangram/ActivityInfo.qml:24
+#: activities/baby_tangram/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid ""
 "Move a piece by dragging it. Use the rotation button if necessary. More "
@@ -1978,7 +1978,7 @@ msgid "Discover the keyboard and the letters."
 msgstr "探索鍵盤與字母。"
 
 #. Help manual
-#: activities/baby_wordprocessor/ActivityInfo.qml:24
+#: activities/baby_wordprocessor/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid ""
 "Just type on the real or virtual keyboard like in a word processor.\n"
@@ -1990,47 +1990,47 @@ msgstr ""
 "點擊「標題」會讓文字變大，「副標題」會讓文字比標題小一點點，「段落」則會移除"
 "文字的格式。"
 
-#: activities/baby_wordprocessor/ActivityInfo.qml:27
+#: activities/baby_wordprocessor/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Arrows: navigate inside the text"
 msgstr "方向鍵：在文字間移動"
 
-#: activities/baby_wordprocessor/ActivityInfo.qml:28
+#: activities/baby_wordprocessor/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Shift + Arrows: select a part of the text"
 msgstr "Shift+方向鍵：選擇一段文字"
 
-#: activities/baby_wordprocessor/ActivityInfo.qml:29
+#: activities/baby_wordprocessor/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Ctrl + A: select all the text"
 msgstr "Ctrl + A：選擇所有文字"
 
-#: activities/baby_wordprocessor/ActivityInfo.qml:30
+#: activities/baby_wordprocessor/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid "Ctrl + C: copy selected text"
 msgstr "Ctrl + C：複製所選取的文字"
 
-#: activities/baby_wordprocessor/ActivityInfo.qml:31
+#: activities/baby_wordprocessor/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
 msgid "Ctrl + X: cut selected text"
 msgstr "Ctrl + X：剪下所選取的文字"
 
-#: activities/baby_wordprocessor/ActivityInfo.qml:32
+#: activities/baby_wordprocessor/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
 msgid "Ctrl + V: paste copied or cut text"
 msgstr "Ctrl + V：貼上先前複製或剪下的文字"
 
-#: activities/baby_wordprocessor/ActivityInfo.qml:33
+#: activities/baby_wordprocessor/ActivityInfo.qml:32
 msgctxt "ActivityInfo|"
 msgid "Ctrl + D: delete selected text"
 msgstr "Ctrl + D：刪除所選取的文字"
 
-#: activities/baby_wordprocessor/ActivityInfo.qml:34
+#: activities/baby_wordprocessor/ActivityInfo.qml:33
 msgctxt "ActivityInfo|"
 msgid "Ctrl + Z: undo"
 msgstr "Ctrl + Z：復原上一個動作"
 
-#: activities/baby_wordprocessor/ActivityInfo.qml:35
+#: activities/baby_wordprocessor/ActivityInfo.qml:34
 msgctxt "ActivityInfo|"
 msgid "Ctrl + Shift + Z: redo"
 msgstr "Ctrl + Shift + Z：重做剛才復原的動作"
@@ -2115,13 +2115,13 @@ msgid "Drag and Drop the shapes on their respective targets."
 msgstr "拖放不同的形狀到相對應的目標區。"
 
 #. Help manual
-#: activities/babyshapes/ActivityInfo.qml:28
+#: activities/babyshapes/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid ""
 "Complete the puzzle by dragging each piece on the side to the matching spot."
 msgstr "從左方拖曳每一塊形狀，放到正確符合的空間區。"
 
-#: activities/babyshapes/ActivityInfo.qml:29
+#: activities/babyshapes/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "The dog is provided by Andre Connes and released under the GPL"
 msgstr "這隻狗由 Andre Connes 提供，以 GPL 授權"
@@ -2223,7 +2223,7 @@ msgid "Practice fine motor skills and basic counting."
 msgstr "練習細微的運動技能與基本的計數。"
 
 #. Help manual
-#: activities/balancebox/ActivityInfo.qml:27
+#: activities/balancebox/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid ""
 "Navigate the ball to the door. Be careful not to make it fall into the "
@@ -2234,7 +2234,7 @@ msgstr ""
 "將球帶到門口，小心不要讓球掉進洞裡。要依照順序碰到數字點才能開啟門鎖。您可以"
 "透過傾斜您的行動載具來移動球。桌面版的則可以用方向鍵來模擬傾斜。"
 
-#: activities/balancebox/ActivityInfo.qml:29
+#: activities/balancebox/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid ""
 "In the activity settings menu you can choose between the default 'Built-in' "
@@ -2245,7 +2245,7 @@ msgstr ""
 "在活動設定選單中，您可以選擇預設的「內建」關卡集，或是您自己設計的「使用者」"
 "關卡集。要新建關卡集，選擇「使用者」後點擊按鍵進入關卡編輯器裡。"
 
-#: activities/balancebox/ActivityInfo.qml:31
+#: activities/balancebox/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
 msgid ""
 "In the <b>level editor</b> you can create your own levels. Choose one of the "
@@ -2255,38 +2255,38 @@ msgstr ""
 "在<b>關卡編輯器</b>中您可以建立自己的關卡。在側邊選擇編輯工具，改變目前關卡中"
 "的某一格："
 
-#: activities/balancebox/ActivityInfo.qml:32
+#: activities/balancebox/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
 msgid "Cross: clear a map cell completely"
 msgstr "×：完全清除該格內容"
 
-#: activities/balancebox/ActivityInfo.qml:33
+#: activities/balancebox/ActivityInfo.qml:32
 msgctxt "ActivityInfo|"
 msgid ""
 "Horizontal Wall: add/remove a horizontal wall on the lower edge of a cell"
 msgstr "水平牆：新增/移除該格中下緣的水平牆"
 
-#: activities/balancebox/ActivityInfo.qml:34
+#: activities/balancebox/ActivityInfo.qml:33
 msgctxt "ActivityInfo|"
 msgid "Vertical Wall: add/remove a vertical wall on the right edge of a cell"
 msgstr "垂直牆：新增/移除該格中右緣的垂直牆"
 
-#: activities/balancebox/ActivityInfo.qml:35
+#: activities/balancebox/ActivityInfo.qml:34
 msgctxt "ActivityInfo|"
 msgid "Hole: add/remove a hole on a cell"
 msgstr "洞：在格中新增/移除一個洞"
 
-#: activities/balancebox/ActivityInfo.qml:36
+#: activities/balancebox/ActivityInfo.qml:35
 msgctxt "ActivityInfo|"
 msgid "Ball: set the starting position of the ball"
 msgstr "球：設定球的起始位置"
 
-#: activities/balancebox/ActivityInfo.qml:37
+#: activities/balancebox/ActivityInfo.qml:36
 msgctxt "ActivityInfo|"
 msgid "Door: Set the door position"
 msgstr "門：設定終點門的位置"
 
-#: activities/balancebox/ActivityInfo.qml:38
+#: activities/balancebox/ActivityInfo.qml:37
 msgctxt "ActivityInfo|"
 msgid ""
 "Contact: add/remove a contact button. With the spin-box you can adjust the "
@@ -2296,7 +2296,7 @@ msgstr ""
 "數字點：新增或移除一個數字點。您可以透過旋轉盒來調整數字。在一個地圖中每個數"
 "字只能出現一次。"
 
-#: activities/balancebox/ActivityInfo.qml:40
+#: activities/balancebox/ActivityInfo.qml:39
 msgctxt "ActivityInfo|"
 msgid ""
 "All tools (except the clear-tool) toggle their respective target on the "
@@ -2306,7 +2306,7 @@ msgstr ""
 "所有的工具（除了清除工具外）都是切換狀態：在空的格子中點擊則會放置，再點擊一"
 "次則移除。"
 
-#: activities/balancebox/ActivityInfo.qml:41
+#: activities/balancebox/ActivityInfo.qml:40
 msgctxt "ActivityInfo|"
 msgid ""
 "You can test a modified level by clicking on the 'Test' button on the side "
@@ -2317,7 +2317,7 @@ msgstr ""
 "您可以按下編輯器側邊的「測試」鍵來測試變更後的關卡。在測試模式下按鍵盤的 ESC "
 "鍵，或是行動載具中的返回鍵，或是點擊工具列中的首頁鍵都可以離開測試模式。"
 
-#: activities/balancebox/ActivityInfo.qml:42
+#: activities/balancebox/ActivityInfo.qml:41
 msgctxt "ActivityInfo|"
 msgid ""
 "In the editor you can change the level currently edited by using the arrow "
@@ -2327,14 +2327,14 @@ msgstr ""
 "在編輯器中您可以透過工具列上的方向鍵變更要編輯的關卡。回到編輯器後您可以繼續"
 "編輯目前的關卡，需要的話再測試一次。"
 
-#: activities/balancebox/ActivityInfo.qml:43
+#: activities/balancebox/ActivityInfo.qml:42
 msgctxt "ActivityInfo|"
 msgid ""
 "When your level is finished you can save it to a file by clicking on the "
 "'Save' button on the side."
 msgstr "您的關卡完成之後，您可以點擊「儲存」鍵儲存起來。"
 
-#: activities/balancebox/ActivityInfo.qml:44
+#: activities/balancebox/ActivityInfo.qml:43
 msgctxt "ActivityInfo|"
 msgid ""
 "To return to the activity settings click on the home-button on the bar or "
@@ -2343,7 +2343,7 @@ msgstr ""
 "要回到活動設定，請點擊工具列上的首頁鍵，或是按下鍵盤上的 ESC 鍵，或是行動載具"
 "上的返回鍵。"
 
-#: activities/balancebox/ActivityInfo.qml:45
+#: activities/balancebox/ActivityInfo.qml:44
 msgctxt "ActivityInfo|"
 msgid ""
 "Finally, to load your level set, click on the 'Load saved levels' button."
@@ -2423,7 +2423,7 @@ msgid ""
 msgstr "同時按下左鍵跟右鍵，來讓球直線前進。"
 
 #. Help manual
-#: activities/ballcatch/ActivityInfo.qml:24
+#: activities/ballcatch/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid ""
 "Press the left and right arrow keys at the same time, to make the ball go in "
@@ -2656,7 +2656,7 @@ msgid "Let children discover the braille system."
 msgstr "讓孩子們探索點字系統。"
 
 #. Help manual
-#: activities/braille_alphabets/ActivityInfo.qml:24
+#: activities/braille_alphabets/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid ""
 "The screen has 3 sections: an interactive braille cell, an instruction "
@@ -2666,24 +2666,24 @@ msgstr ""
 "畫面分為三個部分：互動式點字板、指引您如何點出點字的教學，以及最頂端是用來參"
 "考的點字字元。每一關會教您 10 個字元。"
 
-#: activities/braille_alphabets/ActivityInfo.qml:24
+#: activities/braille_alphabets/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid "Reproduce the requested character in the interactive braille cell."
 msgstr "在互動式點字板上練習如何點出字元。"
 
-#: activities/braille_alphabets/ActivityInfo.qml:25
+#: activities/braille_alphabets/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid ""
 "You can open the braille chart by clicking on the blue braille cell icon."
 msgstr "您可以按下藍色的點字板圖示來開啟點字圖表。"
 
-#: activities/braille_alphabets/ActivityInfo.qml:27
+#: activities/braille_alphabets/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Digits: 1 to 6 select/deselect the corresponding dots"
 msgstr "數字：1 到 6 可以切換選擇相對應的點"
 
-#: activities/braille_alphabets/ActivityInfo.qml:28
-#: activities/braille_fun/ActivityInfo.qml:26
+#: activities/braille_alphabets/ActivityInfo.qml:27
+#: activities/braille_fun/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "Space: open or close the braille chart"
 msgstr "空白鍵：開啟或關閉點字圖表"
@@ -2812,13 +2812,13 @@ msgid "Practice braille letters."
 msgstr "練習點字系統。"
 
 #. Help prerequisite
-#: activities/braille_fun/ActivityInfo.qml:22
+#: activities/braille_fun/ActivityInfo.qml:21
 msgctxt "ActivityInfo|"
 msgid "Braille alphabet."
 msgstr "布拉耶點字字母。"
 
 #. Help manual
-#: activities/braille_fun/ActivityInfo.qml:24
+#: activities/braille_fun/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid ""
 "Create the braille cells for the letters on the banner. Check the braille "
@@ -3261,7 +3261,7 @@ msgid "Understand how a canal lock works."
 msgstr "瞭解運河鎖如何運作。"
 
 #. Help manual
-#: activities/canal_lock/ActivityInfo.qml:24
+#: activities/canal_lock/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid ""
 "You are in charge of the canal lock. Open the gates and the locks in the "
@@ -3875,7 +3875,7 @@ msgid ""
 msgstr "吃掉對方所有的棋子就贏了。"
 
 #. Help manual
-#: activities/checkers/ActivityInfo.qml:24
+#: activities/checkers/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid ""
 "Checkers is played by two opponents, on opposite sides of the gameboard. One "
@@ -3907,8 +3907,8 @@ msgstr ""
 "當棋子移到皇冠或王列（最上面那一排時）時，它就「成王」。成王的棋子上面會加一"
 "個棋子做為標示。成王的棋子才能向後走，並且可以一次跳過多格去吃對方的棋子。"
 
-#: activities/checkers/ActivityInfo.qml:29
-#: activities/checkers_2players/ActivityInfo.qml:28
+#: activities/checkers/ActivityInfo.qml:28
+#: activities/checkers_2players/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid ""
 "The checkers library is draughts.js &lt;https://github.com/shubhendusaurabh/"
@@ -3945,7 +3945,7 @@ msgid "Play checkers (with a friend)"
 msgstr "跟朋友下跳棋"
 
 #. Help manual
-#: activities/checkers_2players/ActivityInfo.qml:24
+#: activities/checkers_2players/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid ""
 "Checkers is played by two opponents, on opposite sides of the gameboard. One "
@@ -3984,7 +3984,7 @@ msgid "Play chess (against Tux)"
 msgstr "跟小企鵝下西洋棋"
 
 #. Help manual Much of this string is shared across the three activities "chess", "chess_partyend", and "chess_2players".
-#: activities/chess/ActivityInfo.qml:25
+#: activities/chess/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid ""
 "In this activity you discover the chess game by playing against the "
@@ -4020,9 +4020,9 @@ msgstr ""
 "<b>解釋</b>：不要衝太快，要冷靜保持耐心。在移動前多想一點，預測敵人在你移動後"
 "可能的反應，這樣才能設陷阱，或是避免自己被敵方攻擊。"
 
-#: activities/chess/ActivityInfo.qml:32
-#: activities/chess_2players/ActivityInfo.qml:32
-#: activities/chess_partyend/ActivityInfo.qml:32
+#: activities/chess/ActivityInfo.qml:29
+#: activities/chess_2players/ActivityInfo.qml:29
+#: activities/chess_partyend/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
 msgid ""
 "Single click on undo button will undo one move. Single click on redo button "
@@ -4032,8 +4032,8 @@ msgstr ""
 "點擊「復原」會往回退一步。點擊「重做」會重做一步。要復原所有移動，持續按住"
 "「復原」鍵三秒。"
 
-#: activities/chess/ActivityInfo.qml:33
-#: activities/chess_partyend/ActivityInfo.qml:33
+#: activities/chess/ActivityInfo.qml:30
+#: activities/chess_partyend/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
 msgid ""
 "The chess engine is p4wn &lt;https://github.com/douglasbagnall/p4wn&gt;."
@@ -4103,7 +4103,7 @@ msgid "Play chess (with a friend)"
 msgstr "跟朋友下西洋棋"
 
 #. Help manual Much of this string is shared across the three activities "chess", "chess_partyend", and "chess_2players".
-#: activities/chess_2players/ActivityInfo.qml:25
+#: activities/chess_2players/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid ""
 "In this activity you discover the chess game by playing against a friend. It "
@@ -4147,7 +4147,7 @@ msgid "Play the end of the chess game against Tux."
 msgstr "跟小企鵝玩西洋棋殘局。"
 
 #. Help manual Much of this string is shared across the three activities "chess", "chess_partyend", and "chess_2players".
-#: activities/chess_partyend/ActivityInfo.qml:25
+#: activities/chess_partyend/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid ""
 "In this activity you discover the chess game by playing only the end of a "
@@ -4645,13 +4645,13 @@ msgid "Draw the picture by clicking on the selected points."
 msgstr "點擊選取的點可以拖曳圖片。"
 
 #. Help prerequisite
-#: activities/clickanddraw/ActivityInfo.qml:22
+#: activities/clickanddraw/ActivityInfo.qml:21
 msgctxt "ActivityInfo|"
 msgid "Can move the mouse and click accurately on points."
 msgstr "可以移動滑鼠並精確的點擊在點上。"
 
 #. Help manual
-#: activities/clickanddraw/ActivityInfo.qml:24
+#: activities/clickanddraw/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid ""
 "Draw the picture by clicking on each point in sequence. Each time a point is "
@@ -4822,14 +4822,14 @@ msgid "Mix primary colors to match the given color."
 msgstr "將主要顏色混合成指定的顏色。"
 
 #. Help manual
-#: activities/color_mix/ActivityInfo.qml:24
+#: activities/color_mix/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid ""
 "This activity teaches how mixing primary paint colors works (subtractive "
 "mixing)."
 msgstr "這個遊戲可以學習如何將主要顏色調成想要的顏色（減色法）。"
 
-#: activities/color_mix/ActivityInfo.qml:25
+#: activities/color_mix/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid ""
 "Paints and inks absorb different colors of the light falling on it, "
@@ -4844,7 +4844,7 @@ msgstr ""
 "起來，變成新的顏色。這三種主要的顏色分別為青色 (Cyan, 接近藍色), 品紅色 "
 "(Magenta, 接近粉紅色) 與黃色 (Yellow)。"
 
-#: activities/color_mix/ActivityInfo.qml:26
+#: activities/color_mix/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid ""
 "Change the color by moving the sliders on the tubes of paint or by clicking "
@@ -4930,14 +4930,14 @@ msgid "Discover light color mixing."
 msgstr "探索光顏色的混合。"
 
 #. Help manual
-#: activities/color_mix_light/ActivityInfo.qml:24
+#: activities/color_mix_light/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid ""
 "This activity teaches how mixing primary light colors works (additive "
 "mixing)."
 msgstr "這個遊戲可以學習如何將主要顏色調成想要的顏色（加色法）。"
 
-#: activities/color_mix_light/ActivityInfo.qml:25
+#: activities/color_mix_light/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid ""
 "Mixing light colors is just the opposite of mixing paint colors. The more "
@@ -4947,7 +4947,7 @@ msgstr ""
 "跟畫畫用的減色法相反，您加的光越多，結果的顏色越亮。三種的主要顏色是紅、綠、"
 "藍。"
 
-#: activities/color_mix_light/ActivityInfo.qml:26
+#: activities/color_mix_light/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid ""
 "Change the color by moving the sliders on the torches or by clicking on the "
@@ -5083,7 +5083,7 @@ msgid "Learn how to compare number values."
 msgstr "學習如何比較數字。"
 
 #. Help manual
-#: activities/comparator/ActivityInfo.qml:26
+#: activities/comparator/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid ""
 "Select a pair of numbers in the list. Then select the correct comparison "
@@ -5093,34 +5093,34 @@ msgstr ""
 "在清單中選擇一對數字，然後選擇正確的比較符號。每一行的符號都選擇完之後，按下"
 "「確定」來檢查答案是否正確。"
 
-#: activities/comparator/ActivityInfo.qml:27
+#: activities/comparator/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid ""
 "If some answers are incorrect, a cross icon will appear on the corresponding "
 "lines. Correct the errors, then select the OK button again."
 msgstr "如果某些題目答錯了，會出現錯誤的符號。修正答案以後再按下「確定」。"
 
-#: activities/comparator/ActivityInfo.qml:29
+#: activities/comparator/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Up and Down arrows: select a pair of numbers in the list"
 msgstr "上、下鍵：在清單中選擇一對數字"
 
-#: activities/comparator/ActivityInfo.qml:30
+#: activities/comparator/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: select a symbol button"
 msgstr "左、右鍵：選擇比較符號"
 
-#: activities/comparator/ActivityInfo.qml:31
+#: activities/comparator/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
 msgid "Space: if a symbol button is selected, enter this symbol"
 msgstr "空白鍵：選擇符號以後，按下空白鍵輸入此符號"
 
-#: activities/comparator/ActivityInfo.qml:32
+#: activities/comparator/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
 msgid "Return: validate the answers"
 msgstr "Enter 或 Return 鍵：檢查答案"
 
-#: activities/comparator/ActivityInfo.qml:33
+#: activities/comparator/ActivityInfo.qml:32
 msgctxt "ActivityInfo|"
 msgid "&lt;, &gt; or =: enter the corresponding symbol"
 msgstr "&lt; 、 &gt; 或 = ： 輸入比較符號"
@@ -5278,14 +5278,14 @@ msgid "Find the details"
 msgstr "找出詳情"
 
 #. Help manual
-#: activities/details/ActivityInfo.qml:27
+#: activities/details/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid ""
 "Complete the puzzle by dragging each piece on the side to the matching space "
 "in the puzzle."
 msgstr "從側邊欄拖曳每一塊形狀，放到正確符合的空間區。"
 
-#: activities/details/ActivityInfo.qml:28
+#: activities/details/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "The images are from Wikimedia Commons."
 msgstr "圖片來自 Wikimedia Commons。"
@@ -6106,7 +6106,7 @@ msgid "Learning how to draw letters in a funny way."
 msgstr "讓孩子們用有趣的方式學習字母。"
 
 #. Help manual
-#: activities/drawletters/ActivityInfo.qml:24
+#: activities/drawletters/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid "Draw the letters by connecting the dots in the correct order."
 msgstr "將點點以正確的順序連起來變成字母。"
@@ -6130,7 +6130,7 @@ msgid "Learning how to draw numbers in a funny way."
 msgstr "讓孩子們用有趣的方式學習數字。"
 
 #. Help manual
-#: activities/drawnumbers/ActivityInfo.qml:24
+#: activities/drawnumbers/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid "Draw the numbers by connecting the dots in the correct order."
 msgstr "將點點以正確的順序連起來變成數字。"
@@ -6362,12 +6362,12 @@ msgid ""
 msgstr "學習跟動物有關的知識，包括名稱、外觀與叫聲等。"
 
 #. Help manual
-#: activities/explore_farm_animals/ActivityInfo.qml:24
+#: activities/explore_farm_animals/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid "There are three levels in this game."
 msgstr "這個遊戲中有三個關卡。"
 
-#: activities/explore_farm_animals/ActivityInfo.qml:25
+#: activities/explore_farm_animals/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid ""
 "In level one, players enjoy exploring each animal on the screen. Click on an "
@@ -6378,7 +6378,7 @@ msgstr ""
 "第一關，你可以在螢幕上查看、探索每一種動物。點擊動物可以學到關於該動物的知"
 "識，包括牠的名稱，牠的外觀等。好好學習這些資訊，因為在第二、三關時會考考你！"
 
-#: activities/explore_farm_animals/ActivityInfo.qml:26
+#: activities/explore_farm_animals/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid ""
 "In level two, a random animal sound is played and you must find which animal "
@@ -6388,7 +6388,7 @@ msgstr ""
 "第二關中，會隨機播放動物的聲音，你必須點擊該聲音是哪一種動物所發出。按下播放"
 "鍵可以重播動物的聲音。"
 
-#: activities/explore_farm_animals/ActivityInfo.qml:27
+#: activities/explore_farm_animals/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid ""
 "In level three, a random text prompt is displayed and you must click on the "
@@ -7686,12 +7686,12 @@ msgid ""
 msgstr "學習世界各地的野生動物與它們的棲息地。"
 
 #. Help manual
-#: activities/explore_world_animals/ActivityInfo.qml:28
+#: activities/explore_world_animals/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "There are two levels in this game."
 msgstr "這個遊戲中有兩個關卡。"
 
-#: activities/explore_world_animals/ActivityInfo.qml:29
+#: activities/explore_world_animals/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid ""
 "In level one, players enjoy exploring each animal on the screen. Click on "
@@ -7702,7 +7702,7 @@ msgstr ""
 "第一關，你可以在螢幕上查看、探索每一種動物。點擊問號可以學到關於該動物的知"
 "識，包括牠的名稱，牠的外觀等。好好學習這些資訊，因為在第二關會考考你！"
 
-#: activities/explore_world_animals/ActivityInfo.qml:30
+#: activities/explore_world_animals/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid ""
 "In level two, a random text prompt is displayed and you must click on the "
@@ -7970,12 +7970,12 @@ msgid ""
 msgstr "認識、瞭解世界各地的音樂。"
 
 #. Help manual
-#: activities/explore_world_music/ActivityInfo.qml:24
+#: activities/explore_world_music/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid "There are three levels in this activity."
 msgstr "這個遊戲中有三個關卡。"
 
-#: activities/explore_world_music/ActivityInfo.qml:25
+#: activities/explore_world_music/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid ""
 "In the first level, enjoy exploring music from around the world. Click on "
@@ -7985,7 +7985,7 @@ msgstr ""
 "第一關中，您可以盡情探索世界各地的音樂。點擊行李箱可以學習該區域的音樂，聽一"
 "小段範例。好好學習，因為在第二關與第三關會有小測驗。"
 
-#: activities/explore_world_music/ActivityInfo.qml:26
+#: activities/explore_world_music/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid ""
 "In the second level you will hear a sample of music, and you must select the "
@@ -7995,14 +7995,14 @@ msgstr ""
 "第二關中您會聽到一段音樂，然後您要選擇這段音樂是屬於哪個地區的。點擊播放鍵可"
 "以再聽一次。"
 
-#: activities/explore_world_music/ActivityInfo.qml:27
+#: activities/explore_world_music/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid ""
 "In the third level, you must select the location that matches the text "
 "description on the screen."
 msgstr "第三關中，您必須選擇符合螢幕上的文字描述的地區。"
 
-#: activities/explore_world_music/ActivityInfo.qml:28
+#: activities/explore_world_music/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Images from https://commons.wikimedia.org/wiki, https://archive.org"
 msgstr "圖片來源：https://commons.wikimedia.org/wiki, https://archive.org"
@@ -8438,14 +8438,14 @@ msgid "Arrange the pieces in the right order."
 msgstr "以正確的順序排列。"
 
 #. Help manual
-#: activities/fifteen/ActivityInfo.qml:24
+#: activities/fifteen/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid ""
 "Click or drag on any piece next to the empty space, and it will move to the "
 "empty space."
 msgstr "在每個旁邊有空白區塊的拼圖塊上按一下，它將會和空白的區塊相互交換。"
 
-#: activities/fifteen/ActivityInfo.qml:26
+#: activities/fifteen/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "Arrows: move a piece to the empty space."
 msgstr "方向鍵：將一個區塊移到空白區塊。"
@@ -8634,7 +8634,7 @@ msgid "Fine motor coordination."
 msgstr "精細的運動統合。"
 
 #. Help manual
-#: activities/followline/ActivityInfo.qml:24
+#: activities/followline/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid ""
 "Move the mouse or your finger over the lock which is represented as a red "
@@ -8663,7 +8663,7 @@ msgid "Kick the ball behind the goal keeper on the right."
 msgstr "將球踢進右邊的守門員身後。"
 
 #. Help manual
-#: activities/football/ActivityInfo.qml:24
+#: activities/football/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid ""
 "Drag a line from the ball to set its speed and direction, and release it to "
@@ -9058,7 +9058,7 @@ msgid "Drag and Drop the regions to complete the country maps."
 msgstr "拖放區域來完成整個國家的地圖。"
 
 #. Help manual
-#: activities/geo-country/ActivityInfo.qml:28
+#: activities/geo-country/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid ""
 "Drag and drop different regions of the country to their correct locations to "
@@ -11850,7 +11850,7 @@ msgid "Drag and Drop the items to complete the map."
 msgstr "拖放項目來完成地圖。"
 
 #. Help manual
-#: activities/geography/ActivityInfo.qml:28
+#: activities/geography/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid ""
 "Drag and drop the map pieces to their correct locations to complete the map."
@@ -12968,7 +12968,7 @@ msgstr "簡單字母"
 #. ----------
 #. Help manual
 #: activities/gletters/ActivityInfo.qml:17
-#: activities/gletters/ActivityInfo.qml:24
+#: activities/gletters/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid "Type the falling letters before they reach the ground."
 msgstr "在落下的字母到達地面之前按下它的按鍵。"
@@ -12989,7 +12989,7 @@ msgstr "數字大嘴巴--等式"
 #. ----------
 #. Help manual
 #: activities/gnumch-equality/ActivityInfo.qml:17
-#: activities/gnumch-equality/ActivityInfo.qml:24
+#: activities/gnumch-equality/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid ""
 "Guide the Number Muncher to the expressions that equal the number at the "
@@ -13003,11 +13003,11 @@ msgid "Practice addition, multiplication, division and subtraction."
 msgstr "練習加法﹑乘法﹑除法和減法。"
 
 #. Help manual
-#: activities/gnumch-equality/ActivityInfo.qml:26
-#: activities/gnumch-factors/ActivityInfo.qml:26
-#: activities/gnumch-inequality/ActivityInfo.qml:25
-#: activities/gnumch-multiples/ActivityInfo.qml:26
-#: activities/gnumch-primes/ActivityInfo.qml:26
+#: activities/gnumch-equality/ActivityInfo.qml:25
+#: activities/gnumch-factors/ActivityInfo.qml:25
+#: activities/gnumch-inequality/ActivityInfo.qml:24
+#: activities/gnumch-multiples/ActivityInfo.qml:25
+#: activities/gnumch-primes/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid ""
 "If you have a keyboard you can use the arrow keys to move and press space to "
@@ -13020,20 +13020,20 @@ msgstr ""
 "塊來移動，再次點擊來吞掉數字。用觸控螢幕的話您可以用類似滑鼠的方式，或是掃過"
 "您要移動的方向，觸碰來吞掉數字。"
 
-#: activities/gnumch-equality/ActivityInfo.qml:28
-#: activities/gnumch-factors/ActivityInfo.qml:28
-#: activities/gnumch-inequality/ActivityInfo.qml:27
-#: activities/gnumch-multiples/ActivityInfo.qml:28
-#: activities/gnumch-primes/ActivityInfo.qml:28
+#: activities/gnumch-equality/ActivityInfo.qml:27
+#: activities/gnumch-factors/ActivityInfo.qml:27
+#: activities/gnumch-inequality/ActivityInfo.qml:26
+#: activities/gnumch-multiples/ActivityInfo.qml:27
+#: activities/gnumch-primes/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Take care to avoid the Troggles."
 msgstr "要小心小精靈喔。"
 
-#: activities/gnumch-equality/ActivityInfo.qml:31
-#: activities/gnumch-factors/ActivityInfo.qml:31
-#: activities/gnumch-inequality/ActivityInfo.qml:30
-#: activities/gnumch-multiples/ActivityInfo.qml:31
-#: activities/gnumch-primes/ActivityInfo.qml:31
+#: activities/gnumch-equality/ActivityInfo.qml:30
+#: activities/gnumch-factors/ActivityInfo.qml:30
+#: activities/gnumch-inequality/ActivityInfo.qml:29
+#: activities/gnumch-multiples/ActivityInfo.qml:30
+#: activities/gnumch-primes/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
 msgid "Space: swallow the numbers"
 msgstr "空白鍵：吃掉數字"
@@ -13158,7 +13158,7 @@ msgid "Learn about multiples and factors."
 msgstr "學習倍數與因數。"
 
 #. Help manual
-#: activities/gnumch-factors/ActivityInfo.qml:24
+#: activities/gnumch-factors/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid ""
 "The factors of a number are all the numbers that divide that number evenly. "
@@ -13229,7 +13229,7 @@ msgid ""
 msgstr "引導數字大嘴巴到屬於螢幕底端數字的所有倍數之上。"
 
 #. Help manual
-#: activities/gnumch-multiples/ActivityInfo.qml:24
+#: activities/gnumch-multiples/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid ""
 "The multiples of a number are all the numbers that are equal to the original "
@@ -13272,7 +13272,7 @@ msgid "Learn about prime numbers."
 msgstr "學習何謂質數。"
 
 #. Help manual
-#: activities/gnumch-primes/ActivityInfo.qml:24
+#: activities/gnumch-primes/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid ""
 "Prime numbers are numbers that are only divisible by themselves and 1. For "
@@ -13309,31 +13309,31 @@ msgid "Learn to identify grammatical classes."
 msgstr ""
 
 #. Help manual
-#: activities/grammar_analysis/ActivityInfo.qml:27
+#: activities/grammar_analysis/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Assign the requested grammatical classes to the corresponding words."
 msgstr ""
 
-#: activities/grammar_analysis/ActivityInfo.qml:28
+#: activities/grammar_analysis/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid ""
 "Select a grammatical class from the list, then select the box under a word "
 "and assign it the class."
 msgstr ""
 
-#: activities/grammar_analysis/ActivityInfo.qml:29
+#: activities/grammar_analysis/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Leave the box blank if no class matches."
 msgstr ""
 
-#: activities/grammar_analysis/ActivityInfo.qml:31
-#: activities/grammar_classes/ActivityInfo.qml:31
+#: activities/grammar_analysis/ActivityInfo.qml:30
+#: activities/grammar_classes/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
 msgid "Up and down arrows or tabulation: switch between classes and words"
 msgstr ""
 
-#: activities/grammar_analysis/ActivityInfo.qml:32
-#: activities/grammar_classes/ActivityInfo.qml:32
+#: activities/grammar_analysis/ActivityInfo.qml:31
+#: activities/grammar_classes/ActivityInfo.qml:31
 #, fuzzy
 #| msgctxt "ActivityInfo|"
 #| msgid "Left and Right arrows: turn left and right"
@@ -13341,16 +13341,16 @@ msgctxt "ActivityInfo|"
 msgid "Left and right arrows: select items in classes or words"
 msgstr "左、右鍵：左轉或右轉"
 
-#: activities/grammar_analysis/ActivityInfo.qml:33
-#: activities/grammar_classes/ActivityInfo.qml:33
+#: activities/grammar_analysis/ActivityInfo.qml:32
+#: activities/grammar_classes/ActivityInfo.qml:32
 msgctxt "ActivityInfo|"
 msgid ""
 "Space: assign the selected class to the selected word and then select the "
 "next word"
 msgstr ""
 
-#: activities/grammar_analysis/ActivityInfo.qml:34
-#: activities/grammar_classes/ActivityInfo.qml:34
+#: activities/grammar_analysis/ActivityInfo.qml:33
+#: activities/grammar_classes/ActivityInfo.qml:33
 #, fuzzy
 #| msgctxt "ActivityInfo|"
 #| msgid "Backspace: delete the last digit in your answer"
@@ -13423,19 +13423,19 @@ msgid "Grammatical classes"
 msgstr ""
 
 #. Help manual
-#: activities/grammar_classes/ActivityInfo.qml:27
+#: activities/grammar_classes/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Assign the requested grammatical class to the corresponding words."
 msgstr ""
 
-#: activities/grammar_classes/ActivityInfo.qml:28
+#: activities/grammar_classes/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid ""
 "Select the grammatical class from the list, then select the box under a word "
 "and assign it the class."
 msgstr ""
 
-#: activities/grammar_classes/ActivityInfo.qml:29
+#: activities/grammar_classes/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Leave the box blank if the class doesn't match."
 msgstr ""
@@ -13515,7 +13515,7 @@ msgid ""
 msgstr "操控太空船，避免撞上行星或小行星，並抵達太空站。"
 
 #. Help manual
-#: activities/gravity/ActivityInfo.qml:28
+#: activities/gravity/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid ""
 "Move the spaceship with the left and right keys, or with the buttons on the "
@@ -13526,7 +13526,7 @@ msgstr ""
 "用左右方向鍵移動太空船，行動載具中則用螢幕上的按鍵。試著保持在螢幕中央，查看"
 "箭頭的大小與方向來得知太空船目前受到的重力吸引。"
 
-#: activities/gravity/ActivityInfo.qml:30
+#: activities/gravity/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: move the spaceship"
 msgstr "左、右鍵：移動太空船"
@@ -13703,13 +13703,13 @@ msgid "Help Tux escape the cave by finding the hidden number."
 msgstr "幫助小企鵝逃出洞穴。您必須找出小企鵝所藏的數字。"
 
 #. Help prerequisite
-#: activities/guessnumber/ActivityInfo.qml:22
+#: activities/guessnumber/ActivityInfo.qml:21
 msgctxt "ActivityInfo|"
 msgid "Numbers."
 msgstr "數字"
 
 #. Help manual
-#: activities/guessnumber/ActivityInfo.qml:24
+#: activities/guessnumber/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid ""
 "Read the instructions that give you the range of the number to find. Enter a "
@@ -13725,12 +13725,12 @@ msgstr ""
 "間的距離代表著您距離正確的數字有多遠。如果小企鵝是在脫離區域的上方或下方，那"
 "就表示您的數字是高於或低於正確的數字。"
 
-#: activities/guessnumber/ActivityInfo.qml:26
+#: activities/guessnumber/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "Digits: enter a number"
 msgstr "數字鍵：輸入數字"
 
-#: activities/guessnumber/ActivityInfo.qml:27
+#: activities/guessnumber/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Backspace: erase a number"
 msgstr "返回鍵：刪除數字"
@@ -13808,14 +13808,14 @@ msgid "This is a good exercise to improve reading and spelling skills."
 msgstr "這是增進閱讀與拼字技巧很好的練習。"
 
 #. Help manual
-#: activities/hangman/ActivityInfo.qml:24
+#: activities/hangman/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid ""
 "You can enter the letters using the virtual keyboard on the screen or with "
 "the real keyboard."
 msgstr "您可以用螢幕上的虛擬鍵盤或用實體鍵盤來輸入字母。"
 
-#: activities/hangman/ActivityInfo.qml:25
+#: activities/hangman/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid ""
 "If the option 'Display the image to find as hint' is activated, on every "
@@ -13823,7 +13823,7 @@ msgid ""
 msgstr ""
 "如果開啟「顯示影像尋找提示」選項，每猜錯一次，就會顯示此單字的影像的一部份。"
 
-#: activities/hangman/ActivityInfo.qml:26
+#: activities/hangman/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid ""
 "If the option 'Speak the words to find...' is activated, and if the "
@@ -13918,7 +13918,7 @@ msgstr ""
 "    大的不能擺在小的上面\n"
 
 #. Help manual
-#: activities/hanoi_real/ActivityInfo.qml:27
+#: activities/hanoi_real/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid ""
 "Drag and drop the top pieces only from one peg to another, to reproduce the "
@@ -13927,7 +13927,7 @@ msgstr ""
 "一次拖放一塊，將一根柱子的最上面的那一塊移到另一根，最後在左方的空間重組成一"
 "模一樣的塔。"
 
-#: activities/hanoi_real/ActivityInfo.qml:28
+#: activities/hanoi_real/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid ""
 "The puzzle was invented by the French mathematician Edouard Lucas in 1883. "
@@ -13976,7 +13976,7 @@ msgid "Logic-training activity."
 msgstr "邏輯訓練遊戲。"
 
 #. Help manual
-#: activities/hexagon/ActivityInfo.qml:24
+#: activities/hexagon/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid ""
 "Try to find the strawberry under the blue fields. The fields become redder "
@@ -14256,12 +14256,12 @@ msgid "Learn to recognize musical instruments."
 msgstr "學習辨別樂器。"
 
 #. Help manual
-#: activities/instruments/ActivityInfo.qml:24
+#: activities/instruments/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid "Click on the correct musical instrument."
 msgstr "點選正確的樂器。"
 
-#: activities/instruments/ActivityInfo.qml:28
+#: activities/instruments/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Tab: repeat the instrument sound"
 msgstr "Tab 鍵：重聽樂器的聲音"
@@ -14442,7 +14442,7 @@ msgid "Understand the acceleration caused by the gravity."
 msgstr "瞭解重力造成的加速度。"
 
 #. Help manual
-#: activities/land_safe/ActivityInfo.qml:24
+#: activities/land_safe/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid ""
 "The acceleration caused by the gravity experienced by the spaceship is "
@@ -14455,7 +14455,7 @@ msgstr ""
 "成反比。因此，對於每個行星，加速度將不同，並且隨著飛船越來越靠近行星，加速度"
 "會增加。"
 
-#: activities/land_safe/ActivityInfo.qml:25
+#: activities/land_safe/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid ""
 "In first levels, use the up/down keys to control the thrust and the right/"
@@ -14465,7 +14465,7 @@ msgstr ""
 "在第一關中，用上下鍵來控制推力，左右鍵來控制太空船的位置。在觸控螢幕上您可以"
 "透過螢幕上的按鈕來控制。"
 
-#: activities/land_safe/ActivityInfo.qml:26
+#: activities/land_safe/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid ""
 "In higher levels, you can use the right/left keys to rotate the spaceship. "
@@ -14473,12 +14473,12 @@ msgid ""
 "direction using the up/down keys."
 msgstr "在後面的關卡中，您可以用左右鍵來旋轉太空船，並用上下鍵來推進。"
 
-#: activities/land_safe/ActivityInfo.qml:27
+#: activities/land_safe/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "The landing platform is green if your speed is fine for a safe landing."
 msgstr "當您的速度控制在可以安全降落的範圍內，降落平台會顯示綠色。"
 
-#: activities/land_safe/ActivityInfo.qml:28
+#: activities/land_safe/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid ""
 "The accelerometer on the right border shows your rocket's overall vertical "
@@ -14491,12 +14491,12 @@ msgstr ""
 "中，您的加速度高於重力，在下方紅色區域中，您的加速度較低，而在黃色中間區域中"
 "的藍色基線上，這兩個力相互抵消。"
 
-#: activities/land_safe/ActivityInfo.qml:30
+#: activities/land_safe/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid "Up and Down arrows: control the thrust of the rear engine"
 msgstr "上下方向鍵：控制後方引擎的推力"
 
-#: activities/land_safe/ActivityInfo.qml:31
+#: activities/land_safe/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
 msgid ""
 "Left and Right arrows: at first levels, move to the sides; at higher levels, "
@@ -14813,16 +14813,16 @@ msgid "Learn additions by counting their result."
 msgstr "用計數來學習加法。"
 
 #. Help manual
-#: activities/learn_additions/ActivityInfo.qml:24
+#: activities/learn_additions/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid ""
 "An addition is displayed on the screen. Calculate the result, fill the "
 "corresponding number of circles and validate your answer."
 msgstr "數數看結果，並填入小圈圈中，最後檢查您的答案。"
 
-#: activities/learn_additions/ActivityInfo.qml:27
-#: activities/learn_digits/ActivityInfo.qml:27
-#: activities/learn_subtractions/ActivityInfo.qml:27
+#: activities/learn_additions/ActivityInfo.qml:26
+#: activities/learn_digits/ActivityInfo.qml:26
+#: activities/learn_subtractions/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Space: select or deselect a circle"
 msgstr "空白鍵：選取或取消選取一個圓圈"
@@ -14863,7 +14863,7 @@ msgid ""
 msgstr "用數格子來學習小數"
 
 #. Help manual
-#: activities/learn_decimals/ActivityInfo.qml:23
+#: activities/learn_decimals/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid ""
 "A decimal number is displayed. Drag the arrow to select a part of the bar, "
@@ -15018,7 +15018,7 @@ msgid ""
 msgstr "用數格子來學習小數的加法"
 
 #. Help manual
-#: activities/learn_decimals_additions/ActivityInfo.qml:23
+#: activities/learn_decimals_additions/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid ""
 "An addition with two decimal numbers is displayed. Drag the arrow to select "
@@ -15029,16 +15029,16 @@ msgstr ""
 "螢幕上會顯示兩個小數相加。在下方格子處數好格子，然後把它拖到上方空白處，直到"
 "上方的長條可以表示加法運算後的結果。然後按下 OK 來檢查答案。"
 
-#: activities/learn_decimals_additions/ActivityInfo.qml:24
-#: activities/learn_decimals_subtractions/ActivityInfo.qml:24
+#: activities/learn_decimals_additions/ActivityInfo.qml:23
+#: activities/learn_decimals_subtractions/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid ""
 "If the answer is correct, type the corresponding result, and click on the OK "
 "button to validate your answer."
 msgstr "答案正確的話，輸入結果並按下 OK 來檢查是否正確。"
 
-#: activities/learn_decimals_additions/ActivityInfo.qml:27
-#: activities/learn_decimals_subtractions/ActivityInfo.qml:27
+#: activities/learn_decimals_additions/ActivityInfo.qml:26
+#: activities/learn_decimals_subtractions/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Numbers: type the result"
 msgstr "數字：請輸入結果"
@@ -15079,7 +15079,7 @@ msgid ""
 msgstr "用數格子來學習小數的減法。"
 
 #. Help manual
-#: activities/learn_decimals_subtractions/ActivityInfo.qml:23
+#: activities/learn_decimals_subtractions/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid ""
 "A subtraction with two decimal numbers is displayed. The first number from "
@@ -15152,7 +15152,7 @@ msgid "Learn digits by counting their corresponding value."
 msgstr "透過數數來學習數字。"
 
 #. Help manual
-#: activities/learn_digits/ActivityInfo.qml:24
+#: activities/learn_digits/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid ""
 "A digit is displayed on the screen. Fill the corresponding number of circles "
@@ -15161,7 +15161,7 @@ msgstr ""
 "螢幕上會顯示一個數字。看看數字是多少，就填入幾個小圈圈，然後檢查答案是否正"
 "確。"
 
-#: activities/learn_digits/ActivityInfo.qml:29
+#: activities/learn_digits/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Tab: say the digit again"
 msgstr "Tab 鍵：重唸一次數字"
@@ -15232,7 +15232,7 @@ msgid ""
 msgstr "用數橘色小點來學習表達數量。"
 
 #. Help manual
-#: activities/learn_quantities/ActivityInfo.qml:23
+#: activities/learn_quantities/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid ""
 "A quantity is requested. Drag the arrow to select a number of oranges, and "
@@ -15292,7 +15292,7 @@ msgid "Learn subtractions by counting their result."
 msgstr "透過數數來學習減法。"
 
 #. Help manual
-#: activities/learn_subtractions/ActivityInfo.qml:24
+#: activities/learn_subtractions/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid ""
 "A subtraction is displayed on the screen. Calculate the result, fill the "
@@ -15374,19 +15374,19 @@ msgid ""
 msgstr "從不同觀看角度來分辨右手和左手。空間表現。"
 
 #. Help manual
-#: activities/leftright/ActivityInfo.qml:24
+#: activities/leftright/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid ""
 "You can see a hand: is it a left hand or a right hand? Click on the left "
 "button, or the right button depending on the displayed hand."
 msgstr "您可以看到一隻手：是左手還是右手呢？左手就點擊左鍵，右手就點擊右鍵囉。"
 
-#: activities/leftright/ActivityInfo.qml:26
+#: activities/leftright/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "Left arrow: left hand answer"
 msgstr "左鍵：認為是左手就按左鍵"
 
-#: activities/leftright/ActivityInfo.qml:27
+#: activities/leftright/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Right arrow: right hand answer"
 msgstr "右鍵：認為是右手就按右鍵"
@@ -15505,7 +15505,7 @@ msgid "The goal is to turn off all the lights."
 msgstr "目標是關掉所有的燈。"
 
 #. Help manual
-#: activities/lightsoff/ActivityInfo.qml:24
+#: activities/lightsoff/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid ""
 "The effect of pressing a window is to toggle the state of that window, and "
@@ -15515,7 +15515,7 @@ msgstr ""
 "按下窗戶會切換窗戶的狀態，還有跟它垂直與水平的鄰居的狀態。您必須嘗試把所有燈"
 "都關掉。點擊小企鵝的話就會顯示解答。"
 
-#: activities/lightsoff/ActivityInfo.qml:25
+#: activities/lightsoff/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid ""
 "The solver algorithm is described on Wikipedia. To know more about the "
@@ -15582,7 +15582,7 @@ msgid "Review the major dates of the inventor of the braille system."
 msgstr "回顧布拉耶點字系統發明人的生平重大事件日期。"
 
 #. Help manual
-#: activities/louis-braille/ActivityInfo.qml:24
+#: activities/louis-braille/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid ""
 "Read the history of Louis Braille, his biography, and the invention of the "
@@ -15592,12 +15592,12 @@ msgstr ""
 "閱讀 Louis Braille 生平的故事，以及他如何發明布拉耶點字系統。點擊上下頁的按鍵"
 "來翻頁。結束後，請依時間前後排序。"
 
-#: activities/louis-braille/ActivityInfo.qml:27
+#: activities/louis-braille/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "Space or Enter: select an item and change its position"
 msgstr "空白鍵或 Enter：選取一個項目並改變它的位置"
 
-#: activities/louis-braille/ActivityInfo.qml:28
+#: activities/louis-braille/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid ""
 "Louis Braille Video: &lt;https://www.youtube.com/watch?v=9bdfC2j_4x4&gt;"
@@ -15872,22 +15872,22 @@ msgid "Help Tux get out of this maze."
 msgstr "幫助小企鵝離開這個迷宮。"
 
 #. Help manual
-#: activities/maze/ActivityInfo.qml:24
-#: activities/mazerelative/ActivityInfo.qml:24
+#: activities/maze/ActivityInfo.qml:22
+#: activities/mazerelative/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid "Use the arrow keys or swipe the screen to move Tux to the door."
 msgstr "用方向鍵或是在螢幕上掃過方向來移動小企鵝。"
 
-#: activities/maze/ActivityInfo.qml:25
+#: activities/maze/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid ""
 "In first levels, Tux walks comfortably, one step on each move request, "
 "through the maze."
 msgstr "在第一關，小企鵝會輕鬆走，每移動一次就前進一步。"
 
-#: activities/maze/ActivityInfo.qml:26
-#: activities/mazeinvisible/ActivityInfo.qml:26
-#: activities/mazerelative/ActivityInfo.qml:27
+#: activities/maze/ActivityInfo.qml:24
+#: activities/mazeinvisible/ActivityInfo.qml:24
+#: activities/mazerelative/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid ""
 "For larger mazes, there is a special walking mode, called \"run-fast-mode\". "
@@ -15897,7 +15897,7 @@ msgstr ""
 "再來到大一點的迷宮時，可以用一種特別的走路模式，叫做「快跑模式」。開啟快跑模"
 "式時，小企鵝會自動用跑的，直到下一個叉路等您決定要往哪裡走。"
 
-#: activities/maze/ActivityInfo.qml:27
+#: activities/maze/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid ""
 "You can see whether this mode is enabled or not, by looking at Tux's feet: "
@@ -15907,9 +15907,9 @@ msgstr ""
 "您可以看小企鵝的腳。如果是光腳，表示是一般走路模式。如果穿上紅色的運動鞋，就"
 "是快跑模式。"
 
-#: activities/maze/ActivityInfo.qml:28
-#: activities/mazeinvisible/ActivityInfo.qml:28
-#: activities/mazerelative/ActivityInfo.qml:29
+#: activities/maze/ActivityInfo.qml:26
+#: activities/mazeinvisible/ActivityInfo.qml:26
+#: activities/mazerelative/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid ""
 "At higher levels, run-fast-mode will be enabled automatically. If you want "
@@ -15940,7 +15940,7 @@ msgid "Guide Tux out of the invisible maze."
 msgstr "引導小企鵝離開這個看不見的迷宮。"
 
 #. Help manual
-#: activities/mazeinvisible/ActivityInfo.qml:24
+#: activities/mazeinvisible/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid ""
 "Use the arrow keys or swipe the screen to move Tux to the door. Use the maze "
@@ -15951,16 +15951,16 @@ msgstr ""
 "用方向鍵或掃觸控螢幕來控制小企鵝移動。用迷宮圖示或空白鍵來切換顯示或隱形模"
 "式。顯示模式只給您關於您的位置的指示，但不能移動。"
 
-#: activities/mazeinvisible/ActivityInfo.qml:25
-#: activities/mazerelative/ActivityInfo.qml:26
+#: activities/mazeinvisible/ActivityInfo.qml:23
+#: activities/mazerelative/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid ""
 "At the first levels, Tux walks comfortably, one step on each move request, "
 "through the maze."
 msgstr "在第一關，小企鵝會輕鬆走，每移動一次就前進一步。"
 
-#: activities/mazeinvisible/ActivityInfo.qml:27
-#: activities/mazerelative/ActivityInfo.qml:28
+#: activities/mazeinvisible/ActivityInfo.qml:25
+#: activities/mazerelative/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid ""
 "You can see whether this mode is enabled or not, by looking at Tux's feet: "
@@ -15970,7 +15970,7 @@ msgstr ""
 "您可以看小企鵝的腳。如果是光腳，表示是一般走路模式。如果穿上紅色的運動鞋，就"
 "是快跑模式。"
 
-#: activities/mazeinvisible/ActivityInfo.qml:31
+#: activities/mazeinvisible/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid "Space: switch between invisible and visible modes"
 msgstr "空白鍵：切換可見與不可見模式"
@@ -15987,7 +15987,7 @@ msgctxt "ActivityInfo|"
 msgid "Help Tux get out of this maze (moves are relative)."
 msgstr "幫助小企鵝離開這個迷宮（但移動是相對的）。"
 
-#: activities/mazerelative/ActivityInfo.qml:25
+#: activities/mazerelative/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid ""
 "In this maze, the moves are relative (first person). Left and right are used "
@@ -15996,17 +15996,17 @@ msgstr ""
 "在此迷宮中，會以第一人稱視角來顯示，因此移動是相對的。左鍵與右鍵是用來左轉或"
 "右轉。"
 
-#: activities/mazerelative/ActivityInfo.qml:31
+#: activities/mazerelative/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: turn left and right"
 msgstr "左、右鍵：左轉或右轉"
 
-#: activities/mazerelative/ActivityInfo.qml:32
+#: activities/mazerelative/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
 msgid "Down arrow: turn backward"
 msgstr "下方向鍵：倒退"
 
-#: activities/mazerelative/ActivityInfo.qml:33
+#: activities/mazerelative/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
 msgid "Up arrow: move forward"
 msgstr "上方向鍵：往前"
@@ -16102,7 +16102,7 @@ msgstr "每張牌都藏了一個字母，可能是大寫也可能是小寫。您
 
 #: activities/memory-case-association-tux/ActivityInfo.qml:27
 #: activities/memory-case-association/ActivityInfo.qml:27
-#: activities/memory-enumerate/ActivityInfo.qml:27
+#: activities/memory-enumerate/ActivityInfo.qml:26
 #: activities/memory-math-add-minus-mult-div-tux/ActivityInfo.qml:27
 #: activities/memory-math-add-minus-mult-div/ActivityInfo.qml:27
 #: activities/memory-math-add-minus-tux/ActivityInfo.qml:27
@@ -16117,8 +16117,8 @@ msgstr "每張牌都藏了一個字母，可能是大寫也可能是小寫。您
 #: activities/memory-math-mult-div/ActivityInfo.qml:27
 #: activities/memory-math-mult-tux/ActivityInfo.qml:27
 #: activities/memory-math-mult/ActivityInfo.qml:27
-#: activities/memory-sound-tux/ActivityInfo.qml:27
-#: activities/memory-sound/ActivityInfo.qml:27
+#: activities/memory-sound-tux/ActivityInfo.qml:26
+#: activities/memory-sound/ActivityInfo.qml:26
 #: activities/memory-tux/ActivityInfo.qml:27
 #: activities/memory-wordnumber/ActivityInfo.qml:27
 #: activities/memory/ActivityInfo.qml:27
@@ -16205,7 +16205,7 @@ msgid "Numeration training, memory."
 msgstr "對數字的訓練、記憶。"
 
 #. Help manual
-#: activities/memory-enumerate/ActivityInfo.qml:24
+#: activities/memory-enumerate/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid ""
 "Each card is hiding either a picture with a number of items, or a number. "
@@ -16952,8 +16952,8 @@ msgid "Train your audio memory."
 msgstr "訓練您的聲音記憶。"
 
 #. Help manual
-#: activities/memory-sound-tux/ActivityInfo.qml:24
-#: activities/memory-sound/ActivityInfo.qml:24
+#: activities/memory-sound-tux/ActivityInfo.qml:23
+#: activities/memory-sound/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid ""
 "Each card plays a sound when you flip it, and each card has a twin with "
@@ -18146,24 +18146,24 @@ msgid "Put each item at the same place as in the given example."
 msgstr "將每個物品依照範例擺在相同的位置。"
 
 #. Help manual
-#: activities/mosaic/ActivityInfo.qml:24
+#: activities/mosaic/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid ""
 "First select an item from the list, and then click on a spot of the mosaic "
 "to place the item."
 msgstr "先選擇您要放置的項目，然後點擊馬賽克中的點來放置。"
 
-#: activities/mosaic/ActivityInfo.qml:26
+#: activities/mosaic/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid "Arrows: navigate inside an area"
 msgstr "方向鍵：在區域內移動"
 
-#: activities/mosaic/ActivityInfo.qml:27
+#: activities/mosaic/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "Space or Enter: select or place an item"
 msgstr "空白鍵或 Enter：選取或放置項目"
 
-#: activities/mosaic/ActivityInfo.qml:28
+#: activities/mosaic/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Tab: navigate between the item list and the mosaic"
 msgstr "Tab 鍵：在項目清單與馬賽克間切換"
@@ -18195,7 +18195,7 @@ msgid "Nine men's morris (against Tux)"
 msgstr "跟小企鵝玩九子直棋"
 
 #. Help goal
-#: activities/nine_men_morris/ActivityInfo.qml:20
+#: activities/nine_men_morris/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid ""
 "Form mills (lines of 3 pieces) to remove Tux's pieces until he has only 2 "
@@ -18205,7 +18205,7 @@ msgstr ""
 "小企鵝無法再移動時您就贏了。"
 
 #. Help manual
-#: activities/nine_men_morris/ActivityInfo.qml:24
+#: activities/nine_men_morris/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid ""
 "Play with Tux. First take turns to place nine pieces, and then take turns to "
@@ -18297,7 +18297,7 @@ msgid "Nine men's morris (with a friend)"
 msgstr "跟朋友玩九子直棋"
 
 #. Help goal
-#: activities/nine_men_morris_2players/ActivityInfo.qml:20
+#: activities/nine_men_morris_2players/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid ""
 "Form mills (lines of 3 pieces) to remove your opponent's pieces until your "
@@ -18307,7 +18307,7 @@ msgstr ""
 "再移動時您就贏了。"
 
 #. Help manual
-#: activities/nine_men_morris_2players/ActivityInfo.qml:24
+#: activities/nine_men_morris_2players/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid ""
 "Play with a friend. First take turns to place nine pieces, and then take "
@@ -18335,7 +18335,7 @@ msgid ""
 msgstr "認識音符的名稱與五線譜中的位置，以便學習鋼琴彈奏與作曲。"
 
 #. Help manual
-#: activities/note_names/ActivityInfo.qml:27
+#: activities/note_names/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Identify the notes correctly and score 100% to complete a level."
 msgstr "正確指出音符，達到 100% 分後即完成關卡。"
@@ -18400,7 +18400,7 @@ msgid "Touch the numbers in the right order."
 msgstr "以正確的順序觸碰數字。"
 
 #. Help manual
-#: activities/number_sequence/ActivityInfo.qml:24
+#: activities/number_sequence/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid "Draw the picture by clicking on each number in the right order."
 msgstr "以正確的順序觸碰數字來畫圖。"
@@ -18418,7 +18418,7 @@ msgid "Move the helicopter to catch the clouds having even or odd numbers."
 msgstr "移動直升機來抓奇數或偶數的雲。"
 
 #. Help manual
-#: activities/numbers-odd-even/ActivityInfo.qml:24
+#: activities/numbers-odd-even/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid ""
 "Catch the clouds with an odd or even number, in the right order. With a "
@@ -18881,8 +18881,8 @@ msgstr ""
 "取得 24 顆而打成平手。"
 
 #. Help manual
-#: activities/oware/ActivityInfo.qml:23
-#: activities/oware_2players/ActivityInfo.qml:23
+#: activities/oware/ActivityInfo.qml:22
+#: activities/oware_2players/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid ""
 "Players take turns moving the seeds. On a turn, a player chooses one of the "
@@ -18898,8 +18898,8 @@ msgstr ""
 "種」（sowing）。種子分配時要跳過源頭，意思是說，如果它有 12 顆以上的種子，在"
 "分配過程中到原來拿出來的洞時，必須跳過不放，而放到下一個洞去。"
 
-#: activities/oware/ActivityInfo.qml:24
-#: activities/oware_2players/ActivityInfo.qml:24
+#: activities/oware/ActivityInfo.qml:23
+#: activities/oware_2players/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid ""
 "Capturing occurs only when a player brings the count of an opponent's house "
@@ -18919,8 +18919,8 @@ msgstr ""
 "是剛好 2 顆或 3 顆為止。吃掉的種子放在得分區。但是，如果某一步會吃掉敵方所有"
 "的種子，則該次吃子不算，因為這會讓敵家玩不下去。本來要被吃的種子會留在洞裡。"
 
-#: activities/oware/ActivityInfo.qml:25
-#: activities/oware_2players/ActivityInfo.qml:25
+#: activities/oware/ActivityInfo.qml:24
+#: activities/oware_2players/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid ""
 "If an opponent's houses are all empty, the current player must make a move "
@@ -19104,14 +19104,14 @@ msgid "Follow the given directions to help Tux reach the target."
 msgstr "跟著指示的方向，幫小企鵝走到目的地。"
 
 #. Help manual
-#: activities/path_decoding/ActivityInfo.qml:23
-#: activities/path_decoding_relative/ActivityInfo.qml:23
+#: activities/path_decoding/ActivityInfo.qml:21
+#: activities/path_decoding_relative/ActivityInfo.qml:21
 msgctxt "ActivityInfo|"
 msgid "Click on the grid squares to move Tux following the given directions."
 msgstr "跟著指示的方向，點擊小企鵝下一步應該走到哪一格。"
 
-#: activities/path_decoding/ActivityInfo.qml:24
-#: activities/path_encoding/ActivityInfo.qml:24
+#: activities/path_decoding/ActivityInfo.qml:22
+#: activities/path_encoding/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid ""
 "The directions are absolute, they do not depend on the current orientation "
@@ -19145,14 +19145,14 @@ msgctxt "ActivityInfo|"
 msgid "Path decoding relative"
 msgstr "跟隨相對路徑"
 
-#: activities/path_decoding_relative/ActivityInfo.qml:24
-#: activities/path_encoding_relative/ActivityInfo.qml:24
+#: activities/path_decoding_relative/ActivityInfo.qml:22
+#: activities/path_encoding_relative/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid "The directions are relative to the current orientation of Tux."
 msgstr "注意上下左右的方向是相對的，依小企鵝面向的方向而定。"
 
-#: activities/path_decoding_relative/ActivityInfo.qml:25
-#: activities/path_encoding_relative/ActivityInfo.qml:25
+#: activities/path_decoding_relative/ActivityInfo.qml:23
+#: activities/path_encoding_relative/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid ""
 "This means that UP moves forward, DOWN moves backward, LEFT moves to the "
@@ -19175,21 +19175,21 @@ msgid "Move Tux along the path to reach the target."
 msgstr "找出路徑方向，幫小企鵝走到目的地。"
 
 #. Help manual
-#: activities/path_encoding/ActivityInfo.qml:23
-#: activities/path_encoding_relative/ActivityInfo.qml:23
+#: activities/path_encoding/ActivityInfo.qml:21
+#: activities/path_encoding_relative/ActivityInfo.qml:21
 msgctxt "ActivityInfo|"
 msgid ""
 "Use the arrow buttons to move Tux along the path until he reaches the target."
 msgstr "跟著路徑，利用方向箭頭來移動小企鵝，直到走到目的地。"
 
-#: activities/path_encoding/ActivityInfo.qml:25
-#: activities/path_encoding_relative/ActivityInfo.qml:26
+#: activities/path_encoding/ActivityInfo.qml:23
+#: activities/path_encoding_relative/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid "Keyboard controls:"
 msgstr "鍵盤控制："
 
-#: activities/path_encoding/ActivityInfo.qml:26
-#: activities/path_encoding_relative/ActivityInfo.qml:27
+#: activities/path_encoding/ActivityInfo.qml:24
+#: activities/path_encoding_relative/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "Arrows: directions"
 msgstr "方向鍵：控制方向"
@@ -19219,7 +19219,7 @@ msgid "Double click or double tap on any side of the goal in order to score."
 msgstr "在球門任一側雙擊或按兩下螢幕來得分。"
 
 #. Help manual
-#: activities/penalty/ActivityInfo.qml:24
+#: activities/penalty/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid ""
 "Double click or double tap on a side of the goal to kick the ball. You can "
@@ -19262,7 +19262,7 @@ msgid "Visual perception."
 msgstr "視覺化的辨認。"
 
 #. Help manual
-#: activities/photo_hunter/ActivityInfo.qml:24
+#: activities/photo_hunter/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid ""
 "Observe the two pictures carefully. There are some slight differences. When "
@@ -19369,19 +19369,19 @@ msgid "Level 7: Save your compositions and load pre-defined or saved melodies."
 msgstr "第 7 關：儲存您作的曲，並載入之前儲存的旋律。"
 
 #: activities/piano_composition/ActivityInfo.qml:34
-#: activities/play_piano/ActivityInfo.qml:32
+#: activities/play_piano/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
 msgid "Digits 1 to 7: white keys"
 msgstr "數字 1 到 7：白鍵"
 
 #: activities/piano_composition/ActivityInfo.qml:35
-#: activities/play_piano/ActivityInfo.qml:33
+#: activities/play_piano/ActivityInfo.qml:32
 msgctxt "ActivityInfo|"
 msgid "F2 to F7: black keys"
 msgstr "F2 到 F7：黑鍵"
 
 #: activities/piano_composition/ActivityInfo.qml:36
-#: activities/play_piano/ActivityInfo.qml:31
+#: activities/play_piano/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
 msgid "Space: play"
 msgstr "空白鍵：彈奏"
@@ -19402,7 +19402,7 @@ msgid "Delete: erase selected note or everything"
 msgstr "刪除鍵：刪除選取的音符或項目"
 
 #: activities/piano_composition/ActivityInfo.qml:40
-#: activities/play_piano/ActivityInfo.qml:35
+#: activities/play_piano/ActivityInfo.qml:34
 msgctxt "ActivityInfo|"
 msgid ""
 "The synthesizer original code is from https://github.com/vsr83/miniSynth"
@@ -19937,7 +19937,7 @@ msgid "Move the helicopter to catch the clouds in the correct order."
 msgstr "移動直升機以正確的順序來抓住雲朵。"
 
 #. Help manual
-#: activities/planegame/ActivityInfo.qml:24
+#: activities/planegame/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid ""
 "Catch the clouds in increasing order. With a keyboard, use the arrow keys to "
@@ -19966,7 +19966,7 @@ msgid "Play piano"
 msgstr "彈奏鋼琴"
 
 #. Help goal
-#: activities/play_piano/ActivityInfo.qml:24
+#: activities/play_piano/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid ""
 "Understand how the piano keyboard can play music as written on the musical "
@@ -19974,27 +19974,27 @@ msgid ""
 msgstr "瞭解鋼琴如何依照樂譜彈奏出音樂。"
 
 #. Help prerequisite
-#: activities/play_piano/ActivityInfo.qml:26
+#: activities/play_piano/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "Knowledge of musical notation and musical staff."
 msgstr "關於音樂記號與五線譜的知識。"
 
 #. Help manual
-#: activities/play_piano/ActivityInfo.qml:28
+#: activities/play_piano/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid ""
 "Some notes are played on the staff. Click on the keyboard keys matching the "
 "notes on the staff."
 msgstr "五線譜中有些音符被播放了。請點擊鍵盤上的鍵來找出這些音符。"
 
-#: activities/play_piano/ActivityInfo.qml:29
+#: activities/play_piano/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid ""
 "On levels 1 to 5 you will practice treble clef notes and on levels 6 to 10 "
 "you will practice bass clef notes."
 msgstr "第 1 到 5 關您會練習高音譜記號的音符，6 到 10 關則是低音譜記號的音符。"
 
-#: activities/play_piano/ActivityInfo.qml:34
+#: activities/play_piano/ActivityInfo.qml:33
 msgctxt "ActivityInfo|"
 msgid "Backspace or Delete: undo"
 msgstr "返回或刪除鍵：復原-"
@@ -20028,19 +20028,19 @@ msgid "Play rhythm"
 msgstr "打節拍"
 
 #. Help goal
-#: activities/play_rhythm/ActivityInfo.qml:24
+#: activities/play_rhythm/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid "Learn to follow a rhythm accurately."
 msgstr "學習如何精確地跟隨節拍。"
 
 #. Help prerequisite
-#: activities/play_rhythm/ActivityInfo.qml:26
+#: activities/play_rhythm/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "Simple understanding of musical rhythm."
 msgstr "簡單地瞭解音樂的旋律與節拍。"
 
 #. Help manual
-#: activities/play_rhythm/ActivityInfo.qml:28
+#: activities/play_rhythm/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid ""
 "Listen to the rhythm played. When you're ready, click on the drum following "
@@ -20050,7 +20050,7 @@ msgstr ""
 "仔細聽播放出來的節奏。準備好以後，在鼓上敲擊出相同的節奏。如果您敲擊正確，會"
 "播放另一組節奏。不然您就要再試一次。"
 
-#: activities/play_rhythm/ActivityInfo.qml:29
+#: activities/play_rhythm/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid ""
 "Odd levels display a vertical line on the staff following the rhythm: click "
@@ -20059,7 +20059,7 @@ msgstr ""
 "奇數關會依照節奏，在五線譜上顯示一條垂直線：您只要在該線出現在音符中央時敲鼓"
 "即可。"
 
-#: activities/play_rhythm/ActivityInfo.qml:30
+#: activities/play_rhythm/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid ""
 "Even levels are harder, because there is no vertical line. You must read the "
@@ -20069,27 +20069,27 @@ msgstr ""
 "偶數關較難，因為沒有垂直線給您參考。您必須看懂音符的長度，並打出正確的節奏。"
 "您也可以點擊節拍器，來得知四分音符的長短做為參考。"
 
-#: activities/play_rhythm/ActivityInfo.qml:31
+#: activities/play_rhythm/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
 msgid "Click on the reload button if you want to replay the rhythm."
 msgstr "按下重新載入鍵可以重播節拍。"
 
-#: activities/play_rhythm/ActivityInfo.qml:33
+#: activities/play_rhythm/ActivityInfo.qml:32
 msgctxt "ActivityInfo|"
 msgid "Space bar: click on the drum"
 msgstr "空白鍵：在鼓上打一下"
 
-#: activities/play_rhythm/ActivityInfo.qml:34
+#: activities/play_rhythm/ActivityInfo.qml:33
 msgctxt "ActivityInfo|"
 msgid "Enter or Return: replay the rhythm"
 msgstr "Enter 或 Return 鍵：重播節拍"
 
-#: activities/play_rhythm/ActivityInfo.qml:35
+#: activities/play_rhythm/ActivityInfo.qml:34
 msgctxt "ActivityInfo|"
 msgid "Up and Down: increase or decrease the tempo"
 msgstr "上與下：遞增或遞減節奏速度"
 
-#: activities/play_rhythm/ActivityInfo.qml:36
+#: activities/play_rhythm/ActivityInfo.qml:35
 msgctxt "ActivityInfo|"
 msgid "Tab: Start or stop the metronome if it is visible"
 msgstr "Tab：啟動或停止節拍器"
@@ -20515,7 +20515,7 @@ msgid "Memory training."
 msgstr "記憶力訓練。"
 
 #. Help manual
-#: activities/railroad/ActivityInfo.qml:26
+#: activities/railroad/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid ""
 "A train is displayed for a few seconds. Rebuild it at the top of the screen "
@@ -20525,29 +20525,29 @@ msgstr ""
 "一列火車會在最上面的軌道上開過去。接著您要從下面的各式火車中選擇正確的車頭與"
 "車廂並把它排列正確。若要移除只要把車廂拖下來即可。"
 
-#: activities/railroad/ActivityInfo.qml:27
+#: activities/railroad/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "<b>Keyboard Controls:</b>"
 msgstr "<b>鍵盤控制：</b>"
 
-#: activities/railroad/ActivityInfo.qml:28
+#: activities/railroad/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Arrows: navigate in the sample area and in the answer area"
 msgstr "方向鍵：在樣本區與答案區內移動"
 
-#: activities/railroad/ActivityInfo.qml:29
+#: activities/railroad/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid ""
 "Space: add an item from the samples to the answer area, or swap two items in "
 "the answer area"
 msgstr "空白鍵：從樣本區新增項目到答案區，或是在答案區內交換兩個項目"
 
-#: activities/railroad/ActivityInfo.qml:30
+#: activities/railroad/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid "Delete or Backspace: remove the selected item from the answer area"
 msgstr "刪除或返回鍵：從答案區移除選取的項目"
 
-#: activities/railroad/ActivityInfo.qml:31
+#: activities/railroad/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
 msgid "Enter or Return: submit your answer"
 msgstr "Enter 或 Return 鍵：送出您的答案"
@@ -20649,8 +20649,8 @@ msgid "Draw perfectly the given image on the empty grid."
 msgstr "在空白的格子中重新繪製指定的圖片。"
 
 #. Help manual
-#: activities/redraw/ActivityInfo.qml:24
-#: activities/redraw_symmetrical/ActivityInfo.qml:24
+#: activities/redraw/ActivityInfo.qml:22
+#: activities/redraw_symmetrical/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid ""
 "First, select the proper color from the toolbar. Click on the grid and drag "
@@ -20658,21 +20658,21 @@ msgid ""
 msgstr ""
 "首先，從工具列中選擇適當的顏色。然後在格線上點擊並拖曳以繪圖，放開就停止。"
 
-#: activities/redraw/ActivityInfo.qml:27
-#: activities/redraw_symmetrical/ActivityInfo.qml:27
+#: activities/redraw/ActivityInfo.qml:25
+#: activities/redraw_symmetrical/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "Digits: select a color"
 msgstr "數字鍵：選擇顏色"
 
-#: activities/redraw/ActivityInfo.qml:28
-#: activities/redraw_symmetrical/ActivityInfo.qml:28
+#: activities/redraw/ActivityInfo.qml:26
+#: activities/redraw_symmetrical/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Arrows: navigate in the grid"
 msgstr "方向鍵：在格子間移動"
 
-#: activities/redraw/ActivityInfo.qml:29
-#: activities/redraw_symmetrical/ActivityInfo.qml:29
-#: activities/simplepaint/ActivityInfo.qml:27
+#: activities/redraw/ActivityInfo.qml:27
+#: activities/redraw_symmetrical/ActivityInfo.qml:27
+#: activities/simplepaint/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Space or Enter: paint"
 msgstr "空白鍵或 Enter：畫下去"
@@ -20880,7 +20880,7 @@ msgid "Roman numerals"
 msgstr "羅馬數字"
 
 #. Help goal
-#: activities/roman_numerals/ActivityInfo.qml:20
+#: activities/roman_numerals/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid ""
 "Learn how to read roman numerals and do the conversion to and from arabic "
@@ -20888,7 +20888,7 @@ msgid ""
 msgstr "學習如何讀羅馬數字，以及如何在阿拉伯數字與羅馬數字間轉換。"
 
 #. Help manual
-#: activities/roman_numerals/ActivityInfo.qml:24
+#: activities/roman_numerals/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid ""
 "Roman numerals are a numeral system that originated in ancient Rome and "
@@ -20899,7 +20899,7 @@ msgstr ""
 "羅馬數字是一種起源於古羅馬的數值系統，一直是整個歐洲乃至中世紀晚期書寫數字的"
 "常用方式。 該系統中的數字由拉丁字母的字母組合表示。"
 
-#: activities/roman_numerals/ActivityInfo.qml:25
+#: activities/roman_numerals/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid ""
 "Learn the rules to read Roman numerals and practice converting numbers to "
@@ -20908,12 +20908,12 @@ msgstr ""
 "學習閱讀羅馬數值系統的規則，練習從阿拉伯數字轉換為羅馬數字。按下「確定」鍵來"
 "查看您的答案是否正確。"
 
-#: activities/roman_numerals/ActivityInfo.qml:27
+#: activities/roman_numerals/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "Digits: type arabic numerals"
 msgstr "數字鍵：輸入阿拉伯數字"
 
-#: activities/roman_numerals/ActivityInfo.qml:28
+#: activities/roman_numerals/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Letters: type roman numerals (with I, V, X, L, C, D and M)"
 msgstr "字母鍵：輸入羅馬數字（I, V, X, L, C, D 與 M）"
@@ -21055,7 +21055,7 @@ msgid "Mental calculation, arithmetic equality."
 msgstr "心算﹑計算能力。"
 
 #. Help manual
-#: activities/scalesboard/ActivityInfo.qml:24
+#: activities/scalesboard/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid ""
 "To balance the scales, move some weights to the left or the right side (on "
@@ -21269,7 +21269,7 @@ msgid "Mental calculation, arithmetic equality, unit conversion."
 msgstr "心算、計算等值、單位換算能力。"
 
 #. Help manual
-#: activities/scalesboard_weight/ActivityInfo.qml:24
+#: activities/scalesboard_weight/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid ""
 "To balance the scales, move some masses to the left or the right side (on "
@@ -21421,7 +21421,7 @@ msgid "Balance using the imperial system of units"
 msgstr "用英制單位的天平"
 
 #. Help manual
-#: activities/scalesboard_weight_avoirdupois/ActivityInfo.qml:24
+#: activities/scalesboard_weight_avoirdupois/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid ""
 "To balance the scales, move some masses to the left or the right side (on "
@@ -22035,13 +22035,13 @@ msgid "Enhance creative skills."
 msgstr "加強創造力。"
 
 #. Help manual
-#: activities/simplepaint/ActivityInfo.qml:24
+#: activities/simplepaint/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid ""
 "Select a color and paint the rectangles as you like to create a drawing."
 msgstr "請選擇一個顏色並照自己的意思畫出矩形。"
 
-#: activities/simplepaint/ActivityInfo.qml:28
+#: activities/simplepaint/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Tab: switch between the color selector and the painting area"
 msgstr "Tab 鍵：在顏色選擇器與繪圖區間切換"
@@ -22274,7 +22274,7 @@ msgstr ""
 "stellarium.org/）。"
 
 #. Help manual
-#: activities/solar_system/ActivityInfo.qml:27
+#: activities/solar_system/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid ""
 "Click on a planet or on the Sun, and answer the corresponding questions. "
@@ -22284,17 +22284,17 @@ msgstr ""
 "點擊太陽或是行星，並回答關於該星球的問題。每個問題有四個選項。其中有一個選項"
 "是完全正確的。在選項中嘗試，直到您看到貼近程度為 100%。"
 
-#: activities/solar_system/ActivityInfo.qml:30
+#: activities/solar_system/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid "Space or Enter: select"
 msgstr "空白鍵或 Enter：選擇"
 
-#: activities/solar_system/ActivityInfo.qml:31
+#: activities/solar_system/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
 msgid "Escape: return to previous screen"
 msgstr "Escape 鍵：回到前一個畫面"
 
-#: activities/solar_system/ActivityInfo.qml:32
+#: activities/solar_system/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
 msgid "Tab: view the hint (only when the hint icon is visible)"
 msgstr "Tab 鍵：顯示提示（當提示圖示出現時才有作用）"
@@ -23692,7 +23692,7 @@ msgid "Tux has hidden several items. Find them in the correct order."
 msgstr "小企鵝藏了一些東西。請照著順序把它們找出來吧。"
 
 #. Help manual
-#: activities/superbrain/ActivityInfo.qml:24
+#: activities/superbrain/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid ""
 "Click on the items until you find what you think is the correct answer. "
@@ -24030,7 +24030,7 @@ msgid ""
 msgstr "三個記號連成垂直、水平或對角的一條線。"
 
 #. Help manual
-#: activities/tic_tac_toe/ActivityInfo.qml:27
+#: activities/tic_tac_toe/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid ""
 "Play with Tux. Take turns to click on the square which you want to mark. The "
@@ -24039,7 +24039,7 @@ msgstr ""
 "這個遊戲可以跟小企鵝一起玩。輪到您時，在想要下的地方點一下。誰先完成三個排成"
 "一列的就獲勝。"
 
-#: activities/tic_tac_toe/ActivityInfo.qml:28
+#: activities/tic_tac_toe/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Tux will play better when you increase the level."
 msgstr "困難度越高小企鵝就會越厲害。"
@@ -24051,7 +24051,7 @@ msgid "Tic tac toe (with a friend)"
 msgstr "井字遊戲(跟朋友一起玩)"
 
 #. Help manual
-#: activities/tic_tac_toe_2players/ActivityInfo.qml:27
+#: activities/tic_tac_toe_2players/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid ""
 "Play with a friend. Take turns to click on the square which you want to "
@@ -24073,7 +24073,7 @@ msgid "Remove the red car from the parking lot through the gate on the right."
 msgstr "經右邊的通道把紅色的車子從停車場移走。"
 
 #. Help manual
-#: activities/traffic/ActivityInfo.qml:24
+#: activities/traffic/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid ""
 "Each car can only move either horizontally or vertically. You must make some "
@@ -24102,7 +24102,7 @@ msgid "Learn the water cycle."
 msgstr "學習水循環系統。"
 
 #. Help manual
-#: activities/watercycle/ActivityInfo.qml:24
+#: activities/watercycle/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid ""
 "Click on different active elements: sun, cloud, pumping station, and the "

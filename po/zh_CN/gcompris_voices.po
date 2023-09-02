@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-07-18 00:44+0000\n"
+"POT-Creation-Date: 2023-09-02 00:41+0000\n"
 "PO-Revision-Date: 2023-08-27 03:40\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
@@ -220,13 +220,13 @@ msgid "play checkers with your friend"
 msgstr "和你的朋友玩跳棋"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "chess"
-#: activities/chess/ActivityInfo.qml:18
+#: activities/chess/ActivityInfo.qml:17
 #, kde-format
 msgid "play chess against Tux"
 msgstr "与Tux下棋"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "chess_2players"
-#: activities/chess_2players/ActivityInfo.qml:18
+#: activities/chess_2players/ActivityInfo.qml:17
 #, kde-format
 msgid "play chess against your friend"
 msgstr "和您的朋友下棋"
@@ -528,7 +528,7 @@ msgid "Find out the number by typing a number from the range proposed."
 msgstr "通过从建议的范围内输入一个数字来找出数字。"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "hangman"
-#: activities/hangman/ActivityInfo.qml:22
+#: activities/hangman/ActivityInfo.qml:21
 #, kde-format
 msgid "A word is hidden, you must discover it letter by letter."
 msgstr "一个单词是隐藏的，您必须一个字母一个字母地发现它。"
@@ -827,7 +827,7 @@ msgid "Put each item at the same place as in the given example."
 msgstr "按照示范，将每个东西放在相同的位置。"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "nine_men_morris"
-#: activities/nine_men_morris/ActivityInfo.qml:18
+#: activities/nine_men_morris/ActivityInfo.qml:17
 #, kde-format
 msgid ""
 "Click on the dot where you wish to place your piece and try to take all "
@@ -835,7 +835,7 @@ msgid ""
 msgstr "点击您想放置作品的点，并尝试完成所有Tux的作品。"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "nine_men_morris_2players"
-#: activities/nine_men_morris_2players/ActivityInfo.qml:18
+#: activities/nine_men_morris_2players/ActivityInfo.qml:17
 #, kde-format
 msgid ""
 "Click on the dot where you wish to place your piece and try to take all your "
@@ -947,13 +947,13 @@ msgid ""
 msgstr "用方向键移动直升机，按升序捕捉云中的数字。"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "play_piano"
-#: activities/play_piano/ActivityInfo.qml:22
+#: activities/play_piano/ActivityInfo.qml:21
 #, kde-format
 msgid "Click on the keyboard keys that match the notes that you see and hear"
 msgstr "单击与您看到和听到的音符相匹配的键盘键"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "play_rhythm"
-#: activities/play_rhythm/ActivityInfo.qml:22
+#: activities/play_rhythm/ActivityInfo.qml:21
 #, kde-format
 msgid "Click the drum to recreate the rhythm"
 msgstr "单击鼓以重现节奏"
@@ -1014,7 +1014,7 @@ msgstr ""
 "单击多米诺骨牌，并单击确定按钮验证您的选择，以指示Tux吃鱼必须遵循的冰块数量。"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "roman_numerals"
-#: activities/roman_numerals/ActivityInfo.qml:18
+#: activities/roman_numerals/ActivityInfo.qml:17
 #, kde-format
 msgid "Learn and practice roman to arabic numerals conversion"
 msgstr "学习和练习罗马数字到阿拉伯数字的转换"
