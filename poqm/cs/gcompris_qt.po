@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2023-07-28 22:10+0200\n"
+"PO-Revision-Date: 2023-08-21 23:37+0200\n"
 "Last-Translator: Jan Papez (honyczek) <honyczek@centrum.cz>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
 "Language: cs\n"
@@ -2024,7 +2024,7 @@ msgstr ""
 #: activities/baby_wordprocessor/ActivityConfig.qml:26
 msgctxt "ActivityConfig|"
 msgid "Play characters' sound when typed"
-msgstr "Přehrávat zvuk postav při psaní"
+msgstr "Přehrávat název znaků při psaní"
 
 #. Activity title
 #: activities/baby_wordprocessor/ActivityInfo.qml:15
@@ -2059,7 +2059,7 @@ msgid ""
 msgstr ""
 "Stačí psát na skutečné nebo virtuální klávesnici jako v textovém editoru.\n"
 "    Kliknutím na tlačítko 'nadpis' se text zvětší. Podobně pomocí tlačítka "
-"'podtitul' bude text o něco menší. Kliknutí na 'odstavec' odstraní "
+"'podnadpis' bude text o něco menší. Kliknutí na 'odstavec' odstraní "
 "formátování."
 
 #: activities/baby_wordprocessor/ActivityInfo.qml:27
@@ -2105,17 +2105,17 @@ msgstr "Ctrl + Z: zpět"
 #: activities/baby_wordprocessor/ActivityInfo.qml:35
 msgctxt "ActivityInfo|"
 msgid "Ctrl + Shift + Z: redo"
-msgstr "Ctrl + Shift + Z: udělat znovu"
+msgstr "Ctrl + Shift + Z: provést znovu"
 
 #: activities/baby_wordprocessor/BabyWordprocessor.qml:91
 msgctxt "BabyWordprocessor|"
 msgid "Title"
-msgstr "Název"
+msgstr "Nadpis"
 
 #: activities/baby_wordprocessor/BabyWordprocessor.qml:97
 msgctxt "BabyWordprocessor|"
 msgid "Subtitle"
-msgstr "Podtitul"
+msgstr "Podnadpis"
 
 #: activities/baby_wordprocessor/BabyWordprocessor.qml:104
 msgctxt "BabyWordprocessor|"
@@ -2204,7 +2204,7 @@ msgstr "Psa poskytl Andre Connes a uvolnil pod licencí GPL"
 #: activities/babyshapes/resource/board/board1_0.qml:14
 msgctxt "board1_0|"
 msgid "Drag and Drop the items to match them."
-msgstr "Přesuň věci podle tvaru na správné místo."
+msgstr "Přesuň věci na správné místo odpovídající jejich tvaru."
 
 #: activities/babyshapes/resource/board/board5_0.qml:14
 msgctxt "board5_0|"
@@ -2229,7 +2229,7 @@ msgstr "Pieter Bruegel starší, Selská svatba - 1568"
 #: activities/babyshapes/resource/board/board7_2.qml:14
 msgctxt "board7_2|"
 msgid "The Lady and the Unicorn - XVe century"
-msgstr "Dáma a jednorožec - XVe century"
+msgstr "Dáma a jednorožec - 15. století"
 
 #: activities/babyshapes/resource/board/board7_3.qml:14
 msgctxt "board7_3|"
@@ -12619,7 +12619,7 @@ msgstr "Estonsko"
 #: activities/geography/resource/board/board6_0.qml:147
 msgctxt "board6_0|"
 msgid "Czechia"
-msgstr "Česká Republika"
+msgstr "Česko"
 
 #: activities/geography/resource/board/board6_0.qml:154
 msgctxt "board6_0|"
@@ -13864,11 +13864,13 @@ msgid ""
 "Drag and Drop one top piece at a time, from one tower to another, to "
 "reproduce the tower on the right in the empty area."
 msgstr ""
+"Táhni a pusť vždy jen jeden horní dílek, který přesuneš z jedné věže na "
+"jinou tak, abys znovu postavil tu věž vpravo na jiném prázdném místě."
 
 #: activities/hanoi/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "Concept taken from EPI games."
-msgstr ""
+msgstr "Koncept je převzatý z EPI her."
 
 #. Activity title
 #: activities/hanoi_real/ActivityInfo.qml:15
@@ -13891,6 +13893,10 @@ msgid ""
 "    only one disc may be moved at a time\n"
 "    no disc may be placed atop a smaller disc\n"
 msgstr ""
+"Cílem hry je přesunout celou haldu na jiný trn při zachování následujících "
+"pravidel:\n"
+"    v jednu chvíli je možné přesunout pouze jeden kroužek\n"
+"    žádný kroužek nemůže být položen nad jiný menší\n"
 
 #. Help manual
 #: activities/hanoi_real/ActivityInfo.qml:27
@@ -13899,6 +13905,8 @@ msgid ""
 "Drag and drop the top pieces only from one peg to another, to reproduce the "
 "initial left side tower on the right peg."
 msgstr ""
+"Táhni a pusť vrchní dílky pouze z jednoho trnu na druhý tak, abys znovu "
+"postavil úvodní věž zleva na pravém trnu."
 
 #: activities/hanoi_real/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
@@ -13912,18 +13920,25 @@ msgid ""
 "inspired by it. (source Wikipedia: https://en.wikipedia.org/wiki/"
 "Tower_of_hanoi)"
 msgstr ""
+"Tento hlavolam vynalezl francouzský matematik Édouard Lucas v roce 1883. "
+"Existuje legenda o Mandiru (hinduistickém chrámu), jehož kněží byli trvale "
+"zaměstnáni přesunem 64 kroužků podle pravidel hlavolamu Hanojská věž. Podle "
+"této legendy by po dokončení této práce kněží měl nastat konec světa. Tento "
+"hlavolam je proto také znám jako hlavolam Brahmova věž. Není jasné, zda tuto "
+"Legendu Lucas vymyslel nebo jí byl inspirován. (zdroj Wikipedia: https://en."
+"wikipedia.org/wiki/Tower_of_hanoi)"
 
 #: activities/hanoi_real/HanoiReal.qml:75
 msgctxt "HanoiReal|"
 msgid "Move the entire stack to the right peg, one disc at a time."
-msgstr ""
+msgstr "Přesuň celou haldu po jednom disku na trn vpravo."
 
 #: activities/hanoi_real/HanoiReal.qml:76
 msgctxt "HanoiReal|"
 msgid ""
 "Build the same tower in the empty area as the one you see on the right-hand "
 "side"
-msgstr ""
+msgstr "Postav stejnou věž na prázdném místě, které vidíš napravo"
 
 #. Activity title
 #: activities/hexagon/ActivityInfo.qml:15
@@ -14421,6 +14436,10 @@ msgid ""
 "every planet the acceleration will differ and as the spaceship comes closer "
 "and closer to the planet the acceleration increases."
 msgstr ""
+"Zrychlení způsobené gravitací působící na vesmírnou loď je přímo úměrné "
+"hmotě planety a nepřímo úměrné čtverci vzdálenosti od středu planety. Takto "
+"se s každou planetou zrychlení liší a vesmírná loď se přibližuje blíže a "
+"blíže k planetě tak, jak se zrychlení zvyšuje."
 
 #: activities/land_safe/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
