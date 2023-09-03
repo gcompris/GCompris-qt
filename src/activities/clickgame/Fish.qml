@@ -57,7 +57,7 @@ AnimatedSprite {
             ySpeed *= -1;
             y = minY;
         }
-        if(Activity.currentLevel > 0) {
+        if(Activity.items.currentLevel > 0) {
             fish.y += fish.ySpeed;
         }
         fish.x += fish.xSpeed

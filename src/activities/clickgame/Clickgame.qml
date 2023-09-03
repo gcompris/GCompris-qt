@@ -47,6 +47,7 @@ ActivityBase {
             id: items
             property alias score: score
             property alias killedFishes: score.currentSubLevel
+            property int currentLevel: activity.currentLevel
         }
 
         Timer {
@@ -83,6 +84,7 @@ ActivityBase {
 
         Bar {
             id: bar
+            level: items.currentLevel + 1
             content: BarEnumContent { value: help | home | level }
             onHelpClicked: {
                 displayDialog(dialogHelpLeftRight)

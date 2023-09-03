@@ -12,6 +12,7 @@
 .pragma library
 .import QtQuick 2.12 as Quick
 .import GCompris 1.0 as GCompris
+.import "qrc:/gcompris/src/core/core.js" as Core
 
 var fishes = [
             {
@@ -205,7 +206,6 @@ var levelProperty = [
             }
         ]
 var currentImageId = 0
-var currentLevel = 0
 var items
 var activity
 var background
@@ -224,7 +224,7 @@ function start(activity_, background_, bar_, bonus_, items_) {
     bar = bar_
     bonus = bonus_
     items = items_
-    currentLevel = 0
+    items.currentLevel = Core.getInitialLevel(levelProperty.length);
     isActivityStopped = false
     initLevel()
     items.killedFishes = 0
@@ -240,30 +240,23 @@ function initLevel() {
         return;
 
     destroyFishes();
-    bar.level = currentLevel + 1
     background.source = "qrc:/gcompris/src/activities/clickgame/resource/sea" +
-            bar.level + ".webp"
-    var nbFish = levelProperty[currentLevel].nbFish
+            (items.currentLevel + 1) + ".webp"
+    var nbFish = levelProperty[items.currentLevel].nbFish
     createdFishes = new Array(nbFish)
     for(var i = 0;  i < nbFish; ++i) {
-         createdFishes[i] = createFish(levelProperty[currentLevel].minDuration)
+         createdFishes[i] = createFish(levelProperty[items.currentLevel].minDuration)
     }
     items.score.numberOfSubLevels = nbFish
 }
 
 function nextLevel() {
-    if(levelProperty.length <= ++currentLevel) {
-        currentLevel = 0
-    }
-
+    items.currentLevel = Core.getNextLevel(items.currentLevel, levelProperty.length);
     initLevel();
 }
 
 function previousLevel() {
-    if(--currentLevel < 0) {
-        currentLevel = levelProperty.length - 1
-    }
-
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, levelProperty.length);
     initLevel();
 }
 
