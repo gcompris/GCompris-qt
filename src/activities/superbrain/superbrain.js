@@ -10,9 +10,8 @@
  */
 .pragma library
 .import QtQuick 2.12 as Quick
-.import GCompris 1.0 as GCompris
+.import "qrc:/gcompris/src/core/core.js" as Core
 
-var currentLevel = 0;
 var maxLevel = 8;
 var currentSubLevel = 0;
 var maxSubLevel = 6;
@@ -64,7 +63,7 @@ var STATUS_CORRECT = 2;
 
 function start(items_) {
     items = items_;
-    currentLevel = 0;
+    items.currentLevel = Core.getInitialLevel(maxLevel);
     currentSubLevel = 0;
     initLevel();
 }
@@ -75,23 +74,22 @@ function stop() {
 function initLevel() {
     if (currentSubLevel == 0) {
         // init level
-        items.bar.level = currentLevel + 1;
     }
 
     // init sublevel
-    ackColors = new Array(levels[currentLevel].numberOfPieces);
+    ackColors = new Array(levels[items.currentLevel].numberOfPieces);
     items.score.numberOfSubLevels = maxSubLevel;
     items.score.currentSubLevel = currentSubLevel + 1;
     var selectedColors = new Array(maxColors);
-    solution = new Array(levels[currentLevel].numberOfPieces);
+    solution = new Array(levels[items.currentLevel].numberOfPieces);
     for (var i = 0; i < maxColors; ++i)
         selectedColors[i] = false;
     // generate solution:
-    for(var i = 0; i < levels[currentLevel].numberOfPieces; ++i) {
+    for(var i = 0; i < levels[items.currentLevel].numberOfPieces; ++i) {
         var j;
         do
-            j = Math.floor(Math.random() * levels[currentLevel].numberOfColors);
-        while (levels[currentLevel].uniqueColors && selectedColors[j]);
+            j = Math.floor(Math.random() * levels[items.currentLevel].numberOfColors);
+        while (levels[items.currentLevel].uniqueColors && selectedColors[j]);
 
         solution[i] = j;
         selectedColors[j] = true;
@@ -101,7 +99,7 @@ function initLevel() {
     items.colorsRepeater.model.clear();
     items.currentRepeater.model = new Array();
     currentIndeces = new Array();
-    for (var i = 0; i < levels[currentLevel].numberOfColors; ++i) {
+    for (var i = 0; i < levels[items.currentLevel].numberOfColors; ++i) {
         currentIndeces[i] = i;
         items.colorsRepeater.model.append({"itemIndex": i});
     }
@@ -114,7 +112,7 @@ function initLevel() {
 function appendGuessRow()
 {
     var guessRow = new Array();
-    for (var i = 0; i < levels[currentLevel].numberOfPieces; ++i) {
+    for (var i = 0; i < levels[items.currentLevel].numberOfPieces; ++i) {
         var col =
         guessRow.push({
                           index: i,
@@ -149,13 +147,13 @@ function checkGuess()
     var correctCount = 0;
     var misplacedCount = 0;
     // check for exact matches first:
-    for (var i = 0; i < levels[currentLevel].numberOfPieces; i++) {
+    for (var i = 0; i < levels[items.currentLevel].numberOfPieces; i++) {
         var guessIndex = obj.guess.get(i).colIndex;
         var newStatus;
         if (solution[i] == guessIndex) {
             // correct
             remainingIndeces.splice(remainingIndeces.indexOf(guessIndex), 1);
-            if (levels[currentLevel].help)
+            if (levels[items.currentLevel].help)
                 obj.guess.setProperty(i, "status", STATUS_CORRECT);
             correctCount++;
         }
@@ -165,7 +163,7 @@ function checkGuess()
         items.bonus.good("smiley");
     }
 
-    for (var i = 0; i < levels[currentLevel].numberOfPieces; i++) {
+    for (var i = 0; i < levels[items.currentLevel].numberOfPieces; i++) {
         if (obj.guess.get(i).status == STATUS_CORRECT)
             continue;
         var guessIndex = obj.guess.get(i).colIndex;
@@ -174,7 +172,7 @@ function checkGuess()
                 remainingIndeces.indexOf(guessIndex) != -1) {
             // misplaced
             remainingIndeces.splice(remainingIndeces.indexOf(guessIndex), 1);
-            if (levels[currentLevel].help)
+            if (levels[items.currentLevel].help)
                 obj.guess.setProperty(i, "status", STATUS_MISPLACED);
             misplacedCount++;
         }
@@ -185,25 +183,22 @@ function checkGuess()
 }
 
 function nextLevel() {
-    if(maxLevel <= ++currentLevel ) {
-        currentLevel = 0;
-    }
+    items.currentLevel = Core.getNextLevel(items.currentLevel, maxLevel);
     currentSubLevel = 0;
     initLevel();
 }
 
 function previousLevel() {
-    if(--currentLevel < 0) {
-        currentLevel = maxLevel - 1
-    }
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, maxLevel);
     currentSubLevel = 0;
     initLevel();
 }
 
 function nextSubLevel() {
-    if( ++currentSubLevel >= maxSubLevel) {
-        currentSubLevel = 0
-        nextLevel()
+    if(++currentSubLevel >= maxSubLevel) {
+        nextLevel();
     }
-    initLevel();
+    else {
+        initLevel();
+    }
 }
