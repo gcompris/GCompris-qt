@@ -10,20 +10,23 @@
  */
 .pragma library
 .import QtQuick 2.12 as Quick
+.import "qrc:/gcompris/src/core/core.js" as Core
+
 var url = "qrc:/gcompris/src/activities/target/resource/"
 
 var levels
-var currentLevel = 0
 var numberOfLevel
 var items
 
 function start(items_) {
     items = items_
-    currentLevel = 0
     levels = items.levels
     numberOfLevel = levels.length
     items.currentSubLevel = 0
     items.numberOfSubLevel = 5
+
+    items.currentLevel = Core.getInitialLevel(numberOfLevel);
+
     initLevel()
 }
 
@@ -31,15 +34,14 @@ function stop() {
 }
 
 function initLevel() {
-    items.bar.level = currentLevel + 1
     items.targetModel.clear()
     items.arrowFlying = false
-    for(var i = levels[currentLevel].length - 1;  i >= 0 ; --i) {
-        items.targetModel.append(levels[currentLevel][i])
+    for(var i = levels[items.currentLevel].length - 1;  i >= 0 ; --i) {
+        items.targetModel.append(levels[items.currentLevel][i])
     }
     // Reset the arrows first
     items.nbArrow = 0
-    items.nbArrow = Math.min(currentLevel + 3, 6)
+    items.nbArrow = Math.min(items.currentLevel + 3, 6)
     items.targetItem.start()
     items.userEntry.text = ""
 }
@@ -53,18 +55,14 @@ function nextSubLevel() {
 }
 
 function nextLevel() {
-    items.currentSubLevel = 0
-    if(numberOfLevel <= ++currentLevel ) {
-        currentLevel = 0
-    }
+    items.currentSubLevel = 0;
+    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }
 
 function previousLevel() {
-    items.currentSubLevel = 0
-    if(--currentLevel < 0) {
-        currentLevel = numberOfLevel - 1
-    }
+    items.currentSubLevel = 0;
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }
 
