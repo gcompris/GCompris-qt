@@ -10,13 +10,13 @@
  */
 .pragma library
 .import QtQuick 2.12 as Quick
+.import "qrc:/gcompris/src/core/core.js" as Core
 
-var currentLevel = 0
 var items
 
 function start(items_) {
     items = items_
-    currentLevel = 0
+    items.currentLevel = Core.getInitialLevel(items.numberOfLevel);
     initLevel()
 }
 
@@ -24,20 +24,15 @@ function stop() {
 }
 
 function initLevel() {
-    items.bar.level = currentLevel + 1
 }
 
 function nextLevel() {
-    if(items.numberOfLevel <= ++currentLevel ) {
-        currentLevel = 0
-    }
+    items.currentLevel = Core.getNextLevel(items.currentLevel, items.numberOfLevel);
     initLevel();
 }
 
 function previousLevel() {
-    if(--currentLevel < 0) {
-        currentLevel = items.numberOfLevel - 1
-    }
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, items.numberOfLevel);
     initLevel();
 }
 
