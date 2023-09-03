@@ -55,7 +55,7 @@ ActivityBase {
             property bool gameDone
             property int counter
             property int playSecond
-            property alias bar: bar
+            property int currentLevel: activity.currentLevel
             property alias bonus: bonus
         }
 
@@ -209,6 +209,7 @@ ActivityBase {
 
         Bar {
             id: bar
+            level: items.currentLevel + 1
             content: BarEnumContent { value: (twoPlayer ? (help | home | reload) : (help | home | level | reload))}
             onHelpClicked: {
                 displayDialog(dialogHelp)

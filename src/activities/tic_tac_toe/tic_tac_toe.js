@@ -9,9 +9,9 @@
  */
 .pragma library
 .import QtQuick 2.12 as Quick
+.import "qrc:/gcompris/src/core/core.js" as Core
 
-var currentLevel = 0
-var numberOfLevel = 6
+var numberOfLevel = 5
 var items
 
 var url = "qrc:/gcompris/src/activities/tic_tac_toe/resource/"
@@ -27,7 +27,7 @@ var stopper     //For stopping game when doing reset
 
 function start(items_, twoPlayer_) {
     items = items_
-    currentLevel = 1
+    items.currentLevel = Core.getInitialLevel(numberOfLevel);
     currentPlayer = 1
     twoPlayer = twoPlayer_
     items.playSecond = 0
@@ -39,7 +39,6 @@ function stop() {
 }
 
 function initLevel() {
-    items.bar.level = currentLevel
     items.counter = 0
     items.gameDone = false
     items.pieces.clear()
@@ -59,16 +58,12 @@ function initLevel() {
 }
 
 function nextLevel() {
-    if(numberOfLevel <= ++currentLevel) {
-        currentLevel = 1
-    }
+    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
     reset();
 }
 
 function previousLevel() {
-    if(--currentLevel < 1) {
-        currentLevel = numberOfLevel - 1
-    }
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
     reset();
 }
 
@@ -86,7 +81,7 @@ function reset() {
 }
 
 function stopAnimations() {
-    items.magnify.stop()
+    items.magnify.stop();
     items.player1score.endTurn();
     items.player2score.endTurn();
 }
@@ -189,7 +184,7 @@ function getPieceState(col, row) {
     return items.pieces.get(row * items.columns + col).stateTemp
 }
 
-/* setmove() decides the move which is to be played by computer. It decides according to the current level of player:
+/* setMove() decides the move which is to be played by computer. It decides according to the current level of player:
  * At level 1 -> No if statements are parsed, and in the end, a random empty location is returned
  * At level 2 -> Only first 'if' statement is parsed, evaluateBoard(computerState) is called which checks if computer can 
  *               win in this turn, if there is an empty location in which computer can get three consecutive marks, then
@@ -204,29 +199,32 @@ function getPieceState(col, row) {
  * At level 5 -> Along with evaluateBoard(computerState) and evaluateBoard(playerState), applyLogic(playerState) is called 
  *               which counters all the possibilities of double trick. Hence at level 5, player can not win, it will either
  *               be a draw or the player will lose.
- * setmove() returns the position where computer has to play its turn
+ * setMove() returns the position where computer has to play its turn
 */
-function setmove() {
+function setMove() {
     //Assigning States -> Which state "1" or "2" is used for identifying player and computer  
     var playerState = items.playSecond ? "2" : "1"
     var computerState = items.playSecond ? "1" : "2"
 
-    if (currentLevel > 1) {
+    if (items.currentLevel > 0) {
         var value = evaluateBoard(computerState)
-        if (value != -1){
-            return value}
-    }
-
-    if (currentLevel > 2) {
-        var value = evaluateBoard(playerState)
-        if (value != -1){
-            return value}
-    }
-
-    if (currentLevel > 4) {
-        var value = applyLogic(playerState)
-        if (value != -1)
+        if (value != -1) {
             return value
+        }
+    }
+
+    if (items.currentLevel > 1) {
+        var value = evaluateBoard(playerState)
+        if (value != -1) {
+            return value
+        }
+    }
+
+    if (items.currentLevel > 4) {
+        var value = applyLogic(playerState)
+        if (value != -1) {
+            return value
+        }
     }
 
     var found = false
@@ -292,19 +290,19 @@ function giveNearest() {
     var currentCol = parseInt(currentPiece % items.columns)
     var temp = []
 
-    if ( currentRow + 1 < 3 ) {
+    if (currentRow + 1 < 3) {
         if(getPieceState(currentCol, currentRow + 1) == "invisible")
             temp.push((currentRow + 1) * items.columns + currentCol)
     }
-    if ( currentRow - 1 > 0 ) {
+    if (currentRow - 1 > 0) {
         if(getPieceState(currentCol, currentRow - 1) == "invisible")
             temp.push((currentRow - 1) * items.columns + currentCol)
     }
-    if ( currentCol + 1 < 3 ) {
+    if (currentCol + 1 < 3) {
         if(getPieceState(currentCol + 1, currentRow) == "invisible")
             temp.push(currentRow * items.columns + currentCol + 1)
     }
-    if ( currentCol - 1 > 0 ) {
+    if (currentCol - 1 > 0) {
         if(getPieceState(currentCol - 1, currentRow) == "invisible")
             temp.push(currentRow * items.columns + currentCol - 1)
     }
@@ -318,7 +316,7 @@ function giveNearest() {
 
 //Starts the process of computer turn
 function doMove() {
-    var pos = setmove ()
+    var pos = setMove()
     handleCreate(items.repeater.itemAt(pos))
 }
 
@@ -408,8 +406,8 @@ function checkGameWon(currentPieceRow, currentPieceColumn) {
         if(getPieceState(col, currentPieceRow) === currentPlayer) {
             if(++sameColor == 3) {
                 items.repeater.itemAt(currentPieceRow * items.columns + col).visible = true
-                items.repeater.itemAt(currentPieceRow * items.columns + col -1).visible = true
-                items.repeater.itemAt(currentPieceRow * items.columns + col -2).visible = true
+                items.repeater.itemAt(currentPieceRow * items.columns + col - 1).visible = true
+                items.repeater.itemAt(currentPieceRow * items.columns + col - 2).visible = true
                 items.repeater.itemAt(currentPieceRow * items.columns + col).border.color = "#62db53"
                 items.repeater.itemAt(currentPieceRow * items.columns + col - 1).border.color = "#62db53"
                 items.repeater.itemAt(currentPieceRow * items.columns + col - 2).border.color = "#62db53"
@@ -430,8 +428,8 @@ function checkGameWon(currentPieceRow, currentPieceColumn) {
                 items.repeater.itemAt((row - 1) * items.columns + currentPieceColumn).visible = true
                 items.repeater.itemAt((row -2) * items.columns + currentPieceColumn).visible = true
                 items.repeater.itemAt(row * items.columns + currentPieceColumn).border.color = "#62db53"
-                items.repeater.itemAt((row -1) * items.columns + currentPieceColumn).border.color = "#62db53"
-                items.repeater.itemAt((row -2) * items.columns + currentPieceColumn).border.color = "#62db53"
+                items.repeater.itemAt((row - 1) * items.columns + currentPieceColumn).border.color = "#62db53"
+                items.repeater.itemAt((row - 2) * items.columns + currentPieceColumn).border.color = "#62db53"
                 return true
             }
         } 
