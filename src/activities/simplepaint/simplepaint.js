@@ -10,6 +10,7 @@
  */
 .pragma library
 .import QtQuick 2.12 as Quick
+.import "qrc:/gcompris/src/core/core.js" as Core
 
 var url = "qrc:/gcompris/src/activities/simplepaint/resource/"
 
@@ -120,15 +121,14 @@ var items
 var nbx
 var nby
 
-var currentLevel = 0
 var numberOfLevel = backgrounds.length
 
 var background
 
 function start(items_, _background) {
-    background=_background
+    background = _background
     items = items_
-    currentLevel = 0
+    Core.getInitialLevel(numberOfLevel);
     initLevel()
 }
 
@@ -136,12 +136,11 @@ function stop() {
 }
 
 function initLevel() {
-    items.bar.level = currentLevel + 1
     items.paintModel.clear()
     items.current_color = 1
     items.selectedColor = items.colors[1]
     items.colorSelector.positionViewAtBeginning()
-    nbx = 20 + currentLevel
+    nbx = 20 + items.currentLevel
     nby = Math.floor(nbx * (items.gridLayout.height / items.gridLayout.width))
     background.refreshCursor()
 
@@ -156,16 +155,12 @@ function initLevel() {
 }
 
 function nextLevel() {
-    if(numberOfLevel <= ++currentLevel ) {
-        currentLevel = 0
-    }
+    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }
 
 function previousLevel() {
-    if(--currentLevel < 0) {
-        currentLevel = numberOfLevel - 1
-    }
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }
 

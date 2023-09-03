@@ -149,10 +149,10 @@ ActivityBase {
 
         //Cursor to navigate in cells
         PaintCursor {
-            id:cursor;
+            id: cursor
             visible: items.keyboardControls && !isColorTab
             initialX: colorSelector.width + 20 * ApplicationInfo.ratio
-            z:1
+            z: 1
             ix: 0
             iy: 0
             nbx: 20
@@ -163,14 +163,14 @@ ActivityBase {
         QtObject {
             id: items
             property alias background: background
-            property alias bar: bar
+            property int currentLevel: activity.currentLevel
             property alias paintModel: paintModel
             property alias colorSelector: colorSelector
             property alias gridLayout: gridLayout
             property var colors: bar.level < 10 ? Activity.colorsSimple : Activity.colorsAdvanced
             property int current_color: 1
             property string selectedColor: colors[current_color]
-            property string backgroundImg: Activity.backgrounds[bar.level - 1]
+            property string backgroundImg: Activity.backgrounds[items.currentLevel]
             property bool keyboardControls: false
         }
 
@@ -402,6 +402,7 @@ ActivityBase {
 
         Bar {
             id: bar
+            level: items.currentLevel + 1
             content: BarEnumContent { value: help | home | reload | level }
             onHelpClicked: {
                 displayDialog(dialogHelpLeftRight)
