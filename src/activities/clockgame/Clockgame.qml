@@ -43,7 +43,7 @@ ActivityBase {
         QtObject {
             id: items
             property alias background: background
-            property alias bar: bar
+            property int currentLevel: activity.currentLevel
             property alias bonus: bonus
             property int targetH: 12
             property int targetM: 0
@@ -505,6 +505,7 @@ ActivityBase {
 
         Bar {
             id: bar
+            level: items.currentLevel + 1
             content: items.noHint ? withoutHint : withHint
 
             property BarEnumContent withHint: BarEnumContent { value: help | home | level | hint | activityConfig }

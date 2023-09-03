@@ -8,7 +8,9 @@
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
-var currentLevel = 0;
+
+.import "qrc:/gcompris/src/core/core.js" as Core
+
 var numberOfLevel = 10;
 var items;
 var selectedArrow;
@@ -19,8 +21,8 @@ var targetHour;
 
 function start(items_) {
     items = items_;
-    currentLevel = 0;
     numberOfLevel = items.levels.length;
+    items.currentLevel = Core.getInitialLevel(numberOfLevel);
     items.currentTry = 0;
     pastQuestionsH = [];
     pastQuestionsM = [];
@@ -31,20 +33,19 @@ function start(items_) {
 function stop() {}
 
 function initLevel() {
-    items.bar.level = currentLevel + 1;
 
-    items.numberOfTry = items.levels[currentLevel].numberOfSubLevels;
+    items.numberOfTry = items.levels[items.currentLevel].numberOfSubLevels;
 
     differentTargetH();
     differentCurrentH();
 
-    items.minutesHandVisible = items.levels[currentLevel].displayMinutesHand;
+    items.minutesHandVisible = items.levels[items.currentLevel].displayMinutesHand;
     if(!items.minutesHandVisible) {
         items.currentM = 0;
         items.targetM = 0;
     }
-    else if(items.levels[currentLevel].fixedMinutes !== undefined) {
-        items.targetM = items.levels[currentLevel].fixedMinutes;
+    else if(items.levels[items.currentLevel].fixedMinutes !== undefined) {
+        items.targetM = items.levels[items.currentLevel].fixedMinutes;
         differentCurrentM();
     }
     else {
@@ -52,13 +53,13 @@ function initLevel() {
         differentCurrentM();
     }
 
-    items.secondsHandVisible = items.levels[currentLevel].displaySecondsHand;
+    items.secondsHandVisible = items.levels[items.currentLevel].displaySecondsHand;
     if(!items.secondsHandVisible) {
         items.currentS = 0;
         items.targetS = 0;
     }
-    else if(items.levels[currentLevel].fixedSeconds !== undefined) {
-        items.targetS = items.levels[currentLevel].fixedSeconds;
+    else if(items.levels[items.currentLevel].fixedSeconds !== undefined) {
+        items.targetS = items.levels[items.currentLevel].fixedSeconds;
         differentCurrentS();
     }
     else {
@@ -66,36 +67,36 @@ function initLevel() {
         differentCurrentS();
     }
 
-    if(items.levels[currentLevel].zonesVisible !== undefined) {
-        items.zonesVisible = items.levels[currentLevel].zonesVisible;
+    if(items.levels[items.currentLevel].zonesVisible !== undefined) {
+        items.zonesVisible = items.levels[items.currentLevel].zonesVisible;
     }
     else {
         items.zonesVisible = true;
     }
 
-    if(items.levels[currentLevel].hoursMarksVisible !== undefined) {
-        items.hoursMarksVisible = items.levels[currentLevel].hoursMarksVisible;
+    if(items.levels[items.currentLevel].hoursMarksVisible !== undefined) {
+        items.hoursMarksVisible = items.levels[items.currentLevel].hoursMarksVisible;
     }
     else {
         items.hoursMarksVisible = true;
     }
 
-    if(items.levels[currentLevel].hoursVisible !== undefined) {
-        items.hoursVisible = items.levels[currentLevel].hoursVisible;
+    if(items.levels[items.currentLevel].hoursVisible !== undefined) {
+        items.hoursVisible = items.levels[items.currentLevel].hoursVisible;
     }
     else {
         items.hoursVisible = true;
     }
 
-    if(items.levels[currentLevel].minutesVisible !== undefined) {
-        items.minutesVisible = items.levels[currentLevel].minutesVisible;
+    if(items.levels[items.currentLevel].minutesVisible !== undefined) {
+        items.minutesVisible = items.levels[items.currentLevel].minutesVisible;
     }
     else {
         items.minutesVisible = true;
     }
 
-    if(items.levels[currentLevel].noHint !== undefined) {
-        items.noHint = items.levels[currentLevel].noHint;
+    if(items.levels[items.currentLevel].noHint !== undefined) {
+        items.noHint = items.levels[items.currentLevel].noHint;
     }
     else {
         items.noHint = false;
@@ -174,9 +175,7 @@ function checkAnswer() {
 }
 
 function nextLevel() {
-    if (numberOfLevel <= ++currentLevel) {
-        currentLevel = 0;
-    }
+    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
     items.currentTry = 0;
     pastQuestionsH = [];
     pastQuestionsM = [];
@@ -185,9 +184,7 @@ function nextLevel() {
 }
 
 function previousLevel() {
-    if (--currentLevel < 0) {
-        currentLevel = numberOfLevel - 1;
-    }
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
     items.currentTry = 0;
     pastQuestionsH = [];
     pastQuestionsM = [];
