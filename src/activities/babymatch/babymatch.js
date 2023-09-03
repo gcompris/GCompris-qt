@@ -11,9 +11,9 @@
 .pragma library
 .import QtQuick 2.12 as Quick
 .import GCompris 1.0 as GCompris //for ApplicationInfo
+.import "qrc:/gcompris/src/core/core.js" as Core
 
 var useMultipleDataset;
-var currentLevel = 1;
 var currentSubLevel = 0;
 var numberOfLevel;
 var numberOfSubLevel;
@@ -36,7 +36,9 @@ function start(items_, imagesUrl_, soundsUrl_, boardsUrl_, levelCount_, answerGl
     numberOfLevel = useMultipleDataset ? items.levels.length : levelCount_;
     glowEnabledDefault = answerGlow_;
     displayDropCircle = displayDropCircle_;
-    currentLevel = 1;
+
+    items.currentLevel = Core.getInitialLevel(numberOfLevel);
+
     currentSubLevel = 0;
     numberOfSubLevel = 0;
     resetData();
@@ -63,11 +65,10 @@ function stop() {
 }
 
 function initLevel() {
-    items.bar.level = currentLevel;
     if(useMultipleDataset)
-        items.dataset.source = items.levels[currentLevel-1][currentSubLevel];
+        items.dataset.source = items.levels[items.currentLevel][currentSubLevel];
     else
-        items.dataset.source = boardsUrl + "board" + "/" + "board" + currentLevel + "_" + currentSubLevel + ".qml";
+        items.dataset.source = boardsUrl + "board" + "/" + "board" + (items.currentLevel+1) + "_" + currentSubLevel + ".qml";
     var levelData = items.dataset.item;
     resetData();
     items.availablePieces.view.currentDisplayedGroup = 0;
@@ -187,9 +188,7 @@ function hideInstructions() {
 }
 
 function nextSubLevel() {
-	if(numberOfSubLevel < ++currentSubLevel) {
-        currentSubLevel = 0;
-        numberOfSubLevel = 0;
+    if(numberOfSubLevel < ++currentSubLevel) {
         nextLevel();
     }
     else
@@ -199,18 +198,14 @@ function nextSubLevel() {
 function nextLevel() {
     currentSubLevel = 0;
     numberOfSubLevel = 0;
-    if(numberOfLevel < ++currentLevel) {
-        currentLevel = 1;
-    }
+    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }
 
 function previousLevel() {
     currentSubLevel = 0;
     numberOfSubLevel = 0;
-    if(--currentLevel < 1) {
-        currentLevel = numberOfLevel;
-    }
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }
 
