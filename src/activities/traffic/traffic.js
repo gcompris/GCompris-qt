@@ -11,8 +11,8 @@
 
 .pragma library
 .import QtQuick 2.12 as Quick
-.import GCompris 1.0 as GCompris
 .import QtQml 2.12 as Qml
+.import "qrc:/gcompris/src/core/core.js" as Core
 
 /* The format and the dataset for the traffic game in gcompris
  * is taken from
@@ -168,7 +168,6 @@ var truckList = [
   baseUrl + "truck4.svg"
 ];
 
-var currentLevel = 0;
 var currentSubLevel = 0;
 var level = null;
 var maxLevel = 13;
@@ -187,7 +186,7 @@ var isMoving = false;
 function start(items_, mode_) {
     items = items_;
     mode = mode_;
-    currentLevel = 0;
+    items.currentLevel = Core.getInitialLevel(maxLevel);
     currentSubLevel = 0;
     initLevel();
 }
@@ -367,7 +366,6 @@ function initLevel() {
     cleanupActiveCars();
     truckIndex = 0;
     carIndex = 0;
-    items.bar.level = currentLevel + 1;
     if (currentSubLevel == 0) {
         // initialize level
         items.score.numberOfSubLevels = maxSubLevel;
@@ -375,22 +373,18 @@ function initLevel() {
     // initialize sublevel
     haveWon = false;
     items.score.currentSubLevel = currentSubLevel + 1;
-    cars = dataList[(currentLevel * maxSubLevel) + currentSubLevel].split(",");
+    cars = dataList[(items.currentLevel * maxSubLevel) + currentSubLevel].split(",");
     drawJam();
 }
 
 function nextLevel() {
-    if(maxLevel <= ++currentLevel ) {
-        currentLevel = 0
-    }
+    items.currentLevel = Core.getNextLevel(items.currentLevel, maxLevel);
     currentSubLevel = 0;
     initLevel();
 }
 
 function previousLevel() {
-    if(--currentLevel < 0) {
-        currentLevel = maxLevel - 1
-    }
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, maxLevel);
     currentSubLevel = 0;
     initLevel();
 }
