@@ -14,7 +14,6 @@
 .import GCompris 1.0 as GCompris //for ApplicationInfo
 .import "qrc:/gcompris/src/core/core.js" as Core
 
-var currentLevel = 0
 var items
 var maxLevel
 
@@ -28,7 +27,6 @@ var words
 
 function start(items_) {
     items = items_
-    currentLevel = 0
     items.score.currentSubLevel = 0
     var locale = items.locale == "system" ? "$LOCALE" : items.locale
 
@@ -54,6 +52,7 @@ function start(items_) {
         items.wordlist.useDefault = false
     }
     maxLevel = items.wordlist.maxLevel;
+    items.currentLevel = Core.getInitialLevel(maxLevel);
     initLevel();
 }
 
@@ -62,14 +61,13 @@ function stop() {
 }
 
 function initLevel() {
-    items.bar.level = currentLevel + 1;
     items.score.currentSubLevel = 0
     items.wordDropTimer.stop();
     items.answerButtonsFlow.visible = false;
 
     // initialize level
-    level = items.wordlist.getLevelWordList(currentLevel + 1);
-    items.wordlist.initRandomWord(currentLevel + 1)
+    level = items.wordlist.getLevelWordList(items.currentLevel + 1);
+    items.wordlist.initRandomWord(items.currentLevel + 1)
     items.score.numberOfSubLevels = Math.min(10, Math.floor(level.words.length))
     initSubLevel();
 }
@@ -113,7 +111,6 @@ function retrySubLevel() {
     initSubLevel();
 }
 
-
 function nextSubLevel() {
     if(items.score.currentSubLevel >= items.score.numberOfSubLevels) {
         items.bonus.good("flower")
@@ -122,18 +119,13 @@ function nextSubLevel() {
     }
 }
 
-
 function nextLevel() {
-    if(maxLevel <= ++currentLevel) {
-        currentLevel = 0
-    }
+    items.currentLevel = Core.getNextLevel(items.currentLevel, maxLevel);
     initLevel();
 }
 
 function previousLevel() {
-    if(--currentLevel < 0) {
-        currentLevel = maxLevel - 1
-    }
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, maxLevel);
     initLevel();
 }
 
