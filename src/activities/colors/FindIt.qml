@@ -118,8 +118,10 @@ ActivityBase {
                 if(Activity.getCurrentAudioQuestion()) {
                     if(items.firstQuestion)
                         items.audioOk = activity.audioVoices.append(Activity.getCurrentAudioQuestion())
-                    else
+                    else {
+                        activity.audioVoices.clearQueue()
                         items.audioOk = activity.audioVoices.play(Activity.getCurrentAudioQuestion())
+                    }
                     items.firstQuestion = false
                 }
             }
