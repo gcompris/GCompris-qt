@@ -20,6 +20,8 @@ var currentQuestion
 
 var hasWon
 
+var tempModel = []
+
 function start(items_, dataset_, mode_) {
     if (mode_ === "Colors")
         Core.checkForVoices(items_.activityPage);
@@ -38,12 +40,15 @@ function stop() {
 
 function initLevel() {
     items.bar.level = currentLevel + 1
+    items.modelCopied = false
+    tempModel = []
     items.containerModel.clear()
     currentQuestion = 0
+    items.objectCount = dataset[currentLevel].length
     dataset[currentLevel] = Core.shuffle(dataset[currentLevel])
 
     for(var i = 0;  i < dataset[currentLevel].length; ++i) {
-        items.containerModel.append(dataset[currentLevel][i])
+        tempModel.push(dataset[currentLevel][i])
     }
 
     items.score.numberOfSubLevels = dataset[currentLevel].length
@@ -51,26 +56,26 @@ function initLevel() {
     // Shuffle again not to ask the question in the model order
     dataset[currentLevel] = Core.shuffle(dataset[currentLevel])
     hasWon = false
-    initQuestion()
+    items.initAnim.restart()
     items.objectSelected = false
 }
 
-function initQuestion() {
-    // We just set the opacity to 0, the questionItem will then grab
-    // the new question by itself
-    // Need to set opacity to 0.1 before in order to be sure it's changed and trigger the questionItem onOpacityChanged
-    items.questionItem.opacity = 0.1
-    items.questionItem.opacity = 0
+function tempModelToContainer() {
+    for(var i = 0;  i < tempModel.length; ++i) {
+        items.containerModel.append(tempModel[i])
+    }
+    items.modelCopied = true
 }
 
 function nextQuestion() {
     if(dataset[currentLevel].length <= currentQuestion + 1) {
+        items.fadeOutAnim.restart()
         items.bonus.good("flower")
         hasWon = true
     } else {
         currentQuestion++
         items.score.currentSubLevel++
-        initQuestion()
+        items.nextAnim.restart()
     }
 }
 

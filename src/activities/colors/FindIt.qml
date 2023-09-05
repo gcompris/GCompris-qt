@@ -2,8 +2,10 @@
  *
  * SPDX-FileCopyrightText: 2015 Bruno Coudoin <bruno.coudoin@gcompris.net>
  *
- * Original activity in the Gtk+ version of GCompris by
- * Pascal Georges (pascal.georges1@free.fr)
+ * Authors:
+ *   Pascal Georges <pascal.georges1@free.fr> (GTK+ version)
+ *   Bruno Coudoin <bruno.coudoin@gcompris.net> (Qt Quick port)
+ *   Timothée Giet <animtim@gmail.com> (refactoring and various improvements)
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
@@ -55,12 +57,18 @@ ActivityBase {
             property alias bar: bar
             property alias bonus: bonus
             property alias containerModel: containerModel
-            property alias questionItem: questionItem
+            property alias initAnim: initAnim
+            property alias nextAnim: nextAnim
+            property alias fadeOutAnim: fadeOutAnim
             // On startup we want to queue the first sound but not after
             property bool firstQuestion: true
             property bool audioOk: false
             property alias score: score
             property bool objectSelected: true
+            // we need to know the number of objects to calculate itemWidth before populating the container
+            property int objectCount: 1
+            // we need to copy tempModel to containerModel only once and only after all the rest is initialized
+            property bool modelCopied: false
         }
         onStart: {
             if((!ApplicationSettings.isAudioVoicesEnabled || !ApplicationSettings.isAudioEffectsEnabled) && activity.isMusicalActivity) {
@@ -89,14 +97,71 @@ ActivityBase {
         Keys.onTabPressed: if(repeatItem.visible) repeatItem.clicked();
 
         ListModel {
-              id: containerModel
+            id: containerModel
+        }
+
+        Rectangle {
+            id: questionItem
+            anchors.top: parent.top
+            anchors.topMargin: 5 * ApplicationInfo.ratio
+            anchors.horizontalCenter: parent.horizontalCenter
+            width: questionText.contentWidth + 20 * ApplicationInfo.ratio
+            height: Math.max(10 * ApplicationInfo.ratio, questionText.contentHeight + 5 * ApplicationInfo.ratio)
+            radius: 5 * ApplicationInfo.ratio
+            color: "#E2E2E2"
+            border.color: "#373737"
+            border.width: 2 * ApplicationInfo.ratio
+            opacity: 0.01
+
+            function initQuestion() {
+                questionText.text = Activity.getCurrentTextQuestion()
+                if(Activity.getCurrentAudioQuestion()) {
+                    if(items.firstQuestion)
+                        items.audioOk = activity.audioVoices.append(Activity.getCurrentAudioQuestion())
+                    else
+                        items.audioOk = activity.audioVoices.play(Activity.getCurrentAudioQuestion())
+                    items.firstQuestion = false
+                }
+            }
+
+            // initialization sequence for first question of first level
+            SequentialAnimation {
+                id: initAnim
+                ScriptAction { script: questionItem.initQuestion() }
+                PauseAnimation { duration: 50 }
+                ScriptAction { script: if(!items.modelCopied)
+                                            Activity.tempModelToContainer()
+                }
+                NumberAnimation { target: questionItem; property: "opacity"; to: 1; duration: 300 }
+            }
+
+            // fade-out anim only before bonus start
+            NumberAnimation { id: fadeOutAnim; target: questionItem; property: "opacity"; to: 0.01; duration: 300 }
+
+            // fade-out + init sequence after first question of a level
+            SequentialAnimation {
+                id: nextAnim
+                NumberAnimation { target: questionItem; property: "opacity"; to: 0.01; duration: 300 }
+                ScriptAction { script: initAnim.restart() }
+            }
+
+            GCText {
+                id: questionText
+                anchors.centerIn: parent
+                fontSize: largeSize
+                width: background.width * 0.9
+                horizontalAlignment: Text.AlignHCenter
+                wrapMode: Text.WordWrap
+                font.weight: Font.DemiBold
+                color: "#373737"
+            }
         }
 
         GridView {
             id: container
             model: containerModel
             anchors.top: questionItem.bottom
-            anchors.topMargin: score.height * 0.2
+            anchors.topMargin: 10 * ApplicationInfo.ratio
             anchors.bottom: score.top
             anchors.horizontalCenter: background.horizontalCenter
             width: background.width - score.width * 2
@@ -105,7 +170,7 @@ ActivityBase {
             cellHeight: itemWidth
             keyNavigationWraps: true
 
-            property int itemWidth: Core.fitItems(container.width, container.height, container.count)
+            property int itemWidth: Core.fitItems(container.width, container.height, items.objectCount)
 
             delegate: ColorItem {
                 audioVoices: activity.audioVoices
@@ -127,8 +192,8 @@ ActivityBase {
                 }
             }
             highlight: Rectangle {
-                width: container.cellWidth - container.spacing
-                height: container.cellHeight - container.spacing
+                width: container.cellWidth
+                height: container.cellHeight
                 color:  "#AAFFFFFF"
                 border.width: 3
                 border.color: "black"
@@ -137,48 +202,6 @@ ActivityBase {
                 Behavior on y { SpringAnimation { spring: 2; damping: 0.2 } }
             }
         }
-
-        GCText {
-            id: questionItem
-            anchors.horizontalCenter: parent.horizontalCenter
-            anchors.top: parent.top
-            anchors.topMargin: 10
-            fontSize: largeSize
-            width: parent.width * 0.9
-            horizontalAlignment: Text.AlignHCenter
-            wrapMode: Text.WordWrap
-            font.weight: Font.DemiBold
-            style: Text.Outline
-            styleColor: "black"
-            color: "white"
-
-            function initQuestion() {
-                text = Activity.getCurrentTextQuestion()
-                if(Activity.getCurrentAudioQuestion()) {
-                    if(items.firstQuestion)
-                        items.audioOk = activity.audioVoices.append(Activity.getCurrentAudioQuestion())
-                    else
-                        items.audioOk = activity.audioVoices.play(Activity.getCurrentAudioQuestion())
-                    items.firstQuestion = false
-                }
-                opacity = 1.0
-            }
-
-            onOpacityChanged: opacity == 0 ? initQuestion() : ""
-            Behavior on opacity { PropertyAnimation { duration: 500 } }
-        }
-
-        DropShadow {
-            anchors.fill: questionItem
-            cached: false
-            horizontalOffset: 3
-            verticalOffset: 3
-            radius: 8.0
-            samples: 16
-            color: "#80000000"
-            source: questionItem
-        }
-
 
         DialogHelp {
             id: dialogHelp

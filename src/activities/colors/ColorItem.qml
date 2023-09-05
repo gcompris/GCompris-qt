@@ -32,7 +32,6 @@ Image {
         if(question === Activity.getCurrentTextQuestion()) {
             particles.burst(40)
             animWin.start()
-            Activity.nextQuestion()
         } else {
             if(audioSrc && item.playAudioOnError) {
                 item.audioVoices.play(audioSrc)
@@ -71,7 +70,6 @@ Image {
     SequentialAnimation {
           id: animWin
           running: false
-          loops: 1
           NumberAnimation {
               target: item
               property: "rotation"
@@ -79,6 +77,7 @@ Image {
               duration: 600
               easing.type: Easing.InOutQuad
           }
+          ScriptAction { script: Activity.nextQuestion() }
           onRunningChanged: {
               if (running == false) {
                   items.objectSelected = false
