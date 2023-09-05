@@ -7,8 +7,9 @@
 
 .pragma library
 .import QtQuick 2.12 as Quick
+.import GCompris 1.0 as GCompris
+.import "qrc:/gcompris/src/core/core.js" as Core
 
-var currentLevel = 0
 var numberOfLevel
 var items
 
@@ -22,7 +23,7 @@ var subLevelData
 
 function start(items_) {
     items = items_
-    currentLevel = 0
+    items.currentLevel = Core.getInitialLevel(numberOfLevel)
     initLevel()
 }
 
@@ -30,14 +31,13 @@ function stop() {
 }
 
 function initLevel() {
-    items.bar.level = currentLevel + 1
     setUp()
 }
 
 function setUp() {
     var levelData = items.levels
     numberOfLevel = items.levels.length
-    subLevelData = levelData[currentLevel][items.currentSubLevel];
+    subLevelData = levelData[items.currentLevel][items.currentSubLevel];
     // use board levels
     if (!subLevelData["randomisedInputData"]) {
         items.totalBoys = subLevelData.totalBoys
@@ -45,7 +45,7 @@ function setUp() {
         items.totalCandies = subLevelData.totalCandies
 
         items.instruction.text = subLevelData.instruction
-        items.nbSubLevel = levelData[currentLevel].length
+        items.nbSubLevel = levelData[items.currentLevel].length
 
         items.background.currentCandies = items.totalGirls * subLevelData.placedInGirls +
                 items.totalBoys * subLevelData.placedInBoys
@@ -71,7 +71,7 @@ function setUp() {
         var sum = items.totalBoys + items.totalGirls
         // use sum * 6 as top margin (max 6 candies per rectangle)
         items.totalCandies = Math.floor(Math.random() * (5 * sum + 1)) + sum
-        items.nbSubLevel = levelData[currentLevel].length
+        items.nbSubLevel = levelData[items.currentLevel].length
         // stay within the max margin
         if (items.totalCandies > maxCandies)
             items.totalCandies = maxCandies
@@ -186,17 +186,13 @@ function nextSubLevel() {
 }
 
 function nextLevel() {
-    if(numberOfLevel <= ++currentLevel) {
-        currentLevel = 0
-    }
+    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
     items.currentSubLevel = 0;
     initLevel();
 }
 
 function previousLevel() {
-    if(--currentLevel < 0) {
-        currentLevel = numberOfLevel - 1
-    }
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
     items.currentSubLevel = 0;
     initLevel();
 }
