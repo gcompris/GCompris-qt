@@ -2441,13 +2441,13 @@ Copyright: 2011 Sylvain Dechy, Jérome Blanchard, Julie Jules, Chloé Tuvuku
 License: GPL-3.0-or-later
 
 Files: src/activities/instruments/resource/background.svg
+ src/activities/instruments/resource/accordion.svg
+ src/activities/instruments/resource/banjo.svg
+ src/activities/instruments/resource/bongo.svg
 Copyright: 2023 Timothée Giet
 License: CC-BY-SA-4.0
 
-Files: src/activities/instruments/resource/accordion.svg
- src/activities/instruments/resource/banjo.svg
- src/activities/instruments/resource/bongo.svg
- src/activities/instruments/resource/castanets.svg
+Files: src/activities/instruments/resource/castanets.svg
  src/activities/instruments/resource/cello.svg
  src/activities/instruments/resource/clarinet.svg
  src/activities/instruments/resource/cymbal.svg
