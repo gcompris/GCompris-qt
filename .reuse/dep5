@@ -2440,7 +2440,36 @@ Files: src/activities/instruments/resource/accordion.ogg
 Copyright: 2011 Sylvain Dechy, Jérome Blanchard, Julie Jules, Chloé Tuvuku
 License: GPL-3.0-or-later
 
-Files: src/activities/instruments/resource/*.svg
+Files: src/activities/instruments/resource/background.svg
+Copyright: 2023 Timothée Giet
+License: CC-BY-SA-4.0
+
+Files: src/activities/instruments/resource/accordion.svg
+ src/activities/instruments/resource/banjo.svg
+ src/activities/instruments/resource/bongo.svg
+ src/activities/instruments/resource/castanets.svg
+ src/activities/instruments/resource/cello.svg
+ src/activities/instruments/resource/clarinet.svg
+ src/activities/instruments/resource/cymbal.svg
+ src/activities/instruments/resource/drum_kit.svg
+ src/activities/instruments/resource/electric_guitar.svg
+ src/activities/instruments/resource/flute_traversiere.svg
+ src/activities/instruments/resource/guitar.svg
+ src/activities/instruments/resource/harmonica.svg
+ src/activities/instruments/resource/harp.svg
+ src/activities/instruments/resource/horn.svg
+ src/activities/instruments/resource/maracas.svg
+ src/activities/instruments/resource/organ.svg
+ src/activities/instruments/resource/piano.svg
+ src/activities/instruments/resource/saxophone.svg
+ src/activities/instruments/resource/snare_drum.svg
+ src/activities/instruments/resource/tambourine.svg
+ src/activities/instruments/resource/timpani.svg
+ src/activities/instruments/resource/triangle.svg
+ src/activities/instruments/resource/trombone.svg
+ src/activities/instruments/resource/trumpet.svg
+ src/activities/instruments/resource/tuba.svg
+ src/activities/instruments/resource/violin.svg
 Copyright: 2000-2008 Bruno Coudoin and others
 License: GPL-3.0-only
 
