@@ -5276,7 +5276,7 @@ msgctxt "colors|"
 msgid "Find the pink duck"
 msgstr "Nájdi ružovú kačku"
 
-#: activities/colors/FindIt.qml:235
+#: activities/colors/FindIt.qml:260
 msgctxt "FindIt|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -5285,12 +5285,12 @@ msgstr ""
 "Táto aktivita vyžaduje zvuk, takže bude prehrávať niektoré zvuky aj keď sú "
 "hlasové odozvy a efekty vypnuté v hlavných nastaveniach."
 
-#: activities/colors/FindIt.qml:236
+#: activities/colors/FindIt.qml:261
 msgctxt "FindIt|"
 msgid "Quit"
 msgstr "Koniec"
 
-#: activities/colors/FindIt.qml:237
+#: activities/colors/FindIt.qml:262
 msgctxt "FindIt|"
 msgid "Continue"
 msgstr "Pokračovať"

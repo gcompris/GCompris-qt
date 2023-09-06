@@ -6090,7 +6090,7 @@ msgctxt "colors|"
 msgid "Find the pink duck"
 msgstr "Descobrir o pato rosa"
 
-#: activities/colors/FindIt.qml:235
+#: activities/colors/FindIt.qml:260
 msgctxt "FindIt|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -6099,12 +6099,12 @@ msgstr ""
 "Esta actividade precisa de som, pelo que irá tocar alguns sons, mesmo se as "
 "vozes ou efeitos de áudio estão desactivados na configuração principal."
 
-#: activities/colors/FindIt.qml:236
+#: activities/colors/FindIt.qml:261
 msgctxt "FindIt|"
 msgid "Quit"
 msgstr "Sair"
 
-#: activities/colors/FindIt.qml:237
+#: activities/colors/FindIt.qml:262
 msgctxt "FindIt|"
 msgid "Continue"
 msgstr "Continuar"

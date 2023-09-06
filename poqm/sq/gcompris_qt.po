@@ -5354,7 +5354,7 @@ msgctxt "colors|"
 msgid "Find the pink duck"
 msgstr "Gjeni rosakun e trëndafiltë"
 
-#: activities/colors/FindIt.qml:235
+#: activities/colors/FindIt.qml:260
 msgctxt "FindIt|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -5363,12 +5363,12 @@ msgstr ""
 "Kjo veprimtari lyp tinguj. ndaj do të luajë ca tinguj, edhe nëse zërat ose "
 "efektet zanore janë çaktivizuar te formësimi kryesor."
 
-#: activities/colors/FindIt.qml:236
+#: activities/colors/FindIt.qml:261
 msgctxt "FindIt|"
 msgid "Quit"
 msgstr "Dilni"
 
-#: activities/colors/FindIt.qml:237
+#: activities/colors/FindIt.qml:262
 msgctxt "FindIt|"
 msgid "Continue"
 msgstr "Vazhdoni"

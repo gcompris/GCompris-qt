@@ -5294,7 +5294,7 @@ msgctxt "colors|"
 msgid "Find the pink duck"
 msgstr "Kav an houad roz"
 
-#: activities/colors/FindIt.qml:235
+#: activities/colors/FindIt.qml:260
 msgctxt "FindIt|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -5304,12 +5304,12 @@ msgstr ""
 "zoken ma n'eo ket bet dibabet kaout ar mouezhioù pe an efedoù-son er "
 "c'hefluniañ pennañ."
 
-#: activities/colors/FindIt.qml:236
+#: activities/colors/FindIt.qml:261
 msgctxt "FindIt|"
 msgid "Quit"
 msgstr "Mont kuit"
 
-#: activities/colors/FindIt.qml:237
+#: activities/colors/FindIt.qml:262
 msgctxt "FindIt|"
 msgid "Continue"
 msgstr "Kenderc'hel"

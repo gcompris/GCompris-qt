@@ -5355,7 +5355,7 @@ msgctxt "colors|"
 msgid "Find the pink duck"
 msgstr "Găsește rățușca roz"
 
-#: activities/colors/FindIt.qml:235
+#: activities/colors/FindIt.qml:260
 msgctxt "FindIt|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -5364,12 +5364,12 @@ msgstr ""
 "Această activitate necesită sunet, așa că va reda niște sunete chiar dacă "
 "vocile sau efectele audio sunt dezactivate în configurația principală."
 
-#: activities/colors/FindIt.qml:236
+#: activities/colors/FindIt.qml:261
 msgctxt "FindIt|"
 msgid "Quit"
 msgstr "Ieși"
 
-#: activities/colors/FindIt.qml:237
+#: activities/colors/FindIt.qml:262
 msgctxt "FindIt|"
 msgid "Continue"
 msgstr "Continuă"

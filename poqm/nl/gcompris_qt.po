@@ -5292,7 +5292,7 @@ msgctxt "colors|"
 msgid "Find the pink duck"
 msgstr "Zoek het roze eendje"
 
-#: activities/colors/FindIt.qml:235
+#: activities/colors/FindIt.qml:260
 msgctxt "FindIt|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -5301,12 +5301,12 @@ msgstr ""
 "Deze activiteit vereist geluid, dus zal het enig geluid laten horen zelfs "
 "als de stemmen of effecten zijn uitgeschakeld in de hoofdconfiguratie."
 
-#: activities/colors/FindIt.qml:236
+#: activities/colors/FindIt.qml:261
 msgctxt "FindIt|"
 msgid "Quit"
 msgstr "Afsluiten"
 
-#: activities/colors/FindIt.qml:237
+#: activities/colors/FindIt.qml:262
 msgctxt "FindIt|"
 msgid "Continue"
 msgstr "Doorgaan"
