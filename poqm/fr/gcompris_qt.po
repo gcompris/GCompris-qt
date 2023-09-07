@@ -8,8 +8,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2022-12-21 20:47+0100\n"
-"Last-Translator: charruau <echarruau@gmail.com>\n"
+"PO-Revision-Date: 2023-05-30 21:55+0200\n"
+"Last-Translator: Xavier BESNARD <xavier.besnard@neuf.fr>\n"
 "Language-Team: fr\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
@@ -12574,7 +12574,7 @@ msgstr "Maldives"
 #: activities/geography/resource/board/board12_0.qml:15
 msgctxt "board12_0|"
 msgid "Southeast Asia"
-msgstr "Afrique du Sud Est"
+msgstr "Asie du Sud Est"
 
 #: activities/geography/resource/board/board12_0.qml:24
 msgctxt "board12_0|"
