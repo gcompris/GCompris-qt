@@ -5236,7 +5236,7 @@ msgctxt "colors|"
 msgid "Find the pink duck"
 msgstr "Finn den rosa anda"
 
-#: activities/colors/FindIt.qml:235
+#: activities/colors/FindIt.qml:260
 msgctxt "FindIt|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -5245,12 +5245,12 @@ msgstr ""
 "Denne aktiviteten brukar lyd, og han vil derfor spela av lyd sjølv om tale "
 "og lydeffektar er slått av i innstillingane."
 
-#: activities/colors/FindIt.qml:236
+#: activities/colors/FindIt.qml:261
 msgctxt "FindIt|"
 msgid "Quit"
 msgstr "Avslutt"
 
-#: activities/colors/FindIt.qml:237
+#: activities/colors/FindIt.qml:262
 msgctxt "FindIt|"
 msgid "Continue"
 msgstr "Hald fram"

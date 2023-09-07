@@ -12652,7 +12652,7 @@ msgstr "Maldives"
 #: activities/geography/resource/board/board12_0.qml:15
 msgctxt "board12_0|"
 msgid "Southeast Asia"
-msgstr "Afrique du Sud Est"
+msgstr "Asie du Sud Est"
 
 #: activities/geography/resource/board/board12_0.qml:24
 msgctxt "board12_0|"
