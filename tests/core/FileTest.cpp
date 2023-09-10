@@ -63,7 +63,7 @@ void CoreFileTest::ReadWriteErrorsTest()
     QFETCH(QString, readError);
     QFETCH(QString, writeError);
 
-    const QString fileContent = QStringLiteral("this is going to test the class File in the core");
+    const QString fileContent = QLatin1String("this is going to test the class File in the core");
 
     File file;
     QSignalSpy spyError(&file, &File::error);
@@ -94,13 +94,13 @@ void CoreFileTest::ReadWriteTest()
     tempFile.close();
 
     File file;
-    const QString fileContent = QStringLiteral("this is going to test the class File in the core");
+    const QString fileContent = QLatin1String("this is going to test the class File in the core");
     // normal use case, file exists
     QVERIFY(file.write(fileContent, tempFilename));
     QCOMPARE(file.read(), fileContent);
 
     // append to the file
-    const QString appendedText = QStringLiteral("appended text.");
+    const QString appendedText = QLatin1String("appended text.");
     QVERIFY(file.append(appendedText, tempFilename));
     QCOMPARE(file.read(), fileContent+appendedText);
 }

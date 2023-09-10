@@ -240,7 +240,7 @@ void ApplicationInfo::setBox2DInstalled(const QQmlEngine &engine)
     bool box2dInstalled = false;
     const QStringList importPathList = engine.importPathList();
     for (const QString &folder: importPathList) {
-        if (QDir(folder).entryList().contains(QStringLiteral("Box2D.2.0"))) {
+        if (QDir(folder).entryList().contains(QLatin1String("Box2D.2.0"))) {
             if (QDir(folder + "/Box2D.2.0").entryList().contains("qmldir")) {
                 qDebug() << "Found box2d in " << folder;
                 box2dInstalled = true;
