@@ -211,7 +211,7 @@ msgstr "Fletxes: per a navegar"
 #: activities/money_cents/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Space or Enter: select an item"
-msgstr "Espai o Retorn: per a seleccionar"
+msgstr "«Espai» o «Retorn»: per a seleccionar"
 
 # Nota: https://ca.wikipedia.org/wiki/Corall_(color)
 #. Look at https://gcompris.net/wiki/Advanced_color_translation to see all the advanced colors Color #FF7F50
@@ -880,7 +880,7 @@ msgstr "Dígits: per a escriure la resposta"
 #: activities/algebra_plus/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Backspace: delete the last digit in your answer"
-msgstr "Retrocés o Suprimir: per a esborrar l'últim dígit de la resposta"
+msgstr "«Retrocés» o «Suprimir»: per a esborrar l'últim dígit de la resposta"
 
 #: activities/algebra_by/ActivityInfo.qml:28
 #: activities/algebra_div/ActivityInfo.qml:28
@@ -899,7 +899,7 @@ msgstr "Retrocés o Suprimir: per a esborrar l'últim dígit de la resposta"
 #: activities/roman_numerals/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Enter: validate your answer"
-msgstr "Retorn: per a validar la resposta"
+msgstr "«Retorn»: per a validar la resposta"
 
 #: activities/algebra_by/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -1304,7 +1304,7 @@ msgstr "Fletxa dreta: per a moure la fitxa cap a la dreta"
 #: activities/align4_2players/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Space or Down arrow: drop the token"
-msgstr "Espai o Fletxa avall: per a deixar anar la fitxa"
+msgstr "«Espai» o «Fletxa avall»: per a deixar anar la fitxa"
 
 #. Activity title
 #: activities/align4_2players/ActivityInfo.qml:15
@@ -2227,42 +2227,42 @@ msgstr "Fletxes: per a navegar pel text"
 #: activities/baby_wordprocessor/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Shift + Arrows: select a part of the text"
-msgstr "Majúscules + Fletxes: per a seleccionar una part del text"
+msgstr "«Majúscules+Fletxes»: per a seleccionar una part del text"
 
 #: activities/baby_wordprocessor/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Ctrl + A: select all the text"
-msgstr "Ctrl + A: per a seleccionar tot el text"
+msgstr "«Ctrl+A»: per a seleccionar tot el text"
 
 #: activities/baby_wordprocessor/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid "Ctrl + C: copy selected text"
-msgstr "Ctrl + C: per a copiar el text seleccionat"
+msgstr "«Ctrl+C»: per a copiar el text seleccionat"
 
 #: activities/baby_wordprocessor/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
 msgid "Ctrl + X: cut selected text"
-msgstr "Ctrl + X: per a retallar el text seleccionat"
+msgstr "«Ctrl+X»: per a retallar el text seleccionat"
 
 #: activities/baby_wordprocessor/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
 msgid "Ctrl + V: paste copied or cut text"
-msgstr "Ctrl + V: per a apegar el text copiat o retallat"
+msgstr "«Ctrl+V»: per a apegar el text copiat o retallat"
 
 #: activities/baby_wordprocessor/ActivityInfo.qml:32
 msgctxt "ActivityInfo|"
 msgid "Ctrl + D: delete selected text"
-msgstr "Ctrl + D: per a suprimir el text seleccionat"
+msgstr "«Ctrl+D»: per a suprimir el text seleccionat"
 
 #: activities/baby_wordprocessor/ActivityInfo.qml:33
 msgctxt "ActivityInfo|"
 msgid "Ctrl + Z: undo"
-msgstr "Ctrl + Z: per a desfer"
+msgstr "«Ctrl+Z»: per a desfer"
 
 #: activities/baby_wordprocessor/ActivityInfo.qml:34
 msgctxt "ActivityInfo|"
 msgid "Ctrl + Shift + Z: redo"
-msgstr "Ctrl + Majúscules + Z: per a refer"
+msgstr "«Ctrl+Majúscules+Z»: per a refer"
 
 #: activities/baby_wordprocessor/BabyWordprocessor.qml:91
 msgctxt "BabyWordprocessor|"
@@ -2568,7 +2568,7 @@ msgid ""
 msgstr ""
 "Podreu provar un nivell modificat fent clic damunt del botó «Prova» que hi "
 "ha en el costat de la vista de l'editor. Podreu tornar des del mode de prova "
-"fent clic damunt del botó Inici que hi ha en la barra o prement Esc en el "
+"fent clic damunt del botó Inici que hi ha en la barra o prement «Esc» en el "
 "teclat o el botó Arrere en el seu dispositiu mòbil."
 
 #: activities/balancebox/ActivityInfo.qml:41
@@ -2598,7 +2598,7 @@ msgid ""
 "press Escape on your keyboard or the back button on your mobile device."
 msgstr ""
 "Per a tornar a la configuració de l'activitat, feu clic damunt del botó "
-"Inici que hi ha en la barra, o premeu Esc en el teclat o el botó Arrere en "
+"Inici que hi ha en la barra, o premeu «Esc» en el teclat o el botó Arrere en "
 "el dispositiu mòbil."
 
 #: activities/balancebox/ActivityInfo.qml:44
@@ -2977,7 +2977,7 @@ msgstr ""
 #: activities/braille_fun/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "Space: open or close the braille chart"
-msgstr "Espai: per a obrir o tancar la taula de braille"
+msgstr "«Espai»: per a obrir o tancar la taula de braille"
 
 #: activities/braille_alphabets/braille_alphabets.js:48
 #: activities/braille_alphabets/braille_alphabets.js:58
@@ -3268,7 +3268,7 @@ msgstr "Fletxes: per a navegar a través de les respostes"
 #: activities/find_the_day/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Space or Enter: validate your answer"
-msgstr "Espai o Retorn: per a validar la resposta"
+msgstr "«Espai» o «Retorn»: per a validar la resposta"
 
 #: activities/calendar/Calendar.qml:309
 msgctxt "Calendar|"
@@ -5044,14 +5044,14 @@ msgstr ""
 #: activities/letter-in-word/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Space: select an item"
-msgstr "Espai: per a seleccionar un element"
+msgstr "«Espai»: per a seleccionar un element"
 
 #: activities/click_on_letter/ActivityInfo.qml:28
 #: activities/click_on_letter_up/ActivityInfo.qml:28
 #: activities/colors/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Tab: repeat the question"
-msgstr "Tabulació: per a repetir la pregunta"
+msgstr "«Tabulació»: per a repetir la pregunta"
 
 #. Activity title
 #: activities/click_on_letter_up/ActivityInfo.qml:15
@@ -5471,7 +5471,7 @@ msgstr "Escolteu el color i feu clic sobre l'ànec corresponent."
 #: activities/colors/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Space or Enter: select an answer"
-msgstr "Espai o Retorn: per a seleccionar una resposta"
+msgstr "«Espai» o «Retorn»: per a seleccionar una resposta"
 
 #: activities/colors/colors.js:13 activities/colors/colors.js:45
 #: activities/colors/colors.js:87
@@ -5592,7 +5592,7 @@ msgstr ""
 #: activities/comparator/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Up and Down arrows: select a pair of numbers in the list"
-msgstr "Fletxa amunt o avall: selecciona un parell de números de la llista"
+msgstr "«Fletxa amunt» o «avall»: selecciona un parell de números de la llista"
 
 #: activities/comparator/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
@@ -5602,12 +5602,12 @@ msgstr "Fletxa esquerra o dreta: selecciona un botó de símbol"
 #: activities/comparator/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
 msgid "Space: if a symbol button is selected, enter this symbol"
-msgstr "Espai: si s'ha seleccionat un botó de símbol, introduïx este símbol"
+msgstr "«Espai»: si s'ha seleccionat un botó de símbol, introduïx este símbol"
 
 #: activities/comparator/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
 msgid "Return: validate the answers"
-msgstr "Retorn: valida les respostes"
+msgstr "«Retorn»: valida les respostes"
 
 #: activities/comparator/ActivityInfo.qml:32
 msgctxt "ActivityInfo|"
@@ -5711,7 +5711,7 @@ msgstr "Fletxes: per a moure l'element seleccionat"
 #: activities/crane/ActivityInfo.qml:32
 msgctxt "ActivityInfo|"
 msgid "Space or Enter or Tab: select the next item"
-msgstr "Espai, Retorn o Tabulació: per a seleccionar l'element següent"
+msgstr "«Espai», «Retorn» o «Tabulació»: per a seleccionar l'element següent"
 
 # skip-rule: kct-box,t-sc-yes
 #. Translators: NOTE: Word list for crane activity. Translate this into a list of 15–25 simple 3-letter words separated by semi-colons. The words can only contain lowercase ASCII letters (a–z). Example: cat;dog;win;red;yes
@@ -6796,12 +6796,12 @@ msgstr ""
 #: activities/enumerate/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Up arrow: select next item"
-msgstr "Fletxa amunt: per a seleccionar un element"
+msgstr "«Fletxa amunt»: per a seleccionar un element"
 
 #: activities/enumerate/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Down arrow: select previous item"
-msgstr "Fletxa avall: per a seleccionar l'element anterior"
+msgstr "«Fletxa avall»: per a seleccionar l'element anterior"
 
 #: activities/enumerate/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
@@ -6814,7 +6814,7 @@ msgid ""
 "Enter: validate your answer (if the 'Validate answers' option is set to 'OK "
 "button')"
 msgstr ""
-"Retorn: per a validar la resposta (si l'opció «Valida les respostes» està "
+"«Retorn»: per a validar la resposta (si l'opció «Valida les respostes» està "
 "establida al botó «OK»)"
 
 #: activities/enumerate/resource/1/Data.qml:13
@@ -13945,7 +13945,7 @@ msgstr "Ves amb compte per a evitar els Troggles."
 #: activities/gnumch-primes/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
 msgid "Space: swallow the numbers"
-msgstr "Espai: per a menjar-se els números"
+msgstr "«Espai»: per a menjar-se els números"
 
 #: activities/gnumch-equality/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -14275,7 +14275,7 @@ msgid ""
 "Space: assign the selected class to the selected word and then select the "
 "next word"
 msgstr ""
-"Espai: assigna la classe seleccionada a la paraula seleccionada i després "
+"«Espai»: assigna la classe seleccionada a la paraula seleccionada i després "
 "selecciona la paraula següent"
 
 #: activities/grammar_analysis/ActivityInfo.qml:33
@@ -14694,7 +14694,7 @@ msgstr "Dígits: per a introduir un número"
 #: activities/guessnumber/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Backspace: erase a number"
-msgstr "Retrocés: per a esborrar un número"
+msgstr "«Retrocés»: per a esborrar un número"
 
 #: activities/guessnumber/guessnumber.js:62
 #: activities/guessnumber/guessnumber.js:66
@@ -15243,7 +15243,7 @@ msgstr "Feu clic en els instruments musicals correctes."
 #: activities/instruments/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Tab: repeat the instrument sound"
-msgstr "Tabulació: per a repetir el so de l'instrument"
+msgstr "«Tabulació»: per a repetir el so de l'instrument"
 
 #: activities/instruments/instruments.js:13
 #: activities/instruments/instruments.js:62
@@ -15443,7 +15443,7 @@ msgid ""
 "left keys to control the direction. On touch screens you can control the "
 "rocket through the corresponding on-screen buttons."
 msgstr ""
-"En els primers nivells, utilitzeu les tecles de Fletxa amunt/avall per a "
+"En els primers nivells, utilitzeu les tecles de «Fletxa amunt»/«avall» per a "
 "controlar l'empenta i les tecles de Fletxa dreta/esquerra per a controlar la "
 "direcció. A les pantalles tàctils podreu controlar el coet a través dels "
 "corresponents botons en pantalla."
@@ -15457,7 +15457,7 @@ msgid ""
 msgstr ""
 "En nivells superiors, podreu utilitzar les tecles de Fletxa dreta/esquerra "
 "per a fer girar la nau espacial. En fer-la girar, activareu una acceleració "
-"en direcció no vertical amb les tecles de Fletxa amunt/avall."
+"en direcció no vertical amb les tecles de «Fletxa amunt»/«avall»."
 
 #: activities/land_safe/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
@@ -15643,18 +15643,18 @@ msgstr "En la configuració, podreu seleccionar l'idioma que voleu aprendre."
 #: activities/lang/ActivityInfo.qml:35
 msgctxt "ActivityInfo|"
 msgid "Space or Enter: select an item from the list"
-msgstr "Espai o Retorn: per a seleccionar un element de la llista"
+msgstr "«Espai» o «Retorn»: per a seleccionar un element de la llista"
 
 #: activities/lang/ActivityInfo.qml:36
 msgctxt "ActivityInfo|"
 msgid "Enter: validate your answer when the OK button is visible"
-msgstr "Retorn: per a validar la resposta quan el botó «OK» siga visible"
+msgstr "«Retorn»: per a validar la resposta quan el botó «OK» siga visible"
 
 #: activities/lang/ActivityInfo.qml:37
 #: activities/missing-letter/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Tab: repeat the word"
-msgstr "Tabulació: per a repetir la paraula"
+msgstr "«Tabulació»: per a repetir la paraula"
 
 #: activities/lang/Lang.qml:138
 msgctxt "Lang|"
@@ -15828,7 +15828,7 @@ msgstr ""
 #: activities/learn_subtractions/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Space: select or deselect a circle"
-msgstr "Espai: per a seleccionar o desseleccionar un cercle"
+msgstr "«Espai»: per a seleccionar o desseleccionar un cercle"
 
 #: activities/learn_additions/resource/1/Data.qml:14
 msgctxt "Data|"
@@ -16196,7 +16196,7 @@ msgstr ""
 #: activities/learn_digits/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Tab: say the digit again"
-msgstr "Tabulació: per a llegir el dígit una altra vegada"
+msgstr "«Tabulació»: per a llegir el dígit una altra vegada"
 
 #: activities/learn_digits/resource/1/Data.qml:14
 msgctxt "Data|"
@@ -16646,7 +16646,7 @@ msgstr ""
 #: activities/louis-braille/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "Space or Enter: select an item and change its position"
-msgstr "Espai o Retorn: per a seleccionar i canviar la seua posició"
+msgstr "«Espai» o «Retorn»: per a seleccionar i canviar la seua posició"
 
 #: activities/louis-braille/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
@@ -17027,7 +17027,7 @@ msgid ""
 "move Tux in visible mode."
 msgstr ""
 "Utilitzeu les tecles de fletxa o toqueu la pantalla per a moure en Tux fins "
-"a la porta. Utilitzeu la icona del laberint o la tecla d'espai per a "
+"a la porta. Utilitzeu la icona del laberint o la tecla «Espai» per a "
 "alternar entre els modes invisible i visible. El mode visible vos dona una "
 "indicació de la vostra posició, com en un mapa. En el mode visible no podreu "
 "moure en Tux."
@@ -17057,7 +17057,7 @@ msgstr ""
 #: activities/mazeinvisible/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid "Space: switch between invisible and visible modes"
-msgstr "Espai: per a canviar entre els modes invisible i visible"
+msgstr "«Espai»: per a canviar entre els modes invisible i visible"
 
 #. Activity title
 #: activities/mazerelative/ActivityInfo.qml:15
@@ -17090,12 +17090,12 @@ msgstr "Fletxa esquerra i dreta: per a fer girar a l'esquerra i dreta"
 #: activities/mazerelative/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
 msgid "Down arrow: turn backward"
-msgstr "Fletxa avall: per a anar cap arrere"
+msgstr "«Fletxa avall»: per a anar cap arrere"
 
 #: activities/mazerelative/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
 msgid "Up arrow: move forward"
-msgstr "Fletxa amunt: per a anar cap avant"
+msgstr "«Fletxa amunt»: per a anar cap avant"
 
 #. Activity title
 #: activities/melody/ActivityInfo.qml:15
@@ -17219,7 +17219,7 @@ msgstr ""
 #: activities/memory/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Space or Enter: flip the selected card"
-msgstr "Espai o Retorn: per a seleccionar la targeta"
+msgstr "«Espai» o «Retorn»: per a seleccionar la targeta"
 
 #: activities/memory-case-association/ActivityConfig.qml:23
 #: activities/memory-enumerate/ActivityConfig.qml:23
@@ -18392,7 +18392,7 @@ msgstr ""
 #: activities/menu/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "Home - Exit an activity, go back to menu (Ctrl+W or Escape key)"
-msgstr "Inici: ix d'una activitat i torna al menú (Ctrl+W o la tecla Esc)"
+msgstr "Inici: ix d'una activitat i torna al menú («Ctrl+W» o la tecla «Esc»)"
 
 #: activities/menu/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
@@ -18433,7 +18433,7 @@ msgstr "G: quant a GCompris"
 #: activities/menu/ActivityInfo.qml:33
 msgctxt "ActivityInfo|"
 msgid "Quit - Quit GCompris (Ctrl+Q)"
-msgstr "Ix: Ix de GCompris (Ctrl+Q)"
+msgstr "Ix: Ix de GCompris («Ctrl+Q»)"
 
 #: activities/menu/ActivityInfo.qml:34
 msgctxt "ActivityInfo|"
@@ -18467,17 +18467,17 @@ msgstr "<b>Dreceres de teclat:</b>"
 #: activities/menu/ActivityInfo.qml:39
 msgctxt "ActivityInfo|"
 msgid "Ctrl+B: Show or Hide the control bar"
-msgstr "Ctrl+B: Mostra o oculta la barra de control"
+msgstr "«Ctrl+B»: Mostra o oculta la barra de control"
 
 #: activities/menu/ActivityInfo.qml:40
 msgctxt "ActivityInfo|"
 msgid "Ctrl+F: Toggle full screen"
-msgstr "Ctrl+F: Canvia a pantalla completa"
+msgstr "«Ctrl+F»: Canvia a pantalla completa"
 
 #: activities/menu/ActivityInfo.qml:41
 msgctxt "ActivityInfo|"
 msgid "Ctrl+S: Toggle the activity section bar"
-msgstr "Ctrl+S: Canvia la barra de secció activitat"
+msgstr "«Ctrl+S»: Canvia la barra de secció activitat"
 
 #: activities/menu/BackgroundMusicList.qml:63
 msgctxt "BackgroundMusicList|"
@@ -19344,7 +19344,7 @@ msgstr "Fletxes: per a navegar per l'àrea"
 #: activities/mosaic/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "Space or Enter: select or place an item"
-msgstr "Espai o Retorn: per a seleccionar o ubicar un element"
+msgstr "«Espai» o «Retorn»: per a seleccionar o ubicar un element"
 
 # skip-rule: kct-tab
 #: activities/mosaic/ActivityInfo.qml:26
@@ -20697,7 +20697,7 @@ msgstr "De la F2 fins a la F7: les tecles negres"
 #: activities/play_piano/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
 msgid "Space: play"
-msgstr "Espai: per a jugar"
+msgstr "«Espai»: per a jugar"
 
 #: activities/piano_composition/ActivityInfo.qml:37
 msgctxt "ActivityInfo|"
@@ -20707,7 +20707,7 @@ msgstr "Fletxa esquerra i dreta: per a canviar l'octava del teclat"
 #: activities/piano_composition/ActivityInfo.qml:38
 msgctxt "ActivityInfo|"
 msgid "Backspace: undo"
-msgstr "Retrocés: per a desfer"
+msgstr "«Retrocés»: per a desfer"
 
 #: activities/piano_composition/ActivityInfo.qml:39
 msgctxt "ActivityInfo|"
@@ -21328,7 +21328,7 @@ msgstr ""
 #: activities/play_piano/ActivityInfo.qml:33
 msgctxt "ActivityInfo|"
 msgid "Backspace or Delete: undo"
-msgstr "Retrocés o Suprimir: per a desfer"
+msgstr "«Retrocés» o «Suprimir»: per a desfer"
 
 #: activities/play_piano/PlayPiano.qml:172
 msgctxt "PlayPiano|"
@@ -21423,7 +21423,7 @@ msgstr "Barra espaiadora: per a fer clic en el tambor"
 #: activities/play_rhythm/ActivityInfo.qml:33
 msgctxt "ActivityInfo|"
 msgid "Enter or Return: replay the rhythm"
-msgstr "Retorn: per a tornar a reproduir el ritme"
+msgstr "«Retorn»: per a tornar a reproduir el ritme"
 
 #: activities/play_rhythm/ActivityInfo.qml:34
 msgctxt "ActivityInfo|"
@@ -21433,7 +21433,7 @@ msgstr "Amunt i Avall: per a fer augmentar o disminuir el tempo"
 #: activities/play_rhythm/ActivityInfo.qml:35
 msgctxt "ActivityInfo|"
 msgid "Tab: Start or stop the metronome if it is visible"
-msgstr "Tabulació: per a iniciar o parar el metrònom, si és visible"
+msgstr "«Tabulació»: per a iniciar o parar el metrònom, si és visible"
 
 #: activities/play_rhythm/PlayRhythm.qml:114
 msgctxt "PlayRhythm|"
@@ -21450,8 +21450,8 @@ msgid ""
 "Follow the vertical line and click on the drum or press space key to play "
 "the rhythm correctly."
 msgstr ""
-"Seguix la línia vertical i fes clic en el tambor o prem la tecla espai per a "
-"tocar el ritme de manera correcta."
+"Seguix la línia vertical i fes clic en el tambor o prem la tecla «Espai» per "
+"a tocar el ritme de manera correcta."
 
 #: activities/play_rhythm/PlayRhythm.qml:359
 msgctxt "PlayRhythm|"
@@ -21508,7 +21508,7 @@ msgstr ""
 #: activities/positions/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Space or Enter: validate selected answer"
-msgstr "Espai o Retorn: per a validar la resposta seleccionada"
+msgstr "«Espai» o «Retorn»: per a validar la resposta seleccionada"
 
 #: activities/positions/resource/1/Data.qml:14
 msgctxt "Data|"
@@ -21689,14 +21689,14 @@ msgid ""
 "Space: select an instruction or append selected instruction in main/"
 "procedure/loop area"
 msgstr ""
-"Espai: per a seleccionar una instrucció o afegir la instrucció seleccionada "
-"en l'àrea principal/de bucle"
+"«Espai»: per a seleccionar una instrucció o afegir la instrucció "
+"seleccionada en l'àrea principal/de bucle"
 
 #: activities/programmingMaze/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
 msgid "Tab: switch between instructions area and main/procedure/loop area"
 msgstr ""
-"Tabulació: per a canviar entre l'àrea d'instruccions i l'àrea principal/de "
+"«Tabulació»: per a canviar entre l'àrea d'instruccions i l'àrea principal/de "
 "procediment/de bucle"
 
 #: activities/programmingMaze/ActivityInfo.qml:31
@@ -21710,7 +21710,7 @@ msgstr ""
 msgctxt "ActivityInfo|"
 msgid "Enter: run the code or reset Tux when it fails to reach the fish"
 msgstr ""
-"Retorn: per a executar el codi o restablir en Tux quan no arriba al peix"
+"«Retorn»: per a executar el codi o restablir en Tux quan no arriba al peix"
 
 #: activities/programmingMaze/ActivityInfo.qml:33
 msgctxt "ActivityInfo|"
@@ -21932,20 +21932,20 @@ msgid ""
 "Space: add an item from the samples to the answer area, or swap two items in "
 "the answer area"
 msgstr ""
-"Espai: per a afegir un element des de l'àrea de mostra a la de resposta o "
+"«Espai»: per a afegir un element des de l'àrea de mostra a la de resposta o "
 "intercanviar dos elements en l'àrea de resposta"
 
 #: activities/railroad/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid "Delete or Backspace: remove the selected item from the answer area"
 msgstr ""
-"Suprimir o Retrocés: per a eliminar l'element seleccionat de l'àrea de "
+"«Suprimir» o «Retrocés»: per a eliminar l'element seleccionat de l'àrea de "
 "resposta"
 
 #: activities/railroad/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
 msgid "Enter or Return: submit your answer"
-msgstr "Retorn: per a entregar la resposta"
+msgstr "«Retorn»: per a entregar la resposta"
 
 #: activities/railroad/Railroad.qml:105
 msgctxt "Railroad|"
@@ -22080,7 +22080,7 @@ msgstr "Fletxes: per a navegar per la quadrícula"
 #: activities/simplepaint/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Space or Enter: paint"
-msgstr "Espai o Retorn: per a pintar"
+msgstr "«Espai» o «Retorn»: per a pintar"
 
 #: activities/redraw/resource/1/Data.qml:14
 msgctxt "Data|"
@@ -23793,12 +23793,12 @@ msgstr ""
 #: activities/solar_system/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid "Space or Enter: select"
-msgstr "Espai o Retorn: per a seleccionar"
+msgstr "«Espai» o «Retorn»: per a seleccionar"
 
 #: activities/solar_system/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
 msgid "Escape: return to previous screen"
-msgstr "Esc: per a tornar a la pantalla anterior"
+msgstr "«Esc»: per a tornar a la pantalla anterior"
 
 # skip-rule: kct-tab
 #: activities/solar_system/ActivityInfo.qml:31
@@ -25005,12 +25005,13 @@ msgstr "<b>Tancs de llast</b>"
 msgctxt "ActivityInfo|"
 msgid "W or Up arrow: switch filling of the central ballast tank"
 msgstr ""
-"W o Fletxa amunt: per a canviar a l'ompliment del tanc de llast central"
+"«W» o «Fletxa amunt»: per a canviar a l'ompliment del tanc de llast central"
 
 #: activities/submarine/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
 msgid "S or Down arrow: switch flushing of the central ballast tank"
-msgstr "W o Fletxa avall: per a canviar al buidament del tanc de llast central"
+msgstr ""
+"«W» o «Fletxa avall»: per a canviar al buidament del tanc de llast central"
 
 #: activities/submarine/ActivityInfo.qml:32
 msgctxt "ActivityInfo|"
@@ -26306,13 +26307,13 @@ msgstr ""
 "<b>KDE</b> és una xarxa mundial d'enginyers informàtics, artistes, "
 "escriptors, traductors i facilitadors compromesos amb el desenvolupament de "
 "<a href=\"%1\">programari lliure</a> (Free Software). Esta comunitat ha "
-"creat centenars d'aplicacions de programari lliure com a part de Frameworks "
-"de KDE, espais de treball i aplicacions.<br /><br />KDE és una iniciativa "
-"cooperativa en la qual cap entitat individual controla els esforços o els "
-"productes de KDE per a excloure'n d'altres. Donem la benvinguda a tothom per "
-"a afegir-se i col·laborar amb KDE, incloent-vos-hi.<br /><br />Visiteu <a "
-"href=\"%2\">%2</a> per a més informació sobre la comunitat KDE i el "
-"programari que produïm."
+"creat centenars d'aplicacions de programari lliure com a part dels "
+"Frameworks de KDE, espais de treball i aplicacions.<br /><br />KDE és una "
+"iniciativa cooperativa en la qual cap entitat individual controla els "
+"esforços o els productes de KDE per a excloure'n d'altres. Donem la "
+"benvinguda a tothom per a afegir-se i col·laborar amb KDE, incloent-vos-hi."
+"<br /><br />Visiteu <a href=\"%2\">%2</a> per a més informació sobre la "
+"comunitat KDE i el programari que produïm."
 
 #: core/DialogAbout.qml:93
 #, qt-format
