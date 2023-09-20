@@ -2444,10 +2444,7 @@ Files: src/activities/instruments/resource/background.svg
  src/activities/instruments/resource/accordion.svg
  src/activities/instruments/resource/banjo.svg
  src/activities/instruments/resource/bongo.svg
-Copyright: 2023 Timothée Giet
-License: CC-BY-SA-4.0
-
-Files: src/activities/instruments/resource/castanets.svg
+ src/activities/instruments/resource/castanets.svg
  src/activities/instruments/resource/cello.svg
  src/activities/instruments/resource/clarinet.svg
  src/activities/instruments/resource/cymbal.svg
@@ -2470,8 +2467,8 @@ Files: src/activities/instruments/resource/castanets.svg
  src/activities/instruments/resource/trumpet.svg
  src/activities/instruments/resource/tuba.svg
  src/activities/instruments/resource/violin.svg
-Copyright: 2000-2008 Bruno Coudoin and others
-License: GPL-3.0-only
+Copyright: 2023 Timothée Giet
+License: CC-BY-SA-4.0
 
 Files: src/activities/land_safe/*.svg
 Copyright: 2017 Timothée Giet
