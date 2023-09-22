@@ -158,7 +158,7 @@ var colors =
             },
             {
                 "image": "qrc:/gcompris/src/activities/instruments/resource/bongo.svg",
-                "text": qsTr("Find the bongo"),
+                "text": qsTr("Find the bongos"),
                 "audio": ApplicationInfo.getAudioFilePath("qrc:/gcompris/src/activities/instruments/resource/bongo.$CA")
             },
             {
@@ -203,7 +203,7 @@ var colors =
 
             {
                 "image": "qrc:/gcompris/src/activities/instruments/resource/bongo.svg",
-                "text": qsTr("Find the bongo"),
+                "text": qsTr("Find the bongos"),
                 "audio": ApplicationInfo.getAudioFilePath("qrc:/gcompris/src/activities/instruments/resource/bongo.$CA")
             },
             {
