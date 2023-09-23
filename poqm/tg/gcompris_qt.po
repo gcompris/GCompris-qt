@@ -13774,7 +13774,7 @@ msgstr ""
 #: activities/instruments/instruments.js:161
 #: activities/instruments/instruments.js:206
 msgctxt "instruments|"
-msgid "Find the bongo"
+msgid "Find the bongos"
 msgstr ""
 
 #: activities/instruments/instruments.js:166

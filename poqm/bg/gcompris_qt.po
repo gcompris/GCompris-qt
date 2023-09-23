@@ -14263,7 +14263,7 @@ msgstr ""
 #: activities/instruments/instruments.js:206
 #, fuzzy
 msgctxt "instruments|"
-msgid "Find the bongo"
+msgid "Find the bongos"
 msgstr "Намерете пеперудата с цвят индиго"
 
 #: activities/instruments/instruments.js:166

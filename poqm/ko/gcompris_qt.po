@@ -14365,9 +14365,12 @@ msgstr ""
 
 #: activities/instruments/instruments.js:161
 #: activities/instruments/instruments.js:206
+#, fuzzy
+#| msgctxt "DialogHelp|"
+#| msgid "Section: "
 msgctxt "instruments|"
-msgid "Find the bongo"
-msgstr ""
+msgid "Find the bongos"
+msgstr "부분: "
 
 #: activities/instruments/instruments.js:166
 #: activities/instruments/instruments.js:211

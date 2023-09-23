@@ -15184,8 +15184,11 @@ msgstr "Lorg am bainsio"
 
 #: activities/instruments/instruments.js:161
 #: activities/instruments/instruments.js:206
+#, fuzzy
+#| msgctxt "instruments|"
+#| msgid "Find the bongo"
 msgctxt "instruments|"
-msgid "Find the bongo"
+msgid "Find the bongos"
 msgstr "Lorg am bongo"
 
 #: activities/instruments/instruments.js:166

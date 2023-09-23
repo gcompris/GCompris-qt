@@ -13995,9 +13995,12 @@ msgstr ""
 
 #: activities/instruments/instruments.js:161
 #: activities/instruments/instruments.js:206
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Find the fractions"
 msgctxt "instruments|"
-msgid "Find the bongo"
-msgstr ""
+msgid "Find the bongos"
+msgstr "محاسبه برش"
 
 #: activities/instruments/instruments.js:166
 #: activities/instruments/instruments.js:211

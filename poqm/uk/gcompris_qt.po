@@ -14977,8 +14977,11 @@ msgstr "Знайдіть банджо"
 
 #: activities/instruments/instruments.js:161
 #: activities/instruments/instruments.js:206
+#, fuzzy
+#| msgctxt "instruments|"
+#| msgid "Find the bongo"
 msgctxt "instruments|"
-msgid "Find the bongo"
+msgid "Find the bongos"
 msgstr "Знайдіть бонго"
 
 #: activities/instruments/instruments.js:166
