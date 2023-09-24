@@ -57,3 +57,5 @@ void Dataset::setEnabled(const bool &enabled)
     m_enabled = enabled;
     Q_EMIT enabledChanged();
 }
+
+#include "moc_Dataset.cpp"

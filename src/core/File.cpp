@@ -160,3 +160,5 @@ bool File::rmpath(const QString &path)
 {
     return QFile::remove(sanitizeUrl(path));
 }
+
+#include "moc_File.cpp"

@@ -259,3 +259,5 @@ void Generator::setPreset(Preset &preset) {
     setTimbre(preset.timbreAmplitudes, preset.timbrePhases);
     setEnvelope(preset.env);
 }
+
+#include "moc_generator.cpp"

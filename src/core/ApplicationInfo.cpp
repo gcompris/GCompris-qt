@@ -302,3 +302,5 @@ QObject *ApplicationInfo::applicationInfoProvider(QQmlEngine *engine,
 
     return appInfo;
 }
+
+#include "moc_ApplicationInfo.cpp"

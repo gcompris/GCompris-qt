@@ -332,3 +332,5 @@ bool ActivityInfo::hasDataset() const
 {
     return !m_levels.empty();
 }
+
+#include "moc_ActivityInfo.cpp"

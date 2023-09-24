@@ -21,3 +21,5 @@ QStringList Directory::getFiles(const QString &location, const QStringList &name
     QDir dir(location);
     return dir.entryList(nameFilters, (QDir::NoDotAndDotDot | QDir::AllEntries));
 }
+
+#include "moc_Directory.cpp"

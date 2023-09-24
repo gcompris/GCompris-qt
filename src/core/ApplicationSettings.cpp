@@ -540,3 +540,5 @@ QObject *ApplicationSettings::applicationSettingsProvider(QQmlEngine *engine,
     ApplicationSettings *appSettings = getInstance();
     return appSettings;
 }
+
+#include "moc_ApplicationSettings.cpp"

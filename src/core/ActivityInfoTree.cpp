@@ -383,3 +383,5 @@ QVariantList ActivityInfoTree::allCharacters()
 
     return m_keyboardCharacters;
 }
+
+#include "moc_ActivityInfoTree.cpp"

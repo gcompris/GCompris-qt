@@ -85,3 +85,5 @@ QObject *GSynth::synthProvider(QQmlEngine *engine,
     GSynth* synth = getInstance();
     return synth;
 }
+
+#include "moc_GSynth.cpp"

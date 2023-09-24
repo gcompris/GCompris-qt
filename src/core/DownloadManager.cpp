@@ -735,3 +735,5 @@ QStringList DownloadManager::getLocalResources()
     return result;
 }
 #endif
+
+#include "moc_DownloadManager.cpp"
