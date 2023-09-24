@@ -20,57 +20,59 @@
 
 #include <QtQml>
 
-#define GC_DEFAULT_FONT QLatin1String("Andika-R.ttf")
-#define GC_DEFAULT_FONT_CAPITALIZATION 0 // Font.MixedCase
-#define GC_DEFAULT_FONT_LETTER_SPACING 0
+namespace {
+    const char *GC_DEFAULT_FONT = "Andika-R.ttf";
+    constexpr int GC_DEFAULT_FONT_CAPITALIZATION = 0; // Font.MixedCase
+    constexpr int GC_DEFAULT_FONT_LETTER_SPACING = 0;
 
-static const char *GENERAL_GROUP_KEY = "General";
-static const char *ADMIN_GROUP_KEY = "Admin";
-static const char *INTERNAL_GROUP_KEY = "Internal";
-static const char *FAVORITE_GROUP_KEY = "Favorite";
-static const char *LEVELS_GROUP_KEY = "Levels";
+    const char *GENERAL_GROUP_KEY = "General";
+    const char *ADMIN_GROUP_KEY = "Admin";
+    const char *INTERNAL_GROUP_KEY = "Internal";
+    const char *FAVORITE_GROUP_KEY = "Favorite";
+    const char *LEVELS_GROUP_KEY = "Levels";
 
-static const char *FULLSCREEN_KEY = "fullscreen";
-static const char *PREVIOUS_HEIGHT_KEY = "previousHeight";
-static const char *PREVIOUS_WIDTH_KEY = "previousWidth";
-static const char *ENABLE_AUDIO_VOICES_KEY = "enableAudioVoices";
-static const char *ENABLE_AUDIO_EFFECTS_KEY = "enableAudioEffects";
-static const char *ENABLE_BACKGROUND_MUSIC_KEY = "enableBackgroundMusic";
-static const char *VIRTUALKEYBOARD_KEY = "virtualKeyboard";
-static const char *LOCALE_KEY = "locale";
-static const char *FONT_KEY = "font";
-static const char *IS_CURRENT_FONT_EMBEDDED = "isCurrentFontEmbedded";
-static const char *ENABLE_AUTOMATIC_DOWNLOADS = "enableAutomaticDownloads";
-static const char *FILTERED_BACKGROUND_MUSIC_KEY = "filteredBackgroundMusic";
-static const char *BACKGROUND_MUSIC_VOLUME_KEY = "backgroundMusicVolume";
-static const char *AUDIO_EFFECTS_VOLUME_KEY = "audioEffectsVolume";
+    const char *FULLSCREEN_KEY = "fullscreen";
+    const char *PREVIOUS_HEIGHT_KEY = "previousHeight";
+    const char *PREVIOUS_WIDTH_KEY = "previousWidth";
+    const char *ENABLE_AUDIO_VOICES_KEY = "enableAudioVoices";
+    const char *ENABLE_AUDIO_EFFECTS_KEY = "enableAudioEffects";
+    const char *ENABLE_BACKGROUND_MUSIC_KEY = "enableBackgroundMusic";
+    const char *VIRTUALKEYBOARD_KEY = "virtualKeyboard";
+    const char *LOCALE_KEY = "locale";
+    const char *FONT_KEY = "font";
+    const char *IS_CURRENT_FONT_EMBEDDED = "isCurrentFontEmbedded";
+    const char *ENABLE_AUTOMATIC_DOWNLOADS = "enableAutomaticDownloads";
+    const char *FILTERED_BACKGROUND_MUSIC_KEY = "filteredBackgroundMusic";
+    const char *BACKGROUND_MUSIC_VOLUME_KEY = "backgroundMusicVolume";
+    const char *AUDIO_EFFECTS_VOLUME_KEY = "audioEffectsVolume";
 
-static const char *DOWNLOAD_SERVER_URL_KEY = "downloadServerUrl";
-static const char *CACHE_PATH_KEY = "cachePath";
-static const char *USERDATA_PATH_KEY = "userDataPath";
-static const char *RENDERER_KEY = "renderer";
+    const char *DOWNLOAD_SERVER_URL_KEY = "downloadServerUrl";
+    const char *CACHE_PATH_KEY = "cachePath";
+    const char *USERDATA_PATH_KEY = "userDataPath";
+    const char *RENDERER_KEY = "renderer";
 
-static const char *EXE_COUNT_KEY = "exeCount";
-static const char *LAST_GC_VERSION_RAN = "lastGCVersionRan";
+    const char *EXE_COUNT_KEY = "exeCount";
+    const char *LAST_GC_VERSION_RAN = "lastGCVersionRan";
 
-static const char *FILTER_LEVEL_MIN = "filterLevelMin";
-static const char *FILTER_LEVEL_MAX = "filterLevelMax";
+    const char *FILTER_LEVEL_MIN = "filterLevelMin";
+    const char *FILTER_LEVEL_MAX = "filterLevelMax";
 
-static const char *BASE_FONT_SIZE_KEY = "baseFontSize";
-static const char *FONT_CAPITALIZATION = "fontCapitalization";
-static const char *FONT_LETTER_SPACING = "fontLetterSpacing";
+    const char *BASE_FONT_SIZE_KEY = "baseFontSize";
+    const char *FONT_CAPITALIZATION = "fontCapitalization";
+    const char *FONT_LETTER_SPACING = "fontLetterSpacing";
 
-static const char *DEFAULT_CURSOR = "defaultCursor";
-static const char *NO_CURSOR = "noCursor";
-static const char *KIOSK_KEY = "kiosk";
-static const char *SECTION_VISIBLE = "sectionVisible";
-static const char *EXIT_CONFIRMATION = "exitConfirmation";
-static const char *WORDSET = "wordset";
-static const char *USE_WORDSET = "useWordset";
+    const char *DEFAULT_CURSOR = "defaultCursor";
+    const char *NO_CURSOR = "noCursor";
+    const char *KIOSK_KEY = "kiosk";
+    const char *SECTION_VISIBLE = "sectionVisible";
+    const char *EXIT_CONFIRMATION = "exitConfirmation";
+    const char *WORDSET = "wordset";
+    const char *USE_WORDSET = "useWordset";
 
-static const char *PROGRESS_KEY = "progress";
+    const char *PROGRESS_KEY = "progress";
 
-static const char *DEFAULT_DOWNLOAD_SERVER = "https://cdn.kde.org/gcompris";
+    const char *DEFAULT_DOWNLOAD_SERVER = "https://cdn.kde.org/gcompris";
+}
 
 ApplicationSettings *ApplicationSettings::m_instance = nullptr;
 
@@ -95,7 +97,7 @@ ApplicationSettings::ApplicationSettings(const QString &configPath, QObject *par
                                          ApplicationInfo::getInstance()->isMobile())
                               .toBool();
     m_locale = m_config.value(LOCALE_KEY, GC_DEFAULT_LOCALE).toString();
-    m_font = m_config.value(FONT_KEY, GC_DEFAULT_FONT).toString();
+    m_font = m_config.value(FONT_KEY, QLatin1String(GC_DEFAULT_FONT)).toString();
     if (m_font == QLatin1String("Andika-R.otf"))
         m_font = "Andika-R.ttf";
     m_fontCapitalization = m_config.value(FONT_CAPITALIZATION, GC_DEFAULT_FONT_CAPITALIZATION).toUInt();
