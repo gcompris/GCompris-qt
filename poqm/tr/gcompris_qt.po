@@ -14842,12 +14842,9 @@ msgstr "Banjoyu bul"
 
 #: activities/instruments/instruments.js:161
 #: activities/instruments/instruments.js:206
-#, fuzzy
-#| msgctxt "instruments|"
-#| msgid "Find the bongo"
 msgctxt "instruments|"
 msgid "Find the bongos"
-msgstr "Bongoyu bul"
+msgstr "Bongoları bul"
 
 #: activities/instruments/instruments.js:166
 #: activities/instruments/instruments.js:211
@@ -26125,49 +26122,3 @@ msgstr "Atla"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Başlat"
-
-#~ msgctxt "Warning|"
-#~ msgid "%1 is divisible by %2"
-#~ msgstr "%1, %2 ile bölünebilir"
-
-#~ msgctxt "Warning|"
-#~ msgid "and"
-#~ msgstr "ve"
-
-#~ msgctxt "Warning|"
-#~ msgid "Multiples of %1 include %2, "
-#~ msgstr "%1 sayısının katları %2 sayısını içerir, "
-
-#~ msgctxt "Warning|"
-#~ msgid "and %1 are the divisors of %2."
-#~ msgstr "ve %1, %2 sayısının bölenidir."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Learn to classify words according to their nature (grammatical class)."
-#~ msgstr "Sözcükleri türlerine göre sınıflandırmayı öğren"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Classify words according to their nature (grammatical class)."
-#~ msgstr "Sözcükleri türlerine göre sınıflandır"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Assigns to each requested word a grammatical class."
-#~ msgstr "İstenen her bir sözcüğü bir dilbilgisi sınıflandırmasına atar"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Classify words according to their nature."
-#~ msgstr "Sözcükleri türlerine göre sınıflandır"
-
-#~ msgctxt "grammar_analysis|"
-#~ msgid ""
-#~ "Learn to classify words according to their nature (grammatical class)."
-#~ msgstr "Sözcükleri türlerine göre sınıflandırmayı öğren"
-
-#~ msgctxt "grammar_analysis|"
-#~ msgid "Assign to each word a grammatical class from the list provided."
-#~ msgstr "Her bir sözcüğe, verilen listeden bir dilbilgisi sınıfı ata."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Learn grammatical classes."
-#~ msgstr "Dilbilgisi sınıflandırmalarını öğren."
