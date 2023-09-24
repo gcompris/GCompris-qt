@@ -13,3 +13,4 @@ BraceWrapping:
     AfterClass: true
     AfterStruct: true
 BreakConstructorInitializers: AfterColon
+NamespaceIndentation: All
