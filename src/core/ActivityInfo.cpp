@@ -333,4 +333,9 @@ bool ActivityInfo::hasDataset() const
     return !m_levels.empty();
 }
 
+void ActivityInfo::resetLevels()
+{
+    enableDatasetsBetweenDifficulties(1, 6);
+}
+
 #include "moc_ActivityInfo.cpp"

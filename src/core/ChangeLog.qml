@@ -26,6 +26,12 @@ QtObject {
      *
      */
     property var changelog: [
+            { "versionCode": 40000, "content": [
+                qsTr("Many usability improvements"),
+                qsTr("Many new images"),
+                qsTr("Many bug fixes")
+                ]
+            },
             { "versionCode": 30300, "content": [
                 qsTr("Translations added for Arabic and Esperanto"),
                 qsTr("Many translation updates"),
@@ -127,6 +133,35 @@ QtObject {
         return newVersion > previousVersion
     }
 
+    function getNewDatasetsBetween(previousVersion, newVersion) {
+        const filtered = changelog.filter(function filter(obj) {
+            return isNewerVersion(previousVersion, obj['versionCode'])
+        });
+        const allDatasetChanges = new Array();
+        const allActivities = ActivityInfoTree.menuTreeFull
+        for(const change of filtered) {
+            if(change["newDatasets"]) {
+                change["newDatasets"].forEach(function(value) {
+                    for(var j in allActivities) {
+                        var activity = allActivities[j];
+                        // get the title of the activities that have new datasets
+                        if(activity.name.startsWith(value + '/')) {
+                            if(allDatasetChanges.find(function(newDatasetsActivity) { return newDatasetsActivity.activity == value; }) == undefined) {
+                                allDatasetChanges.push({
+                                    "activityName": activity.name,
+                                    "activityTitle": activity.title,
+                                    "overrideExistingLevels": true
+                                });
+                            }
+                            break;
+                        }
+                    }
+                })
+            }
+        }
+        return allDatasetChanges;
+    }
+
     function getLogBetween(previousVersion, newVersion) {
         var filtered = changelog.filter(function filter(obj) {
             return isNewerVersion(previousVersion, obj['versionCode'])
@@ -148,8 +183,8 @@ QtObject {
             output += "<b>" + qsTr("Version %1:").arg(version) + "</b>";
             output += "<ul>";
             // display free text if exist
-            for(var i = 0; i < obj['content'].length; i++)
-                output += "<li>" + obj['content'][i] + "</li>";
+            for(const text of obj['content'])
+                output += "<li>" + text + "</li>";
             // display the activity titles
             for(var j in activities) {
                 var activity = activities[j];

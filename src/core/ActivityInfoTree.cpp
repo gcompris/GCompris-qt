@@ -61,6 +61,29 @@ ActivityInfo *ActivityInfoTree::menuTreeAt(QQmlListProperty<ActivityInfo> *prope
     return nullptr;
 }
 
+QQmlListProperty<ActivityInfo> ActivityInfoTree::getMenuTreeFull()
+{
+    return { this, nullptr, &menuTreeFullCount, &menuTreeFullAt };
+}
+
+QList<ActivityInfo>::size_type ActivityInfoTree::menuTreeFullCount(QQmlListProperty<ActivityInfo> *property)
+{
+    ActivityInfoTree *obj = qobject_cast<ActivityInfoTree *>(property->object);
+    if (obj != nullptr)
+        return obj->m_menuTreeFull.count();
+
+    return 0;
+}
+
+ActivityInfo *ActivityInfoTree::menuTreeFullAt(QQmlListProperty<ActivityInfo> *property, QList<ActivityInfo>::size_type index)
+{
+    ActivityInfoTree *obj = qobject_cast<ActivityInfoTree *>(property->object);
+    if (obj != nullptr)
+        return obj->m_menuTreeFull.at(index);
+
+    return nullptr;
+}
+
 ActivityInfo *ActivityInfoTree::menuTree(int index) const
 {
     return m_menuTree.at(index);
@@ -181,6 +204,19 @@ void ActivityInfoTree::filterCreatedWithinVersions(int firstVersion,
     }
     if (emitChanged)
         Q_EMIT menuTreeChanged();
+}
+
+void ActivityInfoTree::resetLevels(const QString &activityName)
+{
+    auto activityIterator = std::find_if(m_menuTreeFull.begin(), m_menuTreeFull.end(), [&activityName](const ActivityInfo *value) {
+        return activityName == value->name();
+    });
+    if (activityIterator == m_menuTreeFull.end()) {
+        // We didn't find the activity
+        return;
+    }
+    ActivityInfo *activity = *activityIterator;
+    activity->resetLevels();
 }
 
 void ActivityInfoTree::exportAsSQL()

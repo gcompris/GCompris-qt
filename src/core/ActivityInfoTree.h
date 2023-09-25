@@ -19,6 +19,7 @@ class ActivityInfoTree : public QObject
 {
     Q_OBJECT
     Q_PROPERTY(ActivityInfo *rootMenu READ getRootMenu CONSTANT)
+    Q_PROPERTY(QQmlListProperty<ActivityInfo> menuTreeFull READ getMenuTreeFull CONSTANT)
     Q_PROPERTY(QQmlListProperty<ActivityInfo> menuTree READ menuTree NOTIFY menuTreeChanged)
     Q_PROPERTY(ActivityInfo *currentActivity READ getCurrentActivity WRITE setCurrentActivity NOTIFY currentActivityChanged)
     Q_PROPERTY(QVariantList characters READ allCharacters CONSTANT)
@@ -36,6 +37,7 @@ public:
         return m_instance;
     }
     QQmlListProperty<ActivityInfo> menuTree();
+    QQmlListProperty<ActivityInfo> getMenuTreeFull();
     ActivityInfo *getRootMenu() const;
     void setRootMenu(ActivityInfo *rootMenu);
     ActivityInfo *menuTree(int) const;
@@ -55,6 +57,7 @@ protected:
 public Q_SLOTS:
     Q_INVOKABLE void minMaxFiltersChanged(quint32 levelMin, quint32 levelMax, bool doSynchronize = true);
     Q_INVOKABLE void filterByTag(const QString &tag, const QString &category = "", bool emitChanged = true);
+    Q_INVOKABLE void resetLevels(const QString &activity);
 
 protected Q_SLOTS:
     Q_INVOKABLE void filterEnabledActivities(bool emitChanged = true);
@@ -85,6 +88,9 @@ private:
 
     static QList<ActivityInfo>::size_type menuTreeCount(QQmlListProperty<ActivityInfo> *property);
     static ActivityInfo *menuTreeAt(QQmlListProperty<ActivityInfo> *property, QList<ActivityInfo>::size_type index);
+
+    static QList<ActivityInfo>::size_type menuTreeFullCount(QQmlListProperty<ActivityInfo> *property);
+    static ActivityInfo *menuTreeFullAt(QQmlListProperty<ActivityInfo> *property, QList<ActivityInfo>::size_type index);
 
     static QStringList getActivityList();
 

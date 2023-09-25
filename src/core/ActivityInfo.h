@@ -192,6 +192,11 @@ public:
     void addDataset(const QString &name, Dataset *dataset);
     Q_INVOKABLE Dataset *getDataset(const QString &name) const;
 
+    /*
+     * Reset all the current levels to be enabled.
+     */
+    void resetLevels();
+
 Q_SIGNALS:
     void nameChanged();
     void sectionChanged();
