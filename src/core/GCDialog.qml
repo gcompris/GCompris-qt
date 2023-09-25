@@ -29,8 +29,10 @@ import GCompris 1.0
  * @inherit QtQuick.Item
  * @sa showMessageDialog
  */
-Item {
+Rectangle {
     id: gcdialog
+    color: "#B2808080"
+    property int baseMargins: 5 * ApplicationInfo.ratio
 
     /**
      * type:string
@@ -91,6 +93,13 @@ Item {
      */
     signal button2Hit
 
+    /**
+     * type:Component
+     * Content component which holds the optional content
+     * after instructionText
+     */
+    property Component content
+
     focus: true
     opacity: 0
 
@@ -126,12 +135,6 @@ Item {
 
     z: 1500
 
-    Rectangle {
-        anchors.fill: parent
-        opacity: 0.8
-        color: "grey"
-    }
-
     MultiPointTouchArea {
         // Just to catch mouse events
         anchors.fill: parent
@@ -143,59 +146,75 @@ Item {
         anchors {
             horizontalCenter: parent.horizontalCenter
             top: parent.top
-            topMargin: buttonCancel.height
+            topMargin: buttonCancel.height + 2 * gcdialog.baseMargins
+            bottom: parent.bottom
+            bottomMargin: gcdialog.baseMargins
         }
         width: parent.width * 0.8
 
         Rectangle {
             id: instructionTxtBg
             anchors.top: instruction.top
-            z: 1
             width: parent.width
-            height: gcdialog.height - button1.height * 5
-            opacity: 0.9
-            radius: 10
-            border.width: 2
+            height: instruction.height - button1.height * 3 - gcdialog.baseMargins * 3
+            radius: gcdialog.baseMargins
+            border.width: 2 * ApplicationInfo.ratio
             border.color: "white"
-            gradient: Gradient {
-                GradientStop { position: 0.0; color: "#fff" }
-                GradientStop { position: 0.9; color: "#fff" }
-                GradientStop { position: 1.0; color: "#ddd" }
-            }
+            color: "#EEEEEEEE"
 
             Flickable {
-                id: flick
-                anchors.margins: 8
+                id: instructionFlick
+                flickDeceleration: 1500
                 anchors.fill: parent
-                contentWidth: instructionTxt.contentWidth
-                contentHeight: instructionTxt.contentHeight
+                anchors.margins: gcdialog.baseMargins
                 flickableDirection: Flickable.VerticalFlick
                 clip: true
+                contentHeight: instructionTxt.height + extraLoader.height + 15 * ApplicationInfo.ratio
 
                 GCText {
                     id: instructionTxt
                     fontSize: regularSize
-                    color: "black"
-                    // @FIXME This property breaks the wrapping
-//                    horizontalAlignment: Text.AlignHCenter
+                    color: "#191919"
+                    anchors.horizontalCenter: parent.horizontalCenter
                     // need to remove the anchors (left and right) else sometimes text is hidden on the side
-                    width: instruction.width - 2*flick.anchors.margins
+                    width: instructionFlick.width
                     wrapMode: TextEdit.WordWrap
                     textFormat: TextEdit.RichText
-                    z: 2
                     text: style + "<body>" + textIn + "</body>"
                     property string textIn
-                    property string style: "<HEAD><STYLE type='text/css'>A {color: black;}</STYLE></HEAD>"
+                    property string style: "<HEAD><STYLE type='text/css'>A {color: #191919;}</STYLE></HEAD>"
                 }
+                Loader {
+                    id: extraLoader
+                    anchors.top: instructionTxt.bottom
+                    anchors.topMargin: gcdialog.baseMargins
+                    active: gcdialog.content != null
+                    sourceComponent: gcdialog.content
+                    width: instructionFlick.width
+                }
+            }
+            // The scroll buttons
+            GCButtonScroll {
+                id: scrollInstructions
+                opacity: 0.7
+                visible: instructionFlick.contentHeight > instructionFlick.height
+                anchors.right: parent.right
+                anchors.rightMargin: 5 * ApplicationInfo.ratio
+                anchors.bottom: parent.bottom
+                anchors.bottomMargin: 5 * ApplicationInfo.ratio
+                onUp: instructionFlick.flick(0, 1000)
+                onDown: instructionFlick.flick(0, -1000)
+                upVisible: instructionFlick.atYBeginning ? false : true
+                downVisible: instructionFlick.atYEnd ? false : true
             }
         }
 
         Rectangle {
             id: buttonSelector
-            width: 0
-            height: 0
+            width: gcdialog.width
+            height: button1.height + gcdialog.baseMargins * 2
             color: "#803ACAFF"
-            scale: 1.1
+            visible: false
         }
 
         GCButton {
@@ -244,7 +263,8 @@ Item {
                 when: button1.selected
                 PropertyChanges {
                     target: buttonSelector
-                    anchors.fill: button1
+                    anchors.centerIn: button1
+                    visible: true
                 }
             },
             State {
@@ -252,7 +272,8 @@ Item {
                 when: button2.selected
                 PropertyChanges {
                     target: buttonSelector
-                    anchors.fill: button2
+                    anchors.centerIn: button2
+                    visible: true
                 }
             }
         ]
@@ -309,6 +330,7 @@ Item {
     // The cancel button
     GCButtonCancel {
         id: buttonCancel
+        anchors.margins: 5 * ApplicationInfo.ratio
         onClose: {
             if(button2.visible)
                 button2.clicked();
