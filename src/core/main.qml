@@ -351,14 +351,25 @@ Window {
             checkBackgroundMusic();
             if(changelog.isNewerVersion(ApplicationSettings.lastGCVersionRan, ApplicationInfo.GCVersionCode)) {
                 lastGCVersionRanCopy = ApplicationSettings.lastGCVersionRan;
+
+                const newDatasets = changelog.getNewDatasetsBetween(ApplicationSettings.lastGCVersionRan, ApplicationInfo.GCVersionCode);
+
                 // display log between ApplicationSettings.lastGCVersionRan and ApplicationInfo.GCVersionCode
                 Core.showMessageDialog(
                 pageView,
                 qsTr("GCompris has been updated! Here are the new changes:<br/>") + changelog.getLogBetween(ApplicationSettings.lastGCVersionRan, ApplicationInfo.GCVersionCode),
                 "", null,
                 "", null,
-                function() { pageView.currentItem.focus = true }
+                function() {
+                    if(newDatasets.length != 0) {
+                        showNewDatasetsDialog(newDatasets);
+                    }
+                    else {
+                        pageView.currentItem.focus = true;
+                    }
+                }
                 );
+
                 // Store new version after update
                 ApplicationSettings.lastGCVersionRan = ApplicationInfo.GCVersionCode;
             }
@@ -366,6 +377,65 @@ Window {
         //Store version on first run in any case
         if(ApplicationSettings.lastGCVersionRan === 0)
             ApplicationSettings.lastGCVersionRan = ApplicationInfo.GCVersionCode;
+    }
+
+    Loader {
+        id: newDatasetsDialog
+        property var newDatasetsModel
+        sourceComponent: GCDialog {
+            parent: pageView
+            isDestructible: false
+            message: qsTr("Some activities have new dataset available. Do you want to reset their dataset selection?")
+            button1Text: qsTr("Apply")
+            button2Text: qsTr("Cancel")
+            onButton1Hit: {
+                newDatasetsModel.forEach(function(activity) {
+                    if(activity.overrideExistingLevels) {
+                        ActivityInfoTree.resetLevels(activity.activityName);
+                    }
+                })
+            }
+            content: Component {
+                Column {
+                    id: activitiesWithNewDatasetsColumn
+                    spacing: 5 * ApplicationInfo.ratio
+                    width: parent.width
+
+                    Repeater {
+                        id: newDatasetsRepeater
+                        model: newDatasetsDialog.newDatasetsModel
+
+                        delegate: GCDialogCheckBox {
+                            id: activityCheckbox
+                            width: parent.width
+                            labelTextFontSize: 12
+                            indicatorImageHeight: 40 * ApplicationInfo.ratio
+                            text: modelData.activityTitle
+                            checked: modelData.overrideExistingLevels
+                            onClicked: {
+                                var dataset = newDatasetsModel.find(function(v) {
+                                    return v.activity == modelData.activity;
+                                })
+                                dataset.overrideExistingLevels = checked;
+                            }
+                        }
+                    }
+                }
+            }
+
+            onClose: {
+                newDatasetsDialog.active = false;
+                pageView.currentItem.focus = true;
+            }
+        }
+        anchors.fill: pageView
+        active: false
+        onStatusChanged: if (status == Loader.Ready) item.start()
+    }
+
+    function showNewDatasetsDialog(newDatasets) {
+        newDatasetsDialog.newDatasetsModel = newDatasets;
+        newDatasetsDialog.active = true;
     }
 
     Loading {
