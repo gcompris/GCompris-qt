@@ -11,4 +11,3 @@ Environment:
 Options:
   setup-dbus-session: False
   require-passing-tests-on: [ '@all' ]
-  cmake-options: -DBUILD_STANDALONE=OFF
