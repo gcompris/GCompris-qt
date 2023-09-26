@@ -10,7 +10,6 @@
  */
 .pragma library
 .import QtQuick 2.12 as Quick
-.import GCompris 1.0 as GCompris
 .import "dataset.js" as Data
 .import "qrc:/gcompris/src/core/core.js" as Core
 
@@ -21,7 +20,6 @@ var baseUrl = "qrc:/gcompris/src/activities/guesscount/resource";
 var builtinFile = baseUrl + "/levels-default.json";
 var dataset = []
 
-var currentLevel
 var numberOfLevel = Data.levelSchema.length
 var items
 var dataItems
@@ -29,7 +27,7 @@ var levelSchema
 
 function start(items_) {
     items = items_
-    currentLevel = 0
+    items.currentLevel = Core.getInitialLevel(numberOfLevel)
     initLevel()
 }
 
@@ -38,8 +36,7 @@ function stop() {
 }
 
 function initLevel() {
-    items.bar.level = currentLevel + 1
-    items.currentlevel = currentLevel
+    items.currentlevel = items.currentLevel
     items.sublevel = 1
 
     var multipleDataOperators = []
@@ -59,12 +56,12 @@ function initLevel() {
         dataItems = multipleDataItems
         levelSchema = multipleDataSchema
         items.data = buildDataset(dataItems, levelSchema)
-        items.operatorRow.repeater.model = defaultOperators[currentLevel]
+        items.operatorRow.repeater.model = defaultOperators[items.currentLevel]
     }
     else if(items.mode === "admin") {
         numberOfLevel = Data.levelSchema.length
         items.data = buildDataset(Data.dataset, Data.levelSchema)
-        items.operatorRow.repeater.model = items.levelArr[currentLevel]
+        items.operatorRow.repeater.model = items.levelArr[items.currentLevel]
     }
 
     items.operandRow.repeater.model = Core.shuffle(items.data[items.sublevel-1][0])
@@ -90,16 +87,12 @@ function nextSublevel() {
 }
 
 function nextLevel() {
-    if(numberOfLevel <= ++currentLevel) {
-        currentLevel = 0
-    }
+    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }
 
 function previousLevel() {
-    if(--currentLevel < 0) {
-        currentLevel = numberOfLevel - 1
-    }
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }
 
@@ -199,7 +192,7 @@ function findIndex(data) {
 
     for(var i = 0; i < data.length; i++) {
         for(var j in data[i]) {
-            if(equal(levelArr[currentLevel], data[i][j][0])) {
+            if(equal(levelArr[items.currentLevel], data[i][j][0])) {
                 return i
             }
         }
@@ -210,11 +203,11 @@ function buildDataset(data, levelSchema) {
 
     var level = []
     var levelArr = (items.mode === 'builtin' && items.levels) ? defaultOperators : items.levelArr
-    var noOfOperators = levelArr[currentLevel].length
+    var noOfOperators = levelArr[items.currentLevel].length
     var index = (items.mode === 'builtin' && items.levels) ? findIndex(data) : noOfOperators - 1
 
     for(var j in data[index]) {
-        if(equal(levelArr[currentLevel], data[index][j][0])) {
+        if(equal(levelArr[items.currentLevel], data[index][j][0])) {
             questions = data[index][j][1]
             break
         }
@@ -222,7 +215,7 @@ function buildDataset(data, levelSchema) {
 
     var questions = Core.shuffle(questions)
 
-    for(var m = 0 ; m < levelSchema[currentLevel] ; ++ m) {
+    for(var m = 0 ; m < levelSchema[items.currentLevel] ; ++ m) {
         level.push(questions[m])
     }
     return level
