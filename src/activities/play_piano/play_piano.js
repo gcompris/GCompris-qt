@@ -12,7 +12,6 @@
 .import QtQuick 2.12 as Quick
 .import "qrc:/gcompris/src/core/core.js" as Core
 
-var currentLevel = 0
 var currentSubLevel = 0
 var numberOfLevel = 10
 var noteIndexAnswered
@@ -23,7 +22,7 @@ var isIntroductoryAudioPlaying = false
 
 function start(items_) {
     items = items_
-    currentLevel = 0
+    items.currentLevel = Core.getInitialLevel(numberOfLevel)
     levels = items.parser.parseFromUrl("qrc:/gcompris/src/activities/play_piano/dataset.json").levels
     items.introductoryAudioTimer.start()
     initLevel()
@@ -35,14 +34,13 @@ function stop() {
 }
 
 function initLevel() {
-    items.bar.level = currentLevel + 1
     currentSubLevel = 0
-    Core.shuffle(levels[currentLevel])
+    Core.shuffle(levels[items.currentLevel])
     nextSubLevel()
 }
 
 function initSubLevel() {
-    var currentSubLevelMelody = levels[currentLevel][currentSubLevel - 1]
+    var currentSubLevelMelody = levels[items.currentLevel][currentSubLevel - 1]
     noteIndexAnswered = -1
     items.multipleStaff.loadFromData(currentSubLevelMelody)
 
@@ -54,7 +52,7 @@ function nextSubLevel() {
     currentSubLevel++
     incorrectAnswers = []
     items.score.currentSubLevel = currentSubLevel
-    if(currentSubLevel > levels[currentLevel].length)
+    if(currentSubLevel > levels[items.currentLevel].length)
         nextLevel()
     else
         initSubLevel()
@@ -71,7 +69,7 @@ function undoPreviousAnswer() {
 }
 
 function checkAnswer(noteName) {
-    var currentSubLevelNotes = levels[currentLevel][currentSubLevel - 1].split(' ')
+    var currentSubLevelNotes = levels[items.currentLevel][currentSubLevel - 1].split(' ')
     if(noteIndexAnswered < (currentSubLevelNotes.length - 2)) {
         noteIndexAnswered++
         var currentNote = currentSubLevelNotes[noteIndexAnswered + 1]
@@ -92,15 +90,11 @@ function checkAnswer(noteName) {
 }
 
 function nextLevel() {
-    if(numberOfLevel <= ++currentLevel) {
-        currentLevel = 0
-    }
-    initLevel()
+    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
+    initLevel();
 }
 
 function previousLevel() {
-     if(--currentLevel < 0) {
-        currentLevel = numberOfLevel - 1
-    }
-    initLevel()
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
+    initLevel();
 }

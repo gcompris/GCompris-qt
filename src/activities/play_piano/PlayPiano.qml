@@ -84,7 +84,7 @@ ActivityBase {
             property GCSfx audioEffects: activity.audioEffects
             property alias multipleStaff: multipleStaff
             property alias piano: piano
-            property alias bar: bar
+            property int currentLevel: activity.currentLevel
             property alias bonus: bonus
             property alias score: score
             property alias iAmReady: iAmReady
@@ -197,7 +197,7 @@ ActivityBase {
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.bottom: bar.top
             anchors.bottomMargin: 20
-            blackLabelsVisible: ([4, 5, 9, 10].indexOf(items.bar.level) != -1)
+            blackLabelsVisible: ([4, 5, 9, 10].indexOf(bar.level) != -1)
             blackKeysEnabled: blackLabelsVisible && !multipleStaff.isMusicPlaying && !introductoryAudioTimer.running
             whiteKeysEnabled: !multipleStaff.isMusicPlaying && !introductoryAudioTimer.running
             whiteKeyNoteLabelsTreble: [ whiteKeyNoteLabelsArray.slice(18, 26) ]
@@ -256,6 +256,7 @@ ActivityBase {
 
         Bar {
             id: bar
+            level: items.currentLevel + 1
             content: BarEnumContent { value: help | home | level | activityConfig }
             onHelpClicked: displayDialog(dialogHelp)
             onPreviousLevelClicked: Activity.previousLevel()
