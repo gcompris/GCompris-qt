@@ -11,8 +11,8 @@
 .pragma library
 .import GCompris 1.0 as GCompris
 .import QtQuick 2.12 as Quick
+.import "qrc:/gcompris/src/core/core.js" as Core
 
-var currentLevel = 0
 var numberOfLevel = 10
 var items
 
@@ -42,7 +42,7 @@ var tutorials = [
 
 function start(items_) {
     items = items_
-    currentLevel = 0
+    items.currentLevel = Core.getInitialLevel(numberOfLevel)
     initLevel()
 }
 
@@ -50,13 +50,12 @@ function stop() {
 }
 
 function initLevel() {
-    items.bar.level = currentLevel + 1
 
     /* Tutorial Levels, display tutorials */
-    if (currentLevel < tutorials.length) {
+    if (items.currentLevel < tutorials.length) {
         items.tutorial.visible = true
         items.tutorial.index = 0
-        items.tutorial.intro = tutorials[currentLevel]
+        items.tutorial.intro = tutorials[items.currentLevel]
     } else {
         items.tutorial.visible = false
     }
@@ -109,9 +108,7 @@ function nextLevel() {
     items.processingAnswer = true
     closeGate()
 
-    if(numberOfLevel <= ++currentLevel) {
-        currentLevel = 0
-    }
+    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }
 
@@ -119,8 +116,6 @@ function previousLevel() {
     items.processingAnswer = true
     closeGate()
 
-    if(--currentLevel < 0) {
-        currentLevel = numberOfLevel - 1
-    }
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }
