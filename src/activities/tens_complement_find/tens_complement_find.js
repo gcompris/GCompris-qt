@@ -8,7 +8,6 @@
 .pragma library
 .import "../../core/core.js" as Core
 
-var currentLevel = 0;
 var numberOfLevel;
 var currentSubLevel = 0;
 var numberOfSubLevel;
@@ -16,9 +15,9 @@ var items;
 
 function start(items_) {
     items = items_;
-    currentLevel = 0;
-    currentSubLevel = 0;
     numberOfLevel = items.levels.length;
+    items.currentLevel = Core.getInitialLevel(numberOfLevel);
+    currentSubLevel = 0;
     initLevel();
 }
 
@@ -26,14 +25,13 @@ function stop() {
 }
 
 function initLevel() {
-    items.bar.level = currentLevel + 1;
     items.score.currentSubLevel = currentSubLevel + 1;
     items.okButton.visible = false;
     items.cardListModel.clear();
     items.holderListModel.clear();
     items.selectedIndex = -1;
 
-    var currentDataset = items.levels[currentLevel];
+    var currentDataset = items.levels[items.currentLevel];
     var equations = [];
     var cards = [];
     if(currentDataset.randomValues) {
@@ -182,9 +180,7 @@ function createEquation(values) {
 }
 
 function nextLevel() {
-    if(numberOfLevel <= ++currentLevel) {
-        currentLevel = 0;
-    }
+    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
     currentSubLevel = 0;
     initLevel();
 }
@@ -198,9 +194,7 @@ function nextSubLevel() {
 }
 
 function previousLevel() {
-    if(--currentLevel < 0) {
-        currentLevel = numberOfLevel - 1;
-    }
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
     currentSubLevel = 0;
     initLevel();
 }
