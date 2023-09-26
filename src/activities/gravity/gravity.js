@@ -42,7 +42,6 @@ var levels = [
             }
         ]
 
-var currentLevel = 0;
 var numberOfLevel = levels.length;
 var items;
 var message;
@@ -61,7 +60,7 @@ var planetsCounter = 0;
 
 function start(items_,message_) {
     items = items_;
-    currentLevel = 0;
+    items.currentLevel = Core.getInitialLevel(numberOfLevel);
     message = message_;
     initLevel();
 }
@@ -76,16 +75,15 @@ function stop() {
 }
 
 function initLevel() {
-    items.bar.level = currentLevel + 1;
     stop();
-    items.planetFrequency = levels[currentLevel].planetFrequency;
+    items.planetFrequency = levels[items.currentLevel].planetFrequency;
     items.background.initSpace();
     items.explosion.hide();
     items.spaceship.opacity = 100;
     items.spaceshipX = items.background.width * 0.5;
     items.stationDown.stop();
     items.station.y = -items.station.height;
-    controlSpeed = 0.2 * (currentLevel * 0.25 + 1);
+    controlSpeed = 0.2 * (items.currentLevel * 0.25 + 1);
     if(!items.startMessage) {
         items.processTimer.start();
         createPlanet();
@@ -97,16 +95,12 @@ function initLevel() {
 }
 
 function nextLevel() {
-    if(numberOfLevel <= ++currentLevel ) {
-        currentLevel = 0;
-    }
+    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }
 
 function previousLevel() {
-    if(--currentLevel < 0) {
-        currentLevel = numberOfLevel - 1;
-    }
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }
 
@@ -129,7 +123,7 @@ function processKeyRelease(event) {
 }
 
 function createPlanet() {
-    if(planetsCounter < levels[currentLevel].planetCount) {
+    if(planetsCounter < levels[items.currentLevel].planetCount) {
         var planetSide = Math.floor( Math.random() * 2);  
         var planetSize = Math.max(Math.random() * items.maxPlanetSize, items.minPlanetSize);
         if(planetSide == 0) {
@@ -138,7 +132,7 @@ function createPlanet() {
             currentPlanet = items.planet1;
         }
         currentPlanet.source = url + "planet" + Math.floor(Math.random() * 2) + ".webp";
-        currentPlanet.fallDuration = levels[currentLevel].planetFrequency;
+        currentPlanet.fallDuration = levels[items.currentLevel].planetFrequency;
         currentPlanet.height = planetSize;
         currentPlanet.width = planetSize;
         currentPlanet.y = currentPlanet.height * -2;
@@ -158,7 +152,7 @@ function moveSpaceship() {
         var hypothenuse = Math.sqrt(
             Math.pow((currentPlanet.x + (currentPlanet.width * 0.5)) - items.spaceshipX, 2) +
             Math.pow((currentPlanet.y + (currentPlanet.height * 0.5)) - items.spaceshipY, 2));
-        items.gravity = (planetGravity * (currentLevel * 0.33 + 1)) / Math.pow(hypothenuse, 2) * 100;
+        items.gravity = (planetGravity * (items.currentLevel * 0.33 + 1)) / Math.pow(hypothenuse, 2) * 100;
     } else {
         items.gravity = 0;
     }
