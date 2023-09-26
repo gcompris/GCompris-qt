@@ -10,6 +10,7 @@
 
 .pragma library
 .import GCompris 1.0 as GCompris //for ApplicationInfo
+.import "qrc:/gcompris/src/core/core.js" as Core
 
 var levelProperties = [
             {
@@ -60,13 +61,12 @@ var timerDiff = 0
 // The child has to press both key between this laps of time
 var timerinc = 900
 
-var currentLevel = 0
 
 var items
 
 function start(items_) {
     items = items_
-    currentLevel = 0
+    items.currentLevel = Core.getInitialLevel(levelProperties.length)
 
     initLevel()
 
@@ -105,15 +105,14 @@ function endTimer() {
 }
 
 function initLevel() {
-    items.bar.level = currentLevel + 1
-    timerinc = levelProperties[currentLevel].timerInc
+    timerinc = levelProperties[items.currentLevel].timerInc
 
     timerDiff = 0
     items.deltaPressedTimer.stop();
     items.deltaPressedTimer.interval = timerinc
 
     items.background.source = "qrc:/gcompris/src/activities/ballcatch/resource/beach" +
-            levelProperties[currentLevel].backgroundImage + ".svg"
+            levelProperties[items.currentLevel].backgroundImage + ".svg"
 
     items.ball.stop();
     items.ball.reinitBall();
@@ -129,16 +128,12 @@ function initLevel() {
 }
 
 function nextLevel() {
-    if(levelProperties.length <= ++ currentLevel) {
-        currentLevel = 0
-    }
+    items.currentLevel = Core.getNextLevel(items.currentLevel, levelProperties.length);
     initLevel();
 }
 
 function previousLevel() {
-    if(--currentLevel < 0) {
-        currentLevel = levelProperties.length - 1
-    }
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, levelProperties.length);
     initLevel();
 }
 
