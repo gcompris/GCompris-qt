@@ -54,8 +54,8 @@ var levelDataset
 function start(items_, dataset_) {
     items = items_
     dataset = dataset_.get()
-    items.currentLevel = 0
     numberOfLevel = dataset.length
+    items.currentLevel = Core.getInitialLevel(numberOfLevel)
 }
 
 function stop() {
@@ -106,7 +106,6 @@ function changeState(index) {
 }
 
 function initLevel() {
-    items.bar.level = items.currentLevel + 1
     items.score.numberOfSubLevels = dataset[items.currentLevel].numbersToBeConverted.length
     items.score.currentSubLevel = 1
     items.numberOfBulbs = dataset[items.currentLevel].bulbCount
@@ -116,23 +115,13 @@ function initLevel() {
 }
 
 function nextLevel() {
-    if(numberOfLevel <= items.currentLevel + 1) {
-        items.currentLevel = 0
-    }
-    else {
-        ++ items.currentLevel
-    }
+    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
     items.score.currentSubLevel = 1
     initLevel();
 }
 
 function previousLevel() {
-    if(items.currentLevel-1 < 0) {
-        items.currentLevel = numberOfLevel - 1
-    }
-    else {
-        --items.currentLevel
-    }
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
     items.score.currentSubLevel = 1
     initLevel();
 }
