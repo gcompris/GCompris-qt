@@ -44,7 +44,7 @@ ActivityBase {
             property Item main: activity.main
             property GCSfx audioEffects: activity.audioEffects
             property alias background: background
-            property alias bar: bar
+            property int currentLevel: activity.currentLevel
             property alias bonus: bonus
             property alias model: fifteenModel
             property string scene: bar.level < 5 ? Activity.url + "Fishing_Boat_Scene.svg" :
@@ -164,6 +164,7 @@ ActivityBase {
 
         Bar {
             id: bar
+            level: items.currentLevel + 1
             content: BarEnumContent { value: help | home | level }
             onHelpClicked: {
                 displayDialog(dialogHelp)

@@ -14,7 +14,6 @@
 
 var url = "qrc:/gcompris/src/activities/fifteen/resource/"
 
-var currentLevel = 0
 var numberOfLevel = 13
 var items
 
@@ -39,7 +38,7 @@ var palette = [
 
 function start(items_) {
     items = items_
-    currentLevel = 0
+    items.currentLevel = Core.getInitialLevel(numberOfLevel)
     initLevel()
 }
 
@@ -47,7 +46,6 @@ function stop() {
 }
 
 function initLevel() {
-    items.bar.level = currentLevel + 1
 
     // Create the initial array that holds the model data sorted
     var model = []
@@ -55,7 +53,7 @@ function initLevel() {
         model.push(i)
     model.push(0)
 
-    scramble(model, [3, 3], (currentLevel + 2))
+    scramble(model, [3, 3], (items.currentLevel + 2))
 
     items.model.clear()
     for(i = 0; i < 16; i++)
@@ -194,15 +192,11 @@ function processPressedKey(event) {
 }
 
 function nextLevel() {
-    if(numberOfLevel <= ++currentLevel ) {
-        currentLevel = 0
-    }
+    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }
 
 function previousLevel() {
-    if(--currentLevel < 0) {
-        currentLevel = numberOfLevel - 1
-    }
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }
