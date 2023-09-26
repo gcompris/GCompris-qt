@@ -59,7 +59,7 @@ ActivityBase {
         QtObject {
             id: items
             property Item activityPage: activity
-            property alias bar: bar
+            property int currentLevel: activity.currentLevel
             property alias trainModel: trainModel
             property GCAudio audioVoices: activity.audioVoices
             property alias parser: parser
@@ -148,6 +148,7 @@ ActivityBase {
 
         Bar {
             id: bar
+            level: items.currentLevel + 1
             content: BarEnumContent { value: help | home | level | activityConfig }
             onHelpClicked: {
                 displayDialog(dialogHelpLeftRight)

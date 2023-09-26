@@ -20,8 +20,7 @@ var defaultLevelsFile = ":/gcompris/src/activities/click_on_letter/resource/leve
 var maxLettersPerLine = 6;
 
 var levels;
-var currentLevel;
-var maxLevel;
+var numberOfLevel;
 var currentSubLevel;
 var currentLetter;
 var maxSubLevel;
@@ -38,15 +37,14 @@ function start(_items, _mode)
     items = _items;
     mode = _mode;
 
-
     // register the voices for the locale
     var locale = GCompris.ApplicationInfo.getVoicesLocale(items.locale)
     GCompris.DownloadManager.updateResource(GCompris.DownloadManager.getVoicesResourceForLocale(locale))
 
     loadLevels();
-    currentLevel = 0;
     currentSubLevel = 0;
-    maxLevel = levels.length;
+    numberOfLevel = levels.length;
+    items.currentLevel = Core.getInitialLevel(numberOfLevel);
     initLevel();
 }
 
@@ -114,9 +112,8 @@ function shuffleString(s)
 }
 
 function initLevel() {
-    items.bar.level = currentLevel + 1;
     if (currentSubLevel == 0) {
-        level = levels[currentLevel];
+        level = levels[items.currentLevel];
         maxSubLevel = level.questions.split("|").length;
         items.score.numberOfSubLevels = maxSubLevel;
         items.score.currentSubLevel = 1;
@@ -161,18 +158,14 @@ function playLetter(letter) {
 
 function nextLevel() {
     items.audioVoices.clearQueue()
-    if(maxLevel <= ++currentLevel) {
-        currentLevel = 0
-    }
+    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
     currentSubLevel = 0;
     initLevel();
 }
 
 function previousLevel() {
     items.audioVoices.clearQueue()
-    if(--currentLevel < 0) {
-        currentLevel = maxLevel - 1
-    }
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
     currentSubLevel = 0;
     initLevel();
 }
