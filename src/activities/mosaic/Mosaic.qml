@@ -49,7 +49,7 @@ ActivityBase {
             property alias answer: answer
             property alias selector: selector
             property alias background: background
-            property alias bar: bar
+            property int currentLevel: activity.currentLevel
             property alias bonus: bonus
             property string selectedItem
             readonly property var levels: activity.datasetLoader.data
@@ -461,6 +461,7 @@ ActivityBase {
 
         Bar {
             id: bar
+            level: items.currentLevel + 1
             content: BarEnumContent { value: help | home | level | activityConfig}
             onHelpClicked: {
                 displayDialog(dialogHelp)

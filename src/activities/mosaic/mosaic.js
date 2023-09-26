@@ -18,29 +18,27 @@ var selectorModel
 
 var url = "qrc:/gcompris/src/activities/mosaic/resource/"
 
-var currentLevel = 0
 var numberOfLevel
 var items
 
 function start(items_) {
     items = items_
-    currentLevel = 0
-    initLevel()
     numberOfLevel = items.levels.length
+    items.currentLevel = Core.getInitialLevel(numberOfLevel)
+    initLevel()
 }
 
 function stop() {
 }
 
 function initLevel() {
-    items.bar.level = currentLevel + 1
     items.background.areaWithKeyboardFocus = items.selector
     items.selectedItem = ""
-    items.nbItems = items.levels[currentLevel].nbOfCells
-    items.questionLayoutColumns = items.levels[currentLevel].layout[0][0]
-    items.questionLayoutRows = items.levels[currentLevel].layout[0][1]
-    items.modelDisplayLayout = items.levels[currentLevel].modelDisplayLayout
-    selectorModel = items.levels[currentLevel].images
+    items.nbItems = items.levels[items.currentLevel].nbOfCells
+    items.questionLayoutColumns = items.levels[items.currentLevel].layout[0][0]
+    items.questionLayoutRows = items.levels[items.currentLevel].layout[0][1]
+    items.modelDisplayLayout = items.levels[items.currentLevel].modelDisplayLayout
+    selectorModel = items.levels[items.currentLevel].images
 
     items.selector.model = selectorModel
     questionModel = Core.shuffle(selectorModel)
@@ -54,16 +52,12 @@ function initLevel() {
 }
 
 function nextLevel() {
-    if(numberOfLevel <= ++currentLevel ) {
-        currentLevel = 0
-    }
+    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel)
     initLevel();
 }
 
 function previousLevel() {
-    if(--currentLevel < 0) {
-        currentLevel = numberOfLevel - 1
-    }
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }
 
