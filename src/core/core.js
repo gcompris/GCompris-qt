@@ -33,6 +33,50 @@ function shuffle(o) {
 }
 
 /**
+ * Get the starting level. This is used with --start-level option.
+ *
+ * @param numberOfLevel the number of levels for this activity.
+ * @returns 0 if no --start-level or invalid one (request of a level higher than
+ * the level count of the activity), else the level of --start-level option.
+ */
+function getInitialLevel(numberOfLevel) {
+    var level = 0;
+    if(GCompris.ActivityInfoTree.startingLevel > 0 && GCompris.ActivityInfoTree.startingLevel < numberOfLevel) {
+        level = GCompris.ActivityInfoTree.startingLevel;
+    }
+    return level;
+}
+
+/**
+ * Get the next level.
+ *
+ * @param currentLevel the current level.
+ * @param numberOfLevel the number of levels for this activity.
+ * @returns If the next level is after the maximum, returns 0 else return currentLevel + 1.
+ */
+function getNextLevel(currentLevel, numberOfLevel) {
+    var level = currentLevel + 1;
+    if(numberOfLevel <= level) {
+        level = 0;
+    }
+    return level;
+}
+
+/**
+ * Get the previous level.
+ *
+ * @param currentLevel the current level.
+ * @param numberOfLevel the number of levels for this activity.
+ * @returns If the previous level is 0, returns the last level else return currentLevel - 1.
+ */
+function getPreviousLevel(currentLevel, numberOfLevel) {
+    var level = currentLevel - 1;
+    if(level < 0) {
+        level = numberOfLevel - 1;
+    }
+    return level;
+}
+/**
  * Return the filename of the audio voices file for the passed letters
  * (or a number) @p c
  *
