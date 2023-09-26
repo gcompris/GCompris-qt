@@ -10,10 +10,10 @@
  */
 .pragma library
 .import QtQuick 2.12 as Quick
+.import "qrc:/gcompris/src/core/core.js" as Core
 
 var url = "qrc:/gcompris/src/activities/hexagon/resource/"
-var maxNumberOfLevel = 12;
-var currentLevel = 0
+var numberOfLevel = 12;
 var main
 var items
 
@@ -27,7 +27,7 @@ var strawBerryY
 function start(main_, items_) {
     main = main_
     items = items_
-    currentLevel = 0
+    items.currentLevel = Core.getInitialLevel(numberOfLevel)
     initLevel()
 }
 
@@ -36,8 +36,7 @@ function stop() {
 
 function initLevel() {
     items.hexagonModel.clear()
-    items.bar.level = currentLevel + 1
-    nbx = 10 + currentLevel
+    nbx = 10 + items.currentLevel
     nby = Math.floor(nbx * (main.height / main.width))
 
     // Select a random place for the strawberry
@@ -57,16 +56,12 @@ function initLevel() {
 }
 
 function nextLevel() {
-    if(maxNumberOfLevel <= ++currentLevel ) {
-        currentLevel = 0
-    }
+    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }
 
 function previousLevel() {
-    if(--currentLevel < 0) {
-        currentLevel = maxNumberOfLevel - 1
-    }
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }
 
