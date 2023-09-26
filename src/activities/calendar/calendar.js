@@ -14,7 +14,6 @@
 .import GCompris 1.0 as GCompris //for ApplicationInfo
 .import "qrc:/gcompris/src/core/core.js" as Core
 
-var currentLevel = 0
 var numberOfLevel
 var currentSubLevel = 1
 var currentDataSet
@@ -30,7 +29,7 @@ function start(items_, dataset_) {
     items = items_
     dataset = dataset_.get()
     numberOfLevel = dataset.length
-    currentLevel = 0
+    items.currentLevel = Core.getInitialLevel(numberOfLevel)
 
     if(Qt.locale(GCompris.ApplicationSettings.locale).firstDayOfWeek == Qml.Locale.Monday) {
         items.daysOfTheWeekModel.move(0, items.daysOfTheWeekModel.count - 1, 1)
@@ -43,23 +42,18 @@ function stop() {
 
 function initLevel() {
     currentSubLevel = 1;
-    items.bar.level = currentLevel + 1
-    currentLevelConfig = dataset[currentLevel][0][0]
+    currentLevelConfig = dataset[items.currentLevel][0][0]
     setCalendarConfigurations()
     initQuestion();
 }
 
 function nextLevel() {
-    if(numberOfLevel <= ++currentLevel) {
-        currentLevel = 0
-    }
+    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }
 
 function previousLevel() {
-    if(--currentLevel < 0) {
-        currentLevel = numberOfLevel - 1
-    }
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }
 
@@ -75,7 +69,7 @@ function setCalendarConfigurations() {
     items.calendar.currentDate = new Date(currentLevelConfig["visibleYear"], currentLevelConfig["visibleMonth"], items.calendar.selectedDay)
     items.answerChoices.visible = (mode === "findDayOfWeek") ? true : false
     items.okButton.visible = !items.answerChoices.visible
-    currentDataSet = dataset[currentLevel][1]
+    currentDataSet = dataset[items.currentLevel][1]
     currentDataSet = Core.shuffle(currentDataSet)
     items.score.numberOfSubLevels = currentDataSet.length
     items.score.currentSubLevel = currentSubLevel
