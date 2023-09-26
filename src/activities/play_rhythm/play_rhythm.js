@@ -12,7 +12,6 @@
 .import QtQuick 2.12 as Quick
 .import "qrc:/gcompris/src/core/core.js" as Core
 
-var currentLevel = 0
 var numberOfLevel
 var currentSubLevel = 0
 var currentNote = 0
@@ -22,9 +21,9 @@ var isIntroductoryAudioPlaying = false
 
 function start(items_) {
     items = items_
-    currentLevel = 0
     levels = items.parser.parseFromUrl("qrc:/gcompris/src/activities/play_rhythm/resource/dataset.json").levels
     numberOfLevel = levels.length
+    items.currentLevel = Core.getInitialLevel(numberOfLevel)
     items.introductoryAudioTimer.start()
     initLevel()
 }
@@ -36,11 +35,10 @@ function stop() {
 }
 
 function initLevel() {
-    items.bar.level = currentLevel + 1
     currentSubLevel = 0
-    Core.shuffle(levels[currentLevel].melodies)
-    items.multipleStaff.isPulseMarkerDisplayed = levels[currentLevel].pulseMarkerVisible
-    items.isMetronomeVisible = levels[currentLevel].metronomeVisible
+    Core.shuffle(levels[items.currentLevel].melodies)
+    items.multipleStaff.isPulseMarkerDisplayed = levels[items.currentLevel].pulseMarkerVisible
+    items.isMetronomeVisible = levels[items.currentLevel].metronomeVisible
     nextSubLevel()
     currentNote = 0
 }
@@ -78,7 +76,7 @@ function initSubLevel() {
      items.metronomeOscillation.stop()
      items.multipleStaff.stopAudios()
      currentNote = 0
-     var currentSubLevelMelody = levels[currentLevel].melodies[currentSubLevel - 1]
+     var currentSubLevelMelody = levels[items.currentLevel].melodies[currentSubLevel - 1]
      items.multipleStaff.loadFromData(currentSubLevelMelody)
      items.background.isRhythmPlaying = true
      items.isWrongRhythm = false
@@ -88,15 +86,11 @@ function initSubLevel() {
 }
 
 function nextLevel() {
-    if(numberOfLevel <= ++currentLevel) {
-        currentLevel = 0
-    }
+    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
     initLevel()
 }
 
 function previousLevel() {
-    if(--currentLevel < 0) {
-        currentLevel = numberOfLevel - 1
-    }
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
     initLevel()
 }
