@@ -7,7 +7,6 @@
 .pragma library
 .import "qrc:/gcompris/src/core/core.js" as Core
 
-var currentLevel = 0;
 var numberOfLevel;
 var items;
 var datasets = [];
@@ -17,7 +16,6 @@ var previousSelectedCard = undefined;
 
 function start(items_) {
     items = items_
-    currentLevel = 0
     datasets.length = 0;
     for(var indexForDataset = 0; indexForDataset < items.levels.length; indexForDataset++) {
         for(var indexForLevel = 0; indexForLevel < items.levels[indexForDataset].value.length; indexForLevel++) {
@@ -26,6 +24,7 @@ function start(items_) {
     }
     numberOfDatasetLevel = items.levels.length;
     numberOfLevel = datasets.length;
+    items.currentLevel = Core.getInitialLevel(numberOfLevel);
     initLevel();
 }
 
@@ -34,12 +33,11 @@ function stop() {
 }
 
 function initLevel() {
-    items.bar.level = currentLevel + 1;
     clearListModels();
     previousSelectedCard = undefined;
-    for(var indexOfListModel = 0; indexOfListModel < datasets[currentLevel].length; indexOfListModel++) {
+    for(var indexOfListModel = 0; indexOfListModel < datasets[items.currentLevel].length; indexOfListModel++) {
         var model = [];
-        var valueArray = getValueArray(datasets[currentLevel][indexOfListModel]);
+        var valueArray = getValueArray(datasets[items.currentLevel][indexOfListModel]);
         for(var indexOfDisplayArray = 0; indexOfDisplayArray < valueArray.length - 1; indexOfDisplayArray++) {
             var card = {};
             if(!Number.isNaN(parseInt(valueArray[indexOfDisplayArray]))) {
@@ -166,9 +164,7 @@ function selectCard(currentSelectedCard) {
 }
 
 function nextLevel() {
-    if(numberOfLevel <= ++currentLevel) {
-        currentLevel = 0;
-    }
+    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }
 
@@ -176,14 +172,12 @@ function nextDatasetLevel() {
     if(numberOfDatasetLevel <= ++currentDatasetLevel) {
         currentDatasetLevel = 0;
     }
-    currentLevel = 0;
+    items.currentLevel = 0;
     initLevel();
 }
 
 function previousLevel() {
-    if(--currentLevel < 0) {
-        currentLevel = numberOfLevel - 1;
-    }
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }
 
