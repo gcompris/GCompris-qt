@@ -9,8 +9,8 @@
  */
 .pragma library
 .import QtQuick 2.12 as Quick
+.import "qrc:/gcompris/src/core/core.js" as Core
 
-var currentLevel = 0
 var numberOfLevel = 5
 var items
 var url = "qrc:/gcompris/src/activities/nine_men_morris/resource/"
@@ -49,7 +49,7 @@ var tutorialInstructions = [
 
 function start(items_, twoPlayer_) {
     items = items_
-    currentLevel = 1
+    items.currentLevel = Core.getInitialLevel(numberOfLevel)
     twoPlayer = twoPlayer_
     numberOfLevel = 6
     numberOfPieces = 9
@@ -251,7 +251,6 @@ function stop() {
 }
 
 function initLevel() {
-    items.bar.level = currentLevel
     items.turn = 0
     items.gameDone = false
     items.firstPhase = true
@@ -292,16 +291,12 @@ function initLevel() {
 }
 
 function nextLevel() {
-    if(numberOfLevel <= ++currentLevel) {
-        currentLevel = 1
-    }
+    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
     reset();
 }
 
 function previousLevel() {
-    if(--currentLevel < 1) {
-        currentLevel = numberOfLevel - 1
-    }
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
     reset();
 }
 
@@ -347,7 +342,7 @@ function initiatePlayer2() {
 //Change scale of score boxes according to turns
 function changeScale() {
    if(items.playSecond) {
-        if(items.turn % 2 == 0){
+        if(items.turn % 2 == 0) {
             items.player2score.beginTurn();
             items.player1score.endTurn();
         }
@@ -371,7 +366,7 @@ function changeScale() {
 //Create the piece at given position
 function handleCreate(index) {
     items.pieceBeingMoved = true
-    currentPiece = currentRepeater.itemAt(items.turn/2)
+    currentPiece = currentRepeater.itemAt(items.turn / 2)
     if(currentPiece.state == "2") {
         items.secondPieceNumberCount--
         numberOfSecondPieces++
@@ -463,7 +458,7 @@ function shouldComputerPlay() {
 
 function doMove() {
     if(items.firstPhase) {
-        if(currentLevel < 5)
+        if(items.currentLevel < 4)
             var index = setFirstPhaseMove()
         else {
             var boardPiecesLeft = items.firstPieceNumberCount + items.secondPieceNumberCount
@@ -472,13 +467,13 @@ function doMove() {
         }
         handleCreate(index)
     }
-    else if(currentLevel < 5 && ((currentPiece.state == "2" && numberOfFirstPieces > 3) ||
+    else if(items.currentLevel < 4 && ((currentPiece.state == "2" && numberOfFirstPieces > 3) ||
            (currentPiece.state == "1" && numberOfSecondPieces > 3))) {
         var index = setSecondPhaseMove()
         currentPiece = currentRepeater.itemAt(index[0])
         movePiece(index[1])
     }
-    else if(currentLevel < 5){
+    else if(items.currentLevel < 4) {
         var index = setThirdPhaseMove()
         currentPiece = currentRepeater.itemAt(index[0])
         movePiece(index[1])
@@ -498,13 +493,13 @@ function setFirstPhaseMove() {
     var playerState = items.playSecond ? "2" : "1"
     var computerState = items.playSecond ? "1" : "2"
 
-    if(currentLevel > 1) {
+    if(items.currentLevel > 0) {
         var value = evaluateBoard(computerState)
         if(value != -1)
             return value
     }
 
-    if(currentLevel > 2) {
+    if(items.currentLevel > 1) {
         var value = evaluateBoard(playerState)
         if(value != -1)
             return value
@@ -533,7 +528,7 @@ function setSecondPhaseMove() {
     var index = []
     var found = false
 
-    if(currentLevel > 1) {
+    if(items.currentLevel > 0) {
         for(var i = 0 ; i < numberOfPieces ; ++i) {
             var piece = currentRepeater.itemAt(i)
             if(piece.visible) {
@@ -573,7 +568,7 @@ function setSecondPhaseMove() {
     }
 
     var playerState = items.playSecond ? "2" : "1"
-    if(currentLevel > 2) {
+    if(items.currentLevel > 1) {
         for(var i = 0 ; i < numberOfPieces ; ++i) {
             var piece = currentRepeater.itemAt(i)
             if(piece.visible) {
@@ -713,7 +708,7 @@ function setThirdPhaseMove() {
     var computerState = items.playSecond ? "1" : "2"
     var index = []
 
-    if(currentLevel > 2) {
+    if(items.currentLevel > 1) {
         for(var i = 0 ; i < numberOfDragPoints ; ++i) {
             if(items.dragPoints.itemAt(i).state == "EMPTY") {
                 var value = checkMillThirdPhase(i, computerState)
@@ -745,7 +740,7 @@ function setThirdPhaseMove() {
     var randno = Math.floor((Math.random() * permittedPieceIndex.length))
     index[0] = permittedPieceIndex[randno]
 
-    if(currentLevel > 3) {
+    if(items.currentLevel > 2) {
         for(var i = 0 ; i < numberOfDragPoints ; ++i) {
             if(items.dragPoints.itemAt(i).state == "EMPTY") {
                 if(checkMillPossible(i,playerState)) {
@@ -944,7 +939,7 @@ function updateRemovablePiece() {
         }
         items.instructionTxt = qsTr("Remove a piece")
     }
-    else if(currentLevel < 5) {
+    else if(items.currentLevel < 4) {
         if(items.firstPhase)
             otherRepeater.itemAt(getFirstPhaseRemoveIndex()).remove()
         else
@@ -977,7 +972,7 @@ function getFirstPhaseRemoveIndex() {
         }
     }
 
-    if(currentLevel > 4) {
+    if(items.currentLevel > 3) {
         var index = evaluateBoard(playerState)
         if(index != -1) {
             var value = -1

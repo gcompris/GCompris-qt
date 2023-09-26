@@ -66,7 +66,7 @@ ActivityBase {
             property bool firstPhase
             property bool pieceBeingMoved
 
-            property alias bar: bar
+            property int currentLevel: activity.currentLevel
             property alias bonus: bonus
             property alias instructionTxt: instruction.text
             property alias tutorialSection: tutorialSection
@@ -347,6 +347,7 @@ ActivityBase {
 
         Bar {
             id: bar
+            level: items.currentLevel + 1
             content: BarEnumContent { value: twoPlayer ? (help | home | reload)
                                                        : tutorialImage.visible ? (help | home)
                                                        : (help | home | level | reload) }
