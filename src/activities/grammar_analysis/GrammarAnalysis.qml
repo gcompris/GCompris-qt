@@ -52,7 +52,7 @@ ActivityBase {
             id: items
             property Item activityPage: activity
             property alias background: background
-            property alias bar: bar
+            property int currentLevel: activity.currentLevel
             property alias bonus: bonus
             property alias locale: background.locale
             // Qml models
@@ -306,6 +306,7 @@ ActivityBase {
 
         Bar {
             id: bar
+            level: items.currentLevel + 1
             content: BarEnumContent { value: tutorialScreen.visible ? help | home : help | home | level | activityConfig }
             onHelpClicked: displayDialog(dialogHelp)
             onActivityConfigClicked: displayDialog(dialogActivityConfig)

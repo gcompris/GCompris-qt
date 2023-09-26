@@ -22,7 +22,6 @@ const defaultLevelsFile = "en";
 var dataSetUrl = ""
 var syntaxList = []
 
-var currentLevel
 var numberOfLevel
 var grammarMode
 var translationMode
@@ -117,7 +116,6 @@ function start(items_, grammarMode_, translationMode_) {
     grammarMode = grammarMode_
     translationMode = translationMode_
     dataSetUrl = "qrc:/gcompris/src/activities/grammar" + grammarMode + "/resource/"
-    currentLevel = 0
     numberOfLevel = 0
     items.currentExercise = 0
     loadDatas();
@@ -125,6 +123,7 @@ function start(items_, grammarMode_, translationMode_) {
 
     checkLevels()
     numberOfLevel = datas["levels"].length
+    items.currentLevel = Core.getInitialLevel(numberOfLevel)
     items.wordsFlow.layoutDirection = (datas.rightToLeft) ? Qt.LeftToRight : Qt.RightToLeft
     initSyntax()
     initExercises()
@@ -177,9 +176,9 @@ function initExercises() {
         // Garder le premier
     }
     items.datasetModel.clear()
-    var exercises = datas.dataset[datas["levels"][currentLevel].exercise];
+    var exercises = datas.dataset[datas["levels"][items.currentLevel].exercise];
     for (var i = 0; i < exercises.length ; i++) {
-        var parsed = analyzeExercise(currentLevel, exercises[i])
+        var parsed = analyzeExercise(items.currentLevel, exercises[i])
         if (checkExercise(parsed, translationMode)) {
             items.datasetModel.append({ "exercise" : exercises[i] })
         }
@@ -206,7 +205,6 @@ function initSyntax() {
 }
 
 function initLevel() {
-    items.bar.level = currentLevel + 1
     items.selectedClass = 0
     items.selectedBox = 0
     items.keysOnTokens = true
@@ -216,17 +214,13 @@ function initLevel() {
 
 function nextLevel() {
     items.currentExercise = 0
-    if(numberOfLevel <= ++currentLevel) {
-        currentLevel = 0
-    }
+    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
     initExercises()
     initLevel();
 }
 
 function previousLevel() {
-    if(--currentLevel < 0) {
-        currentLevel = numberOfLevel - 1
-    }
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
     if (datas === null) return
     items.currentExercise = 0
     initExercises()
@@ -330,9 +324,9 @@ function handleKeys(event) {
 
 // Build datas for answerModel
 function buildAnswer() {
-    var parsed = analyzeExercise(currentLevel, items.datasetModel.get(items.currentExercise).exercise)
+    var parsed = analyzeExercise(items.currentLevel, items.datasetModel.get(items.currentExercise).exercise)
     checkExercise(parsed)       // Add isValid flag
-    items.objective.text = datas["levels"][currentLevel].objective
+    items.objective.text = datas["levels"][items.currentLevel].objective
     var idx = 0
     var word
     // Update answerModel
