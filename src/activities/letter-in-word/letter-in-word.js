@@ -22,7 +22,6 @@ var url = "qrc:/gcompris/src/activities/letter-in-word/resource/"
 var resUrl = "qrc:/gcompris/src/activities/braille_fun/resource/"
 
 var levels;
-var currentLevel;
 var maxLevel;
 var currentSubLevel;
 var currentLetter;
@@ -42,9 +41,9 @@ function start(_items) {
     GCompris.DownloadManager.updateResource(GCompris.DownloadManager.getVoicesResourceForLocale(locale));
     loadDataset();
     levels = Lang.getAllLessons(dataset);
-    currentLevel = 0;
     currentSubLevel = 0;
     maxLevel = levels.length;
+    items.currentLevel = Core.getInitialLevel(maxLevel);
     initLevel();
 }
 
@@ -75,9 +74,8 @@ function shuffleString(s) {
 }
 
 function initLevel() {
-    items.bar.level = currentLevel + 1;
     if (currentSubLevel == 0 && !incorrectFlag) {
-        var level = levels[currentLevel];
+        var level = levels[items.currentLevel];
         words = Lang.getLessonWords(dataset, level);
         Core.shuffle(words);
         var limit = Math.min(items.currentMode, words.length);
@@ -171,18 +169,14 @@ function playLetter(letter) {
 
 function nextLevel() {
     items.audioVoices.clearQueue()
-    if(maxLevel <= ++currentLevel) {
-        currentLevel = 0
-    }
+    items.currentLevel = Core.getNextLevel(items.currentLevel, maxLevel);
     currentSubLevel = 0;
     initLevel();
 }
 
 function previousLevel() {
     items.audioVoices.clearQueue()
-    if(--currentLevel < 0) {
-        currentLevel = maxLevel - 1
-    }
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, maxLevel);
     currentSubLevel = 0;
     initLevel();
 }

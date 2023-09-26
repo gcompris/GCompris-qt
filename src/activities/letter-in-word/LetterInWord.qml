@@ -52,7 +52,7 @@ ActivityBase {
         QtObject {
             id: items
             property Item activityPage: activity
-            property alias bar: bar
+            property int currentLevel: activity.currentLevel
             property alias background: background
             property alias wordsModel: wordsModel
             property int currentLetterCase: ApplicationSettings.fontCapitalization
@@ -119,6 +119,7 @@ ActivityBase {
 
         Bar {
             id: bar
+            level: items.currentLevel + 1
             content: BarEnumContent { value: help | home | level | activityConfig }
             onHelpClicked: {
                 displayDialog(dialogHelpLeftRight)
