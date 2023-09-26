@@ -11,7 +11,6 @@
 
 var url = "qrc:/gcompris/src/activities/colors/resource/"
 
-var currentLevel
 var numberOfLevel
 var items
 var dataset
@@ -27,8 +26,8 @@ function start(items_, dataset_, mode_) {
         Core.checkForVoices(items_.activityPage);
     items = items_
     dataset = dataset_.get()
-    currentLevel = 0
     numberOfLevel = dataset.length
+    items.currentLevel = Core.getInitialLevel(numberOfLevel)
     items.firstQuestion = true
     items.audioOk = false
     items.score.currentSubLevel = 1
@@ -39,22 +38,21 @@ function stop() {
 }
 
 function initLevel() {
-    items.bar.level = currentLevel + 1
     items.modelCopied = false
     tempModel = []
     items.containerModel.clear()
     currentQuestion = 0
-    items.objectCount = dataset[currentLevel].length
-    dataset[currentLevel] = Core.shuffle(dataset[currentLevel])
+    items.objectCount = dataset[items.currentLevel].length
+    dataset[items.currentLevel] = Core.shuffle(dataset[items.currentLevel])
 
-    for(var i = 0;  i < dataset[currentLevel].length; ++i) {
-        tempModel.push(dataset[currentLevel][i])
+    for(var i = 0;  i < dataset[items.currentLevel].length; ++i) {
+        tempModel.push(dataset[items.currentLevel][i])
     }
 
-    items.score.numberOfSubLevels = dataset[currentLevel].length
+    items.score.numberOfSubLevels = dataset[items.currentLevel].length
 
     // Shuffle again not to ask the question in the model order
-    dataset[currentLevel] = Core.shuffle(dataset[currentLevel])
+    dataset[items.currentLevel] = Core.shuffle(dataset[items.currentLevel])
     hasWon = false
     items.initAnim.restart()
     items.objectSelected = false
@@ -68,7 +66,7 @@ function tempModelToContainer() {
 }
 
 function nextQuestion() {
-    if(dataset[currentLevel].length <= currentQuestion + 1) {
+    if(dataset[items.currentLevel].length <= currentQuestion + 1) {
         items.fadeOutAnim.restart()
         items.bonus.good("flower")
         hasWon = true
@@ -81,24 +79,20 @@ function nextQuestion() {
 
 function nextLevel() {
     items.score.currentSubLevel = 1
-    if(numberOfLevel <= ++currentLevel) {
-        currentLevel = 0
-    }
+    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }
 
 function previousLevel() {
     items.score.currentSubLevel = 1
-    if(--currentLevel < 0) {
-        currentLevel = numberOfLevel - 1
-    }
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }
 
 function getCurrentTextQuestion() {
-    return dataset[currentLevel][currentQuestion].text
+    return dataset[items.currentLevel][currentQuestion].text
 }
 
 function getCurrentAudioQuestion() {
-    return dataset[currentLevel][currentQuestion].audio
+    return dataset[items.currentLevel][currentQuestion].audio
 }
