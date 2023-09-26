@@ -59,12 +59,11 @@ var levels = [
 
 
 var currentImageId;
-var currentLevel;
 var items
 
 function start(items_) {
     items = items_
-    currentLevel = 0
+    items.currentLevel = Core.getInitialLevel(levels.length)
     items.score.currentSubLevel = 0
     initLevel()
 }
@@ -74,10 +73,9 @@ function stop() {
 }
 
 function initLevel() {
-    items.bar.level = currentLevel + 1
     currentImageId = 0
     currentHands = new Array()
-    var level = levels[currentLevel]
+    var level = levels[items.currentLevel]
     var counter = 0
     for (var i = 0 ; i < level.images.length ; i++) {
         for (var r = 0 ; r < level.rotations.length ; r++) {
@@ -94,17 +92,13 @@ function initLevel() {
 }
 
 function nextLevel() {
-    if(levels.length <= ++currentLevel ) {
-        currentLevel = 0
-    }
+    items.currentLevel = Core.getNextLevel(items.currentLevel, levels.length);
     items.score.currentSubLevel = 0
     initLevel();
 }
 
 function previousLevel() {
-    if(--currentLevel < 0) {
-        currentLevel = levels.length - 1
-    }
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, levels.length);
     items.score.currentSubLevel = 0
     initLevel();
 }
