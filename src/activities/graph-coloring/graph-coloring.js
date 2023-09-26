@@ -10,8 +10,8 @@
  */
 .pragma library
 .import QtQuick 2.12 as Quick
+.import "qrc:/gcompris/src/core/core.js" as Core
 
-var currentLevel = 0
 var items
 var url = "qrc:/gcompris/src/activities/graph-coloring/resource/"
 var coloringLeft
@@ -222,7 +222,7 @@ var numberOfLevel = levels.length
 
 function start(items_) {
     items = items_
-    currentLevel = 0
+    items.currentLevel = Core.getInitialLevel(numberOfLevel)
     initLevel()
 }
 
@@ -231,13 +231,12 @@ function stop() {
 
 function initLevel() {
     coloringLeft = true
-    items.bar.level = currentLevel + 1
     var currentIndeces = new Array();
-    var levelData = levels[currentLevel].graph
+    var levelData = levels[items.currentLevel].graph
     items.colorsRepeater.model.clear();
     items.nodesRepeater.model.clear();
     items.edgesRepeater.model.clear();
-    var numColors = levelData.minColor + levels[currentLevel].extraColor;
+    var numColors = levelData.minColor + levels[items.currentLevel].extraColor;
     for (var i = 0; i < numColors; ++i) {
         currentIndeces[i] = i;
         items.colorsRepeater.model.append({"itemIndex": i});
@@ -269,7 +268,7 @@ function initLevel() {
 
 function checkGuess() {
     var flag = false;
-    var levelData = levels[currentLevel].graph
+    var levelData = levels[items.currentLevel].graph
     //Check whether all the nodes have been colored or not
     for (var i = 0; i < levelData.nodePositions.length; i++){
         var node1 = items.nodesRepeater.model.get(i)
@@ -297,7 +296,7 @@ function checkGuess() {
 }
 
 function checkAdjacent() {
-    var levelData = levels[currentLevel].graph
+    var levelData = levels[items.currentLevel].graph
     var flagNodes = new Array(levelData.nodePositions.length)
     for (var i = 0; i < levelData.nodePositions.length; i++){
         flagNodes[i] = false
@@ -332,16 +331,12 @@ function checkAdjacent() {
 }
 
 function nextLevel() {
-    if(numberOfLevel <= ++currentLevel ) {
-        currentLevel = 0
-    }
+    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }
 
 function previousLevel() {
-    if(--currentLevel < 0) {
-        currentLevel = numberOfLevel - 1
-    }
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }
 
