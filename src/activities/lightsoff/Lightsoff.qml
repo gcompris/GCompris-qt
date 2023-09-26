@@ -47,7 +47,7 @@ ActivityBase {
             id: items
             property Item main: activity.main
             property alias background: background
-            property alias bar: bar
+            property int currentLevel: activity.currentLevel
             property alias bonus: bonus
             property bool isPortrait: (background.height >= background.width - tux.width)
             property alias nightSky: nightSky.opacity
@@ -264,6 +264,7 @@ ActivityBase {
 
         Bar {
             id: bar
+            level: items.currentLevel + 1
             content: BarEnumContent {
                 value: help | home | level | reload | activityConfig
             }

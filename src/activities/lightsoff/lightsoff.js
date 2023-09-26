@@ -8,8 +8,9 @@
 *
 *   SPDX-License-Identifier: GPL-3.0-or-later
 */
+.import "qrc:/gcompris/src/core/core.js" as Core
+
 var levels
-var currentLevel = 0
 var numberOfLevel
 var items
 var table
@@ -21,20 +22,19 @@ var url = "qrc:/gcompris/src/activities/lightsoff/resource/"
 
 function start(items_) {
     items = items_
-    currentLevel = 0
     numberOfLevel = items.levels.length
+    items.currentLevel = Core.getInitialLevel(numberOfLevel)
     initLevel()
 }
 
 function stop() {}
 
 function initLevel() {
-    items.bar.level = currentLevel + 1
 
     /* Is it a static or dynamic level ? */
-    if (items.levels[currentLevel].dynamic) {
+    if (items.levels[items.currentLevel].dynamic) {
         /* Dynamic */
-        size = items.levels[currentLevel].size
+        size = items.levels[items.currentLevel].size
         table = new Array(size * size)
         soluc = new Array(size * size)
         for (var i = 0; i < size * size; ++i) {
@@ -42,14 +42,14 @@ function initLevel() {
             soluc[i] = 0
         }
 
-        for (var j = 0; j < currentLevel; ++j) {
+        for (var j = 0; j < items.currentLevel; ++j) {
             switchLightNoCheck(Math.floor(size * size * Math.random()))
         }
     } else {
         /* Static */
-        size = items.levels[currentLevel].size
-        table = items.levels[currentLevel].level.slice(0)
-        soluc = items.levels[currentLevel].solution.slice(0)
+        size = items.levels[items.currentLevel].size
+        table = items.levels[items.currentLevel].level.slice(0)
+        soluc = items.levels[items.currentLevel].solution.slice(0)
     }
     showSoluce = false
     items.modelTable.clear()
@@ -59,16 +59,12 @@ function initLevel() {
 }
 
 function nextLevel() {
-    if (numberOfLevel <= ++currentLevel) {
-        currentLevel = 0
-    }
+    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
     initLevel()
 }
 
 function previousLevel() {
-    if (--currentLevel < 0) {
-        currentLevel = numberOfLevel - 1
-    }
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
     initLevel()
 }
 
