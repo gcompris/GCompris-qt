@@ -12,6 +12,7 @@
 .pragma library
 .import QtQuick 2.12 as Quick
 .import GCompris 1.0 as GCompris //for ApplicationInfo
+.import "qrc:/gcompris/src/core/core.js" as Core
 
 var iceBlocksLayout = [[0, 0],[1, 0],[2, 0],[3, 0],[4, 0],
                        [4, 1],[4, 2],[4, 3],[4, 4],[3, 4],
@@ -42,14 +43,13 @@ var fishes = [
 var numberOfFish
 var fishIndex = -1
 
-var currentLevel = 0
 var numberOfLevel = 0
 var items
 
 function start(items_) {
     items = items_
-    currentLevel = 0
     numberOfLevel = items.levels.length
+    items.currentLevel = Core.getInitialLevel(numberOfLevel)
     initLevel()
 }
 
@@ -58,13 +58,12 @@ function stop() {
 }
 
 function initLevel() {
-    items.bar.level = currentLevel + 1
     items.tuxIsMoving = false
     items.tuxCanMove = true
     items.chooseDiceBar.value1 = 0
     items.chooseDiceBar.value2 = 0
-    items.chooseDiceBar.valueMax = items.levels[currentLevel].maxNumber
-    numberOfFish = items.levels[currentLevel].numberOfFish
+    items.chooseDiceBar.valueMax = items.levels[items.currentLevel].maxNumber
+    numberOfFish = items.levels[items.currentLevel].numberOfFish
 
     fishIndex = 0
     tuxIceBlockNumber = 0
@@ -173,9 +172,9 @@ var previousFishIndex = 0
 function calculateNextPlaceFishToReach() {
     var index, newFishIndex
     do {
-        index = Math.floor(Math.random() * (items.levels[currentLevel].values.length))
-        newFishIndex = items.levels[currentLevel].values[index]
-    } while(items.levels[currentLevel].values.length > 2 &&     /* Allow repetition for array size 2 */
+        index = Math.floor(Math.random() * (items.levels[items.currentLevel].values.length))
+        newFishIndex = items.levels[items.currentLevel].values[index]
+    } while(items.levels[items.currentLevel].values.length > 2 &&     /* Allow repetition for array size 2 */
         ((newFishIndex === previousFishIndex) || (newFishIndex >= iceBlocksLayout.length)))
     previousFishIndex = newFishIndex
 
@@ -197,16 +196,12 @@ function placeFishToReach() {
 }
 
 function nextLevel() {
-    if(numberOfLevel <= ++currentLevel) {
-        currentLevel = 0
-    }
+    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }
 
 function previousLevel() {
-    if(--currentLevel < 0) {
-        currentLevel = numberOfLevel - 1
-    }
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }
 
