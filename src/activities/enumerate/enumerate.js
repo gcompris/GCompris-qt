@@ -17,7 +17,6 @@ var url2 = "qrc:/gcompris/src/activities/algorithm/resource/";
 var items;
 var maxSubLevel;
 var dataset;
-var currentLevel;
 var currentSubLevel;
 var numberOfLevel;
 var numberOfItemType;
@@ -49,7 +48,9 @@ var globalZ = 0;
 function start(items_) {
     items = items_;
     answersMode = items.mode;
-    currentLevel = 0;
+    dataset = items.levels;
+    numberOfLevel = dataset.length;
+    items.currentLevel = Core.getInitialLevel(numberOfLevel);
     initLevel();
 }
 
@@ -59,31 +60,24 @@ function stop() {
 
 function initLevel() {
     if(items.levels) {
-        items.instructionText = items.levels[currentLevel].objective;
+        items.instructionText = items.levels[items.currentLevel].objective;
         items.instruction.opacity = 0.8;
     }
-    items.bar.level = currentLevel + 1;
-    dataset = items.levels;
-    numberOfLevel = dataset.length;
     currentSubLevel = 0;
-    numberOfItemType = dataset[currentLevel].numberOfItemType;
-    numberOfItemMax = dataset[currentLevel].numberOfItemMax;
-    maxSubLevel = dataset[currentLevel].sublevels;
+    numberOfItemType = dataset[items.currentLevel].numberOfItemType;
+    numberOfItemMax = dataset[items.currentLevel].numberOfItemMax;
+    maxSubLevel = dataset[items.currentLevel].sublevels;
     items.score.numberOfSubLevels = maxSubLevel;
     initSubLevel();
 }
 
 function nextLevel() {
-    if(numberOfLevel <= ++currentLevel ) {
-        currentLevel = 0;
-    }
+    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }
 
 function previousLevel() {
-    if(--currentLevel < 0) {
-        currentLevel = numberOfLevel - 1;
-    }
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }
 

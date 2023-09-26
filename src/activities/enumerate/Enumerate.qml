@@ -105,7 +105,7 @@ ActivityBase {
         QtObject {
             id: items
             property alias background: background
-            property alias bar: bar
+            property int currentLevel: activity.currentLevel
             property alias bonus: bonus
             property alias okButton: okButton
             property alias answerColumn: answerColumn
@@ -245,6 +245,7 @@ ActivityBase {
 
         Bar {
             id: bar
+            level: items.currentLevel + 1
             anchors.bottom: keyboard.top
             content: BarEnumContent { value: help | home | level | activityConfig }
             onHelpClicked: {
