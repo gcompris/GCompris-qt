@@ -12,7 +12,6 @@
 .import "qrc:/gcompris/src/core/core.js" as Core
 
 
-var currentLevel;
 var numberOfLevel;
 var items;
 var position;
@@ -32,7 +31,7 @@ function start(items_) {
     items = items_;
     dataset = items.levels;
     numberOfLevel = dataset.length;
-    currentLevel = 0;
+    items.currentLevel = Core.getInitialLevel(numberOfLevel);
     items.score.currentSubLevel = 1;
     initLevel();
 }
@@ -41,15 +40,13 @@ function stop() {
 }
 
 function initLevel() {
-    items.bar.level = currentLevel + 1;
     questionList = [];
 
-    questionList = dataset[currentLevel].questions;
+    questionList = dataset[items.currentLevel].questions;
     items.score.numberOfSubLevels = questionList.length;
-    items.currentLevel = items.bar.level;
     currentQuestionIndex = -1;
 
-    if(dataset[currentLevel].generateRandomPositions) {
+    if(dataset[items.currentLevel].generateRandomPositions) {
         questionList = Core.shuffle(questionList);
     }
 
@@ -57,17 +54,13 @@ function initLevel() {
 }
 
 function nextLevel() {
-    if(numberOfLevel <= ++currentLevel) {
-        currentLevel = 0;
-    }
+    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
     items.score.currentSubLevel = 1;
     initLevel();
 }
 
 function previousLevel() {
-    if(--currentLevel < 0) {
-        currentLevel = numberOfLevel - 1;
-    }
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
     items.score.currentSubLevel = 1;
     initLevel();
 }

@@ -31,7 +31,7 @@ ActivityBase {
 
         QtObject {
             id: items
-            property alias bar: bar
+            property int currentLevel: activity.currentLevel
             property alias bonus: bonus
             readonly property var levels: activity.datasetLoader.data
             property GCSfx audioEffects: activity.audioEffects
@@ -39,7 +39,6 @@ ActivityBase {
             property int checkState: -1
             property int selectedPosition: -1
             property string questionText: ""
-            property int currentLevel: 1
             property alias positionModels: positionModels
             property var view: items.currentLevel % 2 !== 0 ? answerViews : positionViews
         }
@@ -296,6 +295,7 @@ ActivityBase {
 
         Bar {
             id: bar
+            level: items.currentLevel + 1
             content: BarEnumContent { value: help | home | level | activityConfig }
             onHelpClicked: {
                 displayDialog(dialogHelpLeftRight)
