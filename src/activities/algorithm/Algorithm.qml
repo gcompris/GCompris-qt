@@ -43,7 +43,7 @@ ActivityBase {
             property alias answer: answer
             property GCSfx audioEffects: activity.audioEffects
             property alias background: background
-            property alias bar: bar
+            property int currentLevel: activity.currentLevel
             property alias bonus: bonus
             property int nbSubLevel: 3
             property int currentSubLevel: 0
@@ -239,6 +239,7 @@ ActivityBase {
 
         Bar {
             id: bar
+            level: items.currentLevel + 1
             content: BarEnumContent { value: help | home | level }
             onHelpClicked: {
                 displayDialog(dialogHelp)

@@ -42,7 +42,6 @@ getImages() sample output - names of images with indexes [1,3,2,5,5,2,3,1]
 */
 
 var matchesVisible = 4
-var currentLevel = 0
 var max = 8
 var index
 var answerIndex
@@ -58,20 +57,6 @@ var images = ["apple",
               'plum']
 var url = "qrc:/gcompris/src/activities/algorithm/resource/"
 
-function start(items_) {
-    items = items_
-    currentLevel = 0
-    initLevel()
-}
-
-function stop() {
-}
-
-function initLevel() {
-    items.bar.level = currentLevel + 1
-    setUp()
-}
-
 // Add more cases to sample and differentiate arrange according to level of difficulty.
 // Develop an algo to choose them accordingly for each level.
 var sample = [[[0,1,0,1,0,1,0,1],[0,1,1,0,0,1,1,0],[1,1,0,0,0,0,1,1],[1,0,0,1,0,1,1,0]],//level1
@@ -83,13 +68,26 @@ var sample = [[[0,1,0,1,0,1,0,1],[0,1,1,0,0,1,1,0],[1,1,0,0,0,0,1,1],[1,0,0,1,0,
               [[0,1,2,3,3,0,1,1],[0,1,2,3,2,2,3,2],[0,1,2,3,1,1,0,3],[0,1,2,3,1,2,3,2]]]//7
 var numberOfLevel = sample.length
 
-function setUp(){
-    number = Math.floor(Math.random() * 10000) % sample[currentLevel].length
+function start(items_) {
+    items = items_
+    items.currentLevel = Core.getInitialLevel(numberOfLevel);
+    initLevel()
+}
 
-    index = getImages(number, currentLevel)
+function stop() {
+}
+
+function initLevel() {
+    setUp()
+}
+
+function setUp() {
+    number = Math.floor(Math.random() * 10000) % sample[items.currentLevel].length
+
+    index = getImages(number, items.currentLevel)
     setQuestion(index)
 
-    answerIndex = getImages(number, currentLevel)
+    answerIndex = getImages(number, items.currentLevel)
     setAnswer(answerIndex)
 
     choiceCount = matchesVisible
@@ -156,9 +154,7 @@ function clickHandler(id){
 }
 
 function nextLevel() {
-    if(numberOfLevel <= ++currentLevel) {
-        currentLevel = 0
-    }
+    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
     items.currentSubLevel = 0;
     initLevel();
 }
@@ -173,9 +169,7 @@ function nextSubLevel() {
 }
 
 function previousLevel() {
-    if(--currentLevel < 0) {
-        currentLevel = numberOfLevel - 1
-    }
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
     items.currentSubLevel = 0;
     initLevel();
 }
