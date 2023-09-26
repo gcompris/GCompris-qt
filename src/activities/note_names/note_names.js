@@ -11,7 +11,6 @@
 .import QtQuick 2.12 as Quick
 .import "qrc:/gcompris/src/core/core.js" as Core
 
-var currentLevel = 0
 var numberOfLevel
 var dataset
 var items
@@ -26,11 +25,11 @@ var timerNormalInterval
 
 function start(items_, timerNormalInterval_) {
     items = items_
-    currentLevel = 0
     timerNormalInterval = timerNormalInterval_
     dataset = items.dataset.item
     levels = dataset.levels
     numberOfLevel = levels.length
+    items.currentLevel = Core.getInitialLevel(numberOfLevel)
     items.doubleOctave.coloredKeyLabels = dataset.referenceNotes[levels[0]["clef"]]
     items.doubleOctave.currentOctaveNb = 1
     items.introMessage.intro = [dataset.objective]
@@ -47,8 +46,7 @@ function stop() {
 function initLevel() {
     targetNotes = []
     newNotesSequence = []
-    items.bar.level = currentLevel + 1
-    items.background.clefType = levels[currentLevel]["clef"]
+    items.background.clefType = levels[items.currentLevel]["clef"]
     items.doubleOctave.coloredKeyLabels = dataset.referenceNotes[items.background.clefType]
     if(items.background.clefType === "Treble")
         items.doubleOctave.currentOctaveNb = 1
@@ -59,7 +57,7 @@ function initLevel() {
     items.displayNoteNameTimer.stop()
     items.addNoteTimer.stop()
     items.multipleStaff.initClefs(items.background.clefType)
-    targetNotes = JSON.parse(JSON.stringify(levels[currentLevel]["sequence"]))
+    targetNotes = JSON.parse(JSON.stringify(levels[items.currentLevel]["sequence"]))
     items.isTutorialMode = true
     items.progressBar.percentage = 0
     items.multipleStaff.coloredNotes = dataset.referenceNotes[items.background.clefType]
@@ -84,9 +82,9 @@ function showTutorial() {
 function formNewNotesSequence() {
     var halfSequenceLength = 25
     var fullSequenceLength = 50
-    targetNotes = JSON.parse(JSON.stringify(levels[currentLevel]["sequence"]))
-    for(var i = 0; i < currentLevel && newNotesSequence.length < halfSequenceLength; i++) {
-        if(levels[currentLevel]["clef"] === levels[i]["clef"]) {
+    targetNotes = JSON.parse(JSON.stringify(levels[items.currentLevel]["sequence"]))
+    for(var i = 0; i < items.currentLevel && newNotesSequence.length < halfSequenceLength; i++) {
+        if(levels[items.currentLevel]["clef"] === levels[i]["clef"]) {
             for(var j = 0; j < levels[i]["sequence"].length && newNotesSequence.length < halfSequenceLength; j++)
                 newNotesSequence.push(levels[i]["sequence"][j])
         }
@@ -154,15 +152,11 @@ function checkAnswer(noteName) {
 }
 
 function nextLevel() {
-    if(numberOfLevel <= ++ currentLevel) {
-        currentLevel = 0
-    }
+    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel)
     initLevel()
 }
 
 function previousLevel() {
-    if(--currentLevel < 0) {
-        currentLevel = numberOfLevel - 1
-    }
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
     initLevel()
 }
