@@ -15,7 +15,6 @@
 
 .import "qrc:/gcompris/src/core/core.js" as Core
 
-var currentLevel = 0
 var items;
 var barAtStart;
 var url = "qrc:/gcompris/src/activities/family/resource/"
@@ -27,8 +26,8 @@ var answerButtonRatio = 0;
 
 function start(items_) {
     items = items_
-    currentLevel = 0
     numberOfLevel = items.dataset.levelElements.length
+    items.currentLevel = Core.getInitialLevel(numberOfLevel)
     barAtStart = GCompris.ApplicationSettings.isBarHidden;
     GCompris.ApplicationSettings.isBarHidden = true;
 
@@ -43,7 +42,6 @@ function stop() {
 }
 
 function initLevel() {
-    items.bar.level = currentLevel + 1
 
     items.selectedPairs.reset()
     levelToLoad = getCurrentLevelIndex()
@@ -125,19 +123,15 @@ function getCurrentLevelIndex() {
         return
     }
 
-    return shuffledLevelIndex[currentLevel]
+    return shuffledLevelIndex[items.currentLevel]
 }
 
 function nextLevel() {
-    if(numberOfLevel <= ++currentLevel) {
-        currentLevel = 0
-    }
+    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }
 
 function previousLevel() {
-    if(--currentLevel < 0) {
-        currentLevel = numberOfLevel - 1
-    }
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }
