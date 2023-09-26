@@ -34,7 +34,7 @@ Image {
                 y: parent.height / 2 - plane.height / 2
                 velocityX: 700
                 velocityY: 700
-                height: sourceSize.height * (1.0 - 0.5 * Activity.currentLevel / 10)
+                height: sourceSize.height * (1.0 - 0.5 * Activity.items.currentLevel / 10)
             }
         },
         State {
@@ -45,7 +45,7 @@ Image {
                 y: parent.height / 2 - plane.height / 2
                 velocityX: 200
                 velocityY: 200
-                height: sourceSize.height * (1.0 - 0.5 * Activity.currentLevel / 10)
+                height: sourceSize.height * (1.0 - 0.5 * Activity.items.currentLevel / 10)
             }
         }
     ]

@@ -17,7 +17,6 @@
 var url = "qrc:/gcompris/src/activities/planegame/"
 
 var max_velocity = 500 * GCompris.ApplicationInfo.ratio
-var currentLevel
 var numberOfLevel
 var currentSubLevel
 var numberOfSubLevels
@@ -43,7 +42,7 @@ function start(items_, dataset_) {
     items = items_
     dataset = dataset_
     numberOfLevel = dataset.length
-    currentLevel = 0
+    items.currentLevel = Core.getInitialLevel(numberOfLevel)
     if(items.showTutorial === false) {
       initLevel()
     }
@@ -67,15 +66,14 @@ function cloudDestroy(clouds) {
 }
 
 function initLevel() {
-    items.bar.level = currentLevel + 1;
     currentSubLevel = 0
-    numberOfSubLevels = dataset[currentLevel].data.length
+    numberOfSubLevels = dataset[items.currentLevel].data.length
 
     items.movePlaneTimer.stop();
     items.cloudCreation.stop()
 
-    items.score.message = dataset[currentLevel].data[currentSubLevel]
-    items.score.visible = dataset[currentLevel].showNext
+    items.score.message = dataset[items.currentLevel].data[currentSubLevel]
+    items.score.visible = dataset[items.currentLevel].showNext
 
     upPressed = false
     downPressed = false
@@ -98,16 +96,12 @@ function initLevel() {
 }
 
 function nextLevel() {
-    if(numberOfLevel <= ++currentLevel) {
-        currentLevel = 0
-    }
+    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }
 
 function previousLevel() {
-    if(--currentLevel < 0) {
-        currentLevel = numberOfLevel - 1
-    }
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }
 
@@ -141,19 +135,19 @@ function createCloud() {
                 items.background, {
                     "background": items.background,
                     "x": items.background.width,
-                    "heightRatio": 1.0 - 0.5 * currentLevel / 10
+                    "heightRatio": 1.0 - 0.5 * items.currentLevel / 10
                 });
 
     /* Random cloud number but at least one in 3 */
     if(cloudCounter++ % 3 == 0 || getRandomInt(0, 1) === 0) {
         /* Put the target */
-        cloud.text = dataset[currentLevel].data[currentSubLevel];
+        cloud.text = dataset[items.currentLevel].data[currentSubLevel];
         cloudCounter = 1
     } else {
         var min = Math.max(1, currentSubLevel - 1);
         var index = Math.min(min + getRandomInt(0, currentSubLevel - min + 3),
                              numberOfSubLevels - 1)
-        cloud.text = dataset[currentLevel].data[index]
+        cloud.text = dataset[items.currentLevel].data[index]
     }
 
     clouds.push(cloud);
@@ -287,7 +281,7 @@ function handleCollisionsWithCloud() {
 
                 gotOne = true
                 // Collision, look for id
-                if(cloud.text === dataset[currentLevel].data[currentSubLevel]) {
+                if(cloud.text === dataset[items.currentLevel].data[currentSubLevel]) {
                     playLetterSound(cloud.text)
                     // Move the cloud to the erased list
                     cloud.done()
@@ -304,7 +298,7 @@ function handleCollisionsWithCloud() {
                             items.bonus.good("flower")
                         }
                     } else {
-                        items.score.message = dataset[currentLevel].data[currentSubLevel]
+                        items.score.message = dataset[items.currentLevel].data[currentSubLevel]
                     }
                 } else {
                     /* Touched the wrong cloud */

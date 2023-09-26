@@ -66,6 +66,7 @@ ActivityBase {
             property Item activityPage: activity
             property alias background: background
             property alias bar: bar
+            property int currentLevel: activity.currentLevel
             property alias bonus: bonus
             property alias score: score
             property alias plane: plane
@@ -132,6 +133,7 @@ ActivityBase {
 
         Bar {
             id: bar
+            level: items.currentLevel + 1
             content: BarEnumContent { value: items.showTutorial ? (help | home) : (help | home | level) }
             onHelpClicked: displayDialog(dialogHelp)
             onPreviousLevelClicked: Activity.previousLevel()
