@@ -49,7 +49,7 @@ ActivityBase {
             property alias drop: drop
             property alias player1score: player1score
             property alias player2score: player2score
-            property alias bar: bar
+            property int currentLevel: activity.currentLevel
             property alias bonus: bonus
             property alias repeater: repeater
             property alias columns: grid.columns
@@ -183,6 +183,7 @@ ActivityBase {
 
         Bar {
             id: bar
+            level: items.currentLevel + 1
             content: BarEnumContent { value: help | home | reload | (twoPlayer ? 0 : level) }
             onHelpClicked: {
                 displayDialog(dialogHelp)

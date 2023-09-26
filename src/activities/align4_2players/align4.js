@@ -10,8 +10,8 @@
  */
 .pragma library
 .import QtQuick 2.12 as Quick
+.import "qrc:/gcompris/src/core/core.js" as Core
 
-var currentLevel;
 var numberOfLevel;
 var items;
 var url = "qrc:/gcompris/src/activities/align4_2players/resource/";
@@ -31,8 +31,9 @@ var randomMiss;
 
 function start(items_, twoPlayer_) {
     items = items_;
-    currentLevel = 0;
     twoPlayer = twoPlayer_;
+    numberOfLevel = twoPlayer ? 1 : weight.length;
+    items.currentLevel = Core.getInitialLevel(numberOfLevel);
     initLevel();
 }
 
@@ -43,9 +44,6 @@ function stop() {
 }
 
 function initLevel() {
-    numberOfLevel = twoPlayer ? 1 : weight.length;
-
-    items.bar.level = currentLevel + 1;
 
     items.counter = items.nextPlayerStart+1;
 
@@ -70,14 +68,14 @@ function initLevel() {
     }
 
     nextColumn = 3;
-    if(currentLevel < 2)
+    if(items.currentLevel < 2)
         depthMax = 2;
     else
         depthMax = 4;
 
-    if(currentLevel < 2)
+    if(items.currentLevel < 2)
         randomMiss = 1;
-    else if(currentLevel < 4)
+    else if(items.currentLevel < 4)
         randomMiss = 0.5;
     else
         randomMiss = 1;
@@ -86,16 +84,12 @@ function initLevel() {
 }
 
 function nextLevel() {
-    if(numberOfLevel <= ++currentLevel) {
-        currentLevel = 0;
-    }
+    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }
 
 function previousLevel() {
-    if(--currentLevel < 0) {
-        currentLevel = numberOfLevel - 1;
-    }
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }
 
@@ -310,16 +304,16 @@ function checkLine() {
             if(count1 === 4) {
                 return 10000;
             }
-            score += ((count1 / 3) * weight[currentLevel][0] +
-                      (count1 / 2) * weight[currentLevel][1] +
-                      count1 * weight[currentLevel][2]);
+            score += ((count1 / 3) * weight[items.currentLevel][0] +
+                      (count1 / 2) * weight[items.currentLevel][1] +
+                      count1 * weight[items.currentLevel][2]);
         } else if((count1 === 0) && (count2 > 0)) {
             if(count2 === 4) {
                 return -10000;
             }
-            score -= ((count2 / 3) * weight[currentLevel][3] +
-                      (count2 / 2) * weight[currentLevel][4] +
-                      count2 * weight[currentLevel][5]);
+            score -= ((count2 / 3) * weight[items.currentLevel][3] +
+                      (count2 / 2) * weight[items.currentLevel][4] +
+                      count2 * weight[items.currentLevel][5]);
         }
     }
     return score;
