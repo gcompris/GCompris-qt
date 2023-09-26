@@ -9,7 +9,6 @@
 .import QtQuick 2.12 as Quick
 .import "qrc:/gcompris/src/core/core.js" as Core
 
-var currentLevel = 0;
 var numberOfLevel;
 var levels;
 var items;
@@ -18,9 +17,9 @@ var previousQuestion = {"numerator": -1, "denominator": -1};
 
 function start(items_) {
     items = items_;
-    currentLevel = 0;
     levels = items.levels;
     numberOfLevel = levels.length;
+    items.currentLevel = Core.getInitialLevel(numberOfLevel);
     initLevel();
 }
 
@@ -28,18 +27,17 @@ function stop() {
 }
 
 function initLevel() {
-    items.bar.level = currentLevel + 1;
     items.currentSubLevel = 1;
 
-    items.numberOfSubLevels = levels[currentLevel].length;
+    items.numberOfSubLevels = levels[items.currentLevel].length;
 
-    Core.shuffle(levels[currentLevel]);
+    Core.shuffle(levels[items.currentLevel]);
 
     initSubLevel();
 }
 
 function initSubLevel() {
-    var currentSubLevel = levels[currentLevel][items.currentSubLevel-1];
+    var currentSubLevel = levels[items.currentLevel][items.currentSubLevel-1];
     items.chartType = currentSubLevel.chartType;
 
     items.fixedNumerator = currentSubLevel.fixedNumerator ? currentSubLevel.fixedNumerator : false;
@@ -86,9 +84,7 @@ function initSubLevel() {
 }
 
 function nextLevel() {
-    if(numberOfLevel <= ++currentLevel) {
-        currentLevel = 0;
-    }
+    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }
 
@@ -104,8 +100,6 @@ function nextSubLevel() {
 
 
 function previousLevel() {
-    if(--currentLevel < 0) {
-        currentLevel = numberOfLevel - 1;
-    }
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }
