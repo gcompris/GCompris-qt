@@ -7,7 +7,6 @@
 .pragma library
 .import "../../core/core.js" as Core
 
-var currentLevel = 0;
 var numberOfLevel;
 var currentSubLevel = 0;
 var numberOfSubLevel;
@@ -18,7 +17,8 @@ var indexOfNumberInAnswerArray = [1, 3, 6];
 
 function start(items_) {
     items = items_
-    currentLevel = 0
+    numberOfLevel = items.levels.length;
+    items.currentLevel = Core.getInitialLevel(numberOfLevel)
     currentSubLevel = 0
     initLevel()
 }
@@ -27,12 +27,10 @@ function stop() {
 }
 
 function initLevel() {
-    items.bar.level = currentLevel + 1;
     items.score.currentSubLevel = currentSubLevel + 1;
-    numberOfLevel = items.levels.length;
     items.okButton.visible = false;
     clearAllListModels();
-    var currentDataset = items.levels[currentLevel];
+    var currentDataset = items.levels[items.currentLevel];
     if(currentDataset.randomValues) {
         numberOfSubLevel = currentDataset.numberOfSublevels;
 
@@ -191,9 +189,7 @@ function initLevel() {
 }
 
 function nextLevel() {
-    if(numberOfLevel <= ++currentLevel) {
-        currentLevel = 0;
-    }
+    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
     currentSubLevel = 0;
     initLevel();
 }
@@ -207,9 +203,7 @@ function nextSubLevel() {
 }
 
 function previousLevel() {
-    if(--currentLevel < 0) {
-        currentLevel = numberOfLevel - 1;
-    }
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }
 
