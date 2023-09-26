@@ -10,6 +10,7 @@
  */
 .pragma library
 .import QtQuick 2.12 as Quick
+.import "qrc:/gcompris/src/core/core.js" as Core
 
 var url = "qrc:/gcompris/src/activities/redraw/resource/"
 var colorShortcut = {
@@ -33,13 +34,14 @@ var colors = {
 
 
 var dataset
-var currentLevel
 var numberOfLevel
 var items
 
 function start(items_) {
     items = items_
-    currentLevel = 0
+    dataset = items.levels
+    numberOfLevel = dataset.length
+    items.currentLevel = Core.getInitialLevel(numberOfLevel)
     initLevel()
 }
 
@@ -47,15 +49,12 @@ function stop() {
 }
 
 function initLevel() {
-    dataset = items.levels
-    items.bar.level = currentLevel + 1
-    numberOfLevel = dataset.length
-    items.numberOfColumn = dataset[currentLevel].columns
-    items.targetModelData = dataset[currentLevel].image
+    items.numberOfColumn = dataset[items.currentLevel].columns
+    items.targetModelData = dataset[items.currentLevel].image
     items.numberOfColor = getNumberOfColors(items.targetModelData)
     items.colorSelector = 0
     items.userModel.reset()
-    if(currentLevel == 0) {
+    if(items.currentLevel == 0) {
         // To help determine the puzzle mirroring type set a color
         // at first level
         items.userModel.itemAt(0).paint(items.targetModelData[0])
@@ -64,16 +63,12 @@ function initLevel() {
 }
 
 function nextLevel() {
-    if(numberOfLevel <= ++currentLevel ) {
-        currentLevel = 0
-    }
+    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }
 
 function previousLevel() {
-    if(--currentLevel < 0) {
-        currentLevel = numberOfLevel - 1
-    }
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }
 
