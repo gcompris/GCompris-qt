@@ -13,7 +13,6 @@
 .import "qrc:/gcompris/src/core/core.js" as Core
 .import GCompris 1.0 as GCompris
 
-var currentLevel = 0
 var numberLevelsWords = 2
 var currentSubLevel = 0;
 var numberOfLevel
@@ -31,10 +30,10 @@ var maxSubLevel
 
 function start(items_) {
     items = items_
-    currentLevel = 0
-    currentSubLevel = 0
     levels = items.levels
     numberOfLevel = levels.length
+    items.currentLevel = Core.getInitialLevel(numberOfLevel)
+    currentSubLevel = 0
     currentLocale = GCompris.ApplicationInfo.getVoicesLocale(GCompris.ApplicationSettings.locale)
 
     /*: Translators: NOTE: Word list for crane activity.
@@ -68,8 +67,7 @@ function stop() {
 }
 
 function initLevel() {
-    items.bar.level = currentLevel + 1
-    maxSubLevel = levels[currentLevel].length
+    maxSubLevel = levels[items.currentLevel].length
     currentSubLevel = 0;
     items.score.numberOfSubLevels = maxSubLevel
     initSubLevel()
@@ -82,7 +80,7 @@ function initSubLevel() {
     names2 = []
 
     // set models for repeaters
-    if (!levels[currentLevel][currentSubLevel].isWord)
+    if (!levels[items.currentLevel][currentSubLevel].isWord)
         setModelImage()
     else
         setModelWord()
@@ -113,7 +111,7 @@ function initSubLevel() {
 
 function getInternalWord() {
     // function to get a word from translated lists
-    var currentWordLength = levels[currentLevel][currentSubLevel].wordLength
+    var currentWordLength = levels[items.currentLevel][currentSubLevel].wordLength
     var wordsUsed
     if (currentWordLength === 3) {
         wordsUsed = words3Letters
@@ -136,16 +134,16 @@ function setModelWord() {
     var numbers = []
     var i
     var wordsUsed
-    var word = levels[currentLevel][currentSubLevel].word
+    var word = levels[items.currentLevel][currentSubLevel].word
 
     // show or hide the grid
-    items.showGrid1.opacity = levels[currentLevel][currentSubLevel].showGrid
+    items.showGrid1.opacity = levels[items.currentLevel][currentSubLevel].showGrid
     // set the two boards in line or not
-    items.background.inLine = levels[currentLevel][currentSubLevel].inLine
+    items.background.inLine = levels[items.currentLevel][currentSubLevel].inLine
 
     // set the number of columns and rows, be sure we have enough space to display the word
-    items.columns = levels[currentLevel][currentSubLevel].columns
-    items.rows = levels[currentLevel][currentSubLevel].rows;
+    items.columns = levels[items.currentLevel][currentSubLevel].columns
+    items.rows = levels[items.currentLevel][currentSubLevel].rows;
 
     for (i = 0; i < items.columns * items.rows; i++) {
         names[i] = ""
@@ -191,11 +189,11 @@ function setModelWord() {
 function setModelImage() {
     var numbers = []
     var i
-    var imageList = levels[currentLevel][currentSubLevel].images;
+    var imageList = levels[items.currentLevel][currentSubLevel].images;
 
     // set the number of columns and rows from "levels"
-    items.columns = levels[currentLevel][currentSubLevel].columns
-    items.rows = levels[currentLevel][currentSubLevel].rows
+    items.columns = levels[items.currentLevel][currentSubLevel].columns
+    items.rows = levels[items.currentLevel][currentSubLevel].rows
 
     for (i = 0; i < items.columns * items.rows; i++) {
         names[i] = ""
@@ -206,7 +204,7 @@ function setModelImage() {
     // randomize the names
     Core.shuffle(imageList)
 
-    //get "levels[currentLevel].noOfItems" random numbers
+    //get "levels[items.currentLevel].noOfItems" random numbers
     Core.shuffle(numbers)
 
     for (i = 0; i < imageList.length; i++)
@@ -229,10 +227,10 @@ function setModelImage() {
     }
 
     // show or hide the grid
-    items.showGrid1.opacity = levels[currentLevel][currentSubLevel].showGrid
+    items.showGrid1.opacity = levels[items.currentLevel][currentSubLevel].showGrid
 
     // set the two boards in line or not
-    items.background.inLine = levels[currentLevel][currentSubLevel].inLine
+    items.background.inLine = levels[items.currentLevel][currentSubLevel].inLine
 }
 
 // returns the next index needed for switching to another item
@@ -339,16 +337,12 @@ function checkAnswer() {
 }
 
 function nextLevel() {
-    if(numberOfLevel <= ++currentLevel) {
-        currentLevel = 0
-    }
+    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }
 
 function previousLevel() {
-    if(--currentLevel < 0) {
-        currentLevel = numberOfLevel - 1
-    }
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }
 
