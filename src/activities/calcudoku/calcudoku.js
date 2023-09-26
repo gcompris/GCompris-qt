@@ -8,7 +8,6 @@
 .import QtQuick 2.12 as Quick
 .import "qrc:/gcompris/src/core/core.js" as Core
 
-var currentLevel = 0;
 var numberOfLevel;
 var items;
 var symbols;
@@ -49,9 +48,9 @@ function getVisualOperator(operator) {
 
 function start(items_) {
     items = items_;
-    currentLevel = 0;
-    items.score.currentSubLevel = 1;
     numberOfLevel = items.levels.length;
+    items.currentLevel = Core.getInitialLevel(numberOfLevel);
+    items.score.currentSubLevel = 1;
     // Shuffle all levels
     for(var nb = 0 ; nb < items.levels.length ; ++ nb) {
         if(items.levels[nb]["data"]) {
@@ -264,24 +263,23 @@ function replaceOperator(array, operator, newValue) {
 }
 
 function initLevel() {
-    items.bar.level = currentLevel + 1;
-    symbols = items.levels[currentLevel]["symbols"];
+    symbols = items.levels[items.currentLevel]["symbols"];
 
     for(var i = items.availablePiecesModel.model.count-1 ; i >= 0 ; -- i) {
         items.availablePiecesModel.model.remove(i);
     }
     items.calcudokuModel.clear();
-    if(items.levels[currentLevel].random) {
-        items.score.numberOfSubLevels = items.levels[currentLevel]["length"];
-        replaceOperator(items.levels[currentLevel]["operators"], "+", OperandsEnum.PLUS_SIGN);
-        replaceOperator(items.levels[currentLevel]["operators"], "*", OperandsEnum.TIMES_SIGN);
-        replaceOperator(items.levels[currentLevel]["operators"], "-", OperandsEnum.MINUS_SIGN);
-        replaceOperator(items.levels[currentLevel]["operators"], ":", OperandsEnum.DIVIDE_SIGN);
-        initialCalcudoku = generateLevel(items.levels[currentLevel]["size"], items.levels[currentLevel]["operators"]);
+    if(items.levels[items.currentLevel].random) {
+        items.score.numberOfSubLevels = items.levels[items.currentLevel]["length"];
+        replaceOperator(items.levels[items.currentLevel]["operators"], "+", OperandsEnum.PLUS_SIGN);
+        replaceOperator(items.levels[items.currentLevel]["operators"], "*", OperandsEnum.TIMES_SIGN);
+        replaceOperator(items.levels[items.currentLevel]["operators"], "-", OperandsEnum.MINUS_SIGN);
+        replaceOperator(items.levels[items.currentLevel]["operators"], ":", OperandsEnum.DIVIDE_SIGN);
+        initialCalcudoku = generateLevel(items.levels[items.currentLevel]["size"], items.levels[items.currentLevel]["operators"]);
     }
     else {
-        items.score.numberOfSubLevels = items.levels[currentLevel]["data"].length
-        initialCalcudoku = items.levels[currentLevel]["data"][items.score.currentSubLevel-1];
+        items.score.numberOfSubLevels = items.levels[items.currentLevel]["data"].length
+        initialCalcudoku = items.levels[items.currentLevel]["data"][items.score.currentSubLevel-1];
     }
 
     items.columns = initialCalcudoku.size;
@@ -366,17 +364,13 @@ function reinitLevel() {
 
 function nextLevel() {
     items.score.currentSubLevel = 1;
-    if(numberOfLevel <= ++currentLevel) {
-        currentLevel = 0;
-    }
+    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }
 
 function previousLevel() {
     items.score.currentSubLevel = 1;
-    if(--currentLevel < 0) {
-        currentLevel = numberOfLevel - 1;
-    }
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }
 
@@ -389,13 +383,11 @@ function incrementLevel() {
 
     if(items.score.currentSubLevel > items.score.numberOfSubLevels) {
         // Try the next level
-        items.score.currentSubLevel = 1;
-        currentLevel ++;
+        nextLevel();
     }
-    if(currentLevel >= numberOfLevel) {
-        currentLevel = 0;
+    else {
+        initLevel();
     }
-    initLevel();
 }
 
 function clickOn(caseX, caseY) {
