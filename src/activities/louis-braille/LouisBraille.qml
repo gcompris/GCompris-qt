@@ -41,7 +41,6 @@ ActivityBase {
             id: items
             property Item main: activity.main
             property alias background: background
-            property alias bar: bar
             property alias bonus: bonus
             property int count: 0
             property var dataset: Dataset.dataset
