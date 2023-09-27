@@ -13,6 +13,7 @@
 import QtQuick 2.12
 import GCompris 1.0
 import "../../core"
+import "qrc:/gcompris/src/core/core.js" as Core
 
 ActivityBase {
     id: activity
@@ -65,7 +66,7 @@ ActivityBase {
             }
         }
 
-        onStart: items.currentLevel = 0
+        onStart: items.currentLevel = Core.getInitialLevel(items.numberOfLevel);
         onStop: {
             hydro.item.stopTimer();
             if(wind.item)
@@ -94,9 +95,7 @@ ActivityBase {
         }
 
         function previousLevel() {
-            if(--items.currentLevel < 0) {
-                items.currentLevel = items.numberOfLevel - 1
-            }
+            items.currentLevel = Core.getPreviousLevel(items.currentLevel, items.numberOfLevel);
         }
 
         function checkForNextLevel() {
@@ -722,6 +721,7 @@ ActivityBase {
 
         Bar {
             id: bar
+            level: items.currentLevel + 1
             content: BarEnumContent { value: help | home | level | reload }
             onHelpClicked: displayDialog(dialogHelp)
             onPreviousLevelClicked: previousLevel()
@@ -732,7 +732,6 @@ ActivityBase {
                 home();
             }
             onReloadClicked: initLevel()
-            level: items.currentLevel + 1
         }
 
         Bonus {
