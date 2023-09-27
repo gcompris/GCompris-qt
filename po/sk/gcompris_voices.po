@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_voices\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-09-02 00:41+0000\n"
+"POT-Creation-Date: 2023-09-27 00:39+0000\n"
 "PO-Revision-Date: 2019-11-08 21:37+0100\n"
 "Last-Translator: Roman Paholik <wizzardsk@gmail.com>\n"
 "Language-Team: Slovak <kde-sk@linux.sk>\n"
@@ -512,6 +512,12 @@ msgstr "Vyfarbite graf tak, aby žiadne dva susedné uzly nemali rovnakú farbu.
 #, kde-format
 msgid ""
 "Move the spaceship to avoid hitting the planets and reach the space station."
+msgstr ""
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "guess24"
+#: activities/guess24/ActivityInfo.qml:17
+#, kde-format
+msgid "Use the four numbers with given operators to find 24"
 msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "guesscount"

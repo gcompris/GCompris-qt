@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-09-02 00:41+0000\n"
+"POT-Creation-Date: 2023-09-27 00:39+0000\n"
 "PO-Revision-Date: 2023-06-01 16:26+0200\n"
 "Last-Translator: Horia PELLE <horricane@gmail.com>\n"
 "Language-Team: English <kde-i18n-doc@kde.org>\n"
@@ -582,6 +582,12 @@ msgid ""
 msgstr ""
 "Manevrează nava spațială pentru a evita ciocnirea cu planetele, astfel încât "
 "să ajungă cu bine la stația spațială."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "guess24"
+#: activities/guess24/ActivityInfo.qml:17
+#, kde-format
+msgid "Use the four numbers with given operators to find 24"
+msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "guesscount"
 #: activities/guesscount/ActivityInfo.qml:22

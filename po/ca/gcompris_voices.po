@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-09-02 00:41+0000\n"
+"POT-Creation-Date: 2023-09-27 00:39+0000\n"
 "PO-Revision-Date: 2023-08-08 17:24+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
@@ -585,6 +585,12 @@ msgid ""
 msgstr ""
 "Mou la nau espacial per a evitar colpejar els planetes i arribar a l'estació "
 "espacial."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "guess24"
+#: activities/guess24/ActivityInfo.qml:17
+#, kde-format
+msgid "Use the four numbers with given operators to find 24"
+msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "guesscount"
 #: activities/guesscount/ActivityInfo.qml:22

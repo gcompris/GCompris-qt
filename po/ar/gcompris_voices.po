@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-09-02 00:41+0000\n"
+"POT-Creation-Date: 2023-09-27 00:39+0000\n"
 "PO-Revision-Date: 2023-03-30 09:11+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
@@ -539,6 +539,12 @@ msgstr "لوّن المخطط بحيث لا يكون للعقدتين المتج
 msgid ""
 "Move the spaceship to avoid hitting the planets and reach the space station."
 msgstr "حرّك السفينة الفضائية لتجنب الارتطام بالكواكب، والوصول إلى المحطة."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "guess24"
+#: activities/guess24/ActivityInfo.qml:17
+#, kde-format
+msgid "Use the four numbers with given operators to find 24"
+msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "guesscount"
 #: activities/guesscount/ActivityInfo.qml:22

@@ -1,5 +1,5 @@
 # Ludovic Grossard <ludovic.grossard@unilim.fr>, 2014, 2015.
-# Jazeix Johnny <jazeix@gmail.com>, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022.
+# Jazeix Johnny <jazeix@gmail.com>, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023.
 # charruau <echarruau@gmail.com>, 2016, 2017, 2018, 2020, 2021, 2022.
 # Simon Depiets <sdepiets@gmail.com>, 2018.
 # Christian Wiatrowski <w9204-wi@yahoo.com>, 2018.
@@ -89,6 +89,7 @@ msgstr ""
 #: activities/grammar_classes/ActivityInfo.qml:29
 #: activities/graph-coloring/ActivityInfo.qml:25
 #: activities/gravity/ActivityInfo.qml:28
+#: activities/guess24/ActivityInfo.qml:24
 #: activities/guessnumber/ActivityInfo.qml:24
 #: activities/instruments/ActivityInfo.qml:24
 #: activities/land_safe/ActivityInfo.qml:28 activities/lang/ActivityInfo.qml:33
@@ -3104,12 +3105,9 @@ msgstr "Grilles de petite taille avec + et −."
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-), × for multiplication (*)
 #: activities/calcudoku/resource/3/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Small grids."
 msgctxt "Data|"
 msgid "Small grids with +, − and × operators."
-msgstr "Grilles de petite taille."
+msgstr "Grilles de petite taille avec +, − et ×."
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-), × for multiplication (*)
 #: activities/calcudoku/resource/4/Data.qml:14
@@ -14344,6 +14342,119 @@ msgstr ""
 "Essaie de rester au centre de l'écran et d'anticiper en prenant compte de la "
 "taille et de la direction de la flèche."
 
+#. Activity title
+#: activities/guess24/ActivityInfo.qml:14
+msgctxt "ActivityInfo|"
+msgid "Guess 24"
+msgstr ""
+
+#. Help title
+#: activities/guess24/ActivityInfo.qml:16
+msgctxt "ActivityInfo|"
+msgid "Calculate to find 24."
+msgstr ""
+
+#. Help goal
+#: activities/guess24/ActivityInfo.qml:19
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Practice algebraic calculations with four operators."
+msgctxt "ActivityInfo|"
+msgid "Learn to calculate using the four operators."
+msgstr "Entraîne-toi à calculer avec quatre opérateurs."
+
+#. Help prerequisite
+#: activities/guess24/ActivityInfo.qml:21
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Practice addition, subtraction, multiplication and division."
+msgctxt "ActivityInfo|"
+msgid ""
+"Being able to calculate using additions, subtractions, multiplications and "
+"divisions."
+msgstr ""
+"Entraînement aux opérations d'addition, de soustraction, de multiplication "
+"et de division."
+
+#. Help manual
+#: activities/guess24/ActivityInfo.qml:23
+msgctxt "ActivityInfo|"
+msgid "Use the four numbers with given operators to find 24."
+msgstr ""
+
+#: activities/guess24/ActivityInfo.qml:25
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Arrows: navigate inside an area"
+msgctxt "ActivityInfo|"
+msgid "Arrows: navigate inside numbers and operators"
+msgstr "Flèches : se déplacer dans la zone"
+
+#: activities/guess24/ActivityInfo.qml:26
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Space or Enter: select or place an item"
+msgctxt "ActivityInfo|"
+msgid "Space, Return or Enter: select or deselect current value or operator"
+msgstr "Espace ou Entrée : sélectionner ou placer un élément"
+
+#: activities/guess24/ActivityInfo.qml:27
+msgctxt "ActivityInfo|"
+msgid "Operator keys (+, -, *, /): select operator"
+msgstr ""
+
+#: activities/guess24/ActivityInfo.qml:28
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Backspace or Delete: undo"
+msgctxt "ActivityInfo|"
+msgid "Backspace or Delete: cancel last operation"
+msgstr "Retour arrière ou suppression : annuler"
+
+#: activities/guess24/ActivityInfo.qml:29
+msgctxt "ActivityInfo|"
+msgid "Tabulation: switch between numbers and operators"
+msgstr ""
+
+#: activities/guess24/Guess24.qml:81
+msgctxt "Guess24|"
+msgid "Use the four numbers with given operators to find 24."
+msgstr ""
+
+#: activities/guess24/resource/1/Data.qml:13
+msgctxt "Data|"
+msgid "Solvable with + and -."
+msgstr ""
+
+#: activities/guess24/resource/2/Data.qml:13
+msgctxt "Data|"
+msgid "Solvable with +, - and ×."
+msgstr ""
+
+#: activities/guess24/resource/3/Data.qml:13
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Multiplications."
+msgctxt "Data|"
+msgid "Multiplication required."
+msgstr "Multiplications."
+
+#: activities/guess24/resource/4/Data.qml:13
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Small grids with + operator."
+msgctxt "Data|"
+msgid "Solvable with all operators."
+msgstr "Grilles de petite taille avec +."
+
+#: activities/guess24/resource/5/Data.qml:13
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Divisions."
+msgctxt "Data|"
+msgid "Division required."
+msgstr "Divisions."
+
 #: activities/guesscount/ActivityConfig.qml:27
 msgctxt "ActivityConfig|"
 msgid "Admin"
@@ -15145,9 +15256,6 @@ msgstr "Trouve le banjo"
 
 #: activities/instruments/instruments.js:161
 #: activities/instruments/instruments.js:206
-#, fuzzy
-#| msgctxt "instruments|"
-#| msgid "Find the bongo"
 msgctxt "instruments|"
 msgid "Find the bongos"
 msgstr "Trouve le bongo"

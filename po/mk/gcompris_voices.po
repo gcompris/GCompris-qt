@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-09-02 00:41+0000\n"
+"POT-Creation-Date: 2023-09-27 00:39+0000\n"
 "PO-Revision-Date: 2021-03-15 13:32+0100\n"
 "Last-Translator: Igor Risteski <fikio@yahoo.com>\n"
 "Language-Team: Macedonian Team (mk)\n"
@@ -586,6 +586,12 @@ msgid ""
 msgstr ""
 "Движете го вселенскиот брод да не ги удри планетите  и да стигне до "
 "вселенската станица."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "guess24"
+#: activities/guess24/ActivityInfo.qml:17
+#, kde-format
+msgid "Use the four numbers with given operators to find 24"
+msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "guesscount"
 #: activities/guesscount/ActivityInfo.qml:22

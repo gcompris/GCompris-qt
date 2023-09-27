@@ -79,6 +79,7 @@ msgstr ""
 #: activities/grammar_classes/ActivityInfo.qml:29
 #: activities/graph-coloring/ActivityInfo.qml:25
 #: activities/gravity/ActivityInfo.qml:28
+#: activities/guess24/ActivityInfo.qml:24
 #: activities/guessnumber/ActivityInfo.qml:24
 #: activities/instruments/ActivityInfo.qml:24
 #: activities/land_safe/ActivityInfo.qml:28 activities/lang/ActivityInfo.qml:33
@@ -14090,6 +14091,117 @@ msgid ""
 msgstr ""
 "Try to stay near the centre of the screen, and anticipate by looking at the "
 "size and direction of the arrow."
+
+#. Activity title
+#: activities/guess24/ActivityInfo.qml:14
+msgctxt "ActivityInfo|"
+msgid "Guess 24"
+msgstr ""
+
+#. Help title
+#: activities/guess24/ActivityInfo.qml:16
+msgctxt "ActivityInfo|"
+msgid "Calculate to find 24."
+msgstr ""
+
+#. Help goal
+#: activities/guess24/ActivityInfo.qml:19
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Practice algebraic calculations with four operators."
+msgctxt "ActivityInfo|"
+msgid "Learn to calculate using the four operators."
+msgstr "Practice algebraic calculations with four operators."
+
+#. Help prerequisite
+#: activities/guess24/ActivityInfo.qml:21
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Practice addition, subtraction, multiplication and division."
+msgctxt "ActivityInfo|"
+msgid ""
+"Being able to calculate using additions, subtractions, multiplications and "
+"divisions."
+msgstr "Practise addition, subtraction, multiplication and division."
+
+#. Help manual
+#: activities/guess24/ActivityInfo.qml:23
+msgctxt "ActivityInfo|"
+msgid "Use the four numbers with given operators to find 24."
+msgstr ""
+
+#: activities/guess24/ActivityInfo.qml:25
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Arrows: navigate inside an area"
+msgctxt "ActivityInfo|"
+msgid "Arrows: navigate inside numbers and operators"
+msgstr "Arrows: navigate inside an area"
+
+#: activities/guess24/ActivityInfo.qml:26
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Space or Enter: select or place an item"
+msgctxt "ActivityInfo|"
+msgid "Space, Return or Enter: select or deselect current value or operator"
+msgstr "Space or Enter: select or place an item"
+
+#: activities/guess24/ActivityInfo.qml:27
+msgctxt "ActivityInfo|"
+msgid "Operator keys (+, -, *, /): select operator"
+msgstr ""
+
+#: activities/guess24/ActivityInfo.qml:28
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Backspace or Delete: undo"
+msgctxt "ActivityInfo|"
+msgid "Backspace or Delete: cancel last operation"
+msgstr "Backspace or Delete: undo"
+
+#: activities/guess24/ActivityInfo.qml:29
+msgctxt "ActivityInfo|"
+msgid "Tabulation: switch between numbers and operators"
+msgstr ""
+
+#: activities/guess24/Guess24.qml:81
+msgctxt "Guess24|"
+msgid "Use the four numbers with given operators to find 24."
+msgstr ""
+
+#: activities/guess24/resource/1/Data.qml:13
+msgctxt "Data|"
+msgid "Solvable with + and -."
+msgstr ""
+
+#: activities/guess24/resource/2/Data.qml:13
+msgctxt "Data|"
+msgid "Solvable with +, - and ×."
+msgstr ""
+
+#: activities/guess24/resource/3/Data.qml:13
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Multiplications."
+msgctxt "Data|"
+msgid "Multiplication required."
+msgstr "Multiplications."
+
+#: activities/guess24/resource/4/Data.qml:13
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Small grids."
+msgctxt "Data|"
+msgid "Solvable with all operators."
+msgstr "Small grids."
+
+#: activities/guess24/resource/5/Data.qml:13
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Divisions."
+msgctxt "Data|"
+msgid "Division required."
+msgstr "Divisions."
 
 #: activities/guesscount/ActivityConfig.qml:27
 msgctxt "ActivityConfig|"
