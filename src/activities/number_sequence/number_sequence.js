@@ -13,7 +13,6 @@
 .import GCompris 1.0 as GCompris //for ApplicationInfo
 .import "qrc:/gcompris/src/core/core.js" as Core
 
-var currentLevel = 0
 var items
 var mode
 var dataset
@@ -29,7 +28,7 @@ function start(_items, _mode,_dataset,_url) {
     dataset = _dataset.get()
     url = _url
     numberOfLevel = dataset.length
-    currentLevel = 0
+    items.currentLevel = Core.getInitialLevel(numberOfLevel)
     initLevel()
 }
 
@@ -37,28 +36,23 @@ function stop() {
 }
 
 function initLevel() {
-    items.bar.level = currentLevel + 1
     items.pointIndexToClick = 0
     reset()
     loadCoordinates()
     loadBackgroundImage()
     if(mode == "drawletters" || mode == "drawnumbers") {
         //function to play letter sound at start
-        playLetterSound(dataset[currentLevel].sound)
+        playLetterSound(dataset[items.currentLevel].sound)
     }
 }
 
 function nextLevel() {
-    if(numberOfLevel <= ++currentLevel) {
-        currentLevel = 0
-    }
+    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }
 
 function previousLevel() {
-    if(--currentLevel < 0) {
-        currentLevel = numberOfLevel - 1
-    }
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }
 
@@ -105,10 +99,10 @@ function drawSegment(pointIndex) {
         }
 
         if (pointIndex == items.pointImageRepeater.count-1) {
-            for (var i = 1; i < dataset[currentLevel].coordinates.length; i++) {
+            for (var i = 1; i < dataset[items.currentLevel].coordinates.length; i++) {
                 items.segmentsRepeater.itemAt(i-1).opacity = 0
             }
-            items.imageBack2.source = url + dataset[currentLevel].imageName2
+            items.imageBack2.source = url + dataset[items.currentLevel].imageName2
             won()
         }
         items.pointIndexToClick++
@@ -117,8 +111,8 @@ function drawSegment(pointIndex) {
 
 function loadCoordinates() {
     // prepare points data
-    pointPositions = dataset[currentLevel].coordinates
-    pointPositions2 = dataset[currentLevel].coordinates2
+    pointPositions = dataset[items.currentLevel].coordinates
+    pointPositions2 = dataset[items.currentLevel].coordinates2
     items.pointImageRepeater.model = pointPositions
     if (mode == "clickanddraw" || mode == "drawletters" || mode == "drawnumbers")
         items.pointImageRepeater.itemAt(0).highlight = true
@@ -136,8 +130,8 @@ function loadCoordinates() {
 }
 
 function loadBackgroundImage() {
-    items.imageBack.source = url + dataset[currentLevel].imageName1
-    items.imageBack2.source = url + dataset[currentLevel].imageName1
+    items.imageBack.source = url + dataset[items.currentLevel].imageName1
+    items.imageBack2.source = url + dataset[items.currentLevel].imageName1
 }
 
 function won() {
