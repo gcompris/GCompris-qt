@@ -16,7 +16,6 @@
 
 var url = "qrc:/gcompris/src/activities/hanoi_real/resource/"
 
-var currentLevel = 0
 var numberOfLevel
 var items
 var activityMode
@@ -54,8 +53,8 @@ var nbMaxItemsByTower
 function start(items_, activityMode_) {
     items = items_
     activityMode = activityMode_
-    currentLevel = 0
     numberOfLevel = (activityMode == "real") ? 3 : 6
+    items.currentLevel = Core.getInitialLevel(numberOfLevel)
 
     initLevel()
 }
@@ -65,40 +64,39 @@ function stop() {
 
 function initSpecificInfoForSimplified() {
     Core.shuffle(symbols);
-    switch(items.bar.level) {
-    case 1:
+    switch(items.currentLevel) {
+    case 0:
         nbTowersLessExpectedAndResultOnes = 3;
         nbMaxItemsByTower = 5;
         break;
-    case 2:
+    case 1:
         nbTowersLessExpectedAndResultOnes = 4;
         nbMaxItemsByTower = 5;
         break;
-    case 3:
+    case 2:
         nbTowersLessExpectedAndResultOnes = 5;
         nbMaxItemsByTower = 6;
         break;
-    case 4:
+    case 3:
         nbTowersLessExpectedAndResultOnes = 6;
         nbMaxItemsByTower = 7;
         break;
-    case 5:
+    case 4:
         nbTowersLessExpectedAndResultOnes = 6;
         nbMaxItemsByTower = 8;
         break;
-    case 6:
+    case 5:
         nbTowersLessExpectedAndResultOnes = 5;
         nbMaxItemsByTower = 9;
     }
 }
 
 function initLevel() {
-    items.bar.level = currentLevel + 1
 
     items.hasWon = false
 
     if(activityMode == "real") {
-        items.numberOfDisc = currentLevel + 3
+        items.numberOfDisc = items.currentLevel + 3
         items.discRepeater.model = items.numberOfDisc
         items.towerModel.model = 3
     }
@@ -138,17 +136,13 @@ function initLevel() {
 
 function nextLevel()
 {
-    if(numberOfLevel <= ++currentLevel) {
-        currentLevel = 0
-    }
+    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }
 
 function previousLevel()
 {
-    if(--currentLevel < 0) {
-        currentLevel = numberOfLevel - 1
-    }
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }
 
