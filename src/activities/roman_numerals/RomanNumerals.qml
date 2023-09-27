@@ -12,6 +12,7 @@ import QtQuick 2.12
 import GCompris 1.0
 
 import "../../core"
+import "qrc:/gcompris/src/core/core.js" as Core
 
 ActivityBase {
     id: activity
@@ -57,7 +58,6 @@ ActivityBase {
             id: items
             property Item main: activity.main
             property alias background: background
-            property alias bar: bar
             property alias bonus: bonus
             property alias score: score
             property alias textInput: textInput
@@ -172,7 +172,7 @@ ActivityBase {
             function start() {
                 if (!ApplicationInfo.isMobile)
                     textInput.forceActiveFocus();
-                items.currentLevel = 0
+                items.currentLevel = Core.getInitialLevel(items.numberOfLevel)
                 initLevel()
             }
 
@@ -192,22 +192,12 @@ ActivityBase {
             }
 
             function nextLevel() {
-                if(numberOfLevel - 1 == currentLevel) {
-                    currentLevel = 0
-                } else {
-                    currentLevel++
-                }
-
+                currentLevel = Core.getNextLevel(currentLevel, numberOfLevel);
                 initLevel();
             }
 
             function previousLevel() {
-                if(currentLevel == 0) {
-                    currentLevel = numberOfLevel - 1
-                } else {
-                    currentLevel--
-                }
-
+                currentLevel = Core.getPreviousLevel(currentLevel, numberOfLevel);
                 initLevel();
             }
 
@@ -475,6 +465,7 @@ ActivityBase {
 
         Bar {
             id: bar
+            level: items.currentLevel + 1
             anchors.bottom: keyboard.top
             content: BarEnumContent { value: help | home | level | hint }
             onHelpClicked: {
@@ -483,7 +474,6 @@ ActivityBase {
             onPreviousLevelClicked: items.previousLevel()
             onNextLevelClicked: items.nextLevel()
             onHomeClicked: activity.home()
-            level: items.currentLevel + 1
             onHintClicked: feedbackArea.visible = !feedbackArea.visible
         }
         BarButton {
