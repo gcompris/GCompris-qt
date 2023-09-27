@@ -18,7 +18,6 @@ var url = "qrc:/gcompris/src/activities/missing-letter/resource/"
 var langUrl = "qrc:/gcompris/src/activities/lang/resource/";
 
 var items
-var currentLevel
 var numberOfLevel
 
 var questions
@@ -34,8 +33,6 @@ function init(items_) {
 }
 
 function start() {
-    currentLevel = 0
-
     var locale = GCompris.ApplicationInfo.getVoicesLocale(items.locale)
 
     // register the voices for the locale
@@ -75,6 +72,7 @@ function start() {
     lessons = Lang.getAllLessons(dataset)
     questions = initDataset()
     numberOfLevel = questions.length
+    items.currentLevel = Core.getInitialLevel(numberOfLevel)
     initLevel()
 }
 
@@ -180,14 +178,13 @@ function stop() {
 
 function initLevel() {
     items.questionAnim.stop()
-    items.bar.level = currentLevel + 1
     items.score.currentSubLevel = 1
-    items.score.numberOfSubLevels = questions[currentLevel].length
+    items.score.numberOfSubLevels = questions[items.currentLevel].length
     showQuestion()
 }
 
 function getCurrentQuestion() {
-    return questions[currentLevel][items.score.currentSubLevel - 1]
+    return questions[items.currentLevel][items.score.currentSubLevel - 1]
 }
 
 function showQuestion() {
@@ -203,16 +200,14 @@ function showQuestion() {
 }
 
 function nextLevel() {
-    if(numberOfLevel <= ++currentLevel) {
-        currentLevel = 0
-    }
+    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }
 
 function nextSubLevel() {
     var question = getCurrentQuestion()
 
-    if(items.score.currentSubLevel >= questions[currentLevel].length) {
+    if(items.score.currentSubLevel >= questions[items.currentLevel].length) {
         items.bonus.good('flower')
         return
     }
@@ -221,9 +216,7 @@ function nextSubLevel() {
 }
 
 function previousLevel() {
-    if(--currentLevel < 0) {
-        currentLevel = numberOfLevel - 1
-    }
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }
 
