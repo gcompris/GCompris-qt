@@ -42,7 +42,6 @@ ActivityBase {
             id: items
             property Item main: activity.main
             property alias background: background
-            property alias bar: bar
             property alias bonus: bonus
             property alias board: board
             property alias player1score: player1score
@@ -453,6 +452,7 @@ ActivityBase {
 
         Bar {
             id: bar
+            level: items.currentLevel + 1
             content: BarEnumContent { value: help | home | reload }
             onHelpClicked: {
                 displayDialog(dialogHelp)
