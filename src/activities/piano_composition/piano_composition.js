@@ -15,7 +15,6 @@
 .import GCompris 1.0 as GCompris
 .import "qrc:/gcompris/src/core/core.js" as Core
 
-var currentLevel = 0
 var numberOfLevel = 7
 var items
 var userDir = "file://" + GCompris.ApplicationSettings.userDataPath + "/" + "piano_composition"
@@ -46,7 +45,7 @@ var instructions = [{
 
 function start(items_) {
     items = items_
-    currentLevel = 0
+    items.currentLevel = Core.getInitialLevel(numberOfLevel)
     initLevel()
 }
 
@@ -79,10 +78,9 @@ function stop() {
 }
 
 function initLevel() {
-    items.bar.level = currentLevel + 1
     items.multipleStaff.bpmValue = 120
 
-    if(items.bar.level === 2) {
+    if(items.currentLevel === 1) {
         items.background.clefType = "Bass"
         items.piano.currentOctaveNb = 0
     }
@@ -93,7 +91,7 @@ function initLevel() {
 
     items.multipleStaff.initClefs(items.background.clefType)
 
-    if(items.bar.level === 4)
+    if(items.currentLevel === 3)
         items.piano.useSharpNotation = false
     else
         items.piano.useSharpNotation = true
@@ -122,16 +120,12 @@ function undoChange() {
 
 function nextLevel() {
     items.multipleStaff.eraseAllNotes()
-    if(numberOfLevel <= ++currentLevel) {
-        currentLevel = 0
-    }
+    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
     initLevel()
 }
 
 function previousLevel() {
     items.multipleStaff.eraseAllNotes()
-    if(--currentLevel < 0) {
-        currentLevel = numberOfLevel - 1
-    }
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
     initLevel()
 }

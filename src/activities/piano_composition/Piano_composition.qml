@@ -88,7 +88,7 @@ ActivityBase {
             property Item main: activity.main
             property alias background: background
             property GCSfx audioEffects: activity.audioEffects
-            property alias bar: bar
+            property int currentLevel: activity.currentLevel
             property alias bonus: bonus
             property alias multipleStaff: multipleStaff
             property string staffLength: "short"
@@ -109,7 +109,7 @@ ActivityBase {
 
         property string currentType: "Quarter"
         property string restType: "Whole"
-        property string clefType: bar.level == 2 ? "Bass" : "Treble"
+        property string clefType: items.currentLevel == 1 ? "Bass" : "Treble"
         property bool isLyricsMode: (optionsRow.lyricsOrPianoModeIndex === 1) && optionsRow.lyricsOrPianoModeOptionVisible
         property int layoutMargins: 5 * ApplicationInfo.ratio
 
@@ -208,7 +208,7 @@ ActivityBase {
                 verticalAlignment: Text.AlignVCenter
                 fontSizeMode: Text.Fit
                 wrapMode: Text.WordWrap
-                text: Activity.instructions[bar.level - 1].text
+                text: Activity.instructions[items.currentLevel].text
             }
         }
 
@@ -255,9 +255,9 @@ ActivityBase {
                 width: parent.width * 0.8
                 anchors.horizontalCenter: parent.horizontalCenter
                 anchors.verticalCenter: parent.verticalCenter
-                blackLabelsVisible: [3, 4, 5, 6, 7, 8].indexOf(items.bar.level) == -1 ? false : true
-                useSharpNotation: bar.level != 4
-                blackKeysEnabled: bar.level > 2
+                blackLabelsVisible: [3, 4, 5, 6, 7, 8].indexOf(items.currentLevel + 1) == -1 ? false : true
+                useSharpNotation: items.currentLevel != 3
+                blackKeysEnabled: items.currentLevel > 1
                 visible: !background.isLyricsMode
                 currentOctaveNb: (background.clefType === "Bass") ? 0 : 1
 
@@ -339,16 +339,16 @@ ActivityBase {
             anchors.margins: layoutMargins
             anchors.left: background.left
             iconsWidth: 0
-            noteOptionsVisible: bar.level > 4
+            noteOptionsVisible: items.currentLevel > 3
             playButtonVisible: true
-            keyOption.clefButtonVisible: bar.level > 2
+            keyOption.clefButtonVisible: items.currentLevel > 1
             clearButtonVisible: true
             undoButtonVisible: true
-            openButtonVisible: bar.level > 6
-            saveButtonVisible: bar.level > 6
-            changeAccidentalStyleButtonVisible: bar.level >= 4
-            lyricsOrPianoModeOptionVisible: bar.level > 6
-            restOptionsVisible: bar.level > 5
+            openButtonVisible: items.currentLevel > 5
+            saveButtonVisible: items.currentLevel > 5
+            changeAccidentalStyleButtonVisible: items.currentLevel >= 3
+            lyricsOrPianoModeOptionVisible: items.currentLevel > 5
+            restOptionsVisible: items.currentLevel > 4
             bpmVisible: true
 
             onUndoButtonClicked: {
@@ -458,6 +458,7 @@ ActivityBase {
 
         Bar {
             id: bar
+            level: items.currentLevel + 1
             content: BarEnumContent { value: help | home | level }
             onHelpClicked: {
                 displayDialog(dialogHelp)
