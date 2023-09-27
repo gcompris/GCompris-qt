@@ -43,8 +43,9 @@ ActivityBase {
         QtObject {
             id: items
             property alias background: background
-            property alias blocks: blocks
             property alias bar: bar
+            property alias blocks: blocks
+            property int currentLevel: activity.currentLevel
             property alias bonus: bonus
             property int nbSubLevel: 6
             property int currentSubLevel: 0
@@ -138,6 +139,7 @@ ActivityBase {
 
         Bar {
             id: bar
+            level: items.currentLevel + 1
             content: BarEnumContent { value: help | home | level | activityConfig }
             onHelpClicked: {
                 displayDialog(dialogHelpLeftRight)

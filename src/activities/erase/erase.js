@@ -59,7 +59,6 @@ var blockImages = [
     url + "transparent_square_green.svg"
 ]
 
-var currentLevel
 var currentImage
 var main
 var items
@@ -69,14 +68,14 @@ var type
 var createdBlocks
 var killedBlocks
 
-var nbLevel = 6
+var numberOfLevel = 6
 var imgIndex
 
 function start(main_, items_, type_) {
     main = main_
     items = items_
     type = type_
-    currentLevel = 0
+    items.currentLevel = Core.getInitialLevel(numberOfLevel)
     items_.currentSubLevel = 0
     currentImage = 0
     imgIndex = 0
@@ -89,7 +88,6 @@ function stop() {
 function initLevel() {
     items.blocks.clear()
     imgIndex++
-    items.bar.level = currentLevel + 1
     currentImage++
     if(currentImage >= backgroundImages.length) {
         currentImage = 0
@@ -98,8 +96,8 @@ function initLevel() {
     items.background.alignBackground()
     createdBlocks = 0
     killedBlocks = 0
-    var nbx = Math.min((currentLevel % 2 * 3) + 5, main.width / (10 * GCompris.ApplicationInfo.ratio));
-    var nby = Math.min((currentLevel % 2 * 3) + 5, main.height / (10 * GCompris.ApplicationInfo.ratio));
+    var nbx = Math.min((items.currentLevel % 2 * 3) + 5, main.width / (10 * GCompris.ApplicationInfo.ratio));
+    var nby = Math.min((items.currentLevel % 2 * 3) + 5, main.height / (10 * GCompris.ApplicationInfo.ratio));
     var data
 
         for(var x = 0;  x < nbx; ++x) {
@@ -116,9 +114,7 @@ function initLevel() {
 }
 
 function nextLevel() {
-    if( ++currentLevel >= nbLevel ) {
-        currentLevel = 0
-    }
+    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
     items.currentSubLevel = 0;
     initLevel();
 }
@@ -132,9 +128,7 @@ function nextSubLevel() {
 }
 
 function previousLevel() {
-    if(--currentLevel < 0) {
-        currentLevel = nbLevel - 1
-    }
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
     items.currentSubLevel = 0;
     initLevel();
 }
