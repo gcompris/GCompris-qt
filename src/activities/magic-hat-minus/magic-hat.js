@@ -9,10 +9,10 @@
  */
 .pragma library
 .import QtQuick 2.12 as Quick
+.import "qrc:/gcompris/src/core/core.js" as Core
 
 var url = "qrc:/gcompris/src/activities/magic-hat-minus/resource/"
 
-var currentLevel
 var numberOfLevel
 var numberOfUserStars
 var items;
@@ -31,8 +31,8 @@ function start(items_, mode_) {
     items = items_
     mode = mode_
     magicHat = items.hat
-    currentLevel = 0
     numberOfLevel = items.levels.length
+    items.currentLevel = Core.getInitialLevel(numberOfLevel)
     initLevel()
 }
 
@@ -40,16 +40,15 @@ function stop() {
 }
 
 function initLevel() {
-    items.bar.level = currentLevel + 1
     magicHat.state = "NormalPosition"
     numberOfStars = new Array(0, 0, 0)
     numberOfUserStars = new Array(0, 0, 0)
     nbStarsToAddOrRemove = new Array(0, 0, 0)
     nbStarsToCount = new Array(0, 0, 0)
     animationCount = 0
-    var maxValue = items.levels[currentLevel].maxValue
+    var maxValue = items.levels[items.currentLevel].maxValue
 
-    if(currentLevel > 0) {
+    if(items.currentLevel > 0) {
         items.introductionText.visible = false
     } else {
         items.introductionText.visible = true
@@ -66,16 +65,16 @@ function initLevel() {
         setCoefficientVisibility(false)
     } else {
         for(var i = 0; i < 3; i++)
-            questionCoefficients[i] = Math.round(items.levels[currentLevel].maxStars[i] / 10);
+            questionCoefficients[i] = Math.round(items.levels[items.currentLevel].maxStars[i] / 10);
         answerCoefficients[0] = maxValue / 100;
         answerCoefficients[1] = maxValue / 20;
         answerCoefficients[2] = maxValue / 10;
         setCoefficientVisibility(true)
     }
     var subtractor = (mode === "minus") ? 0 : 1
-    numberOfStars[0] = (items.levels[currentLevel].maxStars[0] > 0) ? getRandomInt(items.levels[currentLevel].minStars[0], (items.levels[currentLevel].maxStars[0] / questionCoefficients[0]) - subtractor) : 0
-    numberOfStars[1] = (items.levels[currentLevel].maxStars[1] > 0) ? getRandomInt(items.levels[currentLevel].minStars[1], (items.levels[currentLevel].maxStars[1] / questionCoefficients[1]) - subtractor) : 0
-    numberOfStars[2] = (items.levels[currentLevel].maxStars[2] > 0) ? getRandomInt(items.levels[currentLevel].minStars[2], (items.levels[currentLevel].maxStars[2] / questionCoefficients[2]) - subtractor) : 0
+    numberOfStars[0] = (items.levels[items.currentLevel].maxStars[0] > 0) ? getRandomInt(items.levels[items.currentLevel].minStars[0], (items.levels[items.currentLevel].maxStars[0] / questionCoefficients[0]) - subtractor) : 0
+    numberOfStars[1] = (items.levels[items.currentLevel].maxStars[1] > 0) ? getRandomInt(items.levels[items.currentLevel].minStars[1], (items.levels[items.currentLevel].maxStars[1] / questionCoefficients[1]) - subtractor) : 0
+    numberOfStars[2] = (items.levels[items.currentLevel].maxStars[2] > 0) ? getRandomInt(items.levels[items.currentLevel].minStars[2], (items.levels[items.currentLevel].maxStars[2] / questionCoefficients[2]) - subtractor) : 0
 
     for(var i=0; i<3; i++) {
         items.repeatersList[0].itemAt(i).nbStarsOn = numberOfStars[i]
@@ -133,7 +132,7 @@ function userClickedAStar(barIndex,state) {
 }
 
 function verifyAnswer() {
-    if(items.levels[currentLevel].maxValue / maxStarSlots <= 1) {
+    if(items.levels[items.currentLevel].maxValue / maxStarSlots <= 1) {
         if(numberOfUserStars[0] === nbStarsToCount[0] &&
         numberOfUserStars[1] === nbStarsToCount[1] &&
         numberOfUserStars[2] === nbStarsToCount[2]) {
@@ -154,21 +153,17 @@ function verifyAnswer() {
 }
 
 function nextLevel() {
-    if(numberOfLevel <= ++currentLevel ) {
-        currentLevel = 0
-    }
+    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }
 
 function previousLevel() {
-    if(--currentLevel < 0) {
-        currentLevel = numberOfLevel - 1
-    }
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }
 
 function moveStarsUnderHat() {
-    if(currentLevel == 0) {
+    if(items.currentLevel == 0) {
         items.introductionText.visible = false
     }
 
