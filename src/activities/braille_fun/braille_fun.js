@@ -12,7 +12,6 @@
 .import QtQuick 2.12 as Quick
 .import "qrc:/gcompris/src/core/core.js" as Core
 
-var currentLevel = 0
 var numberOfLevel = 3
 var items
 var currentQuestion
@@ -24,7 +23,7 @@ var url = "qrc:/gcompris/src/activities/braille_fun/resource/"
 
 function start(items_ ) {
     items = items_
-    currentLevel = 0
+    items.currentLevel = Core.getInitialLevel(numberOfLevel)
     initLevel()
 }
 
@@ -48,13 +47,12 @@ function nextQuestion() {
 }
 
 function initLevel() {
-    items.bar.level = currentLevel + 1
     currentQuestion = 0
     items.score.numberOfSubLevels = set.length;
     items.score.currentSubLevel = 0;
     questionArray = []
 
-    switch(currentLevel) {
+    switch(items.currentLevel) {
     case 0:
         for(var i = 0;  i < set.length; i++) {
             questionArray[i] = set[i];
@@ -76,19 +74,15 @@ function initLevel() {
     }
 
     initQuestion()
-    items.cardRepeater.model = currentLevel + 1;
+    items.cardRepeater.model = items.currentLevel + 1;
 }
 
 function nextLevel() {
-    if(numberOfLevel <= ++currentLevel ) {
-        currentLevel = 0
-    }
+    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }
 
 function previousLevel() {
-    if(--currentLevel < 0) {
-        currentLevel = numberOfLevel - 1
-    }
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }

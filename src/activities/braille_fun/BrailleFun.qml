@@ -48,7 +48,7 @@ ActivityBase {
             id: items
             property Item main: activity.main
             property alias background: background
-            property alias bar: bar
+            property int currentLevel: activity.currentLevel
             property alias bonus: bonus
             property alias questionItem: questionItem
             property alias score: score
@@ -160,7 +160,11 @@ ActivityBase {
                                 onBrailleCharChanged: {
                                     inner.brailleChar = ins.brailleChar
                                     var answerString = "" ;
-                                    for(var i = 0 ; i < Activity.currentLevel + 1 ; i++ ) {
+                                    if(brailleChar == "") {
+                                        // fix TypeError on level change
+                                        return
+                                    }
+                                    for(var i = 0 ; i < items.currentLevel + 1 ; i++ ) {
                                         answerString = answerString + cardRepeater.itemAt(i).brailleChar;
                                     }
                                     if(answerString === items.question) {
@@ -214,6 +218,7 @@ ActivityBase {
 
         Bar {
             id: bar
+            level: items.currentLevel + 1
             content: BarEnumContent { value: help | home | level }
             onHelpClicked: {
                 displayDialog(dialogHelp)
