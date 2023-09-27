@@ -8,8 +8,9 @@
 *
 *   SPDX-License-Identifier: GPL-3.0-or-later
 */
+.import "qrc:/gcompris/src/core/core.js" as Core
+
 var url = "qrc:/gcompris/src/activities/maze/resource/"
-var currentLevel = 0
 var numberOfLevel = 25
 var items
 var relativeMode
@@ -31,7 +32,7 @@ function start(items_, relativeMode_, invisibleMode_) {
     items = items_
     relativeMode = relativeMode_
     invisibleMode = invisibleMode_
-    currentLevel = 0
+    items.currentLevel = Core.getInitialLevel(numberOfLevel)
     initLevel()
 }
 
@@ -39,83 +40,82 @@ function stop() {}
 
 function initLevel() {
     items.wallVisible = !invisibleMode
-    items.bar.level = currentLevel + 1
 
     win = false
 
     /* Set main variables */
-    if (currentLevel + 1 == 1) {
+    if (items.currentLevel + 1 == 1) {
         mazeColumns = 4
         mazeRows = 4
-    } else if (currentLevel + 1 == 2) {
+    } else if (items.currentLevel + 1 == 2) {
         mazeColumns = 5
         mazeRows = 4
-    } else if (currentLevel + 1 == 3) {
+    } else if (items.currentLevel + 1 == 3) {
         mazeColumns = 5
         mazeRows = 5
-    } else if (currentLevel + 1 == 4) {
+    } else if (items.currentLevel + 1 == 4) {
         mazeColumns = 6
         mazeRows = 5
-    } else if (currentLevel + 1 == 5) {
+    } else if (items.currentLevel + 1 == 5) {
         mazeColumns = 6
         mazeRows = 6
-    } else if (currentLevel + 1 == 6) {
+    } else if (items.currentLevel + 1 == 6) {
         mazeColumns = 6
         mazeRows = 7
-    } else if (currentLevel + 1 == 7) {
+    } else if (items.currentLevel + 1 == 7) {
         mazeColumns = 7
         mazeRows = 7
-    } else if (currentLevel + 1 == 8) {
+    } else if (items.currentLevel + 1 == 8) {
         mazeColumns = 8
         mazeRows = 7
-    } else if (currentLevel + 1 == 9) {
+    } else if (items.currentLevel + 1 == 9) {
         mazeColumns = 8
         mazeRows = 8
-    } else if (currentLevel + 1 == 10) {
+    } else if (items.currentLevel + 1 == 10) {
         mazeColumns = 9
         mazeRows = 8
-    } else if (currentLevel + 1 == 11) {
+    } else if (items.currentLevel + 1 == 11) {
         mazeColumns = 9
         mazeRows = 9
-    } else if (currentLevel + 1 == 12) {
+    } else if (items.currentLevel + 1 == 12) {
         mazeColumns = 10
         mazeRows = 9
-    } else if (currentLevel + 1 == 13) {
+    } else if (items.currentLevel + 1 == 13) {
         mazeColumns = 10
         mazeRows = 10
-    } else if (currentLevel + 1 == 14) {
+    } else if (items.currentLevel + 1 == 14) {
         mazeColumns = 8
         mazeRows = 16
-    } else if (currentLevel + 1 == 15) {
+    } else if (items.currentLevel + 1 == 15) {
         mazeColumns = 14
         mazeRows = 14
-    } else if (currentLevel + 1 == 16) {
+    } else if (items.currentLevel + 1 == 16) {
         mazeColumns = 16
         mazeRows = 15
-    } else if (currentLevel + 1 == 17) {
+    } else if (items.currentLevel + 1 == 17) {
         mazeColumns = 17
         mazeRows = 16
-    } else if (currentLevel + 1 == 18) {
+    } else if (items.currentLevel + 1 == 18) {
         mazeColumns = 18
-    } else if (currentLevel + 1 == 19) {
+    } else if (items.currentLevel + 1 == 19) {
         mazeColumns = 19
         mazeRows = 18
-    } else if (currentLevel + 1 == 20) {
+    } else if (items.currentLevel + 1 == 20) {
         mazeColumns = 19
         mazeRows = 19
-    } else if (currentLevel + 1 == 21) {
+    } else if (items.currentLevel + 1 == 21) {
         mazeColumns = 20
         mazeRows = 19
-    } else if (currentLevel + 1 == 22) {
+    } else if (items.currentLevel + 1 == 22) {
         mazeColumns = 20
         mazeRows = 20
-    } else if (currentLevel + 1 == 23) {
+    } else if (items.currentLevel + 1 == 23) {
         mazeColumns = 19
         mazeRows = 21
-    } else if (currentLevel + 1 == 24) {
+    } else if (items.currentLevel + 1 == 24) {
         mazeColumns = 23
         mazeRows = 21
-    } else if (currentLevel + 1 == 25) {
+    } else if (items.currentLevel + 1 == 25) {
         mazeColumns = 23
         mazeRows = 23
     }
@@ -148,7 +148,7 @@ function initLevel() {
     /* Set position of door */
     items.doory = Math.floor(Math.random() * mazeRows)
 
-    items.fastMode = (currentLevel + 1 >= 14)
+    items.fastMode = (items.currentLevel + 1 >= 14)
 }
 
 function getId(x, y) {
@@ -237,17 +237,13 @@ function generateMaze(x, y) {
 }
 
 function nextLevel() {
-    if (numberOfLevel <= ++currentLevel) {
-        currentLevel = 0
-    }
-    initLevel()
+    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
+    initLevel();
 }
 
 function previousLevel() {
-    if (--currentLevel < 0) {
-        currentLevel = numberOfLevel - 1
-    }
-    initLevel()
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
+    initLevel();
 }
 
 function getMaze() {
