@@ -10,7 +10,6 @@
 .import "../../core/core.js" as Core
 
 var items;
-var currentLevel = 0;
 var numberOfLevel = 3;
 var animalCountForBonus = 0;
 var cardsToDisplay;
@@ -27,6 +26,7 @@ var Position = {
 
 function start(items_) {
     items = items_
+    items.currentLevel = Core.getInitialLevel(numberOfLevel);
     initLevel()
 }
 
@@ -34,10 +34,9 @@ function stop() {
 }
 
 function initLevel() {
-    items.bar.level = currentLevel + 1;
     items.animalListModel.clear();
     var animalArray = new Array();
-    cardsToDisplay = levelDifficulty[items.bar.level - 1];
+    cardsToDisplay = levelDifficulty[items.currentLevel];
     items.animalCount = (cardsToDisplay / 2) * 3;
     var animalCardLeft = {
         "animalIdentifier": Position.left,
@@ -68,11 +67,11 @@ function initLevel() {
         animalArray.push(animalCardInvisible);
     }
     // more right cards on level 1 than left cards.
-    if(items.bar.level === 1) {
+    if(items.currentLevel === 0) {
         animalArray.push(animalCardLeft);
     }
     // more left cards on level 2 than right cards.
-    else if(items.bar.level === 2) {
+    else if(items.currentLevel === 1) {
         animalArray.push(animalCardRight);
     }
     Core.shuffle(animalArray);
@@ -83,16 +82,12 @@ function initLevel() {
 }
 
 function nextLevel() {
-    if(numberOfLevel <= ++currentLevel) {
-        currentLevel = 0;
-    }
+    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }
 
 function previousLevel() {
-    if(--currentLevel < 0) {
-        currentLevel = numberOfLevel - 1;
-    }
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }
 
