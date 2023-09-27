@@ -10,16 +10,16 @@
  */
 .pragma library
 .import QtQuick 2.12 as Quick
+.import "qrc:/gcompris/src/core/core.js" as Core
 
 var url = "qrc:/gcompris/src/activities/mining/resource/"
 
-var currentLevel = 0
 var numberOfLevel = 3
 var items
 
 function start(items_) {
     items = items_
-    currentLevel = 0
+    items.currentLevel = Core.getInitialLevel(numberOfLevel)
     initLevel()
 }
 
@@ -50,7 +50,7 @@ function createLevel() {
     // The Grid is 4*4 but we skip the last line free for the bar
     // The borders are harder to get so we allow them only on higher
     // levels.
-    if(currentLevel < 2) {
+    if(items.currentLevel < 2) {
         var choices = [5, 6, 9, 10]
         miningItems[choices[(Math.floor(Math.random() * 4))]] = getItem("sparkle")
     } else {
@@ -60,22 +60,17 @@ function createLevel() {
 }
 
 function initLevel() {
-    items.bar.level = currentLevel + 1
     items.collectedNuggets = 0
 
     createLevel()
 }
 
 function nextLevel() {
-    if(numberOfLevel <= ++currentLevel ) {
-        currentLevel = 0
-    }
+    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }
 
 function previousLevel() {
-    if(--currentLevel < 0) {
-        currentLevel = numberOfLevel - 1
-    }
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }
