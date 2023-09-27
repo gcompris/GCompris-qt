@@ -14,7 +14,6 @@
 
 var url = "qrc:/gcompris/src/activities/braille_alphabets/resource/"
 
-var currentLevel
 var numberOfLevel
 var items
 var dataset
@@ -24,8 +23,8 @@ var currentDataSet
 function start(items_, dataset_) {
     items = items_
     dataset = dataset_.get()
-    currentLevel = 0
     numberOfLevel = dataset.length * 2
+    items.currentLevel = Core.getInitialLevel(numberOfLevel)
     initLevel()
 }
 
@@ -34,11 +33,10 @@ function stop() {
 
 function initLevel() {
     items.levelComplete = false
-    items.bar.level = currentLevel + 1
     items.containerModel.clear()
     currentQuestion = 0
 
-    switch(currentLevel) {
+    switch(items.currentLevel) {
         case 0:
             items.instructions = ""
             items.brailleCodeSeen = true
@@ -108,16 +106,12 @@ function initLevel() {
 }
 
 function nextLevel() {
-    if(numberOfLevel <= ++currentLevel) {
-        currentLevel = 0
-    }
+    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }
 
 function previousLevel() {
-    if(--currentLevel < 0) {
-        currentLevel = numberOfLevel - 1
-    }
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }
 
