@@ -11,10 +11,10 @@
 .pragma library
 .import QtQuick 2.12 as Quick
 .import GCompris 1.0 as GCompris
+.import "qrc:/gcompris/src/core/core.js" as Core
 
 var url = "qrc:/gcompris/src/activities/followline/resource/"
 
-var currentLevel = 0
 var numberOfLevel = 8
 var items
 var createdLineParts
@@ -25,7 +25,7 @@ var isStopped = false
 function start(items_) {
     isStopped = false
     items = items_
-    currentLevel = 0
+    items.currentLevel = Core.getInitialLevel(numberOfLevel)
     initLevel()
 }
 
@@ -39,10 +39,9 @@ function initLevel() {
     /* Check items.bar because when starting followline at least twice,
      it is undefined (called by FollowLine.qml:onHeightChanged())
     */
-    if(!items || !items.bar || isStopped)
+    if(!items || isStopped)
         return
 
-    items.bar.level = currentLevel + 1
     items.currentLock = 0
     movedOut = true
     destroyLineParts()
@@ -55,7 +54,7 @@ function initLevel() {
     var y = 0
     var x = 0
     var angle = 0
-    var directionStep = items.verticalLayout ? 0.02 * (currentLevel + 1) * 0.5 : 0.01 * (currentLevel + 1)
+    var directionStep = items.verticalLayout ? 0.02 * (items.currentLevel + 1) * 0.5 : 0.01 * (items.currentLevel + 1)
     var direction = directionStep
     if(!items.verticalLayout) {
         do {
@@ -105,16 +104,12 @@ function initLevel() {
 }
 
 function nextLevel() {
-    if(numberOfLevel <= ++currentLevel) {
-        currentLevel = 0
-    }
+    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }
 
 function previousLevel() {
-    if(--currentLevel < 0) {
-        currentLevel = numberOfLevel - 1
-    }
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }
 

@@ -45,7 +45,7 @@ ActivityBase {
             property alias lineArea: lineArea
             property alias fire: fire
             property alias lineBrokenTimer: lineBrokenTimer
-            property alias bar: bar
+            property int currentLevel: activity.currentLevel
             property alias bonus: bonus
             property int currentLock: 0
             property int lastLock: 0
@@ -116,6 +116,7 @@ ActivityBase {
 
         Bar {
             id: bar
+            level: items.currentLevel + 1
             content: BarEnumContent { value: help | home | level }
             onHelpClicked: displayDialog(dialogHelp)
             onPreviousLevelClicked: Activity.previousLevel()
