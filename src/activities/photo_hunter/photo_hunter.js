@@ -10,8 +10,8 @@
  */
 .pragma library
 .import QtQuick 2.12 as Quick
+.import "qrc:/gcompris/src/core/core.js" as Core
 
-var currentLevel = 0
 var items
 var url = "qrc:/gcompris/src/activities/photo_hunter/resource/"
 
@@ -81,7 +81,7 @@ var numberOfLevel = dataset.length
 
 function start(items_) {
     items = items_
-    currentLevel = 0
+    items.currentLevel = Core.getInitialLevel(numberOfLevel)
     initLevel()
 }
 
@@ -89,11 +89,7 @@ function stop() {
 }
 
 function initLevel() {
-    items.bar.level = currentLevel + 1
     items.background.startedHelp = false
-
-    items.problem.hideProblem = !items.showProblem
-
     setUp()
 }
 
@@ -108,14 +104,14 @@ function setUp() {
     items.img1.good = 0
     items.img2.good = 0
 
-    items.total = dataset[currentLevel].coordinates.length
+    items.total = dataset[items.currentLevel].coordinates.length
 
-    items.img1.source = url + "photo" + (currentLevel+1) + ".svg"
-    items.img2.source = url + "photo" + (currentLevel+1) + ".svg"
+    items.img1.source = url + "photo" + (items.currentLevel+1) + ".svg"
+    items.img2.source = url + "photo" + (items.currentLevel+1) + ".svg"
 }
 
 function loadCoordinate() {
-    var pointPositions = dataset[currentLevel].coordinates
+    var pointPositions = dataset[items.currentLevel].coordinates
     var linePropertiesArray = []
 
     for (var i = 0; i < (pointPositions.length); i++) {
@@ -154,15 +150,13 @@ function photoClicked(item, index) {
 }
 
 function nextLevel() {
-    if(numberOfLevel <= ++currentLevel) {
-        currentLevel = 0
-    }
+    items.model = []
+    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }
 
 function previousLevel() {
-    if(--currentLevel < 0) {
-        currentLevel = numberOfLevel - 1
-    }
+    items.model = []
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }

@@ -96,13 +96,13 @@ Image {
             property alias particleLoader: particleLoader
             property alias differenceAnimation: differenceAnimation
 
-            width: card.width * Activity.dataset[Activity.currentLevel].coordinates[index].w
-            height: card.height * Activity.dataset[Activity.currentLevel].coordinates[index].h
+            width: card.width * Activity.dataset[items.currentLevel].coordinates[index].w
+            height: card.height * Activity.dataset[items.currentLevel].coordinates[index].h
 
             sourceSize.width: width
             fillMode: Image.PreserveAspectFit
 
-            source: Activity.url + "photo" + (Activity.currentLevel + 1) + "_" + (index + 1) + ".svg"
+            source: Activity.url + "photo" + (items.currentLevel + 1) + "_" + (index + 1) + ".svg"
             opacity: card.show ? 1 : 0
 
             x: modelData[0] * card.width

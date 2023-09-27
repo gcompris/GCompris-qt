@@ -41,15 +41,13 @@ ActivityBase {
             id: items
             property Item main: activity.main
             property alias background: background
-            property alias bar: bar
+            property int currentLevel: activity.currentLevel
             property alias bonus: bonus
             property var model
-            property bool showProblem: true
             property alias img1: img1
             property alias img2: img2
             property int total
             property int totalFound: img1.good + img2.good
-            property alias problem: problem
             property alias frame: frame
         }
 
@@ -65,8 +63,8 @@ ActivityBase {
                 bonus.good("flower")
 
                 // after completing a level, mark the problem as shown
-                if (items.showProblem) {
-                    items.showProblem = false
+                if (!problem.hideProblem) {
+                    problem.hideProblem = true
                 }
             }
         }
@@ -98,7 +96,7 @@ ActivityBase {
 
             MouseArea {
                 anchors.fill: parent
-                onClicked: Activity.hideProblem()
+                onClicked: problem.hideProblem = true
             }
         }
 
@@ -233,6 +231,7 @@ ActivityBase {
 
         Bar {
             id: bar
+            level: items.currentLevel + 1
             content: BarEnumContent { value: help | home | level | hint }
             onHelpClicked: {
                 displayDialog(dialogHelp)
