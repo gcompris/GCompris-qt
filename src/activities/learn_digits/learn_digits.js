@@ -12,7 +12,6 @@
 .import GCompris 1.0 as GCompris
 .import "qrc:/gcompris/src/core/core.js" as Core
 
-var currentLevel = 0;
 var numberOfLevel;
 var items;
 var operationMode;
@@ -26,7 +25,7 @@ function start(items_, operationMode_) {
     if(!operationMode && items.voicesEnabled)
         Core.checkForVoices(items_.activityPage);
     numberOfLevel = items.levels.length;
-    currentLevel = 0;
+    items.currentLevel = Core.getInitialLevel(numberOfLevel);
     initLevel();
 }
 
@@ -40,12 +39,11 @@ function initLevel() {
     items.question = 0
     items.questionText = ""
     items.answer = 0
-    items.bar.level = currentLevel + 1;
-    questionsArray = items.levels[currentLevel].questionsArray.slice(0);
+    questionsArray = items.levels[items.currentLevel].questionsArray.slice(0);
     if(operationMode) {
-        answersArray = items.levels[currentLevel].answersArray.slice(0);
+        answersArray = items.levels[items.currentLevel].answersArray.slice(0);
     }
-    items.circlesModel = items.levels[currentLevel].circlesModel;
+    items.circlesModel = items.levels[items.currentLevel].circlesModel;
     items.currentSubLevel = 0;
     items.nbSubLevel = questionsArray.length;
     if(items.mode === 2)
@@ -61,17 +59,13 @@ function initLevel() {
 }
 
 function nextLevel() {
-    if(numberOfLevel <= ++currentLevel) {
-        currentLevel = 0;
-    }
+    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
     items.currentSubLevel = 0;
     initLevel();
 }
 
 function previousLevel() {
-    if(--currentLevel < 0) {
-        currentLevel = numberOfLevel - 1;
-    }
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
     items.currentSubLevel = 0;
     initLevel();
 }
