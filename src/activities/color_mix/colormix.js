@@ -8,16 +8,17 @@
 *
 *   SPDX-License-Identifier: GPL-3.0-or-later
 */
+.import "qrc:/gcompris/src/core/core.js" as Core
+
 var url = "qrc:/gcompris/src/activities/color_mix/resource/"
 
-var currentLevel = 0
 var numberOfLevel = 6
 var items
 var maxSteps = 1
 
 function start(items_) {
     items = items_
-    currentLevel = 0
+    items.currentLevel = Core.getInitialLevel(numberOfLevel)
     items.score.numberOfSubLevels = 6
     items.score.currentSubLevel = 1
     initLevel()
@@ -26,10 +27,9 @@ function start(items_) {
 function stop() {}
 
 function initLevel() {
-    items.bar.level = currentLevel + 1
 
     /* Set max steps */
-    maxSteps = items.bar.level
+    maxSteps = items.currentLevel + 1
     items.maxSteps = maxSteps
 
     /* Compute target color */
@@ -65,16 +65,12 @@ function nextSubLevel() {
 function nextLevel() {
     items.score.currentSubLevel = 1
 
-    if (numberOfLevel <= ++currentLevel) {
-        currentLevel = 0
-    }
+    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
     initLevel()
 }
 
 function previousLevel() {
     items.score.currentSubLevel = 1
-    if (--currentLevel < 0) {
-        currentLevel = numberOfLevel - 1
-    }
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
     initLevel()
 }
