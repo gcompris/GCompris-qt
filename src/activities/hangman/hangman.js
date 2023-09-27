@@ -15,9 +15,8 @@
 .import "qrc:/gcompris/src/core/core.js" as Core
 .import "qrc:/gcompris/src/activities/lang/lang_api.js" as Lang
 
-var currentLevel
 var currentSubLevel
-var maxLevel
+var numberOfLevel
 var maxSubLevel
 var items
 
@@ -37,7 +36,6 @@ String.prototype.replaceAt = function(index, character) {
 
 function start(items_) {
     items = items_
-    currentLevel = 0;
     currentSubLevel = 0;
     items.remainingLife = 6;
 
@@ -53,7 +51,8 @@ function start(items_) {
     dataset = data["dataset"];
     items.background.englishFallback = data["englishFallback"];
     lessons = Lang.getAllLessons(dataset)
-    maxLevel = lessons.length
+    numberOfLevel = lessons.length
+    items.currentLevel = Core.getInitialLevel(numberOfLevel);
     initLevel();
 }
 
@@ -67,8 +66,7 @@ function initLevel() {
         items.winTimer.stop();
     }
 
-    items.bar.level = currentLevel + 1;
-    var currentLesson = lessons[currentLevel];
+    var currentLesson = lessons[items.currentLevel];
     wordList = Lang.getLessonWords(dataset, currentLesson);
     Core.shuffle(wordList);
 
@@ -168,18 +166,14 @@ function processKeyPress(text) {
 }
 
 function nextLevel() {
-    if(maxLevel <= ++currentLevel) {
-        currentLevel = 0
-    }
+    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
     currentSubLevel = 0;
     initLevel();
 }
 
 
 function previousLevel() {
-    if(--currentLevel < 0) {
-        currentLevel = maxLevel - 1
-    }
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
     currentSubLevel = 0;
     initLevel();
 }
