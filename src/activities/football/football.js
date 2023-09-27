@@ -16,7 +16,6 @@
 
 var url = "qrc:/gcompris/src/activities/football/resource/"
 
-var currentLevel = 0
 var numberOfLevel = 8
 var items
 var flag = 0
@@ -27,7 +26,7 @@ var tuxCollision
 
 function start(items_) {
     items = items_
-    currentLevel = 0
+    items.currentLevel = Core.getInitialLevel(numberOfLevel)
     initLevel()
 }
 
@@ -36,7 +35,6 @@ function stop() {
 }
 
 function initLevel() {
-    items.bar.level = currentLevel + 1
     items.ball.x = items.border.width * 0.2
     items.ball.y = items.border.height / 2 - items.ball.height / 2
     velocityX = 0
@@ -48,16 +46,12 @@ function initLevel() {
 }
 
 function nextLevel() {
-    if(numberOfLevel <= ++currentLevel ) {
-        currentLevel = 0
-    }
+    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel)
     initLevel();
 }
 
 function previousLevel() {
-    if(--currentLevel < 0) {
-        currentLevel = numberOfLevel - 1
-    }
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }
 

@@ -36,6 +36,7 @@ ActivityBase {
             id: items
             property Item main: activity.main
             property alias background: background
+            property alias bar: bar
             property alias field: field
             property alias border: border
             property alias ball: ball
@@ -44,7 +45,7 @@ ActivityBase {
             property alias moveTux: moveTux
             property alias moveUp: moveUp
             property alias moveDown: moveDown
-            property alias bar: bar
+            property int currentLevel: activity.currentLevel
             property alias bonus: bonus
             property alias timer: timer
             property GCSfx audioEffects: activity.audioEffects
@@ -158,6 +159,7 @@ ActivityBase {
 
         Bar {
             id: bar
+            level: items.currentLevel + 1
             content: BarEnumContent { value: help | home | level }
             onHelpClicked: {
                 displayDialog(dialogHelp)
