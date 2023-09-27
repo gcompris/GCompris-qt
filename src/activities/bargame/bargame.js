@@ -11,6 +11,7 @@
 .pragma library
 .import GCompris 1.0 as GCompris
 .import QtQuick 2.12 as Quick
+.import "qrc:/gcompris/src/core/core.js" as Core
 
 var levelsProperties = [
     {
@@ -34,8 +35,7 @@ var levelsProperties = [
 ];
 
 var moveCount = -1
-var currentLevel = 1
-var maxLevel = 4
+var numberOfLevel = 4
 var listWin = []
 var items
 var gameMode
@@ -45,7 +45,7 @@ var url= "qrc:/gcompris/src/activities/bargame/resource/";
 function start(items_, gameMode_) {
     items = items_;
     gameMode = gameMode_;
-    currentLevel = 1;
+    items.currentLevel = Core.getInitialLevel(numberOfLevel);
     initLevel();
 }
 
@@ -66,7 +66,6 @@ function initLevel() {
     calculateWinPlaces();
     moveCount = -1;
     items.numberOfBalls = levelsProperties[items.mode - 1].minNumberOfBalls
-    items.bar.level = currentLevel;
 
     // Hiding all visible balls
     for (var x = 0; x < items.answerBallsPlacement.columns; x++) {
@@ -75,18 +74,12 @@ function initLevel() {
 }
 
 function nextLevel() {
-    currentLevel ++;
-    if (currentLevel > maxLevel) {
-        currentLevel = 1;
-    }
+    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }
 
 function previousLevel() {
-    currentLevel--;
-    if (currentLevel < 1) {
-        currentLevel = maxLevel;
-    }
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }
 
@@ -116,13 +109,13 @@ function calculateWinPlaces() {
         }
     }
 
-    var levelWin = (currentLevel - 1) * min;
+    var levelWin = items.currentLevel * min;
 
     if (levelWin == 0) {
         winners = [];
     } else {
         winners = winners.slice(-levelWin);
-        if (currentLevel == maxLevel - 1) {
+        if (items.currentLevel == numberOfLevel - 1) {
             winners = winners.slice(1);
         }
     }

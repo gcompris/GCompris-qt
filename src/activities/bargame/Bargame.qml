@@ -43,7 +43,7 @@ ActivityBase {
             property Item main: activity.main
             property int numberOfBalls: 1
             property alias answerBallsPlacement: answerBallsPlacement
-            property alias bar: bar
+            property int currentLevel: activity.currentLevel
             property alias bonus: bonus
             property alias okArea: okArea
 
@@ -386,7 +386,7 @@ ActivityBase {
 
         Bar {
             id: bar
-            level: 0
+            level: items.currentLevel + 1
             content: BarEnumContent { value: help | home | level | reload | activityConfig }
             onHelpClicked: {
                 displayDialog(dialogHelp)
