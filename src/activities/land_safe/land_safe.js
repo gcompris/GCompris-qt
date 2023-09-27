@@ -31,9 +31,9 @@
 .pragma library
 .import QtQuick 2.12 as Quick
 .import GCompris 1.0 as GCompris
+.import "qrc:/gcompris/src/core/core.js" as Core
 
 var levels;
-var currentLevel = 0;
 var numberOfLevel;
 var items = null;
 var baseUrl = "qrc:/gcompris/src/activities/land_safe/resource";
@@ -54,14 +54,14 @@ var zoomStack = new Array;
 
 function start(items_) {
     items = items_;
-    currentLevel = 0;
     lastLevel = -1;
     levels = items_.levels;
     numberOfLevel = levels.length;
+    items.currentLevel = Core.getInitialLevel(numberOfLevel);
 
     barAtStart = GCompris.ApplicationSettings.isBarHidden;
     GCompris.ApplicationSettings.isBarHidden = true;
-    initLevel()
+    initLevel();
 }
 
 function stop() {
@@ -72,20 +72,19 @@ function initLevel() {
     if (items === null)
         return;
 
-    items.bar.level = currentLevel + 1
 
     items.zoom = 1;
     zoomStack = [];
     // init level:
-    items.accelerometer.min = -levels[currentLevel].gravity;
-    items.accelerometer.max = levels[currentLevel].maxAccel*10-levels[currentLevel].gravity;
-    maxAccel = levels[currentLevel].maxAccel;
-    accelSteps = levels[currentLevel].accelSteps;
+    items.accelerometer.min = -levels[items.currentLevel].gravity;
+    items.accelerometer.max = levels[items.currentLevel].maxAccel*10-levels[items.currentLevel].gravity;
+    maxAccel = levels[items.currentLevel].maxAccel;
+    accelSteps = levels[items.currentLevel].accelSteps;
     dAccel = maxAccel / accelSteps;//- minAccel;
-    startingAltitudeReal = levels[currentLevel].alt;
-    items.gravity = levels[currentLevel].gravity;
-    items.mode = levels[currentLevel].mode;
-    maxFuel = levels[currentLevel].fuel;
+    startingAltitudeReal = levels[items.currentLevel].alt;
+    items.gravity = levels[items.currentLevel].gravity;
+    items.mode = levels[items.currentLevel].mode;
+    maxFuel = levels[items.currentLevel].fuel;
     currentFuel = (maxFuel == -1 ? 1 : maxFuel); // -1 means unlimited fuel
 
     // reset everything:
@@ -118,16 +117,17 @@ function initLevel() {
 
 //    console.log("Starting level (surfaceOff=" + items.ground.surfaceOffset + ", ppm=" + items.world.pixelsPerMeter + ")");
 
-    if (levels[currentLevel].intro !== undefined) {
+    if (levels[items.currentLevel].intro !== undefined) {
         items.ok.visible = false;
-        items.intro.intro = [levels[currentLevel].intro];
+        items.intro.intro = [levels[items.currentLevel].intro];
         items.intro.index = 0;
     } else {
         // go
+        items.intro.intro = [];
         items.intro.index = -1;
         items.ok.visible = true;
     }
-    lastLevel = currentLevel;
+    lastLevel = items.currentLevel;
 }
 
 function pxAltitudeToY(alt)
@@ -154,16 +154,12 @@ function getAltitudeReal()
 }
 
 function nextLevel() {
-    if(numberOfLevel <= ++currentLevel) {
-        currentLevel = 0
-    }
+    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }
 
 function previousLevel() {
-    if(--currentLevel < 0) {
-        currentLevel = numberOfLevel - 1
-    }
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }
 

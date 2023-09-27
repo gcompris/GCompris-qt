@@ -91,6 +91,7 @@ ActivityBase {
             property Item main: activity.main
             property alias background: background
             property alias bar: bar
+            property int currentLevel: activity.currentLevel
             property alias bonus: bonus
             property alias rocket: rocket
             property alias leftEngine: leftEngine
@@ -140,6 +141,7 @@ ActivityBase {
             //timeStep: 1.0/60.0 // default: 60Hz
 
             onStepped: {
+                if(intro.visible) return;
                 if (Math.abs(rocket.body.linearVelocity.y) > 0.01)  // need to store velocity before it is aaaalmost 0 because of ground/landing contact
                     items.lastVelocity = items.velocity;
                 items.velocity = rocket.body.linearVelocity.y;
@@ -740,6 +742,7 @@ ActivityBase {
 
         Bar {
             id: bar
+            level: items.currentLevel + 1
             z: 21
             content: BarEnumContent { value: help | home | level | reload | activityConfig }
             onHelpClicked: displayDialog(dialogHelp);
