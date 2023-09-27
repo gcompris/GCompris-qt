@@ -55,7 +55,7 @@ ActivityBase {
             property bool isAdditionMode: activity.isAdditionMode
             property bool isQuantityMode: activity.isQuantityMode
             property alias background: background
-            property alias bar: bar
+            property int currentLevel: activity.currentLevel
             property alias bonus: bonus
             property alias score: score
             property alias numpad: numpad
@@ -725,6 +725,7 @@ ActivityBase {
 
         Bar {
             id: bar
+            level: items.currentLevel + 1
 
             content: tutorialImage.visible ? tutorialBar : withConfig
             property BarEnumContent tutorialBar: BarEnumContent { value: help | home }

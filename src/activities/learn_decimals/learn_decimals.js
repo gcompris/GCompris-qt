@@ -14,7 +14,6 @@
 .import GCompris 1.0 as GCompris
 .import "qrc:/gcompris/src/core/core.js" as Core
 
-var currentLevel;
 var numberOfLevel;
 var items;
 var dataset;
@@ -83,9 +82,9 @@ var quantityInstructions = [
 
 function start(items_) {
     items = items_;
-    currentLevel = 0;
     dataset = items.levels;
     numberOfLevel = dataset.length;
+    items.currentLevel = Core.getInitialLevel(numberOfLevel);
     items.score.currentSubLevel = 1;
     firstNumberList = [];
 
@@ -98,15 +97,14 @@ function stop() {
 }
 
 function initLevel() {
-    items.bar.level = currentLevel + 1;
-    var data = dataset[currentLevel];
+    var data = dataset[items.currentLevel];
     items.score.numberOfSubLevels = data.numberOfSubLevels;
     items.draggedItems.clear();
     items.droppedItems.clear();
     items.largestNumberRepresentation.clear();
     items.typeResult = false;
-    minimumValue = dataset[currentLevel].minValue;
-    maximumValue = dataset[currentLevel].maxValue;
+    minimumValue = dataset[items.currentLevel].minValue;
+    maximumValue = dataset[items.currentLevel].maxValue;
 
     checkAvailableQuestions();
 
@@ -140,17 +138,13 @@ function initLevel() {
 }
 
 function nextLevel() {
-    if(numberOfLevel <= ++currentLevel) {
-        currentLevel = 0;
-    }
+    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
     items.score.currentSubLevel = 1;
     initLevel();
 }
 
 function previousLevel() {
-    if(--currentLevel < 0) {
-        currentLevel = numberOfLevel - 1;
-    }
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
     items.score.currentSubLevel = 1;
     initLevel();
 }
@@ -230,7 +224,7 @@ function generateFirstNumber() {
 
 function generateSecondNumber() {
     if(items.isAdditionMode) {
-        maximumValue = dataset[currentLevel].maxValue;
+        maximumValue = dataset[items.currentLevel].maxValue;
         maximumValue -= generatedNumber;
     }
 
