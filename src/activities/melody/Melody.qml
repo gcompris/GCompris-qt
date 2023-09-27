@@ -12,6 +12,7 @@ import QtQuick 2.12
 import GCompris 1.0
 
 import "../../core"
+import "qrc:/gcompris/src/core/core.js" as Core
 
 ActivityBase {
     id: activity
@@ -44,14 +45,15 @@ ActivityBase {
             property var questionToPlay
             property var answer
             property alias questionInterval: questionPlayer.interval
-            property int numberOfLevel: 10
+            readonly property int numberOfLevel: 10
+            property int currentLevel: 0
             property bool running: false
         }
 
         onStart: {
-            bar.level = 1
-            score.numberOfSubLevels = 5
-            score.currentSubLevel = 1
+            items.currentLevel = Core.getInitialLevel(items.numberOfLevel);
+            score.numberOfSubLevels = 5;
+            score.currentSubLevel = 1;
             if(!ApplicationSettings.isAudioVoicesEnabled || !ApplicationSettings.isAudioEffectsEnabled) {
                     background.audioDisabled = true;
             } else {
@@ -183,17 +185,14 @@ ActivityBase {
 
         Bar {
             id: bar
+            level: items.currentLevel + 1
             content: BarEnumContent { value: help | home | level | repeat }
             onHelpClicked: {
                 displayDialog(dialogHelp)
             }
             onPreviousLevelClicked: {
                 score.currentSubLevel = 1
-                if(bar.level == 1) {
-                    bar.level = items.numberOfLevel
-                } else {
-                    bar.level--
-                }
+                items.currentLevel = Core.getPreviousLevel(items.currentLevel, items.numberOfLevel);
                 initLevel();
                 parent.repeat();
             }
@@ -227,15 +226,15 @@ ActivityBase {
             questionPlayer.stop()
 
             var numberOfParts = 4
-            if(bar.level < 3)
+            if(items.currentLevel < 2)
                 numberOfParts = 2
-            else if(bar.level < 5)
+            else if(items.currentLevel < 4)
                 numberOfParts = 3
 
-            for(var i = 0; i < bar.level + 2; ++i) {
+            for(var i = 0; i < items.currentLevel + 3; ++i) {
                 items.question.push(Math.floor(Math.random() * numberOfParts))
             }
-            items.questionInterval = 1200 - Math.min(500, 100 * bar.level)
+            items.questionInterval = 1200 - Math.min(500, 100 * (items.currentLevel + 1))
             items.answer = []
         }
 
@@ -250,11 +249,7 @@ ActivityBase {
 
         function nextLevel() {
             score.currentSubLevel = 1
-            if(items.numberOfLevel === bar.level ) {
-                bar.level = 1
-            } else {
-                bar.level++
-            }
+            items.currentLevel = Core.getNextLevel(items.currentLevel, items.numberOfLevel);
             initLevel();
         }
 
