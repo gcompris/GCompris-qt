@@ -59,7 +59,7 @@ ActivityBase {
             id: items
             property Item main: activity.main
             property alias background: background
-            property alias bar: bar
+            property int currentLevel: activity.currentLevel
             property alias bonus: bonus
             property alias score: score
             property alias textInput: textInput
@@ -68,7 +68,6 @@ ActivityBase {
             property bool audioMode: dataset[currentLevel].audioMode ? dataset[currentLevel].audioMode : false
             property string questionText: dataset[currentLevel].question
             property string questionValue
-            property int currentLevel: 0
             property int numberOfLevel: dataset.length
             readonly property string middleDot: '·'
             readonly property var regexSpaceReplace: new RegExp(keyboard.space, "g")
@@ -85,7 +84,7 @@ ActivityBase {
             function start() {
                 if (!ApplicationInfo.isMobile)
                     textInput.forceActiveFocus();
-                items.currentLevel = 0
+                items.currentLevel = Core.getInitialLevel(items.numberOfLevel);
                 initLevel()
             }
 
@@ -113,22 +112,12 @@ ActivityBase {
             }
 
             function nextLevel() {
-                if(numberOfLevel - 1 == currentLevel) {
-                    currentLevel = 0
-                }
-                else {
-                    currentLevel++
-                }
+                currentLevel = Core.getNextLevel(currentLevel, numberOfLevel);
                 initLevel();
             }
 
             function previousLevel() {
-                if(currentLevel == 0) {
-                    currentLevel = numberOfLevel - 1
-                }
-                else {
-                    currentLevel--
-                }
+                currentLevel = Core.getPreviousLevel(currentLevel, numberOfLevel);
                 initLevel();
             }
 
@@ -586,6 +575,7 @@ ActivityBase {
 
         Bar {
             id: bar
+            level: items.currentLevel + 1
             anchors.bottom: keyboard.top
             content: BarEnumContent {
                 value: !firstScreen.visible ? (help | home | level | hint | activityConfig) : (help | home)
@@ -600,7 +590,6 @@ ActivityBase {
             onNextLevelClicked: items.nextLevel()
             onHomeClicked: activity.home()
             onHintClicked: feedbackArea.visible = !feedbackArea.visible
-            level: items.currentLevel + 1
         }
         BarButton {
             id: repeatItem
