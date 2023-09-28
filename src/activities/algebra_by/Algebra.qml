@@ -37,7 +37,7 @@ ActivityBase {
         Item {
             id: items
             property alias background: background
-            property alias bar: bar
+            property int currentLevel: activity.currentLevel
             property alias bonus: bonus
             property alias score: score
             property alias okButton: okButton
@@ -48,7 +48,7 @@ ActivityBase {
             property alias secondOp: secondOp
             property alias numpad: numpad
             property int result
-            readonly property var levels: activity.datasetLoader.data.length !== 0 ? activity.datasetLoader.data : null
+            readonly property var levels: activity.datasetLoader.data
             property GCSfx audioEffects: activity.audioEffects
         }
 
@@ -96,6 +96,7 @@ ActivityBase {
 
         Bar {
             id: bar
+            level: items.currentLevel + 1
             content: BarEnumContent { value: (help | home | level | activityConfig) }
             onHelpClicked: {
                 displayDialog(dialogHelpLeftRight)
