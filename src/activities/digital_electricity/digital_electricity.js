@@ -12,8 +12,8 @@
  */
 .pragma library
 .import QtQuick 2.12 as Quick
+.import "qrc:/gcompris/src/core/core.js" as Core
 
-var currentLevel = 1
 var numberOfLevel
 var items
 var url = "qrc:/gcompris/src/activities/digital_electricity/resource/"
@@ -51,8 +51,8 @@ var viewPort = {
 
 function start(items_) {
     items = items_
-    currentLevel = 1
     numberOfLevel = items.tutorialDataset.tutorialLevels.length
+    items.currentLevel = Core.getInitialLevel(numberOfLevel)
     initLevel()
 }
 
@@ -69,7 +69,6 @@ function stop() {
 }
 
 function initLevel() {
-    items.bar.level = currentLevel
 
     items.availablePieces.view.currentDisplayedGroup = 0
     items.availablePieces.view.previousNavigation = 1
@@ -98,7 +97,7 @@ function initLevel() {
     } else {
         // load tutorial levels from dataset
         processingAnswer = false
-        var levelProperties = items.tutorialDataset.tutorialLevels[currentLevel - 1]
+        var levelProperties = items.tutorialDataset.tutorialLevels[items.currentLevel]
 
         for (var i = 0; i < levelProperties.inputComponentList.length; i++) {
             var currentInputComponent = levelProperties.inputComponentList[i]
@@ -171,8 +170,8 @@ function checkAnswer() {
         return
 
     processingAnswer = true
-    var problemType = items.tutorialDataset.tutorialLevels[currentLevel - 1].type
-    var levelProperties = items.tutorialDataset.tutorialLevels[currentLevel - 1]
+    var problemType = items.tutorialDataset.tutorialLevels[items.currentLevel].type
+    var levelProperties = items.tutorialDataset.tutorialLevels[items.currentLevel]
 
     if (problemType == items.tutorialDataset.problemType.lightTheBulb) {
         if (determiningComponents[0].inputTerminals.itemAt(0).value == 1) {
@@ -272,7 +271,7 @@ function checkAnswer() {
         }
         items.bonus.good('tux')
     } else if (problemType == items.tutorialDataset.problemType.others) {
-        if (currentLevel == 11) {
+        if (items.currentLevel == 10) {
             var switch1 = determiningComponents[0]
             var digitalLight = determiningComponents[1]
             var switch1InitialState = switch1.imgSrc
@@ -294,7 +293,7 @@ function checkAnswer() {
             }
             items.bonus.good('tux')
         }
-        if (currentLevel == 26) {
+        if (items.currentLevel == 25) {
             var bcdToSevenSegment = determiningComponents[0]
 
             var decimalValue =
@@ -310,7 +309,7 @@ function checkAnswer() {
             items.bonus.bad('tux', items.bonus.checkAnswer)
             processingAnswer = false
             return
-        } else if (currentLevel == 27) {
+        } else if (items.currentLevel == 26) {
             var bcdCounter = determiningComponents[0]
 
             var bcdOutput =
@@ -395,16 +394,12 @@ function updateComponentDimension(zoomRatio) {
 }
 
 function nextLevel() {
-    if(numberOfLevel < ++currentLevel) {
-        currentLevel = 1
-    }
+    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
     reset();
 }
 
 function previousLevel() {
-    if(--currentLevel < 1) {
-        currentLevel = numberOfLevel
-    }
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
     reset();
 }
 

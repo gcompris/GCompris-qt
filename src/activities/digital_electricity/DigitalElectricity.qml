@@ -93,7 +93,7 @@ ActivityBase {
             property Item main: activity.main
             property alias playArea: playArea
             property alias mousePan: mousePan
-            property alias bar: bar
+            property int currentLevel: activity.currentLevel
             property alias bonus: bonus
             property alias availablePieces: availablePieces
             property alias toolTip: toolTip
@@ -457,6 +457,7 @@ ActivityBase {
 
         Bar {
             id: bar
+            level: items.currentLevel + 1
             content: BarEnumContent { value: help | home | (items.isTutorialMode ? level : 0) | reload | activityConfig}
             onHelpClicked: {displayDialog(dialogHelp)}
             onPreviousLevelClicked: Activity.previousLevel()
