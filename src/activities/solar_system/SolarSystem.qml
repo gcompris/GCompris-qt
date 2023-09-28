@@ -60,6 +60,7 @@ ActivityBase {
             id: items
             property Item main: activity.main
             property alias background: background
+            property int currentLevel: activity.currentLevel
             property alias bar: bar
             property alias bonus: bonus
             property alias planetsModel: planetsModel
@@ -395,6 +396,7 @@ ActivityBase {
 
         Bar {
             id: bar
+            level: items.currentLevel + 1
             content: items.mainQuizScreen.restartAssessmentMessage.visible ? withConfigWithRestart :
                      items.solarSystemVisible ? withConfig :
                      items.assessmentMode ? withConfigWithHint :

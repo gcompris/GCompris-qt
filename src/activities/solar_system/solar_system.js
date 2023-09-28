@@ -12,7 +12,6 @@
 .import "Dataset.js" as Dataset
 .import "qrc:/gcompris/src/core/core.js" as Core
 
-var currentLevel = 0
 var numberOfLevel
 var items
 var dataset
@@ -24,7 +23,7 @@ var allQuestions = []
 
 function start(items_) {
     items = items_
-    currentLevel = 0
+    items.currentLevel = 0
     dataset = Dataset.get()
 
     for(var i = 0;  i < dataset.length; ++i) {
@@ -44,7 +43,6 @@ function stop() {
 
 function initLevel() {
     currentSubLevel = 0
-    items.bar.level = currentLevel + 1
     items.mainQuizScreen.score.numberOfSubLevels = currentPlanetLevels.length
     Core.shuffle(currentPlanetLevels)
     nextSubLevel(false)
@@ -136,7 +134,7 @@ function appendAndAddQuestion() {
 }
 
 function showQuizScreen(index) {
-    currentLevel = 0
+    items.currentLevel = 0
     indexOfSelectedPlanet = index
 
     items.solarSystemVisible = false
@@ -154,9 +152,7 @@ function showQuizScreen(index) {
 }
 
 function nextLevel() {
-    if(numberOfLevel <= ++currentLevel) {
-        currentLevel = 0
-    }
+    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
     if(!items.assessmentMode)
         initLevel()
     else
@@ -164,8 +160,6 @@ function nextLevel() {
 }
 
 function previousLevel() {
-    if(--currentLevel < 0) {
-        currentLevel = numberOfLevel - 1
-    }
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }

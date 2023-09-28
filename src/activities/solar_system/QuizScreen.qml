@@ -63,7 +63,7 @@ Item {
     // This grid has image of the planet in its first column/row (row in case of vertical screen) and the options on the 2nd column/row
     Grid {
         id: imageAndOptionGrid
-        columns: (background.horizontalLayout && !items.assessmentMode && items.bar.level != 2) ? 2 : 1
+        columns: (background.horizontalLayout && !items.assessmentMode && items.currentLevel != 1) ? 2 : 1
         spacing: 10 * ApplicationInfo.ratio
         anchors.top: (questionArea.y + questionArea.height) > (score.y + score.height) ? questionArea.bottom : score.bottom
         anchors.left: parent.left
@@ -76,7 +76,7 @@ Item {
             height: background.horizontalLayout ? background.height - bar.height - questionArea.height - 10 * ApplicationInfo.ratio
                                                 : (background.height - bar.height - questionArea.height - 10 * ApplicationInfo.ratio) * 0.37
 
-            visible: !items.assessmentMode && (items.bar.level != 2)
+            visible: !items.assessmentMode && (items.currentLevel != 1)
 
             Image {
                 id: planetImageMain
@@ -89,14 +89,14 @@ Item {
 
         // An item to hold the list view of options
         Item {
-            width: ( items.assessmentMode || items.bar.level == 2 ) ? mainQuizScreen.width
+            width: ( items.assessmentMode || items.currentLevel == 1 ) ? mainQuizScreen.width
                                                                     : background.horizontalLayout ? background.width * 0.55
                                                                                                   : background.width - imageAndOptionGrid.anchors.margins * 2
             height: background.horizontalLayout ? itemHeightHorizontal
                                                 : itemHeightVertical
 
             readonly property real itemHeightHorizontal: background.height - bar.height - closenessMeter.height - questionArea.height - 10 * ApplicationInfo.ratio
-            readonly property real itemHeightVertical: (items.bar.level != 2 && !items.assessmentMode) ? itemHeightHorizontal * 0.39
+            readonly property real itemHeightVertical: (items.bcurrentLevel != 1 && !items.assessmentMode) ? itemHeightHorizontal * 0.39
                                                                                                        : itemHeightHorizontal * 0.8
 
             ListView {
