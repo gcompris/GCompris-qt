@@ -81,7 +81,7 @@ ActivityBase {
             readonly property var levels: activity.datasetLoader.data.length !== 0 ? activity.datasetLoader.data : null
             property string instructionText: ""
             property alias background: background
-            property alias bar: bar
+            property int currentLevel: activity.currentLevel
             property alias bonus: bonus
             property alias wordlist: wordlist
             property alias score: score
@@ -213,6 +213,7 @@ ActivityBase {
 
         Bar {
             id: bar
+            level: items.currentLevel + 1
             anchors.bottom: keyboard.top
             content: BarEnumContent { value: help | home | level | activityConfig }
             onHelpClicked: {

@@ -20,10 +20,9 @@
 .import GCompris 1.0 as GCompris //for ApplicationInfo
 .import "qrc:/gcompris/src/core/core.js" as Core
 
-var currentLevel = 0;
 var currentSubLevel = 0;
 var level = null;
-var maxLevel = 0;
+var numberOfLevel = 0;
 var maxSubLevel = 0; // store number of falling elements for each level
 var items;
 var uppercaseOnly;
@@ -66,7 +65,6 @@ function start(items_, uppercaseOnly_,  _mode, speedSetting_) {
     uppercaseOnly = uppercaseOnly_;
     mode = _mode;
     speedSetting = speedSetting_;
-    currentLevel = 0;
     currentSubLevel = 0;
 
     incSpeed = 1 * speedSetting;
@@ -124,7 +122,8 @@ function start(items_, uppercaseOnly_,  _mode, speedSetting_) {
         // We remove the using of default file for next time we enter this function
         items.wordlist.useDefault = false
     }
-    maxLevel = items.wordlist.maxLevel;
+    numberOfLevel = items.wordlist.maxLevel;
+    items.currentLevel = Core.getInitialLevel(numberOfLevel);
     droppedWords = new Array();
     droppedWordsCounter = 0;
     initLevel();
@@ -138,20 +137,19 @@ function stop() {
 
 function initLevel() {
     if(items.levels)
-        items.instructionText = items.levels[currentLevel].objective
+        items.instructionText = items.levels[items.currentLevel].objective
     items.audioVoices.clearQueue()
     items.inputLocked = false;
-    items.bar.level = currentLevel + 1;
     wgMaxFallingItems = 3
     successRate = 1.0
     droppedWordsCounter = 0
 
     // initialize level
     deleteWords();
-    level = items.wordlist.getLevelWordList(currentLevel + 1);
+    level = items.wordlist.getLevelWordList(items.currentLevel + 1);
     /* for smallnumbers2, maxSubLevel will take value of sublevels attribute from json which represent number of
        falling elements in each level and for other activities it will be 0 here.*/
-    maxSubLevel = items.wordlist.getMaxSubLevel(currentLevel + 1);
+    maxSubLevel = items.wordlist.getMaxSubLevel(items.currentLevel + 1);
     levelData = new Array();
 
     // for smallnumbers2 and smallnumbers activities levelData will contain random data, while for other activity it contains same data as level.words
@@ -166,7 +164,7 @@ function initLevel() {
     }
     items.score.numberOfSubLevels = maxSubLevel;
     setSpeed();
-    /*console.log("Gletters: initializing level " + (currentLevel + 1)
+    /*console.log("Gletters: initializing level " + (items.currentLevel + 1)
                 + " maxSubLvl=" + maxSubLevel
                 + " wordCount=" + level.words.length
                 + " speed=" + speed + " fallspeed=" + fallSpeed);*/
@@ -229,7 +227,7 @@ function initLevel() {
     if(items.ourActivity.useDataset === true)
         items.wordlist.randomWordList = levelData
     else
-        items.wordlist.initRandomWord(currentLevel + 1)
+        items.wordlist.initRandomWord(items.currentLevel + 1)
 
     initSubLevel()
 }
@@ -318,11 +316,11 @@ function processKeyPress(text) {
 function setSpeed()
 {
     if (mode === "letter") {
-        speed = (level.speed !== undefined) ? level.speed : (fallRateBase + Math.floor(fallRateMult / (currentLevel + 1)));
-        fallSpeed = (level.fallspeed !== undefined) ? level.fallspeed : Math.floor((dropRateBase - (dropRateMult * (currentLevel + 1))));
+        speed = (level.speed !== undefined) ? level.speed : (fallRateBase + Math.floor(fallRateMult / (items.currentLevel + 1)));
+        fallSpeed = (level.fallspeed !== undefined) ? level.fallspeed : Math.floor((dropRateBase - (dropRateMult * (items.currentLevel + 1))));
     } else { // wordsgame
-        speed = (level.speed !== undefined) ? level.speed : wgDefaultSpeed - (currentLevel + 1)*wgAddSpeed;
-        fallSpeed = (level.fallspeed !== undefined) ? level.fallspeed : wgDefaultFallSpeed - (currentLevel + 1)*wgAddFallSpeed
+        speed = (level.speed !== undefined) ? level.speed : wgDefaultSpeed - (items.currentLevel + 1)*wgAddSpeed;
+        fallSpeed = (level.fallspeed !== undefined) ? level.fallspeed : wgDefaultFallSpeed - (items.currentLevel + 1)*wgAddFallSpeed
 
         if(speed < wgMinSpeed ) speed = wgMinSpeed;
         if(speed > wgMaxSpeed ) speed = wgMaxSpeed;
@@ -461,17 +459,13 @@ function audioCrashPlay() {
 }
 
 function nextLevel() {
-    if(maxLevel <= ++currentLevel) {
-        currentLevel = 0
-    }
+    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
     currentSubLevel = 0;
     initLevel();
 }
 
 function previousLevel() {
-    if(--currentLevel < 0) {
-        currentLevel = maxLevel - 1
-    }
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
     currentSubLevel = 0;
     initLevel();
 }
