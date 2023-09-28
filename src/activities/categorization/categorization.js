@@ -18,7 +18,6 @@ var items
 var lessons
 var categories
 var images
-var currentLevel = 1
 var numberOfLevel
 var index
 var imagesData = []
@@ -116,20 +115,18 @@ function launchMenuScreen() {
 function startCategory() {
     items.categoryReview.start()
     items.menuScreen.stop()
-    currentLevel = 0
-    items.bar.level = 0
+    items.currentLevel = 0
     initLevel()
 }
 
 function storeCategoriesLevels(index_) {
     index = index_
-    currentLevel = 0
+    items.currentLevel = 0
     numberOfLevel = 0
     initLevel()
 }
 
 function initLevel() {
-    items.bar.level = currentLevel + 1
     items.categoryReview.score.currentSubLevel = 0
     items.instructionsVisible = true
     getCategoryLevels(index);
@@ -141,18 +138,14 @@ function initLevel() {
 }
 
 function nextLevel() {
-    if(numberOfLevel <= ++currentLevel) {
-        currentLevel = 0
-    }
+    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
     items.categoryReview.score.currentSubLevel = 0
     initLevel(index);
     getCategoryLevels();
 }
 
 function previousLevel() {
-    if(--currentLevel < 0) {
-        currentLevel = numberOfLevel - 1
-    }
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
     initLevel(index);
     getCategoryLevels();
 }
@@ -211,10 +204,10 @@ function getCategoryLevels() {
         });
     }
 
-    var imagesPrefix = items.details[items.bar.level - 1].prefix
+    var imagesPrefix = items.details[items.currentLevel].prefix
     // Good set of images
-    var goodImages = items.details[items.bar.level - 1].good
-    var numberOfGood = Math.min(goodImages.length,items.details[items.bar.level-1].numberOfGood);
+    var goodImages = items.details[items.currentLevel].good
+    var numberOfGood = Math.min(goodImages.length,items.details[items.currentLevel].numberOfGood);
     var goodZoneImages = goodImages.map(function(obj) {
         obj = imagesPrefix + obj
         return { "name": obj, "isRight": true }
@@ -222,12 +215,12 @@ function getCategoryLevels() {
     goodZoneImages = goodZoneImages.splice(0, numberOfGood);
 
     // Bad set of images
-    var badImages = items.details[items.bar.level - 1].bad
+    var badImages = items.details[items.currentLevel].bad
     var badZoneImages = badImages.map(function(obj) {
         obj = imagesPrefix + obj
         return { "name": obj, "isRight": false }
     });
-    var numberOfBad = Math.min(badImages.length,items.details[items.bar.level-1].numberofBad);
+    var numberOfBad = Math.min(badImages.length,items.details[items.currentLevel].numberofBad);
     badZoneImages = badZoneImages.splice(0, numberOfBad);
 
     // Concat both set of images(good and bad) in allImages and store in middleZone model

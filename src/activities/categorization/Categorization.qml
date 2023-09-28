@@ -43,7 +43,7 @@ ActivityBase {
             id: items
             property Item main: activity.main
             property alias background: background
-            property alias bar: bar
+            property int currentLevel: activity.currentLevel
             property alias bonus: bonus
             property alias categoryReview: categoryReview
             property alias menuScreen: menuScreen
@@ -123,6 +123,7 @@ ActivityBase {
 
         Bar {
             id: bar
+            level: items.currentLevel + 1
             content: menuScreen.started ? withConfig : withoutConfig
             property BarEnumContent withConfig: BarEnumContent { value: help | home | activityConfig}
             property BarEnumContent withoutConfig: BarEnumContent { value: home | level }
