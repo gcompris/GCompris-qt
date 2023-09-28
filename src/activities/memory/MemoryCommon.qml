@@ -54,7 +54,7 @@ ActivityBase {
 
         QtObject {
             id: items
-            property alias bar: bar
+            property int currentLevel: activity.currentLevel
             property alias bonus: bonus
             property GCSfx audioEffects: activity.audioEffects
             property bool withTux: activity.withTux
@@ -183,6 +183,7 @@ ActivityBase {
 
         Bar {
             id: bar
+            level: items.currentLevel + 1
             content: BarEnumContent { value: (activity.activityInfo.hasConfig || items.isMultipleDatasetMode) ? (help | home | level | activityConfig ) : (help | home | level ) }
             onHelpClicked: {
                 displayDialog(dialogHelp)

@@ -16,7 +16,6 @@
 var url = "qrc:/gcompris/src/activities/memory/resource/"
 
 var items
-var currentLevel
 var numberOfLevel
 var nbOfPair
 var cardLeft
@@ -26,8 +25,8 @@ function start(items_) {
 
     items = items_
 
-    currentLevel = 0
     numberOfLevel = items.levels.length
+    items.currentLevel = Core.getInitialLevel(numberOfLevel)
 
     initLevel()
 }
@@ -36,7 +35,6 @@ function stop() {
 }
 
 function initLevel() {
-    items.bar.level = currentLevel + 1
     items.containerModel.clear()
     items.playQueue = []
     items.tuxTurn = false
@@ -45,12 +43,12 @@ function initLevel() {
     items.blockClicks = false
 
     // compute the number of cards
-    var columns = items.levels[currentLevel].columns
-    var rows = items.levels[currentLevel].rows
-    var images = items.levels[currentLevel].images
-    var sounds = items.levels[currentLevel].sounds
-    var texts = items.levels[currentLevel].texts
-    var repeaterModels = items.levels[currentLevel].repeaterModels
+    var columns = items.levels[items.currentLevel].columns
+    var rows = items.levels[items.currentLevel].rows
+    var images = items.levels[items.currentLevel].images
+    var sounds = items.levels[items.currentLevel].sounds
+    var texts = items.levels[items.currentLevel].texts
+    var repeaterModels = items.levels[items.currentLevel].repeaterModels
     items.columns = columns
     items.rows = rows
     nbOfPair = rows * columns / 2
@@ -65,7 +63,7 @@ function initLevel() {
 
     if(rows * columns > maxData * 2) {
         console.log("ERROR: Memory dataset does not have enough data pairs at level ",
-                    currentLevel + 1)
+                    items.currentLevel + 1)
         return
     }
 
@@ -136,7 +134,7 @@ function getShownPair() {
 // Calc randomly if Tux is a good player
 // Return true if Tux should play correctly
 function getRandomTuxIsGood() {
-    return Math.random() * numberOfLevel < currentLevel
+    return Math.random() * numberOfLevel < items.currentLevel
 }
 
 function chooseCard() {
@@ -274,16 +272,12 @@ function repeatCurrentLevel() {
 }
 
 function nextLevel() {
-    if(numberOfLevel <= ++currentLevel) {
-        currentLevel = 0
-    }
+    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }
 
 function previousLevel() {
-    if(--currentLevel < 0) {
-        currentLevel = numberOfLevel - 1
-    }
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }
 
