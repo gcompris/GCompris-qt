@@ -14,7 +14,6 @@
 .import GCompris 1.0 as GCompris
 .import "../../core/core.js" as Core
 
-var currentLevel = 0
 var numberOfLevel = 0
 
 var items
@@ -55,8 +54,8 @@ function start(items_, mode_) {
         }
     }
 
-    currentLevel = 0
     numberOfLevel = levels.length
+    items.currentLevel = Core.getInitialLevel(numberOfLevel)
     initLevel()
 }
 
@@ -72,19 +71,18 @@ function initLevel() {
     var sentences = qsTr("Drag and drop the words to the upper box to form a meaningful sentence.");
 
     var display_instruction = "";
-    if(levels[currentLevel].instruction)
-        display_instruction = levels[currentLevel].instruction;
+    if(levels[items.currentLevel].instruction)
+        display_instruction = levels[items.currentLevel].instruction;
     else if(mode === "sentences")
         display_instruction = sentences;
     else if(mode === "chronology")
         display_instruction = chronology;
     else if(mode === "alphabets")
-        display_instruction = (levels[currentLevel].mode === 'ascending') ? alphabets_asc : alphabets_desc;
+        display_instruction = (levels[items.currentLevel].mode === 'ascending') ? alphabets_asc : alphabets_desc;
     else if(mode === "numbers")
-        display_instruction = (levels[currentLevel].mode === 'ascending') ? numbers_asc : numbers_desc;
+        display_instruction = (levels[items.currentLevel].mode === 'ascending') ? numbers_asc : numbers_desc;
 
     items.instruction.text = display_instruction;
-    items.bar.level = currentLevel + 1
     initGrids()
 }
 
@@ -104,15 +102,15 @@ function initGrids() {
 function generateNumbers() {
     num = []
     // generate a permutation of numbers from the dataset and store it in num[]
-    if(levels[currentLevel].random) {
-        var min = (mode === "alphabets") ? 1 : levels[currentLevel].minNumber
-        var max = (mode === "alphabets") ? levels[currentLevel].values.length : levels[currentLevel].maxNumber
+    if(levels[items.currentLevel].random) {
+        var min = (mode === "alphabets") ? 1 : levels[items.currentLevel].minNumber
+        var max = (mode === "alphabets") ? levels[items.currentLevel].values.length : levels[items.currentLevel].maxNumber
         var range = max - min + 1
         var count = 0
-        while(count < levels[currentLevel].numberOfElementsToOrder) {
+        while(count < levels[items.currentLevel].numberOfElementsToOrder) {
             var random = min + parseInt(Math.random() * range)
             if(mode === "alphabets")
-                random = levels[currentLevel].values[random-1]
+                random = levels[items.currentLevel].values[random-1]
             if(num.indexOf(random) === -1) {
                 // Unique element found
                 count++
@@ -127,10 +125,10 @@ function generateNumbers() {
         // is also not reliable. So we just sort according to the reference list in the dataset.
         else {
             num.sort(function (a, b) {
-                if(levels[currentLevel].values.indexOf(a) > levels[currentLevel].values.indexOf(b)) {
+                if(levels[items.currentLevel].values.indexOf(a) > levels[items.currentLevel].values.indexOf(b)) {
                     return 1;
                 }
-                if(levels[currentLevel].values.indexOf(a) < levels[currentLevel].values.indexOf(b)) {
+                if(levels[items.currentLevel].values.indexOf(a) < levels[items.currentLevel].values.indexOf(b)) {
                     return -1;
                 }
                 return 0;
@@ -139,9 +137,9 @@ function generateNumbers() {
 
     }
     else {
-        num = levels[currentLevel].values.slice();
+        num = levels[items.currentLevel].values.slice();
     }
-    if(levels[currentLevel].mode === "descending")
+    if(levels[items.currentLevel].mode === "descending")
         num.reverse();
 
     originalArrangement = num.slice();
@@ -149,16 +147,12 @@ function generateNumbers() {
 }
 
 function nextLevel() {
-    if(numberOfLevel <= ++currentLevel) {
-        currentLevel = 0
-    }
+    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
     initLevel()
 }
 
 function previousLevel() {
-    if(--currentLevel < 0) {
-        currentLevel = numberOfLevel - 1
-    }
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
     initLevel()
 }
 
