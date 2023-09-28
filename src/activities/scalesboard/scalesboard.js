@@ -14,7 +14,6 @@
 
 var url = "qrc:/gcompris/src/activities/scalesboard/resource/"
 
-var currentLevel = 0
 var numberOfLevel
 var items
 var currentTargets = []
@@ -22,8 +21,8 @@ var initCompleted = false
 
 function start(items_) {
     items = items_
-    currentLevel = 0
     numberOfLevel = items.levels.length
+    items.currentLevel = Core.getInitialLevel(numberOfLevel)
     initLevel()
 }
 
@@ -31,12 +30,11 @@ function stop() {
 }
 
 function initLevel() {
-    items.bar.level = currentLevel + 1
-    currentTargets = Core.shuffle(items.levels[currentLevel].targets)
+    currentTargets = Core.shuffle(items.levels[items.currentLevel].targets)
     items.currentSubLevel = 1
     items.numberOfSubLevels = currentTargets.length
-    items.rightDrop = items.levels[currentLevel].rightDrop
-    items.question.text = items.levels[currentLevel].question != undefined ? items.levels[currentLevel].question : ""
+    items.rightDrop = items.levels[items.currentLevel].rightDrop
+    items.question.text = items.levels[items.currentLevel].question != undefined ? items.levels[items.currentLevel].question : ""
     displayLevel()
 }
 
@@ -48,7 +46,7 @@ function displayLevel()
     items.masseAreaLeft.init()
     items.masseAreaRight.init()
     items.masseAreaCenter.init()
-    var data = items.levels[currentLevel]
+    var data = items.levels[items.currentLevel]
     for(var i=0; i < data.masses.length; i++)
         items.masseAreaCenter.addMasse("masse" + (i % 5 + 1) + ".svg",
                                        data.masses[i][0],
@@ -77,22 +75,18 @@ function checkAnswer() {
 }
 
 function nextSubLevel() {
-    if(items.numberOfSubLevels < ++items.currentSubLevel ) {
+    if(items.numberOfSubLevels < ++items.currentSubLevel) {
         nextLevel();
     }
     displayLevel()
 }
 
 function nextLevel() {
-    if(numberOfLevel <= ++currentLevel ) {
-        currentLevel = 0
-    }
+    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }
 
 function previousLevel() {
-    if(--currentLevel < 0) {
-        currentLevel = numberOfLevel - 1
-    }
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }
