@@ -18,7 +18,6 @@ var url = "qrc:/gcompris/src/activities/money/resource/"
 // We create 3 prices categories to make the game more realistic.
 // List of images to use in the game (cheap objects)
 
-var currentLevel
 var numberOfLevel
 var dataset
 var items
@@ -47,8 +46,8 @@ function start(items_, datasetName) {
             backMode = true
             break
     }
-    currentLevel = 0
     numberOfLevel = dataset.length
+    items.currentLevel = Core.getInitialLevel(numberOfLevel)
     initLevel()
 }
 
@@ -65,11 +64,10 @@ function getCoinCount (pocket) {
 }
 
 function initLevel() {
-    items.bar.level = currentLevel + 1
     items.answerModel.clear()
     items.pocketModel.clear()
 
-    var data = dataset[currentLevel]
+    var data = dataset[items.currentLevel]
     var pocket = Core.shuffle(data.pocket)
     var coinCount = getCoinCount(pocket)
     items.moneyCount = data.pocket.length
@@ -111,7 +109,7 @@ function initLevel() {
         }
         var cents = 0
         if(centsMode) {
-            if(currentLevel === 0)
+            if(items.currentLevel === 0)
                 cents += 0.10 + Math.floor(Math.random() * 9) / 10
             else
                 cents += 0.01 + Math.floor(Math.random() * 99) / 100
@@ -206,7 +204,7 @@ function checkAnswer() {
         if(paid === priceTotal.toFixed(2))
             items.bonus.good("flower")
     } else {
-        if(paid === (dataset[currentLevel].paid - priceTotal).toFixed(2))
+        if(paid === (dataset[items.currentLevel].paid - priceTotal).toFixed(2))
             items.bonus.good("flower")
     }
 }
@@ -234,15 +232,11 @@ function unpay(index) {
 }
 
 function nextLevel() {
-    if(numberOfLevel <= ++currentLevel ) {
-        currentLevel = 0
-    }
+    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }
 
 function previousLevel() {
-    if(--currentLevel < 0) {
-        currentLevel = numberOfLevel - 1
-    }
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }
