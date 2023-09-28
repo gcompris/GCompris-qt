@@ -65,7 +65,7 @@ ActivityBase {
             property Item main: activity.main
             property GCSfx audioEffects: activity.audioEffects
             property alias background: background
-            property alias bar: bar
+            property int currentLevel: activity.currentLevel
             property alias bonus: bonus
             property var barHeightAddon: ApplicationSettings.isBarHidden ? textMessage.height : bar.height
             property bool isPortrait: (background.height >= background.width)
@@ -643,6 +643,7 @@ ActivityBase {
 
         Bar {
             id: bar
+            level: items.currentLevel + 1
             content: BarEnumContent { value: help | home | (items.twoPlayer ? 0 : level) |
                                              (items.twoPlayer && !items.gameOver ? 0 : reload) }
 

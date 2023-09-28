@@ -15,15 +15,14 @@
 
 var url = "qrc:/gcompris/src/activities/chess/resource/"
 
-var currentLevel
 var numberOfLevel
 var items
 var state
 
 function start(items_) {
     items = items_
-    currentLevel = 0
     numberOfLevel = items.fen.length
+    items.currentLevel = Core.getInitialLevel(numberOfLevel)
     initLevel()
 }
 
@@ -34,8 +33,7 @@ function stop() {
 }
 
 function initLevel() {
-    items.bar.level = currentLevel + 1
-    state = Engine.p4_fen2state(items.fen[currentLevel][1])
+    state = Engine.p4_fen2state(items.fen[items.currentLevel][1])
     items.from = -1
     items.gameOver = false
     items.redo_stack = []
@@ -49,16 +47,12 @@ function initLevel() {
 }
 
 function nextLevel() {
-    if(numberOfLevel <= ++currentLevel) {
-        currentLevel = 0
-    }
+    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }
 
 function previousLevel() {
-    if(--currentLevel < 0) {
-        currentLevel = numberOfLevel - 1
-    }
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }
 
@@ -284,7 +278,7 @@ function randomMove() {
 
     // At level 2 we let the computer play 20% of the time
     // and 80% of the time we make a random move.
-    if(Math.random() < currentLevel / (numberOfLevel - 1)) {
+    if(Math.random() < items.currentLevel / (numberOfLevel - 1)) {
         computerMove()
         return
     }
