@@ -67,17 +67,17 @@ ActivityBase {
             topPanel.life.opacity = 1;
             forceActiveFocus();
             Activity.initLevel();
-            items.operator = Activity._operator;
+            items.operator = Activity.operator;
             topPanel.goal = Activity.getGoal();
             stopLevel();
 
             if(useMultipleDataset) {
-                if(items.levels[Activity._currentLevel].spawnMonsters) {
+                if(items.levels[items.currentLevel].spawnMonsters) {
                     withMonsters = true;
                     spawningMonsters.restart();
                 }
             }
-            else if (Activity._currentLevel !== 0) {
+            else if (items.currentLevel !== 0) {
                 withMonsters = true;
                 spawningMonsters.restart();
             }
@@ -106,7 +106,7 @@ ActivityBase {
             property var levels: activity.datasetLoader ? activity.datasetLoader.data : ""
             property alias modelCells: modelCells
             property alias bonus: bonus
-            property alias bar: topPanel.bar
+            property int currentLevel: activity.currentLevel
             property string operator
         }
 

@@ -10,68 +10,62 @@
 */
 .pragma library
 .import QtQuick 2.12 as Quick
+.import "qrc:/gcompris/src/core/core.js" as Core
 
-var _currentLevel = 0
-var _numberOfLevel
-var _main
-var _bar
-var _bonus
-var _type
-var _operator
-var _modelCells
-var _levels
-var _useMultipleDataset
-
+var numberOfLevel
+var main
+var bonus
+var type
+var operator
+var modelCells
+var levels
+var useMultipleDataset
+var items
 var primeNumbers = [2, 3, 5, 7, 11, 13, 17, 19, 23]
 
-function start(items, type, useMultipleDataset) {
-    _levels = items.levels
-    _useMultipleDataset = useMultipleDataset
-    _bar = items.bar
-    _bonus = items.bonus
-    _currentLevel = 0
-    _type = type
-    _operator = items.operator
-    _modelCells = items.modelCells
-    _numberOfLevel = (_useMultipleDataset) ? _levels.length : 8
+function start(items_, type_, useMultipleDataset_) {
+    items = items_
+    levels = items.levels
+    useMultipleDataset = useMultipleDataset_
+    bonus = items.bonus
+    type = type_
+    operator = items.operator
+    modelCells = items.modelCells
+    numberOfLevel = (useMultipleDataset) ? levels.length : 8
+    items.currentLevel = Core.getInitialLevel(numberOfLevel)
 }
 
 function stop() {
 }
 
 function initLevel() {
-    if(_type === "equality" || _type === "inequality") {
-        _operator = _levels[_currentLevel].operator
+    if(type === "equality" || type === "inequality") {
+        operator = levels[items.currentLevel].operator
     }
     fillAllGrid();
-    _bar.level = _currentLevel + 1;
 }
 
 function nextLevel() {
-    if(_numberOfLevel <= ++_currentLevel) {
-        _currentLevel = 0
-    }
+    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
 }
 
 function previousLevel() {
-    if(--_currentLevel < 0) {
-        _currentLevel = _numberOfLevel - 1
-    }
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
 }
 
 function getGoal() {
     var goal = 0
-    if (_useMultipleDataset) {
-        goal = _levels[_currentLevel].goal
+    if (useMultipleDataset) {
+        goal = levels[items.currentLevel].goal
     }
     else {
-        if (_type == "multiples") {
-            goal = _currentLevel + 2
-        } else if (_type == "factors") {
+        if (type == "multiples") {
+            goal = items.currentLevel + 2
+        } else if (type == "factors") {
             var goalsFactor = [4, 6, 8, 10, 12, 15, 18, 20]
-            goal = goalsFactor[_currentLevel]
-        } else if (_type == "primes") {
-            goal = primeNumbers[_currentLevel + 1] + 1
+            goal = goalsFactor[items.currentLevel]
+        } else if (type == "primes") {
+            goal = primeNumbers[items.currentLevel + 1] + 1
         }
     }
 
@@ -226,74 +220,74 @@ function genPosition(direction, cellWidth, cellHeight) {
 
 function genMonster() {
     var monsters = ["Reggie", "Diaper", "Eater", "Fraidy", "Smarty", "Reggie"]
-    var allowedMonsters = _currentLevel % 7
+    var allowedMonsters = items.currentLevel % 7
     return monsters[Math.floor(Math.random()*allowedMonsters)]
 }
 
 function fillAllGrid() {
-    _modelCells.clear()
-    if (_type == "equality" || _type == "inequality") {
+    modelCells.clear()
+    if (type == "equality" || type == "inequality") {
         for (var it = 0; it < 36; it++) {
             var terms
-            if (_operator === " + ") {
+            if (operator === " + ") {
                 terms = splitPlusNumber(
                             genNumber())
-            } else if (_operator === " - ") {
+            } else if (operator === " - ") {
                 terms = splitMinusNumber(
                             genNumber())
-            } else if(_operator === " * ") {
+            } else if(operator === " * ") {
                 terms = splitMultiplicationNumber(
                             genNumber())
-            } else if(_operator === " / ") {
+            } else if(operator === " / ") {
                 terms = splitDivisionNumber(
                             genNumber())
             }
 
-            _modelCells.append({
+            modelCells.append({
                                    number1: terms[0],
                                    number2: terms[1],
                                    show: true
                                })
         }
-    } else if (_type == "primes") {
+    } else if (type == "primes") {
         for (var it = 0; it < 36; it++) {
-            _modelCells.append({"number1": genPrime(), "number2": -1, "show": true});
+            modelCells.append({"number1": genPrime(), "number2": -1, "show": true});
         }
-    } else if (_type == "factors") {
+    } else if (type == "factors") {
         for (var it = 0; it < 36; it++) {
-            _modelCells.append({"number1": genFactor(), "number2": -1, "show": true});
+            modelCells.append({"number1": genFactor(), "number2": -1, "show": true});
         }
-    } else if (_type == "multiples") {
+    } else if (type == "multiples") {
         for (var it = 0; it < 36; it++) {
-            _modelCells.append({"number1": genMultiple(), "number2": -1, "show": true});
+            modelCells.append({"number1": genMultiple(), "number2": -1, "show": true});
         }
     }
 }
 
 function isExpressionEqualsToGoal(position){
-    if (_operator === " + ") {
-        if ((_modelCells.get(position).number1 + _modelCells.get(
+    if (operator === " + ") {
+        if ((modelCells.get(position).number1 + modelCells.get(
                  position).number2) == (getGoal())) {
             return true
         } else {
             return false
         }
-    } else if (_operator === " - ") {
-        if ((_modelCells.get(position).number1 - _modelCells.get(
+    } else if (operator === " - ") {
+        if ((modelCells.get(position).number1 - modelCells.get(
                  position).number2) == (getGoal())) {
             return true
         } else {
             return false
         }
-    } else if (_operator === " * ") {
-        if ((_modelCells.get(position).number1 * _modelCells.get(
+    } else if (operator === " * ") {
+        if ((modelCells.get(position).number1 * modelCells.get(
                  position).number2) === (getGoal())) {
             return true
         } else {
             return false
         }
-    } else if (_operator === " / ") {
-        if ((_modelCells.get(position).number1 / _modelCells.get(
+    } else if (operator === " / ") {
+        if ((modelCells.get(position).number1 / modelCells.get(
                  position).number2) === (getGoal())) {
             return true
         } else {
@@ -303,25 +297,25 @@ function isExpressionEqualsToGoal(position){
 }
 
 function isAnswerCorrect(position) {
-    if (_type === "equality") {
+    if (type === "equality") {
         return isExpressionEqualsToGoal(position)
-    } else if (_type === "inequality") {
+    } else if (type === "inequality") {
         return (!isExpressionEqualsToGoal(position))
-    } else if (_type === "multiples") {
-        if ((_modelCells.get(position).number1 / getGoal()) % 1 == 0) {
+    } else if (type === "multiples") {
+        if ((modelCells.get(position).number1 / getGoal()) % 1 == 0) {
             return true
         } else {
             return false
         }
-    } else if (_type === "factors") {
-        if ((getGoal() / _modelCells.get(position).number1) % 1 == 0) {
+    } else if (type === "factors") {
+        if ((getGoal() / modelCells.get(position).number1) % 1 == 0) {
             return true
         } else {
             return false
         }
-    } else if (_type == "primes") {
+    } else if (type == "primes") {
         for (var it = 0; it < primeNumbers.length; ++it) {
-            if (primeNumbers[it] == _modelCells.get(position).number1)
+            if (primeNumbers[it] == modelCells.get(position).number1)
                 return true
         }
         return false

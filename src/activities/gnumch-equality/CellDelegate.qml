@@ -24,7 +24,7 @@ Item {
 
             property string num1: number1
             property string num2: number2
-            property string operator: Activity._operator
+            property string operator: Activity.operator
 
             function setText() {
                 if (activity.type == "equality" || activity.type == "inequality") {

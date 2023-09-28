@@ -109,6 +109,7 @@ Item {
 
     Bar {
         id: bar
+        level: items.currentLevel + 1
 
         content: BarEnumContent {
               value: (useMultipleDataset) ? (help | home | level | activityConfig) : (help | home | level)

@@ -44,13 +44,13 @@ Rectangle {
         var num1 = modelCells.get(index).number1
         var num2 = modelCells.get(index).number2
         if (activity.type == "equality" || activity.type == "inequality") {
-            if (Activity._operator == " + ") {
+            if (Activity.operator == " + ") {
                 fault +=  num1 + " + " + num2 + " = " + (num1 + num2)
-            } else if (Activity._operator == " - ") {
+            } else if (Activity.operator == " - ") {
                 fault +=  num1 + " - " + num2 + " = " + (num1 - num2)
-            } else if (Activity._operator == " * ") {
+            } else if (Activity.operator == " * ") {
                 fault +=  num1 + " * " + num2 + " = " + (num1 * num2)
-            } else if (Activity._operator == " / ") {
+            } else if (Activity.operator == " / ") {
                 fault +=  num1 + " / " + num2 + " = " + (num1 / num2)
             }
             fault += "<br>"
