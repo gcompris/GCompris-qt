@@ -15,7 +15,6 @@
 .import "qrc:/gcompris/src/core/core.js" as Core
 
 const dataUrl = "qrc:/gcompris/src/activities/guess24/resource/guess24.json"
-var currentLevel = 0
 var numberOfLevel
 var items
 var allProblems = []        // All dataset problems
@@ -36,39 +35,37 @@ var OperandsEnum = {
     TIMES_SIGN: 2,
     DIVIDE_SIGN: 3
 }
+
 function start(items_) {
     items = items_
     numberOfLevel = items.levels.length
-    currentLevel = -1
+    items.currentLevel = Core.getInitialLevel(numberOfLevel)
     allProblems = items.jsonParser.parseFromUrl(dataUrl)
-    nextLevel()
+    initLevel()
 }
 
 function stop() {
 }
 
 function initLevel() {
-    items.bar.level = currentLevel + 1
     items.currentSubLevel = 0
-    problems = allProblems.filter(obj => { return items.levels[currentLevel].complexities.includes(obj.complexity) })
+    problems = allProblems.filter(obj => { return items.levels[items.currentLevel].complexities.includes(obj.complexity) })
     Core.shuffle(problems)
-    problems = problems.slice(0, items.levels[currentLevel].count)
+    problems = problems.slice(0, items.levels[items.currentLevel].count)
     items.subLevelCount = problems.length
-    items.operatorsCount = items.levels[currentLevel].operatorsCount
+    items.operatorsCount = items.levels[items.currentLevel].operatorsCount
     items.cardsBoard.enabled = true
     items.operators.enabled = true
     initCards()
 }
 
 function nextLevel() {
-    if(numberOfLevel <= ++currentLevel)
-        currentLevel = 0
+    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }
 
 function previousLevel() {
-    if(--currentLevel < 0)
-        currentLevel = numberOfLevel - 1
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }
 
@@ -200,7 +197,7 @@ function initCards() {
     operationsStack = []
     stepsStack = []
     items.steps.text = stepsStack.join("\n")
-    parseSolution(randomSolution(problems[items.currentSubLevel], items.levels[currentLevel].complexities))
+    parseSolution(randomSolution(problems[items.currentSubLevel], items.levels[items.currentLevel].complexities))
     items.solution.text = ""
 }
 
