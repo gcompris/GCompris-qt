@@ -61,7 +61,7 @@ ActivityBase {
             id: items
             property Item main: activity.main
             property alias background: background
-            property alias bar: bar
+            property int currentLevel: activity.currentLevel
             property alias bonus: bonus
             property GCSfx audioEffects: activity.audioEffects
             readonly property var levels: activity.datasetLoader.data
@@ -558,8 +558,7 @@ ActivityBase {
                     return "";
                 }
 
-                var nextLevel = items.bar.level - 1
-                var nextLevelInstructions = items.levels[nextLevel].instructions
+                var nextLevelInstructions = items.levels[items.currentLevel].instructions
                 if(nextLevelInstructions.indexOf(Activity.EXECUTE_LOOPS) !== -1) {
                     return Activity.loopTutorialInstructions;
                 }
@@ -597,6 +596,7 @@ ActivityBase {
 
         Bar {
             id: bar
+            level: items.currentLevel + 1
             content: BarEnumContent { value: tutorialImage.visible ? help | home : help | home | level | reload | activityConfig}
             onHelpClicked: {
                 displayDialog(dialogHelp)

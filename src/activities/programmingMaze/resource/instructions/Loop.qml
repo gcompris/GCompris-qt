@@ -41,8 +41,8 @@ Instruction {
     }
 
     function checkSuccessAndExecuteNextInstruction() {
-        var fishX = Activity.mazeBlocks[Activity.currentLevel].fish.x
-        var fishY = Activity.mazeBlocks[Activity.currentLevel].fish.y
+        var fishX = Activity.mazeBlocks[Activity.items.currentLevel].fish.x
+        var fishY = Activity.mazeBlocks[Activity.items.currentLevel].fish.y
 
         var tuxX = Math.floor(Activity.items.player.playerCenterX / Activity.stepX)
         var tuxY = Math.floor(Activity.items.player.playerCenterY / Activity.stepY)

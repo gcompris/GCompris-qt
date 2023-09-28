@@ -42,7 +42,7 @@ Instruction {
     function nextPositionExists(playerCenterX, playerCenterY) {
         var playerNextPositionX = Math.floor(playerCenterX / Activity.stepX)
         var playerNextPositionY = Math.floor(playerCenterY / Activity.stepY)
-        var currentLevelCoordinates = Activity.mazeBlocks[Activity.currentLevel].map
+        var currentLevelCoordinates = Activity.mazeBlocks[Activity.items.currentLevel].map
         for(var i = 0; i < currentLevelCoordinates.length; i++) {
             if(currentLevelCoordinates[i].x == playerNextPositionX && currentLevelCoordinates[i].y == playerNextPositionY)
                 return true

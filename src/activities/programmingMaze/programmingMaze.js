@@ -13,6 +13,7 @@
 .pragma library
 .import QtQuick 2.12 as Quick
 .import GCompris 1.0 as GCompris //for ApplicationInfo
+.import "qrc:/gcompris/src/core/core.js" as Core
 
 // possible instructions
 var MOVE_FORWARD = "move-forward"
@@ -63,7 +64,6 @@ var currentInstruction
 
 var url = "qrc:/gcompris/src/activities/programmingMaze/resource/"
 var reverseCountUrl = "qrc:/gcompris/src/activities/reversecount/resource/"
-var currentLevel = 0
 var numberOfLevel
 var items
 
@@ -129,9 +129,9 @@ var loopTutorialInstructions = [
 
 function start(items_) {
     items = items_
-    currentLevel = 0
     mazeBlocks = items.levels
     numberOfLevel = mazeBlocks.length
+    items.currentLevel = Core.getInitialLevel(numberOfLevel)
     resetTux = false
     initLevel()
 }
@@ -198,14 +198,13 @@ function destroyInstructionObjects() {
 }
 
 function initLevel() {
-    if(!items || !items.bar)
+    if(!items)
         return
 
-    items.bar.level = currentLevel + 1
     loopsNumber = 1
     destroyInstructionObjects()
 
-    var levelInstructions = mazeBlocks[currentLevel].instructions
+    var levelInstructions = mazeBlocks[items.currentLevel].instructions
 
     if(levelInstructions.indexOf(CALL_PROCEDURE) !== -1)
         items.currentLevelContainsProcedure = true
@@ -247,7 +246,7 @@ function initLevel() {
     }
 
     // Stores the co-ordinates of the tile blocks in the current level
-    var currentLevelBlocksCoordinates = mazeBlocks[currentLevel].map
+    var currentLevelBlocksCoordinates = mazeBlocks[items.currentLevel].map
 
     items.mazeModel.model = currentLevelBlocksCoordinates
 
@@ -272,13 +271,13 @@ function initLevel() {
     items.player.rotation = EAST
 
     // Center fish at it's co-ordinate
-    items.fish.x = mazeBlocks[currentLevel].fish.x * stepX + (stepX - items.fish.width) / 2
-    items.fish.y = mazeBlocks[currentLevel].fish.y * stepY + (stepY - items.fish.height) / 2
+    items.fish.x = mazeBlocks[items.currentLevel].fish.x * stepX + (stepX - items.fish.width) / 2
+    items.fish.y = mazeBlocks[items.currentLevel].fish.y * stepY + (stepY - items.fish.height) / 2
 
     changedRotation = EAST
     deadEndPoint = false
     items.isRunCodeEnabled = true
-    items.maxNumberOfInstructionsAllowed = mazeBlocks[currentLevel].maxNumberOfInstructions
+    items.maxNumberOfInstructionsAllowed = mazeBlocks[items.currentLevel].maxNumberOfInstructions
     items.constraintInstruction.show()
     items.mainFunctionCodeArea.resetEditingValues()
     items.procedureCodeArea.resetEditingValues()
@@ -354,8 +353,8 @@ function resetTuxPosition() {
 }
 
 function checkSuccessAndExecuteNextInstruction() {
-    var fishX = mazeBlocks[currentLevel].fish.x
-    var fishY = mazeBlocks[currentLevel].fish.y
+    var fishX = mazeBlocks[items.currentLevel].fish.x
+    var fishY = mazeBlocks[items.currentLevel].fish.y
 
     var tuxX = Math.floor(items.player.playerCenterX / stepX)
     var tuxY = Math.floor(items.player.playerCenterY / stepY)
@@ -375,17 +374,13 @@ function checkSuccessAndExecuteNextInstruction() {
 
 function nextLevel() {
     resetTux = false
-    if(numberOfLevel <= ++currentLevel) {
-        currentLevel = 0
-    }
+    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }
 
 function previousLevel() {
     resetTux = false
-    if(--currentLevel < 0) {
-        currentLevel = numberOfLevel - 1
-    }
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }
 
