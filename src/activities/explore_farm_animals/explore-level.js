@@ -14,16 +14,15 @@
 .import GCompris 1.0 as GCompris
 .import "qrc:/gcompris/src/core/core.js" as Core
 
-var numberOfLevels
+var numberOfLevel
 var items
 var url
-var currentLevel
 
 function start(items_,url_,levelCount_) {
     items = items_
     url = url_
-    numberOfLevels = levelCount_
-    currentLevel = 1
+    numberOfLevel = levelCount_
+    items.currentLevel = Core.getInitialLevel(numberOfLevel);
     items.score.currentSubLevel = 1
 
     initLevel()
@@ -34,8 +33,7 @@ function stop() {
 }
 
 function initLevel() {
-    items.bar.level = currentLevel
-    var filename = url + "board" + "/" + "board" + currentLevel + ".qml"
+    var filename = url + "board" + "/" + "board" + (items.currentLevel + 1) + ".qml"
     items.dataset.source = filename
     items.progressbar.value = 0
     items.progressbar.to = items.dataModel.count
@@ -56,12 +54,12 @@ function initLevel() {
 
 function nextLevel() {
     ++items.score.currentSubLevel
-    if(numberOfLevels <= currentLevel && items.score.numberOfSubLevels < items.score.currentSubLevel)
+    if((items.currentLevel + 1) >= numberOfLevel && items.score.numberOfSubLevels < items.score.currentSubLevel)
     {
-        currentLevel = 0
+        items.currentLevel = -1
     }
     if (items.score.numberOfSubLevels < items.score.currentSubLevel) {
-        currentLevel++
+        items.currentLevel ++
         items.score.currentSubLevel = 1
     }
     initLevel();
@@ -77,13 +75,13 @@ function nextLevel() {
 
 function previousLevel() {
     --items.score.currentSubLevel
-    if(currentLevel <= 1 && items.score.currentSubLevel < 1)
+    if(items.currentLevel <= 0 && items.score.currentSubLevel < 1)
     {
-        currentLevel = numberOfLevels
+        items.currentLevel = numberOfLevel-1
         items.score.currentSubLevel = items.score.numberOfSubLevels
     }
     else if(items.score.currentSubLevel < 1) {
-        currentLevel--
+        items.currentLevel--
         items.score.currentSubLevel = items.score.numberOfSubLevels
     }
     initLevel();

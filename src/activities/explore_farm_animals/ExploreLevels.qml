@@ -80,7 +80,7 @@ ActivityBase {
             property GCAudio audioVoices: activity.audioVoices
             property GCSfx audioEffects: activity.audioEffects
             property Item main: activity.main
-            property alias bar: bar
+            property int currentLevel: activity.currentLevel
             property alias bonus: bonus
             property alias score: score
             property alias progressbar: progressbar
@@ -283,6 +283,7 @@ ActivityBase {
 
         Bar {
             id: bar
+            level: items.currentLevel + 1
             content: BarEnumContent { value: help | home | level | reload }
             onHelpClicked: {
                 displayDialog(dialogHelp)
