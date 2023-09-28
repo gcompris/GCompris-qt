@@ -14,14 +14,13 @@
 
 var url = "qrc:/gcompris/src/activities/checkers/resource/"
 
-var currentLevel
 var numberOfLevel = 5
 var items
 var state
 
 function start(items_) {
     items = items_
-    currentLevel = 0
+    items.currentLevel = Core.getInitialLevel(numberOfLevel)
     initLevel()
 }
 
@@ -31,7 +30,6 @@ function stop() {
 }
 
 function initLevel() {
-    items.bar.level = currentLevel + 1
     state = new Engine.Draughts('W:W31-50:B1-20')
     state.resetGame()
     items.from = -1
@@ -44,16 +42,12 @@ function initLevel() {
 }
 
 function nextLevel() {
-    if(numberOfLevel <= ++currentLevel) {
-        currentLevel = 0
-    }
+    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }
 
 function previousLevel() {
-    if(--currentLevel < 0) {
-        currentLevel = numberOfLevel - 1
-    }
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }
 
@@ -181,7 +175,7 @@ function computerMove() {
     var bestMoves = []
     var newState = new Engine.Draughts(state.fen())
     // 0 is b, 1 is b -> w, 2 is b -> w -> b guesses
-    var depth = currentLevel === 5 ? 2 : 1;
+    var depth = items.currentLevel === 5 ? 2 : 1;
 
     for(var move in moves) {
         newState.move(moves[move]);
@@ -282,7 +276,7 @@ function randomMove() {
 
     // At level 2 we let the computer play 20% of the time
     // and 80% of the time we make a random move.
-    if(Math.random() < currentLevel / (numberOfLevel - 1)) {
+    if(Math.random() < items.currentLevel / (numberOfLevel - 1)) {
         computerMove()
         return
     }
