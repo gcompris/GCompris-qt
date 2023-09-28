@@ -140,9 +140,10 @@ ElectricalComponent {
                 terminalConnected += 1;
         }
 
+        // show label only from level 6 or in free mode, and when it's connected and not broken
         if((terminalConnected >=2 && !isBroken && !Activity.items.isTutorialMode) ||
             (terminalConnected >= 2 && !isBroken && Activity.items.isTutorialMode &&
-            Activity.currentLevel > 4)) {
+            Activity.items.currentLevel >= 5)) {
             bulb.showLabel = true;
         } else {
             bulb.showLabel = false;
@@ -208,7 +209,8 @@ ElectricalComponent {
     }
 
     function checkComponentAnswer() {
-        if(Activity.currentLevel === 8 && componentVoltage > 0 && !isBroken)
+        // special case for level 8
+        if(Activity.items.currentLevel === 7 && componentVoltage > 0 && !isBroken)
             return "bulbIn";
 
         if(componentVoltage === 10) {

@@ -68,7 +68,8 @@ ElectricalComponent {
                 terminalConnected += 1;
         }
 
-        if(terminalConnected >= 2 && (!Activity.items.isTutorialMode || Activity.currentLevel > 4)) {
+        // show label only from level 6 or in free mode
+        if(terminalConnected >= 2 && (!Activity.items.isTutorialMode || Activity.items.currentLevel >= 5)) {
             battery.showLabel = true;
         } else {
             battery.showLabel = false;

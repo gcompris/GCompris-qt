@@ -12,11 +12,11 @@
 .pragma library
 .import QtQuick 2.12 as Quick
 .import "cktsim.js" as Engine
+.import "qrc:/gcompris/src/core/core.js" as Core
 
 var url = "qrc:/gcompris/src/activities/analog_electricity/resource/";
 var urlDigital = "qrc:/gcompris/src/activities/digital_electricity/resource/";
 
-var currentLevel;
 var numberOfLevel;
 var items;
 var view;
@@ -80,14 +80,13 @@ var viewPort = {
 
 function start(items_) {
     items = items_;
-    currentLevel = 1;
     numberOfLevel = items.tutorialDataset.tutorialLevels.length;
+    items.currentLevel = Core.getInitialLevel(numberOfLevel);
     initLevel();
 }
 
 function reset() {
     stop();
-    numberOfLevel = items.tutorialDataset.tutorialLevels.length;
     initLevel();
 }
 
@@ -105,7 +104,6 @@ function initLevel() {
     netlist = [];
     components = [];
     items.availablePieces.model.clear();
-    items.bar.level = currentLevel;
     items.availablePieces.view.currentDisplayedGroup = 0;
     items.availablePieces.view.previousNavigation = 1;
     items.availablePieces.view.nextNavigation = 1;
@@ -130,7 +128,7 @@ function initLevel() {
         loadFreeMode();
     } else {
         processingAnswer = false;
-        levelProperties = items.tutorialDataset.tutorialLevels[currentLevel - 1];
+        levelProperties = items.tutorialDataset.tutorialLevels[items.currentLevel];
 
         for (var i = 0; i < levelProperties.inputComponentList.length; i++) {
             var currentInputComponent = levelProperties.inputComponentList[i];
@@ -207,7 +205,7 @@ function checkAnswer() {
     answerKeys = [];
 
     if(invalidCircuit){
-        if(currentLevel === 2) {
+        if(items.currentLevel === 1) {
         //special case for level 2 to teach voltage source loop
             items.bonus.good('gnu');
             processingAnswer = false;
@@ -286,16 +284,12 @@ function updateComponentDimension(zoomRatio) {
 }
 
 function nextLevel() {
-    if(numberOfLevel < ++currentLevel) {
-        currentLevel = 1;
-    }
+    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
     reset();
 }
 
 function previousLevel() {
-    if(--currentLevel < 1) {
-        currentLevel = numberOfLevel;
-    }
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
     reset();
 }
 
