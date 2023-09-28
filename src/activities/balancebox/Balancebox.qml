@@ -115,7 +115,7 @@ ActivityBase {
             property var testLevel: activity.testLevel
             property Item main: activity.main
             property alias background: background
-            property alias bar: bar
+            property int currentLevel: activity.currentLevel
             property alias bonus: bonus
             property alias tilt: tilt
             property alias timer: timer
@@ -459,6 +459,7 @@ ActivityBase {
 
         Bar {
             id: bar
+            level: items.currentLevel + 1
             content: BarEnumContent {
                 value: activity.mode == "play"
                            ? (help | home | level | activityConfig )

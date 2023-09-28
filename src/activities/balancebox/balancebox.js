@@ -49,7 +49,6 @@ var lastKey;
 var keyboardIsTilting = false;  // tilting or resetting to horizontal
 
 var debugDraw = false;
-var currentLevel = 0;
 var numberOfLevel = 0;
 var items;
 var level;
@@ -75,8 +74,6 @@ var createLevelsMsg = qsTr("Either create your levels by starting the level edit
 function start(items_) {
     items = items_;
 
-    currentLevel = 0;
-
     if (items.mode === "play") {
         if (GCompris.ApplicationInfo.isMobile) {
             // we don't have many touch events, therefore disable screensaver on android:
@@ -97,8 +94,10 @@ function start(items_) {
             }
         }
         var levelsFile;
-        if (items.levelSet === "user" && items.file.exists(items.filePath))
+        if (items.levelSet === "user" && items.file.exists(items.filePath)) {
             levelsFile = items.filePath;
+            items.currentLevel = 0
+        }
         else {
             if(items.levelSet === "user") {
                 Core.showMessageDialog(items.background,
@@ -109,7 +108,7 @@ function start(items_) {
                                        null);
             }
             levelsFile = builtinFile;
-            currentLevel = GCompris.ApplicationSettings.loadActivityProgress(
+            items.currentLevel = GCompris.ApplicationSettings.loadActivityProgress(
                         "balancebox");
         }
 
@@ -124,6 +123,10 @@ function start(items_) {
         dataset = [items.testLevel];
     }
     numberOfLevel = dataset.length;
+
+    if(GCompris.ActivityInfoTree.startingLevel != -1) {
+        items.currentLevel = Core.getInitialLevel(numberOfLevel);
+    }
 
     reconfigureScene();
 }
@@ -221,7 +224,7 @@ function finishBall(won, x, y)
         items.bonus.good("flower");
         if (items.levelSet === "builtin" && items.mode === "play") {
             GCompris.ApplicationSettings.saveActivityProgress("balancebox",
-                        currentLevel+1 >= numberOfLevel ? 0 : currentLevel+1);
+                        items.currentLevel+1 >= numberOfLevel ? 0 : items.currentLevel+1);
         }
     } else
         items.bonus.bad("flower");
@@ -471,12 +474,11 @@ function tearDown()
 
 function initLevel(testLevel) {
     items.loading.start();
-    items.bar.level = currentLevel + 1;
 
     // reset everything
     tearDown();
 
-    level = dataset[currentLevel];
+    level = dataset[items.currentLevel];
     map = level.map
     initMap();
 }
@@ -540,15 +542,11 @@ function processKeyRelease(key)
 }
 
 function nextLevel() {
-    if(numberOfLevel <= ++currentLevel) {
-        currentLevel = 0
-    }
+    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }
 
 function previousLevel() {
-    if(--currentLevel < 0) {
-        currentLevel = numberOfLevel - 1
-    }
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }
