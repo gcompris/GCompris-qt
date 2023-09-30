@@ -73,11 +73,9 @@ bool isSupportedLocale(const QString &locale)
     return isSupported;
 }
 // Return the locale
-QString loadTranslation(QSettings &config, QTranslator &translator)
+QString loadTranslation(const QSettings &config, QTranslator &translator)
 {
-    QString locale;
-    // Get locale
-    locale = config.value("General/locale", GC_DEFAULT_LOCALE).toString();
+    QString locale = config.value("General/locale", GC_DEFAULT_LOCALE).toString();
 
     if (!isSupportedLocale(locale)) {
         qDebug() << "locale" << locale << "not supported, defaulting to" << GC_DEFAULT_LOCALE;
