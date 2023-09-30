@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-09-02 00:41+0000\n"
+"POT-Creation-Date: 2023-09-27 00:39+0000\n"
 "PO-Revision-Date: 2023-01-06 22:46+0100\n"
 "Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
 "Language-Team: Norwegian Nynorsk <l10n-no@lister.huftis.org>\n"
@@ -574,6 +574,12 @@ msgid ""
 msgstr ""
 "Styr romskipet for å unngå å krasja i planetane, slik at du til slutt kjem "
 "fram til romstasjonen."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "guess24"
+#: activities/guess24/ActivityInfo.qml:17
+#, kde-format
+msgid "Use the four numbers with given operators to find 24"
+msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "guesscount"
 #: activities/guesscount/ActivityInfo.qml:22

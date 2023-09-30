@@ -11,7 +11,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Qt-Contexts: true\n"
-"X-Generator: Poedit 3.3.1\n"
+"X-Generator: Poedit 3.3.2\n"
 
 #. Activity title
 #: activities/advanced_colors/ActivityInfo.qml:15
@@ -13092,12 +13092,9 @@ msgid "Solvable with +, - and ×."
 msgstr ""
 
 #: activities/guess24/resource/3/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplication of numbers"
 msgctxt "Data|"
 msgid "Multiplication required."
-msgstr "რიცხვების გამრავლება"
+msgstr "საჭიროა გამრავლება."
 
 #: activities/guess24/resource/4/Data.qml:13
 msgctxt "Data|"
@@ -17632,7 +17629,7 @@ msgstr ""
 #: activities/nine_men_morris/nine_men_morris.js:1148
 msgctxt "nine_men_morris|"
 msgid "Congratulations"
-msgstr ""
+msgstr "გილოცავთ"
 
 #: activities/nine_men_morris/nine_men_morris.js:1151
 msgctxt "nine_men_morris|"
@@ -24172,9 +24169,6 @@ msgid "Apply"
 msgstr ""
 
 #: core/main.qml:390
-#, fuzzy
-#| msgctxt "DialogChooseLevel|"
-#| msgid "Cancel"
 msgctxt "main|"
 msgid "Cancel"
 msgstr "გაუქმება"
