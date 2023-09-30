@@ -88,7 +88,7 @@ private:
         qint64 bytesTotal;
         bool downloadFinished;
         int downloadResult;
-        DownloadJob(const QUrl &u = QUrl()) :
+        explicit DownloadJob(const QUrl &u = QUrl()) :
             url(u), file(), reply(nullptr),
             queue(QList<QUrl>()),
             bytesReceived(0),
