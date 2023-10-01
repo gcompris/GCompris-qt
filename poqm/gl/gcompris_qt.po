@@ -8985,9 +8985,8 @@ msgid ""
 "thousands of years ago and still in use today."
 msgstr ""
 "A música é unha parte importante da cultura de oriente medio. Para chamar "
-"aos devotos á oración utilízanse cancións concretas. O laúde é un "
-"instrumento que se inventou hai milleiros de anos e que aínda se usa na "
-"actualidade."
+"aos devotos á oración úsanse cancións concretas. O laúde é un instrumento "
+"que se inventou hai milleiros de anos e que aínda se usa na actualidade."
 
 #: activities/explore_world_music/resource/board/board1.qml:56
 #: activities/explore_world_music/resource/board/board1.qml:60
@@ -28576,13 +28575,13 @@ msgstr "O usuario cancelou a descarga"
 #: core/DownloadManager.cpp:232
 msgctxt "QObject|"
 msgid "Could not create resource path"
-msgstr "Non se puido crear a ruta do recurso"
+msgstr "Non foi posíbel crear a ruta do recurso"
 
 #: core/DownloadManager.cpp:239
 #, qt-format
 msgctxt "QObject|"
 msgid "Could not open target file %1"
-msgstr "Non se puido abrir o ficheiro de destino %1"
+msgstr "Non foi posíbel abrir o ficheiro de destino %1"
 
 #: core/DownloadManager.cpp:538
 msgctxt "QObject|"
@@ -28617,7 +28616,7 @@ msgstr "Aceptar"
 #, qt-format
 msgctxt "GCCreationHandler|"
 msgid "Unable to delete %1!"
-msgstr "Non se pode eliminar %1!"
+msgstr "Non é posíbel eliminar %1!"
 
 #: core/GCCreationHandler.qml:172
 msgctxt "GCCreationHandler|"
