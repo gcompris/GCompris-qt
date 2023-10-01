@@ -176,7 +176,7 @@ ActivityBase {
 
     property string clickMode: "play"
 
-    signal startActivity(string activityName)
+    signal startActivity(string activityName, int level)
 
     pageComponent: Image {
         id: background
@@ -197,6 +197,7 @@ ActivityBase {
             searchTextField.focus = false
 
             pageView.pushElement(activityLoader.item)
+            ActivityInfoTree.startingLevel = -1
         }
 
         Loader {

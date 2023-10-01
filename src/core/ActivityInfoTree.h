@@ -27,7 +27,7 @@ class ActivityInfoTree : public QObject
      * Specify the activity to start on when running GCompris if --launch is specified in command-line.
      */
     Q_PROPERTY(QString startingActivity MEMBER m_startingActivity NOTIFY startingActivityChanged)
-
+    Q_PROPERTY(int startingLevel MEMBER m_startingLevel NOTIFY startingLevelChanged)
 public:
     static ActivityInfoTree *getInstance()
     {
@@ -49,7 +49,10 @@ public:
     void sortByDifficultyThenName(bool emitChanged = true);
     QVariantList allCharacters();
 
-    static void setStartingActivity(const QString &startingActivity) { m_startingActivity = startingActivity; }
+    static void setStartingActivity(const QString &startingActivity, int startingLevel) {
+        m_startingActivity = startingActivity;
+        m_startingLevel = startingLevel;
+    }
 
 protected:
     static ActivityInfoTree *m_instance;
@@ -73,6 +76,7 @@ Q_SIGNALS:
     void currentActivityChanged();
     void allCharactersChanged();
     void startingActivityChanged();
+    void startingLevelChanged();
 
 private:
     explicit ActivityInfoTree(QObject *parent = nullptr);
@@ -85,6 +89,7 @@ private:
     ActivityInfo *m_currentActivity;
     QVariantList m_keyboardCharacters;
     static QString m_startingActivity;
+    static int m_startingLevel;
 
     static QList<ActivityInfo>::size_type menuTreeCount(QQmlListProperty<ActivityInfo> *property);
     static ActivityInfo *menuTreeAt(QQmlListProperty<ActivityInfo> *property, QList<ActivityInfo>::size_type index);

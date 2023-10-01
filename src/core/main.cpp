@@ -210,6 +210,10 @@ int main(int argc, char *argv[])
                                          QObject::tr("Specify the range of activity difficulty to display for the session. Either a single value (2), or a range (3-6). Values must be between 1 and 6."), "difficulty");
     parser.addOption(clDifficultyRange);
 
+    QCommandLineOption clStartOnLevel("start-level",
+                                         QObject::tr("Specify on which level to start the activity. Only used when --launch option is used."), "startLevel");
+    parser.addOption(clStartOnLevel);
+
     parser.process(app);
 
     GComprisPlugin plugin;
@@ -305,7 +309,16 @@ int main(int argc, char *argv[])
     // Start on specific activity
     if (parser.isSet(clStartOnActivity)) {
         QString startingActivity = parser.value(clStartOnActivity);
-        ActivityInfoTree::setStartingActivity(startingActivity);
+        int startingLevel = 0;
+        if(parser.isSet(clStartOnLevel)) {
+            bool isNumber = false;
+            startingLevel = parser.value(clStartOnLevel).toInt(&isNumber);
+            if(!isNumber || startingLevel < 0) {
+                startingLevel = 0;
+            }
+        }
+        // internally, levels start at 0
+        ActivityInfoTree::setStartingActivity(startingActivity, startingLevel-1);
     }
 
     QQmlApplicationEngine engine(QUrl("qrc:/gcompris/src/core/main.qml"));

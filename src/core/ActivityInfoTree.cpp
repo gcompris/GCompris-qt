@@ -19,6 +19,7 @@
 #include <QTextStream>
 
 QString ActivityInfoTree::m_startingActivity = "";
+int ActivityInfoTree::m_startingLevel = -1;
 ActivityInfoTree *ActivityInfoTree::m_instance = nullptr;
 
 ActivityInfoTree::ActivityInfoTree(QObject *parent) :

@@ -43,7 +43,7 @@ Item {
      * type:Item
      * Parent object.
      */
-    property Item main: parent;
+    property Item main: parent
 
     /**
      * type:Component
@@ -124,6 +124,12 @@ Item {
      * Set it as true if the activity is musical.
      */
     property bool isMusicalActivity: false
+
+    /**
+     * type:int
+     * The current level for this activity.
+     */
+    property int currentLevel: 0
 
     property alias datasetLoader: datasetLoader
     property var levelFolder
