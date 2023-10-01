@@ -13,15 +13,14 @@
 .pragma library
 .import QtQuick 2.12 as Quick
 .import GCompris 1.0 as GCompris
+.import "qrc:/gcompris/src/core/core.js" as Core
 
-var currentLevel = 0
 var numberOfLevel = 10
 var solutionArray = []
 var backupListModel = []
 var isNewLevel = true
 var resourceURL = "qrc:/gcompris/src/activities/railroad/resource/"
 var items
-var uniqueId = []
 
 /**
 * Stores configuration for each level.
@@ -45,8 +44,8 @@ var dataset = {
 
 function start(items_) {
     items = items_;
-    currentLevel = 0;
     items.score.numberOfSubLevels = dataset["numberOfSubLevels"];
+    items.currentLevel = Core.getInitialLevel(numberOfLevel);
     items.score.currentSubLevel = 1;
     initLevel();
 }
@@ -73,11 +72,11 @@ function initLevel() {
         var identifier;
         var idLoco;
         // Adds a loco at the beginning
-        idLoco = "loco" + Math.floor(Math.random() * dataset["noOfLocos"][currentLevel])
+        idLoco = "loco" + Math.floor(Math.random() * dataset["noOfLocos"][items.currentLevel])
         addWagon(idLoco, items.listModel.length);
-        for(var i = 0; i < dataset["WagonsInCorrectAnswers"][currentLevel] - 1; i++) {
+        for(var i = 0; i < dataset["WagonsInCorrectAnswers"][items.currentLevel] - 1; i++) {
             do {
-                identifier = "wagon" + Math.floor(Math.random() * dataset["noOfWagons"][currentLevel])
+                identifier = "wagon" + Math.floor(Math.random() * dataset["noOfWagons"][items.currentLevel])
             } while (solutionArray.indexOf(identifier) != -1)
             solutionArray.push(identifier);
             addWagon(identifier, i);
@@ -93,23 +92,18 @@ function initLevel() {
     if(items.introMessage.visible === false && isNewLevel) {
         items.trainAnimationTimer.start();
     }
-    items.bar.level = currentLevel + 1;
-    items.trainAnimationTimer.interval = dataset["memoryTime"][currentLevel] * 1000;
+    items.trainAnimationTimer.interval = dataset["memoryTime"][items.currentLevel] * 1000;
 }
 
 function nextLevel() {
-    if(numberOfLevel <= ++currentLevel) {
-        currentLevel = 0;
-    }
+    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
     items.score.currentSubLevel = 1;
     isNewLevel = true;
     initLevel();
 }
 
 function previousLevel() {
-    if(--currentLevel < 0) {
-        currentLevel = numberOfLevel - 1;
-    }
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
     items.score.currentSubLevel = 1;
     isNewLevel = true;
     initLevel();
@@ -183,12 +177,13 @@ function getDropIndex(x) {
 }
 
 function generateUniqueId() {
-    uniqueId = [];
+    var uniqueIds = [];
     var index;
-    for(index = 0; index < dataset["noOfLocos"][currentLevel]; index++) {
-        uniqueId.push("loco" + index);
+    for(index = 0; index < dataset["noOfLocos"][items.currentLevel]; index++) {
+        uniqueIds.push("loco" + index);
     }
-    for(index = 0; index < dataset["noOfWagons"][currentLevel]; index++) {
-        uniqueId.push("wagon" + index);
+    for(index = 0; index < dataset["noOfWagons"][items.currentLevel]; index++) {
+        uniqueIds.push("wagon" + index);
     }
+    items.uniqueId = uniqueIds;
 }

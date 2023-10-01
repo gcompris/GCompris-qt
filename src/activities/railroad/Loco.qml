@@ -12,7 +12,6 @@
  */
 import QtQuick 2.12
 import GCompris 1.0
-import "railroad.js" as Activity
 
 Item {
     id: draggedItem

@@ -43,7 +43,7 @@ ActivityBase {
             id: items
             property Item main: activity.main
             property alias background: background
-            property alias bar: bar
+            property int currentLevel: activity.currentLevel 
             property alias bonus: bonus
             property alias score: score
             property alias trainAnimationTimer: trainAnimationTimer
@@ -59,7 +59,8 @@ ActivityBase {
             property bool keyNavigationMode: false
             // stores height of sampleGrid images to set rail bar support position
             property int sampleImageHeight: 0
-            property int sampleModel: Activity.dataset["noOfLocos"][bar.level - 1] + Activity.dataset["noOfWagons"][bar.level - 1]
+            property int sampleModel: Activity.dataset["noOfLocos"][currentLevel] + Activity.dataset["noOfWagons"][currentLevel]
+            property var uniqueId: []
         }
 
         onStart: { Activity.start(items) }
@@ -350,18 +351,18 @@ ActivityBase {
             anchors.margins: 20
             cellWidth: width / columnCount
             cellHeight: isHorizontal ? background.height / 7 : background.height / 7.5
-            model: Math.max(0, items.sampleModel)
+            model: items.uniqueId
             interactive: false
 
             // No. of wagons in a row
-            readonly property int columnCount: isHorizontal ? Activity.dataset["columnsInHorizontalMode"][bar.level - 1] :
-            Activity.dataset["columsInVerticalMode"][bar.level - 1]
+            readonly property int columnCount: isHorizontal ? Activity.dataset["columnsInHorizontalMode"][items.currentLevel] :
+            Activity.dataset["columsInVerticalMode"][items.currentLevel]
 
-            readonly property int rowCount: columnCount > 0 ? model / columnCount : 0
+            readonly property int rowCount: columnCount > 0 ? model.length / columnCount : 0
 
             delegate: Image {
                 id: loco
-                readonly property string uniqueID: Activity.uniqueId[index]
+                readonly property string uniqueID: modelData
                 property real originX
                 property real originY
                 source: Activity.resourceURL + uniqueID + ".svg"
@@ -387,7 +388,7 @@ ActivityBase {
                     // checks if the wagon is dropped in correct zone and no. of wagons in answer row are less than
                     // total no. of wagons in correct answer + 2, before dropping the wagon
                     if(globalCoordinates.y <= (background.height / 12.5) &&
-                            listModel.count < Activity.dataset["WagonsInCorrectAnswers"][bar.level - 1] + 2) {
+                            listModel.count < Activity.dataset["WagonsInCorrectAnswers"][items.currentLevel] + 2) {
                         activity.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/smudge.wav')
                         var dropIndex = Activity.getDropIndex(globalCoordinates.x)
                         Activity.addWagon(uniqueID, dropIndex);
@@ -473,9 +474,9 @@ ActivityBase {
                     sampleList.moveCurrentIndexRight();
                 }
                 if(event.key === Qt.Key_Space) {
-                    var imageId = Activity.uniqueId[sampleList.currentIndex];
+                    var imageId = items.uniqueId[sampleList.currentIndex];
                     // At most (current level + 2) wagons are allowed in answer row at a time.
-                    if(listModel.count < Activity.dataset["WagonsInCorrectAnswers"][bar.level - 1] + 2) {
+                    if(listModel.count < Activity.dataset["WagonsInCorrectAnswers"][items.currentLevel] + 2) {
                         playSoundFX();
                         Activity.addWagon(imageId, listModel.count);
                     }
@@ -572,6 +573,7 @@ ActivityBase {
 
         Bar {
             id: bar
+            level: items.currentLevel + 1
             content: BarEnumContent { value: help | home | level | hint }
             onHelpClicked: {
                 displayDialog(dialogHelp)
