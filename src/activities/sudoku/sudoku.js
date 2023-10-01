@@ -11,7 +11,6 @@
 .import QtQuick 2.12 as Quick
 .import "qrc:/gcompris/src/core/core.js" as Core
 
-var currentLevel = 0
 var numberOfLevel
 var items
 var symbols
@@ -19,9 +18,10 @@ var url = "qrc:/gcompris/src/activities/sudoku/resource/"
 
 function start(items_) {
     items = items_
-    currentLevel = 0
     items.score.currentSubLevel = 1
     numberOfLevel = items.levels.length
+    items.currentLevel = Core.getInitialLevel(numberOfLevel);
+
     // Shuffle all levels
     for(var nb = 0 ; nb < items.levels.length ; ++ nb) {
         Core.shuffle(items.levels[nb]["data"]);
@@ -34,9 +34,8 @@ function stop() {
 }
 
 function initLevel() {
-    items.bar.level = currentLevel + 1;
-    items.score.numberOfSubLevels = items.levels[currentLevel]["data"].length
-    symbols = items.levels[currentLevel]["symbols"]
+    items.score.numberOfSubLevels = items.levels[items.currentLevel]["data"].length
+    symbols = items.levels[items.currentLevel]["symbols"]
 
     for(var i = items.availablePiecesModel.model.count-1 ; i >= 0 ; -- i) {
         items.availablePiecesModel.model.remove(i);
@@ -44,7 +43,7 @@ function initLevel() {
     items.sudokuModel.clear();
 
     // Copy current sudoku in local variable
-    var initialSudoku = items.levels[currentLevel]["data"][items.score.currentSubLevel-1];
+    var initialSudoku = items.levels[items.currentLevel]["data"][items.score.currentSubLevel-1];
 
     items.columns = initialSudoku.length
     items.rows = items.columns
@@ -78,17 +77,13 @@ function initLevel() {
 
 function nextLevel() {
     items.score.currentSubLevel = 1
-    if(numberOfLevel <= ++currentLevel) {
-        currentLevel = 0
-    }
+    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }
 
 function previousLevel() {
     items.score.currentSubLevel = 1
-    if(--currentLevel < 0) {
-        currentLevel = numberOfLevel - 1
-    }
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }
 
@@ -97,22 +92,18 @@ function previousLevel() {
  And bail out if no more levels are available
 */
 function incrementLevel() {
-
     items.score.currentSubLevel ++
 
     if(items.score.currentSubLevel > items.score.numberOfSubLevels) {
-        // Try the next level
-        items.score.currentSubLevel = 1
-        currentLevel ++
+        nextLevel()
     }
-    if(currentLevel >= numberOfLevel) {
-        currentLevel = 0
+    else {
+        initLevel()
     }
-    initLevel();
 }
 
 function clickOn(caseX, caseY) {
-    var initialSudoku = items.levels[currentLevel]["data"][items.score.currentSubLevel-1];
+    var initialSudoku = items.levels[items.currentLevel]["data"][items.score.currentSubLevel-1];
 
     var currentCase = caseX + caseY * initialSudoku.length;
 
