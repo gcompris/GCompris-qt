@@ -306,6 +306,11 @@ or make it show real car images instead of filled rectangles (traffic).</para>
 <entry>Specify the activity when starting GCompris.</entry>
 </row>
 <row>
+<row>
+<entry>--start-level level</entry>
+<entry>Specify the level on which to start the activity specified by --launch option when starting GCompris. Ignored if no --launch option, or if level specified is invalid.</entry>
+</row>
+<row>
 <entry>--difficulty {value|min-max}</entry>
 <entry>For the session, force GCompris activities difficulty to be either at value or between min and max values. The values must be between 1 and 6, and if the format is min-max, the min value must be lower than the max value. If it is not the case GCompris will not start.</entry>
 </row>
