@@ -25529,37 +25529,37 @@ msgctxt "LanguageList|"
 msgid "GCompris' language"
 msgstr "Glavni meni GKomprisa"
 
-#: core/main.cpp:166
+#: core/main.cpp:164
 msgctxt "QObject|"
 msgid "Run GCompris with the default system cursor."
 msgstr ""
 
-#: core/main.cpp:170
+#: core/main.cpp:168
 msgctxt "QObject|"
 msgid "Run GCompris without cursor (touch screen mode)."
 msgstr ""
 
-#: core/main.cpp:174
+#: core/main.cpp:172
 msgctxt "QObject|"
 msgid "Run GCompris in fullscreen mode."
 msgstr ""
 
-#: core/main.cpp:178
+#: core/main.cpp:176
 msgctxt "QObject|"
 msgid "Run GCompris in window mode."
 msgstr ""
 
-#: core/main.cpp:182
+#: core/main.cpp:180
 msgctxt "QObject|"
 msgid "Run GCompris with sound enabled."
 msgstr ""
 
-#: core/main.cpp:186
+#: core/main.cpp:184
 msgctxt "QObject|"
 msgid "Run GCompris without sound."
 msgstr ""
 
-#: core/main.cpp:189
+#: core/main.cpp:187
 #, fuzzy
 #| msgctxt "instruments|"
 #| msgid "Find the snare drum"
@@ -25567,7 +25567,7 @@ msgctxt "QObject|"
 msgid "Disable the kiosk mode (default)."
 msgstr "Pronađi bubanj"
 
-#: core/main.cpp:192
+#: core/main.cpp:190
 #, fuzzy
 #| msgctxt "instruments|"
 #| msgid "Find the snare drum"
@@ -25575,31 +25575,31 @@ msgctxt "QObject|"
 msgid "Enable the kiosk mode."
 msgstr "Pronađi bubanj"
 
-#: core/main.cpp:196
+#: core/main.cpp:194
 msgctxt "QObject|"
 msgid ""
 "Use software renderer instead of openGL (slower but should run with any "
 "graphical card)."
 msgstr ""
 
-#: core/main.cpp:199
+#: core/main.cpp:197
 msgctxt "QObject|"
 msgid ""
 "Use openGL renderer instead of software (faster but crash potentially "
 "depending on your graphical card)."
 msgstr ""
 
-#: core/main.cpp:203
+#: core/main.cpp:201
 msgctxt "QObject|"
 msgid "Specify the activity when starting GCompris."
 msgstr ""
 
-#: core/main.cpp:208
+#: core/main.cpp:206
 msgctxt "QObject|"
 msgid "Outputs all the available activities on the standard output."
 msgstr ""
 
-#: core/main.cpp:212
+#: core/main.cpp:210
 msgctxt "QObject|"
 msgid ""
 "Specify the range of activity difficulty to display for the session. Either "

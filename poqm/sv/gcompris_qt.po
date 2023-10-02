@@ -26079,47 +26079,47 @@ msgctxt "LanguageList|"
 msgid "GCompris' language"
 msgstr "Språk i GCompris"
 
-#: core/main.cpp:166
+#: core/main.cpp:164
 msgctxt "QObject|"
 msgid "Run GCompris with the default system cursor."
 msgstr "Kör GCompris med systemets vanliga pekare."
 
-#: core/main.cpp:170
+#: core/main.cpp:168
 msgctxt "QObject|"
 msgid "Run GCompris without cursor (touch screen mode)."
 msgstr "Kör GCompris utan pekare (pekskärm)."
 
-#: core/main.cpp:174
+#: core/main.cpp:172
 msgctxt "QObject|"
 msgid "Run GCompris in fullscreen mode."
 msgstr "Kör GCompris i fullskärmsläge."
 
-#: core/main.cpp:178
+#: core/main.cpp:176
 msgctxt "QObject|"
 msgid "Run GCompris in window mode."
 msgstr "Kör GCompris i fönsterläge."
 
-#: core/main.cpp:182
+#: core/main.cpp:180
 msgctxt "QObject|"
 msgid "Run GCompris with sound enabled."
 msgstr "Kör GCompris med ljud aktiverat."
 
-#: core/main.cpp:186
+#: core/main.cpp:184
 msgctxt "QObject|"
 msgid "Run GCompris without sound."
 msgstr "Kör GCompris utan ljud."
 
-#: core/main.cpp:189
+#: core/main.cpp:187
 msgctxt "QObject|"
 msgid "Disable the kiosk mode (default)."
 msgstr "Aktivera kioskläget (standardvärde)."
 
-#: core/main.cpp:192
+#: core/main.cpp:190
 msgctxt "QObject|"
 msgid "Enable the kiosk mode."
 msgstr "Aktivera kioskläget."
 
-#: core/main.cpp:196
+#: core/main.cpp:194
 msgctxt "QObject|"
 msgid ""
 "Use software renderer instead of openGL (slower but should run with any "
@@ -26128,7 +26128,7 @@ msgstr ""
 "Använd programvaruåtergivning istället för OpenGL (långsammare, men bör "
 "fungera med vilket grafikkort som helst)."
 
-#: core/main.cpp:199
+#: core/main.cpp:197
 msgctxt "QObject|"
 msgid ""
 "Use openGL renderer instead of software (faster but crash potentially "
@@ -26137,17 +26137,17 @@ msgstr ""
 "Använd återgivning med OpenGL istället för programvara (snabbare, men kan "
 "möjligtvis krascha beroende på grafikkort)."
 
-#: core/main.cpp:203
+#: core/main.cpp:201
 msgctxt "QObject|"
 msgid "Specify the activity when starting GCompris."
 msgstr "Ange aktivitet när GCompris startas."
 
-#: core/main.cpp:208
+#: core/main.cpp:206
 msgctxt "QObject|"
 msgid "Outputs all the available activities on the standard output."
 msgstr "Skriver ut alla tillgängliga aktiviteter på standardutmatningen."
 
-#: core/main.cpp:212
+#: core/main.cpp:210
 msgctxt "QObject|"
 msgid ""
 "Specify the range of activity difficulty to display for the session. Either "
