@@ -1,6 +1,11 @@
 /* GCompris - guess24.qml
  *
  * SPDX-FileCopyrightText: 2023 Bruno ANSELME <be.root@free.fr>
+ *
+ * Authors:
+ *   Bruno ANSELME <be.root@free.fr> (Qt Quick native)
+ *   Timothée Giet <animtim@gmail.com> (Graphics and layout refactoring)
+ *
  * SPDX-License-Identifier: GPL-3.0-or-later
  *
  * References :
@@ -28,6 +33,8 @@ ActivityBase {
         signal start
         signal stop
 
+        property int baseMargins: 5 * ApplicationInfo.ratio
+
         Component.onCompleted: {
             dialogActivityConfig.initialize()
             activity.start.connect(start)
@@ -49,7 +56,7 @@ ActivityBase {
             property int operatorsCount: 4
             property int subLevelCount: 0
             property int currentSubLevel: 0
-            property bool keysOnValues: true            // True when focus is on values false if focus is on operators
+            property bool keysOnValues: true    // True when focus is on values false if focus is on operators
             property alias cardsModel: cardsModel
             property alias cardsBoard: cardsBoard
             property alias operators: operators
@@ -76,292 +83,300 @@ ActivityBase {
         GCText {
             id: caption
             anchors.top: background.top
-            anchors.horizontalCenter: parent.horizontalCenter
-            height: 80
+            anchors.left: background.left
+            anchors.right: background.right
+            anchors.margins: background.baseMargins
             text: qsTr("Use the four numbers with given operators to find 24.")
             verticalAlignment: Text.AlignVCenter
+            horizontalAlignment: Text.AlignHCenter
+            wrapMode: Text.WordWrap
             MouseArea {
                 anchors.fill: parent
                 onClicked: caption.opacity = 0.0
             }
         }
-        // Main section
-        Row {
+
+        Item {
+            id: layoutArea
             anchors.top: caption.bottom
-            anchors.horizontalCenter: parent.horizontalCenter
-            spacing: 15
-            Column {
-                spacing: 15
-                Rectangle {     // Values
-                    anchors.horizontalCenter: parent.horizontalCenter
-                    width: 600
-                    height: 350
-                    color: "beige"
-                    radius: 5
-                    GridView {
-                        id: cardsBoard
-                        anchors.fill: parent
-                        cellWidth: parent.width / 2
-                        cellHeight: parent.height / 2
-                        highlightFollowsCurrentItem: false
-                        boundsBehavior: Flickable.StopAtBounds
-                        model: cardsModel
-                        delegate: Rectangle {   // Display a card with a number inside
-                            id: cardNumber
-                            property int value: value_
-                            width: cardsBoard.cellWidth
-                            height: cardsBoard.cellHeight
-                            color: "transparent"
-                            Rectangle {
-                                id: cardRect
-                                width: parent.width - 20
-                                height: parent.height - 20
-                                anchors.centerIn: parent
-                                visible: true
-                                color: (items.currentValue === index) ? "peru" :  "burlywood"
-                                border.width: 3
-                                border.color: (items.keysOnValues && (cardsBoard.currentIndex === index)) ? "black" : "transparent"
-                                radius: 10
-                                GCText {
-                                    anchors.centerIn: parent
-                                    fontSize: hugeSize
-                                    fontSizeMode: Text.Fit
-                                    text: value
-                                }
-                                MouseArea {
-                                    id: boardArea
-                                    anchors.fill: parent
-                                    enabled: animationCard.state === ""
-                                    onClicked: Activity.valueClicked(index)
-                                }
-                            }
-                        }
-                    }
-                    Rectangle {     // Animation card visible during animations
-                        id: animationCard
-                        property string value: ""
-                        property string action: Activity.animActions[0]
-                        width: cardsBoard.cellWidth - 20
-                        height: cardsBoard.cellHeight - 20
-                        color: "peru"
-                        radius: 10
-                        visible: false
-                        border.color: "burlywood"
-                        border.width: 2
+            anchors.bottom: score.top
+            anchors.horizontalCenter: background.horizontalCenter
+            anchors.margins: background.baseMargins
+            width: Math.min(background.width - 2 * background.baseMargins,
+                                400 * ApplicationInfo.ratio)
+        }
+        // Main section
+        Rectangle {     // Values
+            id: valuesArea
+            anchors.top: layoutArea.top
+            anchors.left: layoutArea.left
+            width: layoutArea.width * 0.66
+            height: Math.min(250 * ApplicationInfo.ratio, layoutArea.height * 0.75)
+            color: "beige"
+            radius: background.baseMargins
+            GridView {
+                id: cardsBoard
+                anchors.fill: parent
+                cellWidth: (parent.width - background.baseMargins) * 0.5
+                cellHeight: (parent.height - background.baseMargins) * 0.5
+                highlightFollowsCurrentItem: false
+                boundsBehavior: Flickable.StopAtBounds
+                model: cardsModel
+                delegate: Item {   // Display a card with a number inside
+                    id: cardNumber
+                    property int value: value_
+                    width: cardsBoard.cellWidth
+                    height: cardsBoard.cellHeight
+                    Rectangle {
+                        id: cardRect
+                        width: parent.width - background.baseMargins
+                        height: parent.height - background.baseMargins
+                        anchors.top: parent.top
+                        anchors.left: parent.left
+                        anchors.margins: background.baseMargins
+                        visible: true
+                        color: (items.currentValue === index) ? "peru" :  "burlywood"
+                        border.width: 3
+                        border.color: (items.keysOnValues && (cardsBoard.currentIndex === index)) ? "black" : "transparent"
+                        radius: background.baseMargins
                         GCText {
-                            anchors.centerIn: parent
+                            anchors.fill: parent
+                            horizontalAlignment: Text.AlignHCenter
+                            verticalAlignment: Text.AlignVCenter
                             fontSize: hugeSize
                             fontSizeMode: Text.Fit
-                            text: animationCard.value
+                            text: value
                         }
-                        states: [
-                            State {
-                                name: "moveto"
-                                PropertyChanges {
-                                    target: animationCard
-                                    visible: true
-                                    x: items.cardsBoard.currentItem.x + 10
-                                    y: items.cardsBoard.currentItem.y + 10
-                                }
-                            },
-                            State {
-                                name: "wait"
-                                PropertyChanges {
-                                    target: animationCard
-                                    visible: true
-                                    color: "tomato"
-                                    border.color: "tomato"
-                                }
-                            }
-                        ]
-                        transitions: [
-                            Transition {
-                                to: "moveto"
-                                SequentialAnimation {
-                                    alwaysRunToEnd: true
-                                    NumberAnimation { properties: "x,y"; duration: 300 }
-                                    ScriptAction {
-                                        script: {
-                                            animationCard.state = ""
-                                            if (animationCard.action === "forward")
-                                                Activity.checkResult()
-                                            else if (animationCard.action === "backward")
-                                                Activity.endPopOperation()
-                                        }
-                                    }
-                                }
-                            },
-                            Transition {
-                                to: "wait"
-                                SequentialAnimation {
-                                    alwaysRunToEnd: true
-                                    PauseAnimation { duration: 800 }
-                                    ScriptAction { script: { audioEffects.play('qrc:/gcompris/src/core/resource/sounds/crash.wav') } }
-                                    PauseAnimation { duration: 800 }
-                                    ScriptAction { script: { Activity.popOperation() }}
-                                }
-                            }
-                        ]
-                    }
-                }
-                Rectangle {     // Operators
-                    width: 600
-                    height: 100
-                    radius: 5
-                    color: "beige"
-                    enabled: ((items.currentValue !== -1) && (animationCard.state === ""))
-                    ListView {
-                        id: operators
-                        anchors.fill: parent
-                        orientation: ListView.Horizontal
-                        boundsBehavior: Flickable.StopAtBounds
-                        model: [ "+", "−", "×", "÷" ]
-                        delegate: Rectangle {
-                            width: 150
-                            height: 100
-                            color: "transparent"
-                            Rectangle {     // Display an operator button
-                                id: opRect
-                                width: parent.width - 20
-                                height: parent.height - 20
-                                anchors.centerIn: parent
-                                visible: index < items.operatorsCount
-                                color: (items.currentOperator === index) ? "peru" : "burlywood"
-                                opacity: (items.currentValue !== -1) ? 1.0 : 0.5
-                                border.width: 3
-                                border.color: (!items.keysOnValues) && (operators.currentIndex === index) && (items.currentValue !== -1) ? "black" : "transparent"
-                                radius: 20
-                                GCText {
-                                    anchors.centerIn: parent
-                                    text: operators.model[index]
-                                    fontSize: hugeSize
-                                }
-                                MouseArea {
-                                    id: opArea
-                                    anchors.fill: parent
-                                    onClicked: Activity.operatorClicked(index)
-                                }
-                            }
+                        MouseArea {
+                            id: boardArea
+                            anchors.fill: parent
+                            enabled: animationCard.state === ""
+                            onClicked: Activity.valueClicked(index)
                         }
                     }
                 }
             }
-            Column {
-                spacing: 10
-                Rectangle {
-                    width: 250
-                    height: 350
-                    color: "transparent"
-                    Rectangle {
-                        id: stepsRect
-                        width: 250
-                        height: 350
-                        color: "transparent"
-                        Rectangle {
-                            width: parent.width
-                            height: 170
-                            radius: 5
-                            anchors.top: parent.top
-                            color: "beige"
-                            GCText {
-                                id: steps
-                                anchors.fill: parent
-                                anchors.margins: 10
-                                fontSize: tinySize
-                                text: ""
-                            }
+
+            Rectangle {     // Animation card visible during animations
+                id: animationCard
+                property string value: ""
+                property string action: Activity.animActions[0]
+                width: cardsBoard.cellWidth - background.baseMargins
+                height: cardsBoard.cellHeight - background.baseMargins
+                color: "peru"
+                radius: 10
+                visible: false
+                border.color: "burlywood"
+                border.width: 2
+                GCText {
+                    anchors.fill: parent
+                    horizontalAlignment: Text.AlignHCenter
+                    verticalAlignment: Text.AlignVCenter
+                    fontSize: hugeSize
+                    fontSizeMode: Text.Fit
+                    text: animationCard.value
+                }
+                states: [
+                    State {
+                        name: "moveto"
+                        PropertyChanges {
+                            target: animationCard
+                            visible: true
+                            x: items.cardsBoard.currentItem.x
+                            y: items.cardsBoard.currentItem.y
+                        }
+                    },
+                    State {
+                        name: "wait"
+                        PropertyChanges {
+                            target: animationCard
+                            visible: true
+                            color: "tomato"
+                            border.color: "tomato"
                         }
                     }
-                    Rectangle {
-                        id: solutionRect
-                        width: stepsRect.width
-                        height: 170
-                        color: "beige"
-                        anchors.bottom: parent.bottom
-                        radius: 5
-                        opacity: 0.0
-                        GCText {
-                            id: solution
-                            anchors.fill: parent
-                            anchors.centerIn: parent
-                            anchors.margins: 10
-                            fontSize: tinySize
-                            opacity: 0.5
-                            text: ""
-                        }
-                        NumberAnimation on opacity {
-                            id: animSol
-                            property bool firstTime: true
+                ]
+                transitions: [
+                    Transition {
+                        to: "moveto"
+                        SequentialAnimation {
                             alwaysRunToEnd: true
-                            to: 0.0
-                            duration: 1000
-                            onStarted: cancelButton.visible = false
-                            onStopped: {
-                                if (!firstTime) {       // animation is triggered on activity start
-                                    Activity.unstack = true
-                                    Activity.popOperation()
+                            NumberAnimation { properties: "x,y"; duration: 300 }
+                            ScriptAction {
+                                script: {
+                                    animationCard.state = ""
+                                    if (animationCard.action === "forward")
+                                        Activity.checkResult()
+                                    else if (animationCard.action === "backward")
+                                        Activity.endPopOperation()
                                 }
-                                firstTime = false
-                                cardsBoard.enabled = true
-                                operators.enabled = true
                             }
+                        }
+                    },
+                    Transition {
+                        to: "wait"
+                        SequentialAnimation {
+                            alwaysRunToEnd: true
+                            PauseAnimation { duration: 800 }
+                            ScriptAction { script: { audioEffects.play('qrc:/gcompris/src/core/resource/sounds/crash.wav') } }
+                            PauseAnimation { duration: 800 }
+                            ScriptAction { script: { Activity.popOperation() }}
+                        }
+                    }
+                ]
+            }
+        }
+
+        Rectangle {     // Operators
+            id: operatorsArea
+            anchors.top: valuesArea.bottom
+            anchors.topMargin: background.baseMargins
+            anchors.left: valuesArea.left
+            anchors.right: valuesArea.right
+            height: Math.min(layoutArea.height - valuesArea.height - background.baseMargins,
+                             80 * ApplicationInfo.ratio)
+            radius: background.baseMargins
+            color: "beige"
+            enabled: ((items.currentValue !== -1) && (animationCard.state === ""))
+            ListView {
+                id: operators
+                anchors.fill: parent
+                orientation: ListView.Horizontal
+                boundsBehavior: Flickable.StopAtBounds
+                model: [ "+", "−", "×", "÷" ]
+                delegate: Item {
+                    width: (operatorsArea.width - background.baseMargins) * 0.25
+                    height: operatorsArea.height
+                    Rectangle {     // Display an operator button
+                        id: opRect
+                        width: parent.width - background.baseMargins
+                        height: parent.height - background.baseMargins * 2
+                        anchors.top: parent.top
+                        anchors.left: parent.left
+                        anchors.margins: background.baseMargins
+                        visible: index < items.operatorsCount
+                        color: (items.currentOperator === index) ? "peru" : "burlywood"
+                        opacity: (items.currentValue !== -1) ? 1.0 : 0.5
+                        border.width: 3
+                        border.color: (!items.keysOnValues) && (operators.currentIndex === index) && (items.currentValue !== -1) ? "black" : "transparent"
+                        radius: background.baseMargins
+                        GCText {
+                            anchors.fill: parent
+                            horizontalAlignment: Text.AlignHCenter
+                            verticalAlignment: Text.AlignVCenter
+                            text: operators.model[index]
+                            fontSize: hugeSize
+                            fontSizeMode: Text.Fit
+                        }
+                        MouseArea {
+                            id: opArea
+                            anchors.fill: parent
+                            onClicked: Activity.operatorClicked(index)
                         }
                     }
                 }
-                Rectangle {
-                    width: stepsRect.width
-                    height: 100
-                    color: "transparent"
-                    Image {
-                        id: cancelButton
-                        source: "qrc:/gcompris/src/activities/chess/resource/undo.svg"
-                        smooth: true
-                        width: 80
-                        height: 100
-                        sourceSize.width: 80
-                        sourceSize.height: 100
-                        fillMode: Image.PreserveAspectFit
-                        anchors.margins: 10
-                        anchors.left: parent.left
-                        enabled: animationCard.state === ""
-                        MouseArea {
-                            anchors.fill: parent
-                            onClicked: {
-                                if (solutionRect.opacity !== 0.0) {
-                                    animSol.start()
-                                } else {
-                                    animSol.stop()
-                                    Activity.unstack = false
-                                    Activity.popOperation()
-                                }
-                            }
-                        }
+            }
+        }
+
+        Rectangle {
+            id: stepsRect
+            width: layoutArea.width - valuesArea.width - background.baseMargins
+            height: Math.min(80 * ApplicationInfo.ratio,
+                             (layoutArea.height - background.baseMargins) * 0.5)
+            anchors.top: layoutArea.top
+            anchors.right: layoutArea.right
+            color: "beige"
+            GCText {
+                id: steps
+                anchors.fill: parent
+                anchors.margins: background.baseMargins
+                fontSize: tinySize
+                text: ""
+            }
+        }
+
+        Rectangle {
+            id: solutionRect
+            width: stepsRect.width
+            height: stepsRect.height
+            color: "beige"
+            anchors.top: stepsRect.bottom
+            anchors.topMargin: background.baseMargins
+            anchors.right: layoutArea.right
+            opacity: 0.0
+            GCText {
+                id: solution
+                anchors.fill: parent
+                anchors.margins: background.baseMargins
+                fontSize: tinySize
+                opacity: 0.5
+                text: ""
+            }
+            NumberAnimation on opacity {
+                id: animSol
+                property bool firstTime: true
+                alwaysRunToEnd: true
+                to: 0.0
+                duration: 1000
+                onStarted: cancelButton.visible = false
+                onStopped: {
+                    if (!firstTime) {   // animation is triggered on activity start
+                        Activity.unstack = true
+                        Activity.popOperation()
                     }
-                    Image {
-                        id: hintButton
-                        source: "qrc:/gcompris/src/core/resource/bar_hint.svg"
-                        smooth: true
-                        width: 80
-                        height: 100
-                        sourceSize.width: 80
-                        sourceSize.height: 100
-                        fillMode: Image.PreserveAspectFit
-                        anchors.margins: 10
-                        anchors.right: parent.right
-                        enabled: animationCard.state === ""
-                        MouseArea {
-                            anchors.fill: parent
-                            onClicked: {
-                                if (Activity.helpCount < 4)
-                                    Activity.helpCount++
-                                solution.text = Activity.splittedSolution.slice(0, Activity.helpCount).join("\n")
-                                solutionRect.opacity = 1.0
-                                cardsBoard.enabled = false
-                                operators.enabled = false
-                                hintButton.visible = false
-                            }
-                        }
+                    firstTime = false
+                    cardsBoard.enabled = true
+                    operators.enabled = true
+                }
+            }
+        }
+
+        Image {
+            id: cancelButton
+            source: "qrc:/gcompris/src/activities/chess/resource/undo.svg"
+            height: score.height
+            width: height
+            sourceSize.width: width
+            sourceSize.height: height
+            anchors.top: operatorsArea.bottom
+            anchors.topMargin: background.baseMargins
+            anchors.left: operatorsArea.left
+            enabled: animationCard.state === ""
+            MouseArea {
+                anchors.fill: parent
+                onClicked: {
+                    if (solutionRect.opacity !== 0.0) {
+                        animSol.start()
+                    } else {
+                        animSol.stop()
+                        Activity.unstack = false
+                        Activity.popOperation()
                     }
+                }
+            }
+        }
+
+        Image {
+            id: hintButton
+            source: "qrc:/gcompris/src/core/resource/bar_hint.svg"
+            height: score.height
+            width: height
+            sourceSize.width: width
+            sourceSize.height: height
+            anchors.right: operatorsArea.right
+            anchors.top: operatorsArea.bottom
+            anchors.topMargin: background.baseMargins
+            enabled: animationCard.state === ""
+            MouseArea {
+                anchors.fill: parent
+                onClicked: {
+                    if (Activity.helpCount < 4)
+                        Activity.helpCount++
+                        solution.text = Activity.splittedSolution.slice(0, Activity.helpCount).join("\n")
+                        solutionRect.opacity = 1.0
+                        cardsBoard.enabled = false
+                        operators.enabled = false
+                        hintButton.visible = false
                 }
             }
         }
@@ -393,12 +408,12 @@ ActivityBase {
             id: score
             numberOfSubLevels: items.subLevelCount
             currentSubLevel: items.currentSubLevel + 1
-            anchors.top: parent.top
-            anchors.right: parent.right
+            anchors.top: undefined
+            anchors.right: background.right
+            anchors.rightMargin: background.baseMargins
             anchors.left: undefined
-            anchors.bottom: undefined
-            margins: 0
-            scale: 0.6
+            anchors.bottom: background.bottom
+            anchors.bottomMargin: bar.height * 1.5
         }
 
         Bar {
