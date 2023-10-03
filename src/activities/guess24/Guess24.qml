@@ -26,14 +26,21 @@ ActivityBase {
     onStart: focus = true
     onStop: {}
 
-    pageComponent: Rectangle {
+    pageComponent: Image {
         id: background
+        source: "qrc:/gcompris/src/activities/guesscount/resource/backgroundW01.svg"
+        sourceSize.width: width
+        sourceSize.height: height
+        fillMode: Image.PreserveAspectCrop
         anchors.fill: parent
-        color: "#ABCDEF"
         signal start
         signal stop
 
         property int baseMargins: 5 * ApplicationInfo.ratio
+        property int baseRadius: 2 * ApplicationInfo.ratio
+        property string baseColor: "#A1CBD9"
+        property string selectionColor: "#4B9BB5"
+        property int selectionWidth: 4 * ApplicationInfo.ratio
 
         Component.onCompleted: {
             dialogActivityConfig.initialize()
@@ -67,6 +74,7 @@ ActivityBase {
             property alias solution: solution
             property alias solutionRect: solutionRect
             property alias animSol: animSol
+            property bool keyboardNavigation: false
         }
 
         onStart: { Activity.start(items) }
@@ -80,25 +88,33 @@ ActivityBase {
             function shuffleModel() { for (var i = 0 ; i < count; i++) { move(randPosition(), randPosition(), 1) } }    // shuffle elements
         }
 
-        GCText {
-            id: caption
-            anchors.top: background.top
-            anchors.left: background.left
-            anchors.right: background.right
-            anchors.margins: background.baseMargins
-            text: qsTr("Use the four numbers with given operators to find 24.")
-            verticalAlignment: Text.AlignVCenter
-            horizontalAlignment: Text.AlignHCenter
-            wrapMode: Text.WordWrap
+        Rectangle {
+            id: captionBg
+            width: caption.paintedWidth + background.baseMargins * 2
+            height: caption.paintedHeight + background.baseMargins
+            color: "#80FFFFFF"
+            radius: background.baseRadius
+            anchors.horizontalCenter: parent.horizontalCenter
+            anchors.top: parent.top
+            anchors.topMargin: background.baseMargins
+            GCText {
+                id: caption
+                width: background.width - background.baseMargins * 4
+                anchors.centerIn: captionBg
+                text: qsTr("Use the four numbers with given operators to find 24.")
+                verticalAlignment: Text.AlignVCenter
+                horizontalAlignment: Text.AlignHCenter
+                wrapMode: Text.WordWrap
+            }
             MouseArea {
                 anchors.fill: parent
-                onClicked: caption.opacity = 0.0
+                onClicked: captionBg.opacity = 0.0
             }
         }
 
         Item {
             id: layoutArea
-            anchors.top: caption.bottom
+            anchors.top: captionBg.bottom
             anchors.bottom: score.top
             anchors.horizontalCenter: background.horizontalCenter
             anchors.margins: background.baseMargins
@@ -112,8 +128,8 @@ ActivityBase {
             anchors.left: layoutArea.left
             width: layoutArea.width * 0.66
             height: Math.min(250 * ApplicationInfo.ratio, layoutArea.height * 0.75)
-            color: "beige"
-            radius: background.baseMargins
+            color: "#80FFFFFF"
+            radius: background.baseRadius
             GridView {
                 id: cardsBoard
                 anchors.fill: parent
@@ -135,9 +151,9 @@ ActivityBase {
                         anchors.left: parent.left
                         anchors.margins: background.baseMargins
                         visible: true
-                        color: (items.currentValue === index) ? "peru" :  "burlywood"
-                        border.width: 3
-                        border.color: (items.keysOnValues && (cardsBoard.currentIndex === index)) ? "black" : "transparent"
+                        color: (items.currentValue === index) ? background.baseColor :  "#F0F0F0"
+                        border.width: (items.keyboardNavigation && items.keysOnValues && (cardsBoard.currentIndex === index)) ? background.selectionWidth : ApplicationInfo.ratio
+                        border.color: (items.keyboardNavigation && items.keysOnValues && (cardsBoard.currentIndex === index)) ? background.selectionColor : background.baseColor
                         radius: background.baseMargins
                         GCText {
                             anchors.fill: parent
@@ -157,17 +173,25 @@ ActivityBase {
                 }
             }
 
-            Rectangle {     // Animation card visible during animations
+            Item {     // Animation card visible during animations
                 id: animationCard
                 property string value: ""
                 property string action: Activity.animActions[0]
-                width: cardsBoard.cellWidth - background.baseMargins
-                height: cardsBoard.cellHeight - background.baseMargins
-                color: "peru"
-                radius: 10
+                width: cardsBoard.cellWidth
+                height: cardsBoard.cellHeight
                 visible: false
-                border.color: "burlywood"
-                border.width: 2
+                Rectangle {
+                    id: animationCardBg
+                    width: parent.width - background.baseMargins
+                    height: parent.height - background.baseMargins
+                    color: background.baseColor
+                    radius: background.baseMargins
+                    border.color: background.baseColor
+                    border.width: background.selectionWidth
+                    anchors.top: parent.top
+                    anchors.left: parent.left
+                    anchors.margins: background.baseMargins
+                }
                 GCText {
                     anchors.fill: parent
                     horizontalAlignment: Text.AlignHCenter
@@ -191,6 +215,9 @@ ActivityBase {
                         PropertyChanges {
                             target: animationCard
                             visible: true
+                        }
+                        PropertyChanges {
+                            target: animationCardBg
                             color: "tomato"
                             border.color: "tomato"
                         }
@@ -235,8 +262,8 @@ ActivityBase {
             anchors.right: valuesArea.right
             height: Math.min(layoutArea.height - valuesArea.height - background.baseMargins,
                              80 * ApplicationInfo.ratio)
-            radius: background.baseMargins
-            color: "beige"
+            radius: background.baseRadius
+            color: "#80FFFFFF"
             enabled: ((items.currentValue !== -1) && (animationCard.state === ""))
             ListView {
                 id: operators
@@ -255,10 +282,10 @@ ActivityBase {
                         anchors.left: parent.left
                         anchors.margins: background.baseMargins
                         visible: index < items.operatorsCount
-                        color: (items.currentOperator === index) ? "peru" : "burlywood"
+                        color: (items.currentOperator === index) ? background.baseColor : "#F0F0F0"
                         opacity: (items.currentValue !== -1) ? 1.0 : 0.5
-                        border.width: 3
-                        border.color: (!items.keysOnValues) && (operators.currentIndex === index) && (items.currentValue !== -1) ? "black" : "transparent"
+                        border.width: (items.keyboardNavigation && !items.keysOnValues && (operators.currentIndex === index) && (items.currentValue !== -1)) ? background.selectionWidth : ApplicationInfo.ratio
+                        border.color: (items.keyboardNavigation && !items.keysOnValues && (operators.currentIndex === index) && (items.currentValue !== -1)) ? background.selectionColor : background.baseColor
                         radius: background.baseMargins
                         GCText {
                             anchors.fill: parent
@@ -285,11 +312,12 @@ ActivityBase {
                              (layoutArea.height - background.baseMargins) * 0.5)
             anchors.top: layoutArea.top
             anchors.right: layoutArea.right
-            color: "beige"
+            color: "#F0F0F0"
+            radius: background.baseRadius
             GCText {
                 id: steps
                 anchors.fill: parent
-                anchors.margins: background.baseMargins
+                anchors.leftMargin: background.baseMargins
                 fontSize: tinySize
                 text: ""
             }
@@ -299,7 +327,8 @@ ActivityBase {
             id: solutionRect
             width: stepsRect.width
             height: stepsRect.height
-            color: "beige"
+            color: "#F0F0F0"
+            radius: background.baseRadius
             anchors.top: stepsRect.bottom
             anchors.topMargin: background.baseMargins
             anchors.right: layoutArea.right
@@ -307,7 +336,7 @@ ActivityBase {
             GCText {
                 id: solution
                 anchors.fill: parent
-                anchors.margins: background.baseMargins
+                anchors.leftMargin: background.baseMargins
                 fontSize: tinySize
                 opacity: 0.5
                 text: ""

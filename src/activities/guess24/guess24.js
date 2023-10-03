@@ -243,8 +243,8 @@ function valueClicked(idx) {
             items.cardsBoard.currentIndex = items.currentValue
             // Init card animation
             items.animationCard.value = a
-            items.animationCard.x = items.cardsBoard.currentItem.x + 10
-            items.animationCard.y = items.cardsBoard.currentItem.y + 10
+            items.animationCard.x = items.cardsBoard.currentItem.x
+            items.animationCard.y = items.cardsBoard.currentItem.y
             operationsStack.push({   from: items.currentValue,
                                      valFrom: String(a),
                                      to: idx,
@@ -269,8 +269,8 @@ function checkResult() {
     items.operators.currentIndex = items.currentOperator
     items.currentOperator = OperandsEnum.NO_SIGN
     if ((result < 0) || (result !== Math.floor(result))) {
-        items.animationCard.x = items.cardsBoard.currentItem.x + 10
-        items.animationCard.y = items.cardsBoard.currentItem.y + 10
+        items.animationCard.x = items.cardsBoard.currentItem.x
+        items.animationCard.y = items.cardsBoard.currentItem.y
         items.animationCard.value = String(result)
         items.animationCard.action = "cancel"
         items.animationCard.state = "wait"
@@ -308,8 +308,8 @@ function popOperation() {
     items.cardsModel.setProperty(lastAction.to, "value_", lastAction.valTo)
     items.animationCard.value = lastAction.valFrom
     items.currentValue = items.cardsBoard.currentIndex = lastAction.to
-    items.animationCard.x = items.cardsBoard.currentItem.x + 10
-    items.animationCard.y = items.cardsBoard.currentItem.y + 10
+    items.animationCard.x = items.cardsBoard.currentItem.x
+    items.animationCard.y = items.cardsBoard.currentItem.y
     items.currentValue = items.cardsBoard.currentIndex = lastAction.from
     items.animationCard.action = "backward"
     items.animationCard.state = "moveto"
@@ -345,6 +345,7 @@ function moveToNextCard() {
 }
 
 function handleKeys(event) {
+    items.keyboardNavigation = true
     switch (event.key) {
     case Qt.Key_Up:
     case Qt.Key_Down:
