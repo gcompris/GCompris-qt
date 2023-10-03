@@ -408,7 +408,8 @@ function handleKeys(event) {
             popOperation()
         break
     case Qt.Key_Tab:
-        items.keysOnValues = !items.keysOnValues
+        if (items.currentValue != -1)
+            items.keysOnValues = !items.keysOnValues
         break
     }
 }
