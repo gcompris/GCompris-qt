@@ -14187,7 +14187,7 @@ msgctxt "ActivityInfo|"
 msgid "Tabulation: switch between numbers and operators"
 msgstr "Klawisz tab: przełącza pomiędzy liczbami i znakami działań"
 
-#: activities/guess24/Guess24.qml:81
+#: activities/guess24/Guess24.qml:104
 msgctxt "Guess24|"
 msgid "Use the four numbers with given operators to find 24."
 msgstr "Użyj czterech liczba z danymi znakami działań, aby znaleźć 24."

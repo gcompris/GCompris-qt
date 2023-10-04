@@ -13843,7 +13843,7 @@ msgctxt "ActivityInfo|"
 msgid "Tabulation: switch between numbers and operators"
 msgstr "Šipky nahoru a dolů nebo tabulátor: přepnout mezi třídami a slovy"
 
-#: activities/guess24/Guess24.qml:81
+#: activities/guess24/Guess24.qml:104
 msgctxt "Guess24|"
 msgid "Use the four numbers with given operators to find 24."
 msgstr ""

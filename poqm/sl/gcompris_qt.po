@@ -14109,7 +14109,7 @@ msgctxt "ActivityInfo|"
 msgid "Tabulation: switch between numbers and operators"
 msgstr "Tabulator: preklop med števili in operatorji"
 
-#: activities/guess24/Guess24.qml:81
+#: activities/guess24/Guess24.qml:104
 msgctxt "Guess24|"
 msgid "Use the four numbers with given operators to find 24."
 msgstr "Uporabite štiri števila z danimi operatorji, da najdete 24."
