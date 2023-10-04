@@ -8,7 +8,7 @@ import GCompris 1.0
 ActivityInfo {
   name: "guess24/Guess24.qml"
   difficulty: 4
-  icon: "guess24/be.root.svg"
+  icon: "guess24/guess24.svg"
   author: "Bruno ANSELME &lt;be.root@free.fr&gt;"
   //: Activity title
   title: qsTr("Guess 24")

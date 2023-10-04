@@ -2317,7 +2317,7 @@ License: Unlicense
 Comment: original source at https://commons.wikimedia.org/wiki/File:Mars_Hubble.jpg
 
 Files: src/activities/guess24/*.svg
-Copyright: 2023 Bruno Anselme
+Copyright: 2023 Timothée Giet
 License: CC-BY-SA-4.0
 
 Files: src/activities/guess24/*.csv src/activities/guess24/*.php src/activities/guess24/*.md src/activities/guess24/*.json
