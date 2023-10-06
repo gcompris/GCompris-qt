@@ -15759,8 +15759,8 @@ msgid ""
 "GCompris is developed by the KDE community, you can translate GCompris by "
 "joining a translation team on <a href=\"%2\">%2</a>"
 msgstr ""
-"GCompris és desenvolupat per la comunitat KDE, podeu traduir GCompris unint-"
-"vos a un equip de traducció a <a href=\"%2\">%2</a>"
+"GCompris és desenvolupat per la comunitat KDE, el podeu traduir unint-vos a "
+"un equip de traducció a <a href=\"%2\">%2</a>"
 
 #: activities/lang/Lang.qml:141
 msgctxt "Lang|"
@@ -18489,7 +18489,8 @@ msgstr "Inici: ix d'una activitat i torna al menú («Ctrl+W» o la tecla «Esc�
 msgctxt "ActivityInfo|"
 msgid "Arrows - Display the current level. Click to select another level"
 msgstr ""
-"«Fletxes»: mostra el nivell actual. Feu clic per seleccionar un altre nivell"
+"«Fletxes»: mostra el nivell actual. Feu clic per a seleccionar un altre "
+"nivell"
 
 #: activities/menu/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
@@ -19057,8 +19058,8 @@ msgid ""
 "GCompris is developed by the KDE community, you can translate GCompris by "
 "joining a translation team on <a href=\"%2\">%2</a>"
 msgstr ""
-"GCompris és desenvolupat per la comunitat KDE, podeu traduir GCompris unint-"
-"vos a un equip de traducció a <a href=\"%2\">%2</a>"
+"GCompris és desenvolupat per la comunitat KDE, el podeu traduir unint-vos a "
+"un equip de traducció a <a href=\"%2\">%2</a>"
 
 #: activities/missing-letter/MissingLetter.qml:319
 msgctxt "MissingLetter|"
